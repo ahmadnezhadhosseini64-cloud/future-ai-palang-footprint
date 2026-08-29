@@ -39,19 +39,49 @@ At 0.0 the recovery sequence is:
 
 If the repository is unavailable, recovery proceeds from the Stable Retrieval Core / Recovery Buffer without treating repository unavailability as project-data loss.
 
+## Human Approval Gate (HAG)
+
+AI may detect and report a potentially new architectural item, but it does not have authority to approve it as a formal project rule or architectural change.
+
+Potentially architecture-affecting productions—including new definitions, names, laws/rules, principles, commands, Master changes, formal checkpoints, and identity changes—are presented to the human for explicit approval before formal registration.
+
+**AI = Detect + Report**  
+**Human = Approve**  
+**System = Persist + Register + Retrieve + Verify**
+
+Required transition:
+
+`Detect → Report → Human Approval → Persist → Register → Retrieve → Verify → ACTIVE`
+
+Without explicit approval, the item remains a candidate/review state and must not enter formal registration or the active architectural core.
+
+Accepted approval triggers include clear commands such as `تأیید کن`, `ثبت کن`, or `رسمی کن` when the target item is unambiguous. Ambiguous conversational agreement is not treated as formal approval.
+
+**No Human Approval → No Formal Registration**
+
+This gate prevents autonomous AI-generated changes from silently becoming architectural truth while preserving valuable candidates for human review.
+
+## Batch Reconciliation
+
+When multiple pending records exist, reconciliation is performed as a batch rather than requiring one-by-one manual prompting. Each record retains its unique identity; reconciliation precedes any registration attempt, and failures remain isolated as pending/investigation states without blocking unrelated records.
+
 ## Current Pending Record
 
-`REG-REC-2026-08-29-001` remains the existing unique recovery-registration record. Its state is `PENDING FORMAL REPOSITORY REGISTRATION` until repository registration is actually retrieved and verified. No duplicate record may be created for the same identity.
+`REG-REC-2026-08-29-001` is the existing unique recovery-registration record. Its state must be determined from repository evidence; no duplicate record may be created for the same identity.
 
 ## Architectural Invariants
 
 - **No Record → No Transition**
+- **No Human Approval → No Formal Registration**
 - **No Retrieve → No Verified Registration**
 - **No Verification → No Active**
 - **Retry ≠ New Registration**
 - **Repository outage ≠ Project-data loss**
 - **No Single Memory Dependency**
+- **Detect ≠ Approve**
+- **Persist ≠ Active**
+- **Register ≠ Verify**
 
 ## Documentation Requirement
 
-The recovery, retry, reconciliation, and retrieval path itself is part of the architecture and must remain documented in the official repository when repository access is available. Changes to this architecture must be versioned and reconciled rather than silently replacing historical evidence.
+The recovery, retry, reconciliation, retrieval, and human-approval path itself is part of the architecture and must remain documented in the official repository when repository access is available. Changes to this architecture must be versioned and reconciled rather than silently replacing historical evidence.
