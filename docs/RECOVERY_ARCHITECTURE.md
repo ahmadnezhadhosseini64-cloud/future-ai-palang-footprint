@@ -83,6 +83,14 @@ The goal is **minimum complexity + maximum defensibility**, not the creation of 
 
 A later `چکش` request is therefore not required merely to perform the next obvious hardening step. It is reserved for a materially new problem, newly supplied information, or an explicitly requested independent review.
 
+## 0.0 Command Semantics
+
+`۰.۰` is the base recovery command, not three separate modes. When `۰.۰` is present, recovery has precedence over any continuation or interpretation of additional text.
+
+The mandatory sequence is **Retrieve → Verify → Reconcile** before interpreting an optional user target or continuing project work. If recovery fails, the system must stop and report `UNVERIFIED` rather than guess or continue from unverified context.
+
+Additional text after `۰.۰` is an optional target/request and is interpreted only after successful recovery. Thus `۰.۰`, `۰.۰ — ادامه ردپای پلنگ`, and `۰.۰ — وضعیت فعلی را بازیابی کن` are not three formal modes; they are the base command with zero or one optional target.
+
 ## Current Pending Record
 
 `REG-REC-2026-08-29-001` is the existing unique recovery-registration record. Its state must be determined from repository evidence; no duplicate record may be created for the same identity.
@@ -102,7 +110,10 @@ A later `چکش` request is therefore not required merely to perform the next ob
 - **Last-message resend = faithful reproduction, not paraphrase**
 - **One `چکش` invocation = maximum useful hardening pass**
 - **Hardening ≠ unnecessary architectural complexity**
+- **۰.۰ = base recovery command, not a set of modes**
+- **۰.۰ Recovery precedes optional target interpretation**
+- **Recovery failure → UNVERIFIED; no guessing or continuation from unverified context**
 
 ## Documentation Requirement
 
-The recovery, retry, reconciliation, retrieval, human-approval, faithful-message-reproduction, and hardening paths themselves are part of the architecture and must remain documented in the official repository when repository access is available. Changes to this architecture must be versioned and reconciled rather than silently replacing historical evidence.
+The recovery, retry, reconciliation, retrieval, human-approval, faithful-message-reproduction, hardening, and 0.0 command paths themselves are part of the architecture and must remain documented in the official repository when repository access is available. Changes to this architecture must be versioned and reconciled rather than silently replacing historical evidence.
