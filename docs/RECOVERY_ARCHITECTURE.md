@@ -73,6 +73,16 @@ When multiple pending records exist, reconciliation is performed as a batch rath
 
 When the human explicitly requests that the last assistant message be resent (for example, `پیام آخر رو دوباره بفرس`), the system should reproduce the immediately preceding assistant message faithfully, preserving its substantive content rather than generating a new paraphrase. Formatting may adapt to the interface, but the message content must remain materially identical. This behavior is a retrieval/reproduction operation, not a new architectural record.
 
+## Palang Hammer Execution Standard
+
+When the human invokes `چکش`, one hammer invocation is treated as a complete hardening pass for the current problem. The system must not stop at the first plausible solution and wait for repeated hammer requests.
+
+Within the same invocation, the system should proceed through the maximum useful adversarial analysis available for that problem: identify the initial solution, attack its assumptions and failure modes, test interaction with existing architecture and invariants, identify missing or redundant elements, simplify where possible, re-test the revised solution, and continue until no material, defensible weakness remains within the scope of the current information.
+
+The goal is **minimum complexity + maximum defensibility**, not the creation of additional rules or names for their own sake. A new rule, name, gate, or architectural component is proposed only if the hardened analysis shows that it is actually necessary.
+
+A later `چکش` request is therefore not required merely to perform the next obvious hardening step. It is reserved for a materially new problem, newly supplied information, or an explicitly requested independent review.
+
 ## Current Pending Record
 
 `REG-REC-2026-08-29-001` is the existing unique recovery-registration record. Its state must be determined from repository evidence; no duplicate record may be created for the same identity.
@@ -90,7 +100,9 @@ When the human explicitly requests that the last assistant message be resent (fo
 - **Persist ≠ Active**
 - **Register ≠ Verify**
 - **Last-message resend = faithful reproduction, not paraphrase**
+- **One `چکش` invocation = maximum useful hardening pass**
+- **Hardening ≠ unnecessary architectural complexity**
 
 ## Documentation Requirement
 
-The recovery, retry, reconciliation, retrieval, human-approval, and faithful-message-reproduction paths themselves are part of the architecture and must remain documented in the official repository when repository access is available. Changes to this architecture must be versioned and reconciled rather than silently replacing historical evidence.
+The recovery, retry, reconciliation, retrieval, human-approval, faithful-message-reproduction, and hardening paths themselves are part of the architecture and must remain documented in the official repository when repository access is available. Changes to this architecture must be versioned and reconciled rather than silently replacing historical evidence.
