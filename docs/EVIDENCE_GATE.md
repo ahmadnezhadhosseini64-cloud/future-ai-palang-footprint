@@ -3,7 +3,7 @@
 **Reference ID:** EGE-2026-08-29-001  
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
-**Status:** PROVEN / ACTIVE  
+**Status:** PROVEN / ACTIVE / CLOSED / PASS  
 **Created:** 2026-08-29  
 **Last Verified:** 2026-08-29
 
@@ -25,31 +25,37 @@ The statement `Independent Automated Execution = PROVEN` is allowed only when E2
 
 Repository access alone is not E3 or E4.
 
-## Verified Execution Evidence
+## Latest Verified Execution Evidence
 
 **Independent Automated Execution = PROVEN**
 
 - **Workflow:** Evidence Gate - Independent Execution Test
 - **Trigger:** push to `main`
-- **Commit that triggered the run:** `929d69e`
-- **Run status:** Success
-- **Observed duration:** 7 seconds
+- **Latest verified triggering commit:** `c557be1cbfb518eb7066d0b15b4bf52fed2de5e9`
+- **Latest verified run:** #7
+- **Run ID:** `33266685840`
+- **Run status:** `success`
 - **Job:** `evidence-gate`
 - **Trace:** GitHub Actions workflow run is independently inspectable in the repository's Actions history.
-- **Warning:** GitHub reported that `actions/checkout@v4` targets Node.js 20 and is currently being forced to run on Node.js 24. This is a deprecation warning and did not prevent successful execution.
+- **Observed result:** `Evidence Gate: EXECUTION CONFIRMED`
 
 This execution establishes the required E2 trigger, E3 real automated execution, and E4 durable inspectable trace for the Evidence Gate.
+
+## Historical Evidence
+
+Earlier successful execution at commit `929d69e` remains historical proof. Its former `actions/checkout@v4` / Node.js 20 warning is retained only as historical context. The active workflow has since been updated to `actions/checkout@v5`.
 
 ## Current State
 
 - GitHub repository access: **E1 VERIFIED**.
-- Stable repository-side retrieval path: **IMPLEMENTED / VERIFIED**.
+- Stable repository-side retrieval path: **VERIFIED / ACTIVE**.
+- Retrieval Runtime: **VERIFIED / ACTIVE**.
 - Independent automated execution: **E2/E3/E4 VERIFIED — PROVEN**.
-- Evidence Gate: **CLOSED / PASS**.
+- Evidence Gate: **CLOSED / PASS / ACTIVE**.
 
 ## Activation Rule
 
-This Evidence Gate record is a living project control. Future automated executions must remain inspectable and must not be represented as proven unless their trigger, execution result, and durable trace can be retrieved and verified. A later failed or unverifiable run does not erase this historical proof; it creates a new state/event that must be recorded separately.
+This Evidence Gate record is a living project control. Future automated executions must remain inspectable and must not be represented as proven unless their trigger, execution result, and durable trace can be retrieved and verified. A later failed or unverifiable run does not erase historical proof; it creates a new state/event that must be recorded separately.
 
 ## Anti-Overclaim Rule
 
