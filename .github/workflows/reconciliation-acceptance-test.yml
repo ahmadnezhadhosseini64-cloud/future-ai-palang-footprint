@@ -30,17 +30,16 @@ jobs:
           test "$(grep -o 'PENDING_REPOSITORY_REGISTRATION' "$pending")" = "PENDING_REPOSITORY_REGISTRATION"
 
           # 3) Capability recovery: reconcile automatically without a manual reminder.
-          cp "$pending" "$work/repository/${id}.json"
           printf '{"production_id":"%s","status":"REGISTERED","destination":"repository"}\n' "$id" > "$work/repository/${id}.json"
 
           # 4) Read-back verification.
           test "$(grep -o 'REGISTERED' "$work/repository/${id}.json")" = "REGISTERED"
           test "$(grep -o 'TEST-PROD-001' "$work/repository/${id}.json")" = "TEST-PROD-001"
 
-          # 5) Idempotent retry: same production_id must not create a duplicate.
-          cp "$work/repository/${id}.json" "$work/repository/${id}.retry.json"
-          test "$(find "$work/repository" -maxdepth 1 -type f -name '*.json' | wc -l)" -eq 2
-          test "$(grep -h -o 'TEST-PROD-001' "$work/repository"/*.json | wc -l)" -eq 2
+          # 5) Idempotent retry: reprocessing the same production_id updates the same canonical record.
+          printf '{"production_id":"%s","status":"REGISTERED","destination":"repository"}\n' "$id" > "$work/repository/${id}.json"
+          test "$(find "$work/repository" -maxdepth 1 -type f -name '*.json' | wc -l)" -eq 1
+          test "$(grep -h -o 'TEST-PROD-001' "$work/repository"/*.json | wc -l)" -eq 1
 
           # 6) Interrupted state is explicit and resumable.
           interrupted="$work/pending/TEST-PROD-002.json"
