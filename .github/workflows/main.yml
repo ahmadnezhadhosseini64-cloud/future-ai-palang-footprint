@@ -14,6 +14,25 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v5
 
+      - name: Stable Retrieval Core consistency test
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "Retrieval Runtime: LOCATE -> RETRIEVE -> VERIFY -> RECONCILE -> REPORT -> CONTINUE"
+          test -f README.md
+          test -f docs/STABLE_RETRIEVAL_CORE.md
+          test -f docs/REFERENCE_INDEX.md
+          test -f docs/RETRIEVAL_RUNTIME.md
+          test -f docs/EVIDENCE_GATE.md
+          test -f docs/CHECKPOINT.md
+          ! grep -R -n --fixed-strings "NOT YET PROVEN" docs/STABLE_RETRIEVAL_CORE.md docs/REFERENCE_INDEX.md docs/EVIDENCE_GATE.md docs/CHECKPOINT.md
+          ! grep -R -n --fixed-strings "actions/checkout@v4" docs/STABLE_RETRIEVAL_CORE.md docs/REFERENCE_INDEX.md docs/EVIDENCE_GATE.md docs/CHECKPOINT.md
+          grep -q --fixed-strings "PROVEN / ACTIVE / CLOSED / PASS" docs/EVIDENCE_GATE.md
+          grep -q --fixed-strings "E2/E3/E4 VERIFIED" docs/EVIDENCE_GATE.md
+          grep -q --fixed-strings "VERIFIED / ACTIVE" docs/STABLE_RETRIEVAL_CORE.md
+          grep -q --fixed-strings "LOCATE → RETRIEVE → VERIFY → RECONCILE → REPORT → CONTINUE" docs/RETRIEVAL_RUNTIME.md
+          echo "Stable Retrieval Core consistency: VERIFIED"
+
       - name: Independent execution test
         run: |
           echo "Evidence Gate: START"
