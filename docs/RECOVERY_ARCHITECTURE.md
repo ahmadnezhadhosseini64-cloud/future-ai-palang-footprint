@@ -61,6 +61,10 @@ Accepted approval triggers include clear commands such as `تأیید کن`, `ث
 
 This gate prevents autonomous AI-generated changes from silently becoming architectural truth while preserving valuable candidates for human review.
 
+## Confirmed Interaction Behavior
+
+The Human Approval Gate behavior described above has been explicitly reviewed and confirmed by the human project owner as correct. This confirmation does not grant autonomous approval to future candidates; future architecture-affecting candidates must still be reported and explicitly approved before formal registration.
+
 ## Batch Reconciliation
 
 When multiple pending records exist, reconciliation is performed as a batch rather than requiring one-by-one manual prompting. Each record retains its unique identity; reconciliation precedes any registration attempt, and failures remain isolated as pending/investigation states without blocking unrelated records.
