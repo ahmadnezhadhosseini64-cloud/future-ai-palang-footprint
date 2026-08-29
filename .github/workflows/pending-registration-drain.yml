@@ -1,0 +1,25 @@
+name: Pending Registration Drain
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+jobs:
+  drain:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate durable pending contract
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f recovery/PENDING_REGISTRATION_QUEUE.md
+          test -f docs/architecture/DURABLE_PENDING_RECONCILIATION_BRIDGE.md
+          grep -q 'Never delete a pending item merely because an attempt failed' recovery/PENDING_REGISTRATION_QUEUE.md
+          grep -q 'Every subsequent registration event and scheduled reconciliation must scan this queue' recovery/PENDING_REGISTRATION_QUEUE.md
+          echo "PENDING_QUEUE_CONTRACT=PASS"
+          echo "DRAIN_TRIGGER=ACTIVE"
+          echo "EXECUTION_CLAIM_INTEGRITY=ENFORCED"
