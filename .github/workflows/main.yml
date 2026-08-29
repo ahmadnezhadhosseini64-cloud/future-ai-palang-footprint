@@ -1,6 +1,9 @@
 name: Evidence Gate - Independent Execution Test
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
