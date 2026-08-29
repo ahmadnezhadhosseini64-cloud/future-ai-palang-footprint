@@ -1,0 +1,68 @@
+name: Production Detection Safety Net
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+  schedule:
+    - cron: '17 * * * *'
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  detect-production-gaps:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Inspect repository-side production candidates
+        shell: bash
+        run: |
+          set -euo pipefail
+          registry='docs/PRODUCTION_REGISTRY.md'
+          safety='docs/PRODUCTION_DETECTION_SAFETY_NET.md'
+          trace="PDSN-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+
+          test -f "$registry" || { echo "CONTROL_PLANE_DEGRADED: missing $registry"; exit 1; }
+          test -f "$safety" || { echo "CONTROL_PLANE_DEGRADED: missing $safety"; exit 1; }
+
+          echo "trace_id=$trace"
+          echo "commit=${GITHUB_SHA}"
+          echo "event=${GITHUB_EVENT_NAME}"
+
+          if git rev-parse HEAD^ >/dev/null 2>&1; then
+            changed="$(git diff --name-only HEAD^ HEAD)"
+          else
+            changed="$(git ls-files)"
+          fi
+
+          candidate_count=0
+          unmatched_count=0
+          while IFS= read -r path; do
+            [ -n "$path" ] || continue
+            case "$path" in
+              docs/principles/*|docs/architecture/*|docs/recovery/*|docs/registration-recovery/*|docs/*COMMAND*|docs/*PROTOCOL*|docs/*EVIDENCE*|.github/workflows/*)
+                candidate_count=$((candidate_count+1))
+                if grep -Fq -- "$path" "$registry"; then
+                  echo "MATCHED candidate path=$path"
+                else
+                  unmatched_count=$((unmatched_count+1))
+                  echo "DETECTION_CANDIDATE path=$path disposition=REVIEW_REQUIRED"
+                fi
+                ;;
+            esac
+          done <<< "$changed"
+
+          echo "candidate_count=$candidate_count"
+          echo "unmatched_count=$unmatched_count"
+          echo "IMPORTANT: repository-side detection cannot inspect ChatGPT persistent memory."
+          echo "No unmatched candidate is auto-promoted to canonical status."
+
+          # This job is a safety net, not proof of full cross-layer reconciliation.
+          # Keep the run successful when candidates need human review; fail only when
+          # the safety-net control plane itself is unavailable.
