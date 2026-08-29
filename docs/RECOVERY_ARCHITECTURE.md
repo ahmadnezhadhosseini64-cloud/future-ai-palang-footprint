@@ -69,6 +69,10 @@ The Human Approval Gate behavior described above has been explicitly reviewed an
 
 When multiple pending records exist, reconciliation is performed as a batch rather than requiring one-by-one manual prompting. Each record retains its unique identity; reconciliation precedes any registration attempt, and failures remain isolated as pending/investigation states without blocking unrelated records.
 
+## Exact Last-Message Reproduction
+
+When the human explicitly requests that the last assistant message be resent (for example, `پیام آخر رو دوباره بفرس`), the system should reproduce the immediately preceding assistant message faithfully, preserving its substantive content rather than generating a new paraphrase. Formatting may adapt to the interface, but the message content must remain materially identical. This behavior is a retrieval/reproduction operation, not a new architectural record.
+
 ## Current Pending Record
 
 `REG-REC-2026-08-29-001` is the existing unique recovery-registration record. Its state must be determined from repository evidence; no duplicate record may be created for the same identity.
@@ -85,7 +89,8 @@ When multiple pending records exist, reconciliation is performed as a batch rath
 - **Detect ≠ Approve**
 - **Persist ≠ Active**
 - **Register ≠ Verify**
+- **Last-message resend = faithful reproduction, not paraphrase**
 
 ## Documentation Requirement
 
-The recovery, retry, reconciliation, retrieval, and human-approval path itself is part of the architecture and must remain documented in the official repository when repository access is available. Changes to this architecture must be versioned and reconciled rather than silently replacing historical evidence.
+The recovery, retry, reconciliation, retrieval, human-approval, and faithful-message-reproduction paths themselves are part of the architecture and must remain documented in the official repository when repository access is available. Changes to this architecture must be versioned and reconciled rather than silently replacing historical evidence.
