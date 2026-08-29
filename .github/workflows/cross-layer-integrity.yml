@@ -1,0 +1,60 @@
+name: Cross-Layer Integrity Gate
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Validate required control artifacts
+        shell: bash
+        run: |
+          set -euo pipefail
+          required=(
+            "docs/RECONCILIATION_LEDGER_2026-08-30.md"
+            "docs/principles/PRINCIPLE-2026-08-30-001-deferred-registration-automatic-reconciliation.md"
+            "docs/principles/PRINCIPLE-2026-08-30-002-cross-layer-command-completion-integrity.md"
+            "docs/RECOVERY_ARCHITECTURE.md"
+            "docs/EVIDENCE_GATE.md"
+            "docs/STABLE_RETRIEVAL_CORE.md"
+            "docs/RETRIEVAL_RUNTIME.md"
+            "recovery/RECOVERY_BUFFER.md"
+          )
+          for f in "${required[@]}"; do
+            test -f "$f" || { echo "MISSING REQUIRED ARTIFACT: $f"; exit 1; }
+          done
+
+      - name: Validate non-ambiguous completion rules
+        shell: bash
+        run: |
+          set -euo pipefail
+          grep -q "No Silent Command Loss" docs/principles/PRINCIPLE-2026-08-30-002-cross-layer-command-completion-integrity.md
+          grep -q "No Ambiguous Registration Claim" docs/principles/PRINCIPLE-2026-08-30-002-cross-layer-command-completion-integrity.md
+          grep -q "No Evidence → No Completion Claim" docs/principles/PRINCIPLE-2026-08-30-002-cross-layer-command-completion-integrity.md
+          grep -q "PENDING" docs/principles/PRINCIPLE-2026-08-30-002-cross-layer-command-completion-integrity.md
+          grep -q "SYNC_GAP" docs/principles/PRINCIPLE-2026-08-30-002-cross-layer-command-completion-integrity.md
+
+      - name: Validate mandatory project metadata in the active control principle
+        shell: bash
+        run: |
+          set -euo pipefail
+          file="docs/principles/PRINCIPLE-2026-08-30-002-cross-layer-command-completion-integrity.md"
+          for field in "Project:" "Owner:" "Location:" "Date:" "Status:"; do
+            grep -q "$field" "$file" || { echo "MISSING METADATA: $field"; exit 1; }
+          done
+
+      - name: Emit traceable execution evidence
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "Cross-Layer Integrity Gate: EXECUTED"
+          echo "Repository: $GITHUB_REPOSITORY"
+          echo "Commit: $GITHUB_SHA"
+          echo "Run ID: $GITHUB_RUN_ID"
+          echo "Status: CONTROL ARTIFACTS VERIFIED"
