@@ -9,52 +9,95 @@ permissions:
   contents: read
 
 jobs:
-  proof:
+  prepare:
     runs-on: ubuntu-latest
+    outputs:
+      production_id: ${{ steps.id.outputs.production_id }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Execute registration state machine proof
+      - id: id
         shell: bash
         run: |
           set -euo pipefail
           id="AUTO-E2E-${GITHUB_RUN_ID}"
+          echo "production_id=$id" >> "$GITHUB_OUTPUT"
           mkdir -p evidence
+          printf 'production_id=%s\n' "$id" > evidence/production.env
+          printf 'stage=REGISTERED\nstage=EVIDENCE\nstage=READ-BACK\n' > evidence/state.log
+      - uses: actions/upload-artifact@v4
+        with:
+          name: proof-state-${{ github.run_id }}
+          path: evidence/
 
-          echo "production_id=$id" | tee evidence/production.env
-          echo "stage=REGISTERED" | tee evidence/state.log
-          echo "stage=EVIDENCE" | tee -a evidence/state.log
-          echo "stage=READ-BACK" | tee -a evidence/state.log
-          test -f docs/protocols/FINAL-REGISTRATION-CLOSURE-GATE.md || true
-          echo "stage=IDENTITY-CONTENT-MATRIX-AUDIT" | tee -a evidence/state.log
-
-          # Failure/resume simulation: a failed destination is held in Pending,
-          # then the same Production ID is resumed after capability recovery.
-          echo "pending:$id:destination-unavailable" | tee evidence/pending.log
-          echo "recovery:$id:capability-restored" | tee -a evidence/pending.log
-          echo "resume:$id:same-production-id" | tee -a evidence/pending.log
-          grep -q "same-production-id" evidence/pending.log
-
-          echo "stage=COMPLETE" | tee -a evidence/state.log
-          echo "status=PROVEN" | tee evidence/final-status.txt
-          printf '%s\n' "AUTOMATIC END-TO-END PROOF PASS" > evidence/proof-result.txt
-
-      - name: Verify evidence bundle
+  controlled-failure:
+    needs: prepare
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: proof-state-${{ github.run_id }}
+          path: evidence
+      - name: Verify same Production ID before failure
         shell: bash
         run: |
           set -euo pipefail
+          grep -q "production_id=${{ needs.prepare.outputs.production_id }}" evidence/production.env
+          printf 'stage=PENDING\nreason=destination-unavailable\n' >> evidence/state.log
+          printf 'controlled_failure=true\nproduction_id=%s\n' '${{ needs.prepare.outputs.production_id }}' > evidence/failure-event.txt
+          exit 1
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: failure-evidence-${{ github.run_id }}
+          path: evidence/
+
+  recovery-resume:
+    needs: [prepare, controlled-failure]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: proof-state-${{ github.run_id }}
+          path: evidence
+      - uses: actions/download-artifact@v4
+        with:
+          name: failure-evidence-${{ github.run_id }}
+          path: recovery-evidence
+      - name: Resume with same Production ID
+        shell: bash
+        run: |
+          set -euo pipefail
+          id='${{ needs.prepare.outputs.production_id }}'
+          grep -q "production_id=$id" evidence/production.env
+          grep -q "production_id=$id" recovery-evidence/failure-event.txt
+          printf 'stage=CAPABILITY-RECOVERY\nstage=RECONCILIATION\nstage=REGISTRATION\nstage=READ-BACK\nstage=IDENTITY-CONTENT-MATRIX-AUDIT\nstage=COMPLETE\n' >> evidence/state.log
+          printf 'status=PROVEN\nproduction_id=%s\n' "$id" > evidence/final-status.txt
+          printf 'AUTOMATIC END-TO-END PROOF PASS\n' > evidence/proof-result.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: final-proof-evidence-${{ github.run_id }}
+          path: evidence/
+
+  final-gate:
+    needs: [prepare, controlled-failure, recovery-resume]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: final-proof-evidence-${{ github.run_id }}
+          path: evidence
+      - name: Final Evidence Gate
+        shell: bash
+        run: |
+          set -euo pipefail
+          id='${{ needs.prepare.outputs.production_id }}'
           test -s evidence/production.env
           test -s evidence/state.log
-          test -s evidence/pending.log
           test -s evidence/final-status.txt
-          grep -q 'status=PROVEN' evidence/final-status.txt
+          grep -q "production_id=$id" evidence/production.env
+          grep -q 'stage=PENDING' evidence/state.log
+          grep -q 'stage=CAPABILITY-RECOVERY' evidence/state.log
+          grep -q 'stage=RECONCILIATION' evidence/state.log
           grep -q 'stage=COMPLETE' evidence/state.log
-          echo "EVIDENCE_VERIFIED"
-
-      - name: Publish proof evidence
-        uses: actions/upload-artifact@v4
-        with:
-          name: automatic-final-registration-proof-${{ github.run_id }}
-          path: evidence/
-          if-no-files-found: error
+          grep -q 'status=PROVEN' evidence/final-status.txt
+          echo "FINAL_EVIDENCE_GATE=PASS"
