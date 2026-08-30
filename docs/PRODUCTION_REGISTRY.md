@@ -100,14 +100,14 @@ A future reconciler must consume this registry, detect stale/pending/conflicting
 | `memory_state` | `UNVERIFIED` — repository-side tooling cannot independently verify ChatGPT persistent memory |
 | `repository_state` | `SUCCESS` — Reference, Architecture, Registry, and Integration records written |
 | `execution_state` | `SUCCESS` — reconciliation writes executed |
-| `evidence_state` | `PENDING` — final post-write retrieval/verification still required |
-| `verification_state` | `PENDING` |
+| `evidence_state` | `SUCCESS` — post-write reads captured for Reference, Architecture, Registry, Recovery, and integration record |
+| `verification_state` | `SUCCESS` — cross-layer repository integration verified |
 | `approval_state` | `APPROVED` |
-| `reconciliation_state` | `IN_PROGRESS` |
-| `canonical_destination` | `docs/reference/REF-REG-REC-2026-08-29-002.md`; `docs/architecture/ARCH-REG-REC-2026-08-29-002.md`; this registry; integration record |
+| `reconciliation_state` | `COMPLETED` for repository-side applicable layers; Persistent Memory remains unverified |
+| `canonical_destination` | `docs/reference/REF-REG-REC-2026-08-29-002.md`; `docs/architecture/ARCH-REG-REC-2026-08-29-002.md`; this registry; `docs/integration/REG-REC-2026-08-29-002-RECONCILIATION.md` |
 | `artifact_path` | `docs/reference/REF-REG-REC-2026-08-29-002.md` |
-| `last_verified_at` | NOT YET VERIFIED |
-| `notes` | Recovery Buffer remains provenance. Integration Completion Gate requires post-write retrieval/verification before closure. |
+| `last_verified_at` | 2026-08-30 |
+| `notes` | Recovery Buffer remains provenance/audit history. The production is integrated into live Reference, Architecture, Registry, and reconciliation structures. Persistent Memory is explicitly UNVERIFIED, not falsely closed. |
 
 ### Cross-layer references
 
