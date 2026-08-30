@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Protocol ID:** CCP-2026-08-30-001  
 **Status:** ACTIVE — CANONICAL REGISTRATION  
-**Version:** 1.0  
+**Version:** 1.1  
 **Reference Point:** 0.0  
 **Date:** 2026-08-30  
 
@@ -55,19 +55,46 @@ Registration in memory alone is not equivalent to canonical project registration
 
 ## 6. Durable Registration and Deferred Reconciliation
 
-When a required canonical destination is writable and available, registration must be completed there. When it is unavailable, the production must receive an explicit `PENDING / UNVERIFIED` state and be retained through the project's recovery/deferred-registration mechanism rather than being reported as complete.
+Every required durable destination is an independent registration gate. The two primary durable destinations are:
 
-## 7. Evidence Integrity
+1. **Persistent Memory**, when the production is appropriate for memory.
+2. **Canonical Project Repository**, when the production belongs in the project's independent repository.
+
+Failure of either destination must never be silently treated as success. The production must immediately receive an explicit `PENDING / UNVERIFIED` registration state identifying the missing destination, a unique recovery/reference ID, the attempted operation, timestamp, and required next action. The successful destination must not be undone merely because the other destination failed.
+
+The system must retry/reconcile the missing destination at the **first valid opportunity** when the required capability becomes available. Reconciliation must be traceable and must end with fresh verification evidence. Until then, final status remains incomplete for that destination.
+
+> **One Durable Destination Succeeds + One Fails → Preserve Success + Queue the Failure → Reconcile at First Valid Opportunity → Verify → Close the Gap**
+
+If both destinations are unavailable, retain the production in the project's recovery/deferred-registration mechanism with explicit `PENDING / UNVERIFIED` status rather than claiming completion.
+
+## 7. Registration Reconciliation Record
+
+Whenever a durable registration fails or is deferred, create a reconciliation record containing:
+
+- Reconciliation ID
+- Production ID
+- Failed destination
+- Attempt timestamp
+- Failure/unavailability state
+- Evidence of any successful destination
+- Required next action
+- Reconciliation status
+- Completion timestamp and evidence when later resolved
+
+No reconciliation item may be silently dropped.
+
+## 8. Evidence Integrity
 
 No operation may be claimed as completed, synchronized, canonicalized, tested, or verified without recoverable evidence for that operation. Access, intent, design, or an instruction to perform an operation is not evidence that the operation occurred.
 
-## 8. Scope
+## 9. Scope
 
 This protocol is part of the Future AI / Palang Footprint execution architecture and applies to future production and continuity transitions unless a later canonical rule explicitly supersedes it.
 
-## 9. Initial Registration Record
+## 10. Initial Registration Record
 
 **Trigger:** Identified gap in the continuity chain on 2026-08-30.  
 **Production:** Connection Chain / Connection Header protocol.  
 **Initial status:** Partially registered in persistent memory; canonical repository registration pending.  
-**Current status:** Canonical repository artifact created; verification required after write.  
+**Current status:** Canonical repository artifact created and subsequently updated with durable-registration reconciliation rules; verification required after this write.  
