@@ -58,3 +58,35 @@ This registry is a repository-side control plane. It cannot independently read C
 
 ## Live-system requirement
 A future reconciler must consume this registry, detect stale/pending/conflicting records, reconcile when capabilities are available, and emit traceable evidence. A workflow that only validates static files is an integrity gate, not a complete cross-layer reconciler.
+
+## Registered production — PRNTP-2026-08-30-001
+
+| Field | Value |
+|---|---|
+| `production_id` | `PRNTP-2026-08-30-001` |
+| `trace_id` | `PRNTP-2026-08-30-001` |
+| `type` | Permanent Principle + Cross-Layer Architecture |
+| `title` | Permanent Registration Not Trace Principle |
+| `version` | 1.0 |
+| `created_at` | 2026-08-30 |
+| `owner` | Ahmad Nezhadhosseini |
+| `source_context` | User-directed formal production / Palang Hammer action |
+| `memory_state` | `PENDING` — persistent-memory write requires memory-system evidence |
+| `repository_state` | `SUCCESS` — canonical artifacts written |
+| `execution_state` | `SUCCESS` — repository mutation executed |
+| `evidence_state` | `SUCCESS` — write result and post-write reads captured |
+| `verification_state` | `SUCCESS` for repository artifacts; memory remains unverified |
+| `approval_state` | `APPROVED` — user explicitly requested registration |
+| `reconciliation_state` | `PARTIAL` — repository reconciled; memory layer pending verification |
+| `canonical_destination` | `docs/reference/REF-PERMANENT-REGISTRATION-NOT-TRACE-2026-08-30.md`; `docs/architecture/ARCH-PRNT-2026-08-30-001.md`; this registry |
+| `artifact_path` | `docs/architecture/ARCH-PRNT-2026-08-30-001.md` |
+| `last_verified_at` | 2026-08-30 |
+| `notes` | Trace is not durable registration. Required layers must carry explicit states; silence never means completion. |
+
+### Cross-layer references
+
+- Reference: `REF-PRNT-2026-08-30-001`
+- Architecture: `ARCH-PRNT-2026-08-30-001`
+- Canonical repository: `ahmadnezhadhosseini64-cloud/future-ai-palang-footprint`
+- Required recovery rule: `PENDING/UNAVAILABLE → Recovery → First Valid Opportunity → Reconcile → Verify → Close`
+- No writable durable destination: `UNREGISTERED / RECOVERY REQUIRED`
