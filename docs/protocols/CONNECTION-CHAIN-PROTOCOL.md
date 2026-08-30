@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Protocol ID:** CCP-2026-08-30-001  
 **Status:** ACTIVE — CANONICAL REGISTRATION  
-**Version:** 1.1  
+**Version:** 1.2  
 **Reference Point:** 0.0  
 **Date:** 2026-08-30  
 
@@ -41,9 +41,10 @@ At the start of every new chat, continuation from a previous chat, or return fro
 1. **STOP** — identify the transition point.
 2. **RECORD** — create the Connection Header.
 3. **RETRIEVE** — when a prior `0.0`/checkpoint is referenced, retrieve the stable reference before relying on memory or inference.
-4. **VERIFY** — distinguish proven facts from unverified information.
-5. **REGISTER** — register the new production in the required durable destinations.
-6. **CONTINUE** — only after the preceding gates pass.
+4. **RECONCILE** — inspect all open durable-registration/recovery records before substantive continuation.
+5. **VERIFY** — distinguish proven facts from unverified information.
+6. **REGISTER** — register the new production in all required durable destinations.
+7. **CONTINUE** — only after the preceding gates pass, except where an explicitly documented unavailable capability blocks the gate.
 
 ## 5. New Production Registration Chain
 
@@ -53,24 +54,20 @@ For every newly produced rule, command, principle, protocol, architecture elemen
 
 Registration in memory alone is not equivalent to canonical project registration.
 
-## 6. Durable Registration and Deferred Reconciliation
+## 6. Dual Durable Registration Gate
 
-Every required durable destination is an independent registration gate. The two primary durable destinations are:
+Every required durable destination is an independent gate. The two primary durable destinations are:
 
 1. **Persistent Memory**, when the production is appropriate for memory.
 2. **Canonical Project Repository**, when the production belongs in the project's independent repository.
 
-Failure of either destination must never be silently treated as success. The production must immediately receive an explicit `PENDING / UNVERIFIED` registration state identifying the missing destination, a unique recovery/reference ID, the attempted operation, timestamp, and required next action. The successful destination must not be undone merely because the other destination failed.
+Each destination must have its own explicit state: `SUCCESS`, `PENDING`, `FAILED`, or `UNAVAILABLE`.
 
-The system must retry/reconcile the missing destination at the **first valid opportunity** when the required capability becomes available. Reconciliation must be traceable and must end with fresh verification evidence. Until then, final status remains incomplete for that destination.
+Success at one destination must never be inferred for the other, and a failed destination must not cause an already successful destination to be rolled back.
 
-> **One Durable Destination Succeeds + One Fails → Preserve Success + Queue the Failure → Reconcile at First Valid Opportunity → Verify → Close the Gap**
+## 7. Failure, Recovery, and First-Opportunity Reconciliation
 
-If both destinations are unavailable, retain the production in the project's recovery/deferred-registration mechanism with explicit `PENDING / UNVERIFIED` status rather than claiming completion.
-
-## 7. Registration Reconciliation Record
-
-Whenever a durable registration fails or is deferred, create a reconciliation record containing:
+If any required durable destination cannot be completed, the production immediately enters an explicit `PENDING / UNVERIFIED` state for that destination. A recovery/reconciliation record must be created with:
 
 - Reconciliation ID
 - Production ID
@@ -82,19 +79,35 @@ Whenever a durable registration fails or is deferred, create a reconciliation re
 - Reconciliation status
 - Completion timestamp and evidence when later resolved
 
-No reconciliation item may be silently dropped.
+A pending item is never considered complete, but it is also never considered lost.
 
-## 8. Evidence Integrity
+The **first-valid-opportunity trigger** is mandatory. A reconciliation attempt must be initiated whenever the required capability becomes available and, at minimum, at the beginning of every new chat, continuation from a prior chat, return from `00`, or other project transition where the recovery records can be retrieved. Open reconciliation items must be checked **before new substantive project production or continuation**.
+
+The reconciliation cycle is:
+
+**DETECT → RECORD → PRESERVE SUCCESS → QUEUE FAILURE → FIRST VALID OPPORTUNITY → RETRY → VERIFY → CLOSE**
+
+If retry is still impossible, retain the item as `PENDING / UNVERIFIED` with an updated attempt timestamp and explicit next action. No silent dropping, overwriting, or indefinite untracked deferral is permitted.
+
+> **One Durable Destination Succeeds + One Fails → Preserve Success + Queue the Failure → Reconcile at First Valid Opportunity → Verify → Close the Gap**
+
+If both destinations are unavailable, retain the production through the project's recovery/deferred-registration mechanism with explicit pending status rather than claiming completion.
+
+## 8. Reconciliation Gate Before Continuation
+
+At every connection transition, the system must first retrieve open reconciliation records. If a required destination is now available, reconciliation must be attempted before proceeding with unrelated substantive work. If the destination remains unavailable, the system may continue only with the limitation explicitly recorded in the Connection Header and reconciliation record.
+
+## 9. Evidence Integrity
 
 No operation may be claimed as completed, synchronized, canonicalized, tested, or verified without recoverable evidence for that operation. Access, intent, design, or an instruction to perform an operation is not evidence that the operation occurred.
 
-## 9. Scope
+## 10. Scope
 
 This protocol is part of the Future AI / Palang Footprint execution architecture and applies to future production and continuity transitions unless a later canonical rule explicitly supersedes it.
 
-## 10. Initial Registration Record
+## 11. Initial Registration Record
 
 **Trigger:** Identified gap in the continuity chain on 2026-08-30.  
 **Production:** Connection Chain / Connection Header protocol.  
-**Initial status:** Partially registered in persistent memory; canonical repository registration pending.  
-**Current status:** Canonical repository artifact created and subsequently updated with durable-registration reconciliation rules; verification required after this write.  
+**Current version:** 1.2.  
+**Current status:** Canonical repository artifact updated with first-opportunity reconciliation and pre-continuation recovery gates; verification required after this write.  
