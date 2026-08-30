@@ -35,6 +35,10 @@ The operational recovery sequence remains:
 
 **LOCATE → RETRIEVE → VERIFY → RECONCILE → REPORT → CONTINUE**
 
+## Registration
+
+Formal repository registration was created as GitHub Issue #1 titled `Registration closure — Stable Retrieval Core + Evidence Gate — 2026-08-30`.
+
 ## Evidence Boundary
 
 This record does **not** claim permanent availability independent of GitHub, nor does it claim that one successful run guarantees all future runs. Persistent Memory registration remains **UNVERIFIED / PENDING** unless independently evidenced.
