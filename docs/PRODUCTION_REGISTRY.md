@@ -83,6 +83,32 @@ A future reconciler must consume this registry, detect stale/pending/conflicting
 | `last_verified_at` | 2026-08-30 |
 | `notes` | Trace is not durable registration. Required layers must carry explicit states; silence never means completion. |
 
+### Reconciled production — REG-REC-2026-08-29-002
+
+| Field | Value |
+|---|---|
+| `production_id` | `REG-REC-2026-08-29-002` |
+| `trace_id` | `REG-REC-2026-08-29-002` |
+| `type` | Approved architectural behavior |
+| `title` | New Production Metadata Integrity & No-Fabrication Rule |
+| `version` | 1.0 |
+| `created_at` | 2026-08-29T23:49:00+03:30 |
+| `created_at_timezone` | Asia/Tehran |
+| `owner` | Ahmad Nezhadhosseini |
+| `location` | Gonbad-e Kavus, Iran |
+| `source_context` | User-approved production preserved in Recovery Buffer during unavailable formal integration |
+| `memory_state` | `UNVERIFIED` — repository-side tooling cannot independently verify ChatGPT persistent memory |
+| `repository_state` | `SUCCESS` — Reference, Architecture, Registry, and Integration records written |
+| `execution_state` | `SUCCESS` — reconciliation writes executed |
+| `evidence_state` | `PENDING` — final post-write retrieval/verification still required |
+| `verification_state` | `PENDING` |
+| `approval_state` | `APPROVED` |
+| `reconciliation_state` | `IN_PROGRESS` |
+| `canonical_destination` | `docs/reference/REF-REG-REC-2026-08-29-002.md`; `docs/architecture/ARCH-REG-REC-2026-08-29-002.md`; this registry; integration record |
+| `artifact_path` | `docs/reference/REF-REG-REC-2026-08-29-002.md` |
+| `last_verified_at` | NOT YET VERIFIED |
+| `notes` | Recovery Buffer remains provenance. Integration Completion Gate requires post-write retrieval/verification before closure. |
+
 ### Cross-layer references
 
 - Reference: `REF-PRNT-2026-08-30-001`
