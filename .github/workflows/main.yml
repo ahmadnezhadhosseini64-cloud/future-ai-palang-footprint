@@ -4,10 +4,13 @@ on:
   push:
     branches:
       - main
+    paths:
+      - README.md
+      - .github/workflows/main.yml
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   evidence-gate:
@@ -38,6 +41,7 @@ jobs:
 
       - name: Independent execution test
         run: |
+          set -euo pipefail
           echo "Evidence Gate: START"
           echo "Repository: $GITHUB_REPOSITORY"
           echo "Workflow: $GITHUB_WORKFLOW"
@@ -51,7 +55,7 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p evidence
-          cat > evidence/evidence-gate-${GITHUB_RUN_ID}.txt <<EOF
+          cat > evidence/evidence-gate-latest.txt <<EOF
 Evidence Gate: EXECUTION CONFIRMED
 Repository: ${GITHUB_REPOSITORY}
 Workflow: ${GITHUB_WORKFLOW}
@@ -63,10 +67,21 @@ Independent Automated Execution: PROVEN
 Evidence Artifact: GENERATED
 EOF
 
+      - name: Commit durable evidence record
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add evidence/evidence-gate-latest.txt
+          git diff --cached --quiet && exit 0
+          git commit -m "Record verified Evidence Gate execution"
+          git push
+
       - name: Upload durable evidence artifact
         uses: actions/upload-artifact@v4
         with:
           name: evidence-gate-${{ github.run_id }}
-          path: evidence/evidence-gate-${{ github.run_id }}.txt
+          path: evidence/evidence-gate-latest.txt
           if-no-files-found: error
           retention-days: 90
