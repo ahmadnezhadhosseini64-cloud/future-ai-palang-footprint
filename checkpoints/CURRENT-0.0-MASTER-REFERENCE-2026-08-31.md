@@ -3,84 +3,50 @@
 Status: ACTIVE / LIVE / RECOVERABLE
 Project: Future AI / Palang Footprint
 Owner: Ahmad Nezhadhosseini
-Location: Iran, Gonbad-e Kavus
-Purpose: Single compact reference for reconstructing the current path and registration state.
 
-## Current position
-The project has reached the cross-layer finalization/reconciliation stage. The canonical Repository is the durable reference for project records and deferred reconciliation. Persistent Memory is an applicable destination, but its registration is VERIFIED only after actual Memory read-back.
+## Latest 0.0 anchor
+`0.0-2026-08-31-230004-ADP`
 
-## What is already established
-- Canonical Repository: active and accessible through the authorized GitHub connection.
-- Access-blocked finalization/recovery rule: ACTIVE / LIVE / PERMANENT.
-- Persistent Memory Deferred Reconciliation Protocol: PMDRP-2026-08-31-001, ACTIVE / LIVE / PERMANENT.
-- Final Registration Closure Gate: ACTIVE / LIVE / PERMANENT.
-- Capability Validation Before Action: CVBA-2026-08-31-001, ACTIVE / PERMANENT.
-- Universal Rule Inheritance & Invocation Gate: URIG-2026-08-31-001, ACTIVE / LIVING / PERMANENT.
-- 0.0 checkpoints exist in `checkpoints/` and are recoverable by exact file retrieval.
+Canonical checkpoint:
+`checkpoints/0.0-2026-08-31-230004-ADAPTIVE-DISCOVERY-LIVING-ARCHIVE.md`
 
-## Universal execution inheritance
-Rules existing only as documentation are not sufficient. Every applicable new command, production, document, checkpoint, protocol, rule, principle, test, evidence record, recovery record, or architecture element must resolve and inherit the applicable canonical rules before execution is considered complete.
+Date: 2026-08-31
+Exact Local Time: 23:00:04
+IANA Timezone: Asia/Tehran
+UTC Offset: +03:30
+Location: Iran / Gonbad-e Kavus (user-context location; not independently GPS-verified)
 
-**Rule exists ≠ Rule invoked ≠ Rule verified.**
+## Current architecture state
+Archive Revival / ARSM; Valuable Finding Recognition & No-Drop; Operational Knowledge Lifecycle; Knowledge Activation Architecture; Interaction-as-Validation Operating Mode; Playground Network; Adaptive Discovery / Cross-Playground are ACTIVE/LIVING architectural layers as recorded in the canonical checkpoint.
 
-The short command `ثبت کن` means: resolve and apply all applicable governing rules, then execute the traceable registration workflow.
+Current discovery loop:
+Finding → Cross-Playground Search → Relationship Detection → Pattern Fusion → Validation → Operationalization → Gap Detection → Targeted Search → New Finding.
 
-The command `0.0` means: retrieve the canonical 0.0 reference first, resolve applicable rules, create the required timestamped connection/checkpoint record, and only then continue.
+Core principle: every valuable discovery should improve the map for the next discovery.
 
-## 0.0 mandatory timestamp gate
-Every invocation of `0.0` must produce, at minimum:
-- 0.0 ID
-- Date
-- Exact local time
-- IANA timezone name and UTC offset
-- Country/city and location-status
-- Previous 0.0/checkpoint/reference when applicable
-- Current state
-- Continuation Anchor
-- Rule-resolution status
-- Verification status
+## Mandatory 0.0 rule
+On every `0.0`: retrieve this master reference first, retrieve the latest checkpoint named above, resolve all applicable governing rules, verify actual repository state, and only then continue.
 
-A 0.0 record missing Date, Exact Local Time, or Timezone is INCOMPLETE and cannot be marked VERIFIED or COMPLETE.
+Every 0.0 record requires: 0.0 ID, Date, Exact Local Time, IANA timezone, UTC offset, location/status, previous reference, current state, Continuation Anchor, rule-resolution status, and verification status.
 
-Operational validation of this requirement requires a real invocation test with recoverable evidence and read-back.
+A missing Date + Exact Local Time + Timezone makes the 0.0 record incomplete and not VERIFIED/COMPLETE.
 
-## Deferred-registration mechanism
-If any required destination cannot be written or verified:
-PRODUCTION → PENDING/UNVERIFIED → DURABLE REPOSITORY/RECOVERY → ACCESS RESTORED → RECONCILE SAME PRODUCTION ID → WRITE → READ-BACK → VERIFY → FINALIZE.
+## Registration rule
+`ثبت کن` means resolve/apply all applicable governing rules, preserve stable Production ID and lineage, write/update to the canonical destination, read back, verify, reconcile applicable cross-layer state, and report unresolved gates.
 
-Rules:
-1. Never lose the record.
-2. Never regenerate the Production ID.
-3. Never duplicate an already successful registration.
-4. Never claim VERIFIED without read-back evidence.
-5. Resume from the first unresolved gate.
-6. Keep exact continuation path and destination state.
-7. Close only after all applicable gates pass.
+Never regenerate a successful Production ID. Never duplicate an already successful registration. Never claim VERIFIED without evidence.
 
-## Capability validation before action
-No action may be promised as currently executable merely because the capability normally exists. For tool-, connector-, runtime-, quota-, permission-, or interface-dependent actions, current capability must be validated before claiming availability. If unavailable, report the limitation before claiming execution. After execution, verify the result using the strongest applicable evidence.
+If a destination is unavailable:
+PRODUCTION → PENDING/UNVERIFIED → DURABLE REPOSITORY/RECOVERY → ACCESS RESTORED → SAME PRODUCTION ID → WRITE → READ-BACK → VERIFY → FINALIZE.
 
-The same rule applies to registration: “ثبت” is a traceable workflow, not a simple write. Identify the correct Production ID and canonical destination, preserve provenance, write/update, read back, verify, reconcile cross-layer state where applicable, and report unresolved gates. For image generation, current image-generation availability must be validated before promising that generation can be performed.
+## Capability/evidence boundary
+Capability must be validated before promising execution. Repository registration/read-back proves repository persistence, not independent runtime execution. Interaction validation is not independent runtime proof. Memory write is VERIFIED only after actual Memory read-back.
 
-## Persistent Memory bridge boundary
-GitHub can automatically manage the durable Repository/Recovery side. It cannot independently write ChatGPT Persistent Memory without an authorized Memory interface. Therefore, when that interface is unavailable, the Repository is the durable deferred-reconciliation source. When Memory access is actually available, the pending record must be reconciled using the same Production ID, followed by Memory read-back and verification.
+## Recovery
+On return/new `0.0`: retrieve this file, then the latest checkpoint, then applicable protocols. Do not reconstruct from conversational memory alone.
 
-## Final closure invariant
+## Continuation Anchor
+Resume at ADP-2026-08-31-001 and operationalize/test Adaptive Discovery and Cross-Playground Pattern Detection through eligible Interaction-as-Validation events. Preserve all existing Production IDs and lineage. Automatically preserve new potentially valuable findings as Candidate/Pending; do not silently promote uncertain findings to VERIFIED.
+
+## Evidence invariant
 NO COMPLETE WITHOUT ALL APPLICABLE GATES VERIFIED.
-
-## Recovery instruction
-On return or a new `0.0`: retrieve this file first, then retrieve the applicable protocol and latest checkpoint; verify the actual repository state before making any completion claim. Do not reconstruct from conversational memory alone.
-
-## Primary protocols
-- `docs/protocols/ACCESS-BLOCKED-FINALIZATION-RECOVERY.md`
-- `docs/protocols/PERSISTENT-MEMORY-DEFERRED-RECONCILIATION-PROTOCOL.md`
-- `docs/protocols/PERSISTENT-MEMORY-UNAVAILABILITY-RECOVERY-PROTOCOL.md`
-- `docs/protocols/FINAL-REGISTRATION-CLOSURE-GATE.md`
-- `docs/protocols/CONNECTION-CHAIN-PROTOCOL.md`
-- `docs/protocols/CAPABILITY-VALIDATION-BEFORE-ACTION.md`
-- `docs/protocols/RULE-INHERITANCE-AND-INVOCATION-GATE.md`
-
-## Evidence boundary
-This reference records the architecture and current recovery path. Architecture/design is not itself proof of end-to-end automatic execution. Any claim that automatic Memory reconciliation actually executed requires a real execution event plus recoverable evidence and Memory read-back.
-
-The 0.0 timestamp rule is also not considered operationally proven merely because it is documented; it requires an actual invocation test that checks Date + Exact Local Time + Timezone by read-back.
