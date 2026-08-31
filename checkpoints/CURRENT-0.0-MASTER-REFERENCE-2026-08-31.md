@@ -12,6 +12,7 @@ The project has reached the cross-layer finalization/reconciliation stage. The c
 - Access-blocked finalization/recovery rule: ACTIVE / LIVE / PERMANENT.
 - Persistent Memory Deferred Reconciliation Protocol: PMDRP-2026-08-31-001, ACTIVE / LIVE / PERMANENT.
 - Final Registration Closure Gate: ACTIVE / LIVE / PERMANENT.
+- Capability Validation Before Action: CVBA-2026-08-31-001, ACTIVE / PERMANENT.
 - 0.0 checkpoints exist in `checkpoints/` and are recoverable by exact file retrieval.
 
 ## Deferred-registration mechanism
@@ -26,6 +27,11 @@ Rules:
 5. Resume from the first unresolved gate.
 6. Keep exact continuation path and destination state.
 7. Close only after all applicable gates pass.
+
+## Capability validation before action
+No action may be promised as currently executable merely because the capability normally exists. For tool-, connector-, runtime-, quota-, permission-, or interface-dependent actions, current capability must be validated before claiming availability. If unavailable, report the limitation before claiming execution. After execution, verify the result using the strongest applicable evidence.
+
+The same rule applies to registration: “ثبت” is a traceable workflow, not a simple write. Identify the correct Production ID and canonical destination, preserve provenance, write/update, read back, verify, reconcile cross-layer state where applicable, and report unresolved gates. For image generation, current image-generation availability must be validated before promising that generation can be performed.
 
 ## Persistent Memory bridge boundary
 GitHub can automatically manage the durable Repository/Recovery side. It cannot independently write ChatGPT Persistent Memory without an authorized Memory interface. Therefore, when that interface is unavailable, the Repository is the durable deferred-reconciliation source. When Memory access is actually available, the pending record must be reconciled using the same Production ID, followed by Memory read-back and verification.
@@ -42,6 +48,7 @@ On return or a new `0.0`: retrieve this file first, then retrieve the applicable
 - `docs/protocols/PERSISTENT-MEMORY-UNAVAILABILITY-RECOVERY-PROTOCOL.md`
 - `docs/protocols/FINAL-REGISTRATION-CLOSURE-GATE.md`
 - `docs/protocols/CONNECTION-CHAIN-PROTOCOL.md`
+- `docs/protocols/CAPABILITY-VALIDATION-BEFORE-ACTION.md`
 
 ## Evidence boundary
 This reference records the architecture and current recovery path. Architecture/design is not itself proof of end-to-end automatic execution. Any claim that automatic Memory reconciliation actually executed requires a real execution event plus recoverable evidence and Memory read-back.
