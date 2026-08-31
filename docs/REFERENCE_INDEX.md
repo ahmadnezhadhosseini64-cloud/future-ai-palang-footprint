@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Verified:** 2026-08-29
+**Last Verified:** 2026-08-31
 
 ## Canonical References
 
@@ -14,6 +14,8 @@
 | EGE-2026-08-29-001 | `docs/EVIDENCE_GATE.md` | Independent execution evidence contract | PROVEN / ACTIVE / CLOSED / PASS |
 | CHK-2026-08-29-001 | `docs/CHECKPOINT.md` | Current verified checkpoint | VERIFIED / ACTIVE |
 | REF-GITHUB-2026-08-29-001 | Repository access reference | GitHub connection and repository access | VERIFIED / ACTIVE |
+| URIG-2026-08-31-001 | `docs/protocols/RULE-INHERITANCE-AND-INVOCATION-GATE.md` | Universal rule inheritance and real-invocation verification | ACTIVE / LIVING / PERMANENT |
+| TEST-0.0-TIMESTAMP-2026-08-31-001 | `evidence/tests/0.0-TIMESTAMP-INVOCATION-TEST-2026-08-31-001.md` | Real 0.0 timestamp inheritance invocation evidence | PASS / VERIFIED |
 
 ## Evidence Gate Proof
 
@@ -27,6 +29,8 @@ The canonical recovery documents are synchronized to the current verified state:
 - Retrieval Runtime = **VERIFIED / ACTIVE**.
 - Evidence Gate = **PROVEN / ACTIVE / CLOSED / PASS**.
 - Checkpoint = **VERIFIED / ACTIVE**.
+- Universal Rule Inheritance & Invocation Gate = **ACTIVE / LIVING / PERMANENT**.
+- 0.0 timestamp inheritance invocation test = **PASS / VERIFIED**.
 - The obsolete `NOT YET PROVEN` Evidence Gate state is no longer canonical.
 - The obsolete `actions/checkout@v4` warning is historical evidence only; the active workflow uses `actions/checkout@v5`.
 
@@ -36,4 +40,4 @@ This index is a navigation layer, not a substitute for the referenced evidence. 
 
 ## 0.0
 
-At `0.0`, retrieval precedes response: retrieve the canonical source, verify its state, reconcile contradictions, report evidence boundaries, then continue.
+At `0.0`, retrieval precedes response: retrieve the canonical source, verify its state, reconcile contradictions, resolve inherited rules, create the required timestamped connection/checkpoint record, verify the required fields by read-back, report evidence boundaries, then continue.
