@@ -3,9 +3,9 @@
 **Project:** Future AI / Palang Footprint  
 **Protocol ID:** CCP-2026-08-30-001  
 **Status:** ACTIVE — CANONICAL REGISTRATION  
-**Version:** 1.3  
+**Version:** 1.4  
 **Reference Point:** 0.0  
-**Date:** 2026-08-30  
+**Date:** 2026-08-31  
 
 ## 1. Purpose
 
@@ -19,12 +19,12 @@ A connection record is a prerequisite for continuation. The assistant must not s
 
 ## 3. Connection Header
 
-At the start of every new chat, continuation from a previous chat, or return from `00`, create a Connection Header containing at minimum:
+At the start of every new chat, continuation from a previous chat, return from `00`, or invocation of `0.0`, create a Connection Header containing at minimum:
 
 - Connection ID
 - Date
 - Exact local time
-- Timezone
+- IANA timezone name and UTC offset
 - Country and city, with `VERIFIED`, `ESTIMATED`, or `UNVERIFIED` status
 - Project
 - Previous Checkpoint / Reference
@@ -35,17 +35,19 @@ At the start of every new chat, continuation from a previous chat, or return fro
 - Continuation target
 - Verification status
 - Registration status
+- Rule-resolution status
 
 ## 4. Required Execution Order
 
 1. **STOP** — identify the transition point.
-2. **RECORD** — create the Connection Header.
-3. **RETRIEVE** — when a prior `0.0`/checkpoint is referenced, retrieve the stable reference before relying on memory or inference.
-4. **RECONCILE** — inspect all open durable-registration/recovery records before substantive continuation.
-5. **RECOVER PATH** — recover the exact prior project path, including whether the prior work was unfinished or completed, the last completed action, the exact next action, and any active detour/return state.
-6. **VERIFY** — distinguish proven facts from unverified information.
-7. **REGISTER** — register the new production in all required durable destinations.
-8. **CONTINUE** — only after the preceding gates pass, except where an explicitly documented unavailable capability blocks the gate.
+2. **RETRIEVE** — retrieve the stable reference when a prior `0.0`/checkpoint is referenced.
+3. **RECONCILE** — inspect open durable-registration/recovery records before substantive continuation.
+4. **RESOLVE RULES** — resolve all applicable canonical rules, protocols, principles, metadata/provenance requirements, and command-specific requirements.
+5. **RECORD** — create the Connection Header with the resolved requirements, including Date + Exact Local Time + Timezone for `0.0`.
+6. **RECOVER PATH** — recover the exact prior project path, including unfinished/completed status, last completed action, exact next action, and active detour/return state.
+7. **VERIFY** — distinguish proven facts from unverified information and verify required rule-derived fields/actions.
+8. **REGISTER** — register the new production in all required durable destinations.
+9. **CONTINUE** — only after preceding gates pass, except where an explicitly documented unavailable capability blocks the gate.
 
 ## 5. Continuity State Must Preserve the Work Path
 
@@ -92,7 +94,7 @@ If retrieval of the exact anchor fails, the system must enter `RECOVERY REQUIRED
 
 For every newly produced rule, command, principle, protocol, architecture element, structure, artifact, or other formal project production, the following chain applies:
 
-**Production → Identity → Classification → Architecture/Structure → Playground/Runtime placement → Documentation → Persistent Memory (when appropriate) → Canonical Repository → Verification → Final Status**
+**Production → Identity → Classification → Resolve Inherited Rules → Architecture/Structure → Playground/Runtime placement → Documentation → Persistent Memory (when appropriate) → Canonical Repository → Read-back → Verification → Final Status**
 
 Registration in memory alone is not equivalent to canonical project registration.
 
@@ -139,13 +141,21 @@ At every connection transition, the system must first retrieve open reconciliati
 
 No operation may be claimed as completed, synchronized, canonicalized, tested, or verified without recoverable evidence for that operation. Access, intent, design, or an instruction to perform an operation is not evidence that the operation occurred.
 
-## 12. Scope
+## 12. Rule Inheritance and Invocation Gate
+
+The Universal Rule Inheritance & Invocation Gate (`URIG-2026-08-31-001`) is incorporated by reference and is mandatory for all applicable project productions and commands.
+
+A governing rule is not operationally inherited merely because it exists in documentation. Applicable rules must be resolved before execution, and critical command families must be tested by real invocation with evidence and read-back.
+
+For `0.0`, Date + Exact Local Time + IANA Timezone + UTC offset are mandatory execution fields. A `0.0` record missing any of them is `INCOMPLETE` and cannot be marked `VERIFIED` or `COMPLETE`.
+
+## 13. Scope
 
 This protocol is part of the Future AI / Palang Footprint execution architecture and applies to future production and continuity transitions unless a later canonical rule explicitly supersedes it.
 
-## 13. Initial Registration Record
+## 14. Initial Registration Record
 
-**Trigger:** Identified continuity/path-loss gap on 2026-08-30.  
-**Production:** Connection Chain / Connection Header / Continuation Anchor extension.  
-**Current version:** 1.3.  
-**Current status:** Canonical repository artifact updated to preserve unfinished/completed continuation state and prevent a greeting or temporary context transition from redirecting the project path.  
+**Trigger:** Identified continuity/path-loss gap on 2026-08-30 and subsequent rule-inheritance execution gap identified on 2026-08-31.  
+**Production:** Connection Chain / Connection Header / Continuation Anchor / Universal Rule Inheritance extension.  
+**Current version:** 1.4.  
+**Current status:** Canonical repository artifact updated to require inherited-rule resolution and timestamp verification for `0.0` transitions.
