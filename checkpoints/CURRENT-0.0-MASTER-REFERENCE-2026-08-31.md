@@ -2,6 +2,8 @@
 
 Status: ACTIVE / LIVE / RECOVERABLE
 Project: Future AI / Palang Footprint
+Owner: Ahmad Nezhadhosseini
+Location: Iran, Gonbad-e Kavus
 Purpose: Single compact reference for reconstructing the current path and registration state.
 
 ## Current position
@@ -13,7 +15,34 @@ The project has reached the cross-layer finalization/reconciliation stage. The c
 - Persistent Memory Deferred Reconciliation Protocol: PMDRP-2026-08-31-001, ACTIVE / LIVE / PERMANENT.
 - Final Registration Closure Gate: ACTIVE / LIVE / PERMANENT.
 - Capability Validation Before Action: CVBA-2026-08-31-001, ACTIVE / PERMANENT.
+- Universal Rule Inheritance & Invocation Gate: URIG-2026-08-31-001, ACTIVE / LIVING / PERMANENT.
 - 0.0 checkpoints exist in `checkpoints/` and are recoverable by exact file retrieval.
+
+## Universal execution inheritance
+Rules existing only as documentation are not sufficient. Every applicable new command, production, document, checkpoint, protocol, rule, principle, test, evidence record, recovery record, or architecture element must resolve and inherit the applicable canonical rules before execution is considered complete.
+
+**Rule exists ≠ Rule invoked ≠ Rule verified.**
+
+The short command `ثبت کن` means: resolve and apply all applicable governing rules, then execute the traceable registration workflow.
+
+The command `0.0` means: retrieve the canonical 0.0 reference first, resolve applicable rules, create the required timestamped connection/checkpoint record, and only then continue.
+
+## 0.0 mandatory timestamp gate
+Every invocation of `0.0` must produce, at minimum:
+- 0.0 ID
+- Date
+- Exact local time
+- IANA timezone name and UTC offset
+- Country/city and location-status
+- Previous 0.0/checkpoint/reference when applicable
+- Current state
+- Continuation Anchor
+- Rule-resolution status
+- Verification status
+
+A 0.0 record missing Date, Exact Local Time, or Timezone is INCOMPLETE and cannot be marked VERIFIED or COMPLETE.
+
+Operational validation of this requirement requires a real invocation test with recoverable evidence and read-back.
 
 ## Deferred-registration mechanism
 If any required destination cannot be written or verified:
@@ -49,6 +78,9 @@ On return or a new `0.0`: retrieve this file first, then retrieve the applicable
 - `docs/protocols/FINAL-REGISTRATION-CLOSURE-GATE.md`
 - `docs/protocols/CONNECTION-CHAIN-PROTOCOL.md`
 - `docs/protocols/CAPABILITY-VALIDATION-BEFORE-ACTION.md`
+- `docs/protocols/RULE-INHERITANCE-AND-INVOCATION-GATE.md`
 
 ## Evidence boundary
 This reference records the architecture and current recovery path. Architecture/design is not itself proof of end-to-end automatic execution. Any claim that automatic Memory reconciliation actually executed requires a real execution event plus recoverable evidence and Memory read-back.
+
+The 0.0 timestamp rule is also not considered operationally proven merely because it is documented; it requires an actual invocation test that checks Date + Exact Local Time + Timezone by read-back.
