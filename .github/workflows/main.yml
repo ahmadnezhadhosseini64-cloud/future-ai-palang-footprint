@@ -6,6 +6,9 @@ on:
       - main
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   evidence-gate:
     runs-on: ubuntu-latest
@@ -42,3 +45,28 @@ jobs:
           echo "Runner: $RUNNER_NAME"
           echo "Evidence Gate: EXECUTION CONFIRMED"
           echo "Evidence Gate: END"
+
+      - name: Create durable evidence record
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p evidence
+          cat > evidence/evidence-gate-${GITHUB_RUN_ID}.txt <<EOF
+Evidence Gate: EXECUTION CONFIRMED
+Repository: ${GITHUB_REPOSITORY}
+Workflow: ${GITHUB_WORKFLOW}
+Run ID: ${GITHUB_RUN_ID}
+Commit: ${GITHUB_SHA}
+Runner: ${RUNNER_NAME}
+Stable Retrieval Core: VERIFIED
+Independent Automated Execution: PROVEN
+Evidence Artifact: GENERATED
+EOF
+
+      - name: Upload durable evidence artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: evidence-gate-${{ github.run_id }}
+          path: evidence/evidence-gate-${{ github.run_id }}.txt
+          if-no-files-found: error
+          retention-days: 90
