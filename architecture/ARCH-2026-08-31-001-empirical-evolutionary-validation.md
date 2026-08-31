@@ -2,33 +2,53 @@
 
 - **Project:** Future AI / Palang Footprint
 - **Type:** Architecture
-- **Version:** 1.0
-- **Status:** ACTIVE / CURRENT
+- **Version:** 1.1
+- **Status:** ACTIVE / CURRENT / PERMANENT RULE
 - **Reference:** 0.0 Independent Test
 - **Date:** 2026-08-31
 - **Parent:** ARCH-2026-08-29-001
-- **Purpose:** Establish a living rule that architectural structures may be finalized as a working baseline before proof is complete, but their acceptance as validated capability depends on real execution and read-back evidence.
+- **Purpose:** Establish a permanent architectural rule for handling hypotheses: use the smallest necessary hypothesis, test it against reality, convert it to a validated architectural fact only after sufficient evidence, and never silently build the foundational architecture on unverified assumptions.
 
-## Core Principle
+## Permanent Core Principle
 
-The project does not require a perfect architecture before testing. A proposed structure may be recorded and treated as the current working baseline so that it can be implemented and tested.
+**A hypothesis is a temporary instrument for testing, not a foundation for unverified architectural certainty.**
 
-**Structure is a hypothesis; execution is the test; evidence determines validation; evolution follows failure or improvement.**
+The project may necessarily accept a hypothesis when reality cannot yet be established. That hypothesis must be explicitly identified as **HYPOTHESIS**, kept as small as possible, and tested as soon as practical.
 
-A working baseline is therefore not a claim that the design is permanently correct. It is a versioned architectural commitment to test the design in reality.
+When the real test succeeds and the required evidence is independently verified, the hypothesis may be promoted from **HYPOTHESIS** to **VALIDATED / ARCHITECTURAL FACT**. Once validated, work should proceed from the validated result rather than continuing to stack new assumptions on top of it.
+
+If the test fails, the failure is preserved as evidence, the hypothesis remains unvalidated or is rejected, the architecture is revised, and a new test is performed.
+
+This rule is permanent, but no individual architectural version is assumed to be permanently correct. Permanent means the **method of distinguishing hypothesis from validated fact** remains active; validated facts and architectural versions may evolve when reality provides better evidence.
+
+## Anti-Assumption Foundation Rule
+
+The project must not knowingly construct a foundational architectural chain primarily from unverified hypotheses when a real test can reasonably be performed.
+
+`UNVERIFIED HYPOTHESIS → UNVERIFIED HYPOTHESIS → ... → FOUNDATION`
+
+is not an acceptable default architecture path.
+
+Instead:
+
+`NEED → MINIMUM NECESSARY HYPOTHESIS → REAL TEST → EVIDENCE → VERIFY → VALIDATED FACT → NEXT WORK`
+
+If a hypothesis must temporarily remain unverified, it must remain explicitly labeled as such and must not silently inherit the authority of a validated fact.
 
 ## Empirical Validation Loop
 
-1. Define the smallest useful structure.
-2. Register it as the current working architectural baseline.
-3. Execute the real path against the actual available system/tooling.
-4. Produce a concrete evidence artifact.
-5. Persist the artifact in the intended canonical repository.
-6. Finish the execution.
-7. Retrieve/read back the same artifact from the repository.
-8. Compare the read-back evidence with the actual execution.
-9. If the result matches the required invariant, mark the tested capability **VALIDATED**.
-10. If it fails, preserve the evidence, identify the failure, revise the architecture, create a new version, and repeat.
+1. Identify the actual need.
+2. Define only the smallest hypothesis necessary to move toward a test.
+3. Register it explicitly as **HYPOTHESIS** when it is not yet proven.
+4. Execute the real path against the actual available system/tooling.
+5. Produce a concrete evidence artifact.
+6. Persist the artifact in the intended canonical repository.
+7. Finish the execution.
+8. Retrieve/read back the same artifact from the repository.
+9. Compare the read-back evidence with the actual execution and required invariant.
+10. If the result matches, promote the tested hypothesis/capability to **VALIDATED** and, where appropriate, incorporate it as an architectural fact.
+11. If it fails, preserve the evidence, identify the failure, revise or replace the hypothesis, create a new version, and repeat.
+12. Continue to the next architectural/work step from the strongest currently validated foundation available.
 
 ## 0.0 Application
 
@@ -42,20 +62,18 @@ The test must use a real repository write and a real repository read-back. A gen
 
 In this architecture, **finalize** means:
 
-- the structure is intentionally adopted as the current version;
+- the structure or rule is intentionally adopted as the current version;
 - its identity and lineage are recorded;
 - its intended invariants are explicit;
-- it is ready for real-world testing;
-- future evidence may supersede it without invalidating its historical record.
+- its current evidence state is explicit;
+- it is ready for real-world testing or continued work;
+- future evidence may supersede a version without invalidating its historical record.
 
-Finalize does **not** mean:
+Finalize does **not** mean that every hypothesis contained in a structure is proven.
 
-- permanently correct;
-- immune to failure;
-- exempt from testing;
-- impossible to replace.
+For hypotheses, finalization means explicit registration for testing—not silent promotion to fact.
 
-A failed test is a valid architectural outcome when the failure is preserved and used to produce the next version.
+For a tested capability, finalization as **VALIDATED** requires real execution evidence and independent verification.
 
 ## Evidence Rule
 
@@ -65,17 +83,17 @@ For repository persistence and 0.0 recovery, the minimum proof is a successful c
 
 ## Evolution Rule
 
-`CURRENT BASELINE → REAL TEST → EVIDENCE → VALIDATED` 
+`HYPOTHESIS → REAL TEST → EVIDENCE → VERIFIED → VALIDATED FACT`
 
 or
 
-`CURRENT BASELINE → REAL TEST → FAILURE → PRESERVE FAILURE → REVISE → NEW VERSION → RETEST`
+`HYPOTHESIS → REAL TEST → FAILURE → PRESERVE FAILURE → REVISE → NEW HYPOTHESIS → RETEST`
 
-The architecture is therefore deliberately evolutionary. Improvement is expected, and failure is information rather than project loss.
+The architecture is deliberately evolutionary. Improvement is expected, and failure is information rather than project loss.
 
 ## Relationship to Existing Architecture
 
-This architecture extends ARCH-2026-08-29-001 by making empirical validation an explicit part of architectural evolution. The parent architecture remains preserved and retrievable. This version supersedes it only for the validation/finalization behavior defined here; it does not erase or rewrite the historical parent.
+This architecture extends ARCH-2026-08-29-001 by making empirical validation and explicit hypothesis handling part of architectural evolution. The parent architecture remains preserved and retrievable. This version supersedes it only for the validation/finalization behavior defined here; it does not erase or rewrite the historical parent.
 
 ## Current Test Evidence
 
@@ -90,10 +108,12 @@ This architecture extends ARCH-2026-08-29-001 by making empirical validation an 
 ## Non-Negotiable Invariants
 
 - **Structure ≠ Proof**
+- **Hypothesis ≠ Fact**
 - **Real Execution > Assumed Execution**
 - **Evidence before VALIDATED**
 - **Read-back before Verified Persistence**
 - **Failure is preserved, not hidden**
 - **Every architectural revision remains retrievable**
-- **Current ≠ Permanent**
+- **Current Version ≠ Permanently Correct Version**
+- **The hypothesis-to-validation method is permanent**
 - **Evolution is expected**
