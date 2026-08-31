@@ -2,7 +2,7 @@
 
 - **Project:** Future AI / Palang Footprint
 - **Type:** Architecture
-- **Version:** 1.1
+- **Version:** 1.2
 - **Status:** ACTIVE / CURRENT / PERMANENT RULE
 - **Reference:** 0.0 Independent Test
 - **Date:** 2026-08-31
@@ -91,11 +91,15 @@ or
 
 The architecture is deliberately evolutionary. Improvement is expected, and failure is information rather than project loss.
 
-## Relationship to Existing Architecture
+## Confirmed 0.0 Result
 
-This architecture extends ARCH-2026-08-29-001 by making empirical validation and explicit hypothesis handling part of architectural evolution. The parent architecture remains preserved and retrievable. This version supersedes it only for the validation/finalization behavior defined here; it does not erase or rewrite the historical parent.
+The independent 0.0 path was actually executed and its evidence was persisted and read back from the canonical repository. The observed execution sequence matched the required invariant:
 
-## Current Test Evidence
+`START → PRODUCE EVIDENCE → STORE → FINISH → READ-BACK → COMPARE`
+
+Therefore, **the specific tested 0.0 create → store → finish → read-back path is VALIDATED as an empirically demonstrated capability**.
+
+This validation applies only to the tested capability and evidence path. It does not imply that every future implementation, tool, environment, or broader recovery capability is automatically validated.
 
 - **Production ID:** Z0-INDEPENDENT-2026-08-31-001
 - **Evidence path:** tests/zero-zero/independent-run-20260831-001.md
@@ -103,7 +107,11 @@ This architecture extends ARCH-2026-08-29-001 by making empirical validation and
 - **Execution result:** COMPLETED
 - **Repository persistence:** SUCCESS
 - **Read-back:** SUCCESS
-- **Current interpretation:** The tested 0.0 create → store → finish → read-back path has real evidence and is eligible for validation under this architecture.
+- **Validation result:** VALIDATED — tested 0.0 repository persistence/read-back path
+
+## Relationship to Existing Architecture
+
+This architecture extends ARCH-2026-08-29-001 by making empirical validation and explicit hypothesis handling part of architectural evolution. The parent architecture remains preserved and retrievable. This version supersedes it only for the validation/finalization behavior defined here; it does not erase or rewrite the historical parent.
 
 ## Non-Negotiable Invariants
 
@@ -116,4 +124,5 @@ This architecture extends ARCH-2026-08-29-001 by making empirical validation and
 - **Every architectural revision remains retrievable**
 - **Current Version ≠ Permanently Correct Version**
 - **The hypothesis-to-validation method is permanent**
+- **Validated capability is scoped to the evidence actually demonstrated**
 - **Evolution is expected**
