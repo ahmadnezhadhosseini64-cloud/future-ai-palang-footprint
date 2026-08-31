@@ -2,3 +2,4 @@
 Future AI / Palang Footprint — official project repository
 
 <!-- Evidence Gate trigger: durable execution verification -->
+<!-- Final trigger: 0.0 evidence closure -->
