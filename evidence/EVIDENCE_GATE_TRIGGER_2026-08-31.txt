@@ -1,0 +1,3 @@
+Evidence Gate trigger marker.
+Purpose: trigger the canonical main.yml Evidence Gate through a real push event.
+No production logic change.
