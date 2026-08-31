@@ -101,3 +101,5 @@ jobs:
           grep -q 'stage=COMPLETE' evidence/state.log
           grep -q 'status=PROVEN' evidence/final-status.txt
           echo "FINAL_EVIDENCE_GATE=PASS"
+
+# Evidence Gate artifact path verified and intentionally preserved for independent retrieval.
