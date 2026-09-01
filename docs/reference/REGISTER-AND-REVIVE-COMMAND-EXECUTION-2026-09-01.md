@@ -6,6 +6,7 @@ Status: ACTIVE / LIVING / PERMANENT
 Owner: Ahmad Nezhadhosseini
 Location: Gonbad-e Kavus, Iran
 Date: 2026-09-01
+Time: 19:46 (user-provided local time)
 
 ## Trigger
 User command: «ثبت کن و زنده»
@@ -16,7 +17,7 @@ RETRIEVE 0.0 → PRESERVE/ASSIGN STABLE ID → PROVENANCE → METADATA → ARCHI
 ## Metadata
 Project: Future AI / Palang Footprint
 Type: Permanent operational command execution record
-Time: conversation execution time; exact wall-clock time is not independently captured by the repository connector
+Time source: user-provided local time
 Issue/Question: ensure “register and revive” always means the complete applicable registration package
 Method: apply the permanent Register + Revive rule and preserve evidence boundaries
 Result: command interpreted as full registration/revival operation
