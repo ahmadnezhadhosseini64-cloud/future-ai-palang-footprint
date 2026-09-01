@@ -13,12 +13,15 @@ Adapter layer:
 Deep excavation / revival reference:
 `docs/reference/DEEP-EXCAVATION-REVIVAL-2026-09-01.md`
 
+Final architecture consistency sweep:
+`FACS-2026-09-01-001` — `docs/evidence/FINAL-ARCHITECTURE-CONSISTENCY-SWEEP-2026-09-01.md`
+
 ## Canonical architecture state
 Archive Revival / ARSM; Valuable Finding Recognition & No-Drop; Operational Knowledge Lifecycle; Knowledge Activation Architecture; Interaction-as-Validation Operating Mode; Playground Network; Adaptive Discovery / Cross-Playground; Registration Recovery & Reconciliation; Recovery Buffer; Persistent Memory Adapter / Repository-side Runtime Bridge are ACTIVE/LIVING layers.
 
 Stable Retrieval Core is **VERIFIED / ACTIVE**. Evidence Gate is **PROVEN / ACTIVE / CLOSED / PASS** for the recorded E2 + E3 + E4 evidence and workflow run #7. These closures must not be reopened merely from older conversational states; new contradictory evidence is required.
 
-Current discovery loop:
+## Current discovery loop
 Finding → Cross-Playground Search → Relationship Detection → Pattern Fusion → Validation → Operationalization → Gap Detection → Targeted Search → New Finding.
 
 ## Mandatory 0.0 rule
@@ -47,6 +50,9 @@ On return/new `0.0`: retrieve this file, then the latest checkpoint, then applic
 
 ## Current PMA boundary
 `MPGG-2026-09-01-001` remains the production/reference anchor. `PMA-2026-09-01-001` remains the adapter specification. The Repository-side runtime bridge is implemented. Persistent Memory registration remains **UNVERIFIED / PENDING** until actual Memory WRITE and independent READ-BACK evidence are available.
+
+## Final architecture consistency state
+The 2026-09-01 consistency sweep `FACS-2026-09-01-001` reconciles the current architecture/document layers. Recovery/Pending remains a live state, PMA remains distinct from ChatGPT Persistent Memory, and no unsupported promotion to VERIFIED is allowed. The sweep is FINAL / ACTIVE / LIVING as an architectural record; it does not claim unobserved external runtime evidence.
 
 ## Output language preference
 Persian-first, English-assisted: فارسی روان برای فهم و ایده‌پردازی، همراه با English کنار اصطلاحات مهم. English must remain controlled and must not overwhelm the Persian explanation.
