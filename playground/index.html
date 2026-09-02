@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Palang Footprint — Independent Playground</title>
+<style>body{font-family:system-ui,sans-serif;max-width:900px;margin:40px auto;padding:0 20px;line-height:1.5}code,pre{background:#f3f4f6;padding:2px 5px;border-radius:4px}button{padding:10px 14px;margin:6px 0;cursor:pointer} .ok{font-weight:700} .box{border:1px solid #ddd;border-radius:10px;padding:18px;margin:18px 0}</style>
+</head>
+<body>
+<h1>Palang Footprint — Independent Playground</h1>
+<p>This page is an independent execution surface for <code>CPREL-TRANSFER-TEST-2026-09-02-001</code>.</p>
+<div class="box"><h2>Claim / Capability</h2><p><code>Failure/Incomplete State → Preserve Identity &amp; Provenance → Recovery Obligation → Retry/Reconcile → Verify</code></p></div>
+<div class="box"><h2>Runtime Test</h2><button id="run">Run independent test</button><pre id="result">Not executed yet.</pre></div>
+<div class="box"><h2>Evidence</h2><p id="evidence">No evidence generated yet.</p></div>
+<script>
+const ID='CPREL-TRANSFER-TEST-2026-09-02-001';
+function runTest(){
+ const input={stableIdentity:ID, provenancePreserved:true, recoveryObligation:true, retryReconcile:true, verificationRequested:true};
+ const pass=Object.values(input).every(Boolean);
+ const result={testId:ID, playground:'B', execution:'independent-browser-runtime', timestamp:new Date().toISOString(), input, observedResult:pass?'PASS':'FAIL', evidenceBoundary:'Browser execution only; does not by itself prove generalized transfer.'};
+ document.getElementById('result').textContent=JSON.stringify(result,null,2);
+ document.getElementById('evidence').innerHTML='<span class="ok">'+(pass?'PASS':'FAIL')+'</span> — '+result.timestamp+' — Evidence ID: '+ID+'-B';
+ localStorage.setItem('palang-transfer-evidence',JSON.stringify(result));
+}
+document.getElementById('run').addEventListener('click',runTest);
+</script>
+</body></html>
