@@ -117,28 +117,32 @@ A future reconciler must consume this registry, detect stale/pending/conflicting
 | `trace_id` | `XLR-PMA-2026-09-03-001` |
 | `type` | Cross-Layer Execution Evidence |
 | `title` | Cross-Layer PMA Relationship Execution Evidence |
-| `version` | 1.2 |
+| `version` | 1.3 |
 | `created_at` | 2026-09-03 |
 | `owner` | Ahmad Nezhadhosseini |
 | `location` | Gonbad-e Kavus, Iran |
-| `source_context` | User-approved execution of cross-layer PMA relationship detection, reconciliation, and fresh independent runtime verification |
+| `source_context` | User-approved execution of cross-layer PMA relationship detection, reconciliation, fresh independent runtime verification, and final repository-side integrity gate |
 | `memory_state` | `UNVERIFIED / PENDING` — provider-level Persistent Memory WRITE + independent READ-BACK is not available to this repository-side control plane |
-| `repository_state` | `SUCCESS` — evidence record and registry entry written and read back |
-| `execution_state` | `SUCCESS` — safety-net `33770980560`; fresh CPREL `33771239051`; dedicated integrity gate `33771711033` |
-| `evidence_state` | `SUCCESS` — live runner execution and independent two-runtime evidence captured |
-| `verification_state` | `SUCCESS` for demonstrated repository-side layers; dedicated Cross-Layer Integrity Gate `33771711033 / 100703313332` passed |
-| `approval_state` | `APPROVED` — user explicitly authorized continuation |
-| `reconciliation_state` | `COMPLETED` for demonstrated repository-side execution/evidence layers; external Persistent Memory remains `PENDING` |
-| `canonical_destination` | `docs/evidence/XLR-PMA-2026-09-03-001.md`; this registry |
+| `repository_state` | `SUCCESS` — evidence record, registry, and governing workflow state written and read back |
+| `execution_state` | `SUCCESS` — safety-net `33770980560`; fresh CPREL `33771239051`; dedicated integrity gate `33771711033`; hardened/current integrity gate `33772342896` |
+| `evidence_state` | `SUCCESS` — live runner execution, independent two-runtime transfer evidence, and current cross-layer gate evidence captured |
+| `verification_state` | `SUCCESS` for demonstrated repository-side layers; current Cross-Layer Integrity Gate `33772342896 / 100705463598` passed all steps |
+| `approval_state` | `APPROVED` — user explicitly authorized registration and live completion |
+| `reconciliation_state` | `COMPLETED` for demonstrated repository-side execution/evidence/architecture layers; external Persistent Memory remains `PENDING` by explicit evidence boundary |
+| `canonical_destination` | `docs/evidence/XLR-PMA-2026-09-03-001.md`; `docs/evidence/EXTERNAL-MEMORY-BRIDGE-EVIDENCE-TEST-2026-09-01.md`; `docs/PRODUCTION_REGISTRY.md`; `checkpoints/CURRENT-0.0-MASTER-REFERENCE-2026-08-31.md` |
 | `artifact_path` | `docs/evidence/XLR-PMA-2026-09-03-001.md` |
 | `last_verified_at` | `2026-09-03` |
-| `notes` | Dedicated Cross-Layer Integrity Gate run `33771711033` on commit `37c3bb2de6483fcc95afa6475b41b4a4698add7c` completed successfully; integrity job `100703313332` passed all steps. Earlier failed gate `33771488882` remains preserved as historical execution evidence. Persistent Memory provider-level verification remains explicitly pending. |
+| `notes` | Current hardened Cross-Layer Integrity Gate run `33772342896` on commit `ca5f7e65fec6a687ce2c33f6b4584a3601dc4f17` completed successfully; integrity job `100705463598` passed all validation, PMA relationship, and traceable-evidence steps. Provider-level ChatGPT Persistent Memory remains UNVERIFIED/PENDING because provider WRITE + independent READ-BACK is not exposed. Earlier failed gates remain preserved as historical evidence. No duplicate Production ID created. |
 
 ### Cross-layer references
 
 - Reference: `REF-PRNT-2026-08-30-001`
 - Architecture: `ARCH-PRNT-2026-08-30-001`
 - Latest cross-layer execution evidence: `XLR-PMA-2026-09-03-001`
+- Persistent Memory evidence boundary: `MPGG-2026-09-01-001`
+- Adapter: `PMA-2026-09-01-001`
+- Deep excavation/revival: `EXC-REV-2026-09-03-001`
 - Canonical repository: `ahmadnezhadhosseini64-cloud/future-ai-palang-footprint`
+- Latest verified Cross-Layer Integrity Gate: run `33772342896`, job `100705463598`, commit `ca5f7e65fec6a687ce2c33f6b4584a3601dc4f17`
 - Required recovery rule: `PENDING/UNAVAILABLE → Recovery → First Valid Opportunity → Reconcile → Verify → Close`
 - No writable durable destination: `UNREGISTERED / RECOVERY REQUIRED`
