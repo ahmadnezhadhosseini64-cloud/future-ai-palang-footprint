@@ -11,8 +11,8 @@ import sys
 from datetime import datetime, timezone
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-STATE_DIR = ROOT / "state"
-RECOVERY_DIR = ROOT / "recovery"
+STATE_DIR = ROOT / "control-plane" / "state"
+RECOVERY_DIR = ROOT / "control-plane" / "recovery"
 
 REQUIRED = [
     "registered",
