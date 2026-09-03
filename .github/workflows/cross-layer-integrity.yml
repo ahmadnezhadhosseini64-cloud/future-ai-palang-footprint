@@ -58,8 +58,10 @@ jobs:
           pma="architecture/memory/PERSISTENT-MEMORY-ADAPTER-SPEC-2026-09-01.md"
           bridge="adapters/pma/runtime/pma_runtime_bridge.py"
           ext="docs/evidence/EXTERNAL-MEMORY-BRIDGE-EVIDENCE-TEST-2026-09-01.md"
+          xlr="docs/evidence/XLR-PMA-2026-09-03-001.md"
+          registry="docs/PRODUCTION_REGISTRY.md"
 
-          for f in "$master" "$testdoc" "$pma" "$bridge" "$ext"; do
+          for f in "$master" "$testdoc" "$pma" "$bridge" "$ext" "$xlr" "$registry"; do
             test -f "$f" || { echo "MISSING PMA CROSS-LAYER ARTIFACT: $f"; exit 1; }
           done
 
@@ -73,10 +75,18 @@ jobs:
           grep -q "provider-level" "$testdoc"
           grep -q "independent READ-BACK" "$testdoc"
 
+          grep -q "XLR-PMA-2026-09-03-001" "$xlr"
+          grep -q "3d95d72e10695058607f48be5995c6fd322cc595" "$xlr"
+          grep -q "100701701697" "$xlr"
+          grep -q "100701746713" "$xlr"
+          grep -q "XLR-PMA-2026-09-03-001" "$registry"
+          grep -q "reconciliation_state" "$registry"
+
           echo "PMA Cross-Layer Relationship: PASS"
           echo "Production ID: XLR-PMA-2026-09-03-001"
           echo "PMA: PMA-2026-09-01-001"
           echo "External-memory anchor: MPGG-2026-09-01-001"
+          echo "CPREL Fresh Runtime: PASS"
           echo "External Persistent Memory provider verification: PENDING"
 
       - name: Emit traceable execution evidence
