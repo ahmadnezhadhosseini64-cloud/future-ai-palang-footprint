@@ -1,0 +1,43 @@
+name: Palang External Execution Controller
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "control-plane/**"
+      - "docs/governance/**"
+      - "docs/registrations/**"
+      - "checkpoints/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "palang-execution-controller"
+  cancel-in-progress: false
+
+jobs:
+  controller:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout canonical state
+        uses: actions/checkout@v4
+
+      - name: Run execution controller
+        id: controller
+        run: python3 control-plane/controller.py
+
+      - name: Verify controller output
+        run: |
+          test "${{ steps.controller.outcome }}" = "success"
+          echo "EXECUTION_CONTROLLER=PASS"
+          echo "EVIDENCE_GATE=PASS"
+
+      - name: Upload execution evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: palang-execution-controller-evidence
+          path: |
+            control-plane/state/*.json
+            control-plane/controller.py
