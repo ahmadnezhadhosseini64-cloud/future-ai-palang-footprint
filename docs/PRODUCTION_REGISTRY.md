@@ -109,10 +109,36 @@ A future reconciler must consume this registry, detect stale/pending/conflicting
 | `last_verified_at` | 2026-08-30 |
 | `notes` | Recovery Buffer remains provenance/audit history. The production is integrated into live Reference, Architecture, Registry, and reconciliation structures. Persistent Memory is explicitly UNVERIFIED, not falsely closed. |
 
+### Registered production — XLR-PMA-2026-09-03-001
+
+| Field | Value |
+|---|---|
+| `production_id` | `XLR-PMA-2026-09-03-001` |
+| `trace_id` | `XLR-PMA-2026-09-03-001` |
+| `type` | Cross-Layer Execution Evidence |
+| `title` | Cross-Layer PMA Relationship Execution Evidence |
+| `version` | 1.0 |
+| `created_at` | 2026-09-03 |
+| `owner` | Ahmad Nezhadhosseini |
+| `location` | Gonbad-e Kavus, Iran |
+| `source_context` | User-approved execution of cross-layer PMA relationship detection and reconciliation |
+| `memory_state` | `UNVERIFIED / PENDING` — provider-level Persistent Memory WRITE + independent READ-BACK is not available to this repository-side control plane |
+| `repository_state` | `SUCCESS` — evidence record and registry entry written |
+| `execution_state` | `SUCCESS` — GitHub Actions run `33770980560`, job `100700830869` completed successfully |
+| `evidence_state` | `SUCCESS` — live runner logs captured; concrete unmatched candidate detected |
+| `verification_state` | `SUCCESS` for repository-side execution evidence; Persistent Memory remains unverified |
+| `approval_state` | `APPROVED` — user explicitly authorized continuation |
+| `reconciliation_state` | `PARTIAL / PENDING` — `.github/workflows/cross-layer-integrity.yml` remains a detected reconciliation candidate; memory layer remains pending |
+| `canonical_destination` | `docs/evidence/XLR-PMA-2026-09-03-001.md`; this registry |
+| `artifact_path` | `docs/evidence/XLR-PMA-2026-09-03-001.md` |
+| `last_verified_at` | `2026-09-03` |
+| `notes` | No false closure. Repository-side detection cannot inspect ChatGPT Persistent Memory and must not promote this evidence to provider-level memory verification. |
+
 ### Cross-layer references
 
 - Reference: `REF-PRNT-2026-08-30-001`
 - Architecture: `ARCH-PRNT-2026-08-30-001`
+- Latest cross-layer execution evidence: `XLR-PMA-2026-09-03-001`
 - Canonical repository: `ahmadnezhadhosseini64-cloud/future-ai-palang-footprint`
 - Required recovery rule: `PENDING/UNAVAILABLE → Recovery → First Valid Opportunity → Reconcile → Verify → Close`
 - No writable durable destination: `UNREGISTERED / RECOVERY REQUIRED`
