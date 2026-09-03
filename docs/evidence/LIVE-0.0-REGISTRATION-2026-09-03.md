@@ -7,6 +7,7 @@ Status: PROVEN / CLOSED / ACTIVE / LIVING
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Date:** 2026-09-03  
+**Live Reaffirmation:** ACTIVE — re-registered on explicit user command `ثبت کن و زنده`.
 
 ## Live State
 
