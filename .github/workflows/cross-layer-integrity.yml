@@ -98,3 +98,5 @@ jobs:
           echo "Commit: $GITHUB_SHA"
           echo "Run ID: $GITHUB_RUN_ID"
           echo "Status: CONTROL ARTIFACTS VERIFIED"
+
+      # Final trigger commit ensures this gate executes against the reconciled live tree.
