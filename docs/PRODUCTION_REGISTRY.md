@@ -109,7 +109,7 @@ A future reconciler must consume this registry, detect stale/pending/conflicting
 | `last_verified_at` | 2026-08-30 |
 | `notes` | Recovery Buffer remains provenance/audit history. The production is integrated into live Reference, Architecture, Registry, and reconciliation structures. Persistent Memory is explicitly UNVERIFIED, not falsely closed. |
 
-### Registered production — XLR-PMA-2026-09-03-001
+### Reconciled production — XLR-PMA-2026-09-03-001
 
 | Field | Value |
 |---|---|
@@ -117,22 +117,22 @@ A future reconciler must consume this registry, detect stale/pending/conflicting
 | `trace_id` | `XLR-PMA-2026-09-03-001` |
 | `type` | Cross-Layer Execution Evidence |
 | `title` | Cross-Layer PMA Relationship Execution Evidence |
-| `version` | 1.1 |
+| `version` | 1.2 |
 | `created_at` | 2026-09-03 |
 | `owner` | Ahmad Nezhadhosseini |
 | `location` | Gonbad-e Kavus, Iran |
 | `source_context` | User-approved execution of cross-layer PMA relationship detection, reconciliation, and fresh independent runtime verification |
 | `memory_state` | `UNVERIFIED / PENDING` — provider-level Persistent Memory WRITE + independent READ-BACK is not available to this repository-side control plane |
 | `repository_state` | `SUCCESS` — evidence record and registry entry written and read back |
-| `execution_state` | `SUCCESS` — initial safety-net run `33770980560`; fresh CPREL run `33771239051` completed with Runtime A/B success |
-| `evidence_state` | `SUCCESS` — live runner logs and fresh two-runtime artifact verification captured |
-| `verification_state` | `SUCCESS` for repository-side evidence and fresh CPREL transfer; provider memory remains unverified |
+| `execution_state` | `SUCCESS` — safety-net `33770980560`; fresh CPREL `33771239051`; dedicated integrity gate `33771711033` |
+| `evidence_state` | `SUCCESS` — live runner execution and independent two-runtime evidence captured |
+| `verification_state` | `SUCCESS` for demonstrated repository-side layers; dedicated Cross-Layer Integrity Gate `33771711033 / 100703313332` passed |
 | `approval_state` | `APPROVED` — user explicitly authorized continuation |
 | `reconciliation_state` | `COMPLETED` for demonstrated repository-side execution/evidence layers; external Persistent Memory remains `PENDING` |
 | `canonical_destination` | `docs/evidence/XLR-PMA-2026-09-03-001.md`; this registry |
 | `artifact_path` | `docs/evidence/XLR-PMA-2026-09-03-001.md` |
 | `last_verified_at` | `2026-09-03` |
-| `notes` | Fresh CPREL run `33771239051` passed independently on Runtime A `100701701697` and Runtime B `100701746713`. The separate Cross-Layer Integrity Gate run `33771488882` exposed a stale-evidence assertion and failed; this is preserved as execution history, not erased. Repository-side reconciliation is therefore closed only for the demonstrated evidence layers, never for provider-level Persistent Memory. |
+| `notes` | Dedicated Cross-Layer Integrity Gate run `33771711033` on commit `37c3bb2de6483fcc95afa6475b41b4a4698add7c` completed successfully; integrity job `100703313332` passed all steps. Earlier failed gate `33771488882` remains preserved as historical execution evidence. Persistent Memory provider-level verification remains explicitly pending. |
 
 ### Cross-layer references
 
