@@ -1,4 +1,4 @@
-# Current 0.0 Master Reference — 2026-09-01
+# Current 0.0 Master Reference — 2026-09-03
 
 Status: ACTIVE / LIVE / RECOVERABLE
 Project: Future AI / Palang Footprint
@@ -7,11 +7,11 @@ Owner: Ahmad Nezhadhosseini
 ## Latest architectural anchor
 `MPGG-2026-09-01-001`
 
+Latest excavation/revival pass:
+`EXC-REV-2026-09-03-001` — `docs/reference/DEEP-EXCAVATION-REVIVAL-PASS-2026-09-03.md`
+
 Adapter layer:
 `PMA-2026-09-01-001`
-
-Deep excavation / revival reference:
-`docs/reference/DEEP-EXCAVATION-REVIVAL-2026-09-01.md`
 
 Final architecture consistency sweep:
 `FACS-2026-09-01-001` — `docs/evidence/FINAL-ARCHITECTURE-CONSISTENCY-SWEEP-2026-09-01.md`
@@ -19,7 +19,10 @@ Final architecture consistency sweep:
 ## Canonical architecture state
 Archive Revival / ARSM; Valuable Finding Recognition & No-Drop; Operational Knowledge Lifecycle; Knowledge Activation Architecture; Interaction-as-Validation Operating Mode; Playground Network; Adaptive Discovery / Cross-Playground; Registration Recovery & Reconciliation; Recovery Buffer; Persistent Memory Adapter / Repository-side Runtime Bridge are ACTIVE/LIVING layers.
 
-Stable Retrieval Core is **VERIFIED / ACTIVE**. Evidence Gate is **PROVEN / ACTIVE / CLOSED / PASS** for the recorded E2 + E3 + E4 evidence and workflow run #7. These closures must not be reopened merely from older conversational states; new contradictory evidence is required.
+Stable Retrieval Core is VERIFIED / ACTIVE. Evidence Gate is PROVEN / ACTIVE / CLOSED / PASS for the recorded evidence scope. The independent two-runtime transfer gate is PROVEN / CLOSED / ACTIVE for its demonstrated GitHub Actions scope. These closures must not be reopened merely from older conversational states; new contradictory evidence is required.
+
+## Latest deep-excavation state
+`EXC-REV-2026-09-03-001` completed a fresh multi-lens excavation and reconciliation. Valid material was revived/absorbed into the existing architecture without duplicate canonical records. The architectural placement remains: 0.0 Master → Governance/Rule Inheritance → Archive Revival & Adaptive Discovery → Operational Knowledge Lifecycle → Validation & Evidence Gates → Registration/Recovery/Pending → PMA/External Memory Boundary → Runtime/Transfer Evidence → Provenance/Read-back/Reconciliation.
 
 ## Current discovery loop
 Finding → Cross-Playground Search → Relationship Detection → Pattern Fusion → Validation → Operationalization → Gap Detection → Targeted Search → New Finding.
@@ -49,16 +52,13 @@ Repository registration/read-back proves repository persistence, not independent
 On return/new `0.0`: retrieve this file, then the latest checkpoint, then applicable protocols. Do not reconstruct from conversational memory alone.
 
 ## Current PMA boundary
-`MPGG-2026-09-01-001` remains the production/reference anchor. `PMA-2026-09-01-001` remains the adapter specification. The Repository-side runtime bridge is implemented. Persistent Memory registration remains **UNVERIFIED / PENDING** until actual Memory WRITE and independent READ-BACK evidence are available.
-
-## Final architecture consistency state
-The 2026-09-01 consistency sweep `FACS-2026-09-01-001` reconciles the current architecture/document layers. Recovery/Pending remains a live state, PMA remains distinct from ChatGPT Persistent Memory, and no unsupported promotion to VERIFIED is allowed. The sweep is FINAL / ACTIVE / LIVING as an architectural record; it does not claim unobserved external runtime evidence.
+`MPGG-2026-09-01-001` remains the production/reference anchor. `PMA-2026-09-01-001` remains the adapter specification. The Repository-side runtime bridge is implemented. Persistent Memory registration remains UNVERIFIED / PENDING until actual Memory WRITE and independent READ-BACK evidence are available.
 
 ## Output language preference
-Persian-first, English-assisted: فارسی روان برای فهم و ایده‌پردازی، همراه با English کنار اصطلاحات مهم. English must remain controlled and must not overwhelm the Persian explanation.
+Persian-first, English-assisted: فارسی روان برای فهم و ایده‌پردازی، همراه با English کنار اصطلاحات مهم. English must remain controlled and must not overwhelm the Persian explanation. This applies to Repository documentation and operational outputs, including the final line of status/closure messages.
 
 ## Continuation Anchor
-Resume from the reconciled 2026-09-01 state. Continue Adaptive Discovery / Cross-Playground Pattern Detection, new deep-excavation targets, cross-layer relationship discovery, and the remaining Persistent Memory evidence boundary. Preserve all existing Production IDs and lineage. Automatically preserve new potentially valuable findings as Candidate/Pending; do not silently promote uncertain findings to VERIFIED.
+Resume from `EXC-REV-2026-09-03-001` while inheriting this current `0.0` Master Reference and all applicable governing rules. Continue Adaptive Discovery / Cross-Playground Pattern Detection, cross-layer relationship discovery, and the remaining Persistent Memory evidence boundary. Preserve all existing Production IDs and lineage. Automatically preserve new potentially valuable findings as Candidate/Pending; do not silently promote uncertain findings to VERIFIED.
 
 ## Evidence invariant
 NO COMPLETE WITHOUT ALL APPLICABLE GATES VERIFIED.
