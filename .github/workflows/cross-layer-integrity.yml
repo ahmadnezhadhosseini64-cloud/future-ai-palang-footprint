@@ -100,3 +100,4 @@ jobs:
           echo "Status: CONTROL ARTIFACTS VERIFIED"
 
       # Final trigger commit ensures this gate executes against the reconciled live tree.
+      # LIVE-TRIGGER-2026-09-03-001
