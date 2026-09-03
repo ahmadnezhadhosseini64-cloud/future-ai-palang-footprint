@@ -117,22 +117,22 @@ A future reconciler must consume this registry, detect stale/pending/conflicting
 | `trace_id` | `XLR-PMA-2026-09-03-001` |
 | `type` | Cross-Layer Execution Evidence |
 | `title` | Cross-Layer PMA Relationship Execution Evidence |
-| `version` | 1.0 |
+| `version` | 1.1 |
 | `created_at` | 2026-09-03 |
 | `owner` | Ahmad Nezhadhosseini |
 | `location` | Gonbad-e Kavus, Iran |
-| `source_context` | User-approved execution of cross-layer PMA relationship detection and reconciliation |
+| `source_context` | User-approved execution of cross-layer PMA relationship detection, reconciliation, and fresh independent runtime verification |
 | `memory_state` | `UNVERIFIED / PENDING` — provider-level Persistent Memory WRITE + independent READ-BACK is not available to this repository-side control plane |
-| `repository_state` | `SUCCESS` — evidence record and registry entry written |
-| `execution_state` | `SUCCESS` — GitHub Actions run `33770980560`, job `100700830869` completed successfully |
-| `evidence_state` | `SUCCESS` — live runner logs captured; concrete unmatched candidate detected |
-| `verification_state` | `SUCCESS` for repository-side execution evidence; Persistent Memory remains unverified |
+| `repository_state` | `SUCCESS` — evidence record and registry entry written and read back |
+| `execution_state` | `SUCCESS` — initial safety-net run `33770980560`; fresh CPREL run `33771239051` completed with Runtime A/B success |
+| `evidence_state` | `SUCCESS` — live runner logs and fresh two-runtime artifact verification captured |
+| `verification_state` | `SUCCESS` for repository-side evidence and fresh CPREL transfer; provider memory remains unverified |
 | `approval_state` | `APPROVED` — user explicitly authorized continuation |
-| `reconciliation_state` | `PARTIAL / PENDING` — `.github/workflows/cross-layer-integrity.yml` remains a detected reconciliation candidate; memory layer remains pending |
+| `reconciliation_state` | `COMPLETED` for demonstrated repository-side execution/evidence layers; external Persistent Memory remains `PENDING` |
 | `canonical_destination` | `docs/evidence/XLR-PMA-2026-09-03-001.md`; this registry |
 | `artifact_path` | `docs/evidence/XLR-PMA-2026-09-03-001.md` |
 | `last_verified_at` | `2026-09-03` |
-| `notes` | No false closure. Repository-side detection cannot inspect ChatGPT Persistent Memory and must not promote this evidence to provider-level memory verification. |
+| `notes` | Fresh CPREL run `33771239051` passed independently on Runtime A `100701701697` and Runtime B `100701746713`. The separate Cross-Layer Integrity Gate run `33771488882` exposed a stale-evidence assertion and failed; this is preserved as execution history, not erased. Repository-side reconciliation is therefore closed only for the demonstrated evidence layers, never for provider-level Persistent Memory. |
 
 ### Cross-layer references
 
