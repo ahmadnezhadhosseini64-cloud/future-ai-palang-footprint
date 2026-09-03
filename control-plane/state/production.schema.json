@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Palang Production State",
+  "type": "object",
+  "required": ["stable_id", "reference_point", "status", "gates"],
+  "properties": {
+    "stable_id": {"type": "string", "minLength": 1},
+    "reference_point": {"const": "0.0"},
+    "status": {"type": "string"},
+    "gates": {
+      "type": "object",
+      "required": ["registered", "persisted", "read_back_verified", "revived", "architecturally_placed", "executed"],
+      "properties": {
+        "registered": {"type": "boolean"},
+        "persisted": {"type": "boolean"},
+        "read_back_verified": {"type": "boolean"},
+        "revived": {"type": "boolean"},
+        "architecturally_placed": {"type": "boolean"},
+        "executed": {"type": "boolean"}
+      }
+    }
+  }
+}
