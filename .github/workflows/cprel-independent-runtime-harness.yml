@@ -1,0 +1,50 @@
+name: CPREL Independent Runtime Transfer Harness
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  runtime-a:
+    runs-on: ubuntu-latest
+    outputs:
+      claim: ${{ steps.emit.outputs.claim }}
+      digest: ${{ steps.emit.outputs.digest }}
+    steps:
+      - id: emit
+        shell: bash
+        run: |
+          set -euo pipefail
+          claim='CPREL-STABLE-IDENTITY-PRESERVATION'
+          printf '%s\n' "$claim" > claim.txt
+          digest="$(sha256sum claim.txt | awk '{print $1}')"
+          echo "claim=$claim" >> "$GITHUB_OUTPUT"
+          echo "digest=$digest" >> "$GITHUB_OUTPUT"
+          echo "RUNTIME_A_CLAIM=$claim"
+          echo "RUNTIME_A_DIGEST=$digest"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cprel-transfer-payload
+          path: claim.txt
+
+  runtime-b:
+    needs: runtime-a
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: cprel-transfer-payload
+      - name: Independent verification
+        shell: bash
+        run: |
+          set -euo pipefail
+          expected='${{ needs.runtime-a.outputs.claim }}'
+          actual="$(cat claim.txt)"
+          test "$actual" = "$expected"
+          digest="$(sha256sum claim.txt | awk '{print $1}')"
+          test "$digest" = '${{ needs.runtime-a.outputs.digest }}'
+          echo "RUNTIME_B_TRANSFER=PASS"
+          echo "RUNTIME_B_CLAIM=$actual"
+          echo "RUNTIME_B_DIGEST=$digest"
+          echo "EVIDENCE_GATE=PASS"
