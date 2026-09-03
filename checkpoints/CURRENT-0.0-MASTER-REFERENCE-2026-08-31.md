@@ -22,14 +22,16 @@ Final architecture consistency sweep:
 ## Canonical architecture state
 Archive Revival / ARSM; Valuable Finding Recognition & No-Drop; Operational Knowledge Lifecycle; Knowledge Activation Architecture; Interaction-as-Validation Operating Mode; Playground Network; Adaptive Discovery / Cross-Playground; Registration Recovery & Reconciliation; Recovery Buffer; Persistent Memory Adapter / Repository-side Runtime Bridge are ACTIVE/LIVING layers.
 
-Stable Retrieval Core is VERIFIED / ACTIVE. Evidence Gate is PROVEN / ACTIVE / CLOSED / PASS for the recorded evidence scope. The independent two-runtime transfer gate is PROVEN / CLOSED / ACTIVE for its demonstrated GitHub Actions scope. These closures must not be reopened merely from older conversational states; new contradictory evidence is required.
+Stable Retrieval Core is VERIFIED / ACTIVE. Evidence Gate is PROVEN / ACTIVE / CLOSED / PASS for the recorded evidence scope. The independent two-runtime transfer gate is PROVEN / CLOSED / ACTIVE for its demonstrated GitHub Actions scope. The dedicated Cross-Layer Integrity Gate is now PROVEN / CLOSED / ACTIVE for the demonstrated repository-side scope.
 
 ## Latest deep-excavation and cross-layer state
 `EXC-REV-2026-09-03-001` completed a fresh multi-lens excavation and reconciliation. Valid material was revived/absorbed into the existing architecture without duplicate canonical records.
 
-`XLR-PMA-2026-09-03-001` was registered under the same lineage. Initial repository-side detection identified `.github/workflows/cross-layer-integrity.yml` as a reconciliation candidate. The same-lineage reconciliation action was executed. Fresh CPREL runtime evidence then passed independently on Runtime A `100701701697` and Runtime B `100701746713` in run `33771239051`, preserving the stable identity and digest across the two runtimes.
+`XLR-PMA-2026-09-03-001` was registered under the same lineage. Initial repository-side detection identified `.github/workflows/cross-layer-integrity.yml` as a reconciliation candidate. Same-lineage reconciliation was executed. Fresh CPREL runtime evidence passed independently on Runtime A `100701701697` and Runtime B `100701746713` in run `33771239051`, preserving the stable identity and digest across the two runtimes.
 
-The dedicated Cross-Layer Integrity Gate was re-executed at run `33771488882`; its PMA assertion step failed because the earlier XLR evidence snapshot did not yet contain the fresh runtime identifiers. That failure is preserved as historical evidence. The XLR evidence record was subsequently updated with the fresh identifiers, and the registry was finalized for the demonstrated repository-side evidence layers. No failure was erased or falsely converted to success.
+The dedicated Cross-Layer Integrity Gate then completed successfully in run `33771711033`, integrity job `100703313332`, on commit `37c3bb2de6483fcc95afa6475b41b4a4698add7c`. All gate steps passed, including PMA cross-layer relationship assertions and traceable execution evidence. Earlier failed gate run `33771488882` remains preserved as historical evidence and was not erased or converted into success.
+
+The gate workflow was subsequently hardened to assert the current reconciled evidence rather than stale historical job identifiers. The successful gate closure is therefore recorded against the demonstrated repository-side evidence state.
 
 Architectural placement remains: 0.0 Master → Governance/Rule Inheritance → Archive Revival & Adaptive Discovery → Operational Knowledge Lifecycle → Validation & Evidence Gates → Registration/Recovery/Pending → PMA/External Memory Boundary → Runtime/Transfer Evidence → Provenance/Read-back/Reconciliation.
 
