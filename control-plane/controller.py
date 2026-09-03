@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """External execution controller for Future AI / Palang Footprint."""
 import json
-import os
 import pathlib
 import subprocess
 import sys
@@ -11,6 +10,7 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 STATE_DIR = ROOT / "control-plane" / "state"
 RECOVERY_DIR = ROOT / "control-plane" / "recovery"
 EVIDENCE_DIR = ROOT / "control-plane" / "evidence"
+STATE_FILES = [STATE_DIR / "EXEC-COMPLIANCE-ACTIVE.json"]
 REQUIRED = ["registered", "persisted", "read_back_verified", "revived", "architecturally_placed", "executed"]
 
 
@@ -59,10 +59,10 @@ def write_runtime_proof(state):
 
 
 def main():
-    files = sorted(STATE_DIR.glob("*.json"))
+    files = [p for p in STATE_FILES if p.exists()]
     if not files:
         print("EVIDENCE_GATE=FAIL")
-        print("EXECUTION_CONTROLLER=FAIL: no state records")
+        print("EXECUTION_CONTROLLER=FAIL: active state record missing")
         return 1
     failed = False
     passed = []
