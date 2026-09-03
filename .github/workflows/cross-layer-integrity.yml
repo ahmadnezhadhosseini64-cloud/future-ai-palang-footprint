@@ -49,6 +49,36 @@ jobs:
             grep -q "$field" "$file" || { echo "MISSING METADATA: $field"; exit 1; }
           done
 
+      - name: Execute PMA cross-layer relationship assertions
+        shell: bash
+        run: |
+          set -euo pipefail
+          master="checkpoints/CURRENT-0.0-MASTER-REFERENCE-2026-08-31.md"
+          testdoc="docs/evidence/CROSS-LAYER-PMA-RELATIONSHIP-TEST-2026-09-03.md"
+          pma="architecture/memory/PERSISTENT-MEMORY-ADAPTER-SPEC-2026-09-01.md"
+          bridge="adapters/pma/runtime/pma_runtime_bridge.py"
+          ext="docs/evidence/EXTERNAL-MEMORY-BRIDGE-EVIDENCE-TEST-2026-09-01.md"
+
+          for f in "$master" "$testdoc" "$pma" "$bridge" "$ext"; do
+            test -f "$f" || { echo "MISSING PMA CROSS-LAYER ARTIFACT: $f"; exit 1; }
+          done
+
+          grep -q "EXC-REV-2026-09-03-001" "$master"
+          grep -q "PMA-2026-09-01-001" "$master"
+          grep -q "MPGG-2026-09-01-001" "$master"
+          grep -q "XLR-PMA-2026-09-03-001" "$testdoc"
+          grep -q "PMA-2026-09-01-001" "$testdoc"
+          grep -q "MPGG-2026-09-01-001" "$testdoc"
+          grep -q "UNVERIFIED / PENDING" "$master"
+          grep -q "provider-level" "$testdoc"
+          grep -q "independent READ-BACK" "$testdoc"
+
+          echo "PMA Cross-Layer Relationship: PASS"
+          echo "Production ID: XLR-PMA-2026-09-03-001"
+          echo "PMA: PMA-2026-09-01-001"
+          echo "External-memory anchor: MPGG-2026-09-01-001"
+          echo "External Persistent Memory provider verification: PENDING"
+
       - name: Emit traceable execution evidence
         shell: bash
         run: |
