@@ -146,3 +146,18 @@ A future reconciler must consume this registry, detect stale/pending/conflicting
 - Latest verified Cross-Layer Integrity Gate: run `33772342896`, job `100705463598`, commit `ca5f7e65fec6a687ce2c33f6b4584a3601dc4f17`
 - Required recovery rule: `PENDING/UNAVAILABLE → Recovery → First Valid Opportunity → Reconcile → Verify → Close`
 - No writable durable destination: `UNREGISTERED / RECOVERY REQUIRED`
+
+## Live registration reaffirmation — 2026-09-03
+
+The user explicitly requested the existing canonical production to be registered and kept live. This is a same-lineage reaffirmation, not a new production.
+
+- Canonical Production ID preserved: `XLR-PMA-2026-09-03-001`
+- Repository state: `SUCCESS`
+- Evidence state: `SUCCESS`
+- Verification state: `SUCCESS` for demonstrated repository-side scope
+- Reconciliation state: `COMPLETED` for demonstrated repository-side layers
+- Persistent Memory provider state: `UNVERIFIED / PENDING`
+- Duplicate creation: `NONE`
+- Live status: `ACTIVE / LIVING`
+- Governing invariant: `NO COMPLETE WITHOUT ALL APPLICABLE GATES VERIFIED`
+- Operational contract: `WRITE → READ-BACK → MATCH → VERIFY → RECONCILE → STATUS`
