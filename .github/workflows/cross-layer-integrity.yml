@@ -76,7 +76,7 @@ jobs:
           grep -q "independent READ-BACK" "$testdoc"
 
           grep -q "XLR-PMA-2026-09-03-001" "$xlr"
-          grep -q "Fresh independent runtime" "$xlr"
+          grep -q "Fresh independent runtime evidence" "$xlr"
           grep -q "Fresh transfer evidence: \`PROVEN\`" "$xlr"
           grep -q "XLR-PMA-2026-09-03-001" "$registry"
           grep -q "reconciliation_state" "$registry"
