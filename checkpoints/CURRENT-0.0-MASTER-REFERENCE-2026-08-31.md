@@ -10,6 +10,9 @@ Owner: Ahmad Nezhadhosseini
 Latest excavation/revival pass:
 `EXC-REV-2026-09-03-001` — `docs/reference/DEEP-EXCAVATION-REVIVAL-PASS-2026-09-03.md`
 
+Latest cross-layer production:
+`XLR-PMA-2026-09-03-001` — `docs/evidence/XLR-PMA-2026-09-03-001.md`
+
 Adapter layer:
 `PMA-2026-09-01-001`
 
@@ -21,8 +24,14 @@ Archive Revival / ARSM; Valuable Finding Recognition & No-Drop; Operational Know
 
 Stable Retrieval Core is VERIFIED / ACTIVE. Evidence Gate is PROVEN / ACTIVE / CLOSED / PASS for the recorded evidence scope. The independent two-runtime transfer gate is PROVEN / CLOSED / ACTIVE for its demonstrated GitHub Actions scope. These closures must not be reopened merely from older conversational states; new contradictory evidence is required.
 
-## Latest deep-excavation state
-`EXC-REV-2026-09-03-001` completed a fresh multi-lens excavation and reconciliation. Valid material was revived/absorbed into the existing architecture without duplicate canonical records. The architectural placement remains: 0.0 Master → Governance/Rule Inheritance → Archive Revival & Adaptive Discovery → Operational Knowledge Lifecycle → Validation & Evidence Gates → Registration/Recovery/Pending → PMA/External Memory Boundary → Runtime/Transfer Evidence → Provenance/Read-back/Reconciliation.
+## Latest deep-excavation and cross-layer state
+`EXC-REV-2026-09-03-001` completed a fresh multi-lens excavation and reconciliation. Valid material was revived/absorbed into the existing architecture without duplicate canonical records.
+
+`XLR-PMA-2026-09-03-001` was registered under the same lineage. Initial repository-side detection identified `.github/workflows/cross-layer-integrity.yml` as a reconciliation candidate. The same-lineage reconciliation action was executed. Fresh CPREL runtime evidence then passed independently on Runtime A `100701701697` and Runtime B `100701746713` in run `33771239051`, preserving the stable identity and digest across the two runtimes.
+
+The dedicated Cross-Layer Integrity Gate was re-executed at run `33771488882`; its PMA assertion step failed because the earlier XLR evidence snapshot did not yet contain the fresh runtime identifiers. That failure is preserved as historical evidence. The XLR evidence record was subsequently updated with the fresh identifiers, and the registry was finalized for the demonstrated repository-side evidence layers. No failure was erased or falsely converted to success.
+
+Architectural placement remains: 0.0 Master → Governance/Rule Inheritance → Archive Revival & Adaptive Discovery → Operational Knowledge Lifecycle → Validation & Evidence Gates → Registration/Recovery/Pending → PMA/External Memory Boundary → Runtime/Transfer Evidence → Provenance/Read-back/Reconciliation.
 
 ## Current discovery loop
 Finding → Cross-Playground Search → Relationship Detection → Pattern Fusion → Validation → Operationalization → Gap Detection → Targeted Search → New Finding.
@@ -58,7 +67,7 @@ On return/new `0.0`: retrieve this file, then the latest checkpoint, then applic
 Persian-first, English-assisted: فارسی روان برای فهم و ایده‌پردازی، همراه با English کنار اصطلاحات مهم. English must remain controlled and must not overwhelm the Persian explanation. This applies to Repository documentation and operational outputs, including the final line of status/closure messages.
 
 ## Continuation Anchor
-Resume from `EXC-REV-2026-09-03-001` while inheriting this current `0.0` Master Reference and all applicable governing rules. Continue Adaptive Discovery / Cross-Playground Pattern Detection, cross-layer relationship discovery, and the remaining Persistent Memory evidence boundary. Preserve all existing Production IDs and lineage. Automatically preserve new potentially valuable findings as Candidate/Pending; do not silently promote uncertain findings to VERIFIED.
+Resume from `XLR-PMA-2026-09-03-001` while inheriting this current `0.0` Master Reference and all applicable governing rules. Continue Adaptive Discovery / Cross-Playground Pattern Detection and the remaining Persistent Memory evidence boundary. Preserve all existing Production IDs and lineage. Automatically preserve new potentially valuable findings as Candidate/Pending; do not silently promote uncertain findings to VERIFIED.
 
 ## Evidence invariant
 NO COMPLETE WITHOUT ALL APPLICABLE GATES VERIFIED.
