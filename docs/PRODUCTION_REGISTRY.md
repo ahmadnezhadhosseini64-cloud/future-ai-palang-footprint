@@ -3,7 +3,6 @@
 **Project:** Future AI / Palang Footprint  
 **Owner:** Ahmad Nezhadhosseini  
 **Location:** Iran — Gonbad-e Kavus  
-**Date:** 2026-08-30  
 **Status:** ACTIVE CONTROL-PLANE SPECIFICATION
 
 ## Purpose
@@ -13,7 +12,6 @@ Provide a durable, auditable index for valuable project productions so that arch
 Every important production must have a unique `production_id` and, where applicable, a `trace_id`.
 
 Minimum fields:
-
 - `production_id`
 - `trace_id`
 - `type`
@@ -59,31 +57,40 @@ This registry is a repository-side control plane. It cannot independently read C
 ## Live-system requirement
 A future reconciler must consume this registry, detect stale/pending/conflicting records, reconcile when capabilities are available, and emit traceable evidence. A workflow that only validates static files is an integrity gate, not a complete cross-layer reconciler.
 
-## Registered production — PRNTP-2026-08-30-001
+## Registered production — PMRH-2026-09-06-001
 
 | Field | Value |
 |---|---|
-| `production_id` | `PRNTP-2026-08-30-001` |
-| `trace_id` | `PRNTP-2026-08-30-001` |
-| `type` | Permanent Principle + Cross-Layer Architecture |
-| `title` | Permanent Registration Not Trace Principle |
+| `production_id` | `PMRH-2026-09-06-001` |
+| `trace_id` | `PMRH-2026-09-06-001` |
+| `type` | Permanent Recovery / Memory Integrity Hammer |
+| `title` | Palang Persistent-Memory Recovery Hammer |
 | `version` | 1.0 |
-| `created_at` | 2026-08-30 |
+| `created_at` | 2026-09-06 |
 | `owner` | Ahmad Nezhadhosseini |
-| `source_context` | User-directed formal production / Palang Hammer action |
-| `memory_state` | `PENDING` — persistent-memory write requires memory-system evidence |
-| `repository_state` | `SUCCESS` — canonical artifacts written |
-| `execution_state` | `SUCCESS` — repository mutation executed |
-| `evidence_state` | `SUCCESS` — write result and post-write reads captured |
-| `verification_state` | `SUCCESS` for repository artifacts; memory remains unverified |
-| `approval_state` | `APPROVED` — user explicitly requested registration |
-| `reconciliation_state` | `PARTIAL` — repository reconciled; memory layer pending verification |
-| `canonical_destination` | `docs/reference/REF-PERMANENT-REGISTRATION-NOT-TRACE-2026-08-30.md`; `docs/architecture/ARCH-PRNT-2026-08-30-001.md`; this registry |
-| `artifact_path` | `docs/architecture/ARCH-PRNT-2026-08-30-001.md` |
-| `last_verified_at` | 2026-08-30 |
-| `notes` | Trace is not durable registration. Required layers must carry explicit states; silence never means completion. |
+| `location` | Gonbad-e Kavus, Iran |
+| `source_context` | User-directed `ثبت کن` + `چکش` to harden the rule for Persistent Memory limitation/unavailability and excavation/revival recovery |
+| `memory_state` | `UNVERIFIED / PENDING` — no provider-level Persistent Memory WRITE + independent READ-BACK evidence is exposed to the repository control plane |
+| `repository_state` | `SUCCESS` — governance hammer and regression test written to canonical repository |
+| `execution_state` | `SUCCESS` — repository mutations executed |
+| `evidence_state` | `PENDING READ-BACK` — post-write independent fetch required before final repository verification claim |
+| `verification_state` | `PENDING READ-BACK` |
+| `approval_state` | `APPROVED` — user explicitly authorized registration/hammer |
+| `reconciliation_state` | `PARTIAL` — repository registration executed; read-back verification and Memory layer remain pending |
+| `canonical_destination` | `docs/governance/PALANG-PERSISTENT-MEMORY-RECOVERY-HAMMER-2026-09-06.md`; `tests/regression/PMRH-TEST-NO-MEMORY-LOSS-001.md`; this registry |
+| `artifact_path` | `docs/governance/PALANG-PERSISTENT-MEMORY-RECOVERY-HAMMER-2026-09-06.md` |
+| `last_verified_at` | 2026-09-06 (write commit only; independent content read-back pending) |
+| `notes` | Core recovery contract: unavailable/limited Memory never means loss. Preserve same ID in durable Repository/Recovery Pending Store; expose it to excavation; reconcile same ID when Memory capability returns; never claim Memory VERIFIED without provider read-back. |
 
-### Reconciled production — REG-REC-2026-08-29-002
+## Existing canonical references
+- `PMDRP-2026-08-31-001` — Persistent Memory Deferred Reconciliation Protocol
+- `PMA-2026-09-01-001` — Persistent Memory Adapter Specification
+- `MPGG-2026-09-01-001` — Persistent Memory evidence boundary
+- `GEN-EXEC-GOV-2026-09-06-001` — Generation & Execution Governance
+- `PEFH-2026-09-06-001` — Palang Execution Fidelity Hammer
+- `PMRH-2026-09-06-001` — Palang Persistent-Memory Recovery Hammer
+
+## Reconciled production — REG-REC-2026-08-29-002
 
 | Field | Value |
 |---|---|
