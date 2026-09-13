@@ -5,34 +5,10 @@
 **Location:** Iran — Gonbad-e Kavus  
 **Status:** ACTIVE CONTROL-PLANE SPECIFICATION
 
-## Purpose
-Provide a durable, auditable index for valuable project productions so that architectural rules, definitions, commands, decisions, tests, evidence, and other material outputs can be reconciled across durable layers.
-
 ## Required record
 Every important production must have a unique `production_id` and, where applicable, a `trace_id`.
 
-Minimum fields:
-- `production_id`
-- `trace_id`
-- `type`
-- `title`
-- `version`
-- `created_at`
-- `created_at_timezone`
-- `owner`
-- `location`
-- `source_context`
-- `memory_state`
-- `repository_state`
-- `execution_state`
-- `evidence_state`
-- `verification_state`
-- `approval_state`
-- `reconciliation_state`
-- `canonical_destination`
-- `artifact_path`
-- `last_verified_at`
-- `notes`
+Minimum fields include identity, provenance, state, evidence, verification, approval, reconciliation, canonical destination, artifact path, and last verified time.
 
 ## State rules
 `RECEIVED → INTERPRETED → REQUIREMENTS_RESOLVED → EXECUTED → EVIDENCE_CAPTURED → VERIFIED → REGISTERED → RECONCILED → COMPLETED`
@@ -54,34 +30,6 @@ A production requiring human approval remains `AWAITING_APPROVAL` until approval
 ## Critical limitation
 This registry is a repository-side control plane. It cannot independently read ChatGPT persistent memory. Therefore it must never claim `memory_state=VERIFIED` without evidence supplied by a capability that can actually verify that layer.
 
-## Live-system requirement
-A future reconciler must consume this registry, detect stale/pending/conflicting records, reconcile when capabilities are available, and emit traceable evidence. A workflow that only validates static files is an integrity gate, not a complete cross-layer reconciler.
-
-## Registered production — PMRH-2026-09-06-001
-
-| Field | Value |
-|---|---|
-| `production_id` | `PMRH-2026-09-06-001` |
-| `trace_id` | `PMRH-2026-09-06-001` |
-| `type` | Permanent Recovery / Memory Integrity Hammer |
-| `title` | Palang Persistent-Memory Recovery Hammer |
-| `version` | 1.0 |
-| `created_at` | 2026-09-06 |
-| `owner` | Ahmad Nezhadhosseini |
-| `location` | Gonbad-e Kavus, Iran |
-| `source_context` | User-directed `ثبت کن` + `چکش` to harden the rule for Persistent Memory limitation/unavailability and excavation/revival recovery |
-| `memory_state` | `UNVERIFIED / PENDING` — no provider-level Persistent Memory WRITE + independent READ-BACK evidence is exposed to the repository control plane |
-| `repository_state` | `SUCCESS` — governance hammer and regression test written to canonical repository |
-| `execution_state` | `SUCCESS` — repository mutations executed |
-| `evidence_state` | `PENDING READ-BACK` — post-write independent fetch required before final repository verification claim |
-| `verification_state` | `PENDING READ-BACK` |
-| `approval_state` | `APPROVED` — user explicitly authorized registration/hammer |
-| `reconciliation_state` | `PARTIAL` — repository registration executed; read-back verification and Memory layer remain pending |
-| `canonical_destination` | `docs/governance/PALANG-PERSISTENT-MEMORY-RECOVERY-HAMMER-2026-09-06.md`; `tests/regression/PMRH-TEST-NO-MEMORY-LOSS-001.md`; this registry |
-| `artifact_path` | `docs/governance/PALANG-PERSISTENT-MEMORY-RECOVERY-HAMMER-2026-09-06.md` |
-| `last_verified_at` | 2026-09-06 (write commit only; independent content read-back pending) |
-| `notes` | Core recovery contract: unavailable/limited Memory never means loss. Preserve same ID in durable Repository/Recovery Pending Store; expose it to excavation; reconcile same ID when Memory capability returns; never claim Memory VERIFIED without provider read-back. |
-
 ## Existing canonical references
 - `PMDRP-2026-08-31-001` — Persistent Memory Deferred Reconciliation Protocol
 - `PMA-2026-09-01-001` — Persistent Memory Adapter Specification
@@ -89,82 +37,51 @@ A future reconciler must consume this registry, detect stale/pending/conflicting
 - `GEN-EXEC-GOV-2026-09-06-001` — Generation & Execution Governance
 - `PEFH-2026-09-06-001` — Palang Execution Fidelity Hammer
 - `PMRH-2026-09-06-001` — Palang Persistent-Memory Recovery Hammer
+- `PEH-2026-09-13-001` — Palang Evidence Hammer
 
-## Reconciled production — REG-REC-2026-08-29-002
+## Registered production — PEH-2026-09-13-001
 
 | Field | Value |
 |---|---|
-| `production_id` | `REG-REC-2026-08-29-002` |
-| `trace_id` | `REG-REC-2026-08-29-002` |
-| `type` | Approved architectural behavior |
-| `title` | New Production Metadata Integrity & No-Fabrication Rule |
+| `production_id` | `PEH-2026-09-13-001` |
+| `trace_id` | `PEH-2026-09-13-001` |
+| `type` | Reasoning / Evidence-Hardening Method |
+| `title` | Palang Evidence Hammer (PEH) |
 | `version` | 1.0 |
-| `created_at` | 2026-08-29T23:49:00+03:30 |
+| `created_at` | 2026-09-13T22:05+03:30 |
 | `created_at_timezone` | Asia/Tehran |
 | `owner` | Ahmad Nezhadhosseini |
-| `location` | Gonbad-e Kavus, Iran |
-| `source_context` | User-approved production preserved in Recovery Buffer during unavailable formal integration |
-| `memory_state` | `UNVERIFIED` — repository-side tooling cannot independently verify ChatGPT persistent memory |
-| `repository_state` | `SUCCESS` — Reference, Architecture, Registry, and Integration records written |
-| `execution_state` | `SUCCESS` — reconciliation writes executed |
-| `evidence_state` | `SUCCESS` — post-write reads captured for Reference, Architecture, Registry, Recovery, and integration record |
-| `verification_state` | `SUCCESS` — cross-layer repository integration verified |
-| `approval_state` | `APPROVED` |
-| `reconciliation_state` | `COMPLETED` for repository-side applicable layers; Persistent Memory remains unverified |
-| `canonical_destination` | `docs/reference/REF-REG-REC-2026-08-29-002.md`; `docs/architecture/ARCH-REG-REC-2026-08-29-002.md`; this registry; `docs/integration/REG-REC-2026-08-29-002-RECONCILIATION.md` |
-| `artifact_path` | `docs/reference/REF-REG-REC-2026-08-29-002.md` |
-| `last_verified_at` | 2026-08-30 |
-| `notes` | Recovery Buffer remains provenance/audit history. The production is integrated into live Reference, Architecture, Registry, and reconciliation structures. Persistent Memory is explicitly UNVERIFIED, not falsely closed. |
+| `location` | Iran — Gonbad-e Kavus |
+| `source_context` | User-directed `چکش` followed by explicit `ثبت کن و زنده`; request to name, place, and operationalize the evidence-hardening model across Future AI architecture |
+| `memory_state` | `UNVERIFIED / PENDING` — provider-level Persistent Memory WRITE + independent READ-BACK is not exposed to the repository control plane |
+| `repository_state` | `SUCCESS` — canonical PEH governance artifact created and cross-layer registry updated |
+| `execution_state` | `SUCCESS` |
+| `evidence_state` | `SUCCESS` for repository write evidence; independent post-write read-back still required for final repository verification claim |
+| `verification_state` | `PENDING READ-BACK` |
+| `approval_state` | `APPROVED` — explicit `ثبت کن و زنده` |
+| `reconciliation_state` | `PARTIAL / PENDING READ-BACK` |
+| `canonical_destination` | `docs/governance/PEH-2026-09-13-001.md`; `docs/RECOVERY_ARCHITECTURE.md` conceptual placement; this registry |
+| `artifact_path` | `docs/governance/PEH-2026-09-13-001.md` |
+| `last_verified_at` | pending independent read-back |
+| `notes` | PEH is a named subtype of the umbrella Palang Hammer. It operationalizes evidence-vs-interpretation separation, claim atomization, evidence classification, competing-hypothesis testing, adversarial counterattack, re-test, and confidence calibration. It does not expose private chain-of-thought and does not replace existing hammer completion/recovery rules. |
 
-### Reconciled production — XLR-PMA-2026-09-03-001
+## PEH operational contract
 
-| Field | Value |
-|---|---|
-| `production_id` | `XLR-PMA-2026-09-03-001` |
-| `trace_id` | `XLR-PMA-2026-09-03-001` |
-| `type` | Cross-Layer Execution Evidence |
-| `title` | Cross-Layer PMA Relationship Execution Evidence |
-| `version` | 1.3 |
-| `created_at` | 2026-09-03 |
-| `owner` | Ahmad Nezhadhosseini |
-| `location` | Gonbad-e Kavus, Iran |
-| `source_context` | User-approved execution of cross-layer PMA relationship detection, reconciliation, fresh independent runtime verification, and final repository-side integrity gate |
-| `memory_state` | `UNVERIFIED / PENDING` — provider-level Persistent Memory WRITE + independent READ-BACK is not available to this repository-side control plane |
-| `repository_state` | `SUCCESS` — evidence record, registry, and governing workflow state written and read back |
-| `execution_state` | `SUCCESS` — safety-net `33770980560`; fresh CPREL `33771239051`; dedicated integrity gate `33771711033`; hardened/current integrity gate `33772342896` |
-| `evidence_state` | `SUCCESS` — live runner execution, independent two-runtime transfer evidence, and current cross-layer gate evidence captured |
-| `verification_state` | `SUCCESS` for demonstrated repository-side layers; current Cross-Layer Integrity Gate `33772342896 / 100705463598` passed all steps |
-| `approval_state` | `APPROVED` — user explicitly authorized registration and live completion |
-| `reconciliation_state` | `COMPLETED` for demonstrated repository-side execution/evidence/architecture layers; external Persistent Memory remains `PENDING` by explicit evidence boundary |
-| `canonical_destination` | `docs/evidence/XLR-PMA-2026-09-03-001.md`; `docs/evidence/EXTERNAL-MEMORY-BRIDGE-EVIDENCE-TEST-2026-09-01.md`; `docs/PRODUCTION_REGISTRY.md`; `checkpoints/CURRENT-0.0-MASTER-REFERENCE-2026-08-31.md` |
-| `artifact_path` | `docs/evidence/XLR-PMA-2026-09-03-001.md` |
-| `last_verified_at` | `2026-09-03` |
-| `notes` | Current hardened Cross-Layer Integrity Gate run `33772342896` on commit `ca5f7e65fec6a687ce2c33f6b4584a3601dc4f17` completed successfully; integrity job `100705463598` passed all validation, PMA relationship, and traceable-evidence steps. Provider-level ChatGPT Persistent Memory remains UNVERIFIED/PENDING because provider WRITE + independent READ-BACK is not exposed. Earlier failed gates remain preserved as historical evidence. No duplicate Production ID created. |
+`Data / Context → Claims → Evidence vs Interpretation → Contradictions & Gaps → Competing Hypotheses → Explanatory Power → Counterattack → Revision → Re-test → Confidence / Uncertainty`
 
-### Cross-layer references
+Core invariants:
 
-- Reference: `REF-PRNT-2026-08-30-001`
-- Architecture: `ARCH-PRNT-2026-08-30-001`
-- Latest cross-layer execution evidence: `XLR-PMA-2026-09-03-001`
-- Persistent Memory evidence boundary: `MPGG-2026-09-01-001`
-- Adapter: `PMA-2026-09-01-001`
-- Deep excavation/revival: `EXC-REV-2026-09-03-001`
-- Canonical repository: `ahmadnezhadhosseini64-cloud/future-ai-palang-footprint`
-- Latest verified Cross-Layer Integrity Gate: run `33772342896`, job `100705463598`, commit `ca5f7e65fec6a687ce2c33f6b4584a3601dc4f17`
-- Required recovery rule: `PENDING/UNAVAILABLE → Recovery → First Valid Opportunity → Reconcile → Verify → Close`
-- No writable durable destination: `UNREGISTERED / RECOVERY REQUIRED`
+- `Evidence ≠ Interpretation`
+- `Unknown ≠ False`
+- `Unknown ≠ Extraordinary`
+- `Compatible ≠ Proven`
+- `Unresolved ≠ Supernatural`
+- `No Evidence → No Strong Claim`
 
-## Live registration reaffirmation — 2026-09-03
+## Live status
 
-The user explicitly requested the existing canonical production to be registered and kept live. This is a same-lineage reaffirmation, not a new production.
-
-- Canonical Production ID preserved: `XLR-PMA-2026-09-03-001`
-- Repository state: `SUCCESS`
-- Evidence state: `SUCCESS`
-- Verification state: `SUCCESS` for demonstrated repository-side scope
-- Reconciliation state: `COMPLETED` for demonstrated repository-side layers
-- Persistent Memory provider state: `UNVERIFIED / PENDING`
-- Duplicate creation: `NONE`
-- Live status: `ACTIVE / LIVING`
-- Governing invariant: `NO COMPLETE WITHOUT ALL APPLICABLE GATES VERIFIED`
-- Operational contract: `WRITE → READ-BACK → MATCH → VERIFY → RECONCILE → STATUS`
+- `Operational status:` `ACTIVE / LIVING`
+- `Repository write:` `SUCCESS`
+- `Persistent Memory provider verification:` `UNVERIFIED / PENDING`
+- `Duplicate Production ID:` `NONE`
+- `Read-back / Verify:` required before claiming repository-side `VERIFIED`
