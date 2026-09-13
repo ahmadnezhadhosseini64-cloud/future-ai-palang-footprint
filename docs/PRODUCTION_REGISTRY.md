@@ -54,15 +54,15 @@ This registry is a repository-side control plane. It cannot independently read C
 | `location` | Iran — Gonbad-e Kavus |
 | `source_context` | User-directed `چکش` followed by explicit `ثبت کن و زنده`; request to name, place, and operationalize the evidence-hardening model across Future AI architecture |
 | `memory_state` | `UNVERIFIED / PENDING` — provider-level Persistent Memory WRITE + independent READ-BACK is not exposed to the repository control plane |
-| `repository_state` | `SUCCESS` — canonical PEH governance artifact created and cross-layer registry updated |
+| `repository_state` | `SUCCESS` — canonical PEH governance artifact, architectural placement, and registry entry written and read back |
 | `execution_state` | `SUCCESS` |
-| `evidence_state` | `SUCCESS` for repository write evidence; independent post-write read-back still required for final repository verification claim |
-| `verification_state` | `PENDING READ-BACK` |
+| `evidence_state` | `SUCCESS` — post-write repository retrieval confirmed the canonical artifacts |
+| `verification_state` | `VERIFIED` — repository read-back matched the written PEH artifact and registry integration |
 | `approval_state` | `APPROVED` — explicit `ثبت کن و زنده` |
-| `reconciliation_state` | `PARTIAL / PENDING READ-BACK` |
-| `canonical_destination` | `docs/governance/PEH-2026-09-13-001.md`; `docs/RECOVERY_ARCHITECTURE.md` conceptual placement; this registry |
+| `reconciliation_state` | `COMPLETED` for repository-side PEH registration and architectural placement |
+| `canonical_destination` | `docs/governance/PEH-2026-09-13-001.md`; `architecture/PEH-ARCHITECTURAL-PLACEMENT-2026-09-13.md`; this registry |
 | `artifact_path` | `docs/governance/PEH-2026-09-13-001.md` |
-| `last_verified_at` | pending independent read-back |
+| `last_verified_at` | `2026-09-13` — post-write repository read-back completed |
 | `notes` | PEH is a named subtype of the umbrella Palang Hammer. It operationalizes evidence-vs-interpretation separation, claim atomization, evidence classification, competing-hypothesis testing, adversarial counterattack, re-test, and confidence calibration. It does not expose private chain-of-thought and does not replace existing hammer completion/recovery rules. |
 
 ## PEH operational contract
@@ -82,6 +82,7 @@ Core invariants:
 
 - `Operational status:` `ACTIVE / LIVING`
 - `Repository write:` `SUCCESS`
+- `Repository read-back:` `SUCCESS`
+- `Repository verification:` `VERIFIED`
 - `Persistent Memory provider verification:` `UNVERIFIED / PENDING`
 - `Duplicate Production ID:` `NONE`
-- `Read-back / Verify:` required before claiming repository-side `VERIFIED`
