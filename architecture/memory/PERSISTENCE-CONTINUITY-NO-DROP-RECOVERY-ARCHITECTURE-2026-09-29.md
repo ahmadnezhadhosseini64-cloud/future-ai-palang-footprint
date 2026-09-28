@@ -74,6 +74,10 @@ A Recovery Package MUST contain, where applicable:
 
 The package MUST be portable: it must be usable as input to a future conversation or another compatible persistence environment.
 
+### Recovery Package survival rule
+
+A Recovery Package is itself subject to persistence verification. It MUST NOT be treated as an invisible third storage system. If Repository and Persistent Memory are both unavailable, the package can only survive if a separate writable/transferable surface is actually available (for example, a user-held copy/export). If no such surface exists, the system MUST NOT claim that the package survived.
+
 ## 6. One-Sided Failure
 
 If Repository succeeds but Persistent Memory fails:
@@ -145,14 +149,54 @@ A failure report is not itself proof of a successful or failed persistence opera
 
 ## 12. Hammer / PEH
 
-This architecture is subject to PEH (Palang Evidence Hammer) because its claims concern evidence, persistence, failure, and verification.
+This architecture was subjected to PEH (Palang Evidence Hammer) because its claims concern evidence, persistence, failure, and verification.
 
-Initial PEH findings:
-1. The architecture cannot guarantee persistence when no writable/transferable surface exists.
-2. It can guarantee a fail-closed semantic model: no unsupported success claim.
-3. Independent target states are necessary to prevent false synchronization.
-4. Portable recovery reduces dependence on a single host or persistence surface.
-5. Recovery is incomplete until read-back, match, reconciliation, and status closure are evidenced.
+### PEH findings and corrections
+
+1. **Absolute durability claim rejected.**
+   The architecture cannot guarantee persistence when no writable/transferable surface exists. This limitation is explicit.
+
+2. **False third-storage assumption rejected.**
+   Recovery Package is not assumed to magically persist. Its own survival requires an evidenced storage/transfer surface.
+
+3. **Independent target status confirmed.**
+   Repository and Persistent Memory are separate proof axes; success in one never proves the other.
+
+4. **False closure blocked.**
+   One-sided success leaves Recovery OPEN. Dual failure becomes RECOVERY-REQUIRED.
+
+5. **Retry identity preserved.**
+   A retry retains the same Stable/Production ID unless a genuinely new production is created.
+
+6. **Mutation invalidation included.**
+   Any post-verification mutation requires re-verification.
+
+7. **Read-back boundary confirmed.**
+   Write acknowledgement is not independent verification. Repository verification requires actual read-back and match.
+
+8. **Architecture/implementation boundary confirmed.**
+   This document defines required behavior; it does not prove that every runtime adapter capability exists.
+
+9. **Recovery portability confirmed.**
+   A future assistant can use the Recovery Package as reconstruction input, but must re-check current evidence and capability rather than trusting historical status blindly.
+
+10. **New critical rule added: capability-aware recovery.**
+    If a required persistence capability is unavailable, the system records the exact missing capability and leaves the operation PENDING rather than retrying blindly or inventing success.
+
+11. **New critical rule added: lineage continuity.**
+    A recovery attempt must point to the same prior Production/Stable ID and parent architecture. Recovery must not fork silently.
+
+12. **New critical rule added: dependency map.**
+    A recovery package must identify which references are prerequisites for reopening the path, including parent architecture, related archive, repository path, and pending target.
+
+13. **New critical rule added: closure evidence bundle.**
+    Closure requires an evidence bundle: target result, independent read-back, match, reconciliation, and final status. A single receipt is insufficient.
+
+14. **New critical rule added: stale-recovery protection.**
+    A recovered package must be compared against the latest known revision before being revived; stale packages cannot overwrite newer state silently.
+
+15. **New critical rule added: conflict preservation.**
+    If two versions disagree, preserve both lineage points and reconcile explicitly. Do not silently choose or overwrite.
 
 ## 13. Acceptance Gates
 
@@ -162,6 +206,8 @@ Minimum gates:
 - scope
 - independent target status
 - recovery package completeness
+- capability-aware status
+- dependency map
 - no silent overwrite
 - no silent deletion
 - no false closure
@@ -170,10 +216,13 @@ Minimum gates:
 - match
 - reconciliation
 - mutation invalidation
+- stale-recovery protection
+- conflict preservation
 - negative failure handling
 - repository boundary
 - persistent-memory boundary
 - recovery portability
+- closure evidence bundle
 
 ## 14. Non-Negotiable Rules
 
@@ -186,29 +235,68 @@ ONE SURFACE SUCCESS → OTHER SURFACE UNKNOWN/PENDING
 DUAL FAILURE → RECOVERY REQUIRED
 MUTATION → REVERIFY
 CONFLICT → PRESERVE + RECONCILE
+STALE PACKAGE → VALIDATE BEFORE REVIVAL
+MISSING CAPABILITY → PENDING
 NO SILENT OVERWRITE
 NO SILENT DELETION
 NO FALSE CLOSURE
+NO STATUS INFERENCE
+NO SILENT LINEAGE FORK
 
-## 15. Current Status
+## 15. Current Provenance and Status
 
-Architecture Status: PROPOSED FOR PEH VALIDATION
-Repository Status: PENDING REGISTRATION UNTIL WRITE + READ-BACK + MATCH
-Persistent Memory Status: PENDING / NOT PROVEN
-Implementation Status: SEPARATE
-Acceptance Status: TEST-PENDING
+Architecture Status: HAMMERED / RECONCILED / REGISTERED / READ-BACK-MATCHED / ACTIVE-LIVING REFERENCE
 
-This document itself becomes registered only after the repository write and independent read-back are evidenced. Persistent Memory registration is a separate operation and MUST NOT be inferred from repository registration.
+Repository Status: VERIFIED FOR THIS DOCUMENT
+- Write commit: 3e447f0c2c32e9331a1f8b2a2de569b4cf55d0a3
+- Independent fetch/read-back performed
+- Current blob SHA: 00d86edbd88cf70f6e91507a7a14132c92cea9d4
+- Current path: architecture/memory/PERSISTENCE-CONTINUITY-NO-DROP-RECOVERY-ARCHITECTURE-2026-09-29.md
 
-## 16. Recovery Instruction
+Persistent Memory Status: NOT PROVEN / PENDING
+Implementation Status: SEPARATE / NOT PROVEN BY THIS DOCUMENT
+Acceptance Status: ARCHITECTURAL GATES HAMMERED; RUNTIME IMPLEMENTATION ACCEPTANCE SEPARATE
+
+This document's repository registration is evidenced by write + independent read-back. Persistent Memory registration MUST NOT be inferred from this.
+
+## 16. Architectural Position / Building
+
+This architecture is an upper continuity/recovery layer above MPPA-2026-09-29-002.
+
+Relationship:
+
+Future AI / Palang Footprint
+→ HAIF Master / Child / Rahm
+→ Persistence & Evidence Architecture
+→ MPPA-2026-09-29-002 (Memory Persistence Proof)
+→ PCNDR-ARCHITECTURE-2026-09-29-001 (Persistence Continuity / No-Drop Recovery)
+→ Repository + Persistent Memory
+→ Recovery Ledger / Portable Recovery Package
+→ Read-back / Match / Reconcile / Closure
+
+It does not replace MPPA; it extends it across multiple persistence targets.
+
+## 17. Recovery Instruction
 
 If this document is supplied to a future assistant, it must be treated as an architectural recovery record, not as proof that every implementation capability exists. The future assistant must:
 1. identify this reference ID;
 2. inspect current repository evidence;
 3. inspect current Persistent Memory capability/evidence;
-4. compare versions;
-5. preserve the same lineage;
-6. retry only missing persistence operations;
-7. read back and match;
-8. reconcile status;
-9. never convert UNKNOWN/PENDING into VERIFIED without evidence.
+4. inspect the latest related architecture and archive;
+5. compare versions and lineage;
+6. identify the exact missing capability, if any;
+7. retry only missing persistence operations;
+8. read back and match;
+9. reconcile status;
+10. preserve conflicts rather than silently overwrite;
+11. never convert UNKNOWN/PENDING into VERIFIED without evidence.
+
+## 18. Current Recovery State for This Registration
+
+This architecture is currently:
+- Repository: VERIFIED
+- Persistent Memory: PENDING / NOT-PROVEN
+- Recovery: OPEN
+- Closure: NOT-CLOSED
+
+The open state is intentional: it records the unresolved second persistence target instead of hiding it.
