@@ -313,3 +313,13 @@ Verification proves the defined integrity contract.
 Status must reflect the highest level actually supported by evidence.
 
 END OF REFERENCE
+
+
+---
+
+## Supersession Notice — 2026-09-29
+This reference is retained as historical lineage. The current integrated hardened architectural reference is:
+`MPPA-2026-09-29-002`
+Path: `architecture/memory/MEMORY-PERSISTENCE-PROOF-ARCHITECTURE-2026-09-29.md`
+
+The 2026-09-29 reference adds explicit Independence Status, Implementation Capability Status, Acceptance Status, a self-acceptance matrix, independent-read evidence requirements, and integrated Hammer findings. Do not interpret this historical reference as the current standalone architectural baseline.
