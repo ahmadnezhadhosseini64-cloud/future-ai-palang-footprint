@@ -751,3 +751,300 @@ Persistent Memory registration of this newly requested archive/architecture is N
 That limitation is part of the architecture, not an omission.
 
 END OF RECOVERY BOOTSTRAP
+
+
+---
+
+# 24. EVOLUTION HARDENING — PEH SECOND PASS
+
+The architecture is explicitly living and evolvable. It is not a frozen final rule.
+
+The first path and prior versions are historical lineage and MUST remain recoverable.
+
+Required evolution rule:
+
+PRESERVE OLD
+→ CREATE / REVISE NEW
+→ EXPLICIT SUPERSESSION
+→ READ-BACK
+→ MATCH
+→ PROMOTE CURRENT
+
+Version classes:
+- PATCH: correction/clarification without contract change.
+- MINOR: additive capability/guardrail/recovery case.
+- MAJOR: structural or semantic contract change.
+
+A future version MUST preserve:
+1. stable lineage;
+2. parent architecture relationship;
+3. prior version/history;
+4. reason for change;
+5. explicit supersession;
+6. its own evidence and read-back.
+
+Rollback is itself a new lineage event:
+
+CURRENT(Vn)
+→ REGRESSION
+→ PRESERVE(Vn)
+→ RESTORE/REVISE
+→ Vn+1
+
+No destructive evolution and no silent deletion of historical architecture are permitted.
+
+---
+
+# 25. ARCHITECTURAL INTEGRATION — NOT MERELY A REPORT
+
+Repository placement alone is not treated as proof of architectural integration.
+
+The explicit integration chain is:
+
+Future AI / Palang Footprint
+→ HAIF Master / Child / Rahm
+→ Persistence & Evidence Architecture
+→ PMA-2026-09-01-001
+→ MPPA-2026-09-29-002
+→ PCNDR-ARCHITECTURE-2026-09-29-001
+→ Repository + Persistent Memory
+→ Recovery / Revival / Reconciliation / Closure
+
+An Architecture Memory & Continuity Registry was actually created in:
+
+architecture/memory/ARCHITECTURE-MEMORY-CONTINUITY-REGISTRY.md
+
+Registry commit:
+b30ec0ec5e6237ea01e81bc12768843914557af5
+
+Registry blob / read-back SHA:
+a6ef24f02ff40106877d8d2a5216a49f2c8615b3
+
+The Registry is a navigation/lineage surface, not a substitute for the underlying artifacts.
+
+---
+
+# 26. VERIFIED IMPLEMENTATION ACTIONS ON 2026-09-29
+
+The following were actually executed against the canonical repository, rather than merely described:
+
+1. MPPA-2026-09-29-002 was created and independently read back.
+2. Master Archive / Recovery Bootstrap was created and independently read back.
+3. PCNDR-ARCHITECTURE-2026-09-29-001 was created and independently read back.
+4. PCNDR was subjected to a first PEH hardening pass and updated.
+5. PCNDR was subjected to a second PEH pass specifically for evolvability, history preservation, rollback, integration, registry, promotion, and silent-fork risks.
+6. PCNDR was updated with those architectural rules.
+7. PCNDR was read back after the update.
+8. Architecture Memory & Continuity Registry was actually created.
+9. The Registry was read back.
+10. PCNDR provenance was finalized with its current commit/blob/read-back evidence.
+11. The current repository state was re-read to verify that the artifacts exist under architecture/memory/.
+
+Relevant current evidence:
+- PCNDR current blob SHA: cb0e84f214679b689e120f482c26a60ed5a54dc4
+- PCNDR provenance-finalization commit: c32c98f8a483bdad61f5fb99b9c4c80a0a7ab937
+- Registry current blob SHA: a6ef24f02ff40106877d8d2a5216a49f2c8615b3
+- Registry read-back: MATCH
+
+---
+
+# 27. WHAT WAS FOUND AND ACTUALLY CLOSED
+
+PEH found the following risks and the architecture was changed to address them:
+
+### Gap A — Frozen-final risk
+Problem:
+The previous architecture did not explicitly define how it could grow.
+
+Closure:
+Evolution/version/supersession/rollback contract added.
+
+### Gap B — Historical deletion risk
+Problem:
+A future revision could accidentally replace the first path.
+
+Closure:
+No-destructive-evolution and history-preservation rules added.
+
+### Gap C — Rollback risk
+Problem:
+A defective future version needed an explicit recovery path.
+
+Closure:
+Rollback is defined as a new lineage event.
+
+### Gap D — Repository placement mistaken for integration
+Problem:
+A file existing under architecture/memory/ could be mistaken for proof that it is integrated into the architecture.
+
+Closure:
+Explicit integration graph plus Architecture Registry added.
+
+### Gap E — Registry becoming a single point of failure
+Problem:
+If an index disappears, architecture might be treated as gone.
+
+Closure:
+Underlying artifacts remain authoritative; Registry is navigation/lineage only.
+
+### Gap F — Recovery becoming a silent fork
+Problem:
+Recovered material could create a parallel architecture.
+
+Closure:
+Recovered package must compare latest revision, lineage, dependencies, and conflicts before revival.
+
+### Gap G — Promotion bypass
+Problem:
+Ideas or fixes could jump directly into Master architecture.
+
+Closure:
+IDEA/BUG/DISCOVERY → CHILD → RAHM → PEH/EVIDENCE → CHANGE PROPOSAL → VERSIONED ARCHITECTURE → READ-BACK/MATCH → PROMOTE CURRENT.
+
+### Gap H — Runtime overclaim
+Problem:
+Repository evidence could be mistaken for runtime implementation.
+
+Closure:
+Architecture, Repository, Runtime Implementation, Acceptance, and Persistent Memory remain separate status axes.
+
+---
+
+# 28. CURRENT CANONICAL ARCHITECTURAL STATE
+
+## Base
+PMA-2026-09-01-001
+Persistent Memory Adapter base specification.
+
+## Current Memory Proof Architecture
+MPPA-2026-09-29-002
+Memory Persistence Proof Architecture — Integrated Hardened Reference.
+
+Current read-back SHA:
+907080f81de1a7a34e81802261a7f4d26eb74d70
+
+## Current Continuity Architecture
+PCNDR-ARCHITECTURE-2026-09-29-001
+Persistence Continuity & No-Drop Recovery Architecture.
+
+Current state:
+ACTIVE / LIVING / EVOLVABLE
+
+Current PCNDR blob:
+cb0e84f214679b689e120f482c26a60ed5a54dc4
+
+Current PCNDR provenance-finalization commit:
+c32c98f8a483bdad61f5fb99b9c4c80a0a7ab937
+
+Independent read-back:
+MATCH
+
+## Current Architecture Registry
+architecture/memory/ARCHITECTURE-MEMORY-CONTINUITY-REGISTRY.md
+
+Registry read-back:
+MATCH
+
+## Master Recovery Archive
+MPPA-ARCHIVE-BOOTSTRAP-2026-09-29-001
+
+Repository read-back SHA:
+5dd788c41ee264e7d8e92fb2dc2d03ee3feb7aec
+
+---
+
+# 29. CURRENT STATUS SEPARATION
+
+Repository:
+VERIFIED for the architectural artifacts listed above.
+
+Persistent Memory:
+PENDING / NOT-PROVEN for the newly requested registration.
+
+Runtime Implementation:
+NOT-PROVEN by repository documents.
+
+Runtime Acceptance:
+SEPARATE / NOT-PROVEN by these repository operations.
+
+Recovery:
+OPEN for the Persistent Memory target.
+
+This OPEN state is intentional. It prevents false closure.
+
+---
+
+# 30. FUTURE RECOVERY ENTRY PROCEDURE
+
+If this archive is supplied to a future assistant:
+
+1. Identify the project and Reference IDs.
+2. Fetch the current Repository artifacts.
+3. Read back the current PCNDR, MPPA, Registry, and Master Archive.
+4. Compare current revision/blob evidence.
+5. Inspect Persistent Memory capability independently.
+6. Never infer Persistent Memory from Repository presence.
+7. Preserve the original lineage.
+8. Compare any recovered package against the latest revision.
+9. Reconcile conflicts explicitly.
+10. Continue only the missing persistence operation.
+11. Read back the result.
+12. Match it against the intended payload/revision.
+13. Reconcile all statuses.
+14. Only then close the Recovery state.
+
+---
+
+# 31. ABSOLUTE PROOF BOUNDARY
+
+This archive itself does NOT claim that Persistent Memory was successfully written.
+
+It records the exact opposite:
+
+Repository proof = demonstrated.
+Persistent Memory proof = not demonstrated in the available environment.
+
+No future assistant may convert:
+PENDING → VERIFIED
+without new evidence.
+
+No future assistant may convert:
+REPORT → PROOF
+without an actual persistence/read-back operation.
+
+No future assistant may convert:
+ARCHITECTURE → IMPLEMENTATION
+without runtime evidence.
+
+---
+
+# 32. FINAL BUILDING MODEL
+
+Future AI / Palang Footprint
+→ HAIF
+→ MASTER
+→ CHILD
+→ RAHM
+→ Persistence & Evidence Architecture
+→ PMA
+→ MPPA
+→ PCNDR
+→ Architecture Registry
+→ Canonical Repository
+↔ Persistent Memory
+→ Recovery Package
+→ Read-back
+→ Match
+→ Reconcile
+→ Verify
+→ Active/Living
+
+The architecture is a living building, not a dead document.
+
+Its history is preserved.
+Its current state is explicit.
+Its evolution path is defined.
+Its recovery path is defined.
+Its evidence boundaries are defined.
+Its implementation boundary is defined.
+Its unresolved Persistent Memory target remains explicitly OPEN.
