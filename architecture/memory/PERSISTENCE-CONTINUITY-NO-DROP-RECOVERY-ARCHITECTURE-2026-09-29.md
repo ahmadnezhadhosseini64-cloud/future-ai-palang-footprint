@@ -469,7 +469,9 @@ Current PCNDR lineage remains:
 - Version state: `v1.1-hardening`
 - Original creation commit: `3e447f0c2c32e9331a1f8b2a2de569b4cf55d0a3`
 - Previous hardened blob: `8b3f8a4cd1cf2a670873c30539fd26ccf92b6ebe`
-- This revision: new repository commit and blob to be recorded by the write operation and then independently read back.
+- Current v1.1 repository update commit: `7788fd760e1f819dc33b4782ee31115a84c1e0a9`.
+- Current v1.1 blob SHA: `0dd1fffee55bea9de20a28a94970680b96b378de`.
+- Independent read-back after this update returned the same blob SHA.
 - Historical versions: PRESERVED
 - Current status: ACTIVE/LIVING / EVOLVABLE
 - Persistent Memory: PENDING / NOT-PROVEN
