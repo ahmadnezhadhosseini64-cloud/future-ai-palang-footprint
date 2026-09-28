@@ -335,7 +335,7 @@ The rule is:
 
 A previous version may be superseded, deprecated, or marked historical, but its repository commit/blob evidence must remain recoverable through repository history.
 
-GitHub's repository model records file revision history and commits, so the project can retain an auditable evolution path rather than treating the latest text as the only state. citeturn0search2turn0search6
+The repository's revision history and commits provide the historical evidence needed to retain an auditable evolution path rather than treating the latest text as the only state.
 
 ### Current pointer
 
