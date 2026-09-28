@@ -300,3 +300,202 @@ This architecture is currently:
 - Closure: NOT-CLOSED
 
 The open state is intentional: it records the unresolved second persistence target instead of hiding it.
+
+
+## 19. Evolution / Versioning / Supersession Contract
+
+This architecture is a living architecture, not a frozen final rule.
+
+The Reference ID `PCNDR-ARCHITECTURE-2026-09-29-001` identifies the lineage, not an immutable prohibition on future improvement.
+
+### Change model
+
+A future change MUST use one of these explicit forms:
+
+- PATCH: correction or clarification that does not alter the architectural contract.
+- MINOR: additive capability, new guardrail, new evidence gate, or new recovery case that preserves backward compatibility.
+- MAJOR: structural or semantic change that alters the contract, state model, or proof meaning.
+
+Every new version MUST preserve:
+
+1. the original Reference ID lineage;
+2. the parent architecture relationship;
+3. the prior version as historical evidence;
+4. the reason for change;
+5. the exact supersession relationship;
+6. the new version's own evidence and read-back status.
+
+### No destructive evolution
+
+A new version MUST NOT silently delete or rewrite the historical path.
+
+The rule is:
+
+`OLD VERSION → PRESERVED HISTORY → NEW VERSION → EXPLICIT SUPERSEDES → CURRENT`
+
+A previous version may be superseded, deprecated, or marked historical, but its repository commit/blob evidence must remain recoverable through repository history.
+
+GitHub's repository model records file revision history and commits, so the project can retain an auditable evolution path rather than treating the latest text as the only state. citeturn0search2turn0search6
+
+### Current pointer
+
+The project MUST distinguish:
+
+- CURRENT ARCHITECTURAL REFERENCE
+- HISTORICAL REFERENCE
+- SUPERSEDED REFERENCE
+- RECOVERY REFERENCE
+
+"Current" does not mean "only version that exists."
+
+### Rollback / revival
+
+If a future version proves defective:
+
+`CURRENT(Vn) → REGRESSION → PRESERVE(Vn) → RESTORE/REVISE → Vn+1`
+
+Rollback itself is a new documented lineage event; it is not silent deletion of Vn.
+
+## 20. Architecture Integration / Registry Rule
+
+Being stored under `architecture/memory/` proves repository placement, but placement alone is not enough to establish architectural integration.
+
+Architectural integration requires an explicit relationship record containing:
+
+- this Reference ID;
+- parent architecture;
+- related archive/recovery reference;
+- current status;
+- historical predecessor(s);
+- downstream persistence targets;
+- recovery path;
+- change/supersession rule;
+- implementation boundary;
+- acceptance boundary.
+
+This document now defines that relationship explicitly and is intended to be indexed by the project's architecture registry.
+
+The integration graph is:
+
+`Future AI / Palang Footprint`
+→ `HAIF / Master–Child–Rahm`
+→ `Persistence & Evidence Architecture`
+→ `PMA-2026-09-01-001`
+→ `MPPA-2026-09-29-002`
+→ `PCNDR-ARCHITECTURE-2026-09-29-001`
+→ `Repository + Persistent Memory`
+→ `Recovery / Revival / Closure`
+
+No runtime implementation is inferred from this graph.
+
+## 21. Architecture Registry / Evidence Boundary
+
+The project SHOULD maintain an explicit registry/index for architecture references.
+
+The registry is not a substitute for the underlying documents. It is a navigation and lineage surface.
+
+Minimum registry fields:
+
+| Field | Meaning |
+|---|---|
+| Reference ID | Stable architectural identity |
+| Path | Canonical repository location |
+| Parent | Architectural parent |
+| Version | Evolution state |
+| Status | Current/historical/superseded/recovery |
+| Commit/Blob | Repository evidence |
+| Read-back | Evidence state |
+| Implementation | Separate runtime status |
+| Acceptance | Separate test status |
+| Supersedes | Prior reference |
+| Superseded by | Later reference |
+| Recovery | Recovery path |
+
+If the registry is absent or unavailable, the underlying documents remain authoritative; the absence of an index MUST NOT be treated as deletion of the architecture.
+
+## 22. Change Safety / Promotion Gate
+
+A proposed change MUST NOT jump directly from idea to current architecture.
+
+Preferred path:
+
+`IDEA / BUG / DISCOVERY`
+→ `CHILD`
+→ `RAHM VALIDATION`
+→ `PEH / EVIDENCE`
+→ `CHANGE PROPOSAL`
+→ `VERSIONED ARCHITECTURE`
+→ `READ-BACK / MATCH`
+→ `PROMOTE TO CURRENT`
+
+Emergency corrections may be applied directly only when evidence is sufficient; the change MUST still preserve lineage and document why the normal path was bypassed.
+
+## 23. Recovery Must Not Become a Fork
+
+A recovery package is a continuation point, not permission to create a parallel architecture silently.
+
+Before revival:
+
+`RECOVERED PACKAGE`
+→ `COMPARE LATEST KNOWN REVISION`
+→ `CHECK LINEAGE`
+→ `CHECK DEPENDENCIES`
+→ `RECONCILE CONFLICTS`
+→ `REVIVE / UPDATE`
+
+If the package is stale, it may be used as historical evidence but MUST NOT silently overwrite a newer current reference.
+
+## 24. PEH Second Pass — New Findings
+
+The additional Hammer pass focused specifically on the user's question: "Can this architecture grow without destroying its first path, and is it really integrated rather than merely reported?"
+
+Findings:
+
+1. **Growth gap identified:** the earlier contract protected recovery but did not explicitly define version evolution. CLOSED by Sections 19–23.
+2. **History preservation gap identified:** "supersede" needed an explicit non-destructive rule. CLOSED by the historical lineage and no-destructive-evolution contract.
+3. **Rollback gap identified:** a bad future version needs a documented rollback/revision path. CLOSED by the rollback/revival rule.
+4. **Integration proof gap identified:** repository placement alone could be confused with architecture integration. CLOSED by an explicit integration graph and registry contract.
+5. **Index absence is not loss:** the registry is useful but cannot become a single point of failure. CLOSED by the registry evidence boundary.
+6. **Silent fork risk identified:** recovery could accidentally create a parallel architecture. CLOSED by the no-fork recovery gate.
+7. **Promotion risk identified:** future ideas could bypass validation. CLOSED by Child → Rahm → PEH → versioned promotion.
+8. **Current-versus-history ambiguity identified:** CLOSED by explicit CURRENT / HISTORICAL / SUPERSEDED / RECOVERY states.
+9. **Runtime overclaim risk remains intentionally blocked:** repository integration still does not prove runtime implementation or Persistent Memory success.
+
+## 25. Current Version / Lineage State
+
+Current PCNDR lineage remains:
+
+- Reference ID: `PCNDR-ARCHITECTURE-2026-09-29-001`
+- Version state: `v1.1-hardening`
+- Original creation commit: `3e447f0c2c32e9331a1f8b2a2de569b4cf55d0a3`
+- Previous hardened blob: `8b3f8a4cd1cf2a670873c30539fd26ccf92b6ebe`
+- This revision: new repository commit and blob to be recorded by the write operation and then independently read back.
+- Historical versions: PRESERVED
+- Current status: ACTIVE/LIVING / EVOLVABLE
+- Persistent Memory: PENDING / NOT-PROVEN
+- Runtime implementation: NOT-PROVEN BY THIS DOCUMENT
+- Runtime acceptance: SEPARATE
+- Recovery: OPEN until the independent memory target is evidenced
+
+## 26. Final Hammer Verdict
+
+The architecture is **not a frozen final rule**.
+
+It is a **versioned living contract** with explicit evolution, supersession, rollback, history preservation, lineage, recovery, and promotion rules.
+
+The first version is not to be erased when the architecture grows.
+
+The correct future behavior is:
+
+`PRESERVE OLD`
+→ `CREATE/REVISE NEW`
+→ `EXPLICIT SUPERSESSION`
+→ `READ-BACK`
+→ `MATCH`
+→ `PROMOTE CURRENT`
+
+And critically:
+
+`REPOSITORY DOCUMENT` ≠ `RUNTIME IMPLEMENTATION` ≠ `PERSISTENT MEMORY VERIFICATION`
+
+The repository evidence for this document can prove that the architecture text was actually written and read back. It cannot, by itself, prove that a Persistent Memory backend executed the contract.
