@@ -45,3 +45,22 @@ FOUND ≠ RETRIEVED ≠ REVIVED ≠ REGISTERED ≠ VERIFIED ≠ ACTIVE
 WRITE → READ-BACK → MATCH → VERIFY → RECONCILE → STATUS
 
 تا قبل از عبور از این چرخه، REGISTERED / VERIFIED / ACTIVE IN LIBRARY ادعا نشود.
+
+## Cross-Layer Mirror Failure Recovery — Persistent Memory Gap
+A successful write to one persistence layer does not imply successful write to another. If Repository is successfully registered while Persistent Memory write fails, the artifact MUST NOT be treated as lost or fully mirrored.
+
+Required state model:
+REPOSITORY = REGISTERED/VERIFIED
+PERSISTENT MEMORY = PENDING/BLOCKED
+RECOVERY = OPEN
+
+Required recovery path:
+REPOSITORY WRITE → MEMORY WRITE → if MEMORY FAILS → PRESERVE STATE → RECORD BLOCKER → OPEN/PENDING → RECOVERY LEDGER / PORTABLE RECOVERY PACKAGE → RETRIEVE/EXCAVATE → IDENTIFY → VERSION/REVISION MATCH → MEMORY WRITE → READ-BACK → VERIFY → RECONCILE → ACTIVE/LIVING
+
+The recovery package MUST bind the exact reference Stable ID, version/revision, canonical payload representation, hash/digest when available, Repository path/commit or receipt, and the reason Persistent Memory was not written. This prevents an ambiguous or stale copy from being promoted during خاک‌برداری و زنده‌سازی.
+
+Cross-layer rule:
+ONE LAYER SUCCESS + ANOTHER LAYER FAILURE ≠ LOSS
+ONE LAYER SUCCESS + ANOTHER LAYER FAILURE = RECOVERABLE STATE
+
+Promotion to a fully mirrored ACTIVE/LIVING state is permitted only after READ-BACK + MATCH + VERIFY + RECONCILE across the affected layers. Persistent Memory is treated as a state/pointer/provenance layer, not as a substitute for the canonical artifact bytes.
