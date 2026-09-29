@@ -4,13 +4,13 @@ Future AI / Palang Footprint
 
 Stable ID: PATH-REFERENCE-RECONSTRUCTABLE-INTERACTION-CONTINUITY-2026-09-29-001
 Production ID: PATH-REFERENCE-RECONSTRUCTABLE-INTERACTION-CONTINUITY-2026-09-29-001
-Version: 1.0.1
+Version: 1.1.0
 Reference Date: 2026-09-29
 Reference Time: NOT CAPTURED AT WRITE
 Timezone: Asia/Tehran (+03:30)
 Owner: Ahmad Nezhadhosseini / احمد پلنگ
 Project: Future AI / Palang Footprint
-Status: ACTIVE / LIVING — ARCHITECTURE REGISTERED; TIME FIELD OPEN
+Status: ACTIVE / LIVING / GOVERNING — ARCHITECTURE REGISTERED; TIME FIELD OPEN
 Parent Architecture: MRV-ARCHITECTURE-AND-LIVING-REFERENCE-CONTRACT-2026-09-15-001
 Related Architecture: PCNDR-ARCHITECTURE-2026-09-29-001
 Related Anchor System: 0.0 Vault
@@ -377,3 +377,228 @@ KNOWN GOVERNED PATH
 → STATUS
 
 بنابراین اعلام نکردن نام پوشه توسط کاربر، به معنی مجهول بودن مقصد نیست؛ وقتی مقصد قبلاً در Governance ثبت شده باشد، همان مقصد مرجع باید به‌صورت خودکار استفاده شود.
+
+
+---
+
+## 16. قاعده اجرایی دائمیِ Capture و توقف امن
+
+این قاعده به‌عنوان ادامه و تقویت همین Reference ثبت می‌شود و Stable ID آن ایجاد نمی‌کند.
+
+### 16.1 شروع زنجیره
+
+وقتی کاربر می‌گوید:
+
+«این نقطه رو ۰.۰ در نظر بگیر.»
+
+سیستم باید همان نقطه را 0.0 Anchor زنجیره قرار دهد و در صورت وجود Timestamp اجرایی معتبر، تاریخ و ساعت دقیق را با Timezone `Asia/Tehran (+03:30)` ثبت کند.
+
+0.0 از همان لحظه مبنای زنجیره می‌شود:
+
+`0.0 → شروع تعامل → ثبت پیوسته مسیر`
+
+اگر Timestamp معتبر در دسترس نباشد، زمان نباید حدس زده شود.
+
+### 16.2 Capture پیوسته
+
+تا زمانی که تعامل ادامه دارد، مسیر باید از نظر معماری به‌صورت پیوسته قابل بازسازی نگه داشته شود و ثبت فقط به لحظه دستور «ثبت کن» موکول نشود.
+
+حداقل دامنه Capture شامل این موارد است:
+
+- مسئله، هدف و محدودیت‌ها
+- تصمیم‌ها و دلیل تصمیم
+- تغییر تصمیم‌ها
+- خطاها، بن‌بست‌ها و مسیرهای شکست‌خورده
+- کشف‌ها و GAPها
+- آزمون‌ها و Hammer / Validation
+- راه‌حل‌های ردشده و دلیل رد شدن
+- Artifactها و رابطه آن‌ها با مسیر
+- تغییرات معماری
+- ارتباط و Lineage بین موارد
+- وضعیت فعلی
+- Last Durable State
+
+قاعده:
+
+`INTERACTION → CONTINUOUS CAPTURE`
+
+نه:
+
+`INTERACTION → WAIT FOR "ثبت کن"`
+
+### 16.3 توقف موقت
+
+عبارت‌هایی مانند:
+
+- «فعلاً میرم، تا اینجا رو ثبت کن.»
+- «کار دارم، بعداً میام.»
+- «فعلاً متوقف کن.»
+
+به‌صورت پیش‌فرض «پایان» محسوب نمی‌شوند.
+
+حالت باید حفظ شود:
+
+`0.0 → INTERACTION PATH → LAST DURABLE STATE → INTERRUPTION`
+
+و وضعیت زنجیره:
+
+`OPEN / PENDING / INTERRUPTED`
+
+باشد، مگر اینکه کاربر صریحاً «پایان» را اعلام کند.
+
+در توقف موقت باید حداقل این موارد حفظ شوند:
+
+- 0.0
+- مسیر طی‌شده تا توقف
+- Last Durable State
+- موارد قطعی‌شده
+- موارد باز
+- موارد باقی‌مانده
+- Blocker در صورت وجود
+- Required Capability در صورت نیاز
+- Next Transition برای ادامه دقیق
+
+قاعده:
+
+`INCOMPLETE ≠ LOST`
+
+و:
+
+`0.0 ≠ LAST DURABLE STATE`
+
+### 16.4 بازگشت و ادامه
+
+با عباراتی مانند:
+
+«ادامه بده از آخرین وضعیت ۰.۰»
+
+یا:
+
+«ادامه همون تعامل قبلی از جایی که متوقف شدیم»
+
+سیستم نباید صرفاً از آخرین پیام ظاهری ادامه دهد.
+
+Resume Contract:
+
+`RETRIEVE → IDENTIFY 0.0 → READ-BACK → MATCH → VERIFY → RECONCILE → LOCATE LAST DURABLE STATE → RESUME`
+
+### 16.5 «ثبت کن» به‌عنوان ثبت رسمی
+
+«ثبت کن» یعنی Scope ثبت به‌صورت خودکار کامل در نظر گرفته شود؛ کاربر نباید مجبور باشد هر جزء را جداگانه نام ببرد.
+
+قاعده:
+
+`PRESERVE → CLASSIFY → CAPTURE PROVENANCE → CAPTURE FULL LINEAGE → DEFINE EVIDENCE OBLIGATIONS → WRITE → READ-BACK → MATCH → VERIFY → RECONCILE → REGISTER → STATUS`
+
+در سند مرجع مسیر، خلاصه‌سازی زمانی ممنوع است که باعث از دست رفتن قابلیت بازسازی شود.
+
+Reference of Path / Recovery Package باید مسیر واقعی را حفظ کند:
+
+`START → EVENTS → DECISIONS → ERRORS → DISCOVERIES → CHANGES → ARTIFACTS → ARCHITECTURE → CURRENT STATE → OPEN ITEMS`
+
+### 16.6 لایه‌های ثبت
+
+ثبت رسمی باید این لایه‌ها را از هم تفکیک کند:
+
+1. **Repository** — Artifact و Reference در مخزن اصلی.
+2. **Persistent Memory** — فقط در صورت وجود مسیر فنی قابل اثبات برای Write و Read-back؛ Repository Success به‌تنهایی اثبات Memory Success نیست.
+3. **Reference of Path** — سند مستقل، کامل و قابل‌بازیابی در پوشه Canonical Reference Documents.
+4. **Copyable Archive** — نسخه کامل و قابل کپی از همان Reference، نه خلاصه آن.
+
+### 16.7 ممنوعیت خلاصه‌سازی در سند مرجع
+
+قاعده دائمی:
+
+**خلاصه‌نویسی در سند مرجع ممنوع است اگر باعث حذف اطلاعات لازم برای بازسازی شود.**
+
+این قاعده برای همه این موارد اعمال می‌شود:
+
+- سند مرجع چندساعته
+- سند مرجع کامل‌شده
+- سند مرجع مسیر
+- سند مرجع معماری
+- Reference of Path
+- Recovery Package
+
+حتی تعداد توقف‌ها، کار داشتن کاربر، قطع یا توقف موقت، نقطه توقف، Last Durable State و مسیر ادامه، در صورتی که بخشی از مسیر واقعی باشند، باید حفظ شوند.
+
+هدف سند مرجع، «کوتاه بودن» نیست؛ هدف آن **قابلیت بازسازی کامل مسیر و منطق رسیدن به نتیجه** است.
+
+### 16.8 «ثبت کن» پایان Capture نیست
+
+`ثبت کن` پایان جمع‌آوری اطلاعات نیست؛ آغاز مرحله ثبت رسمی و اثبات آن است.
+
+بنابراین معماری:
+
+`CONTINUOUS CAPTURE → SAFE INTERRUPTION / CONTINUATION → FORMAL REGISTRATION → REFERENCE CREATION → PERSISTENCE PROOF`
+
+است.
+
+---
+
+## 17. قاعده «سند مرجع قابل کپی»
+
+هرگاه کاربر بگوید:
+
+«سند مرجع قابل کپی بده»
+
+سیستم باید **همان سند مرجع کامل** را ارائه کند؛ نه خلاصه، نه گزارش کوتاه، نه فهرست نکات.
+
+نسخه قابل کپی باید همان Reference of Path / Recovery Package باشد و تمام اطلاعات لازم برای بازسازی را در خود داشته باشد.
+
+هیچ بخشی صرفاً به دلیل طولانی بودن تعامل نباید حذف شود.
+
+این خروجی باید شامل، حسب وجود در مسیر، موارد زیر باشد:
+
+- Identity و Provenance
+- 0.0 Anchor
+- Timestamp و Timezone
+- Timeline کامل
+- تمام توقف‌ها و INTERRUPTIONها
+- Last Durable Stateهای مربوط
+- Decision Lineage
+- تغییر تصمیم‌ها
+- خطاها و بن‌بست‌ها
+- کشف‌ها و GAPها
+- Hammer / Validation
+- آزمون‌ها و نتایج
+- راه‌حل‌های ردشده و دلیل رد
+- Artifactها
+- تغییرات معماری
+- Placement و مسیرهای بازیابی
+- Lineage
+- Evidence و وضعیت اثبات
+- Open Obligations
+- Blocker / Required Capability / Next Transition
+- Current State
+- Resume Instructions
+- وضعیت ثبت و وضعیت معماری
+
+قاعده:
+
+`COPYABLE REFERENCE = FULL REFERENCE`
+
+نه:
+
+`COPYABLE REFERENCE = SUMMARY`
+
+### 17.1 خروجی آرشیوی
+
+وقتی کاربر برای آرشیو نسخه قابل کپی می‌خواهد، خروجی باید قابل کپی مستقیم باشد و متن آن با سند مرجع ثبت‌شده هم‌هویت و هم‌محتوا باشد؛ در صورت وجود تفاوت نسخه، باید همان Version جدید و وضعیت آن صریح باشد.
+
+---
+
+## 18. دامنه معماری
+
+این قاعده فقط یک ترجیح نوشتاری نیست.
+
+به‌عنوان بخشی از معماری تداوم تعامل، به این لایه‌ها متصل است:
+
+`0.0 Vault ↔ Interaction Path Reference ↔ Recovery Ledger / Portable Recovery Package ↔ MRV ↔ PCNDR ↔ HAIF`
+
+و هدف آن حفظ:
+
+`Continuity of Intelligence + Continuity of Work`
+
+است.
+
