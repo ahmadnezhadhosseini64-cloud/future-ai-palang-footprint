@@ -4,7 +4,7 @@ Future AI / Palang Footprint
 
 Stable ID: PATH-REFERENCE-RECONSTRUCTABLE-INTERACTION-CONTINUITY-2026-09-29-001
 Production ID: PATH-REFERENCE-RECONSTRUCTABLE-INTERACTION-CONTINUITY-2026-09-29-001
-Version: 1.0.0
+Version: 1.0.1
 Reference Date: 2026-09-29
 Reference Time: NOT CAPTURED AT WRITE
 Timezone: Asia/Tehran (+03:30)
@@ -343,3 +343,37 @@ Time دقیق در لحظه این Write از داده اجرایی قابل ا�
 → FINALIZE WHEN EVIDENCE CLOSES
 
 و هیچ نقطه‌ای صرفاً به دلیل توقف تعامل «گم‌شده» تلقی نمی‌شود.
+
+
+---
+
+## 15. خودتشخیصی مسیر سند مرجع
+
+در این تعامل یک قاعده اجرایی صریح تثبیت شد:
+
+وقتی کاربر می‌گوید «همین را سند مرجع کن و در مخزن در پوشه کپی کن»، لازم نیست مسیر پوشه را دوباره اعلام کند.
+
+سیستم باید از معماری و قراردادهای موجود، مقصد Canonical Reference Documents را تشخیص دهد و از کاربر برای مسیری که از قبل در Governance تعریف شده سؤال تکراری نپرسد.
+
+مقصد مرجع فعلی:
+
+`/Future AI/Palang Footprint/Master Reference Vault/Reference Documents/`
+
+مقصد Canonical Repository:
+
+`docs/reference/`
+
+این تشخیص مسیر بخشی از رفتار «ثبت کن» و «سند مرجع کن» است و نباید باعث ایجاد مسیر موازی، پوشه تکراری یا Production ID جدید برای همان Artifact شود.
+
+قاعده:
+
+KNOWN GOVERNED PATH
+→ AUTO-RESOLVE
+→ WRITE
+→ READ-BACK
+→ MATCH
+→ VERIFY
+→ RECONCILE
+→ STATUS
+
+بنابراین اعلام نکردن نام پوشه توسط کاربر، به معنی مجهول بودن مقصد نیست؛ وقتی مقصد قبلاً در Governance ثبت شده باشد، همان مقصد مرجع باید به‌صورت خودکار استفاده شود.
