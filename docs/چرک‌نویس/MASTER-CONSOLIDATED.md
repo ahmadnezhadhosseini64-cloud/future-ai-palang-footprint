@@ -1410,7 +1410,7 @@ PCNDR-ARCHITECTURE-2026-09-29-001
 
 این سند در این مرحله:
 
-"CONSOLIDATED MASTER REFERENCE — DRAFTED"
+"CONSOLIDATED MASTER REFERENCE — LIVING / EVOLVING"
 
 است.
 
@@ -1450,3 +1450,115 @@ PMA
 → HAIF
 
 این زنجیره، وضعیت فعلی معماری Future AI / Palang Footprint را تشکیل می‌دهد.
+
+---
+
+52. معماری مسیر قابل‌بازیابی و تداوم تعامل
+
+برای حل مسئله‌ای که در تعامل‌های چندساعته ممکن است کاربر در میانه مسیر متوقف شود، «سند مرجع مسیر» به‌عنوان یک لایه معماری مستقل اضافه شد.
+
+Stable ID:
+
+"PATH-REFERENCE-RECONSTRUCTABLE-INTERACTION-CONTINUITY-2026-09-29-001"
+
+این لایه یک Summary نیست؛ بلکه یک Reconstructable Reference Package است.
+
+هدف:
+
+Reconstructable History
++
+Evidence
++
+Decisions
++
+Errors / Dead Ends
++
+Discoveries
++
+Artifacts
++
+Architecture Evolution
++
+Lineage
++
+Current State
++
+Recovery Context
+
+اصل کلیدی:
+
+اگر حذف یک جزئیات باعث شود در آینده نتوانیم منطق رسیدن به یک معماری، قانون، کشف یا تصمیم را دوباره بفهمیم، آن جزئیات نباید از سند مرجع مسیر حذف شود.
+
+قاعده 0.0:
+
+0.0 = Anchor / نقطه لنگر آغاز زنجیره
+
+0.0 لزوماً آخرین وضعیت نیست و هرگز جایگزین یا حذف نمی‌شود.
+
+مسیر:
+
+0.0 ANCHOR
+→ LIVE INTERACTION
+→ CONTINUOUS CAPTURE
+→ LAST DURABLE STATE
+→ INTERRUPTION / CONTINUE
+
+در توقف:
+
+INCOMPLETE ≠ LOST
+INTERRUPTED ≠ FAILED
+OPEN ≠ BURIED
+PENDING ≠ COMPLETED
+
+و باید این چهار جزء حفظ شوند:
+
+BLOCKER
++
+LAST DURABLE STATE
++
+REQUIRED CAPABILITY
++
+NEXT TRANSITION
+
+Resume:
+
+RETRIEVE
+→ IDENTIFY 0.0
+→ READ-BACK
+→ MATCH
+→ VERIFY
+→ RECONCILE
+→ LOCATE LAST DURABLE STATE
+→ RESUME
+
+این Contract به‌صورت مستقیم با:
+
+0.0 Vault
+↕
+Interaction Path Reference
+↕
+Recovery Ledger / Portable Recovery Package
+↕
+MRV
+↕
+PCNDR
+↕
+HAIF
+
+مرتبط است.
+
+این لایه باعث می‌شود «ثبت کن» برای یک مسیر چندساعته فقط به ثبت نتیجه نهایی محدود نشود و مسیر، خطاها، کشف‌ها، تصمیم‌ها، Artifactها، تغییرات معماری و وضعیت نیمه‌تمام نیز قابل بازیابی باقی بمانند.
+
+اصل نهایی این لایه:
+
+PRESERVE
+→ CAPTURE
+→ DURABLE STATE
+→ INTERRUPT SAFELY
+→ RECOVER
+→ RESUME
+→ FINALIZE WHEN EVIDENCE CLOSES
+
+Reference مستقل این معماری:
+
+docs/reference/PATH-REFERENCE-RECONSTRUCTABLE-INTERACTION-CONTINUITY-2026-09-29-001.md
