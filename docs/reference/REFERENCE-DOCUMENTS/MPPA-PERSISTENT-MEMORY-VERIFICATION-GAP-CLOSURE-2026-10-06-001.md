@@ -151,4 +151,17 @@ PRESERVE → IDENTIFY → VERIFY → RECONCILE → REGISTER → PROMOTE
 WRITE → READ-BACK → MATCH → VERIFY → RECONCILE → STATUS  
 IMMUTABLE REVISION + EVOLVING MASTER POINTER
 
+## 16. Registration Event — «ثبت کن» — 2026-10-06
+
+Command: **«ثبت کن»**
+
+Execution: **WRITE → READ-BACK → MATCH → VERIFY → RECONCILE → STATUS**
+
+Registration result:
+- Canonical Repository: **REGISTERED / READ-BACK VERIFIED**
+- Persistent Memory provider: **NOT-VERIFIED / CAPABILITY-GAP** (no provider-level independent WRITE/READ-BACK surface is exposed to the runtime)
+- Stable ID preserved: **MPPA-PMVG-2026-10-06-001**
+- Production ID preserved: **MPPA-PMVG-2026-10-06-001**
+- No duplicate record created.
+
 End of Reference.
