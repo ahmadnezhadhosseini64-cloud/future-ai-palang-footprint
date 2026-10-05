@@ -10,40 +10,32 @@
 **Type:** Living Reference / Verification-Gap Closure Architecture  
 **Status:** ACTIVE / LIVING / REGISTERED  
 **Parent:** MPPA-2026-09-29-002  
-**Related:** PMA-2026-09-01-001 / PCNDR-ARCHITECTURE-2026-09-29-001
+**Related:** PMA-2026-09-01-001 / PCNDR-ARCHITECTURE-2026-09-29-001  
+**Command:** «ثبت کن»  
+**Execution State:** REGISTERED → READ-BACK → MATCH → VERIFY → RECONCILE → ACTIVE/LIVING
 
-## 1. Problem
+## 1. Purpose
+This reference formally closes the architectural ambiguity around the Persistent Memory Verification Gap. It defines the exact evidence chain required before Persistent Memory may be called VERIFIED.
 
-The unresolved boundary is provider-level Persistent Memory verification.
-
-A repository write/read-back can prove repository persistence, but cannot by itself prove that the same artifact was independently written to and later retrieved from the separate Persistent Memory provider.
-
-Therefore:
-
-REPOSITORY VERIFIED ≠ MEMORY VERIFIED
-
-and:
-
+## 2. Core Boundary
+REPOSITORY VERIFIED ≠ MEMORY VERIFIED  
 WRITE ACCEPTED ≠ PERSISTENCE PROOF
 
-## 2. Closure Target
+Repository registration/read-back proves the repository surface only. It does not independently prove provider-level Persistent Memory persistence.
 
-The gap is considered CLOSED only when the system can produce independent evidence for:
-
+## 3. Closure Target
 MEMORY WRITE → PROVIDER RECEIPT → INDEPENDENT READ-BACK → ID MATCH → REVISION MATCH → FULL PAYLOAD MATCH → CANONICAL HASH/LENGTH MATCH → INDEPENDENT VERIFY → RECONCILE → STATUS
 
-The final status may be MEMORY VERIFIED only after all required gates pass.
+Only after all required gates pass may the final status become **MEMORY VERIFIED**.
 
-## 3. Required Capability
-
-A valid implementation must expose or otherwise provide independently observable evidence for:
-
-1. Memory Write operation.
+## 4. Required Capability
+The implementation must provide independently observable evidence for:
+1. Memory Write.
 2. Stable Memory Record/Object ID.
-3. Provider operation/receipt/commit identifier, when supported.
-4. Revision/version identifier, when supported.
-5. Separate Memory Read operation.
-6. Read by stable ID and, where supported, by revision.
+3. Provider receipt/commit identifier when supported.
+4. Revision/version when supported.
+5. Separate Memory Read.
+6. Read by stable ID and revision where supported.
 7. Full payload retrieval.
 8. Canonical serialization with pinned schema/version/encoding/order/normalization.
 9. Versioned hash algorithm and digest.
@@ -53,209 +45,76 @@ A valid implementation must expose or otherwise provide independently observable
 13. Audit/retrieval evidence.
 14. Conflict/reconciliation evidence.
 
-If a required capability is unavailable, the result is CAPABILITY-GAP, not VERIFIED.
+Missing capability = **CAPABILITY-GAP**, never VERIFIED.
 
-## 4. Independent Read-back Rule
-
-A read is independent only when its result is obtained from the Persistent Memory surface itself and is not reconstructed from:
-
-- the Write response;
-- the submitted local payload;
-- conversation context;
-- cached acknowledgement;
-- a previously held copy;
-- repository content.
-
-The read must have its own retrieval event/evidence.
-
-## 5. Challenge Record
-
-For each verification attempt, create a uniquely identified challenge:
-
-**Challenge ID:** unique and immutable  
-**Production ID:** bound to the same verification attempt  
-**Stable Memory ID:** provider record identifier  
-**Schema Version:** pinned  
-**Canonical Serialization Version:** pinned  
-**Hash Algorithm/Version:** pinned  
-**Expected Payload Length:** recorded  
-**Expected Canonical Hash:** recorded  
-**Expected Revision:** recorded when supported
-
-The challenge is created before the independent read-back.
+## 5. Independent Read-back
+A Read-back is independent only if it comes from the Persistent Memory surface itself and is not reconstructed from the Write response, local input, conversation context, cached acknowledgement, previously held copy, or repository content. The read must have its own retrieval evidence.
 
 ## 6. Verification Procedure
+### Prepare
+PAYLOAD → SCHEMA PIN → CANONICAL SERIALIZATION → BYTES → LENGTH → HASH
 
-### Phase A — Prepare
+### Write
+WRITE TO MEMORY → PROVIDER RECEIPT/COMMIT → OBJECT ID → REVISION
 
-PAYLOAD
-→ SCHEMA PIN
-→ CANONICAL SERIALIZATION
-→ BYTES
-→ LENGTH
-→ HASH
+### Independent Retrieval
+NEW READ OPERATION → MEMORY SURFACE → OBJECT ID → REVISION → FULL PAYLOAD
 
-### Phase B — Write
+### Integrity
+ID MATCH + REVISION MATCH + SCHEMA MATCH + SERIALIZATION MATCH + LENGTH MATCH + HASH MATCH + FULL PAYLOAD + NO TOMBSTONE + NO CONFLICT
 
-WRITE TO MEMORY
-→ CAPTURE PROVIDER RECEIPT/COMMIT
-→ CAPTURE OBJECT ID
-→ CAPTURE REVISION
+### Verification and Reconciliation
+INDEPENDENT VERIFY → MEMORY EVIDENCE ↔ REPOSITORY CANONICAL RECORD ↔ PRODUCTION REGISTRY
 
-### Phase C — Independent Retrieval
+Mismatch remains OPEN/CONFLICT.
 
-NEW READ OPERATION
-→ PROVIDER MEMORY SURFACE
-→ OBJECT ID
-→ REVISION PIN
-→ FULL PAYLOAD
-
-### Phase D — Integrity Check
-
-READ-BACK
-→ SAME CANONICAL SERIALIZATION
-→ LENGTH
-→ HASH
-→ COMPARE
-
-Required:
-
-ID MATCH  
-REVISION MATCH  
-SCHEMA MATCH  
-SERIALIZATION MATCH  
-LENGTH MATCH  
-HASH MATCH  
-FULL PAYLOAD  
-NO TOMBSTONE  
-NO CONFLICT
-
-### Phase E — Independent Verification
-
-A verifier must evaluate the collected evidence without treating the original Write acknowledgement as proof of the Read result.
-
-### Phase F — Reconciliation
-
-MEMORY EVIDENCE ↔ REPOSITORY CANONICAL RECORD ↔ PRODUCTION REGISTRY
-
-Any mismatch remains OPEN/CONFLICT and cannot be silently closed.
-
-## 7. TOCTOU Protection
-
-Verification is revision-bound.
-
-If a mutation occurs after the Write:
-
-VERIFIED(V1)
-
-does not imply:
-
-VERIFIED(V2)
-
-Any mutation invalidates the previous content verification for the changed object and requires a new verification cycle.
+## 7. Revision and Mutation Protection
+Verification is revision-bound. VERIFIED(V1) does not imply VERIFIED(V2). Any mutation invalidates the previous content verification and requires re-verification.
 
 ## 8. Failure States
+WRITE-FAILED; RECEIPT-MISSING; READ-BACK-UNAVAILABLE; INDEPENDENCE-PENDING; ID-MISMATCH; REVISION-MISMATCH; SCHEMA-MISMATCH; SERIALIZATION-MISMATCH; LENGTH-MISMATCH; HASH-MISMATCH; PARTIAL-READ; TOMBSTONED; PROVIDER-UNAVAILABLE; CAPABILITY-GAP; CONFLICT; NOT-VERIFIED; RECOVERY-PENDING.
 
-- WRITE-FAILED
-- RECEIPT-MISSING
-- READ-BACK-UNAVAILABLE
-- INDEPENDENCE-PENDING
-- ID-MISMATCH
-- REVISION-MISMATCH
-- SCHEMA-MISMATCH
-- SERIALIZATION-MISMATCH
-- LENGTH-MISMATCH
-- HASH-MISMATCH
-- PARTIAL-READ
-- TOMBSTONED
-- PROVIDER-UNAVAILABLE
-- CAPABILITY-GAP
-- CONFLICT
-- NOT-VERIFIED
-- RECOVERY-PENDING
+None may be silently promoted to VERIFIED.
 
-None of these may be promoted silently to VERIFIED.
+## 9. Current Boundary and Honest Status
+The currently available project tooling provides Canonical Repository write/read-back, but does not expose an independent provider-level Persistent Memory API/receipt/read-back surface to the project runtime.
 
-## 9. Current Environment Boundary
+Therefore:
+- **Architecture:** IMPLEMENTATION-READY
+- **Repository:** REGISTERED / READ-BACK VERIFIED
+- **Memory Independence:** PENDING / NOT CONFIRMED
+- **Memory Implementation Capability:** CAPABILITY-GAP
+- **Memory Acceptance:** TEST-PENDING
+- **Overall Persistent Memory:** NOT-VERIFIED / PENDING
 
-At the time of this registration, the available project tooling can write/read-back the Canonical Repository, but does not expose an independent provider-level Persistent Memory API/receipt/read-back surface to the project runtime.
+This is an explicit evidence boundary, not an architectural failure.
 
-Therefore the architecture is IMPLEMENTATION-READY but the provider-level Memory Verification Gate remains:
+## 10. Required Change to Close the Gap
+At least one independently observable capability must become available:
+A. Native provider API/connector for Memory WRITE + separate Memory READ with provider evidence; or
+B. An implementation layer exposing those operations with verifiable provider-side IDs/revisions; or
+C. An explicitly designated independent persistence surface acting as the Persistent Memory provider.
 
-**MEMORY VERIFICATION = PENDING / CAPABILITY-GAP**
-
-This is an explicit boundary, not a failure of the architecture.
-
-## 10. What Must Change to Close the Gap
-
-One of the following must become available and independently observable:
-
-A. A native provider API/connector that can perform Memory WRITE and separate Memory READ with provider evidence;
-
-or
-
-B. An implementation layer that exposes the same operations and returns verifiable provider-side identifiers/revisions;
-
-or
-
-C. Another independently controlled persistence surface that is explicitly designated as the Persistent Memory provider for this architecture.
-
-Once such a capability exists, run the exact verification procedure in this document. Do not create a new Production ID for a retry of the same attempt; preserve lineage and update the existing attempt or create a clearly linked verification attempt.
+Once available, execute this exact proof chain. Preserve lineage and do not regenerate the canonical Production ID for the same recovery attempt.
 
 ## 11. No-Loss Recovery
+PRESERVE STATE → RECORD BLOCKER → KEEP SAME CANONICAL IDENTITY → KEEP REPOSITORY EVIDENCE → KEEP MEMORY STATUS PENDING → RETRY WHEN CAPABILITY EXISTS → INDEPENDENT READ-BACK → MATCH → VERIFY → RECONCILE → CLOSE
 
-Until the provider gate is closed:
-
-PRESERVE STATE
-→ RECORD BLOCKER
-→ KEEP SAME CANONICAL IDENTITY
-→ KEEP REPOSITORY EVIDENCE
-→ KEEP MEMORY STATUS PENDING
-→ RETRY WHEN CAPABILITY EXISTS
-→ INDEPENDENT READ-BACK
-→ MATCH
-→ VERIFY
-→ RECONCILE
-→ CLOSE
-
-PENDING ≠ LOST
-
-PENDING ≠ FAILED
-
+PENDING ≠ LOST  
+PENDING ≠ FAILED  
 PENDING ≠ VERIFIED
 
-## 12. Three-Axis Status
-
-**Independence:** PENDING / NOT CONFIRMED
-
-**Implementation Capability:** CAPABILITY-GAP for provider-level independent Memory Read-back
-
-**Acceptance:** TEST-PENDING for provider-level Memory verification
-
-**Repository:** REGISTERED / READ-BACK VERIFIED
-
-**Overall Persistent Memory:** NOT-VERIFIED / PENDING
-
-## 13. Non-Negotiable Rules
-
-NO INDEPENDENT READ → NO MEMORY VERIFIED
-
-NO PROVIDER EVIDENCE → NO PROVIDER CLAIM
-
-NO REVISION BINDING → NO REVISION-SAFE VERIFICATION
-
-NO CANONICAL REPRESENTATION → NO BYTE-LEVEL MATCH CLAIM
-
-NO FULL PAYLOAD → NO FULL-CONTENT VERIFICATION
-
-NO ACCEPTANCE TEST → NO TESTED CLAIM
-
+## 12. Non-Negotiable Rules
+NO INDEPENDENT READ → NO MEMORY VERIFIED  
+NO PROVIDER EVIDENCE → NO PROVIDER CLAIM  
+NO REVISION BINDING → NO REVISION-SAFE VERIFICATION  
+NO CANONICAL REPRESENTATION → NO BYTE-LEVEL MATCH CLAIM  
+NO FULL PAYLOAD → NO FULL-CONTENT VERIFICATION  
+NO ACCEPTANCE TEST → NO TESTED CLAIM  
 NO EVIDENCE → NO STRONG CLAIM
 
-## 14. Closure Criterion
-
-The original problem is solved only when a future verification record can show:
-
+## 13. Closure Criterion
+The gap is CLOSED only when a verification record proves:
 1. provider-level Memory Write evidence;
 2. independent provider-level Memory Read evidence;
 3. stable ID match;
@@ -269,20 +128,10 @@ The original problem is solved only when a future verification record can show:
 11. repository reconciliation;
 12. final status MEMORY VERIFIED.
 
-Until then, the correct status remains PENDING rather than falsely VERIFIED.
+Until then, status remains PENDING.
 
-## 15. Continuation Pointer
-
-Resume from:
-
-**MPPA-PMVG-2026-10-06-001**
-
-and inherit:
-
-**MPPA-2026-09-29-002**
-
-with the project-wide rules:
-
+## 14. Continuation Pointer
+Resume from **MPPA-PMVG-2026-10-06-001**, inheriting **MPPA-2026-09-29-002** and the governing rules:
 NO CLAIM WITHOUT EVIDENCE  
 PRESERVE → IDENTIFY → VERIFY → RECONCILE → REGISTER → PROMOTE  
 WRITE → READ-BACK → MATCH → VERIFY → RECONCILE → STATUS  
