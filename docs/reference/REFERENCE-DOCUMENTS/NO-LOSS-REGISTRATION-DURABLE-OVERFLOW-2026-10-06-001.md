@@ -177,3 +177,23 @@ If a primary destination is later available after a limitation, the complete art
 Library Buffer preservation is independently evidenced by the persistent artifact and Buffer index. It does not by itself prove provider-level Persistent Memory verification.
 
 **STATUS: ACTIVE / LIVING / COMPLETE REFERENCE ARTIFACT / BUFFER-PRESERVED**
+
+
+## 15. Architectural Successor — Three-Surface Simultaneous Registration — 2026-10-06
+
+This document remains preserved as the parent No-Loss / Durable Overflow architecture.
+
+Its successor for the operating registration model is:
+
+**Stable ID:** THREE-LAYER-REGISTRATION-ARCHITECTURE-2026-10-06-001  
+**Production ID:** 3LR-REG-2026-10-06-001
+
+The successor changes the Buffer role from primarily overflow/fallback to a **simultaneous third registration surface** alongside Canonical Repository and Persistent Memory.
+
+The governing model is now:
+
+**ONE PRODUCTION ID → REPOSITORY + PERSISTENT MEMORY + BUFFER**
+
+The parent document remains valid for No-Loss and recovery governance. The successor governs the new three-surface registration behavior.
+
+**NO REPLACEMENT / NO LOSS / SAME LINEAGE.**
