@@ -138,3 +138,18 @@ The Buffer must never be treated as proof that Repository or Persistent Memory r
 ### Current Buffer State
 
 The Buffer has been initialized and is currently **EMPTY**. No historical discovery is being falsely claimed as buffered by initialization.
+
+
+## 13. Registration Event — «ثبت و زنده کن» — 2026-10-06
+
+The current command explicitly reaffirms this document as a **LIVING / ACTIVE** architectural control.
+
+### Gate result
+- **Canonical Repository:** registration surface is active; this document remains the canonical reference artifact.
+- **Durable Registration Buffer:** ACTIVE / LIVING / OPERATIONAL; persistent Library control/index confirmed.
+- **Persistent Memory:** NOT-VERIFIED / CAPABILITY-GAP; no provider-level independent WRITE + READ-BACK evidence is exposed in the current runtime.
+
+### No-Loss effect
+This event does not create a duplicate identity and does not replace the existing Stable ID / Production ID. It extends the same living lineage and keeps the complete payload recoverable.
+
+**READ-BACK → MATCH → VERIFY → RECONCILE → ACTIVE / LIVING**
