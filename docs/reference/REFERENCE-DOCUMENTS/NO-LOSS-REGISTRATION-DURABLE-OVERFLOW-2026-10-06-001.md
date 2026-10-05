@@ -153,3 +153,27 @@ The current command explicitly reaffirms this document as a **LIVING / ACTIVE** 
 This event does not create a duplicate identity and does not replace the existing Stable ID / Production ID. It extends the same living lineage and keeps the complete payload recoverable.
 
 **READ-BACK → MATCH → VERIFY → RECONCILE → ACTIVE / LIVING**
+
+## 14. Complete Reference Artifact Registration — 2026-10-06
+
+A complete Reference Document artifact for **NLRDOA-2026-10-06-001** is now preserved in the Durable Registration Buffer under the dedicated folder named **«سند مرجع»**.
+
+**Reference folder:** `/Future AI/Palang Footprint/Registration Buffer/سند مرجع/`  
+**Reference artifact:** `NLRDOA-2026-10-06-001.md`  
+**Artifact state:** ACTIVE / LIVING / COMPLETE REFERENCE ARTIFACT / BUFFER-PRESERVED
+
+This is explicitly a **سند مرجع کامل** and not a «سند ردپا». The full architecture body, governing rules, lineage, recovery chain, destination-state boundaries, and registration controls are preserved in the artifact.
+
+The same canonical Stable ID and Production ID are retained. The reference artifact is a preservation/registration copy of the same architecture, not a new identity and not a replacement.
+
+### Recovery use
+
+If a primary destination is later available after a limitation, the complete artifact can be excavated from the persistent Buffer and used for:
+
+**EXCAVATE → IDENTIFY → VALIDATE → DEDUPLICATE → REGISTER → READ-BACK → MATCH → VERIFY → RECONCILE → PROMOTE/CLOSE**
+
+### Evidence boundary
+
+Library Buffer preservation is independently evidenced by the persistent artifact and Buffer index. It does not by itself prove provider-level Persistent Memory verification.
+
+**STATUS: ACTIVE / LIVING / COMPLETE REFERENCE ARTIFACT / BUFFER-PRESERVED**
