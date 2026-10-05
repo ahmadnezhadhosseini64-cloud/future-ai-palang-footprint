@@ -165,3 +165,142 @@ Registration result:
 - No duplicate record created.
 
 End of Reference.
+
+## 17. No-Loss Registration Under Destination Limits — 2026-10-06
+
+### 17.1 Problem Being Solved
+
+The command «ثبت کن» must never stop the preservation of a discovery, generated knowledge, interaction path, or reference-document payload merely because one registration destination is temporarily unavailable or limited.
+
+A destination limitation is a **storage/registration blocker**, not a reason to lose the work.
+
+Therefore:
+
+**DESTINATION LIMIT ≠ REGISTRATION STOP ≠ DATA LOSS**
+
+### 17.2 Dual-Destination + Durable Overflow Architecture
+
+Every governed registration attempt has two primary persistence surfaces:
+
+1. **Canonical Repository** — مرجع اصلی قابل‌اثبات پروژه.
+2. **Persistent Memory** — حافظه پایدار برای continuity/context.
+
+A third layer is mandatory whenever either primary surface cannot accept the complete payload:
+
+3. **Durable Registration Buffer / Overflow Vault** — صندوق پایدار ضدّفقدان.
+
+The buffer is not a substitute for the two primary destinations. It is a durable holding state that preserves the exact registration payload and its identity until the blocked destination becomes writable again.
+
+### 17.3 Required Registration Path
+
+**CAPTURE → IDENTIFY → CLASSIFY → PRESERVE → ATTEMPT REPOSITORY + MEMORY → RECORD EACH DESTINATION STATE → IF BLOCKED, COMMIT COMPLETE PAYLOAD TO DURABLE BUFFER → CONTINUE INTERACTION → EXCAVATE/RETRY → REGISTER BLOCKED DESTINATION → READ-BACK → MATCH → VERIFY → RECONCILE → PROMOTE/CLOSE**
+
+The interaction must continue after a destination blocker.
+
+### 17.4 Destination State Is Independent
+
+For the same canonical Production ID, maintain independent states:
+
+- Repository State
+- Persistent Memory State
+- Buffer State
+- Overall Registration State
+
+Examples:
+
+**Repository = VERIFIED / Memory = BLOCKED / Buffer = PRESERVED**
+
+**Repository = BLOCKED / Memory = VERIFIED / Buffer = PRESERVED**
+
+**Repository = BLOCKED / Memory = BLOCKED / Buffer = PRESERVED**
+
+No state may silently imply another destination's success.
+
+### 17.5 What the Buffer Must Preserve
+
+The buffer record must contain the complete recoverable registration package, not merely a breadcrumb:
+
+- Stable ID
+- Production ID
+- Version
+- Date/time/timezone when captured
+- Owner/project/origin
+- Full interaction-derived discovery or generated payload
+- Complete reference-document body when the registration target is a Reference Document
+- Lineage and parent/master/0.0 relations
+- Evidence and provenance
+- Destination-specific registration states
+- Exact blocker/capability-gap
+- Required next action
+- Registration attempt history
+- Integrity metadata when available (canonical serialization/schema/hash/length)
+- Recovery pointer
+- No-loss status
+
+A **trace-only record is insufficient** when the original material is recoverable.
+
+### 17.6 Reference Document Requirement
+
+When «ثبت کن» produces or updates a Reference Document, the complete document belongs in the designated **Reference Documents** path, not only as a trace or registration event.
+
+The durable buffer must likewise preserve the complete document payload if the Reference Documents destination is unavailable.
+
+Recovery must reconstruct the same document identity and lineage rather than regenerate an unrelated replacement.
+
+### 17.7 Archaeology / Excavation Recovery
+
+When a blocked destination becomes available:
+
+**EXCAVATE → IDENTIFY → VALIDATE → DEDUPLICATE → RECONSTRUCT/RECOVER COMPLETE PAYLOAD → CHECK CURRENT MASTER/PARENT → REGISTER TO BLOCKED DESTINATION → READ-BACK → MATCH → VERIFY → RECONCILE → UPDATE BUFFER STATE → PROMOTE/CLOSE**
+
+The buffer record remains preserved until the destination-specific verification gate passes.
+
+### 17.8 No-Loss Invariants
+
+1. No discovery is discarded because of destination limits.
+2. No interaction-derived knowledge is reduced to a breadcrumb when full payload can be preserved.
+3. No Stable/Production ID is regenerated merely because a destination was unavailable.
+4. Repository success does not erase the Memory blocker.
+5. Memory success does not erase the Repository blocker.
+6. A buffer record is not marked resolved before destination verification.
+7. A blocked destination remains explicitly BLOCKED/PENDING/CAPABILITY-GAP, not falsely VERIFIED.
+8. Recovery inherits the original lineage and version history.
+9. Reference Documents remain complete artifacts, not merely pointers.
+10. «ثبت کن» remains executable even when one or more destinations are temporarily unavailable.
+
+### 17.9 Architectural Interpretation
+
+This changes the meaning of «ثبت کن» from a single write operation into a **governed multi-surface registration transaction with durable overflow**.
+
+The transaction is allowed to be **PARTIAL / BUFFERED / PENDING** without becoming LOST or FAILED.
+
+The success condition is therefore destination-aware:
+
+**REGISTERED + VERIFIED per available destination, PRESERVED in BUFFER for unavailable destinations.**
+
+### 17.10 Current Runtime Boundary
+
+The architecture now defines the required no-loss fallback completely.
+
+Current runtime still lacks a provider-level Persistent Memory WRITE + independent READ surface. Therefore the Memory destination remains subject to the existing capability boundary. The new buffer architecture prevents that boundary from becoming data loss, but it does not falsely claim that the provider-level Memory write occurred.
+
+The Repository remains the currently executable verified persistence surface. The Durable Buffer must be implemented as an actual persistent storage surface; an in-memory/local temporary copy alone does not satisfy this architecture.
+
+## 18. Registration Event — «ثبت کن و زنده» — 2026-10-06
+
+Command: **«ثبت کن و زنده»**
+
+Interpretation: Register and keep this architecture ACTIVE/LIVING while preserving the full lineage and no-loss continuation path.
+
+Applied architectural update:
+- No-Loss Destination Limitation handling: **DEFINED / GOVERNED**
+- Durable Overflow / Registration Buffer: **REQUIRED**
+- Complete Reference Document preservation during blockage: **REQUIRED**
+- Excavation-based deferred completion: **REQUIRED**
+- Repository: **REGISTERED / READ-BACK VERIFIED**
+- Persistent Memory provider: **NOT-VERIFIED / CAPABILITY-GAP**
+- Canonical Stable ID preserved: **MPPA-PMVG-2026-10-06-001**
+- Canonical Production ID preserved: **MPPA-PMVG-2026-10-06-001**
+- No replacement identity created.
+
+**Important implementation boundary:** this registration records the architecture and its requirement; it does not claim that an actual provider-level Persistent Memory write or an actual external durable buffer write has occurred unless independently evidenced.
