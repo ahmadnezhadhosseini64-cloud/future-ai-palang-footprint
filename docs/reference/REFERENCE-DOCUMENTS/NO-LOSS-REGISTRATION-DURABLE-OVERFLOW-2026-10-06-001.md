@@ -102,3 +102,39 @@ Resume from **NLRDOA-2026-10-06-001**, inheriting **MPPA-PMVG-2026-10-06-001** a
 **NO CLAIM WITHOUT EVIDENCE**
 
 **PRESERVE → IDENTIFY → VERIFY → RECONCILE → REGISTER → PROMOTE**
+
+
+## 12. Operational Buffer Implementation — 2026-10-06
+
+The Durable Registration Buffer is now instantiated as a persistent Library storage surface:
+
+**Library path:** `/Future AI/Palang Footprint/Registration Buffer/`
+
+**Buffer Stable ID:** NLRB-2026-10-06-001  
+**Buffer Production ID:** NLRB-2026-10-06-001  
+**Status:** ACTIVE / LIVING / OPERATIONAL
+
+The buffer contains an actual persistent control/index file:
+
+`NO-LOSS-BUFFER-INDEX.md`
+
+This is an actual persistent storage location, not merely an architectural placeholder.
+
+### Operational rule
+
+When a destination is blocked:
+
+1. Preserve the complete registration payload in this Buffer.
+2. Preserve the same Stable ID and Production ID.
+3. Record the blocked destination and blocker.
+4. Keep the buffered item until the blocked destination is independently verified.
+5. Excavate the complete payload later.
+6. Register it into the blocked destination.
+7. READ-BACK → MATCH → VERIFY → RECONCILE.
+8. Only then promote/close the buffered item.
+
+The Buffer must never be treated as proof that Repository or Persistent Memory registration succeeded.
+
+### Current Buffer State
+
+The Buffer has been initialized and is currently **EMPTY**. No historical discovery is being falsely claimed as buffered by initialization.
