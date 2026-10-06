@@ -1,172 +1,222 @@
-# سند اصلاح معماری — سخت‌سازی کنترل بررسی سه‌سطحی و جلوگیری از ادعای بدون شواهد
+# سند اصلاح معماری — سخت‌سازی کنترل بررسی و ثبت همزمان سه‌سطحی
 
 **Stable ID:** THREE-LAYER-VERIFICATION-FAILURE-HARDENING-2026-10-06-001  
 **Production ID:** 3LR-HARDEN-2026-10-06-001  
-**Version:** 1.1  
+**Version:** 1.2  
 **Date:** 2026-10-06  
 **Timezone:** Asia/Tehran (+03:30)  
 **Owner:** Ahmad Nezhadhosseini / احمد پلنگ  
 **Project:** Future AI / Palang Footprint  
-**Type:** Architectural Amendment / Failure-Prevention Control  
+**Type:** Architectural Amendment / Registration & Verification Failure-Prevention Control  
 **Status:** ACTIVE / LIVING / REGISTERED
 
 ## 1. Trigger
-این Amendment در پی یک خطای واقعی در بررسی وضعیت سند مرجع معماری سه‌سطحی ایجاد شد. کاربر صریحاً درخواست بررسی مستقل سه مقصد را داده بود: Repository، Buffer و Persistent Memory؛ اما پاسخ اولیه بدون بررسی واقعی صادر شد، سپس وضعیت نادرست به مخزن/بافر تعمیم داده شد، و تنها پس از اجرای جست‌وجوی واقعی وضعیت صحیح مشخص شد.
+این Amendment در پی خطای واقعی در بررسی و سپس ثبت سند مرجع معماری سه‌سطحی ایجاد شد. کاربر «ثبت کن» را به‌عنوان فرمان ثبت کامل و همزمان در سه سطح تعریف کرده است: Repository، Buffer و Persistent Memory، همراه با ایجاد/ثبت سند مرجع کامل و رعایت تمام قواعد Governance / حاکمیت ثبت، مستندسازی، Lineage / تبار و Verification / راستی‌آزمایی. بنابراین «ثبت یک سطح» هرگز معادل «ثبت کامل» نیست.
 
 ## 2. Root Cause — ریشه خطا
-1. **Intent Compression:** درخواست سه‌مقصدی به یک سؤال کلی درباره وجود سند تقلیل یافت.
-2. **Premature Answering:** پاسخ قبل از اجرای ابزار/جست‌وجوی لازم تولید شد.
-3. **Evidence Substitution:** وضعیت/متن خود سند به‌جای شواهد مقصد استفاده شد.
+1. **Intent Compression:** درخواست دقیق کاربر به سؤال ساده‌تری تقلیل یافت.
+2. **Premature Answering:** پاسخ قبل از اجرای مسیر لازم تولید شد.
+3. **Evidence Substitution:** گزارش/متن سند جای شواهد مقصد قرار گرفت.
 4. **Cross-Surface Leakage:** وضعیت یک سطح به سطح دیگر تعمیم داده شد.
-5. **Failure to Reconcile Contradiction:** ادعای اولیه با درخواست بررسی واقعی reconcile نشد.
-6. **No Destination Matrix:** ماتریس Repository/Buffer/Memory قبل از پاسخ ساخته نشد.
-7. **No Claim Gate:** پاسخ قطعی بدون عبور از Evidence Gate صادر شد.
+5. **No Registration Completion Gate:** تعریف روشنی که «ثبت کن» ذاتاً سه‌سطحی و کامل است، در اجرای لحظه‌ای اعمال نشد.
+6. **Partial Success Mislabeling:** موفقیت یک مقصد به‌اشتباه به‌صورت ثبت کلی بیان شد.
+7. **No Excavation Continuation Contract:** محدودیت ابزار/ظرفیت به‌صورت وضعیت میانی نگه داشته نشد تا پس از رفع محدودیت ادامه ثبت انجام شود.
 
-## 3. New Root-Cause Layer — لایه ریشه‌ای جدید: فهم درخواست → مسیر جست‌وجو → پاسخ
-خطای اصلی فقط «نگشتن در مقصدها» نبود. خطا یک مرحله قبل‌تر رخ داد: درخواست دقیق کاربر در مرحله تبدیل پیام به Task / کار اجرایی، به‌درستی حفظ نشد.
+## 3. Canonical Meaning of «ثبت کن» — معنی مادر فرمان ثبت
+از این نسخه به بعد، در معماری پروژه:
 
-### 3.1 What the user actually asked
-در نمونه حادثه، ساختار واقعی درخواست این بود:
-- **Target / هدف:** سند مرجع معماری سه‌سطحی
-- **Action / عمل:** بررسی اینکه واقعاً ثبت/ذخیره شده است یا خیر
-- **Destinations / مقصدها:** Repository + Buffer + Persistent Memory
-- **Required Output / خروجی موردنیاز:** وضعیت مستقل هر مقصد بر پایه شاهد
+**«ثبت کن» = Full Governed Three-Level Registration**
 
-### 3.2 Incorrect internal path
-مسیر خطادار:
-**USER MESSAGE → TOPIC RECOGNITION → ASSUMED QUESTION → ANSWER**
+یعنی بدون نیاز به اینکه کاربر دوباره بگوید «در مخزن، بافر و حافظه هم ثبت کن»، سیستم باید به‌صورت پیش‌فرض این زنجیره را اجرا کند:
 
-در این مسیر، «موضوع» حفظ شد اما «عمل مورد درخواست»، «مقصدها» و «معیار اثبات» در تفسیر فشرده شدند.
+**PRESERVE → CLASSIFY → PROVENANCE/LINEAGE → IDENTIFY → CREATE/UPDATE COMPLETE REFERENCE DOCUMENT → REGISTER IN REPOSITORY + BUFFER + PERSISTENT MEMORY → WRITE → READ-BACK → MATCH → VERIFY → RECONCILE → STATUS**
 
-### 3.3 Required path
-مسیر اجباری جدید:
-**USER MESSAGE → REQUEST PRESERVATION → INTENT PARSE → TARGET/ACTION/DESTINATIONS/OUTPUT → TASK CLASSIFICATION → TOOL/SEARCH PLAN → EVIDENCE → RECONCILE → ANSWER**
+معنی:
+- **PRESERVE / حفظ:** محتوای اصلی بدون از دست‌دادن لایه‌ها حفظ شود.
+- **CLASSIFY / طبقه‌بندی:** جایگاه معماری، نوع Artifact و دامنه مشخص شود.
+- **PROVENANCE/LINEAGE / منشأ و تبار:** Origin / منشأ و ارتباط با نسخه‌ها و والدها ثبت شود.
+- **IDENTIFY / شناسه‌گذاری:** Stable ID و Production ID و Version تعیین/حفظ شوند.
+- **CREATE/UPDATE COMPLETE REFERENCE DOCUMENT / ایجاد یا به‌روزرسانی سند مرجع کامل:** سند مرجع خلاصه‌شده یا ناقص نیست و همه لایه‌های Governance را دارد.
+- **REGISTER / ثبت:** هر سه سطح هدف قرار گیرند.
+- **WRITE / نوشتن:** داده واقعاً در مقصد نوشته شود.
+- **READ-BACK / بازخوانی:** همان نسخه از مقصد دوباره خوانده شود.
+- **MATCH / تطبیق:** بازخوانی با نسخه مرجع تطبیق داده شود.
+- **VERIFY / راستی‌آزمایی:** نتیجه مستقل تأیید شود.
+- **RECONCILE / آشتی/رفع مغایرت:** اختلاف‌ها و نسخه‌های موازی حل و به Lineage متصل شوند.
+- **STATUS / وضعیت:** وضعیت هر سطح و وضعیت کل عملیات جداگانه اعلام شود.
 
-معنی فارسی:
-- **REQUEST PRESERVATION / حفظ درخواست:** متن و اجزای عملیاتی سؤال نباید در خلاصه‌سازی از بین بروند.
-- **INTENT PARSE / تجزیه منظور:** مشخص شود کاربر دقیقاً چه کاری می‌خواهد، نه فقط درباره چه چیزی صحبت می‌کند.
-- **TASK CLASSIFICATION / طبقه‌بندی کار:** تشخیص داده شود سؤال عادی است یا درخواست بررسی/بازیابی/راستی‌آزمایی.
-- **TOOL/SEARCH PLAN / برنامه ابزار و جست‌وجو:** مسیر بررسی قبل از نتیجه‌گیری تعیین شود.
+## 4. Three-Level Registration Contract — قرارداد ثبت سه‌سطحی
+هر فرمان «ثبت کن» یک **Three-Level Registration Transaction / تراکنش ثبت سه‌سطحی** ایجاد می‌کند.
 
-### 3.4 Mandatory Intent Preservation Gate
-پیش از پاسخ به درخواست‌های بررسی، مدل باید حداقل این چهار جزء را حفظ کند:
+سه مقصد الزاماً عبارت‌اند از:
+1. **Repository / مخزن**
+2. **Buffer / بافر**
+3. **Persistent Memory / حافظه پایدار**
+
+هیچ مقصدی پیش‌فرض یا جایگزین مقصد دیگر نیست.
+
+### 4.1 Complete Reference Document Requirement
+در صورت درخواست «ثبت کن» برای یک موضوع/Artifact معماری، سند مرجع کامل باید به‌عنوان بخشی از همان عملیات ثبت ایجاد یا به‌روزرسانی شود و در هر سه سطح، با همان Stable ID / Production ID / Version و Lineage قابل ردیابی باشد.
+
+### 4.2 Governance Inheritance
+تمام قواعد ثبت موجود پروژه باید همراه فرمان «ثبت کن» به‌صورت پیش‌فرض اعمال شوند؛ از جمله:
+- Stable ID / شناسه پایدار
+- Production ID / شناسه تولیدی
+- Version / نسخه
+- Date / تاریخ
+- Time / زمان دقیق در صورت وجود شواهد
+- Timezone / منطقه زمانی
+- Owner/Name / مالک
+- Location / مکان
+- Project / پروژه
+- Origin / منشأ
+- Lineage / تبار
+- Status / وضعیت
+- Evidence / شواهد
+- Limitation / محدودیت
+- Next Action / اقدام بعدی
+- Repository Path / مسیر مخزن
+- Persistent-Memory State / وضعیت حافظه پایدار
+- Retrieval/Recovery Pointer / اشاره‌گر بازیابی
+- و سایر قواعد Governance ثبت‌شده در معماری مادر.
+
+## 5. Registration Completion Gate — دروازه تکمیل ثبت
+**ثبت یک مقصد ≠ ثبت کامل.**
+
+عملیات فقط در صورتی می‌تواند **COMPLETE / کامل** نامیده شود که وضعیت هر سه مقصد به‌طور مستقل مشخص و الزامات ثبت/بازخوانی/تطبیق/راستی‌آزمایی آنها انجام شده باشد.
+
+اگر:
+- Repository موفق باشد ولی Buffer و Memory هنوز انجام نشده باشند → **PARTIAL / ناقص**
+- یکی از مقصدها به دلیل محدودیت ابزار قابل انجام نباشد → **BLOCKED / مسدودشده یا PENDING / در انتظار**، نه COMPLETE
+- نبود قابلیت مستقل اثبات حافظه وجود داشته باشد → وضعیت Memory باید مستقل و شفاف ثبت شود و هرگز از Repository/Buffer ارث نبرد.
+
+اصل:
+**NO THREE-LEVEL PROOF → NO COMPLETE REGISTRATION CLAIM**
+
+## 6. Limitation-to-Excavation Contract — قرارداد محدودیت تا خاک‌برداری
+محدودیت فنی، سهمیه، Throttling / محدودیت بارگذاری، عدم دسترسی موقت یا هر Blocker / مانع، باعث حذف مقصد از قرارداد ثبت نمی‌شود.
+
+در این حالت:
+**PRESERVE → REGISTER AVAILABLE LEVELS → RECORD BLOCKER → KEEP SAME STABLE ID/LINEAGE → MARK PENDING/BLOCKED → EXCAVATE/RECOVER → COMPLETE REMAINING LEVELS → READ-BACK → MATCH → VERIFY → RECONCILE → PROMOTE TO COMPLETE**
+
+یعنی کاربر مجبور نیست دوباره فرمان «ثبت کن» را تکرار کند. عملیات ناقص باید با همان شناسه و تبار حفظ شود و پس از رفع محدودیت ادامه یابد.
+
+**PARTIAL ≠ LOST**  
+**PENDING ≠ BURIED**  
+**BLOCKED ≠ FAILED**
+
+## 7. Request Preservation — حفظ دقیق درخواست
+پیش از هر پاسخ یا اجرای ثبت، چهار جزء باید حفظ شوند:
 **TARGET + ACTION + DESTINATIONS/CONDITIONS + REQUIRED OUTPUT**
 
-اگر هرکدام حذف، مبهم یا با حدس جایگزین شده باشد:
-**DO NOT ANSWER YET → RE-PARSE REQUEST**
+در فرمان «ثبت کن»:
+- Target = محتوای مورد ثبت
+- Action = ثبت کامل
+- Destinations = هر سه سطح
+- Required Output = سند مرجع کامل + ثبت/وضعیت هر سه سطح + Governance
 
-این کنترل برای جلوگیری از تبدیل سؤال دقیق کاربر به یک سؤال ساده‌تر و اشتباه طراحی شده است.
+اگر هرکدام حذف یا با حدس جایگزین شد:
+**DO NOT ANSWER/EXECUTE YET → RE-PARSE REQUEST**
 
-### 3.5 Topic ≠ Task
-اصل معماری جدید:
+## 8. Topic ≠ Task
 **Understanding the Topic ≠ Understanding the Task**
 
-یعنی فهمیدن «موضوع» به معنی فهمیدن «کاری که کاربر خواسته» نیست.
+فهم موضوع به معنی فهم عملیات مورد درخواست نیست. شناسایی یک سند یا پروژه هرگز مجوز پاسخ یا ثبت ناقص نیست.
 
-بنابراین شناسایی صحیح سند، پروژه، فایل یا مفهوم به‌تنهایی مجوز پاسخ نیست؛ ابتدا باید عملیات درخواستی و شرایط اثبات آن استخراج شود.
+## 9. Mandatory Registration Path
+مسیر اجباری فرمان «ثبت کن»:
 
-## 4. New Mandatory Control — کنترل اجباری مقصدها
-هر درخواست شامل «چک کن»، «بگرد»، «ذخیره شده؟»، «در مخزن هست؟»، «در بافر هست؟»، «در حافظه هست؟»، «کجا ثبت شده؟»، «Verify کن» یا «Read-back کن» یک Verification Query است، نه سؤال عادی.
+**REQUEST PRESERVATION → INTENT PARSE → TASK CLASSIFICATION → GOVERNANCE EXPANSION → COMPLETE REFERENCE DOCUMENT → THREE-LEVEL WRITE → THREE-LEVEL READ-BACK → MATCH → VERIFY → RECONCILE → STATUS MATRIX → CONTINUE/COMPLETE**
 
-### 4.1 Destination Matrix Gate
-قبل از پاسخ باید سه سطح مستقل بررسی شوند:
-- Repository / مخزن: آیا Artifact واقعاً در مقصد پیدا و قابل‌بازیابی است؟
-- Buffer / بافر: آیا همان Production واقعاً در Buffer وجود دارد؟
-- Persistent Memory / حافظه پایدار: آیا Provider-level Write و Read-back مستقل وجود دارد؟
+این مسیر جایگزین اجرای انتخابی و تک‌سطحی است.
 
-هیچ خانه‌ای از ماتریس از خانه دیگر پر نمی‌شود.
-
-## 5. Evidence Isolation — جداسازی شواهد
+## 10. Verification / Evidence Isolation
+شواهد هر سطح مستقل است:
 - Repository proof فقط Repository را اثبات می‌کند.
 - Buffer proof فقط Buffer را اثبات می‌کند.
-- Memory proof فقط با Provider-level independent Read-back می‌تواند Memory را اثبات کند.
-- متن یک سند که می‌گوید در مقصدی ثبت شده، به‌تنهایی اثبات حضور فعلی در آن مقصد نیست.
-- هیچ سطحی وضعیت VERIFIED سطح دیگر را به ارث نمی‌برد.
+- Memory proof فقط Persistent Memory را اثبات می‌کند.
+- هیچ سطحی VERIFIED سطح دیگر را به ارث نمی‌برد.
+- متن سند یا گزارش، بدون شواهد مقصد، اثبات حضور فعلی در مقصد نیست.
 
-## 6. No-Answer-Before-Check Gate
-اگر کاربر صریحاً «بررسی» خواست:
-**REQUEST PRESERVATION → PARSE → IDENTIFY TARGET → ENUMERATE DESTINATIONS → SEARCH/READ-BACK → BUILD DESTINATION MATRIX → RECONCILE → ANSWER**
-
-پاسخ پیش از SEARCH/READ-BACK ممنوع است؛ اگر ابزار در دسترس نباشد باید «قابل بررسی نیست» گفته شود، نه «وجود ندارد».
-
-## 7. Search/Answer Separation — جداسازی جست‌وجو از تولید پاسخ
-مدل نباید مسیر زیر را طی کند:
+## 11. Search/Answer Separation
+مسیر ممنوع:
 **Question → Guess/Memory Impression → Answer → Search afterward**
 
 مسیر مجاز:
 **Question → Structured Task → Search/Read-back → Evidence Assembly → Claim Gate → Answer**
 
-یعنی جست‌وجو مرحله‌ای برای «تأیید پاسخ از قبل ساخته‌شده» نیست؛ جست‌وجو بخشی از ساخت پاسخ است.
+برای «ثبت کن» نیز:
+**Command → Registration Contract → Execute Three Levels → Verify → Report**
 
-## 8. Negative Claim Hardening — سخت‌سازی ادعای منفی
-عبارت‌هایی مانند «ندارم»، «پیدا نشد»، «در مخزن نیست»، «در حافظه نیست» یا «ذخیره نشده» فقط با دامنه جست‌وجو و شاهد منفی مجازند.
-
+## 12. Negative Claim Hardening
 **NO SEARCH → NO NEGATIVE CLAIM**  
 **NO DESTINATION READ-BACK → NO DESTINATION ABSENCE CLAIM**
 
-## 9. Contradiction / Reconciliation Gate
+«در حافظه نیست» فقط وقتی مجاز است که واقعاً دامنه و توان بررسی حافظه چنین نتیجه‌ای را پشتیبانی کند.
+
+## 13. Contradiction / Reconciliation Gate
 اگر نتیجه جدید با پاسخ قبلی ناسازگار بود:
 1. پاسخ قبلی **SUPERSEDED / INCORRECT CLAIM** شود.
-2. علت خطا ثبت شود.
-3. نتیجه جدید فقط از شواهد معتبر ساخته شود.
+2. علت ثبت شود.
+3. نسخه معتبر از شواهد ساخته شود.
 4. سه مقصد جداگانه گزارش شوند.
-5. اگر ریشه در مسیر فهم/جست‌وجو بوده، همان کنترل معماری نیز اصلاح شود.
+5. در صورت ریشه معماری، کنترل معماری اصلاح شود.
+6. تاریخچه حذف نشود.
 
-## 10. Mandatory Three-Level Response Format
-برای درخواست‌های سه‌سطحی:
-- Repository: [state] — [evidence]
-- Buffer: [state] — [evidence]
-- Persistent Memory: [state] — [evidence/boundary]
+## 14. Mandatory Registration Status Matrix
+برای هر فرمان «ثبت کن» خروجی داخلی/ثبت‌شده باید حداقل این ماتریس را داشته باشد:
 
-سپس نتیجه کلی، بدون ادغام سه وضعیت.
+| سطح | Write | Read-back | Match | Verify | وضعیت |
+|---|---|---|---|---|---|
+| Repository | مستقل | مستقل | مستقل | مستقل | جداگانه |
+| Buffer | مستقل | مستقل | مستقل | مستقل | جداگانه |
+| Persistent Memory | مستقل/در حد قابلیت | مستقل/در حد قابلیت | مستقل | مستقل | جداگانه |
 
-## 11. Anti-Inference Rule
-ممنوع است:
-- «سند می‌گوید Buffer VERIFIED است» → «من الان Buffer را پیدا کردم».
-- «Memory capability gap» → «Memory وجود ندارد».
-- «Library artifact پیدا شد» → «Canonical Repository حتماً تأیید شده».
-- «Report پیدا شد» → «خود مقصد حتماً وجود دارد» بدون بررسی رابطه و Evidence.
+سپس:
+**Overall Registration Status / وضعیت کلی ثبت**
+- COMPLETE / کامل
+- PARTIAL / ناقص
+- PENDING / در انتظار
+- BLOCKED / مسدودشده
+- NOT-VERIFIED / راستی‌آزمایی‌نشده
 
-## 12. Acceptance Tests
-- AT-3L-H01: هر سه مقصد نام‌برده جداگانه بررسی شوند.
-- AT-3L-H02: پاسخ قبل از Search/Read-back صادر نشود.
-- AT-3L-H03: نبود شواهد با نبود Artifact یکی نشود.
-- AT-3L-H04: Repository به Buffer/Memory تعمیم داده نشود.
-- AT-3L-H05: Buffer به Memory تعمیم داده نشود.
-- AT-3L-H06: متن سند جای Evidence مقصد را نگیرد.
-- AT-3L-H07: ادعای منفی دامنه و شاهد جست‌وجو داشته باشد.
-- AT-3L-H08: تناقض با پاسخ قبلی reconcile شود.
-- AT-3L-H09: Memory بدون Provider-level independent Read-back، NOT-VERIFIED / CAPABILITY-GAP بماند.
-- AT-3L-H10: خروجی نهایی Destination Matrix داشته باشد.
-- **AT-3L-H11:** Target/Action/Destinations/Required Output قبل از پاسخ استخراج و حفظ شوند.
-- **AT-3L-H12:** Topic Recognition به‌تنهایی برای پاسخ کافی نباشد.
-- **AT-3L-H13:** Search/Read-back قبل از Claim انجام شود، نه بعد از آن.
-- **AT-3L-H14:** اگر Intent Compression رخ داد، پاسخ متوقف و Request Re-parse شود.
-- **AT-3L-H15:** مسیر واقعی اجرای سؤال با ساختار درخواست کاربر قابل تطبیق باشد.
+و هرگز وضعیت کلی از یک سطح استنتاج نمی‌شود.
 
-## 13. Architectural Decision
-این خطا به‌عنوان **Architecture GAP / Execution-Control Failure** ثبت می‌شود، نه صرفاً خطای گفتاری.
+## 15. Acceptance Tests
+- AT-3LR-H01: «ثبت کن» به‌صورت خودکار Three-Level Registration Transaction شود.
+- AT-3LR-H02: کاربر مجبور نباشد مقصدها را دوباره نام ببرد.
+- AT-3LR-H03: Complete Reference Document بخشی از عملیات ثبت باشد.
+- AT-3LR-H04: هر سه مقصد مستقل Write/Read-back/Match/Verify شوند.
+- AT-3LR-H05: ثبت یک مقصد به‌عنوان ثبت کامل گزارش نشود.
+- AT-3LR-H06: محدودیت باعث از دست‌رفتن عملیات نشود.
+- AT-3LR-H07: محدودیت به Pending/Blocked تبدیل شود و همان Stable ID/Lineage حفظ شود.
+- AT-3LR-H08: پس از رفع محدودیت، ثبت از همان State ادامه یابد.
+- AT-3LR-H09: Governance و مستندسازی با فرمان ساده «ثبت کن» خودکار گسترش یابد.
+- AT-3LR-H10: Status Matrix سه‌سطحی همیشه تولید شود.
+- AT-3LR-H11: Target/Action/Destinations/Required Output قبل از اجرا حفظ شوند.
+- AT-3LR-H12: Topic Recognition به‌تنهایی کافی نباشد.
+- AT-3LR-H13: Search/Read-back قبل از Claim باشد.
+- AT-3LR-H14: Intent Compression باعث توقف و Re-parse شود.
+- AT-3LR-H15: Partial Success هرگز به Complete تبدیل نشود.
 
-اصل جدید:
-**سه مقصد را جداگانه ببین؛ سه شاهد را جداگانه بسنج؛ سپس نتیجه را reconcile کن.**
+## 16. Architectural Decision
+این مسئله یک **Architecture GAP / Execution-Control Failure** است.
 
-اصل بنیادی‌تر:
-**اول منظور و ساختار کاربر را حفظ کن؛ بعد مسیر جست‌وجو را بساز؛ سپس بر اساس شواهد پاسخ بده.**
+اصل مادر:
+**وقتی کاربر می‌گوید «ثبت کن»، فرمان باید به‌صورت پیش‌فرض ثبت کامل، حاکمیتی، همزمان و سه‌سطحی تفسیر و اجرا شود.**
 
-اصل اجرایی:
-**REQUEST PRESERVATION → INTENT PARSE → TASK CLASSIFICATION → TOOL-FIRST → DESTINATION-BY-DESTINATION → EVIDENCE ISOLATION → RECONCILE → CLAIM**
+اصل تکمیلی:
+**محدودیت فقط اجرای بخشی را موقتاً متوقف می‌کند؛ قرارداد ثبت را لغو نمی‌کند.**
 
-## 14. Failure-Prevention Scope
-این کنترل فقط برای سه‌سطح Repository/Buffer/Memory نیست. هرجا کاربر سؤال مشخصی درباره وجود، وضعیت، بازیابی، ثبت، مقایسه، بررسی، یا صحت یک Artifact/State می‌پرسد، مدل باید ابتدا «کاری که کاربر خواسته» را از «موضوعی که درباره آن صحبت می‌کند» جدا کند.
+اصل No-Loss:
+**PRESERVE → IDENTIFY → VERIFY → RECONCILE → REGISTER → PROMOTE**
 
-هدف این کنترل:
-**جلوگیری از تکرار مسیر خطادار «برداشت ناقص از سؤال → پاسخ زودهنگام → جست‌وجوی پس از پاسخ».**
+## 17. Evidence Boundary
+ثبت Repository این Amendment با Commit مستقل انجام شده است. وضعیت Buffer و Persistent Memory فقط پس از اجرای مستقل عملیات و دریافت شواهد همان سطح قابل اعلام است. این تفکیک برای جلوگیری از ادعای بدون شاهد است و به معنی حذف آنها از قرارداد ثبت نیست.
 
-## 15. Evidence Boundary
-این Amendment به‌عنوان Artifact معماری در Repository ثبت شده است. وضعیت Library/Buffer و Persistent Memory فقط در صورت اجرای مستقل ابزار و دریافت شواهد مربوطه قابل ادعاست.
-
-## 16. Lineage
+## 18. Lineage
 Parent: THREE-LAYER-REGISTRATION-ARCHITECTURE-2026-10-06-001 / 3LR-REG-2026-10-06-001  
+Previous Revision: 1.1  
 Related: 3LR-REPO-REPORT-2026-10-06-001, 3LR-BUFFER-REPORT-2026-10-06-001, 3LR-MEMORY-REPORT-2026-10-06-001  
-Trigger Incident: incorrect premature answer to explicit three-destination verification request on 2026-10-06.  
-Revision 1.1: اضافه‌شدن لایه «حفظ درخواست و تجزیه منظور پیش از طراحی جست‌وجو و پاسخ» بر اساس چکش ریشه‌ای خطا.
+Trigger Incident: misunderstanding of the user's three-level registration expectation and partial registration being presented as if it were the complete operation.  
+Revision 1.2: تعریف رسمی «ثبت کن» به‌عنوان فرمان ثبت کامل سه‌سطحی و افزودن Registration Completion Gate و Limitation-to-Excavation Contract.
