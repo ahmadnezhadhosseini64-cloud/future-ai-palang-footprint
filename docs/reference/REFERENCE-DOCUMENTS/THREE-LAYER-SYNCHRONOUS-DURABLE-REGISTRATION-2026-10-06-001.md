@@ -211,5 +211,5 @@ Persistent Memory نیز یک سطح منطقی مستقل است و باید ب
 
 است؛ و در صورت محدودیت، همان تولید با همان هویت وارد مسیر Recovery می‌شود.
 
-**NO CLAIM WITHOUT EVIDENCE.**  
+**NO CLAIM WITHOUT EVIDENCE.**
 **PRESERVE → IDENTIFY → VERIFY → RECONCILE → REGISTER → PROMOTE.**
