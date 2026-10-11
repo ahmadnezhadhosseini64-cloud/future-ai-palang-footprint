@@ -2,7 +2,7 @@
 
 **Stable ID:** THREE-LEVEL-GOVERNED-REGISTRATION-COMMAND-2026-10-06-001  
 **Production ID:** 3LR-GOVREG-CMD-2026-10-06-001  
-**Version:** 1.1.0  
+**Version:** 1.1.1  
 **Date:** 2026-10-12  
 **Timezone:** Asia/Tehran (+03:30)  
 **Owner:** Ahmad Nezhadhosseini / احمد پلنگ  
@@ -473,7 +473,7 @@ No extra prompt is required to ask whether the user also wants a reference docum
 | Buffer / بافر | Existing state record was found in the Library; this master reference must be uploaded to the Buffer and independently read back before calling this revision verified there | A state record is not a substitute for the full master reference. |
 | Persistent Memory / حافظه پایدار | `WRITE-ACCEPTED / NOT-INDEPENDENTLY-VERIFIED` | The memory update can retain continuity facts, but there is no independent provider-level read-back evidence in this operation. Do not mark the full document as byte-for-byte persisted in memory. |
 
-**Overall status before all revision-specific read-backs:** `PARTIAL / NOT-THREE-LEVEL-VERIFIED`.
+**Overall status after Repository and Buffer read-back:** `PARTIAL / MEMORY NOT-INDEPENDENTLY-VERIFIED`. Repository and Buffer are verified for revision 1.1.0; Persistent Memory remains unverified and therefore the three-level operation is not complete.
 
 This status is not a declaration of loss. It preserves the known state and identifies exactly what remains unproven.
 
@@ -522,7 +522,7 @@ This revision extends, and does not replace, the prior 2026-10-06 Version 1.0 re
 ## 23. Current operational declaration
 
 **Command semantics:** `ACTIVE / LIVING`  
-**Repository revision:** to be verified after commit and independent fetch.  
-**Buffer revision:** to be verified after upload and independent retrieval.  
-**Persistent Memory:** `WRITE-ACCEPTED / NOT-INDEPENDENTLY-VERIFIED`.  
-**Overall three-level completion:** `PENDING / NOT-YET-PROVEN` until destination-specific evidence closes the matrix.
+**Repository revision 1.1.0:** `REGISTERED / READ-BACK / MATCH / VERIFIED`; commit `d6b82d7b0a179e3013524dbf39ab10a8c93f8c53`.  
+**Buffer revision 1.1.0:** `REGISTERED / READ-BACK / MATCH / VERIFIED`; exact content match against the Repository payload.  
+**Persistent Memory:** `WRITE-ACCEPTED / NOT-INDEPENDENTLY-VERIFIED`; no new memory write or independent read-back was available in this operation.  
+**Overall three-level completion:** `PARTIAL / PENDING` because Persistent Memory is not independently verified.
