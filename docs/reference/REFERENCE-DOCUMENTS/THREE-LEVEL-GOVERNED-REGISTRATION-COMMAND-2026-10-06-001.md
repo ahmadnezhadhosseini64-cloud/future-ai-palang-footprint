@@ -2,14 +2,14 @@
 
 **Stable ID:** THREE-LEVEL-GOVERNED-REGISTRATION-COMMAND-2026-10-06-001  
 **Production ID:** 3LR-GOVREG-CMD-2026-10-06-001  
-**Version:** 1.0  
-**Date:** 2026-10-06  
+**Version:** 1.1.0  
+**Date:** 2026-10-12  
 **Timezone:** Asia/Tehran (+03:30)  
 **Owner:** Ahmad Nezhadhosseini / احمد پلنگ  
 **Location:** Gonbad-e Kavus, Iran  
 **Project:** Future AI / Palang Footprint  
 **Type:** Master Reference / Architectural Contract  
-**Status:** ACTIVE / LIVING  
+**Status:** ACTIVE / LIVING — revision 1.1.0; execution status per destination evidence matrix below  
 **Origin:** نتیجه چکش ریشه‌ای خطای فهم سؤال، مسیر جست‌وجو و ثبت ناقص در معماری سه‌سطحی  
 **Parent Architecture:** THREE-LAYER-REGISTRATION-ARCHITECTURE-2026-10-06-001 / 3LR-REG-2026-10-06-001  
 **Related Amendment:** THREE-LAYER-VERIFICATION-FAILURE-HARDENING-2026-10-06-001 / 3LR-HARDEN-2026-10-06-001  
@@ -29,7 +29,19 @@
 
 **«ثبت کن»**
 
-نیازی نیست دوباره بگوید در مخزن، بافر و حافظه هم ثبت کن؛ همه این‌ها جزو معنی پیش‌فرض فرمان هستند.
+نیازی نیست دوباره بگوید:
+
+- در مخزن ثبت کن
+- در بافر ثبت کن
+- در حافظه ثبت کن
+- سند مرجع بساز
+- مستندسازی کن
+- شناسه بده
+- Lineage ثبت کن
+- Read-back کن
+- Verify کن
+
+همه این‌ها جزو معنی پیش‌فرض فرمان «ثبت کن» هستند.
 
 ---
 
@@ -51,15 +63,40 @@
 
 وقتی محتوای معماری، کشف، قانون، GAP، تصمیم یا Artifact مهمی با فرمان «ثبت کن» ثبت می‌شود، ایجاد/به‌روزرسانی **Complete Reference Document / سند مرجع کامل** بخشی از همان عملیات است.
 
-سند مرجع نباید فقط خلاصه باشد و باید تا حد لازم شامل Stable ID، Production ID، Version، Date، Time در صورت وجود، Timezone، Owner، Location، Project، Origin، Lineage، Status، Evidence، Limitation، Next Action، Repository Path، Library Path، Persistent-Memory State، Retrieval/Recovery Pointer و سایر قواعد Governance / حاکمیت ثبت پروژه باشد.
+سند مرجع نباید فقط خلاصه باشد.
+
+باید تا حد لازم شامل لایه‌های:
+
+- Stable ID / شناسه پایدار
+- Production ID / شناسه تولیدی
+- Version / نسخه
+- Date / تاریخ
+- Time / زمان دقیق در صورت ثبت‌شدن
+- Timezone / منطقه زمانی
+- Owner / مالک
+- Location / مکان
+- Project / پروژه
+- Origin / منشأ
+- Lineage / تبار
+- Status / وضعیت
+- Evidence / شواهد
+- Limitation / محدودیت
+- Next Action / اقدام بعدی
+- Repository Path / مسیر مخزن
+- Library Path / مسیر کتابخانه
+- Persistent-Memory State / وضعیت حافظه پایدار
+- Retrieval/Recovery Pointer / اشاره‌گر بازیابی
+- و سایر قواعد Governance / حاکمیت ثبت پروژه باشد.
 
 ---
 
 ## 4. زنجیره اجرایی «ثبت کن»
 
+فرمان باید در این مسیر اجرا شود:
+
 **REQUEST PRESERVATION → INTENT PARSE → GOVERNANCE EXPANSION → COMPLETE REFERENCE DOCUMENT → THREE-LEVEL WRITE → THREE-LEVEL READ-BACK → MATCH → VERIFY → RECONCILE → STATUS**
 
-یعنی:
+معنی:
 
 **حفظ درخواست → فهم دقیق منظور → فعال‌کردن تمام قواعد حاکمیتی → ایجاد سند مرجع کامل → نوشتن در سه سطح → بازخوانی از سه سطح → تطبیق → راستی‌آزمایی → رفع مغایرت → ثبت وضعیت**
 
@@ -67,27 +104,30 @@
 
 ## 5. حفظ منظور کاربر
 
-خطای اصلی فقط «نگشتن» نبود. مسیر خطا:
+خطای اصلی کشف‌شده فقط «نگشتن» نبود.
+
+مسیر خطا این بود:
 
 **USER MESSAGE → TOPIC RECOGNITION → ASSUMED QUESTION → ANSWER**
 
 یعنی موضوع درست تشخیص داده شد، اما کاری که کاربر خواسته بود از بین رفت.
 
-اصل:
+اصل جدید:
 
 **Understanding the Topic ≠ Understanding the Task**
 
 فهم موضوع ≠ فهم کار درخواستی.
 
-قبل از اجرا باید این چهار جزء حفظ شوند:
+بنابراین قبل از اجرا باید این چهار جزء حفظ شوند:
 
 **TARGET + ACTION + DESTINATIONS/CONDITIONS + REQUIRED OUTPUT**
 
 در فرمان «ثبت کن»:
-- TARGET = محتوای مورد ثبت
-- ACTION = ثبت کامل
-- DESTINATIONS = هر سه سطح
-- REQUIRED OUTPUT = سند مرجع کامل + ثبت سه‌سطحی + Verification + Governance
+
+- **TARGET:** محتوای مورد ثبت
+- **ACTION:** ثبت کامل
+- **DESTINATIONS:** هر سه سطح
+- **REQUIRED OUTPUT:** سند مرجع کامل + ثبت سه‌سطحی + Verification + Governance
 
 اگر یکی از این اجزا حذف یا با حدس جایگزین شود:
 
@@ -96,6 +136,8 @@
 ---
 
 ## 6. ثبت کامل با ثبت یک سطح یکی نیست
+
+اصل:
 
 **ONE LEVEL REGISTERED ≠ THREE-LEVEL REGISTRATION COMPLETE**
 
@@ -123,17 +165,34 @@ Memory = NOT-VERIFIED
 
 عملیات فقط وقتی COMPLETE اعلام می‌شود که وضعیت هر سه مقصد مستقل مشخص و الزامات ثبت، بازخوانی، تطبیق و راستی‌آزمایی انجام شده باشد.
 
+اصل:
+
 **NO THREE-LEVEL PROOF → NO COMPLETE REGISTRATION CLAIM**
+
+بدون اثبات سه‌سطحی، ادعای ثبت کامل ممنوع است.
 
 ---
 
 ## 8. محدودیت فنی، فرمان ثبت را لغو نمی‌کند
 
-اگر یکی از سطوح به دلیل Throttling / محدودیت بارگذاری، سهمیه، عدم دسترسی موقت، محدودیت ابزار یا Blocker / مانع فنی قابل ثبت نباشد، آن مقصد از قرارداد حذف نمی‌شود.
+اگر یکی از سطوح به دلیل:
 
-مسیر:
+- Throttling / محدودیت بارگذاری
+- سهمیه
+- عدم دسترسی موقت
+- محدودیت ابزار
+- Blocker / مانع فنی
+- یا هر محدودیت دیگر
+
+قابل ثبت نباشد، آن مقصد از قرارداد حذف نمی‌شود.
+
+مسیر صحیح:
 
 **PRESERVE → REGISTER AVAILABLE LEVELS → RECORD BLOCKER → KEEP SAME STABLE ID/LINEAGE → MARK PENDING/BLOCKED → EXCAVATE/RECOVER → COMPLETE REMAINING LEVELS → READ-BACK → MATCH → VERIFY → RECONCILE → PROMOTE**
+
+یعنی:
+
+**حفظ → ثبت سطوح قابل‌اجرا → ثبت مانع → حفظ همان شناسه و تبار → وضعیت در انتظار/مسدود → خاک‌برداری/بازیابی → تکمیل سطوح باقی‌مانده → بازخوانی → تطبیق → راستی‌آزمایی → رفع مغایرت → ارتقا به کامل**
 
 کاربر نباید مجبور شود فرمان «ثبت کن» را دوباره صادر کند.
 
@@ -146,6 +205,8 @@ Memory = NOT-VERIFIED
 **BLOCKED ≠ FAILED**  
 **INTERRUPTED ≠ FAILED**
 
+محدودیت باید State / وضعیت را حفظ کند، نه اینکه Artifact یا قرارداد ثبت را نابود کند.
+
 ---
 
 ## 10. قواعد Governance به‌صورت خودکار فعال می‌شوند
@@ -154,7 +215,8 @@ Memory = NOT-VERIFIED
 
 **PRESERVE → IDENTIFY → VERIFY → RECONCILE → REGISTER → PROMOTE**
 
-و اصول:
+همچنین:
+
 - هیچ ادعایی بدون Evidence / شاهد
 - هیچ Verification بدون Independence / استقلال
 - هیچ Runtime Claim بدون Implementation / پیاده‌سازی
@@ -164,20 +226,26 @@ Memory = NOT-VERIFIED
 - هیچ Recovery بدون Preserved State / وضعیت حفظ‌شده
 - هیچ Persistence Proof بدون Representation / نمایش تعریف‌شده
 - هیچ Byte Match بدون Canonical Serialization / سریال‌سازی استاندارد
-- هیچ Commit Claim بدون Revision Binding / اتصال به نسخه
+- هیچ Commit Claim بدون Revision Binding / اتصال به نسخه/بازبینی
 - هیچ Safe Check بدون Version Awareness / آگاهی از نسخه
 
 ---
 
 ## 11. جداسازی شواهد سه سطح
 
-شاهد هر سطح فقط همان سطح را اثبات می‌کند:
+شاهد هر سطح فقط همان سطح را اثبات می‌کند.
 
-**Repository proof → فقط مخزن**  
-**Buffer proof → فقط بافر**  
+**Repository proof → فقط مخزن**
+
+**Buffer proof → فقط بافر**
+
 **Memory proof → فقط حافظه پایدار**
 
 هیچ سطحی وضعیت VERIFIED سطح دیگر را به ارث نمی‌برد.
+
+متن یک سند که می‌گوید «در بافر ثبت شده» به‌تنهایی اثبات حضور فعلی آن در بافر نیست.
+
+گزارش نیز جای خود مقصد را نمی‌گیرد.
 
 ---
 
@@ -191,17 +259,43 @@ Memory = NOT-VERIFIED
 
 **Question → Structured Task → Search/Read-back → Evidence Assembly → Claim Gate → Answer**
 
+جست‌وجو نباید بعد از جواب برای پیدا کردن تأیید جواب انجام شود.
+
+جست‌وجو بخشی از ساخت جواب است.
+
 ---
 
 ## 13. برای فرمان «ثبت کن» پاسخ پیش از اجرا ممنوع است
 
-نباید قبل از اجرای عملیات گفته شود «ثبت شد»، مگر اینکه شواهد متناسب با سطح مورد ادعا وجود داشته باشد.
+نباید قبل از اجرای عملیات گفته شود:
 
-اگر عملیات کامل نشده، وضعیت باید صریحاً یکی از PARTIAL / ناقص، PENDING / در انتظار، BLOCKED / مسدود یا NOT-VERIFIED / راستی‌آزمایی‌نشده باشد.
+«ثبت شد.»
+
+مگر اینکه شواهد متناسب با سطح مورد ادعا وجود داشته باشد.
+
+اگر عملیات کامل نشده:
+
+**PARTIAL / ناقص**
+
+یا
+
+**PENDING / در انتظار**
+
+یا
+
+**BLOCKED / مسدود**
+
+یا
+
+**NOT-VERIFIED / راستی‌آزمایی‌نشده**
+
+باید اعلام شود.
 
 ---
 
 ## 14. ماتریس وضعیت اجباری
+
+برای هر ثبت:
 
 | سطح | Write | Read-back | Match | Verify | وضعیت |
 |---|---|---|---|---|---|
@@ -209,44 +303,78 @@ Memory = NOT-VERIFIED
 | Buffer / بافر | مستقل | مستقل | مستقل | مستقل | مستقل |
 | Persistent Memory / حافظه پایدار | مستقل/در حد قابلیت | مستقل/در حد قابلیت | مستقل | مستقل | مستقل |
 
-سپس Overall Registration Status / وضعیت کلی ثبت تعیین می‌شود:
+سپس:
+
+**Overall Registration Status / وضعیت کلی ثبت**
+
+یکی از:
+
 - COMPLETE / کامل
 - PARTIAL / ناقص
 - PENDING / در انتظار
 - BLOCKED / مسدود
 - NOT-VERIFIED / راستی‌آزمایی‌نشده
 
-و وضعیت کلی هرگز از یک سطح استنتاج نمی‌شود.
+باشد.
 
 ---
 
 ## 15. Recovery / بازیابی و خاک‌برداری
 
-اگر بخشی از ثبت به علت محدودیت انجام نشد:
+اگر بخشی از ثبت در لحظه اجرا به علت محدودیت انجام نشد:
 
 **EXCAVATE → IDENTIFY → VALIDATE → DEDUPLICATE → CONNECT/RECONCILE → REGISTER → REVIVE/ABSORB → INHERIT 0.0/MASTER → DOCUMENT → READ-BACK → VERIFY → CONTINUE**
 
-تاریخچه حذف یا با ثبت تازه جایگزین نمی‌شود.
+و نباید تاریخچه قبلی حذف یا با ثبت تازه جایگزین شود.
 
 ---
 
 ## 16. تست‌های پذیرش
 
-- AT-GR-01: «ثبت کن» خودکار به ثبت سه‌سطحی تبدیل شود.
-- AT-GR-02: کاربر مجبور نباشد مقصدها را دوباره نام ببرد.
-- AT-GR-03: سند مرجع کامل بخشی از ثبت باشد.
-- AT-GR-04: هر سه سطح مستقل Write/Read-back/Match/Verify داشته باشند.
-- AT-GR-05: ثبت یک سطح هرگز Complete اعلام نشود.
-- AT-GR-06: محدودیت باعث Lost شدن عملیات نشود.
-- AT-GR-07: Stable ID و Lineage در Pending/Blocked حفظ شوند.
-- AT-GR-08: پس از رفع محدودیت، عملیات از همان State ادامه یابد.
-- AT-GR-09: تمام Governance با «ثبت کن» فعال شود.
-- AT-GR-10: Status Matrix سه‌سطحی تولید شود.
-- AT-GR-11: Target/Action/Destinations/Required Output قبل از اجرا حفظ شوند.
-- AT-GR-12: Topic Recognition به‌تنهایی کافی نباشد.
-- AT-GR-13: Search/Read-back قبل از Claim باشد.
-- AT-GR-14: Intent Compression باعث توقف و Re-parse شود.
-- AT-GR-15: Partial Success هرگز Complete نشود.
+### AT-GR-01
+فرمان «ثبت کن» باید خودکار به ثبت سه‌سطحی تبدیل شود.
+
+### AT-GR-02
+کاربر نباید مجبور باشد سه مقصد را دوباره نام ببرد.
+
+### AT-GR-03
+سند مرجع کامل بخشی از ثبت باشد.
+
+### AT-GR-04
+هر سه سطح مستقل Write/Read-back/Match/Verify داشته باشند.
+
+### AT-GR-05
+ثبت یک سطح هرگز Complete اعلام نشود.
+
+### AT-GR-06
+محدودیت باعث Lost شدن عملیات نشود.
+
+### AT-GR-07
+Stable ID و Lineage در وضعیت Pending/Blocked حفظ شوند.
+
+### AT-GR-08
+پس از رفع محدودیت، عملیات از همان State ادامه یابد.
+
+### AT-GR-09
+تمام قواعد Governance با فرمان ساده «ثبت کن» فعال شوند.
+
+### AT-GR-10
+Status Matrix سه‌سطحی تولید شود.
+
+### AT-GR-11
+Target/Action/Destinations/Required Output قبل از اجرا حفظ شوند.
+
+### AT-GR-12
+Topic Recognition به‌تنهایی برای پاسخ کافی نباشد.
+
+### AT-GR-13
+Search/Read-back قبل از Claim باشد.
+
+### AT-GR-14
+Intent Compression باعث توقف و Re-parse شود.
+
+### AT-GR-15
+Partial Success هرگز به Complete تبدیل نشود.
 
 ---
 
@@ -254,13 +382,19 @@ Memory = NOT-VERIFIED
 
 **وقتی احمد پلنگ می‌گوید «ثبت کن»، فرمان باید به‌صورت پیش‌فرض به‌عنوان ثبت کامل، حاکمیتی، همزمان و سه‌سطحی تفسیر و اجرا شود.**
 
-نه «هر سطحی که ابزار اجازه داد».
+نه:
 
-هر سه سطح مقصد قطعی عملیات هستند؛ اگر محدودیت مانع یکی شد، آن سطح Pending/Blocked می‌ماند تا با همان Lineage و Stable ID تکمیل شود.
+«هر سطحی که ابزار اجازه داد ثبت کن.»
+
+بلکه:
+
+**«هر سه سطح مقصد قطعی عملیات هستند؛ اگر محدودیت مانع یکی شد، آن سطح Pending/Blocked می‌ماند تا با همان Lineage و همان Stable ID تکمیل شود.»**
 
 ---
 
 ## 18. اصل ضدتکرار خطا
+
+برای جلوگیری از تکرار خطای مورد بحث:
 
 **اول منظور کاربر را حفظ کن.  
 بعد Task را بساز.  
@@ -270,7 +404,7 @@ Memory = NOT-VERIFIED
 بعد تطبیق و راستی‌آزمایی کن.  
 بعد ادعا کن.**
 
-برای «ثبت کن»:
+و برای «ثبت کن»:
 
 **REQUEST → GOVERNANCE EXPANSION → COMPLETE REFERENCE → 3-LEVEL WRITE → 3-LEVEL READ-BACK → MATCH → VERIFY → RECONCILE → STATUS**
 
@@ -280,9 +414,9 @@ Memory = NOT-VERIFIED
 
 ثبت هر سطح فقط زمانی VERIFIED اعلام می‌شود که شواهد مستقل همان سطح موجود باشد.
 
-اگر محدودیت مانع اثبات یک سطح شد، وضعیت آن سطح NOT-VERIFIED / PENDING / BLOCKED باقی می‌ماند.
+اگر محدودیت مانع اثبات یک سطح شد، وضعیت آن سطح باید صریحاً NOT-VERIFIED / PENDING / BLOCKED باقی بماند.
 
-هیچ سطحی با شواهد سطح دیگر پر نمی‌شود.
+هیچ سطحی نباید با شواهد سطح دیگر «پر» شود.
 
 ---
 
@@ -302,4 +436,93 @@ Memory = NOT-VERIFIED
 
 **ACTIVE / LIVING**
 
-این سند یک قرارداد معماری زنده است و با حفظ Lineage و History / تاریخچه قابل تکامل است.
+این سند یک قرارداد معماری زنده است و در صورت کشف GAP / شکاف جدید، با حفظ Lineage و History / تاریخچه قابل تکامل است.
+
+
+
+---
+
+## 22. Revision 1.1.0 — Live Registration State and Command Binding
+
+**Revision Date:** 2026-10-12  
+**Exact Time:** Not independently captured; intentionally not invented.  
+**State Record ID:** `3LR-STATE-2026-10-12-001`  
+**Related State Record:** `THREE-LEVEL-GOVERNED-REGISTRATION-STATE-2026-10-12-001.md`  
+**Revision Purpose:** Reaffirm that the literal user command **«ثبت کن»** invokes this entire contract by default, and preserve the actual evidence boundary for all three registration surfaces.
+
+### 22.1 Command binding
+
+The command is complete by definition. Unless the user explicitly narrows or overrides it, **«ثبت کن»** automatically means:
+
+- preserve the complete discovery, rule, architecture, decision, GAP, test, or artifact and its context;
+- classify it and preserve provenance, lineage, prior versions, and related IDs;
+- create or update the complete reference document when the content warrants a reference artifact;
+- register the same production identity across Repository, Registration Buffer, and Persistent Memory;
+- independently record the result for each destination;
+- read back each destination where its actual interface permits, compare the returned representation with the intended payload, verify it, reconcile differences, and record evidence;
+- preserve unresolved work in a recoverable `PENDING` / `BLOCKED` / `UNVERIFIED` holding state and continue it when a valid opportunity becomes available, without asking the user to repeat the same command;
+- never report overall completion based only on a write acknowledgement, an in-chat statement, or evidence from another destination.
+
+No extra prompt is required to ask whether the user also wants a reference document, repository, buffer, memory, lineage, or verification: these are default obligations of this command.
+
+### 22.2 Destination-specific live state as of this revision
+
+| Destination | State supported by current evidence | Evidence boundary |
+|---|---|---|
+| Repository / مخزن | `PRESENT — HISTORICAL FILE FOUND`; latest revision requires commit/read-back verification | The canonical command file was fetched from the repository before this revision. The revision must be committed and fetched again before the new version is called verified. |
+| Buffer / بافر | Existing state record was found in the Library; this master reference must be uploaded to the Buffer and independently read back before calling this revision verified there | A state record is not a substitute for the full master reference. |
+| Persistent Memory / حافظه پایدار | `WRITE-ACCEPTED / NOT-INDEPENDENTLY-VERIFIED` | The memory update can retain continuity facts, but there is no independent provider-level read-back evidence in this operation. Do not mark the full document as byte-for-byte persisted in memory. |
+
+**Overall status before all revision-specific read-backs:** `PARTIAL / NOT-THREE-LEVEL-VERIFIED`.
+
+This status is not a declaration of loss. It preserves the known state and identifies exactly what remains unproven.
+
+### 22.3 Memory representation boundary
+
+Persistent Memory is a continuity layer, not automatically a byte-exact document vault. A memory update may preserve the operative rule, identifiers, lineage, current state, and recovery pointer, but that does not prove the full 21-section document is stored verbatim. Exact-document persistence requires an independently retrievable representation and matching evidence. Until such retrieval exists, the correct state is `WRITE-ACCEPTED / NOT-INDEPENDENTLY-VERIFIED`.
+
+### 22.4 Mandatory per-destination evidence record
+
+For every execution of «ثبت کن», record at minimum:
+
+- destination name and exact path/provider;
+- intended Stable ID, Production ID, version, and lineage;
+- write result/receipt when available;
+- independent read-back result or explicit reason it is unavailable;
+- canonical representation/serialization used for comparison;
+- byte length and cryptographic digest where a byte-exact comparison is technically supported;
+- content match result, verification method, and version/revision binding;
+- blockers, pending recovery pointer, next action, and timestamp only when actually captured;
+- per-destination status and overall status.
+
+A digest alone is not a read-back. A read-back without a defined representation is not a byte match. A repository commit does not prove Buffer or Memory. A Library Buffer file does not prove Repository or Memory.
+
+### 22.5 Deferred registration and recovery
+
+When any destination cannot be completed, preserve the same Stable ID, Production ID, version lineage, payload/reference pointer, blocker, and pending state. Retry safely without creating duplicate logical records. At the next valid opportunity, reconcile the pending record against the canonical version, finish the missing destination, read back, match, verify, and only then promote the overall status. Do not require a second user command to keep the recovery obligation alive.
+
+### 22.6 Activation and acceptance
+
+This contract is **ACTIVE / LIVING as the governing rule**. That design status must not be confused with proof that every destination or every automatic runtime mechanism is operational. Acceptance requires all of the following to be demonstrated independently:
+
+1. A plain «ثبت کن» invokes the full contract without prompting the user to restate its layers.
+2. The complete reference document and identifiers are preserved with lineage.
+3. Repository, Buffer, and Memory each receive destination-specific state and evidence.
+4. Every available destination supports independent read-back and comparison; unavailable ones remain explicitly pending/unverified.
+5. A partial result never becomes `COMPLETE` by inference.
+6. Pending records remain recoverable and can be reconciled without loss or duplicate logical registration.
+7. The response reports only what the evidence proves.
+
+### 22.7 Revision lineage
+
+This revision extends, and does not replace, the prior 2026-10-06 Version 1.0 reference. Existing history and IDs remain valid. New changes must continue from this revision with explicit lineage; do not overwrite prior history or reinterpret historic evidence as fresh verification.
+
+---
+
+## 23. Current operational declaration
+
+**Command semantics:** `ACTIVE / LIVING`  
+**Repository revision:** to be verified after commit and independent fetch.  
+**Buffer revision:** to be verified after upload and independent retrieval.  
+**Persistent Memory:** `WRITE-ACCEPTED / NOT-INDEPENDENTLY-VERIFIED`.  
+**Overall three-level completion:** `PENDING / NOT-YET-PROVEN` until destination-specific evidence closes the matrix.
