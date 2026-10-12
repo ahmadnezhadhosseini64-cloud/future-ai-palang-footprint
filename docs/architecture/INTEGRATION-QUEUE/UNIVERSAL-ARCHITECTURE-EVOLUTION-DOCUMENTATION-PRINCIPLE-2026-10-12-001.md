@@ -9,9 +9,9 @@
 - **Timezone:** Asia/Tehran
 - **Owner:** Ahmad Nezhadhosseini / احمد پلنگ
 - **Project:** Future AI / Palang Footprint
-- **Status:** ثبت پروندهٔ صف؛ وضعیت هر مقصد باید پس از بازخوانی مستقل ثبت شود.
+- **Status:** پروندهٔ صف در مخزن بازخوانی و بخش‌های منشأ، تحلیل، معیارهای پذیرش و ادامه تطبیق شد؛ لایه‌های خارج از مخزن تأیید نشده‌اند.
 - **Canonical Queue Path:** docs/architecture/INTEGRATION-QUEUE/UNIVERSAL-ARCHITECTURE-EVOLUTION-DOCUMENTATION-PRINCIPLE-2026-10-12-001.md
-- **Full Reference:** docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-ARCHITECTURE-EVOLUTION-DOCUMENTATION-PRINCIPLE-2026-10-12-001.md
+- **Full Reference:** docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-ARCHITECTURE-EVOLUTION-DOCUMENTATION-PRINCIPLE-2026-10-12-001.md (read-back blob before status update: 8cd4e71e2524af4f64c92877a6d681e396762e6a)
 - **Governing Command:** docs/reference/REFERENCE-DOCUMENTS/REGISTER-COMMAND-GOVERNING-BINDING-2026-10-12-001.md
 - **Universal Contract:** docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-REGISTER-COMMAND-EXECUTION-CONTRACT-2026-09-29-001.md
 - **Master:** docs/reference/REFERENCE-DOCUMENTS/MRV-ARCHITECTURE-AND-LIVING-REFERENCE-CONTRACT-2026-09-15-001.md
@@ -54,18 +54,18 @@
 
 ## 5. وضعیت فعلی مقصدها
 
-- **Full Reference:** ایجاد شده؛ بازخوانی مستقل باید تأیید شود.
-- **Governing Command Binding:** به‌روزرسانی شده؛ بازخوانی مستقل باید تأیید شود.
-- **Universal Register Contract:** به‌روزرسانی شده؛ بازخوانی مستقل باید تأیید شود.
-- **MRV Master:** به‌روزرسانی شده؛ بازخوانی مستقل باید تأیید شود.
-- **Queue Index:** به‌روزرسانی شده؛ بازخوانی مستقل باید تأیید شود.
+- **Full Reference:** ایجاد شده و مستقل بازخوانی شد؛ blob SHA پیش از به‌روزرسانی وضعیت: 8cd4e71e2524af4f64c92877a6d681e396762e6a.
+- **Governing Command Binding:** بازخوانی مستقل تأیید شد؛ blob SHA: b662e539fd74bfabfa6272f45980f46a314d7573.
+- **Universal Register Contract:** بازخوانی مستقل تأیید شد؛ blob SHA: c6f90f22eddf8c15a3091c4654689f9572afcc26.
+- **MRV Master:** بازخوانی مستقل تأیید شد؛ blob SHA: f3acca2d248cb4b9d840b2ecbfefdd2121e07e45.
+- **Queue Index:** مورد صف ثبت و بازخوانی مستقل تأیید شد؛ blob SHA پیش از به‌روزرسانی وضعیت: 1097bb904f33235205b58d298450e7a984a59def.
 - **Buffer / Library / Persistent Memory:** NOT VERIFIED — شواهد مستقل در این عملیات وجود ندارد.
 
 ## 6. وضعیت، مانع و ادامه
 
 - **Last Completed Step:** ایجاد سند مرجع کامل و اعمال تغییرات اولیه در فرمان حاکم، قرارداد عمومی، سند مادر و صف.
-- **Last Verified Evidence:** پس از بازخوانی مستقل باید ثبت شود؛ پاسخ موفق نوشتن به‌تنهایی کافی نیست.
-- **Pending:** بازخوانی مستقل همهٔ فایل‌ها، تطبیق محتوای لازم و ثبت شواهد.
-- **Next Action:** بازیابی هر فایل تازه‌به‌روزشده، بررسی وجود بخش‌های مربوط، ثبت blob SHA و commitها، سپس اصلاح وضعیت هر مقصد.
+- **Last Verified Evidence:** پروندهٔ صف در blob SHA 661bcdd15ec82e67d5b248ed6f1138ecdcebb414 بازخوانی شد؛ پس از این به‌روزرسانی باید دوباره بازخوانی شود. فرمان حاکم، قرارداد عمومی، MRV، صف و سند مرجع نیز مستقل خوانده شدند.
+- **Pending:** بازخوانی نسخهٔ جدید همین پرونده پس از ثبت شواهد؛ Buffer / Library / Persistent Memory همچنان NOT VERIFIED.
+- **Next Action:** بازخوانی نسخهٔ تازهٔ پرونده و سپس صف نهایی؛ در اجرای بعدی هر مقصد خارج از مخزن فقط با قابلیت واقعی نوشتن/بازخوانی آزموده شود.
 - **Recovery Pointer:** همین پرونده و سند مرجع کامل با Stable ID بالا.
 - **No-Loss:** این پرونده تا وقتی تمام مقصدهای لازم تعیین تکلیف نشده‌اند حذف یا بسته نشود.
