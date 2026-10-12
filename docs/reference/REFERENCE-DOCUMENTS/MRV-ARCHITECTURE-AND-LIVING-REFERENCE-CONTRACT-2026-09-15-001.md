@@ -999,3 +999,11 @@ Initial point registered:
 - Next action: inspect or complete the Dropbox connection through the available app interface; then write a safe test file, read it back, and compare its content.
 
 **Proof gate:** `WRITE → READ-BACK → MATCH → VERIFY`. The folder and its files are repository artifacts; this does not establish registration in other destinations.
+
+
+## 33. Multi-point 0.0 Anchor Registry — Architectural Placement
+The dedicated living reference for this architecture is `docs/reference/REFERENCE-DOCUMENTS/MULTI-POINT-0.0-ANCHOR-REGISTRY-ARCHITECTURE-2026-10-12-001.md`; its operational registry is `docs/0.0/README.md`. Each user-designated 0.0 point has an independent, uniquely identified record under `docs/0.0/`, with readable explanation, lineage, evidence-based status, last verified step, unfinished tasks, blocker, next action, and recovery link.
+
+The user's explicit designation controls which context becomes a 0.0 anchor; do not infer it from the current topic. Multiple unfinished points may coexist. When asked which 0.0 points remain incomplete, inspect the central registry and point records, then report all OPEN / INCOMPLETE / BLOCKED / WAITING items with their IDs and next actions. Preserve history and do not infer completion from intent or a write alone.
+
+This architecture is part of the project's building/governance structure and is bound to the «ثبت کن» command contract. Each write must pass `WRITE → READ-BACK → MATCH → VERIFY`. Repository evidence does not prove Buffer, Library, Persistent Memory, or Dropbox persistence.
