@@ -10,7 +10,7 @@
 - **Owner:** Ahmad Nezhadhosseini / احمد پلنگ
 - **Project:** Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
 - **Artifact Type:** Governing Architectural Principle + Living Reference Document (اصل حاکم معماری + سند مرجع زنده)
-- **Status:** نسخهٔ 1.0.1 در مخزن بازخوانی و محتوای کلیدی آن تطبیق شد؛ فرمان حاکم، قرارداد عمومی ثبت، سند مرجع مادر و صف نیز به‌روزرسانی و بازخوانی شده‌اند. بافر، کتابخانه و حافظهٔ پایدار مستقلاً تأیید نشده‌اند.
+- **Status:** نسخهٔ 1.0.2 در مخزن بازخوانی و محتوای کلیدی آن تطبیق شد؛ فرمان حاکم، قرارداد عمومی ثبت، سند مرجع مادر و صف نیز به‌روزرسانی و بازخوانی شده‌اند. بافر، کتابخانه و حافظهٔ پایدار مستقلاً تأیید نشده‌اند.
 - **Canonical Path:** `docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-ARCHITECTURE-EVOLUTION-DOCUMENTATION-PRINCIPLE-2026-10-12-001.md`
 - **Related Queue:** `docs/architecture/INTEGRATION-QUEUE/README.md`
 - **Governing Command Binding:** `docs/reference/REFERENCE-DOCUMENTS/REGISTER-COMMAND-GOVERNING-BINDING-2026-10-12-001.md`
