@@ -81,3 +81,16 @@ Next: Apply to every future «ثبت کن» command (اعمال بر هر فرم
 
 ## 14. Final principle / اصل نهایی
 «ثبت کن» یک درخواست برای ذخیره یک متن نیست؛ یک فرمان برای اجرای چرخه کامل ثبت و حاکمیت است. هرجا لازم است، سیستم خودش باید تشخیص دهد، سند مرجع بسازد، جایگذاری کند، در سطوح ماندگاری لازم ثبت کند، بازخوانی کند، تطبیق دهد، تأیید کند، مغایرت را رفع کند، وضعیت را از شواهد استخراج کند و در صورت شکست، همان مورد را بدون از دست رفتن و بدون شناسه تکراری وارد مسیر بازیابی کند.
+
+
+## 15. Universal architecture evolution documentation / اصل همیشگی مستندسازی تکامل معماری
+
+**Governing reference:** docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-ARCHITECTURE-EVOLUTION-DOCUMENTATION-PRINCIPLE-2026-10-12-001.md
+
+Every future «ثبت کن» operation and every new or changed project component, architecture rule, integration-queue item, interface, dependency, storage layer, recovery path, or structural element must preserve the full reasoning chain, not merely the outcome. Record: discovery/problem → source evidence → investigation/test → finding → interpretation/root-cause analysis → decision and rationale → architecture impact and relationships → acceptance criteria → independent verification → remaining gaps and recovery pointer.
+
+Separate observation, interpretation, and decision. Record rejected alternatives only when they were actually considered. Unknown facts remain UNKNOWN / UNVERIFIED. Each queue item must link to a complete living reference or a complete section in a parent reference; document why it exists, why it belongs in the architecture, its dependencies, exact destinations, per-destination status, and next action.
+
+A link or status note is not semantic integration. A target is INTEGRATED only after the change is placed in the appropriate architectural location, reconciled with related rules/dependencies, independently read back, content-matched, and tied to destination version/commit evidence. If blocked, preserve the case as PENDING / BLOCKED and resume from the last evidence-backed checkpoint.
+
+This requirement is permanent and automatic; the user does not need to repeat it. It strengthens the default register workflow without claiming persistence or completion in any destination that has not independently passed its evidence gate.
