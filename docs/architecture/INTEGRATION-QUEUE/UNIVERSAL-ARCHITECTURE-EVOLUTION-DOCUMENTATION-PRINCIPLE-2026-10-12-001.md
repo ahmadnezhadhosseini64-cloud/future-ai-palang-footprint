@@ -9,9 +9,9 @@
 - **Timezone:** Asia/Tehran
 - **Owner:** Ahmad Nezhadhosseini / احمد پلنگ
 - **Project:** Future AI / Palang Footprint
-- **Status:** پروندهٔ صف در مخزن بازخوانی و بخش‌های منشأ، تحلیل، معیارهای پذیرش و ادامه تطبیق شد؛ لایه‌های خارج از مخزن تأیید نشده‌اند.
+- **Status:** REPOSITORY INTEGRATION VERIFIED — پروندهٔ صف و اسناد حاکم مقصد به‌روزرسانی، مستقل بازخوانی و بخش‌های مورد انتظار تطبیق شدند؛ لایه‌های خارج از مخزن تأیید نشده‌اند.
 - **Canonical Queue Path:** docs/architecture/INTEGRATION-QUEUE/UNIVERSAL-ARCHITECTURE-EVOLUTION-DOCUMENTATION-PRINCIPLE-2026-10-12-001.md
-- **Full Reference:** docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-ARCHITECTURE-EVOLUTION-DOCUMENTATION-PRINCIPLE-2026-10-12-001.md (read-back blob before status update: 8cd4e71e2524af4f64c92877a6d681e396762e6a)
+- **Full Reference:** docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-ARCHITECTURE-EVOLUTION-DOCUMENTATION-PRINCIPLE-2026-10-12-001.md (final read-back blob before this case update: 23067a5e20f01aa003f26c62f5c0b7170fd37306)
 - **Governing Command:** docs/reference/REFERENCE-DOCUMENTS/REGISTER-COMMAND-GOVERNING-BINDING-2026-10-12-001.md
 - **Universal Contract:** docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-REGISTER-COMMAND-EXECUTION-CONTRACT-2026-09-29-001.md
 - **Master:** docs/reference/REFERENCE-DOCUMENTS/MRV-ARCHITECTURE-AND-LIVING-REFERENCE-CONTRACT-2026-09-15-001.md
@@ -64,8 +64,8 @@
 ## 6. وضعیت، مانع و ادامه
 
 - **Last Completed Step:** ایجاد سند مرجع کامل و اعمال تغییرات اولیه در فرمان حاکم، قرارداد عمومی، سند مادر و صف.
-- **Last Verified Evidence:** پروندهٔ صف در blob SHA 661bcdd15ec82e67d5b248ed6f1138ecdcebb414 بازخوانی شد؛ پس از این به‌روزرسانی باید دوباره بازخوانی شود. فرمان حاکم، قرارداد عمومی، MRV، صف و سند مرجع نیز مستقل خوانده شدند.
-- **Pending:** بازخوانی نسخهٔ جدید همین پرونده پس از ثبت شواهد؛ Buffer / Library / Persistent Memory همچنان NOT VERIFIED.
+- **Last Verified Evidence:** فرمان حاکم blob b662e539fd74bfabfa6272f45980f46a314d7573؛ قرارداد عمومی blob c6f90f22eddf8c15a3091c4654689f9572afcc26؛ MRV blob f3acca2d248cb4b9d840b2ecbfefdd2121e07e45؛ سند مرجع کامل blob 23067a5e20f01aa003f26c62f5c0b7170fd37306؛ صف blob 42da7d71bb6b86156857ba3dfa5386670a470dba. همهٔ این فایل‌ها جداگانه بازخوانی و بخش‌های کلیدی تطبیق شدند؛ نسخهٔ همین پرونده پس از این تغییر نیز باید بازخوانی شود.
+- **Pending:** بازخوانی نهایی نسخهٔ تازهٔ همین پرونده؛ Buffer / Library / Persistent Memory همچنان NOT VERIFIED.
 - **Next Action:** بازخوانی نسخهٔ تازهٔ پرونده و سپس صف نهایی؛ در اجرای بعدی هر مقصد خارج از مخزن فقط با قابلیت واقعی نوشتن/بازخوانی آزموده شود.
 - **Recovery Pointer:** همین پرونده و سند مرجع کامل با Stable ID بالا.
 - **No-Loss:** این پرونده تا وقتی تمام مقصدهای لازم تعیین تکلیف نشده‌اند حذف یا بسته نشود.
