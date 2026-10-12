@@ -99,3 +99,9 @@ Initial registered point:
 - State: OPEN / WAITING — the next task is to verify or complete Dropbox connection, then write a test file, read it back, and match its content. Dropbox connection and the test are not yet verified.
 
 **Proof gate:** each registry or point-record write must independently pass `WRITE → READ-BACK → MATCH → VERIFY`. This repository-level record does not prove Buffer, Library, Persistent Memory, or Dropbox persistence.
+
+
+## 9. Governing 0.0 Anchor Architecture
+فرمان «ثبت کن» باید معماری مدیریت چندین نقطهٔ ۰.۰ را نیز رعایت کند. مرجع کامل:
+`docs/reference/REFERENCE-DOCUMENTS/MULTI-POINT-0.0-ANCHOR-REGISTRY-ARCHITECTURE-2026-10-12-001.md`
+دفتر مرکزی در `docs/0.0/README.md` و پروندهٔ مستقل هر نقطه در `docs/0.0/` قرار دارد. هنگام تعیین نقطهٔ ۰.۰، زمینهٔ مشخص‌شده توسط کاربر حفظ شود؛ آن را با موضوع جاری اشتباه نگیر. هنگام پرسش دربارهٔ نقاط ناتمام، دفتر و پرونده‌ها بررسی و همهٔ موارد باز همراه شناسه، شرح، آخرین وضعیت تأییدشده، کار باقی‌مانده، مانع و اقدام بعدی گزارش شوند. برای هر فایل و مقصد، WRITE → READ-BACK → MATCH → VERIFY مستقل است.
