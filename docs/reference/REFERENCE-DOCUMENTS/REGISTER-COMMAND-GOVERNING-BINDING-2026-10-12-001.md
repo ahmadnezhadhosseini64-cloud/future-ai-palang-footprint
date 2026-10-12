@@ -56,3 +56,29 @@
 
 ## 6. No-loss recovery rule
 If interrupted or blocked, preserve this same Production ID and Stable ID relationship; keep the work pending rather than dropping it. On return: retrieve → identify → validate → deduplicate → reconcile → register → read back → verify → continue. Do not ask the user to repeat retrievable material.
+
+
+## 7. Repository-unavailable fallback and integration gate
+
+**Fallback production record:** `REGISTER-REPOSITORY-UNAVAILABLE-FALLBACK-2026-10-12-001`  
+**Fallback file:** `docs/reference/REFERENCE-DOCUMENTS/REGISTER-REPOSITORY-UNAVAILABLE-FALLBACK-2026-10-12-001.md`  
+**Governing master:** `MRV-ARCHITECTURE-AND-LIVING-REFERENCE-CONTRACT-2026-09-15-001`, section 31.
+
+When the repository, a write operation, or read-back verification is unavailable or blocked:
+
+1. Report the precise known state and identify the step that did not complete. Never equate a successful standalone-file write with full integration.
+2. Preserve the work in a complete, copyable continuation/reference document for the user to retain and resend if needed. Do not claim that a buffer or persistent memory was automatically updated.
+3. When access returns, retrieve the current master, this command-binding, and the fallback record; inspect lineage and history; validate identity; deduplicate and reconcile; then update each required file independently.
+4. Before updating an existing file, fetch its current content and blob SHA. After the write, fetch it again and verify that the intended section and content are present. Record the commit and read-back evidence for each file.
+5. Report repository, Library, Buffer, and Persistent Memory states separately. Repository evidence cannot prove persistence in the other destinations.
+
+### Integration status gate
+
+- `FALLBACK RECORD VERIFIED` requires repository read-back and content match.
+- `MASTER INTEGRATION VERIFIED` requires the fallback rule to be present in the master after read-back and match.
+- `COMMAND BINDING INTEGRATION VERIFIED` requires this section to be present in this file after read-back and match.
+- If any required step is incomplete, the overall command status must remain `PARTIAL / OPEN`, with the unfinished step named.
+
+**Execution chain:** `PRESERVE → FETCH CURRENT VERSION → VALIDATE → DEDUPLICATE → RECONCILE → WRITE → READ-BACK → MATCH → VERIFY → REPORT`.
+
+This section extends the existing command contract; it does not replace earlier rules or imply persistence outside the repository.
