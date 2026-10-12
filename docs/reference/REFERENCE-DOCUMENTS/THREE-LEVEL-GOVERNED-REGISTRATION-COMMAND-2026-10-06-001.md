@@ -2,14 +2,14 @@
 
 **Stable ID:** THREE-LEVEL-GOVERNED-REGISTRATION-COMMAND-2026-10-06-001  
 **Production ID:** 3LR-GOVREG-CMD-2026-10-06-001  
-**Version:** 1.1.1  
+**Version:** 1.1.2  
 **Date:** 2026-10-12  
 **Timezone:** Asia/Tehran (+03:30)  
 **Owner:** Ahmad Nezhadhosseini / احمد پلنگ  
 **Location:** Gonbad-e Kavus, Iran  
 **Project:** Future AI / Palang Footprint  
 **Type:** Master Reference / Architectural Contract  
-**Status:** ACTIVE / LIVING — revision 1.1.0; execution status per destination evidence matrix below  
+**Status:** ACTIVE / LIVING as governing specification; runtime automation and three-level completion are separately evidence-gated.  
 **Origin:** نتیجه چکش ریشه‌ای خطای فهم سؤال، مسیر جست‌وجو و ثبت ناقص در معماری سه‌سطحی  
 **Parent Architecture:** THREE-LAYER-REGISTRATION-ARCHITECTURE-2026-10-06-001 / 3LR-REG-2026-10-06-001  
 **Related Amendment:** THREE-LAYER-VERIFICATION-FAILURE-HARDENING-2026-10-06-001 / 3LR-HARDEN-2026-10-06-001  
@@ -519,10 +519,56 @@ This revision extends, and does not replace, the prior 2026-10-06 Version 1.0 re
 
 ---
 
-## 23. Current operational declaration
+## 23. Historical operational declaration from revision 1.1.0
 
-**Command semantics:** `ACTIVE / LIVING`  
-**Repository revision 1.1.0:** `REGISTERED / READ-BACK / MATCH / VERIFIED`; commit `d6b82d7b0a179e3013524dbf39ab10a8c93f8c53`.  
-**Buffer revision 1.1.0:** `REGISTERED / READ-BACK / MATCH / VERIFIED`; exact content match against the Repository payload.  
-**Persistent Memory:** `WRITE-ACCEPTED / NOT-INDEPENDENTLY-VERIFIED`; no new memory write or independent read-back was available in this operation.  
-**Overall three-level completion:** `PARTIAL / PENDING` because Persistent Memory is not independently verified.
+**Historical snapshot only — not the latest state.** At that time, command semantics were marked `ACTIVE / LIVING`; Repository and Buffer were reported as revision 1.1.0; Persistent Memory was `WRITE-ACCEPTED / NOT-INDEPENDENTLY-VERIFIED`. The current audit state is recorded in Section 24 below.
+---
+
+## 24. Revision 1.1.2 — Hammer Audit of Actual Registration Evidence
+
+**Audit Date:** 2026-10-12  
+**Exact Time:** Not independently captured; intentionally not invented.  
+**Audit Trigger:** User requested a hammer-level audit to distinguish actual execution from an unsupported success report.  
+**Audit Method:** Independently fetch the canonical repository file; read back the exact Buffer and Reference Vault files; compare the complete returned text representations; inspect the universal registration contract.  
+**Related contract:** UNIVERSAL-REGISTER-COMMAND-EXECUTION-CONTRACT-2026-09-29-001.
+
+### 24.1 Findings before this revision
+
+1. The canonical repository copy, Buffer copy, and Reference Documents Vault copy all existed and were independently retrieved.
+2. The complete returned text for repository, Buffer, and Reference Vault was identical at the time of audit (17,475 characters per returned text representation; Library metadata reported 21,963 bytes for each stored file). This verifies equality of those retrieved representations for revision 1.1.1.
+3. The previous revision contained a governance/documentation defect: the header identified Version 1.1.1, while the operational declaration still called the current state revision 1.1.0. That mismatch is corrected by this revision; the older declaration is retained explicitly as historical.
+4. The Persistent Memory layer was not independently retrieved or read back. Its write acceptance, if any, is not proof of exact document persistence, recall in a future conversation, or independent verification.
+5. A reference contract and a saved state record do not by themselves prove an autonomous background retry/runtime mechanism. The recovery obligation is documented and must be resumed when a valid execution opportunity exists; no unobserved background process is claimed.
+
+### 24.2 Evidence matrix for the audit
+
+| Destination | Evidence established | Current state |
+|---|---|---|
+| Canonical Repository | The repository file was fetched; its full text was the comparison baseline. This revision must be fetched again after commit. | Pending verification of revision 1.1.2 until post-write read-back |
+| Registration Buffer | Full stored file independently read; it matched the repository baseline for revision 1.1.1. This revision must be uploaded and read back. | Pending verification of revision 1.1.2 until post-write read-back |
+| Reference Documents Vault | Full stored file independently read; it matched the repository baseline for revision 1.1.1. This revision must be uploaded and read back. | Pending verification of revision 1.1.2 until post-write read-back |
+| Persistent Memory | No provider-level independent read-back was available in this audit. | NOT-INDEPENDENTLY-VERIFIED / PENDING |
+
+### 24.3 Full-contract interpretation
+
+The governing command is not limited to creating this reference document. A plain «ثبت کن» invokes the applicable rules from this master reference and the Universal Register Command Execution Contract, including:
+
+- preserve the user's actual target, requested action, destinations/conditions, and required output before acting;
+- preserve the full valuable artifact/context, classify it, retain provenance, lineage, previous versions, stable/production identity, architectural placement, and recovery pointers;
+- assess whether a complete reference document is required and create/update it in the canonical reference location when applicable;
+- attempt each required destination independently: Repository, Buffer/Library, and Persistent Memory;
+- record write evidence, then independently read back each destination where supported, compare the retrieved representation, verify against the correct version/revision, reconcile differences, and report each layer's real state;
+- preserve every unfinished layer with the same identity and lineage, explicit blocker, pending state, and next recovery action; do not call it lost, silently replace it, or create duplicate logical records;
+- on a later valid recovery opportunity, excavate the pending state, identify, validate, deduplicate, connect/reconcile, finish the missing destination, read back, match, verify, and only then promote the overall status;
+- do not claim implementation, automatic runtime execution, future-session recall, exact byte persistence, or completion without evidence that specifically supports that claim;
+- explain English IDs/statuses/technical terms in Persian responses.
+
+### 24.4 Current completion gate
+
+**The three-level transaction is not complete unless Repository, Buffer, and Persistent Memory each have their own destination-specific evidence sufficient for the claim being made.** Evidence from the Reference Vault is useful Library evidence, but it does not substitute for the canonical Repository or Persistent Memory.
+
+**Overall status before post-write verification of this revision:** PARTIAL / PENDING.  
+**Persistent Memory:** NOT-INDEPENDENTLY-VERIFIED / PENDING.  
+**Contract semantics:** ACTIVE / LIVING as the governing specification; actual runtime automation remains unproven unless separately tested.
+
+This revision adds an audit layer without deleting the prior history or reclassifying historical evidence as current proof.
