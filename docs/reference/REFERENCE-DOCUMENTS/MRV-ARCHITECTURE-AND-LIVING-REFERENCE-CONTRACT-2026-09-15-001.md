@@ -1007,3 +1007,18 @@ The dedicated living reference for this architecture is `docs/reference/REFERENC
 The user's explicit designation controls which context becomes a 0.0 anchor; do not infer it from the current topic. Multiple unfinished points may coexist. When asked which 0.0 points remain incomplete, inspect the central registry and point records, then report all OPEN / INCOMPLETE / BLOCKED / WAITING items with their IDs and next actions. Preserve history and do not infer completion from intent or a write alone.
 
 This architecture is part of the project's building/governance structure and is bound to the «ثبت کن» command contract. Each write must pass `WRITE → READ-BACK → MATCH → VERIFY`. Repository evidence does not prove Buffer, Library, Persistent Memory, or Dropbox persistence.
+
+
+## 36. Universal Architecture Evolution Documentation Principle — اصل همیشگی مستندسازی تکامل معماری
+
+**Canonical living reference:** docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-ARCHITECTURE-EVOLUTION-DOCUMENTATION-PRINCIPLE-2026-10-12-001.md
+
+This is a permanent, default architectural rule for the entire Future AI / Palang Footprint project. Every new or changed component, rule, queue item, interface, dependency, storage surface, recovery mechanism, and structural element must document not only what changed, but how the project reached the decision and why the change belongs in the architecture.
+
+Required chain: **observation → evidence → investigation/test → finding → interpretation → decision/rationale → architecture impact and relationships → acceptance criteria → independent read-back/match → status and recovery pointer**. Separate observations from interpretations and decisions. Preserve source, lineage, alternatives actually considered, dependencies, risks, unknowns, exact destinations, per-destination evidence, unfinished work, blocker and next action. Do not invent missing reasoning or timestamps.
+
+The «ثبت کن» command, the Universal Register Execution Contract, and every integration queue must enforce this rule automatically. A queue entry is a preserved case, not proof of architecture integration. A reference link is not a substitute for semantic integration. REGISTERED ≠ INTEGRATED ≠ VERIFIED (ثبت‌شده با ادغام‌شده و تأییدشده یکی نیست).
+
+For each target, fetch the current version, preserve existing history, make the semantic change in the appropriate location, read it back independently, match expected content, and record destination version/commit evidence. If any step is blocked, preserve the same identity and checkpoint as PENDING / BLOCKED. Repository proof does not imply Buffer, Library, or Persistent Memory persistence.
+
+**Lineage:** this section operationalizes the user's explicit permanent requirement on 2026-10-12 and binds the new reference principle to the master architecture. Its addition here does not by itself mean every historical project artifact has already been migrated; historical review remains evidence-driven.
