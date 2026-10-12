@@ -975,3 +975,27 @@ The command MUST be interpreted as the full lifecycle defined in this document, 
 **No-loss rule:** `PRESERVE → IDENTIFY → VALIDATE → DEDUPLICATE → RECONCILE → REGISTER → READ-BACK → MATCH → VERIFY → REPORT STATUS`.
 
 This section supplements the master and preserves its existing content and history. It does not imply that the companion command-binding or any non-repository destination has been updated.
+
+
+## 32. 0.0 Anchor Registry — Multi-point Resume Control
+
+The canonical folder for user-designated 0.0 resume points is `docs/0.0/`, with `docs/0.0/README.md` as the central registry. A 0.0 point is an explicit resume anchor chosen by Ahmad Palang; it is not automatically the current conversation or the latest topic. Multiple anchors may coexist and may remain unfinished independently.
+
+When the user says `«این نقطه را ۰.۰ در نظر بگیر»`:
+1. Preserve the designated context and its origin/lineage.
+2. Assign or retain a unique Anchor ID / Stable ID and Production ID; do not create a duplicate identity for the same continuation.
+3. Create or version a dedicated point record in `docs/0.0/` and update the registry.
+4. Record a readable Persian explanation, current verified state, last confirmed step, unfinished tasks, blockers/dependencies, next action, related documents, and retrieval links.
+5. Read back each modified file and match its expected content independently before reporting repository verification.
+6. Report each storage destination separately; repository verification does not imply Buffer, Library, Persistent Memory, or cloud-provider verification.
+
+When the user asks which 0.0 points remain incomplete, inspect the registry and the corresponding point records. List every OPEN / INCOMPLETE / BLOCKED / WAITING point with its ID, concise explanation, verified state, remaining work, blocker, next action, and link. Never infer completion without evidence. Preserve history when status changes.
+
+Initial point registered:
+- Anchor ID: `PALANG-DROPBOX-FAILOVER-RESUME-0.0-2026-10-12-001`
+- Registry: `docs/0.0/README.md`
+- Point record: `docs/0.0/PALANG-DROPBOX-FAILOVER-RESUME-0.0-2026-10-12-001.md`
+- Status: OPEN / WAITING — Dropbox connection and the write/read-back/match test remain unverified.
+- Next action: inspect or complete the Dropbox connection through the available app interface; then write a safe test file, read it back, and compare its content.
+
+**Proof gate:** `WRITE → READ-BACK → MATCH → VERIFY`. The folder and its files are repository artifacts; this does not establish registration in other destinations.
