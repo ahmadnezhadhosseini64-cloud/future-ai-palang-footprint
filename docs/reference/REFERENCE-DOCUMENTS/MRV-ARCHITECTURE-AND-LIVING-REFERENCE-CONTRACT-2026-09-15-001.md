@@ -927,3 +927,20 @@ This section is an explicit binding of the user's intended command semantics to 
 The repository update must be followed by a fresh read-back and content check. Until that succeeds, repository write status is not verified. Buffer and Persistent Memory remain separate evidence obligations unless independently written and read back. Do not promote the overall three-level registration to fully complete based only on repository evidence.
 
 **No repeated user explanation required. No unsupported permanence claim. No false three-level completion.**
+
+---
+
+## 34. Governing command binding — «ثبت کن» as the default execution contract
+
+**Binding rule (added 2026-10-12):** Whenever Ahmad Nezhadhosseini / احمد پلنگ says «ثبت کن», this master reference is the governing contract by default. The user is not required to restate these requirements. This binding applies to new registration work and continuation/recovery of incomplete work.
+
+The command MUST be interpreted as the full lifecycle defined in this document, not as “remember this in chat” or “write one file”. Execute all stages supported by the current environment: preserve; classify; capture provenance/context/evidence and lineage; assign or reuse stable and production identifiers; create/update the complete reference artifact when warranted; place it in the canonical repository and other genuinely available destinations; perform destination-specific write → read-back → match → verify; reconcile architecture and versions; and report the evidence-backed status and next action.
+
+**No overclaim rule:** A repository commit does not prove Buffer or Persistent Memory writes. A successful write response alone does not prove read-back or match. Never report ACTIVE/VERIFIED for a destination unless its required evidence exists. For inaccessible destinations, keep the item OPEN/PENDING (or the project’s defined holding state “پودینگ”), with blocker, last durable state, required capability, next transition, and recovery pointer. Preserve prior history and continue with the same Stable ID for retries unless a genuine new artifact requires a new identity.
+
+**Default retrieval rule:** When the user returns and says «ثبت کن», first retrieve and consult this governing reference and any applicable prior state available to the current environment; do not ask the user to repeat an already retrievable contract. If the reference cannot actually be retrieved, say so plainly and do not pretend it was consulted.
+
+**Canonical command-binding record:** `REGISTER-COMMAND-GOVERNING-BINDING-2026-10-12-001`  
+**Relationship:** This section binds the existing MRV master to the literal user command «ثبت کن». The companion record `docs/reference/REFERENCE-DOCUMENTS/REGISTER-COMMAND-GOVERNING-BINDING-2026-10-12-001.md` provides a concise entry point. It supplements rather than replaces this master and does not erase history.
+
+**Evidence boundary at this update:** The repository update and its read-back can establish repository persistence only. They do not establish Library, Buffer, or Persistent Memory persistence. Those destinations remain independently unverified until separately written and read back.
