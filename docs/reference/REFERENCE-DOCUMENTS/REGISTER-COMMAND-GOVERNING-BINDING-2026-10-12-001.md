@@ -3,15 +3,18 @@
 ## شناسنامه
 - **Stable ID:** `MRV-ARCHITECTURE-AND-LIVING-REFERENCE-CONTRACT-2026-09-15-001` (سند مرجع مادر؛ مرجع اصلی و حاکم)
 - **Production ID:** `REGISTER-COMMAND-GOVERNING-BINDING-2026-10-12-001`
-- **Version:** 1.0.0
+- **Version:** 1.1.0
 - **Date:** 2026-10-12
 - **Exact Time:** Not recorded by the execution system; intentionally not invented.
 - **Timezone:** Asia/Tehran (project timezone; exact execution timestamp not independently captured)
 - **Owner:** Ahmad Nezhadhosseini / احمد پلنگ
 - **Project:** Future AI / Palang Footprint — آینده AI / ردپای پلنگ
 - **Artifact Type:** Command Binding / Architectural Entry Point
-- **Status:** REPOSITORY WRITE + READ-BACK + CONTENT MATCH VERIFIED for this file and the linked MRV master; other destinations remain unverified.
+- **Status:** REPOSITORY ACTIVE/LIVING GOVERNING ENTRY — repository write + read-back + content match verified; Library copy pending; Buffer and Persistent Memory not independently verified.
 - **Canonical Parent:** `docs/reference/REFERENCE-DOCUMENTS/MRV-ARCHITECTURE-AND-LIVING-REFERENCE-CONTRACT-2026-09-15-001.md`
+
+## 0.1 Finality and living status
+این فرمان به‌عنوان **مبنای پیش‌فرض و دائمیِ حاکم برای اجرای «ثبت کن» در پروژه** تعیین شده است. «دائمی/نهایی» در اینجا یعنی قرارداد مرجع جاری است و تغییر آن فقط با نسخه‌گذاری و حفظ تاریخچه مجاز است؛ نه اینکه بتوان بدون شواهد، ماندگاری یا دسترسی همیشگی در هر سامانه‌ای را تضمین کرد. هر بار که این سند بازیابی شود، باید پیش از اجرای ثبت به‌عنوان مرجع حاکم اعمال شود. اگر بازیابی آن در یک محیط ممکن نبود، محدودیت باید صریح گفته شود؛ نباید وانمود کرد سند خوانده شده است.
 
 ## 1. Binding decision
 از این پس هرگاه کاربر بگوید **«ثبت کن»**، همین سند مرجع مادر با شناسه `MRV-ARCHITECTURE-AND-LIVING-REFERENCE-CONTRACT-2026-09-15-001` مبنای پیش‌فرض و حاکم اجرای فرمان است. کاربر لازم نیست هر بار قواعد را دوباره توضیح دهد یا این سند را مجدداً بفرستد، مشروط به اینکه مرجع از محل پایدار واقعاً قابل بازیابی باشد.
@@ -46,10 +49,10 @@
 ## 5. Current evidence and open obligations
 - The existing MRV master was fetched from the canonical repository before modification.
 - The MRV master was updated to bind the literal command «ثبت کن» to its full lifecycle.
-- This companion record is being created in the canonical repository.
+- This companion record was created in the canonical repository and subsequently read back.
 - Repository read-back completed for this file and the updated MRV master; expected binding text was found in both. README entry point was also read back and its links/headings were found.
 - Library, Buffer, and Persistent Memory have **not** been independently written/read back in this operation; do not mark them complete.
-- **Next action:** read back this file and the updated master from the repository, compare the expected binding text, then report only the verified scope. Continue other destinations only when their actual write capabilities are available.
+- **Next action:** preserve an accessible Library copy where available; separately test Buffer and Persistent Memory only through real write/read-back capability. Do not infer those states from repository evidence.
 
 ## 6. No-loss recovery rule
 If interrupted or blocked, preserve this same Production ID and Stable ID relationship; keep the work pending rather than dropping it. On return: retrieve → identify → validate → deduplicate → reconcile → register → read back → verify → continue. Do not ask the user to repeat retrievable material.
