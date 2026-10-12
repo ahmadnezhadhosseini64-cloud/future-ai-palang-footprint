@@ -869,3 +869,61 @@ with the same Stable ID and full recovery state.
 ## 34. Evidence Note
 
 این سند در این لحظه به‌عنوان artifact تولیدشده آماده persistence است. «آماده بودن» با «ثبت‌شدن در Library» یکی نیست. وضعیت نهایی فقط پس از write واقعی، read-back واقعی، match و verification قابل ارتقا است.
+
+---
+
+# 35. Binding Rule — «ثبت کن» Uses This Master by Default
+
+**Stable ID:** `MRV-ARCHITECTURE-AND-LIVING-REFERENCE-CONTRACT-2026-09-15-001`  
+**Rule ID:** `REGISTER-COMMAND-MASTER-BINDING-2026-10-12-001`  
+**Version:** `1.0.0`  
+**Project:** Future AI / Palang Footprint  
+**Owner:** Ahmad Nezhadhosseini / احمد پلنگ  
+**Effective intent:** Permanent default governing contract for every future user command `ثبت کن`, unless the user explicitly changes or supersedes this rule.
+
+## 35.1 Default interpretation — no repeated explanation required
+
+Whenever the user says **«ثبت کن»**, interpret it as the complete lifecycle in this master reference. The user is not required to repeat the rules, list the layers, or explain what registration means. Do not reduce the command to “remember this,” a short summary, a chat-only acknowledgment, or a file creation.
+
+The default lifecycle is:
+
+`PRESERVE → CLASSIFY → CAPTURE PROVENANCE → CAPTURE CONTEXT AND FULL AVAILABLE LINEAGE → ASSIGN/REUSE IDS → DEFINE EVIDENCE OBLIGATIONS → SELECT RELEVANT DESTINATIONS → WRITE/EXECUTE → READ-BACK → MATCH → VERIFY → RECONCILE → CONNECT TO ARCHITECTURE → DERIVE STATUS → CLOSE OR PRESERVE OPEN STATE`
+
+When a living reference is appropriate, also apply the complete living-reference lifecycle in this document: versioning, MRV placement, governing scope, dependency/impact lineage, retrieval/recovery path, drift/conflict/supersession checks, and architectural integration.
+
+## 35.2 Default persistence targets
+
+The user’s intended full registration model has three distinct levels, to be attempted when the necessary capabilities are actually available:
+
+1. **Canonical Repository (مخزن مرجع):** write the governing artifact to the correct repository path and read it back.
+2. **Buffer / Recovery Queue (بافر/صف بازیابی):** preserve incomplete or blocked work with its identity, last durable state, blocker, required capability, next transition, and recovery pointer.
+3. **Persistent Memory (حافظه پایدار):** preserve the compact governing instruction and retrieval pointer so later turns can apply the rule without asking the user to repeat it.
+
+A write to one target is not evidence of a write to another. Do not report the three targets as complete unless each target has its own sufficient evidence. A conversational statement that something was “saved” is not a substitute for a target-specific write and read-back.
+
+## 35.3 Governing behavior on every future use
+
+- Retrieve and consult this master reference before asking the user to repeat its rules, when retrieval is available.
+- Apply the full contract by default to each new «ثبت کن» request.
+- Reuse the existing Stable ID when continuing this same governing contract; create a new Production ID only for a genuinely new production or transition record as defined in the contract.
+- Never claim that a target was written, read back, matched, verified, activated, or made permanent unless the corresponding operation and evidence exist.
+- Report Repository, Buffer, Persistent Memory, and architectural status separately.
+- If a target is unavailable or blocked, preserve the obligation as OPEN/PENDING/UNKNOWN with the last durable state, blocker, required capability, next transition, and recovery pointer; continue the same identity rather than silently abandoning it.
+- Do not imply that this repository file alone guarantees automatic behavior in every future model, session, or environment. The repository is the canonical specification; execution and memory availability remain capability- and evidence-dependent.
+- This rule remains the default until an explicit, versioned, reconciled change supersedes it.
+
+## 35.4 Architectural placement contract for this binding
+
+- **Canonical destination:** `docs/reference/REFERENCE-DOCUMENTS/MRV-ARCHITECTURE-AND-LIVING-REFERENCE-CONTRACT-2026-09-15-001.md`
+- **Parent architecture:** Future AI / Palang Footprint → Master Reference Vault (MRV)
+- **Relationship:** Governing command contract for registration, persistence, recovery, verification, and living-reference handling.
+- **Retrieval pointer:** repository path above and the Stable ID.
+- **Next action:** verify the post-write repository read-back and match; separately complete Buffer and Persistent Memory only through actual supported operations.
+
+## 35.5 Evidence-bounded state of this update
+
+This section is an explicit binding of the user's intended command semantics to the existing master reference; it does not erase the evidence gates in sections 16–19 and 31–34.
+
+The repository update must be followed by a fresh read-back and content check. Until that succeeds, repository write status is not verified. Buffer and Persistent Memory remain separate evidence obligations unless independently written and read back. Do not promote the overall three-level registration to fully complete based only on repository evidence.
+
+**No repeated user explanation required. No unsupported permanence claim. No false three-level completion.**
