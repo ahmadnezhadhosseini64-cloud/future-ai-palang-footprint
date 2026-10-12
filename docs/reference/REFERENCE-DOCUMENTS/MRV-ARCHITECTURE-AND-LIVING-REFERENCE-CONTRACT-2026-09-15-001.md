@@ -946,3 +946,32 @@ The command MUST be interpreted as the full lifecycle defined in this document, 
 **Relationship:** This section binds the existing MRV master to the literal user command «ثبت کن». The companion record `docs/reference/REFERENCE-DOCUMENTS/REGISTER-COMMAND-GOVERNING-BINDING-2026-10-12-001.md` provides a concise entry point. It supplements rather than replaces this master and does not erase history.
 
 **Evidence boundary at this update:** The repository update and its read-back can establish repository persistence only. They do not establish Library, Buffer, or Persistent Memory persistence. Those destinations remain independently unverified until separately written and read back.
+
+
+---
+
+## 31. Register Command — Repository Unavailable Fallback and Resume
+
+**Related production record:** `REGISTER-REPOSITORY-UNAVAILABLE-FALLBACK-2026-10-12-001`  
+**Canonical file:** `docs/reference/REFERENCE-DOCUMENTS/REGISTER-REPOSITORY-UNAVAILABLE-FALLBACK-2026-10-12-001.md`  
+**Companion command binding:** `REGISTER-COMMAND-GOVERNING-BINDING-2026-10-12-001`
+
+### Governing behavior
+
+1. A successful write of a new repository file does not prove that edits to this master or its companion command-binding succeeded. Treat each file as an independent write/read-back/verification target.
+2. If repository access, a write, or a verification step fails, state the exact known state and the failed step. Do not report the entire registration as complete.
+3. Provide the user with the complete, copyable continuation/reference artifact when it is needed to preserve work outside the repository. The user may resend that same artifact when access returns.
+4. On resumption, fetch the current master, command-binding, and fallback record; inspect current history and identities; validate provenance; deduplicate; reconcile conflicts and version lineage; then update the necessary files without replacing or erasing prior history.
+5. For each updated file, fetch the current version first, use its current blob SHA for the write, then fetch the written version again and compare the content and returned SHA. A write receipt alone is not read-back proof.
+6. Repository verification proves repository state only. It does not prove Library, Buffer, or Persistent Memory persistence. Those destinations remain unverified unless separately written and read back.
+
+### Required status vocabulary
+
+- `FALLBACK RECORD VERIFIED`: only when its repository content has been read back and matched.
+- `MASTER INTEGRATION VERIFIED`: only when this section is present in the master after read-back and content match.
+- `COMMAND BINDING INTEGRATION VERIFIED`: only when the companion binding contains the corresponding rule after read-back and content match.
+- `PARTIAL / OPEN`: use when any required destination or integration remains incomplete.
+
+**No-loss rule:** `PRESERVE → IDENTIFY → VALIDATE → DEDUPLICATE → RECONCILE → REGISTER → READ-BACK → MATCH → VERIFY → REPORT STATUS`.
+
+This section supplements the master and preserves its existing content and history. It does not imply that the companion command-binding or any non-repository destination has been updated.
