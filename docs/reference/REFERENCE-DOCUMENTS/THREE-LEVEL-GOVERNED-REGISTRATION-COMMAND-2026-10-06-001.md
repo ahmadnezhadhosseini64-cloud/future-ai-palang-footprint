@@ -2,7 +2,7 @@
 
 **Stable ID:** THREE-LEVEL-GOVERNED-REGISTRATION-COMMAND-2026-10-06-001  
 **Production ID:** 3LR-GOVREG-CMD-2026-10-06-001  
-**Version:** 1.1.3  
+**Version:** 1.1.4  
 **Date:** 2026-10-12  
 **Timezone:** Asia/Tehran (+03:30)  
 **Owner:** Ahmad Nezhadhosseini / احمد پلنگ  
@@ -613,9 +613,41 @@ This revision adds an audit layer without deleting the prior history or reclassi
 
 درخواست 2026-10-12 این است که همین قاعده به‌صورت سند مرجع کامل، با حفظ شناسه و تبار فعلی، در تمام سطوح ثبت شود.
 
-- Repository / مخزن: باید نسخهٔ جدید نوشته و از مخزن دوباره خوانده شود.
-- Buffer / بافر: باید همین نسخهٔ دقیق دریافت و مستقل بازخوانی شود.
-- Reference Documents Vault / خزانهٔ اسناد مرجع: باید همین نسخهٔ دقیق دریافت و مستقل بازخوانی شود.
-- Persistent Memory / حافظهٔ پایدار: فقط در صورت وجود ابزار واقعی نوشتن و بازخوانی مستقل می‌توان وضعیت ثبت‌شده را اعلام کرد؛ در غیر این صورت معلق و مستقل‌تأییدنشده باقی می‌ماند.
+- Repository / مخزن: نسخهٔ 1.1.3 نوشته شد و از مخزن دوباره خوانده شد.
+- Buffer / بافر: نسخهٔ 1.1.3 بارگذاری و مستقل بازخوانی شد؛ متن برگشتی با نسخهٔ مخزن پس از نادیده‌گرفتن newline انتهایی یکسان بود.
+- Reference Documents Vault / خزانهٔ اسناد مرجع: نسخهٔ 1.1.3 بارگذاری و مستقل بازخوانی شد؛ متن برگشتی با نسخهٔ مخزن پس از نادیده‌گرفتن newline انتهایی یکسان بود.
+- Persistent Memory / حافظهٔ پایدار: ابزار مستقلِ نوشتن و بازخوانی حافظه در این اجرا در دسترس نبود؛ وضعیت ثبت در این سطح معلق و مستقل‌تأییدنشده باقی می‌ماند.
 
 **Overall completion gate / شرط تکمیل کلی:** PARTIAL / PENDING تا زمانی که برای هر سه سطح اصلی (مخزن، بافر و حافظهٔ پایدار) شواهد مقصد-ویژه وجود نداشته باشد. بازخوانی خزانهٔ اسناد مرجع، به‌تنهایی جایگزین اثبات حافظهٔ پایدار نیست.
+
+
+---
+
+## 26. Revision 1.1.4 — Post-write Read-back and Three-level Status
+
+**Audit Date:** 2026-10-12  
+**Exact Time:** NOT CAPTURED / زمان دقیق مستقلاً ثبت نشده است.  
+**Purpose:** Update the previous section's pre-write action list with observed post-write evidence; preserve the limitation rather than claim full completion.
+
+### 26.1 Evidence established for revision 1.1.3
+
+- **Repository / مخزن:** Version 1.1.3 was fetched after the repository update. The returned content was 26,017 characters and contained Amendment 25.
+- **Buffer / بافر:** the full uploaded file was independently read back. Its returned text was 26,017 characters, Version 1.1.3, and contained Amendment 25.
+- **Reference Documents Vault / خزانهٔ اسناد مرجع:** the full uploaded file was independently read back. Its returned text was 26,017 characters, Version 1.1.3, and contained Amendment 25.
+- **Text comparison:** the Buffer and Vault read-back representations were identical to each other. Repository and both Library copies match after accounting for the Library reader's omission of the final newline; this is text-level comparison, not a claim of provider-level byte-identical storage.
+- **Persistent Memory / حافظهٔ پایدار:** no tool supporting independent provider-level write and read-back was available in this execution. This level is not verified.
+
+### 26.2 Status matrix
+
+| Destination | Write evidence | Independent read-back | Comparison | Status |
+|---|---|---|---|---|
+| Repository / مخزن | Repository update returned commit `820c805e208ec15eee059689fe88684dab61fbb9`; blob `890304b37eaec0e77933ccba8a4ad0331ce7fcd3` | Yes | Full returned text fetched | VERIFIED for revision 1.1.3 |
+| Buffer / بافر | Upload operation succeeded | Yes | Matches Vault; matches Repository text after final-newline normalization | VERIFIED for revision 1.1.3 |
+| Reference Documents Vault / خزانهٔ اسناد مرجع | Upload operation succeeded | Yes | Matches Buffer; matches Repository text after final-newline normalization | VERIFIED for revision 1.1.3 |
+| Persistent Memory / حافظهٔ پایدار | No provider-level write receipt available in this execution | No | Not testable | NOT-INDEPENDENTLY-VERIFIED / PENDING |
+
+**Overall status:** PARTIAL / PENDING. The reference document is now confirmed in Repository, Buffer, and Reference Documents Vault, but the required three-level operation is not complete because Persistent Memory lacks independent verification.
+
+### 26.3 Next action and recovery pointer
+
+Retain Stable ID `THREE-LEVEL-GOVERNED-REGISTRATION-COMMAND-2026-10-06-001`, Production ID `3LR-GOVREG-CMD-2026-10-06-001`, and this revision lineage. When a genuine persistent-memory write/read-back capability is available, preserve the operative command semantics and this status record, independently read back what was stored, compare the intended representation, and update the status only to the level the evidence supports. Do not represent a summary-memory entry as proof that this full document was stored verbatim.
