@@ -10,7 +10,7 @@
 - **Owner:** Ahmad Nezhadhosseini / احمد پلنگ
 - **Project:** Future AI / Palang Footprint — آینده AI / ردپای پلنگ
 - **Artifact Type:** Command Binding / Architectural Entry Point
-- **Status:** Repository write reported successful; read-back verification pending at creation.
+- **Status:** REPOSITORY WRITE + READ-BACK + CONTENT MATCH VERIFIED for this file and the linked MRV master; other destinations remain unverified.
 - **Canonical Parent:** `docs/reference/REFERENCE-DOCUMENTS/MRV-ARCHITECTURE-AND-LIVING-REFERENCE-CONTRACT-2026-09-15-001.md`
 
 ## 1. Binding decision
@@ -47,7 +47,7 @@
 - The existing MRV master was fetched from the canonical repository before modification.
 - The MRV master was updated to bind the literal command «ثبت کن» to its full lifecycle.
 - This companion record is being created in the canonical repository.
-- Repository write/read-back must be checked after the write.
+- Repository read-back completed for this file and the updated MRV master; expected binding text was found in both. README entry point was also read back and its links/headings were found.
 - Library, Buffer, and Persistent Memory have **not** been independently written/read back in this operation; do not mark them complete.
 - **Next action:** read back this file and the updated master from the repository, compare the expected binding text, then report only the verified scope. Continue other destinations only when their actual write capabilities are available.
 
