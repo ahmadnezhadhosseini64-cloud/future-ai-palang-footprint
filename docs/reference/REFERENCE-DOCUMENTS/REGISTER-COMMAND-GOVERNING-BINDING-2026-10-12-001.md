@@ -86,7 +86,7 @@ This section extends the existing command contract; it does not replace earlier 
 
 ## 8. 0.0 Anchor Registry — Multi-point Resume Control
 
-The canonical registry for user-designated 0.0 resume points is `docs/۰.۰/README.md`. Each point must have its own record under `docs/۰.۰/`, using a unique Anchor ID / Stable ID, a readable Persian explanation, status, origin/lineage, last verified state, unfinished work, blocker, next action, and links to the full reference document.
+The canonical registry for user-designated 0.0 resume points is `docs/0.0/README.md`. Each point must have its own record under `docs/0.0/`, using a unique Anchor ID / Stable ID, a readable Persian explanation, status, origin/lineage, last verified state, unfinished work, blocker, next action, and links to the full reference document.
 
 When Ahmad Palang says **«این نقطه را ۰.۰ در نظر بگیر»**, preserve the exact point as an independent anchor, create or version its record, update the central registry, then read back and match both files. Do not reuse the current conversation's subject as a 0.0 anchor unless the user explicitly designates it. Multiple 0.0 points may coexist; some may remain OPEN / INCOMPLETE / BLOCKED / WAITING.
 
@@ -94,8 +94,8 @@ When asked **«نقطه‌های ۰.۰ تکمیل‌نشده چی مونده؟»
 
 Initial registered point:
 - Anchor ID: `PALANG-DROPBOX-FAILOVER-RESUME-0.0-2026-10-12-001`
-- Record: `docs/۰.۰/PALANG-DROPBOX-FAILOVER-RESUME-0.0-2026-10-12-001.md`
-- Registry: `docs/۰.۰/README.md`
+- Record: `docs/0.0/PALANG-DROPBOX-FAILOVER-RESUME-0.0-2026-10-12-001.md`
+- Registry: `docs/0.0/README.md`
 - State: OPEN / WAITING — the next task is to verify or complete Dropbox connection, then write a test file, read it back, and match its content. Dropbox connection and the test are not yet verified.
 
 **Proof gate:** each registry or point-record write must independently pass `WRITE → READ-BACK → MATCH → VERIFY`. This repository-level record does not prove Buffer, Library, Persistent Memory, or Dropbox persistence.
