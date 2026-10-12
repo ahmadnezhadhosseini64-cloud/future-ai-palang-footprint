@@ -82,3 +82,20 @@ When the repository, a write operation, or read-back verification is unavailable
 **Execution chain:** `PRESERVE → FETCH CURRENT VERSION → VALIDATE → DEDUPLICATE → RECONCILE → WRITE → READ-BACK → MATCH → VERIFY → REPORT`.
 
 This section extends the existing command contract; it does not replace earlier rules or imply persistence outside the repository.
+
+
+## 8. 0.0 Anchor Registry — Multi-point Resume Control
+
+The canonical registry for user-designated 0.0 resume points is `docs/0.0/README.md`. Each point must have its own record under `docs/0.0/`, using a unique Anchor ID / Stable ID, a readable Persian explanation, status, origin/lineage, last verified state, unfinished work, blocker, next action, and links to the full reference document.
+
+When Ahmad Palang says **«این نقطه را ۰.۰ در نظر بگیر»**, preserve the exact point as an independent anchor, create or version its record, update the central registry, then read back and match both files. Do not reuse the current conversation's subject as a 0.0 anchor unless the user explicitly designates it. Multiple 0.0 points may coexist; some may remain OPEN / INCOMPLETE / BLOCKED / WAITING.
+
+When asked **«نقطه‌های ۰.۰ تکمیل‌نشده چی مونده؟»**, inspect the registry and each relevant point record, then list every unfinished point with: Anchor ID, concise Persian explanation, current verified state, what remains, blocker/dependency, next action, and record link. Do not call a point complete without evidence. Preserve historical versions and relationships; never silently overwrite an older anchor.
+
+Initial registered point:
+- Anchor ID: `PALANG-DROPBOX-FAILOVER-RESUME-0.0-2026-10-12-001`
+- Record: `docs/0.0/PALANG-DROPBOX-FAILOVER-RESUME-0.0-2026-10-12-001.md`
+- Registry: `docs/0.0/README.md`
+- State: OPEN / WAITING — the next task is to verify or complete Dropbox connection, then write a test file, read it back, and match its content. Dropbox connection and the test are not yet verified.
+
+**Proof gate:** each registry or point-record write must independently pass `WRITE → READ-BACK → MATCH → VERIFY`. This repository-level record does not prove Buffer, Library, Persistent Memory, or Dropbox persistence.
