@@ -522,6 +522,8 @@ This revision extends, and does not replace, the prior 2026-10-06 Version 1.0 re
 ## 23. Historical operational declaration from revision 1.1.0
 
 **Historical snapshot only — not the latest state.** At that time, command semantics were marked `ACTIVE / LIVING`; Repository and Buffer were reported as revision 1.1.0; Persistent Memory was `WRITE-ACCEPTED / NOT-INDEPENDENTLY-VERIFIED`. The current audit state is recorded in Section 24 below.
+
+
 ---
 
 ## 24. Revision 1.1.2 — Hammer Audit of Actual Registration Evidence
