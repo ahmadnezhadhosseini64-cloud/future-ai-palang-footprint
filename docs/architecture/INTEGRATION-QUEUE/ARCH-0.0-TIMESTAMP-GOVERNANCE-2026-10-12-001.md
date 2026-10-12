@@ -3,7 +3,7 @@
 ## شناسنامه
 - Stable ID: ARCH-0.0-TIMESTAMP-GOVERNANCE-2026-10-12-001
 - Production ID: ARCH0TSG-2026-10-12-001
-- Version: 1.0.0
+- Version: 1.1.0
 - Date: 2026-10-12
 - Exact Time: زمان دقیق ایجاد این پرونده مستقلاً ثبت نشده؛ حدس زده نمی‌شود.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
@@ -12,6 +12,8 @@
 - Status: PENDING INTEGRATION — در انتظار اتصال به اسناد مرجع مادر؛ پس از نوشتن باید بازخوانی شود.
 - Origin / Lineage: قرارداد «ثبت زمان نقاط ۰.۰» که در docs/0.0/README.md درج شده؛ اتصال به اسناد مرجع مادر و حاکم فرمان هنوز در این اجرا تأیید نشده است.
 - Queue Index: docs/architecture/INTEGRATION-QUEUE/README.md
+- Governing Lock 1: AIQ-LOCK-PRESERVATION-2026-10-12-001 — قفل حفظ
+- Governing Lock 2: AIQ-LOCK-INTEGRATION-VERIFICATION-2026-10-12-001 — قفل تأیید ادغام
 
 ## 1. تغییر مورد انتظار
 هر نقطهٔ ۰.۰ باید زمان‌های مستقل و منشأ هر زمان را نگه دارد:
@@ -45,5 +47,9 @@
 - Library: NOT VERIFIED — تأیید نشده.
 - Persistent Memory: NOT VERIFIED — تأیید نشده.
 
-## 6. قاعدهٔ نهایی
+## 6. قفل‌های اجباری در این پرونده
+1. **قفل حفظ — AIQ-LOCK-PRESERVATION-2026-10-12-001:** این پرونده تا تعیین تکلیف مستند و حفظ تاریخچه نباید بی‌صدا حذف یا کنار گذاشته شود؛ اگر ادغام انجام نشد، وضعیت PENDING / BLOCKED باقی بماند.
+2. **قفل تأیید ادغام — AIQ-LOCK-INTEGRATION-VERIFICATION-2026-10-12-001:** این مورد فقط پس از به‌روزرسانی واقعی هر مقصد، بازخوانی مستقل، تطبیق محتوا و ثبت شاهد نسخه/commit مقصد می‌تواند INTEGRATED / VERIFIED شود.
+
+## 7. قاعدهٔ نهایی
 وجود این پرونده به معنی تکمیل ادغام نیست. فقط پس از ثبت مقصد، بازخوانی، تطبیق محتوا و پیوند دادن commit/نسخهٔ مقصد می‌توان آن را INTEGRATED / VERIFIED (یکپارچه‌شده / تأییدشده) کرد.
