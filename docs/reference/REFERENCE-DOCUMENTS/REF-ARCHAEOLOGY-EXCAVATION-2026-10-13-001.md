@@ -14,7 +14,7 @@
 - **Parent / سند مادر:** MRV-ARCHITECTURE-AND-LIVING-REFERENCE-CONTRACT-2026-09-15-001
 - **Governing Entry / ورودی حاکم فرمان:** REGISTER-COMMAND-GOVERNING-BINDING-2026-10-12-001
 - **Previous Archaeology / خاک‌برداری پیشین:** REF-ARCHAEOLOGY-EXCAVATION-2026-09-29-001
-- **Status / وضعیت:** REPOSITORY WRITE PENDING READ-BACK AT CREATION; OUT-OF-REPOSITORY DESTINATIONS UNVERIFIED
+- **Status / وضعیت:** REPOSITORY WRITE + READ-BACK + CONTENT MATCH VERIFIED; BUFFER / PERSISTENT MEMORY / LIBRARY NOT VERIFIED
 - **Scope / دامنه:** خاک‌برداری دقیق از سوابق قابل‌بازیابی و تکمیل ثبت مقصدبه‌مقصد؛ نقطهٔ ۰.۰ عمداً اجرا یا آغاز نمی‌شود.
 
 ## 1. فرمان و محدودیت‌های لازم‌الاجرا
@@ -63,9 +63,11 @@
 ### A. مخزن (Repository)
 - **قابلیت:** اتصال GitHub در این اجرا در دسترس بود؛ فایل‌های مرجع بالا واقعاً خوانده شدند.
 - **اقدام این پرونده:** ایجاد همین پرونده در مسیر مرجع رسمی.
-- **وضعیت پیش از ایجاد:** هنوز نوشته نشده بود.
-- **معیار تکمیل:** پس از ایجاد، همین فایل باید جداگانه از مخزن خوانده شود و شناسه، مسیر، بخش‌های کلیدی و محتوای مورد انتظار تطبیق یابند؛ commit SHA و blob SHA ثبت شوند.
-- **ممنوعیت:** تا انجام بازخوانی پس از نوشتن، وضعیت را VERIFIED اعلام نکن.
+- **نتیجهٔ نوشتن:** commit SHA: `39e25d2cd17546e371013122260fb518ac9495fc`.
+- **نتیجهٔ بازخوانی مستقل پس از نوشتن:** فایل از مخزن دوباره خوانده شد؛ Stable ID، مرز عدم اجرای ۰.۰، وضعیت مقصدها و معیار پذیرش در محتوای بازخوانی‌شده یافت شدند.
+- **Blob SHA پس از بازخوانی:** `146577e6c2ea7ff47d3c7ddaad2f0937347b9b7d`.
+- **وضعیت مخزن:** VERIFIED IN REPOSITORY — نوشتن، بازخوانی و تطبیق محتوای کلیدی تأیید شد.
+- **محدودیت:** این شواهد فقط مخزن را اثبات می‌کند؛ بافر، حافظهٔ پایدار و Library همچنان مستقلاً تأیید نشده‌اند.
 
 ### B. بافر (Buffer)
 - **شواهد مستقل این اجرا:** ابزار مستقل بافر با امکان نوشتن و بازخوانی قابل استفاده در این اجرا احراز نشد.
@@ -112,7 +114,7 @@
 
 ## 8. معیار پذیرش و بستن
 این پرونده فقط هنگامی می‌تواند «ثبت کامل در سه سطح» نامیده شود که مخزن، بافر و حافظهٔ پایدار هر یک شواهد نوشتن، بازخوانی، تطبیق و تأیید مستقل داشته باشند. Library نیز باید جداگانه تعیین تکلیف شود، چون سند حاکم آن را مقصد مستقل می‌داند. تا آن زمان:
-- Repository: PENDING UNTIL POST-WRITE READ-BACK
+- Repository: VERIFIED IN REPOSITORY — commit `39e25d2cd17546e371013122260fb518ac9495fc`; read-back blob `146577e6c2ea7ff47d3c7ddaad2f0937347b9b7d`
 - Buffer: OPEN / PENDING
 - Persistent Memory: OPEN / PENDING
 - Library: NOT VERIFIED
