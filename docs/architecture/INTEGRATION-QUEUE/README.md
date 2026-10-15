@@ -3,13 +3,13 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.5.0
+- Version: 1.6.0
 - Date: 2026-10-12
 - Exact Time: در زمان اجرا به‌صورت مستقل ثبت نشده؛ حدس زده نمی‌شود.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: نسخهٔ 1.5.0 پس از ثبت مورد جدید و بازخوانی مستقل تأیید شد؛ این مورد در مخزن و اسناد حاکم پیوند داده شده، اما وضعیت لایه‌های خارج از مخزن تأیید نشده است.
+- Status: نسخهٔ 1.6.0 پس از ادغام و بازخوانی مقصدبه‌مقصد قرارداد زمان‌گذاری ۰.۰ ثبت شد؛ وضعیت لایه‌های خارج از مخزن مستقلاً تأیید نشده است.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
@@ -21,7 +21,7 @@ PENDING ≠ LOST (در انتظار ≠ گم‌شده). ثبت در این صف 
 ## 3. فهرست موارد
 | Stable ID | موضوع | وضعیت | مقصد موردنظر | پرونده |
 |---|---|---|---|---|
-| ARCH-0.0-TIMESTAMP-GOVERNANCE-2026-10-12-001 | اتصال قرارداد زمان‌گذاری هر نقطهٔ ۰.۰ به اسناد مرجع مادر و حاکمیت فرمان | PENDING INTEGRATION — ثبت زمان در دفتر ۰.۰ موجود است؛ اتصال به اسناد مادر هنوز تأیید نشده | سند مرجع مادر، سند معماری چندنقطه‌ای ۰.۰، سند حاکم فرمان «ثبت کن» | [پروندهٔ زمان‌گذاری ۰.۰](./ARCH-0.0-TIMESTAMP-GOVERNANCE-2026-10-12-001.md) |
+| ARCH-0.0-TIMESTAMP-GOVERNANCE-2026-10-12-001 | اتصال قرارداد زمان‌گذاری هر نقطهٔ ۰.۰ به اسناد مرجع مادر و حاکمیت فرمان | REPOSITORY INTEGRATION VERIFIED — پنج مقصد حاکم/عملیاتی بازخوانی و تطبیق شدند؛ Dropbox، بافر، کتابخانه و حافظهٔ پایدار تأیید نشده‌اند | سند مرجع مادر، سند معماری چندنقطه‌ای ۰.۰، سند حاکم فرمان «ثبت کن»، قرارداد عمومی ثبت، دفتر ۰.۰ | [پروندهٔ زمان‌گذاری ۰.۰](./ARCH-0.0-TIMESTAMP-GOVERNANCE-2026-10-12-001.md) |
 | UNIVERSAL-ARCHITECTURE-EVOLUTION-DOCUMENTATION-PRINCIPLE-2026-10-12-001 | الزام مستندسازی چرایی، شواهد، روابط و اثبات برای هر تغییر معماری و هر جزء جدید | REPOSITORY INTEGRATION VERIFIED — سند مرجع، فرمان حاکم، قرارداد عمومی، MRV و صف به‌روزرسانی و بازخوانی شده‌اند؛ لایه‌های دیگر تأیید نشده‌اند | سند مرجع مادر، فرمان «ثبت کن»، قرارداد عمومی ثبت، صف‌ها و اجزای جدید پروژه | [پروندهٔ اصل همیشگی مستندسازی معماری](./UNIVERSAL-ARCHITECTURE-EVOLUTION-DOCUMENTATION-PRINCIPLE-2026-10-12-001.md) |
 
 ## 4. گردش کار «خاک‌برداری»
@@ -227,3 +227,13 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - پروندهٔ صف: 661bcdd15ec82e67d5b248ed6f1138ecdcebb414
 
 شناسه‌های بالا نسخه‌های بازخوانی‌شده پیش از ثبت این بخش هستند؛ پس از نوشتن نسخهٔ 1.5.0، صف باید دوباره خوانده شود و شناسهٔ جدید به‌عنوان شاهد نهایی ثبت شود.
+
+
+## 17. شواهد ادغام مورد ARCH-0.0-TIMESTAMP-GOVERNANCE — 2026-10-15
+
+- **Stable ID:** ARCH-0.0-TIMESTAMP-GOVERNANCE-2026-10-12-001
+- **Version of case:** 2.0.0; status REPOSITORY INTEGRATION VERIFIED.
+- **Semantic destinations read back:** multi-point 0.0 architecture, MRV master reference, governing «ثبت کن» binding, universal register execution contract, and operational 0.0 registry.
+- **Evidence:** architecture blob `ba1378e3faa546225cf6f9423725c339d73c70d1`; MRV blob `b13165aed40ae73817e31bea3b243b53bc032dea`; command binding blob `745c041eb27d3cd798bbe0ecdffef6d8067c6fd9`; universal contract blob `df8372c07a53e8357c2fcf6fde0fe2990f479b0c`; 0.0 registry blob `40b96ea44a261fb98f92ba44a9099db8c2d0effd`.
+- **Remaining:** read back and match this queue index and case after their latest writes; then record the new evidence. The operational Dropbox anchor remains OPEN / WAITING until real connection, test write, read-back and match succeed.
+- **Layer boundary:** Repository-only integration. Dropbox, Buffer, Library and Persistent Memory are not independently verified.
