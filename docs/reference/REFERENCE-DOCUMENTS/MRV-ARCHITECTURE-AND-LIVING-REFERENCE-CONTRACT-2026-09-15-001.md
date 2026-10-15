@@ -1029,3 +1029,6 @@ For each target, fetch the current version, preserve existing history, make the 
 
 این قاعده به مدل داده و دروازهٔ اثباتِ چرخهٔ «ثبت کن» اضافه می‌شود: نوشتن به‌تنهایی زمان تأیید را تولید نمی‌کند؛ Last Verified At فقط پس از READ-BACK → MATCH → VERIFY (بازخوانی → تطبیق → تأیید) ثبت می‌شود. مرجع اجرایی تخصصی: `docs/reference/REFERENCE-DOCUMENTS/MULTI-POINT-0.0-ANCHOR-REGISTRY-ARCHITECTURE-2026-10-12-001.md`; دفتر: `docs/0.0/README.md`; پروندهٔ منشأ/تصمیم: `docs/architecture/INTEGRATION-QUEUE/ARCH-0.0-TIMESTAMP-GOVERNANCE-2026-10-12-001.md`.
 
+## 35. Latest excavation and recovery pointer
+
+The current repository excavation and reconciliation record is `docs/reference/REFERENCE-DOCUMENTS/REF-ARCHAEOLOGY-EXCAVATION-2026-10-13-001.md` (latest addendum dated 2026-10-15). It records evidence-backed repository integration, per-destination boundaries, remaining persistence gaps, and the exact resume rule. This is an execution/recovery record, not proof of Buffer, Library, Persistent Memory or Dropbox persistence. The Dropbox 0.0 anchor remains OPEN / WAITING unless separately resumed and tested.
