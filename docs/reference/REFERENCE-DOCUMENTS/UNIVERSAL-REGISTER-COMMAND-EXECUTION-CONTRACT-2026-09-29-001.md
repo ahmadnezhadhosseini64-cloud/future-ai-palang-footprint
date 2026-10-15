@@ -94,3 +94,8 @@ Separate observation, interpretation, and decision. Record rejected alternatives
 A link or status note is not semantic integration. A target is INTEGRATED only after the change is placed in the appropriate architectural location, reconciled with related rules/dependencies, independently read back, content-matched, and tied to destination version/commit evidence. If blocked, preserve the case as PENDING / BLOCKED and resume from the last evidence-backed checkpoint.
 
 This requirement is permanent and automatic; the user does not need to repeat it. It strengthens the default register workflow without claiming persistence or completion in any destination that has not independently passed its evidence gate.
+
+## 16. الزام زمان‌گذاری و منشأ زمان در نقاط ۰.۰
+
+هنگام ثبت یا به‌روزرسانی هر نقطهٔ ۰.۰، زمان ایجاد لنگر، ثبت در مخزن، آخرین تغییر و آخرین تأیید را جدا نگه دار. هر فیلد باید منطقهٔ زمانی و منشأ/مدرک زمانی خود را داشته باشد. از مهر زمانی commit فقط برای زمان رویداد ثبت/تغییر مخزن استفاده کن؛ آن را زمان ایجاد اولیه یا تأیید محتوا جا نزن. زمان دقیق ناموجود باید UNKNOWN / UNVERIFIED بماند، نه تخمین زده شود. Last Verified At فقط پس از READ-BACK → MATCH → VERIFY ثبت می‌شود. پروندهٔ حاکم: `docs/reference/REFERENCE-DOCUMENTS/MULTI-POINT-0.0-ANCHOR-REGISTRY-ARCHITECTURE-2026-10-12-001.md`; منشأ/تصمیم: `docs/architecture/INTEGRATION-QUEUE/ARCH-0.0-TIMESTAMP-GOVERNANCE-2026-10-12-001.md`.
+
