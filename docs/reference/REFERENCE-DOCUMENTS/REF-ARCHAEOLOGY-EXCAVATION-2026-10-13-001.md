@@ -3,7 +3,7 @@
 ## شناسنامه
 - **Stable ID / شناسهٔ پایدار:** REF-ARCHAEOLOGY-EXCAVATION-2026-10-13-001
 - **Production ID / شناسهٔ تولید:** REF-ARCHAEOLOGY-EXECUTION-2026-10-13-001
-- **Version / نسخه:** 1.1.0
+- **Version / نسخه:** 1.2.0
 - **Record Date / تاریخ ثبت:** 2026-10-13
 - **Exact Time / زمان دقیق:** 17:30 (+03:30)، زمان محلی گزارش‌شده در زمینهٔ اجرایی این نوبت؛ زمان commit باید جداگانه از مخزن خوانده شود.
 - **Timezone / منطقهٔ زمانی:** Asia/Tehran (UTC+03:30)
@@ -183,3 +183,33 @@
 - **Match:** MATCH — final Library content matched the prepared file, including the explicit evidence and destination boundaries.
 
 **Scope boundary:** this proves write/read-back/match for this specific Library addendum only. It does not prove that every historical reference document in the Library has been mirrored or synchronized, nor does it verify Buffer, Persistent Memory or Dropbox. Those destinations remain separately unverified; the Dropbox 0.0 anchor remains OPEN / WAITING.
+
+
+---
+
+# الحاقیهٔ اصلاح شواهد کتابخانه — 2026-10-15
+
+## علت اصلاح
+در بخش G نسخهٔ قبلی، شناسهٔ فایل پشتیبان و اندازهٔ فایل با نسخهٔ نهایی واقعی کتابخانه هم‌خوان نبود. این الحاقیه سابقه را حذف نمی‌کند؛ صریحاً مشخص می‌کند که شواهد بخش G قدیمی/نامنطبق بوده و داده‌های زیر جایگزین آن برای وضعیت فعلی هستند.
+
+## شاهد نهایی کتابخانه
+- **Stable ID / شناسهٔ پایدار:** `REF-ARCHAEOLOGY-LIBRARY-MIRROR-2026-10-15-001`
+- **Version / نسخهٔ سند:** 1.0.0
+- **Library path / مسیر دقیق کتابخانه:** `/Future AI/Palang Footprint/Master Reference Vault/Reference Documents/REF-ARCHAEOLOGY-LIBRARY-MIRROR-2026-10-15-001.md`
+- **Library file ID / شناسهٔ پایدار فایل کتابخانه:** `libfile_08aa9ef7cc20819193069054c35da04e`
+- **Final backing file ID / شناسهٔ فایل نهایی:** `file_00000000e25c820aa705501da5bd4072`
+- **Library version ID / نسخهٔ کتابخانه:** `4`
+- **Observed size / اندازهٔ مشاهده‌شده:** `10478` بایت؛ 81 خط.
+- **Write result / نتیجهٔ نوشتن:** SUCCEEDED — فایل در مسیر دقیق کتابخانه بازنویسی شد.
+- **Read-back / بازخوانی:** پس از آخرین بارگذاری، مسیر کتابخانه دوباره فهرست شد و همان فایل با شناسهٔ بالا بازخوانی شد.
+- **Match / تطبیق:** شناسهٔ پایدار، وضعیت نهایی، مرزبندی مقصدها و ادعای کلیِ بارگذاری/بازخوانی با محتوای بازخوانی‌شده تطبیق داده شد.
+- **نتیجهٔ مقصد کتابخانه:** `LIBRARY WRITE + READ-BACK + MATCH VERIFIED` — فقط برای همین سند مرجع.
+
+## وضعیت مقصدها پس از این اجرا
+- **Repository / مخزن:** شواهد ادغام زمان‌گذاری در بخش‌های پیشین این پرونده حفظ است؛ این الحاقیه برای همگام‌سازی شاهد کتابخانه به مخزن اضافه می‌شود.
+- **Library / کتابخانه:** همین سند مرجع مستقل ثبت و بازخوانی نهایی شد.
+- **Buffer / بافر:** NOT VERIFIED — در این اجرا مستقلاً نوشته و بازخوانی نشد.
+- **Persistent Memory / حافظهٔ پایدار:** NOT VERIFIED — در این اجرا ثبت و بازخوانی مستقل اثبات نشد.
+- **Dropbox 0.0:** OPEN / WAITING — اتصال و آزمون همچنان اجرا نشده است؛ این الحاقیه مجوز شروع آن نیست.
+
+**قید حاکم:** شاهد یک نسخه به نسخهٔ دیگر منتقل نمی‌شود. بخش G سابقهٔ تلاش قبلی است؛ این الحاقیه وضعیت نهایی و شناسه‌های مشاهده‌شده را برای نسخهٔ فعلی ثبت می‌کند. هیچ ادعایی دربارهٔ تکمیل همهٔ اسناد کتابخانه یا بافر/حافظه/Dropbox از این شاهد نتیجه نمی‌شود.
