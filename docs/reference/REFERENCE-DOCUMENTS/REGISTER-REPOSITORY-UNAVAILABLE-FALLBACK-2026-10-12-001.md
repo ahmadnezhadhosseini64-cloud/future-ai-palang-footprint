@@ -3,14 +3,14 @@
 ## شناسنامه
 - **Stable ID:** MRV-ARCHITECTURE-AND-LIVING-REFERENCE-CONTRACT-2026-09-15-001
 - **Production ID:** REGISTER-REPOSITORY-UNAVAILABLE-FALLBACK-2026-10-12-001
-- **Version:** 1.0.0
+- **Version:** 1.0.1
 - **Date:** 2026-10-12
 - **Exact Time:** ثبت نشده؛ عمداً ساخته نمی‌شود.
 - **Timezone:** Asia/Tehran (منطقه زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - **Owner:** Ahmad Nezhadhosseini / احمد پلنگ
 - **Project:** Future AI / Palang Footprint — آینده AI / ردپای پلنگ
 - **Artifact Type:** Governance Rule / Recovery Handoff
-- **Status:** ثبت این سند در مخزن تا زمان بازخوانی و تطبیق، تأییدشده محسوب نمی‌شود.
+- **Status:** REPOSITORY REGISTERED / READ-BACK CONFIRMED — وضعیت این نسخه فقط به مخزن مربوط است و کتابخانه، بافر، حافظهٔ پایدار یا آرشیو مستقل را تأیید نمی‌کند.
 - **Parent:** docs/reference/REFERENCE-DOCUMENTS/MRV-ARCHITECTURE-AND-LIVING-REFERENCE-CONTRACT-2026-09-15-001.md
 - **Related:** REGISTER-COMMAND-GOVERNING-BINDING-2026-10-12-001.md
 
@@ -54,3 +54,9 @@ DETECT BLOCKER → REPORT TRUTHFULLY → PROVIDE COMPLETE REFERENCE → USER ARC
 
 ## 7. اصل نهایی
 عدم دسترسی به مخزن مجوز رهاکردن خاموش محتوای ارزشمند نیست؛ باید نسخه کامل و قابل‌آرشیو تحویل شود. اما تحویل سند به کاربر با ثبت در مخزن برابر نیست. هیچ موفقیتی بدون شواهد همان مقصد اعلام نمی‌شود. این قاعده تا جایگزینی نسخه‌دار و مستند، بخشی از معنای پیش‌فرض «ثبت کن» است.
+
+## 8. رسید شواهد و به‌روزرسانی وضعیت — 2026-10-15
+- نسخهٔ پیشین از مسیر canonical مخزن مستقل خوانده شد؛ محتوای بازیابی‌شده 4,033 نویسه داشت و بخش‌های تصمیم حاکم، تحویل نسخه آرشیوی، زنجیره حاکم و اصل نهایی موجود بودند.
+- Blob SHA نسخهٔ پیش از این به‌روزرسانی: 44b8643be57a6e1f319a2360726117d1835f05c4.
+- این به‌روزرسانی وضعیت قدیمی «ثبت تأیید نشده» را اصلاح می‌کند؛ پس از ثبت نسخهٔ 1.0.1 باید بازخوانی مستقل همین نسخه انجام شود.
+- مرز شواهد: ثبت/بازخوانی مخزن به معنی ثبت در Library، Buffer، Persistent Memory یا آرشیو مستقل نیست.
