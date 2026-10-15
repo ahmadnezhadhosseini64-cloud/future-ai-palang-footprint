@@ -130,3 +130,6 @@ docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-ARCHITECTURE-EVOLUTION-DOCUMENTATIO
 
 Last Verified At فقط بعد از بازخوانی مستقل و تطبیق محتوای مقصد ثبت می‌شود. این الزام مکمل چرخهٔ حاکم بخش ۲ و دروازه‌های اثبات بخش ۳ است و برای دفتر `docs/0.0/README.md` و معماری تخصصی `docs/reference/REFERENCE-DOCUMENTS/MULTI-POINT-0.0-ANCHOR-REGISTRY-ARCHITECTURE-2026-10-12-001.md` الزام‌آور است. منشأ و پروندهٔ تصمیم: `docs/architecture/INTEGRATION-QUEUE/ARCH-0.0-TIMESTAMP-GOVERNANCE-2026-10-12-001.md`.
 
+## 11. Latest excavation recovery pointer
+
+For the latest repository excavation and reconciliation state, retrieve `docs/reference/REFERENCE-DOCUMENTS/REF-ARCHAEOLOGY-EXCAVATION-2026-10-13-001.md`. It records the 2026-10-15 repository integration work, per-destination evidence and limitations. Do not infer Buffer, Library, Persistent Memory or Dropbox completion from the repository record. The Dropbox 0.0 point is OPEN / WAITING and must not be auto-started without an explicit continuation instruction.
