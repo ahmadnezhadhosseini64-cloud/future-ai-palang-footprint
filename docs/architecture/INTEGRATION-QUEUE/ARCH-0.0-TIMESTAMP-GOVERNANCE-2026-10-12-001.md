@@ -3,14 +3,14 @@
 ## شناسنامه
 - Stable ID: ARCH-0.0-TIMESTAMP-GOVERNANCE-2026-10-12-001
 - Production ID: ARCH0TSG-2026-10-12-001
-- Version: 2.1.0
+- Version: 2.2.1
 - Date: 2026-10-12
 - Exact Time: زمان دقیق ایجاد این پرونده مستقلاً ثبت نشده؛ حدس زده نمی‌شود.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint
 - Status: REPOSITORY INTEGRATION VERIFIED — قرارداد زمان‌گذاری در معماری چندنقطه‌ای ۰.۰، سند مرجع مادر MRV، سند حاکم فرمان «ثبت کن»، قرارداد عمومی اجرای فرمان، دفتر ۰.۰ و این پرونده پس از نوشتن و بازخوانی مستقل ادغام و تطبیق شده‌اند. Dropbox، بافر، کتابخانه و حافظهٔ پایدار مستقلاً تأیید نشده‌اند.
-- Origin / Lineage: قرارداد «ثبت زمان نقاط ۰.۰» که در docs/0.0/README.md درج شده؛ اتصال به اسناد مرجع مادر و حاکم فرمان هنوز در این اجرا تأیید نشده است.
+- Origin / Lineage: قرارداد «ثبت زمان نقاط ۰.۰» که نخست در docs/0.0/README.md درج شد؛ ادغام در اسناد مرجع مادر و حاکم فرمان در بخش شواهد 2026-10-15 تأیید شده است. متن وضعیت قدیمی در تاریخچه حفظ شده و وضعیت جاری از الحاقیه‌های جدید خوانده شود.
 - Queue Index: docs/architecture/INTEGRATION-QUEUE/README.md
 - Governing Lock 1: AIQ-LOCK-PRESERVATION-2026-10-12-001 — قفل حفظ
 - Governing Lock 2: AIQ-LOCK-INTEGRATION-VERIFICATION-2026-10-12-001 — قفل تأیید ادغام
