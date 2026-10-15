@@ -3,13 +3,13 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.6.0
+- Version: 1.7.0
 - Date: 2026-10-12
 - Exact Time: در زمان اجرا به‌صورت مستقل ثبت نشده؛ حدس زده نمی‌شود.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: نسخهٔ 1.6.0 پس از ادغام و بازخوانی مقصدبه‌مقصد قرارداد زمان‌گذاری ۰.۰ ثبت شد؛ وضعیت لایه‌های خارج از مخزن مستقلاً تأیید نشده است.
+- Status: نسخهٔ 1.7.0 پس از اصلاح مرز وضعیت مقصدها و ثبت شاهد مستقل کتابخانه برای سند آینهٔ خاک‌برداری نوشته و بازخوانی شد؛ سایر اسناد مرجع حاکم در کتابخانه هنوز باید جداگانه ممیزی شوند.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
@@ -232,9 +232,23 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 ## 17. شواهد ادغام مورد ARCH-0.0-TIMESTAMP-GOVERNANCE — 2026-10-15
 
 - **Stable ID:** ARCH-0.0-TIMESTAMP-GOVERNANCE-2026-10-12-001
-- **Version of case:** 2.0.0; status REPOSITORY INTEGRATION VERIFIED.
+- **Version of case:** 2.2.0; status REPOSITORY INTEGRATION VERIFIED.
 - **Semantic destinations read back:** multi-point 0.0 architecture, MRV master reference, governing «ثبت کن» binding, universal register execution contract, and operational 0.0 registry.
 - **Evidence:** architecture blob `ba1378e3faa546225cf6f9423725c339d73c70d1`; MRV blob `b13165aed40ae73817e31bea3b243b53bc032dea`; command binding blob `745c041eb27d3cd798bbe0ecdffef6d8067c6fd9`; universal contract blob `df8372c07a53e8357c2fcf6fde0fe2990f479b0c`; 0.0 registry blob `40b96ea44a261fb98f92ba44a9099db8c2d0effd`.
 - **Final repository read-back:** queue index blob SHA before this final evidence update: `985e15e9fbcde1c55c6aaf893dc8a56fab045c18`; case blob SHA after final evidence update: `0c859b489e630deea905e35c41c67e4948c03957`. Both files were fetched again from the repository and their status/evidence sections matched the expected content.
 - **Remaining:** no further repository integration step remains for this timestamp-governance case. The operational Dropbox anchor remains OPEN / WAITING until real connection, test write, read-back and match succeed.
-- **Layer boundary:** Repository-only integration. Dropbox, Buffer, Library and Persistent Memory are not independently verified.
+- **Layer boundary:** Repository-only integration. Buffer and Persistent Memory remain unverified for this case. Only the separate excavation Library mirror is verified; this does not prove that the case or every governing reference is mirrored in Library.
+
+
+## 18. اصلاح مرز وضعیت کتابخانه و پیوند به سند آینه — 2026-10-15
+
+- **Queue version:** 1.7.0.
+- **Case:** `ARCH-0.0-TIMESTAMP-GOVERNANCE-2026-10-12-001`, updated to version 2.2.0.
+- **Repository write:** case update commit `28fe5a955b71bd6173f92dd5edf4569a93dd3817`; blob `35085fdffe56a2c3a7ba5355dc85ef4583b6ab2b`.
+- **Library mirror evidence:** `REF-ARCHAEOLOGY-LIBRARY-MIRROR-2026-10-15-001`, path `/Future AI/Palang Footprint/Master Reference Vault/Reference Documents/REF-ARCHAEOLOGY-LIBRARY-MIRROR-2026-10-15-001.md`, Library ID `libfile_08aa9ef7cc20819193069054c35da04e`, final backing file `file_00000000e25c820aa705501da5bd4072`, version 4.
+- **Verified scope:** one independent Library mirror only. This does not establish that the MRV master, governing command binding, or all other repository references are mirrored in Library.
+- **Remaining Library audit:** inspect canonical governing documents against the current Library inventory and register/read back each missing document independently.
+- **Buffer / Persistent Memory:** NOT VERIFIED.
+- **Dropbox 0.0:** OPEN / WAITING; do not start without explicit user instruction.
+
+The queue index and the timestamp case must each be read back after this update. Historical evidence remains historical; it is not proof for a newer version.
