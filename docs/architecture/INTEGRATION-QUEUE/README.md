@@ -235,5 +235,6 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - **Version of case:** 2.0.0; status REPOSITORY INTEGRATION VERIFIED.
 - **Semantic destinations read back:** multi-point 0.0 architecture, MRV master reference, governing «ثبت کن» binding, universal register execution contract, and operational 0.0 registry.
 - **Evidence:** architecture blob `ba1378e3faa546225cf6f9423725c339d73c70d1`; MRV blob `b13165aed40ae73817e31bea3b243b53bc032dea`; command binding blob `745c041eb27d3cd798bbe0ecdffef6d8067c6fd9`; universal contract blob `df8372c07a53e8357c2fcf6fde0fe2990f479b0c`; 0.0 registry blob `40b96ea44a261fb98f92ba44a9099db8c2d0effd`.
-- **Remaining:** read back and match this queue index and case after their latest writes; then record the new evidence. The operational Dropbox anchor remains OPEN / WAITING until real connection, test write, read-back and match succeed.
+- **Final repository read-back:** queue index blob SHA before this final evidence update: `985e15e9fbcde1c55c6aaf893dc8a56fab045c18`; case blob SHA after final evidence update: `0c859b489e630deea905e35c41c67e4948c03957`. Both files were fetched again from the repository and their status/evidence sections matched the expected content.
+- **Remaining:** no further repository integration step remains for this timestamp-governance case. The operational Dropbox anchor remains OPEN / WAITING until real connection, test write, read-back and match succeed.
 - **Layer boundary:** Repository-only integration. Dropbox, Buffer, Library and Persistent Memory are not independently verified.
