@@ -3,13 +3,13 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.7.2
+- Version: 1.7.3
 - Date: 2026-10-12
 - Exact Time: در زمان اجرا به‌صورت مستقل ثبت نشده؛ حدس زده نمی‌شود.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: نسخهٔ 1.7.0 پس از اصلاح مرز وضعیت مقصدها و ثبت شاهد مستقل کتابخانه برای سند آینهٔ خاک‌برداری نوشته و بازخوانی شد؛ ممیزی 2026-10-15 نشان داد آینهٔ سند مادر قدیمی/دارای اختلاف احتمالی است و آینهٔ فرمان حاکم در فهرست فعلی پیدا نشد؛ جزئیات در بخش 19 ثبت شد.
+- Status: نسخهٔ 1.7.3 وضعیت ممیزی Library را ثبت می‌کند: آینهٔ سند مادر قدیمی/دارای اختلاف احتمالی است؛ آینهٔ فرمان حاکم در فهرست فعلی پیدا نشد؛ سند جایگزین آرشیو در مخزن به‌روزرسانی و مستقل بازخوانی شد. آینه‌های Library هنوز به‌روزرسانی نشده‌اند.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
@@ -261,13 +261,13 @@ The queue index and the timestamp case must each be read back after this update.
 - **Case update commit:** `157c5d8e88fc56e4d81c230fd69d4217d4f073b0`.
 - **Case read-back blob:** `d1fcea5344dc370be43366949f2dd30ab5f204ab`.
 - **Read-back checks:** version 2.2.1, corrected origin/lineage statement, Library mirror pointer, and separate Buffer/Persistent Memory/Dropbox boundaries were found in the fetched file.
-- **Next open action:** continue the Library inventory audit for canonical governing references not yet independently mirrored. Dropbox remains untouched pending explicit instruction.
+- **Next open action:** repair/create the L-01/L-02 Library mirrors, then independently read them back and reconcile this queue. Dropbox remains untouched pending explicit instruction.
 
 ## OPEN-GAPS-RECOVERY-REGISTER-2026-10-15-001 — پیگیری در مراجعه بعدی
 - سند مرجع کامل: [OPEN-GAPS-RECOVERY-REGISTER-2026-10-15-001](OPEN-GAPS-RECOVERY-REGISTER-2026-10-15-001.md)
 - وضعیت سند: ثبت در مخزن انجام شد؛ بازخوانی مستقل انجام شد؛ اندازه متن بازخوانی‌شده با متن ثبت‌شده برابر است (11,692 نویسه) و شناسه‌ها و بخش‌های کلیدی بررسی شدند.
 - وضعیت کار: OPEN / در انتظار اقدام بعدی.
-- اقدام بعدی: G-02 بررسی آینه‌های کتابخانه‌ای L-01 و L-02؛ سپس G-05 تطبیق شواهد با صف و سند خاک‌برداری.
+- اقدام بعدی: تکمیل G-02 با به‌روزرسانی آینهٔ L-01 و ایجاد آینهٔ L-02؛ سپس بازخوانی مستقل و تطبیق نهایی. G-05 برای ثبت یافته‌های فعلی انجام شده، اما پس از تکمیل آینه‌ها دوباره لازم است.
 - Dropbox: نقطه ادامه PALANG-DROPBOX-FAILOVER-RESUME-0.0-2026-10-12-001 محفوظ است؛ اتصال یا آزمایش فقط با دستور صریح کاربر.
 - بافر و حافظه پایدار: ذخیره و بازیابی مستقل هنوز تأیید نشده‌اند.
 
@@ -276,5 +276,5 @@ The queue index and the timestamp case must each be read back after this update.
 - G-02 / L-01: فایل MRV-ARCHITECTURE-AND-LIVING-REFERENCE-CONTRACT-2026-09-15-001.md در کتابخانه پیدا شد؛ مسیر /Future AI/Palang Footprint/Master Reference Vault/Reference Documents/؛ Library ID libfile_a9059101d96c819190c34b41638e08bb؛ نسخهٔ 1؛ 24,391 بایت و 871 خط. نسخهٔ مخزن فعلی 37,624 نویسه و 1,035 خط است. اختلاف اندازه/خط نشان می‌دهد یکسانی آینه با نسخهٔ فعلی مخزن اثبات نشده؛ وضعیت STALE / DRIFT SUSPECTED است. تطبیق رمزنگاری‌شده انجام نشده است.
 - G-02 / L-02: REGISTER-COMMAND-GOVERNING-BINDING-2026-10-12-001.md در فهرست فعلی پوشهٔ Reference Documents پیدا نشد. وضعیت NOT FOUND IN CURRENT INVENTORY / UNVERIFIED است؛ این نتیجه ادعا نمی‌کند که فایل در هیچ جای Library وجود ندارد.
 - اقدام باز Library: آینهٔ L-01 را با نسخهٔ فعلی مخزن جایگزین و بازخوانی کن؛ برای L-02 آینه بساز و بازخوانی کن؛ سپس نسخه/محتوا را تا حد ابزار موجود تطبیق بده. این دو اقدام هنوز انجام نشده‌اند.
-- سند آرشیو جایگزین REGISTER-REPOSITORY-UNAVAILABLE-FALLBACK-2026-10-12-001.md در مخزن پیدا و مستقل خوانده شد؛ نسخهٔ پیشین blob SHA برابر 44b8643be57a6e1f319a2360726117d1835f05c4 و طول آن 4,033 نویسه بود. وضعیت کهنهٔ آن به‌روزرسانی شده و پس از نوشتن باید نسخهٔ تازه بازخوانی شود.
+- سند آرشیو جایگزین REGISTER-REPOSITORY-UNAVAILABLE-FALLBACK-2026-10-12-001.md در مخزن به نسخهٔ 1.0.1 به‌روزرسانی و پس از نوشتن مستقل بازخوانی شد؛ blob SHA فعلی 07e7279252ac3e3aa5e2de1ea566aa14d24900e4، طول 4,642 نویسه. نسخهٔ پیشین blob SHA برابر 44b8643be57a6e1f319a2360726117d1835f05c4 و طول آن 4,033 نویسه بود.
 - مرز وضعیت: مخزن برای این اسناد قابل‌خواندن است؛ این امر ثبت مستقلی در بافر، حافظهٔ پایدار یا آرشیو بیرونی را ثابت نمی‌کند. Dropbox همچنان بدون اجازهٔ صریح شروع نمی‌شود.
