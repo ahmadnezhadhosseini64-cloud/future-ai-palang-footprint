@@ -3,13 +3,13 @@
 ## شناسنامه
 - Stable ID: ARCH-0.0-TIMESTAMP-GOVERNANCE-2026-10-12-001
 - Production ID: ARCH0TSG-2026-10-12-001
-- Version: 1.2.0
+- Version: 2.0.0
 - Date: 2026-10-12
 - Exact Time: زمان دقیق ایجاد این پرونده مستقلاً ثبت نشده؛ حدس زده نمی‌شود.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint
-- Status: PENDING INTEGRATION — پروندهٔ علت/منشأ/اثر معماری تکمیل شده؛ ادغام در اسناد مادر هنوز انجام و مستقلاً تأیید نشده است.
+- Status: REPOSITORY INTEGRATION VERIFIED — قرارداد زمان‌گذاری در معماری چندنقطه‌ای ۰.۰، سند مرجع مادر MRV، سند حاکم فرمان «ثبت کن»، قرارداد عمومی اجرای فرمان، دفتر ۰.۰ و این پرونده پس از نوشتن و بازخوانی مستقل ادغام و تطبیق شده‌اند. Dropbox، بافر، کتابخانه و حافظهٔ پایدار مستقلاً تأیید نشده‌اند.
 - Origin / Lineage: قرارداد «ثبت زمان نقاط ۰.۰» که در docs/0.0/README.md درج شده؛ اتصال به اسناد مرجع مادر و حاکم فرمان هنوز در این اجرا تأیید نشده است.
 - Queue Index: docs/architecture/INTEGRATION-QUEUE/README.md
 - Governing Lock 1: AIQ-LOCK-PRESERVATION-2026-10-12-001 — قفل حفظ
@@ -126,3 +126,30 @@
 - **Resume Pointer:** `docs/architecture/INTEGRATION-QUEUE/README.md` و همین پرونده با Stable ID `ARCH-0.0-TIMESTAMP-GOVERNANCE-2026-10-12-001`.
 - **Per-Destination Status:** مقصدهای 1 تا 3: PENDING INTEGRATION؛ دفتر ۰.۰: پیوند تاریخی موجود، وضعیت زنده باید مجدداً بررسی شود.
 - **Layer Boundary:** این به‌روزرسانی فقط در مخزن هدف‌گذاری شده است؛ بافر، کتابخانه و حافظهٔ پایدار تا زمانی که جداگانه نوشته و بازخوانی نشوند NOT VERIFIED باقی می‌مانند.
+
+
+## 13. نتیجهٔ خاک‌برداری و شواهد ادغام مقصدبه‌مقصد — 2026-10-15
+
+### نتیجه
+قرارداد زمان‌گذاری که پیش‌تر در دفتر `docs/0.0/README.md` وجود داشت، در این اجرا به محل معنایی مناسب در اسناد حاکم افزوده شد. این کار فقط افزودن پیوند نیست: قواعد مربوط به جداسازی زمان ایجاد، ثبت، تغییر و تأیید در متن معماری و قراردادهای ثبت درج شد.
+
+### شواهد بازخوانی مستقل
+- معماری چندنقطه‌ای ۰.۰ — blob SHA: `ba1378e3faa546225cf6f9423725c339d73c70d1`; commit: `c2e04f32d53c4473eabe78117c348ee90a315667`.
+- سند مرجع مادر MRV — blob SHA: `b13165aed40ae73817e31bea3b243b53bc032dea`; commit: `474e2d6c4ebf20c71fda8041042efc36eea21bb8`.
+- سند حاکم فرمان «ثبت کن» — blob SHA: `745c041eb27d3cd798bbe0ecdffef6d8067c6fd9`; commit: `96c7f5760af574f0db0f3eb459fb8b98e34ef170`.
+- قرارداد عمومی اجرای «ثبت کن» — blob SHA: `df8372c07a53e8357c2fcf6fde0fe2990f479b0c`; commit: `496e6fec6533af63abc63f1af736028d7291519c`.
+- دفتر مرکزی ۰.۰ — blob SHA: `40b96ea44a261fb98f92ba44a9099db8c2d0effd`; commit: `fd5e2ce50fea1c762b05dde72524b29fc16c32bd`.
+
+هر پنج مقصد بالا از مخزن دوباره خوانده شدند و وجود بخش ادغام‌شده بررسی شد. این شواهد فقط ادغام در مخزن را اثبات می‌کنند.
+
+### وضعیت مقصدها
+- معماری چندنقطه‌ای ۰.۰: REPOSITORY INTEGRATION VERIFIED.
+- سند مرجع مادر MRV: REPOSITORY INTEGRATION VERIFIED.
+- سند حاکم فرمان: REPOSITORY INTEGRATION VERIFIED.
+- قرارداد عمومی ثبت: REPOSITORY INTEGRATION VERIFIED.
+- دفتر مرکزی ۰.۰: REPOSITORY READ-BACK VERIFIED؛ پیوند و قرارداد زمانی موجود است.
+- پروندهٔ این صف و فهرست صف: این نسخه باید پس از نوشتن دوباره خوانده و تطبیق شود؛ تا آن زمان وضعیت نهایی این پرونده را فقط برای مقصدهای بالا معتبر بدان.
+- Dropbox / Buffer / Library / Persistent Memory: NOT VERIFIED — هیچ ادعای نوشتن، بازخوانی یا تطبیق مستقل در این اجرا وجود ندارد.
+
+### اقدام بعدی
+پرونده و فهرست صف را با این شواهد به‌روزرسانی کن، سپس هر دو را بازخوانی و تطبیق بده. پس از آن، نقطهٔ باز Dropbox همچنان جداگانه باید از طریق اتصال واقعی و آزمون نوشتن/بازخوانی/تطبیق ادامه یابد.
