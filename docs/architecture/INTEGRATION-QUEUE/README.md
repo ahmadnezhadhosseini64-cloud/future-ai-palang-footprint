@@ -3,7 +3,7 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.7.0
+- Version: 1.7.1
 - Date: 2026-10-12
 - Exact Time: در زمان اجرا به‌صورت مستقل ثبت نشده؛ حدس زده نمی‌شود.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
@@ -232,7 +232,7 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 ## 17. شواهد ادغام مورد ARCH-0.0-TIMESTAMP-GOVERNANCE — 2026-10-15
 
 - **Stable ID:** ARCH-0.0-TIMESTAMP-GOVERNANCE-2026-10-12-001
-- **Version of case:** 2.2.0; status REPOSITORY INTEGRATION VERIFIED.
+- **Version of case:** 2.2.1; status REPOSITORY INTEGRATION VERIFIED.
 - **Semantic destinations read back:** multi-point 0.0 architecture, MRV master reference, governing «ثبت کن» binding, universal register execution contract, and operational 0.0 registry.
 - **Evidence:** architecture blob `ba1378e3faa546225cf6f9423725c339d73c70d1`; MRV blob `b13165aed40ae73817e31bea3b243b53bc032dea`; command binding blob `745c041eb27d3cd798bbe0ecdffef6d8067c6fd9`; universal contract blob `df8372c07a53e8357c2fcf6fde0fe2990f479b0c`; 0.0 registry blob `40b96ea44a261fb98f92ba44a9099db8c2d0effd`.
 - **Final repository read-back:** queue index blob SHA before this final evidence update: `985e15e9fbcde1c55c6aaf893dc8a56fab045c18`; case blob SHA after final evidence update: `0c859b489e630deea905e35c41c67e4948c03957`. Both files were fetched again from the repository and their status/evidence sections matched the expected content.
@@ -252,3 +252,13 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - **Dropbox 0.0:** OPEN / WAITING; do not start without explicit user instruction.
 
 The queue index and the timestamp case must each be read back after this update. Historical evidence remains historical; it is not proof for a newer version.
+
+
+## 19. آخرین بازخوانی پروندهٔ زمان‌گذاری — 2026-10-15
+
+- **Queue version:** 1.7.1.
+- **Case current version:** 2.2.1.
+- **Case update commit:** `157c5d8e88fc56e4d81c230fd69d4217d4f073b0`.
+- **Case read-back blob:** `d1fcea5344dc370be43366949f2dd30ab5f204ab`.
+- **Read-back checks:** version 2.2.1, corrected origin/lineage statement, Library mirror pointer, and separate Buffer/Persistent Memory/Dropbox boundaries were found in the fetched file.
+- **Next open action:** continue the Library inventory audit for canonical governing references not yet independently mirrored. Dropbox remains untouched pending explicit instruction.
