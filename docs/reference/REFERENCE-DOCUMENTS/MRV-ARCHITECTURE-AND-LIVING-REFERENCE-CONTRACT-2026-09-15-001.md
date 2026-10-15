@@ -1022,3 +1022,10 @@ The «ثبت کن» command, the Universal Register Execution Contract, and ever
 For each target, fetch the current version, preserve existing history, make the semantic change in the appropriate location, read it back independently, match expected content, and record destination version/commit evidence. If any step is blocked, preserve the same identity and checkpoint as PENDING / BLOCKED. Repository proof does not imply Buffer, Library, or Persistent Memory persistence.
 
 **Lineage:** this section operationalizes the user's explicit permanent requirement on 2026-10-12 and binds the new reference principle to the master architecture. Its addition here does not by itself mean every historical project artifact has already been migrated; historical review remains evidence-driven.
+
+## 34. حاکمیت زمان و منشأ زمان برای نقاط ۰.۰
+
+برای هر نقطهٔ ۰.۰، زمان ایجاد لنگر، زمان ثبت در مخزن، زمان آخرین تغییر و زمان آخرین تأیید چهار رویداد مجزا هستند و نباید در یک timestamp ادغام شوند. هر مقدار باید منطقهٔ زمانی و منشأ/مدرک خودش را داشته باشد؛ زمان ثبت مخزن فقط از مهر زمانی واقعی commit/تاریخچه استخراج می‌شود و به‌جای زمان ایجاد اولیه استفاده نمی‌شود. زمان ناموجود با UNKNOWN / UNVERIFIED (نامعلوم / تأییدنشده) مشخص می‌شود و هرگز حدس زده نمی‌شود.
+
+این قاعده به مدل داده و دروازهٔ اثباتِ چرخهٔ «ثبت کن» اضافه می‌شود: نوشتن به‌تنهایی زمان تأیید را تولید نمی‌کند؛ Last Verified At فقط پس از READ-BACK → MATCH → VERIFY (بازخوانی → تطبیق → تأیید) ثبت می‌شود. مرجع اجرایی تخصصی: `docs/reference/REFERENCE-DOCUMENTS/MULTI-POINT-0.0-ANCHOR-REGISTRY-ARCHITECTURE-2026-10-12-001.md`; دفتر: `docs/0.0/README.md`; پروندهٔ منشأ/تصمیم: `docs/architecture/INTEGRATION-QUEUE/ARCH-0.0-TIMESTAMP-GOVERNANCE-2026-10-12-001.md`.
+
