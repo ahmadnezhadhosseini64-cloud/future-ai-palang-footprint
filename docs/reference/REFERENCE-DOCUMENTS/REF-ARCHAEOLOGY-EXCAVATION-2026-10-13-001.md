@@ -169,3 +169,17 @@
 4. هنگام ادامهٔ بعدی، ابتدا همین الحاقیه، دفتر صف و پروندهٔ زمان‌گذاری را دوباره بخوان؛ از آخرین شاهد قابل‌اثبات ادامه بده و تاریخچه را حفظ کن.
 
 **وضعیت کلی:** PARTIAL / REPOSITORY INTEGRATION VERIFIED — شکاف ادغام زمان‌گذاری در مخزن بسته شد؛ مقصدهای خارج از مخزن و لنگر عملیاتی Dropbox هنوز باز و تأییدنشده‌اند.
+
+## G. ثبت مستقل در کتابخانهٔ اسناد مرجع — 2026-10-15
+
+پس از خاک‌برداری، یک سند مرجع مستقل برای ثبت نتیجه و وضعیت مقصدها در کتابخانه ساخته شد:
+- **Stable ID:** `REF-ARCHAEOLOGY-LIBRARY-MIRROR-2026-10-15-001`
+- **Version:** 1.0.0
+- **Library path:** `/Future AI/Palang Footprint/Master Reference Vault/Reference Documents/REF-ARCHAEOLOGY-LIBRARY-MIRROR-2026-10-15-001.md`
+- **Library file ID:** `libfile_08aa9ef7cc20819193069054c35da04e`
+- **Final backing file ID:** `file_00000000de9482108a2be4bdd35cf509`
+- **Upload:** SUCCEEDED; file overwritten with final version containing read-back evidence.
+- **Independent read-back:** same file was read from the exact Library path after final upload; size 10,277 bytes; the sections `LIBRARY WRITE + READ-BACK + MATCH VERIFIED` and `Read-back / بازخوانی` were present; obsolete pending status was absent.
+- **Match:** MATCH — final Library content matched the prepared file, including the explicit evidence and destination boundaries.
+
+**Scope boundary:** this proves write/read-back/match for this specific Library addendum only. It does not prove that every historical reference document in the Library has been mirrored or synchronized, nor does it verify Buffer, Persistent Memory or Dropbox. Those destinations remain separately unverified; the Dropbox 0.0 anchor remains OPEN / WAITING.
