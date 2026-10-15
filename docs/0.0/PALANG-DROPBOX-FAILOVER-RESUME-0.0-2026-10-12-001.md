@@ -69,3 +69,13 @@ docs/reference/REFERENCE-DOCUMENTS/PALANG-DROPBOX-FAILOVER-RESUME-0.0-2026-10-12
 این پرونده یکی از نقاط مستقل در دفتر مرکزی `docs/0.0/README.md` است و تحت معماری زیر مدیریت می‌شود:
 `docs/reference/REFERENCE-DOCUMENTS/MULTI-POINT-0.0-ANCHOR-REGISTRY-ARCHITECTURE-2026-10-12-001.md`
 این نقطه با سایر نقاط ۰.۰ ادغام نمی‌شود. وضعیت آن OPEN / WAITING باقی می‌ماند تا اتصال Dropbox و آزمون نوشتن، بازخوانی و تطبیق با شواهد واقعی تأیید شوند.
+
+## 9. ثبت زمان‌های مستقل و منشأ آن‌ها
+- **Anchor Created At — زمان ایجاد لنگر:** 2026-10-12 (تاریخ موجود است؛ زمان دقیق UNKNOWN / UNVERIFIED).
+- **Repository Registered At — زمان ثبت در مخزن:** تاریخچهٔ commit موجود است؛ زمان دقیق باید از مهر زمانی commit مشخص بازیابی شود و با زمان ایجاد لنگر یکی فرض نشود.
+- **Last Modified At — زمان آخرین تغییر:** پس از این به‌روزرسانی، از مهر زمانی واقعی commit همین فایل استخراج و ثبت شود؛ زمان دقیق در متن فعلی هنوز ثبت نشده است.
+- **Last Verified At — زمان آخرین تأیید محتوا:** UNKNOWN / UNVERIFIED تا ثبت مهر زمانی آزمون بازخوانی و تطبیق همین نسخه.
+- **Timezone — منطقهٔ زمانی:** Asia/Tehran (+03:30) برای زمان‌های محلی؛ مهر زمانی اصلی commit نیز باید با منشأ خود حفظ شود.
+- **Time Provenance — منشأ زمان:** تاریخ ثبت‌شده در پرونده و تاریخچهٔ commit مخزن؛ هیچ زمان ناموجودی حدس زده نمی‌شود.
+- **Current state:** OPEN / WAITING — اتصال Dropbox و آزمون مسیر جایگزین همچنان انجام‌نشده/تأییدنشده است. ادغام قرارداد زمان‌گذاری در مخزن، این نقطهٔ عملیاتی را تکمیل نمی‌کند.
+- **Architecture lineage:** `ARCH-0.0-TIMESTAMP-GOVERNANCE-2026-10-12-001`; `MULTI-POINT-0.0-ANCHOR-REGISTRY-ARCHITECTURE-2026-10-12-001`.
