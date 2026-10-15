@@ -262,3 +262,12 @@ The queue index and the timestamp case must each be read back after this update.
 - **Case read-back blob:** `d1fcea5344dc370be43366949f2dd30ab5f204ab`.
 - **Read-back checks:** version 2.2.1, corrected origin/lineage statement, Library mirror pointer, and separate Buffer/Persistent Memory/Dropbox boundaries were found in the fetched file.
 - **Next open action:** continue the Library inventory audit for canonical governing references not yet independently mirrored. Dropbox remains untouched pending explicit instruction.
+
+## OPEN-GAPS-RECOVERY-REGISTER-2026-10-15-001 — پیگیری در مراجعه بعدی
+- سند مرجع کامل: [OPEN-GAPS-RECOVERY-REGISTER-2026-10-15-001](OPEN-GAPS-RECOVERY-REGISTER-2026-10-15-001.md)
+- وضعیت سند: ثبت در مخزن انجام شد؛ بازخوانی مستقل انجام شد؛ اندازه متن بازخوانی‌شده با متن ثبت‌شده برابر است (11,692 نویسه) و شناسه‌ها و بخش‌های کلیدی بررسی شدند.
+- وضعیت کار: OPEN / در انتظار اقدام بعدی.
+- اقدام بعدی: G-02 بررسی آینه‌های کتابخانه‌ای L-01 و L-02؛ سپس G-05 تطبیق شواهد با صف و سند خاک‌برداری.
+- Dropbox: نقطه ادامه PALANG-DROPBOX-FAILOVER-RESUME-0.0-2026-10-12-001 محفوظ است؛ اتصال یا آزمایش فقط با دستور صریح کاربر.
+- بافر و حافظه پایدار: ذخیره و بازیابی مستقل هنوز تأیید نشده‌اند.
+
