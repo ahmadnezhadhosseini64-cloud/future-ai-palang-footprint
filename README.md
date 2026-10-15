@@ -11,3 +11,7 @@ The default command contract is governed by the master reference:
 - [Master Reference Vault contract](docs/reference/REFERENCE-DOCUMENTS/MRV-ARCHITECTURE-AND-LIVING-REFERENCE-CONTRACT-2026-09-15-001.md)
 
 When «ثبت کن» is issued, follow the complete governed lifecycle in the master reference; do not require the user to restate it. Report repository, buffer, and persistent-memory status separately and only from destination-specific evidence. A repository file alone does not prove the other destinations.
+
+## Latest repository excavation / آخرین خاک‌برداری مخزن
+
+The latest excavation and integration reconciliation record is [REF-ARCHAEOLOGY-EXCAVATION-2026-10-13-001](docs/reference/REFERENCE-DOCUMENTS/REF-ARCHAEOLOGY-EXCAVATION-2026-10-13-001.md). It preserves the 2026-10-15 findings, verified repository-only integration evidence, and unresolved Dropbox / Buffer / Library / Persistent Memory states. The Dropbox 0.0 anchor remains OPEN / WAITING and is not auto-started.
