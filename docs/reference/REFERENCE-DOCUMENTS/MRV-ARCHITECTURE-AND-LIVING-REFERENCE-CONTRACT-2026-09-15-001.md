@@ -1032,3 +1032,7 @@ For each target, fetch the current version, preserve existing history, make the 
 ## 35. Latest excavation and recovery pointer
 
 The current repository excavation and reconciliation record is `docs/reference/REFERENCE-DOCUMENTS/REF-ARCHAEOLOGY-EXCAVATION-2026-10-13-001.md` (latest addendum dated 2026-10-15). It records evidence-backed repository integration, per-destination boundaries, remaining persistence gaps, and the exact resume rule. This is an execution/recovery record, not proof of Buffer, Library, Persistent Memory or Dropbox persistence. The Dropbox 0.0 anchor remains OPEN / WAITING unless separately resumed and tested.
+
+
+## 36. اجرای خاک‌برداری و بازیابی شکاف‌ها — 2026-10-17
+پروندهٔ مرجع اجرای جاری: `docs/reference/REFERENCE-DOCUMENTS/REF-ARCHAEOLOGY-EXCAVATION-2026-10-17-001.md` (Stable ID: `REF-ARCHAEOLOGY-EXCAVATION-2026-10-17-001`; Production ID: `RAE-20261017-001`). این پرونده وضعیت واقعی نقاط ۰.۰، صف معماری، آینه‌های Library، Buffer، حافظهٔ پایدار، اقلام تاریخی بازیابی‌نشده و آزمون‌های E2E/پل حافظه را به هم متصل می‌کند. هر شکاف با شناسه و اقدام بعدی حفظ می‌شود؛ ثبت این اشاره‌گر به‌تنهایی ادغام مقصدی یا بسته‌شدن شکاف را اثبات نمی‌کند. Dropbox تا دستور صریح ادامه، OPEN / WAITING باقی می‌ماند. وضعیت هر مقصد باید مستقل و فقط پس از READ-BACK → MATCH → VERIFY به‌روزرسانی شود.
