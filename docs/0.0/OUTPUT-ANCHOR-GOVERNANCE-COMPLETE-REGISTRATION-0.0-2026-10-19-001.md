@@ -93,3 +93,9 @@
 - چرخهٔ اجرا: OUTPUT → ANCHOR → CLASSIFY → PRESERVE → PROVENANCE → REFERENCE → ARCHITECTURE/QUEUE → TIMESTAMP EVIDENCE → WRITE → READ-BACK → MATCH → VERIFY → RECONCILE → DESTINATION STATUS → NEXT ACTION → RESUME.
 - این قاعده هیچ ۰.۰ دیگری را جایگزین نمی‌کند؛ نقطهٔ Dropbox مستقل و OPEN / WAITING باقی می‌ماند.
 - وضعیت مقصدهای غیر از مخزن: مستقل تأیید نشده‌اند؛ هیچ ادعای ثبت سه‌سطحی بر اساس این commit مجاز نیست.
+
+
+## 10. پیوند زنجیره‌ای با نقاط ۰.۰ بعدی
+این نقطه از طریق گراف بازیابی با [۰.۰ زنجیرهٔ لنگر خروجی و ادامهٔ نشست](./OUTPUT-ANCHOR-CHAIN-AND-SESSION-CLOSE-0.0-2026-10-19-002.md) و [۰.۰ مستقل Dropbox](./PALANG-DROPBOX-FAILOVER-RESUME-0.0-2026-10-12-001.md) متصل است؛ گراف در [سند مرجع زنده، بخش 16](../reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md) و [دفتر مرکزی نقاط ۰.۰](./README.md) ثبت شده است. رویداد اتصال: [EVT-0011](../architecture/BEHAVIOR-TRACE/EVT-0011-LINK-0.0-ANCHORS-OUTPUT-CHAIN-2026-10-19.md).
+
+این اتصال فقط مسیر بازیابی و lineage را برقرار می‌کند؛ این نقطه مستقل باقی می‌ماند و وضعیت مقصدهای بیرونی یا Dropbox را تغییر نمی‌دهد. هر خروجی مهم آینده باید طبق قاعدهٔ لنگر در سند مرجع canonical ثبت و با شواهد مقصدبه‌مقصد بررسی شود.
