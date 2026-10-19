@@ -332,3 +332,19 @@
 - **Read-back evidence:** after initial creation, the master and event were fetched again from the repository. The master contained 26,115 characters at that read; the event contained 2,571 characters at that read. The content SHA values observed at that stage were master `aba825c52ca4d65f4371ff2b9ff3a8080eeeb59a` and event `f8c271ff88f91f182172d80a64f888c6639356d8`. These are pre-evidence-update blob SHAs, not the final SHAs after this section is added.
 - **Scope of verification:** this is content-level read-back; required IDs, path, core execution sections, open-item status and recovery instructions were present. It is not a byte-for-byte comparison. Exact independent read-back timestamp is not supplied by the tool and remains `UNKNOWN / UNVERIFIED`.
 - **Other destinations:** only Repository/GitHub is verified by this operation. Buffer, Library, Persistent Memory and Dropbox remain independent and unverified for this version.
+
+
+### Cross-link commit evidence / شواهد پیوندهای معماری
+All timestamps below are GitHub commit timestamps in UTC; Tehran local time = UTC+03:30.
+
+| Updated target | Commit | UTC | Asia/Tehran |
+|---|---|---|---|
+| 0.0 registry | `e04a7a6a1d291f9472bd938230cf1d235f1171df` | 11:36:02Z | 15:06:02 |
+| Current 0.0 anchor | `1377065e718e97e10154ee5269864db650508489` | 11:36:11Z | 15:06:11 |
+| Temporal living reference | `ab2f875d2411c7e10bfd30e2018fad793ccd25ba` | 11:36:16Z | 15:06:16 |
+| Prior archive | `64b7a803a93a1639c332ec3f967ed4c246a007b8` | 11:36:20Z | 15:06:20 |
+| Unified output-anchor reference | `b65c99417333a4a8721d345ac12985cddf148eb7` | 11:36:24Z | 15:06:24 |
+| Architecture integration queue | `85fa7b47a9a71fb3b84cd54c4d285b9182e216b8` | 11:36:28Z | 15:06:28 |
+| Interaction behavior ledger | `05175c6e5b83f14f60b118863ed76d9dc60d9cc3` | 11:36:34Z | 15:06:34 |
+
+These commits add canonical-master pointers and EVT-0014 links; they do not claim the linked external storage destinations or open operational tasks are complete.
