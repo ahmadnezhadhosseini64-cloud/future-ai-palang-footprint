@@ -65,6 +65,15 @@ These are commit times, not user-message or read-back times. Buffer, Library, Pe
 
 - Master update commit: 0c32662072a22120c044a2f7806d3e334c35660a
 - Master content SHA returned by write: e2cb218584bbdba443a548cb28485de2da922c18
-- Verification required: fetch the master and this event after writing; confirm version 1.1.0, new section 15, identifiers, and open destination statuses.
+- Verification performed: after both writes, fetched the master and this event again from the repository. Confirmed master version 1.1.0, section 15, stable/production IDs, and that Buffer and Dropbox remain open; confirmed this event is version 1.1.0 and records the master update commit. This is content-level read-back, not byte-for-byte verification.
 - This amendment does not close any open tasks. Buffer, Library, Persistent Memory and Dropbox remain independently unverified/open; historical full-coverage audit remains open.
 - Exact user-message and independent read-back timestamps: UNKNOWN / UNVERIFIED.
+
+
+## Final read-back and commit timestamps for v1.1.0
+- Master update commit: `0c32662072a22120c044a2f7806d3e334c35660a`, created `2026-10-19T11:46:32Z` = `2026-10-19 15:16:32 Asia/Tehran`.
+- Event amendment commit: `13af6b39ebf053a74175a6db055b11ce362d9a22`, created `2026-10-19T11:46:38Z` = `2026-10-19 15:16:38 Asia/Tehran`.
+- Master read-back blob SHA: `e2cb218584bbdba443a548cb28485de2da922c18`; fetched content length: 33,484 characters.
+- Event read-back blob SHA before this final evidence update: `ea95abf145850e034e774d013b474b8dfedfa67f`; this is not the final SHA after the present event update.
+- The tool did not provide an independent exact read-back timestamp; it remains `UNKNOWN / UNVERIFIED`. Commit times above are commit times only.
+- Destination status remains unchanged: Repository content-level read-back verified; Buffer, Library and Persistent Memory unverified; Dropbox OPEN / WAITING; full historical audit OPEN / PARTIAL.
