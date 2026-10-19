@@ -49,3 +49,10 @@ Read the archival reference, this event, current 0.0, temporal contract, and Dro
 
 ## Repository evidence / شواهد مخزن
 This section is to be completed only after the actual commit metadata is available and the updated files are fetched again. Commit time is not user-message time or read-back time.
+
+
+## Repository evidence / شواهد مخزن
+
+GitHub commit metadata (UTC → Asia/Tehran, +03:30): archival reference created at 2026-10-19T10:47:08Z (14:47:08 Tehran), commit `553a2db60c20480a6d573576fb29050047e46cc8`; EVT-0013 created at 2026-10-19T10:47:11Z (14:47:11 Tehran), commit `a4f1c4c664c28d7c77d288012a7ba91122db83be`. Cross-links were committed at 14:47:39, 14:47:43, 14:47:47, and 14:47:52 Tehran respectively (see archival reference for commit IDs).
+
+The six affected files were fetched again after linking; content-level checks verified the expected IDs, references, current anchor, event entry, and open-item status. This is not byte-for-byte verification. Exact read-back time and exact user-message time remain UNKNOWN / UNVERIFIED. Only repository content was checked; other destinations remain independently unverified.
