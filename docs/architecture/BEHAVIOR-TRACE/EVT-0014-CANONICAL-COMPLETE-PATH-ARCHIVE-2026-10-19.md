@@ -33,3 +33,9 @@
 
 ## ادامه
 از سند مادر واحد ادامه بده؛ فایل‌های اصلی، دفتر ۰.۰، دفتر رفتار و صف را دوباره بخوان، موارد باز را با معیارهای سند اجرا کن و فقط پس از شواهد هر مقصد وضعیت را ببند.
+
+
+## Repository commit evidence / شواهد ثبت مخزن
+- Master created: `0c42154da73d8a23c87ffcad4e9a411b21abd8b3`, `2026-10-19T11:34:55Z` = `15:04:55 Asia/Tehran`.
+- EVT-0014 created: `2d9a75fe58ca4206e0d5e93ce2d8f0ea61f7bffc`, `2026-10-19T11:35:00Z` = `15:05:00 Asia/Tehran`.
+- Both files were fetched again after creation; their identifiers and key content were checked. This was content-level read-back, not byte-for-byte comparison. Exact read-back time and user-message time remain `UNKNOWN / UNVERIFIED`. Only Repository was checked; other destinations remain unverified.
