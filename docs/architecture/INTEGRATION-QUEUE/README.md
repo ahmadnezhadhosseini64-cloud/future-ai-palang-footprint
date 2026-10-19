@@ -3,13 +3,13 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.7.4
-- Date: 2026-10-12
-- Exact Time: در زمان اجرا به‌صورت مستقل ثبت نشده؛ حدس زده نمی‌شود.
+- Version: 1.7.5
+- Date: 2026-10-19
+- Exact Time: 11:25 local project time, minute precision; exact seconds not captured.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: نسخهٔ 1.7.3 وضعیت ممیزی Library را ثبت می‌کند: آینهٔ سند مادر قدیمی/دارای اختلاف احتمالی است؛ آینهٔ فرمان حاکم در فهرست فعلی پیدا نشد؛ سند جایگزین آرشیو در مخزن به‌روزرسانی و مستقل بازخوانی شد. آینه‌های Library هنوز به‌روزرسانی نشده‌اند.
+- Status: نسخهٔ 1.7.5 به‌روزرسانی دفتر صف برای ثبت راه‌حل پیمایش اولیه را اضافه می‌کند. وضعیت‌های تاریخی ممیزی Library حفظ می‌شوند؛ آینه‌های Library، بافر و حافظهٔ پایدار همچنان مستقل تأیید نشده‌اند.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
@@ -24,6 +24,7 @@ PENDING ≠ LOST (در انتظار ≠ گم‌شده). ثبت در این صف 
 | ARCH-0.0-TIMESTAMP-GOVERNANCE-2026-10-12-001 | اتصال قرارداد زمان‌گذاری هر نقطهٔ ۰.۰ به اسناد مرجع مادر و حاکمیت فرمان | REPOSITORY INTEGRATION VERIFIED — پنج مقصد حاکم/عملیاتی بازخوانی و تطبیق شدند؛ Dropbox، بافر، کتابخانه و حافظهٔ پایدار تأیید نشده‌اند | سند مرجع مادر، سند معماری چندنقطه‌ای ۰.۰، سند حاکم فرمان «ثبت کن»، قرارداد عمومی ثبت، دفتر ۰.۰ | [پروندهٔ زمان‌گذاری ۰.۰](./ARCH-0.0-TIMESTAMP-GOVERNANCE-2026-10-12-001.md) |
 | UNIVERSAL-ARCHITECTURE-EVOLUTION-DOCUMENTATION-PRINCIPLE-2026-10-12-001 | الزام مستندسازی چرایی، شواهد، روابط و اثبات برای هر تغییر معماری و هر جزء جدید | REPOSITORY INTEGRATION VERIFIED — سند مرجع، فرمان حاکم، قرارداد عمومی، MRV و صف به‌روزرسانی و بازخوانی شده‌اند؛ لایه‌های دیگر تأیید نشده‌اند | سند مرجع مادر، فرمان «ثبت کن»، قرارداد عمومی ثبت، صف‌ها و اجزای جدید پروژه | [پروندهٔ اصل همیشگی مستندسازی معماری](./UNIVERSAL-ARCHITECTURE-EVOLUTION-DOCUMENTATION-PRINCIPLE-2026-10-12-001.md) |
 | REF-ARCHAEOLOGY-EXCAVATION-2026-10-17-001 | خاک‌برداری، تطبیق صف‌ها و بازیابی شکاف‌های باز | OPEN / PARTIAL — مقصدهای بیرونی و پرونده‌های تاریخی هنوز بازند | MRV، صف یکپارچه‌سازی، دفتر شکاف‌ها، دفتر ۰.۰ | [پروندهٔ خاک‌برداری 2026-10-17](../../reference/REFERENCE-DOCUMENTS/REF-ARCHAEOLOGY-EXCAVATION-2026-10-17-001.md) |
+| INITIAL-NAVIGATION-SOLUTION-HUMAN-AI-INTERACTION-2026-10-19-001 | راه‌حل پیمایش اولیه؛ الگوی مستقل حرکت انسان و AI با نقاط کنترل مشترک، ثبت کامل، زمان‌گذاری، بازیابی و اثبات | REPOSITORY REFERENCES READ-BACK VERIFIED; architectural queue case remains OPEN for any remaining destination-specific gates; Buffer/Library/Persistent Memory not independently verified | سند مرجع پیمایش، دفتر ۰.۰، سند مادر و همین صف؛ بررسی مستقل فرمان «ثبت کن» فقط در صورت نیاز به تغییر اختصاصی | [پروندهٔ راه‌حل پیمایش اولیه](./INITIAL-NAVIGATION-SOLUTION-HUMAN-AI-INTERACTION-2026-10-19-001.md) |
 
 ## 4. گردش کار «خاک‌برداری»
 هنگام فرمان «خاک‌برداری»:
