@@ -348,3 +348,13 @@ All timestamps below are GitHub commit timestamps in UTC; Tehran local time = UT
 | Interaction behavior ledger | `05175c6e5b83f14f60b118863ed76d9dc60d9cc3` | 11:36:34Z | 15:06:34 |
 
 These commits add canonical-master pointers and EVT-0014 links; they do not claim the linked external storage destinations or open operational tasks are complete.
+
+
+### Final index/link normalization and root entry-point evidence
+- Repository root README master pointer: commit `37f4f00aea4f55787cea9db6e14366975e71bc55`, `2026-10-19T11:37:21Z` = `15:07:21 Asia/Tehran`.
+- 0.0 registry link normalization: `90463a3087e305da5861d7e368be581263bdd10c`, `11:38:03Z` = `15:08:03 Tehran`.
+- Unified reference link normalization: `a523b045f83b1607fb69c034fd832b9d8f96197a`, `11:38:10Z` = `15:08:10 Tehran`.
+- Integration queue link normalization: `02d0ac93a1f723f1e76e0a6b736ca19731b51da3`, `11:38:15Z` = `15:08:15 Tehran`.
+- Behavior ledger link normalization: `60f183743ba6264943acad1f33729f87563865f7`, `11:38:19Z` = `15:08:19 Tehran`.
+- Temporal reference master identity/link normalization: `b7c0276e5379794b687d4a82cdef7e6641d2eb12`, `11:38:23Z` = `15:08:23 Tehran`.
+- The links were normalized to remove stray spaces in the Markdown destinations. These are link/index updates only; they do not close operational gaps or prove other storage destinations.
