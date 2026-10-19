@@ -186,3 +186,15 @@ REFERENCE DOCUMENT = ARCHITECTURE + PROVENANCE + MANDATORY METADATA + VERSION/LI
 - الگو از شواهد قابل‌بازیابی استخراج شده و ادعای بازیابی کامل تمام گفتگوهای تاریخی ندارد.
 
 این افزوده، نسخه‌های قبلی این سند مادر را حذف نمی‌کند؛ یک لایهٔ معماری تازه با lineage مستقل است. جزئیات کامل نقش‌ها، تاریخچه، معیار پذیرش و محدودیت‌ها در سند مرجع و پروندهٔ صف پیوندشده نگهداری می‌شود.
+
+## قاعدهٔ اولیه: قاعدهٔ رفتاری شناخت انسان و AI
+- **Stable ID:** `HUMAN-AI-BEHAVIOR-RECOGNITION-RULE-2026-10-19-001`
+- **Production ID:** `HABR-HAIF-2026-10-19-001`
+- **Canonical path:** `docs/architecture/BEHAVIOR-TRACE/HUMAN-AI-BEHAVIOR-RECOGNITION-RULE-2026-10-19-001.md`
+- **Status:** قاعدهٔ اولیه برای ادامهٔ تعامل؛ سند مستقل در مخزن ایجاد و بازخوانی شده است.
+- **Scope:** رفتار قابل مشاهده و گام‌های انسان و AI جداگانه ثبت می‌شوند و با هدف، نقطهٔ ۰.۰، رویداد، شاهد و گام بعدی به هم متصل می‌مانند.
+- **Cycle:** `CAPTURE → CLASSIFY → LINK → ANALYZE HUMAN → ANALYZE AI → RECORD ACTION → PRESERVE EVIDENCE → READ-BACK → MATCH → VERIFY → NEXT STEP`.
+- **Safety/evidence boundary:** تحلیل از مشاهده جدا می‌ماند؛ نیت پنهان، تشخیص روان‌شناختی یا استدلال خصوصی به‌عنوان واقعیت ادعا نمی‌شود؛ زمان نامعلوم حدس زده نمی‌شود؛ هیچ مقصدی بدون شاهد مستقل تأییدشده اعلام نمی‌شود.
+- **Operational pointer:** `docs/architecture/BEHAVIOR-TRACE/INTERACTION-BEHAVIOR-TRACE-2026-10-19-001.md`.
+- **Cross-layer state:** این پیوند در سند مادر فقط پس از بازخوانی این فایل تأیید می‌شود؛ بافر، کتابخانه و حافظهٔ پایدار وضعیت مستقل دارند.
+
