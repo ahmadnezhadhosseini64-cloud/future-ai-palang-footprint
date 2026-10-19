@@ -316,3 +316,9 @@ Recovery/resume path:
 قاعدهٔ زمان‌محوری و ممیزی مسیر به سند حاکم جداگانه منتقل و از این مرجع پیوند داده می‌شود: [TEMPORAL-ARCHITECTURE-AND-INTERACTION-PATH-AUDIT-LIVING-REFERENCE-2026-10-19-001](./TEMPORAL-ARCHITECTURE-AND-INTERACTION-PATH-AUDIT-LIVING-REFERENCE-2026-10-19-001.md)، رویداد [EVT-0012](../../architecture/BEHAVIOR-TRACE/EVT-0012-TEMPORAL-ARCHITECTURE-AND-PATH-AUDIT-2026-10-19.md).
 
 این قرارداد از این پس بخشی از لایهٔ حاکمیتی معماری است: زمان‌های پیام/اقدام/commit/بازخوانی/تطبیق/تأیید جدا ثبت می‌شوند؛ هر ممیزی مسیر، افزوده‌ها، تغییرات، شاخه‌های دنبال‌نشده، کارهای ناقص، GAPهای اثبات‌شده در برابر فرضیه‌ها، شواهد، محدودهٔ بررسی و قدم بعدی را پوشش می‌دهد. اولین ممیزی کامل تمام تاریخچه هنوز باز است؛ این پیوند به‌تنهایی اثبات اجرای آن نیست.
+
+
+## 18. Canonical master — single entry point for continuation
+- [MASTER-CANONICAL-COMPLETE-INTERACTION-REGISTRATION-PATH-2026-10-19-001](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/CANONICAL-COMPLETE-PATH-ARCHIVE-2026-10-19/MASTER-CANONICAL-COMPLETE-INTERACTION-AND-REGISTRATION-PATH-2026-10-19-001.md)
+- [EVT-0014]( https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/architecture/BEHAVIOR-TRACE/EVT-0014-CANONICAL-COMPLETE-PATH-ARCHIVE-2026-10-19.md )
+مرجع مادر جدید مسیر تعامل، چرخهٔ ثبت، اسناد منبع، موارد باز و دستور اجرایی ادامه را یکجا جمع می‌کند. اسناد قبلی حفظ می‌شوند به‌عنوان تاریخچه/شواهد؛ هیچ مقصد بیرونی با افزودن این پیوند تأیید نمی‌شود.
