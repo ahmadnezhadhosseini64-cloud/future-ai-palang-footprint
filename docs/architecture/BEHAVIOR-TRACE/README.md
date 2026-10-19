@@ -32,3 +32,10 @@
 ## سند مرجع چرخهٔ یکپارچه
 - [سند مرجع حاکم چرخهٔ لنگر خروجی، ثبت و مستندسازی](../../reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-CYCLE-2026-10-19-001.md) — Stable ID: `UNIFIED-OUTPUT-ANCHOR-REGISTRATION-CYCLE-2026-10-19-001`, نسخهٔ 1.0.0.
 - این سند، رویداد EVT-0004 و قاعدهٔ رفتاری نسخهٔ 1.1.0 را به چرخهٔ اجرایی واحد پیوند می‌دهد. ثبت زمانی باید زمان پیام، اقدام، commit و بازخوانی را جدا نگه دارد؛ زمان نامعلوم حدس زده نمی‌شود.
+10. [رویداد EVT-0005 — ثبت سند مرجع چرخهٔ یکپارچهٔ لنگر خروجی و مستندسازی](./EVT-0005-REGISTER-UNIFIED-OUTPUT-ANCHOR-CYCLE-2026-10-19.md)
+11. [سند مرجع اجرایی چرخهٔ یکپارچهٔ لنگر خروجی، ثبت و مستندسازی](../../reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-CYCLE-2026-10-19-001.md)
+
+## لنگر جاری — EVT-0005
+چرخهٔ اجرایی حاکم: `ANCHOR → CAPTURE → CLASSIFY → DEDUPLICATE → LINK → TRACE HUMAN → TRACE AI → PRESERVE → REGISTER → READ-BACK → MATCH → VERIFY → RECONCILE → STATUS → RESUME`.
+زمان دقیق پیام/اقدام ثبت نشده و حدس زده نمی‌شود. مقصدهای خارج از مخزن فقط با شاهد مستقل تأیید می‌شوند.
+
