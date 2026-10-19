@@ -36,3 +36,16 @@
 
 ## Resume instruction
 در مراجعهٔ بعدی ابتدا نقطهٔ ۰.۰ جدید و این رویداد را بازیابی کن، سپس سند مرجع، دفتر ۰.۰ و دفتر رفتار را تطبیق بده. لنگرهای قبلی را ادغام یا حذف نکن. برای مقصدهای دیگر بدون شاهد ادعای ثبت نکن.
+
+
+## ثبت زمانی عملیات و شواهد commit
+همهٔ زمان‌های زیر از فرادادهٔ واقعی GitHub هستند؛ زمان UTC به Asia/Tehran (UTC+03:30) تبدیل شده است. این زمان‌ها زمان پیام کاربر نیستند.
+- ایجاد نقطهٔ ۰.۰: [d43fc90](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/d43fc90f7fecbb58ed19daa6c966f56ee5588270) — `2026-10-19T10:27:15Z` = `13:57:15 Tehran`.
+- ایجاد EVT-0010: [72b2d43](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/72b2d43faf478f6c99284957ee4d96b3fc8268b2) — `2026-10-19T10:27:50Z` = `13:57:50 Tehran`.
+- اتصال به دفتر ۰.۰: [820b432](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/820b4328912bc9c8bdb51c105af4260099f784e5) — `2026-10-19T10:28:20Z` = `13:58:20 Tehran`.
+- اتصال به سند مرجع زنده: [d420869](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/d420869e4dfa1b99011bb3c4132853529de7f4ff) — `2026-10-19T10:28:23Z` = `13:58:23 Tehran`.
+- اتصال به دفتر رفتار: [51fb58c](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/51fb58c0a29afe0c38eed72efa2ca267b62845e8) — `2026-10-19T10:28:26Z` = `13:58:26 Tehran`.
+- افزودن شواهد به پروندهٔ ۰.۰: [8e5042b](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/8e5042b7bb1c9db00b5117b368e322603bf68e29) — `2026-10-19T10:28:30Z` = `13:58:30 Tehran`.
+- زمان پیام کاربر: UNKNOWN / UNVERIFIED؛ حدس زده نمی‌شود.
+- زمان مستقل بازخوانی نهایی: UNKNOWN / UNVERIFIED مگر آنکه ابزار آن را جداگانه گزارش کند.
+- پس از این تغییر، پنج فایل مرتبط باید بازخوانی و از نظر محتوایی تطبیق شوند؛ نوشتن به‌تنهایی تأیید نیست.
