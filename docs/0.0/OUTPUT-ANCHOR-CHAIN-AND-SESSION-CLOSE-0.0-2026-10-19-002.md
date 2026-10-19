@@ -91,3 +91,8 @@
 شناسهٔ پایدار: `ATCPA-ARCHIVE-LIVING-2026-10-19-001`؛ شناسهٔ تولید: `ATCPA-HAIF-2026-10-19-001`؛ نسخه: 1.0.0.
 
 این پیوند، سند آرشیوی کاملِ وضعیت تا این نقطه را به لنگر ادامه وصل می‌کند. این لنگر تازهٔ ۰.۰ نیست و لنگرهای قبلی را ادغام یا نمی‌بندد. موارد باز شامل آزمون عملیاتی Dropbox، اثبات مستقل بافر/کتابخانه/حافظهٔ پایدار، زمان‌های دقیق فاقد شاهد، و ممیزی تاریخی فراتر از دامنهٔ اسناد واقعاً بازخوانی‌شده است.
+
+
+## 14. سند مرجع مادرِ واحد — مسیر کامل و اجرایی
+مرجع اصلی ادامه از این پس: [MASTER-CANONICAL-COMPLETE-INTERACTION-REGISTRATION-PATH-2026-10-19-001](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/CANONICAL-COMPLETE-PATH-ARCHIVE-2026-10-19/MASTER-CANONICAL-COMPLETE-INTERACTION-AND-REGISTRATION-PATH-2026-10-19-001.md)
+رویداد ثبت: [EVT-0014](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/architecture/BEHAVIOR-TRACE/EVT-0014-CANONICAL-COMPLETE-PATH-ARCHIVE-2026-10-19.md). این سند پوشهٔ اختصاصی، چرخهٔ اجرایی «ثبت کن»، مسیر تعامل/معماری، موارد باز، معیار پذیرش و دستور ادامه را یکجا نگه می‌دارد. این لنگر فعلی باقی می‌ماند و ۰.۰ تازه‌ای ایجاد نشده است. Dropbox و مقصدهای غیر از مخزن همچنان به شواهد مستقل نیاز دارند.
