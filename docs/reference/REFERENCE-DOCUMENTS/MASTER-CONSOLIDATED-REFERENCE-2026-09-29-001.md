@@ -198,3 +198,18 @@ REFERENCE DOCUMENT = ARCHITECTURE + PROVENANCE + MANDATORY METADATA + VERSION/LI
 - **Operational pointer:** `docs/architecture/BEHAVIOR-TRACE/INTERACTION-BEHAVIOR-TRACE-2026-10-19-001.md`.
 - **Cross-layer state:** این پیوند در سند مادر فقط پس از بازخوانی این فایل تأیید می‌شود؛ بافر، کتابخانه و حافظهٔ پایدار وضعیت مستقل دارند.
 
+
+
+## قاعدهٔ یکپارچهٔ لنگر خروجی، ثبت و مستندسازی
+- **Stable ID:** HUMAN-AI-BEHAVIOR-RECOGNITION-RULE-2026-10-19-001
+- **Version:** 1.1.0
+- **Canonical rule:** docs/architecture/BEHAVIOR-TRACE/HUMAN-AI-BEHAVIOR-RECOGNITION-RULE-2026-10-19-001.md
+- **Event record:** docs/architecture/BEHAVIOR-TRACE/EVT-0004-UNIFIED-OUTPUT-ANCHOR-REGISTRATION-RULE-2026-10-19.md
+- **Operational ledger:** docs/architecture/BEHAVIOR-TRACE/INTERACTION-BEHAVIOR-TRACE-2026-10-19-001.md
+- **Principle:** هر خروجی لنگر قابل‌بازیابی دارد؛ «ثبت کن»، مستندسازی، زمان‌گذاری و رفتارشناسی قواعد مستقل و رقیب نیستند، بلکه یک قرارداد اجرایی واحد با منشأ و شواهد مشترک‌اند. پاسخ‌های ساده می‌توانند لنگر کم‌حجم داشته باشند؛ تغییر معماری، تصمیم، خطا و ثبت واقعی به رکورد کامل نیاز دارد.
+- **Cycle:** ANCHOR → CAPTURE → CLASSIFY → DEDUPLICATE → LINK → TRACE HUMAN → TRACE AI → PRESERVE → REGISTER → READ-BACK → MATCH → VERIFY → RECONCILE → STATUS → RESUME.
+- **Time rule:** زمان پیام، اقدام، commit و بازخوانی از هم جدا هستند؛ زمان دقیق نامعلوم حدس زده نمی‌شود.
+- **Evidence rule:** نوشتن بدون بازخوانی، تطبیق و تأیید، اثبات تکمیل نیست. وضعیت مخزن، بافر، کتابخانه، حافظهٔ پایدار و Dropbox مستقل گزارش می‌شود.
+- **Repository status:** سند قاعده نسخهٔ 1.1.0 و رویداد EVT-0004 از مخزن بازخوانی شدند. این الحاقیه اکنون در سند مادر نوشته شده است؛ پس از این تغییر، بازخوانی مستقل همین سند مادر و پیوندهای آن لازم است.
+- **External destinations:** بافر، کتابخانه و حافظهٔ پایدار در این عملیات مستقل تأیید نشده‌اند؛ Dropbox نیز تغییر داده یا آزمایش نشده است.
+- **Lineage:** درخواست کاربر برای اینکه هر خروجی لنگر داشته باشد و هم‌پوشانی قواعد ثبت و مستندسازی در یک قاعدهٔ واحد ادغام شود.
