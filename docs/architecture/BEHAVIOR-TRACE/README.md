@@ -27,3 +27,8 @@
 8. [رویداد EVT-0003 — ثبت قاعدهٔ اولیه](./EVT-0003-REGISTER-INITIAL-BEHAVIOR-RULE-2026-10-19.md)
 9. [رویداد EVT-0004 — یکپارچه‌سازی لنگر خروجی و ثبت](./EVT-0004-UNIFIED-OUTPUT-ANCHOR-REGISTRATION-RULE-2026-10-19.md)
 
+
+
+## سند مرجع چرخهٔ یکپارچه
+- [سند مرجع حاکم چرخهٔ لنگر خروجی، ثبت و مستندسازی](../../reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-CYCLE-2026-10-19-001.md) — Stable ID: `UNIFIED-OUTPUT-ANCHOR-REGISTRATION-CYCLE-2026-10-19-001`, نسخهٔ 1.0.0.
+- این سند، رویداد EVT-0004 و قاعدهٔ رفتاری نسخهٔ 1.1.0 را به چرخهٔ اجرایی واحد پیوند می‌دهد. ثبت زمانی باید زمان پیام، اقدام، commit و بازخوانی را جدا نگه دارد؛ زمان نامعلوم حدس زده نمی‌شود.
