@@ -25,3 +25,11 @@ The latest excavation and integration reconciliation record is [REF-ARCHAEOLOGY-
 - [0.0 continuation registry](docs/0.0/README.md)
 
 This pattern separates the human's navigation behavior from the AI's execution behavior and reconnects them at evidence-gated checkpoints. Repository links do not prove Buffer, Library, Dropbox, or Persistent Memory registration.
+
+
+## Single canonical continuation reference — مسیر واحد ادامه
+For the complete executable interaction, architecture, registration, evidence, open-item, and recovery path, start here:
+- [Master Canonical Complete Interaction & Registration Path](docs/reference/REFERENCE-DOCUMENTS/CANONICAL-COMPLETE-PATH-ARCHIVE-2026-10-19/MASTER-CANONICAL-COMPLETE-INTERACTION-AND-REGISTRATION-PATH-2026-10-19-001.md)
+- Event record: [EVT-0014](docs/architecture/BEHAVIOR-TRACE/EVT-0014-CANONICAL-COMPLETE-PATH-ARCHIVE-2026-10-19.md)
+
+This master is the single entry point for continuation; earlier anchors and source records remain preserved. External destinations and open operational items are not considered complete without destination-specific evidence.
