@@ -64,3 +64,11 @@
 `WRITE ≠ VERIFIED` — نوشتن مساوی تأیید نیست.
 `INCOMPLETE ≠ LOST` — ناقص بودن مساوی گم‌شدن نیست.
 `PENDING ≠ BURIED` — در انتظار بودن مساوی مدفون‌شدن نیست.
+
+
+## 10. شواهد زمانی ثبت‌شده
+- ایجاد پروندهٔ این نقطه در مخزن: [commit d43fc90](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/d43fc90f7fecbb58ed19daa6c966f56ee5588270), `2026-10-19T10:27:15Z` = `2026-10-19 13:57:15 Asia/Tehran`.
+- ایجاد رویداد EVT-0010: [commit 72b2d43](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/72b2d43faf478f6c99284957ee4d96b3fc8268b2), `2026-10-19T10:27:50Z` = `2026-10-19 13:57:50 Asia/Tehran`.
+- زمان دقیق پیام کاربر: UNKNOWN / UNVERIFIED.
+- زمان مستقل بازخوانی: اگر مهر زمانی ابزار در دسترس نباشد UNKNOWN / UNVERIFIED؛ از زمان commit برای آن استفاده نکن.
+- این شواهد پس از ایجاد فایل‌ها اضافه شده‌اند؛ پس از این به‌روزرسانی، پرونده و تمام فایل‌های پیوندخورده دوباره بازخوانی و تطبیق شوند.
