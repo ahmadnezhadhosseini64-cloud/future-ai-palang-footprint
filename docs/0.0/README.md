@@ -118,3 +118,10 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 [سند مرجع چرخهٔ یکپارچهٔ لنگر خروجی، ثبت و مستندسازی](../reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-CYCLE-2026-10-19-001.md) — `UNIFIED-OUTPUT-ANCHOR-REGISTRATION-CYCLE-2026-10-19-001`، نسخهٔ 1.0.0.
 
 این پیوند، لنگرهای موجود ۰.۰ را جایگزین یا حذف نمی‌کند. هر نقطهٔ ادامه باید طبق همین چرخه حفظ، پیونددهی و با وضعیت مقصدهای مستقل گزارش شود؛ نقطهٔ باز Dropbox همچنان تا اتصال و آزمون واقعی باز می‌ماند.
+## رویداد جاری مرتبط با معماری — EVT-0005
+- **Event Anchor:** `EVT-0005-REGISTER-UNIFIED-OUTPUT-ANCHOR-CYCLE-2026-10-19`
+- **سند مرجع چرخه:** [چرخهٔ یکپارچهٔ لنگر خروجی، ثبت و مستندسازی](../reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-CYCLE-2026-10-19-001.md)
+- **پروندهٔ رویداد:** [EVT-0005](../architecture/BEHAVIOR-TRACE/EVT-0005-REGISTER-UNIFIED-OUTPUT-ANCHOR-CYCLE-2026-10-19.md)
+- **وضعیت:** اشاره‌گر بازیابی معماری؛ این مورد نقطهٔ ۰.۰ تازه‌ای نیست و هیچ لنگر قبلی را جایگزین نمی‌کند. لنگر مستقل Dropbox همچنان OPEN / WAITING است.
+- **زمان:** تاریخ 2026-10-19؛ زمان دقیق پیام/اقدام ثبت نشده و حدس زده نمی‌شود.
+
