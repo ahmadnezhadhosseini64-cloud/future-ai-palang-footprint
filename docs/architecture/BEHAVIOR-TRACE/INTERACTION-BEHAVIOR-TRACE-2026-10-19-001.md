@@ -151,3 +151,14 @@
 - **وضعیت مخزن:** سند مرجع و پیوندهای سند مادر، نمایهٔ رفتار، صف معماری و دفتر ۰.۰ بازخوانی شدند؛ شناسهٔ سند در هر مسیر یافت شد.
 - **محدودیت مقصدها:** Buffer، Library، Persistent Memory و Dropbox در این عملیات مستقل نوشته/بازخوانی/آزموده نشدند و PENDING / UNVERIFIED باقی می‌مانند.
 - **گام بعدی:** در مراجعهٔ بعدی از سند مرجع و این لنگر ادامه بده؛ آزمون مستقل مقصدهای بیرونی و لنگر باز Dropbox را بدون بستن ساختگی پیگیری کن.
+
+
+## EVT-0005 — ثبت سند مرجع زندهٔ چرخهٔ یکپارچه
+- Event: [EVT-0005](./EVT-0005-UNIFIED-OUTPUT-ANCHOR-LIVING-REFERENCE-REGISTRATION-2026-10-19.md)
+- Canonical reference: [سند مرجع زندهٔ چرخهٔ لنگر خروجی، ثبت، مستندسازی و بازیابی](../../reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md)
+- User observable action: درخواست صریح برای ثبت کامل چرخه، مستندسازی، ثبت زمانی، قرار دادن در مخزن و زنده‌سازی مرجع.
+- AI observable action: ایجاد سند کامل، نوشتن در مخزن، بازخوانی، بررسی محتوایی و اتصال به نمایهٔ رفتار، سند مادر، صف معماری و دفتر ۰.۰.
+- Repository evidence: سند canonical بازخوانی شد؛ blob SHA نهایی `fe4c4f3c3b5b32f6b5d1119178647ae446489a73`. رویداد EVT-0005 و نمایه‌های پیونددهنده نیز پس از نوشتن بازخوانی شدند.
+- Exact interaction/action time: UNKNOWN/UNVERIFIED؛ زمان حدس زده نمی‌شود.
+- Destination status: Repository registered/read-back content-checked; Buffer, Library and Persistent Memory independently unverified; Dropbox not tested in this event.
+- Next action: مقصدهای مستقل را فقط با شاهد مستقیم به‌روزرسانی کن؛ از سند canonical و EVT-0005 ادامه بده و لنگرهای قبلی ۰.۰ را حفظ کن.
