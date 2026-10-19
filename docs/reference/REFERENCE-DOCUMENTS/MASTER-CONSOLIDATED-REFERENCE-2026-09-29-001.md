@@ -4,7 +4,7 @@ Stable Reference ID: FUTURE-AI-PALANG-FOOTPRINT-MASTER-CONSOLIDATED-2026-09-29-0
 Production ID: REF-GOVERNANCE-METADATA-LIVING-2026-09-29-001
 Title: Master Consolidated Reference — Living Reference Governance & Mandatory Metadata
 Type: MASTER REFERENCE / LIVING ARCHITECTURAL RECORD
-Version: 1.1
+Version: 1.2
 Status: MASTER CONSOLIDATED REFERENCE — ACTIVE / LIVING / EVOLVING
 Owner/Name: Ahmad Nezhadhosseini / احمد پلنگ
 Location: Gonbad-e Kavus, Iran
