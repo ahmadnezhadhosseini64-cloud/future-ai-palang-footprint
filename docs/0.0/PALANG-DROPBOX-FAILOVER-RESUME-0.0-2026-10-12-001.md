@@ -79,3 +79,9 @@ docs/reference/REFERENCE-DOCUMENTS/PALANG-DROPBOX-FAILOVER-RESUME-0.0-2026-10-12
 - **Time Provenance — منشأ زمان:** تاریخ ثبت‌شده در پرونده و تاریخچهٔ commit مخزن؛ هیچ زمان ناموجودی حدس زده نمی‌شود.
 - **Current state:** OPEN / WAITING — اتصال Dropbox و آزمون مسیر جایگزین همچنان انجام‌نشده/تأییدنشده است. ادغام قرارداد زمان‌گذاری در مخزن، این نقطهٔ عملیاتی را تکمیل نمی‌کند.
 - **Architecture lineage:** `ARCH-0.0-TIMESTAMP-GOVERNANCE-2026-10-12-001`; `MULTI-POINT-0.0-ANCHOR-REGISTRY-ARCHITECTURE-2026-10-12-001`.
+
+
+## 10. پیوند به گراف مشترک نقاط ۰.۰
+این نقطهٔ عملیاتیِ Dropbox به‌عنوان یک مسیر مستقل در گراف بازیابی ثبت شده و به [۰.۰ حاکمیت ثبت کامل](./OUTPUT-ANCHOR-GOVERNANCE-COMPLETE-REGISTRATION-0.0-2026-10-19-001.md)، [۰.۰ زنجیرهٔ لنگر خروجی و ادامهٔ نشست](./OUTPUT-ANCHOR-CHAIN-AND-SESSION-CLOSE-0.0-2026-10-19-002.md)، [دفتر مرکزی نقاط ۰.۰](./README.md)، [سند مرجع زنده، بخش 16](../reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md) و [رویداد اتصال EVT-0011](../architecture/BEHAVIOR-TRACE/EVT-0011-LINK-0.0-ANCHORS-OUTPUT-CHAIN-2026-10-19.md) وصل است.
+
+**وضعیت این نقطه تغییر نکرده است: OPEN / WAITING.** اتصال Dropbox، نوشتن فایل آزمایشی، بازخوانی و تطبیق هنوز باید واقعاً انجام شوند. ثبت این پیوند در مخزن هیچ‌یک از آن آزمون‌ها را اجرا یا اثبات نمی‌کند؛ این نقطه مستقل باقی می‌ماند.
