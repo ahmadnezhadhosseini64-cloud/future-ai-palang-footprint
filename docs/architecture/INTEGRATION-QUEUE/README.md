@@ -467,3 +467,14 @@ The queue index and the timestamp case must each be read back after this update.
 - **وضعیت:** مرجع و پیوندهای مخزنی باید با بازخوانی هر نسخهٔ تغییرکرده تأیید شوند. هر مقصد بیرونی تا زمان اثبات مستقل PENDING / UNVERIFIED می‌ماند.
 - **اقدام بعدی:** ادامهٔ تطبیق پیوندهای معماری و بررسی مستقل Buffer، Library، Persistent Memory و Dropbox؛ هیچ شکافی صرفاً با اضافه‌شدن پیوند بسته نمی‌شود.
 
+
+
+## سند مرجع زندهٔ چرخهٔ یکپارچهٔ لنگر خروجی — پیوند معماری
+
+- Stable ID: `UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001`
+- Production ID: `UOAR-HAIF-2026-10-19-001`
+- Status: REPOSITORY REGISTERED; CANONICAL REFERENCE READ-BACK CONTENT-CHECKED; cross-destination persistence remains open.
+- Canonical reference: [سند مرجع کامل چرخه](../../reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md)
+- Event evidence: [EVT-0005](../BEHAVIOR-TRACE/EVT-0005-UNIFIED-OUTPUT-ANCHOR-LIVING-REFERENCE-REGISTRATION-2026-10-19.md)
+- Governing rule: [قاعدهٔ رفتاری و لنگر خروجی](../BEHAVIOR-TRACE/HUMAN-AI-BEHAVIOR-RECOGNITION-RULE-2026-10-19-001.md)
+- Next action: maintain this pointer in the architecture queue and keep Buffer, Library and Persistent Memory pending until independently verified. Existing 0.0 anchors remain unchanged.
