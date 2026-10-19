@@ -478,3 +478,16 @@ The queue index and the timestamp case must each be read back after this update.
 - Event evidence: [EVT-0005](../BEHAVIOR-TRACE/EVT-0005-UNIFIED-OUTPUT-ANCHOR-LIVING-REFERENCE-REGISTRATION-2026-10-19.md)
 - Governing rule: [قاعدهٔ رفتاری و لنگر خروجی](../BEHAVIOR-TRACE/HUMAN-AI-BEHAVIOR-RECOGNITION-RULE-2026-10-19-001.md)
 - Next action: maintain this pointer in the architecture queue and keep Buffer, Library and Persistent Memory pending until independently verified. Existing 0.0 anchors remain unchanged.
+
+
+---
+## مرجع مادر واحد مسیر کامل — مورد معماری جدید
+- **Stable ID:** `MASTER-CANONICAL-COMPLETE-INTERACTION-REGISTRATION-PATH-2026-10-19-001`
+- **Production ID:** `MCCIRP-HAIF-2026-10-19-001`
+- **Status:** Repository file created and content-level read-back performed; other destinations remain unverified.
+- **Canonical folder:** `docs/reference/REFERENCE-DOCUMENTS/CANONICAL-COMPLETE-PATH-ARCHIVE-2026-10-19/`
+- **Canonical master:** [سند مرجع مادر کامل]( https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/CANONICAL-COMPLETE-PATH-ARCHIVE-2026-10-19/MASTER-CANONICAL-COMPLETE-INTERACTION-AND-REGISTRATION-PATH-2026-10-19-001.md )
+- **Event:** [EVT-0014]( https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/architecture/BEHAVIOR-TRACE/EVT-0014-CANONICAL-COMPLETE-PATH-ARCHIVE-2026-10-19.md )
+- **Purpose:** نقطهٔ ورود واحد و اجرایی برای مسیر تعامل، معماری، ثبت، مستندسازی، شواهد، موارد باز، معیارهای پذیرش و ادامه.
+- **Open gates:** صف یکپارچه‌سازی، آینه‌های Library برای MRV و فرمان حاکم، Buffer، Persistent Memory، Dropbox (فقط پس از دستور صریح)، دو پروندهٔ تاریخی زنده‌سازی، آزمون‌های E2E/پل حافظه، و ممیزی کامل تاریخچه.
+- **Rule:** پیوند به مرجع مادر جایگزین ادغام محتوایی در مقصدهای معنایی یا آزمون مقصدبه‌مقصد نیست. هر مورد باید با بازخوانی، تطبیق و شاهد بسته شود.
