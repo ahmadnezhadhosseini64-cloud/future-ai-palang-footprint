@@ -162,3 +162,9 @@ The archive now preserves the currently evidenced changes, the three independent
 **Disposition:** repository archive/event and links are to be read back after the last write; Dropbox remains OPEN / WAITING because connection, test write, retrieval, and match require real operational evidence and may require user authorization. Buffer, Library, and Persistent Memory remain UNVERIFIED unless independently proven. Exact user-message time and exact read-back time remain UNKNOWN / UNVERIFIED. Do not close these tasks merely because this reference exists.
 
 **Next:** use the archive as the next recovery package, inspect later commits/events, and complete only the actions for which actual access and evidence are available.
+
+
+## 13. Canonical master pointer / اشاره‌گر سند مادر واحد
+- **Master:** [سند مرجع مادر کامل مسیر تعامل و ثبت](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/CANONICAL-COMPLETE-PATH-ARCHIVE-2026-10-19/MASTER-CANONICAL-COMPLETE-INTERACTION-AND-REGISTRATION-PATH-2026-10-19-001.md)
+- **Event:** [EVT-0014](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/architecture/BEHAVIOR-TRACE/EVT-0014-CANONICAL-COMPLETE-PATH-ARCHIVE-2026-10-19.md)
+این مرجع نقطهٔ ورود اجرایی واحد برای ادامه است. موارد باز فقط پس از شواهد مقصدبه‌مقصد بسته می‌شوند؛ زمان‌های نامعلوم حدس زده نمی‌شوند.
