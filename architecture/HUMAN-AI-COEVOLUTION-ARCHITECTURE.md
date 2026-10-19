@@ -43,3 +43,20 @@ No claim of learning, transfer, persistent knowledge, or improvement is consider
 
 ## Relationship to 0.0
 This architecture inherits current 0.0 governance and existing Rule Inheritance, Traceable Execution, Evidence Gate, Recovery/Reconciliation, and Archive Revival controls.
+
+
+---
+
+
+## Initial Navigation Solution — Human and AI Movement Patterns
+
+The architecture now includes the repository artifact:
+`architecture/INITIAL-NAVIGATION-SOLUTION-HUMAN-AI-2026-10-19-001.md`
+
+- Stable ID: `INITIAL-NAVIGATION-SOLUTION-HUMAN-AI-2026-10-19-001`
+- Persian name: «راه‌حل پیمایش اولیه»
+- Role: separate but connected models of Human Movement Pattern and AI Movement Pattern, plus a joint navigation lifecycle for capture, retrieval, evidence, registration, interruption, and resumption.
+- Status: registered in Repository; integration links are being recorded. Buffer and Persistent Memory are not verified by this repository entry.
+- Governance: this is an initial model derived from the observed Certificate Inbox 0.0 path. Transfer to other workflows remains to be tested; it does not automatically promote all linked components to ACTIVE/LIVING.
+
+The model inherits this architecture's distinction between message, intent, shared understanding, experiment, validated learning, and durable project knowledge. It does not replace this architecture or its governing Master.
