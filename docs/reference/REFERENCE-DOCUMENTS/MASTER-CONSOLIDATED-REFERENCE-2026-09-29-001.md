@@ -168,7 +168,8 @@ REFERENCE DOCUMENT = ARCHITECTURE + PROVENANCE + MANDATORY METADATA + VERSION/LI
 - **Reference:** `docs/reference/REFERENCE-DOCUMENTS/INITIAL-NAVIGATION-SOLUTION-HUMAN-AI-INTERACTION-2026-10-19-001.md`
 - **Queue Case:** `docs/architecture/INTEGRATION-QUEUE/INITIAL-NAVIGATION-SOLUTION-HUMAN-AI-INTERACTION-2026-10-19-001.md`
 - **Date/Time:** 2026-10-19, 11:24 Asia/Tehran (UTC+03:30); precision is minute-level, exact seconds not captured.
-- **Status:** Reference and queue case registered in Repository; final architectural integration remains subject to destination read-back and matching. Buffer, Library, and Persistent Memory are not independently verified.
+- **Status:** Reference, queue case, queue index, 0.0 registry and this Master Reference were read back from Repository after the update; the relevant ID and section presence were checked. Repository-side integration is content-checked, not byte-for-byte cryptographically compared. Buffer, Library and Persistent Memory are not independently verified.
+- **Repository read-back checkpoint:** 2026-10-19, 11:25 Asia/Tehran (UTC+03:30), minute precision; exact seconds were not captured.
 
 ### Architectural purpose
 این الگو دو مسیر رفتاری جدا اما هماهنگ تعریف می‌کند: حرکت انسان (تعیین هدف، لنگر ۰.۰، قواعد، هدایت، بازبینی، تأیید و توقف بدون بستن) و حرکت AI (بازیابی، حفظ، منشأ، زمان‌گذاری، اجرای واقعی، بازخوانی، تطبیق، جای‌گذاری معماری، اعلام صادقانه و ساخت نقطهٔ ادامه). دو مسیر در نقاط کنترل مشترک به هم می‌رسند.
