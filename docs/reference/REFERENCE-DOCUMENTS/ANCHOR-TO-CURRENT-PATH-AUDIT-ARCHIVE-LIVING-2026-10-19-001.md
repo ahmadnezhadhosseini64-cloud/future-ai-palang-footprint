@@ -160,3 +160,19 @@
 این بسته برای آرشیو و ازسرگیری ساخته شده است. وضعیت عملیاتیِ Dropbox و اثبات مقصدهای غیر از مخزن هنوز باز است؛ ممیزی همهٔ تاریخچه نیز تا زمانی که دامنهٔ کامل رویدادها و منابع قابل‌دسترسی بررسی نشده باشد، «کاملاً تمام‌شده» اعلام نمی‌شود. آنچه ثبت شده، تفکیک صادقانهٔ شواهد و موارد باز و مسیر مشخص برای تکمیل آن‌هاست.
 
 **اصل بازیابی:** `ANCHOR → RETRIEVE → READ-BACK → MATCH → VERIFY → RECONCILE → RESUME`
+
+
+## 12. Repository registration evidence and read-back / شواهد ثبت مخزن و بازخوانی
+
+Commit timestamps below are from GitHub metadata; Tehran time is UTC+03:30. These are repository commit times, not user-message or read-back times.
+
+| Action | Commit | UTC | Asia/Tehran |
+|---|---|---|---|
+| Create archival reference | [553a2db](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/553a2db60c20480a6d573576fb29050047e46cc8) | 2026-10-19 10:47:08Z | 2026-10-19 14:47:08 |
+| Create EVT-0013 | [a4f1c4c](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/a4f1c4c664c28d7c77d288012a7ba91122db83be) | 2026-10-19 10:47:11Z | 2026-10-19 14:47:11 |
+| Update temporal living reference | [4938139](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/4938139f80197fe18f7a3c23dfc48f9a1a5013a3) | 2026-10-19 10:47:39Z | 2026-10-19 14:47:39 |
+| Link current 0.0 anchor | [086dbb9](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/086dbb90eafc97b74ad97b4a0623f2caea052db8) | 2026-10-19 10:47:43Z | 2026-10-19 14:47:43 |
+| Link 0.0 registry | [257c37c](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/257c37c5f5cd1cf7c37801f7a67f8f95de547b76) | 2026-10-19 10:47:47Z | 2026-10-19 14:47:47 |
+| Add EVT-0013 to behavior ledger | [b8ebf9b](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/b8ebf9b4e081f976212985bbc5fec0795a9e71ee) | 2026-10-19 10:47:52Z | 2026-10-19 14:47:52 |
+
+After the writes, the archival reference, EVT-0013, temporal reference, current 0.0 anchor, 0.0 registry, and behavior ledger were fetched again for content-level verification. The check is limited to the expected identifiers, links, open statuses, and key sections; it is not a byte-for-byte comparison. Exact read-back time is not exposed by the tool and remains UNKNOWN / UNVERIFIED. Repository is the only destination checked here; Buffer, Library, Persistent Memory, and Dropbox are not independently verified.
