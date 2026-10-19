@@ -97,3 +97,8 @@ ANCHOR → CAPTURE → CLASSIFY → DEDUPLICATE → LINK → TRACE HUMAN → TRA
 - این قاعده، قرارداد اجرایی آیندهٔ تعامل است و از همین لحظه برای پاسخ‌های بعدی اعمال می‌شود.
 - ثبت این متن در مخزن و بازخوانی آن باید مستقل تأیید شود؛ این کار به‌خودی‌خود ثبت در بافر، کتابخانه، حافظهٔ پایدار یا Dropbox را اثبات نمی‌کند.
 - هر اصلاح بعدی با نسخه و منشأ تازه انجام شود؛ این نسخه بی‌صدا بازنویسی تاریخی نمی‌شود.
+
+### 9.6 سند مرجع اجرایی canonical و رویداد ثبت
+- سند مرجع کامل و زندهٔ این چرخه: [UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001](../../reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md), version 1.0.0.
+- رویداد ثبت و شاهد مخزن: [EVT-0005](./EVT-0005-UNIFIED-OUTPUT-ANCHOR-LIVING-REFERENCE-REGISTRATION-2026-10-19.md).
+- این پیوند، قاعدهٔ حاکم را به سند کامل و قابل بازیابی متصل می‌کند؛ وضعیت بافر، کتابخانه، حافظهٔ پایدار و Dropbox مستقل باقی می‌ماند و از ثبت مخزن نتیجه‌گیری نمی‌شود.
