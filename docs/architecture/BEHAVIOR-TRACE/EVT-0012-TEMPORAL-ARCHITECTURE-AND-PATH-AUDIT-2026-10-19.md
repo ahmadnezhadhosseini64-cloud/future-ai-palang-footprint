@@ -40,3 +40,9 @@ This event is complete only when the reference/event and cross-links have been w
 
 ## Next action
 After writing, read back each changed file and verify expected IDs and links. On the next session, start here and perform the first full path audit from the current 0.0 anchor through all later recorded events, listing additions, omissions, pending tasks, gaps, and a prioritized growth plan.
+
+
+## Repository evidence / شواهد مخزن
+GitHub commit timestamps, converted UTC to Asia/Tehran (+03:30): reference created 2026-10-19 14:08:33; EVT-0012 created 14:08:36; 0.0 registry linked 14:08:54; current 0.0 linked 14:08:57; unified reference linked 14:09:01; behavior trace linked 14:09:04. These are commit times, not message or read-back times.
+
+After writing, six files were fetched again. Content-level checks found the expected event ID, reference links, timestamp model, and open-gap status. This is not byte-for-byte verification. Exact user-message time and independent read-back time remain UNKNOWN / UNVERIFIED. Repository content was checked; buffer, library, persistent memory and Dropbox were not independently verified. Dropbox remains OPEN / WAITING. The first full historical path audit remains OPEN / PENDING.
