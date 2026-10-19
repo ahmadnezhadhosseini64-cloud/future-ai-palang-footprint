@@ -455,3 +455,7 @@ The queue index and the timestamp case must each be read back after this update.
 - قاعدهٔ حاکم: [قاعدهٔ رفتاری شناخت انسان و AI](../BEHAVIOR-TRACE/HUMAN-AI-BEHAVIOR-RECOGNITION-RULE-2026-10-19-001.md)، نسخهٔ 1.1.0.
 - رویداد ثبت: [EVT-0004](../BEHAVIOR-TRACE/EVT-0004-UNIFIED-OUTPUT-ANCHOR-REGISTRATION-RULE-2026-10-19.md).
 - اصل: هر خروجی لنگر دارد؛ «ثبت کن»، رفتارشناسی و مستندسازی یک چرخهٔ واحدند؛ مقصدهای بیرونی مستقل تأیید می‌شوند.
+
+
+## پیوند حاکم: چرخهٔ یکپارچهٔ لنگر خروجی
+مرجع اجرایی چرخهٔ ثبت و مستندسازی: [UNIFIED-OUTPUT-ANCHOR-REGISTRATION-CYCLE-2026-10-19-001](../../reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-CYCLE-2026-10-19-001.md). این صف باید هر مورد باز را با لنگر، منشأ، مقصد، آخرین گام تأییدشده، شاهد، مانع و اقدام بعدی نگه دارد. ثبت در صف به‌تنهایی ادغام نهایی در معماری مادر یا تأیید مقصدهای دیگر نیست.
