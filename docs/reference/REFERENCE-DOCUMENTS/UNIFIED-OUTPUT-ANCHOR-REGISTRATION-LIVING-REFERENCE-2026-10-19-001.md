@@ -261,3 +261,17 @@ Recovery/resume path:
 
 ### 14.5 قاعدهٔ اجرا از این لحظه
 در هر پاسخ آینده، ابتدا تشخیص بده آیا خروجی صرفاً مکالمه‌ای است یا تغییر مهم/قابل‌ادامه در پروژه ایجاد می‌کند. اگر مهم است، یک لنگر یا رویداد قابل‌بازیابی بده، سند مرجع کامل را در صورت اقتضا به‌روز کن، زمان‌های دارای شاهد را ثبت کن، و پس از ثبت، بازخوانی و تطبیق را انجام بده. اگر امکان ثبت واقعی یا دسترسی به مقصد وجود ندارد، صریح بگو و بستهٔ کامل قابل‌کپی برای بازیابی بده؛ هیچ ذخیره‌سازی یا زنده‌بودن در مقصدی را بدون شاهد ادعا نکن.
+
+
+## 15. نقطهٔ ۰.۰ پایان موقت نشست — حفظ آخرین وضعیت معتبر
+- **Stable ID:** `OUTPUT-ANCHOR-CHAIN-AND-SESSION-CLOSE-0.0-2026-10-19-002`
+- **Production ID:** `OACSC-HAIF-2026-10-19-002` · **Version:** 1.0.0
+- **Anchor:** [پروندهٔ کامل نقطهٔ ۰.۰](../../0.0/OUTPUT-ANCHOR-CHAIN-AND-SESSION-CLOSE-0.0-2026-10-19-002.md)
+- **Event:** [EVT-0010](../../architecture/BEHAVIOR-TRACE/EVT-0010-USER-DEFINED-0.0-SESSION-CLOSE-2026-10-19.md)
+- **Registry:** [دفتر نقاط ۰.۰](../../0.0/README.md)
+- **Origin:** درخواست صریح کاربر در 2026-10-19 برای ثبت همین وضعیت به‌عنوان نقطهٔ ۰.۰ و ساخت سند مرجع کامل.
+- **Exact user-message timestamp:** UNKNOWN / UNVERIFIED؛ حدس زده نمی‌شود.
+- **Repository anchor commit:** [d43fc90](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/d43fc90f7fecbb58ed19daa6c966f56ee5588270), 2026-10-19 13:57:15 Asia/Tehran.
+- **Repository event commit:** [72b2d43](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/72b2d43faf478f6c99284957ee4d96b3fc8268b2), 2026-10-19 13:57:50 Asia/Tehran.
+- **Resume rule:** در مراجعهٔ بعدی ابتدا این نقطه و EVT-0010 را بازیابی کن، سپس این سند، دفتر نقاط ۰.۰ و دفتر رفتار را بازخوانی و تطبیق بده. لنگرهای قبلی را ادغام یا حذف نکن.
+- **Destination status:** این پیوندها فقط وضعیت مخزن را مستند می‌کنند؛ بافر، کتابخانه، حافظهٔ پایدار و Dropbox باید مستقل تأیید شوند.
