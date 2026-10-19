@@ -250,3 +250,16 @@
 
 ### ادامه
 در بازگشت، این رویداد، سند canonical و دفتر ۰.۰ را بازخوانی کن؛ اگر تغییر بعدی انجام شد، رویداد تازه را با شناسهٔ جدید به انتهای دفتر اضافه کن و زنجیرهٔ قبلی را حفظ کن.
+
+
+## EVT-0012 — معماری زمان‌محور و ممیزی مسیر تعامل
+- **Event ID:** EVT-0012-TEMPORAL-ARCHITECTURE-AND-PATH-AUDIT-2026-10-19
+- **Stable ID:** TEMPORAL-ARCHITECTURE-INTERACTION-PATH-AUDIT-2026-10-19-001
+- **Production ID:** TAIPA-HAIF-2026-10-19-001
+- **Reference:** [سند مرجع معماری زمان‌محور و ممیزی مسیر](../../reference/REFERENCE-DOCUMENTS/TEMPORAL-ARCHITECTURE-AND-INTERACTION-PATH-AUDIT-LIVING-REFERENCE-2026-10-19-001.md)
+- **Event detail:** [EVT-0012](./EVT-0012-TEMPORAL-ARCHITECTURE-AND-PATH-AUDIT-2026-10-19.md)
+- **Current 0.0:** [لنگر زنجیرهٔ خروجی و ادامهٔ نشست](../../0.0/OUTPUT-ANCHOR-CHAIN-AND-SESSION-CLOSE-0.0-2026-10-19-002.md)
+- **Intent:** زمان‌دار بودن ثبت‌ها باید اصل دائمی معماری شود و از آخرین لنگر تا نقطهٔ جاری بتوان مسیر تعامل را بازیابی کرد؛ شامل افزوده‌ها، تغییرات، موارد ازقلم‌افتاده/دنبال‌نشده، کارهای نیمه‌تمام، GAPها و برنامهٔ رشد.
+- **Status:** سند مرجع و رویداد ایجاد شده‌اند؛ ثبت و بازخوانی نهایی و پیوندها باید بررسی شوند. ممیزی کامل تاریخی هنوز OPEN است.
+- **Timestamp rule:** زمان پیام کاربر UNKNOWN / UNVERIFIED مگر شاهد مستقیم؛ زمان commit با زمان پیام یا بازخوانی یکی فرض نشود.
+- **Destination status:** فقط تغییرات مخزن در این رویداد هدف‌اند؛ بافر/کتابخانه/حافظهٔ پایدار و Dropbox نیازمند شواهد مستقل هستند.
