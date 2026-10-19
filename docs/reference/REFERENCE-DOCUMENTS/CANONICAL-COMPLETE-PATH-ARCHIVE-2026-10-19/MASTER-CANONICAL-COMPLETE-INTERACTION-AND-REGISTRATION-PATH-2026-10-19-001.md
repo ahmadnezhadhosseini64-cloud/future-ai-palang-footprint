@@ -21,7 +21,7 @@
 - **Canonical URL / پیوند اصلی:** https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/CANONICAL-COMPLETE-PATH-ARCHIVE-2026-10-19/MASTER-CANONICAL-COMPLETE-INTERACTION-AND-REGISTRATION-PATH-2026-10-19-001.md
 - **Parent/current resume anchor / لنگر فعلی ادامه:** [OUTPUT-ANCHOR-CHAIN-AND-SESSION-CLOSE-0.0-2026-10-19-002](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/0.0/OUTPUT-ANCHOR-CHAIN-AND-SESSION-CLOSE-0.0-2026-10-19-002.md)
 - **New event / رویداد این نسخه:** [EVT-0014](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/architecture/BEHAVIOR-TRACE/EVT-0014-CANONICAL-COMPLETE-PATH-ARCHIVE-2026-10-19.md)
-- **Status / وضعیت:** Repository write pending read-back after creation; other destinations UNVERIFIED. Intended governing status: ACTIVE / LIVING once the post-write read-back checks pass. Operational dependencies listed below remain OPEN; the document being complete does not mean every external action is complete.
+- **Status / وضعیت:** ACTIVE / LIVING in the Repository after content-level read-back and link/ID checks on the latest fetched version. This is not byte-for-byte verification. Buffer, Library, Persistent Memory and Dropbox remain independently UNVERIFIED/OPEN; operational dependencies listed below remain OPEN.
 
 ---
 
@@ -301,7 +301,7 @@
 
 ## 11. وضعیت مقصدها در این نسخه
 
-- **Repository / مخزن GitHub:** ایجاد سند و رویداد در این مرحله انجام می‌شود؛ وضعیت نهایی فقط پس از بازخوانی و بررسی پس از آخرین commit ثبت می‌شود.
+- **Repository / مخزن GitHub:** ثبت انجام شده؛ سند مادر، EVT-0014 و فایل‌های پیوندخورده پس از آخرین تغییرات دوباره خوانده و از نظر شناسه‌ها، پیوندها و وضعیت‌های کلیدی بررسی شدند. این بازخوانی محتوایی است، نه byte-for-byte.
 - **Buffer / بافر:** UNVERIFIED.
 - **Library / کتابخانه:** UNVERIFIED برای این نسخهٔ جدید؛ شواهد آینه‌های قدیمی را به این نسخه تعمیم نده.
 - **Persistent Memory / حافظهٔ پایدار:** UNVERIFIED.
