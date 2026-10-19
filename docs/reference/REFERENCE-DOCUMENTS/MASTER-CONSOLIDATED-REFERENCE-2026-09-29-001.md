@@ -223,3 +223,19 @@ REFERENCE DOCUMENT = ARCHITECTURE + PROVENANCE + MANDATORY METADATA + VERSION/LI
 این سند چرخهٔ واحد `ANCHOR → CAPTURE → CLASSIFY → DEDUPLICATE → LINK → TRACE HUMAN → TRACE AI → PRESERVE → REGISTER → READ-BACK → MATCH → VERIFY → RECONCILE → STATUS → RESUME` را تعریف می‌کند و قواعد شناسنامه، منشأ/تبار، زمان، شواهد، بازخوانی، وضعیت جداگانهٔ مقصدها و بازیابی موارد ناقص را در یک مسیر حاکم جمع می‌کند. «ثبت» و «مستندسازی» یک فرایندند؛ هیچ مقصدی بدون شاهد مستقل ثبت و بازخوانی‌شده اعلام نمی‌شود.
 
 این پیوند، سند مادر را به مرجع چرخه متصل می‌کند؛ وضعیت بافر، کتابخانه، حافظهٔ پایدار و Dropbox همچنان باید مستقل و با شاهد واقعی ارزیابی شود.
+
+
+## سند مرجع زندهٔ چرخهٔ یکپارچهٔ لنگر خروجی، ثبت، مستندسازی و بازیابی
+
+- **Stable ID:** `UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001`
+- **Production ID:** `UOAR-HAIF-2026-10-19-001`
+- **Version:** `1.0.0`
+- **Canonical reference:** [سند مرجع کامل چرخه](./UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md)
+- **Event record:** [EVT-0005 — ثبت سند مرجع زنده](../../architecture/BEHAVIOR-TRACE/EVT-0005-UNIFIED-OUTPUT-ANCHOR-LIVING-REFERENCE-REGISTRATION-2026-10-19.md)
+- **Governing rule:** `HUMAN-AI-BEHAVIOR-RECOGNITION-RULE-2026-10-19-001`
+- **Cycle:** `ANCHOR → CAPTURE → CLASSIFY → DEDUPLICATE → LINK → TRACE HUMAN → TRACE AI → PRESERVE → REGISTER → READ-BACK → MATCH → VERIFY → RECONCILE → STATUS → RESUME`
+- **Meaning:** لنگرگذاری → دریافت → طبقه‌بندی → رفع تکرار → پیونددهی → ثبت رفتار قابل مشاهدهٔ انسان → ثبت رفتار قابل مشاهدهٔ AI → حفظ → ثبت رسمی → بازخوانی → تطبیق → تأیید → رفع مغایرت → اعلام وضعیت → ادامه از نقطهٔ معتبر.
+- **Repository evidence:** سند canonical در مخزن نوشته و از مسیر خودش بازخوانی شد؛ شناسه، نسخه و اجزای اصلی چرخه بررسی شدند. commit به‌روزرسانی وضعیت سند: `9360675e435c08914b3c7914fc45a93b28d99cbf`; blob SHA بازخوانی نهایی سند: `fe4c4f3c3b5b32f6b5d1119178647ae446489a73`.
+- **Time:** تاریخ ثبت 2026-10-19؛ زمان دقیق مستقل UNKNOWN/UNVERIFIED و حدس زده نمی‌شود. منطقهٔ زمانی مرجع پروژه Asia/Tehran (UTC+03:30) است.
+- **Destination status:** Repository ثبت و بازخوانی شد؛ Buffer، Library و Persistent Memory مستقل تأیید نشده‌اند؛ Dropbox در این رویداد آزموده نشده است.
+- **Governance:** این مرجع قرارداد واحد برای لنگر، ثبت، زمان‌گذاری، ردیابی رفتار قابل مشاهده، حفظ شواهد، بازخوانی، تطبیق، رفع مغایرت و ادامه است. قواعد هم‌پوشان باید به این چرخه ارجاع دهند و نسخه‌های قبلی با حفظ lineage باقی بمانند.
