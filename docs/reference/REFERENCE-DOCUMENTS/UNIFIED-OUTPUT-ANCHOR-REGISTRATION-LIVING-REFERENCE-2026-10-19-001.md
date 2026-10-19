@@ -320,5 +320,5 @@ Recovery/resume path:
 
 ## 18. Canonical master — single entry point for continuation
 - [MASTER-CANONICAL-COMPLETE-INTERACTION-REGISTRATION-PATH-2026-10-19-001](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/CANONICAL-COMPLETE-PATH-ARCHIVE-2026-10-19/MASTER-CANONICAL-COMPLETE-INTERACTION-AND-REGISTRATION-PATH-2026-10-19-001.md)
-- [EVT-0014]( https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/architecture/BEHAVIOR-TRACE/EVT-0014-CANONICAL-COMPLETE-PATH-ARCHIVE-2026-10-19.md )
+- [EVT-0014](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/architecture/BEHAVIOR-TRACE/EVT-0014-CANONICAL-COMPLETE-PATH-ARCHIVE-2026-10-19.md)
 مرجع مادر جدید مسیر تعامل، چرخهٔ ثبت، اسناد منبع، موارد باز و دستور اجرایی ادامه را یکجا جمع می‌کند. اسناد قبلی حفظ می‌شوند به‌عنوان تاریخچه/شواهد؛ هیچ مقصد بیرونی با افزودن این پیوند تأیید نمی‌شود.
