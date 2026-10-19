@@ -243,3 +243,11 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - **Stable ID:** `ATCPA-ARCHIVE-LIVING-2026-10-19-001`; **Production ID:** `ATCPA-HAIF-2026-10-19-001`; **Version:** 1.0.0.
 
 سند آرشیوی به دفتر مرکزی افزوده شد. موارد باز و مقصدهای اثبات‌نشده در خود سند با اقدام بعدی و معیار پذیرش فهرست شده‌اند. Dropbox همچنان OPEN / WAITING است؛ بافر/کتابخانه/حافظهٔ پایدار مستقلاً تأیید نشده‌اند. ممیزی تمام تاریخچه ادعا نشده و باید فقط بر اساس دامنهٔ واقعاً بررسی‌شده ادامه یابد. این ثبت ۰.۰ جدید ایجاد نمی‌کند.
+
+
+## سند مرجع مادرِ واحد — نقطهٔ ورود اجرایی مسیر کامل
+- **Stable ID:** `MASTER-CANONICAL-COMPLETE-INTERACTION-REGISTRATION-PATH-2026-10-19-001`
+- **Production ID:** `MCCIRP-HAIF-2026-10-19-001`
+- **مرجع واحد برای ادامهٔ مسیر، تعامل، معماری، ثبت، مستندسازی و موارد باز:** [بازکردن سند مادر کامل]( https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/CANONICAL-COMPLETE-PATH-ARCHIVE-2026-10-19/MASTER-CANONICAL-COMPLETE-INTERACTION-AND-REGISTRATION-PATH-2026-10-19-001.md )
+- **رویداد:** [EVT-0014]( https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/architecture/BEHAVIOR-TRACE/EVT-0014-CANONICAL-COMPLETE-PATH-ARCHIVE-2026-10-19.md )
+این سند نقطهٔ شروع واحد برای ادامهٔ کار است؛ لنگرهای مستقل پیشین حفظ می‌شوند. وجود این پیوند به معنی بسته‌شدن موارد باز یا اثبات مقصدهای بیرونی نیست.
