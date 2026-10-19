@@ -25,4 +25,5 @@
 
 7. [قاعدهٔ رفتاری شناخت انسان و AI — قاعدهٔ اولیهٔ تعامل](./HUMAN-AI-BEHAVIOR-RECOGNITION-RULE-2026-10-19-001.md)
 8. [رویداد EVT-0003 — ثبت قاعدهٔ اولیه](./EVT-0003-REGISTER-INITIAL-BEHAVIOR-RULE-2026-10-19.md)
+9. [رویداد EVT-0004 — یکپارچه‌سازی لنگر خروجی و ثبت](./EVT-0004-UNIFIED-OUTPUT-ANCHOR-REGISTRATION-RULE-2026-10-19.md)
 
