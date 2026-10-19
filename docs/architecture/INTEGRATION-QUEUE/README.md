@@ -459,3 +459,11 @@ The queue index and the timestamp case must each be read back after this update.
 
 ## پیوند حاکم: چرخهٔ یکپارچهٔ لنگر خروجی
 مرجع اجرایی چرخهٔ ثبت و مستندسازی: [UNIFIED-OUTPUT-ANCHOR-REGISTRATION-CYCLE-2026-10-19-001](../../reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-CYCLE-2026-10-19-001.md). این صف باید هر مورد باز را با لنگر، منشأ، مقصد، آخرین گام تأییدشده، شاهد، مانع و اقدام بعدی نگه دارد. ثبت در صف به‌تنهایی ادغام نهایی در معماری مادر یا تأیید مقصدهای دیگر نیست.
+## رویداد صف — EVT-0005: چرخهٔ یکپارچهٔ لنگر خروجی و ثبت
+- **Stable ID:** `UNIFIED-OUTPUT-ANCHOR-REGISTRATION-CYCLE-2026-10-19-001`
+- **Event Anchor:** `EVT-0005-REGISTER-UNIFIED-OUTPUT-ANCHOR-CYCLE-2026-10-19`
+- **سند مرجع:** [چرخهٔ یکپارچه](../../reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-CYCLE-2026-10-19-001.md)
+- **پروندهٔ رویداد:** [EVT-0005](../BEHAVIOR-TRACE/EVT-0005-REGISTER-UNIFIED-OUTPUT-ANCHOR-CYCLE-2026-10-19.md)
+- **وضعیت:** مرجع و پیوندهای مخزنی باید با بازخوانی هر نسخهٔ تغییرکرده تأیید شوند. هر مقصد بیرونی تا زمان اثبات مستقل PENDING / UNVERIFIED می‌ماند.
+- **اقدام بعدی:** ادامهٔ تطبیق پیوندهای معماری و بررسی مستقل Buffer، Library، Persistent Memory و Dropbox؛ هیچ شکافی صرفاً با اضافه‌شدن پیوند بسته نمی‌شود.
+
