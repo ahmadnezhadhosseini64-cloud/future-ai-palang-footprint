@@ -13,18 +13,20 @@
 - **Governing Rule:** [قاعدهٔ رفتاری شناخت انسان و AI](./HUMAN-AI-BEHAVIOR-RECOGNITION-RULE-2026-10-19-001.md)
 - **Previous Event:** [EVT-0004 — قاعدهٔ یکپارچهٔ لنگر خروجی](./EVT-0004-UNIFIED-OUTPUT-ANCHOR-REGISTRATION-RULE-2026-10-19.md)
 - **Operational Ledger:** [دفتر پیوستهٔ رفتار تعامل](./INTERACTION-BEHAVIOR-TRACE-2026-10-19-001.md)
-- **Status:** OPEN for external mirrors; repository artifacts require destination-by-destination read-back after each update.
-- **Evidence Boundary:** وجود سند مرجع در مخزن قابل مشاهده است؛ هر تغییر در نمایه/سند مادر باید جداگانه ثبت و بازخوانی شود. Buffer، Library، Persistent Memory و Dropbox با این رویداد به‌طور خودکار ثبت نمی‌شوند.
+- **Status:** Repository registration and read-back VERIFIED for the reference and linked index/master files; external mirrors remain OPEN / PENDING.
+- **Evidence Boundary:** سند مرجع و چهار پیوند معماری از مخزن بازخوانی شدند؛ وضعیت هر مقصد بیرونی مستقل است. Buffer، Library، Persistent Memory و Dropbox با این رویداد به‌طور خودکار ثبت نمی‌شوند.
 
 ## 1. ورودی و مسیر انسانِ قابل مشاهده
 کاربر دستور داد «این چرخه رو ثبت کن سند مرجع بهم بده»، سپس بر مستندسازی، ثبت کامل، ثبت زمانی، همهٔ فراداده، مخزن و فعال/زنده‌بودن تأکید کرد. این‌ها درخواست‌های صریح قابل مشاهده‌اند؛ نیت پنهان دیگری استنباط نمی‌شود.
 
 ## 2. مسیر اقدام AI
-1. مخزن و مسیر سند مرجع بررسی شد.
-2. سند مرجع چرخهٔ کامل با شناسهٔ پایدار فوق در مسیر canonical پیدا شد؛ تلاش ایجاد فایل جدید با همان مسیر به دلیل وجود فایل/نیاز به SHA رد شد، بنابراین فایل تکراری ساخته نشد.
-3. محتوای سند موجود از مخزن بازخوانی شد؛ blob SHA مشاهده‌شده: `119b3b1d5729d1f38e14af45a85f4019d184c5dd`.
-4. پیوندهای سند مرجع مادر و نمایه‌ها باید از مخزن بازخوانی و به‌روزرسانی شوند تا سند در مسیر معماری کشف‌پذیر باشد.
-5. پس از هر تغییر، فایل تغییرکرده دوباره خوانده و شناسه/پیوند/بخش مورد انتظار بررسی شود.
+1. سند مرجع کامل در مسیر canonical ایجاد شد؛ commit ایجاد اولیه: `c5d2de7bcfa695eb284d3b01855e70a8ea890869`.
+2. فرادادهٔ زمان commit اولیه از GitHub خوانده شد: `2026-10-19T08:23:03Z` = `2026-10-19 11:53:03` به وقت Asia/Tehran. زمان دقیق پیام کاربر همچنان نامعلوم است.
+3. سند مرجع با زمان ثبت اولیه و مرزبندی زمان رویداد/زمان commit/زمان بازخوانی به‌روزرسانی شد؛ commit آخرین به‌روزرسانی سند: `8d4b47ef41eb21ca73222c5ebedc49b6b0d47119`; blob SHA نهایی پس از بازخوانی: `d72e608838be0d9a91a5ed9bc2e8fa0b2bccdeb3`.
+4. سند مادر و سه نمایهٔ رفتار، صف معماری و ۰.۰ به سند چرخه پیوند داده شدند.
+5. سند مرجع، سند مادر و سه نمایه از شاخهٔ `main` بازخوانی شدند؛ شناسهٔ سند در هر چهار مقصد پیوندی یافت شد.
+6. زمان commit آخرین به‌روزرسانی سند مرجع `2026-10-19T08:24:50Z` = `2026-10-19 11:54:50` به وقت Asia/Tehran است؛ این زمان، زمان commit است نه زمان پیام یا بازخوانی.
+7. فایل‌های بافر، کتابخانه، حافظهٔ پایدار و Dropbox در این عملیات نوشته یا آزموده نشدند.
 
 ## 3. چرخهٔ مورد ثبت
 **ANCHOR → CAPTURE → CLASSIFY → DEDUPLICATE → LINK → TRACE HUMAN → TRACE AI → PRESERVE → REGISTER → READ-BACK → MATCH → VERIFY → RECONCILE → STATUS → RESUME**
