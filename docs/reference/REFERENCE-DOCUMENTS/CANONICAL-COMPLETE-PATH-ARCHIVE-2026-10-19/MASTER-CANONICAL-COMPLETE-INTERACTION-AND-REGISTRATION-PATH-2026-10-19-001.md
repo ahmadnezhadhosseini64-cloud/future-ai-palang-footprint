@@ -323,3 +323,12 @@
 
 **اصل بازیابی:** `ANCHOR → RETRIEVE → READ-BACK → MATCH → VERIFY → RECONCILE → RESUME`
 **اصل ثبت:** `PRESERVE → IDENTIFY → DOCUMENT → LINK → WRITE → READ-BACK → MATCH → VERIFY → STATUS`
+
+
+## 14. شواهد ثبت مخزن و بازخوانی پس از ایجاد
+
+- **Create master reference:** commit [0c42154da73d8a23c87ffcad4e9a411b21abd8b3](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/0c42154da73d8a23c87ffcad4e9a411b21abd8b3), timestamp `2026-10-19T11:34:55Z` = `2026-10-19 15:04:55 Asia/Tehran`.
+- **Create EVT-0014:** commit [2d9a75fe58ca4206e0d5e93ce2d8f0ea61f7bffc](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/2d9a75fe58ca4206e0d5e93ce2d8f0ea61f7bffc), timestamp `2026-10-19T11:35:00Z` = `2026-10-19 15:05:00 Asia/Tehran`.
+- **Read-back evidence:** after initial creation, the master and event were fetched again from the repository. The master contained 26,115 characters at that read; the event contained 2,571 characters at that read. The content SHA values observed at that stage were master `aba825c52ca4d65f4371ff2b9ff3a8080eeeb59a` and event `f8c271ff88f91f182172d80a64f888c6639356d8`. These are pre-evidence-update blob SHAs, not the final SHAs after this section is added.
+- **Scope of verification:** this is content-level read-back; required IDs, path, core execution sections, open-item status and recovery instructions were present. It is not a byte-for-byte comparison. Exact independent read-back timestamp is not supplied by the tool and remains `UNKNOWN / UNVERIFIED`.
+- **Other destinations:** only Repository/GitHub is verified by this operation. Buffer, Library, Persistent Memory and Dropbox remain independent and unverified for this version.
