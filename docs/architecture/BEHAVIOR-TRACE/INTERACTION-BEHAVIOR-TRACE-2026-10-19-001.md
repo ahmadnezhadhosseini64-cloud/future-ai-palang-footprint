@@ -162,3 +162,14 @@
 - Exact interaction/action time: UNKNOWN/UNVERIFIED؛ زمان حدس زده نمی‌شود.
 - Destination status: Repository registered/read-back content-checked; Buffer, Library and Persistent Memory independently unverified; Dropbox not tested in this event.
 - Next action: مقصدهای مستقل را فقط با شاهد مستقیم به‌روزرسانی کن؛ از سند canonical و EVT-0005 ادامه بده و لنگرهای قبلی ۰.۰ را حفظ کن.
+
+
+## EVT-0006 — الگوی رفتاری زندهٔ ادامهٔ کار
+- **Event:** [EVT-0006](./EVT-0006-LIVE-BEHAVIORAL-CONTINUATION-PATTERN-2026-10-19.md)
+- **Stable ID:** `LIVE-BEHAVIORAL-CONTINUATION-PATTERN-2026-10-19-001`
+- **سند مرجع canonical:** [الگوی رفتاری زندهٔ ادامهٔ کار](../../reference/REFERENCE-DOCUMENTS/LIVE-BEHAVIORAL-CONTINUATION-PATTERN-2026-10-19-001.md)
+- **مسیر انسان:** درخواست کرد نقاط ۰.۰ و مسیر رفتاری از ثبت‌های قبلی بررسی شوند؛ سپس خواست همین الگو زنده، دائمی و باز بماند.
+- **مسیر AI:** اسناد موجود مخزن بازیابی شدند؛ سند مرجع الگوی ادامه و رویداد EVT-0006 ایجاد شدند؛ اشاره‌گر به دفتر ۰.۰ افزوده شد.
+- **قاعدهٔ ادامه:** ۰.۰های مستقل را حفظ کن؛ آخرین وضعیت معتبر را جدا پیدا کن؛ مسیر قابل مشاهدهٔ انسان و AI را ثبت کن؛ قواعد هم‌پوشان را به چرخهٔ حاکم ارجاع بده؛ مقصدها را جداگانه اثبات کن.
+- **وضعیت مقصدها:** مخزن پس از نوشتن/بازخوانی و بررسی محتوایی گزارش می‌شود؛ Buffer، Library و Persistent Memory مستقل تأیید نشده‌اند؛ Dropbox در این رویداد آزمایش نشده و لنگر آن باز است.
+- **زمان دقیق:** UNKNOWN / UNVERIFIED؛ حدس زده نمی‌شود.
