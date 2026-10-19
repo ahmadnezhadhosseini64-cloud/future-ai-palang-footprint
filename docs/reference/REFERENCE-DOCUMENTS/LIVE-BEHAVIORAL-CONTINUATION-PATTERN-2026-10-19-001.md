@@ -112,3 +112,12 @@
 - سند مرجع حاکم مرتبط: [OUTPUT-ANCHOR-AND-USER-DEFINED-0.0-GOVERNANCE-2026-10-19-001](./OUTPUT-ANCHOR-AND-USER-DEFINED-0.0-GOVERNANCE-2026-10-19-001.md).
 - رویداد ثبت: [EVT-0007](../../architecture/BEHAVIOR-TRACE/EVT-0007-OUTPUT-ANCHOR-AND-USER-DEFINED-0.0-GOVERNANCE-2026-10-19.md).
 - این افزودن یک نقطهٔ ۰.۰ جدید نمی‌سازد و لنگرهای مستقل قبلی را تغییر نمی‌دهد.
+
+
+## 10. لنگر فعال ادامه — ۰.۰ تعیین‌شده توسط کاربر
+- کاربر در 2026-10-19 صریحاً نقطهٔ جاری تکمیل ثبت را به‌عنوان ۰.۰ تعیین کرد.
+- پروندهٔ ۰.۰: [OUTPUT-ANCHOR-GOVERNANCE-COMPLETE-REGISTRATION-0.0-2026-10-19-001](../0.0/OUTPUT-ANCHOR-GOVERNANCE-COMPLETE-REGISTRATION-0.0-2026-10-19-001.md).
+- رویداد: [EVT-0008](../../architecture/BEHAVIOR-TRACE/EVT-0008-USER-DEFINED-0.0-COMPLETE-REGISTRATION-2026-10-19.md).
+- از این لنگر فقط برای ادامهٔ همین زنجیره استفاده کن؛ آن را با لنگرهای قدیمی، به‌ویژه Dropbox، ادغام نکن.
+- قاعدهٔ دائمی اجرا: هر خروجی مهم باید لنگر و سند قابل‌بازیابی و پیوند معماری داشته باشد؛ ۰.۰ فقط با تعیین صریح کاربر ایجاد می‌شود؛ هر مقصد جداگانه اثبات می‌شود.
+- زمان دقیق پیام تعیین ۰.۰: UNKNOWN / UNVERIFIED؛ زمان ثبت و بازخوانی باید از شواهد مخزن استخراج شود.
