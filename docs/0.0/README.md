@@ -248,6 +248,6 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 ## سند مرجع مادرِ واحد — نقطهٔ ورود اجرایی مسیر کامل
 - **Stable ID:** `MASTER-CANONICAL-COMPLETE-INTERACTION-REGISTRATION-PATH-2026-10-19-001`
 - **Production ID:** `MCCIRP-HAIF-2026-10-19-001`
-- **مرجع واحد برای ادامهٔ مسیر، تعامل، معماری، ثبت، مستندسازی و موارد باز:** [بازکردن سند مادر کامل]( https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/CANONICAL-COMPLETE-PATH-ARCHIVE-2026-10-19/MASTER-CANONICAL-COMPLETE-INTERACTION-AND-REGISTRATION-PATH-2026-10-19-001.md )
-- **رویداد:** [EVT-0014]( https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/architecture/BEHAVIOR-TRACE/EVT-0014-CANONICAL-COMPLETE-PATH-ARCHIVE-2026-10-19.md )
+- **مرجع واحد برای ادامهٔ مسیر، تعامل، معماری، ثبت، مستندسازی و موارد باز:** [بازکردن سند مادر کامل](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/CANONICAL-COMPLETE-PATH-ARCHIVE-2026-10-19/MASTER-CANONICAL-COMPLETE-INTERACTION-AND-REGISTRATION-PATH-2026-10-19-001.md)
+- **رویداد:** [EVT-0014](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/architecture/BEHAVIOR-TRACE/EVT-0014-CANONICAL-COMPLETE-PATH-ARCHIVE-2026-10-19.md)
 این سند نقطهٔ شروع واحد برای ادامهٔ کار است؛ لنگرهای مستقل پیشین حفظ می‌شوند. وجود این پیوند به معنی بسته‌شدن موارد باز یا اثبات مقصدهای بیرونی نیست.
