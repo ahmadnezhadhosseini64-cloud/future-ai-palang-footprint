@@ -50,3 +50,16 @@
 
 ## 6. Next action / continuation
 At the next project continuation, retrieve this event and canonical reference, inspect the latest event and current 0.0 anchor, then continue from the last durable state. Keep every other 0.0 anchor separate. Update timestamps and evidence for each future material output; do not invent missing times or claim destination completion without proof.
+
+
+## 7. ثبت زمانی و بازخوانی — شواهد ثبت‌شده
+همهٔ زمان‌های زیر از فرادادهٔ واقعی GitHub commit هستند؛ UTC به Asia/Tehran (UTC+03:30) تبدیل شده است. این زمان‌ها زمان پیام کاربر نیستند.
+- سند مرجع canonical — commit [4be7a29eb03eddf070145a108650a53befd41d1b](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/4be7a29eb03eddf070145a108650a53befd41d1b), `2026-10-19T10:23:45Z` = `2026-10-19 13:53:45 Asia/Tehran`.
+- ایجاد EVT-0009 — commit [11ce3252134e04f322145aaf9c430a21a4eb3977](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/11ce3252134e04f322145aaf9c430a21a4eb3977), `2026-10-19T10:23:47Z` = `2026-10-19 13:53:47 Asia/Tehran`.
+- به‌روزرسانی دفتر نقاط ۰.۰ — commit [d3695d897e26e2615a25eb128a2eae4bc91b36eb](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/d3695d897e26e2615a25eb128a2eae4bc91b36eb), `2026-10-19T10:23:57Z` = `2026-10-19 13:53:57 Asia/Tehran`.
+- پیوند به پروندهٔ ۰.۰ فعال — commit [068ab84ac0f610882f6003e4e419eac9540565e8](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/068ab84ac0f610882f6003e4e419eac9540565e8), `2026-10-19T10:24:00Z` = `2026-10-19 13:54:00 Asia/Tehran`.
+- ثبت در دفتر رفتار تعامل — commit [edbf9b5d1a153873bd2d7621102f0b127dd04978](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/edbf9b5d1a153873bd2d7621102f0b127dd04978), `2026-10-19T10:24:03Z` = `2026-10-19 13:54:03 Asia/Tehran`.
+- **بازخوانی نهایی:** پنج فایلِ سند مرجع، EVT-0009، دفتر ۰.۰، پروندهٔ ۰.۰ فعال و دفتر رفتار پس از نوشتن بازخوانی شدند. شناسهٔ مورد انتظار و محتوای مربوط به قاعدهٔ زمان‌گذاری در هر فایل یافت شد. این تطبیق محتوایی است، نه تطبیق بایت‌به‌بایت.
+- **زمان دقیق فراخوانی بازخوانی:** در خروجی ابزار مهر زمانی مستقل ثبت نشده؛ UNKNOWN / UNVERIFIED. زمان commit جایگزین زمان بازخوانی نیست.
+- **زمان دقیق پیام کاربر:** UNKNOWN / UNVERIFIED؛ حدس زده نمی‌شود.
+- **وضعیت پس از بازخوانی:** Repository / مخزن — VERIFIED IN REPOSITORY برای پنج فایل بررسی‌شده. Buffer / بافر، Library / کتابخانه، Persistent Memory / حافظهٔ پایدار و Dropbox — مستقلاً تأیید نشده‌اند؛ Dropbox همچنان OPEN / WAITING.
