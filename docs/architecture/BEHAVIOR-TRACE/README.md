@@ -1,7 +1,7 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.1
+- Version: 1.0.2
 - Date: 2026-10-19
 - Project: Future AI / Palang Footprint / HAIF
 
@@ -39,3 +39,12 @@
 چرخهٔ اجرایی حاکم: `ANCHOR → CAPTURE → CLASSIFY → DEDUPLICATE → LINK → TRACE HUMAN → TRACE AI → PRESERVE → REGISTER → READ-BACK → MATCH → VERIFY → RECONCILE → STATUS → RESUME`.
 زمان دقیق پیام/اقدام ثبت نشده و حدس زده نمی‌شود. مقصدهای خارج از مخزن فقط با شاهد مستقل تأیید می‌شوند.
 
+
+10. [سند مرجع زندهٔ چرخهٔ یکپارچهٔ لنگر خروجی، ثبت و بازیابی](../../reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md)
+11. [رویداد EVT-0005 — ثبت سند مرجع زنده](./EVT-0005-UNIFIED-OUTPUT-ANCHOR-LIVING-REFERENCE-REGISTRATION-2026-10-19.md)
+
+## وضعیت سند مرجع زندهٔ چرخهٔ یکپارچه
+- سند مرجع canonical در مخزن ثبت و پس از نوشتن بازخوانی شد؛ شناسه، چرخه و بخش‌های الزامی بررسی شدند.
+- پیوند رویداد ثبت: [EVT-0005](./EVT-0005-UNIFIED-OUTPUT-ANCHOR-LIVING-REFERENCE-REGISTRATION-2026-10-19.md).
+- بافر، کتابخانه و حافظهٔ پایدار مستقل تأیید نشده‌اند؛ Dropbox در این رویداد آزموده نشده است.
+- زمان دقیق تعامل/اقدام نامعلوم است و حدس زده نمی‌شود.
