@@ -52,3 +52,9 @@ The master pointer and EVT-0014 were linked into the 0.0 registry, current ancho
 - Behavior ledger: `05175c6e5b83f14f60b118863ed76d9dc60d9cc3` — 11:36:34Z → 15:06:34.
 
 These are commit times, not user-message or read-back times. Buffer, Library, Persistent Memory and Dropbox remain independently unverified.
+
+
+## Final index/link normalization evidence
+- Root README entry point: `37f4f00aea4f55787cea9db6e14366975e71bc55` — `2026-10-19T11:37:21Z` = `15:07:21 Asia/Tehran`.
+- Link normalization commits: 0.0 registry `90463a3087e305da5861d7e368be581263bdd10c` at 15:08:03; unified reference `a523b045f83b1607fb69c034fd832b9d8f96197a` at 15:08:10; integration queue `02d0ac93a1f723f1e76e0a6b736ca19731b51da3` at 15:08:15; behavior ledger `60f183743ba6264943acad1f33729f87563865f7` at 15:08:19; temporal reference `b7c0276e5379794b687d4a82cdef7e6641d2eb12` at 15:08:23. Times are Asia/Tehran on 2026-10-19, converted from GitHub UTC metadata.
+- Link normalization is not operational closure. Other destinations and open tasks remain separately unverified.
