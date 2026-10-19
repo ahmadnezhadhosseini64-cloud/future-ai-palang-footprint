@@ -2,7 +2,7 @@
 - **Event ID:** EVT-0014-CANONICAL-COMPLETE-PATH-ARCHIVE-2026-10-19
 - **Stable ID:** MASTER-CANONICAL-COMPLETE-INTERACTION-REGISTRATION-PATH-2026-10-19-001
 - **Production ID:** MCCIRP-HAIF-2026-10-19-001
-- **Version:** 1.0.0
+- **Version:** 1.1.0
 - **Date:** 2026-10-19
 - **Exact user-message time:** UNKNOWN / UNVERIFIED.
 - **Parent/current anchor:** [OUTPUT-ANCHOR-CHAIN-AND-SESSION-CLOSE-0.0-2026-10-19-002](../../0.0/OUTPUT-ANCHOR-CHAIN-AND-SESSION-CLOSE-0.0-2026-10-19-002.md)
@@ -58,3 +58,13 @@ These are commit times, not user-message or read-back times. Buffer, Library, Pe
 - Root README entry point: `37f4f00aea4f55787cea9db6e14366975e71bc55` — `2026-10-19T11:37:21Z` = `15:07:21 Asia/Tehran`.
 - Link normalization commits: 0.0 registry `90463a3087e305da5861d7e368be581263bdd10c` at 15:08:03; unified reference `a523b045f83b1607fb69c034fd832b9d8f96197a` at 15:08:10; integration queue `02d0ac93a1f723f1e76e0a6b736ca19731b51da3` at 15:08:15; behavior ledger `60f183743ba6264943acad1f33729f87563865f7` at 15:08:19; temporal reference `b7c0276e5379794b687d4a82cdef7e6641d2eb12` at 15:08:23. Times are Asia/Tehran on 2026-10-19, converted from GitHub UTC metadata.
 - Link normalization is not operational closure. Other destinations and open tasks remain separately unverified.
+
+
+## Amendment — version 1.1.0 / الحاقیهٔ نسخهٔ ۱.۱.۰
+در ادامهٔ درخواست کاربر برای اینکه «همین یک سند» مسیر را کامل حمل کند، سند مادر موجود به نسخهٔ 1.1.0 ارتقا یافت؛ سند موازی یا ۰.۰ تازه ایجاد نشد. بخش 15 مرجع مادر اکنون تعهد «سند واحد، نه مجموعه گزارش»، ترتیب اجباری مراجعهٔ بعدی و قفل تداوم را صریح می‌کند.
+
+- Master update commit: 0c32662072a22120c044a2f7806d3e334c35660a
+- Master content SHA returned by write: e2cb218584bbdba443a548cb28485de2da922c18
+- Verification required: fetch the master and this event after writing; confirm version 1.1.0, new section 15, identifiers, and open destination statuses.
+- This amendment does not close any open tasks. Buffer, Library, Persistent Memory and Dropbox remain independently unverified/open; historical full-coverage audit remains open.
+- Exact user-message and independent read-back timestamps: UNKNOWN / UNVERIFIED.
