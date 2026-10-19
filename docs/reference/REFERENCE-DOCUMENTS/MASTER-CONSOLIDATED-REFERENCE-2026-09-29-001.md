@@ -158,3 +158,30 @@ Promotion to a fully mirrored ACTIVE/LIVING state is permitted only after READ-B
 
 قاعده اصلاح‌شده از این پس:
 REFERENCE DOCUMENT = ARCHITECTURE + PROVENANCE + MANDATORY METADATA + VERSION/LINEAGE + EVIDENCE/STATUS + RECOVERY POINTER
+
+
+## راه‌حل پیمایش اولیه — الگوی رفتاری دوطرفهٔ انسان و آیندهٔ AI
+
+- **Stable ID:** `INITIAL-NAVIGATION-SOLUTION-HUMAN-AI-INTERACTION-2026-10-19-001`
+- **Production ID:** `INS-HUMAN-AI-NAV-2026-10-19-001`
+- **Version:** `1.0.0`
+- **Reference:** `docs/reference/REFERENCE-DOCUMENTS/INITIAL-NAVIGATION-SOLUTION-HUMAN-AI-INTERACTION-2026-10-19-001.md`
+- **Queue Case:** `docs/architecture/INTEGRATION-QUEUE/INITIAL-NAVIGATION-SOLUTION-HUMAN-AI-INTERACTION-2026-10-19-001.md`
+- **Date/Time:** 2026-10-19, 11:24 Asia/Tehran (UTC+03:30); precision is minute-level, exact seconds not captured.
+- **Status:** Reference and queue case registered in Repository; final architectural integration remains subject to destination read-back and matching. Buffer, Library, and Persistent Memory are not independently verified.
+
+### Architectural purpose
+این الگو دو مسیر رفتاری جدا اما هماهنگ تعریف می‌کند: حرکت انسان (تعیین هدف، لنگر ۰.۰، قواعد، هدایت، بازبینی، تأیید و توقف بدون بستن) و حرکت AI (بازیابی، حفظ، منشأ، زمان‌گذاری، اجرای واقعی، بازخوانی، تطبیق، جای‌گذاری معماری، اعلام صادقانه و ساخت نقطهٔ ادامه). دو مسیر در نقاط کنترل مشترک به هم می‌رسند.
+
+### Shared control path
+`INTENT → 0.0 ANCHOR → RETRIEVE → PRESERVE → IDENTIFY → TRACE → PLAN → WRITE → READ-BACK → MATCH → VERIFY → RECONCILE → ARCHITECTURAL PLACEMENT → STATUS → RESUME`
+
+### Governing constraints
+- قصد ثبت، نوشتن، بازخوانی، تطبیق، تأیید و فعال‌شدن وضعیت‌های متفاوت‌اند.
+- هر مقصد مستقل است؛ مخزن، بافر، کتابخانه، Dropbox و حافظهٔ پایدار با یکدیگر قابل‌جایگزینی نیستند.
+- ایجاد سند یا افزودن پیوند، به‌تنهایی ادغام معنایی در معماری مادر را ثابت نمی‌کند.
+- زمان نامعلوم حدس زده نمی‌شود؛ زمان ایجاد، ثبت، تغییر و تأیید جدا نگه داشته می‌شوند.
+- توقف گفتگو، پروژه را نمی‌بندد؛ لنگر و اقدام بعدی باید حفظ شوند.
+- الگو از شواهد قابل‌بازیابی استخراج شده و ادعای بازیابی کامل تمام گفتگوهای تاریخی ندارد.
+
+این افزوده، نسخه‌های قبلی این سند مادر را حذف نمی‌کند؛ یک لایهٔ معماری تازه با lineage مستقل است. جزئیات کامل نقش‌ها، تاریخچه، معیار پذیرش و محدودیت‌ها در سند مرجع و پروندهٔ صف پیوندشده نگهداری می‌شود.
