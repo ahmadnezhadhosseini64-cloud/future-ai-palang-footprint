@@ -8,7 +8,9 @@
 - **Owner (مالک):** Ahmad Nezhadhosseini / احمد پلنگ
 - **Record Date (تاریخ ثبت):** 2026-10-19
 - **Timezone (منطقهٔ زمانی مرجع پروژه):** Asia/Tehran (UTC+03:30)
-- **Exact Event Time (زمان دقیق رویداد):** زمان دقیق لحظهٔ درخواست/آغاز اقدام در شواهد این رویداد ثبت نشده است؛ عمداً حدس زده نمی‌شود. زمان ثبت در مخزن باید از فرادادهٔ commit گیت‌هاب و زمان بازخوانی از گزارش اجرای همان عملیات تعیین شود.
+- **Exact Event Time (زمان دقیق رویداد):** زمان دقیق لحظهٔ درخواست/آغاز اقدام کاربر در شواهد موجود ثبت نشده است؛ عمداً حدس زده نمی‌شود.
+- **Initial Repository Registration (ثبت اولیه در مخزن):** commit `c5d2de7bcfa695eb284d3b01855e70a8ea890869`; زمان ثبت ثبت‌شده در فرادادهٔ GitHub: `2026-10-19T08:23:03Z` = `2026-10-19 11:53:03` به وقت Asia/Tehran (UTC+03:30). این زمان، زمان commit ایجاد سند است و نباید به‌جای زمان دقیق پیام کاربر یا زمان بازخوانی تلقی شود.
+- **Read-back (بازخوانی):** بازخوانی فایل و پیوندها در همین فرایند انجام شد؛ زمان ثانیه‌به‌ثانیهٔ درخواست بازخوانی در خروجی ابزار ثبت نشده، بنابراین ساعت دقیق آن ادعا نمی‌شود.
 - **Canonical Repository Path (مسیر مرجع در مخزن):** `docs/reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-CYCLE-2026-10-19-001.md`
 - **Master Reference (سند مرجع مادر):** `docs/reference/REFERENCE-DOCUMENTS/MASTER-CONSOLIDATED-REFERENCE-2026-09-29-001.md`
 - **Governing Rule (قاعدهٔ حاکم):** `docs/architecture/BEHAVIOR-TRACE/HUMAN-AI-BEHAVIOR-RECOGNITION-RULE-2026-10-19-001.md` — نسخهٔ 1.1.0
