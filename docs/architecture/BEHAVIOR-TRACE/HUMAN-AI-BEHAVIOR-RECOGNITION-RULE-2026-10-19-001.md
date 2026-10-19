@@ -4,13 +4,13 @@
 - عنوان: قاعدهٔ رفتاری شناخت انسان و AI
 - Stable ID (شناسهٔ پایدار): HUMAN-AI-BEHAVIOR-RECOGNITION-RULE-2026-10-19-001
 - Production ID (شناسهٔ تولید): HABR-HAIF-2026-10-19-001
-- Version (نسخه): 1.0.0
+- Version (نسخه): 1.0.1
 - Record Date (تاریخ ثبت): 2026-10-19
 - Exact time (زمان دقیق): زمان دقیق این ثبت در شاهد مستقل تأیید نشده؛ حدس زده نمی‌شود.
 - Timezone (منطقهٔ زمانی): Asia/Tehran (UTC+03:30)
 - Owner: احمد نژادحسینی / احمد پلنگ
 - Project: Future AI / Palang Footprint / HAIF
-- Status: INITIAL BEHAVIOR RULE / ACTIVE FOR FORWARD INTERACTIONS; repository verification pending until read-back
+- Status: INITIAL BEHAVIOR RULE / ACTIVE FOR FORWARD INTERACTIONS; repository write and read-back verified
 - Canonical path: `docs/architecture/BEHAVIOR-TRACE/HUMAN-AI-BEHAVIOR-RECOGNITION-RULE-2026-10-19-001.md`
 - Parent framework: `INTERACTION-BEHAVIOR-TRACE-HUMAN-AI-2026-10-19-001`
 - Related solution: `INITIAL-NAVIGATION-SOLUTION-HUMAN-AI-INTERACTION-2026-10-19-001`
@@ -47,7 +47,7 @@
 هر ورودی باید در صورت تناسب شامل Event ID، تاریخ/زمان و منشأ زمان، رفتار مشاهده‌شدهٔ انسان، رفتار مشاهده‌شدهٔ AI، هدف، ارتباط با ۰.۰، اقدام واقعی، مقصد، شاهد، نتیجهٔ بازخوانی، وضعیت، مانع و گام بعدی باشد. برای بازیابی، ابتدا این سند و سپس دفتر اصلی رفتار و نمایهٔ آن خوانده شوند؛ آخرین رویداد تأییدشده و اقدام باز مشخص شود.
 
 ## 7. وضعیت مقصدها
-- Repository / مخزن: این سند باید پس از ایجاد از همان مسیر بازخوانی و محتوای مورد انتظار تطبیق داده شود.
+- Repository / مخزن: فایل از همان مسیر بازخوانی شد و عنوان، شناسه و قواعد اصلی با محتوای ثبت‌شده تطبیق داده شدند.
 - Buffer / بافر: مستقل تأیید نشده مگر شاهد جداگانه ثبت شود.
 - Library / کتابخانه: مستقل تأیید نشده مگر شاهد جداگانه ثبت شود.
 - Persistent Memory / حافظهٔ پایدار: مستقل تأیید نشده مگر شاهد جداگانه ثبت شود.
