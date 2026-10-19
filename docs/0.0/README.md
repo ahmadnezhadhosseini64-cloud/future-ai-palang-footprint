@@ -182,3 +182,15 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - **قاعدهٔ زمان:** زمان پیام، اقدام، commit، تغییر، بازخوانی و تأیید جدا هستند؛ زمان نامعلوم UNKNOWN / UNVERIFIED می‌ماند و حدس زده نمی‌شود.
 - **قاعدهٔ ۰.۰:** فقط تعیین صریح کاربر ۰.۰ می‌سازد؛ همهٔ لنگرهای قبلی، از جمله Dropbox، مستقل می‌مانند.
 - **وضعیت مقصدها:** ثبت این پیوند در مخزن به‌تنهایی ثبت در بافر، کتابخانه، حافظهٔ پایدار یا Dropbox را اثبات نمی‌کند.
+
+
+## نقطهٔ ۰.۰ جدید — پایان موقت نشست و ادامه از زنجیرهٔ لنگر
+- **Anchor ID / Stable ID:** `OUTPUT-ANCHOR-CHAIN-AND-SESSION-CLOSE-0.0-2026-10-19-002`
+- **Production ID:** `OACSC-HAIF-2026-10-19-002` · **Version:** 1.0.0
+- **پروندهٔ نقطه:** [بازکردن نقطهٔ ۰.۰ جدید](./OUTPUT-ANCHOR-CHAIN-AND-SESSION-CLOSE-0.0-2026-10-19-002.md)
+- **رویداد:** [EVT-0010](../architecture/BEHAVIOR-TRACE/EVT-0010-USER-DEFINED-0.0-SESSION-CLOSE-2026-10-19.md)
+- **سند مرجع زنده:** [چرخهٔ یکپارچهٔ لنگر خروجی و ثبت زمانی](../reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md)
+- **زمان ثبت پرونده در مخزن:** 2026-10-19 13:57:15 Asia/Tehran (UTC 10:27:15)، commit [d43fc90](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/d43fc90f7fecbb58ed19daa6c966f56ee5588270).
+- **زمان ثبت رویداد در مخزن:** 2026-10-19 13:57:50 Asia/Tehran (UTC 10:27:50)، commit [72b2d43](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/72b2d43faf478f6c99284957ee4d96b3fc8268b2).
+- **زمان پیام کاربر:** UNKNOWN / UNVERIFIED؛ زمان commit جایگزین آن نیست.
+- **وضعیت:** نقطهٔ ادامهٔ تعیین‌شده توسط کاربر؛ نقاط قبلی، از جمله Dropbox، مستقل باقی می‌مانند.
