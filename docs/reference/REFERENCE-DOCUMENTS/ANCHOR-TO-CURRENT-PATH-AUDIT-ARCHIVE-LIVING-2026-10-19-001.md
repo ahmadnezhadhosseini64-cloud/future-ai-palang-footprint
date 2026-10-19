@@ -176,3 +176,7 @@ Commit timestamps below are from GitHub metadata; Tehran time is UTC+03:30. Thes
 | Add EVT-0013 to behavior ledger | [b8ebf9b](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/b8ebf9b4e081f976212985bbc5fec0795a9e71ee) | 2026-10-19 10:47:52Z | 2026-10-19 14:47:52 |
 
 After the writes, the archival reference, EVT-0013, temporal reference, current 0.0 anchor, 0.0 registry, and behavior ledger were fetched again for content-level verification. The check is limited to the expected identifiers, links, open statuses, and key sections; it is not a byte-for-byte comparison. Exact read-back time is not exposed by the tool and remains UNKNOWN / UNVERIFIED. Repository is the only destination checked here; Buffer, Library, Persistent Memory, and Dropbox are not independently verified.
+
+
+## 14. مرجع مادر واحد جایگزین نقطهٔ ورود آرشیوی قبلی
+برای مراجعهٔ بعدی، نقطهٔ ورود واحد و نسخهٔ اجرایی کامل اکنون این سند است: [MASTER-CANONICAL-COMPLETE-INTERACTION-REGISTRATION-PATH-2026-10-19-001](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/CANONICAL-COMPLETE-PATH-ARCHIVE-2026-10-19/MASTER-CANONICAL-COMPLETE-INTERACTION-AND-REGISTRATION-PATH-2026-10-19-001.md). این سند قبلی همچنان برای تاریخچه و منشأ حفظ می‌شود؛ محتوای تاریخی حذف نشده و وضعیت‌های باز پابرجا هستند. رویداد مرحله: [EVT-0014](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/architecture/BEHAVIOR-TRACE/EVT-0014-CANONICAL-COMPLETE-PATH-ARCHIVE-2026-10-19.md).
