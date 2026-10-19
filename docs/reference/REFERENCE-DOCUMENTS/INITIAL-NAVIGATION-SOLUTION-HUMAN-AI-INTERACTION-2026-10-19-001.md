@@ -172,3 +172,11 @@
 
 چرخه: `CAPTURE → CLASSIFY → LINK → ANALYZE HUMAN → ANALYZE AI → RECORD ACTION → PRESERVE EVIDENCE → READ-BACK → MATCH → VERIFY → NEXT STEP` (ثبت → طبقه‌بندی → پیوند → توصیف رفتار انسان → توصیف رفتار AI → ثبت اقدام → حفظ شاهد → بازخوانی → تطبیق → تأیید → گام بعدی).
 
+
+
+## 14. قاعدهٔ یکپارچهٔ لنگر خروجی، ثبت و مستندسازی
+این سند از قاعدهٔ حاکم واحد پیروی می‌کند: هر خروجی لنگر قابل‌بازیابی دارد؛ فرمان «ثبت کن»، رفتارشناسی، زمان‌گذاری و مستندسازی مراحل، قواعد جدا و رقیب نیستند و در یک چرخهٔ واحد اجرا می‌شوند. سند حاکم: [قاعدهٔ رفتاری شناخت انسان و AI](../../architecture/BEHAVIOR-TRACE/HUMAN-AI-BEHAVIOR-RECOGNITION-RULE-2026-10-19-001.md)، نسخهٔ 1.1.0. رویداد این تغییر: [EVT-0004](../../architecture/BEHAVIOR-TRACE/EVT-0004-UNIFIED-OUTPUT-ANCHOR-REGISTRATION-RULE-2026-10-19.md).
+
+چرخهٔ مشترک: ANCHOR → CAPTURE → CLASSIFY → DEDUPLICATE → LINK → TRACE HUMAN → TRACE AI → PRESERVE → REGISTER → READ-BACK → MATCH → VERIFY → RECONCILE → STATUS → RESUME.
+
+پاسخ ساده لنگر کم‌حجم می‌گیرد؛ تصمیم، تغییر معماری، خطا و ثبت واقعی به مستندات کامل نیاز دارند. زمان پیام، اقدام، commit و بازخوانی جدا هستند. زمان نامعلوم حدس زده نمی‌شود. ثبت در یک مقصد، ثبت در مقصد دیگر را اثبات نمی‌کند.
