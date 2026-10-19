@@ -78,3 +78,7 @@
 این نقطه در گراف بازیابی مشترک با دو نقطهٔ مستقل دیگر پیوند خورده است: [۰.۰ حاکمیت ثبت کامل](./OUTPUT-ANCHOR-GOVERNANCE-COMPLETE-REGISTRATION-0.0-2026-10-19-001.md) و [۰.۰ مسیر جایگزین Dropbox](./PALANG-DROPBOX-FAILOVER-RESUME-0.0-2026-10-12-001.md). مرجع اصلی گراف: [سند مرجع زنده، بخش 16](../reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md). رویداد اتصال: [EVT-0011](../architecture/BEHAVIOR-TRACE/EVT-0011-LINK-0.0-ANCHORS-OUTPUT-CHAIN-2026-10-19.md). دفتر مرکزی: [README نقاط ۰.۰](./README.md).
 
 این پیوند، ۰.۰ها را ادغام یا نمی‌بندد. این نقطه همچنان نقطهٔ فعلی ازسرگیری است؛ Dropbox همچنان OPEN / WAITING است. قاعدهٔ هر خروجی مهم: لنگر/رویداد قابل‌بازیابی، سند مرجع متناسب، منشأ و زمان دارای شاهد، بازخوانی و تطبیق، وضعیت جداگانهٔ مقصدها و اقدام بعدی.
+
+
+## 12. قرارداد معماری زمان‌محور و ممیزی مسیر تعامل
+قاعدهٔ زمان‌محوری و بازسازی مسیر به معماری حاکم پروژه افزوده شد: [سند مرجع زنده](../reference/REFERENCE-DOCUMENTS/TEMPORAL-ARCHITECTURE-AND-INTERACTION-PATH-AUDIT-LIVING-REFERENCE-2026-10-19-001.md)، [رویداد EVT-0012](../architecture/BEHAVIOR-TRACE/EVT-0012-TEMPORAL-ARCHITECTURE-AND-PATH-AUDIT-2026-10-19.md). در مراجعهٔ بعدی از این نقطه و سپس همهٔ رویدادهای پس از آن مسیر را بازسازی کن: افزوده‌ها، تغییرات، موارد دنبال‌نشده، کارهای ناقص، GAPها، شواهد، محدودهٔ بررسی و برنامهٔ رشد. اولین ممیزی کامل تاریخی هنوز انجام نشده و نباید تکمیل‌شده اعلام شود. زمان پیام، اقدام، commit، بازخوانی و تأیید جدا می‌مانند.
