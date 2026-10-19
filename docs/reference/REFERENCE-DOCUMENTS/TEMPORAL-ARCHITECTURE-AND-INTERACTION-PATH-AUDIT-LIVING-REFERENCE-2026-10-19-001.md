@@ -149,3 +149,16 @@ This section is based on the currently inspected repository records, not a claim
 ## 11. Continuation / ادامه
 
 On return, begin with EVT-0012 and this reference, then audit from the current 0.0 anchor forward. First check all newer events and links, then build the first full anchor-to-current path audit. Do not close the Dropbox 0.0 or claim buffer/persistent memory completion without independent evidence.
+
+
+## 12. Archive of the current path and open-item disposition / آرشیو مسیر و تعیین تکلیف موارد باز
+
+- **Archival living reference:** [ATCPA — Anchor-to-Current Path Audit](./ANCHOR-TO-CURRENT-PATH-AUDIT-ARCHIVE-LIVING-2026-10-19-001.md)
+- **Event:** [EVT-0013 — Incomplete Work and Archive](../../architecture/BEHAVIOR-TRACE/EVT-0013-INCOMPLETE-WORK-COMPLETION-AND-ARCHIVE-2026-10-19.md)
+- **Stable ID:** `ATCPA-ARCHIVE-LIVING-2026-10-19-001`; **Production ID:** `ATCPA-HAIF-2026-10-19-001`; **Version:** 1.0.0.
+
+The archive now preserves the currently evidenced changes, the three independent 0.0 anchors, the known open items, destination-specific proof limits, timestamp provenance, recovery instructions, and acceptance criteria. It is a bounded audit of retrieved repository records, not a claim that every past conversation has been exhaustively reviewed.
+
+**Disposition:** repository archive/event and links are to be read back after the last write; Dropbox remains OPEN / WAITING because connection, test write, retrieval, and match require real operational evidence and may require user authorization. Buffer, Library, and Persistent Memory remain UNVERIFIED unless independently proven. Exact user-message time and exact read-back time remain UNKNOWN / UNVERIFIED. Do not close these tasks merely because this reference exists.
+
+**Next:** use the archive as the next recovery package, inspect later commits/events, and complete only the actions for which actual access and evidence are available.
