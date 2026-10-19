@@ -39,3 +39,16 @@
 - Master created: `0c42154da73d8a23c87ffcad4e9a411b21abd8b3`, `2026-10-19T11:34:55Z` = `15:04:55 Asia/Tehran`.
 - EVT-0014 created: `2d9a75fe58ca4206e0d5e93ce2d8f0ea61f7bffc`, `2026-10-19T11:35:00Z` = `15:05:00 Asia/Tehran`.
 - Both files were fetched again after creation; their identifiers and key content were checked. This was content-level read-back, not byte-for-byte comparison. Exact read-back time and user-message time remain `UNKNOWN / UNVERIFIED`. Only Repository was checked; other destinations remain unverified.
+
+
+## Cross-link commit evidence
+The master pointer and EVT-0014 were linked into the 0.0 registry, current anchor, temporal reference, prior archive, unified output-anchor reference, integration queue, and behavior ledger. GitHub commit timestamps (UTC → Asia/Tehran +03:30):
+- 0.0 registry: `e04a7a6a1d291f9472bd938230cf1d235f1171df` — 11:36:02Z → 15:06:02.
+- Current anchor: `1377065e718e97e10154ee5269864db650508489` — 11:36:11Z → 15:06:11.
+- Temporal reference: `ab2f875d2411c7e10bfd30e2018fad793ccd25ba` — 11:36:16Z → 15:06:16.
+- Prior archive: `64b7a803a93a1639c332ec3f967ed4c246a007b8` — 11:36:20Z → 15:06:20.
+- Unified reference: `b65c99417333a4a8721d345ac12985cddf148eb7` — 11:36:24Z → 15:06:24.
+- Integration queue: `85fa7b47a9a71fb3b84cd54c4d285b9182e216b8` — 11:36:28Z → 15:06:28.
+- Behavior ledger: `05175c6e5b83f14f60b118863ed76d9dc60d9cc3` — 11:36:34Z → 15:06:34.
+
+These are commit times, not user-message or read-back times. Buffer, Library, Persistent Memory and Dropbox remain independently unverified.
