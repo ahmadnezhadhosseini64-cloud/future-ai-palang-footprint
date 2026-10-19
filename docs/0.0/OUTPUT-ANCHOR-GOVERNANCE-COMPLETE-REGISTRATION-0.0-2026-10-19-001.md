@@ -81,3 +81,15 @@
 - اتصال به دفتر رفتار — commit `7c0f4b5953276ad8b74023e3b8289d671d393c32`، `13:47:58 Asia/Tehran`.
 - بازخوانی محتوا و بررسی شناسهٔ نقطه، EVT-0008 و قاعدهٔ تعیین ۰.۰ توسط کاربر برای هر شش فایل در `2026-10-19T13:48:08+03:30` انجام شد. این بازخوانی محتوایی است، نه مقایسهٔ بایت‌به‌بایت.
 - زمان دقیق پیام کاربر: UNKNOWN / UNVERIFIED؛ حدس زده نمی‌شود.
+
+
+## 9. قاعدهٔ ادامهٔ افزوده‌شده — زنجیرهٔ لنگر خروجی و زمان‌گذاری
+- **Stable ID:** `OUTPUT-ANCHOR-CHAIN-TIMESTAMP-GOVERNANCE-2026-10-19-001`
+- **Production ID:** `OACTG-HAIF-2026-10-19-001`
+- **سند مرجع canonical:** [چرخهٔ یکپارچهٔ لنگر خروجی، ثبت و مستندسازی](../reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md)، بخش 14.
+- **رویداد:** [EVT-0009](../architecture/BEHAVIOR-TRACE/EVT-0009-OUTPUT-ANCHOR-CHAIN-TIMESTAMP-GOVERNANCE-2026-10-19.md).
+- هر خروجی مهم از این نقطه باید به لنگر یا رویداد قابل‌بازیابی، سند مرجع مناسب، منشأ/تبار، شواهد، وضعیت و اقدام بعدی وصل شود.
+- برای ۰.۰، زمان پیام، اقدام، commit، آخرین تغییر، بازخوانی و تأیید جدا ثبت شوند. زمان پیام تعیین این نقطه همچنان UNKNOWN / UNVERIFIED است؛ زمان commit جای آن را نمی‌گیرد.
+- چرخهٔ اجرا: OUTPUT → ANCHOR → CLASSIFY → PRESERVE → PROVENANCE → REFERENCE → ARCHITECTURE/QUEUE → TIMESTAMP EVIDENCE → WRITE → READ-BACK → MATCH → VERIFY → RECONCILE → DESTINATION STATUS → NEXT ACTION → RESUME.
+- این قاعده هیچ ۰.۰ دیگری را جایگزین نمی‌کند؛ نقطهٔ Dropbox مستقل و OPEN / WAITING باقی می‌ماند.
+- وضعیت مقصدهای غیر از مخزن: مستقل تأیید نشده‌اند؛ هیچ ادعای ثبت سه‌سطحی بر اساس این commit مجاز نیست.
