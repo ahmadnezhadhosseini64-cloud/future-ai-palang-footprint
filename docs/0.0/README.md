@@ -545,3 +545,10 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - Decision register: [H0CALDR-2026-10-21-001](../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-CANONICAL-ALIAS-LINEAGE-DECISION-REGISTER-2026-10-21-001.md).
 - Full audit findings: [H0GAF-2026-10-21-001](../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-AUDIT-FINDINGS-2026-10-21-001.md).
 - Active event: [EVT-0052](../architecture/BEHAVIOR-TRACE/EVT-0052-CANONICAL-GRAPH-MANIFEST-AND-LINK-REPAIR-2026-10-21.md).
+
+
+## لنگر ادامهٔ معماری معنایی گراف تاریخی — 2026-10-21
+- سند مادر فعال: [H0SAB — مبنای معماری معنایی](../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-SEMANTIC-ARCHITECTURE-BASELINE-2026-10-21-001.md).
+- رویداد ثبت: [EVT-0053](../architecture/BEHAVIOR-TRACE/EVT-0053-SEMANTIC-ARCHITECTURE-BASELINE-2026-10-21.md).
+- گام بعدی: مرور شاهددار گروه‌های تکراری و برخورد EVT و طبقه‌بندی نقش همهٔ 493 فایل؛ پس از هر دسته، تصمیم‌ها را به معماری پیوند بده، بازخوانی کن و ممیزی را دوباره اجرا کن.
+- وضعیت: ACTIVE / OPEN-PARTIAL. موفقیت ساختاری snapshot قبلی حفظ شده، اما معنای همهٔ روابط اثبات نشده است. هیچ لنگر مستقل 0.0 یا Dropbox تغییر نکرده است.
