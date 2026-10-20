@@ -661,3 +661,10 @@ The queue index and the timestamp case must each be read back after this update.
 - Checkpoint: [PALANG-0.0-MAIN-LOCK-2026-10-20-002](../../../checkpoints/PALANG-0.0-MAIN-LOCK-2026-10-20-002.md)
 - Event: [EVT-0029](../BEHAVIOR-TRACE/EVT-0029-MAIN-0.0-LOCK-2026-10-20.md)
 - Status: ACTIVE / LIVING; read-back verification of this checkpoint and index/queue integration is required. Historical 0.0 anchors remain unchanged. Library, Buffer, Persistent Memory, Dropbox and global automatic execution remain independently unverified/open.
+
+
+## رویداد ثبت جاری — EVT-0030
+- Event: [EVT-0030](../BEHAVIOR-TRACE/EVT-0030-REGISTER-COMMAND-ACKNOWLEDGEMENT-2026-10-20.md)
+- Stable ID: `REGISTER-COMMAND-ACKNOWLEDGEMENT-2026-10-20-001`; Production ID: `RCA-2026-10-20-001`.
+- Main checkpoint: [PALANG-0.0-MAIN-LOCK-2026-10-20-002](../../../checkpoints/PALANG-0.0-MAIN-LOCK-2026-10-20-002.md)
+- Status: ثبت رویداد در مخزن؛ بازخوانی نهایی و تطبیق لینک‌ها در حال انجام. مقصدهای مستقل و Dropbox همچنان تأییدنشده/باز هستند.
