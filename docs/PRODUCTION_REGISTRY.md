@@ -78,6 +78,30 @@ Core invariants:
 - `Unresolved ≠ Supernatural`
 - `No Evidence → No Strong Claim`
 
+## Registered production — XLR-PMA-2026-09-03-001
+
+| Field | Value |
+|---|---|
+| `production_id` | `XLR-PMA-2026-09-03-001` |
+| `trace_id` | `XLR-PMA-2026-09-03-001` |
+| `type` | Cross-Layer Integrity / Repository Evidence |
+| `title` | Cross-Layer PMA Relationship Execution Evidence |
+| `version` | 1.0 |
+| `created_at` | 2026-09-03 (date known; exact time UNKNOWN / UNVERIFIED) |
+| `owner` | Ahmad Nezhadhosseini |
+| `project` | Future AI / Palang Footprint |
+| `source_context` | Existing canonical XLR evidence record and its repository-side relationship test |
+| `repository_state` | `PRESENT / READ-BACK` — canonical evidence at `docs/evidence/XLR-PMA-2026-09-03-001.md` |
+| `execution_state` | `PROVEN` for the documented repository-side run; external provider memory remains unverified |
+| `evidence_state` | `PARTIAL / HISTORICAL` — original evidence is preserved; current cross-layer gate must pass separately |
+| `verification_state` | `PENDING FRESH GATE` — current CI gate is not promoted until a fresh successful run |
+| `reconciliation_state` | `PENDING` for current gate reconciliation |
+| `canonical_destination` | `docs/evidence/XLR-PMA-2026-09-03-001.md`; `docs/evidence/CROSS-LAYER-PMA-RELATIONSHIP-TEST-2026-09-03.md`; this registry |
+| `artifact_path` | `docs/evidence/XLR-PMA-2026-09-03-001.md` |
+| `last_verified_at` | `2026-10-20T15:32:42Z` — latest Cross-Layer Integrity Gate result was failure; not a successful verification timestamp |
+| `memory_state` | `UNVERIFIED / PENDING` — no provider-level WRITE + independent READ-BACK evidence |
+| `notes` | This entry preserves the existing production identity; no replacement ID is created. Fresh gate result is required before current cross-layer closure. |
+
 ## Registered production — ABV-2026-10-20-001
 
 | Field | Value |
