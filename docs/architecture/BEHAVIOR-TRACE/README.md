@@ -118,3 +118,10 @@
 - [رویداد EVT-0031](./EVT-0031-FOUR-LINKED-0.0-CHAIN-AND-BEHAVIORAL-DISCOVERY-2026-10-20.md)
 - [سند مرجع زنجیرهٔ چهارتایی ۰.۰](../../reference/REFERENCE-DOCUMENTS/FOUR-LINKED-0.0-CHAIN-AND-BEHAVIORAL-DISCOVERY-GATE-2026-10-20-001.md)
 - وضعیت: چهار گرهٔ مرجع پیمایش تعریف شده‌اند؛ تطبیق کامل نقاط تاریخی، اجرای سراسری و مقصدهای مستقل باز هستند. الگوهای رفتاری قبل از ارتقا به معماری باید بررسی و اعتبارسنجی شوند.
+
+
+## EVT-0032 — ثبت تعامل جاری و ممیزی شکاف‌ها
+- [رویداد EVT-0032](./EVT-0032-INTERACTION-REGISTRATION-AND-GAP-CLOSURE-2026-10-20.md)
+- [سند مرجع کامل](../../reference/REFERENCE-DOCUMENTS/INTERACTION-REGISTRATION-AND-GAP-CLOSURE-2026-10-20-001.md) — Stable ID: `INTERACTION-REGISTRATION-AND-GAP-CLOSURE-2026-10-20-001`.
+- نتیجهٔ هدف: ثبت همین تعامل در مخزن، با بازخوانی و تطبیق پیوندها. شکاف‌های سراسری و مقصدهای مستقل فقط پس از آزمون و شاهد جداگانه بسته می‌شوند.
+- زمان دقیق پیام کاربر: UNKNOWN / UNVERIFIED.
