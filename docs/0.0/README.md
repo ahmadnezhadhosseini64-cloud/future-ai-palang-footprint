@@ -559,3 +559,10 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - دفتر داوری شماره‌های EVT: [H0EVTCA](../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-EVT-NUMBER-COLLISION-ADJUDICATION-2026-10-21-001.md).
 - رویداد فعال این گام: [EVT-0053](../architecture/BEHAVIOR-TRACE/EVT-0053-SEMANTIC-ARCHITECTURE-BASELINE-2026-10-21.md).
 - وضعیت: شش جفت EVT قدیمی از نظر هویت متمایز شده‌اند؛ بررسی همهٔ ارجاع‌ها، برخوردهای اضافی و داوری تمام 493 فایل هنوز OPEN / PARTIAL است.
+
+
+## معماری اجرایی و داوری معنایی — ادامهٔ فعال
+- سند معماری قابل پیاده‌سازی: [FAPF-IRA](../reference/REFERENCE-DOCUMENTS/FUTURE-AI-PALANG-FOOTPRINT-IMPLEMENTABLE-REFERENCE-ARCHITECTURE-2026-10-21-001.md).
+- سند مبنای معنایی: [H0SAB](../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-SEMANTIC-ARCHITECTURE-BASELINE-2026-10-21-001.md).
+- رویداد زنجیره: [EVT-0053](../architecture/BEHAVIOR-TRACE/EVT-0053-SEMANTIC-ARCHITECTURE-BASELINE-2026-10-21.md).
+- وضعیت: مشخصات ساخت برنامه ثبت شده؛ پیاده‌سازی کامل اپ و اثبات معنایی همهٔ روابط هنوز تأیید نشده. ممیزی تازه باید خروجی صف معنایی خط‌به‌خط را تولید کند و آن خروجی جداگانه بازخوانی شود.
