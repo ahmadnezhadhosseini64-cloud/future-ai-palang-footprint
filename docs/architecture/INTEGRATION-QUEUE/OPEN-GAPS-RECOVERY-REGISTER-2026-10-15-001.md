@@ -205,3 +205,11 @@ NO CLAIM WITHOUT EVIDENCE — هیچ ادعایی بدون شاهد پذیرفت
 - **قانون بستن:** تعریف، پیوند یا ثبت فایل جایگزین اجرای واقعی نیست. هر شکاف فقط با شاهد مستقل همان قابلیت بسته می‌شود.
 - **اقدام بعدی:** پس از اتصال Dropbox توسط کاربر، نوشتن/بازخوانی فایل آزمایشی را انجام بده؛ برای capture سراسری، منبع رویداد مجاز و مسیر صف را بساز و end-to-end بیازما؛ برای Buffer و Persistent Memory، ابتدا ابزار واقعی را شناسایی و جداگانه بیازما.
 - **زمان دقیق پیام کاربر:** UNKNOWN / UNVERIFIED؛ زمان commit و اجرای workflow مستقل‌اند.
+
+
+## Verification checkpoint — ARCHITECTURE-BUILD-VERIFICATION-2026-10-20-001 (2026-10-20)
+- Production ID: `ABV-2026-10-20-001`.
+- Event: [EVT-0024](../BEHAVIOR-TRACE/EVT-0024-ARCHITECTURE-BUILD-VERIFICATION-2026-10-20.md).
+- Repository structural audit run `39447416772`: completed / success. Contract, workflow, audit script, index, integration queue, behavior trace, pending queue, MRV and current 0.0 anchor were read back.
+- This closes no external destination gap. G-AUTO-02 through G-AUTO-08 remain subject to their own evidence gates; Dropbox (G-AUTO-06) was deliberately not touched.
+- Exact user-message time UNKNOWN / UNVERIFIED.
