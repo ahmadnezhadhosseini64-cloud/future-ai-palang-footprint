@@ -72,18 +72,41 @@ for mapping in (stable_map, prod_map):
 for node in nodes:
     if node["event_number"]:
         id_to_paths[f"EVT-{node['event_number']}"].add(node["path"])
+# Explicit canonical path preferences grounded in repository registry/lineage documents.
+canonical_preferred_paths = {
+    "ARCH-2026-08-29-001": "architecture/ARCH-2026-08-29-001-living-evolutionary-architecture.md",
+    "PMA-2026-09-01-001": "architecture/memory/PERSISTENT-MEMORY-ADAPTER-SPEC-2026-09-01.md",
+    "MPPA-2026-09-29-002": "architecture/memory/MEMORY-PERSISTENCE-PROOF-ARCHITECTURE-2026-09-29.md",
+    "THREE-LAYER-REGISTRATION-ARCHITECTURE-2026-10-06-001": "docs/reference/REFERENCE-DOCUMENTS/THREE-LAYER-SYNCHRONOUS-DURABLE-REGISTRATION-2026-10-06-001.md",
+    "3LR-REG-2026-10-06-001": "docs/reference/REFERENCE-DOCUMENTS/THREE-LAYER-SYNCHRONOUS-DURABLE-REGISTRATION-2026-10-06-001.md",
+    "THREE-LEVEL-GOVERNED-REGISTRATION-COMMAND-2026-10-06-001": "docs/reference/REFERENCE-DOCUMENTS/THREE-LEVEL-GOVERNED-REGISTRATION-COMMAND-2026-10-06-001.md",
+    "AREP-2026-08-31-001": "docs/protocols/ARCHIVE-REVIVAL-EXECUTION-PATH.md",
+    "PMRH-2026-09-06-001": "checkpoints/0.0/PMRH-2026-09-06-LIVE-CHECKPOINT-001.md"
+}
+path_stems = {Path(n["path"]).stem: n["path"] for n in nodes}
 parent_edges, unresolved, ambiguous = [], [], []
 for node in nodes:
     for parent in node["declared_parents"]:
         candidates = sorted(id_to_paths.get(parent, set()))
         if not candidates and len(parent) >= 12:
-            # Some historical references use an abbreviated stable ID without its final sequence/version suffix.
             candidates = sorted({path for ident, paths in id_to_paths.items() if ident.startswith(parent) for path in paths})
+        if not candidates and len(parent) >= 12:
+            candidates = sorted({n["path"] for n in nodes if Path(n["path"]).stem == parent or Path(n["path"]).stem.startswith(parent + "-") or parent in Path(n["path"]).stem})
+        preferred = canonical_preferred_paths.get(parent)
+        if preferred and preferred in candidates:
+            resolution = "CANONICAL_PREFERRED_WITH_DUPLICATE_OCCURRENCES"
+            selected_path = preferred
+        elif not candidates:
+            resolution, selected_path = "UNRESOLVED", None
+        elif len(candidates) == 1:
+            resolution, selected_path = "UNIQUE", candidates[0]
+        else:
+            resolution, selected_path = "AMBIGUOUS", None
         edge = {"source": node["path"], "target_id": parent, "candidate_paths": candidates,
-                "resolution": "UNRESOLVED" if not candidates else ("UNIQUE" if len(candidates) == 1 else "AMBIGUOUS")}
+                "selected_path": selected_path, "resolution": resolution}
         parent_edges.append(edge)
-        if not candidates: unresolved.append(edge)
-        elif len(candidates) > 1: ambiguous.append(edge)
+        if resolution == "UNRESOLVED": unresolved.append(edge)
+        elif resolution == "AMBIGUOUS": ambiguous.append(edge)
 alias_edges = []
 for group in duplicates:
     paths = group["paths"]
