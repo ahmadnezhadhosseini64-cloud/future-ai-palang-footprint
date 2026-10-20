@@ -2,7 +2,7 @@
 
 - Stable ID: CANONICAL-0.0-GRAPH-INVENTORY-AND-RECONCILIATION-2026-10-21-001
 - Production ID: C0GIR-2026-10-21-001
-- Version: 1.0.3
+- Version: 1.0.4
 - Owner: احمد پلنگ
 - Created / processed UTC: 2026-10-20T20:57:40.304Z
 - Created / processed Asia/Tehran: 2026-10-21T00:27:40.304+03:30
@@ -534,3 +534,17 @@
 - **G-14:** separate stable source-graph inventory from CI-generated evidence artifacts. Until a machine-validated filter is implemented, report both counts and their scopes separately.
 - Version history: 1.0.3 adds the 670-file snapshot, current evidence artifact count, and G-14.
 
+
+
+## آخرین snapshot قابل‌مشاهده و اجرای ممیزی گراف — 2026-10-20T21:38:13.394Z
+- Tree SHA: `d9f4ef43eaf0af9796ac0f8fafbc782510dec038`; `truncated=false`.
+- Total file entries: 682.
+- Paths containing `0.0`: 95.
+- Checkpoint paths: 38.
+- EVT files: 52 (EVT-0048 is the newest user-input event in this graph at this snapshot).
+- Files under `docs/reference/REFERENCE-DOCUMENTS/`: 85.
+- Generated Evidence Gate files: 201; counted separately from source architecture nodes.
+- This snapshot differs from the earlier workflow audit (678/93/51/84/199) because the repository continued to change and workflows generated more evidence artifacts. Do not merge counts from different timestamps into one supposedly simultaneous total.
+- Canonical reconciliation register: [H0G-RDR](./HISTORICAL-0.0-GRAPH-RECONCILIATION-AND-DEDUPLICATION-REGISTER-2026-10-21-001.md).
+- Automated scan evidence: [run 39501699736](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39501699736), SUCCESS; artifact `living-architecture-audit-39501699736`.
+- Current graph state: inventory refreshed, full semantic reconciliation OPEN / PARTIAL; no historical files deleted.
