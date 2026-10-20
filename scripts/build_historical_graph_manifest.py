@@ -37,10 +37,13 @@ for p in source_files:
     parent_values = vals(body, r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Parent(?: input| event| reference| protocol| architecture| excavation)?|Parent ID|Parent Stable ID)(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
     parents = []
     for pv in parent_values:
-        # Extract only identifier-shaped tokens. Do not turn prose, markdown emphasis,
-        # destination labels or path fragments into fabricated parent nodes.
-        ids = re.findall(r"\b(?:EVT-\d+|[A-Z0-9]+(?:[-._][A-Z0-9]+){2,})\b", pv)
-        parents.extend(ids)
+        # Prefer visible Markdown link labels over URL paths, so a full event ID is not
+        # double-counted with its short EVT number from the filename.
+        labels = re.findall(r"\[([^\]]+)\]\(", pv)
+        scan_values = labels if labels else [pv]
+        for value in scan_values:
+            ids = re.findall(r"\b(?:EVT-\d+|[A-Z0-9]+(?:[-._][A-Z0-9]+){2,})\b", value)
+            parents.extend(ids)
     for x in stable: stable_map[x].append(relpath)
     for x in prod: prod_map[x].append(relpath)
     evt = re.match(r"EVT-(\d+)-", p.name)
