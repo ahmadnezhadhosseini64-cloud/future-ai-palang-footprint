@@ -89,3 +89,12 @@
 
 ## 9. سابقهٔ تغییرات این سند
 - Version 1.0.0 — 2026-10-20: ایجاد و ثبت برای مستندسازی مسیر تعیین ۰.۰ جاری، قاعدهٔ حاکم زنده، ثبت زمانی، مقصدهای مستقل و دستور بازیابی. زمان دقیق درخواست UNKNOWN / UNVERIFIED.
+
+
+## اتصال صریح به معماری و ساختمان پروژه
+- **رویداد معماری/رفتار:** [EVT-0015](../../architecture/BEHAVIOR-TRACE/EVT-0015-0.0-GOVERNING-ADDENDUM-ARCHITECTURE-INTEGRATION-2026-10-20.md).
+- **پروندهٔ صف ادغام:** [PALANG-0.0-COMPLETE-PATH-GOVERNING-ADDENDUM-2026-10-20-001](../../architecture/INTEGRATION-QUEUE/PALANG-0.0-COMPLETE-PATH-GOVERNING-ADDENDUM-2026-10-20-001.md).
+- **نمایهٔ صف:** [Integration Queue README](../../architecture/INTEGRATION-QUEUE/README.md).
+- **دفتر مرکزی ۰.۰:** [0.0 registry](../../0.0/README.md).
+- **دفتر رفتار:** [Interaction Behavior Trace](../../architecture/BEHAVIOR-TRACE/INTERACTION-BEHAVIOR-TRACE-2026-10-19-001.md).
+- **نتیجهٔ معماری:** قاعده از پاسخ مکالمه فراتر رفته و در مرجع زنده، لنگر جاری، دفتر ۰.۰، دفتر رفتار و صف ادغام معماری پیوند خورده است. این پیوندها تأیید مقصدهای بیرونی را جایگزین نمی‌کنند.
