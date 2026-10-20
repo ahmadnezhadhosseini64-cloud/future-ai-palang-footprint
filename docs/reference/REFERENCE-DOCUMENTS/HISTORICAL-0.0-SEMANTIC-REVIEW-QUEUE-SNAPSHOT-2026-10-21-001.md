@@ -106,3 +106,11 @@ These failures are retained as implementation/test evidence. The current pass pr
 - Artifact ID: `12308721630`; ZIP SHA-256: `sha256:0040d61f874a6972f67b84256e88898052b14bdce92f4f32f0a3f539b8b3d019`.
 - Counts: 500 source files; 1,020 local links / 0 missing; 38 parent edges / 0 unresolved/ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 exact-content duplicate groups; 695 identifier occurrences (326 Stable ID, 325 Production ID, 44 Reference ID).
 - The queue uses a front-matter heuristic for definition candidates and separates generic Reference ID from Stable ID. Role labels remain unreviewed candidates until human/source-context adjudication.
+
+
+## Addendum v1.3.0 — latest audit after role-review batch 002
+- Workflow run: [39518314490](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39518314490) — SUCCESS.
+- Audited commit: `230b6cf3145bc27e18f26fc6afc33bd86b033122`; runner UTC: `2026-10-20T23:57:41Z`.
+- Artifact ID: `12308872095`; ZIP SHA-256: `sha256:fa80378ea212d7a90ff746bbd4d7b3db7b46e9fcf27f0117fc3f47617f8268bd`.
+- Latest counts: 501 source files; 1,030 local Markdown edges / 0 missing; 38 declared parent edges / 0 unresolved or ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT short-number groups; 11 exact-content duplicate groups; 697 identifier occurrences; 0 decode errors.
+- The additional source file is the second identifier-role review batch. The current snapshot preserves all earlier measurements as historical evidence. Structural acceptance passes; full semantic acceptance remains OPEN / PARTIAL.
