@@ -69,3 +69,13 @@ All ten files listed in the previous section were fetched after the G-11/G-12/G-
 Current graph snapshot: tree SHA `19058e7d68a540862c618176c4c5e64109c62c0c`; 653 files; 93 paths containing 0.0; 38 checkpoint paths; 51 EVT files; 48 related reference documents. Tree API reported `truncated=false`.
 Scoped repository registration and cross-index verification: VERIFIED. Complete content-level graph reconciliation: OPEN / PARTIAL. Dropbox, Buffer, Library, Persistent Memory, runtime-wide automatic execution, and second-host transfer: OPEN / NOT PROVEN.
 
+## Final registry read-back after clarifying the historic listing
+- Assistant processing/read-back time UTC: `2026-10-20T21:06:43.336Z`
+- Asia/Tehran: `2026-10-21T00:36:43.336+03:30`
+- 0.0 registry latest content SHA: `c9a99f1fcf3b6ba0a3e5bd6af867f7e92991b9c1`; the older 16-file list is explicitly historical and superseded by C0GIR's current 93-path inventory.
+- Master reference v1.0.2 SHA: `2d437fee1b6a091ef2c11cd9c672b2d3f1119cca`.
+- Graph inventory v1.0.1 SHA: `420ab31c8a7790c46dc71bd4b44f6821ec579014`.
+- Integration queue SHA: `2b18a6e29b1d000989cb3edfea8738678f2e5760`.
+- The updated 0.0 registry, master, graph inventory, queue, reference index, behavior-trace index, parent contract and portable HAIF master were read back and checked; all expected identifiers, versions and links passed. This event is fetched again after this append.
+- G-01 remains OPEN / PARTIAL; G-11 to G-13 are registered in both the governing master and integration queue, but their operational acceptance criteria are not yet passed.
+
