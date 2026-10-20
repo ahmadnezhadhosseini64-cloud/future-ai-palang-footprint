@@ -62,3 +62,11 @@
 - **سند مرجع کامل:** [ACTIVE-LIVING-EVERY-INPUT-OUTPUT-ANCHOR-TEST-AND-PERMANENT-OPERATING-RULE](../../reference/REFERENCE-DOCUMENTS/ACTIVE-LIVING-EVERY-INPUT-OUTPUT-ANCHOR-TEST-AND-PERMANENT-OPERATING-RULE-2026-10-20-001.md)
 - **وضعیت:** قاعده ACTIVE / LIVING؛ آزمون OPEN / PENDING EXECUTION PROOF.
 - **محدودیت ادعا:** این پیوند، فعال بودن رویهٔ مستند را نشان می‌دهد، نه اجرای خودکار پس‌زمینه یا قبولی آزمون.
+
+
+## EVT-0022 — فعال‌سازی قاعده و آزمون زنده (2026-10-20)
+- **رویداد:** [EVT-0022 — فعال‌سازی قاعدهٔ دائمی و آزمون زنده](./EVT-0022-USER-ACTIVATES-LIVING-ANCHOR-TEST-PERMANENT-RULE-2026-10-20.md)
+- **سند مرجع کامل:** [ACTIVE-LIVING-EVERY-INPUT-OUTPUT-ANCHOR-TEST-AND-PERMANENT-OPERATING-RULE](../../reference/REFERENCE-DOCUMENTS/ACTIVE-LIVING-EVERY-INPUT-OUTPUT-ANCHOR-TEST-AND-PERMANENT-OPERATING-RULE-2026-10-20-001.md)
+- **قاعده:** ACTIVE / LIVING.
+- **آزمون:** OPEN / PENDING EXECUTION PROOF؛ فقط شواهد اجرایی واقعی می‌تواند آن را ببندد.
+- **محدودیت:** ثبت این رویداد به معنی اجرای خودکار پس‌زمینه نیست.
