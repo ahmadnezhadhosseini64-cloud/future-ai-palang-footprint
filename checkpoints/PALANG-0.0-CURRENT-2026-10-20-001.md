@@ -142,3 +142,20 @@ On 2026-10-20, the user explicitly approved applying the temporal bracketing rul
 - Buffer / Persistent Memory / Library / Dropbox: NOT VERIFIED by this repository operation.
 - Dropbox failover anchor `PALANG-DROPBOX-FAILOVER-RESUME-0.0-2026-10-12-001` remains independently OPEN / WAITING.
 - Resume from this 0.0 anchor; preserve prior anchors, link the temporal rule into any applicable new registration, and continue the open Dropbox connection plus test-write/read-back work without falsely closing it.
+
+## Temporal bracketing rule — EVT-0018, repository integration follow-through
+- Event ID: EVT-0018-TEMPORAL-BRACKETING-RULE-2026-10-20
+- Stable ID: TEMPORAL-BRACKETING-AND-BOUNDED-TIMESTAMP-GOVERNANCE-2026-10-20-001
+- Production ID: TBBTG-HAIF-2026-10-20-001
+- Version: 1.0.0
+- Complete event record: [EVT-0018 — ثبت محصور بین دو لنگر زمانی](../docs/architecture/BEHAVIOR-TRACE/EVT-0018-TEMPORAL-BRACKETING-RULE-2026-10-20.md)
+- Canonical rule: [Permanent living execution governance, section 9](../docs/reference/REFERENCE-DOCUMENTS/PERMANENT-LIVING-EXECUTION-ANCHOR-TIMESTAMP-GOVERNANCE-2026-10-20-001.md)
+- Living reference: [Unified Output Anchor Registration](../docs/reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md)
+- Behavior trace: [Interaction Behavior Trace](../docs/architecture/BEHAVIOR-TRACE/INTERACTION-BEHAVIOR-TRACE-2026-10-19-001.md)
+- Queue index: [Architecture Integration Queue](../docs/architecture/INTEGRATION-QUEUE/README.md)
+- Central 0.0 registry: [0.0 registry](../docs/0.0/README.md)
+- Rule: when exact event time is unavailable, use a bounded interval only if preceding/following timestamped anchors and ordering evidence are reliable; preserve exact time as UNKNOWN / UNVERIFIED; never invent a midpoint or substitute commit time for message/read-back time.
+- Current request exact time: UNKNOWN / UNVERIFIED. Do not infer it from commit metadata.
+- Repository state: this anchor is being updated to link EVT-0018; only mark this integration verified after fetching this exact file and matching the new section.
+- Buffer / Persistent Memory / Library / Dropbox: not independently verified by this repository action. Dropbox failover anchor remains OPEN / WAITING.
+- Resume instruction: fetch the anchor, EVT-0018, canonical reference, living reference, behavior trace, queue index and 0.0 registry; compare IDs, links, temporal rule and destination-specific statuses. Preserve earlier 0.0 anchors.
