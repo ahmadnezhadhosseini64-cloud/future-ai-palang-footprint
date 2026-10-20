@@ -37,16 +37,10 @@ for p in source_files:
     parent_values = vals(body, r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Parent(?: input| event| reference| protocol| architecture| excavation)?|Parent ID|Parent Stable ID)(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
     parents = []
     for pv in parent_values:
-        labels = re.findall(r"\[([^\]]+)\]\(", pv)
-        if labels:
-            parents.extend(labels)
-        else:
-            evt_refs = re.findall(r"\bEVT-\d+\b", pv)
-            if evt_refs:
-                parents.extend(evt_refs)
-            else:
-                parts = [part.strip(" `.;") for part in re.split(r"\s*/\s*|\s+→\s+|,\s*", pv)]
-                parents.extend(part for part in parts if part and not re.match(r"^(RELATED IDS|NONE|N/A)\b", part, re.I))
+        # Extract only identifier-shaped tokens. Do not turn prose, markdown emphasis,
+        # destination labels or path fragments into fabricated parent nodes.
+        ids = re.findall(r"\b(?:EVT-\d+|[A-Z0-9]+(?:-[A-Z0-9]+){2,})\b", pv)
+        parents.extend(ids)
     for x in stable: stable_map[x].append(relpath)
     for x in prod: prod_map[x].append(relpath)
     evt = re.match(r"EVT-(\d+)-", p.name)
