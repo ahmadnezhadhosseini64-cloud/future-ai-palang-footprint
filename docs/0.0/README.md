@@ -384,3 +384,12 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - موارد باز: اجرای خودکار همهٔ ورودی/خروجی‌ها، Library، Buffer، Persistent Memory، اتصال و آزمون Dropbox، تطبیق کامل تاریخی و آزمون سرتاسری. Dropbox همچنان OPEN / WAITING است.
 - بازخوانی سند ممیزی: محتوای همان مسیر پس از نوشتن دقیقاً تطبیق شد. بازخوانی نمایه: شناسه و مسیر این ممیزی پیدا شد.
 - زمان دقیق پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان پردازش/commit جایگزین زمان پیام نیست.
+
+
+## لنگر تعامل جاری و ممیزی شکاف‌ها — 2026-10-20
+- سند مرجع: [INTERACTION-REGISTRATION-AND-GAP-CLOSURE-2026-10-20-001](../reference/REFERENCE-DOCUMENTS/INTERACTION-REGISTRATION-AND-GAP-CLOSURE-2026-10-20-001.md).
+- رویداد: [EVT-0032](../architecture/BEHAVIOR-TRACE/EVT-0032-INTERACTION-REGISTRATION-AND-GAP-CLOSURE-2026-10-20.md).
+- Production ID: `IRGC-2026-10-20-001`; Version: 1.0.0.
+- این لنگر، ثبت درخواست جاری است و هیچ لنگر ۰.۰ پیشین را جایگزین یا بسته نمی‌کند.
+- فقط ثبت همین تعامل در مخزن در دامنهٔ این اجراست؛ Dropbox، Buffer، Persistent Memory، Library، لنگرگذاری خودکار سراسری و تطبیق کامل تاریخی باز می‌مانند.
+- زمان دقیق پیام کاربر: UNKNOWN / UNVERIFIED.
