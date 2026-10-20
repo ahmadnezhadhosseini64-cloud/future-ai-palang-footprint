@@ -425,3 +425,5 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - رویداد ورودی: [EVT-0037](../architecture/BEHAVIOR-TRACE/EVT-0037-UNIVERSAL-REGISTER-AND-PORTABLE-HAIF-REQUEST-2026-10-20.md).
 - این لنگر ادامهٔ زنجیره است؛ هیچ نقطهٔ تاریخی حذف یا جایگزین نمی‌شود. چهار گرهٔ پیمایش صرفاً میان‌بر هستند.
 - زمان پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان پردازش تدوین سند: 2026-10-20T22:58:42+03:30.
+
+- لنگر خروجی سند مرجع مادر: [EVT-0038](../architecture/BEHAVIOR-TRACE/EVT-0038-ASSISTANT-EXECUTION-AND-PORTABLE-HAIF-REFERENCE-2026-10-20.md).
