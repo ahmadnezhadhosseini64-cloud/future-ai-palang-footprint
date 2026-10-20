@@ -2,7 +2,7 @@
 
 - Stable ID: CANONICAL-0.0-GRAPH-INVENTORY-AND-RECONCILIATION-2026-10-21-001
 - Production ID: C0GIR-2026-10-21-001
-- Version: 1.0.2
+- Version: 1.0.3
 - Owner: احمد پلنگ
 - Created / processed UTC: 2026-10-20T20:57:40.304Z
 - Created / processed Asia/Tehran: 2026-10-21T00:27:40.304+03:30
@@ -523,4 +523,14 @@
 - Latest observed evidence gate run: `39497698663`, completed successfully; evidence file `evidence/evidence-gate-39497698663.txt`. This proves only the configured Evidence Gate's stable retrieval/independent execution scope, not universal capture or full graph validation.
 - Because every successful repository push may generate another evidence artifact, this 668-file count is a time-bounded snapshot observed after commit `1dad17490b47364228d2ad45ee39703dfd573790`; later writes may change the tree again.
 - Version history: 1.0.2 adds the 668-file observed snapshot and the narrow automated-execution evidence; G-01 remains OPEN / PARTIAL.
+
+## 15. Snapshot مشاهده‌شده پس از اجرای Evidence Gateهای اخیر
+- Snapshot processing UTC: `2026-10-20T21:09:13.739Z`
+- Snapshot processing Asia/Tehran: `2026-10-21T00:39:13.739+03:30`
+- Tree SHA returned by API: `2a688f89dfc945ba39644aaacdfbfc7389a25afd`; `truncated=false`.
+- Total file entries: 670; paths containing `0.0`: 93; checkpoint paths: 38; EVT files: 51; generated evidence-gate files: 192.
+- Between snapshot 653 and 668, 15 files were added and all were `evidence/evidence-gate-*.txt`; by this snapshot, two additional evidence artifacts appeared after the latest master/inventory writes. The inventory update itself can trigger another evidence artifact; this count is therefore a timestamped observation, not a timeless total.
+- Latest successful evidence-gate run inspected: `39497698663`, head commit `1dad17490b47364228d2ad45ee39703dfd573790`, conclusion `success`, completed at `2026-10-20T21:07:01Z`. Evidence artifact: `evidence/evidence-gate-39497698663.txt`.
+- **G-14:** separate stable source-graph inventory from CI-generated evidence artifacts. Until a machine-validated filter is implemented, report both counts and their scopes separately.
+- Version history: 1.0.3 adds the 670-file snapshot, current evidence artifact count, and G-14.
 
