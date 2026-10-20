@@ -159,3 +159,4 @@ On 2026-10-20, the user explicitly approved applying the temporal bracketing rul
 - Repository state: this anchor is being updated to link EVT-0018; only mark this integration verified after fetching this exact file and matching the new section.
 - Buffer / Persistent Memory / Library / Dropbox: not independently verified by this repository action. Dropbox failover anchor remains OPEN / WAITING.
 - Resume instruction: fetch the anchor, EVT-0018, canonical reference, living reference, behavior trace, queue index and 0.0 registry; compare IDs, links, temporal rule and destination-specific statuses. Preserve earlier 0.0 anchors.
+- User-approval event record: [EVT-0019 — Temporal Bracketing User Acceptance](../docs/architecture/BEHAVIOR-TRACE/EVT-0019-TEMPORAL-BRACKETING-USER-ACCEPTANCE-2026-10-20.md).
