@@ -195,3 +195,13 @@ This document can be considered repository-integrated only after the file, index
 - Result: workflow PASS; 798 total files including generated evidence; 493 source files; 305 generated Evidence Gate files; 940 local Markdown link edges; 0 missing links; 38 declared parent edges; 0 unresolved and 0 ambiguous parent edges; 11 exact-content duplicate groups; 33/42 expanded Stable/Production ID occurrence groups; 8 EVT-number collision groups.
 - Structural graph and declared-parent links pass for this snapshot. Full semantic classification of repeated identifiers and natural-language equivalence remains OPEN / ACTIVE; no automatic identity merging or file deletion is permitted.
 - Change log: v1.6.0 records the latest successful full-tree verification and current snapshot pointer.
+
+
+
+## Addendum v1.7.0 — current verified repository snapshot
+- Current snapshot pointer: [H0GMS-2026-10-21-001 v1.4.0](./HISTORICAL-0.0-GRAPH-MANIFEST-SNAPSHOT-2026-10-21-001.md).
+- Latest completed audit before this addendum: run 39510581209, artifact 12305521743, digest `sha256:07b0ceb223de4729b0d90a8009e8fc9ac0ba4bdeb031f394ec1b3a42f66d9513`, audited commit `36291d0273933bd6710dfeaf417c6988c8d9ecb5`, audit UTC `2026-10-20T22:47:11Z`.
+- Structural result: 800 files total, 493 source files, 307 generated evidence files, 942 local Markdown links, 0 missing links, 38 declared parent edges, 0 unresolved and 0 ambiguous edges, 11 exact duplicate groups, 33 expanded Stable ID repeated-occurrence groups, 42 expanded Production ID repeated-occurrence groups and 8 EVT-number collision groups.
+- The manifest and decision register agree on 11 non-destructive alias/mirror proposals. Two numbered outcome/checkpoint pairs now have earliest-commit candidates and zero inbound local links; all copies remain preserved.
+- This does not certify full semantic equivalence of all source prose. Semantic role review of repeated IDs and EVT-number collisions remains OPEN / ACTIVE.
+- Change log: v1.7.0 records the latest verified snapshot and keeps structural vs semantic acceptance separate.
