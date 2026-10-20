@@ -40,11 +40,17 @@ jobs:
             python3 scripts/audit_living_architecture.py
           } | tee audit-output/living-architecture-audit.txt
 
+      - name: Run historical 0.0 graph content audit
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/audit_historical_0_0_graph.py | tee audit-output/historical-0.0-graph-audit-run.txt
+
       - name: Upload inspectable audit evidence
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: living-architecture-audit-${{ github.run_id }}
-          path: audit-output/living-architecture-audit.txt
+          path: audit-output/
           if-no-files-found: warn
           retention-days: 90
