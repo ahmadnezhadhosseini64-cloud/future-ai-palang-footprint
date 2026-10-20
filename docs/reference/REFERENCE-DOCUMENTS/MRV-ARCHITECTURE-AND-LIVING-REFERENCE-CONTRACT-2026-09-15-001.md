@@ -1060,3 +1060,13 @@ The current repository excavation and reconciliation record is `docs/reference/R
 - **زمان:** زمان دقیق بی‌شاهد UNKNOWN / UNVERIFIED می‌ماند؛ زمان commit جایگزین زمان پیام، اجرا یا بازخوانی نیست.
 - **مرزبندی مقصدها:** Repository، Library، Buffer، Persistent Memory و Dropbox مستقل‌اند؛ اثبات یکی وضعیت دیگری را ثابت نمی‌کند.
 - **وضعیت:** این بند، قاعده را در سند مادر ثبت می‌کند؛ پس از نوشتن باید بازخوانی شود. این پیوند به‌تنهایی هیچ مقصد بیرونی را تأیید نمی‌کند و وضعیت کلی چرخه تا بسته‌شدن همهٔ گیت‌های لازم PARTIAL / OPEN باقی می‌ماند.
+
+
+## حاکمیت افزوده — لنگر مستقل برای هر ورودی و خروجی
+
+- **Stable ID:** `EVERY-INTERACTION-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001`
+- **Production ID:** `EIACRG-HAIF-2026-10-20-001`
+- **Version:** `1.0.0`
+- **سند مرجع کامل:** [لنگر و ثبت کامل برای تک‌تک ورودی‌های کاربر و خروجی‌های دستیار](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/EVERY-INTERACTION-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001.md)
+
+از این پس هر پیام کاربر و هر پاسخ نهایی قابل‌مشاهدهٔ دستیار یک واحد تعاملِ دارای لنگر است. متن کامل ورودی و خروجی، شناسه، منشأ، زمان‌های دارای شاهد، رابطه با لنگر قبلی، وضعیت مقصدها، مسیر بازیابی و اقدامات بعدی باید ثبت شود. چرخهٔ الزام‌آور: CAPTURE → PRESERVE → IDENTIFY → PROVENANCE → ANCHOR → REGISTER → LINK → WRITE → READ-BACK → MATCH → VERIFY → RECONCILE → STATUS → RESUME. ثبت در مخزن یا هر مقصد فقط پس از شاهد همان مقصد تأیید می‌شود؛ زمان ناموجود UNKNOWN / UNVERIFIED می‌ماند. اگر ابزار یا دسترسی مانع باشد، کار باز می‌ماند و ثبت خودکار/موفقیت ادعا نمی‌شود.
