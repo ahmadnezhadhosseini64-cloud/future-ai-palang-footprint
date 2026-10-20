@@ -84,9 +84,8 @@ for node in nodes:
 alias_edges = []
 for group in duplicates:
     paths = group["paths"]
-    for alias in paths[1:]:
-        alias_edges.append({"canonical_candidate": paths[0], "alias_candidate": alias,
-                            "sha256": group["sha256"], "status": "PROPOSED_ONLY_REQUIRES_REVIEW"})
+    alias_edges.append({"candidate_paths": paths, "sha256": group["sha256"],
+                        "status": "UNADJUDICATED_DUPLICATE_GROUP_NO_CANONICAL_WINNER_ASSIGNED"})
 manifest = {
     "schema": "palang-historical-graph-manifest/v1", "audit_time_utc": run_utc, "repository_commit": commit,
     "scope": "Path-keyed structural manifest. It does not claim complete natural-language semantic adjudication.",
