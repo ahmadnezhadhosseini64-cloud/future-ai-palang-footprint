@@ -99,3 +99,10 @@ These failures are retained as implementation/test evidence. The current pass pr
 - Artifact ID: `12308371613`; artifact ZIP SHA-256: `sha256:eb6d6642cf651ea371e5f8b68404baf4a881527059ba4a8ce61141fa8df5f05a`.
 - Updated counts: 851 total files; 500 source files; 500 text nodes; 0 decode errors; 1,009 local Markdown edges; 0 missing local links; 38 declared parent edges; 0 unresolved/ambiguous parent edges; 37 Stable ID groups; 43 Production ID groups; 8 EVT collision groups; 11 exact-content duplicate groups; 695 identifier occurrences; 11 proposed alias edges.
 - This follow-up snapshot supersedes the previous counts for the current working state while preserving the earlier run as historical evidence. Structural acceptance and queue generation pass; semantic acceptance remains OPEN / PARTIAL.
+
+
+## Addendum v1.2.0 — namespace-corrected review queue
+- Successful run: [39517920781](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39517920781), audited commit `07c0915db52e66061c7c905081c2bfe77a32e807`, runner UTC `2026-10-20T23:53:43Z`.
+- Artifact ID: `12308721630`; ZIP SHA-256: `sha256:0040d61f874a6972f67b84256e88898052b14bdce92f4f32f0a3f539b8b3d019`.
+- Counts: 500 source files; 1,020 local links / 0 missing; 38 parent edges / 0 unresolved/ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 exact-content duplicate groups; 695 identifier occurrences (326 Stable ID, 325 Production ID, 44 Reference ID).
+- The queue uses a front-matter heuristic for definition candidates and separates generic Reference ID from Stable ID. Role labels remain unreviewed candidates until human/source-context adjudication.
