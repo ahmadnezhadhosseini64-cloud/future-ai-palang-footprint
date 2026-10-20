@@ -133,3 +133,14 @@ Last Verified At فقط بعد از بازخوانی مستقل و تطبیق م
 ## 11. Latest excavation recovery pointer
 
 For the latest repository excavation and reconciliation state, retrieve `docs/reference/REFERENCE-DOCUMENTS/REF-ARCHAEOLOGY-EXCAVATION-2026-10-13-001.md`. It records the 2026-10-15 repository integration work, per-destination evidence and limitations. Do not infer Buffer, Library, Persistent Memory or Dropbox completion from the repository record. The Dropbox 0.0 point is OPEN / WAITING and must not be auto-started without an explicit continuation instruction.
+
+
+## 12. Evidence-first / no-empty-report pact — 2026-10-20
+
+- **Stable ID:** EVIDENCE-FIRST-NO-EMPTY-REPORT-AND-REGISTER-EXECUTION-PACT-2026-10-20-001
+- **Production ID:** EFNERP-HAIF-2026-10-20-001
+- **Version:** 1.0.0
+- **Canonical complete reference:** [قرارداد اجرایی ثبت مبتنی بر شواهد و منع گزارش خالی](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/EVIDENCE-FIRST-NO-EMPTY-REPORT-AND-REGISTER-EXECUTION-PACT-2026-10-20-001.md)
+- **Binding rule:** before claiming completion, retrieve current evidence, perform destination-specific read-back and content match, distinguish observation from inference/unknowns, record timestamps only with evidence, and preserve open gaps. A status report never substitutes for the complete reference or actual execution.
+- **Acceptance:** this link binds the command to the complete contract; it does not itself prove that all destination-specific or architectural gates are closed.
+- **Current known gates:** Library copy pending; Buffer and Persistent Memory not independently verified; Dropbox connection/test remains OPEN / WAITING. Overall command status remains PARTIAL / OPEN until required gates are independently proven.
