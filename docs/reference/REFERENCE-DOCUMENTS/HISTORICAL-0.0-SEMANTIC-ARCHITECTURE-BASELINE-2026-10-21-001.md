@@ -188,3 +188,11 @@ PRESERVE → IDENTIFY → READ SOURCE → CLASSIFY ROLE → CHECK LINEAGE → CH
 - Latest counts: 500 source files; 1,009 local Markdown edges with 0 missing; 38 declared parent edges with 0 unresolved/ambiguous; 37 Stable ID groups; 43 Production ID groups; 8 EVT groups; 11 exact-content duplicate groups; 695 identifier occurrences.
 - Detailed snapshot: [H0SRQS](./HISTORICAL-0.0-SEMANTIC-REVIEW-QUEUE-SNAPSHOT-2026-10-21-001.md); group decisions and outstanding obligations: [H0IRAR](./HISTORICAL-0.0-IDENTIFIER-AND-RELATION-ADJUDICATION-REGISTER-2026-10-21-001.md).
 - Structural checks pass. Complete semantic proof remains OPEN / PARTIAL.
+
+
+## Addendum v1.6.0 — Reference ID namespace and second role-review batch
+- The manifest parser now treats generic `Reference ID` as `REFERENCE_ID`, separate from `STABLE_ID`. This avoids conflating reference pointers with Stable IDs while keeping them available for lineage resolution.
+- Evidence-based batch 2: [H0IRRB2](./HISTORICAL-0.0-IDENTIFIER-ROLE-REVIEW-BATCH-002-2026-10-21.md) records five Stable ID definition/reference decisions and seven Reference ID role decisions.
+- Fresh parser run [39517920781](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39517920781) passed on commit `07c0915db52e66061c7c905081c2bfe77a32e807`: 500 source files; 1,020 local links / 0 missing; 38 parent edges / 0 unresolved/ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 duplicate groups; 695 ID occurrences.
+- The queue now shows definition candidates only for front-matter metadata lines within the first 40 lines; later nested metadata mentions are classified as reference candidates. This is a triage heuristic, not automatic semantic acceptance.
+- Full semantic closure remains OPEN / PARTIAL.
