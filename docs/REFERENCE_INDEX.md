@@ -207,3 +207,10 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - نتیجهٔ ممیزی و شواهد read-back: [EVT-0044](architecture/BEHAVIOR-TRACE/EVT-0044-ASSISTANT-AUDIT-RESULT-AND-OPEN-GAPS-2026-10-21.md).
 - سند مرجع: [AAAPHR v1.0.1](reference/REFERENCE-DOCUMENTS/AUTOMATIC-ANCHORING-ARCHITECTURE-AUDIT-AND-PORTABLE-HAIF-REFERENCE-2026-10-21-001.md).
 
+
+## PIATGCG — حاکمیت دائمی لنگر و گراف
+- [سند مرجع مادر PIATGCG](reference/REFERENCE-DOCUMENTS/PERMANENT-INTERACTION-ANCHORING-TIMESTAMP-GOVERNANCE-AND-CANONICAL-GRAPH-MASTER-REFERENCE-2026-10-21-001.md) — قاعدهٔ دائمی ورودی/خروجی، زمان‌گذاری، معماری رشد و بستهٔ انتقال میزبان.
+- [موجودی گراف C0GIR](reference/REFERENCE-DOCUMENTS/CANONICAL-0.0-GRAPH-INVENTORY-AND-RECONCILIATION-2026-10-21-001.md) — snapshot درخت مخزن، مسیرهای ۰.۰، checkpointها، رویدادها، کاندیداهای تکرار و مسیر تطبیق.
+- [ورودی EVT-0046](architecture/BEHAVIOR-TRACE/EVT-0046-USER-REQUEST-GOVERNING-ANCHORING-TIMESTAMP-AND-GRAPH-RECONCILIATION-2026-10-21.md).
+- [خروجی EVT-0047](architecture/BEHAVIOR-TRACE/EVT-0047-ASSISTANT-GOVERNANCE-REFERENCE-AND-GRAPH-INVENTORY-2026-10-21.md).
+
