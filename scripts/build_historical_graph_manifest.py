@@ -193,7 +193,6 @@ for edge in local_edges:
     if edge["exists"]:
         inbound[edge["resolved_path"]].append(edge)
 for occurrence in identifier_occurrences:
-for occurrence in identifier_occurrences:
     occurrence["inbound_local_link_count"] = len(inbound.get(occurrence["path"], []))
     occurrence["outbound_local_link_count"] = len(outbound.get(occurrence["path"], []))
 link_context_by_path = {
