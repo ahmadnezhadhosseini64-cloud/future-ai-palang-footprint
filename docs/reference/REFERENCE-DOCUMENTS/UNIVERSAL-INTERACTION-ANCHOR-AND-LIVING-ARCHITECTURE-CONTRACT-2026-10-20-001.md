@@ -344,3 +344,11 @@ The overall state is not complete while any required destination is unverified. 
 - Reference: [AICPHAE](AUTOMATIC-INTERACTION-CONTINUITY-AND-PORTABLE-HAIF-EVOLUTION-MASTER-REFERENCE-2026-10-20-001.md).
 - Input event: [EVT-0041](../../architecture/BEHAVIOR-TRACE/EVT-0041-AUTOMATIC-CONTINUITY-PORTABLE-CHILD-RAHM-MASTER-REQUEST-2026-10-20.md).
 - هر تعامل باید به‌صورت پیش‌فرض در زنجیرهٔ قابل‌بازیابی ثبت شود، حتی اگر کاربر عبارت «ثبت کن» را تکرار نکند؛ فرمان «ثبت کن» به معنی چکش عمیق و راستی‌آزمایی است. مقصدها، زمان‌ها و آزمون‌ها جداگانه و فقط با شواهد تأیید می‌شوند. قرارداد به‌تنهایی دسترسی ابزارها یا اتوماسیون سراسری را تضمین نمی‌کند.
+
+## حاکمیت تکمیلی 2026-10-21 — زمان پردازش و گراف مرجع
+- سند حاکم زنده: [PIATGCG](./PERMANENT-INTERACTION-ANCHORING-TIMESTAMP-GOVERNANCE-AND-CANONICAL-GRAPH-MASTER-REFERENCE-2026-10-21-001.md).
+- موجودی گراف: [C0GIR](./CANONICAL-0.0-GRAPH-INVENTORY-AND-RECONCILIATION-2026-10-21-001.md).
+- زمان پیام کاربر اگر از منبع قابل‌اعتماد موجود نباشد: `UNKNOWN / UNVERIFIED`. زمان پردازش داخلی دستیار باید در فیلد مستقل UTC ثبت و در صورت نیاز به منطقهٔ زمانی پروژه تبدیل شود؛ این زمان جای زمان پیام کاربر را نمی‌گیرد.
+- هر ورودی/خروجی رویداد مستقل و پیونددار است؛ ثبت قاعده یا تغییر باید به سند مرجع، دفتر ۰.۰، نمایه، دفتر رفتار و صف وصل شود.
+- قاعدهٔ ثبت‌شده، به‌تنهایی اثبات اجرای خودکار در هر میزبان/نشست نیست؛ آزمون runtime و read-back لازم است.
+
