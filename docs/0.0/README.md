@@ -573,3 +573,6 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 
 
 - آخرین ممیزی ساختاری موفق: [39517544772](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39517544772). مبنای ادامه: [H0IRAR](../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-IDENTIFIER-AND-RELATION-ADJUDICATION-REGISTER-2026-10-21-001.md) و [FAPF-IRA](../reference/REFERENCE-DOCUMENTS/FUTURE-AI-PALANG-FOOTPRINT-IMPLEMENTABLE-REFERENCE-ARCHITECTURE-2026-10-21-001.md). معنای همهٔ روابط هنوز تأیید نشده است.
+
+
+- داوری دستهٔ دوم شناسه‌ها: [H0IRRB2](../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-IDENTIFIER-ROLE-REVIEW-BATCH-002-2026-10-21.md). پنج گروه Stable ID و هفت گروه Reference ID بررسی شدند؛ گراف معنایی کامل هنوز باز است.
