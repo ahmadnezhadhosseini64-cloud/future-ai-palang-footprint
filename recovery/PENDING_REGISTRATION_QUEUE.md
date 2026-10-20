@@ -37,3 +37,12 @@ This queue is the repository-side durable fallback for registration operations t
 - `G-AUTO-06`: اتصال و آزمون Dropbox باز است.
 - `G-AUTO-08`: آزمون واقعی توقف/بازیابی/عدم تکرار و تکمیل انتها‌به‌انتها نیازمند شاهد است.
 مرجع: `docs/reference/REFERENCE-DOCUMENTS/LIVING-INTERACTION-AUTOMATION-AND-RECONCILIATION-2026-10-20-001.md`.
+
+
+## Verification record — ARCHITECTURE-BUILD-VERIFICATION-2026-10-20-001
+- Production ID: `ABV-2026-10-20-001`
+- Event evidence: `docs/architecture/BEHAVIOR-TRACE/EVT-0024-ARCHITECTURE-BUILD-VERIFICATION-2026-10-20.md`
+- Verified repository-side: contract/workflow/script/index/queue/trace/0.0 records read back; GitHub Actions run `39447416772` succeeded.
+- Still pending: G-AUTO-02 (authorized all-chat capture source), G-AUTO-03 (Library), G-AUTO-04 (Buffer), G-AUTO-05 (Persistent Memory), G-AUTO-07 (full historical reconciliation), G-AUTO-08 (end-to-end recovery/idempotency).
+- G-AUTO-06 Dropbox remains OPEN / WAITING and intentionally untouched in this operation.
+- Exact user-message time: UNKNOWN / UNVERIFIED.
