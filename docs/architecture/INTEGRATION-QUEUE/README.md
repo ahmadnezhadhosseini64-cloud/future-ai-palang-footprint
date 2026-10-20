@@ -539,6 +539,6 @@ The queue index and the timestamp case must each be read back after this update.
 - Central 0.0 registry: [docs/0.0/README.md](../../0.0/README.md)
 - Rule: where exact time is unavailable, record a bounded interval only when timestamped before/after anchors and event ordering are supported by evidence. Keep exact event time UNKNOWN / UNVERIFIED; never invent a midpoint or substitute commit time.
 - Request timestamp: UNKNOWN / UNVERIFIED.
-- Queue state: REPOSITORY LINKAGE IN PROGRESS until this index and all updated files are fetched and matched. Other destinations remain independently unverified.
+- Queue state: REPOSITORY LINKAGE VERIFIED for EVT-0018 in this audit: the index and the canonical reference, living reference, event record, behavior trace, central 0.0 registry and current 0.0 anchor were fetched; the expected rule, IDs and links were present. This does not verify Buffer, Persistent Memory, Library or Dropbox. Other destinations remain independently unverified.
 - Acceptance: event ID, Stable ID, Production ID, version, links, temporal rule, uncertainty and recovery path match across the canonical reference, event record, behavior trace, 0.0 registry, current anchor and this queue index.
 - Next action: fetch and compare every file in the acceptance list; retain the record as OPEN if any mismatch or unavailable evidence remains.
