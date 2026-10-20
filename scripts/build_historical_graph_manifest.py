@@ -31,10 +31,10 @@ for p in source_files:
     except UnicodeDecodeError:
         decode_errors.append(relpath)
         continue
-    stable = vals(body, r"^\s*(?:[-*]\s*)?(?:Stable ID|Stable-ID|Canonical Stable ID)\s*:\s*`?([^`\r\n]+)")
-    prod = vals(body, r"^\s*(?:[-*]\s*)?(?:Production ID|Production-ID)\s*:\s*`?([^`\r\n]+)")
-    versions = vals(body, r"^\s*(?:[-*]\s*)?Version\s*:\s*`?([^`\r\n]+)")
-    parent_values = vals(body, r"^\s*(?:[-*]\s*)?(?:Parent(?: input| event| reference| protocol| architecture| excavation)?|Parent ID|Parent Stable ID)\s*:\s*`?([^`\r\n]+)")
+    stable = vals(body, r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Stable ID|Stable-ID|Canonical Stable ID)(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
+    prod = vals(body, r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Production ID|Production-ID)(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
+    versions = vals(body, r"^\s*(?:[-*]\s*)?(?:\*\*)?Version(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
+    parent_values = vals(body, r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Parent(?: input| event| reference| protocol| architecture| excavation)?|Parent ID|Parent Stable ID)(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
     parents = []
     for pv in parent_values:
         labels = re.findall(r"\[([^\]]+)\]\(", pv)
