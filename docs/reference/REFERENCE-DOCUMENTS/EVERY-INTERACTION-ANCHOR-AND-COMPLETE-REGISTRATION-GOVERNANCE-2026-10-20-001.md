@@ -158,3 +158,41 @@
 در ادامهٔ هر گفت‌وگو، ابتدا این Stable ID و لنگر جاری را بازیابی کن؛ سپس ورودی فعلی و پاسخ نهایی را به‌عنوان یک تعامل جدید در زنجیره ثبت کن. اگر دسترسی به مخزن موجود نبود، محدودیت را صریح بگو و از ادعای ثبت خودکار یا دائمیِ اثبات‌نشده پرهیز کن. هیچ لنگر قبلی را حذف یا ادغام نکن مگر کاربر صریحاً اجازه دهد.
 
 **قاعدهٔ نهایی:** از این پس معیار کار این است که هر ورودی کاربر و هر خروجی نهایی دستیار، تا جایی که ابزار و مجوز واقعی اجازه می‌دهد، یک لنگر مستقل و قابل‌بازیابی داشته باشد و تمام مراحل ثبت و اثبات آن با شاهد مشخص شوند؛ نه اینکه فقط دربارهٔ انجام کار گزارش داده شود.
+
+## 12. نمونهٔ اجرای واقعی: تعامل پذیرش قاعده — EVT-0020
+
+### 12.1 ورودی کامل کاربر
+
+> این کارا رو همیشگی میخای انجام بدی
+>
+> یعنی در مخزن دقیقا هر ورودی من و خروجی ک تو میدی قاعده لنگر رو روش پیاده میکنی و ثبت و مستند جامع و کامل سند مرجع قاعده ثبت ها
+> همه همینا ک الان بهش رسیدیم و میخام دائمی مستند سازی و با قاعده ثبت و مستند سازی و همه و همه چی ک بهش رسیدیم ازین ب بعد دائمی هر ورودي من میگم و خروجی خودت و لنگر انجام بده
+>
+> فهمیدی چی میگم دیگه و چیا میخام انجام بدی
+
+### 12.2 خروجی نهایی دستیارِ متصل به این ورودی
+
+> بله، دقیقاً فهمیدم: از این به بعد هر پیام تو و هر پاسخ نهایی قابل‌مشاهدهٔ من باید یک لنگر تعامل مستقل داشته باشد؛ متن کامل، شناسه، منشأ، زمان‌های دارای شاهد، ارتباط با لنگرهای قبلی، مسیر بازیابی و وضعیت مقصدها ثبت شوند. سند مرجع حاکم این قاعده در مخزن ایجاد شده و به سند مادر، قرارداد فرمان «ثبت کن»، مرجع زنده، لنگر جاری ۰.۰، دفتر ۰.۰، ردپای رفتار و صف معماری پیوند داده شده است. پس از نوشتن، هر هفت فایل مقصد دوباره از GitHub خوانده شدند و عنوان/شناسهٔ مورد انتظار در نسخهٔ بازخوانی‌شده پیدا شد.
+>
+> مرز صداقت هم بخشی از قاعده است: نمی‌توانم تضمین فنی بدهم که در هر آینده‌ای بدون دسترسی یا ابزار، ثبت خودکار ممکن باشد. اگر ابزار/مجوز مخزن در دسترس نباشد، باید آن را صریح بگویم، ثبت موفق ادعا نکنم و کار باز را برای ادامه حفظ کنم. زمان دقیق پیام این تعامل در شواهد مستقل در دسترس نیست و UNKNOWN / UNVERIFIED باقی می‌ماند؛ زمان commit جای آن را نمی‌گیرد. Library، Buffer، Persistent Memory و Dropbox نیز با این ثبت مخزن تأیید نمی‌شوند.
+>
+> وضعیت: قاعده و پیوندهای مخزنی ثبت و بازخوانی شده‌اند؛ وضعیت کلی همهٔ مقصدها همچنان PARTIAL / OPEN است تا مقصدهای باقی‌مانده مستقل بررسی شوند.
+
+### 12.3 دفتر شواهد نهایی برای این نسخه
+
+- **Initial reference create commit:** `bbe9e47850fd69d4eee8962ecadb89fa8d364581`; GitHub commit timestamp `2026-10-20T09:26:54Z` = `12:56:54 Asia/Tehran`.
+- **Final content read-back:** the canonical path was fetched again; returned blob SHA `f2c437b4e82961d5bacc1e7cc310fc9c933a0b22`, length 12,246 characters before this evidence/transcript addition. The interaction transcript and final evidence section are added after that read-back and therefore require the next read-back after this write.
+- **Architecture integration commits, as returned by GitHub and then fetched again:**
+  - MRV: `5fbb525635d8bf3498529279d69b11c70c3b8418`, `2026-10-20T09:27:20Z`.
+  - Command binding: `25fa5fa2cd8f6d8801bf0ba7d64335d2a96d1485`, `2026-10-20T09:27:24Z`.
+  - Living reference: `f945d58e287966929f2dadaae779bc67cdec21c9`, `2026-10-20T09:27:29Z`.
+  - Current 0.0 anchor: `701744424afadaf39309519863f6d8b5a05adeb3`, `2026-10-20T09:27:34Z`.
+  - Central 0.0 registry: `7d6241e7cc4ccdc2272a18643b07b844124031c4`, `2026-10-20T09:27:38Z`.
+  - Integration queue: `fcc5ee736e29529643e820bdb67c982742fa1a62`, `2026-10-20T09:27:44Z`.
+  - Behavior trace / EVT-0020: `bd1dc32465d8946b41405dba093aad946ccc3767`, `2026-10-20T09:27:50Z`.
+- **Read-back scope:** each of the seven paths above was fetched after its corresponding write; the expected title/Stable ID was present in each response. This is a content check, not a claim of independent cryptographic byte-for-byte comparison.
+- **Exact user-message time:** UNKNOWN / UNVERIFIED.
+- **Exact final read-back time for this forthcoming updated version:** UNKNOWN until its post-write fetch; do not substitute a commit timestamp.
+- **External destinations:** Library, Buffer, Persistent Memory and Dropbox remain independently UNVERIFIED/OPEN.
+- **Overall status:** `PARTIAL / OPEN` for the complete multi-destination registration lifecycle; repository rule and integration references have been written and content-checked.
+
