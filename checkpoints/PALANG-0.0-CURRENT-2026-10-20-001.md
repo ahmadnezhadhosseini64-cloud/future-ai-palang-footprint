@@ -67,3 +67,13 @@ This record is authored from the user instruction and available conversation con
 - Current request exact time: UNKNOWN / UNVERIFIED.
 - Required continuation: re-read and reconcile the full path record, this anchor, and governing reference sections 19–20; retain all previous 0.0 anchors and the open Dropbox task.
 - Destination state remains separate: Repository only can be verified by this GitHub operation; Buffer, Persistent Memory, Library, and Dropbox remain NOT VERIFIED unless independently evidenced.
+
+
+## Architecture/building integration
+- Complete path reference: [PALANG-0.0-COMPLETE-PATH-AND-GOVERNING-ADDENDUM-2026-10-20-001](../docs/reference/REFERENCE-DOCUMENTS/PALANG-0.0-COMPLETE-PATH-AND-GOVERNING-ADDENDUM-2026-10-20-001.md).
+- Architecture queue case: [PALANG-0.0-COMPLETE-PATH-GOVERNING-ADDENDUM-2026-10-20-001](../docs/architecture/INTEGRATION-QUEUE/PALANG-0.0-COMPLETE-PATH-GOVERNING-ADDENDUM-2026-10-20-001.md).
+- Architecture/behavior event: [EVT-0015](../docs/architecture/BEHAVIOR-TRACE/EVT-0015-0.0-GOVERNING-ADDENDUM-ARCHITECTURE-INTEGRATION-2026-10-20.md).
+- Central 0.0 registry: [docs/0.0/README.md](../docs/0.0/README.md).
+- Queue index: [docs/architecture/INTEGRATION-QUEUE/README.md](../docs/architecture/INTEGRATION-QUEUE/README.md).
+- Living governing reference sections 19–20: [Unified Output Anchor Registration](../docs/reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md).
+- Current request exact time: UNKNOWN / UNVERIFIED. Do not infer it from commit metadata.
