@@ -719,3 +719,5 @@ The queue index and the timestamp case must each be read back after this update.
 - سند مرجع: [URPHA](../../reference/REFERENCE-DOCUMENTS/UNIVERSAL-REGISTER-AND-PORTABLE-HAIF-ARCHITECTURE-MASTER-REFERENCE-2026-10-20-001.md).
 - رویداد ورودی: [EVT-0037](../BEHAVIOR-TRACE/EVT-0037-UNIVERSAL-REGISTER-AND-PORTABLE-HAIF-REQUEST-2026-10-20.md).
 - قرارداد فرمان «ثبت کن» به چرخهٔ کامل گسترش یافته؛ آزمون انتقال میزبان، مقصدهای مستقل، گراف تاریخی ۰.۰ و بازیابی سرتاسری هنوز بازند تا شواهد جداگانه ثبت شود.
+
+- لنگر خروجی دستیار: [EVT-0038](../BEHAVIOR-TRACE/EVT-0038-ASSISTANT-EXECUTION-AND-PORTABLE-HAIF-REFERENCE-2026-10-20.md). آزمون انتقال به میزبان دیگر و مقصدهای مستقل همچنان بازند.
