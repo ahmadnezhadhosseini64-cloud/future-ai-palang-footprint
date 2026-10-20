@@ -9,7 +9,7 @@
 - Captured date: 2026-10-20
 - Captured local time: 10:49
 - Timezone: Asia/Tehran (UTC+03:30)
-- Status: ACTIVE / LIVING / REPOSITORY-WRITTEN; READ-BACK VERIFICATION PENDING
+- Status: ACTIVE / LIVING / REPOSITORY-WRITTEN / READ-BACK MATCHED (initial registration)
 - Origin: User instruction in the conversation dated 2026-10-20.
 - Lineage: Adds a new continuation anchor while preserving all previous 0.0 anchors and open work items.
 - Repository path: checkpoints/PALANG-0.0-CURRENT-2026-10-20-001.md
@@ -48,3 +48,13 @@ Resume from this anchor for the current conversation. Preserve all previous 0.0 
 ## Evidence and limitations
 
 This record is authored from the user instruction and available conversation context. The stated time is the time supplied in the conversation context, not an independently audited timestamp. Repository verification status must be updated only after fetching this exact path and matching the returned content with this record.
+
+
+## Rule reaffirmation and canonical reference — 2026-10-20
+
+- Stable ID: `PALANG-0.0-REGISTRATION-REFERENCE-TIMESTAMP-RULE-2026-10-20-001`
+- Canonical governing reference: [Unified Output Anchor Registration Living Reference, section 19](../docs/reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md#19-تأکید-و-اتصال-ثبت‌شده-در-2026-10-20--قاعدهٔ-نقطهٔ-۰.۰-سند-مرجع-مستندسازی-و-ثبت-زمانی).
+- Governing rule: each user-designated 0.0 is an independent recoverable anchor; create or update a complete reference record; document provenance, architecture/queue links, evidence and recovery steps; distinguish request/action/commit/read-back/verification times; never guess unknown times; and verify each storage destination separately.
+- User's exact message time for this reaffirmation: UNKNOWN / UNVERIFIED. This is intentionally not inferred from the prior anchor's timestamp.
+- Related Dropbox anchor remains separate and OPEN / WAITING.
+- Destination status: repository read-back/match is verified for this file; Buffer, Persistent Memory, Library and Dropbox are not verified by this repository operation.
