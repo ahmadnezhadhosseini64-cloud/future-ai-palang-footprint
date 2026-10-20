@@ -249,3 +249,14 @@ On 2026-10-20, the user explicitly approved applying the temporal bracketing rul
 - Exact user-message time: UNKNOWN / UNVERIFIED. Workflow/commit time is not message time.
 - Dropbox remains an independent OPEN / WAITING anchor and was not touched in this operation.
 - Library, Buffer, Persistent Memory and global ChatGPT capture remain unverified; do not mark the whole system complete until their independent acceptance gates pass.
+
+
+## لنگر خروجی EVT-0025 — تداوم معماری Master–Child–Rahm (2026-10-20)
+- **Stable ID:** `INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-REGISTRATION-2026-10-20-001`; **Production ID:** `ICMCRR-HAIF-2026-10-20-001`.
+- **سند مرجع کامل:** [تداوم معماری و Master–Child–Rahm](../docs/reference/REFERENCE-DOCUMENTS/INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-REGISTRATION-2026-10-20-001.md).
+- **رویداد:** [EVT-0025](../docs/architecture/BEHAVIOR-TRACE/EVT-0025-INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-2026-10-20.md).
+- **صف معماری:** [Architecture Integration Queue](../docs/architecture/INTEGRATION-QUEUE/README.md).
+- **ثبت مخزن:** سه فایل نوشته و سپس بازخوانی و تطبیق شدند. سند مرجع blob SHA `f7bafb594adbacacd3505f813c2b06e153c24d0e`; رویداد blob SHA `b691e894fccd91a9890da632570de74b7e6343b2`; صف blob SHA `9284edddb26e5b32d5cf6cd489cb9e3282380bf6`.
+- **شکاف‌های باز:** ادغام معنایی در سند مادر، بازیابی مستقل سند HAIF، آزمون سرتاسری هر ورودی/خروجی، ساخت و آزمون بسته قابل‌انتقال، دو آزمون تاریخی، Dropbox و مقصدهای Library/Buffer/Persistent Memory.
+- **زمان دقیق پیام:** UNKNOWN / UNVERIFIED؛ زمان commit جایگزین زمان پیام نیست.
+- این لنگر خروجی، نقطه ۰.۰ جاری را حفظ می‌کند و ۰.۰ جدیدی نمی‌سازد؛ لنگر Dropbox همچنان مستقل و OPEN / WAITING است.
