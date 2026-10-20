@@ -22,3 +22,9 @@
 5. گام بعد را صریح و قابل‌بازیابی مشخص کند.
 6. پس از نوشتن، سند و نمایه‌ها را بازخوانی و تطبیق کند؛ نتیجهٔ دقیق را ثبت کند.
 7. فایل‌های تاریخی را حذف نکند و ادغام تکراری‌ها را به canonical alias/lineage تبدیل کند، نه حذف تاریخچه.
+
+
+
+## Follow-up continuation
+- Assistant master creation/read-back: [EVT-0051-ASSISTANT-CONSOLIDATED-MASTER-CREATION-AND-READBACK-2026-10-21](./EVT-0051-ASSISTANT-CONSOLIDATED-MASTER-CREATION-AND-READBACK-2026-10-21.md).
+- Subsequent graph-manifest and reconciliation work: [EVT-0052-CANONICAL-GRAPH-MANIFEST-AND-LINK-REPAIR-2026-10-21](./EVT-0052-CANONICAL-GRAPH-MANIFEST-AND-LINK-REPAIR-2026-10-21.md).
