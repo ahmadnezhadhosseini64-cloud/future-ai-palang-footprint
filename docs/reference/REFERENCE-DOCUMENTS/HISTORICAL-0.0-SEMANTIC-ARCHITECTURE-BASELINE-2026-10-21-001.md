@@ -196,3 +196,9 @@ PRESERVE → IDENTIFY → READ SOURCE → CLASSIFY ROLE → CHECK LINEAGE → CH
 - Fresh parser run [39517920781](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39517920781) passed on commit `07c0915db52e66061c7c905081c2bfe77a32e807`: 500 source files; 1,020 local links / 0 missing; 38 parent edges / 0 unresolved/ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 duplicate groups; 695 ID occurrences.
 - The queue now shows definition candidates only for front-matter metadata lines within the first 40 lines; later nested metadata mentions are classified as reference candidates. This is a triage heuristic, not automatic semantic acceptance.
 - Full semantic closure remains OPEN / PARTIAL.
+
+
+## Addendum v1.7.0 — latest structural acceptance
+- Latest pass: [39518314490](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39518314490), commit `230b6cf3145bc27e18f26fc6afc33bd86b033122`, runner UTC `2026-10-20T23:57:41Z`.
+- 501 source files; 1,030 local links / 0 missing; 38 parent edges / 0 unresolved/ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 duplicate groups; 697 ID occurrences; 0 decode errors.
+- Second identifier-role review batch is included in this commit. Full semantic review remains OPEN / PARTIAL; see [H0IRAR](./HISTORICAL-0.0-IDENTIFIER-AND-RELATION-ADJUDICATION-REGISTER-2026-10-21-001.md).
