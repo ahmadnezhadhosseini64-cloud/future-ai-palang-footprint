@@ -42,7 +42,7 @@ for p in source_files:
         labels = re.findall(r"\[([^\]]+)\]\(", pv)
         scan_values = labels if labels else [pv]
         for value in scan_values:
-            ids = re.findall(r"\b(?:EVT-\d+|[A-Z0-9]+(?:[-._][A-Z0-9]+){2,})\b", value)
+            ids = re.findall(r"\b(?:[A-Z0-9]+(?:[-._][A-Z0-9]+){2,}|EVT-\d+)\b", value)
             parents.extend(ids)
     for x in stable: stable_map[x].append(relpath)
     for x in prod: prod_map[x].append(relpath)
