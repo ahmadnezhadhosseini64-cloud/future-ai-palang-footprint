@@ -3,7 +3,7 @@
 ## 0. شناسنامه، لنگر و وضعیت
 - **Stable ID / شناسهٔ پایدار:** CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001
 - **Production ID / شناسهٔ تولید:** CCCMR-2026-10-21-001
-- **Version / نسخه:** 1.0.2
+- **Version / نسخه:** 1.0.3
 - **Owner / مالک:** Ahmad Nezhadhosseini / احمد پلنگ
 - **Project / پروژه:** Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
 - **Architecture target / هدف معماری:** HAIF — Human–AI Interaction Future (آیندهٔ تعامل انسان و هوش مصنوعی)
@@ -210,4 +210,4 @@
 - Total files: 715; paths containing `0.0`: 95; checkpoint paths: 38; EVT files: 55; paths under Reference Documents: 86; generated Evidence Gate artifacts: 230.
 - Snapshot includes EVT-0050 and EVT-0051, the consolidated master, and cross-index changes. Evidence Gate files are generated artifacts, not architecture source nodes. Counts can change with future commits/workflow runs.
 - Targeted repository read-back verified the presence of the consolidated master identity/version/architecture/gap/next-step sections, the governing master link, the current graph inventory link, the Reference Index row, the Behavior Trace index entry, the Integration Queue pointer, the Open Gaps register pointer, and the 0.0 continuation anchor. The historical graph remains OPEN / PARTIAL.
-- Read-back blob SHA of this master before this update: `8e57b1d14824c736f17bc95c6adb1c7f5e9228e3`; after this update it must be fetched again before claiming final read-back for v1.0.2.
+- The v1.0.2 revision was subsequently fetched; the final read-back of this v1.0.3 revision is recorded in EVT-0051 after the update commit.
