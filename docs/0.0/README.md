@@ -295,3 +295,14 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - **سند مرجع کامل:** [ثبت مبتنی بر شاهد و ممنوعیت گزارش صرف](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/EVIDENCE-FIRST-REGISTRATION-AND-NO-REPORT-ONLY-GOVERNANCE-2026-10-20-001.md)
 - **کاربرد:** فرمان «ثبت کن» مستلزم بررسی واقعی، نوشتن در مقصد در دسترس، بازخوانی، تطبیق، ثبت زمان با منشأ و حفظ شکاف‌هاست؛ متن گزارش جایگزین این مراحل نیست.
 - **وضعیت:** پیوند مخزن افزوده می‌شود؛ این پیوند، هیچ مقصد دیگری را تأیید نمی‌کند. لنگر Dropbox همچنان OPEN / WAITING است.
+
+
+## قرارداد حاکم ثبت مبتنی بر شواهد — EVT-0019 (2026-10-20)
+- **Stable ID:** EVIDENCE-FIRST-NO-EMPTY-REPORT-AND-REGISTER-EXECUTION-PACT-2026-10-20-001
+- **Production ID:** EFNERP-HAIF-2026-10-20-001
+- **Version:** 1.0.0
+- **سند مرجع کامل:** [قرارداد ثبت مبتنی بر شواهد و منع گزارش خالی](../../reference/REFERENCE-DOCUMENTS/EVIDENCE-FIRST-NO-EMPTY-REPORT-AND-REGISTER-EXECUTION-PACT-2026-10-20-001.md)
+- **رویداد ثبت و اثبات:** [EVT-0019](../architecture/BEHAVIOR-TRACE/EVT-0019-EVIDENCE-FIRST-REGISTER-PACT-2026-10-20.md)
+- **لنگر جاری:** [PALANG-0.0-CURRENT-2026-10-20-001](../../checkpoints/PALANG-0.0-CURRENT-2026-10-20-001.md)
+- **قاعده:** ادعای ثبت فقط با شاهد مقصدی؛ زمان دقیق نامعلوم را UNKNOWN / UNVERIFIED نگه دار؛ هیچ نقطهٔ ۰.۰ قبلی را بازنویسی یا نبند؛ گزارش جایگزین ثبت کامل و بازخوانی نیست.
+- **وضعیت:** مقصدهای بیرون از مخزن مستقل تأیید نشده‌اند؛ لنگر Dropbox همچنان OPEN / WAITING است.
