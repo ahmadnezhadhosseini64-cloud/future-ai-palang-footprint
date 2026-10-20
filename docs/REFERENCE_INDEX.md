@@ -59,3 +59,10 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - ممیزی ساختاری `39449959962` و دروازهٔ بین‌لایه‌ای `39449959904` روی commit `ebadb73f6f107555b5054714aefab175d2a519bd` هر دو PASS گزارش شدند.
 - `main.yml` run `39449957651` و `automatic-final-registration-proof.yml` run `39449956059` همچنان failure گزارش می‌شوند؛ علت در شواهد فعلاً در دسترس تعیین نشده و پیگیری باز است.
 - زمان دقیق پیام کاربر `UNKNOWN / UNVERIFIED`؛ زمان workflowها UTC و جداگانه ثبت شده‌اند. Library/Buffer/Persistent Memory و capture سراسری گفتگو اثبات‌نشده‌اند. Dropbox `OPEN / WAITING`.
+
+
+## Behavior trace event — IAAR-2026-10-20-001
+- Event: [EVT-0025 — لنگر تعامل و مسیر رفع نقص‌های ممیزی](architecture/BEHAVIOR-TRACE/EVT-0025-INTERACTION-ANCHOR-AND-AUDIT-REASONING-2026-10-20.md).
+- سند مرجع کامل: [INTERACTION-ANCHOR-AND-AUDIT-REASONING-2026-10-20-001](reference/REFERENCE-DOCUMENTS/INTERACTION-ANCHOR-AND-AUDIT-REASONING-2026-10-20-001.md).
+- صف زنده: [OPEN-GAPS-RECOVERY-REGISTER-2026-10-15-001](architecture/INTEGRATION-QUEUE/OPEN-GAPS-RECOVERY-REGISTER-2026-10-15-001.md).
+- پیگیری باز GitHub: [Issue #18 — علت‌یابی دو workflow شکست‌خورده](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/18).
