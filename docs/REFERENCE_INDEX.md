@@ -267,3 +267,6 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - **H0SAB-2026-10-21-001:** [سند مرجع مادر معماری معنایی گراف تاریخی](reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-SEMANTIC-ARCHITECTURE-BASELINE-2026-10-21-001.md) — ACTIVE / LIVING / GOVERNING; نتیجهٔ ساختاری آخرین snapshot موفق است، اما داوری معنایی 493 فایل، گروه‌های شناسه و برخوردهای EVT همچنان OPEN / PARTIAL است.
 - **EVT-0053:** [ثبت مبنای معماری معنایی و آغاز مرور دسته‌ای](architecture/BEHAVIOR-TRACE/EVT-0053-SEMANTIC-ARCHITECTURE-BASELINE-2026-10-21.md).
 - معیار اصلی: هر رابطهٔ ارتقایافته به معماری باید شاهد مسیر/خط، نقش معنایی، منشأ، بررسی ارجاع‌ها و بازخوانی داشته باشد. تکرار شناسه به‌تنهایی برخورد قطعی نیست.
+
+
+- **H0EVTCA-2026-10-21-001:** [دفتر داوری دسته‌ای برخورد شماره‌های EVT](reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-EVT-NUMBER-COLLISION-ADJUDICATION-2026-10-21-001.md) — شش جفت قدیمی از نظر هویت متمایز طبقه‌بندی شدند؛ اصلاح همهٔ ارجاع‌ها و داوری دو مورد اضافی همچنان باز است.
