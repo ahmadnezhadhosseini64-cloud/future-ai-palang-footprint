@@ -53,3 +53,15 @@ The date is recorded as 2026-10-20. Exact time was not independently captured an
 
 ## Recovery and continuation
 Retrieve this event by Event ID or Stable ID. Fetch the canonical reference and all listed linked files before modifying them. Preserve this Production ID and version lineage. Continue with the still-open destination tests and semantic reconciliation; do not repeat the already-passed repository read-back checks unless a relevant file changes, evidence conflicts, or a new verification is explicitly required. Keep all prior 0.0 anchors independent and preserve the Dropbox anchor as OPEN / WAITING.
+
+
+## Follow-up integration audit — repository read-back
+
+After the initial event record, the governing rule was also linked into the MRV master and central living-reference surfaces. These are additional repository observations, not evidence for external destinations:
+- MRV master `docs/reference/REFERENCE-DOCUMENTS/MRV-ARCHITECTURE-AND-LIVING-REFERENCE-CONTRACT-2026-09-15-001.md`: write commit `ad7cf68ffcbddc600f344ed7d2acbf12ad217ec2`; post-write read-back blob SHA `6d97feb3dc4ccbdda1970139d29497b4ab87a66c`; Stable ID, EVT-0019 link and no-empty-report rule found.
+- Central 0.0 registry `docs/0.0/README.md`: post-write read-back blob SHA `f108304bc38b2991909fbe93b7475b99d179ebb4`; Stable ID, Production ID and event link found.
+- Living registration reference `docs/reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md`: post-write read-back blob SHA `5b7d10bd2069986c6b9ddcfaf5a81cd3bf86db3d`; Stable ID, Production ID and event link found.
+- Final follow-up fetch of the complete reference returned blob SHA `17fd86dfebbee34d3b98cb0ed99522dee42c1e4f`; required identity, no-empty-report, timestamp and recovery sections were present.
+- The governing command binding, integration queue and current 0.0 anchor were fetched again later and still contained the Stable ID and Production ID; their latest observed blob SHAs were respectively `46f60af77a1996ba7b0bc181ae679546befcd4b0`, `48dc370eb7ace0363daeae5322b383e1a76b136e`, and `6b4ccf6fdb3b9fa0eb63bf91eab9f0ecedbe84f9`. These latest versions differ from earlier read-backs because the files changed again; the listed SHAs identify the final versions observed in that follow-up fetch.
+
+**Updated scope of repository integration:** complete reference + event trace + MRV master + governing command binding + living registration reference + integration queue + central 0.0 registry + current 0.0 anchor all contain the new rule identifiers/links as checked by repository fetches. This does not close Library, Buffer, Persistent Memory or Dropbox obligations and does not imply that every unrelated architectural gap has been resolved. Overall status remains `PARTIAL / OPEN`.
