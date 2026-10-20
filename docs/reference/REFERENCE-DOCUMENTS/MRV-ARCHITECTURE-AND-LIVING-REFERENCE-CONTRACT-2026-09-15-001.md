@@ -1098,3 +1098,25 @@ The current repository excavation and reconciliation record is `docs/reference/R
 - Limitation: this does not prove external persistence or automatic capture of every ChatGPT interaction. Those gaps remain open in the recovery queue.
 - Timestamp: exact user-message time UNKNOWN / UNVERIFIED; workflow/commit timestamps are separate event types.
 - User constraint: no Dropbox operation in this verification pass; its independent open anchor remains preserved.
+
+
+## Living addendum — dual timestamp policy (2026-10-20)
+- Stable rule ID: `DUAL-TIMESTAMP-AVAILABILITY-RULE-2026-10-20-001`
+- Production ID: `DTAR-2026-10-20-001`
+- Status: ACTIVE / LIVING / GOVERNING
+- For every governed anchor, important user input/output, registration, verification, and recovery event, record two timestamp fields separately whenever both are available:
+  1. `Assistant/system reference time (UTC)` — exact time from an actually available clock/time source, explicitly labelled with its source and timezone.
+  2. `Tehran local time (Asia/Tehran, UTC+03:30)` — exact time from an actually available Tehran-local time source.
+- If Tehran-local time is unavailable, record `Tehran local time: UNKNOWN / UNAVAILABLE`; preserve the exact available assistant/system timestamp and its timezone; do not estimate Tehran time.
+- If the assistant/system timestamp source is unavailable, record it as `UNKNOWN / UNAVAILABLE`; do not manufacture a clock reading. A time converted from another timestamp must be labelled `converted/derived`, not represented as an independent clock observation.
+- Never substitute commit time, workflow completion time, or file read-back time for the user-message timestamp. User-message time remains `UNKNOWN / UNVERIFIED` unless actually captured.
+- Required sequence: `CAPTURE → LABEL SOURCE/TZ → RECORD BOTH OR MARK UNAVAILABLE → READ-BACK → MATCH → VERIFY`.
+- This rule governs the current IAAR anchor and is inherited by future registrations, architecture events, reference documents, and recovery-queue items. It does not retroactively invent missing timestamps.
+- Implementation timestamp for this rule change: Tehran `2026-10-20 19:23:21 +03:30` from the time source available in this turn. UTC `2026-10-20 15:53:21Z` is the normalized conversion of that same source timestamp, not an independent second clock observation. Exact user-message timestamp remains `UNKNOWN / UNVERIFIED`.
+
+## Living addendum — user-approved dual timestamp rule
+- Inherit `DUAL-TIMESTAMP-AVAILABILITY-RULE-2026-10-20-001` / `DTAR-2026-10-20-001` for every future governed registration.
+- Record exact assistant/system reference time (with source/timezone) and exact Tehran-local time together whenever available.
+- If Tehran-local time is unavailable, retain the exact available assistant/system time and mark Tehran local time `UNKNOWN / UNAVAILABLE`; if a clock source is unavailable, do not invent a timestamp.
+- Distinguish user-message timestamp from registration, commit, workflow and read-back times. Do not backfill missing user-message time.
+- Applied to anchor `IAAR-2026-10-20-001`; event `EVT-0025`; index and recovery queue updated. Status ACTIVE / LIVING / GOVERNING.
