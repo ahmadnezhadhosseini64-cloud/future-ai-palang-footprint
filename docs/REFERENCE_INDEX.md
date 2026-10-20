@@ -134,5 +134,5 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - Stable ID: `INTERACTION-REGISTRATION-AND-GAP-CLOSURE-2026-10-20-001`; Production ID: `IRGC-2026-10-20-001`; Version: 1.0.0.
 - سند مرجع: [ثبت تعامل جاری و ممیزی شکاف‌ها](reference/REFERENCE-DOCUMENTS/INTERACTION-REGISTRATION-AND-GAP-CLOSURE-2026-10-20-001.md).
 - رویداد: [EVT-0032](architecture/BEHAVIOR-TRACE/EVT-0032-INTERACTION-REGISTRATION-AND-GAP-CLOSURE-2026-10-20.md).
-- دامنهٔ قابل‌بستن پس از read-back: ثبت همین تعامل در مخزن و پیوندهای آن. اجرای خودکار سراسری، تطبیق کامل تاریخی ۰.۰، Dropbox، Buffer، Persistent Memory، Library و بازیابی سرتاسری همچنان OPEN / UNVERIFIED هستند.
+- نتیجهٔ read-back: سند، رویداد و چهار نمایهٔ مرتبط بازخوانی شدند و شناسه/پیوند مورد انتظار تطبیق شد؛ شکاف محدود ثبت همین تعامل در مخزن CLOSED / VERIFIED است. اجرای خودکار سراسری، تطبیق کامل تاریخی ۰.۰، Dropbox، Buffer، Persistent Memory، Library و بازیابی سرتاسری همچنان OPEN / UNVERIFIED هستند.
 - زمان دقیق پیام کاربر: UNKNOWN / UNVERIFIED؛ حدس زده نمی‌شود.
