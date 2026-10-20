@@ -192,3 +192,12 @@ On 2026-10-20, the user explicitly approved applying the temporal bracketing rul
 - **زمان این درخواست:** UNKNOWN / UNVERIFIED؛ زمان commit به‌جای زمان پیام استفاده نمی‌شود.
 - **محدودیت:** اگر ابزار/مجوز مخزن در یک نوبت در دسترس نبود، ثبت موفق ادعا نمی‌شود؛ کار باید به‌عنوان باز حفظ شود.
 - **لنگرهای قبلی:** مستقل می‌مانند و با این قاعده جایگزین یا بسته نمی‌شوند.
+
+## قرارداد دائمی لنگر هر ورودی و خروجی
+
+- **Stable ID:** `EVERY-INPUT-OUTPUT-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001`
+- **Production ID:** `EIOACRG-2026-10-20-001`
+- **سند مرجع کامل:** [قرارداد لنگر هر ورودی و خروجی](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/EVERY-INPUT-OUTPUT-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001.md)
+- **قاعدهٔ ادامه:** هر ورودی کاربر و هر خروجی دستیار را به‌عنوان رویداد در زنجیرهٔ تعامل حفظ و به لنگر جاری/رویدادهای مرتبط متصل کن. برای تصمیم، قاعده، اصلاح، اقدام یا خروجی بادوام، سند مرجع کامل بساز یا والد را نسخه‌دار به‌روزرسانی کن. ثبت مخزن را پس از نوشتن بازخوانی و تطبیق بده؛ اگر نشد، رکورد قابل‌کپی و وضعیت واقعی را اعلام کن.
+- **لنگرهای قبلی:** مستقل می‌مانند؛ هیچ لنگری بدون اجازه ادغام یا بسته نمی‌شود.
+- **محدودیت:** این قرارداد به‌تنهایی اثبات‌کنندهٔ ثبت در Library، Buffer، Persistent Memory یا Dropbox نیست.
