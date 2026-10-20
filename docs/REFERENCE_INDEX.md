@@ -128,3 +128,11 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - Open: G-AUTO-02/03/04/05/06/07/08; automatic all-interaction execution and end-to-end recovery remain unproven. Dropbox remains OPEN / WAITING.
 - Repository write/read-back: MATCHED for the canonical audit file. This does not verify Library, Buffer, Persistent Memory, or Dropbox.
 - Exact user-message timestamp: UNKNOWN / UNVERIFIED.
+
+
+## ثبت تعامل جاری و ممیزی شکاف‌ها — 2026-10-20
+- Stable ID: `INTERACTION-REGISTRATION-AND-GAP-CLOSURE-2026-10-20-001`; Production ID: `IRGC-2026-10-20-001`; Version: 1.0.0.
+- سند مرجع: [ثبت تعامل جاری و ممیزی شکاف‌ها](reference/REFERENCE-DOCUMENTS/INTERACTION-REGISTRATION-AND-GAP-CLOSURE-2026-10-20-001.md).
+- رویداد: [EVT-0032](architecture/BEHAVIOR-TRACE/EVT-0032-INTERACTION-REGISTRATION-AND-GAP-CLOSURE-2026-10-20.md).
+- دامنهٔ قابل‌بستن پس از read-back: ثبت همین تعامل در مخزن و پیوندهای آن. اجرای خودکار سراسری، تطبیق کامل تاریخی ۰.۰، Dropbox، Buffer، Persistent Memory، Library و بازیابی سرتاسری همچنان OPEN / UNVERIFIED هستند.
+- زمان دقیق پیام کاربر: UNKNOWN / UNVERIFIED؛ حدس زده نمی‌شود.
