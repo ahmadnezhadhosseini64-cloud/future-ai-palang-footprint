@@ -318,3 +318,12 @@
 - درخواست: اجرای پیش‌فرض ثبت کامل، سند جامع، لنگر، زمان‌گذاری، پیوند معماری و بازخوانی/تطبیق؛ اولویت فعلی با مخزن است.
 - زمان دقیق پیام: UNKNOWN / UNVERIFIED؛ زمان commit جایگزین زمان پیام نیست.
 - پذیرش: بازخوانی رویداد و نمایه‌ها و تطبیق شناسه، محتوا و پیوندها؛ مقصدهای بررسی‌نشده تأییدشده اعلام نشوند.
+
+
+## EVT-0018 — قاعدهٔ ثبت محصور بین دو لنگر زمانی — 2026-10-20
+- Stable ID: TEMPORAL-BRACKETING-AND-BOUNDED-TIMESTAMP-GOVERNANCE-2026-10-20-001
+- Event file: [EVT-0018](./EVT-0018-TEMPORAL-BRACKETING-RULE-2026-10-20.md)
+- Canonical rule: [مرجع جامع حاکم، بخش ۹](../../reference/REFERENCE-DOCUMENTS/PERMANENT-LIVING-EXECUTION-ANCHOR-TIMESTAMP-GOVERNANCE-2026-10-20-001.md)
+- Living reference: [بخش ۲۲](../../reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md)
+- Rule: when exact event time is unknown, use a proven bounded interval between known prior and following anchors; never invent a midpoint or false precision.
+- Exact request time: UNKNOWN / UNVERIFIED; event registration commit time is separate.
