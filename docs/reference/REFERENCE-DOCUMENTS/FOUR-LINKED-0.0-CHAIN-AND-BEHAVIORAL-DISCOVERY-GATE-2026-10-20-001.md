@@ -9,7 +9,7 @@
 - Timezone / منطقهٔ زمانی پروژه: Asia/Tehran (UTC+03:30)
 - Owner / مالک: احمد پلنگ (Ahmad Nezhadhosseini)
 - Project / پروژه: Future AI / Palang Footprint / HAIF
-- Status / وضعیت: Repository registration requested; read-back and registry reconciliation required.
+- Status / وضعیت: Repository write + read-back + content match verified for the reference, event and linked indexes; full historical 0.0 reconciliation and runtime behavioral tests remain OPEN.
 - Origin / منشأ: دستور کاربر برای پیشبرد زنجیرهٔ نقاط ۰.۰ به‌صورت چهارتایی، اتصال نقاط بدون حذف استقلال و اعمال دروازهٔ کشف/اعتبارسنجی پیش از ارتقای یافته‌های رفتاری به معماری.
 - Repository: ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
 - Canonical path: docs/reference/REFERENCE-DOCUMENTS/FOUR-LINKED-0.0-CHAIN-AND-BEHAVIORAL-DISCOVERY-GATE-2026-10-20-001.md
