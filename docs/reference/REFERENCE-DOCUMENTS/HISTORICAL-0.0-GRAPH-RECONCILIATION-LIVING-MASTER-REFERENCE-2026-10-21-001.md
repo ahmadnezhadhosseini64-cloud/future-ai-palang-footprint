@@ -186,3 +186,12 @@ This document can be considered repository-integrated only after the file, index
 - That run scanned 493 source files, checked 938 local Markdown links with zero missing targets, and extracted 38 parent edges with zero unresolved and zero ambiguous edges. It recorded 11 exact-content duplicate groups, 33 Stable ID repeated-occurrence groups, 42 Production ID repeated-occurrence groups and 8 EVT-number collision groups.
 - All changed governance records, indexes, queues and event lineage now point to the same snapshot/alias decision register. Full natural-language semantic equivalence and identity-role classification remain OPEN / ACTIVE.
 - Change log: v1.5.0 refreshes the master continuation pointer and final audit evidence.
+
+
+
+## Addendum v1.6.0 — latest successful full-tree verification
+- Refreshed snapshot: [H0GMS-2026-10-21-001 v1.3.0](./HISTORICAL-0.0-GRAPH-MANIFEST-SNAPSHOT-2026-10-21-001.md), based on Living Architecture Audit run 39510485057, artifact 12304689518, digest `sha256:d414f63926f8a11581f4afbbaa6d1e27fa21695039c6da107960df93b3845f36`.
+- Audited commit: `3c044d338707f43512c4dd3c20e18fd4e44c9760`; audit UTC: `2026-10-20T22:46:19Z`.
+- Result: workflow PASS; 798 total files including generated evidence; 493 source files; 305 generated Evidence Gate files; 940 local Markdown link edges; 0 missing links; 38 declared parent edges; 0 unresolved and 0 ambiguous parent edges; 11 exact-content duplicate groups; 33/42 expanded Stable/Production ID occurrence groups; 8 EVT-number collision groups.
+- Structural graph and declared-parent links pass for this snapshot. Full semantic classification of repeated identifiers and natural-language equivalence remains OPEN / ACTIVE; no automatic identity merging or file deletion is permitted.
+- Change log: v1.6.0 records the latest successful full-tree verification and current snapshot pointer.
