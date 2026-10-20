@@ -37,13 +37,13 @@ PRESERVE → IDENTIFY → FIND PRECEDING ANCHOR → FIND FOLLOWING ANCHOR → PR
 - [دفتر مرکزی ۰.۰](../../0.0/README.md)
 - [لنگر جاری ۰.۰](../../../checkpoints/PALANG-0.0-CURRENT-2026-10-20-001.md)
 
-## وضعیت پس از تکمیل زنجیرهٔ ثبت
-- Canonical reference, section 9: updated and read-back matched; current fetched blob SHA recorded in the execution log.
-- This event file: created and read-back matched; this status section is itself being updated to reflect the completed chain.
-- Living reference, section 22: updated and read-back matched.
-- Behavior trace: EVT-0018 entry present and read-back matched.
-- Central 0.0 registry: EVT-0018 entry present and read-back matched.
-- Current 0.0 anchor: now explicitly links EVT-0018; final read-back of the updated anchor is required before calling this last link verified.
-- Architecture integration queue: explicit EVT-0018 section 22 added; final read-back/match is part of the current verification pass.
-- Exact request timestamp: UNKNOWN / UNVERIFIED. Commit timestamp is a distinct event and must not be substituted.
+## وضعیت ثبت و راستی‌آزمایی
+- Canonical reference: section 9 contains the governing rule; section 9.1 now explicitly links EVT-0018 and recovery destinations. The latest subsection is awaiting the final fetch-and-match pass.
+- Living reference: section 22 contains the temporal bracketing rule and was read back in the preceding audit.
+- Behavior trace: EVT-0018 entry is present and was read back in the preceding audit.
+- Central 0.0 registry: EVT-0018 entry is present and was read back in the preceding audit.
+- Current 0.0 anchor: explicit EVT-0018 link was fetched and matched in the preceding audit; current anchor blob SHA observed: 75bcf926365811e26873069792be8d652cbcd2db.
+- Architecture integration queue: section 22 explicitly indexes EVT-0018 and was fetched and matched in the preceding audit; blob SHA observed: e58c9422ba7711258caec35dcc111746c5dd5908.
+- Exact request timestamp: UNKNOWN / UNVERIFIED. Commit timestamp is distinct and must not be substituted.
 - Buffer, Persistent Memory, Library and Dropbox: NOT VERIFIED by this repository chain. Dropbox failover remains OPEN / WAITING.
+- Final acceptance: fetch the latest canonical reference, this event file, living reference, behavior trace, 0.0 registry, current anchor and queue index; verify IDs, links and temporal rule. Keep any mismatch OPEN / PENDING.
