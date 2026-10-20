@@ -116,3 +116,11 @@
 - Full semantic graph reconciliation: OPEN / PARTIAL.
 - Historical files deleted: 0.
 - External storage destinations verified: none by this operation.
+
+
+
+## Addendum — actual JSON findings and fresh manifest implementation
+- Full JSON artifact from run [39502860923](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39502860923) was retrieved and inspected. The recorded snapshot has 482 source files, 11 exact-content duplicate groups, 13 Stable ID collision groups, 24 Production ID collision groups, 6 EVT-number collision groups, 15 missing local links and 0 decode errors.
+- Complete group-by-group record: [H0GAF-2026-10-21-001](./HISTORICAL-0.0-GRAPH-AUDIT-FINDINGS-2026-10-21-001.md).
+- Manifest builder: [build_historical_graph_manifest.py](../../../scripts/build_historical_graph_manifest.py); workflow integration added. The next run artifact must be retrieved and checked before its execution is called verified.
+- Selected verified relative links were repaired; fresh residual count remains pending. No files were deleted. Alias/canonical selection and semantic review remain OPEN.
