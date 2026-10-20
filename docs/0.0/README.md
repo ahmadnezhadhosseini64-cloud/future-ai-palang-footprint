@@ -442,3 +442,5 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - سند مرجع: [AICPHAE](../reference/REFERENCE-DOCUMENTS/AUTOMATIC-INTERACTION-CONTINUITY-AND-PORTABLE-HAIF-EVOLUTION-MASTER-REFERENCE-2026-10-20-001.md).
 - ورودی: [EVT-0041](../architecture/BEHAVIOR-TRACE/EVT-0041-AUTOMATIC-CONTINUITY-PORTABLE-CHILD-RAHM-MASTER-REQUEST-2026-10-20.md).
 - این لنگر به تاریخچه افزوده می‌شود؛ هیچ لنگر تاریخی جایگزین نمی‌شود. زمان پیام کاربر تأییدنشده و زمان پردازش جدا ثبت شده است.
+
+- لنگر خروجی دستیار: [EVT-0042](../architecture/BEHAVIOR-TRACE/EVT-0042-ASSISTANT-REGISTRATION-AND-CONTINUITY-RULE-2026-10-20.md). این لنگر ادامهٔ زنجیره است و هیچ ۰.۰ قدیمی را جایگزین نمی‌کند.
