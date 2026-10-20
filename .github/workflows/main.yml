@@ -61,16 +61,16 @@ jobs:
           set -euo pipefail
           mkdir -p evidence
           cat > evidence/evidence-gate-latest.txt <<EOF
-Evidence Gate: EXECUTION CONFIRMED
-Repository: ${GITHUB_REPOSITORY}
-Workflow: ${GITHUB_WORKFLOW}
-Run ID: ${GITHUB_RUN_ID}
-Commit: ${GITHUB_SHA}
-Runner: ${RUNNER_NAME}
-Stable Retrieval Core: VERIFIED
-Independent Automated Execution: PROVEN
-Evidence Artifact: GENERATED
-EOF
+          Evidence Gate: EXECUTION CONFIRMED
+          Repository: ${GITHUB_REPOSITORY}
+          Workflow: ${GITHUB_WORKFLOW}
+          Run ID: ${GITHUB_RUN_ID}
+          Commit: ${GITHUB_SHA}
+          Runner: ${RUNNER_NAME}
+          Stable Retrieval Core: VERIFIED
+          Independent Automated Execution: PROVEN
+          Evidence Artifact: GENERATED
+          EOF
 
       - name: Commit durable evidence record
         shell: bash
