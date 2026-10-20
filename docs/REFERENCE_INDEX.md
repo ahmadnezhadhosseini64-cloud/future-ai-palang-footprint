@@ -83,7 +83,7 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - Event: [EVT-0027 — لنگر جامع تعامل و بازیابی دو گردش کاری](architecture/BEHAVIOR-TRACE/EVT-0027-UNIVERSAL-INTERACTION-ANCHOR-AND-WORKFLOW-RECOVERY-2026-10-20.md).
 - اصلاحات workflow روی مخزن ثبت شده‌اند: artifact paths برای ثبت نهایی اصلاح شد (commit `2a3398132ca8e196295d2d61bf7c96d12ce7d84c`) و فیلتر اجرای Evidence Gate گسترش یافت (commit `75f1fff4a42a6fc1465a2164a4d82db30934a95c`).
 - اجرای تاریخی `39449957651` و `39449956059` شکست‌خورده باقی می‌مانند؛ endpointهای job خالی و retry با HTTP 403 رد شد. علت دقیق تاریخی `UNKNOWN / UNVERIFIED`.
-- **Issue #18 CLOSED**؛ نتیجهٔ ثبت‌شده در issue و شواهد تازه روی commit `e794777002503dda66ebd9b8fa110f37ac1e973d` نشان می‌دهند jobهای Evidence/Final Registration موفق بوده‌اند. اجرای workflowهای جدید روی این commit نیز `39458909829`, `39458909821`, `39458909800`, `39458909798`, `39458909943` و `39458909826` با `success` پایان یافتند؛ این امر همچنان به معنی اثبات capture سراسری همه پیام‌های ChatGPT نیست.
+- **Issue #18 CLOSED**؛ نتیجهٔ ثبت‌شده در issue و شواهد تازه روی commit `e794777002503dda66ebd9b8fa110f37ac1e973d` نشان می‌دهند jobهای Evidence/Final Registration موفق بوده‌اند. اجرای workflowهای جدید روی این commit نیز `39459069207`, `39459069274`, `39459069335`, `39459069289`, `39459069488` و `39459069432` با `success` پایان یافتند؛ این امر همچنان به معنی اثبات capture سراسری همه پیام‌های ChatGPT نیست.
 - زمان دقیق پیام کاربر و زمان دقیق ثبت این رخداد در شواهد این نوشتن موجود نیست؛ حدس زده نمی‌شود.
 
 
