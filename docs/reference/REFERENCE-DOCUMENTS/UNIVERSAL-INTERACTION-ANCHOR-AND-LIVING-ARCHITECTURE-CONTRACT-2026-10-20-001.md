@@ -3,7 +3,7 @@
 
 - Stable ID / شناسه پایدار: UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001
 - Production ID / شناسه تولید: UIALAC-2026-10-20-001
-- Version / نسخه: 1.1.0
+- Version / نسخه: 1.2.0
 - Date / تاریخ سند: 2026-10-20
 - Initial creation time / زمان ایجاد اولیه: در شواهد ایجاد اولیه ثبت نشده است. Amendment processing time / زمان پردازش اصلاحیه: 2026-10-20T22:20:19+03:30 (Asia/Tehran); UTC: 2026-10-20T18:50:19Z. User message time for amendment / زمان پیام کاربر برای اصلاحیه: UNKNOWN / UNVERIFIED.
 - Timezone / منطقه زمانی مرجع پروژه: Asia/Tehran (+03:30)
@@ -327,3 +327,14 @@ The overall state is not complete while any required destination is unverified. 
 - Current content blob SHA after amendment: e20c8b6009d119b4aab536f534049db98ef7b00e.
 - The amendment is integrated by reference into docs/REFERENCE_INDEX.md, docs/0.0/README.md, docs/architecture/INTEGRATION-QUEUE/README.md and docs/architecture/BEHAVIOR-TRACE/README.md; all four were re-fetched and expected IDs/status text were present.
 - Global automatic execution and independent storage destinations remain OPEN / UNVERIFIED.
+
+
+## Amendment v1.2.0 — Universal full-registration command and portable HAIF master reference
+- Governing full reference: [URPHA-2026-10-20-001](./UNIVERSAL-REGISTER-AND-PORTABLE-HAIF-ARCHITECTURE-MASTER-REFERENCE-2026-10-20-001.md).
+- User input event: [EVT-0037](../../architecture/BEHAVIOR-TRACE/EVT-0037-UNIVERSAL-REGISTER-AND-PORTABLE-HAIF-REQUEST-2026-10-20.md).
+- The phrase «ثبت کن» means the full registration/documentation/anchoring/timestamping/architecture-linking/read-back/testing/status cycle, not a report-only response.
+- Every material user input and assistant output must be traceable and linked to reference docs, 0.0 anchors, related events and architecture queue. Use a structured event ledger for low-value turns when a separate file adds no retrieval value; do not omit the anchor.
+- The portable architecture target includes Master/Rahm/Child, host capability discovery, evidence vault, controlled promotion, export/import and recovery. Findings remain hypotheses until evidenced and tested.
+- Timestamp fields stay separate: user message time (UNKNOWN / UNVERIFIED if unavailable), assistant processing time, commit/write time, read-back time and test time.
+- Repository registration and scoped read-back do not prove global automatic behavior, Buffer/Persistent Memory/Library/Dropbox persistence, or completed cross-host portability. Those remain separately testable/open.
+- Version history is additive and non-destructive; preserve prior 0.0 anchors and reconcile the historical graph rather than overwriting it.
