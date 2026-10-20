@@ -800,3 +800,8 @@ The queue index and the timestamp case must each be read back after this update.
 
 
 | H0GMS-2026-10-21-001 | ثبت نسخهٔ تأییدشدهٔ manifest گراف و معیارهای ساختاری | STRUCTURAL PASS for audited snapshot; semantic review PARTIAL | طبقه‌بندی معنایی 33 گروه Stable ID و 42 گروه Production ID؛ بازبینی هشت گروه EVT و تصمیم‌های alias | [گزارش snapshot](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-MANIFEST-SNAPSHOT-2026-10-21-001.md); [دفتر alias/lineage](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-CANONICAL-ALIAS-LINEAGE-DECISION-REGISTER-2026-10-21-001.md) |
+
+
+| H0SAB-2026-10-21-001 | تبدیل نتیجهٔ ممیزی ساختاری به معماری پایهٔ معنایی و مرور دسته‌ای 493 فایل منبع | ACTIVE / OPEN-PARTIAL — مبنای حاکم ثبت شد؛ semantic adjudication هنوز انجام‌نشده است و نباید بسته اعلام شود | بررسی شاهددار 11 گروه تکرار محتوا، 33 گروه Stable ID، 42 گروه Production ID، 8 گروه EVT و نقش معنایی همهٔ فایل‌های منبع؛ سپس پیونددهی به معماری و read-back | [سند مرجع مادر معماری معنایی](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-SEMANTIC-ARCHITECTURE-BASELINE-2026-10-21-001.md); [EVT-0053](../BEHAVIOR-TRACE/EVT-0053-SEMANTIC-ARCHITECTURE-BASELINE-2026-10-21.md) |
+
+- قاعدهٔ پذیرش: فقط رابطه‌های دارای مسیر/خط شاهد، دلیل معنایی، lineage و بازخوانی وارد معماری اصلی شوند. موارد مبهم OPEN بمانند؛ فایل تاریخی حذف نشود.
