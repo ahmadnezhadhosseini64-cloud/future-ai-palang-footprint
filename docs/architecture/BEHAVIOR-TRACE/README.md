@@ -133,3 +133,10 @@
 - قرارداد جامع لنگرگذاری با اصلاحیهٔ v1.1.0: [UIALAC](../../reference/REFERENCE-DOCUMENTS/UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001.md).
 - تصمیم: زمان پیام کاربر، زمان پردازش دستیار، زمان نوشتن/commit و زمان بازخوانی فیلدهای جدا هستند؛ زمان نامعلوم با زمان دیگر جایگزین نمی‌شود.
 - زمان پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان پردازش دستیار ثبت‌شده: 2026-10-20T22:20:19+03:30.
+
+
+## EVT-0034 — لنگر خروجی دستیار
+- [رویداد EVT-0034](./EVT-0034-ASSISTANT-EXECUTION-AND-VERIFICATION-REPORT-2026-10-20.md)
+- رویداد ورودی/تصمیم والد: [EVT-0033](./EVT-0033-TWO-TIME-ANCHORING-AND-LIVING-CONTINUITY-2026-10-20.md).
+- سند مرجع تکمیلی: [ثبت دوزمانه و تداوم زنده](../../reference/REFERENCE-DOCUMENTS/TWO-TIME-ANCHORING-AND-LIVING-CONTINUITY-ARCHITECTURE-2026-10-20-001.md).
+- زمان پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان پردازش دستیار: 2026-10-20T22:23:18+03:30.
