@@ -505,3 +505,10 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - آخرین snapshot درختی که در C0GIR ثبت شده: 640 فایل، `truncated=false`، 92 مسیر دارای `0.0`، 38 مسیر checkpoint و 50 فایل EVT. این تعدادها شمارش مسیرند، نه تعداد لنگرهای یکتا.
 - وضعیت گراف: OPEN / PARTIAL؛ محتوا و روابط همهٔ گره‌ها هنوز تطبیق کامل نشده‌اند.
 
+## آخرین snapshot سراسری گراف 2026-10-21
+- مرجع جاری: [C0GIR](../reference/REFERENCE-DOCUMENTS/CANONICAL-0.0-GRAPH-INVENTORY-AND-RECONCILIATION-2026-10-21-001.md).
+- Tree SHA: `19058e7d68a540862c618176c4c5e64109c62c0c`؛ درخت کامل `truncated=false`.
+- تعداد فایل‌های مخزن در snapshot: 653؛ مسیرهای دارای `0.0`: 93؛ مسیرهای checkpoint: 38؛ فایل‌های EVT: 51؛ اسناد مرجع مرتبط با فیلتر نام: 48.
+- این اعداد، شمارش مسیرها در snapshot مشخص‌اند، نه تعداد لنگرهای یکتا. برای گراف canonical، استخراج شناسه‌های درون‌متنی و همهٔ رابطه‌ها همچنان باز است.
+- سند حاکم لنگر/زمان: [PIATGCG](../reference/REFERENCE-DOCUMENTS/PERMANENT-INTERACTION-ANCHORING-TIMESTAMP-GOVERNANCE-AND-CANONICAL-GRAPH-MASTER-REFERENCE-2026-10-21-001.md).
+
