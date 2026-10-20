@@ -6,6 +6,9 @@ on:
       - main
     paths:
       - README.md
+      - docs/**
+      - evidence/**
+      - provenance/**
       - .github/workflows/main.yml
   workflow_dispatch:
 
