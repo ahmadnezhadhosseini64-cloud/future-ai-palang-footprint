@@ -101,6 +101,14 @@ WRITE → READ-BACK → MATCH → VERIFY → RECORD EVIDENCE.
 - Current status update: repository-side structural automation is EXECUTED / VERIFIED for this run. Automatic capture of all ChatGPT interactions, Library, Buffer, provider-level Persistent Memory, Dropbox, and full interruption/recovery acceptance remain OPEN / NOT PROVEN.
 
 
+## 14. Cross-layer failure discovery and remediation
+- On commit `8c2355fd8490e9ddeedf2aedd747f73ba1d75869`, the structural audit passed (run `39448487385`) while the independent Cross-Layer Integrity Gate failed (run `39448487743`). A successful structural audit is not equivalent to a green full architecture.
+- The failed gate log exposed two missing assertions: exact `UNVERIFIED / PENDING` provider-memory boundary in the master 0.0, and the existing XLR production ID missing from `docs/PRODUCTION_REGISTRY.md`.
+- Repairs were committed: master 0.0 now carries the explicit provider-memory status; the production registry now includes `ABV-2026-10-20-001` with `PARTIAL/PENDING` state pending fresh execution evidence.
+- Fresh post-repair workflow results must be read back before changing the gate status. Runs of `main.yml` and `automatic-final-registration-proof.yml` have also failed in this period; causes are not yet independently established and remain open.
+- Exact user-message timestamp: UNKNOWN / UNVERIFIED. Workflow/commit timestamps are not substitutes.
+- Dropbox remains untouched.
+
 ## 13. Follow-up architecture/build verification — 2026-10-20
 - Stable ID: `ARCHITECTURE-BUILD-VERIFICATION-2026-10-20-001`; Production ID: `ABV-2026-10-20-001`.
 - Event evidence: [EVT-0024](../../architecture/BEHAVIOR-TRACE/EVT-0024-ARCHITECTURE-BUILD-VERIFICATION-2026-10-20.md).
