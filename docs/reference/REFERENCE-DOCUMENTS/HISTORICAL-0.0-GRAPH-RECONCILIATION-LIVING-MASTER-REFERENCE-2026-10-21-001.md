@@ -135,7 +135,7 @@ This document can be considered repository-integrated only after the file, index
 
 ## Addendum v1.1.0 — Evidence-based graph audit and edge-manifest implementation (EVT-0051)
 
-- **Related event:** [EVT-0051](../../architecture/BEHAVIOR-TRACE/EVT-0051-CANONICAL-GRAPH-MANIFEST-AND-LINK-REPAIR-2026-10-21.md).
+- **Related event:** [EVT-0051](../../architecture/BEHAVIOR-TRACE/EVT-0052-CANONICAL-GRAPH-MANIFEST-AND-LINK-REPAIR-2026-10-21.md).
 - **Detailed findings register:** [H0GAF-2026-10-21-001](./HISTORICAL-0.0-GRAPH-AUDIT-FINDINGS-2026-10-21-001.md).
 - **Manifest builder:** [scripts/build_historical_graph_manifest.py](../../../scripts/build_historical_graph_manifest.py).
 - **Workflow integration:** [Living Architecture Audit](../../../.github/workflows/living-architecture-audit.yml).
