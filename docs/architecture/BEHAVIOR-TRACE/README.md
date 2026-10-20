@@ -56,3 +56,9 @@
 - **پروندهٔ دروازهٔ اجرایی باز:** [EVERY-INPUT-OUTPUT-ANCHOR-EXECUTION-GATE](../INTEGRATION-QUEUE/EVERY-INPUT-OUTPUT-ANCHOR-EXECUTION-GATE-2026-10-20-001.md)
 - **وضعیت:** ثبت سند/رویداد و پیوندهای مخزنی قابل‌ردیابی‌اند؛ اجرای خودکار سراسری هر پیام هنوز NOT PROVEN / اثبات‌نشده است.
 - **قاعده:** وجود سند یا پیوند، شاهد اجرای خودکار نیست. برای بستن گپ، آزمون واقعی و ردپای مستقل لازم است. زمان دقیق پیام UNKNOWN / UNVERIFIED باقی می‌ماند.
+
+
+## درخواست جدید — فعال و زنده نگه‌داشتن قاعده و آزمون (2026-10-20)
+- **سند مرجع کامل:** [ACTIVE-LIVING-EVERY-INPUT-OUTPUT-ANCHOR-TEST-AND-PERMANENT-OPERATING-RULE](../../reference/REFERENCE-DOCUMENTS/ACTIVE-LIVING-EVERY-INPUT-OUTPUT-ANCHOR-TEST-AND-PERMANENT-OPERATING-RULE-2026-10-20-001.md)
+- **وضعیت:** قاعده ACTIVE / LIVING؛ آزمون OPEN / PENDING EXECUTION PROOF.
+- **محدودیت ادعا:** این پیوند، فعال بودن رویهٔ مستند را نشان می‌دهد، نه اجرای خودکار پس‌زمینه یا قبولی آزمون.
