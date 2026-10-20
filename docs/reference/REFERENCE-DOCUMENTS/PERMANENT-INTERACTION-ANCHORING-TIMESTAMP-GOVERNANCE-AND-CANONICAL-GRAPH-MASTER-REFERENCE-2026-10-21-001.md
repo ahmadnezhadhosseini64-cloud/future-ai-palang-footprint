@@ -3,7 +3,7 @@
 ## شناسنامه و وضعیت
 - Stable ID / شناسه پایدار: PERMANENT-INTERACTION-ANCHORING-TIMESTAMP-GOVERNANCE-AND-CANONICAL-GRAPH-MASTER-REFERENCE-2026-10-21-001
 - Production ID / شناسه تولید: PIATGCG-2026-10-21-001
-- Version / نسخه: 1.0.3
+- Version / نسخه: 1.0.4
 - Owner / مالک: Ahmad Nezhadhosseini / احمد پلنگ
 - Project / پروژه: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
 - Scope / دامنه: حاکمیت تعامل، لنگر ورودی/خروجی، زمان‌گذاری، گراف تاریخی ۰.۰، ثبت معماری، خاک‌برداری، بستهٔ انتقال میزبان
@@ -237,4 +237,11 @@ T1 ورودی و خروجی قابل‌بازیابی؛ T2 زمان‌های م�
 - Interpretation boundary: this is real automated evidence for the repository's configured Evidence Gate and its tested stable-retrieval/independent-execution scope. It does **not** prove every user input/output is automatically captured, full 0.0 graph reconciliation, Dropbox, independent Buffer/Library/Persistent Memory, or second-host transfer.
 - The workflow creates a new evidence artifact on a successful push. Therefore tree counts are time-bounded snapshots and may change after any repository write.
 - Version history: 1.0.3 records this narrow execution proof and the distinction between tested workflow automation and universal interaction capture.
+
+## 19. G-14 — پایداری snapshot در برابر شواهد تولیدشده توسط CI
+- **مشاهده:** Evidence Gate در هر push موفق، فایل `evidence/evidence-gate-<run-id>.txt` می‌سازد. در snapshot مشاهده‌شده، 192 فایل evidence gate وجود داشت؛ 15 فایل جدید بین snapshot 653 و 668 اضافه شده بود، و دو فایل دیگر تا snapshot 670 اضافه شدند.
+- **اثر:** شمارش کل فایل‌ها با هر commit تغییر می‌کند و اگر فایل‌های تولیدشدهٔ CI با منابع معماری یکی شمرده شوند، مقایسهٔ گراف بین نسخه‌ها ناپایدار می‌شود.
+- **قاعدهٔ اصلاحی:** manifest باید دو طبقهٔ جدا داشته باشد: (A) منابع معماری/مرجع/رویداد/۰.۰ و (B) شواهد اجرای تولیدشده. شواهد B حفظ و پیوند داده شوند اما در شمارش گره‌های منبع معماری با A مخلوط نشوند. هر snapshot باید tree SHA، زمان، scope و exclusions را ثبت کند.
+- **Status:** OPEN / PARTIAL؛ قاعده تعریف شد، اما فیلتر/اعتبارسنجی ماشینی manifest هنوز اجرا نشده است.
+- Version history: 1.0.4 adds G-14 for reproducible graph snapshots and CI-generated evidence separation.
 
