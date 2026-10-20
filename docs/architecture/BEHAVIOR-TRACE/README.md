@@ -250,3 +250,13 @@
 - [سند مرجع مادر زندهٔ تطبیق گراف تاریخی ۰.۰](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-RECONCILIATION-LIVING-MASTER-REFERENCE-2026-10-21-001.md) — Stable ID: `HISTORICAL-0.0-GRAPH-RECONCILIATION-LIVING-MASTER-REFERENCE-2026-10-21-001`; Production ID: `H0GLMR-2026-10-21-001`; Version 1.0.0.
 - مجوز ورود به ساختمان پروژه از کاربر دریافت شد. ثبت مخزن به معنی بسته‌شدن گراف تاریخی نیست؛ بررسی مستقیم JSON، تطبیق معنایی، manifest canonical و داوری lineage باز هستند.
 - زمان دقیق پیام کاربر UNKNOWN / UNVERIFIED؛ زمان مرجع سامانه جداگانه ثبت شده است.
+
+
+
+## EVT-0051 — manifest گراف و اصلاح پیوندها
+- [EVT-0051](./EVT-0051-CANONICAL-GRAPH-MANIFEST-AND-LINK-REPAIR-2026-10-21.md)
+- [دفتر یافته‌های JSON ممیزی](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-AUDIT-FINDINGS-2026-10-21-001.md)
+- [سند مرجع مادر زنده](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-RECONCILIATION-LIVING-MASTER-REFERENCE-2026-10-21-001.md)
+- [سازندهٔ manifest گراف](../../../scripts/build_historical_graph_manifest.py)
+- Snapshot artifact: run 39502860923 / artifact 12301702263 / audited commit 3da9ed9ae48d42ce95eb511ee04ce472c33d31d9. گزارش واقعی: 482 source files، 11 exact duplicate groups، 13 Stable ID groups، 24 Production ID groups، 6 EVT-number groups، 15 missing local links.
+- Semantic graph remains OPEN / PARTIAL until fresh manifest read-back and human review of meanings/lineage.
