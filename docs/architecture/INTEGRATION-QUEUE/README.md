@@ -814,3 +814,7 @@ The queue index and the timestamp case must each be read back after this update.
 
 
 - **FAPF-IRA-2026-10-21-001 — ACTIVE / LIVING BLUEPRINT:** [معماری اجرایی قابل پیاده‌سازی](../../reference/REFERENCE-DOCUMENTS/FUTURE-AI-PALANG-FOOTPRINT-IMPLEMENTABLE-REFERENCE-ARCHITECTURE-2026-10-21-001.md). آمادهٔ شروع پیاده‌سازی نسخهٔ نخست؛ اپ کامل هنوز ساخته/مستقر/سرتاسری آزموده نشده است. ممیزی بعدی باید خروجی `historical-0.0-semantic-review-queue.json` را نیز برای داوری همهٔ رخدادهای شناسه تولید کند.
+
+
+- **H0IRAR-2026-10-21-001 — ACTIVE / OPEN-PARTIAL:** [دفتر داوری همهٔ گروه‌های شناسه و روابط](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-IDENTIFIER-AND-RELATION-ADJUDICATION-REGISTER-2026-10-21-001.md). ممیزی تازه 39517339104 موفق است؛ 37 گروه Stable ID، 43 گروه Production ID، 8 گروه EVT و 11 گروه محتوای یکسان در صف داوری‌اند. دو گروه Stable ID و شش جفت EVT تصمیم معنایی محدود دارند؛ ارجاع‌های ورودی/خروجی و باقی گروه‌ها بازند.
+- **H0SRQS-2026-10-21-001:** [شاهد اجرای تازه](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-SEMANTIC-REVIEW-QUEUE-SNAPSHOT-2026-10-21-001.md).
