@@ -46,3 +46,6 @@ All seven content checks passed. The index update commit was observed with GitHu
 
 **Scoped status:** Repository write + read-back + expected-ID/link/status checks = VERIFIED for the seven files above. **Not verified:** complete historical 0.0 inventory; Buffer/Library/Persistent Memory/Dropbox; runtime-wide automatic execution; end-to-end recovery; host-to-host transfer; execution of all acceptance tests. G-01 through G-10 remain open/partial according to their stated criteria.
 
+## Addendum — direct 0.0 inventory
+The repository directory listings were inspected for `checkpoints/` and `docs/0.0/`; all 12 files under `checkpoints/` and all 4 non-README files under `docs/0.0/` were fetched and content-inspected. The 0.0 README now links these 16 files with a bounded role/status summary. This is a verified direct-directory inventory, not a complete repository-wide 0.0 graph. G-01 remains OPEN / PARTIAL pending reconciliation of all in-file IDs, reference-document pointers, behavior events, parent/child lineage, duplicates and orphan nodes.
+
