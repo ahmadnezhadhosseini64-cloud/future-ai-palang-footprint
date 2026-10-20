@@ -1,4 +1,370 @@
-[object Object]
+# دفتر زندهٔ ردیابی رفتار تعامل — انسان و آیندهٔ AI
+
+## شناسنامه
+- عنوان: دفتر ردیابی رفتار تعامل؛ گام‌های پیوستهٔ انسان و AI
+- Stable ID (شناسهٔ پایدار): `INTERACTION-BEHAVIOR-TRACE-HUMAN-AI-2026-10-19-001`
+- Production ID (شناسهٔ تولید): `IBT-HAIF-2026-10-19-001`
+- Version (نسخه): 1.0.1
+- Record Date (تاریخ ثبت): 2026-10-19
+- Exact time (زمان دقیق): در شاهد مستقل این رکورد ثبت نشده؛ حدس زده نمی‌شود.
+- Timezone (منطقهٔ زمانی): Asia/Tehran (UTC+03:30)
+- Owner: احمد نژادحسینی / احمد پلنگ
+- Project: Future AI / Palang Footprint / HAIF
+- Canonical path: `docs/architecture/BEHAVIOR-TRACE/INTERACTION-BEHAVIOR-TRACE-2026-10-19-001.md`
+- Related reference: `docs/reference/REFERENCE-DOCUMENTS/INITIAL-NAVIGATION-SOLUTION-HUMAN-AI-INTERACTION-2026-10-19-001.md`
+- Origin: درخواست صریح کاربر برای رفتارشناسی پیوستهٔ رفتار قابل مشاهدهٔ هر دو طرف، ثبت قدم‌ها پشت سر هم و مستندسازی کامل.
+- Status: این دفتر برای نگهداری زنجیرهٔ تعامل طراحی شده است؛ وضعیت هر مقصد فقط با شاهد همان مقصد تأیید می‌شود.
+
+## 1. هدف و مرز
+این دفتر، گام‌های قابل مشاهدهٔ تعامل انسان و AI را به‌صورت پیوسته و قابل بازیابی ثبت می‌کند: چه درخواست یا تصمیمی مطرح شد، هر طرف چه کرد، چه تغییری رخ داد، چه شاهدی وجود دارد، چه چیزی باز است و گام بعدی چیست.
+
+«رفتارشناسی» در این پروژه یعنی توصیف رفتار و اقدام قابل مشاهده در گفتگو و کار؛ نه تشخیص روان‌شناختی/پزشکی، نه نسبت‌دادن نیت پنهان و نه ادعای شناخت شخصیت از روی پیام‌ها. استنباط باید از واقعیت جدا و با برچسب «تحلیل» ثبت شود. فرایند ذهنی پنهان یا زنجیرهٔ استدلال خصوصی ادعا نمی‌شود؛ فقط تصمیم عملیاتی قابل توضیح، اقدام و شواهد ثبت می‌شوند.
+
+## 2. جریان انسان — جداگانه
+برای هر رویداد مرتبط، این موارد ثبت شود:
+- هدف و مسئله‌ای که صریحاً بیان شده؛
+- فرمان، تصمیم، قاعده یا محدودیت اعلام‌شده؛
+- انتخاب یا ارجاع به نقطهٔ ۰.۰؛
+- بازبینی، اصلاح، اعتراض، تأیید، توقف یا ازسرگیری؛
+- معیار موفقیت و اقدام بعدی.
+نیت، حالت روانی یا ویژگی شخصیتی پنهان به کاربر نسبت داده نشود. خوداظهاری کاربر، در صورت وجود، به‌عنوان گفتهٔ او مشخص شود.
+
+## 3. جریان AI — جداگانه
+برای هر پاسخ یا اقدام دستیار، این موارد ثبت شود:
+- هدفی که از درخواست فهمیده شد؛
+- سابقه و شواهد بازیابی‌شده؛
+- تصمیم عملیاتی و دلیل قابل توضیح؛
+- اقدام واقعی، مقصد و نتیجه؛
+- جداسازی واقعیت، تحلیل، پیشنهاد و مجهول؛
+- ادعاهای پاسخ و شاهد آن‌ها؛
+- خطا، اصلاح، محدودیت، اقدام بعدی و وضعیت باز.
+قصد انجام کار، انجام واقعی نیست؛ ادعای ثبت باید به نتیجهٔ ابزار و بازخوانی متصل باشد.
+
+## 4. پروتکل هر رفت‌وبرگشت
+`CAPTURE → CLASSIFY → LINK → ANALYZE HUMAN → ANALYZE AI → RECORD ACTION → PRESERVE EVIDENCE → READ-BACK → MATCH → VERIFY → NEXT STEP`
+
+معنا: ثبت رویداد → طبقه‌بندی → پیوند به سابقه → توصیف حرکت انسان → توصیف حرکت AI → ثبت اقدام → حفظ شاهد → بازخوانی → تطبیق → تأیید → گام بعدی.
+
+1. رویدادها به ترتیب اضافه شوند؛ شناسهٔ قبلی بی‌صدا بازنویسی نشود.
+2. پیام کاربر و پاسخ دستیار جدا بمانند.
+3. هر رویداد به هدف، نقطهٔ ۰.۰ یا سند مربوط پیوند داده شود.
+4. واقعیت مشاهده‌شده، تحلیل محتاطانه و مجهول جدا شوند.
+5. تاریخ/زمان پیام، زمان اقدام، زمان commit و زمان بازخوانی با منشأ جدا ثبت شوند. زمان نامعلوم حدس زده نشود.
+6. پس از نوشتن، همان مقصد بازخوانی و محتوای مورد انتظار تطبیق داده شود.
+7. موانع، گام تأییدشده و اقدام بعدی حفظ شوند.
+8. وضعیت هر مقصد جداگانه اعلام شود.
+
+## 5. قالب هر رویداد
+- Event ID (شناسهٔ رویداد) و شمارهٔ ترتیبی؛
+- پیام/اقدام مبدأ و پیوند به سابقه؛
+- تاریخ و زمان با منطقهٔ زمانی و منشأ زمان؛
+- رفتار مشاهده‌شدهٔ انسان؛
+- رفتار مشاهده‌شدهٔ AI؛
+- هدف و ارتباط با ۰.۰؛
+- اقدام واقعی و مقصد؛
+- شواهد، نتیجهٔ بازخوانی و اختلاف‌ها؛
+- وضعیت و مانع؛
+- گام بعدی و مسیر بازیابی.
+پیام سادهٔ سلام یا تأیید کوتاه می‌تواند به‌صورت کم‌حجم در زنجیره ثبت شود؛ برای هر جمله تحلیل ساختگی تولید نشود. تصمیم‌های حاکمیتی، خطاها، تغییر معماری و ثبت‌های واقعی ورودی مستقل می‌گیرند.
+
+## 6. حفاظت از زنجیره
+- دفتر تا حد امکان الحاقی است: ورودی قبلی حذف یا بازنویسی بی‌صدا نشود؛ اصلاح با نسخه و پیوند ثبت شود.
+- اصل پیام/سند از تحلیل دستیار جدا بماند.
+- اطلاعات حساس غیرضروری دوباره منتشر نشود.
+- `WRITE ≠ READ-BACK ≠ MATCH ≠ VERIFY`؛ نوشتن، بازخوانی، تطبیق و تأیید مراحل جدا هستند.
+- ثبت در مخزن، ثبت در بافر، کتابخانه، Dropbox یا حافظهٔ پایدار را ثابت نمی‌کند.
+- توقف گفتگو، پایان پروژه نیست.
+- گذشتهٔ غیرقابل‌بازیابی فقط با شواهد تکمیل می‌شود؛ ادعای بررسی همهٔ گفتگوهای تاریخی بدون شاهد ممنوع است.
+
+## 7. رویداد آغازین
+### EVT-0001 — درخواست رفتارشناسی پیوسته
+- تاریخ: 2026-10-19.
+- زمان دقیق پیام: در شاهد مستقل این رکورد موجود نیست؛ حدس زده نمی‌شود.
+- حرکت انسان: پس از تأیید «راه‌حل پیمایش اولیه»، کاربر دامنه را گسترش داد تا همهٔ رفت‌وبرگشت‌ها، خروجی‌ها و قدم‌های هر دو طرف به‌صورت پیوسته تحلیل و مستند شوند.
+- حرکت AI: درخواست باید به پروتکل قابل بازیابی تبدیل شود؛ جریان انسان و AI جدا شود؛ رویدادها به نقطهٔ ۰.۰ و معماری پیوند بخورند؛ شواهد و وضعیت هر مقصد بررسی شوند.
+- هدف: تداوم رفتاری و عملیاتی قابل بررسی، نه نگهداری پاسخ‌های منفرد.
+- محدودیت: تمام گفتگوهای قدیمی خارج از دسترس را نمی‌توان با حدس بازسازی کرد؛ هر خلأ تاریخی باز می‌ماند تا شواهد پیدا شود.
+- اقدام بعدی: افزودن قاعده به سند راه‌حل پیمایش، پرونده و نمایهٔ صف، دفتر ۰.۰ و سند مادر؛ سپس بازخوانی آن‌ها.
+
+## 8. مقصدها و ادامه
+- مخزن: پس از ایجاد، فایل و مسیر باید بازخوانی شوند.
+- بافر، کتابخانه و حافظهٔ پایدار: فقط با شاهد مستقل قابل تأییدند.
+- Dropbox: بیرون از دامنهٔ این ثبت؛ نقطهٔ ادامهٔ آن جداگانه باز می‌ماند.
+در مراجعهٔ بعدی، ابتدا این دفتر و سند «راه‌حل پیمایش اولیه» را بازخوانی کن؛ آخرین Event ID، آخرین گام تأییدشده و اقدام بعدی را بیاب؛ سپس رویداد تازه را به انتهای دفتر بیفزا.
+
+## اصل نهایی
+انسان هدف و معنای کار را تعیین می‌کند؛ AI رفتار و اقدام قابل مشاهدهٔ خود، شواهد، خطاها و محدودیت‌ها را مستند می‌کند. دو مسیر جدا ثبت می‌شوند و با شناسه، زمان، منشأ و نقاط کنترل به هم متصل می‌مانند. هیچ اقدام مهمی بدون منشأ، هیچ ادعای ثبت بدون شاهد و هیچ نقطهٔ باز بدون مسیر ادامه رها نشود.
+
+## 9. قاعدهٔ اولیهٔ رفتارشناسی — EVT-0003
+### EVT-0003 — نام‌گذاری قاعدهٔ رفتاری شناخت انسان و AI
+- تاریخ: 2026-10-19؛ زمان دقیق ثبت در شاهد مستقل تأیید نشده و حدس زده نمی‌شود.
+- حرکت انسان: کاربر خواست الگوی ردیابی رفتارِ هر دو طرف با نام «قاعدهٔ رفتاری شناخت انسان و AI» ثبت شود و به‌عنوان یکی از قواعد اولیهٔ رفتار در تعامل‌های بعدی اجرا شود.
+- حرکت AI: قاعده به‌صورت سند مستقل در مخزن ایجاد شد؛ سپس همین دفتر و اسناد وابسته باید با پیوند به قاعده به‌روزرسانی و بازخوانی شوند.
+- Stable ID قاعده: `HUMAN-AI-BEHAVIOR-RECOGNITION-RULE-2026-10-19-001`.
+- مسیر قاعده: `docs/architecture/BEHAVIOR-TRACE/HUMAN-AI-BEHAVIOR-RECOGNITION-RULE-2026-10-19-001.md`.
+- مرز تحلیل: فقط رفتار قابل مشاهده و اقدام مستند؛ نه تشخیص روان‌شناختی، نسبت‌دادن نیت پنهان یا ادعای دسترسی به استدلال خصوصی.
+- وضعیت: قاعده در مخزن ایجاد و فایل مستقل بازخوانی شد؛ همگام‌سازی این دفتر و دیگر پیوندهای معماری پس از هر نوشتن باید جداگانه بازخوانی شود. بافر، کتابخانه و حافظهٔ پایدار مستقل تأیید نشده‌اند.
+- اقدام بعدی: پیوند قاعده در نمایه، راه‌حل پیمایش اولیه، پروندهٔ صف، نمایهٔ ۰.۰ و سند مادر درج و هر مقصد از مخزن بازخوانی شود.
+
+
+
+## 9. قاعدهٔ اولیهٔ رفتاری حاکم بر ادامهٔ تعامل
+- نام: «قاعدهٔ رفتاری شناخت انسان و AI».
+- شناسه: `HUMAN-AI-BEHAVIOR-RECOGNITION-RULE-2026-10-19-001`؛ نسخهٔ 1.0.1.
+- سند قاعده: [قاعدهٔ رفتاری شناخت انسان و AI](./HUMAN-AI-BEHAVIOR-RECOGNITION-RULE-2026-10-19-001.md).
+- جایگاه: یکی از قواعد اولیهٔ تعامل‌های بعدی؛ رفتار قابل مشاهدهٔ انسان و AI جداگانه اما مرتبط، به‌صورت پیوسته ثبت شود.
+- این پیوند، ادغام مستقیم در سند مرجع مادر یا ثبت در مقصدهای بیرونی را اثبات نمی‌کند.
+
+
+## 10. EVT-0004 — یکپارچه‌سازی لنگر خروجی، ثبت و مستندسازی
+- تاریخ: 2026-10-19؛ زمان دقیق پیام/اقدام در شاهد مستقل موجود نیست و حدس زده نمی‌شود.
+- مسیر انسان: کاربر خواست هر خروجی لنگر قابل‌بازیابی داشته باشد و قواعد «ثبت کن»، مستندسازی، زمان‌گذاری و رفتارشناسی هم‌پوشان یک قاعدهٔ واحد باشند.
+- مسیر AI: سند قاعده به نسخهٔ 1.1.0 ارتقا یافت؛ قاعدهٔ لنگر خروجی و چرخهٔ مشترک به آن افزوده شد؛ سند از مخزن بازخوانی و نسخه و بندهای افزوده‌شده بررسی شدند.
+- شاهد: قاعدهٔ مستقل [HUMAN-AI-BEHAVIOR-RECOGNITION-RULE-2026-10-19-001](./HUMAN-AI-BEHAVIOR-RECOGNITION-RULE-2026-10-19-001.md)، blob SHA پس از بازخوانی: b045cae8af096e1abdcf2a5dc8da6ec881a87304.
+- رکورد مستقل رویداد: [EVT-0004](./EVT-0004-UNIFIED-OUTPUT-ANCHOR-REGISTRATION-RULE-2026-10-19.md).
+- وضعیت: سند قاعده و رکورد EVT-0004 در مخزن بازخوانی شدند؛ سایر مقصدها مستقل تأیید نشده‌اند.
+- گام بعدی: نمایه‌ها را به‌روز و بازخوانی کن؛ در تعامل‌های بعدی برای هر خروجی لنگر بساز و در هر «ثبت کن» چرخهٔ واحد را به‌کار ببر.
+
+
+## 11. قاعدهٔ حاکم برای هر خروجی
+هر خروجی لنگر قابل‌بازیابی دارد؛ «ثبت کن»، مستندسازی، زمان‌گذاری و رفتارشناسی یک چرخهٔ واحدند. برای جزئیات حاکم به سند قاعدهٔ رفتاری شناخت انسان و AI نسخهٔ 1.1.0 و رویداد EVT-0004 مراجعه کن.
+## EVT-0005 — ثبت سند مرجع چرخهٔ یکپارچهٔ لنگر خروجی، ثبت و مستندسازی
+- **Event Anchor:** `EVT-0005-REGISTER-UNIFIED-OUTPUT-ANCHOR-CYCLE-2026-10-19`
+- **Reference ID:** `UNIFIED-OUTPUT-ANCHOR-REGISTRATION-CYCLE-2026-10-19-001`, Version 1.0.0.
+- **Reference Path:** `docs/reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-CYCLE-2026-10-19-001.md`
+- **Event Record:** `docs/architecture/BEHAVIOR-TRACE/EVT-0005-REGISTER-UNIFIED-OUTPUT-ANCHOR-CYCLE-2026-10-19.md`
+- **درخواست کاربر:** ثبت چرخه به‌عنوان سند مرجع کامل، مستندسازی، ثبت زمانی، قرار دادن در مخزن و فعال/زنده کردن.
+- **زمان:** تاریخ 2026-10-19؛ زمان دقیق پیام و اقدام مستقل ثبت نشده است و حدس زده نمی‌شود. زمان commit باید از فرادادهٔ واقعی همان commit خوانده شود.
+- **وضعیت:** سند مرجع از مخزن بازخوانی شد. پیوندهای معماری پس از به‌روزرسانی باید جداگانه بازخوانی شوند. بافر، کتابخانه و حافظهٔ پایدار تأیید نشده‌اند؛ Dropbox در این رویداد آزمایش نشده است.
+- **ادامه:** بازخوانی و تطبیق هر فایل تغییرکرده؛ سپس پیگیری مقصدهای بیرونی و شکاف‌های باز بدون بستن ساختگی.
+
+
+
+## 12. EVT-0005 — ثبت سند مرجع چرخهٔ یکپارچهٔ لنگر خروجی
+- **Event Anchor:** [EVT-0005](./EVT-0005-REGISTER-UNIFIED-OUTPUT-ANCHOR-CYCLE-2026-10-19.md).
+- **سند مرجع حاکم:** [UNIFIED-OUTPUT-ANCHOR-REGISTRATION-CYCLE-2026-10-19-001](../../reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-CYCLE-2026-10-19-001.md)، نسخهٔ 1.0.0.
+- **درخواست انسان:** ساخت سند مرجع کامل برای چرخه، ثبت کامل و زمانی، مستندسازی، قراردادن در مخزن و فعال/زنده‌کردن آن.
+- **اقدام AI که واقعاً اجرا شد:** سند مرجع ایجاد شد؛ سپس به سند مادر، نمایهٔ رفتار، صف یکپارچه‌سازی معماری و دفتر ۰.۰ پیوند خورد؛ فایل‌ها پس از نوشتن بازخوانی و شناسهٔ چرخه در هر مسیر بررسی شد.
+- **زمان ثبت اولیه در مخزن:** `2026-10-19T08:23:03Z` = `2026-10-19 11:53:03` Asia/Tehran، برگرفته از فرادادهٔ commit ایجاد سند؛ این زمان، زمان پیام کاربر نیست.
+- **آخرین commit به‌روزرسانی سند مرجع:** `8d4b47ef41eb21ca73222c5ebedc49b6b0d47119`؛ زمان `2026-10-19T08:24:50Z` = `11:54:50` Asia/Tehran.
+- **Blob SHA نهایی سند مرجع پس از بازخوانی:** `d72e608838be0d9a91a5ed9bc2e8fa0b2bccdeb3`.
+- **وضعیت مخزن:** سند مرجع و پیوندهای سند مادر، نمایهٔ رفتار، صف معماری و دفتر ۰.۰ بازخوانی شدند؛ شناسهٔ سند در هر مسیر یافت شد.
+- **محدودیت مقصدها:** Buffer، Library، Persistent Memory و Dropbox در این عملیات مستقل نوشته/بازخوانی/آزموده نشدند و PENDING / UNVERIFIED باقی می‌مانند.
+- **گام بعدی:** در مراجعهٔ بعدی از سند مرجع و این لنگر ادامه بده؛ آزمون مستقل مقصدهای بیرونی و لنگر باز Dropbox را بدون بستن ساختگی پیگیری کن.
+
+
+## EVT-0005 — ثبت سند مرجع زندهٔ چرخهٔ یکپارچه
+- Event: [EVT-0005](./EVT-0005-UNIFIED-OUTPUT-ANCHOR-LIVING-REFERENCE-REGISTRATION-2026-10-19.md)
+- Canonical reference: [سند مرجع زندهٔ چرخهٔ لنگر خروجی، ثبت، مستندسازی و بازیابی](../../reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md)
+- User observable action: درخواست صریح برای ثبت کامل چرخه، مستندسازی، ثبت زمانی، قرار دادن در مخزن و زنده‌سازی مرجع.
+- AI observable action: ایجاد سند کامل، نوشتن در مخزن، بازخوانی، بررسی محتوایی و اتصال به نمایهٔ رفتار، سند مادر، صف معماری و دفتر ۰.۰.
+- Repository evidence: سند canonical بازخوانی شد؛ blob SHA نهایی `fe4c4f3c3b5b32f6b5d1119178647ae446489a73`. رویداد EVT-0005 و نمایه‌های پیونددهنده نیز پس از نوشتن بازخوانی شدند.
+- Exact interaction/action time: UNKNOWN/UNVERIFIED؛ زمان حدس زده نمی‌شود.
+- Destination status: Repository registered/read-back content-checked; Buffer, Library and Persistent Memory independently unverified; Dropbox not tested in this event.
+- Next action: مقصدهای مستقل را فقط با شاهد مستقیم به‌روزرسانی کن؛ از سند canonical و EVT-0005 ادامه بده و لنگرهای قبلی ۰.۰ را حفظ کن.
+
+
+## EVT-0006 — الگوی رفتاری زندهٔ ادامهٔ کار
+- **Event:** [EVT-0006](./EVT-0006-LIVE-BEHAVIORAL-CONTINUATION-PATTERN-2026-10-19.md)
+- **Stable ID:** `LIVE-BEHAVIORAL-CONTINUATION-PATTERN-2026-10-19-001`
+- **سند مرجع canonical:** [الگوی رفتاری زندهٔ ادامهٔ کار](../../reference/REFERENCE-DOCUMENTS/LIVE-BEHAVIORAL-CONTINUATION-PATTERN-2026-10-19-001.md)
+- **مسیر انسان:** درخواست کرد نقاط ۰.۰ و مسیر رفتاری از ثبت‌های قبلی بررسی شوند؛ سپس خواست همین الگو زنده، دائمی و باز بماند.
+- **مسیر AI:** اسناد موجود مخزن بازیابی شدند؛ سند مرجع الگوی ادامه و رویداد EVT-0006 ایجاد شدند؛ اشاره‌گر به دفتر ۰.۰ افزوده شد.
+- **قاعدهٔ ادامه:** ۰.۰های مستقل را حفظ کن؛ آخرین وضعیت معتبر را جدا پیدا کن؛ مسیر قابل مشاهدهٔ انسان و AI را ثبت کن؛ قواعد هم‌پوشان را به چرخهٔ حاکم ارجاع بده؛ مقصدها را جداگانه اثبات کن.
+- **وضعیت مقصدها:** مخزن پس از نوشتن/بازخوانی و بررسی محتوایی گزارش می‌شود؛ Buffer، Library و Persistent Memory مستقل تأیید نشده‌اند؛ Dropbox در این رویداد آزمایش نشده و لنگر آن باز است.
+- **زمان دقیق:** UNKNOWN / UNVERIFIED؛ حدس زده نمی‌شود.
+
+
+## 13. EVT-0007 — لنگر هر خروجی و تعیین ۰.۰ فقط توسط کاربر
+- **Event:** [EVT-0007](./EVT-0007-OUTPUT-ANCHOR-AND-USER-DEFINED-0.0-GOVERNANCE-2026-10-19.md).
+- **Stable ID:** `OUTPUT-ANCHOR-AND-USER-DEFINED-0.0-GOVERNANCE-2026-10-19-001`.
+- **سند مرجع حاکم:** [لنگر هر خروجی و تعیین ۰.۰ فقط توسط کاربر](../../reference/REFERENCE-DOCUMENTS/OUTPUT-ANCHOR-AND-USER-DEFINED-0.0-GOVERNANCE-2026-10-19-001.md).
+- **زمان دقیق پیام:** UNKNOWN / UNVERIFIED؛ حدس زده نمی‌شود. زمان commit و read-back باید جداگانه از شاهد واقعی استخراج شوند.
+- **مسیر انسان:** کاربر صریحاً خواست ثبت واقعی و سند مرجع کامل جای گزارش صرف را بگیرد؛ هر خروجی مهم لنگر و مسیر مستند داشته باشد؛ رفتارشناسی و دسته‌بندی تعامل از منشأ مشخص باشد؛ و فقط نقاطی که خودش تعیین می‌کند ۰.۰ باشند.
+- **مسیر AI:** سند مرجع مستقل ایجاد شد و این رویداد و پیوندهای مرتبط به‌عنوان مسیر قابل بازیابی ثبت می‌شوند. وضعیت هر فایل فقط پس از بازخوانی و تطبیق همان فایل تأیید می‌شود.
+- **قاعده:** لنگر خروجی ≠ نقطهٔ ۰.۰؛ فقط تعیین صریح کاربر ۰.۰ ایجاد می‌کند. برای خروجی مهم، لنگر/رویداد، منشأ، نسخه، وضعیت، مسیر بازخوانی و پیوند معماری حفظ شود.
+- **پیوندهای معماری:** سند الگوی رفتاری زنده، سند مرجع حاکم لنگر خروجی، دفتر رفتار و دفتر ۰.۰.
+- **محدودیت:** ایجاد در مخزن، بافر/کتابخانه/حافظهٔ پایدار/Dropbox را اثبات نمی‌کند. لنگر Dropbox مستقل OPEN / WAITING باقی می‌ماند.
+- **اقدام بعدی:** بازخوانی تمام فایل‌های تغییرکرده، ثبت شاهد commit/blob و تطبیق محتوایی؛ مقصدهای بیرونی تا اثبات مستقل باز بمانند.
+
+
+## 14. EVT-0008 — کاربر نقطهٔ جاری را به‌عنوان ۰.۰ تعیین کرد
+- **Event:** [EVT-0008](./EVT-0008-USER-DEFINED-0.0-COMPLETE-REGISTRATION-2026-10-19.md).
+- **Anchor ID:** `OUTPUT-ANCHOR-GOVERNANCE-COMPLETE-REGISTRATION-0.0-2026-10-19-001`.
+- **پروندهٔ ۰.۰:** [OUTPUT-ANCHOR-GOVERNANCE-COMPLETE-REGISTRATION-0.0-2026-10-19-001](../../0.0/OUTPUT-ANCHOR-GOVERNANCE-COMPLETE-REGISTRATION-0.0-2026-10-19-001.md).
+- **سند مرجع حاکم:** [OUTPUT-ANCHOR-AND-USER-DEFINED-0.0-GOVERNANCE-2026-10-19-001](../../reference/REFERENCE-DOCUMENTS/OUTPUT-ANCHOR-AND-USER-DEFINED-0.0-GOVERNANCE-2026-10-19-001.md).
+- **مسیر انسان:** کاربر خواست این قاعدهٔ زنده، فعال و دائمی مبنای همهٔ خروجی‌های مهم باشد و صریحاً همین نقطه را ۰.۰ تعیین کرد.
+- **مسیر AI:** پروندهٔ مستقل ۰.۰ و EVT-0008 ساخته شدند؛ پیوندها به دفتر ۰.۰، سند حاکم و الگوی زنده افزوده می‌شوند؛ بازخوانی نهایی لازم است.
+- **زمان پیام کاربر:** UNKNOWN / UNVERIFIED؛ زمان ثبت و بازخوانی جداگانه از شواهد استخراج شود.
+- **مقصدها:** مخزن پس از بازخوانی نهایی؛ بافر/کتابخانه/حافظهٔ پایدار مستقل تأیید نشده؛ Dropbox جدا و OPEN / WAITING.
+- **قاعده:** این نقطه ۰.۰ است چون کاربر صریحاً تعیین کرده؛ هیچ لنگر خروجی دیگری خودسرانه ۰.۰ نمی‌شود.
+
+
+## 15. EVT-0009 — زنجیرهٔ لنگر خروجی‌ها و ثبت زمانی نقاط ۰.۰
+- **Event:** [EVT-0009](./EVT-0009-OUTPUT-ANCHOR-CHAIN-TIMESTAMP-GOVERNANCE-2026-10-19.md).
+- **Stable ID:** `OUTPUT-ANCHOR-CHAIN-TIMESTAMP-GOVERNANCE-2026-10-19-001`.
+- **سند مرجع canonical:** [چرخهٔ یکپارچهٔ لنگر خروجی و ثبت زمانی](../../reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md)، بخش 14.
+- **مسیر انسان:** کاربر خواست زنجیرهٔ لنگرهای هر خروجی، زمان‌گذاری نقاط ۰.۰، مستندسازی کامل و گام‌های ادامه از این پس به‌صورت یک قاعدهٔ دائمی و قابل‌بازیابی ثبت شود.
+- **مسیر AI:** قاعده به سند canonical موجود افزوده شد و EVT-0009 ساخته شد؛ پیوندها به دفتر ۰.۰ و پروندهٔ فعال اضافه می‌شوند؛ هر فایل تغییرکرده باید بازخوانی و تطبیق شود.
+- **زمان پیام کاربر:** UNKNOWN / UNVERIFIED؛ حدس زده نمی‌شود. زمان commit، بازخوانی و تأیید مستقل ثبت می‌شوند.
+- **وضعیت مقصدها:** مخزن تا بازخوانی نهایی هر فایل؛ بافر/کتابخانه/حافظهٔ پایدار تأییدنشده؛ Dropbox آزمایش‌نشده و لنگر مستقل آن OPEN / WAITING.
+- **قاعده:** هر خروجی مهم لنگر و سند/ارجاع قابل‌بازیابی می‌گیرد؛ ۰.۰ فقط با تعیین صریح کاربر ساخته می‌شود؛ زمان‌های مختلف با منشأ جدا ثبت می‌شوند.
+
+
+## 16. EVT-0010 — نقطهٔ ۰.۰ برای پایان موقت نشست
+- **Event:** [EVT-0010](./EVT-0010-USER-DEFINED-0.0-SESSION-CLOSE-2026-10-19.md)
+- **Anchor:** [OUTPUT-ANCHOR-CHAIN-AND-SESSION-CLOSE-0.0-2026-10-19-002](../../0.0/OUTPUT-ANCHOR-CHAIN-AND-SESSION-CLOSE-0.0-2026-10-19-002.md)
+- **Canonical reference:** [سند مرجع زندهٔ زنجیرهٔ لنگر](../../reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md)
+- **مسیر انسان:** کاربر خواست همین وضعیت به‌عنوان ۰.۰ جدید ثبت شود، مستندسازی کامل داشته باشد و سند مرجع کامل ساخته و ثبت شود؛ سپس نشست را ترک می‌کند.
+- **مسیر AI:** آخرین وضعیت معتبر بازیابی شد؛ نقطهٔ ۰.۰ مستقل و رویداد مستقل ساخته شدند؛ پیوندها به دفتر نقاط و سند مرجع افزوده می‌شوند؛ پس از نوشتن، بازخوانی و تطبیق انجام می‌شود.
+- **زمان پیام کاربر:** UNKNOWN / UNVERIFIED. زمان commit پروندهٔ ۰.۰: 13:57:15 Asia/Tehran؛ زمان commit EVT-0010: 13:57:50 Asia/Tehran؛ این‌ها زمان پیام کاربر نیستند.
+- **مقصدها:** مخزن پس از بازخوانی تأیید می‌شود؛ بافر/کتابخانه/حافظهٔ پایدار مستقلاً تأیید نشده‌اند؛ Dropbox آزمایش نشده و نقطهٔ آن مستقل OPEN / WAITING است.
+
+
+## EVT-0011 — پیوند نقاط ۰.۰ و الزام زنجیرهٔ لنگر هر خروجی
+- **Event ID:** EVT-0011-LINK-0.0-ANCHORS-OUTPUT-CHAIN-2026-10-19
+- **Stable ID:** CONNECTED-0.0-ANCHOR-OUTPUT-CHAIN-2026-10-19-001
+- **Production ID:** C0AC-HAIF-2026-10-19-001
+- **Version:** 1.0.0
+- **Date:** 2026-10-19
+- **User-message timestamp:** UNKNOWN / UNVERIFIED؛ حدس زده نمی‌شود.
+- **Timezone convention:** Asia/Tehran (UTC+03:30); commit times are from GitHub metadata.
+- **Related 0.0 anchors:** [حاکمیت ثبت کامل](../../0.0/OUTPUT-ANCHOR-GOVERNANCE-COMPLETE-REGISTRATION-0.0-2026-10-19-001.md)؛ [زنجیرهٔ لنگر و ادامهٔ نشست](../../0.0/OUTPUT-ANCHOR-CHAIN-AND-SESSION-CLOSE-0.0-2026-10-19-002.md)؛ [Dropbox failover — مستقل و باز](../../0.0/PALANG-DROPBOX-FAILOVER-RESUME-0.0-2026-10-12-001.md).
+- **Canonical reference:** [سند مرجع زندهٔ زنجیرهٔ لنگر خروجی‌ها](../../reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md)، بخش 16.
+- **Registry:** [دفتر نقاط ۰.۰](../../0.0/README.md).
+
+### مسیر انسان
+کاربر خواست نقاط ۰.۰ که تا اینجا به آن‌ها رسیده‌ایم به هم متصل شوند، زنجیرهٔ آن‌ها و هر خروجی لنگر داشته باشد و ثبت شود؛ سپس نشست را ترک کند.
+
+### اقدام AI
+به‌جای ادغام یا بستن نقاط، یک گراف بازیابی با پیوندهای دوطرفه در دفتر ۰.۰، سند مرجع canonical و دفتر رفتار اضافه می‌شود. برای هر خروجی مهم قاعدهٔ لنگر/رویداد مرتبط ثبت می‌شود؛ نقطه‌های مستقل و وضعیت Dropbox دست‌نخورده می‌مانند.
+
+### نتیجهٔ هدف و معیار پذیرش
+- سه نقطهٔ ۰.۰ به‌صورت صریح در یک گراف بازیابی فهرست شوند.
+- قاعدهٔ «هر خروجی مهم لنگر دارد» در مرجع canonical و دفتر ۰.۰ قابل یافتن باشد.
+- هر فایل تغییرکرده بعد از نوشتن بازخوانی و محتوای مورد انتظار تطبیق داده شود.
+- مخزن جدا از بافر، کتابخانه، حافظهٔ پایدار و Dropbox گزارش شود.
+
+### آخرین وضعیت معتبر و محدودیت‌ها
+این رویداد صرفاً اتصال و قاعدهٔ زنجیره‌سازی را ثبت می‌کند. وجود پیوند به معنی تکمیل یا ادغام نقاط نیست. اتصال/آزمون Dropbox، بافر، کتابخانه و حافظهٔ پایدار در این رویداد انجام نمی‌شود. زمان دقیق پیام کاربر و زمان مستقل بازخوانی UNKNOWN / UNVERIFIED می‌مانند مگر شاهد ابزار موجود باشد.
+
+### ادامه
+در بازگشت، این رویداد، سند canonical و دفتر ۰.۰ را بازخوانی کن؛ اگر تغییر بعدی انجام شد، رویداد تازه را با شناسهٔ جدید به انتهای دفتر اضافه کن و زنجیرهٔ قبلی را حفظ کن.
+
+
+## EVT-0012 — معماری زمان‌محور و ممیزی مسیر تعامل
+- **Event ID:** EVT-0012-TEMPORAL-ARCHITECTURE-AND-PATH-AUDIT-2026-10-19
+- **Stable ID:** TEMPORAL-ARCHITECTURE-INTERACTION-PATH-AUDIT-2026-10-19-001
+- **Production ID:** TAIPA-HAIF-2026-10-19-001
+- **Reference:** [سند مرجع معماری زمان‌محور و ممیزی مسیر](../../reference/REFERENCE-DOCUMENTS/TEMPORAL-ARCHITECTURE-AND-INTERACTION-PATH-AUDIT-LIVING-REFERENCE-2026-10-19-001.md)
+- **Event detail:** [EVT-0012](./EVT-0012-TEMPORAL-ARCHITECTURE-AND-PATH-AUDIT-2026-10-19.md)
+- **Current 0.0:** [لنگر زنجیرهٔ خروجی و ادامهٔ نشست](../../0.0/OUTPUT-ANCHOR-CHAIN-AND-SESSION-CLOSE-0.0-2026-10-19-002.md)
+- **Intent:** زمان‌دار بودن ثبت‌ها باید اصل دائمی معماری شود و از آخرین لنگر تا نقطهٔ جاری بتوان مسیر تعامل را بازیابی کرد؛ شامل افزوده‌ها، تغییرات، موارد ازقلم‌افتاده/دنبال‌نشده، کارهای نیمه‌تمام، GAPها و برنامهٔ رشد.
+- **Status:** سند مرجع و رویداد ایجاد شده‌اند؛ ثبت و بازخوانی نهایی و پیوندها باید بررسی شوند. ممیزی کامل تاریخی هنوز OPEN است.
+- **Timestamp rule:** زمان پیام کاربر UNKNOWN / UNVERIFIED مگر شاهد مستقیم؛ زمان commit با زمان پیام یا بازخوانی یکی فرض نشود.
+- **Destination status:** فقط تغییرات مخزن در این رویداد هدف‌اند؛ بافر/کتابخانه/حافظهٔ پایدار و Dropbox نیازمند شواهد مستقل هستند.
+
+
+## EVT-0013 — ایجاد بستهٔ آرشیوی و تعیین تکلیف موارد باز
+- **Event ID:** EVT-0013-INCOMPLETE-WORK-COMPLETION-AND-ARCHIVE-2026-10-19
+- **Stable ID:** ATCPA-ARCHIVE-LIVING-2026-10-19-001
+- **Production ID:** ATCPA-HAIF-2026-10-19-001
+- **Reference:** [بستهٔ آرشیوی زنده](../../reference/REFERENCE-DOCUMENTS/ANCHOR-TO-CURRENT-PATH-AUDIT-ARCHIVE-LIVING-2026-10-19-001.md)
+- **Current anchor:** [OUTPUT-ANCHOR-CHAIN-AND-SESSION-CLOSE-0.0-2026-10-19-002](../../0.0/OUTPUT-ANCHOR-CHAIN-AND-SESSION-CLOSE-0.0-2026-10-19-002.md)
+- **Intent:** کاربر خواست موارد تکمیل‌نشده تا حد امکان تکمیل شوند و سند مرجع کامل برای آرشیو ساخته، در مخزن ثبت و زنده بماند.
+- **Action:** سند آرشیوی قابل‌بازیابی ساخته شد؛ وضعیت لنگرهای مستقل، کارهای باز، محدودیت مقصدها، منشأ زمان‌ها، دستور ادامه و معیار پذیرش در آن ثبت شد. پیوندها به مرجع زمان‌محور، لنگر جاری و دفتر مرکزی افزوده می‌شوند.
+- **Status:** ثبت مخزن تا بازخوانی نهایی در انتظار تأیید محتوایی است. Dropbox همچنان OPEN / WAITING؛ Buffer/Library/Persistent Memory UNVERIFIED. ممیزی تاریخی محدود به شواهد واقعاً بازیابی‌شده است.
+- **Timestamp rule:** زمان پیام کاربر و زمان مستقل بازخوانی UNKNOWN / UNVERIFIED مگر شاهد صریح موجود باشد. زمان commit جداگانه ثبت می‌شود.
+- **Next:** بازخوانی فایل‌های تغییرکرده، تطبیق شناسه‌ها و پیوندها؛ در مراجعهٔ بعدی از بستهٔ آرشیوی شروع کن و کارهای عملیاتی باز را با شواهد تکمیل کن.
+
+
+## EVT-0014 — سند مرجع مادر واحد مسیر کامل
+- **Event ID:** `EVT-0014-CANONICAL-COMPLETE-PATH-ARCHIVE-2026-10-19`
+- **Stable ID:** `MASTER-CANONICAL-COMPLETE-INTERACTION-REGISTRATION-PATH-2026-10-19-001`
+- **Production ID:** `MCCIRP-HAIF-2026-10-19-001`
+- **Master:** [سند مرجع مادر کامل](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/CANONICAL-COMPLETE-PATH-ARCHIVE-2026-10-19/MASTER-CANONICAL-COMPLETE-INTERACTION-AND-REGISTRATION-PATH-2026-10-19-001.md)
+- **Event detail:** [EVT-0014](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/architecture/BEHAVIOR-TRACE/EVT-0014-CANONICAL-COMPLETE-PATH-ARCHIVE-2026-10-19.md)
+- **Current anchor:** [لنگر جاری ۰.۰](../../0.0/OUTPUT-ANCHOR-CHAIN-AND-SESSION-CLOSE-0.0-2026-10-19-002.md)
+- **Status:** ثبت در مخزن و بازخوانی محتوایی؛ مقصدهای دیگر مستقل تأیید نشده‌اند. موارد باز طبق سند مادر حفظ می‌شوند.
+
+
+## EVT-0015 — ثبت قاعدهٔ همیشگی و ادغام معماری ۰.۰
+- **Event ID:** EVT-0015-0.0-GOVERNING-ADDENDUM-ARCHITECTURE-INTEGRATION-2026-10-20
+- **Stable ID:** PALANG-0.0-COMPLETE-PATH-AND-GOVERNING-ADDENDUM-2026-10-20-001
+- **Production ID:** P0CPGA-HAIF-2026-10-20-001
+- **Event file:** [EVT-0015](./EVT-0015-0.0-GOVERNING-ADDENDUM-ARCHITECTURE-INTEGRATION-2026-10-20.md)
+- **Architecture queue case:** [پروندهٔ صف](../INTEGRATION-QUEUE/PALANG-0.0-COMPLETE-PATH-GOVERNING-ADDENDUM-2026-10-20-001.md)
+- **Complete path reference:** [سند مسیر کامل](../../reference/REFERENCE-DOCUMENTS/PALANG-0.0-COMPLETE-PATH-AND-GOVERNING-ADDENDUM-2026-10-20-001.md)
+- **Living governing reference:** [سند حاکم زنده](../../reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md)
+- **Human request:** قاعدهٔ ثبت کامل، مسیر قابل‌بازیابی، مستندسازی زمان‌محور و ادغام در معماری/ساختمان پروژه باید همیشه رعایت شود.
+- **AI action:** پروندهٔ مسیر، رویداد و پروندهٔ صف به دفتر ۰.۰، نمایهٔ صف، دفتر رفتار و مرجع حاکم پیوند داده شدند.
+- **Timestamp:** زمان دقیق پیام UNKNOWN / UNVERIFIED؛ زمان commit و زمان بازخوانی جدا ثبت می‌شوند.
+- **Destination state:** مخزن با بازخوانی/تطبیق بررسی می‌شود؛ Buffer/Library/Persistent Memory/Dropbox مستقل تأیید نشده‌اند.
+- **Continuation:** بازخوانی پیوندها و حفظ کارهای باز؛ Dropbox همچنان OPEN / WAITING.
+
+
+## EVT-0016 — قواعد ثبت و لنگر — 2026-10-20
+- Stable ID: PERMANENT-LIVING-EXECUTION-ANCHOR-TIMESTAMP-GOVERNANCE-2026-10-20-001
+- Reference: ../../reference/REFERENCE-DOCUMENTS/PERMANENT-LIVING-EXECUTION-ANCHOR-TIMESTAMP-GOVERNANCE-2026-10-20-001.md
+- Request: apply full registration, complete reference, documentation, timestamp and anchor rules as the default project procedure.
+- Rule: significant outputs follow preserve → identify → classify → provenance → IDs/version → anchor → reference → architecture link → timestamp evidence → write → read-back → match → verify → reconcile → destination status → next action → resume.
+- Unknown timestamps remain UNKNOWN / UNVERIFIED. Each destination must be verified independently.
+- Request time and exact read-back time: UNKNOWN / UNVERIFIED.
+
+
+## EVT-0017 — تأیید حاکمیت دائمی ثبت در مخزن — 2026-10-20
+- Stable ID: PERMANENT-LIVING-EXECUTION-ANCHOR-TIMESTAMP-GOVERNANCE-2026-10-20-001
+- Event file: [EVT-0017](./EVT-0017-PERMANENT-REPOSITORY-GOVERNANCE-CONFIRMATION-2026-10-20.md)
+- درخواست: اجرای پیش‌فرض ثبت کامل، سند جامع، لنگر، زمان‌گذاری، پیوند معماری و بازخوانی/تطبیق؛ اولویت فعلی با مخزن است.
+- زمان دقیق پیام: UNKNOWN / UNVERIFIED؛ زمان commit جایگزین زمان پیام نیست.
+- پذیرش: بازخوانی رویداد و نمایه‌ها و تطبیق شناسه، محتوا و پیوندها؛ مقصدهای بررسی‌نشده تأییدشده اعلام نشوند.
+
+
+## EVT-0018 — قاعدهٔ ثبت محصور بین دو لنگر زمانی — 2026-10-20
+- Stable ID: TEMPORAL-BRACKETING-AND-BOUNDED-TIMESTAMP-GOVERNANCE-2026-10-20-001
+- Event file: [EVT-0018](./EVT-0018-TEMPORAL-BRACKETING-RULE-2026-10-20.md)
+- Canonical rule: [مرجع جامع حاکم، بخش ۹](../../reference/REFERENCE-DOCUMENTS/PERMANENT-LIVING-EXECUTION-ANCHOR-TIMESTAMP-GOVERNANCE-2026-10-20-001.md)
+- Living reference: [بخش ۲۲](../../reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md)
+- Rule: when exact event time is unknown, use a proven bounded interval between known prior and following anchors; never invent a midpoint or false precision.
+- Exact request time: UNKNOWN / UNVERIFIED; event registration commit time is separate.
+
+## EVT-0019 — Temporal bracketing user acceptance (2026-10-20)
+
+- Full event record: [EVT-0019](./EVT-0019-TEMPORAL-BRACKETING-USER-ACCEPTANCE-2026-10-20.md).
+- Rule: [EVT-0018](./EVT-0018-TEMPORAL-BRACKETING-RULE-2026-10-20.md).
+- Current 0.0 anchor: [PALANG-0.0-CURRENT-2026-10-20-001](../../../checkpoints/PALANG-0.0-CURRENT-2026-10-20-001.md).
+- User approved applying temporal bracketing with full governed registration and recoverable documentation.
+- Exact user-message timestamp remains UNKNOWN / UNVERIFIED. No midpoint or exact time may be fabricated.
+- Destination status: repository entries were fetched and matched; Buffer, Persistent Memory, Library and Dropbox are not proven by these repository operations.
+
+
+## EVT-0020 — Every-interaction anchor governance (2026-10-20)
+
+- **Event ID:** `EVT-0020-EVERY-INTERACTION-ANCHOR-GOVERNANCE-2026-10-20`
+- **Stable ID:** `EVERY-INTERACTION-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001`
+- **Production ID:** `EIACRG-HAIF-2026-10-20-001`
+- **Version:** `1.0.0`
+- **Full reference:** [Every-interaction anchor and complete registration governance](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/EVERY-INTERACTION-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001.md)
+- **Origin:** User explicitly requests that every user input and every assistant final output from now on have an anchor and be completely documented under a permanent governing registration rule.
+- **Rule:** Treat each user message and each visible final assistant response as one linked interaction record. Preserve complete visible text in a canonical location, assign a unique interaction ID, retain provenance and evidence-backed timestamps, link to the current anchor and relevant architecture, write to the repository when the tool and permission are available, then fetch/read back and match. Do not claim successful registration if blocked. Do not record hidden chain-of-thought. Keep all storage destinations independently verified.
+- **Exact user-message time:** UNKNOWN / UNVERIFIED; no exact independent timestamp is available in this operation.
+- **Status:** The reference file has been written; final integration status depends on read-back of all changed files. Library, Buffer, Persistent Memory and Dropbox are not verified by repository actions.
+
+## رویداد حاکم جدید — لنگر هر ورودی و خروجی
+
+- **Stable ID:** `EVERY-INPUT-OUTPUT-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001`
+- **Production ID:** `EIOACRG-2026-10-20-001`
+- **سند مرجع:** [قرارداد لنگر هر ورودی و خروجی](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/EVERY-INPUT-OUTPUT-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001.md)
+- **منشأ:** درخواست صریح کاربر در 2026-10-20 برای لنگرگذاری و مستندسازی جامع هر ورودی و هر خروجی.
+- **قاعدهٔ رفتاری:** پیش از پاسخ، زمینه و لنگرهای مرتبط را بازیابی کن؛ پس از خروجی مهم/اقدام، رویداد قابل‌بازیابی را ثبت کن؛ نوشتن مخزن را بازخوانی و تطبیق بده؛ زمان و مقصد را حدس نزن؛ لنگرهای قبلی را حفظ کن.
+- **وضعیت:** سند مرجع ایجاد شده؛ زمان دقیق پیام درخواست UNKNOWN / UNVERIFIED باقی می‌ماند.
+
+## رویداد حاکم جدید — پیوند رکورد EVT-0020
+
+- **Event ID:** `EVT-0020-EVERY-INPUT-OUTPUT-ANCHOR-USER-REQUEST-2026-10-20`
+- **رکورد رویداد کامل:** [EVT-0020 — درخواست حاکم لنگر هر ورودی و هر خروجی](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/architecture/BEHAVIOR-TRACE/EVT-0020-EVERY-INPUT-OUTPUT-ANCHOR-USER-REQUEST-2026-10-20.md)
+- **وضعیت:** رکورد رویداد ایجاد شده؛ پس از نوشتن این اشاره‌گر، فایل ردپای رفتار باید بازخوانی و تطبیق شود.
+
 
 ## رویداد جدید — LIARC / معماری اجرای خودکار زنده
 - **Event ID:** EVT-0023-LIVING-INTERACTION-AUTOMATION-AND-CONNECTIONS-2026-10-20
