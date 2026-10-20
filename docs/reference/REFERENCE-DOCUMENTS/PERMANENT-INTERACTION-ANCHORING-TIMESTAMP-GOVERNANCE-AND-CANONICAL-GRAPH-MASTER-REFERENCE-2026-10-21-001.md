@@ -3,7 +3,7 @@
 ## شناسنامه و وضعیت
 - Stable ID / شناسه پایدار: PERMANENT-INTERACTION-ANCHORING-TIMESTAMP-GOVERNANCE-AND-CANONICAL-GRAPH-MASTER-REFERENCE-2026-10-21-001
 - Production ID / شناسه تولید: PIATGCG-2026-10-21-001
-- Version / نسخه: 1.0.5
+- Version / نسخه: 1.0.6
 - Owner / مالک: Ahmad Nezhadhosseini / احمد پلنگ
 - Project / پروژه: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
 - Scope / دامنه: حاکمیت تعامل، لنگر ورودی/خروجی، زمان‌گذاری، گراف تاریخی ۰.۰، ثبت معماری، خاک‌برداری، بستهٔ انتقال میزبان
@@ -258,3 +258,13 @@ T1 ورودی و خروجی قابل‌بازیابی؛ T2 زمان‌های م�
 - Deduplication rule: canonicalize logically by alias/lineage; preserve historical files. The audit script reports exact-content groups and ID collisions; a successful workflow means the scan ran, not that every collision is resolved.
 - Time rule: all new processing/registration/read-back timestamps use UTC as the primary source. Tehran time is optional derived display only. User-message time stays UNKNOWN / UNVERIFIED when no trusted source exists.
 - Status: ACTIVE / LIVING; repository registration is being integrated. Full semantic graph reconciliation remains OPEN / PARTIAL.
+
+
+## 36. خروجی و شواهد ممیزی گراف — EVT-0049
+- Output event: [EVT-0049](../../architecture/BEHAVIOR-TRACE/EVT-0049-ASSISTANT-EXECUTION-AND-RECONCILIATION-2026-10-21.md); input [EVT-0048](../../architecture/BEHAVIOR-TRACE/EVT-0048-USER-REQUEST-FULL-HISTORICAL-0.0-GRAPH-RECONCILIATION-2026-10-21.md).
+- Canonical reconciliation: [H0G-RDR](./HISTORICAL-0.0-GRAPH-RECONCILIATION-AND-DEDUPLICATION-REGISTER-2026-10-21-001.md).
+- Workflow run [39502190776](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39502190776) SUCCESS; artifact `living-architecture-audit-39502190776`, digest `sha256:0bff6ba4b290be28a172dce5682ac7396d52013a62d6b61d2ccd93a52df45dd9`.
+- Last observed pre-EVT-0049 snapshot UTC 2026-10-20T21:40:47.065Z: 689 files, 95 0.0 paths, 38 checkpoint paths, 52 EVT paths, 85 reference-document paths, 208 generated Evidence Gate artifacts; tree complete.
+- Eight core repository files were fetched after integration writes and passed targeted checks for expected IDs, versions, links and G-15/G-20 entries.
+- Exact duplicate/collision/broken-link counts are not claimed because the artifact's full report has not been directly inspected here. Full semantic review remains OPEN / PARTIAL.
+- UTC is primary for new registration, execution and read-back; local time is derived display only; user-message time remains UNKNOWN / UNVERIFIED when unsourced.
