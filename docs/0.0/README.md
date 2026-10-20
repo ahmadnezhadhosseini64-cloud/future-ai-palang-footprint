@@ -566,3 +566,7 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - سند مبنای معنایی: [H0SAB](../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-SEMANTIC-ARCHITECTURE-BASELINE-2026-10-21-001.md).
 - رویداد زنجیره: [EVT-0053](../architecture/BEHAVIOR-TRACE/EVT-0053-SEMANTIC-ARCHITECTURE-BASELINE-2026-10-21.md).
 - وضعیت: مشخصات ساخت برنامه ثبت شده؛ پیاده‌سازی کامل اپ و اثبات معنایی همهٔ روابط هنوز تأیید نشده. ممیزی تازه باید خروجی صف معنایی خط‌به‌خط را تولید کند و آن خروجی جداگانه بازخوانی شود.
+
+
+- شاهد ممیزی تازه: [H0SRQS](../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-SEMANTIC-REVIEW-QUEUE-SNAPSHOT-2026-10-21-001.md) — اجرای 39517339104 موفق؛ commit بررسی‌شده و اعداد در سند ثبت شده‌اند.
+- دفتر داوری گروه‌ها: [H0IRAR](../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-IDENTIFIER-AND-RELATION-ADJUDICATION-REGISTER-2026-10-21-001.md) — دو گروه Stable ID و شش جفت EVT تصمیم محدود دارند؛ باقی گروه‌ها و معنای تمام روابط باز است.
