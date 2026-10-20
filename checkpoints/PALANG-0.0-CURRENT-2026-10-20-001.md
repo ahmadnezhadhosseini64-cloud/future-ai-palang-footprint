@@ -222,3 +222,12 @@ On 2026-10-20, the user explicitly approved applying the temporal bracketing rul
 - Audit result: governance documents, event trace, central 0.0 index, and this current anchor exist and are linked in the repository; end-to-end enforcement on every interaction and automatic future writes are NOT PROVEN.
 - Status: OPEN / PARTIAL. The architecture queue must remain open until acceptance gates and behavioral/recovery tests have evidence.
 - Repository write/read-back for this addendum and queue pointer must be performed before claiming this update verified. Buffer, Library, Persistent Memory and Dropbox remain independently unverified.
+
+
+## Open execution gate — every input/output anchor (2026-10-20)
+- **Execution gate / دروازهٔ اجرای واقعی:** [EVERY-INPUT-OUTPUT-ANCHOR-EXECUTION-GATE-2026-10-20-001](../docs/architecture/INTEGRATION-QUEUE/EVERY-INPUT-OUTPUT-ANCHOR-EXECUTION-GATE-2026-10-20-001.md)
+- **Architecture queue / صف معماری:** [INTEGRATION-QUEUE](../docs/architecture/INTEGRATION-QUEUE/README.md)
+- **Behavior event / رویداد رفتار:** [EVT-0021](../docs/architecture/BEHAVIOR-TRACE/EVT-0021-USER-REAFFIRMS-EVERY-INPUT-OUTPUT-ANCHOR-2026-10-20.md)
+- **State / وضعیت:** OPEN / PENDING EXECUTION PROOF. Repository documentation and links are present; automatic capture for every future input/output is NOT PROVEN.
+- **Next action / اقدام بعدی:** inspect/implement the actual execution mechanism and run an end-to-end acceptance test with independently retrievable evidence. Do not close this gate on documentation alone.
+- **Time integrity / سلامت زمان:** exact request time UNKNOWN / UNVERIFIED; commit time is not a substitute.
