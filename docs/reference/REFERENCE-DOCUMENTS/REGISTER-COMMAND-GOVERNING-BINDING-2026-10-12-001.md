@@ -163,3 +163,12 @@ For the latest repository excavation and reconciliation state, retrieve `docs/re
 - **سند مرجع کامل:** [قرارداد لنگر تک‌تک تعامل‌ها](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/EVERY-INTERACTION-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001.md)
 
 فرمان «ثبت کن» از این پس شامل ثبت لنگر برای هر پیام کاربر و هر خروجی نهایی قابل‌مشاهدهٔ دستیار است، نه فقط برای تصمیم‌ها یا اسناد بزرگ. متن کامل در یک محل canonical ثبت و از شاخص‌ها به آن پیوند داده می‌شود تا ثبت جامع باشد و تکرار غیرضروری ایجاد نشود. پس از نوشتن، مقصد دوباره خوانده و تطبیق می‌شود. اگر اجرا یا ثبت در مخزن به‌علت نبود ابزار/مجوز ممکن نباشد، همان محدودیت و کار باز اعلام می‌شود؛ ادعای دائمی یا خودکار بدون شاهد ممنوع است. مقصدهای Library، Buffer، Persistent Memory و Dropbox مستقل‌اند.
+
+## 13. حاکمیت لنگرگذاری هر ورودی و خروجی
+
+- **Stable ID:** `EVERY-INPUT-OUTPUT-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001`
+- **Production ID:** `EIOACRG-2026-10-20-001`
+- **Version:** `1.0.0`
+- **سند مرجع کامل:** [قرارداد لنگر هر ورودی و خروجی](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/EVERY-INPUT-OUTPUT-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001.md)
+
+این قرارداد، دامنهٔ «ثبت کن» را به یک فرمان محدود نمی‌کند: هر ورودی کاربر و هر خروجی دستیار باید لنگر/رویداد قابل‌بازیابی داشته باشد و به زنجیرهٔ مرتبط وصل شود. برای رویداد عادی می‌توان رکورد فشرده اما قابل‌بازیابی داشت؛ برای تصمیم، اصلاح، قانون، سند، اقدام یا جزء معماری رکورد کامل لازم است. اگر ثبت در مخزن واقعاً انجام و بازخوانی نشد، نباید آن را انجام‌شده معرفی کرد؛ در عوض محدودیت و سند قابل‌کپی/مسیر ادامه حفظ شود. این قاعده توانایی یا دسترسی خودکار به همهٔ مقصدها در همهٔ جلسات را تضمین نمی‌کند.
