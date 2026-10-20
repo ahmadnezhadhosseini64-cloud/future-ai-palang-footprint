@@ -261,3 +261,12 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - **رویداد رفتار/معماری:** [EVT-0015](../architecture/BEHAVIOR-TRACE/EVT-0015-0.0-GOVERNING-ADDENDUM-ARCHITECTURE-INTEGRATION-2026-10-20.md)
 - **قاعده:** این لنگر تازه مستقل است؛ لنگرهای قبلی و نقطهٔ Dropbox حذف یا ادغام نمی‌شوند.
 - **زمان دقیق پیام:** UNKNOWN / UNVERIFIED؛ زمان commit جایگزین آن نیست.
+
+
+## قاعدهٔ حاکم دائمی ثبت و لنگر — 2026-10-20
+- Stable ID: `PERMANENT-LIVING-EXECUTION-ANCHOR-TIMESTAMP-GOVERNANCE-2026-10-20-001`
+- سند مرجع جامع: [ثبت، لنگر، زمان‌گذاری و تأیید مستقل مقصدها](../reference/REFERENCE-DOCUMENTS/PERMANENT-LIVING-EXECUTION-ANCHOR-TIMESTAMP-GOVERNANCE-2026-10-20-001.md)
+- رویداد این درخواست: [EVT-0017](../architecture/BEHAVIOR-TRACE/EVT-0017-PERMANENT-REPOSITORY-GOVERNANCE-CONFIRMATION-2026-10-20.md)
+- قاعده: خروجی مهم باید لنگر، سند کامل، منشأ، شناسه/نسخه، شواهد زمانی، پیوند معماری و اقدام ادامه داشته باشد؛ پس از نوشتن، بازخوانی و تطبیق لازم است.
+- زمان دقیق پیام: UNKNOWN / UNVERIFIED؛ از زمان commit استنتاج نشود.
+- تمرکز این درخواست بر مخزن است؛ بافر و حافظهٔ پایدار فعلاً اولویت ندارند. Dropbox مستقل و باز می‌ماند.
