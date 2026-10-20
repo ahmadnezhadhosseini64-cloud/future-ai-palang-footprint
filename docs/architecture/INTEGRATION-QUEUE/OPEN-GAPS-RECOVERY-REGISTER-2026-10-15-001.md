@@ -258,3 +258,9 @@ NO CLAIM WITHOUT EVIDENCE — هیچ ادعایی بدون شاهد پذیرفت
 - Status: OPEN / PENDING fresh-run proof. Do not close issue #18 until both new runs complete successfully, job/step evidence and artifacts are inspected, and reference files are read back.
 - Timestamp: exact user-message time and exact registration time UNKNOWN / UNAVAILABLE; apply DTAR-2026-10-20-001 and do not invent values.
 - External Library, Buffer, Persistent Memory and Dropbox remain separate destinations; no update is claimed for them.
+
+### G-06 update — fresh workflow runs failed again
+- Evidence Gate fresh run `39454138917`: failure, commit `14187974765f4d743d3ca05186565ad4c9c0fdaa`, created `2026-10-20T16:04:05Z`; jobs list empty; logs endpoint HTTP 404.
+- Automatic Final Registration Proof fresh run `39454141194`: failure, same commit, created `2026-10-20T16:04:06Z`; jobs list empty; logs endpoint HTTP 404.
+- The latest runs prove the earlier workflow edits were not sufficient. Root cause remains UNKNOWN / UNVERIFIED; no speculative fix or closure.
+- Issue #18 remains OPEN. Next: obtain evidence for why these workflow runs terminate before exposing jobs/logs, or make a genuinely observable execution path and pass its evidence gate.
