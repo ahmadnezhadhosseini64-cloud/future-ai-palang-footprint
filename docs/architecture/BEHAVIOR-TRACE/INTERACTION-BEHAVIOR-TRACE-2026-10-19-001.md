@@ -310,3 +310,11 @@
 - Rule: significant outputs follow preserve → identify → classify → provenance → IDs/version → anchor → reference → architecture link → timestamp evidence → write → read-back → match → verify → reconcile → destination status → next action → resume.
 - Unknown timestamps remain UNKNOWN / UNVERIFIED. Each destination must be verified independently.
 - Request time and exact read-back time: UNKNOWN / UNVERIFIED.
+
+
+## EVT-0017 — تأیید حاکمیت دائمی ثبت در مخزن — 2026-10-20
+- Stable ID: PERMANENT-LIVING-EXECUTION-ANCHOR-TIMESTAMP-GOVERNANCE-2026-10-20-001
+- Event file: [EVT-0017](./EVT-0017-PERMANENT-REPOSITORY-GOVERNANCE-CONFIRMATION-2026-10-20.md)
+- درخواست: اجرای پیش‌فرض ثبت کامل، سند جامع، لنگر، زمان‌گذاری، پیوند معماری و بازخوانی/تطبیق؛ اولویت فعلی با مخزن است.
+- زمان دقیق پیام: UNKNOWN / UNVERIFIED؛ زمان commit جایگزین زمان پیام نیست.
+- پذیرش: بازخوانی رویداد و نمایه‌ها و تطبیق شناسه، محتوا و پیوندها؛ مقصدهای بررسی‌نشده تأییدشده اعلام نشوند.
