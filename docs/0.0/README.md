@@ -318,7 +318,7 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - **Stable ID:** EVIDENCE-FIRST-NO-EMPTY-REPORT-AND-REGISTER-EXECUTION-PACT-2026-10-20-001
 - **Production ID:** EFNERP-HAIF-2026-10-20-001
 - **Version:** 1.0.0
-- **سند مرجع کامل:** [قرارداد ثبت مبتنی بر شواهد و منع گزارش خالی](../../reference/REFERENCE-DOCUMENTS/EVIDENCE-FIRST-NO-EMPTY-REPORT-AND-REGISTER-EXECUTION-PACT-2026-10-20-001.md)
+- **سند مرجع کامل:** [قرارداد ثبت مبتنی بر شواهد و منع گزارش خالی](../reference/REFERENCE-DOCUMENTS/EVIDENCE-FIRST-NO-EMPTY-REPORT-AND-REGISTER-EXECUTION-PACT-2026-10-20-001.md)
 - **رویداد ثبت و اثبات:** [EVT-0019](../architecture/BEHAVIOR-TRACE/EVT-0019-EVIDENCE-FIRST-REGISTER-PACT-2026-10-20.md)
 - **لنگر جاری:** [PALANG-0.0-CURRENT-2026-10-20-001](../../checkpoints/PALANG-0.0-CURRENT-2026-10-20-001.md)
 - **قاعده:** ادعای ثبت فقط با شاهد مقصدی؛ زمان دقیق نامعلوم را UNKNOWN / UNVERIFIED نگه دار؛ هیچ نقطهٔ ۰.۰ قبلی را بازنویسی یا نبند؛ گزارش جایگزین ثبت کامل و بازخوانی نیست.
