@@ -215,3 +215,10 @@
 - سند مرجع مادر: [PIATGCG](../../reference/REFERENCE-DOCUMENTS/PERMANENT-INTERACTION-ANCHORING-TIMESTAMP-GOVERNANCE-AND-CANONICAL-GRAPH-MASTER-REFERENCE-2026-10-21-001.md).
 - موجودی گراف: [C0GIR](../../reference/REFERENCE-DOCUMENTS/CANONICAL-0.0-GRAPH-INVENTORY-AND-RECONCILIATION-2026-10-21-001.md).
 
+
+
+## EVT-0048 — درخواست تطبیق کامل گراف تاریخی ۰.۰
+- [EVT-0048](./EVT-0048-USER-REQUEST-FULL-HISTORICAL-0.0-GRAPH-RECONCILIATION-2026-10-21.md) — Stable ID: EVT-0048-USER-REQUEST-FULL-HISTORICAL-0.0-GRAPH-RECONCILIATION-2026-10-21; Production ID: EVT48-2026-10-21-001.
+- سند مرجع canonical: [H0G-RDR](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-RECONCILIATION-AND-DEDUPLICATION-REGISTER-2026-10-21-001.md).
+- وضعیت: درخواست ثبت شد؛ اسکن محتوایی خودکار با workflow اجرا شد؛ مرور معنایی کامل و alias adjudication هنوز OPEN / PARTIAL.
+- زمان پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان‌های پردازش و commit جداگانه ثبت می‌شوند.
