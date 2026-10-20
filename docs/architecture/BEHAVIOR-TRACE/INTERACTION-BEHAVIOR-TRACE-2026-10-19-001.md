@@ -327,3 +327,12 @@
 - Living reference: [بخش ۲۲](../../reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md)
 - Rule: when exact event time is unknown, use a proven bounded interval between known prior and following anchors; never invent a midpoint or false precision.
 - Exact request time: UNKNOWN / UNVERIFIED; event registration commit time is separate.
+
+## EVT-0019 — Temporal bracketing user acceptance (2026-10-20)
+
+- Full event record: [EVT-0019](./EVT-0019-TEMPORAL-BRACKETING-USER-ACCEPTANCE-2026-10-20.md).
+- Rule: [EVT-0018](./EVT-0018-TEMPORAL-BRACKETING-RULE-2026-10-20.md).
+- Current 0.0 anchor: [PALANG-0.0-CURRENT-2026-10-20-001](../../../checkpoints/PALANG-0.0-CURRENT-2026-10-20-001.md).
+- User approved applying temporal bracketing with full governed registration and recoverable documentation.
+- Exact user-message timestamp remains UNKNOWN / UNVERIFIED. No midpoint or exact time may be fabricated.
+- Destination status: repository entries were fetched and matched; Buffer, Persistent Memory, Library and Dropbox are not proven by these repository operations.
