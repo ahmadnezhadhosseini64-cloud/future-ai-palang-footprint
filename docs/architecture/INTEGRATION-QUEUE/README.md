@@ -729,3 +729,9 @@ The queue index and the timestamp case must each be read back after this update.
 - کار بعدی: بازخوانی و آزمون پیوندها؛ گراف تاریخی ۰.۰، Dropbox، مقصدهای مستقل و بازیابی سرتاسری باز می‌مانند.
 
 - لنگر خروجی: [EVT-0040](../BEHAVIOR-TRACE/EVT-0040-ASSISTANT-REGISTRATION-AND-DISCOVERY-ARCHITECTURE-2026-10-20.md). سند ITDCT و پیوندهای رجیستری افزوده شده‌اند؛ read-back نهایی و مقصدهای مستقل همچنان باید جداگانه اثبات شوند.
+
+
+## AICPHAE / EVT-0041 — تداوم خودکار و انتقال‌پذیری
+- سند مرجع: [AICPHAE](../../reference/REFERENCE-DOCUMENTS/AUTOMATIC-INTERACTION-CONTINUITY-AND-PORTABLE-HAIF-EVOLUTION-MASTER-REFERENCE-2026-10-20-001.md).
+- رویداد ورودی: [EVT-0041](../BEHAVIOR-TRACE/EVT-0041-AUTOMATIC-CONTINUITY-PORTABLE-CHILD-RAHM-MASTER-REQUEST-2026-10-20.md).
+- آزمون‌های بازیابی کامل، گراف ۰.۰، Dropbox، مقصدهای مستقل و انتقال میزبان باز می‌مانند تا شواهد ثبت شود.
