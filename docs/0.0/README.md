@@ -278,3 +278,11 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - **قاعدهٔ جامع:** [مرجع حاکم، بخش ۹](../reference/REFERENCE-DOCUMENTS/PERMANENT-LIVING-EXECUTION-ANCHOR-TIMESTAMP-GOVERNANCE-2026-10-20-001.md)
 - **قاعدهٔ زنده:** [مرجع ثبت زنده، بخش ۲۲](../reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md)
 - اگر زمان دقیق نامعلوم است، با دو لنگر معتبرِ قبل و بعد و شاهد ترتیب، بازه ثبت شود؛ زمان دقیق یا نقطهٔ میانی حدس زده نشود.
+
+## Temporal bracketing — user approval event (2026-10-20)
+
+- Event: [EVT-0019 — Temporal Bracketing User Acceptance](../architecture/BEHAVIOR-TRACE/EVT-0019-TEMPORAL-BRACKETING-USER-ACCEPTANCE-2026-10-20.md).
+- Governing rule: [EVT-0018 — Temporal Bracketing Rule](../architecture/BEHAVIOR-TRACE/EVT-0018-TEMPORAL-BRACKETING-RULE-2026-10-20.md).
+- Current anchor: [PALANG-0.0-CURRENT-2026-10-20-001](../../checkpoints/PALANG-0.0-CURRENT-2026-10-20-001.md).
+- Exact approval-message timestamp: UNKNOWN / UNVERIFIED; do not infer from commit time.
+- Repository read-back must be distinguished from Buffer, Persistent Memory, Library and Dropbox, which remain independently unverified.
