@@ -160,3 +160,10 @@ PRESERVE → IDENTIFY → READ SOURCE → CLASSIFY ROLE → CHECK LINEAGE → CH
 - First reviewed batch: six legacy EVT number pairs (0005, 0006, 0019, 0026, 0029, 0030) were compared by full path, title and available Stable/Production IDs. Each pair represents distinct event subjects; these are short-number namespace collisions, not proof that the two records are one event.
 - Closure boundary: all 12 records remain preserved. Their inbound/outbound references have not yet been globally reviewed, and the additional collision groups in the expanded manifest remain open. No renumbering or broad alias rewrite was performed.
 - Semantic review of all 493 source files and all ID occurrence groups remains OPEN / PARTIAL.
+
+
+## Addendum v1.2.0 — definition/reference batch and parser correction
+- [H0IRRB-2026-10-21-001](./HISTORICAL-0.0-IDENTIFIER-ROLE-REVIEW-BATCH-001-2026-10-21.md) records evidence-based role decisions for two Stable ID groups.
+- The review found a metadata parser coverage gap: actual definitions using bilingual/Persian metadata labels were omitted, making references appear to be duplicate definitions. The regex in the manifest builder was expanded. A fresh audit must confirm the corrected inventory and compare changed counts before any structural claim is refreshed.
+- Architecture queue: `docs/architecture/INTEGRATION-QUEUE/README.md`; reference index: `docs/REFERENCE_INDEX.md`.
+- Status remains OPEN / PARTIAL: this closes only the role decision for two groups, not the full set of 33/42 groups or all 493 source files.
