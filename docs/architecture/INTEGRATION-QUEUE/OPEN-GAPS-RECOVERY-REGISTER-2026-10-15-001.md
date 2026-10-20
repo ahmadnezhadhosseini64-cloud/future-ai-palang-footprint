@@ -213,3 +213,11 @@ NO CLAIM WITHOUT EVIDENCE — هیچ ادعایی بدون شاهد پذیرفت
 - Repository structural audit run `39447416772`: completed / success. Contract, workflow, audit script, index, integration queue, behavior trace, pending queue, MRV and current 0.0 anchor were read back.
 - This closes no external destination gap. G-AUTO-02 through G-AUTO-08 remain subject to their own evidence gates; Dropbox (G-AUTO-06) was deliberately not touched.
 - Exact user-message time UNKNOWN / UNVERIFIED.
+
+
+## CI reconciliation follow-up — 2026-10-20
+- Structural audit run `39448487385`: `success` on commit `8c2355fd8490e9ddeedf2aedd747f73ba1d75869`.
+- Cross-Layer Integrity Gate run `39448487743`: `failure` on the same commit. Log confirmed missing exact provider-memory boundary text in the master 0.0 and missing `XLR-PMA-2026-09-03-001` registry entry.
+- Both repository assertions were repaired in later commits; registry record `ABV-2026-10-20-001` remains `PARTIAL / PENDING` until a fresh cross-layer run passes.
+- Fresh run `39449261476` was observed `in_progress` at first read; subsequent result must be retrieved before closure. Latest `main.yml` and `automatic-final-registration-proof.yml` runs also reported failure, with causes still open.
+- Dropbox not touched; exact user-message time UNKNOWN / UNVERIFIED.
