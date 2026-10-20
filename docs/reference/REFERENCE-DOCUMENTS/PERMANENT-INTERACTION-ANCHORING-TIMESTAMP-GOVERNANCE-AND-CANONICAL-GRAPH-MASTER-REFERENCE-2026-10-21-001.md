@@ -3,7 +3,7 @@
 ## شناسنامه و وضعیت
 - Stable ID / شناسه پایدار: PERMANENT-INTERACTION-ANCHORING-TIMESTAMP-GOVERNANCE-AND-CANONICAL-GRAPH-MASTER-REFERENCE-2026-10-21-001
 - Production ID / شناسه تولید: PIATGCG-2026-10-21-001
-- Version / نسخه: 1.0.4
+- Version / نسخه: 1.0.5
 - Owner / مالک: Ahmad Nezhadhosseini / احمد پلنگ
 - Project / پروژه: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
 - Scope / دامنه: حاکمیت تعامل، لنگر ورودی/خروجی، زمان‌گذاری، گراف تاریخی ۰.۰، ثبت معماری، خاک‌برداری، بستهٔ انتقال میزبان
@@ -245,3 +245,16 @@ T1 ورودی و خروجی قابل‌بازیابی؛ T2 زمان‌های م�
 - **Status:** OPEN / PARTIAL؛ قاعده تعریف شد، اما فیلتر/اعتبارسنجی ماشینی manifest هنوز اجرا نشده است.
 - Version history: 1.0.4 adds G-14 for reproducible graph snapshots and CI-generated evidence separation.
 
+
+
+## 35. گسترش حاکمیت گراف تاریخی و زمان‌گذاری UTC — 2026-10-21
+- Addendum reference: [H0G-RDR — تطبیق گراف تاریخی ۰.۰ و دفتر تکرارها](./HISTORICAL-0.0-GRAPH-RECONCILIATION-AND-DEDUPLICATION-REGISTER-2026-10-21-001.md).
+- Input event: [EVT-0048](../../architecture/BEHAVIOR-TRACE/EVT-0048-USER-REQUEST-FULL-HISTORICAL-0.0-GRAPH-RECONCILIATION-2026-10-21.md).
+- Audit script: [audit_historical_0_0_graph.py](../../../scripts/audit_historical_0_0_graph.py).
+- Workflow: [Living Architecture Audit](../../../.github/workflows/living-architecture-audit.yml); run [39501699736](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39501699736) succeeded and uploaded artifact `living-architecture-audit-39501699736`.
+- Latest observed tree snapshot UTC 2026-10-20T21:38:13.394Z: 682 files; 95 paths containing 0.0; 38 checkpoint paths; 52 EVT files; 85 paths under Reference Documents; 201 generated Evidence Gate files; `truncated=false`. This is a time-bounded snapshot; generated evidence and new registrations change counts.
+- The workflow's earlier audit snapshot was 678 files / 93 0.0 paths / 51 EVT / 84 reference-document paths / 199 Evidence Gate files. Both snapshots are retained as dated observations; neither overwrites the other.
+- New active gaps: G-15 canonical alias/lineage manifest; G-16 semantic review of event/reference contents; G-17 Dropbox write/read/recovery; G-18 independent Buffer/Library/Persistent Memory proof; G-19 second-host transfer; G-20 runtime-wide interaction capture proof. See H0G-RDR and the Integration Queue.
+- Deduplication rule: canonicalize logically by alias/lineage; preserve historical files. The audit script reports exact-content groups and ID collisions; a successful workflow means the scan ran, not that every collision is resolved.
+- Time rule: all new processing/registration/read-back timestamps use UTC as the primary source. Tehran time is optional derived display only. User-message time stays UNKNOWN / UNVERIFIED when no trusted source exists.
+- Status: ACTIVE / LIVING; repository registration is being integrated. Full semantic graph reconciliation remains OPEN / PARTIAL.
