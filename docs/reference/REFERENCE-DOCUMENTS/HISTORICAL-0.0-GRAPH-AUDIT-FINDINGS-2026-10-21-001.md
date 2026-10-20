@@ -171,3 +171,8 @@ The scanner resolves relative Markdown paths from the source file's parent direc
 ## 10. Alias/lineage decision register
 The follow-up [H0CALDR-2026-10-21-001](./HISTORICAL-0.0-CANONICAL-ALIAS-LINEAGE-DECISION-REGISTER-2026-10-21-001.md) now records role-based mirror candidates for nine groups and leaves two differently numbered registration/checkpoint pairs open. These are non-destructive logical decisions; files remain intact.
 
+
+
+
+## 11. Verified manifest snapshot
+The expanded, bold-metadata-aware manifest builder has a successful run recorded in [H0GMS-2026-10-21-001](./HISTORICAL-0.0-GRAPH-MANIFEST-SNAPSHOT-2026-10-21-001.md). For audited commit `221b15b324eda4a454272c18e5ddf37dc22b75d8`, it scanned 492 source files, found 0 missing local Markdown links, extracted 38 parent edges with 0 unresolved and 0 ambiguous edges, and recorded 11 duplicate groups. The builder counts 33 Stable ID and 42 Production ID repeated-occurrence groups; these are not automatically true identity conflicts and require semantic role classification.
