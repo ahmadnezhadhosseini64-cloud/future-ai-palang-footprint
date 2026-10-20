@@ -18,7 +18,7 @@ files = sorted(p for p in ROOT.rglob("*") if p.is_file() and ".git" not in p.par
 evidence = [p for p in files if p.parent.relative_to(ROOT).as_posix() == "evidence" and re.fullmatch(r"evidence-gate-.*\.txt", p.name)]
 source_files = [p for p in files if p not in evidence]
 stable_map, prod_map, evt_map, sha_map = defaultdict(list), defaultdict(list), defaultdict(list), defaultdict(list)
-nodes, local_edges, missing_links, decode_errors = [], [], [], []
+nodes, local_edges, missing_links, decode_errors, identifier_occurrences = [], [], [], [], []
 def vals(body, pattern):
     return sorted(set(m.group(1).strip().strip("`' ") for m in re.finditer(pattern, body, re.I | re.M)))
 for p in source_files:
@@ -46,6 +46,23 @@ for p in source_files:
             parents.extend(ids)
     for x in stable: stable_map[x].append(relpath)
     for x in prod: prod_map[x].append(relpath)
+    # Preserve line-level occurrences for human semantic review. The role is only a
+    # candidate; even a metadata-looking line is not automatically accepted as a definition.
+    for line_no, line in enumerate(body.splitlines(), 1):
+        for ident in stable:
+            if ident in line:
+                metadata_label = bool(re.match(r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Stable ID|Stable-ID|Canonical Stable ID|Stable Reference ID|Stable Report ID|Reference ID|شناسهٔ پایدار|شناسه پایدار)", line, re.I))
+                identifier_occurrences.append({"identifier_type": "STABLE_ID", "identifier_value": ident,
+                    "path": relpath, "line": line_no, "line_text": line.strip(),
+                    "role_candidate": "DEFINITION_OR_METADATA_REVIEW" if metadata_label else "REFERENCE_REVIEW",
+                    "role_status": "UNREVIEWED"})
+        for ident in prod:
+            if ident in line:
+                metadata_label = bool(re.match(r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Production ID|Production-ID|Production / Registration ID|شناسهٔ تولید|شناسه تولید|شناسهٔ ثبت)", line, re.I))
+                identifier_occurrences.append({"identifier_type": "PRODUCTION_ID", "identifier_value": ident,
+                    "path": relpath, "line": line_no, "line_text": line.strip(),
+                    "role_candidate": "DEFINITION_OR_METADATA_REVIEW" if metadata_label else "REFERENCE_REVIEW",
+                    "role_status": "UNREVIEWED"})
     evt = re.match(r"EVT-(\d+)-", p.name)
     if evt: evt_map[evt.group(1)].append(relpath)
     own_edges = []
@@ -143,7 +160,7 @@ manifest = {
                "stable_id_collision_groups": len(stable_collisions), "production_id_collision_groups": len(prod_collisions),
                "event_number_collision_groups": len(evt_collisions), "exact_content_duplicate_groups": len(duplicates),
                "declared_parent_edges": len(parent_edges), "unresolved_parent_edges": len(unresolved),
-               "ambiguous_parent_edges": len(ambiguous), "proposed_alias_edges": len(alias_edges)},
+               "ambiguous_parent_edges": len(ambiguous), "proposed_alias_edges": len(alias_edges),\n               "identifier_occurrences": len(identifier_occurrences)},
     "nodes": nodes, "parent_edges": parent_edges, "unresolved_parent_edges": unresolved,
     "ambiguous_parent_edges": ambiguous, "local_link_edges": local_edges, "missing_local_links": missing_links,
     "stable_id_collisions": stable_collisions, "production_id_collisions": prod_collisions,
@@ -151,9 +168,43 @@ manifest = {
     "proposed_alias_edges": alias_edges, "decode_errors": decode_errors,
     "semantic_status": "STRUCTURAL ONLY. Human semantic review and architecture relationship adjudication remain required."
 }
+# Build a review queue that exposes every ID occurrence and inbound/outbound local links.
+# It is a triage aid, not semantic proof or an automatic promotion decision.
+inbound = defaultdict(list)
+outbound = defaultdict(list)
+for edge in local_edges:
+    outbound[edge["source"]].append(edge)
+    if edge["exists"]:
+        inbound[edge["resolved_path"]].append(edge)
+for occurrence in identifier_occurrences:
+    occurrence["inbound_local_links"] = inbound.get(occurrence["path"], [])
+    occurrence["outbound_local_links"] = outbound.get(occurrence["path"], [])
+review_queue = {
+    "schema": "palang-semantic-review-queue/v1",
+    "audit_time_utc": run_utc,
+    "repository_commit": commit,
+    "scope": "Line-level identifier occurrences with role candidates only; human review required.",
+    "counts": {
+        "identifier_occurrences": len(identifier_occurrences),
+        "stable_id_occurrences": sum(o["identifier_type"] == "STABLE_ID" for o in identifier_occurrences),
+        "production_id_occurrences": sum(o["identifier_type"] == "PRODUCTION_ID" for o in identifier_occurrences),
+        "definition_or_metadata_candidates": sum(o["role_candidate"] == "DEFINITION_OR_METADATA_REVIEW" for o in identifier_occurrences),
+        "reference_candidates": sum(o["role_candidate"] == "REFERENCE_REVIEW" for o in identifier_occurrences),
+        "unreviewed_occurrences": len(identifier_occurrences)
+    },
+    "occurrences": identifier_occurrences,
+    "groups": {
+        "stable_id": stable_collisions,
+        "production_id": prod_collisions,
+        "event_number": evt_collisions,
+        "exact_content_duplicates": duplicates
+    },
+    "semantic_boundary": "Role candidates are not final decisions. Each group needs source/context/history review and read-back."
+}
+(OUT / "historical-0.0-semantic-review-queue.json").write_text(json.dumps(review_queue, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 (OUT / "historical-0.0-canonical-graph-manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 summary = ["# Historical graph manifest summary", f"- Audit UTC: {run_utc}", f"- Commit: {commit}"]
 summary += [f"- {k}: {v}" for k, v in manifest["counts"].items()]
-summary += ["", "## Semantic boundary", "- Structural extraction only; proposed alias edges are not adjudicated.", "- Preserve historical files; never auto-delete duplicates.", "- Review parent ambiguities, missing links and identity collisions before closure."]
+summary += ["", "## Semantic boundary", "- Structural extraction only; proposed alias edges are not adjudicated.", "- A line-level semantic review queue is emitted; role candidates are not final decisions.", "- Preserve historical files; never auto-delete duplicates.", "- Review parent ambiguities, missing links and identity collisions before closure."]
 (OUT / "historical-0.0-graph-manifest-summary.txt").write_text("\n".join(summary) + "\n", encoding="utf-8")
 print("\n".join(summary))
