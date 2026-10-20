@@ -181,3 +181,8 @@ The expanded, bold-metadata-aware manifest builder has a successful run recorded
 
 ## 12. Latest snapshot read-back
 The living master and snapshot register now point to [H0GMS-2026-10-21-001 v1.1.0](./HISTORICAL-0.0-GRAPH-MANIFEST-SNAPSHOT-2026-10-21-001.md): run 39510205907, artifact 12305736053, audited commit `51eb2caf2679c54588765d78159f1b96b0aec652`. That run scanned 493 source files, checked 934 local Markdown links with zero missing targets, and extracted 38 parent edges with zero unresolved and zero ambiguous edges. Eleven exact-content duplicate groups have candidate relationships; semantic equivalence and repeated ID occurrence adjudication remain open.
+
+
+
+## 13. Final snapshot pointer
+The current durable snapshot has been refreshed to [H0GMS v1.2.0](./HISTORICAL-0.0-GRAPH-MANIFEST-SNAPSHOT-2026-10-21-001.md), based on run 39510341086. The final audited tree at that run had 0 missing local Markdown links, 0 unresolved parent edges, 0 ambiguous parent edges, 11 exact duplicate groups and 11 explicit non-destructive alias/mirror candidates. Repeated IDs and EVT-number collisions remain role-classification work, not automatically closed conflicts.
