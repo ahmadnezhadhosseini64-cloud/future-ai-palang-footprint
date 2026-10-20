@@ -8,7 +8,7 @@
 - Timezone / منطقهٔ زمانی: Asia/Tehran (UTC+03:30)
 - Owner / مالک: احمد پلنگ
 - Project / پروژه: Future AI / Palang Footprint / HAIF
-- Status / وضعیت: REPOSITORY WRITE + READ-BACK PENDING FINAL CROSS-LINK CHECK.
+- Status / وضعیت: REPOSITORY WRITE + READ-BACK + CROSS-LINK CONTENT MATCH VERIFIED; full historical reconciliation and runtime tests remain OPEN.
 - Origin / منشأ: کاربر دستور داد زنجیرهٔ نقاط ۰.۰ به‌صورت چهارتایی پیش برود و نقاط به هم وصل شوند، اما هر کشف یا الگوی رفتاری قبل از ورود به معماری مادر بررسی و اعتبارسنجی شود.
 - Governing reference / سند حاکم: `docs/reference/REFERENCE-DOCUMENTS/FOUR-LINKED-0.0-CHAIN-AND-BEHAVIORAL-DISCOVERY-GATE-2026-10-20-001.md`
 - Registry / دفتر ۰.۰: `docs/0.0/README.md`
