@@ -160,3 +160,14 @@ On 2026-10-20, the user explicitly approved applying the temporal bracketing rul
 - Buffer / Persistent Memory / Library / Dropbox: not independently verified by this repository action. Dropbox failover anchor remains OPEN / WAITING.
 - Resume instruction: fetch the anchor, EVT-0018, canonical reference, living reference, behavior trace, queue index and 0.0 registry; compare IDs, links, temporal rule and destination-specific statuses. Preserve earlier 0.0 anchors.
 - User-approval event record: [EVT-0019 — Temporal Bracketing User Acceptance](../docs/architecture/BEHAVIOR-TRACE/EVT-0019-TEMPORAL-BRACKETING-USER-ACCEPTANCE-2026-10-20.md).
+
+
+## ثبت حاکم جدید — قرارداد بررسی واقعی و منع گزارش خالی (2026-10-20)
+- **Stable ID:** EVIDENCE-FIRST-NO-EMPTY-REPORT-AND-REGISTER-EXECUTION-PACT-2026-10-20-001
+- **Production ID:** EFNERP-HAIF-2026-10-20-001
+- **Version:** 1.0.0
+- **سند مرجع کامل:** [قرارداد اجرایی ثبت مبتنی بر شواهد و منع گزارش خالی](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/EVIDENCE-FIRST-NO-EMPTY-REPORT-AND-REGISTER-EXECUTION-PACT-2026-10-20-001.md)
+- **قاعده:** قبل از ادعای ثبت/کامل‌بودن، مرجع واقعی را بررسی کن؛ پس از نوشتن بازخوانی و تطبیق انجام بده؛ زمان دقیق بی‌شاهد را UNKNOWN / UNVERIFIED نگه دار؛ Repository، Library، Buffer، Persistent Memory و Dropbox را مستقل گزارش کن؛ ثبت ناقص را کامل جلوه نده.
+- **وضعیت در این مرحله:** سند مرجع اصلی از مخزن بازخوانی شد و محتوای مورد انتظار بررسی شد. این لنگر پس از به‌روزرسانی باید دوباره از مخزن خوانده و تطبیق شود.
+- **لنگرهای قبلی:** هیچ نقطهٔ ۰.۰ قبلی با این ثبت جایگزین یا بسته نمی‌شود.
+- **مقصدهای خارج از مخزن:** Library، Buffer و Persistent Memory هنوز مستقل تأیید نشده‌اند؛ Dropbox OPEN / WAITING باقی می‌ماند.
