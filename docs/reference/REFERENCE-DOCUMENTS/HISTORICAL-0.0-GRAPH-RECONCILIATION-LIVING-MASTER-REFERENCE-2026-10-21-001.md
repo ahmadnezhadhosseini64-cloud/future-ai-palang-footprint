@@ -157,3 +157,13 @@ This document can be considered repository-integrated only after the file, index
 - **Acceptance gates:** all local Markdown links must remain at zero in the latest run; the final manifest must have no fabricated parent tokens; ID groups are occurrence groups until definition/reference/mirror role is adjudicated; semantic relationships remain OPEN until reviewed and linked.
 - **Repository-only scope:** Buffer, Library, Persistent Memory and Dropbox are explicitly out of scope and were not tested.
 - **Change log:** v1.2.0 adds explicit non-destructive alias decisions, the corrected EVT-0052 chain, and the superseded mistaken EVT-0051 path disclosure.
+
+
+
+## Addendum v1.3.0 — verified manifest snapshot and structural closure
+- **Verified snapshot:** [H0GMS-2026-10-21-001](./HISTORICAL-0.0-GRAPH-MANIFEST-SNAPSHOT-2026-10-21-001.md).
+- **Workflow evidence:** run 39510053810, artifact 12304693811, audited commit `221b15b324eda4a454272c18e5ddf37dc22b75d8`, audit UTC `2026-10-20T22:42:36Z`, digest `sha256:04838c0f6560dbda83a101d1d32ef6e0fe165c1474aaf19634598435801ac1dd`.
+- **Structural result:** 492 source files scanned, 912 local Markdown link edges, 0 missing local links, 38 declared parent edges, 0 unresolved parent edges and 0 ambiguous parent edges. Builder and workflow completed successfully.
+- **Duplicate/identity state:** 11 exact-content duplicate groups now have explicit non-destructive candidate decisions; 33 Stable ID and 42 Production ID repeated-occurrence groups remain to be semantically classified. Eight EVT-number collision groups remain disclosed.
+- **Closure boundary:** structural links and declared-parent extraction are closed for this snapshot. Full natural-language semantic equivalence across every source document remains OPEN / PARTIAL. The new snapshot is evidence of structural consistency, not a blanket semantic sign-off.
+- **Change log:** v1.3.0 records the artifact-bound manifest snapshot and explicit structural-vs-semantic closure boundary.
