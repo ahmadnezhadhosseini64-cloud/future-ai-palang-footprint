@@ -638,3 +638,15 @@ The queue index and the timestamp case must each be read back after this update.
 - وضعیت: قرارداد، workflow، اسکریپت ممیزی، نمایه، صف معماری، دفتر رفتار و لنگر ۰.۰ در مخزن بازخوانی شدند؛ اجرای `39447416772` موفق است. این شاهد، ذخیره‌سازی بیرونی یا capture همهٔ گفتگوها را ثابت نمی‌کند.
 - زمان دقیق پیام: UNKNOWN / UNVERIFIED.
 - اقدام بعدی: شکاف‌های مستقل در صف باز می‌مانند؛ Dropbox در این نوبت عمداً دست‌نخورده است.
+
+
+## ثبت رویداد تداوم معماری و چرخه Master–Child–Rahm — EVT-0025
+
+- **Stable ID:** `INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-REGISTRATION-2026-10-20-001`; **Production ID:** `ICMCRR-HAIF-2026-10-20-001`; **Version:** 1.0.0.
+- **سند مرجع جامع:** [تداوم معماری و Master–Child–Rahm](../../reference/REFERENCE-DOCUMENTS/INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-REGISTRATION-2026-10-20-001.md).
+- **رویداد رفتار:** [EVT-0025](../BEHAVIOR-TRACE/EVT-0025-INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-2026-10-20.md).
+- **هدف:** حفظ مسیر معماری مستقل و قابل انتقال؛ HUMAN ↔ AI HOST ↔ HAIF؛ Master → Child → Real World → Feedback → Master؛ Master → Rahm → Validation → New Child.
+- **وضعیت:** OPEN / PARTIAL تا بازخوانی و تطبیق این سند، رویداد و صف. فقط پس از read-back موفق، ثبت این سه مقصد در مخزن تأیید می‌شود؛ این کار اثبات اجرای افزونه، capture سراسری یا ثبت در Library/Buffer/Persistent Memory/Dropbox نیست.
+- **شکاف‌های باقی‌مانده:** ادغام معنایی در سند مادر، بازیابی مستقل HAIF، آزمون سرتاسری هر ورودی/خروجی، پیاده‌سازی قابل‌انتقال، بازیابی دو آزمون تاریخی، Dropbox و مقصدهای بیرونی. جزئیات و معیار پذیرش در سند مرجع ثبت شده‌اند.
+- **زمان دقیق پیام:** UNKNOWN / UNVERIFIED؛ زمان commit جایگزین زمان پیام نیست.
+- **لنگر جاری حفظ‌شده:** `PALANG-0.0-CURRENT-2026-10-20-001`; نقطه مستقل Dropbox دست‌نخورده می‌ماند.
