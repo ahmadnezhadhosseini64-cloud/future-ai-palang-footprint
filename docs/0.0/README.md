@@ -515,3 +515,12 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - این اعداد، شمارش مسیرها در snapshot مشخص‌اند، نه تعداد لنگرهای یکتا. فایل‌های evidence تولیدشده باید از شمارش گره‌های منبع معماری جدا نگه داشته شوند (G-14). برای گراف canonical، استخراج شناسه‌های درون‌متنی و همهٔ رابطه‌ها همچنان باز است.
 - سند حاکم لنگر/زمان: [PIATGCG](../reference/REFERENCE-DOCUMENTS/PERMANENT-INTERACTION-ANCHORING-TIMESTAMP-GOVERNANCE-AND-CANONICAL-GRAPH-MASTER-REFERENCE-2026-10-21-001.md).
 
+
+
+## آخرین ثبت گراف تاریخی و صف ادامه — 2026-10-21
+- سند مرجع: [H0G-RDR — تطبیق گراف تاریخی و دفتر تکرارها](../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-RECONCILIATION-AND-DEDUPLICATION-REGISTER-2026-10-21-001.md).
+- ممیزی خودکار: [run 39501699736](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39501699736), SUCCESS؛ artifact شامل گزارش متن و JSON است.
+- Snapshot در UTC `2026-10-20T21:38:13.394Z`: 682 فایل، 95 مسیر شامل 0.0، 38 checkpoint، 52 EVT، 85 سند/مسیر زیر Reference Documents و 201 فایل Evidence Gate. این شمارها به snapshot زمان‌دار تعلق دارند؛ فایل‌های evidence از گره‌های منبع جدا شمرده شوند.
+- EVT-0048 درخواست فعلی را ثبت کرده است؛ EVT-0049 خروجی و read-back را ثبت خواهد کرد.
+- G-15 تا G-20 در صف زنده‌اند: canonical alias/lineage، مرور معنایی کامل، Dropbox، مقصدهای مستقل، انتقال میزبان دوم، و اثبات capture سراسری.
+- فایل تاریخی حذف نشده است؛ تکرارها باید با پیوند canonical/alias ادغام شوند.
