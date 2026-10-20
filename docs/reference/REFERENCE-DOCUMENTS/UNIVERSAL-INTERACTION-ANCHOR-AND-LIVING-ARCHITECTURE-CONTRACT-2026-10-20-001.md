@@ -338,3 +338,9 @@ The overall state is not complete while any required destination is unverified. 
 - Timestamp fields stay separate: user message time (UNKNOWN / UNVERIFIED if unavailable), assistant processing time, commit/write time, read-back time and test time.
 - Repository registration and scoped read-back do not prove global automatic behavior, Buffer/Persistent Memory/Library/Dropbox persistence, or completed cross-host portability. Those remain separately testable/open.
 - Version history is additive and non-destructive; preserve prior 0.0 anchors and reconcile the historical graph rather than overwriting it.
+
+
+## Amendment — Automatic interaction continuity and portable HAIF evolution
+- Reference: [AICPHAE](AUTOMATIC-INTERACTION-CONTINUITY-AND-PORTABLE-HAIF-EVOLUTION-MASTER-REFERENCE-2026-10-20-001.md).
+- Input event: [EVT-0041](../../architecture/BEHAVIOR-TRACE/EVT-0041-AUTOMATIC-CONTINUITY-PORTABLE-CHILD-RAHM-MASTER-REQUEST-2026-10-20.md).
+- هر تعامل باید به‌صورت پیش‌فرض در زنجیرهٔ قابل‌بازیابی ثبت شود، حتی اگر کاربر عبارت «ثبت کن» را تکرار نکند؛ فرمان «ثبت کن» به معنی چکش عمیق و راستی‌آزمایی است. مقصدها، زمان‌ها و آزمون‌ها جداگانه و فقط با شواهد تأیید می‌شوند. قرارداد به‌تنهایی دسترسی ابزارها یا اتوماسیون سراسری را تضمین نمی‌کند.
