@@ -557,3 +557,7 @@
 - Evidence: workflow [39502190776](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39502190776) SUCCESS; artifact `living-architecture-audit-39502190776`, digest `sha256:0bff6ba4b290be28a172dce5682ac7396d52013a62d6b61d2ccd93a52df45dd9`.
 - Output event: [EVT-0049](../../architecture/BEHAVIOR-TRACE/EVT-0049-ASSISTANT-EXECUTION-AND-RECONCILIATION-2026-10-21.md).
 - Snapshot is historical and time-bounded; after EVT-0049 and subsequent workflow writes the live tree count changes. No historical record was deleted.
+
+
+## سند مبنای ادامهٔ canonical
+- [CCCMR-2026-10-21-001](./CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001.md) — سند مرجع مادر جامع و نقطهٔ ادامهٔ فعلی، ACTIVE / LIVING. از این سند شروع کن و موجودی C0GIR را به‌عنوان دادهٔ زمان‌دار بخوان؛ اعداد snapshotها را با هم ادغام نکن.
