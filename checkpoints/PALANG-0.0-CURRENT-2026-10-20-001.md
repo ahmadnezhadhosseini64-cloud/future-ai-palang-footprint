@@ -58,3 +58,12 @@ This record is authored from the user instruction and available conversation con
 - User's exact message time for this reaffirmation: UNKNOWN / UNVERIFIED. This is intentionally not inferred from the prior anchor's timestamp.
 - Related Dropbox anchor remains separate and OPEN / WAITING.
 - Destination status: repository read-back/match is verified for this file; Buffer, Persistent Memory, Library and Dropbox are not verified by this repository operation.
+
+
+## Current request — complete path and governing addendum
+- Stable ID: `PALANG-0.0-COMPLETE-PATH-AND-GOVERNING-ADDENDUM-2026-10-20-001`
+- Full recoverable path record: [PALANG-0.0 complete path and governing addendum](../docs/reference/REFERENCE-DOCUMENTS/PALANG-0.0-COMPLETE-PATH-AND-GOVERNING-ADDENDUM-2026-10-20-001.md).
+- Governing living reference: [section 20](../docs/reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md#20-مسیر-کامل-ثبت-و-بازیابی-الحاقیهٔ-حاکم-زنده--2026-10-20).
+- Current request exact time: UNKNOWN / UNVERIFIED.
+- Required continuation: re-read and reconcile the full path record, this anchor, and governing reference sections 19–20; retain all previous 0.0 anchors and the open Dropbox task.
+- Destination state remains separate: Repository only can be verified by this GitHub operation; Buffer, Persistent Memory, Library, and Dropbox remain NOT VERIFIED unless independently evidenced.
