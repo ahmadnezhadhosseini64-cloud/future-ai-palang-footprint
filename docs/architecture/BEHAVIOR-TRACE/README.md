@@ -260,3 +260,9 @@
 - [سازندهٔ manifest گراف](../../../scripts/build_historical_graph_manifest.py)
 - Snapshot artifact: run 39502860923 / artifact 12301702263 / audited commit 3da9ed9ae48d42ce95eb511ee04ce472c33d31d9. گزارش واقعی: 482 source files، 11 exact duplicate groups، 13 Stable ID groups، 24 Production ID groups، 6 EVT-number groups، 15 missing local links.
 - Semantic graph remains OPEN / PARTIAL until fresh manifest read-back and human review of meanings/lineage.
+
+
+
+## Alias / lineage adjudication
+- [H0CALDR — دفتر تصمیم‌های تکرارها](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-CANONICAL-ALIAS-LINEAGE-DECISION-REGISTER-2026-10-21-001.md) records non-destructive role-based mirror proposals for the 11 exact duplicate groups. Two numbered registration/checkpoint pairs remain OPEN pending lineage review.
+- Canonical graph-manifest implementation and link repairs are tracked by [EVT-0052](./EVT-0052-CANONICAL-GRAPH-MANIFEST-AND-LINK-REPAIR-2026-10-21.md).
