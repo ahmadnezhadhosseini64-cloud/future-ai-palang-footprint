@@ -19,8 +19,6 @@ required = {
     "architecture verification event": "docs/architecture/BEHAVIOR-TRACE/EVT-0024-ARCHITECTURE-BUILD-VERIFICATION-2026-10-20.md",
     "behavior trace log": "docs/architecture/BEHAVIOR-TRACE/INTERACTION-BEHAVIOR-TRACE-2026-10-19-001.md",
     "0.0 registry": "docs/0.0/README.md",
-    "current 0.0 anchor": "checkpoints/PALANG-0.0-CURRENT-2026-10-20-001.md",
-    "master reference vault": "docs/reference/REFERENCE-DOCUMENTS/MRV-ARCHITECTURE-AND-LIVING-REFERENCE-CONTRACT-2026-09-15-001.md",
 }
 errors = []
 for label, rel in required.items():
@@ -30,17 +28,10 @@ for label, rel in required.items():
 expected_ids = (
     "COMPREHENSIVE-EXCAVATION-ARCHITECTURE-STATE-2026-10-20-001",
     "LIVING-INTERACTION-AUTOMATION-AND-RECONCILIATION-2026-10-20-001",
-    "ARCHITECTURE-BUILD-VERIFICATION-2026-10-20-001",
 )
 for rel, label in (
     ("docs/REFERENCE_INDEX.md", "REFERENCE_INDEX"),
     ("docs/architecture/INTEGRATION-QUEUE/README.md", "ARCHITECTURE_QUEUE"),
-    ("docs/architecture/BEHAVIOR-TRACE/README.md", "BEHAVIOR_TRACE_INDEX"),
-    ("docs/architecture/BEHAVIOR-TRACE/INTERACTION-BEHAVIOR-TRACE-2026-10-19-001.md", "BEHAVIOR_TRACE_LOG"),
-    ("docs/0.0/README.md", "ZERO_ZERO_REGISTRY"),
-    ("checkpoints/PALANG-0.0-CURRENT-2026-10-20-001.md", "CURRENT_ZERO_ZERO_ANCHOR"),
-    ("docs/reference/REFERENCE-DOCUMENTS/MRV-ARCHITECTURE-AND-LIVING-REFERENCE-CONTRACT-2026-09-15-001.md", "MASTER_REFERENCE_VAULT"),
-    ("docs/architecture/BEHAVIOR-TRACE/EVT-0024-ARCHITECTURE-BUILD-VERIFICATION-2026-10-20.md", "ARCHITECTURE_VERIFICATION_EVENT"),
 ):
     path = ROOT / rel
     if path.is_file():
@@ -48,6 +39,29 @@ for rel, label in (
         for stable_id in expected_ids:
             if stable_id not in content:
                 errors.append(f"{label}_MISSING_ID id={stable_id}")
+
+integration_id = "ARCHITECTURE-BUILD-VERIFICATION-2026-10-20-001"
+integration_surfaces = (
+    ("docs/REFERENCE_INDEX.md", "REFERENCE_INDEX"),
+    ("docs/architecture/INTEGRATION-QUEUE/README.md", "ARCHITECTURE_QUEUE"),
+    ("docs/architecture/BEHAVIOR-TRACE/README.md", "BEHAVIOR_TRACE_INDEX"),
+    ("docs/architecture/BEHAVIOR-TRACE/INTERACTION-BEHAVIOR-TRACE-2026-10-19-001.md", "BEHAVIOR_TRACE_LOG"),
+    ("docs/0.0/README.md", "ZERO_ZERO_REGISTRY"),
+    ("checkpoints/PALANG-0.0-CURRENT-2026-10-20-001.md", "CURRENT_ZERO_ZERO_ANCHOR"),
+    ("docs/reference/REFERENCE-DOCUMENTS/MRV-ARCHITECTURE-AND-LIVING-REFERENCE-CONTRACT-2026-09-15-001.md", "MASTER_REFERENCE_VAULT"),
+    ("docs/reference/REFERENCE-DOCUMENTS/COMPREHENSIVE-EXCAVATION-ARCHITECTURE-STATE-2026-10-20-001.md", "EXCAVATION_REFERENCE"),
+    ("docs/architecture/BEHAVIOR-TRACE/EVT-0024-ARCHITECTURE-BUILD-VERIFICATION-2026-10-20.md", "ARCHITECTURE_VERIFICATION_EVENT"),
+    ("recovery/PENDING_REGISTRATION_QUEUE.md", "PENDING_REGISTRATION_QUEUE"),
+    ("docs/architecture/INTEGRATION-QUEUE/OPEN-GAPS-RECOVERY-REGISTER-2026-10-15-001.md", "OPEN_GAPS_REGISTER"),
+)
+for rel, label in integration_surfaces:
+    path = ROOT / rel
+    if not path.is_file():
+        errors.append(f"{label}_MISSING_FILE path={rel}")
+        continue
+    content = path.read_text(encoding="utf-8")
+    if integration_id not in content:
+        errors.append(f"{label}_MISSING_ID id={integration_id}")
 
 print("LIVING_ARCHITECTURE_AUDIT")
 print(f"required_files_checked={len(required)}")
