@@ -3,7 +3,7 @@
 ## شناسنامه و وضعیت
 - Stable ID / شناسه پایدار: PERMANENT-INTERACTION-ANCHORING-TIMESTAMP-GOVERNANCE-AND-CANONICAL-GRAPH-MASTER-REFERENCE-2026-10-21-001
 - Production ID / شناسه تولید: PIATGCG-2026-10-21-001
-- Version / نسخه: 1.0.7
+- Version / نسخه: 1.0.8
 - Owner / مالک: Ahmad Nezhadhosseini / احمد پلنگ
 - Project / پروژه: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
 - Scope / دامنه: حاکمیت تعامل، لنگر ورودی/خروجی، زمان‌گذاری، گراف تاریخی ۰.۰، ثبت معماری، خاک‌برداری، بستهٔ انتقال میزبان
@@ -278,7 +278,7 @@ T1 ورودی و خروجی قابل‌بازیابی؛ T2 زمان‌های م�
 
 
 ## 38. خروجی سند مادر تجمیعی — EVT-0051
-- Current canonical continuation: [CCCMR-2026-10-21-001](./CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001.md), Version 1.0.1.
+- Current canonical continuation: [CCCMR-2026-10-21-001](./CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001.md), Version 1.0.2.
 - Input: [EVT-0050](../../architecture/BEHAVIOR-TRACE/EVT-0050-USER-REQUEST-CONSOLIDATED-LIVING-MASTER-CONTINUATION-2026-10-21.md).
 - Output and verification record: [EVT-0051](../../architecture/BEHAVIOR-TRACE/EVT-0051-ASSISTANT-CONSOLIDATED-MASTER-CREATION-AND-READBACK-2026-10-21.md).
 - The consolidated master is the current continuation entry point; the historic graph remains OPEN / PARTIAL.
