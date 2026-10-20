@@ -323,3 +323,14 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - **سند مرجع کامل:** [قرارداد لنگر هر ورودی و خروجی](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/EVERY-INPUT-OUTPUT-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001.md)
 - **قاعده:** هر پیام کاربر و هر پاسخ دستیار باید به رویداد/لنگر زنجیره متصل شود؛ پیام‌های عادی رکورد فشردهٔ قابل‌بازیابی و تصمیم‌ها/قواعد/خروجی‌های بادوام رکورد کامل می‌خواهند. زمان دقیق بدون شاهد نامعلوم می‌ماند. لنگرهای مستقل قبلی حفظ می‌شوند.
 - **وضعیت بیرون از مخزن:** Library، Buffer، Persistent Memory و Dropbox مستقل تأیید نشده‌اند.
+
+
+## تأکید اجرایی — لنگر برای هر ورودی و خروجی (EVT-0021, 2026-10-20)
+- **Stable ID:** `EVERY-INPUT-OUTPUT-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001`
+- **Production ID:** `EIOACRG-2026-10-20-001`
+- **رویداد تعامل:** [EVT-0021 — تأکید دوباره بر اجرای لنگر برای هر ورودی و خروجی](../architecture/BEHAVIOR-TRACE/EVT-0021-USER-REAFFIRMS-EVERY-INPUT-OUTPUT-ANCHOR-2026-10-20.md)
+- **سند حاکم کامل:** [قرارداد لنگر هر ورودی و خروجی](../reference/REFERENCE-DOCUMENTS/EVERY-INPUT-OUTPUT-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001.md)
+- **قاعده:** هر ورودی کاربر و هر خروجی دستیار باید به‌عنوان رویداد قابل‌ردیابی حفظ و به لنگر/رویداد مرتبط متصل شود؛ رویدادهای ساده رکورد فشردهٔ قابل‌بازیابی می‌گیرند و تصمیم‌ها، قواعد، اصلاحات و خروجی‌های بادوام مستندسازی کامل می‌خواهند. زمان دقیق بدون شاهد UNKNOWN / UNVERIFIED می‌ماند.
+- **چرخهٔ مخزن:** WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← تطبیق ← تأیید).
+- **مرز مقصدها:** ثبت مخزن، Library، Buffer، Persistent Memory و Dropbox جداگانه سنجیده می‌شود؛ این اشاره‌گر اثبات ثبت در مقصدهای بیرونی نیست.
+- **وضعیت رویداد:** پروندهٔ EVT-0021 ایجاد شد؛ دفتر مرکزی باید پس از این تغییر دوباره بازخوانی و تطبیق شود. مقصدهای بیرونی همچنان مستقل تأییدنشده‌اند.
