@@ -566,3 +566,14 @@ The queue index and the timestamp case must each be read back after this update.
 - **مقصدهای معماری:** MRV، فرمان حاکم «ثبت کن»، لنگر جاری ۰.۰، دفتر مرکزی ۰.۰ و این صف.
 - **وضعیت:** پروندهٔ مرجع در مخزن ایجاد و بازخوانی شده است؛ ادغام این مورد در فایل‌های مقصد تا بازخوانی مستقل هر فایل، OPEN / IN PROGRESS است. Library، Buffer، Persistent Memory و Dropbox مستقل تأیید نشده‌اند.
 - **اقدام بعدی:** هر مقصد معماری را جداگانه بازخوانی و تطبیق بده؛ سپس همین ردیف را فقط با شواهد واقعی به VERIFIED ارتقا بده.
+
+
+## مورد صف — لنگر برای هر ورودی و خروجی
+
+- **Stable ID:** `EVERY-INTERACTION-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001`
+- **Production ID:** `EIACRG-HAIF-2026-10-20-001`
+- **Version:** `1.0.0`
+- **موضوع:** ثبت جامع و زمان‌مند هر پیام کاربر و هر خروجی نهایی دستیار با لنگر مستقل و مسیر بازیابی.
+- **مرجع کامل:** [سند حاکم لنگر تک‌تک تعامل‌ها](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/EVERY-INTERACTION-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001.md)
+- **معیار پذیرش:** فایل مرجع بازخوانی و تطبیق شود؛ این قاعده در MRV، قرارداد فرمان ثبت، مرجع زنده، لنگر جاری ۰.۰، شاخص ۰.۰ و ردپای رفتار پیوند داده شود؛ هر فایل تغییرکرده دوباره خوانده شود.
+- **وضعیت:** سند مرجع اصلی نوشته شده؛ این مورد تا بازخوانی مستقل فایل‌های مقصد OPEN / IN PROGRESS است. Library، Buffer، Persistent Memory و Dropbox مستقل تأیید نشده‌اند.
