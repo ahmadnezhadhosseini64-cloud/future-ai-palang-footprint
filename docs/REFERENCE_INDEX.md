@@ -96,3 +96,10 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - صف زنده: [OPEN-GAPS-RECOVERY-REGISTER-2026-10-15-001](architecture/INTEGRATION-QUEUE/OPEN-GAPS-RECOVERY-REGISTER-2026-10-15-001.md).
 - وضعیت: ثبت و پیوندهای مخزن پس از نوشتن، بازخوانی و تطبیق شدند؛ گیت‌های اجرای خودکار و مقصدهای بیرونی همچنان باز هستند.
 - زمان دقیق پیام: UNKNOWN / UNVERIFIED؛ زمان commit جایگزین زمان پیام نیست.
+
+
+## Project goal and gap reconciliation — PGGR-2026-10-20-001
+- Canonical reference: [هدف نهایی پروژه و تطبیق شکاف‌ها](reference/REFERENCE-DOCUMENTS/PROJECT-GOAL-AND-GAP-RECONCILIATION-2026-10-20-001.md).
+- Behavior event: [EVT-0028](architecture/BEHAVIOR-TRACE/EVT-0028-PROJECT-GOAL-GAP-RECONCILIATION-2026-10-20.md).
+- MRV, architecture queue and open-gap register cross-linked; repository read-back/match verified for those five files. Library, Buffer, Persistent Memory, Dropbox and end-to-end automatic execution remain open/unverified.
+- Exact user-message time: UNKNOWN / UNVERIFIED.
