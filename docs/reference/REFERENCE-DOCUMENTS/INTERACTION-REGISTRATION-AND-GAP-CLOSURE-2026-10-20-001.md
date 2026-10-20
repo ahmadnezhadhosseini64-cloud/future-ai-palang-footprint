@@ -89,3 +89,10 @@ CAPTURE → CLASSIFY → COMPARE → EVIDENCE → HYPOTHESIS → TEST → RECONC
 - Dropbox: OPEN / WAITING تا اتصال، نوشتن، بازخوانی و بازیابی مستقل آزموده شوند.
 - Global automatic anchoring / لنگرگذاری خودکار سراسری: OPEN / NOT PROVEN.
 - Full historical 0.0 reconciliation / تطبیق کامل نقاط تاریخی: OPEN.
+
+
+## اصلاحیهٔ ثبت زمانی — پیوند به EVT-0033
+- این سند باید با قاعدهٔ دوزمانهٔ [TWO-TIME-ANCHORING-AND-LIVING-CONTINUITY-ARCHITECTURE-2026-10-20-001](TWO-TIME-ANCHORING-AND-LIVING-CONTINUITY-ARCHITECTURE-2026-10-20-001.md) خوانده شود.
+- رویداد اصلاح قاعده: [EVT-0033](../../architecture/BEHAVIOR-TRACE/EVT-0033-TWO-TIME-ANCHORING-AND-LIVING-CONTINUITY-2026-10-20.md).
+- در این رکورد قبلی، زمان پیام کاربر UNKNOWN / UNVERIFIED بوده است؛ زمان پردازش دستیار در همان نوبت به‌طور جداگانه ثبت نشده بود. این نقص با قاعدهٔ جدید برای رکوردهای بعدی اصلاح می‌شود؛ تاریخچهٔ قبلی بی‌صدا بازنویسی نمی‌شود.
+- زمان پردازش دستیار برای اجرای اصلاحیهٔ جدید: 2026-10-20T22:20:19+03:30 (Asia/Tehran); UTC 2026-10-20T18:50:19Z.
