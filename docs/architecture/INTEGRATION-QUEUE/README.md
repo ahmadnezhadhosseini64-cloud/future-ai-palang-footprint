@@ -527,3 +527,18 @@ The queue index and the timestamp case must each be read back after this update.
 - Apply the full cycle to significant outputs: preserve, identify, classify, provenance, IDs/version, anchor, complete reference, architecture links, timestamp evidence, write, read-back, match, verify, reconcile, per-destination status, next action and resume.
 - Unknown timestamps remain UNKNOWN / UNVERIFIED. Repository, buffer, persistent memory, library and Dropbox remain separate destinations.
 - After this write, read this index back and compare the new section and canonical link.
+
+## 22. ثبت و پیوند EVT-0018 — قاعدهٔ بازه‌بندی زمان نامعلوم
+- Stable ID: TEMPORAL-BRACKETING-AND-BOUNDED-TIMESTAMP-GOVERNANCE-2026-10-20-001
+- Production ID: TBBTG-HAIF-2026-10-20-001
+- Version: 1.0.0
+- Event record: [EVT-0018 — ثبت محصور بین دو لنگر زمانی](../BEHAVIOR-TRACE/EVT-0018-TEMPORAL-BRACKETING-RULE-2026-10-20.md)
+- Canonical reference: [Permanent living execution governance, section 9](../../reference/REFERENCE-DOCUMENTS/PERMANENT-LIVING-EXECUTION-ANCHOR-TIMESTAMP-GOVERNANCE-2026-10-20-001.md)
+- Living reference: [Unified Output Anchor Registration](../../reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md)
+- Current 0.0 anchor: [PALANG-0.0-CURRENT-2026-10-20-001](../../../checkpoints/PALANG-0.0-CURRENT-2026-10-20-001.md)
+- Central 0.0 registry: [docs/0.0/README.md](../../0.0/README.md)
+- Rule: where exact time is unavailable, record a bounded interval only when timestamped before/after anchors and event ordering are supported by evidence. Keep exact event time UNKNOWN / UNVERIFIED; never invent a midpoint or substitute commit time.
+- Request timestamp: UNKNOWN / UNVERIFIED.
+- Queue state: REPOSITORY LINKAGE IN PROGRESS until this index and all updated files are fetched and matched. Other destinations remain independently unverified.
+- Acceptance: event ID, Stable ID, Production ID, version, links, temporal rule, uncertainty and recovery path match across the canonical reference, event record, behavior trace, 0.0 registry, current anchor and this queue index.
+- Next action: fetch and compare every file in the acceptance list; retain the record as OPEN if any mismatch or unavailable evidence remains.
