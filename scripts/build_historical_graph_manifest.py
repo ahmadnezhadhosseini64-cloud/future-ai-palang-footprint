@@ -34,7 +34,18 @@ for p in source_files:
     stable = vals(body, r"^\s*(?:[-*]\s*)?(?:Stable ID|Stable-ID|Canonical Stable ID)\s*:\s*`?([^`\r\n]+)")
     prod = vals(body, r"^\s*(?:[-*]\s*)?(?:Production ID|Production-ID)\s*:\s*`?([^`\r\n]+)")
     versions = vals(body, r"^\s*(?:[-*]\s*)?Version\s*:\s*`?([^`\r\n]+)")
-    parents = vals(body, r"^\s*(?:[-*]\s*)?(?:Parent(?: input| event| reference)?|Parent ID|Parent Stable ID)\s*:\s*`?([^`\r\n]+)")
+    parent_values = vals(body, r"^\s*(?:[-*]\s*)?(?:Parent(?: input| event| reference)?|Parent ID|Parent Stable ID)\s*:\s*`?([^`\r\n]+)")
+    parents = []
+    for pv in parent_values:
+        labels = re.findall(r"\[([^\]]+)\]\(", pv)
+        if labels:
+            parents.extend(labels)
+        else:
+            evt_refs = re.findall(r"\bEVT-\d+\b", pv)
+            if evt_refs:
+                parents.extend(evt_refs)
+            elif pv and not re.match(r"^(RELATED IDS|NONE|N/A)\b", pv, re.I):
+                parents.append(pv.strip(" `.;"))
     for x in stable: stable_map[x].append(relpath)
     for x in prod: prod_map[x].append(relpath)
     evt = re.match(r"EVT-(\d+)-", p.name)
@@ -62,6 +73,10 @@ id_to_paths = defaultdict(set)
 for mapping in (stable_map, prod_map):
     for ident, paths in mapping.items():
         for p in paths: id_to_paths[ident].add(p)
+# A short EVT number is a path locator, not a unique identity; preserve all paths if duplicated.
+for node in nodes:
+    if node["event_number"]:
+        id_to_paths[f"EVT-{node['event_number']}"].add(node["path"])
 parent_edges, unresolved, ambiguous = [], [], []
 for node in nodes:
     for parent in node["declared_parents"]:
