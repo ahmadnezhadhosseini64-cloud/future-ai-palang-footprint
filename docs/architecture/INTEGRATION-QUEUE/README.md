@@ -3,7 +3,7 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.7.7
+- Version: 1.7.8
 - Date: 2026-10-20
 - Exact Time: 11:25 local project time, minute precision; exact seconds not captured.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
@@ -24,6 +24,7 @@ PENDING ≠ LOST (در انتظار ≠ گم‌شده). ثبت در این صف 
 | UIALAC-2026-10-20-001 | قرارداد جامع لنگر هر ورودی/خروجی، چرخه ثبت، سند مرجع، آزمون و تداوم معماری | REPOSITORY WRITE + READ-BACK VERIFIED; linked in reference index; full architecture-master reconciliation, Buffer, Library and Persistent Memory remain unverified | سند مرجع جامع، نمایه مرجع، سند مادر، دفتر رفتار تعامل و آزمون سرتاسری | [قرارداد جامع لنگر و معماری زنده](../../reference/REFERENCE-DOCUMENTS/UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001.md) |
 | ARCH-0.0-TIMESTAMP-GOVERNANCE-2026-10-12-001 | اتصال قرارداد زمان‌گذاری هر نقطهٔ ۰.۰ به اسناد مرجع مادر و حاکمیت فرمان | REPOSITORY INTEGRATION VERIFIED — پنج مقصد حاکم/عملیاتی بازخوانی و تطبیق شدند؛ Dropbox، بافر، کتابخانه و حافظهٔ پایدار تأیید نشده‌اند | سند مرجع مادر، سند معماری چندنقطه‌ای ۰.۰، سند حاکم فرمان «ثبت کن»، قرارداد عمومی ثبت، دفتر ۰.۰ | [پروندهٔ زمان‌گذاری ۰.۰](./ARCH-0.0-TIMESTAMP-GOVERNANCE-2026-10-12-001.md) |
 | UNIVERSAL-ARCHITECTURE-EVOLUTION-DOCUMENTATION-PRINCIPLE-2026-10-12-001 | الزام مستندسازی چرایی، شواهد، روابط و اثبات برای هر تغییر معماری و هر جزء جدید | REPOSITORY INTEGRATION VERIFIED — سند مرجع، فرمان حاکم، قرارداد عمومی، MRV و صف به‌روزرسانی و بازخوانی شده‌اند؛ لایه‌های دیگر تأیید نشده‌اند | سند مرجع مادر، فرمان «ثبت کن»، قرارداد عمومی ثبت، صف‌ها و اجزای جدید پروژه | [پروندهٔ اصل همیشگی مستندسازی معماری](./UNIVERSAL-ARCHITECTURE-EVOLUTION-DOCUMENTATION-PRINCIPLE-2026-10-12-001.md) |
+| EXCAVATION-ROUTINE-EXECUTION-CONTRACT-2026-10-20-001 | اجرای روتین کامل فرمان «خاک‌برداری»؛ بازیابی و تکمیل همهٔ موارد باز، مقصدها و آزمون‌ها | OPEN / ACTIVE RULE — policy file created; execution evidence for all pending tasks remains destination-specific | MRV، قرارداد «ثبت کن»، UIALAC، EVERY-INPUT-OUTPUT، صف‌ها و نقاط ۰.۰، صندوق مستقل، بافر، حافظهٔ پایدار و Dropbox | [قرارداد اجرای روتین خاک‌برداری](./EXCAVATION-ROUTINE-EXECUTION-CONTRACT-2026-10-20-001.md) |
 | REF-ARCHAEOLOGY-EXCAVATION-2026-10-17-001 | خاک‌برداری، تطبیق صف‌ها و بازیابی شکاف‌های باز | OPEN / PARTIAL — مقصدهای بیرونی و پرونده‌های تاریخی هنوز بازند | MRV، صف یکپارچه‌سازی، دفتر شکاف‌ها، دفتر ۰.۰ | [پروندهٔ خاک‌برداری 2026-10-17](../../reference/REFERENCE-DOCUMENTS/REF-ARCHAEOLOGY-EXCAVATION-2026-10-17-001.md) |
 | INITIAL-NAVIGATION-SOLUTION-HUMAN-AI-INTERACTION-2026-10-19-001 | راه‌حل پیمایش اولیه؛ الگوی مستقل حرکت انسان و AI با نقاط کنترل مشترک، ثبت کامل، زمان‌گذاری، بازیابی و اثبات | REPOSITORY REFERENCES READ-BACK VERIFIED; architectural queue case remains OPEN for any remaining destination-specific gates; Buffer/Library/Persistent Memory not independently verified | سند مرجع پیمایش، دفتر ۰.۰، سند مادر و همین صف؛ بررسی مستقل فرمان «ثبت کن» فقط در صورت نیاز به تغییر اختصاصی | [پروندهٔ راه‌حل پیمایش اولیه](./INITIAL-NAVIGATION-SOLUTION-HUMAN-AI-INTERACTION-2026-10-19-001.md) |
 | INTERACTION-BEHAVIOR-TRACE-HUMAN-AI-2026-10-19-001 | دفتر پیوستهٔ رفتار قابل‌مشاهدهٔ انسان و AI؛ ثبت گام‌ها، زمان، منشأ، شواهد و ادامه | Repository references read back; behavior rule and master-reference pointer confirmed; Buffer/Library/Persistent Memory not independently verified | دفتر رفتار تعامل، قاعدهٔ رفتاری شناخت انسان و AI، راه‌حل پیمایش اولیه، دفتر ۰.۰، سند مادر | [دفتر ردیابی رفتار تعامل](../BEHAVIOR-TRACE/INTERACTION-BEHAVIOR-TRACE-2026-10-19-001.md) |
@@ -609,3 +610,8 @@ The queue index and the timestamp case must each be read back after this update.
 - **وضعیت قاعده:** ACTIVE / LIVING — رویهٔ پیش‌فرض در ادامهٔ همکاری.
 - **وضعیت آزمون:** OPEN / PENDING EXECUTION PROOF — تا شواهد انتها‌به‌انتها موجود نشود بسته نیست.
 - **مرجع دروازهٔ اجرایی:** [EVERY-INPUT-OUTPUT-ANCHOR-EXECUTION-GATE](./EVERY-INPUT-OUTPUT-ANCHOR-EXECUTION-GATE-2026-10-20-001.md)
+
+
+## 12. قرارداد روتین اجرای خاک‌برداری — نسخهٔ 1.7.8
+
+فرمان «خاک‌برداری» باید مطابق [قرارداد اجرای روتین خاک‌برداری](./EXCAVATION-ROUTINE-EXECUTION-CONTRACT-2026-10-20-001.md) اجرا شود: بازیابی و بازخوانی پرونده‌های جاری و تاریخی، تکمیل واقعی موارد قابل‌اجرا، تطبیق با اسناد مادر، بررسی مستقل هر مقصد، آزمون Dropbox، بازخوانی و تأیید هر تغییر، و حفظ نقطهٔ ادامه برای همهٔ موارد ناقص. این قرارداد به صف پیوند داده شده است؛ این پیوند به‌تنهایی اثبات اجرای کامل کارها یا خودکارسازی پس‌زمینه نیست.
