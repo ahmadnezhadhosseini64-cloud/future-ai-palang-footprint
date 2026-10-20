@@ -114,3 +114,10 @@ These failures are retained as implementation/test evidence. The current pass pr
 - Artifact ID: `12308872095`; ZIP SHA-256: `sha256:fa80378ea212d7a90ff746bbd4d7b3db7b46e9fcf27f0117fc3f47617f8268bd`.
 - Latest counts: 501 source files; 1,030 local Markdown edges / 0 missing; 38 declared parent edges / 0 unresolved or ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT short-number groups; 11 exact-content duplicate groups; 697 identifier occurrences; 0 decode errors.
 - The additional source file is the second identifier-role review batch. The current snapshot preserves all earlier measurements as historical evidence. Structural acceptance passes; full semantic acceptance remains OPEN / PARTIAL.
+
+
+## Addendum v1.4.0 — latest repository integration pass
+- Workflow run: [39518486151](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39518486151) — SUCCESS.
+- Audited commit: `2b19eeab0c9f8e1b0a16c3a6550b9f791b9cbac8`; runner UTC: `2026-10-20T23:59:24Z`.
+- Latest counts: 501 source files; 1,041 local Markdown edges / 0 missing; 38 declared parent edges / 0 unresolved or ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 exact-content duplicate groups; 697 ID occurrences; 0 decode errors.
+- Artifact details for this run should be read from the workflow page; this addendum records the audited commit and result. Semantic closure remains OPEN / PARTIAL.
