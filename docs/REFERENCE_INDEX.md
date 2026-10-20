@@ -110,3 +110,10 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - Behavior event: [EVT-0029](architecture/BEHAVIOR-TRACE/EVT-0029-MAIN-0.0-LOCK-2026-10-20.md).
 - Prior 0.0 anchors are preserved; Dropbox failover anchor remains separately OPEN / WAITING.
 - Repository registration is separate from Library, Buffer, Persistent Memory and Dropbox; exact user-message time is UNKNOWN / UNVERIFIED.
+
+
+## ثبت فرمان جاری — 2026-10-20
+- Event: [EVT-0030](architecture/BEHAVIOR-TRACE/EVT-0030-REGISTER-COMMAND-ACKNOWLEDGEMENT-2026-10-20.md)
+- Stable ID: `REGISTER-COMMAND-ACKNOWLEDGEMENT-2026-10-20-001`; Production ID: `RCA-2026-10-20-001`.
+- مربوط به درخواست «ثبت کن» روی نقطهٔ ادامهٔ جاری؛ لنگر اصلی ۰.۰ جایگزین یا بسته نمی‌شود.
+- مقصدهای Buffer، Persistent Memory، Library و Dropbox مستقل‌اند و در این ثبت اثبات نشده‌اند.
