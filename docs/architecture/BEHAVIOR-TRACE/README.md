@@ -188,3 +188,11 @@
 - [رویداد EVT-0042](./EVT-0042-ASSISTANT-REGISTRATION-AND-CONTINUITY-RULE-2026-10-20.md).
 - ورودی: [EVT-0041](./EVT-0041-AUTOMATIC-CONTINUITY-PORTABLE-CHILD-RAHM-MASTER-REQUEST-2026-10-20.md).
 - سند مرجع: [AICPHAE](../../reference/REFERENCE-DOCUMENTS/AUTOMATIC-INTERACTION-CONTINUITY-AND-PORTABLE-HAIF-EVOLUTION-MASTER-REFERENCE-2026-10-20-001.md).
+
+
+## EVT-0043 — درخواست لنگرگذاری خودکار و ممیزی معماری
+- ورودی: [EVT-0043](./EVT-0043-USER-REQUEST-AUTOMATIC-ANCHORING-AND-ARCHITECTURE-AUDIT-2026-10-21.md).
+- سند مرجع: [AAAPHR](../../reference/REFERENCE-DOCUMENTS/AUTOMATIC-ANCHORING-ARCHITECTURE-AUDIT-AND-PORTABLE-HAIF-REFERENCE-2026-10-21-001.md).
+- زمان دقیق پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان پردازش دستیار: 2026-10-21T00:04+03:30.
+- هدف: تثبیت لنگر هر ورودی/خروجی، اتصال تاریخچهٔ ۰.۰، ممیزی شکاف‌های معماری و آماده‌سازی بستهٔ قابل‌انتقال. این رویداد به‌خودی‌خود یک ۰.۰ جدید نیست.
+
