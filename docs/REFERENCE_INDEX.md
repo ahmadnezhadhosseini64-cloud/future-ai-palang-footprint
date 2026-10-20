@@ -252,3 +252,8 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - **EVT-0052:** [ساخت manifest گراف، اعتبارسنجی روابط و اصلاح پیوندها(architecture/BEHAVIOR-TRACE/EVT-0052-CANONICAL-GRAPH-MANIFEST-AND-LINK-REPAIR-2026-10-21.md).
 - **گام اجرا:** [سازندهٔ manifest گراف](../scripts/build_historical_graph_manifest.py) به گردش‌کار Living Architecture Audit متصل شده است؛ نتیجهٔ اجرای تازه باید از artifact خوانده و بازبینی شود.
 - وضعیت: ثبت یافته‌ها و تغییر کد در مخزن؛ تطبیق معنایی کامل و canonical adjudication همچنان OPEN / PARTIAL تا تکمیل آزمون و مرور انسانی.
+
+
+
+- **H0CALDR-2026-10-21-001:** [دفتر تصمیم‌های canonical / alias / lineage](reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-CANONICAL-ALIAS-LINEAGE-DECISION-REGISTER-2026-10-21-001.md) — 9 گروه نامزد mirror بر اساس نقش؛ 2 گروه تکراری همچنان نیازمند داوری منشأ/تاریخچه؛ بدون حذف فایل.
+- **EVT-0052:** [ثبت اجرای manifest و اصلاح پیوندها](architecture/BEHAVIOR-TRACE/EVT-0052-CANONICAL-GRAPH-MANIFEST-AND-LINK-REPAIR-2026-10-21.md).
