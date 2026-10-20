@@ -68,14 +68,14 @@ for p in source_files:
     for line_no, line in enumerate(body.splitlines(), 1):
         for ident in stable:
             if ident in line:
-                metadata_label = bool(re.match(r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Stable ID|Stable-ID|Canonical Stable ID|Stable Reference ID|Stable Report ID|Reference ID|شناسهٔ پایدار|شناسه پایدار)", line, re.I))
+                metadata_label = line_no <= 40 and bool(re.match(r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Stable ID|Stable-ID|Canonical Stable ID|Stable Reference ID|Stable Report ID|Reference ID|شناسهٔ پایدار|شناسه پایدار)", line, re.I))
                 identifier_occurrences.append({"identifier_type": "STABLE_ID", "identifier_value": ident,
                     "path": relpath, "line": line_no, "line_text": line.strip()[:240],
                     "role_candidate": "DEFINITION_OR_METADATA_REVIEW" if metadata_label else "REFERENCE_REVIEW",
                     "role_status": "UNREVIEWED"})
         for ident in prod:
             if ident in line:
-                metadata_label = bool(re.match(r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Production ID|Production-ID|Production / Registration ID|شناسهٔ تولید|شناسه تولید|شناسهٔ ثبت)", line, re.I))
+                metadata_label = line_no <= 40 and bool(re.match(r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Production ID|Production-ID|Production / Registration ID|شناسهٔ تولید|شناسه تولید|شناسهٔ ثبت)", line, re.I))
                 identifier_occurrences.append({"identifier_type": "PRODUCTION_ID", "identifier_value": ident,
                     "path": relpath, "line": line_no, "line_text": line.strip()[:240],
                     "role_candidate": "DEFINITION_OR_METADATA_REVIEW" if metadata_label else "REFERENCE_REVIEW",
