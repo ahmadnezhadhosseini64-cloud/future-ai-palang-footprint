@@ -79,3 +79,10 @@ Fetch the committed baseline from the default branch and compare it with the int
 - Parser now separates `REFERENCE_ID` from `STABLE_ID`; front-matter candidates are heuristic only.
 - Fresh pass before this batch: [39517920781](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39517920781), 500 source files, 1,020 local links / 0 missing, 30 Stable ID groups, 43 Production ID groups, 7 Reference ID groups, 8 EVT groups, 11 duplicates, 695 occurrences.
 - EVT-0050 and EVT-0051 have bounded identity/status decisions recorded in H0IRAR; the short filename-prefix collision remains visible. Full inbound/outbound event-reference audit remains open.
+
+
+## Addendum — latest acceptance after identifier batch 002
+- Run [39518314490](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39518314490) succeeded on commit `230b6cf3145bc27e18f26fc6afc33bd86b033122`, UTC `2026-10-20T23:57:41Z`.
+- Artifact `12308872095`; SHA-256 `sha256:fa80378ea212d7a90ff746bbd4d7b3db7b46e9fcf27f0117fc3f47617f8268bd`.
+- Latest counts: 501 source files; 1,030 local links / 0 missing; 38 parent edges / 0 unresolved/ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 duplicates; 697 identifier occurrences.
+- Structural pass is confirmed; semantic review of all remaining identifier groups and every relation is not complete.
