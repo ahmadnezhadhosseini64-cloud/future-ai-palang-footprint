@@ -2,16 +2,16 @@
 
 - Stable ID: HISTORICAL-0.0-GRAPH-MANIFEST-SNAPSHOT-2026-10-21-001
 - Production ID: H0GMS-2026-10-21-001
-- Version: 1.1.0
+- Version: 1.2.0
 - Project: Future AI / Palang Footprint / HAIF
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Status: ACTIVE / LIVING / SNAPSHOT-EVIDENCE
-- Audit UTC: 2026-10-20T22:43:55Z
-- Audited commit: `51eb2caf2679c54588765d78159f1b96b0aec652`
-- Workflow run: [39510205907 — Living Architecture Audit](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39510205907)
-- Artifact ID: 12305736053
-- Artifact digest: `sha256:0c7eee16fccbdeb095dcbd5f4cafb9cf5e9312f819f92e6dec9a8acb3f026866`
-- Artifact expires: 2027-01-18T22:43:48Z
+- Audit UTC: 2026-10-20T22:45:09Z
+- Audited commit: `48badc2aabefba056bdba0af7f34266821e8feb0`
+- Workflow run: [39510341086 — Living Architecture Audit](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39510341086)
+- Artifact ID: 12305131730
+- Artifact digest: `sha256:76ba049a67c066890634c985884c90a0e6c19b33e7bd74dfc297b2f8234dc597`
+- Artifact expires: 2027-01-18T22:45:01Z
 - Manifest builder: [scripts/build_historical_graph_manifest.py](../../../scripts/build_historical_graph_manifest.py)
 - Full machine-readable manifest and JSON/text audit outputs are inside the linked workflow artifact. The builder and this durable snapshot record remain in the repository so the audit can be reproduced.
 
@@ -19,16 +19,16 @@
 
 | Metric | Result |
 |---|---:|
-| All repository files including generated evidence | 785 |
+| All repository files including generated evidence | 792 |
 | Source files | 493 |
-| Generated Evidence Gate files | 292 |
+| Generated Evidence Gate files | 299 |
 | Paths containing 0.0 | 99 |
 | Checkpoint paths | 38 |
 | EVT-named files | 58 |
 | Reference-document paths | 90 |
 | Text nodes scanned | 492 |
 | Decode errors | 0 |
-| Local Markdown link edges | 934 |
+| Local Markdown link edges | 938 |
 | Missing local Markdown links | **0** |
 | Declared parent edges extracted | 38 |
 | Unresolved parent edges | **0** |
@@ -68,4 +68,4 @@ The legacy historical audit script reported 13 Stable ID groups and 24 Productio
 
 ## 5. Change log
 
-- v1.1.0 — refreshes the artifact-bound snapshot to run 39510205907, artifact digest, zero broken links, zero unresolved/ambiguous parent edges, duplicate/ID counts and explicit remaining semantic limitations.
+- v1.2.0 — refreshes the artifact-bound snapshot to run 39510341086, artifact digest, zero broken links, zero unresolved/ambiguous parent edges, duplicate/ID counts and explicit remaining semantic limitations.
