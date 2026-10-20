@@ -90,3 +90,12 @@ These failures are retained as implementation/test evidence. The current pass pr
 ## Change log
 
 - v1.0.0 — records the first successful fresh audit after the bilingual metadata and semantic-review-queue changes.
+
+
+## Addendum v1.1.0 — latest follow-up audit after repository integration
+- Workflow run: [39517544772](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39517544772) — SUCCESS.
+- Audited commit: `0e1896e52c80249c90266ef75e2e576eb5a75463`.
+- Runner UTC: `2026-10-20T23:50:14Z`.
+- Artifact ID: `12308371613`; artifact ZIP SHA-256: `sha256:eb6d6642cf651ea371e5f8b68404baf4a881527059ba4a8ce61141fa8df5f05a`.
+- Updated counts: 851 total files; 500 source files; 500 text nodes; 0 decode errors; 1,009 local Markdown edges; 0 missing local links; 38 declared parent edges; 0 unresolved/ambiguous parent edges; 37 Stable ID groups; 43 Production ID groups; 8 EVT collision groups; 11 exact-content duplicate groups; 695 identifier occurrences; 11 proposed alias edges.
+- This follow-up snapshot supersedes the previous counts for the current working state while preserving the earlier run as historical evidence. Structural acceptance and queue generation pass; semantic acceptance remains OPEN / PARTIAL.
