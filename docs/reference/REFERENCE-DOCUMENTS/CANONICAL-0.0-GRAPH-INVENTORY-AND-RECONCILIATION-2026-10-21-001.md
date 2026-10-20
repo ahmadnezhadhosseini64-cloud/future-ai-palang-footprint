@@ -2,7 +2,7 @@
 
 - Stable ID: CANONICAL-0.0-GRAPH-INVENTORY-AND-RECONCILIATION-2026-10-21-001
 - Production ID: C0GIR-2026-10-21-001
-- Version: 1.0.6
+- Version: 1.0.7
 - Owner: احمد پلنگ
 - Created / processed UTC: 2026-10-20T20:57:40.304Z
 - Created / processed Asia/Tehran: 2026-10-21T00:27:40.304+03:30
@@ -568,4 +568,4 @@
 - Tree SHA: `d47947c2fefe4faede895d8e754a369b64d1ce34`; `truncated=false`.
 - Total files: 715; paths containing `0.0`: 95; checkpoint paths: 38; EVT files: 55; paths under Reference Documents: 86; generated Evidence Gate artifacts: 230.
 - This snapshot includes EVT-0050, EVT-0051, and the consolidated continuation master. Evidence Gate outputs are separate from source architecture nodes.
-- Canonical continuation: [CCCMR-2026-10-21-001](./CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001.md), Version 1.0.2. Full semantic graph remains OPEN / PARTIAL.
+- Canonical continuation: [CCCMR-2026-10-21-001](./CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001.md), Version 1.0.3. Full semantic graph remains OPEN / PARTIAL.
