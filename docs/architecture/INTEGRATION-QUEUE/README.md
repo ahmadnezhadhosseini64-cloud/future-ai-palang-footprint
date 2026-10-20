@@ -679,3 +679,12 @@ The queue index and the timestamp case must each be read back after this update.
 - Open/blocked gaps retained: all-interaction automatic capture, Library, Buffer, Persistent Memory, Dropbox, full historical reconciliation, and end-to-end recovery/idempotency. Registration is not gap closure.
 - Repository write/read-back for the audit reference, index, and 0.0 registry matched; external destinations remain unverified.
 - Exact user-message timestamp: UNKNOWN / UNVERIFIED.
+
+
+## ثبت تعامل جاری و ممیزی شکاف‌ها — EVT-0032
+- سند مرجع: [INTERACTION-REGISTRATION-AND-GAP-CLOSURE-2026-10-20-001](../../reference/REFERENCE-DOCUMENTS/INTERACTION-REGISTRATION-AND-GAP-CLOSURE-2026-10-20-001.md).
+- رویداد: [EVT-0032](../BEHAVIOR-TRACE/EVT-0032-INTERACTION-REGISTRATION-AND-GAP-CLOSURE-2026-10-20.md).
+- Stable ID: `INTERACTION-REGISTRATION-AND-GAP-CLOSURE-2026-10-20-001`; Production ID: `IRGC-2026-10-20-001`.
+- وضعیت: OPEN / PARTIAL تا زمان بازخوانی نهایی این سند، رویداد و همهٔ پیوندهای مرتبط؛ فقط ثبت همین تعامل در مخزن می‌تواند با شواهد همین اجرا بسته شود.
+- باز می‌مانند: لنگرگذاری خودکار سراسری، تطبیق کامل نقاط تاریخی ۰.۰، Dropbox، Buffer، Persistent Memory، Library و آزمون بازیابی سرتاسری/idempotency. ثبت در صف یا سند، معادل ادغام/بستن شکاف نیست.
+- زمان دقیق پیام کاربر: UNKNOWN / UNVERIFIED.
