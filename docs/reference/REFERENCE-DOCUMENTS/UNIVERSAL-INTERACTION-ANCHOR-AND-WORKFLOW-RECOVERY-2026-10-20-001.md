@@ -4,7 +4,7 @@
 ### 1. شناسنامه و وضعیت
 - Stable ID / شناسه پایدار: UNIVERSAL-INTERACTION-ANCHOR-AND-WORKFLOW-RECOVERY-2026-10-20-001
 - Production ID / شناسه تولید: UIAWR-2026-10-20-001
-- Version / نسخه: 1.0.0
+- Version / نسخه: 1.0.1
 - Date / تاریخ ثبت مخزن: 2026-10-20
 - Exact user-message timestamp / زمان دقیق پیام کاربر: UNKNOWN / UNVERIFIED؛ شاهد مستقل در دسترس نیست.
 - Exact registration timestamp / زمان دقیق ثبت این نسخه: UNKNOWN / UNAVAILABLE در این گردش ابزار؛ زمان حدسی درج نمی‌شود.
@@ -84,6 +84,18 @@ Issue پیگیری: #18 — OPEN: Diagnose two failing audit workflows after IAA
 - اصلاحات روی main ثبت شده‌اند؛ موفقیت آن‌ها فقط پس از مشاهدهٔ اجرای تازه با jobها، conclusion=success، و بازخوانی شواهد قابل اعلام است.
 - تا این لحظه، نتیجهٔ اجرای تازه هنوز در این سند تأیید نشده است؛ بنابراین Issue #18 باید OPEN بماند.
 - اگر API دوباره jobهای صفر یا عدم امکان دسترسی به گزارش‌ها برگرداند، علت «UNKNOWN / UNVERIFIED» می‌ماند؛ حدس‌زدن یا بستن صوری ممنوع است.
+
+
+
+### 6.1 اجرای تازه پس از اصلاحات — شواهد تکمیلی نسخه 1.0.1
+از API اجرای GitHub در تاریخ 2026-10-20، دو اجرای تازه روی commit `14187974765f4d743d3ca05186565ad4c9c0fdaa` مشاهده شد:
+- Evidence Gate تازه: run `39454138917`, نتیجه `completed / failure`, زمان ایجاد ثبت‌شده در API `2026-10-20T16:04:05Z`. لینک: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39454138917
+- Automatic Final Registration Proof تازه: run `39454141194`, نتیجه `completed / failure`, زمان ایجاد ثبت‌شده در API `2026-10-20T16:04:06Z`. لینک: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39454141194
+- هر دو بار فهرست jobها صفر بود؛ endpoint دانلود logs پاسخ `HTTP 404 Not Found` داد. بنابراین هیچ step یا پیام خطای اجرایی در دسترس نیست و علت واقعی همچنان `UNKNOWN / UNVERIFIED`.
+- نام گزارش‌شدهٔ هر دو run در API، به‌جای نام تعریف‌شده در ابتدای YAML، مسیر فایل workflow بود؛ این نشانه را ثبت می‌کنیم، اما به‌تنهایی اثبات علت نیست.
+- تلاش retry اجراهای قبلی نیز برای هر دو workflow با `HTTP 403: This workflow run cannot be retried` رد شد.
+- نتیجه: اصلاحات ثبت‌شده برای این دو اجرا کافی نبوده‌اند؛ ادعای «حل شد» ممنوع است. Issue #18 همچنان OPEN است. اقدام بعدی باید علت شکست قبل از ایجاد job را از شواهد قابل‌دسترسی/تنظیمات اجرای workflow مشخص کند یا از یک مسیر اجرایی تازه و قابل مشاهده استفاده کند.
+- زمان تهرانِ متناظر با زمان‌های API بالا در صورت نیاز فقط تبدیل محاسباتی UTC+03:30 است: 19:34:05 و 19:34:06؛ این‌ها مشاهده مستقل ساعت تهران نیستند.
 
 ### 7. معیار واقعی بستن دو مورد
 برای هر workflow جداگانه:
