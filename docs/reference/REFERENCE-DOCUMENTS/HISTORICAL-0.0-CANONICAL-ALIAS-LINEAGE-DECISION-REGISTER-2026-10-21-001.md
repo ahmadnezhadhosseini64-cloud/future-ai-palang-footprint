@@ -46,3 +46,10 @@ Repeated Stable IDs and Production IDs are occurrence groups, not automatically 
 ## 5. Change log
 
 - v1.0.0 — first role-based review of all 11 exact-content duplicate groups reported by the downloaded JSON audit artifact.
+
+
+
+## Manifest read-back acceptance
+- Verified snapshot: [H0GMS-2026-10-21-001](./HISTORICAL-0.0-GRAPH-MANIFEST-SNAPSHOT-2026-10-21-001.md), audit run 39510053810.
+- The manifest builder's 11 duplicate-group decisions now align with this register, including earliest-commit candidates for the two differently numbered outcome/checkpoint pairs; both later copies are preserved as aliases, with no local inbound links found in the audited manifest.
+- These remain proposed canonical/mirror relationships pending final lineage review; they are not permission to delete files.
