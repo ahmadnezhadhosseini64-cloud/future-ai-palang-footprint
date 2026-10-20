@@ -646,7 +646,7 @@ The queue index and the timestamp case must each be read back after this update.
 - **سند مرجع جامع:** [تداوم معماری و Master–Child–Rahm](../../reference/REFERENCE-DOCUMENTS/INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-REGISTRATION-2026-10-20-001.md).
 - **رویداد رفتار:** [EVT-0025](../BEHAVIOR-TRACE/EVT-0025-INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-2026-10-20.md).
 - **هدف:** حفظ مسیر معماری مستقل و قابل انتقال؛ HUMAN ↔ AI HOST ↔ HAIF؛ Master → Child → Real World → Feedback → Master؛ Master → Rahm → Validation → New Child.
-- **وضعیت:** OPEN / PARTIAL تا بازخوانی و تطبیق این سند، رویداد و صف. فقط پس از read-back موفق، ثبت این سه مقصد در مخزن تأیید می‌شود؛ این کار اثبات اجرای افزونه، capture سراسری یا ثبت در Library/Buffer/Persistent Memory/Dropbox نیست.
+- **وضعیت:** REPOSITORY WRITE + READ-BACK + MATCH VERIFIED برای سند مرجع، رویداد و صف؛ commitهای ثبت: `fe6e8d44501f4ad989a28e6210d548c723cc14ba`, `287079fed90d944a9c997e4c998dece547d3a580`, `331154f9063b5a5c657ed6ad2887c109a82ccb2d`. این نتیجه فقط ثبت مخزن را تأیید می‌کند؛ اجرای افزونه، capture سراسری یا ثبت در Library/Buffer/Persistent Memory/Dropbox اثبات نشده است.
 - **شکاف‌های باقی‌مانده:** ادغام معنایی در سند مادر، بازیابی مستقل HAIF، آزمون سرتاسری هر ورودی/خروجی، پیاده‌سازی قابل‌انتقال، بازیابی دو آزمون تاریخی، Dropbox و مقصدهای بیرونی. جزئیات و معیار پذیرش در سند مرجع ثبت شده‌اند.
 - **زمان دقیق پیام:** UNKNOWN / UNVERIFIED؛ زمان commit جایگزین زمان پیام نیست.
 - **لنگر جاری حفظ‌شده:** `PALANG-0.0-CURRENT-2026-10-20-001`; نقطه مستقل Dropbox دست‌نخورده می‌ماند.
