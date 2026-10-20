@@ -261,3 +261,9 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 
 
 - **H0GMS-2026-10-21-001:** [نسخهٔ ممیزی‌شدهٔ manifest گراف تاریخی](reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-MANIFEST-SNAPSHOT-2026-10-21-001.md) — run 39510053810؛ 912 پیوند محلی، 0 پیوند شکسته، 38 رابطهٔ والد، 0 والد حل‌نشده و 0 رابطهٔ والد مبهم در همان snapshot.
+
+
+## Semantic architecture baseline — 2026-10-21
+- **H0SAB-2026-10-21-001:** [سند مرجع مادر معماری معنایی گراف تاریخی](reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-SEMANTIC-ARCHITECTURE-BASELINE-2026-10-21-001.md) — ACTIVE / LIVING / GOVERNING; نتیجهٔ ساختاری آخرین snapshot موفق است، اما داوری معنایی 493 فایل، گروه‌های شناسه و برخوردهای EVT همچنان OPEN / PARTIAL است.
+- **EVT-0053:** [ثبت مبنای معماری معنایی و آغاز مرور دسته‌ای](architecture/BEHAVIOR-TRACE/EVT-0053-SEMANTIC-ARCHITECTURE-BASELINE-2026-10-21.md).
+- معیار اصلی: هر رابطهٔ ارتقایافته به معماری باید شاهد مسیر/خط، نقش معنایی، منشأ، بررسی ارجاع‌ها و بازخوانی داشته باشد. تکرار شناسه به‌تنهایی برخورد قطعی نیست.
