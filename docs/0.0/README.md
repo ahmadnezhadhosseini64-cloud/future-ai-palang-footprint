@@ -552,3 +552,10 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - رویداد ثبت: [EVT-0053](../architecture/BEHAVIOR-TRACE/EVT-0053-SEMANTIC-ARCHITECTURE-BASELINE-2026-10-21.md).
 - گام بعدی: مرور شاهددار گروه‌های تکراری و برخورد EVT و طبقه‌بندی نقش همهٔ 493 فایل؛ پس از هر دسته، تصمیم‌ها را به معماری پیوند بده، بازخوانی کن و ممیزی را دوباره اجرا کن.
 - وضعیت: ACTIVE / OPEN-PARTIAL. موفقیت ساختاری snapshot قبلی حفظ شده، اما معنای همهٔ روابط اثبات نشده است. هیچ لنگر مستقل 0.0 یا Dropbox تغییر نکرده است.
+
+
+## داوری معنایی گراف — نقطهٔ ادامهٔ فعال
+- مبنای معماری: [H0SAB](../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-SEMANTIC-ARCHITECTURE-BASELINE-2026-10-21-001.md).
+- دفتر داوری شماره‌های EVT: [H0EVTCA](../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-EVT-NUMBER-COLLISION-ADJUDICATION-2026-10-21-001.md).
+- رویداد فعال این گام: [EVT-0053](../architecture/BEHAVIOR-TRACE/EVT-0053-SEMANTIC-ARCHITECTURE-BASELINE-2026-10-21.md).
+- وضعیت: شش جفت EVT قدیمی از نظر هویت متمایز شده‌اند؛ بررسی همهٔ ارجاع‌ها، برخوردهای اضافی و داوری تمام 493 فایل هنوز OPEN / PARTIAL است.
