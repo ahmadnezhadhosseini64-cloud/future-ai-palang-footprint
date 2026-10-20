@@ -22,11 +22,11 @@ except Exception:
 
 # Evidence Gate outputs are retained and counted separately from architectural source nodes.
 all_files = sorted(p for p in ROOT.rglob("*") if p.is_file() and ".git" not in p.parts and "audit-output" not in p.parts)
-evidence_files = [p for p in all_files if re.fullmatch(r"evidence-gate-.*\\.txt", p.name) and p.parent.as_posix() == "evidence"]
+evidence_files = [p for p in all_files if re.fullmatch(r"evidence-gate-.*\.txt", p.name) and p.parent.as_posix() == "evidence"]
 source_files = [p for p in all_files if p not in evidence_files]
 zero_paths = [p for p in all_files if "0.0" in p.as_posix()]
 checkpoint_paths = [p for p in all_files if "checkpoint" in p.as_posix().lower()]
-evt_files = [p for p in all_files if re.search(r"(^|/)EVT-\\d+-.+", p.name)]
+evt_files = [p for p in all_files if re.search(r"(^|/)EVT-\d+-.+", p.name)]
 ref_docs = [p for p in all_files if p.as_posix().startswith("docs/reference/REFERENCE-DOCUMENTS/")]
 
 def read_text(path):
@@ -48,16 +48,16 @@ for p in source_files:
     if text is None:
         decode_errors.append(p.as_posix())
         continue
-    stable = vals(text, r"^\\s*(?:[-*]\\s*)?(?:Stable ID|Stable-ID|Canonical Stable ID)\\s*:\\s*`?([^`\\r\\n]+)")
-    prod = vals(text, r"^\\s*(?:[-*]\\s*)?(?:Production ID|Production-ID)\\s*:\\s*`?([^`\\r\\n]+)")
-    vers = vals(text, r"^\\s*(?:[-*]\\s*)?Version\\s*:\\s*`?([^`\\r\\n]+)")
-    parent = vals(text, r"^\\s*(?:[-*]\\s*)?(?:Parent(?: input| event| reference)?|Parent ID|Parent Stable ID)\\s*:\\s*`?([^`\\r\\n]+)")
+    stable = vals(text, r"^\s*(?:[-*]\s*)?(?:Stable ID|Stable-ID|Canonical Stable ID)\s*:\s*`?([^`\r\n]+)")
+    prod = vals(text, r"^\s*(?:[-*]\s*)?(?:Production ID|Production-ID)\s*:\s*`?([^`\r\n]+)")
+    vers = vals(text, r"^\s*(?:[-*]\s*)?Version\s*:\s*`?([^`\r\n]+)")
+    parent = vals(text, r"^\s*(?:[-*]\s*)?(?:Parent(?: input| event| reference)?|Parent ID|Parent Stable ID)\s*:\s*`?([^`\r\n]+)")
     for x in set(stable): stable_map[x].append(p.as_posix())
     for x in set(prod): prod_map[x].append(p.as_posix())
-    evt = re.match(r"EVT-(\\d+)-", p.name)
+    evt = re.match(r"EVT-(\d+)-", p.name)
     if evt: evt_num_map[evt.group(1)].append(p.as_posix())
     links = []
-    for m in re.finditer(r"!??\\[[^\\]]*\\]\\(([^)]+)\\)", text):
+    for m in re.finditer(r"!??\[[^\]]*\]\(([^)]+)\)", text):
         target = m.group(1).strip().split()[0].strip("<>")
         if not target or target.startswith("#"): continue
         u = urlparse(target)
@@ -112,7 +112,7 @@ report = {
     "decode_errors":decode_errors,
     "records":records
 }
-(OUT/"historical-0.0-graph-audit.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+(OUT/"historical-0.0-graph-audit.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 lines = [
 "# Historical 0.0 Graph Audit",
 "",
@@ -141,7 +141,7 @@ for title,key in [
             elif "source" in item: lines.append(f"- `{item['source']}` → `{item['target']}`")
             else: lines.append(f"- `{item}`")
 lines += ["","## Interpretation","- Duplicate content is not automatically deleted; preserve historical paths and create a canonical alias/lineage edge.","- Duplicate Stable ID / Production ID / EVT number groups require source and lineage adjudication; never infer identity from filename number alone.","- A zero missing-link count is limited to relative Markdown links detected by this scanner; it does not prove semantic correctness or external URL availability.","- This report does not prove Dropbox, Buffer, Library, Persistent Memory, or runtime-wide automatic interaction capture."]
-(OUT/"historical-0.0-graph-audit.txt").write_text("\\n".join(lines)+"\\n",encoding="utf-8")
+(OUT/"historical-0.0-graph-audit.txt").write_text("\n".join(lines)+"\n",encoding="utf-8")
 print("HISTORICAL_0_0_GRAPH_AUDIT")
 print(f"audit_time_utc={RUN_UTC}")
 print(f"repository_commit={commit}")
