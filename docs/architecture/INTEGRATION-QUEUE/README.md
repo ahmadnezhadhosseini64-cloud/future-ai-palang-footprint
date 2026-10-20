@@ -821,3 +821,6 @@ The queue index and the timestamp case must each be read back after this update.
 
 
 - **Latest semantic graph audit — PASS STRUCTURAL / OPEN SEMANTIC:** [run 39517544772](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39517544772). Latest inventory: 500 source files, 1,009 local links / 0 missing, 37 Stable ID groups, 43 Production ID groups, 8 EVT groups, 11 duplicate groups, 695 ID occurrences. See [H0SRQS](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-SEMANTIC-REVIEW-QUEUE-SNAPSHOT-2026-10-21-001.md) and [H0IRAR](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-IDENTIFIER-AND-RELATION-ADJUDICATION-REGISTER-2026-10-21-001.md).
+
+
+- **H0IRRB2-2026-10-21-001 — ACTIVE / PARTIAL:** [داوری دستهٔ دوم شناسه‌ها](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-IDENTIFIER-ROLE-REVIEW-BATCH-002-2026-10-21.md). پنج گروه Stable ID و هفت گروه legacy Reference ID داوری شدند؛ 30 گروه Stable ID و 43 گروه Production ID همچنان نیازمند بررسی‌اند. Generic Reference ID اکنون namespace جداگانه دارد.
