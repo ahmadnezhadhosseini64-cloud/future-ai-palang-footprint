@@ -253,8 +253,8 @@
 
 
 
-## EVT-0051 — manifest گراف و اصلاح پیوندها
-- [EVT-0051](./EVT-0051-CANONICAL-GRAPH-MANIFEST-AND-LINK-REPAIR-2026-10-21.md)
+## EVT-0052 — manifest گراف و اصلاح پیوندها
+- [EVT-0051](./EVT-0052-CANONICAL-GRAPH-MANIFEST-AND-LINK-REPAIR-2026-10-21.md)
 - [دفتر یافته‌های JSON ممیزی](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-AUDIT-FINDINGS-2026-10-21-001.md)
 - [سند مرجع مادر زنده](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-RECONCILIATION-LIVING-MASTER-REFERENCE-2026-10-21-001.md)
 - [سازندهٔ manifest گراف](../../../scripts/build_historical_graph_manifest.py)
