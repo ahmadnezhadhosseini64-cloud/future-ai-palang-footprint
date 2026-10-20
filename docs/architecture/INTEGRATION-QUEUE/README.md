@@ -542,3 +542,15 @@ The queue index and the timestamp case must each be read back after this update.
 - Queue state: REPOSITORY LINKAGE VERIFIED for EVT-0018 in this audit: the index and the canonical reference, living reference, event record, behavior trace, central 0.0 registry and current 0.0 anchor were fetched; the expected rule, IDs and links were present. This does not verify Buffer, Persistent Memory, Library or Dropbox. Other destinations remain independently unverified.
 - Acceptance: event ID, Stable ID, Production ID, version, links, temporal rule, uncertainty and recovery path match across the canonical reference, event record, behavior trace, 0.0 registry, current anchor and this queue index.
 - Next action: fetch and compare every file in the acceptance list; retain the record as OPEN if any mismatch or unavailable evidence remains.
+
+
+## 23. ثبت قرارداد «بررسی واقعی، نه گزارش خالی» — 2026-10-20
+- **Stable ID:** EVIDENCE-FIRST-NO-EMPTY-REPORT-AND-REGISTER-EXECUTION-PACT-2026-10-20-001
+- **Production ID:** EFNERP-HAIF-2026-10-20-001
+- **Version:** 1.0.0
+- **سند مرجع کامل:** [قرارداد اجرایی ثبت مبتنی بر شواهد و منع گزارش خالی](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/EVIDENCE-FIRST-NO-EMPTY-REPORT-AND-REGISTER-EXECUTION-PACT-2026-10-20-001.md)
+- **مدخل حاکم «ثبت کن»:** [REGISTER-COMMAND-GOVERNING-BINDING](../../reference/REFERENCE-DOCUMENTS/REGISTER-COMMAND-GOVERNING-BINDING-2026-10-12-001.md)
+- **اصل:** پیش از ادعای موفقیت، منبع واقعی را بخوان؛ پس از نوشتن همان مقصد را مستقل بازخوانی و محتوا را تطبیق بده؛ وضعیت هر مقصد را جدا نگه دار؛ زمان بی‌شاهد را حدس نزن؛ گزارش جایگزین سند کامل و اجرای واقعی نیست.
+- **وضعیت مورد:** سند مرجع از مخزن بازخوانی شد؛ Stable ID، Production ID، Version، منع گزارش خالی، قواعد زمان‌گذاری، وضعیت مقصدها و بازیابی در متن بازخوانی‌شده پیدا شدند. این بخشِ صف پس از نوشتن باید مستقل بازخوانی شود.
+- **مقصدهای خارج از مخزن:** Library، Buffer و Persistent Memory مستقلاً تأیید نشده‌اند؛ Dropbox همچنان OPEN / WAITING است.
+- **Next action:** هر تغییر در این شاخص را بازخوانی و تطبیق بده؛ گپ‌های مقصدی فقط با شاهد مستقل بسته شوند.
