@@ -187,3 +187,11 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - زمان پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان پردازش تدوین: 2026-10-20T23:54:14.851+03:30.
 
 - لنگر خروجی: [EVT-0042](architecture/BEHAVIOR-TRACE/EVT-0042-ASSISTANT-REGISTRATION-AND-CONTINUITY-RULE-2026-10-20.md). زمان پردازش: 2026-10-20T23:55:17.494+03:30؛ زمان پیام کاربر: UNKNOWN / UNVERIFIED.
+
+
+## ممیزی معماری و شکاف‌های لنگرگذاری خودکار — 2026-10-21
+- سند مرجع: [AAAPHR](reference/REFERENCE-DOCUMENTS/AUTOMATIC-ANCHORING-ARCHITECTURE-AUDIT-AND-PORTABLE-HAIF-REFERENCE-2026-10-21-001.md) — شناسه: `AUTOMATIC-ANCHORING-ARCHITECTURE-AUDIT-AND-PORTABLE-HAIF-REFERENCE-2026-10-21-001`.
+- ورودی: [EVT-0043](architecture/BEHAVIOR-TRACE/EVT-0043-USER-REQUEST-AUTOMATIC-ANCHORING-AND-ARCHITECTURE-AUDIT-2026-10-21.md).
+- دامنه: قرارداد لنگر هر ورودی/خروجی، اتصال تاریخچهٔ ۰.۰، ممیزی شکاف‌ها و بستهٔ انتقال به میزبان دیگر.
+- وضعیت: سند و رویداد ایجاد شده‌اند؛ read-back نهایی و تطبیق نمایه‌ها در انتظار است. Dropbox، مقصدهای مستقل و انتقال میزبان دوم OPEN / UNVERIFIED باقی می‌مانند.
+
