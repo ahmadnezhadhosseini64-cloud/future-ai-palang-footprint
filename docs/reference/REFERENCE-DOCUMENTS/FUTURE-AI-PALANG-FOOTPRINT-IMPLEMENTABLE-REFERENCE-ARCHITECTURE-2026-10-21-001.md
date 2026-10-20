@@ -221,3 +221,7 @@
 ## Change log
 
 - v1.0.0 — تعریف معماری اجرایی قابل پیاده‌سازی، مدل داده، چرخهٔ حاکمیت، قرارداد API، اجزای رابط کاربری، امنیت، آزمون‌های پذیرش و دروازهٔ شروع ساخت. این سند specification است، نه ادعای ساخته‌شدن یا استقرار برنامه.
+
+
+## Addendum v1.1.0 — identifier namespaces
+The Artifact/Occurrence model must keep `STABLE_ID`, `PRODUCTION_ID`, and legacy `REFERENCE_ID` as distinct typed namespaces. A generic `Reference ID` label must not be auto-normalized to Stable ID. Parent/lineage resolution may consult all namespaces, but UI collision counts and semantic review decisions must preserve the original type and label. The current repository parser has been updated to reflect this distinction; fresh regression audit remains required after this document change.
