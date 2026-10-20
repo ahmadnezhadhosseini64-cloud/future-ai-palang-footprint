@@ -272,3 +272,5 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - **H0EVTCA-2026-10-21-001:** [دفتر داوری دسته‌ای برخورد شماره‌های EVT](reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-EVT-NUMBER-COLLISION-ADJUDICATION-2026-10-21-001.md) — شش جفت قدیمی از نظر هویت متمایز طبقه‌بندی شدند؛ اصلاح همهٔ ارجاع‌ها و داوری دو مورد اضافی همچنان باز است.
 
 - **H0IRRB-2026-10-21-001:** [دفتر داوری تعریف در برابر ارجاع — دستهٔ اول](reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-IDENTIFIER-ROLE-REVIEW-BATCH-001-2026-10-21.md) — دو گروه Stable ID بازبینی شدند؛ مشخص شد دو مورد false collision بودند که از شناسایی‌نشدن برچسب‌های metadata فارسی/دوزبانه در parser ناشی می‌شد. اصلاح parser ثبت شده و آزمون تازه لازم است.
+
+- **FAPF-IRA-2026-10-21-001:** [معماری اجرایی قابل پیاده‌سازی برای Future AI / Palang Footprint](reference/REFERENCE-DOCUMENTS/FUTURE-AI-PALANG-FOOTPRINT-IMPLEMENTABLE-REFERENCE-ARCHITECTURE-2026-10-21-001.md) — لایه‌ها، مدل داده، API، UI، امنیت و آزمون‌های پذیرش برای شروع ساخت برنامه.
