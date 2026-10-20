@@ -63,3 +63,9 @@
 - Latest graph snapshot at this point: tree SHA `19058e7d68a540862c618176c4c5e64109c62c0c`, 653 files, 93 paths with 0.0, 38 checkpoint paths, 51 EVT files, 48 related reference documents.
 - Scoped result: repository write/read-back and cross-index checks are VERIFIED. Full content-level canonical graph remains OPEN / PARTIAL; Dropbox, Buffer, Library, Persistent Memory, global runtime automation and second-host transfer are not proven.
 
+## Latest repository read-back after architecture gap integration
+Read-back UTC: `2026-10-20T21:06:10Z`; Asia/Tehran: `2026-10-21T00:36:10+03:30`.
+All ten files listed in the previous section were fetched after the G-11/G-12/G-13 changes; all expected IDs, versions, links, and queue rows passed. Current hashes for the changed targets: PIATGCG v1.0.2 `2d437fee1b6a091ef2c11cd9c672b2d3f1119cca`; C0GIR v1.0.1 `420ab31c8a7790c46dc71bd4b44f6821ec579014`; integration queue `2b18a6e29b1d000989cb3edfea8738678f2e5760`.
+Current graph snapshot: tree SHA `19058e7d68a540862c618176c4c5e64109c62c0c`; 653 files; 93 paths containing 0.0; 38 checkpoint paths; 51 EVT files; 48 related reference documents. Tree API reported `truncated=false`.
+Scoped repository registration and cross-index verification: VERIFIED. Complete content-level graph reconciliation: OPEN / PARTIAL. Dropbox, Buffer, Library, Persistent Memory, runtime-wide automatic execution, and second-host transfer: OPEN / NOT PROVEN.
+
