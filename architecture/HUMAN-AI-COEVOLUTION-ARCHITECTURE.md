@@ -60,3 +60,10 @@ The architecture now includes the repository artifact:
 - Governance: this is an initial model derived from the observed Certificate Inbox 0.0 path. Transfer to other workflows remains to be tested; it does not automatically promote all linked components to ACTIVE/LIVING.
 
 The model inherits this architecture's distinction between message, intent, shared understanding, experiment, validated learning, and durable project knowledge. It does not replace this architecture or its governing Master.
+
+
+## Implementable Reference Architecture — 2026-10-21
+
+The repository now defines the implementation contract for the next application layer: [FAPF-IRA-2026-10-21-001](../docs/reference/REFERENCE-DOCUMENTS/FUTURE-AI-PALANG-FOOTPRINT-IMPLEMENTABLE-REFERENCE-ARCHITECTURE-2026-10-21-001.md). It specifies the layered system, Master–Child–Rahm promotion gates, artifacts/occurrences/relations/evidence/decisions/gaps/anchors/audit-run data model, API v1, UI modules, storage adapters, security boundaries, and acceptance tests A01–A16.
+
+This is a buildable specification, not evidence that the application has already been implemented. Historical items whose architectural role remains uncertain stay in the review queue or Child layer; they are not promoted to Master by default.
