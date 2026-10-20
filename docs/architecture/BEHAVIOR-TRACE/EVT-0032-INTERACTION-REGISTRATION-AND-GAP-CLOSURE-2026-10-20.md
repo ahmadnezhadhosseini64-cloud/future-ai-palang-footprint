@@ -10,7 +10,7 @@
 - Project / پروژه: Future AI / Palang Footprint / HAIF
 - Origin / منشأ: درخواست کاربر برای ثبت کامل همین ورودی و خروجی، اعمال همهٔ قواعد و سند مرجع، و اعلام دقیق اینکه کدام شکاف‌ها واقعاً بسته شده‌اند.
 - Canonical reference / سند مرجع: [INTERACTION-REGISTRATION-AND-GAP-CLOSURE-2026-10-20-001](../../reference/REFERENCE-DOCUMENTS/INTERACTION-REGISTRATION-AND-GAP-CLOSURE-2026-10-20-001.md)
-- Status / وضعیت: رویداد و سند مرجع نوشته شده‌اند؛ وضعیت VERIFIED فقط پس از بازخوانی فایل‌ها و نمایه‌های مرتبط مجاز است.
+- Status / وضعیت: REPOSITORY WRITE + READ-BACK + CONTENT/LINK MATCH VERIFIED across the reference, event, 0.0 registry, reference index, integration queue and behavior-trace index. The scoped interaction-registration gap is CLOSED / VERIFIED; broader automation and external-destination gaps remain OPEN.
 
 ## 1. ثبت تصمیم
 درخواست جاری به‌عنوان یک رویداد مستقل ثبت می‌شود. قاعدهٔ حاکم: حفظ منشأ و زنجیره، شناسه‌گذاری، مستند مرجع قابل‌بازیابی، اتصال به نمایه‌ها و صف، بازخوانی و تطبیق؛ عدم ادعای موفقیت مقصدهای مستقل بدون شاهد.
