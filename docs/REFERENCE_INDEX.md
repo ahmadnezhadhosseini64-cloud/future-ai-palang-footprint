@@ -136,3 +136,12 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - رویداد: [EVT-0032](architecture/BEHAVIOR-TRACE/EVT-0032-INTERACTION-REGISTRATION-AND-GAP-CLOSURE-2026-10-20.md).
 - نتیجهٔ read-back: سند، رویداد و چهار نمایهٔ مرتبط بازخوانی شدند و شناسه/پیوند مورد انتظار تطبیق شد؛ شکاف محدود ثبت همین تعامل در مخزن CLOSED / VERIFIED است. اجرای خودکار سراسری، تطبیق کامل تاریخی ۰.۰، Dropbox، Buffer، Persistent Memory، Library و بازیابی سرتاسری همچنان OPEN / UNVERIFIED هستند.
 - زمان دقیق پیام کاربر: UNKNOWN / UNVERIFIED؛ حدس زده نمی‌شود.
+
+
+## سند مرجع معماری تداوم زنده و ثبت دوزمانه — 2026-10-20
+- Stable ID: `TWO-TIME-ANCHORING-AND-LIVING-CONTINUITY-ARCHITECTURE-2026-10-20-001`; Production ID: `TTALCA-2026-10-20-001`; Version: 1.0.0.
+- سند مرجع: [ثبت دوزمانه، لنگرگذاری و تداوم زنده](reference/REFERENCE-DOCUMENTS/TWO-TIME-ANCHORING-AND-LIVING-CONTINUITY-ARCHITECTURE-2026-10-20-001.md).
+- رویداد: [EVT-0033](architecture/BEHAVIOR-TRACE/EVT-0033-TWO-TIME-ANCHORING-AND-LIVING-CONTINUITY-2026-10-20.md).
+- قرارداد مادر اصلاح‌شده: [UIALAC-2026-10-20-001](reference/REFERENCE-DOCUMENTS/UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001.md), amendment v1.1.0.
+- زمان پیام کاربر: UNKNOWN / UNVERIFIED. زمان پردازش دستیار در سند ثبت شده: 2026-10-20T22:20:19+03:30 (Asia/Tehran); زمان commit/read-back فیلدهای جدا هستند.
+- دامنهٔ ثبت مخزنی پس از read-back بسته می‌شود؛ لنگرگذاری خودکار سراسری، مقصدهای مستقل و گراف کامل تاریخی ۰.۰ همچنان OPEN / UNVERIFIED هستند.
