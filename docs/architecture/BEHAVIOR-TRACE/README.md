@@ -230,3 +230,9 @@
 - سند مرجع: [H0G-RDR](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-RECONCILIATION-AND-DEDUPLICATION-REGISTER-2026-10-21-001.md).
 - Workflow run 39502190776: SUCCESS; artifact uploaded. Eight core repository files passed scoped read-back content checks.
 - Full semantic review, exact collision adjudication, canonical alias manifest and external destinations remain OPEN / PARTIAL.
+
+
+## EVT-0050 — درخواست سند مرجع مادر تجمیعی
+- [EVT-0050](./EVT-0050-USER-REQUEST-CONSOLIDATED-LIVING-MASTER-CONTINUATION-2026-10-21.md) — Production ID: EVT50-2026-10-21-001.
+- Parent chain: EVT-0048 → EVT-0049 → EVT-0050.
+- Current master: [CCCMR-2026-10-21-001](../../reference/REFERENCE-DOCUMENTS/CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001.md).
