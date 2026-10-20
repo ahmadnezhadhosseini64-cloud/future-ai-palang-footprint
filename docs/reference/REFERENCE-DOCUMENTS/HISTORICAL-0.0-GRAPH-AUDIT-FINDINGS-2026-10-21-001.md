@@ -165,3 +165,9 @@ The scanner resolves relative Markdown paths from the source file's parent direc
 ## 9. Change log
 
 - v1.0.0 — records all 11 exact-content duplicate groups, 13 Stable ID groups, 24 Production ID groups, 6 EVT-number groups, 15 local-link findings and source snapshot metadata from the downloaded workflow artifact.
+
+
+
+## 10. Alias/lineage decision register
+The follow-up [H0CALDR-2026-10-21-001](./HISTORICAL-0.0-CANONICAL-ALIAS-LINEAGE-DECISION-REGISTER-2026-10-21-001.md) now records role-based mirror candidates for nine groups and leaves two differently numbered registration/checkpoint pairs open. These are non-destructive logical decisions; files remain intact.
+
