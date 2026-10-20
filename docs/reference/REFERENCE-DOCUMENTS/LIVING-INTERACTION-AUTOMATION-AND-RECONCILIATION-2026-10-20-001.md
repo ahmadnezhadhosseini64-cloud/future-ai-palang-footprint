@@ -99,3 +99,12 @@ WRITE → READ-BACK → MATCH → VERIFY → RECORD EVIDENCE.
 - Evidence artifact: `living-architecture-audit-39447083005`, artifact ID `12275793048`, SHA-256 `c3d358d3326066ad5aa95b42ac5c3a251969082a20a75047ce2952b339b725d5`, retention until `2027-01-18T15:17:48Z`.
 - Independent log confirms the workflow ran and uploaded its artifact. This proves only the defined repository structural audit. The log explicitly reports `external_persistence_tested=false` and `chatgpt_all_conversation_capture_tested=false`.
 - Current status update: repository-side structural automation is EXECUTED / VERIFIED for this run. Automatic capture of all ChatGPT interactions, Library, Buffer, provider-level Persistent Memory, Dropbox, and full interruption/recovery acceptance remain OPEN / NOT PROVEN.
+
+
+## 13. Follow-up architecture/build verification — 2026-10-20
+- Stable ID: `ARCHITECTURE-BUILD-VERIFICATION-2026-10-20-001`; Production ID: `ABV-2026-10-20-001`.
+- Event evidence: [EVT-0024](../../architecture/BEHAVIOR-TRACE/EVT-0024-ARCHITECTURE-BUILD-VERIFICATION-2026-10-20.md).
+- A later GitHub Actions run, `39447416772`, was read back after completion; job `audit` has status `completed` and conclusion `success`. This run is distinct from the earlier run 39447083005 recorded above.
+- The event and its references have now been integrated into the reference index, architecture integration queue, behavior-trace index and log, pending registration queue, open-gap recovery register, MRV, and 0.0 index. These updates themselves must still pass a subsequent audit run.
+- Exact user-message time: UNKNOWN / UNVERIFIED; do not infer it from commits or workflow times.
+- External destination write/read-back and automatic capture of every ChatGPT interaction remain OPEN / NOT PROVEN. Dropbox was deliberately not touched in this pass.
