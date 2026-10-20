@@ -177,3 +177,12 @@ This document can be considered repository-integrated only after the file, index
 - The two differently numbered outcome pairs now have earliest-commit candidates and zero inbound local Markdown links in the audited manifest; both later copies remain preserved as aliases.
 - Full semantic equivalence of all source prose is not claimed. The graph is structurally connected for this snapshot; remaining semantic adjudication stays OPEN / ACTIVE.
 - Change log: v1.4.0 updates the living baseline to the latest artifact-backed snapshot.
+
+
+
+## Addendum v1.5.0 — final documentation-integration audit
+- Snapshot refreshed: [H0GMS-2026-10-21-001 v1.2.0](./HISTORICAL-0.0-GRAPH-MANIFEST-SNAPSHOT-2026-10-21-001.md).
+- Last completed audit before this addendum: run 39510341086, artifact 12305131730, digest `sha256:76ba049a67c066890634c985884c90a0e6c19b33e7bd74dfc297b2f8234dc597`, audited commit `48badc2aabefba056bdba0af7f34266821e8feb0`.
+- That run scanned 493 source files, checked 938 local Markdown links with zero missing targets, and extracted 38 parent edges with zero unresolved and zero ambiguous edges. It recorded 11 exact-content duplicate groups, 33 Stable ID repeated-occurrence groups, 42 Production ID repeated-occurrence groups and 8 EVT-number collision groups.
+- All changed governance records, indexes, queues and event lineage now point to the same snapshot/alias decision register. Full natural-language semantic equivalence and identity-role classification remain OPEN / ACTIVE.
+- Change log: v1.5.0 refreshes the master continuation pointer and final audit evidence.
