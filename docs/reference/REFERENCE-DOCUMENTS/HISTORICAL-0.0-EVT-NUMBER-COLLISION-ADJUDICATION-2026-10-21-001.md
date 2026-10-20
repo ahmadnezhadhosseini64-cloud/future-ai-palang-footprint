@@ -1,0 +1,46 @@
+# دفتر داوری دسته‌ای برخورد شماره‌های EVT — تصمیم مبتنی بر هویت کامل
+
+- Stable ID: HISTORICAL-0.0-EVT-NUMBER-COLLISION-ADJUDICATION-2026-10-21-001
+- Production ID: H0EVTCA-2026-10-21-001
+- Version: 1.0.0
+- Project: Future AI / Palang Footprint — HAIF
+- Owner: احمد پلنگ
+- Date: 2026-10-21
+- User-message time: UNKNOWN / UNVERIFIED
+- Status: ACTIVE / LIVING / PARTIAL
+- Parent: [H0SAB — مبنای معماری معنایی](./HISTORICAL-0.0-SEMANTIC-ARCHITECTURE-BASELINE-2026-10-21-001.md)
+- Structural evidence: [H0GMS — snapshot ساختاری](./HISTORICAL-0.0-GRAPH-MANIFEST-SNAPSHOT-2026-10-21-001.md)
+- Source findings: [H0GAF — دفتر یافته‌های ممیزی](./HISTORICAL-0.0-GRAPH-AUDIT-FINDINGS-2026-10-21-001.md)
+
+## قاعدهٔ داوری
+
+شمارهٔ کوتاه EVT به‌تنهایی شناسهٔ یکتا نیست. هویت یک رویداد با مسیر کامل، عنوان، Stable ID، Production ID، نسخه، SHA، والد/تبار و ارجاع‌هایش تعیین می‌شود. بنابراین دو فایل با شمارهٔ یکسان، اگر دو رخداد مستقل باشند، لزوماً یک رویداد واحد یا یک شناسهٔ پایدار واحد نیستند؛ اما تکرار شماره، خطر ارجاع مبهم ایجاد می‌کند و باید ثبت و مدیریت شود.
+
+## دستهٔ اول — شش جفت بررسی‌شده از فهرست تاریخی
+
+بررسی سرآیند و عنوان هر ۱۲ فایل نشان می‌دهد که هر جفت، دو موضوع/هویت متمایز دارد؛ نه دو کپی یک رویداد. تصمیم این دسته: **DISTINCT EVENT IDENTITIES / SHORT-NUMBER COLLISION RETAINED**. این تصمیم فقط هویت معناییِ عنوان و شناسه‌های هر جفت را طبقه‌بندی می‌کند؛ به معنی بازشماره‌گذاری یا رفع تمام ارجاع‌های مبهم نیست.
+
+| شمارهٔ کوتاه | مسیر اول / هویت اول | مسیر دوم / هویت دوم | داوری | اقدام امن |
+|---|---|---|---|---|
+| EVT-0005 | `EVT-0005-REGISTER-UNIFIED-OUTPUT-ANCHOR-CYCLE-2026-10-19.md` — چرخهٔ ثبت لنگر خروجی؛ Production ID: UOAR-HAIF-2026-10-19-001 | `EVT-0005-UNIFIED-OUTPUT-ANCHOR-LIVING-REFERENCE-REGISTRATION-2026-10-19.md` — ثبت سند مرجع زنده؛ Stable ID: EVT-0005-UNIFIED-OUTPUT-ANCHOR-LIVING-REFERENCE-REGISTRATION-2026-10-19؛ Production ID: EVT-UOAR-2026-10-19-005 | دو رخداد مستقل؛ شماره تکراری | هر دو حفظ شوند؛ ارجاع‌های جدید از مسیر کامل و شناسهٔ پایدار استفاده کنند |
+| EVT-0006 | `EVT-0006-LIVE-BEHAVIORAL-CONTINUATION-PATTERN-2026-10-19.md` — الگوی ادامهٔ رفتاری زنده؛ Stable ID: LIVE-BEHAVIORAL-CONTINUATION-PATTERN-2026-10-19-001 | `EVT-0006-PAUSE-AND-RESUME-ANCHOR-2026-10-19.md` — لنگر مکث/ادامه؛ Stable ID: PAUSE-RESUME-ANCHOR-FUTURE-AI-PALANG-FOOTPRINT-2026-10-19-001 | دو رخداد مستقل؛ شماره تکراری | هر دو حفظ شوند؛ ارجاع‌های جدید با شناسهٔ کامل |
+| EVT-0019 | `EVT-0019-EVIDENCE-FIRST-REGISTER-PACT-2026-10-20.md` — پیمان ثبت مبتنی بر شاهد؛ Stable ID: EVIDENCE-FIRST-NO-EMPTY-REPORT-AND-REGISTER-EXECUTION-PACT-2026-10-20-001 | `EVT-0019-TEMPORAL-BRACKETING-USER-ACCEPTANCE-2026-10-20.md` — پذیرش زمان‌گذاری؛ Stable ID: TEMPORAL-BRACKETING-USER-ACCEPTANCE-2026-10-20-001 | دو رخداد مستقل؛ شماره تکراری | حفظ هر دو؛ ارجاع مبهم قدیمی باید به هویت کامل اصلاح شود |
+| EVT-0026 | `EVT-0026-DUAL-TIMESTAMP-AVAILABILITY-RULE-2026-10-20.md` — قاعدهٔ دو زمان؛ Stable ID: DUAL-TIMESTAMP-AVAILABILITY-RULE-2026-10-20-001 | `EVT-0026-INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-2026-10-20.md` — تداوم تعامل Master–Child–Rahm؛ Stable ID: INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-REGISTRATION-2026-10-20-001 | دو رخداد مستقل؛ شماره تکراری | حفظ هر دو؛ شماره کوتاه به‌عنوان کلید یکتا استفاده نشود |
+| EVT-0029 | `EVT-0029-0.0-ANCHOR-COUNT-AND-GAP-AUDIT-2026-10-20.md` — شمارش لنگرها و ممیزی شکاف؛ Stable ID: PALANG-0.0-ANCHOR-COUNT-AND-GAP-AUDIT-2026-10-20-001 | `EVT-0029-MAIN-0.0-LOCK-2026-10-20.md` — قفل اصلی ۰.۰؛ Stable ID: PALANG-0.0-MAIN-LOCK-2026-10-20-002 | دو رخداد مستقل؛ شماره تکراری | حفظ هر دو؛ ارجاع بر اساس شناسه و مسیر کامل |
+| EVT-0030 | `EVT-0030-CURRENT-0.0-AND-GAP-AUDIT-2026-10-20.md` — ممیزی نقطهٔ جاری و شکاف‌ها؛ Stable ID: EVT-0030-CURRENT-0.0-AND-GAP-AUDIT-2026-10-20 | `EVT-0030-REGISTER-COMMAND-ACKNOWLEDGEMENT-2026-10-20.md` — تأیید دریافت فرمان ثبت؛ Stable ID: REGISTER-COMMAND-ACKNOWLEDGEMENT-2026-10-20-001 | دو رخداد مستقل؛ شماره تکراری | حفظ هر دو؛ ارجاع‌های مبهم باید با شناسهٔ کامل روشن شوند |
+
+## وضعیت دستهٔ اول
+
+- داوری معناییِ عنوان/هویت: DONE برای 6 جفت فوق، بر پایهٔ مسیرها و سرآیندهای 12 فایل.
+- شماره‌گذاری تاریخی: PRESERVED — هیچ فایل بازشماره‌گذاری یا حذف نشده است.
+- ارجاع‌های ورودی/خروجی همهٔ 12 فایل: OPEN — بررسی سراسری تمام ارجاع‌ها و اصلاحشان هنوز باید انجام شود.
+- برخوردهای اضافی موجود در manifest جدید: OPEN تا استخراج فهرست کامل و بررسی مسیر/شناسه/تبار. به‌ویژه EVT-0050 دارای دو فایل متمایز است؛ و مسیر اصلاحی EVT-0051 باید در کنار EVT-0052 بررسی شود.
+- بنابراین شمار 8 گروه برخورد شماره EVT در snapshot ساختاری به‌صورت کامل بسته اعلام نمی‌شود. این سند فقط شش جفت قدیمی را از نظر هویت متمایز طبقه‌بندی کرده است.
+
+## معیار نهایی بستن
+
+برای بستن هر گروه شمارهٔ EVT باید: (1) تمام فایل‌های عضو بازیابی شوند؛ (2) Stable ID و Production ID هر کدام بازخوانی شود؛ (3) ارجاع‌های ورودی/خروجی بررسی شوند؛ (4) پیوندهای مبهم به هویت کامل اصلاح شوند؛ (5) اصلاحات از مخزن دوباره خوانده و با محتوای مورد انتظار تطبیق داده شوند؛ (6) ممیزی ساختاری تازه، نبود پیوند شکسته و نبود ارجاع مبهم را تأیید کند.
+
+## Change log
+
+- v1.0.0 — ثبت داوری دستهٔ اول برای شش جفت شمارهٔ EVT؛ تمایز هویت معنایی از تکرار شماره؛ حفظ همهٔ فایل‌ها و باز نگه‌داشتن بررسی ارجاع‌ها و دو مورد اضافی.
