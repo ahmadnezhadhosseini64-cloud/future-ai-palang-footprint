@@ -275,3 +275,10 @@ T1 ورودی و خروجی قابل‌بازیابی؛ T2 زمان‌های م�
 - **Input event:** [EVT-0050](../../architecture/BEHAVIOR-TRACE/EVT-0050-USER-REQUEST-CONSOLIDATED-LIVING-MASTER-CONTINUATION-2026-10-21.md).
 - **Rule:** For the next continuation, read CCCMR first, then the latest EVT-0051, latest graph audit artifact, and only then continue G-01/G-12/G-13/G-15/G-16. Do not restart completed checks without reason or claim unresolved work closed.
 - UTC is the primary timestamp; Asia/Tehran is derived display only; user-message time is UNKNOWN / UNVERIFIED when unsourced.
+
+
+## 38. خروجی سند مادر تجمیعی — EVT-0051
+- Current canonical continuation: [CCCMR-2026-10-21-001](./CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001.md), Version 1.0.1.
+- Input: [EVT-0050](../../architecture/BEHAVIOR-TRACE/EVT-0050-USER-REQUEST-CONSOLIDATED-LIVING-MASTER-CONTINUATION-2026-10-21.md).
+- Output and verification record: [EVT-0051](../../architecture/BEHAVIOR-TRACE/EVT-0051-ASSISTANT-CONSOLIDATED-MASTER-CREATION-AND-READBACK-2026-10-21.md).
+- The consolidated master is the current continuation entry point; the historic graph remains OPEN / PARTIAL.
