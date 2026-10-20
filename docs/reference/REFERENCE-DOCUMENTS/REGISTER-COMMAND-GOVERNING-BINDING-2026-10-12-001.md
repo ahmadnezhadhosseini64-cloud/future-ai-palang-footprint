@@ -154,3 +154,12 @@ For the latest repository excavation and reconciliation state, retrieve `docs/re
 - **سند مرجع کامل:** [ثبت مبتنی بر شاهد و ممنوعیت گزارش صرف](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/EVIDENCE-FIRST-REGISTRATION-AND-NO-REPORT-ONLY-GOVERNANCE-2026-10-20-001.md)
 
 «ثبت کن» باید با بررسی واقعی اسناد/منابع در دسترس و انجام مراحل قابل اجرا پیش برود؛ پاسخ توصیفی یا اعلام وضعیت به‌تنهایی کافی نیست. بعد از هر نوشتن، همان مقصد باید دوباره خوانده شود و دامنهٔ تطبیق روشن باشد. هیچ زمان، اقدام، مقصد یا تأییدی ساخته نمی‌شود. اگر دسترسی یا ابزار مانع شد، همان مرحله با مانع و اقدام بعدی OPEN/PENDING می‌ماند. وضعیت کلی تا تکمیل مراحل الزامی PARTIAL / OPEN است. این بخش، قرارداد موجود را تکمیل می‌کند و قواعد قبلی یا لنگرهای ۰.۰ را حذف نمی‌کند.
+
+
+## الزام افزوده — هر ورودی و هر خروجی دارای لنگر
+
+- **Stable ID:** `EVERY-INTERACTION-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001`
+- **Production ID:** `EIACRG-HAIF-2026-10-20-001`
+- **سند مرجع کامل:** [قرارداد لنگر تک‌تک تعامل‌ها](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/EVERY-INTERACTION-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001.md)
+
+فرمان «ثبت کن» از این پس شامل ثبت لنگر برای هر پیام کاربر و هر خروجی نهایی قابل‌مشاهدهٔ دستیار است، نه فقط برای تصمیم‌ها یا اسناد بزرگ. متن کامل در یک محل canonical ثبت و از شاخص‌ها به آن پیوند داده می‌شود تا ثبت جامع باشد و تکرار غیرضروری ایجاد نشود. پس از نوشتن، مقصد دوباره خوانده و تطبیق می‌شود. اگر اجرا یا ثبت در مخزن به‌علت نبود ابزار/مجوز ممکن نباشد، همان محدودیت و کار باز اعلام می‌شود؛ ادعای دائمی یا خودکار بدون شاهد ممنوع است. مقصدهای Library، Buffer، Persistent Memory و Dropbox مستقل‌اند.
