@@ -30,7 +30,7 @@ def id_vals(body, pattern):
         token = value.split()[0].strip(" ' ,;:()[]{}")
         if not token or token.casefold() in excluded:
             continue
-        if token.startswith(("$", "{{", "<")) or any(mark in token for mark in (", }", "%s")):
+        if "$" in token or token.startswith(("{{", "<")) or "}}" in token or "%s" in token:
             continue
         if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9._:/+-]*", token):
             continue
