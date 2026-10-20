@@ -87,3 +87,33 @@ This record is authored from the user instruction and available conversation con
 - Behavior trace: [EVT-0016 record](../docs/architecture/BEHAVIOR-TRACE/INTERACTION-BEHAVIOR-TRACE-2026-10-19-001.md)
 - Rule: use complete traceable registration for significant outputs; keep timestamp sources separate; never infer unknown times; verify each destination independently.
 - Request timestamp: UNKNOWN / UNVERIFIED. Previous 0.0 anchors, including Dropbox, remain independent.
+
+## Temporal bracketing — accepted and integrated 2026-10-20
+
+- Stable ID: `TEMPORAL-BRACKETING-AND-BOUNDED-TIMESTAMP-GOVERNANCE-2026-10-20-001`
+- Production ID: `TBBTG-HAIF-2026-10-20-001`
+- Version: 1.0.0
+- Canonical complete event/reference: [EVT-0018 — Temporal Bracketing Rule](../docs/architecture/BEHAVIOR-TRACE/EVT-0018-TEMPORAL-BRACKETING-RULE-2026-10-20.md).
+- Canonical timestamp governance: [Permanent Living Execution, Anchor and Timestamp Governance](../docs/reference/REFERENCE-DOCUMENTS/PERMANENT-LIVING-EXECUTION-ANCHOR-TIMESTAMP-GOVERNANCE-2026-10-20-001.md).
+- Living reference: [Unified Output Anchor Registration Living Reference](../docs/reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md).
+- Behavior trace: [Interaction Behavior Trace](../docs/architecture/BEHAVIOR-TRACE/INTERACTION-BEHAVIOR-TRACE-2026-10-19-001.md).
+- Central 0.0 registry: [docs/0.0/README.md](../docs/0.0/README.md).
+
+### Accepted rule: bounded interval, never fabricated precision
+
+When an event's exact time is unavailable, use reliable timestamped records before and after it as temporal anchors only when the evidence supports the event ordering. Record the event as occurring within the bounded interval between those anchors; do not invent a midpoint, date, hour, or minute. Keep the exact event timestamp marked UNKNOWN / UNVERIFIED. Preserve each anchor's source, timezone, timestamp meaning, and evidence. If only one reliable anchor exists, state a one-sided bound; if ordering or boundaries are not proven, mark the interval uncertain. New evidence may refine the interval while preserving the prior record and its history.
+
+Example: if anchor A is verified at 10:00 and anchor B at 10:20, and evidence establishes the event occurred between them, record “between 10:00 and 10:20,” not “10:10.”
+
+### Timestamp fields must remain distinct
+
+User-message time, event/action time, repository commit time, modification time, read-back time, and verification time are separate fields. A commit timestamp must never be substituted for the user's message timestamp or the event time. Do not claim a timestamped verification event unless its time was actually captured.
+
+### Registration and destination status
+
+- User acceptance: established by the current conversation; exact message time is UNKNOWN / UNVERIFIED.
+- Repository: this anchor update is not verified until fetched and content-matched after writing.
+- Buffer, Persistent Memory, Library, and Dropbox: NOT VERIFIED by this repository operation.
+- Prior 0.0 anchors remain independent. The Dropbox failover anchor remains OPEN / WAITING until connection and write/read-back are evidenced.
+- Next action on resume: read back this anchor and compare; then continue any remaining reconciliation/architecture queue work without closing unverified items.
+
