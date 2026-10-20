@@ -600,3 +600,11 @@ The queue index and the timestamp case must each be read back after this update.
 - **معیار بستن:** اجرای واقعی برای ورودی و خروجی، شاهد مستقل، بازخوانی/تطبیق، idempotency، توقف و بازیابی، و وضعیت مستقل مقصدها.
 - **قاعدهٔ ادعا:** DOCUMENTED ≠ EXECUTED ≠ VERIFIED؛ تا زمان شواهد اجرایی، پرونده باز بماند.
 - **Next action:** بررسی/ساخت سازوکار اجرایی مجاز و اجرای آزمون انتها‌به‌انتها؛ به‌روزرسانی وضعیت فقط بر اساس شواهد واقعی.
+
+
+## قاعدهٔ فعال/زنده و آزمون مستمر — هر ورودی/خروجی
+- **سند مرجع کامل:** [ACTIVE-LIVING-EVERY-INPUT-OUTPUT-ANCHOR-TEST-AND-PERMANENT-OPERATING-RULE](../../reference/REFERENCE-DOCUMENTS/ACTIVE-LIVING-EVERY-INPUT-OUTPUT-ANCHOR-TEST-AND-PERMANENT-OPERATING-RULE-2026-10-20-001.md)
+- **Stable ID:** `ACTIVE-LIVING-EVERY-INPUT-OUTPUT-ANCHOR-TEST-AND-PERMANENT-OPERATING-RULE-2026-10-20-001`
+- **وضعیت قاعده:** ACTIVE / LIVING — رویهٔ پیش‌فرض در ادامهٔ همکاری.
+- **وضعیت آزمون:** OPEN / PENDING EXECUTION PROOF — تا شواهد انتها‌به‌انتها موجود نشود بسته نیست.
+- **مرجع دروازهٔ اجرایی:** [EVERY-INPUT-OUTPUT-ANCHOR-EXECUTION-GATE](./EVERY-INPUT-OUTPUT-ANCHOR-EXECUTION-GATE-2026-10-20-001.md)
