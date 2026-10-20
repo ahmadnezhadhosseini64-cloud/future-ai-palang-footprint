@@ -72,3 +72,10 @@ Fetch the committed baseline from the default branch and compare it with the int
 - Artifact ID `12308371613`; SHA-256 `sha256:eb6d6642cf651ea371e5f8b68404baf4a881527059ba4a8ce61141fa8df5f05a`.
 - Counts: 500 source files; 1,009 local links / 0 missing; 38 parent edges / 0 unresolved or ambiguous; 37 Stable ID groups; 43 Production ID groups; 8 EVT groups; 11 exact-content duplicate groups; 695 ID occurrences.
 - Read-back ledger: [H0IRAR](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-IDENTIFIER-AND-RELATION-ADJUDICATION-REGISTER-2026-10-21-001.md). Semantic closure remains OPEN / PARTIAL.
+
+
+## Addendum — second semantic review batch
+- [H0IRRB2](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-IDENTIFIER-ROLE-REVIEW-BATCH-002-2026-10-21.md) records five further Stable ID role decisions and seven legacy Reference ID decisions.
+- Parser now separates `REFERENCE_ID` from `STABLE_ID`; front-matter candidates are heuristic only.
+- Fresh pass before this batch: [39517920781](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39517920781), 500 source files, 1,020 local links / 0 missing, 30 Stable ID groups, 43 Production ID groups, 7 Reference ID groups, 8 EVT groups, 11 duplicates, 695 occurrences.
+- EVT-0050 and EVT-0051 have bounded identity/status decisions recorded in H0IRAR; the short filename-prefix collision remains visible. Full inbound/outbound event-reference audit remains open.
