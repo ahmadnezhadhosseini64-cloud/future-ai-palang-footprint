@@ -66,3 +66,7 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - سند مرجع کامل: [INTERACTION-ANCHOR-AND-AUDIT-REASONING-2026-10-20-001](reference/REFERENCE-DOCUMENTS/INTERACTION-ANCHOR-AND-AUDIT-REASONING-2026-10-20-001.md).
 - صف زنده: [OPEN-GAPS-RECOVERY-REGISTER-2026-10-15-001](architecture/INTEGRATION-QUEUE/OPEN-GAPS-RECOVERY-REGISTER-2026-10-15-001.md).
 - پیگیری باز GitHub: [Issue #18 — علت‌یابی دو workflow شکست‌خورده](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/18).
+
+## Active governance rule — dual timestamps (2026-10-20)
+- `DUAL-TIMESTAMP-AVAILABILITY-RULE-2026-10-20-001` / `DTAR-2026-10-20-001`: record assistant/system reference time (UTC, source-labelled) and Tehran local time (Asia/Tehran) together whenever both are available; if Tehran time is unavailable, mark it UNKNOWN / UNAVAILABLE and preserve the exact available system time. Never invent or backfill a missing user-message timestamp.
+- Applied to anchor: [IAAR reference](reference/REFERENCE-DOCUMENTS/INTERACTION-ANCHOR-AND-AUDIT-REASONING-2026-10-20-001.md) and [EVT-0025](architecture/BEHAVIOR-TRACE/EVT-0025-INTERACTION-ANCHOR-AND-AUDIT-REASONING-2026-10-20.md).
