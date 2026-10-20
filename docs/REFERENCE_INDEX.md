@@ -257,3 +257,7 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 
 - **H0CALDR-2026-10-21-001:** [دفتر تصمیم‌های canonical / alias / lineage](reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-CANONICAL-ALIAS-LINEAGE-DECISION-REGISTER-2026-10-21-001.md) — 9 گروه نامزد mirror بر اساس نقش؛ 2 گروه تکراری همچنان نیازمند داوری منشأ/تاریخچه؛ بدون حذف فایل.
 - **EVT-0052:** [ثبت اجرای manifest و اصلاح پیوندها](architecture/BEHAVIOR-TRACE/EVT-0052-CANONICAL-GRAPH-MANIFEST-AND-LINK-REPAIR-2026-10-21.md).
+
+
+
+- **H0GMS-2026-10-21-001:** [نسخهٔ ممیزی‌شدهٔ manifest گراف تاریخی](reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-MANIFEST-SNAPSHOT-2026-10-21-001.md) — run 39510053810؛ 912 پیوند محلی، 0 پیوند شکسته، 38 رابطهٔ والد، 0 والد حل‌نشده و 0 رابطهٔ والد مبهم در همان snapshot.
