@@ -137,3 +137,7 @@
 - سند مکمل: [AICPHAE](AUTOMATIC-INTERACTION-CONTINUITY-AND-PORTABLE-HAIF-EVOLUTION-MASTER-REFERENCE-2026-10-20-001.md).
 - رویداد: [EVT-0041](../../architecture/BEHAVIOR-TRACE/EVT-0041-AUTOMATIC-CONTINUITY-PORTABLE-CHILD-RAHM-MASTER-REQUEST-2026-10-20.md).
 - این سند مکمل URPHA و ITDCT است و قاعدهٔ ثبت هر تعامل، تحلیل بازه‌های زمانی، انتقال میزبان و رشد Child/Rahm/Master را مشخص می‌کند؛ اجرای محصول و انتقال سرتاسری هنوز نیازمند آزمون واقعی است.
+
+## Governing extension — PIATGCG (2026-10-21)
+The living rule for automatic input/output anchoring, processing-time governance, and canonical graph reconciliation is now defined in [PIATGCG](./PERMANENT-INTERACTION-ANCHORING-TIMESTAMP-GOVERNANCE-AND-CANONICAL-GRAPH-MASTER-REFERENCE-2026-10-21-001.md). The current repository path inventory and reconciliation plan are in [C0GIR](./CANONICAL-0.0-GRAPH-INVENTORY-AND-RECONCILIATION-2026-10-21-001.md). User-message time must remain UNKNOWN / UNVERIFIED when unavailable; assistant processing, repository commit and read-back times are separate fields. This specification does not by itself prove runtime-wide automation or a successful second-host transfer.
+
