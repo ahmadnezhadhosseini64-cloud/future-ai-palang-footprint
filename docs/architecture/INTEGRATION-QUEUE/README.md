@@ -811,3 +811,6 @@ The queue index and the timestamp case must each be read back after this update.
 
 
 - **H0IRRB-2026-10-21-001 — OPEN / ACTIVE:** [دفتر داوری تعریف در برابر ارجاع](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-IDENTIFIER-ROLE-REVIEW-BATCH-001-2026-10-21.md). دو گروه Stable ID بازبینی شدند؛ parser اصلاح شده و اجرای ممیزی تازه برای اثبات اصلاح لازم است.
+
+
+- **FAPF-IRA-2026-10-21-001 — ACTIVE / LIVING BLUEPRINT:** [معماری اجرایی قابل پیاده‌سازی](../../reference/REFERENCE-DOCUMENTS/FUTURE-AI-PALANG-FOOTPRINT-IMPLEMENTABLE-REFERENCE-ARCHITECTURE-2026-10-21-001.md). آمادهٔ شروع پیاده‌سازی نسخهٔ نخست؛ اپ کامل هنوز ساخته/مستقر/سرتاسری آزموده نشده است. ممیزی بعدی باید خروجی `historical-0.0-semantic-review-queue.json` را نیز برای داوری همهٔ رخدادهای شناسه تولید کند.
