@@ -711,3 +711,5 @@ The queue index and the timestamp case must each be read back after this update.
 - رویداد: [EVT-0035](../BEHAVIOR-TRACE/EVT-0035-LIVING-ANCHORING-AND-TEST-GOVERNANCE-2026-10-20.md).
 - آزمون پذیرش T1–T7 فعال است؛ فقط آزمون اجراشده با شواهد قابل PASS شدن است. گراف تاریخی کامل ۰.۰، Dropbox، Buffer، Persistent Memory، Library و بازیابی سرتاسری همچنان OPEN / UNVERIFIED هستند.
 - زمان پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان پردازش دستیار: 2026-10-20T22:31:33+03:30.
+
+- لنگر خروجی و گزارش آزمون: [EVT-0036](../BEHAVIOR-TRACE/EVT-0036-ASSISTANT-REGISTRATION-AND-TEST-RESULT-2026-10-20.md); نتیجهٔ کامل آزمون فقط پس از read-back و بررسی مقصدهای مستقل تعیین می‌شود.
