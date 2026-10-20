@@ -273,3 +273,7 @@
 - سند مادر: [H0SAB](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-SEMANTIC-ARCHITECTURE-BASELINE-2026-10-21-001.md).
 - وضعیت: مبنای معنایی و معیارهای داوری ثبت شده‌اند؛ این ثبت به معنی تکمیل مرور معنایی نیست. 493 فایل و گروه‌های شناسه/EVT باید با شاهد بررسی شوند.
 - زمان دقیق پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان commit سند مادر c53e945b7251eef936f41bb9e82763613958c4d0 و زمان رویداد جداگانه‌اند.
+
+
+## EVT collision review register
+- [H0EVTCA-2026-10-21-001](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-EVT-NUMBER-COLLISION-ADJUDICATION-2026-10-21-001.md) — شش جفت تاریخی از نظر هویت متمایز شدند؛ بررسی همهٔ ارجاع‌ها و برخوردهای اضافی همچنان OPEN است.
