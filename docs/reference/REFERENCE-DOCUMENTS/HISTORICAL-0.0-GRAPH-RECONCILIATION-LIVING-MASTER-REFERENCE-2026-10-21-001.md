@@ -243,3 +243,10 @@ This document can be considered repository-integrated only after the file, index
 - Detailed group ledger: [H0IRAR](./HISTORICAL-0.0-IDENTIFIER-AND-RELATION-ADJUDICATION-REGISTER-2026-10-21-001.md). Snapshot and artifact digest: [H0SRQS](./HISTORICAL-0.0-SEMANTIC-REVIEW-QUEUE-SNAPSHOT-2026-10-21-001.md).
 - Two Stable ID groups and six legacy EVT pairs have bounded semantic decisions; all other group-level decisions and full edge semantics remain open. The 11 duplicate groups are preserved and have proposed role-based relationships, not final merges.
 - The implementation-ready app blueprint is [FAPF-IRA](./FUTURE-AI-PALANG-FOOTPRINT-IMPLEMENTABLE-REFERENCE-ARCHITECTURE-2026-10-21-001.md). Application code/deployment/end-to-end tests are not claimed complete.
+
+
+## Addendum v2.2.0 — latest audit read-back
+- Latest successful audit: [39517544772](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39517544772), commit `0e1896e52c80249c90266ef75e2e576eb5a75463`, runner UTC `2026-10-20T23:50:14Z`.
+- Latest counts: 500 source files, 1,009 local links with 0 missing, 38 parent edges with 0 unresolved/ambiguous, 37 Stable ID groups, 43 Production ID groups, 8 EVT groups, 11 exact-content duplicate groups and 695 identifier occurrences.
+- Snapshot: [H0SRQS](./HISTORICAL-0.0-SEMANTIC-REVIEW-QUEUE-SNAPSHOT-2026-10-21-001.md). Group ledger: [H0IRAR](./HISTORICAL-0.0-IDENTIFIER-AND-RELATION-ADJUDICATION-REGISTER-2026-10-21-001.md).
+- This is a fresh structural pass, not proof of every semantic edge. Two Stable ID groups and six legacy EVT pairs have bounded decisions; the remaining groups and full edge semantics stay open.
