@@ -274,3 +274,6 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - **H0IRRB-2026-10-21-001:** [دفتر داوری تعریف در برابر ارجاع — دستهٔ اول](reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-IDENTIFIER-ROLE-REVIEW-BATCH-001-2026-10-21.md) — دو گروه Stable ID بازبینی شدند؛ مشخص شد دو مورد false collision بودند که از شناسایی‌نشدن برچسب‌های metadata فارسی/دوزبانه در parser ناشی می‌شد. اصلاح parser ثبت شده و آزمون تازه لازم است.
 
 - **FAPF-IRA-2026-10-21-001:** [معماری اجرایی قابل پیاده‌سازی برای Future AI / Palang Footprint](reference/REFERENCE-DOCUMENTS/FUTURE-AI-PALANG-FOOTPRINT-IMPLEMENTABLE-REFERENCE-ARCHITECTURE-2026-10-21-001.md) — لایه‌ها، مدل داده، API، UI، امنیت و آزمون‌های پذیرش برای شروع ساخت برنامه.
+
+- **H0SRQS-2026-10-21-001:** [شاهد ممیزی تازه و صف مرور معنایی](reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-SEMANTIC-REVIEW-QUEUE-SNAPSHOT-2026-10-21-001.md) — اجرای 39517339104 موفق؛ 498 فایل منبع، 991 پیوند محلی و صف 693 رخداد شناسه.
+- **H0IRAR-2026-10-21-001:** [دفتر داوری گروه‌های شناسه و روابط](reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-IDENTIFIER-AND-RELATION-ADJUDICATION-REGISTER-2026-10-21-001.md) — وضعیت تمام گروه‌ها و موارد باز، بدون ادعای بستن صوری.
