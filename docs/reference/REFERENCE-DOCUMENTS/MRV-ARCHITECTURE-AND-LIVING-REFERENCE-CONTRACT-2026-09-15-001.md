@@ -1070,3 +1070,12 @@ The current repository excavation and reconciliation record is `docs/reference/R
 - **سند مرجع کامل:** [لنگر و ثبت کامل برای تک‌تک ورودی‌های کاربر و خروجی‌های دستیار](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/EVERY-INTERACTION-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001.md)
 
 از این پس هر پیام کاربر و هر پاسخ نهایی قابل‌مشاهدهٔ دستیار یک واحد تعاملِ دارای لنگر است. متن کامل ورودی و خروجی، شناسه، منشأ، زمان‌های دارای شاهد، رابطه با لنگر قبلی، وضعیت مقصدها، مسیر بازیابی و اقدامات بعدی باید ثبت شود. چرخهٔ الزام‌آور: CAPTURE → PRESERVE → IDENTIFY → PROVENANCE → ANCHOR → REGISTER → LINK → WRITE → READ-BACK → MATCH → VERIFY → RECONCILE → STATUS → RESUME. ثبت در مخزن یا هر مقصد فقط پس از شاهد همان مقصد تأیید می‌شود؛ زمان ناموجود UNKNOWN / UNVERIFIED می‌ماند. اگر ابزار یا دسترسی مانع باشد، کار باز می‌ماند و ثبت خودکار/موفقیت ادعا نمی‌شود.
+
+## قاعدهٔ مادر — لنگر برای هر ورودی و هر خروجی
+
+- **Stable ID:** `EVERY-INPUT-OUTPUT-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001`
+- **Production ID:** `EIOACRG-2026-10-20-001`
+- **Version:** `1.0.0`
+- **سند مرجع کامل:** [لنگر هر ورودی و هر خروجی و حاکمیت ثبت جامع](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/EVERY-INPUT-OUTPUT-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001.md)
+
+از این پس هر ورودی کاربر و هر خروجی دستیار در زنجیرهٔ پروژه باید به‌عنوان رویداد قابل‌ردیابی به لنگر فعال و رویدادهای قبلی مرتبط شود. تصمیم، اصلاح، قاعده، خروجی بادوام و اقدام ابزار باید رکورد کامل متناسب داشته باشد؛ گزارش صرف جایگزین اقدام، سند یا اثبات نیست. زمان‌ها و مقصدها مستقل‌اند. اگر نوشتن/بازخوانی در مخزن ممکن نبود، محدودیت آشکار و رکورد قابل‌بازیابی ارائه شود؛ هیچ ثبت انجام‌نشده‌ای ثبت‌شده ادعا نشود. این قاعده پیش‌فرض حاکم است و برای هر تعامل نیاز به فرمان جداگانه ندارد، مشروط به دسترسی و توان واقعی ابزار.
