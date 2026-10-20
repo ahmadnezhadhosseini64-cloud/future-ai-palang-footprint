@@ -151,3 +151,10 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - [EVT-0034 — گزارش اجرای ثبت و راستی‌آزمایی](architecture/BEHAVIOR-TRACE/EVT-0034-ASSISTANT-EXECUTION-AND-VERIFICATION-REPORT-2026-10-20.md).
 - خروجی مربوط به اجرای قاعدهٔ ثبت دوزمانه، اصلاح قرارداد مادر به نسخهٔ ۱.۱.۰ و ثبت سند تداوم زنده است.
 - زمان پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان پردازش دستیار برای این لنگر: 2026-10-20T22:23:18+03:30 (Asia/Tehran).
+
+
+## قرارداد ثبت زنده، لنگرگذاری و آزمون — 2026-10-20
+- Stable ID: `LIVING-ANCHORING-REGISTRATION-AND-TEST-GOVERNANCE-2026-10-20-001`; Production ID: `LARTG-2026-10-20-001`; Version: 1.0.0.
+- سند مرجع: [LARTG](reference/REFERENCE-DOCUMENTS/LIVING-ANCHORING-REGISTRATION-AND-TEST-GOVERNANCE-2026-10-20-001.md).
+- رویداد ورودی: [EVT-0035](architecture/BEHAVIOR-TRACE/EVT-0035-LIVING-ANCHORING-AND-TEST-GOVERNANCE-2026-10-20.md).
+- زمان پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان پردازش دستیار: 2026-10-20T22:31:33+03:30. آزمون پذیرش فعال اما نتیجهٔ کامل هنوز اثبات نشده است.
