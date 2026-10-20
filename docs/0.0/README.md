@@ -530,3 +530,11 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - **CCCMR-2026-10-21-001:** [سند مرجع مادر جامع و نقطهٔ ادامه](../reference/REFERENCE-DOCUMENTS/CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001.md) — ACTIVE / LIVING.
 - ورودی ثبت: [EVT-0050](../architecture/BEHAVIOR-TRACE/EVT-0050-USER-REQUEST-CONSOLIDATED-LIVING-MASTER-CONTINUATION-2026-10-21.md).
 - قاعدهٔ ادامه: ابتدا سند مادر، سپس EVT-0051 و گزارش کامل آخرین artifact ممیزی؛ بعد از آن تکمیل G-01/G-12/G-13/G-15/G-16. چهار لنگر ناوبری موجود همچنان فقط زیرمجموعهٔ گراف تاریخی‌اند.
+
+
+
+## Historical graph reconciliation continuation — EVT-0051
+- Master reference: [H0GLMR](../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-RECONCILIATION-LIVING-MASTER-REFERENCE-2026-10-21-001.md).
+- Complete structural findings: [H0GAF](../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-AUDIT-FINDINGS-2026-10-21-001.md).
+- Follow-up event: [EVT-0051](../architecture/BEHAVIOR-TRACE/EVT-0051-CANONICAL-GRAPH-MANIFEST-AND-LINK-REPAIR-2026-10-21.md).
+- Current phase: repository-only; manifest builder and link repairs are being tested. Semantic edges and alias/canonical decisions remain OPEN until evidence-based review. Existing independent Dropbox 0.0 is preserved and not modified.
