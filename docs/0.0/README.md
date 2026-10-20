@@ -418,3 +418,10 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - زمان پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان پردازش دستیار: 2026-10-20T22:31:33+03:30.
 
 - لنگر خروجی دستیار/آزمون: [EVT-0036](../architecture/BEHAVIOR-TRACE/EVT-0036-ASSISTANT-REGISTRATION-AND-TEST-RESULT-2026-10-20.md).
+
+
+## لنگر ۰.۰ — قرارداد ثبت کامل و معماری قابل‌انتقال HAIF
+- سند مرجع مادر: [URPHA](../reference/REFERENCE-DOCUMENTS/UNIVERSAL-REGISTER-AND-PORTABLE-HAIF-ARCHITECTURE-MASTER-REFERENCE-2026-10-20-001.md).
+- رویداد ورودی: [EVT-0037](../architecture/BEHAVIOR-TRACE/EVT-0037-UNIVERSAL-REGISTER-AND-PORTABLE-HAIF-REQUEST-2026-10-20.md).
+- این لنگر ادامهٔ زنجیره است؛ هیچ نقطهٔ تاریخی حذف یا جایگزین نمی‌شود. چهار گرهٔ پیمایش صرفاً میان‌بر هستند.
+- زمان پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان پردازش تدوین سند: 2026-10-20T22:58:42+03:30.
