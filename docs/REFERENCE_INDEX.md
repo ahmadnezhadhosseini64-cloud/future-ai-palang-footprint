@@ -52,3 +52,10 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - `ARCHITECTURE-BUILD-VERIFICATION-2026-10-20-001` / `ABV-2026-10-20-001`: [EVT-0024 — بازبینی ورود قرارداد به ساختمان پروژه](architecture/BEHAVIOR-TRACE/EVT-0024-ARCHITECTURE-BUILD-VERIFICATION-2026-10-20.md).
 - نتیجه: اجرای ممیزی ساختاری GitHub Actions با شناسه `39447416772` به `success` رسید. این نتیجه فقط ساختمان داخلی مخزن را پوشش می‌دهد؛ capture سراسری گفتگو و مقصدهای بیرونی باز/اثبات‌نشده‌اند.
 - زمان دقیق پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان اجرای workflow جایگزین آن نیست.
+
+
+## Interaction anchor and audit-resolution lineage — 2026-10-20
+- `INTERACTION-ANCHOR-AND-AUDIT-REASONING-2026-10-20-001` / `IAAR-2026-10-20-001`: [سند مرجع زندهٔ لنگر تعامل و مسیر رفع نقص‌های ممیزی](reference/REFERENCE-DOCUMENTS/INTERACTION-ANCHOR-AND-AUDIT-REASONING-2026-10-20-001.md).
+- ممیزی ساختاری `39449959962` و دروازهٔ بین‌لایه‌ای `39449959904` روی commit `ebadb73f6f107555b5054714aefab175d2a519bd` هر دو PASS گزارش شدند.
+- `main.yml` run `39449957651` و `automatic-final-registration-proof.yml` run `39449956059` همچنان failure گزارش می‌شوند؛ علت در شواهد فعلاً در دسترس تعیین نشده و پیگیری باز است.
+- زمان دقیق پیام کاربر `UNKNOWN / UNVERIFIED`؛ زمان workflowها UTC و جداگانه ثبت شده‌اند. Library/Buffer/Persistent Memory و capture سراسری گفتگو اثبات‌نشده‌اند. Dropbox `OPEN / WAITING`.
