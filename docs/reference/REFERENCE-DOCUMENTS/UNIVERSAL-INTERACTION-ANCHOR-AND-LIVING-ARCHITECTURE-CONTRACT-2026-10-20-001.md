@@ -258,11 +258,13 @@ The overall state is not complete while any required destination is unverified. 
 
 این بخش باید فقط پس از اجرای واقعی تکمیل شود. مقادیر زیر، وضعیت قابل اثبات همین ایجاد سند در مخزن را ثبت می‌کنند؛ برای سایر مقصدها نتیجه‌گیری نمی‌کنند.
 
-- Repository: [تکمیل پس از پاسخ واقعی عملیات]
+- Repository: VERIFIED for this file write / ثبت این فایل در مخزن تأیید شد.
 - File path: docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001.md
-- Commit SHA: [تکمیل پس از پاسخ واقعی عملیات]
-- Read-back: [تکمیل پس از بازخوانی واقعی]
-- Content match: [تکمیل پس از مقایسه واقعی]
+- Initial creation commit SHA: 956833779543522a0fa5f29282469976217a701c
+- Read-back: VERIFIED — the file was fetched again from the repository default branch after creation.
+- Content match: PARTIAL — the returned file was checked for the expected title and document sections; no byte-for-byte comparison against the full source string was performed.
+- Read-back blob SHA before this status update: 289916e23257e93f7b73cacf3e25e495d4b1f570
+- Status-record update: this execution evidence is being written as a follow-up version; the resulting commit and final read-back must be checked separately.
 - Architecture index/master integration: PENDING until a real index/master update is performed and verified.
 - Buffer: UNVERIFIED unless a real buffer write/read is evidenced.
 - Persistent Memory: UNVERIFIED unless a real memory operation is evidenced.
