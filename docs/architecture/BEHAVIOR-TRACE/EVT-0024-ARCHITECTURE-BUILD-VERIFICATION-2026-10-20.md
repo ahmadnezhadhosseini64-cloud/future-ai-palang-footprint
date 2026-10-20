@@ -64,3 +64,12 @@
 - Separate unresolved failures remain: [main workflow run 39449616044](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39449616044) and [automatic final registration proof run 39449617919](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39449617919) both report `failure`; the available GitHub API returns zero job records for these runs, so their exact failing step cannot be independently determined here. They remain OPEN and prevent claiming that every repository workflow is green.
 - External provider memory, Library, Buffer, automatic capture of all ChatGPT messages, full historical reconciliation, and end-to-end recovery remain OPEN / NOT PROVEN. Dropbox remains untouched.
 - Exact user-message time remains UNKNOWN / UNVERIFIED; the times above are workflow completion times.
+
+
+## 8. Latest verified repository gates — 2026-10-20
+- On commit `81b8929d182408015b774fda536e5cf753034684`, the [Living Architecture Audit run 39449825386](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39449825386) completed `success` at `2026-10-20T15:35:39Z`.
+- On the same commit, the [Cross-Layer Integrity Gate run 39449824926](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39449824926) completed `success` at `2026-10-20T15:35:38Z`; all gate steps were successful.
+- These runs include the master 0.0 boundary repair, the XLR production-registry entry, the ABV record, the architecture link updates, and the revised active workflow assertions.
+- The two separate workflows `main.yml` and `automatic-final-registration-proof.yml` still report `failure` on the same commit, with no job records available through the current API. Their causes remain unresolved; this prevents a claim that all repository workflows are green.
+- The latest successful audit is structural repository evidence only. External persistence, automatic capture of every ChatGPT message, Library/Buffer/Persistent Memory independent write/read-back, and full end-to-end recovery remain OPEN / NOT PROVEN. Dropbox remains untouched.
+- Exact user-message time remains UNKNOWN / UNVERIFIED; the timestamps above are workflow completion times.
