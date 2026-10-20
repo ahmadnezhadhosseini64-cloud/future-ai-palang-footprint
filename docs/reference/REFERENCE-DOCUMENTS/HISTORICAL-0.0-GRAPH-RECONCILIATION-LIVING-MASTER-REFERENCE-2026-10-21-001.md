@@ -167,3 +167,13 @@ This document can be considered repository-integrated only after the file, index
 - **Duplicate/identity state:** 11 exact-content duplicate groups now have explicit non-destructive candidate decisions; 33 Stable ID and 42 Production ID repeated-occurrence groups remain to be semantically classified. Eight EVT-number collision groups remain disclosed.
 - **Closure boundary:** structural links and declared-parent extraction are closed for this snapshot. Full natural-language semantic equivalence across every source document remains OPEN / PARTIAL. The new snapshot is evidence of structural consistency, not a blanket semantic sign-off.
 - **Change log:** v1.3.0 records the artifact-bound manifest snapshot and explicit structural-vs-semantic closure boundary.
+
+
+
+## Addendum v1.4.0 — latest artifact-backed graph snapshot
+- Latest completed audit snapshot: [H0GMS-2026-10-21-001](./HISTORICAL-0.0-GRAPH-MANIFEST-SNAPSHOT-2026-10-21-001.md), refreshed to run 39510205907, audited commit `51eb2caf2679c54588765d78159f1b96b0aec652`, audit UTC `2026-10-20T22:43:55Z`, artifact 12305736053, digest `sha256:0c7eee16fccbdeb095dcbd5f4cafb9cf5e9312f819f92e6dec9a8acb3f026866`.
+- Snapshot metrics: 785 total files, 493 source files, 292 generated evidence files, 99 paths containing 0.0, 90 reference-document paths, 934 local Markdown link edges, 0 missing links, 38 declared parent edges, 0 unresolved parents and 0 ambiguous parents.
+- 11 exact-content duplicate groups are mapped to explicit, non-destructive candidate relationships; 33 Stable ID and 42 Production ID repeated-occurrence groups and 8 EVT-number collision groups remain subject to semantic role classification.
+- The two differently numbered outcome pairs now have earliest-commit candidates and zero inbound local Markdown links in the audited manifest; both later copies remain preserved as aliases.
+- Full semantic equivalence of all source prose is not claimed. The graph is structurally connected for this snapshot; remaining semantic adjudication stays OPEN / ACTIVE.
+- Change log: v1.4.0 updates the living baseline to the latest artifact-backed snapshot.
