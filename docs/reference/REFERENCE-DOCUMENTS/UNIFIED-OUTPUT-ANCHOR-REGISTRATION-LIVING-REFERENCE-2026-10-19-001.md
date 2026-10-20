@@ -370,10 +370,10 @@ Recovery/resume path:
 
 
 ### 20.1 اتصال به ساختمان پروژه و صف ادغام معماری
-- **Architecture integration case:** [PALANG-0.0-COMPLETE-PATH-GOVERNING-ADDENDUM-2026-10-20-001](../architecture/INTEGRATION-QUEUE/PALANG-0.0-COMPLETE-PATH-GOVERNING-ADDENDUM-2026-10-20-001.md)
+- **Architecture integration case:** [PALANG-0.0-COMPLETE-PATH-GOVERNING-ADDENDUM-2026-10-20-001](../../architecture/INTEGRATION-QUEUE/PALANG-0.0-COMPLETE-PATH-GOVERNING-ADDENDUM-2026-10-20-001.md)
 - **Behavior event:** [EVT-0015](../../architecture/BEHAVIOR-TRACE/EVT-0015-0.0-GOVERNING-ADDENDUM-ARCHITECTURE-INTEGRATION-2026-10-20.md)
 - **0.0 registry:** [دفتر نقاط ۰.۰](../../0.0/README.md)
-- **Queue index:** [نمایهٔ صف ادغام معماری](../../architecture/INTEGRATION-QUEUE/README.md)
+- **Queue index:** [نمایهٔ صف ادغام معماری](../../../architecture/INTEGRATION-QUEUE/README.md)
 - **Behavior trace:** [دفتر رفتار تعامل](../../architecture/BEHAVIOR-TRACE/INTERACTION-BEHAVIOR-TRACE-2026-10-19-001.md)
 - **Complete path:** [سند مرجع کامل مسیر](./PALANG-0.0-COMPLETE-PATH-AND-GOVERNING-ADDENDUM-2026-10-20-001.md)
 - **Architectural placement:** Governance / حاکمیت → Living Reference / سند مرجع زنده → 0.0 Anchor / لنگر ۰.۰ → Integration Queue / صف ادغام معماری → Behavior Event / رویداد رفتار → Evidence & Read-back / شواهد و بازخوانی → Recovery / بازیابی.
@@ -389,7 +389,7 @@ Recovery/resume path:
 - هر خروجی مهم باید به لنگر یا رویداد شناسه‌دار، سند مرجع کامل و مسیر معماری متصل شود. هر نقطهٔ ۰.۰ که کاربر تعیین کرده مستقل بماند.
 - زمان درخواست، اقدام، commit، بازخوانی و تأیید جدا ثبت شوند. زمان نامعلوم UNKNOWN / UNVERIFIED است؛ حدس ممنوع.
 - Repository، Buffer، Persistent Memory، Library و Dropbox مقصدهای جدا هستند؛ هر مقصد فقط با نوشتن، بازخوانی و تطبیق مستقل تأیید می‌شود.
-- پروندهٔ صف معماری: [پروندهٔ ادغام ۰.۰](../architecture/INTEGRATION-QUEUE/PALANG-0.0-COMPLETE-PATH-GOVERNING-ADDENDUM-2026-10-20-001.md)؛ [نمایهٔ صف](../architecture/INTEGRATION-QUEUE/README.md).
+- پروندهٔ صف معماری: [پروندهٔ ادغام ۰.۰](../../architecture/INTEGRATION-QUEUE/PALANG-0.0-COMPLETE-PATH-GOVERNING-ADDENDUM-2026-10-20-001.md)؛ [نمایهٔ صف](../../architecture/INTEGRATION-QUEUE/README.md).
 - این ثبت، تعهد حاکم در مخزن را تعریف می‌کند؛ ذخیره در مقصدهای بیرونی را به‌خودی‌خود ثابت نمی‌کند.
 - زمان دقیق پیام درخواست: UNKNOWN / UNVERIFIED.
 
