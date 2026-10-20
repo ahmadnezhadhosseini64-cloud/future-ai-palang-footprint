@@ -704,3 +704,10 @@ The queue index and the timestamp case must each be read back after this update.
 - خروجی اجرای ثبت دوزمانه و اصلاح قرارداد مادر به v1.1.0 را مستند می‌کند.
 - وضعیت مخزن باید پس از بازخوانی رویداد و پیوندهایش تأیید شود؛ لنگرگذاری خودکار سراسری، گراف کامل تاریخی ۰.۰، Dropbox، Buffer، Persistent Memory، Library و آزمون سرتاسری همچنان OPEN / UNVERIFIED هستند.
 - زمان پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان پردازش دستیار: 2026-10-20T22:23:18+03:30.
+
+
+## LARTG / EVT-0035 — ثبت زنده و آزمون پذیرش
+- سند مرجع: [LARTG](../../reference/REFERENCE-DOCUMENTS/LIVING-ANCHORING-REGISTRATION-AND-TEST-GOVERNANCE-2026-10-20-001.md).
+- رویداد: [EVT-0035](../BEHAVIOR-TRACE/EVT-0035-LIVING-ANCHORING-AND-TEST-GOVERNANCE-2026-10-20.md).
+- آزمون پذیرش T1–T7 فعال است؛ فقط آزمون اجراشده با شواهد قابل PASS شدن است. گراف تاریخی کامل ۰.۰، Dropbox، Buffer، Persistent Memory، Library و بازیابی سرتاسری همچنان OPEN / UNVERIFIED هستند.
+- زمان پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان پردازش دستیار: 2026-10-20T22:31:33+03:30.
