@@ -106,3 +106,12 @@ Files whose purpose or role is not yet clear stay in the active review queue or 
 - Latest structural inventory: 500 source files, 1,009 local links / 0 missing, 38 parent edges / 0 unresolved or ambiguous, 37 Stable ID groups, 43 Production ID groups, 8 EVT groups, 11 exact-content duplicate groups, 695 ID occurrences.
 - Evidence record: [H0SRQS](./HISTORICAL-0.0-SEMANTIC-REVIEW-QUEUE-SNAPSHOT-2026-10-21-001.md).
 - Two Stable ID group decisions and six EVT-pair decisions remain bounded decisions only; the other group decisions and semantic meaning of every local edge remain open. New counts do not imply semantic closure.
+
+
+## Addendum v1.2.0 — second role-review batch and corrected namespaces
+- Detailed evidence: [H0IRRB2](./HISTORICAL-0.0-IDENTIFIER-ROLE-REVIEW-BATCH-002-2026-10-21.md).
+- Five additional Stable ID groups were adjudicated as one definition plus index/reference occurrences: certificate fifth point, certificate third point, living anchoring governance, interaction registration/gap closure, and three-layer registration architecture.
+- Seven legacy Reference ID groups were separated from Stable ID and role-triaged: MPPA-2026-09-28-001, MPPA-2026-09-29-002, REF-DRFR, REF-GAPC, REF-ICG, REF-PRNT and REF-RRC. Reference IDs remain their own namespace; they are not silently counted as Stable IDs.
+- Fresh parser audit [39517920781](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39517920781) passed on commit `07c0915db52e66061c7c905081c2bfe77a32e807`: 500 source files, 1,020 local links / 0 missing, 38 parent edges / 0 unresolved/ambiguous, 30 Stable ID groups, 43 Production ID groups, 7 Reference ID groups, 8 EVT groups, 11 exact-content duplicate groups, 695 ID occurrences.
+- EVT-0050: two distinct event identities, confirmed by separate full Stable IDs, Production IDs and distinct subject/title; short number 0050 remains a namespace collision. EVT-0051: one canonical historical event plus a retained superseded correction notice; not two independent canonical events. Keep the correction notice and point to EVT-0052; short filename-prefix collision remains explicitly disclosed.
+- Semantic status remains OPEN / PARTIAL: other 30 Stable ID groups and 43 Production ID groups still require review; the seven Reference ID decisions do not close every relationship in those files.
