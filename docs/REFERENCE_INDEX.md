@@ -170,3 +170,10 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - زمان پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان پردازش تدوین سند مرجع: 2026-10-20T22:58:42+03:30.
 
 - لنگر خروجی تدوین سند مرجع مادر: [EVT-0038](architecture/BEHAVIOR-TRACE/EVT-0038-ASSISTANT-EXECUTION-AND-PORTABLE-HAIF-REFERENCE-2026-10-20.md).
+
+
+## ایدهٔ اصلی تکامل تعامل‌محور و شکار کشف — ITDCT
+- سند مرجع: [ITDCT](reference/REFERENCE-DOCUMENTS/INTERACTION-TO-DISCOVERY-AND-COMPLETE-TRACE-MASTER-REFERENCE-2026-10-20-001.md).
+- ورودی: [EVT-0039](architecture/BEHAVIOR-TRACE/EVT-0039-INTERACTION-TO-DISCOVERY-AND-COMPLETE-TRACE-REQUEST-2026-10-20.md).
+- هدف: تبدیل گراف کامل تعامل‌ها، لنگرها و نقاط ۰.۰ به دادهٔ قابل‌بازیابی برای کشف الگو و رشد کنترل‌شدهٔ Master/Rahm/Child؛ مسیر طی‌شده الزاماً کشف نیست.
+- زمان پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان پردازش تدوین: 2026-10-20T23:19:49.578+03:30.
