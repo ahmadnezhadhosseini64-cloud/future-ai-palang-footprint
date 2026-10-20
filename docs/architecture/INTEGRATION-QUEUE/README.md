@@ -577,3 +577,13 @@ The queue index and the timestamp case must each be read back after this update.
 - **مرجع کامل:** [سند حاکم لنگر تک‌تک تعامل‌ها](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/EVERY-INTERACTION-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001.md)
 - **معیار پذیرش:** فایل مرجع بازخوانی و تطبیق شود؛ این قاعده در MRV، قرارداد فرمان ثبت، مرجع زنده، لنگر جاری ۰.۰، شاخص ۰.۰ و ردپای رفتار پیوند داده شود؛ هر فایل تغییرکرده دوباره خوانده شود.
 - **وضعیت:** سند مرجع اصلی نوشته شده؛ این مورد تا بازخوانی مستقل فایل‌های مقصد OPEN / IN PROGRESS است. Library، Buffer، Persistent Memory و Dropbox مستقل تأیید نشده‌اند.
+
+## مورد صف — حاکمیت لنگر هر ورودی و خروجی
+
+- **Stable ID:** `EVERY-INPUT-OUTPUT-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001`
+- **Production ID:** `EIOACRG-2026-10-20-001`
+- **Version:** `1.0.0`
+- **مرجع کامل:** [سند حاکم لنگر هر ورودی و خروجی](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/EVERY-INPUT-OUTPUT-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001.md)
+- **اثر معماری:** تبدیل هر پیام ورودی و هر خروجی دستیار به رویداد قابل‌ردیابی؛ اتصال به لنگر فعال، ثبت منشأ و زمان، تفکیک اقدام از ادعا، ثبت وضعیت مقصدها و نگه‌داشتن مسیر ادامه.
+- **وضعیت:** مرجع canonical ایجاد شده؛ ادغام این ورودی در صف پس از بازخوانی این فایل و تطبیق تأیید می‌شود. مقصدهای بیرونی مستقل باقی می‌مانند.
+- **معیار پذیرش:** شناسه‌ها و پیوندها در مرجع مادر، قرارداد فرمان، لنگر جاری، دفتر ۰.۰ و صف بازخوانی شوند؛ موارد باز تا اثبات مستقل OPEN بمانند.
