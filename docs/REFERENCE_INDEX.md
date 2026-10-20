@@ -3,12 +3,13 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Verified:** 2026-08-31
+**Last Updated:** 2026-10-20 — this update links UIALAC-2026-10-20-001; unrelated historical verification dates remain historical.
 
 ## Canonical References
 
 | ID | Document | Role | Status |
 |---|---|---|---|
+| UIALAC-2026-10-20-001 | `docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001.md` | قرارداد جامع لنگرگذاری، ثبت، مستندسازی، سه سطح ماندگاری و تداوم زنده | REPOSITORY WRITE + READ-BACK VERIFIED; architecture index linked; Buffer/Persistent Memory and automatic execution unverified |
 | SRC-2026-08-29-001 | `docs/STABLE_RETRIEVAL_CORE.md` | Stable external retrieval contract | VERIFIED / ACTIVE |
 | RRT-2026-08-29-001 | `docs/RETRIEVAL_RUNTIME.md` | Operational retrieval sequence | VERIFIED / ACTIVE |
 | EGE-2026-08-29-001 | `docs/EVIDENCE_GATE.md` | Independent execution evidence contract | PROVEN / ACTIVE / CLOSED / PASS |
