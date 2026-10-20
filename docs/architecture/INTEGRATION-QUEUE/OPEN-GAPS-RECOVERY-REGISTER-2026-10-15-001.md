@@ -229,3 +229,14 @@ NO CLAIM WITHOUT EVIDENCE — هیچ ادعایی بدون شاهد پذیرفت
 - Still open: `main.yml` run `39449616044` and `automatic-final-registration-proof.yml` run `39449617919` report failure; job detail was not retrievable (API returned zero jobs), so root cause remains unverified. Do not report the entire CI system as green.
 - G-AUTO-02 through G-AUTO-08 remain independently open as applicable; Dropbox was not touched.
 - User-message time UNKNOWN / UNVERIFIED; workflow completion times remain separate.
+
+
+## IAAR-2026-10-20-001 — پیگیری لنگر تعامل و دو workflow شکست‌خورده (2026-10-20)
+- سند مرجع: [INTERACTION-ANCHOR-AND-AUDIT-REASONING-2026-10-20-001](../../reference/REFERENCE-DOCUMENTS/INTERACTION-ANCHOR-AND-AUDIT-REASONING-2026-10-20-001.md)
+- ممیزی ساختاری `39449959962`: PASS؛ 12 فایل بررسی شده؛ آزمون ماندگاری بیرونی و capture همهٔ گفتگوها انجام نشده.
+- دروازهٔ بین‌لایه‌ای `39449959904`: PASS؛ تأیید ارائه‌دهندهٔ حافظهٔ پایدار همچنان PENDING.
+- موارد باز: `main.yml` run `39449957651` و `automatic-final-registration-proof.yml` run `39449956059`. بازیابی jobها در بررسی حاضر فهرست خالی برگرداند؛ علت شکست UNKNOWN / UNVERIFIED و نباید حدس زده شود.
+- پیگیری‌ها: بازیابی شواهد شکست؛ تشخیص علت؛ اصلاح محدود؛ اجرای مجدد و بازخوانی نتیجه. مقصدهای Library/Buffer/Persistent Memory، capture سراسری، تطبیق لنگرهای تاریخی و آزمون سرتاسری نیز باز می‌مانند.
+- Dropbox: `OPEN / WAITING`؛ تا دستور صریح کاربر دست‌نخورده می‌ماند.
+- زمان دقیق پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان‌های workflow فقط زمان اجرای آزمون هستند.
+- وضعیت صف: OPEN / ACTIVE / LIVING؛ این مورد با PASS دو آزمون بسته نمی‌شود.
