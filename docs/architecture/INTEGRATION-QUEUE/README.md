@@ -518,3 +518,12 @@ The queue index and the timestamp case must each be read back after this update.
 - **Destination boundary:** Buffer / بافر، Library / کتابخانه، Persistent Memory / حافظهٔ پایدار و Dropbox / دراپ‌باکس مستقلاً تأیید نشده‌اند. کار Dropbox جدا و OPEN / WAITING باقی می‌ماند.
 - **Time integrity:** زمان دقیق پیام و زمان مستقل بازخوانی UNKNOWN / UNVERIFIED؛ زمان commit جایگزین آن‌ها نیست.
 - **Resume:** مورد موجود را با همین Stable ID بازیابی کن؛ از ایجاد نسخهٔ تکراری یا بستن گپ‌های بیرونی بدون شاهد خودداری کن.
+
+
+## 20. Permanent registration governance — 2026-10-20
+- Stable ID: PERMANENT-LIVING-EXECUTION-ANCHOR-TIMESTAMP-GOVERNANCE-2026-10-20-001
+- Canonical reference: ../../reference/REFERENCE-DOCUMENTS/PERMANENT-LIVING-EXECUTION-ANCHOR-TIMESTAMP-GOVERNANCE-2026-10-20-001.md
+- Governing reference: ../../reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md section 21
+- Apply the full cycle to significant outputs: preserve, identify, classify, provenance, IDs/version, anchor, complete reference, architecture links, timestamp evidence, write, read-back, match, verify, reconcile, per-destination status, next action and resume.
+- Unknown timestamps remain UNKNOWN / UNVERIFIED. Repository, buffer, persistent memory, library and Dropbox remain separate destinations.
+- After this write, read this index back and compare the new section and canonical link.
