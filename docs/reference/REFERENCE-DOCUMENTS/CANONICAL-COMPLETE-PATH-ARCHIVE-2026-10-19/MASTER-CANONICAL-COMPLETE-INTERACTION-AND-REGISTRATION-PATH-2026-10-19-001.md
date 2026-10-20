@@ -415,8 +415,8 @@ ONE MASTER → COMPLETE KNOWN PATH → SOURCE EVIDENCE → OPEN WORK → NEXT AC
 ## 15.6 ثبت تازه: تداوم معماری Master–Child–Rahm و لنگر خروجی EVT-0026
 - **Stable ID:** `INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-REGISTRATION-2026-10-20-001`; **Production ID:** `ICMCRR-HAIF-2026-10-20-001`; **Version:** 1.0.0.
 - **سند مرجع جزئیات و شکاف‌ها:** [Interaction Continuity & Master–Child–Rahm](../INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-REGISTRATION-2026-10-20-001.md).
-- **رویداد:** [EVT-0026](../../../architecture/BEHAVIOR-TRACE/EVT-0026-INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-2026-10-20.md).
-- **صف پیگیری:** [Architecture Integration Queue](../../../architecture/INTEGRATION-QUEUE/README.md).
+- **رویداد:** [EVT-0026](../../../../architecture/BEHAVIOR-TRACE/EVT-0026-INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-2026-10-20.md).
+- **صف پیگیری:** [Architecture Integration Queue](../../../../architecture/INTEGRATION-QUEUE/README.md).
 - **نقطه ۰.۰ حفظ‌شده:** `PALANG-0.0-CURRENT-2026-10-20-001`؛ این ثبت لنگر تازه ۰.۰ نیست.
 - **نتیجه محدود:** ثبت مخزن سند، رویداد، صف و پیوند checkpoint بازخوانی و تطبیق شده است؛ این ثبت به‌تنهایی اجرای خودکار، پیاده‌سازی افزونه بین میزبان‌ها، یا پذیرش Library/Buffer/Persistent Memory/Dropbox را اثبات نمی‌کند.
 - **زمان دقیق پیام:** UNKNOWN / UNVERIFIED. زمان commit یا بازخوانی جایگزین زمان پیام نیست.
