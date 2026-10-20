@@ -65,3 +65,18 @@ After the initial event record, the governing rule was also linked into the MRV 
 - The governing command binding, integration queue and current 0.0 anchor were fetched again later and still contained the Stable ID and Production ID; their latest observed blob SHAs were respectively `46f60af77a1996ba7b0bc181ae679546befcd4b0`, `48dc370eb7ace0363daeae5322b383e1a76b136e`, and `6b4ccf6fdb3b9fa0eb63bf91eab9f0ecedbe84f9`. These latest versions differ from earlier read-backs because the files changed again; the listed SHAs identify the final versions observed in that follow-up fetch.
 
 **Updated scope of repository integration:** complete reference + event trace + MRV master + governing command binding + living registration reference + integration queue + central 0.0 registry + current 0.0 anchor all contain the new rule identifiers/links as checked by repository fetches. This does not close Library, Buffer, Persistent Memory or Dropbox obligations and does not imply that every unrelated architectural gap has been resolved. Overall status remains `PARTIAL / OPEN`.
+
+
+## Repository commit timestamps — independently retrieved from GitHub metadata
+
+این زمان‌ها زمان commit در مخزن‌اند، نه زمان پیام کاربر، نه زمان شروع عملیات و نه زمان دقیق بازخوانی. UTC از metadata واقعی commit گرفته شده و زمان تهران با اختلاف UTC+03:30 محاسبه شده است:
+- Canonical reference create commit `92caa905325a3b7831f01402cc1799ccee016109`: `2026-10-20T09:17:35Z` = `2026-10-20 12:47:35 Asia/Tehran`.
+- Governing binding integration commit `ca2aa6562121bd7d9fce1eaa0cf816f76b64ed10`: `2026-10-20T09:17:58Z` = `12:47:58 Asia/Tehran`.
+- Integration queue commit `42c1fab93a111db74b7e859561e6717bb29b4aee`: `2026-10-20T09:18:03Z` = `12:48:03 Asia/Tehran`.
+- Current 0.0 anchor integration commit `5c5b4b7bc3c7f6f57a4c29d8a67ae5c6c4bf6735`: `2026-10-20T09:18:08Z` = `12:48:08 Asia/Tehran`.
+- Event record create commit `06a2180ad33bdf8d0c5724e0a715bf583ead0023`: `2026-10-20T09:18:29Z` = `12:48:29 Asia/Tehran`.
+- Central 0.0 registry commit `9ea8c8c20f44cede28ffb453eda034ab8bb2c684`: `2026-10-20T09:19:16Z` = `12:49:16 Asia/Tehran`.
+- MRV master integration commit `ad7cf68ffcbddc600f344ed7d2acbf12ad217ec2`: `2026-10-20T09:19:49Z` = `12:49:49 Asia/Tehran`.
+- This event's follow-up evidence commit `536f466e202319ef9c8384c2931ae548606bb963`: `2026-10-20T09:20:06Z` = `12:50:06 Asia/Tehran`.
+
+The user's exact command/message time remains `UNKNOWN / UNVERIFIED`; these commit timestamps are not substituted for it. The post-write fetch time is not separately timestamped by the connector and remains `UNKNOWN / UNVERIFIED`.
