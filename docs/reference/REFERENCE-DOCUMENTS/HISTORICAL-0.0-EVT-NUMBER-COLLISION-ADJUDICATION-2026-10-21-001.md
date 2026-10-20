@@ -44,3 +44,21 @@
 ## Change log
 
 - v1.0.0 — ثبت داوری دستهٔ اول برای شش جفت شمارهٔ EVT؛ تمایز هویت معنایی از تکرار شماره؛ حفظ همهٔ فایل‌ها و باز نگه‌داشتن بررسی ارجاع‌ها و دو مورد اضافی.
+
+
+## Addendum v1.1.0 — review of the two remaining EVT groups
+
+### EVT-0050 — distinct event identities
+- `EVT-0050-ARCHITECTURE-REGISTRATION-HISTORICAL-GRAPH-2026-10-21.md` declares Stable ID `EVT-0050-ARCHITECTURE-REGISTRATION-HISTORICAL-GRAPH-2026-10-21-001` and Production ID `EVT-0050-2026-10-21-001`.
+- `EVT-0050-USER-REQUEST-CONSOLIDATED-LIVING-MASTER-CONTINUATION-2026-10-21.md` declares Stable ID `EVT-0050-USER-REQUEST-CONSOLIDATED-LIVING-MASTER-CONTINUATION-2026-10-21` and Production ID `EVT50-2026-10-21-001`.
+- Their titles, purposes and full identifiers are distinct. Decision: two independent event identities share the short filename number. Both records remain preserved; the short number alone is not a unique key.
+
+### EVT-0051 — canonical event plus correction notice
+- `EVT-0051-ASSISTANT-CONSOLIDATED-MASTER-CREATION-AND-READBACK-2026-10-21.md` is the historical event record.
+- `EVT-0051-CANONICAL-GRAPH-MANIFEST-AND-LINK-REPAIR-2026-10-21.md` explicitly identifies itself as a SUPERSEDED / NON-CANONICAL CORRECTION NOTICE, states that it was created with an already-used number, and directs readers to active EVT-0052. It is not a second canonical event.
+- Decision: one event plus one retained correction artifact. The path-prefix collision remains visible because the historical correction file is preserved; do not attribute work to the correction notice or treat it as a canonical EVT-0051 event.
+
+### Closure boundary
+- Semantic identity/status classification for all eight collision groups now has a decision: six older pairs are distinct event subjects; EVT-0050 is two distinct event identities; EVT-0051 is one event plus a correction notice.
+- Full inbound/outbound reference audit for all eight groups is still OPEN. No short-number rewrite, file deletion or broad link rewrite has been performed.
+- Latest parser evidence for the namespace-corrected manifest is [run 39517920781](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39517920781); subsequent register/link updates require the next audit.
