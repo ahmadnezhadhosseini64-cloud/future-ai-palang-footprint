@@ -496,3 +496,12 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - سند مرجع جامع: [AAAPHR v1.0.1](../reference/REFERENCE-DOCUMENTS/AUTOMATIC-ANCHORING-ARCHITECTURE-AUDIT-AND-PORTABLE-HAIF-REFERENCE-2026-10-21-001.md).
 - این پیوند ۰.۰ جدید ایجاد نمی‌کند؛ فقط خروجی ممیزی را به دفتر بازیابی وصل می‌کند.
 
+
+## حاکمیت دائمی زمان‌گذاری و گراف تاریخی
+- سند مرجع مادر: [PIATGCG](../reference/REFERENCE-DOCUMENTS/PERMANENT-INTERACTION-ANCHORING-TIMESTAMP-GOVERNANCE-AND-CANONICAL-GRAPH-MASTER-REFERENCE-2026-10-21-001.md).
+- نقشهٔ موجودی گراف: [C0GIR](../reference/REFERENCE-DOCUMENTS/CANONICAL-0.0-GRAPH-INVENTORY-AND-RECONCILIATION-2026-10-21-001.md).
+- ورودی: [EVT-0046](../architecture/BEHAVIOR-TRACE/EVT-0046-USER-REQUEST-GOVERNING-ANCHORING-TIMESTAMP-AND-GRAPH-RECONCILIATION-2026-10-21.md).
+- خروجی: [EVT-0047](../architecture/BEHAVIOR-TRACE/EVT-0047-ASSISTANT-GOVERNANCE-REFERENCE-AND-GRAPH-INVENTORY-2026-10-21.md).
+- آخرین snapshot درختی که در C0GIR ثبت شده: 640 فایل، `truncated=false`، 92 مسیر دارای `0.0`، 38 مسیر checkpoint و 50 فایل EVT. این تعدادها شمارش مسیرند، نه تعداد لنگرهای یکتا.
+- وضعیت گراف: OPEN / PARTIAL؛ محتوا و روابط همهٔ گره‌ها هنوز تطبیق کامل نشده‌اند.
+
