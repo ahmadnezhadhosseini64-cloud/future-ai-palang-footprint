@@ -50,3 +50,10 @@ Fetch the committed baseline from the default branch and compare it with the int
 - The six legacy EVT pairs were classified as distinct event identities sharing a short number; two Stable ID groups were classified as references versus definitions, exposing a parser coverage gap.
 - **Fresh structural audit after these latest commits is not yet independently retrieved/read back.** Therefore the regex fix, new cross-links and any changed counts are committed but not yet structurally accepted. Existing 39510754774 remains evidence only for its earlier audited commit.
 - Remaining semantic work: all other ID occurrence groups, all EVT references (including the extra groups), inbound/outbound link review for the 11 duplicate groups, and semantic role classification for the full 493-file source inventory.
+
+
+## Addendum — app-build specification and review-queue generator
+- Implementable architecture specification: [FAPF-IRA-2026-10-21-001](../../reference/REFERENCE-DOCUMENTS/FUTURE-AI-PALANG-FOOTPRINT-IMPLEMENTABLE-REFERENCE-ARCHITECTURE-2026-10-21-001.md).
+- Graph builder change: the manifest script now emits line-level identifier occurrences, heuristic role candidates, and inbound/outbound local-link context to `historical-0.0-semantic-review-queue.json`. Human semantic review remains mandatory.
+- The workflow is configured to run on pushes to `main`; the fresh run must be inspected to verify syntax, output, updated counts, link health and artifact integrity.
+- Application status: buildable architecture specification exists; complete application implementation, deployment and end-to-end acceptance are not yet claimed.
