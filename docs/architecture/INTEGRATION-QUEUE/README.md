@@ -668,3 +668,12 @@ The queue index and the timestamp case must each be read back after this update.
 - Stable ID: `REGISTER-COMMAND-ACKNOWLEDGEMENT-2026-10-20-001`; Production ID: `RCA-2026-10-20-001`.
 - Main checkpoint: [PALANG-0.0-MAIN-LOCK-2026-10-20-002](../../../checkpoints/PALANG-0.0-MAIN-LOCK-2026-10-20-002.md)
 - Status: ثبت رویداد در مخزن؛ بازخوانی نهایی و تطبیق لینک‌ها در حال انجام. مقصدهای مستقل و Dropbox همچنان تأییدنشده/باز هستند.
+
+
+## Audit registration — PALANG-0.0-ANCHOR-COUNT-AND-GAP-AUDIT-2026-10-20-001
+- Canonical reference: [PALANG-0.0-ANCHOR-COUNT-AND-GAP-AUDIT-2026-10-20-001](../../reference/REFERENCE-DOCUMENTS/PALANG-0.0-ANCHOR-COUNT-AND-GAP-AUDIT-2026-10-20-001.md).
+- Behavior event: [EVT-0029](../BEHAVIOR-TRACE/EVT-0029-0.0-ANCHOR-COUNT-AND-GAP-AUDIT-2026-10-20.md).
+- Result: no evidence-based need to create a fourth 0.0 solely for numbering; preserve the main lock, current anchor, and independent Dropbox anchor.
+- Open/blocked gaps retained: all-interaction automatic capture, Library, Buffer, Persistent Memory, Dropbox, full historical reconciliation, and end-to-end recovery/idempotency. Registration is not gap closure.
+- Repository write/read-back for the audit reference, index, and 0.0 registry matched; external destinations remain unverified.
+- Exact user-message timestamp: UNKNOWN / UNVERIFIED.
