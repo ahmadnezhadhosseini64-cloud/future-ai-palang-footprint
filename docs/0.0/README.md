@@ -427,3 +427,10 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - زمان پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان پردازش تدوین سند: 2026-10-20T22:58:42+03:30.
 
 - لنگر خروجی سند مرجع مادر: [EVT-0038](../architecture/BEHAVIOR-TRACE/EVT-0038-ASSISTANT-EXECUTION-AND-PORTABLE-HAIF-REFERENCE-2026-10-20.md).
+
+
+## لنگر ۰.۰ — ایدهٔ اصلی تعامل به کشف و رشد معماری
+- سند مرجع: [ITDCT](../reference/REFERENCE-DOCUMENTS/INTERACTION-TO-DISCOVERY-AND-COMPLETE-TRACE-MASTER-REFERENCE-2026-10-20-001.md).
+- ورودی: [EVT-0039](../architecture/BEHAVIOR-TRACE/EVT-0039-INTERACTION-TO-DISCOVERY-AND-COMPLETE-TRACE-REQUEST-2026-10-20.md).
+- پیوند به URPHA و قرارداد حاکم؛ این گره افزوده می‌شود و هیچ ۰.۰ تاریخی را جایگزین نمی‌کند.
+- زمان پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان پردازش: 2026-10-20T23:19:49.578+03:30.
