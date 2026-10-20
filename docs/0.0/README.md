@@ -434,3 +434,5 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - ورودی: [EVT-0039](../architecture/BEHAVIOR-TRACE/EVT-0039-INTERACTION-TO-DISCOVERY-AND-COMPLETE-TRACE-REQUEST-2026-10-20.md).
 - پیوند به URPHA و قرارداد حاکم؛ این گره افزوده می‌شود و هیچ ۰.۰ تاریخی را جایگزین نمی‌کند.
 - زمان پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان پردازش: 2026-10-20T23:19:49.578+03:30.
+
+- لنگر خروجی دستیار: [EVT-0040](../architecture/BEHAVIOR-TRACE/EVT-0040-ASSISTANT-REGISTRATION-AND-DISCOVERY-ARCHITECTURE-2026-10-20.md). زمان پردازش: 2026-10-20T23:20:38.401+03:30؛ زمان پیام کاربر: UNKNOWN / UNVERIFIED.
