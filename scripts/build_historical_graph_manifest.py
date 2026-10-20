@@ -31,8 +31,8 @@ for p in source_files:
     except UnicodeDecodeError:
         decode_errors.append(relpath)
         continue
-    stable = vals(body, r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Stable ID|Stable-ID|Canonical Stable ID|Stable Reference ID|Stable Report ID|Reference ID)(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
-    prod = vals(body, r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Production ID|Production-ID)(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
+    stable = vals(body, r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Stable ID(?:\s*/\s*شناسهٔ پایدار)?|Stable-ID|Canonical Stable ID|Stable Reference ID|Stable Report ID|Reference ID|شناسهٔ پایدار(?: این نقطه)?|شناسه پایدار(?: این نقطه)?)(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
+    prod = vals(body, r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Production ID(?:\s*/\s*شناسهٔ تولید)?|Production-ID|Production / Registration ID|شناسهٔ تولید|شناسه تولید|شناسهٔ ثبت)(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
     versions = vals(body, r"^\s*(?:[-*]\s*)?(?:\*\*)?Version(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
     parent_values = vals(body, r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Parent(?: input| event| reference| protocol| architecture| excavation)?|Parent ID|Parent Stable ID)(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
     parents = []
