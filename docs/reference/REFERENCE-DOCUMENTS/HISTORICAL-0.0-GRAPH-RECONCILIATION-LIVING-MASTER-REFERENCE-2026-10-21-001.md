@@ -213,3 +213,12 @@ This document can be considered repository-integrated only after the file, index
 - Audit UTC: `2026-10-20T22:48:02Z`. Result: PASS; 806 total files, 493 source files, 313 generated evidence files, 940+ local links checked (the artifact records 942), zero missing links, 38 declared parent edges, zero unresolved and zero ambiguous edges, 11 exact duplicate groups.
 - This run occurred after the master, snapshot pointer, event, alias register, findings register and architecture queue were updated. It verifies that the final integration did not introduce broken local links or unresolved declared-parent edges.
 - Semantic boundary remains unchanged: the structural graph is connected for the audited snapshot, while full natural-language semantic equivalence and repeated-ID role adjudication remain OPEN / ACTIVE.
+
+
+## Addendum v1.8.0 — semantic architecture baseline and next acceptance gate
+- Governing semantic baseline: [H0SAB-2026-10-21-001](./HISTORICAL-0.0-SEMANTIC-ARCHITECTURE-BASELINE-2026-10-21-001.md).
+- Architecture event: [EVT-0053](../../architecture/BEHAVIOR-TRACE/EVT-0053-SEMANTIC-ARCHITECTURE-BASELINE-2026-10-21.md).
+- The baseline defines role adjudication and evidence requirements for all 493 source files, 33 Stable ID repeated-occurrence groups, 42 Production ID repeated-occurrence groups, 8 EVT-number collision groups and 11 exact-content duplicate groups.
+- Current truth: structural acceptance is proven for the cited audited commit; full semantic reconciliation remains OPEN / PARTIAL. This addendum does not close G-01/G-12/G-16 and does not claim all relationships have been reviewed.
+- Repository integration pointers were updated in docs/REFERENCE_INDEX.md, docs/architecture/INTEGRATION-QUEUE/README.md, docs/architecture/BEHAVIOR-TRACE/README.md and docs/0.0/README.md. These updates require fresh structural audit and read-back before their links are accepted as final.
+- Change log: v1.8.0 adds the semantic architecture baseline as the governing continuation point and defines the next acceptance gate.
