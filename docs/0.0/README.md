@@ -251,3 +251,13 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - **مرجع واحد برای ادامهٔ مسیر، تعامل، معماری، ثبت، مستندسازی و موارد باز:** [بازکردن سند مادر کامل](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/CANONICAL-COMPLETE-PATH-ARCHIVE-2026-10-19/MASTER-CANONICAL-COMPLETE-INTERACTION-AND-REGISTRATION-PATH-2026-10-19-001.md)
 - **رویداد:** [EVT-0014](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/architecture/BEHAVIOR-TRACE/EVT-0014-CANONICAL-COMPLETE-PATH-ARCHIVE-2026-10-19.md)
 این سند نقطهٔ شروع واحد برای ادامهٔ کار است؛ لنگرهای مستقل پیشین حفظ می‌شوند. وجود این پیوند به معنی بسته‌شدن موارد باز یا اثبات مقصدهای بیرونی نیست.
+
+
+## نقطهٔ ۰.۰ جاری — ثبت مسیر کامل و ادغام معماری (2026-10-20)
+- **Stable ID:** `PALANG-0.0-CURRENT-2026-10-20-001`
+- **مرجع مسیر کامل:** [سند مسیر و الحاقیهٔ حاکم](../reference/REFERENCE-DOCUMENTS/PALANG-0.0-COMPLETE-PATH-AND-GOVERNING-ADDENDUM-2026-10-20-001.md)
+- **مرجع حاکم زنده:** [چرخهٔ لنگر خروجی، بخش ۲۰](../reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md)
+- **پروندهٔ صف معماری:** [پروندهٔ ادغام](../architecture/INTEGRATION-QUEUE/PALANG-0.0-COMPLETE-PATH-GOVERNING-ADDENDUM-2026-10-20-001.md)
+- **رویداد رفتار/معماری:** [EVT-0015](../architecture/BEHAVIOR-TRACE/EVT-0015-0.0-GOVERNING-ADDENDUM-ARCHITECTURE-INTEGRATION-2026-10-20.md)
+- **قاعده:** این لنگر تازه مستقل است؛ لنگرهای قبلی و نقطهٔ Dropbox حذف یا ادغام نمی‌شوند.
+- **زمان دقیق پیام:** UNKNOWN / UNVERIFIED؛ زمان commit جایگزین آن نیست.
