@@ -32,8 +32,8 @@ jobs:
           test -f docs/EVIDENCE_GATE.md
           test -f docs/CHECKPOINT.md
           # Historical references may mention obsolete states; validate active canonical claims instead.
-          grep -q --fixed-strings "obsolete `NOT YET PROVEN` Evidence Gate state is no longer canonical" docs/REFERENCE_INDEX.md
-          grep -q --fixed-strings "active workflow uses `actions/checkout@v5`" docs/REFERENCE_INDEX.md
+          grep -q --fixed-strings 'obsolete `NOT YET PROVEN` Evidence Gate state is no longer canonical' docs/REFERENCE_INDEX.md
+          grep -q --fixed-strings 'active workflow uses `actions/checkout@v5`' docs/REFERENCE_INDEX.md
           grep -q --fixed-strings "uses: actions/checkout@v5" .github/workflows/main.yml
           grep -q --fixed-strings "PROVEN / ACTIVE / CLOSED / PASS" docs/EVIDENCE_GATE.md
           grep -q --fixed-strings "E2/E3/E4 VERIFIED" docs/EVIDENCE_GATE.md
