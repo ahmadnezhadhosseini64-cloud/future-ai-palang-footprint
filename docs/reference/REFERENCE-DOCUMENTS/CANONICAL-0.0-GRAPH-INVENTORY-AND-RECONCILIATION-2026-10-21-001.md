@@ -574,7 +574,7 @@
 
 ## Addendum v1.0.8 — manifest and findings register
 - Detailed JSON findings: [H0GAF-2026-10-21-001](./HISTORICAL-0.0-GRAPH-AUDIT-FINDINGS-2026-10-21-001.md).
-- Follow-up event: [EVT-0051](../../architecture/BEHAVIOR-TRACE/EVT-0051-CANONICAL-GRAPH-MANIFEST-AND-LINK-REPAIR-2026-10-21.md).
+- Follow-up event: [EVT-0051](../../architecture/BEHAVIOR-TRACE/EVT-0052-CANONICAL-GRAPH-MANIFEST-AND-LINK-REPAIR-2026-10-21.md).
 - Manifest builder now wired into Living Architecture Audit: [script](../../../scripts/build_historical_graph_manifest.py), [workflow](../../../.github/workflows/living-architecture-audit.yml).
 - Snapshot from artifact 39502860923 is 697 total files / 482 source / 215 Evidence Gate; 11 exact duplicate groups, 13 Stable ID groups, 24 Production ID groups, 6 EVT number groups, 15 local-link findings, 0 decode errors. This is separate from the earlier 698/216 observation.
 - Status: ACTIVE / LIVING; current structural audit rerun pending. Full semantic reconciliation and canonical edge adjudication remain OPEN / PARTIAL. No historic file deleted.
