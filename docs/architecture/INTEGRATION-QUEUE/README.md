@@ -780,3 +780,14 @@ The queue index and the timestamp case must each be read back after this update.
 - دامنهٔ ثبت: snapshot گزارش‌شده، روش تطبیق غیرمخرب، نامزدهای تکرار/برخورد شناسه، شکاف‌های G-01 و G-11 تا G-20 و گام ادامهٔ ۰.۰.
 - **OPEN:** تطبیق معنایی کامل، بررسی مستقیم JSON، manifest canonical و داوری lineage؛ همچنین Dropbox، Buffer، Library، Persistent Memory و آزمون انتقال میزبان دوم.
 - معیار بستن: شاهد واقعی → آزمون → بازخوانی → تطبیق → تأیید → به‌روزرسانی وضعیت. ثبت این صف به‌تنهایی به معنی بسته‌شدن شکاف نیست.
+
+
+
+| H0GAF-2026-10-21-001 | دفتر شواهد JSON ممیزی گراف تاریخی: برخورد شناسه‌ها، تکرارهای دقیق و پیوندهای محلی | ACTIVE / LIVING; structural findings registered; semantic adjudication OPEN | سند مرجع مادر، manifest builder، آزمون تازه، داوری alias/lineage | [دفتر کامل یافته‌ها](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-AUDIT-FINDINGS-2026-10-21-001.md); [EVT-0051](../BEHAVIOR-TRACE/EVT-0051-CANONICAL-GRAPH-MANIFEST-AND-LINK-REPAIR-2026-10-21.md) |
+
+## ادامهٔ اجرایی — EVT-0051 / H0GAF-2026-10-21-001
+- **انجام شد:** artifact JSON واقعی دریافت و بررسی شد؛ 11 exact-content duplicate groups، 13 Stable ID collision groups، 24 Production ID collision groups، 6 EVT number collision groups و 15 missing local links ثبت شدند.
+- **انجام شد:** manifest builder به گردش‌کار Living Architecture Audit وصل شد تا گره‌های مسیرمحور، شناسه‌ها، والدها، یال‌های لینک، برخوردها و aliasهای پیشنهادی را به artifact بعدی تولید کند.
+- **انجام شد:** پیوندهای محلی مشخص در اسناد حاکم اصلاح شدند؛ اجرای تازه باید شمار باقی‌مانده را تعیین کند.
+- **باز/فعال:** اجرای موفق builder در artifact تازه، رسیدگی به پیوندهای باقی‌مانده، تعیین canonical/alias بر اساس نقش و inbound references، و مرور معنایی اسناد/رویدادها. هیچ فایل تاریخی حذف نشود.
+- دامنهٔ فعلی فقط مخزن است؛ Buffer/Library/Persistent Memory/Dropbox عمداً خارج از این مرحله‌اند.
