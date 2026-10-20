@@ -3,7 +3,7 @@
 ## شناسنامه و وضعیت
 - Stable ID / شناسه پایدار: PERMANENT-INTERACTION-ANCHORING-TIMESTAMP-GOVERNANCE-AND-CANONICAL-GRAPH-MASTER-REFERENCE-2026-10-21-001
 - Production ID / شناسه تولید: PIATGCG-2026-10-21-001
-- Version / نسخه: 1.0.1
+- Version / نسخه: 1.0.2
 - Owner / مالک: Ahmad Nezhadhosseini / احمد پلنگ
 - Project / پروژه: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
 - Scope / دامنه: حاکمیت تعامل، لنگر ورودی/خروجی، زمان‌گذاری، گراف تاریخی ۰.۰، ثبت معماری، خاک‌برداری، بستهٔ انتقال میزبان
@@ -13,7 +13,7 @@
 - Canonical path: `docs/reference/REFERENCE-DOCUMENTS/PERMANENT-INTERACTION-ANCHORING-TIMESTAMP-GOVERNANCE-AND-CANONICAL-GRAPH-MASTER-REFERENCE-2026-10-21-001.md`
 - Status: ACTIVE / LIVING / GOVERNING — قاعدهٔ معماری ثبت و نسخه‌گذاری شده؛ اجرای سراسری در تمام نشست‌ها/میزبان‌ها تا آزمون runtime اثبات‌نشده است.
 - Input event: [EVT-0046](../../architecture/BEHAVIOR-TRACE/EVT-0046-USER-REQUEST-GOVERNING-ANCHORING-TIMESTAMP-AND-GRAPH-RECONCILIATION-2026-10-21.md)
-- Output event: EVT-0047 (to be registered after this reference)
+- Output event: [EVT-0047](../../architecture/BEHAVIOR-TRACE/EVT-0047-ASSISTANT-GOVERNANCE-REFERENCE-AND-GRAPH-INVENTORY-2026-10-21.md)
 - Parent references: [Universal Interaction Anchor Contract](./UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001.md); [Portable HAIF master](./UNIVERSAL-REGISTER-AND-PORTABLE-HAIF-ARCHITECTURE-MASTER-REFERENCE-2026-10-20-001.md); [Two-Time Anchoring](./TWO-TIME-ANCHORING-AND-LIVING-CONTINUITY-ARCHITECTURE-2026-10-20-001.md); [Four-linked 0.0 chain](./FOUR-LINKED-0.0-CHAIN-AND-BEHAVIORAL-DISCOVERY-GATE-2026-10-20-001.md); [Audit reference AAAPHR](./AUTOMATIC-ANCHORING-ARCHITECTURE-AUDIT-AND-PORTABLE-HAIF-REFERENCE-2026-10-21-001.md)
 
 ## 1. هدف نهایی پروژه — مرجع حاکم
@@ -224,4 +224,7 @@ T1 ورودی و خروجی قابل‌بازیابی؛ T2 زمان‌های م�
 - **G-12 — برخورد شناسه/شمارهٔ رویداد:** برخورد Stable ID و Production ID میان EVT-0003/EVT-0004 و شماره‌های EVT تکرارشده باید با کلید مرکب و lineage شفاف حل شود؛ هیچ فایل تاریخی حذف نشود.
 - **G-13 — اعتبارسنجی ماشینی گراف:** ساخت validator برای مسیرهای canonical، لینک‌های شکسته، شناسه‌های والد/فرزند، تکرارهای محتوا و گره‌های یتیم؛ تا زمان اجرای آزمون، این شکاف باز است.
 جزئیات و شواهد اولیه در C0GIR v1.0.1 آمده است. این سه شکاف به G-01 تا G-10 اضافه می‌شوند و جایگزین آن‌ها نیستند.
+
+## Version history update
+- 1.0.2 — G-11 through G-13 were integrated into this governing reference and the architecture integration queue; the stale EVT-0047 placeholder was replaced with the canonical event link.
 
