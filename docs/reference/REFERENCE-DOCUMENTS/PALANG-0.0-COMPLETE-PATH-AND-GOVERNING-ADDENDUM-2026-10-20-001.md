@@ -114,7 +114,11 @@
 ### 10.3 شواهد نوشتن
 - **Queue case update commit:** `92a16784b7730c029215aeb415a4c72804f74d2c`; returned blob SHA `0308bec307f814d27ec063ad10bf9c6ed16783e8`.
 - **Queue index update commit:** `46e2f19e0f5799622eefb16da278c29afc10171f`; returned blob SHA `e7e5534a3c5f4d08ea341c38d26e64919e599cee`.
-- **This reference update:** پس از افزودن این بخش باید همین سند از مسیر canonical بازخوانی شود و نتیجهٔ بازخوانی در ادامهٔ این سند ثبت شود.
+- **This reference update:** commit `3f887afdd8030a15bf271fc8eb3ad23af85643cb`; blob returned by write `47b6a3a3b8ee9bf3b218ba925f0d7fc2ba790900`.
+- **Post-write read-back:** همان مسیر canonical دوباره از GitHub خوانده شد؛ blob SHA بازخوانی‌شده `47b6a3a3b8ee9bf3b218ba925f0d7fc2ba790900`؛ Stable ID، بخش 10، شواهد صف/نمایه و مرز مقصدهای مستقل بررسی شدند؛ نتیجهٔ تطبیق محتوایی: MATCH.
+- **Queue case read-back:** blob SHA `0308bec307f814d27ec063ad10bf9c6ed16783e8`; وضعیت ACTIVE / LIVING، EVT-0015، شناسهٔ پایدار و دستور بازیابی حاضر بودند.
+- **Queue index read-back:** blob SHA `e7e5534a3c5f4d08ea341c38d26e64919e599cee`; مدخل بخش 19، پیوندها و مرز مقصدهای مستقل حاضر بودند.
+- **Read-back exact time:** UNKNOWN / UNVERIFIED؛ ابزار مهر زمانی مستقل بازخوانی را در خروجی این عملیات ارائه نکرد.
 
 ### 10.4 معیار پذیرش و محدودیت
 معیار پذیرش مخزن: پروندهٔ صف و نمایهٔ صف پس از نوشتن از همان مسیر بازخوانی شوند؛ شناسهٔ پایدار، وضعیت ACTIVE/LIVING، لینک سند مرجع و EVT-0015 و بند مقصدهای مستقل وجود داشته باشد. این معیار جایگزین آزمون Buffer، Library، Persistent Memory یا Dropbox نیست.
