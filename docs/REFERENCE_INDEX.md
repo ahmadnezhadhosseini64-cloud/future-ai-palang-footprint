@@ -281,3 +281,5 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - **Latest H0SRQS addendum:** [ممیزی تازهٔ 39517544772](reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-SEMANTIC-REVIEW-QUEUE-SNAPSHOT-2026-10-21-001.md) — 500 فایل منبع، 1,009 پیوند محلی بدون پیوند شکسته، 695 رخداد شناسه؛ اثبات معنایی کامل همچنان باز است.
 
 - **H0IRRB2-2026-10-21-001:** [دفتر داوری معنایی دستهٔ دوم](reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-IDENTIFIER-ROLE-REVIEW-BATCH-002-2026-10-21.md) — پنج گروه Stable ID و هفت گروه Reference ID با شاهد منبع داوری شدند؛ شناسه‌های Reference از Stable ID جدا شدند.
+
+- **Latest H0SRQS acceptance:** [run 39518314490](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39518314490) — 501 source files, 1,030 local links / 0 missing, 30 Stable ID groups, 43 Production ID groups, 7 Reference ID groups, 8 EVT groups, 11 duplicate groups; semantic closure remains open. See [H0SRQS](reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-SEMANTIC-REVIEW-QUEUE-SNAPSHOT-2026-10-21-001.md) and [H0IRAR](reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-IDENTIFIER-AND-RELATION-ADJUDICATION-REGISTER-2026-10-21-001.md).
