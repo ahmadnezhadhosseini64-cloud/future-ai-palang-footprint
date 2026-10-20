@@ -243,3 +243,12 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - کاربر ورود این وضعیت به معماری و ساختمان پروژه را صریحاً تأیید کرده است.
 - وضعیت: سند حاکم ACTIVE / LIVING؛ تطبیق معنایی کامل، manifest canonical، داوری تکرارها، Dropbox، Buffer، Library و Persistent Memory همچنان OPEN / NOT PROVEN تا ارائهٔ شواهد مستقل.
 - شمارهای 698 فایل، 95 مسیر ۰.۰، 53 فایل EVT، 85 مسیر اسناد مرجع و 216 فایل Evidence Gate، snapshot گزارش‌شده در متن کاربر است؛ در این ثبت دوباره اجرا نشده‌اند.
+
+
+
+## Historical graph audit and manifest — 2026-10-21
+- **H0GAF-2026-10-21-001:** [ثبت کامل یافته‌های JSON ممیزی گراف تاریخی](reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-AUDIT-FINDINGS-2026-10-21-001.md) — 11 گروه محتوای یکسان، 13 گروه Stable ID، 24 گروه Production ID، 6 گروه شمارهٔ EVT و 15 پیوند محلی مشکوک در snapshot مورخ 2026-10-20T21:45:04Z.
+- **H0GLMR-2026-10-21-001:** [سند مرجع مادر زندهٔ تطبیق گراف تاریخی](reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-RECONCILIATION-LIVING-MASTER-REFERENCE-2026-10-21-001.md).
+- **EVT-0051:** [ساخت manifest گراف، اعتبارسنجی روابط و اصلاح پیوندها](architecture/BEHAVIOR-TRACE/EVT-0051-CANONICAL-GRAPH-MANIFEST-AND-LINK-REPAIR-2026-10-21.md).
+- **گام اجرا:** [سازندهٔ manifest گراف](../scripts/build_historical_graph_manifest.py) به گردش‌کار Living Architecture Audit متصل شده است؛ نتیجهٔ اجرای تازه باید از artifact خوانده و بازبینی شود.
+- وضعیت: ثبت یافته‌ها و تغییر کد در مخزن؛ تطبیق معنایی کامل و canonical adjudication همچنان OPEN / PARTIAL تا تکمیل آزمون و مرور انسانی.
