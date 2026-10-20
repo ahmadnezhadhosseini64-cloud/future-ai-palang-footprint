@@ -14,7 +14,7 @@
 - Canonical path / مسیر مرجع: docs/reference/REFERENCE-DOCUMENTS/INTERACTION-REGISTRATION-AND-GAP-CLOSURE-2026-10-20-001.md
 - Related event / رویداد مرتبط: EVT-0032-INTERACTION-REGISTRATION-AND-GAP-CLOSURE-2026-10-20
 - Parent reference / سند والد: FOUR-LINKED-0.0-CHAIN-AND-BEHAVIORAL-DISCOVERY-GATE-2026-10-20-001
-- Status / وضعیت: ثبت این درخواست و پاسخ در مخزن تا زمانی که فایل‌ها و نمایه‌ها پس از نوشتن بازخوانی و تطبیق شوند، در حال اجرا است. این سند به‌تنهایی اثبات نمی‌کند که همهٔ مقصدهای مستقل یا اجرای خودکار سراسری فعال‌اند.
+- Status / وضعیت: REPOSITORY WRITE + READ-BACK + CONTENT/LINK MATCH VERIFIED for this interaction record and all four linked indexes. The scoped gap (independent registration of this interaction in the repository) is CLOSED / VERIFIED. Global automation and independent destinations remain OPEN / UNVERIFIED.
 
 ## 1. هدف و دامنه
 این سند، درخواست جاری را به‌عنوان یک رویداد مستقل و قابل‌بازیابی ثبت می‌کند و وضعیت شکاف‌ها را با تفکیک «کار انجام‌شده»، «شکاف بسته‌شده با شاهد» و «شکاف باز» نگه می‌دارد. هدف نهایی پروژه، Continuity of Intelligence / Continuity of Work (تداوم هوشمندی / تداوم کار) در تعامل انسان و AI است، نه صرفاً تولید اسناد.
