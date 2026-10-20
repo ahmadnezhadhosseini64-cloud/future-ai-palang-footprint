@@ -770,3 +770,13 @@ The queue index and the timestamp case must each be read back after this update.
 ## Canonical continuation anchor — CCCMR-2026-10-21-001
 - [سند مرجع مادر تجمیعی](../../reference/REFERENCE-DOCUMENTS/CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001.md) — ACTIVE / LIVING.
 - این سند مبنای نوبت بعد است؛ ابتدا EVT-0051 و آخرین artifact ممیزی را بازخوانی کن. گام نخست باقی‌مانده: خواندن گزارش کامل artifact و ثبت دقیق duplicate groups، برخورد شناسه‌ها، پیوندهای شکسته و parentهای مفقود؛ سپس manifest canonical/alias/lineage و مرور معنایی کامل.
+
+
+
+| H0GLMR-2026-10-21-001 | تطبیق گراف تاریخی ۰.۰، تکرارها، برخورد شناسه‌ها و ادامهٔ خاک‌برداری | ACTIVE / LIVING MASTER REFERENCE; graph reconciliation OPEN / PARTIAL | سند مرجع مادر، نمایه، دفتر رفتار، دفتر ۰.۰، manifest canonical، دفتر alias/lineage | [سند مرجع تطبیق گراف تاریخی](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-RECONCILIATION-LIVING-MASTER-REFERENCE-2026-10-21-001.md); [EVT-0050](../BEHAVIOR-TRACE/EVT-0050-ARCHITECTURE-REGISTRATION-HISTORICAL-GRAPH-2026-10-21.md) |
+
+## ثبت جدید — H0GLMR-2026-10-21-001
+- مجوز کاربر برای ورود به ساختمان پروژه دریافت شد.
+- دامنهٔ ثبت: snapshot گزارش‌شده، روش تطبیق غیرمخرب، نامزدهای تکرار/برخورد شناسه، شکاف‌های G-01 و G-11 تا G-20 و گام ادامهٔ ۰.۰.
+- **OPEN:** تطبیق معنایی کامل، بررسی مستقیم JSON، manifest canonical و داوری lineage؛ همچنین Dropbox، Buffer، Library، Persistent Memory و آزمون انتقال میزبان دوم.
+- معیار بستن: شاهد واقعی → آزمون → بازخوانی → تطبیق → تأیید → به‌روزرسانی وضعیت. ثبت این صف به‌تنهایی به معنی بسته‌شدن شکاف نیست.
