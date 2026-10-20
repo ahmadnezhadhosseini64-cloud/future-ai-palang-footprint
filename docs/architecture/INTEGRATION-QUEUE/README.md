@@ -762,3 +762,6 @@ The queue index and the timestamp case must each be read back after this update.
 - **G-20 — Runtime-wide capture:** OPEN / NOT PROVEN. قرارداد و اسکن مخزن، ثبت خودکار همهٔ پیام‌ها در همهٔ نشست‌ها را اثبات نمی‌کنند.
 
 قاعدهٔ بستن: شاهد واقعی + آزمون + read-back + match + اتصال به Master/صف. تکرار محتوایی فقط با alias/lineage ادغام منطقی می‌شود؛ حذف فایل بدون مجوز و تحلیل لینک ممنوع است.
+
+
+- EVT-0048 → EVT-0049: [درخواست](../BEHAVIOR-TRACE/EVT-0048-USER-REQUEST-FULL-HISTORICAL-0.0-GRAPH-RECONCILIATION-2026-10-21.md) / [خروجی و شواهد اجرا](../BEHAVIOR-TRACE/EVT-0049-ASSISTANT-EXECUTION-AND-RECONCILIATION-2026-10-21.md). Workflow 39502190776 SUCCESS؛ گراف کامل معنایی همچنان OPEN / PARTIAL.
