@@ -524,3 +524,9 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - EVT-0048 درخواست فعلی را ثبت کرده است؛ EVT-0049 خروجی و read-back را ثبت خواهد کرد.
 - G-15 تا G-20 در صف زنده‌اند: canonical alias/lineage، مرور معنایی کامل، Dropbox، مقصدهای مستقل، انتقال میزبان دوم، و اثبات capture سراسری.
 - فایل تاریخی حذف نشده است؛ تکرارها باید با پیوند canonical/alias ادغام شوند.
+
+
+## لنگر ادامهٔ canonical — 2026-10-21
+- **CCCMR-2026-10-21-001:** [سند مرجع مادر جامع و نقطهٔ ادامه](../reference/REFERENCE-DOCUMENTS/CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001.md) — ACTIVE / LIVING.
+- ورودی ثبت: [EVT-0050](../architecture/BEHAVIOR-TRACE/EVT-0050-USER-REQUEST-CONSOLIDATED-LIVING-MASTER-CONTINUATION-2026-10-21.md).
+- قاعدهٔ ادامه: ابتدا سند مادر، سپس EVT-0051 و گزارش کامل آخرین artifact ممیزی؛ بعد از آن تکمیل G-01/G-12/G-13/G-15/G-16. چهار لنگر ناوبری موجود همچنان فقط زیرمجموعهٔ گراف تاریخی‌اند.
