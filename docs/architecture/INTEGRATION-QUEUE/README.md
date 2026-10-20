@@ -737,3 +737,7 @@ The queue index and the timestamp case must each be read back after this update.
 - آزمون‌های بازیابی کامل، گراف ۰.۰، Dropbox، مقصدهای مستقل و انتقال میزبان باز می‌مانند تا شواهد ثبت شود.
 
 - لنگر خروجی: [EVT-0042](../BEHAVIOR-TRACE/EVT-0042-ASSISTANT-REGISTRATION-AND-CONTINUITY-RULE-2026-10-20.md). سند AICPHAE به قراردادها و نمایه‌ها وصل شده؛ read-back نهایی و آزمون مقصدهای مستقل همچنان لازم است.
+
+
+| AAAPHR-2026-10-21-001 | ممیزی لنگرگذاری خودکار، گراف تاریخی ۰.۰ و معماری قابل‌انتقال HAIF | OPEN / PARTIAL — سند مرجع و رویداد ایجاد شده‌اند؛ read-back نهایی/اجرای آزمون‌ها و بسته‌شدن شکاف‌ها نیازمند شاهد | نمایه مرجع، دفتر ۰.۰، دفتر رفتار، صف یکپارچه‌سازی، آزمون‌های مقصد و انتقال | [سند ممیزی AAAPHR](../../reference/REFERENCE-DOCUMENTS/AUTOMATIC-ANCHORING-ARCHITECTURE-AUDIT-AND-PORTABLE-HAIF-REFERENCE-2026-10-21-001.md) |
+
