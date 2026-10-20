@@ -367,3 +367,14 @@ Recovery/resume path:
 - **Timestamp rule:** زمان دقیق پیام درخواست جاری UNKNOWN / UNVERIFIED؛ زمان commit، بازخوانی و تطبیق باید جداگانه و فقط با شاهد ثبت شوند.
 - **Destination rule:** این اقدام فقط وضعیت مخزن را می‌تواند اثبات کند. Buffer، Library، Persistent Memory و Dropbox مستقل و باز می‌مانند مگر شاهد جداگانه ثبت شود.
 - **Resume:** در مراجعهٔ بعدی ابتدا سند کامل مسیر، این بخش، پروندهٔ ۰.۰ جاری و بخش 19 را بازخوانی و پیوندها را تطبیق بده؛ سپس کارهای باز را بدون بستن بی‌دلیل ادامه بده.
+
+
+### 20.1 اتصال به ساختمان پروژه و صف ادغام معماری
+- **Architecture integration case:** [PALANG-0.0-COMPLETE-PATH-GOVERNING-ADDENDUM-2026-10-20-001](../architecture/INTEGRATION-QUEUE/PALANG-0.0-COMPLETE-PATH-GOVERNING-ADDENDUM-2026-10-20-001.md)
+- **Behavior event:** [EVT-0015](../../architecture/BEHAVIOR-TRACE/EVT-0015-0.0-GOVERNING-ADDENDUM-ARCHITECTURE-INTEGRATION-2026-10-20.md)
+- **0.0 registry:** [دفتر نقاط ۰.۰](../../0.0/README.md)
+- **Queue index:** [نمایهٔ صف ادغام معماری](../../architecture/INTEGRATION-QUEUE/README.md)
+- **Behavior trace:** [دفتر رفتار تعامل](../../architecture/BEHAVIOR-TRACE/INTERACTION-BEHAVIOR-TRACE-2026-10-19-001.md)
+- **Complete path:** [سند مرجع کامل مسیر](./PALANG-0.0-COMPLETE-PATH-AND-GOVERNING-ADDENDUM-2026-10-20-001.md)
+- **Architectural placement:** Governance / حاکمیت → Living Reference / سند مرجع زنده → 0.0 Anchor / لنگر ۰.۰ → Integration Queue / صف ادغام معماری → Behavior Event / رویداد رفتار → Evidence & Read-back / شواهد و بازخوانی → Recovery / بازیابی.
+- **Important boundary:** این پیوندها جای آزمون مستقل مقصدهای بیرونی یا بستن کارهای باز را نمی‌گیرند.
