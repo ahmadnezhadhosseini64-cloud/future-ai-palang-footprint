@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: AUTOMATIC-ANCHORING-ARCHITECTURE-AUDIT-AND-PORTABLE-HAIF-REFERENCE-2026-10-21-001
 - Production ID / شناسهٔ تولید: AAAPHR-2026-10-21-001
-- Version / نسخه: 1.0.0
+- Version / نسخه: 1.0.1
 - Date / تاریخ سند: 2026-10-21
 - Project / پروژه: Future AI / Palang Footprint / HAIF
 - Owner / مالک: احمد پلنگ / Ahmad Nezhadhosseini
@@ -11,7 +11,7 @@
 - Parent references / اسناد مادر: [AICPHAE](./AUTOMATIC-INTERACTION-CONTINUITY-AND-PORTABLE-HAIF-EVOLUTION-MASTER-REFERENCE-2026-10-20-001.md), [URPHA](./UNIVERSAL-REGISTER-AND-PORTABLE-HAIF-ARCHITECTURE-MASTER-REFERENCE-2026-10-20-001.md), [UIALAC](./UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001.md), [FOUR-LINKED-0.0](./FOUR-LINKED-0.0-CHAIN-AND-BEHAVIORAL-DISCOVERY-GATE-2026-10-20-001.md)
 - User-message time / زمان پیام کاربر: UNKNOWN / UNVERIFIED؛ حدس زده نمی‌شود.
 - Assistant processing time / زمان پردازش: 2026-10-21T00:04+03:30 (Asia/Tehran؛ دقت منبع تا دقیقه است).
-- Status / وضعیت: AUDIT REFERENCE CREATED; repository write must be followed by read-back and link/content match. External persistence and runtime-wide automation are not proven.
+- Status / وضعیت: REPOSITORY WRITE + READ-BACK VERIFIED for the scoped seven-file check; external persistence, complete historic graph, runtime-wide automation and host transfer are not proven.
 
 ## 1. هدف نهایی
 ساخت معماری HAIF برای «تداوم هوشمندی و تداوم کار» که از تعاملات قابل‌مشاهده و مجاز انسان و میزبان هوش مصنوعی، ردپای قابل‌بازیابی بسازد؛ این ردپا را در بازه‌های زمانی تحلیل کند؛ مشاهده را از فرضیه و کشف آزموده‌شده جدا نگه دارد؛ ایده‌ها را در شاخهٔ Child آزمایش کند؛ آن‌ها را در Rahm اعتبارسنجی کند؛ و فقط با شواهد، تصمیم و نسخه‌گذاری به Master ارتقا دهد. خروجی نهایی باید قابل‌انتقال به محیط میزبان دیگر باشد و برای بازسازی معماری به حافظهٔ ضمنی یک گفت‌وگو وابسته نباشد.
@@ -142,7 +142,7 @@ Child می‌تواند فرضیه بسازد؛ Rahm باید آزمون و با
 برای ادامه، ابتدا این سند، `docs/REFERENCE_INDEX.md`, `docs/0.0/README.md`, `docs/architecture/INTEGRATION-QUEUE/README.md`, `docs/architecture/BEHAVIOR-TRACE/README.md` و اسناد AICPHAE/URPHA/UIALAC را بخوان. سپس همهٔ نقاط تاریخی ۰.۰ را بدون حذف بازخوانی کن؛ Dropbox را OPEN نگه دار تا آزمون واقعی انجام شود؛ شکاف‌ها را با شناسهٔ G-01 تا G-10 دنبال کن؛ و هیچ مقصد یا انتقالی را بدون شاهد VERIFIED نکن.
 
 ## 11. وضعیت مقصدها
-- Repository / مخزن: نوشتن این سند و رویداد آن انجام می‌شود؛ VERIFIED فقط پس از read-back نهایی و تطبیق محتوا/پیوندها.
+- Repository / مخزن: برای فایل‌ها و نمایه‌های مشخص‌شده در EVT-0044، نوشتن + بازخوانی + تطبیق شناسه/پیوند تأیید شد؛ این تأیید محدود، اثبات تکمیل گراف تاریخی یا کل آزمون‌های پذیرش نیست.
 - Buffer / بافر: OPEN / UNVERIFIED.
 - Persistent Memory / حافظهٔ پایدار: OPEN / UNVERIFIED.
 - Library / کتابخانه: OPEN / UNVERIFIED برای این ثبت.
@@ -150,7 +150,8 @@ Child می‌تواند فرضیه بسازد؛ Rahm باید آزمون و با
 - Host-to-host transfer / انتقال بین میزبان‌ها: OPEN / UNVERIFIED.
 
 ## 12. تاریخچهٔ نسخه
-- 1.0.0 — ایجاد سند ممیزی بر پایهٔ اسناد و نمایه‌های بازخوانی‌شده در 2026-10-21. این نسخه، شکاف‌ها را مشخص می‌کند و ادعای بستن آن‌ها را ندارد.
+- 1.0.0 — ایجاد سند ممیزی بر پایهٔ اسناد و نمایه‌های بازخوانی‌شده در 2026-10-21.
+- 1.0.1 — ثبت موجودی مستقیم 16 پرونده در دو مسیر 0.0/checkpoints، و به‌روزرسانی وضعیت تأیید محدود مخزن پس از read-back؛ شکاف‌های سراسری همچنان باز هستند.
 
 ## 13. تکمیل موجودی‌برداری مستقیم ۰.۰ — الحاقیهٔ ممیزی
 پس از ثبت نسخهٔ اولیه، فهرست مستقیم GitHub برای دو مسیر `checkpoints/` و `docs/0.0/` بازخوانی شد. در این دو مسیر 12 پرونده در `checkpoints/` و 4 پروندهٔ مستقل به‌جز README در `docs/0.0/` یافت و هر 16 فایل بازخوانی محتوایی شدند. دفتر `docs/0.0/README.md` اکنون فهرست مستقیم هر 16 پرونده، نقش بازیابی و وضعیت قابل‌اتکای اولیه را به هم پیوند می‌دهد.
