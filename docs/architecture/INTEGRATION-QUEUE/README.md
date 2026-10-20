@@ -21,6 +21,10 @@ PENDING ≠ LOST (در انتظار ≠ گم‌شده). ثبت در این صف 
 ## 3. فهرست موارد
 | Stable ID | موضوع | وضعیت | مقصد موردنظر | پرونده |
 |---|---|---|---|---|
+
+| PGGR-2026-10-20-001 | هدف نهایی پروژه، تطبیق شکاف‌ها و وضعیت واقعی بسته/باز | OPEN / PARTIAL — سند مرجع ایجاد شد؛ بازخوانی مستقل و پیوندهای معماری در حال تکمیل؛ مقصدهای بیرونی و اجرای سرتاسری اثبات‌نشده‌اند | نمایه مرجع، دفتر شکاف‌ها، MRV، دفتر رفتار، 0.0 و لایه‌های ماندگاری | [سند هدف و تطبیق شکاف‌ها](../../reference/REFERENCE-DOCUMENTS/PROJECT-GOAL-AND-GAP-RECONCILIATION-2026-10-20-001.md) |
+| Stable ID | موضوع | وضعیت | مقصد موردنظر | پرونده |
+|---|---|---|---|---|
 | CEASR-2026-10-20-001 | خاک‌برداری جامع: وضعیت لنگرها، زمان‌گذاری، ساختمان پروژه و شکاف‌های بین‌مقصدی | OPEN / PARTIAL — سند مرجع ثبت شده و بازخوانی می‌شود؛ اتصال به نمایه/صف انجام می‌شود؛ MRV، آینه‌های Library، Buffer، Persistent Memory، Dropbox و آزمون سرتاسری هنوز نیازمند شواهد مقصدی هستند | نمایه مرجع، MRV، دفتر شکاف‌ها، دفتر ۰.۰ و لایه‌های ماندگاری | [سند مرجع خاک‌برداری جامع](../../reference/REFERENCE-DOCUMENTS/COMPREHENSIVE-EXCAVATION-ARCHITECTURE-STATE-2026-10-20-001.md) |
 | UIALAC-2026-10-20-001 | قرارداد جامع لنگر هر ورودی/خروجی، چرخه ثبت، سند مرجع، آزمون و تداوم معماری | REPOSITORY WRITE + READ-BACK VERIFIED; linked in reference index; full runtime implementation, Buffer, Library and Persistent Memory remain unverified | سند مرجع جامع، نمایه مرجع، سند مادر، دفتر رفتار تعامل و آزمون سرتاسری | [قرارداد جامع لنگر و معماری زنده](../../reference/REFERENCE-DOCUMENTS/UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001.md) |
 | ICMCRR-HAIF-2026-10-20-001 | تداوم معماری مستقل، زنجیره Master–Child–Rahm، ثبت تعامل و مسیر بازسازی | REPOSITORY WRITE + READ-BACK VERIFIED; MRV/master archive/index/checkpoint linked; runtime implementation and external persistence remain open | MRV، سند مسیر کامل مادر، نمایه مرجع، نقطه ۰.۰، دفتر شکاف‌ها و آزمون‌های اجرایی | [سند مرجع تداوم معماری](../../reference/REFERENCE-DOCUMENTS/INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-REGISTRATION-2026-10-20-001.md) |
