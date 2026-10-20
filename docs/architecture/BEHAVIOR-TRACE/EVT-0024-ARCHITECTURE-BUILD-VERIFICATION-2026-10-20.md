@@ -54,3 +54,13 @@
 - `G-AUTO-07`: تطبیق کامل همه لنگرهای تاریخی — OPEN / PARTIAL.
 - `G-AUTO-08`: آزمون سرتاسری قطع/بازیابی/عدم تکرار — OPEN / NOT PROVEN.
 - اقدام بعدی: ادامهٔ بررسی فقط روی ساختمان و پیوندهای داخلی پروژه و سپس ثبت شاهد؛ کار Dropbox تنها پس از دستور جداگانه کاربر.
+
+
+## 7. Fresh post-repair verification result (2026-10-20)
+- Commit tested: `1cf14ebebd2ad6759884b580c5b6164520419b2d`.
+- Living Architecture Audit: [run 39449620274](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39449620274) — `completed / success`, updated at `2026-10-20T15:34:26Z`.
+- Cross-Layer Integrity Gate: [run 39449620238](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39449620238) — `completed / success`, updated at `2026-10-20T15:34:21Z`. All steps, including PMA cross-layer assertions and traceable evidence, succeeded.
+- Thus the two known cross-layer assertion gaps are repaired and the fresh structural + cross-layer gates pass.
+- Separate unresolved failures remain: [main workflow run 39449616044](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39449616044) and [automatic final registration proof run 39449617919](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39449617919) both report `failure`; the available GitHub API returns zero job records for these runs, so their exact failing step cannot be independently determined here. They remain OPEN and prevent claiming that every repository workflow is green.
+- External provider memory, Library, Buffer, automatic capture of all ChatGPT messages, full historical reconciliation, and end-to-end recovery remain OPEN / NOT PROVEN. Dropbox remains untouched.
+- Exact user-message time remains UNKNOWN / UNVERIFIED; the times above are workflow completion times.
