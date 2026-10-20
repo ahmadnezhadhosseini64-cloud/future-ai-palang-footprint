@@ -130,3 +130,20 @@ This document can be considered repository-integrated only after the file, index
 ## 10. Change history
 
 - v1.0.0 — created from the user's supplied 2026-10-21 graph audit report, with explicit evidence boundaries and open-gap continuation plan.
+
+
+
+## Addendum v1.1.0 — Evidence-based graph audit and edge-manifest implementation (EVT-0051)
+
+- **Related event:** [EVT-0051](../../architecture/BEHAVIOR-TRACE/EVT-0051-CANONICAL-GRAPH-MANIFEST-AND-LINK-REPAIR-2026-10-21.md).
+- **Detailed findings register:** [H0GAF-2026-10-21-001](./HISTORICAL-0.0-GRAPH-AUDIT-FINDINGS-2026-10-21-001.md).
+- **Manifest builder:** [scripts/build_historical_graph_manifest.py](../../../scripts/build_historical_graph_manifest.py).
+- **Workflow integration:** [Living Architecture Audit](../../../.github/workflows/living-architecture-audit.yml).
+- A complete workflow artifact was retrieved and its JSON inspected: run 39502860923, artifact 12301702263, audited commit 3da9ed9ae48d42ce95eb511ee04ce472c33d31d9, audit UTC 2026-10-20T21:45:04Z.
+- Actual snapshot counts: 697 total files, 482 source files, 215 generated Evidence Gate files, 95 paths containing 0.0, 38 checkpoint paths, 53 EVT paths, 85 reference-document paths, 0 decode errors, 15 missing local links, 13 Stable ID collision groups, 24 Production ID collision groups, 6 EVT-number collision groups and 11 exact-content duplicate groups.
+- A newer 698/216 observation supplied earlier is preserved as a separate snapshot. Counts are not overwritten or merged across times.
+- The manifest builder was connected to the workflow to output path-keyed nodes, declared-parent edge resolution, local link edges, collision groups, exact duplicate groups and proposed alias edges. The next run is required to verify its output.
+- Selected relative links were corrected after their intended target files were confirmed in the repository. The fresh audit must establish the residual broken-link count.
+- **Semantic status remains OPEN / PARTIAL.** The JSON proves structural findings for its audited commit; it does not prove the semantic meaning of every relationship. Proposed aliases are not approved canonical choices and no historic files are deleted.
+- User's current scope restriction: repository is the only persistence basis for this work. Buffer, Library, Persistent Memory and Dropbox are intentionally not being worked on in this phase.
+- **Change log:** v1.1.0 records the actual artifact inspection, detailed findings register, graph-manifest builder, workflow integration and bounded link repairs. It does not close G-01/G-12/G-13/G-15/G-16 without fresh execution and semantic evidence.
