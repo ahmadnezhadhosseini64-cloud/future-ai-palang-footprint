@@ -538,3 +538,10 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - Complete structural findings: [H0GAF](../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-AUDIT-FINDINGS-2026-10-21-001.md).
 - Follow-up event: [EVT-0051](../architecture/BEHAVIOR-TRACE/EVT-0052-CANONICAL-GRAPH-MANIFEST-AND-LINK-REPAIR-2026-10-21.md).
 - Current phase: repository-only; manifest builder and link repairs are being tested. Semantic edges and alias/canonical decisions remain OPEN until evidence-based review. Existing independent Dropbox 0.0 is preserved and not modified.
+
+
+
+## Canonical alias / lineage continuation
+- Decision register: [H0CALDR-2026-10-21-001](../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-CANONICAL-ALIAS-LINEAGE-DECISION-REGISTER-2026-10-21-001.md).
+- Full audit findings: [H0GAF-2026-10-21-001](../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-AUDIT-FINDINGS-2026-10-21-001.md).
+- Active event: [EVT-0052](../architecture/BEHAVIOR-TRACE/EVT-0052-CANONICAL-GRAPH-MANIFEST-AND-LINK-REPAIR-2026-10-21.md).
