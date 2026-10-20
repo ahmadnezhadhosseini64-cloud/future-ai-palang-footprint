@@ -31,7 +31,7 @@ for p in source_files:
     except UnicodeDecodeError:
         decode_errors.append(relpath)
         continue
-    stable = vals(body, r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Stable ID|Stable-ID|Canonical Stable ID)(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
+    stable = vals(body, r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Stable ID|Stable-ID|Canonical Stable ID|Stable Reference ID|Stable Report ID|Reference ID)(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
     prod = vals(body, r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Production ID|Production-ID)(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
     versions = vals(body, r"^\s*(?:[-*]\s*)?(?:\*\*)?Version(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
     parent_values = vals(body, r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Parent(?: input| event| reference| protocol| architecture| excavation)?|Parent ID|Parent Stable ID)(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
@@ -39,7 +39,7 @@ for p in source_files:
     for pv in parent_values:
         # Extract only identifier-shaped tokens. Do not turn prose, markdown emphasis,
         # destination labels or path fragments into fabricated parent nodes.
-        ids = re.findall(r"\b(?:EVT-\d+|[A-Z0-9]+(?:-[A-Z0-9]+){2,})\b", pv)
+        ids = re.findall(r"\b(?:EVT-\d+|[A-Z0-9]+(?:[-._][A-Z0-9]+){2,})\b", pv)
         parents.extend(ids)
     for x in stable: stable_map[x].append(relpath)
     for x in prod: prod_map[x].append(relpath)
@@ -76,6 +76,9 @@ parent_edges, unresolved, ambiguous = [], [], []
 for node in nodes:
     for parent in node["declared_parents"]:
         candidates = sorted(id_to_paths.get(parent, set()))
+        if not candidates and len(parent) >= 12:
+            # Some historical references use an abbreviated stable ID without its final sequence/version suffix.
+            candidates = sorted({path for ident, paths in id_to_paths.items() if ident.startswith(parent) for path in paths})
         edge = {"source": node["path"], "target_id": parent, "candidate_paths": candidates,
                 "resolution": "UNRESOLVED" if not candidates else ("UNIQUE" if len(candidates) == 1 else "AMBIGUOUS")}
         parent_edges.append(edge)
