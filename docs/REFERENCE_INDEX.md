@@ -225,3 +225,6 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - Current observed snapshot at 2026-10-20T21:38:13.394Z: 682 files, 95 paths containing 0.0, 38 checkpoint paths, 52 EVT files, 85 reference-document paths, 201 generated Evidence Gate artifacts; full tree, not truncated.
 - Open gaps G-15 through G-20 are registered in the architecture queue. The 4-anchor navigation set remains a subset, not the complete historic list. Dropbox stays OPEN / WAITING.
 - UTC is the primary timestamp for new processing/registration/read-back records; user-message time is UNKNOWN / UNVERIFIED unless sourced. Tehran time is optional derived display only.
+
+
+| EVT49-2026-10-21-001 | `docs/architecture/BEHAVIOR-TRACE/EVT-0049-ASSISTANT-EXECUTION-AND-RECONCILIATION-2026-10-21.md` | خروجی اجرای ممیزی گراف تاریخی، شواهد workflow، راستی‌آزمایی محدود و شکاف‌های باز | Workflow 39502190776 SUCCESS; scoped read-back verified; full semantic graph remains OPEN / PARTIAL |
