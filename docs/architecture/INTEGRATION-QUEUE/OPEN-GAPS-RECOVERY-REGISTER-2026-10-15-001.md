@@ -247,3 +247,14 @@ NO CLAIM WITHOUT EVIDENCE — هیچ ادعایی بدون شاهد پذیرفت
 - اگر ساعت تهران در دسترس نبود: `Tehran local time = UNKNOWN / UNAVAILABLE` و زمان دقیق مرجع دستیار حفظ شود. اگر ساعت مرجع دستیار هم در دسترس نبود، آن هم UNKNOWN ثبت شود. تبدیل زمانی باید «محاسبه‌شده» برچسب بخورد.
 - زمان دقیق پیام کاربر از زمان commit یا workflow استنتاج نشود.
 - وضعیت قاعده: ACTIVE / LIVING / GOVERNING؛ در ثبت‌های بعدی ارث‌بری شود و صف پیگیری فعلی باز بماند.
+
+
+## G-06 — Universal interaction anchor and two workflow recovery (2026-10-20)
+- Stable ID: UNIVERSAL-INTERACTION-ANCHOR-AND-WORKFLOW-RECOVERY-2026-10-20-001; Production ID: UIAWR-2026-10-20-001; Event: EVT-0027.
+- Full reference: docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-INTERACTION-ANCHOR-AND-WORKFLOW-RECOVERY-2026-10-20-001.md.
+- Historical Evidence Gate run 39449957651: failure; jobs endpoint returned zero jobs; rerun rejected with HTTP 403 "This workflow run cannot be retried"; root cause UNKNOWN / UNVERIFIED.
+- Historical Automatic Final Registration Proof run 39449956059: failure; jobs endpoint returned zero jobs; rerun rejected with HTTP 403 "This workflow run cannot be retried"; root cause UNKNOWN / UNVERIFIED.
+- Actual workflow edits committed: automatic artifact path list fixed in 2a3398132ca8e196295d2d61bf7c96d12ce7d84c; Evidence Gate push path filters expanded in 75f1fff4a42a6fc1465a2164a4d82db30934a95c.
+- Status: OPEN / PENDING fresh-run proof. Do not close issue #18 until both new runs complete successfully, job/step evidence and artifacts are inspected, and reference files are read back.
+- Timestamp: exact user-message time and exact registration time UNKNOWN / UNAVAILABLE; apply DTAR-2026-10-20-001 and do not invent values.
+- External Library, Buffer, Persistent Memory and Dropbox remain separate destinations; no update is claimed for them.
