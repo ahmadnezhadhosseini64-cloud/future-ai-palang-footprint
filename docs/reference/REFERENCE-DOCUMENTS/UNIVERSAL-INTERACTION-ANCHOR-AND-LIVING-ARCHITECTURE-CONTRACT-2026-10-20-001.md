@@ -3,9 +3,9 @@
 
 - Stable ID / شناسه پایدار: UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001
 - Production ID / شناسه تولید: UIALAC-2026-10-20-001
-- Version / نسخه: 1.0.0
+- Version / نسخه: 1.1.0
 - Date / تاریخ سند: 2026-10-20
-- Time / زمان دقیق: ثبت نشده در شواهد این عملیات؛ زمان حدسی درج نشود.
+- Initial creation time / زمان ایجاد اولیه: در شواهد ایجاد اولیه ثبت نشده است. Amendment processing time / زمان پردازش اصلاحیه: 2026-10-20T22:20:19+03:30 (Asia/Tehran); UTC: 2026-10-20T18:50:19Z. User message time for amendment / زمان پیام کاربر برای اصلاحیه: UNKNOWN / UNVERIFIED.
 - Timezone / منطقه زمانی مرجع پروژه: Asia/Tehran (+03:30)
 - Owner / مالک: احمد پلنگ (Ahmad Nezhadhosseini)
 - Project / پروژه: Future AI / Palang Footprint — آینده AI / ردپای پلنگ
@@ -20,7 +20,7 @@
   - FUTURE-AI-PALANG-FOOTPRINT-MASTER-CONSOLIDATED-2026-09-29-001
   - PATH-REFERENCE-RECONSTRUCTABLE-INTERACTION-CONTINUITY-2026-09-29-001
   - COMMUNICATION-IDENTIFIER-EXPLANATION-STANDARD-2026-09-29-001
-- Record status / وضعیت این سند: REPOSITORY WRITE AND READ-BACK VERIFIED after the operation recorded below; Buffer and Persistent Memory remain separate and not proven by this repository commit.
+- Record status / وضعیت این سند: REPOSITORY WRITE + READ-BACK + EXPECTED ID/TIMESTAMP/LINK MATCH VERIFIED for v1.1.0 amendment. Buffer, Persistent Memory, Library and Dropbox remain separate and are not proven by this repository commit.
 
 ---
 
@@ -319,3 +319,11 @@ The overall state is not complete while any required destination is unverified. 
 
 - v1.1.0 — 2026-10-20: افزودن قاعدهٔ دوزمانه، لنگرگذاری هر تعامل اثرگذار، پیوستگی نقاط ۰.۰ و مرز صریح میان ثبت قرارداد و اثبات خودکارسازی.
 
+
+
+### v1.1.0 execution evidence / شواهد اجرای نسخهٔ ۱.۱.۰
+- Amendment reference: TWO-TIME-ANCHORING-AND-LIVING-CONTINUITY-ARCHITECTURE-2026-10-20-001; event EVT-0033.
+- Repository write and read-back: VERIFIED. The amended contract was fetched again after the update; version v1.1.0, amendment ID and two-time timestamp fields were present.
+- Current content blob SHA after amendment: e20c8b6009d119b4aab536f534049db98ef7b00e.
+- The amendment is integrated by reference into docs/REFERENCE_INDEX.md, docs/0.0/README.md, docs/architecture/INTEGRATION-QUEUE/README.md and docs/architecture/BEHAVIOR-TRACE/README.md; all four were re-fetched and expected IDs/status text were present.
+- Global automatic execution and independent storage destinations remain OPEN / UNVERIFIED.
