@@ -749,3 +749,16 @@ The queue index and the timestamp case must each be read back after this update.
 | G-04-EVIDENCE-GATE-SCOPE-2026-10-21 | اثبات اجرای خودکار محدود در Evidence Gate در برابر الزام لنگرگذاری سراسری هر ورودی/خروجی | PARTIAL — workflow run 39497698663 موفق است؛ این آزمون فقط stable retrieval core/independent execution را پوشش می‌دهد، نه capture سراسری تعامل | PIATGCG، آزمون‌های end-to-end، event lifecycle و host adapter | [سند حاکم PIATGCG](../../reference/REFERENCE-DOCUMENTS/PERMANENT-INTERACTION-ANCHORING-TIMESTAMP-GOVERNANCE-AND-CANONICAL-GRAPH-MASTER-REFERENCE-2026-10-21-001.md) |
 | G-14-GRAPH-SNAPSHOT-STABILITY-2026-10-21 | پایداری snapshot گراف در برابر فایل‌های evidence تولیدشده توسط CI | OPEN / PARTIAL — تفکیک در قرارداد تعریف شد؛ فیلتر/اعتبارسنجی ماشینی manifest هنوز اجرا نشده | C0GIR، CI/workflows، شاخص گراف منبع، evidence registry | [موجودی گراف C0GIR](../../reference/REFERENCE-DOCUMENTS/CANONICAL-0.0-GRAPH-INVENTORY-AND-RECONCILIATION-2026-10-21-001.md) |
 
+
+
+| H0G-RDR-2026-10-21-001 | تطبیق گراف تاریخی ۰.۰، دفتر تکرارها، قاعدهٔ alias/lineage و اسکن خودکار | ACTIVE / OPEN-PARTIAL — اسکن خودکار در run 39501699736 موفق؛ داوری معنایی تکرارها و همهٔ یال‌ها باز | Master reference، گراف canonical، دفتر ۰.۰، دفتر رفتار، نمایه مرجع و صف شکاف‌ها | [سند تطبیق گراف تاریخی](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-RECONCILIATION-AND-DEDUPLICATION-REGISTER-2026-10-21-001.md) |
+
+## G-15 تا G-20 — شکاف‌های زندهٔ گراف و تداوم
+- **G-15 — Canonical alias/lineage manifest:** OPEN / ACTIVE. ساخت manifest نسخه‌دار که کپی‌های هم‌محتوا را به گره canonical پیوند دهد؛ هیچ فایل تاریخی حذف نشود.
+- **G-16 — Semantic content review:** OPEN / ACTIVE. بازخوانی معنایی رویدادها و اسناد مرجع و انتقال یافته‌ها/تصمیم‌ها/شکاف‌ها به معماری Master/Child/Rahm.
+- **G-17 — Dropbox failover:** OPEN / WAITING. اتصال، نوشتن، بازخوانی، تطبیق و بازیابی واقعی هنوز تأیید نشده.
+- **G-18 — Independent storage proof:** OPEN / UNVERIFIED. Buffer، Library و Persistent Memory باید جداگانه اثبات شوند.
+- **G-19 — Second-host transfer:** OPEN / NOT PROVEN. خروجی قابل‌انتقال، واردسازی و ادامهٔ موفق در میزبان دوم هنوز آزمون کامل نشده.
+- **G-20 — Runtime-wide capture:** OPEN / NOT PROVEN. قرارداد و اسکن مخزن، ثبت خودکار همهٔ پیام‌ها در همهٔ نشست‌ها را اثبات نمی‌کنند.
+
+قاعدهٔ بستن: شاهد واقعی + آزمون + read-back + match + اتصال به Master/صف. تکرار محتوایی فقط با alias/lineage ادغام منطقی می‌شود؛ حذف فایل بدون مجوز و تحلیل لینک ممنوع است.
