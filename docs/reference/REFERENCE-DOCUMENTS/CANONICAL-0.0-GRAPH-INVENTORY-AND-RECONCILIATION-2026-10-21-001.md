@@ -2,7 +2,7 @@
 
 - Stable ID: CANONICAL-0.0-GRAPH-INVENTORY-AND-RECONCILIATION-2026-10-21-001
 - Production ID: C0GIR-2026-10-21-001
-- Version: 1.0.4
+- Version: 1.0.5
 - Owner: احمد پلنگ
 - Created / processed UTC: 2026-10-20T20:57:40.304Z
 - Created / processed Asia/Tehran: 2026-10-21T00:27:40.304+03:30
@@ -548,3 +548,12 @@
 - Canonical reconciliation register: [H0G-RDR](./HISTORICAL-0.0-GRAPH-RECONCILIATION-AND-DEDUPLICATION-REGISTER-2026-10-21-001.md).
 - Automated scan evidence: [run 39501699736](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39501699736), SUCCESS; artifact `living-architecture-audit-39501699736`.
 - Current graph state: inventory refreshed, full semantic reconciliation OPEN / PARTIAL; no historical files deleted.
+
+
+## Snapshot تکمیلی پس از اجرای ممیزی و پیش از EVT-0049
+- Observation UTC: `2026-10-20T21:40:47.065Z`.
+- Tree SHA: `8ac1345dbdcdae6ec497da02b4e53cfd78318c3c`; `truncated=false`.
+- Total files: 689; paths containing `0.0`: 95; checkpoint paths: 38; EVT files: 52; paths under Reference Documents: 85; generated Evidence Gate files: 208.
+- Evidence: workflow [39502190776](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39502190776) SUCCESS; artifact `living-architecture-audit-39502190776`, digest `sha256:0bff6ba4b290be28a172dce5682ac7396d52013a62d6b61d2ccd93a52df45dd9`.
+- Output event: [EVT-0049](../../architecture/BEHAVIOR-TRACE/EVT-0049-ASSISTANT-EXECUTION-AND-RECONCILIATION-2026-10-21.md).
+- Snapshot is historical and time-bounded; after EVT-0049 and subsequent workflow writes the live tree count changes. No historical record was deleted.
