@@ -460,3 +460,33 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - اقدام بعدی: G-01، فهرست‌برداری کامل همهٔ پرونده‌های تاریخی ۰.۰ و تطبیق گراف بدون حذف/جایگزینی.
 - این پیوند ۰.۰ جدید ایجاد نمی‌کند و هیچ نقطهٔ تاریخی را نمی‌بندد.
 
+## فهرست موجودی‌برداری‌شدهٔ پرونده‌های ۰.۰ — ممیزی EVT-0043/0044
+این فهرست، همهٔ فایل‌های برگشتی از فهرست مستقیم دو مسیر `checkpoints/` و `docs/0.0/` در زمان این ممیزی را به هم متصل می‌کند. این موجودی‌برداری مسیرهای مستقیم است؛ هنوز ادعا نمی‌کند که همهٔ اشاره‌گرهای ۰.۰ در کل مخزن، فایل‌های تودرتو، اسناد مرجع و تاریخچهٔ رویدادها به‌صورت گراف کامل تطبیق شده‌اند.
+
+| مسیر/پرونده | نقش در بازیابی | وضعیت قابل اتکا از متن بازخوانی‌شده |
+|---|---|---|
+| [0.0-2026-08-30T02-15-00+03-30](../../checkpoints/0.0-2026-08-30T02-15-00+03-30.md) | نقطهٔ توقف تاریخی | PAUSED / CHECKPOINT؛ پیش از ادامه بازخوانی شود |
+| [0.0-2026-08-30T18-07-00+03-30](../../checkpoints/0.0-2026-08-30T18-07-00+03-30.md) | توقف/بازیابی با دروازهٔ نهایی باز | PAUSED / RECOVERABLE / FINALIZATION PENDING |
+| [0.0-2026-08-31-230004-ADAPTIVE-DISCOVERY-LIVING-ARCHIVE](../../checkpoints/0.0-2026-08-31-230004-ADAPTIVE-DISCOVERY-LIVING-ARCHIVE.md) | بایگانی زندهٔ کشف تطبیقی | ACTIVE / LIVE / RECOVERABLE؛ نیازمند تطبیق با قراردادهای جدید |
+| [0.0-2026-09-03-RESUME-ANCHOR-001](../../checkpoints/0.0-2026-09-03-RESUME-ANCHOR-001.md) | نقطهٔ ادامهٔ اجرای قرارداد | ACTIVE / LIVING / RESUME-ANCHORED |
+| [0.0-CHAIN-RULE-2026-09-01](../../checkpoints/0.0-CHAIN-RULE-2026-09-01.md) | قاعدهٔ پیوستگی زنجیره | ACTIVE / REGISTERED / READ-BACK VERIFIED در متن پرونده؛ وضعیت جاری باید دوباره سنجیده شود |
+| [0.0-CHAIN-RULE-2026-09-01-v2](../../checkpoints/0.0-CHAIN-RULE-2026-09-01-v2.md) | نسخهٔ دوم قاعدهٔ زنجیره | ACTIVE / REGISTERED؛ lineage و تفاوت نسخه باید تطبیق داده شود |
+| [0.0-CHECKPOINT-XLR-PMA-2026-09-04](../../checkpoints/0.0-CHECKPOINT-XLR-PMA-2026-09-04.md) | checkpoint شناسهٔ تولید XLR-PMA | FINAL / ACTIVE / LIVING در متن پرونده |
+| [CONNECTION-0.0-2026-09-01-060900-ADP-CHAIN](../../checkpoints/CONNECTION-0.0-2026-09-01-060900-ADP-CHAIN.md) | پروندهٔ اتصال زنجیرهٔ ADP | تاریخی؛ نیازمند بازخوانی lineage |
+| [CURRENT-0.0-MASTER-REFERENCE-2026-08-31](../../checkpoints/CURRENT-0.0-MASTER-REFERENCE-2026-08-31.md) | مرجع مادر ۰.۰ تاریخی | ACTIVE / LIVE / RECOVERABLE در متن پرونده؛ نه لزوماً مرجع غالب امروز |
+| [PMAR-2026-08-31-001](../../checkpoints/PMAR-2026-08-31-001.md) | checkpoint وابسته به حافظه | ACTIVE / PENDING-MEMORY-READBACK |
+| [PALANG-0.0-CURRENT-2026-10-20-001](../../checkpoints/PALANG-0.0-CURRENT-2026-10-20-001.md) | لنگر جاری قبلی | ACTIVE / LIVING؛ Dropbox و مقصدهای مستقل همچنان نیازمند اثبات |
+| [PALANG-0.0-MAIN-LOCK-2026-10-20-002](../../checkpoints/PALANG-0.0-MAIN-LOCK-2026-10-20-002.md) | قفل اصلی جاری | نقطهٔ اصلی ادامه؛ مقصدهای مستقل باید جداگانه بررسی شوند |
+| [OUTPUT-ANCHOR-GOVERNANCE-COMPLETE-REGISTRATION-0.0-2026-10-19-001](./OUTPUT-ANCHOR-GOVERNANCE-COMPLETE-REGISTRATION-0.0-2026-10-19-001.md) | ۰.۰ حاکمیت لنگر خروجی | ACTIVE / LIVING / OPEN |
+| [OUTPUT-ANCHOR-CHAIN-AND-SESSION-CLOSE-0.0-2026-10-19-002](./OUTPUT-ANCHOR-CHAIN-AND-SESSION-CLOSE-0.0-2026-10-19-002.md) | ۰.۰ زنجیرهٔ خروجی و پایان نشست | ACTIVE / LIVING / RESUME HERE |
+| [RESUME-CHECKPOINT-2026-10-17-ARCHAEOLOGY-001](./RESUME-CHECKPOINT-2026-10-17-ARCHAEOLOGY-001.md) | اشاره‌گر ادامهٔ خاک‌برداری | ACTIVE RESUME POINTER / OPEN WORK |
+| [PALANG-DROPBOX-FAILOVER-RESUME-0.0-2026-10-12-001](./PALANG-DROPBOX-FAILOVER-RESUME-0.0-2026-10-12-001.md) | مسیر جایگزین Dropbox | OPEN / WAITING؛ اتصال/نوشتن/بازخوانی/بازیابی تأیید نشده |
+
+### نتیجهٔ موجودی‌برداری اولیه
+- تعداد فایل‌های مستقیم بازخوانی‌شده در `checkpoints/`: 12.
+- تعداد فایل‌های مستقیم بازخوانی‌شده در `docs/0.0/` به‌جز همین README: 4.
+- مجموع این دو مسیر: 16 پروندهٔ مرتبط با ۰.۰ یا ادامه.
+- این عدد، تعداد کل لنگرها/رویدادهای ۰.۰ در کل مخزن نیست؛ بعضی شناسه‌ها درون پرونده‌های دیگر یا اسناد مرجع نیز ذکر شده‌اند.
+- **G-01 همچنان OPEN / PARTIAL** تا وقتی شناسه‌ها و پیوندهای تمام پرونده‌ها، اسناد مرجع و رویدادهای رفتار به یک گراف canonical یکتا تطبیق داده شوند. هیچ پروندهٔ تاریخی با این فهرست حذف، ادغام مخرب یا خودکار بسته نشده است.
+- اقدام بعدی: برای هر ۱۶ پرونده، استخراج Stable ID/Production ID، والد/فرزند، سند مرجع، رویداد مرتبط، وضعیت و زمان دارای منشأ؛ سپس بررسی تکرارها و گره‌های یتیم، بدون حذف تاریخچه.
+
