@@ -90,3 +90,10 @@ Scoped repository registration and cross-index verification: VERIFIED. Complete 
 - G-14 is now registered in the governing master and queue: generated evidence artifacts must be counted separately from stable architectural source nodes. Its automated filter/manifest test remains OPEN.
 - The updated files are fetched again after this append to verify the proof record.
 
+## Last observed repository tree before this closeout append
+- Processing time UTC: `2026-10-20T21:10:41.821Z`; Asia/Tehran: `2026-10-21T00:40:41.821+03:30`.
+- Tree SHA: `c0b13d99d4d5b6daeb5d24400acfff8fb75cee0d`; `truncated=false`.
+- Total file entries: 676; paths containing `0.0`: 93; checkpoint paths: 38; EVT files: 51; generated Evidence Gate artifacts: 198.
+- Since the 670-file snapshot, six additional `evidence/evidence-gate-*.txt` files appeared. This matches the CI evidence-generation behavior captured by G-14. The next successful write may create another artifact, so this is a point-in-time observation, not a stable timeless count.
+- Source-graph counts remain 93 paths containing `0.0`; unique anchor count is not inferred from path count. Full internal identifier/edge reconciliation remains OPEN / PARTIAL.
+
