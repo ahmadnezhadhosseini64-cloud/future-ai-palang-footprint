@@ -796,3 +796,7 @@ The queue index and the timestamp case must each be read back after this update.
 
 | H0CALDR-2026-10-21-001 | داوری غیرمخرب 11 گروه تکرار محتوایی و رابطهٔ canonical/mirror | ACTIVE / PARTIAL — 9 نقش/مسیر پیشنهادی، 2 گروه باز | بررسی inbound references و تاریخچهٔ Git، سپس read-back و تأیید نهایی | [دفتر تصمیم‌های alias/lineage](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-CANONICAL-ALIAS-LINEAGE-DECISION-REGISTER-2026-10-21-001.md) |
 - رویداد اجرایی canonical: [EVT-0052](../BEHAVIOR-TRACE/EVT-0052-CANONICAL-GRAPH-MANIFEST-AND-LINK-REPAIR-2026-10-21.md).
+
+
+
+| H0GMS-2026-10-21-001 | ثبت نسخهٔ تأییدشدهٔ manifest گراف و معیارهای ساختاری | STRUCTURAL PASS for audited snapshot; semantic review PARTIAL | طبقه‌بندی معنایی 33 گروه Stable ID و 42 گروه Production ID؛ بازبینی هشت گروه EVT و تصمیم‌های alias | [گزارش snapshot](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-MANIFEST-SNAPSHOT-2026-10-21-001.md); [دفتر alias/lineage](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-CANONICAL-ALIAS-LINEAGE-DECISION-REGISTER-2026-10-21-001.md) |
