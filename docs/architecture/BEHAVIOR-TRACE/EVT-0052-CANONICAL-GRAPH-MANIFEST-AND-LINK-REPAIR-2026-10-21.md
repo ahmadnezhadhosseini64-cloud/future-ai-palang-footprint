@@ -52,7 +52,7 @@ The earlier snapshot's 15 link findings were corrected in a bounded set of files
 - Buffer, Library, Persistent Memory and Dropbox: deliberately out of scope for this request, not tested and not claimed.
 
 ## 6. Required continuation
-Fetch run 39508895943 and its artifact. Read the generated manifest and summary. Re-fetch all corrected files and check expected paths. Resolve remaining links and classify IDs by role. Review event/reference documents in bounded batches; promote only evidenced relationships into architecture. Keep any unproven relationship OPEN / UNKNOWN. Do not delete historical files.
+The latest verified snapshot is [H0GMS-2026-10-21-001 v1.1.0](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-MANIFEST-SNAPSHOT-2026-10-21-001.md), from run 39510205907 / artifact 12305736053. Continue with semantic role classification of the repeated Stable/Production IDs and review the eight EVT-number collision groups. Preserve the two earliest-commit alias candidates and all mirror copies; no deletion. Keep natural-language semantic equivalence OPEN until reviewed.
 
 
 
@@ -65,6 +65,6 @@ Fetch run 39508895943 and its artifact. Read the generated manifest and summary.
 
 ## Final verified manifest run
 - Snapshot: [H0GMS-2026-10-21-001](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-MANIFEST-SNAPSHOT-2026-10-21-001.md).
-- Living Architecture Audit run: 39510053810; artifact 12304693811; digest `sha256:04838c0f6560dbda83a101d1d32ef6e0fe165c1474aaf19634598435801ac1dd`.
+- Living Architecture Audit run: 39510205907; artifact 12305736053; digest `sha256:0c7eee16fccbdeb095dcbd5f4cafb9cf5e9312f819f92e6dec9a8acb3f026866`.
 - Verified: workflow PASS; 0 missing local links; 38 parent edges; 0 unresolved; 0 ambiguous. Exact duplicate groups: 11; proposed canonical/mirror decisions: 11.
 - Still OPEN: full natural-language semantic equivalence; semantic classification of repeated ID groups; eight historical EVT number collision groups. The mistaken EVT-0051 path remains a disclosed superseded correction artifact; EVT-0052 is the active event for this work.
