@@ -1,0 +1,50 @@
+name: Living Architecture Audit
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: living-architecture-audit-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout canonical repository
+        uses: actions/checkout@v5
+
+      - name: Run structural and link audit
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p audit-output
+          {
+            echo "Audit name: Living Architecture Audit"
+            echo "Repository: ${GITHUB_REPOSITORY}"
+            echo "Commit: ${GITHUB_SHA}"
+            echo "Run ID: ${GITHUB_RUN_ID}"
+            echo "Run number: ${GITHUB_RUN_NUMBER}"
+            echo "Runner UTC time: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            echo "Commit timestamp is not the original user-message timestamp."
+            python3 scripts/audit_living_architecture.py
+          } | tee audit-output/living-architecture-audit.txt
+
+      - name: Upload inspectable audit evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: living-architecture-audit-${{ github.run_id }}
+          path: audit-output/living-architecture-audit.txt
+          if-no-files-found: warn
+          retention-days: 90
