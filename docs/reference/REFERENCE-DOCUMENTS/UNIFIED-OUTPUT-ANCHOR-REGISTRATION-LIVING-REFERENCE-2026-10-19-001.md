@@ -402,3 +402,14 @@ Recovery/resume path:
 - زمان دقیق همچنان UNKNOWN / UNVERIFIED می‌ماند؛ زمان میانی، زمان حدسی یا جایگزینی زمان commit به‌جای زمان پیام ممنوع است.
 - اگر فقط یک لنگر معتبر وجود دارد، مرز یک‌طرفه ثبت شود؛ اگر ترتیب قابل اثبات نیست، بازه قطعی اعلام نشود.
 - پذیرش: شناسهٔ دو لنگر، زمان و منطقهٔ زمانی، منبع، شاهد ترتیب، بازه و پیوندها بازخوانی و تطبیق شوند.
+
+
+## 23. قاعدهٔ حاکم: بررسی واقعی پیش از گزارش — EVT-0019 (2026-10-20)
+- **Stable ID:** EVIDENCE-FIRST-NO-EMPTY-REPORT-AND-REGISTER-EXECUTION-PACT-2026-10-20-001
+- **Production ID:** EFNERP-HAIF-2026-10-20-001
+- **Version:** 1.0.0
+- **سند مرجع کامل:** [قرارداد ثبت مبتنی بر شواهد و منع گزارش خالی](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/EVIDENCE-FIRST-NO-EMPTY-REPORT-AND-REGISTER-EXECUTION-PACT-2026-10-20-001.md)
+- **رویداد شواهد:** [EVT-0019](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/architecture/BEHAVIOR-TRACE/EVT-0019-EVIDENCE-FIRST-REGISTER-PACT-2026-10-20.md)
+- **الزام:** قبل از هر ادعای موفقیت، منبع واقعی را بررسی کن؛ پس از نوشتن همان مقصد را بازخوانی و محتوای مورد انتظار را تطبیق بده؛ مشاهده را از استنباط و مجهول جدا کن؛ زمان بی‌شاهد را حدس نزن؛ مقصدها را مستقل نگه دار.
+- **معیار وضعیت:** گزارش یا لینک به‌تنهایی جایگزین سند مرجع کامل، ادغام معماری، یا WRITE → READ-BACK → MATCH → VERIFY نیست. تا بسته‌شدن گیت‌های لازم، وضعیت کلی PARTIAL / OPEN باقی می‌ماند.
+- **وضعیت مقصدها در ثبت EVT-0019:** مخزن برای چهار فایل مشخص‌شده در رویداد بازخوانی و تطبیق محتوا شده؛ Library، Buffer و Persistent Memory مستقل تأیید نشده‌اند؛ Dropbox OPEN / WAITING است.
