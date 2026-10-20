@@ -48,6 +48,13 @@ Operational cycle:
 
 Never regenerate a successful Production ID. Never duplicate. Never claim VERIFIED without evidence.
 
+## Current provider-memory verification boundary — 2026-10-20
+
+- `memory_state`: `UNVERIFIED / PENDING` for provider-level ChatGPT Persistent Memory.
+- Repository-side write/read-back and repository workflow success do not establish provider-level memory persistence.
+- Required independent proof remains provider WRITE → independent provider READ-BACK → MATCH → VERIFY → RECONCILE.
+- Current architecture-verification event: `ARCHITECTURE-BUILD-VERIFICATION-2026-10-20-001` / `ABV-2026-10-20-001`; exact user-message time remains UNKNOWN / UNVERIFIED.
+
 ## Memory limitation / recovery rule
 If a required Memory destination is unavailable or cannot be independently read back:
 `PRODUCTION → SAME ID → COMPLETE PAYLOAD → DURABLE REPOSITORY / RECOVERY PENDING → PENDING/UNVERIFIED → EXCAVATION/REVIVAL → SAME ID → WRITE → READ-BACK → VERIFY → RECONCILE`.
