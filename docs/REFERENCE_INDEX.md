@@ -103,3 +103,10 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - Behavior event: [EVT-0028](architecture/BEHAVIOR-TRACE/EVT-0028-PROJECT-GOAL-GAP-RECONCILIATION-2026-10-20.md).
 - MRV, architecture queue and open-gap register cross-linked; repository read-back/match verified for those five files. Library, Buffer, Persistent Memory, Dropbox and end-to-end automatic execution remain open/unverified.
 - Exact user-message time: UNKNOWN / UNVERIFIED.
+
+
+## Main 0.0 continuation lock — P0ML-2026-10-20-002
+- Main checkpoint: [PALANG-0.0-MAIN-LOCK-2026-10-20-002](../checkpoints/PALANG-0.0-MAIN-LOCK-2026-10-20-002.md).
+- Behavior event: [EVT-0029](architecture/BEHAVIOR-TRACE/EVT-0029-MAIN-0.0-LOCK-2026-10-20.md).
+- Prior 0.0 anchors are preserved; Dropbox failover anchor remains separately OPEN / WAITING.
+- Repository registration is separate from Library, Buffer, Persistent Memory and Dropbox; exact user-message time is UNKNOWN / UNVERIFIED.
