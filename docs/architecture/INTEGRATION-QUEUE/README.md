@@ -503,3 +503,18 @@ The queue index and the timestamp case must each be read back after this update.
 - **نقطهٔ ۰.۰ جاری:** [PALANG-0.0-CURRENT-2026-10-20-001](../../../checkpoints/PALANG-0.0-CURRENT-2026-10-20-001.md)
 - **جایگاه:** حاکمیت → سند مرجع زنده → لنگر ۰.۰ → صف ادغام معماری → رویداد رفتار → شواهد/بازخوانی → بازیابی/ادامه.
 - **وضعیت مقصدها:** این مورد به مخزن تعلق دارد؛ بافر، کتابخانه، حافظهٔ پایدار و Dropbox مستقلاً تأیید نشده‌اند. نقطهٔ Dropbox باز می‌ماند.
+
+
+## 19. تثبیت ادغام واقعی مسیر کامل ۰.۰ و قاعدهٔ ثبت — 2026-10-20
+- **Stable ID:** `PALANG-0.0-COMPLETE-PATH-AND-GOVERNING-ADDENDUM-2026-10-20-001`
+- **Production ID:** `P0CPGA-HAIF-2026-10-20-001`
+- **Canonical complete reference:** [سند مرجع کامل و قابل‌بازیابی](../../reference/REFERENCE-DOCUMENTS/PALANG-0.0-COMPLETE-PATH-AND-GOVERNING-ADDENDUM-2026-10-20-001.md)
+- **Queue case:** [پروندهٔ صف با وضعیت نهایی مخزن](./PALANG-0.0-COMPLETE-PATH-GOVERNING-ADDENDUM-2026-10-20-001.md)
+- **Architecture event:** [EVT-0015](../BEHAVIOR-TRACE/EVT-0015-0.0-GOVERNING-ADDENDUM-ARCHITECTURE-INTEGRATION-2026-10-20.md)
+- **Current 0.0 anchor:** [لنگر جاری](../../../checkpoints/PALANG-0.0-CURRENT-2026-10-20-001.md)
+- **Living governing reference:** [سند مرجع حاکم زنده](../../reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md)
+- **Architecture state:** ACTIVE / LIVING / REPOSITORY INTEGRATION READ-BACK MATCHED. این مورد صرفاً یک یادداشت صف نیست: پروندهٔ صف و این نمایه به سند کامل، مرجع حاکم، لنگر جاری و EVT-0015 وصل‌اند.
+- **Required lifecycle:** PRESERVE → IDENTIFY → CLASSIFY → ANCHOR → DOCUMENT → LINK → TIMESTAMP EVIDENCE → WRITE → READ-BACK → MATCH → VERIFY → RECONCILE → STATUS BY DESTINATION → NEXT ACTION → RESUME.
+- **Destination boundary:** Buffer / بافر، Library / کتابخانه، Persistent Memory / حافظهٔ پایدار و Dropbox / دراپ‌باکس مستقلاً تأیید نشده‌اند. کار Dropbox جدا و OPEN / WAITING باقی می‌ماند.
+- **Time integrity:** زمان دقیق پیام و زمان مستقل بازخوانی UNKNOWN / UNVERIFIED؛ زمان commit جایگزین آن‌ها نیست.
+- **Resume:** مورد موجود را با همین Stable ID بازیابی کن؛ از ایجاد نسخهٔ تکراری یا بستن گپ‌های بیرونی بدون شاهد خودداری کن.
