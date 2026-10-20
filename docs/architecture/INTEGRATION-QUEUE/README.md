@@ -3,7 +3,7 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.7.8
+- Version: 1.7.9
 - Date: 2026-10-20
 - Exact Time: 11:25 local project time, minute precision; exact seconds not captured.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
@@ -627,3 +627,14 @@ The queue index and the timestamp case must each be read back after this update.
 - **وضعیت:** REPOSITORY STRUCTURAL AUDIT EXECUTED / VERIFIED; GitHub Actions run [#23](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39447083005) passed and uploaded an artifact. Automatic capture of every ChatGPT interaction, Library, Buffer, Persistent Memory and Dropbox remain OPEN / NOT PROVEN.
 - **اقدام بعدی:** بررسی اجرای واقعی workflow؛ سپس آزمون هر اتصال بیرونی با WRITE → READ-BACK → MATCH → VERIFY. موارد بدون دسترسی در صف باز می‌مانند.
 - **قاعدهٔ بستن:** تعریف workflow یا ثبت فایل به‌تنهایی اثبات اجرا/اتصال نیست.
+
+
+## پروندهٔ راستی‌آزمایی ساختمان پروژه — 2026-10-20
+
+- Stable ID: `ARCHITECTURE-BUILD-VERIFICATION-2026-10-20-001`
+- Production ID: `ABV-2026-10-20-001`
+- Event: [EVT-0024 — بازبینی ثبت زنده و ورود واقعی به ساختمان پروژه](../BEHAVIOR-TRACE/EVT-0024-ARCHITECTURE-BUILD-VERIFICATION-2026-10-20.md)
+- سند حاکم: [LIARC-2026-10-20-001](../../reference/REFERENCE-DOCUMENTS/LIVING-INTERACTION-AUTOMATION-AND-RECONCILIATION-2026-10-20-001.md)
+- وضعیت: قرارداد، workflow، اسکریپت ممیزی، نمایه، صف معماری، دفتر رفتار و لنگر ۰.۰ در مخزن بازخوانی شدند؛ اجرای `39447416772` موفق است. این شاهد، ذخیره‌سازی بیرونی یا capture همهٔ گفتگوها را ثابت نمی‌کند.
+- زمان دقیق پیام: UNKNOWN / UNVERIFIED.
+- اقدام بعدی: شکاف‌های مستقل در صف باز می‌مانند؛ Dropbox در این نوبت عمداً دست‌نخورده است.
