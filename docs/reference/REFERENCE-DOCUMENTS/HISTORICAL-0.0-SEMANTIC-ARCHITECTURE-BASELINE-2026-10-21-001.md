@@ -174,3 +174,10 @@ PRESERVE → IDENTIFY → READ SOURCE → CLASSIFY ROLE → CHECK LINEAGE → CH
 - It defines the layered architecture, typed data model, state machine, API v1, UI modules, security/continuity failure handling and acceptance tests A01–A16.
 - The blueprint is now connected to the Human–AI Co-Evolution Architecture. This is readiness of the design specification, not a claim that a complete application has been built or passed end-to-end tests.
 - The parser now emits a line-level review queue with ID occurrences and inbound/outbound local-link context. A fresh workflow run and artifact read-back are required before accepting its counts or output.
+
+
+## Addendum v1.4.0 — fresh audit and complete group inventory
+- Fresh structural pass: [run 39517339104](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39517339104), audited commit `7d0da46f1e1d5e551bb60fceb3b61b54e7f217dd`, UTC `2026-10-20T23:48:04Z`.
+- Current snapshot: 498 source files; 991 local Markdown edges; 0 missing links; 38 parent edges; 0 unresolved/ambiguous parent edges; 37 Stable ID groups; 43 Production ID groups; 8 EVT groups; 11 exact-content duplicate groups; 693 line-level ID occurrences.
+- Full group status and bounded decisions: [H0IRAR](./HISTORICAL-0.0-IDENTIFIER-AND-RELATION-ADJUDICATION-REGISTER-2026-10-21-001.md). Evidence details: [H0SRQS](./HISTORICAL-0.0-SEMANTIC-REVIEW-QUEUE-SNAPSHOT-2026-10-21-001.md).
+- The successful run confirms structural extraction and queue generation, not full natural-language semantic validation. Semantic acceptance remains OPEN / PARTIAL; the 37/43 groups and 991 edges must not be declared all semantically verified from structural checks alone.
