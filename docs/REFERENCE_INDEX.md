@@ -158,3 +158,5 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - سند مرجع: [LARTG](reference/REFERENCE-DOCUMENTS/LIVING-ANCHORING-REGISTRATION-AND-TEST-GOVERNANCE-2026-10-20-001.md).
 - رویداد ورودی: [EVT-0035](architecture/BEHAVIOR-TRACE/EVT-0035-LIVING-ANCHORING-AND-TEST-GOVERNANCE-2026-10-20.md).
 - زمان پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان پردازش دستیار: 2026-10-20T22:31:33+03:30. آزمون پذیرش فعال اما نتیجهٔ کامل هنوز اثبات نشده است.
+
+- لنگر خروجی دستیار و گزارش آزمون: [EVT-0036](architecture/BEHAVIOR-TRACE/EVT-0036-ASSISTANT-REGISTRATION-AND-TEST-RESULT-2026-10-20.md).
