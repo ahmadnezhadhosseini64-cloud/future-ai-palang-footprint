@@ -116,3 +116,11 @@ WRITE → READ-BACK → MATCH → VERIFY → RECORD EVIDENCE.
 - The event and its references have now been integrated into the reference index, architecture integration queue, behavior-trace index and log, pending registration queue, open-gap recovery register, MRV, and 0.0 index. These updates themselves must still pass a subsequent audit run.
 - Exact user-message time: UNKNOWN / UNVERIFIED; do not infer it from commits or workflow times.
 - External destination write/read-back and automatic capture of every ChatGPT interaction remain OPEN / NOT PROVEN. Dropbox was deliberately not touched in this pass.
+
+
+## 15. Final gate reconciliation — 2026-10-20
+- Fresh commit `1cf14ebebd2ad6759884b580c5b6164520419b2d` passed the Living Architecture Audit (`39449620274`, completed `2026-10-20T15:34:26Z`) and Cross-Layer Integrity Gate (`39449620238`, completed `2026-10-20T15:34:21Z`).
+- The production registry record `ABV-2026-10-20-001` is verified for these two repository-side gates, but its overall reconciliation state remains PARTIAL.
+- Two additional workflows remain failed: `main.yml` run `39449616044` and `automatic-final-registration-proof.yml` run `39449617919`. The available API exposes no job rows for these runs, so the cause is not guessed or marked fixed.
+- External persistence and global capture remain unproven; Dropbox was not touched.
+- Exact user-message time UNKNOWN / UNVERIFIED.
