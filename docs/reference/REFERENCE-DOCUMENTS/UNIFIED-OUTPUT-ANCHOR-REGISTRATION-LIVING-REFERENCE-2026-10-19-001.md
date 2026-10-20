@@ -322,3 +322,34 @@ Recovery/resume path:
 - [MASTER-CANONICAL-COMPLETE-INTERACTION-REGISTRATION-PATH-2026-10-19-001](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/CANONICAL-COMPLETE-PATH-ARCHIVE-2026-10-19/MASTER-CANONICAL-COMPLETE-INTERACTION-AND-REGISTRATION-PATH-2026-10-19-001.md)
 - [EVT-0014](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/architecture/BEHAVIOR-TRACE/EVT-0014-CANONICAL-COMPLETE-PATH-ARCHIVE-2026-10-19.md)
 مرجع مادر جدید مسیر تعامل، چرخهٔ ثبت، اسناد منبع، موارد باز و دستور اجرایی ادامه را یکجا جمع می‌کند. اسناد قبلی حفظ می‌شوند به‌عنوان تاریخچه/شواهد؛ هیچ مقصد بیرونی با افزودن این پیوند تأیید نمی‌شود.
+
+
+## 19. تأکید و اتصال ثبت‌شده در 2026-10-20 — قاعدهٔ نقطهٔ ۰.۰، سند مرجع، مستندسازی و ثبت زمانی
+
+- **Stable ID:** `PALANG-0.0-REGISTRATION-REFERENCE-TIMESTAMP-RULE-2026-10-20-001`
+- **Production ID:** `P0RRT-HAIF-2026-10-20-001`
+- **Version:** 1.0.0
+- **Record date:** 2026-10-20
+- **Exact user-message time for this reaffirmation:** UNKNOWN / UNVERIFIED؛ زمان حدس زده نمی‌شود.
+- **Timezone:** Asia/Tehran (UTC+03:30) برای زمان‌های پروژه، بدون جایگزین‌کردن شاهد زمان واقعی.
+- **Status:** ACTIVE / LIVING in repository after write and read-back; other destinations remain independently unverified.
+- **Origin:** کاربر در نقطهٔ گفت‌وگوی ۰.۰ مورخ 2026-10-20 تأکید کرد که قاعدهٔ ثبت نقطهٔ ۰.۰، سند مرجع، ثبت و مستندسازی و ثبت زمانی باید به‌عنوان یک قاعدهٔ حاکم ثبت شود.
+- **Current anchor:** [PALANG-0.0-CURRENT-2026-10-20-001](../../../checkpoints/PALANG-0.0-CURRENT-2026-10-20-001.md).
+- **Prior governing 0.0 rule:** [OUTPUT-ANCHOR-GOVERNANCE-COMPLETE-REGISTRATION-0.0-2026-10-19-001](../../0.0/OUTPUT-ANCHOR-GOVERNANCE-COMPLETE-REGISTRATION-0.0-2026-10-19-001.md).
+- **Related open anchor:** `PALANG-DROPBOX-FAILOVER-RESUME-0.0-2026-10-12-001` remains OPEN / WAITING and must not be overwritten or closed.
+
+### 19.1 قاعدهٔ لازم‌الاجرا
+
+1. هر نقطهٔ ۰.۰ که کاربر صریحاً تعیین می‌کند باید پروندهٔ مستقل و قابل‌بازیابی داشته باشد؛ هیچ ۰.۰ قبلی حذف، ادغام یا جایگزین نمی‌شود.
+2. پرونده باید تا حد شواهد موجود شامل Stable ID (شناسهٔ پایدار)، Production ID (شناسهٔ تولید)، نسخه، تاریخ، زمان و منطقهٔ زمانی با منشأ، مالک، پروژه، دلیل تعیین نقطه، منشأ/تبار، وضعیت، شواهد، محدودیت‌ها، مسیر مرجع، پیوندهای معماری و صف، مقصدهای ذخیره‌سازی، اقدام بعدی و مسیر بازیابی باشد.
+3. سند مرجع باید مسیر کامل و قابل‌بازسازی را نگه دارد؛ گزارش کوتاه یا ادعای «ثبت شد» جایگزین سند کامل نیست.
+4. زمان پیام/درخواست، زمان اقدام، زمان commit، آخرین تغییر، زمان بازخوانی و زمان تأیید جداگانه ثبت می‌شوند. زمان نامعلوم با `UNKNOWN / UNVERIFIED` مشخص می‌شود؛ زمان commit هرگز به‌جای زمان پیام قرار نمی‌گیرد.
+5. چرخهٔ اجباری: `PRESERVE → IDENTIFY → CLASSIFY → ANCHOR → DOCUMENT → LINK → TIMESTAMP EVIDENCE → WRITE → READ-BACK → MATCH → VERIFY → RECONCILE → STATUS BY DESTINATION → NEXT ACTION → RESUME`.
+6. وضعیت Repository (مخزن)، Buffer (بافر)، Persistent Memory (حافظهٔ پایدار)، Library (کتابخانه) و Dropbox (دراپ‌باکس) جداگانه گزارش می‌شود. موفقیت یک مقصد، شاهد موفقیت مقصد دیگر نیست.
+7. فقط عملیاتی که واقعاً انجام و با شاهد مقصدی تأیید شده‌اند کامل اعلام می‌شوند. نوشتن موفق بدون بازخوانی، اثبات چرخهٔ کامل نیست.
+8. هر کار ناقص، صف باز و محدودیت بازیابی‌پذیر باقی می‌ماند؛ `INCOMPLETE ≠ LOST` (ناقص به‌معنی گم‌شده نیست)، `PENDING ≠ BURIED` (در انتظار به‌معنی مدفون نیست)، `WRITE ≠ VERIFIED` (نوشتن به‌معنی تأیید نیست).
+9. این تأکید، قاعدهٔ جدیدِ جایگزین نیست؛ اجرای مجدد و اتصال صریح به قاعدهٔ زندهٔ موجود در بخش 14 و نقطهٔ مستقل ۰.۰ جاری است.
+
+### 19.2 وضعیت شواهد و اقدام بعدی
+
+این الحاقیه در سند مرجع canonical ثبت می‌شود و پس از نوشتن، همان فایل بازخوانی و محتوای افزوده‌شده تطبیق داده می‌شود. این شواهد فقط وضعیت مخزن را ثابت می‌کنند. ثبت مستقل در بافر، کتابخانه، حافظهٔ پایدار و Dropbox با این اقدام انجام یا تأیید نمی‌شود و باید باز بماند تا شاهد مستقل فراهم شود.
