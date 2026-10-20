@@ -124,3 +124,9 @@
 - Complete group-by-group record: [H0GAF-2026-10-21-001](./HISTORICAL-0.0-GRAPH-AUDIT-FINDINGS-2026-10-21-001.md).
 - Manifest builder: [build_historical_graph_manifest.py](../../../scripts/build_historical_graph_manifest.py); workflow integration added. The next run artifact must be retrieved and checked before its execution is called verified.
 - Selected verified relative links were repaired; fresh residual count remains pending. No files were deleted. Alias/canonical selection and semantic review remain OPEN.
+
+
+
+## Addendum — alias/lineage decision register
+- [H0CALDR-2026-10-21-001](./HISTORICAL-0.0-CANONICAL-ALIAS-LINEAGE-DECISION-REGISTER-2026-10-21-001.md) documents nine role-based mirror proposals and two unresolved duplicate groups. No historic files were deleted. These remain proposed until inbound references and source history are reviewed.
+- Active implementation event: [EVT-0052](../../architecture/BEHAVIOR-TRACE/EVT-0052-CANONICAL-GRAPH-MANIFEST-AND-LINK-REPAIR-2026-10-21.md).
