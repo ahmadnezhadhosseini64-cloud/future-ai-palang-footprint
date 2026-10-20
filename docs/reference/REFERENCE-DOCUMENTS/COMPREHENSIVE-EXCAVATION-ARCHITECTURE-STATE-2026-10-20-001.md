@@ -158,3 +158,12 @@
 FOUND ≠ RETRIEVED ≠ VALIDATED ≠ REVIVED ≠ VERIFIED ≠ ACTIVE.
 PENDING ≠ LOST؛ INCOMPLETE ≠ LOST؛ INTERRUPTED ≠ FAILED.
 هر تغییر معماری باید چرایی، منشأ، شواهد، اثر، مقصد، اتصال، وضعیت و اقدام بعدی را حفظ کند. «خاک‌برداری» یک گزارش صرف نیست؛ چرخهٔ بازیابی و تکمیل است، اما تکمیل فقط با اثبات واقعی هر مقصد اعلام می‌شود.
+
+
+## Verification checkpoint — ARCHITECTURE-BUILD-VERIFICATION-2026-10-20-001 (2026-10-20)
+- Production ID: `ABV-2026-10-20-001`.
+- Event record: [EVT-0024](../../architecture/BEHAVIOR-TRACE/EVT-0024-ARCHITECTURE-BUILD-VERIFICATION-2026-10-20.md).
+- The user requested proof that the living interaction contract is not merely drafted but entered into the project architecture/build. Repository reads confirmed the governing contract, workflow, audit script, reference index, integration queue, behavior-trace index/log, recovery queue, open-gap register, MRV and current 0.0 anchor exist and contain the relevant references.
+- GitHub Actions run `39447416772` was re-read: job `audit` completed with conclusion `success`. This run predates the newest follow-up commits, which trigger another audit; do not treat it as proof of those later changes.
+- Exact user-message time: UNKNOWN / UNVERIFIED.
+- No Dropbox operation was performed. Library, Buffer, Persistent Memory, global ChatGPT capture, full historical reconciliation and end-to-end recovery remain open until their own evidence gates pass.
