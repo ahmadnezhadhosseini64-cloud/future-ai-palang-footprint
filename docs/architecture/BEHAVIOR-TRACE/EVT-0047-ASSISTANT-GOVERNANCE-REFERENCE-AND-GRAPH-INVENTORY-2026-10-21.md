@@ -26,3 +26,23 @@
 - G-03: OPEN — مقصدهای مستقل.
 - G-04/G-05: قراردادها تعریف شده‌اند؛ اجرای خودکار سراسری و انتقال میزبان دوم هنوز اثبات نشده‌اند.
 - Next: اتصال اسناد به نمایه‌ها، دفتر ۰.۰، دفتر رفتار و صف؛ سپس read-back نهایی و ادامهٔ تطبیق محتوا.
+
+## Repository read-back and architecture integration proof
+- Read-back time UTC: `2026-10-20T21:00:49.514Z`
+- Read-back time Asia/Tehran: `2026-10-21T00:30:49.514+03:30`
+- The following 10 repository files were fetched again and expected IDs/links/rules were checked; all 10 checks passed:
+  1. EVT-0046 input — `4e142dee2a28e0192997d7288838c9233ff4b6e8`
+  2. EVT-0047 output — `a38fd213e33a592cc1e37acdf876156ca7abc968` (pre-proof-append)
+  3. PIATGCG master reference — `d072c2103b6fd3c72b187cde600a7293ce10270e`
+  4. C0GIR graph inventory — `395f3a0dabf28cea683bf5b1cad4dfe2773a79c8`
+  5. Reference index — `2c87557c272b97a1458302372f0ee1be7afbbde9`
+  6. 0.0 registry — `592aa539cef88adbc5d9fdb5829234663e44eaf5`
+  7. Behavior-trace index — `ad5277134bba07b3a8f67ac8288118f1b2d8421a`
+  8. Integration queue — `c65f1db20be37d8faa61aaef2ae2f9b7883a10c8`
+  9. Universal interaction contract — `12a37ffb1ba86080abfb39462468ac7c99f8125d`
+  10. Portable HAIF master — `0c062aa788139b7345ae7093f241fdc859d77abf`
+- Latest observed integration-queue commit time: `2026-10-20T20:58:49Z` (GitHub commit metadata). This is not the user's message time.
+- Scoped repository status: WRITE + READ-BACK + expected-ID/link/rule checks = VERIFIED for the 10 files above.
+- Not verified: full content-level reconciliation of all graph nodes; Dropbox; Buffer/Library/Persistent Memory; runtime-wide automatic execution; second-host export/import.
+- G-01 remains OPEN / PARTIAL. The 640-file tree snapshot is complete at the tree API level, but not every file's internal identifiers and relationships have yet been extracted and reconciled.
+
