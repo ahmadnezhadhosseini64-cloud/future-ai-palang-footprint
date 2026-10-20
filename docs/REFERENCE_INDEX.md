@@ -202,3 +202,8 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - سند ممیزی: [AAAPHR](reference/REFERENCE-DOCUMENTS/AUTOMATIC-ANCHORING-ARCHITECTURE-AUDIT-AND-PORTABLE-HAIF-REFERENCE-2026-10-21-001.md).
 - وضعیت: گراف کامل تاریخی ۰.۰، مقصدهای مستقل، اجرای خودکار فراگیر و انتقال میزبان دوم هنوز اثبات نشده‌اند.
 
+## EVT-0045 — جمع‌بندی ممیزی
+- رویداد خروجی: [EVT-0045](architecture/BEHAVIOR-TRACE/EVT-0045-ASSISTANT-USER-FACING-AUDIT-CLOSEOUT-2026-10-21.md).
+- نتیجهٔ ممیزی و شواهد read-back: [EVT-0044](architecture/BEHAVIOR-TRACE/EVT-0044-ASSISTANT-AUDIT-RESULT-AND-OPEN-GAPS-2026-10-21.md).
+- سند مرجع: [AAAPHR v1.0.1](reference/REFERENCE-DOCUMENTS/AUTOMATIC-ANCHORING-ARCHITECTURE-AUDIT-AND-PORTABLE-HAIF-REFERENCE-2026-10-21-001.md).
+
