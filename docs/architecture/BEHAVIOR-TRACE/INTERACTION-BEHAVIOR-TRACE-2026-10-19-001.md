@@ -286,3 +286,18 @@
 - **Event detail:** [EVT-0014](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/architecture/BEHAVIOR-TRACE/EVT-0014-CANONICAL-COMPLETE-PATH-ARCHIVE-2026-10-19.md)
 - **Current anchor:** [لنگر جاری ۰.۰](../../0.0/OUTPUT-ANCHOR-CHAIN-AND-SESSION-CLOSE-0.0-2026-10-19-002.md)
 - **Status:** ثبت در مخزن و بازخوانی محتوایی؛ مقصدهای دیگر مستقل تأیید نشده‌اند. موارد باز طبق سند مادر حفظ می‌شوند.
+
+
+## EVT-0015 — ثبت قاعدهٔ همیشگی و ادغام معماری ۰.۰
+- **Event ID:** EVT-0015-0.0-GOVERNING-ADDENDUM-ARCHITECTURE-INTEGRATION-2026-10-20
+- **Stable ID:** PALANG-0.0-COMPLETE-PATH-AND-GOVERNING-ADDENDUM-2026-10-20-001
+- **Production ID:** P0CPGA-HAIF-2026-10-20-001
+- **Event file:** [EVT-0015](./EVT-0015-0.0-GOVERNING-ADDENDUM-ARCHITECTURE-INTEGRATION-2026-10-20.md)
+- **Architecture queue case:** [پروندهٔ صف](../INTEGRATION-QUEUE/PALANG-0.0-COMPLETE-PATH-GOVERNING-ADDENDUM-2026-10-20-001.md)
+- **Complete path reference:** [سند مسیر کامل](../../reference/REFERENCE-DOCUMENTS/PALANG-0.0-COMPLETE-PATH-AND-GOVERNING-ADDENDUM-2026-10-20-001.md)
+- **Living governing reference:** [سند حاکم زنده](../../reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md)
+- **Human request:** قاعدهٔ ثبت کامل، مسیر قابل‌بازیابی، مستندسازی زمان‌محور و ادغام در معماری/ساختمان پروژه باید همیشه رعایت شود.
+- **AI action:** پروندهٔ مسیر، رویداد و پروندهٔ صف به دفتر ۰.۰، نمایهٔ صف، دفتر رفتار و مرجع حاکم پیوند داده شدند.
+- **Timestamp:** زمان دقیق پیام UNKNOWN / UNVERIFIED؛ زمان commit و زمان بازخوانی جدا ثبت می‌شوند.
+- **Destination state:** مخزن با بازخوانی/تطبیق بررسی می‌شود؛ Buffer/Library/Persistent Memory/Dropbox مستقل تأیید نشده‌اند.
+- **Continuation:** بازخوانی پیوندها و حفظ کارهای باز؛ Dropbox همچنان OPEN / WAITING.
