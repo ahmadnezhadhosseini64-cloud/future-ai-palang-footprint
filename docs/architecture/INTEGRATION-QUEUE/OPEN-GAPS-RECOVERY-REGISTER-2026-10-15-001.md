@@ -271,7 +271,7 @@ NO CLAIM WITHOUT EVIDENCE — هیچ ادعایی بدون شاهد پذیرفت
 - Evidence Gate durable record read-back: `evidence/evidence-gate-39454598933.txt`, blob SHA `7d3c9faf411d1c5ff5822f1946c8a57310df734c`.
 - Actual causes corrected: invalid heredoc indentation in both YAML files; evidence_file variable not defined in the commit step; concurrent push races; artifact path syntax.
 - The two historical failure records remain unchanged. Acceptance refers to the fresh successful runs above.
-- Status: READY TO CLOSE Issue #18 after the final read-back of the updated reference and index.
+- Status: ISSUE #18 CLOSED / VERIFIED AGAINST ISSUE STATE AND FRESH WORKFLOW RUNS. Runs `39458909829`, `39458909821`, `39458909800`, `39458909798`, `39458909943` and `39458909826` completed successfully on commit `e794777002503dda66ebd9b8fa110f37ac1e973d`; artifacts for final proof and runtime transfer were present. This closes the workflow-repair issue, not the broader global-chat-capture gap.
 - Timestamp rule applied: run API time `2026-10-20T16:07:10Z`; Tehran `19:37:10 +03:30` is derived conversion only; exact user-message and document registration times UNKNOWN / UNAVAILABLE.
 
 
