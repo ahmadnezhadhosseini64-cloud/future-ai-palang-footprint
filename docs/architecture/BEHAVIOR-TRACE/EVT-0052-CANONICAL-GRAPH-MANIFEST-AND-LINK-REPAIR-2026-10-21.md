@@ -53,3 +53,10 @@ The earlier snapshot's 15 link findings were corrected in a bounded set of files
 
 ## 6. Required continuation
 Fetch run 39508895943 and its artifact. Read the generated manifest and summary. Re-fetch all corrected files and check expected paths. Resolve remaining links and classify IDs by role. Review event/reference documents in bounded batches; promote only evidenced relationships into architecture. Keep any unproven relationship OPEN / UNKNOWN. Do not delete historical files.
+
+
+
+## Alias / lineage decision register
+- [H0CALDR-2026-10-21-001](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-CANONICAL-ALIAS-LINEAGE-DECISION-REGISTER-2026-10-21-001.md) is the companion register for 11 exact-content duplicate groups. Nine role-based mirror candidates are documented; two differently numbered historical registration/checkpoint pairs remain OPEN.
+- A prior run (39509351339) verified the manifest builder and reported zero missing local Markdown links. Its parent parser was then refined to accept only identifier-shaped tokens; the current follow-up audit is required for the definitive parent-edge totals.
+- The wrong initial EVT-0051 path is explicitly marked SUPERSEDED and redirects here. It is retained as a correction notice because deletion was not accepted; the active event for this operation is EVT-0052.
