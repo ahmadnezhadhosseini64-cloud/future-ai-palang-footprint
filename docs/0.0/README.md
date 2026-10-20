@@ -416,3 +416,5 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - رویداد ورودی: [EVT-0035](../architecture/BEHAVIOR-TRACE/EVT-0035-LIVING-ANCHORING-AND-TEST-GOVERNANCE-2026-10-20.md).
 - این لنگر به زنجیرهٔ قبلی افزوده می‌شود و هیچ نقطهٔ ۰.۰ را حذف/جایگزین نمی‌کند. چهار گرهٔ پیمایش، فهرست کامل نقاط تاریخی نیستند.
 - زمان پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان پردازش دستیار: 2026-10-20T22:31:33+03:30.
+
+- لنگر خروجی دستیار/آزمون: [EVT-0036](../architecture/BEHAVIOR-TRACE/EVT-0036-ASSISTANT-REGISTRATION-AND-TEST-RESULT-2026-10-20.md).
