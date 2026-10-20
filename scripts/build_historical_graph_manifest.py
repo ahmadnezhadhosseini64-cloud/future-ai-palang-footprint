@@ -34,7 +34,7 @@ for p in source_files:
     stable = vals(body, r"^\s*(?:[-*]\s*)?(?:Stable ID|Stable-ID|Canonical Stable ID)\s*:\s*`?([^`\r\n]+)")
     prod = vals(body, r"^\s*(?:[-*]\s*)?(?:Production ID|Production-ID)\s*:\s*`?([^`\r\n]+)")
     versions = vals(body, r"^\s*(?:[-*]\s*)?Version\s*:\s*`?([^`\r\n]+)")
-    parent_values = vals(body, r"^\s*(?:[-*]\s*)?(?:Parent(?: input| event| reference)?|Parent ID|Parent Stable ID)\s*:\s*`?([^`\r\n]+)")
+    parent_values = vals(body, r"^\s*(?:[-*]\s*)?(?:Parent(?: input| event| reference| protocol| architecture| excavation)?|Parent ID|Parent Stable ID)\s*:\s*`?([^`\r\n]+)")
     parents = []
     for pv in parent_values:
         labels = re.findall(r"\[([^\]]+)\]\(", pv)
@@ -44,8 +44,9 @@ for p in source_files:
             evt_refs = re.findall(r"\bEVT-\d+\b", pv)
             if evt_refs:
                 parents.extend(evt_refs)
-            elif pv and not re.match(r"^(RELATED IDS|NONE|N/A)\b", pv, re.I):
-                parents.append(pv.strip(" `.;"))
+            else:
+                parts = [part.strip(" `.;") for part in re.split(r"\s*/\s*|\s+→\s+|,\s*", pv)]
+                parents.extend(part for part in parts if part and not re.match(r"^(RELATED IDS|NONE|N/A)\b", part, re.I))
     for x in stable: stable_map[x].append(relpath)
     for x in prod: prod_map[x].append(relpath)
     evt = re.match(r"EVT-(\d+)-", p.name)
