@@ -413,3 +413,13 @@ Recovery/resume path:
 - **الزام:** قبل از هر ادعای موفقیت، منبع واقعی را بررسی کن؛ پس از نوشتن همان مقصد را بازخوانی و محتوای مورد انتظار را تطبیق بده؛ مشاهده را از استنباط و مجهول جدا کن؛ زمان بی‌شاهد را حدس نزن؛ مقصدها را مستقل نگه دار.
 - **معیار وضعیت:** گزارش یا لینک به‌تنهایی جایگزین سند مرجع کامل، ادغام معماری، یا WRITE → READ-BACK → MATCH → VERIFY نیست. تا بسته‌شدن گیت‌های لازم، وضعیت کلی PARTIAL / OPEN باقی می‌ماند.
 - **وضعیت مقصدها در ثبت EVT-0019:** مخزن برای چهار فایل مشخص‌شده در رویداد بازخوانی و تطبیق محتوا شده؛ Library، Buffer و Persistent Memory مستقل تأیید نشده‌اند؛ Dropbox OPEN / WAITING است.
+
+
+## 24. قاعدهٔ حاکم: لنگر برای تک‌تک ورودی‌ها و خروجی‌ها
+- **Stable ID:** `EVERY-INTERACTION-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001`
+- **Production ID:** `EIACRG-HAIF-2026-10-20-001`
+- **Version:** `1.0.0`
+- **سند مرجع کامل:** [Every-interaction anchor governance](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/EVERY-INTERACTION-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001.md)
+- **الزام:** هر ورودی کاربر و هر پاسخ نهایی قابل‌مشاهدهٔ دستیار یک تعامل دارای لنگر است؛ متن کامل، شناسه، منشأ، زمان دارای شاهد، ارتباط زنجیره، وضعیت مقصدها و مسیر بازیابی ثبت می‌شود.
+- **چرخه:** CAPTURE → PRESERVE → IDENTIFY → PROVENANCE → ANCHOR → REGISTER → WRITE → READ-BACK → MATCH → VERIFY → RECONCILE → STATUS → RESUME.
+- **محدودیت:** زنجیرهٔ فکر پنهان ثبت نمی‌شود؛ زمان دقیق بی‌شاهد حدس زده نمی‌شود؛ مقصد بدون آزمون مستقل VERIFIED اعلام نمی‌شود؛ در نبود ابزار/مجوز، کار OPEN/PENDING می‌ماند.
