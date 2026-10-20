@@ -14,7 +14,7 @@
 - **Timezone / منطقهٔ زمانی پروژه:** Asia/Tehran (UTC+03:30)
 - **Repository / مخزن canonical:** `ahmadnezhadhosseini64-cloud/future-ai-palang-footprint`, branch `main`
 - **Canonical path / مسیر مرجع:** `docs/reference/REFERENCE-DOCUMENTS/EVIDENCE-FIRST-REGISTRATION-AND-NO-REPORT-ONLY-GOVERNANCE-2026-10-20-001.md`
-- **Status / وضعیت:** Repository registration in progress until post-write read-back and content match; external destinations remain independently unverified.
+- **Status / وضعیت:** REPOSITORY FILE WRITE + READ-BACK + CONTENT MATCH VERIFIED; five governance/continuity entry points updated and their links/content read back. Library, Buffer, Persistent Memory and Dropbox remain independently unverified/open.
 - **Governing parent / مرجع مادر:** `MRV-ARCHITECTURE-AND-LIVING-REFERENCE-CONTRACT-2026-09-15-001`
 - **Command binding / پیوند فرمان:** `REGISTER-COMMAND-GOVERNING-BINDING-2026-10-12-001`
 - **Current 0.0 / نقطهٔ جاری:** `PALANG-0.0-CURRENT-2026-10-20-001`
@@ -114,12 +114,13 @@
 ### Evidence ledger — دفتر شواهد این ثبت
 
 - **Pre-write fetch:** انجام شد برای پنج فایل فهرست‌شده در بالا؛ SHAهای دقیق پیش از تغییر در خروجی ابزار ثبت شده‌اند. این‌ها شواهد نسخهٔ پیش از تغییرند، نه شاهد نهایی ثبت این سند.
-- **Write:** وضعیت تا پیش از عملیات نوشتن: انجام‌نشده؛ باید با پاسخ واقعی GitHub ثبت شود.
-- **Read-back:** باید پس از نوشتن، فایل همین مسیر دوباره از مخزن خوانده شود.
-- **Match:** باید شناسنامه، شناسه‌ها، نسخه، منشأ، قواعد شاهد/زمان، وضعیت مقصدها و اقدام بعدی در محتوای بازخوانی‌شده بررسی شوند.
-- **Commit SHA / repository timestamp:** تا دریافت نتیجهٔ واقعی عملیات نوشتن/commit، UNKNOWN / UNVERIFIED.
-- **Read-back / verification timestamp:** تا اجرای واقعی بازخوانی پس از نوشتن، UNKNOWN / UNVERIFIED.
-- **Buffer / Library / Persistent Memory / Dropbox:** مستقل تأیید نشده‌اند؛ OPEN / PENDING / UNVERIFIED طبق شواهد موجود.
+- **Write:** انجام شد؛ commit `a097cb6026c802c630494c04fa3d3ccc60bfa881`؛ زمان ثبت commit از GitHub: `2026-10-20T09:18:19Z` = `2026-10-20 12:48:19 Asia/Tehran`.
+- **Read-back:** انجام شد از مسیر canonical پس از نوشتن؛ طول محتوای بازخوانی‌شده 12,252 نویسه؛ blob SHA `d5295e4d85d25ed893750b0d5dd45d8ef61af2c6`.
+- **Match:** بررسی محتوایی موفق برای Stable ID، Production ID، چرخهٔ ثبت، قواعد زمان، جداسازی مقصدها، وضعیت‌های باز و روش بازیابی. این بررسی محتوایی است، نه ادعای تطبیق رمزنگاری‌شدهٔ مستقل بایت‌به‌بایت.
+- **Repository integration writes:** MRV commit `8d2b6c4d7b1577c1457b8fa6196fd52b60f07d12` (09:18:49Z); command binding commit `0b24d756a90147e31c79c00339d4c5e41cf2b437` (09:18:54Z); current 0.0 anchor commit `db80821c63322eade0e4673e37a3766a9d022b3e` (09:18:59Z); 0.0 registry update response commit `dd1dc9861314f57549004982a81c0baddd79f2e2` (09:19:03Z); architecture queue commit `6a8f3d1d5b40207b6590b70c9c56bf843156093b` (09:19:06Z). UTC times are GitHub commit timestamps; Tehran time is UTC+03:30.
+- **Read-back / verification time:** date 2026-10-20; exact time not exposed by the tool. The read-back of the last integration targets occurred after the queue commit at `09:19:06Z` (`12:49:06 Asia/Tehran`); exact read-back time remains UNKNOWN / UNVERIFIED.
+- **Read-back scope:** new reference, MRV, command binding, current 0.0 anchor, central 0.0 registry, and integration queue were fetched again. Expected Stable ID or integration heading was present in each. Five of six returned blob SHAs matched the immediate write responses; the central 0.0 registry SHA had changed between write response and audit read-back, but the expected heading was present in the latest fetched version. Its intervening change is not attributed to this operation without additional commit-level proof.
+- **Buffer / Library / Persistent Memory / Dropbox:** independently unverified; OPEN / PENDING / UNVERIFIED according to available evidence.
 
 ## 8. پیوندهای معماری و مسیر بازیابی
 
@@ -143,14 +144,18 @@
 
 ## 9. گام‌های باز و معیار بستن
 
-- [ ] ایجاد این فایل در مخزن canonical.
-- [ ] بازخوانی فایل پس از نوشتن و تطبیق محتوای آن.
-- [ ] اتصال به MRV، فرمان حاکم، نقطهٔ جاری ۰.۰، دفتر مرکزی ۰.۰ و صف معماری؛ هر فایل به‌طور مستقل بازخوانی و بررسی شود.
-- [ ] ثبت commit و مهر زمانی واقعی مخزن، جدا از زمان پیام و زمان بازخوانی.
+- [x] ایجاد این فایل در مخزن canonical.
+- [x] بازخوانی فایل پس از نوشتن و تطبیق محتوای آن در دامنهٔ محتوایی تعریف‌شده.
+- [x] افزودن پیوند/قاعده به MRV، فرمان حاکم، نقطهٔ جاری ۰.۰، دفتر مرکزی ۰.۰ و صف معماری؛ هر شش فایل پس از تغییر دوباره خوانده شدند و شناسه/عنوان مورد انتظار حاضر بود.
+- [x] ثبت commitهای واقعی و زمان commit از GitHub؛ زمان دقیق درخواست و بازخوانی به‌اشتباه از آن‌ها استنتاج نشد.
 - [ ] بررسی مستقل امکان ثبت/بازخوانی Library.
 - [ ] بررسی مستقل امکان ثبت/بازخوانی Buffer.
 - [ ] بررسی مستقل حافظهٔ پایدار؛ در نبود شاهد، UNVERIFIED باقی بماند.
 - [ ] در زمان ادامهٔ صریح کاربر، تکمیل اتصال Dropbox و آزمون واقعی نوشتن/بازخوانی/تطبیق.
 - [ ] بازبینی نهایی وضعیت کل: فقط پس از بستن تمام مراحل الزامی با شواهد می‌توان دامنهٔ مربوط را COMPLETE اعلام کرد.
+
+**ثبت زمانی:** زمان commit اصلی: `2026-10-20T09:18:19Z` / `12:48:19 Asia/Tehran`; آخرین commit از پیوندهای معماری این دور: `2026-10-20T09:19:06Z` / `12:49:06 Asia/Tehran`. زمان دقیق پیام کاربر و زمان دقیق بازخوانی مستقل ثبت نشده‌اند و UNKNOWN / UNVERIFIED می‌مانند.
+
+**وضعیت کل:** `PARTIAL / OPEN`؛ محدودهٔ مخزن برای فایل مرجع و پنج پیوند/ورودی معماری بررسی و بازخوانی شد، اما تکمیل کل چرخه و مقصدهای بیرونی اثبات نشده است.
 
 **قاعدهٔ پایانی:** هدف این سند تولید اطمینان لفظی نیست؛ هدف این است که اطمینان از شواهد قابل‌بازیابی حاصل شود. هر جا شاهد نیست، وضعیت نامعلوم یا باز می‌ماند و همان شکاف با مسیر ادامه حفظ می‌شود.
