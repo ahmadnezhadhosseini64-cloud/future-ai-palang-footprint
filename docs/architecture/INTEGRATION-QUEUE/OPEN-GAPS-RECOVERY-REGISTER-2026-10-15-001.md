@@ -221,3 +221,11 @@ NO CLAIM WITHOUT EVIDENCE — هیچ ادعایی بدون شاهد پذیرفت
 - Both repository assertions were repaired in later commits; registry record `ABV-2026-10-20-001` remains `PARTIAL / PENDING` until a fresh cross-layer run passes.
 - Fresh run `39449261476` was observed `in_progress` at first read; subsequent result must be retrieved before closure. Latest `main.yml` and `automatic-final-registration-proof.yml` runs also reported failure, with causes still open.
 - Dropbox not touched; exact user-message time UNKNOWN / UNVERIFIED.
+
+
+## Final gate status — 2026-10-20
+- Commit `1cf14ebebd2ad6759884b580c5b6164520419b2d`: [Living Architecture Audit 39449620274](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39449620274) SUCCESS; [Cross-Layer Integrity Gate 39449620238](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39449620238) SUCCESS.
+- The failed assertions found earlier are now satisfied. Repository structural and cross-layer checks are verified for that commit.
+- Still open: `main.yml` run `39449616044` and `automatic-final-registration-proof.yml` run `39449617919` report failure; job detail was not retrievable (API returned zero jobs), so root cause remains unverified. Do not report the entire CI system as green.
+- G-AUTO-02 through G-AUTO-08 remain independently open as applicable; Dropbox was not touched.
+- User-message time UNKNOWN / UNVERIFIED; workflow completion times remain separate.
