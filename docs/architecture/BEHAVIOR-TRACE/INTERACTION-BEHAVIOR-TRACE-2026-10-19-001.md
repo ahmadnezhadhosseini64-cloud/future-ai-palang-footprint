@@ -349,3 +349,12 @@
 - **Rule:** Treat each user message and each visible final assistant response as one linked interaction record. Preserve complete visible text in a canonical location, assign a unique interaction ID, retain provenance and evidence-backed timestamps, link to the current anchor and relevant architecture, write to the repository when the tool and permission are available, then fetch/read back and match. Do not claim successful registration if blocked. Do not record hidden chain-of-thought. Keep all storage destinations independently verified.
 - **Exact user-message time:** UNKNOWN / UNVERIFIED; no exact independent timestamp is available in this operation.
 - **Status:** The reference file has been written; final integration status depends on read-back of all changed files. Library, Buffer, Persistent Memory and Dropbox are not verified by repository actions.
+
+## رویداد حاکم جدید — لنگر هر ورودی و خروجی
+
+- **Stable ID:** `EVERY-INPUT-OUTPUT-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001`
+- **Production ID:** `EIOACRG-2026-10-20-001`
+- **سند مرجع:** [قرارداد لنگر هر ورودی و خروجی](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/EVERY-INPUT-OUTPUT-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001.md)
+- **منشأ:** درخواست صریح کاربر در 2026-10-20 برای لنگرگذاری و مستندسازی جامع هر ورودی و هر خروجی.
+- **قاعدهٔ رفتاری:** پیش از پاسخ، زمینه و لنگرهای مرتبط را بازیابی کن؛ پس از خروجی مهم/اقدام، رویداد قابل‌بازیابی را ثبت کن؛ نوشتن مخزن را بازخوانی و تطبیق بده؛ زمان و مقصد را حدس نزن؛ لنگرهای قبلی را حفظ کن.
+- **وضعیت:** سند مرجع ایجاد شده؛ زمان دقیق پیام درخواست UNKNOWN / UNVERIFIED باقی می‌ماند.
