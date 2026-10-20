@@ -117,3 +117,28 @@ User-message time, event/action time, repository commit time, modification time,
 - Prior 0.0 anchors remain independent. The Dropbox failover anchor remains OPEN / WAITING until connection and write/read-back are evidenced.
 - Next action on resume: read back this anchor and compare; then continue any remaining reconciliation/architecture queue work without closing unverified items.
 
+## Temporal bracketing — user approval and continuation rule
+- Governing Stable ID: `TEMPORAL-BRACKETING-AND-BOUNDED-TIMESTAMP-GOVERNANCE-2026-10-20-001`
+- Production ID: `TBBTG-HAIF-2026-10-20-001`
+- Version: 1.0.0
+- Event record: [EVT-0018 — Temporal Bracketing Rule](../docs/architecture/BEHAVIOR-TRACE/EVT-0018-TEMPORAL-BRACKETING-RULE-2026-10-20.md).
+- Canonical governance: [Permanent Living Execution, Anchor and Timestamp Governance, section 9](../docs/reference/REFERENCE-DOCUMENTS/PERMANENT-LIVING-EXECUTION-ANCHOR-TIMESTAMP-GOVERNANCE-2026-10-20-001.md#9-temporal-bracketing-rule--ثبت-محصور-بین-دو-لنگر-زمانی).
+- Living reference: [Unified Output Anchor Registration](../docs/reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md).
+- Architecture behavior trace: [Interaction Behavior Trace](../docs/architecture/BEHAVIOR-TRACE/INTERACTION-BEHAVIOR-TRACE-2026-10-19-001.md).
+- Central 0.0 registry: [docs/0.0/README.md](../docs/0.0/README.md).
+
+### User decision
+On 2026-10-20, the user explicitly approved applying the temporal bracketing rule and asked that it be executed with complete registration, documentation, storage, a comprehensive reference, and all standing project governance respected. The user's exact message time for this approval is UNKNOWN / UNVERIFIED; do not infer it from commit metadata or the prior anchor's 10:49 capture time.
+
+### Execution and acceptance
+1. For future events whose exact time is unavailable, locate reliable prior and following timestamped anchors and record the event only within the evidence-supported interval.
+2. Preserve the exact event time as UNKNOWN / UNVERIFIED unless independently evidenced; do not invent a midpoint or minute.
+3. Keep request time, tool-action time, commit time, modification time, read-back time and verification time separate.
+4. If two anchors or proven ordering are unavailable, record only the supported one-sided bound or an uncertain interval; do not label it verified.
+5. Read back and reconcile each modified repository file. Repository verification does not verify Buffer, Persistent Memory, Library or Dropbox.
+
+### Destination status and resume
+- Repository: this anchor is to be considered updated only after the following write, fetch and content-match succeed.
+- Buffer / Persistent Memory / Library / Dropbox: NOT VERIFIED by this repository operation.
+- Dropbox failover anchor `PALANG-DROPBOX-FAILOVER-RESUME-0.0-2026-10-12-001` remains independently OPEN / WAITING.
+- Resume from this 0.0 anchor; preserve prior anchors, link the temporal rule into any applicable new registration, and continue the open Dropbox connection plus test-write/read-back work without falsely closing it.
