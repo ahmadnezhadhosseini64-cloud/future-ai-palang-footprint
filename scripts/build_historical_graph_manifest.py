@@ -17,7 +17,7 @@ run_utc = datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:
 files = sorted(p for p in ROOT.rglob("*") if p.is_file() and ".git" not in p.parts and "audit-output" not in p.parts)
 evidence = [p for p in files if p.parent.relative_to(ROOT).as_posix() == "evidence" and re.fullmatch(r"evidence-gate-.*\.txt", p.name)]
 source_files = [p for p in files if p not in evidence]
-stable_map, prod_map, evt_map, sha_map = defaultdict(list), defaultdict(list), defaultdict(list), defaultdict(list)
+stable_map, prod_map, reference_id_map, evt_map, sha_map = defaultdict(list), defaultdict(list), defaultdict(list), defaultdict(list), defaultdict(list)
 nodes, local_edges, missing_links, decode_errors, identifier_occurrences = [], [], [], [], []
 def vals(body, pattern):
     return sorted(set(m.group(1).strip().strip(chr(96) + "' ") for m in re.finditer(pattern, body, re.I | re.M)))
@@ -48,8 +48,9 @@ for p in source_files:
     except UnicodeDecodeError:
         decode_errors.append(relpath)
         continue
-    stable = id_vals(body, r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Stable ID(?:\s*/\s*شناسهٔ پایدار)?|Stable-ID|Canonical Stable ID|Stable Reference ID|Stable Report ID|Reference ID|شناسهٔ پایدار(?: این نقطه)?|شناسه پایدار(?: این نقطه)?)(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
+    stable = id_vals(body, r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Stable ID(?:\s*/\s*شناسهٔ پایدار)?|Stable-ID|Canonical Stable ID|Stable Reference ID|Stable Report ID|شناسهٔ پایدار(?: این نقطه)?|شناسه پایدار(?: این نقطه)?)(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
     prod = id_vals(body, r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Production ID(?:\s*/\s*شناسهٔ تولید)?|Production-ID|Production / Registration ID|شناسهٔ تولید|شناسه تولید|شناسهٔ ثبت)(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
+    reference_ids = id_vals(body, r"^\s*(?:[-*]\s*)?(?:\*\*)?Reference ID(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
     versions = vals(body, r"^\s*(?:[-*]\s*)?(?:\*\*)?Version(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
     parent_values = vals(body, r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Parent(?: input| event| reference| protocol| architecture| excavation)?|Parent ID|Parent Stable ID)(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
     parents = []
@@ -63,12 +64,13 @@ for p in source_files:
             parents.extend(ids)
     for x in stable: stable_map[x].append(relpath)
     for x in prod: prod_map[x].append(relpath)
+    for x in reference_ids: reference_id_map[x].append(relpath)
     # Preserve line-level occurrences for human semantic review. The role is only a
     # candidate; even a metadata-looking line is not automatically accepted as a definition.
     for line_no, line in enumerate(body.splitlines(), 1):
         for ident in stable:
             if ident in line:
-                metadata_label = line_no <= 40 and bool(re.match(r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Stable ID|Stable-ID|Canonical Stable ID|Stable Reference ID|Stable Report ID|Reference ID|شناسهٔ پایدار|شناسه پایدار)", line, re.I))
+                metadata_label = line_no <= 40 and bool(re.match(r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Stable ID|Stable-ID|Canonical Stable ID|Stable Reference ID|Stable Report ID|شناسهٔ پایدار|شناسه پایدار)", line, re.I))
                 identifier_occurrences.append({"identifier_type": "STABLE_ID", "identifier_value": ident,
                     "path": relpath, "line": line_no, "line_text": line.strip()[:240],
                     "role_candidate": "DEFINITION_OR_METADATA_REVIEW" if metadata_label else "REFERENCE_REVIEW",
@@ -77,6 +79,13 @@ for p in source_files:
             if ident in line:
                 metadata_label = line_no <= 40 and bool(re.match(r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Production ID|Production-ID|Production / Registration ID|شناسهٔ تولید|شناسه تولید|شناسهٔ ثبت)", line, re.I))
                 identifier_occurrences.append({"identifier_type": "PRODUCTION_ID", "identifier_value": ident,
+                    "path": relpath, "line": line_no, "line_text": line.strip()[:240],
+                    "role_candidate": "DEFINITION_OR_METADATA_REVIEW" if metadata_label else "REFERENCE_REVIEW",
+                    "role_status": "UNREVIEWED"})
+        for ident in reference_ids:
+            if ident in line:
+                metadata_label = line_no <= 40 and bool(re.match(r"^\s*(?:[-*]\s*)?(?:\*\*)?Reference ID", line, re.I))
+                identifier_occurrences.append({"identifier_type": "REFERENCE_ID", "identifier_value": ident,
                     "path": relpath, "line": line_no, "line_text": line.strip()[:240],
                     "role_candidate": "DEFINITION_OR_METADATA_REVIEW" if metadata_label else "REFERENCE_REVIEW",
                     "role_status": "UNREVIEWED"})
@@ -102,7 +111,7 @@ def groups(mapping):
 stable_collisions, prod_collisions, evt_collisions = groups(stable_map), groups(prod_map), groups(evt_map)
 duplicates = [{"sha256": sha, "paths": sorted(paths)} for sha, paths in sorted(sha_map.items()) if len(set(paths)) > 1]
 id_to_paths = defaultdict(set)
-for mapping in (stable_map, prod_map):
+for mapping in (stable_map, prod_map, reference_id_map):
     for ident, paths in mapping.items():
         for p in paths: id_to_paths[ident].add(p)
 # A short EVT number is a path locator, not a unique identity; preserve all paths if duplicated.
@@ -175,6 +184,7 @@ manifest = {
                "reference_document_paths": sum(p.relative_to(ROOT).as_posix().startswith("docs/reference/REFERENCE-DOCUMENTS/") for p in files),
                "local_link_edges": len(local_edges), "missing_local_links": len(missing_links),
                "stable_id_collision_groups": len(stable_collisions), "production_id_collision_groups": len(prod_collisions),
+               "reference_id_collision_groups": len(groups(reference_id_map)),
                "event_number_collision_groups": len(evt_collisions), "exact_content_duplicate_groups": len(duplicates),
                "declared_parent_edges": len(parent_edges), "unresolved_parent_edges": len(unresolved),
                "ambiguous_parent_edges": len(ambiguous), "proposed_alias_edges": len(alias_edges),
@@ -182,6 +192,7 @@ manifest = {
     "nodes": nodes, "parent_edges": parent_edges, "unresolved_parent_edges": unresolved,
     "ambiguous_parent_edges": ambiguous, "local_link_edges": local_edges, "missing_local_links": missing_links,
     "stable_id_collisions": stable_collisions, "production_id_collisions": prod_collisions,
+    "reference_id_collisions": groups(reference_id_map),
     "event_number_collisions": evt_collisions, "exact_content_duplicate_groups": duplicates,
     "proposed_alias_edges": alias_edges, "decode_errors": decode_errors,
     "semantic_status": "STRUCTURAL ONLY. Human semantic review and architecture relationship adjudication remain required."
@@ -213,6 +224,7 @@ review_queue = {
         "identifier_occurrences": len(identifier_occurrences),
         "stable_id_occurrences": sum(o["identifier_type"] == "STABLE_ID" for o in identifier_occurrences),
         "production_id_occurrences": sum(o["identifier_type"] == "PRODUCTION_ID" for o in identifier_occurrences),
+        "reference_id_occurrences": sum(o["identifier_type"] == "REFERENCE_ID" for o in identifier_occurrences),
         "definition_or_metadata_candidates": sum(o["role_candidate"] == "DEFINITION_OR_METADATA_REVIEW" for o in identifier_occurrences),
         "reference_candidates": sum(o["role_candidate"] == "REFERENCE_REVIEW" for o in identifier_occurrences),
         "unreviewed_occurrences": len(identifier_occurrences)
@@ -222,6 +234,7 @@ review_queue = {
     "groups": {
         "stable_id": stable_collisions,
         "production_id": prod_collisions,
+        "reference_id": groups(reference_id_map),
         "event_number": evt_collisions,
         "exact_content_duplicates": duplicates
     },
