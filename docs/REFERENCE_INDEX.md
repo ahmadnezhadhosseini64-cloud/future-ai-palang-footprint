@@ -214,3 +214,14 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - [ورودی EVT-0046](architecture/BEHAVIOR-TRACE/EVT-0046-USER-REQUEST-GOVERNING-ANCHORING-TIMESTAMP-AND-GRAPH-RECONCILIATION-2026-10-21.md).
 - [خروجی EVT-0047](architecture/BEHAVIOR-TRACE/EVT-0047-ASSISTANT-GOVERNANCE-REFERENCE-AND-GRAPH-INVENTORY-2026-10-21.md).
 
+
+
+## Historical 0.0 Graph Reconciliation — 2026-10-21
+- H0G-RDR-2026-10-21-001 — [Canonical reconciliation register](reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-RECONCILIATION-AND-DEDUPLICATION-REGISTER-2026-10-21-001.md): ACTIVE / OPEN-PARTIAL.
+- PIATGCG master reference: [Permanent anchoring, UTC timestamp governance and canonical graph](reference/REFERENCE-DOCUMENTS/PERMANENT-INTERACTION-ANCHORING-TIMESTAMP-GOVERNANCE-AND-CANONICAL-GRAPH-MASTER-REFERENCE-2026-10-21-001.md), Version 1.0.5.
+- C0GIR graph inventory: [Current graph snapshot and reconciliation state](reference/REFERENCE-DOCUMENTS/CANONICAL-0.0-GRAPH-INVENTORY-AND-RECONCILIATION-2026-10-21-001.md), Version 1.0.4.
+- Audit code: [historical graph scanner](../scripts/audit_historical_0_0_graph.py); execution: [GitHub Actions 39501699736](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39501699736) — SUCCESS, artifact retained by GitHub Actions.
+- Input event: [EVT-0048](architecture/BEHAVIOR-TRACE/EVT-0048-USER-REQUEST-FULL-HISTORICAL-0.0-GRAPH-RECONCILIATION-2026-10-21.md).
+- Current observed snapshot at 2026-10-20T21:38:13.394Z: 682 files, 95 paths containing 0.0, 38 checkpoint paths, 52 EVT files, 85 reference-document paths, 201 generated Evidence Gate artifacts; full tree, not truncated.
+- Open gaps G-15 through G-20 are registered in the architecture queue. The 4-anchor navigation set remains a subset, not the complete historic list. Dropbox stays OPEN / WAITING.
+- UTC is the primary timestamp for new processing/registration/read-back records; user-message time is UNKNOWN / UNVERIFIED unless sourced. Tehran time is optional derived display only.
