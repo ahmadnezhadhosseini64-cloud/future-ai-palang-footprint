@@ -147,3 +147,13 @@ This document can be considered repository-integrated only after the file, index
 - **Semantic status remains OPEN / PARTIAL.** The JSON proves structural findings for its audited commit; it does not prove the semantic meaning of every relationship. Proposed aliases are not approved canonical choices and no historic files are deleted.
 - User's current scope restriction: repository is the only persistence basis for this work. Buffer, Library, Persistent Memory and Dropbox are intentionally not being worked on in this phase.
 - **Change log:** v1.1.0 records the actual artifact inspection, detailed findings register, graph-manifest builder, workflow integration and bounded link repairs. It does not close G-01/G-12/G-13/G-15/G-16 without fresh execution and semantic evidence.
+
+
+
+## Addendum v1.2.0 — explicit alias/lineage decisions and current acceptance gates
+- **Alias/lineage register:** [H0CALDR-2026-10-21-001](./HISTORICAL-0.0-CANONICAL-ALIAS-LINEAGE-DECISION-REGISTER-2026-10-21-001.md). All 11 exact-content duplicate groups have a documented treatment: 9 role-based mirror proposals and 2 groups left OPEN pending source-history/inbound-link adjudication. No historic file was deleted.
+- **Active follow-up event:** [EVT-0052](../../architecture/BEHAVIOR-TRACE/EVT-0052-CANONICAL-GRAPH-MANIFEST-AND-LINK-REPAIR-2026-10-21.md). The initially misnumbered new event path was marked SUPERSEDED and points to EVT-0052; it remains a known non-canonical correction path because deletion was not accepted. This is explicitly not treated as a clean unique event-number result.
+- **Latest confirmed structural result at the time of this addendum:** run 39509351339 passed the structural workflow; 0 missing local Markdown links; 11 exact-content duplicate groups; 13/24 repeated ID groups in the legacy audit output; the newer manifest builder exposed additional ID occurrences because it also parses bolded metadata. Its parent parsing was refined after that run, so parent-edge totals from 39509351339 are superseded by the next run.
+- **Acceptance gates:** all local Markdown links must remain at zero in the latest run; the final manifest must have no fabricated parent tokens; ID groups are occurrence groups until definition/reference/mirror role is adjudicated; semantic relationships remain OPEN until reviewed and linked.
+- **Repository-only scope:** Buffer, Library, Persistent Memory and Dropbox are explicitly out of scope and were not tested.
+- **Change log:** v1.2.0 adds explicit non-destructive alias decisions, the corrected EVT-0052 chain, and the superseded mistaken EVT-0051 path disclosure.
