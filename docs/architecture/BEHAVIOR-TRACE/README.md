@@ -147,3 +147,9 @@
 - [سند مرجع LARTG](../../reference/REFERENCE-DOCUMENTS/LIVING-ANCHORING-REGISTRATION-AND-TEST-GOVERNANCE-2026-10-20-001.md).
 - زمان پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان پردازش دستیار: 2026-10-20T22:31:33+03:30.
 - آزمون پذیرش تعریف شده؛ نتیجهٔ کامل تا انجام read-back و آزمون مقصدهای مستقل/بازیابی، PASS اعلام نمی‌شود.
+
+
+## EVT-0036 — لنگر خروجی و آزمون ثبت زنده
+- [رویداد EVT-0036](./EVT-0036-ASSISTANT-REGISTRATION-AND-TEST-RESULT-2026-10-20.md).
+- ورودی مرتبط: [EVT-0035](./EVT-0035-LIVING-ANCHORING-AND-TEST-GOVERNANCE-2026-10-20.md).
+- سند مرجع: [LARTG](../../reference/REFERENCE-DOCUMENTS/LIVING-ANCHORING-REGISTRATION-AND-TEST-GOVERNANCE-2026-10-20-001.md).
