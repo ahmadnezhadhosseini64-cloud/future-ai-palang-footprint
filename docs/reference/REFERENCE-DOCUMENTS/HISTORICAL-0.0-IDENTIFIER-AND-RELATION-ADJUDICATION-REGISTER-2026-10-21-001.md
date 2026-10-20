@@ -27,7 +27,7 @@ The counts below are review obligations, not counts of confirmed identity confli
 | Reference ID groups | 7 | All 7 legacy Reference ID groups have bounded role decisions in batch 002 | Parent/reference usage and any remaining non-collision links still need full edge review |
 | Local Markdown link edges | 1,020 | Structural existence check passed; 0 missing links in run 39517920781 | Semantic meaning of each edge is not yet individually proven |
 | Declared parent edges | 38 | Structural resolution passed; 0 unresolved and 0 ambiguous | Parent/child meaning still requires source-level review |
-| Source files | 498 | Inventory and text extraction passed; 0 decode errors | Every file still needs a semantic role/domain classification or explicit DEFERRED decision |
+| Source files | 500 | Inventory and text extraction passed; 0 decode errors in run 39517920781 | Every file still needs a semantic role/domain classification or explicit DEFERRED decision |
 
 ## 2. Decisions already supported by source evidence
 
