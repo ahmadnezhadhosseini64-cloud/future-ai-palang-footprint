@@ -264,3 +264,12 @@ NO CLAIM WITHOUT EVIDENCE — هیچ ادعایی بدون شاهد پذیرفت
 - Automatic Final Registration Proof fresh run `39454141194`: failure, same commit, created `2026-10-20T16:04:06Z`; jobs list empty; logs endpoint HTTP 404.
 - The latest runs prove the earlier workflow edits were not sufficient. Root cause remains UNKNOWN / UNVERIFIED; no speculative fix or closure.
 - Issue #18 remains OPEN. Next: obtain evidence for why these workflow runs terminate before exposing jobs/logs, or make a genuinely observable execution path and pass its evidence gate.
+
+### G-06 closure evidence — both workflows PASS (2026-10-20)
+- Evidence Gate run `39454598933`: completed/success; job `evidence-gate` and all steps successful; artifact `evidence-gate-39454598933`, ID `12280735143`; URL https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39454598933.
+- Automatic Final Registration Proof run `39454598935`: completed/success; job `final-proof` and all steps successful; artifact `final-proof-evidence-39454598935`, ID `12280395438`; URL https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39454598935.
+- Evidence Gate durable record read-back: `evidence/evidence-gate-39454598933.txt`, blob SHA `7d3c9faf411d1c5ff5822f1946c8a57310df734c`.
+- Actual causes corrected: invalid heredoc indentation in both YAML files; evidence_file variable not defined in the commit step; concurrent push races; artifact path syntax.
+- The two historical failure records remain unchanged. Acceptance refers to the fresh successful runs above.
+- Status: READY TO CLOSE Issue #18 after the final read-back of the updated reference and index.
+- Timestamp rule applied: run API time `2026-10-20T16:07:10Z`; Tehran `19:37:10 +03:30` is derived conversion only; exact user-message and document registration times UNKNOWN / UNAVAILABLE.

@@ -2,7 +2,7 @@
 - Stable ID: UNIVERSAL-INTERACTION-ANCHOR-AND-WORKFLOW-RECOVERY-2026-10-20-001
 - Production ID: UIAWR-2026-10-20-001
 - Event ID: EVT-0027-UNIVERSAL-INTERACTION-ANCHOR-AND-WORKFLOW-RECOVERY-2026-10-20
-- Version: 1.0.1
+- Version: 1.0.2
 - Date: 2026-10-20
 - Exact user-message time: UNKNOWN / UNVERIFIED.
 - Exact registration time: UNKNOWN / UNAVAILABLE; no exact timestamp source was returned for this write. Do not infer one.
@@ -34,3 +34,16 @@ Read back this event and its full reference, then inspect new workflow runs afte
 - Automatic Final Registration Proof run 39454141194 failed on the same commit; API created_at 2026-10-20T16:04:06Z: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39454141194
 - Both latest job lists were empty; run-log download returned HTTP 404. Cause remains UNKNOWN / UNVERIFIED; these facts do not prove a YAML parse issue or any other specific cause.
 - Therefore the two workflow edits have not resolved the failures. Issue #18 remains OPEN; do not claim closure. Exact current registration time and user-message time remain UNKNOWN / UNAVAILABLE.
+
+## Final acceptance evidence (2026-10-20)
+- Root cause 1: heredoc content and closing EOF lines were outside the YAML run block indentation in both workflows, causing runs to fail before jobs/logs were exposed.
+- Root cause 2 (Evidence Gate after YAML fix): `evidence_file` was defined in a different shell step; step environments are isolated. Defined it again in the commit step.
+- Root cause 3 (Evidence Gate): concurrent commits raced; switched to unique per-run evidence filenames and bounded fetch/rebase/push retries.
+- Automatic artifact paths were changed to newline-separated entries.
+- Evidence Gate: run 39454598933 PASS / SUCCESS, job evidence-gate and all steps successful: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39454598933
+- Automatic Final Registration Proof: run 39454598935 PASS / SUCCESS, job final-proof and all steps successful: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39454598935
+- Artifact IDs: Evidence Gate 12280735143 (437 bytes); final proof 12280395438 (4731 bytes).
+- Durable evidence read-back: evidence/evidence-gate-39454598933.txt, blob SHA 7d3c9faf411d1c5ff5822f1946c8a57310df734c.
+- GitHub API created_at for both successful runs: 2026-10-20T16:07:10Z; Tehran equivalent 19:37:10 +03:30 is derived conversion only.
+- Exact user-message timestamp and exact registration timestamp remain UNKNOWN / UNAVAILABLE. Library, Buffer, Persistent Memory and Dropbox are not proven by this repository test.
+- Acceptance: both named workflows now PASS / VERIFIED; historical failures remain in history, not erased.

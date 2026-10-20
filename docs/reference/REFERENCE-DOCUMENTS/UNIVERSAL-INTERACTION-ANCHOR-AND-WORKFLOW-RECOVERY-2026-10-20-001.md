@@ -4,14 +4,14 @@
 ### 1. شناسنامه و وضعیت
 - Stable ID / شناسه پایدار: UNIVERSAL-INTERACTION-ANCHOR-AND-WORKFLOW-RECOVERY-2026-10-20-001
 - Production ID / شناسه تولید: UIAWR-2026-10-20-001
-- Version / نسخه: 1.0.1
+- Version / نسخه: 1.0.2
 - Date / تاریخ ثبت مخزن: 2026-10-20
 - Exact user-message timestamp / زمان دقیق پیام کاربر: UNKNOWN / UNVERIFIED؛ شاهد مستقل در دسترس نیست.
 - Exact registration timestamp / زمان دقیق ثبت این نسخه: UNKNOWN / UNAVAILABLE در این گردش ابزار؛ زمان حدسی درج نمی‌شود.
 - Project timezone / منطقه زمانی پروژه: Asia/Tehran (UTC+03:30)
 - Owner / مالک پروژه: Ahmad Nezhadhosseini / احمد پلنگ
 - Project / پروژه: Future AI / Palang Footprint — آینده AI / ردپای پلنگ
-- Status / وضعیت: ACTIVE / LIVING / GOVERNING؛ دو اجرای قدیمی همچنان FAILED و پیگیری باز است؛ اجرای تازه پس از اصلاحات باید مستقلاً تأیید شود.
+- Status / وضعیت: ACTIVE / LIVING / GOVERNING؛ هر دو workflow در اجراهای تازه PASS / VERIFIED شدند؛ سوابق شکست تاریخی حفظ شده‌اند.
 - Canonical repository: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
 - Intended Library path: /Future AI/Palang Footprint/Master Reference Vault/Reference Documents/
 - Repository path: docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-INTERACTION-ANCHOR-AND-WORKFLOW-RECOVERY-2026-10-20-001.md
@@ -82,7 +82,7 @@ Issue پیگیری: #18 — OPEN: Diagnose two failing audit workflows after IAA
 #### مرز وضعیت
 - اجراهای تاریخی بالا همچنان شکست‌خورده‌اند و سابقهٔ آن‌ها پاک یا بازنویسی نمی‌شود.
 - اصلاحات روی main ثبت شده‌اند؛ موفقیت آن‌ها فقط پس از مشاهدهٔ اجرای تازه با jobها، conclusion=success، و بازخوانی شواهد قابل اعلام است.
-- تا این لحظه، نتیجهٔ اجرای تازه هنوز در این سند تأیید نشده است؛ بنابراین Issue #18 باید OPEN بماند.
+- تا این لحظه، نتیجهٔ اجرای تازه هنوز در این سند تأیید نشده است؛ بنابراین Issue #18 تا ثبت این پذیرش و بازخوانی نهایی باید OPEN بماند؛ پس از آن قابل‌بستن است.
 - اگر API دوباره jobهای صفر یا عدم امکان دسترسی به گزارش‌ها برگرداند، علت «UNKNOWN / UNVERIFIED» می‌ماند؛ حدس‌زدن یا بستن صوری ممنوع است.
 
 
@@ -96,6 +96,26 @@ Issue پیگیری: #18 — OPEN: Diagnose two failing audit workflows after IAA
 - تلاش retry اجراهای قبلی نیز برای هر دو workflow با `HTTP 403: This workflow run cannot be retried` رد شد.
 - نتیجه: اصلاحات ثبت‌شده برای این دو اجرا کافی نبوده‌اند؛ ادعای «حل شد» ممنوع است. Issue #18 همچنان OPEN است. اقدام بعدی باید علت شکست قبل از ایجاد job را از شواهد قابل‌دسترسی/تنظیمات اجرای workflow مشخص کند یا از یک مسیر اجرایی تازه و قابل مشاهده استفاده کند.
 - زمان تهرانِ متناظر با زمان‌های API بالا در صورت نیاز فقط تبدیل محاسباتی UTC+03:30 است: 19:34:05 و 19:34:06؛ این‌ها مشاهده مستقل ساعت تهران نیستند.
+
+
+### 6.2 علت‌یابی و پذیرش نهایی — شواهد اجرای موفق
+علت‌های واقعی و اصلاحات نهایی:
+1. هر دو workflow قبلاً ساختار YAML را می‌شکستند: متن heredoc و خط پایانی `EOF` خارج از تورفتگی بلوک `run: |` قرار داشتند؛ در نتیجه اجرای اولیه بدون job و بدون log قابل‌دریافت تمام می‌شد.
+2. پس از اصلاح تورفتگی، Evidence Gate واقعاً اجرا شد و نقص دوم را آشکار کرد: متغیر `evidence_file` در مرحله‌ای دیگر تعریف شده بود و بین مرحله‌های مستقل پوسته منتقل نمی‌شود. متغیر در مرحلهٔ commit نیز به‌صورت محلی تعریف شد.
+3. اجرای هم‌زمان چند audit گاهی باعث `git push` با خطای `fetch first` می‌شد. مدرک هر اجرا اکنون نام یکتای مبتنی بر Run ID دارد و مرحلهٔ commit، rebase و retry محدود برای push دارد.
+4. مسیرهای artifact در Automatic Final Registration Proof به قالب چندخطی تغییر یافتند.
+5. فیلتر اجرای Evidence Gate برای تغییرات `docs/**`, `evidence/**`, `provenance/**`، README و فایل workflow گسترش یافت.
+
+**اجرای نهایی تأییدشده روی commit `4d9d97aaba21247fd4e394fc4e6a1abc8e2028c9`:**
+- Evidence Gate run `39454598933`: `completed / success`; job `evidence-gate` موفق؛ تمام مراحل از consistency test تا commit و upload موفق. URL: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39454598933
+- Automatic Final Registration Proof run `39454598935`: `completed / success`; job `final-proof` موفق؛ اجرای حلقهٔ اثبات و بارگذاری artifact موفق. URL: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39454598935
+- Artifact Evidence Gate: `evidence-gate-39454598933`, artifact ID `12280735143`, حجم 437 بایت.
+- Artifact ثبت نهایی: `final-proof-evidence-39454598935`, artifact ID `12280395438`, حجم 4731 بایت.
+- سند durable ثبت‌شده توسط Evidence Gate از مخزن بازخوانی شد: `evidence/evidence-gate-39454598933.txt`; blob SHA `7d3c9faf411d1c5ff5822f1946c8a57310df734c`. محتوا شامل Run ID، commit، runner و وضعیت‌های VERIFIED/PROVEN است.
+- زمان API برای ایجاد هر دو اجرای نهایی: `2026-10-20T16:07:10Z`. معادل تهران `2026-10-20 19:37:10 +03:30` صرفاً تبدیل محاسباتی از همان زمان UTC است، نه مشاهدهٔ مستقل ساعت تهران.
+- زمان دقیق پیام کاربر و زمان دقیق ثبت همین نسخهٔ سند: `UNKNOWN / UNAVAILABLE`; زمان اجرای workflow جایگزین آن‌ها نیست.
+
+وضعیت نهایی این دو گردش کاری: **PASS / VERIFIED** بر اساس اجرای تازه، jobها، مراحل، artifactها و بازخوانی مدرک مخزن. اجرای تاریخی شکست‌خورده حذف یا بازنویسی نشده است؛ آن‌ها بخشی از lineage هستند.
 
 ### 7. معیار واقعی بستن دو مورد
 برای هر workflow جداگانه:
