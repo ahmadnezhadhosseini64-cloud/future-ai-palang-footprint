@@ -250,3 +250,11 @@ This document can be considered repository-integrated only after the file, index
 - Latest counts: 500 source files, 1,009 local links with 0 missing, 38 parent edges with 0 unresolved/ambiguous, 37 Stable ID groups, 43 Production ID groups, 8 EVT groups, 11 exact-content duplicate groups and 695 identifier occurrences.
 - Snapshot: [H0SRQS](./HISTORICAL-0.0-SEMANTIC-REVIEW-QUEUE-SNAPSHOT-2026-10-21-001.md). Group ledger: [H0IRAR](./HISTORICAL-0.0-IDENTIFIER-AND-RELATION-ADJUDICATION-REGISTER-2026-10-21-001.md).
 - This is a fresh structural pass, not proof of every semantic edge. Two Stable ID groups and six legacy EVT pairs have bounded decisions; the remaining groups and full edge semantics stay open.
+
+
+## Addendum v2.3.0 — identifier namespace correction and second semantic batch
+- [H0IRRB2](./HISTORICAL-0.0-IDENTIFIER-ROLE-REVIEW-BATCH-002-2026-10-21.md) records five further Stable ID decisions and seven legacy Reference ID role decisions.
+- Generic `Reference ID` is now parsed into a separate `REFERENCE_ID` namespace, not merged into Stable ID groups. Latest successful parser run: [39517920781](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39517920781), audited commit `07c0915db52e66061c7c905081c2bfe77a32e807`.
+- Counts for that snapshot: 500 source files, 1,020 local links / 0 missing, 38 parent edges / 0 unresolved or ambiguous, 30 Stable ID groups, 43 Production ID groups, 7 Reference ID groups, 8 EVT groups, 11 exact-content duplicate groups and 695 identifier occurrences.
+- EVT-0050 is a pair of distinct event identities; EVT-0051 is one event plus a retained superseded correction notice pointing to EVT-0052. These classifications resolve the meaning of those pairs but do not erase their short filename-prefix collisions or replace the need for full reference audit.
+- Remaining group/edge semantics remain OPEN / PARTIAL. The implementation-ready application specification remains [FAPF-IRA](./FUTURE-AI-PALANG-FOOTPRINT-IMPLEMENTABLE-REFERENCE-ARCHITECTURE-2026-10-21-001.md).
