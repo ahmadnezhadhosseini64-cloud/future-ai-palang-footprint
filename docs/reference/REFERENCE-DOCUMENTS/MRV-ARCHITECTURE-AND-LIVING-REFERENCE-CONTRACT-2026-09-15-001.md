@@ -1088,3 +1088,13 @@ The current repository excavation and reconciliation record is `docs/reference/R
 - **قاعده:** هر push به main، pull request، اجرای دستی و برنامهٔ روزانه باید ممیزی ساختاری اسناد مرجع و شناسه‌های ضروری را اجرا کند و artifact قابل‌بازیابی بسازد.
 - **مرز:** این آزمون، ممیزی ساختاری مخزن است؛ اتصال یا ذخیره‌سازی مستقل Library/Buffer/Persistent Memory/Dropbox و capture خودکار همهٔ گفتگوها را اثبات نمی‌کند.
 - **وضعیت:** پیوند معماری در سند مادر ثبت شد؛ اجرای workflow و مقصدهای خارجی فقط پس از شاهد واقعی VERIFIED می‌شوند.
+
+
+## Living addendum — architecture/build verification 2026-10-20
+- Stable ID: `ARCHITECTURE-BUILD-VERIFICATION-2026-10-20-001`; Production ID: `ABV-2026-10-20-001`.
+- Event: [EVT-0024](../../architecture/BEHAVIOR-TRACE/EVT-0024-ARCHITECTURE-BUILD-VERIFICATION-2026-10-20.md).
+- Governing contract: [LIARC-2026-10-20-001](LIVING-INTERACTION-AUTOMATION-AND-RECONCILIATION-2026-10-20-001.md).
+- Evidence: the current repository contract and core architecture links were read back; GitHub Actions run `39447416772` reports completed/success for the structural audit.
+- Limitation: this does not prove external persistence or automatic capture of every ChatGPT interaction. Those gaps remain open in the recovery queue.
+- Timestamp: exact user-message time UNKNOWN / UNVERIFIED; workflow/commit timestamps are separate event types.
+- User constraint: no Dropbox operation in this verification pass; its independent open anchor remains preserved.
