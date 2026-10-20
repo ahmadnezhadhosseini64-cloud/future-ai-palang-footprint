@@ -205,3 +205,11 @@ This document can be considered repository-integrated only after the file, index
 - The manifest and decision register agree on 11 non-destructive alias/mirror proposals. Two numbered outcome/checkpoint pairs now have earliest-commit candidates and zero inbound local links; all copies remain preserved.
 - This does not certify full semantic equivalence of all source prose. Semantic role review of repeated IDs and EVT-number collisions remains OPEN / ACTIVE.
 - Change log: v1.7.0 records the latest verified snapshot and keeps structural vs semantic acceptance separate.
+
+
+
+## Addendum v1.8.0 — post-registration read-back of the final tree
+- The fully updated documentation tree was re-audited by [Living Architecture Audit run 39510674461](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39510674461), artifact 12305886611, digest `sha256:2dbdeceaa311c9cc0efabb88a0cba6f3d9e809450d5257ad720ab5ce060ce320`.
+- Audit UTC: `2026-10-20T22:48:02Z`. Result: PASS; 806 total files, 493 source files, 313 generated evidence files, 940+ local links checked (the artifact records 942), zero missing links, 38 declared parent edges, zero unresolved and zero ambiguous edges, 11 exact duplicate groups.
+- This run occurred after the master, snapshot pointer, event, alias register, findings register and architecture queue were updated. It verifies that the final integration did not introduce broken local links or unresolved declared-parent edges.
+- Semantic boundary remains unchanged: the structural graph is connected for the audited snapshot, while full natural-language semantic equivalence and repeated-ID role adjudication remain OPEN / ACTIVE.
