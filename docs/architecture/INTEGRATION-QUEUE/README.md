@@ -694,6 +694,6 @@ The queue index and the timestamp case must each be read back after this update.
 - سند مرجع: [TWO-TIME-ANCHORING-AND-LIVING-CONTINUITY-ARCHITECTURE-2026-10-20-001](../../reference/REFERENCE-DOCUMENTS/TWO-TIME-ANCHORING-AND-LIVING-CONTINUITY-ARCHITECTURE-2026-10-20-001.md).
 - قرارداد مادر اصلاح‌شده: `UIALAC-2026-10-20-001`, amendment v1.1.0.
 - رویداد: [EVT-0033](../BEHAVIOR-TRACE/EVT-0033-TWO-TIME-ANCHORING-AND-LIVING-CONTINUITY-2026-10-20.md).
-- Status: REPOSITORY REGISTRATION PENDING FINAL READ-BACK; global automatic anchoring remains OPEN / NOT PROVEN.
+- Status: REPOSITORY WRITE + READ-BACK + EXPECTED ID/TIMESTAMP/LINK MATCH VERIFIED for the reference, event, parent-contract amendment and linked indexes. Global automatic anchoring remains OPEN / NOT PROVEN.
 - Required implementation gaps: full historical 0.0 graph reconciliation; independent Dropbox write/read/recovery; Buffer, Persistent Memory and Library evidence; end-to-end recovery and duplicate prevention; behavioral validation before promotion.
 - User message time: UNKNOWN / UNVERIFIED. Assistant processing time: 2026-10-20T22:20:19+03:30 (Asia/Tehran).
