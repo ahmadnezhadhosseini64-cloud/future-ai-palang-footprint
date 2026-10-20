@@ -270,3 +270,11 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - قاعده: خروجی مهم باید لنگر، سند کامل، منشأ، شناسه/نسخه، شواهد زمانی، پیوند معماری و اقدام ادامه داشته باشد؛ پس از نوشتن، بازخوانی و تطبیق لازم است.
 - زمان دقیق پیام: UNKNOWN / UNVERIFIED؛ از زمان commit استنتاج نشود.
 - تمرکز این درخواست بر مخزن است؛ بافر و حافظهٔ پایدار فعلاً اولویت ندارند. Dropbox مستقل و باز می‌ماند.
+
+
+## قاعدهٔ ثبت زمانی بین دو لنگر — EVT-0018
+- **Stable ID:** `TEMPORAL-BRACKETING-AND-BOUNDED-TIMESTAMP-GOVERNANCE-2026-10-20-001`
+- **رویداد:** [EVT-0018](../architecture/BEHAVIOR-TRACE/EVT-0018-TEMPORAL-BRACKETING-RULE-2026-10-20.md)
+- **قاعدهٔ جامع:** [مرجع حاکم، بخش ۹](../reference/REFERENCE-DOCUMENTS/PERMANENT-LIVING-EXECUTION-ANCHOR-TIMESTAMP-GOVERNANCE-2026-10-20-001.md)
+- **قاعدهٔ زنده:** [مرجع ثبت زنده، بخش ۲۲](../reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md)
+- اگر زمان دقیق نامعلوم است، با دو لنگر معتبرِ قبل و بعد و شاهد ترتیب، بازه ثبت شود؛ زمان دقیق یا نقطهٔ میانی حدس زده نشود.
