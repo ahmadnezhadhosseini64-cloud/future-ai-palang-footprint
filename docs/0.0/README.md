@@ -393,3 +393,12 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - این لنگر، ثبت درخواست جاری است و هیچ لنگر ۰.۰ پیشین را جایگزین یا بسته نمی‌کند.
 - فقط ثبت همین تعامل در مخزن در دامنهٔ این اجراست؛ Dropbox، Buffer، Persistent Memory، Library، لنگرگذاری خودکار سراسری و تطبیق کامل تاریخی باز می‌مانند.
 - زمان دقیق پیام کاربر: UNKNOWN / UNVERIFIED.
+
+
+## لنگر معماری تداوم زنده و ثبت دوزمانه — 2026-10-20
+- سند مرجع: [TWO-TIME-ANCHORING-AND-LIVING-CONTINUITY-ARCHITECTURE-2026-10-20-001](../reference/REFERENCE-DOCUMENTS/TWO-TIME-ANCHORING-AND-LIVING-CONTINUITY-ARCHITECTURE-2026-10-20-001.md).
+- قرارداد مادر: [UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001](../reference/REFERENCE-DOCUMENTS/UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001.md), amendment v1.1.0.
+- رویداد: [EVT-0033](../architecture/BEHAVIOR-TRACE/EVT-0033-TWO-TIME-ANCHORING-AND-LIVING-CONTINUITY-2026-10-20.md).
+- قاعده: زمان پیام کاربر و زمان پردازش دستیار دو فیلد مستقل‌اند؛ زمان commit و read-back نیز در صورت وجود شاهد مستقل ثبت می‌شوند.
+- این لنگر هیچ ۰.۰ تاریخی را حذف یا جایگزین نمی‌کند؛ گراف کامل تاریخی هنوز در صف تطبیق است.
+- زمان پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان پردازش ثبت‌شده: 2026-10-20T22:20:19+03:30 (Asia/Tehran).
