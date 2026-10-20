@@ -181,3 +181,10 @@ PRESERVE → IDENTIFY → READ SOURCE → CLASSIFY ROLE → CHECK LINEAGE → CH
 - Current snapshot: 498 source files; 991 local Markdown edges; 0 missing links; 38 parent edges; 0 unresolved/ambiguous parent edges; 37 Stable ID groups; 43 Production ID groups; 8 EVT groups; 11 exact-content duplicate groups; 693 line-level ID occurrences.
 - Full group status and bounded decisions: [H0IRAR](./HISTORICAL-0.0-IDENTIFIER-AND-RELATION-ADJUDICATION-REGISTER-2026-10-21-001.md). Evidence details: [H0SRQS](./HISTORICAL-0.0-SEMANTIC-REVIEW-QUEUE-SNAPSHOT-2026-10-21-001.md).
 - The successful run confirms structural extraction and queue generation, not full natural-language semantic validation. Semantic acceptance remains OPEN / PARTIAL; the 37/43 groups and 991 edges must not be declared all semantically verified from structural checks alone.
+
+
+## Addendum v1.5.0 — latest follow-up audit
+- [Run 39517544772](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39517544772) succeeded on commit `0e1896e52c80249c90266ef75e2e576eb5a75463` at runner UTC `2026-10-20T23:50:14Z`.
+- Latest counts: 500 source files; 1,009 local Markdown edges with 0 missing; 38 declared parent edges with 0 unresolved/ambiguous; 37 Stable ID groups; 43 Production ID groups; 8 EVT groups; 11 exact-content duplicate groups; 695 identifier occurrences.
+- Detailed snapshot: [H0SRQS](./HISTORICAL-0.0-SEMANTIC-REVIEW-QUEUE-SNAPSHOT-2026-10-21-001.md); group decisions and outstanding obligations: [H0IRAR](./HISTORICAL-0.0-IDENTIFIER-AND-RELATION-ADJUDICATION-REGISTER-2026-10-21-001.md).
+- Structural checks pass. Complete semantic proof remains OPEN / PARTIAL.
