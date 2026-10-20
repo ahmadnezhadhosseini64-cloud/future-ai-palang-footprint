@@ -3,13 +3,13 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.7.6
-- Date: 2026-10-19
+- Version: 1.7.7
+- Date: 2026-10-20
 - Exact Time: 11:25 local project time, minute precision; exact seconds not captured.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: نسخهٔ 1.7.6 دفتر ردیابی پیوستهٔ رفتار تعامل انسان و AI را به صف معماری پیوند می‌دهد. آینه‌های Library، بافر و حافظهٔ پایدار همچنان مستقل تأیید نشده‌اند.
+- Status: نسخهٔ 1.7.7 دفتر ردیابی پیوستهٔ رفتار تعامل انسان و AI و قرارداد جامع لنگرگذاری UIALAC-2026-10-20-001 را به صف معماری پیوند می‌دهد؛ مخزن و پیوندهای مرجع بازخوانی شده‌اند، اما بافر، کتابخانه و حافظهٔ پایدار مستقل تأیید نشده‌اند. آینه‌های Library، بافر و حافظهٔ پایدار همچنان مستقل تأیید نشده‌اند.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
