@@ -228,3 +228,10 @@ This document can be considered repository-integrated only after the file, index
 - First EVT batch decisions are recorded in [H0EVTCA-2026-10-21-001](./HISTORICAL-0.0-EVT-NUMBER-COLLISION-ADJUDICATION-2026-10-21-001.md).
 - Six legacy short-number pairs were reviewed by their event titles and available full identifiers and classified as distinct event identities sharing a short number. Their records are preserved; references and numbering policy remain to be checked before any final closure.
 - The semantic architecture baseline is [H0SAB](./HISTORICAL-0.0-SEMANTIC-ARCHITECTURE-BASELINE-2026-10-21-001.md); current status remains OPEN / PARTIAL for the full 493-file graph.
+
+
+## Addendum v2.0.0 — implementable application architecture and semantic queue
+- Governing implementation blueprint: [FAPF-IRA-2026-10-21-001](./FUTURE-AI-PALANG-FOOTPRINT-IMPLEMENTABLE-REFERENCE-ARCHITECTURE-2026-10-21-001.md).
+- The graph builder was extended to emit line-level ID occurrences, role candidates, and local-link context into `audit-output/historical-0.0-semantic-review-queue.json`. Role candidates are explicitly not final semantic decisions.
+- This makes the next review batch reproducible and inspectable rather than a free-form report. It does not itself complete semantic adjudication; fresh CI execution and review of its artifact are required.
+- Current semantic status remains OPEN / PARTIAL until every source file and relationship is adjudicated or explicitly deferred with rationale.
