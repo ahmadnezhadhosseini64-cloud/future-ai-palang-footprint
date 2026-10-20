@@ -39,3 +39,14 @@ Repository only. Buffer, Persistent Memory, Library and Dropbox were not accesse
 ## 6. Next operation
 
 Fetch the committed baseline from the default branch and compare it with the intended content; link it from the reference index, architecture integration queue and behavior trace; then run a fresh structural audit. Continue semantic review by evidence-backed batches and keep unresolved groups visible in the active queue.
+
+
+## Addendum — repository integration and first semantic batches
+- Semantic baseline read-back blob SHA: `86dbb9746ff374a55d8f944901dc7b95a03134a9`.
+- EVT collision decision register: [H0EVTCA](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-EVT-NUMBER-COLLISION-ADJUDICATION-2026-10-21-001.md), read-back blob SHA `0e33c8da7dcff076cf22a90a9d7042eee360c225`.
+- Identifier role review batch: [H0IRRB](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-IDENTIFIER-ROLE-REVIEW-BATCH-001-2026-10-21.md), read-back blob SHA `e616d1511f48ec7dd8c3b854a9760fc8455965bd`.
+- Parser correction in `scripts/build_historical_graph_manifest.py` was committed and fetched back (blob SHA `4cc782f6318b5efefd81554dac3dc8749e9082fe`). It broadens Stable ID and Production ID extraction to include bilingual/Persian metadata labels after the review found a real omission.
+- Architecture links/read-backs confirmed in the reference index (blob SHA `78b2acff366067bf3cef7d793c5ec23254443607`), integration queue (blob SHA `6e55e709c9a10578271550b6e36b896a0e054923`), behavior trace index (blob SHA `af071a3fcc4ef3fb8e8ba86c9d739d4885e18ac1`) and 0.0 registry (blob SHA `2bf8d0e3ffe3faa909933edeb5cff7d7e241293d`).
+- The six legacy EVT pairs were classified as distinct event identities sharing a short number; two Stable ID groups were classified as references versus definitions, exposing a parser coverage gap.
+- **Fresh structural audit after these latest commits is not yet independently retrieved/read back.** Therefore the regex fix, new cross-links and any changed counts are committed but not yet structurally accepted. Existing 39510754774 remains evidence only for its earlier audited commit.
+- Remaining semantic work: all other ID occurrence groups, all EVT references (including the extra groups), inbound/outbound link review for the 11 duplicate groups, and semantic role classification for the full 493-file source inventory.
