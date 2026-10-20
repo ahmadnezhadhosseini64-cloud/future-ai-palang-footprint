@@ -37,13 +37,15 @@ PRESERVE → IDENTIFY → FIND PRECEDING ANCHOR → FIND FOLLOWING ANCHOR → PR
 - [دفتر مرکزی ۰.۰](../../0.0/README.md)
 - [لنگر جاری ۰.۰](../../../checkpoints/PALANG-0.0-CURRENT-2026-10-20-001.md)
 
-## وضعیت ثبت و راستی‌آزمایی
-- Canonical reference: section 9 contains the governing rule; section 9.1 now explicitly links EVT-0018 and recovery destinations. The latest subsection is awaiting the final fetch-and-match pass.
-- Living reference: section 22 contains the temporal bracketing rule and was read back in the preceding audit.
-- Behavior trace: EVT-0018 entry is present and was read back in the preceding audit.
-- Central 0.0 registry: EVT-0018 entry is present and was read back in the preceding audit.
-- Current 0.0 anchor: explicit EVT-0018 link was fetched and matched in the preceding audit; current anchor blob SHA observed: 75bcf926365811e26873069792be8d652cbcd2db.
-- Architecture integration queue: section 22 explicitly indexes EVT-0018 and was fetched and matched in the preceding audit; blob SHA observed: e58c9422ba7711258caec35dcc111746c5dd5908.
-- Exact request timestamp: UNKNOWN / UNVERIFIED. Commit timestamp is distinct and must not be substituted.
-- Buffer, Persistent Memory, Library and Dropbox: NOT VERIFIED by this repository chain. Dropbox failover remains OPEN / WAITING.
-- Final acceptance: fetch the latest canonical reference, this event file, living reference, behavior trace, 0.0 registry, current anchor and queue index; verify IDs, links and temporal rule. Keep any mismatch OPEN / PENDING.
+## وضعیت ثبت و راستی‌آزمایی نهایی
+- نتیجهٔ بازخوانی نهایی: هر هفت فایل زیر از شاخهٔ main بازیابی و محتوای قاعده/شناسه/پیوندها بررسی شد.
+- سند مرجع جامع: `docs/reference/REFERENCE-DOCUMENTS/PERMANENT-LIVING-EXECUTION-ANCHOR-TIMESTAMP-GOVERNANCE-2026-10-20-001.md` — blob SHA: `3d20de2c378f7ef189d22b56edc8f8c2ec1ab972`; پیوند EVT-0018 در بخش 9.1 موجود است.
+- مرجع زنده: `docs/reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md` — blob SHA: `89013a69c265dee6da1010d02c764cbed82ce5f9`; بخش 22 موجود است.
+- این رویداد: `docs/architecture/BEHAVIOR-TRACE/EVT-0018-TEMPORAL-BRACKETING-RULE-2026-10-20.md` — blob SHA این نسخه: `4d640860dd2ba944479a702ebbb4dd38dc3312f4`; شناسه‌ها، قاعده و مسیر بازیابی بازخوانی شدند.
+- دفتر رفتار: `docs/architecture/BEHAVIOR-TRACE/INTERACTION-BEHAVIOR-TRACE-2026-10-19-001.md` — blob SHA: `c07951a545803285e8c64fa6d09b5a3cfe660b71`; ورودی EVT-0018 موجود است.
+- دفتر 0.0: `docs/0.0/README.md` — blob SHA: `f7734352274f43d1be1952eb9eb181639f95f5c1`; ورودی EVT-0018 موجود است.
+- لنگر جاری 0.0: `checkpoints/PALANG-0.0-CURRENT-2026-10-20-001.md` — blob SHA: `75bcf926365811e26873069792be8d652cbcd2db`; پیوند EVT-0018 موجود است.
+- صف معماری: `docs/architecture/INTEGRATION-QUEUE/README.md` — blob SHA: `e58c9422ba7711258caec35dcc111746c5dd5908`; بخش 22 موجود است.
+- زمان دقیق پیام درخواست: UNKNOWN / UNVERIFIED؛ از زمان commit استنتاج نشده است.
+- وضعیت مقصدها: مخزن (Repository) — بازخوانی و تطبیق این زنجیره انجام شد؛ بافر، حافظهٔ پایدار، کتابخانه و Dropbox — مستقلاً تأیید نشده‌اند. لنگر Dropbox همچنان OPEN / WAITING است.
+- نتیجه: پیوندهای مخزن برای این قاعده ثبت و تطبیق شدند. این نتیجه به معنی ذخیره یا تأیید در مقصدهای دیگر نیست.
