@@ -265,8 +265,8 @@ The overall state is not complete while any required destination is unverified. 
 - Content match: PARTIAL — the returned file was checked for the expected title and document sections; no byte-for-byte comparison against the full source string was performed.
 - Read-back blob SHA before this status update: 289916e23257e93f7b73cacf3e25e495d4b1f570
 - Status-record update: first execution evidence update commit SHA: 695ac52519a1d6b0155d900249f32288e135d293; follow-up status amendment commit will be captured by repository history.
-- Reference index: UPDATED and written to docs/REFERENCE_INDEX.md; read-back verification is the next evidence gate.
-- Architecture integration queue: UPDATED and written to docs/architecture/INTEGRATION-QUEUE/README.md; read-back verification is the next evidence gate.
+- Reference index: UPDATED and READ-BACK VERIFIED at docs/REFERENCE_INDEX.md; the expected UIALAC ID was found after re-fetch.
+- Architecture integration queue: UPDATED and READ-BACK VERIFIED at docs/architecture/INTEGRATION-QUEUE/README.md; the expected UIALAC ID was found after re-fetch. Queue version was advanced to 1.7.7.
 - Master-reference reconciliation and behavior-trace linkage: PENDING until the relevant master/trace files are actually updated and read back.
 - Buffer: UNVERIFIED unless a real buffer write/read is evidenced.
 - Persistent Memory: UNVERIFIED unless a real memory operation is evidenced.
