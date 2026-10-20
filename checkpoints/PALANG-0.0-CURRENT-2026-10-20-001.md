@@ -213,3 +213,12 @@ On 2026-10-20, the user explicitly approved applying the temporal bracketing rul
 - **اثبات مخزن:** پروندهٔ EVT-0021 و دفتر مرکزی ۰.۰ پس از نوشتن بازخوانی شدند؛ شناسه، پیوند و قاعدهٔ زمان‌گذاری تطبیق داده شد. این الحاقیهٔ لنگر جاری نیز پس از نوشتن باید جداگانه بازخوانی شود.
 - **مقصدهای بیرونی:** Library، Buffer، Persistent Memory و Dropbox در این عملیات مستقلاً نوشته یا تأیید نشده‌اند. لنگر Dropbox همچنان OPEN / WAITING است.
 - **زمان دقیق پیام کاربر:** UNKNOWN / UNVERIFIED؛ از زمان commit استنتاج نشود.
+
+
+## Current audit and architecture execution gap — 2026-10-20
+- User asked whether the every-input/output anchor rule is fully integrated into the project architecture and truly enforced.
+- Architecture queue case: [EVERY-INPUT-OUTPUT-EXECUTION-GATES-2026-10-20-001](../docs/architecture/INTEGRATION-QUEUE/EVERY-INPUT-OUTPUT-EXECUTION-GATES-2026-10-20-001.md).
+- Queue index entry: [Architecture Integration Queue](../docs/architecture/INTEGRATION-QUEUE/README.md).
+- Audit result: governance documents, event trace, central 0.0 index, and this current anchor exist and are linked in the repository; end-to-end enforcement on every interaction and automatic future writes are NOT PROVEN.
+- Status: OPEN / PARTIAL. The architecture queue must remain open until acceptance gates and behavioral/recovery tests have evidence.
+- Repository write/read-back for this addendum and queue pointer must be performed before claiming this update verified. Buffer, Library, Persistent Memory and Dropbox remain independently unverified.
