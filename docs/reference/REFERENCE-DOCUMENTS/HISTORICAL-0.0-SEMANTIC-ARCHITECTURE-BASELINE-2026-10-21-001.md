@@ -153,3 +153,10 @@ PRESERVE → IDENTIFY → READ SOURCE → CLASSIFY ROLE → CHECK LINEAGE → CH
 ## 11. Change log / تاریخچهٔ تغییر
 
 - v1.0.0 — ایجاد مبنای معنایی و معماری از شواهد ساختاری موجود؛ تعریف مرز اثبات، دسته‌های مرور، قواعد نقش، مسیر ارتقا و معیارهای پذیرش. این نسخه به‌خودی‌خود ادعای اتمام داوری معنایی نمی‌کند.
+
+
+## Addendum v1.1.0 — first semantic review batch
+- EVT collision decision register: [H0EVTCA-2026-10-21-001](./HISTORICAL-0.0-EVT-NUMBER-COLLISION-ADJUDICATION-2026-10-21-001.md).
+- First reviewed batch: six legacy EVT number pairs (0005, 0006, 0019, 0026, 0029, 0030) were compared by full path, title and available Stable/Production IDs. Each pair represents distinct event subjects; these are short-number namespace collisions, not proof that the two records are one event.
+- Closure boundary: all 12 records remain preserved. Their inbound/outbound references have not yet been globally reviewed, and the additional collision groups in the expanded manifest remain open. No renumbering or broad alias rewrite was performed.
+- Semantic review of all 493 source files and all ID occurrence groups remains OPEN / PARTIAL.
