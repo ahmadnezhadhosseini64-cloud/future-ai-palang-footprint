@@ -286,3 +286,12 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - Current anchor: [PALANG-0.0-CURRENT-2026-10-20-001](../../checkpoints/PALANG-0.0-CURRENT-2026-10-20-001.md).
 - Exact approval-message timestamp: UNKNOWN / UNVERIFIED; do not infer from commit time.
 - Repository read-back must be distinguished from Buffer, Persistent Memory, Library and Dropbox, which remain independently unverified.
+
+
+## قاعدهٔ حاکم افزوده — ثبت مبتنی بر شاهد
+
+- **Stable ID:** `EVIDENCE-FIRST-REGISTRATION-AND-NO-REPORT-ONLY-GOVERNANCE-2026-10-20-001`
+- **Production ID:** `EFRNROG-2026-10-20-001`
+- **سند مرجع کامل:** [ثبت مبتنی بر شاهد و ممنوعیت گزارش صرف](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/EVIDENCE-FIRST-REGISTRATION-AND-NO-REPORT-ONLY-GOVERNANCE-2026-10-20-001.md)
+- **کاربرد:** فرمان «ثبت کن» مستلزم بررسی واقعی، نوشتن در مقصد در دسترس، بازخوانی، تطبیق، ثبت زمان با منشأ و حفظ شکاف‌هاست؛ متن گزارش جایگزین این مراحل نیست.
+- **وضعیت:** پیوند مخزن افزوده می‌شود؛ این پیوند، هیچ مقصد دیگری را تأیید نمی‌کند. لنگر Dropbox همچنان OPEN / WAITING است.
