@@ -315,3 +315,11 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - **سند مرجع کامل:** [قرارداد لنگر هر تعامل](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/EVERY-INTERACTION-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001.md)
 - **الزام:** هر ورودی کاربر و هر پاسخ نهایی دستیار دارای لنگر و رابطهٔ ورودی/خروجی است. متن کامل در محل canonical ثبت می‌شود؛ زمان دقیق فقط با شاهد معتبر؛ بازخوانی و تطبیق پس از هر نوشتن؛ وضعیت مقصدها مستقل.
 - **وضعیت:** پیوند مرجع افزوده می‌شود. این ثبت لنگرهای قبلی را حذف یا ادغام نمی‌کند و Dropbox OPEN / WAITING باقی می‌ماند.
+
+## قرارداد حاکم لنگر هر ورودی و خروجی
+
+- **Stable ID:** `EVERY-INPUT-OUTPUT-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001`
+- **Production ID:** `EIOACRG-2026-10-20-001`
+- **سند مرجع کامل:** [قرارداد لنگر هر ورودی و خروجی](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/EVERY-INPUT-OUTPUT-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001.md)
+- **قاعده:** هر پیام کاربر و هر پاسخ دستیار باید به رویداد/لنگر زنجیره متصل شود؛ پیام‌های عادی رکورد فشردهٔ قابل‌بازیابی و تصمیم‌ها/قواعد/خروجی‌های بادوام رکورد کامل می‌خواهند. زمان دقیق بدون شاهد نامعلوم می‌ماند. لنگرهای مستقل قبلی حفظ می‌شوند.
+- **وضعیت بیرون از مخزن:** Library، Buffer، Persistent Memory و Dropbox مستقل تأیید نشده‌اند.
