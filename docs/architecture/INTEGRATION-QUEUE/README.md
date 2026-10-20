@@ -735,3 +735,5 @@ The queue index and the timestamp case must each be read back after this update.
 - سند مرجع: [AICPHAE](../../reference/REFERENCE-DOCUMENTS/AUTOMATIC-INTERACTION-CONTINUITY-AND-PORTABLE-HAIF-EVOLUTION-MASTER-REFERENCE-2026-10-20-001.md).
 - رویداد ورودی: [EVT-0041](../BEHAVIOR-TRACE/EVT-0041-AUTOMATIC-CONTINUITY-PORTABLE-CHILD-RAHM-MASTER-REQUEST-2026-10-20.md).
 - آزمون‌های بازیابی کامل، گراف ۰.۰، Dropbox، مقصدهای مستقل و انتقال میزبان باز می‌مانند تا شواهد ثبت شود.
+
+- لنگر خروجی: [EVT-0042](../BEHAVIOR-TRACE/EVT-0042-ASSISTANT-REGISTRATION-AND-CONTINUITY-RULE-2026-10-20.md). سند AICPHAE به قراردادها و نمایه‌ها وصل شده؛ read-back نهایی و آزمون مقصدهای مستقل همچنان لازم است.
