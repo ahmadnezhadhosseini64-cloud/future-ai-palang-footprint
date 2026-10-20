@@ -301,3 +301,12 @@
 - **Timestamp:** زمان دقیق پیام UNKNOWN / UNVERIFIED؛ زمان commit و زمان بازخوانی جدا ثبت می‌شوند.
 - **Destination state:** مخزن با بازخوانی/تطبیق بررسی می‌شود؛ Buffer/Library/Persistent Memory/Dropbox مستقل تأیید نشده‌اند.
 - **Continuation:** بازخوانی پیوندها و حفظ کارهای باز؛ Dropbox همچنان OPEN / WAITING.
+
+
+## EVT-0016 — قواعد ثبت و لنگر — 2026-10-20
+- Stable ID: PERMANENT-LIVING-EXECUTION-ANCHOR-TIMESTAMP-GOVERNANCE-2026-10-20-001
+- Reference: ../../reference/REFERENCE-DOCUMENTS/PERMANENT-LIVING-EXECUTION-ANCHOR-TIMESTAMP-GOVERNANCE-2026-10-20-001.md
+- Request: apply full registration, complete reference, documentation, timestamp and anchor rules as the default project procedure.
+- Rule: significant outputs follow preserve → identify → classify → provenance → IDs/version → anchor → reference → architecture link → timestamp evidence → write → read-back → match → verify → reconcile → destination status → next action → resume.
+- Unknown timestamps remain UNKNOWN / UNVERIFIED. Each destination must be verified independently.
+- Request time and exact read-back time: UNKNOWN / UNVERIFIED.
