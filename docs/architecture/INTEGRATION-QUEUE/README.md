@@ -655,3 +655,9 @@ The queue index and the timestamp case must each be read back after this update.
 - **شکاف‌های باقی‌مانده:** اجرای سرتاسری هر ورودی/خروجی، پیاده‌سازی قابل‌انتقال، بازیابی مستقل سند اصلی HAIF، بازیابی دو آزمون تاریخی، Dropbox و مقصدهای بیرونی. جای‌گذاری مرجع در MRV/نمایه/صف/checkpoint بازخوانی و تطبیق شد. جزئیات و معیار پذیرش در سند مرجع ثبت شده‌اند.
 - **زمان دقیق پیام:** UNKNOWN / UNVERIFIED؛ زمان commit جایگزین زمان پیام نیست.
 - **لنگر جاری حفظ‌شده:** `PALANG-0.0-CURRENT-2026-10-20-001`; نقطه مستقل Dropbox دست‌نخورده می‌ماند.
+
+
+## Main 0.0 lock — P0ML-2026-10-20-002
+- Checkpoint: [PALANG-0.0-MAIN-LOCK-2026-10-20-002](../../../checkpoints/PALANG-0.0-MAIN-LOCK-2026-10-20-002.md)
+- Event: [EVT-0029](../BEHAVIOR-TRACE/EVT-0029-MAIN-0.0-LOCK-2026-10-20.md)
+- Status: ACTIVE / LIVING; read-back verification of this checkpoint and index/queue integration is required. Historical 0.0 anchors remain unchanged. Library, Buffer, Persistent Memory, Dropbox and global automatic execution remain independently unverified/open.
