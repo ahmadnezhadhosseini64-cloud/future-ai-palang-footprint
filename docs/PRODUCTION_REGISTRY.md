@@ -78,6 +78,35 @@ Core invariants:
 - `Unresolved ≠ Supernatural`
 - `No Evidence → No Strong Claim`
 
+## Registered production — ABV-2026-10-20-001
+
+| Field | Value |
+|---|---|
+| `production_id` | `ABV-2026-10-20-001` |
+| `stable_id` | `ARCHITECTURE-BUILD-VERIFICATION-2026-10-20-001` |
+| `trace_id` | `EVT-0024-ARCHITECTURE-BUILD-VERIFICATION-2026-10-20` |
+| `type` | Architecture / Build Verification |
+| `title` | Verification of living registration rules and architecture integration |
+| `version` | 1.0.0 |
+| `created_at` | 2026-10-20T15:26:52Z |
+| `created_at_timezone` | UTC (repository commit timestamp; not user-message time) |
+| `owner` | Ahmad Nezhadhosseini |
+| `project` | Future AI / Palang Footprint |
+| `source_context` | User-directed request to verify that registration, timestamps, anchors, evidence, and governing rules are implemented in the repository's actual architecture; Dropbox explicitly excluded from this pass |
+| `repository_state` | `SUCCESS` — event and governing references written and read back |
+| `execution_state` | `PARTIAL` — repository audit passed, but other cross-layer gates require independent review |
+| `evidence_state` | `PARTIAL` — structural audit success; Cross-Layer Integrity Gate exposed two missing repository assertions |
+| `verification_state` | `PARTIAL` — architecture links read back; full cross-layer gate not yet passing |
+| `approval_state` | `USER_REQUESTED / IN PROGRESS` |
+| `reconciliation_state` | `PENDING` until a fresh successful cross-layer integrity run confirms the repair |
+| `canonical_destination` | `docs/architecture/BEHAVIOR-TRACE/EVT-0024-ARCHITECTURE-BUILD-VERIFICATION-2026-10-20.md`; governing LIARC reference; this registry |
+| `artifact_path` | `docs/architecture/BEHAVIOR-TRACE/EVT-0024-ARCHITECTURE-BUILD-VERIFICATION-2026-10-20.md` |
+| `last_verified_at` | `2026-10-20T15:26:55Z` — latest audit and cross-layer run results read back; cross-layer result was failure |
+| `memory_state` | `UNVERIFIED / PENDING` — external provider-level memory is not established by repository-side CI |
+| `user_message_time` | `UNKNOWN / UNVERIFIED` — do not infer from commit time |
+| `open_gaps` | all-message ChatGPT capture; Library/Buffer/Persistent Memory independent write/read-back; end-to-end recovery; fresh cross-layer gate pass |
+| `notes` | Dropbox was not touched, as requested. Do not promote this record to VERIFIED/COMPLETED until the fresh cross-layer gate succeeds and each external boundary has its own evidence. |
+
 ## Live status
 
 - `Operational status:` `ACTIVE / LIVING`
