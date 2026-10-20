@@ -57,14 +57,14 @@ The latest verified snapshot is [H0GMS-2026-10-21-001 v1.1.0](../../reference/RE
 
 
 ## Alias / lineage decision register
-- [H0CALDR-2026-10-21-001](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-CANONICAL-ALIAS-LINEAGE-DECISION-REGISTER-2026-10-21-001.md) is the companion register for 11 exact-content duplicate groups. Nine role-based mirror candidates are documented; two differently numbered historical registration/checkpoint pairs remain OPEN.
-- A prior run (39509351339) verified the manifest builder and reported zero missing local Markdown links. Its parent parser was then refined to accept only identifier-shaped tokens; the current follow-up audit is required for the definitive parent-edge totals.
+- [H0CALDR-2026-10-21-001](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-CANONICAL-ALIAS-LINEAGE-DECISION-REGISTER-2026-10-21-001.md) is the companion register for 11 exact-content duplicate groups. Nine role-based mirror candidates and two earliest-commit alias candidates are documented; final promotion remains PROPOSED pending lineage review.
+- The final audit run 39510341086 passed on the documentation-integrated tree and reported zero missing local Markdown links, zero unresolved parent edges and zero ambiguous parent edges.
 - The wrong initial EVT-0051 path is explicitly marked SUPERSEDED and redirects here. It is retained as a correction notice because deletion was not accepted; the active event for this operation is EVT-0052.
 
 
 
 ## Final verified manifest run
 - Snapshot: [H0GMS-2026-10-21-001](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-MANIFEST-SNAPSHOT-2026-10-21-001.md).
-- Living Architecture Audit run: 39510205907; artifact 12305736053; digest `sha256:0c7eee16fccbdeb095dcbd5f4cafb9cf5e9312f819f92e6dec9a8acb3f026866`.
-- Verified: workflow PASS; 0 missing local links; 38 parent edges; 0 unresolved; 0 ambiguous. Exact duplicate groups: 11; proposed canonical/mirror decisions: 11.
+- Living Architecture Audit run: 39510341086; artifact 12305131730; digest `sha256:76ba049a67c066890634c985884c90a0e6c19b33e7bd74dfc297b2f8234dc597`.
+- Verified: workflow PASS; 938 local Markdown link edges; 0 missing links; 38 parent edges; 0 unresolved; 0 ambiguous. Exact duplicate groups: 11; proposed canonical/mirror/alias decisions: 11.
 - Still OPEN: full natural-language semantic equivalence; semantic classification of repeated ID groups; eight historical EVT number collision groups. The mistaken EVT-0051 path remains a disclosed superseded correction artifact; EVT-0052 is the active event for this work.
