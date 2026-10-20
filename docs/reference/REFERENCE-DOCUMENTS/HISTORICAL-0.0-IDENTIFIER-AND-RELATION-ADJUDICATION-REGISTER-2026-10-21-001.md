@@ -99,3 +99,10 @@ Files whose purpose or role is not yet clear stay in the active review queue or 
 ## Change log
 
 - v1.0.0 — consolidated latest structural evidence, completed bounded semantic decisions, and explicit remaining obligations for all ID/EVT/duplicate groups and relation classes.
+
+
+## Addendum v1.1.0 — latest audit update
+- Latest successful follow-up: [run 39517544772](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39517544772), commit `0e1896e52c80249c90266ef75e2e576eb5a75463`, UTC `2026-10-20T23:50:14Z`.
+- Latest structural inventory: 500 source files, 1,009 local links / 0 missing, 38 parent edges / 0 unresolved or ambiguous, 37 Stable ID groups, 43 Production ID groups, 8 EVT groups, 11 exact-content duplicate groups, 695 ID occurrences.
+- Evidence record: [H0SRQS](./HISTORICAL-0.0-SEMANTIC-REVIEW-QUEUE-SNAPSHOT-2026-10-21-001.md).
+- Two Stable ID group decisions and six EVT-pair decisions remain bounded decisions only; the other group decisions and semantic meaning of every local edge remain open. New counts do not imply semantic closure.
