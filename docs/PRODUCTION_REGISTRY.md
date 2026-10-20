@@ -120,12 +120,12 @@ Core invariants:
 | `repository_state` | `SUCCESS` — event and governing references written and read back |
 | `execution_state` | `PARTIAL` — the structural audit and Cross-Layer Integrity Gate passed on the fresh commit; two other workflows still report failure |
 | `evidence_state` | `VERIFIED` for the repository structural audit and Cross-Layer Integrity Gate; overall architecture remains PARTIAL because unrelated workflows and external boundaries remain open |
-| `verification_state` | `VERIFIED` for the structural audit and cross-layer gate: run `39449620274` SUCCESS and run `39449620238` SUCCESS on commit `1cf14ebebd2ad6759884b580c5b6164520419b2d` |
+| `verification_state` | `VERIFIED` for the structural audit and cross-layer gate: run `39449825386` SUCCESS and run `39449824926` SUCCESS on commit `81b8929d182408015b774fda536e5cf753034684` |
 | `approval_state` | `USER_REQUESTED / IN PROGRESS` |
 | `reconciliation_state` | `PARTIAL` — the repaired cross-layer gate is PASS; full repository CI reconciliation remains open because `main.yml` and `automatic-final-registration-proof.yml` fail without retrievable job detail |
 | `canonical_destination` | `docs/architecture/BEHAVIOR-TRACE/EVT-0024-ARCHITECTURE-BUILD-VERIFICATION-2026-10-20.md`; governing LIARC reference; this registry |
 | `artifact_path` | `docs/architecture/BEHAVIOR-TRACE/EVT-0024-ARCHITECTURE-BUILD-VERIFICATION-2026-10-20.md` |
-| `last_verified_at` | `2026-10-20T15:34:26Z` — fresh structural audit and cross-layer gate completed successfully; see runs `39449620274` and `39449620238` |
+| `last_verified_at` | `2026-10-20T15:35:39Z` — fresh structural audit and cross-layer gate completed successfully; see runs `39449825386` and `39449824926` |
 | `memory_state` | `UNVERIFIED / PENDING` — external provider-level memory is not established by repository-side CI |
 | `user_message_time` | `UNKNOWN / UNVERIFIED` — do not infer from commit time |
 | `open_gaps` | all-message ChatGPT capture; Library/Buffer/Persistent Memory independent write/read-back; end-to-end recovery; unexplained failures of `main.yml` and `automatic-final-registration-proof.yml` |
