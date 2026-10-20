@@ -49,3 +49,15 @@ All seven content checks passed. The index update commit was observed with GitHu
 ## Addendum — direct 0.0 inventory
 The repository directory listings were inspected for `checkpoints/` and `docs/0.0/`; all 12 files under `checkpoints/` and all 4 non-README files under `docs/0.0/` were fetched and content-inspected. The 0.0 README now links these 16 files with a bounded role/status summary. This is a verified direct-directory inventory, not a complete repository-wide 0.0 graph. G-01 remains OPEN / PARTIAL pending reconciliation of all in-file IDs, reference-document pointers, behavior events, parent/child lineage, duplicates and orphan nodes.
 
+## Final read-back after inventory/version amendment
+A second seven-file read-back was run after adding the 16-file direct 0.0 inventory and updating the master reference to version 1.0.1. All seven expected-ID/link/status checks passed:
+- EVT-0043: `a66f0610eacaf128c4e9b63bea5209843c3e79a3`
+- EVT-0044 (before this final proof append): `0d67281549df835bf6f3d31e82846d99fe5115a3`
+- AAAPHR v1.0.1: `34f8814fb4d067ee1f62f4170606740b622cc595`
+- Reference index: `d39e3d6aa3627ca08d0bf2501133fb22e5d0e9ac`
+- 0.0 registry with 16-file direct inventory: `4c8bbccf3c323339087fd01666861aa06c7c7e9a`
+- Behavior-trace index: `a1fba8c23f5c6909db1a0a0bbc99d50e9c12ebd1`
+- Integration queue: `0b93cca8263a725d8123eadb35e2de0c67e3d7d0`
+
+Latest observed audit commit timestamp from GitHub metadata: `2026-10-20T20:39:09Z` = `2026-10-21T00:09:09+03:30` Asia/Tehran. This is a commit timestamp, not the user's message time.
+
