@@ -231,3 +231,11 @@ On 2026-10-20, the user explicitly approved applying the temporal bracketing rul
 - **State / وضعیت:** OPEN / PENDING EXECUTION PROOF. Repository documentation and links are present; automatic capture for every future input/output is NOT PROVEN.
 - **Next action / اقدام بعدی:** inspect/implement the actual execution mechanism and run an end-to-end acceptance test with independently retrievable evidence. Do not close this gate on documentation alone.
 - **Time integrity / سلامت زمان:** exact request time UNKNOWN / UNVERIFIED; commit time is not a substitute.
+
+
+## قاعدهٔ فعال/زنده و آزمون باز — هر ورودی و خروجی (2026-10-20)
+- **سند مرجع کامل:** [ACTIVE-LIVING-EVERY-INPUT-OUTPUT-ANCHOR-TEST-AND-PERMANENT-OPERATING-RULE](../docs/reference/REFERENCE-DOCUMENTS/ACTIVE-LIVING-EVERY-INPUT-OUTPUT-ANCHOR-TEST-AND-PERMANENT-OPERATING-RULE-2026-10-20-001.md)
+- **قاعده:** ACTIVE / LIVING؛ رویهٔ پیش‌فرض برای بررسی هر ورودی و خروجی و اجرای ثبت واقعی در صورت امکان.
+- **آزمون زنده:** OPEN / PENDING EXECUTION PROOF؛ تا شواهد واقعی برای معیارهای پذیرش تکمیل نشده، باز بماند.
+- **اقدام بعدی:** اجرای آزمون انتها‌به‌انتها، بازخوانی و تطبیق مقصدهای واقعاً تغییرکرده، ثبت شواهد و به‌روزرسانی وضعیت بدون ادعای بی‌شاهد.
+- **زمان دقیق درخواست:** UNKNOWN / UNVERIFIED.
