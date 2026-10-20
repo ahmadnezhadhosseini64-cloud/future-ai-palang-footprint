@@ -171,3 +171,13 @@ On 2026-10-20, the user explicitly approved applying the temporal bracketing rul
 - **وضعیت در این مرحله:** سند مرجع اصلی از مخزن بازخوانی شد و محتوای مورد انتظار بررسی شد. این لنگر پس از به‌روزرسانی باید دوباره از مخزن خوانده و تطبیق شود.
 - **لنگرهای قبلی:** هیچ نقطهٔ ۰.۰ قبلی با این ثبت جایگزین یا بسته نمی‌شود.
 - **مقصدهای خارج از مخزن:** Library، Buffer و Persistent Memory هنوز مستقل تأیید نشده‌اند؛ Dropbox OPEN / WAITING باقی می‌ماند.
+
+
+## الزام جاری افزوده — بررسی واقعی، نه گزارش صرف
+
+- **Stable ID:** `EVIDENCE-FIRST-REGISTRATION-AND-NO-REPORT-ONLY-GOVERNANCE-2026-10-20-001`
+- **Production ID:** `EFRNROG-2026-10-20-001`
+- **سند مرجع کامل:** [سند حاکم ثبت مبتنی بر شاهد](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/EVIDENCE-FIRST-REGISTRATION-AND-NO-REPORT-ONLY-GOVERNANCE-2026-10-20-001.md)
+- **قاعده:** هنگام هر «ثبت کن»، منابع قابل‌بازیابی را واقعاً بررسی کن، اقدام قابل اجرا را انجام بده، هر نوشتن را بازخوانی و تطبیق بده، زمان‌ها و مقصدها را مستقل نگه دار، و هیچ موفقیت بی‌شاهدی اعلام نکن.
+- **وضعیت مخزن:** فایل مرجع جدید ایجاد شده؛ ادغام کامل این اشاره‌گرها فقط پس از بازخوانی هر فایل مقصد تأیید می‌شود.
+- **وضعیت بیرون از مخزن:** Library، Buffer، Persistent Memory و Dropbox مستقل تأیید نشده‌اند؛ کارهای باز حفظ می‌شوند.
