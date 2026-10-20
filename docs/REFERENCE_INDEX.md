@@ -123,7 +123,7 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 
 ## 0.0 anchor-count and open-gap audit — 2026-10-20
 - Stable ID: `PALANG-0.0-ANCHOR-COUNT-AND-GAP-AUDIT-2026-10-20-001`; Production ID: `P0ACGA-2026-10-20-001`; Version: 1.0.0.
-- Canonical reference: [ممیزی تعداد نقاط ۰.۰، هدف پروژه و شکاف‌های باز](docs/reference/REFERENCE-DOCUMENTS/PALANG-0.0-ANCHOR-COUNT-AND-GAP-AUDIT-2026-10-20-001.md).
+- Canonical reference: [ممیزی تعداد نقاط ۰.۰، هدف پروژه و شکاف‌های باز](reference/REFERENCE-DOCUMENTS/PALANG-0.0-ANCHOR-COUNT-AND-GAP-AUDIT-2026-10-20-001.md).
 - Finding: no evidence-based reason to create a fourth 0.0 solely to reach a count; use the existing main lock as the governing resume entry, preserve the current anchor and independent Dropbox anchor, and do not claim a complete historical count.
 - Open: G-AUTO-02/03/04/05/06/07/08; automatic all-interaction execution and end-to-end recovery remain unproven. Dropbox remains OPEN / WAITING.
 - Repository write/read-back: MATCHED for the canonical audit file. This does not verify Library, Buffer, Persistent Memory, or Dropbox.
