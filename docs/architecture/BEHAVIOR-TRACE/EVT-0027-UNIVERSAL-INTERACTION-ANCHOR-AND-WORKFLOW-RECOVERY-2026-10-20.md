@@ -9,7 +9,7 @@
 - Project timezone: Asia/Tehran (UTC+03:30)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Status: ACTIVE / LIVING anchor; workflow remediation is in progress and not yet proven successful.
-- Full reference: ../.. /reference/REFERENCE-DOCUMENTS/UNIVERSAL-INTERACTION-ANCHOR-AND-WORKFLOW-RECOVERY-2026-10-20-001.md
+- Full reference: ../../reference/REFERENCE-DOCUMENTS/UNIVERSAL-INTERACTION-ANCHOR-AND-WORKFLOW-RECOVERY-2026-10-20-001.md
 
 ## Input anchor
 User requires every relevant input/output to receive an interaction anchor, timestamp governance, documentation, and full recoverable lineage; requests the two failed workflows be genuinely resolved, not just reported.
