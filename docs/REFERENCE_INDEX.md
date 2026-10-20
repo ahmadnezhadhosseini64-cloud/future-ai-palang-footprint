@@ -234,3 +234,12 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 
 
 | EVT51-2026-10-21-001 | `docs/architecture/BEHAVIOR-TRACE/EVT-0051-ASSISTANT-CONSOLIDATED-MASTER-CREATION-AND-READBACK-2026-10-21.md` | خروجی ساخت سند مرجع مادر تجمیعی، پیوندها و وضعیت بازخوانی | ACTIVE / LIVING; scoped read-back; full graph reconciliation remains open |
+
+
+
+## Historical graph reconciliation — 2026-10-21
+- **H0GLMR-2026-10-21-001** / `HISTORICAL-0.0-GRAPH-RECONCILIATION-LIVING-MASTER-REFERENCE-2026-10-21-001`: [سند مرجع مادر زندهٔ تطبیق گراف تاریخی ۰.۰](reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-RECONCILIATION-LIVING-MASTER-REFERENCE-2026-10-21-001.md).
+- **EVT-0050**: [ثبت مجوز ورود سند تطبیق گراف به معماری](architecture/BEHAVIOR-TRACE/EVT-0050-ARCHITECTURE-REGISTRATION-HISTORICAL-GRAPH-2026-10-21.md).
+- کاربر ورود این وضعیت به معماری و ساختمان پروژه را صریحاً تأیید کرده است.
+- وضعیت: سند حاکم ACTIVE / LIVING؛ تطبیق معنایی کامل، manifest canonical، داوری تکرارها، Dropbox، Buffer، Library و Persistent Memory همچنان OPEN / NOT PROVEN تا ارائهٔ شواهد مستقل.
+- شمارهای 698 فایل، 95 مسیر ۰.۰، 53 فایل EVT، 85 مسیر اسناد مرجع و 216 فایل Evidence Gate، snapshot گزارش‌شده در متن کاربر است؛ در این ثبت دوباره اجرا نشده‌اند.
