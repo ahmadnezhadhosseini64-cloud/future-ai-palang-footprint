@@ -46,3 +46,20 @@
 - Not verified: full content-level reconciliation of all graph nodes; Dropbox; Buffer/Library/Persistent Memory; runtime-wide automatic execution; second-host export/import.
 - G-01 remains OPEN / PARTIAL. The 640-file tree snapshot is complete at the tree API level, but not every file's internal identifiers and relationships have yet been extracted and reconciled.
 
+## Final read-back after v1.0.1 and refreshed graph snapshot
+- Final read-back processing time UTC: `2026-10-20T21:04:22.895Z`
+- Final read-back processing time Asia/Tehran: `2026-10-21T00:34:22.895+03:30`
+- Nine connected files were fetched again after the latest amendments; all expected ID/version/link/count checks passed:
+  1. EVT-0046 — `4e142dee2a28e0192997d7288838c9233ff4b6e8`
+  2. PIATGCG v1.0.1 — `69041591acd07ba0717c3358f24740b015e95f10`
+  3. C0GIR v1.0.1 — `420ab31c8a7790c46dc71bd4b44f6821ec579014`
+  4. Reference index — `2c87557c272b97a1458302372f0ee1be7afbbde9`
+  5. 0.0 registry — `47a780456cb7683b919e7f96eae8b46faf9b510f`
+  6. Behavior-trace index — `ad5277134bba07b3a8f67ac8288118f1b2d8421a`
+  7. Integration queue — `2288a59517df94c5401737968b3599ec3d22d94e`
+  8. Universal interaction contract — `12a37ffb1ba86080abfb39462468ac7c99f8125d`
+  9. Portable HAIF master — `0c062aa788139b7345ae7093f241fdc859d77abf`
+- EVT-0047 itself was fetched immediately before this proof append with content SHA `0d130d7da4f39da0a558a063020616fb8df5f258`; it is fetched again after the append to verify the proof record.
+- Latest graph snapshot at this point: tree SHA `19058e7d68a540862c618176c4c5e64109c62c0c`, 653 files, 93 paths with 0.0, 38 checkpoint paths, 51 EVT files, 48 related reference documents.
+- Scoped result: repository write/read-back and cross-index checks are VERIFIED. Full content-level canonical graph remains OPEN / PARTIAL; Dropbox, Buffer, Library, Persistent Memory, global runtime automation and second-host transfer are not proven.
+
