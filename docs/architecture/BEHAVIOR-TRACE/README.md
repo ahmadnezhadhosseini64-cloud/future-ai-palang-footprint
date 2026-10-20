@@ -125,3 +125,11 @@
 - [سند مرجع کامل](../../reference/REFERENCE-DOCUMENTS/INTERACTION-REGISTRATION-AND-GAP-CLOSURE-2026-10-20-001.md) — Stable ID: `INTERACTION-REGISTRATION-AND-GAP-CLOSURE-2026-10-20-001`.
 - نتیجهٔ هدف: ثبت همین تعامل در مخزن، با بازخوانی و تطبیق پیوندها. شکاف‌های سراسری و مقصدهای مستقل فقط پس از آزمون و شاهد جداگانه بسته می‌شوند.
 - زمان دقیق پیام کاربر: UNKNOWN / UNVERIFIED.
+
+
+## EVT-0033 — لنگرگذاری دوزمانه و معماری تداوم زنده
+- [رویداد EVT-0033](./EVT-0033-TWO-TIME-ANCHORING-AND-LIVING-CONTINUITY-2026-10-20.md)
+- [سند مرجع تکمیلی](../../reference/REFERENCE-DOCUMENTS/TWO-TIME-ANCHORING-AND-LIVING-CONTINUITY-ARCHITECTURE-2026-10-20-001.md).
+- قرارداد جامع لنگرگذاری با اصلاحیهٔ v1.1.0: [UIALAC](../../reference/REFERENCE-DOCUMENTS/UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001.md).
+- تصمیم: زمان پیام کاربر، زمان پردازش دستیار، زمان نوشتن/commit و زمان بازخوانی فیلدهای جدا هستند؛ زمان نامعلوم با زمان دیگر جایگزین نمی‌شود.
+- زمان پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان پردازش دستیار ثبت‌شده: 2026-10-20T22:20:19+03:30.
