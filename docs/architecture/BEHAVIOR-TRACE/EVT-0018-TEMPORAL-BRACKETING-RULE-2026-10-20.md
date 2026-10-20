@@ -37,8 +37,13 @@ PRESERVE → IDENTIFY → FIND PRECEDING ANCHOR → FIND FOLLOWING ANCHOR → PR
 - [دفتر مرکزی ۰.۰](../../0.0/README.md)
 - [لنگر جاری ۰.۰](../../../checkpoints/PALANG-0.0-CURRENT-2026-10-20-001.md)
 
-## وضعیت
-- Canonical reference: updated; read-back pending.
-- This event file: created; read-back pending.
-- Living reference, behavior trace, 0.0 registry and current anchor: pending linkage in this registration chain.
-- Exact request time: UNKNOWN / UNVERIFIED.
+## وضعیت پس از تکمیل زنجیرهٔ ثبت
+- Canonical reference, section 9: updated and read-back matched; current fetched blob SHA recorded in the execution log.
+- This event file: created and read-back matched; this status section is itself being updated to reflect the completed chain.
+- Living reference, section 22: updated and read-back matched.
+- Behavior trace: EVT-0018 entry present and read-back matched.
+- Central 0.0 registry: EVT-0018 entry present and read-back matched.
+- Current 0.0 anchor: now explicitly links EVT-0018; final read-back of the updated anchor is required before calling this last link verified.
+- Architecture integration queue: needs an explicit EVT-0018 index entry and subsequent read-back.
+- Exact request timestamp: UNKNOWN / UNVERIFIED. Commit timestamp is a distinct event and must not be substituted.
+- Buffer, Persistent Memory, Library and Dropbox: NOT VERIFIED by this repository chain. Dropbox failover remains OPEN / WAITING.
