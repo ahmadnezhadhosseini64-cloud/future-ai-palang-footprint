@@ -92,13 +92,13 @@ Future AI / Palang Footprint صرفاً مجموعه‌ای از فایل‌ها
 
 ### G-03 — اجرای سرتاسری ثبت هر ورودی و خروجی
 - وضعیت: OPEN / PARTIAL; repository automation gates passed, global conversation capture NOT PROVEN.
-- شواهد آزمون روی commit `e794777002503dda66ebd9b8fa110f37ac1e973d`: Automatic Final Registration Proof run `39458909829` SUCCESS, artifact `12281981318`; Cross-Layer Integrity Gate run `39458909821` SUCCESS; Reconciliation Acceptance Test run `39458909800` SUCCESS; Living Architecture Audit run `39458909798` SUCCESS, artifact `12281618418`.
+- شواهد تازه آزمون روی commit `4e3fb6c1a17402b29842be78124bf1f4771e409c`: Automatic Final Registration Proof run `39459069207` SUCCESS, artifact `12281204498`; Cross-Layer Integrity Gate run `39459069274` SUCCESS; Reconciliation Acceptance Test run `39459069335` SUCCESS; Living Architecture Audit run `39459069289` SUCCESS, artifact `12282056258`; Evidence Gate run `39459069488` SUCCESS, artifact `12281618565`. اجرای این runها در `2026-10-20T16:37:24Z` آغاز شد؛ این زمان شروع workflow است، نه زمان پیام کاربر.
 - این آزمون‌ها نشان می‌دهند workflowهای مخزن و کنترل‌های معماریِ آن اجرا شده‌اند؛ اما به‌تنهایی ثابت نمی‌کنند هر پیام در همه نشست‌های ChatGPT به‌طور خودکار ثبت می‌شود یا هر نشست تازه قادر به بازیابی کامل است.
 - اقدام بعدی: آزمون واقعی با پیام ورودی معلوم، رکورد تولیدشده، read-back، ادامه در نشست تازه و regression؛ شواهد مستقل هر گام ثبت شود.
 
 ### G-04 — بسته اجرایی قابل انتقال / افزونه یا عامل مهمان
 - وضعیت: OPEN / PARTIAL; cross-runtime claim-transfer harness passed, deployable host plugin/app NOT VERIFIED.
-- شواهد: CPREL Independent Runtime Transfer Harness run `39458909943` SUCCESS؛ دو job مستقل `runtime-a` و `runtime-b` موفق؛ artifact `cprel-transfer-payload` ID `12281239181`. همچنین CPREL Independent Transfer Evidence run `39458909826` SUCCESS با jobهای `runtime-a` و `runtime-b` موفق و artifactهای `12281498590` و `12280674368`.
+- شواهد تازه: CPREL Independent Transfer Evidence run `39459069432` SUCCESS روی commit `4e3fb6c1a17402b29842be78124bf1f4771e409c`؛ دو job مستقل `runtime-a` و `runtime-b` موفق؛ artifactهای `cprel-runtime-a` ID `12281363733` و `cprel-independent-transfer-evidence` ID `12280919464`. اجرای قبلی CPREL Independent Runtime Transfer Harness run `39458909943` نیز SUCCESS بود.
 - تفسیر محدود: آزمون انتقال و اعتبارسنجی ادعاها بین دو runtime در harness موفق است؛ این هنوز اثبات ساخت یک افزونه/اپ قابل نصب در میزبان واقعی یا اتصال زندهٔ آن به Master/Rahm نیست.
 - اقدام بعدی: تعریف schema تبادل نسخه‌دار، adapter واقعی برای میزبان هدف، ذخیره‌سازی/بازیابی پایدار و آزمون end-to-end در محیط واقعی.
 
