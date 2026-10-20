@@ -85,3 +85,12 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - اجرای تاریخی `39449957651` و `39449956059` شکست‌خورده باقی می‌مانند؛ endpointهای job خالی و retry با HTTP 403 رد شد. علت دقیق تاریخی `UNKNOWN / UNVERIFIED`.
 - **Issue #18 همچنان OPEN** تا اجرای تازهٔ هر دو workflow با job واقعی، نتیجهٔ success، بررسی artifact و بازخوانی مخزن تأیید شود.
 - زمان دقیق پیام کاربر و زمان دقیق ثبت این رخداد در شواهد این نوشتن موجود نیست؛ حدس زده نمی‌شود.
+
+
+## Behavior trace event — ICMCRR-HAIF-2026-10-20-001
+- Event: [EVT-0026 — تداوم معماری Master–Child–Rahm](architecture/BEHAVIOR-TRACE/EVT-0026-INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-2026-10-20.md).
+- سند مرجع جامع: [INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-REGISTRATION-2026-10-20-001](reference/REFERENCE-DOCUMENTS/INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-REGISTRATION-2026-10-20-001.md).
+- سند مادر MRV: [MRV Architecture and Living Reference Contract](reference/REFERENCE-DOCUMENTS/MRV-ARCHITECTURE-AND-LIVING-REFERENCE-CONTRACT-2026-09-15-001.md).
+- صف زنده: [OPEN-GAPS-RECOVERY-REGISTER-2026-10-15-001](architecture/INTEGRATION-QUEUE/OPEN-GAPS-RECOVERY-REGISTER-2026-10-15-001.md).
+- وضعیت: ثبت و پیوندهای مخزن پس از نوشتن، بازخوانی و تطبیق شدند؛ گیت‌های اجرای خودکار و مقصدهای بیرونی همچنان باز هستند.
+- زمان دقیق پیام: UNKNOWN / UNVERIFIED؛ زمان commit جایگزین زمان پیام نیست.
