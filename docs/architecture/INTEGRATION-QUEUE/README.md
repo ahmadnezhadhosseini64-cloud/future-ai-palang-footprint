@@ -685,6 +685,6 @@ The queue index and the timestamp case must each be read back after this update.
 - سند مرجع: [INTERACTION-REGISTRATION-AND-GAP-CLOSURE-2026-10-20-001](../../reference/REFERENCE-DOCUMENTS/INTERACTION-REGISTRATION-AND-GAP-CLOSURE-2026-10-20-001.md).
 - رویداد: [EVT-0032](../BEHAVIOR-TRACE/EVT-0032-INTERACTION-REGISTRATION-AND-GAP-CLOSURE-2026-10-20.md).
 - Stable ID: `INTERACTION-REGISTRATION-AND-GAP-CLOSURE-2026-10-20-001`; Production ID: `IRGC-2026-10-20-001`.
-- وضعیت: OPEN / PARTIAL تا زمان بازخوانی نهایی این سند، رویداد و همهٔ پیوندهای مرتبط؛ فقط ثبت همین تعامل در مخزن می‌تواند با شواهد همین اجرا بسته شود.
+- وضعیت: ثبت مخزنی همین تعامل و پیوندهایش WRITE + READ-BACK + MATCH VERIFIED؛ شکاف محدود ثبت همین تعامل CLOSED / VERIFIED. مورد کلان در صف OPEN / PARTIAL می‌ماند چون لنگرگذاری خودکار سراسری، مقصدهای مستقل و بازیابی سرتاسری هنوز اثبات نشده‌اند.
 - باز می‌مانند: لنگرگذاری خودکار سراسری، تطبیق کامل نقاط تاریخی ۰.۰، Dropbox، Buffer، Persistent Memory، Library و آزمون بازیابی سرتاسری/idempotency. ثبت در صف یا سند، معادل ادغام/بستن شکاف نیست.
 - زمان دقیق پیام کاربر: UNKNOWN / UNVERIFIED.
