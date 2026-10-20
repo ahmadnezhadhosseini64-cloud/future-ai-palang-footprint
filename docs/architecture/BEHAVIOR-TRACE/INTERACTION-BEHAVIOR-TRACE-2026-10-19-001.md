@@ -336,3 +336,16 @@
 - User approved applying temporal bracketing with full governed registration and recoverable documentation.
 - Exact user-message timestamp remains UNKNOWN / UNVERIFIED. No midpoint or exact time may be fabricated.
 - Destination status: repository entries were fetched and matched; Buffer, Persistent Memory, Library and Dropbox are not proven by these repository operations.
+
+
+## EVT-0020 — Every-interaction anchor governance (2026-10-20)
+
+- **Event ID:** `EVT-0020-EVERY-INTERACTION-ANCHOR-GOVERNANCE-2026-10-20`
+- **Stable ID:** `EVERY-INTERACTION-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001`
+- **Production ID:** `EIACRG-HAIF-2026-10-20-001`
+- **Version:** `1.0.0`
+- **Full reference:** [Every-interaction anchor and complete registration governance](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/EVERY-INTERACTION-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001.md)
+- **Origin:** User explicitly requests that every user input and every assistant final output from now on have an anchor and be completely documented under a permanent governing registration rule.
+- **Rule:** Treat each user message and each visible final assistant response as one linked interaction record. Preserve complete visible text in a canonical location, assign a unique interaction ID, retain provenance and evidence-backed timestamps, link to the current anchor and relevant architecture, write to the repository when the tool and permission are available, then fetch/read back and match. Do not claim successful registration if blocked. Do not record hidden chain-of-thought. Keep all storage destinations independently verified.
+- **Exact user-message time:** UNKNOWN / UNVERIFIED; no exact independent timestamp is available in this operation.
+- **Status:** The reference file has been written; final integration status depends on read-back of all changed files. Library, Buffer, Persistent Memory and Dropbox are not verified by repository actions.
