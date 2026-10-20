@@ -41,7 +41,7 @@ PRESERVE → IDENTIFY → FIND PRECEDING ANCHOR → FIND FOLLOWING ANCHOR → PR
 - نتیجهٔ بازخوانی نهایی: هر هفت فایل زیر از شاخهٔ main بازیابی و محتوای قاعده/شناسه/پیوندها بررسی شد.
 - سند مرجع جامع: `docs/reference/REFERENCE-DOCUMENTS/PERMANENT-LIVING-EXECUTION-ANCHOR-TIMESTAMP-GOVERNANCE-2026-10-20-001.md` — blob SHA: `3d20de2c378f7ef189d22b56edc8f8c2ec1ab972`; پیوند EVT-0018 در بخش 9.1 موجود است.
 - مرجع زنده: `docs/reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md` — blob SHA: `89013a69c265dee6da1010d02c764cbed82ce5f9`; بخش 22 موجود است.
-- این رویداد: `docs/architecture/BEHAVIOR-TRACE/EVT-0018-TEMPORAL-BRACKETING-RULE-2026-10-20.md` — blob SHA این نسخه: `4d640860dd2ba944479a702ebbb4dd38dc3312f4`; شناسه‌ها، قاعده و مسیر بازیابی بازخوانی شدند.
+- این رویداد: `docs/architecture/BEHAVIOR-TRACE/EVT-0018-TEMPORAL-BRACKETING-RULE-2026-10-20.md` — نسخهٔ نهایی پس از به‌روزرسانی وضعیت بلافاصله بازخوانی شد و SHA نوشتن با SHA بازخوانی تطبیق داشت؛ شناسه‌ها، قاعده و مسیر بازیابی بازخوانی شدند.
 - دفتر رفتار: `docs/architecture/BEHAVIOR-TRACE/INTERACTION-BEHAVIOR-TRACE-2026-10-19-001.md` — blob SHA: `c07951a545803285e8c64fa6d09b5a3cfe660b71`; ورودی EVT-0018 موجود است.
 - دفتر 0.0: `docs/0.0/README.md` — blob SHA: `f7734352274f43d1be1952eb9eb181639f95f5c1`; ورودی EVT-0018 موجود است.
 - لنگر جاری 0.0: `checkpoints/PALANG-0.0-CURRENT-2026-10-20-001.md` — blob SHA: `75bcf926365811e26873069792be8d652cbcd2db`; پیوند EVT-0018 موجود است.
