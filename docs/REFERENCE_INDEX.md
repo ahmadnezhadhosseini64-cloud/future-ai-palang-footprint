@@ -168,3 +168,5 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - ورودی: [EVT-0037](architecture/BEHAVIOR-TRACE/EVT-0037-UNIVERSAL-REGISTER-AND-PORTABLE-HAIF-REQUEST-2026-10-20.md).
 - قرارداد مادر به اصلاحیهٔ v1.2.0 ارتقا می‌یابد تا فرمان «ثبت کن» چرخهٔ کامل را الزام کند.
 - زمان پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان پردازش تدوین سند مرجع: 2026-10-20T22:58:42+03:30.
+
+- لنگر خروجی تدوین سند مرجع مادر: [EVT-0038](architecture/BEHAVIOR-TRACE/EVT-0038-ASSISTANT-EXECUTION-AND-PORTABLE-HAIF-REFERENCE-2026-10-20.md).
