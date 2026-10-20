@@ -231,3 +231,6 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 
 
 | CCCMR-2026-10-21-001 | `docs/reference/REFERENCE-DOCUMENTS/CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001.md` | سند مرجع مادر جامع؛ نقطهٔ ادامهٔ canonical، وضعیت واقعی، شواهد، معماری، گراف تاریخی ۰.۰ و صف اقدام بعدی | ACTIVE / LIVING / CANONICAL CONTINUATION BASE; next work starts here |
+
+
+| EVT51-2026-10-21-001 | `docs/architecture/BEHAVIOR-TRACE/EVT-0051-ASSISTANT-CONSOLIDATED-MASTER-CREATION-AND-READBACK-2026-10-21.md` | خروجی ساخت سند مرجع مادر تجمیعی، پیوندها و وضعیت بازخوانی | ACTIVE / LIVING; scoped read-back; full graph reconciliation remains open |
