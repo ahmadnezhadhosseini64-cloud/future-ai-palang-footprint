@@ -266,3 +266,10 @@
 ## Alias / lineage adjudication
 - [H0CALDR — دفتر تصمیم‌های تکرارها](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-CANONICAL-ALIAS-LINEAGE-DECISION-REGISTER-2026-10-21-001.md) records non-destructive role-based mirror proposals for the 11 exact duplicate groups. Two numbered registration/checkpoint pairs remain OPEN pending lineage review.
 - Canonical graph-manifest implementation and link repairs are tracked by [EVT-0052](./EVT-0052-CANONICAL-GRAPH-MANIFEST-AND-LINK-REPAIR-2026-10-21.md).
+
+
+## EVT-0053 — مبنای معماری معنایی و مرور دسته‌ای
+- [EVT-0053](./EVT-0053-SEMANTIC-ARCHITECTURE-BASELINE-2026-10-21.md) — Stable ID: EVT-0053-SEMANTIC-ARCHITECTURE-BASELINE-2026-10-21; Production ID: EVT53-2026-10-21-001.
+- سند مادر: [H0SAB](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-SEMANTIC-ARCHITECTURE-BASELINE-2026-10-21-001.md).
+- وضعیت: مبنای معنایی و معیارهای داوری ثبت شده‌اند؛ این ثبت به معنی تکمیل مرور معنایی نیست. 493 فایل و گروه‌های شناسه/EVT باید با شاهد بررسی شوند.
+- زمان دقیق پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان commit سند مادر c53e945b7251eef936f41bb9e82763613958c4d0 و زمان رویداد جداگانه‌اند.
