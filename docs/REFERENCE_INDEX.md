@@ -13,6 +13,7 @@
 | CEASR-2026-10-20-001 | `docs/reference/REFERENCE-DOCUMENTS/COMPREHENSIVE-EXCAVATION-ARCHITECTURE-STATE-2026-10-20-001.md` | سند مرجع خاک‌برداری جامع؛ لنگرها، معماری، شکاف‌های اتصال و مسیر بازیابی | Repository read-back verified; destination reconciliation and external layers remain open |
 | EXCAVATION-ROUTINE-EXECUTION-CONTRACT-2026-10-20-001 | `docs/architecture/INTEGRATION-QUEUE/EXCAVATION-ROUTINE-EXECUTION-CONTRACT-2026-10-20-001.md` | قرارداد حاکم اجرای روتین خاک‌برداری؛ تکمیل کارهای باز و آزمون مقصدها | REPOSITORY WRITE + READ-BACK VERIFIED; external destinations and full routine execution remain unverified |
 | UIALAC-2026-10-20-001 | `docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001.md` | قرارداد جامع لنگرگذاری، ثبت، مستندسازی، سه سطح ماندگاری و تداوم زنده | REPOSITORY WRITE + READ-BACK VERIFIED; architecture index linked; Buffer/Persistent Memory and automatic execution unverified |
+| UIAWR-2026-10-20-001 | `docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-INTERACTION-ANCHOR-AND-WORKFLOW-RECOVERY-2026-10-20-001.md` | سند مرجع جامع لنگر تعامل، حاکمیت ثبت/زمان و مسیر واقعی بازیابی دو گردش کاری | ACTIVE / LIVING; workflow fixes committed, fresh-run verification PENDING |
 | SRC-2026-08-29-001 | `docs/STABLE_RETRIEVAL_CORE.md` | Stable external retrieval contract | VERIFIED / ACTIVE |
 | RRT-2026-08-29-001 | `docs/RETRIEVAL_RUNTIME.md` | Operational retrieval sequence | VERIFIED / ACTIVE |
 | EGE-2026-08-29-001 | `docs/EVIDENCE_GATE.md` | Independent execution evidence contract | PROVEN / ACTIVE / CLOSED / PASS |
@@ -75,3 +76,12 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 ## Architecture event — dual timestamp rule
 - [EVT-0026 — تصویب و اتصال قاعدهٔ زمان‌گذاری دوگانه](architecture/BEHAVIOR-TRACE/EVT-0026-DUAL-TIMESTAMP-AVAILABILITY-RULE-2026-10-20.md).
 - Rule: `DUAL-TIMESTAMP-AVAILABILITY-RULE-2026-10-20-001` / `DTAR-2026-10-20-001`; status ACTIVE / LIVING / GOVERNING.
+
+
+## Interaction anchor and workflow recovery — EVT-0027
+- `UNIVERSAL-INTERACTION-ANCHOR-AND-WORKFLOW-RECOVERY-2026-10-20-001` / `UIAWR-2026-10-20-001`: [سند مرجع جامع لنگر تعامل، حاکمیت ثبت و بازیابی دو گردش کاری](reference/REFERENCE-DOCUMENTS/UNIVERSAL-INTERACTION-ANCHOR-AND-WORKFLOW-RECOVERY-2026-10-20-001.md).
+- Event: [EVT-0027 — لنگر جامع تعامل و بازیابی دو گردش کاری](architecture/BEHAVIOR-TRACE/EVT-0027-UNIVERSAL-INTERACTION-ANCHOR-AND-WORKFLOW-RECOVERY-2026-10-20.md).
+- اصلاحات workflow روی مخزن ثبت شده‌اند: artifact paths برای ثبت نهایی اصلاح شد (commit `2a3398132ca8e196295d2d61bf7c96d12ce7d84c`) و فیلتر اجرای Evidence Gate گسترش یافت (commit `75f1fff4a42a6fc1465a2164a4d82db30934a95c`).
+- اجرای تاریخی `39449957651` و `39449956059` شکست‌خورده باقی می‌مانند؛ endpointهای job خالی و retry با HTTP 403 رد شد. علت دقیق تاریخی `UNKNOWN / UNVERIFIED`.
+- **Issue #18 همچنان OPEN** تا اجرای تازهٔ هر دو workflow با job واقعی، نتیجهٔ success، بررسی artifact و بازخوانی مخزن تأیید شود.
+- زمان دقیق پیام کاربر و زمان دقیق ثبت این رخداد در شواهد این نوشتن موجود نیست؛ حدس زده نمی‌شود.
