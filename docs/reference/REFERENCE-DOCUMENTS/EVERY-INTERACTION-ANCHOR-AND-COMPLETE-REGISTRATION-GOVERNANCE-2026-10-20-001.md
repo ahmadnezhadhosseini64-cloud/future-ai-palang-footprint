@@ -192,7 +192,7 @@
   - Behavior trace / EVT-0020: `bd1dc32465d8946b41405dba093aad946ccc3767`, `2026-10-20T09:27:50Z`.
 - **Read-back scope:** each of the seven paths above was fetched after its corresponding write; the expected title/Stable ID was present in each response. This is a content check, not a claim of independent cryptographic byte-for-byte comparison.
 - **Exact user-message time:** UNKNOWN / UNVERIFIED.
-- **Exact final read-back time for this forthcoming updated version:** UNKNOWN until its post-write fetch; do not substitute a commit timestamp.
+- **Final version read-back:** fetched after commit `c8512f66198c4ee03b15f00f5f8e31befd4f371f`; blob SHA `f4bb677bec184e2baa53c23b8316df0c165b6915`; Stable ID, Production ID, full interaction transcript, repository evidence, timestamp uncertainty and open destination states were checked. The exact wall-clock time of the fetch was not returned by the tool and remains UNKNOWN / UNVERIFIED; the commit timestamp is not substituted for it.
 - **External destinations:** Library, Buffer, Persistent Memory and Dropbox remain independently UNVERIFIED/OPEN.
 - **Overall status:** `PARTIAL / OPEN` for the complete multi-destination registration lifecycle; repository rule and integration references have been written and content-checked.
 
