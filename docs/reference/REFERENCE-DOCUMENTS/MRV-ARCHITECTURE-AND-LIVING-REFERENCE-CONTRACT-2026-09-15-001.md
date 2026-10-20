@@ -1046,3 +1046,17 @@ The current repository excavation and reconciliation record is `docs/reference/R
 - **مرجع کامل:** [سند ثبت مبتنی بر شاهد و ممنوعیت گزارش صرف](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/EVIDENCE-FIRST-REGISTRATION-AND-NO-REPORT-ONLY-GOVERNANCE-2026-10-20-001.md)
 
 برای هر فرمان «ثبت کن»، اقدام واقعی، بازخوانی، تطبیق و تأیید باید مقدم بر ادعای موفقیت باشند. گزارش صرف، جایگزین اجرا نیست. زمان پیام، اقدام، commit، بازخوانی و تأیید مستقل‌اند؛ زمان ناموجود UNKNOWN / UNVERIFIED می‌ماند. وضعیت مخزن، کتابخانه، بافر، حافظهٔ پایدار و Dropbox جداگانه اثبات می‌شود. تا زمانی که دروازه‌های الزامی بسته نشده‌اند، وضعیت کلی PARTIAL / OPEN باقی می‌ماند. این پیوند، تعهدات مقصدهای دیگر را خودبه‌خود کامل نمی‌کند.
+
+
+## 32. قرارداد حاکم بررسی واقعی و منع گزارش خالی — EVT-0019 (2026-10-20)
+
+- **Stable ID:** EVIDENCE-FIRST-NO-EMPTY-REPORT-AND-REGISTER-EXECUTION-PACT-2026-10-20-001
+- **Production ID:** EFNERP-HAIF-2026-10-20-001
+- **Version:** 1.0.0
+- **سند مرجع کامل:** [قرارداد اجرایی ثبت مبتنی بر شواهد و منع گزارش خالی](EVIDENCE-FIRST-NO-EMPTY-REPORT-AND-REGISTER-EXECUTION-PACT-2026-10-20-001.md)
+- **رویداد اثبات:** [EVT-0019](../../architecture/BEHAVIOR-TRACE/EVT-0019-EVIDENCE-FIRST-REGISTER-PACT-2026-10-20.md)
+- **الزام حاکم:** هیچ ادعای ثبت، فعال‌بودن، دائمی‌بودن یا کامل‌بودن بدون بررسی مستقیم منبع، شواهد مقصدی، بازخوانی مستقل و تطبیق محتوا مجاز نیست. گزارش وضعیت جایگزین اجرای واقعی و سند مرجع کامل نیست.
+- **چرخه:** PRESERVE → IDENTIFY → PROVENANCE → ANCHOR → COMPLETE REFERENCE → ARCHITECTURE INTEGRATION → TIMESTAMP EVIDENCE → WRITE → READ-BACK → MATCH → VERIFY → RECONCILE → PER-DESTINATION STATUS → NEXT ACTION / RESUME.
+- **زمان:** زمان دقیق بی‌شاهد UNKNOWN / UNVERIFIED می‌ماند؛ زمان commit جایگزین زمان پیام، اجرا یا بازخوانی نیست.
+- **مرزبندی مقصدها:** Repository، Library، Buffer، Persistent Memory و Dropbox مستقل‌اند؛ اثبات یکی وضعیت دیگری را ثابت نمی‌کند.
+- **وضعیت:** این بند، قاعده را در سند مادر ثبت می‌کند؛ پس از نوشتن باید بازخوانی شود. این پیوند به‌تنهایی هیچ مقصد بیرونی را تأیید نمی‌کند و وضعیت کلی چرخه تا بسته‌شدن همهٔ گیت‌های لازم PARTIAL / OPEN باقی می‌ماند.
