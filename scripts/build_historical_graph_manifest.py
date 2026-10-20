@@ -27,6 +27,8 @@ def id_vals(body, pattern):
                 "not-assigned", "not-assigned-yet", "not-applicable", "placeholder"}
     result = set()
     for value in vals(body, pattern):
+        if not value.strip():
+            continue
         token = value.split()[0].strip(" ' ,;:()[]{}")
         if not token or token.casefold() in excluded:
             continue
