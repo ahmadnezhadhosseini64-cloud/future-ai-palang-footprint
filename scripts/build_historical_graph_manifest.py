@@ -107,11 +107,26 @@ for node in nodes:
         parent_edges.append(edge)
         if resolution == "UNRESOLVED": unresolved.append(edge)
         elif resolution == "AMBIGUOUS": ambiguous.append(edge)
+# Role-based duplicate decisions are deliberately non-destructive and remain proposals
+# until inbound references and source history are checked. Hash keys match the audited bytes.
+alias_decisions = {
+    "2b018d899aba7b4483a083e170eaea878cab9d024e24c53fc496f70fef4ac24f": {"canonical_candidate": None, "status": "OPEN_DIFFERENT_REGISTRATION_NUMBERS"},
+    "2d503cce1b2bad4533362da439d1668b6a4fb5fbafb6fcd6cf6c950ab93dfc95": {"canonical_candidate": "docs/reference/REFERENCE-DOCUMENTS/GAP-CLOSURE-RETRIEVAL-EVIDENCE-2026-08-31-001.md", "status": "PROPOSED_REFERENCE_WITH_PROVENANCE_MIRROR"},
+    "45140056b737bd503a0dc6490677afe3bdb0df9e59abfcc1c624e49f54cad500": {"canonical_candidate": "checkpoints/0.0/0.0-VAULT-INITIAL-POINT-2026-09-13.md", "status": "PROPOSED_CHECKPOINT_WITH_REFERENCE_MIRROR"},
+    "4944e965c2326ed54e8aeabb2814bb0f6bb6fc12641cf07540c93cc3ed823deb": {"canonical_candidate": "docs/governance/0.0-VAULT/LIVING-STATUS-2026-09-13.md", "status": "PROPOSED_GOVERNANCE_WITH_REFERENCE_MIRROR"},
+    "4cf0b6b7be9aa5b989be1a7fdca7d481c3ee883436b70ac5ed0762565c961049": {"canonical_candidate": "docs/governance/0.0-VAULT/0.0-VAULT-GOVERNANCE-2026-09-13.md", "status": "PROPOSED_GOVERNANCE_WITH_REFERENCE_MIRROR"},
+    "605b48decf4cbd0f87535b8cf78bf01b5362907f5094faac3886ba8f8da73f6f": {"canonical_candidate": None, "status": "OPEN_DIFFERENT_CHECKPOINT_NUMBERS"},
+    "7023f4ce9e459b3acf0eeaf371c02103b4adce7554b5d1c4043edf42bb1b4f73": {"canonical_candidate": "docs/governance/0.0-VAULT/PRODUCTION-REGISTRY-REFERENCE-2026-09-13.md", "status": "PROPOSED_GOVERNANCE_WITH_REFERENCE_MIRROR"},
+    "8764cc78241e5b880cf277fa720e6bd13dd68d63e0e1856f1e7d101bbb7b588d": {"canonical_candidate": "docs/reference/REFERENCE-DOCUMENTS/ADIP-2026-08-31-001.md", "status": "PROPOSED_REFERENCE_WITH_PROVENANCE_MIRROR"},
+    "9cb520f4f1c27f5f6b79fdfb2c133883599665b2c9c952cfb3441eae8c0e9": {"canonical_candidate": "registry/0.0-VAULT-REGISTRY-2026-09-13.md", "status": "PROPOSED_REGISTRY_WITH_REFERENCE_MIRROR"},
+    "a0384763731682830b11f5678fa4c45bb7378f6b73fe5ca9eed202be77147a43": {"canonical_candidate": "docs/reference/REFERENCE-DOCUMENTS/MASTER-REFERENCE-GAPC-2026-08-31-001.md", "status": "PROPOSED_REFERENCE_WITH_PROVENANCE_MIRROR"},
+    "d3921368cf3ad35d6b428860c67ad47f4e395c731f9249dc7b84006614558dad": {"canonical_candidate": "architecture/0.0-VAULT-ARCHITECTURAL-PLACEMENT-2026-09-13.md", "status": "PROPOSED_ARCHITECTURE_WITH_REFERENCE_MIRROR"}
+}
 alias_edges = []
 for group in duplicates:
-    paths = group["paths"]
-    alias_edges.append({"candidate_paths": paths, "sha256": group["sha256"],
-                        "status": "UNADJUDICATED_DUPLICATE_GROUP_NO_CANONICAL_WINNER_ASSIGNED"})
+    decision = alias_decisions.get(group["sha256"], {"canonical_candidate": None, "status": "OPEN_NO_DECISION"})
+    alias_edges.append({"candidate_paths": group["paths"], "sha256": group["sha256"], **decision,
+                        "acceptance": "PROPOSED_NOT_FINAL_UNTIL_INBOUND_LINK_AND_HISTORY_REVIEW"})
 manifest = {
     "schema": "palang-historical-graph-manifest/v1", "audit_time_utc": run_utc, "repository_commit": commit,
     "scope": "Path-keyed structural manifest. It does not claim complete natural-language semantic adjudication.",
