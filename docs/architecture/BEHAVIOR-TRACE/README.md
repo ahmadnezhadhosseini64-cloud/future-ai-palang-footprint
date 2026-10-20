@@ -203,3 +203,8 @@
 - سند مرجع: [AAAPHR](../../reference/REFERENCE-DOCUMENTS/AUTOMATIC-ANCHORING-ARCHITECTURE-AUDIT-AND-PORTABLE-HAIF-REFERENCE-2026-10-21-001.md).
 - نتیجه: شکاف‌های G-01 تا G-10 به‌صورت صریح و قابل‌پیگیری ثبت شدند؛ ثبت در مخزن به‌تنهایی شکاف‌ها را نمی‌بندد.
 
+## EVT-0045 — جمع‌بندی ممیزی
+- [رویداد خروجی EVT-0045](./EVT-0045-ASSISTANT-USER-FACING-AUDIT-CLOSEOUT-2026-10-21.md).
+- رویداد ممیزی: [EVT-0044](./EVT-0044-ASSISTANT-AUDIT-RESULT-AND-OPEN-GAPS-2026-10-21.md).
+- سند مرجع: [AAAPHR v1.0.1](../../reference/REFERENCE-DOCUMENTS/AUTOMATIC-ANCHORING-ARCHITECTURE-AUDIT-AND-PORTABLE-HAIF-REFERENCE-2026-10-21-001.md).
+
