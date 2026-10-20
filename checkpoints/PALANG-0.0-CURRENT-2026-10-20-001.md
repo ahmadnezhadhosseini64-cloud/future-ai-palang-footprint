@@ -239,3 +239,13 @@ On 2026-10-20, the user explicitly approved applying the temporal bracketing rul
 - **آزمون زنده:** OPEN / PENDING EXECUTION PROOF؛ تا شواهد واقعی برای معیارهای پذیرش تکمیل نشده، باز بماند.
 - **اقدام بعدی:** اجرای آزمون انتها‌به‌انتها، بازخوانی و تطبیق مقصدهای واقعاً تغییرکرده، ثبت شواهد و به‌روزرسانی وضعیت بدون ادعای بی‌شاهد.
 - **زمان دقیق درخواست:** UNKNOWN / UNVERIFIED.
+
+
+## Architecture build verification — 2026-10-20
+- Stable ID: `ARCHITECTURE-BUILD-VERIFICATION-2026-10-20-001`; Production ID: `ABV-2026-10-20-001`.
+- Event: [EVT-0024](../docs/architecture/BEHAVIOR-TRACE/EVT-0024-ARCHITECTURE-BUILD-VERIFICATION-2026-10-20.md).
+- Governing contract: [LIARC-2026-10-20-001](../docs/reference/REFERENCE-DOCUMENTS/LIVING-INTERACTION-AUTOMATION-AND-RECONCILIATION-2026-10-20-001.md).
+- Latest read-back evidence available at this checkpoint: GitHub Actions run `39447416772` completed with `success`; subsequent commits integrate the verification event into the project building and trigger the repository audit again.
+- Exact user-message time: UNKNOWN / UNVERIFIED. Workflow/commit time is not message time.
+- Dropbox remains an independent OPEN / WAITING anchor and was not touched in this operation.
+- Library, Buffer, Persistent Memory and global ChatGPT capture remain unverified; do not mark the whole system complete until their independent acceptance gates pass.
