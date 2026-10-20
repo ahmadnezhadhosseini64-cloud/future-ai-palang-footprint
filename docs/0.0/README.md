@@ -436,3 +436,9 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - زمان پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان پردازش: 2026-10-20T23:19:49.578+03:30.
 
 - لنگر خروجی دستیار: [EVT-0040](../architecture/BEHAVIOR-TRACE/EVT-0040-ASSISTANT-REGISTRATION-AND-DISCOVERY-ARCHITECTURE-2026-10-20.md). زمان پردازش: 2026-10-20T23:20:38.401+03:30؛ زمان پیام کاربر: UNKNOWN / UNVERIFIED.
+
+
+## لنگر ۰.۰ — قاعدهٔ تداوم خودکار و بستهٔ انتقال HAIF
+- سند مرجع: [AICPHAE](../reference/REFERENCE-DOCUMENTS/AUTOMATIC-INTERACTION-CONTINUITY-AND-PORTABLE-HAIF-EVOLUTION-MASTER-REFERENCE-2026-10-20-001.md).
+- ورودی: [EVT-0041](../architecture/BEHAVIOR-TRACE/EVT-0041-AUTOMATIC-CONTINUITY-PORTABLE-CHILD-RAHM-MASTER-REQUEST-2026-10-20.md).
+- این لنگر به تاریخچه افزوده می‌شود؛ هیچ لنگر تاریخی جایگزین نمی‌شود. زمان پیام کاربر تأییدنشده و زمان پردازش جدا ثبت شده است.
