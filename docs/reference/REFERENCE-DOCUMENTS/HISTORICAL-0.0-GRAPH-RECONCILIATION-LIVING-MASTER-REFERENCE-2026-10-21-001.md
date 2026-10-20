@@ -235,3 +235,11 @@ This document can be considered repository-integrated only after the file, index
 - The graph builder was extended to emit line-level ID occurrences, role candidates, and local-link context into `audit-output/historical-0.0-semantic-review-queue.json`. Role candidates are explicitly not final semantic decisions.
 - This makes the next review batch reproducible and inspectable rather than a free-form report. It does not itself complete semantic adjudication; fresh CI execution and review of its artifact are required.
 - Current semantic status remains OPEN / PARTIAL until every source file and relationship is adjudicated or explicitly deferred with rationale.
+
+
+## Addendum v2.1.0 — fresh audit read-back and group-by-group accountability
+- Fresh successful audit: [39517339104](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39517339104), audited commit `7d0da46f1e1d5e551bb60fceb3b61b54e7f217dd`, UTC `2026-10-20T23:48:04Z`.
+- Updated inventory: 498 source files; 991 local Markdown edges, 0 missing; 38 declared parent edges, 0 unresolved/ambiguous; 37 Stable ID groups; 43 Production ID groups; 8 EVT collision groups; 11 exact-content duplicate groups; 693 line-level ID occurrences.
+- Detailed group ledger: [H0IRAR](./HISTORICAL-0.0-IDENTIFIER-AND-RELATION-ADJUDICATION-REGISTER-2026-10-21-001.md). Snapshot and artifact digest: [H0SRQS](./HISTORICAL-0.0-SEMANTIC-REVIEW-QUEUE-SNAPSHOT-2026-10-21-001.md).
+- Two Stable ID groups and six legacy EVT pairs have bounded semantic decisions; all other group-level decisions and full edge semantics remain open. The 11 duplicate groups are preserved and have proposed role-based relationships, not final merges.
+- The implementation-ready app blueprint is [FAPF-IRA](./FUTURE-AI-PALANG-FOOTPRINT-IMPLEMENTABLE-REFERENCE-ARCHITECTURE-2026-10-21-001.md). Application code/deployment/end-to-end tests are not claimed complete.
