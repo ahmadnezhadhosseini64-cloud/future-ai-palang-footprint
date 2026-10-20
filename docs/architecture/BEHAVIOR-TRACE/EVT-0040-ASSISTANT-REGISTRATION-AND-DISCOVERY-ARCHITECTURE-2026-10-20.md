@@ -41,3 +41,20 @@
 
 ## ثبت زمانی
 زمان پیام کاربر از دادهٔ دقیق و قابل‌اثبات این رویداد در دسترس نیست؛ بنابراین UNKNOWN / UNVERIFIED است. زمان پردازش دستیار جداگانه در بالای سند درج شده است. زمان commit و read-back نباید از زمان پردازش استنتاج شود.
+
+
+## Read-back / بازخوانی پس از ثبت
+- Read-back time / زمان بازخوانی: 2026-10-20T23:21:06.318+03:30 (Asia/Tehran); UTC: 2026-10-20T19:51:06.318Z.
+- نتیجه: PASS برای دامنهٔ مخزن و پیوندهای بررسی‌شده. نه فایل/نمایه بازخوانی شد: EVT-0039، سند ITDCT، EVT-0040، نمایهٔ مرجع، رجیستری ۰.۰، نمایهٔ رفتار، صف ادغام، URPHA و قرارداد حاکم UIALAC.
+- تطبیق: شناسه‌های EVT-0039، EVT-0040 و ITDCT، پیوندهای مورد انتظار، و نسخهٔ قرارداد UIALAC v1.2.0 در محتوای بازخوانی‌شده پیدا شد.
+- SHA بازخوانی‌شده:
+  - EVT-0039: 6aed5b6cc11831ad0beab889ced5c17d4ddfdbe0
+  - ITDCT: b7e3c567ecfda7913ae3bb12c0558034b1c48310
+  - EVT-0040: c64782637d8eed865a090e43fa0604824c578631 (این SHA پیش از افزودن همین بخش read-back است)
+  - Reference Index: e9c25fcfd124853c267b5d426e6267e227cf4f23
+  - 0.0 Registry: dc3d1932bf3bd3195fcc9760622040cae5567de4
+  - Behavior Trace Index: 74ea28c8fed2945489948ca20521b8a26bbadac4
+  - Integration Queue: 97377eb0cf22b02cc45611500e82b02c07bcce7e
+  - URPHA: 5d8c61c9ed93ff72a23ad1916b2c702d80f5efe0
+  - UIALAC: d4de819a68833f619a51746d4c06af2a8b6bbf4a
+- Scope boundary: این PASS فقط مخزن و پیوندهای بالا را پوشش می‌دهد. Buffer، Persistent Memory، Library، Dropbox، گراف تاریخی کامل ۰.۰، بازیابی سرتاسری و انتقال به میزبان دوم هنوز OPEN / UNVERIFIED هستند.
