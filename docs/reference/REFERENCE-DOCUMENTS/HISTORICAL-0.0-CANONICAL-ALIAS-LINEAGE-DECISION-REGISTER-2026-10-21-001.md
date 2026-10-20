@@ -65,3 +65,10 @@ Repeated Stable IDs and Production IDs are occurrence groups, not automatically 
 
 ## Post-registration read-back
 - Final integration was rechecked by [run 39510674461](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39510674461): no broken local links, no unresolved parent edges, no ambiguous parent edges. All 11 exact duplicate groups remain preserved with proposed role-based canonical/mirror/alias relationships.
+
+
+## Addendum v1.1.0 — current manifest namespace and link evidence
+- Namespace-corrected audit: [run 39517920781](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39517920781), commit `07c0915db52e66061c7c905081c2bfe77a32e807`.
+- The manifest still detects 11 exact-content duplicate groups; all 11 remain preserved. The nine role-based mirror relationships and two earliest-commit alias candidates remain proposals for canonical pointer promotion, not deletion/merge instructions.
+- The audit's local-link parser found 1,020 edges and zero missing links. This does not establish that every link has the intended semantic target. The next audit after these register updates must refresh link counts and recheck all pointers.
+- EVT identity decisions are in [H0EVTCA](./HISTORICAL-0.0-EVT-NUMBER-COLLISION-ADJUDICATION-2026-10-21-001.md); the 0050 pair has distinct event identities, and 0051 includes a retained correction notice pointing to EVT-0052.
