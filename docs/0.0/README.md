@@ -409,3 +409,10 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - رویداد ورودی/تصمیم: [EVT-0033](../architecture/BEHAVIOR-TRACE/EVT-0033-TWO-TIME-ANCHORING-AND-LIVING-CONTINUITY-2026-10-20.md).
 - سند مرجع: [TWO-TIME-ANCHORING-AND-LIVING-CONTINUITY-ARCHITECTURE-2026-10-20-001](../reference/REFERENCE-DOCUMENTS/TWO-TIME-ANCHORING-AND-LIVING-CONTINUITY-ARCHITECTURE-2026-10-20-001.md).
 - زمان پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان پردازش دستیار برای لنگر خروجی: 2026-10-20T22:23:18+03:30.
+
+
+## لنگر ۰.۰ — فعال‌سازی ثبت زنده و آزمون — 2026-10-20
+- سند مرجع: [LARTG](../reference/REFERENCE-DOCUMENTS/LIVING-ANCHORING-REGISTRATION-AND-TEST-GOVERNANCE-2026-10-20-001.md).
+- رویداد ورودی: [EVT-0035](../architecture/BEHAVIOR-TRACE/EVT-0035-LIVING-ANCHORING-AND-TEST-GOVERNANCE-2026-10-20.md).
+- این لنگر به زنجیرهٔ قبلی افزوده می‌شود و هیچ نقطهٔ ۰.۰ را حذف/جایگزین نمی‌کند. چهار گرهٔ پیمایش، فهرست کامل نقاط تاریخی نیستند.
+- زمان پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان پردازش دستیار: 2026-10-20T22:31:33+03:30.
