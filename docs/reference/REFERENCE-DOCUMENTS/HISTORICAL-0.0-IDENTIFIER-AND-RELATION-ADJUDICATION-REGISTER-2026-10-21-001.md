@@ -14,7 +14,7 @@
 
 ## 1. Latest inventory — group-by-group accountability
 
-The fresh expanded manifest reports 37 Stable ID repeated-occurrence groups, 43 Production ID repeated-occurrence groups, 8 EVT short-number collision groups and 11 exact-content duplicate groups. The line-level review queue contains 693 identifier occurrences across 498 source files. Each occurrence is individually represented in the generated artifact with path, line and role candidate.
+The latest namespace-corrected manifest reports 30 Stable ID groups, 43 Production ID groups, 7 legacy Reference ID groups, 8 EVT short-number groups and 11 exact-content duplicate groups. The queue contains 695 identifier occurrences across 500 source files. The counts are review obligations, not counts of confirmed identity conflicts.
 
 The counts below are review obligations, not counts of confirmed identity conflicts.
 
@@ -24,7 +24,7 @@ The counts below are review obligations, not counts of confirmed identity confli
 | Production ID groups | 43 | No full group closure yet in this phase | 43 groups need role/lineage review; cross-check with Stable ID decisions |
 | EVT short-number collision groups | 8 | All 8 groups have a semantic identity/status decision: six legacy pairs are distinct events; 0050 is two distinct event identities; 0051 is one event plus a retained correction notice | Inbound/outbound reference audit for all 8 groups remains open; filename-prefix collision is retained and disclosed |
 | Exact-content duplicate groups | 11 | All 11 groups have non-destructive role-based mirror/alias proposals recorded | Final canonical promotion remains pending lineage and reference review |
-| Reference ID groups | 7 | All 7 legacy Reference ID groups have bounded role decisions in batch 002 | Parent/reference usage and any remaining non-collision links still need full edge review |\n| Local Markdown link edges | 1,020 | Structural existence check passed; 0 missing links in run 39517920781 | Semantic meaning of each edge is not yet individually proven |
+| Reference ID groups | 7 | All 7 legacy Reference ID groups have bounded role decisions in batch 002 | Parent/reference usage and any remaining non-collision links still need full edge review |
 | Declared parent edges | 38 | Structural resolution passed; 0 unresolved and 0 ambiguous | Parent/child meaning still requires source-level review |
 | Source files | 498 | Inventory and text extraction passed; 0 decode errors | Every file still needs a semantic role/domain classification or explicit DEFERRED decision |
 
@@ -54,11 +54,13 @@ Pairs 0005, 0006, 0019, 0026, 0029 and 0030 have distinct event subjects/titles 
 
 The canonical/alias register lists all 11 SHA-identical groups. Nine have role-based mirror candidates (operational governance/checkpoint/registry/architecture versus reference/provenance mirror). Two differently numbered registration/checkpoint pairs have earliest-commit candidates and zero inbound local Markdown links in the cited manifest. No file was deleted. These relationships remain proposed until final lineage and governance-role acceptance.
 
-## 3. Remaining EVT collision decisions
+## 3. EVT identity decisions and reference-audit boundary
 
-- EVT-0050: two differently titled event files; treat as separate identity candidates until full Stable/Production IDs, source references and lineage are read back.
-- EVT-0051: one event file and one path that was superseded/correction-notice material after an attempted number collision. Keep the correction notice visible and linked to active EVT-0052; do not silently renumber or delete it.
-- All six previously reviewed pairs still need inbound/outbound reference audit before claiming that all short references are unambiguous.
+- All eight EVT groups now have a semantic identity/status decision. Six legacy pairs are distinct event subjects sharing a short number.
+- EVT-0050 contains two distinct event identities, confirmed by separate full Stable IDs, Production IDs, titles and purposes.
+- EVT-0051 contains one canonical historical event plus a retained superseded correction notice that points to active EVT-0052. The correction notice is not a second canonical event.
+- Full inbound/outbound reference audit for all eight groups remains open. A semantic identity decision does not prove every short-number reference resolves to the intended event.
+- No event file was deleted or silently renumbered.
 
 ## 4. Required semantic decision fields
 
