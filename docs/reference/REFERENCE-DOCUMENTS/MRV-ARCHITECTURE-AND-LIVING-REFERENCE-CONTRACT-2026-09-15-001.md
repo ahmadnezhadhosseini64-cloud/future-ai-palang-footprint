@@ -1036,3 +1036,13 @@ The current repository excavation and reconciliation record is `docs/reference/R
 
 ## 36. اجرای خاک‌برداری و بازیابی شکاف‌ها — 2026-10-17
 پروندهٔ مرجع اجرای جاری: `docs/reference/REFERENCE-DOCUMENTS/REF-ARCHAEOLOGY-EXCAVATION-2026-10-17-001.md` (Stable ID: `REF-ARCHAEOLOGY-EXCAVATION-2026-10-17-001`; Production ID: `RAE-20261017-001`). این پرونده وضعیت واقعی نقاط ۰.۰، صف معماری، آینه‌های Library، Buffer، حافظهٔ پایدار، اقلام تاریخی بازیابی‌نشده و آزمون‌های E2E/پل حافظه را به هم متصل می‌کند. هر شکاف با شناسه و اقدام بعدی حفظ می‌شود؛ ثبت این اشاره‌گر به‌تنهایی ادغام مقصدی یا بسته‌شدن شکاف را اثبات نمی‌کند. Dropbox تا دستور صریح ادامه، OPEN / WAITING باقی می‌ماند. وضعیت هر مقصد باید مستقل و فقط پس از READ-BACK → MATCH → VERIFY به‌روزرسانی شود.
+
+
+## قاعدهٔ حاکم افزوده — ثبت مبتنی بر شاهد، نه گزارش صرف
+
+- **Stable ID:** `EVIDENCE-FIRST-REGISTRATION-AND-NO-REPORT-ONLY-GOVERNANCE-2026-10-20-001`
+- **Production ID:** `EFRNROG-2026-10-20-001`
+- **Version:** `1.0.0`
+- **مرجع کامل:** [سند ثبت مبتنی بر شاهد و ممنوعیت گزارش صرف](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/EVIDENCE-FIRST-REGISTRATION-AND-NO-REPORT-ONLY-GOVERNANCE-2026-10-20-001.md)
+
+برای هر فرمان «ثبت کن»، اقدام واقعی، بازخوانی، تطبیق و تأیید باید مقدم بر ادعای موفقیت باشند. گزارش صرف، جایگزین اجرا نیست. زمان پیام، اقدام، commit، بازخوانی و تأیید مستقل‌اند؛ زمان ناموجود UNKNOWN / UNVERIFIED می‌ماند. وضعیت مخزن، کتابخانه، بافر، حافظهٔ پایدار و Dropbox جداگانه اثبات می‌شود. تا زمانی که دروازه‌های الزامی بسته نشده‌اند، وضعیت کلی PARTIAL / OPEN باقی می‌ماند. این پیوند، تعهدات مقصدهای دیگر را خودبه‌خود کامل نمی‌کند.
