@@ -13,7 +13,7 @@
 - Origin / منشأ: پیام مستقیم کاربر مبنی بر اینکه تمام ورودی‌ها و خروجی‌ها لنگر، دو زمان، مستندسازی جامع، پیوستگی همه نقاط ۰.۰ و اتصال به معماری داشته باشند؛ همچنین تذکر صریح کاربر که در نبود زمان پیام کاربر، زمان پردازش دستیار باید ثبت شود.
 - Canonical reference / سند مرجع: [TWO-TIME-ANCHORING-AND-LIVING-CONTINUITY-ARCHITECTURE-2026-10-20-001](../../reference/REFERENCE-DOCUMENTS/TWO-TIME-ANCHORING-AND-LIVING-CONTINUITY-ARCHITECTURE-2026-10-20-001.md)
 - Parent contract / قرارداد والد: [UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001](../../reference/REFERENCE-DOCUMENTS/UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001.md)
-- Status / وضعیت: ثبت رویداد و سند مرجع در مخزن انجام شده؛ تأیید نهایی پس از بازخوانی و تطبیق همه فایل‌های مرتبط اعلام می‌شود. مقصدهای مستقل و اجرای خودکار سراسری همچنان نیازمند اثبات‌اند.
+- Status / وضعیت: REPOSITORY WRITE + READ-BACK + EXPECTED ID/TIMESTAMP/LINK MATCH VERIFIED across the event, reference, amended parent contract, prior interaction record and all four linked indexes. Independent destinations and global automatic execution remain OPEN / UNVERIFIED.
 
 ## 1. تصمیم و قاعدهٔ تثبیت‌شده
 از این پس برای هر تعامل اثرگذار بر پروژه:
