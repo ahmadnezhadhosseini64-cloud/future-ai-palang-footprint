@@ -144,3 +144,13 @@ For the latest repository excavation and reconciliation state, retrieve `docs/re
 - **Binding rule:** before claiming completion, retrieve current evidence, perform destination-specific read-back and content match, distinguish observation from inference/unknowns, record timestamps only with evidence, and preserve open gaps. A status report never substitutes for the complete reference or actual execution.
 - **Acceptance:** this link binds the command to the complete contract; it does not itself prove that all destination-specific or architectural gates are closed.
 - **Current known gates:** Library copy pending; Buffer and Persistent Memory not independently verified; Dropbox connection/test remains OPEN / WAITING. Overall command status remains PARTIAL / OPEN until required gates are independently proven.
+
+
+## 12. الزام اجرایی: شاهد واقعی پیش از گزارش
+
+- **Stable ID:** `EVIDENCE-FIRST-REGISTRATION-AND-NO-REPORT-ONLY-GOVERNANCE-2026-10-20-001`
+- **Production ID:** `EFRNROG-2026-10-20-001`
+- **Version:** `1.0.0`
+- **سند مرجع کامل:** [ثبت مبتنی بر شاهد و ممنوعیت گزارش صرف](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/EVIDENCE-FIRST-REGISTRATION-AND-NO-REPORT-ONLY-GOVERNANCE-2026-10-20-001.md)
+
+«ثبت کن» باید با بررسی واقعی اسناد/منابع در دسترس و انجام مراحل قابل اجرا پیش برود؛ پاسخ توصیفی یا اعلام وضعیت به‌تنهایی کافی نیست. بعد از هر نوشتن، همان مقصد باید دوباره خوانده شود و دامنهٔ تطبیق روشن باشد. هیچ زمان، اقدام، مقصد یا تأییدی ساخته نمی‌شود. اگر دسترسی یا ابزار مانع شد، همان مرحله با مانع و اقدام بعدی OPEN/PENDING می‌ماند. وضعیت کلی تا تکمیل مراحل الزامی PARTIAL / OPEN است. این بخش، قرارداد موجود را تکمیل می‌کند و قواعد قبلی یا لنگرهای ۰.۰ را حذف نمی‌کند.
