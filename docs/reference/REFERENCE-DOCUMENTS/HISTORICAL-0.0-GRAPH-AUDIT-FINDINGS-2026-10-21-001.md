@@ -176,3 +176,8 @@ The follow-up [H0CALDR-2026-10-21-001](./HISTORICAL-0.0-CANONICAL-ALIAS-LINEAGE-
 
 ## 11. Verified manifest snapshot
 The expanded, bold-metadata-aware manifest builder has a successful run recorded in [H0GMS-2026-10-21-001](./HISTORICAL-0.0-GRAPH-MANIFEST-SNAPSHOT-2026-10-21-001.md). For audited commit `221b15b324eda4a454272c18e5ddf37dc22b75d8`, it scanned 492 source files, found 0 missing local Markdown links, extracted 38 parent edges with 0 unresolved and 0 ambiguous edges, and recorded 11 duplicate groups. The builder counts 33 Stable ID and 42 Production ID repeated-occurrence groups; these are not automatically true identity conflicts and require semantic role classification.
+
+
+
+## 12. Latest snapshot read-back
+The living master and snapshot register now point to [H0GMS-2026-10-21-001 v1.1.0](./HISTORICAL-0.0-GRAPH-MANIFEST-SNAPSHOT-2026-10-21-001.md): run 39510205907, artifact 12305736053, audited commit `51eb2caf2679c54588765d78159f1b96b0aec652`. That run scanned 493 source files, checked 934 local Markdown links with zero missing targets, and extracted 38 parent edges with zero unresolved and zero ambiguous edges. Eleven exact-content duplicate groups have candidate relationships; semantic equivalence and repeated ID occurrence adjudication remain open.
