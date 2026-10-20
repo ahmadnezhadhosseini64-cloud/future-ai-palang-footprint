@@ -56,3 +56,23 @@
 3. بازخوانی معنایی رویدادها و اسناد مرجع، استخراج یافته‌ها با منبع و اتصال به Master/Child/Rahm.
 4. ساخت manifest canonical و alias/lineage، بدون حذف فایل‌های تاریخی.
 5. رفع شکاف‌های قابل‌حل با آزمون و read-back؛ بقیه OPEN / ACTIVE بمانند.
+
+
+## Final cross-index read-back
+- Read-back UTC: `2026-10-20T21:43:59.130Z`.
+- PIATGCG v1.0.6 SHA: `fc913067f597b4c9afb915bc36f1156aed1f1ab8` — expected version, EVT-0049, H0G-RDR and G-20 all matched.
+- C0GIR v1.0.5 SHA: `4a4be4b6c6797c713b567fd17bfe9a6c072d486b` — expected version, 689 snapshot, EVT-0049 and H0G-RDR all matched.
+- H0G-RDR SHA: `4293d43f6257684faf6e134fdd286c871acba16f` — ID, workflow evidence, G-20 and EVT-0048 → EVT-0049 matched.
+- Integration Queue SHA: `b3176404d7b52a1e2bf2a5712cea84f1917d964a` — H0G-RDR, G-15, G-20 and EVT-0048 → EVT-0049 matched.
+- Open Gaps Register SHA: `55320ef227223553b13fd046041434f2234e1da7` — H0G-RDR, G-15 and G-20 matched.
+- Reference Index SHA: `f0b4f3ac39c8a3d394323d39726a54b8a54693e5` — H0G-RDR and EVT49 row matched.
+- Behavior Trace Index SHA: `c1492172e2d408088b2364d294cc6555a39024f4` — EVT-0048, EVT-0049 and H0G-RDR matched.
+- 0.0 registry SHA: `1d6c973a1c71830b8b535733b1e856598b69fa4e` — H0G-RDR, G-20 and recorded snapshot matched.
+- All 9 targeted read-back checks passed. This is a scoped check of expected fields/links, not proof that every semantic edge is reconciled.
+
+## Latest observed tree before this closeout append
+- Observation UTC: `2026-10-20T21:44:05.429Z`.
+- Tree SHA: `c7e8abc7f6bb81d2962b2284eb9875346f984a82`; `truncated=false`.
+- Total files: 696; paths containing 0.0: 95; checkpoint paths: 38; EVT files: 53; Reference Documents paths: 85; generated Evidence Gate artifacts: 214.
+- Counts vary as registration commits and workflow evidence artifacts are added; preserve each timestamped snapshot separately.
+- Assistant append processing UTC: `2026-10-20T21:44:13.520Z`.
