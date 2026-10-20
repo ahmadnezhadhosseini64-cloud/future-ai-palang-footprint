@@ -510,8 +510,8 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 
 ## آخرین snapshot سراسری گراف 2026-10-21
 - مرجع جاری: [C0GIR](../reference/REFERENCE-DOCUMENTS/CANONICAL-0.0-GRAPH-INVENTORY-AND-RECONCILIATION-2026-10-21-001.md).
-- Tree SHA: `19058e7d68a540862c618176c4c5e64109c62c0c`؛ درخت کامل `truncated=false`.
-- تعداد فایل‌های مخزن در snapshot: 653؛ مسیرهای دارای `0.0`: 93؛ مسیرهای checkpoint: 38؛ فایل‌های EVT: 51؛ اسناد مرجع مرتبط با فیلتر نام: 48.
-- این اعداد، شمارش مسیرها در snapshot مشخص‌اند، نه تعداد لنگرهای یکتا. برای گراف canonical، استخراج شناسه‌های درون‌متنی و همهٔ رابطه‌ها همچنان باز است.
+- Tree SHA: `2a688f89dfc945ba39644aaacdfbfc7389a25afd`؛ درخت کامل `truncated=false`؛ snapshot مشاهده‌شده پیش از commitهای بعدی است.
+- تعداد فایل‌های مخزن در snapshot: 670؛ مسیرهای دارای `0.0`: 93؛ مسیرهای checkpoint: 38؛ فایل‌های EVT: 51؛ فایل‌های evidence-gate تولیدشده: 192. این شمارش زمان‌مند است؛ workflow موفق ممکن است بعد از هر push فایل evidence تازه بسازد.
+- این اعداد، شمارش مسیرها در snapshot مشخص‌اند، نه تعداد لنگرهای یکتا. فایل‌های evidence تولیدشده باید از شمارش گره‌های منبع معماری جدا نگه داشته شوند (G-14). برای گراف canonical، استخراج شناسه‌های درون‌متنی و همهٔ رابطه‌ها همچنان باز است.
 - سند حاکم لنگر/زمان: [PIATGCG](../reference/REFERENCE-DOCUMENTS/PERMANENT-INTERACTION-ANCHORING-TIMESTAMP-GOVERNANCE-AND-CANONICAL-GRAPH-MASTER-REFERENCE-2026-10-21-001.md).
 
