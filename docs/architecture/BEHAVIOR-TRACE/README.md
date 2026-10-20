@@ -140,3 +140,10 @@
 - رویداد ورودی/تصمیم والد: [EVT-0033](./EVT-0033-TWO-TIME-ANCHORING-AND-LIVING-CONTINUITY-2026-10-20.md).
 - سند مرجع تکمیلی: [ثبت دوزمانه و تداوم زنده](../../reference/REFERENCE-DOCUMENTS/TWO-TIME-ANCHORING-AND-LIVING-CONTINUITY-ARCHITECTURE-2026-10-20-001.md).
 - زمان پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان پردازش دستیار: 2026-10-20T22:23:18+03:30.
+
+
+## EVT-0035 — فعال‌سازی ثبت زنده و آزمون
+- [رویداد EVT-0035](./EVT-0035-LIVING-ANCHORING-AND-TEST-GOVERNANCE-2026-10-20.md).
+- [سند مرجع LARTG](../../reference/REFERENCE-DOCUMENTS/LIVING-ANCHORING-REGISTRATION-AND-TEST-GOVERNANCE-2026-10-20-001.md).
+- زمان پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان پردازش دستیار: 2026-10-20T22:31:33+03:30.
+- آزمون پذیرش تعریف شده؛ نتیجهٔ کامل تا انجام read-back و آزمون مقصدهای مستقل/بازیابی، PASS اعلام نمی‌شود.
