@@ -2,16 +2,16 @@
 
 - Stable ID: HISTORICAL-0.0-GRAPH-MANIFEST-SNAPSHOT-2026-10-21-001
 - Production ID: H0GMS-2026-10-21-001
-- Version: 1.0.0
+- Version: 1.1.0
 - Project: Future AI / Palang Footprint / HAIF
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Status: ACTIVE / LIVING / SNAPSHOT-EVIDENCE
-- Audit UTC: 2026-10-20T22:42:36Z
-- Audited commit: `221b15b324eda4a454272c18e5ddf37dc22b75d8`
-- Workflow run: [39510053810 — Living Architecture Audit](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39510053810)
-- Artifact ID: 12304693811
-- Artifact digest: `sha256:04838c0f6560dbda83a101d1d32ef6e0fe165c1474aaf19634598435801ac1dd`
-- Artifact expires: 2027-01-18T22:42:30Z
+- Audit UTC: 2026-10-20T22:43:55Z
+- Audited commit: `51eb2caf2679c54588765d78159f1b96b0aec652`
+- Workflow run: [39510205907 — Living Architecture Audit](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39510205907)
+- Artifact ID: 12305736053
+- Artifact digest: `sha256:0c7eee16fccbdeb095dcbd5f4cafb9cf5e9312f819f92e6dec9a8acb3f026866`
+- Artifact expires: 2027-01-18T22:43:48Z
 - Manifest builder: [scripts/build_historical_graph_manifest.py](../../../scripts/build_historical_graph_manifest.py)
 - Full machine-readable manifest and JSON/text audit outputs are inside the linked workflow artifact. The builder and this durable snapshot record remain in the repository so the audit can be reproduced.
 
@@ -19,16 +19,16 @@
 
 | Metric | Result |
 |---|---:|
-| All repository files including generated evidence | 776 |
-| Source files | 492 |
-| Generated Evidence Gate files | 284 |
-| Paths containing 0.0 | 98 |
+| All repository files including generated evidence | 785 |
+| Source files | 493 |
+| Generated Evidence Gate files | 292 |
+| Paths containing 0.0 | 99 |
 | Checkpoint paths | 38 |
 | EVT-named files | 58 |
-| Reference-document paths | 89 |
+| Reference-document paths | 90 |
 | Text nodes scanned | 492 |
 | Decode errors | 0 |
-| Local Markdown link edges | 912 |
+| Local Markdown link edges | 934 |
 | Missing local Markdown links | **0** |
 | Declared parent edges extracted | 38 |
 | Unresolved parent edges | **0** |
@@ -55,7 +55,7 @@ The legacy historical audit script reported 13 Stable ID groups and 24 Productio
 2. The 8 EVT-number collision groups remain visible. EVT number alone is not treated as a unique identifier. In particular, EVT-0050 has two different full event records; the graph must use full Stable ID and exact path to distinguish them.
 3. The initially misnumbered new EVT-0051 path was marked SUPERSEDED and redirects to the active EVT-0052 record. Deletion was not accepted, so this non-canonical correction path remains disclosed as a known collision artifact.
 4. The 11 canonical/mirror/alias decisions are proposals, not permission to delete or overwrite copies. Preserve all paths until inbound references and lineage have been fully reviewed.
-5. Full natural-language semantic equivalence of all 492 source documents has not been proven by a structural scan. Semantic promotion remains OPEN / PARTIAL until content-by-content review is complete.
+5. Full natural-language semantic equivalence of all 493 source documents has not been proven by a structural scan. Semantic promotion remains OPEN / PARTIAL until content-by-content review is complete.
 
 ## 4. Related governing records
 
@@ -68,4 +68,4 @@ The legacy historical audit script reported 13 Stable ID groups and 24 Productio
 
 ## 5. Change log
 
-- v1.0.0 — records the complete successful manifest run, artifact digest, zero broken links, zero unresolved/ambiguous parent edges, duplicate/ID counts and explicit remaining semantic limitations.
+- v1.1.0 — refreshes the artifact-bound snapshot to run 39510205907, artifact digest, zero broken links, zero unresolved/ambiguous parent edges, duplicate/ID counts and explicit remaining semantic limitations.
