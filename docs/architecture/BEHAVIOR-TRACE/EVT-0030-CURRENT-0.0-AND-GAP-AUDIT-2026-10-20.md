@@ -8,7 +8,7 @@
 - Project timezone / منطقهٔ زمانی پروژه: Asia/Tehran (UTC+03:30)
 - Owner / مالک: احمد پلنگ (Ahmad Nezhadhosseini)
 - Project / پروژه: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status / وضعیت: REPOSITORY REGISTRATION REQUESTED; read-back and index/queue reconciliation required.
+- Status / وضعیت: REPOSITORY WRITE + READ-BACK + MATCH VERIFIED for this event and four linked files; full historical 0.0 reconciliation and cross-destination execution remain OPEN.
 - Origin / منشأ: درخواست کاربر برای بررسی آخرین نقطهٔ ۰.۰، سنجش نیاز به «چهارتایی‌کردن»، بررسی هدف و شکاف‌ها، و اجرای قواعد لنگر، زمان‌گذاری و مستندسازی.
 - Current checkpoint: `checkpoints/PALANG-0.0-MAIN-LOCK-2026-10-20-002.md`
 - Prior checkpoint preserved: `checkpoints/PALANG-0.0-CURRENT-2026-10-20-001.md`
@@ -54,10 +54,15 @@ Continuity of Intelligence / Continuity of Work — تداوم هوشمندی و
 5. هر شکاف را فقط با اصلاح واقعی، بازخوانی مقصد، آزمون مناسب و ثبت شاهد ببند.
 
 ## 6. وضعیت مقصدها
-- Repository / مخزن: نوشتن این فایل درخواست شده؛ تا بازخوانی و تطبیق نهایی، VERIFIED اعلام نشود.
-- Reference Index / نمایه: پیوند این رویداد باید اضافه و بازخوانی شود.
-- Integration Queue / صف معماری: پیوند و وضعیت شکاف باید بررسی/به‌روزرسانی شود.
-- Behavior Trace / دفتر رفتار: همین پرونده رویداد است؛ نمایه باید به‌روزرسانی و بازخوانی شود.
+- Repository / مخزن: VERIFIED — این رویداد پس از نوشتن از همان مسیر بازخوانی شد؛ شناسه، G-AUTO-08 و محتوای کلیدی تطبیق داده شد. Commit اولیه: e0c609fa842beba1ad1586eb3d608d8276a59922.
+- Reference Index / نمایه مرجع: پیوند EVT30 اضافه و از همان مسیر بازخوانی شد؛ شناسه تطبیق دارد.
+- Integration Queue / صف معماری: ردیف EVT30 اضافه و از همان مسیر بازخوانی شد؛ وضعیت OPEN / PARTIAL حفظ شد.
+- Behavior Trace / دفتر رفتار: پیوند EVT-0030 اضافه و بازخوانی شد.
+- Execution Gate / دروازهٔ اجرا: ارجاع EVT-0030 اضافه و بازخوانی شد؛ شکاف اجرا بسته نشده است.
+- Reference Index / نمایه: پیوند اضافه و بازخوانی شده؛ تطبیق شناسه تأیید شد.
+- Integration Queue / صف معماری: پیوند اضافه و بازخوانی شده؛ مورد باز باقی است.
+- Behavior Trace / دفتر رفتار: پیوند اضافه و بازخوانی شده؛ این رویداد ثبت شده است.
+- Execution Gate / دروازهٔ اجرا: ارجاع ممیزی اضافه و بازخوانی شده؛ گپ اجرایی هنوز OPEN / PARTIAL است.
 - Library / صندوق: NOT VERIFIED.
 - Buffer / بافر: NOT VERIFIED.
 - Persistent Memory / حافظهٔ پایدار: ثبت مستقل این پرونده NOT VERIFIED.
