@@ -32,3 +32,17 @@ The exact user-message time is unknown. The processing time above is not a subst
 
 ## Next action
 Continue with G-01: enumerate all historical 0.0 case files and anchor IDs, reconcile parent/child links without overwriting prior anchors, then read back the complete index. Preserve Dropbox as a separate OPEN branch and only test it when the required connection/action is available and authorized.
+
+## Repository read-back verification
+After the initial writes, the following seven files were fetched again from the repository default branch and checked for their expected IDs, links and audit statuses:
+- EVT-0043 input event — content SHA `a66f0610eacaf128c4e9b63bea5209843c3e79a3`.
+- EVT-0044 output event — content SHA at read-back before this proof append: `75bcb8530614351f2c9db7656c6b5f54ce10d6f1`.
+- AAAPHR master audit reference — content SHA `d7befbae086af3a65a9bd4c73a9f25a1693e2dd8`.
+- Reference index — content SHA `d39e3d6aa3627ca08d0bf2501133fb22e5d0e9ac`.
+- 0.0 registry — content SHA `56d49d701d1ebcef75887b06fec0e7cfe03f5e51`.
+- Behavior-trace index — content SHA `a1fba8c23f5c6909db1a0a0bbc99d50e9c12ebd1`.
+- Integration queue — content SHA `0b93cca8263a725d8123eadb35e2de0c67e3d7d0`.
+All seven content checks passed. The index update commit was observed with GitHub metadata timestamp `2026-10-20T20:37:17Z` = `2026-10-21T00:07:17+03:30` (Asia/Tehran). This is a repository commit timestamp, not the user's message time or an independent external-destination timestamp.
+
+**Scoped status:** Repository write + read-back + expected-ID/link/status checks = VERIFIED for the seven files above. **Not verified:** complete historical 0.0 inventory; Buffer/Library/Persistent Memory/Dropbox; runtime-wide automatic execution; end-to-end recovery; host-to-host transfer; execution of all acceptance tests. G-01 through G-10 remain open/partial according to their stated criteria.
+
