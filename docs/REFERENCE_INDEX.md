@@ -45,3 +45,10 @@ This index is a navigation layer, not a substitute for the referenced evidence. 
 ## 0.0
 
 At `0.0`, retrieval precedes response: retrieve the canonical source, verify its state, reconcile contradictions, resolve inherited rules, create the required timestamped connection/checkpoint record, verify the required fields by read-back, report evidence boundaries, then continue.
+
+
+## Architecture verification record — 2026-10-20
+
+- `ARCHITECTURE-BUILD-VERIFICATION-2026-10-20-001` / `ABV-2026-10-20-001`: [EVT-0024 — بازبینی ورود قرارداد به ساختمان پروژه](architecture/BEHAVIOR-TRACE/EVT-0024-ARCHITECTURE-BUILD-VERIFICATION-2026-10-20.md).
+- نتیجه: اجرای ممیزی ساختاری GitHub Actions با شناسه `39447416772` به `success` رسید. این نتیجه فقط ساختمان داخلی مخزن را پوشش می‌دهد؛ capture سراسری گفتگو و مقصدهای بیرونی باز/اثبات‌نشده‌اند.
+- زمان دقیق پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان اجرای workflow جایگزین آن نیست.
