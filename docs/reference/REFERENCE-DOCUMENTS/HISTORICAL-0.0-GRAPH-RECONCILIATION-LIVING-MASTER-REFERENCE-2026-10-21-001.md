@@ -222,3 +222,9 @@ This document can be considered repository-integrated only after the file, index
 - Current truth: structural acceptance is proven for the cited audited commit; full semantic reconciliation remains OPEN / PARTIAL. This addendum does not close G-01/G-12/G-16 and does not claim all relationships have been reviewed.
 - Repository integration pointers were updated in docs/REFERENCE_INDEX.md, docs/architecture/INTEGRATION-QUEUE/README.md, docs/architecture/BEHAVIOR-TRACE/README.md and docs/0.0/README.md. These updates require fresh structural audit and read-back before their links are accepted as final.
 - Change log: v1.8.0 adds the semantic architecture baseline as the governing continuation point and defines the next acceptance gate.
+
+
+## Addendum v1.9.0 — first semantic batch decision
+- First EVT batch decisions are recorded in [H0EVTCA-2026-10-21-001](./HISTORICAL-0.0-EVT-NUMBER-COLLISION-ADJUDICATION-2026-10-21-001.md).
+- Six legacy short-number pairs were reviewed by their event titles and available full identifiers and classified as distinct event identities sharing a short number. Their records are preserved; references and numbering policy remain to be checked before any final closure.
+- The semantic architecture baseline is [H0SAB](./HISTORICAL-0.0-SEMANTIC-ARCHITECTURE-BASELINE-2026-10-21-001.md); current status remains OPEN / PARTIAL for the full 493-file graph.
