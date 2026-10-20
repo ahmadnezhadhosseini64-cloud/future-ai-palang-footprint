@@ -279,3 +279,5 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - **H0IRAR-2026-10-21-001:** [دفتر داوری گروه‌های شناسه و روابط](reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-IDENTIFIER-AND-RELATION-ADJUDICATION-REGISTER-2026-10-21-001.md) — وضعیت تمام گروه‌ها و موارد باز، بدون ادعای بستن صوری.
 
 - **Latest H0SRQS addendum:** [ممیزی تازهٔ 39517544772](reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-SEMANTIC-REVIEW-QUEUE-SNAPSHOT-2026-10-21-001.md) — 500 فایل منبع، 1,009 پیوند محلی بدون پیوند شکسته، 695 رخداد شناسه؛ اثبات معنایی کامل همچنان باز است.
+
+- **H0IRRB2-2026-10-21-001:** [دفتر داوری معنایی دستهٔ دوم](reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-IDENTIFIER-ROLE-REVIEW-BATCH-002-2026-10-21.md) — پنج گروه Stable ID و هفت گروه Reference ID با شاهد منبع داوری شدند؛ شناسه‌های Reference از Stable ID جدا شدند.
