@@ -3,7 +3,7 @@
 ## 0. شناسنامه، لنگر و وضعیت
 - **Stable ID / شناسهٔ پایدار:** CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001
 - **Production ID / شناسهٔ تولید:** CCCMR-2026-10-21-001
-- **Version / نسخه:** 1.0.0
+- **Version / نسخه:** 1.0.1
 - **Owner / مالک:** Ahmad Nezhadhosseini / احمد پلنگ
 - **Project / پروژه:** Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
 - **Architecture target / هدف معماری:** HAIF — Human–AI Interaction Future (آیندهٔ تعامل انسان و هوش مصنوعی)
@@ -195,3 +195,10 @@
 - هیچ فایل، لنگر یا شکافی را بی‌صدا حذف یا بسته اعلام نکن.
 - UTC مبنای زمان است؛ زمان تهران فقط تبدیل مشتق‌شده.
 - وضعیت ACTIVE / LIVING یعنی سند مرجع جاری و قابل‌به‌روزرسانی است؛ نه اینکه همهٔ شکاف‌ها بسته شده باشند.
+
+
+## 14. خروجی ثبت و بازخوانی
+- Output event: [EVT-0051](../../architecture/BEHAVIOR-TRACE/EVT-0051-ASSISTANT-CONSOLIDATED-MASTER-CREATION-AND-READBACK-2026-10-21.md).
+- Input event: [EVT-0050](../../architecture/BEHAVIOR-TRACE/EVT-0050-USER-REQUEST-CONSOLIDATED-LIVING-MASTER-CONTINUATION-2026-10-21.md).
+- The master document has been fetched from the repository after creation; Stable ID, Production ID, Version, current snapshot, architecture, gap table and next-action sequence are present.
+- Index/queue cross-links are being verified separately. The final closeout must record which files passed read-back; this does not close the historical graph gaps.
