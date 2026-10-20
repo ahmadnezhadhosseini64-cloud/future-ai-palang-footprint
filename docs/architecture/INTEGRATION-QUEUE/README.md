@@ -765,3 +765,8 @@ The queue index and the timestamp case must each be read back after this update.
 
 
 - EVT-0048 → EVT-0049: [درخواست](../BEHAVIOR-TRACE/EVT-0048-USER-REQUEST-FULL-HISTORICAL-0.0-GRAPH-RECONCILIATION-2026-10-21.md) / [خروجی و شواهد اجرا](../BEHAVIOR-TRACE/EVT-0049-ASSISTANT-EXECUTION-AND-RECONCILIATION-2026-10-21.md). Workflow 39502190776 SUCCESS؛ گراف کامل معنایی همچنان OPEN / PARTIAL.
+
+
+## Canonical continuation anchor — CCCMR-2026-10-21-001
+- [سند مرجع مادر تجمیعی](../../reference/REFERENCE-DOCUMENTS/CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001.md) — ACTIVE / LIVING.
+- این سند مبنای نوبت بعد است؛ ابتدا EVT-0051 و آخرین artifact ممیزی را بازخوانی کن. گام نخست باقی‌مانده: خواندن گزارش کامل artifact و ثبت دقیق duplicate groups، برخورد شناسه‌ها، پیوندهای شکسته و parentهای مفقود؛ سپس manifest canonical/alias/lineage و مرور معنایی کامل.
