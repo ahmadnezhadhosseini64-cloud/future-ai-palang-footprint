@@ -20,3 +20,11 @@
 
 ## Current continuation rule
 Next work must start from CCCMR-2026-10-21-001, then inspect this EVT-0051 and the latest audit artifact; the first unfinished task is to read the artifact's actual report and register exact collision, duplicate, missing-parent and broken-link findings. Do not repeat verified checks without cause; do not close unresolved gaps without evidence.
+
+
+## Final cross-index read-back
+- Read-back UTC: `2026-10-20T22:14:13.683Z`.
+- Consolidated master CCCMR v1.0.1 was fetched from the repository; Stable ID, Production ID, current snapshot, HAIF architecture, G-01/G-11–G-20 gap table and next-step sequence were present. The master was then advanced to v1.0.2 to include this snapshot/read-back record; a fresh fetch of v1.0.2 is required for its own final read-back.
+- PIATGCG, C0GIR, Reference Index, Behavior Trace Index, Integration Queue, Open Gaps register and 0.0 registry all contain a link/pointer to CCCMR.
+- Tree snapshot: SHA `d47947c2fefe4faede895d8e754a369b64d1ce34`, not truncated; 715 files, 95 paths containing 0.0, 38 checkpoint paths, 55 EVT paths, 86 Reference Documents paths, 230 generated Evidence Gate files.
+- Status: master registration and cross-index connection VERIFIED for the inspected fields; full historical semantic reconciliation, canonical alias adjudication and external destinations remain OPEN / PARTIAL.
