@@ -3,7 +3,7 @@
 ## شناسنامه و وضعیت
 - Stable ID / شناسه پایدار: PERMANENT-INTERACTION-ANCHORING-TIMESTAMP-GOVERNANCE-AND-CANONICAL-GRAPH-MASTER-REFERENCE-2026-10-21-001
 - Production ID / شناسه تولید: PIATGCG-2026-10-21-001
-- Version / نسخه: 1.0.6
+- Version / نسخه: 1.0.7
 - Owner / مالک: Ahmad Nezhadhosseini / احمد پلنگ
 - Project / پروژه: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
 - Scope / دامنه: حاکمیت تعامل، لنگر ورودی/خروجی، زمان‌گذاری، گراف تاریخی ۰.۰، ثبت معماری، خاک‌برداری، بستهٔ انتقال میزبان
@@ -268,3 +268,10 @@ T1 ورودی و خروجی قابل‌بازیابی؛ T2 زمان‌های م�
 - Eight core repository files were fetched after integration writes and passed targeted checks for expected IDs, versions, links and G-15/G-20 entries.
 - Exact duplicate/collision/broken-link counts are not claimed because the artifact's full report has not been directly inspected here. Full semantic review remains OPEN / PARTIAL.
 - UTC is primary for new registration, execution and read-back; local time is derived display only; user-message time remains UNKNOWN / UNVERIFIED when unsourced.
+
+
+## 37. سند مرجع مادر تجمیعی و نقطهٔ ادامهٔ canonical
+- **Current continuation master:** [CCCMR-2026-10-21-001](./CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001.md), Version 1.0.0, Status ACTIVE / LIVING / CANONICAL CONTINUATION BASE.
+- **Input event:** [EVT-0050](../../architecture/BEHAVIOR-TRACE/EVT-0050-USER-REQUEST-CONSOLIDATED-LIVING-MASTER-CONTINUATION-2026-10-21.md).
+- **Rule:** For the next continuation, read CCCMR first, then the latest EVT-0051, latest graph audit artifact, and only then continue G-01/G-12/G-13/G-15/G-16. Do not restart completed checks without reason or claim unresolved work closed.
+- UTC is the primary timestamp; Asia/Tehran is derived display only; user-message time is UNKNOWN / UNVERIFIED when unsourced.
