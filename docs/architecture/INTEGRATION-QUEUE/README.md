@@ -721,3 +721,9 @@ The queue index and the timestamp case must each be read back after this update.
 - قرارداد فرمان «ثبت کن» به چرخهٔ کامل گسترش یافته؛ آزمون انتقال میزبان، مقصدهای مستقل، گراف تاریخی ۰.۰ و بازیابی سرتاسری هنوز بازند تا شواهد جداگانه ثبت شود.
 
 - لنگر خروجی دستیار: [EVT-0038](../BEHAVIOR-TRACE/EVT-0038-ASSISTANT-EXECUTION-AND-PORTABLE-HAIF-REFERENCE-2026-10-20.md). آزمون انتقال به میزبان دیگر و مقصدهای مستقل همچنان بازند.
+
+
+## ITDCT / EVT-0039 — مسیر تعامل به کشف
+- سند مرجع: [ITDCT](../../reference/REFERENCE-DOCUMENTS/INTERACTION-TO-DISCOVERY-AND-COMPLETE-TRACE-MASTER-REFERENCE-2026-10-20-001.md).
+- رویداد ورودی: [EVT-0039](../BEHAVIOR-TRACE/EVT-0039-INTERACTION-TO-DISCOVERY-AND-COMPLETE-TRACE-REQUEST-2026-10-20.md).
+- کار بعدی: بازخوانی و آزمون پیوندها؛ گراف تاریخی ۰.۰، Dropbox، مقصدهای مستقل و بازیابی سرتاسری باز می‌مانند.
