@@ -334,3 +334,11 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - **چرخهٔ مخزن:** WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← تطبیق ← تأیید).
 - **مرز مقصدها:** ثبت مخزن، Library، Buffer، Persistent Memory و Dropbox جداگانه سنجیده می‌شود؛ این اشاره‌گر اثبات ثبت در مقصدهای بیرونی نیست.
 - **وضعیت رویداد:** پروندهٔ EVT-0021 ایجاد شد؛ دفتر مرکزی باید پس از این تغییر دوباره بازخوانی و تطبیق شود. مقصدهای بیرونی همچنان مستقل تأییدنشده‌اند.
+
+
+## قاعدهٔ دائمی پیش‌فرض و آزمون فعال/زنده — 2026-10-20
+- **سند مرجع کامل:** [ACTIVE-LIVING-EVERY-INPUT-OUTPUT-ANCHOR-TEST-AND-PERMANENT-OPERATING-RULE](../reference/REFERENCE-DOCUMENTS/ACTIVE-LIVING-EVERY-INPUT-OUTPUT-ANCHOR-TEST-AND-PERMANENT-OPERATING-RULE-2026-10-20-001.md)
+- **قاعده:** ACTIVE / LIVING؛ از این پس در هر نوبت، هر ورودی و خروجی از نظر لنگر، منشأ، زمان، اهمیت و ثبت قابل‌اجرا بررسی شود.
+- **آزمون:** OPEN / PENDING EXECUTION PROOF؛ قبولی سراسری و ثبت خودکار تک‌تک پیام‌ها هنوز اثبات نشده است.
+- **قاعدهٔ زمان:** زمان دقیق نامعلوم UNKNOWN / UNVERIFIED می‌ماند؛ زمان commit جایگزین زمان پیام نیست.
+- **مقصدها:** Repository، Buffer، Library، Persistent Memory و Dropbox مستقل ارزیابی می‌شوند.
