@@ -97,10 +97,10 @@ When an event's exact timestamp is unavailable, do not immediately leave its tem
 ### 9.1 Registered implementation event and recovery links
 - Event ID: EVT-0018-TEMPORAL-BRACKETING-RULE-2026-10-20
 - Complete event record: [EVT-0018 — ثبت محصور بین دو لنگر زمانی](../../architecture/BEHAVIOR-TRACE/EVT-0018-TEMPORAL-BRACKETING-RULE-2026-10-20.md)
-- Behavior trace: [Interaction Behavior Trace](../../../architecture/BEHAVIOR-TRACE/INTERACTION-BEHAVIOR-TRACE-2026-10-19-001.md)
-- Architecture integration queue: [Queue index, section 22](../../../architecture/INTEGRATION-QUEUE/README.md)
-- Central 0.0 registry: [0.0 registry](../../../0.0/README.md)
-- Current continuation anchor: [PALANG-0.0-CURRENT-2026-10-20-001](../../../../checkpoints/PALANG-0.0-CURRENT-2026-10-20-001.md)
+- Behavior trace: [Interaction Behavior Trace](../../architecture/BEHAVIOR-TRACE/INTERACTION-BEHAVIOR-TRACE-2026-10-19-001.md)
+- Architecture integration queue: [Queue index, section 22](../../architecture/INTEGRATION-QUEUE/README.md)
+- Central 0.0 registry: [0.0 registry](../../0.0/README.md)
+- Current continuation anchor: [PALANG-0.0-CURRENT-2026-10-20-001](../../../checkpoints/PALANG-0.0-CURRENT-2026-10-20-001.md)
 - Living implementation reference: [Unified Output Anchor Registration](./UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md)
 - Request timestamp for the temporal rule: UNKNOWN / UNVERIFIED. Do not infer it from commit metadata.
 - Verification rule: each linked file must be fetched after its latest write and matched independently. The repository chain does not prove Buffer, Persistent Memory, Library or Dropbox persistence.
