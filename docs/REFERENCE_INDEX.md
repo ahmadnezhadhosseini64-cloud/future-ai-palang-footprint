@@ -9,6 +9,7 @@
 
 | ID | Document | Role | Status |
 |---|---|---|---|
+| EXCAVATION-ROUTINE-EXECUTION-CONTRACT-2026-10-20-001 | `docs/architecture/INTEGRATION-QUEUE/EXCAVATION-ROUTINE-EXECUTION-CONTRACT-2026-10-20-001.md` | قرارداد حاکم اجرای روتین خاک‌برداری؛ تکمیل کارهای باز و آزمون مقصدها | REPOSITORY WRITE + READ-BACK VERIFIED; external destinations and full routine execution remain unverified |
 | UIALAC-2026-10-20-001 | `docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001.md` | قرارداد جامع لنگرگذاری، ثبت، مستندسازی، سه سطح ماندگاری و تداوم زنده | REPOSITORY WRITE + READ-BACK VERIFIED; architecture index linked; Buffer/Persistent Memory and automatic execution unverified |
 | SRC-2026-08-29-001 | `docs/STABLE_RETRIEVAL_CORE.md` | Stable external retrieval contract | VERIFIED / ACTIVE |
 | RRT-2026-08-29-001 | `docs/RETRIEVAL_RUNTIME.md` | Operational retrieval sequence | VERIFIED / ACTIVE |
