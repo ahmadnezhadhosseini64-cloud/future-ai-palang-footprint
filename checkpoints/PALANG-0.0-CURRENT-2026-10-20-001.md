@@ -77,3 +77,13 @@ This record is authored from the user instruction and available conversation con
 - Queue index: [docs/architecture/INTEGRATION-QUEUE/README.md](../docs/architecture/INTEGRATION-QUEUE/README.md).
 - Living governing reference sections 19–20: [Unified Output Anchor Registration](../docs/reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md).
 - Current request exact time: UNKNOWN / UNVERIFIED. Do not infer it from commit metadata.
+
+
+## Permanent execution governance — 2026-10-20
+- Stable ID: PERMANENT-LIVING-EXECUTION-ANCHOR-TIMESTAMP-GOVERNANCE-2026-10-20-001
+- Complete governing reference: [registration, anchor and timestamp rules](../docs/reference/REFERENCE-DOCUMENTS/PERMANENT-LIVING-EXECUTION-ANCHOR-TIMESTAMP-GOVERNANCE-2026-10-20-001.md)
+- Living governing reference: [section 21](../docs/reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md)
+- Architecture queue: [index](../docs/architecture/INTEGRATION-QUEUE/README.md)
+- Behavior trace: [EVT-0016 record](../docs/architecture/BEHAVIOR-TRACE/INTERACTION-BEHAVIOR-TRACE-2026-10-19-001.md)
+- Rule: use complete traceable registration for significant outputs; keep timestamp sources separate; never infer unknown times; verify each destination independently.
+- Request timestamp: UNKNOWN / UNVERIFIED. Previous 0.0 anchors, including Dropbox, remain independent.
