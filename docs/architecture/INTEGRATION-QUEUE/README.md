@@ -791,3 +791,8 @@ The queue index and the timestamp case must each be read back after this update.
 - **انجام شد:** پیوندهای محلی مشخص در اسناد حاکم اصلاح شدند؛ اجرای تازه باید شمار باقی‌مانده را تعیین کند.
 - **باز/فعال:** اجرای موفق builder در artifact تازه، رسیدگی به پیوندهای باقی‌مانده، تعیین canonical/alias بر اساس نقش و inbound references، و مرور معنایی اسناد/رویدادها. هیچ فایل تاریخی حذف نشود.
 - دامنهٔ فعلی فقط مخزن است؛ Buffer/Library/Persistent Memory/Dropbox عمداً خارج از این مرحله‌اند.
+
+
+
+| H0CALDR-2026-10-21-001 | داوری غیرمخرب 11 گروه تکرار محتوایی و رابطهٔ canonical/mirror | ACTIVE / PARTIAL — 9 نقش/مسیر پیشنهادی، 2 گروه باز | بررسی inbound references و تاریخچهٔ Git، سپس read-back و تأیید نهایی | [دفتر تصمیم‌های alias/lineage](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-CANONICAL-ALIAS-LINEAGE-DECISION-REGISTER-2026-10-21-001.md) |
+- رویداد اجرایی canonical: [EVT-0052](../BEHAVIOR-TRACE/EVT-0052-CANONICAL-GRAPH-MANIFEST-AND-LINK-REPAIR-2026-10-21.md).
