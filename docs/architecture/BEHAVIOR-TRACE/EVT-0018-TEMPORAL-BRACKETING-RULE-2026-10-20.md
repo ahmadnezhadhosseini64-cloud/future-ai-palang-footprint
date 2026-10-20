@@ -44,6 +44,6 @@ PRESERVE → IDENTIFY → FIND PRECEDING ANCHOR → FIND FOLLOWING ANCHOR → PR
 - Behavior trace: EVT-0018 entry present and read-back matched.
 - Central 0.0 registry: EVT-0018 entry present and read-back matched.
 - Current 0.0 anchor: now explicitly links EVT-0018; final read-back of the updated anchor is required before calling this last link verified.
-- Architecture integration queue: needs an explicit EVT-0018 index entry and subsequent read-back.
+- Architecture integration queue: explicit EVT-0018 section 22 added; final read-back/match is part of the current verification pass.
 - Exact request timestamp: UNKNOWN / UNVERIFIED. Commit timestamp is a distinct event and must not be substituted.
 - Buffer, Persistent Memory, Library and Dropbox: NOT VERIFIED by this repository chain. Dropbox failover remains OPEN / WAITING.
