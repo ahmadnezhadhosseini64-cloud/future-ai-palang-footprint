@@ -697,3 +697,10 @@ The queue index and the timestamp case must each be read back after this update.
 - Status: REPOSITORY WRITE + READ-BACK + EXPECTED ID/TIMESTAMP/LINK MATCH VERIFIED for the reference, event, parent-contract amendment and linked indexes. Global automatic anchoring remains OPEN / NOT PROVEN.
 - Required implementation gaps: full historical 0.0 graph reconciliation; independent Dropbox write/read/recovery; Buffer, Persistent Memory and Library evidence; end-to-end recovery and duplicate prevention; behavioral validation before promotion.
 - User message time: UNKNOWN / UNVERIFIED. Assistant processing time: 2026-10-20T22:20:19+03:30 (Asia/Tehran).
+
+
+## لنگر خروجی دستیار — EVT-0034
+- رویداد: [EVT-0034](../BEHAVIOR-TRACE/EVT-0034-ASSISTANT-EXECUTION-AND-VERIFICATION-REPORT-2026-10-20.md).
+- خروجی اجرای ثبت دوزمانه و اصلاح قرارداد مادر به v1.1.0 را مستند می‌کند.
+- وضعیت مخزن باید پس از بازخوانی رویداد و پیوندهایش تأیید شود؛ لنگرگذاری خودکار سراسری، گراف کامل تاریخی ۰.۰، Dropbox، Buffer، Persistent Memory، Library و آزمون سرتاسری همچنان OPEN / UNVERIFIED هستند.
+- زمان پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان پردازش دستیار: 2026-10-20T22:23:18+03:30.
