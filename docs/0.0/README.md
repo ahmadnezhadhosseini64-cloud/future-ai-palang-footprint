@@ -350,3 +350,12 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - **لنگر قبلی حفظ‌شده:** PALANG-0.0-CURRENT-2026-10-20-001؛ لنگرهای قبلی مستقل‌اند و جایگزین نمی‌شوند.
 - **زمان دقیق پیام:** UNKNOWN / UNVERIFIED؛ زمان ثبت مخزن و اجرای workflow جدا ثبت می‌شوند.
 - **وضعیت ادامه:** ممیزی خودکار مخزن باید از اجرای واقعی GitHub Actions تأیید شود؛ اتصال capture سراسری گفتگو، Library، Buffer، Persistent Memory و Dropbox باز می‌ماند.
+
+
+## ثبت پیگیری — راستی‌آزمایی ساختمان معماری (2026-10-20)
+- Stable ID: `ARCHITECTURE-BUILD-VERIFICATION-2026-10-20-001`; Production ID: `ABV-2026-10-20-001`.
+- رویداد: [EVT-0024](../architecture/BEHAVIOR-TRACE/EVT-0024-ARCHITECTURE-BUILD-VERIFICATION-2026-10-20.md).
+- قرارداد حاکم: [LIARC-2026-10-20-001](../reference/REFERENCE-DOCUMENTS/LIVING-INTERACTION-AUTOMATION-AND-RECONCILIATION-2026-10-20-001.md).
+- نتیجهٔ قابل اثبات: ممیزی ساختاری GitHub Actions run `39447416772` موفق است. زمان دقیق پیام کاربر UNKNOWN / UNVERIFIED.
+- لنگرهای پیشین حفظ می‌شوند؛ Dropbox همچنان مورد مستقل OPEN / WAITING است و در این بازبینی هیچ تغییری نمی‌کند.
+- Library، Buffer و Persistent Memory مستقل تأیید نشده‌اند؛ ثبت خودکار همهٔ پیام‌های ChatGPT و آزمون سرتاسری نیز باز است.
