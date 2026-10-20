@@ -36,6 +36,15 @@
 - زمان اجرای ممیزی پیشین: `2026-10-20T15:17:47Z` تا `2026-10-20T15:18:00Z` برای run `39447083005`; این زمان اجرای workflow است، نه زمان پیام.
 - اجرای `39447416772`: نتیجه و مراحل کار از پاسخ ابزار GitHub Actions بازخوانی شدند؛ زمان دقیق پیام کاربر از این داده‌ها استنتاج نمی‌شود.
 
+## 6. یافتهٔ ممیزی بین‌لایه‌ای و اصلاح (2026-10-20)
+- اجرای ممیزی ساختاری `Living Architecture Audit` روی commit `8c2355fd8490e9ddeedf2aedd747f73ba1d75869` با نتیجه `success` تکمیل شد: [run 39448487385](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39448487385).
+- اجرای `Cross-Layer Integrity Gate` روی همان commit با نتیجه `failure` پایان یافت: [run 39448487743](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39448487743).
+- بازخوانی log مرحلهٔ شکست نشان داد دو assertion برقرار نبودند: رشتهٔ دقیق `UNVERIFIED / PENDING` در master 0.0 نبود و شناسهٔ `XLR-PMA-2026-09-03-001` در `docs/PRODUCTION_REGISTRY.md` ثبت نشده بود.
+- اصلاح واقعی انجام شد: مرز حافظهٔ ارائه‌دهنده و وضعیت `UNVERIFIED / PENDING` در `checkpoints/CURRENT-0.0-MASTER-REFERENCE-2026-08-31.md` اضافه شد؛ رکورد تولید `ABV-2026-10-20-001` در `docs/PRODUCTION_REGISTRY.md` اضافه شد. این رکورد وضعیت خود را `PARTIAL / PENDING` نگه می‌دارد تا اجرای تازهٔ دروازه نتیجه را ثابت کند.
+- پس از اصلاح، اجراهای جدید ایجاد شده‌اند. تا وقتی نتیجهٔ اجرای جدیدِ ممیزی و دروازه به‌طور مستقل بازخوانی نشود، هیچ ادعای PASS نهایی برای کل ساختمان مطرح نمی‌شود.
+- در زمان بازبینی، دو اجرای دیگر (`main.yml` و `automatic-final-registration-proof.yml`) نیز شکست گزارش کرده‌اند؛ علت آن‌ها با دادهٔ قابل بازیابی فعلی تعیین نشده و باید در صف بررسی باقی بماند.
+- زمان پیام کاربر همچنان `UNKNOWN / UNVERIFIED`؛ زمان‌های workflow و commit به‌عنوان زمان‌های مستقل نگهداری می‌شوند.
+
 ## 5. محدودیت و صف ادامه
 - `G-AUTO-02`: منبع مجاز capture سراسری گفتگو — OPEN / NOT PROVEN.
 - `G-AUTO-03`: Library write/read-back — OPEN / NOT PROVEN.
