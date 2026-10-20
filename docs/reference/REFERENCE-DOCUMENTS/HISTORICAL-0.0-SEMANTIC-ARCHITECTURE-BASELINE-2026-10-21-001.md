@@ -167,3 +167,10 @@ PRESERVE → IDENTIFY → READ SOURCE → CLASSIFY ROLE → CHECK LINEAGE → CH
 - The review found a metadata parser coverage gap: actual definitions using bilingual/Persian metadata labels were omitted, making references appear to be duplicate definitions. The regex in the manifest builder was expanded. A fresh audit must confirm the corrected inventory and compare changed counts before any structural claim is refreshed.
 - Architecture queue: `docs/architecture/INTEGRATION-QUEUE/README.md`; reference index: `docs/REFERENCE_INDEX.md`.
 - Status remains OPEN / PARTIAL: this closes only the role decision for two groups, not the full set of 33/42 groups or all 493 source files.
+
+
+## Addendum v1.3.0 — executable architecture blueprint
+- Implementation-ready specification: [FAPF-IRA-2026-10-21-001](./FUTURE-AI-PALANG-FOOTPRINT-IMPLEMENTABLE-REFERENCE-ARCHITECTURE-2026-10-21-001.md).
+- It defines the layered architecture, typed data model, state machine, API v1, UI modules, security/continuity failure handling and acceptance tests A01–A16.
+- The blueprint is now connected to the Human–AI Co-Evolution Architecture. This is readiness of the design specification, not a claim that a complete application has been built or passed end-to-end tests.
+- The parser now emits a line-level review queue with ID occurrences and inbound/outbound local-link context. A fresh workflow run and artifact read-back are required before accepting its counts or output.
