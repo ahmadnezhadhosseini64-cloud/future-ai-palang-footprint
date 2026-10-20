@@ -3,7 +3,7 @@
 
 - Stable ID / شناسه پایدار: LIVING-INTERACTION-AUTOMATION-AND-RECONCILIATION-2026-10-20-001
 - Production ID / شناسه تولید: LIARC-2026-10-20-001
-- Version / نسخه: 1.0.0
+- Version / نسخه: 1.0.1
 - Date / تاریخ: 2026-10-20
 - Exact user-message/operation time / زمان دقیق پیام و عملیات: UNKNOWN / UNVERIFIED؛ زمان مستقل دقیق پیام کاربر در شواهد عملیات در دسترس نیست.
 - Repository commit time / زمان commit: از تاریخچهٔ مخزن و اجرای خودکار استخراج شود و با زمان پیام یکی فرض نشود.
