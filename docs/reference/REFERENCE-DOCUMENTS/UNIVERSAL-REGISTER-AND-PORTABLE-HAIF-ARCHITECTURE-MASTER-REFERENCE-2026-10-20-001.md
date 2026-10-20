@@ -131,3 +131,9 @@
 - سند مکمل ایدهٔ اصلی و سازوکار شکار کشف: [ITDCT](INTERACTION-TO-DISCOVERY-AND-COMPLETE-TRACE-MASTER-REFERENCE-2026-10-20-001.md).
 - رویداد ورودی مرتبط: [EVT-0039](../../architecture/BEHAVIOR-TRACE/EVT-0039-INTERACTION-TO-DISCOVERY-AND-COMPLETE-TRACE-REQUEST-2026-10-20.md).
 - این پیوست URPHA را تکمیل می‌کند؛ آن را جایگزین نمی‌کند. مسیرهای تعامل به دادهٔ قابل‌بازیابی تبدیل می‌شوند و یافته‌ها فقط پس از آزمون به Master ارتقا می‌یابند.
+
+
+## پیوست معماری — تداوم خودکار و بستهٔ انتقال
+- سند مکمل: [AICPHAE](AUTOMATIC-INTERACTION-CONTINUITY-AND-PORTABLE-HAIF-EVOLUTION-MASTER-REFERENCE-2026-10-20-001.md).
+- رویداد: [EVT-0041](../../architecture/BEHAVIOR-TRACE/EVT-0041-AUTOMATIC-CONTINUITY-PORTABLE-CHILD-RAHM-MASTER-REQUEST-2026-10-20.md).
+- این سند مکمل URPHA و ITDCT است و قاعدهٔ ثبت هر تعامل، تحلیل بازه‌های زمانی، انتقال میزبان و رشد Child/Rahm/Master را مشخص می‌کند؛ اجرای محصول و انتقال سرتاسری هنوز نیازمند آزمون واقعی است.
