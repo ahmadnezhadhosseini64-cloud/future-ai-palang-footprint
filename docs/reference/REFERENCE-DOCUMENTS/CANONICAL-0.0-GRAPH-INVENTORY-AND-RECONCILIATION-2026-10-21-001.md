@@ -2,7 +2,7 @@
 
 - Stable ID: CANONICAL-0.0-GRAPH-INVENTORY-AND-RECONCILIATION-2026-10-21-001
 - Production ID: C0GIR-2026-10-21-001
-- Version: 1.0.1
+- Version: 1.0.2
 - Owner: احمد پلنگ
 - Created / processed UTC: 2026-10-20T20:57:40.304Z
 - Created / processed Asia/Tehran: 2026-10-21T00:27:40.304+03:30
@@ -516,4 +516,11 @@
 ## Version history
 - 1.0.0 — اولین موجودی درخت و طرح تطبیق گراف.
 - 1.0.1 — تازه‌سازی به tree SHA `19058e7d68a540862c618176c4c5e64109c62c0c` با 653 فایل، 93 مسیر دارای 0.0، 38 مسیر checkpoint، 51 فایل EVT و 48 سند مرجع مرتبط؛ افزودن یافته‌های برخورد شناسه و شکاف‌های G-11 تا G-13.
+
+## 14. تازه‌ترین snapshot مشاهده‌شده و شاهد اجرای خودکار محدود
+- Observed tree SHA: `6d5d6adc789aefaf1b3b97bfd35e3504f4c187f6`; `truncated=false`; 668 files; 93 paths containing `0.0`; 38 checkpoint paths; 51 EVT files.
+- Difference from previous tree SHA `19058e7d68a540862c618176c4c5e64109c62c0c`: 15 added files, all evidence artifacts `evidence/evidence-gate-*.txt`; no removed paths.
+- Latest observed evidence gate run: `39497698663`, completed successfully; evidence file `evidence/evidence-gate-39497698663.txt`. This proves only the configured Evidence Gate's stable retrieval/independent execution scope, not universal capture or full graph validation.
+- Because every successful repository push may generate another evidence artifact, this 668-file count is a time-bounded snapshot observed after commit `1dad17490b47364228d2ad45ee39703dfd573790`; later writes may change the tree again.
+- Version history: 1.0.2 adds the 668-file observed snapshot and the narrow automated-execution evidence; G-01 remains OPEN / PARTIAL.
 
