@@ -402,3 +402,10 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - قاعده: زمان پیام کاربر و زمان پردازش دستیار دو فیلد مستقل‌اند؛ زمان commit و read-back نیز در صورت وجود شاهد مستقل ثبت می‌شوند.
 - این لنگر هیچ ۰.۰ تاریخی را حذف یا جایگزین نمی‌کند؛ گراف کامل تاریخی هنوز در صف تطبیق است.
 - زمان پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان پردازش ثبت‌شده: 2026-10-20T22:20:19+03:30 (Asia/Tehran).
+
+
+## لنگر خروجی دستیار برای اصلاحیهٔ ثبت دوزمانه — EVT-0034
+- رویداد خروجی: [EVT-0034](../architecture/BEHAVIOR-TRACE/EVT-0034-ASSISTANT-EXECUTION-AND-VERIFICATION-REPORT-2026-10-20.md).
+- رویداد ورودی/تصمیم: [EVT-0033](../architecture/BEHAVIOR-TRACE/EVT-0033-TWO-TIME-ANCHORING-AND-LIVING-CONTINUITY-2026-10-20.md).
+- سند مرجع: [TWO-TIME-ANCHORING-AND-LIVING-CONTINUITY-ARCHITECTURE-2026-10-20-001](../reference/REFERENCE-DOCUMENTS/TWO-TIME-ANCHORING-AND-LIVING-CONTINUITY-ARCHITECTURE-2026-10-20-001.md).
+- زمان پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان پردازش دستیار برای لنگر خروجی: 2026-10-20T22:23:18+03:30.
