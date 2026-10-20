@@ -1120,3 +1120,15 @@ The current repository excavation and reconciliation record is `docs/reference/R
 - If Tehran-local time is unavailable, retain the exact available assistant/system time and mark Tehran local time `UNKNOWN / UNAVAILABLE`; if a clock source is unavailable, do not invent a timestamp.
 - Distinguish user-message timestamp from registration, commit, workflow and read-back times. Do not backfill missing user-message time.
 - Applied to anchor `IAAR-2026-10-20-001`; event `EVT-0025`; index and recovery queue updated. Status ACTIVE / LIVING / GOVERNING.
+
+
+## 31. ثبت مرجع تداوم معماری و زنجیره Master–Child–Rahm — EVT-0026
+- Stable ID: `INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-REGISTRATION-2026-10-20-001`
+- Production ID: `ICMCRR-HAIF-2026-10-20-001`; Version 1.0.0.
+- Canonical detail: [سند مرجع تداوم معماری و Master–Child–Rahm](INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-REGISTRATION-2026-10-20-001.md).
+- Event: [EVT-0026](../../architecture/BEHAVIOR-TRACE/EVT-0026-INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-2026-10-20.md).
+- Architecture queue: [صف یکپارچه‌سازی](../../architecture/INTEGRATION-QUEUE/README.md).
+- Current 0.0 preserved: `PALANG-0.0-CURRENT-2026-10-20-001`; no new 0.0 was created.
+- Governing direction: `HUMAN ↔ AI HOST ↔ HAIF`; `MASTER → CHILD → REAL WORLD → FEEDBACK → MASTER`; `MASTER → RAHM → VALIDATION → NEW CHILD`.
+- Evidence boundary: repository files have been written and read back; this does not establish global capture, cross-host executable implementation, Library/Buffer/Persistent Memory acceptance, or Dropbox connection.
+- Open gates remain itemized in the linked detail reference; no claim of complete architecture reconstruction is made.
