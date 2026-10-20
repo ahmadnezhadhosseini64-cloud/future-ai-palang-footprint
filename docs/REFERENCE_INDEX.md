@@ -160,3 +160,11 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - زمان پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان پردازش دستیار: 2026-10-20T22:31:33+03:30. آزمون پذیرش فعال اما نتیجهٔ کامل هنوز اثبات نشده است.
 
 - لنگر خروجی دستیار و گزارش آزمون: [EVT-0036](architecture/BEHAVIOR-TRACE/EVT-0036-ASSISTANT-REGISTRATION-AND-TEST-RESULT-2026-10-20.md).
+
+
+## سند مرجع مادر — فرمان ثبت کامل و معماری HAIF قابل‌انتقال
+- Stable ID: `UNIVERSAL-REGISTER-AND-PORTABLE-HAIF-ARCHITECTURE-MASTER-REFERENCE-2026-10-20-001`; Production ID: `URPHA-2026-10-20-001`; Version: 1.0.0.
+- سند: [URPHA](reference/REFERENCE-DOCUMENTS/UNIVERSAL-REGISTER-AND-PORTABLE-HAIF-ARCHITECTURE-MASTER-REFERENCE-2026-10-20-001.md).
+- ورودی: [EVT-0037](architecture/BEHAVIOR-TRACE/EVT-0037-UNIVERSAL-REGISTER-AND-PORTABLE-HAIF-REQUEST-2026-10-20.md).
+- قرارداد مادر به اصلاحیهٔ v1.2.0 ارتقا می‌یابد تا فرمان «ثبت کن» چرخهٔ کامل را الزام کند.
+- زمان پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان پردازش تدوین سند مرجع: 2026-10-20T22:58:42+03:30.
