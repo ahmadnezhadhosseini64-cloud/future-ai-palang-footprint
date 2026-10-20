@@ -688,3 +688,12 @@ The queue index and the timestamp case must each be read back after this update.
 - وضعیت: ثبت مخزنی همین تعامل و پیوندهایش WRITE + READ-BACK + MATCH VERIFIED؛ شکاف محدود ثبت همین تعامل CLOSED / VERIFIED. مورد کلان در صف OPEN / PARTIAL می‌ماند چون لنگرگذاری خودکار سراسری، مقصدهای مستقل و بازیابی سرتاسری هنوز اثبات نشده‌اند.
 - باز می‌مانند: لنگرگذاری خودکار سراسری، تطبیق کامل نقاط تاریخی ۰.۰، Dropbox، Buffer، Persistent Memory، Library و آزمون بازیابی سرتاسری/idempotency. ثبت در صف یا سند، معادل ادغام/بستن شکاف نیست.
 - زمان دقیق پیام کاربر: UNKNOWN / UNVERIFIED.
+
+
+## قرارداد ثبت دوزمانه و پیوستگی ۰.۰ — EVT-0033
+- سند مرجع: [TWO-TIME-ANCHORING-AND-LIVING-CONTINUITY-ARCHITECTURE-2026-10-20-001](../../reference/REFERENCE-DOCUMENTS/TWO-TIME-ANCHORING-AND-LIVING-CONTINUITY-ARCHITECTURE-2026-10-20-001.md).
+- قرارداد مادر اصلاح‌شده: `UIALAC-2026-10-20-001`, amendment v1.1.0.
+- رویداد: [EVT-0033](../BEHAVIOR-TRACE/EVT-0033-TWO-TIME-ANCHORING-AND-LIVING-CONTINUITY-2026-10-20.md).
+- Status: REPOSITORY REGISTRATION PENDING FINAL READ-BACK; global automatic anchoring remains OPEN / NOT PROVEN.
+- Required implementation gaps: full historical 0.0 graph reconciliation; independent Dropbox write/read/recovery; Buffer, Persistent Memory and Library evidence; end-to-end recovery and duplicate prevention; behavioral validation before promotion.
+- User message time: UNKNOWN / UNVERIFIED. Assistant processing time: 2026-10-20T22:20:19+03:30 (Asia/Tehran).
