@@ -48,3 +48,11 @@
 - پیوند رویداد ثبت: [EVT-0005](./EVT-0005-UNIFIED-OUTPUT-ANCHOR-LIVING-REFERENCE-REGISTRATION-2026-10-19.md).
 - بافر، کتابخانه و حافظهٔ پایدار مستقل تأیید نشده‌اند؛ Dropbox در این رویداد آزموده نشده است.
 - زمان دقیق تعامل/اقدام نامعلوم است و حدس زده نمی‌شود.
+
+
+## رویداد EVT-0021 و دروازهٔ اجرای واقعی لنگر هر ورودی/خروجی
+- **رویداد:** [EVT-0021 — تأکید بر لنگر هر ورودی و خروجی](./EVT-0021-USER-REAFFIRMS-EVERY-INPUT-OUTPUT-ANCHOR-2026-10-20.md)
+- **سند حاکم:** [EVERY-INPUT-OUTPUT-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE](../../reference/REFERENCE-DOCUMENTS/EVERY-INPUT-OUTPUT-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001.md)
+- **پروندهٔ دروازهٔ اجرایی باز:** [EVERY-INPUT-OUTPUT-ANCHOR-EXECUTION-GATE](../INTEGRATION-QUEUE/EVERY-INPUT-OUTPUT-ANCHOR-EXECUTION-GATE-2026-10-20-001.md)
+- **وضعیت:** ثبت سند/رویداد و پیوندهای مخزنی قابل‌ردیابی‌اند؛ اجرای خودکار سراسری هر پیام هنوز NOT PROVEN / اثبات‌نشده است.
+- **قاعده:** وجود سند یا پیوند، شاهد اجرای خودکار نیست. برای بستن گپ، آزمون واقعی و ردپای مستقل لازم است. زمان دقیق پیام UNKNOWN / UNVERIFIED باقی می‌ماند.
