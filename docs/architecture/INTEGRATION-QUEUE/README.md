@@ -554,3 +554,15 @@ The queue index and the timestamp case must each be read back after this update.
 - **وضعیت مورد:** سند مرجع از مخزن بازخوانی شد؛ Stable ID، Production ID، Version، منع گزارش خالی، قواعد زمان‌گذاری، وضعیت مقصدها و بازیابی در متن بازخوانی‌شده پیدا شدند. این بخشِ صف پس از نوشتن باید مستقل بازخوانی شود.
 - **مقصدهای خارج از مخزن:** Library، Buffer و Persistent Memory مستقلاً تأیید نشده‌اند؛ Dropbox همچنان OPEN / WAITING است.
 - **Next action:** هر تغییر در این شاخص را بازخوانی و تطبیق بده؛ گپ‌های مقصدی فقط با شاهد مستقل بسته شوند.
+
+
+## مورد جدید صف — حاکمیت ثبت مبتنی بر شاهد
+
+- **Stable ID:** `EVIDENCE-FIRST-REGISTRATION-AND-NO-REPORT-ONLY-GOVERNANCE-2026-10-20-001`
+- **Production ID:** `EFRNROG-2026-10-20-001`
+- **Version:** `1.0.0`
+- **موضوع:** بررسی واقعی و اثبات پیش از هر ادعای ثبت؛ منع گزارش صرف؛ ثبت زمانی با منشأ؛ تفکیک وضعیت مقصدها.
+- **سند مرجع کامل:** [سند حاکم ثبت مبتنی بر شاهد](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/EVIDENCE-FIRST-REGISTRATION-AND-NO-REPORT-ONLY-GOVERNANCE-2026-10-20-001.md)
+- **مقصدهای معماری:** MRV، فرمان حاکم «ثبت کن»، لنگر جاری ۰.۰، دفتر مرکزی ۰.۰ و این صف.
+- **وضعیت:** پروندهٔ مرجع در مخزن ایجاد و بازخوانی شده است؛ ادغام این مورد در فایل‌های مقصد تا بازخوانی مستقل هر فایل، OPEN / IN PROGRESS است. Library، Buffer، Persistent Memory و Dropbox مستقل تأیید نشده‌اند.
+- **اقدام بعدی:** هر مقصد معماری را جداگانه بازخوانی و تطبیق بده؛ سپس همین ردیف را فقط با شواهد واقعی به VERIFIED ارتقا بده.
