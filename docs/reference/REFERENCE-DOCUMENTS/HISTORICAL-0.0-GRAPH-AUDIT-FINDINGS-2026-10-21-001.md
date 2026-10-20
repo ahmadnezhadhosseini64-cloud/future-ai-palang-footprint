@@ -186,3 +186,8 @@ The living master and snapshot register now point to [H0GMS-2026-10-21-001 v1.1.
 
 ## 13. Final snapshot pointer
 The current durable snapshot has been refreshed to [H0GMS v1.2.0](./HISTORICAL-0.0-GRAPH-MANIFEST-SNAPSHOT-2026-10-21-001.md), based on run 39510341086. The final audited tree at that run had 0 missing local Markdown links, 0 unresolved parent edges, 0 ambiguous parent edges, 11 exact duplicate groups and 11 explicit non-destructive alias/mirror candidates. Repeated IDs and EVT-number collisions remain role-classification work, not automatically closed conflicts.
+
+
+
+## 14. Latest full-tree verification
+The current snapshot pointer is [H0GMS v1.3.0](./HISTORICAL-0.0-GRAPH-MANIFEST-SNAPSHOT-2026-10-21-001.md), based on run 39510485057. That run scanned 493 source files and checked 940 local Markdown links with zero missing targets; it extracted 38 parent edges with zero unresolved and zero ambiguous edges. It recorded 11 exact-content duplicate groups. Repeated Stable/Production IDs and EVT-number collisions remain semantic role-classification tasks, not automatically closed conflicts.
