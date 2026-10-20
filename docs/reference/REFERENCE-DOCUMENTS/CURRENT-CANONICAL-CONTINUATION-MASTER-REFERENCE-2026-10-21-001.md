@@ -3,7 +3,7 @@
 ## 0. شناسنامه، لنگر و وضعیت
 - **Stable ID / شناسهٔ پایدار:** CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001
 - **Production ID / شناسهٔ تولید:** CCCMR-2026-10-21-001
-- **Version / نسخه:** 1.0.1
+- **Version / نسخه:** 1.0.2
 - **Owner / مالک:** Ahmad Nezhadhosseini / احمد پلنگ
 - **Project / پروژه:** Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
 - **Architecture target / هدف معماری:** HAIF — Human–AI Interaction Future (آیندهٔ تعامل انسان و هوش مصنوعی)
@@ -202,3 +202,12 @@
 - Input event: [EVT-0050](../../architecture/BEHAVIOR-TRACE/EVT-0050-USER-REQUEST-CONSOLIDATED-LIVING-MASTER-CONTINUATION-2026-10-21.md).
 - The master document has been fetched from the repository after creation; Stable ID, Production ID, Version, current snapshot, architecture, gap table and next-action sequence are present.
 - Index/queue cross-links are being verified separately. The final closeout must record which files passed read-back; this does not close the historical graph gaps.
+
+
+## 15. Snapshot پس از اتصال نمایه‌ها و بازخوانی نهایی
+- Observation UTC: `2026-10-20T22:14:13.683Z`.
+- Tree SHA: `d47947c2fefe4faede895d8e754a369b64d1ce34`; `truncated=false`.
+- Total files: 715; paths containing `0.0`: 95; checkpoint paths: 38; EVT files: 55; paths under Reference Documents: 86; generated Evidence Gate artifacts: 230.
+- Snapshot includes EVT-0050 and EVT-0051, the consolidated master, and cross-index changes. Evidence Gate files are generated artifacts, not architecture source nodes. Counts can change with future commits/workflow runs.
+- Targeted repository read-back verified the presence of the consolidated master identity/version/architecture/gap/next-step sections, the governing master link, the current graph inventory link, the Reference Index row, the Behavior Trace index entry, the Integration Queue pointer, the Open Gaps register pointer, and the 0.0 continuation anchor. The historical graph remains OPEN / PARTIAL.
+- Read-back blob SHA of this master before this update: `8e57b1d14824c736f17bc95c6adb1c7f5e9228e3`; after this update it must be fetched again before claiming final read-back for v1.0.2.
