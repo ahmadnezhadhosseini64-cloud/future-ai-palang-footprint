@@ -2,7 +2,7 @@
 - Stable ID: UNIVERSAL-INTERACTION-ANCHOR-AND-WORKFLOW-RECOVERY-2026-10-20-001
 - Production ID: UIAWR-2026-10-20-001
 - Event ID: EVT-0027-UNIVERSAL-INTERACTION-ANCHOR-AND-WORKFLOW-RECOVERY-2026-10-20
-- Version: 1.0.0
+- Version: 1.0.1
 - Date: 2026-10-20
 - Exact user-message time: UNKNOWN / UNVERIFIED.
 - Exact registration time: UNKNOWN / UNAVAILABLE; no exact timestamp source was returned for this write. Do not infer one.
@@ -28,3 +28,9 @@ Use DUAL-TIMESTAMP-AVAILABILITY-RULE-2026-10-20-001 / DTAR-2026-10-20-001. Separ
 
 ## Verification and next action
 Read back this event and its full reference, then inspect new workflow runs after the two commits. Only close Issue #18 after both workflows have fresh successful runs, real successful jobs, relevant evidence/artifacts inspected, and repository read-back verified. Library, Buffer, Persistent Memory, and Dropbox are not proven updated by this GitHub write.
+
+## Fresh-run verification update (2026-10-20)
+- Evidence Gate run 39454138917 failed on commit 14187974765f4d743d3ca05186565ad4c9c0fdaa; API created_at 2026-10-20T16:04:05Z: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39454138917
+- Automatic Final Registration Proof run 39454141194 failed on the same commit; API created_at 2026-10-20T16:04:06Z: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39454141194
+- Both latest job lists were empty; run-log download returned HTTP 404. Cause remains UNKNOWN / UNVERIFIED; these facts do not prove a YAML parse issue or any other specific cause.
+- Therefore the two workflow edits have not resolved the failures. Issue #18 remains OPEN; do not claim closure. Exact current registration time and user-message time remain UNKNOWN / UNAVAILABLE.
