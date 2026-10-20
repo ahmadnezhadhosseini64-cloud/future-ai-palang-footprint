@@ -11,7 +11,7 @@
 - Project / پروژه: Future AI / Palang Footprint — آینده AI / ردپای پلنگ
 - Lifecycle / چرخه: ACTIVE / LIVING در مخزن؛ اجرای خودکار سراسری هنوز نیازمند آزمون مستقل است.
 - Canonical repository path / مسیر مرجع: `docs/reference/REFERENCE-DOCUMENTS/INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-REGISTRATION-2026-10-20-001.md`
-- Related event / رویداد مرتبط: `docs/architecture/BEHAVIOR-TRACE/EVT-0025-INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-2026-10-20.md`
+- Related event / رویداد مرتبط: `docs/architecture/BEHAVIOR-TRACE/EVT-0026-INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-2026-10-20.md`
 - Current 0.0 / نقطه ادامه جاری: `PALANG-0.0-CURRENT-2026-10-20-001` (حفظ می‌شود؛ این ثبت آن را جایگزین یا نمی‌بندد)
 - Origin / منشأ: درخواست کاربر در 2026-10-20 برای ثبت و مستندسازی کامل خروجی پیشین، راستی‌آزمایی هدف معماری، بررسی شکاف‌ها و بستن واقعی موارد قابل‌بستن، و نگه‌داشتن موارد باز در صف.
 - Lineage / زنجیره منشأ: `UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001`; `COMPREHENSIVE-EXCAVATION-ARCHITECTURE-STATE-2026-10-20-001`; `EVERY-INPUT-OUTPUT-EXECUTION-GATES-2026-10-20-001`; `ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001`; `HAIF-CORE-MASTER-CHILD-RAHM-2026-09-15-001` (مرجع تاریخی؛ بازیابی مستقل متن کامل آن هنوز اثبات نشده است).
@@ -79,7 +79,7 @@ Future AI / Palang Footprint صرفاً مجموعه‌ای از فایل‌ها
 
 ### G-01 — ثبت این تعامل و اتصال آن به صف مخزن
 - وضعیت نهایی این زیرشکاف: CLOSED / REPOSITORY READ-BACK VERIFIED.
-- اقدام انجام‌شده: سند مرجع، رویداد EVT-0025 و پیوند صف نوشته شدند؛ هر سه فایل از مخزن دوباره خوانده شدند و شناسه پایدار، شناسه رویداد و پیوند صف تطبیق شدند.
+- اقدام انجام‌شده: سند مرجع، رویداد EVT-0026 و پیوند صف نوشته شدند؛ هر سه فایل از مخزن دوباره خوانده شدند و شناسه پایدار، شناسه رویداد و پیوند صف تطبیق شدند.
 - Commitهای نوشتن: سند مرجع `fe6e8d44501f4ad989a28e6210d548c723cc14ba`; رویداد `287079fed90d944a9c997e4c998dece547d3a580`; صف `331154f9063b5a5c657ed6ad2887c109a82ccb2d`.
 - Blob SHAهای بازخوانی‌شده: سند مرجع `f7bafb594adbacacd3505f813c2b06e153c24d0e`; رویداد `b691e894fccd91a9890da632570de74b7e6343b2`; صف `9284edddb26e5b32d5cf6cd489cb9e3282380bf6`.
 - محدودیت: این تأیید فقط برای ثبت مخزن است؛ ادغام معنایی در سند مادر و مقصدهای بیرونی از این نتیجه استنتاج نمی‌شوند.
