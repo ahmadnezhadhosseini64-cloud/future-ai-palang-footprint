@@ -378,3 +378,17 @@ Recovery/resume path:
 - **Complete path:** [سند مرجع کامل مسیر](./PALANG-0.0-COMPLETE-PATH-AND-GOVERNING-ADDENDUM-2026-10-20-001.md)
 - **Architectural placement:** Governance / حاکمیت → Living Reference / سند مرجع زنده → 0.0 Anchor / لنگر ۰.۰ → Integration Queue / صف ادغام معماری → Behavior Event / رویداد رفتار → Evidence & Read-back / شواهد و بازخوانی → Recovery / بازیابی.
 - **Important boundary:** این پیوندها جای آزمون مستقل مقصدهای بیرونی یا بستن کارهای باز را نمی‌گیرند.
+
+
+## 21. قواعد اجرایی زندهٔ ثبت، لنگر و زمان‌گذاری — 2026-10-20
+- Stable ID: `PERMANENT-LIVING-EXECUTION-ANCHOR-TIMESTAMP-GOVERNANCE-2026-10-20-001`
+- Production ID: `PLEATG-HAIF-2026-10-20-001`
+- سند مرجع کامل: [قواعد حاکم ثبت، لنگر و زمان‌گذاری](./PERMANENT-LIVING-EXECUTION-ANCHOR-TIMESTAMP-GOVERNANCE-2026-10-20-001.md)
+- منشأ: درخواست صریح کاربر برای اعمال دائمی قواعد ثبت کامل، مستندسازی، ثبت زمانی و لنگر در ادامهٔ پروژه.
+- چرخه: PRESERVE → IDENTIFY → CLASSIFY → PROVENANCE/LINEAGE → IDS/VERSION → ANCHOR → COMPLETE REFERENCE → ARCHITECTURE LINK → TIMESTAMP EVIDENCE → WRITE → READ-BACK → MATCH → VERIFY → RECONCILE → STATUS BY DESTINATION → NEXT ACTION → RESUME.
+- هر خروجی مهم باید به لنگر یا رویداد شناسه‌دار، سند مرجع کامل و مسیر معماری متصل شود. هر نقطهٔ ۰.۰ که کاربر تعیین کرده مستقل بماند.
+- زمان درخواست، اقدام، commit، بازخوانی و تأیید جدا ثبت شوند. زمان نامعلوم UNKNOWN / UNVERIFIED است؛ حدس ممنوع.
+- Repository، Buffer، Persistent Memory، Library و Dropbox مقصدهای جدا هستند؛ هر مقصد فقط با نوشتن، بازخوانی و تطبیق مستقل تأیید می‌شود.
+- پروندهٔ صف معماری: [پروندهٔ ادغام ۰.۰](../architecture/INTEGRATION-QUEUE/PALANG-0.0-COMPLETE-PATH-GOVERNING-ADDENDUM-2026-10-20-001.md)؛ [نمایهٔ صف](../architecture/INTEGRATION-QUEUE/README.md).
+- این ثبت، تعهد حاکم در مخزن را تعریف می‌کند؛ ذخیره در مقصدهای بیرونی را به‌خودی‌خود ثابت نمی‌کند.
+- زمان دقیق پیام درخواست: UNKNOWN / UNVERIFIED.
