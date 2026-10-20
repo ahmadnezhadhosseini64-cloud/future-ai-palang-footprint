@@ -273,3 +273,14 @@ NO CLAIM WITHOUT EVIDENCE — هیچ ادعایی بدون شاهد پذیرفت
 - The two historical failure records remain unchanged. Acceptance refers to the fresh successful runs above.
 - Status: READY TO CLOSE Issue #18 after the final read-back of the updated reference and index.
 - Timestamp rule applied: run API time `2026-10-20T16:07:10Z`; Tehran `19:37:10 +03:30` is derived conversion only; exact user-message and document registration times UNKNOWN / UNAVAILABLE.
+
+
+## ثبت پیگیری تازه — ICMCRR / EVT-0026 (2026-10-20)
+- **Stable ID:** `INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-REGISTRATION-2026-10-20-001`; **Production ID:** `ICMCRR-HAIF-2026-10-20-001`; **Version:** 1.0.0.
+- **سند مرجع:** [تداوم معماری و Master–Child–Rahm](../../reference/REFERENCE-DOCUMENTS/INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-REGISTRATION-2026-10-20-001.md).
+- **رویداد:** [EVT-0026](../BEHAVIOR-TRACE/EVT-0026-INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-2026-10-20.md).
+- **وضعیت ثبت مخزن:** سند مرجع، رویداد، صف، checkpoint جاری، سند مسیر کامل و MRV به‌روزرسانی/پیوند شده‌اند؛ وضعیت نهایی هر فایل پس از read-back مستقل ثبت می‌شود.
+- **بسته‌شده در این مرحله:** ثبت و پیوند مخزنی همین تعامل، مشروط به read-back و تطبیق همه فایل‌های نهایی.
+- **باز و فعال:** بازیابی مستقل متن اصلی HAIF؛ اجرای خودکار ثبت هر پیام و آزمون سرتاسری؛ بسته اجرایی قابل‌انتقال بین میزبان‌ها؛ بازیابی دو آزمون تاریخی؛ Dropbox؛ و اثبات جداگانه Library، Buffer و Persistent Memory.
+- **قانون زمان:** زمان دقیق پیام UNKNOWN / UNVERIFIED؛ زمان commit/بازخوانی جداست.
+- **ادامه:** از سند مرجع بالا شروع کن؛ همان شناسه‌ها حفظ شوند؛ موارد باز از آخرین مرحله قابل‌اثبات ادامه یابند. نقطه Dropbox مستقل و OPEN / WAITING باقی می‌ماند.
