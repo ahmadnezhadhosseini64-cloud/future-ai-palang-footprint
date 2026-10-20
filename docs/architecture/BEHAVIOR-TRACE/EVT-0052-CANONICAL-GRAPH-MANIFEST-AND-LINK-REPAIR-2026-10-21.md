@@ -66,5 +66,5 @@ The latest verified snapshot is [H0GMS-2026-10-21-001 v1.1.0](../../reference/RE
 ## Final verified manifest run
 - Snapshot: [H0GMS-2026-10-21-001](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-MANIFEST-SNAPSHOT-2026-10-21-001.md).
 - Living Architecture Audit run: 39510341086; artifact 12305131730; digest `sha256:76ba049a67c066890634c985884c90a0e6c19b33e7bd74dfc297b2f8234dc597`.
-- Verified: workflow PASS; 940 local Markdown link edges; 0 missing links; 38 parent edges; 0 unresolved; 0 ambiguous. Exact duplicate groups: 11; proposed canonical/mirror/alias decisions: 11.
+- Verified: workflow PASS; 942 local Markdown link edges; 0 missing links; 38 parent edges; 0 unresolved; 0 ambiguous. Exact duplicate groups: 11; proposed canonical/mirror/alias decisions: 11.
 - Still OPEN: full natural-language semantic equivalence; semantic classification of repeated ID groups; eight historical EVT number collision groups. The mistaken EVT-0051 path remains a disclosed superseded correction artifact; EVT-0052 is the active event for this work.
