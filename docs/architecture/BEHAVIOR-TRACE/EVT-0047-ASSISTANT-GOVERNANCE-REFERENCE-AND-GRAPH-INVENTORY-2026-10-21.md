@@ -79,3 +79,14 @@ Scoped repository registration and cross-index verification: VERIFIED. Complete 
 - The updated 0.0 registry, master, graph inventory, queue, reference index, behavior-trace index, parent contract and portable HAIF master were read back and checked; all expected identifiers, versions and links passed. This event is fetched again after this append.
 - G-01 remains OPEN / PARTIAL; G-11 to G-13 are registered in both the governing master and integration queue, but their operational acceptance criteria are not yet passed.
 
+## Latest CI evidence and G-14 integration
+- Assistant processing UTC: `2026-10-20T21:09:59.320Z`; Asia/Tehran: `2026-10-21T00:39:59.320+03:30`.
+- GitHub Actions run `39497698663` completed successfully at `2026-10-20T21:07:01Z`. Its evidence artifact `evidence/evidence-gate-39497698663.txt` reports stable retrieval core VERIFIED and independent automated execution PROVEN for that configured test scope.
+- This is **scoped execution evidence**, not proof of automatic capture for every user message or of the full HAIF architecture.
+- PIATGCG v1.0.4 content SHA: `6183d50e4c83b0d3e25a2e6a3f82b6f7dc4c890b`.
+- C0GIR v1.0.3 content SHA: `abe20484b2565c7f7b746c96e20cc4c58f37321f`.
+- Integration queue with G-14 content SHA: `ad7524c243d608a9a0d0438f853ed09bd3dcc118`.
+- 0.0 registry updated to the 670-file observed snapshot and G-14 scope: `01bc4a73d4724a47e2b2f55d1b25d5c9cbc2cb5c`.
+- G-14 is now registered in the governing master and queue: generated evidence artifacts must be counted separately from stable architectural source nodes. Its automated filter/manifest test remains OPEN.
+- The updated files are fetched again after this append to verify the proof record.
+
