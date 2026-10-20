@@ -306,3 +306,12 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - **لنگر جاری:** [PALANG-0.0-CURRENT-2026-10-20-001](../../checkpoints/PALANG-0.0-CURRENT-2026-10-20-001.md)
 - **قاعده:** ادعای ثبت فقط با شاهد مقصدی؛ زمان دقیق نامعلوم را UNKNOWN / UNVERIFIED نگه دار؛ هیچ نقطهٔ ۰.۰ قبلی را بازنویسی یا نبند؛ گزارش جایگزین ثبت کامل و بازخوانی نیست.
 - **وضعیت:** مقصدهای بیرون از مخزن مستقل تأیید نشده‌اند؛ لنگر Dropbox همچنان OPEN / WAITING است.
+
+
+## قاعدهٔ سراسری — لنگر برای هر ورودی و خروجی
+
+- **Stable ID:** `EVERY-INTERACTION-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001`
+- **Production ID:** `EIACRG-HAIF-2026-10-20-001`
+- **سند مرجع کامل:** [قرارداد لنگر هر تعامل](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/EVERY-INTERACTION-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001.md)
+- **الزام:** هر ورودی کاربر و هر پاسخ نهایی دستیار دارای لنگر و رابطهٔ ورودی/خروجی است. متن کامل در محل canonical ثبت می‌شود؛ زمان دقیق فقط با شاهد معتبر؛ بازخوانی و تطبیق پس از هر نوشتن؛ وضعیت مقصدها مستقل.
+- **وضعیت:** پیوند مرجع افزوده می‌شود. این ثبت لنگرهای قبلی را حذف یا ادغام نمی‌کند و Dropbox OPEN / WAITING باقی می‌ماند.
