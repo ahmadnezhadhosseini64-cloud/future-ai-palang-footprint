@@ -578,3 +578,9 @@
 - Manifest builder now wired into Living Architecture Audit: [script](../../../scripts/build_historical_graph_manifest.py), [workflow](../../../.github/workflows/living-architecture-audit.yml).
 - Snapshot from artifact 39502860923 is 697 total files / 482 source / 215 Evidence Gate; 11 exact duplicate groups, 13 Stable ID groups, 24 Production ID groups, 6 EVT number groups, 15 local-link findings, 0 decode errors. This is separate from the earlier 698/216 observation.
 - Status: ACTIVE / LIVING; current structural audit rerun pending. Full semantic reconciliation and canonical edge adjudication remain OPEN / PARTIAL. No historic file deleted.
+
+
+
+## Alias / lineage decision register
+- [H0CALDR-2026-10-21-001](./HISTORICAL-0.0-CANONICAL-ALIAS-LINEAGE-DECISION-REGISTER-2026-10-21-001.md) records nine role-based mirror proposals and two exact duplicate groups still OPEN for source-history/inbound-link review.
+- Active follow-up event: [EVT-0052](../../architecture/BEHAVIOR-TRACE/EVT-0052-CANONICAL-GRAPH-MANIFEST-AND-LINK-REPAIR-2026-10-21.md). Preserve all historical files; do not delete mirror copies.
