@@ -124,3 +124,9 @@ Files whose purpose or role is not yet clear stay in the active review queue or 
 - [Run 39518314490](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39518314490) passed on commit `230b6cf3145bc27e18f26fc6afc33bd86b033122` at `2026-10-20T23:57:41Z` UTC.
 - Latest inventory: 501 source files, 1,030 local links / 0 missing, 38 parent edges / 0 unresolved or ambiguous, 30 Stable ID groups, 43 Production ID groups, 7 Reference ID groups, 8 EVT groups, 11 exact-content duplicate groups, 697 ID occurrences.
 - This validates structural extraction after the second review batch. It does not close the remaining 23 Stable ID groups, 43 Production ID groups, semantic meaning of all 1,030 links, or final canonical promotion of 11 duplicate groups.
+
+
+## Addendum v1.5.0 — latest audited state
+- [Run 39518486151](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39518486151) passed on commit `2b19eeab0c9f8e1b0a16c3a6550b9f791b9cbac8` at `2026-10-20T23:59:24Z` UTC.
+- Latest counts: 501 source files; 1,041 local Markdown edges / 0 missing; 38 parent edges / 0 unresolved/ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 exact-content duplicate groups; 697 identifier occurrences.
+- Structural link health is confirmed for this commit. Semantic review remains incomplete for 23 Stable ID groups, all 43 Production ID groups, the intended meaning of 1,041 links and final canonical promotion of the 11 duplicate groups. All eight EVT groups have identity/status decisions, but reference audits remain open.
