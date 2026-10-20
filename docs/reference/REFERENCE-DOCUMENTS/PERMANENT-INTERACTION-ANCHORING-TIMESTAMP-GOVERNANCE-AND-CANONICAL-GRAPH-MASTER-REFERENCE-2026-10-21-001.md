@@ -3,7 +3,7 @@
 ## شناسنامه و وضعیت
 - Stable ID / شناسه پایدار: PERMANENT-INTERACTION-ANCHORING-TIMESTAMP-GOVERNANCE-AND-CANONICAL-GRAPH-MASTER-REFERENCE-2026-10-21-001
 - Production ID / شناسه تولید: PIATGCG-2026-10-21-001
-- Version / نسخه: 1.0.2
+- Version / نسخه: 1.0.3
 - Owner / مالک: Ahmad Nezhadhosseini / احمد پلنگ
 - Project / پروژه: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
 - Scope / دامنه: حاکمیت تعامل، لنگر ورودی/خروجی، زمان‌گذاری، گراف تاریخی ۰.۰، ثبت معماری، خاک‌برداری، بستهٔ انتقال میزبان
@@ -227,4 +227,14 @@ T1 ورودی و خروجی قابل‌بازیابی؛ T2 زمان‌های م�
 
 ## Version history update
 - 1.0.2 — G-11 through G-13 were integrated into this governing reference and the architecture integration queue; the stale EVT-0047 placeholder was replaced with the canonical event link.
+
+## 18. شاهد اجرایی محدود از GitHub Actions — 2026-10-21
+- Workflow: Evidence Gate - Independent Execution Test.
+- Run ID: `39497698663`; conclusion: `success`; head commit: `1dad17490b47364228d2ad45ee39703dfd573790`.
+- Run time from GitHub metadata: started `2026-10-20T21:06:50Z`, completed `2026-10-20T21:07:01Z`.
+- Job steps reported success for Stable Retrieval Core consistency test, Independent execution test, creation/commit of durable evidence record and artifact upload.
+- Evidence artifact: `evidence/evidence-gate-39497698663.txt`.
+- Interpretation boundary: this is real automated evidence for the repository's configured Evidence Gate and its tested stable-retrieval/independent-execution scope. It does **not** prove every user input/output is automatically captured, full 0.0 graph reconciliation, Dropbox, independent Buffer/Library/Persistent Memory, or second-host transfer.
+- The workflow creates a new evidence artifact on a successful push. Therefore tree counts are time-bounded snapshots and may change after any repository write.
+- Version history: 1.0.3 records this narrow execution proof and the distinction between tested workflow automation and universal interaction capture.
 
