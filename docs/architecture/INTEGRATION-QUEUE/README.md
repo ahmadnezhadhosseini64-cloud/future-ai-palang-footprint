@@ -808,3 +808,6 @@ The queue index and the timestamp case must each be read back after this update.
 
 
 | H0EVTCA-2026-10-21-001 | داوری دسته‌ای شماره‌های تکراری EVT با تمایز هویت کامل رویداد | ACTIVE / PARTIAL — شش جفت تاریخی از نظر عنوان و شناسه، دو رخداد مستقل‌اند؛ ارجاع‌های ورودی/خروجی و دو برخورد اضافی هنوز بررسی نشده‌اند | اصلاح ارجاع‌های مبهم با Stable ID و مسیر کامل، بررسی EVT-0050 و مسیر اصلاحی EVT-0051، سپس بازخوانی و ممیزی تازه | [دفتر داوری EVT](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-EVT-NUMBER-COLLISION-ADJUDICATION-2026-10-21-001.md) |
+
+
+- **H0IRRB-2026-10-21-001 — OPEN / ACTIVE:** [دفتر داوری تعریف در برابر ارجاع](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-IDENTIFIER-ROLE-REVIEW-BATCH-001-2026-10-21.md). دو گروه Stable ID بازبینی شدند؛ parser اصلاح شده و اجرای ممیزی تازه برای اثبات اصلاح لازم است.
