@@ -294,3 +294,15 @@ NO CLAIM WITHOUT EVIDENCE — هیچ ادعایی بدون شاهد پذیرفت
 - **قاعده:** شناسایی یا صف‌بندی مساوی بستن نیست. بستن نیازمند اصلاح مقصد، READ-BACK، MATCH، آزمون متناسب و شاهد ثبت‌شده است.
 - **زمان دقیق پیام کاربر:** UNKNOWN / UNVERIFIED؛ زمان commit یا بازخوانی جایگزین آن نمی‌شود.
 - **اقدام بعدی:** از PGGR شروع کن؛ آخرین وضعیت هر مقصد را جداگانه بررسی کن؛ موارد قابل‌اجرا را با شواهد ببند و موارد وابسته به دسترسی/اقدام کاربر را OPEN / WAITING نگه دار.
+
+
+## گراف تاریخی ۰.۰ — پیگیری EVT-0048 / H0G-RDR
+- **H0G-RDR-2026-10-21-001** — تطبیق گراف تاریخی و دفتر تکرارها: ACTIVE / OPEN-PARTIAL; [سند مرجع](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-RECONCILIATION-AND-DEDUPLICATION-REGISTER-2026-10-21-001.md).
+- **G-15 — Canonical alias/lineage manifest:** OPEN / ACTIVE. ادغام منطقی تکرارها بدون حذف نسخه‌های تاریخی.
+- **G-16 — مرور معنایی رویدادها و اسناد مرجع:** OPEN / ACTIVE. یافته‌ها، تصمیم‌ها و شکاف‌ها باید با منبع به Master/Child/Rahm وصل شوند.
+- **G-17 — Dropbox failover:** OPEN / WAITING. اتصال/نوشتن/بازخوانی/بازیابی واقعی.
+- **G-18 — Buffer / Library / Persistent Memory:** OPEN / UNVERIFIED؛ هر مقصد مستقل.
+- **G-19 — انتقال به میزبان دوم:** OPEN / NOT PROVEN.
+- **G-20 — ثبت خودکار سراسری تعامل‌ها:** OPEN / NOT PROVEN.
+- **Evidence:** Living Architecture Audit run [39501699736](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39501699736), SUCCESS; artifact `living-architecture-audit-39501699736`.
+- **Timestamp policy:** UTC primary for new records; no fabricated user-message times; local timezone is derived display only.
