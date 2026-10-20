@@ -57,6 +57,6 @@ Repeated Stable IDs and Production IDs are occurrence groups, not automatically 
 
 
 ## Latest manifest acceptance evidence
-- Latest successful structural run: [39510341086](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39510341086), recorded in [H0GMS v1.2.0](./HISTORICAL-0.0-GRAPH-MANIFEST-SNAPSHOT-2026-10-21-001.md).
+- Latest successful structural run: [39510485057](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39510485057), recorded in [H0GMS v1.3.0](./HISTORICAL-0.0-GRAPH-MANIFEST-SNAPSHOT-2026-10-21-001.md).
 - The manifest emitted all 11 duplicate-group decisions from this register, with no missing local links and no unresolved/ambiguous parent edges in that snapshot.
 - Repeated ID occurrence groups and EVT-number collision groups remain separate from exact-content duplicate decisions; do not merge them automatically.
