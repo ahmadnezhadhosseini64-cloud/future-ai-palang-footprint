@@ -491,3 +491,15 @@ The queue index and the timestamp case must each be read back after this update.
 - **Purpose:** نقطهٔ ورود واحد و اجرایی برای مسیر تعامل، معماری، ثبت، مستندسازی، شواهد، موارد باز، معیارهای پذیرش و ادامه.
 - **Open gates:** صف یکپارچه‌سازی، آینه‌های Library برای MRV و فرمان حاکم، Buffer، Persistent Memory، Dropbox (فقط پس از دستور صریح)، دو پروندهٔ تاریخی زنده‌سازی، آزمون‌های E2E/پل حافظه، و ممیزی کامل تاریخچه.
 - **Rule:** پیوند به مرجع مادر جایگزین ادغام محتوایی در مقصدهای معنایی یا آزمون مقصدبه‌مقصد نیست. هر مورد باید با بازخوانی، تطبیق و شاهد بسته شود.
+
+
+## ادغام معماری — مسیر کامل ۰.۰ و الحاقیهٔ حاکم زنده (2026-10-20)
+- **Stable ID:** `PALANG-0.0-COMPLETE-PATH-AND-GOVERNING-ADDENDUM-2026-10-20-001`
+- **Production ID:** `P0CPGA-HAIF-2026-10-20-001`
+- **پروندهٔ صف معماری:** [مسیر کامل ۰.۰ و الحاقیهٔ حاکم](./PALANG-0.0-COMPLETE-PATH-GOVERNING-ADDENDUM-2026-10-20-001.md)
+- **سند مرجع کامل مسیر:** [سند مرجع کامل](../../reference/REFERENCE-DOCUMENTS/PALANG-0.0-COMPLETE-PATH-AND-GOVERNING-ADDENDUM-2026-10-20-001.md)
+- **مرجع حاکم زنده:** [بخش ۲۰](../../reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md)
+- **رویداد معماری:** [EVT-0015](../BEHAVIOR-TRACE/EVT-0015-0.0-GOVERNING-ADDENDUM-ARCHITECTURE-INTEGRATION-2026-10-20.md)
+- **نقطهٔ ۰.۰ جاری:** [PALANG-0.0-CURRENT-2026-10-20-001](../../../checkpoints/PALANG-0.0-CURRENT-2026-10-20-001.md)
+- **جایگاه:** حاکمیت → سند مرجع زنده → لنگر ۰.۰ → صف ادغام معماری → رویداد رفتار → شواهد/بازخوانی → بازیابی/ادامه.
+- **وضعیت مقصدها:** این مورد به مخزن تعلق دارد؛ بافر، کتابخانه، حافظهٔ پایدار و Dropbox مستقلاً تأیید نشده‌اند. نقطهٔ Dropbox باز می‌ماند.
