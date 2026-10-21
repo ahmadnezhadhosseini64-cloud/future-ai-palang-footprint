@@ -80,6 +80,12 @@ jobs:
           set -euo pipefail
           python3 scripts/audit_timestamp_pairs_semantic.py | tee audit-output/timestamp-pairs-semantic-audit-run.txt
 
+      - name: Compile timestamp audit and host adapter tools
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m py_compile scripts/audit_timestamp_pairs_semantic.py scripts/host_adapter.py scripts/host_adapter_github_worker.py scripts/test_host_adapter.py
+
       - name: Test durable host adapter
         shell: bash
         run: |
