@@ -134,3 +134,10 @@
 - Audit [39527349236](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39527349236) passed on commit `3fcd1d4cd7ba91846c0de9abd9cdc00b9047015c`, UTC `2026-10-21T01:27:00Z`; artifact `12312999209`, digest `sha256:0d83bc649b4f620d8d13e6938614070d91554c795832476509aa78ff1c1ecb3a`.
 - 505 source files; 1,138 local links / 0 missing; 38 parent edges / 0 unresolved / 0 ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 duplicate groups; 709 identifier occurrences; 0 decode errors.
 - H0EVTRRB3 / EVT-0056 record scoped decisions for EVT-0029 and EVT-0030. This audit predates the present evidence append; final post-edit audit pending. Full EVT inbound/outbound audit remains OPEN.
+
+
+## Addendum v1.9.0 — legacy display-label disambiguation batch 004
+- Review: [H0EVTRRB4](./HISTORICAL-EVT-LEGACY-DISPLAY-LABEL-REVIEW-BATCH-004-2026-10-21-001.md); event: [EVT-0057](../../architecture/BEHAVIOR-TRACE/EVT-0057-LEGACY-EVT-DISPLAY-LABEL-REVIEW-BATCH-004-2026-10-21.md).
+- Short labels in the behavior-trace index, 0.0 README, reference index and integration queue were clarified for the specific colliding event identities. Full path targets were preserved.
+- The fixes are navigation-label corrections, not semantic merge decisions. No historical event or ID was deleted or renumbered.
+- Read-back and post-edit structural audit are pending. Full inbound/outbound review remains OPEN / PARTIAL.
