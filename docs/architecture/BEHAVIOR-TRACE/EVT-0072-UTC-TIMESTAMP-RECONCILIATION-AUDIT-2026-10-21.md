@@ -14,7 +14,7 @@
 - Repository: ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
 - Branch/tree observed: main / c393af8b7202690f2f7c51d97d334d086eff013b
 - Canonical reference: [UTC Timestamp Reconciliation Audit](../../reference/REFERENCE-DOCUMENTS/UTC-TIMESTAMP-RECONCILIATION-AUDIT-2026-10-21-001.md)
-- Status: REGISTERED PENDING READ-BACK; audit itself OPEN / PARTIAL.
+- Status: EVT-0072 registered; event and canonical reference fetched back; key-content read-back verified. Audit itself remains OPEN / PARTIAL.
 
 ## User request / ورودی
 کاربر دستور داد ادامهٔ پروژه آغاز شود، برای خروجی لنگر زمانی و لنگر مستقل رویداد ایجاد و ثبت شود، و همهٔ اسناد مخزن از نظر زمان‌های ثبت بررسی شوند تا زمان‌ها با UTC مرجع دستیار تطبیق داده شوند. کاربر صریحاً خواست ادعای خود با «چکش» بررسی شود.
@@ -25,15 +25,15 @@
 3. Recent commit query returned head commit `c393af8b7202690f2f7c51d97d334d086eff013b` at `2026-10-21T14:07:01Z`. This is repository commit metadata, not the current message or processing time.
 4. Existing timestamp governance references and duplicate-looking event-number families were located.
 5. A dedicated audit reference was written at `docs/reference/REFERENCE-DOCUMENTS/UTC-TIMESTAMP-RECONCILIATION-AUDIT-2026-10-21-001.md`.
-6. Initial write commit for that reference: `9104f5be4079640e1b8aed7c59c8fcc700603573`. The actual commit timestamp and read-back evidence must be fetched and recorded separately.
-7. The initial inventory and keyword search are not a complete per-file timestamp audit. Full timestamp scan, arithmetic comparison, and canonical event/ID reconciliation remain OPEN.
+6. Initial write commit for the reference: `9104f5be4079640e1b8aed7c59c8fcc700603573` at `2026-10-21T15:33:19Z`; EVT-0072 commit: `7d5eb89f7196acb23f7488f2850638a3ad1d2375` at `2026-10-21T15:33:35Z` (GitHub commit metadata).
+7. Both the reference and event were fetched back from GitHub. Stable IDs, event/reference links, and expected key sections were present. Exact wall-clock time of the read-back call is not exposed, so it is not fabricated. The initial inventory and keyword search are not a complete per-file timestamp audit. Full timestamp scan, arithmetic comparison, and canonical event/ID reconciliation remain OPEN.
 
 ## PEH / چکش شواهد
 - PASS: repository tree fetched and inventory counts computed from the complete tree response.
 - PASS: existing UTC-first and dual-timestamp governance documents found.
 - FINDING: multiple EVT-0067 and EVT-0068 path families exist; do not assume they are duplicates or rename them without lineage review.
 - OPEN: timestamp presence/meaning/precision audit for every relevant document; UTC/local conversion checks; per-file findings report.
-- OPEN: post-write read-back and exact content match for the newly created audit reference until fetched again.
+- PASS: post-write fetch/read-back of the new reference and event; key-content match verified. A cryptographic byte-for-byte comparison was not performed.
 - UNVERIFIED: Library, Buffer, Persistent Memory, Dropbox and cross-host persistence.
 - NOT PROVEN: automatic capture of every user/assistant interaction across sessions/hosts.
 
@@ -41,4 +41,4 @@
 `user_message_time`, `assistant_processing_time_utc`, `repository_commit_time`, `readback_time`, and any external destination time are independent fields. Unknown values stay `UNKNOWN / UNVERIFIED`. Local time is a derived display with explicit offset and never replaces UTC.
 
 ## Next action
-Fetch this event and its canonical reference back from the repository, capture the real commit metadata, then run a complete timestamp-specific scan and attach per-file results. Keep the audit open until the denominator and each finding are explicit.
+Run a complete timestamp-specific scan and attach per-file results; then fetch the updated indexes/queue back from the repository and capture their commit metadata. Keep the audit open until the denominator and each finding are explicit. Keep the audit open until the denominator and each finding are explicit.
