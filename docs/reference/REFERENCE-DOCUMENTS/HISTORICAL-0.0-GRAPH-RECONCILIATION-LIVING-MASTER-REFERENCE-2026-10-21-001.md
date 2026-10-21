@@ -272,3 +272,10 @@ This document can be considered repository-integrated only after the file, index
 - Latest inventory: 501 source files; 1,041 local Markdown edges / 0 missing; 38 parent edges / 0 unresolved/ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 exact-content duplicate groups; 697 ID occurrences.
 - Full status remains in [H0IRAR](./HISTORICAL-0.0-IDENTIFIER-AND-RELATION-ADJUDICATION-REGISTER-2026-10-21-001.md); role batch 002 is [H0IRRB2](./HISTORICAL-0.0-IDENTIFIER-ROLE-REVIEW-BATCH-002-2026-10-21.md); app-build specification is [FAPF-IRA](./FUTURE-AI-PALANG-FOOTPRINT-IMPLEMENTABLE-REFERENCE-ARCHITECTURE-2026-10-21-001.md).
 - Structural acceptance is PASS. Semantic proof of all remaining groups/edges, complete 501-file role classification, EVT reference audits and final duplicate canonicalization remain OPEN / PARTIAL.
+
+
+## Addendum v2.6.0 — final integration audit for this phase
+- Latest successful run: [39518636358](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39518636358), audited commit `d207f558ab2a10e392c3f5c8d84de8996a7d8024`, runner UTC `2026-10-21T00:00:46Z`.
+- 501 source files, 1,050 local Markdown edges / 0 missing, 38 parent edges / 0 unresolved/ambiguous, 30 Stable ID groups, 43 Production ID groups, 7 Reference ID groups, 8 EVT groups, 11 exact-content duplicate groups, 697 identifier occurrences, 0 decode errors.
+- Current governing records: [H0IRAR](./HISTORICAL-0.0-IDENTIFIER-AND-RELATION-ADJUDICATION-REGISTER-2026-10-21-001.md), [H0IRRB2](./HISTORICAL-0.0-IDENTIFIER-ROLE-REVIEW-BATCH-002-2026-10-21.md), [H0SRQS](./HISTORICAL-0.0-SEMANTIC-REVIEW-QUEUE-SNAPSHOT-2026-10-21-001.md), [FAPF-IRA](./FUTURE-AI-PALANG-FOOTPRINT-IMPLEMENTABLE-REFERENCE-ARCHITECTURE-2026-10-21-001.md).
+- Structural pass is verified for this audited commit. Full semantic proof across all 501 source files and 1,050 links is not claimed; remaining groups/edges, all Production ID groups and final canonical promotion remain active work.
