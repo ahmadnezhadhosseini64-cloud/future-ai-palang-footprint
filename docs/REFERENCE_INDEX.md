@@ -435,3 +435,9 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - ابزار ممیزی: scripts/audit_timestamp_pairs_semantic.py؛ گزارش‌های اجرایی در artifact ممیزی.
 - receiver اولیه: scripts/host_adapter.py؛ آزمون مصنوعی: scripts/test_host_adapter.py.
 - وضعیت: اسناد/کد مخزنی ثبت شده‌اند؛ اتصال تولیدکنندهٔ زندهٔ ChatGPT، نوشتن receiver به GitHub و مقصدهای بیرونی هنوز اثبات نشده‌اند.
+
+
+## EVT-0076 — زمان ثبت مخزن معیار واحد
+- [EVT-0076](architecture/BEHAVIOR-TRACE/EVT-0076-REPOSITORY-REGISTRATION-TIME-IS-CANONICAL-2026-10-21.md) — هر ثبت فایل/رویداد یک جفت زمان دارد: UTC مرجع + تهران تبدیل‌شده.
+- استاندارد حاکم: [ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21-001](architecture/GOVERNANCE/ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21-001.md), اصلاحیهٔ 1.2.0.
+- ابزار ممیزی: scripts/audit_timestamp_pairs_semantic.py؛ از تاریخچهٔ کامل Git زمان آخرین commit هر فایل را به‌عنوان زمان ثبت مخزن استخراج می‌کند.
