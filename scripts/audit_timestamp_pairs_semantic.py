@@ -16,14 +16,23 @@ def parse(s):
  if s.endswith('Z'): s=s[:-1]+'+00:00'
  s=re.sub(r'([+-]\d{2})(\d{2})$',r'\1:\2',s)
  return datetime.fromisoformat(s)
-def git_file_time(rel):
+def git_file_time_map():
+ # One history walk is much faster than launching git once per file.
+ result={}
  try:
-  v=subprocess.check_output(['git','log','-1','--format=%cI','--',rel],text=True,stderr=subprocess.DEVNULL).strip()
-  if v: return datetime.fromisoformat(v.replace('Z','+00:00')).astimezone(UTC)
+  log=subprocess.check_output(['git','log','--max-count=3000','--format=COMMIT:%cI','--name-only','--','docs','checkpoints','recovery','provenance','evidence','scripts'],text=True,stderr=subprocess.DEVNULL)
+  stamp=None
+  for line in log.splitlines():
+   if line.startswith('COMMIT:'):
+    try: stamp=datetime.fromisoformat(line[7:].replace('Z','+00:00')).astimezone(UTC)
+    except ValueError: stamp=None
+   elif line.strip() and stamp is not None and line not in result:
+    result[line]=stamp
  except Exception: pass
- return None
+ return result
 try: commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
 except Exception: commit='UNKNOWN'
+FILE_TIMES=git_file_time_map()
 run=datetime.now(UTC); run_s=run.isoformat(timespec='seconds').replace('+00:00','Z')
 files=[]; stamps=[]; errors=[]; total=0
 for p in sorted(ROOT.rglob('*')):
@@ -32,7 +41,7 @@ for p in sorted(ROOT.rglob('*')):
  if not (rel.startswith(('docs/','checkpoints/','recovery/','provenance/','evidence/')) or rel.startswith('scripts/')): continue
  try: raw=p.read_bytes(); txt=raw.decode('utf-8')
  except (OSError,UnicodeDecodeError): continue
- file_time=git_file_time(rel)
+ file_time=FILE_TIMES.get(rel)
  file_utc=file_time.isoformat(timespec='seconds').replace('+00:00','Z') if file_time else None
  file_local=file_time.astimezone(TEHRAN).isoformat(timespec='seconds') if file_time else None
  file_record={'path':rel,'sha256':hashlib.sha256(raw).hexdigest(),'repository_registration_utc':file_utc,'repository_registration_tehran':file_local,'repository_time_source':'git last-change commit metadata' if file_time else 'UNAVAILABLE','timestamp_occurrences':0}
