@@ -7,7 +7,7 @@
 - Exact user-message time / زمان دقیق پیام کاربر: UNKNOWN / UNVERIFIED؛ از زمان مخزن یا زمان اجرای ممیزی استنتاج نمی‌شود.
 - Owner / مالک: احمد پلنگ
 - Project / پروژه: Future AI / Palang Footprint — HAIF
-- Status / وضعیت: ACTIVE / LIVING / OPEN; repository write and read-back must be proven after this record is created.
+- Status / وضعیت: ACTIVE / LIVING / VERIFIED IN REPOSITORY; semantic graph and product gaps remain OPEN.
 - Parent anchor / نقطهٔ مادر: PALANG-0.0-REPOSITORY-MODEL-INITIAL-RESUME-2026-10-21-001
 - Scope / دامنه: مخزن GitHub؛ هیچ ادعایی دربارهٔ Buffer، Persistent Memory، Library یا Dropbox وجود ندارد.
 
@@ -62,5 +62,9 @@
 - Library / کتابخانه: NOT ATTEMPTED.
 - Dropbox: OPEN / WAITING؛ اتصال و آزمون فایل انجام نشده است.
 
-## 7. معیار پذیرش این ثبت
-این سند فقط پس از ایجاد در مخزن، بازخوانی دوبارهٔ همان مسیر و تطبیق شناسه‌ها، مسیر مادر، یافته‌ها و گام بعدی VERIFIED IN REPOSITORY خواهد شد. این تأیید فقط به مخزن مربوط است.
+## 7. اثبات نوشتن و بازخوانی
+- WRITE / نوشتن: موفق؛ commit ایجاد سند: `acadb21035b00120e2379e8d1f026b57fb26ab63`.
+- READ-BACK / بازخوانی: موفق؛ فایل از مسیر canonical دوباره از GitHub خوانده شد.
+- MATCH / تطبیق: شناسهٔ پایدار، شناسهٔ تولید، نقطهٔ مادر، یافته‌ها، شکاف‌ها و گام بعدی در فایل بازخوانی‌شده موجودند.
+- Read-back blob SHA / شناسهٔ محتوای بازخوانی‌شده: `79486dfcca4fc6e45d0d65f9490603f4344e3418` (پیش از این اصلاح وضعیت؛ پس از اصلاح باید دوباره بازخوانی شود).
+- Verification boundary / مرز تأیید: این نتیجه فقط ثبت سند در مخزن را تأیید می‌کند؛ نه بستن شکاف معنایی، اجرای آزمون تازه، و نه ذخیره در مقصدهای دیگر.
