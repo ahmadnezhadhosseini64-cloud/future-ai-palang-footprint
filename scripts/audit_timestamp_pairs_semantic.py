@@ -33,6 +33,15 @@ def git_file_time_map():
 try: commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
 except Exception: commit='UNKNOWN'
 FILE_TIMES=git_file_time_map()
+# Resolve any remaining tracked paths without launching git once per normal file.
+try:
+ for rel in subprocess.check_output(['git','ls-files'],text=True).splitlines():
+  if rel not in FILE_TIMES and rel.startswith(('docs/','checkpoints/','recovery/','provenance/','evidence/','scripts/')):
+   try:
+    v=subprocess.check_output(['git','log','-1','--format=%cI','--',rel],text=True,stderr=subprocess.DEVNULL).strip()
+    if v: FILE_TIMES[rel]=datetime.fromisoformat(v.replace('Z','+00:00')).astimezone(UTC)
+   except Exception: pass
+except Exception: pass
 run=datetime.now(UTC); run_s=run.isoformat(timespec='seconds').replace('+00:00','Z')
 files=[]; stamps=[]; errors=[]; total=0
 for p in sorted(ROOT.rglob('*')):
@@ -47,7 +56,7 @@ for p in sorted(ROOT.rglob('*')):
  file_record={'path':rel,'sha256':hashlib.sha256(raw).hexdigest(),'repository_registration_utc':file_utc,'repository_registration_tehran':file_local,'repository_time_source':'git last-change commit metadata' if file_time else 'UNAVAILABLE','timestamp_occurrences':0}
  content_lines=txt.splitlines()
  for ln,line in enumerate(content_lines,1):
-  context=' '.join(content_lines[max(0,ln-4):ln])
+  context=' '.join(content_lines[max(0,ln-10):ln])
   for m in ISO.finditer(line):
    val=m.group(1); total+=1; file_record['timestamp_occurrences']+=1
    has_utc_label=bool(UTC_LABEL.search(context))
