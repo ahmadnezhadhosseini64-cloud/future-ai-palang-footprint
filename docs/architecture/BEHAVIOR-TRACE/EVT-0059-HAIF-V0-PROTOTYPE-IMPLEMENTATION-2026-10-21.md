@@ -43,3 +43,10 @@
 2. ثبت نتیجهٔ نهایی و ممیزی پیوندهای مخزن.
 3. افزودن قابلیت Artifact/Evidence با منشأ و نسخه.
 4. سپس ساخت صف بازبینی و گراف رابطه‌ها، بدون حذف تاریخچه یا ارتقای خودکار موارد نامطمئن.
+
+
+## Addendum — post-lifespan test run
+- HAIF Prototype Tests [39536269368](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39536269368) completed SUCCESS on commit 3ca9aa9dd57bad84fcc2baa8b73c09cd40d4c225.
+- Result: 5 passed, 1 warning, 0 failed. The deprecation warning for FastAPI startup events was removed by switching to a lifespan handler. One upstream Starlette/TestClient warning remains because the current stack recommends httpx2; it does not fail the tests and remains a small maintenance item.
+- The tests cover anchor write/read-back and retrieval, preservation of two independent anchors, event-to-anchor linkage, rejection of unknown anchors, and disclosure that persistence is local-only.
+- This is evidence for the prototype's current test scope, not production readiness, security validation, deployment or external persistence.
