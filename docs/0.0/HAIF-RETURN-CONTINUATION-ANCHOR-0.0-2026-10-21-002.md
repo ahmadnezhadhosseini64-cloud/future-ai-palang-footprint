@@ -93,3 +93,10 @@
 - Timestamp standard / استاندارد حاکم: [بازکردن استاندارد](../architecture/GOVERNANCE/ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21-001.md).
 - Reference index / نمایه: [بازکردن نمایه](../REFERENCE_INDEX.md).
 - Workflow status must be rechecked on return; this anchor does not claim that runs still pending at the prior inspection have since passed.
+
+## سند مرجع مادر مسیر بازگشت — پیوند افزوده‌شده
+- **سند مرجع مادر مسیر بازگشت و کارهای بعدی:** [HAIF-RETURN-0.0-AND-EXECUTION-PATH-MASTER-REFERENCE-2026-10-21-001](../reference/REFERENCE-DOCUMENTS/HAIF-RETURN-0.0-AND-EXECUTION-PATH-MASTER-REFERENCE-2026-10-21-001.md)
+- Stable ID: `HAIF-RETURN-0.0-AND-EXECUTION-PATH-MASTER-REFERENCE-2026-10-21-001`; version `1.0.0`; status ACTIVE / LIVING / OPEN / GOVERNING.
+- ثبت مخزن سند مادر: commit `6b4e65629201150eeb9265e1ecc4af8221571f01`; UTC `2026-10-21T19:23:19Z`; Tehran `2026-10-21T22:53:19+03:30`.
+- سند مادر جدید جداگانه از مخزن بازخوانی شد و شناسه، لنگر مستقل، آزمون شش سند، Dropbox، G-18/G-19/G-20 و قاعدهٔ UTC-first در محتوای بازخوانی‌شده تأیید شدند.
+- این پیوند لنگر مستقل را جایگزین نمی‌کند و هیچ ۰.۰ قبلی را نمی‌بندد.
