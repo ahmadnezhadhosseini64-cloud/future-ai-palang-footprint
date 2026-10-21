@@ -67,3 +67,9 @@
 - Run [39612322105](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39612322105) failed: 1 failed, 10 passed, 1 warning. The second query was not unique because the master anchor ID appeared in two allowlisted documents; expected count 1, actual count 2.
 - Corrected the test query to the master anchor's production ID `PREMA-2026-10-21-001`, commit `987bb7f72488d3c3f9b245445703dac7a7ce5734`. This is a test determinism fix; the next run [39612477894](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39612477894) was queued at the last observation.
 - Integration acceptance remains OPEN until the rerun passes. The two failures are retained as evidence, not erased.
+
+
+### Third integration-test result and correction
+- Run [39612477894](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39612477894) failed: 1 failed, 10 passed, 1 warning. The chosen production ID was also present in two ingested documents; count was 2 instead of 1.
+- The search endpoint searches title/content (not source_path), confirmed by rereading `prototype/haif-v0/app.py`. The test query now uses the distinctive phrase `Storage proof / اثبات ذخیره‌سازی:` found in the allowlisted master reference, commit `6ff6f8377706dc5d8f0093cab577b9ace5266dbc`.
+- The corrected test run must still be observed; integration acceptance remains OPEN until its result is successful.
