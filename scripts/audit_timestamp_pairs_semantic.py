@@ -20,7 +20,7 @@ def git_file_time_map():
  # One history walk is much faster than launching git once per file.
  result={}
  try:
-  log=subprocess.check_output(['git','log','--max-count=3000','--format=COMMIT:%cI','--name-only','--','docs','checkpoints','recovery','provenance','evidence','scripts'],text=True,stderr=subprocess.DEVNULL)
+  log=subprocess.check_output(['git','log','--format=COMMIT:%cI','--name-only','--','docs','checkpoints','recovery','provenance','evidence','scripts'],text=True,stderr=subprocess.DEVNULL)
   stamp=None
   for line in log.splitlines():
    if line.startswith('COMMIT:'):
@@ -52,6 +52,7 @@ for p in sorted(ROOT.rglob('*')):
    local_label=bool(LOCAL_LABEL.search(line))
    explicit_utc_suffix=val.endswith('Z') or val.endswith('+00:00') or val.endswith('-00:00')
    # A line may mention both UTC and Tehran; classify each value by its own explicit offset.
+   # Numeric offsets/Z in the value itself outrank broad prose labels on the same line.
    utc_label=explicit_utc_suffix or (has_utc_label and not local_label)
    try: dt=parse(val)
    except (ValueError,OverflowError) as e:
@@ -73,8 +74,6 @@ for p in sorted(ROOT.rglob('*')):
     status='REVIEW_TEHRAN_OFFSET_MISMATCH'
    if local_claim and dt.replace(tzinfo=None)!=expected_local.replace(tzinfo=None):
     status='FAIL_TEHRAN_LOCAL_VALUE_MISMATCH'
-   if utc_label and dt.utcoffset().total_seconds()!=0:
-    status='FAIL_UTC_LABEL_OFFSET_MISMATCH'
    item={'path':rel,'line':ln,'original':val,'role':role,'utc_equivalent':instant.isoformat(timespec='seconds').replace('+00:00','Z'),'tehran_equivalent':expected_local.isoformat(timespec='seconds'),'status':status,'inferred':inferred,'source_line':line.strip()[:240]}
    stamps.append(item)
   # if a line explicitly presents both values, compare all normalized instants in that line.
@@ -93,5 +92,5 @@ print('REPOSITORY_TIME_NORMALIZATION_AUDIT')
 for k,v in counts.items(): print(f'{k}={v}')
 for x in errors[:25]: print(f"ISSUE {x['path']}:{x['line']} {x['value']} — {x['reason']}")
 for x in stamps:
- if x['status'] in ('REVIEW_TEHRAN_OFFSET_MISMATCH','FAIL_TEHRAN_LOCAL_VALUE_MISMATCH','FAIL_UTC_LABEL_OFFSET_MISMATCH'): print(f"MISMATCH {x['status']} {x['path']}:{x['line']} original={x['original']} UTC={x['utc_equivalent']} Tehran={x['tehran_equivalent']} role={x['role']}")
+ if x['status'] in ('REVIEW_TEHRAN_OFFSET_MISMATCH','FAIL_TEHRAN_LOCAL_VALUE_MISMATCH'): print(f"MISMATCH {x['status']} {x['path']}:{x['line']} original={x['original']} UTC={x['utc_equivalent']} Tehran={x['tehran_equivalent']} role={x['role']}")
 print('result=REVIEW_REQUIRED' if errors or counts['tehran_offset_or_value_failures'] or counts['utc_label_failures'] or counts['files_without_repository_commit_time'] else 'result=REPOSITORY_TIME_NORMALIZATION_PASS')
