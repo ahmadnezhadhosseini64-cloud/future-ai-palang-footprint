@@ -39,3 +39,11 @@
 - UTC: از `commit.committer.date` همان commit.
 - Tehran: تبدیل محاسباتی همان UTC به `Asia/Tehran`.
 - Read-back: نتیجهٔ fetch فایل باید پس از ثبت موجود باشد؛ زمان دقیق fetch اگر در دسترس ابزار نباشد UNKNOWN می‌ماند.
+
+## شاهد ثبت اولیه در مخزن
+- Initial registration commit / زمان ثبت اولیه: `7831b4b79a30a61beae33fa5e2890a86e1fb0177`
+- Repository registration UTC / زمان ثبت UTC: `2026-10-21T16:27:06Z`
+- Repository registration Tehran / زمان ثبت تهران: `2026-10-21T19:57:06+03:30`
+- Arithmetic check / چکش حسابی: UTC + 03:30 = Tehran؛ اختلاف instant برابر صفر ثانیه.
+- Source / منبع: GitHub commit metadata؛ این زمان ثبت اولیهٔ فایل است، نه زمان پیام یا تولید پاسخ.
+- Rule link / پیوند قاعده: [استاندارد حاکم زمان](../GOVERNANCE/ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21-001.md) و [سند مرجع مادر](../../reference/REFERENCE-DOCUMENTS/SEMANTIC-TIMESTAMP-AUDIT-AND-HOST-CAPTURE-RECOVERY-MASTER-REFERENCE-2026-10-21-001.md).
