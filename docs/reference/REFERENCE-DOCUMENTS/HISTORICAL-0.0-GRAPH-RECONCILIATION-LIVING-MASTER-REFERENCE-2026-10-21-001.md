@@ -292,3 +292,10 @@ This document can be considered repository-integrated only after the file, index
 - Latest successful audit: [39518895224](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39518895224), audited commit `2157a8f093c53515020f029f45faf9f131a77c33`, runner UTC `2026-10-21T00:03:12Z`.
 - 501 source files; 1,062 local Markdown links / 0 missing; 38 parent edges / 0 unresolved/ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 exact-content duplicate groups; 697 identifier occurrences; 0 decode errors.
 - The latest audit confirms the current index, group ledger and semantic baseline are structurally connected. This does not establish that all 1,062 links have semantically correct targets. The remaining group-by-group review stays active.
+
+
+## Addendum v2.10.0 — third identifier role-review batch
+- [H0PRRB3](./HISTORICAL-0.0-PRODUCTION-ID-ROLE-REVIEW-BATCH-003-2026-10-21.md) and [EVT-0054](../../architecture/BEHAVIOR-TRACE/EVT-0054-PRODUCTION-ID-ROLE-REVIEW-BATCH-003-2026-10-21.md) record five new evidence-based Production ID role decisions for the 0.0 Vault.
+- Five pairs have equal SHA-256 and byte counts. Operational/governance/architecture/checkpoint/registry paths are role-based primary candidates; their Reference Documents copies are `MIRROR_OF`. All ten paths remain preserved; canonical promotion is provisional until Git history and non-Markdown consumers are checked.
+- Source evidence is from audit [39518895224](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39518895224), commit `2157a8f093c53515020f029f45faf9f131a77c33`. A new audit must validate this batch and event file after commit.
+- Semantic coverage is still partial; the 43 Production ID groups as a whole and all 1,062 link meanings are not closed. Use the governing ledger [H0IRAR](./HISTORICAL-0.0-IDENTIFIER-AND-RELATION-ADJUDICATION-REGISTER-2026-10-21-001.md) for remaining work.
