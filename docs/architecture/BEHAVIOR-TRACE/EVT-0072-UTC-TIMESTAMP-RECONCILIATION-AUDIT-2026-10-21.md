@@ -42,3 +42,14 @@
 
 ## Next action
 Run a complete timestamp-specific scan and attach per-file results; then fetch the updated indexes/queue back from the repository and capture their commit metadata. Keep the audit open until the denominator and each finding are explicit. Keep the audit open until the denominator and each finding are explicit.
+
+
+## 4. Automated scan outcome and corrective trace
+- Successful run: [Living Architecture Audit #39627195037](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39627195037), workflow conclusion SUCCESS; audit execution `2026-10-21T15:36:30Z`.
+- Follow-up run after adding explicit missing-time candidate output: [Living Architecture Audit #39627266388](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39627266388).
+- Timestamp scan covered 444 relevant documents: 106 reference documents, 83 event documents, 43 0.0/checkpoint documents.
+- Detection counts: 428 with ISO-like timestamps; 14 with neither ISO-like timestamp nor an explicit UNKNOWN marker; 229 with UTC/offset evidence; 248 with zone/offset evidence; 184 with explicit UNKNOWN near time labels.
+- The 14 candidates and path list are preserved in the canonical audit reference. They are heuristic candidates and must be reviewed for role/requirement before any content edits.
+- The same workflow's historical graph scan reported 5 missing relative links, 44 Stable ID collision groups, 56 Production ID collision groups, 7 Reference ID collision groups, 13 EVT-number collision groups, and 11 exact-content duplicate groups. This is a separate structural/lineage backlog.
+- Two initial runs of the newly added timestamp audit failed due to field-name mismatches in the report formatter; the errors were inspected in job logs and corrected. The successful run confirms the scanner executes, not that all semantic timestamp pairs are reconciled.
+- Next: pairwise UTC/local arithmetic review, adjudicate timestamp candidates and identity collisions, then update and read back all final indexes/master/queue links.
