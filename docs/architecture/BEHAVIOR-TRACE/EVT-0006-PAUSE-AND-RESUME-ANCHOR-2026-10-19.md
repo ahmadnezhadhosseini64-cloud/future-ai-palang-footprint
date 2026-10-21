@@ -14,7 +14,7 @@
 - **Canonical path:** `docs/architecture/BEHAVIOR-TRACE/EVT-0006-PAUSE-AND-RESUME-ANCHOR-2026-10-19.md`
 - **Related canonical reference:** `docs/reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-CYCLE-2026-10-19-001.md`
 - **Related living reference discovered in repository:** `docs/reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md`
-- **Related prior event:** EVT-0005 — ثبت چرخهٔ یکپارچهٔ لنگر خروجی.
+- **Related prior event:** [EVT-0005 — ثبت سند مرجع چرخهٔ یکپارچهٔ لنگر خروجی، ثبت و مستندسازی](./EVT-0005-REGISTER-UNIFIED-OUTPUT-ANCHOR-CYCLE-2026-10-19.md) — Stable Reference ID: `UNIFIED-OUTPUT-ANCHOR-REGISTRATION-CYCLE-2026-10-19-001`. این ارجاع به مسیر کامل است، چون EVT-0005 شمارهٔ کوتاه مشترک با رویداد دیگری نیز دارد.
 - **Lineage:** درخواست فعلی برای حفظ نقطهٔ توقف ← سند چرخهٔ یکپارچهٔ لنگر، ثبت و مستندسازی ← مرجع مادر پروژه و دفتر نقاط ۰.۰.
 - **Origin:** کاربر گفت «من میرم تا اینجا رو ثبت کن»؛ یعنی حفظ وضعیت فعلی برای ازسرگیری بعدی.
 
@@ -54,3 +54,8 @@
 - **First action:** بازخوانی این پرونده و سپس مقایسهٔ کامل دو سند هم‌پوشان برای رفع تعارض canonical/شناسهٔ تولید.
 - **Open GAP:** دو سند مرجع هم‌پوشان و مقصدهای بیرونی تأییدنشده.
 - **Do not:** ادعای تکمیل کامل معماری، ادعای ثبت در مقصدهای بیرونی، حذف سابقه یا حدس‌زدن زمان دقیق.
+
+
+## Addendum — EVT short-number reference disambiguation
+- The bare `EVT-0005` reference in this record has been replaced with a full-path link and Stable Reference ID to distinguish it from the separate `EVT-0005-UNIFIED-OUTPUT-ANCHOR-LIVING-REFERENCE-REGISTRATION-2026-10-19.md` event.
+- The two EVT-0005 files remain preserved as distinct event identities. This edit clarifies this one outgoing reference only; it does not close the inbound/outbound audit for all EVT collision groups or decide the separate shared Production ID / canonical-reference issue.
