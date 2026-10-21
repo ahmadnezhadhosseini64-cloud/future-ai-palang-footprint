@@ -154,3 +154,11 @@ These failures are retained as implementation/test evidence. The current pass pr
 - 503 source files; 1,080 local links / 0 missing; 38 parent edges / 0 unresolved or ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 exact-content duplicate groups; 701 identifier occurrences; 0 decode errors.
 - Artifact `12310173787`; SHA-256 `sha256:934124271cef0e23ead5aed97a032012d833084dbb00d3b14f20ec0d282a3b11`.
 - Batch 003 reviewed five Production ID groups with hash/read-back evidence. This is bounded role review; all other semantic work remains active.
+
+
+## Addendum v1.12.0 — latest workflow 39521128996
+- Workflow [39521128996](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39521128996) succeeded on commit `200f29d9a3cb8ea58a4eeea2c116d5a3571cd133`; runner UTC `2026-10-21T00:24:34Z`.
+- Latest expanded manifest: 503 source files; 1,084 local links / 0 missing; 38 parent edges / 0 unresolved or ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 exact-content duplicate groups; 701 identifier occurrences; 0 decode errors.
+- The legacy audit in the same run reports 13 Stable ID and 24 Production ID groups under narrower extraction. These are parser-scope differences, not proof that either set is the canonical semantic conflict count.
+- Artifact metadata: ID `12309999612`, SHA-256 `sha256:4c8a4d7b019ac6316e70ab4e375356b393181c35943006ac57f066ca47c7bc79`. The artifact archive was not unpacked in this step; only the run logs and artifact metadata were inspected.
+- Structural pass: VERIFIED for this commit. Semantic role adjudication and link-by-link meaning: OPEN / PARTIAL.
