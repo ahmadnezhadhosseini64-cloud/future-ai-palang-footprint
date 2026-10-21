@@ -200,3 +200,7 @@
 
 ## Change log
 - `1.0.0` — ایجاد مدل اولیهٔ محصول HAIF بر اساس هدف پروژه و قابلیت‌های تکرارشوندهٔ موجود در مخزن؛ تعریف تجربهٔ کاربر، اجزا، مدل داده، چرخهٔ یادگیری کنترل‌شده، مراحل ساخت و معیارهای پذیرش. این سند مشخصات و پایهٔ ساخت است، نه ادعای ساخته‌شدن اپ.
+
+
+## Addendum v1.1.0 — central development package (2026-10-21)
+The central development package is now [HAIF-IAM-MR](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md), with folder overview [README](../../architecture/مدل%20اولیه%20AI/README.md), open work queue [HAIF-IM-NSOG](../../architecture/مدل%20اولیه%20AI/صف%20گام‌های%20بعدی%20و%20موارد%20باز.md), and creation event [EVT-0058](../../architecture/BEHAVIOR-TRACE/EVT-0058-INITIAL-AI-MODEL-PACKAGE-CREATION-2026-10-21.md). This addendum makes the package navigable from the existing product baseline; it does not claim the software is implemented or deployed. The new links require post-edit audit.
