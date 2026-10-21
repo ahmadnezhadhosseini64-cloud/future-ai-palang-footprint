@@ -51,3 +51,10 @@
 - Expanded manifest: 1,136 local links / 0 missing; 38 parent edges / 0 unresolved / 0 ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 exact-content duplicate groups; 709 identifier occurrences; 0 decode errors. Source files remain 505.
 - Artifact `12313198258`; digest `sha256:123d44df97464b8ac968cde89e60df8c22bf14ba19d9815b2414224bd19d73fd`.
 - The two display-label fixes are included in the audited commit and structural checks pass. Full inbound/outbound audit, Git history and non-Markdown consumers remain OPEN / PARTIAL.
+
+
+## Evidence-recording audit / ممیزی ثبت شواهد
+- Living Architecture Audit [39527349236](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39527349236) completed SUCCESS on commit `3fcd1d4cd7ba91846c0de9abd9cdc00b9047015c`; runner UTC `2026-10-21T01:27:00Z`.
+- Expanded manifest: 1,138 local Markdown links / 0 missing; 38 parent edges / 0 unresolved / 0 ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 exact-content duplicate groups; 709 identifier occurrences; 0 decode errors.
+- Artifact ID `12312999209`; SHA-256 `0d83bc649b4f620d8d13e6938614070d91554c795832476509aa78ff1c1ecb3a`.
+- This validates the pre-evidence-addendum change set. A final audit after this evidence append is required. Full inbound/outbound review remains OPEN / PARTIAL.
