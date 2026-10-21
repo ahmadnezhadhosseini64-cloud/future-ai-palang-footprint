@@ -675,3 +675,11 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - اصلاح parser در مخزن ثبت شده؛ نتیجهٔ workflow و رفع پیوندهای مفقود تا ممیزی تازه باید تأیید شوند.
 
 - [EVT-0064 — ورود و بازیابی سند همراه با منشأ](../architecture/BEHAVIOR-TRACE/EVT-0064-HAIF-DOCUMENT-RETRIEVAL-PROVENANCE-2026-10-21.md) — ادامهٔ اجرایی مدل اولیهٔ HAIF، 7 آزمون موفق.
+
+
+## لنگر مستقل بازگشت و ادامهٔ اجرایی — 2026-10-21
+- سند مرجع مادر: [PALANG-RETURN-EXECUTION-MASTER-ANCHOR-2026-10-21-001](../reference/REFERENCE-DOCUMENTS/PALANG-RETURN-EXECUTION-MASTER-ANCHOR-2026-10-21-001.md) — ACTIVE / LIVING / GOVERNING.
+- لنگر مستقل ۰.۰: [PALANG-0.0-RETURN-EXECUTION-MASTER-ANCHOR-2026-10-21-001](../checkpoints/0.0/PALANG-0.0-RETURN-EXECUTION-MASTER-ANCHOR-2026-10-21-001.md).
+- رویداد: [EVT-0065](../architecture/BEHAVIOR-TRACE/EVT-0065-RETURN-EXECUTION-MASTER-ANCHOR-2026-10-21.md).
+- اقدام بعدی هنگام «برگشتم»: ورود کنترل‌شدهٔ اسناد واقعی مخزن به همان `prototype/haif-v0`، حفظ مسیر/نسخه/منشأ/hash، آزمون بازیابی منشأدار و restart؛ سپس داوری شاهددار شناسه‌ها/EVT/محتوای تکراری. از صفر شروع نکن و معماری موازی نساز.
+- زمان دقیق پیام تأیید نشده است؛ تاریخ لنگر 2026-10-21 است. مخزن باید جدا از Buffer و Persistent Memory گزارش شود.
