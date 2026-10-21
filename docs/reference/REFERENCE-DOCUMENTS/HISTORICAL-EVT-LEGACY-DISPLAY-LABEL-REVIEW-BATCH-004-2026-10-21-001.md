@@ -33,3 +33,11 @@
 - Identity decisions for the eight EVT collision groups are recorded in H0EVTCA; this batch improves navigational clarity only.
 - Display-label write status: WRITTEN; independent read-back: PENDING at record creation; structural audit: PENDING.
 - Full inbound/outbound semantic audit, Git history and non-Markdown consumers remain OPEN / PARTIAL.
+
+
+## Post-edit read-back and audit / بازخوانی و ممیزی پس از اصلاح
+- The four changed navigation/index files and this batch record were read back from the repository. Expected review pointers and EVT-0057 were present. In the four target index files, no bare markdown link labels remained for the collision-group short numbers EVT-0005, EVT-0006, EVT-0019, EVT-0026, EVT-0029, EVT-0030 or EVT-0051.
+- Living Architecture Audit [39527808318](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39527808318) completed SUCCESS on commit `6d1c0892d723f86a49d7a4106eae9b3fed64a2ea`; runner UTC `2026-10-21T01:31:28Z`.
+- Expanded manifest: 1,156 local links / 0 missing; 38 parent edges / 0 unresolved / 0 ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 duplicate groups; 713 identifier occurrences; 0 decode errors.
+- Artifact `12313029823`; digest `sha256:c306f91b899dd9db0ab7eb3279c6ca1c52ffe959c0eadeaa062a5e5aa6dbcfc4`.
+- This run predates this evidence addendum. Full semantic edge review and full EVT inbound/outbound audit remain OPEN / PARTIAL; a final post-evidence-edit audit is required.
