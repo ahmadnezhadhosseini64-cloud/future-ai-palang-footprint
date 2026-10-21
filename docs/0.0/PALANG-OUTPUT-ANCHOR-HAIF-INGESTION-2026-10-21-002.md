@@ -8,8 +8,8 @@
 - Parent anchor / لنگر مادر: `PALANG-RETURN-EXECUTION-MASTER-ANCHOR-2026-10-21-001`
 - Event / رویداد مرتبط: `EVT-0070`
 - Anchor date / تاریخ لنگر: 2026-10-21
-- UTC reference / زمان مرجع UTC: 2026-10-21T13:50:42Z — آخرین مهر زمانی قابل‌مشاهدهٔ عملیات مخزن در شواهد این نوبت؛ زمان دقیق پیام کاربر نیست.
-- Tehran equivalent / معادل تهران: 2026-10-21T17:20:42+03:30
+- UTC reference / زمان مرجع UTC: UNAVAILABLE / NOT CAPTURED — زمان دقیق ایجاد این لنگر از فرادادهٔ قابل‌دسترسی قابل‌استخراج نیست؛ زمان مشاهدهٔ وضعیت CI به‌جای زمان ثبت استفاده نمی‌شود.
+- Tehran equivalent / معادل تهران: UNAVAILABLE / NOT DERIVED — تا وقتی لحظهٔ دقیق UTC معلوم نیست، معادل تهران ساخته نمی‌شود.
 - Timezone / منطقهٔ زمانی: Asia/Tehran (+03:30)
 - User input time / زمان دقیق ورودی کاربر: UNAVAILABLE / ثبت نشده در فرادادهٔ قابل‌دسترسی؛ جعل نمی‌شود.
 - Status / وضعیت: ACTIVE / LIVING / OPEN FOR CONTINUATION
