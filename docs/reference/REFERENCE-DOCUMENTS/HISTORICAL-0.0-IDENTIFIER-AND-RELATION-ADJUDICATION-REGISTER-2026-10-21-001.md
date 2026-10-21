@@ -136,3 +136,9 @@ Files whose purpose or role is not yet clear stay in the active review queue or 
 - [Run 39518636358](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39518636358) passed on commit `d207f558ab2a10e392c3f5c8d84de8996a7d8024` at `2026-10-21T00:00:46Z` UTC.
 - Latest inventory: 501 source files; 1,050 local links / 0 missing; 38 parent edges / 0 unresolved/ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 duplicate groups; 697 identifier occurrences.
 - The audit validates structure and queue generation only. Twenty-three Stable ID groups and all 43 Production ID groups remain to be fully reviewed, as do semantic meanings of links and final canonical promotion for duplicate groups. EVT identity/status decisions exist for all eight groups, while inbound/outbound reference audits remain open.
+
+
+## Addendum v1.7.0 — latest verified repository state
+- Latest pass: [39518777369](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39518777369), audited commit `2892eac997b2ba93029d67ef0670601c0a1a46d6`, UTC `2026-10-21T00:02:08Z`.
+- Latest counts: 501 source files, 1,059 local links / 0 missing, 38 parent edges / 0 unresolved/ambiguous, 30 Stable ID groups, 43 Production ID groups, 7 Reference ID groups, 8 EVT groups, 11 duplicate groups, 697 ID occurrences.
+- The latest pass validates repository structure after the latest index/queue/anchor edits. The semantic decision boundary in this register remains unchanged: reviewed subsets have bounded decisions; remaining groups and edge semantics stay open.
