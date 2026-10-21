@@ -935,4 +935,5 @@ The queue index and the timestamp case must each be read back after this update.
 - **رویداد:** [EVT-0072](../BEHAVIOR-TRACE/EVT-0072-UTC-TIMESTAMP-RECONCILIATION-AUDIT-2026-10-21.md).
 - **سند مرجع:** [ممیزی تطبیق UTC](../../reference/REFERENCE-DOCUMENTS/UTC-TIMESTAMP-RECONCILIATION-AUDIT-2026-10-21-001.md).
 - **وضعیت:** OPEN / PARTIAL — شمارش درخت و شواهد اولیه ثبت شده؛ گزارش کامل زمان‌به‌زمان، تطبیق UTC/محلی و تعیین همهٔ موارد ناقص هنوز اجرا نشده است.
-- **شرط بستن:** گزارش تولیدشده با مخرج روشن، نتیجهٔ هر فایل، منشأ هر timestamp، بررسی محاسبات UTC/offset، و بازخوانی ثبت‌های نهایی.
+- **شاهد اجرای اسکن:** [Living Architecture Audit #39627266388](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39627266388) — SUCCESS در `2026-10-21T15:37:00Z`; 444 پروندهٔ مرتبط بررسی ماشینی شدند؛ 14 نامزد نیازمند بازبینی، 229 پرونده با شاهد UTC/offset و 248 با منطقه/offset شناسایی شد. گزارش کامل در artifact اجرا موجود است.
+- **شرط بستن:** بررسی نقش‌محور 14 نامزد، تطبیق محاسبات UTC/offset برای جفت‌هایی که به یک لحظه اشاره دارند، نتیجهٔ هر مورد، و بازخوانی نهایی. اجرای موفق اسکن به معنی حل همهٔ موارد نیست.
