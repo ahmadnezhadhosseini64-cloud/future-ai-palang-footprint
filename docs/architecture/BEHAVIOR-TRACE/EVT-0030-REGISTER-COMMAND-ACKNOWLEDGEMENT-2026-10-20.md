@@ -16,7 +16,7 @@
 
 ## لنگر و مسیر بازیابی
 - Main checkpoint / لنگر اصلی: [PALANG-0.0-MAIN-LOCK-2026-10-20-002](../../../checkpoints/PALANG-0.0-MAIN-LOCK-2026-10-20-002.md)
-- Previous event / رویداد قبلی: [EVT-0029](./EVT-0029-MAIN-0.0-LOCK-2026-10-20.md)
+- Previous event / رویداد قبلی: [EVT-0029 — قفل اصلی و نقطهٔ ادامهٔ ۰.۰](./EVT-0029-MAIN-0.0-LOCK-2026-10-20.md)
 - Dropbox failover / مسیر جایگزین دراپ‌باکس: `PALANG-DROPBOX-FAILOVER-RESUME-0.0-2026-10-12-001` remains OPEN / WAITING.
 - Project goal and gap reconciliation / هدف و تطبیق شکاف‌ها: [PGGR-2026-10-20-001](../../reference/REFERENCE-DOCUMENTS/PROJECT-GOAL-AND-GAP-RECONCILIATION-2026-10-20-001.md)
 
