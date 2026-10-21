@@ -643,3 +643,11 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - Stable ID: `HAIF-EXTRACTABLE-INTERACTION-MODEL-FREE-APP-MASTER-REFERENCE-2026-10-21-001`; Production ID: `HEIMFA-MR-2026-10-21-001`; Version 1.0.0.
 - زمان ثبت: `2026-10-21T11:09:51+03:30` (Asia/Tehran).
 - وضعیت: ACTIVE / LIVING / OPEN FOR GROWTH. گام بازگشت: خواندن سند، ممیزی شواهد موجود، ساخت manifest استخراج و اجرای آزمون واقعی؛ نه ساخت گزارش تکراری.
+
+
+## لنگر فرزند — قاعدهٔ خودکار ثبت، لنگر زمانی و ادامه پس از بازگشت — 2026-10-21
+
+- [PALANG-0.0-AUTOMATIC-INPUT-ANCHOR-AND-RETURN-RESUME-GOVERNANCE-2026-10-21-001](../checkpoints/0.0/PALANG-0.0-AUTOMATIC-INPUT-ANCHOR-AND-RETURN-RESUME-GOVERNANCE-2026-10-21-001.md) — ACTIVE / LIVING / GOVERNING / OPEN FOR GROWTH.
+- Production ID: `P0AIRRG-2026-10-21-001`; Version 1.0.0; registration timestamp `2026-10-21T11:32:53+03:30` (Asia/Tehran).
+- رویداد ورودی/خروجی: [EVT-0059](../architecture/BEHAVIOR-TRACE/EVT-0059-AUTOMATIC-ANCHOR-REGISTRATION-AND-RETURN-RESUME-GOVERNANCE-2026-10-21.md).
+- قاعده: ثبت کامل و چکش برای ورودی/خروجی مرتبط با پروژه پیش‌فرض است؛ لنگرهای ۰.۰ مستقل می‌مانند و این ثبت آن‌ها را جایگزین یا ادغام نمی‌کند.
