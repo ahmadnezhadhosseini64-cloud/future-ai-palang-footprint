@@ -37,3 +37,16 @@
 
 مدل حاکم: [سند مرجع مادر مدل اولیهٔ هوش مصنوعی](../../docs/architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 صف بعدی: [گام‌های بعدی و موارد باز](../../docs/architecture/مدل%20اولیه%20AI/صف%20گام‌های%20بعدی%20و%20موارد%20باز.md)
+
+
+## Controlled repository-document ingestion
+
+The allowlisted importer `ingest_repository_docs.py` brings a small, explicit set of real repository references into the running local API at `POST /api/v1/documents`. It preserves the repository-relative source path, declared version (or `UNDECLARED`), source commit when available, and the API's SHA-256 write/read-back result. Missing source files and failed requests produce a non-success report; the importer does not claim external persistence.
+
+From a checked-out repository, with the API running:
+
+```bash
+python prototype/haif-v0/ingest_repository_docs.py --base-url http://127.0.0.1:8000
+```
+
+The explicit allowlist is intentionally small and reviewable. This is a controlled ingestion mechanism, not automatic ingestion of the entire repository. Reruns may create additional document records; inspect the report before rerunning.
