@@ -128,3 +128,9 @@
 - [Living Architecture Audit 39527230890](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39527230890) passed on commit `7527613fc76e431e87954eacdd2efd93b996db41`, runner UTC `2026-10-21T01:25:32Z`; artifact `12313198258`, digest `sha256:123d44df97464b8ac968cde89e60df8c22bf14ba19d9815b2414224bd19d73fd`.
 - 505 source files; 1,136 local links / 0 missing; 38 parent edges / 0 unresolved / 0 ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 duplicate groups; 709 identifier occurrences; 0 decode errors.
 - H0EVTRRB3 / EVT-0056 record the bounded identity and label review. Full inbound/outbound audit for all eight EVT groups remains OPEN / PARTIAL; no file was deleted or renumbered.
+
+
+## Addendum v1.8.0 — audit evidence for EVT batch 003
+- Audit [39527349236](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39527349236) passed on commit `3fcd1d4cd7ba91846c0de9abd9cdc00b9047015c`, UTC `2026-10-21T01:27:00Z`; artifact `12312999209`, digest `sha256:0d83bc649b4f620d8d13e6938614070d91554c795832476509aa78ff1c1ecb3a`.
+- 505 source files; 1,138 local links / 0 missing; 38 parent edges / 0 unresolved / 0 ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 duplicate groups; 709 identifier occurrences; 0 decode errors.
+- H0EVTRRB3 / EVT-0056 record scoped decisions for EVT-0029 and EVT-0030. This audit predates the present evidence append; final post-edit audit pending. Full EVT inbound/outbound audit remains OPEN.
