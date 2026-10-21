@@ -347,3 +347,11 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - Event: [EVT-0055 — ثبت مدل اولیهٔ محصول HAIF](architecture/BEHAVIOR-TRACE/EVT-0055-HAIF-INITIAL-PRODUCT-ARCHITECTURE-2026-10-21.md).
 - Canonical model: [HAIF-INITIAL-PRODUCT-ARCHITECTURE-2026-10-21-001](reference/REFERENCE-DOCUMENTS/HAIF-INITIAL-PRODUCT-ARCHITECTURE-2026-10-21-001.md).
 - Result: model and links read back; structural audit run `39533528396` passed with 0 missing local links. Application implementation remains open/not built.
+
+
+## مدل اولیهٔ هوش مصنوعی — بستهٔ مرکزی توسعه HAIF
+- **سند مرجع مادر:** [HAIF-IAM-MR-2026-10-21-001](architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md).
+- **ورود به پوشه:** [مدل اولیه AI](architecture/مدل%20اولیه%20AI/README.md).
+- **صف گام‌های بعدی و موارد باز:** [HAIF-IM-NSOG](architecture/مدل%20اولیه%20AI/صف%20گام‌های%20بعدی%20و%20موارد%20باز.md).
+- **رویداد ساخت:** [EVT-0058](architecture/BEHAVIOR-TRACE/EVT-0058-INITIAL-AI-MODEL-PACKAGE-CREATION-2026-10-21.md).
+- **وضعیت:** فایل‌های بسته ایجاد شده‌اند؛ بازخوانی مستقل، تطبیق پیوندها و ممیزی پس از آخرین commit هنوز باید ثبت شوند. برنامه هنوز پیاده‌سازی/استقرار نشده است. گراف معنایی و گروه‌های شناسه/EVT باز می‌مانند.
