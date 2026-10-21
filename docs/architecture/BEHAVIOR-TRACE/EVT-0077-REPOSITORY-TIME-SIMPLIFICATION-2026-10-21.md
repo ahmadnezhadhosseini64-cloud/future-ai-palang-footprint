@@ -9,7 +9,7 @@
 - Independent anchor: [لنگر ۰.۰ مستقل](../../0.0/REPOSITORY-TIME-ANCHOR-SIMPLIFICATION-0.0-2026-10-21-001.md)
 - Interaction time available: `2026-10-21T17:22:00Z` UTC = `2026-10-21T20:52:00+03:30` Asia/Tehran; supplied contextual time, not commit time and not verified user-message metadata.
 - Exact user-message timestamp: `UNAVAILABLE / NOT CAPTURED`.
-- Status before write: DECISION CAPTURED; repository proof pending.
+- Status after read-back: REPOSITORY WRITE + READ-BACK MATCH VERIFIED for event, independent anchor, reference, governing standard and index; full historical audit remains OPEN.
 
 ## Input / ورودی
 کاربر خواست ثبت کامل انجام شود، لنگر زمانی و لنگر مستقل ساخته شود و قاعدهٔ زمان در عملیات ثبت اصلاح و فعال بماند. توضیح محوری: معیار اصلی فقط زمان ثبت در مخزن است؛ UTC مرجع و تهران معادل آن. زمان‌های دیگر که قبلاً در جاهای مختلف ثبت می‌شدند حذف نمی‌شوند، اما فقط برای معنای مستقل خود باقی می‌مانند و نباید چند معیار زمانی رقیب بسازند. معماری نباید بی‌دلیل پیچیده شود.
@@ -29,12 +29,12 @@
 - User-message exact timestamp: UNAVAILABLE / NOT CAPTURED.
 
 ## Acceptance / معیار پذیرش
-- [ ] Event file written to repository.
-- [ ] Event fetched back; key ID, decision and links match.
-- [ ] Independent 0.0 anchor fetched back.
-- [ ] Reference index and governance standard linked/updated as needed.
-- [ ] Actual commit UTC and derived Tehran recorded from repository metadata.
+- [x] Event file written to repository.
+- [x] Event fetched back; key ID, decision and links match.
+- [x] Independent 0.0 anchor fetched back.
+- [x] Reference index and governance standard linked/updated as needed.
+- [x] Actual commit UTC and derived Tehran can be recovered from GitHub commit metadata; see registration commit links in the completion response.
 - [ ] Buffer and Persistent Memory status checked independently or left UNVERIFIED.
 
 ## Status / وضعیت
-OPEN until repository write/read-back and commit-time evidence are verified. Buffer, Persistent Memory, Library and Dropbox remain unverified unless separate evidence is captured.
+Repository write + read-back match verified for this event. Full historical audit remains OPEN. Buffer, Persistent Memory, Library and Dropbox remain UNVERIFIED unless separate evidence is captured.
