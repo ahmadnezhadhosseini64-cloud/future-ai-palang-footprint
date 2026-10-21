@@ -121,3 +121,10 @@ These failures are retained as implementation/test evidence. The current pass pr
 - Audited commit: `2b19eeab0c9f8e1b0a16c3a6550b9f791b9cbac8`; runner UTC: `2026-10-20T23:59:24Z`.
 - Latest counts: 501 source files; 1,041 local Markdown edges / 0 missing; 38 declared parent edges / 0 unresolved or ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 exact-content duplicate groups; 697 ID occurrences; 0 decode errors.
 - Artifact details for this run should be read from the workflow page; this addendum records the audited commit and result. Semantic closure remains OPEN / PARTIAL.
+
+
+## Addendum v1.5.0 — final integration audit for this work phase
+- Workflow run: [39518636358](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39518636358) — SUCCESS.
+- Audited commit: `d207f558ab2a10e392c3f5c8d84de8996a7d8024`; runner UTC: `2026-10-21T00:00:46Z`.
+- Latest counts: 501 source files; 1,050 local Markdown edges / 0 missing; 38 declared parent edges / 0 unresolved or ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 exact-content duplicate groups; 697 identifier occurrences; 0 decode errors.
+- Structural acceptance is PASS. Semantic acceptance remains OPEN / PARTIAL by design until the remaining groups and every relation receive source-level decisions.
