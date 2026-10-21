@@ -72,3 +72,40 @@ Run a full timestamp-specific scan against the complete repository checkout/tree
 ## 8. Destination status
 - Repository: initial reference and EVT-0072 were written; both were fetched back from GitHub and their expected IDs/links were found. This verifies repository read-back at key-content level, not byte-for-byte independent hash comparison. Later index/queue links were also written; final index/queue read-back is still pending.
 - Library / Buffer / Persistent Memory / Dropbox: no independent write/read-back evidence in this execution; UNVERIFIED.
+
+
+## 9. Automated repository timestamp inventory — first successful run
+- Workflow: [Living Architecture Audit run 39627195037](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39627195037) — SUCCESS.
+- Audit execution UTC: `2026-10-21T15:36:30Z`.
+- Audited source commit: `d99661802696a7b631adf70d3f66e8f03b1e81bd`.
+- The audit script was then refined to print missing-time candidates; second evidence run: [Living Architecture Audit run 39627266388](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39627266388).
+- Scope of first successful timestamp inventory: 444 relevant text documents; 106 reference documents; 83 behavior-event documents; 43 0.0/checkpoint documents.
+- Automated detections: 428 documents contained at least one ISO-like timestamp; 14 documents had neither an ISO-like timestamp nor an explicit UNKNOWN marker under the current heuristic; 229 documents had UTC/offset evidence near timestamp labels; 248 had zone/offset evidence; 184 had an explicit UNKNOWN marker near a time label.
+- These are detection counts, not proof of semantic correctness. Date-only values and filenames can satisfy the simple ISO detector; a marker elsewhere near a time label may be insufficient. The report does not yet prove all UTC/local pairs are mathematically consistent.
+- The 14 heuristic candidates are:
+  1. `.github/workflows/automatic-final-registration-proof.yml`
+  2. `.github/workflows/reconciliation-acceptance-test.yml`
+  3. `docs/FINALIZATION_GATE.md`
+  4. `docs/FINAL_RECONCILIATION_ACCEPTANCE.md`
+  5. `docs/architecture/FINALIZATION_GATE.md`
+  6. `docs/architecture/RECONCILIATION_STATE_MACHINE.md`
+  7. `docs/reference/REFERENCE-DOCUMENTS/گواهی/گواهی های ارسالی اولیه/گواهی اول اولیه شماره ۱.txt`
+  8. `docs/reference/REFERENCE-DOCUMENTS/گواهی/گواهی های ارسالی اولیه/گواهی درخواست اولیه شماره ۲.txt`
+  9. `docs/reference/REFERENCE-DOCUMENTS/گواهی/گواهی های ارسالی اولیه/گواهی درخواست اولیه شماره ۳.txt`
+  10. `docs/reference/REFERENCE-DOCUMENTS/گواهی/گواهی های ارسالی اولیه/گواهی چکیده پیوست شماره ۱.txt`
+  11. `docs/reference/REFERENCE-DOCUMENTS/گواهی/گواهی های ارسالی اولیه/گواهی چکیده پیوست شماره ۲.txt`
+  12. `recovery/NO_SILENT_PENDING_LOSS.md`
+  13. `recovery/REGISTRATION_RECONCILIATION_BOOTSTRAP.md`
+  14. `recovery/pending/README.md`
+- These 14 are review candidates, not confirmed defects. Some source certificates or state-machine files may not require their own registration timestamp; classify requirements before modifying.
+- The same run's separate historical graph audit found 5 missing relative Markdown links, 44 Stable ID collision groups, 56 Production ID collision groups, 7 Reference ID collision groups, 13 EVT-number collision groups, and 11 exact-content duplicate groups. Preserve files; adjudicate identity and lineage before any repair/deletion.
+- The timestamp scan now runs inside `.github/workflows/living-architecture-audit.yml` and emits `audit-output/timestamp-audit.txt` plus `audit-output/timestamp-audit.json` as workflow artifacts.
+
+## 10. Honest status and next acceptance gate
+- PASS: repository timestamp inventory executed successfully in GitHub Actions and emitted evidence.
+- PASS: new reference/event were fetched back; key content and IDs matched.
+- OPEN: review the 14 candidates against document role and governing timestamp requirements.
+- OPEN: compare every paired UTC/local representation for same-instant arithmetic; the current scan is not a complete pairwise conversion verifier.
+- OPEN: resolve/triage the 5 missing local links and identifier collision groups via lineage review; these are not automatically timestamp defects.
+- OPEN: update the master reference and indexes with final successful-run evidence, then fetch them back.
+- UNVERIFIED: Library, Buffer, Persistent Memory and Dropbox; repository success does not establish those destinations.
