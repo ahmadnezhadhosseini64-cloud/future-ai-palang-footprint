@@ -34,3 +34,8 @@
 - [EVT-0059 — رویداد پیاده‌سازی نمونه](../BEHAVIOR-TRACE/EVT-0059-HAIF-V0-PROTOTYPE-IMPLEMENTATION-2026-10-21.md).
 - آزمون خودکار: [HAIF Prototype Tests 39536269368](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39536269368) — 5 passed, 1 warning, 0 failed.
 - مرز وضعیت: نمونهٔ v0 پیاده‌سازی و آزموده شده؛ برنامهٔ تولیدی، استقرار امن، گراف معنایی و مقصدهای بیرونی هنوز کامل/تأییدشده نیستند.
+
+
+## سند مرجع زندهٔ نام‌گذاری‌شده — مبنای بازگشت ۰.۰
+- [مدل اولیه — لنگر ۰.۰ و سند مرجع زنده](./مدل%20اولیه%20—%20لنگر%20۰.۰%20و%20سند%20مرجع%20زنده.md) — Stable ID: `PALANG-INITIAL-AI-MODEL-0.0-RETURN-MASTER-REFERENCE-2026-10-21-001`, Production ID: `PIM0RM-2026-10-21-001`, Version 1.0.0.
+- این سند، مرجع جامع نام‌گذاری‌شده برای هدف محصول، معماری، قواعد ثبت، وضعیت شواهد و صف ادامه است. وضعیت: ACTIVE / LIVING / GOVERNING BASELINE در مخزن؛ مقصدهای بیرونی تأیید نشده‌اند.
