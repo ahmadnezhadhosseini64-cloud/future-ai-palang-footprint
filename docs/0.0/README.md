@@ -659,3 +659,11 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - رویداد: [EVT-0060](../architecture/BEHAVIOR-TRACE/EVT-0060-MASTER-REFERENCE-RETURN-EXECUTION-2026-10-21.md).
 - زمان ثبت: `2026-10-21T11:37:45+03:30` (Asia/Tehran).
 - وضعیت: ACTIVE / LIVING / OPEN FOR GROWTH؛ لنگرهای تاریخی مستقل باقی می‌مانند.
+
+
+## لنگر مستقل بازگشت — ادامهٔ ممیزی معنایی — 2026-10-21
+- [لنگر مستقل بازگشت و ادامهٔ ممیزی](./PALANG-RETURN-SEMANTIC-AUDIT-RESUME-2026-10-21-001.md) — Stable ID: `PALANG-RETURN-SEMANTIC-AUDIT-RESUME-2026-10-21-001`; Production ID: `PRSAR-2026-10-21-001`.
+- رویداد ورودی: [EVT-0062](../architecture/BEHAVIOR-TRACE/EVT-0062-RETURN-ANCHOR-AND-SEMANTIC-AUDIT-RESUME-2026-10-21.md).
+- زمان مرجع سامانه: `2026-10-21T13:05:00+03:30`؛ زمان دقیق خود پیام کاربر تأیید نشده است.
+- وضعیت: ACTIVE / LIVING / OPEN-PARTIAL؛ لنگر مستقل تازه است و لنگرهای قبلی را جایگزین نمی‌کند.
+- اقدام بعدی: اجرای ممیزی پس از اصلاح parser، دریافت و بازخوانی خروجی‌های JSON/متن، سپس ادامهٔ مرور شاهددار شناسه‌ها و ارجاع‌ها.
