@@ -306,3 +306,9 @@ T1 ورودی و خروجی قابل‌بازیابی؛ T2 زمان‌های م�
 ## 35. رویداد خروجی و چکش ثبت خودکار — EVT-0074
 - [EVT-0074](../../architecture/BEHAVIOR-TRACE/EVT-0074-AUTOMATIC-REGISTRATION-ARCHITECTURE-INTEGRATION-AND-PEH-2026-10-21.md) — شواهد اتصال قرارداد AIRC به استاندارد زمان، سند مادر، نمایه، صف، مدل اولیه و گیت ممیزی.
 - وضعیت: پیوندهای مخزن بازخوانی شده‌اند؛ ثبت خودکار همهٔ پیام‌های زنده هنوز اثبات نشده و باید با Host Adapter و آزمون end-to-end ثابت شود.
+
+
+### شاهد گیت معماری قرارداد AIRC
+- [EVT-0074](../../architecture/BEHAVIOR-TRACE/EVT-0074-AUTOMATIC-REGISTRATION-ARCHITECTURE-INTEGRATION-AND-PEH-2026-10-21.md) — رویداد خروجی و چکش.
+- [Living Architecture Audit #39628504768](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39628504768) — گیت اتصال قرارداد و ممیزی‌های ساختاری/تاریخی/زمانی SUCCESS روی commit `fabd8080a6d93849dad0262f1e8c045c74653efe`.
+- این شاهد اتصال قرارداد به معماری مخزن را تأیید می‌کند؛ ثبت خودکار همهٔ پیام‌های زنده همچنان OPEN / NOT PROVEN است.
