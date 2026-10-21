@@ -277,3 +277,9 @@
 
 ## EVT collision review register
 - [H0EVTCA-2026-10-21-001](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-EVT-NUMBER-COLLISION-ADJUDICATION-2026-10-21-001.md) — شش جفت تاریخی از نظر هویت متمایز شدند؛ بررسی همهٔ ارجاع‌ها و برخوردهای اضافی همچنان OPEN است.
+
+
+## EVT-0030 short-number disambiguation — batch 003
+- [EVT-0030 — ثبت درخواست «ثبت کن» و تأیید نقطهٔ ادامه](./EVT-0030-REGISTER-COMMAND-ACKNOWLEDGEMENT-2026-10-20.md).
+- [EVT-0030 — بررسی نقطهٔ ۰.۰ جاری، شمارش لنگرها و ممیزی شکاف‌ها](./EVT-0030-CURRENT-0.0-AND-GAP-AUDIT-2026-10-20.md).
+- These are separate event identities sharing a short number; both full-path targets are preserved. Review record: [H0EVTRRB3](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-EVT-0029-0030-REFERENCE-REVIEW-BATCH-003-2026-10-21-001.md); event [EVT-0056](./EVT-0056-EVT-0029-0030-REFERENCE-REVIEW-BATCH-003-2026-10-21.md).
