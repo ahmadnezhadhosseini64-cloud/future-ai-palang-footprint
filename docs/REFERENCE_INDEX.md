@@ -472,3 +472,8 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - لنگر مورد تاریخی EVT-0079: `2026-10-21T19:01:41Z` UTC = `2026-10-21T22:31:41+03:30` تهران؛ commit `abb68c61decd9f495ab9d070ee62f3b2145ab6b0`.
 - استاندارد حاکم: ASSISTANT-TIMESTAMP-ANCHOR-STANDARD، اصلاحیهٔ 1.6.0؛ سند مرجع مادر، بخش 36؛ سند مرجع زندهٔ ساده‌سازی زمان، اصلاحیهٔ 1.3.0.
 - چکش: منشأ commit و جفت‌های زمانی محاسبه شدند؛ بازخوانی نهایی فایل‌ها و وضعیت workflowها باید بر اساس شواهد واقعی گزارش شود.
+
+## نقطهٔ بازگشت مستقل ۰.۰ و سند مرجع مسیر اجرایی — 2026-10-21
+- [لنگر مستقل ۰.۰ — HAIF-RETURN-CONTINUATION-ANCHOR-0.0-2026-10-21-002](0.0/HAIF-RETURN-CONTINUATION-ANCHOR-0.0-2026-10-21-002.md) — نقطهٔ بازگشت پس از غیبت؛ لنگرهای قبلی را جایگزین نمی‌کند.
+- [سند مرجع مادر — HAIF-RETURN-0.0-AND-EXECUTION-PATH-MASTER-REFERENCE-2026-10-21-001](reference/REFERENCE-DOCUMENTS/HAIF-RETURN-0.0-AND-EXECUTION-PATH-MASTER-REFERENCE-2026-10-21-001.md) — مسیر مرحله‌ای بازگشت: بررسی workflow، قاعدهٔ UTC/تهران، بازیابی شش سند، Dropbox، اثبات مستقل مقصدها، بستهٔ انتقال و ممیزی گراف.
+- وضعیت: ACTIVE / LIVING / OPEN / GOVERNING؛ آزمون‌های آینده تا اجرای واقعی و ثبت شواهد باز می‌مانند.
