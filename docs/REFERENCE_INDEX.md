@@ -319,3 +319,9 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - [H0EVTRRB2 — بررسی محدود ارجاع‌های EVT-0019 و EVT-0026](reference/REFERENCE-DOCUMENTS/HISTORICAL-EVT-0019-0026-REFERENCE-REVIEW-BATCH-002-2026-10-21-001.md): چهار پروندهٔ رویداد بازخوانی شد؛ هر جفت هویت مستقل دارد؛ برخورد شماره حفظ می‌شود.
 - [EVT-0055 — رویداد اجرای این دسته](architecture/BEHAVIOR-TRACE/EVT-0055-EVT-0019-0026-REFERENCE-REVIEW-BATCH-002-2026-10-21.md).
 - وضعیت: جست‌وجوی محدود انجام شد؛ ممیزی کامل ارجاع‌های ورودی/خروجی و مصرف‌کننده‌های خارج از Markdown هنوز باز است.
+
+
+## EVT short-number review — batch 003
+- [H0EVTRRB3 — بررسی ارجاع‌های EVT-0029 و EVT-0030](reference/REFERENCE-DOCUMENTS/HISTORICAL-EVT-0029-0030-REFERENCE-REVIEW-BATCH-003-2026-10-21-001.md).
+- [EVT-0056 — رویداد اجرای دستهٔ سوم](architecture/BEHAVIOR-TRACE/EVT-0056-EVT-0029-0030-REFERENCE-REVIEW-BATCH-003-2026-10-21.md).
+- چهار پرونده بازخوانی شد؛ دو برچسب مبهم شناسایی شد؛ مقصدهای پیوند کامل حفظ می‌شوند. ممیزی ساختاری پس از اصلاح‌ها در انتظار است و ممیزی کامل ورودی/خروجی همچنان باز است.
