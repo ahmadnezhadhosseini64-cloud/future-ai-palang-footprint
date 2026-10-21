@@ -46,3 +46,12 @@
 - Production ID: `HEIMFA-MR-2026-10-21-001`; Version: `1.0.0`.
 - Status: ACTIVE / LIVING / GOVERNING / OPEN FOR GROWTH. سند شامل معماری Master–Child–Rahm، الگوریتم استخراج از مخزن، طرح نسخهٔ رایگان، معیارهای پذیرش و صف بازگشت است.
 - Registration timestamp: `2026-10-21T11:09:51+03:30` (Asia/Tehran).
+
+
+## لنگر زندهٔ ثبت خودکار و ادامه پس از بازگشت — 2026-10-21
+
+- [لنگر ۰.۰ — ثبت خودکار ورودی، لنگر زمانی، چکش و ادامهٔ پس از بازگشت](../../checkpoints/0.0/PALANG-0.0-AUTOMATIC-INPUT-ANCHOR-AND-RETURN-RESUME-GOVERNANCE-2026-10-21-001.md).
+- Stable ID: `PALANG-0.0-AUTOMATIC-INPUT-ANCHOR-AND-RETURN-RESUME-GOVERNANCE-2026-10-21-001`; Production ID: `P0AIRRG-2026-10-21-001`; Version 1.0.0.
+- زمان ثبت سند: `2026-10-21T11:32:53+03:30` (Asia/Tehran).
+- رویداد: [EVT-0059](../BEHAVIOR-TRACE/EVT-0059-AUTOMATIC-ANCHOR-REGISTRATION-AND-RETURN-RESUME-GOVERNANCE-2026-10-21.md).
+- قاعده: برای هر ورودی/خروجی مرتبط با پروژه، چرخهٔ لنگرگذاری، ثبت، مستندسازی، پیوند معماری و چکش پیش‌فرض است؛ لازم نیست کاربر دوباره «ثبت کن» بگوید. این پیوند، لنگرهای تاریخی را ادغام یا جایگزین نمی‌کند.
