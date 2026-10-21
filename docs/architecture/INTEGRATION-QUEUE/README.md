@@ -769,7 +769,7 @@ The queue index and the timestamp case must each be read back after this update.
 
 ## Canonical continuation anchor — CCCMR-2026-10-21-001
 - [سند مرجع مادر تجمیعی](../../reference/REFERENCE-DOCUMENTS/CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001.md) — ACTIVE / LIVING.
-- این سند مبنای نوبت بعد است؛ ابتدا EVT-0051 و آخرین artifact ممیزی را بازخوانی کن. گام نخست باقی‌مانده: خواندن گزارش کامل artifact و ثبت دقیق duplicate groups، برخورد شناسه‌ها، پیوندهای شکسته و parentهای مفقود؛ سپس manifest canonical/alias/lineage و مرور معنایی کامل.
+- این سند مبنای نوبت بعد است: رویداد ساخت/بازخوانی سند مادر `EVT-0051-ASSISTANT-CONSOLIDATED-MASTER-CREATION-AND-READBACK-2026-10-21.md` و رویداد فعال ممیزی/تعمیر گراف `EVT-0052-CANONICAL-GRAPH-MANIFEST-AND-LINK-REPAIR-2026-10-21.md` را از مسیر کامل بازخوانی کن. مسیر `EVT-0051-CANONICAL-GRAPH-MANIFEST-AND-LINK-REPAIR-2026-10-21.md` فقط correction notice بازنشسته است. گام باقی‌مانده: خواندن گزارش کامل artifact، ثبت دقیق duplicate groups، برخورد شناسه‌ها، پیوندهای شکسته و parentهای مفقود؛ سپس manifest canonical/alias/lineage و مرور معنایی کامل.
 
 
 
