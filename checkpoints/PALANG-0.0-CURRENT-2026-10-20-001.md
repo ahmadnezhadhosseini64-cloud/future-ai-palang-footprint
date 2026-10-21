@@ -254,7 +254,7 @@ On 2026-10-20, the user explicitly approved applying the temporal bracketing rul
 ## لنگر خروجی EVT-0026 — تداوم معماری Master–Child–Rahm (2026-10-20)
 - **Stable ID:** `INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-REGISTRATION-2026-10-20-001`; **Production ID:** `ICMCRR-HAIF-2026-10-20-001`.
 - **سند مرجع کامل:** [تداوم معماری و Master–Child–Rahm](../docs/reference/REFERENCE-DOCUMENTS/INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-REGISTRATION-2026-10-20-001.md).
-- **رویداد:** [EVT-0026](../docs/architecture/BEHAVIOR-TRACE/EVT-0026-INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-2026-10-20.md).
+- **رویداد:** [EVT-0026 — ثبت تعامل دربارهٔ تداوم معماری Master–Child–Rahm](../docs/architecture/BEHAVIOR-TRACE/EVT-0026-INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-2026-10-20.md).
 - **صف معماری:** [Architecture Integration Queue](../docs/architecture/INTEGRATION-QUEUE/README.md).
 - **ثبت مخزن:** سه فایل نوشته و سپس بازخوانی و تطبیق شدند. سند مرجع blob SHA `f7bafb594adbacacd3505f813c2b06e153c24d0e`; رویداد blob SHA `b691e894fccd91a9890da632570de74b7e6343b2`; صف blob SHA `9284edddb26e5b32d5cf6cd489cb9e3282380bf6`.
 - **شکاف‌های باز:** ادغام معنایی در سند مادر، بازیابی مستقل سند HAIF، آزمون سرتاسری هر ورودی/خروجی، ساخت و آزمون بسته قابل‌انتقال، دو آزمون تاریخی، Dropbox و مقصدهای Library/Buffer/Persistent Memory.
