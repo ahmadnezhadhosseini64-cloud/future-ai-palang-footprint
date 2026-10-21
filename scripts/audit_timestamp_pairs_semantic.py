@@ -32,6 +32,7 @@ def git_file_time_map():
  return result
 try: commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
 except Exception: commit='UNKNOWN'
+TRACKED_FILES=set(subprocess.check_output(['git','ls-files'],text=True).splitlines())
 FILE_TIMES=git_file_time_map()
 # Resolve any remaining tracked paths without launching git once per normal file.
 try:
@@ -45,7 +46,7 @@ except Exception: pass
 run=datetime.now(UTC); run_s=run.isoformat(timespec='seconds').replace('+00:00','Z')
 files=[]; stamps=[]; errors=[]; total=0
 for p in sorted(ROOT.rglob('*')):
- if not p.is_file() or p.suffix.lower() not in EXT or any(x in SKIP for x in p.parts): continue
+ if not p.is_file() or p.as_posix() not in TRACKED_FILES or p.suffix.lower() not in EXT or any(x in SKIP for x in p.parts): continue
  rel=p.as_posix()
  if not (rel.startswith(('docs/','checkpoints/','recovery/','provenance/','evidence/')) or rel.startswith('scripts/')): continue
  try: raw=p.read_bytes(); txt=raw.decode('utf-8')
