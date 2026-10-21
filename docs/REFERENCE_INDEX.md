@@ -331,3 +331,12 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - [H0EVTRRB4](reference/REFERENCE-DOCUMENTS/HISTORICAL-EVT-LEGACY-DISPLAY-LABEL-REVIEW-BATCH-004-2026-10-21-001.md): اصلاح برچسب‌های مبهم در دفتر رفتار، دفتر ۰.۰، نمایهٔ مرجع و صف معماری.
 - [EVT-0057](architecture/BEHAVIOR-TRACE/EVT-0057-LEGACY-EVT-DISPLAY-LABEL-REVIEW-BATCH-004-2026-10-21.md): ثبت رویداد اجرای دسته.
 - وضعیت: برچسب‌ها نوشته شده‌اند؛ بازخوانی مستقل و ممیزی پس از تغییرها در انتظار است. معنای کامل همهٔ روابط هنوز باز است.
+
+
+
+## Initial HAIF product model — 2026-10-21
+- **Stable ID:** `HAIF-INITIAL-PRODUCT-ARCHITECTURE-2026-10-21-001`; **Production ID:** `HAIF-IPA-2026-10-21-001`; **Version:** `1.0.0`.
+- **Canonical baseline:** [مدل اولیهٔ محصول و معماری قابل رشد HAIF](reference/REFERENCE-DOCUMENTS/HAIF-INITIAL-PRODUCT-ARCHITECTURE-2026-10-21-001.md).
+- **Purpose:** پایهٔ شروع ساخت محصول تعامل‌محور؛ شامل تداوم، بازیابی زمینه، دفتر رویداد، گراف، صف بازبینی، رفتارشناسی، اعتبارسنجی و رشد Master–Child–Rahm.
+- **Status:** معماری پایه در مخزن ثبت شده؛ برنامه هنوز پیاده‌سازی یا مستقر نشده است. گروه‌های شناسه/EVT و موارد تاریخی نامطمئن در صف باقی می‌مانند؛ هیچ موردی به دلیل این مدل حذف نمی‌شود.
+- **Evidence boundary:** ممیزی ساختاری run [39521128996](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39521128996) روی commit `200f29d9a3cb8ea58a4eeea2c116d5a3571cd133` موفق بود؛ این ممیزی به معنی آزمون سرتاسری محصول نیست.
