@@ -485,3 +485,7 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 ## نقطهٔ توقف و بازگشت فعلی — 2026-10-21
 - [HAIF-LEAVE-AND-RETURN-EXECUTION-CHECKPOINT-2026-10-21-001](0.0/HAIF-LEAVE-AND-RETURN-EXECUTION-CHECKPOINT-2026-10-21-001.md) — ثبت نقطهٔ رفتن فعلی، نقطهٔ ۰.۰ مرجع، قاعدهٔ لنگر زمان جایگزین و شواهد هر مرحله، و ترتیب اجرایی بازگشت شامل آزمون شش سند، Dropbox، اثبات مقصدها و ممیزی گراف.
 - لنگر ثبت سند: UTC `2026-10-21T19:33:33Z` = تهران `2026-10-21T23:03:33+03:30`; commit `4d3eb0d22510118fe87984cd4c4806020e297e60`.
+
+## رخداد رفتن کاربر — EVT-0082
+- [EVT-0082 — ثبت رفتن کاربر و اشاره‌گر بازگشت](architecture/BEHAVIOR-TRACE/EVT-0082-USER-DEPARTURE-RETURN-TO-0.0-2026-10-21.md) — ثبت مستقل پیام «ثبت کن من میرم» و مسیر بازیابی پس از بازگشت.
+- زمان ثبت مخزن: UTC `2026-10-21T19:35:23Z` = تهران `2026-10-21T23:05:23+03:30`; commit `a254ef3e42fd4cc8223db3c43487e105c0e6103e`.
