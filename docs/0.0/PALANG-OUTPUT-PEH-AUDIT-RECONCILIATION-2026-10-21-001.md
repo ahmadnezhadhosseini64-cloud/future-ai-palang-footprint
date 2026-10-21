@@ -62,3 +62,12 @@ PRESERVE → IDENTIFY → VERIFY → RECONCILE → REGISTER → READ-BACK → MA
 - پیوندهای محلی مفقود: 0؛ خطاهای رمزگشایی: 0؛ یال والد: 38؛ والد حل‌نشده: 0؛ والد مبهم: 0؛ رخداد شناسه: 790.
 - در نتیجه، گپ اختلاف شمارش parser و گپ 13 پیوند محلی در snapshot این commit بسته شدند. این نتیجه فقط ساختاری است؛ داوری معنایی 39/50 گروه شناسه و 10 گروه EVT و 11 گروه محتوای تکراری همچنان باز است.
 - وضعیت: STRUCTURAL/LINK GATES VERIFIED FOR COMMIT `959717dcdd8a78a4eb8ca436b1c96b0a53142971`; SEMANTIC ADJUDICATION OPEN.
+
+
+## 8. Master linkage and latest read-back
+
+- Governing master / سند مادر حاکم: [H0GLMR — سند مرجع مادر زندهٔ تطبیق گراف تاریخی ۰.۰](../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-RECONCILIATION-LIVING-MASTER-REFERENCE-2026-10-21-001.md).
+- Main findings register / دفتر یافته‌ها: [H0GAF](../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-AUDIT-FINDINGS-2026-10-21-001.md).
+- Semantic review ledger / دفتر داوری شناسه‌ها: [H0IRRB](../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-IDENTIFIER-ROLE-REVIEW-BATCH-001-2026-10-21.md).
+- Latest verification after event registration: [run 39579658484](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39579658484), SUCCESS; artifact `12335398419`, SHA-256 `e90b532e82b5e39bffe90d20e40f8a46e426ea9ee41a5535fc84ff6c727a123b`.
+- The latest run again confirmed 0 missing local links, 0 decode errors, and aligned collision-group counts: Stable ID 39, Production ID 50, Reference ID 7. Semantic adjudication remains open.
