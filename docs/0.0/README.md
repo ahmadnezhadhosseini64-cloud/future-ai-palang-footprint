@@ -138,7 +138,7 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 ## رویداد جاری مرتبط با معماری — EVT-0005
 - **Event Anchor:** `EVT-0005-REGISTER-UNIFIED-OUTPUT-ANCHOR-CYCLE-2026-10-19`
 - **سند مرجع چرخه:** [چرخهٔ یکپارچهٔ لنگر خروجی، ثبت و مستندسازی](../reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-CYCLE-2026-10-19-001.md)
-- **پروندهٔ رویداد:** [EVT-0005](../architecture/BEHAVIOR-TRACE/EVT-0005-REGISTER-UNIFIED-OUTPUT-ANCHOR-CYCLE-2026-10-19.md)
+- **پروندهٔ رویداد:** [EVT-0005 — چرخهٔ یکپارچهٔ لنگر خروجی و ثبت](../architecture/BEHAVIOR-TRACE/EVT-0005-REGISTER-UNIFIED-OUTPUT-ANCHOR-CYCLE-2026-10-19.md)
 - **وضعیت:** اشاره‌گر بازیابی معماری؛ این مورد نقطهٔ ۰.۰ تازه‌ای نیست و هیچ لنگر قبلی را جایگزین نمی‌کند. لنگر مستقل Dropbox همچنان OPEN / WAITING است.
 - **زمان:** تاریخ 2026-10-19؛ زمان دقیق پیام/اقدام ثبت نشده و حدس زده نمی‌شود.
 
@@ -150,7 +150,7 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - Production ID: `UOAR-HAIF-2026-10-19-001`
 - نوع: لنگر ارجاع/بازیابی برای سند مرجع زندهٔ چرخهٔ ثبت و مستندسازی؛ این بخش جایگزین هیچ نقطهٔ ۰.۰ قبلی نیست.
 - سند مرجع canonical: [چرخهٔ یکپارچهٔ لنگر خروجی، ثبت، مستندسازی و بازیابی](../reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md)
-- رویداد ثبت: [EVT-0005](../architecture/BEHAVIOR-TRACE/EVT-0005-UNIFIED-OUTPUT-ANCHOR-LIVING-REFERENCE-REGISTRATION-2026-10-19.md)
+- رویداد ثبت: [EVT-0005 — ثبت سند مرجع زندهٔ لنگر خروجی](../architecture/BEHAVIOR-TRACE/EVT-0005-UNIFIED-OUTPUT-ANCHOR-LIVING-REFERENCE-REGISTRATION-2026-10-19.md)
 - آخرین گام تأییدشده: ثبت و بازخوانی سند canonical از مخزن؛ بررسی محتوایی شناسه، چرخه، زمان‌گذاری، جداسازی مقصدها و مسیر بازیابی.
 - شکاف باز: بافر، کتابخانه و حافظهٔ پایدار مستقل تأیید نشده‌اند. لنگر مستقل Dropbox همچنان جداست و در این رویداد آزموده نشده است.
 - زمان دقیق تعامل/اقدام: UNKNOWN/UNVERIFIED؛ حدس زده نمی‌شود.
@@ -161,7 +161,7 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - **Stable ID:** `LIVE-BEHAVIORAL-CONTINUATION-PATTERN-2026-10-19-001`
 - **Production ID:** `LBCP-HAIF-2026-10-19-001`
 - **سند مرجع کامل:** [الگوی رفتاری زندهٔ ادامهٔ کار](../reference/REFERENCE-DOCUMENTS/LIVE-BEHAVIORAL-CONTINUATION-PATTERN-2026-10-19-001.md)
-- **رویداد ثبت:** [EVT-0006](../architecture/BEHAVIOR-TRACE/EVT-0006-LIVE-BEHAVIORAL-CONTINUATION-PATTERN-2026-10-19.md)
+- **رویداد ثبت:** [EVT-0006 — الگوی رفتاری زندهٔ ادامهٔ کار](../architecture/BEHAVIOR-TRACE/EVT-0006-LIVE-BEHAVIORAL-CONTINUATION-PATTERN-2026-10-19.md)
 - **وضعیت:** الگوی مرجع زنده و باز برای ادامهٔ کار؛ این مورد ۰.۰ اجرایی تازه نیست و هیچ لنگر قدیمی را حذف یا جایگزین نمی‌کند.
 - **قاعدهٔ ادامه:** ابتدا سند مرجع، دفتر ۰.۰ و دفتر رفتار را بازخوانی کن؛ از آخرین وضعیت معتبر زنجیرهٔ انتخاب‌شده ادامه بده. لنگر مستقل Dropbox همچنان OPEN / WAITING است.
 - **وضعیت مقصدها:** فقط وضعیت مخزن پس از ثبت و بازخوانی قابل تأیید است؛ بافر، کتابخانه و حافظهٔ پایدار مستقل تأیید نشده‌اند. Dropbox در این رویداد آزمایش نشده است.
@@ -319,7 +319,7 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - **Production ID:** EFNERP-HAIF-2026-10-20-001
 - **Version:** 1.0.0
 - **سند مرجع کامل:** [قرارداد ثبت مبتنی بر شواهد و منع گزارش خالی](../reference/REFERENCE-DOCUMENTS/EVIDENCE-FIRST-NO-EMPTY-REPORT-AND-REGISTER-EXECUTION-PACT-2026-10-20-001.md)
-- **رویداد ثبت و اثبات:** [EVT-0019](../architecture/BEHAVIOR-TRACE/EVT-0019-EVIDENCE-FIRST-REGISTER-PACT-2026-10-20.md)
+- **رویداد ثبت و اثبات:** [EVT-0019 — پیمان ثبت مبتنی بر شاهد و منع گزارش خالی](../architecture/BEHAVIOR-TRACE/EVT-0019-EVIDENCE-FIRST-REGISTER-PACT-2026-10-20.md)
 - **لنگر جاری:** [PALANG-0.0-CURRENT-2026-10-20-001](../../checkpoints/PALANG-0.0-CURRENT-2026-10-20-001.md)
 - **قاعده:** ادعای ثبت فقط با شاهد مقصدی؛ زمان دقیق نامعلوم را UNKNOWN / UNVERIFIED نگه دار؛ هیچ نقطهٔ ۰.۰ قبلی را بازنویسی یا نبند؛ گزارش جایگزین ثبت کامل و بازخوانی نیست.
 - **وضعیت:** مقصدهای بیرون از مخزن مستقل تأیید نشده‌اند؛ لنگر Dropbox همچنان OPEN / WAITING است.
