@@ -1,0 +1,76 @@
+# سند مرجع مادر: ممیزی معنایی UTC، اتصال میزبان و بازیابی ثبت خودکار
+
+## شناسنامه
+- Stable ID: SEMANTIC-TIMESTAMP-AUDIT-AND-HOST-CAPTURE-RECOVERY-MASTER-REFERENCE-2026-10-21-001
+- Production ID: STAR-HCR-2026-10-21-001
+- Version: 1.0.0
+- Owner: احمد پلنگ
+- Project: Future AI / Palang Footprint / HAIF
+- Canonical timezone: UTC
+- Derived local timezone: Asia/Tehran
+- Status: ACTIVE / LIVING REFERENCE; LIVE PRODUCER CONNECTION OPEN / NOT PROVEN
+- Related event: EVT-0075-ASSISTANT-OUTPUT-TIMESTAMP-SEMANTIC-AUDIT-AND-HOST-ADAPTER-2026-10-21
+- Governing registration contract: AUTOMATIC-INTERACTION-REGISTRATION-CONTRACT-2026-10-21-001
+- Timestamp standard: ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21-001
+
+## 1. هدف و تصمیم
+این سند مبنای ادامهٔ کار برای ثبت خودکار، لنگرگذاری مستقل، ممیزی زمان، اتصال میزبان، بازیابی و مقصدهای مستقل است. فرمان «ثبت کن» محرک اصل ثبت نیست؛ ثبت باید پیش‌فرض معماری باشد. با این حال، هیچ سند یا گردش‌کاری نباید به‌جای مدرک اتصال واقعی میزبان جا زده شود.
+
+## 2. چرا اسکن قبلی کافی نبود
+اسکن رشته‌های زمانی فقط می‌گوید در فایل‌ها چه رشته‌هایی شبیه تاریخ/زمان وجود دارد. به‌تنهایی ثابت نمی‌کند که دو رشته متعلق به یک رویدادند، یکی UTC و دیگری زمان محلی متناظر است، منطقهٔ زمانی درست به‌کار رفته، یا زمان پیام با زمان commit اشتباه نشده است. بنابراین موجودی رشته‌ها و تطبیق معنایی/ریاضی دو خروجی جدا هستند.
+
+## 3. قاعدهٔ ممیزی زمان
+1. هر timestamp به شناسهٔ رویداد، نقش زمان (پیام، شروع پردازش، نوشتن/commit، read-back، audit)، منبع، دقت و منطقهٔ زمانی وصل شود.
+2. UTC مرجع canonical است.
+3. جفت UTC/محلی فقط با شواهد رابطهٔ معنایی، مانند شناسهٔ رویداد و برچسب‌های روشن، جفت محسوب می‌شود.
+4. هر دو مقدار باید parse شوند و offset/zone معلوم داشته باشند.
+5. هر دو به UTC تبدیل و instantها با دقت ثبت‌شده از نظر ریاضی مقایسه شوند؛ اختلاف باید صفر باشد تا جفت PASS شود.
+6. مقدار محلی مستقل از مقدار ثبت‌شده با پایگاه IANA یعنی Asia/Tehran برای همان تاریخ محاسبه و مقایسه شود؛ offset ثابت برای همهٔ تاریخ‌های تاریخی فرض نشود.
+7. زمان بدون منطقه، ناسازگار، مبهم یا بدون منشأ در دستهٔ REVIEW/UNKNOWN بماند. زمان commit هرگز زمان پیام نیست.
+8. گزارش باید تعداد فایل‌های بررسی‌شده، رشته‌های زمانی، جفت‌های صریح، PASS، mismatch، parse error، مبهم و timestampهای بدون جفت را جدا کند. نبودن جفت صریح اثبات نبودن جفت نیست.
+
+## 4. اتصال میزبان و مرز دسترسی
+GitHub connector امکان انجام عملیات مخزن را هنگام فراخوانی ابزار می‌دهد. GitHub Actions نیز فقط eventهایی را می‌بیند که GitHub یا یک producer مجاز به آن تحویل دهد. هیچ‌کدام به‌طور خودکار یک subscription برای همهٔ پیام‌های زندهٔ ChatGPT ایجاد نمی‌کنند. اتصال واقعی نیازمند producer/host hook مجاز است که هر پیام را به adapter ارسال کند.
+
+Receiver/adapter مخزنی باید حداقل این قابلیت‌ها را داشته باشد: احراز هویت امضاشده، اندازهٔ ورودی محدود، شناسهٔ مستقل، idempotency key، زمان دریافت UTC و تهران، صف پایدار، hash، read-back، رد تعارض، retry/replay و گزارش وضعیت. دریافت موفق در صف به‌معنی نوشتن در GitHub نیست؛ انتقال به مخزن مرحلهٔ جداگانه است.
+
+## 5. آزمون‌های میزبان
+- دریافت ورودی ساختگی: ثبت در صف و بازخوانی hash.
+- احراز هویت: امضای معتبر پذیرفته و نامعتبر رد شود.
+- retry یکسان: همان رویداد برگردد و تکثیر نشود.
+- retry با محتوای متفاوت و همان کلید: تعارض صریح 409، بدون overwrite.
+- restart: رویداد قبلی پس از راه‌اندازی مجدد قابل بازیابی باشد.
+- اتصال producer واقعی: هنوز NOT TESTED تا زمانی که یک میزبان مجاز پیام واقعی را بفرستد.
+- ارسال به GitHub: هنوز NOT IMPLEMENTED در receiver اولیه؛ نیازمند توکن محدود، سیاست امنیتی و آزمون مقصد جداست.
+
+## 6. مقصدها و بازیابی
+- Repository: اسناد مرجع، رویدادها، کد و شواهد ممیزی.
+- Durable inbox / Buffer: رویداد خام مجاز، retry و وضعیت pending/dead-letter؛ ماندگاری پس از restart.
+- Library: آینهٔ اسناد موردنیاز برای بازیابی؛ write/read-back جداگانه.
+- Persistent Memory: خلاصهٔ بازیابی‌پذیر و قواعد پایدار، نه جایگزین متن مرجع.
+- Dropbox: مقصد failover مستقل که اتصالش باید واقعاً برقرار و بازیابی‌اش آزموده شود.
+هر مقصد فقط پس از نوشتن و بازخوانی همان مقصد PASS می‌شود. اگر مقصدی در دسترس نیست، رویداد در صف باقی می‌ماند و وضعیت BLOCKED/PENDING می‌گیرد؛ موفقیت مقصد دیگر نباید آن را سبز کند.
+
+## 7. چرخهٔ اجرایی و چکش
+CAPTURE → BIND → ANCHOR → CLASSIFY → PRESERVE → QUEUE → WRITE → READ-BACK → MATCH → VERIFY → RECONCILE → STATUS.
+معنی: دریافت → پابند → لنگرگذاری → طبقه‌بندی → حفظ → صف پایدار → نوشتن → بازخوانی → تطبیق → تأیید → آشتی‌دادن نسخه‌ها/مقصدها → وضعیت.
+چکش هر بار شناسهٔ یکتا، منبع زمان، تطبیق UTC/محلی، lineage، hash، مقصد، read-back، idempotency و محدودیت‌های اجرایی را می‌سنجد.
+
+## 8. وضعیت شواهد در زمان ایجاد
+- ثبت رویداد EVT-0075 و سند مادر در مخزن باید با commit metadata و read-back مستقل تأیید شود.
+- اسکریپت ممیزی معنایی زمان به مخزن افزوده شده است؛ اجرای واقعی و خروجی آن باید از workflow/artifact خوانده شود.
+- receiver میزبان و آزمون‌های مصنوعی به‌عنوان زیرساخت اولیه افزوده شده‌اند؛ موفقیت workflow و آزمون باید جداگانه بررسی شود.
+- اتصال producer زندهٔ ChatGPT: OPEN / NOT PROVEN.
+- نوشتن مستقیم receiver به GitHub: NOT IMPLEMENTED در نسخهٔ اولیه.
+- Buffer، Library، Persistent Memory و Dropbox: هرکدام NOT VERIFIED تا زمانی که شاهد مستقل مقصد ثبت شود.
+
+## 9. ادامهٔ کار
+1. اجرای ممیزی معنایی و بررسی گزارش جفت‌های mismatch/parse error/unpaired.
+2. اجرای آزمون adapter و بازخوانی نتیجهٔ workflow.
+3. اتصال producer مجاز به receiver؛ اگر محیط میزبان هیچ hook یا connector مجاز عرضه نکند، ثبت خودکار سرتاسری از این گفتگو قابل ادعا نیست و باید این شکاف باز بماند.
+4. پیاده‌سازی worker انتقال صف به GitHub با توکن محدود و read-back، سپس آزمون قطعی/بازیابی.
+5. آزمون مقصدهای مستقل و بازیابی شش سند واقعی پس از restart.
+6. ثبت هر نتیجه با زمان commit واقعی، زمان workflow و زمان read-back جدا از زمان پیام.
+
+## 10. اصل صداقت اجرایی
+POLICY ACTIVE ≠ LIVE CAPTURE PROVEN. Repository access ≠ host message subscription. Queue accepted ≠ repository written. Workflow success ≠ every message captured. FOUND ≠ RETRIEVED ≠ VALIDATED ≠ REVIVED ≠ VERIFIED ≠ ACTIVE.
