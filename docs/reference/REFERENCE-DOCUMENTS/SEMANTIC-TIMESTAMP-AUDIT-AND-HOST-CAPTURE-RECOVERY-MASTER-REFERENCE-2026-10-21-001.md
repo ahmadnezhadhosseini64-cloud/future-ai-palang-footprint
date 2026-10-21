@@ -32,7 +32,7 @@
 ## 4. اتصال میزبان و مرز دسترسی
 GitHub connector امکان انجام عملیات مخزن را هنگام فراخوانی ابزار می‌دهد. GitHub Actions نیز فقط eventهایی را می‌بیند که GitHub یا یک producer مجاز به آن تحویل دهد. هیچ‌کدام به‌طور خودکار یک subscription برای همهٔ پیام‌های زندهٔ ChatGPT ایجاد نمی‌کنند. اتصال واقعی نیازمند producer/host hook مجاز است که هر پیام را به adapter ارسال کند.
 
-Receiver/adapter مخزنی باید حداقل این قابلیت‌ها را داشته باشد: احراز هویت امضاشده، اندازهٔ ورودی محدود، شناسهٔ مستقل، idempotency key، زمان دریافت UTC و تهران، صف پایدار، hash، read-back، رد تعارض، retry/replay و گزارش وضعیت. دریافت موفق در صف به‌معنی نوشتن در GitHub نیست؛ انتقال به مخزن مرحلهٔ جداگانه است.
+Receiver/adapter مخزنی در scripts/host_adapter.py پیاده‌سازی اولیه شده است و باید حداقل این قابلیت‌ها را داشته باشد: احراز هویت امضاشده، اندازهٔ ورودی محدود، شناسهٔ مستقل، idempotency key، زمان دریافت UTC و تهران، صف پایدار، hash، read-back، رد تعارض، retry/replay و گزارش وضعیت. دریافت موفق در صف به‌معنی نوشتن در GitHub نیست؛ انتقال به مخزن مرحلهٔ جداگانه است.
 
 ## 5. آزمون‌های میزبان
 - دریافت ورودی ساختگی: ثبت در صف و بازخوانی hash.
@@ -56,12 +56,14 @@ CAPTURE → BIND → ANCHOR → CLASSIFY → PRESERVE → QUEUE → WRITE → RE
 معنی: دریافت → پابند → لنگرگذاری → طبقه‌بندی → حفظ → صف پایدار → نوشتن → بازخوانی → تطبیق → تأیید → آشتی‌دادن نسخه‌ها/مقصدها → وضعیت.
 چکش هر بار شناسهٔ یکتا، منبع زمان، تطبیق UTC/محلی، lineage، hash، مقصد، read-back، idempotency و محدودیت‌های اجرایی را می‌سنجد.
 
-## 8. وضعیت شواهد در زمان ایجاد
+## 8. وضعیت شواهد به‌روزشده
 - ثبت رویداد EVT-0075 و سند مادر در مخزن باید با commit metadata و read-back مستقل تأیید شود.
-- اسکریپت ممیزی معنایی زمان به مخزن افزوده شده است؛ اجرای واقعی و خروجی آن باید از workflow/artifact خوانده شود.
+- اسکریپت ممیزی معنایی زمان scripts/audit_timestamp_pairs_semantic.py به مخزن افزوده شده و به workflow متصل شده است؛ نتیجهٔ واقعی workflow/artifact هنوز باید جداگانه بازخوانی شود.
+- receiver صف پایدار scripts/host_adapter.py و worker انتقال به GitHub scripts/host_adapter_github_worker.py به مخزن افزوده شده‌اند. worker نیازمند GITHUB_TOKEN محدود در secret manager و استقرار روی میزبان است.
+- آزمون مصنوعی محلی با نتیجهٔ PASS اجرا شد؛ شاهد: evidence/host-adapter-synthetic-test-2026-10-21-001.md. این آزمون اتصال producer زنده یا نوشتن واقعی به GitHub را آزمایش نکرد.
 - receiver میزبان و آزمون‌های مصنوعی به‌عنوان زیرساخت اولیه افزوده شده‌اند؛ موفقیت workflow و آزمون باید جداگانه بررسی شود.
 - اتصال producer زندهٔ ChatGPT: OPEN / NOT PROVEN.
-- نوشتن مستقیم receiver به GitHub: NOT IMPLEMENTED در نسخهٔ اولیه.
+- نوشتن به GitHub: worker پیاده‌سازی شده، اما اجرای واقعی با توکن مجاز و read-back مخزن NOT TESTED.
 - Buffer، Library، Persistent Memory و Dropbox: هرکدام NOT VERIFIED تا زمانی که شاهد مستقل مقصد ثبت شود.
 
 ## 9. ادامهٔ کار
