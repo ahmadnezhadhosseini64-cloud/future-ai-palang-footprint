@@ -442,7 +442,7 @@ Decision: begin the first executable prototype from the initial product baseline
 
 
 ## Addendum — first executable HAIF prototype
-- Prototype code: [HAIF v0](../../prototype/haif-v0/README.md).
+- Prototype code: [HAIF v0](../../../prototype/haif-v0/README.md).
 - Event record: [EVT-0059](../../architecture/BEHAVIOR-TRACE/EVT-0059-HAIF-V0-PROTOTYPE-IMPLEMENTATION-2026-10-21.md).
 - Test run [39536269368](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39536269368) passed: 5 passed, 1 warning, 0 failed.
 - This is the first small executable increment based on the product model. It does not close the historical semantic graph and does not establish production readiness or external persistence.
