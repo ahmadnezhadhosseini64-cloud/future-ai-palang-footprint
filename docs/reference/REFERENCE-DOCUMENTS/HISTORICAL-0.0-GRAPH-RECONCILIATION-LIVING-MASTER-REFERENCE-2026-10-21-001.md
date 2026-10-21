@@ -345,3 +345,11 @@ This document can be considered repository-integrated only after the file, index
 - Legacy scanner reports 13 Stable ID and 24 Production ID groups on this same commit because it uses narrower extraction rules. Preserve scanner-scope distinction.
 - Artifact `12313525516`, ZIP SHA-256 `sha256:0ebd13f775d143fedb74046070f112fc606fcab48eaf4cc8b222f7165354d51b`. Logs and artifact metadata were read back; archive contents were not extracted in this step.
 - This PASS verifies structure and parser execution only. Full semantic relation closure, all EVT inbound/outbound edges, duplicate canonical promotion and app implementation remain OPEN / PARTIAL. Later documentation edits require another final audit before their structural acceptance is claimed.
+
+
+## Addendum v2.17.0 — final post-correction audit
+- Latest post-edit Living Architecture Audit: [39525369537](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39525369537), audited commit `edf2db0620b920436eaeff35cbb3fc1b10abc7fe`, runner UTC `2026-10-21T01:06:43Z`, SUCCESS.
+- Expanded manifest: 503 source files; 1,096 local Markdown links / 0 missing; 38 parent edges / 0 unresolved / 0 ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 exact-content duplicate groups; 701 identifier occurrences; 0 decode errors; 11 proposed alias edges. Total 951 files including 448 generated Evidence Gate files.
+- Legacy scanner on the same commit reports 13 Stable ID and 24 Production ID groups due narrower extraction. Preserve scanner scope rather than collapsing the counts.
+- Artifact `12313885389`, SHA-256 `sha256:1c2af00f30603b6fecdeb57b594799e33ba9e60adf576c5ba6284d0e104ddcef`. Logs and metadata read back; artifact archive not extracted in this step.
+- This run verifies structural checks on the updated reference index, integration queue, master, adjudication register and EVT disambiguation records. Semantic closure, all EVT inbound/outbound edges, final canonical promotion and app implementation remain OPEN / PARTIAL.
