@@ -41,7 +41,7 @@
 ## فهرست نقاط
 | Anchor ID (شناسهٔ نقطه) | توضیح کوتاه | وضعیت | اقدام بعدی | پرونده |
 |---|---|---|---|---|
-| PALANG-0.0-REPOSITORY-MODEL-INITIAL-RESUME-2026-10-21-001 | نقطهٔ ۰.۰ این نوبت؛ ثبت وضعیت جاری و مسیر ادامه از مدل اولیه | ACTIVE / LIVING / OPEN — ثبت مخزن در حال تأیید؛ کار معنایی هنوز باز است | ابتدا پرونده و پوشهٔ مدل اولیه را بازخوانی کن؛ سپس تعارض‌های EVT/شناسه و روابط معنایی را با شاهد ادامه بده | [پروندهٔ نقطهٔ جاری](../../checkpoints/0.0/PALANG-0.0-REPOSITORY-MODEL-INITIAL-RESUME-2026-10-21-001.md) |
+| PALANG-0.0-REPOSITORY-MODEL-INITIAL-RESUME-2026-10-21-001 | نقطهٔ ۰.۰ این نوبت؛ ثبت وضعیت جاری و مسیر ادامه از مدل اولیه | ACTIVE / LIVING / OPEN — ثبت مخزن در حال تأیید؛ کار معنایی هنوز باز است | ابتدا پرونده و پوشهٔ مدل اولیه را بازخوانی کن؛ سپس تعارض‌های EVT/شناسه و روابط معنایی را با شاهد ادامه بده | [پروندهٔ نقطهٔ جاری](../../../checkpoints/0.0/PALANG-0.0-REPOSITORY-MODEL-INITIAL-RESUME-2026-10-21-001.md) |
 | PALANG-DROPBOX-FAILOVER-RESUME-0.0-2026-10-12-001 | نقطهٔ باز برای اتصال Dropbox و آزمون مسیر جایگزین | OPEN / WAITING — باز / در انتظار؛ اتصال و آزمون تأیید نشده | بررسی وضعیت اتصال؛ تکمیل اتصال توسط کاربر در رابط؛ سپس نوشتن فایل آزمایشی، بازخوانی و تطبیق | [پروندهٔ نقطهٔ Dropbox](./PALANG-DROPBOX-FAILOVER-RESUME-0.0-2026-10-12-001.md) |
 
 ## راهنمای بازیابی و پرس‌وجو
@@ -611,7 +611,7 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 
 ## دستور ادامهٔ تأییدشده — آخرین نقطهٔ ۰.۰
 
-- **نقطهٔ جاری:** [PALANG-0.0-REPOSITORY-MODEL-INITIAL-RESUME-2026-10-21-001](../../checkpoints/0.0/PALANG-0.0-REPOSITORY-MODEL-INITIAL-RESUME-2026-10-21-001.md).
+- **نقطهٔ جاری:** [PALANG-0.0-REPOSITORY-MODEL-INITIAL-RESUME-2026-10-21-001](../../../checkpoints/0.0/PALANG-0.0-REPOSITORY-MODEL-INITIAL-RESUME-2026-10-21-001.md).
 - **قاعدهٔ ادامه:** در بازگشت از همین نقطه ادامه بده. این کار به اتصال با نقاط ۰.۰ قبلی نیاز ندارد؛ لنگرهای قبلی مستقل باقی می‌مانند و بازنویسی یا ادغام نمی‌شوند.
 - **مبنای مدل محصول:** [پوشهٔ ورودی مدل اولیه](../مدل%20اولیه/README.md) و [بستهٔ اصلی مدل اولیهٔ AI](../architecture/مدل%20اولیه%20AI/README.md)؛ هر دو از قبل در مخزن هستند.
 - **صف باز:** داوری معنایی گروه‌های شناسه، بررسی برخوردهای EVT، ممیزی روابط نامطمئن، انتخاب مرجع فایل‌های مشابه با شاهد، به‌روزرسانی معماری و ممیزی نهایی پس از تغییر.
@@ -632,7 +632,7 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 
 ## لنگر ۰.۰ فرزند — قرارداد ثبت کامل ورودی‌ها و خروجی‌ها — 2026-10-21
 - لنگر مادر: `PALANG-0.0-REPOSITORY-MODEL-INITIAL-RESUME-2026-10-21-001`.
-- لنگر فرزند: [PALANG-0.0-INPUT-OUTPUT-CONTINUITY-GOVERNANCE-2026-10-21-001](../checkpoints/0.0/PALANG-0.0-INPUT-OUTPUT-CONTINUITY-GOVERNANCE-2026-10-21-001.md).
+- لنگر فرزند: [PALANG-0.0-INPUT-OUTPUT-CONTINUITY-GOVERNANCE-2026-10-21-001](../../checkpoints/0.0/PALANG-0.0-INPUT-OUTPUT-CONTINUITY-GOVERNANCE-2026-10-21-001.md).
 - سند مرجع زنده مرتبط: [مدل اولیه — لنگر ۰.۰ و سند مرجع زنده](../architecture/مدل%20اولیه%20AI/مدل%20اولیه%20—%20لنگر%20۰.۰%20و%20سند%20مرجع%20زنده.md).
 - زمان ثبت اتصال: 2026-10-21T11:01:21+03:30؛ منطقهٔ زمانی Asia/Tehran. این زمان ثبت است، نه زمان دقیق ارسال پیام.
 - وضعیت: OPEN / LIVING / قابل رشد؛ ایجاد لنگر به‌تنهایی به معنی بسته‌شدن شکاف‌ها نیست.
@@ -647,7 +647,7 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 
 ## لنگر فرزند — قاعدهٔ خودکار ثبت، لنگر زمانی و ادامه پس از بازگشت — 2026-10-21
 
-- [PALANG-0.0-AUTOMATIC-INPUT-ANCHOR-AND-RETURN-RESUME-GOVERNANCE-2026-10-21-001](../checkpoints/0.0/PALANG-0.0-AUTOMATIC-INPUT-ANCHOR-AND-RETURN-RESUME-GOVERNANCE-2026-10-21-001.md) — ACTIVE / LIVING / GOVERNING / OPEN FOR GROWTH.
+- [PALANG-0.0-AUTOMATIC-INPUT-ANCHOR-AND-RETURN-RESUME-GOVERNANCE-2026-10-21-001](../../checkpoints/0.0/PALANG-0.0-AUTOMATIC-INPUT-ANCHOR-AND-RETURN-RESUME-GOVERNANCE-2026-10-21-001.md) — ACTIVE / LIVING / GOVERNING / OPEN FOR GROWTH.
 - Production ID: `P0AIRRG-2026-10-21-001`; Version 1.0.0; registration timestamp `2026-10-21T11:32:53+03:30` (Asia/Tehran).
 - رویداد ورودی/خروجی: [EVT-0059](../architecture/BEHAVIOR-TRACE/EVT-0059-AUTOMATIC-ANCHOR-REGISTRATION-AND-RETURN-RESUME-GOVERNANCE-2026-10-21.md).
 - قاعده: ثبت کامل و چکش برای ورودی/خروجی مرتبط با پروژه پیش‌فرض است؛ لنگرهای ۰.۰ مستقل می‌مانند و این ثبت آن‌ها را جایگزین یا ادغام نمی‌کند.
@@ -655,7 +655,7 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 
 ## سند مادر و لنگر مستقل برای بازگشت اجرایی — 2026-10-21
 - [سند مرجع مادر — ثبت جامع و بازگشت اجرایی زنده](../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20—%20ثبت%20جامع%20و%20بازگشت%20اجرایی%20زنده.md).
-- [PALANG-0.0-MASTER-REFERENCE-RETURN-EXECUTION-2026-10-21-001](../checkpoints/0.0/PALANG-0.0-MASTER-REFERENCE-RETURN-EXECUTION-2026-10-21-001.md).
+- [PALANG-0.0-MASTER-REFERENCE-RETURN-EXECUTION-2026-10-21-001](../../checkpoints/0.0/PALANG-0.0-MASTER-REFERENCE-RETURN-EXECUTION-2026-10-21-001.md).
 - رویداد: [EVT-0060](../architecture/BEHAVIOR-TRACE/EVT-0060-MASTER-REFERENCE-RETURN-EXECUTION-2026-10-21.md).
 - زمان ثبت: `2026-10-21T11:37:45+03:30` (Asia/Tehran).
 - وضعیت: ACTIVE / LIVING / OPEN FOR GROWTH؛ لنگرهای تاریخی مستقل باقی می‌مانند.
