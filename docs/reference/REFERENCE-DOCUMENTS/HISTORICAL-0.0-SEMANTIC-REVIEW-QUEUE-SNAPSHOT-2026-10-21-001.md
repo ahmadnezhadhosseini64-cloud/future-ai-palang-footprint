@@ -147,3 +147,10 @@ These failures are retained as implementation/test evidence. The current pass pr
 - Role decisions are evidence-based from read-back and SHA-256 equality. Canonical promotion remains provisional; do not delete/merge copies.
 - Snapshot evidence used: run 39518895224, audited commit `2157a8f093c53515020f029f45faf9f131a77c33`. A fresh workflow run after these new files and governing-register updates is required before claiming the updated snapshot passed.
 - Remaining semantic work: review other Production ID groups, remaining Stable ID groups, EVT inbound/outbound references, and meaning of all link edges.
+
+
+## Addendum v1.11.0 — fresh post-batch-003 audit
+- [Run 39520630341](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39520630341) passed on commit `9419d0ced3ae50632d0857eb030516534f3b4312` at `2026-10-21T00:19:43Z` UTC.
+- 503 source files; 1,080 local links / 0 missing; 38 parent edges / 0 unresolved or ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 exact-content duplicate groups; 701 identifier occurrences; 0 decode errors.
+- Artifact `12310173787`; SHA-256 `sha256:934124271cef0e23ead5aed97a032012d833084dbb00d3b14f20ec0d282a3b11`.
+- Batch 003 reviewed five Production ID groups with hash/read-back evidence. This is bounded role review; all other semantic work remains active.
