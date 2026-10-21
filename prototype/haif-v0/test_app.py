@@ -267,7 +267,7 @@ def test_real_repository_allowlist_ingests_searches_and_survives_restart(tmp_pat
         item = result["items"][0]
         assert item["source_path"] == (
             "docs/reference/REFERENCE-DOCUMENTS/"
-            "Storage proof / اثبات ذخیره‌سازی:.md"
+            "PALANG-RETURN-EXECUTION-MASTER-ANCHOR-2026-10-21-001.md"
         )
         assert item["source_origin"].endswith("commit=integration-test-commit; allowlisted repository document")
         assert item["content_sha256"]
