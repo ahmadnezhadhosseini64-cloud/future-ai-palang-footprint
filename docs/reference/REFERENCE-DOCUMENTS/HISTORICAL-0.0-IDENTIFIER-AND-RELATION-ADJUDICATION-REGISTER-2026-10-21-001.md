@@ -150,3 +150,9 @@ Files whose purpose or role is not yet clear stay in the active review queue or 
 - In each group the two physical paths have identical SHA-256 and byte size. The operational/governance/architecture/checkpoint/registry path is the role-based primary candidate; the Reference Documents path is classified `MIRROR_OF`. No files were deleted or merged.
 - These five roles are DECIDED WITH EVIDENCE; final canonical promotion remains PROVISIONAL because the audited snapshot showed no inbound/outbound local links for the ten paths, and external/non-Markdown consumers plus full Git history have not been exhaustively checked.
 - Counts in the evidence snapshot are historical to run [39518895224](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39518895224): 501 source files, 1,062 local links / 0 missing, 30 Stable ID groups, 43 Production ID groups, 7 Reference ID groups, 8 EVT groups, 11 exact-content duplicate groups. A fresh audit is required after this batch and EVT-0054 were committed.
+
+
+## Addendum v1.9.0 — fresh structural audit
+- Audit: [39520630341](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39520630341), commit `9419d0ced3ae50632d0857eb030516534f3b4312`, UTC `2026-10-21T00:19:43Z`.
+- Counts: 503 source files; 1,080 local links / 0 missing; 38 parent edges / 0 unresolved or ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 duplicate groups; 701 identifier occurrences; 0 decode errors.
+- H0PRRB3 reviewed five Production ID groups by direct read-back and identical SHA-256. Their role decisions are bounded; canonical promotion remains provisional. Remaining semantic relations, EVT reference audits, and duplicate canonicalization remain open.
