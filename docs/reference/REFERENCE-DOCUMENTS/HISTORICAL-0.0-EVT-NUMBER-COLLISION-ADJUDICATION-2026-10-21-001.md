@@ -153,3 +153,9 @@
 - Audit [39527948241](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39527948241) passed on commit `31d0d4e8575077ca073033d2ad4586b83765e317`, UTC `2026-10-21T01:33:00Z`; artifact `12313444944`, digest `sha256:09ec77219ab2506f618134b0d777cc9121fc84d971d0f6f70210d8309714dc4d`.
 - 1,160 links / 0 missing; 38 parent edges / 0 unresolved / 0 ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 duplicate groups; 713 identifier occurrences; 0 decode errors.
 - H0EVTRRB4 / EVT-0057 record the legacy label fixes. This run predates the evidence append; full EVT inbound/outbound audit remains OPEN.
+
+
+## Addendum v2.2.0 — evidence audit for legacy display-label batch 004
+- Audit [39528079194](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39528079194) passed on commit `1447bb9cdc696f2783399d3bc34c9d98cd1dae6c`, UTC `2026-10-21T01:34:15Z`; artifact `12314015514`, digest `sha256:532b0fb701ada815cc2ed035b891b75b0dd7a1e9a054a5cde971164b4e7d985e`.
+- 1,162 links / 0 missing; 38 parent edges / 0 unresolved / 0 ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 duplicate groups; 713 identifier occurrences; 0 decode errors.
+- H0EVTRRB4 / EVT-0057 record the label changes. This run predates this evidence append; a final post-evidence audit is required.
