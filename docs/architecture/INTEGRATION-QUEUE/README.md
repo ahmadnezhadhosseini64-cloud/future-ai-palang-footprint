@@ -884,3 +884,12 @@ The queue index and the timestamp case must each be read back after this update.
 - **Included in baseline:** تعامل و بازیابی زمینه، چندنقطه‌ای ۰.۰، دفتر رویداد، گراف دانش، منشأ/شواهد، صف شکاف، Master–Child–Rahm، چرخهٔ فرضیه تا اعتبارسنجی، رابط کاربر و ذخیره‌سازی مقصدبه‌مقصد.
 - **Open work:** ساخت اسکلت اجرایی مرحلهٔ ۱؛ انتخاب محیط اجرا/میزبانی و احراز هویت؛ پیاده‌سازی و آزمون سرتاسری؛ ادامهٔ بررسی 30 گروه Stable ID، 43 گروه Production ID، 7 گروه Reference ID، 8 گروه EVT و 11 گروه محتوای تکراری طبق ممیزی run `39521128996`. این شمارش‌ها گروه‌های بررسی‌اند، نه حکم قطعی تعارض.
 - **Preservation rule:** هیچ فایل یا ایده‌ای به علت ورود مدل اولیه حذف نمی‌شود؛ موارد نامطمئن در صف باقی می‌مانند و در توسعهٔ بعدی به مدل افزوده یا با دلیل به تعویق می‌افتند.
+
+
+## Initial AI model package — central continuation baseline (2026-10-21)
+- **Master reference:** [HAIF-IAM-MR](../مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md).
+- **Folder overview:** [مدل اولیه AI](../مدل%20اولیه%20AI/README.md).
+- **Next steps and open gaps:** [HAIF-IM-NSOG](../مدل%20اولیه%20AI/صف%20گام‌های%20بعدی%20و%20موارد%20باز.md).
+- **Creation event:** [EVT-0058](../BEHAVIOR-TRACE/EVT-0058-INITIAL-AI-MODEL-PACKAGE-CREATION-2026-10-21.md).
+- **Decision:** use this package as the central development continuation point; retain HAIF-IPA and FAPF-IRA as detailed source references rather than creating competing definitions.
+- **Acceptance boundary:** package write is not final acceptance until independent read-back and post-change audit. Application code is not yet built; semantic graph, ID/EVT adjudication and non-repository persistence remain outside this phase.
