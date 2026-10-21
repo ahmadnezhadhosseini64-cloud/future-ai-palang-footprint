@@ -893,3 +893,9 @@ The queue index and the timestamp case must each be read back after this update.
 - **Creation event:** [EVT-0058](../BEHAVIOR-TRACE/EVT-0058-INITIAL-AI-MODEL-PACKAGE-CREATION-2026-10-21.md).
 - **Decision:** use this package as the central development continuation point; retain HAIF-IPA and FAPF-IRA as detailed source references rather than creating competing definitions.
 - **Acceptance boundary:** package write is not final acceptance until independent read-back and post-change audit. Application code is not yet built; semantic graph, ID/EVT adjudication and non-repository persistence remain outside this phase.
+
+
+## Audit evidence — initial AI model package link repair
+- Follow-up audit [39535632242](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39535632242) completed SUCCESS on commit 90c92c675c64dc2dccb41d0dcb371e7697aa8258, runner UTC 2026-10-21T02:54:54Z; artifact 12317153412; SHA-256 96a676de4524452b3bf50eb8353c2e0bc5f29d468134600595527cd3ad1fa722.
+- It reported 515 source files, 1,219 local Markdown links, zero missing links, zero decode errors, 38 declared parent edges with zero unresolved/ambiguous edges, 32 Stable ID groups, 45 Production ID groups, 7 Reference ID groups, 9 EVT groups and 11 exact-content duplicate groups.
+- The seven missing links from the first post-write run were corrected by URL-encoding spaces in Persian paths. The current evidence shows the fix worked for that snapshot. A new audit after this evidence/navigation commit is required; semantic closure remains open.
