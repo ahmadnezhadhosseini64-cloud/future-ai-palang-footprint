@@ -300,3 +300,9 @@
 ## EVT-0072 — ممیزی تطبیق زمان‌های UTC
 - [EVT-0072](./EVT-0072-UTC-TIMESTAMP-RECONCILIATION-AUDIT-2026-10-21.md) — درخواست بررسی لنگر زمانی، شناسهٔ مستقل رویداد و تطبیق زمان اسناد مخزن.
 - [سند ممیزی UTC](../../reference/REFERENCE-DOCUMENTS/UTC-TIMESTAMP-RECONCILIATION-AUDIT-2026-10-21-001.md) — درخت مخزن و شمارش اولیه بررسی شده؛ ممیزی سطر‌به‌سطر همهٔ اسناد هنوز باز است.
+
+
+## EVT-0075 — ممیزی معنایی زمان و اتصال میزبان
+- EVT-0075: EVT-0075-ASSISTANT-OUTPUT-TIMESTAMP-SEMANTIC-AUDIT-AND-HOST-ADAPTER-2026-10-21.md
+- سند مادر: ../../reference/REFERENCE-DOCUMENTS/SEMANTIC-TIMESTAMP-AUDIT-AND-HOST-CAPTURE-RECOVERY-MASTER-REFERENCE-2026-10-21-001.md
+- وضعیت: مخزن و کد receiver/worker ثبت شده؛ آزمون مصنوعی PASS؛ ممیزی workflow باید با artifact بازخوانی شود؛ اتصال producer زنده OPEN / NOT PROVEN.
