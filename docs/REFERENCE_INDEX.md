@@ -427,3 +427,11 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 
 ## ثبت خروجی و چکش یکپارچه‌سازی AIRC — EVT-0074
 - [EVT-0074](architecture/BEHAVIOR-TRACE/EVT-0074-AUTOMATIC-REGISTRATION-ARCHITECTURE-INTEGRATION-AND-PEH-2026-10-21.md) — ثبت خروجی دستیار، اتصال معماری و چکش فهم درخواست.
+
+
+## ممیزی معنایی زمان و اتصال میزبان — EVT-0075
+- [سند مرجع مادر](reference/REFERENCE-DOCUMENTS/SEMANTIC-TIMESTAMP-AUDIT-AND-HOST-CAPTURE-RECOVERY-MASTER-REFERENCE-2026-10-21-001.md) — قواعد جفت‌سازی معنایی UTC/تهران، صف پایدار، بازیابی و وضعیت مقصدها.
+- [EVT-0075](architecture/BEHAVIOR-TRACE/EVT-0075-ASSISTANT-OUTPUT-TIMESTAMP-SEMANTIC-AUDIT-AND-HOST-ADAPTER-2026-10-21.md) — پابند مستقل خروجی دستیار و تصمیم‌های ممیزی/اتصال میزبان.
+- ابزار ممیزی: scripts/audit_timestamp_pairs_semantic.py؛ گزارش‌های اجرایی در artifact ممیزی.
+- receiver اولیه: scripts/host_adapter.py؛ آزمون مصنوعی: scripts/test_host_adapter.py.
+- وضعیت: اسناد/کد مخزنی ثبت شده‌اند؛ اتصال تولیدکنندهٔ زندهٔ ChatGPT، نوشتن receiver به GitHub و مقصدهای بیرونی هنوز اثبات نشده‌اند.
