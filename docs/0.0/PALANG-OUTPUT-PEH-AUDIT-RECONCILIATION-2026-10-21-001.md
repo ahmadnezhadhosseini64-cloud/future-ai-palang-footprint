@@ -71,3 +71,13 @@ PRESERVE → IDENTIFY → VERIFY → RECONCILE → REGISTER → READ-BACK → MA
 - Semantic review ledger / دفتر داوری شناسه‌ها: [H0IRRB](../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-IDENTIFIER-ROLE-REVIEW-BATCH-001-2026-10-21.md).
 - Latest verification after event registration: [run 39579658484](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39579658484), SUCCESS; artifact `12335398419`, SHA-256 `e90b532e82b5e39bffe90d20e40f8a46e426ea9ee41a5535fc84ff6c727a123b`.
 - The latest run again confirmed 0 missing local links, 0 decode errors, and aligned collision-group counts: Stable ID 39, Production ID 50, Reference ID 7. Semantic adjudication remains open.
+
+
+## 8. گام واقعی بعدی مدل اولیه — ثبت و بازیابی سند
+
+به‌جای گسترش بی‌دلیل ممیزی، کار به مدل اولیهٔ موجود برگشت و قابلیت `POST /api/v1/documents` و `GET /api/v1/search?q=...` در `prototype/haif-v0` اضافه شد. سند با مسیر، نسخه، منشأ، زمان و SHA-256 ثبت می‌شود؛ پس از نوشتن بازخوانی و hash تطبیق داده می‌شود؛ جست‌وجو نتیجه را با شناسه/مسیر/نسخه/منشأ برمی‌گرداند.
+
+- آزمون: [39580170352](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39580170352) — 7 passed, 1 warning, 0 failed.
+- ممیزی پس از ثبت صف: [39580209577](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39580209577) — SUCCESS؛ 0 پیوند مفقود و شمارش همسان شناسه‌ها.
+- رویداد اجرایی: [EVT-0064](../architecture/BEHAVIOR-TRACE/EVT-0064-HAIF-DOCUMENT-RETRIEVAL-PROVENANCE-2026-10-21.md).
+- محدودیت: این جست‌وجو واژه‌محور است؛ بازیابی معنایی/برداری، آزمون restart و استخراج خودکار مخزن هنوز باز هستند.
