@@ -295,3 +295,8 @@
 - [EVT-0062 — ثبت ورودی بازگشت و ادامهٔ ممیزی معنایی](./EVT-0062-RETURN-ANCHOR-AND-SEMANTIC-AUDIT-RESUME-2026-10-21.md).
 - [لنگر مستقل ۰.۰](../../0.0/PALANG-RETURN-SEMANTIC-AUDIT-RESUME-2026-10-21-001.md).
 - وضعیت: ACTIVE / OPEN-PARTIAL؛ ثبت ورودی انجام شده، اجرای ممیزی تازه و بررسی معنایی هنوز نیازمند شواهد است.
+
+
+## EVT-0072 — ممیزی تطبیق زمان‌های UTC
+- [EVT-0072](./EVT-0072-UTC-TIMESTAMP-RECONCILIATION-AUDIT-2026-10-21.md) — درخواست بررسی لنگر زمانی، شناسهٔ مستقل رویداد و تطبیق زمان اسناد مخزن.
+- [سند ممیزی UTC](../../reference/REFERENCE-DOCUMENTS/UTC-TIMESTAMP-RECONCILIATION-AUDIT-2026-10-21-001.md) — درخت مخزن و شمارش اولیه بررسی شده؛ ممیزی سطر‌به‌سطر همهٔ اسناد هنوز باز است.
