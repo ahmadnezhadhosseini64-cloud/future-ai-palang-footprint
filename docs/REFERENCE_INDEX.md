@@ -408,3 +408,8 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - رویداد اجرایی: [EVT-0066](architecture/BEHAVIOR-TRACE/EVT-0066-ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21.md).
 - سند مرجع مادر لنگر بازگشت: [PALANG-RETURN-EXECUTION-MASTER-ANCHOR-2026-10-21-001](reference/REFERENCE-DOCUMENTS/PALANG-RETURN-EXECUTION-MASTER-ANCHOR-2026-10-21-001.md).
 - زمان اعمال این اصلاحیه: `2026-10-21T13:40:14+03:30` تهران / `2026-10-21T10:10:14Z` UTC؛ زمان دقیق پیام کاربر موجود نیست و ساختگی ثبت نشده است.
+
+
+### دور بازخوانی پیوندهای مخزن
+- Read-back pass time / زمان دور بازخوانی: `2026-10-21T13:41:19+03:30` تهران / `2026-10-21T10:11:19Z` UTC.
+- Scope / دامنه: نسخه‌های جاری سند مادر، استاندارد زمان، رویداد EVT-0066، لنگر مستقل ۰.۰، سند مادر مدل اولیه، فهرست مرجع و فهرست نقاط ۰.۰ بازخوانی شدند؛ پیوند استاندارد و متن قاعده در فایل‌های مورد انتظار یافت شد.
