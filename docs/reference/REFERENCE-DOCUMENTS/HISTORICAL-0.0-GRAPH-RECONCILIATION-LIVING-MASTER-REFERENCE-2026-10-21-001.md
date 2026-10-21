@@ -265,3 +265,10 @@ This document can be considered repository-integrated only after the file, index
 - Current counts: 501 source files; 1,030 local Markdown links / 0 missing; 38 parent edges / 0 unresolved/ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 exact-content duplicate groups; 697 identifier occurrences.
 - Detailed review status: [H0IRAR](./HISTORICAL-0.0-IDENTIFIER-AND-RELATION-ADJUDICATION-REGISTER-2026-10-21-001.md); batch 002: [H0IRRB2](./HISTORICAL-0.0-IDENTIFIER-ROLE-REVIEW-BATCH-002-2026-10-21.md); buildable application specification: [FAPF-IRA](./FUTURE-AI-PALANG-FOOTPRINT-IMPLEMENTABLE-REFERENCE-ARCHITECTURE-2026-10-21-001.md).
 - EVT identity/status is classified for all eight groups; inbound/outbound reference audit remains open. Eleven duplicate groups are preserved and have role-based proposals; canonical promotion remains provisional. All other group and relation semantics remain OPEN / PARTIAL.
+
+
+## Addendum v2.5.0 — latest successful structural audit
+- Latest pass: [39518486151](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39518486151), commit `2b19eeab0c9f8e1b0a16c3a6550b9f791b9cbac8`, UTC `2026-10-20T23:59:24Z`.
+- Latest inventory: 501 source files; 1,041 local Markdown edges / 0 missing; 38 parent edges / 0 unresolved/ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 exact-content duplicate groups; 697 ID occurrences.
+- Full status remains in [H0IRAR](./HISTORICAL-0.0-IDENTIFIER-AND-RELATION-ADJUDICATION-REGISTER-2026-10-21-001.md); role batch 002 is [H0IRRB2](./HISTORICAL-0.0-IDENTIFIER-ROLE-REVIEW-BATCH-002-2026-10-21.md); app-build specification is [FAPF-IRA](./FUTURE-AI-PALANG-FOOTPRINT-IMPLEMENTABLE-REFERENCE-ARCHITECTURE-2026-10-21-001.md).
+- Structural acceptance is PASS. Semantic proof of all remaining groups/edges, complete 501-file role classification, EVT reference audits and final duplicate canonicalization remain OPEN / PARTIAL.
