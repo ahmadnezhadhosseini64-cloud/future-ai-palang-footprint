@@ -3,7 +3,7 @@
 ## شناسنامه و وضعیت
 - Stable ID / شناسه پایدار: PERMANENT-INTERACTION-ANCHORING-TIMESTAMP-GOVERNANCE-AND-CANONICAL-GRAPH-MASTER-REFERENCE-2026-10-21-001
 - Production ID / شناسه تولید: PIATGCG-2026-10-21-001
-- Version / نسخه: 1.0.9
+- Version / نسخه: 1.1.0
 - Owner / مالک: Ahmad Nezhadhosseini / احمد پلنگ
 - Project / پروژه: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
 - Scope / دامنه: حاکمیت تعامل، لنگر ورودی/خروجی، زمان‌گذاری، گراف تاریخی ۰.۰، ثبت معماری، خاک‌برداری، بستهٔ انتقال میزبان
@@ -282,3 +282,12 @@ T1 ورودی و خروجی قابل‌بازیابی؛ T2 زمان‌های م�
 - Input: [EVT-0050](../../architecture/BEHAVIOR-TRACE/EVT-0050-USER-REQUEST-CONSOLIDATED-LIVING-MASTER-CONTINUATION-2026-10-21.md).
 - Output and verification record: [EVT-0051](../../architecture/BEHAVIOR-TRACE/EVT-0051-ASSISTANT-CONSOLIDATED-MASTER-CREATION-AND-READBACK-2026-10-21.md).
 - The consolidated master is the current continuation entry point; the historic graph remains OPEN / PARTIAL.
+
+
+## 33. اجرای ممیزی زمان‌های UTC و لنگر مستقل — 2026-10-21
+- **رویداد:** [EVT-0072 — ممیزی تطبیق زمان‌های UTC](../../architecture/BEHAVIOR-TRACE/EVT-0072-UTC-TIMESTAMP-RECONCILIATION-AUDIT-2026-10-21.md).
+- **سند ممیزی:** [UTC-TIMESTAMP-RECONCILIATION-AUDIT-2026-10-21-001](./UTC-TIMESTAMP-RECONCILIATION-AUDIT-2026-10-21-001.md).
+- **لنگر پردازش دستیار:** `2026-10-21T15:31:00Z`; نمایش متناظر `2026-10-21T19:01:00+03:30`؛ زمان پیام کاربر `UNKNOWN / UNVERIFIED`.
+- **شاهد مخزن:** درخت `main` در commit `c393af8b7202690f2f7c51d97d334d086eff013b`، پاسخ کامل `truncated=false`; شمارش اولیه 1,303 فایل، 105 سند مرجع، 82 مسیر EVT و 29 مسیر مرتبط با 0.0.
+- **تغییر اجرایی:** افزوده‌شدن `scripts/audit_timestamps.py` و مرحلهٔ اجرای آن به `.github/workflows/living-architecture-audit.yml` تا ممیزی زمان‌ها در گردش‌کار مخزن تولید شواهد کند.
+- **وضعیت:** ثبت و پیوند مخزنی انجام شده؛ نتیجهٔ ممیزی کامل و بازخوانی نهایی این تغییرات باید از اجرای GitHub Actions و artifact آن گرفته شود. این بخش هنوز مجوز اعلام «همهٔ زمان‌ها تطبیق‌شده» نمی‌دهد.
