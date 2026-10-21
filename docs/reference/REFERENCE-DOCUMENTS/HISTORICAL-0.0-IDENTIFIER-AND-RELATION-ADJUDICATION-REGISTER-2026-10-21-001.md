@@ -185,3 +185,10 @@ Files whose purpose or role is not yet clear stay in the active review queue or 
 - Expanded manifest: 503 source files; 1,092 links / 0 missing; 38 parent edges / 0 unresolved / 0 ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 exact-content duplicate groups; 701 identifier occurrences; 0 decode errors. Legacy scanner separately reports 13 Stable ID and 24 Production ID groups.
 - Scoped EVT reference review corrected two ambiguous EVT-0005 references and two misleading EVT-0051 labels/pointers; detailed evidence remains in [H0EVTCA](./HISTORICAL-0.0-EVT-NUMBER-COLLISION-ADJUDICATION-2026-10-21-001.md). Group-wide inbound/outbound audit and canonicalization remain OPEN.
 - Run 39525249292 predates this register update; final post-edit audit required.
+
+
+## Addendum v2.4.0 — post-edit audit confirms structural acceptance
+- [Living Architecture Audit 39525369537](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39525369537) passed on commit `edf2db0620b920436eaeff35cbb3fc1b10abc7fe`, runner UTC `2026-10-21T01:06:43Z`.
+- 503 source files; 1,096 local links / 0 missing; 38 parent edges / 0 unresolved / 0 ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 exact-content duplicate groups; 701 identifier occurrences; 0 decode errors.
+- This post-edit run covers the scoped EVT reference corrections and continuation-pointer fixes in the audited commit. It confirms structure, not complete semantic correctness of every link.
+- EVT-0005/0006: two ambiguous bare references corrected; EVT-0051/0052 continuation labels corrected; detailed source findings remain in H0EVTCA v1.2–v1.3. Full inbound/outbound review for all eight groups and duplicate canonicalization remain OPEN.
