@@ -130,3 +130,9 @@ Files whose purpose or role is not yet clear stay in the active review queue or 
 - [Run 39518486151](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39518486151) passed on commit `2b19eeab0c9f8e1b0a16c3a6550b9f791b9cbac8` at `2026-10-20T23:59:24Z` UTC.
 - Latest counts: 501 source files; 1,041 local Markdown edges / 0 missing; 38 parent edges / 0 unresolved/ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 exact-content duplicate groups; 697 identifier occurrences.
 - Structural link health is confirmed for this commit. Semantic review remains incomplete for 23 Stable ID groups, all 43 Production ID groups, the intended meaning of 1,041 links and final canonical promotion of the 11 duplicate groups. All eight EVT groups have identity/status decisions, but reference audits remain open.
+
+
+## Addendum v1.6.0 — final integration audit for this phase
+- [Run 39518636358](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39518636358) passed on commit `d207f558ab2a10e392c3f5c8d84de8996a7d8024` at `2026-10-21T00:00:46Z` UTC.
+- Latest inventory: 501 source files; 1,050 local links / 0 missing; 38 parent edges / 0 unresolved/ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 duplicate groups; 697 identifier occurrences.
+- The audit validates structure and queue generation only. Twenty-three Stable ID groups and all 43 Production ID groups remain to be fully reviewed, as do semantic meanings of links and final canonical promotion for duplicate groups. EVT identity/status decisions exist for all eight groups, while inbound/outbound reference audits remain open.
