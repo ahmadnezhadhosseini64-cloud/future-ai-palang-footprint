@@ -355,3 +355,9 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - **صف گام‌های بعدی و موارد باز:** [HAIF-IM-NSOG](architecture/مدل%20اولیه%20AI/صف%20گام‌های%20بعدی%20و%20موارد%20باز.md).
 - **رویداد ساخت:** [EVT-0058](architecture/BEHAVIOR-TRACE/EVT-0058-INITIAL-AI-MODEL-PACKAGE-CREATION-2026-10-21.md).
 - **وضعیت:** فایل‌های بسته ایجاد شده‌اند؛ بازخوانی مستقل، تطبیق پیوندها و ممیزی پس از آخرین commit هنوز باید ثبت شوند. برنامه هنوز پیاده‌سازی/استقرار نشده است. گراف معنایی و گروه‌های شناسه/EVT باز می‌مانند.
+
+
+## Post-link-fix audit evidence — initial AI model package
+- Audit [39535632242](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39535632242) completed SUCCESS on commit 90c92c675c64dc2dccb41d0dcb371e7697aa8258; runner UTC 2026-10-21T02:54:54Z; artifact 12317153412; SHA-256 96a676de4524452b3bf50eb8353c2e0bc5f29d468134600595527cd3ad1fa722.
+- Snapshot: 515 source files, 1,219 local Markdown links, 0 missing links, 0 decode errors, 38 declared parent edges with 0 unresolved/ambiguous edges; 32 Stable ID, 45 Production ID, 7 Reference ID, 9 EVT and 11 exact-content duplicate groups.
+- The link-fix audit is clean structurally; semantic adjudication and app implementation remain open. A newer audit is required after the latest navigation/evidence commits.
