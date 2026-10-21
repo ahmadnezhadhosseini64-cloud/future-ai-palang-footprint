@@ -30,7 +30,7 @@
 
 
 ## نمونهٔ اجرایی شروع‌شده
-- [HAIF v0 — نمونهٔ اجرایی اولیه](../../prototype/haif-v0/README.md): API پایهٔ لنگر و رویداد، SQLite محلی، hash و بازخوانی پس از نوشتن.
+- [HAIF v0 — نمونهٔ اجرایی اولیه](../../../prototype/haif-v0/README.md): API پایهٔ لنگر و رویداد، SQLite محلی، hash و بازخوانی پس از نوشتن.
 - [EVT-0059 — رویداد پیاده‌سازی نمونه](../BEHAVIOR-TRACE/EVT-0059-HAIF-V0-PROTOTYPE-IMPLEMENTATION-2026-10-21.md).
 - آزمون خودکار: [HAIF Prototype Tests 39536269368](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39536269368) — 5 passed, 1 warning, 0 failed.
 - مرز وضعیت: نمونهٔ v0 پیاده‌سازی و آزموده شده؛ برنامهٔ تولیدی، استقرار امن، گراف معنایی و مقصدهای بیرونی هنوز کامل/تأییدشده نیستند.
