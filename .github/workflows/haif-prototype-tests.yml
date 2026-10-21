@@ -1,0 +1,36 @@
+name: HAIF Prototype Tests
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "prototype/haif-v0/**"
+      - ".github/workflows/haif-prototype-tests.yml"
+  pull_request:
+    paths:
+      - "prototype/haif-v0/**"
+      - ".github/workflows/haif-prototype-tests.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test-haif-prototype:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: prototype/haif-v0
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: prototype/haif-v0/requirements.txt
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip && pip install -r requirements.txt
+      - name: Run prototype tests
+        run: pytest -q
