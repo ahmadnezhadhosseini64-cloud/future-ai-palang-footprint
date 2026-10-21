@@ -456,3 +456,10 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - لنگر مستقل ۰.۰ — ادامه از ثبت زنجیره و ممیزی زمان‌های تاریخی.
 - استاندارد حاکم: ASSISTANT-TIMESTAMP-ANCHOR-STANDARD، اصلاحیهٔ 1.4.0.
 - وضعیت: پیوندهای حاکم ثبت شده‌اند؛ زمان‌های commit نهایی باید از فرادادهٔ واقعی استخراج و بازخوانی شوند؛ ممیزی تاریخی کامل همچنان OPEN.
+
+
+## اصل دائمی زنجیرهٔ زمان — ACTIVE / LIVING / GOVERNING
+- سند مرجع مادر حاکم: PERMANENT-INTERACTION-ANCHORING-TIMESTAMP-GOVERNANCE-AND-CANONICAL-GRAPH-MASTER-REFERENCE — تصویب کاربر: یک بازهٔ زنجیره و یک لنگر نهایی UTC؛ حفظ زمان واقعی هر فایل و زمان اولیهٔ معتبر.
+- استاندارد حاکم: ASSISTANT-TIMESTAMP-ANCHOR-STANDARD، اصلاحیهٔ 1.5.0.
+- سند مرجع زمان: REPOSITORY-TIME-ANCHOR-SIMPLIFICATION-LIVING-REFERENCE، اصلاحیهٔ 1.2.0.
+- EVT-0079 — تأیید صریح کاربر و فعال‌سازی اصل در معماری.
