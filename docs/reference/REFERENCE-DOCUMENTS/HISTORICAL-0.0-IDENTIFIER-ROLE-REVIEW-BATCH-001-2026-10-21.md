@@ -106,3 +106,20 @@ The two source files were fetched from the current repository and their identifi
 
 ### Next batch
 Continue with the next unreviewed Stable ID group from H0GAF, prioritizing bilingual metadata, event/checkpoint intersections, and groups whose scanner output differs from the manifest summary. Preserve the full audit snapshot and inspect exact path/line evidence before making further decisions.
+
+
+## PEH finding — parser scope mismatch and corrective commit (2026-10-21)
+
+### Verified cause
+A source-code comparison of `scripts/audit_historical_0_0_graph.py` and `scripts/build_historical_graph_manifest.py` showed that the content scanner used narrower Stable ID / Production ID metadata patterns and did not separately count Reference ID. The manifest supports additional bilingual/Persian metadata labels and filters placeholder/non-token values. This explains why the pre-fix run reported 16/25 Stable/Production collision groups while the manifest reported 38/49; these were not comparable parser scopes and must not be treated as a single count.
+
+### Actual change
+- Commit: `8ed24fc75e7a8634c33e87eaf0744bcb8f091008`.
+- The content scanner was updated to share the manifest's identifier token normalization and broader metadata patterns, add Reference ID collision groups, and print every missing local link's source and target into the workflow log.
+- The post-fix run on commit `f9da1be59e5e14d721d308b2ec36be06b6276477` now reports matching counts: Stable ID 39 / 39, Production ID 50 / 50, Reference ID 7 / 7. The matching scopes are now aligned; the remaining 13 missing local links were emitted with exact source/target paths.
+
+### Missing-link triage
+The 13 links resolve to four canonical checkpoint records under root `checkpoints/0.0/`, but historical links expected the same names under `docs/checkpoints/0.0/`. Four compatibility bridges were added under `docs/checkpoints/0.0/` to preserve existing link targets and point to the canonical records. This preserves historical links without duplicating or renaming canonical checkpoint files. A fresh audit is required to prove the missing-link count is zero.
+
+### Acceptance gate
+Run the audit after the compatibility bridges and prior link corrections; read the workflow log; confirm zero missing local links and matching identifier counts; then continue the next semantic role-review batch. No historical files are deleted or renamed.
