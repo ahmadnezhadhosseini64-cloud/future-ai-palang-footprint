@@ -225,3 +225,7 @@
 
 ## Addendum v1.1.0 — identifier namespaces
 The Artifact/Occurrence model must keep `STABLE_ID`, `PRODUCTION_ID`, and legacy `REFERENCE_ID` as distinct typed namespaces. A generic `Reference ID` label must not be auto-normalized to Stable ID. Parent/lineage resolution may consult all namespaces, but UI collision counts and semantic review decisions must preserve the original type and label. The current repository parser has been updated to reflect this distinction; fresh regression audit remains required after this document change.
+
+
+## Addendum v1.2.0 — explicit physical-copy and mirror semantics
+The Artifact model must distinguish a logical artifact identity from its physical locations. Where two paths have the same SHA-256 and byte size, record a `CONTENT_IDENTICAL_TO` evidence relation; if their roles differ, record `MIRROR_OF` from the reference/provenance copy to the role-based operational candidate. Do not treat identical bytes alone as proof that the canonical path is final. Canonical promotion requires: (1) source/hash read-back, (2) path-role rationale, (3) inbound/outbound link audit, (4) Git-history check where available, (5) review of non-Markdown consumers, and (6) an explicit governance decision. Until all gates pass, retain both paths and set `canonical_status=PROVISIONAL`. Batch evidence: [H0PRRB3](./HISTORICAL-0.0-PRODUCTION-ID-ROLE-REVIEW-BATCH-003-2026-10-21.md), event [EVT-0054](../../architecture/BEHAVIOR-TRACE/EVT-0054-PRODUCTION-ID-ROLE-REVIEW-BATCH-003-2026-10-21.md).
