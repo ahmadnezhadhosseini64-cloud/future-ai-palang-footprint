@@ -127,3 +127,32 @@ def test_document_search_returns_no_false_match(tmp_path):
         result = client.get("/api/v1/search", params={"q": "nonexistent-token"}).json()
         assert result["count"] == 0
         assert result["items"] == []
+
+
+def test_document_survives_app_restart_with_same_hash_and_provenance(tmp_path):
+    db_path = tmp_path / "restart-haif.sqlite3"
+    with TestClient(create_app(db_path)) as first_client:
+        created = first_client.post(
+            "/api/v1/documents",
+            json={
+                "title": "Restart continuity proof",
+                "source_path": "docs/reference/master.md",
+                "version": "2.0.1",
+                "content": "The anchor must remain retrievable after restart.",
+                "source_origin": "restart test fixture",
+            },
+        )
+        assert created.status_code == 201
+        original = created.json()
+
+    with TestClient(create_app(db_path)) as restarted_client:
+        found = restarted_client.get("/api/v1/search", params={"q": "retrievable after restart"})
+        assert found.status_code == 200
+        result = found.json()
+        assert result["count"] == 1
+        item = result["items"][0]
+        assert item["document_id"] == original["document_id"]
+        assert item["content_sha256"] == original["content_sha256"]
+        assert item["source_path"] == "docs/reference/master.md"
+        assert item["version"] == "2.0.1"
+        assert item["source_origin"] == "restart test fixture"
