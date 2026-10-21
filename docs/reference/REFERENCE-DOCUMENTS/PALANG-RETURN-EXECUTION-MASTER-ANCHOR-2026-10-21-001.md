@@ -6,7 +6,10 @@
 - Project / پروژه: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
 - Owner / مالک: احمد پلنگ
 - Anchor date / تاریخ لنگر: 2026-10-21
-- Exact user-message timestamp / زمان دقیق پیام کاربر: UNKNOWN / UNVERIFIED — زمان دقیق پیام در شواهد موجود ثبت نشده و ساخته نمی‌شود.
+- User message time / زمان پیام کاربر: UNAVAILABLE / NOT CAPTURED — زمان دقیق پیام در فرادادهٔ قابل‌دسترسی ثبت نشده؛ جعل نمی‌شود.
+- Assistant/system operation time / زمان عملیات دستیار-سیستم برای ثبت قاعدهٔ زمان: 2026-10-21T13:40:14+03:30
+- UTC equivalent / معادل UTC: 2026-10-21T10:10:14Z
+- Time source / منبع زمان: ابزار معتبر زمان جاری در همین نوبت
 - Timezone / منطقهٔ زمانی پروژه: Asia/Tehran (+03:30)
 - Repository / مخزن مرجع: `ahmadnezhadhosseini64-cloud/future-ai-palang-footprint`
 - Canonical path / مسیر مرجع: `docs/reference/REFERENCE-DOCUMENTS/PALANG-RETURN-EXECUTION-MASTER-ANCHOR-2026-10-21-001.md`
@@ -129,3 +132,15 @@
 - لنگر مستقل بازگشت: [PALANG-0.0-RETURN-EXECUTION-MASTER-ANCHOR-2026-10-21-001](../../checkpoints/0.0/PALANG-0.0-RETURN-EXECUTION-MASTER-ANCHOR-2026-10-21-001.md).
 - رویداد ثبت: [EVT-0065 — Return Execution Master Anchor](../../architecture/BEHAVIOR-TRACE/EVT-0065-RETURN-EXECUTION-MASTER-ANCHOR-2026-10-21.md).
 - این دو پرونده به همین سند مادر وصل‌اند؛ لنگرهای پیشین مستقل و محفوظ باقی می‌مانند.
+
+
+## 10. استاندارد دائمی لنگر زمانی — اصلاح و تکمیل قاعدهٔ زمان
+
+درخواست تازهٔ کاربر روشن کرد که نبودن زمان دقیق پیام کاربر نباید به حذف زمان دستیار منجر شود. از این پس زمان عملیات دستیار/سیستم، با منبع معتبر، زمان اصلی لنگر عملیاتی است و باید به وقت تهران همراه معادل UTC ثبت شود. اگر زمان پیام کاربر نیز واقعاً در دسترس باشد، هر دو زمان و اختلاف قابل محاسبهٔ آن‌ها ثبت می‌شود.
+
+- استاندارد حاکم: [ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21-001](../../architecture/GOVERNANCE/ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21-001.md)
+- رویداد ثبت قاعده: [EVT-0066](../../architecture/BEHAVIOR-TRACE/EVT-0066-ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21.md)
+- زمان عملیات ثبت این اصلاحیه: `2026-10-21T13:40:14+03:30` (تهران) / `2026-10-21T10:10:14Z` (UTC). این زمان، زمان عملیات دستیار است، نه زمان ارسال پیام کاربر.
+- زمان بازخوانی اصلاحیه پس از نوشتن: در گام راستی‌آزمایی ثبت خواهد شد؛ زمان شروع عملیات جایگزین زمان بازخوانی نیست.
+
+این قاعده در تمام ثبت‌های بعدی، ورودی/خروجی‌های مهم، اسناد مرجع، نقاط ۰.۰ و رویدادها لازم‌الاجراست. ثبت‌های تاریخی فقط با اصلاحیهٔ زمان‌دار تکمیل می‌شوند؛ زمان گذشته جعل نمی‌شود.
