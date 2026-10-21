@@ -98,3 +98,12 @@
 - EVT-0051/EVT-0052: active-vs-correction role is now reflected in the inspected continuation pointers. The correction path remains preserved; no deletion or renumbering occurred.
 - The current latest edit set triggered another Living Architecture Audit, [39525191944](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39525191944), on commit `95b49a73fd69d828a3f8d6831c80bc0c0be35b22`; it was QUEUED at time of this note. Do not claim that it validates the subsequent register update; a final post-edit run/read-back is required.
 - Status: `SCOPED REFERENCE REVIEW=PARTIAL`; `FULL INBOUND/OUTBOUND AUDIT=OPEN`; `CANONICALIZATION=OPEN`.
+
+
+## Addendum v1.4.0 — bounded EVT-0019 / EVT-0026 reference review
+- Detailed review: [H0EVTRRB2](./HISTORICAL-EVT-0019-0026-REFERENCE-REVIEW-BATCH-002-2026-10-21-001.md); behavior event: [EVT-0055](../../architecture/BEHAVIOR-TRACE/EVT-0055-EVT-0019-0026-REFERENCE-REVIEW-BATCH-002-2026-10-21.md).
+- Four event files were re-read. EVT-0019 pair and EVT-0026 pair each represent distinct event identities; short-number collisions are retained, with no deletion, merge or renumbering.
+- Scoped GitHub code-search results: EVT-0019=12 results; EVT-0026=13; exact title query for EVT-0019 temporal acceptance=6; exact title query for EVT-0026 continuity=10. Counts are scoped search evidence, not exhaustive proof of every consumer.
+- The current 0.0 checkpoint link to EVT-0026 continuity has been made descriptively explicit while preserving its exact full-path target.
+- Identity decisions for these two groups: DECIDED. Scoped reference review: COMPLETED FOR THIS BATCH. Full inbound/outbound audit, Git history and non-Markdown consumers remain OPEN / NOT PROVEN.
+- A fresh post-edit audit and read-back are required before claiming structural acceptance for these edits.
