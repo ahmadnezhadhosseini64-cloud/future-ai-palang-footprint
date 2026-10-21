@@ -922,3 +922,9 @@ The queue index and the timestamp case must each be read back after this update.
 - Results: 521 source files, 1,245 local Markdown links, 0 missing links, 0 decode errors, 38 declared parent edges, 0 unresolved/ambiguous parent edges, 32 Stable ID groups, 45 Production ID groups, 7 Reference ID groups, 9 EVT number groups, 11 exact-content duplicate groups, 727 identifier occurrences.
 - Structural PASS only. The audit does not validate every semantic relationship or establish production readiness. The prototype test run [39536269368](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39536269368) passed 5 tests with 1 upstream warning and 0 failures.
 - This is a snapshot of the audited commit. After these evidence entries are written, a final structural run is required.
+
+
+## Return anchor continuation — 2026-10-21
+- **PALANG-RETURN-SEMANTIC-AUDIT-RESUME-2026-10-21-001 / PRSAR-2026-10-21-001** — ACTIVE / LIVING / OPEN-PARTIAL.
+- Anchor: [independent return 0.0](../../0.0/PALANG-RETURN-SEMANTIC-AUDIT-RESUME-2026-10-21-001.md); input event: [EVT-0062](../BEHAVIOR-TRACE/EVT-0062-RETURN-ANCHOR-AND-SEMANTIC-AUDIT-RESUME-2026-10-21.md).
+- Required next action: rerun Living Architecture Audit after parser correction, inspect the new report and JSON artifact, compare changed counts/findings, then continue evidence-based role adjudication. Do not close G-01 or claim all 493 files semantically reviewed until evidence is complete.
