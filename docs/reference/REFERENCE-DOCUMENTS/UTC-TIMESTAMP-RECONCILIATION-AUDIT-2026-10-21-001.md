@@ -32,8 +32,8 @@
 - Corresponding local rendering: `2026-10-21T19:01:00+03:30` (`Asia/Tehran`), derived from the supplied environment timestamp.
 - Independent event ID: `UTC-TIMESTAMP-RECONCILIATION-AUDIT-2026-10-21-001`.
 - Exact user-message timestamp: `UNKNOWN / UNVERIFIED`.
-- Repository registration time for this record: pending until the resulting commit metadata is fetched.
-- Read-back time: pending until this exact file is fetched again after write.
+- Initial repository registration commit: `9104f5be4079640e1b8aed7c59c8fcc700603573` at `2026-10-21T15:33:19Z` (GitHub commit metadata).
+- Read-back: exact file fetched again from GitHub after write; Stable ID, event link, path and full content were present. Exact tool read-back timestamp is not exposed, so it remains `UNKNOWN / UNVERIFIED`; read-back occurred after initial registration commit `2026-10-21T15:33:19Z`.
 
 ## 4. Required audit dimensions
 For every relevant document/event/anchor, record:
@@ -70,5 +70,5 @@ Acceptance requires a generated inventory/report with explicit denominators and 
 Run a full timestamp-specific scan against the complete repository checkout/tree, generate per-file findings for all timestamp-bearing and timestamp-required files, then reconcile failures and update this reference with actual results. Do not close this audit based on the initial search alone.
 
 ## 8. Destination status
-- Repository: reference/event registration attempted by this operation; VERIFIED only after successful post-write read-back.
+- Repository: initial reference and EVT-0072 were written; both were fetched back from GitHub and their expected IDs/links were found. This verifies repository read-back at key-content level, not byte-for-byte independent hash comparison. Later index/queue links were also written; final index/queue read-back is still pending.
 - Library / Buffer / Persistent Memory / Dropbox: no independent write/read-back evidence in this execution; UNVERIFIED.
