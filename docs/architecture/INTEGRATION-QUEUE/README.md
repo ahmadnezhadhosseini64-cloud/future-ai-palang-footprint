@@ -960,3 +960,10 @@ The queue index and the timestamp case must each be read back after this update.
 - سند مرجع: ../../reference/REFERENCE-DOCUMENTS/SEMANTIC-TIMESTAMP-AUDIT-AND-HOST-CAPTURE-RECOVERY-MASTER-REFERENCE-2026-10-21-001.md
 - ابزارها: scripts/audit_timestamp_pairs_semantic.py؛ scripts/host_adapter.py؛ scripts/host_adapter_github_worker.py؛ scripts/test_host_adapter.py
 - وضعیت: OPEN / PARTIAL؛ producer زنده، انتقال به GitHub و مقصدهای مستقل اثبات‌نشده‌اند.
+
+
+## EVT-0076 — اصلاح مبنای زمان ثبت
+- Event: ../BEHAVIOR-TRACE/EVT-0076-REPOSITORY-REGISTRATION-TIME-IS-CANONICAL-2026-10-21.md
+- Governing standard: ../GOVERNANCE/ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21-001.md (amendment 1.2.0)
+- Rule: repository last-change commit UTC is canonical; Tehran is derived from that instant. Embedded UTC-only or Tehran-only times are normalized; no timestamp is invented when labels/metadata are insufficient.
+- Status: code and policy linked; latest workflow audit must be read back to claim whole-repository success.
