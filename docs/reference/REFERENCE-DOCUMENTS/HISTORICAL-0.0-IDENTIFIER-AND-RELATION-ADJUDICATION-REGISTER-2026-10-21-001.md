@@ -142,3 +142,11 @@ Files whose purpose or role is not yet clear stay in the active review queue or 
 - Latest pass: [39518777369](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39518777369), audited commit `2892eac997b2ba93029d67ef0670601c0a1a46d6`, UTC `2026-10-21T00:02:08Z`.
 - Latest counts: 501 source files, 1,059 local links / 0 missing, 38 parent edges / 0 unresolved/ambiguous, 30 Stable ID groups, 43 Production ID groups, 7 Reference ID groups, 8 EVT groups, 11 duplicate groups, 697 ID occurrences.
 - The latest pass validates repository structure after the latest index/queue/anchor edits. The semantic decision boundary in this register remains unchanged: reviewed subsets have bounded decisions; remaining groups and edge semantics stay open.
+
+
+## Addendum v1.8.0 — third role-review batch (0.0 Vault Production IDs)
+- Detailed record: [H0PRRB3](./HISTORICAL-0.0-PRODUCTION-ID-ROLE-REVIEW-BATCH-003-2026-10-21.md); behavior event: [EVT-0054](../../architecture/BEHAVIOR-TRACE/EVT-0054-PRODUCTION-ID-ROLE-REVIEW-BATCH-003-2026-10-21.md).
+- Five Production ID groups were source-read and hash-verified: `0.0V-2026-09-13-001`, `0.0V-ARCH-2026-09-13-001`, `0.0V-INIT-2026-09-13-001`, `0.0V-REG-2026-09-13-001`, and `0.0V-REGREF-2026-09-13-001`.
+- In each group the two physical paths have identical SHA-256 and byte size. The operational/governance/architecture/checkpoint/registry path is the role-based primary candidate; the Reference Documents path is classified `MIRROR_OF`. No files were deleted or merged.
+- These five roles are DECIDED WITH EVIDENCE; final canonical promotion remains PROVISIONAL because the audited snapshot showed no inbound/outbound local links for the ten paths, and external/non-Markdown consumers plus full Git history have not been exhaustively checked.
+- Counts in the evidence snapshot are historical to run [39518895224](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39518895224): 501 source files, 1,062 local links / 0 missing, 30 Stable ID groups, 43 Production ID groups, 7 Reference ID groups, 8 EVT groups, 11 exact-content duplicate groups. A fresh audit is required after this batch and EVT-0054 were committed.
