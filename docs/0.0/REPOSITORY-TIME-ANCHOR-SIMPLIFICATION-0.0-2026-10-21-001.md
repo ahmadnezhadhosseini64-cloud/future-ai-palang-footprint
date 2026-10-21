@@ -1,0 +1,29 @@
+# لنگر مستقل ۰.۰ — اصلاح قاعدهٔ زمان ثبت مخزن
+
+- Stable ID / شناسهٔ پایدار: `REPOSITORY-TIME-ANCHOR-SIMPLIFICATION-0.0-2026-10-21-001`
+- Production ID / شناسهٔ تولید: `RTAS0-2026-10-21-001`
+- Version / نسخه: 1.0.0
+- Project: Future AI / Palang Footprint / HAIF
+- Owner: احمد پلنگ
+- Parent reference: [سند مرجع ساده‌سازی زمان](../reference/REFERENCE-DOCUMENTS/REPOSITORY-TIME-ANCHOR-SIMPLIFICATION-LIVING-REFERENCE-2026-10-21-001.md)
+- Event: [EVT-0077](../architecture/BEHAVIOR-TRACE/EVT-0077-REPOSITORY-TIME-SIMPLIFICATION-2026-10-21.md)
+- Status: OPEN / RECOVERY ANCHOR; repository read-back pending.
+
+## Resume point / نقطهٔ ادامه
+ادامه از این تصمیم قطعی است: **زمان ثبت در مخزن معیار زمانی ثبت‌هاست؛ UTC مرجع اصلی است و معادل تهران از همان UTC محاسبه می‌شود.** زمان‌های دیگر در صورت داشتن شاهد و معنای مستقل حفظ می‌شوند، اما معیارهای موازی نمی‌سازند و برای همهٔ رکوردها اجباری نیستند.
+
+## Why / دلیل
+ثبت چندین زمان به‌عنوان معیارهای هم‌سطح، معماری را بی‌جهت پیچیده کرده و هنگام بستن شکاف‌ها ابهام ساخته است. راه‌حل، حذف تاریخچه نیست؛ تعیین یک معیار ساده برای ثبت مخزن و نگه‌داشتن زمان‌های دیگر فقط در نقش شواهد زمینه‌ای است.
+
+## Next actions / گام‌های بعد
+1. سند مرجع و رویداد را از مخزن بازخوانی و تطبیق بده.
+2. استاندارد حاکم و شاخص‌ها را با همین قاعده هم‌راستا کن؛ تاریخچه را حذف نکن.
+3. ممیزی سراسری جفت‌های UTC/تهران را با شواهد خروجی اجرا و خطاهای واقعی را جداگانه اصلاح کن.
+4. زمان commit واقعی این لنگر را از GitHub بگیر؛ UTC اول و تهران محاسبه‌شده دوم.
+5. وضعیت Repository، Buffer و Persistent Memory را جدا نگه دار؛ موفقیت یک مقصد، اثبات مقصد دیگر نیست.
+
+## Time integrity / سلامت زمان
+- Contextual interaction time available: `2026-10-21T17:22:00Z` UTC = `2026-10-21T20:52:00+03:30` Asia/Tehran.
+- This is not the repository registration timestamp.
+- Exact user-message timestamp: `UNAVAILABLE / NOT CAPTURED`.
+- Repository registration UTC/Tehran: fill only from actual commit metadata after write; never infer it from the contextual time.
