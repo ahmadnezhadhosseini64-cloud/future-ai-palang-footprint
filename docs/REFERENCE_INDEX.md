@@ -389,3 +389,6 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - [PALANG-RETURN-SEMANTIC-AUDIT-RESUME-2026-10-21-001](0.0/PALANG-RETURN-SEMANTIC-AUDIT-RESUME-2026-10-21-001.md) — independent ACTIVE / LIVING / OPEN-PARTIAL return anchor.
 - [EVT-0062](architecture/BEHAVIOR-TRACE/EVT-0062-RETURN-ANCHOR-AND-SEMANTIC-AUDIT-RESUME-2026-10-21.md) — user return input and continuation decision.
 - Next gate: rerun audit after parser correction; inspect text/JSON artifacts; continue evidence-based semantic review. No full semantic closure is claimed.
+
+
+- **H0AR39578396043:** [شاهد ممیزی پس از بازگشت — run 39578396043](reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-AUDIT-RUN-39578396043-2026-10-21.md) — workflow SUCCESS؛ 13 پیوند محلی مفقود و تطبیق معنایی همچنان OPEN.
