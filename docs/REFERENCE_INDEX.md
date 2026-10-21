@@ -325,3 +325,9 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - [H0EVTRRB3 — بررسی ارجاع‌های EVT-0029 و EVT-0030](reference/REFERENCE-DOCUMENTS/HISTORICAL-EVT-0029-0030-REFERENCE-REVIEW-BATCH-003-2026-10-21-001.md).
 - [EVT-0056 — رویداد اجرای دستهٔ سوم](architecture/BEHAVIOR-TRACE/EVT-0056-EVT-0029-0030-REFERENCE-REVIEW-BATCH-003-2026-10-21.md).
 - چهار پرونده بازخوانی شد؛ دو برچسب مبهم شناسایی شد؛ مقصدهای پیوند کامل حفظ می‌شوند. ممیزی ساختاری پس از اصلاح‌ها در انتظار است و ممیزی کامل ورودی/خروجی همچنان باز است.
+
+
+## Legacy EVT display-label review — batch 004
+- [H0EVTRRB4](reference/REFERENCE-DOCUMENTS/HISTORICAL-EVT-LEGACY-DISPLAY-LABEL-REVIEW-BATCH-004-2026-10-21-001.md): اصلاح برچسب‌های مبهم در دفتر رفتار، دفتر ۰.۰، نمایهٔ مرجع و صف معماری.
+- [EVT-0057](architecture/BEHAVIOR-TRACE/EVT-0057-LEGACY-EVT-DISPLAY-LABEL-REVIEW-BATCH-004-2026-10-21.md): ثبت رویداد اجرای دسته.
+- وضعیت: برچسب‌ها نوشته شده‌اند؛ بازخوانی مستقل و ممیزی پس از تغییرها در انتظار است. معنای کامل همهٔ روابط هنوز باز است.
