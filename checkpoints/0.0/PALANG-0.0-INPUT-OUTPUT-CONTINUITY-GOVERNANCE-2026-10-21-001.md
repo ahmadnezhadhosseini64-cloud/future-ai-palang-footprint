@@ -8,7 +8,7 @@
 - **Timezone / منطقهٔ زمانی:** Asia/Tehran (+03:30)
 - **Owner / مالک:** احمد پلنگ (Ahmad Nezhadhosseini)
 - **Project / پروژه:** Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- **Status / وضعیت:** ACTIVE / LIVING / OPEN FOR GROWTH / REGISTERED AND READ-BACK PENDING
+- **Status / وضعیت:** ACTIVE / LIVING / OPEN FOR GROWTH / VERIFIED IN REPOSITORY
 - **Repository path / مسیر مخزن:** `checkpoints/0.0/PALANG-0.0-INPUT-OUTPUT-CONTINUITY-GOVERNANCE-2026-10-21-001.md`
 - **Parent 0.0 / لنگر مادر:** `PALANG-0.0-REPOSITORY-MODEL-INITIAL-RESUME-2026-10-21-001`
 - **Related master reference / سند مرجع مادر مرتبط:** `PALANG-INITIAL-AI-MODEL-0.0-RETURN-MASTER-REFERENCE-2026-10-21-001`
@@ -64,3 +64,10 @@ PRESERVE → IDENTIFY → CLASSIFY → PROVENANCE → STABLE/PRODUCTION ID + VER
 
 ## 8. معیار بازیابی
 برای ازسرگیری، این شناسه را جست‌وجو کن: `PALANG-0.0-INPUT-OUTPUT-CONTINUITY-GOVERNANCE-2026-10-21-001`. ابتدا این پرونده، سپس لنگر مادر و سند مرجع زنده را بازخوانی کن؛ تاریخچه و لنگرهای مستقل را حفظ کن و از آخرین اقدام تأییدشده ادامه بده.
+
+
+## 9. اثبات بازخوانی و تطبیق مخزن
+- زمان ثبت/بازخوانی: 2026-10-21T11:01:21+03:30 (Asia/Tehran؛ زمان ثبت این عملیات).
+- فایل پس از ایجاد از مخزن دوباره خوانده شد؛ شناسهٔ پایدار، شناسهٔ تولید، نسخه، زمان ثبت، قاعدهٔ ثبت کامل، پیوند لنگر مادر، وضعیت مقصدها و اقدام‌های باز در محتوای بازخوانی‌شده حاضر بودند.
+- سپس لنگر مادر، دفتر ۰.۰ و سند مرجع زنده از مخزن بازخوانی شدند؛ هر سه شامل شناسهٔ همین لنگر فرزند و زمان ثبت بودند.
+- نتیجه: MATCH / تطبیق برقرار؛ VERIFIED IN REPOSITORY برای این پرونده و پیوندهای ثبت‌شده. این اثبات فقط مخزن را پوشش می‌دهد و آزمون تازهٔ نمونه/ممیزی ساختاری یا ذخیرهٔ خارجی را تأیید نمی‌کند.
