@@ -397,3 +397,9 @@ This document can be considered repository-integrated only after the file, index
 - [Living Architecture Audit 39527808318](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39527808318) passed on commit `6d1c0892d723f86a49d7a4106eae9b3fed64a2ea`, runner UTC `2026-10-21T01:31:28Z`; artifact `12313029823`, digest `sha256:c306f91b899dd9db0ab7eb3279c6ca1c52ffe959c0eadeaa062a5e5aa6dbcfc4`.
 - 1,156 local links / 0 missing; 38 parent edges / 0 unresolved / 0 ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 duplicate groups; 713 identifier occurrences; 0 decode errors.
 - Legacy short labels were clarified in the audited snapshot. Semantic graph and full EVT inbound/outbound review remain OPEN / PARTIAL. A final audit after this evidence append is required.
+
+
+## Addendum — audit evidence for legacy EVT label batch 004
+- [Living Architecture Audit 39527948241](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39527948241) passed on commit `31d0d4e8575077ca073033d2ad4586b83765e317`, UTC `2026-10-21T01:33:00Z`; artifact `12313444944`, digest `sha256:09ec77219ab2506f618134b0d777cc9121fc84d971d0f6f70210d8309714dc4d`.
+- Snapshot: 1,160 local links / 0 missing; 38 parent edges / 0 unresolved / 0 ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 duplicate groups; 713 identifier occurrences; 0 decode errors.
+- Structural PASS is not semantic closure. This run predates the evidence append; final post-edit audit is required.
