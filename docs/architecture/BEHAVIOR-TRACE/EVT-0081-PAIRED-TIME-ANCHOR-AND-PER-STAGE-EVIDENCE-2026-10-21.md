@@ -78,3 +78,9 @@ canonical_time_standard: "UTC first; Asia/Tehran equivalent second"
 - زمان واقعی پیام کاربر: `UNAVAILABLE / NOT CAPTURED` مگر آنکه شاهد معتبر دیگری پیدا شود.
 - لنگر ثبت مخزن UTC و معادل تهران: پس از ایجاد سند، از فرادادهٔ واقعی commit استخراج و در نسخهٔ تکمیلی ثبت خواهد شد.
 - وضعیت: ACTIVE / LIVING / GOVERNING / OPEN FOR EXECUTION.
+
+## لنگر ثبت مخزن — تکمیل بر پایهٔ فرادادهٔ واقعی
+- Repository registration anchor UTC: `2026-10-21T19:28:55Z`.
+- معادل Asia/Tehran: `2026-10-21T22:58:55+03:30`.
+- Commit: `707d86e7a8774ed33d16902f153bafee9c3242c8`.
+- زمان واقعی پیام کاربر همچنان `UNAVAILABLE / NOT CAPTURED` است؛ زمان بالا فقط لنگر ثبت مخزن است.
