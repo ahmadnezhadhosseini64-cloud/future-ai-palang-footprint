@@ -667,3 +667,9 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - زمان مرجع سامانه: `2026-10-21T13:05:00+03:30`؛ زمان دقیق خود پیام کاربر تأیید نشده است.
 - وضعیت: ACTIVE / LIVING / OPEN-PARTIAL؛ لنگر مستقل تازه است و لنگرهای قبلی را جایگزین نمی‌کند.
 - اقدام بعدی: اجرای ممیزی پس از اصلاح parser، دریافت و بازخوانی خروجی‌های JSON/متن، سپس ادامهٔ مرور شاهددار شناسه‌ها و ارجاع‌ها.
+
+
+## لنگر مستقل خروجی و چکش شواهد — 2026-10-21
+- [PALANG-OUTPUT-PEH-AUDIT-RECONCILIATION-2026-10-21-001](./PALANG-OUTPUT-PEH-AUDIT-RECONCILIATION-2026-10-21-001.md) — لنگر مستقل خروجی؛ ACTIVE / LIVING / OPEN-PARTIAL.
+- [EVT-0063](../architecture/BEHAVIOR-TRACE/EVT-0063-OUTPUT-ANCHOR-PEH-AUDIT-PARSER-RECONCILIATION-2026-10-21.md).
+- اصلاح parser در مخزن ثبت شده؛ نتیجهٔ workflow و رفع پیوندهای مفقود تا ممیزی تازه باید تأیید شوند.
