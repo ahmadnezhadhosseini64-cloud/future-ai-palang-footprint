@@ -196,3 +196,12 @@ The current snapshot pointer is [H0GMS v1.3.0](./HISTORICAL-0.0-GRAPH-MANIFEST-S
 
 ## 15. Latest full-tree verification
 The current snapshot is [H0GMS v1.4.0](./HISTORICAL-0.0-GRAPH-MANIFEST-SNAPSHOT-2026-10-21-001.md), based on run 39510581209. It scanned 493 source files and checked 942 local Markdown links with zero missing targets; 38 declared parent edges had zero unresolved and zero ambiguous edges. The 11 exact-content duplicate groups have non-destructive candidate relationships. Expanded repeated-ID groups and EVT-number collisions remain open for semantic role adjudication.
+
+
+## 16. Latest post-fix verification — 2026-10-21
+
+- Workflow: [Living Architecture Audit run 39579528307](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39579528307), conclusion SUCCESS.
+- Audited commit: `959717dcdd8a78a4eb8ca436b1c96b0a53142971`; artifact ID `12336251136`; SHA-256 `ee853ca699916f3e4153e7cf754f039b2afc0be38759cf7a1d28660bf2207e98`.
+- Current snapshot: 543 source files; 1,336 local Markdown edges; 0 missing local links; 0 decode errors; 39 Stable ID groups; 50 Production ID groups; 7 Reference ID groups; 10 EVT-number groups; 11 exact-content duplicate groups; 38 declared parent edges; 0 unresolved/ambiguous parent edges; 790 identifier occurrences.
+- The two audit scripts now agree on Stable ID / Production ID / Reference ID group counts. The 13 prior missing-link findings were resolved by correcting root-relative paths and adding four compatibility bridges to canonical checkpoint files; no canonical checkpoint was deleted or renamed.
+- Scope boundary: structural/link gate PASS for the audited commit. The 39/50 identifier groups, 10 EVT groups, 11 exact-content duplicate groups and proposed alias edges remain subject to semantic role adjudication; this snapshot is not full semantic closure.
