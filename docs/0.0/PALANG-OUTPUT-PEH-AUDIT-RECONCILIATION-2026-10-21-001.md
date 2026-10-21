@@ -90,3 +90,11 @@ PRESERVE → IDENTIFY → VERIFY → RECONCILE → REGISTER → READ-BACK → MA
 - Fresh counts: 544 source files; 1,351 local Markdown edges; 0 missing links; 0 decode errors; 39 Stable ID groups; 50 Production ID groups; 7 Reference ID groups; 10 EVT number groups; 11 exact-content duplicate groups; 38 declared parent edges; 0 unresolved/ambiguous parent edges; 792 identifier occurrences.
 - The parser mismatch is closed for this snapshot and the missing-link count is zero. The repeated identifier groups remain candidates for semantic role adjudication, not automatically true identity conflicts.
 - Model direction is confirmed: continue from the existing HAIF initial-model master and `prototype/haif-v0`. Document ingest/retrieval is tested, but keyword-based only. Next bounded gate: restart persistence and source-backed retrieval; then semantic search design only if the test results justify it.
+
+
+## 10. Restart persistence verified in HAIF v0
+
+- The existing model prototype now ingests a document with source path, version, origin and SHA-256; retrieval returns provenance; a fresh app instance using the same SQLite file retrieves the same document and hash after restart.
+- Test run: [39580527915](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39580527915) — 8 passed, 1 warning, 0 failed.
+- Structural audit: [39580528257](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39580528257) — 0 missing links, 0 decode errors, counts aligned at 39/50/7.
+- This closes the local restart test for the prototype. It does not close semantic/vector retrieval, automated repository ingestion, production deployment or external persistence.
