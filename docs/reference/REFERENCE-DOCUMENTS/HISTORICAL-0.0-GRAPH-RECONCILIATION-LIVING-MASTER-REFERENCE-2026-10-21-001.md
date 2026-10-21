@@ -279,3 +279,10 @@ This document can be considered repository-integrated only after the file, index
 - 501 source files, 1,050 local Markdown edges / 0 missing, 38 parent edges / 0 unresolved/ambiguous, 30 Stable ID groups, 43 Production ID groups, 7 Reference ID groups, 8 EVT groups, 11 exact-content duplicate groups, 697 identifier occurrences, 0 decode errors.
 - Current governing records: [H0IRAR](./HISTORICAL-0.0-IDENTIFIER-AND-RELATION-ADJUDICATION-REGISTER-2026-10-21-001.md), [H0IRRB2](./HISTORICAL-0.0-IDENTIFIER-ROLE-REVIEW-BATCH-002-2026-10-21.md), [H0SRQS](./HISTORICAL-0.0-SEMANTIC-REVIEW-QUEUE-SNAPSHOT-2026-10-21-001.md), [FAPF-IRA](./FUTURE-AI-PALANG-FOOTPRINT-IMPLEMENTABLE-REFERENCE-ARCHITECTURE-2026-10-21-001.md).
 - Structural pass is verified for this audited commit. Full semantic proof across all 501 source files and 1,050 links is not claimed; remaining groups/edges, all Production ID groups and final canonical promotion remain active work.
+
+
+## Addendum v2.7.0 — current reference-record audit
+- Latest successful run: [39518777369](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39518777369), commit `2892eac997b2ba93029d67ef0670601c0a1a46d6`, runner UTC `2026-10-21T00:02:08Z`.
+- Current counts: 501 source files; 1,059 local Markdown links / 0 missing; 38 parent edges / 0 unresolved/ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 exact-content duplicate groups; 697 identifier occurrences; 0 decode errors.
+- The latest audit confirms structural integrity after the current index/queue/anchor updates. The implementation blueprint is [FAPF-IRA](./FUTURE-AI-PALANG-FOOTPRINT-IMPLEMENTABLE-REFERENCE-ARCHITECTURE-2026-10-21-001.md); semantic accountability remains [H0IRAR](./HISTORICAL-0.0-IDENTIFIER-AND-RELATION-ADJUDICATION-REGISTER-2026-10-21-001.md).
+- This is not full semantic closure: 23 Stable ID groups and 43 Production ID groups remain for complete review, the meaning of 1,059 links is not individually proven, and 11 duplicate groups have not been promoted to final canonical aliases.
