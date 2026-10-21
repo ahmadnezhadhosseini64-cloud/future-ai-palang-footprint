@@ -94,3 +94,9 @@
 ## Change log
 
 - v1.0.0 — بررسی مبتنی بر SHA-256 و read-back برای پنج گروه Production ID از 0.0 Vault؛ حفظ غیرمخرب مسیرها و تفکیک نقش اصلی از آینهٔ مرجع.
+
+
+## Addendum v1.1.0 — repository read-back after registration
+- Audit [39520630341](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39520630341) passed on commit `9419d0ced3ae50632d0857eb030516534f3b4312` at `2026-10-21T00:19:43Z` UTC.
+- The audit scanned 503 source files; 1,080 local links / 0 missing; 38 parent edges / 0 unresolved/ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 duplicate groups; 701 identifier occurrences; 0 decode errors.
+- This proves the batch and EVT-0054 are present in a structurally audited commit. It does not make the five canonical candidates final or close all semantic links.
