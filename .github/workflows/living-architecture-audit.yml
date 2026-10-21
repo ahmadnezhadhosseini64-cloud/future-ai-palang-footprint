@@ -23,6 +23,8 @@ jobs:
     steps:
       - name: Checkout canonical repository
         uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
 
       - name: Enforce automatic interaction registration contract links
         shell: bash
