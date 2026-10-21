@@ -44,3 +44,7 @@
 - پیوند دادن این بسته در نمایهٔ مرجع، صف یکپارچه‌سازی معماری و سند مادر گراف تاریخی.
 - اجرای ممیزی تازه و ثبت commit، زمان UTC، تعداد پیوندها و نتیجهٔ واقعی.
 - ادامهٔ توسعه از مرحلهٔ 1 در سند مادر؛ موارد تاریخی نامطمئن در صف خود باقی بمانند.
+
+
+## Addendum — first clean post-link-fix audit
+The initial post-write audit had reported seven missing local links. The new-folder link targets were URL-encoded and the follow-up audit [39535632242](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39535632242) completed successfully on commit 90c92c675c64dc2dccb41d0dcb371e7697aa8258 at runner UTC 2026-10-21T02:54:54Z. It reported 515 source files, 1,219 local Markdown links, zero missing links, zero decode errors, 38 declared parent edges with zero unresolved/ambiguous edges, 32 Stable ID groups, 45 Production ID groups, 7 Reference ID groups, 9 EVT groups, 11 exact-content duplicate groups and 725 identifier occurrences. Artifact ID 12317153412; ZIP SHA-256 96a676de4524452b3bf50eb8353c2e0bc5f29d468134600595527cd3ad1fa722. This is a clean structural snapshot, not semantic closure or proof that the application has been built. A final audit is required after this evidence addendum and related navigation changes.
