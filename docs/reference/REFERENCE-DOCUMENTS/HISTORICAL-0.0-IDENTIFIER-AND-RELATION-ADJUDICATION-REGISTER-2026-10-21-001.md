@@ -156,3 +156,10 @@ Files whose purpose or role is not yet clear stay in the active review queue or 
 - Audit: [39520630341](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39520630341), commit `9419d0ced3ae50632d0857eb030516534f3b4312`, UTC `2026-10-21T00:19:43Z`.
 - Counts: 503 source files; 1,080 local links / 0 missing; 38 parent edges / 0 unresolved or ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 duplicate groups; 701 identifier occurrences; 0 decode errors.
 - H0PRRB3 reviewed five Production ID groups by direct read-back and identical SHA-256. Their role decisions are bounded; canonical promotion remains provisional. Remaining semantic relations, EVT reference audits, and duplicate canonicalization remain open.
+
+
+## Addendum v2.0.0 — latest audited read-back after batch 003
+- [Run 39521051751](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39521051751) passed on commit `755774e4fc0a38255dee6b256197b42f78850379` at `2026-10-21T00:23:49Z` UTC.
+- Snapshot: 503 source files; 1,084 local links / 0 missing; 38 parent edges / 0 unresolved or ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 exact-content duplicate groups; 701 identifier occurrences; 0 decode errors.
+- Batch 003's five Production ID role decisions are supported by identical SHA-256 and direct read-back; the primary paths remain provisional until Git history and non-Markdown consumers are checked. This does not close all 43 Production ID groups, all 30 Stable ID groups, or the semantic meaning of every edge.
+- Full EVT inbound/outbound reference audit and final canonical decisions for 11 duplicate groups remain OPEN.
