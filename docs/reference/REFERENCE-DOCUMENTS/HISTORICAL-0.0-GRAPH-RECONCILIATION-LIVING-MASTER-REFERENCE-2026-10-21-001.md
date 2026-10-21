@@ -418,3 +418,11 @@ The project now has an initial product-facing baseline: [HAIF-INITIAL-PRODUCT-AR
 Latest structural evidence for the linked baseline: Living Architecture Audit [39533528396](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39533528396), audited commit `c113a5fa7ef59d0d1166ccce955264b88256cdec`, runner UTC `2026-10-21T02:32:03Z`, artifact ID `12316291893`, ZIP SHA-256 `71da5dcf7f4f6656cefd03e094430f51db524a402b647451d36c15f4d1f6b95a`. Results: 510 source files, 1,167 local Markdown edges, 0 missing links, 0 decode errors, 38 declared parent edges, 0 unresolved/ambiguous parent edges; 30 Stable ID, 43 Production ID, 7 Reference ID, 8 EVT and 11 exact-content duplicate groups. Structural PASS does not resolve the semantic review groups and does not mean the app is built/deployed.
 
 Decision: begin the first executable prototype from the initial product baseline. Continue historical ID/EVT and duplicate review in parallel as a non-blocking backlog unless a specific item demonstrably blocks a required MVP capability. Repository scope only; Buffer, Persistent Memory, Library and Dropbox are unchanged and unverified in this phase.
+
+
+## Addendum — central initial AI model package (2026-10-21)
+- New package: [HAIF-IAM-MR](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md); folder entry: [مدل اولیه AI](../../architecture/مدل%20اولیه%20AI/README.md).
+- Open work queue: [HAIF-IM-NSOG](../../architecture/مدل%20اولیه%20AI/صف%20گام‌های%20بعدی%20و%20موارد%20باز.md).
+- Creation event: [EVT-0058](../../architecture/BEHAVIOR-TRACE/EVT-0058-INITIAL-AI-MODEL-PACKAGE-CREATION-2026-10-21.md).
+- This package centralizes the product-development baseline and does not close the historical graph. Structural and semantic states remain separate; existing historical files and unresolved relationships are preserved.
+- The last pre-package audit is not evidence for this new package. A fresh post-commit audit and read-back must be recorded before claiming structural acceptance.
