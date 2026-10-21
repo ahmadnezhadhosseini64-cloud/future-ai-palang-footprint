@@ -47,6 +47,14 @@ class EventCreate(BaseModel):
     user_message_time: str | None = None
 
 
+class DocumentCreate(BaseModel):
+    title: str = Field(min_length=1, max_length=500)
+    source_path: str = Field(min_length=1, max_length=2000)
+    version: str = Field(default="1.0.0", min_length=1, max_length=80)
+    content: str = Field(min_length=1, max_length=200000)
+    source_origin: str = Field(default="repository document", min_length=1, max_length=500)
+
+
 def create_app(db_path: str | Path | None = None) -> FastAPI:
     configured_path = Path(
         db_path or os.environ.get("HAIF_DB_PATH", Path(__file__).parent / "data" / "haif.sqlite3")
@@ -79,6 +87,16 @@ def create_app(db_path: str | Path | None = None) -> FastAPI:
                     summary TEXT NOT NULL,
                     source_origin TEXT NOT NULL,
                     user_message_time TEXT NULL,
+                    created_at_utc TEXT NOT NULL,
+                    content_sha256 TEXT NOT NULL
+                );
+                CREATE TABLE IF NOT EXISTS documents (
+                    document_id TEXT PRIMARY KEY,
+                    title TEXT NOT NULL,
+                    source_path TEXT NOT NULL,
+                    version TEXT NOT NULL,
+                    content TEXT NOT NULL,
+                    source_origin TEXT NOT NULL,
                     created_at_utc TEXT NOT NULL,
                     content_sha256 TEXT NOT NULL
                 );
@@ -269,6 +287,67 @@ def create_app(db_path: str | Path | None = None) -> FastAPI:
             "content_sha256": row["content_sha256"],
             "status": "STORED_READABLE",
         }
+
+    @app.post("/api/v1/documents", status_code=status.HTTP_201_CREATED)
+    def ingest_document(payload: DocumentCreate) -> dict[str, Any]:
+        document_id = str(uuid.uuid4())
+        created_at = utc_now()
+        stored = {
+            "document_id": document_id,
+            "title": payload.title,
+            "source_path": payload.source_path,
+            "version": payload.version,
+            "content": payload.content,
+            "source_origin": payload.source_origin,
+            "created_at_utc": created_at,
+        }
+        digest = sha256_json(stored)
+        with closing(connect()) as conn:
+            conn.execute(
+                """INSERT INTO documents
+                   (document_id, title, source_path, version, content, source_origin,
+                    created_at_utc, content_sha256)
+                   VALUES (?, ?, ?, ?, ?, ?, ?, ?)""",
+                (document_id, payload.title, payload.source_path, payload.version,
+                 payload.content, payload.source_origin, created_at, digest),
+            )
+            conn.commit()
+            row = conn.execute("SELECT * FROM documents WHERE document_id = ?", (document_id,)).fetchone()
+        if row is None:
+            raise HTTPException(status_code=500, detail="READ_BACK_FAILED")
+        actual = {
+            "document_id": row["document_id"], "title": row["title"],
+            "source_path": row["source_path"], "version": row["version"],
+            "content": row["content"], "source_origin": row["source_origin"],
+            "created_at_utc": row["created_at_utc"],
+        }
+        if sha256_json(actual) != row["content_sha256"] or row["content_sha256"] != digest:
+            raise HTTPException(status_code=500, detail="READ_BACK_HASH_MISMATCH")
+        return {**actual, "content_sha256": digest, "status": "WRITE_READBACK_VERIFIED"}
+
+    @app.get("/api/v1/search")
+    def search_documents(q: str = Field(min_length=1, max_length=200)) -> dict[str, Any]:
+        term = q.strip().casefold()
+        if not term:
+            raise HTTPException(status_code=422, detail="SEARCH_QUERY_REQUIRED")
+        with closing(connect()) as conn:
+            rows = conn.execute(
+                """SELECT document_id, title, source_path, version, source_origin,
+                          created_at_utc, content_sha256, content
+                   FROM documents ORDER BY created_at_utc DESC, document_id ASC"""
+            ).fetchall()
+        matches = []
+        for row in rows:
+            if term in row["title"].casefold() or term in row["content"].casefold():
+                matches.append({
+                    "document_id": row["document_id"], "title": row["title"],
+                    "source_path": row["source_path"], "version": row["version"],
+                    "source_origin": row["source_origin"], "created_at_utc": row["created_at_utc"],
+                    "content_sha256": row["content_sha256"],
+                    "excerpt": row["content"][:500], "retrieval_method": "CASEFOLD_SUBSTRING",
+                })
+        return {"query": q, "items": matches, "count": len(matches),
+                "status": "RETRIEVED_WITH_PROVENANCE"}
 
     return app
 
