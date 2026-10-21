@@ -237,3 +237,14 @@
 - زمان UTC لاگ آزمون: `2026-10-21T13:59:36.4006482Z`; معادل تهران: `2026-10-21T17:29:36.4006482+03:30`. این timestamp متعلق به لاگ آزمون است، نه زمان ورودی کاربر یا نوشتن لنگر.
 - این نتیجه ورود شش سند allowlist به API آزمایشی، بازخوانی/hash، جست‌وجوی منشأدار و بازیابی پس از restart با همان SQLite را پوشش می‌دهد. استقرار تولیدی و مقصدهای بیرونی را اثبات نمی‌کند.
 - خطاهای آزمون و اصلاح‌های قبلی حفظ شده‌اند؛ گام بعدی، آزمون تزریق شکست، داوری معنایی موردبه‌مورد و ادامهٔ Dropbox به‌عنوان شاخهٔ مستقل است.
+
+
+## ثبت پیگیری جدید — EVT-0071 / چکش آزمون ورود شش سند
+
+- زمان ثبت UTC: 2026-10-21T14:05:14Z; معادل تهران: 2026-10-21T17:35:14+03:30. این زمان از ایجاد GitHub issue شمارهٔ 19 گرفته شده و زمان پیام کاربر نیست.
+- لنگر مستقل: [PALANG-PEH-ANCHOR-HAIF-INGESTION-RESTART-TRACK-2026-10-21-003](../../0.0/PALANG-PEH-ANCHOR-HAIF-INGESTION-RESTART-TRACK-2026-10-21-003.md)
+- رویداد مستقل: [EVT-0071](../../architecture/BEHAVIOR-TRACE/EVT-0071-PEH-HAIF-INGESTION-RESTART-TRACK-2026-10-21.md)
+- پیگیری پایدار: [GitHub issue #19](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/19)
+- شاهد تازه‌خوانده‌شده: [CI run 39612814614](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39612814614) — job موفق؛ 11 passed, 1 warning, 0 failed.
+- نتیجهٔ چکش: آزمون CI موفق است، اما اثبات کامل ورود شش سند و بازیابی هر شش پس از restart باید از assertionها و لاگ تأیید شود. failure injection، ممیزی ساختاری تازه و داوری معنایی گراف باز هستند.
+- مقصدها: Repository تحت ثبت/بازخوانی؛ Buffer، Persistent Memory، Library و Dropbox تأییدنشده.
