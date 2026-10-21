@@ -113,3 +113,9 @@
 - Run [39612477894](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39612477894) failed: 1 failed, 10 passed, 1 warning. The chosen production ID was also present in two ingested documents; count was 2 instead of 1.
 - The search endpoint searches title/content (not source_path), confirmed by rereading `prototype/haif-v0/app.py`. The test query now uses the distinctive phrase `Storage proof / اثبات ذخیره‌سازی:` found in the allowlisted master reference, commit `6ff6f8377706dc5d8f0093cab577b9ace5266dbc`.
 - The corrected test run must still be observed; integration acceptance remains OPEN until its result is successful.
+
+
+### Fourth integration-test result and correction
+- Run [39612583277](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39612583277) failed: the query was changed to a distinctive content phrase, but a broad replacement also altered the expected source-path string. The search matched; the path assertion failed.
+- The expected path was restored to `docs/reference/REFERENCE-DOCUMENTS/PALANG-RETURN-EXECUTION-MASTER-ANCHOR-2026-10-21-001.md` while keeping the unique content query. Correction commit: `88faa6b3436840743417857d23248405492499f7`.
+- Rerun [39612688928](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39612688928) was queued at last observation. Acceptance remains OPEN pending result.
