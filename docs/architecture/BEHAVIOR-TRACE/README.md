@@ -283,3 +283,9 @@
 - [EVT-0030 — ثبت درخواست «ثبت کن» و تأیید نقطهٔ ادامه](./EVT-0030-REGISTER-COMMAND-ACKNOWLEDGEMENT-2026-10-20.md).
 - [EVT-0030 — بررسی نقطهٔ ۰.۰ جاری، شمارش لنگرها و ممیزی شکاف‌ها](./EVT-0030-CURRENT-0.0-AND-GAP-AUDIT-2026-10-20.md).
 - These are separate event identities sharing a short number; both full-path targets are preserved. Review record: [H0EVTRRB3](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-EVT-0029-0030-REFERENCE-REVIEW-BATCH-003-2026-10-21-001.md); event [EVT-0056](./EVT-0056-EVT-0029-0030-REFERENCE-REVIEW-BATCH-003-2026-10-21.md).
+
+
+## Legacy EVT display-label review — batch 004
+- [H0EVTRRB4 — رفع ابهام برچسب‌های EVT در نمایه‌های قدیمی](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-EVT-LEGACY-DISPLAY-LABEL-REVIEW-BATCH-004-2026-10-21-001.md).
+- [EVT-0057 — رویداد اجرای دستهٔ چهارم](./EVT-0057-LEGACY-EVT-DISPLAY-LABEL-REVIEW-BATCH-004-2026-10-21.md).
+- برچسب‌های کوتاه مربوط به EVT-0005/0006/0019/0026/0029/0030 و EVT-0051/0052 در چند نمایه روشن‌تر شدند؛ مقصدهای کامل حفظ شدند. بازخوانی نهایی و ممیزی پس از ثبت هنوز لازم است.
