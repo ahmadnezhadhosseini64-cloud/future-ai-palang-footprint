@@ -11,7 +11,7 @@ import json
 import os
 import sqlite3
 import uuid
-from contextlib import closing
+from contextlib import asynccontextmanager, closing
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -52,16 +52,6 @@ def create_app(db_path: str | Path | None = None) -> FastAPI:
         db_path or os.environ.get("HAIF_DB_PATH", Path(__file__).parent / "data" / "haif.sqlite3")
     )
 
-    app = FastAPI(
-        title="HAIF Initial Prototype",
-        version="0.1.0",
-        description=(
-            "Repository-stage prototype for interaction continuity. "
-            "Local SQLite write/read-back is verified; external persistence is not claimed."
-        ),
-    )
-    app.state.db_path = configured_path
-
     def connect() -> sqlite3.Connection:
         app.state.db_path.parent.mkdir(parents=True, exist_ok=True)
         conn = sqlite3.connect(app.state.db_path)
@@ -96,9 +86,21 @@ def create_app(db_path: str | Path | None = None) -> FastAPI:
             )
             conn.commit()
 
-    @app.on_event("startup")
-    def startup() -> None:
+    @asynccontextmanager
+    async def lifespan(_app: FastAPI):
         init_db()
+        yield
+
+    app = FastAPI(
+        title="HAIF Initial Prototype",
+        version="0.1.0",
+        description=(
+            "Repository-stage prototype for interaction continuity. "
+            "Local SQLite write/read-back is verified; external persistence is not claimed."
+        ),
+        lifespan=lifespan,
+    )
+    app.state.db_path = configured_path
 
     @app.get("/health")
     def health() -> dict[str, str]:
