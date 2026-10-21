@@ -83,3 +83,18 @@
 - Two ambiguous bare references found in the inspected source records were disambiguated to a full path.
 - All four EVT event records for groups 0005 and 0006 remain preserved.
 - Structural audit after these changes is still required. Group-level status: `IDENTITY_DECISION=DECIDED`; `SCOPED_REFERENCE_REVIEW=PARTIAL`; `FULL_INBOUND_OUTBOUND_AUDIT=OPEN`; `CANONICALIZATION=OPEN`.
+
+
+## Addendum v1.3.0 — additional scoped reference disambiguation
+
+### Search/read-back scope
+- A second scoped GitHub code-search pass covered EVT-0019, EVT-0026, EVT-0029, EVT-0030, EVT-0050 and EVT-0051. The inspected 0019/0026 event records and connected checkpoint/index/queue references mostly identify their intended event by full path; the `EVT-0030-REGISTER-COMMAND-ACKNOWLEDGEMENT` link to EVT-0029 is explicitly path-qualified to the main 0.0 lock record. This is a scoped review, not a complete scan of all consumers or Git history.
+- The review found two misleading EVT-0051 labels that pointed to the active EVT-0052 graph-repair record: the follow-up event label in `docs/0.0/README.md`, and the graph-manifest addendum heading in this living master reference. The README link label was corrected to EVT-0052; the master addendum heading was corrected to identify EVT-0052. The actual event records were preserved.
+- Continuation pointers were also disambiguated in `docs/0.0/README.md`, `CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001.md`, and `docs/architecture/INTEGRATION-QUEUE/README.md`: EVT-0051 now denotes the assistant master creation/read-back record, EVT-0052 denotes active graph-manifest/link repair, and the retained mistaken EVT-0051 path is identified as a superseded correction notice.
+
+### Decisions and remaining boundaries
+- EVT-0019, EVT-0026, EVT-0029 and EVT-0030: no new identity rewrite was justified by the bounded search; observed event links are path-qualified in the reviewed records. Their full inbound/outbound audit remains OPEN.
+- EVT-0050: the two full paths and identities remain distinct; observed links point to their intended full paths. Full inbound/outbound audit remains OPEN.
+- EVT-0051/EVT-0052: active-vs-correction role is now reflected in the inspected continuation pointers. The correction path remains preserved; no deletion or renumbering occurred.
+- The current latest edit set triggered another Living Architecture Audit, [39525191944](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39525191944), on commit `95b49a73fd69d828a3f8d6831c80bc0c0be35b22`; it was QUEUED at time of this note. Do not claim that it validates the subsequent register update; a final post-edit run/read-back is required.
+- Status: `SCOPED REFERENCE REVIEW=PARTIAL`; `FULL INBOUND/OUTBOUND AUDIT=OPEN`; `CANONICALIZATION=OPEN`.
