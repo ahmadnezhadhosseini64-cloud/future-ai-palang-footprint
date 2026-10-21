@@ -192,3 +192,12 @@ Files whose purpose or role is not yet clear stay in the active review queue or 
 - 503 source files; 1,096 local links / 0 missing; 38 parent edges / 0 unresolved / 0 ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 exact-content duplicate groups; 701 identifier occurrences; 0 decode errors.
 - This post-edit run covers the scoped EVT reference corrections and continuation-pointer fixes in the audited commit. It confirms structure, not complete semantic correctness of every link.
 - EVT-0005/0006: two ambiguous bare references corrected; EVT-0051/0052 continuation labels corrected; detailed source findings remain in H0EVTCA v1.2–v1.3. Full inbound/outbound review for all eight groups and duplicate canonicalization remain OPEN.
+
+
+## Addendum v2.5.0 — latest parser reconciliation and structural gates (2026-10-21)
+
+- Latest audit: [Living Architecture Audit 39579753854](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39579753854), SUCCESS on commit `5e0bff75b48768b25906ba41d045d7c0227245c1`.
+- Artifact ID `12335976581`; SHA-256 `03da0bdb8892edb3d3110a1da8036014fd12a8b2ecfa80b9607c3d0688283e82`.
+- The content audit and manifest now agree on 39 Stable ID groups, 50 Production ID groups and 7 Reference ID groups. Local Markdown links missing: 0; decode errors: 0; 38 declared parent edges with 0 unresolved/ambiguous; 10 EVT-number groups; 11 exact-content duplicate groups; 790 identifier occurrences.
+- Closed for this snapshot: parser namespace/count mismatch and 13 broken local-link paths. Still open: semantic role adjudication for repeated Stable/Production IDs, EVT group-by-group review, duplicate alias/canonical promotion decisions and full inbound/outbound semantic verification. Structural success is not semantic closure.
+- Related output anchor: [POPAR / PALANG-OUTPUT-PEH-AUDIT-RECONCILIATION-2026-10-21-001](../../../docs/0.0/PALANG-OUTPUT-PEH-AUDIT-RECONCILIATION-2026-10-21-001.md).
