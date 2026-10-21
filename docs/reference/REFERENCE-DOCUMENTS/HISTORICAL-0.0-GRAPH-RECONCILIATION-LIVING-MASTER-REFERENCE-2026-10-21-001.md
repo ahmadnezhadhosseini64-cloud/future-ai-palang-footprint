@@ -330,3 +330,10 @@ This document can be considered repository-integrated only after the file, index
 - Important separate GAP: the two overlapping cycle reference documents have distinct Stable IDs but share Production ID `UOAR-HAIF-2026-10-19-001`. This remains OPEN for role/canonicalization review; no merge, deletion, or ID rewrite was made.
 - Fresh Living Architecture Audit [39524928927](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39524928927) was triggered on commit `a185c50155d3e3e8900d460579d811076c180bbb` and was IN PROGRESS at this note's creation. Do not mark post-edit structural acceptance PASS until that run completes successfully and its logs are read back.
 - Status: `EVT-0005/0006 IDENTITY DECISIONS=DECIDED`; `SCOPED REFERENCE REVIEW=PARTIAL`; `FULL INBOUND/OUTBOUND AUDIT=OPEN`; `CANONICALIZATION=OPEN`.
+
+
+## Addendum v2.15.0 — continuation pointer correction for EVT-0051/0052
+- The bounded reference audit found that a 0.0 continuation pointer and a graph-manifest addendum heading mislabeled the active EVT-0052 graph-repair event as EVT-0051. The labels have been corrected; the assistant master creation/read-back event remains EVT-0051, the active graph-manifest/link-repair event remains EVT-0052, and the mistakenly named EVT-0051 path remains a preserved superseded correction notice.
+- Updated continuation pointers now identify both active records by full filename/path in `docs/0.0/README.md`, `CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001.md`, and `docs/architecture/INTEGRATION-QUEUE/README.md`.
+- Detailed scoped findings are in [H0EVTCA](./HISTORICAL-0.0-EVT-NUMBER-COLLISION-ADJUDICATION-2026-10-21-001.md), addendum v1.3.0. These edits resolve label/path ambiguity only; they do not close all inbound/outbound references, prove all non-Markdown consumers, or finalize canonicalization.
+- A new audit was triggered on the edit chain; final post-edit structural acceptance must be taken from the newest successful run after this commit and read back from its logs.
