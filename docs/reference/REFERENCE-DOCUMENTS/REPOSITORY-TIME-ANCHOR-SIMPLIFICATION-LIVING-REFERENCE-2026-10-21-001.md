@@ -7,7 +7,7 @@
 - Owner / مالک: احمد نژادحسینی / احمد پلنگ
 - Date / تاریخ: 2026-10-21
 - Interaction time available / زمان محلی در دسترس برای این تعامل: `2026-10-21T20:52:00+03:30` Asia/Tehran؛ معادل محاسباتی: `2026-10-21T17:22:00Z` UTC. این مقدار، زمان ثبت مخزن نیست و زمان دقیق فراداده‌ای پیام کاربر هم محسوب نمی‌شود.
-- Status / وضعیت: ACTIVE / LIVING / GOVERNING POLICY; repository proof pending until this file is read back.
+- Status / وضعیت: ACTIVE / LIVING / GOVERNING POLICY; repository write + read-back content match verified.
 - Parent / سند والد: `docs/architecture/GOVERNANCE/ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21-001.md`
 - Related event / رویداد مستقل: `docs/architecture/BEHAVIOR-TRACE/EVT-0077-REPOSITORY-TIME-SIMPLIFICATION-2026-10-21.md`
 - Independent 0.0 anchor / لنگر مستقل: `docs/0.0/REPOSITORY-TIME-ANCHOR-SIMPLIFICATION-0.0-2026-10-21-001.md`
@@ -53,6 +53,11 @@
 - PASS — زمان‌های ناموجود حدس زده نشوند؛ زمان commit جایگزین زمان پیام/رخداد نشود.
 - PASS — معماری ساده بماند و ثبت چندگانهٔ غیرضروری به الزام همگانی تبدیل نشود.
 - OPEN — اجرای سراسری اصلاحات در تمام اسناد تاریخی و ممیزی محاسباتی همهٔ جفت‌های زمان هنوز باید با شواهد جداگانه ثابت شود؛ این سند به‌تنهایی ادعای اصلاح همهٔ فایل‌ها ندارد.
+
+## شاهد بازخوانی مخزن
+- سند مرجع، رویداد EVT-0077، لنگر مستقل ۰.۰، استاندارد حاکم و شاخص مرجع پس از نوشتن از مخزن دوباره خوانده شدند.
+- شناسه‌ها، محتوای مورد انتظار و پیوندهای اصلی موجود بودند؛ این تطبیق محتوایی است، نه ادعای هش‌به‌هش مستقل.
+- زمان‌های واقعی commit در فرادادهٔ GitHub وجود دارند؛ UTC معیار است و معادل تهران از همان لحظه محاسبه می‌شود. زمان دقیق بازخوانی ابزار در دسترس نیست و حدس زده نمی‌شود.
 
 ## 6. ادامه و معیار پذیرش
 
