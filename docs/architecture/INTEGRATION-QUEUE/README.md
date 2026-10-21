@@ -474,7 +474,7 @@ The queue index and the timestamp case must each be read back after this update.
 - **Stable ID:** `UNIFIED-OUTPUT-ANCHOR-REGISTRATION-CYCLE-2026-10-19-001`
 - **Event Anchor:** `EVT-0005-REGISTER-UNIFIED-OUTPUT-ANCHOR-CYCLE-2026-10-19`
 - **سند مرجع:** [چرخهٔ یکپارچه](../../reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-CYCLE-2026-10-19-001.md)
-- **پروندهٔ رویداد:** [EVT-0005](../BEHAVIOR-TRACE/EVT-0005-REGISTER-UNIFIED-OUTPUT-ANCHOR-CYCLE-2026-10-19.md)
+- **پروندهٔ رویداد:** [EVT-0005 — چرخهٔ یکپارچهٔ لنگر خروجی و ثبت](../BEHAVIOR-TRACE/EVT-0005-REGISTER-UNIFIED-OUTPUT-ANCHOR-CYCLE-2026-10-19.md)
 - **وضعیت:** مرجع و پیوندهای مخزنی باید با بازخوانی هر نسخهٔ تغییرکرده تأیید شوند. هر مقصد بیرونی تا زمان اثبات مستقل PENDING / UNVERIFIED می‌ماند.
 - **اقدام بعدی:** ادامهٔ تطبیق پیوندهای معماری و بررسی مستقل Buffer، Library، Persistent Memory و Dropbox؛ هیچ شکافی صرفاً با اضافه‌شدن پیوند بسته نمی‌شود.
 
@@ -486,7 +486,7 @@ The queue index and the timestamp case must each be read back after this update.
 - Production ID: `UOAR-HAIF-2026-10-19-001`
 - Status: REPOSITORY REGISTERED; CANONICAL REFERENCE READ-BACK CONTENT-CHECKED; cross-destination persistence remains open.
 - Canonical reference: [سند مرجع کامل چرخه](../../reference/REFERENCE-DOCUMENTS/UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001.md)
-- Event evidence: [EVT-0005](../BEHAVIOR-TRACE/EVT-0005-UNIFIED-OUTPUT-ANCHOR-LIVING-REFERENCE-REGISTRATION-2026-10-19.md)
+- Event evidence: [EVT-0005 — ثبت سند مرجع زندهٔ لنگر خروجی](../BEHAVIOR-TRACE/EVT-0005-UNIFIED-OUTPUT-ANCHOR-LIVING-REFERENCE-REGISTRATION-2026-10-19.md)
 - Governing rule: [قاعدهٔ رفتاری و لنگر خروجی](../BEHAVIOR-TRACE/HUMAN-AI-BEHAVIOR-RECOGNITION-RULE-2026-10-19-001.md)
 - Next action: maintain this pointer in the architecture queue and keep Buffer, Library and Persistent Memory pending until independently verified. Existing 0.0 anchors remain unchanged.
 
@@ -651,7 +651,7 @@ The queue index and the timestamp case must each be read back after this update.
 
 - **Stable ID:** `INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-REGISTRATION-2026-10-20-001`; **Production ID:** `ICMCRR-HAIF-2026-10-20-001`; **Version:** 1.0.0.
 - **سند مرجع جامع:** [تداوم معماری و Master–Child–Rahm](../../reference/REFERENCE-DOCUMENTS/INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-REGISTRATION-2026-10-20-001.md).
-- **رویداد رفتار:** [EVT-0026](../BEHAVIOR-TRACE/EVT-0026-INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-2026-10-20.md).
+- **رویداد رفتار:** [EVT-0026 — تداوم معماری Master–Child–Rahm](../BEHAVIOR-TRACE/EVT-0026-INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-2026-10-20.md).
 - **هدف:** حفظ مسیر معماری مستقل و قابل انتقال؛ HUMAN ↔ AI HOST ↔ HAIF؛ Master → Child → Real World → Feedback → Master؛ Master → Rahm → Validation → New Child.
 - **وضعیت:** REPOSITORY WRITE + READ-BACK + MATCH VERIFIED برای سند مرجع، رویداد و صف؛ commitهای ثبت: `fe6e8d44501f4ad989a28e6210d548c723cc14ba`, `287079fed90d944a9c997e4c998dece547d3a580`, `331154f9063b5a5c657ed6ad2887c109a82ccb2d`. این نتیجه فقط ثبت مخزن را تأیید می‌کند؛ اجرای افزونه، capture سراسری یا ثبت در Library/Buffer/Persistent Memory/Dropbox اثبات نشده است.
 - **شکاف‌های باقی‌مانده:** اجرای سرتاسری هر ورودی/خروجی، پیاده‌سازی قابل‌انتقال، بازیابی مستقل سند اصلی HAIF، بازیابی دو آزمون تاریخی، Dropbox و مقصدهای بیرونی. جای‌گذاری مرجع در MRV/نمایه/صف/checkpoint بازخوانی و تطبیق شد. جزئیات و معیار پذیرش در سند مرجع ثبت شده‌اند.
@@ -661,12 +661,12 @@ The queue index and the timestamp case must each be read back after this update.
 
 ## Main 0.0 lock — P0ML-2026-10-20-002
 - Checkpoint: [PALANG-0.0-MAIN-LOCK-2026-10-20-002](../../../checkpoints/PALANG-0.0-MAIN-LOCK-2026-10-20-002.md)
-- Event: [EVT-0029](../BEHAVIOR-TRACE/EVT-0029-MAIN-0.0-LOCK-2026-10-20.md)
+- Event: [EVT-0029 — قفل اصلی و نقطهٔ ادامهٔ ۰.۰](../BEHAVIOR-TRACE/EVT-0029-MAIN-0.0-LOCK-2026-10-20.md)
 - Status: ACTIVE / LIVING; read-back verification of this checkpoint and index/queue integration is required. Historical 0.0 anchors remain unchanged. Library, Buffer, Persistent Memory, Dropbox and global automatic execution remain independently unverified/open.
 
 
 ## رویداد ثبت جاری — EVT-0030
-- Event: [EVT-0030](../BEHAVIOR-TRACE/EVT-0030-REGISTER-COMMAND-ACKNOWLEDGEMENT-2026-10-20.md)
+- Event: [EVT-0030 — ثبت درخواست «ثبت کن» و تأیید نقطهٔ ادامه](../BEHAVIOR-TRACE/EVT-0030-REGISTER-COMMAND-ACKNOWLEDGEMENT-2026-10-20.md)
 - Stable ID: `REGISTER-COMMAND-ACKNOWLEDGEMENT-2026-10-20-001`; Production ID: `RCA-2026-10-20-001`.
 - Main checkpoint: [PALANG-0.0-MAIN-LOCK-2026-10-20-002](../../../checkpoints/PALANG-0.0-MAIN-LOCK-2026-10-20-002.md)
 - Status: ثبت رویداد در مخزن؛ بازخوانی نهایی و تطبیق لینک‌ها در حال انجام. مقصدهای مستقل و Dropbox همچنان تأییدنشده/باز هستند.
@@ -674,7 +674,7 @@ The queue index and the timestamp case must each be read back after this update.
 
 ## Audit registration — PALANG-0.0-ANCHOR-COUNT-AND-GAP-AUDIT-2026-10-20-001
 - Canonical reference: [PALANG-0.0-ANCHOR-COUNT-AND-GAP-AUDIT-2026-10-20-001](../../reference/REFERENCE-DOCUMENTS/PALANG-0.0-ANCHOR-COUNT-AND-GAP-AUDIT-2026-10-20-001.md).
-- Behavior event: [EVT-0029](../BEHAVIOR-TRACE/EVT-0029-0.0-ANCHOR-COUNT-AND-GAP-AUDIT-2026-10-20.md).
+- Behavior event: [EVT-0029 — ممیزی شمارش لنگرها و شکاف‌ها](../BEHAVIOR-TRACE/EVT-0029-0.0-ANCHOR-COUNT-AND-GAP-AUDIT-2026-10-20.md).
 - Result: no evidence-based need to create a fourth 0.0 solely for numbering; preserve the main lock, current anchor, and independent Dropbox anchor.
 - Open/blocked gaps retained: all-interaction automatic capture, Library, Buffer, Persistent Memory, Dropbox, full historical reconciliation, and end-to-end recovery/idempotency. Registration is not gap closure.
 - Repository write/read-back for the audit reference, index, and 0.0 registry matched; external destinations remain unverified.
