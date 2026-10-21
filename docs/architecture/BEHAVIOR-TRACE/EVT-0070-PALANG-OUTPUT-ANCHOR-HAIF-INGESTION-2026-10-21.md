@@ -85,3 +85,12 @@
 - Run [39612688928](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39612688928) failed because the distinctive phrase selected for search was also copied into the open-work queue, so the count was 2. The allowlist itself and API response were functioning; the assertion incorrectly assumed the phrase was unique.
 - The query is now `this file itself is not proof`, a phrase present in the master anchor but not in the other current allowlisted documents at the time checked. Fix commit: `c972e637dff093f6569d43f7e957f267cdac6484`.
 - The next CI run is required before claiming integration acceptance. All prior failures remain in the evidence history.
+
+
+## آزمون یکپارچه — نتیجهٔ موفق ثبت‌شده
+- **Workflow / گردش‌کار:** [HAIF Prototype Tests #39612814614](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39612814614), commit `c972e637dff093f6569d43f7e957f267cdac6484`.
+- **Test log UTC / زمان ثبت نتیجه در لاگ آزمون:** `2026-10-21T13:59:36.4006482Z`; **Tehran equivalent / معادل تهران:** `2026-10-21T17:29:36.4006482+03:30`. این زمان، زمان لاگ آزمون است؛ زمان پیام کاربر یا زمان ایجاد لنگر نیست.
+- **Result / نتیجه:** `11 passed, 1 warning, 0 failed`.
+- **What it proves / آنچه اثبات می‌کند:** شش سند allowlist در آزمون یکپارچه به API محلی وارد شدند؛ بازخوانی پس از نوشتن و hash تأیید شد؛ جست‌وجوی منشأدار یک سند allowlist را یافت؛ رکورد با همان شناسه، hash، مسیر، نسخه و منشأ پس از ساخت نمونهٔ تازه با همان SQLite بازیابی شد.
+- **Limit / محدودیت:** این آزمون با TestClient و SQLite موقت اجرا شد؛ استقرار production، پشتیبان خارجی، Dropbox، Buffer، Persistent Memory و Library را اثبات نمی‌کند.
+- **Earlier failures / شکست‌های قبلی:** همه در بخش‌های پیشین ثبت شده‌اند و حذف نشده‌اند؛ رفع نهایی با عبارت متمایز در commit `c972e637dff093f6569d43f7e957f267cdac6484` به نتیجهٔ موفق انجامید.
