@@ -114,3 +114,11 @@
 - Expanded manifest: 505 source files; 1,114 local Markdown links / 0 missing; 38 parent edges / 0 unresolved / 0 ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 duplicate groups; 705 identifier occurrences; 0 decode errors.
 - EVT-0019/0026 batch record: [H0EVTRRB2](./HISTORICAL-EVT-0019-0026-REFERENCE-REVIEW-BATCH-002-2026-10-21-001.md); event [EVT-0055](../../architecture/BEHAVIOR-TRACE/EVT-0055-EVT-0019-0026-REFERENCE-REVIEW-BATCH-002-2026-10-21.md).
 - Status remains: identity decisions for these two groups are bounded/decided; full inbound/outbound audit for all eight groups and canonicalization remain OPEN / PARTIAL. Evidence-edit changes require a final post-edit audit.
+
+
+## Addendum v1.6.0 — bounded EVT-0029 / EVT-0030 reference review
+- Detailed review: [H0EVTRRB3](./HISTORICAL-EVT-0029-0030-REFERENCE-REVIEW-BATCH-003-2026-10-21-001.md); behavior event: [EVT-0056](../../architecture/BEHAVIOR-TRACE/EVT-0056-EVT-0029-0030-REFERENCE-REVIEW-BATCH-003-2026-10-21.md).
+- Four event records were re-read. EVT-0029 and EVT-0030 each contain two distinct event identities; the short-number collisions are retained.
+- Scoped code-search counts: EVT-0029=8; EVT-0030=10; exact main-lock filename=6; exact registration-acknowledgement filename=6. These counts do not prove exhaustive coverage of all consumers.
+- Two ambiguous display labels were identified for correction: the bare EVT-0030 acknowledgement entry in the behavior-trace index and the bare EVT-0029 previous-event label in the acknowledgement event. Targets remain the exact same full paths.
+- Full inbound/outbound audit, Git history and non-Markdown consumers remain OPEN / PARTIAL; no event is deleted, merged or renumbered. Fresh audit pending after the fixes.
