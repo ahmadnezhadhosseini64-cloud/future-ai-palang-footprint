@@ -48,8 +48,11 @@ for p in sorted(ROOT.rglob('*')):
  for ln,line in enumerate(txt.splitlines(),1):
   for m in ISO.finditer(line):
    val=m.group(1); total+=1; file_record['timestamp_occurrences']+=1
-   utc_label=bool(UTC_LABEL.search(line)) or val.endswith('Z') or val.endswith('+00:00') or val.endswith('-00:00')
+   has_utc_label=bool(UTC_LABEL.search(line))
    local_label=bool(LOCAL_LABEL.search(line))
+   explicit_utc_suffix=val.endswith('Z') or val.endswith('+00:00') or val.endswith('-00:00')
+   # A line may mention both UTC and Tehran; classify each value by its own explicit offset.
+   utc_label=explicit_utc_suffix or (has_utc_label and not local_label)
    try: dt=parse(val)
    except (ValueError,OverflowError) as e:
     errors.append({'path':rel,'line':ln,'value':val,'reason':'parse_error: '+str(e)}); continue
@@ -65,9 +68,10 @@ for p in sorted(ROOT.rglob('*')):
      continue
    instant=dt.astimezone(UTC); expected_local=instant.astimezone(TEHRAN)
    status='NORMALIZED_COUNTERPART_CREATED'
-   if local_label and dt.utcoffset()!=expected_local.utcoffset():
+   local_claim=local_label and (dt.utcoffset().total_seconds()!=0 or dt.tzinfo is TEHRAN)
+   if local_claim and dt.utcoffset()!=expected_local.utcoffset():
     status='REVIEW_TEHRAN_OFFSET_MISMATCH'
-   if local_label and dt.replace(tzinfo=None)!=expected_local.replace(tzinfo=None):
+   if local_claim and dt.replace(tzinfo=None)!=expected_local.replace(tzinfo=None):
     status='FAIL_TEHRAN_LOCAL_VALUE_MISMATCH'
    if utc_label and dt.utcoffset().total_seconds()!=0:
     status='FAIL_UTC_LABEL_OFFSET_MISMATCH'
@@ -76,7 +80,7 @@ for p in sorted(ROOT.rglob('*')):
   # if a line explicitly presents both values, compare all normalized instants in that line.
  # repository time is the canonical timestamp for registering this file, independent of historical embedded times.
  files.append(file_record)
-counts={'audit_execution_utc':run_s,'repository_commit':commit,'files_scanned':len(files),'timestamp_strings_found':total,'timestamps_normalized':sum(bool(x.get('utc_equivalent')) for x in stamps),'counterparts_created':sum(bool(x.get('inferred')) for x in stamps),'ambiguous_or_parse_errors':len(errors),'tehran_offset_or_value_failures':sum(x['status'] in ('REVIEW_TEHRAN_OFFSET_MISMATCH','FAIL_TEHRAN_LOCAL_VALUE_MISMATCH') for x in stamps),'utc_label_failures':sum(x['status']=='FAIL_UTC_LABEL_OFFSET_MISMATCH' for x in stamps),'files_with_repository_commit_time':sum(bool(x['repository_registration_utc']) for x in files),'files_without_repository_commit_time':sum(not x['repository_registration_utc'] for x in files)}
+counts={'audit_execution_utc':run_s,'repository_commit':commit,'files_scanned':len(files),'timestamp_strings_found':total,'timestamps_normalized':sum(bool(x.get('utc_equivalent')) for x in stamps),'timestamps_with_utc_and_tehran_pair':sum(bool(x.get('utc_equivalent') and x.get('tehran_equivalent')) for x in stamps),'ambiguous_or_parse_errors':len(errors),'tehran_offset_or_value_failures':sum(x['status'] in ('REVIEW_TEHRAN_OFFSET_MISMATCH','FAIL_TEHRAN_LOCAL_VALUE_MISMATCH') for x in stamps),'utc_label_failures':sum(x['status']=='FAIL_UTC_LABEL_OFFSET_MISMATCH' for x in stamps),'files_with_repository_commit_time':sum(bool(x['repository_registration_utc']) for x in files),'files_without_repository_commit_time':sum(not x['repository_registration_utc'] for x in files)}
 report={'schema':'palang-repository-time-normalization-audit/v2','counts':counts,'timestamp_records':stamps,'parse_or_ambiguity_issues':errors,'files':files,'rule':'Repository last-change commit timestamp is the registration anchor for each file; UTC is canonical and Asia/Tehran is derived from that UTC instant. Embedded message/event timestamps are historical evidence and do not replace repository registration time.'}
 (OUT/'timestamp-pairs-semantic-audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 lines=['# Repository Registration Timestamp Normalization Audit','',f'- Audit execution UTC: {run_s}',f'- Repository HEAD: {commit}','','## Counts']+[f'- {k}: {v}' for k,v in counts.items()]+['','## Per-file repository registration anchors']
@@ -87,4 +91,7 @@ lines += ['','## Issues']+[f"- {x['path']}:{x['line']} {x['value']} — {x['reas
 (OUT/'timestamp-pairs-semantic-audit.txt').write_text('\n'.join(lines)+'\n',encoding='utf-8')
 print('REPOSITORY_TIME_NORMALIZATION_AUDIT')
 for k,v in counts.items(): print(f'{k}={v}')
+for x in errors[:25]: print(f"ISSUE {x['path']}:{x['line']} {x['value']} — {x['reason']}")
+for x in stamps:
+ if x['status'] in ('REVIEW_TEHRAN_OFFSET_MISMATCH','FAIL_TEHRAN_LOCAL_VALUE_MISMATCH','FAIL_UTC_LABEL_OFFSET_MISMATCH'): print(f"MISMATCH {x['status']} {x['path']}:{x['line']} original={x['original']} UTC={x['utc_equivalent']} Tehran={x['tehran_equivalent']} role={x['role']}")
 print('result=REVIEW_REQUIRED' if errors or counts['tehran_offset_or_value_failures'] or counts['utc_label_failures'] or counts['files_without_repository_commit_time'] else 'result=REPOSITORY_TIME_NORMALIZATION_PASS')
