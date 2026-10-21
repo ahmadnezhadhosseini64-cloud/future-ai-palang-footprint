@@ -81,3 +81,15 @@
 - The exact user-message timestamp is not claimed.
 - Repository anchor UTC/Tehran must be completed from actual commit metadata and read back.
 - Buffer / Persistent Memory / Library / Dropbox remain unverified unless independently tested.
+
+
+## ثبت واقعی و پیوندهای بازیابی — تکمیل پس از نوشتن اولیه
+- First repository commit UTC / نخستین ثبت مخزن UTC: `2026-10-21T19:18:24Z`.
+- First repository commit Asia/Tehran / معادل تهران: `2026-10-21T22:48:24+03:30`.
+- Commit: `29a5564e1b26002fa1be9464abba9089bd395465`.
+- این زمان، زمان واقعی commit ثبت اولیهٔ همین سند است؛ زمان پیام کاربر نیست.
+- Master reference / سند مرجع مادر: [بخش ۳۷ و لنگر بازگشت](../reference/REFERENCE-DOCUMENTS/PERMANENT-INTERACTION-ANCHORING-TIMESTAMP-GOVERNANCE-AND-CANONICAL-GRAPH-MASTER-REFERENCE-2026-10-21-001.md).
+- EVT-0080 / رویداد آخرین چکش: [بازکردن EVT-0080](../architecture/BEHAVIOR-TRACE/EVT-0080-MISSING-USER-TIMESTAMP-REPOSITORY-ANCHOR-AND-CHAIN-CHECK-2026-10-21.md).
+- Timestamp standard / استاندارد حاکم: [بازکردن استاندارد](../architecture/GOVERNANCE/ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21-001.md).
+- Reference index / نمایه: [بازکردن نمایه](../REFERENCE_INDEX.md).
+- Workflow status must be rechecked on return; this anchor does not claim that runs still pending at the prior inspection have since passed.
