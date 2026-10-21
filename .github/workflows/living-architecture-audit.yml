@@ -46,6 +46,12 @@ jobs:
           set -euo pipefail
           python3 scripts/audit_historical_0_0_graph.py | tee audit-output/historical-0.0-graph-audit-run.txt
 
+      - name: Run repository-wide timestamp inventory audit
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/audit_timestamps.py | tee audit-output/timestamp-audit-run.txt
+
       - name: Build canonical historical graph manifest and validate edges
         shell: bash
         run: |
