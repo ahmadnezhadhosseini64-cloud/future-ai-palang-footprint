@@ -454,3 +454,27 @@ Decision: begin the first executable prototype from the initial product baseline
 - Results: 521 source files, 1,245 local Markdown links, 0 missing links, 0 decode errors, 38 declared parent edges, 0 unresolved/ambiguous parent edges, 32 Stable ID groups, 45 Production ID groups, 7 Reference ID groups, 9 EVT number groups, 11 exact-content duplicate groups, 727 identifier occurrences.
 - Structural PASS only. The audit does not validate every semantic relationship or establish production readiness. The prototype test run [39536269368](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39536269368) passed 5 tests with 1 upstream warning and 0 failures.
 - This is a snapshot of the audited commit. After these evidence entries are written, a final structural run is required.
+
+
+---
+
+## 0.0 Continuation Anchor — 2026-10-21: Initial Model and Repository Registration
+
+- **Stable ID / شناسهٔ پایدار:** PALANG-0.0-REPOSITORY-MODEL-INITIAL-RESUME-2026-10-21-001
+- **Production ID / شناسهٔ تولید:** P0MR-2026-10-21-001
+- **Version / نسخه:** 1.0.0
+- **Status / وضعیت:** ACTIVE / LIVING; repository registration verified; semantic graph work remains OPEN / PARTIAL.
+- **Anchor file / پروندهٔ نقطه:** [PALANG-0.0-REPOSITORY-MODEL-INITIAL-RESUME-2026-10-21-001](../../../checkpoints/0.0/PALANG-0.0-REPOSITORY-MODEL-INITIAL-RESUME-2026-10-21-001.md).
+- **Model folder / پوشهٔ مدل اولیه:** [مدل اولیه](../%D9%85%D8%AF%D9%84%20%D8%A7%D9%88%D9%84%DB%8C%D9%87/README.md).
+- **Central 0.0 registry / دفتر مرکزی نقاط:** [docs/0.0/README.md](../../../docs/0.0/README.md).
+- **Repository registration time / زمان ثبت اولیه:** commit `19fd3a917b4a2a84933bfc0ac0108ceb062ef918`, timestamp `2026-10-21T03:46:58Z` (`2026-10-21T07:16:58+03:30` Asia/Tehran). This is a Git commit timestamp, not a claim about the exact user-message time.
+- **Verification / راستی‌آزمایی:** anchor was fetched again from GitHub after creation; current verified blob SHA at the time of proof update: `0bca694c1e8c1d6cdd3d0387ae9e97e937351b34`. The central 0.0 index was updated and fetched back; the new anchor row is present. The model folder was created and fetched back, and links to the pre-existing HAIF initial-model package were added.
+- **Scope boundary / مرز محدوده:** repository only. Buffer, persistent memory, Library and Dropbox were not modified or verified.
+
+### What is now registered
+
+The current handoff point records the user's request to preserve the work before leaving, the project purpose, the existing implementation-ready architecture and historical graph master, the model-folder requirement, proof rules, known unresolved identifier/EVT review work, and exact next actions. It is an independent anchor; it does not replace or merge prior 0.0 points.
+
+### Next action from this anchor
+
+Resume from the anchor file and the existing [HAIF initial-model package](../../../docs/architecture/%D9%85%D8%AF%D9%84%20%D8%A7%D9%88%D9%84%DB%8C%D9%87%20AI/README.md). Continue evidence-based review of Stable ID and Production ID occurrence groups, the EVT collision groups, incoming/outgoing references, Git history and non-Markdown consumers. Do not promote provisional canonical choices or close semantic gaps merely because structural audit passes.
