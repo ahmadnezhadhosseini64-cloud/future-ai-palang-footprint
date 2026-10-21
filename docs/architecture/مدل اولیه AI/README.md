@@ -50,7 +50,7 @@
 
 ## لنگر زندهٔ ثبت خودکار و ادامه پس از بازگشت — 2026-10-21
 
-- [لنگر ۰.۰ — ثبت خودکار ورودی، لنگر زمانی، چکش و ادامهٔ پس از بازگشت](../../checkpoints/0.0/PALANG-0.0-AUTOMATIC-INPUT-ANCHOR-AND-RETURN-RESUME-GOVERNANCE-2026-10-21-001.md).
+- [لنگر ۰.۰ — ثبت خودکار ورودی، لنگر زمانی، چکش و ادامهٔ پس از بازگشت](../../../checkpoints/0.0/PALANG-0.0-AUTOMATIC-INPUT-ANCHOR-AND-RETURN-RESUME-GOVERNANCE-2026-10-21-001.md).
 - Stable ID: `PALANG-0.0-AUTOMATIC-INPUT-ANCHOR-AND-RETURN-RESUME-GOVERNANCE-2026-10-21-001`; Production ID: `P0AIRRG-2026-10-21-001`; Version 1.0.0.
 - زمان ثبت سند: `2026-10-21T11:32:53+03:30` (Asia/Tehran).
 - رویداد: [EVT-0059](../BEHAVIOR-TRACE/EVT-0059-AUTOMATIC-ANCHOR-REGISTRATION-AND-RETURN-RESUME-GOVERNANCE-2026-10-21.md).
@@ -61,6 +61,6 @@
 - [سند مرجع مادر — ثبت جامع و بازگشت اجرایی زنده](./سند%20مرجع%20مادر%20—%20ثبت%20جامع%20و%20بازگشت%20اجرایی%20زنده.md)
 - Stable ID: `PALANG-MASTER-REFERENCE-AUTOMATIC-REGISTRATION-AND-RETURN-EXECUTION-2026-10-21-001`; Production ID: `PMR-ARRE-2026-10-21-001`; Version 1.0.0.
 - زمان ثبت: `2026-10-21T11:37:45+03:30` (Asia/Tehran).
-- لنگر مستقل: [PALANG-0.0-MASTER-REFERENCE-RETURN-EXECUTION-2026-10-21-001](../../checkpoints/0.0/PALANG-0.0-MASTER-REFERENCE-RETURN-EXECUTION-2026-10-21-001.md).
+- لنگر مستقل: [PALANG-0.0-MASTER-REFERENCE-RETURN-EXECUTION-2026-10-21-001](../../../checkpoints/0.0/PALANG-0.0-MASTER-REFERENCE-RETURN-EXECUTION-2026-10-21-001.md).
 - رویداد: [EVT-0060](../BEHAVIOR-TRACE/EVT-0060-MASTER-REFERENCE-RETURN-EXECUTION-2026-10-21.md).
 - وضعیت: ACTIVE / LIVING / GOVERNING / OPEN FOR GROWTH؛ صف اجرایی پس از بازگشت در سند مادر آمده است.
