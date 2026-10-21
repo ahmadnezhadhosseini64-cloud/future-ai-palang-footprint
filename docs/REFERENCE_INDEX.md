@@ -392,3 +392,9 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 
 
 - **H0AR39578396043:** [شاهد ممیزی پس از بازگشت — run 39578396043](reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-AUDIT-RUN-39578396043-2026-10-21.md) — workflow SUCCESS؛ 13 پیوند محلی مفقود و تطبیق معنایی همچنان OPEN.
+
+
+## لنگر خروجی و اصلاح parser — 2026-10-21
+- [لنگر مستقل خروجی و اجرای چکش شواهد](0.0/PALANG-OUTPUT-PEH-AUDIT-RECONCILIATION-2026-10-21-001.md) — Stable ID: `PALANG-OUTPUT-PEH-AUDIT-RECONCILIATION-2026-10-21-001`; Production ID: `POPAR-2026-10-21-001`; ACTIVE / LIVING / OPEN-PARTIAL.
+- [EVT-0063](architecture/BEHAVIOR-TRACE/EVT-0063-OUTPUT-ANCHOR-PEH-AUDIT-PARSER-RECONCILIATION-2026-10-21.md) — ثبت خروجی و اصلاح تطبیق ممیزی.
+- Commit اصلاح parser: `8ed24fc75e7a8634c33e87eaf0744bcb8f091008`; نتیجهٔ اجرای پس از اصلاح هنوز در انتظار راستی‌آزمایی است.
