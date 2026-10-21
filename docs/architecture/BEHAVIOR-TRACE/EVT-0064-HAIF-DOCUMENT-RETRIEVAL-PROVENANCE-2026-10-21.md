@@ -30,3 +30,11 @@
 ## محدودیت و گام بعد
 
 این نسخه بازیابی واژه‌محور ساده است و ادعای جست‌وجوی معنایی/برداری ندارد. داده‌ها فقط در SQLite محلی نمونه ذخیره می‌شوند؛ هیچ مقصد بیرونی یا اتصال خودکار به گفتگوها تأیید نشده است. گام بعدی: آزمون restart و بازیابی همان سند/hash/منشأ پس از راه‌اندازی مجدد؛ سپس طراحی استخراج کنترل‌شدهٔ اسناد مخزن با حفظ منشأ و نسخه.
+
+
+## Acceptance update — restart proof
+
+- Added a restart test: create a document, close the app client, create a fresh app instance against the same SQLite file, search again, and verify document ID, SHA-256, source path, version and origin.
+- [HAIF Prototype Tests run 39580527915](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39580527915): SUCCESS — **8 passed, 1 warning, 0 failed**.
+- [Living Architecture Audit run 39580528257](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39580528257): SUCCESS on commit `1df9d6246ee3d830115385aa047c5475b9ce10ef`; 544 source files, 1,354 local links, 0 missing links, 0 decode errors, 39/50/7 identifier-group counts aligned.
+- Restart persistence is verified only for the same local SQLite file and test environment. It does not prove external backup or deployment persistence.
