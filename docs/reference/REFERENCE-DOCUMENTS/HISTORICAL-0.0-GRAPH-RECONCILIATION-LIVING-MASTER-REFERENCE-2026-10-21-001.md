@@ -353,3 +353,11 @@ This document can be considered repository-integrated only after the file, index
 - Legacy scanner on the same commit reports 13 Stable ID and 24 Production ID groups due narrower extraction. Preserve scanner scope rather than collapsing the counts.
 - Artifact `12313885389`, SHA-256 `sha256:1c2af00f30603b6fecdeb57b594799e33ba9e60adf576c5ba6284d0e104ddcef`. Logs and metadata read back; artifact archive not extracted in this step.
 - This run verifies structural checks on the updated reference index, integration queue, master, adjudication register and EVT disambiguation records. Semantic closure, all EVT inbound/outbound edges, final canonical promotion and app implementation remain OPEN / PARTIAL.
+
+
+## Addendum — visible progress and EVT reference review batch 002
+- Bounded review record: [H0EVTRRB2](./HISTORICAL-EVT-0019-0026-REFERENCE-REVIEW-BATCH-002-2026-10-21-001.md); behavior event: [EVT-0055](../../architecture/BEHAVIOR-TRACE/EVT-0055-EVT-0019-0026-REFERENCE-REVIEW-BATCH-002-2026-10-21.md).
+- Four source event files for EVT-0019 and EVT-0026 were re-read and their blob SHAs recorded. The two files in each group are semantically distinct; the short-number collision remains intentionally visible.
+- Scoped code-search evidence: 12 results for EVT-0019 and 13 for EVT-0026; specific title queries returned 6 and 10. This is not a complete consumer audit.
+- The current 0.0 checkpoint now uses a descriptive label for the EVT-0026 Master–Child–Rahm continuity event while retaining the full-path destination.
+- Status: bounded identity decision and search review recorded; full inbound/outbound graph semantics remain OPEN / PARTIAL. No file was deleted, merged or renumbered.
