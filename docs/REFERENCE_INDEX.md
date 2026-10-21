@@ -477,3 +477,7 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - [لنگر مستقل ۰.۰ — HAIF-RETURN-CONTINUATION-ANCHOR-0.0-2026-10-21-002](0.0/HAIF-RETURN-CONTINUATION-ANCHOR-0.0-2026-10-21-002.md) — نقطهٔ بازگشت پس از غیبت؛ لنگرهای قبلی را جایگزین نمی‌کند.
 - [سند مرجع مادر — HAIF-RETURN-0.0-AND-EXECUTION-PATH-MASTER-REFERENCE-2026-10-21-001](reference/REFERENCE-DOCUMENTS/HAIF-RETURN-0.0-AND-EXECUTION-PATH-MASTER-REFERENCE-2026-10-21-001.md) — مسیر مرحله‌ای بازگشت: بررسی workflow، قاعدهٔ UTC/تهران، بازیابی شش سند، Dropbox، اثبات مستقل مقصدها، بستهٔ انتقال و ممیزی گراف.
 - وضعیت: ACTIVE / LIVING / OPEN / GOVERNING؛ آزمون‌های آینده تا اجرای واقعی و ثبت شواهد باز می‌مانند.
+
+## EVT-0081 — لنگر جایگزین زمان + شواهد مرحله‌به‌مرحله
+- [EVT-0081](architecture/BEHAVIOR-TRACE/EVT-0081-PAIRED-TIME-ANCHOR-AND-PER-STAGE-EVIDENCE-2026-10-21.md) — دو تعهد هم‌زمان: ثبت زمان commit واقعی مخزن به‌عنوان لنگر جایگزین وقتی زمان پیام در دسترس نیست؛ و ثبت شاهد مستقل برای هر مرحله.
+- لنگر ثبت رویداد: UTC `2026-10-21T19:28:55Z` = تهران `2026-10-21T22:58:55+03:30`؛ commit `707d86e7a8774ed33d16902f153bafee9c3242c8`.
