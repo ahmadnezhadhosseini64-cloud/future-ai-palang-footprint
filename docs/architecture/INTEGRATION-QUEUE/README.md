@@ -958,5 +958,5 @@ The queue index and the timestamp case must each be read back after this update.
 ## EVT-0075 — ممیزی زمان و میزبان
 - رویداد: ../BEHAVIOR-TRACE/EVT-0075-ASSISTANT-OUTPUT-TIMESTAMP-SEMANTIC-AUDIT-AND-HOST-ADAPTER-2026-10-21.md
 - سند مرجع: ../../reference/REFERENCE-DOCUMENTS/SEMANTIC-TIMESTAMP-AUDIT-AND-HOST-CAPTURE-RECOVERY-MASTER-REFERENCE-2026-10-21-001.md
-- ابزارها: scripts/audit_timestamp_pairs_semantic.py؛ scripts/host_adapter.py؛ scripts/test_host_adapter.py
+- ابزارها: scripts/audit_timestamp_pairs_semantic.py؛ scripts/host_adapter.py؛ scripts/host_adapter_github_worker.py؛ scripts/test_host_adapter.py
 - وضعیت: OPEN / PARTIAL؛ producer زنده، انتقال به GitHub و مقصدهای مستقل اثبات‌نشده‌اند.
