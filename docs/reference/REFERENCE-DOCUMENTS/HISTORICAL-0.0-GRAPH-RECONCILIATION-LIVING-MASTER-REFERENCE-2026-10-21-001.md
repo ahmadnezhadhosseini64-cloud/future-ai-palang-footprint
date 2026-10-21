@@ -391,3 +391,9 @@ This document can be considered repository-integrated only after the file, index
 - [H0EVTRRB4](./HISTORICAL-EVT-LEGACY-DISPLAY-LABEL-REVIEW-BATCH-004-2026-10-21-001.md) and [EVT-0057](../../architecture/BEHAVIOR-TRACE/EVT-0057-LEGACY-EVT-DISPLAY-LABEL-REVIEW-BATCH-004-2026-10-21.md) record the review of ambiguous labels in the 0.0 README, behavior-trace index, reference index and integration queue.
 - Labels for known collision groups EVT-0005, EVT-0006, EVT-0019, EVT-0026, EVT-0029, EVT-0030 and EVT-0051/0052 were clarified where an exact destination was already established. Link targets were not changed.
 - Structural read-back and a fresh audit are pending; full semantic inbound/outbound audit remains OPEN / PARTIAL.
+
+
+## Addendum — legacy EVT display-label audit evidence
+- [Living Architecture Audit 39527808318](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39527808318) passed on commit `6d1c0892d723f86a49d7a4106eae9b3fed64a2ea`, runner UTC `2026-10-21T01:31:28Z`; artifact `12313029823`, digest `sha256:c306f91b899dd9db0ab7eb3279c6ca1c52ffe959c0eadeaa062a5e5aa6dbcfc4`.
+- 1,156 local links / 0 missing; 38 parent edges / 0 unresolved / 0 ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 duplicate groups; 713 identifier occurrences; 0 decode errors.
+- Legacy short labels were clarified in the audited snapshot. Semantic graph and full EVT inbound/outbound review remain OPEN / PARTIAL. A final audit after this evidence append is required.
