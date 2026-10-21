@@ -24,3 +24,11 @@
 ## چرخهٔ راستی‌آزمایی
 
 WRITE → READ-BACK → MATCH → VERIFY. این رویداد پس از ایجاد باید از مخزن دوباره خوانده شود؛ وضعیت کار معنایی OPEN / PARTIAL باقی می‌ماند.
+
+
+## Final verification / راستی‌آزمایی نهایی
+
+- Audit [39579611707](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39579611707) completed SUCCESS on commit `d74cfb0a9d8d7f5b23972449f2edc32240341251`.
+- Artifact ID `12335647959`; SHA-256 `4bfadc15d6d289c60fc941069e24dff0480bb44ebec4cddb4cd0cdabd6b2248f`.
+- 0 missing local links; 0 decode errors; Stable ID 39, Production ID 50, Reference ID 7; 38 declared parent edges, 0 unresolved/ambiguous; 11 exact-content duplicate groups.
+- Structural/link gates VERIFIED for this snapshot. Semantic identity and alias adjudication remain OPEN / PARTIAL.
