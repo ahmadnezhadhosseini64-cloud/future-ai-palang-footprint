@@ -49,3 +49,11 @@
 `PRESERVE → IDENTIFY → REGISTER → READ-BACK → MATCH → VERIFY → RECONCILE → STATUS → RESUME`
 
 زمان دقیق پیام کاربر در شواهد موجود نیست. تاریخ 2026-10-21 تاریخ لنگر است، نه ادعای زمان دقیق ارسال پیام.
+
+
+## اصلاحیهٔ زمان دائمی — 2026-10-21
+- Assistant/system operation time / زمان عملیات دستیار-سیستم: `2026-10-21T13:40:14+03:30` (تهران)؛ معادل UTC: `2026-10-21T10:10:14Z`.
+- User message time / زمان پیام کاربر: `UNAVAILABLE / NOT CAPTURED`؛ زمان دقیق پیام از منبع قابل اتکا در دسترس نبود. زمان دستیار همچنان ثبت شده و مبنای لنگر عملیاتی است.
+- استاندارد حاکم: [ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21-001](../../architecture/GOVERNANCE/ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21-001.md).
+- رویداد: [EVT-0066](../../architecture/BEHAVIOR-TRACE/EVT-0066-ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21.md).
+- زمان بازخوانی پس از ثبت این اصلاحیه باید جداگانه و به وقت تهران ثبت شود؛ زمان شروع عملیات به‌جای آن استفاده نمی‌شود.
