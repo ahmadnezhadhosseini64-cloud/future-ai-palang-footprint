@@ -122,3 +122,9 @@
 - Scoped code-search counts: EVT-0029=8; EVT-0030=10; exact main-lock filename=6; exact registration-acknowledgement filename=6. These counts do not prove exhaustive coverage of all consumers.
 - Two ambiguous display labels were identified for correction: the bare EVT-0030 acknowledgement entry in the behavior-trace index and the bare EVT-0029 previous-event label in the acknowledgement event. Targets remain the exact same full paths.
 - Full inbound/outbound audit, Git history and non-Markdown consumers remain OPEN / PARTIAL; no event is deleted, merged or renumbered. Fresh audit pending after the fixes.
+
+
+## Addendum v1.7.0 — post-edit audit for EVT-0029/0030 labels
+- [Living Architecture Audit 39527230890](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39527230890) passed on commit `7527613fc76e431e87954eacdd2efd93b996db41`, runner UTC `2026-10-21T01:25:32Z`; artifact `12313198258`, digest `sha256:123d44df97464b8ac968cde89e60df8c22bf14ba19d9815b2414224bd19d73fd`.
+- 505 source files; 1,136 local links / 0 missing; 38 parent edges / 0 unresolved / 0 ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 duplicate groups; 709 identifier occurrences; 0 decode errors.
+- H0EVTRRB3 / EVT-0056 record the bounded identity and label review. Full inbound/outbound audit for all eight EVT groups remains OPEN / PARTIAL; no file was deleted or renumbered.
