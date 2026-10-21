@@ -45,11 +45,13 @@ for p in sorted(ROOT.rglob('*')):
  file_utc=file_time.isoformat(timespec='seconds').replace('+00:00','Z') if file_time else None
  file_local=file_time.astimezone(TEHRAN).isoformat(timespec='seconds') if file_time else None
  file_record={'path':rel,'sha256':hashlib.sha256(raw).hexdigest(),'repository_registration_utc':file_utc,'repository_registration_tehran':file_local,'repository_time_source':'git last-change commit metadata' if file_time else 'UNAVAILABLE','timestamp_occurrences':0}
- for ln,line in enumerate(txt.splitlines(),1):
+ content_lines=txt.splitlines()
+ for ln,line in enumerate(content_lines,1):
+  context=' '.join(content_lines[max(0,ln-4):ln])
   for m in ISO.finditer(line):
    val=m.group(1); total+=1; file_record['timestamp_occurrences']+=1
-   has_utc_label=bool(UTC_LABEL.search(line))
-   local_label=bool(LOCAL_LABEL.search(line))
+   has_utc_label=bool(UTC_LABEL.search(context))
+   local_label=bool(LOCAL_LABEL.search(context))
    explicit_utc_suffix=val.endswith('Z') or val.endswith('+00:00') or val.endswith('-00:00')
    # A line may mention both UTC and Tehran; classify each value by its own explicit offset.
    # Numeric offsets/Z in the value itself outrank broad prose labels on the same line.
