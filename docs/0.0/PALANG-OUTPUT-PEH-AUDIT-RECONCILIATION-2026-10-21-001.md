@@ -98,3 +98,11 @@ PRESERVE → IDENTIFY → VERIFY → RECONCILE → REGISTER → READ-BACK → MA
 - Test run: [39580527915](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39580527915) — 8 passed, 1 warning, 0 failed.
 - Structural audit: [39580528257](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39580528257) — 0 missing links, 0 decode errors, counts aligned at 39/50/7.
 - This closes the local restart test for the prototype. It does not close semantic/vector retrieval, automated repository ingestion, production deployment or external persistence.
+
+
+## 11. Final read-back after model-master update
+
+- Latest full repository audit: [Living Architecture Audit 39580672318](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39580672318), SUCCESS on commit `9a04ca85c686703aa299181db3802ab64dcc70da`.
+- 544 source files; 1,354 local Markdown links; 0 missing local links; 0 decode errors; 39 Stable ID groups; 50 Production ID groups; 7 Reference ID groups; 10 EVT number groups; 11 exact-content duplicate groups; 38 declared parent edges; 0 unresolved/ambiguous parent edges; 792 identifier occurrences.
+- The identifier extractors agree on group counts. The repeated groups and 11 duplicate-content groups remain semantic review candidates; no automatic deletion or blanket conflict claim is permitted.
+- Latest model test remains [39580527915](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39580527915): 8 passed, 1 warning, 0 failed, including restart persistence for a document on the same local SQLite file.
