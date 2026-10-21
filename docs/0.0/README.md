@@ -673,3 +673,5 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - [PALANG-OUTPUT-PEH-AUDIT-RECONCILIATION-2026-10-21-001](./PALANG-OUTPUT-PEH-AUDIT-RECONCILIATION-2026-10-21-001.md) — لنگر مستقل خروجی؛ ACTIVE / LIVING / OPEN-PARTIAL.
 - [EVT-0063](../architecture/BEHAVIOR-TRACE/EVT-0063-OUTPUT-ANCHOR-PEH-AUDIT-PARSER-RECONCILIATION-2026-10-21.md).
 - اصلاح parser در مخزن ثبت شده؛ نتیجهٔ workflow و رفع پیوندهای مفقود تا ممیزی تازه باید تأیید شوند.
+
+- [EVT-0064 — ورود و بازیابی سند همراه با منشأ](../architecture/BEHAVIOR-TRACE/EVT-0064-HAIF-DOCUMENT-RETRIEVAL-PROVENANCE-2026-10-21.md) — ادامهٔ اجرایی مدل اولیهٔ HAIF، 7 آزمون موفق.
