@@ -401,3 +401,10 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 
 - [EVT-0064 — HAIF document ingest and provenance retrieval](architecture/BEHAVIOR-TRACE/EVT-0064-HAIF-DOCUMENT-RETRIEVAL-PROVENANCE-2026-10-21.md) — implementation/test evidence for model v0.
 - [HAIF initial AI model master reference](architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md) — governing model baseline and current execution boundary.
+
+
+## حاکمیت ثبت زمان و لنگرهای مستقل (2026-10-21)
+- استاندارد دائمی: [ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21-001](architecture/GOVERNANCE/ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21-001.md) — ثبت زمان دستیار به وقت تهران و UTC، زمان پیام کاربر در صورت موجودبودن، و جداسازی زمان عملیات/commit/read-back.
+- رویداد اجرایی: [EVT-0066](architecture/BEHAVIOR-TRACE/EVT-0066-ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21.md).
+- سند مرجع مادر لنگر بازگشت: [PALANG-RETURN-EXECUTION-MASTER-ANCHOR-2026-10-21-001](reference/REFERENCE-DOCUMENTS/PALANG-RETURN-EXECUTION-MASTER-ANCHOR-2026-10-21-001.md).
+- زمان اعمال این اصلاحیه: `2026-10-21T13:40:14+03:30` تهران / `2026-10-21T10:10:14Z` UTC؛ زمان دقیق پیام کاربر موجود نیست و ساختگی ثبت نشده است.
