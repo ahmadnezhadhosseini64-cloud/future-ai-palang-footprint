@@ -1,97 +1,82 @@
 #!/usr/bin/env python3
-"""Semantic UTC/local pair audit; source files are never rewritten."""
+"""Normalize repository timestamps to canonical UTC and derived Asia/Tehran."""
 from pathlib import Path
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 import hashlib, json, re, subprocess
+from datetime import timedelta
 ROOT=Path('.'); OUT=ROOT/'audit-output'; OUT.mkdir(exist_ok=True)
 UTC=timezone.utc; TEHRAN=ZoneInfo('Asia/Tehran')
-EXT={'.md','.txt','.yml','.yaml','.json','.py','.html','.xml','.csv','.toml'}; SKIP={'.git','node_modules','.venv','venv','audit-output'}
+EXT={'.md','.txt','.yml','.yaml','.json','.py','.html','.xml','.csv','.toml'}
+SKIP={'.git','node_modules','.venv','venv','audit-output','__pycache__'}
 ISO=re.compile(r'(?<![A-Za-z0-9])((?:19|20)\d{2}-\d{2}-\d{2}[T ]\d{2}:\d{2}(?::\d{2}(?:\.\d{1,6})?)?(?:Z|[+-]\d{2}:?\d{2})?)(?![A-Za-z0-9])')
-UTC_LABEL=re.compile(r'\bUTC\b|\bZ\b|معادل UTC',re.I); LOCAL_LABEL=re.compile(r'Asia/Tehran|تهران|Tehran local|local time',re.I)
+UTC_LABEL=re.compile(r'\bUTC\b|\bZ\b|معادل UTC|زمان مرجع",re.I)
+LOCAL_LABEL=re.compile(r'Asia/Tehran|تهران|Tehran local|local time|زمان تهران',re.I)
 def parse(s):
  s=s.replace(' ','T',1)
  if s.endswith('Z'): s=s[:-1]+'+00:00'
  s=re.sub(r'([+-]\d{2})(\d{2})$',r'\1:\2',s)
- d=datetime.fromisoformat(s)
- return d if d.tzinfo else None
+ return datetime.fromisoformat(s)
+def git_file_time(rel):
+ try:
+  v=subprocess.check_output(['git','log','-1','--format=%cI','--',rel],text=True,stderr=subprocess.DEVNULL).strip()
+  if v: return datetime.fromisoformat(v.replace('Z','+00:00')).astimezone(UTC)
+ except Exception: pass
+ return None
 try: commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
 except Exception: commit='UNKNOWN'
-run=datetime.now(UTC).isoformat(timespec='seconds').replace('+00:00','Z'); pairs=[]; errors=[]; files=[]; total=0
+run=datetime.now(UTC); run_s=run.isoformat(timespec='seconds').replace('+00:00','Z')
+files=[]; stamps=[]; errors=[]; total=0
 for p in sorted(ROOT.rglob('*')):
  if not p.is_file() or p.suffix.lower() not in EXT or any(x in SKIP for x in p.parts): continue
+ rel=p.as_posix()
+ if not (rel.startswith(('docs/','checkpoints/','recovery/','provenance/','evidence/')) or rel.startswith('scripts/')): continue
  try: raw=p.read_bytes(); txt=raw.decode('utf-8')
  except (OSError,UnicodeDecodeError): continue
- rel=p.as_posix()
- if not (rel.startswith(('docs/','checkpoints/','recovery/','provenance/')) or rel.startswith('scripts/audit_timestamp')): continue
- n=0; file_paired=set()
- lines=txt.splitlines()
- # A blank line separates semantic paragraphs; never pair across a paragraph boundary.
- paragraphs=[]; current=[]
- for ln,line in enumerate(lines,1):
-  if not line.strip():
-   if current: paragraphs.append(current); current=[]
-  else: current.append((ln,line))
- if current: paragraphs.append(current)
- paired_occurrences=set()
- for para in paragraphs:
-  utc_items=[]; local_items=[]; all_items=[]
-  for ln,line in para:
-   for m in ISO.finditer(line):
-    val=m.group(1); n+=1; total+=1
-    try: dt=parse(val)
-    except (ValueError,OverflowError): dt=None
-    item={'path':rel,'line':ln,'value':val,'dt':dt,'line_text':line.strip()[:300]}
-    all_items.append(item)
-    if dt is None:
-     errors.append({'path':rel,'line':ln,'value':val,'reason':'timezone offset missing or invalid'})
+ file_time=git_file_time(rel)
+ file_utc=file_time.isoformat(timespec='seconds').replace('+00:00','Z') if file_time else None
+ file_local=file_time.astimezone(TEHRAN).isoformat(timespec='seconds') if file_time else None
+ file_record={'path':rel,'sha256':hashlib.sha256(raw).hexdigest(),'repository_registration_utc':file_utc,'repository_registration_tehran':file_local,'repository_time_source':'git last-change commit metadata' if file_time else 'UNAVAILABLE','timestamp_occurrences':0}
+ for ln,line in enumerate(txt.splitlines(),1):
+  for m in ISO.finditer(line):
+   val=m.group(1); total+=1; file_record['timestamp_occurrences']+=1
+   utc_label=bool(UTC_LABEL.search(line)) or val.endswith('Z') or val.endswith('+00:00') or val.endswith('-00:00')
+   local_label=bool(LOCAL_LABEL.search(line))
+   try: dt=parse(val)
+   except (ValueError,OverflowError) as e:
+    errors.append({'path':rel,'line':ln,'value':val,'reason':'parse_error: '+str(e)}); continue
+   inferred=False; role='EXPLICIT_OFFSET'
+   if dt.tzinfo is None:
+    if local_label:
+     dt=dt.replace(tzinfo=TEHRAN); role='INFERRED_ASIA_TEHRAN'; inferred=True
+    elif utc_label:
+     dt=dt.replace(tzinfo=UTC); role='INFERRED_UTC'; inferred=True
+    else:
+     errors.append({'path':rel,'line':ln,'value':val,'reason':'timezone missing and no reliable UTC/Tehran label; cannot infer safely'})
+     stamps.append({'path':rel,'line':ln,'original':val,'role':'AMBIGUOUS','status':'REVIEW_REQUIRED','utc_equivalent':None,'tehran_equivalent':None,'inferred':False})
      continue
-    has_utc=bool(UTC_LABEL.search(line)) or val.endswith('Z') or val.endswith('+00:00') or val.endswith('-00:00')
-    has_local=bool(LOCAL_LABEL.search(line))
-    if has_utc and has_local:
-     # Resolve role from the timestamp's own offset when a line has both labels.
-     if dt.utcoffset().total_seconds()==0: utc_items.append(item)
-     else: local_items.append(item)
-    elif has_utc: utc_items.append(item)
-    elif has_local: local_items.append(item)
-  # Pair one-to-one in document order only when each role has matching cardinality.
-  # Unequal cardinality is retained as unpaired evidence, not guessed.
-  utc_items.sort(key=lambda x:(x['line'],x['value']))
-  local_items.sort(key=lambda x:(x['line'],x['value']))
-  if utc_items and len(utc_items)==len(local_items):
-   for u,l in zip(utc_items,local_items):
-    if abs(u['line']-l['line'])>8: continue
-    delta=(u['dt'].astimezone(UTC)-l['dt'].astimezone(UTC)).total_seconds()
-    expected=l['dt'].astimezone(TEHRAN)
-    same_instant=(delta==0)
-    local_zone_match=(l['dt'].utcoffset()==expected.utcoffset() and l['dt'].replace(tzinfo=None)==expected.replace(tzinfo=None))
-    status='PASS_SAME_INSTANT_AND_TEHRAN_ZONE' if same_instant and local_zone_match else ('FAIL_INSTANT_MISMATCH' if not same_instant else 'FAIL_TEHRAN_ZONE_MISMATCH')
-    pairs.append({'path':rel,'utc_line':u['line'],'local_line':l['line'],'utc':u['value'],'local':l['value'],'status':status,'delta_seconds_utc_minus_local':delta,'expected_tehran':expected.isoformat(timespec='seconds')})
-    paired_occurrences.add((u['line'],u['value'])); paired_occurrences.add((l['line'],l['value'])); file_paired.add((u['line'],u['value'])); file_paired.add((l['line'],l['value']))
-  else:
-   # Same-line explicit pairs are eligible even if the paragraph has extra timestamp fields.
-   for ln,line in para:
-    hits=[(m.group(1),parse(m.group(1))) for m in ISO.finditer(line)]
-    if len(hits)==2 and UTC_LABEL.search(line) and LOCAL_LABEL.search(line) and all(x[1] is not None for x in hits):
-     a,b=hits
-     if a[1].utcoffset().total_seconds()==0: u,l=a,b
-     elif b[1].utcoffset().total_seconds()==0: u,l=b,a
-     else: continue
-     delta=(u[1].astimezone(UTC)-l[1].astimezone(UTC)).total_seconds()
-     expected=u[1].astimezone(TEHRAN)
-     zone_match=l[1].utcoffset()==expected.utcoffset() and l[1].replace(tzinfo=None)==expected.replace(tzinfo=None)
-     status='PASS_SAME_INSTANT_AND_TEHRAN_ZONE' if delta==0 and zone_match else ('FAIL_INSTANT_MISMATCH' if delta else 'FAIL_TEHRAN_ZONE_MISMATCH')
-     pairs.append({'path':rel,'utc_line':ln,'local_line':ln,'utc':u[0],'local':l[0],'status':status,'delta_seconds_utc_minus_local':delta,'expected_tehran':expected.isoformat(timespec='seconds')})
-     paired_occurrences.add((ln,u[0])); paired_occurrences.add((ln,l[0])); file_paired.add((ln,u[0])); file_paired.add((ln,l[0]))
- files.append({'path':rel,'sha256':hashlib.sha256(raw).hexdigest(),'timestamp_count':n,'paired_timestamp_occurrences':len(file_paired),'unpaired_timestamp_occurrences':max(0,n-len(file_paired))})
-counts={'audit_execution_utc':run,'repository_commit':commit,'files_scanned':len(files),'timestamp_strings_found':total,'utc_local_pairs_examined':len(pairs),'pairs_pass_same_instant_and_zone':sum(x['status']=='PASS_SAME_INSTANT_AND_TEHRAN_ZONE' for x in pairs),'pairs_fail_instant_mismatch':sum(x['status']=='FAIL_INSTANT_MISMATCH' for x in pairs),'pairs_fail_tehran_zone_mismatch':sum(x['status']=='FAIL_TEHRAN_ZONE_MISMATCH' for x in pairs),'pairs_unverifiable_parse':sum(x['status']=='UNVERIFIABLE_PARSE' for x in pairs),'parse_errors_or_timezone_missing':len(errors),'unpaired_timestamp_occurrences':sum(x['unpaired_timestamp_occurrences'] for x in files)}
-report={'schema':'palang-semantic-timestamp-pair-audit/v1','counts':counts,'pairs':pairs,'parse_errors':errors,'files':files,'scope_limit':'Explicit UTC/local labels are paired within a paragraph only when role counts agree; unpaired timestamps are not guessed.'}
+   instant=dt.astimezone(UTC); expected_local=instant.astimezone(TEHRAN)
+   status='NORMALIZED_COUNTERPART_CREATED'
+   if local_label and dt.utcoffset()!=expected_local.utcoffset():
+    status='REVIEW_TEHRAN_OFFSET_MISMATCH'
+   if local_label and dt.replace(tzinfo=None)!=expected_local.replace(tzinfo=None):
+    status='FAIL_TEHRAN_LOCAL_VALUE_MISMATCH'
+   if utc_label and instant.utcoffset()!=timedelta_zero():
+    status='FAIL_UTC_LABEL_OFFSET_MISMATCH'
+   item={'path':rel,'line':ln,'original':val,'role':role,'utc_equivalent':instant.isoformat(timespec='seconds').replace('+00:00','Z'),'tehran_equivalent':expected_local.isoformat(timespec='seconds'),'status':status,'inferred':inferred,'source_line':line.strip()[:240]}
+   stamps.append(item)
+  # if a line explicitly presents both values, compare all normalized instants in that line.
+ # repository time is the canonical timestamp for registering this file, independent of historical embedded times.
+ files.append(file_record)
+counts={'audit_execution_utc':run_s,'repository_commit':commit,'files_scanned':len(files),'timestamp_strings_found':total,'timestamps_normalized':sum(bool(x.get('utc_equivalent')) for x in stamps),'counterparts_created':sum(bool(x.get('inferred')) for x in stamps),'ambiguous_or_parse_errors':len(errors),'tehran_offset_or_value_failures':sum(x['status'] in ('REVIEW_TEHRAN_OFFSET_MISMATCH','FAIL_TEHRAN_LOCAL_VALUE_MISMATCH') for x in stamps),'utc_label_failures':sum(x['status']=='FAIL_UTC_LABEL_OFFSET_MISMATCH' for x in stamps),'files_with_repository_commit_time':sum(bool(x['repository_registration_utc']) for x in files),'files_without_repository_commit_time':sum(not x['repository_registration_utc'] for x in files)}
+report={'schema':'palang-repository-time-normalization-audit/v2','counts':counts,'timestamp_records':stamps,'parse_or_ambiguity_issues':errors,'files':files,'rule':'Repository last-change commit timestamp is the registration anchor for each file; UTC is canonical and Asia/Tehran is derived from that UTC instant. Embedded message/event timestamps are historical evidence and do not replace repository registration time.'}
 (OUT/'timestamp-pairs-semantic-audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-lines=['# Semantic UTC / Tehran Timestamp Pair Audit','',f'- Audit execution UTC: {run}',f'- Repository commit: {commit}','','## Counts']+[f'- {k}: {v}' for k,v in counts.items()]+['','## Pairs']
-lines += [f"- {x['status']} | {x['path']}:{x['utc_line']}~{x['local_line']} | {x['utc']} <> {x['local']} | delta={x['delta_seconds_utc_minus_local']} seconds | expected Tehran={x['expected_tehran']}" for x in pairs] or ['- No confidently labelled UTC/local pairs detected; this is not proof none exist.']
-lines += ['','## Parse issues']+[f"- {x['path']}:{x['line']} {x['value']} — {x['reason']}" for x in errors]+['','## Limits','- Explicit UTC/local labels are paired within a paragraph only when role counts agree; same-line pairs are a fallback. Ambiguous or unpaired timestamps remain flagged.','- Message time is never inferred from commit time.','- UTC is canonical; Tehran conversion uses IANA Asia/Tehran rules.']
+lines=['# Repository Registration Timestamp Normalization Audit','',f'- Audit execution UTC: {run_s}',f'- Repository HEAD: {commit}','','## Counts']+[f'- {k}: {v}' for k,v in counts.items()]+['','## Per-file repository registration anchors']
+lines += [f"- {x['path']} | UTC={x['repository_registration_utc'] or 'UNKNOWN'} | Tehran={x['repository_registration_tehran'] or 'UNKNOWN'} | source={x['repository_time_source']}" for x in files]
+lines += ['','## Embedded timestamp normalization']
+lines += [f"- {x['status']} | {x['path']}:{x['line']} | original={x['original']} | role={x['role']} | UTC={x['utc_equivalent'] or 'UNKNOWN'} | Tehran={x['tehran_equivalent'] or 'UNKNOWN'} | inferred={x['inferred']}" for x in stamps]
+lines += ['','## Issues']+[f"- {x['path']}:{x['line']} {x['value']} — {x['reason']}" for x in errors]+['','## Rule','- The repository registration anchor is the last-change commit timestamp for each file.','- UTC is canonical; Asia/Tehran is calculated from that UTC instant using IANA timezone rules.','- A timestamp without an offset is inferred only when the same line reliably labels it UTC or Tehran. Otherwise it remains unknown.','- Repository registration time is not represented as original message creation time.']
 (OUT/'timestamp-pairs-semantic-audit.txt').write_text('\n'.join(lines)+'\n',encoding='utf-8')
-print('SEMANTIC_TIMESTAMP_PAIR_AUDIT')
+print('REPOSITORY_TIME_NORMALIZATION_AUDIT')
 for k,v in counts.items(): print(f'{k}={v}')
-for x in pairs: print(f"{x['status']} {x['path']}:{x['utc_line']}~{x['local_line']} {x['utc']} <> {x['local']} delta_seconds={x['delta_seconds_utc_minus_local']}")
-print('result=REVIEW_REQUIRED' if counts['pairs_fail_instant_mismatch'] or counts['pairs_fail_tehran_zone_mismatch'] or counts['pairs_unverifiable_parse'] or errors else 'result=PAIR_ARITHMETIC_PASS_WITH_SCOPE_LIMITS')
+print('result=REVIEW_REQUIRED' if errors or counts['tehran_offset_or_value_failures'] or counts['utc_label_failures'] or counts['files_without_repository_commit_time'] else 'result=REPOSITORY_TIME_NORMALIZATION_PASS')
