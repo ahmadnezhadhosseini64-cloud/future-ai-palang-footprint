@@ -937,3 +937,13 @@ The queue index and the timestamp case must each be read back after this update.
 - **وضعیت:** OPEN / PARTIAL — شمارش درخت و شواهد اولیه ثبت شده؛ گزارش کامل زمان‌به‌زمان، تطبیق UTC/محلی و تعیین همهٔ موارد ناقص هنوز اجرا نشده است.
 - **شاهد اجرای اسکن:** [Living Architecture Audit #39627266388](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39627266388) — SUCCESS در `2026-10-21T15:37:00Z`; 444 پروندهٔ مرتبط بررسی ماشینی شدند؛ 14 نامزد نیازمند بازبینی، 229 پرونده با شاهد UTC/offset و 248 با منطقه/offset شناسایی شد. گزارش کامل در artifact اجرا موجود است.
 - **شرط بستن:** بررسی نقش‌محور 14 نامزد، تطبیق محاسبات UTC/offset برای جفت‌هایی که به یک لحظه اشاره دارند، نتیجهٔ هر مورد، و بازخوانی نهایی. اجرای موفق اسکن به معنی حل همهٔ موارد نیست.
+
+
+## AIRC — ثبت خودکار هر ورودی/خروجی (OPEN)
+- **Stable ID:** `AUTOMATIC-INTERACTION-REGISTRATION-CONTRACT-2026-10-21-001`; **Production ID:** `AIRC-2026-10-21-001`.
+- **رویداد:** [EVT-0073](../BEHAVIOR-TRACE/EVT-0073-AUTOMATIC-INTERACTION-REGISTRATION-CONTRACT-2026-10-21.md).
+- **قرارداد:** [Automatic Interaction Registration Contract](../GOVERNANCE/AUTOMATIC-INTERACTION-REGISTRATION-CONTRACT-2026-10-21-001.md).
+- **هدف پذیرش:** هر ورودی/خروجی بدون فرمان «ثبت کن» به‌طور خودکار پابند، UTC-anchor، شناسهٔ مستقل، رکورد قابل‌بازیابی و زنجیرهٔ read-back بگیرد.
+- **وضعیت:** سیاست ACTIVE / LIVING؛ runtime OPEN / NOT PROVEN. فایل قرارداد در مخزن به‌تنهایی به جریان زندهٔ ChatGPT متصل نیست.
+- **گام بعدی:** ساخت/اتصال Host Adapter با صف پایدار و آزمون AIRC-T01..T10، از جمله بازیابی پس از restart، idempotency، آزمون شش سند و بررسی جداگانهٔ Repository/Buffer/Library/Persistent Memory/Dropbox.
+- **شرط بستن:** شواهد اجرای واقعی برای ورودی و خروجی زنده، read-back از مقصد، تطبیق محتوا، زمان‌های معتبر و بازیابی پس از restart؛ نه صرفاً موفقیت ممیزی مخزن.
