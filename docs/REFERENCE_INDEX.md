@@ -441,3 +441,10 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - [EVT-0076](architecture/BEHAVIOR-TRACE/EVT-0076-REPOSITORY-REGISTRATION-TIME-IS-CANONICAL-2026-10-21.md) — هر ثبت فایل/رویداد یک جفت زمان دارد: UTC مرجع + تهران تبدیل‌شده.
 - استاندارد حاکم: [ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21-001](architecture/GOVERNANCE/ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21-001.md), اصلاحیهٔ 1.2.0.
 - ابزار ممیزی: scripts/audit_timestamp_pairs_semantic.py؛ از تاریخچهٔ کامل Git زمان آخرین commit هر فایل را به‌عنوان زمان ثبت مخزن استخراج می‌کند.
+
+
+## EVT-0077 — ساده‌سازی معیار زمان ثبت مخزن
+- [EVT-0077](architecture/BEHAVIOR-TRACE/EVT-0077-REPOSITORY-TIME-SIMPLIFICATION-2026-10-21.md) — یک معیار ثبت: commit UTC همان فایل؛ معادل تهران از همان لحظه.
+- [سند مرجع زندهٔ ساده‌سازی](reference/REFERENCE-DOCUMENTS/REPOSITORY-TIME-ANCHOR-SIMPLIFICATION-LIVING-REFERENCE-2026-10-21-001.md) — دلیل تصمیم، قواعد حفظ زمان‌های زمینه‌ای، چکش و گام‌های بعد.
+- [لنگر مستقل ۰.۰](0.0/REPOSITORY-TIME-ANCHOR-SIMPLIFICATION-0.0-2026-10-21-001.md) — نقطهٔ بازیابی و ادامهٔ پروژه.
+- اصلاحیهٔ استاندارد حاکم: 1.3.0؛ سیاست فعال است، اما ممیزی سراسری اسناد تاریخی همچنان OPEN تا ارائهٔ شواهد کامل.
