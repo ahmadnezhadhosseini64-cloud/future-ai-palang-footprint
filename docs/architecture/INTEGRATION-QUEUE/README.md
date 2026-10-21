@@ -947,3 +947,9 @@ The queue index and the timestamp case must each be read back after this update.
 - **وضعیت:** سیاست ACTIVE / LIVING؛ runtime OPEN / NOT PROVEN. فایل قرارداد در مخزن به‌تنهایی به جریان زندهٔ ChatGPT متصل نیست.
 - **گام بعدی:** ساخت/اتصال Host Adapter با صف پایدار و آزمون AIRC-T01..T10، از جمله بازیابی پس از restart، idempotency، آزمون شش سند و بررسی جداگانهٔ Repository/Buffer/Library/Persistent Memory/Dropbox.
 - **شرط بستن:** شواهد اجرای واقعی برای ورودی و خروجی زنده، read-back از مقصد، تطبیق محتوا، زمان‌های معتبر و بازیابی پس از restart؛ نه صرفاً موفقیت ممیزی مخزن.
+
+
+## EVT-0074 — ثبت خروجی و چکش قرارداد AIRC
+- رویداد: [EVT-0074](../BEHAVIOR-TRACE/EVT-0074-AUTOMATIC-REGISTRATION-ARCHITECTURE-INTEGRATION-AND-PEH-2026-10-21.md).
+- شاهد: [Living Architecture Audit 39628300222](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39628300222) — PASS روی commit پیش از رویداد خروجی نهایی؛ ممیزی بعدی پس از این ثبت لازم است.
+- وضعیت: سیاست معماری ثبت شده و به نقاط اصلی وصل است؛ capture زنده OPEN / NOT PROVEN؛ آزمون AIRC-T01..T10 باز.
