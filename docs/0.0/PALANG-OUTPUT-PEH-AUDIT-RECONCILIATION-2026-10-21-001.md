@@ -81,3 +81,12 @@ PRESERVE → IDENTIFY → VERIFY → RECONCILE → REGISTER → READ-BACK → MA
 - ممیزی پس از ثبت صف: [39580209577](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39580209577) — SUCCESS؛ 0 پیوند مفقود و شمارش همسان شناسه‌ها.
 - رویداد اجرایی: [EVT-0064](../architecture/BEHAVIOR-TRACE/EVT-0064-HAIF-DOCUMENT-RETRIEVAL-PROVENANCE-2026-10-21.md).
 - محدودیت: این جست‌وجو واژه‌محور است؛ بازیابی معنایی/برداری، آزمون restart و استخراج خودکار مخزن هنوز باز هستند.
+
+
+## 9. Latest read-back — current prototype and graph audit
+
+- Current prototype test evidence: [run 39580170352](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39580170352) — 7 passed, 1 warning, 0 failed.
+- Current graph audit evidence: [run 39580370198](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39580370198), audited commit `40e814a61d5cf08ca2304356c6dc75256f877be3`, SUCCESS.
+- Fresh counts: 544 source files; 1,351 local Markdown edges; 0 missing links; 0 decode errors; 39 Stable ID groups; 50 Production ID groups; 7 Reference ID groups; 10 EVT number groups; 11 exact-content duplicate groups; 38 declared parent edges; 0 unresolved/ambiguous parent edges; 792 identifier occurrences.
+- The parser mismatch is closed for this snapshot and the missing-link count is zero. The repeated identifier groups remain candidates for semantic role adjudication, not automatically true identity conflicts.
+- Model direction is confirmed: continue from the existing HAIF initial-model master and `prototype/haif-v0`. Document ingest/retrieval is tested, but keyword-based only. Next bounded gate: restart persistence and source-backed retrieval; then semantic search design only if the test results justify it.
