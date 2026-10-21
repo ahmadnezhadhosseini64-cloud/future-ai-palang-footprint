@@ -31,3 +31,10 @@
 ## Next action
 
 با «برگشتم» یا «شروع کن»، ابتدا مرجع مادر و این رویداد را بخوان، آخرین commit و آزمون‌ها را بررسی کن، سپس ورود کنترل‌شدهٔ اسناد مخزن به مدل اولیه را اجرا کن. از صفر شروع نکن، معماری موازی نساز، و نتیجهٔ تأییدنشده را بسته اعلام نکن.
+
+
+## پیوند به قاعدهٔ زمان دائمی
+- Standard: [ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21-001](../GOVERNANCE/ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21-001.md).
+- Time of rule application: `2026-10-21T13:40:14+03:30` Tehran / `2026-10-21T10:10:14Z` UTC.
+- Read-back of connected records: `2026-10-21T13:40:46+03:30` Tehran / `2026-10-21T10:10:46Z` UTC.
+- The exact user message timestamp was not available; the assistant/system time is recorded independently.
