@@ -16,7 +16,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-from fastapi import FastAPI, HTTPException, status
+from fastapi import FastAPI, HTTPException, Query, status
 from pydantic import BaseModel, Field
 
 
@@ -326,7 +326,7 @@ def create_app(db_path: str | Path | None = None) -> FastAPI:
         return {**actual, "content_sha256": digest, "status": "WRITE_READBACK_VERIFIED"}
 
     @app.get("/api/v1/search")
-    def search_documents(q: str = Field(min_length=1, max_length=200)) -> dict[str, Any]:
+    def search_documents(q: str = Query(min_length=1, max_length=200)) -> dict[str, Any]:
         term = q.strip().casefold()
         if not term:
             raise HTTPException(status_code=422, detail="SEARCH_QUERY_REQUIRED")
