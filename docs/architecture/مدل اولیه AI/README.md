@@ -39,3 +39,10 @@
 ## سند مرجع زندهٔ نام‌گذاری‌شده — مبنای بازگشت ۰.۰
 - [مدل اولیه — لنگر ۰.۰ و سند مرجع زنده](./مدل%20اولیه%20—%20لنگر%20۰.۰%20و%20سند%20مرجع%20زنده.md) — Stable ID: `PALANG-INITIAL-AI-MODEL-0.0-RETURN-MASTER-REFERENCE-2026-10-21-001`, Production ID: `PIM0RM-2026-10-21-001`, Version 1.0.0.
 - این سند، مرجع جامع نام‌گذاری‌شده برای هدف محصول، معماری، قواعد ثبت، وضعیت شواهد و صف ادامه است. وضعیت: ACTIVE / LIVING / GOVERNING BASELINE در مخزن؛ مقصدهای بیرونی تأیید نشده‌اند.
+
+## سند مرجع مادر — الگوریتم استخراج و محصول رایگان HAIF
+[سند مرجع مادر — الگوریتم استخراج مدل و محصول رایگان HAIF](./سند%20مرجع%20مادر%20—%20الگوریتم%20استخراج%20مدل%20و%20محصول%20رایگان%20HAIF.md)
+- Stable ID: `HAIF-EXTRACTABLE-INTERACTION-MODEL-FREE-APP-MASTER-REFERENCE-2026-10-21-001`
+- Production ID: `HEIMFA-MR-2026-10-21-001`; Version: `1.0.0`.
+- Status: ACTIVE / LIVING / GOVERNING / OPEN FOR GROWTH. سند شامل معماری Master–Child–Rahm، الگوریتم استخراج از مخزن، طرح نسخهٔ رایگان، معیارهای پذیرش و صف بازگشت است.
+- Registration timestamp: `2026-10-21T11:09:51+03:30` (Asia/Tehran).
