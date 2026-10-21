@@ -383,3 +383,9 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - Results: 521 source files, 1,245 local Markdown links, 0 missing links, 0 decode errors, 38 declared parent edges, 0 unresolved/ambiguous parent edges, 32 Stable ID groups, 45 Production ID groups, 7 Reference ID groups, 9 EVT number groups, 11 exact-content duplicate groups, 727 identifier occurrences.
 - Structural PASS only. The audit does not validate every semantic relationship or establish production readiness. The prototype test run [39536269368](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39536269368) passed 5 tests with 1 upstream warning and 0 failures.
 - This is a snapshot of the audited commit. After these evidence entries are written, a final structural run is required.
+
+
+## Return anchor — semantic graph audit continuation (2026-10-21)
+- [PALANG-RETURN-SEMANTIC-AUDIT-RESUME-2026-10-21-001](0.0/PALANG-RETURN-SEMANTIC-AUDIT-RESUME-2026-10-21-001.md) — independent ACTIVE / LIVING / OPEN-PARTIAL return anchor.
+- [EVT-0062](architecture/BEHAVIOR-TRACE/EVT-0062-RETURN-ANCHOR-AND-SEMANTIC-AUDIT-RESUME-2026-10-21.md) — user return input and continuation decision.
+- Next gate: rerun audit after parser correction; inspect text/JSON artifacts; continue evidence-based semantic review. No full semantic closure is claimed.
