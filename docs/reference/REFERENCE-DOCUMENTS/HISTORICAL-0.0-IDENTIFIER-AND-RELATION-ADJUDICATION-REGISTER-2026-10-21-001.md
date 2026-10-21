@@ -178,3 +178,10 @@ Files whose purpose or role is not yet clear stay in the active review queue or 
 - The identity decisions for EVT-0005 and EVT-0006 remain DISTINCT EVENT IDENTITIES / SHORT-NUMBER COLLISION RETAINED. Their full inbound/outbound edge audit is not closed; the code-search result counts (13 and 7 matching files respectively) are bounded evidence, not exhaustive proof of all consumers.
 - Separate open issue: two overlapping reference documents have distinct Stable IDs but share Production ID `UOAR-HAIF-2026-10-19-001`. Canonical role, lineage, and consumer audit remain OPEN. No file was deleted or merged and no identifier was rewritten.
 - Latest audit [39524928927](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39524928927) was triggered on commit `a185c50155d3e3e8900d460579d811076c180bbb`; at time of this note it must not be treated as validating the subsequent register/master edits. A final post-edit audit is required.
+
+
+## Addendum v2.3.0 — post-correction structural verification
+- Latest successful structural run at this point: [39525249292](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39525249292), commit `bf1daede4907bc98bc5d1fc1f3e31ae4d1844ea0`, runner UTC `2026-10-21T01:05:27Z`.
+- Expanded manifest: 503 source files; 1,092 links / 0 missing; 38 parent edges / 0 unresolved / 0 ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 exact-content duplicate groups; 701 identifier occurrences; 0 decode errors. Legacy scanner separately reports 13 Stable ID and 24 Production ID groups.
+- Scoped EVT reference review corrected two ambiguous EVT-0005 references and two misleading EVT-0051 labels/pointers; detailed evidence remains in [H0EVTCA](./HISTORICAL-0.0-EVT-NUMBER-COLLISION-ADJUDICATION-2026-10-21-001.md). Group-wide inbound/outbound audit and canonicalization remain OPEN.
+- Run 39525249292 predates this register update; final post-edit audit required.
