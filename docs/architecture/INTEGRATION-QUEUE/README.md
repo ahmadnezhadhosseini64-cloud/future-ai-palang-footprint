@@ -909,7 +909,7 @@ The queue index and the timestamp case must each be read back after this update.
 
 
 ## HAIF v0 executable prototype — first implementation increment
-- **Code and run instructions:** [prototype/haif-v0](../../prototype/haif-v0/README.md).
+- **Code and run instructions:** [prototype/haif-v0](../../../prototype/haif-v0/README.md).
 - **Implementation event:** [EVT-0059](../BEHAVIOR-TRACE/EVT-0059-HAIF-V0-PROTOTYPE-IMPLEMENTATION-2026-10-21.md).
 - **Test evidence:** [HAIF Prototype Tests 39536269368](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39536269368) — 5 passed, 1 warning, 0 failed.
 - **Implemented:** local SQLite anchors/events, canonical JSON SHA-256, post-write read-back, unknown-anchor rejection and explicit local-only persistence status.
