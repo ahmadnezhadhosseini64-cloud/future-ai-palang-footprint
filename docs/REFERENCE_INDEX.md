@@ -463,3 +463,12 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - استاندارد حاکم: ASSISTANT-TIMESTAMP-ANCHOR-STANDARD، اصلاحیهٔ 1.5.0.
 - سند مرجع زمان: REPOSITORY-TIME-ANCHOR-SIMPLIFICATION-LIVING-REFERENCE، اصلاحیهٔ 1.2.0.
 - EVT-0079 — تأیید صریح کاربر و فعال‌سازی اصل در معماری.
+
+
+## EVT-0080 — لنگر جایگزین برای زمان پیام ناموجود و چکش زنجیره
+- رویداد: [EVT-0080](architecture/BEHAVIOR-TRACE/EVT-0080-MISSING-USER-TIMESTAMP-REPOSITORY-ANCHOR-AND-CHAIN-CHECK-2026-10-21.md).
+- قاعدهٔ حاکم: زمان واقعی پیام اگر در دسترس نیست صریحاً UNAVAILABLE می‌ماند؛ اما زمان ثبت مخزن به‌عنوان لنگر جایگزین UTC + معادل Asia/Tehran ثبت می‌شود.
+- زمان ثبت اولیهٔ EVT-0080: `2026-10-21T19:09:43Z` UTC = `2026-10-21T22:39:43+03:30` تهران؛ commit `833e828ab3e7354ecbf5e24357afebf4397493dc`.
+- لنگر مورد تاریخی EVT-0079: `2026-10-21T19:01:41Z` UTC = `2026-10-21T22:31:41+03:30` تهران؛ commit `abb68c61decd9f495ab9d070ee62f3b2145ab6b0`.
+- استاندارد حاکم: ASSISTANT-TIMESTAMP-ANCHOR-STANDARD، اصلاحیهٔ 1.6.0؛ سند مرجع مادر، بخش 36؛ سند مرجع زندهٔ ساده‌سازی زمان، اصلاحیهٔ 1.3.0.
+- چکش: منشأ commit و جفت‌های زمانی محاسبه شدند؛ بازخوانی نهایی فایل‌ها و وضعیت workflowها باید بر اساس شواهد واقعی گزارش شود.
