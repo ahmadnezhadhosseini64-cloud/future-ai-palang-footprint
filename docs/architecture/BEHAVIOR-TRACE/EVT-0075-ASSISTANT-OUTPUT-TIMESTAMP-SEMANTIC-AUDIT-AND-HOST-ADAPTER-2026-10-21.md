@@ -37,3 +37,12 @@ UTC مرجع است. برای زمان‌های معتبر، تبدیل با پ�
 
 ## مرز اثبات
 آزمون واحد فقط رفتار آزموده‌شدهٔ adapter را ثابت می‌کند؛ workflow موفق فقط ممیزی مخزن را ثابت می‌کند. هیچ‌کدام به‌تنهایی ثابت نمی‌کنند که میزبان ChatGPT همهٔ پیام‌های واقعی را فرستاده است. وضعیت اتصال تولیدکنندهٔ زنده OPEN می‌ماند تا یک ورودی واقعی و خروجی واقعی دریافت، ثبت، بازخوانی و به lineage وصل شوند.
+
+
+## شاهد ثبت اولیه و بازخوانی
+- Initial repository write commit: d05dd1fc42eb31da344abab862568d99f9f560aa.
+- GitHub commit time (registration/write, not message/generation): 2026-10-21T16:02:01Z.
+- Corresponding Tehran time (Asia/Tehran): 2026-10-21T19:32:01+03:30.
+- Arithmetic check: 16:02:01Z + 03:30 = 19:32:01+03:30; same instant.
+- Read-back: GitHub fetch_file returned the full event file and matching Stable ID, Production ID, parent event, time caveat and proof boundary. Exact read-back execution timestamp was not exposed; it remains UNKNOWN rather than inferred.
+- Current verification: repository read-back PASS for this content; semantic audit workflow result and live producer connection remain separate/open.
