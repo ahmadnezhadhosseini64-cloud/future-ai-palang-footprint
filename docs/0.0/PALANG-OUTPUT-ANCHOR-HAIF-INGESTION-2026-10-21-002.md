@@ -119,3 +119,9 @@
 - Run [39612583277](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39612583277) failed: the query was changed to a distinctive content phrase, but a broad replacement also altered the expected source-path string. The search matched; the path assertion failed.
 - The expected path was restored to `docs/reference/REFERENCE-DOCUMENTS/PALANG-RETURN-EXECUTION-MASTER-ANCHOR-2026-10-21-001.md` while keeping the unique content query. Correction commit: `88faa6b3436840743417857d23248405492499f7`.
 - Rerun [39612688928](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39612688928) was queued at last observation. Acceptance remains OPEN pending result.
+
+
+### Fifth integration-test result and correction
+- Run [39612688928](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39612688928) failed because the distinctive phrase selected for search was also copied into the open-work queue, so the count was 2. The allowlist itself and API response were functioning; the assertion incorrectly assumed the phrase was unique.
+- The query is now `this file itself is not proof`, a phrase present in the master anchor but not in the other current allowlisted documents at the time checked. Fix commit: `c972e637dff093f6569d43f7e957f267cdac6484`.
+- The next CI run is required before claiming integration acceptance. All prior failures remain in the evidence history.
