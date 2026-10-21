@@ -246,5 +246,5 @@
 - رویداد مستقل: [EVT-0071](../../architecture/BEHAVIOR-TRACE/EVT-0071-PEH-HAIF-INGESTION-RESTART-TRACK-2026-10-21.md)
 - پیگیری پایدار: [GitHub issue #19](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/19)
 - شاهد تازه‌خوانده‌شده: [CI run 39612814614](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39612814614) — job موفق؛ 11 passed, 1 warning, 0 failed.
-- نتیجهٔ چکش: آزمون CI موفق است، اما اثبات کامل ورود شش سند و بازیابی هر شش پس از restart باید از assertionها و لاگ تأیید شود. failure injection، ممیزی ساختاری تازه و داوری معنایی گراف باز هستند.
+- نتیجهٔ چکش: آزمون CI موفق است؛ ورود شش سند واقعی و شش مسیر یکتا assert شده است. بااین‌حال پس از restart فقط یک سند منتخب بررسی می‌شود و hash محتوای هر فایل با hash ذخیره‌شده به‌صورت موردبه‌مورد تطبیق داده نمی‌شود. این دو معیار همچنان باز هستند. failure injection، ممیزی ساختاری تازه و داوری معنایی گراف باز هستند.
 - مقصدها: Repository تحت ثبت/بازخوانی؛ Buffer، Persistent Memory، Library و Dropbox تأییدنشده.
