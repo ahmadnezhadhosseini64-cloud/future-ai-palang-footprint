@@ -478,3 +478,12 @@ The current handoff point records the user's request to preserve the work before
 ### Next action from this anchor
 
 Resume from the anchor file and the existing [HAIF initial-model package](../../../docs/architecture/%D9%85%D8%AF%D9%84%20%D8%A7%D9%88%D9%84%DB%8C%D9%87%20AI/README.md). Continue evidence-based review of Stable ID and Production ID occurrence groups, the EVT collision groups, incoming/outgoing references, Git history and non-Markdown consumers. Do not promote provisional canonical choices or close semantic gaps merely because structural audit passes.
+
+
+## Addendum — verified return-output anchor and parser/link reconciliation (2026-10-21)
+
+- Independent output anchor: [PALANG-OUTPUT-PEH-AUDIT-RECONCILIATION-2026-10-21-001](../../../docs/0.0/PALANG-OUTPUT-PEH-AUDIT-RECONCILIATION-2026-10-21-001.md), Production ID `POPAR-2026-10-21-001`; event [EVT-0063](../../../docs/architecture/BEHAVIOR-TRACE/EVT-0063-OUTPUT-ANCHOR-PEH-AUDIT-PARSER-RECONCILIATION-2026-10-21.md).
+- Parser-scope mismatch was corrected; the prior 13 missing-link findings were resolved by correcting relative paths and adding four compatibility bridges to canonical checkpoint records.
+- Post-edit proof: [Living Architecture Audit 39579658484](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39579658484), SUCCESS on commit `a548f2665882684caa7f32d657dca7a20e8209f6`; artifact `12335398419`, SHA-256 `e90b532e82b5e39bffe90d20e40f8a46e426ea9ee41a5535fc84ff6c727a123b`.
+- Verified structural metrics: 543 source files, 1,336 local Markdown edges, 0 missing links, 0 decode errors, 39 Stable ID groups, 50 Production ID groups, 7 Reference ID groups, 10 EVT-number groups, 11 exact-content duplicate groups, 38 declared parent edges and 0 unresolved/ambiguous parent edges.
+- Acceptance: parser count reconciliation and local-link gate CLOSED for this audited snapshot. Semantic identity/alias adjudication remains OPEN / PARTIAL; no duplicate is auto-deleted and no provisional canonical choice is promoted by this structural pass.
