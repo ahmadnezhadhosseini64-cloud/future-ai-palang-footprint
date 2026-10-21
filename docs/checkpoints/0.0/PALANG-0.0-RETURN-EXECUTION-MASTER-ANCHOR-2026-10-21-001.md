@@ -72,3 +72,7 @@
 
 ## الحاق لنگر زمانی — تأکید مجدد 2026-10-21
 این نقطهٔ ۰.۰ تابع [استاندارد حاکم زمان‌گذاری](../../architecture/GOVERNANCE/ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21-001.md) و [رویداد EVT-0067](../../architecture/BEHAVIOR-TRACE/EVT-0067-TIMESTAMP-RULE-RECONFIRMATION-2026-10-21.md) است. زمان پیام کاربر اگر قابل‌اتکا نباشد `UNAVAILABLE / NOT CAPTURED` ثبت می‌شود؛ زمان عملیات دستیار در صورت دسترسی ثبت می‌شود؛ زمان شروع، commit، read-back و audit با هم یکی فرض نمی‌شوند. نخستین commit رویداد: `1324d8d6e6093a7c686dc08c4bd6fe096ca58998`, `2026-10-21T10:20:52Z` UTC / `2026-10-21T13:50:52+03:30` تهران. این الحاق لنگرهای قبلی را جایگزین یا خاتمه نمی‌دهد.
+
+
+## مرجع زمانی این لنگر: UTC — EVT-0068
+برای این نقطهٔ ۰.۰، UTC مرجع اصلی است. ابتدا زمان معتبر UTC ثبت شود و زمان تهران از همان لحظه با `Asia/Tehran` مشتق گردد. زمان پیام کاربر، زمان شروع عملیات، commit، بازخوانی و ممیزی جدا هستند؛ زمان ناموجود با `UNAVAILABLE / NOT CAPTURED` مشخص می‌شود. [رویداد EVT-0068](../../architecture/BEHAVIOR-TRACE/EVT-0068-UTC-PRIMARY-TIME-GOVERNANCE-2026-10-21.md) و [استاندارد حاکم](../../architecture/GOVERNANCE/ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21-001.md).
