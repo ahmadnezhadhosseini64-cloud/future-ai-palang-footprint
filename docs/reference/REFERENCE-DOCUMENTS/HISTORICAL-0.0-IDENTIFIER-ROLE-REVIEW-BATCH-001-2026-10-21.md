@@ -86,3 +86,23 @@ Review the remaining Stable ID groups in the findings register, prioritizing:
 3. bilingual/Persian metadata labels;
 4. any ID for which the supposed definition is absent from the group;
 5. Production ID groups that overlap exact-content duplicate groups.
+
+
+## Batch 2 continuation — ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
+
+### Source evidence read-back
+1. `docs/architecture/INTEGRATION-QUEUE/README.md` has this ID in its own top-level identity block: `Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001`, with Production ID `AIQ-2026-10-12-001`. Role: DEFINES.
+2. `docs/reference/REFERENCE-DOCUMENTS/CANONICAL-COMPLETE-PATH-ARCHIVE-2026-10-19/MASTER-CANONICAL-COMPLETE-INTERACTION-AND-REGISTRATION-PATH-2026-10-19-001.md` contains the same ID inside its P1 section describing the architecture integration queue and its work items; the document's own top-level Stable ID is `MASTER-CANONICAL-COMPLETE-INTERACTION-REGISTRATION-PATH-2026-10-19-001`. Role: REFERENCES.
+
+### Decision
+- Queue README: DEFINES.
+- Canonical complete-path archive: REFERENCES.
+- Identity conflict: NOT A TRUE IDENTITY CONFLICT for these two observed occurrences; the repeated identifier is a source definition plus a reference.
+- Limitation: this bounded decision classifies these two paths only. It does not prove all inbound/outbound links have been reviewed or close G-01/G-12.
+- Preservation: no source file deleted, renamed, or rewritten.
+
+### Verification state
+The two source files were fetched from the current repository and their identifier contexts were read back. This is a content-role decision based on visible source text, not a claim that the entire repository's incoming-reference graph is complete. The newly observed 13 missing local links and differing collision-group counts remain separate open audit findings.
+
+### Next batch
+Continue with the next unreviewed Stable ID group from H0GAF, prioritizing bilingual metadata, event/checkpoint intersections, and groups whose scanner output differs from the manifest summary. Preserve the full audit snapshot and inspect exact path/line evidence before making further decisions.
