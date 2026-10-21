@@ -134,3 +134,9 @@ These failures are retained as implementation/test evidence. The current pass pr
 - [Run 39518777369](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39518777369) succeeded on commit `2892eac997b2ba93029d67ef0670601c0a1a46d6` at `2026-10-21T00:02:08Z` UTC.
 - Latest inventory: 501 source files, 1,059 local Markdown links / 0 missing, 38 parent edges / 0 unresolved/ambiguous, 30 Stable ID groups, 43 Production ID groups, 7 Reference ID groups, 8 EVT groups, 11 exact-content duplicate groups, 697 identifier occurrences, 0 decode errors.
 - The run checked the latest reference-index, integration-queue and 0.0 continuation pointers. Structural pass remains separate from semantic acceptance.
+
+
+## Addendum v1.7.0 — latest read-back of the governing index
+- [Run 39518895224](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39518895224) succeeded on commit `2157a8f093c53515020f029f45faf9f131a77c33`, runner UTC `2026-10-21T00:03:12Z`.
+- Counts: 501 source files; 1,062 local links / 0 missing; 38 parent edges / 0 unresolved/ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 exact-content duplicate groups; 697 identifier occurrences; 0 decode errors.
+- The index and latest semantic status references passed the repository's structural audit. Natural-language semantic closure remains OPEN / PARTIAL.
