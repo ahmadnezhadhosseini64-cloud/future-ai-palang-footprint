@@ -418,3 +418,8 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 ## ممیزی تطبیق زمان‌های UTC — 2026-10-21
 - [UTC-TIMESTAMP-RECONCILIATION-AUDIT-2026-10-21-001](reference/REFERENCE-DOCUMENTS/UTC-TIMESTAMP-RECONCILIATION-AUDIT-2026-10-21-001.md) — لنگر پردازش ثبت‌شده؛ ممیزی اولیهٔ درخت مخزن انجام شد؛ ممیزی کامل همهٔ زمان‌ها هنوز OPEN / PARTIAL است.
 - [EVT-0072](architecture/BEHAVIOR-TRACE/EVT-0072-UTC-TIMESTAMP-RECONCILIATION-AUDIT-2026-10-21.md) — ثبت رویداد مستقل و آغاز چکش زمان‌گذاری.
+
+
+## ثبت خودکار دائمی ورودی‌ها و خروجی‌ها — 2026-10-21
+- [AUTOMATIC-INTERACTION-REGISTRATION-CONTRACT-2026-10-21-001](architecture/GOVERNANCE/AUTOMATIC-INTERACTION-REGISTRATION-CONTRACT-2026-10-21-001.md) — قرارداد حاکم ثبت پیش‌فرض همهٔ پیام‌های ورودی/خروجی؛ runtime هنوز نیازمند اتصال و آزمون است.
+- [EVT-0073](architecture/BEHAVIOR-TRACE/EVT-0073-AUTOMATIC-INTERACTION-REGISTRATION-CONTRACT-2026-10-21.md) — رویداد مستقل تصمیم معماری و چکش درخواست.
