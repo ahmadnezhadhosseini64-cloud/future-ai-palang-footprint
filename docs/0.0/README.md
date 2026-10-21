@@ -529,7 +529,7 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 ## لنگر ادامهٔ canonical — 2026-10-21
 - **CCCMR-2026-10-21-001:** [سند مرجع مادر جامع و نقطهٔ ادامه](../reference/REFERENCE-DOCUMENTS/CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001.md) — ACTIVE / LIVING.
 - ورودی ثبت: [EVT-0050](../architecture/BEHAVIOR-TRACE/EVT-0050-USER-REQUEST-CONSOLIDATED-LIVING-MASTER-CONTINUATION-2026-10-21.md).
-- قاعدهٔ ادامه: ابتدا سند مادر، سپس EVT-0051 و گزارش کامل آخرین artifact ممیزی؛ بعد از آن تکمیل G-01/G-12/G-13/G-15/G-16. چهار لنگر ناوبری موجود همچنان فقط زیرمجموعهٔ گراف تاریخی‌اند.
+- قاعدهٔ ادامه: ابتدا سند مادر را بخوان؛ سپس رویداد ساخت/بازخوانی سند مادر را از مسیر کامل `EVT-0051-ASSISTANT-CONSOLIDATED-MASTER-CREATION-AND-READBACK-2026-10-21.md` و رویداد فعال تعمیر manifest را از مسیر کامل `EVT-0052-CANONICAL-GRAPH-MANIFEST-AND-LINK-REPAIR-2026-10-21.md` بازخوانی کن. فایل `EVT-0051-CANONICAL-GRAPH-MANIFEST-AND-LINK-REPAIR-2026-10-21.md` صرفاً یادداشت اصلاحی SUPERSEDED است و رویداد فعال نیست. سپس گزارش کامل آخرین artifact ممیزی را بخوان و G-01/G-12/G-13/G-15/G-16 را ادامه بده. چهار لنگر ناوبری موجود همچنان فقط زیرمجموعهٔ گراف تاریخی‌اند.
 
 
 
