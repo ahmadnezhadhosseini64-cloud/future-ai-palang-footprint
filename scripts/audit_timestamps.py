@@ -77,7 +77,7 @@ report = {"schema":"palang-timestamp-audit/v1", "scope_note":"Repository text in
 lines = ["# Repository Timestamp Audit", "", f"- Execution UTC: {RUN_UTC}", f"- Repository commit: {commit}", "", "## Counts"]
 lines += [f"- {k}: {v}" for k,v in counts.items() if k not in {"repository_commit","audit_execution_utc"}]
 lines += ["", "## Files needing review", "Rows are flags for human/semantic review, not proof of error."]
-flagged = [r for r in records if r["missing_iso_and_unknown_marker"] or (r["timestamp_label_count"] and not r["has_utc_or_offset_evidence"])]
+flagged = [r for r in records if r["missing_iso_and_unknown_marker"] or (r["timestamp_label_count"] and not r["has_explicit_utc_or_offset_evidence"])]
 if not flagged: lines.append("- No files flagged by the simple detection rules.")
 for r in flagged:
     lines.append(f"- `{r['path']}`: iso_count={r['iso_timestamp_count']}; time_labels={r['timestamp_label_count']}; UTC/offset={r['has_utc_or_offset_evidence']}; explicit_unknown={r['explicit_unknown_near_time_label']}")
