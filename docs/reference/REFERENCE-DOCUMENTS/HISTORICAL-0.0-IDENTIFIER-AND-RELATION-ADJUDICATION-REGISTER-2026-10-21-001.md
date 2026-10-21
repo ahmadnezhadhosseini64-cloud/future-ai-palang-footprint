@@ -163,3 +163,10 @@ Files whose purpose or role is not yet clear stay in the active review queue or 
 - Snapshot: 503 source files; 1,084 local links / 0 missing; 38 parent edges / 0 unresolved or ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 exact-content duplicate groups; 701 identifier occurrences; 0 decode errors.
 - Batch 003's five Production ID role decisions are supported by identical SHA-256 and direct read-back; the primary paths remain provisional until Git history and non-Markdown consumers are checked. This does not close all 43 Production ID groups, all 30 Stable ID groups, or the semantic meaning of every edge.
 - Full EVT inbound/outbound reference audit and final canonical decisions for 11 duplicate groups remain OPEN.
+
+
+## Addendum v2.1.0 — latest manifest read-back 39521128996
+- Latest successful audit: [39521128996](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39521128996), commit `200f29d9a3cb8ea58a4eeea2c116d5a3571cd133`, runner UTC `2026-10-21T00:24:34Z`.
+- Expanded manifest: 503 source files, 1,084 local links / 0 missing, 38 parent edges / 0 unresolved / 0 ambiguous, 30 Stable ID groups, 43 Production ID groups, 7 Reference ID groups, 8 EVT groups, 11 exact-content duplicate groups, 701 identifier occurrences, 0 decode errors.
+- Separate legacy audit on the same run reports 13 Stable ID and 24 Production ID collision groups; these use narrower extraction rules and are not interchangeable with expanded-manifest group counts. Preserve this parser-scope distinction until regression fixtures establish a justified unified measure.
+- Current bounded decisions remain unchanged: five additional Production ID role groups in H0PRRB3; canonical promotion remains provisional; all 8 EVT groups still require inbound/outbound reference audit; semantic meaning of the 1,084 links is not individually verified. Structural pass does not close these items.
