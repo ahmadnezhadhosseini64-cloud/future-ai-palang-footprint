@@ -481,3 +481,7 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 ## EVT-0081 — لنگر جایگزین زمان + شواهد مرحله‌به‌مرحله
 - [EVT-0081](architecture/BEHAVIOR-TRACE/EVT-0081-PAIRED-TIME-ANCHOR-AND-PER-STAGE-EVIDENCE-2026-10-21.md) — دو تعهد هم‌زمان: ثبت زمان commit واقعی مخزن به‌عنوان لنگر جایگزین وقتی زمان پیام در دسترس نیست؛ و ثبت شاهد مستقل برای هر مرحله.
 - لنگر ثبت رویداد: UTC `2026-10-21T19:28:55Z` = تهران `2026-10-21T22:58:55+03:30`؛ commit `707d86e7a8774ed33d16902f153bafee9c3242c8`.
+
+## نقطهٔ توقف و بازگشت فعلی — 2026-10-21
+- [HAIF-LEAVE-AND-RETURN-EXECUTION-CHECKPOINT-2026-10-21-001](0.0/HAIF-LEAVE-AND-RETURN-EXECUTION-CHECKPOINT-2026-10-21-001.md) — ثبت نقطهٔ رفتن فعلی، نقطهٔ ۰.۰ مرجع، قاعدهٔ لنگر زمان جایگزین و شواهد هر مرحله، و ترتیب اجرایی بازگشت شامل آزمون شش سند، Dropbox، اثبات مقصدها و ممیزی گراف.
+- لنگر ثبت سند: UTC `2026-10-21T19:33:33Z` = تهران `2026-10-21T23:03:33+03:30`; commit `4d3eb0d22510118fe87984cd4c4806020e297e60`.
