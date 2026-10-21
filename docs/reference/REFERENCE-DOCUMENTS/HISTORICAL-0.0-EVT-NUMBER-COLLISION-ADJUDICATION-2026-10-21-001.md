@@ -62,3 +62,24 @@
 - Semantic identity/status classification for all eight collision groups now has a decision: six older pairs are distinct event subjects; EVT-0050 is two distinct event identities; EVT-0051 is one event plus a correction notice.
 - Full inbound/outbound reference audit for all eight groups is still OPEN. No short-number rewrite, file deletion or broad link rewrite has been performed.
 - Latest parser evidence for the namespace-corrected manifest is [run 39517920781](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39517920781); subsequent register/link updates require the next audit.
+
+
+## Addendum v1.2.0 — scoped reference audit for EVT-0005 and EVT-0006
+
+### Evidence checked
+- Re-read both event files for EVT-0005 and both event files for EVT-0006, plus the 0.0 index, behavior-trace index, integration queue, interaction behavior trace, governing behavior rule, master consolidated reference, the cycle reference, graph audit findings, and canonical graph inventory.
+- Repository code-search inventory returned 13 matching files for `EVT-0005` and 7 for `EVT-0006`. This is a scoped search result, not a proof that every possible textual or non-Markdown consumer was searched.
+
+### Decisions and correction
+- The two EVT-0005 event files remain distinct identities. Most operational index/trace references observed already point to the full filename/path. The pause/resume event had a bare `Related prior event: EVT-0005` reference; this was changed to an explicit link to `EVT-0005-REGISTER-UNIFIED-OUTPUT-ANCHOR-CYCLE-2026-10-19.md` with Stable Reference ID `UNIFIED-OUTPUT-ANCHOR-REGISTRATION-CYCLE-2026-10-19-001`.
+- A continuation instruction in `docs/0.0/README.md` used the ambiguous phrase “read EVT-0005” without selecting which of the two records. It was changed to require the full-path event pointer belonging to that record.
+- Read-back verified the updated pause/resume event blob SHA `c79417ded4bed189131c2c299121e439b7188f75`; its full-path link is present. The 0.0 README edit was committed as `b3ecb48280cf40d501f55c30e093581925da2a8d`; a fresh post-edit read-back is still required below.
+
+### Open issue not silently closed
+- The pause/resume record documents two overlapping reference documents with distinct Stable IDs but a shared Production ID `UOAR-HAIF-2026-10-19-001`: `UNIFIED-OUTPUT-ANCHOR-REGISTRATION-CYCLE-2026-10-19-001` and `UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001`. This is a separate identity/role/canonicalization issue from the duplicate EVT short number. It remains OPEN; no canonical promotion, deletion, merge, or Production ID rewrite is made here.
+- The scoped reference review does not close all inbound/outbound edges for either collision group, nor any of the other six EVT collision groups. Full Git history and non-Markdown consumers are not proven by code search.
+
+### Acceptance boundary
+- Two ambiguous bare references found in the inspected source records were disambiguated to a full path.
+- All four EVT event records for groups 0005 and 0006 remain preserved.
+- Structural audit after these changes is still required. Group-level status: `IDENTITY_DECISION=DECIDED`; `SCOPED_REFERENCE_REVIEW=PARTIAL`; `FULL_INBOUND_OUTBOUND_AUDIT=OPEN`; `CANONICALIZATION=OPEN`.
