@@ -928,3 +928,11 @@ The queue index and the timestamp case must each be read back after this update.
 - **PALANG-RETURN-SEMANTIC-AUDIT-RESUME-2026-10-21-001 / PRSAR-2026-10-21-001** — ACTIVE / LIVING / OPEN-PARTIAL.
 - Anchor: [independent return 0.0](../../0.0/PALANG-RETURN-SEMANTIC-AUDIT-RESUME-2026-10-21-001.md); input event: [EVT-0062](../BEHAVIOR-TRACE/EVT-0062-RETURN-ANCHOR-AND-SEMANTIC-AUDIT-RESUME-2026-10-21.md).
 - Required next action: rerun Living Architecture Audit after parser correction, inspect the new report and JSON artifact, compare changed counts/findings, then continue evidence-based role adjudication. Do not close G-01 or claim all 493 files semantically reviewed until evidence is complete.
+
+
+## ممیزی تطبیق زمان‌های UTC — مورد باز جدید
+- **Stable ID:** `UTC-TIMESTAMP-RECONCILIATION-AUDIT-2026-10-21-001`; **Production ID:** `UTRAA-2026-10-21-001`.
+- **رویداد:** [EVT-0072](../BEHAVIOR-TRACE/EVT-0072-UTC-TIMESTAMP-RECONCILIATION-AUDIT-2026-10-21.md).
+- **سند مرجع:** [ممیزی تطبیق UTC](../../reference/REFERENCE-DOCUMENTS/UTC-TIMESTAMP-RECONCILIATION-AUDIT-2026-10-21-001.md).
+- **وضعیت:** OPEN / PARTIAL — شمارش درخت و شواهد اولیه ثبت شده؛ گزارش کامل زمان‌به‌زمان، تطبیق UTC/محلی و تعیین همهٔ موارد ناقص هنوز اجرا نشده است.
+- **شرط بستن:** گزارش تولیدشده با مخرج روشن، نتیجهٔ هر فایل، منشأ هر timestamp، بررسی محاسبات UTC/offset، و بازخوانی ثبت‌های نهایی.
