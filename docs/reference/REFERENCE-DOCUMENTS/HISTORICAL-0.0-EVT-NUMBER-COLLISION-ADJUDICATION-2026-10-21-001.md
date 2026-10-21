@@ -107,3 +107,10 @@
 - The current 0.0 checkpoint link to EVT-0026 continuity has been made descriptively explicit while preserving its exact full-path target.
 - Identity decisions for these two groups: DECIDED. Scoped reference review: COMPLETED FOR THIS BATCH. Full inbound/outbound audit, Git history and non-Markdown consumers remain OPEN / NOT PROVEN.
 - A fresh post-edit audit and read-back are required before claiming structural acceptance for these edits.
+
+
+## Addendum v1.5.0 — structural audit after EVT reference batch 002
+- Post-registration Living Architecture Audit [39526775625](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39526775625) completed SUCCESS on commit `67f340f6b0dd285b8851bd8a190d270c2d307ac5`, runner UTC `2026-10-21T01:21:04Z`.
+- Expanded manifest: 505 source files; 1,114 local Markdown links / 0 missing; 38 parent edges / 0 unresolved / 0 ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 duplicate groups; 705 identifier occurrences; 0 decode errors.
+- EVT-0019/0026 batch record: [H0EVTRRB2](./HISTORICAL-EVT-0019-0026-REFERENCE-REVIEW-BATCH-002-2026-10-21-001.md); event [EVT-0055](../../architecture/BEHAVIOR-TRACE/EVT-0055-EVT-0019-0026-REFERENCE-REVIEW-BATCH-002-2026-10-21.md).
+- Status remains: identity decisions for these two groups are bounded/decided; full inbound/outbound audit for all eight groups and canonicalization remain OPEN / PARTIAL. Evidence-edit changes require a final post-edit audit.
