@@ -156,3 +156,58 @@ def test_document_survives_app_restart_with_same_hash_and_provenance(tmp_path):
         assert item["source_path"] == "docs/reference/master.md"
         assert item["version"] == "2.0.1"
         assert item["source_origin"] == "restart test fixture"
+
+
+def test_repository_ingestion_manifest_preserves_source_path_version_and_commit(tmp_path, monkeypatch):
+    import json
+    from io import BytesIO
+
+    import ingest_repository_docs as importer
+
+    for relative in importer.ALLOWLIST:
+        source = tmp_path / relative
+        source.parent.mkdir(parents=True, exist_ok=True)
+        source.write_text("# Reference title\n- Version / نسخه: 2.4.1\nsource evidence", encoding="utf-8")
+
+    monkeypatch.setattr(importer, "current_commit", lambda _root: "abc123-test-commit")
+    captured = []
+
+    class FakeResponse:
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *_args):
+            return False
+
+        def read(self):
+            return json.dumps({
+                "status": "WRITE_READBACK_VERIFIED",
+                "document_id": "doc-test",
+                "content_sha256": "a" * 64,
+            }).encode("utf-8")
+
+    def fake_urlopen(request, timeout):
+        assert timeout == 20
+        captured.append(json.loads(request.data.decode("utf-8")))
+        return FakeResponse()
+
+    monkeypatch.setattr(importer, "urlopen", fake_urlopen)
+    report = importer.ingest("http://haif.test/", tmp_path)
+
+    assert report["complete"] is True
+    assert report["verified_count"] == len(importer.ALLOWLIST)
+    assert len(captured) == len(importer.ALLOWLIST)
+    assert all(payload["version"] == "2.4.1" for payload in captured)
+    assert all("commit=abc123-test-commit" in payload["source_origin"] for payload in captured)
+    assert {payload["source_path"] for payload in captured} == set(importer.ALLOWLIST)
+
+
+def test_repository_ingestion_fails_closed_when_source_is_missing(tmp_path, monkeypatch):
+    import ingest_repository_docs as importer
+
+    monkeypatch.setattr(importer, "current_commit", lambda _root: "abc123-test-commit")
+    report = importer.ingest("http://haif.test", tmp_path)
+
+    assert report["complete"] is False
+    assert report["verified_count"] == 0
+    assert all(item["status"] == "SOURCE_MISSING" for item in report["results"])
