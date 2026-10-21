@@ -74,6 +74,18 @@ jobs:
           set -euo pipefail
           python3 scripts/build_historical_graph_manifest.py
 
+      - name: Run semantic UTC and Tehran timestamp pair audit
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/audit_timestamp_pairs_semantic.py | tee audit-output/timestamp-pairs-semantic-audit-run.txt
+
+      - name: Test durable host adapter
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/test_host_adapter.py | tee audit-output/host-adapter-test-run.txt
+
       - name: Upload inspectable audit evidence
         if: always()
         uses: actions/upload-artifact@v4
