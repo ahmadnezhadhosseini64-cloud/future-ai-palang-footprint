@@ -10,7 +10,7 @@ EXT={'.md','.txt','.yml','.yaml','.json','.py','.html','.xml','.csv','.toml'}
 SKIP={'.git','node_modules','.venv','venv','audit-output','__pycache__'}
 ISO=re.compile(r'(?<![A-Za-z0-9])((?:19|20)\d{2}-\d{2}-\d{2}[T ]\d{2}:\d{2}(?::\d{2}(?:\.\d{1,9})?)?(?:Z|[+-]\d{2}:?\d{2})?)(?![A-Za-z0-9])')
 UTC_LABEL=re.compile(r'\bUTC\b|\bZ\b|معادل UTC|زمان مرجع',re.I)
-LOCAL_LABEL=re.compile(r'Asia/Tehran|تهران|Tehran local|local time|زمان تهران',re.I)
+LOCAL_LABEL=re.compile(r'Asia/Tehran|تهران|Tehran local|local time|زمان تهران|local-session time context',re.I)
 def parse(s):
  s=s.replace(' ','T',1)
  if s.endswith('Z'): s=s[:-1]+'+00:00'
@@ -57,7 +57,7 @@ for p in sorted(ROOT.rglob('*')):
  file_record={'path':rel,'sha256':hashlib.sha256(raw).hexdigest(),'repository_registration_utc':file_utc,'repository_registration_tehran':file_local,'repository_time_source':'git last-change commit metadata' if file_time else 'UNAVAILABLE','timestamp_occurrences':0}
  content_lines=txt.splitlines()
  for ln,line in enumerate(content_lines,1):
-  context=' '.join(content_lines[max(0,ln-10):ln])
+  context=' '.join(content_lines[max(0,ln-10):min(len(content_lines),ln+10)])
   for m in ISO.finditer(line):
    val=m.group(1); total+=1; file_record['timestamp_occurrences']+=1
    has_utc_label=bool(UTC_LABEL.search(context))
@@ -86,7 +86,7 @@ for p in sorted(ROOT.rglob('*')):
     status='REVIEW_TEHRAN_OFFSET_MISMATCH'
    if local_claim and dt.replace(tzinfo=None)!=expected_local.replace(tzinfo=None):
     status='FAIL_TEHRAN_LOCAL_VALUE_MISMATCH'
-   item={'path':rel,'line':ln,'original':val,'role':role,'utc_equivalent':instant.isoformat(timespec='seconds').replace('+00:00','Z'),'tehran_equivalent':expected_local.isoformat(timespec='seconds'),'status':status,'inferred':inferred,'source_line':line.strip()[:240]}
+   item={'path':rel,'line':ln,'original':val,'role':role,'utc_equivalent':instant.isoformat(timespec='seconds').replace('+00:00','Z'),'tehran_equivalent':expected_local.isoformat(timespec='seconds'),'status':status,'inferred':inferred,'inference_basis':('project default Asia/Tehran; contextual only' if inferred and 'local-session time context' in context else ('nearby explicit timezone/UTC label' if inferred else 'explicit timestamp offset')),'source_line':line.strip()[:240]}
    stamps.append(item)
   # if a line explicitly presents both values, compare all normalized instants in that line.
  # repository time is the canonical timestamp for registering this file, independent of historical embedded times.
