@@ -24,6 +24,22 @@ jobs:
       - name: Checkout canonical repository
         uses: actions/checkout@v5
 
+      - name: Enforce automatic interaction registration contract links
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f docs/architecture/GOVERNANCE/AUTOMATIC-INTERACTION-REGISTRATION-CONTRACT-2026-10-21-001.md
+          test -f docs/architecture/BEHAVIOR-TRACE/EVT-0073-AUTOMATIC-INTERACTION-REGISTRATION-CONTRACT-2026-10-21.md
+          grep -q 'AUTOMATIC-INTERACTION-REGISTRATION-CONTRACT-2026-10-21-001' docs/architecture/GOVERNANCE/ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21-001.md
+          grep -q 'AUTOMATIC-INTERACTION-REGISTRATION-CONTRACT-2026-10-21-001' docs/reference/REFERENCE-DOCUMENTS/PERMANENT-INTERACTION-ANCHORING-TIMESTAMP-GOVERNANCE-AND-CANONICAL-GRAPH-MASTER-REFERENCE-2026-10-21-001.md
+          grep -q 'AUTOMATIC-INTERACTION-REGISTRATION-CONTRACT-2026-10-21-001' docs/REFERENCE_INDEX.md
+          grep -q 'AUTOMATIC-INTERACTION-REGISTRATION-CONTRACT-2026-10-21-001' docs/architecture/INTEGRATION-QUEUE/README.md
+          grep -q 'AUTOMATIC-INTERACTION-REGISTRATION-CONTRACT-2026-10-21-001' 'docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md'
+          grep -q 'OPEN / NOT PROVEN' docs/architecture/GOVERNANCE/AUTOMATIC-INTERACTION-REGISTRATION-CONTRACT-2026-10-21-001.md
+          echo "AUTOMATIC_INTERACTION_REGISTRATION_POLICY=PASS"
+          echo "LIVE_MESSAGE_CAPTURE=OPEN_NOT_PROVEN"
+          echo "Note: this gate checks repository policy integration only; it does not capture live ChatGPT messages."
+
       - name: Run structural and link audit
         shell: bash
         run: |
