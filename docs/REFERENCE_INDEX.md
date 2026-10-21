@@ -340,3 +340,10 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - **Purpose:** پایهٔ شروع ساخت محصول تعامل‌محور؛ شامل تداوم، بازیابی زمینه، دفتر رویداد، گراف، صف بازبینی، رفتارشناسی، اعتبارسنجی و رشد Master–Child–Rahm.
 - **Status:** معماری پایه در مخزن ثبت شده؛ برنامه هنوز پیاده‌سازی یا مستقر نشده است. گروه‌های شناسه/EVT و موارد تاریخی نامطمئن در صف باقی می‌مانند؛ هیچ موردی به دلیل این مدل حذف نمی‌شود.
 - **Evidence boundary:** ممیزی ساختاری run [39521128996](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39521128996) روی commit `200f29d9a3cb8ea58a4eeea2c116d5a3571cd133` موفق بود؛ این ممیزی به معنی آزمون سرتاسری محصول نیست.
+
+
+
+## Behavior event — HAIF initial product baseline
+- Event: [EVT-0055 — ثبت مدل اولیهٔ محصول HAIF](architecture/BEHAVIOR-TRACE/EVT-0055-HAIF-INITIAL-PRODUCT-ARCHITECTURE-2026-10-21.md).
+- Canonical model: [HAIF-INITIAL-PRODUCT-ARCHITECTURE-2026-10-21-001](reference/REFERENCE-DOCUMENTS/HAIF-INITIAL-PRODUCT-ARCHITECTURE-2026-10-21-001.md).
+- Result: model and links read back; structural audit run `39533528396` passed with 0 missing local links. Application implementation remains open/not built.
