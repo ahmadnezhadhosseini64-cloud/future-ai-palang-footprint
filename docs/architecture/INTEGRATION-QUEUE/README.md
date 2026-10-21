@@ -874,3 +874,13 @@ The queue index and the timestamp case must each be read back after this update.
 
 
 - **Legacy EVT label batch 004 evidence audit — STRUCTURAL PASS / SEMANTIC OPEN:** [39528079194](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39528079194), commit `1447bb9cdc696f2783399d3bc34c9d98cd1dae6c`, UTC `2026-10-21T01:34:15Z`; 1,162 links / 0 missing; 38 parent edges / 0 unresolved/ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 duplicate groups; 713 identifier occurrences; 0 decode errors. Records: [H0EVTRRB4](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-EVT-LEGACY-DISPLAY-LABEL-REVIEW-BATCH-004-2026-10-21-001.md) / [EVT-0057](../../architecture/BEHAVIOR-TRACE/EVT-0057-LEGACY-EVT-DISPLAY-LABEL-REVIEW-BATCH-004-2026-10-21.md). This audit predates the evidence append; rerun after these edits.
+
+
+
+## HAIF initial product architecture baseline — 2026-10-21
+- **Stable ID:** `HAIF-INITIAL-PRODUCT-ARCHITECTURE-2026-10-21-001`; **Production ID:** `HAIF-IPA-2026-10-21-001`; **Version:** `1.0.0`.
+- **Reference:** [مدل اولیهٔ محصول HAIF](../../reference/REFERENCE-DOCUMENTS/HAIF-INITIAL-PRODUCT-ARCHITECTURE-2026-10-21-001.md).
+- **Decision:** OPEN FOR ITERATIVE DEVELOPMENT — ثبت مدل اولیه در مخزن انجام شد؛ لازم نیست پیش از ساخت نمونهٔ اولیه همهٔ شناسه‌ها و روابط تاریخی حل شوند.
+- **Included in baseline:** تعامل و بازیابی زمینه، چندنقطه‌ای ۰.۰، دفتر رویداد، گراف دانش، منشأ/شواهد، صف شکاف، Master–Child–Rahm، چرخهٔ فرضیه تا اعتبارسنجی، رابط کاربر و ذخیره‌سازی مقصدبه‌مقصد.
+- **Open work:** ساخت اسکلت اجرایی مرحلهٔ ۱؛ انتخاب محیط اجرا/میزبانی و احراز هویت؛ پیاده‌سازی و آزمون سرتاسری؛ ادامهٔ بررسی 30 گروه Stable ID، 43 گروه Production ID، 7 گروه Reference ID، 8 گروه EVT و 11 گروه محتوای تکراری طبق ممیزی run `39521128996`. این شمارش‌ها گروه‌های بررسی‌اند، نه حکم قطعی تعارض.
+- **Preservation rule:** هیچ فایل یا ایده‌ای به علت ورود مدل اولیه حذف نمی‌شود؛ موارد نامطمئن در صف باقی می‌مانند و در توسعهٔ بعدی به مدل افزوده یا با دلیل به تعویق می‌افتند.
