@@ -6,7 +6,7 @@
 - Project / پروژه: Future AI / Palang Footprint / HAIF
 - Owner / مالک: احمد پلنگ
 - User-message exact timestamp / زمان دقیق پیام کاربر: UNAVAILABLE / NOT CAPTURED؛ از زمان پردازش یا commit جایگزین نمی‌شود.
-- Status / وضعیت: Repository write + read-back pending final verification; historical whole-repository UTC/Tehran normalization OPEN / PARTIAL.
+- Status / وضعیت: Repository write + read-back content match VERIFIED for this event and linked records; historical whole-repository UTC/Tehran normalization remains OPEN / PARTIAL.
 - Parent reference / سند مرجع: ../../reference/REFERENCE-DOCUMENTS/REPOSITORY-TIME-ANCHOR-SIMPLIFICATION-LIVING-REFERENCE-2026-10-21-001.md
 - Independent anchor / لنگر مستقل: ../../0.0/REPOSITORY-TIME-ANCHOR-SIMPLIFICATION-0.0-2026-10-21-001.md
 - Governing standard / استاندارد حاکم: ../GOVERNANCE/ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21-001.md
@@ -40,15 +40,15 @@
 
 ## شاهدها و مرز تأیید
 - سند مرجع، لنگر ۰.۰، استاندارد حاکم و شاخص مرجع به‌روزرسانی شدند.
-- این رویداد باید پس از ایجاد از مخزن دوباره خوانده شود و شناسه، تصمیم، جدول زمان‌ها و پیوندهای اصلی با نسخهٔ مورد انتظار تطبیق داده شوند.
+- پس از ایجاد، این رویداد دوباره از مخزن خوانده شد؛ شناسه، تصمیم، جدول زمان‌ها و پیوندهای اصلی با محتوای مورد انتظار تطبیق داشتند. این تأیید محتوایی است، نه ادعای هش مستقل.
 - Read-back time: اگر ابزار timestamp واقعی ارائه نکند، UNKNOWN / NOT CAPTURED؛ زمان commit جایگزین آن نمی‌شود.
-- Repository: باید بر اساس نتیجهٔ واقعی write/read-back گزارش شود.
+- Repository: WRITE + READ-BACK MATCH VERIFIED برای رویداد و اسناد مرتبطی که در این چرخه بازخوانی شدند.
 - Buffer / Persistent Memory / Library / Dropbox: UNVERIFIED مگر شواهد مستقل نوشتن و بازیابی موجود باشد.
 - Full historical audit: OPEN / PARTIAL؛ تبدیل تمام timestampهای معتبر قدیمی به جفت UTC/تهران، بررسی ریاضی و اصلاح فایل‌به‌فایل هنوز تکمیل و تأیید نشده است.
 
 ## اقدام‌های بعدی
 1. این رویداد را از مخزن بازخوانی و پیوندها را تطبیق بده.
-2. timestamp واقعی commit این رویداد را به‌عنوان پایان بازه و لنگر نهایی ثبت کن؛ UTC اول، تهران معادل دوم.
+2. timestamp واقعی آخرین commit این رویداد، پس از بسته‌شدن زنجیره، لنگر نهایی است؛ UTC اول و معادل تهران دوم از فراداده استخراج می‌شود.
 3. ممیزی سراسری را اجرا کن: زمان‌های تهران‌تنها، UTC‌تنها، جفت‌های ناسازگار، زمان‌های بی‌برچسب، شناسه‌ها و پیوندها را جدا دسته‌بندی کن.
 4. زمان‌های قدیمی را حذف یا با زمان commit جایگزین نکن؛ فقط جفت معادل معتبر را اضافه کن و منشأ/معنای هر زمان را حفظ کن.
 5. برای ادعای خودکارسازی کامل «ثبت کن»، آزمون‌های runtime و ثبت/بازیابی مستقل لازم است. تا آن زمان، سیاست حاکم فعال است اما خودکارسازی سرتاسری NOT PROVEN است.
