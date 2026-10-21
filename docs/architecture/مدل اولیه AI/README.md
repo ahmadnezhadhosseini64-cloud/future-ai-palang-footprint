@@ -64,3 +64,10 @@
 - لنگر مستقل: [PALANG-0.0-MASTER-REFERENCE-RETURN-EXECUTION-2026-10-21-001](../../../checkpoints/0.0/PALANG-0.0-MASTER-REFERENCE-RETURN-EXECUTION-2026-10-21-001.md).
 - رویداد: [EVT-0060](../BEHAVIOR-TRACE/EVT-0060-MASTER-REFERENCE-RETURN-EXECUTION-2026-10-21.md).
 - وضعیت: ACTIVE / LIVING / GOVERNING / OPEN FOR GROWTH؛ صف اجرایی پس از بازگشت در سند مادر آمده است.
+
+
+## قابلیت اجرایی تازه — ورود و بازیابی سند با منشأ
+- [EVT-0064 — ورود سند و بازیابی همراه با منشأ](../BEHAVIOR-TRACE/EVT-0064-HAIF-DOCUMENT-RETRIEVAL-PROVENANCE-2026-10-21.md).
+- `prototype/haif-v0`: `POST /api/v1/documents` و `GET /api/v1/search?q=...`؛ مسیر منبع، نسخه، منشأ و SHA-256 حفظ می‌شود.
+- آزمون CI: [39580170352](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39580170352) — 7 passed, 1 warning, 0 failed.
+- مرز: بازیابی واژه‌محور است؛ جست‌وجوی معنایی/برداری و آزمون restart در صف باز می‌مانند.
