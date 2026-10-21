@@ -202,3 +202,9 @@ PRESERVE → IDENTIFY → READ SOURCE → CLASSIFY ROLE → CHECK LINEAGE → CH
 - Latest pass: [39518314490](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39518314490), commit `230b6cf3145bc27e18f26fc6afc33bd86b033122`, runner UTC `2026-10-20T23:57:41Z`.
 - 501 source files; 1,030 local links / 0 missing; 38 parent edges / 0 unresolved/ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 duplicate groups; 697 ID occurrences; 0 decode errors.
 - Second identifier-role review batch is included in this commit. Full semantic review remains OPEN / PARTIAL; see [H0IRAR](./HISTORICAL-0.0-IDENTIFIER-AND-RELATION-ADJUDICATION-REGISTER-2026-10-21-001.md).
+
+
+## Addendum v1.8.0 — latest structural acceptance
+- [Run 39518486151](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39518486151) succeeded on commit `2b19eeab0c9f8e1b0a16c3a6550b9f791b9cbac8`, runner UTC `2026-10-20T23:59:24Z`.
+- 501 source files; 1,041 local links / 0 missing; 38 parent edges / 0 unresolved/ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 exact-content duplicate groups; 697 identifier occurrences; 0 decode errors.
+- This validates structural extraction after the latest repository integration changes. It does not prove the natural-language meaning of every relation; semantic status remains OPEN / PARTIAL.
