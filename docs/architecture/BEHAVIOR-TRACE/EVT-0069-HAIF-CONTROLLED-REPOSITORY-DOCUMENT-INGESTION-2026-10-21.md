@@ -72,3 +72,11 @@
 - CI success confirms the code/test suite and the configured audit gates, not that the importer has been run against a live API or that six documents were stored in SQLite.
 
 **Updated state:** implementation and automated tests are repository-verified; real runtime ingestion, provenance search, and post-ingestion restart proof remain OPEN.
+
+
+## پیوند به لنگر مستقل خروجی — EVT-0070
+
+- [لنگر مستقل خروجی جاری](../../0.0/PALANG-OUTPUT-ANCHOR-HAIF-INGESTION-2026-10-21-002.md)
+- [رویداد مستقل ثبت خروجی](./EVT-0070-PALANG-OUTPUT-ANCHOR-HAIF-INGESTION-2026-10-21.md)
+- نتیجهٔ CI ثبت‌شده برای آزمون واحد: 10 passed, 1 warning, 0 failed.
+- آزمون یکپارچهٔ تازه در run 39611543861 در آخرین بررسی هنوز نتیجهٔ نهایی نداشت؛ پس از اجرای آن باید نتیجهٔ واقعی به این رویداد و صف منعکس شود.
