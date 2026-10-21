@@ -86,3 +86,9 @@ Fetch the committed baseline from the default branch and compare it with the int
 - Artifact `12308872095`; SHA-256 `sha256:fa80378ea212d7a90ff746bbd4d7b3db7b46e9fcf27f0117fc3f47617f8268bd`.
 - Latest counts: 501 source files; 1,030 local links / 0 missing; 38 parent edges / 0 unresolved/ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 duplicates; 697 identifier occurrences.
 - Structural pass is confirmed; semantic review of all remaining identifier groups and every relation is not complete.
+
+
+## Addendum — latest repository integration audit
+- [Run 39518486151](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39518486151) passed on commit `2b19eeab0c9f8e1b0a16c3a6550b9f791b9cbac8` at `2026-10-20T23:59:24Z` UTC.
+- Counts: 501 source files; 1,041 local links / 0 missing; 38 parent edges / 0 unresolved/ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 duplicates; 697 identifier occurrences.
+- Current semantic queue: [H0IRAR](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-IDENTIFIER-AND-RELATION-ADJUDICATION-REGISTER-2026-10-21-001.md). Structural success does not mean every relation has semantic proof.
