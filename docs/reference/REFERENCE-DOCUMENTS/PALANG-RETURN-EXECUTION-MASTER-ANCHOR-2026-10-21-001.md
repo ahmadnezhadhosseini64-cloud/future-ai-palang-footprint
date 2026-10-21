@@ -196,3 +196,7 @@
 - استاندارد حاکم: [ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21-001](../../architecture/GOVERNANCE/ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21-001.md)
 - رویداد ثبت: [EVT-0067](../../architecture/BEHAVIOR-TRACE/EVT-0067-USER-CONFIRMS-TIMESTAMP-GOVERNANCE-2026-10-21.md)
 
+
+
+## 10. مرجع اصلی زمان: UTC — EVT-0068
+قاعدهٔ زمانی این لنگر تحت حاکمیت UTC است: ابتدا timestamp معتبر UTC ثبت و نمایش داده می‌شود؛ زمان تهران با قواعد `Asia/Tehran` از همان لحظه مشتق می‌شود. زمان پیام کاربر و زمان‌های عملیات/commit/بازخوانی/ممیزی جدا هستند و زمان ناموجود جعل نمی‌شود. مرجع حاکم: [استاندارد زمان‌گذاری](../../architecture/GOVERNANCE/ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21-001.md)؛ رویداد تثبیت: [EVT-0068](../../architecture/BEHAVIOR-TRACE/EVT-0068-UTC-PRIMARY-TIME-GOVERNANCE-2026-10-21.md).
