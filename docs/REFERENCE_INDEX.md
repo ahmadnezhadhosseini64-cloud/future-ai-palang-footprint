@@ -423,3 +423,7 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 ## ثبت خودکار دائمی ورودی‌ها و خروجی‌ها — 2026-10-21
 - [AUTOMATIC-INTERACTION-REGISTRATION-CONTRACT-2026-10-21-001](architecture/GOVERNANCE/AUTOMATIC-INTERACTION-REGISTRATION-CONTRACT-2026-10-21-001.md) — قرارداد حاکم ثبت پیش‌فرض همهٔ پیام‌های ورودی/خروجی؛ runtime هنوز نیازمند اتصال و آزمون است.
 - [EVT-0073](architecture/BEHAVIOR-TRACE/EVT-0073-AUTOMATIC-INTERACTION-REGISTRATION-CONTRACT-2026-10-21.md) — رویداد مستقل تصمیم معماری و چکش درخواست.
+
+
+## ثبت خروجی و چکش یکپارچه‌سازی AIRC — EVT-0074
+- [EVT-0074](architecture/BEHAVIOR-TRACE/EVT-0074-AUTOMATIC-REGISTRATION-ARCHITECTURE-INTEGRATION-AND-PEH-2026-10-21.md) — ثبت خروجی دستیار، اتصال معماری و چکش فهم درخواست.
