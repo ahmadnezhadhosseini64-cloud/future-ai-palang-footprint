@@ -361,3 +361,9 @@ This document can be considered repository-integrated only after the file, index
 - Scoped code-search evidence: 12 results for EVT-0019 and 13 for EVT-0026; specific title queries returned 6 and 10. This is not a complete consumer audit.
 - The current 0.0 checkpoint now uses a descriptive label for the EVT-0026 Master–Child–Rahm continuity event while retaining the full-path destination.
 - Status: bounded identity decision and search review recorded; full inbound/outbound graph semantics remain OPEN / PARTIAL. No file was deleted, merged or renumbered.
+
+
+## Addendum — post-registration audit for EVT reference batch 002
+- [Living Architecture Audit 39526775625](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39526775625) passed on commit `67f340f6b0dd285b8851bd8a190d270c2d307ac5`, runner UTC `2026-10-21T01:21:04Z`; artifact `12313657400`, digest `sha256:05a035afe285f9763a3573ed2668d8931705201397f26dd365fc6da220235521`.
+- Metrics: 505 source files; 1,114 local links / 0 missing; 38 parent edges / 0 unresolved / 0 ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 duplicate groups; 705 identifier occurrences; 0 decode errors.
+- EVT-0019 and EVT-0026 reference batch is registered and structurally linked. Full semantic relation review and complete EVT inbound/outbound review remain OPEN / PARTIAL. A fresh audit is required after this evidence addendum.
