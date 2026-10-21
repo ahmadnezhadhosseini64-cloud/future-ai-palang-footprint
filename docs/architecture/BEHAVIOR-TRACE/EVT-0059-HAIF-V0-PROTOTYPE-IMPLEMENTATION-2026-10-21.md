@@ -8,7 +8,7 @@
 - Exact user-message time / زمان دقیق پیام کاربر: UNKNOWN / UNVERIFIED
 - Timezone / منطقهٔ زمانی پروژه: Asia/Tehran (+03:30)
 - Status / وضعیت: PROTOTYPE IMPLEMENTED; latest test rerun pending
-- Canonical implementation: prototype/haif-v0/
+- Canonical implementation: [HAIF v0 README](../../../prototype/haif-v0/README.md); API [app.py](../../../prototype/haif-v0/app.py); tests [test_app.py](../../../prototype/haif-v0/test_app.py).
 - Parent model: [HAIF-IAM-MR](../مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 
 ## منشأ و تصمیم
