@@ -38,7 +38,25 @@ def read_text(path):
 def vals(text, pattern):
     return [m.group(1).strip().strip("`' ") for m in re.finditer(pattern, text, re.I | re.M)]
 
-stable_map, prod_map, content_map, evt_num_map = defaultdict(list), defaultdict(list), defaultdict(list), defaultdict(list)
+def id_vals(text, pattern):
+    # Keep the same conservative token normalization as build_historical_graph_manifest.py.
+    excluded = {"unknown", "unverified", "none", "null", "n/a", "na", "tbd",
+                "not-assigned", "not-assigned-yet", "not-applicable", "placeholder"}
+    result = set()
+    for value in vals(text, pattern):
+        if not value.strip():
+            continue
+        token = value.split()[0].strip(" ' ,;:()[]{}")
+        if not token or token.casefold() in excluded:
+            continue
+        if "$" in token or token.startswith(("{{", "<")) or "}}" in token or "%s" in token:
+            continue
+        if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9._:/+-]*", token):
+            continue
+        result.add(token)
+    return sorted(result)
+
+stable_map, prod_map, reference_id_map, content_map, evt_num_map = defaultdict(list), defaultdict(list), defaultdict(list), defaultdict(list), defaultdict(list)
 records, broken_links, decode_errors = [], [], []
 for p in source_files:
     raw = p.read_bytes()
@@ -48,12 +66,14 @@ for p in source_files:
     if text is None:
         decode_errors.append(p.as_posix())
         continue
-    stable = vals(text, r"^\s*(?:[-*]\s*)?(?:Stable ID|Stable-ID|Canonical Stable ID)\s*:\s*`?([^`\r\n]+)")
-    prod = vals(text, r"^\s*(?:[-*]\s*)?(?:Production ID|Production-ID)\s*:\s*`?([^`\r\n]+)")
-    vers = vals(text, r"^\s*(?:[-*]\s*)?Version\s*:\s*`?([^`\r\n]+)")
+    stable = id_vals(text, r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Stable ID(?:\s*/\s*شناسهٔ پایدار)?|Stable-ID|Canonical Stable ID|Stable Reference ID|Stable Report ID|شناسهٔ پایدار(?: این نقطه)?|شناسه پایدار(?: این نقطه)?)(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
+    prod = id_vals(text, r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Production ID(?:\s*/\s*شناسهٔ تولید)?|Production-ID|Production / Registration ID|شناسهٔ تولید|شناسه تولید|شناسهٔ ثبت)(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
+    reference_ids = id_vals(text, r"^\s*(?:[-*]\s*)?(?:\*\*)?Reference ID(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
+    vers = vals(text, r"^\s*(?:[-*]\s*)?(?:\*\*)?Version(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
     parent = vals(text, r"^\s*(?:[-*]\s*)?(?:Parent(?: input| event| reference)?|Parent ID|Parent Stable ID)\s*:\s*`?([^`\r\n]+)")
-    for x in set(stable): stable_map[x].append(p.as_posix())
-    for x in set(prod): prod_map[x].append(p.as_posix())
+    for x in stable: stable_map[x].append(p.as_posix())
+    for x in prod: prod_map[x].append(p.as_posix())
+    for x in reference_ids: reference_id_map[x].append(p.as_posix())
     evt = re.match(r"EVT-(\d+)-", p.name)
     if evt: evt_num_map[evt.group(1)].append(p.as_posix())
     links = []
@@ -72,7 +92,7 @@ for p in source_files:
             broken_links.append({"source":p.as_posix(),"target":target,"resolved_candidate":rel})
     records.append({
         "path":p.as_posix(),"sha256":sha,"bytes":len(raw),
-        "stable_ids":sorted(set(stable)),"production_ids":sorted(set(prod)),
+        "stable_ids":stable,"production_ids":prod,"reference_ids":reference_ids,
         "versions":sorted(set(vers)),"parents":sorted(set(parent)),
         "event_number":evt.group(1) if evt else None,"local_links_checked":len(links)
     })
@@ -82,6 +102,7 @@ def collisions(mapping):
 duplicate_content = [{"sha256":k,"paths":sorted(v)} for k,v in sorted(content_map.items()) if len(v)>1]
 stable_collisions = collisions(stable_map)
 prod_collisions = collisions(prod_map)
+reference_id_collisions = collisions(reference_id_map)
 evt_collisions = collisions(evt_num_map)
 report = {
     "schema":"palang-historical-graph-audit/v1",
@@ -101,11 +122,13 @@ report = {
         "local_markdown_links_missing":len(broken_links),
         "stable_id_collision_groups":len(stable_collisions),
         "production_id_collision_groups":len(prod_collisions),
+        "reference_id_collision_groups":len(reference_id_collisions),
         "event_number_collision_groups":len(evt_collisions),
         "exact_content_duplicate_groups":len(duplicate_content)
     },
     "stable_id_collisions":stable_collisions,
     "production_id_collisions":prod_collisions,
+    "reference_id_collisions":reference_id_collisions,
     "event_number_collisions":evt_collisions,
     "exact_content_duplicates":duplicate_content,
     "missing_local_links":broken_links,
@@ -127,6 +150,7 @@ for k,v in report["counts"].items(): lines.append(f"- {k}: {v}")
 for title,key in [
     ("Stable ID collisions","stable_id_collisions"),
     ("Production ID collisions","production_id_collisions"),
+    ("Reference ID collisions","reference_id_collisions"),
     ("EVT number collisions (number is not a unique key)","event_number_collisions"),
     ("Exact-content duplicate candidates (preserve files; canonicalize by alias/lineage)","exact_content_duplicates"),
     ("Missing local links","missing_local_links"),
@@ -146,4 +170,6 @@ print("HISTORICAL_0_0_GRAPH_AUDIT")
 print(f"audit_time_utc={RUN_UTC}")
 print(f"repository_commit={commit}")
 for k,v in report["counts"].items(): print(f"{k}={v}")
+for item in broken_links:
+    print(f"missing_local_link={item['source']} -> {item['target']} (resolved={item['resolved_candidate']})")
 print("outputs=audit-output/historical-0.0-graph-audit.txt,audit-output/historical-0.0-graph-audit.json")
