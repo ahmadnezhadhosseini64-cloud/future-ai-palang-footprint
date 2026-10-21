@@ -214,3 +214,9 @@ PRESERVE → IDENTIFY → READ SOURCE → CLASSIFY ROLE → CHECK LINEAGE → CH
 - Latest successful audit: [39518636358](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39518636358), commit `d207f558ab2a10e392c3f5c8d84de8996a7d8024`, UTC `2026-10-21T00:00:46Z`.
 - 501 source files; 1,050 local links / 0 missing; 38 parent edges / 0 unresolved/ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 exact-content duplicate groups; 697 ID occurrences.
 - Architecture spec [FAPF-IRA](./FUTURE-AI-PALANG-FOOTPRINT-IMPLEMENTABLE-REFERENCE-ARCHITECTURE-2026-10-21-001.md) is the buildable design baseline. Full semantic acceptance and application end-to-end implementation remain open.
+
+
+## Addendum v2.0.0 — latest current-reference audit
+- [Run 39518777369](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39518777369) passed on commit `2892eac997b2ba93029d67ef0670601c0a1a46d6` at `2026-10-21T00:02:08Z` UTC.
+- 501 source files; 1,059 local links / 0 missing; 38 parent edges / 0 unresolved/ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 duplicate groups; 697 identifier occurrences; 0 decode errors.
+- Structural acceptance passes; full semantic review of every source and relationship remains OPEN / PARTIAL.
