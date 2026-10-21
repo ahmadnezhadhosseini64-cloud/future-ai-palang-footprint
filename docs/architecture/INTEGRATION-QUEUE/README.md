@@ -862,3 +862,6 @@ The queue index and the timestamp case must each be read back after this update.
 
 
 - **EVT batch 003 evidence audit — STRUCTURAL PASS / SEMANTIC OPEN:** [39527349236](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39527349236), commit `3fcd1d4cd7ba91846c0de9abd9cdc00b9047015c`, UTC `2026-10-21T01:27:00Z`; 1,138 local links / 0 missing; 38 parent edges / 0 unresolved/ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 duplicate groups; 709 identifier occurrences; 0 decode errors. This run predates the evidence append; a final audit is required.
+
+
+- **Legacy EVT display-label review batch 004 — WRITTEN / POST-EDIT AUDIT PENDING:** [H0EVTRRB4](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-EVT-LEGACY-DISPLAY-LABEL-REVIEW-BATCH-004-2026-10-21-001.md) and [EVT-0057](../../architecture/BEHAVIOR-TRACE/EVT-0057-LEGACY-EVT-DISPLAY-LABEL-REVIEW-BATCH-004-2026-10-21.md). Several short labels in legacy indexes were clarified while preserving exact full-path targets. Full inbound/outbound semantic review remains OPEN.
