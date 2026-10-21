@@ -61,3 +61,14 @@
 7. پس از آن به داوری معنایی موردبه‌مورد گروه‌های شناسه و EVT برگرد؛ موارد باز را حذف یا بی‌دلیل بسته اعلام نکن.
 
 **قاعدهٔ اثبات:** طراحی‌شدن ≠ اجراشدن؛ commit ≠ آزمون موفق؛ نوشتن ≠ بازخوانی؛ بازخوانی ≠ تطبیق؛ مخزن ≠ مقصدهای مستقل.
+
+
+## 7. CI/read-back update — verified repository evidence
+
+- **HAIF Prototype Tests:** [run 39611314780](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39611314780) — SUCCESS, **10 passed, 1 warning, 0 failed**. This run includes the importer and its two new unit tests, at commit `6725809b556d6e4f25585290773c4cfd45dacbf5`.
+- **Living Architecture Audit:** [run 39611383556](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39611383556) — SUCCESS on commit `6b0128608e6bf7978e40499c822fe1f462eea41e`.
+- **Cross-Layer Integrity Gate:** [run 39611383383](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39611383383) — SUCCESS on commit `6b0128608e6bf7978e40499c822fe1f462eea41e`.
+- Files `ingest_repository_docs.py`, `test_app.py`, this event record, and the open-gap queue were read back from the repository; file hashes/SHAs were returned by GitHub. The architecture and cross-layer workflow conclusions apply only to their checked commits.
+- CI success confirms the code/test suite and the configured audit gates, not that the importer has been run against a live API or that six documents were stored in SQLite.
+
+**Updated state:** implementation and automated tests are repository-verified; real runtime ingestion, provenance search, and post-ingestion restart proof remain OPEN.
