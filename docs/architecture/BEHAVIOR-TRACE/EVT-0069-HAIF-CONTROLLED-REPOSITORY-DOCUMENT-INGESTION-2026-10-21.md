@@ -80,3 +80,10 @@
 - [رویداد مستقل ثبت خروجی](./EVT-0070-PALANG-OUTPUT-ANCHOR-HAIF-INGESTION-2026-10-21.md)
 - نتیجهٔ CI ثبت‌شده برای آزمون واحد: 10 passed, 1 warning, 0 failed.
 - آزمون یکپارچهٔ تازه در run 39611543861 در آخرین بررسی هنوز نتیجهٔ نهایی نداشت؛ پس از اجرای آن باید نتیجهٔ واقعی به این رویداد و صف منعکس شود.
+
+
+## Integration acceptance result — linked to EVT-0070
+- The integration test was corrected and the test job passed in [HAIF Prototype Tests #39612814614](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39612814614), commit `c972e637dff093f6569d43f7e957f267cdac6484`: `11 passed, 1 warning, 0 failed`.
+- The test covers six allowlisted repository documents, API write/read-back hash, provenance search, and retrieval after app restart using the same temporary SQLite database.
+- See [EVT-0070](./EVT-0070-PALANG-OUTPUT-ANCHOR-HAIF-INGESTION-2026-10-21.md) and [independent output anchor](../../0.0/PALANG-OUTPUT-ANCHOR-HAIF-INGESTION-2026-10-21-002.md).
+- This does not prove live-host ingestion or external persistence. Buffer, Persistent Memory, Library and Dropbox remain independently unverified.
