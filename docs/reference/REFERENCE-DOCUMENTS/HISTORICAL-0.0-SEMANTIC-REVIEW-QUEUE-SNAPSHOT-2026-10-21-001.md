@@ -128,3 +128,9 @@ These failures are retained as implementation/test evidence. The current pass pr
 - Audited commit: `d207f558ab2a10e392c3f5c8d84de8996a7d8024`; runner UTC: `2026-10-21T00:00:46Z`.
 - Latest counts: 501 source files; 1,050 local Markdown edges / 0 missing; 38 declared parent edges / 0 unresolved or ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 exact-content duplicate groups; 697 identifier occurrences; 0 decode errors.
 - Structural acceptance is PASS. Semantic acceptance remains OPEN / PARTIAL by design until the remaining groups and every relation receive source-level decisions.
+
+
+## Addendum v1.6.0 — latest audit of current reference records
+- [Run 39518777369](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39518777369) succeeded on commit `2892eac997b2ba93029d67ef0670601c0a1a46d6` at `2026-10-21T00:02:08Z` UTC.
+- Latest inventory: 501 source files, 1,059 local Markdown links / 0 missing, 38 parent edges / 0 unresolved/ambiguous, 30 Stable ID groups, 43 Production ID groups, 7 Reference ID groups, 8 EVT groups, 11 exact-content duplicate groups, 697 identifier occurrences, 0 decode errors.
+- The run checked the latest reference-index, integration-queue and 0.0 continuation pointers. Structural pass remains separate from semantic acceptance.
