@@ -259,7 +259,7 @@ def test_real_repository_allowlist_ingests_searches_and_survives_restart(tmp_pat
 
         search = client.get(
             "/api/v1/search",
-            params={"q": "PALANG-RETURN-EXECUTION-MASTER-ANCHOR-2026-10-21-001"},
+            params={"q": "PREMA-2026-10-21-001"},
         )
         assert search.status_code == 200
         result = search.json()
@@ -267,7 +267,7 @@ def test_real_repository_allowlist_ingests_searches_and_survives_restart(tmp_pat
         item = result["items"][0]
         assert item["source_path"] == (
             "docs/reference/REFERENCE-DOCUMENTS/"
-            "PALANG-RETURN-EXECUTION-MASTER-ANCHOR-2026-10-21-001.md"
+            "PREMA-2026-10-21-001.md"
         )
         assert item["source_origin"].endswith("commit=integration-test-commit; allowlisted repository document")
         assert item["content_sha256"]
@@ -283,7 +283,7 @@ def test_real_repository_allowlist_ingests_searches_and_survives_restart(tmp_pat
     with TestClient(create_app(db_path)) as restarted_client:
         restarted = restarted_client.get(
             "/api/v1/search",
-            params={"q": "PALANG-RETURN-EXECUTION-MASTER-ANCHOR-2026-10-21-001"},
+            params={"q": "PREMA-2026-10-21-001"},
         )
         assert restarted.status_code == 200
         assert restarted.json()["count"] == 1
