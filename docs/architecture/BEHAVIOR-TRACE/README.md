@@ -45,7 +45,7 @@
 
 ## وضعیت سند مرجع زندهٔ چرخهٔ یکپارچه
 - سند مرجع canonical در مخزن ثبت و پس از نوشتن بازخوانی شد؛ شناسه، چرخه و بخش‌های الزامی بررسی شدند.
-- پیوند رویداد ثبت: [EVT-0005](./EVT-0005-UNIFIED-OUTPUT-ANCHOR-LIVING-REFERENCE-REGISTRATION-2026-10-19.md).
+- پیوند رویداد ثبت: [EVT-0005 — ثبت سند مرجع زندهٔ لنگر خروجی](./EVT-0005-UNIFIED-OUTPUT-ANCHOR-LIVING-REFERENCE-REGISTRATION-2026-10-19.md).
 - بافر، کتابخانه و حافظهٔ پایدار مستقل تأیید نشده‌اند؛ Dropbox در این رویداد آزموده نشده است.
 - زمان دقیق تعامل/اقدام نامعلوم است و حدس زده نمی‌شود.
 
@@ -94,7 +94,7 @@
 
 
 ## رویداد EVT-0030 — ثبت درخواست «ثبت کن»
-- [EVT-0030](./EVT-0030-REGISTER-COMMAND-ACKNOWLEDGEMENT-2026-10-20.md)
+- [EVT-0030 — ثبت درخواست «ثبت کن» و تأیید نقطهٔ ادامه](./EVT-0030-REGISTER-COMMAND-ACKNOWLEDGEMENT-2026-10-20.md)
 - Stable ID: `REGISTER-COMMAND-ACKNOWLEDGEMENT-2026-10-20-001`; Production ID: `RCA-2026-10-20-001`.
 - منشأ: پیام مستقیم کاربر «ثبت کن»؛ به‌عنوان اجرای چرخهٔ ثبت روی نقطهٔ جاری، بدون ادعای ذخیره در مقصدهای مستقل.
 - لنگر اصلی ۰.۰ حفظ شده است؛ Dropbox و مقصدهای مستقل همچنان جداگانه نیازمند اثبات‌اند.
@@ -239,7 +239,7 @@
 
 
 ## EVT-0051 — ایجاد سند مادر تجمیعی و راستی‌آزمایی
-- [EVT-0051](./EVT-0051-ASSISTANT-CONSOLIDATED-MASTER-CREATION-AND-READBACK-2026-10-21.md) — Production ID: EVT51-2026-10-21-001.
+- [EVT-0051 — ساخت سند مرجع مادر تجمیعی و بازخوانی](./EVT-0051-ASSISTANT-CONSOLIDATED-MASTER-CREATION-AND-READBACK-2026-10-21.md) — Production ID: EVT51-2026-10-21-001.
 - Parent input: [EVT-0050-USER-REQUEST-CONSOLIDATED-LIVING-MASTER-CONTINUATION-2026-10-21](./EVT-0050-USER-REQUEST-CONSOLIDATED-LIVING-MASTER-CONTINUATION-2026-10-21.md).
 - Canonical continuation: [CCCMR-2026-10-21-001](../../reference/REFERENCE-DOCUMENTS/CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001.md).
 
@@ -254,7 +254,7 @@
 
 
 ## EVT-0052 — manifest گراف و اصلاح پیوندها
-- [EVT-0051](./EVT-0052-CANONICAL-GRAPH-MANIFEST-AND-LINK-REPAIR-2026-10-21.md)
+- [EVT-0052 — تعمیر manifest گراف و پیوندها](./EVT-0052-CANONICAL-GRAPH-MANIFEST-AND-LINK-REPAIR-2026-10-21.md)
 - [دفتر یافته‌های JSON ممیزی](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-AUDIT-FINDINGS-2026-10-21-001.md)
 - [سند مرجع مادر زنده](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-RECONCILIATION-LIVING-MASTER-REFERENCE-2026-10-21-001.md)
 - [سازندهٔ manifest گراف](../../../scripts/build_historical_graph_manifest.py)
