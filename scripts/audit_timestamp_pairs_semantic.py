@@ -7,12 +7,12 @@ import hashlib, json, re, subprocess
 ROOT=Path('.'); OUT=ROOT/'audit-output'; OUT.mkdir(exist_ok=True)
 UTC=timezone.utc; TEHRAN=ZoneInfo('Asia/Tehran')
 EXT={'.md','.txt','.yml','.yaml','.json','.py','.html','.xml','.csv','.toml'}; SKIP={'.git','node_modules','.venv','venv','audit-output'}
-ISO=re.compile(r'(?<![A-Za-z0-9])((?:19|20)\\d{2}-\\d{2}-\\d{2}[T ]\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d{1,6})?)?(?:Z|[+-]\\d{2}:?\\d{2})?)(?![A-Za-z0-9])')
-UTC_LABEL=re.compile(r'\\bUTC\\b|\\bZ\\b|معادل UTC',re.I); LOCAL_LABEL=re.compile(r'Asia/Tehran|تهران|Tehran local|local time',re.I)
+ISO=re.compile(r'(?<![A-Za-z0-9])((?:19|20)\d{2}-\d{2}-\d{2}[T ]\d{2}:\d{2}(?::\d{2}(?:\.\d{1,6})?)?(?:Z|[+-]\d{2}:?\d{2})?)(?![A-Za-z0-9])')
+UTC_LABEL=re.compile(r'\bUTC\b|\bZ\b|معادل UTC',re.I); LOCAL_LABEL=re.compile(r'Asia/Tehran|تهران|Tehran local|local time',re.I)
 def parse(s):
  s=s.replace(' ','T',1)
  if s.endswith('Z'): s=s[:-1]+'+00:00'
- s=re.sub(r'([+-]\\d{2})(\\d{2})$',r'\\1:\\2',s)
+ s=re.sub(r'([+-]\d{2})(\d{2})$',r'\1:\2',s)
  d=datetime.fromisoformat(s)
  return d if d.tzinfo else None
 try: commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
@@ -44,11 +44,11 @@ for p in sorted(ROOT.rglob('*')):
  files.append({'path':rel,'sha256':hashlib.sha256(raw).hexdigest(),'timestamp_count':n})
 counts={'audit_execution_utc':run,'repository_commit':commit,'files_scanned':len(files),'timestamp_strings_found':total,'explicit_same_line_utc_local_pairs':len(pairs),'pairs_pass_same_instant':sum(x['status']=='PASS_SAME_INSTANT' for x in pairs),'pairs_fail_instant_mismatch':sum(x['status']=='FAIL_INSTANT_MISMATCH' for x in pairs),'pairs_unverifiable_parse':sum(x['status']=='UNVERIFIABLE_PARSE' for x in pairs),'parse_errors_or_timezone_missing':len(errors)}
 report={'schema':'palang-semantic-timestamp-pair-audit/v1','counts':counts,'pairs':pairs,'parse_errors':errors,'files':files,'scope_limit':'Only explicitly labelled UTC/local values on the same line are paired; unpaired timestamps are not guessed.'}
-(OUT/'timestamp-pairs-semantic-audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\\n',encoding='utf-8')
+(OUT/'timestamp-pairs-semantic-audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 lines=['# Semantic UTC / Tehran Timestamp Pair Audit','',f'- Audit execution UTC: {run}',f'- Repository commit: {commit}','','## Counts']+[f'- {k}: {v}' for k,v in counts.items()]+['','## Pairs']
 lines += [f"- {x['status']} | {x['path']}:{x['line']} | {x['a']} <> {x['b']} | delta={x['delta_seconds_a_minus_b']} seconds" for x in pairs] or ['- No confidently labelled same-line pairs detected; this is not proof none exist.']
 lines += ['','## Parse issues']+[f"- {x['path']}:{x['line']} {x['value']} — {x['reason']}" for x in errors]+['','## Limits','- Only explicitly labelled same-line UTC/Tehran pairs are validated.','- Message time is never inferred from commit time.','- UTC is canonical; Tehran conversion uses IANA Asia/Tehran rules.']
-(OUT/'timestamp-pairs-semantic-audit.txt').write_text('\\n'.join(lines)+'\\n',encoding='utf-8')
+(OUT/'timestamp-pairs-semantic-audit.txt').write_text('\n'.join(lines)+'\n',encoding='utf-8')
 print('SEMANTIC_TIMESTAMP_PAIR_AUDIT')
 for k,v in counts.items(): print(f'{k}={v}')
 for x in pairs: print(f"{x['status']} {x['path']}:{x['line']} {x['a']} <> {x['b']} delta_seconds={x['delta_seconds_a_minus_b']}")
