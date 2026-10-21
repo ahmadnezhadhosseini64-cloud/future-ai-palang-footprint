@@ -953,3 +953,10 @@ The queue index and the timestamp case must each be read back after this update.
 - رویداد: [EVT-0074](../BEHAVIOR-TRACE/EVT-0074-AUTOMATIC-REGISTRATION-ARCHITECTURE-INTEGRATION-AND-PEH-2026-10-21.md).
 - شاهد: [Living Architecture Audit 39628300222](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39628300222) — PASS روی commit پیش از رویداد خروجی نهایی؛ ممیزی بعدی پس از این ثبت لازم است.
 - وضعیت: سیاست معماری ثبت شده و به نقاط اصلی وصل است؛ capture زنده OPEN / NOT PROVEN؛ آزمون AIRC-T01..T10 باز.
+
+
+## EVT-0075 — ممیزی زمان و میزبان
+- رویداد: ../BEHAVIOR-TRACE/EVT-0075-ASSISTANT-OUTPUT-TIMESTAMP-SEMANTIC-AUDIT-AND-HOST-ADAPTER-2026-10-21.md
+- سند مرجع: ../../reference/REFERENCE-DOCUMENTS/SEMANTIC-TIMESTAMP-AUDIT-AND-HOST-CAPTURE-RECOVERY-MASTER-REFERENCE-2026-10-21-001.md
+- ابزارها: scripts/audit_timestamp_pairs_semantic.py؛ scripts/host_adapter.py؛ scripts/test_host_adapter.py
+- وضعیت: OPEN / PARTIAL؛ producer زنده، انتقال به GitHub و مقصدهای مستقل اثبات‌نشده‌اند.
