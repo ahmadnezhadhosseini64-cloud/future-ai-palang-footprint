@@ -25,7 +25,8 @@
 ## چکش
 - PASS: شاهد CI برای آزمون نمونه بازخوانی شد.
 - PASS: پیگیری پایدار در مخزن ایجاد شد.
-- OPEN: تطبیق کامل هر شش سند پس از ingest و restart باید از assertionهای آزمون و لاگ مشخص شود.
+- PASS: آزمون CI برای ورود اسناد واقعی، `verified_count == 6` و شش مسیر منبع یکتا را assert می‌کند.
+- PARTIAL / OPEN: پس از restart فقط یک سند منتخب بازیابی و تطبیق می‌شود؛ بازیابی هر شش سند و تطبیق hash منبع‌به‌ذخیره هنوز باز است.
 - OPEN: failure injection، ممیزی ساختاری پس از آخرین تغییر و داوری معنایی گراف.
 - NOT VERIFIED: Buffer، Persistent Memory، Library، Dropbox و production deployment.
 
