@@ -306,3 +306,10 @@ This document can be considered repository-integrated only after the file, index
 - Snapshot: 503 source files; 1,080 local links / 0 missing; 38 parent edges / 0 unresolved or ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 exact-content duplicate groups; 701 identifier occurrences; 0 decode errors.
 - Audit artifact `12310173787`, SHA-256 `sha256:934124271cef0e23ead5aed97a032012d833084dbb00d3b14f20ec0d282a3b11`.
 - This validates the batch and link structure, not full semantic closure. [H0PRRB3](./HISTORICAL-0.0-PRODUCTION-ID-ROLE-REVIEW-BATCH-003-2026-10-21.md) records five more Production ID role decisions; canonical promotion remains provisional.
+
+
+## Addendum v2.12.0 — latest audited read-back after batch 003
+- Latest successful audit: [39521051751](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39521051751), audited commit `755774e4fc0a38255dee6b256197b42f78850379`, runner UTC `2026-10-21T00:23:49Z`.
+- Snapshot: 503 source files; 1,084 local Markdown edges / 0 missing; 38 parent edges / 0 unresolved or ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 exact-content duplicate groups; 701 identifier occurrences; 0 decode errors.
+- Audit artifact `12310818790`, SHA-256 `sha256:abbc2b070f2615dcd82fbd654c824c848ff64102b2b1eb218dd7072e5053fd78`.
+- This latest pass includes the batch-003 read-back record. Structural checks pass; full semantic relation closure remains OPEN / PARTIAL.
