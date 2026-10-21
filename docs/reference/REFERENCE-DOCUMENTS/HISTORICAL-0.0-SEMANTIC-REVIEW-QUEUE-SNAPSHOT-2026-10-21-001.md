@@ -140,3 +140,10 @@ These failures are retained as implementation/test evidence. The current pass pr
 - [Run 39518895224](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39518895224) succeeded on commit `2157a8f093c53515020f029f45faf9f131a77c33`, runner UTC `2026-10-21T00:03:12Z`.
 - Counts: 501 source files; 1,062 local links / 0 missing; 38 parent edges / 0 unresolved/ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 exact-content duplicate groups; 697 identifier occurrences; 0 decode errors.
 - The index and latest semantic status references passed the repository's structural audit. Natural-language semantic closure remains OPEN / PARTIAL.
+
+
+## Addendum v1.9.0 — third role-review batch pending fresh audit
+- [H0PRRB3](./HISTORICAL-0.0-PRODUCTION-ID-ROLE-REVIEW-BATCH-003-2026-10-21.md) reviewed five Production ID groups for 0.0 Vault. [EVT-0054](../../architecture/BEHAVIOR-TRACE/EVT-0054-PRODUCTION-ID-ROLE-REVIEW-BATCH-003-2026-10-21.md) records the action.
+- Role decisions are evidence-based from read-back and SHA-256 equality. Canonical promotion remains provisional; do not delete/merge copies.
+- Snapshot evidence used: run 39518895224, audited commit `2157a8f093c53515020f029f45faf9f131a77c33`. A fresh workflow run after these new files and governing-register updates is required before claiming the updated snapshot passed.
+- Remaining semantic work: review other Production ID groups, remaining Stable ID groups, EVT inbound/outbound references, and meaning of all link edges.
