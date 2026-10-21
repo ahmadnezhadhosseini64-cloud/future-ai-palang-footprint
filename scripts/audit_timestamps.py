@@ -85,4 +85,7 @@ lines += ["", "## Limits", "- This is a repository-wide automated inventory, not
 (OUT / "timestamp-audit.txt").write_text("\n".join(lines) + "\n", encoding="utf-8")
 print("REPOSITORY_TIMESTAMP_AUDIT")
 for k,v in counts.items(): print(f"{k}={v}")
+for r in records:
+    if r["missing_iso_and_unknown_marker"]:
+        print(f"MISSING_ISO_OR_UNKNOWN path={r['path']} time_labels={r['timestamp_label_count']}")
 print("outputs=audit-output/timestamp-audit.txt,audit-output/timestamp-audit.json")
