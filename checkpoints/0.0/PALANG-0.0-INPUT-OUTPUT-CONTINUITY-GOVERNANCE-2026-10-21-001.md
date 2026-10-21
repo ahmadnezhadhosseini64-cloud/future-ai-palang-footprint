@@ -77,3 +77,10 @@ PRESERVE → IDENTIFY → CLASSIFY → PROVENANCE → STABLE/PRODUCTION ID + VER
 - Stable ID: `HAIF-EXTRACTABLE-INTERACTION-MODEL-FREE-APP-MASTER-REFERENCE-2026-10-21-001`; Production ID: `HEIMFA-MR-2026-10-21-001`; Version 1.0.0.
 - زمان ثبت سند: `2026-10-21T11:09:51+03:30` (Asia/Tehran).
 - هدف بازگشت: استخراج شواهد از مخزن، تفکیک قابلیت‌های واقعی از طرح، تولید manifest و سپس ساخت و آزمون نمونه در چرخهٔ Master → Child → Rahm. این کار باز است؛ این سند به‌تنهایی پیاده‌سازی را ثابت نمی‌کند.
+
+
+## لنگر فرزند جدید — قاعدهٔ خودکار ثبت و ادامه پس از بازگشت — 2026-10-21
+- [PALANG-0.0-AUTOMATIC-INPUT-ANCHOR-AND-RETURN-RESUME-GOVERNANCE-2026-10-21-001](./PALANG-0.0-AUTOMATIC-INPUT-ANCHOR-AND-RETURN-RESUME-GOVERNANCE-2026-10-21-001.md) — ACTIVE / LIVING / OPEN FOR GROWTH.
+- Production ID: `P0AIRRG-2026-10-21-001`; Version 1.0.0; registration timestamp `2026-10-21T11:32:53+03:30` (Asia/Tehran).
+- رویداد: [EVT-0059](../../docs/architecture/BEHAVIOR-TRACE/EVT-0059-AUTOMATIC-ANCHOR-REGISTRATION-AND-RETURN-RESUME-GOVERNANCE-2026-10-21.md).
+- این لنگر فرزند است؛ لنگر مادر و نقاط تاریخی دیگر همچنان مستقل می‌مانند.
