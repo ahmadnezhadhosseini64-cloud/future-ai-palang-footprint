@@ -301,3 +301,8 @@ T1 ورودی و خروجی قابل‌بازیابی؛ T2 زمان‌های م�
 - **چرخه:** CAPTURE → BIND → ANCHOR → CLASSIFY → PRESERVE → LINK → WRITE → READ-BACK → MATCH → VERIFY → STATUS (دریافت → پابندگذاری → لنگرگذاری → طبقه‌بندی → حفظ → پیوند → نوشتن → بازخوانی → تطبیق → تأیید → وضعیت).
 - **محدودیت اثبات:** ثبت قرارداد و پیوندهای مخزن به معنی خودکارشدن دریافت همهٔ پیام‌های زنده نیست. اجرای runtime تا اتصال Host Adapter و پاس‌شدن آزمون‌های AIRC-T01..T10 باز است. GitHub Actions به‌تنهایی جریان پیام‌های ChatGPT را دریافت نمی‌کند.
 - **مقصدها:** Repository، Buffer، Library، Persistent Memory و Dropbox جداگانه ارزیابی می‌شوند؛ وضعیت مقصدی بدون شاهد، UNVERIFIED است.
+
+
+## 35. رویداد خروجی و چکش ثبت خودکار — EVT-0074
+- [EVT-0074](../../architecture/BEHAVIOR-TRACE/EVT-0074-AUTOMATIC-REGISTRATION-ARCHITECTURE-INTEGRATION-AND-PEH-2026-10-21.md) — شواهد اتصال قرارداد AIRC به استاندارد زمان، سند مادر، نمایه، صف، مدل اولیه و گیت ممیزی.
+- وضعیت: پیوندهای مخزن بازخوانی شده‌اند؛ ثبت خودکار همهٔ پیام‌های زنده هنوز اثبات نشده و باید با Host Adapter و آزمون end-to-end ثابت شود.
