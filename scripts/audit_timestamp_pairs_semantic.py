@@ -4,7 +4,6 @@ from pathlib import Path
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 import hashlib, json, re, subprocess
-from datetime import timedelta
 ROOT=Path('.'); OUT=ROOT/'audit-output'; OUT.mkdir(exist_ok=True)
 UTC=timezone.utc; TEHRAN=ZoneInfo('Asia/Tehran')
 EXT={'.md','.txt','.yml','.yaml','.json','.py','.html','.xml','.csv','.toml'}
@@ -61,7 +60,7 @@ for p in sorted(ROOT.rglob('*')):
     status='REVIEW_TEHRAN_OFFSET_MISMATCH'
    if local_label and dt.replace(tzinfo=None)!=expected_local.replace(tzinfo=None):
     status='FAIL_TEHRAN_LOCAL_VALUE_MISMATCH'
-   if utc_label and instant.utcoffset()!=timedelta_zero():
+   if utc_label and dt.utcoffset().total_seconds()!=0:
     status='FAIL_UTC_LABEL_OFFSET_MISMATCH'
    item={'path':rel,'line':ln,'original':val,'role':role,'utc_equivalent':instant.isoformat(timespec='seconds').replace('+00:00','Z'),'tehran_equivalent':expected_local.isoformat(timespec='seconds'),'status':status,'inferred':inferred,'source_line':line.strip()[:240]}
    stamps.append(item)
