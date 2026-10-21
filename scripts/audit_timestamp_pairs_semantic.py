@@ -24,7 +24,7 @@ for p in sorted(ROOT.rglob('*')):
  except (OSError,UnicodeDecodeError): continue
  rel=p.as_posix()
  if not (rel.startswith(('docs/','checkpoints/','recovery/','provenance/')) or rel.startswith('scripts/audit_timestamp')): continue
- n=0
+ n=0; file_paired=set()
  lines=txt.splitlines()
  # A blank line separates semantic paragraphs; never pair across a paragraph boundary.
  paragraphs=[]; current=[]
@@ -67,7 +67,7 @@ for p in sorted(ROOT.rglob('*')):
     local_zone_match=(l['dt'].utcoffset()==expected.utcoffset() and l['dt'].replace(tzinfo=None)==expected.replace(tzinfo=None))
     status='PASS_SAME_INSTANT_AND_TEHRAN_ZONE' if same_instant and local_zone_match else ('FAIL_INSTANT_MISMATCH' if not same_instant else 'FAIL_TEHRAN_ZONE_MISMATCH')
     pairs.append({'path':rel,'utc_line':u['line'],'local_line':l['line'],'utc':u['value'],'local':l['value'],'status':status,'delta_seconds_utc_minus_local':delta,'expected_tehran':expected.isoformat(timespec='seconds')})
-    paired_occurrences.add((u['line'],u['value'])); paired_occurrences.add((l['line'],l['value']))
+    paired_occurrences.add((u['line'],u['value'])); paired_occurrences.add((l['line'],l['value'])); file_paired.add((u['line'],u['value'])); file_paired.add((l['line'],l['value']))
   else:
    # Same-line explicit pairs are eligible even if the paragraph has extra timestamp fields.
    for ln,line in para:
@@ -82,17 +82,17 @@ for p in sorted(ROOT.rglob('*')):
      zone_match=l[1].utcoffset()==expected.utcoffset() and l[1].replace(tzinfo=None)==expected.replace(tzinfo=None)
      status='PASS_SAME_INSTANT_AND_TEHRAN_ZONE' if delta==0 and zone_match else ('FAIL_INSTANT_MISMATCH' if delta else 'FAIL_TEHRAN_ZONE_MISMATCH')
      pairs.append({'path':rel,'utc_line':ln,'local_line':ln,'utc':u[0],'local':l[0],'status':status,'delta_seconds_utc_minus_local':delta,'expected_tehran':expected.isoformat(timespec='seconds')})
-     paired_occurrences.add((ln,u[0])); paired_occurrences.add((ln,l[0]))
- files.append({'path':rel,'sha256':hashlib.sha256(raw).hexdigest(),'timestamp_count':n,'paired_timestamp_occurrences':len(paired_occurrences),'unpaired_timestamp_occurrences':max(0,n-len(paired_occurrences))})
+     paired_occurrences.add((ln,u[0])); paired_occurrences.add((ln,l[0])); file_paired.add((ln,u[0])); file_paired.add((ln,l[0]))
+ files.append({'path':rel,'sha256':hashlib.sha256(raw).hexdigest(),'timestamp_count':n,'paired_timestamp_occurrences':len(file_paired),'unpaired_timestamp_occurrences':max(0,n-len(file_paired))})
  files.append({'path':rel,'sha256':hashlib.sha256(raw).hexdigest(),'timestamp_count':n})
 counts={'audit_execution_utc':run,'repository_commit':commit,'files_scanned':len(files),'timestamp_strings_found':total,'explicit_same_line_utc_local_pairs':len(pairs),'pairs_pass_same_instant_and_zone':sum(x['status']=='PASS_SAME_INSTANT_AND_TEHRAN_ZONE' for x in pairs),'pairs_fail_instant_mismatch':sum(x['status']=='FAIL_INSTANT_MISMATCH' for x in pairs),'pairs_fail_tehran_zone_mismatch':sum(x['status']=='FAIL_TEHRAN_ZONE_MISMATCH' for x in pairs),'pairs_unverifiable_parse':sum(x['status']=='UNVERIFIABLE_PARSE' for x in pairs),'parse_errors_or_timezone_missing':len(errors),'unpaired_timestamp_occurrences':sum(x['unpaired_timestamp_occurrences'] for x in files)}
-report={'schema':'palang-semantic-timestamp-pair-audit/v1','counts':counts,'pairs':pairs,'parse_errors':errors,'files':files,'scope_limit':'Only explicitly labelled UTC/local values on the same line are paired; unpaired timestamps are not guessed.'}
+report={'schema':'palang-semantic-timestamp-pair-audit/v1','counts':counts,'pairs':pairs,'parse_errors':errors,'files':files,'scope_limit':'Explicit UTC/local labels are paired within a paragraph only when role counts agree; unpaired timestamps are not guessed.'}
 (OUT/'timestamp-pairs-semantic-audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 lines=['# Semantic UTC / Tehran Timestamp Pair Audit','',f'- Audit execution UTC: {run}',f'- Repository commit: {commit}','','## Counts']+[f'- {k}: {v}' for k,v in counts.items()]+['','## Pairs']
-lines += [f"- {x['status']} | {x['path']}:{x['line']} | {x['utc']} <> {x['local']} | delta={x['delta_seconds_utc_minus_local']} seconds | expected Tehran={x['expected_tehran']}" for x in pairs] or ['- No confidently labelled same-line pairs detected; this is not proof none exist.']
+lines += [f"- {x['status']} | {x['path']}:{x['line']} | {x['utc']} <> {x['local']} | delta={x['delta_seconds_utc_minus_local']} seconds | expected Tehran={x['expected_tehran']}" for x in pairs] or ['- No confidently labelled UTC/local pairs detected; this is not proof none exist.']
 lines += ['','## Parse issues']+[f"- {x['path']}:{x['line']} {x['value']} — {x['reason']}" for x in errors]+['','## Limits','- Explicit UTC/local labels are paired within a paragraph only when role counts agree; same-line pairs are a fallback. Ambiguous or unpaired timestamps remain flagged.','- Message time is never inferred from commit time.','- UTC is canonical; Tehran conversion uses IANA Asia/Tehran rules.']
 (OUT/'timestamp-pairs-semantic-audit.txt').write_text('\n'.join(lines)+'\n',encoding='utf-8')
 print('SEMANTIC_TIMESTAMP_PAIR_AUDIT')
 for k,v in counts.items(): print(f'{k}={v}')
-for x in pairs: print(f"{x['status']} {x['path']}:{x['line']} {x['a']} <> {x['b']} delta_seconds={x['delta_seconds_a_minus_b']}")
+for x in pairs: print(f"{x['status']} {x['path']}:{x['utc_line']}~{x['local_line']} {x['utc']} <> {x['local']} delta_seconds={x['delta_seconds_utc_minus_local']}")
 print('result=REVIEW_REQUIRED' if counts['pairs_fail_instant_mismatch'] or counts['pairs_fail_tehran_zone_mismatch'] or counts['pairs_unverifiable_parse'] or errors else 'result=PAIR_ARITHMETIC_PASS_WITH_SCOPE_LIMITS')
