@@ -141,3 +141,9 @@
 - Short labels in the behavior-trace index, 0.0 README, reference index and integration queue were clarified for the specific colliding event identities. Full path targets were preserved.
 - The fixes are navigation-label corrections, not semantic merge decisions. No historical event or ID was deleted or renumbered.
 - Read-back and post-edit structural audit are pending. Full inbound/outbound review remains OPEN / PARTIAL.
+
+
+## Addendum v2.0.0 — post-edit audit for legacy EVT display labels
+- Audit [39527808318](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39527808318) passed on commit `6d1c0892d723f86a49d7a4106eae9b3fed64a2ea`, UTC `2026-10-21T01:31:28Z`; artifact `12313029823`, digest `sha256:c306f91b899dd9db0ab7eb3279c6ca1c52ffe959c0eadeaa062a5e5aa6dbcfc4`.
+- 1,156 local links / 0 missing; 38 parent edges / 0 unresolved / 0 ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 duplicate groups; 713 identifier occurrences; 0 decode errors.
+- [H0EVTRRB4](./HISTORICAL-EVT-LEGACY-DISPLAY-LABEL-REVIEW-BATCH-004-2026-10-21-001.md) / [EVT-0057](../../architecture/BEHAVIOR-TRACE/EVT-0057-LEGACY-EVT-DISPLAY-LABEL-REVIEW-BATCH-004-2026-10-21.md) records label corrections. The audit predates this evidence append; full inbound/outbound semantic review remains OPEN.
