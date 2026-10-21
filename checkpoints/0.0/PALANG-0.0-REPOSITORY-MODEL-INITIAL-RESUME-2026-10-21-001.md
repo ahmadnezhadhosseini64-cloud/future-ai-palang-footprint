@@ -130,3 +130,10 @@
 - Stable ID: `HAIF-EXTRACTABLE-INTERACTION-MODEL-FREE-APP-MASTER-REFERENCE-2026-10-21-001`; Production ID: `HEIMFA-MR-2026-10-21-001`; Version 1.0.0.
 - زمان ثبت این پیوند: `2026-10-21T11:09:51+03:30` (Asia/Tehran).
 - مسیر بازگشت از این لنگر: بررسی شواهد مخزن → manifest استخراج → مشخصات قابلیت و گراف → نمونهٔ Child → آزمون در Rahm → تصمیم مستر. وضعیت این مسیر OPEN/LIVING است.
+
+
+## لنگر فرزند تازهٔ ثبت خودکار و چکش — 2026-10-21
+- [PALANG-0.0-AUTOMATIC-INPUT-ANCHOR-AND-RETURN-RESUME-GOVERNANCE-2026-10-21-001](./PALANG-0.0-AUTOMATIC-INPUT-ANCHOR-AND-RETURN-RESUME-GOVERNANCE-2026-10-21-001.md) — ACTIVE / LIVING / OPEN FOR GROWTH.
+- زمان ثبت سند فرزند: `2026-10-21T11:32:53+03:30` (Asia/Tehran؛ زمان ثبت سند، نه زمان ارسال پیام).
+- رویداد ثبت: [EVT-0059](../../docs/architecture/BEHAVIOR-TRACE/EVT-0059-AUTOMATIC-ANCHOR-REGISTRATION-AND-RETURN-RESUME-GOVERNANCE-2026-10-21.md).
+- پس از بازگشت، ادامه از صف اجرایی سند مدل/محصول: ممیزی شواهد و ساخت manifest، سپس نمونهٔ قابل‌آزمون و آزمون تازه؛ هیچ مقصد ذخیره‌سازی بیرونی بدون شاهد تأیید نمی‌شود.
