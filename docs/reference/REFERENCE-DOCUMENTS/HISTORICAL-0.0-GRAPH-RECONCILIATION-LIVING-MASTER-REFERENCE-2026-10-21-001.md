@@ -313,3 +313,11 @@ This document can be considered repository-integrated only after the file, index
 - Snapshot: 503 source files; 1,084 local Markdown edges / 0 missing; 38 parent edges / 0 unresolved or ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 exact-content duplicate groups; 701 identifier occurrences; 0 decode errors.
 - Audit artifact `12310818790`, SHA-256 `sha256:abbc2b070f2615dcd82fbd654c824c848ff64102b2b1eb218dd7072e5053fd78`.
 - This latest pass includes the batch-003 read-back record. Structural checks pass; full semantic relation closure remains OPEN / PARTIAL.
+
+
+## Addendum v2.13.0 — latest run 39521128996
+- Latest successful Living Architecture Audit: [39521128996](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39521128996), audited commit `200f29d9a3cb8ea58a4eeea2c116d5a3571cd133`, runner UTC `2026-10-21T00:24:34Z`.
+- Latest manifest: 503 source files; 929 total files including 426 generated Evidence Gate records; 1,084 local Markdown links / 0 missing; 38 declared parent edges / 0 unresolved / 0 ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT short-number groups; 11 exact-content duplicate groups; 701 identifier occurrences; 0 decode errors; 11 proposed alias edges.
+- The separate legacy audit reported 13 Stable ID and 24 Production ID collision groups because it uses narrower extraction rules. Do not merge those counts with the expanded manifest's 30/43 groups; the namespace/metadata extractor difference remains a documented measurement distinction.
+- Structural acceptance is PASS for the audited commit. Semantic role adjudication, all EVT inbound/outbound reference audits, full edge meaning, final canonical promotion, and application implementation remain OPEN / PARTIAL. No deletion or automatic merge is authorized by this audit.
+- Evidence boundary: run logs and artifact metadata were read back; artifact ZIP SHA-256 is `sha256:4c8a4d7b019ac6316e70ab4e375356b393181c35943006ac57f066ca47c7bc79`, artifact ID `12309999612`. The artifact contents have not been extracted and individually inspected in this step.
