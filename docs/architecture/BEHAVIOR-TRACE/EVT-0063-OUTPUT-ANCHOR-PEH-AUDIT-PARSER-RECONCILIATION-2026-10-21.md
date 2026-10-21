@@ -32,3 +32,11 @@ WRITE → READ-BACK → MATCH → VERIFY. این رویداد پس از ایجا
 - Artifact ID `12335647959`; SHA-256 `4bfadc15d6d289c60fc941069e24dff0480bb44ebec4cddb4cd0cdabd6b2248f`.
 - 0 missing local links; 0 decode errors; Stable ID 39, Production ID 50, Reference ID 7; 38 declared parent edges, 0 unresolved/ambiguous; 11 exact-content duplicate groups.
 - Structural/link gates VERIFIED for this snapshot. Semantic identity and alias adjudication remain OPEN / PARTIAL.
+
+
+## Latest read-back — 2026-10-21
+
+- [Audit run 39580370198](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39580370198) succeeded on commit `40e814a61d5cf08ca2304356c6dc75256f877be3`.
+- 544 source files; 1,351 local links; 0 missing links; 0 decode errors; counts agree at 39 Stable ID / 50 Production ID / 7 Reference ID groups.
+- [Prototype test run 39580170352](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39580170352): 7 passed, 1 warning, 0 failed, including document ingestion and provenance-bearing retrieval.
+- Scope remains repository-only; semantic collision adjudication and restart persistence are open.
