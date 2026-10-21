@@ -156,7 +156,7 @@
 | G-20 — ثبت سراسری تعامل | OPEN / NOT PROVEN | آزمون capture واقعی در چرخهٔ runtime، نه صرفاً قرارداد مخزن | آزمون‌های چند نشست با پوشش مستند |
 
 ### ترتیب ادامهٔ اجباری
-1. از همین سند و آخرین EVT-0051 بازخوانی کن.
+1. از همین سند بازخوانی کن؛ برای ساخت سند مادر از `EVT-0051-ASSISTANT-CONSOLIDATED-MASTER-CREATION-AND-READBACK-2026-10-21.md` استفاده کن و برای ممیزی/تعمیر گراف، رویداد فعال `EVT-0052-CANONICAL-GRAPH-MANIFEST-AND-LINK-REPAIR-2026-10-21.md` را بخوان. مسیر `EVT-0051-CANONICAL-GRAPH-MANIFEST-AND-LINK-REPAIR-2026-10-21.md` فقط correction notice بازنشسته است.
 2. آخرین artifact ممیزی را مستقیماً بخوان و تعداد واقعی duplicate groups، ID collisions، broken links و missing parent references را استخراج کن؛ هیچ عددی را حدس نزن.
 3. manifest canonical/alias/lineage بساز و به گراف وصل کن، بدون حذف فایل تاریخی.
 4. مرور معنایی را به دسته‌های قابل‌ردیابی انجام بده: همهٔ EVT، سپس اسناد مرجع، سپس نقاط ۰.۰/چک‌پوینت‌ها؛ هر دسته پس از بازخوانی، پوشش و شکاف‌هایش را ثبت کند.
