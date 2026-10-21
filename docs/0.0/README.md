@@ -591,3 +591,9 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 
 
 - ممیزی ساختاری پس از داوری دستهٔ سوم: [39520630341](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39520630341) — 503 فایل منبع، 1,080 پیوند محلی بدون پیوند شکسته، 30 گروه Stable ID، 43 گروه Production ID، 7 گروه Reference ID، 8 گروه EVT و 11 گروه محتوای یکسان. بررسی معنایی کامل باز است؛ دستهٔ سوم در [H0PRRB3](../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-PRODUCTION-ID-ROLE-REVIEW-BATCH-003-2026-10-21.md) ثبت شده است.
+
+
+## رفع ابهام برچسب‌های EVT — دستهٔ چهارم
+- سند بررسی: [H0EVTRRB4](../reference/REFERENCE-DOCUMENTS/HISTORICAL-EVT-LEGACY-DISPLAY-LABEL-REVIEW-BATCH-004-2026-10-21-001.md).
+- رویداد ثبت: [EVT-0057](../architecture/BEHAVIOR-TRACE/EVT-0057-LEGACY-EVT-DISPLAY-LABEL-REVIEW-BATCH-004-2026-10-21.md).
+- این ثبت برچسب‌های کوتاه چند رویداد هم‌شماره را روشن می‌کند و مقصدهای کامل را حفظ می‌کند؛ ممیزی پس از تغییرها هنوز لازم است.
