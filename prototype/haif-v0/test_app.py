@@ -211,3 +211,81 @@ def test_repository_ingestion_fails_closed_when_source_is_missing(tmp_path, monk
     assert report["complete"] is False
     assert report["verified_count"] == 0
     assert all(item["status"] == "SOURCE_MISSING" for item in report["results"])
+
+
+def test_real_repository_allowlist_ingests_searches_and_survives_restart(tmp_path, monkeypatch):
+    import json
+    from io import BytesIO
+    from pathlib import Path
+
+    import ingest_repository_docs as importer
+
+    root = Path(__file__).resolve().parents[2]
+    missing = [relative for relative in importer.ALLOWLIST if not (root / relative).is_file()]
+    assert missing == []
+
+    db_path = tmp_path / "real-repository-ingest.sqlite3"
+    first_client_context = client_for(tmp_path)
+    # Use a dedicated app database and adapt the importer's HTTP client to this real API
+    # TestClient. The document payloads come from the checked-out repository files.
+    first_client_context.close() if hasattr(first_client_context, "close") else None
+    from fastapi.testclient import TestClient
+    from app import create_app
+
+    with TestClient(create_app(db_path)) as client:
+        def local_api_urlopen(request, timeout):
+            assert timeout == 20
+            payload = json.loads(request.data.decode("utf-8"))
+            response = client.post("/api/v1/documents", json=payload)
+
+            class Response:
+                def __enter__(self):
+                    return self
+
+                def __exit__(self, *_args):
+                    return False
+
+                def read(self):
+                    return json.dumps(response.json(), ensure_ascii=False).encode("utf-8")
+
+            return Response()
+
+        monkeypatch.setattr(importer, "urlopen", local_api_urlopen)
+        monkeypatch.setattr(importer, "current_commit", lambda _root: "integration-test-commit")
+        report = importer.ingest("http://local-test", root)
+        assert report["complete"] is True
+        assert report["verified_count"] == 6
+        assert len({item["source_path"] for item in report["results"]}) == 6
+
+        search = client.get(
+            "/api/v1/search",
+            params={"q": "HAIF-CONTROLLED-REPOSITORY-DOCUMENT-INGESTION-2026-10-21-001"},
+        )
+        assert search.status_code == 200
+        result = search.json()
+        assert result["count"] == 1
+        item = result["items"][0]
+        assert item["source_path"] == (
+            "docs/architecture/BEHAVIOR-TRACE/"
+            "EVT-0069-HAIF-CONTROLLED-REPOSITORY-DOCUMENT-INGESTION-2026-10-21.md"
+        )
+        assert item["source_origin"].endswith("commit=integration-test-commit; allowlisted repository document")
+        assert item["content_sha256"]
+
+        expected = {
+            "document_id": item["document_id"],
+            "content_sha256": item["content_sha256"],
+            "source_path": item["source_path"],
+            "version": item["version"],
+            "source_origin": item["source_origin"],
+        }
+
+    with TestClient(create_app(db_path)) as restarted_client:
+        restarted = restarted_client.get(
+            "/api/v1/search",
+            params={"q": "HAIF-CONTROLLED-REPOSITORY-DOCUMENT-INGESTION-2026-10-21-001"},
+        )
+        assert restarted.status_code == 200
+        assert restarted.json()["count"] == 1
+        restored = restarted.json()["items"][0]
+        assert {key: restored[key] for key in expected} == expected
