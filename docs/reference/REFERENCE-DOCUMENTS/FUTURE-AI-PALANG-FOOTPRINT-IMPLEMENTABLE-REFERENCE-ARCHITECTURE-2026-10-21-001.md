@@ -236,3 +236,10 @@ The Artifact model must distinguish a logical artifact identity from its physica
 - 503 source files; 1,080 local links / 0 missing; 0 decode errors; 38 declared parent edges / 0 unresolved or ambiguous.
 - It reports 30 Stable ID groups, 43 Production ID groups, 7 Reference ID groups, 8 EVT groups and 11 exact-content duplicate groups. These are review obligations, not all confirmed identity conflicts.
 - This is structural evidence only. Semantic relation review, canonical promotion, application implementation and end-to-end acceptance are separate gates; the application is not claimed built or deployed.
+
+
+## Addendum v1.4.0 — latest audit and measurement boundary
+- Latest successful workflow: [39521128996](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39521128996), commit `200f29d9a3cb8ea58a4eeea2c116d5a3571cd133`, runner UTC `2026-10-21T00:24:34Z`.
+- Expanded manifest structural result: 503 source files; 1,084 local links / 0 missing; 38 parent edges / 0 unresolved / 0 ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 exact-content duplicate groups; 701 identifier occurrences; 0 decode errors.
+- The legacy scanner reports 13 Stable ID and 24 Production ID groups on the same commit because its extraction scope is narrower. Keep the two measurements typed by scanner/version; do not treat them as contradictory semantic adjudications or collapse them without regression evidence.
+- The implementation blueprint remains a specification, not a built/deployed app. Required next gates: EVT inbound/outbound references, source-level review of remaining ID groups, explicit edge semantics, canonicalization gates, and acceptance tests A01–A16.
