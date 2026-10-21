@@ -86,3 +86,44 @@ def test_health_discloses_local_only_persistence(tmp_path):
         assert response.status_code == 200
         assert response.json()["persistence_scope"] == "LOCAL_SQLITE_ONLY"
         assert response.json()["external_persistence"] == "UNVERIFIED"
+
+
+def test_document_ingest_readback_and_search_preserve_provenance(tmp_path):
+    with client_for(tmp_path) as client:
+        created = client.post(
+            "/api/v1/documents",
+            json={
+                "title": "HAIF master reference",
+                "source_path": "docs/architecture/master.md",
+                "version": "1.2.0",
+                "content": "HAIF preserves interaction continuity and evidence provenance.",
+                "source_origin": "repository test fixture",
+            },
+        )
+        assert created.status_code == 201
+        document = created.json()
+        assert document["status"] == "WRITE_READBACK_VERIFIED"
+        assert document["content_sha256"]
+        assert document["source_path"] == "docs/architecture/master.md"
+        assert document["version"] == "1.2.0"
+
+        found = client.get("/api/v1/search", params={"q": "PROVENANCE"})
+        assert found.status_code == 200
+        result = found.json()
+        assert result["status"] == "RETRIEVED_WITH_PROVENANCE"
+        assert result["count"] == 1
+        assert result["items"][0]["document_id"] == document["document_id"]
+        assert result["items"][0]["source_path"] == "docs/architecture/master.md"
+        assert result["items"][0]["version"] == "1.2.0"
+        assert result["items"][0]["retrieval_method"] == "CASEFOLD_SUBSTRING"
+
+
+def test_document_search_returns_no_false_match(tmp_path):
+    with client_for(tmp_path) as client:
+        client.post(
+            "/api/v1/documents",
+            json={"title": "Reference A", "source_path": "a.md", "content": "continuity only"},
+        )
+        result = client.get("/api/v1/search", params={"q": "nonexistent-token"}).json()
+        assert result["count"] == 0
+        assert result["items"] == []
