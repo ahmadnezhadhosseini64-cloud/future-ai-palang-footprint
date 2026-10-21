@@ -398,3 +398,6 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - [لنگر مستقل خروجی و اجرای چکش شواهد](0.0/PALANG-OUTPUT-PEH-AUDIT-RECONCILIATION-2026-10-21-001.md) — Stable ID: `PALANG-OUTPUT-PEH-AUDIT-RECONCILIATION-2026-10-21-001`; Production ID: `POPAR-2026-10-21-001`; ACTIVE / LIVING / OPEN-PARTIAL.
 - [EVT-0063](architecture/BEHAVIOR-TRACE/EVT-0063-OUTPUT-ANCHOR-PEH-AUDIT-PARSER-RECONCILIATION-2026-10-21.md) — ثبت خروجی و اصلاح تطبیق ممیزی.
 - Commit اصلاح parser: `8ed24fc75e7a8634c33e87eaf0744bcb8f091008`; نتیجهٔ اجرای پس از اصلاح هنوز در انتظار راستی‌آزمایی است.
+
+- [EVT-0064 — HAIF document ingest and provenance retrieval](architecture/BEHAVIOR-TRACE/EVT-0064-HAIF-DOCUMENT-RETRIEVAL-PROVENANCE-2026-10-21.md) — implementation/test evidence for model v0.
+- [HAIF initial AI model master reference](architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md) — governing model baseline and current execution boundary.
