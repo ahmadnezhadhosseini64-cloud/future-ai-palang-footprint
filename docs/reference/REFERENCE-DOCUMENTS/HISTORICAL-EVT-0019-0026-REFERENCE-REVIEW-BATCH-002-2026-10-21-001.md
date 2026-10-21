@@ -51,3 +51,11 @@
 ## Change log / تاریخچه تغییر
 
 - v1.0.0 — بازخوانی چهار رویداد اصلی، جست‌وجوی ارجاع‌های مخزن و ثبت تصمیم محدود برای EVT-0019 و EVT-0026؛ هیچ تاریخچه‌ای حذف یا بازنویسی شناسه‌ای نشد.
+
+
+## Post-registration audit / ممیزی پس از ثبت
+- Living Architecture Audit [39526775625](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39526775625) completed SUCCESS on commit `67f340f6b0dd285b8851bd8a190d270c2d307ac5`; runner UTC `2026-10-21T01:21:04Z`.
+- Expanded manifest: 505 source files; 1,114 local Markdown links / 0 missing; 38 parent edges / 0 unresolved / 0 ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 exact-content duplicate groups; 705 identifier occurrences; 0 decode errors.
+- Legacy scanner on the same commit: 13 Stable ID groups and 24 Production ID groups; keep these as a narrower parser scope, not a competing semantic decision.
+- Artifact ID `12313657400`; digest `sha256:05a035afe285f9763a3573ed2668d8931705201397f26dd365fc6da220235521`.
+- This run validates structure on the audited commit only. Semantic edge review, full inbound/outbound EVT audit and canonicalization remain OPEN / PARTIAL. A new post-evidence-edit audit is required.
