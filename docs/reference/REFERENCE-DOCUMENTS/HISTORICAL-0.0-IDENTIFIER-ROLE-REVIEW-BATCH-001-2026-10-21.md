@@ -123,3 +123,11 @@ The 13 links resolve to four canonical checkpoint records under root `checkpoint
 
 ### Acceptance gate
 Run the audit after the compatibility bridges and prior link corrections; read the workflow log; confirm zero missing local links and matching identifier counts; then continue the next semantic role-review batch. No historical files are deleted or renamed.
+
+
+## Acceptance result — post-fix audit read-back
+
+- [Run 39579528307](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39579528307) completed SUCCESS on commit `959717dcdd8a78a4eb8ca436b1c96b0a53142971`.
+- Both extractors agree on 39 Stable ID, 50 Production ID and 7 Reference ID collision groups; 0 missing local links and 0 decode errors were observed.
+- The parser-scope mismatch and missing-link gate are CLOSED for this audited snapshot. Semantic role adjudication of repeated IDs remains OPEN; no group is automatically classified as a true identity conflict solely because it repeats.
+- Artifact SHA-256: `ee853ca699916f3e4153e7cf754f039b2afc0be38759cf7a1d28660bf2207e98` (artifact 12336251136).
