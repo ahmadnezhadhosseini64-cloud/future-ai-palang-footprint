@@ -9,8 +9,8 @@
 - Parent anchor / لنگر والد: `PALANG-RETURN-EXECUTION-MASTER-ANCHOR-2026-10-21-001`
 - Child anchor / لنگر فرزند: [لنگر مستقل خروجی](../../0.0/PALANG-OUTPUT-ANCHOR-HAIF-INGESTION-2026-10-21-002.md)
 - Related event / رویداد مرتبط: [EVT-0069 — واردکنندهٔ کنترل‌شده](./EVT-0069-HAIF-CONTROLLED-REPOSITORY-DOCUMENT-INGESTION-2026-10-21.md)
-- UTC reference / زمان مرجع UTC: 2026-10-21T13:50:42Z — آخرین مهر زمانی عملیات مخزن قابل‌مشاهده در این زنجیره؛ زمان دقیق پیام کاربر نیست.
-- Tehran equivalent / معادل تهران: 2026-10-21T17:20:42+03:30
+- UTC reference / زمان مرجع UTC: UNAVAILABLE / NOT CAPTURED — زمان دقیق ایجاد رویداد از فرادادهٔ قابل‌دسترسی قابل‌استخراج نیست.
+- Tehran equivalent / معادل تهران: UNAVAILABLE / NOT DERIVED — تا وقتی لحظهٔ دقیق UTC معلوم نیست، معادل تهران ساخته نمی‌شود.
 - User message time / زمان دقیق پیام کاربر: UNAVAILABLE / در فرادادهٔ قابل‌دسترسی ثبت نشده است.
 - Status / وضعیت: ACTIVE / LIVING / REPOSITORY REGISTRATION PENDING READ-BACK
 - Scope / دامنه: ایجاد لنگر مستقل برای خروجی جاری، حفظ دستور کاربر و قاعدهٔ ثبت خودکار هر ورودی/خروجی مرتبط
