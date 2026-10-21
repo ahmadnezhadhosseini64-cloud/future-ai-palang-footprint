@@ -865,3 +865,6 @@ The queue index and the timestamp case must each be read back after this update.
 
 
 - **Legacy EVT display-label review batch 004 — WRITTEN / POST-EDIT AUDIT PENDING:** [H0EVTRRB4](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-EVT-LEGACY-DISPLAY-LABEL-REVIEW-BATCH-004-2026-10-21-001.md) and [EVT-0057](../../architecture/BEHAVIOR-TRACE/EVT-0057-LEGACY-EVT-DISPLAY-LABEL-REVIEW-BATCH-004-2026-10-21.md). Several short labels in legacy indexes were clarified while preserving exact full-path targets. Full inbound/outbound semantic review remains OPEN.
+
+
+- **Legacy EVT label batch 004 audit — STRUCTURAL PASS / SEMANTIC OPEN:** [39527808318](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39527808318), commit `6d1c0892d723f86a49d7a4106eae9b3fed64a2ea`, UTC `2026-10-21T01:31:28Z`; 1,156 links / 0 missing; 38 parent edges / 0 unresolved/ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 duplicate groups; 713 identifier occurrences; 0 decode errors. Records: [H0EVTRRB4](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-EVT-LEGACY-DISPLAY-LABEL-REVIEW-BATCH-004-2026-10-21-001.md) and [EVT-0057](../../architecture/BEHAVIOR-TRACE/EVT-0057-LEGACY-EVT-DISPLAY-LABEL-REVIEW-BATCH-004-2026-10-21.md). This run predates the evidence append; rerun after these edits.
