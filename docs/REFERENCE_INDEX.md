@@ -413,3 +413,8 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 ### دور بازخوانی پیوندهای مخزن
 - Read-back pass time / زمان دور بازخوانی: `2026-10-21T13:41:19+03:30` تهران / `2026-10-21T10:11:19Z` UTC.
 - Scope / دامنه: نسخه‌های جاری سند مادر، استاندارد زمان، رویداد EVT-0066، لنگر مستقل ۰.۰، سند مادر مدل اولیه، فهرست مرجع و فهرست نقاط ۰.۰ بازخوانی شدند؛ پیوند استاندارد و متن قاعده در فایل‌های مورد انتظار یافت شد.
+
+
+## ممیزی تطبیق زمان‌های UTC — 2026-10-21
+- [UTC-TIMESTAMP-RECONCILIATION-AUDIT-2026-10-21-001](reference/REFERENCE-DOCUMENTS/UTC-TIMESTAMP-RECONCILIATION-AUDIT-2026-10-21-001.md) — لنگر پردازش ثبت‌شده؛ ممیزی اولیهٔ درخت مخزن انجام شد؛ ممیزی کامل همهٔ زمان‌ها هنوز OPEN / PARTIAL است.
+- [EVT-0072](architecture/BEHAVIOR-TRACE/EVT-0072-UTC-TIMESTAMP-RECONCILIATION-AUDIT-2026-10-21.md) — ثبت رویداد مستقل و آغاز چکش زمان‌گذاری.
