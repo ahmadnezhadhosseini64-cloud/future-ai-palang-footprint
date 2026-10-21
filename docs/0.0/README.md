@@ -651,3 +651,11 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 - Production ID: `P0AIRRG-2026-10-21-001`; Version 1.0.0; registration timestamp `2026-10-21T11:32:53+03:30` (Asia/Tehran).
 - رویداد ورودی/خروجی: [EVT-0059](../architecture/BEHAVIOR-TRACE/EVT-0059-AUTOMATIC-ANCHOR-REGISTRATION-AND-RETURN-RESUME-GOVERNANCE-2026-10-21.md).
 - قاعده: ثبت کامل و چکش برای ورودی/خروجی مرتبط با پروژه پیش‌فرض است؛ لنگرهای ۰.۰ مستقل می‌مانند و این ثبت آن‌ها را جایگزین یا ادغام نمی‌کند.
+
+
+## سند مادر و لنگر مستقل برای بازگشت اجرایی — 2026-10-21
+- [سند مرجع مادر — ثبت جامع و بازگشت اجرایی زنده](../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20—%20ثبت%20جامع%20و%20بازگشت%20اجرایی%20زنده.md).
+- [PALANG-0.0-MASTER-REFERENCE-RETURN-EXECUTION-2026-10-21-001](../checkpoints/0.0/PALANG-0.0-MASTER-REFERENCE-RETURN-EXECUTION-2026-10-21-001.md).
+- رویداد: [EVT-0060](../architecture/BEHAVIOR-TRACE/EVT-0060-MASTER-REFERENCE-RETURN-EXECUTION-2026-10-21.md).
+- زمان ثبت: `2026-10-21T11:37:45+03:30` (Asia/Tehran).
+- وضعیت: ACTIVE / LIVING / OPEN FOR GROWTH؛ لنگرهای تاریخی مستقل باقی می‌مانند.
