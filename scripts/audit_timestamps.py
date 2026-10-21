@@ -80,7 +80,7 @@ lines += ["", "## Files needing review", "Rows are flags for human/semantic revi
 flagged = [r for r in records if r["missing_iso_and_unknown_marker"] or (r["timestamp_label_count"] and not r["has_explicit_utc_or_offset_evidence"])]
 if not flagged: lines.append("- No files flagged by the simple detection rules.")
 for r in flagged:
-    lines.append(f"- `{r['path']}`: iso_count={r['iso_timestamp_count']}; time_labels={r['timestamp_label_count']}; UTC/offset={r['has_utc_or_offset_evidence']}; explicit_unknown={r['explicit_unknown_near_time_label']}")
+    lines.append(f"- `{r['path']}`: iso_count={r['iso_timestamp_count']}; time_labels={r['timestamp_label_count']}; UTC/offset={r['has_explicit_utc_or_offset_evidence']}; explicit_unknown={r['explicit_unknown_near_time_label']}")
 lines += ["", "## Limits", "- This is a repository-wide automated inventory, not proof that all timestamp pairs describe the same event.", "- UTC/local arithmetic and lineage conflicts require semantic review; no timestamp is inferred from filename or commit time.", "- User-message timestamps remain UNKNOWN unless a trusted source supplies them.", "- No external destination or cross-host persistence is tested."]
 (OUT / "timestamp-audit.txt").write_text("\n".join(lines) + "\n", encoding="utf-8")
 print("REPOSITORY_TIMESTAMP_AUDIT")
