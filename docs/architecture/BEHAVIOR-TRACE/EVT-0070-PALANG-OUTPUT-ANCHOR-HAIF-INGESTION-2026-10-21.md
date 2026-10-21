@@ -61,3 +61,9 @@
 - **Current CI / وضعیت آزمون اصلاح‌شده:** run `39612322105` در آخرین مشاهده IN_PROGRESS بود؛ نتیجه هنوز نامعلوم است.
 - **Timestamp integrity / صحت زمان:** زمان دقیق ایجاد لنگر/رویداد و زمان دقیق بازخوانی در فرادادهٔ قابل‌دسترسی موجود نیست؛ UTC و معادل تهران برای این لحظات `UNAVAILABLE / NOT CAPTURED` باقی می‌مانند. زمان runهای CI فقط زمان CI است.
 - **Storage destinations / مقصدها:** Repository read-back verified; Buffer, Persistent Memory, Library and Dropbox remain NOT VERIFIED.
+
+
+### Second integration-test result and correction
+- Run [39612322105](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39612322105) failed: 1 failed, 10 passed, 1 warning. The second query was not unique because the master anchor ID appeared in two allowlisted documents; expected count 1, actual count 2.
+- Corrected the test query to the master anchor's production ID `PREMA-2026-10-21-001`, commit `987bb7f72488d3c3f9b245445703dac7a7ce5734`. This is a test determinism fix; the next run [39612477894](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39612477894) was queued at the last observation.
+- Integration acceptance remains OPEN until the rerun passes. The two failures are retained as evidence, not erased.
