@@ -46,3 +46,23 @@ UTC مرجع است. برای زمان‌های معتبر، تبدیل با پ�
 - Arithmetic check: 16:02:01Z + 03:30 = 19:32:01+03:30; same instant.
 - Read-back: GitHub fetch_file returned the full event file and matching Stable ID, Production ID, parent event, time caveat and proof boundary. Exact read-back execution timestamp was not exposed; it remains UNKNOWN rather than inferred.
 - Current verification: repository read-back PASS for this content; semantic audit workflow result and live producer connection remain separate/open.
+
+
+## پیوندهای اجرایی و نتیجهٔ چکش پس از پیاده‌سازی
+- سند مرجع مادر: ../../reference/REFERENCE-DOCUMENTS/SEMANTIC-TIMESTAMP-AUDIT-AND-HOST-CAPTURE-RECOVERY-MASTER-REFERENCE-2026-10-21-001.md
+- ممیزی معنایی جفت‌های زمان: scripts/audit_timestamp_pairs_semantic.py؛ به workflow ممیزی معماری متصل شده است. نتیجهٔ اجرای کامل روی مخزن باید از artifact همان run بازخوانی شود؛ این ابزار در این نوبت قابل بازیابی نبود، پس نتیجهٔ کل مخزن OPEN می‌ماند.
+- Receiver/صف پایدار: scripts/host_adapter.py.
+- Worker انتقال صف به GitHub و read-back: scripts/host_adapter_github_worker.py؛ نیازمند استقرار میزبان و GITHUB_TOKEN محدود است.
+- آزمون مصنوعی: scripts/test_host_adapter.py.
+- شاهد آزمون مصنوعی: ../../evidence/host-adapter-synthetic-test-2026-10-21-001.md — PASS برای دریافت، احراز هویت، read-back، idempotency، رد تعارض و بازیابی پس از restart.
+- زمان اجرای آزمون مصنوعی: منبع اجرایی زمان دقیق را آشکار نکرد؛ UNKNOWN / NOT EXPOSED.
+- اتصال producer زندهٔ ChatGPT: NOT TESTED / OPEN.
+- انتقال واقعی به GitHub با worker: NOT TESTED / BLOCKED تا زمان استقرار و ارائهٔ توکن مجاز.
+- مقصدهای Buffer/Library/Persistent Memory/Dropbox: مستقل و NOT VERIFIED.
+
+## چکش نهایی این نسخه
+- PASS: رویداد و سند مادر از مخزن دوباره خوانده شدند؛ شناسه‌ها و پیوندهای اصلی تطبیق دارند.
+- PASS: آزمون مصنوعی محلی receiver/صف با خروجی ثبت‌شده PASS شد.
+- PASS: نمونهٔ UTC=2026-10-21T16:02:01Z و تهران=2026-10-21T19:32:01+03:30 از نظر حسابی اختلاف 0 ثانیه دارد؛ این فقط یک جفت نمونه است، نه ممیزی همهٔ اسناد.
+- OPEN: نتیجهٔ ممیزی معنایی کامل مخزن باید از artifact اجرای GitHub Actions بازخوانی شود؛ شمارش/تطبیق همهٔ جفت‌ها هنوز نباید PASS اعلام شود.
+- OPEN: اتصال خودکار میزبان به جریان زندهٔ ChatGPT در این محیط قابل فعال‌سازی مستقیم نیست؛ hook/producer مجاز و استقرار واقعی هنوز لازم است.
