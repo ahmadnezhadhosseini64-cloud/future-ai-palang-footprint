@@ -286,3 +286,9 @@ This document can be considered repository-integrated only after the file, index
 - Current counts: 501 source files; 1,059 local Markdown links / 0 missing; 38 parent edges / 0 unresolved/ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 exact-content duplicate groups; 697 identifier occurrences; 0 decode errors.
 - The latest audit confirms structural integrity after the current index/queue/anchor updates. The implementation blueprint is [FAPF-IRA](./FUTURE-AI-PALANG-FOOTPRINT-IMPLEMENTABLE-REFERENCE-ARCHITECTURE-2026-10-21-001.md); semantic accountability remains [H0IRAR](./HISTORICAL-0.0-IDENTIFIER-AND-RELATION-ADJUDICATION-REGISTER-2026-10-21-001.md).
 - This is not full semantic closure: 23 Stable ID groups and 43 Production ID groups remain for complete review, the meaning of 1,059 links is not individually proven, and 11 duplicate groups have not been promoted to final canonical aliases.
+
+
+## Addendum v2.8.0 — latest verified index and architecture pointers
+- Latest successful audit: [39518895224](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39518895224), audited commit `2157a8f093c53515020f029f45faf9f131a77c33`, runner UTC `2026-10-21T00:03:12Z`.
+- 501 source files; 1,062 local Markdown links / 0 missing; 38 parent edges / 0 unresolved/ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 exact-content duplicate groups; 697 identifier occurrences; 0 decode errors.
+- The latest audit confirms the current index, group ledger and semantic baseline are structurally connected. This does not establish that all 1,062 links have semantically correct targets. The remaining group-by-group review stays active.
