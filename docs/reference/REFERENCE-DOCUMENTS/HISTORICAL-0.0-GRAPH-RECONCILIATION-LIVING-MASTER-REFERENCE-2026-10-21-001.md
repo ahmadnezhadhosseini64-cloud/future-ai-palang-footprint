@@ -299,3 +299,10 @@ This document can be considered repository-integrated only after the file, index
 - Five pairs have equal SHA-256 and byte counts. Operational/governance/architecture/checkpoint/registry paths are role-based primary candidates; their Reference Documents copies are `MIRROR_OF`. All ten paths remain preserved; canonical promotion is provisional until Git history and non-Markdown consumers are checked.
 - Source evidence is from audit [39518895224](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39518895224), commit `2157a8f093c53515020f029f45faf9f131a77c33`. A new audit must validate this batch and event file after commit.
 - Semantic coverage is still partial; the 43 Production ID groups as a whole and all 1,062 link meanings are not closed. Use the governing ledger [H0IRAR](./HISTORICAL-0.0-IDENTIFIER-AND-RELATION-ADJUDICATION-REGISTER-2026-10-21-001.md) for remaining work.
+
+
+## Addendum v2.11.0 — post-batch-003 audit evidence
+- Latest successful structural audit after the third role-review batch: [39520630341](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39520630341), audited commit `9419d0ced3ae50632d0857eb030516534f3b4312`, runner UTC `2026-10-21T00:19:43Z`.
+- Snapshot: 503 source files; 1,080 local links / 0 missing; 38 parent edges / 0 unresolved or ambiguous; 30 Stable ID groups; 43 Production ID groups; 7 Reference ID groups; 8 EVT groups; 11 exact-content duplicate groups; 701 identifier occurrences; 0 decode errors.
+- Audit artifact `12310173787`, SHA-256 `sha256:934124271cef0e23ead5aed97a032012d833084dbb00d3b14f20ec0d282a3b11`.
+- This validates the batch and link structure, not full semantic closure. [H0PRRB3](./HISTORICAL-0.0-PRODUCTION-ID-ROLE-REVIEW-BATCH-003-2026-10-21.md) records five more Production ID role decisions; canonical promotion remains provisional.
