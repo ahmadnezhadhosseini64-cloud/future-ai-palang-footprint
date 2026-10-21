@@ -49,3 +49,9 @@
 - Buffer / Library / Persistent Memory / Dropbox: UNVERIFIED.
 - AIRC-T01..T10: تعریف شده‌اند؛ اجرای end-to-end هنوز کامل و مستند نشده.
 - Next action: بررسی نتیجهٔ اجرای جدید، سپس ساخت/اتصال Host Adapter و اجرای آزمون واقعی ورودی، خروجی، قطع/بازیابی، idempotency و شش سند.
+
+
+## اجرای نهایی گیت معماری و زمان ثبت
+- EVT-0074 repository commit: `fabd8080a6d93849dad0262f1e8c045c74653efe`; ثبت commit طبق GitHub Actions chronology در حوالی `2026-10-21T15:45:02Z`؛ زمان دقیق commit باید از فرادادهٔ commit خوانده شود و با زمان پردازش دستیار یکی نیست.
+- **گیت پس از اتصال قرارداد:** [Living Architecture Audit #39628504768](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39628504768) — SUCCESS روی head `fabd8080a6d93849dad0262f1e8c045c74653efe`. گام `Enforce automatic interaction registration contract links` و گام‌های ممیزی ساختاری، تاریخی، زمان‌گذاری و ساخت manifest همگی SUCCESS شدند.
+- **مرز ادعا:** این اجرا اثبات می‌کند قرارداد در مسیرهای معماری مورد انتظار متصل است و گیت مخزن پاس شده است. این اجرا اثبات نمی‌کند که هر پیام زندهٔ ChatGPT به‌طور خودکار وارد مخزن می‌شود.
