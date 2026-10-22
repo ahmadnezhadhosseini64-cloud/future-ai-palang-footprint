@@ -504,3 +504,11 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - [EVT-0084 — رویداد حاکمیتی](architecture/BEHAVIOR-TRACE/EVT-0084-APPEND-ONLY-ARCHITECTURE-GROWTH-AND-MASTER-GOVERNANCE-2026-10-22.md).
 - [لنگر مستقل ۰.۰](0.0/anchors/PALANG-0.0-APPEND-ONLY-ARCHITECTURE-GROWTH-2026-10-22-001.md).
 - اصل حاکم: معماری اولیه بازنویسی نمی‌شود؛ فقط با افزوده‌های نسخه‌دار رشد می‌کند.
+
+
+## EVT-0086 — اعتبارسنجی اجرایی دفتر تعامل و آزمون بازیابی
+- [سند مرجع مادر ELVR](reference/REFERENCE-DOCUMENTS/EXECUTABLE-INTERACTION-LEDGER-VALIDATION-MASTER-REFERENCE-2026-10-22-001.md).
+- [رویداد EVT-0086](architecture/BEHAVIOR-TRACE/EVT-0086-EXECUTABLE-LEDGER-VALIDATION-AND-RECOVERY-SMOKE-TEST-2026-10-22.md).
+- [JSON Schema](architecture/BEHAVIOR-TRACE/interaction-pair-ledger.schema.json) و [fixture ساختگی](architecture/BEHAVIOR-TRACE/fixtures/interaction-pair-ledger-smoke-test.json).
+- [Workflow اعتبارسنجی](../.github/workflows/interaction-ledger-validation.yml).
+- وضعیت: ابزار آزمون به مخزن افزوده شد؛ نتیجهٔ اجرای واقعی workflow باید جداگانه تأیید شود.
