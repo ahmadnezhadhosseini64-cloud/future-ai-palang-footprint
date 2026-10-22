@@ -5,7 +5,7 @@
 - Exact user-message time / زمان دقیق پیام: NOT CAPTURED
 - Project: Future AI / Palang Footprint — HAIF
 - Related master: [PALANG-LIVING-MASTER-CONTINUITY-GRAPH-2026-10-22-001](../../reference/REFERENCE-DOCUMENTS/PALANG-LIVING-MASTER-CONTINUITY-GRAPH-2026-10-22-001.md)
-- Related 0.0: [PALANG-0.0-LIVING-CONTINUITY-GRAPH-2026-10-22-001](../../checkpoints/0.0/PALANG-0.0-LIVING-CONTINUITY-GRAPH-2026-10-22-001.md)
+- Related 0.0: [PALANG-0.0-LIVING-CONTINUITY-GRAPH-2026-10-22-001](../../../checkpoints/0.0/PALANG-0.0-LIVING-CONTINUITY-GRAPH-2026-10-22-001.md)
 - Status: RECORDED IN REPOSITORY PENDING READ-BACK / ثبت مخزن؛ بازخوانی پس از ثبت لازم است.
 
 ## Trigger / محرک
