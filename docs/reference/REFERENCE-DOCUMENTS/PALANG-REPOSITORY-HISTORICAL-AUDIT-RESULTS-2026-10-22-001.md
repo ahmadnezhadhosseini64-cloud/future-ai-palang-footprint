@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `PALANG-REPOSITORY-HISTORICAL-AUDIT-RESULTS-2026-10-22-001`
 - Production ID / شناسهٔ تولید: `PRHAR-2026-10-22-001`
-- Version / نسخه: 1.0.0
+- Version / نسخه: 1.1.0
 - Owner / مالک: احمد پلنگ
 - Project / پروژه: Future AI / Palang Footprint
 - Status / وضعیت: AUDIT EXECUTED / FINDINGS OPEN
@@ -70,3 +70,17 @@
 - ممیزی زوج زمانی: 1 مورد REVIEW_REQUIRED.
 - Buffer / بافر، Persistent Memory / حافظهٔ پایدار و Dropbox / دراپ‌باکس: مستقل از این workflow و هنوز NOT VERIFIED.
 - هیچ فایل تاریخی نباید خودکار حذف شود؛ ابتدا حفظ، شناسایی، تطبیق، اصلاح پیوند و بازخوانی.
+
+
+## 6. ممیزی پس از اصلاح پیوندها — نتیجهٔ تازه
+
+- Latest audited snapshot / آخرین نسخهٔ ممیزی‌شده: `0f29c9aba688ca1c72197bd3d2bad151ccbce139`.
+- Workflow / گردش‌کار: [Living Architecture Audit — Run 39802929316](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39802929316), completed successfully.
+- Inspectable artifact / مدرک قابل بررسی: [living-architecture-audit-39802929316](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39802929316/artifacts/12437635217).
+- Audit UTC / زمان ممیزی: `2026-10-22T15:14:32Z`; Tehran equivalent / زمان تهران: `2026-10-22T18:44:32+03:30`.
+- Decode errors / خطای رمزگشایی: 0.
+- Missing local Markdown links / پیوند محلی شکسته: **0**. اصلاح پیوندهای شناخته‌شده در این snapshot از نظر ساختاری تأیید شد.
+- Collision groups unchanged: 57 Stable IDs, 68 Production IDs, 7 Reference IDs, 24 event numbers, 11 exact-content duplicate groups. These remain candidates for semantic classification, not automatic deletion.
+- Timestamp pair audit: 1,330 normalized UTC/Tehran pairs; 1 ambiguous or unparsable item remains; timezone offset/value failures=0; UTC label failures=0. Result remains `REVIEW_REQUIRED` because the EVT-0089 line-21 item is unresolved.
+- Host adapter tests: PASS.
+- Acceptance boundary: structural local-link audit is now clean for this snapshot. Full semantic historical reconciliation is NOT complete; identity collisions and the ambiguous timestamp remain OPEN.
