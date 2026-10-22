@@ -311,3 +311,11 @@
 - قانون: معماری اولیه خط مبنای محفوظ است و فقط با افزوده‌های نسخه‌دار، رویدادها و آزمون‌های قابل ردیابی رشد می‌کند.
 - گام بعدی: دفتر زوج‌های تعامل و JSON Schema، آزمون یکتایی و بازیابی پس از شروع مجدد.
 - خودکارسازی runtime و ذخیره در مقصدهای بیرونی تا زمان آزمون مستقل تأییدنشده‌اند.
+
+
+## 28. اعتبارسنجی اجرایی دفتر تعامل و بازیابی — EVT-0086
+- سند مرجع مادر: [ELVR — اعتبارسنجی اجرایی و بازیابی](./EXECUTABLE-INTERACTION-LEDGER-VALIDATION-MASTER-REFERENCE-2026-10-22-001.md).
+- رویداد: [EVT-0086](../../architecture/BEHAVIOR-TRACE/EVT-0086-EXECUTABLE-LEDGER-VALIDATION-AND-RECOVERY-SMOKE-TEST-2026-10-22.md).
+- Workflow: [interaction-ledger-validation.yml](../../../.github/workflows/interaction-ledger-validation.yml).
+- Fixture ساختگی و جست‌وجوی معکوس IN/OUT تعریف شده‌اند؛ نتیجهٔ اجرای CI باید بازخوانی شود.
+- وضعیت: ثبت workflow ≠ اجرای موفق؛ آزمون cold-start تولیدی و شکارچی خودکار هنوز اثبات نشده‌اند.
