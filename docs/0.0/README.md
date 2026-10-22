@@ -967,3 +967,5 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - قاعدهٔ جدید: هر سند مادر باید خودبسنده و قابل انتقال باشد؛ تغییر معماری فقط پس از تأیید صریح احمد پلنگ؛ read-back و راستی‌آزمایی پس از ثبت.
 
 - پابند زمانی INT-011: [TIME-BINDING-INT-20261022-011](../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-011.md).
+
+- راستی‌آزمایی سند مادر SCEMRS: [Living Architecture Audit #39805549516](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39805549516)؛ صفر پیوند محلی شکسته، صفر خطای رمزگشایی؛ ممیزی معنایی تاریخچه هنوز باز است.
