@@ -431,3 +431,11 @@
 - [رویداد ممیزی](./EVT-0092-MASTER-REFERENCE-AUDIT-AND-ROUTE-CORRECTION-2026-10-22.md)
 - [IN-20261022-006](../../0.0/anchors/PALANG-0.0-IN-20261022-006-MASTER-AUDIT.md) / [OUT-20261022-006](../../0.0/anchors/PALANG-0.0-OUT-20261022-006-MASTER-AUDIT.md)
 - [سند مادر CMIND](../../reference/REFERENCE-DOCUMENTS/CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-MASTER-REFERENCE-2026-10-22-001.md), Addendum v1.0.3: ثبت علت انحراف، قاعدهٔ بازیابی، شکاف‌های باز و گام بعدی.
+
+
+## EVT-0093 — صندوق زنده و زنجیرهٔ رشد از تعامل
+- [EVT-0093](./EVT-0093-LIVING-INBOX-AND-INTERACTION-TO-GROWTH-CHAIN-2026-10-22.md)
+- [صندوق زنده](../LIVE-INBOX/README.md) و [اولین مورد](../LIVE-INBOX/entries/INBOX-20261022-001.md).
+- [IN-20261022-007](../../0.0/anchors/PALANG-0.0-IN-20261022-007-LIVING-INBOX.md) / [OUT-20261022-007](../../0.0/anchors/PALANG-0.0-OUT-20261022-007-LIVING-INBOX.md).
+- [CMIND living master — Addendum v1.0.4](../../reference/REFERENCE-DOCUMENTS/CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-MASTER-REFERENCE-2026-10-22-001.md).
+- ثبت مخزنی از capture خودکار میزبان جداست؛ Issue #20 همچنان OPEN تا producer و بازیابی سرتاسری آزموده شوند.
