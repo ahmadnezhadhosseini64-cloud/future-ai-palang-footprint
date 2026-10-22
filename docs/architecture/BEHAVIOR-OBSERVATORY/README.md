@@ -109,3 +109,10 @@ Continue collecting observable interaction and evaluator behavior as evidence-ba
 - [رویداد فعال‌سازی و بازخوانی](../BEHAVIOR-TRACE/EVT-0038-PALANG-MIRROR-SYNC-ACTIVATION-2026-10-22.md).
 - اتوماسیون روزانه `Palang Mirror Sync` فعال است؛ هر اجرای آینده باید مقایسه و بازخوانی مستقل را ثبت کند.
 - Library برای فایل آزمون مشخص بازخوانی شده است؛ Buffer و Persistent Memory تأییدنشده‌اند؛ Dropbox باز/تأییدنشده است.
+
+## 12. همگام‌سازی آینهٔ زنده — EVT-0038
+- [سیاست حاکم همگام‌سازی آینه](./MIRROR-SYNC-GOVERNANCE-AND-LIVE-REGISTRATION-2026-10-22-001.md) — Stable ID: PALANG-MIRROR-SYNC-GOVERNANCE-2026-10-22-001.
+- [رویداد فعال‌سازی EVT-0038](../BEHAVIOR-TRACE/EVT-0038-LIVE-MIRROR-SYNC-ACTIVATION-2026-10-22.md).
+- نسخهٔ مشخص سیاست در مخزن ثبت و بازخوانی شد؛ آینهٔ Library نیز در مسیر مرجع ثبت و بازخوانی شد. متن تا پایان محتوا تطبیق دارد؛ بازخوانی Library پایان‌خط نهایی را حذف می‌کند.
+- دامنهٔ تأیید فقط همین فایل/نسخه است؛ این فرایند در حال حاضر دستی و مبتنی بر شواهد است، نه سرویس پس‌زمینهٔ خودکار.
+- Buffer و Persistent Memory: NOT VERIFIED؛ Dropbox: OPEN / NOT VERIFIED؛ بازیابی سرتاسری: NOT RUN.
