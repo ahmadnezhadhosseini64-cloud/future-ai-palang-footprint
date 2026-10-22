@@ -46,3 +46,7 @@ The separate test record must be updated only after the independent reference is
 - Exact tool read-back time and test execution time were not returned by the integration, so they remain UNKNOWN / UNVERIFIED. Commit times are not substituted for them.
 - Scope limitation: content-based standalone recovery passed; destructive loss-of-repository recovery, Dropbox, Buffer, Library and Persistent Memory were not tested. They remain OPEN / UNVERIFIED.
 - Next action: run link/structure audit across changed files and continue with independent destination tests only when those integrations are available.
+
+
+## EVT-0035 linked behavior evidence
+The initial C4 automated rejection was a false negative: direct source review confirmed the architecture placement and owner-approval gate. This is separately recorded as [EVT-0035](EVT-0035-BEHAVIOR-EVALUATOR-FALSE-NEGATIVE-C4-2026-10-22.md) with a standalone companion reference in `docs/reference/REFERENCE-DOCUMENTS/`. Preserve the initial tool result and corrected result as separate evidence states.
