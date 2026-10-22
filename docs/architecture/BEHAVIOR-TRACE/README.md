@@ -370,3 +370,11 @@
 - [EVT-0087](./EVT-0087-INTERACTION-VALIDATION-RECOVERY-RESULT-2026-10-22.md) نتیجهٔ CI run 39750440075 را ثبت می‌کند.
 - [لنگر مستقل بازیابی](../../0.0/anchors/PALANG-0.0-INTERACTION-RECOVERY-2026-10-22-001.md).
 - [پابند زمانی UTC/تهران](./TIME-BINDING-ELVR-2026-10-22-001.md).
+
+
+## EVT-0088 — معماری رفتارشناسی زنده و آینده‌پژوهی
+- [EVT-0088](./EVT-0088-CURRENT-ANCHOR-LIVING-BEHAVIOR-ARCHITECTURE-AND-FUTURE-FORESIGHT-GOVERNANCE-2026-10-22.md) — رویداد حاکمیتی و تصمیم نقطهٔ جاری.
+- [LBAF Master Reference](../../reference/REFERENCE-DOCUMENTS/LIVING-BEHAVIOR-ARCHITECTURE-FORESIGHT-MASTER-REFERENCE-2026-10-22-001.md) — سند مادر و نقشهٔ اتصال معماری‌ها.
+- [لنگر جاری ۰.۰](../../0.0/anchors/PALANG-0.0-CURRENT-LIVING-BEHAVIOR-ARCHITECTURE-2026-10-22-001.md) و [لنگر گام بعدی ۰.۰](../../0.0/anchors/PALANG-0.0-RUNTIME-COLLECTOR-PRODUCTION-RECOVERY-2026-10-22-001.md).
+- معماری اولیه حفظ شده و فقط با افزودهٔ نسخه‌دار به‌روزرسانی شده است.
+- گام بعدی: پیاده‌سازی runtime collector و آزمون cold-start تولیدی از دادهٔ پایدار؛ issue #20.
