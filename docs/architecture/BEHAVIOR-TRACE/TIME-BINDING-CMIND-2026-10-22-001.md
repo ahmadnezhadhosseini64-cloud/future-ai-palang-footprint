@@ -63,3 +63,24 @@ Return to [CMIND](../../reference/REFERENCE-DOCUMENTS/CONTINUATION-MODEL-INITIAL
 - Canonical repository commit UTC: `2026-10-22T17:38:41Z`
 - Tehran equivalent from same instant: `2026-10-22T21:08:41+03:30`
 - Read-back: PASS; blob SHA `1794f7f68c0f103e94b235f0219a630d3bc90e52`; endpoint, CI result and production-scope caveat were present.
+
+
+## EVT-0092 audit registration timestamps — canonical repository commit time
+| Artifact | Commit SHA | Repository commit UTC | Tehran equivalent |
+|---|---|---|---|
+| EVT-0092 audit event | `2a0364c5a7a8522ebdc0ce56c27f3f99c9ae9205` | 2026-10-22T17:39:51Z | 2026-10-22T21:09:51+03:30 |
+| IN-20261022-006 | `ae6b370c907c5e9858fff588bf373170327fc2ba` | 2026-10-22T17:39:55Z | 2026-10-22T21:09:55+03:30 |
+| OUT-20261022-006 | `63686d5acef7e90ed3731776eb52c94b3c7a5b38` | 2026-10-22T17:39:58Z | 2026-10-22T21:09:58+03:30 |
+| CMIND master — audit/recovery addendum | `285e7c0bd83213e78c526bc8ab29475437ecdf22` | 2026-10-22T17:40:16Z | 2026-10-22T21:10:16+03:30 |
+| Integration queue — EVT-0092 reconciliation | `64b21922cce91640e384eb790d374178cfecfb19` | 2026-10-22T17:41:03Z | 2026-10-22T21:11:03+03:30 |
+| Model-initial queue — EVT-0092 reconciliation | `01b4557a22f0df83819f303e07cb4b03de084041` | 2026-10-22T17:41:09Z | 2026-10-22T21:11:09+03:30 |
+| CMIND master — live Issue #20 reconciliation | `d7dfb945e46f5ad316ab649e46a5f75f06c8ad1f` | 2026-10-22T17:41:42Z | 2026-10-22T21:11:42+03:30 |
+| EVT-0092 — read-back reconciliation | `b9965656c997e5ae7197ff9a417564837ef82973` | 2026-10-22T17:41:51Z | 2026-10-22T21:11:51+03:30 |
+
+Exact user-message timestamp for the current request remains NOT CAPTURED; no commit timestamp is substituted for it.
+
+## Audit registration status
+- CMIND master, EVT-0092, independent IN/OUT anchors, 0.0 registry, reference index, behavior-trace index, integration queue and model-initial queue have been fetched after writes.
+- EVT-0092 and independent anchor references were present in the relevant control surfaces.
+- Live Issue #20 was fetched and remains OPEN.
+- Repository registration/read-back: VERIFIED for the listed artifacts. Full runtime/production behavior-hunter implementation remains OPEN.
