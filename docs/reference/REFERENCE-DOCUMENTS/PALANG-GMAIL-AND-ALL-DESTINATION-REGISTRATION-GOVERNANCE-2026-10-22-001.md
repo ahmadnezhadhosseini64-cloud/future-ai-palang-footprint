@@ -8,7 +8,7 @@
 - Project: Future AI / Palang Footprint / HAIF
 - Location anchor: گنبد کاووس، ایران
 - Status: ACTIVE / LIVING / OPEN — سند حاکم زنده است؛ شکاف Gmail هنوز باز است.
-- Event: [EVT-0039](../architecture/BEHAVIOR-TRACE/EVT-0039-GMAIL-REFERENCE-REGISTRATION-GAP-2026-10-22.md)
+- Event: [EVT-0039](../../architecture/BEHAVIOR-TRACE/EVT-0039-GMAIL-REFERENCE-REGISTRATION-GAP-2026-10-22.md)
 - Mirror controller: [PALANG-MIRROR-SYNC-CONTROLLER-2026-10-22-001](../../architecture/BEHAVIOR-OBSERVATORY/PALANG-MIRROR-SYNC-CONTROLLER-2026-10-22-001.md)
 - Audit: [LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001](../../architecture/BEHAVIOR-OBSERVATORY/LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md)
 
