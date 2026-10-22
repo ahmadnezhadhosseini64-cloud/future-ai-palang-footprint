@@ -66,3 +66,13 @@ This record documents the test objective, method, evidence, rule applied, observ
 
 ## 6. Recovery command
 "Open the standalone Behavior Observatory reference. Reconstruct the goal, rules, architecture placement, observation schema, verification gates, current evidence state and next actions using that file alone. Record each criterion as PASS/PARTIAL/FAIL with evidence, then resume unresolved work without asserting unverified storage."
+
+
+## 7. Evaluator false-negative incident (EVT-0035)
+The first automated check incorrectly marked C4 as failed because its pattern matcher did not recognize the existing wording. Direct inspection of the standalone source confirmed the architecture placement and owner-approval gate. The result was corrected to PASS without changing the criterion. The initial false negative and correction are preserved as behavior evidence:
+- Event: [EVT-0035](../BEHAVIOR-TRACE/EVT-0035-BEHAVIOR-EVALUATOR-FALSE-NEGATIVE-C4-2026-10-22.md)
+- Independent reference: [C4 false-negative behavior reference](../../reference/REFERENCE-DOCUMENTS/BEHAVIOR-OBSERVATION-FALSE-NEGATIVE-C4-2026-10-22-001.md)
+- Lesson: automated negative output is a finding to investigate, not an unquestionable verdict; compare with source evidence and preserve both initial and corrected results.
+
+## 8. Remaining scope
+The PASS 10/10 result applies only to content-based reconstruction from the standalone document. It does not prove the repository could be restored after complete loss, nor does it prove Dropbox, external Library, Buffer or Persistent Memory. Those remain open until independently tested.
