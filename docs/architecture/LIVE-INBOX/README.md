@@ -37,3 +37,9 @@ Do not silently overwrite previous entries. New understanding becomes a versione
 
 ## Current checkpoint
 The first registered item is the user's request to make the live inbox a standard interaction pathway and to make each interaction serve the growing HAIF architecture. This entry is linked to the CMIND master and EVT-0093. Production-grade automatic capture remains OPEN under Issue #20.
+
+
+## Current registration checkpoint
+- [EVT-0093](../BEHAVIOR-TRACE/EVT-0093-LIVING-INBOX-AND-INTERACTION-TO-GROWTH-CHAIN-2026-10-22.md), [first inbox item](./entries/INBOX-20261022-001.md), independent IN/OUT anchors, CMIND master Addendum v1.0.4, model-initial queue, and both relevant indexes have been fetched after write and their expected identifiers/links matched.
+- Canonical UTC/Tehran commit evidence: [TIME-BINDING-LIVE-INBOX](../BEHAVIOR-TRACE/TIME-BINDING-LIVE-INBOX-2026-10-22-001.md).
+- Status: inbox structure ACTIVE / LIVING; repository records REGISTERED / READ-BACK VERIFIED. Host-side automatic capture and production cold-start remain OPEN under Issue #20.
