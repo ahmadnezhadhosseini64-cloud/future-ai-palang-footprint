@@ -65,3 +65,14 @@ ACTIVE / LIVING یعنی سند قابل‌توسعه، نسخه‌دار، دا
 - زمان پایان: UTC 2026-10-22T08:48:06Z = تهران 2026-10-22T12:18:06+03:30.
 - سه job موفق: schema-validation، recover-from-input، recover-from-output.
 - دامنهٔ نتیجه محدود به JSON Schema و fixture ساختگی در checkoutهای تازه است. آزمون cold-start سرویس واقعی و ثبت خودکار تولیدی همچنان GAP باز هستند.
+
+
+## 10. Result of actual CI execution — EVT-0087
+The previously pending CI run has been executed and read back:
+- Result event: [EVT-0087](../../architecture/BEHAVIOR-TRACE/EVT-0087-INTERACTION-VALIDATION-RECOVERY-RESULT-2026-10-22.md).
+- Run 39750440075: SUCCESS — https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39750440075
+- Schema job 119729379597: SUCCESS.
+- IN recovery job 119729379857: SUCCESS after fresh checkout.
+- OUT recovery job 119729379868: SUCCESS after separate fresh checkout.
+- UTC run interval 2026-10-22T08:47:52Z–2026-10-22T08:48:08Z; Tehran equivalent 2026-10-22T12:17:52+03:30–2026-10-22T12:18:08+03:30.
+- This confirms the synthetic fixture and CI checks only. Production auto-capture and host-memory cold-start recovery remain unverified.
