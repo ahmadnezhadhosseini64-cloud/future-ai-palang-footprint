@@ -644,8 +644,10 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 
 
 ## سند مادر خودبسنده و قابل‌اجرا — SCEMRS v1.0.0
-- [سند مادر حاکم](REFERENCE-DOCUMENTS/PALANG-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE-STANDARD-2026-10-22-001.md): قرارداد کامل قابل انتقال به محیط AI دیگر یا مدل اپ؛ دروازهٔ تأیید انحصاری احمد پلنگ؛ چرخهٔ ثبت، آزمون و بازیابی.
-- [رویداد EVT-0098](../architecture/BEHAVIOR-TRACE/EVT-0098-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE-AND-OWNER-APPROVAL-2026-10-22.md)
-- [ورودی IN-011](../0.0/anchors/PALANG-0.0-IN-20261022-011-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE.md) / [خروجی OUT-011](../0.0/anchors/PALANG-0.0-OUT-20261022-011-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE.md)
+- [سند مادر حاکم](reference/REFERENCE-DOCUMENTS/PALANG-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE-STANDARD-2026-10-22-001.md): قرارداد کامل قابل انتقال به محیط AI دیگر یا مدل اپ؛ دروازهٔ تأیید انحصاری احمد پلنگ؛ چرخهٔ ثبت، آزمون و بازیابی.
+- [رویداد EVT-0098](architecture/BEHAVIOR-TRACE/EVT-0098-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE-AND-OWNER-APPROVAL-2026-10-22.md)
+- [ورودی IN-011](0.0/anchors/PALANG-0.0-IN-20261022-011-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE.md) / [خروجی OUT-011](0.0/anchors/PALANG-0.0-OUT-20261022-011-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE.md)
 - نسخه‌های معماری: PIRHA 1.5.0؛ HAIF 1.3.4.
 - وضعیت: ثبت مخزن؛ read-back مستقل در جریان این تعامل.
+
+- پابند زمانی تعامل: [TIME-BINDING-INT-20261022-011](architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-011.md).
