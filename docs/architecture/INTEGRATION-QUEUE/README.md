@@ -1044,3 +1044,10 @@ The queue index and the timestamp case must each be read back after this update.
 - رویداد: [EVT-0039](../BEHAVIOR-TRACE/EVT-0039-GMAIL-REFERENCE-REGISTRATION-GAP-2026-10-22.md).
 - Gmail و Google Drive در بررسی اتصال فعلی `DISABLED_BY_ADMIN / NOT_AVAILABLE`؛ هیچ ارسال یا read-back در Gmail انجام نشده. Gmail: BLOCKED / NOT VERIFIED.
 - اقدام باز: `GMAIL-CONNECTION-AND-READBACK-01` — دسترسی مجاز ایمیل، ثبت سند کامل، بازیابی همان پیام و تطبیق شواهد. بافر و حافظهٔ پایدار و Dropbox نیز مستقل تأییدنشده باقی می‌مانند.
+
+## EVT-0040 — لنگر مستقل ورودی/خروجی تعاملی
+- Event: [EVT-0040](../BEHAVIOR-TRACE/EVT-0040-INTERACTIVE-IO-TEMPORAL-INDEPENDENT-ANCHOR-2026-10-22.md).
+- Stable ID: `PALANG-INTERACTIVE-IO-TEMPORAL-INDEPENDENT-ANCHOR-2026-10-22-001`; Version 1.0.0; status ACTIVE / LIVING / OPEN.
+- ثبت اولیهٔ مخزن: UTC `2026-10-22T06:15:09Z`; معادل تهران `2026-10-22 09:45:09`.
+- توسعهٔ چرخه: INPUT_CAPTURE → OUTPUT_CAPTURE → EVIDENCE_LINK → WRITE → READ-BACK → MATCH/VERIFY → RECONCILE → STATUS/RESUME.
+- ادعای کاربر دربارهٔ ثبت تاریخی Gmail حفظ شد؛ Gmail هنوز BLOCKED / NOT VERIFIED و `GMAIL-CONNECTION-AND-READBACK-01` باز است. هیچ ثبت Gmail ادعا نمی‌شود.
