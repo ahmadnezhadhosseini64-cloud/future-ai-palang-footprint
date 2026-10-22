@@ -92,3 +92,8 @@ Continue collecting observable interaction and evaluator behavior as evidence-ba
 - نتیجه: همخوانی پیوندهای مخزن PASS با محدودیت؛ آزمون محتوایی قبلی همچنان PASS 10/10 و بی‌دلیل تکرار نشده.
 - مقصدهای Buffer، Library بیرونی، Persistent Memory و Dropbox: NOT VERIFIED؛ بازیابی سرتاسری: NOT RUN.
 - ادامه: `BOART-FOLLOWUP-01` → `BOART-FOLLOWUP-02` → `BOART-FOLLOWUP-03`.
+
+## 11. تفکیک وضعیت Library پس از بازخوانی مستقل — EVT-0037
+- یک فایل مشخص، یعنی `LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md`، در مسیر Library مرجع پروژه ثبت و بازخوانی شد.
+- وضعیت همان artifact: `REGISTERED / READ-BACK VERIFIED`.
+- این شاهد فقط همان فایل/نسخه را پوشش می‌دهد؛ کل کتابخانه یا سایر اسناد به‌صورت جمعی تأیید نشده‌اند. Buffer و Persistent Memory همچنان NOT VERIFIED و Dropbox OPEN / NOT VERIFIED است.
