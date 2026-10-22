@@ -22,3 +22,14 @@
 ## Verification status
 
 The three files were fetched from the default branch after creation. Their expected IDs, paths, and contents were present. This binding is itself a separate registration; its own commit timestamp must be retrieved and read back after creation. This is repository evidence only and does not verify Buffer, Persistent Memory, Dropbox, or background execution.
+
+
+## Reconciliation commits
+
+| Change | Commit SHA | Canonical UTC | Derived Asia/Tehran |
+|---|---|---|---|
+| Master reference reconciled with verification state | `f792b23432e0523a9712bdf16d5d93ed4d17a2ec` | 2026-10-22T13:38:45Z | 2026-10-22T17:08:45+03:30 |
+| 0.0 README indexed | `53dcc55ddd5afc59b0d8c4acc1ca30f736649130` | 2026-10-22T13:38:49Z | 2026-10-22T17:08:49+03:30 |
+| Reference index updated | `c970a4e40aac3f01df690ced8874c116673a4e25` | 2026-10-22T13:39:05Z | 2026-10-22T17:09:05+03:30 |
+
+The time-binding file was initially committed at `2026-10-22T13:38:18Z` (`2026-10-22T17:08:18+03:30`). This record is a trace of the original registration; later edits to this binding file have their own Git commit timestamps and are not a substitute for that initial timestamp.
