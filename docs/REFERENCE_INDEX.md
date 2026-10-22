@@ -641,3 +641,11 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - PRHAR audit report: v1.1.0; event: EVT-0097.
 - Structural audit run 39802929316: zero missing local Markdown links on snapshot `0f29c9aba688ca1c72197bd3d2bad151ccbce139`.
 - Open semantic findings: 57 Stable-ID, 68 Production-ID, 7 Reference-ID, 24 event-number collision groups; 11 exact duplicate groups; one ambiguous timestamp.
+
+
+## سند مادر خودبسنده و قابل‌اجرا — SCEMRS v1.0.0
+- [سند مادر حاکم](REFERENCE-DOCUMENTS/PALANG-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE-STANDARD-2026-10-22-001.md): قرارداد کامل قابل انتقال به محیط AI دیگر یا مدل اپ؛ دروازهٔ تأیید انحصاری احمد پلنگ؛ چرخهٔ ثبت، آزمون و بازیابی.
+- [رویداد EVT-0098](../architecture/BEHAVIOR-TRACE/EVT-0098-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE-AND-OWNER-APPROVAL-2026-10-22.md)
+- [ورودی IN-011](../0.0/anchors/PALANG-0.0-IN-20261022-011-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE.md) / [خروجی OUT-011](../0.0/anchors/PALANG-0.0-OUT-20261022-011-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE.md)
+- نسخه‌های معماری: PIRHA 1.5.0؛ HAIF 1.3.4.
+- وضعیت: ثبت مخزن؛ read-back مستقل در جریان این تعامل.
