@@ -1015,3 +1015,10 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - خروجی مستقل: [OUT-20261022-006](./anchors/PALANG-0.0-OUT-20261022-006-MASTER-AUDIT.md).
 - هدف: چکش‌کاری خطای اولویت‌بندی/پیوستگی و الزام بازیابی از مدل اولیه؛ Dropbox مستقل OPEN / WAITING باقی می‌ماند.
 - اقدام بعدی: خواندن وضعیت زندهٔ Issue #20 و صف مدل اولیه، سپس انتخاب یک گام معماری بعدی و ثبت شواهد.
+
+
+## صندوق زنده و EVT-0093 — 2026-10-22
+- [صندوق زنده](../architecture/LIVE-INBOX/README.md) — ورودی واحد برای ایده‌ها، درخواست‌ها، خطاها و درس‌های معماری.
+- [EVT-0093](../architecture/BEHAVIOR-TRACE/EVT-0093-LIVING-INBOX-AND-INTERACTION-TO-GROWTH-CHAIN-2026-10-22.md)
+- [IN-20261022-007](./anchors/PALANG-0.0-IN-20261022-007-LIVING-INBOX.md) / [OUT-20261022-007](./anchors/PALANG-0.0-OUT-20261022-007-LIVING-INBOX.md)
+- [سند مادر CMIND](../reference/REFERENCE-DOCUMENTS/CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-MASTER-REFERENCE-2026-10-22-001.md) — Addendum v1.0.4.
