@@ -489,3 +489,11 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 ## رخداد رفتن کاربر — EVT-0082
 - [EVT-0082 — ثبت رفتن کاربر و اشاره‌گر بازگشت](architecture/BEHAVIOR-TRACE/EVT-0082-USER-DEPARTURE-RETURN-TO-0.0-2026-10-21.md) — ثبت مستقل پیام «ثبت کن من میرم» و مسیر بازیابی پس از بازگشت.
 - زمان ثبت مخزن: UTC `2026-10-21T19:35:23Z` = تهران `2026-10-21T23:05:23+03:30`; commit `a254ef3e42fd4cc8223db3c43487e105c0e6103e`.
+
+
+## EVT-0083 — رفتارشناسی نخستین زوج ورودی/خروجی و مدل نام‌گذاری
+- رویداد: [EVT-0083](architecture/BEHAVIOR-TRACE/EVT-0083-FIRST-INTERACTION-BEHAVIOR-ANALYSIS-AND-IO-NAMING-MODEL-2026-10-22.md).
+- سند مرجع زنده: [IBIO](reference/REFERENCE-DOCUMENTS/FIRST-INTERACTION-BEHAVIOR-ANALYSIS-AND-IO-NAMING-LIVING-REFERENCE-2026-10-22-001.md).
+- لنگر مستقل: [PALANG-0.0-FIRST-IO-BEHAVIOR-MODEL-2026-10-22-001](0.0/anchors/PALANG-0.0-FIRST-IO-BEHAVIOR-MODEL-2026-10-22-001.md).
+- قرارداد نام‌گذاری زوج‌ها: `INT-YYYYMMDD-NNN` / `IN-YYYYMMDD-NNN` / `OUT-YYYYMMDD-NNN`.
+- وضعیت: ACTIVE / LIVING / OPEN / EVOLVABLE؛ پیاده‌سازی runtime و آزمون بازیابی در صف ادامه است.
