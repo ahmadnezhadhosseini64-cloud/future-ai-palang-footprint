@@ -123,3 +123,8 @@ Continue collecting observable interaction and evaluator behavior as evidence-ba
 - نسخهٔ مشخص سیاست در مخزن ثبت و بازخوانی شد؛ آینهٔ Library نیز در مسیر مرجع ثبت و بازخوانی شد. متن تا پایان محتوا تطبیق دارد؛ بازخوانی Library پایان‌خط نهایی را حذف می‌کند.
 - دامنهٔ تأیید فقط همین فایل/نسخه است؛ این فرایند در حال حاضر دستی و مبتنی بر شواهد است، نه سرویس پس‌زمینهٔ خودکار.
 - Buffer و Persistent Memory: NOT VERIFIED؛ Dropbox: OPEN / NOT VERIFIED؛ بازیابی سرتاسری: NOT RUN.
+
+### Clarification for EVT-0038
+- The mirror workflow is now backed by a daily scheduled automation (`Palang Mirror Sync`, ID `6ad9a407b9d481919c7145fbe4638dec`, timezone `Asia/Tehran`). It is not a continuous always-on watcher; each scheduled run must provide its own evidence.
+- The Library audit mirror was updated and independently read back with controller and automation identifiers present.
+- This does not verify Buffer, Persistent Memory or Dropbox.
