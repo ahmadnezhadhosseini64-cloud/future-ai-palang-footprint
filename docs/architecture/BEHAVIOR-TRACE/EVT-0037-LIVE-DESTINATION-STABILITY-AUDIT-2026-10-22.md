@@ -37,3 +37,10 @@
 
 ## چرخهٔ حاکم
 PRESERVE → ANCHOR → DOCUMENT → REGISTER → READ-BACK → MATCH → VERIFY → RECONCILE → LINK → TEST → STATUS → RESUME.
+
+
+## Repository registration timestamps (canonical commit evidence)
+- Test record initial commit: `bc44f9a4f1f78bbbe53bb4487dfd2bb236a88df5`; UTC `2026-10-22T05:45:06Z`; Asia/Tehran `2026-10-22 09:15:06` (derived from the same instant).
+- EVT-0037 initial commit: `36b6dc063d64dac030961c29b016c0f39eaa4029`; UTC `2026-10-22T05:45:09Z`; Asia/Tehran `2026-10-22 09:15:09` (derived from the same instant).
+- These are repository registration times, not user-message time, test execution time, or tool read-back time.
+- Post-write read-back and index-link reconciliation are the next verification step; external destinations remain NOT VERIFIED.
