@@ -742,3 +742,11 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - Stable ID: `PALANG-INDEPENDENT-LIVE-PERSISTENCE-TEST-2026-10-22-001`
 - وضعیت: ACTIVE / LIVING / OPEN. بازخوانی چند فایل مخزن انجام شده؛ ماندگاری در Library، Buffer، حافظهٔ پایدار و Dropbox هنوز مستقلاً تأیید نشده است.
 - گام بعدی: BOART-FOLLOWUP-01 — ممیزی مرجع مادر؛ سپس آزمون واقعی Dropbox و بازیابی از نسخهٔ بیرونی. این مورد به فهرست افزوده می‌شود و نقاط ۰.۰ قبلی را جایگزین نمی‌کند.
+
+
+## آزمون زندهٔ پایداری مقصدها — EVT-0037
+- آزمون مستقل: [LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001](../architecture/BEHAVIOR-OBSERVATORY/LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md).
+- رویداد: [EVT-0037](../architecture/BEHAVIOR-TRACE/EVT-0037-LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22.md).
+- نقطهٔ ۰.۰ جاری حفظ می‌شود؛ این آزمون آن را جایگزین نمی‌کند.
+- نتیجه: Repository cross-reference audit PASS با محدودیت؛ Buffer، Library، Persistent Memory و Dropbox هنوز NOT VERIFIED؛ بازیابی سرتاسری NOT RUN.
+- گام بعدی: `BOART-FOLLOWUP-01`؛ سپس Dropbox و بازیابی بیرونی.
