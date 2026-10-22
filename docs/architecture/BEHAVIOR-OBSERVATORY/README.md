@@ -97,3 +97,9 @@ Continue collecting observable interaction and evaluator behavior as evidence-ba
 - یک فایل مشخص، یعنی `LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md`، در مسیر Library مرجع پروژه ثبت و بازخوانی شد.
 - وضعیت همان artifact: `REGISTERED / READ-BACK VERIFIED`.
 - این شاهد فقط همان فایل/نسخه را پوشش می‌دهد؛ کل کتابخانه یا سایر اسناد به‌صورت جمعی تأیید نشده‌اند. Buffer و Persistent Memory همچنان NOT VERIFIED و Dropbox OPEN / NOT VERIFIED است.
+
+## 12. همگام‌سازی زندهٔ آینه — EVT-0037
+- آینهٔ Library برای پروندهٔ `LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md` به‌روزرسانی و از مسیر مستقل بازخوانی شد.
+- نتیجهٔ همان فایل: `WRITE=PASS / READ-BACK=PASS / MATCH=PASS`.
+- فرادادهٔ آخرین تغییر Library: UTC `2026-10-22T05:50:28.914450Z` = تهران `2026-10-22 09:20:28.914450`.
+- این وضعیت فقط همین آینه را تأیید می‌کند؛ Buffer و Persistent Memory تأییدنشده، Dropbox باز/تأییدنشده، بازیابی بیرونی اجرا‌نشده است. همگام‌سازی خودکار پس‌زمینه ادعا نمی‌شود.
