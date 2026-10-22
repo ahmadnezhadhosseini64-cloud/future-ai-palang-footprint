@@ -1038,3 +1038,9 @@ The queue index and the timestamp case must each be read back after this update.
 - Repository policy version and Library mirror have been written and read back; content matches apart from the final newline normalization in Library read-back.
 - Status: ACTIVE / LIVING / OPEN. Buffer and Persistent Memory remain NOT VERIFIED; Dropbox remains OPEN / NOT VERIFIED; isolated external recovery NOT RUN.
 - Continue with BOART-FOLLOWUP-01, then Dropbox write/retrieve and isolated recovery. Mirror sync is a manual evidence-backed process, not an asserted always-running background watcher.
+
+## EVT-0039 — ثبت Gmail و شکاف مقصد مستقل
+- سند مرجع کامل: [PALANG-GMAIL-AND-ALL-DESTINATION-REGISTRATION-GOVERNANCE-2026-10-22-001](../../reference/REFERENCE-DOCUMENTS/PALANG-GMAIL-AND-ALL-DESTINATION-REGISTRATION-GOVERNANCE-2026-10-22-001.md).
+- رویداد: [EVT-0039](../BEHAVIOR-TRACE/EVT-0039-GMAIL-REFERENCE-REGISTRATION-GAP-2026-10-22.md).
+- Gmail و Google Drive در بررسی اتصال فعلی `DISABLED_BY_ADMIN / NOT_AVAILABLE`؛ هیچ ارسال یا read-back در Gmail انجام نشده. Gmail: BLOCKED / NOT VERIFIED.
+- اقدام باز: `GMAIL-CONNECTION-AND-READBACK-01` — دسترسی مجاز ایمیل، ثبت سند کامل، بازیابی همان پیام و تطبیق شواهد. بافر و حافظهٔ پایدار و Dropbox نیز مستقل تأییدنشده باقی می‌مانند.
