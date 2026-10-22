@@ -122,3 +122,13 @@ Feedback / بازخورد انسان و آزمون‌ها به چرخه برمی
 - Numbering safety / ایمنی شماره‌گذاری: پیش از تخصیص EVT مخزن جست‌وجو شود؛ شمارهٔ تکراری ممنوع؛ شمارندهٔ واقعی تا پیاده‌سازی runtime به‌صورت خودکار تضمین‌شده نیست.
 - Behavior pipeline / خط لولهٔ رفتار: CAPTURE → CLASSIFY → PAIR → IDENTIFY → PROVENANCE → TEMPORAL ANCHOR → EVIDENCE → WRITE → READ-BACK → MATCH → VERIFY → RECONCILE → RESUME → LEARN.
 - این سند معماری است، نه اثبات اینکه دریافت/شماره‌گذاری خودکار تمام پیام‌ها در runtime پیاده‌سازی شده است.
+
+ 
+## 14. قاعدهٔ حاکم رشد افزایشی — EVT-0084
+- **اصل:** معماری اولیه خط مبنای محفوظ است؛ محتوای تاریخی آن بازنویسی یا حذف نمی‌شود. توسعه فقط با بخش افزودهٔ نسخه‌دار، رویداد، آزمون و پیوندهای قابل ردیابی انجام می‌شود.
+- رویداد حاکمیتی: [EVT-0084](../BEHAVIOR-TRACE/EVT-0084-APPEND-ONLY-ARCHITECTURE-GROWTH-AND-MASTER-GOVERNANCE-2026-10-22.md).
+- سند مرجع مادر: [AOGM — رشد افزایشی معماری](../../reference/REFERENCE-DOCUMENTS/APPEND-ONLY-ARCHITECTURE-GROWTH-MASTER-REFERENCE-2026-10-22-001.md).
+- لنگر مستقل: [PALANG-0.0-APPEND-ONLY-ARCHITECTURE-GROWTH-2026-10-22-001](../../0.0/anchors/PALANG-0.0-APPEND-ONLY-ARCHITECTURE-GROWTH-2026-10-22-001.md).
+- مدل رفتارشناسی و زوج‌سازی ورودی/خروجی EVT-0083/FIOBAM در این معماری از طریق افزوده‌ها و پیوندها رشد می‌کند.
+- هر تغییر آینده باید دلیل، منشأ، نسخه، اثر، آزمون، نتیجهٔ بازخوانی و مسیر بازگشت داشته باشد.
+- ثبت این قاعده، به‌تنهایی به معنی فعال‌شدن خودکار جمع‌آوری پیام‌ها در runtime نیست؛ آن قابلیت در صف پیاده‌سازی و آزمون باقی می‌ماند.
