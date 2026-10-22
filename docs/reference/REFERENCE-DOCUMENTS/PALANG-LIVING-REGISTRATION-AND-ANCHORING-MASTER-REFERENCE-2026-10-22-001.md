@@ -10,7 +10,7 @@
 - Source request: «ثبت کن و سند مرجع زنده وو فعال و همیشگی و لنگر گزاری کن»
 - Independent input anchor: `docs/0.0/anchors/PALANG-0.0-IN-20261022-007-LIVING-REGISTRATION.md`
 - Independent output anchor: `docs/0.0/anchors/PALANG-0.0-OUT-20261022-007-LIVING-REGISTRATION.md`
-- Time binding: pending separate file and read-back.
+- Time binding: `docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-PLRA-2026-10-22-001.md` (created; read-back pending).
 - Previous continuation master: `docs/reference/REFERENCE-DOCUMENTS/PALANG-REGISTRATION-CONTINUATION-MASTER-REFERENCE-2026-10-22-001.md`
 
 ## Governing intent
@@ -29,7 +29,7 @@ Keep the project context continuous and recoverable; keep the architecture open 
 
 ## State at registration
 
-- Repository master and anchors: to be verified after creation.
+- Repository master and independent input/output anchors: created and fetched back from the default branch; expected IDs and paths matched.
 - Buffer: not verified in this operation.
 - Persistent Memory: not verified in this operation.
 - Dropbox fallback: remains an existing open 0.0 task; this registration does not close it.
@@ -38,4 +38,4 @@ Keep the project context continuous and recoverable; keep the architecture open 
 
 ## Next continuation
 
-Read back all files in this registration, capture actual commit timestamps, create/update the time-binding record, reconcile links with the master continuity graph and reference index, then separately resume the open Dropbox storage/retrieval test. Do not mark the full workflow complete before those steps are actually verified.
+Read back the time-binding record, update the 0.0 README and reference index, reconcile links with the master continuity graph, then separately resume the open Dropbox storage/retrieval test. Do not mark the full workflow complete before those steps are actually verified.
