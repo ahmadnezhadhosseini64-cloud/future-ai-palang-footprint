@@ -43,3 +43,15 @@ Exact user-message timestamp: NOT EXPOSED / NOT CAPTURED. No repository timestam
 ## Recovery and continuation
 
 Return to [CMIND](../../reference/REFERENCE-DOCUMENTS/CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-MASTER-REFERENCE-2026-10-22-001.md), then [Issue #20](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/20). Dropbox remains an independent OPEN / WAITING branch.
+
+
+## Corrected run result — read back from GitHub Actions
+- Run ID: `39824020260`
+- URL: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39824020260
+- Head commit: `5bae4d711ba2c2cb50f440b6c23af8b65e73fbcf`
+- Status/conclusion: COMPLETED / SUCCESS.
+- Job: `119982395261` — `test-haif-prototype` — SUCCESS.
+- Test summary from job log: `16 passed, 1 warning, 0 failed`.
+- Run started: UTC `2026-10-22T17:35:18Z` = Tehran `2026-10-22T21:05:18+03:30`.
+- Run updated/completed according to run metadata: UTC `2026-10-22T17:35:41Z` = Tehran `2026-10-22T21:05:41+03:30`.
+- Interpretation: local HAIF v0 prototype test suite passes for the current commit, including the new interaction-pair tests and restart recovery test. This is not evidence of automatic capture from the ChatGPT host or external storage.
