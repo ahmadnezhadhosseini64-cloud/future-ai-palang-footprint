@@ -23,17 +23,17 @@
 - Input timestamp UTC: UNKNOWN / NOT EXPOSED by current tools.
 - Output timestamp UTC: UNKNOWN / NOT EXPOSED as an independent host event.
 - Internal thinking duration: NOT EXPOSED / NOT MEASURED.
-- Repository canonical time: actual last-change commit UTC; Tehran equivalent computed from same instant.
+- Repository canonical time: actual last-change commit UTC; Tehran equivalent computed from same instant. Initial event commit: UTC `2026-10-22T06:38:32Z`; Tehran `2026-10-22 10:08:32`.
 
 ## مقصدها
-- Repository: create, read back, match; record evidence after commit.
+- Repository: WRITE=PASS / READ-BACK=PASS / MATCH=PASS; the event file and cross-links were fetched after commit and identifiers/status matched.
 - Library: pending independent write/read-back for this new reference.
 - Gmail: BLOCKED / NOT VERIFIED based on current connector evidence in EVT-0039; no message sent or retrieved in this operation.
 - Buffer / Persistent Memory: NOT VERIFIED.
 - Dropbox: OPEN / NOT VERIFIED.
 
 ## اقدام بعدی
-1. ثبت و بازخوانی این رویداد، سند مرجع و لنگر ۰.۰.
+1. Repository event, reference and 0.0 anchor were written and independently read back; matching IDs and links verified.
 2. پیوند دادن به سند مادر، نمایهٔ ۰.۰ و صف کارها.
 3. بارگذاری و بازخوانی Library در صورت امکان.
 4. ادامهٔ `GMAIL-CONNECTION-AND-READBACK-01` فقط با دسترسی ایمیل مجاز؛ سپس بازیابی همان پیام و تطبیق آن.
