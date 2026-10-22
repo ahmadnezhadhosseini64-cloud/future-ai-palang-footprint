@@ -103,3 +103,12 @@ Feedback / بازخورد انسان و آزمون‌ها به چرخه برمی
 - افزودن پیوند این پوشه به نمایه رفتارشناسی و سند مادر ادامه.
 - باقی‌گذاشتن Gmail در وضعیت مسدود تا وقتی ابزار واقعی قابل استفاده شود؛ عدم جایگزینی خاموش Gmail با سرویس دیگری.
 - بعد از دسترسی، آزمون انتهابه‌انتها: ثبت رویداد → ارسال مجاز → یافتن پیام ارسالی → تطبیق → ثبت شواهد.
+
+
+## 12. اصلاح معماری پس از EVT-0069 — دفتر تلاش‌های ثبت و موانع
+- Event: [EVT-0069](../BEHAVIOR-TRACE/EVT-0069-REGISTRATION-LIMITATION-CHECKLIST-REPAIR-AND-RESUME-2026-10-22.md)
+- Living reference: [RLP](../../reference/REFERENCE-DOCUMENTS/PEH-REGISTRATION-LIMITATION-AND-INTERACTION-BEHAVIOR-LIVING-REFERENCE-2026-10-22-001.md)
+- 0.0 anchor: [Registration limitation resume](../../0.0/anchors/PALANG-0.0-REGISTRATION-LIMITATION-AND-PEH-RESUME-2026-10-22-001.md)
+- Add entity RegistrationAttempt (تلاش ثبت): attempt_id, destination, operation, started_at_utc, completed_at_utc, result, blocked_reason, evidence_ref, readback_ref, retry_condition, next_action.
+- Separate handled vs succeeded: «بررسی/رسیدگی شد» به معنی «عمل موفق شد» نیست. Gmail remains BLOCKED / NOT SENT.
+- Acceptance test: create one attempt per destination, read it back, and verify the blocker remains visible after restart.
