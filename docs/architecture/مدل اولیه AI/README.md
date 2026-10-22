@@ -138,3 +138,6 @@
 - قرارداد حاکم برای هر سند مادر: [SCEMRS v1.0.0](../../reference/REFERENCE-DOCUMENTS/PALANG-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE-STANDARD-2026-10-22-001.md).
 - رویداد: [EVT-0098](../BEHAVIOR-TRACE/EVT-0098-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE-AND-OWNER-APPROVAL-2026-10-22.md).
 - قاعدهٔ اختیار: تنها احمد پلنگ تغییر معماری حاکم را تأیید می‌کند؛ عامل فقط می‌تواند پیشنهاد را آماده کند تا زمانی که تأیید صریح ثبت شود.
+
+
+- Active investigation: [PICTR-2026-10-22-001](../../reference/REFERENCE-DOCUMENTS/PALANG-IDENTITY-COLLISION-AND-TIMESTAMP-RECONCILIATION-MASTER-REFERENCE-2026-10-22-001.md) — identity collisions and EVT-0089 timestamp; open until semantic audit closes.
