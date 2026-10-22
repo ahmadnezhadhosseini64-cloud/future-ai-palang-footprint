@@ -71,3 +71,11 @@ Current: `LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001` — ممیزی زند
 Next: `BOART-FOLLOWUP-01` → `BOART-FOLLOWUP-02` → `BOART-FOLLOWUP-03`.
 
 قاعده: آزمون موفقِ بسته‌شده را بدون علت تکرار نکن؛ شکاف جدید را با آزمون مستقل و شناسهٔ مستقل ثبت کن. هر شکست/مانع حفظ شود و به اقدام قابل بازیابی تبدیل گردد.
+
+
+## Library mirror verification addendum — 2026-10-22
+- Library destination: `/Future AI/Palang Footprint/Master Reference Vault/Reference Documents/LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md`.
+- Library file ID: `file_000000003b7c81f490ba9d02586b2cc9`; stable Library file ID: `libfile_7ac3c9a6ec14819198eb2751e204aa48`.
+- Library overwrite/upload metadata: UTC `2026-10-22T05:47:33Z`; Asia/Tehran `2026-10-22 09:17:33` derived from UTC. The Library metadata modified time is `2026-10-22T05:47:34.639399Z` = Tehran `09:17:34.639399`; this is a file metadata time, not the exact read-back operation time.
+- Independent Library read-back returned the exact file; content included the Stable ID, `BOART-FOLLOWUP-01`, destination states, and the statement `REGISTERED / READ-BACK VERIFIED` for Library.
+- Library status is now `REGISTERED / READ-BACK VERIFIED` for this mirror only. Buffer, Persistent Memory and Dropbox remain unverified; external end-to-end recovery remains not run.
