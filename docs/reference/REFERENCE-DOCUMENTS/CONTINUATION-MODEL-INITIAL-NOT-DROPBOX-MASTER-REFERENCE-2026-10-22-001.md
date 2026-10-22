@@ -188,3 +188,12 @@ Resume from this CMIND master → [EVT-0093](../../architecture/BEHAVIOR-TRACE/E
 - Exact user-message timestamp: NOT CAPTURED; repository commit time must not replace it.
 - Actual repository UTC commit timestamps and Tehran equivalents will be added from Git metadata after writes.
 - Read-back status for this addendum remains pending until the updated master and control surfaces are fetched and matched.
+
+
+### G. صندوق زنده — read-back و زمان‌بندی ثبت
+- [صندوق زنده](../../architecture/LIVE-INBOX/README.md) و [مورد نخست](../../architecture/LIVE-INBOX/entries/INBOX-20261022-001.md) ثبت شده‌اند.
+- [EVT-0093](../../architecture/BEHAVIOR-TRACE/EVT-0093-LIVING-INBOX-AND-INTERACTION-TO-GROWTH-CHAIN-2026-10-22.md) و لنگرهای مستقل [IN-20261022-007](../../0.0/anchors/PALANG-0.0-IN-20261022-007-LIVING-INBOX.md) / [OUT-20261022-007](../../0.0/anchors/PALANG-0.0-OUT-20261022-007-LIVING-INBOX.md) ثبت و بازخوانی شده‌اند.
+- [TIME-BINDING-LIVE-INBOX](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-LIVE-INBOX-2026-10-22-001.md) زمان‌های واقعی commit در UTC و معادل تهران را ثبت می‌کند.
+- کنترل‌های مرتبط (master، EVT، anchors، inbox، صف مدل اولیه، نمایهٔ ۰.۰ و نمایهٔ رفتارشناسی) پس از نوشتن دوباره خوانده شدند؛ شناسه‌ها و پیوندهای مورد انتظار تطبیق داشتند.
+- وضعیت فایل‌های مخزن: REGISTERED / READ-BACK VERIFIED. وضعیت صندوق: ACTIVE / LIVING. پیاده‌سازی خودکار دریافت همهٔ تعامل‌ها و آزمون cold-start تولیدی همچنان OPEN / NOT YET PROVEN تحت Issue #20.
+- زمان دقیق پیام کاربر و زمان تولید خروجی در رابط موجود نبود؛ زمان commit جایگزین آن‌ها نشده است.
