@@ -259,7 +259,7 @@ def test_real_repository_allowlist_ingests_searches_and_survives_restart(tmp_pat
 
         search = client.get(
             "/api/v1/search",
-            params={"q": "this file itself is not proof"},
+            params={"q": "PALANG-RETURN-EXECUTION-MASTER-ANCHOR-2026-10-21-001"},
         )
         assert search.status_code == 200
         result = search.json()
@@ -283,7 +283,7 @@ def test_real_repository_allowlist_ingests_searches_and_survives_restart(tmp_pat
     with TestClient(create_app(db_path)) as restarted_client:
         restarted = restarted_client.get(
             "/api/v1/search",
-            params={"q": "this file itself is not proof"},
+            params={"q": "PALANG-RETURN-EXECUTION-MASTER-ANCHOR-2026-10-21-001"},
         )
         assert restarted.status_code == 200
         assert restarted.json()["count"] == 1
