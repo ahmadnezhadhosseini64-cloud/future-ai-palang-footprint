@@ -273,3 +273,15 @@
 - زمان ثبت اولیهٔ لنگر ۰.۰: commit `e9ed1ecf814c6fef95ec487c2d470bf07bae96fe`, UTC `2026-10-22T06:38:49Z`, تهران `2026-10-22 10:08:49`.
 - زمان UTC دقیق دریافت پیام و تولید پاسخ مستقل از ابزار در دسترس نیست؛ مدت تفکر داخلی نیز telemetry قابل‌مشاهده نیست و حدس زده نمی‌شود.
 - لنگرهای قبلی حفظ شده‌اند. Gmail: `BLOCKED / NOT VERIFIED`; `GMAIL-CONNECTION-AND-READBACK-01` باز است. ثبت این اسناد در مخزن، ثبت Gmail را اثبات نمی‌کند.
+
+
+## 24. ادعای محدودیت Gmail و مدل رفتار تعاملی GACIB — 2026-10-22
+
+- سند مرجع مادر زنده: [GACIB](./GMAIL-ACCESS-CLAIM-AND-INTERACTION-BEHAVIOR-LIVING-MASTER-REFERENCE-2026-10-22-001.md) — شناسه: `PALANG-GMAIL-ACCESS-CLAIM-INTERACTION-BEHAVIOR-MASTER-2026-10-22-001`.
+- رویداد مستقل: [EVT-0051](../../architecture/BEHAVIOR-TRACE/EVT-0051-GMAIL-ACCESS-CLAIM-AND-LIVING-0.0-ANCHOR-2026-10-22.md).
+- نقطه ۰.۰ افزایشی: [PALANG-0.0-GMAIL-ACCESS-CLAIM-INTERACTION-BEHAVIOR-2026-10-22-001](../../0.0/anchors/PALANG-0.0-GMAIL-ACCESS-CLAIM-INTERACTION-BEHAVIOR-2026-10-22-001.md).
+- معماری اولیه اپ در پوشه رفتارشناسی تعاملی: [IBSA v0.1.0](../../architecture/BEHAVIOR-SCIENCE-PALANG-FUTURE-AI/INTERACTIVE-BEHAVIOR-APP-ARCHITECTURE-INITIAL-2026-10-22-001.md).
+- شاهد فعلی اتصال Gmail: `DISABLED_BY_ADMIN / NOT_AVAILABLE`; این فقط وضعیت فعلی ابزار است و ادعای کاربر درباره گذشته را نه تأیید می‌کند و نه رد.
+- وضعیت مقصدها مستقل است: Repository باید با بازخوانی تأیید شود؛ Gmail ارسال نشده؛ Library/Buffer/Persistent Memory تأیید نشده؛ Dropbox باز و تأییدنشده است.
+- زمان دقیق پیام کاربر و مدت تفکر داخلی قابل‌مشاهده نیست؛ زمان مرجع ثبت فقط از commit واقعی UTC گرفته و زمان تهران از همان لحظه مشتق می‌شود.
+- قاعده: ادعا را حفظ کن، شاهد را جدا ثبت کن، شکاف را باز نگه دار، و هیچ مقصدی را بدون بازخوانی موفق تأییدشده اعلام نکن.
