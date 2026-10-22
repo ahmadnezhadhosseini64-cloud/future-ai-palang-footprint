@@ -818,3 +818,10 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - رویداد: [EVT-0084](../architecture/BEHAVIOR-TRACE/EVT-0084-APPEND-ONLY-ARCHITECTURE-GROWTH-AND-MASTER-GOVERNANCE-2026-10-22.md).
 - سند مرجع مادر: [AOGM](../reference/REFERENCE-DOCUMENTS/APPEND-ONLY-ARCHITECTURE-GROWTH-MASTER-REFERENCE-2026-10-22-001.md).
 - وضعیت: ACTIVE / LIVING / OPEN / GOVERNING؛ لنگر جدید افزایشی است و لنگرهای پیشین را جایگزین نمی‌کند.
+
+
+## لنگر مستقل ۰.۰ — اعتبارسنجی اجرایی دفتر تعامل
+- [PALANG-0.0-EXECUTABLE-INTERACTION-LEDGER-VALIDATION-2026-10-22-001](./anchors/PALANG-0.0-EXECUTABLE-INTERACTION-LEDGER-VALIDATION-2026-10-22-001.md).
+- رویداد: [EVT-0086](../architecture/BEHAVIOR-TRACE/EVT-0086-EXECUTABLE-LEDGER-VALIDATION-AND-RECOVERY-SMOKE-TEST-2026-10-22.md).
+- سند مرجع مادر: [ELVR](../reference/REFERENCE-DOCUMENTS/EXECUTABLE-INTERACTION-LEDGER-VALIDATION-MASTER-REFERENCE-2026-10-22-001.md).
+- وضعیت: workflow و fixture ثبت شده‌اند؛ اجرای واقعی CI و آزمون cold-start مستقل هنوز باید با شواهد تأیید شوند. این لنگر، لنگرهای قبلی را جایگزین نمی‌کند.
