@@ -1,0 +1,67 @@
+name: Interaction ledger validation
+
+on:
+  push:
+    paths:
+      - 'docs/architecture/BEHAVIOR-TRACE/interaction-pair-ledger.schema.json'
+      - 'docs/architecture/BEHAVIOR-TRACE/fixtures/**'
+      - '.github/workflows/interaction-ledger-validation.yml'
+  pull_request:
+    paths:
+      - 'docs/architecture/BEHAVIOR-TRACE/interaction-pair-ledger.schema.json'
+      - 'docs/architecture/BEHAVIOR-TRACE/fixtures/**'
+      - '.github/workflows/interaction-ledger-validation.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-ledger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install JSON Schema validator
+        run: python -m pip install jsonschema
+      - name: Validate schema and fixture
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from jsonschema import Draft202012Validator, FormatChecker
+
+          schema_path = Path("docs/architecture/BEHAVIOR-TRACE/interaction-pair-ledger.schema.json")
+          fixture_path = Path("docs/architecture/BEHAVIOR-TRACE/fixtures/interaction-pair-ledger-smoke-test.json")
+          schema = json.loads(schema_path.read_text(encoding="utf-8"))
+          record = json.loads(fixture_path.read_text(encoding="utf-8"))
+          Draft202012Validator.check_schema(schema)
+          errors = sorted(Draft202012Validator(schema, format_checker=FormatChecker()).iter_errors(record), key=lambda e: list(map(str, e.path)))
+          if errors:
+              for error in errors:
+                  print(f"SCHEMA ERROR at {list(error.path)}: {error.message}")
+              raise SystemExit(1)
+          assert record["input_id"].endswith(record["interaction_id"].removeprefix("INT-"))
+          assert record["output_id"].endswith(record["interaction_id"].removeprefix("INT-"))
+          print("PASS: schema meta-validation and fixture validation")
+          PY
+      - name: Test reverse lookup from both pair endpoints
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          record = json.loads(Path("docs/architecture/BEHAVIOR-TRACE/fixtures/interaction-pair-ledger-smoke-test.json").read_text(encoding="utf-8"))
+          index = {record["input_id"]: record, record["output_id"]: record}
+          from_input = index.get("IN-20261022-001")
+          from_output = index.get("OUT-20261022-001")
+          assert from_input is not None and from_output is not None
+          assert from_input["interaction_id"] == from_output["interaction_id"] == "INT-20261022-001"
+          assert from_input["lineage"] == from_output["lineage"]
+          print("PASS: synthetic reverse lookup from IN and OUT resolves to the same pair and lineage")
+          print("LIMIT: this is a deterministic fixture smoke test, not a cold-start test of a production capture service.")
+          PY
