@@ -625,3 +625,11 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - رویداد: `docs/architecture/BEHAVIOR-TRACE/EVT-0097-REPOSITORY-HISTORICAL-AUDIT-RESULTS-2026-10-22.md`.
 - حاکمیت ثبت PIRHA: v1.3.0؛ معماری مادر HAIF: v1.3.2.
 - نتیجهٔ snapshot اولیه: 10 پیوند شکسته، برخوردهای شناسه/رویداد و یک مورد مبهم زمانی؛ اصلاح پیوندها اعمال شده، ممیزی تازه و طبقه‌بندی معنایی همچنان باز است.
+
+
+## ممیزی تاریخی مخزن — PRHAR / EVT-0097
+
+- گزارش: `docs/reference/REFERENCE-DOCUMENTS/PALANG-REPOSITORY-HISTORICAL-AUDIT-RESULTS-2026-10-22-001.md`.
+- رویداد: `docs/architecture/BEHAVIOR-TRACE/EVT-0097-REPOSITORY-HISTORICAL-AUDIT-RESULTS-2026-10-22.md`.
+- حاکمیت ثبت PIRHA: v1.3.0؛ معماری مادر HAIF: v1.3.2.
+- نتیجهٔ snapshot اولیه: 10 پیوند شکسته، برخوردهای شناسه/رویداد و یک مورد مبهم زمانی؛ اصلاح پیوندها اعمال شده، ممیزی تازه و طبقه‌بندی معنایی همچنان باز است.
