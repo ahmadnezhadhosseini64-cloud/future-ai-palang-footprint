@@ -71,3 +71,12 @@
 - `prototype/haif-v0`: `POST /api/v1/documents` و `GET /api/v1/search?q=...`؛ مسیر منبع، نسخه، منشأ و SHA-256 حفظ می‌شود.
 - آزمون CI: [39580170352](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39580170352) — 7 passed, 1 warning, 0 failed.
 - مرز: بازیابی واژه‌محور است؛ جست‌وجوی معنایی/برداری و آزمون restart در صف باز می‌مانند.
+
+
+## نسخهٔ معماری 1.1.0 — DTRC
+
+- [سند مرجع مادر زندهٔ DTRC](../../reference/REFERENCE-DOCUMENTS/PALANG-DUAL-TRACK-BEHAVIORAL-ARCHITECTURE-MASTER-REFERENCE-2026-10-22-001.md) — استدلال دو‌مسیره و پیوستگی.
+- [زوج ورودی/خروجی INT-20261022-008](../../0.0/anchors/PALANG-0.0-IN-20261022-008-BEHAVIORAL-ARCHITECTURE-UPDATE.md) / [خروجی](../../0.0/anchors/PALANG-0.0-OUT-20261022-008-BEHAVIORAL-ARCHITECTURE-UPDATE.md).
+- [EVT-0094](../BEHAVIOR-TRACE/EVT-0094-DUAL-TRACK-BEHAVIORAL-ARCHITECTURE-2026-10-22.md).
+- نسخهٔ سند مادر مدل به 1.1.0 افزایش یافت؛ تغییر به‌صورت الحاقیه انجام شده و تاریخچه حفظ شده است.
+- وضعیت: ثبت و جای‌گذاری مخزنی انجام شده؛ آزمون runtime برای DTRC هنوز انجام نشده.
