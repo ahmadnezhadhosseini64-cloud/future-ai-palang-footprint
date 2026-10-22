@@ -111,3 +111,10 @@
 - معماری مادر HAIF: [نسخهٔ 1.3.1](سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md).
 - سند حاکم ثبت: [PIRHA نسخهٔ 1.2.0](../../reference/REFERENCE-DOCUMENTS/PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001.md).
 - شکاف جاری: `GAP-PIRHA-ACCEPTANCE-GATE-001` — دروازهٔ پذیرش واحد برای هر تعامل.
+
+
+## نسخهٔ 1.3.2 — ممیزی تاریخی و حلقهٔ اصلاح
+
+- [معماری مادر HAIF v1.3.2](سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md).
+- [PIRHA v1.3.0](../../reference/REFERENCE-DOCUMENTS/PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001.md).
+- [گزارش ممیزی تاریخی](../../reference/REFERENCE-DOCUMENTS/PALANG-REPOSITORY-HISTORICAL-AUDIT-RESULTS-2026-10-22-001.md) و [EVT-0097](../BEHAVIOR-TRACE/EVT-0097-REPOSITORY-HISTORICAL-AUDIT-RESULTS-2026-10-22.md).
