@@ -846,3 +846,10 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 
 
 پابند زمانی زنجیرهٔ EVT-0088: [TIME-BINDING-LBAF](../architecture/BEHAVIOR-TRACE/TIME-BINDING-LBAF-2026-10-22-001.md).
+
+
+## Universal input/output anchor pair — INT-20261022-002
+- [Input anchor IN-20261022-002](./anchors/PALANG-0.0-IN-20261022-002-UNIVERSAL-IO-ANCHORING.md)
+- [Output anchor OUT-20261022-002](./anchors/PALANG-0.0-OUT-20261022-002-UNIVERSAL-IO-ANCHORING.md)
+- [UIOAM master reference](../reference/REFERENCE-DOCUMENTS/UNIVERSAL-INPUT-OUTPUT-TEMPORAL-ANCHOR-MASTER-2026-10-22-001.md)
+- [Temporal binding](../architecture/BEHAVIOR-TRACE/TIME-BINDING-UIOAM-2026-10-22-001.md)
