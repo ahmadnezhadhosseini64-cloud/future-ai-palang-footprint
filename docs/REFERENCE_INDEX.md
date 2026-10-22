@@ -633,3 +633,11 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - رویداد: `docs/architecture/BEHAVIOR-TRACE/EVT-0097-REPOSITORY-HISTORICAL-AUDIT-RESULTS-2026-10-22.md`.
 - حاکمیت ثبت PIRHA: v1.3.0؛ معماری مادر HAIF: v1.3.2.
 - نتیجهٔ snapshot اولیه: 10 پیوند شکسته، برخوردهای شناسه/رویداد و یک مورد مبهم زمانی؛ اصلاح پیوندها اعمال شده، ممیزی تازه و طبقه‌بندی معنایی همچنان باز است.
+
+
+## آخرین وضعیت ثبت — 2026-10-22
+- PIRHA master: v1.4.0.
+- HAIF mother model: v1.3.3.
+- PRHAR audit report: v1.1.0; event: EVT-0097.
+- Structural audit run 39802929316: zero missing local Markdown links on snapshot `0f29c9aba688ca1c72197bd3d2bad151ccbce139`.
+- Open semantic findings: 57 Stable-ID, 68 Production-ID, 7 Reference-ID, 24 event-number collision groups; 11 exact duplicate groups; one ambiguous timestamp.
