@@ -5,11 +5,11 @@
 - Version / نسخه: 1.0.0
 - Owner / مالک نهایی و تنها مرجع تصویب: احمد پلنگ (Ahmad Nezhadhosseini)
 - Project / پروژه: Future AI / Palang Footprint — HAIF
-- Status / وضعیت: ACTIVE / LIVING / GOVERNING BASELINE — REPOSITORY VERIFICATION IN PROGRESS
+- Status / وضعیت: ACTIVE / LIVING / GOVERNING BASELINE — REPOSITORY READ-BACK PENDING
 - Interaction / تعامل: `INT-20261022-011`
 - Input / ورودی: [IN-20261022-011](../../0.0/anchors/PALANG-0.0-IN-20261022-011-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE.md)
 - Output / خروجی: [OUT-20261022-011](../../0.0/anchors/PALANG-0.0-OUT-20261022-011-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE.md)
-- Related governing contract / قرارداد ثبت و ممیزی: [PIRHA](./PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001.md)
+- Event trace / ردپای رویداد: [EVT-0098](../../architecture/BEHAVIOR-TRACE/EVT-0098-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE-AND-OWNER-APPROVAL-2026-10-22.md)\n- Time binding / پابند زمانی: [TIME-BINDING-INT-20261022-011](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-011.md)\n- Related governing contract / قرارداد ثبت و ممیزی: [PIRHA](./PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001.md)
 - Canonical architecture / معماری مادر: [HAIF](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 - Exact user-message time / زمان دقیق پیام کاربر: NOT CAPTURED؛ commit time is not user-message time.
 - Canonical repository clock / ساعت مرجع ثبت مخزن: actual Git commit timestamp in UTC; Tehran time is calculated from that same instant as UTC +03:30.
@@ -254,6 +254,9 @@ C. مدل معماری حاصل: قاعده‌ای که از مقایسهٔ شو
 
 این سند، قرارداد اجرایی حاکم را تعریف می‌کند؛ اما ایجاد آن به معنی ساخت یک سرویس مستقل یا فعال‌سازی خودکار در همهٔ محیط‌ها نیست. پس از ثبت باید read-back، تطبیق پیوندها و ممیزی معماری انجام شود. وضعیت مقصدهای خارج از مخزن تا ارائهٔ شواهد مستقل `NOT VERIFIED` باقی می‌ماند. هر قابلیت اجرایی نرم‌افزاری که در مخزن وجود ندارد باید `NOT BUILT` یا `NOT TESTED` اعلام شود.
 
-## 16. لنگر ادامه
+## 16. وضعیت ثبت این نسخه و لنگر ادامه
 
 گام بعدی بعد از ثبت این سند: بازخوانی سند مادر، لنگرهای IN-011 و OUT-011، فایل معماری HAIF، PIRHA، نمایه و دفتر 0.0؛ سپس اجرای آزمون انتقالی: آیا یک مدل دیگر با فقط همین سند می‌تواند چرخه را درست شرح دهد، دروازهٔ تأیید را رعایت کند و وضعیت‌های نامعلوم را جعل نکند؟ نتیجه باید با مدرک ثبت شود.
+
+
+ثبت اولیهٔ سند مادر در مخزن با commit `23873a9e29b78db206ddc7aff2a3ccf596f29117` در UTC `2026-10-22T15:23:38Z` (تهران `2026-10-22T18:53:38+03:30`) انجام شد. این زمان، زمان commit است و زمان پیام کاربر نیست. راستی‌آزمایی نهایی فقط پس از بازخوانی همین نسخه و اسناد وابسته اعلام می‌شود.
