@@ -1025,3 +1025,9 @@ The queue index and the timestamp case must each be read back after this update.
 - Repository policy version and Library mirror have been written and read back; content matches apart from the final newline normalization in Library read-back.
 - Status: ACTIVE / LIVING / OPEN. Buffer and Persistent Memory remain NOT VERIFIED; Dropbox remains OPEN / NOT VERIFIED; isolated external recovery NOT RUN.
 - Continue with BOART-FOLLOWUP-01, then Dropbox write/retrieve and isolated recovery. Mirror sync is a manual evidence-backed process, not an asserted always-running background watcher.
+
+## Mirror sync activation — EVT-0038
+- Controller: `PALANG-MIRROR-SYNC-CONTROLLER-2026-10-22-001`.
+- Event: `EVT-0038`.
+- A daily flexible automation `Palang Mirror Sync` is enabled (ID `6ad9a407b9d481919c7145fbe4638dec`, timezone `Asia/Tehran`). It compares and verifies the Library mirror when it runs; schedule enabled does not itself prove a run succeeded.
+- The audit mirror was independently read back and contains the controller and automation IDs. Buffer/Persistent Memory remain NOT VERIFIED; Dropbox remains OPEN / NOT VERIFIED.
