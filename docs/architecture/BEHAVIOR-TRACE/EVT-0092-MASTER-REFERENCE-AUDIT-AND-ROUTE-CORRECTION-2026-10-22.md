@@ -45,3 +45,11 @@
 
 ## وضعیت این رویداد
 ثبت در فایل رویداد انجام شده؛ این به‌تنهایی اثبات پیوند خوردن به تمام نمایه‌ها نیست. پس از به‌روزرسانی سند مادر/دفتر 0.0/نمایه‌ها و read-back باید وضعیت repository registration را VERIFIED اعلام کرد.
+
+
+## Repository read-back reconciliation — VERIFIED
+- The master reference, this event, both independent anchors, 0.0 registry, reference index, behavior-trace index, integration queue and model-initial queue were fetched again after writes.
+- Expected EVT-0092 and IN/OUT references were present in the applicable indexes and queues.
+- Live Issue #20 was fetched; it remains OPEN. Its acceptance criteria are now reconciled into the master reference.
+- Registration status: REGISTERED / READ-BACK VERIFIED for the repository artifacts above. Overall behavior-hunter production implementation remains OPEN / NOT FULLY VERIFIED.
+- Canonical master: [CMIND Addendum v1.0.3 and reconciliation](../../reference/REFERENCE-DOCUMENTS/CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-MASTER-REFERENCE-2026-10-22-001.md).
