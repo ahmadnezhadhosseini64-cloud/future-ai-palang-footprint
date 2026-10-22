@@ -1083,3 +1083,6 @@ The queue index and the timestamp case must each be read back after this update.
 - پذیرش معنایی: طبقه‌بندی نقش همهٔ گروه‌های برخورد شناسه/EVT و تصمیم مستند برای هر رابطهٔ حل‌نشده؛ حفظ نسخه‌ها و آینه‌ها تا پایان بررسی تبار.
 - Buffer، حافظهٔ پایدار و Dropbox همچنان جداگانه تأییدنشده‌اند؛ Dropbox شاخهٔ باز مستقلی دارد.
 - این صف عمداً OPEN می‌ماند تا شواهد ممیزی واقعی به آن متصل شوند.
+
+- پابند زمانی: `docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-PIRHA-2026-10-22-001.md`.
+- لنگر ادامه: `docs/0.0/anchors/PALANG-0.0-PIRHA-HISTORICAL-AUDIT-CONTINUATION-2026-10-22-001.md`.
