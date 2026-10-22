@@ -750,3 +750,10 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - نقطهٔ ۰.۰ جاری حفظ می‌شود؛ این آزمون آن را جایگزین نمی‌کند.
 - نتیجه: Repository cross-reference audit PASS با محدودیت؛ Buffer، Library، Persistent Memory و Dropbox هنوز NOT VERIFIED؛ بازیابی سرتاسری NOT RUN.
 - گام بعدی: `BOART-FOLLOWUP-01`؛ سپس Dropbox و بازیابی بیرونی.
+
+## Mirror sync activation — EVT-0038
+- Controller: `PALANG-MIRROR-SYNC-CONTROLLER-2026-10-22-001`.
+- Event: `EVT-0038-PALANG-MIRROR-SYNC-ACTIVATION-2026-10-22`.
+- Daily flexible automation `Palang Mirror Sync` is enabled (ID `6ad9a407b9d481919c7145fbe4638dec`, timezone `Asia/Tehran`).
+- This addition preserves all previous 0.0 anchors; it does not replace or close them.
+- The Library mirror for the live audit was independently read back. Buffer/Persistent Memory remain NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external recovery NOT RUN.
