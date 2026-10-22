@@ -1128,3 +1128,10 @@ The queue index and the timestamp case must each be read back after this update.
 - **زوج:** [IN-20261022-005](../../0.0/anchors/PALANG-0.0-IN-20261022-005-CONTINUE-MODEL-INITIAL.md) / [OUT-20261022-005](../../0.0/anchors/PALANG-0.0-OUT-20261022-005-CONTINUE-MODEL-INITIAL.md).
 - **اقدام بعدی:** توسعهٔ `prototype/haif-v0/` برای ثبت افزایشی INT/IN/OUT، idempotency، lookup از هر شناسه و آزمون cold-start واقعی؛ پیگیری در [Issue #20](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/20).
 - **تفکیک شاخه‌ها:** مدل اولیه = ACTIVE TARGET؛ ممیزی معنایی تاریخی = PARALLEL BACKLOG؛ Dropbox = INDEPENDENT WAITING BRANCH (OPEN / WAITING).
+
+
+### CMIND execution status amendment — 2026-10-22
+- Runtime pair-ledger endpoints are now implemented in `prototype/haif-v0/app.py`; local SQLite persistence, schema validation, hash-verified read-back, idempotency, conflict rejection, and reverse lookup are in code.
+- The first two CI runs failed on one broad-search test assertion (15 passed / 1 failed each); the assertion now selects the intended source path.
+- Fresh run `39824020260` was last observed QUEUED; do not promote the implementation to TESTED/PASS until its final result is read back.
+- Time binding: [TIME-BINDING-CMIND](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-CMIND-2026-10-22-001.md).
