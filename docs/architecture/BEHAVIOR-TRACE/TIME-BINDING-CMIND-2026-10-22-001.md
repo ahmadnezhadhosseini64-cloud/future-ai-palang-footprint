@@ -55,3 +55,11 @@ Return to [CMIND](../../reference/REFERENCE-DOCUMENTS/CONTINUATION-MODEL-INITIAL
 - Run started: UTC `2026-10-22T17:35:18Z` = Tehran `2026-10-22T21:05:18+03:30`.
 - Run updated/completed according to run metadata: UTC `2026-10-22T17:35:41Z` = Tehran `2026-10-22T21:05:41+03:30`.
 - Interpretation: local HAIF v0 prototype test suite passes for the current commit, including the new interaction-pair tests and restart recovery test. This is not evidence of automatic capture from the ChatGPT host or external storage.
+
+
+## Additional implementation README timestamp
+- Artifact: `prototype/haif-v0/README.md`
+- Commit SHA: `3731bc48f886868b0ace184f22d52361155af684`
+- Canonical repository commit UTC: `2026-10-22T17:38:41Z`
+- Tehran equivalent from same instant: `2026-10-22T21:08:41+03:30`
+- Read-back: PASS; blob SHA `1794f7f68c0f103e94b235f0219a630d3bc90e52`; endpoint, CI result and production-scope caveat were present.
