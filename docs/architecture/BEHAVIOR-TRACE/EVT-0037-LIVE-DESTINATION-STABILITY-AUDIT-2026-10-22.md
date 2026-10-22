@@ -44,3 +44,34 @@ PRESERVE → ANCHOR → DOCUMENT → REGISTER → READ-BACK → MATCH → VERIFY
 - EVT-0037 initial commit: `36b6dc063d64dac030961c29b016c0f39eaa4029`; UTC `2026-10-22T05:45:09Z`; Asia/Tehran `2026-10-22 09:15:09` (derived from the same instant).
 - These are repository registration times, not user-message time, test execution time, or tool read-back time.
 - Post-write read-back and index-link reconciliation are the next verification step; external destinations remain NOT VERIFIED.
+
+## تکمیل ثبت، زمان‌های مخزن و بازخوانی پس از نوشتن
+زمان‌های زیر از مهر commit واقعی گرفته شده‌اند؛ تهران از همان UTC مشتق شده است:
+- آزمون مستقل اولیه: `bc44f9a4f1f78bbbe53bb4487dfd2bb236a88df5` — UTC `2026-10-22T05:45:06Z`; تهران `2026-10-22 09:15:06`.
+- ثبت اولیهٔ EVT-0037: `36b6dc063d64dac030961c29b016c0f39eaa4029` — UTC `2026-10-22T05:45:09Z`; تهران `2026-10-22 09:15:09`.
+- پیوند رصدخانه: `b04415d85e481106e7857347b0b6a92640addade` — UTC `2026-10-22T05:45:35Z`; تهران `09:15:35`.
+- پیوند صف یکپارچه‌سازی: `61fb93de50aee39a5905676bf0372cd4bbc6080d` — UTC `2026-10-22T05:45:38Z`; تهران `09:15:38`.
+- پیوند نمایهٔ ۰.۰: `eb5a1957e9a1805cfabd630147ddff647f4a5fd1` — UTC `2026-10-22T05:45:41Z`; تهران `09:15:41`.
+- پیوند سند مادر ادامه: `d5d0301949a038d5d709f8e7b6ecef374fce5720` — UTC `2026-10-22T05:45:57Z`; تهران `09:15:57`.
+
+### بازخوانی و تطبیق واقعی
+پس از ثبت، مسیرهای آزمون، EVT-0037، رصدخانه، صف یکپارچه‌سازی، نمایهٔ ۰.۰، سند مادر جاری، لنگر ۰.۰ و سند مرجع مستقل دوباره از مخزن خوانده شدند. شناسهٔ آزمون، EVT-0037 و BOART-FOLLOWUP-01 در فایل‌های مقصدِ مربوط پیدا شدند؛ پیوندهای تازه در رصدخانه، صف، ۰.۰ و سند مادر موجودند.
+- آزمون مستقل: blob SHA `00d2d28786ca59cddbc6ac0e93558ab27bbad59a`.
+- رویداد پیش از ثبت این الحاق: blob SHA `66af85712fc80fdfc369c9afd6827c5b2372152f`.
+- رصدخانه: blob SHA `ab8e011eff621241ca3938ce9b95b9c92f07b007`.
+- صف یکپارچه‌سازی: blob SHA `3e1a8e9d4063c13b7acd92dc9c6cc4a87e6a7e25`.
+- نمایهٔ ۰.۰: blob SHA `7d18365b0bfff32fc0397b65fa568a80f7538d88`.
+- سند مادر جاری: blob SHA `69f05a24faf7e8469681cfb124532e440933f6fd`.
+- لنگر ۰.۰: blob SHA `2e4d4e83652ee0b46005caf927f70a8f7538deed`.
+- سند مرجع مستقل ۰.۰: blob SHA `1c036e9a913f62918004708de59813e5282540c7`.
+
+نتیجهٔ ثبت مخزن: WRITE + READ-BACK + MATCH برای پروندهٔ آزمون و پیوندهای یادشده انجام شد. این بازخوانی، مقصدهای خارجی را تأیید نمی‌کند. زمان دقیق اجرای آزمون و زمان ابزارهای read-back در خروجی ابزار ارائه نشد و همچنان UNKNOWN / UNVERIFIED است.
+
+## وضعیت نهایی این رویداد
+- Repository: REGISTERED / READ-BACK VERIFIED برای فایل‌های بالا.
+- Library بیرونی: NOT VERIFIED.
+- Buffer: NOT VERIFIED.
+- Persistent Memory: NOT VERIFIED.
+- Dropbox: OPEN / NOT VERIFIED.
+- بازیابی سرتاسری در محیط جداگانه: NOT RUN.
+- اقدام بعدی فعال: `BOART-FOLLOWUP-01` — ممیزی کامل مرجع مادر و گراف تاریخی؛ پس از آن آزمون واقعی Dropbox و بازیابی بیرونی.
