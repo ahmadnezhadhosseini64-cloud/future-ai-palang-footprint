@@ -23,3 +23,11 @@
 - Initial output anchor commit: `fd9baab2e411466b80cc25ec323a4f89d91d3c79` — UTC `2026-10-22T13:55:06Z`; Tehran `2026-10-22T17:25:06+03:30`.
 - Architecture mother model v1.1.0 commit: `403a5ff33ec4cc66c982f0fc6b70f15627aa4321` — UTC `2026-10-22T13:55:48Z`; Tehran `2026-10-22T17:25:48+03:30`.
 - Next continuation anchor: `docs/0.0/anchors/PALANG-0.0-DTRC-ARCHITECTURE-CONTINUATION-2026-10-22-001.md`.
+
+## پیوندهای نهایی و وضعیت ثبت
+- سند مرجع مادر DTRC: `docs/reference/REFERENCE-DOCUMENTS/PALANG-DUAL-TRACK-BEHAVIORAL-ARCHITECTURE-MASTER-REFERENCE-2026-10-22-001.md` (نسخهٔ 1.0.1 پیش از بازخوانی نهایی این لنگر).
+- رویداد: `docs/architecture/BEHAVIOR-TRACE/EVT-0094-DUAL-TRACK-BEHAVIORAL-ARCHITECTURE-2026-10-22.md`.
+- پابند زمانی: `docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-DTBA-2026-10-22-001.md`.
+- معماری HAIF: نسخهٔ 1.1.0؛ گراف پیوستگی: نسخهٔ 1.0.3.
+- لنگر ادامهٔ مستقل: `docs/0.0/anchors/PALANG-0.0-DTRC-ARCHITECTURE-CONTINUATION-2026-10-22-001.md`.
+- وضعیت: ورودی و خروجی مستقل، سند مادر، رویداد، جای‌گذاری معماری، فهرست‌ها و لنگر ادامه در مخزن ثبت و بازخوانی شده‌اند. آزمون runtime، ممیزی کامل پیوندهای تاریخی و Dropbox باز است.
