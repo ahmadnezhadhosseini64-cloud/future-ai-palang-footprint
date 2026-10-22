@@ -59,3 +59,12 @@ Next / بعدی: ثبت پیوندهای صریح در دفتر مرکزی و س
 - رویداد: [EVT-0096](../docs/architecture/BEHAVIOR-TRACE/EVT-0096-BASELINE-REGISTRATION-AND-ARCHITECTURE-EVOLUTION-2026-10-22.md).
 - پابند زمانی: [TIME-BINDING-INT-20261022-010](../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-010.md).
 - نسخهٔ معماری HAIF: 1.3.0؛ ممیزی تاریخی کامل همچنان OPEN.
+
+
+## INT-20261022-014 — قاعدهٔ سند مادر بازسازی کل پروژه
+
+- سند مادر: [UPRM v1.0.1](../docs/reference/REFERENCE-DOCUMENTS/PALANG-UNIVERSAL-PROJECT-RECONSTRUCTION-MASTER-2026-10-22-001.md).
+- ورودی/خروجی مستقل: [IN-014](../docs/0.0/anchors/PALANG-0.0-IN-20261022-014-MASTER-DOCUMENT-AND-HAIF-SEPARATION-RULE.md) / [OUT-014](../docs/0.0/anchors/PALANG-0.0-OUT-20261022-014-MASTER-DOCUMENT-AND-HAIF-SEPARATION-RULE.md).
+- رویداد و زمان: [EVT-0102](../docs/architecture/BEHAVIOR-TRACE/EVT-0102-MASTER-DOCUMENT-AND-HAIF-SEPARATION-RULE-2026-10-22.md) / [TIME-BINDING-INT-20261022-014](../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-014.md).
+- حکم: سند مادر کل پروژه ≠ نقش Master مفهومی HAIF؛ برخورد شناسه‌ها و ابهام تبار هم مسائل جدا هستند.
+- وضعیت: پیوند ثبت شده؛ ممیزی کامل گراف و مقصدهای بیرونی همچنان OPEN.
