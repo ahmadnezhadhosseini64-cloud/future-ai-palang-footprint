@@ -91,3 +91,10 @@ Repository: ثبت و بازخوانی تأیید شد. GitHub Actions: run فو
 - Tehran equivalent: 2026-10-22T12:38:59+03:30.
 - Commit link: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/7e41e21d5d84112048b6e5c2dff277f57f8ef5fb.
 - این زمان، زمان ثبت تغییر در نمایهٔ ادامه است؛ با زمان اجرای CI و زمان پیام کاربر یکی نیست.
+
+
+## شکاف باز زمان پایان workflow
+- GitHub API: `created_at/run_started_at=2026-10-22T08:47:52Z`, `updated_at=2026-10-22T08:48:06Z`; فیلد مستقل `run_completed_at` در پاسخ در دسترس نبود.
+- EVT-0087 نسخهٔ قبلی `08:48:08Z` را به‌عنوان updated/completed نوشته بود.
+- این اختلاف به‌عنوان GAP زمانی حفظ می‌شود؛ زمان شروع و نتیجهٔ SUCCESS قطعی‌اند، اما 08:48:08Z به‌عنوان زمان پایان دقیق مستقل تأیید نشده است. زمان آخرین به‌روزرسانی API نباید خودکار معادل زمان پایان تلقی شود.
+- نتیجهٔ اجرایی schema-validation و دو مسیر بازیابی همچنان SUCCESS است؛ این GAP فقط به معنای دقیق زمان پایان مربوط است.
