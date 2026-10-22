@@ -285,3 +285,11 @@
 - وضعیت مقصدها مستقل است: Repository باید با بازخوانی تأیید شود؛ Gmail ارسال نشده؛ Library/Buffer/Persistent Memory تأیید نشده؛ Dropbox باز و تأییدنشده است.
 - زمان دقیق پیام کاربر و مدت تفکر داخلی قابل‌مشاهده نیست؛ زمان مرجع ثبت فقط از commit واقعی UTC گرفته و زمان تهران از همان لحظه مشتق می‌شود.
 - قاعده: ادعا را حفظ کن، شاهد را جدا ثبت کن، شکاف را باز نگه دار، و هیچ مقصدی را بدون بازخوانی موفق تأییدشده اعلام نکن.
+
+
+## 25. محدودیت ثبت و چکش شواهد — EVT-0069
+- سند مرجع زنده: [RLP — محدودیت ثبت و ادامهٔ چکش شواهد](./PEH-REGISTRATION-LIMITATION-AND-INTERACTION-BEHAVIOR-LIVING-REFERENCE-2026-10-22-001.md).
+- رویداد: [EVT-0069](../../architecture/BEHAVIOR-TRACE/EVT-0069-REGISTRATION-LIMITATION-CHECKLIST-REPAIR-AND-RESUME-2026-10-22.md).
+- نقطهٔ ۰.۰: [لنگر محدودیت ثبت](../../0.0/anchors/PALANG-0.0-REGISTRATION-LIMITATION-AND-PEH-RESUME-2026-10-22-001.md).
+- چک‌لیست EVT-0051 اصلاح شد؛ خانهٔ Gmail به معنی «بررسی شد؛ BLOCKED/NOT SENT» است، نه ارسال موفق.
+- مدل اپ به دفتر مستقل RegistrationAttempt (تلاش ثبت) برای هر مقصد رشد می‌کند. مقصدهای تأییدنشده نباید PASS گزارش شوند.
