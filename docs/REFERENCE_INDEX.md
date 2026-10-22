@@ -512,3 +512,8 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - [JSON Schema](architecture/BEHAVIOR-TRACE/interaction-pair-ledger.schema.json) و [fixture ساختگی](architecture/BEHAVIOR-TRACE/fixtures/interaction-pair-ledger-smoke-test.json).
 - [Workflow اعتبارسنجی](../.github/workflows/interaction-ledger-validation.yml).
 - وضعیت: ابزار آزمون به مخزن افزوده شد؛ نتیجهٔ اجرای واقعی workflow باید جداگانه تأیید شود.
+
+
+## پابند زمانی و نتیجهٔ CI — زنجیرهٔ EVT-0086
+- [TIME-BINDING-ELVR-2026-10-22-001](architecture/BEHAVIOR-TRACE/TIME-BINDING-ELVR-2026-10-22-001.md) — پابند مستقل UTC/تهران و زمان اجرای CI.
+- [GitHub Actions run 39750440075 — SUCCESS](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39750440075).
