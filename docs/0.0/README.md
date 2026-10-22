@@ -917,3 +917,14 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 
 - [PALANG-0.0-DTRC-ARCHITECTURE-CONTINUATION-2026-10-22-001](anchors/PALANG-0.0-DTRC-ARCHITECTURE-CONTINUATION-2026-10-22-001.md) — گام بعدی: بازخوانی نهایی، پیوند زمانی، آزمون واقعی DTRC و سپس اتصال/ذخیره/بازیابی Dropbox.
 - این لنگر جایگزین لنگرهای قدیمی نیست؛ شاخهٔ Dropbox همچنان باز می‌ماند.
+
+
+## زوج تعامل جاری — INT-20261022-009 / PIRHA
+
+- ورودی: [IN-20261022-009](anchors/PALANG-0.0-IN-20261022-009-INTERACTION-GOVERNANCE-AND-AUDIT.md).
+- خروجی: [OUT-20261022-009](anchors/PALANG-0.0-OUT-20261022-009-INTERACTION-GOVERNANCE-AND-AUDIT.md).
+- سند مرجع مادر: [PIRHA](../reference/REFERENCE-DOCUMENTS/PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001.md).
+- رویداد جاری: [EVT-0095](../architecture/BEHAVIOR-TRACE/EVT-0095-INTERACTION-GOVERNANCE-AND-HISTORICAL-AUDIT-2026-10-22.md).
+- رویداد تاریخی تکمیل‌شده در این اجرا: [EVT-0093](../architecture/BEHAVIOR-TRACE/EVT-0093-REGISTRATION-CONTINUATION-2026-10-22.md).
+- معماری مادر HAIF: نسخهٔ 1.2.0؛ گراف پیوستگی در انتظار ثبت نسخهٔ بعدی.
+- ممیزی کامل تاریخچه هنوز باید از اجرای واقعی workflow و طبقه‌بندی معنایی شواهد عبور کند.
