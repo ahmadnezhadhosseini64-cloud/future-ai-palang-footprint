@@ -356,3 +356,11 @@
 ## پابند زمانی زنجیرهٔ EVT-0086
 - [TIME-BINDING-ELVR-2026-10-22-001](./TIME-BINDING-ELVR-2026-10-22-001.md) — زمان‌های واقعی commit به UTC و معادل تهران، و زمان اجرای CI را جداگانه ثبت می‌کند.
 - [نتیجهٔ CI موفق](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39750440075)؛ دامنهٔ آزمون فقط schema و fixture ساختگی در checkoutهای تازه است.
+
+
+## EVT-0087 — نتیجهٔ راستی‌آزمایی اجرای واقعی
+- [EVT-0087](./EVT-0087-INTERACTION-VALIDATION-RECOVERY-RESULT-2026-10-22.md) ثبت نتیجهٔ مشاهده‌شده است.
+- اجرای CI: [run 39750440075](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39750440075) — SUCCESS.
+- اعتبارسنجی JSON Schema و بازیابی مستقل از IN و OUT هر سه PASS شدند.
+- این نتیجه، وضعیت قبلی «هنوز تأیید نشده» را برای همین اجرای مشخص به‌روزرسانی می‌کند؛ آزمون سرویس تولیدی و گردآوری خودکار همهٔ مکالمات همچنان باز است.
+- شناسهٔ EVT-0086 متعلق به رویداد اجرایی مرجع ELVR است؛ نتیجهٔ اجرای واقعی در EVT-0087 ثبت می‌شود.
