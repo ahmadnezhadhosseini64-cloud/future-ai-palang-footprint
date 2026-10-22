@@ -93,3 +93,61 @@ Append-only rule: do not overwrite earlier 0.0 anchors or initial architecture. 
 - Time evidence: [TIME-BINDING-CMIND](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-CMIND-2026-10-22-001.md).
 - Status update: HAIF v0 local prototype suite is PASS for the tested repository commit, including interaction-pair schema validation, write/read-back, reverse lookup by INT/IN/OUT, idempotent retry, conflicting-ID rejection, mismatch rejection, and SQLite restart recovery.
 - Boundary: this test does not prove production ChatGPT-host capture, deployment security, or persistence to Buffer, Library, Persistent Memory, Gmail, or Dropbox.
+
+
+---
+
+## Addendum v1.0.3 — master audit, route correction, and recovery contract
+
+- Audit event: [EVT-0092](../../architecture/BEHAVIOR-TRACE/EVT-0092-MASTER-REFERENCE-AUDIT-AND-ROUTE-CORRECTION-2026-10-22.md)
+- Independent input anchor: [IN-20261022-006](../../0.0/anchors/PALANG-0.0-IN-20261022-006-MASTER-AUDIT.md)
+- Independent output anchor: [OUT-20261022-006](../../0.0/anchors/PALANG-0.0-OUT-20261022-006-MASTER-AUDIT.md)
+- Status: ACTIVE / LIVING / OPEN / EVOLVABLE
+- This addendum extends the existing master; it does not replace or silently rewrite earlier anchors.
+
+### A. Audit finding — the user's criticism is valid
+The previous continuation did real repository work on the local interaction-pair API and its tests, but the execution order was not aligned tightly enough with the user's primary instruction. Implementation detail became the center of attention before the entire model-initial continuation path, the living master, and the recovery state had been re-established as the controlling frame. This created a reasonable impression that the assistant had stopped or lost the thread, and made the user bear too much of the burden of keeping the project path in mind.
+
+The error was not that the API work was irrelevant. The error was **priority, continuity signalling, and reconciliation**:
+1. implementation step was treated as the main deliverable rather than one bounded subtask;
+2. no early, clear checkpoint said what was running, what was done, and what was still pending;
+3. the master reference and project queues were not reconciled immediately after each meaningful result;
+4. the successful test result was initially stale in some index/queue entries until corrected;
+5. the project must not make the user repeat context already present in its canonical repository and recoverable interaction chain.
+
+### B. Mandatory continuation protocol
+For every request such as «ادامه بده», «شروع کن», «ثبت کن», or «چکش بزن»:
+
+1. **Recover first:** read latest 0.0 anchor, this master, EVT chain, model-initial next-step queue, Integration Queue, and Issue #20 before selecting work.
+2. **Restate target internally from evidence:** current objective is HAIF/model-initial architecture and continuity of intelligence/work; Dropbox remains a separate OPEN / WAITING branch unless explicitly reopened.
+3. **Select one next consequential step:** do not switch to a nearby technical task merely because it is easy to execute.
+4. **Execute against the project:** preserve source, IDs, provenance, version, and previous evidence; do not overwrite older anchors.
+5. **Capture both success and failure:** failures, mistaken assumptions, regressions, corrections, and user feedback are architectural evidence, not disposable noise.
+6. **Reconcile all control surfaces:** event, independent IN/OUT anchors, this master, 0.0 registry, reference index, behavior-trace index, integration queue, and model-initial queue.
+7. **Read back:** fetch each changed artifact after writing and compare the expected IDs, links, status and result.
+8. **State truthfully:** distinguish REGISTERED, READ-BACK VERIFIED, TESTED, VALIDATED, INTEGRATED, ACTIVE and LIVING. Never claim a destination, automation or background task that has not been independently evidenced.
+9. **Give a durable checkpoint:** the user must be able to leave and return without reconstructing the route from scattered chat.
+10. **Do not repeat a passing test** unless code, deployment, requirement, or contradictory evidence changes.
+
+### C. Current verified implementation boundary
+- HAIF v0 has local interaction-pair endpoints and schema validation; canonical records are stored in local SQLite and can be looked up by INT/IN/OUT.
+- Workflow [39824020260](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39824020260): SUCCESS; job 119982395261; 16 passed, 1 warning, 0 failed.
+- This is evidence for the local prototype test scope only. It is not evidence of automatic capture of all ChatGPT conversations, production security, a deployed collector, or persistence to Buffer/Library/Persistent Memory/Gmail/Dropbox.
+- Exact user-message timestamp remains NOT CAPTURED where unavailable; repository commit UTC is the canonical registration time for repository artifacts and must not be substituted for message time.
+
+### D. Next execution gate — continue model construction
+Priority order:
+1. Recover and inspect the actual Issue #20 / runtime-collector requirements and current queue before coding.
+2. Define the authorized producer boundary and an explicit input contract for capturing IN/OUT events; do not imply the ChatGPT host automatically calls the prototype.
+3. Add authentication/authorization and deployment/security design before any production exposure.
+4. Perform a real cold-start/restart recovery test against the intended persistent runtime, with evidence that the pair, versions, source links, gaps, and next step are restored.
+5. Prove the recovery chain from either IN or OUT anchor through INT → EVT → master → evidence → open gaps → next action.
+6. Run fresh structural and semantic audits after actual changes; do not reuse stale counts as current results.
+7. Independently verify each external destination only if connected and actually tested.
+
+### E. Durable recovery entry
+**Resume from:** this CMIND master → [EVT-0092](../../architecture/BEHAVIOR-TRACE/EVT-0092-MASTER-REFERENCE-AUDIT-AND-ROUTE-CORRECTION-2026-10-22.md) → [model-initial open queue](../../architecture/مدل%20اولیه%20AI/صف%20گام‌های%20بعدی%20و%20موارد%20باز.md) → [Issue #20](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/20).
+
+**Do not restart from Dropbox. Do not ask the user to repeat already recoverable project context.** The next assistant action is to inspect the live issue and open queue, choose the next architecture-building step, execute it, and reconcile evidence into this master and its linked indexes.
+
+**Verification status of this addendum:** written to the canonical repository; read-back and index reconciliation must be completed before calling the whole registration VERIFIED.
