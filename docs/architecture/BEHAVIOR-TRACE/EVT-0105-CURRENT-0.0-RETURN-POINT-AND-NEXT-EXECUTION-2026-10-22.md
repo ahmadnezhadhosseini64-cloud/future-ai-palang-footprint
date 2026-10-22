@@ -37,3 +37,7 @@ Exact user-message and assistant-generation timestamps are NOT EXPOSED / NOT CAP
 
 ## Read-back gate
 This event and both anchors must be fetched back, expected IDs and cross-links matched, and the master/index/queue updates verified before repository registration is reported as READ-BACK VERIFIED.
+
+
+## Time binding
+Repository commit timestamps and same-instant Tehran equivalents: [TIME-BINDING-INT-20261022-017](./TIME-BINDING-INT-20261022-017.md). Exact user-message and assistant-generation timestamps remain NOT EXPOSED / NOT CAPTURED.
