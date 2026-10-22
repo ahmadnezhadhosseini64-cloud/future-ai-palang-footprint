@@ -43,3 +43,11 @@ OBSERVE → ASSIGN ID → PRESERVE → CLASSIFY → PROVENANCE → TEMPORAL BIND
 
 ## وضعیت این رویداد
 ثبت repository در حال انجام است. پذیرش فقط پس از READ-BACK → MATCH → VERIFY و اتصال timestamp واقعی commit نهایی است.
+
+
+## پذیرش پس از بازخوانی — 2026-10-22
+- READ-BACK: PASS؛ فایل رویداد، دو لنگر مستقل، سند مادر، پابند زمانی، معماری پایه و نمایه‌های مرتبط از مخزن بازخوانی شدند.
+- MATCH: PASS برای پیوندهای اصلی EVT-0089، UIOAM، IN-20261022-002، OUT-20261022-002 و TIME-BINDING-UIOAM.
+- VERIFY: PASS برای وجود فایل‌ها و پیوندهای مورد انتظار؛ timestampهای commit از GitHub commit metadata خوانده شدند.
+- LIMITATION: این پذیرش مربوط به ثبت اسناد این نوبت است، نه اثبات runtime collector یا ثبت خودکار تمام تعاملات آینده.
+- Timestamp binding: [TIME-BINDING-UIOAM](./TIME-BINDING-UIOAM-2026-10-22-001.md).
