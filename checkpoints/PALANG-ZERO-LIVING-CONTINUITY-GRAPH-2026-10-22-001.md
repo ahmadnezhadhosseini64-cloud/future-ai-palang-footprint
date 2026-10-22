@@ -46,3 +46,6 @@ Next / بعدی: ثبت پیوندهای صریح در دفتر مرکزی و س
 - رویداد تاریخی EVT-0093 اکنون فایل مستقل دارد؛ بازخوانی و اتصال زمانی آن باید تأیید شود.
 - نسخهٔ مدل مادر HAIF: 1.2.0. معماری باز و در حال تکامل است.
 - گام بعد: اجرای ممیزی ساختاری تازه، حفظ شواهد run/commit/artifact، سپس تطبیق معنایی موارد باز؛ Dropbox همچنان OPEN / WAITING.
+
+- پابند زمانی PIRHA: [TIME-BINDING-PIRHA-2026-10-22-001](../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-PIRHA-2026-10-22-001.md).
+- لنگر ادامه: [PALANG-0.0-PIRHA-HISTORICAL-AUDIT-CONTINUATION-2026-10-22-001](../docs/0.0/anchors/PALANG-0.0-PIRHA-HISTORICAL-AUDIT-CONTINUATION-2026-10-22-001.md).
