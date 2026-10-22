@@ -536,3 +536,9 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 
 ## پابند زمانی LBAF
 - [TIME-BINDING-LBAF](architecture/BEHAVIOR-TRACE/TIME-BINDING-LBAF-2026-10-22-001.md) — زمان canonical ثبت مخزن UTC و معادل تهران.
+
+
+## Universal input/output temporal anchoring
+- [UIOAM master reference](reference/REFERENCE-DOCUMENTS/UNIVERSAL-INPUT-OUTPUT-TEMPORAL-ANCHOR-MASTER-2026-10-22-001.md)
+- [EVT-0089](architecture/BEHAVIOR-TRACE/EVT-0089-UNIVERSAL-INPUT-OUTPUT-ANCHORING-GOVERNANCE-2026-10-22.md)
+- [Temporal binding](architecture/BEHAVIOR-TRACE/TIME-BINDING-UIOAM-2026-10-22-001.md)
