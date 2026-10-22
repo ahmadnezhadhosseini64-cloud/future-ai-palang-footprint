@@ -342,3 +342,12 @@
 - سند مرجع مادر: [AOGM](../../reference/REFERENCE-DOCUMENTS/APPEND-ONLY-ARCHITECTURE-GROWTH-MASTER-REFERENCE-2026-10-22-001.md).
 - لنگر مستقل: [PALANG-0.0-APPEND-ONLY-ARCHITECTURE-GROWTH-2026-10-22-001](../../0.0/anchors/PALANG-0.0-APPEND-ONLY-ARCHITECTURE-GROWTH-2026-10-22-001.md).
 - اصل حاکم: معماری اولیه بازنویسی نمی‌شود؛ فقط با افزوده‌های نسخه‌دار رشد می‌کند. وضعیت خودکارسازی runtime نیازمند آزمون مستقل است.
+
+
+## EVT-0086 — اعتبارسنجی اجرایی دفتر تعامل و آزمون بازیابی آزمایشی
+- رویداد: [EVT-0086](./EVT-0086-EXECUTABLE-LEDGER-VALIDATION-AND-RECOVERY-SMOKE-TEST-2026-10-22.md).
+- سند مرجع مادر: [ELVR](../../reference/REFERENCE-DOCUMENTS/EXECUTABLE-INTERACTION-LEDGER-VALIDATION-MASTER-REFERENCE-2026-10-22-001.md).
+- طرح‌واره: [interaction-pair-ledger.schema.json](./interaction-pair-ledger.schema.json).
+- Fixture ساختگی: [interaction-pair-ledger-smoke-test.json](./fixtures/interaction-pair-ledger-smoke-test.json).
+- اجرای آزمون: [GitHub Actions workflow](../../../.github/workflows/interaction-ledger-validation.yml).
+- وضعیت: workflow ثبت شده؛ اجرای واقعی و نتیجهٔ سبز تا زمان بازخوانی run تأیید نشده است. آزمون cold-start تولیدی همچنان GAP مستقل است.
