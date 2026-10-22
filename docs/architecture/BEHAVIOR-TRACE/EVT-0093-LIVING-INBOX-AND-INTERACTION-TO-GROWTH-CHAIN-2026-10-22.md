@@ -60,3 +60,7 @@ A document-backed inbox is a real repository artifact, but it is not yet an auto
 - The short event number EVT-0093 was already occupied by EVT-0093-REGISTRATION-CONTINUATION-2026-10-22.md.
 - Do not use this legacy file path as proof that a second EVT-0093 is valid. Canonical follow-up event: [EVT-0103](./EVT-0103-BEHAVIOR-HUNTER-MISSED-DETECTION-AND-ID-COLLISION-CORRECTION-2026-10-22.md).
 - The Live Inbox itself remains valid as a repository-backed structure; its registration facts are preserved, while identity collision and missed detection are documented in EVT-0103.
+
+
+## Explicit identity-collision correction — canonical event is EVT-0103
+This file was mistakenly assigned the short event number EVT-0093 in a previous registration. The repository already contains EVT-0093-REGISTRATION-CONTINUATION-2026-10-22.md with that Event ID. This historical file is retained to preserve provenance, but it must not be treated as a second canonical EVT-0093. The canonical follow-up record for the live-inbox/behavior-hunter missed-detection and identifier-collision correction is [EVT-0103](./EVT-0103-BEHAVIOR-HUNTER-MISSED-DETECTION-AND-ID-COLLISION-CORRECTION-2026-10-22.md). The collision is explicitly recorded rather than concealed.
