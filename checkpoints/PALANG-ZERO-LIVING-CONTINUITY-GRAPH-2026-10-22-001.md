@@ -28,3 +28,11 @@ Next / بعدی: ثبت پیوندهای صریح در دفتر مرکزی و س
 
 ## وضعیت اثبات
 تعریف نقطه و ساخت پرونده، ثبت در مخزن را آغاز می‌کند اما تکمیل اتصال همهٔ نقاط تاریخی یا ذخیره در مقصدهای بیرونی را ثابت نمی‌کند. پذیرش نهایی نیازمند بازخوانی، تطبیق و ممیزی است.
+
+
+## الحاقیهٔ پیگیری — بازخورد مثبت جاری
+- زوج تعامل: `INT-20261022-003`.
+- رویداد: [EVT-0090](../docs/architecture/BEHAVIOR-TRACE/EVT-0090-PALANG-POSITIVE-FEEDBACK-AND-INTERACTION-LEARNING-2026-10-22.md).
+- سند مرجع مادر: [PALANG-POSITIVE-FEEDBACK-LEARNING](../docs/reference/REFERENCE-DOCUMENTS/PALANG-POSITIVE-FEEDBACK-AND-INTERACTION-LEARNING-MASTER-REFERENCE-2026-10-22-001.md).
+- لنگرهای مستقل: [IN](../docs/0.0/anchors/PALANG-0.0-IN-20261022-003-POSITIVE-FEEDBACK.md) / [OUT](../docs/0.0/anchors/PALANG-0.0-OUT-20261022-003-FEEDBACK-REGISTRATION.md).
+- زمان دقیق پیام کاربر در دسترس نیست؛ زمان commit مخزن جداگانه و از metadata واقعی ثبت می‌شود.
