@@ -1007,3 +1007,8 @@ The queue index and the timestamp case must each be read back after this update.
 - Status: ACTIVE / LIVING / OPEN — cross-reference audit PASS with limits; external destination stability is NOT VERIFIED.
 - Next mandatory sequence: `BOART-FOLLOWUP-01` master/graph reconciliation; `BOART-FOLLOWUP-02` Dropbox write/read-back; `BOART-FOLLOWUP-03` isolated external recovery.
 - Do not repeat the previous PASS 10/10 content recovery test without a new reason; preserve its result and test only the new gap.
+
+### به‌روزرسانی شواهد مقصدی — EVT-0037
+- Library: یک mirror مشخص از آزمون زنده ثبت و از همان مسیر بازخوانی شد؛ `REGISTERED / READ-BACK VERIFIED` برای همان فایل.
+- این مورد، اثبات پایداری سراسری Library یا دیگر اسناد نیست. Buffer و Persistent Memory: NOT VERIFIED؛ Dropbox: OPEN / NOT VERIFIED؛ بازیابی بیرونی: NOT RUN.
+- برای ارتقای وضعیت کلی هر مقصد، شواهد مستقل همان مقصد و آزمون دامنهٔ مربوط لازم است.
