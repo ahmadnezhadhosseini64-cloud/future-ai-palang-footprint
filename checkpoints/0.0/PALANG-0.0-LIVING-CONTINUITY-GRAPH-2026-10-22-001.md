@@ -49,3 +49,13 @@
 - سند مرجع مادر: [بازخورد مثبت و یادگیری از تعامل](../../docs/reference/REFERENCE-DOCUMENTS/PALANG-POSITIVE-FEEDBACK-AND-INTERACTION-LEARNING-MASTER-REFERENCE-2026-10-22-001.md).
 - گام بعدی: بازخوانی و تطبیق فایل‌ها، ثبت metadata واقعی commit به UTC و زمان متناظر تهران، و حفظ وضعیت مقصدهای بیرونی به‌صورت مستقل.
 - زمان دقیق پیام کاربر: NOT EXPOSED / NOT CAPTURED.
+
+
+## PIRHA — حاکمیت ثبت تعاملی و ممیزی تاریخی
+
+- سند مرجع مادر: [PIRHA](../docs/reference/REFERENCE-DOCUMENTS/PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001.md).
+- زوج تعامل جاری: `INT-20261022-009` — لنگرهای مستقل IN-009 و OUT-009 در `docs/0.0/anchors/`.
+- رویداد جاری: [EVT-0095](../docs/architecture/BEHAVIOR-TRACE/EVT-0095-INTERACTION-GOVERNANCE-AND-HISTORICAL-AUDIT-2026-10-22.md).
+- رویداد تاریخی EVT-0093 اکنون فایل مستقل دارد؛ بازخوانی و اتصال زمانی آن باید تأیید شود.
+- نسخهٔ مدل مادر HAIF: 1.2.0. معماری باز و در حال تکامل است.
+- گام بعد: اجرای ممیزی ساختاری تازه، حفظ شواهد run/commit/artifact، سپس تطبیق معنایی موارد باز؛ Dropbox همچنان OPEN / WAITING.
