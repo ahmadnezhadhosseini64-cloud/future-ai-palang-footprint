@@ -86,3 +86,7 @@
 `PRESERVE → THINK DEEPLY → ACT QUICKLY → VERIFY → LEARN → EVOLVE`
 
 حفظ → تفکر عمیق → اقدام سریع → تأیید → یادگیری → تکامل. سرعت بدون شاهد، سرعت واقعی نیست؛ آینده‌پژوهی بدون معیار ابطال، پیش‌بینی قابل‌اعتماد نیست.
+
+
+## پابند زمانی ثبت مخزن
+- [TIME-BINDING-PFTA-2026-10-22-001](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-PFTA-2026-10-22-001.md) — metadata واقعی commit به UTC و زمان متناظر تهران؛ زمان پیام جداست.
