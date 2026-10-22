@@ -940,3 +940,5 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - سند مرجع مادر: [PIRHA](../reference/REFERENCE-DOCUMENTS/PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001.md).
 - رویداد: [EVT-0096](../architecture/BEHAVIOR-TRACE/EVT-0096-BASELINE-REGISTRATION-AND-ARCHITECTURE-EVOLUTION-2026-10-22.md).
 - نسخهٔ معماری مادر HAIF: 1.3.0؛ گام بعدی: بازخوانی کامل همهٔ پیوندها و اجرای ممیزی تاریخی تازه.
+
+- پابند زمانی زوج INT-010: [TIME-BINDING-INT-20261022-010](../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-010.md).
