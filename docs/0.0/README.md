@@ -726,3 +726,13 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - [EVT-0035: رد کاذب معیار C4 و اصلاح مبتنی بر شاهد](../architecture/BEHAVIOR-TRACE/EVT-0035-BEHAVIOR-EVALUATOR-FALSE-NEGATIVE-C4-2026-10-22.md)
 - [سند مرجع مستقل رفتارشناسی](../reference/REFERENCE-DOCUMENTS/BEHAVIOR-OBSERVATION-FALSE-NEGATIVE-C4-2026-10-22-001.md)
 - وضعیت پیگیری اجباری: (1) ممیزی معماری/مرجع مادر — OPEN؛ (2) اتصال و آزمون Dropbox — OPEN؛ (3) بازیابی سرتاسری از نسخهٔ بیرونی در محیط جداگانه — OPEN. این نقطه، لنگرهای قبلی ۰.۰ را جایگزین نمی‌کند.
+
+
+## نقطهٔ ۰.۰ جاری — EVT-0036، 2026-10-22
+- لنگر جاری مستقل: [PALANG-0.0-CONTINUATION-BEHAVIOR-REGISTRATION-NEXT-AUDIT-2026-10-22-001](anchors/PALANG-0.0-CONTINUATION-BEHAVIOR-REGISTRATION-NEXT-AUDIT-2026-10-22-001.md)
+- رخداد مستقل: [EVT-0036 — ثبت لنگر جاری و گام بعدی](../architecture/BEHAVIOR-TRACE/EVT-0036-CURRENT-0.0-ANCHOR-AND-NEXT-ACTION-2026-10-22.md)
+- سند مرجع کامل: [سند مرجع زندهٔ لنگر جاری](../reference/REFERENCE-DOCUMENTS/PALANG-0.0-CONTINUATION-BEHAVIOR-REGISTRATION-NEXT-AUDIT-2026-10-22-001.md)
+- زمان درخواست: 2026-10-22 08:35 Asia/Tehran؛ UTC متناظر محاسباتی 2026-10-22 05:05Z؛ ثانیهٔ دقیق ناموجود.
+- مکان ثبت‌شده: گنبد کاووس، ایران.
+- گام بعدی فعال: BOART-FOLLOWUP-01، ممیزی معماری و مرجع مادر. پس از آن: BOART-FOLLOWUP-02 آزمون Dropbox؛ BOART-FOLLOWUP-03 بازیابی سرتاسری از نسخهٔ مستقل بیرونی.
+- لنگرهای پیشین ۰.۰ حفظ می‌شوند و این نقطه آن‌ها را جایگزین نمی‌کند.
