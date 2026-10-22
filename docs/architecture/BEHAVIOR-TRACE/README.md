@@ -335,3 +335,10 @@
 - لنگر مستقل ۰.۰: [PALANG-0.0-FIRST-IO-BEHAVIOR-MODEL-2026-10-22-001](../../0.0/anchors/PALANG-0.0-FIRST-IO-BEHAVIOR-MODEL-2026-10-22-001.md).
 - قرارداد زوجی: `INT-YYYYMMDD-NNN` / `IN-YYYYMMDD-NNN` / `OUT-YYYYMMDD-NNN`; شمارهٔ NNN در یک زوج مشترک است.
 - وضعیت: ACTIVE / LIVING / OPEN / EVOLVABLE؛ خودکارسازی دریافت همهٔ پیام‌ها هنوز نیازمند پیاده‌سازی و آزمون runtime است.
+
+
+## EVT-0084 — حاکمیت رشد افزایشی معماری و سند مرجع مادر
+- رویداد: [EVT-0084](./EVT-0084-APPEND-ONLY-ARCHITECTURE-GROWTH-AND-MASTER-GOVERNANCE-2026-10-22.md).
+- سند مرجع مادر: [AOGM](../../reference/REFERENCE-DOCUMENTS/APPEND-ONLY-ARCHITECTURE-GROWTH-MASTER-REFERENCE-2026-10-22-001.md).
+- لنگر مستقل: [PALANG-0.0-APPEND-ONLY-ARCHITECTURE-GROWTH-2026-10-22-001](../../0.0/anchors/PALANG-0.0-APPEND-ONLY-ARCHITECTURE-GROWTH-2026-10-22-001.md).
+- اصل حاکم: معماری اولیه بازنویسی نمی‌شود؛ فقط با افزوده‌های نسخه‌دار رشد می‌کند. وضعیت خودکارسازی runtime نیازمند آزمون مستقل است.
