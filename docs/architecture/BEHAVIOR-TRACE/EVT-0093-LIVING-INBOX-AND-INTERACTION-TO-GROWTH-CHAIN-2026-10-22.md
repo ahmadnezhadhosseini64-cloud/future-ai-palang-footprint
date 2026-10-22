@@ -1,4 +1,8 @@
-# EVT-0093 — صندوق زنده و زنجیرهٔ رشد از تعامل
+# LEGACY RECORD — originally misnumbered as EVT-0093; canonical event is EVT-0103
+
+> **Identity correction / اصلاح شناسه:** این فایل در ثبت قبلی به‌اشتباه شمارهٔ EVT-0093 گرفت؛ درحالی‌که EVT-0093 از قبل برای رویداد ثبت ادامه استفاده شده بود. این فایل به‌عنوان سابقه حذف نشده است، اما دیگر نباید به‌عنوان رویداد مستقل EVT-0093 استناد شود. شناسهٔ canonical این موضوع اکنون [EVT-0103](./EVT-0103-BEHAVIOR-HUNTER-MISSED-DETECTION-AND-ID-COLLISION-CORRECTION-2026-10-22.md) است. این اصلاح، خطای یکتایی را پنهان نمی‌کند و سابقه را حفظ می‌کند.
+
+# عنوان تاریخی: صندوق زنده و زنجیرهٔ رشد از تعامل
 
 - Stable ID: PALANG-LIVING-INBOX-AND-INTERACTION-TO-GROWTH-CHAIN-2026-10-22-001
 - Production ID: EVT93-LIVING-INBOX-2026-10-22-001
@@ -50,3 +54,9 @@ A document-backed inbox is a real repository artifact, but it is not yet an auto
 - Expected Stable IDs, Production IDs, event/anchor/master links and the OPEN runtime boundary matched on read-back.
 - Repository artifacts: REGISTERED / READ-BACK VERIFIED. Inbox workflow definition: ACTIVE / LIVING. Automatic host capture, production runtime and cold-start end-to-end: OPEN / NOT YET PROVEN.
 - Exact user-message timestamp remains NOT CAPTURED; commit timestamps are not substituted for it.
+
+
+## Correction addendum — 2026-10-22
+- The short event number EVT-0093 was already occupied by EVT-0093-REGISTRATION-CONTINUATION-2026-10-22.md.
+- Do not use this legacy file path as proof that a second EVT-0093 is valid. Canonical follow-up event: [EVT-0103](./EVT-0103-BEHAVIOR-HUNTER-MISSED-DETECTION-AND-ID-COLLISION-CORRECTION-2026-10-22.md).
+- The Live Inbox itself remains valid as a repository-backed structure; its registration facts are preserved, while identity collision and missed detection are documented in EVT-0103.
