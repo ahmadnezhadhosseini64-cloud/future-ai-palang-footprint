@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `PALANG-DUAL-TRACK-BEHAVIORAL-ARCHITECTURE-2026-10-22-001`
 - Production ID / شناسهٔ تولید: `DTBA-2026-10-22-001`
-- Version / نسخه: 1.0.0
+- Version / نسخه: 1.0.1
 - Owner / مالک: احمد پلنگ (Ahmad Nezhadhosseini)
 - Project / پروژه: Future AI / Palang Footprint — HAIF
 - Status / وضعیت: ACTIVE / LIVING / GOVERNING / OPEN FOR GROWTH
