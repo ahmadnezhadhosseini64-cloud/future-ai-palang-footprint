@@ -72,3 +72,15 @@ Start from this document, then follow:
 
 ---
 Append-only rule: do not overwrite earlier 0.0 anchors or initial architecture. Add versioned evidence and reconcile links.
+
+
+## Addendum v1.0.1 — executable pair-ledger increment and test correction
+- Time binding: [TIME-BINDING-CMIND](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-CMIND-2026-10-22-001.md).
+- Runtime increment: `prototype/haif-v0/app.py` now exposes `POST /api/v1/interactions` and `GET /api/v1/interactions/{INT|IN|OUT}`; validates against the repository Draft 2020-12 schema; stores canonical JSON in local SQLite; hashes and verifies read-back; supports idempotent identical retry; rejects conflicting ID reuse; and resolves all three paired IDs.
+- Dependency: `jsonschema>=4.22,<5`.
+- Tests added: schema-backed write/read-back, reverse lookup, idempotency, conflicting reuse, ID mismatch, and restart recovery.
+- First real CI run `39823733279`: 15 passed, 1 failed. Failure was an existing ingestion-search test assuming exactly one global result after the new reference introduced another valid match.
+- Follow-up run `39823898278`: same test assumption still failed after an insufficiently narrow query change. Both failures are preserved as evidence, not erased.
+- Corrective test change: commit `5bae4d711ba2c2cb50f440b6c23af8b65e73fbcf` changes the assertion to select the expected source path. Fresh HAIF Prototype Tests run `39824020260` was last observed QUEUED; result remains PENDING / NOT VERIFIED until completion is fetched.
+- Current status: code increment REGISTERED / READ-BACK VERIFIED; feature-specific tests passed in the two runs' 15 passing tests, but the suite as a whole is not PASS because each run had one failure. Fresh corrected run pending.
+- Scope boundary: local prototype only. No production ChatGPT-host capture, authentication/deployment hardening, or external destination persistence is claimed.
