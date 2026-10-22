@@ -216,3 +216,14 @@ Resume from this CMIND master → [EVT-0093](../../architecture/BEHAVIOR-TRACE/E
 - لنگرها: [IN-016](../../0.0/anchors/PALANG-0.0-IN-20261022-016-EXPLICIT-CANDIDATE-SIGNALS.md) / [OUT-016](../../0.0/anchors/PALANG-0.0-OUT-20261022-016-EXPLICIT-CANDIDATE-SIGNALS.md).
 - صندوق زنده: [INBOX-20261022-003](../../architecture/LIVE-INBOX/entries/INBOX-20261022-003.md).
 - ادامهٔ اجرایی: استخراج کاندید از IN/OUT، طبقه‌بندی شاهد‌محور، کنترل یکتایی شناسه پیش از نوشتن و بازیابی cold-start در [Issue #20](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/20). وضعیت runtime هنوز OPEN / NOT PROVEN است؛ این اتصال مستندی معادل تکمیل runtime نیست.
+
+
+### J. Current return point — INT-20261022-017 / EVT-0105
+- Current independent 0.0 return point: [PALANG-0.0-RETURN-CURRENT-INT-20261022-017-MODEL-INITIAL](../../0.0/anchors/PALANG-0.0-RETURN-CURRENT-INT-20261022-017-MODEL-INITIAL.md).
+- Interaction pair: [IN-017](../../0.0/anchors/PALANG-0.0-IN-20261022-017-SET-CURRENT-RETURN-POINT.md) / [OUT-017](../../0.0/anchors/PALANG-0.0-OUT-20261022-017-SET-CURRENT-RETURN-POINT.md); event [EVT-0105](../../architecture/BEHAVIOR-TRACE/EVT-0105-CURRENT-0.0-RETURN-POINT-AND-NEXT-EXECUTION-2026-10-22.md).
+- Live Inbox: [INBOX-20261022-004](../../architecture/LIVE-INBOX/entries/INBOX-20261022-004.md). The inbox is intake/tracking and does not replace this master.
+- User's explicit direction: set this point as the returnable 0.0, keep the master living, and identify/register the next step. This is an additive anchor; earlier 0.0 points remain preserved.
+- Next execution target: Issue #20 — implement evidence-labelled candidate extraction from IN/OUT, pre-write identifier uniqueness and collision regression tests, route accepted candidates to inbox/component master/universal master/model-initial queue, then run fresh-process cold-start recovery from INT, IN and OUT against persistent storage.
+- Current evidence boundary: local HAIF v0 tests passed in run 39824020260 (16 passed, 1 warning, 0 failed) for the tested commit. Production host-wide capture, authorized producer integration and production cold-start are still OPEN / NOT PROVEN. Dropbox remains a separate OPEN / WAITING branch and is not the active target.
+- Exact user-message and assistant-generation timestamps remain NOT EXPOSED / NOT CAPTURED. Record the real commit timestamp in UTC and derive Tehran time from the same instant after this addendum is committed.
+- Current status of this addendum: intended to become REGISTERED / READ-BACK VERIFIED only after the exact file, index, queue, inbox and event are fetched back and matched.
