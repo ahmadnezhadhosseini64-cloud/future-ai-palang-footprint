@@ -796,3 +796,10 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - [سند مادر GACIB](../reference/REFERENCE-DOCUMENTS/GMAIL-ACCESS-CLAIM-AND-INTERACTION-BEHAVIOR-LIVING-MASTER-REFERENCE-2026-10-22-001.md)
 - [معماری اولیه اپ](../architecture/BEHAVIOR-SCIENCE-PALANG-FUTURE-AI/INTERACTIVE-BEHAVIOR-APP-ARCHITECTURE-INITIAL-2026-10-22-001.md)
 - اقدام باز: بازخوانی همه اسناد و ثبت زمان commit واقعی UTC/تهران؛ Gmail ارسال نشده؛ سایر مقصدها نیازمند اثبات مستقل‌اند.
+
+
+## لنگر ۰.۰ افزایشی — محدودیت ثبت و ادامهٔ چکش شواهد
+- [لنگر مستقل](./anchors/PALANG-0.0-REGISTRATION-LIMITATION-AND-PEH-RESUME-2026-10-22-001.md)
+- [رویداد EVT-0069](../architecture/BEHAVIOR-TRACE/EVT-0069-REGISTRATION-LIMITATION-CHECKLIST-REPAIR-AND-RESUME-2026-10-22.md)
+- [سند مرجع RLP](../reference/REFERENCE-DOCUMENTS/PEH-REGISTRATION-LIMITATION-AND-INTERACTION-BEHAVIOR-LIVING-REFERENCE-2026-10-22-001.md)
+- این لنگر جدید افزایشی است؛ نقاط ۰.۰ قبلی حذف یا جایگزین نمی‌شوند. Gmail BLOCKED/NOT SENT؛ Library/Buffer/Persistent Memory NOT VERIFIED؛ Dropbox OPEN/NOT VERIFIED.
