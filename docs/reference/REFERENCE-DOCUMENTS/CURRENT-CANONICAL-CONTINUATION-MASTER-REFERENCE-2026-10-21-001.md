@@ -336,3 +336,13 @@
 - CI run 39750440075: SUCCESS؛ schema-validation، بازیابی IN و بازیابی OUT در checkoutهای تازه موفق شدند.
 - محدودهٔ اثبات محدود به fixture ساختگی است؛ شکارچی دائماً فعال، ثبت خودکار مکالمات، cold-start سرویس تولیدی و مقصدهای بیرونی هنوز تأیید نشده‌اند.
 - اصل حاکم: معماری اولیه محفوظ است؛ این زنجیره فقط به‌صورت افزودهٔ نسخه‌دار رشد می‌کند و لنگرهای ۰.۰ قبلی را جایگزین نمی‌کند.
+
+
+## 31. نقطهٔ جاری رفتارشناسی زنده و آینده‌پژوهی — EVT-0088
+- رویداد حاکمیتی: [EVT-0088](../../architecture/BEHAVIOR-TRACE/EVT-0088-CURRENT-ANCHOR-LIVING-BEHAVIOR-ARCHITECTURE-AND-FUTURE-FORESIGHT-GOVERNANCE-2026-10-22.md).
+- سند مرجع مادر: [LBAF](./LIVING-BEHAVIOR-ARCHITECTURE-FORESIGHT-MASTER-REFERENCE-2026-10-22-001.md).
+- نقطهٔ جاری: [لنگر مستقل جاری ۰.۰](../../0.0/anchors/PALANG-0.0-CURRENT-LIVING-BEHAVIOR-ARCHITECTURE-2026-10-22-001.md).
+- گام بعدی ۰.۰: [runtime collector و بازیابی تولیدی](../../0.0/anchors/PALANG-0.0-RUNTIME-COLLECTOR-PRODUCTION-RECOVERY-2026-10-22-001.md).
+- این زنجیره به معماری پایه، FIOBAM، AOGM و ELVR متصل شده است؛ رشد فقط افزایشی و نسخه‌دار است.
+- وضعیت واقعی: CI قبلی برای fixture ساختگی موفق است؛ runtime collector، ثبت خودکار همهٔ تعاملات و cold-start تولیدی هنوز اثبات نشده‌اند.
+- مقصدهای Library، Buffer، Persistent Memory و Dropbox تأیید نشده‌اند؛ Gmail ارسال نشده است.
