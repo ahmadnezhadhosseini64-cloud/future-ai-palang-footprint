@@ -41,3 +41,14 @@
 - زمان workflow: آغاز UTC 2026-10-22T08:47:52Z / تهران 12:17:52؛ پایان UTC 2026-10-22T08:48:06Z / تهران 12:18:06.
 - این نتیجه، آزمون fixture ساختگی و checkout تازه است؛ cold-start سرویس واقعی و شکارچی خودکار هنوز تأیید نشده‌اند.
 - این الحاقیه لنگرهای قبلی را جایگزین نمی‌کند.
+
+
+## Verified execution update — EVT-0087
+- Result event: [EVT-0087](../../architecture/BEHAVIOR-TRACE/EVT-0087-INTERACTION-VALIDATION-RECOVERY-RESULT-2026-10-22.md).
+- Workflow run 39750440075: SUCCESS.
+- Schema validation job 119729379597: SUCCESS.
+- IN recovery job 119729379857: SUCCESS.
+- OUT recovery job 119729379868: SUCCESS.
+- UTC run interval: 2026-10-22T08:47:52Z–2026-10-22T08:48:08Z.
+- Tehran equivalent: 2026-10-22T12:17:52+03:30–2026-10-22T12:18:08+03:30.
+- Scope is synthetic fixture recovery from fresh repository checkouts. Real production capture and external destinations remain open/unverified.
