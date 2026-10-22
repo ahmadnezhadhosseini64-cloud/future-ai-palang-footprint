@@ -947,3 +947,6 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 
 - ممیزی تاریخی ثبت‌شده: [گزارش PRHAR](../reference/REFERENCE-DOCUMENTS/PALANG-REPOSITORY-HISTORICAL-AUDIT-RESULTS-2026-10-22-001.md) / [EVT-0097](../architecture/BEHAVIOR-TRACE/EVT-0097-REPOSITORY-HISTORICAL-AUDIT-RESULTS-2026-10-22.md). وضعیت ممیزی ساختاری snapshot قبلی: 10 پیوند شکسته؛ اصلاحات اعمال شده و ممیزی تازه لازم است.
 - نسخه‌های جاری: HAIF 1.3.2؛ PIRHA 1.3.0.
+
+- ممیزی تاریخی ثبت‌شده: [گزارش PRHAR](../reference/REFERENCE-DOCUMENTS/PALANG-REPOSITORY-HISTORICAL-AUDIT-RESULTS-2026-10-22-001.md) / [EVT-0097](../architecture/BEHAVIOR-TRACE/EVT-0097-REPOSITORY-HISTORICAL-AUDIT-RESULTS-2026-10-22.md). وضعیت ممیزی ساختاری snapshot قبلی: 10 پیوند شکسته؛ اصلاحات اعمال شده و ممیزی تازه لازم است.
+- نسخه‌های جاری: HAIF 1.3.2؛ PIRHA 1.3.0.
