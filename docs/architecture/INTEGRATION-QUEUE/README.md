@@ -982,6 +982,14 @@ The queue index and the timestamp case must each be read back after this update.
 شرط بستن هر مورد: شاهد اجرا + زمان‌های دارای منشأ + read-back + تطبیق + ثبت نتیجه و محدودیت. زمان‌های ناموجود UNKNOWN؛ موفقیت یک مورد به دو مورد دیگر تعمیم داده نمی‌شود.
 
 
+## EVT-0037 — آزمون مستقل زندهٔ ماندگاری و بازیابی
+- Event: [EVT-0037](../BEHAVIOR-TRACE/EVT-0037-INDEPENDENT-LIVE-PERSISTENCE-TEST-2026-10-22.md)
+- Stable ID: `PALANG-INDEPENDENT-LIVE-PERSISTENCE-TEST-2026-10-22-001`
+- Status: ACTIVE / LIVING / OPEN — بازخوانی زندهٔ چند فایل مخزن انجام شد؛ آزمون مقصدهای بیرونی و بازیابی سرتاسری هنوز اجرا/تأیید نشده.
+- مقصدها: Repository read-back در حال تکمیل با آزمون پس از نوشتن این رویداد؛ Pages، Library، Buffer، Persistent Memory و Dropbox جداگانه UNVERIFIED.
+- ترتیب ادامه: BOART-FOLLOWUP-01 ممیزی مرجع مادر → BOART-FOLLOWUP-02 آزمون واقعی Dropbox → BOART-FOLLOWUP-03 بازیابی از نسخهٔ بیرونی در محیط جداگانه.
+- قاعده: موفقیت یک مقصد به مقصد دیگر سرایت نمی‌کند؛ فقط شاهد مستقل هر مقصد وضعیت آن را ارتقا می‌دهد.
+
 ## EVT-0036 — نقطهٔ ۰.۰ جاری و اولویت بعدی
 - Anchor: [نقطهٔ ۰.۰ جاری](../../0.0/anchors/PALANG-0.0-CONTINUATION-BEHAVIOR-REGISTRATION-NEXT-AUDIT-2026-10-22-001.md)
 - Event: [EVT-0036](../BEHAVIOR-TRACE/EVT-0036-CURRENT-0.0-ANCHOR-AND-NEXT-ACTION-2026-10-22.md)
