@@ -44,3 +44,22 @@ All timestamps below were read from the GitHub REST commit records; Tehran is ca
 - [Current 0.0 anchor](../../0.0/anchors/PALANG-0.0-CURRENT-LIVING-BEHAVIOR-ARCHITECTURE-2026-10-22-001.md)
 - [Next-step 0.0 anchor](../../0.0/anchors/PALANG-0.0-RUNTIME-COLLECTOR-PRODUCTION-RECOVERY-2026-10-22-001.md)
 - [CI run 39750440075](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39750440075)
+
+
+## 6. Latest commit timestamps after linking this binding into the architecture and indexes
+These timestamps supersede the earlier timestamps in section 2 for the listed files because the files were amended to link this binding document. The values below are actual committer timestamps from GitHub's commit API; Tehran is UTC+03:30.
+
+| Artifact | Latest commit SHA | UTC commit time | Tehran equivalent |
+|---|---|---|---|
+| EVT-0088 governance event | 9bf4526d9a2b920fdb662f66cccead0c7154f93b | 2026-10-22T09:50:06Z | 2026-10-22T13:20:06+03:30 |
+| Current 0.0 anchor | 90a44c159b0bec9df8a2d35b6a1c04e31c7b296e | 2026-10-22T09:50:19Z | 2026-10-22T13:20:19+03:30 |
+| Next-step 0.0 anchor | 08dbee5695b1c40cfdb548c14f35ceb5ead0f437 | 2026-10-22T09:50:31Z | 2026-10-22T13:20:31+03:30 |
+| LBAF master reference | 0436e118f9b732d9c9e0e2ea0ba8a460f59c8cbe | 2026-10-22T09:50:45Z | 2026-10-22T13:20:45+03:30 |
+| Initial behavior architecture append | 7f00463fe31f3b4f115299b3efac32d7f5e232bb | 2026-10-22T09:50:58Z | 2026-10-22T13:20:58+03:30 |
+| Canonical continuation master append | 9ac62403e82aca75a33460cfe99d698c544c1f9f | 2026-10-22T09:51:14Z | 2026-10-22T13:21:14+03:30 |
+| Behavior trace index append | 13addf87bb12744cf6d580e2e139254fe048d96a | 2026-10-22T09:51:27Z | 2026-10-22T13:21:27+03:30 |
+| 0.0 index append | ec527dfaf55e8b343562a3ee602108d5d36ce956 | 2026-10-22T09:51:40Z | 2026-10-22T13:21:40+03:30 |
+| Reference index append | 7794e38c015ed910650090d0422350d3cff25576 | 2026-10-22T09:51:53Z | 2026-10-22T13:21:53+03:30 |
+| First version of this time-binding file | 908c208aaf3348204ce5d076d426f815ff1935a3 | 2026-10-22T09:49:43Z | 2026-10-22T13:19:43+03:30 |
+
+The latest commit timestamp of this binding document is necessarily established by its own commit metadata. The commit containing this section is the next revision and is not pre-asserted here; use the linked commit record as the source of truth.
