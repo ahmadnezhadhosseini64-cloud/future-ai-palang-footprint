@@ -41,3 +41,15 @@
 | Reference index | 6811af73f293867cddb8b43114fb65fa91d0cd84 | 2026-10-22 11:02:16Z | 2026-10-22 14:32:16+03:30 |
 
 If any listed artifact is amended again, its row becomes historical and must be replaced by the latest actual commit for that file in a new binding revision. The timestamp of this binding's current revision must be read from its own commit metadata after this update; it is intentionally not guessed here.
+
+
+## اصلاحیهٔ آخرین بازخوانی و پذیرش
+این اصلاحیه، نسخه‌های تازه‌تر فایل‌هایی را ثبت می‌کند که بعد از جدول اولیه برای پذیرش نهایی و پیوند مستقیم به‌روزرسانی شدند. این زمان‌ها جایگزین ردیف‌های قدیمی همان فایل‌ها هستند.
+
+| Artifact | Latest commit SHA | UTC | Tehran |
+|---|---|---|---|
+| EVT-0089 — read-back acceptance appended | 23777a26bf7fa9cebda9cffd161a86ea61737c9c | 2026-10-22 11:03:42Z | 2026-10-22 14:33:42+03:30 |
+| UIOAM master — acceptance state appended | 5e5cec661955ccbfa81e3e34c93c6ae5af0764a8 | 2026-10-22 11:03:54Z | 2026-10-22 14:33:54+03:30 |
+| Initial architecture — direct IN/OUT anchor links | bac2bf35cd6e8b4cf7520a1a8d8e9b670daa2216 | 2026-10-22 11:04:22Z | 2026-10-22 14:34:22+03:30 |
+
+The canonical timestamp of this timestamp-binding file is always the committer timestamp of its own latest commit, read independently from GitHub metadata. It must not be guessed or embedded as a self-asserted future timestamp.
