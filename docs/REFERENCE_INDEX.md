@@ -517,3 +517,10 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 ## پابند زمانی و نتیجهٔ CI — زنجیرهٔ EVT-0086
 - [TIME-BINDING-ELVR-2026-10-22-001](architecture/BEHAVIOR-TRACE/TIME-BINDING-ELVR-2026-10-22-001.md) — پابند مستقل UTC/تهران و زمان اجرای CI.
 - [GitHub Actions run 39750440075 — SUCCESS](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39750440075).
+
+
+## EVT-0087 — نتیجهٔ راستی‌آزمایی اجرای دفتر تعامل
+- [رویداد EVT-0087](architecture/BEHAVIOR-TRACE/EVT-0087-INTERACTION-VALIDATION-RECOVERY-RESULT-2026-10-22.md).
+- [لنگر مستقل بازیابی](0.0/anchors/PALANG-0.0-INTERACTION-RECOVERY-2026-10-22-001.md).
+- [پابند زمانی](architecture/BEHAVIOR-TRACE/TIME-BINDING-ELVR-2026-10-22-001.md).
+- [CI run 39750440075 — SUCCESS](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39750440075).
