@@ -883,3 +883,10 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - رویداد: [EVT-0090](../architecture/BEHAVIOR-TRACE/EVT-0090-PALANG-POSITIVE-FEEDBACK-AND-INTERACTION-LEARNING-2026-10-22.md).
 - سند مرجع مادر: [PALANG-POSITIVE-FEEDBACK-LEARNING](../reference/REFERENCE-DOCUMENTS/PALANG-POSITIVE-FEEDBACK-AND-INTERACTION-LEARNING-MASTER-REFERENCE-2026-10-22-001.md).
 - وضعیت: ACTIVE / LIVING / OPEN؛ ثبت مخزن نیازمند بازخوانی و تطبیق نهایی است. زمان دقیق پیام ثبت نشده؛ زمان commit باید از metadata واقعی خوانده شود.
+
+
+## زوج تعامل — تفکر عمیق و شتاب‌دهی آینده‌پژوهانه
+- زوج: `INT-20261022-004` — ورودی [IN-20261022-004](./anchors/PALANG-0.0-IN-20261022-004-FUTURE-THINKING-REQUEST.md) / خروجی [OUT-20261022-004](./anchors/PALANG-0.0-OUT-20261022-004-FUTURE-THINKING-OUTPUT.md).
+- سند مادر: [PFTA](../reference/REFERENCE-DOCUMENTS/PALANG-FUTURE-THINKING-ACCELERATION-MASTER-REFERENCE-2026-10-22-001.md).
+- رویداد: [EVT-0091](../architecture/BEHAVIOR-TRACE/EVT-0091-PALANG-FUTURE-THINKING-ACCELERATION-2026-10-22.md).
+- پابند زمان: [TIME-BINDING-PFTA](../architecture/BEHAVIOR-TRACE/TIME-BINDING-PFTA-2026-10-22-001.md).
