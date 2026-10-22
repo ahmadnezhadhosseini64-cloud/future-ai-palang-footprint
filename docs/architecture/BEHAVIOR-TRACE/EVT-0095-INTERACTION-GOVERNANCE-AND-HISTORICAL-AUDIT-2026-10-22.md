@@ -32,3 +32,6 @@ PIRHA adds interaction-registration governance and historical audit gates to DTR
 
 ## Acceptance boundary
 This event does not assert that a new full repository audit has passed, that all historical links are semantically resolved, or that Buffer/Persistent Memory/Dropbox are verified. Those claims require fresh evidence.
+
+- Time binding / پابند زمانی: [TIME-BINDING-PIRHA-2026-10-22-001](TIME-BINDING-PIRHA-2026-10-22-001.md).
+- Status correction: standalone EVT-0093 was created in this interaction; read-back and cross-link audit remain required.
