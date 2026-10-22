@@ -57,3 +57,11 @@ ACTIVE / LIVING یعنی سند قابل‌توسعه، نسخه‌دار، دا
 3. پیاده‌سازی دفتر پایدار و index جست‌وجوی معکوس.
 4. آزمون cold-start واقعی از IN و OUT در محیطی مستقل.
 5. ثبت نتیجه در EVT تازه، با شواهد و وضعیت مقصدها.
+
+
+## 10. نتیجهٔ اجرای CI ثبت‌شده
+- [Workflow run 39750440075](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39750440075): SUCCESS.
+- زمان آغاز: UTC 2026-10-22T08:47:52Z = تهران 2026-10-22T12:17:52+03:30.
+- زمان پایان: UTC 2026-10-22T08:48:06Z = تهران 2026-10-22T12:18:06+03:30.
+- سه job موفق: schema-validation، recover-from-input، recover-from-output.
+- دامنهٔ نتیجه محدود به JSON Schema و fixture ساختگی در checkoutهای تازه است. آزمون cold-start سرویس واقعی و ثبت خودکار تولیدی همچنان GAP باز هستند.
