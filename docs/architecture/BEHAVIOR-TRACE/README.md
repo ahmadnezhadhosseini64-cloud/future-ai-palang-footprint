@@ -320,3 +320,10 @@
 - [سند مرجع مادر GACIB](../../reference/REFERENCE-DOCUMENTS/GMAIL-ACCESS-CLAIM-AND-INTERACTION-BEHAVIOR-LIVING-MASTER-REFERENCE-2026-10-22-001.md)
 - [طرح اولیه اپ رفتارشناسی تعاملی](../BEHAVIOR-SCIENCE-PALANG-FUTURE-AI/INTERACTIVE-BEHAVIOR-APP-ARCHITECTURE-INITIAL-2026-10-22-001.md)
 - وضعیت: ادعای کاربر حفظ شده؛ ابزار فعلی Gmail را DISABLED_BY_ADMIN/NOT_AVAILABLE نشان می‌دهد؛ این نتیجه تاریخچه ادعاشده را رد یا تأیید نمی‌کند. ارسال Gmail انجام نشده.
+
+
+## EVT-0069 — محدودیت ثبت و ادامهٔ چکش شواهد
+- رویداد: [EVT-0069](./EVT-0069-REGISTRATION-LIMITATION-CHECKLIST-REPAIR-AND-RESUME-2026-10-22.md)
+- سند مرجع زنده: [RLP](../../reference/REFERENCE-DOCUMENTS/PEH-REGISTRATION-LIMITATION-AND-INTERACTION-BEHAVIOR-LIVING-REFERENCE-2026-10-22-001.md)
+- نقطهٔ ۰.۰: [لنگر مستقل محدودیت ثبت](../../0.0/anchors/PALANG-0.0-REGISTRATION-LIMITATION-AND-PEH-RESUME-2026-10-22-001.md)
+- وضعیت: چک‌لیست EVT-0051 اصلاح شده؛ Gmail به‌عنوان مسدود/ارسال‌نشده ثبت شده. Library، Buffer و Persistent Memory تأییدنشده؛ Dropbox باز است.
