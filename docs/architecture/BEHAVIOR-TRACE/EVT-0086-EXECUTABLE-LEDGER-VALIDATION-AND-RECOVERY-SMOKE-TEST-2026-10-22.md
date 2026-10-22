@@ -47,3 +47,7 @@
 - نتیجهٔ jobها: schema-validation PASS؛ recover-from-input PASS؛ recover-from-output PASS.
 - آزمون واقعیِ انجام‌شده: طرح‌واره و fixture ساختگی بررسی شدند؛ دو job جدا با checkout تازه توانستند از IN و OUT به یک زوج و lineage برسند.
 - مرز اثبات: این موفقیت، بازیابی fixture ساختگی از checkout تازه را ثابت می‌کند؛ نه cold-start یک سرویس تولیدی، نه جمع‌آوری خودکار همهٔ مکالمات، و نه ذخیره در Gmail/Library/Buffer/Memory/Dropbox.
+
+
+## Reconciliation — نتیجهٔ قبلی و وضعیت جاری
+این رویداد در ابتدا نتیجهٔ CI را در وضعیت انتظار گذاشته بود، زیرا هنوز اجرا و بازخوانی نشده بود. آن وضعیت تاریخی با ثبت و بازخوانی [EVT-0087 — نتیجهٔ راستی‌آزمایی](./EVT-0087-INTERACTION-VALIDATION-RECOVERY-RESULT-2026-10-22.md) به‌روزرسانی شد. وضعیت جاری: CI موفق برای schema و fixture ساختگی؛ بازیابی IN و OUT در checkoutهای تازه موفق؛ بازیابی cold-start سرویس تولیدی و جمع‌آوری خودکار گفتگوها همچنان باز/تأییدنشده.
