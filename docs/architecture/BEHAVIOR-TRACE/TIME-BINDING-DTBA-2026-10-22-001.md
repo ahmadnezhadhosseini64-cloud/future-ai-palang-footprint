@@ -90,3 +90,14 @@ These are the latest-change commits known at this audit pass (not merely each fi
 | Registration master v1.0.1 | `bfcebdb327999a54d70427bc95588a38c3c73f09` | 2026-10-22T14:00:31Z | 2026-10-22T17:30:31+03:30 |
 
 The timestamp of this binding file's latest edit is its own GitHub commit metadata; it cannot be recursively written into the same commit without creating another change.
+
+
+## آخرین بازنگری نهایی ورودی/خروجی و سند مادر
+
+| مورد | آخرین commit | UTC | تهران |
+|---|---|---|---|
+| IN-008 پس از تکمیل پیوندها | `bc5ad9c2f0f4a4518f23ab3718cf3d39a41a8207` | 2026-10-22T14:03:37Z | 2026-10-22T17:33:37+03:30 |
+| OUT-008 پس از تکمیل پیوندها | `9009cafbdae2927a51e15c579236b934024ddc7d` | 2026-10-22T14:03:46Z | 2026-10-22T17:33:46+03:30 |
+| DTRC master v1.0.2 | `dd06fc23102201585784cd89a61f321a76090ce6` | 2026-10-22T14:03:51Z | 2026-10-22T17:33:51+03:30 |
+
+این جدول زمان آخرین تغییر فایل‌ها را ثبت می‌کند؛ زمان دقیق پیام کاربر در دسترس نیست. زمان آخرین تغییر همین سند پابند از metadata commit آن خوانده می‌شود.
