@@ -293,3 +293,12 @@
 - نقطهٔ ۰.۰: [لنگر محدودیت ثبت](../../0.0/anchors/PALANG-0.0-REGISTRATION-LIMITATION-AND-PEH-RESUME-2026-10-22-001.md).
 - چک‌لیست EVT-0051 اصلاح شد؛ خانهٔ Gmail به معنی «بررسی شد؛ BLOCKED/NOT SENT» است، نه ارسال موفق.
 - مدل اپ به دفتر مستقل RegistrationAttempt (تلاش ثبت) برای هر مقصد رشد می‌کند. مقصدهای تأییدنشده نباید PASS گزارش شوند.
+
+
+## 26. رفتارشناسی نخستین زوج ورودی/خروجی و معماری نام‌گذاری — EVT-0083
+- سند مرجع زنده: [IBIO — رفتارشناسی نخستین ورودی/خروجی و مدل نام‌گذاری](./FIRST-INTERACTION-BEHAVIOR-ANALYSIS-AND-IO-NAMING-LIVING-REFERENCE-2026-10-22-001.md).
+- رویداد مستقل: [EVT-0083](../../architecture/BEHAVIOR-TRACE/EVT-0083-FIRST-INTERACTION-BEHAVIOR-ANALYSIS-AND-IO-NAMING-MODEL-2026-10-22.md).
+- لنگر مستقل ۰.۰: [PALANG-0.0-FIRST-IO-BEHAVIOR-MODEL-2026-10-22-001](../../0.0/anchors/PALANG-0.0-FIRST-IO-BEHAVIOR-MODEL-2026-10-22-001.md).
+- قرارداد زوجی آینده: `INT-YYYYMMDD-NNN`, `IN-YYYYMMDD-NNN`, `OUT-YYYYMMDD-NNN`; تخصیص واقعی فقط پس از بررسی یکتایی.
+- زمان دقیق پیام و زمان تولید پاسخ در صورت نبود فرادادهٔ میزبان نامعلوم می‌مانند؛ UTC commit واقعی همان فایل زمان مرجع ثبت مخزن است و تهران از همان لحظه مشتق می‌شود.
+- مدل زنده است؛ خودکارسازی میزبان و مقصدهای بیرونی تا آزمون مستقل تأییدنشده باقی می‌مانند.
