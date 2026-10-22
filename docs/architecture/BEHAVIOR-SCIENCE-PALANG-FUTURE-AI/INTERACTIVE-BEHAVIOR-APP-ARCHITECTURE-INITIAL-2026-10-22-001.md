@@ -208,3 +208,11 @@ Feedback / بازخورد انسان و آزمون‌ها به چرخه برمی
 
 ## پابند زمانی EVT-0088
 - [TIME-BINDING-LBAF](../BEHAVIOR-TRACE/TIME-BINDING-LBAF-2026-10-22-001.md) — زمان‌های canonical commit برای افزودهٔ رفتارشناسی زنده و آینده‌پژوهی.
+
+
+## EVT-0089 — universal per-input/output anchors
+The architecture now links the append-only rule requiring each capturable input and output to have a distinct record and recovery anchor, a temporal evidence binding, a paired interaction ID, and a master-reference path:
+- [EVT-0089](../BEHAVIOR-TRACE/EVT-0089-UNIVERSAL-INPUT-OUTPUT-ANCHORING-GOVERNANCE-2026-10-22.md)
+- [UIOAM master](../../reference/REFERENCE-DOCUMENTS/UNIVERSAL-INPUT-OUTPUT-TEMPORAL-ANCHOR-MASTER-2026-10-22-001.md)
+- [timestamp binding](../BEHAVIOR-TRACE/TIME-BINDING-UIOAM-2026-10-22-001.md)
+This is an append-only addition; the initial architecture text is preserved. Automatic collection remains unverified until runtime implementation and cold-start proof.
