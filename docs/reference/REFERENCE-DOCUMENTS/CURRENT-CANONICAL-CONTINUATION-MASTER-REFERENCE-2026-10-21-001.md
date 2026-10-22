@@ -319,3 +319,9 @@
 - Workflow: [interaction-ledger-validation.yml](../../../.github/workflows/interaction-ledger-validation.yml).
 - Fixture ساختگی و جست‌وجوی معکوس IN/OUT تعریف شده‌اند؛ نتیجهٔ اجرای CI باید بازخوانی شود.
 - وضعیت: ثبت workflow ≠ اجرای موفق؛ آزمون cold-start تولیدی و شکارچی خودکار هنوز اثبات نشده‌اند.
+
+
+## 29. نتیجهٔ اجرایی EVT-0086 و پابند زمانی
+- نتیجهٔ CI: [run 39750440075 — SUCCESS](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39750440075).
+- پابند زمانی UTC/تهران: [TIME-BINDING-ELVR-2026-10-22-001](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-ELVR-2026-10-22-001.md).
+- دامنهٔ قبولی: اعتبارسنجی JSON Schema و fixture ساختگی، و بازیابی از IN و OUT در checkoutهای تازه؛ cold-start سرویس تولیدی همچنان آزمون مستقل می‌خواهد.
