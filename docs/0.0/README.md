@@ -991,3 +991,12 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - چکش موجود: snapshot 7ced5075aad8c2b4e894f70965f9fc405d02bf94، 9 یال والد مبهم؛ عدد 6 هنوز از منبع خام تطبیق داده نشده است.
 - گام بعد: ممیزی مجدد روی snapshot تازه، تطبیق پیوندها، حل معنایی گروه‌ها و بررسی منبع اختلاف 6/9؛ سپس Dropbox write/read-back مستقل.
 - وضعیت: ACTIVE / LIVING / OPEN.
+
+
+## لنگر ادامهٔ مدل اولیه — EVT-0091 / INT-20261022-005
+- سند مرجع مادر: [CMIND](../reference/REFERENCE-DOCUMENTS/CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-MASTER-REFERENCE-2026-10-22-001.md).
+- رویداد: [EVT-0091](../architecture/BEHAVIOR-TRACE/EVT-0091-CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-2026-10-22.md).
+- ورودی: [IN-20261022-005](./anchors/PALANG-0.0-IN-20261022-005-CONTINUE-MODEL-INITIAL.md).
+- خروجی: [OUT-20261022-005](./anchors/PALANG-0.0-OUT-20261022-005-CONTINUE-MODEL-INITIAL.md).
+- وضعیت: ACTIVE / LIVING / OPEN. مسیر هدف، مدل اولیه و دفتر تعامل است؛ Dropbox مستقل و OPEN / WAITING باقی می‌ماند.
+- اقدام بعدی: توسعه و آزمون runtime collector و cold-start در [Issue #20](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/20).
