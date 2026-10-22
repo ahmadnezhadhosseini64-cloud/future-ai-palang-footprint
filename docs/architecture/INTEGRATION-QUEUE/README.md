@@ -980,3 +980,13 @@ The queue index and the timestamp case must each be read back after this update.
 3. **BOART-FOLLOWUP-03 — بازیابی بیرونی سرتاسری:** اثبات وجود نسخه‌ای مستقل خارج از مخزن، سپس بازیابی در محیط جداگانه بدون حذف مخزن تولید؛ بررسی کامل بودن معماری، شناسه‌ها، شواهد، مقصدها و کارهای باز. Status: OPEN / NOT RUN.
 
 شرط بستن هر مورد: شاهد اجرا + زمان‌های دارای منشأ + read-back + تطبیق + ثبت نتیجه و محدودیت. زمان‌های ناموجود UNKNOWN؛ موفقیت یک مورد به دو مورد دیگر تعمیم داده نمی‌شود.
+
+
+## EVT-0036 — نقطهٔ ۰.۰ جاری و اولویت بعدی
+- Anchor: [نقطهٔ ۰.۰ جاری](../../0.0/anchors/PALANG-0.0-CONTINUATION-BEHAVIOR-REGISTRATION-NEXT-AUDIT-2026-10-22-001.md)
+- Event: [EVT-0036](../BEHAVIOR-TRACE/EVT-0036-CURRENT-0.0-ANCHOR-AND-NEXT-ACTION-2026-10-22.md)
+- Independent reference: [سند مرجع کامل](../../reference/REFERENCE-DOCUMENTS/PALANG-0.0-CONTINUATION-BEHAVIOR-REGISTRATION-NEXT-AUDIT-2026-10-22-001.md)
+- Current next action: **BOART-FOLLOWUP-01 — ممیزی معماری و مرجع مادر**. کار از بازخوانی مرجع مادر، تطبیق پیوندها و شناسه‌ها و ثبت نتیجه با read-back آغاز شود.
+- سپس BOART-FOLLOWUP-02 (اتصال، نوشتن و بازیابی واقعی Dropbox) و BOART-FOLLOWUP-03 (بازیابی از نسخهٔ مستقل بیرونی در محیط جداگانه) باقی می‌مانند.
+- زمان درخواست: 2026-10-22 08:35 Asia/Tehran؛ UTC متناظر 05:05Z؛ دقت دقیقه. زمان ثبت هر فایل از commit واقعی خودش استخراج می‌شود.
+- Status: ACTIVE / LIVING; all three execution work packages remain OPEN until separately evidenced and verified.
