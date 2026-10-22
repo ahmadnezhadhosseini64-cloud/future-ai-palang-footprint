@@ -84,3 +84,11 @@ Continue collecting observable interaction and evaluator behavior as evidence-ba
 - [Independent 0.0 anchor](../../0.0/anchors/PALANG-0.0-CONTINUATION-BEHAVIOR-REGISTRATION-NEXT-AUDIT-2026-10-22-001.md)
 - [Complete living reference](../../reference/REFERENCE-DOCUMENTS/PALANG-0.0-CONTINUATION-BEHAVIOR-REGISTRATION-NEXT-AUDIT-2026-10-22-001.md)
 - Next mandatory action: architecture/master-reference audit (BOART-FOLLOWUP-01); Dropbox failover and external end-to-end recovery remain open.
+
+
+## 10. آزمون زندهٔ پایداری مقصدها — EVT-0037
+- [پروندهٔ آزمون مستقل زنده](./LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md) — `LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001`.
+- [رویداد EVT-0037](../BEHAVIOR-TRACE/EVT-0037-LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22.md).
+- نتیجه: همخوانی پیوندهای مخزن PASS با محدودیت؛ آزمون محتوایی قبلی همچنان PASS 10/10 و بی‌دلیل تکرار نشده.
+- مقصدهای Buffer، Library بیرونی، Persistent Memory و Dropbox: NOT VERIFIED؛ بازیابی سرتاسری: NOT RUN.
+- ادامه: `BOART-FOLLOWUP-01` → `BOART-FOLLOWUP-02` → `BOART-FOLLOWUP-03`.
