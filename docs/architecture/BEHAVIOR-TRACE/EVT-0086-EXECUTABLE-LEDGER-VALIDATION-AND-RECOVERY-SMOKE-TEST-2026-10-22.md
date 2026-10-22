@@ -37,3 +37,13 @@
 - Workflow: [interaction-ledger-validation.yml](../../../.github/workflows/interaction-ledger-validation.yml).
 - Fixture: [interaction-pair-ledger-smoke-test.json](./fixtures/interaction-pair-ledger-smoke-test.json).
 - نتیجهٔ اجرای workflow هنوز باید از GitHub Actions بازخوانی شود؛ تا آن زمان وضعیت آن NOT VERIFIED است.
+
+
+## نتیجهٔ آزمون CI — شواهد واقعی
+- Workflow run: [39750440075 — موفق](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39750440075).
+- Commit آزموده‌شده: [aa8f7beae0c5d3b5043686fc7c1e0a2f6f5b056f](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/aa8f7beae0c5d3b5043686fc7c1e0a2f6f5b056f).
+- آغاز workflow: UTC 2026-10-22T08:47:52Z؛ تهران 2026-10-22T12:17:52+03:30.
+- پایان/آخرین به‌روزرسانی run: UTC 2026-10-22T08:48:06Z؛ تهران 2026-10-22T12:18:06+03:30.
+- نتیجهٔ jobها: schema-validation PASS؛ recover-from-input PASS؛ recover-from-output PASS.
+- آزمون واقعیِ انجام‌شده: طرح‌واره و fixture ساختگی بررسی شدند؛ دو job جدا با checkout تازه توانستند از IN و OUT به یک زوج و lineage برسند.
+- مرز اثبات: این موفقیت، بازیابی fixture ساختگی از checkout تازه را ثابت می‌کند؛ نه cold-start یک سرویس تولیدی، نه جمع‌آوری خودکار همهٔ مکالمات، و نه ذخیره در Gmail/Library/Buffer/Memory/Dropbox.
