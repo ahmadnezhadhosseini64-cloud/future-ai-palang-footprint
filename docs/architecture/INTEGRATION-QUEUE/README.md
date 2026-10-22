@@ -1072,3 +1072,14 @@ The queue index and the timestamp case must each be read back after this update.
 
 
 | GACIB-HAIF-2026-10-22-001 | حفظ ادعای کاربر درباره اعلام قبلی محدودیت Gmail و مدل‌سازی رفتار قابل مشاهده با لنگر مستقل ۰.۰ | REPOSITORY WRITE + READ-BACK PENDING FINAL CHECK; Gmail BLOCKED/NOT SENT; other destinations unverified | سند مادر GACIB، EVT-0051، دفتر ۰.۰، پوشه رفتارشناسی تعاملی و آزمون واقعی Gmail در صورت فعال‌شدن مجاز | [سند مرجع مادر GACIB](../../reference/REFERENCE-DOCUMENTS/GMAIL-ACCESS-CLAIM-AND-INTERACTION-BEHAVIOR-LIVING-MASTER-REFERENCE-2026-10-22-001.md) |
+
+
+## PIRHA — ممیزی تاریخی و حاکمیت ثبت (2026-10-22)
+
+- Stable ID: `PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-2026-10-22-001`.
+- وضعیت: OPEN / INTEGRATION IN PROGRESS.
+- تکمیل مخزنی مورد انتظار: سند مادر PIRHA، زوج IN-009/OUT-009، رویداد EVT-0095، فایل مستقل EVT-0093، ادغام مدل HAIF نسخهٔ 1.2.0، اتصال به گراف پیوستگی، دفتر 0.0 و نمایه.
+- پذیرش ساختاری: اجرای workflow روی commit جدید، صفر لینک محلی شکسته یا ثبت و triage همهٔ موارد، خروجی قابل بازخوانی و artifact متصل به run.
+- پذیرش معنایی: طبقه‌بندی نقش همهٔ گروه‌های برخورد شناسه/EVT و تصمیم مستند برای هر رابطهٔ حل‌نشده؛ حفظ نسخه‌ها و آینه‌ها تا پایان بررسی تبار.
+- Buffer، حافظهٔ پایدار و Dropbox همچنان جداگانه تأییدنشده‌اند؛ Dropbox شاخهٔ باز مستقلی دارد.
+- این صف عمداً OPEN می‌ماند تا شواهد ممیزی واقعی به آن متصل شوند.
