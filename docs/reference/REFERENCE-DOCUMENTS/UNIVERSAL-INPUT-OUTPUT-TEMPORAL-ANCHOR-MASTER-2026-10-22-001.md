@@ -39,3 +39,10 @@ OBSERVE → ASSIGN ID → PRESERVE → CLASSIFY → PROVENANCE → TEMPORAL BIND
 
 ## گام بعدی و وضعیت مقصدها
 گام بعدی: پیاده‌سازی runtime collector مجاز و دفتر پایدار، آزمون واقعی cold-start، بازیابی INT/IN/OUT از محیط تازه، آزمون خطا و ثبت نتایج. Library, Buffer, Persistent Memory, Dropbox هنوز NOT VERIFIED؛ Gmail NOT SENT مگر رسید واقعی موجود باشد.
+
+
+## پذیرش و بازیابی
+- READ-BACK/MATCH: اسناد این نوبت و پیوندهای اصلی از مخزن بازخوانی و تطبیق شدند؛ timestampها در پابند زمانی ثبت شده‌اند.
+- [پابند زمانی UIOAM](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-UIOAM-2026-10-22-001.md) مرجع زمان commit است.
+- [لنگر ورودی](../../0.0/anchors/PALANG-0.0-IN-20261022-002-UNIVERSAL-IO-ANCHORING.md) و [لنگر خروجی](../../0.0/anchors/PALANG-0.0-OUT-20261022-002-UNIVERSAL-IO-ANCHORING.md) مستقل و جفت‌شده‌اند.
+- وضعیت خودکارسازی آینده: OPEN / NOT VERIFIED تا پیاده‌سازی و آزمون runtime collector.
