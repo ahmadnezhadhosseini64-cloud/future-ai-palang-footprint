@@ -10,7 +10,7 @@
 - Input: [IN-20261022-012](../../0.0/anchors/PALANG-0.0-IN-20261022-012-IDENTITY-COLLISION-AND-TIMESTAMP-RECONCILIATION.md)
 - Output: [OUT-20261022-012](../../0.0/anchors/PALANG-0.0-OUT-20261022-012-IDENTITY-COLLISION-AND-TIMESTAMP-RECONCILIATION.md)
 - Event: [EVT-0099](../../architecture/BEHAVIOR-TRACE/EVT-0100-IDENTITY-COLLISION-AND-EVT-0089-TIMESTAMP-RECONCILIATION-2026-10-22.md)
-- Time binding: [TIME-BINDING-INT-20261022-012](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-012.md)
+- Time binding evidence: recorded in Section 11 of this master; separate time-binding file creation was blocked, so no separate file is claimed.
 - Exact user-message time: NOT CAPTURED.
 - Canonical repository time: actual commit timestamp in UTC; Tehran equivalent is calculated from that same instant at UTC+03:30.
 
@@ -82,3 +82,22 @@ If this is the only available document:
 
 ## 10. Version history
 - v1.0.0: initial registration of this forensic reconciliation contract; reported audit counts preserved as inherited evidence, not claimed as freshly verified.
+
+
+## 11. Repository time anchors and timestamp correction boundary
+
+| Artifact | Commit SHA | UTC | Tehran equivalent |
+|---|---|---|---|
+| Input anchor IN-012 | `411739e3b395e9f7bb0f98e4a2c97e8059507cd5` | 2026-10-22T16:04:36Z | 2026-10-22T19:34:36+03:30 |
+| Output anchor OUT-012 | `27cf94a34da58ce8d195aa5f472cc0dbc85820e1` | 2026-10-22T16:04:42Z | 2026-10-22T19:34:42+03:30 |
+| Master initial registration | `62827ec2d7e32a2aaeee34ab9046825867f042c2` | 2026-10-22T16:04:47Z | 2026-10-22T19:34:47+03:30 |
+| EVT-0100 registration | `3485d82a0a37fe26b3c992981765e40989e49bb8` | 2026-10-22T16:06:14Z | 2026-10-22T19:36:14+03:30 |
+| Master event-link update | `9fd0c3e276a4a44029f27b71233cd9e26a44bf54` | 2026-10-22T16:06:38Z | 2026-10-22T19:36:38+03:30 |
+
+All table times are actual Git commit timestamps. They do not represent the exact user-message time.
+
+### EVT-0089 timestamp: evidence-based proposal, not applied
+- Original audit finding: line 21 contains `2026-10-22 14:28` without a reliable timezone label in the local context inspected by the parser.
+- Other existing EVT-0089 context states the conversation-observed time was `2026-10-22 14:28` Asia/Tehran (+03:30), minute precision. Seconds are not captured.
+- Proposed source-faithful representation: `2026-10-22 14:28 Asia/Tehran (+03:30), minute precision; seconds NOT CAPTURED`.
+- The write to the original EVT-0089 file was blocked; therefore the original text remains unchanged and the semantic audit still reports this item as unresolved. Do not claim resolution until a permitted edit is applied and a fresh audit confirms zero ambiguous items.
