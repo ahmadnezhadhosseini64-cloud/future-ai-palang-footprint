@@ -91,3 +91,6 @@
 - [EVT-0095](../BEHAVIOR-TRACE/EVT-0095-INTERACTION-GOVERNANCE-AND-HISTORICAL-AUDIT-2026-10-22.md).
 - رویداد مستقل تاریخی [EVT-0093](../BEHAVIOR-TRACE/EVT-0093-REGISTRATION-CONTINUATION-2026-10-22.md) اکنون فایل مستقل دارد؛ بازخوانی آن شرط پذیرش باقی است.
 - وضعیت: جای‌گذاری مستند انجام شد؛ ممیزی ساختاری تازه و تطبیق معنایی کامل هنوز باید با شواهد اجرا تأیید شوند.
+
+- پابند زمانی PIRHA: [TIME-BINDING-PIRHA-2026-10-22-001](../BEHAVIOR-TRACE/TIME-BINDING-PIRHA-2026-10-22-001.md).
+- لنگر ادامه: [PALANG-0.0-PIRHA-HISTORICAL-AUDIT-CONTINUATION-2026-10-22-001](../../0.0/anchors/PALANG-0.0-PIRHA-HISTORICAL-AUDIT-CONTINUATION-2026-10-22-001.md).
