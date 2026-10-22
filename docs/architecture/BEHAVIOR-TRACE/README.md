@@ -306,3 +306,10 @@
 - EVT-0075: EVT-0075-ASSISTANT-OUTPUT-TIMESTAMP-SEMANTIC-AUDIT-AND-HOST-ADAPTER-2026-10-21.md
 - سند مادر: ../../reference/REFERENCE-DOCUMENTS/SEMANTIC-TIMESTAMP-AUDIT-AND-HOST-CAPTURE-RECOVERY-MASTER-REFERENCE-2026-10-21-001.md
 - وضعیت: مخزن و کد receiver/worker ثبت شده؛ آزمون مصنوعی PASS؛ ممیزی workflow باید با artifact بازخوانی شود؛ اتصال producer زنده OPEN / NOT PROVEN.
+
+
+## EVT-0041 — UTC input-to-output living anchor
+- [EVT-0041](./EVT-0041-UTC-INPUT-OUTPUT-LIVING-ANCHOR-2026-10-22.md): user input, assistant output protocol, timestamp distinctions and future behavior governance.
+- 0.0: [PALANG-0.0-UTC-INPUT-TO-OUTPUT-BEHAVIOR-ANCHOR-2026-10-22-001](../../0.0/anchors/PALANG-0.0-UTC-INPUT-TO-OUTPUT-BEHAVIOR-ANCHOR-2026-10-22-001.md).
+- Reference: [UILA living governance](../../reference/REFERENCE-DOCUMENTS/UTC-INPUT-TO-OUTPUT-INTERACTION-ANCHOR-LIVING-GOVERNANCE-2026-10-22-001.md).
+- Status ACTIVE / LIVING / OPEN / EVOLVABLE; input/output host timestamps and internal thinking duration remain unmeasured when not exposed. Gmail remains BLOCKED / NOT VERIFIED.
