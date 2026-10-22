@@ -25,3 +25,17 @@
 - Exact assistant-generation timestamp: NOT EXPOSED.
 - These commit timestamps establish repository registration only; they are not substituted for message or generation time.
 - When an artifact is modified later, its canonical repository time becomes that actual later commit timestamp; retain this ledger as historical evidence and append a new row/addendum rather than erasing prior timestamps.
+
+
+## Later-change timestamps — append-only reconciliation
+These timestamps are the actual later commits that changed the named artifacts; the initial-registration rows above remain historical evidence.
+
+| Artifact / later change | Commit | Repository UTC | Asia/Tehran equivalent |
+|---|---|---|---|
+| EVT-0103 read-back reconciliation | [1fc9ae0](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/1fc9ae0cbd78d83a957409ce7231a4434e8f2f49) | 2026-10-22T18:13:07Z | 2026-10-22T21:43:07+03:30 |
+| Inbox item 002 read-back verification | [950ee9a](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/950ee9afad54a5776bf813c33571e48a22ac4ba0) | 2026-10-22T18:13:18Z | 2026-10-22T21:43:18+03:30 |
+| UPRM master time link | [0f0fe4c](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/0f0fe4c9c26bc1dd1825188d12aff8f8ad72c9c8) | 2026-10-22T18:13:42Z | 2026-10-22T21:43:42+03:30 |
+| LBAF master time link | [6ed719d](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/6ed719d30900713ee4ce86b3fdd98abd5e30bdcf) | 2026-10-22T18:13:52Z | 2026-10-22T21:43:52+03:30 |
+| CMIND master time link | [fe164a1](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/fe164a1333de36007fb9b1e10ac684aceecde6a3) | 2026-10-22T18:14:00Z | 2026-10-22T21:44:00+03:30 |
+
+The exact user-message time and assistant-generation time remain unavailable. No repository timestamp is substituted for either.
