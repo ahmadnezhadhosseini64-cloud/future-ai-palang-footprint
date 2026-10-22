@@ -104,3 +104,10 @@
 - پذیرش کامل تاریخی هنوز باز است؛ نسخه‌گذاری به‌تنهایی نتیجهٔ ممیزی نیست.
 
 - پابند زمانی: [TIME-BINDING-INT-20261022-010](../BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-010.md).
+
+
+## نسخهٔ 1.3.1 — دروازهٔ پذیرش
+
+- معماری مادر HAIF: [نسخهٔ 1.3.1](سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md).
+- سند حاکم ثبت: [PIRHA نسخهٔ 1.2.0](../../reference/REFERENCE-DOCUMENTS/PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001.md).
+- شکاف جاری: `GAP-PIRHA-ACCEPTANCE-GATE-001` — دروازهٔ پذیرش واحد برای هر تعامل.
