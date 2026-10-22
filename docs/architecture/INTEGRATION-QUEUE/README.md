@@ -998,3 +998,12 @@ The queue index and the timestamp case must each be read back after this update.
 - سپس BOART-FOLLOWUP-02 (اتصال، نوشتن و بازیابی واقعی Dropbox) و BOART-FOLLOWUP-03 (بازیابی از نسخهٔ مستقل بیرونی در محیط جداگانه) باقی می‌مانند.
 - زمان درخواست: 2026-10-22 08:35 Asia/Tehran؛ UTC متناظر 05:05Z؛ دقت دقیقه. زمان ثبت هر فایل از commit واقعی خودش استخراج می‌شود.
 - Status: ACTIVE / LIVING; all three execution work packages remain OPEN until separately evidenced and verified.
+
+
+## پیگیری زندهٔ آزمون پایداری مقصدها — 2026-10-22
+- Test ID: `LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001`.
+- Event: [EVT-0037](../BEHAVIOR-TRACE/EVT-0037-LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22.md).
+- Test record: [آزمون زندهٔ پایداری مقصدها](../BEHAVIOR-OBSERVATORY/LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md).
+- Status: ACTIVE / LIVING / OPEN — cross-reference audit PASS with limits; external destination stability is NOT VERIFIED.
+- Next mandatory sequence: `BOART-FOLLOWUP-01` master/graph reconciliation; `BOART-FOLLOWUP-02` Dropbox write/read-back; `BOART-FOLLOWUP-03` isolated external recovery.
+- Do not repeat the previous PASS 10/10 content recovery test without a new reason; preserve its result and test only the new gap.
