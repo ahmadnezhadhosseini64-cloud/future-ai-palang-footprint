@@ -128,3 +128,8 @@ Continue collecting observable interaction and evaluator behavior as evidence-ba
 - The mirror workflow is now backed by a daily scheduled automation (`Palang Mirror Sync`, ID `6ad9a407b9d481919c7145fbe4638dec`, timezone `Asia/Tehran`). It is not a continuous always-on watcher; each scheduled run must provide its own evidence.
 - The Library audit mirror was updated and independently read back with controller and automation identifiers present.
 - This does not verify Buffer, Persistent Memory or Dropbox.
+
+## ثبت Gmail — EVT-0039
+- [سند حاکم ثبت همهٔ مقصدها](../../reference/REFERENCE-DOCUMENTS/PALANG-GMAIL-AND-ALL-DESTINATION-REGISTRATION-GOVERNANCE-2026-10-22-001.md).
+- [رویداد شکاف Gmail](../BEHAVIOR-TRACE/EVT-0039-GMAIL-REFERENCE-REGISTRATION-GAP-2026-10-22.md).
+- وضعیت فعلی: Gmail/Google Drive توسط مدیر غیرفعال؛ ارسال یا بازخوانی ایمیل انجام نشده. اقدام `GMAIL-CONNECTION-AND-READBACK-01` باز و فعال است.
