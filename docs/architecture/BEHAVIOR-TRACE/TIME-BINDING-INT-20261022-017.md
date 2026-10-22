@@ -25,3 +25,14 @@ Current 0.0 anchor → IN/OUT-017 → EVT-0105 → INBOX-20261022-004 → CMIND 
 
 ## Status boundary
 Timestamp binding records repository commit evidence only. Read-back verification for this time-binding file must be completed after it is created. Runtime implementation and production host-wide capture remain OPEN / NOT PROVEN.
+
+
+## Later link-reconciliation commits (separate repository-change events)
+These later commits add direct links to the time-binding file; they do not change the original creation times listed above.
+
+| Updated artifact | Commit | UTC | Asia/Tehran equivalent |
+|---|---|---|---|
+| Current 0.0 anchor — time-binding link | [fdea1bc](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/fdea1bc833798da737ba1dcb6e56c7a9a9af9f96) | 2026-10-22T18:47:47Z | 2026-10-22T22:17:47+03:30 |
+| EVT-0105 — time-binding link | [3bf1401](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/3bf14017ed7daedb1fd0af81c688d35b2d8485e3) | 2026-10-22T18:47:53Z | 2026-10-22T22:17:53+03:30 |
+| CMIND master — time-binding link | [b89dc76](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/b89dc76697027e5406c2b6f3ac77083e06473db1) | 2026-10-22T18:47:59Z | 2026-10-22T22:17:59+03:30 |
+| Time-binding file initial registration | [7bf6528](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/7bf6528e055eedba938a4da9c3927898133543c9) | 2026-10-22T18:47:27Z | 2026-10-22T22:17:27+03:30 |
