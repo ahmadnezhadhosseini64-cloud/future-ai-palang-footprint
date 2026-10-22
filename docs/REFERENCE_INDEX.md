@@ -524,3 +524,11 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - [لنگر مستقل بازیابی](0.0/anchors/PALANG-0.0-INTERACTION-RECOVERY-2026-10-22-001.md).
 - [پابند زمانی](architecture/BEHAVIOR-TRACE/TIME-BINDING-ELVR-2026-10-22-001.md).
 - [CI run 39750440075 — SUCCESS](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39750440075).
+
+
+## LBAF — سند مرجع مادر معماری رفتارشناسی زنده و آینده‌پژوهی
+- [LBAF Master Reference](reference/REFERENCE-DOCUMENTS/LIVING-BEHAVIOR-ARCHITECTURE-FORESIGHT-MASTER-REFERENCE-2026-10-22-001.md).
+- [EVT-0088](architecture/BEHAVIOR-TRACE/EVT-0088-CURRENT-ANCHOR-LIVING-BEHAVIOR-ARCHITECTURE-AND-FUTURE-FORESIGHT-GOVERNANCE-2026-10-22.md).
+- [نقطهٔ جاری ۰.۰](0.0/anchors/PALANG-0.0-CURRENT-LIVING-BEHAVIOR-ARCHITECTURE-2026-10-22-001.md) و [گام بعدی ۰.۰](0.0/anchors/PALANG-0.0-RUNTIME-COLLECTOR-PRODUCTION-RECOVERY-2026-10-22-001.md).
+- اتصال به FIOBAM، AOGM، ELVR و معماری اولیه ثبت شده؛ آینده‌پژوهی به‌عنوان نقشهٔ راه نسخه‌دار اضافه شده است.
+- گام بعدی اجرایی: issue #20، پیاده‌سازی runtime collector و اثبات cold-start واقعی.
