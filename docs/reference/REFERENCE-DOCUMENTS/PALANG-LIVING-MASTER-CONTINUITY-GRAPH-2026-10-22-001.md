@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `PALANG-LIVING-MASTER-CONTINUITY-GRAPH-2026-10-22-001`
 - Production ID / شناسهٔ تولید: `PLMCG-2026-10-22-001`
-- Version / نسخه: 1.0.0
+- Version / نسخه: 1.0.1
 - Owner / مالک: احمد پلنگ (Ahmad Nezhadhosseini)
 - Project / پروژه: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
 - Architecture / معماری: HAIF — Human–AI Interaction Future (آیندهٔ تعامل انسان و هوش مصنوعی)
@@ -166,3 +166,17 @@
 4. هیچ نقطهٔ تاریخی را حذف یا ادغام نکن؛ پیوندهای جدید را با شاهد ثبت کن.
 5. بعد از هر نوشتن، بازخوانی و تطبیق انجام بده.
 6. وضعیت مخزن، بافر، کتابخانه، حافظهٔ پایدار و Dropbox را جداگانه اعلام کن.
+
+
+## الحاقیهٔ زنده 1.0.1 — بازخورد مثبت جاری و چرخهٔ یادگیری (2026-10-22)
+
+- سند مرجع مادر: [PALANG-POSITIVE-FEEDBACK-LEARNING](./PALANG-POSITIVE-FEEDBACK-AND-INTERACTION-LEARNING-MASTER-REFERENCE-2026-10-22-001.md).
+- رویداد رفتاری: [EVT-0090](../../architecture/BEHAVIOR-TRACE/EVT-0090-PALANG-POSITIVE-FEEDBACK-AND-INTERACTION-LEARNING-2026-10-22.md).
+- زوج تعامل: `INT-20261022-003`; ورودی `IN-20261022-003`; خروجی `OUT-20261022-003`.
+- لنگر ورودی: [IN-20261022-003](../../0.0/anchors/PALANG-0.0-IN-20261022-003-POSITIVE-FEEDBACK.md).
+- لنگر خروجی: [OUT-20261022-003](../../0.0/anchors/PALANG-0.0-OUT-20261022-003-FEEDBACK-REGISTRATION.md).
+- بازخورد تاریخی مرتبط: [EVT-0025](../../architecture/BEHAVIOR-TRACE/EVT-0025-INTERACTION-ANCHOR-AND-AUDIT-REASONING-2026-10-20.md)؛ این رکورد مربوط به 2026-10-20 است و نباید با بازخورد جاری یکی گرفته شود.
+- مشاهدهٔ تازه: کاربر رضایت از همین مکالمه و مفیدبودن آن را اعلام کرد. علت دقیق رضایت، زمان دقیق پیام و اثر علّی هر ویژگی پاسخ UNKNOWN / NOT CAPTURED هستند.
+- قاعدهٔ رشد: بازخورد به‌عنوان مشاهدهٔ مستند وارد چرخه می‌شود؛ ارتقای آن به قاعدهٔ عمومی نیازمند نمونه‌های تکرارشونده و آزمون انتقال است.
+- زمان دقیق پیام کاربر: NOT EXPOSED. زمان مرجع ثبت این الحاقیه باید از commit واقعی آن در UTC گرفته شود و معادل تهران از همان لحظه محاسبه شود.
+- این الحاقیه ادعای فعال‌بودن گردآوری خودکار همهٔ مکالمات یا تأیید Buffer / Library / Persistent Memory / Dropbox نیست.
