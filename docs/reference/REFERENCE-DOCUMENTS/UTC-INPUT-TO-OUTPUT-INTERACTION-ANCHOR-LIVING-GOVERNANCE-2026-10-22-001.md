@@ -80,3 +80,11 @@ Meaning: recover candidate record → identify it → validate source and versio
 2. Add the reference to the Library if the file can be materialized and upload succeeds; then read it back independently.
 3. Continue `GMAIL-CONNECTION-AND-READBACK-01` only when authorized email access is available.
 4. Keep unresolved destination states visible; do not report full multi-destination completion prematurely.
+
+
+## 11. ثبت و بازخوانی واقعی این نسخه — EVT-0041
+- Repository write/read-back/match: PASS؛ سند مرجع، EVT-0041، لنگر ۰.۰، نمایهٔ ۰.۰، صف یکپارچه‌سازی، نمایهٔ رخدادها و سند مادر پس از ثبت مستقل بازخوانی شدند و شناسه‌ها/پیوندهای اصلی تطبیق داده شدند.
+- زمان ایجاد اولیهٔ این سند: UTC `2026-10-22T06:38:28Z`; معادل تهران `2026-10-22 10:08:28`.
+- آخرین تغییر این سند باید بر اساس metadata آخرین commit همین فایل تفسیر شود؛ UTC مرجع است و زمان تهران از همان لحظه مشتق می‌شود.
+- Library mirror: تلاش بارگذاری شکست خورد چون نشست فایل محلی منقضی شد (`container session expired`); بنابراین این سند جدید در Library تأییدشده نیست.
+- Gmail: `BLOCKED / NOT VERIFIED`; هیچ ایمیلی ارسال یا از Gmail بازخوانی نشده است. `GMAIL-CONNECTION-AND-READBACK-01` همچنان باز است.
