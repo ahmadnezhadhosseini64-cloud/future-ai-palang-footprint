@@ -221,3 +221,10 @@
 - Destination state: Repository evidence available; Buffer, external Library, Persistent Memory, Dropbox NOT VERIFIED; isolated external end-to-end recovery NOT RUN.
 - Active continuation: `BOART-FOLLOWUP-01` architecture/master-reference and historical graph reconciliation; then Dropbox write/retrieve and isolated recovery.
 - State rule: ACTIVE / LIVING means the work remains active and recoverable, not that every destination is verified.
+
+## 20. ثبت Gmail و تمام مقصدها — EVT-0039
+- سند حاکم: [PALANG-GMAIL-AND-ALL-DESTINATION-REGISTRATION-GOVERNANCE-2026-10-22-001](./PALANG-GMAIL-AND-ALL-DESTINATION-REGISTRATION-GOVERNANCE-2026-10-22-001.md).
+- رویداد مستقل: [EVT-0039](../../architecture/BEHAVIOR-TRACE/EVT-0039-GMAIL-REFERENCE-REGISTRATION-GAP-2026-10-22.md).
+- کاربر یادآوری کرد که اسناد و مراحل پیش‌تر در Gmail هم ثبت می‌شدند. این سابقهٔ مورد اشاره حفظ شد.
+- بررسی اتصال فعلی: Gmail و Google Drive `DISABLED_BY_ADMIN / NOT_AVAILABLE`. ارسال/ذخیره/بازخوانی Gmail در این اجرا انجام نشده؛ وضعیت `BLOCKED / NOT VERIFIED`.
+- اقدام فعال: `GMAIL-CONNECTION-AND-READBACK-01`؛ پس از اتصال مجاز باید سند کامل ارسال/ذخیره و از همان مقصد بازخوانی شود. تا آن زمان هیچ ادعای ثبت Gmail داده نمی‌شود.
