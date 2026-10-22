@@ -112,3 +112,13 @@ Feedback / بازخورد انسان و آزمون‌ها به چرخه برمی
 - Add entity RegistrationAttempt (تلاش ثبت): attempt_id, destination, operation, started_at_utc, completed_at_utc, result, blocked_reason, evidence_ref, readback_ref, retry_condition, next_action.
 - Separate handled vs succeeded: «بررسی/رسیدگی شد» به معنی «عمل موفق شد» نیست. Gmail remains BLOCKED / NOT SENT.
 - Acceptance test: create one attempt per destination, read it back, and verify the blocker remains visible after restart.
+
+
+## 13. مدل رفتارشناسی زوج ورودی/خروجی — EVT-0083
+- رویداد: [EVT-0083](../BEHAVIOR-TRACE/EVT-0083-FIRST-INTERACTION-BEHAVIOR-ANALYSIS-AND-IO-NAMING-MODEL-2026-10-22.md).
+- سند مرجع زنده: [IBIO — رفتارشناسی نخستین ورودی/خروجی و نام‌گذاری](../../reference/REFERENCE-DOCUMENTS/FIRST-INTERACTION-BEHAVIOR-ANALYSIS-AND-IO-NAMING-LIVING-REFERENCE-2026-10-22-001.md).
+- لنگر مستقل: [PALANG-0.0-FIRST-IO-BEHAVIOR-MODEL-2026-10-22-001](../../0.0/anchors/PALANG-0.0-FIRST-IO-BEHAVIOR-MODEL-2026-10-22-001.md).
+- Naming model / مدل نام‌گذاری: `INT-YYYYMMDD-NNN` برای زوج تعامل، `IN-YYYYMMDD-NNN` برای ورودی و `OUT-YYYYMMDD-NNN` برای خروجی؛ هر زوج NNN مشترک دارد.
+- Numbering safety / ایمنی شماره‌گذاری: پیش از تخصیص EVT مخزن جست‌وجو شود؛ شمارهٔ تکراری ممنوع؛ شمارندهٔ واقعی تا پیاده‌سازی runtime به‌صورت خودکار تضمین‌شده نیست.
+- Behavior pipeline / خط لولهٔ رفتار: CAPTURE → CLASSIFY → PAIR → IDENTIFY → PROVENANCE → TEMPORAL ANCHOR → EVIDENCE → WRITE → READ-BACK → MATCH → VERIFY → RECONCILE → RESUME → LEARN.
+- این سند معماری است، نه اثبات اینکه دریافت/شماره‌گذاری خودکار تمام پیام‌ها در runtime پیاده‌سازی شده است.
