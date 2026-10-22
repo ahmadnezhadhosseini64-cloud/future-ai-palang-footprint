@@ -41,3 +41,11 @@
 
 ## قاعدهٔ حفظ
 این نقطه OPEN می‌ماند تا معیارهای بالا با شواهد اجرا شوند. هر بازگشت باید از همین سند و دفتر نقاط شروع شود؛ کاربر نباید مجبور به بازگویی نیت و مسیر باشد. نوشتن به‌تنهایی اثبات بازیابی نیست؛ پس از نوشتن، بازخوانی، تطبیق و تأیید لازم است.
+
+
+## الحاقیهٔ زنده — بازخورد مثبت مکالمهٔ جاری
+- زوج تعامل: `INT-20261022-003`; ورودی: [IN-20261022-003](../../docs/0.0/anchors/PALANG-0.0-IN-20261022-003-POSITIVE-FEEDBACK.md); خروجی: [OUT-20261022-003](../../docs/0.0/anchors/PALANG-0.0-OUT-20261022-003-FEEDBACK-REGISTRATION.md).
+- رویداد: [EVT-0090](../../docs/architecture/BEHAVIOR-TRACE/EVT-0090-PALANG-POSITIVE-FEEDBACK-AND-INTERACTION-LEARNING-2026-10-22.md).
+- سند مرجع مادر: [بازخورد مثبت و یادگیری از تعامل](../../docs/reference/REFERENCE-DOCUMENTS/PALANG-POSITIVE-FEEDBACK-AND-INTERACTION-LEARNING-MASTER-REFERENCE-2026-10-22-001.md).
+- گام بعدی: بازخوانی و تطبیق فایل‌ها، ثبت metadata واقعی commit به UTC و زمان متناظر تهران، و حفظ وضعیت مقصدهای بیرونی به‌صورت مستقل.
+- زمان دقیق پیام کاربر: NOT EXPOSED / NOT CAPTURED.
