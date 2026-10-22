@@ -48,3 +48,7 @@ Buffer: NOT VERIFIED.
 Persistent Memory: NOT VERIFIED.
 Gmail: NOT SENT / BLOCKED.
 Dropbox: OPEN / NOT VERIFIED.
+
+
+## مدرک مستقل زمان
+- [EVT-0089-TIMESTAMP-READBACK](../../architecture/BEHAVIOR-TRACE/EVT-0089-TIMESTAMP-READBACK-2026-10-22-001.md) — شواهد زمان commit برای رویداد، لنگرهای IN/OUT و سند مادر.
