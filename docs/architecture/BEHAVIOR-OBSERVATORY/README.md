@@ -103,3 +103,9 @@ Continue collecting observable interaction and evaluator behavior as evidence-ba
 - نتیجهٔ همان فایل: `WRITE=PASS / READ-BACK=PASS / MATCH=PASS`.
 - فرادادهٔ آخرین تغییر Library: UTC `2026-10-22T05:50:28.914450Z` = تهران `2026-10-22 09:20:28.914450`.
 - این وضعیت فقط همین آینه را تأیید می‌کند؛ Buffer و Persistent Memory تأییدنشده، Dropbox باز/تأییدنشده، بازیابی بیرونی اجرا‌نشده است. همگام‌سازی خودکار پس‌زمینه ادعا نمی‌شود.
+
+## 13. کنترل‌گر همگام‌سازی زندهٔ آینه — EVT-0038
+- [کنترل‌گر آینه](./PALANG-MIRROR-SYNC-CONTROLLER-2026-10-22-001.md) — `PALANG-MIRROR-SYNC-CONTROLLER-2026-10-22-001`.
+- [رویداد فعال‌سازی و بازخوانی](../BEHAVIOR-TRACE/EVT-0038-PALANG-MIRROR-SYNC-ACTIVATION-2026-10-22.md).
+- اتوماسیون روزانه `Palang Mirror Sync` فعال است؛ هر اجرای آینده باید مقایسه و بازخوانی مستقل را ثبت کند.
+- Library برای فایل آزمون مشخص بازخوانی شده است؛ Buffer و Persistent Memory تأییدنشده‌اند؛ Dropbox باز/تأییدنشده است.
