@@ -31,3 +31,11 @@ Input/output anchors → DTRC living master → event trace → HAIF mother-mode
 ## Evidence boundary
 
 This event is a repository record. It does not itself prove runtime automation, Buffer/Persistent Memory/Dropbox persistence, full historical-link audit, or improved model performance. Those require separate implementation/tests and evidence.
+
+
+## نتیجهٔ ثبت و جای‌گذاری معماری
+- لنگرهای IN-008 و OUT-008 و سند مادر DTRC ثبت و بازخوانی شدند.
+- مدل مادر HAIF به نسخهٔ 1.1.0 به‌صورت افزایشی به‌روزرسانی شد؛ README پوشهٔ مدل و گراف پیوستگی (1.0.2) به‌روز شدند.
+- دفتر 0.0 و نمایهٔ مرجع به‌روزرسانی شدند و لنگر ادامه ساخته شد: `docs/0.0/anchors/PALANG-0.0-DTRC-ARCHITECTURE-CONTINUATION-2026-10-22-001.md`.
+- پابند زمانی: `docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-DTBA-2026-10-22-001.md`.
+- وضعیت: ثبت مخزن و جای‌گذاری معماری انجام شد؛ آزمون runtime DTRC، ممیزی تک‌به‌تک همهٔ پیوندها و آزمون Dropbox همچنان باز هستند.
