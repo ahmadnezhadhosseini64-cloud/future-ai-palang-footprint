@@ -1000,3 +1000,9 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - خروجی: [OUT-20261022-005](./anchors/PALANG-0.0-OUT-20261022-005-CONTINUE-MODEL-INITIAL.md).
 - وضعیت: ACTIVE / LIVING / OPEN. مسیر هدف، مدل اولیه و دفتر تعامل است؛ Dropbox مستقل و OPEN / WAITING باقی می‌ماند.
 - اقدام بعدی: توسعه و آزمون runtime collector و cold-start در [Issue #20](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/20).
+
+
+### CMIND verification update — 2026-10-22
+- HAIF Prototype Tests `39824020260` / job `119982395261`: SUCCESS; `16 passed, 1 warning, 0 failed`.
+- This verifies the local prototype code/test scope only; the production collector and external destinations remain open.
+- Detailed UTC/Tehran time binding: [TIME-BINDING-CMIND](../architecture/BEHAVIOR-TRACE/TIME-BINDING-CMIND-2026-10-22-001.md).
