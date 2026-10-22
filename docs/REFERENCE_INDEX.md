@@ -589,3 +589,14 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 
 - پابند زمانی DTRC: `docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-DTBA-2026-10-22-001.md` — UTC مرجع و زمان تهران مشتق‌شده.
 - لنگر ادامهٔ ۰.۰: `docs/0.0/anchors/PALANG-0.0-DTRC-ARCHITECTURE-CONTINUATION-2026-10-22-001.md`.
+
+
+## 2026-10-22 — PIRHA: حاکمیت ثبت تعاملی و ممیزی تاریخی
+
+| ID | Document | Role | Status |
+|---|---|---|---|
+| PIRHA-2026-10-22-001 | `docs/reference/REFERENCE-DOCUMENTS/PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001.md` | سند مرجع مادر زنده برای ترتیب ثبت، رفتارشناسی و ممیزی تاریخی | ACTIVE / LIVING / OPEN |
+| EVT-0095 | `docs/architecture/BEHAVIOR-TRACE/EVT-0095-INTERACTION-GOVERNANCE-AND-HISTORICAL-AUDIT-2026-10-22.md` | رویداد جاری | Registered; read-back required |
+| EVT-0093 | `docs/architecture/BEHAVIOR-TRACE/EVT-0093-REGISTRATION-CONTINUATION-2026-10-22.md` | فایل مستقل رویداد تاریخی که قبلاً فقط به آن ارجاع شده بود | Created; read-back required |
+| INT-20261022-009 | `docs/0.0/anchors/PALANG-0.0-IN-20261022-009-INTERACTION-GOVERNANCE-AND-AUDIT.md` + `docs/0.0/anchors/PALANG-0.0-OUT-20261022-009-INTERACTION-GOVERNANCE-AND-AUDIT.md` | زوج مستقل ورودی/خروجی | Registered; read-back required |
+| HAIF v1.2.0 | `docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md` | ادغام افزایشی PIRHA در معماری مادر | Updated; read-back required |
