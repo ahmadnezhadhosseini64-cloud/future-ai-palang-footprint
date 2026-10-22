@@ -33,3 +33,11 @@
 
 ## گام بعدی
 بازخوانی نتیجهٔ GitHub Actions؛ در صورت موفقیت، ثبت شناسه و timestamp واقعی اجرای workflow. سپس ساخت دفتر پایدار و آزمون مستقل بازیابی پس از شروع مجدد.
+
+
+## نتیجهٔ راستی‌آزمایی پس از ایجاد لنگر
+- [CI run 39750440075](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39750440075) با وضعیت SUCCESS بازخوانی شد.
+- schema-validation، recover-from-input و recover-from-output هر سه موفق شدند.
+- زمان workflow: آغاز UTC 2026-10-22T08:47:52Z / تهران 12:17:52؛ پایان UTC 2026-10-22T08:48:06Z / تهران 12:18:06.
+- این نتیجه، آزمون fixture ساختگی و checkout تازه است؛ cold-start سرویس واقعی و شکارچی خودکار هنوز تأیید نشده‌اند.
+- این الحاقیه لنگرهای قبلی را جایگزین نمی‌کند.
