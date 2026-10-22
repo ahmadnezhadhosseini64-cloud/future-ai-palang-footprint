@@ -6,7 +6,7 @@
 - Date / تاریخ: 2026-10-22
 - Exact user-message time / زمان دقیق پیام: NOT CAPTURED / ثبت نشده؛ حدس زده نمی‌شود.
 - Status / وضعیت: ACTIVE / LIVING / OPEN
-- Master / سند مادر: [گراف پیوستگی زنده](../../docs/reference/REFERENCE-DOCUMENTS/PALANG-LIVING-MASTER-CONTINUITY-GRAPH-2026-10-22-001.md)
+- Master / سند مادر: [گراف پیوستگی زنده](../docs/reference/REFERENCE-DOCUMENTS/PALANG-LIVING-MASTER-CONTINUITY-GRAPH-2026-10-22-001.md)
 - Paired 0.0 / نقطهٔ ۰.۰ جفت: [لنگر ازسرگیری جاری](./PALANG-0.0-LIVING-CONTINUITY-GRAPH-2026-10-22-001.md)
 - Repository / مخزن: `ahmadnezhadhosseini64-cloud/future-ai-palang-footprint`
 
