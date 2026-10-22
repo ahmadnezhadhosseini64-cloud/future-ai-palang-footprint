@@ -32,3 +32,11 @@
 
 ## گام بعدی
 بازخوانی همهٔ فایل‌های ثبت‌شده، تأیید پیوندها، ارتقای نسخهٔ معماری و حاکمیت ثبت، و ثبت رویداد و پابند زمانی. در صورت شکست هر مرحله، وضعیت همان مرحله OPEN/FAILED/PENDING باقی می‌ماند.
+
+
+## ثبت مخزن و معماری — پیوندهای نهایی
+- Master standard: [SCEMRS v1.0.0](../../reference/REFERENCE-DOCUMENTS/PALANG-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE-STANDARD-2026-10-22-001.md).
+- Event trace: [EVT-0098](../../architecture/BEHAVIOR-TRACE/EVT-0098-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE-AND-OWNER-APPROVAL-2026-10-22.md).
+- Governance master updated to PIRHA v1.5.0: [PIRHA](../../reference/REFERENCE-DOCUMENTS/PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001.md).
+- Architecture master updated to HAIF v1.3.4: [HAIF](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md).
+- Acceptance status until independent read-back: `WRITTEN / PENDING READ-BACK`; do not infer external AI transfer or app execution.
