@@ -401,3 +401,11 @@
 - [EVT-0090](./EVT-0090-PALANG-POSITIVE-FEEDBACK-AND-INTERACTION-LEARNING-2026-10-22.md).
 - سند مرجع مادر: [PALANG-POSITIVE-FEEDBACK-LEARNING](../../reference/REFERENCE-DOCUMENTS/PALANG-POSITIVE-FEEDBACK-AND-INTERACTION-LEARNING-MASTER-REFERENCE-2026-10-22-001.md).
 - زوج تعامل: `INT-20261022-003`; لنگرهای مستقل IN/OUT در پوشهٔ ۰.۰.
+
+
+## EVT-0091 — ادامه از مدل اولیه، نه شاخهٔ Dropbox
+- [رویداد EVT-0091](./EVT-0091-CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-2026-10-22.md).
+- [سند مرجع مادر CMIND](../../reference/REFERENCE-DOCUMENTS/CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-MASTER-REFERENCE-2026-10-22-001.md).
+- زوج تعامل: `INT-20261022-005`؛ [IN](../../0.0/anchors/PALANG-0.0-IN-20261022-005-CONTINUE-MODEL-INITIAL.md) / [OUT](../../0.0/anchors/PALANG-0.0-OUT-20261022-005-CONTINUE-MODEL-INITIAL.md).
+- درس رفتارشناسی: شاخهٔ باز لزوماً هدف فعال نیست؛ آخرین نقطهٔ ادامه و درخواست صریح کاربر بر انتخاب مسیر حاکم‌اند.
+- اقدام بعدی: پیاده‌سازی دفتر زوج‌های تعامل در نمونهٔ اجرایی و آزمون بازیابی از INT/IN/OUT پس از شروع مجدد؛ Issue #20.
