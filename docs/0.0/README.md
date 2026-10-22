@@ -757,3 +757,10 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - Daily flexible automation `Palang Mirror Sync` is enabled (ID `6ad9a407b9d481919c7145fbe4638dec`, timezone `Asia/Tehran`).
 - This addition preserves all previous 0.0 anchors; it does not replace or close them.
 - The Library mirror for the live audit was independently read back. Buffer/Persistent Memory remain NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external recovery NOT RUN.
+
+## فرایند زندهٔ همگام‌سازی آینه — EVT-0038
+- سیاست: [MIRROR-SYNC-GOVERNANCE-AND-LIVE-REGISTRATION-2026-10-22-001](../architecture/BEHAVIOR-OBSERVATORY/MIRROR-SYNC-GOVERNANCE-AND-LIVE-REGISTRATION-2026-10-22-001.md).
+- رویداد: [EVT-0038](../architecture/BEHAVIOR-TRACE/EVT-0038-LIVE-MIRROR-SYNC-ACTIVATION-2026-10-22.md).
+- این فرایند به‌صورت زنده و دستی فعال است؛ سیاست در مخزن و یک نسخهٔ مشخص در Library ثبت و بازخوانی شده‌اند. لنگرهای ۰.۰ قبلی حفظ می‌شوند.
+- وضعیت سایر مقصدها مستقل می‌ماند: Buffer و Persistent Memory = NOT VERIFIED؛ Dropbox = OPEN / NOT VERIFIED؛ بازیابی سرتاسری = NOT RUN.
+- اقدام بعدی: BOART-FOLLOWUP-01؛ سپس آزمون واقعی Dropbox و بازیابی بیرونی.
