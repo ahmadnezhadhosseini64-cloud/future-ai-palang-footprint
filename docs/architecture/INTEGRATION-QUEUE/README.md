@@ -1051,3 +1051,12 @@ The queue index and the timestamp case must each be read back after this update.
 - ثبت اولیهٔ مخزن: UTC `2026-10-22T06:15:09Z`; معادل تهران `2026-10-22 09:45:09`.
 - توسعهٔ چرخه: INPUT_CAPTURE → OUTPUT_CAPTURE → EVIDENCE_LINK → WRITE → READ-BACK → MATCH/VERIFY → RECONCILE → STATUS/RESUME.
 - ادعای کاربر دربارهٔ ثبت تاریخی Gmail حفظ شد؛ Gmail هنوز BLOCKED / NOT VERIFIED و `GMAIL-CONNECTION-AND-READBACK-01` باز است. هیچ ثبت Gmail ادعا نمی‌شود.
+
+
+## EVT-0041 — پابند UTC ورودی تا خروجی و لنگر ۰.۰ تازه
+- Event: [EVT-0041](../BEHAVIOR-TRACE/EVT-0041-UTC-INPUT-OUTPUT-LIVING-ANCHOR-2026-10-22.md).
+- 0.0 anchor: [PALANG-0.0-UTC-INPUT-TO-OUTPUT-BEHAVIOR-ANCHOR-2026-10-22-001](../../0.0/anchors/PALANG-0.0-UTC-INPUT-TO-OUTPUT-BEHAVIOR-ANCHOR-2026-10-22-001.md).
+- Governing reference: [UTC INPUT→OUTPUT LIVING ANCHOR (UILA)](../../reference/REFERENCE-DOCUMENTS/UTC-INPUT-TO-OUTPUT-INTERACTION-ANCHOR-LIVING-GOVERNANCE-2026-10-22-001.md).
+- Status: ACTIVE / LIVING / OPEN / EVOLVABLE. This new anchor preserves all prior 0.0 points.
+- Rule: UTC input/output timestamps are recorded only when supplied by trustworthy host evidence. Internal thinking duration is NOT EXPOSED / NOT MEASURED. Repository canonical time is actual last-change commit UTC; Tehran is derived from that same instant.
+- Open follow-up: GMAIL-CONNECTION-AND-READBACK-01; Gmail remains BLOCKED / NOT VERIFIED until an actual destination write and read-back succeed.
