@@ -37,3 +37,8 @@ All links above were authored as repository-relative Markdown paths. Their targe
 | IN-010 paired-output link | `52aafdd9cf7d1c8c9ff1a08e8f1b14b53ce1b1be` | 2026-10-22T14:55:55Z | 2026-10-22T18:25:55+03:30 |
 | OUT-010 paired-input link | `de4957c9c56c8d38bd45a5ee4f9458aa11421537` | 2026-10-22T14:56:01Z | 2026-10-22T18:26:01+03:30 |
 | Prior version of this time-binding file | `be2757cf1b3346a2b031f7cde4f8b51e1e35cecd` | 2026-10-22T14:54:54Z | 2026-10-22T18:24:54+03:30 |
+
+| 0.0 ledger time-binding link | `d5b92021e2883037f429b28406619be21674bef4` | 2026-10-22T14:57:31Z | 2026-10-22T18:27:31+03:30 |
+| Reference index time-binding link | `ae27a11e5403237e38a8f7da9d099640032e93bc` | 2026-10-22T14:57:37Z | 2026-10-22T18:27:37+03:30 |
+| Architecture README time-binding link | `04ad8e75f417e46ab15f1b3f70a5b28c3a3d5106` | 2026-10-22T14:57:42Z | 2026-10-22T18:27:42+03:30 |
+| Continuity graph time-binding link | `1a842e913e2689f6cea7dafb644b7ac705fd07e2` | 2026-10-22T14:57:50Z | 2026-10-22T18:27:50+03:30 |
