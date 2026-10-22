@@ -1142,3 +1142,11 @@ The queue index and the timestamp case must each be read back after this update.
 - Local prototype interaction-pair ledger and restart tests: PASS for this commit.
 - Remaining OPEN gates: authorized live producer/host capture, production security/deployment, full runtime collector operation, and independent external destination verification.
 - Timestamp ledger: [TIME-BINDING-CMIND](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-CMIND-2026-10-22-001.md).
+
+
+### EVT-0092 — route correction and living-master gate
+- ثبت رویداد ممیزی: [EVT-0092](../BEHAVIOR-TRACE/EVT-0092-MASTER-REFERENCE-AUDIT-AND-ROUTE-CORRECTION-2026-10-22.md).
+- سند مادر توسعه‌یافته: [CMIND](../../reference/REFERENCE-DOCUMENTS/CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-MASTER-REFERENCE-2026-10-22-001.md), Addendum v1.0.3.
+- علت خطا: پیاده‌سازی فرعی پیش از تثبیت مسیر کلان و reconciliation سند مادر بیش از حد در مرکز قرار گرفت.
+- اصلاح: ابتدا بازیابی 0.0/master/queue/Issue #20؛ سپس اجرای یک گام معماری؛ بعد ثبت نتیجه/خطا، read-back و به‌روزرسانی همهٔ نمایه‌ها.
+- باز: authorized producer، security/deployment، cold-start واقعی، end-to-end recovery و مقصدهای خارجی. Dropbox همچنان OPEN / WAITING و خارج از مسیر فعلی است.
