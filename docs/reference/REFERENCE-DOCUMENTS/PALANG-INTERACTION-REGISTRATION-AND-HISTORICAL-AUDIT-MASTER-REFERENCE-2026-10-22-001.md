@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-2026-10-22-001`
 - Production ID / شناسهٔ تولید: `PIRHA-2026-10-22-001`
-- Version / نسخه: 1.2.0
+- Version / نسخه: 1.3.0
 - Owner / مالک: احمد پلنگ
 - Project / پروژه: Future AI / Palang Footprint — HAIF
 - Status / وضعیت: ACTIVE / LIVING / OPEN FOR GROWTH
@@ -155,3 +155,14 @@
 - `ARCHITECTURE-INTEGRATED` = معماری مادر و نمایه به‌روزرسانی شده‌اند.
 - `HISTORICAL-SEMANTIC-AUDIT` = نقش و معنی روابط تاریخی بررسی شده است.
 هیچ وضعیت بالاتر از شواهد مرحلهٔ قبلی نتیجه‌گیری نمی‌شود.
+
+
+## الحاقیهٔ v1.3.0 — یافته‌های ممیزی واقعی و اصلاح پیوندهای تاریخی
+
+- گزارش ممیزی: [PALANG-REPOSITORY-HISTORICAL-AUDIT-RESULTS-2026-10-22-001](./PALANG-REPOSITORY-HISTORICAL-AUDIT-RESULTS-2026-10-22-001.md).
+- رویداد ممیزی: [EVT-0097](../../architecture/BEHAVIOR-TRACE/EVT-0097-REPOSITORY-HISTORICAL-AUDIT-RESULTS-2026-10-22.md).
+- Snapshot اولیهٔ ممیزی: `daff68c9cf0778ce6ad0328e7e734699d175d119`; workflow: [Run 39801100910](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39801100910).
+- یافته‌های آن snapshot: 10 پیوند محلی شکسته؛ 57 گروه برخورد Stable ID؛ 68 گروه برخورد Production ID؛ 7 گروه برخورد Reference ID؛ 24 گروه برخورد شمارهٔ رویداد؛ 11 گروه محتوای تکراری دقیق؛ صفر خطای رمزگشایی.
+- ممیزی زوج زمان: 1,294 رشتهٔ زمانی، 1,293 زوج UTC/تهران نرمال‌شده، یک مورد باز در EVT-0089 خط 21.
+- پس از گزارش، مسیرهای شکستهٔ ده‌گانه به‌صورت اصلاح کنترل‌شده بازبینی و پیوندهای شناخته‌شده اصلاح شدند؛ پذیرش این اصلاحات فقط پس از اجرای ممیزی تازه روی commit جدید ممکن است.
+- وضعیت: ممیزی تاریخی اجرا شده، اما پذیرش نهایی وابسته به نتیجهٔ ممیزی تازه و طبقه‌بندی معنایی برخورد شناسه‌هاست. حفظ اسناد تاریخی اجباری است؛ حذف خودکار ممنوع.
