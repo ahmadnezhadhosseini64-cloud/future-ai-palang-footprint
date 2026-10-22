@@ -86,3 +86,13 @@ Next: `BOART-FOLLOWUP-01` → `BOART-FOLLOWUP-02` → `BOART-FOLLOWUP-03`.
 - Library modified metadata UTC `2026-10-22T05:50:28.914450Z`; Tehran `2026-10-22 09:20:28.914450` مشتق از همان UTC؛ این زمان فرادادهٔ فایل است، نه زمان دقیق عملیات بازخوانی.
 - آینه اکنون بخش «ثبت همگام‌سازی آینه» و چرخهٔ `MIRROR-SYNC` را دارد و `BOART-FOLLOWUP-01` را به‌عنوان اقدام بعدی حفظ می‌کند.
 - محدودهٔ تأیید: همین فایل آینه و محتوای بازخوانی‌شده؛ همگام‌سازی خودکار پس‌زمینه ادعا نمی‌شود. Buffer و Persistent Memory: NOT VERIFIED؛ Dropbox: OPEN / NOT VERIFIED؛ بازیابی سرتاسری: NOT RUN.
+
+## Mirror sync activation — EVT-0038
+- Controller: [PALANG-MIRROR-SYNC-CONTROLLER-2026-10-22-001](./PALANG-MIRROR-SYNC-CONTROLLER-2026-10-22-001.md).
+- Event: [EVT-0038](../BEHAVIOR-TRACE/EVT-0038-PALANG-MIRROR-SYNC-ACTIVATION-2026-10-22.md).
+- Daily automation `Palang Mirror Sync` is enabled; ID `6ad9a407b9d481919c7145fbe4638dec`; flexible daily schedule, timezone `Asia/Tehran`.
+- Library mirror was overwritten and independently read back. Read-back included the test Stable ID, Test ID, EVT-0037, controller ID, automation ID, destination status and registration workflow. Verification applies only to this artifact.
+- Library metadata modified time UTC `2026-10-22T05:50:19.319799Z`; derived Tehran `2026-10-22 09:20:19.319799`. Exact read-back operation time is UNKNOWN.
+- Controller commit UTC `2026-10-22T05:50:38Z`; derived Tehran `2026-10-22 09:20:38`.
+- Status: ACTIVE / LIVING / SCHEDULED. Each future run must produce its own comparison and read-back evidence; continuous background synchronization is not claimed.
+- Buffer and Persistent Memory: NOT VERIFIED. Dropbox: OPEN / NOT VERIFIED. External recovery: NOT RUN.
