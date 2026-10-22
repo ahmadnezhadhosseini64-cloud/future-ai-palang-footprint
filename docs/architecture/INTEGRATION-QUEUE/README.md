@@ -1111,3 +1111,10 @@ The queue index and the timestamp case must each be read back after this update.
 - HAIF v1.3.2؛ PIRHA v1.3.0.
 - پیوندهای شناخته‌شدهٔ snapshot قبلی اصلاح شدند؛ گام پذیرش: اجرای تازه روی commit اصلاح‌شده، بررسی شمار پیوندهای شکسته، سپس تطبیق معنایی 57/68/7/24 گروه برخورد و 11 گروه محتوای تکراری.
 - وضعیت: OPEN / WAITING FOR FRESH AUDIT AND SEMANTIC TRIAGE.
+
+
+## آخرین وضعیت PRHAR / EVT-0097
+- HAIF v1.3.3؛ PIRHA v1.4.0؛ PRHAR v1.1.0.
+- ساختار: PASS روی snapshot `0f29c9aba688ca1c72197bd3d2bad151ccbce139`, صفر پیوند محلی شکسته.
+- باز: طبقه‌بندی 57/68/7/24 گروه برخورد، 11 گروه تکراری، و ابهام زمانی EVT-0089 خط 21.
+- گام بعدی: طبقه‌بندی معنایی گروه‌ها بدون حذف خودکار فایل‌ها؛ رفع ابهام زمان فقط با شاهد معتبر.
