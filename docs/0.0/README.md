@@ -876,3 +876,10 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - **وضعیت:** اسناد جدید نوشته شده‌اند؛ بازخوانی تطبیقی و ممیزی پس از آخرین commit هنوز لازم است. همهٔ نقاط تاریخی به‌صورت معنایی کامل تطبیق داده نشده‌اند.
 - **قاعده:** نقطهٔ ۰ مرجع مبنای زنجیره است؛ نقطهٔ ۰.۰ بستهٔ اجرایی ازسرگیری است. دو شناسه جدا و پیونددارند؛ هیچ لنگر قبلی حذف یا جایگزین نمی‌شود.
 - **مقصدهای بیرونی:** Dropbox، Buffer، Library و Persistent Memory در این عملیات تأیید نشده‌اند. «چشم پلنگ شکارچی» به‌عنوان پروتکل کشف/پیگیری تعریف شده؛ سرویس دائماً فعال هنوز مستقر و آزموده نشده است.
+
+
+## زوج تعامل تازه — بازخورد مثبت و یادگیری (2026-10-22)
+- زوج: `INT-20261022-003` — [ورودی](./anchors/PALANG-0.0-IN-20261022-003-POSITIVE-FEEDBACK.md) / [خروجی](./anchors/PALANG-0.0-OUT-20261022-003-FEEDBACK-REGISTRATION.md).
+- رویداد: [EVT-0090](../architecture/BEHAVIOR-TRACE/EVT-0090-PALANG-POSITIVE-FEEDBACK-AND-INTERACTION-LEARNING-2026-10-22.md).
+- سند مرجع مادر: [PALANG-POSITIVE-FEEDBACK-LEARNING](../reference/REFERENCE-DOCUMENTS/PALANG-POSITIVE-FEEDBACK-AND-INTERACTION-LEARNING-MASTER-REFERENCE-2026-10-22-001.md).
+- وضعیت: ACTIVE / LIVING / OPEN؛ ثبت مخزن نیازمند بازخوانی و تطبیق نهایی است. زمان دقیق پیام ثبت نشده؛ زمان commit باید از metadata واقعی خوانده شود.
