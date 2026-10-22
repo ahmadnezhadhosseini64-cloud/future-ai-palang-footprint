@@ -351,3 +351,8 @@
 - Fixture ساختگی: [interaction-pair-ledger-smoke-test.json](./fixtures/interaction-pair-ledger-smoke-test.json).
 - اجرای آزمون: [GitHub Actions workflow](../../../.github/workflows/interaction-ledger-validation.yml).
 - وضعیت: workflow ثبت شده؛ اجرای واقعی و نتیجهٔ سبز تا زمان بازخوانی run تأیید نشده است. آزمون cold-start تولیدی همچنان GAP مستقل است.
+
+
+## پابند زمانی زنجیرهٔ EVT-0086
+- [TIME-BINDING-ELVR-2026-10-22-001](./TIME-BINDING-ELVR-2026-10-22-001.md) — زمان‌های واقعی commit به UTC و معادل تهران، و زمان اجرای CI را جداگانه ثبت می‌کند.
+- [نتیجهٔ CI موفق](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39750440075)؛ دامنهٔ آزمون فقط schema و fixture ساختگی در checkoutهای تازه است.
