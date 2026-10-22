@@ -187,3 +187,11 @@ Feedback / بازخورد انسان و آزمون‌ها به چرخه برمی
 - [سند مرجع مادر ELVR](../../reference/REFERENCE-DOCUMENTS/EXECUTABLE-INTERACTION-LEDGER-VALIDATION-MASTER-REFERENCE-2026-10-22-001.md) و [پابند زمانی مستقل](../BEHAVIOR-TRACE/TIME-BINDING-ELVR-2026-10-22-001.md) مسیر مرجع این زنجیره‌اند.
 - نتیجهٔ آزمون: GitHub Actions run 39750440075 موفق؛ schema validation و بازیابی از IN و OUT در checkoutهای مستقل موفق شدند.
 - زمان ایجاد اولیهٔ EVT-0087: commit UTC 2026-10-22T08:53:56Z؛ معادل تهران 2026-10-22T12:23:56+03:30. زمان آخرین تغییر هر فایل باید از commit واقعی همان فایل خوانده شود.
+
+
+## 18. نتیجهٔ راستی‌آزمایی تثبیت‌شده — EVT-0087
+- رویداد نتیجه: [EVT-0087](../BEHAVIOR-TRACE/EVT-0087-INTERACTION-VALIDATION-RECOVERY-RESULT-2026-10-22.md).
+- لنگر مستقل ادامه: [PALANG-0.0-INTERACTION-RECOVERY-2026-10-22-001](../../0.0/anchors/PALANG-0.0-INTERACTION-RECOVERY-2026-10-22-001.md).
+- CI: [run 39750440075 — SUCCESS](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39750440075).
+- نتیجهٔ دقیق: schema-validation، بازیابی از IN و بازیابی از OUT در checkoutهای تازه موفق شدند.
+- محدوده: فقط fixture ساختگی و آزمون‌های تعریف‌شده؛ فعال‌بودن شکارچی خودکار و بازیابی cold-start سرویس تولیدی هنوز اثبات نشده‌اند.
