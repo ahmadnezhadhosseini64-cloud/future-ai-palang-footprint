@@ -19,3 +19,19 @@
 - This time-binding file initial commit: `b69b1cd034335d16035bb736cda0fb6b011d1a8a`, UTC `2026-10-22T17:07:43Z`, Tehran `2026-10-22T20:37:43+03:30`.
 - Prior master and architecture update commits are listed above with their actual UTC and derived Tehran equivalents.
 - Status: OPEN until every linked commit is fetched, the updated files are read back, and the cross-index audit is rerun.
+
+
+## پیوست زنجیرهٔ پیوندها — زمان‌های واقعی commit
+
+| فایل/عملیات | Commit SHA | UTC | Asia/Tehran |
+|---|---|---|---|
+| اتصال لنگرها به سند مادر | `eebb0fdbcda7775a947886b86423773f7e4214e8` | 2026-10-22T17:08:51Z | 2026-10-22T20:38:51+03:30 |
+| اتصال قاعده به گراف پیوستگی | `f4e75d8362153e0460e258375efac23b8e1d8c32` | 2026-10-22T17:09:00Z | 2026-10-22T20:39:00+03:30 |
+| اتصال به نمایهٔ مرجع | `dc95a966208f14c25f617294ca4c6c6606d8b39b` | 2026-10-22T17:10:00Z | 2026-10-22T20:40:00+03:30 |
+| اتصال به دفتر 0.0 | `e800ffb4d70c553a82aadfcea5ed67e67156f94a` | 2026-10-22T17:10:39Z | 2026-10-22T20:40:39+03:30 |
+| اتصال به نقطهٔ 0 | `2376445738b0ffb26c9c82dbdf7beafc95ccba60` | 2026-10-22T17:10:48Z | 2026-10-22T20:40:48+03:30 |
+| اتصال به نقطهٔ 0.0 | `3980927e8a5e8b6b59c2b613316c5cab51ec2d04` | 2026-10-22T17:10:57Z | 2026-10-22T20:40:57+03:30 |
+
+- **Latest known audit remains pre-reconciliation:** run `39817056241`, snapshot `7ced5075aad8c2b4e894f70965f9fc405d02bf94`. It is evidence for the pre-update snapshot, not proof of the post-update files.
+- **Fresh post-update audit:** OPEN / PENDING; do not mark current graph as re-audited until a new workflow/artifact is inspected.
+- These times are actual commit metadata in UTC; Tehran is derived from the same instant. User-message time remains NOT CAPTURED.
