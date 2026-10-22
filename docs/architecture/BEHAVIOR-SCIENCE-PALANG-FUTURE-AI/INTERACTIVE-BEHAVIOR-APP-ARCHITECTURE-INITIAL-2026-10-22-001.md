@@ -195,3 +195,12 @@ Feedback / بازخورد انسان و آزمون‌ها به چرخه برمی
 - CI: [run 39750440075 — SUCCESS](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39750440075).
 - نتیجهٔ دقیق: schema-validation، بازیابی از IN و بازیابی از OUT در checkoutهای تازه موفق شدند.
 - محدوده: فقط fixture ساختگی و آزمون‌های تعریف‌شده؛ فعال‌بودن شکارچی خودکار و بازیابی cold-start سرویس تولیدی هنوز اثبات نشده‌اند.
+
+
+## 19. معماری رفتارشناسی زنده و آینده‌پژوهی — EVT-0088
+- رویداد حاکمیتی: [EVT-0088](../BEHAVIOR-TRACE/EVT-0088-CURRENT-ANCHOR-LIVING-BEHAVIOR-ARCHITECTURE-AND-FUTURE-FORESIGHT-GOVERNANCE-2026-10-22.md).
+- سند مرجع مادر: [LBAF](../../reference/REFERENCE-DOCUMENTS/LIVING-BEHAVIOR-ARCHITECTURE-FORESIGHT-MASTER-REFERENCE-2026-10-22-001.md).
+- نقطهٔ جاری: [لنگر مستقل جاری ۰.۰](../../0.0/anchors/PALANG-0.0-CURRENT-LIVING-BEHAVIOR-ARCHITECTURE-2026-10-22-001.md).
+- گام بعدی ۰.۰: [runtime collector و بازیابی تولیدی](../../0.0/anchors/PALANG-0.0-RUNTIME-COLLECTOR-PRODUCTION-RECOVERY-2026-10-22-001.md).
+- اتصال به FIOBAM، AOGM و ELVR از طریق سند مادر LBAF؛ نقشهٔ راه آینده‌پژوهی شامل پایش افق/محیط، پیشران‌ها، نشانه‌های ضعیف، سناریوها، عدم‌قطعیت، پس‌نگری و شاخص‌های هشدار است.
+- این موارد افزودهٔ نسخه‌دار هستند؛ متن پایه بازنویسی نشده است. قابلیت‌های آینده‌پژوهی و شکارچی runtime تا پیاده‌سازی و آزمون مستقل، نقشهٔ راه محسوب می‌شوند.
