@@ -42,3 +42,22 @@
 ## وضعیت راستی‌آزمایی
 
 فایل‌های ثبت‌شده پس از ایجاد از شاخهٔ پیش‌فرض بازخوانی شدند و شناسه‌ها و مسیرهای مورد انتظار در آن‌ها وجود داشتند. این سند پابند زمانی جداگانه است؛ زمان commit خود این پابند باید از metadata واقعی پس از ایجاد استخراج و در بازخوانی بعدی ثبت شود. ثبت مخزن، به‌تنهایی، ماندگاری Buffer، Persistent Memory یا Dropbox را اثبات نمی‌کند.
+
+
+## Reconciliation commit times added after initial binding
+
+| Change | Commit SHA | UTC | Asia/Tehran |
+|---|---|---|---|
+| EVT-0094 reconciled with architecture status and binding link | `807fdd3af7de19809c618c13e01aac013dde1c4c` | 2026-10-22T13:58:58Z | 2026-10-22T17:28:58+03:30 |
+| HAIF mother model linked to time binding | `936c2478d789689f48b784f7e8224e86ca8aac14` | 2026-10-22T13:59:03Z | 2026-10-22T17:29:03+03:30 |
+| Model README linked to time binding | `d7fb8ca2efcc78b55ed6a636d360f26f0b9b5abc` | 2026-10-22T13:59:08Z | 2026-10-22T17:29:08+03:30 |
+| Continuity graph linked to time binding | `c6b4d408c5ad0272194408cce517273217d97dbd` | 2026-10-22T13:59:14Z | 2026-10-22T17:29:14+03:30 |
+| Reference index linked to time binding and next anchor | `e48c7eb2f153e84def0ac3ca49ea32b0fd3c1fc4` | 2026-10-22T13:59:19Z | 2026-10-22T17:29:19+03:30 |
+| DTRC master versioned to 1.0.1 | `37573bbb58bdffcd1cbbf043d30d82662750e83d` | 2026-10-22T13:59:48Z | 2026-10-22T17:29:48+03:30 |
+
+## Repository reconciliation result
+
+The pair anchors, DTRC master, EVT-0094, HAIF mother model v1.1.0, model README, continuity graph v1.0.2, 0.0 register, reference index, and next 0.0 continuation anchor have been created or updated in the repository. The files were read back in separate fetches. Full semantic audit of every historical link and runtime test remain open.
+
+- Initial time-binding commit: `371532bcd25ee174e9d2bb455d4a2d748ad20e37`, UTC `2026-10-22T13:58:33Z`, Tehran `2026-10-22T17:28:33+03:30`.
+- The timestamp of this time-binding file's latest edit is available from Git commit metadata; the file does not claim to recursively encode its own final commit time.
