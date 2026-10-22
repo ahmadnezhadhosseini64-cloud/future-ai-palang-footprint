@@ -863,3 +863,16 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 
 
 - [مدرک زمان commit جفت تعامل EVT-0089](../architecture/BEHAVIOR-TRACE/EVT-0089-TIMESTAMP-READBACK-2026-10-22-001.md).
+
+
+---
+
+## لنگر جاری — گراف پیوستگی مادر، نقطهٔ ۰ و نقطهٔ ۰.۰ (2026-10-22)
+
+- **سند مرجع مادر زنده:** [گراف پیوستگی نقاط ۰/۰.۰ و معماری HAIF](../reference/REFERENCE-DOCUMENTS/PALANG-LIVING-MASTER-CONTINUITY-GRAPH-2026-10-22-001.md) — Stable ID: `PALANG-LIVING-MASTER-CONTINUITY-GRAPH-2026-10-22-001`.
+- **نقطهٔ ۰ جاری:** [PALANG-ZERO-LIVING-CONTINUITY-GRAPH-2026-10-22-001](../../checkpoints/PALANG-ZERO-LIVING-CONTINUITY-GRAPH-2026-10-22-001.md).
+- **نقطهٔ ۰.۰ جاری:** [PALANG-0.0-LIVING-CONTINUITY-GRAPH-2026-10-22-001](../../checkpoints/0.0/PALANG-0.0-LIVING-CONTINUITY-GRAPH-2026-10-22-001.md).
+- **رویداد:** [EVT-0070 نامزد — درخواست گراف پیوستگی](../architecture/BEHAVIOR-TRACE/EVT-0070-CONTINUITY-GRAPH-REQUEST-2026-10-22.md). شمارهٔ رویداد تا تطبیق با دفتر EVT نامزد باقی می‌ماند.
+- **وضعیت:** اسناد جدید نوشته شده‌اند؛ بازخوانی تطبیقی و ممیزی پس از آخرین commit هنوز لازم است. همهٔ نقاط تاریخی به‌صورت معنایی کامل تطبیق داده نشده‌اند.
+- **قاعده:** نقطهٔ ۰ مرجع مبنای زنجیره است؛ نقطهٔ ۰.۰ بستهٔ اجرایی ازسرگیری است. دو شناسه جدا و پیونددارند؛ هیچ لنگر قبلی حذف یا جایگزین نمی‌شود.
+- **مقصدهای بیرونی:** Dropbox، Buffer، Library و Persistent Memory در این عملیات تأیید نشده‌اند. «چشم پلنگ شکارچی» به‌عنوان پروتکل کشف/پیگیری تعریف شده؛ سرویس دائماً فعال هنوز مستقر و آزموده نشده است.
