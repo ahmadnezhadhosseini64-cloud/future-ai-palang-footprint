@@ -382,3 +382,10 @@
 
 ## پابند زمانی EVT-0088 / LBAF
 - [TIME-BINDING-LBAF-2026-10-22-001](./TIME-BINDING-LBAF-2026-10-22-001.md) — timestampهای واقعی commit و معادل تهران، به‌همراه GAP زمان پایان CI.
+
+
+## EVT-0089 — Universal input/output anchors
+- [EVT-0089](./EVT-0089-UNIVERSAL-INPUT-OUTPUT-ANCHORING-GOVERNANCE-2026-10-22.md)
+- [UIOAM master reference](../../reference/REFERENCE-DOCUMENTS/UNIVERSAL-INPUT-OUTPUT-TEMPORAL-ANCHOR-MASTER-2026-10-22-001.md)
+- [UIOAM timestamp binding](./TIME-BINDING-UIOAM-2026-10-22-001.md)
+- Current pair: [IN-20261022-002](../../0.0/anchors/PALANG-0.0-IN-20261022-002-UNIVERSAL-IO-ANCHORING.md) / [OUT-20261022-002](../../0.0/anchors/PALANG-0.0-OUT-20261022-002-UNIVERSAL-IO-ANCHORING.md)
