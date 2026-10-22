@@ -50,3 +50,8 @@ The first registered item is the user's request to make the live inbox a standar
 - Canonical event: [EVT-0103](../BEHAVIOR-TRACE/EVT-0103-BEHAVIOR-HUNTER-MISSED-DETECTION-AND-ID-COLLISION-CORRECTION-2026-10-22.md).
 - Independent anchors: [IN-015](../../0.0/anchors/PALANG-0.0-IN-20261022-015-BEHAVIOR-HUNTER-MISSED-DETECTION.md) / [OUT-015](../../0.0/anchors/PALANG-0.0-OUT-20261022-015-BEHAVIOR-HUNTER-MISSED-DETECTION.md).
 - The behavior-hunter runtime remains OPEN / NOT PROVEN under Issue #20.
+
+
+## Third inbox item — six explicit architecture candidates
+- INBOX-20261022-003 preserves six user-stated signals and routes them to EVT-0104, independent IN/OUT anchors, the universal and behavior masters, and the model-initial queue.
+- Automatic runtime hunting and host-wide capture remain OPEN / NOT PROVEN under Issue #20.
