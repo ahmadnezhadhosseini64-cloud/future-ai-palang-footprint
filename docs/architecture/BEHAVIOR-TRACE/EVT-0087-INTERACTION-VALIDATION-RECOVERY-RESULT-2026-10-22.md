@@ -42,3 +42,11 @@ This is a real CI execution against a synthetic repository fixture. It proves th
 
 ## Time binding for this event
 The canonical repository registration time is the actual final commit timestamp of this event in UTC; its Tehran equivalent must be calculated from that same instant. The exact timestamp of the user's message was not exposed and remains NOT_EXPOSED.
+
+
+## Timestamp reconciliation — GitHub run metadata
+در بازخوانی دوباره، GitHub API برای run شمارهٔ 39750440075 مقدار `created_at/run_started_at=2026-10-22T08:47:52Z` و `updated_at=2026-10-22T08:48:06Z` را برگرداند؛ در این پاسخ فیلد مستقل `run_completed_at` موجود نبود. این سند پیش‌تر 08:48:08Z را به‌عنوان زمان updated/completed ثبت کرده بود. این دو مقدار نباید بی‌صدا یکی فرض شوند:
+- زمان آغاز: تأییدشده، 08:47:52Z.
+- مقدار API برای آخرین به‌روزرسانی: تأییدشده، 08:48:06Z.
+- مقدار 08:48:08Z در ثبت قبلی: شواهد متعارض/نیازمند بررسی؛ به‌عنوان زمان پایان قطعی مستقل تأیید نشده است.
+- GAP: اگر زمان پایان دقیق لازم باشد، باید از فرادادهٔ سطح job/logs یا منبعی که فیلد پایان صریح دارد بازبینی شود. نتیجهٔ SUCCESS سه job تغییر نمی‌کند.
