@@ -16,8 +16,8 @@ event: "EVT-0083"
 - **Production ID / شناسهٔ تولید:** `IBIO-HAIF-2026-10-22-001`
 - **Version / نسخه:** 1.0.0
 - **Status / وضعیت:** ACTIVE / LIVING / OPEN / EVOLVABLE
-- **Event / رویداد:** [EVT-0083](../architecture/BEHAVIOR-TRACE/EVT-0083-FIRST-INTERACTION-BEHAVIOR-ANALYSIS-AND-IO-NAMING-MODEL-2026-10-22.md)
-- **Living reference / سند مرجع زنده:** [IBIO](../reference/REFERENCE-DOCUMENTS/FIRST-INTERACTION-BEHAVIOR-ANALYSIS-AND-IO-NAMING-LIVING-REFERENCE-2026-10-22-001.md)
+- **Event / رویداد:** [EVT-0083](../../architecture/BEHAVIOR-TRACE/EVT-0083-FIRST-INTERACTION-BEHAVIOR-ANALYSIS-AND-IO-NAMING-MODEL-2026-10-22.md)
+- **Living reference / سند مرجع زنده:** [IBIO](../../reference/REFERENCE-DOCUMENTS/FIRST-INTERACTION-BEHAVIOR-ANALYSIS-AND-IO-NAMING-LIVING-REFERENCE-2026-10-22-001.md)
 
 ## نقطهٔ بازیابی
 از این لنگر، بازیابی را با سند مرجع IBIO و رویداد EVT-0083 آغاز کن؛ سپس به معماری اولیهٔ اپ رفتارشناسی و رویدادهای والد EVT-0041، EVT-0051، EVT-0069 و EVT-0081 برو. این لنگر تازه افزایشی است و هیچ لنگر ۰.۰ پیشین را جایگزین، حذف یا بسته نمی‌کند.
