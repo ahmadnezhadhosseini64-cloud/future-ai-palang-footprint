@@ -61,7 +61,7 @@ class InteractionPairCreate(BaseModel):
     input_id: str = Field(pattern=r"^IN-[0-9]{8}-[0-9]{3}$")
     output_id: str = Field(pattern=r"^OUT-[0-9]{8}-[0-9]{3}$")
     sequence: int = Field(ge=1)
-    version: str = Field(pattern=r"^[0-9]+\\.[0-9]+\\.[0-9]+$")
+    version: str = Field(pattern=r"^[0-9]+\.[0-9]+\.[0-9]+$")
     status: str = Field(pattern=r"^(DRAFT|OBSERVED|VALIDATED|REGISTERED|AMENDED|REJECTED)$")
     time_evidence: dict[str, Any]
     input: dict[str, Any]
