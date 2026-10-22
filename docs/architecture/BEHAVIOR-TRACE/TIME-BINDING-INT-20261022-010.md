@@ -53,3 +53,26 @@ All links above were authored as repository-relative Markdown paths. Their targe
 | Integration queue acceptance-gate update | `ddeec72411b49d906c8161e6d3c1a7b30002f492` | 2026-10-22T15:00:18Z | 2026-10-22T18:30:18+03:30 |
 
 | PIRHA v1.2.0 current-pair pointer update | `4ba79d4d83aa5db42f0314ee64d05a74f51bcac9` | 2026-10-22T15:02:24Z | 2026-10-22T18:32:24+03:30 |
+
+## Audit-result registration and controlled link repair
+
+| Artifact / تغییر | Commit SHA | UTC canonical time | Tehran equivalent |
+|---|---|---|---|
+| OUT-010 audit findings | `d18a4641d9fa3acda24db6bb6d1744b6a6169b9a` | 2026-10-22T15:06:22Z | 2026-10-22T18:36:22+03:30 |
+| PRHAR audit report | `b45e4d84267b8acb112b1b57cf005545f2176857` | 2026-10-22T15:07:02Z | 2026-10-22T18:37:02+03:30 |
+| EVT-0097 | `177ceb989281eb8962754cf82d8c9cc8f632b638` | 2026-10-22T15:08:00Z | 2026-10-22T18:38:00+03:30 |
+| Repair: prototype links in docs/0.0 output | `481d7f76ccdeef06fd191a48aaf4cff6ac5892be` | 2026-10-22T15:09:50Z | 2026-10-22T18:39:50+03:30 |
+| Repair: EVT-0083/IBIO links in 0.0 anchor | `31650560416058847fd59b0e4acd27b4f4a0e383` | 2026-10-22T15:09:56Z | 2026-10-22T18:39:56+03:30 |
+| Repair: EVT-0070 continuity checkpoint link | `822676cb77fd8df5fd80be677efea2ed4abdb70d` | 2026-10-22T15:10:04Z | 2026-10-22T18:40:04+03:30 |
+| Repair: EVT-0070 prototype links | `a5f75c1e4fec604835b793379911b715102b6676` | 2026-10-22T15:10:11Z | 2026-10-22T18:40:11+03:30 |
+| Repair: HAIF timestamp standard link | `83826a3eac79bca4fa8dc52a5aee54b3651a0fdd` | 2026-10-22T15:10:17Z | 2026-10-22T18:40:17+03:30 |
+| Repair: EVT-0039 Gmail link | `9ad976f7fe54dcad90babce0a7438f25905d25d8` | 2026-10-22T15:10:24Z | 2026-10-22T18:40:24+03:30 |
+| PIRHA master v1.3.0 | `7f05670204e764258d740ca43f96338adc62fa11` | 2026-10-22T15:10:56Z | 2026-10-22T18:40:56+03:30 |
+| HAIF mother model v1.3.2 | `839cbe7253f565d9d39f69f02597f6373fa48910` | 2026-10-22T15:11:12Z | 2026-10-22T18:41:12+03:30 |
+| 0.0 ledger audit index | `bbec3a12e744f818e1656706269fac1a567b390d` | 2026-10-22T15:12:43Z | 2026-10-22T18:42:43+03:30 |
+| Reference index audit update | `996438b30600815865718939144a4ba70e7b507e` | 2026-10-22T15:12:50Z | 2026-10-22T18:42:50+03:30 |
+| Architecture README audit update | `f86bb3c9aae4e578a7828999d3e6abe46da7a7fc` | 2026-10-22T15:12:57Z | 2026-10-22T18:42:57+03:30 |
+| Continuity graph audit update | `54401bc09ed1e46b182ea17eb5ec05afc9da6f25` | 2026-10-22T15:13:04Z | 2026-10-22T18:43:04+03:30 |
+| Integration queue audit update | `513d4622e3adb4d6551f312260324742b63fac9f` | 2026-10-22T15:13:18Z | 2026-10-22T18:43:18+03:30 |
+
+The new audit after these repairs is tracked separately by its own workflow run. These timestamps do not imply that the repaired links have already passed that fresh audit.
