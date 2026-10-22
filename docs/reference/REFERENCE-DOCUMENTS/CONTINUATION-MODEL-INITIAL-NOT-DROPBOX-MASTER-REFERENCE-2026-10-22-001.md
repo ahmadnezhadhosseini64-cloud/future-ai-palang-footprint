@@ -151,3 +151,12 @@ Priority order:
 **Do not restart from Dropbox. Do not ask the user to repeat already recoverable project context.** The next assistant action is to inspect the live issue and open queue, choose the next architecture-building step, execute it, and reconcile evidence into this master and its linked indexes.
 
 **Verification status of this addendum:** written to the canonical repository; read-back and index reconciliation must be completed before calling the whole registration VERIFIED.
+
+
+### F. Live issue read-back and registration reconciliation
+- Live [Issue #20](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/20) was fetched after this audit. It remains OPEN and is explicitly titled “Implement and verify interaction behavior hunter runtime and cold-start recovery.”
+- The issue still requires: permitted data-source/privacy boundary; behavior candidate labels (observation/inference/hypothesis/unknown); append-only repository-backed ledger; reverse lookup from IN or OUT to events/versions/evidence/gaps; cold-start recovery; and independent destination tests where supported.
+- Already evidenced: matching INT/IN/OUT implementation, schema validation, local SQLite write/read-back, reverse lookup, idempotency/conflict behavior, and passing local prototype tests.
+- Still not evidenced: automatic host-side collection, producer authorization, production security/deployment, cold-start against deployed persistent storage, full behavior-candidate extraction/labeling, end-to-end recovery to all evidence/gaps, and external destination persistence.
+- Read-back completed for the CMIND master, EVT-0092, both independent anchors, 0.0 registry, reference index, behavior-trace index, integration queue, and model-initial queue. The expected EVT-0092 / IN-20261022-006 / OUT-20261022-006 links were present in their relevant control surfaces.
+- Registration status for the above repository files: REGISTERED / READ-BACK VERIFIED. Architecture-wide completion remains OPEN; do not confuse reference registration with implementation completion.
