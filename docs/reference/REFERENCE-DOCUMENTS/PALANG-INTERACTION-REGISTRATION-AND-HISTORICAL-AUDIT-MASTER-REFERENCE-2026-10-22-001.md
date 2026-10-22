@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-2026-10-22-001`
 - Production ID / شناسهٔ تولید: `PIRHA-2026-10-22-001`
-- Version / نسخه: 1.0.0
+- Version / نسخه: 1.0.1
 - Owner / مالک: احمد پلنگ
 - Project / پروژه: Future AI / Palang Footprint — HAIF
 - Status / وضعیت: ACTIVE / LIVING / OPEN FOR GROWTH
@@ -101,3 +101,7 @@
 
 ## 10. زمان
 زمان دقیق پیام کاربر در دسترس نیست. زمان ثبت مخزن باید از metadata commit واقعی گرفته شود؛ UTC مرجع است و زمان تهران (+03:30) از همان لحظه مشتق می‌شود. هر دو نوع زمان جداگانه نگهداری می‌شوند.
+
+
+- Time binding / پابند زمانی: [TIME-BINDING-PIRHA-2026-10-22-001](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-PIRHA-2026-10-22-001.md).
+- Historical time binding / پابند زمانی ثبت قبلی: [TIME-BINDING-PRC-2026-10-22-001](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-PRC-2026-10-22-001.md).
