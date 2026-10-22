@@ -421,3 +421,14 @@ Repository artifacts for INT-015/EVT-0103/inbox are being registered and must be
 ثبت مخزنی این تعامل به‌صورت افزایشی انجام شده و بازخوانی نهایی باید جداگانه تأیید شود. قرارداد معماری ACTIVE / LIVING است؛ دریافت خودکار میزبان و شکارچی دائماً فعال هنوز OPEN / NOT PROVEN تحت Issue #20 است.
 
 - Time binding for INT-20261022-015: [TIME-BINDING-INT-20261022-015](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-015.md). Actual repository commit UTC and derived Tehran equivalents are recorded there; exact user-message time remains NOT CAPTURED.
+
+
+## Addendum v1.0.3 — شش کاندید معماری از INT-20261022-016
+
+- Event: [EVT-0104](../../architecture/BEHAVIOR-TRACE/EVT-0104-CANDIDATE-ARCHITECTURE-SIGNALS-AND-HUNTER-GATE-2026-10-22.md).
+- Independent anchors: [IN-016](../../0.0/anchors/PALANG-0.0-IN-20261022-016-EXPLICIT-CANDIDATE-SIGNALS.md) / [OUT-016](../../0.0/anchors/PALANG-0.0-OUT-20261022-016-EXPLICIT-CANDIDATE-SIGNALS.md).
+- Live Inbox: [INBOX-20261022-003](../../architecture/LIVE-INBOX/entries/INBOX-20261022-003.md).
+
+شش نشانهٔ صریح کاربر اکنون به‌صورت کاندیدهای CAND-016-01..06 ثبت شده‌اند: قرارداد صندوق زنده؛ نقش مستقل سند مادر؛ زنجیرهٔ ورودی/خروجی؛ تکامل افزایشی؛ تمایز ثبت با تکمیل؛ و تمایز ثبت مخزنی با دریافت خودکار میزبان. پنج مورد به‌عنوان قواعد/مشاهدات مبتنی بر متن کاربر و علت احتمالی شکست قبلی به‌عنوان HYPOTHESIS نگهداری می‌شود تا با آزمون runtime تأیید شود.
+
+این ثبت، پیاده‌سازی شکارچی دائماً فعال را اثبات نمی‌کند. پیاده‌سازی استخراج کاندید، کنترل یکتایی پیش از نوشتن، اتصال به والد/صف و بازیابی سرتاسری همچنان OPEN در [Issue #20](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/20) است.
