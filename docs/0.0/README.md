@@ -786,3 +786,13 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - نام فارسی: «لنگر زندهٔ UTC از ورودی تا خروجی». وضعیت: ACTIVE / LIVING / OPEN / EVOLVABLE.
 - این ۰.۰ افزوده شده و هیچ لنگر پیشینی را حذف یا جایگزین نمی‌کند. زمان دقیق ورودی/پاسخ از میزبان در دسترس نیست؛ زمان تفکر داخلی قابل اندازه‌گیری نیست. زمان مرجع مخزن از commit واقعی UTC تعیین می‌شود.
 - Gmail همچنان BLOCKED / NOT VERIFIED؛ اقدام GMAIL-CONNECTION-AND-READBACK-01 باز است.
+
+
+## نقطهٔ ۰.۰ جدید — ادعای محدودیت Gmail و رفتار تعاملی (2026-10-22)
+- شناسه: `PALANG-0.0-GMAIL-ACCESS-CLAIM-INTERACTION-BEHAVIOR-2026-10-22-001`
+- وضعیت: ACTIVE / LIVING / OPEN / EVOLVABLE — مستقل و افزایشی؛ نقاط قبلی دست‌نخورده‌اند.
+- [پرونده نقطه ۰.۰](./anchors/PALANG-0.0-GMAIL-ACCESS-CLAIM-INTERACTION-BEHAVIOR-2026-10-22-001.md)
+- [رویداد EVT-0051](../architecture/BEHAVIOR-TRACE/EVT-0051-GMAIL-ACCESS-CLAIM-AND-LIVING-0.0-ANCHOR-2026-10-22.md)
+- [سند مادر GACIB](../reference/REFERENCE-DOCUMENTS/GMAIL-ACCESS-CLAIM-AND-INTERACTION-BEHAVIOR-LIVING-MASTER-REFERENCE-2026-10-22-001.md)
+- [معماری اولیه اپ](../architecture/BEHAVIOR-SCIENCE-PALANG-FUTURE-AI/INTERACTIVE-BEHAVIOR-APP-ARCHITECTURE-INITIAL-2026-10-22-001.md)
+- اقدام باز: بازخوانی همه اسناد و ثبت زمان commit واقعی UTC/تهران؛ Gmail ارسال نشده؛ سایر مقصدها نیازمند اثبات مستقل‌اند.
