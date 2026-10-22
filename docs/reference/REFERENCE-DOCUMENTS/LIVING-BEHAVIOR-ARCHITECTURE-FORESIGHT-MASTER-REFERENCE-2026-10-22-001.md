@@ -59,3 +59,7 @@ OBSERVE → IDENTIFY → PRESERVE → CLASSIFY → PROVENANCE → MODEL → TEST
 از لنگر runtime collector و issue #20 ادامه بده؛ پیاده‌سازی مجاز و پایدار، آزمون خطا، cold-start واقعی، بازیابی از INT/IN/OUT، آشتی شواهد زمانی و سپس الحاق نسخه‌دار به معماری و این سند مادر. پس از هر نوشتن، READ-BACK → MATCH → VERIFY → RECONCILE → STATUS.
 
 ACTIVE / LIVING / OPEN / EVOLVABLE / GOVERNING یعنی معماری و سند مادر قابل توسعه و بازیابی‌اند؛ نه اینکه عملیات پس‌زمینه یا مقصدهای خارجی بدون مدرک فعال باشند.
+
+
+## پابند زمانی مادر
+- [TIME-BINDING-LBAF-2026-10-22-001](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-LBAF-2026-10-22-001.md) — شواهد UTC/تهران برای commitهای این زنجیره.
