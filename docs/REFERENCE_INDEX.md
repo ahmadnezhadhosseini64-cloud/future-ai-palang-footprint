@@ -576,3 +576,13 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 | IN-20261022-007 | `docs/0.0/anchors/PALANG-0.0-IN-20261022-007-LIVING-REGISTRATION.md` | لنگر مستقل ورودی | Registered |
 | OUT-20261022-007 | `docs/0.0/anchors/PALANG-0.0-OUT-20261022-007-LIVING-REGISTRATION.md` | لنگر مستقل خروجی | Registered |
 | TIME-BINDING-PLRA-2026-10-22-001 | `docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-PLRA-2026-10-22-001.md` | پیوند زمان مرجع UTC و زمان متناظر تهران | Created; self-timestamp and final read-back pending |
+
+
+## 2026-10-22 — DTRC: معماری رفتارشناسی دو‌مسیره
+
+| ID | Document | Role | Status |
+|---|---|---|---|
+| DTBA-2026-10-22-001 | `docs/reference/REFERENCE-DOCUMENTS/PALANG-DUAL-TRACK-BEHAVIORAL-ARCHITECTURE-MASTER-REFERENCE-2026-10-22-001.md` | سند مرجع مادر زنده؛ مقایسهٔ مسیر آینده‌پژوهی با مسیر کنترل انحراف و مدل ترکیبی DTRC | ACTIVE / LIVING / OPEN FOR GROWTH |
+| EVT-0094 | `docs/architecture/BEHAVIOR-TRACE/EVT-0094-DUAL-TRACK-BEHAVIORAL-ARCHITECTURE-2026-10-22.md` | رویداد رفتارشناسی و تکامل معماری | Repository registration; read-back pending final reconciliation |
+| INT-20261022-008 | `docs/0.0/anchors/PALANG-0.0-IN-20261022-008-BEHAVIORAL-ARCHITECTURE-UPDATE.md` + `docs/0.0/anchors/PALANG-0.0-OUT-20261022-008-BEHAVIORAL-ARCHITECTURE-UPDATE.md` | زوج مستقل ورودی/خروجی | Registered |
+| HAIF v1.1.0 | `docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md` | جای‌گذاری DTRC در مدل مادر و نسخه‌گذاری افزایشی | Updated; read-back pending final reconciliation |
