@@ -13,5 +13,9 @@
 - Audit evidence snapshot: `7ced5075aad8c2b4e894f70965f9fc405d02bf94`; workflow `39817056241`.
 - Master rule update: commit `1d43f653722e4d6395b7acd92b59daa9fb3e5c7d`, UTC `2026-10-22T17:06:34Z`, Tehran `2026-10-22T20:36:34+03:30`.
 - HAIF architecture update: commit `95a20ffec6686cd9605754e4c208d54fbd7fe462`, UTC `2026-10-22T17:06:41Z`, Tehran `2026-10-22T20:36:41+03:30`.
-- Anchor/event/time-binding commit timestamps: pending retrieval from actual Git commit metadata; no times are inferred from operation order.
+- Input anchor commit: `7e5822aa5c60c64a1c4a61cbc05b59079626d302`, UTC `2026-10-22T17:07:21Z`, Tehran `2026-10-22T20:37:21+03:30`.
+- Output anchor commit: `196185cb3d654ecd9b2a3611c691a94753a6ec97`, UTC `2026-10-22T17:07:27Z`, Tehran `2026-10-22T20:37:27+03:30`.
+- Event EVT-0102 commit: `844c437f68cadb2d14dcbb64d8c6390b95997144`, UTC `2026-10-22T17:07:35Z`, Tehran `2026-10-22T20:37:35+03:30`.
+- This time-binding file initial commit: `b69b1cd034335d16035bb736cda0fb6b011d1a8a`, UTC `2026-10-22T17:07:43Z`, Tehran `2026-10-22T20:37:43+03:30`.
+- Prior master and architecture update commits are listed above with their actual UTC and derived Tehran equivalents.
 - Status: OPEN until every linked commit is fetched, the updated files are read back, and the cross-index audit is rerun.
