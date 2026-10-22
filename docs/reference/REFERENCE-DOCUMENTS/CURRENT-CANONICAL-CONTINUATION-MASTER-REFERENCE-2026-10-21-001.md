@@ -259,3 +259,16 @@
 - زمان ثبت اولیهٔ لنگر ۰.۰: commit `e9ed1ecf814c6fef95ec487c2d470bf07bae96fe`, UTC `2026-10-22T06:38:49Z`, تهران `2026-10-22 10:08:49`.
 - زمان UTC دقیق دریافت پیام و تولید پاسخ مستقل از ابزار در دسترس نیست؛ مدت تفکر داخلی نیز telemetry قابل‌مشاهده نیست و حدس زده نمی‌شود.
 - لنگرهای قبلی حفظ شده‌اند. Gmail: `BLOCKED / NOT VERIFIED`; `GMAIL-CONNECTION-AND-READBACK-01` باز است. ثبت این اسناد در مخزن، ثبت Gmail را اثبات نمی‌کند.
+
+
+## 23. سند حاکم UTC ورودی تا خروجی — UILA / EVT-0041
+- نام: `UTC INPUT→OUTPUT LIVING ANCHOR (UILA)` — «لنگر زندهٔ UTC از ورودی تا خروجی».
+- سند مرجع: [UTC-INPUT-TO-OUTPUT-INTERACTION-ANCHOR-LIVING-GOVERNANCE-2026-10-22-001](./UTC-INPUT-TO-OUTPUT-INTERACTION-ANCHOR-LIVING-GOVERNANCE-2026-10-22-001.md).
+- رویداد: [EVT-0041](../../architecture/BEHAVIOR-TRACE/EVT-0041-UTC-INPUT-OUTPUT-LIVING-ANCHOR-2026-10-22.md).
+- نقطهٔ ۰.۰ تازه: [PALANG-0.0-UTC-INPUT-TO-OUTPUT-BEHAVIOR-ANCHOR-2026-10-22-001](../../0.0/anchors/PALANG-0.0-UTC-INPUT-TO-OUTPUT-BEHAVIOR-ANCHOR-2026-10-22-001.md).
+- شناسهٔ سند مرجع: `PALANG-UTC-INPUT-OUTPUT-INTERACTION-GOVERNANCE-2026-10-22-001`; Production ID `UTCIO-HAIF-2026-10-22-001`; Version 1.0.0.
+- زمان ثبت اولیهٔ سند مرجع: commit `715183b2df244afd6949ee9bb5defdd18edae5e3`, UTC `2026-10-22T06:38:28Z`, تهران `2026-10-22 10:08:28`.
+- زمان ثبت اولیهٔ EVT-0041: commit `6136c79e927959e81da5a7af0a1268932679e04e`, UTC `2026-10-22T06:38:32Z`, تهران `2026-10-22 10:08:32`.
+- زمان ثبت اولیهٔ لنگر ۰.۰: commit `e9ed1ecf814c6fef95ec487c2d470bf07bae96fe`, UTC `2026-10-22T06:38:49Z`, تهران `2026-10-22 10:08:49`.
+- زمان UTC دقیق دریافت پیام و تولید پاسخ مستقل از ابزار در دسترس نیست؛ مدت تفکر داخلی نیز telemetry قابل‌مشاهده نیست و حدس زده نمی‌شود.
+- لنگرهای قبلی حفظ شده‌اند. Gmail: `BLOCKED / NOT VERIFIED`; `GMAIL-CONNECTION-AND-READBACK-01` باز است. ثبت این اسناد در مخزن، ثبت Gmail را اثبات نمی‌کند.
