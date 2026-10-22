@@ -242,3 +242,11 @@
 - ممیزی کامل تاریخچه، Dropbox، بافر و حافظهٔ پایدار همچنان OPEN / NOT VERIFIED.
 
 - پابند زمانی این زوج: [TIME-BINDING-INT-20261022-010](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-010.md).
+
+
+## اصلاح مدل — GAP-PIRHA-ACCEPTANCE-GATE-001
+
+- HAIF mother model: v1.3.1.
+- PIRHA governance master: v1.2.0.
+- قاعدهٔ جدید: ایجاد فایل، بازخوانی، تأیید پیوند، ادغام معماری و ممیزی معنایی تاریخچه وضعیت‌های مستقل‌اند.
+- هر چرخه باید manifest پذیرش داشته باشد؛ وضعیت نهایی فقط بر اساس شواهد هر artifact تعیین می‌شود.
