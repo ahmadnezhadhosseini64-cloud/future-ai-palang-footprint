@@ -240,3 +240,5 @@
 - [سند مادر PIRHA](./PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001.md).
 - معماری مادر HAIF: v1.3.0؛ قاعدهٔ هر چرخه: ثبت ورودی/خروجی → سند مادر → رویداد → معماری → نمایه/نقاط صفر → پابند زمانی → بازخوانی/تطبیق.
 - ممیزی کامل تاریخچه، Dropbox، بافر و حافظهٔ پایدار همچنان OPEN / NOT VERIFIED.
+
+- پابند زمانی این زوج: [TIME-BINDING-INT-20261022-010](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-010.md).
