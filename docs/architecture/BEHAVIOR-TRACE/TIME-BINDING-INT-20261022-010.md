@@ -21,3 +21,15 @@
 
 ## Acceptance boundary
 This binding records the actual GitHub commit timestamps for the listed commits. It does not assert that the subsequent time-binding commit, all historical links, or non-repository storage layers have already passed independent verification.
+
+| PIRHA master version 1.1.0 | `8ea59166d3f63514d719fd82ba0abab7c91cedeb` | 2026-10-22T14:54:24Z | 2026-10-22T18:24:24+03:30 |
+| Zero checkpoint update | `3a4172aa6113f7ebb0a856060d729430f0ba511d` | 2026-10-22T14:54:01Z | 2026-10-22T18:24:01+03:30 |
+| 0.0 checkpoint update | `83389766a27e9dde6ce57fef068ec1d152d078fe` | 2026-10-22T14:54:07Z | 2026-10-22T18:24:07+03:30 |
+| PIRHA time-binding link | `73143ea93444b46013aa21f2a083c70090b40b80` | 2026-10-22T14:52:58Z | 2026-10-22T18:22:58+03:30 |
+| HAIF time-binding link | `a8a08a41cf4e63d927ca92bd577da937877b0703` | 2026-10-22T14:53:03Z | 2026-10-22T18:23:03+03:30 |
+| EVT-0096 time-binding link | `4ca0d818b77bade59496cd8328b4f7f8da02e957` | 2026-10-22T14:53:09Z | 2026-10-22T18:23:09+03:30 |
+| IN-010 time-binding link | `1d715d419c0b1386292a133157ebda83ebf2e690` | 2026-10-22T14:53:14Z | 2026-10-22T18:23:14+03:30 |
+| OUT-010 time-binding link | `9d193efc05242229f4dbef8dd9102827ec51f0ec` | 2026-10-22T14:53:18Z | 2026-10-22T18:23:18+03:30 |
+
+## Link audit boundary
+All links above were authored as repository-relative Markdown paths. Their target existence is checked separately by read-back; full semantic historical audit remains OPEN.
