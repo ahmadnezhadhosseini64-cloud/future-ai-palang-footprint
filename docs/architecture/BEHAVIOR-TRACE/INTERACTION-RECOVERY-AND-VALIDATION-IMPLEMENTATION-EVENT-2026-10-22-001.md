@@ -27,3 +27,32 @@ A committed workflow file is implementation evidence, not execution evidence. A 
 
 ## Recovery acceptance
 From input ID alone and output ID alone, the workflow must each independently locate the same fixture and assert the same interaction ID and reciprocal pair mapping. The JSON fixture must pass a real JSON Schema validator. Any mismatch remains an explicit gap.
+
+
+## Executed evidence — READ-BACK VERIFIED
+- Workflow run ID: 39750440075
+- Workflow URL: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39750440075
+- Workflow commit SHA: aa8f7beae0c5d3b5043686fc7c1e0a2f6f5b056f
+- Workflow start (UTC): 2026-10-22T08:47:52Z
+- Workflow start (Asia/Tehran): 2026-10-22T12:17:52+03:30
+- Workflow completed/updated (UTC): 2026-10-22T08:48:08Z
+- Workflow completed/updated (Asia/Tehran): 2026-10-22T12:18:08+03:30
+- Schema-validation job ID 119729379597: SUCCESS; started 08:47:55Z, completed 08:48:05Z.
+- Input recovery job ID 119729379857: SUCCESS; fresh checkout; recovered INT-20261022-001 from IN-20261022-001; started 08:47:55Z, completed 08:48:01Z.
+- Output recovery job ID 119729379868: SUCCESS; separate fresh checkout; recovered INT-20261022-001 from OUT-20261022-001; started 08:47:55Z, completed 08:48:00Z.
+- Schema SHA used: fabd5672964d4a3e1ce2d998f5638fd5062f8b29.
+- Fixture SHA used: 5b9b3fc2347164c6a20276324a1aed612361027e.
+- Workflow definition SHA used: 1f67e7552fee24717a4b32a2ac17cfedc23e892f.
+
+## Acceptance status after execution
+- [x] Workflow execution confirmed from GitHub Actions run metadata.
+- [x] JSON Schema meta-validation and fixture validation passed.
+- [x] Independent fresh-checkout recovery by input ID passed.
+- [x] Independent fresh-checkout recovery by output ID passed.
+- [x] Both recovery paths returned the same pair identity and required lineage fields.
+- [x] Run IDs, job IDs, UTC execution times, and Tehran equivalents recorded.
+- [ ] Production automatic capture of every future live conversation remains NOT IMPLEMENTED / NOT VERIFIED.
+- [ ] Gmail, Library, Buffer, Persistent Memory, and Dropbox remain NOT VERIFIED by this workflow.
+
+## Scope qualification
+PASS applies to the schema and synthetic repository fixture tested by this run. The independent fresh-checkout jobs are a repository recovery test; they do not prove ChatGPT runtime-memory recovery or continuous automatic capture of real conversations.
