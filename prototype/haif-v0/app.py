@@ -18,6 +18,7 @@ from typing import Any
 
 from fastapi import FastAPI, HTTPException, Query, status
 from pydantic import BaseModel, Field
+from jsonschema import Draft202012Validator
 
 
 def utc_now() -> str:
@@ -53,6 +54,21 @@ class DocumentCreate(BaseModel):
     version: str = Field(default="1.0.0", min_length=1, max_length=80)
     content: str = Field(min_length=1, max_length=200000)
     source_origin: str = Field(default="repository document", min_length=1, max_length=500)
+
+
+class InteractionPairCreate(BaseModel):
+    interaction_id: str = Field(pattern=r"^INT-[0-9]{8}-[0-9]{3}$")
+    input_id: str = Field(pattern=r"^IN-[0-9]{8}-[0-9]{3}$")
+    output_id: str = Field(pattern=r"^OUT-[0-9]{8}-[0-9]{3}$")
+    sequence: int = Field(ge=1)
+    version: str = Field(pattern=r"^[0-9]+\\.[0-9]+\\.[0-9]+$")
+    status: str = Field(pattern=r"^(DRAFT|OBSERVED|VALIDATED|REGISTERED|AMENDED|REJECTED)$")
+    time_evidence: dict[str, Any]
+    input: dict[str, Any]
+    output: dict[str, Any]
+    behavior_analysis: list[dict[str, Any]]
+    lineage: dict[str, Any]
+    verification: dict[str, Any]
 
 
 def create_app(db_path: str | Path | None = None) -> FastAPI:
@@ -97,6 +113,15 @@ def create_app(db_path: str | Path | None = None) -> FastAPI:
                     version TEXT NOT NULL,
                     content TEXT NOT NULL,
                     source_origin TEXT NOT NULL,
+                    created_at_utc TEXT NOT NULL,
+                    content_sha256 TEXT NOT NULL
+                );
+                CREATE TABLE IF NOT EXISTS interaction_pairs (
+                    interaction_id TEXT PRIMARY KEY,
+                    input_id TEXT NOT NULL UNIQUE,
+                    output_id TEXT NOT NULL UNIQUE,
+                    sequence INTEGER NOT NULL,
+                    record_json TEXT NOT NULL,
                     created_at_utc TEXT NOT NULL,
                     content_sha256 TEXT NOT NULL
                 );
@@ -324,6 +349,68 @@ def create_app(db_path: str | Path | None = None) -> FastAPI:
         if sha256_json(actual) != row["content_sha256"] or row["content_sha256"] != digest:
             raise HTTPException(status_code=500, detail="READ_BACK_HASH_MISMATCH")
         return {**actual, "content_sha256": digest, "status": "WRITE_READBACK_VERIFIED"}
+
+    def validate_interaction_record(record: dict[str, Any]) -> None:
+        schema_path = Path(__file__).resolve().parents[2] / "docs" / "architecture" / "BEHAVIOR-TRACE" / "interaction-pair-ledger.schema.json"
+        if not schema_path.is_file():
+            raise HTTPException(status_code=503, detail="INTERACTION_SCHEMA_UNAVAILABLE")
+        try:
+            schema = json.loads(schema_path.read_text(encoding="utf-8"))
+            Draft202012Validator(schema, format_checker=Draft202012Validator.FORMAT_CHECKER).validate(record)
+        except HTTPException:
+            raise
+        except Exception as exc:
+            raise HTTPException(status_code=422, detail={"error": "INTERACTION_SCHEMA_VALIDATION_FAILED", "reason": str(exc)[:500]}) from exc
+
+    @app.post("/api/v1/interactions", status_code=status.HTTP_201_CREATED)
+    def create_interaction_pair(payload: InteractionPairCreate) -> dict[str, Any]:
+        record = payload.model_dump()
+        suffixes = [record["interaction_id"].split("-", 1)[1], record["input_id"].split("-", 1)[1], record["output_id"].split("-", 1)[1]]
+        if len(set(suffixes)) != 1 or record["sequence"] != int(record["interaction_id"].rsplit("-", 1)[1]):
+            raise HTTPException(status_code=422, detail="INTERACTION_ID_PAIR_MISMATCH")
+        validate_interaction_record(record)
+        record_text = canonical_json(record)
+        digest = sha256_json(record)
+        with closing(connect()) as conn:
+            existing = conn.execute(
+                "SELECT * FROM interaction_pairs WHERE interaction_id = ? OR input_id = ? OR output_id = ?",
+                (record["interaction_id"], record["input_id"], record["output_id"]),
+            ).fetchone()
+            if existing is not None:
+                if (existing["interaction_id"] == record["interaction_id"] and
+                    existing["input_id"] == record["input_id"] and
+                    existing["output_id"] == record["output_id"] and
+                    existing["record_json"] == record_text and
+                    existing["content_sha256"] == digest):
+                    return {**record, "created_at_utc": existing["created_at_utc"], "content_sha256": digest, "status": "IDEMPOTENT_REPLAY_READBACK_VERIFIED"}
+                raise HTTPException(status_code=409, detail="INTERACTION_ID_CONFLICT")
+            created_at = utc_now()
+            conn.execute(
+                "INSERT INTO interaction_pairs (interaction_id, input_id, output_id, sequence, record_json, created_at_utc, content_sha256) VALUES (?, ?, ?, ?, ?, ?, ?)",
+                (record["interaction_id"], record["input_id"], record["output_id"], record["sequence"], record_text, created_at, digest),
+            )
+            conn.commit()
+            row = conn.execute("SELECT * FROM interaction_pairs WHERE interaction_id = ?", (record["interaction_id"],)).fetchone()
+        if row is None:
+            raise HTTPException(status_code=500, detail="INTERACTION_READ_BACK_FAILED")
+        stored = json.loads(row["record_json"])
+        if canonical_json(stored) != record_text or sha256_json(stored) != row["content_sha256"] or row["content_sha256"] != digest:
+            raise HTTPException(status_code=500, detail="INTERACTION_READ_BACK_HASH_MISMATCH")
+        return {**stored, "created_at_utc": row["created_at_utc"], "content_sha256": digest, "status": "WRITE_READBACK_VERIFIED"}
+
+    @app.get("/api/v1/interactions/{lookup_id}")
+    def get_interaction_pair(lookup_id: str) -> dict[str, Any]:
+        with closing(connect()) as conn:
+            row = conn.execute(
+                "SELECT * FROM interaction_pairs WHERE interaction_id = ? OR input_id = ? OR output_id = ?",
+                (lookup_id, lookup_id, lookup_id),
+            ).fetchone()
+        if row is None:
+            raise HTTPException(status_code=404, detail="INTERACTION_NOT_FOUND")
+        record = json.loads(row["record_json"])
+        if sha256_json(record) != row["content_sha256"]:
+            raise HTTPException(status_code=500, detail="INTERACTION_HASH_MISMATCH")
+        return {**record, "created_at_utc": row["created_at_utc"], "content_sha256": row["content_sha256"], "status": "STORED_READBACK_VERIFIED"}
 
     @app.get("/api/v1/search")
     def search_documents(q: str = Query(min_length=1, max_length=200)) -> dict[str, Any]:
