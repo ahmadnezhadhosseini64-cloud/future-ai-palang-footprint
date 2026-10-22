@@ -75,3 +75,11 @@ PRESERVE → ANCHOR → DOCUMENT → REGISTER → READ-BACK → MATCH → VERIFY
 - Dropbox: OPEN / NOT VERIFIED.
 - بازیابی سرتاسری در محیط جداگانه: NOT RUN.
 - اقدام بعدی فعال: `BOART-FOLLOWUP-01` — ممیزی کامل مرجع مادر و گراف تاریخی؛ پس از آن آزمون واقعی Dropbox و بازیابی بیرونی.
+
+
+## Library mirror write and read-back evidence
+- Independent mirror path: `/Future AI/Palang Footprint/Master Reference Vault/Reference Documents/LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md`.
+- Library file ID: `file_000000003b7c81f490ba9d02586b2cc9`; stable Library file ID: `libfile_7ac3c9a6ec14819198eb2751e204aa48`.
+- Upload/overwrite metadata UTC: `2026-10-22T05:47:33Z`; derived Tehran: `2026-10-22 09:17:33`.
+- Exact file was read back from Library. Stable ID, next action `BOART-FOLLOWUP-01`, and destination-state section matched. Library is `REGISTERED / READ-BACK VERIFIED` for this artifact.
+- This does not establish Buffer, Persistent Memory or Dropbox persistence. Their statuses remain `NOT VERIFIED`; isolated end-to-end recovery remains `NOT RUN`.
