@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `PALANG-DUAL-TRACK-BEHAVIORAL-ARCHITECTURE-2026-10-22-001`
 - Production ID / شناسهٔ تولید: `DTBA-2026-10-22-001`
-- Version / نسخه: 1.0.1
+- Version / نسخه: 1.0.2
 - Owner / مالک: احمد پلنگ (Ahmad Nezhadhosseini)
 - Project / پروژه: Future AI / Palang Footprint — HAIF
 - Status / وضعیت: ACTIVE / LIVING / GOVERNING / OPEN FOR GROWTH
@@ -118,3 +118,5 @@
 - Time binding for the full chain must be added and read back; a final link-by-link audit is still required.
 - Buffer, Persistent Memory and Dropbox remain separate destinations; no state is inferred from repository success.
 - Next continuation anchor: `docs/0.0/anchors/PALANG-0.0-DTRC-ARCHITECTURE-CONTINUATION-2026-10-22-001.md`. Run a real DTRC test, verify all links and actual commit timestamps, then resume the previously open Dropbox connection and storage/retrieval test.
+
+- Time binding / پابند زمانی: [TIME-BINDING-DTBA-2026-10-22-001](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-DTBA-2026-10-22-001.md).
