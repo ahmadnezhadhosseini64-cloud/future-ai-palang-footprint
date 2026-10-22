@@ -53,9 +53,9 @@
 
 ## PIRHA — حاکمیت ثبت تعاملی و ممیزی تاریخی
 
-- سند مرجع مادر: [PIRHA](../docs/reference/REFERENCE-DOCUMENTS/PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001.md).
+- سند مرجع مادر: [PIRHA](../../docs/reference/REFERENCE-DOCUMENTS/PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001.md).
 - زوج تعامل جاری: `INT-20261022-009` — لنگرهای مستقل IN-009 و OUT-009 در `docs/0.0/anchors/`.
-- رویداد جاری: [EVT-0095](../docs/architecture/BEHAVIOR-TRACE/EVT-0095-INTERACTION-GOVERNANCE-AND-HISTORICAL-AUDIT-2026-10-22.md).
+- رویداد جاری: [EVT-0095](../../docs/architecture/BEHAVIOR-TRACE/EVT-0095-INTERACTION-GOVERNANCE-AND-HISTORICAL-AUDIT-2026-10-22.md).
 - رویداد تاریخی EVT-0093 اکنون فایل مستقل دارد؛ بازخوانی و اتصال زمانی آن باید تأیید شود.
 - نسخهٔ مدل مادر HAIF: 1.2.0. معماری باز و در حال تکامل است.
 - گام بعد: اجرای ممیزی ساختاری تازه، حفظ شواهد run/commit/artifact، سپس تطبیق معنایی موارد باز؛ Dropbox همچنان OPEN / WAITING.
