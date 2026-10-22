@@ -419,3 +419,5 @@ Repository artifacts for INT-015/EVT-0103/inbox are being registered and must be
 
 ### Status
 ثبت مخزنی این تعامل به‌صورت افزایشی انجام شده و بازخوانی نهایی باید جداگانه تأیید شود. قرارداد معماری ACTIVE / LIVING است؛ دریافت خودکار میزبان و شکارچی دائماً فعال هنوز OPEN / NOT PROVEN تحت Issue #20 است.
+
+- Time binding for INT-20261022-015: [TIME-BINDING-INT-20261022-015](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-015.md). Actual repository commit UTC and derived Tehran equivalents are recorded there; exact user-message time remains NOT CAPTURED.
