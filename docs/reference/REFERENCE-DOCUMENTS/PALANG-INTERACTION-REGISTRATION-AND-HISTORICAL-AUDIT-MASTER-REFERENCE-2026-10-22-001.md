@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-2026-10-22-001`
 - Production ID / شناسهٔ تولید: `PIRHA-2026-10-22-001`
-- Version / نسخه: 1.4.0
+- Version / نسخه: 1.5.0
 - Owner / مالک: احمد پلنگ
 - Project / پروژه: Future AI / Palang Footprint — HAIF
 - Status / وضعیت: ACTIVE / LIVING / OPEN FOR GROWTH
@@ -178,3 +178,14 @@
 - زمان: 1,330 زوج UTC/تهران نرمال‌شده و یک مورد مبهم در EVT-0089 خط 21؛ وضعیت زمانی همچنان REVIEW_REQUIRED.
 - پذیرش: `STRUCTURAL-LINK-AUDIT=PASS`; `SEMANTIC-HISTORICAL-AUDIT=OPEN`; `TIMESTAMP-AMBIGUITY=OPEN`; `BUFFER/PERSISTENT MEMORY/DROPBOX=NOT VERIFIED`.
 - این نتیجه فقط به snapshot و artifact مشخص بالا تعلق دارد؛ برای تغییرات بعدی باید دوباره آزمون اجرا شود.
+
+
+## الحاقیهٔ v1.5.0 — الزام خودبسندگی و دروازهٔ تأیید مالک
+
+- سند مادر حاکم جدید: [SCEMRS v1.0.0](./PALANG-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE-STANDARD-2026-10-22-001.md).
+- رویداد: [EVT-0098](../../architecture/BEHAVIOR-TRACE/EVT-0098-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE-AND-OWNER-APPROVAL-2026-10-22.md).
+- لنگرها: [IN-011](../../0.0/anchors/PALANG-0.0-IN-20261022-011-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE.md) و [OUT-011](../../0.0/anchors/PALANG-0.0-OUT-20261022-011-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE.md).
+- از این نسخه، هر سندی که عنوان «سند مرجع مادر» دارد باید خودش شامل قرارداد خودبسندگی، دستور اجرای مستقل، پروتکل انتقال، آزمون پذیرش، بازیابی و دروازهٔ تأیید صریح احمد پلنگ باشد؛ ارجاع به سند بیرونی به‌تنهایی کافی نیست.
+- عامل می‌تواند پیشنهاد بسازد، اما تغییر حاکم پیش از تأیید صریح مالک در `PENDING_OWNER_APPROVAL` می‌ماند. سکوت یا «ادامه بده» تأیید تغییر معماری نیست.
+- وضعیت پذیرش این الزام: در مخزن نوشته شده؛ ادغام و راستی‌آزمایی باید با بازخوانی فایل‌های مادر، نمایه و ممیزی تازه تأیید شود. بافر/حافظهٔ پایدار/Dropbox همچنان مستقل و تأییدنشده‌اند.
+
