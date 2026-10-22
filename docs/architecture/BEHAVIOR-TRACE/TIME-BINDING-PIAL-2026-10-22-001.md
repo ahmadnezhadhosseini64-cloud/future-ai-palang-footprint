@@ -25,3 +25,7 @@
 - [OUT anchor](../../0.0/anchors/PALANG-0.0-OUT-20261022-002-EVERY-INTERACTION-ANCHOR-GOVERNANCE.md)
 - [PIAL master reference](../../reference/REFERENCE-DOCUMENTS/PER-INTERACTION-IN-OUT-TEMPORAL-ANCHOR-LIVING-MASTER-REFERENCE-2026-10-22-001.md)
 - [LBAF master reference](../../reference/REFERENCE-DOCUMENTS/LIVING-BEHAVIOR-ARCHITECTURE-FORESIGHT-MASTER-REFERENCE-2026-10-22-001.md)
+
+
+## مدرک بازخوانی timestampهای commit
+جدول commitهای واقعی و زمان متناظر تهران در [EVT-0089-TIMESTAMP-READBACK](./EVT-0089-TIMESTAMP-READBACK-2026-10-22-001.md) ثبت شده است. زمان commit خود این پابند را از metadata commit واقعی آن بخوان؛ از self-certification استفاده نکن.
