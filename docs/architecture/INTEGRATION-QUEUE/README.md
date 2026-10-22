@@ -1118,3 +1118,13 @@ The queue index and the timestamp case must each be read back after this update.
 - ساختار: PASS روی snapshot `0f29c9aba688ca1c72197bd3d2bad151ccbce139`, صفر پیوند محلی شکسته.
 - باز: طبقه‌بندی 57/68/7/24 گروه برخورد، 11 گروه تکراری، و ابهام زمانی EVT-0089 خط 21.
 - گام بعدی: طبقه‌بندی معنایی گروه‌ها بدون حذف خودکار فایل‌ها؛ رفع ابهام زمان فقط با شاهد معتبر.
+
+
+## CMIND-2026-10-22-001 — ادامهٔ مدل اولیه و جلوگیری از انحراف مسیر
+- **موضوع:** ادامه از مدل اولیه به پیاده‌سازی دفتر زوج تعامل و بازیابی پس از شروع مجدد؛ ثبت درس خطای انحراف به شاخهٔ Dropbox.
+- **وضعیت:** REPOSITORY RECORDS CREATED / READ-BACK ID CHECK PASS; runtime pair-ledger implementation remains OPEN.
+- **سند مرجع مادر:** [CMIND](../../reference/REFERENCE-DOCUMENTS/CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-MASTER-REFERENCE-2026-10-22-001.md).
+- **رویداد:** [EVT-0091](../BEHAVIOR-TRACE/EVT-0091-CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-2026-10-22.md).
+- **زوج:** [IN-20261022-005](../../0.0/anchors/PALANG-0.0-IN-20261022-005-CONTINUE-MODEL-INITIAL.md) / [OUT-20261022-005](../../0.0/anchors/PALANG-0.0-OUT-20261022-005-CONTINUE-MODEL-INITIAL.md).
+- **اقدام بعدی:** توسعهٔ `prototype/haif-v0/` برای ثبت افزایشی INT/IN/OUT، idempotency، lookup از هر شناسه و آزمون cold-start واقعی؛ پیگیری در [Issue #20](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/20).
+- **تفکیک شاخه‌ها:** مدل اولیه = ACTIVE TARGET؛ ممیزی معنایی تاریخی = PARALLEL BACKLOG؛ Dropbox = INDEPENDENT WAITING BRANCH (OPEN / WAITING).
