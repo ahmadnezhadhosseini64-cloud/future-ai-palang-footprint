@@ -88,3 +88,15 @@ GMAIL-CONNECTION-AND-READBACK-01:
 - `ACTIVE / LIVING` برای این سند یعنی فرایند و شکاف پیگیری می‌شوند؛ به معنی ذخیره شدن در همهٔ مقصدها نیست.
 - `INCOMPLETE ≠ LOST`; `PENDING ≠ BURIED`; `INTERRUPTED ≠ FAILED`.
 - اگر دسترسی مسدود است، سند مرجع کامل در مخزن نگه داشته می‌شود و شکاف با شناسهٔ بازیابی مشخص باقی می‌ماند.
+
+
+## 10. شواهد اجرای ثبت این نسخه
+- رویداد EVT-0039 در مخزن ثبت و بازخوانی شد: `docs/architecture/BEHAVIOR-TRACE/EVT-0039-GMAIL-REFERENCE-REGISTRATION-GAP-2026-10-22.md`.
+- همین سند مرجع در Library ثبت و مستقلاً بازخوانی شد: `/Future AI/Palang Footprint/Master Reference Vault/Reference Documents/PALANG-GMAIL-AND-ALL-DESTINATION-REGISTRATION-GOVERNANCE-2026-10-22-001.md`.
+- شناسهٔ Library: `libfile_a24b346829dc8191b632564f529c7f0e`; backing file `file_000000006be081f4975669978f3f4886`.
+- بازخوانی Library موارد زیر را پیدا کرد: Stable ID، EVT-0039، وضعیت Gmail، اقدام بعدی `GMAIL-CONNECTION-AND-READBACK-01` و چرخهٔ کامل ثبت.
+- ثبت سند مادر در مخزن: commit `231bfe55a668cdf8cc9082907f93ca23067e3995`; UTC `2026-10-22T06:05:50Z`; تهران `2026-10-22 09:35:50`.
+- ثبت رویداد EVT-0039 در مخزن: commit `7734020f9b09596c796506d544602ccb073946bd`; UTC `2026-10-22T06:05:31Z`; تهران `2026-10-22 09:35:31`.
+- به‌روزرسانی رویداد با شاهد Library: commit `aa99e706ec061e2220eaecec27aa9501df38ac78`; UTC `2026-10-22T06:07:29Z`; تهران `2026-10-22 09:37:29`.
+- زمان دقیق عملیات بازخوانی Library از ابزار برنگشت؛ UNKNOWN / UNVERIFIED. این زمان‌ها، زمان commit هستند نه زمان بازخوانی.
+- Gmail همچنان BLOCKED / NOT VERIFIED؛ در این اجرا هیچ ایمیلی ارسال یا از Gmail بازیابی نشده است.
