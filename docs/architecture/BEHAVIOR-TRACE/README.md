@@ -313,3 +313,10 @@
 - 0.0: [PALANG-0.0-UTC-INPUT-TO-OUTPUT-BEHAVIOR-ANCHOR-2026-10-22-001](../../0.0/anchors/PALANG-0.0-UTC-INPUT-TO-OUTPUT-BEHAVIOR-ANCHOR-2026-10-22-001.md).
 - Reference: [UILA living governance](../../reference/REFERENCE-DOCUMENTS/UTC-INPUT-TO-OUTPUT-INTERACTION-ANCHOR-LIVING-GOVERNANCE-2026-10-22-001.md).
 - Status ACTIVE / LIVING / OPEN / EVOLVABLE; input/output host timestamps and internal thinking duration remain unmeasured when not exposed. Gmail remains BLOCKED / NOT VERIFIED.
+
+
+## رویداد EVT-0051 — ادعای محدودیت Gmail و لنگر مستقل رفتار تعاملی
+- [سند رویداد EVT-0051](./EVT-0051-GMAIL-ACCESS-CLAIM-AND-LIVING-0.0-ANCHOR-2026-10-22.md)
+- [سند مرجع مادر GACIB](../../reference/REFERENCE-DOCUMENTS/GMAIL-ACCESS-CLAIM-AND-INTERACTION-BEHAVIOR-LIVING-MASTER-REFERENCE-2026-10-22-001.md)
+- [طرح اولیه اپ رفتارشناسی تعاملی](../BEHAVIOR-SCIENCE-PALANG-FUTURE-AI/INTERACTIVE-BEHAVIOR-APP-ARCHITECTURE-INITIAL-2026-10-22-001.md)
+- وضعیت: ادعای کاربر حفظ شده؛ ابزار فعلی Gmail را DISABLED_BY_ADMIN/NOT_AVAILABLE نشان می‌دهد؛ این نتیجه تاریخچه ادعاشده را رد یا تأیید نمی‌کند. ارسال Gmail انجام نشده.
