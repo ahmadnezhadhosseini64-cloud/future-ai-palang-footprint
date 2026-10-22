@@ -52,3 +52,10 @@
 - Exact user-message timestamp: NOT CAPTURED.
 - Assistant-generation timestamp: NOT EXPOSED.
 - Repository registration time must come from actual commit UTC; Tehran equivalent is derived from that instant and does not replace message time.
+
+
+## Repository read-back and timestamp reconciliation
+- [TIME-BINDING-INT-20261022-015](./TIME-BINDING-INT-20261022-015.md) records actual commit UTC and the matching Tehran equivalent for the registration artifacts.
+- After write, the event, both independent anchors, inbox item, UPRM/LBAF/CMIND masters, model-initial queue, 0.0 index, behavior-trace index and live inbox index were fetched again; expected IDs and links were present.
+- Repository registration: REGISTERED / READ-BACK VERIFIED. Architecture rule: ACTIVE / LIVING. Runtime auto-capture and always-on hunter: OPEN / NOT PROVEN.
+- Exact user-message and assistant-generation timestamps remain unavailable; repository commit times do not replace them.
