@@ -899,3 +899,15 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - لنگر خروجی مستقل: `docs/0.0/anchors/PALANG-0.0-OUT-20261022-007-LIVING-REGISTRATION.md` — `OUT-20261022-007`.
 - پیوند زمانی UTC/تهران: `docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-PLRA-2026-10-22-001.md`.
 - وضعیت بافر، حافظهٔ پایدار و Dropbox در این ثبت مستقلاً تأیید نشده‌اند؛ کار اتصال و آزمون بازیابی Dropbox همچنان باز است.
+
+
+## زوج تعامل جاری — INT-20261022-008 / DTRC
+
+- لنگر ورودی مستقل: [IN-20261022-008](anchors/PALANG-0.0-IN-20261022-008-BEHAVIORAL-ARCHITECTURE-UPDATE.md).
+- لنگر خروجی مستقل: [OUT-20261022-008](anchors/PALANG-0.0-OUT-20261022-008-BEHAVIORAL-ARCHITECTURE-UPDATE.md).
+- سند مرجع مادر: [DTRC — معماری رفتارشناسی دو‌مسیره](../reference/REFERENCE-DOCUMENTS/PALANG-DUAL-TRACK-BEHAVIORAL-ARCHITECTURE-MASTER-REFERENCE-2026-10-22-001.md).
+- رویداد: [EVT-0094](../architecture/BEHAVIOR-TRACE/EVT-0094-DUAL-TRACK-BEHAVIORAL-ARCHITECTURE-2026-10-22.md).
+- نسخهٔ مدل مادر HAIF: 1.1.0؛ جای‌گذاری افزایشی ثبت شده است.
+- اقدام بعدی: بازخوانی و تطبیق نهایی پیوندها و زمان‌ها؛ سپس ساخت لنگر ادامهٔ مستقل ۰.۰ و ازسرگیری آزمون اتصال/ذخیره‌سازی/بازیابی Dropbox.
+- زمان دقیق پیام کاربر در دسترس نیست؛ زمان ثبت مخزن از commitهای واقعی و به UTC مرجع گرفته می‌شود.
+- وضعیت مقصدها: این ثبت اثبات مخزن است؛ Buffer، Persistent Memory و Dropbox جداگانه تأیید نشده‌اند.
