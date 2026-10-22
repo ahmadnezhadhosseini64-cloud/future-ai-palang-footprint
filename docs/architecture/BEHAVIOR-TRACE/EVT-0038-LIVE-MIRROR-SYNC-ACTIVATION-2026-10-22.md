@@ -67,7 +67,7 @@ This event records the process activation and must be updated after the policy f
 The observatory, integration queue and 0.0 index were fetched again after the writes. Each contains the EVT-0038 and policy path, and each records the true separate status of Buffer, Persistent Memory and Dropbox. Previous 0.0 anchors remain indexed; none was overwritten.
 
 ### Final destination status
-- Repository policy/event/indexes: REGISTERED; final read-back pending this event's own closing update.
+- Repository policy/event/indexes: REGISTERED / READ-BACK VERIFIED after the closing update; final event revision is linked below.
 - Library: REGISTERED / READ-BACK VERIFIED for this exact policy version.
 - Buffer: NOT VERIFIED.
 - Persistent Memory: NOT VERIFIED.
@@ -77,3 +77,8 @@ The observatory, integration queue and 0.0 index were fetched again after the wr
 
 ### Next action
 Continue BOART-FOLLOWUP-01 (master-reference and historical graph reconciliation), then BOART-FOLLOWUP-02 (Dropbox connection/write/retrieve/match), then BOART-FOLLOWUP-03 (isolated external recovery).
+
+
+## Closing revision and read-back
+- Closing event commit: 77b97a9e290e16a9c3ffaa67c12e90777b51175b — UTC 2026-10-22T05:53:36Z; Asia/Tehran 2026-10-22 09:23:36.
+- The event was fetched again after this commit. Its Stable ID, EVT-0038, policy link, Library item ID, destination statuses and next-action chain were present. The event's own read-back time is not exposed by the tool and remains UNKNOWN / UNVERIFIED.
