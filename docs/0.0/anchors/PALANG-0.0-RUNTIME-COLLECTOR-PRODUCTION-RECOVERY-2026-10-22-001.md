@@ -29,3 +29,6 @@
 - سند مادر: [LBAF](../../reference/REFERENCE-DOCUMENTS/LIVING-BEHAVIOR-ARCHITECTURE-FORESIGHT-MASTER-REFERENCE-2026-10-22-001.md)
 
 این لنگر خودِ پیاده‌سازی نیست؛ وضعیت runtime collector و cold-start تا اجرای مستقل OPEN / NOT VERIFIED است.
+
+
+پابند زمانی: [TIME-BINDING-LBAF](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-LBAF-2026-10-22-001.md). زمان canonical این لنگر از آخرین commit واقعی آن خوانده می‌شود.
