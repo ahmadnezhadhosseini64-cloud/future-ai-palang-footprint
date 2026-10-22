@@ -86,3 +86,26 @@ ACTIVE / LIVING / OPEN / EVOLVABLE / GOVERNING یعنی معماری و سند �
 - Rule: classify each candidate continuation as ACTIVE TARGET, PARALLEL BACKLOG, or INDEPENDENT WAITING BRANCH before executing. An unresolved branch such as Dropbox must not displace the user-directed model-initial continuation.
 - Current active implementation target remains Issue #20: authorized interaction-pair runtime, stable INT/IN/OUT lookup, durable local storage, idempotency, hash-verified read-back, and restart recovery tests.
 - This addendum records governance and routing only; it does not claim runtime pair-ledger implementation or production automatic capture has been completed.
+
+
+---
+
+## Addendum v1.0.1 — دروازهٔ کشف رفتار و جلوگیری از منفی کاذب
+
+- Trigger: user identified that the previous assistant outputs contained important architectural rules that were not fully harvested into evidence-backed candidates, open gaps and next actions.
+- Canonical event: [EVT-0103](../../architecture/BEHAVIOR-TRACE/EVT-0103-BEHAVIOR-HUNTER-MISSED-DETECTION-AND-ID-COLLISION-CORRECTION-2026-10-22.md).
+- Inbox: [INBOX-20261022-002](../../architecture/LIVE-INBOX/entries/INBOX-20261022-002.md).
+- Runtime gap: [Issue #20](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/20).
+
+### New required behavior-hunter gate
+Before finalizing a materially project-related response, inspect the visible user input and assistant output for: architectural rules, repeated patterns, user feedback, observed errors, contradictions, missing evidence, open gaps, new components and actionable next steps. Each candidate is labelled OBSERVATION, INFERENCE, HYPOTHESIS or UNKNOWN and linked to the exact visible evidence. Then perform identifier uniqueness checks, connect accepted findings to the living inbox, parent master, relevant component and implementation queue, and verify links by read-back.
+
+### Dual-track architecture
+- Track A — Interaction capture: INT/IN/OUT, provenance, UTC repository registration time and Tehran equivalent, EVT, inbox, parent master and read-back.
+- Track B — Behavioral discovery: candidate extraction from both input and output, classification, evidence, review, model/gap/action linkage, and versioned growth.
+
+### Failure evidence
+The prior workflow missed architectural candidates and reused EVT-0093 despite a pre-existing EVT-0093 event. The collision is documented, not concealed; the legacy colliding file now points to canonical EVT-0103. This shows the uniqueness rule existed in architecture but was not enforced as an effective pre-write gate in that operation.
+
+### Boundary
+This is a workflow/control definition plus repository evidence, not proof of an always-on background hunter. Runtime collection, candidate extraction, permission boundary, durable storage and cold-start recovery remain OPEN / NOT PROVEN until implemented and independently tested under Issue #20.
