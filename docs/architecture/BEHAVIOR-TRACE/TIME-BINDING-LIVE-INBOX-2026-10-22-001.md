@@ -18,3 +18,14 @@
 
 ## Separate timestamp boundary
 The exact user-message timestamp and assistant-generation timestamp were not exposed in the available interface. They are not inferred from these commit timestamps. These times prove repository registration events only.
+
+
+## Latest verified follow-up commits
+These are later last-change timestamps for the named artifacts, not the original creation times above.
+
+| Artifact / operation | Commit | Repository UTC | Asia/Tehran equivalent |
+|---|---|---|---|
+| CMIND master — read-back reconciliation addendum | [7931080](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/793108023fa60c708720b0f2780efa163262a39b) | 2026-10-22T17:56:17Z | 2026-10-22T21:26:17+03:30 |
+| Live Inbox governance — verification checkpoint | [d7fe6db](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/d7fe6db38bc62291292ec4a1dbc7e89a42e3b7b0) | 2026-10-22T17:56:46Z | 2026-10-22T21:26:46+03:30 |
+
+The remaining artifacts' latest-change times should be refreshed from their own last-change commits when a later edit occurs; do not treat their initial creation timestamps as the time of a subsequent modification. User-message and assistant-generation timestamps remain unavailable and are not inferred.
