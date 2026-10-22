@@ -63,16 +63,17 @@ A standalone recovery test must retrieve only the independent reference document
 
 ## 7. Current known state
 
-- Existing behavior rule and interaction trace were found in the repository before this folder was created.
-- This folder is newly created; its initial commit time must be taken from actual GitHub commit metadata.
-- The standalone recovery test is linked as `BEHAVIOR-OBSERVATORY-RECOVERY-TEST-2026-10-22-001.md`.
-- Repository verification is pending until both files are fetched again and the expected fields are checked.
-- Buffer, Library, Persistent Memory and Dropbox are not verified by repository operations.
+- Existing behavior rule and interaction trace were found and linked.
+- The independent recovery test was run; final result PASS 10/10 criteria.
+- The standalone reference was fetched again; read-back blob SHA `363dbc6ed14118c5ae7cc5b14903cb644edf37d3`, retrieved length 5,675 characters.
+- EVT-0035 records the C4 false-negative evaluator behavior and correction; companion reference is in `docs/reference/REFERENCE-DOCUMENTS/`.
+- Repository file existence and content read-back are verified for the recorded files. Exact tool read-back timestamps were not returned and remain UNKNOWN / UNVERIFIED.
+- Buffer, external Library, Persistent Memory and Dropbox are not verified by repository operations.
 
-## 8. Next actions
+## 8. Mandatory open follow-up work
 
-1. Run the independent-document recovery test and record exact checks/results.
-2. Link this folder and test to the behavior rule, interaction trace, architecture queue and 0.0 index.
-3. Read back every modified file and verify identifiers/links.
-4. Keep any unverified destination OPEN/PENDING.
-5. Accumulate future interaction observations as evidence-backed events, not as unsupported personality conclusions.
+1. **Architecture/master-reference audit:** finish link/ID/anchor reconciliation across master reference, behavior rule/trace, 0.0 and integration queue; read back and verify.
+2. **Dropbox failover:** establish the connection, write a test reference, retrieve it from Dropbox and compare content; keep OPEN until both write and retrieval evidence exist.
+3. **External end-to-end recovery:** prove a copy exists outside the repository, then reconstruct in a separate test environment. Do not delete the production repository; simulate repository loss and document each result.
+
+Continue collecting observable interaction and evaluator behavior as evidence-backed events, distinguishing observed facts from interpretation. Do not claim unverified destination persistence.
