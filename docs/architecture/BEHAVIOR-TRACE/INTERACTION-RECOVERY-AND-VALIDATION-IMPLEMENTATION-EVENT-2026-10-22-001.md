@@ -56,3 +56,11 @@ From input ID alone and output ID alone, the workflow must each independently lo
 
 ## Scope qualification
 PASS applies to the schema and synthetic repository fixture tested by this run. The independent fresh-checkout jobs are a repository recovery test; they do not prove ChatGPT runtime-memory recovery or continuous automatic capture of real conversations.
+
+
+## Governance reconciliation — identifier collision found and resolved
+A repository read-back found that the canonical project already had an EVT-0086 at:
+docs/architecture/BEHAVIOR-TRACE/EVT-0086-EXECUTABLE-LEDGER-VALIDATION-AND-RECOVERY-SMOKE-TEST-2026-10-22.md
+To preserve history without deleting this file, this document is retained only as a historical duplicate-ID notice and is not the canonical EVT-0086. The canonical implementation event remains ELVR-HAIF-2026-10-22-001. The actual test result is registered under EVT-0087:
+docs/architecture/BEHAVIOR-TRACE/EVT-0087-INTERACTION-VALIDATION-RECOVERY-RESULT-2026-10-22.md
+Future links and index entries must use canonical EVT-0086 for the implementation plan and EVT-0087 for the observed execution result.
