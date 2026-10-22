@@ -25,7 +25,7 @@
 - Event ID: `EVT-0040`
 - Anchor status: ACTIVE / LIVING / OPEN
 - Input captured: YES — متن درخواست جاری و ادعای کاربر در همین رویداد حفظ شده است.
-- Output captured: YES — نتیجهٔ ثبت مخزن و شواهد بازخوانی پس از انجام عملیات در همین رویداد تکمیل می‌شود.
+- Output captured: YES — رویداد در مخزن ثبت و سپس مستقل بازخوانی شد؛ شناسه و وضعیت با محتوای برگشتی تطبیق یافتند.
 - Prior anchors: PRESERVED; no overwrite, no closure.
 - Continuity rule: FOUND ≠ RETRIEVED ≠ VALIDATED ≠ REVIVED ≠ VERIFIED ≠ ACTIVE.
 
@@ -33,8 +33,8 @@
 - کاربر در این نوبت درخواستی را در تاریخ محلی 2026-10-22 مطرح کرد؛ زمان دقیق پیام در سطح ثانیه در شواهد ابزار این سند در دسترس نیست، بنابراین زمان دقیق پیام: UNKNOWN.
 - زمان مرجع ثبت مخزن باید timestamp واقعی commit نهایی باشد، بر مبنای UTC؛ زمان تهران فقط از همان لحظهٔ UTC با افزودن 03:30 محاسبه می‌شود.
 - زمان پیام، زمان اجرای عملیات، زمان commit، زمان بازخوانی مخزن و زمان احتمالی Gmail رخدادهای جداگانه‌اند؛ هر زمانِ ثبت‌نشده UNKNOWN می‌ماند.
-- Canonical repository timestamp: PENDING until commit metadata is fetched.
-- Tehran equivalent: PENDING calculation from the same commit instant.
+- زمان ثبت اولیهٔ رویداد در مخزن (commit ایجاد): UTC `2026-10-22T06:15:09Z`; معادل تهران `2026-10-22 09:45:09`.
+- بازخوانی و به‌روزرسانی شواهد در commitهای بعدی نیز در سند مادر ثبت می‌شوند؛ timestamp مرجع آخرین تغییر باید از metadata آخرین commit همین فایل خوانده شود.
 
 ## 5. توسعهٔ پروتکل ورودی/خروجی تعاملی
 هر رویداد آینده باید این زنجیره را به‌صورت جداگانه حفظ کند:
@@ -50,7 +50,7 @@
 10. CONTINUITY — پیوند به رویداد/لنگر بعدی بدون حذف زنجیرهٔ قبلی.
 
 ## 6. وضعیت مقصدها
-- Repository: ثبت این رویداد؛ PASS فقط پس از commit واقعی و بازخوانی.
+- Repository: WRITE=PASS; READ-BACK=PASS; MATCH=PASS برای این فایل؛ بازخوانی نهایی شناسه، EVT-0040، لنگر مستقل، وضعیت ACTIVE/LIVING/OPEN و اقدام Gmail را تأیید کرد.
 - Library: برای این رویداد جداگانه ثبت/بازخوانی نشده، مگر اینکه شواهد مستقلی بعداً اضافه شود.
 - Gmail: BLOCKED / NOT VERIFIED در محیط فعلیِ قابل‌مشاهده؛ EVT-0039 می‌گوید اتصال Gmail/Drive برابر DISABLED_BY_ADMIN / NOT_AVAILABLE بوده است. این وضعیت فعلی، ادعای کاربر دربارهٔ دسترسی تاریخی را به‌تنهایی رد نمی‌کند.
 - Buffer: NOT VERIFIED.
