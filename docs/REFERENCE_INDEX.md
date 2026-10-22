@@ -497,3 +497,10 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - لنگر مستقل: [PALANG-0.0-FIRST-IO-BEHAVIOR-MODEL-2026-10-22-001](0.0/anchors/PALANG-0.0-FIRST-IO-BEHAVIOR-MODEL-2026-10-22-001.md).
 - قرارداد نام‌گذاری زوج‌ها: `INT-YYYYMMDD-NNN` / `IN-YYYYMMDD-NNN` / `OUT-YYYYMMDD-NNN`.
 - وضعیت: ACTIVE / LIVING / OPEN / EVOLVABLE؛ پیاده‌سازی runtime و آزمون بازیابی در صف ادامه است.
+
+ 
+## سند مرجع مادر AOGM — رشد افزایشی معماری
+- [AOGM — سند مرجع مادر رشد افزایشی معماری رفتارشناسی](reference/REFERENCE-DOCUMENTS/APPEND-ONLY-ARCHITECTURE-GROWTH-MASTER-REFERENCE-2026-10-22-001.md).
+- [EVT-0084 — رویداد حاکمیتی](architecture/BEHAVIOR-TRACE/EVT-0084-APPEND-ONLY-ARCHITECTURE-GROWTH-AND-MASTER-GOVERNANCE-2026-10-22.md).
+- [لنگر مستقل ۰.۰](0.0/anchors/PALANG-0.0-APPEND-ONLY-ARCHITECTURE-GROWTH-2026-10-22-001.md).
+- اصل حاکم: معماری اولیه بازنویسی نمی‌شود؛ فقط با افزوده‌های نسخه‌دار رشد می‌کند.
