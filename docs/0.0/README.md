@@ -969,3 +969,11 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - پابند زمانی INT-011: [TIME-BINDING-INT-20261022-011](../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-011.md).
 
 - راستی‌آزمایی سند مادر SCEMRS: [Living Architecture Audit #39805549516](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39805549516)؛ صفر پیوند محلی شکسته، صفر خطای رمزگشایی؛ ممیزی معنایی تاریخچه هنوز باز است.
+
+
+## نقطهٔ پیگیری ممیزی شناسه‌ها و زمان — INT-20261022-012
+- سند مرجع مادر: [PICTR-2026-10-22-001 v1.0.1](../reference/REFERENCE-DOCUMENTS/PALANG-IDENTITY-COLLISION-AND-TIMESTAMP-RECONCILIATION-MASTER-REFERENCE-2026-10-22-001.md).
+- ورودی مستقل: [IN-20261022-012](./anchors/PALANG-0.0-IN-20261022-012-IDENTITY-COLLISION-AND-TIMESTAMP-RECONCILIATION.md).
+- خروجی مستقل: [OUT-20261022-012](./anchors/PALANG-0.0-OUT-20261022-012-IDENTITY-COLLISION-AND-TIMESTAMP-RECONCILIATION.md).
+- رویداد: [EVT-0100](../architecture/BEHAVIOR-TRACE/EVT-0100-IDENTITY-COLLISION-AND-EVT-0089-TIMESTAMP-RECONCILIATION-2026-10-22.md).
+- وضعیت: ACTIVE / LIVING / OPEN; حل معنایی گروه‌ها و بازآزمایی خطای زمان هنوز باز است.
