@@ -5,7 +5,7 @@
 - Version / نسخه: 1.0.0
 - Owner / مالک نهایی و تنها مرجع تصویب: احمد پلنگ (Ahmad Nezhadhosseini)
 - Project / پروژه: Future AI / Palang Footprint — HAIF
-- Status / وضعیت: ACTIVE / LIVING / GOVERNING BASELINE — REPOSITORY READ-BACK PENDING
+- Status / وضعیت: ACTIVE / LIVING / GOVERNING BASELINE — READ-BACK VERIFIED; STRUCTURAL LINKS PASS; SEMANTIC GAPS OPEN
 - Interaction / تعامل: `INT-20261022-011`
 - Input / ورودی: [IN-20261022-011](../../0.0/anchors/PALANG-0.0-IN-20261022-011-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE.md)
 - Output / خروجی: [OUT-20261022-011](../../0.0/anchors/PALANG-0.0-OUT-20261022-011-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE.md)
@@ -267,3 +267,13 @@ C. مدل معماری حاصل: قاعده‌ای که از مقایسهٔ شو
 - PIRHA registration governance: v1.6.0; the full portable execution contract is embedded inside the PIRHA master itself.
 - Related event: EVT-0098; time binding: TIME-BINDING-INT-20261022-011.
 - Structural acceptance must be read from the latest audit run; no older run is proof for commits created after it.
+
+
+## 17. مدرک راستی‌آزمایی مخزن
+- Latest audited snapshot / نسخهٔ ممیزی‌شده: `fd85b07debe075f1618b42ad2ee4dad77ab6cc78`.
+- Living Architecture Audit / ممیزی ساختار: [Run 39805549516](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39805549516).
+- Audit artifact / مدرک ممیزی: [living-architecture-audit-39805549516](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39805549516/artifacts/12438495128).
+- Audit UTC: `2026-10-22T15:31:02Z`; Tehran equivalent: `2026-10-22T19:01:02+03:30`.
+- `local_markdown_links_missing=0`; `decode_errors=0`; `timestamps_with_utc_and_tehran_pair=1406`; `ambiguous_or_parse_errors=1`; `tehran_offset_or_value_failures=0`; `utc_label_failures=0`; audit result `REVIEW_REQUIRED` because one historical ambiguous timestamp remains.
+- Identity collisions remain open: 57 Stable-ID groups, 68 Production-ID groups, 7 Reference-ID groups, 24 event-number groups, 11 exact-content duplicate groups. These require semantic triage, not deletion.
+- Acceptance boundary: document read-back and local-link structure verified for the audited snapshot; full semantic historical audit remains OPEN. External AI/app execution, Buffer, Persistent Memory and Dropbox remain NOT VERIFIED by this audit.
