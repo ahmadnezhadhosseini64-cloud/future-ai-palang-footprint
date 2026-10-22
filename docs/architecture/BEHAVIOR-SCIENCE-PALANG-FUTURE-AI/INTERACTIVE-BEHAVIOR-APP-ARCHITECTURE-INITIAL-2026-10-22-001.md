@@ -216,3 +216,9 @@ The architecture now links the append-only rule requiring each capturable input 
 - [UIOAM master](../../reference/REFERENCE-DOCUMENTS/UNIVERSAL-INPUT-OUTPUT-TEMPORAL-ANCHOR-MASTER-2026-10-22-001.md)
 - [timestamp binding](../BEHAVIOR-TRACE/TIME-BINDING-UIOAM-2026-10-22-001.md)
 This is an append-only addition; the initial architecture text is preserved. Automatic collection remains unverified until runtime implementation and cold-start proof.
+
+
+## پابند مستقل هر ورودی/خروجی — PIAL
+- [PIAL Master Reference](../../reference/REFERENCE-DOCUMENTS/PER-INTERACTION-IN-OUT-TEMPORAL-ANCHOR-LIVING-MASTER-REFERENCE-2026-10-22-001.md)
+- [TIME-BINDING-PIAL](../BEHAVIOR-TRACE/TIME-BINDING-PIAL-2026-10-22-001.md)
+- لنگرهای مستقل جفت جاری: [IN-20261022-002](../../0.0/anchors/PALANG-0.0-IN-20261022-002-EVERY-INTERACTION-ANCHOR-GOVERNANCE.md) و [OUT-20261022-002](../../0.0/anchors/PALANG-0.0-OUT-20261022-002-EVERY-INTERACTION-ANCHOR-GOVERNANCE.md).
