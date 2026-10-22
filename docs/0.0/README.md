@@ -860,3 +860,6 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - [خروجی OUT-20261022-002](./anchors/PALANG-0.0-OUT-20261022-002-EVERY-INTERACTION-ANCHOR-GOVERNANCE.md).
 - [سند مرجع مادر PIAL](../reference/REFERENCE-DOCUMENTS/PER-INTERACTION-IN-OUT-TEMPORAL-ANCHOR-LIVING-MASTER-REFERENCE-2026-10-22-001.md).
 - [پابند زمانی PIAL](../architecture/BEHAVIOR-TRACE/TIME-BINDING-PIAL-2026-10-22-001.md).
+
+
+- [مدرک زمان commit جفت تعامل EVT-0089](../architecture/BEHAVIOR-TRACE/EVT-0089-TIMESTAMP-READBACK-2026-10-22-001.md).
