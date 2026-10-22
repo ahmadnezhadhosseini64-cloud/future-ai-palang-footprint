@@ -77,3 +77,10 @@ A standalone recovery test must retrieve only the independent reference document
 3. **External end-to-end recovery:** prove a copy exists outside the repository, then reconstruct in a separate test environment. Do not delete the production repository; simulate repository loss and document each result.
 
 Continue collecting observable interaction and evaluator behavior as evidence-backed events, distinguishing observed facts from interpretation. Do not claim unverified destination persistence.
+
+
+## 9. Current 0.0 continuation anchor
+- [EVT-0036](../BEHAVIOR-TRACE/EVT-0036-CURRENT-0.0-ANCHOR-AND-NEXT-ACTION-2026-10-22.md)
+- [Independent 0.0 anchor](../../0.0/anchors/PALANG-0.0-CONTINUATION-BEHAVIOR-REGISTRATION-NEXT-AUDIT-2026-10-22-001.md)
+- [Complete living reference](../../reference/REFERENCE-DOCUMENTS/PALANG-0.0-CONTINUATION-BEHAVIOR-REGISTRATION-NEXT-AUDIT-2026-10-22-001.md)
+- Next mandatory action: architecture/master-reference audit (BOART-FOLLOWUP-01); Dropbox failover and external end-to-end recovery remain open.
