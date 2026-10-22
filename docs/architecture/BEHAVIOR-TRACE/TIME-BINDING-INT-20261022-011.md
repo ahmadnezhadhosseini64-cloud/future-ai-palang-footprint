@@ -64,3 +64,12 @@ These are actual GitHub commit timestamps. The relative-link correction was prom
 | Reference index audit status | `d9e7d337300ecf7f06269fa06df79c786c5b94a6` | 2026-10-22T15:32:24Z | 2026-10-22T19:02:24+03:30 |
 
 Prior audit evidence: [Living Architecture Audit #39805549516](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39805549516), snapshot `fd85b07debe075f1618b42ad2ee4dad77ab6cc78`, UTC `2026-10-22T15:31:02Z`, Tehran `2026-10-22T19:01:02+03:30`. That snapshot had zero broken local Markdown links and zero decode errors. A new audit was automatically queued after the verification-record commits; use its result for the latest snapshot rather than assuming the older run covers later commits.
+
+## Audit annotation commits
+
+| Artifact / اثر | Commit SHA | UTC canonical time | Tehran equivalent |
+|---|---|---|---|
+| SCEMRS latest audit annotation | `668a3732e60cdb2e08f02854d7701ff306853135` | 2026-10-22T15:33:59Z | 2026-10-22T19:03:59+03:30 |
+| EVT-0098 latest audit annotation | `1208006c460a8f0db01c03e971b5e20264f51afd` | 2026-10-22T15:34:28Z | 2026-10-22T19:04:28+03:30 |
+
+Audit referenced by those annotations: [Run 39805885197](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39805885197), snapshot `1e777a9e602398a8a1c8b9c2be74a08347b3bb38`, UTC `2026-10-22T15:33:07Z`, Tehran `2026-10-22T19:03:07+03:30`. It reported zero missing local links and zero decode errors; semantic collisions and one timestamp ambiguity remain open.
