@@ -1018,3 +1018,10 @@ The queue index and the timestamp case must each be read back after this update.
 - وضعیت: `WRITE=PASS / READ-BACK=PASS / MATCH=PASS` برای همین فایل.
 - هنوز باز: `BOART-FOLLOWUP-01` ممیزی گراف/مرجع مادر؛ `BOART-FOLLOWUP-02` اتصال و آزمون واقعی Dropbox؛ `BOART-FOLLOWUP-03` بازیابی سرتاسری در محیط جداگانه.
 - Buffer و Persistent Memory: NOT VERIFIED؛ Dropbox: OPEN / NOT VERIFIED. آینه‌سازی دوره‌ای تا زمان اجرای بعدی، خودکار یا دائمی فرض نشود.
+
+## EVT-0038 — همگام‌سازی آینه فعال و زنده
+- Governance: [فرایند همگام‌سازی آینه](../BEHAVIOR-OBSERVATORY/MIRROR-SYNC-GOVERNANCE-AND-LIVE-REGISTRATION-2026-10-22-001.md).
+- Event: [EVT-0038](../BEHAVIOR-TRACE/EVT-0038-LIVE-MIRROR-SYNC-ACTIVATION-2026-10-22.md).
+- Repository policy version and Library mirror have been written and read back; content matches apart from the final newline normalization in Library read-back.
+- Status: ACTIVE / LIVING / OPEN. Buffer and Persistent Memory remain NOT VERIFIED; Dropbox remains OPEN / NOT VERIFIED; isolated external recovery NOT RUN.
+- Continue with BOART-FOLLOWUP-01, then Dropbox write/retrieve and isolated recovery. Mirror sync is a manual evidence-backed process, not an asserted always-running background watcher.
