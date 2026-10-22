@@ -803,3 +803,11 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - [رویداد EVT-0069](../architecture/BEHAVIOR-TRACE/EVT-0069-REGISTRATION-LIMITATION-CHECKLIST-REPAIR-AND-RESUME-2026-10-22.md)
 - [سند مرجع RLP](../reference/REFERENCE-DOCUMENTS/PEH-REGISTRATION-LIMITATION-AND-INTERACTION-BEHAVIOR-LIVING-REFERENCE-2026-10-22-001.md)
 - این لنگر جدید افزایشی است؛ نقاط ۰.۰ قبلی حذف یا جایگزین نمی‌شوند. Gmail BLOCKED/NOT SENT؛ Library/Buffer/Persistent Memory NOT VERIFIED؛ Dropbox OPEN/NOT VERIFIED.
+
+
+## لنگر مستقل ۰.۰ — رفتارشناسی نخستین ورودی/خروجی و مدل نام‌گذاری
+- لنگر: [PALANG-0.0-FIRST-IO-BEHAVIOR-MODEL-2026-10-22-001](./anchors/PALANG-0.0-FIRST-IO-BEHAVIOR-MODEL-2026-10-22-001.md).
+- رویداد: [EVT-0083](../architecture/BEHAVIOR-TRACE/EVT-0083-FIRST-INTERACTION-BEHAVIOR-ANALYSIS-AND-IO-NAMING-MODEL-2026-10-22.md).
+- سند مرجع: [IBIO](../reference/REFERENCE-DOCUMENTS/FIRST-INTERACTION-BEHAVIOR-ANALYSIS-AND-IO-NAMING-LIVING-REFERENCE-2026-10-22-001.md).
+- وضعیت: ACTIVE / LIVING / OPEN / EVOLVABLE؛ این لنگر افزایشی است و لنگرهای قبلی را جایگزین نمی‌کند.
+- ادامه: ساخت JSON Schema و دفتر زوج‌های تعامل، سپس آزمون بازیابی از INT/IN/OUT تا رویداد و سند مرجع.
