@@ -660,3 +660,15 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - `EVT-0100`: [رخداد بررسی برخورد شناسه‌ها و ابهام زمانی](architecture/BEHAVIOR-TRACE/EVT-0100-IDENTITY-COLLISION-AND-EVT-0089-TIMESTAMP-RECONCILIATION-2026-10-22.md).
 - Input: [IN-20261022-012](0.0/anchors/PALANG-0.0-IN-20261022-012-IDENTITY-COLLISION-AND-TIMESTAMP-RECONCILIATION.md); Output: [OUT-20261022-012](0.0/anchors/PALANG-0.0-OUT-20261022-012-IDENTITY-COLLISION-AND-TIMESTAMP-RECONCILIATION.md).
 - Snapshot evidence: [Living Architecture Audit #39810829461](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39810829461); semantic identity adjudication remains OPEN.
+
+
+## Universal Project Reconstruction Master — UPRM / INT-20261022-014
+
+- **UPRM-2026-10-22-001 v1.0.1**: [سند مرجع مادر بازسازی کل پروژه](reference/REFERENCE-DOCUMENTS/PALANG-UNIVERSAL-PROJECT-RECONSTRUCTION-MASTER-2026-10-22-001.md) — ACTIVE / LIVING / OPEN FOR GROWTH.
+- **HAIF architecture v1.3.7**: [مدل اولیهٔ هوش مصنوعی HAIF](architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md) — قاعدهٔ صریح جداسازی سند مادر کل پروژه از نقش Master مفهومی ثبت شد.
+- **IN-20261022-014**: [لنگر ورودی](0.0/anchors/PALANG-0.0-IN-20261022-014-MASTER-DOCUMENT-AND-HAIF-SEPARATION-RULE.md).
+- **OUT-20261022-014**: [لنگر خروجی](0.0/anchors/PALANG-0.0-OUT-20261022-014-MASTER-DOCUMENT-AND-HAIF-SEPARATION-RULE.md).
+- **EVT-0102**: [رویداد ثبت قاعدهٔ جداسازی](architecture/BEHAVIOR-TRACE/EVT-0102-MASTER-DOCUMENT-AND-HAIF-SEPARATION-RULE-2026-10-22.md).
+- **TIME-BINDING-INT-20261022-014**: [پابند زمانی و زمان‌های واقعی commit](architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-014.md).
+- ممیزی چکش: run 39817056241، snapshot 7ced5075aad8c2b4e894f70965f9fc405d02bf94؛ ساختار PASS برای همان snapshot؛ ممیزی معنایی OPEN.
+- قاعده: سند مادر بازسازی کل پروژه ≠ گرهٔ Master در Master–Child–Rahm؛ برخورد شناسه‌ها و ابهام تبار نیز یافته‌های جداگانه‌اند.
