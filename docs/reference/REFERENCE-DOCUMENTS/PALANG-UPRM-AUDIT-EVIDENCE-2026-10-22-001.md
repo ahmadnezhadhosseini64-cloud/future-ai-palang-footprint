@@ -98,6 +98,6 @@ The workflow's SUCCESS status is not the same as full project completion. No fil
 
 ## Artifact-level follow-up
 
-The downloaded ZIP was inspected. The canonical graph manifest reports 52 declared parent edges, zero unresolved and nine ambiguous edges. The exact nine source/target/candidate-path records and the unresolved 6-versus-9 discrepancy are recorded in the UPRM master, section “جزئیات روابط والد مبهم”. The semantic timestamp report identifies only one unresolved raw timestamp: EVT-0089 line 21, `2026-10-22 14:28`, missing a timezone label.
+The downloaded ZIP was inspected. The canonical graph manifest reports 52 declared parent edges, zero unresolved and nine ambiguous edges. The exact nine source/target/candidate-path records and the unresolved 6-versus-9 discrepancy are recorded in the UPRM master, section “جزئیات روابط والد مبهم”. The semantic timestamp report identifies only one unresolved raw timestamp: EVT-0089 line 21; the original source has date component `2026-10-22` and clock component `14:28` without a timezone label.
 
 Artifact file inventory includes the canonical graph manifest, historical graph audit JSON/text, semantic review queue JSON, timestamp audit JSON/text, semantic timestamp-pair audit JSON/text, and host-adapter test output. This proves the artifact was inspected, but does not resolve any semantic candidate automatically.
