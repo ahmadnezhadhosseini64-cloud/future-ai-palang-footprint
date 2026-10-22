@@ -144,3 +144,15 @@ Feedback / بازخورد انسان و آزمون‌ها به چرخه برمی
 - شکارچی رفتارشناسی باید الگوهای تعاملی را از شواهد واقعی استخراج کند و هر ادعا را به مشاهده، استنباط، فرضیه یا ناشناخته طبقه‌بندی کند.
 - زمان مرجع ثبت مخزن، UTC زمان واقعی commit است؛ زمان تهران باید از همان لحظه محاسبه شود. زمان پیام و زمان آزمون، اگر موجود باشند، شواهد جداگانه‌اند.
 - **GAP اجرایی باز:** گردآوری خودکار و شماره‌گذاری پایدار همهٔ تعاملات، اعتبارسنجی واقعی JSON Schema و آزمون بازیابی پس از شروع مجدد هنوز پیاده‌سازی/اثبات نشده‌اند. پیگیری: [Issue #20 — پیاده‌سازی و راستی‌آزمایی runtime](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/20).
+
+
+## 16. اعتبارسنجی اجرایی و آزمون تکرارپذیر — EVT-0086
+- این بخش به‌صورت افزوده است؛ بخش‌های پیشین معماری محفوظ‌اند.
+- رویداد: [EVT-0086 — اعتبارسنجی اجرایی دفتر تعامل](../BEHAVIOR-TRACE/EVT-0086-EXECUTABLE-LEDGER-VALIDATION-AND-RECOVERY-SMOKE-TEST-2026-10-22.md).
+- سند مرجع مادر: [ELVR — اعتبارسنجی، لنگر زمانی و بازیابی](../../reference/REFERENCE-DOCUMENTS/EXECUTABLE-INTERACTION-LEDGER-VALIDATION-MASTER-REFERENCE-2026-10-22-001.md).
+- Workflow اعتبارسنجی: [interaction-ledger-validation.yml](../../../.github/workflows/interaction-ledger-validation.yml).
+- Fixture ساختگی برای آزمون: [interaction-pair-ledger-smoke-test.json](../BEHAVIOR-TRACE/fixtures/interaction-pair-ledger-smoke-test.json).
+- آزمون خودکار باید طرح‌وارهٔ Draft 2020-12، رکورد fixture و جست‌وجوی معکوس از IN و OUT را بررسی کند.
+- این fixture مصنوعی است؛ آزمونش به‌تنهایی بازیابی سرد از سرویس تولیدی یا جمع‌آوری خودکار همهٔ تعاملات را اثبات نمی‌کند.
+- **لنگر زمانی:** ثبت مخزن بر مبنای commit واقعی UTC است؛ معادل تهران از همان لحظه مشتق می‌شود. زمان اجرای CI باید جداگانه از نتیجهٔ واقعی workflow ثبت شود.
+- **GAP باز:** اجرای موفق CI، دفتر پایدار واقعی و آزمون cold-start مستقل باید با شواهد ثبت شوند.
