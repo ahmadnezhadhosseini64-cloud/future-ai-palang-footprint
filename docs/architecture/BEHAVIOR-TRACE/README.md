@@ -425,3 +425,9 @@
 - Run `39824020260`, job `119982395261`: SUCCESS; `16 passed, 1 warning, 0 failed`.
 - [Timestamp binding](./TIME-BINDING-CMIND-2026-10-22-001.md) records UTC and Tehran equivalents.
 - Scope: local prototype test suite only; live host capture and external destinations remain open.
+
+
+## EVT-0092 — master audit and route correction
+- [رویداد ممیزی](./EVT-0092-MASTER-REFERENCE-AUDIT-AND-ROUTE-CORRECTION-2026-10-22.md)
+- [IN-20261022-006](../../0.0/anchors/PALANG-0.0-IN-20261022-006-MASTER-AUDIT.md) / [OUT-20261022-006](../../0.0/anchors/PALANG-0.0-OUT-20261022-006-MASTER-AUDIT.md)
+- [سند مادر CMIND](../../reference/REFERENCE-DOCUMENTS/CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-MASTER-REFERENCE-2026-10-22-001.md), Addendum v1.0.3: ثبت علت انحراف، قاعدهٔ بازیابی، شکاف‌های باز و گام بعدی.
