@@ -133,3 +133,15 @@ The prior workflow missed architectural candidates and reused EVT-0093 despite a
 This is a workflow/control definition plus repository evidence, not proof of an always-on background hunter. Runtime collection, candidate extraction, permission boundary, durable storage and cold-start recovery remain OPEN / NOT PROVEN until implemented and independently tested under Issue #20.
 
 - Time binding for this corrective interaction: [TIME-BINDING-INT-20261022-015](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-015.md). Repository commit time is not the user-message timestamp.
+
+
+## Addendum v1.0.2 — شش کاندید صریح و دروازهٔ شکارچی
+
+- Event: [EVT-0104](../../architecture/BEHAVIOR-TRACE/EVT-0104-CANDIDATE-ARCHITECTURE-SIGNALS-AND-HUNTER-GATE-2026-10-22.md).
+- Inbox: [INBOX-20261022-003](../../architecture/LIVE-INBOX/entries/INBOX-20261022-003.md).
+- Anchors: [IN-016](../../0.0/anchors/PALANG-0.0-IN-20261022-016-EXPLICIT-CANDIDATE-SIGNALS.md) / [OUT-016](../../0.0/anchors/PALANG-0.0-OUT-20261022-016-EXPLICIT-CANDIDATE-SIGNALS.md).
+
+### Required candidate gate
+برای هر ورودی و خروجی قابل‌مشاهده، شکارچی باید کاندیدهای معماری را استخراج کند، شاهد دقیق را حفظ کند، OBSERVATION / INFERENCE / HYPOTHESIS / UNKNOWN را از هم جدا کند، یکتایی شناسه را پیش از نوشتن کنترل کند و یافته‌های پذیرفته‌شده را به صندوق زنده، سند مادر کل، سند جزء و صف اقدام وصل کند. پس از نوشتن، بازخوانی و تطبیق پیوندها لازم است.
+
+شش کاندید جاری در EVT-0104 آمده‌اند. علت شکست قبلی فقط فرضیه است، نه علت ریشه‌ای اثبات‌شده. شکارچی خودکار، capture میزبان و بازیابی سرد همچنان OPEN / NOT PROVEN در Issue #20 هستند.
