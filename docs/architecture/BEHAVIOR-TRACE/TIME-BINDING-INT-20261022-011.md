@@ -26,3 +26,17 @@
 - Commit time records repository registration, not the exact moment the user sent a message or the assistant generated text.
 - Later changes to this time-binding file or other files must be added as separate rows after retrieving the actual commit timestamps.
 - No claim is made here about Buffer, Persistent Memory, Library, Dropbox, or external AI app persistence.
+
+## Subsequent reconciliation commits
+
+| Artifact / اثر | Commit SHA | UTC canonical time | Tehran equivalent |
+|---|---|---|---|
+| Initial time-binding file | `4a106d4073523513ddcb432064197c090e82c0c1` | 2026-10-22T15:25:42Z | 2026-10-22T19:55:42+03:30 |
+| Master standard link/status update | `1d7a17bbd9762c80c2e1a62a6b49e9a4c2d80127` | 2026-10-22T15:25:59Z | 2026-10-22T19:55:59+03:30 |
+| EVT-0098 time-binding link | `31e22bbe0a61a728d554919d76c65a91486671cc` | 2026-10-22T15:26:06Z | 2026-10-22T19:56:06+03:30 |
+| PIRHA time-binding link | `4231a66d50c705766dd23ea3d251fcb1f3b640a7` | 2026-10-22T15:26:13Z | 2026-10-22T19:56:13+03:30 |
+| HAIF time-binding link | `e3f587cb96b296ec9505fee4a30c8a852e5b5bf7` | 2026-10-22T15:26:21Z | 2026-10-22T19:56:21+03:30 |
+| 0.0 ledger time-binding link | `cb1f0eb5c1721bc5d752f2d5ae712d91d00cbe5b` | 2026-10-22T15:26:28Z | 2026-10-22T19:56:28+03:30 |
+| Reference index relative-link repair | `9f01f4002a631b158bca6bb5c52771b540acbc59` | 2026-10-22T15:27:43Z | 2026-10-22T19:57:43+03:30 |
+
+These are actual GitHub commit timestamps. The relative-link correction was prompted by a real audit finding; a fresh audit is required before declaring the new index clean.
