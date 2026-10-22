@@ -63,3 +63,11 @@ ACTIVE / LIVING / OPEN / EVOLVABLE / GOVERNING یعنی معماری و سند �
 
 ## پابند زمانی مادر
 - [TIME-BINDING-LBAF-2026-10-22-001](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-LBAF-2026-10-22-001.md) — شواهد UTC/تهران برای commitهای این زنجیره.
+
+
+## Universal per-interaction anchoring — UIOAM
+- [UIOAM master reference](./UNIVERSAL-INPUT-OUTPUT-TEMPORAL-ANCHOR-MASTER-2026-10-22-001.md) — independent temporal and recovery anchors for every capturable input/output.
+- [EVT-0089](../../architecture/BEHAVIOR-TRACE/EVT-0089-UNIVERSAL-INPUT-OUTPUT-ANCHORING-GOVERNANCE-2026-10-22.md).
+- Current paired records: [IN-20261022-002](../../0.0/anchors/PALANG-0.0-IN-20261022-002-UNIVERSAL-IO-ANCHORING.md) and [OUT-20261022-002](../../0.0/anchors/PALANG-0.0-OUT-20261022-002-UNIVERSAL-IO-ANCHORING.md).
+- [UIOAM timestamp binding](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-UIOAM-2026-10-22-001.md).
+- Runtime capture is not considered active until implemented and independently tested.
