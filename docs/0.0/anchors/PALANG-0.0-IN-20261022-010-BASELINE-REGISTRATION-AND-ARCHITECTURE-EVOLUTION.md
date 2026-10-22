@@ -29,3 +29,5 @@
 - این لنگر فقط ورودی را ثبت می‌کند؛ پذیرش نهایی تعامل منوط به لنگر خروجی و بازخوانی همهٔ مقصدهاست.
 
 - Time binding / پابند زمانی: [TIME-BINDING-INT-20261022-010](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-010.md).
+
+- Paired output anchor / لنگر خروجی هم‌زوج: [OUT-010](PALANG-0.0-OUT-20261022-010-BASELINE-REGISTRATION-AND-ARCHITECTURE-EVOLUTION.md).
