@@ -1,9 +1,9 @@
-# EVT-0086 — اجرای اعتبارسنجی، زوج آزمایشی و بازیابی مستقل
+# سابقهٔ اصلاح شناسه — سند غیرمرجعِ برخورد EVT-0086
 
 - Stable ID: PALANG-INTERACTION-IMPLEMENTATION-RECOVERY-EVENT-2026-10-22-001
 - Production ID: IRT-HAIF-2026-10-22-001
 - Version: 1.0.0
-- Status: ACTIVE / LIVING / OPEN
+- Status: RECONCILED / NON-CANONICAL / HISTORICAL
 - Parent: EVT-0085
 - Master reference: docs/reference/REFERENCE-DOCUMENTS/INTERACTION-PAIR-LEDGER-AND-RECOVERY-MASTER-REFERENCE-2026-10-22-001.md
 - Independent anchor: docs/0.0/anchors/PALANG-0.0-INTERACTION-RECOVERY-2026-10-22-001.md
