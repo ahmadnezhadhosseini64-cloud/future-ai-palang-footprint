@@ -227,3 +227,5 @@ Resume from this CMIND master → [EVT-0093](../../architecture/BEHAVIOR-TRACE/E
 - Current evidence boundary: local HAIF v0 tests passed in run 39824020260 (16 passed, 1 warning, 0 failed) for the tested commit. Production host-wide capture, authorized producer integration and production cold-start are still OPEN / NOT PROVEN. Dropbox remains a separate OPEN / WAITING branch and is not the active target.
 - Exact user-message and assistant-generation timestamps remain NOT EXPOSED / NOT CAPTURED. Record the real commit timestamp in UTC and derive Tehran time from the same instant after this addendum is committed.
 - Current status of this addendum: intended to become REGISTERED / READ-BACK VERIFIED only after the exact file, index, queue, inbox and event are fetched back and matched.
+
+- Timestamp binding for this interaction chain: [TIME-BINDING-INT-20261022-017](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-017.md) — actual UTC commit timestamps and derived Asia/Tehran equivalents; message and generation timestamps remain unknown.
