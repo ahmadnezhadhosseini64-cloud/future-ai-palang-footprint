@@ -1086,3 +1086,12 @@ The queue index and the timestamp case must each be read back after this update.
 
 - پابند زمانی: `docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-PIRHA-2026-10-22-001.md`.
 - لنگر ادامه: `docs/0.0/anchors/PALANG-0.0-PIRHA-HISTORICAL-AUDIT-CONTINUATION-2026-10-22-001.md`.
+
+
+## INT-20261022-010 — مبنای هر تعامل و ارتقای HAIF
+
+- سند حاکم: `PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001`.
+- زوج ورودی/خروجی: IN-010 / OUT-010؛ رویداد: EVT-0096.
+- معماری مادر HAIF به نسخهٔ 1.3.0 ارتقا یافته است.
+- وضعیت باقیمانده: بازخوانی و ممیزی همهٔ پیوندهای تغییرکرده؛ اجرای ممیزی ساختاری تازه با artifact؛ تطبیق معنایی برخوردهای شناسه و روابط تاریخی؛ آزمون Dropbox و سطوح دیگر به‌صورت مستقل.
+- وضعیت: OPEN / INTEGRATION IN PROGRESS؛ بدون ادعای تکمیل پیش از شواهد.
