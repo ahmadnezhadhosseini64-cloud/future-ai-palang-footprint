@@ -71,3 +71,9 @@ ACTIVE / LIVING / OPEN / EVOLVABLE / GOVERNING یعنی معماری و سند �
 - Current paired records: [IN-20261022-002](../../0.0/anchors/PALANG-0.0-IN-20261022-002-UNIVERSAL-IO-ANCHORING.md) and [OUT-20261022-002](../../0.0/anchors/PALANG-0.0-OUT-20261022-002-UNIVERSAL-IO-ANCHORING.md).
 - [UIOAM timestamp binding](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-UIOAM-2026-10-22-001.md).
 - Runtime capture is not considered active until implemented and independently tested.
+
+
+## PIAL — پابند مستقل هر ورودی و خروجی
+- [سند مرجع مادر PIAL](./PER-INTERACTION-IN-OUT-TEMPORAL-ANCHOR-LIVING-MASTER-REFERENCE-2026-10-22-001.md)
+- [پابند زمانی PIAL](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-PIAL-2026-10-22-001.md)
+- [EVT-0089](../../architecture/BEHAVIOR-TRACE/EVT-0089-EVERY-INTERACTION-IN-OUT-TEMPORAL-ANCHOR-AND-RECOVERY-GOVERNANCE-2026-10-22.md)
