@@ -710,3 +710,13 @@ WRITE → READ-BACK → MATCH → VERIFY (نوشتن ← بازخوانی ← ت
 
 ## قاعدهٔ زمانی همهٔ نقاط ۰.۰ — UTC
 UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران از همان UTC و قواعد `Asia/Tehran` استخراج می‌شود. UTC اول نوشته شود، سپس زمان تهران. زمان پیام، شروع عملیات، commit، بازخوانی و ممیزی مستقل‌اند؛ زمان ناموجود حدس زده نمی‌شود. [رویداد حاکم EVT-0068](../architecture/BEHAVIOR-TRACE/EVT-0068-UTC-PRIMARY-TIME-GOVERNANCE-2026-10-21.md).
+
+
+## لنگر مستقل رفتارشناسی و آزمون بازیابی — 2026-10-22
+- Anchor ID: PALANG-BEHAVIOR-OBSERVATION-AND-RECOVERY-TEST-2026-10-22-001
+- Status: ACTIVE / LIVING in repository; architecture-wide reconciliation OPEN.
+- مرجع مستقل: [رصدخانهٔ رفتار تعامل انسان و AI](../architecture/BEHAVIOR-OBSERVATORY/README.md).
+- رویداد: [EVT-0034](../architecture/BEHAVIOR-TRACE/EVT-0034-BEHAVIOR-OBSERVATORY-AND-RECOVERY-TEST-2026-10-22.md).
+- آزمون بازیابی از سند مستقل: [گزارش آزمون](../architecture/BEHAVIOR-OBSERVATORY/BEHAVIOR-OBSERVATORY-RECOVERY-TEST-2026-10-22-001.md) — PASS 10/10 معیار؛ زمان دقیق اجرای ابزار و بازخوانی UNKNOWN / UNVERIFIED.
+- لنگر قبلی EVT-0033 حفظ شده و جایگزین نشده است.
+- اقدام بعدی: بازخوانی پیوندهای معماری، بررسی مرجع مادر، تکمیل ممیزی سرتاسری و آزمون مستقل مقصدهای بیرونی؛ هیچ مقصدی بر اساس این پیوند تأیید نمی‌شود.
