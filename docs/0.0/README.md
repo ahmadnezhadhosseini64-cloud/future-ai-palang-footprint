@@ -843,3 +843,6 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - [رویداد EVT-0088](../architecture/BEHAVIOR-TRACE/EVT-0088-CURRENT-ANCHOR-LIVING-BEHAVIOR-ARCHITECTURE-AND-FUTURE-FORESIGHT-GOVERNANCE-2026-10-22.md).
 - [سند مرجع مادر LBAF](../reference/REFERENCE-DOCUMENTS/LIVING-BEHAVIOR-ARCHITECTURE-FORESIGHT-MASTER-REFERENCE-2026-10-22-001.md).
 - این دو لنگر افزایشی‌اند؛ لنگرهای پیشین را جایگزین نمی‌کنند. Runtime collector و cold-start تولیدی هنوز اجرا/تأیید نشده‌اند.
+
+
+پابند زمانی زنجیرهٔ EVT-0088: [TIME-BINDING-LBAF](../architecture/BEHAVIOR-TRACE/TIME-BINDING-LBAF-2026-10-22-001.md).
