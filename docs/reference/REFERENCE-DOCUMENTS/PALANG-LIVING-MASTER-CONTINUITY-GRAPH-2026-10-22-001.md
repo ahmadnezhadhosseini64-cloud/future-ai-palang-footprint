@@ -218,3 +218,13 @@
 - لنگر ادامهٔ بعدی: [PALANG-0.0-DTRC-ARCHITECTURE-CONTINUATION-2026-10-22-001](../../0.0/anchors/PALANG-0.0-DTRC-ARCHITECTURE-CONTINUATION-2026-10-22-001.md).
 - این لنگر به زوج `INT-20261022-008`، سند مادر DTRC، رویداد `EVT-0094` و نسخهٔ 1.1.0 مدل HAIF متصل است.
 - گام بعد: آزمون واقعی DTRC و سپس ادامهٔ اتصال/ذخیره‌سازی/بازیابی Dropbox؛ هیچ‌کدام پیش از اجرای واقعی تکمیل اعلام نمی‌شوند.
+
+
+## الحاقیهٔ زنده — PIRHA و تکمیل زنجیرهٔ ثبت
+
+- سند مرجع مادر: [PIRHA](./PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001.md).
+- زوج مستقل: `INT-20261022-009` — [ورودی](../../0.0/anchors/PALANG-0.0-IN-20261022-009-INTERACTION-GOVERNANCE-AND-AUDIT.md) / [خروجی](../../0.0/anchors/PALANG-0.0-OUT-20261022-009-INTERACTION-GOVERNANCE-AND-AUDIT.md).
+- رویداد جاری: [EVT-0095](../../architecture/BEHAVIOR-TRACE/EVT-0095-INTERACTION-GOVERNANCE-AND-HISTORICAL-AUDIT-2026-10-22.md).
+- شکاف تاریخی ثبت مستقل EVT-0093: [رویداد](../../architecture/BEHAVIOR-TRACE/EVT-0093-REGISTRATION-CONTINUATION-2026-10-22.md) اکنون فایل جداگانه دارد؛ بازخوانی لازم است.
+- نسخهٔ مدل مادر HAIF: 1.2.0.
+- ممیزی ساختاری و معنایی تاریخچه دو مرحلهٔ جدا هستند؛ صفر پیوند شکسته در یک snapshot، اثبات حل تمام برخوردهای شناسه و روابط معنایی نیست.
