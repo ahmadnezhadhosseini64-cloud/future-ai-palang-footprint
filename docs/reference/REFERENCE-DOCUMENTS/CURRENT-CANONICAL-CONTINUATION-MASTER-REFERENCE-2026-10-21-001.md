@@ -211,3 +211,13 @@
 - Snapshot includes EVT-0050 and EVT-0051, the consolidated master, and cross-index changes. Evidence Gate files are generated artifacts, not architecture source nodes. Counts can change with future commits/workflow runs.
 - Targeted repository read-back verified the presence of the consolidated master identity/version/architecture/gap/next-step sections, the governing master link, the current graph inventory link, the Reference Index row, the Behavior Trace index entry, the Integration Queue pointer, the Open Gaps register pointer, and the 0.0 continuation anchor. The historical graph remains OPEN / PARTIAL.
 - The v1.0.2 revision was subsequently fetched; the final read-back of this v1.0.3 revision is recorded in EVT-0051 after the update commit.
+
+
+## 16. آزمون زندهٔ پایداری مقصدها و ادامهٔ فعال — 2026-10-22
+- Independent test: [LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001](../../architecture/BEHAVIOR-OBSERVATORY/LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md).
+- Event: [EVT-0037](../../architecture/BEHAVIOR-TRACE/EVT-0037-LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22.md).
+- Current 0.0 anchor remains: [PALANG-0.0-CONTINUATION-BEHAVIOR-REGISTRATION-NEXT-AUDIT-2026-10-22-001](../../0.0/anchors/PALANG-0.0-CONTINUATION-BEHAVIOR-REGISTRATION-NEXT-AUDIT-2026-10-22-001.md).
+- New live audit result: repository cross-reference/read-back checks PASS with limits. Prior standalone content-recovery test remains PASS 10/10; it was not redundantly rerun.
+- Destination state: Repository evidence available; Buffer, external Library, Persistent Memory, Dropbox NOT VERIFIED; isolated external end-to-end recovery NOT RUN.
+- Active continuation: `BOART-FOLLOWUP-01` architecture/master-reference and historical graph reconciliation; then Dropbox write/retrieve and isolated recovery.
+- State rule: ACTIVE / LIVING means the work remains active and recoverable, not that every destination is verified.
