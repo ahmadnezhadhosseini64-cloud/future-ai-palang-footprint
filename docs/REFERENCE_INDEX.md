@@ -651,3 +651,5 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - وضعیت: ثبت مخزن؛ read-back مستقل در جریان این تعامل.
 
 - پابند زمانی تعامل: [TIME-BINDING-INT-20261022-011](architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-011.md).
+
+- راستی‌آزمایی ساختاری SCEMRS: [Audit #39805549516](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39805549516) — `local_markdown_links_missing=0`, `decode_errors=0`; ممیزی معنایی شناسه‌ها و زمان تاریخی همچنان باز است.
