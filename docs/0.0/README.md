@@ -928,3 +928,6 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - رویداد تاریخی تکمیل‌شده در این اجرا: [EVT-0093](../architecture/BEHAVIOR-TRACE/EVT-0093-REGISTRATION-CONTINUATION-2026-10-22.md).
 - معماری مادر HAIF: نسخهٔ 1.2.0؛ گراف پیوستگی در انتظار ثبت نسخهٔ بعدی.
 - ممیزی کامل تاریخچه هنوز باید از اجرای واقعی workflow و طبقه‌بندی معنایی شواهد عبور کند.
+
+- پابند زمانی PIRHA: [TIME-BINDING-PIRHA-2026-10-22-001](../architecture/BEHAVIOR-TRACE/TIME-BINDING-PIRHA-2026-10-22-001.md).
+- لنگر ادامهٔ بعدی: [PALANG-0.0-PIRHA-HISTORICAL-AUDIT-CONTINUATION-2026-10-22-001](anchors/PALANG-0.0-PIRHA-HISTORICAL-AUDIT-CONTINUATION-2026-10-22-001.md).
