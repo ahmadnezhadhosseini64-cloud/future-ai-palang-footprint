@@ -15,7 +15,12 @@
 - Master URL: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/reference/REFERENCE-DOCUMENTS/PALANG-REGISTRATION-CONTINUATION-MASTER-REFERENCE-2026-10-22-001.md
 - Input URL: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/0.0/anchors/PALANG-0.0-IN-20261022-006-REGISTRATION-CONTINUATION.md
 - Output URL: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/0.0/anchors/PALANG-0.0-OUT-20261022-006-REGISTRATION-CONTINUATION.md
-- Event EVT-0093 was specified in the master and anchors but its standalone file creation has not been confirmed; do not mark it as stored until written and read back.
+- Historical status at original registration: standalone EVT-0093 creation had not been confirmed. Reconciliation on 2026-10-22: a standalone file now exists at `EVT-0093-REGISTRATION-CONTINUATION-2026-10-22.md`; see [current PIRHA time binding](TIME-BINDING-PIRHA-2026-10-22-001.md). This corrects existence status but does not itself prove a complete historical semantic audit.
 - Read-back status: master and both anchors were fetched from the default branch and their IDs/paths were verified. Full cross-link audit and other storage targets are still open.
 
 | Time-binding record itself | 14b4d68dd4f78cb025b5e1a52d2327709be33bfc | 2026-10-22T13:07:17Z | 2026-10-22T16:37:17+03:30 |
+
+
+## Historical correction
+- EVT-0093 standalone event file created in commit `714d3a58f276eb5557ed71d7332da483ac07dd61` at `2026-10-22T14:37:37Z` / `2026-10-22T18:07:37+03:30`.
+- The historical statement above is retained as a time-bound observation of the earlier state; the current status is corrected without rewriting the old observation.
