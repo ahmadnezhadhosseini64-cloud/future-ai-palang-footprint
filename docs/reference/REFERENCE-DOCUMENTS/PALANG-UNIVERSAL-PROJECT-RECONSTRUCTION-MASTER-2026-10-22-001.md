@@ -296,3 +296,25 @@
 - [UPRM Audit Evidence](./PALANG-UPRM-AUDIT-EVIDENCE-2026-10-22-001.md) — Living Architecture Audit #1544, run `39816363725`, snapshot `276c6c007e38921d99b687c2c531e14018360706`, نتیجهٔ ساختاری SUCCESS.
 - 714 فایل منبع؛ صفر پیوند محلی مفقود؛ صفر خطای رمزگشایی؛ 58 گروه Stable ID، 68 Production ID، 7 Reference ID، 24 شمارهٔ رویداد، 11 گروه محتوای تکراری؛ 9 یال والد مبهم؛ یک ابهام زمانی در EVT-0089.
 - اختلاف 6 در برابر 9 رابطهٔ والد و معنای گروه‌های برخورد حل نشده‌اند. معماری مفهومی Master–Child–Rahm با این یافته‌های گرافی یکی نیست. ممیزی معنایی OPEN است.
+
+
+## الحاقیهٔ جزئیات روابط والد مبهم — snapshot ممیزی 39816363725
+
+در manifest همان snapshot، 52 یال والد استخراج شده‌اند: 0 حل‌نشده و 9 مبهم. این 9 مورد دقیقاً چنین‌اند؛ تا تعیین نقش معنایی، هیچ مقصدی را خودکار انتخاب یا بازنویسی نکن:
+
+1. مبدأ `docs/0.0/PALANG-OUTPUT-ANCHOR-HAIF-INGESTION-2026-10-21-002.md`؛ شناسهٔ مقصد `PALANG-RETURN-EXECUTION-MASTER-ANCHOR-2026-10-21-001`؛ نامزدها: `docs/architecture/BEHAVIOR-TRACE/EVT-0065-RETURN-EXECUTION-MASTER-ANCHOR-2026-10-21.md` و `docs/reference/REFERENCE-DOCUMENTS/PALANG-RETURN-EXECUTION-MASTER-ANCHOR-2026-10-21-001.md`.
+2. مبدأ `docs/0.0/anchors/PALANG-0.0-REGISTRATION-LIMITATION-AND-PEH-RESUME-2026-10-22-001.md`؛ مقصد `EVT-0051`؛ سه نامزد: `EVT-0051-ASSISTANT-CONSOLIDATED-MASTER-CREATION-AND-READBACK-2026-10-21.md`، `EVT-0051-CANONICAL-GRAPH-MANIFEST-AND-LINK-REPAIR-2026-10-21.md`، `EVT-0051-GMAIL-ACCESS-CLAIM-AND-LIVING-0.0-ANCHOR-2026-10-22.md` (همه در `docs/architecture/BEHAVIOR-TRACE/`).
+3. مبدأ `docs/architecture/BEHAVIOR-TRACE/EVT-0035-LIVING-ANCHORING-AND-TEST-GOVERNANCE-2026-10-20.md`؛ مقصد `EVT-0033`؛ نامزدها: `EVT-0033-START-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-22.md` و `EVT-0033-TWO-TIME-ANCHORING-AND-LIVING-CONTINUITY-2026-10-20.md`.
+4. همان مبدأ `EVT-0035-LIVING-ANCHORING-AND-TEST-GOVERNANCE-2026-10-20.md`؛ مقصد `EVT-0034`؛ نامزدها: `EVT-0034-ASSISTANT-EXECUTION-AND-VERIFICATION-REPORT-2026-10-20.md` و `EVT-0034-BEHAVIOR-OBSERVATORY-AND-RECOVERY-TEST-2026-10-22.md`.
+5. مبدأ `docs/architecture/BEHAVIOR-TRACE/EVT-0038-ASSISTANT-EXECUTION-AND-PORTABLE-HAIF-REFERENCE-2026-10-20.md`؛ مقصد `EVT-0037`؛ نامزدها: `EVT-0037-INDEPENDENT-LIVE-PERSISTENCE-TEST-2026-10-22.md`، `EVT-0037-LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22.md`، `EVT-0037-UNIVERSAL-REGISTER-AND-PORTABLE-HAIF-REQUEST-2026-10-20.md`.
+6. مبدأ `docs/architecture/BEHAVIOR-TRACE/EVT-0040-INTERACTIVE-IO-TEMPORAL-INDEPENDENT-ANCHOR-2026-10-22.md`؛ مقصد `EVT-0039`؛ نامزدها: `EVT-0039-GMAIL-ARCHIVE-DESTINATION-RECONCILIATION-2026-10-22.md`، `EVT-0039-GMAIL-REFERENCE-REGISTRATION-GAP-2026-10-22.md`، `EVT-0039-INTERACTION-TO-DISCOVERY-AND-COMPLETE-TRACE-REQUEST-2026-10-20.md`.
+7. مبدأ `docs/architecture/BEHAVIOR-TRACE/EVT-0041-UTC-INPUT-OUTPUT-LIVING-ANCHOR-2026-10-22.md`؛ مقصد `EVT-0040`؛ نامزدها: `EVT-0040-ASSISTANT-REGISTRATION-AND-DISCOVERY-ARCHITECTURE-2026-10-20.md` و `EVT-0040-INTERACTIVE-IO-TEMPORAL-INDEPENDENT-ANCHOR-2026-10-22.md`.
+8. مبدأ `docs/architecture/BEHAVIOR-TRACE/EVT-0069-REGISTRATION-LIMITATION-CHECKLIST-REPAIR-AND-RESUME-2026-10-22.md`؛ مقصد `EVT-0051`؛ همان سه نامزد EVT-0051 مورد 2.
+9. مبدأ `docs/reference/REFERENCE-DOCUMENTS/PEH-REGISTRATION-LIMITATION-AND-INTERACTION-BEHAVIOR-LIVING-REFERENCE-2026-10-22-001.md`؛ مقصد `EVT-0051`؛ همان سه نامزد EVT-0051 مورد 2.
+
+### تفسیر شمارش 6 در برابر 9
+
+- **شاهد جاری و قابل‌تکرار:** manifest اجرای 39816363725 دقیقاً 9 یال مبهم فهرست کرده است؛ این 9 یال در بالا ریز شده‌اند.
+- **شاهد تاریخی ناسازگار:** گزارش snapshot قدیمی‌تر، 38 یال والد و صفر یال مبهم اعلام کرده است؛ این snapshot متفاوت است.
+- **عدد 6 که کاربر مطرح کرده:** تا یافتن گزارش خام/تعریف شمارش آن، منبع و دامنه‌اش تأیید نشده است. ممکن است شش مورد، شش شناسه/گروه متمایز یا زیرمجموعه‌ای از نه یال باشد؛ این فقط فرضیه است و نباید واقعیت ثبت شود.
+- **گام حل:** مقایسهٔ دقیق این 9 یال با گزارش شش‌موردی و تشخیص اینکه شمارش بر مبنای «یال»، «شناسهٔ مقصد»، «گروه نامزد» یا «رابطهٔ معنایی» بوده است. هیچ اصلاح معماری Master–Child–Rahm از این شمارش نتیجه نمی‌شود.
