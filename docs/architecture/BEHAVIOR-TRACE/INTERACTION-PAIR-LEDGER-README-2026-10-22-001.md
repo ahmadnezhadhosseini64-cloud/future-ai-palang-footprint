@@ -33,3 +33,11 @@
 - ثبت خودکار در همهٔ مکالمات: NOT IMPLEMENTED / NOT VERIFIED.
 - اجرای واقعی اعتبارسنجی طرح‌واره و آزمون بازیابی: NOT RUN تا زمان ثبت شواهد اجرایی.
 - Gmail، Library، Buffer، Persistent Memory و Dropbox هرکدام مقصد جداگانه‌اند و صرف ثبت مخزن آن‌ها را تأیید نمی‌کند.
+
+
+## زوج تعامل ثبت‌شده — INT-20261022-003
+- ورودی: [IN-20261022-003](../../0.0/anchors/PALANG-0.0-IN-20261022-003-POSITIVE-FEEDBACK.md) — بازخورد مثبت کاربر دربارهٔ مکالمهٔ جاری.
+- خروجی: [OUT-20261022-003](../../0.0/anchors/PALANG-0.0-OUT-20261022-003-FEEDBACK-REGISTRATION.md) — جست‌وجوی بازخورد تاریخی و ثبت بازخورد جاری در معماری.
+- رویداد: [EVT-0090](./EVT-0090-PALANG-POSITIVE-FEEDBACK-AND-INTERACTION-LEARNING-2026-10-22.md).
+- سند مرجع مادر: [PPFL](../../reference/REFERENCE-DOCUMENTS/PALANG-POSITIVE-FEEDBACK-AND-INTERACTION-LEARNING-MASTER-REFERENCE-2026-10-22-001.md).
+- هشدار: این پیوند سندی/مخزنی است؛ گردآوری خودکار همهٔ مکالمات واقعی همچنان NOT IMPLEMENTED / NOT VERIFIED است.
