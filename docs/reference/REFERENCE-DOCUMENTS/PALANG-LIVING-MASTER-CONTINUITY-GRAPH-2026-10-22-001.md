@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `PALANG-LIVING-MASTER-CONTINUITY-GRAPH-2026-10-22-001`
 - Production ID / شناسهٔ تولید: `PLMCG-2026-10-22-001`
-- Version / نسخه: 1.0.2
+- Version / نسخه: 1.0.3
 - Owner / مالک: احمد پلنگ (Ahmad Nezhadhosseini)
 - Project / پروژه: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
 - Architecture / معماری: HAIF — Human–AI Interaction Future (آیندهٔ تعامل انسان و هوش مصنوعی)
@@ -211,3 +211,10 @@
 - این الحاق، خودکارسازی پس‌زمینه یا اثبات عملکرد بهتر مدل را ادعا نمی‌کند.
 
 - پابند زمانی زنجیره: [TIME-BINDING-DTBA-2026-10-22-001](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-DTBA-2026-10-22-001.md).
+
+
+## لنگر ادامهٔ صریح — DTRC / ۰.۰
+
+- لنگر ادامهٔ بعدی: [PALANG-0.0-DTRC-ARCHITECTURE-CONTINUATION-2026-10-22-001](../../0.0/anchors/PALANG-0.0-DTRC-ARCHITECTURE-CONTINUATION-2026-10-22-001.md).
+- این لنگر به زوج `INT-20261022-008`، سند مادر DTRC، رویداد `EVT-0094` و نسخهٔ 1.1.0 مدل HAIF متصل است.
+- گام بعد: آزمون واقعی DTRC و سپس ادامهٔ اتصال/ذخیره‌سازی/بازیابی Dropbox؛ هیچ‌کدام پیش از اجرای واقعی تکمیل اعلام نمی‌شوند.
