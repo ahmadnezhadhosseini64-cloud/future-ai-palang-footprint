@@ -1102,3 +1102,12 @@ The queue index and the timestamp case must each be read back after this update.
 - معماری مادر HAIF: v1.3.1؛ سند حاکم PIRHA: v1.2.0.
 - کار باقیمانده: manifest پذیرش را در چرخهٔ بعد به گردش‌کار واقعی تبدیل کن؛ سپس ممیزی ساختاری تازه را اجرا و نتیجه/شواهد run را ثبت کن؛ بعد موارد تاریخی را معنایی تطبیق بده.
 - وضعیت: OPEN / INTEGRATION IN PROGRESS؛ هنوز ادعای ممیزی کامل تاریخچه نمی‌شود.
+
+
+## PRHAR / EVT-0097 — اصلاح پیوندهای تاریخی و تطبیق معنایی
+
+- گزارش نتایج: `docs/reference/REFERENCE-DOCUMENTS/PALANG-REPOSITORY-HISTORICAL-AUDIT-RESULTS-2026-10-22-001.md`.
+- رویداد: `docs/architecture/BEHAVIOR-TRACE/EVT-0097-REPOSITORY-HISTORICAL-AUDIT-RESULTS-2026-10-22.md`.
+- HAIF v1.3.2؛ PIRHA v1.3.0.
+- پیوندهای شناخته‌شدهٔ snapshot قبلی اصلاح شدند؛ گام پذیرش: اجرای تازه روی commit اصلاح‌شده، بررسی شمار پیوندهای شکسته، سپس تطبیق معنایی 57/68/7/24 گروه برخورد و 11 گروه محتوای تکراری.
+- وضعیت: OPEN / WAITING FOR FRESH AUDIT AND SEMANTIC TRIAGE.
