@@ -82,3 +82,12 @@
 - وضعیت: ثبت و جای‌گذاری مخزنی انجام شده؛ آزمون runtime برای DTRC هنوز انجام نشده.
 
 - پابند زمان UTC/تهران برای زنجیرهٔ DTRC: [TIME-BINDING-DTBA-2026-10-22-001](../BEHAVIOR-TRACE/TIME-BINDING-DTBA-2026-10-22-001.md).
+
+
+## نسخهٔ معماری 1.2.0 — PIRHA
+
+- [سند مرجع مادر PIRHA](../../reference/REFERENCE-DOCUMENTS/PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001.md) — حاکمیت ثبت تعاملی و ممیزی تاریخی.
+- [زوج ورودی/خروجی INT-20261022-009](../../0.0/anchors/PALANG-0.0-IN-20261022-009-INTERACTION-GOVERNANCE-AND-AUDIT.md) / [خروجی](../../0.0/anchors/PALANG-0.0-OUT-20261022-009-INTERACTION-GOVERNANCE-AND-AUDIT.md).
+- [EVT-0095](../BEHAVIOR-TRACE/EVT-0095-INTERACTION-GOVERNANCE-AND-HISTORICAL-AUDIT-2026-10-22.md).
+- رویداد مستقل تاریخی [EVT-0093](../BEHAVIOR-TRACE/EVT-0093-REGISTRATION-CONTINUATION-2026-10-22.md) اکنون فایل مستقل دارد؛ بازخوانی آن شرط پذیرش باقی است.
+- وضعیت: جای‌گذاری مستند انجام شد؛ ممیزی ساختاری تازه و تطبیق معنایی کامل هنوز باید با شواهد اجرا تأیید شوند.
