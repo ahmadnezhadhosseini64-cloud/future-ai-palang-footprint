@@ -52,3 +52,9 @@
 - `ACTIVE / LIVING` یعنی پیگیری و کنترل‌گر فعال‌اند؛ به معنی تأیید همهٔ مقصدها نیست.
 - اگر ابزار یا مجوز مانع شد، مانع دقیق را ثبت کن و مقصد را `NOT VERIFIED` نگه دار.
 - زمان اجرای اتوماسیون تا وقتی خروجی واقعی ندهد، زمان‌بندی‌شده است، نه اجراشده.
+
+
+## Activation event link
+- Activation/read-back event: [EVT-0038](../BEHAVIOR-TRACE/EVT-0038-PALANG-MIRROR-SYNC-ACTIVATION-2026-10-22.md).
+- Audit source: [LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001](./LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md).
+- Library currently contains an independently read-back archival mirror with the controller ID and automation ID. Exact byte-for-byte equality with the current repository source has not been asserted; the scheduled sync must compare and reconcile this on each run.
