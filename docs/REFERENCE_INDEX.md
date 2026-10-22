@@ -653,3 +653,10 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - پابند زمانی تعامل: [TIME-BINDING-INT-20261022-011](architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-011.md).
 
 - راستی‌آزمایی ساختاری SCEMRS: [Audit #39805549516](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39805549516) — `local_markdown_links_missing=0`, `decode_errors=0`; ممیزی معنایی شناسه‌ها و زمان تاریخی همچنان باز است.
+
+
+## Identity and timestamp reconciliation — 2026-10-22
+- `PICTR-2026-10-22-001` v1.0.1: [سند مرجع مادر رسیدگی به برخورد شناسه‌ها، تبار اسناد و ابهام زمانی EVT-0089](reference/REFERENCE-DOCUMENTS/PALANG-IDENTITY-COLLISION-AND-TIMESTAMP-RECONCILIATION-MASTER-REFERENCE-2026-10-22-001.md) — ACTIVE / LIVING / OPEN.
+- `EVT-0100`: [رخداد بررسی برخورد شناسه‌ها و ابهام زمانی](architecture/BEHAVIOR-TRACE/EVT-0100-IDENTITY-COLLISION-AND-EVT-0089-TIMESTAMP-RECONCILIATION-2026-10-22.md).
+- Input: [IN-20261022-012](0.0/anchors/PALANG-0.0-IN-20261022-012-IDENTITY-COLLISION-AND-TIMESTAMP-RECONCILIATION.md); Output: [OUT-20261022-012](0.0/anchors/PALANG-0.0-OUT-20261022-012-IDENTITY-COLLISION-AND-TIMESTAMP-RECONCILIATION.md).
+- Snapshot evidence: [Living Architecture Audit #39810829461](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39810829461); semantic identity adjudication remains OPEN.
