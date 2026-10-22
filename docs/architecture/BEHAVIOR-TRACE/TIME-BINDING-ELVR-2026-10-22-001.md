@@ -83,3 +83,11 @@ Repository: ثبت و بازخوانی تأیید شد. GitHub Actions: run فو
 - لنگر مستقل اصلی برای ادامهٔ بازیابی: PALANG-0.0-INTERACTION-RECOVERY-2026-10-22-001.
 - لنگر PALANG-0.0-EXECUTABLE-INTERACTION-LEDGER-VALIDATION نیز حفظ شده و مکمل است؛ هیچ‌کدام لنگرهای قدیمی‌تر را جایگزین نمی‌کنند.
 - آزمون cold-start سرویس تولیدی، شکارچی دائماً فعال و مقصدهای Gmail / Library / Buffer / Persistent Memory / Dropbox همچنان تأییدنشده‌اند.
+
+
+## ثبت زمان نمایهٔ ادامهٔ مرجع مادر
+- Canonical continuation master reference commit: 7e41e21d5d84112048b6e5c2dff277f57f8ef5fb.
+- UTC: 2026-10-22T09:08:59Z.
+- Tehran equivalent: 2026-10-22T12:38:59+03:30.
+- Commit link: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/7e41e21d5d84112048b6e5c2dff277f57f8ef5fb.
+- این زمان، زمان ثبت تغییر در نمایهٔ ادامه است؛ با زمان اجرای CI و زمان پیام کاربر یکی نیست.
