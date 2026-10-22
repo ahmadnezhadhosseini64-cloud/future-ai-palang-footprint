@@ -375,3 +375,25 @@
 - قاعده: سند مادر بازسازی کل پروژه یک مرجع فرادستِ خودبسنده است؛ با نقش Master در معماری مفهومی HAIF یکی نیست.
 - زمان دقیق پیام کاربر: NOT CAPTURED؛ زمان commitها جداگانه در پابند زمانی آمده است.
 - وضعیت: قاعده در سند مادر و معماری ثبت شده؛ تطبیق کامل نمایه/نقاط و ممیزی تازه پس از تغییر هنوز نیازمند شاهد مستقل است.
+
+
+---
+
+## Addendum v1.0.2 — شکارچی، منفی کاذب و اصلاح یکتایی شناسه
+
+- Interaction: INT-20261022-015; anchors IN-20261022-015 / OUT-20261022-015.
+- Canonical event: [EVT-0103](../../architecture/BEHAVIOR-TRACE/EVT-0103-BEHAVIOR-HUNTER-MISSED-DETECTION-AND-ID-COLLISION-CORRECTION-2026-10-22.md).
+- Live Inbox item: [INBOX-20261022-002](../../architecture/LIVE-INBOX/entries/INBOX-20261022-002.md).
+- Behavioral master: [LBAF](./LIVING-BEHAVIOR-ARCHITECTURE-FORESIGHT-MASTER-REFERENCE-2026-10-22-001.md).
+- Runtime gap: [Issue #20](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/20).
+
+### Evidence and correction
+دو خروجی قبلی دستیار حاوی درس‌های معماری مهم بودند، اما آن درس‌ها به‌طور کامل به کاندیدهای رفتارشناسی، شاهد، صف اقدام و سند مادر متصل نشدند. این یک منفی کاذب/شکست کشف در گردش‌کار قابل مشاهده است؛ دربارهٔ تفکر پنهان ادعایی نمی‌شود.
+
+ممیزی همچنین نشان داد شناسهٔ EVT-0093 در مخزن قبلاً مصرف شده بود، اما یک فایل تازه با همان شماره ساخته شد. این خطای ثبت دستیار است. فایل تاریخی نگه داشته شده و با هشدار صریح به EVT-0103 ارجاع می‌دهد؛ شناسهٔ قبلی حذف یا بی‌صدا بازنویسی نشده است.
+
+### Required hunter gate
+برای هر تعامل مهم، دو مسیر باید اجرا شوند: (A) ثبت و منشأ زوج تعامل و (B) کشف کاندیدهای رفتاری/معماری از ورودی و خروجی. کاندیدها باید OBSERVATION / INFERENCE / HYPOTHESIS / UNKNOWN باشند، به شواهد وصل شوند، پیش از تثبیت بازبینی شوند و به شکاف/اقدام و مدل والد پیوند بخورند. پیش از تخصیص هر شناسه، کنترل یکتایی مخزن اجباری است.
+
+### Status
+Repository artifacts for INT-015/EVT-0103/inbox are being registered and must be read back. The architecture contract is ACTIVE / LIVING; automated host capture and always-on behavior hunting remain OPEN / NOT PROVEN under Issue #20.
