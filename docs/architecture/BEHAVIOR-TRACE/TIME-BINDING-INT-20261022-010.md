@@ -42,3 +42,12 @@ All links above were authored as repository-relative Markdown paths. Their targe
 | Reference index time-binding link | `ae27a11e5403237e38a8f7da9d099640032e93bc` | 2026-10-22T14:57:37Z | 2026-10-22T18:27:37+03:30 |
 | Architecture README time-binding link | `04ad8e75f417e46ab15f1b3f70a5b28c3a3d5106` | 2026-10-22T14:57:42Z | 2026-10-22T18:27:42+03:30 |
 | Continuity graph time-binding link | `1a842e913e2689f6cea7dafb644b7ac705fd07e2` | 2026-10-22T14:57:50Z | 2026-10-22T18:27:50+03:30 |
+
+| PIRHA master v1.2.0 with acceptance gate | `d3e5289856f2c20f1ffe055c11c056a56999fefa` | 2026-10-22T14:58:58Z | 2026-10-22T18:28:58+03:30 |
+| HAIF mother model v1.3.1 | `7503173b2a258702b8bb251c5f2b0af9ed3640b7` | 2026-10-22T14:59:16Z | 2026-10-22T18:29:16+03:30 |
+| EVT-0096 gap analysis update | `82620f121c93387ffa83076f3e988c43bfb617b4` | 2026-10-22T14:59:41Z | 2026-10-22T18:29:41+03:30 |
+| 0.0 ledger version update | `789ffe7625610705d3f57846b29b939afdd870b9` | 2026-10-22T14:59:47Z | 2026-10-22T18:29:47+03:30 |
+| Reference index version update | `97b430440f6f82835b74b74d91e2e1f1b2549791` | 2026-10-22T14:59:53Z | 2026-10-22T18:29:53+03:30 |
+| Architecture README version update | `225963d74bf9971d147a6ab11225aec95a0be371` | 2026-10-22T15:00:01Z | 2026-10-22T18:30:01+03:30 |
+| Continuity graph acceptance-gate update | `fb6e3359a5a451c2b9caaab4b3ea3bf577b521d1` | 2026-10-22T15:00:07Z | 2026-10-22T18:30:07+03:30 |
+| Integration queue acceptance-gate update | `ddeec72411b49d906c8161e6d3c1a7b30002f492` | 2026-10-22T15:00:18Z | 2026-10-22T18:30:18+03:30 |
