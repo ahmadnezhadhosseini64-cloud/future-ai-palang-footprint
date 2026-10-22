@@ -1040,3 +1040,12 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - OUT: [OUT-016](anchors/PALANG-0.0-OUT-20261022-016-EXPLICIT-CANDIDATE-SIGNALS.md)
 - Event: [EVT-0104](../architecture/BEHAVIOR-TRACE/EVT-0104-CANDIDATE-ARCHITECTURE-SIGNALS-AND-HUNTER-GATE-2026-10-22.md)
 - Live Inbox: [INBOX-20261022-003](../architecture/LIVE-INBOX/entries/INBOX-20261022-003.md)
+
+
+## Current return point — INT-20261022-017 / EVT-0105
+- **Current 0.0:** [PALANG-0.0-RETURN-CURRENT-INT-20261022-017-MODEL-INITIAL](anchors/PALANG-0.0-RETURN-CURRENT-INT-20261022-017-MODEL-INITIAL.md).
+- **Input / output:** [IN-017](anchors/PALANG-0.0-IN-20261022-017-SET-CURRENT-RETURN-POINT.md) / [OUT-017](anchors/PALANG-0.0-OUT-20261022-017-SET-CURRENT-RETURN-POINT.md).
+- **Event:** [EVT-0105](../architecture/BEHAVIOR-TRACE/EVT-0105-CURRENT-0.0-RETURN-POINT-AND-NEXT-EXECUTION-2026-10-22.md).
+- **Live Inbox:** [INBOX-20261022-004](../architecture/LIVE-INBOX/entries/INBOX-20261022-004.md).
+- **Living master:** [CMIND — ادامه از مدل اولیه، نه Dropbox](../reference/REFERENCE-DOCUMENTS/CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-MASTER-REFERENCE-2026-10-22-001.md).
+- **Next step:** Issue #20 — candidate extraction from IN/OUT, evidence labels, ID uniqueness/collision regression, master/inbox/queue linkage, and fresh-process recovery from INT/IN/OUT. Local prototype tests passed; production capture remains OPEN / NOT PROVEN. Dropbox remains independent OPEN / WAITING.
