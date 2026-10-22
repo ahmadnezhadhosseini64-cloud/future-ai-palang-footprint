@@ -890,3 +890,12 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - سند مادر: [PFTA](../reference/REFERENCE-DOCUMENTS/PALANG-FUTURE-THINKING-ACCELERATION-MASTER-REFERENCE-2026-10-22-001.md).
 - رویداد: [EVT-0091](../architecture/BEHAVIOR-TRACE/EVT-0091-PALANG-FUTURE-THINKING-ACCELERATION-2026-10-22.md).
 - پابند زمان: [TIME-BINDING-PFTA](../architecture/BEHAVIOR-TRACE/TIME-BINDING-PFTA-2026-10-22-001.md).
+
+
+## ثبت زنده و لنگرگذاری — 2026-10-22
+
+- سند مرجع مادر: `docs/reference/REFERENCE-DOCUMENTS/PALANG-LIVING-REGISTRATION-AND-ANCHORING-MASTER-REFERENCE-2026-10-22-001.md` — `PALANG-LIVING-REGISTRATION-AND-ANCHORING-2026-10-22-001` — ACTIVE / LIVING / OPEN.
+- لنگر ورودی مستقل: `docs/0.0/anchors/PALANG-0.0-IN-20261022-007-LIVING-REGISTRATION.md` — `IN-20261022-007`.
+- لنگر خروجی مستقل: `docs/0.0/anchors/PALANG-0.0-OUT-20261022-007-LIVING-REGISTRATION.md` — `OUT-20261022-007`.
+- پیوند زمانی UTC/تهران: `docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-PLRA-2026-10-22-001.md`.
+- وضعیت بافر، حافظهٔ پایدار و Dropbox در این ثبت مستقلاً تأیید نشده‌اند؛ کار اتصال و آزمون بازیابی Dropbox همچنان باز است.
