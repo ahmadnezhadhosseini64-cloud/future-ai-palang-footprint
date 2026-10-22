@@ -43,3 +43,10 @@ The first registered item is the user's request to make the live inbox a standar
 - [EVT-0093](../BEHAVIOR-TRACE/EVT-0093-LIVING-INBOX-AND-INTERACTION-TO-GROWTH-CHAIN-2026-10-22.md), [first inbox item](./entries/INBOX-20261022-001.md), independent IN/OUT anchors, CMIND master Addendum v1.0.4, model-initial queue, and both relevant indexes have been fetched after write and their expected identifiers/links matched.
 - Canonical UTC/Tehran commit evidence: [TIME-BINDING-LIVE-INBOX](../BEHAVIOR-TRACE/TIME-BINDING-LIVE-INBOX-2026-10-22-001.md).
 - Status: inbox structure ACTIVE / LIVING; repository records REGISTERED / READ-BACK VERIFIED. Host-side automatic capture and production cold-start remain OPEN under Issue #20.
+
+
+## Second inbox item — missed behavior-hunter detection
+- [INBOX-20261022-002](./entries/INBOX-20261022-002.md) records the missed extraction of architectural candidates from prior assistant outputs and the identifier collision introduced in the prior registration workflow.
+- Canonical event: [EVT-0103](../BEHAVIOR-TRACE/EVT-0103-BEHAVIOR-HUNTER-MISSED-DETECTION-AND-ID-COLLISION-CORRECTION-2026-10-22.md).
+- Independent anchors: [IN-015](../../0.0/anchors/PALANG-0.0-IN-20261022-015-BEHAVIOR-HUNTER-MISSED-DETECTION.md) / [OUT-015](../../0.0/anchors/PALANG-0.0-OUT-20261022-015-BEHAVIOR-HUNTER-MISSED-DETECTION.md).
+- The behavior-hunter runtime remains OPEN / NOT PROVEN under Issue #20.
