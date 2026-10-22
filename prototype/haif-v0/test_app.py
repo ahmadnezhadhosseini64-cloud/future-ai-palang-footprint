@@ -289,3 +289,124 @@ def test_real_repository_allowlist_ingests_searches_and_survives_restart(tmp_pat
         assert restarted.json()["count"] == 1
         restored = restarted.json()["items"][0]
         assert {key: restored[key] for key in expected} == expected
+
+
+def interaction_payload(sequence=5, summary="Continue from model initial"):
+    suffix = f"20261022-{sequence:03d}"
+    return {
+        "interaction_id": f"INT-{suffix}",
+        "input_id": f"IN-{suffix}",
+        "output_id": f"OUT-{suffix}",
+        "sequence": sequence,
+        "version": "1.0.0",
+        "status": "VALIDATED",
+        "time_evidence": {
+            "repository_commit_utc": None,
+            "tehran_equivalent": None,
+            "message_timestamp": None,
+            "event_timestamp": None,
+            "operation_timestamp": None,
+            "test_timestamp": None,
+            "message_timestamp_status": "NOT_EXPOSED",
+        },
+        "input": {
+            "content_ref": "conversation-context://IN-20261022-005",
+            "content_status": "REFERENCE_ONLY",
+            "summary": "User asks to continue the initial model path.",
+        },
+        "output": {
+            "content_ref": "repository-reference://OUT-20261022-005",
+            "content_status": "REFERENCE_ONLY",
+            "summary": summary,
+        },
+        "behavior_analysis": [{
+            "candidate": "The current continuation target is the initial model path, not the independent Dropbox branch.",
+            "classification": "OBSERVATION",
+            "evidence_refs": ["EVT-0091"],
+            "confidence": 1.0,
+            "counterevidence": [],
+        }],
+        "lineage": {
+            "parent_ids": ["EVT-0084", "EVT-0085", "EVT-0091"],
+            "related_event_ids": ["EVT-0084", "EVT-0085", "EVT-0091"],
+            "architecture_refs": ["PALANG-CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-2026-10-22-001"],
+            "gap_ids": ["PALANG-BEHAVIOR-HUNTER-RUNTIME-GAP-2026-10-22-001"],
+            "evidence_refs": ["EVT-0091"],
+            "recovery_pointer": "docs/reference/REFERENCE-DOCUMENTS/CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-MASTER-REFERENCE-2026-10-22-001.md",
+        },
+        "verification": {
+            "schema_validation": "PASS",
+            "readback": "PASS",
+            "runtime_capture": "NOT_VERIFIED",
+            "notes": ["Test payload only; does not prove automatic host capture."],
+        },
+    }
+
+
+def test_interaction_pair_write_readback_and_reverse_lookup_by_all_ids(tmp_path):
+    payload = interaction_payload()
+    with client_for(tmp_path) as client:
+        created = client.post("/api/v1/interactions", json=payload)
+        assert created.status_code == 201, created.text
+        stored = created.json()
+        assert stored["status"] == "WRITE_READBACK_VERIFIED"
+        assert stored["content_sha256"]
+
+        for lookup_id in (payload["interaction_id"], payload["input_id"], payload["output_id"]):
+            response = client.get(f"/api/v1/interactions/{lookup_id}")
+            assert response.status_code == 200
+            assert response.json()["interaction_id"] == payload["interaction_id"]
+            assert response.json()["input_id"] == payload["input_id"]
+            assert response.json()["output_id"] == payload["output_id"]
+            assert response.json()["content_sha256"] == stored["content_sha256"]
+
+
+def test_interaction_pair_idempotent_retry_does_not_duplicate(tmp_path):
+    payload = interaction_payload()
+    with client_for(tmp_path) as client:
+        first = client.post("/api/v1/interactions", json=payload)
+        second = client.post("/api/v1/interactions", json=payload)
+        assert first.status_code == 201
+        assert second.status_code == 201
+        assert second.json()["status"] == "IDEMPOTENT_REPLAY_READBACK_VERIFIED"
+        assert second.json()["content_sha256"] == first.json()["content_sha256"]
+
+
+def test_interaction_pair_conflicting_reuse_fails_closed(tmp_path):
+    payload = interaction_payload()
+    with client_for(tmp_path) as client:
+        first = client.post("/api/v1/interactions", json=payload)
+        assert first.status_code == 201
+        changed = interaction_payload(summary="Conflicting reuse")
+        response = client.post("/api/v1/interactions", json=changed)
+        assert response.status_code == 409
+        assert response.json()["detail"] == "INTERACTION_ID_CONFLICT"
+
+
+def test_interaction_pair_survives_app_restart_and_unknown_lookup_is_404(tmp_path):
+    db_path = tmp_path / "interaction-restart.sqlite3"
+    payload = interaction_payload()
+    with TestClient(create_app(db_path)) as client:
+        created = client.post("/api/v1/interactions", json=payload)
+        assert created.status_code == 201, created.text
+        expected = created.json()
+
+    with TestClient(create_app(db_path)) as restarted:
+        recovered = restarted.get(f"/api/v1/interactions/{payload['input_id']}")
+        assert recovered.status_code == 200
+        assert recovered.json()["interaction_id"] == payload["interaction_id"]
+        assert recovered.json()["content_sha256"] == expected["content_sha256"]
+        assert recovered.json()["output_id"] == payload["output_id"]
+        missing = restarted.get("/api/v1/interactions/INT-20261022-999")
+        assert missing.status_code == 404
+        assert missing.json()["detail"] == "INTERACTION_NOT_FOUND"
+
+
+def test_interaction_pair_rejects_mismatched_ids(tmp_path):
+    payload = interaction_payload()
+    payload["output_id"] = "OUT-20261022-006"
+    with client_for(tmp_path) as client:
+        response = client.post("/api/v1/interactions", json=payload)
+        assert response.status_code == 422
+        assert response.json()["detail"] == "INTERACTION_ID_PAIR_MISMATCH"
+
