@@ -1012,3 +1012,9 @@ The queue index and the timestamp case must each be read back after this update.
 - Library: یک mirror مشخص از آزمون زنده ثبت و از همان مسیر بازخوانی شد؛ `REGISTERED / READ-BACK VERIFIED` برای همان فایل.
 - این مورد، اثبات پایداری سراسری Library یا دیگر اسناد نیست. Buffer و Persistent Memory: NOT VERIFIED؛ Dropbox: OPEN / NOT VERIFIED؛ بازیابی بیرونی: NOT RUN.
 - برای ارتقای وضعیت کلی هر مقصد، شواهد مستقل همان مقصد و آزمون دامنهٔ مربوط لازم است.
+
+### همگام‌سازی آینه — وضعیت جاری
+- برای آزمون زندهٔ EVT-0037، نسخهٔ آینه در Library به‌روزرسانی شد و محتوای آن از مسیر مستقل بازخوانی و تطبیق داده شد.
+- وضعیت: `WRITE=PASS / READ-BACK=PASS / MATCH=PASS` برای همین فایل.
+- هنوز باز: `BOART-FOLLOWUP-01` ممیزی گراف/مرجع مادر؛ `BOART-FOLLOWUP-02` اتصال و آزمون واقعی Dropbox؛ `BOART-FOLLOWUP-03` بازیابی سرتاسری در محیط جداگانه.
+- Buffer و Persistent Memory: NOT VERIFIED؛ Dropbox: OPEN / NOT VERIFIED. آینه‌سازی دوره‌ای تا زمان اجرای بعدی، خودکار یا دائمی فرض نشود.
