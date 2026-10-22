@@ -10,7 +10,7 @@
 - Registration governance / حاکمیت ثبت: [PIRHA](../../reference/REFERENCE-DOCUMENTS/PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001.md)
 - Owner / مالک و تنها مرجع تصویب تغییرات حاکم: احمد پلنگ
 - Exact user-message timestamp / زمان دقیق پیام کاربر: NOT CAPTURED; never replace with commit time.
-- Status / وضعیت: WRITTEN; repository read-back and architecture integration must be independently checked.
+- Status / وضعیت: WRITTEN; read-back, matching and architecture-link checks are being performed.
 
 ## What changed
 The owner requested that every master reference be self-contained and executable as the sole available document when transferred into another AI environment or app model. The receiving agent must know the project's goal, architecture, registration sequence, evidence rules, status distinctions, recovery procedure, and owner-approval gate without hidden memory.
