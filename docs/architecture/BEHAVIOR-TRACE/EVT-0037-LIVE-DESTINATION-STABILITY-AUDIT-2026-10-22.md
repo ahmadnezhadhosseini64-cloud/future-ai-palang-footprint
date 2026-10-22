@@ -91,3 +91,12 @@ PRESERVE → ANCHOR → DOCUMENT → REGISTER → READ-BACK → MATCH → VERIFY
 - Independent read-back: PASS. The returned content includes `ثبت همگام‌سازی آینه`, `MIRROR-SYNC`, source blob SHA `f9ee5185b92a9117f04b3ecd55d12f3d432a496e`, `BOART-FOLLOWUP-01`, and explicit destination limits.
 - Library modified metadata UTC `2026-10-22T05:50:28.914450Z`; Tehran `2026-10-22 09:20:28.914450` derived from UTC. This is file metadata, not exact read-back operation time.
 - Status: `WRITE=PASS → READ-BACK=PASS → MATCH=PASS` for this mirror artifact. This does not verify Buffer, Persistent Memory, Dropbox or end-to-end external recovery. No automatic background sync is claimed.
+
+## نهایی‌سازی همگام‌سازی آینه — شواهد بازخوانی نسخهٔ جاری
+- Repository source path: `docs/architecture/BEHAVIOR-OBSERVATORY/LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md`.
+- Repository source blob SHA که در نسخهٔ آینه ثبت شد: `8a0911b9fa6e25c8ef33b71441378e840108c01a`.
+- Library mirror path: `/Future AI/Palang Footprint/Master Reference Vault/Reference Documents/LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md`.
+- Library file ID: `file_00000000c98481f4bb07be3239e4deba`; stable Library ID: `libfile_7ac3c9a6ec14819198eb2751e204aa48`.
+- Upload/overwrite succeeded; independent read-back then confirmed current source SHA, commit evidence, `BOART-FOLLOWUP-01`, and destination limitations. Result for this artifact: `WRITE=PASS / READ-BACK=PASS / MATCH=PASS`.
+- Library modified metadata UTC `2026-10-22T05:51:50.403748Z`; Tehran `2026-10-22 09:21:50.403748` derived from UTC. This is metadata time, not the exact read-back operation time.
+- This is a verified snapshot synchronization, not continuous background synchronization. Future repository edits require another mirror update and read-back. Buffer and Persistent Memory remain `NOT VERIFIED`; Dropbox remains `OPEN / NOT VERIFIED`; external recovery remains `NOT RUN`.
