@@ -72,3 +72,14 @@
 - رویداد: [EVT-0096](../../docs/architecture/BEHAVIOR-TRACE/EVT-0096-BASELINE-REGISTRATION-AND-ARCHITECTURE-EVOLUTION-2026-10-22.md).
 - پابند زمانی: [TIME-BINDING-INT-20261022-010](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-010.md).
 - نسخهٔ معماری HAIF: 1.3.0؛ گام بعدی ممیزی ساختاری تازه و تطبیق معنایی تاریخچه است.
+
+
+## INT-20261022-014 — ادامه از سند مادر بازسازی
+
+- سند مادر کل پروژه: [UPRM v1.0.1](../../docs/reference/REFERENCE-DOCUMENTS/PALANG-UNIVERSAL-PROJECT-RECONSTRUCTION-MASTER-2026-10-22-001.md).
+- معماری HAIF: [مدل مادر v1.3.7](../../docs/architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md).
+- ورودی/خروجی: [IN-014](../../docs/0.0/anchors/PALANG-0.0-IN-20261022-014-MASTER-DOCUMENT-AND-HAIF-SEPARATION-RULE.md) / [OUT-014](../../docs/0.0/anchors/PALANG-0.0-OUT-20261022-014-MASTER-DOCUMENT-AND-HAIF-SEPARATION-RULE.md).
+- رویداد/پابند زمانی: [EVT-0102](../../docs/architecture/BEHAVIOR-TRACE/EVT-0102-MASTER-DOCUMENT-AND-HAIF-SEPARATION-RULE-2026-10-22.md) / [TIME-BINDING-INT-20261022-014](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-014.md).
+- قاعده: سند مادر کل پروژه یک مرجع بازسازی فرادست است و با گرهٔ Master در Master–Child–Rahm یکی نیست.
+- ادامهٔ اولویت‌دار: ممیزی تازهٔ snapshot، بررسی تک‌تک 9 یال مبهم و منشأ عدد 6، تطبیق گروه‌های برخورد و ابهام EVT-0089؛ سپس آزمون Dropbox.
+- وضعیت: OPEN / LIVING.
