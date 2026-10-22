@@ -566,3 +566,13 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - رویداد: [EVT-0091](architecture/BEHAVIOR-TRACE/EVT-0091-PALANG-FUTURE-THINKING-ACCELERATION-2026-10-22.md).
 - زوج تعامل: `INT-20261022-004` — [ورودی](0.0/anchors/PALANG-0.0-IN-20261022-004-FUTURE-THINKING-REQUEST.md) / [خروجی](0.0/anchors/PALANG-0.0-OUT-20261022-004-FUTURE-THINKING-OUTPUT.md).
 - پابند زمانی: [TIME-BINDING-PFTA](architecture/BEHAVIOR-TRACE/TIME-BINDING-PFTA-2026-10-22-001.md).
+
+
+## 2026-10-22 — Living registration and independent anchors
+
+| ID | Document | Role | Status |
+|---|---|---|---|
+| PLRA-2026-10-22-001 | `docs/reference/REFERENCE-DOCUMENTS/PALANG-LIVING-REGISTRATION-AND-ANCHORING-MASTER-REFERENCE-2026-10-22-001.md` | سند مرجع مادر زنده برای ثبت، تداوم، لنگرهای مستقل و مسیر ادامه | ACTIVE / LIVING / OPEN; repository read-back verified for master and input/output anchors |
+| IN-20261022-007 | `docs/0.0/anchors/PALANG-0.0-IN-20261022-007-LIVING-REGISTRATION.md` | لنگر مستقل ورودی | Registered |
+| OUT-20261022-007 | `docs/0.0/anchors/PALANG-0.0-OUT-20261022-007-LIVING-REGISTRATION.md` | لنگر مستقل خروجی | Registered |
+| TIME-BINDING-PLRA-2026-10-22-001 | `docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-PLRA-2026-10-22-001.md` | پیوند زمان مرجع UTC و زمان متناظر تهران | Created; self-timestamp and final read-back pending |
