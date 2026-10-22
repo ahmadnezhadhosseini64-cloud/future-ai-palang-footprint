@@ -532,3 +532,7 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - [نقطهٔ جاری ۰.۰](0.0/anchors/PALANG-0.0-CURRENT-LIVING-BEHAVIOR-ARCHITECTURE-2026-10-22-001.md) و [گام بعدی ۰.۰](0.0/anchors/PALANG-0.0-RUNTIME-COLLECTOR-PRODUCTION-RECOVERY-2026-10-22-001.md).
 - اتصال به FIOBAM، AOGM، ELVR و معماری اولیه ثبت شده؛ آینده‌پژوهی به‌عنوان نقشهٔ راه نسخه‌دار اضافه شده است.
 - گام بعدی اجرایی: issue #20، پیاده‌سازی runtime collector و اثبات cold-start واقعی.
+
+
+## پابند زمانی LBAF
+- [TIME-BINDING-LBAF](architecture/BEHAVIOR-TRACE/TIME-BINDING-LBAF-2026-10-22-001.md) — زمان canonical ثبت مخزن UTC و معادل تهران.
