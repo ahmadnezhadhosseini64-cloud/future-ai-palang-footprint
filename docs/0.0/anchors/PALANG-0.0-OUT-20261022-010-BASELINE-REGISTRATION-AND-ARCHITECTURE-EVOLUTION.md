@@ -33,3 +33,5 @@
 - نسخهٔ معماری HAIF هدف: 1.3.0 (پس از تأیید نسخهٔ پیشین).
 - بافر، حافظهٔ پایدار و Dropbox: NOT VERIFIED.
 - این سند به‌تنهایی ادعای تکمیل همهٔ مقصدها یا خودکارسازی پس‌زمینه ندارد.
+
+- Time binding / پابند زمانی: [TIME-BINDING-INT-20261022-010](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-010.md).
