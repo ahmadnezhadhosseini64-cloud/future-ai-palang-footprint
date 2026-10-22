@@ -43,3 +43,37 @@ This event records the process activation and must be updated after the policy f
 - Complete exact-version mirror write/read-back for the governing policy.
 - Complete index reconciliation and final read-back.
 - Continue BOART-FOLLOWUP-01, then Dropbox and isolated recovery.
+
+
+## شواهد واقعی نوشتن، بازخوانی و تطبیق — تکمیل ثبت
+### منبع مخزن
+- Policy commit: bc8e65c5d821e47d774c3f22ffcce5040076f4e9 — UTC 2026-10-22T05:51:13Z; Tehran 2026-10-22 09:21:13.
+- Policy blob SHA پس از بازخوانی: 06f6eccdf0d18e081b9525123960b0dbe68a0824.
+- Event creation commit: ab36a27949d7ca4da310fcfc0204300d238dbf97 — UTC 2026-10-22T05:51:25Z; Tehran 2026-10-22 09:21:25.
+- Observatory index commit: 2a6847faf3f8b42e97db67b7a22764c664f908f8 — UTC 2026-10-22T05:53:03Z; Tehran 2026-10-22 09:23:03.
+- Integration queue commit: 739c9097c5acea1daa5ae4ddaf4f7a22cbd986e5 — UTC 2026-10-22T05:53:10Z; Tehran 2026-10-22 09:23:10.
+- 0.0 index commit: 3b274012306745a802be8e73778afd918353bd91 — UTC 2026-10-22T05:53:18Z; Tehran 2026-10-22 09:23:18.
+- Tehran timestamps are converted from the corresponding UTC instant (+03:30); these are repository registration times, not test execution or read-back operation times.
+
+### آینهٔ Library
+- Destination: /Future AI/Palang Footprint/Master Reference Vault/Reference Documents/MIRROR-SYNC-GOVERNANCE-AND-LIVE-REGISTRATION-2026-10-22-001.md
+- Library file ID: file_000000005e8481f4b4e55d871b451d6a
+- Stable Library ID: libfile_e137a19a1bc881919024a0d83755286c
+- Library metadata modified_at: 2026-10-22T05:52:03.923477Z; derived Tehran 2026-10-22 09:22:03.923477.
+- Read-back matched the repository source through the final content character, including Stable ID, Version, lifecycle and next action. The Library read-back representation omits the single final newline; normalized content comparison (trim final newline only) matches. This formatting normalization is recorded rather than mislabeled as byte-for-byte identity.
+- Result for this exact policy version: REGISTERED / READ-BACK VERIFIED in Repository and Library.
+
+### Index read-back
+The observatory, integration queue and 0.0 index were fetched again after the writes. Each contains the EVT-0038 and policy path, and each records the true separate status of Buffer, Persistent Memory and Dropbox. Previous 0.0 anchors remain indexed; none was overwritten.
+
+### Final destination status
+- Repository policy/event/indexes: REGISTERED; final read-back pending this event's own closing update.
+- Library: REGISTERED / READ-BACK VERIFIED for this exact policy version.
+- Buffer: NOT VERIFIED.
+- Persistent Memory: NOT VERIFIED.
+- Dropbox: OPEN / NOT VERIFIED.
+- Isolated end-to-end recovery: NOT RUN.
+- Workflow: ACTIVE / LIVING / OPEN; manual evidence-backed sync, not an always-running background process.
+
+### Next action
+Continue BOART-FOLLOWUP-01 (master-reference and historical graph reconciliation), then BOART-FOLLOWUP-02 (Dropbox connection/write/retrieve/match), then BOART-FOLLOWUP-03 (isolated external recovery).
