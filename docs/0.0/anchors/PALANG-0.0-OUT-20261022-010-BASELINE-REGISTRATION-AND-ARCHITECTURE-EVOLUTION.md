@@ -49,3 +49,9 @@
 - Acceptance simulation: PASS for no silent loss, no false completion, idempotent retry, interruption recovery and detection safety net.
 - These results are evidence of the run, not closure of all findings. Missing links and identity collisions remain OPEN pending classification and repair.
 - Full report: [PALANG repository historical audit results](../../reference/REFERENCE-DOCUMENTS/PALANG-REPOSITORY-HISTORICAL-AUDIT-RESULTS-2026-10-22-001.md); event: [EVT-0097](../../architecture/BEHAVIOR-TRACE/EVT-0097-REPOSITORY-HISTORICAL-AUDIT-RESULTS-2026-10-22.md).
+
+
+## پذیرش پس از ممیزی تازه
+- معماری مادر HAIF: v1.3.3؛ سند مادر PIRHA: v1.4.0.
+- ممیزی ساختاری تازه: [Run 39802929316](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39802929316) روی snapshot `0f29c9aba688ca1c72197bd3d2bad151ccbce139`؛ `local_markdown_links_missing=0`, `decode_errors=0`.
+- برخوردهای شناسه و یک ابهام زمانی همچنان بازند؛ ممیزی معنایی تاریخچه کامل نشده است.
