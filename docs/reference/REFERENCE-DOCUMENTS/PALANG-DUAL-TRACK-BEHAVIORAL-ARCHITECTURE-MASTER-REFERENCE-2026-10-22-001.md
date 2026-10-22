@@ -114,7 +114,7 @@
 
 ## 10. Status and next continuation
 
-- This document proposes and specifies the DTRC model. It does not prove that the model is implemented as a runtime service.
-- Repository write/read-back, architectural placement, time binding and indexes must be completed and verified separately.
+- Repository registration, read-back, and architectural placement were performed for this iteration: the HAIF mother model was updated to v1.1.0, its README and the continuity graph/reference indexes were updated, and a next 0.0 anchor was created. The DTRC model is documented and placed in architecture; this does not prove that it is implemented as a runtime service.
+- Time binding for the full chain must be added and read back; a final link-by-link audit is still required.
 - Buffer, Persistent Memory and Dropbox remain separate destinations; no state is inferred from repository success.
-- Next continuation: run the DTRC registration chain against the HAIF mother model, verify all links and actual commit timestamps, then resume the previously open Dropbox connection and storage/retrieval test.
+- Next continuation anchor: `docs/0.0/anchors/PALANG-0.0-DTRC-ARCHITECTURE-CONTINUATION-2026-10-22-001.md`. Run a real DTRC test, verify all links and actual commit timestamps, then resume the previously open Dropbox connection and storage/retrieval test.
