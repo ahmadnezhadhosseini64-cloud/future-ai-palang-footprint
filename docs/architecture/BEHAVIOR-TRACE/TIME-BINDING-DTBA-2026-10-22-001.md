@@ -69,3 +69,24 @@ The pair anchors, DTRC master, EVT-0094, HAIF mother model v1.1.0, model README,
 |---|---|---|---|
 | Registration master updated with DTRC lineage | `bfcebdb327999a54d70427bc95588a38c3c73f09` | 2026-10-22T14:00:31Z | 2026-10-22T17:30:31+03:30 |
 | Prior time-binding revision (immediately before this update) | `70a765f4e9426fc05f5aec044a666016838f1bb5` | 2026-10-22T14:00:50Z | 2026-10-22T17:30:50+03:30 |
+
+
+## Canonical latest-change timestamps for registered files
+
+These are the latest-change commits known at this audit pass (not merely each file's initial creation):
+
+| File / item | Latest-change commit SHA | UTC | Asia/Tehran |
+|---|---|---|---|
+| IN-008 input anchor | `ee26c1d58fc064bf55425f02b9d4a1e8be6fac32` | 2026-10-22T13:57:43Z | 2026-10-22T17:27:43+03:30 |
+| OUT-008 output anchor | `8022bcb7ff9e7be19de0e9973cee3fbbf4274f20` | 2026-10-22T13:57:46Z | 2026-10-22T17:27:46+03:30 |
+| DTRC master v1.0.1 | `37573bbb58bdffcd1cbbf043d30d82662750e83d` | 2026-10-22T13:59:48Z | 2026-10-22T17:29:48+03:30 |
+| EVT-0094 | `807fdd3af7de19809c618c13e01aac013dde1c4c` | 2026-10-22T13:58:58Z | 2026-10-22T17:28:58+03:30 |
+| HAIF mother model v1.1.0 | `936c2478d789689f48b784f7e8224e86ca8aac14` | 2026-10-22T13:59:03Z | 2026-10-22T17:29:03+03:30 |
+| HAIF model README | `d7fb8ca2efcc78b55ed6a636d360f26f0b9b5abc` | 2026-10-22T13:59:08Z | 2026-10-22T17:29:08+03:30 |
+| Continuity graph v1.0.3 | `bd60150067145aabed20450c1f1400fd6f42e5ec` | 2026-10-22T14:02:11Z | 2026-10-22T17:32:11+03:30 |
+| 0.0 register | `483f4c0ce70c96c0060e653730daefb178b2026c` | 2026-10-22T13:57:50Z | 2026-10-22T17:27:50+03:30 |
+| Reference index | `e48c7eb2f153e84def0ac3ca49ea32b0fd3c1fc4` | 2026-10-22T13:59:19Z | 2026-10-22T17:29:19+03:30 |
+| Next 0.0 continuation anchor | `cfc2fa5d6b8a660ea70cb9d8f5d90a629cab876d` | 2026-10-22T13:56:58Z | 2026-10-22T17:26:58+03:30 |
+| Registration master v1.0.1 | `bfcebdb327999a54d70427bc95588a38c3c73f09` | 2026-10-22T14:00:31Z | 2026-10-22T17:30:31+03:30 |
+
+The timestamp of this binding file's latest edit is its own GitHub commit metadata; it cannot be recursively written into the same commit without creating another change.
