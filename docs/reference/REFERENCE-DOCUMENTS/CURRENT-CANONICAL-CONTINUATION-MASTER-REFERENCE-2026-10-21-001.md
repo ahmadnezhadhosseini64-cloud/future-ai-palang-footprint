@@ -350,3 +350,12 @@
 
 ## 32. پابند زمانی معماری رفتارشناسی زنده — EVT-0088
 - [TIME-BINDING-LBAF](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-LBAF-2026-10-22-001.md) ثبت UTC واقعی commit و زمان متناظر تهران را نگه می‌دارد؛ لنگر جاری و گام بعدی ۰.۰ در بخش 31 و رویداد EVT-0088 ثبت شده‌اند.
+
+
+## 33. Universal input/output anchoring — EVT-0089
+- [UIOAM master reference](./UNIVERSAL-INPUT-OUTPUT-TEMPORAL-ANCHOR-MASTER-2026-10-22-001.md)
+- [EVT-0089 governance event](../../architecture/BEHAVIOR-TRACE/EVT-0089-UNIVERSAL-INPUT-OUTPUT-ANCHORING-GOVERNANCE-2026-10-22.md)
+- [Current input anchor IN-20261022-002](../../0.0/anchors/PALANG-0.0-IN-20261022-002-UNIVERSAL-IO-ANCHORING.md)
+- [Current output anchor OUT-20261022-002](../../0.0/anchors/PALANG-0.0-OUT-20261022-002-UNIVERSAL-IO-ANCHORING.md)
+- [UIOAM timestamp binding](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-UIOAM-2026-10-22-001.md)
+- Automatic future capture remains a runtime task; this registration does not claim a background collector is active.
