@@ -31,8 +31,8 @@
 ## شواهد
 
 - [لنگر مستقل](../../0.0/PALANG-OUTPUT-ANCHOR-HAIF-INGESTION-2026-10-21-002.md)
-- [کد واردکننده](../../prototype/haif-v0/ingest_repository_docs.py)
-- [آزمون یکپارچه](../../prototype/haif-v0/test_app.py)
+- [کد واردکننده](../../../prototype/haif-v0/ingest_repository_docs.py)
+- [آزمون یکپارچه](../../../prototype/haif-v0/test_app.py)
 - [EVT-0069](./EVT-0069-HAIF-CONTROLLED-REPOSITORY-DOCUMENT-INGESTION-2026-10-21.md)
 - [اجرای آزمون یکپارچه در انتظار](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39611543861)
 
