@@ -197,3 +197,13 @@ Resume from this CMIND master → [EVT-0093](../../architecture/BEHAVIOR-TRACE/E
 - کنترل‌های مرتبط (master، EVT، anchors، inbox، صف مدل اولیه، نمایهٔ ۰.۰ و نمایهٔ رفتارشناسی) پس از نوشتن دوباره خوانده شدند؛ شناسه‌ها و پیوندهای مورد انتظار تطبیق داشتند.
 - وضعیت فایل‌های مخزن: REGISTERED / READ-BACK VERIFIED. وضعیت صندوق: ACTIVE / LIVING. پیاده‌سازی خودکار دریافت همهٔ تعامل‌ها و آزمون cold-start تولیدی همچنان OPEN / NOT YET PROVEN تحت Issue #20.
 - زمان دقیق پیام کاربر و زمان تولید خروجی در رابط موجود نبود؛ زمان commit جایگزین آن‌ها نشده است.
+
+
+### H. رفتارشناسی شکارچی — نشانه‌های ازدست‌رفته و اصلاح شناسه
+- تعامل جاری: INT-20261022-015؛ [IN-015](../../0.0/anchors/PALANG-0.0-IN-20261022-015-BEHAVIOR-HUNTER-MISSED-DETECTION.md) / [OUT-015](../../0.0/anchors/PALANG-0.0-OUT-20261022-015-BEHAVIOR-HUNTER-MISSED-DETECTION.md).
+- رویداد canonical: [EVT-0103](../../architecture/BEHAVIOR-TRACE/EVT-0103-BEHAVIOR-HUNTER-MISSED-DETECTION-AND-ID-COLLISION-CORRECTION-2026-10-22.md).
+- صندوق زنده: [INBOX-20261022-002](../../architecture/LIVE-INBOX/entries/INBOX-20261022-002.md).
+- سند مادر کل پروژه: [UPRM](./PALANG-UNIVERSAL-PROJECT-RECONSTRUCTION-MASTER-2026-10-22-001.md)؛ معماری رفتارشناسی: [LBAF](./LIVING-BEHAVIOR-ARCHITECTURE-FORESIGHT-MASTER-REFERENCE-2026-10-22-001.md).
+- درس: خروجی‌های قبلی باید از نظر کاندیدهای معماری و رفتارشناسی استخراج و به شاهد/شکاف/اقدام متصل شوند؛ توضیح‌دادن قاعده به‌تنهایی اجرای آن نیست.
+- خطای ثبت دستیار نیز آشکار شد: EVT-0093 قبلاً مصرف شده بود ولی دوباره استفاده شد. فایل تاریخی حفظ و با هشدار به EVT-0103 ارجاع داده شده است.
+- وضعیت runtime شکارچی: OPEN / NOT PROVEN؛ ادامه در Issue #20، نه Dropbox.
