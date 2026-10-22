@@ -613,3 +613,5 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 | INT-20261022-010 | `docs/0.0/anchors/PALANG-0.0-IN-20261022-010-BASELINE-REGISTRATION-AND-ARCHITECTURE-EVOLUTION.md` + `docs/0.0/anchors/PALANG-0.0-OUT-20261022-010-BASELINE-REGISTRATION-AND-ARCHITECTURE-EVOLUTION.md` | ورودی/خروجی مستقل | Registered; read-back pending |
 | EVT-0096 | `docs/architecture/BEHAVIOR-TRACE/EVT-0096-BASELINE-REGISTRATION-AND-ARCHITECTURE-EVOLUTION-2026-10-22.md` | رویداد مبنای هر تعامل | Registered; read-back pending |
 | HAIF v1.3.0 | `docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md` | معماری مادر توسعه‌یافته | Updated; read-back pending |
+
+- پابند زمانی این چرخه: `docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-010.md`.
