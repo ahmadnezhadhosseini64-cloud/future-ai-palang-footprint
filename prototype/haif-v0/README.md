@@ -50,3 +50,16 @@ python prototype/haif-v0/ingest_repository_docs.py --base-url http://127.0.0.1:8
 ```
 
 The explicit allowlist is intentionally small and reviewable. This is a controlled ingestion mechanism, not automatic ingestion of the entire repository. Reruns may create additional document records; inspect the report before rerunning.
+
+
+## Interaction-pair ledger increment — INT / IN / OUT
+
+The prototype now exposes:
+- `POST /api/v1/interactions` — validates an interaction-pair record against `docs/architecture/BEHAVIOR-TRACE/interaction-pair-ledger.schema.json`, requires matching date/sequence suffixes for `INT-...`, `IN-...`, and `OUT-...`, stores the canonical record in local SQLite, hashes it with SHA-256, and verifies it by reading it back.
+- `GET /api/v1/interactions/{lookup_id}` — reverse lookup from any one of the interaction, input, or output IDs to the same paired record.
+- Exact retry of the same record is idempotent; conflicting reuse of an ID returns HTTP 409; unknown IDs return HTTP 404; mismatched pair suffixes are rejected.
+- The test suite covers schema validation, write/read-back, lookup by all three IDs, idempotency, conflicting reuse, ID mismatch, and recovery after constructing a fresh app instance against the same SQLite database.
+
+Verified CI: [HAIF Prototype Tests run 39824020260](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39824020260) — SUCCESS, 16 passed, 1 warning, 0 failed.
+
+**Scope boundary:** this is a local development prototype. It does not automatically receive every ChatGPT message, is not a production deployment, and does not establish persistence to Buffer, Library, Persistent Memory, Gmail, or Dropbox. Live producer integration, authentication/authorization, deployment hardening, and external-destination tests remain open. See [Issue #20](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/20) and [CMIND master reference](../../docs/reference/REFERENCE-DOCUMENTS/CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-MASTER-REFERENCE-2026-10-22-001.md).
