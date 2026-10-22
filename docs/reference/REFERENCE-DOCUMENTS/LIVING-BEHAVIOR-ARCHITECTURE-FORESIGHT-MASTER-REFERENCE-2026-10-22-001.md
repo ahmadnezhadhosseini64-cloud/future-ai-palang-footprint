@@ -131,3 +131,5 @@ The prior workflow missed architectural candidates and reused EVT-0093 despite a
 
 ### Boundary
 This is a workflow/control definition plus repository evidence, not proof of an always-on background hunter. Runtime collection, candidate extraction, permission boundary, durable storage and cold-start recovery remain OPEN / NOT PROVEN until implemented and independently tested under Issue #20.
+
+- Time binding for this corrective interaction: [TIME-BINDING-INT-20261022-015](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-015.md). Repository commit time is not the user-message timestamp.
