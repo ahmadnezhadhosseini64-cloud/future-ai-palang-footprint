@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ahmadnezhadhosseini64-cloud.github.io/future-ai-palang-footprint/architecture/interaction-pair-ledger.schema.json",
+  "title": "Palang Interaction Pair Ledger Record",
+  "description": "Schema for append-only user-input and assistant-output interaction records. Schema existence does not imply runtime capture is active.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["interaction_id","input_id","output_id","sequence","version","status","time_evidence","input","output","behavior_analysis","lineage","verification"],
+  "properties": {
+    "interaction_id": {"type":"string","pattern":"^INT-[0-9]{8}-[0-9]{3}$"},
+    "input_id": {"type":"string","pattern":"^IN-[0-9]{8}-[0-9]{3}$"},
+    "output_id": {"type":"string","pattern":"^OUT-[0-9]{8}-[0-9]{3}$"},
+    "sequence": {"type":"integer","minimum":1},
+    "version": {"type":"string","pattern":"^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+    "status": {"enum":["DRAFT","OBSERVED","VALIDATED","REGISTERED","AMENDED","REJECTED"]},
+    "time_evidence": {
+      "type":"object","additionalProperties":false,
+      "required":["repository_commit_utc","tehran_equivalent","message_timestamp_status"],
+      "properties":{
+        "repository_commit_utc":{"type":["string","null"],"format":"date-time"},
+        "tehran_equivalent":{"type":["string","null"],"format":"date-time"},
+        "message_timestamp":{"type":["string","null"],"format":"date-time"},
+        "event_timestamp":{"type":["string","null"],"format":"date-time"},
+        "operation_timestamp":{"type":["string","null"],"format":"date-time"},
+        "test_timestamp":{"type":["string","null"],"format":"date-time"},
+        "message_timestamp_status":{"enum":["CAPTURED","UNKNOWN","NOT_EXPOSED","INFERRED"]}
+      }
+    },
+    "input":{"type":"object","additionalProperties":false,"required":["content_ref","content_status"],"properties":{"content_ref":{"type":["string","null"]},"content_status":{"enum":["PRESERVED","REDACTED","REFERENCE_ONLY","UNAVAILABLE"]},"summary":{"type":["string","null"]}}},
+    "output":{"type":"object","additionalProperties":false,"required":["content_ref","content_status"],"properties":{"content_ref":{"type":["string","null"]},"content_status":{"enum":["PRESERVED","REDACTED","REFERENCE_ONLY","UNAVAILABLE"]},"summary":{"type":["string","null"]}}},
+    "behavior_analysis":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["candidate","classification","evidence_refs","confidence"],"properties":{"candidate":{"type":"string","minLength":1},"classification":{"enum":["OBSERVATION","INFERENCE","HYPOTHESIS","UNKNOWN"]},"evidence_refs":{"type":"array","items":{"type":"string"},"uniqueItems":true},"confidence":{"type":"number","minimum":0,"maximum":1},"counterevidence":{"type":"array","items":{"type":"string"}}}}},
+    "lineage":{"type":"object","additionalProperties":false,"required":["parent_ids","related_event_ids","architecture_refs","gap_ids","evidence_refs"],"properties":{"parent_ids":{"type":"array","items":{"type":"string"},"uniqueItems":true},"related_event_ids":{"type":"array","items":{"type":"string"},"uniqueItems":true},"architecture_refs":{"type":"array","items":{"type":"string"},"uniqueItems":true},"gap_ids":{"type":"array","items":{"type":"string"},"uniqueItems":true},"evidence_refs":{"type":"array","items":{"type":"string"},"uniqueItems":true},"recovery_pointer":{"type":["string","null"]}}},
+    "verification":{"type":"object","additionalProperties":false,"required":["schema_validation","readback","runtime_capture"],"properties":{"schema_validation":{"enum":["PASS","FAIL","NOT_RUN"]},"readback":{"enum":["PASS","FAIL","NOT_RUN"]},"runtime_capture":{"enum":["IMPLEMENTED_AND_TESTED","NOT_IMPLEMENTED","NOT_VERIFIED"]},"notes":{"type":"array","items":{"type":"string"}}}}
+  }
+}
