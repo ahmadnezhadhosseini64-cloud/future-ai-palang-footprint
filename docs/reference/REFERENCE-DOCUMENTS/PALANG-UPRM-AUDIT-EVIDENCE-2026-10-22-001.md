@@ -54,7 +54,7 @@ The semantic time-pair audit reports exactly one unresolved item:
 
 - File: `docs/architecture/BEHAVIOR-TRACE/EVT-0089-EVERY-INTERACTION-IN-OUT-TEMPORAL-ANCHOR-AND-RECOVERY-GOVERNANCE-2026-10-22.md`
 - Line: 21
-- Raw value: `2026-10-22 14:28`
+- Raw date component: `2026-10-22`; raw clock component: `14:28` (original source has a space between date and clock; timezone is missing)
 - Reason: timezone label is missing in this file; the parser cannot infer UTC/Tehran safely.
 - Status: OPEN; do not rewrite the original timestamp without recovering the evidence and applying the authorized correction.
 
