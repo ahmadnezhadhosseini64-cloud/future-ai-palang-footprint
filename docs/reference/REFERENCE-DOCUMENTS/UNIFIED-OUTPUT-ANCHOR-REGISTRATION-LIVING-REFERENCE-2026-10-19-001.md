@@ -423,3 +423,15 @@ Recovery/resume path:
 - **الزام:** هر ورودی کاربر و هر پاسخ نهایی قابل‌مشاهدهٔ دستیار یک تعامل دارای لنگر است؛ متن کامل، شناسه، منشأ، زمان دارای شاهد، ارتباط زنجیره، وضعیت مقصدها و مسیر بازیابی ثبت می‌شود.
 - **چرخه:** CAPTURE → PRESERVE → IDENTIFY → PROVENANCE → ANCHOR → REGISTER → WRITE → READ-BACK → MATCH → VERIFY → RECONCILE → STATUS → RESUME.
 - **محدودیت:** زنجیرهٔ فکر پنهان ثبت نمی‌شود؛ زمان دقیق بی‌شاهد حدس زده نمی‌شود؛ مقصد بدون آزمون مستقل VERIFIED اعلام نمی‌شود؛ در نبود ابزار/مجوز، کار OPEN/PENDING می‌ماند.
+
+
+## 25. افزودهٔ حاکم — آزمون پذیرش ثبت و رصدخانهٔ رفتار (2026-10-22)
+- Stable ID: PALANG-REGISTRATION-VERIFICATION-AND-BEHAVIOR-OBSERVATORY-2026-10-22-001
+- مرجع مستقل رصدخانه: [BEHAVIOR-OBSERVATORY](../../architecture/BEHAVIOR-OBSERVATORY/README.md).
+- رویداد و لنگر: [EVT-0034](../../architecture/BEHAVIOR-TRACE/EVT-0034-BEHAVIOR-OBSERVATORY-AND-RECOVERY-TEST-2026-10-22.md).
+- آزمون بازیابی مستقل: [نتیجهٔ آزمون](../../architecture/BEHAVIOR-OBSERVATORY/BEHAVIOR-OBSERVATORY-RECOVERY-TEST-2026-10-22-001.md).
+- قرارداد «ثبت کن» فقط زمانی کامل است که مراحل لازم واقعاً اجرا شوند: PRESERVE → ANCHOR → CLASSIFY → DOCUMENT → REGISTER → READ-BACK → MATCH → VERIFY → RECONCILE → LINK → TEST RECOVERY → STATUS BY DESTINATION → RESUME.
+- نتیجهٔ آزمون مرجع مستقل: PASS، 10/10 معیار؛ آزمون حذف مخزن و مقصدهای بیرونی انجام نشده و صریحاً باز می‌ماند.
+- هر ورودی و خروجی مهم باید لنگر مناسب، زمان‌های دارای منشأ، سند قابل‌بازیابی، شواهد و وضعیت واقعی هر مقصد داشته باشد. UTC مرجع است و معادل تهران از همان لحظه مشتق می‌شود. زمان ثبت مخزن از commit واقعی می‌آید؛ زمان پیام/اقدام/بازخوانی/تأیید جایگزین آن نیست.
+- رفتارشناسی تعامل یک اصل پیوسته است: رفتار آشکار انسان و AI جدا ثبت، پیوند و با شواهد تحلیل می‌شود؛ برداشت‌ها از واقعیت جدا می‌مانند و زنجیرهٔ فکر خصوصی ثبت نمی‌شود.
+- فقط با بازخوانی و تطبیق همین سند می‌توان وضعیت مخزن را تأیید کرد؛ مقصدهای Buffer، Library، Persistent Memory و Dropbox مستقل می‌مانند.
