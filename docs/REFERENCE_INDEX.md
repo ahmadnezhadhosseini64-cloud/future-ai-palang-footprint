@@ -615,3 +615,5 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 | HAIF v1.3.0 | `docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md` | معماری مادر توسعه‌یافته | Updated; read-back pending |
 
 - پابند زمانی این چرخه: `docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-010.md`.
+
+- آخرین نسخهٔ معماری مادر: HAIF 1.3.1؛ سند حاکم ثبت: PIRHA 1.2.0؛ شکاف جاری: `GAP-PIRHA-ACCEPTANCE-GATE-001`.
