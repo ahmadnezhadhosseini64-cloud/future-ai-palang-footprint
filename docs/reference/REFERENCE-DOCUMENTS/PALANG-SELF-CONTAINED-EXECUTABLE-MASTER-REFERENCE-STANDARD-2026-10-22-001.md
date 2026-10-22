@@ -260,3 +260,10 @@ C. مدل معماری حاصل: قاعده‌ای که از مقایسهٔ شو
 
 
 ثبت اولیهٔ سند مادر در مخزن با commit `23873a9e29b78db206ddc7aff2a3ccf596f29117` در UTC `2026-10-22T15:23:38Z` (تهران `2026-10-22T18:53:38+03:30`) انجام شد. این زمان، زمان commit است و زمان پیام کاربر نیست. راستی‌آزمایی نهایی فقط پس از بازخوانی همین نسخه و اسناد وابسته اعلام می‌شود.
+
+
+## آخرین وضعیت نسخه‌های مادر پس از درج قرارداد درون‌سندی
+- HAIF mother architecture: v1.3.5; the full portable execution contract is embedded inside the HAIF master itself.
+- PIRHA registration governance: v1.6.0; the full portable execution contract is embedded inside the PIRHA master itself.
+- Related event: EVT-0098; time binding: TIME-BINDING-INT-20261022-011.
+- Structural acceptance must be read from the latest audit run; no older run is proof for commits created after it.
