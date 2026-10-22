@@ -100,3 +100,20 @@ The fresh audit still flags line 21 in `EVT-0089-EVERY-INTERACTION-IN-OUT-TEMPOR
 - Structural: PASS; missing local links=0; decode errors=0.
 - Counts remain: Stable ID 57; Production ID 68; Reference ID 7; event number 24; exact content duplicates 11.
 - Time audit: 1,473 strings, 1,472 normalized, 1 unresolved. EVT-0089 line 21 remains unchanged because the attempted edit to the original event file was blocked. The time ambiguity is therefore still OPEN.
+
+## Reference-ID collision groups — member-level list
+
+| Reference ID | Paths | Preliminary interpretation |
+|---|---|---|
+| `MPPA-2026-09-28-001` | `architecture/memory/MEMORY-PERSISTENCE-PROOF-ARCHITECTURE-2026-09-28.md`; `architecture/memory/MEMORY-PERSISTENCE-PROOF-MASTER-ARCHIVE-RECOVERY-BOOTSTRAP-2026-09-29.md` | Two architecture documents share a reference ID; determine whether one is an evolution or a separate reference. |
+| `MPPA-2026-09-29-002` | `architecture/memory/MEMORY-PERSISTENCE-PROOF-ARCHITECTURE-2026-09-29.md`; `architecture/memory/MEMORY-PERSISTENCE-PROOF-MASTER-ARCHIVE-RECOVERY-BOOTSTRAP-2026-09-29.md` | Likely version/role overlap; lineage and inbound links need review. |
+| `REF-DRFR-2026-08-30-001` | `docs/architecture/DURABLE_REGISTRATION_FAILURE_RECOVERY.md`; `docs/reference/REF-DURABLE-REGISTRATION-FAILURE-RECOVERY-2026-08-30.md` | Architecture implementation plus reference document may be legitimate mirror, but confirm metadata role. |
+| `REF-GAPC-2026-08-31-001` | `docs/reference/REFERENCE-DOCUMENTS/MASTER-REFERENCE-GAPC-2026-08-31-001.md`; `provenance/MASTER-REFERENCE-GAPC-2026-08-31-001.md` | Reference/provenance mirror candidate. |
+| `REF-ICG-2026-08-30-001` | `docs/architecture/INTEGRATION-COMPLETION-GATE.md`; `docs/reference/REF-INTEGRATION-COMPLETION-GATE-2026-08-30.md` | Architecture contract plus reference mirror candidate. |
+| `REF-PRNT-2026-08-30-001` | `docs/architecture/ARCH-PRNT-2026-08-30-001.md`; `docs/architecture/PERMANENT_REGISTRATION_MATRIX.md`; `docs/evidence/EVIDENCE-PRNTP-2026-08-30-001.md`; `docs/reference/REF-PERMANENT-REGISTRATION-NOT-TRACE-2026-08-30.md` | One ID appears across architecture, matrix, evidence and reference roles; likely needs role-specific IDs or an explicit parent/alias map. |
+| `REF-RRC-2026-08-30-001` | `docs/reference/REF-REGISTRATION-ROUTING-CLOSURE-2026-08-30.md`; `docs/reference/REF-RRC-2026-08-30-001-verification-final.md`; `docs/reference/REF-RRC-2026-08-30-001-verification-v2.md`; `docs/reference/REF-RRC-2026-08-30-001-verification.md`; `provenance/REF-RRC-2026-08-30-001-registration-evidence.md` | One ID spans reference and multiple verification versions; explicit version/lineage distinction is required. |
+
+These are role hypotheses from paths, not final decisions. Inspect each file's own ID fields and commit history before changing identifiers.
+
+## Artifact pointer
+The full machine-readable groups and all stable/production ID members are in [audit artifact 12439434270](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39812427699/artifacts/12439434270), especially `historical-0.0-graph-audit.json`, `historical-0.0-canonical-graph-manifest.json`, and `historical-0.0-semantic-review-queue.json`.
