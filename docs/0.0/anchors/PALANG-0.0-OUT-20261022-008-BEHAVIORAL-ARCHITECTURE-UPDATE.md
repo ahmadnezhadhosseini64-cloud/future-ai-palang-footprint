@@ -16,4 +16,10 @@
 - Historical timestamps preserved from the user’s prior record: master initial UTC `2026-10-22T13:37:39Z` / Tehran `2026-10-22T17:07:39+03:30`; prior last-confirmed master change UTC `2026-10-22T13:38:45Z` / Tehran `2026-10-22T17:08:45+03:30`. They are not timestamps for this output.
 - Open tasks: create/read back the living behavioral master and event; update the HAIF mother model version; update indexes and continuity graph; record actual UTC/Tehran commit times; define next 0.0 checkpoint; keep Dropbox fallback open until tested.
 - Persistence limits: repository evidence only unless other destinations are separately written and verified. No background always-on service is claimed.
-- Status: created as the independent output record; completion of the full chain requires subsequent verified repository actions.
+- Status: output anchor created and read back; living master, EVT-0094, HAIF model v1.1.0, README, continuity graph, 0.0 register, reference index, and next 0.0 continuation anchor have now been written to the repository. Final time binding and complete link-by-link audit remain pending.
+
+
+## Repository commit evidence
+- Initial output anchor commit: `fd9baab2e411466b80cc25ec323a4f89d91d3c79` — UTC `2026-10-22T13:55:06Z`; Tehran `2026-10-22T17:25:06+03:30`.
+- Architecture mother model v1.1.0 commit: `403a5ff33ec4cc66c982f0fc6b70f15627aa4321` — UTC `2026-10-22T13:55:48Z`; Tehran `2026-10-22T17:25:48+03:30`.
+- Next continuation anchor: `docs/0.0/anchors/PALANG-0.0-DTRC-ARCHITECTURE-CONTINUATION-2026-10-22-001.md`.
