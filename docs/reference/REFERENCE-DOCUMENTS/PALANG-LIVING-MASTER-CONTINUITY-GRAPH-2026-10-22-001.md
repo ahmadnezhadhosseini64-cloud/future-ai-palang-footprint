@@ -264,3 +264,15 @@
 - HAIF v1.3.3؛ PIRHA v1.4.0؛ PRHAR v1.1.0؛ EVT-0097.
 - snapshot `0f29c9aba688ca1c72197bd3d2bad151ccbce139`: صفر پیوند محلی شکسته.
 - گروه‌های برخورد و ابهام EVT-0089 همچنان OPEN؛ ساختار پاک، معنای تاریخچه هنوز نیازمند داوری است.
+
+
+## INT-20261022-014 — قاعدهٔ عدم اختلاط سند مادر با Master–Child–Rahm
+
+- سند مادر بازسازی کل پروژه: [UPRM v1.0.1](./PALANG-UNIVERSAL-PROJECT-RECONSTRUCTION-MASTER-2026-10-22-001.md).
+- مدل مادر HAIF به‌روزشده: [HAIF v1.3.7](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md).
+- ورودی/خروجی: [IN-014](../../0.0/anchors/PALANG-0.0-IN-20261022-014-MASTER-DOCUMENT-AND-HAIF-SEPARATION-RULE.md) / [OUT-014](../../0.0/anchors/PALANG-0.0-OUT-20261022-014-MASTER-DOCUMENT-AND-HAIF-SEPARATION-RULE.md).
+- رویداد: [EVT-0102](../../architecture/BEHAVIOR-TRACE/EVT-0102-MASTER-DOCUMENT-AND-HAIF-SEPARATION-RULE-2026-10-22.md).
+- پابند زمانی: [TIME-BINDING-INT-20261022-014](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-014.md).
+- قاعدهٔ حاکم: «سند مادر کل پروژه» با گرهٔ مفهومی Master یکی نیست؛ برخورد شناسه‌ها و ابهام روابط والد نیز طبقه‌های جداگانه‌اند.
+- آخرین شاهد چکش ثبت‌شده: run 39817056241 روی snapshot 7ced5075aad8c2b4e894f70965f9fc405d02bf94؛ 9 یال والد مبهم، منبع ادعای 6 مورد هنوز تأییدنشده.
+- وضعیت: ACTIVE / LIVING / OPEN; ممیزی معنایی و مقصدهای بیرونی بازند.
