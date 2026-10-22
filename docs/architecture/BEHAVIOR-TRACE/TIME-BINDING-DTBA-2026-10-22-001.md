@@ -63,5 +63,9 @@ The pair anchors, DTRC master, EVT-0094, HAIF mother model v1.1.0, model README,
 - The timestamp of this time-binding file's latest edit is available from Git commit metadata; the file does not claim to recursively encode its own final commit time.
 
 
-| Registration master reconciliation | `bfcebdb327999a54d70427bc95588a38c3c73f09` | 2026-10-22T14:00:31Z | 2026-10-22T17:30:31+03:30 |
-| Prior living registration master updated with DTRC lineage | `bfcebdb327999a54d70427bc95588a38c3c73f09` | 2026-10-22T14:00:31Z | 2026-10-22T17:30:31+03:30 |
+## Final master reconciliation
+
+| Change | Commit SHA | UTC | Asia/Tehran |
+|---|---|---|---|
+| Registration master updated with DTRC lineage | `bfcebdb327999a54d70427bc95588a38c3c73f09` | 2026-10-22T14:00:31Z | 2026-10-22T17:30:31+03:30 |
+| Prior time-binding revision (immediately before this update) | `70a765f4e9426fc05f5aec044a666016838f1bb5` | 2026-10-22T14:00:50Z | 2026-10-22T17:30:50+03:30 |
