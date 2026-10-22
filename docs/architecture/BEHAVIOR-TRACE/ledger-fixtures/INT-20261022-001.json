@@ -1,0 +1,65 @@
+{
+  "interaction_id": "INT-20261022-001",
+  "input_id": "IN-20261022-001",
+  "output_id": "OUT-20261022-001",
+  "sequence": 1,
+  "version": "1.0.0",
+  "status": "VALIDATED",
+  "time_evidence": {
+    "repository_commit_utc": null,
+    "tehran_equivalent": null,
+    "message_timestamp": null,
+    "event_timestamp": null,
+    "operation_timestamp": null,
+    "test_timestamp": null,
+    "message_timestamp_status": "NOT_EXPOSED"
+  },
+  "input": {
+    "content_ref": "fixture://INT-20261022-001/input",
+    "content_status": "REFERENCE_ONLY",
+    "summary": "Test fixture: request to register the next implementation steps and preserve append-only architecture."
+  },
+  "output": {
+    "content_ref": "fixture://INT-20261022-001/output",
+    "content_status": "REFERENCE_ONLY",
+    "summary": "Test fixture: planned implementation, schema validation, pair recovery, and timestamp evidence."
+  },
+  "behavior_analysis": [
+    {
+      "candidate": "Requests traceable registration, independent time anchor, recovery, and verification.",
+      "classification": "OBSERVATION",
+      "evidence_refs": ["conversation-context://user-request-2026-10-22"],
+      "confidence": 1,
+      "counterevidence": []
+    },
+    {
+      "candidate": "The user prioritizes append-only growth over replacing the initial architecture.",
+      "classification": "INFERENCE",
+      "evidence_refs": ["EVT-0084", "EVT-0085"],
+      "confidence": 0.98,
+      "counterevidence": []
+    }
+  ],
+  "lineage": {
+    "parent_ids": ["EVT-0084", "EVT-0085"],
+    "related_event_ids": ["EVT-0083", "EVT-0084", "EVT-0085"],
+    "architecture_refs": [
+      "docs/architecture/BEHAVIOR-SCIENCE-PALANG-FUTURE-AI/INTERACTIVE-BEHAVIOR-APP-ARCHITECTURE-INITIAL-2026-10-22-001.md"
+    ],
+    "gap_ids": [
+      "PALANG-BEHAVIOR-HUNTER-RUNTIME-GAP-2026-10-22-001",
+      "PALANG-INTERACTION-COLD-START-RECOVERY-TEST-2026-10-22-001"
+    ],
+    "evidence_refs": ["EVT-0084", "EVT-0085"],
+    "recovery_pointer": "docs/reference/REFERENCE-DOCUMENTS/INTERACTION-PAIR-LEDGER-AND-RECOVERY-MASTER-REFERENCE-2026-10-22-001.md"
+  },
+  "verification": {
+    "schema_validation": "NOT_RUN",
+    "readback": "PASS",
+    "runtime_capture": "NOT_IMPLEMENTED",
+    "notes": [
+      "Fixture for tests only; not evidence of live automatic capture.",
+      "The two identifiers intentionally share the same date and sequence suffix."
+    ]
+  }
+}
