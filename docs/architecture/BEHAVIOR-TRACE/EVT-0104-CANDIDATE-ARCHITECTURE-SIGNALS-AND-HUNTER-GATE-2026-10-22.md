@@ -47,3 +47,10 @@ The current assistant workflow failed to harvest all six candidates when the pri
 
 ## Recovery route
 INT-20261022-016 -> IN/OUT-016 -> EVT-0104 -> INBOX-20261022-003 -> behavior master + universal master + model-initial queue -> Issue #20.
+
+
+## Read-back reconciliation
+- After writes, EVT-0104, IN/OUT anchors, inbox item 003, universal master, behavior master, continuation master, model-initial queue and indexes were fetched again; expected IDs and cross-links were present.
+- Time evidence: [TIME-BINDING-INT-20261022-016](./TIME-BINDING-INT-20261022-016.md).
+- Status: repository registration READ-BACK VERIFIED. Candidate extraction/runtime automation and end-to-end recovery remain OPEN / NOT PROVEN under Issue #20.
+- Exact user-message and assistant-generation timestamps remain unavailable; repository commit times are not substituted for them.
