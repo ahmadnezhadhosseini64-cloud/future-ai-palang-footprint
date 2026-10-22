@@ -419,3 +419,9 @@
 ## TIME-BINDING-CMIND — timestamp and execution evidence
 - [پابند زمانی CMIND](./TIME-BINDING-CMIND-2026-10-22-001.md) records actual UTC commit times and Tehran equivalents, with user-message time kept UNKNOWN / NOT CAPTURED.
 - Runtime pair-ledger code has been added to the HAIF v0 prototype. CI runs `39823733279` and `39823898278` failed on a broad-search assertion; correction commit `5bae4d711ba2c2cb50f440b6c23af8b65e73fbcf` is under fresh test run `39824020260`, last observed QUEUED.
+
+
+## CMIND corrected test result — PASS
+- Run `39824020260`, job `119982395261`: SUCCESS; `16 passed, 1 warning, 0 failed`.
+- [Timestamp binding](./TIME-BINDING-CMIND-2026-10-22-001.md) records UTC and Tehran equivalents.
+- Scope: local prototype test suite only; live host capture and external destinations remain open.
