@@ -777,3 +777,12 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - نام فارسی: «لنگر زندهٔ UTC از ورودی تا خروجی». وضعیت: ACTIVE / LIVING / OPEN / EVOLVABLE.
 - این ۰.۰ افزوده شده و هیچ لنگر پیشینی را حذف یا جایگزین نمی‌کند. زمان دقیق ورودی/پاسخ از میزبان در دسترس نیست؛ زمان تفکر داخلی قابل اندازه‌گیری نیست. زمان مرجع مخزن از commit واقعی UTC تعیین می‌شود.
 - Gmail همچنان BLOCKED / NOT VERIFIED؛ اقدام GMAIL-CONNECTION-AND-READBACK-01 باز است.
+
+
+## نقطهٔ ۰.۰ تازه — لنگر زندهٔ UTC ورودی تا خروجی
+- لنگر مستقل: [PALANG-0.0-UTC-INPUT-TO-OUTPUT-BEHAVIOR-ANCHOR-2026-10-22-001](./anchors/PALANG-0.0-UTC-INPUT-TO-OUTPUT-BEHAVIOR-ANCHOR-2026-10-22-001.md).
+- رویداد: [EVT-0041](../architecture/BEHAVIOR-TRACE/EVT-0041-UTC-INPUT-OUTPUT-LIVING-ANCHOR-2026-10-22.md).
+- سند مرجع حاکم: [UTC INPUT→OUTPUT LIVING ANCHOR (UILA)](../reference/REFERENCE-DOCUMENTS/UTC-INPUT-TO-OUTPUT-INTERACTION-ANCHOR-LIVING-GOVERNANCE-2026-10-22-001.md).
+- نام فارسی: «لنگر زندهٔ UTC از ورودی تا خروجی». وضعیت: ACTIVE / LIVING / OPEN / EVOLVABLE.
+- این ۰.۰ افزوده شده و هیچ لنگر پیشینی را حذف یا جایگزین نمی‌کند. زمان دقیق ورودی/پاسخ از میزبان در دسترس نیست؛ زمان تفکر داخلی قابل اندازه‌گیری نیست. زمان مرجع مخزن از commit واقعی UTC تعیین می‌شود.
+- Gmail همچنان BLOCKED / NOT VERIFIED؛ اقدام GMAIL-CONNECTION-AND-READBACK-01 باز است.
