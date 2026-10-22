@@ -956,3 +956,12 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - HAIF v1.3.3؛ PIRHA v1.4.0؛ PRHAR report v1.1.0؛ EVT-0097 ثبت شده است.
 - ممیزی ساختاری snapshot `0f29c9aba688ca1c72197bd3d2bad151ccbce139`: صفر پیوند محلی شکسته؛ 0 خطای رمزگشایی.
 - ممیزی معنایی: 57/68/7/24 گروه برخورد و 11 گروه تکراری باز؛ یک ابهام زمانی در EVT-0089 خط 21.
+
+
+## INT-20261022-011 — سند مادر خودبسنده و قابل‌انتقال
+- ورودی: [IN-011](anchors/PALANG-0.0-IN-20261022-011-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE.md)
+- خروجی: [OUT-011](anchors/PALANG-0.0-OUT-20261022-011-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE.md)
+- سند مادر: [SCEMRS v1.0.0](../reference/REFERENCE-DOCUMENTS/PALANG-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE-STANDARD-2026-10-22-001.md)
+- رویداد: [EVT-0098](../architecture/BEHAVIOR-TRACE/EVT-0098-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE-AND-OWNER-APPROVAL-2026-10-22.md)
+- نسخه‌های مادر به‌روزشده: PIRHA v1.5.0؛ HAIF v1.3.4.
+- قاعدهٔ جدید: هر سند مادر باید خودبسنده و قابل انتقال باشد؛ تغییر معماری فقط پس از تأیید صریح احمد پلنگ؛ read-back و راستی‌آزمایی پس از ثبت.
