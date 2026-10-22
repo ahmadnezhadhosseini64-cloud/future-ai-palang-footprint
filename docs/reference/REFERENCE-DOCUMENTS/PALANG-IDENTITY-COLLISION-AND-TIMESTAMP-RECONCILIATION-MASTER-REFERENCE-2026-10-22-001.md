@@ -2,10 +2,10 @@
 
 - Stable ID: `PALANG-IDENTITY-COLLISION-AND-TIMESTAMP-RECONCILIATION-2026-10-22-001`
 - Production ID: `PICTR-2026-10-22-001`
-- Version: 1.0.0
+- Version: 1.0.1
 - Owner / مرجع تصویب: احمد پلنگ
 - Project: Future AI / Palang Footprint — HAIF
-- Status: ACTIVE / LIVING / OPEN INVESTIGATION
+- Status: ACTIVE / LIVING / OPEN INVESTIGATION — READ-BACK TO BE REPEATED AFTER THIS REVISION
 - Interaction: `INT-20261022-012`
 - Input: [IN-20261022-012](../../0.0/anchors/PALANG-0.0-IN-20261022-012-IDENTITY-COLLISION-AND-TIMESTAMP-RECONCILIATION.md)
 - Output: [OUT-20261022-012](../../0.0/anchors/PALANG-0.0-OUT-20261022-012-IDENTITY-COLLISION-AND-TIMESTAMP-RECONCILIATION.md)
@@ -101,3 +101,14 @@ All table times are actual Git commit timestamps. They do not represent the exac
 - Other existing EVT-0089 context states the conversation-observed time was `2026-10-22 14:28` Asia/Tehran (+03:30), minute precision. Seconds are not captured.
 - Proposed source-faithful representation: `2026-10-22 14:28 Asia/Tehran (+03:30), minute precision; seconds NOT CAPTURED`.
 - The write to the original EVT-0089 file was blocked; therefore the original text remains unchanged and the semantic audit still reports this item as unresolved. Do not claim resolution until a permitted edit is applied and a fresh audit confirms zero ambiguous items.
+
+
+## 12. First pinned audit evidence
+- Workflow: [Living Architecture Audit #39810829461](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39810829461).
+- Artifact: [living-architecture-audit-39810829461](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39810829461/artifacts/12439218816).
+- Snapshot commit: `62827ec2d7e32a2aaeee34ab9046825867f042c2`; audit execution UTC `2026-10-22T16:05:00Z`.
+- Source files scanned: 706; decode errors: 0; local link edges: 2,296; missing links at that snapshot: 2; ambiguous parent edges: 9; unresolved parent edges: 0.
+- Reproduced groups: Stable ID 57; Production ID 68; Reference ID 7; event number 24; exact content duplicates 11.
+- Timestamp audit: 1,433 strings; 1,432 normalized; 1 ambiguous; 0 Tehran offset/value failures; 0 UTC-label failures. The remaining ambiguity was EVT-0089 line 21.
+- The two missing links were caused by companion records not existing at that snapshot. EVT-0100 has since been created and the master link corrected. A new audit must establish the current link count.
+- The exact group membership is available in the linked artifact's `historical-0.0-graph-audit.json` and `historical-0.0-semantic-review-queue.json`. No collision group has yet been adjudicated or renamed.
