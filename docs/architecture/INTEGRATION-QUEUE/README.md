@@ -967,3 +967,6 @@ The queue index and the timestamp case must each be read back after this update.
 - Governing standard: ../GOVERNANCE/ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21-001.md (amendment 1.2.0)
 - Rule: repository last-change commit UTC is canonical; Tehran is derived from that instant. Embedded UTC-only or Tehran-only times are normalized; no timestamp is invented when labels/metadata are insufficient.
 - Status: code and policy linked; latest workflow audit must be read back to claim whole-repository success.
+
+
+| BOART-HAIF-2026-10-22-001 | رصدخانهٔ مستقل رفتار تعامل، جمع‌آوری شواهد رفتاری و آزمون بازیابی از سند مستقل | OPEN / PARTIAL — پوشه و آزمون در مخزن ایجاد شدند؛ آزمون محتوا PASS 10/10؛ پیوندهای کامل و آزمون حذف/بازیابی سرتاسری همچنان باز | مرجع مادر، قاعدهٔ رفتارشناسی، دفتر رفتار، دفتر ۰.۰، صف معماری و لایه‌های ماندگاری | [EVT-0034](../BEHAVIOR-TRACE/EVT-0034-BEHAVIOR-OBSERVATORY-AND-RECOVERY-TEST-2026-10-22.md) · [رصدخانه](../BEHAVIOR-OBSERVATORY/README.md) · [آزمون](../BEHAVIOR-OBSERVATORY/BEHAVIOR-OBSERVATORY-RECOVERY-TEST-2026-10-22-001.md) |
