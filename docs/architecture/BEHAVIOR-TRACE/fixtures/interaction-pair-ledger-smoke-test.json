@@ -1,0 +1,50 @@
+{
+  "interaction_id": "INT-20261022-001",
+  "input_id": "IN-20261022-001",
+  "output_id": "OUT-20261022-001",
+  "sequence": 1,
+  "version": "1.0.0",
+  "status": "OBSERVED",
+  "time_evidence": {
+    "repository_commit_utc": null,
+    "tehran_equivalent": null,
+    "message_timestamp": null,
+    "event_timestamp": null,
+    "operation_timestamp": null,
+    "test_timestamp": null,
+    "message_timestamp_status": "NOT_EXPOSED"
+  },
+  "input": {
+    "content_ref": "fixture://interaction-pair-ledger-smoke-test/input",
+    "content_status": "REFERENCE_ONLY",
+    "summary": "Synthetic fixture input; not a real user conversation."
+  },
+  "output": {
+    "content_ref": "fixture://interaction-pair-ledger-smoke-test/output",
+    "content_status": "REFERENCE_ONLY",
+    "summary": "Synthetic fixture output; not a real assistant response."
+  },
+  "behavior_analysis": [
+    {
+      "candidate": "synthetic pair can be looked up from either endpoint identifier",
+      "classification": "OBSERVATION",
+      "evidence_refs": ["fixture://interaction-pair-ledger-smoke-test"],
+      "confidence": 1.0,
+      "counterevidence": []
+    }
+  ],
+  "lineage": {
+    "parent_ids": ["EVT-0085"],
+    "related_event_ids": ["EVT-0085"],
+    "architecture_refs": ["INTERACTIVE-BEHAVIOR-APP-ARCHITECTURE-INITIAL-2026-10-22-001"],
+    "gap_ids": ["PALANG-BEHAVIOR-HUNTER-RUNTIME-GAP-2026-10-22-001"],
+    "evidence_refs": ["fixture://interaction-pair-ledger-smoke-test"],
+    "recovery_pointer": "docs/architecture/BEHAVIOR-TRACE/fixtures/interaction-pair-ledger-smoke-test.json"
+  },
+  "verification": {
+    "schema_validation": "NOT_RUN",
+    "readback": "NOT_RUN",
+    "runtime_capture": "NOT_IMPLEMENTED",
+    "notes": ["Synthetic CI fixture only; not evidence that production automatic capture is active."]
+  }
+}
