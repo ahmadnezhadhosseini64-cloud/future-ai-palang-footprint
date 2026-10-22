@@ -835,3 +835,11 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - اجرای CI [39750440075](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39750440075): SUCCESS.
 - اعتبارسنجی طرح‌واره و بازیابی مستقل از IN/OUT موفق شدند.
 - این نتیجهٔ تازه، وضعیت pending پیشین را برای این اجرای آزمایشی جایگزین می‌کند؛ خودکارسازی تولیدی همچنان اثبات نشده است.
+
+
+## لنگر جاری و گام بعدی — EVT-0088
+- [لنگر جاری مستقل ۰.۰](./anchors/PALANG-0.0-CURRENT-LIVING-BEHAVIOR-ARCHITECTURE-2026-10-22-001.md).
+- [لنگر گام بعدی ۰.۰: runtime collector و بازیابی تولیدی](./anchors/PALANG-0.0-RUNTIME-COLLECTOR-PRODUCTION-RECOVERY-2026-10-22-001.md).
+- [رویداد EVT-0088](../architecture/BEHAVIOR-TRACE/EVT-0088-CURRENT-ANCHOR-LIVING-BEHAVIOR-ARCHITECTURE-AND-FUTURE-FORESIGHT-GOVERNANCE-2026-10-22.md).
+- [سند مرجع مادر LBAF](../reference/REFERENCE-DOCUMENTS/LIVING-BEHAVIOR-ARCHITECTURE-FORESIGHT-MASTER-REFERENCE-2026-10-22-001.md).
+- این دو لنگر افزایشی‌اند؛ لنگرهای پیشین را جایگزین نمی‌کنند. Runtime collector و cold-start تولیدی هنوز اجرا/تأیید نشده‌اند.
