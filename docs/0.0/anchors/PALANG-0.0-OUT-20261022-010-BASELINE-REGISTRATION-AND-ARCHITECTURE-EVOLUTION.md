@@ -35,3 +35,5 @@
 - این سند به‌تنهایی ادعای تکمیل همهٔ مقصدها یا خودکارسازی پس‌زمینه ندارد.
 
 - Time binding / پابند زمانی: [TIME-BINDING-INT-20261022-010](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-010.md).
+
+- Paired input anchor / لنگر ورودی هم‌زوج: [IN-010](PALANG-0.0-IN-20261022-010-BASELINE-REGISTRATION-AND-ARCHITECTURE-EVOLUTION.md).
