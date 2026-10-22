@@ -55,3 +55,9 @@ The first registered item is the user's request to make the live inbox a standar
 ## Third inbox item — six explicit architecture candidates
 - INBOX-20261022-003 preserves six user-stated signals and routes them to EVT-0104, independent IN/OUT anchors, the universal and behavior masters, and the model-initial queue.
 - Automatic runtime hunting and host-wide capture remain OPEN / NOT PROVEN under Issue #20.
+
+
+## Fourth inbox item — current 0.0 return point and next execution
+- [INBOX-20261022-004](entries/INBOX-20261022-004.md) records the explicit request to set the current model-initial continuation as a 0.0 return point.
+- It routes to [EVT-0105](../BEHAVIOR-TRACE/EVT-0105-CURRENT-0.0-RETURN-POINT-AND-NEXT-EXECUTION-2026-10-22.md), [IN/OUT-017](../../0.0/anchors/PALANG-0.0-IN-20261022-017-SET-CURRENT-RETURN-POINT.md), the current 0.0 anchor, the living CMIND master, and the model-initial queue.
+- Next execution remains Issue #20. Production runtime capture and cold-start are OPEN / NOT PROVEN; Dropbox remains a separate waiting branch.
