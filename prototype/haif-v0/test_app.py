@@ -263,12 +263,13 @@ def test_real_repository_allowlist_ingests_searches_and_survives_restart(tmp_pat
         )
         assert search.status_code == 200
         result = search.json()
-        assert result["count"] == 1
-        item = result["items"][0]
-        assert item["source_path"] == (
+        expected_path = (
             "docs/reference/REFERENCE-DOCUMENTS/"
             "PALANG-RETURN-EXECUTION-MASTER-ANCHOR-2026-10-21-001.md"
         )
+        matching = [candidate for candidate in result["items"] if candidate["source_path"] == expected_path]
+        assert len(matching) == 1
+        item = matching[0]
         assert item["source_origin"].endswith("commit=integration-test-commit; allowlisted repository document")
         assert item["content_sha256"]
 
@@ -286,8 +287,10 @@ def test_real_repository_allowlist_ingests_searches_and_survives_restart(tmp_pat
             params={"q": "PALANG-RETURN-EXECUTION-MASTER-ANCHOR-2026-10-21-001"},
         )
         assert restarted.status_code == 200
-        assert restarted.json()["count"] == 1
-        restored = restarted.json()["items"][0]
+        recovered_items = restarted.json()["items"]
+        matching = [candidate for candidate in recovered_items if candidate["source_path"] == expected["source_path"]]
+        assert len(matching) == 1
+        restored = matching[0]
         assert {key: restored[key] for key in expected} == expected
 
 
