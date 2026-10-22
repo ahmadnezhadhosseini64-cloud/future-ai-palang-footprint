@@ -378,3 +378,7 @@
 - [لنگر جاری ۰.۰](../../0.0/anchors/PALANG-0.0-CURRENT-LIVING-BEHAVIOR-ARCHITECTURE-2026-10-22-001.md) و [لنگر گام بعدی ۰.۰](../../0.0/anchors/PALANG-0.0-RUNTIME-COLLECTOR-PRODUCTION-RECOVERY-2026-10-22-001.md).
 - معماری اولیه حفظ شده و فقط با افزودهٔ نسخه‌دار به‌روزرسانی شده است.
 - گام بعدی: پیاده‌سازی runtime collector و آزمون cold-start تولیدی از دادهٔ پایدار؛ issue #20.
+
+
+## پابند زمانی EVT-0088 / LBAF
+- [TIME-BINDING-LBAF-2026-10-22-001](./TIME-BINDING-LBAF-2026-10-22-001.md) — timestampهای واقعی commit و معادل تهران، به‌همراه GAP زمان پایان CI.
