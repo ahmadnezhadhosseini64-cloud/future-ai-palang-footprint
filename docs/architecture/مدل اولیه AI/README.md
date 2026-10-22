@@ -80,3 +80,5 @@
 - [EVT-0094](../BEHAVIOR-TRACE/EVT-0094-DUAL-TRACK-BEHAVIORAL-ARCHITECTURE-2026-10-22.md).
 - نسخهٔ سند مادر مدل به 1.1.0 افزایش یافت؛ تغییر به‌صورت الحاقیه انجام شده و تاریخچه حفظ شده است.
 - وضعیت: ثبت و جای‌گذاری مخزنی انجام شده؛ آزمون runtime برای DTRC هنوز انجام نشده.
+
+- پابند زمان UTC/تهران برای زنجیرهٔ DTRC: [TIME-BINDING-DTBA-2026-10-22-001](../BEHAVIOR-TRACE/TIME-BINDING-DTBA-2026-10-22-001.md).
