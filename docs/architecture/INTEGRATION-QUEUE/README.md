@@ -1069,3 +1069,6 @@ The queue index and the timestamp case must each be read back after this update.
 - Status: ACTIVE / LIVING / OPEN / EVOLVABLE. This new anchor preserves all prior 0.0 points.
 - Rule: UTC input/output timestamps are recorded only when supplied by trustworthy host evidence. Internal thinking duration is NOT EXPOSED / NOT MEASURED. Repository canonical time is actual last-change commit UTC; Tehran is derived from that same instant.
 - Open follow-up: GMAIL-CONNECTION-AND-READBACK-01; Gmail remains BLOCKED / NOT VERIFIED until an actual destination write and read-back succeed.
+
+
+| GACIB-HAIF-2026-10-22-001 | حفظ ادعای کاربر درباره اعلام قبلی محدودیت Gmail و مدل‌سازی رفتار قابل مشاهده با لنگر مستقل ۰.۰ | REPOSITORY WRITE + READ-BACK PENDING FINAL CHECK; Gmail BLOCKED/NOT SENT; other destinations unverified | سند مادر GACIB، EVT-0051، دفتر ۰.۰، پوشه رفتارشناسی تعاملی و آزمون واقعی Gmail در صورت فعال‌شدن مجاز | [سند مرجع مادر GACIB](../../reference/REFERENCE-DOCUMENTS/GMAIL-ACCESS-CLAIM-AND-INTERACTION-BEHAVIOR-LIVING-MASTER-REFERENCE-2026-10-22-001.md) |
