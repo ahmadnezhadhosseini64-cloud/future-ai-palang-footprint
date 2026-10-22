@@ -51,3 +51,5 @@ All links above were authored as repository-relative Markdown paths. Their targe
 | Architecture README version update | `225963d74bf9971d147a6ab11225aec95a0be371` | 2026-10-22T15:00:01Z | 2026-10-22T18:30:01+03:30 |
 | Continuity graph acceptance-gate update | `fb6e3359a5a451c2b9caaab4b3ea3bf577b521d1` | 2026-10-22T15:00:07Z | 2026-10-22T18:30:07+03:30 |
 | Integration queue acceptance-gate update | `ddeec72411b49d906c8161e6d3c1a7b30002f492` | 2026-10-22T15:00:18Z | 2026-10-22T18:30:18+03:30 |
+
+| PIRHA v1.2.0 current-pair pointer update | `4ba79d4d83aa5db42f0314ee64d05a74f51bcac9` | 2026-10-22T15:02:24Z | 2026-10-22T18:32:24+03:30 |
