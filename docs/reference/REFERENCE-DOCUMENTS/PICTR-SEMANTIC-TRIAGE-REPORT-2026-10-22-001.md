@@ -117,3 +117,20 @@ These are role hypotheses from paths, not final decisions. Inspect each file's o
 
 ## Artifact pointer
 The full machine-readable groups and all stable/production ID members are in [audit artifact 12439434270](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39812427699/artifacts/12439434270), especially `historical-0.0-graph-audit.json`, `historical-0.0-canonical-graph-manifest.json`, and `historical-0.0-semantic-review-queue.json`.
+
+## 8. Role-pattern scan across the collision groups
+
+A path-role scan of the pinned audit JSON gives these useful triage signals. It is a first-pass structural classification, not semantic adjudication:
+
+- Stable ID groups: 9 groups pair an event file with a reference document; 7 pair an event with another path role; 6 involve two reference documents. Several other groups include indexes, anchors, governance files or more than two members.
+- Production ID groups: 10 groups pair event and reference roles; 7 pair event and another role; 3 involve anchor/reference pairs; 3 involve reference/reference pairs. Remaining groups span multiple roles and need member-level inspection.
+- Event-number groups: 18 groups have two distinct event files sharing a numeric prefix; 6 groups have three distinct event files sharing a prefix. This is the clearest true numbering-ambiguity class, but the correct remapping still depends on chronology and inbound links.
+- The path-role scan suggests that many Stable/Production ID collisions may be a canonical document plus event/index/provenance mention, or a reference mirror. It does not prove this; each file's actual metadata definition must be checked before declaring a group legitimate.
+- The latest audit snapshot and machine-readable artifact are immutable evidence. The report itself is a living interpretation layer and may be updated as groups are adjudicated.
+
+## 9. Current resolution status
+- Structural broken-link issue: CLOSED for the latest audited snapshot; zero missing local Markdown links.
+- Decode errors: CLOSED for the latest audited snapshot; zero.
+- Collision group adjudication: OPEN; counts unchanged; no identifiers renumbered or files deleted.
+- EVT-0089 timestamp: OPEN; the attempted source-file edit was blocked and the fresh audit still reports one ambiguous timestamp.
+- External persistence (Buffer, Persistent Memory, Dropbox) and automatic capture of all future interactions: NOT VERIFIED by this investigation.
