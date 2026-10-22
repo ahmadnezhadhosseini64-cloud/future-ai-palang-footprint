@@ -29,3 +29,11 @@
 
 ## اصل معماری
 معماری اولیه immutable / محفوظ است؛ این رویداد فقط قابلیت آزمون‌پذیری افزایشی اضافه می‌کند. همهٔ نتایج بعدی باید به‌صورت الحاقیه یا رویداد تازه با شواهد ثبت شوند.
+
+
+## پیوندهای بازیابی افزوده‌شده
+- سند مرجع مادر: [ELVR](../../reference/REFERENCE-DOCUMENTS/EXECUTABLE-INTERACTION-LEDGER-VALIDATION-MASTER-REFERENCE-2026-10-22-001.md).
+- لنگر مستقل ۰.۰: [PALANG-0.0-EXECUTABLE-INTERACTION-LEDGER-VALIDATION-2026-10-22-001](../../0.0/anchors/PALANG-0.0-EXECUTABLE-INTERACTION-LEDGER-VALIDATION-2026-10-22-001.md).
+- Workflow: [interaction-ledger-validation.yml](../../../.github/workflows/interaction-ledger-validation.yml).
+- Fixture: [interaction-pair-ledger-smoke-test.json](./fixtures/interaction-pair-ledger-smoke-test.json).
+- نتیجهٔ اجرای workflow هنوز باید از GitHub Actions بازخوانی شود؛ تا آن زمان وضعیت آن NOT VERIFIED است.
