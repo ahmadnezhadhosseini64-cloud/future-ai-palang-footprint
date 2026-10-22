@@ -209,3 +209,10 @@ Resume from this CMIND master → [EVT-0093](../../architecture/BEHAVIOR-TRACE/E
 - وضعیت runtime شکارچی: OPEN / NOT PROVEN؛ ادامه در Issue #20، نه Dropbox.
 
 - پابند زمانی زوج جاری: [TIME-BINDING-INT-20261022-015](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-015.md). زمان پیام دقیق موجود نیست؛ زمان commit جایگزین آن نشده است.
+
+
+### I. شش کاندید معماری و دروازهٔ شکارچی
+- رویداد: [EVT-0104](../../architecture/BEHAVIOR-TRACE/EVT-0104-CANDIDATE-ARCHITECTURE-SIGNALS-AND-HUNTER-GATE-2026-10-22.md).
+- لنگرها: [IN-016](../../0.0/anchors/PALANG-0.0-IN-20261022-016-EXPLICIT-CANDIDATE-SIGNALS.md) / [OUT-016](../../0.0/anchors/PALANG-0.0-OUT-20261022-016-EXPLICIT-CANDIDATE-SIGNALS.md).
+- صندوق زنده: [INBOX-20261022-003](../../architecture/LIVE-INBOX/entries/INBOX-20261022-003.md).
+- ادامهٔ اجرایی: استخراج کاندید از IN/OUT، طبقه‌بندی شاهد‌محور، کنترل یکتایی شناسه پیش از نوشتن و بازیابی cold-start در [Issue #20](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/20). وضعیت runtime هنوز OPEN / NOT PROVEN است؛ این اتصال مستندی معادل تکمیل runtime نیست.
