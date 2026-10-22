@@ -37,6 +37,13 @@
 ## ثبت مخزن و معماری — پیوندهای نهایی
 - Master standard: [SCEMRS v1.0.0](../../reference/REFERENCE-DOCUMENTS/PALANG-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE-STANDARD-2026-10-22-001.md).
 - Event trace: [EVT-0098](../../architecture/BEHAVIOR-TRACE/EVT-0098-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE-AND-OWNER-APPROVAL-2026-10-22.md).
-- Governance master updated to PIRHA v1.5.0: [PIRHA](../../reference/REFERENCE-DOCUMENTS/PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001.md).
-- Architecture master updated to HAIF v1.3.4: [HAIF](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md).
+- Governance master updated to PIRHA v1.6.0: [PIRHA](../../reference/REFERENCE-DOCUMENTS/PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001.md).
+- Architecture master updated to HAIF v1.3.5: [HAIF](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md).
 - Acceptance status until independent read-back: `WRITTEN / PENDING READ-BACK`; do not infer external AI transfer or app execution.
+
+
+## نسخه‌های نهایی پس از درج قرارداد درون‌سندی
+- HAIF mother architecture: v1.3.5 — قرارداد خودبسنده درون خود سند درج شد.
+- PIRHA registration governance: v1.6.0 — قرارداد خودبسنده درون خود سند درج شد.
+- SCEMRS: v1.0.0 — سند مستقل کامل، قابل انتقال و دارای پروتکل اجرای مستقل.
+- وضعیت تا پایان ممیزی: مخزن‌نویسی و بازخوانی انجام شده؛ آزمون ساختاری تازه پس از آخرین تغییرات هنوز باید نتیجه‌اش ثبت شود.
