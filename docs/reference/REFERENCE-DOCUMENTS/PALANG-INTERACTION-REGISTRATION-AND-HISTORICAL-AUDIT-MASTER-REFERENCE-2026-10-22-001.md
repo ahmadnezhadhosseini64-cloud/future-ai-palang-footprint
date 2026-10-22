@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-2026-10-22-001`
 - Production ID / شناسهٔ تولید: `PIRHA-2026-10-22-001`
-- Version / نسخه: 1.3.0
+- Version / نسخه: 1.4.0
 - Owner / مالک: احمد پلنگ
 - Project / پروژه: Future AI / Palang Footprint — HAIF
 - Status / وضعیت: ACTIVE / LIVING / OPEN FOR GROWTH
@@ -166,3 +166,15 @@
 - ممیزی زوج زمان: 1,294 رشتهٔ زمانی، 1,293 زوج UTC/تهران نرمال‌شده، یک مورد باز در EVT-0089 خط 21.
 - پس از گزارش، مسیرهای شکستهٔ ده‌گانه به‌صورت اصلاح کنترل‌شده بازبینی و پیوندهای شناخته‌شده اصلاح شدند؛ پذیرش این اصلاحات فقط پس از اجرای ممیزی تازه روی commit جدید ممکن است.
 - وضعیت: ممیزی تاریخی اجرا شده، اما پذیرش نهایی وابسته به نتیجهٔ ممیزی تازه و طبقه‌بندی معنایی برخورد شناسه‌هاست. حفظ اسناد تاریخی اجباری است؛ حذف خودکار ممنوع.
+
+
+## الحاقیهٔ v1.4.0 — پذیرش ساختاری پس از اصلاح و شکاف‌های باقیمانده
+
+- گزارش زنده: [PRHAR v1.1.0](./PALANG-REPOSITORY-HISTORICAL-AUDIT-RESULTS-2026-10-22-001.md).
+- رویداد ممیزی: [EVT-0097](../../architecture/BEHAVIOR-TRACE/EVT-0097-REPOSITORY-HISTORICAL-AUDIT-RESULTS-2026-10-22.md).
+- ممیزی تازه: [Living Architecture Audit #39802929316](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39802929316), snapshot `0f29c9aba688ca1c72197bd3d2bad151ccbce139`, نتیجهٔ workflow SUCCESS و artifact قابل بازبینی.
+- نتیجهٔ ساختاری: `local_markdown_links_missing=0`; `decode_errors=0`. پیوندهای محلی شناخته‌شده در این snapshot از نظر ساختاری بسته شدند.
+- شکاف‌های باز: 57 گروه برخورد Stable ID، 68 گروه Production ID، 7 گروه Reference ID، 24 گروه شمارهٔ رویداد و 11 گروه محتوای تکراری؛ این‌ها نیازمند طبقه‌بندی معنایی‌اند.
+- زمان: 1,330 زوج UTC/تهران نرمال‌شده و یک مورد مبهم در EVT-0089 خط 21؛ وضعیت زمانی همچنان REVIEW_REQUIRED.
+- پذیرش: `STRUCTURAL-LINK-AUDIT=PASS`; `SEMANTIC-HISTORICAL-AUDIT=OPEN`; `TIMESTAMP-AMBIGUITY=OPEN`; `BUFFER/PERSISTENT MEMORY/DROPBOX=NOT VERIFIED`.
+- این نتیجه فقط به snapshot و artifact مشخص بالا تعلق دارد؛ برای تغییرات بعدی باید دوباره آزمون اجرا شود.
