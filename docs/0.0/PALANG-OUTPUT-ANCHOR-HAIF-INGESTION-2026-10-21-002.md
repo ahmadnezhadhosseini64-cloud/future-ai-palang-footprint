@@ -42,8 +42,8 @@
 
 ## 4. شواهد و پیوندها
 
-- [واردکنندهٔ کنترل‌شده](../prototype/haif-v0/ingest_repository_docs.py)
-- [آزمون‌های نمونه](../prototype/haif-v0/test_app.py)
+- [واردکنندهٔ کنترل‌شده](../../prototype/haif-v0/ingest_repository_docs.py)
+- [آزمون‌های نمونه](../../prototype/haif-v0/test_app.py)
 - [رویداد EVT-0069](../architecture/BEHAVIOR-TRACE/EVT-0069-HAIF-CONTROLLED-REPOSITORY-DOCUMENT-INGESTION-2026-10-21.md)
 - [صف فعال موارد باز](../architecture/مدل%20اولیه%20AI/صف%20گام‌های%20بعدی%20و%20موارد%20باز.md)
 - [لنگر مادر بازگشت](../reference/REFERENCE-DOCUMENTS/PALANG-RETURN-EXECUTION-MASTER-ANCHOR-2026-10-21-001.md)
