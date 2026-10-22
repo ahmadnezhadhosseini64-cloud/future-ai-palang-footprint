@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `PALANG-LIVING-MASTER-CONTINUITY-GRAPH-2026-10-22-001`
 - Production ID / شناسهٔ تولید: `PLMCG-2026-10-22-001`
-- Version / نسخه: 1.0.3
+- Version / نسخه: 1.0.4
 - Owner / مالک: احمد پلنگ (Ahmad Nezhadhosseini)
 - Project / پروژه: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
 - Architecture / معماری: HAIF — Human–AI Interaction Future (آیندهٔ تعامل انسان و هوش مصنوعی)
