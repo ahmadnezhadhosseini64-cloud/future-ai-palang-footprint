@@ -672,3 +672,11 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - **TIME-BINDING-INT-20261022-014**: [پابند زمانی و زمان‌های واقعی commit](architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-014.md).
 - ممیزی چکش: run 39817056241، snapshot 7ced5075aad8c2b4e894f70965f9fc405d02bf94؛ ساختار PASS برای همان snapshot؛ ممیزی معنایی OPEN.
 - قاعده: سند مادر بازسازی کل پروژه ≠ گرهٔ Master در Master–Child–Rahm؛ برخورد شناسه‌ها و ابهام تبار نیز یافته‌های جداگانه‌اند.
+
+
+## EVT-0091 — ادامه از مدل اولیه، نه شاخهٔ Dropbox
+- رویداد: [EVT-0091](architecture/BEHAVIOR-TRACE/EVT-0091-CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-2026-10-22.md).
+- سند مرجع مادر: [CMIND](reference/REFERENCE-DOCUMENTS/CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-MASTER-REFERENCE-2026-10-22-001.md).
+- زوج تعامل: `INT-20261022-005`; لنگرهای مستقل: [IN-20261022-005](0.0/anchors/PALANG-0.0-IN-20261022-005-CONTINUE-MODEL-INITIAL.md) و [OUT-20261022-005](0.0/anchors/PALANG-0.0-OUT-20261022-005-CONTINUE-MODEL-INITIAL.md).
+- مسیر جاری: ادامه از مدل اولیه و Issue #20؛ Dropbox یک شاخهٔ مستقل OPEN / WAITING است و هدف این نوبت نیست.
+- وضعیت این ثبت: چهار فایل تازه از مخزن بازخوانی شدند و شناسهٔ مورد انتظار در هرکدام دیده شد؛ زمان commit canonical باید از metadata واقعی استخراج شود. کد runtime در این تغییر مستنداتی پیاده‌سازی نشده است.
