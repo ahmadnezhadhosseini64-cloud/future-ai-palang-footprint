@@ -764,3 +764,8 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - این فرایند به‌صورت زنده و دستی فعال است؛ سیاست در مخزن و یک نسخهٔ مشخص در Library ثبت و بازخوانی شده‌اند. لنگرهای ۰.۰ قبلی حفظ می‌شوند.
 - وضعیت سایر مقصدها مستقل می‌ماند: Buffer و Persistent Memory = NOT VERIFIED؛ Dropbox = OPEN / NOT VERIFIED؛ بازیابی سرتاسری = NOT RUN.
 - اقدام بعدی: BOART-FOLLOWUP-01؛ سپس آزمون واقعی Dropbox و بازیابی بیرونی.
+
+## لنگر ادامهٔ ثبت Gmail — EVT-0039
+- سند مرجع: [PALANG-GMAIL-AND-ALL-DESTINATION-REGISTRATION-GOVERNANCE-2026-10-22-001](../reference/REFERENCE-DOCUMENTS/PALANG-GMAIL-AND-ALL-DESTINATION-REGISTRATION-GOVERNANCE-2026-10-22-001.md).
+- رویداد: [EVT-0039](../architecture/BEHAVIOR-TRACE/EVT-0039-GMAIL-REFERENCE-REGISTRATION-GAP-2026-10-22.md).
+- شکاف باز: `GMAIL-CONNECTION-AND-READBACK-01`. این لنگر تازه است و هیچ ۰.۰ قدیمی را جایگزین یا بسته نمی‌کند.
