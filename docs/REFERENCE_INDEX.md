@@ -680,3 +680,9 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - زوج تعامل: `INT-20261022-005`; لنگرهای مستقل: [IN-20261022-005](0.0/anchors/PALANG-0.0-IN-20261022-005-CONTINUE-MODEL-INITIAL.md) و [OUT-20261022-005](0.0/anchors/PALANG-0.0-OUT-20261022-005-CONTINUE-MODEL-INITIAL.md).
 - مسیر جاری: ادامه از مدل اولیه و Issue #20؛ Dropbox یک شاخهٔ مستقل OPEN / WAITING است و هدف این نوبت نیست.
 - وضعیت این ثبت: چهار فایل تازه از مخزن بازخوانی شدند و شناسهٔ مورد انتظار در هرکدام دیده شد؛ زمان commit canonical باید از metadata واقعی استخراج شود. کد runtime در این تغییر مستنداتی پیاده‌سازی نشده است.
+
+
+### CMIND verification update
+- HAIF Prototype Tests run `39824020260`: SUCCESS; job `119982395261`; 16 passed, 1 warning, 0 failed.
+- Scope: local prototype only. Live ChatGPT-host capture and external persistence remain NOT VERIFIED.
+- Time binding: [TIME-BINDING-CMIND](architecture/BEHAVIOR-TRACE/TIME-BINDING-CMIND-2026-10-22-001.md).
