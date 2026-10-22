@@ -76,3 +76,18 @@ All links above were authored as repository-relative Markdown paths. Their targe
 | Integration queue audit update | `513d4622e3adb4d6551f312260324742b63fac9f` | 2026-10-22T15:13:18Z | 2026-10-22T18:43:18+03:30 |
 
 The new audit after these repairs is tracked separately by its own workflow run. These timestamps do not imply that the repaired links have already passed that fresh audit.
+
+## Final audit acceptance and version-update commits
+
+| Artifact / اثر | Commit SHA | UTC canonical time | Tehran equivalent |
+|---|---|---|---|
+| PRHAR report v1.1.0 | `8773ef11502738dee72d36e3df27b3000eb39420` | 2026-10-22T15:15:51Z | 2026-10-22T18:45:51+03:30 |
+| EVT-0097 follow-up audit result | `9c8a8546498942972c339b9d1cadb580ce59c477` | 2026-10-22T15:16:10Z | 2026-10-22T18:46:10+03:30 |
+| PIRHA master v1.4.0 | `9866e635cec1ba179a6f9fccbe3094ddc66ef844` | 2026-10-22T15:16:33Z | 2026-10-22T18:46:33+03:30 |
+| HAIF mother model v1.3.3 | `d440fb114afc5883000b41800ec11cc3c23c021e` | 2026-10-22T15:16:52Z | 2026-10-22T18:46:52+03:30 |
+| OUT-010 audit acceptance update | `aa29472108975728fffb914df7538fd84368ce59` | 2026-10-22T15:17:45Z | 2026-10-22T18:47:45+03:30 |
+| 0.0 ledger final audit state | `2dc63bda4d6a8c80fb430212eba868793ef4c152` | 2026-10-22T15:17:53Z | 2026-10-22T18:47:53+03:30 |
+| Reference index final audit state | `bbadd58cb577ef6b73a785920140d2ad55e1c22d` | 2026-10-22T15:18:00Z | 2026-10-22T18:48:00+03:30 |
+| Architecture README v1.3.3 | `ddc1a941731e701e6e4f47a276ea20771e91d230` | 2026-10-22T15:18:07Z | 2026-10-22T18:48:07+03:30 |
+| Continuity graph final audit state | `3175d6cbc115d391966c7d69dcdd309f9809d1b0` | 2026-10-22T15:18:14Z | 2026-10-22T18:48:14+03:30 |
+| Integration queue final audit state | `405461b685b8697d32bd403ad7f9569cb7a64f07` | 2026-10-22T15:18:21Z | 2026-10-22T18:48:21+03:30 |
