@@ -14,7 +14,7 @@
 - Artifact: `living-architecture-audit-39816363725`
 - Artifact ID: `12442142630`
 - Artifact SHA-256: `cea15b8c4b6ed822433cb4cfbafc7c5fd3a217ffcd9f495a4915811472075500`
-- Evidence boundary: workflow log was fetched and inspected; artifact metadata was read. The artifact ZIP itself has not been independently downloaded and parsed in this operation.
+- Evidence boundary: workflow log and artifact metadata were read; the ZIP was downloaded and its manifest, graph audit, semantic review queue and timestamp audit files were inspected. Exact nine ambiguous parent edges were extracted and registered in the UPRM master.
 
 ## 1. Structural and repository-wide results
 
@@ -94,3 +94,10 @@ Not proven:
 **STRUCTURAL AUDIT: PASS for this snapshot. SEMANTIC RECONCILIATION: OPEN.**
 
 The workflow's SUCCESS status is not the same as full project completion. No files were deleted or merged as part of this audit.
+
+
+## Artifact-level follow-up
+
+The downloaded ZIP was inspected. The canonical graph manifest reports 52 declared parent edges, zero unresolved and nine ambiguous edges. The exact nine source/target/candidate-path records and the unresolved 6-versus-9 discrepancy are recorded in the UPRM master, section “جزئیات روابط والد مبهم”. The semantic timestamp report identifies only one unresolved raw timestamp: EVT-0089 line 21, `2026-10-22 14:28`, missing a timezone label.
+
+Artifact file inventory includes the canonical graph manifest, historical graph audit JSON/text, semantic review queue JSON, timestamp audit JSON/text, semantic timestamp-pair audit JSON/text, and host-adapter test output. This proves the artifact was inspected, but does not resolve any semantic candidate automatically.
