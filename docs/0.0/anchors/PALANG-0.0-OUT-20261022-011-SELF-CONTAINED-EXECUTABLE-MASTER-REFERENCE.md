@@ -46,4 +46,6 @@
 - HAIF mother architecture: v1.3.5 — قرارداد خودبسنده درون خود سند درج شد.
 - PIRHA registration governance: v1.6.0 — قرارداد خودبسنده درون خود سند درج شد.
 - SCEMRS: v1.0.0 — سند مستقل کامل، قابل انتقال و دارای پروتکل اجرای مستقل.
-- وضعیت تا پایان ممیزی: مخزن‌نویسی و بازخوانی انجام شده؛ آزمون ساختاری تازه پس از آخرین تغییرات هنوز باید نتیجه‌اش ثبت شود.
+- وضعیت ممیزی ساختاری: PASS در snapshot fd85b07debe075f1618b42ad2ee4dad77ab6cc78؛ صفر پیوند محلی شکسته و صفر خطای رمزگشایی. ممیزی معنایی تاریخچه همچنان OPEN.
+
+- مدرک ممیزی: [Run 39805549516](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39805549516)؛ artifact [12438495128](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39805549516/artifacts/12438495128).
