@@ -228,3 +228,6 @@
 - شکاف تاریخی ثبت مستقل EVT-0093: [رویداد](../../architecture/BEHAVIOR-TRACE/EVT-0093-REGISTRATION-CONTINUATION-2026-10-22.md) اکنون فایل جداگانه دارد؛ بازخوانی لازم است.
 - نسخهٔ مدل مادر HAIF: 1.2.0.
 - ممیزی ساختاری و معنایی تاریخچه دو مرحلهٔ جدا هستند؛ صفر پیوند شکسته در یک snapshot، اثبات حل تمام برخوردهای شناسه و روابط معنایی نیست.
+
+- پابند زمانی PIRHA: [TIME-BINDING-PIRHA-2026-10-22-001](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-PIRHA-2026-10-22-001.md).
+- لنگر ادامهٔ PIRHA: [PALANG-0.0-PIRHA-HISTORICAL-AUDIT-CONTINUATION-2026-10-22-001](../../0.0/anchors/PALANG-0.0-PIRHA-HISTORICAL-AUDIT-CONTINUATION-2026-10-22-001.md).
