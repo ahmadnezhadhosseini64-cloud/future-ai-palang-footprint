@@ -42,3 +42,11 @@ A document-backed inbox is a real repository artifact, but it is not yet an auto
 - [ ] Fetch changed files back and match IDs, links, and expected content.
 - [ ] Bind actual repository commit UTC and equivalent Tehran timestamps.
 - [ ] Keep production automatic capture OPEN until independently tested.
+
+
+## Registration and read-back reconciliation — verified
+- [TIME-BINDING-LIVE-INBOX](./TIME-BINDING-LIVE-INBOX-2026-10-22-001.md) records actual repository commit UTC and the matching Tehran equivalent for each artifact.
+- Created and fetched back: inbox governance, first inbox entry, EVT-0093, IN/OUT anchors, CMIND master Addendum v1.0.4, model-initial queue, 0.0 index, behavior-trace index, and time-binding record.
+- Expected Stable IDs, Production IDs, event/anchor/master links and the OPEN runtime boundary matched on read-back.
+- Repository artifacts: REGISTERED / READ-BACK VERIFIED. Inbox workflow definition: ACTIVE / LIVING. Automatic host capture, production runtime and cold-start end-to-end: OPEN / NOT YET PROVEN.
+- Exact user-message timestamp remains NOT CAPTURED; commit timestamps are not substituted for it.
