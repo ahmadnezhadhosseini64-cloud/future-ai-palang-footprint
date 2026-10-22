@@ -52,3 +52,15 @@ These are actual GitHub commit timestamps. The relative-link correction was prom
 | Reference index final versions | `72d281da76ef378374804b5608935adda758e1be` | 2026-10-22T15:30:03Z | 2026-10-22T20:00:03+03:30 |
 | HAIF architecture README final versions | `162e8397315b6c0ffb4e2ea9933517fc3de62225` | 2026-10-22T15:30:10Z | 2026-10-22T20:00:10+03:30 |
 | SCEMRS final version pointers | `74fef6a55b18ba40dd76c9dc606582ea8efa2aaa` | 2026-10-22T15:30:17Z | 2026-10-22T20:00:17+03:30 |
+
+## Audit evidence and final verification-record commits
+
+| Artifact / اثر | Commit SHA | UTC canonical time | Tehran equivalent |
+|---|---|---|---|
+| SCEMRS verification status update | `7a1092a9eb021f63d59792f008f3bc6d2ff9afe3` | 2026-10-22T15:31:55Z | 2026-10-22T19:01:55+03:30 |
+| EVT-0098 verification record | `bce026f7f73fd4f3081410468c9ac41f71d9caaf` | 2026-10-22T15:32:01Z | 2026-10-22T19:02:01+03:30 |
+| OUT-011 audit status | `eb024a06f571e608a14f412c8f3ccc333de004f8` | 2026-10-22T15:32:09Z | 2026-10-22T19:02:09+03:30 |
+| 0.0 ledger audit status | `50a9c1ccd472f8093c565fab6fa8cbaef5514d37` | 2026-10-22T15:32:16Z | 2026-10-22T19:02:16+03:30 |
+| Reference index audit status | `d9e7d337300ecf7f06269fa06df79c786c5b94a6` | 2026-10-22T15:32:24Z | 2026-10-22T19:02:24+03:30 |
+
+Prior audit evidence: [Living Architecture Audit #39805549516](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39805549516), snapshot `fd85b07debe075f1618b42ad2ee4dad77ab6cc78`, UTC `2026-10-22T15:31:02Z`, Tehran `2026-10-22T19:01:02+03:30`. That snapshot had zero broken local Markdown links and zero decode errors. A new audit was automatically queued after the verification-record commits; use its result for the latest snapshot rather than assuming the older run covers later commits.
