@@ -977,3 +977,17 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - خروجی مستقل: [OUT-20261022-012](./anchors/PALANG-0.0-OUT-20261022-012-IDENTITY-COLLISION-AND-TIMESTAMP-RECONCILIATION.md).
 - رویداد: [EVT-0100](../architecture/BEHAVIOR-TRACE/EVT-0100-IDENTITY-COLLISION-AND-EVT-0089-TIMESTAMP-RECONCILIATION-2026-10-22.md).
 - وضعیت: ACTIVE / LIVING / OPEN; حل معنایی گروه‌ها و بازآزمایی خطای زمان هنوز باز است.
+
+
+## INT-20261022-014 — قاعدهٔ سند مادر و تفکیک معماری HAIF
+
+- سند مادر بازسازی: [UPRM v1.0.1](../reference/REFERENCE-DOCUMENTS/PALANG-UNIVERSAL-PROJECT-RECONSTRUCTION-MASTER-2026-10-22-001.md).
+- معماری HAIF: [نسخهٔ 1.3.7](../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md).
+- ورودی مستقل: [IN-014](./anchors/PALANG-0.0-IN-20261022-014-MASTER-DOCUMENT-AND-HAIF-SEPARATION-RULE.md).
+- خروجی مستقل: [OUT-014](./anchors/PALANG-0.0-OUT-20261022-014-MASTER-DOCUMENT-AND-HAIF-SEPARATION-RULE.md).
+- رویداد: [EVT-0102](../architecture/BEHAVIOR-TRACE/EVT-0102-MASTER-DOCUMENT-AND-HAIF-SEPARATION-RULE-2026-10-22.md).
+- پابند زمانی: [TIME-BINDING-INT-20261022-014](../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-014.md).
+- قاعدهٔ زنده: سند مادر کل پروژه مرجع فرادستِ بازسازی و مستندسازی است؛ نقش Master در HAIF هستهٔ حاکم مفهومی است. این دو نباید یکی گرفته شوند.
+- چکش موجود: snapshot 7ced5075aad8c2b4e894f70965f9fc405d02bf94، 9 یال والد مبهم؛ عدد 6 هنوز از منبع خام تطبیق داده نشده است.
+- گام بعد: ممیزی مجدد روی snapshot تازه، تطبیق پیوندها، حل معنایی گروه‌ها و بررسی منبع اختلاف 6/9؛ سپس Dropbox write/read-back مستقل.
+- وضعیت: ACTIVE / LIVING / OPEN.
