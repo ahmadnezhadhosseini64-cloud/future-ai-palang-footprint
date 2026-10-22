@@ -21,3 +21,11 @@
 ## Repository commit evidence
 - Initial anchor commit: `a2bb6772e46cd979780274bc2dcc9f4c59059e28` — UTC `2026-10-22T13:55:02Z`; Tehran `2026-10-22T17:25:02+03:30`.
 - Current state: input content was fetched back from the default branch and its expected identifier was found.
+
+## ثبت تکمیلی و مسیر بازیابی
+- سند مرجع مادر DTRC: `docs/reference/REFERENCE-DOCUMENTS/PALANG-DUAL-TRACK-BEHAVIORAL-ARCHITECTURE-MASTER-REFERENCE-2026-10-22-001.md`.
+- رویداد: `docs/architecture/BEHAVIOR-TRACE/EVT-0094-DUAL-TRACK-BEHAVIORAL-ARCHITECTURE-2026-10-22.md`.
+- پابند زمانی: `docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-DTBA-2026-10-22-001.md`.
+- نقطهٔ ادامه: `docs/0.0/anchors/PALANG-0.0-DTRC-ARCHITECTURE-CONTINUATION-2026-10-22-001.md`.
+- نتیجهٔ معماری: مدل HAIF نسخهٔ 1.1.0؛ گراف پیوستگی نسخهٔ 1.0.3.
+- زمان دقیق پیام کاربر همچنان ثبت‌نشده است؛ زمان‌های مخزن باید از commit metadata خوانده شوند.
