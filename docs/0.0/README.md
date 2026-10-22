@@ -1033,3 +1033,10 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - سند مادر کل پروژه: [UPRM](../reference/REFERENCE-DOCUMENTS/PALANG-UNIVERSAL-PROJECT-RECONSTRUCTION-MASTER-2026-10-22-001.md); سند رفتارشناسی: [LBAF](../reference/REFERENCE-DOCUMENTS/LIVING-BEHAVIOR-ARCHITECTURE-FORESIGHT-MASTER-REFERENCE-2026-10-22-001.md).
 - خطای ثبت شناسه EVT-0093 به‌صورت آشکار ثبت شده؛ فایل تاریخی حفظ و شناسهٔ یکتای پیگیری EVT-0103 است.
 - وضعیت: ثبت/بازخوانی مخزنی باید جدا از اجرای خودکار شکارچی سنجیده شود؛ runtime همچنان OPEN در Issue #20.
+
+
+## INT-20261022-016 — six architecture candidates
+- IN: [IN-016](anchors/PALANG-0.0-IN-20261022-016-EXPLICIT-CANDIDATE-SIGNALS.md)
+- OUT: [OUT-016](anchors/PALANG-0.0-OUT-20261022-016-EXPLICIT-CANDIDATE-SIGNALS.md)
+- Event: [EVT-0104](../architecture/BEHAVIOR-TRACE/EVT-0104-CANDIDATE-ARCHITECTURE-SIGNALS-AND-HUNTER-GATE-2026-10-22.md)
+- Live Inbox: [INBOX-20261022-003](../architecture/LIVE-INBOX/entries/INBOX-20261022-003.md)
