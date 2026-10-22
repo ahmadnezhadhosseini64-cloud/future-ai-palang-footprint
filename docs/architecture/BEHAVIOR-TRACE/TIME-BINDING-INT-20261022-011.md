@@ -40,3 +40,15 @@
 | Reference index relative-link repair | `9f01f4002a631b158bca6bb5c52771b540acbc59` | 2026-10-22T15:27:43Z | 2026-10-22T19:57:43+03:30 |
 
 These are actual GitHub commit timestamps. The relative-link correction was prompted by a real audit finding; a fresh audit is required before declaring the new index clean.
+
+## Embedded-contract and final-index commits
+
+| Artifact / اثر | Commit SHA | UTC canonical time | Tehran equivalent |
+|---|---|---|---|
+| HAIF v1.3.5 embedded execution contract | `c04de09e769fb291834be8e1bed68cbdb487943f` | 2026-10-22T15:28:46Z | 2026-10-22T19:58:46+03:30 |
+| PIRHA v1.6.0 embedded execution contract | `b78d208126bb5124d2c707ba03d8367ac3c32849` | 2026-10-22T15:28:54Z | 2026-10-22T19:58:54+03:30 |
+| OUT-011 final versions | `e54e1baf5b84da158033f4e65212373b4795fd5f` | 2026-10-22T15:29:16Z | 2026-10-22T19:59:16+03:30 |
+| 0.0 ledger final versions | `2028cc2196060ed248977223e029998a1234abcf` | 2026-10-22T15:29:23Z | 2026-10-22T19:59:23+03:30 |
+| Reference index final versions | `72d281da76ef378374804b5608935adda758e1be` | 2026-10-22T15:30:03Z | 2026-10-22T20:00:03+03:30 |
+| HAIF architecture README final versions | `162e8397315b6c0ffb4e2ea9933517fc3de62225` | 2026-10-22T15:30:10Z | 2026-10-22T20:00:10+03:30 |
+| SCEMRS final version pointers | `74fef6a55b18ba40dd76c9dc606582ea8efa2aaa` | 2026-10-22T15:30:17Z | 2026-10-22T20:00:17+03:30 |
