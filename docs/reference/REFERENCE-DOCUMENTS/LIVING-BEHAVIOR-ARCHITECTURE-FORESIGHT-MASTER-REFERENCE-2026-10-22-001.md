@@ -77,3 +77,12 @@ ACTIVE / LIVING / OPEN / EVOLVABLE / GOVERNING یعنی معماری و سند �
 - [سند مرجع مادر PIAL](./PER-INTERACTION-IN-OUT-TEMPORAL-ANCHOR-LIVING-MASTER-REFERENCE-2026-10-22-001.md)
 - [پابند زمانی PIAL](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-PIAL-2026-10-22-001.md)
 - [EVT-0089](../../architecture/BEHAVIOR-TRACE/EVT-0089-EVERY-INTERACTION-IN-OUT-TEMPORAL-ANCHOR-AND-RECOVERY-GOVERNANCE-2026-10-22.md)
+
+
+## Addendum v1.0.1 — Current continuation guard and model-initial path
+- Continuation master: [CMIND](./CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-MASTER-REFERENCE-2026-10-22-001.md).
+- Event: [EVT-0091](../../architecture/BEHAVIOR-TRACE/EVT-0091-CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-2026-10-22.md).
+- Interaction pair: `INT-20261022-005`; anchors [IN](../../0.0/anchors/PALANG-0.0-IN-20261022-005-CONTINUE-MODEL-INITIAL.md) / [OUT](../../0.0/anchors/PALANG-0.0-OUT-20261022-005-CONTINUE-MODEL-INITIAL.md).
+- Rule: classify each candidate continuation as ACTIVE TARGET, PARALLEL BACKLOG, or INDEPENDENT WAITING BRANCH before executing. An unresolved branch such as Dropbox must not displace the user-directed model-initial continuation.
+- Current active implementation target remains Issue #20: authorized interaction-pair runtime, stable INT/IN/OUT lookup, durable local storage, idempotency, hash-verified read-back, and restart recovery tests.
+- This addendum records governance and routing only; it does not claim runtime pair-ledger implementation or production automatic capture has been completed.
