@@ -811,3 +811,10 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - سند مرجع: [IBIO](../reference/REFERENCE-DOCUMENTS/FIRST-INTERACTION-BEHAVIOR-ANALYSIS-AND-IO-NAMING-LIVING-REFERENCE-2026-10-22-001.md).
 - وضعیت: ACTIVE / LIVING / OPEN / EVOLVABLE؛ این لنگر افزایشی است و لنگرهای قبلی را جایگزین نمی‌کند.
 - ادامه: ساخت JSON Schema و دفتر زوج‌های تعامل، سپس آزمون بازیابی از INT/IN/OUT تا رویداد و سند مرجع.
+
+ 
+## لنگر مستقل ۰.۰ — رشد افزایشی معماری و سند مرجع مادر
+- لنگر: [PALANG-0.0-APPEND-ONLY-ARCHITECTURE-GROWTH-2026-10-22-001](./anchors/PALANG-0.0-APPEND-ONLY-ARCHITECTURE-GROWTH-2026-10-22-001.md).
+- رویداد: [EVT-0084](../architecture/BEHAVIOR-TRACE/EVT-0084-APPEND-ONLY-ARCHITECTURE-GROWTH-AND-MASTER-GOVERNANCE-2026-10-22.md).
+- سند مرجع مادر: [AOGM](../reference/REFERENCE-DOCUMENTS/APPEND-ONLY-ARCHITECTURE-GROWTH-MASTER-REFERENCE-2026-10-22-001.md).
+- وضعیت: ACTIVE / LIVING / OPEN / GOVERNING؛ لنگر جدید افزایشی است و لنگرهای پیشین را جایگزین نمی‌کند.
