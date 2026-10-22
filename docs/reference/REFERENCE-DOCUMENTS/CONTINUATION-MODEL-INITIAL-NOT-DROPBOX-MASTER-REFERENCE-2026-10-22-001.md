@@ -160,3 +160,31 @@ Priority order:
 - Still not evidenced: automatic host-side collection, producer authorization, production security/deployment, cold-start against deployed persistent storage, full behavior-candidate extraction/labeling, end-to-end recovery to all evidence/gaps, and external destination persistence.
 - Read-back completed for the CMIND master, EVT-0092, both independent anchors, 0.0 registry, reference index, behavior-trace index, integration queue, and model-initial queue. The expected EVT-0092 / IN-20261022-006 / OUT-20261022-006 links were present in their relevant control surfaces.
 - Registration status for the above repository files: REGISTERED / READ-BACK VERIFIED. Architecture-wide completion remains OPEN; do not confuse reference registration with implementation completion.
+
+
+---
+
+## Addendum v1.0.4 — صندوق زنده و زنجیرهٔ رشد از تعامل
+
+- Event: [EVT-0093](../../architecture/BEHAVIOR-TRACE/EVT-0093-LIVING-INBOX-AND-INTERACTION-TO-GROWTH-CHAIN-2026-10-22.md)
+- Independent anchors: [IN-20261022-007](../../0.0/anchors/PALANG-0.0-IN-20261022-007-LIVING-INBOX.md) / [OUT-20261022-007](../../0.0/anchors/PALANG-0.0-OUT-20261022-007-LIVING-INBOX.md)
+- Living inbox: [governance](../../architecture/LIVE-INBOX/README.md) / [first item](../../architecture/LIVE-INBOX/entries/INBOX-20261022-001.md)
+- Status: ACTIVE / LIVING / OPEN / EVOLVABLE; repository registration and read-back are tracked independently from runtime completion.
+
+### Lesson and decision
+The user interaction itself is a growth unit, not disposable chat. A repository-backed **صندوق زنده / Live Inbox** is established as the intake and triage layer. The living master remains the architecture/lineage/recovery layer; the implementation queue remains the executable-work layer; independent IN/OUT anchors and EVT preserve provenance. These roles are connected but not conflated.
+
+The command «بفرست در صندوق زنده» means preserve the item, assign a stable identity and lifecycle state, create/link the relevant interaction anchors and event, connect it to this master and the appropriate queue/component, read the files back, reconcile indexes, and leave an explicit next action. The existing «ثبت کن» command continues to invoke the complete project registration protocol without requiring the user to restate it.
+
+### Lifecycle contract
+RECEIVED → REGISTERED → READ-BACK VERIFIED → TRIAGED → IN PROGRESS → VALIDATED → INTEGRATED → CLOSED, as applicable. BLOCKED/WAITING remains explicit. No stage may be inferred from a document existing; each stage needs its own evidence. Inbox entries are append-only and versioned; no original architecture or prior evidence is silently overwritten.
+
+### Boundary and open gap
+The repository-backed inbox and first item are real repository files. This does **not** prove automatic host-side capture or background processing of every future message. Authorized producer, privacy boundary, durable runtime integration, cold-start recovery, and reverse lookup remain OPEN under [Issue #20](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/20). No Dropbox work is implied.
+
+### Recovery pointer
+Resume from this CMIND master → [EVT-0093](../../architecture/BEHAVIOR-TRACE/EVT-0093-LIVING-INBOX-AND-INTERACTION-TO-GROWTH-CHAIN-2026-10-22.md) → [Live Inbox](../../architecture/LIVE-INBOX/README.md) → [first item](../../architecture/LIVE-INBOX/entries/INBOX-20261022-001.md) → [model-initial queue](../../architecture/مدل%20اولیه%20AI/صف%20گام‌های%20بعدی%20و%20موارد%20باز.md) → [Issue #20](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/20).
+
+- Exact user-message timestamp: NOT CAPTURED; repository commit time must not replace it.
+- Actual repository UTC commit timestamps and Tehran equivalents will be added from Git metadata after writes.
+- Read-back status for this addendum remains pending until the updated master and control surfaces are fetched and matched.
