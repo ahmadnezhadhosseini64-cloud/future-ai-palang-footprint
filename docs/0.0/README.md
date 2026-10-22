@@ -965,3 +965,5 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - رویداد: [EVT-0098](../architecture/BEHAVIOR-TRACE/EVT-0098-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE-AND-OWNER-APPROVAL-2026-10-22.md)
 - نسخه‌های مادر به‌روزشده: PIRHA v1.5.0؛ HAIF v1.3.4.
 - قاعدهٔ جدید: هر سند مادر باید خودبسنده و قابل انتقال باشد؛ تغییر معماری فقط پس از تأیید صریح احمد پلنگ؛ read-back و راستی‌آزمایی پس از ثبت.
+
+- پابند زمانی INT-011: [TIME-BINDING-INT-20261022-011](../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-011.md).
