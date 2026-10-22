@@ -327,3 +327,11 @@
 - سند مرجع زنده: [RLP](../../reference/REFERENCE-DOCUMENTS/PEH-REGISTRATION-LIMITATION-AND-INTERACTION-BEHAVIOR-LIVING-REFERENCE-2026-10-22-001.md)
 - نقطهٔ ۰.۰: [لنگر مستقل محدودیت ثبت](../../0.0/anchors/PALANG-0.0-REGISTRATION-LIMITATION-AND-PEH-RESUME-2026-10-22-001.md)
 - وضعیت: چک‌لیست EVT-0051 اصلاح شده؛ Gmail به‌عنوان مسدود/ارسال‌نشده ثبت شده. Library، Buffer و Persistent Memory تأییدنشده؛ Dropbox باز است.
+
+
+## EVT-0083 — رفتارشناسی نخستین ورودی/خروجی و مدل نام‌گذاری
+- رویداد: [EVT-0083](./EVT-0083-FIRST-INTERACTION-BEHAVIOR-ANALYSIS-AND-IO-NAMING-MODEL-2026-10-22.md).
+- سند مرجع زنده: [IBIO](../../reference/REFERENCE-DOCUMENTS/FIRST-INTERACTION-BEHAVIOR-ANALYSIS-AND-IO-NAMING-LIVING-REFERENCE-2026-10-22-001.md).
+- لنگر مستقل ۰.۰: [PALANG-0.0-FIRST-IO-BEHAVIOR-MODEL-2026-10-22-001](../../0.0/anchors/PALANG-0.0-FIRST-IO-BEHAVIOR-MODEL-2026-10-22-001.md).
+- قرارداد زوجی: `INT-YYYYMMDD-NNN` / `IN-YYYYMMDD-NNN` / `OUT-YYYYMMDD-NNN`; شمارهٔ NNN در یک زوج مشترک است.
+- وضعیت: ACTIVE / LIVING / OPEN / EVOLVABLE؛ خودکارسازی دریافت همهٔ پیام‌ها هنوز نیازمند پیاده‌سازی و آزمون runtime است.
