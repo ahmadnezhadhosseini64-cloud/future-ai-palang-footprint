@@ -134,7 +134,7 @@
 - نتیجهٔ ممیزی ساختاری snapshot 0f29c9a: صفر پیوند محلی شکسته؛ تطبیق معنایی تاریخچه همچنان باز است.
 
 
-## سند مادر خودبسنده و قابل‌انتقال — نسخهٔ HAIF 1.3.4
+## سند مادر خودبسنده و قابل‌انتقال — نسخهٔ HAIF 1.3.5
 - قرارداد حاکم برای هر سند مادر: [SCEMRS v1.0.0](../../reference/REFERENCE-DOCUMENTS/PALANG-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE-STANDARD-2026-10-22-001.md).
 - رویداد: [EVT-0098](../BEHAVIOR-TRACE/EVT-0098-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE-AND-OWNER-APPROVAL-2026-10-22.md).
 - قاعدهٔ اختیار: تنها احمد پلنگ تغییر معماری حاکم را تأیید می‌کند؛ عامل فقط می‌تواند پیشنهاد را آماده کند تا زمانی که تأیید صریح ثبت شود.
