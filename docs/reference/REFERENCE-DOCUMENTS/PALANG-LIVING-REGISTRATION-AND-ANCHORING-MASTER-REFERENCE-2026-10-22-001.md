@@ -2,7 +2,7 @@
 
 - Stable ID: `PALANG-LIVING-REGISTRATION-AND-ANCHORING-2026-10-22-001`
 - Production ID: `PLRA-2026-10-22-001`
-- Version: 1.0.0
+- Version: 1.0.1
 - Status: ACTIVE / LIVING / OPEN — living governance reference; this label does not imply an always-running background process.
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint
@@ -39,3 +39,15 @@ Keep the project context continuous and recoverable; keep the architecture open 
 ## Next continuation
 
 Read back the time-binding record, update the 0.0 README and reference index, reconcile links with the master continuity graph, then separately resume the open Dropbox storage/retrieval test. Do not mark the full workflow complete before those steps are actually verified.
+
+
+## الحاقیهٔ نسخه‌دار 1.0.1 — معماری DTRC وتثبیت گام بعد
+
+- زوج تعامل جدید: `INT-20261022-008` — لنگرهای مستقل IN-008 و OUT-008.
+- سند مرجع مادر تازه: [DTRC](./PALANG-DUAL-TRACK-BEHAVIORAL-ARCHITECTURE-MASTER-REFERENCE-2026-10-22-001.md), نسخهٔ 1.0.1.
+- رویداد: [EVT-0094](../../architecture/BEHAVIOR-TRACE/EVT-0094-DUAL-TRACK-BEHAVIORAL-ARCHITECTURE-2026-10-22.md).
+- معماری مدل HAIF به نسخهٔ 1.1.0 افزوده شد؛ گراف پیوستگی به نسخهٔ 1.0.2 رسید؛ README مدل، دفتر 0.0 و نمایه به‌روزرسانی شدند.
+- پابند زمان: [TIME-BINDING-DTBA-2026-10-22-001](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-DTBA-2026-10-22-001.md).
+- نقطهٔ ادامهٔ بعدی: [PALANG-0.0-DTRC-ARCHITECTURE-CONTINUATION-2026-10-22-001](../../0.0/anchors/PALANG-0.0-DTRC-ARCHITECTURE-CONTINUATION-2026-10-22-001.md).
+- گام‌های قبلیِ ثبت، جای‌گذاری و به‌روزرسانی نمایه در این زنجیره انجام شدند. آزمون runtime مدل DTRC، ممیزی معنایی تمام پیوندهای تاریخی و اتصال/ذخیره‌سازی/بازیابی Dropbox همچنان باز هستند.
+- این الحاقیه، اجرای پس‌زمینه، Buffer یا Persistent Memory را اثبات نمی‌کند.
