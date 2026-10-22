@@ -37,3 +37,15 @@
 - Time binding / پابند زمانی: [TIME-BINDING-INT-20261022-010](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-010.md).
 
 - Paired input anchor / لنگر ورودی هم‌زوج: [IN-010](PALANG-0.0-IN-20261022-010-BASELINE-REGISTRATION-AND-ARCHITECTURE-EVOLUTION.md).
+
+
+## ممیزی زندهٔ اجراشده — یافته‌های ساختاری و زمانی
+- Snapshot audited / نسخهٔ بررسی‌شدهٔ مخزن: `daff68c9cf0778ce6ad0328e7e734699d175d119`.
+- Living Architecture Audit / ممیزی معماری زنده: [Run 39801100910](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39801100910); job `audit` completed successfully and uploaded an artifact; workflow status was still reported in_progress at last read.
+- Historical graph script / اسکریپت گراف تاریخی: 10 missing local Markdown links; 57 Stable-ID collision groups; 68 Production-ID collision groups; 7 Reference-ID collision groups; 24 event-number collision groups; 11 exact-content duplicate groups; decode_errors=0.
+- Timestamp inventory: 554 documents with ISO timestamps; several documents/records remain UNKNOWN or lack explicit ISO/UTC evidence.
+- Semantic UTC/Tehran pair audit: 1,294 timestamp strings found; 1,293 normalized and paired; 1 ambiguous/unparseable item, reported at EVT-0089 line 21.
+- Host adapter test: PASS for synthetic ingest, authentication, durable read-back, idempotent retry, conflict rejection and restart recovery.
+- Acceptance simulation: PASS for no silent loss, no false completion, idempotent retry, interruption recovery and detection safety net.
+- These results are evidence of the run, not closure of all findings. Missing links and identity collisions remain OPEN pending classification and repair.
+- Full report: [PALANG repository historical audit results](../../reference/REFERENCE-DOCUMENTS/PALANG-REPOSITORY-HISTORICAL-AUDIT-RESULTS-2026-10-22-001.md); event: [EVT-0097](../../architecture/BEHAVIOR-TRACE/EVT-0097-REPOSITORY-HISTORICAL-AUDIT-RESULTS-2026-10-22.md).
