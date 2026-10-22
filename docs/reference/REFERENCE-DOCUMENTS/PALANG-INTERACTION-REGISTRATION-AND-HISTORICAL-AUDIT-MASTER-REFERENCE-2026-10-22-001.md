@@ -2,14 +2,14 @@
 
 - Stable ID / شناسهٔ پایدار: `PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-2026-10-22-001`
 - Production ID / شناسهٔ تولید: `PIRHA-2026-10-22-001`
-- Version / نسخه: 1.0.1
+- Version / نسخه: 1.2.0
 - Owner / مالک: احمد پلنگ
 - Project / پروژه: Future AI / Palang Footprint — HAIF
 - Status / وضعیت: ACTIVE / LIVING / OPEN FOR GROWTH
-- Current pair / زوج تعامل جاری: `INT-20261022-009`
-- Current input / ورودی: [IN-20261022-009](../../0.0/anchors/PALANG-0.0-IN-20261022-009-INTERACTION-GOVERNANCE-AND-AUDIT.md)
-- Current output / خروجی: [OUT-20261022-009](../../0.0/anchors/PALANG-0.0-OUT-20261022-009-INTERACTION-GOVERNANCE-AND-AUDIT.md)
-- Current event / رویداد جاری: [EVT-0095](../../architecture/BEHAVIOR-TRACE/EVT-0095-INTERACTION-GOVERNANCE-AND-HISTORICAL-AUDIT-2026-10-22.md)
+- Current pair / زوج تعامل جاری: `INT-20261022-010`
+- Current input / ورودی: [IN-20261022-010](../../0.0/anchors/PALANG-0.0-IN-20261022-010-BASELINE-REGISTRATION-AND-ARCHITECTURE-EVOLUTION.md)
+- Current output / خروجی: [OUT-20261022-010](../../0.0/anchors/PALANG-0.0-OUT-20261022-010-BASELINE-REGISTRATION-AND-ARCHITECTURE-EVOLUTION.md)
+- Current event / رویداد جاری: [EVT-0096](../../architecture/BEHAVIOR-TRACE/EVT-0096-BASELINE-REGISTRATION-AND-ARCHITECTURE-EVOLUTION-2026-10-22.md)
 - Historical event repaired / رویداد تاریخی تکمیل‌شده: [EVT-0093](../../architecture/BEHAVIOR-TRACE/EVT-0093-REGISTRATION-CONTINUATION-2026-10-22.md)
 - Exact user-message timestamp / زمان دقیق پیام: NOT CAPTURED؛ زمان commit جایگزین آن نیست.
 
