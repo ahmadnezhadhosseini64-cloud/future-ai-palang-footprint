@@ -600,3 +600,6 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 | EVT-0093 | `docs/architecture/BEHAVIOR-TRACE/EVT-0093-REGISTRATION-CONTINUATION-2026-10-22.md` | فایل مستقل رویداد تاریخی که قبلاً فقط به آن ارجاع شده بود | Created; read-back required |
 | INT-20261022-009 | `docs/0.0/anchors/PALANG-0.0-IN-20261022-009-INTERACTION-GOVERNANCE-AND-AUDIT.md` + `docs/0.0/anchors/PALANG-0.0-OUT-20261022-009-INTERACTION-GOVERNANCE-AND-AUDIT.md` | زوج مستقل ورودی/خروجی | Registered; read-back required |
 | HAIF v1.2.0 | `docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md` | ادغام افزایشی PIRHA در معماری مادر | Updated; read-back required |
+
+- پابند زمانی PIRHA: `docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-PIRHA-2026-10-22-001.md`.
+- لنگر ادامهٔ بعدی PIRHA: `docs/0.0/anchors/PALANG-0.0-PIRHA-HISTORICAL-AUDIT-CONTINUATION-2026-10-22-001.md`.
