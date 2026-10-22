@@ -17,3 +17,5 @@
 - Output URL: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/docs/0.0/anchors/PALANG-0.0-OUT-20261022-006-REGISTRATION-CONTINUATION.md
 - Event EVT-0093 was specified in the master and anchors but its standalone file creation has not been confirmed; do not mark it as stored until written and read back.
 - Read-back status: master and both anchors were fetched from the default branch and their IDs/paths were verified. Full cross-link audit and other storage targets are still open.
+
+| Time-binding record itself | 14b4d68dd4f78cb025b5e1a52d2327709be33bfc | 2026-10-22T13:07:17Z | 2026-10-22T16:37:17+03:30 |
