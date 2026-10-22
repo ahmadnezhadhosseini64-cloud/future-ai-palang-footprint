@@ -34,3 +34,13 @@ The presence of an unresolved Dropbox item must not override the current explici
 - Repository event file: created; read-back verification pending.
 - External destinations and automatic capture: NOT VERIFIED / NOT CLAIMED.
 - Next action: implement and test the pair-ledger runtime in `prototype/haif-v0/`, then reconcile the new evidence into the architecture and queue.
+
+
+## Execution addendum — runtime pair-ledger increment
+- Time binding: [TIME-BINDING-CMIND](./TIME-BINDING-CMIND-2026-10-22-001.md).
+- Added API endpoints in `prototype/haif-v0/app.py`: create a schema-validated pair and reverse lookup from INT/IN/OUT.
+- Storage is local SQLite with canonical JSON hash, write/read-back verification, idempotent identical retries, conflict rejection, and lookup after app restart.
+- Added five tests and `jsonschema` dependency.
+- CI runs `39823733279` and `39823898278` each reported 15 passed / 1 failed due a pre-existing broad search assertion affected by the new reference. The query-only correction was insufficient; both failed runs remain historical evidence.
+- Corrected test commit: `5bae4d711ba2c2cb50f440b6c23af8b65e73fbcf`; fresh run `39824020260` was QUEUED at last observation. Final suite result is pending.
+- Status: feature code present and repository read-back verified; overall test suite NOT YET VERIFIED / OPEN. Production host capture remains NOT IMPLEMENTED / NOT VERIFIED.
