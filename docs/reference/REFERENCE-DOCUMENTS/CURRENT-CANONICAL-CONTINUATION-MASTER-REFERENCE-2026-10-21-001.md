@@ -346,3 +346,7 @@
 - این زنجیره به معماری پایه، FIOBAM، AOGM و ELVR متصل شده است؛ رشد فقط افزایشی و نسخه‌دار است.
 - وضعیت واقعی: CI قبلی برای fixture ساختگی موفق است؛ runtime collector، ثبت خودکار همهٔ تعاملات و cold-start تولیدی هنوز اثبات نشده‌اند.
 - مقصدهای Library، Buffer، Persistent Memory و Dropbox تأیید نشده‌اند؛ Gmail ارسال نشده است.
+
+
+## 32. پابند زمانی معماری رفتارشناسی زنده — EVT-0088
+- [TIME-BINDING-LBAF](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-LBAF-2026-10-22-001.md) ثبت UTC واقعی commit و زمان متناظر تهران را نگه می‌دارد؛ لنگر جاری و گام بعدی ۰.۰ در بخش 31 و رویداد EVT-0088 ثبت شده‌اند.
