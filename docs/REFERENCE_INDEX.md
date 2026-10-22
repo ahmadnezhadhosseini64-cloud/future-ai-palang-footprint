@@ -586,3 +586,6 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 | EVT-0094 | `docs/architecture/BEHAVIOR-TRACE/EVT-0094-DUAL-TRACK-BEHAVIORAL-ARCHITECTURE-2026-10-22.md` | رویداد رفتارشناسی و تکامل معماری | Repository registration; read-back pending final reconciliation |
 | INT-20261022-008 | `docs/0.0/anchors/PALANG-0.0-IN-20261022-008-BEHAVIORAL-ARCHITECTURE-UPDATE.md` + `docs/0.0/anchors/PALANG-0.0-OUT-20261022-008-BEHAVIORAL-ARCHITECTURE-UPDATE.md` | زوج مستقل ورودی/خروجی | Registered |
 | HAIF v1.1.0 | `docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md` | جای‌گذاری DTRC در مدل مادر و نسخه‌گذاری افزایشی | Updated; read-back pending final reconciliation |
+
+- پابند زمانی DTRC: `docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-DTBA-2026-10-22-001.md` — UTC مرجع و زمان تهران مشتق‌شده.
+- لنگر ادامهٔ ۰.۰: `docs/0.0/anchors/PALANG-0.0-DTRC-ARCHITECTURE-CONTINUATION-2026-10-22-001.md`.
