@@ -67,3 +67,12 @@
 - بازخوانی مستقل، Stable ID، EVT-0039، وضعیت Gmail `BLOCKED / NOT VERIFIED`، اقدام `GMAIL-CONNECTION-AND-READBACK-01` و چرخهٔ ثبت کامل را تأیید کرد.
 - این PASS فقط همین سند مرجع در Library را پوشش می‌دهد؛ Gmail همچنان `BLOCKED / NOT VERIFIED` است و هیچ ایمیلی ارسال/بازیابی نشده است.
 - اقدام بعدی `GMAIL-CONNECTION-AND-READBACK-01` باز می‌ماند؛ هیچ نقطهٔ ۰.۰ قبلی بسته یا جایگزین نشده است.
+
+
+## بازخوانی نهایی نسخهٔ به‌روزشدهٔ Library
+- سند مرجع در Library overwrite شد و سپس دوباره از Library بازخوانی شد.
+- شناسهٔ ثابت Library: `libfile_a24b346829dc8191b632564f529c7f0e`.
+- شناسهٔ نسخهٔ backing file پس از آخرین overwrite: `file_0000000030d881f4b1fd7c2908a76e68`.
+- بازخوانی نهایی تأیید کرد: Stable ID، EVT-0039، شناسهٔ Library، commit timestampهای مرجع، `GMAIL-CONNECTION-AND-READBACK-01` و وضعیت Gmail `BLOCKED / NOT VERIFIED`.
+- ثبت به‌روزشدهٔ سند مرجع در مخزن: commit `f6e91c5ded3113dc5862470cc05fd1356a6f2970`; UTC `2026-10-22T06:07:51Z`; تهران `2026-10-22 09:37:51`.
+- زمان دقیق عملیات read-back از ابزار ارائه نشد و UNKNOWN باقی می‌ماند.
