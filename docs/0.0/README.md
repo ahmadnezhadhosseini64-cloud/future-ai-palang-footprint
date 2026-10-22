@@ -1022,3 +1022,14 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - [EVT-0093](../architecture/BEHAVIOR-TRACE/EVT-0093-LIVING-INBOX-AND-INTERACTION-TO-GROWTH-CHAIN-2026-10-22.md)
 - [IN-20261022-007](./anchors/PALANG-0.0-IN-20261022-007-LIVING-INBOX.md) / [OUT-20261022-007](./anchors/PALANG-0.0-OUT-20261022-007-LIVING-INBOX.md)
 - [سند مادر CMIND](../reference/REFERENCE-DOCUMENTS/CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-MASTER-REFERENCE-2026-10-22-001.md) — Addendum v1.0.4.
+
+
+
+## زوج تعامل جاری — INT-20261022-015 / رفتارشناسی شکارچی
+- ورودی: [IN-20261022-015](anchors/PALANG-0.0-IN-20261022-015-BEHAVIOR-HUNTER-MISSED-DETECTION.md).
+- خروجی: [OUT-20261022-015](anchors/PALANG-0.0-OUT-20261022-015-BEHAVIOR-HUNTER-MISSED-DETECTION.md).
+- رویداد canonical: [EVT-0103](../architecture/BEHAVIOR-TRACE/EVT-0103-BEHAVIOR-HUNTER-MISSED-DETECTION-AND-ID-COLLISION-CORRECTION-2026-10-22.md).
+- صندوق زنده: [INBOX-20261022-002](../architecture/LIVE-INBOX/entries/INBOX-20261022-002.md).
+- سند مادر کل پروژه: [UPRM](../reference/REFERENCE-DOCUMENTS/PALANG-UNIVERSAL-PROJECT-RECONSTRUCTION-MASTER-2026-10-22-001.md); سند رفتارشناسی: [LBAF](../reference/REFERENCE-DOCUMENTS/LIVING-BEHAVIOR-ARCHITECTURE-FORESIGHT-MASTER-REFERENCE-2026-10-22-001.md).
+- خطای ثبت شناسه EVT-0093 به‌صورت آشکار ثبت شده؛ فایل تاریخی حفظ و شناسهٔ یکتای پیگیری EVT-0103 است.
+- وضعیت: ثبت/بازخوانی مخزنی باید جدا از اجرای خودکار شکارچی سنجیده شود؛ runtime همچنان OPEN در Issue #20.
