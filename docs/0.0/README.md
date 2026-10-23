@@ -1116,3 +1116,10 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - Current point 0: [IN-021](anchors/PALANG-0.0-IN-20261023-021-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE.md) / [OUT-021](anchors/PALANG-0.0-OUT-20261023-021-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE.md), [EVT-0110](../architecture/BEHAVIOR-TRACE/EVT-0110-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-2026-10-23.md).
 - Next 0.0: [NEXT-0.0-20261023-022 — خاک‌برداری سرتاسری گراف منابع، قوانین و درس‌ها](anchors/PALANG-0.0-NEXT-20261023-022-HISTORIC-SOURCE-GRAPH-EXCAVATION.md).
 - The next point remains OPEN until source enumeration, provenance review, graph reconciliation and final-head audit evidence are recorded.
+
+
+## Interaction continuity — IN-022 / OUT-022
+- [Input anchor IN-022](anchors/PALANG-0.0-IN-20261023-022-INTERACTION-CONTINUITY.md) ↔ [Output anchor OUT-022](anchors/PALANG-0.0-OUT-20261023-022-INTERACTION-CONTINUITY.md).
+- Event: [EVT-0111](../architecture/BEHAVIOR-TRACE/EVT-0111-INTERACTION-CONTINUITY-NON-INTERRUPTION-2026-10-23.md); lesson: [LAL-20261023-009](../architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-009-INTERACTION-CONTINUITY-NON-INTERRUPTION.md).
+- Time binding: [TIME-BINDING-INT-20261023-022](../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261023-022.md).
+- Continuation: [NEXT-023](anchors/PALANG-0.0-NEXT-20261023-023-CONTINUITY-AND-OPEN-WORK.md). Prior historic census remains active at [NEXT-022](anchors/PALANG-0.0-NEXT-20261023-022-HISTORIC-SOURCE-GRAPH-EXCAVATION.md).
