@@ -1311,3 +1311,10 @@ The queue index and the timestamp case must each be read back after this update.
 - Mirror semantic reconciliation: PARTIAL / FAIL-CLOSED; source status contradiction corrected, but the older Library mirror has not been refreshed to that corrected revision. Length delta 7 is not itself a blocker.
 - CI execution/artifact and actual unit-test outcome: NOT VERIFIED; retrieve run evidence before passing the generator.
 - Live host adapter capturing every permitted IN/OUT pair: OPEN / NOT PROVEN. Candidate tests may only feed a Child/Rahm proposal after independent execution and evidence review; no automatic Master promotion.
+
+
+### EVT-0116 mirror refresh closure update — 2026-10-23
+- Library mirror overwrite and independent read-back PASS for this exact artifact/version; stable Library file ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, snapshot `file_00000000422c8230b7b9709a831fd252`.
+- VTP-02 semantic key fields PASS; VTP-03 accepted length tolerance PASS; VTP-04 write/read-back PASS. This is not whole-file byte equality and does not verify other Library files.
+- Updated test-plan evidence commit `2cda88abc61ce00ea458ea3c93e7f716bd517bcd`, blob `3c799d1059e2602974a16a6336b11042e50eef57`.
+- Behavior Hunter workflow run/artifact still NOT VERIFIED; automatic live ChatGPT IN/OUT capture OPEN. Continue with workflow execution evidence and host-adapter/restart recovery tests; no automatic Master promotion.
