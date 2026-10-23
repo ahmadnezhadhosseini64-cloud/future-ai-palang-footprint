@@ -539,3 +539,12 @@ Current active gate remains [EVT-0122](../../architecture/BEHAVIOR-TRACE/EVT-012
 - Architecture gate `READY_FOR_OWNER_REVIEW`; evidence VERIFIED; owner decision PENDING; no canonical mutation or promotion. Both recovery manifests `RECOVERED`, zero failures.
 - Current main later advanced to `3301ded46901530fbd746ecdde7db4411dec6c6f` through evidence-only automation commit `evidence/evidence-gate-40010379492.txt`; that exact post-bot SHA has not been rerun.
 - [NEXT-026](../../0.0/anchors/PALANG-0.0-NEXT-20261023-026-FRESH-SESSION-AND-END-TO-END-LEARNING.md) remains active; fresh-session recovery NOT RUN; Issue #20/#21 OPEN.
+
+
+## Living append-only architecture evolution — EVT-0126
+- [EVT-0126](../../architecture/BEHAVIOR-TRACE/EVT-0126-LIVING-ARCHITECTURE-EVOLUTION-AND-DEEP-AUDIT-2026-10-23.md) records the new version-preserving architecture-growth capability.
+- [TALL](../../architecture/BEHAVIOR-OBSERVATORY/TEST-TO-ARCHITECTURE-LEARNING-LOOP-2026-10-23-001.md) now includes the append-only update ledger.
+- Validator: `scripts/behavior-hunter/validate_architecture_update_ledger.py`; tests: `tests/behavior-hunter/test_architecture_update_ledger.py`; history: `data/interaction-pairs/architecture-update-ledger.jsonl`.
+- The previous ledger record version 1.0.0 is retained; version 1.1.0 explicitly records this authorized integration. CI runs the validator and uploads a machine-readable manifest.
+- CI proof for this new code is pending until its exact run/artifact is independently inspected. Fresh-session recovery remains NOT RUN; Issue #20 and #21 remain OPEN.
+- Current successor checkpoint: [NEXT-027](../../0.0/anchors/PALANG-0.0-NEXT-20261023-027-FRESH-SESSION-AND-ARCHITECTURE-GROWTH.md).
