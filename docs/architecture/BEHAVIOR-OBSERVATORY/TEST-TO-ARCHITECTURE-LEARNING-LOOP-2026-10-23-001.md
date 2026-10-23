@@ -159,3 +159,11 @@ Each proposed insight includes:
 - Ledger manifest PASS: 2 records, 2 unique versions, 1 change stream, zero errors. Version 1.0.0 retained; version 1.1.0 records the explicitly authorized integration of the append-only validator.
 - Evidence proposal gate remains separate and owner-gated; fixture proposal decision is PENDING; no automatic promotion or canonical mutation.
 - Both repository recovery directions RECOVERED; fresh-session recovery remains NOT RUN; runtime-wide capture and external persistence remain unproven.
+
+
+## 13. Tamper-evident append-only ledger — verified
+- Ledger rows now include a canonical-JSON `record_sha256` and `previous_record_sha256`; the chain starts with `GENESIS`. Any row edit or broken predecessor link is rejected.
+- Regression tests include tampered row and broken/reordered chain; earlier version 1.0.0 is preserved and linked to 1.1.0.
+- [Run 40014712373](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40014712373) passed 67 tests on SHA `965713b2ef2ca4873176015128313da9c03c1b48`.
+- Artifact `12527726978`, ZIP SHA-256 `6ddf0b23d3f33db2cdfc6cb4b1e7154899bf1477a0466ba5c01a2a3c7325c07b`, inspected: ledger PASS, hash chain verified, zero errors; both recovery directions RECOVERED.
+- Interim test/fixture failures were fixed and retained as lessons in EVT-0126. Fresh-session recovery remains NOT RUN; no host-wide capture or external persistence claim.
