@@ -1112,7 +1112,7 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - Next point: expand source-linked historical lesson/rule census, then structural audit and runtime/cold-start work under Issue #20.
 
 
-## Current point 0 and next 0.0
+## Historical current point 0 and next 0.0 — superseded by CURRENT-023
 - Current point 0: [IN-021](anchors/PALANG-0.0-IN-20261023-021-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE.md) / [OUT-021](anchors/PALANG-0.0-OUT-20261023-021-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE.md), [EVT-0110](../architecture/BEHAVIOR-TRACE/EVT-0110-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-2026-10-23.md).
 - Next 0.0: [NEXT-0.0-20261023-022 — خاک‌برداری سرتاسری گراف منابع، قوانین و درس‌ها](anchors/PALANG-0.0-NEXT-20261023-022-HISTORIC-SOURCE-GRAPH-EXCAVATION.md).
 - The next point remains OPEN until source enumeration, provenance review, graph reconciliation and final-head audit evidence are recorded.
@@ -1132,3 +1132,10 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - **Next 0.0:** [NEXT-024](anchors/PALANG-0.0-NEXT-20261023-024-CONTINUITY-HISTORIC-AND-COLD-START.md).
 - Time binding: [TIME-BINDING-INT-20261023-023](../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261023-023.md).
 - This checkpoint does not close prior work: NEXT-022 / Issue #21 historic census, Issue #20 runtime/cold-start, and fresh audit on exact final HEAD remain OPEN.
+
+
+## Canonical current pointer — 2026-10-23
+- The legacy `checkpoints/PALANG-0.0-CURRENT-2026-10-20-001.md` is preserved as a historical anchor and points forward to the active current point.
+- Current point 0: [CURRENT-023](anchors/PALANG-0.0-CURRENT-20261023-023-USER-CHECKPOINT-AND-CONTINUATION.md).
+- Next 0.0: [NEXT-024](anchors/PALANG-0.0-NEXT-20261023-024-CONTINUITY-HISTORIC-AND-COLD-START.md).
+- Paired anchors/event/lesson: [IN-023](anchors/PALANG-0.0-IN-20261023-023-REGISTER-CURRENT-POINT-0.md) / [OUT-023](anchors/PALANG-0.0-OUT-20261023-023-REGISTER-CURRENT-POINT-0.md), [EVT-0112](../architecture/BEHAVIOR-TRACE/EVT-0112-CURRENT-POINT-0-AND-NEXT-0.0-2026-10-23.md), [LAL-20261023-010](../architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-010-CURRENT-POINT-AND-NEXT-CHECKPOINT.md).
