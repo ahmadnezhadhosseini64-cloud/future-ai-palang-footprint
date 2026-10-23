@@ -133,3 +133,28 @@ The following 14 files were fetched in full from the repository (not only from s
 ## Source-to-rule mapping created
 - [SRCMAP-2026-10-23-001](./SOURCE-RULE-COMPONENT-TEST-MAP-2026-10-23-001.md) extracts the operational obligations from the initial 14-source batch and connects them to components, tests and gaps.
 - The mapping is partial; several rules still need full extraction, automated checks and semantic conflict adjudication. Issue #21 remains OPEN.
+
+
+## Full-source retrieval checkpoint — additional batch 2 (five sources)
+
+The following canonical source files were fetched in full from main during the NEXT-024 continuation. The blob SHA is the exact returned source content identity; character counts are the returned UTF-8 text length reported by the connector. This confirms retrieval only; semantic adjudication remains partial.
+
+| Source | Production ID / version | Blob SHA | Characters | Initial extraction state |
+|---|---|---|---:|---|
+| `docs/reference/REFERENCE-DOCUMENTS/PERMANENT-INTERACTION-ANCHORING-TIMESTAMP-GOVERNANCE-AND-CANONICAL-GRAPH-MASTER-REFERENCE-2026-10-21-001.md` | PIATGCG-2026-10-21-001 / v1.1.0 | `2212b390634a8a9530a3dce15fabd53762e478cd` | 32,006 | Full fetch confirmed; rule families mapped provisionally |
+| `docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001.md` | UIALAC-2026-10-20-001 / v1.2.0 | `12a37ffb1ba86080abfb39462468ac7c99f8125d` | 25,308 | Full fetch confirmed; schema/lifecycle/persistence rules mapped provisionally |
+| `docs/reference/REFERENCE-DOCUMENTS/INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-REGISTRATION-2026-10-20-001.md` | ICMCRR-HAIF-2026-10-20-001 / v1.0.0 | `438c7c75577800da0b7eb33ca88dc9a743f1e7fd` | 13,449 | Full fetch confirmed; Master–Child–Rahm and gaps mapped provisionally |
+| `docs/reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-RECONCILIATION-LIVING-MASTER-REFERENCE-2026-10-21-001.md` | H0GLMR-2026-10-21-001 / source declares v1.0.0 plus later addenda | `6c746acb5d2ab9edff4b22fe42f8489335c123a3` | 62,106 | Full fetch confirmed; graph/alias/conflict history mapped provisionally |
+| `docs/reference/REFERENCE-DOCUMENTS/SEMANTIC-TIMESTAMP-AUDIT-AND-HOST-CAPTURE-RECOVERY-MASTER-REFERENCE-2026-10-21-001.md` | STAR-HCR-2026-10-21-001 / v1.0.0 | `cef495e5dc9c27ddfc10dbcb43396a907cdf3c92` | 10,809 | Full fetch confirmed; UTC/host-capture/recovery gates mapped provisionally |
+
+### Provisional source families (not final deduplication)
+- Permanent anchoring master + UIALAC: interaction IN/OUT anchors, separate timestamps, explicit graph links, lifecycle and recovery.
+- ICMCRR: Master–Child–Rahm continuity, portable reference package, and named unresolved gaps.
+- H0GLMR: historical 0.0 graph, identifier/alias collision history, source-backed reconciliation and scoped audit claims.
+- STAR-HCR: canonical UTC, host/runtime capture boundary, destination-specific persistence and recovery evidence.
+- These sources overlap with ULCG and the first 14-source batch. No source is being merged or declared redundant by title similarity. Detailed rule-by-rule adjudication remains OPEN.
+
+### Search coverage update
+- Full source files retrieved in this batch: 5.
+- Cumulative named full-source retrievals: 19 (14 prior + 5 here); this is still not a full repository-tree/history census.
+- Next action: extract exact numbered rules, compare source authority/version and conflicts, link each to components/tests, and preserve ambiguous collisions for adjudication.
