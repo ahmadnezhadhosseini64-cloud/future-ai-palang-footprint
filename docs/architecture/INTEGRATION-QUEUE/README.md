@@ -1174,3 +1174,10 @@ The queue index and the timestamp case must each be read back after this update.
 - The audit script path was corrected in commit 3703a9ec653b5c3574fb3f5d9c8aa6eef67eb50b.
 - Retry run 39885912400 no longer reported the reference-index path error but still saw the queue before the lesson ID was present in the commit it checked.
 - Current main-branch read-back confirms the queue row exists. A fresh workflow must run against the reconciled HEAD before the structural gate is marked PASS. Historical failures remain preserved; do not erase them.
+
+
+## Structural audit closure update — LALR-2026-10-23-001
+- Successful audit: [run 39885966380](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39885966380), tested commit 28a0977a0e4b6cc4c0122e86a5df79c562309282.
+- Result: structural/link checks, graph/timestamp audits, UTC/Tehran pair validation, compilation and durable host-adapter tests passed.
+- Closed gate: repository structural audit for the new lesson registry on the tested commit.
+- Still OPEN: full historical lesson migration, automatic capture/enforcement in every host, and a dedicated rollback/recovery test across components/external destinations.
