@@ -1091,3 +1091,7 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 ## Time binding and historic lesson ledger — INT-20261023-020
 - Canonical UTC/Tehran registration-time record: [TIME-BINDING-INT-20261023-020](../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261023-020.md).
 - First historic lesson migration batch: [HALML-2026-10-23-001](../architecture/ARCHITECTURE-LESSONS/HISTORIC-LESSON-MIGRATION-LEDGER-2026-10-23-001.md).
+
+
+## Verification checkpoint — INT-20261023-020
+- [VERIFY-INT-20261023-020](../architecture/BEHAVIOR-TRACE/VERIFICATION-CHECKPOINT-INT-20261023-020.md) records post-write read-back and separates registration from test, validation and runtime enforcement.
