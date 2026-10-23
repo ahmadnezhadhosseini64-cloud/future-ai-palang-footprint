@@ -4,7 +4,7 @@
 - Production ID: `TALL-HAIF-2026-10-23-001`
 - Version: `1.0.0`
 - Owner: احمد پلنگ / Ahmad Nezhadhosseini
-- Status: `ACTIVE / LIVING / DESIGN-REGISTERED / IMPLEMENTATION-PENDING`
+- Status: `ACTIVE / LIVING / IMPLEMENTED-IN-REPOSITORY / CI-VERIFICATION-PENDING / OWNER-GATED`
 - Parent event: `EVT-0117`
 - Related architecture: [Behavior Hunter](./PALANG-BEHAVIOR-HUNTER-TEST-GENERATION-AND-GROWTH-GATE-2026-10-23-001.md)
 - Canonical timestamp rule: repository commit UTC is authoritative; Tehran is derived from the same instant.
@@ -129,3 +129,15 @@ Each proposed insight includes:
 - Extractor states are proposals only; PASS without evidence is rejected; FAIL creates a regression/anti-pattern candidate; BLOCKED creates an architecture-gap candidate; NOT RUN creates an evidence-gap candidate. Every proposal has source IDs, evidence fields, UNASSESSED confidence, OWNER_REVIEW_REQUIRED and `master_mutation: false`.
 - Commit registering extractor: `004974970583fc214d97b4b42638fcc3d6a4c05e`; unit tests: `e811cc864b9bf74ad699d5b19f7f67e9234195df`; outcome fixture: `68075ea7fddad8ec25b6d3d63ccdf42fe6d38149`; workflow update: `d15af1dce6a4f79420dc972bc8324dacdf12defd`.
 - Important: files are registered, but this addendum does not claim the CI workflow has actually passed. Independent run/job/artifact evidence remains required. The implementation is a deterministic candidate extractor, not yet a full root-cause engine or live ChatGPT host adapter.
+
+
+## 10. Implementation addendum — architecture update gate
+
+- Gate: `scripts/behavior-hunter/architecture_update_gate.py`.
+- Regression tests: `tests/behavior-hunter/test_architecture_update_gate.py`.
+- Proposal fixture: `data/interaction-pairs/architecture-update-proposal-fixture.json`; it uses the controlled EVT-0120 evidence target and its recorded SHA-256. It is a fixture proposal, not proof of a production architecture change.
+- CI now runs the gate and publishes `architecture-update-gate.json` with the existing candidate/evidence manifests.
+- The gate checks required proposal fields, allowed lifecycle state, repository-confined evidence locators, exact SHA-256, counterexamples, required tests, rollback plan, owner decision and protected architecture paths.
+- Safety invariant: the gate only emits a decision manifest; it never mutates MASTER or canonical architecture. Promotion remains false even when an approval decision is represented; integration requires a separate explicit, reviewable change followed by regression and independent read-back.
+- Test cases cover valid proposal, missing schema fields, wrong/missing evidence, path traversal, protected targets, integration without approval and approval-state mismatch.
+- The previous statement that insight extraction and independent execution were pending is superseded by the implementation addenda above. Current CI status and artifact inspection must be recorded separately; live host-wide capture and fresh-session recovery remain unproven.
