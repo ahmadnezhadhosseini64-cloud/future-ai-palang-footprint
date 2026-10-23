@@ -755,3 +755,10 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 
 ## Source-to-rule-component-test map
 - [SRCMAP-2026-10-23-001](architecture/ARCHITECTURE-LESSONS/SOURCE-RULE-COMPONENT-TEST-MAP-2026-10-23-001.md) — initial source-backed mapping of registration, interaction anchoring, behavior, persistence, validation, tests and open proof gates.
+
+
+## Living architecture update — interaction continuity
+
+| ICNG-HAIF-2026-10-23-001 | `docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001.md` v1.1.0 | Rule that every new input must connect to prior IN/OUT, events, open queues, prior checkpoints and next actions without abandoning ongoing work | ACTIVE / LIVING / APPEND-ONLY; repository write on update branch; final read-back and main-branch merge pending |
+| EVT-0111 / LAL-20261023-009 | `docs/architecture/BEHAVIOR-TRACE/EVT-0111-INTERACTION-CONTINUITY-NON-INTERRUPTION-2026-10-23.md` and `docs/architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-009-INTERACTION-CONTINUITY-NON-INTERRUPTION.md` | Independent event/lesson for continuity and non-interruption rule | REGISTERED on update branch; read-back/reconciliation pending |
+| IN-022 / OUT-022 / NEXT-023 | `docs/0.0/anchors/` | Independent interaction anchors and continuation checkpoint; historic census NEXT-022 remains open | REGISTERED on update branch; final commit-time binding and reconciliation pending |
