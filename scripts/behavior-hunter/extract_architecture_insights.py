@@ -56,6 +56,14 @@ def _validate_evidence(evidence, result, source_mode):
             for key in ("execution_id", "source_sha"):
                 if not _nonempty(item.get(key)):
                     issues.append(prefix + "_missing_" + key)
+            source_sha = str(item.get("source_sha", "")).strip()
+            if source_sha and not re.fullmatch(r"[0-9a-fA-F]{7,64}", source_sha):
+                issues.append(prefix + "_invalid_source_sha_format")
+            locator = str(item.get("locator", "")).strip()
+            has_uri_scheme = bool(re.match(r"^[A-Za-z][A-Za-z0-9+.-]*://", locator))
+            looks_like_path = "/" in locator or locator.startswith((".", "/"))
+            if locator and not (has_uri_scheme or looks_like_path):
+                issues.append(prefix + "_locator_must_be_uri_or_path")
     return issues
 
 
