@@ -88,6 +88,58 @@ for rel, label in lesson_surfaces:
     if lesson_id not in content:
         errors.append(f"{label}_MISSING_LESSON_ID id={lesson_id}")
 
+
+# Universal living component governance integration gate.
+# This verifies repository structure/links only; it does not prove host-wide capture.
+ulcg_required = {
+    "universal living component governance master": "docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001.md",
+    "universal governance event": "docs/architecture/BEHAVIOR-TRACE/EVT-0110-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-2026-10-23.md",
+    "universal governance lesson": "docs/architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-008-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE.md",
+    "source rule component test map": "docs/architecture/ARCHITECTURE-LESSONS/SOURCE-RULE-COMPONENT-TEST-MAP-2026-10-23-001.md",
+    "historic lesson migration ledger": "docs/architecture/ARCHITECTURE-LESSONS/HISTORIC-LESSON-MIGRATION-LEDGER-2026-10-23-001.md",
+    "current IN-021 anchor": "docs/0.0/anchors/PALANG-0.0-IN-20261023-021-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE.md",
+    "current OUT-021 anchor": "docs/0.0/anchors/PALANG-0.0-OUT-20261023-021-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE.md",
+    "next 0.0 source excavation anchor": "docs/0.0/anchors/PALANG-0.0-NEXT-20261023-022-HISTORIC-SOURCE-GRAPH-EXCAVATION.md",
+    "verification checkpoint": "docs/architecture/BEHAVIOR-TRACE/VERIFICATION-CHECKPOINT-INT-20261023-021.md",
+    "time binding": "docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261023-021.md",
+    "current live inbox item": "docs/architecture/LIVE-INBOX/entries/INBOX-20261023-007.md",
+}
+for label, rel in ulcg_required.items():
+    if not (ROOT / rel).is_file():
+        errors.append(f"ULCG_MISSING_REQUIRED_FILE label={label!r} path={rel}")
+
+ulcg_surfaces = (
+    ("docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001.md", "ULCG_MASTER"),
+    ("docs/REFERENCE_INDEX.md", "REFERENCE_INDEX"),
+    ("docs/architecture/BEHAVIOR-TRACE/README.md", "BEHAVIOR_TRACE_INDEX"),
+    ("docs/architecture/ARCHITECTURE-LESSONS/README.md", "LESSON_REGISTRY"),
+    ("docs/architecture/ARCHITECTURE-LESSONS/HISTORIC-LESSON-MIGRATION-LEDGER-2026-10-23-001.md", "HISTORIC_LESSON_LEDGER"),
+    ("docs/architecture/INTEGRATION-QUEUE/README.md", "ARCHITECTURE_QUEUE"),
+    ("docs/0.0/README.md", "ZERO_ZERO_REGISTRY"),
+    ("docs/architecture/LIVE-INBOX/README.md", "LIVE_INBOX"),
+    ("docs/reference/REFERENCE-DOCUMENTS/CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-MASTER-REFERENCE-2026-10-22-001.md", "CONTINUATION_MASTER"),
+)
+required_link_ids = {
+    "ULCG_MASTER": ("PALANG-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-2026-10-23-001", "SRCMAP-2026-10-23-001", "EVT-0110"),
+    "REFERENCE_INDEX": ("UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001", "SRCMAP-2026-10-23-001", "EVT-0110", "LAL-20261023-008"),
+    "BEHAVIOR_TRACE_INDEX": ("EVT-0110", "LAL-20261023-008"),
+    "LESSON_REGISTRY": ("SRCMAP-2026-10-23-001", "LAL-20261023-008"),
+    "HISTORIC_LESSON_LEDGER": ("SRCMAP-2026-10-23-001", "Issue #21"),
+    "ARCHITECTURE_QUEUE": ("SRCMAP-2026-10-23-001", "NEXT-0.0-20261023-022", "Issue #20", "Issue #21"),
+    "ZERO_ZERO_REGISTRY": ("IN-021", "OUT-021", "NEXT-0.0-20261023-022", "EVT-0110"),
+    "LIVE_INBOX": ("INBOX-20261023-007", "NEXT-0.0-20261023-022"),
+    "CONTINUATION_MASTER": ("EVT-0110", "LAL-20261023-008", "NEXT-0.0-20261023-022"),
+}
+for rel, label in ulcg_surfaces:
+    path = ROOT / rel
+    if not path.is_file():
+        errors.append(f"ULCG_SURFACE_MISSING_FILE label={label} path={rel}")
+        continue
+    content = path.read_text(encoding="utf-8")
+    for required_id in required_link_ids[label]:
+        if required_id not in content:
+            errors.append(f"ULCG_SURFACE_MISSING_ID surface={label} id={required_id}")
+
 print("LIVING_ARCHITECTURE_AUDIT")
 print(f"required_files_checked={len(required)}")
 print("external_persistence_tested=false")
