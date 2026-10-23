@@ -4,7 +4,7 @@
 - Production ID: ULCG-HAIF-2026-10-23-001
 - Version: 1.2.0
 - Lifecycle: ACTIVE / LIVING / APPEND-ONLY / EVOLVABLE
-- Evidence state: REGISTERED / READ-BACK VERIFIED for v1.1.0; v1.2.0 update in progress until independently fetched
+- Evidence state: REGISTERED / READ-BACK VERIFIED for v1.2.0 on the working branch; final main-branch audit pending
 - Canonical clock: actual repository commit timestamp in UTC; Tehran equivalent is the same instant +03:30
 - Governing architecture: Future AI / Palang Footprint / HAIF
 - Primary continuation master: [CMIND](./CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-MASTER-REFERENCE-2026-10-22-001.md)
