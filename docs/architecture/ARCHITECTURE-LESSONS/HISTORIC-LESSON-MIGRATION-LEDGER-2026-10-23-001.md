@@ -68,3 +68,30 @@ This is a bounded normalization pass, not a claim of full historical coverage. T
 ## Recovery-rule test update — 2026-10-23
 - [LAL-20261023-007](./lessons/LAL-20261023-007-ROLLBACK-AS-NEW-LINEAGE-EVENT.md) now links [EVT-0109](../BEHAVIOR-TRACE/EVT-0109-CONTROLLED-GIT-ROLLBACK-RECOVERY-TEST-2026-10-23.md).
 - Bounded repository branch rollback: PASS. Full-project, host/runtime and external-destination recovery remain OPEN / NOT PROVEN.
+
+
+## Expanded source-family discovery — checkpoint 2026-10-23 / EVT-0110
+Targeted repository searches found additional canonical source families not fully represented in the first six-lesson batch. These are source candidates for mapping, not automatic new lesson records and not a complete census.
+
+| Source family / canonical artifact | Path | Initial disposition |
+|---|---|---|
+| Excavation-to-Registration Gate | `docs/protocols/EXCAVATION-TO-REGISTRATION-GATE-2026-09-02.md` | Canonical process contract; map to ULCG, validate precedence and tests |
+| Automatic Final Registration Orchestrator | `docs/architecture/AUTOMATIC_FINAL_REGISTRATION_ORCHESTRATOR.md` | Operational design; distinguish design from runtime proof |
+| Three-Layer Synchronous Durable Registration | `docs/reference/REFERENCE-DOCUMENTS/THREE-LAYER-SYNCHRONOUS-DURABLE-REGISTRATION-2026-10-06-001.md` | Registration and destination-state contract |
+| Register Command Governing Binding | `docs/reference/REFERENCE-DOCUMENTS/REGISTER-COMMAND-GOVERNING-BINDING-2026-10-12-001.md` | Command semantics and no-report-only rule |
+| Three-Level Governed Registration Command | `docs/reference/REFERENCE-DOCUMENTS/THREE-LEVEL-GOVERNED-REGISTRATION-COMMAND-2026-10-06-001.md` | Related registration source; compare overlap and conflict |
+| Every Input/Output Anchor governance | `docs/reference/REFERENCE-DOCUMENTS/EVERY-INPUT-OUTPUT-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001.md` | IN/OUT anchoring source family |
+| Every Interaction Anchor governance | `docs/reference/REFERENCE-DOCUMENTS/EVERY-INTERACTION-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001.md` | Interaction-level registration source family |
+| Living Behavior Architecture Foresight (LBAF) | `docs/reference/REFERENCE-DOCUMENTS/LIVING-BEHAVIOR-ARCHITECTURE-FORESIGHT-MASTER-REFERENCE-2026-10-22-001.md` | Behavior candidate discovery and architecture signal source |
+| Interaction Pair Ledger and Recovery Master | `docs/reference/REFERENCE-DOCUMENTS/INTERACTION-PAIR-LEDGER-AND-RECOVERY-MASTER-REFERENCE-2026-10-22-001.md` | Pair identity, durable ledger and recovery source |
+| Executable Interaction Ledger Validation Master | `docs/reference/REFERENCE-DOCUMENTS/EXECUTABLE-INTERACTION-LEDGER-VALIDATION-MASTER-REFERENCE-2026-10-22-001.md` | Schema and runtime validation source |
+| Memory Persistence Proof / Archive Recovery Bootstrap | `architecture/memory/MEMORY-PERSISTENCE-PROOF-MASTER-ARCHIVE-RECOVERY-BOOTSTRAP-2026-09-29.md` | Recovery/continuity source family |
+| Persistence Continuity / No-Drop Recovery | `architecture/memory/PERSISTENCE-CONTINUITY-NO-DROP-RECOVERY-ARCHITECTURE-2026-09-29.md` | Cross-layer persistence state machine |
+| Historical 0.0 Graph Audit Findings | `docs/reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-AUDIT-FINDINGS-2026-10-21-001.md` | Structural evidence; not complete semantic adjudication |
+| ULCG / EVT-0110 | `docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001.md` | New coordinating master; not a replacement for source authorities |
+
+### Search coverage and limits
+- Search groups executed: registration lifecycle/command; living append-only versioning and rollback; behavior/source-linked rules; interaction pair/recovery; runtime gaps; automatic orchestrator; behavior foresight; memory persistence; graph audit evidence; false-negative evaluation.
+- Results establish that additional source families exist and must collaborate with the six normalized lessons. Search excerpts are discovery evidence only; each candidate still requires a full source fetch, version/status/provenance review, semantic comparison, local-link test and component mapping.
+- This is NOT the complete repository file-tree census. More source families and lessons may exist. Keep full inventory OPEN; do not infer absence from no search result.
+- Governing master: [ULCG](../../reference/REFERENCE-DOCUMENTS/UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001.md); event: [EVT-0110](../BEHAVIOR-TRACE/EVT-0110-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-2026-10-23.md).
