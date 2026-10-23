@@ -57,6 +57,15 @@ class ArchitectureInsightTests(unittest.TestCase):
         self.assertIn("evidence[0]_missing_execution_id", out["issues"])
         self.assertIn("evidence[0]_missing_source_sha", out["issues"])
 
+    def test_invalid_evidence_source_sha_and_locator_are_rejected(self):
+        evidence = [{
+            "type": "test_log", "locator": "not-a-uri-or-path",
+            "execution_id": "ci-run-117", "source_sha": "not-a-sha"
+        }]
+        out = extract(self.record("PASS") | {"evidence": evidence}, 1)
+        self.assertIn("evidence[0]_invalid_source_sha_format", out["issues"])
+        self.assertIn("evidence[0]_locator_must_be_uri_or_path", out["issues"])
+
     def test_placeholder_evidence_is_rejected_in_production(self):
         evidence = [{
             "type": "test_log", "locator": "example:fake-log",
