@@ -382,3 +382,13 @@
 - Test-plan commit: `a7cf278c41ab552db7453e08ac3f9c98ddca90bf`; actual GitHub commit UTC `2026-10-23T17:27:33Z`; derived Asia/Tehran `2026-10-23T20:57:33+03:30`.
 - Independent read-back of the test plan returned blob SHA `74661f27e0c47b43ed68df8a9d906617fbf3d15b`; the plan content and VTP-10 were present.
 - Status: test plan registered and read-back verified; tests are proposed / NOT RUN unless a row explicitly states partial evidence. Library sync and external recovery remain NOT VERIFIED / NOT RUN. No prior 0.0 anchor is replaced by this addition.
+
+
+## Behavior Hunter — آزمون‌سازی زنده از ورودی/خروجی (EVT-0116)
+- Event: [EVT-0116](../../architecture/BEHAVIOR-TRACE/EVT-0116-BEHAVIOR-HUNTER-LIVE-TEST-ACTIVATION-2026-10-23.md), Stable ID `PALANG-BEHAVIOR-HUNTER-LIVE-TEST-ACTIVATION-2026-10-23-001`.
+- Architecture: [Behavior Hunter test-generation and growth gate](../../architecture/BEHAVIOR-OBSERVATORY/PALANG-BEHAVIOR-HUNTER-TEST-GENERATION-AND-GROWTH-GATE-2026-10-23-001.md).
+- Executable generator: `scripts/behavior-hunter/generate_candidate_tests.py`; five unit tests at `tests/behavior-hunter/test_generate_candidate_tests.py`; sample IN/OUT pair at `data/interaction-pairs/interaction-pairs.jsonl`; CI workflow `.github/workflows/palang-behavior-hunter.yml`.
+- Workflow commit `9d908b15220a9f4a97fd1c56ae32edd393d18196`, UTC `2026-10-23T17:33:36Z`, Tehran derived `2026-10-23T21:03:36+03:30`. EVT-0116 commit `b3147c9fb16726eabe77858ec204dc5989907137`, UTC `2026-10-23T17:35:07Z`, Tehran derived `2026-10-23T21:05:07+03:30`.
+- Current truth: code/workflow registered; actual CI execution and artifact are NOT VERIFIED until run evidence is independently retrieved. Structured-record processing is implemented; automatic capture of every live ChatGPT IN/OUT remains OPEN pending a host adapter and end-to-end proof.
+- VTP-02 found and corrected a contradictory stale Library status in the canonical audit; commit `a2374d7da36a5af69b1bdf17f6dfd673bc03c97f`, UTC `2026-10-23T17:34:39Z`, Tehran `2026-10-23T21:04:39+03:30`. VTP-03 length delta = 7 characters passes the length check, but semantic acceptance remains PENDING until Library is refreshed and independently read back.
+- Growth rule: candidate tests → independent execution → evidence review → Child/Rahm proposal → owner approval → Master integration. No automatic Master promotion. Preserve all historical 0.0 anchors and failures.
