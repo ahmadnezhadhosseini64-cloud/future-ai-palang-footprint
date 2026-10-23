@@ -56,3 +56,19 @@
 - These rows supersede earlier rows for the listed artifacts. UTC remains canonical.
 - The issue creation time is explicitly an issue event timestamp, not a repository commit time.
 - This time-binding file's own current successor timestamp may be added by a later successor; do not infer it from neighboring commits.
+
+
+## Addendum v1.0.3 — source-rule graph and final read-back checkpoint
+| Artifact / latest recorded change | Commit | UTC canonical | Tehran equivalent |
+|---|---|---|---|
+| Source-rule-component-test map | [714fa0f](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/714fa0f7a7a531d83c359e5bafb5135aac8a091c) | 2026-10-23T04:13:35Z | 2026-10-23T07:43:35+03:30 |
+| ULCG master with source map | [436e965](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/436e9659278f49bcab3ba1908e8ed074b8112de7) | 2026-10-23T04:13:50Z | 2026-10-23T07:43:50+03:30 |
+| Historic lesson ledger with source map | [8329b6f](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/8329b6fc692d3c092eaf96c695da5a8a0cb83b44) | 2026-10-23T04:13:55Z | 2026-10-23T07:43:55+03:30 |
+| Lesson registry with source map | [05a9e0a](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/05a9e0a6b83c9781fd598a6c342c72514376089c) | 2026-10-23T04:14:00Z | 2026-10-23T07:44:00+03:30 |
+| Integration queue with source map | [e925444](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/e9254442a6e58c137e1aa807a29d0cb87c6c0d49) | 2026-10-23T04:14:06Z | 2026-10-23T07:44:06+03:30 |
+| Reference index with source map | [53d4eb7](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/53d4eb7f031cb667e5c10af704ebf77a8acc2d43) | 2026-10-23T04:14:11Z | 2026-10-23T07:44:11+03:30 |
+| Verification checkpoint v1.0.3 | [7c0cdc9](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/7c0cdc94f600fcc10bf2a7410fa406ab8c7e299a) | 2026-10-23T04:14:47Z | 2026-10-23T07:44:47+03:30 |
+
+- Source map and cross-surface index updates were fetched back by blob SHA as recorded in VERIFY-INT-20261023-021.
+- The above timestamps are repository commit times. They do not represent exact user-message time or exact branch-ref operation time.
+- This ledger's own v1.0.3 commit time is not yet recorded here; if needed, record it in a future successor rather than infer it.
