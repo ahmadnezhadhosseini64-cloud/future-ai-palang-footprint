@@ -174,3 +174,8 @@ State: six source-linked lesson files have been created and fetched back; this d
 ## LAL-20261023-011 — visible continuation
 - [LAL-20261023-011](./lessons/LAL-20261023-011-VISIBLE-CONTINUATION-AND-RESUMABLE-WORK.md) — visible milestones, resume from the queue, and do not imply silent background execution.
 - Event: [EVT-0113](../BEHAVIOR-TRACE/EVT-0113-VISIBLE-CONTINUATION-AND-SOURCE-CLAUSE-EXCAVATION-2026-10-23.md); anchors IN-024 / OUT-024; next point [NEXT-025](../../0.0/anchors/PALANG-0.0-NEXT-20261023-025-SOURCE-RULE-TEST-CROSSWALK-AND-COLD-START.md).
+
+
+## LAL-20261023-012 — visible status and resumable execution
+- [LAL-20261023-012](./lessons/LAL-20261023-012-STATUS-TRANSPARENCY-AND-RESUMABLE-EXECUTION.md) / [EVT-0114](../BEHAVIOR-TRACE/EVT-0114-STATUS-TRANSPARENCY-AND-RESUMABLE-EXECUTION-2026-10-23.md); anchors IN-025 / OUT-025.
+- NEXT-025 remains the next checkpoint. Work must report visible milestones and must not imply silent background execution.
