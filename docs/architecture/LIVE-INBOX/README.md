@@ -61,3 +61,10 @@ The first registered item is the user's request to make the live inbox a standar
 - [INBOX-20261022-004](entries/INBOX-20261022-004.md) records the explicit request to set the current model-initial continuation as a 0.0 return point.
 - It routes to [EVT-0105](../BEHAVIOR-TRACE/EVT-0105-CURRENT-0.0-RETURN-POINT-AND-NEXT-EXECUTION-2026-10-22.md), [IN/OUT-017](../../0.0/anchors/PALANG-0.0-IN-20261022-017-SET-CURRENT-RETURN-POINT.md), the current 0.0 anchor, the living CMIND master, and the model-initial queue.
 - Next execution remains Issue #20. Production runtime capture and cold-start are OPEN / NOT PROVEN; Dropbox remains a separate waiting branch.
+
+
+## Fifth inbox item — living architecture lessons, continuous verification and rollback
+- This user request is recorded as an architecture-wide governance requirement through [LAL-20261023-001](../ARCHITECTURE-LESSONS/lessons/LAL-20261023-001-LIVING-APPEND-ONLY-VERIFY-RECOVER-CYCLE.md), registry [ARCHITECTURE-LESSONS](../ARCHITECTURE-LESSONS/README.md), and event [EVT-0107](../BEHAVIOR-TRACE/EVT-0107-LIVING-LESSON-CYCLE-AND-ROLLBACK-GOVERNANCE-2026-10-23.md).
+- Required lifecycle: discover → capture → classify → register → read-back → operationalize → test → validate → integrate → activate → reassess → version successor.
+- Required history rule: append-only version succession; preserve previous verified baselines and failed attempts; recovery must name the restored version and preserve failure evidence.
+- Open: dedicated lesson inventory migration, automatic host-side capture/enforcement, and runtime rollback/recovery proof.
