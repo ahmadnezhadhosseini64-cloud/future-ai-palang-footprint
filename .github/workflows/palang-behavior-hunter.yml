@@ -29,7 +29,7 @@ jobs:
       - name: Generate candidate test manifest
         run: python scripts/behavior-hunter/generate_candidate_tests.py --input data/interaction-pairs/interaction-pairs.jsonl --output artifacts/behavior-hunter/candidate-tests.json
       - name: Generate architecture insight candidates from explicit outcome records
-        run: python scripts/behavior-hunter/extract_architecture_insights.py --input data/interaction-pairs/test-outcomes.jsonl --output artifacts/behavior-hunter/architecture-insights.json
+        run: python scripts/behavior-hunter/extract_architecture_insights.py --source-mode fixture --input data/interaction-pairs/test-outcomes.jsonl --output artifacts/behavior-hunter/architecture-insights.json
       - name: Upload generated manifests
         uses: actions/upload-artifact@v4
         with:
