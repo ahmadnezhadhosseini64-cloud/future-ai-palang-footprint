@@ -801,3 +801,6 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 ## Execution visibility and interaction IN-025 / OUT-025
 - [IN-025](0.0/anchors/PALANG-0.0-IN-20261023-025-STATUS-AND-VISIBLE-CONTINUATION.md) ↔ [OUT-025](0.0/anchors/PALANG-0.0-OUT-20261023-025-STATUS-AND-VISIBLE-CONTINUATION.md); event [EVT-0114](architecture/BEHAVIOR-TRACE/EVT-0114-STATUS-TRANSPARENCY-AND-RESUMABLE-EXECUTION-2026-10-23.md), lesson [LAL-20261023-012](architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-012-STATUS-TRANSPARENCY-AND-RESUMABLE-EXECUTION.md).
 - CURRENT-023 remains the current point 0. NEXT-025 remains the active next 0.0 work checkpoint; no earlier queue is cancelled.
+
+## Canonical time binding — IN-025 / OUT-025
+- [TIME-BINDING-INT-20261023-025](architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261023-025.md) binds repository commit timestamps to UTC and the equivalent Tehran time. Message timestamp remains separate and unknown where not exposed.
