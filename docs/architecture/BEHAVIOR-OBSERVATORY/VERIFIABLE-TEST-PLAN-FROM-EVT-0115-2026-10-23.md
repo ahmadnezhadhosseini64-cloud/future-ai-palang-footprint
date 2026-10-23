@@ -74,3 +74,12 @@ Repository commit timestamps observed from GitHub metadata (UTC canonical; Tehra
 - Observatory index update `e8e013f5360d5e7f533b5a56c2031d440a878a13`: UTC `2026-10-23T17:36:33Z`; Tehran `2026-10-23T21:06:33+03:30`.
 
 CI run and uploaded artifact are NOT VERIFIED because the available GitHub actions interface in this execution does not expose a workflow-run listing/dispatch operation. The workflow is configured to run on relevant pushes; do not mark the unit tests or generated artifact PASS until the actual run evidence is retrieved. Host-wide live capture remains OPEN.
+
+
+## Library mirror refresh result — 2026-10-23
+- Library overwrite succeeded at the canonical mirror path; stable Library file ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`; new snapshot file ID `file_00000000422c8230b7b9709a831fd252`.
+- Independent Files search/read returned the refreshed snapshot and EVT-0116 addendum. Metadata modified UTC `2026-10-23T17:39:33.763445Z` (metadata time only; exact read-back operation time was not exposed).
+- VTP-02: PASS for semantic key fields in the refreshed mirror — Stable ID, Test ID, Version 1.0.0, next-action chain BOART-FOLLOWUP-01 → 02 → 03, and per-destination status states. No byte-for-byte whole-file equality claim.
+- VTP-03: PASS for the accepted seven-character tolerance rule; the refreshed archival mirror includes additive reconciliation notes, so whole-file length differs intentionally.
+- VTP-04: PASS for this exact mirror artifact/version: overwrite succeeded and independent retrieval/read-back confirmed the new snapshot.
+- Remaining gates: VTP-06 restart recovery NOT RUN; VTP-07 scheduled execution NOT VERIFIED; VTP-09 historical 0.0 end-to-end preservation NOT RUN. Behavior Hunter CI run/artifact NOT VERIFIED and live host capture OPEN.
