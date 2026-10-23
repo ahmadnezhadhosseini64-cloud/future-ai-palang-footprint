@@ -63,3 +63,22 @@ Six normalized source-linked lesson files were fetched back and their Stable IDs
 The lesson registry and migration ledger now link these six derivative records; the canonical sources remain authoritative. The Live Inbox index now also links the time binding, migration ledger and verification checkpoint. These updates close the earlier cross-link gap for the read-back snapshot; a fresh structural audit of the final reconciled HEAD is still OPEN / NOT CONFIRMED.
 
 The current bounded migration batch now contains the original LAL-20261023-001 plus six source-linked successors. This is not a complete historical lesson inventory. Runtime behavior-hunter activation, host-wide automatic capture/enforcement, and actual rollback/recovery remain OPEN / NOT PROVEN.
+
+
+## Final surface read-back snapshot — post-normalization
+
+The following latest canonical surfaces were fetched again after the lesson-registry and ledger updates. Blob SHA is the read-back file hash; the commit SHA/time is tracked separately in the time-binding ledger.
+
+| Surface | Current read-back blob SHA | Match |
+|---|---|---|
+| Lesson registry | b84cb80d308c9b7b312a0ac328d2d0673676b91a | PASS — six normalized lessons and ledger linked |
+| Historic lesson ledger | b3092f5f55416390a97378142841b9eb3173134a | PASS — six lesson links present |
+| Living inbox index | 8faccad7e2f267210d09cc4976ddfe6466b799e5 | PASS — time binding, ledger and verification checkpoint linked |
+| CMIND master | 7ab7284bfef7a9b47a92ba7b89ac305449b5a556 | PASS — current interaction and evidence links present |
+| Reference index | 284d9d0535231ae837e46ad12ac44fb8984d5a3a | PASS — current interaction, time binding, ledger and checkpoint indexed |
+| 0.0 registry | 3b4221ca41d41bd32819f1df9ca014847b80df01 | PASS — current interaction and evidence links present |
+| Behavior-trace index | 0f823b93151a8ece7d958f8dbf0d72ab86a2a330 | PASS — EVT-0108, time binding and checkpoint linked |
+| Integration queue | 0e3dea5b466a6b63acf3b592bd304e330b4561c5 | PASS — current interaction, time binding, ledger and checkpoint linked |
+| Time binding v1.0.2 | fetched successfully after write | PASS — UTC/Tehran table includes latest known commits for all listed surfaces |
+
+The final status remains evidence-scoped: read-back and cross-link reconciliation PASS for this fetched snapshot; full structural audit on the latest reconciled HEAD is NOT CONFIRMED here; historic migration is PARTIAL; runtime-wide capture/enforcement and end-to-end rollback remain OPEN / NOT PROVEN; external persistence was NOT ATTEMPTED.
