@@ -34,3 +34,23 @@
 - The candidate branch is based on current main HEAD 7df582089c5ed15d13b1ba4325949f0c39e25b1a; its PR audit and merge remain pending.
 - No full audit on the candidate or exact final main SHA is claimed in this ledger.
 - Issue #21 historical census and Issue #20 runtime/cold-start remain OPEN.
+
+
+## Final link reconciliation — canonical repository times
+
+| Artifact | Last-change commit | Canonical UTC | Tehran equivalent |
+|---|---|---|---|
+| Time-binding initial registration | [a99f78d](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/a99f78d952918143151b4ee15d33340a82e8e356) | 2026-10-23T16:09:39Z | 2026-10-23T19:39:39+03:30 |
+| ULCG master time-binding link | [b855aba](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/b855aba5dce78ece7ea8d9a54b596262d7e136c7) | 2026-10-23T16:10:06Z | 2026-10-23T19:40:06+03:30 |
+| Reference index time-binding link | [d8e205a](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/d8e205a9f356a95ba55bf52cbd79a02351bd7b84) | 2026-10-23T16:10:12Z | 2026-10-23T19:40:12+03:30 |
+| 0.0 registry time-binding link | [fa50305](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/fa50305e01d090256001a4267efa4756984db19a) | 2026-10-23T16:10:17Z | 2026-10-23T19:40:17+03:30 |
+| OUT-025 time-binding link | [a545f26](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/a545f26716d413efdac829892ef0a9a1773696c9) | 2026-10-23T16:10:23Z | 2026-10-23T19:40:23+03:30 |
+| EVT-0114 time-binding link | [3f44ed8](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/3f44ed85abb1a67345128771a52499ea8bc86bb9) | 2026-10-23T16:10:28Z | 2026-10-23T19:40:28+03:30 |
+| CI time-binding gate | [4e7ca4f](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/4e7ca4fe4af72b16b68dbd373071afbd7afccecd) | 2026-10-23T16:10:35Z | 2026-10-23T19:40:35+03:30 |
+
+## Current candidate state
+
+- Candidate branch is based on exact main HEAD 7df582089c5ed15d13b1ba4325949f0c39e25b1a.
+- The previous divergent candidate was not merged; it remains an unmerged historical branch. This clean candidate carries the IN-025 interaction update on top of current main.
+- Fresh PR audit and merge remain pending. Issue #21 (full historic source census) and Issue #20 (runtime/cold-start) remain OPEN.
+- The present update itself has a new last-change commit. Its canonical timestamp is obtained from that commit metadata; no time is guessed here.
