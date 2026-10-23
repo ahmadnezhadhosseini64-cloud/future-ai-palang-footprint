@@ -1266,3 +1266,8 @@ The queue index and the timestamp case must each be read back after this update.
 - IN-024 / OUT-024 and EVT-0113 / LAL-011 record the user's correction about visible progress and resumable work.
 - [SCRTC-B2](../ARCHITECTURE-LESSONS/SOURCE-CLAUSE-CROSSWALK-BATCH-2-2026-10-23-001.md) maps five full-source fetches (19 named full-source fetches cumulatively) to provisional clauses, components, existing tests and open gates.
 - [NEXT-025](../../0.0/anchors/PALANG-0.0-NEXT-20261023-025-SOURCE-RULE-TEST-CROSSWALK-AND-COLD-START.md) is the next checkpoint. Continue NEXT-024 historic census and Issue #21; continue Issue #20 runtime/cold-start separately. No open gate is closed by this documentation.
+
+
+## Status transparency follow-up — IN-025 / OUT-025
+- Registered [IN-025](../../0.0/anchors/PALANG-0.0-IN-20261023-025-STATUS-AND-VISIBLE-CONTINUATION.md) / [OUT-025](../../0.0/anchors/PALANG-0.0-OUT-20261023-025-STATUS-AND-VISIBLE-CONTINUATION.md), event [EVT-0114](../BEHAVIOR-TRACE/EVT-0114-STATUS-TRANSPARENCY-AND-RESUMABLE-EXECUTION-2026-10-23.md), lesson [LAL-20261023-012](../ARCHITECTURE-LESSONS/lessons/LAL-20261023-012-STATUS-TRANSPARENCY-AND-RESUMABLE-EXECUTION.md).
+- CURRENT-023 remains point 0. NEXT-025 remains the next 0.0. Continue source-clause crosswalk work; do not drop NEXT-022/023/024 or Issues #20/#21.
