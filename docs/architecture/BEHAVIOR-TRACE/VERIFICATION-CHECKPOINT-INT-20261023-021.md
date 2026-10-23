@@ -82,3 +82,15 @@ Latest read-back values supersede the earlier rows above:
 - Latest historic lesson ledger blob SHA: `b3640b8791f5ac22f2fd3500a5697ca72bf0eaf7`.
 - Both issues remain open and separately accepted. The bounded Git rollback test (EVT-0109) remains PASS only for isolated Git ref recovery.
 - Structural audit on the exact final reconciled HEAD remains OPEN / NOT CONFIRMED; this checkpoint is read-back evidence, not a full structural audit.
+
+
+## Addendum v1.0.3 — source-rule map integrated and read back
+- New source graph: [SRCMAP-2026-10-23-001](../ARCHITECTURE-LESSONS/SOURCE-RULE-COMPONENT-TEST-MAP-2026-10-23-001.md), blob SHA `8211a1c1f03a78b74efbaf0d4aea8e6e8c4dd053`, fetched back.
+- Latest ULCG master blob SHA: `f431d10851398ad982cf4cc4d767f149bfd7a926`.
+- Latest historic lesson ledger blob SHA: `5b09b0a2124460c255234b7ebd4012a5b1fa3e3c`.
+- Latest lesson registry blob SHA: `22ac821bbeff4057e43fb4c01f04b5f26319cf32`.
+- Latest integration queue blob SHA: `ef20ea65b42c99641b6466c98f4602b0674629c9`.
+- Latest reference index blob SHA: `9365e7e24e371b50740a7448c19cadb499ca6ac4`.
+- Source map has 14 source rows and explicitly separates source retrieval, rule extraction, component links, test evidence and open gaps. It is an initial map, not a complete tree census.
+- Issue #21 remains OPEN for full census/semantic reconciliation; Issue #20 remains OPEN for runtime and cold-start proof.
+- The exact final-head full structural audit remains OPEN / NOT CONFIRMED. The latest Evidence Gate is not a substitute for it.
