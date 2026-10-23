@@ -796,3 +796,9 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - Event/lesson: [EVT-0113](architecture/BEHAVIOR-TRACE/EVT-0113-VISIBLE-CONTINUATION-AND-SOURCE-CLAUSE-EXCAVATION-2026-10-23.md) / [LAL-20261023-011](architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-011-VISIBLE-CONTINUATION-AND-RESUMABLE-WORK.md).
 - [Source clause crosswalk batch 2](architecture/ARCHITECTURE-LESSONS/SOURCE-CLAUSE-CROSSWALK-BATCH-2-2026-10-23-001.md) maps five full canonical sources to rules, components, tests and gaps.
 - Next 0.0: [NEXT-025](0.0/anchors/PALANG-0.0-NEXT-20261023-025-SOURCE-RULE-TEST-CROSSWALK-AND-COLD-START.md). NEXT-022/023/024 and Issues #20/#21 remain open as applicable.
+
+
+## Verification and time binding — IN-024 / OUT-024
+- [Verification checkpoint](architecture/BEHAVIOR-TRACE/VERIFICATION-CHECKPOINT-INT-20261023-024.md) records the candidate audit run, tested SHA, preserved failed run and merge boundary.
+- [Time binding](architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261023-024.md) records UTC and derived Tehran time for PR #29 artifacts.
+- Exact final-main audit remains OPEN / NOT CONFIRMED; Issues #20 and #21 remain OPEN.
