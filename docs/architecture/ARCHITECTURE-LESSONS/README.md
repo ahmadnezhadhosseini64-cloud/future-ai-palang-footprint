@@ -130,3 +130,8 @@ DISCOVERED → CAPTURED → CLASSIFIED → REGISTERED → READ-BACK VERIFIED →
 - First evidence-backed excavation batch: [HALML-2026-10-23-001](./HISTORIC-LESSON-MIGRATION-LEDGER-2026-10-23-001.md).
 - Time provenance for the current interaction: [TIME-BINDING-INT-20261023-020](../BEHAVIOR-TRACE/TIME-BINDING-INT-20261023-020.md).
 - The ledger is intentionally partial. Existing canonical sources remain the source of truth until provenance, semantic equivalence and acceptance gates are checked. No ambiguous IDs are merged.
+
+
+## Verification evidence for current execution
+- [VERIFY-INT-20261023-020](../BEHAVIOR-TRACE/VERIFICATION-CHECKPOINT-INT-20261023-020.md) records read-back and test scopes.
+- [HALML-2026-10-23-001](./HISTORIC-LESSON-MIGRATION-LEDGER-2026-10-23-001.md) remains a partial inventory; migration completion is not inferred.
