@@ -524,3 +524,10 @@ Current active gate remains [EVT-0122](../../architecture/BEHAVIOR-TRACE/EVT-012
 - [EVT-0125](../../architecture/BEHAVIOR-TRACE/EVT-0125-LIVING-ARCHITECTURE-UPDATE-CAPABILITY-2026-10-23.md) is ACTIVE/LIVING and CI-PASS; the architecture update gate passed 56 tests on SHA `4877bf89c5a72857d89f4dfd286a282ad9f3f932`. Artifact `12525592052` was downloaded/read back, ZIP SHA-256 `a634e03fd219db8c8fd63a25ebeb4e46705071833780d435c7ecca745e9db0ae`.
 - Gate result `READY_FOR_OWNER_REVIEW`; evidence verified; owner decision remains PENDING; no canonical mutation or auto-promotion.
 - Current continuation: [NEXT-026](../../0.0/anchors/PALANG-0.0-NEXT-20261023-026-FRESH-SESSION-AND-END-TO-END-LEARNING.md). Fresh-session recovery remains NOT RUN; see [EVT-0124](../../architecture/BEHAVIOR-TRACE/EVT-0124-FRESH-SESSION-RECOVERY-2026-10-23.md) and [handoff prompt](../../architecture/BEHAVIOR-TRACE/EVT-0124-FRESH-SESSION-RECOVERY-PROMPT-2026-10-23.md). Issue #20/#21 remain OPEN.
+
+
+## Latest CI revalidation for architecture update and recovery
+- Run [40010095560](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40010095560) passed 56 tests on tested SHA `f8e8c44667be7bd6a48f62240432069a8a78bd84` (commit UTC `2026-10-23T19:16:24Z`; Tehran derived `2026-10-23T22:46:24+03:30`).
+- Artifact `12525767024` downloaded and inspected; ZIP SHA-256 `2ac9491822fe8d250a30596cff38b1959b92066d7c192bc9f75821acac23fd0a`.
+- Architecture-update gate `READY_FOR_OWNER_REVIEW`, evidence verified, no errors, owner decision PENDING, no canonical mutation/promotion. Both IN/OUT recovery manifests `RECOVERED`, zero failures.
+- Active next checkpoint: [NEXT-026](../../0.0/anchors/PALANG-0.0-NEXT-20261023-026-FRESH-SESSION-AND-END-TO-END-LEARNING.md); fresh-session recovery remains NOT RUN. Issue #20/#21 remain OPEN.
