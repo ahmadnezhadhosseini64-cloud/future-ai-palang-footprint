@@ -142,6 +142,8 @@ for rel, label in ulcg_surfaces:
 
 print("LIVING_ARCHITECTURE_AUDIT")
 print(f"required_files_checked={len(required)}")
+print(f"ulcg_required_files_checked={len(ulcg_required)}")
+print(f"ulcg_surfaces_checked={len(ulcg_surfaces)}")
 print("external_persistence_tested=false")
 print("chatgpt_all_conversation_capture_tested=false")
 if errors:
