@@ -34,3 +34,22 @@
 - These changes are on the working branch until a PR is audited and merged.
 - No full audit on the candidate or exact final main SHA is claimed in this ledger.
 - Issue #21 historical census and Issue #20 runtime/cold-start remain OPEN.
+
+
+## Integration links and CI gate — canonical commit times
+
+| Artifact | Last-change commit | Canonical UTC | Tehran equivalent |
+|---|---|---|---|
+| Time binding first registration | [04368f6](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/04368f6ef98aef97be78d2b90b80c4521a16dafc) | 2026-10-23T16:03:11Z | 2026-10-23T19:33:11+03:30 |
+| ULCG master link update | [bb1640c](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/bb1640cc5e2f15d2ec2740f65a657ed456dd333d) | 2026-10-23T16:03:36Z | 2026-10-23T19:33:36+03:30 |
+| Reference index time-binding link | [1d3e25a](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/1d3e25adddbf8526fcc2981c0f9325dd57142801) | 2026-10-23T16:03:41Z | 2026-10-23T19:33:41+03:30 |
+| 0.0 registry time-binding link | [e456ecd](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/e456ecd9dbea6d6fcd6d854d904f10e82e7a9600) | 2026-10-23T16:03:46Z | 2026-10-23T19:33:46+03:30 |
+| OUT-025 time-binding link | [dc59197](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/dc59197b649b1d7e1fb13e4d03048a0ff11a7063) | 2026-10-23T16:03:52Z | 2026-10-23T19:33:52+03:30 |
+| EVT-0114 time-binding link | [b79ff8e](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/b79ff8ebbd9aed3a4efb3c21236a583bb78c284b) | 2026-10-23T16:03:57Z | 2026-10-23T19:33:57+03:30 |
+| CI audit script extension | [bd41bfd](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/bd41bfd282401159dbf81b89aa3059f2f5d5ca93) | 2026-10-23T16:04:03Z | 2026-10-23T19:34:03+03:30 |
+
+## Current state
+
+- All interaction artifacts and architecture/index links above are on the working branch.
+- A full PR audit and merge are still pending; do not report these changes as active on main until merged.
+- This file's present update creates a new last-change commit; the timestamp for that final self-update is to be taken from its commit metadata and appended by a successor binding, not predicted.
