@@ -16,7 +16,7 @@ The following artifacts were included in the squash commit that integrated PR #2
 | Artifact | Last-change commit | Canonical UTC | Tehran equivalent |
 |---|---|---|---|
 | ULCG master reference v1.1.0 | [d67c075](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/d67c07574a9b0964368b35a6edaa3ac4e47d37b3) | 2026-10-23T07:05:12Z | 2026-10-23T10:35:12+03:30 |
-| Reference index continuity entry | [d67c075](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/d67c07574a9b0964368b35a6edaa3ac4e47d37b3) | 2026-10-23T07:05:12Z | 2026-10-23T10:35:12+03:30 |
+| Reference index continuity entry (latest change) | [6b40580](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/6b40580327fe4300b30cde4b88ad63bde77ed8a4) | 2026-10-23T07:06:10Z | 2026-10-23T10:36:10+03:30 |
 | Source-rule-component-test map | [d67c075](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/d67c07574a9b0964368b35a6edaa3ac4e47d37b3) | 2026-10-23T07:05:12Z | 2026-10-23T10:35:12+03:30 |
 | Integration queue continuity entry | [d67c075](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/d67c07574a9b0964368b35a6edaa3ac4e47d37b3) | 2026-10-23T07:05:12Z | 2026-10-23T10:35:12+03:30 |
 | NEXT-022 preserved checkpoint | [d67c075](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/d67c07574a9b0964368b35a6edaa3ac4e47d37b3) | 2026-10-23T07:05:12Z | 2026-10-23T10:35:12+03:30 |
@@ -25,6 +25,7 @@ The following artifacts were included in the squash commit that integrated PR #2
 | IN-022 | [d67c075](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/d67c07574a9b0964368b35a6edaa3ac4e47d37b3) | 2026-10-23T07:05:12Z | 2026-10-23T10:35:12+03:30 |
 | OUT-022 | [d67c075](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/d67c07574a9b0964368b35a6edaa3ac4e47d37b3) | 2026-10-23T07:05:12Z | 2026-10-23T10:35:12+03:30 |
 | NEXT-023 | [d67c075](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/d67c07574a9b0964368b35a6edaa3ac4e47d37b3) | 2026-10-23T07:05:12Z | 2026-10-23T10:35:12+03:30 |
+| 0.0 index — IN-022 / OUT-022 / NEXT-023 links | [cd836a4](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/cd836a4ad29b8af4261436896879e2e6b2148838) | 2026-10-23T07:06:17Z | 2026-10-23T10:36:17+03:30 |
 
 ## Evidence boundaries
 
@@ -33,3 +34,7 @@ The following artifacts were included in the squash commit that integrated PR #2
 - The later commit `8b216d95f496444d2d3f0bd87283407b441ddede` records an Evidence Gate run; it is not itself proof of a fresh Living Architecture Audit on that exact HEAD.
 - The exact current main HEAD must be inspected and its own full audit evidence recorded before the final audit gate can be closed.
 - Runtime capture, reverse lookup, cold-start recovery, and external destination proof remain OPEN under Issues #20 and #21 as applicable.
+
+
+## Ledger self-timestamp note
+The initial creation of this time-binding record was committed at 2026-10-23T07:06:06Z (2026-10-23T10:36:06+03:30). This update changes the ledger itself; its new last-change commit timestamp must be recorded by a later successor time-binding entry, rather than guessed in advance.
