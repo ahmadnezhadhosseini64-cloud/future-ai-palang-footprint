@@ -1210,3 +1210,10 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - [EVT-0126](../architecture/BEHAVIOR-TRACE/EVT-0126-LIVING-ARCHITECTURE-EVOLUTION-AND-DEEP-AUDIT-2026-10-23.md) is ACTIVE/LIVING; CI verification pending for the new validator.
 - [NEXT-027](./anchors/PALANG-0.0-NEXT-20261023-027-FRESH-SESSION-AND-ARCHITECTURE-GROWTH.md) is the active successor.
 - Previous versions/checkpoints are preserved. Fresh-session recovery remains NOT RUN; Issues #20/#21 remain OPEN.
+
+
+## IN-029 / OUT-029 — verified living architecture evolution
+- [IN-029](./anchors/PALANG-0.0-IN-20261023-029-LIVING-ARCHITECTURE-EVOLUTION.md) / [OUT-029](./anchors/PALANG-0.0-OUT-20261023-029-LIVING-ARCHITECTURE-EVOLUTION.md) — READ-BACK VERIFIED.
+- [EVT-0126](../architecture/BEHAVIOR-TRACE/EVT-0126-LIVING-ARCHITECTURE-EVOLUTION-AND-DEEP-AUDIT-2026-10-23.md) — ACTIVE/LIVING, CI PASS; 65 tests, artifact read-back verified.
+- [NEXT-027](./anchors/PALANG-0.0-NEXT-20261023-027-FRESH-SESSION-AND-ARCHITECTURE-GROWTH.md) — ACTIVE/LIVING; fresh-session recovery NOT RUN.
+- Previous ledger version 1.0.0 and prior 0.0 checkpoints are preserved. Issues #20/#21 remain OPEN.
