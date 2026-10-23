@@ -5,7 +5,7 @@
 - Production ID: IN-026
 - Version: 1.0.0
 - Type: Independent input anchor
-- Status: REGISTERED / READ-BACK PENDING
+- Status: REGISTERED / READ-BACK VERIFIED on main; fresh final-main audit remains open
 - User message time: UNKNOWN / UNVERIFIED; no independent message timestamp is available.
 - Parent checkpoint: [NEXT-024](./PALANG-0.0-NEXT-20261023-024-CONTINUITY-HISTORIC-AND-COLD-START.md)
 - Prior interaction: [IN-025](./PALANG-0.0-IN-20261023-025-STATUS-AND-VISIBLE-CONTINUATION.md) / [OUT-025](./PALANG-0.0-OUT-20261023-025-STATUS-AND-VISIBLE-CONTINUATION.md)
