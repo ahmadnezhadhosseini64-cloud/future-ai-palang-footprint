@@ -374,3 +374,11 @@
 - Recovery next action: re-read canonical audit and Library mirror, compare key fields, apply the accepted minor-difference tolerance, update Library only if needed, then independently read back and reconcile.
 - Library for current version: NOT VERIFIED until post-decision independent write/read-back/match. Buffer and Persistent Memory: NOT VERIFIED. Dropbox: OPEN / NOT VERIFIED and not the active target unless explicitly reopened. External recovery: NOT RUN.
 - Preserve every historical 0.0 anchor. Registration of this event is not proof that mirror synchronization completed or that a background process is continuously running.
+
+
+## Verifiable tests derived from EVT-0115 — 2026-10-23
+- Test plan: [VERIFIABLE-TEST-PLAN-FROM-EVT-0115-2026-10-23](../../architecture/BEHAVIOR-OBSERVATORY/VERIFIABLE-TEST-PLAN-FROM-EVT-0115-2026-10-23.md), Stable ID `PALANG-VERIFIABLE-TEST-PLAN-EVT-0115-2026-10-23-001`, Version 1.0.0.
+- The plan defines ten independently checkable tests covering repository write/read-back, semantic reconciliation, the accepted 7-character tolerance, Library write/read-back, destination-status honesty, restart recovery, scheduled-vs-executed distinction, UTC commit provenance, historical 0.0 preservation, and blocker/retry evidence.
+- Test-plan commit: `a7cf278c41ab552db7453e08ac3f9c98ddca90bf`; actual GitHub commit UTC `2026-10-23T17:27:33Z`; derived Asia/Tehran `2026-10-23T20:57:33+03:30`.
+- Independent read-back of the test plan returned blob SHA `74661f27e0c47b43ed68df8a9d906617fbf3d15b`; the plan content and VTP-10 were present.
+- Status: test plan registered and read-back verified; tests are proposed / NOT RUN unless a row explicitly states partial evidence. Library sync and external recovery remain NOT VERIFIED / NOT RUN. No prior 0.0 anchor is replaced by this addition.
