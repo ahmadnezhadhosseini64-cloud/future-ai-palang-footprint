@@ -1282,3 +1282,13 @@ The queue index and the timestamp case must each be read back after this update.
 - EVT-0115 registration commit UTC: `2026-10-23T17:18:26Z`; derived Tehran: `2026-10-23T20:48:26+03:30`. Commit: `4fdaf1a6045cc5f3331f69b77425a82e3cbbd1df`.
 - Library: NOT VERIFIED for the current version until fresh write/read-back evidence. Buffer/Persistent Memory: NOT VERIFIED. Dropbox: OPEN / NOT VERIFIED. External end-to-end recovery: NOT RUN.
 - Keep all prior 0.0 anchors intact; this queue item does not close any other open workstream.
+
+
+## Verifiable test plan derived from EVT-0115 — 2026-10-23
+| Work item | Purpose | Status | Canonical evidence / next action |
+|---|---|---|---|
+| PALANG-VERIFIABLE-TEST-PLAN-EVT-0115-2026-10-23-001 | Define objective, evidence-backed tests for recovery and destination synchronization | ACTIVE / LIVING / PROPOSED — test plan registered and read back; most tests not yet executed | [Test plan](../BEHAVIOR-OBSERVATORY/VERIFIABLE-TEST-PLAN-FROM-EVT-0115-2026-10-23.md). Run VTP-02/03 first; then attempt Library write/read-back only if required and access permits. Record evidence and do not claim PASS without proof. |
+
+- Test-plan commit: `a7cf278c41ab552db7453e08ac3f9c98ddca90bf`; UTC `2026-10-23T17:27:33Z`; derived Tehran `2026-10-23T20:57:33+03:30`.
+- The plan is a registered architecture artifact, not evidence that synchronization, restart recovery, automation execution, or all destination tests have passed.
+- Preserve all historical 0.0 anchors; this test-plan item does not close EVT-0115 or any other open workstream.
