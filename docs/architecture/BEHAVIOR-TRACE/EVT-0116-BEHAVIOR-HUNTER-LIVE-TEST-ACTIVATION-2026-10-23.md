@@ -69,5 +69,5 @@ Start from EVT-0116 and the test plan. First read back the corrected audit and c
 - Current Library snapshot file ID: `file_00000000422c8230b7b9709a831fd252`; stable Library file ID: `libfile_7ac3c9a6ec14819198eb2751e204aa48`; destination path remains `/Future AI/Palang Footprint/Master Reference Vault/Reference Documents/LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md`.
 - Independent read-back snapshot metadata: modified UTC `2026-10-23T17:39:33.763445Z`; this is file metadata time, not the exact read-back operation time.
 - VTP-02 PASS for semantic key fields in the refreshed mirror; VTP-03 PASS for the agreed length-tolerance rule; VTP-04 PASS for overwrite + independent read-back of this exact artifact/version. No byte-for-byte whole-file equality is claimed.
-- The repository's latest test-plan closure note is commit `2cda88abc61ce00ea458ea3c93e7f716bd517bcd`, blob `3c799d1059e2602974a16a6336b11042e50eef57`.
+- The repository's latest test-plan closure note is commit `ce6c0f7b370932c50be3dcbf21c7dee7baf67e3f`, blob `e6330f9ad69c4d571ad6a23a85286d00c8347c28`.
 - Still open: Behavior Hunter CI run/artifact NOT VERIFIED; host-wide live IN/OUT capture OPEN; VTP-06 and VTP-09 NOT RUN; VTP-07 execution NOT VERIFIED; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external recovery NOT RUN.
