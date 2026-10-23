@@ -106,3 +106,11 @@ NEXT-024 is OPEN and resumable. It preserves NEXT-022 and NEXT-023. No open gate
 ## Latest main-branch verification — run #66
 Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40003897972) SUCCESS; 39 tests OK; tested HEAD `3d7a27f082a1c121cc9f9d0bce53065fbcd0557a`; artifact ID `12523202337`; ZIP SHA-256 `a07abd33e8be8ab73f87ef35a1d3ed2faeeea8e75109b913f659ea9ccad7a92d`. Four manifests were independently downloaded and inspected. The production smoke record resolved one repository file and matched its content SHA-256, while remaining `NOT RUN` with `production_claim_allowed=false`.
 NEXT-024 repository cold-start regression and anchor-chain checks pass on their recorded tested heads. Next active gate is EVT-0122, bidirectional recovery from either IN or OUT; a separate fresh-session recovery and host-wide capture remain unverified.
+
+
+## Successor checkpoint — NEXT-025
+- Current deep excavation request: [IN-027](./PALANG-0.0-IN-20261023-027-DEEP-EXCAVATION-ARCHITECTURE-UPDATE.md) / [OUT-027](./PALANG-0.0-OUT-20261023-027-DEEP-EXCAVATION-ARCHITECTURE-UPDATE.md).
+- Result event: [EVT-0123](../../architecture/BEHAVIOR-TRACE/EVT-0123-DEEP-EXCAVATION-AND-ARCHITECTURE-UPDATE-2026-10-23.md).
+- Repository bidirectional recovery: PASS on run 40005934719, tested SHA `30f0eca4877039409ca3b0eda8643b6f8e0f4634`; see [EVT-0122](../../architecture/BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-RECOVERY-2026-10-23.md).
+- Next active checkpoint: [NEXT-025](./PALANG-0.0-NEXT-20261023-025-FRESH-SESSION-RECOVERY-AND-HISTORIC-CONTINUATION.md); active gate [EVT-0124](../../architecture/BEHAVIOR-TRACE/EVT-0124-FRESH-SESSION-RECOVERY-2026-10-23.md).
+- Fresh-session recovery remains NOT RUN; Issue #20 and Issue #21 remain OPEN. NEXT-024 and all prior checkpoints are preserved, not replaced.
