@@ -143,3 +143,11 @@ Continue collecting observable interaction and evaluator behavior as evidence-ba
 - Generator processes structured records and marks each generated candidate `NOT_RUN` until execution evidence exists. It does not yet capture every live ChatGPT interaction automatically; host adapter and end-to-end recovery remain OPEN.
 - Growth gate: passing tests → evidence review → Child/Rahm proposal → owner approval → Master integration. No automatic Master promotion.
 - Workflow commit: `9d908b15220a9f4a97fd1c56ae32edd393d18196`, UTC `2026-10-23T17:33:36Z`, Tehran `2026-10-23T21:03:36+03:30`. EVT-0116 commit: `b3147c9fb16726eabe77858ec204dc5989907137`, UTC `2026-10-23T17:35:07Z`, Tehran `2026-10-23T21:05:07+03:30`.
+
+
+## 15. حلقهٔ یادگیری آزمون به معماری — EVT-0117
+- [سند مرجع حلقهٔ یادگیری](./TEST-TO-ARCHITECTURE-LEARNING-LOOP-2026-10-23-001.md) — `PALANG-TEST-TO-ARCHITECTURE-LEARNING-LOOP-2026-10-23-001`.
+- [رویداد ممیزی EVT-0117](../BEHAVIOR-TRACE/EVT-0117-ARCHITECTURE-LEARNING-LOOP-AUDIT-2026-10-23.md).
+- Domain expanded beyond Child/Rahm: structure, interfaces, schemas, provenance, recovery, verification, UX, automation, privacy/security, reusable patterns, regression and documentation.
+- PASS, FAIL, BLOCKED, NOT RUN, user correction and source drift can all generate evidence-linked design proposals; no automatic MASTER mutation.
+- Current status: design registered; implementation of insight extraction and its tests pending; CI run/artifact and host-wide capture not verified.
