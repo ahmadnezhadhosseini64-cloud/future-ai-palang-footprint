@@ -118,3 +118,13 @@ The historical VTP-02/03/04 rows and subsequent appendices contain different sta
 | Fresh-session recovery and historical 0.0 preservation | NOT RUN | Must be tested from an independent anchor. |
 
 EVT-0118 supersedes stale forward-looking phrases in EVT-0117 such as “implement extractor” or “extractor PENDING” as current state, while preserving them as historical snapshot. It does not supersede the NOT VERIFIED / OPEN / NOT RUN runtime boundaries.
+
+
+## EVT-0119 — evidence-gate hardening implementation status (2026-10-23)
+
+- Implementation event: [EVT-0119](../BEHAVIOR-TRACE/EVT-0119-BEHAVIOR-HUNTER-EVIDENCE-GATE-HARDENING-2026-10-23.md).
+- Extractor now requires event/stable/version/test identity, observation and known architecture domain; validates evidence objects; for production PASS requires execution_id and source_sha, validates source hash format and locator URI/path shape, rejects placeholder locators, validates counterexample shape, assigns deterministic event/test-derived insight IDs, and rejects duplicate event/test pairs.
+- Fixture mode is explicit and outputs `FIXTURE_ONLY / DEMONSTRATION_ONLY / NONE_FIXTURE_ONLY`; workflow now uses `--source-mode fixture` for committed example outcomes.
+- New regression tests cover missing identity, missing provenance, placeholder evidence, malformed locator/hash, fixture-only governance, duplicates, malformed JSON and non-object records.
+- Current state: files committed; final independent read-back and runtime execution still required. CI run/job/log/artifact: NOT VERIFIED. Locator shape checks do not prove remote artifact resolution.
+- New test gates: `TALL-H01` schema and evidence fields; `TALL-H02` locator resolution and immutable artifact provenance; `TALL-H03` deterministic IDs and duplicate rejection; `TALL-H04` fixture-vs-production segregation; `TALL-H05` actual Actions execution and artifact inspection.
