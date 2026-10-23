@@ -92,3 +92,10 @@ DISCOVERED → CAPTURED → CLASSIFIED → REGISTERED → READ-BACK VERIFIED →
 
 ## 10. Change rule
 این README خودش نسخه‌پذیر است؛ اما تغییرات باید append-only و شاهددار باشند. هر به‌روزرسانی، نسخهٔ قبلی را از تاریخچه حذف نمی‌کند. این دفتر تا رسیدن به شاهد تازه ACTIVE / LIVING می‌ماند؛ هر بار که درس جدید، شکست، تناقض یا تغییر معماری کشف شود، دفتر و آزمون مربوط باید به‌روزرسانی شوند.
+
+
+## Current interaction provenance
+- User input: [IN-019](../../0.0/anchors/PALANG-0.0-IN-20261023-019-LIVING-LESSON-CYCLE.md).
+- Assistant output: [OUT-019](../../0.0/anchors/PALANG-0.0-OUT-20261023-019-LIVING-LESSON-CYCLE.md).
+- Behavior event: [EVT-0107](../BEHAVIOR-TRACE/EVT-0107-LIVING-LESSON-CYCLE-AND-ROLLBACK-GOVERNANCE-2026-10-23.md).
+- Live inbox item: [INBOX-20261023-005](../LIVE-INBOX/entries/INBOX-20261023-005.md).
