@@ -1181,3 +1181,12 @@ The queue index and the timestamp case must each be read back after this update.
 - Result: structural/link checks, graph/timestamp audits, UTC/Tehran pair validation, compilation and durable host-adapter tests passed.
 - Closed gate: repository structural audit for the new lesson registry on the tested commit.
 - Still OPEN: full historical lesson migration, automatic capture/enforcement in every host, and a dedicated rollback/recovery test across components/external destinations.
+
+
+## Living architecture execution — IN-020 / OUT-020 / EVT-0108
+- User request and independent anchors: [IN-020](../../0.0/anchors/PALANG-0.0-IN-20261023-020-LIVING-ARCHITECTURE-EXECUTION-CYCLE.md) / [OUT-020](../../0.0/anchors/PALANG-0.0-OUT-20261023-020-LIVING-ARCHITECTURE-EXECUTION-CYCLE.md).
+- Event tracker: [EVT-0108](../BEHAVIOR-TRACE/EVT-0108-LIVING-ARCHITECTURE-EXECUTION-AND-EVIDENCE-CYCLE-2026-10-23.md).
+- Inbox: [INBOX-20261023-006](../LIVE-INBOX/entries/INBOX-20261023-006.md).
+- Master addendum: [CMIND v1.0.6](../../reference/REFERENCE-DOCUMENTS/CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-MASTER-REFERENCE-2026-10-22-001.md).
+- Work items: historical lesson excavation; operational checks/manual gates; fresh structural audit on reconciled HEAD; bounded rollback/recovery test; host/runtime capture proof.
+- Status: OPEN until corresponding artifacts, tests and post-write read-back are evidenced. Do not repeat previously successful unchanged tests without a material trigger.
