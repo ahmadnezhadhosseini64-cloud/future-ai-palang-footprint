@@ -1207,3 +1207,10 @@ The queue index and the timestamp case must each be read back after this update.
 - [EVT-0109](../BEHAVIOR-TRACE/EVT-0109-CONTROLLED-GIT-ROLLBACK-RECOVERY-TEST-2026-10-23.md) — isolated Git branch rollback PASS; candidate preserved on separate evidence branch.
 - Next recovery gate: cold-start/retrieval test for the HAIF prototype under Issue #20; do not repeat the bounded branch test without a material trigger.
 - Global rollback and external-destination recovery remain OPEN / NOT PROVEN.
+
+
+## ULCG / EVT-0110 — source graph and runtime gates
+- [ULCG master](../../reference/REFERENCE-DOCUMENTS/UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001.md) coordinates existing registration, behavior, memory/recovery and audit contracts without replacing them.
+- [EVT-0110](../BEHAVIOR-TRACE/EVT-0110-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-2026-10-23.md), [LAL-20261023-008](../ARCHITECTURE-LESSONS/lessons/LAL-20261023-008-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE.md), [INBOX-007](../LIVE-INBOX/entries/INBOX-20261023-007.md).
+- Next gates: extend historical source census; validate local links on final HEAD; record full structural audit run + tested SHA; continue Issue #20 runtime schema/reverse-lookup/cold-start recovery.
+- Existing accepted rules remain active within proven scope while runtime and global recovery gates are OPEN.
