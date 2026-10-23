@@ -2,7 +2,7 @@
 
 - Stable ID: PALANG-SOURCE-RULE-COMPONENT-TEST-MAP-2026-10-23-001
 - Production ID: SRCMAP-2026-10-23-001
-- Version: 1.0.0
+- Version: 1.1.0
 - Status: ACTIVE / LIVING / PARTIAL / EVOLVABLE
 - Governing master: [ULCG](../../reference/REFERENCE-DOCUMENTS/UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001.md)
 - Event: [EVT-0110](../BEHAVIOR-TRACE/EVT-0110-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-2026-10-23.md)
@@ -96,3 +96,15 @@
 | [STAR-HCR](../../reference/REFERENCE-DOCUMENTS/SEMANTIC-TIMESTAMP-AUDIT-AND-HOST-CAPTURE-RECOVERY-MASTER-REFERENCE-2026-10-21-001.md) — `SEMANTIC-TIMESTAMP-AUDIT-AND-HOST-CAPTURE-RECOVERY-MASTER-REFERENCE-2026-10-21-001` | UTC semantic audit, producer/runtime connection boundary, destination-specific persistence and cold-start/recovery proof. | Issue #20; timestamp audit; host adapter tests; TIME-BINDING-INT-20261023-023 | Full source fetch confirmed; runtime-wide capture remains NOT PROVEN; cold-start remains OPEN. |
 
 **Interpretation rule:** these are provisional source-family mappings, not final merged laws. Source authority, versions, rule granularity, conflicts and tests must be compared before any equivalence or supersession decision.
+
+
+## Addendum v1.1.0 — clause-level source mapping, batch 2
+
+The companion [SCRTC-B2 crosswalk](./SOURCE-CLAUSE-CROSSWALK-BATCH-2-2026-10-23-001.md) maps five fully fetched canonical sources by blob SHA and section-level rule family:
+- PIATGCG — anchoring, time semantics, graph collisions, destination proof.
+- UIALAC — registration lifecycle, independent destinations, status vocabulary, 0.0 recovery and automation boundary.
+- ICMCRR — Master/Child/Rahm, portable recovery, G-01…G-09 acceptance obligations.
+- H0GLMR — time-bounded historical snapshots, graph collisions, aliases and semantic reconciliation.
+- STAR-HCR — UTC/Tehran semantic audit, runtime capture boundary, destination-specific recovery and cold-start.
+
+This remains provisional source mapping, not final authority adjudication. Existing executable evidence is mapped by scope; host-wide capture remains NOT PROVEN, and Issue #20 / Issue #21 remain OPEN.

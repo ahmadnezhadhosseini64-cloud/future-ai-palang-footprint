@@ -158,3 +158,21 @@ The following canonical source files were fetched in full from main during the N
 - Full source files retrieved in this batch: 5.
 - Cumulative named full-source retrievals: 19 (14 prior + 5 here); this is still not a full repository-tree/history census.
 - Next action: extract exact numbered rules, compare source authority/version and conflicts, link each to components/tests, and preserve ambiguous collisions for adjudication.
+
+
+## Full-source batch 2 — exact read-back identity ledger
+
+The five canonical documents below were independently fetched in full from main during this execution. Blob SHA identifies the exact source content retrieved; this does not imply the complete repository/history census is finished.
+
+| Alias | Canonical path | Blob SHA | Returned characters | Status |
+|---|---|---|---:|---|
+| PIATGCG | `docs/reference/REFERENCE-DOCUMENTS/PERMANENT-INTERACTION-ANCHORING-TIMESTAMP-GOVERNANCE-AND-CANONICAL-GRAPH-MASTER-REFERENCE-2026-10-21-001.md` | `2212b390634a8a9530a3dce15fabd53762e478cd` | 32,006 | FULL SOURCE FETCHED; clause crosswalk provisional |
+| UIALAC | `docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001.md` | `12a37ffb1ba86080abfb39462468ac7c99f8125d` | 25,308 | FULL SOURCE FETCHED; clause crosswalk provisional |
+| ICMCRR | `docs/reference/REFERENCE-DOCUMENTS/INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-REGISTRATION-2026-10-20-001.md` | `438c7c75577800da0b7eb33ca88dc9a743f1e7fd` | 13,449 | FULL SOURCE FETCHED; G-01…G-09 reconciliation OPEN |
+| H0GLMR | `docs/reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-RECONCILIATION-LIVING-MASTER-REFERENCE-2026-10-21-001.md` | `6c746acb5d2ab9edff4b22fe42f8489335c123a3` | 62,106 | FULL SOURCE FETCHED; historical snapshot adjudication OPEN |
+| STAR-HCR | `docs/reference/REFERENCE-DOCUMENTS/SEMANTIC-TIMESTAMP-AUDIT-AND-HOST-CAPTURE-RECOVERY-MASTER-REFERENCE-2026-10-21-001.md` | `cef495e5dc9c27ddfc10dbcb43396a907cdf3c92` | 10,809 | FULL SOURCE FETCHED; runtime proof OPEN |
+
+- Clause mapping: [SCRTC-B2-2026-10-23-001](./SOURCE-CLAUSE-CROSSWALK-BATCH-2-2026-10-23-001.md).
+- Current interaction/event: IN-024 / OUT-024 / EVT-0113.
+- Next action: continue source-authority comparison against the first 14 named sources and capture exact test run IDs/tested SHAs before promoting any rule from provisional to validated.
+- Census state: 19 named full-source fetches cumulatively; this is not a full repository-tree/history enumeration. Issue #21 remains OPEN.

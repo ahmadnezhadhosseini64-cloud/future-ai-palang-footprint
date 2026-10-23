@@ -60,3 +60,12 @@ NEXT-024 is OPEN and resumable. It preserves NEXT-022 and NEXT-023. No open gate
 - [SRCMAP-2026-10-23-001](../../architecture/ARCHITECTURE-LESSONS/SOURCE-RULE-COMPONENT-TEST-MAP-2026-10-23-001.md) now includes provisional rule-family links for all five.
 - Cumulative named full-source fetches: 19. This is not a complete repository-tree/history census; rule-by-rule conflict adjudication remains OPEN.
 - Next immediate action: extract numbered clauses from the five sources, compare against the 14-source batch and ULCG v1.2.1, connect each rule to executable tests, and preserve collisions unresolved until evidence establishes authority.
+
+
+## Execution progress — clause-level crosswalk
+
+- Full-source blob SHAs and lengths are now recorded in [SCRTC-B2](../../architecture/ARCHITECTURE-LESSONS/SOURCE-CLAUSE-CROSSWALK-BATCH-2-2026-10-23-001.md).
+- Provisional source → rule → component → test mappings are drafted for PIATGCG, UIALAC, ICMCRR, H0GLMR and STAR-HCR. This is not semantic conflict adjudication and does not close Issue #21.
+- A new interaction visibility lesson and IN-024/OUT-024 anchors preserve the user correction without replacing CURRENT-023 or NEXT-024.
+- Next: add CI assertions for the new interaction and crosswalk, inspect the resulting audit evidence, then continue numbered-clause adjudication and runtime recovery.
+- New successor: [NEXT-025](./PALANG-0.0-NEXT-20261023-025-SOURCE-RULE-TEST-CROSSWALK-AND-COLD-START.md).

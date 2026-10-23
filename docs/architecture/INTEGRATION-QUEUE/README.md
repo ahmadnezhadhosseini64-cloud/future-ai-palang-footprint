@@ -1260,3 +1260,9 @@ The queue index and the timestamp case must each be read back after this update.
 - Five additional full-source fetches recorded in HALML and SRCMAP: PIATGCG, UIALAC, ICMCRR, H0GLMR, STAR-HCR.
 - This is a meaningful continuation of Issue #21; it does not close the census. Cumulative named fetches are 19, with the full tree/history census and semantic conflict adjudication still OPEN.
 - Next: numbered-clause extraction, conflict/authority crosswalk, source→rule→component→test mapping, then exact-HEAD audit. Runtime/cold-start remains separately OPEN under Issue #20.
+
+
+## Visible continuation / clause-level source crosswalk — 2026-10-23
+- IN-024 / OUT-024 and EVT-0113 / LAL-011 record the user's correction about visible progress and resumable work.
+- [SCRTC-B2](../ARCHITECTURE-LESSONS/SOURCE-CLAUSE-CROSSWALK-BATCH-2-2026-10-23-001.md) maps five full-source fetches (19 named full-source fetches cumulatively) to provisional clauses, components, existing tests and open gates.
+- [NEXT-025](../../0.0/anchors/PALANG-0.0-NEXT-20261023-025-SOURCE-RULE-TEST-CROSSWALK-AND-COLD-START.md) is the next checkpoint. Continue NEXT-024 historic census and Issue #21; continue Issue #20 runtime/cold-start separately. No open gate is closed by this documentation.

@@ -163,7 +163,7 @@ for label, rel in continuity_required.items():
 
 continuity_surfaces = {
     "LEGACY_CURRENT_POINTER": ("checkpoints/PALANG-0.0-CURRENT-2026-10-20-001.md", ("CURRENT-023", "NEXT-024", "HISTORICAL / PRESERVED")),
-    "ULCG_MASTER": ("docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001.md", ("Version: 1.2.1", "CURRENT-023", "NEXT-024", "EVT-0112", "LAL-20261023-010")),
+    "ULCG_MASTER": ("docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001.md", ("Version: 1.2.2", "CURRENT-023", "NEXT-024", "EVT-0112", "LAL-20261023-010")),
     "REFERENCE_INDEX": ("docs/REFERENCE_INDEX.md", ("CURRENT-023", "NEXT-024", "TIME-BINDING-INT-20261023-023")),
     "ZERO_ZERO_REGISTRY": ("docs/0.0/README.md", ("CURRENT-023", "NEXT-024", "IN-023", "OUT-023", "EVT-0112")),
     "SOURCE_RULE_MAP": ("docs/architecture/ARCHITECTURE-LESSONS/SOURCE-RULE-COMPONENT-TEST-MAP-2026-10-23-001.md", ("CURRENT-023", "NEXT-024", "EVT-0112", "LAL-20261023-010")),
@@ -181,6 +181,42 @@ for label, (rel, required_ids) in continuity_surfaces.items():
     for required_id in required_ids:
         if required_id not in content:
             errors.append(f"CONTINUITY_SURFACE_MISSING_ID surface={label} id={required_id}")
+
+# Interaction visibility and clause-level source crosswalk gate.
+# Structural presence/links are not runtime capture or cold-start proof.
+interaction_required = {
+    "current user input IN-024": "docs/0.0/anchors/PALANG-0.0-IN-20261023-024-EXECUTION-VISIBILITY-AND-CONTINUATION.md",
+    "current assistant output OUT-024": "docs/0.0/anchors/PALANG-0.0-OUT-20261023-024-EXECUTION-VISIBILITY-AND-CONTINUATION.md",
+    "visibility event EVT-0113": "docs/architecture/BEHAVIOR-TRACE/EVT-0113-VISIBLE-CONTINUATION-AND-SOURCE-CLAUSE-EXCAVATION-2026-10-23.md",
+    "visibility lesson LAL-011": "docs/architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-011-VISIBLE-CONTINUATION-AND-RESUMABLE-WORK.md",
+    "successor checkpoint NEXT-025": "docs/0.0/anchors/PALANG-0.0-NEXT-20261023-025-SOURCE-RULE-TEST-CROSSWALK-AND-COLD-START.md",
+    "source clause crosswalk batch 2": "docs/architecture/ARCHITECTURE-LESSONS/SOURCE-CLAUSE-CROSSWALK-BATCH-2-2026-10-23-001.md",
+}
+for label, rel in interaction_required.items():
+    if not (ROOT / rel).is_file():
+        errors.append(f"INTERACTION_MISSING_REQUIRED_FILE label={label!r} path={rel}")
+
+interaction_surfaces = {
+    "ULCG_MASTER": ("docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001.md", ("Version: 1.2.2", "IN-024", "OUT-024", "EVT-0113", "LAL-20261023-011", "SCRTC-B2", "NEXT-025")),
+    "REFERENCE_INDEX": ("docs/REFERENCE_INDEX.md", ("IN-024", "OUT-024", "EVT-0113", "LAL-20261023-011", "NEXT-025", "SOURCE-CLAUSE-CROSSWALK-BATCH-2-2026-10-23-001.md")),
+    "ZERO_ZERO_REGISTRY": ("docs/0.0/README.md", ("IN-024", "OUT-024", "EVT-0113", "LAL-20261023-011", "NEXT-025")),
+    "SOURCE_RULE_MAP": ("docs/architecture/ARCHITECTURE-LESSONS/SOURCE-RULE-COMPONENT-TEST-MAP-2026-10-23-001.md", ("Version: 1.1.0", "SCRTC-B2", "PIATGCG", "UIALAC", "ICMCRR", "H0GLMR", "STAR-HCR")),
+    "SOURCE_CLAUSE_MATRIX": ("docs/architecture/ARCHITECTURE-LESSONS/SOURCE-CLAUSE-CROSSWALK-BATCH-2-2026-10-23-001.md", ("SCRTC-B2-2026-10-23-001", "2212b390634a8a9530a3dce15fabd53762e478cd", "12a37ffb1ba86080abfb39462468ac7c99f8125d", "438c7c75577800da0b7eb33ca88dc9a743f1e7fd", "6c746acb5d2ab9edff4b22fe42f8489335c123a3", "cef495e5dc9c27ddfc10dbcb43396a907cdf3c92", "NEXT-025")),
+    "ARCHITECTURE_QUEUE": ("docs/architecture/INTEGRATION-QUEUE/README.md", ("IN-024", "OUT-024", "EVT-0113", "SCRTC-B2", "NEXT-025", "Issue #20", "Issue #21")),
+    "LESSON_REGISTRY": ("docs/architecture/ARCHITECTURE-LESSONS/README.md", ("LAL-20261023-011", "EVT-0113", "NEXT-025")),
+    "BEHAVIOR_TRACE_INDEX": ("docs/architecture/BEHAVIOR-TRACE/README.md", ("EVT-0113", "LAL-20261023-011", "IN-024", "OUT-024", "NEXT-025")),
+    "NEXT_024": ("docs/0.0/anchors/PALANG-0.0-NEXT-20261023-024-CONTINUITY-HISTORIC-AND-COLD-START.md", ("SCRTC-B2", "IN-024", "OUT-024", "NEXT-025", "Issue #20", "Issue #21")),
+    "NEXT_025": ("docs/0.0/anchors/PALANG-0.0-NEXT-20261023-025-SOURCE-RULE-TEST-CROSSWALK-AND-COLD-START.md", ("IN-024", "OUT-024", "EVT-0113", "LAL-20261023-011", "NEXT-022", "NEXT-023", "NEXT-024", "Issue #20", "Issue #21")),
+}
+for label, (rel, required_ids) in interaction_surfaces.items():
+    path = ROOT / rel
+    if not path.is_file():
+        errors.append(f"INTERACTION_SURFACE_MISSING_FILE surface={label} path={rel}")
+        continue
+    content = path.read_text(encoding="utf-8")
+    for required_id in required_ids:
+        if required_id not in content:
+            errors.append(f"INTERACTION_SURFACE_MISSING_ID surface={label} id={required_id}")
 
 print("LIVING_ARCHITECTURE_AUDIT")
 print(f"required_files_checked={len(required)}")
