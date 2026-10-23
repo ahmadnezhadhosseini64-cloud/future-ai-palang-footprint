@@ -9,6 +9,8 @@ on:
       - "scripts/behavior-hunter/**"
       - "docs/architecture/BEHAVIOR-OBSERVATORY/**"
       - "tests/behavior-hunter/**"
+      - "docs/0.0/**"
+      - "docs/architecture/INTEGRATION-QUEUE/**"
       - ".github/workflows/palang-behavior-hunter.yml"
   workflow_dispatch:
 permissions:
@@ -26,6 +28,10 @@ jobs:
           python-version: "3.x"
       - name: Run generator unit tests
         run: python -m unittest discover -s tests/behavior-hunter -v
+      - name: Recover interaction graph starting from IN anchor
+        run: python scripts/behavior-hunter/recover_interaction_graph.py --start IN --output artifacts/behavior-hunter/recovery-from-IN.json
+      - name: Recover interaction graph starting from OUT anchor
+        run: python scripts/behavior-hunter/recover_interaction_graph.py --start OUT --output artifacts/behavior-hunter/recovery-from-OUT.json
       - name: Generate candidate test manifest
         run: python scripts/behavior-hunter/generate_candidate_tests.py --input data/interaction-pairs/interaction-pairs.jsonl --output artifacts/behavior-hunter/candidate-tests.json
       - name: Generate architecture insight candidates from explicit outcome records
