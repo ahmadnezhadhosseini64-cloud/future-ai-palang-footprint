@@ -1448,3 +1448,9 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - Behavior Hunter [40016232651](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40016232651): 67 tests PASS; append-only ledger hash chain verified; both IN/OUT recovery directions PASS.
 - Cross-Layer Integrity Gate [40016232821](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40016232821): PASS.
 - Active queue head [NEXT-028](../../0.0/anchors/PALANG-0.0-NEXT-20261023-028-POST-REPAIR-AUDIT-AND-SEMANTIC-RECONCILIATION.md); semantic collisions/aliases/parent ambiguities and EVT-0089 timezone remain open.
+
+
+## Latest full audit — run 40016726450
+- Audit PASS on SHA `ffc4fb8136cdd4168910f8c0ba58d6619fddfa13`; artifact `12529305164` inspected; SHA-256 `20baa0684f3a99b612b8be6ebf03fc21b381d194ac11bbe51f7a493cb69aa5c6`.
+- Zero missing local links. Graph has 60 Stable ID, 71 Production ID, 7 reference-ID, 30 event-number collision groups, 11 exact duplicate groups, 13 ambiguous parent edges, 11 proposed aliases, and one unresolved timezone.
+- [NEXT-028](../../0.0/anchors/PALANG-0.0-NEXT-20261023-028-POST-REPAIR-AUDIT-AND-SEMANTIC-RECONCILIATION.md) active for source-backed semantic reconciliation; no bulk merge/rename/delete.
