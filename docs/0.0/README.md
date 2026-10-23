@@ -1101,3 +1101,12 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - [EVT-0109](../architecture/BEHAVIOR-TRACE/EVT-0109-CONTROLLED-GIT-ROLLBACK-RECOVERY-TEST-2026-10-23.md) — bounded repository branch rollback evidence.
 - Baseline: beebca722fe52d1d628ecfad85dc480ee18a4d16; simulated candidate: fd5d19385ad3220bf0e8414bed7ad162256d4e1f; candidate retained on evidence branch, test branch restored to baseline.
 - Scope boundary: global/runtime/external rollback remains OPEN / NOT PROVEN.
+
+
+## Universal living component governance — IN-021 / OUT-021 / EVT-0110
+- Input: [IN-021](anchors/PALANG-0.0-IN-20261023-021-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE.md).
+- Output: [OUT-021](anchors/PALANG-0.0-OUT-20261023-021-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE.md).
+- Event: [EVT-0110](../architecture/BEHAVIOR-TRACE/EVT-0110-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-2026-10-23.md).
+- Master: [ULCG](../reference/REFERENCE-DOCUMENTS/UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001.md).
+- Lesson: [LAL-20261023-008](../architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-008-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE.md).
+- Next point: expand source-linked historical lesson/rule census, then structural audit and runtime/cold-start work under Issue #20.
