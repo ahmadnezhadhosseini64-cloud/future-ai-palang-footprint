@@ -563,3 +563,11 @@ Current active gate remains [EVT-0122](../../architecture/BEHAVIOR-TRACE/EVT-012
 - [Run 40014712373](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40014712373): SUCCESS, 67 tests, tested SHA `965713b2ef2ca4873176015128313da9c03c1b48`.
 - Artifact `12527726978` inspected; SHA-256 `6ddf0b23d3f33db2cdfc6cb4b1e7154899bf1477a0466ba5c01a2a3c7325c07b`. Ledger hash chain verified, zero errors; proposal gate owner-gated; both recovery directions RECOVERED.
 - The tested SHA was main HEAD at verification time. Fresh-session recovery NOT RUN; Issues #20/#21 OPEN. Previous architecture versions remain preserved.
+
+
+## Deep repository audit and post-repair continuation — EVT-0127
+- [EVT-0127](../../architecture/BEHAVIOR-TRACE/EVT-0127-DEEP-REPOSITORY-AUDIT-AND-GAP-REGISTER-2026-10-23.md) records the full audit snapshot and independently inspected workflow artifacts.
+- Baseline audit on SHA `5b9169d0313ead50e724cc0e9d6cf366aa539aac`: 2,650 total files, 856 source files, 3,603 local-link edges, 5 missing local links, 60 Stable ID collision groups, 71 Production ID collision groups, 7 reference-ID collision groups, 30 event-number collision groups, 11 exact duplicate groups, 13 ambiguous parent edges, 11 proposed alias edges, and one ambiguous timestamp.
+- The five broken links were corrected using verified repository target paths; post-repair audit must prove the resulting count. Do not close this gate from the edits alone.
+- [NEXT-028](../../0.0/anchors/PALANG-0.0-NEXT-20261023-028-POST-REPAIR-AUDIT-AND-SEMANTIC-RECONCILIATION.md) is the active continuation. Collision reconciliation is source/history-driven and append-only; no mass renaming/merging.
+- [Issue #20](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/20) runtime capture and [Issue #21](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/21) historical census remain OPEN. Fresh-session recovery remains NOT RUN.
