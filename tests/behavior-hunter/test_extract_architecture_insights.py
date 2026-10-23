@@ -129,7 +129,7 @@ class ArchitectureInsightTests(unittest.TestCase):
         self.assertEqual(report["records_rejected"], 0)
         self.assertTrue(all(p["source_event_id"] == "EVT-TEST-117" for p in report["proposals"]))
         self.assertTrue(all(p["master_mutation"] is False for p in report["proposals"]))
-        self.assertEqual(len({p["insight_id"] for p in report["proposals"]}), 1)
+        self.assertEqual(len({p["insight_id"] for p in report["proposals"]}), 4)
 
 
 if __name__ == "__main__":
