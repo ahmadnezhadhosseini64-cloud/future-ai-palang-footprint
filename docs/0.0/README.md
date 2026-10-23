@@ -1166,3 +1166,10 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - Current resumable checkpoint: [NEXT-024 — continuity, historic census and cold-start recovery](./anchors/PALANG-0.0-NEXT-20261023-024-CONTINUITY-HISTORIC-AND-COLD-START.md).
 - Latest resolver proof: [EVT-0120](../architecture/BEHAVIOR-TRACE/EVT-0120-EVIDENCE-LOCATOR-RESOLUTION-AND-COLD-RECOVERY-2026-10-23.md), run #45 SUCCESS, 34 tests OK, artifact ID `12522836550`. One real repository `repo://` locator resolved and content SHA-256 matched; the associated test remains NOT RUN.
 - Next action: fresh repository cold-start reconstruction from NEXT-024 through canonical master, integration queue, EVT-0120, evidence and next action. Keep historical source census / Issue #21 and runtime capture / Issue #20 open; preserve every prior 0.0 anchor.
+
+## Current interaction — IN-026 / OUT-026 and next active gate
+- Input: [IN-026](anchors/PALANG-0.0-IN-20261023-026-REGISTER-ACTIVE-CONTINUATION.md).
+- Output: [OUT-026](anchors/PALANG-0.0-OUT-20261023-026-REGISTER-ACTIVE-CONTINUATION.md).
+- Event: [EVT-0121](../architecture/BEHAVIOR-TRACE/EVT-0121-REGISTER-ACTIVE-CONTINUATION-AND-COLD-START-RESULT-2026-10-23.md).
+- Current checkpoint: [NEXT-024](anchors/PALANG-0.0-NEXT-20261023-024-CONTINUITY-HISTORIC-AND-COLD-START.md); repository cold-start regression PASS on run #53, 38 tests.
+- Next active action: [EVT-0122](../architecture/BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-RECOVERY-2026-10-23.md), bidirectional recovery from either IN or OUT. Separate fresh-session recovery, Issue #20 live capture and Issue #21 historic census remain open.
