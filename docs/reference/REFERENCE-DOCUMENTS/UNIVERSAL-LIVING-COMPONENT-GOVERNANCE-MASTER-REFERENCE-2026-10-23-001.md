@@ -152,3 +152,9 @@ G. Extend rollback testing beyond Git refs only when a concrete runtime/external
 A targeted full-source fetch (not merely search excerpts) succeeded for the following 14 canonical artifacts: Excavation-to-Registration Gate; Automatic Final Registration Orchestrator; Three-Layer Synchronous Durable Registration; Register Command Governing Binding; Three-Level Governed Registration Command; Every Input/Output Anchor governance; Every Interaction Anchor governance; LBAF; Interaction Pair Ledger and Recovery Master; Executable Interaction Ledger Validation Master; Memory Persistence Proof / Archive Recovery Bootstrap; Persistence Continuity / No-Drop Recovery; Historical 0.0 Graph Audit Findings; Palang Living Registration and Anchoring Master. Their exact repository paths are enumerated in the historic lesson migration ledger. This proves retrieval of those 14 named artifacts only, not a complete repository census or semantic reconciliation of every rule.
 
 Next point remains [NEXT-0.0-20261023-022](../../0.0/anchors/PALANG-0.0-NEXT-20261023-022-HISTORIC-SOURCE-GRAPH-EXCAVATION.md). The next pass must extract and map each source's actual rules, compare overlaps/conflicts, identify related tests and dependencies, and keep uncertain equivalence unresolved.
+
+
+## Addendum v1.0.3 — repository read-back and evidence checkpoint
+- Named artifacts and cross-surface registries were fetched back; see [VERIFY-INT-20261023-021](../../architecture/BEHAVIOR-TRACE/VERIFICATION-CHECKPOINT-INT-20261023-021.md).
+- Time provenance: [TIME-BINDING-INT-20261023-021](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261023-021.md).
+- Current status supersedes the initial pending-readback note: REGISTERED / REPOSITORY READ-BACK VERIFIED for the named artifact set. Full structural audit on exact final HEAD remains OPEN / NOT CONFIRMED; full historical census and runtime/cold-start recovery remain OPEN.
