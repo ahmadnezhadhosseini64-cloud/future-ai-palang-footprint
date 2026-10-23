@@ -158,3 +158,9 @@ Next point remains [NEXT-0.0-20261023-022](../../0.0/anchors/PALANG-0.0-NEXT-202
 - Named artifacts and cross-surface registries were fetched back; see [VERIFY-INT-20261023-021](../../architecture/BEHAVIOR-TRACE/VERIFICATION-CHECKPOINT-INT-20261023-021.md).
 - Time provenance: [TIME-BINDING-INT-20261023-021](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261023-021.md).
 - Current status supersedes the initial pending-readback note: REGISTERED / REPOSITORY READ-BACK VERIFIED for the named artifact set. Full structural audit on exact final HEAD remains OPEN / NOT CONFIRMED; full historical census and runtime/cold-start recovery remain OPEN.
+
+
+## Addendum v1.0.4 — independent historic-census tracking
+- Full historical lesson/rule/source graph census is now independently tracked as [Issue #21](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/21).
+- Runtime/cold-start remains independently tracked as [Issue #20](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/20).
+- The two tracks are related but not interchangeable: Issue #21 governs source discovery/semantic mapping; Issue #20 governs implementation and runtime/recovery proof. Keep both OPEN until their own acceptance criteria pass.
