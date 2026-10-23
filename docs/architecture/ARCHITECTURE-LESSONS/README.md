@@ -164,3 +164,8 @@ State: six source-linked lesson files have been created and fetched back; this d
 ## Source-to-rule-component-test graph
 - [SRCMAP-2026-10-23-001](./SOURCE-RULE-COMPONENT-TEST-MAP-2026-10-23-001.md) maps the first verified source batch to operational rules, components, test evidence and gaps.
 - It is a partial source graph, not a claim of complete lesson census.
+
+
+## Current point 0 lesson — LAL-20261023-010
+- [LAL-20261023-010](./lessons/LAL-20261023-010-CURRENT-POINT-AND-NEXT-CHECKPOINT.md) — the current interaction becomes a recoverable point 0; NEXT-024 is the next 0.0; previous checkpoints and open work remain linked and open.
+- Event: [EVT-0112](../BEHAVIOR-TRACE/EVT-0112-CURRENT-POINT-0-AND-NEXT-0.0-2026-10-23.md); anchors: [IN-023](../../0.0/anchors/PALANG-0.0-IN-20261023-023-REGISTER-CURRENT-POINT-0.md) / [OUT-023](../../0.0/anchors/PALANG-0.0-OUT-20261023-023-REGISTER-CURRENT-POINT-0.md).
