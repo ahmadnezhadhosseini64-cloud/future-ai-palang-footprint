@@ -1156,3 +1156,7 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - [IN-025](anchors/PALANG-0.0-IN-20261023-025-STATUS-AND-VISIBLE-CONTINUATION.md) ↔ [OUT-025](anchors/PALANG-0.0-OUT-20261023-025-STATUS-AND-VISIBLE-CONTINUATION.md).
 - [EVT-0114](../architecture/BEHAVIOR-TRACE/EVT-0114-STATUS-TRANSPARENCY-AND-RESUMABLE-EXECUTION-2026-10-23.md) / [LAL-20261023-012](../architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-012-STATUS-TRANSPARENCY-AND-RESUMABLE-EXECUTION.md).
 - CURRENT-023 remains current point 0; NEXT-025 remains next 0.0. Historic source census and runtime/cold-start tracks remain open.
+
+
+## Time binding for IN-025 / OUT-025
+- [TIME-BINDING-INT-20261023-025](../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261023-025.md) records actual repository commit timestamps in UTC and their Tehran equivalents; it does not infer message timestamps.
