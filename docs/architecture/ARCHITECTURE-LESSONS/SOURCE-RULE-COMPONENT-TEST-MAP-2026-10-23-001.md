@@ -54,3 +54,9 @@
 - Bounded repository rollback test: [EVT-0109](../BEHAVIOR-TRACE/EVT-0109-CONTROLLED-GIT-ROLLBACK-RECOVERY-TEST-2026-10-23.md).
 - Governing lesson: [LAL-20261023-007](./lessons/LAL-20261023-007-ROLLBACK-AS-NEW-LINEAGE-EVENT.md).
 - Result: PASS for isolated Git branch restoration and evidence-branch preservation only. Runtime/cold-start/global/external recovery remain OPEN / NOT PROVEN under Issue #20.
+
+
+## Addendum v1.0.3 — rollback lineage CI evidence
+- Living Architecture Audit [run 39900157186](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39900157186) passed on tested commit `ebf95aeb2cdf22b142ea95a3496d2b80830a9133` with explicit EVT-0109/LAL-007 presence and link checks.
+- PR #23 merge commit: `41288a3a5d12e0b1ccd1213d54ad57703a3e5a79` (2026-10-23T04:25:03Z / 2026-10-23T07:55:03+03:30).
+- This validates repository graph enforcement in the tested tree; it does not extend EVT-0109's bounded Git-ref rollback result into global/runtime recovery proof.
