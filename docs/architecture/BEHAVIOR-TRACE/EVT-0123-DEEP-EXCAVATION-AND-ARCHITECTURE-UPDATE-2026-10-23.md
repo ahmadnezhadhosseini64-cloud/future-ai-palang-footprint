@@ -31,3 +31,10 @@
 
 ## Decision
 Keep EVT-0122 as a successful repository-recovery gate for its tested SHA. Activate EVT-0124 as the next separate fresh-session recovery gate. Preserve earlier 0.0 checkpoints, failure lineage and all open gaps; no historic item is deleted or silently closed.
+
+
+## Final current-main verification — run 40006695072
+- [GitHub Actions run 40006695072](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40006695072): SUCCESS; 47 tests passed on tested/current-main SHA `a758e7a9e8a4b1a5d67e99de4bc61fdf20baeec6` at verification time.
+- Artifact ID `12524027911`; downloaded and inspected; ZIP SHA-256 `e50599d8caba53d3cf26a0ec2be3534a07637152f48d30311d74bc3e7c73eb52`.
+- Both recovery manifests: `RECOVERED`, zero failures; Issue #20 and Issue #21 remain OPEN.
+- Two interim runs failed because the existing cold-start regression still asserted the old EVT-0122 status `IMPLEMENTATION-PENDING` after the gate had been implemented and verified. The assertion was updated to require `IMPLEMENTED-IN-REPOSITORY` and `FRESH-SESSION-NOT-RUN`; the subsequent 47-test run passed. This is preserved as a stale-regression-assertion lesson, not hidden.
