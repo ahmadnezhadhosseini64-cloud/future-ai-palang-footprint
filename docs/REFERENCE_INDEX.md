@@ -738,3 +738,7 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 
 ## Verification checkpoint — INT-20261023-020
 - [VERIFY-INT-20261023-020](architecture/BEHAVIOR-TRACE/VERIFICATION-CHECKPOINT-INT-20261023-020.md) — read-back SHA ledger, evidence-gate scope and explicit open gates.
+
+
+## Controlled rollback evidence — EVT-0109
+- [EVT-0109](architecture/BEHAVIOR-TRACE/EVT-0109-CONTROLLED-GIT-ROLLBACK-RECOVERY-TEST-2026-10-23.md) — isolated Git branch rollback passed; candidate preserved on evidence branch; global/runtime recovery remains OPEN.
