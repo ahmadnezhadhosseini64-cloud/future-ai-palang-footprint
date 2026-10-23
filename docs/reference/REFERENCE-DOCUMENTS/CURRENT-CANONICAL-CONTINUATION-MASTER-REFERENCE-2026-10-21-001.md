@@ -501,3 +501,11 @@ Current active gate remains [EVT-0122](../../architecture/BEHAVIOR-TRACE/EVT-012
 - Artifact was downloaded and inspected. `recovery-from-IN.json`: `RECOVERED`, IN-026 → OUT-026, zero failures. `recovery-from-OUT.json`: `RECOVERED`, OUT-026 → IN-026, zero failures. Both preserve Issue #20 and Issue #21 as OPEN.
 - Run `40005682381` failed before this correction because the anchor pair identity and EVT-0122's direct canonical graph bindings were missing. Those gaps were corrected; the failed run is preserved as evidence, not hidden.
 - Boundary: this proves repository-state recovery on the tested SHA only. A separate fresh ChatGPT session, host-wide capture, and external persistence remain NOT RUN / NOT PROVEN.
+
+
+## Deep excavation continuation — EVT-0123 / NEXT-025
+- Current request anchors: [IN-027](../../0.0/anchors/PALANG-0.0-IN-20261023-027-DEEP-EXCAVATION-ARCHITECTURE-UPDATE.md) / [OUT-027](../../0.0/anchors/PALANG-0.0-OUT-20261023-027-DEEP-EXCAVATION-ARCHITECTURE-UPDATE.md).
+- Excavation event: [EVT-0123](../../architecture/BEHAVIOR-TRACE/EVT-0123-DEEP-EXCAVATION-AND-ARCHITECTURE-UPDATE-2026-10-23.md).
+- Next active gate: [EVT-0124 fresh-session recovery](../../architecture/BEHAVIOR-TRACE/EVT-0124-FRESH-SESSION-RECOVERY-2026-10-23.md), checkpoint [NEXT-025](../../0.0/anchors/PALANG-0.0-NEXT-20261023-025-FRESH-SESSION-RECOVERY-AND-HISTORIC-CONTINUATION.md).
+- EVT-0122 repository recovery is PASS only for run 40005934719 / tested SHA `30f0eca4877039409ca3b0eda8643b6f8e0f4634`; fresh-session recovery remains NOT RUN. Issue #20 and Issue #21 remain OPEN.
+- Earlier 0.0 anchors remain preserved; this is an append-only continuation update.
