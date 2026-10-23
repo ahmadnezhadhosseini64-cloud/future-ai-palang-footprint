@@ -431,3 +431,10 @@
 - Added TALL-T01..TALL-T10 covering extractor validation, PASS/FAIL/BLOCKED/NOT RUN learning, source provenance, CI manifests, architecture breadth, host capture and post-integration verification.
 - The new code, tests, fixture and workflow were independently fetched after registration. This proves repository presence/read-back, not that Python tests or CI actually executed.
 - Latest status: design and code REGISTERED / READ-BACK VERIFIED; CI run/artifact NOT VERIFIED; host-wide live capture OPEN; restart recovery and end-to-end 0.0 preservation NOT RUN. No claims of runtime PASS.
+
+
+## Second Behavior Hunter hammer audit — EVT-0118 (2026-10-23)
+- [EVT-0118](../../architecture/BEHAVIOR-TRACE/EVT-0118-PALANG-BEHAVIOR-HUNTER-SECOND-HAMMER-AUDIT-2026-10-23.md) is the current resume anchor for the second audit of the full TALL/Behavior Hunter output.
+- Findings: repository artifacts are read-back verified; design is registered; the extractor's PASS evidence check is too shallow; schema/duplicate-ID validation is incomplete; fixture outcomes are illustrative only; CI runtime/artifact is not verified; live host capture is open; restart/0.0 end-to-end is not run.
+- Test-plan/EVT history contains contradictory/stale status paragraphs; preserve history but follow the explicit current-state reconciliation in the VTP addendum and EVT-0118.
+- Next gates TALL-H01..H10: strict schema/provenance, fixture-vs-production labeling, deterministic IDs, actual CI job/artifact evidence, status reconciliation, host capture, and fresh-session recovery. No automatic MASTER promotion.
