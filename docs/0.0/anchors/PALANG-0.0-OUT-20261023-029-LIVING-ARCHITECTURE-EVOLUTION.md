@@ -40,3 +40,9 @@
 - Proposal gate remains READY_FOR_OWNER_REVIEW; evidence VERIFIED; fixture owner decision PENDING; promotion and canonical mutation false.
 - Both recovery directions RECOVERED with zero failures; separate fresh-session recovery NOT RUN; host-wide capture/external persistence NOT PROVEN.
 - The two interim failures during hash-chain hardening were preserved and corrected; see EVT-0126.
+
+
+## Deep audit successor — EVT-0127 / NEXT-028
+- [EVT-0127](../../architecture/BEHAVIOR-TRACE/EVT-0127-DEEP-REPOSITORY-AUDIT-AND-GAP-REGISTER-2026-10-23.md) records the actual repository audit results and the five source-grounded link repairs.
+- [NEXT-028](./PALANG-0.0-NEXT-20261023-028-POST-REPAIR-AUDIT-AND-SEMANTIC-RECONCILIATION.md) is the active successor; post-repair audit pending.
+- Collision groups and semantic aliases remain review-only; no historical IDs or files were bulk-renamed or deleted.
