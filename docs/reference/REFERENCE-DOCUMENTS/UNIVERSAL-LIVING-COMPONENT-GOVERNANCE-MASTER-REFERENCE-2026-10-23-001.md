@@ -2,7 +2,7 @@
 
 - Stable ID: PALANG-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-2026-10-23-001
 - Production ID: ULCG-HAIF-2026-10-23-001
-- Version: 1.2.2
+- Version: 1.2.3
 - Lifecycle: ACTIVE / LIVING / APPEND-ONLY / EVOLVABLE
 - Evidence state: REGISTERED / READ-BACK VERIFIED on main for v1.2.1; fresh full audit on the exact final main HEAD remains OPEN
 - Canonical clock: actual repository commit timestamp in UTC; Tehran equivalent is the same instant +03:30
@@ -298,3 +298,13 @@ Five more canonical sources have been fetched in full and provisionally mapped: 
 - Next 0.0 checkpoint: [NEXT-025](../../0.0/anchors/PALANG-0.0-NEXT-20261023-025-SOURCE-RULE-TEST-CROSSWALK-AND-COLD-START.md). Prior NEXT-022, NEXT-023 and NEXT-024 remain preserved.
 - Operational rule: do not imply unattended work during silence. Execute bounded work units in the active turn, expose durable milestones and evidence, and preserve the prior queue.
 - The five-source clause mapping is PROVISIONAL. Full repository/history census and semantic conflict adjudication remain OPEN under Issue #21. Runtime/cold-start acceptance remains OPEN under Issue #20. No source is marked superseded by this addendum.
+
+
+### Addendum v1.2.3 — status visibility and interaction IN-025 / OUT-025
+
+- The user's concern about invisible progress is registered as [IN-025](../../0.0/anchors/PALANG-0.0-IN-20261023-025-STATUS-AND-VISIBLE-CONTINUATION.md) and the response as [OUT-025](../../0.0/anchors/PALANG-0.0-OUT-20261023-025-STATUS-AND-VISIBLE-CONTINUATION.md).
+- Event and lesson: [EVT-0114](../../architecture/BEHAVIOR-TRACE/EVT-0114-STATUS-TRANSPARENCY-AND-RESUMABLE-EXECUTION-2026-10-23.md) / [LAL-20261023-012](../../architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-012-STATUS-TRANSPARENCY-AND-RESUMABLE-EXECUTION.md).
+- CURRENT-023 remains the user's requested current point 0; NEXT-025 remains the next 0.0 work checkpoint. This later status interaction does not replace either.
+- Progress visibility is now an explicit governance requirement: expose bounded milestones, identify what was actually changed/read back/tested, distinguish in-progress from complete, and never imply unattended background work.
+- The prior execution queue remains active: finish clause-level source mapping and its CI checks, continue Issue #21 historical census, continue Issue #20 runtime/cold-start recovery, then seek a fresh full audit tied to the exact final-main SHA.
+- This addendum does not claim the current branch has merged, that runtime capture is globally automatic, or that cold-start and external destinations have passed.
