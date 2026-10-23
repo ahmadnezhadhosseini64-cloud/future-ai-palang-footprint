@@ -1049,3 +1049,13 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - **Live Inbox:** [INBOX-20261022-004](../architecture/LIVE-INBOX/entries/INBOX-20261022-004.md).
 - **Living master:** [CMIND — ادامه از مدل اولیه، نه Dropbox](../reference/REFERENCE-DOCUMENTS/CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-MASTER-REFERENCE-2026-10-22-001.md).
 - **Next step:** Issue #20 — candidate extraction from IN/OUT, evidence labels, ID uniqueness/collision regression, master/inbox/queue linkage, and fresh-process recovery from INT/IN/OUT. Local prototype tests passed; production capture remains OPEN / NOT PROVEN. Dropbox remains independent OPEN / WAITING.
+
+
+## لنگر ادامهٔ اجرایی HAIF — 2026-10-23
+- ورودی مستقل: [IN-018](anchors/PALANG-0.0-IN-20261023-018-RESUME-HAIF-EXECUTION.md).
+- خروجی مستقل: [OUT-018](anchors/PALANG-0.0-OUT-20261023-018-RESUME-HAIF-EXECUTION.md).
+- رویداد رفتارشناسی: [EVT-0106](../architecture/BEHAVIOR-TRACE/EVT-0106-RESUME-HAIF-EXECUTION-NOT-DROPBOX-2026-10-23.md).
+- سند مادر حاکم: [CMIND — ادامه از مدل اولیه، نه Dropbox](../reference/REFERENCE-DOCUMENTS/CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-MASTER-REFERENCE-2026-10-22-001.md).
+- وضعیت: سه پرونده در مخزن ایجاد و با fetch مستقل بازخوانی شدند؛ شناسه‌ها و پیوندهای IN/OUT/EVT تطبیق دارند. آزمون تازهٔ ingest/restart در این نوبت اجرا نشده است.
+- زمان‌های canonical بر مبنای commit واقعی UTC: IN-018 2026-10-23T01:23:43Z / تهران 04:53:43+03:30; OUT-018 2026-10-23T01:23:46Z / تهران 04:53:46+03:30; EVT-0106 2026-10-23T01:23:48Z / تهران 04:53:48+03:30.
+- گام بعد: بررسی importer، schema و آزمون‌ها؛ سپس آزمون کنترل‌شدهٔ ingest و بازیابی پس از شروع مجدد، با ثبت شواهد. شاخهٔ Dropbox همچنان مستقل و خارج از دامنه است.
