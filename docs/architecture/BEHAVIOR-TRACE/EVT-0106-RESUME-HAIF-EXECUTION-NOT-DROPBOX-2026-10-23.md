@@ -7,7 +7,7 @@
 - Parent master: [CMIND](../../reference/REFERENCE-DOCUMENTS/CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-MASTER-REFERENCE-2026-10-22-001.md)
 - Input: [IN-018](../../0.0/anchors/PALANG-0.0-IN-20261023-018-RESUME-HAIF-EXECUTION.md)
 - Output: [OUT-018](../../0.0/anchors/PALANG-0.0-OUT-20261023-018-RESUME-HAIF-EXECUTION.md)
-- Product master: [HAIF extractable interaction model](../../مدل%20اولیه%20AI/سند%20مرجع%20مادر%20—%20الگوریتم%20استخراج%20مدل%20و%20محصول%20رایگان%20HAIF.md)
+- Product master: [HAIF extractable interaction model](../مدل%20اولیه%20AI/سند%20مرجع%20مادر%20—%20الگوریتم%20استخراج%20مدل%20و%20محصول%20رایگان%20HAIF.md)
 - Status: EVENT DOCUMENT CREATED; read-back pending.
 - Exact event time: not independently captured; use actual repository commit time as canonical registration time after commit, not as user-message time.
 
