@@ -38,3 +38,12 @@ The request means the canonical master and continuation state must be actually r
 
 ## Next active action
 EVT-0122 is now ACTIVE: implement and test bidirectional recovery from either IN or OUT to the paired anchor, event, canonical master, queue, evidence, open gaps and next action. After that, conduct a separate fresh-session recovery test. Preserve every prior 0.0 point and do not repeat closed tests unless a material change warrants it.
+
+
+## Latest anchor-chain regression verification — run #60
+- Run [#60](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40003479619), tested HEAD `11a8c4808491818df5cb8bf4bb6c3ca992687d95`: SUCCESS; **39 tests ran; OK**.
+- The added current-request test verifies IN-026 explicitly points to OUT-026, both link to EVT-0121, NEXT-024 links IN/OUT/EVT-0121/EVT-0122, the canonical master contains EVT-0121/EVT-0122, and the queue contains the active bidirectional recovery gate.
+- Artifact ID `12521744939`; ZIP SHA-256 `d4a9f7e53019e4eddd730da42743313240feaa771d31665f69d57d17628d08e9`; downloaded and all four manifests inspected.
+- Production smoke remains truthful: one repository evidence locator RESOLVED with matching SHA-256, but record `test_result=NOT RUN` and `production_claim_allowed=false`.
+- Run #59 failed because IN-026 lacked the paired-output link. The link was added and the regression now checks it; run #60 passed. Preserve this as a real architecture-integrity lesson.
+- Current status: repository anchor chain and NEXT-024 cold-start regression PASS for the tested HEAD. Separate fresh ChatGPT session and bidirectional runtime recovery remain NOT RUN. EVT-0122 remains the active next step.
