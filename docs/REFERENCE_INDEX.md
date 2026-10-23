@@ -783,3 +783,9 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - Current point 0: [CURRENT-023](0.0/anchors/PALANG-0.0-CURRENT-20261023-023-USER-CHECKPOINT-AND-CONTINUATION.md).
 - Next 0.0: [NEXT-024](0.0/anchors/PALANG-0.0-NEXT-20261023-024-CONTINUITY-HISTORIC-AND-COLD-START.md).
 - The former pointer [PALANG-0.0-CURRENT-2026-10-20-001](../checkpoints/PALANG-0.0-CURRENT-2026-10-20-001.md) remains a preserved historical anchor and explicitly points forward to CURRENT-023.
+
+
+## Historical source census — batch 2
+- Five additional full canonical sources retrieved and provisionally mapped: [PIATGCG](reference/REFERENCE-DOCUMENTS/PERMANENT-INTERACTION-ANCHORING-TIMESTAMP-GOVERNANCE-AND-CANONICAL-GRAPH-MASTER-REFERENCE-2026-10-21-001.md), [UIALAC](reference/REFERENCE-DOCUMENTS/UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001.md), [ICMCRR](reference/REFERENCE-DOCUMENTS/INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-REGISTRATION-2026-10-20-001.md), [H0GLMR](reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-RECONCILIATION-LIVING-MASTER-REFERENCE-2026-10-21-001.md), and [STAR-HCR](reference/REFERENCE-DOCUMENTS/SEMANTIC-TIMESTAMP-AUDIT-AND-HOST-CAPTURE-RECOVERY-MASTER-REFERENCE-2026-10-21-001.md).
+- Full-source evidence and blob SHAs are in the [historic migration ledger](architecture/ARCHITECTURE-LESSONS/HISTORIC-LESSON-MIGRATION-LEDGER-2026-10-23-001.md); provisional rule mapping is in [SRCMAP](architecture/ARCHITECTURE-LESSONS/SOURCE-RULE-COMPONENT-TEST-MAP-2026-10-23-001.md).
+- Cumulative named full-source fetches: 19; complete tree/history census and semantic reconciliation remain OPEN under Issue #21.
