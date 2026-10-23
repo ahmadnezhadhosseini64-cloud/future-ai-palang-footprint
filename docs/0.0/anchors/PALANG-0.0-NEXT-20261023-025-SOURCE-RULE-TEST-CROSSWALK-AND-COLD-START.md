@@ -28,3 +28,9 @@
 - All affected indexes and the living master link the new graph.
 - Structural CI passes on exact candidate; full audit on final main is separately confirmed.
 - Runtime-wide capture and cold-start remain NOT PROVEN until their own tests pass.
+
+
+## Latest visibility feedback — IN-025 / OUT-025
+- [IN-025](PALANG-0.0-IN-20261023-025-STATUS-AND-VISIBLE-CONTINUATION.md) / [OUT-025](PALANG-0.0-OUT-20261023-025-STATUS-AND-VISIBLE-CONTINUATION.md); [EVT-0114](../../architecture/BEHAVIOR-TRACE/EVT-0114-STATUS-TRANSPARENCY-AND-RESUMABLE-EXECUTION-2026-10-23.md) / [LAL-20261023-012](../../architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-012-STATUS-TRANSPARENCY-AND-RESUMABLE-EXECUTION.md).
+- CURRENT-023 stays the current point 0. NEXT-025 stays the next 0.0 and this file remains the executable continuation queue.
+- Visibility requirement: report each bounded milestone with changed paths, read-back, test evidence and remaining gaps. Do not claim silent background execution.
