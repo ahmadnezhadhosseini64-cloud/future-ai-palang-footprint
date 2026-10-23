@@ -59,3 +59,15 @@ Execute [NEXT-0.0-20261023-022](../../0.0/anchors/PALANG-0.0-NEXT-20261023-022-H
 ## 6. Timestamp integrity
 
 The exact message timestamps for user IN-021 and assistant OUT-021 are not available from repository evidence. The repository canonical timestamps are listed separately in [TIME-BINDING-INT-20261023-021](./TIME-BINDING-INT-20261023-021.md); they must not be substituted for message times.
+
+
+## Addendum v1.0.1 — final status reconciliation after master/event updates
+
+Latest read-back values supersede the earlier rows above:
+- ULCG master v1.0.3 blob SHA: `10227d579457d570b0786c64e31e8a90c92f236f`.
+- EVT-0110 v1.0.1 blob SHA: `973780eeb93bc893840225551f92d4b919029e8d`.
+- CMIND v1.1.2 blob SHA: `739175fdf6c81a0f0d4892b4223ef1753816a061`.
+- Time binding v1.0.0 blob SHA: `a8597a9a29bacec3a3a3bae30eebe8e97dc24f96`.
+- The initial checkpoint's own blob SHA was `66509f4e02066632be07985b82fda82f83fbf394`; this addendum is an append-only successor and the new commit timestamp must be entered in the time-binding ledger.
+- Current ULCG state: REGISTERED / REPOSITORY READ-BACK VERIFIED for named artifacts; ACTIVE/LIVING as a governance contract. It does not assert full-tree completeness or runtime automation.
+- Full structural audit on the exact final reconciled HEAD remains OPEN / NOT CONFIRMED. The latest observed Evidence Gate artifact tests commit `f87cb3f9422afa4c4fc527b4960b8b9a5c280d8f`, not the generated evidence-record commit and not a full structural audit.
