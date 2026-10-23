@@ -91,3 +91,10 @@ The canonical targets for all six normalized lessons were fetched independently 
 - Latest Evidence Gate run observed: [39888263364](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39888263364), tested commit e8b6aded752dd3456c8dbb9910b1deab1d51c283. Its durable artifact reports Stable Retrieval Core VERIFIED and Independent Automated Execution PROVEN.
 - This Evidence Gate does not equal a full structural/link audit. The latest full structural audit status for the final post-normalization head remains NOT CONFIRMED from the available run evidence; keep that gate OPEN until its exact run/commit result is inspected.
 - No controlled global rollback/recovery exercise was run. Its status remains OPEN / NOT RUN.
+
+
+## Controlled rollback/recovery test — post-checkpoint execution
+- [EVT-0109](./EVT-0109-CONTROLLED-GIT-ROLLBACK-RECOVERY-TEST-2026-10-23.md) records a real isolated branch rollback test.
+- Baseline beebca722fe52d1d628ecfad85dc480ee18a4d16; candidate commit fd5d19385ad3220bf0e8414bed7ad162256d4e1f.
+- Verification: candidate absent from restored test branch (expected 404), candidate present on evidence branch, and baseline time-binding file retrievable after restoration. All three checks PASS.
+- Scope boundary: this closes only the bounded Git-ref rollback test. Full runtime/cold-start/external recovery remains OPEN / NOT PROVEN. A fresh structural audit of the latest integrated HEAD remains OPEN / NOT CONFIRMED.
