@@ -5,7 +5,7 @@
 - Production ID: IN-028
 - Interaction pair ID: INT-20261023-028
 - Version: 1.0.0
-- Status: REGISTERED / READ-BACK VERIFICATION PENDING
+- Status: REGISTERED / READ-BACK VERIFIED
 - Canonical time rule: repository commit UTC is authoritative; Tehran is derived from the same instant.
 - Prior checkpoint: [NEXT-025](./PALANG-0.0-NEXT-20261023-025-FRESH-SESSION-RECOVERY-AND-HISTORIC-CONTINUATION.md)
 - Result event: [EVT-0125](../../architecture/BEHAVIOR-TRACE/EVT-0125-LIVING-ARCHITECTURE-UPDATE-CAPABILITY-2026-10-23.md)
