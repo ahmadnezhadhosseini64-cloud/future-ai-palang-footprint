@@ -34,3 +34,10 @@
 - The isolated rollback branch-ref operation time was not captured; prior commit times are not substituted for it.
 - The generated Evidence Gate artifact commits are not the same as the tested source commit timestamps.
 - This ledger lists the latest known change for each named artifact at this checkpoint; any subsequent update requires a successor row/version. The timestamp of this file's own commit will be recorded by its successor if a new version is required.
+
+
+## Addendum v1.0.1 — final checkpoint timestamp
+- Verification checkpoint successor: [54a71cd](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/54a71cdeb5ff692fd2761d36bac4aca5099b11cc), canonical UTC `2026-10-23T04:10:40Z`, Tehran equivalent `2026-10-23T07:40:40+03:30`.
+- Initial time-binding v1.0.0 commit: [f1fb511](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/f1fb5114fe99b41648b05eb86815c367134bae90), canonical UTC `2026-10-23T04:10:19Z`, Tehran equivalent `2026-10-23T07:40:19+03:30`.
+- The checkpoint v1.0.1 blob SHA after read-back is `4ca9607f4a7af384bcb4e8527ca7f6ccf200c73a`.
+- This is a successor entry; prior timestamp rows and versions remain preserved. The time-binding file's own latest successor commit timestamp can be recorded by a later successor if this ledger is revised again.
