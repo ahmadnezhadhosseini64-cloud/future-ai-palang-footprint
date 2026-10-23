@@ -229,3 +229,33 @@ Resume from this CMIND master → [EVT-0093](../../architecture/BEHAVIOR-TRACE/E
 - Current status of this addendum: intended to become REGISTERED / READ-BACK VERIFIED only after the exact file, index, queue, inbox and event are fetched back and matched.
 
 - Timestamp binding for this interaction chain: [TIME-BINDING-INT-20261022-017](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-017.md) — actual UTC commit timestamps and derived Asia/Tehran equivalents; message and generation timestamps remain unknown.
+
+
+## Addendum v1.0.5 — Living Architecture Lessons, Verification and Recoverable Evolution (2026-10-23)
+
+### New canonical lesson layer
+- Dedicated registry: [ARCHITECTURE-LESSONS](../../architecture/ARCHITECTURE-LESSONS/README.md).
+- Lesson: [LAL-20261023-001](../../architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-001-LIVING-APPEND-ONLY-VERIFY-RECOVER-CYCLE.md).
+- Event: [EVT-0107](../../architecture/BEHAVIOR-TRACE/EVT-0107-LIVING-LESSON-CYCLE-AND-ROLLBACK-GOVERNANCE-2026-10-23.md).
+- This addendum is additive. Previous CMIND content and all previous versions remain intact and retrievable.
+
+### Permanent operating cycle
+DISCOVER → CAPTURE → CLASSIFY → REGISTER → READ-BACK → OPERATIONALIZE → TEST → VALIDATE → INTEGRATE → ACTIVATE → MONITOR/REASSESS → VERSION SUCCESSOR.
+
+For a failure: preserve the failing version and evidence; stop promotion; identify the last verified baseline; restore or branch from that exact version; rerun relevant tests; register recovery evidence; continue only from the verified state. Never overwrite the previous version or erase the reason for rollback.
+
+### Applies to
+Every architecture lesson, rule, document, schema, code component, test, anchor, index, queue, connection, checkpoint and persistence adapter. Each material artifact must have identity, provenance, version lineage, status, test/evidence boundaries, retrieval path, affected-component links and a recovery route.
+
+### Verification and anti-redundancy
+Revalidate after meaningful changes, deployment/runtime changes, errors, regressions, contradictory evidence or recovery. Do not repeat a closed successful test without a material trigger; preserve and reuse valid evidence. Structural audits do not prove runtime behavior.
+
+### Honest current boundary
+The registry and first lesson are registered in the repository. This does not yet prove automatic capture/enforcement for every future host interaction, complete migration of every historic lesson, or rollback across all components and external destinations. These remain explicit OPEN gates until independent tests and read-back evidence close them.
+
+### Next execution
+1. Read back this addendum, lesson registry, lesson and event.
+2. Reconcile reference index, behavior-trace index, 0.0 registry, live inbox and integration queue.
+3. Extend and execute the structural audit for the new lesson registry.
+4. Migrate historic lessons with provenance and semantic duplicate adjudication.
+5. Test restoration from a known-good commit and preserve the failure/recovery trail.
