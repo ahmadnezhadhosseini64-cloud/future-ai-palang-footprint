@@ -1191,3 +1191,9 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - [EVT-0123](../architecture/BEHAVIOR-TRACE/EVT-0123-DEEP-EXCAVATION-AND-ARCHITECTURE-UPDATE-2026-10-23.md) records findings and architecture updates.
 - Active next checkpoint: [NEXT-025](./anchors/PALANG-0.0-NEXT-20261023-025-FRESH-SESSION-RECOVERY-AND-HISTORIC-CONTINUATION.md), with [EVT-0124](../architecture/BEHAVIOR-TRACE/EVT-0124-FRESH-SESSION-RECOVERY-2026-10-23.md).
 - EVT-0122 repository bidirectional recovery passed on its tested SHA/run; fresh-session recovery remains NOT RUN. Issue #20 and #21 remain OPEN. All earlier checkpoints remain preserved.
+
+
+## Active living architecture update — EVT-0125
+- [EVT-0125](../architecture/BEHAVIOR-TRACE/EVT-0125-LIVING-ARCHITECTURE-UPDATE-CAPABILITY-2026-10-23.md) records the architecture update gate.
+- [TALL](../architecture/BEHAVIOR-OBSERVATORY/TEST-TO-ARCHITECTURE-LEARNING-LOOP-2026-10-23-001.md) is the living learning-loop reference.
+- CI/artifact verification is pending; EVT-0124 fresh-session recovery remains NOT RUN. Previous 0.0 anchors are preserved.
