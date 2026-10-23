@@ -130,3 +130,10 @@ Latest read-back values supersede the earlier rows above:
 - The audit passed the ULCG source graph gate, the new EVT-0109/LAL-007 artifact/link gate, structural/link checks, historical 0.0 graph audit, timestamp inventory, graph-edge validation, UTC/Tehran pair audit, compile checks and durable host-adapter tests.
 - PR #23 merge commit: `41288a3a5d12e0b1ccd1213d54ad57703a3e5a79` at `2026-10-23T04:25:03Z` / `2026-10-23T07:55:03+03:30`.
 - Status: audit EXECUTION-PROVEN for the tested PR tree; exact post-merge main-head audit remains NOT CONFIRMED. Issue #21 remains OPEN for full historic census; Issue #20 remains OPEN for runtime/cold-start/global recovery.
+
+
+## Addendum v1.0.8 — next-point read-back
+- Latest NEXT-0.0-20261023-022 blob SHA after progress update: `776019d04b50d48e98268566336f4fa3462eb795`.
+- Latest time-binding v1.0.8 blob SHA at this read-back: `493ae445c693e8cdea784ecbc2106f94286d98f1`.
+- NEXT-022 was fetched back and now explicitly records the 14-source batch, source map, successful audit run 39900157186, merge commit 41288a3, and remaining open acceptance gates.
+- This confirms the next point is updated and actionable; it does not close the full historical census or runtime recovery.
