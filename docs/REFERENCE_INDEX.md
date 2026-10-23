@@ -717,3 +717,14 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - IN: [IN-019](0.0/anchors/PALANG-0.0-IN-20261023-019-LIVING-LESSON-CYCLE.md).
 - OUT: [OUT-019](0.0/anchors/PALANG-0.0-OUT-20261023-019-LIVING-LESSON-CYCLE.md).
 - Live Inbox: [INBOX-20261023-005](architecture/LIVE-INBOX/entries/INBOX-20261023-005.md).
+
+
+
+## Living architecture execution — IN-020 / OUT-020 / EVT-0108
+- Input anchor: [IN-020](0.0/anchors/PALANG-0.0-IN-20261023-020-LIVING-ARCHITECTURE-EXECUTION-CYCLE.md).
+- Output anchor: [OUT-020](0.0/anchors/PALANG-0.0-OUT-20261023-020-LIVING-ARCHITECTURE-EXECUTION-CYCLE.md).
+- Event: [EVT-0108](architecture/BEHAVIOR-TRACE/EVT-0108-LIVING-ARCHITECTURE-EXECUTION-AND-EVIDENCE-CYCLE-2026-10-23.md).
+- Live inbox: [INBOX-20261023-006](architecture/LIVE-INBOX/entries/INBOX-20261023-006.md).
+- Governing master: [CMIND — Addendum v1.0.6](reference/REFERENCE-DOCUMENTS/CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-MASTER-REFERENCE-2026-10-22-001.md).
+- Required cycle: capture → classify → register → read-back → operationalize → test → validate → integrate → activate → reassess/version successor.
+- Status: records are committed; read-back, exact commit timestamps and post-reconciliation audit are separate gates. Historic migration, host-wide capture/enforcement and rollback remain OPEN until proven.
