@@ -1074,3 +1074,14 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - OUT-019: [خروجی ممیزی و تصمیم چرخهٔ زنده](anchors/PALANG-0.0-OUT-20261023-019-LIVING-LESSON-CYCLE.md).
 - EVT-0107: [رویداد درس معماری، آزمون و بازیابی](../architecture/BEHAVIOR-TRACE/EVT-0107-LIVING-LESSON-CYCLE-AND-ROLLBACK-GOVERNANCE-2026-10-23.md).
 - Inbox: [INBOX-20261023-005](../architecture/LIVE-INBOX/entries/INBOX-20261023-005.md).
+
+
+
+## Interaction continuation checkpoint — IN-020 / OUT-020
+- Input: [IN-020](anchors/PALANG-0.0-IN-20261023-020-LIVING-ARCHITECTURE-EXECUTION-CYCLE.md).
+- Output: [OUT-020](anchors/PALANG-0.0-OUT-20261023-020-LIVING-ARCHITECTURE-EXECUTION-CYCLE.md).
+- Event: [EVT-0108](../architecture/BEHAVIOR-TRACE/EVT-0108-LIVING-ARCHITECTURE-EXECUTION-AND-EVIDENCE-CYCLE-2026-10-23.md).
+- Inbox: [INBOX-20261023-006](../architecture/LIVE-INBOX/entries/INBOX-20261023-006.md).
+- Master: [CMIND](../reference/REFERENCE-DOCUMENTS/CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-MASTER-REFERENCE-2026-10-22-001.md), Addendum v1.0.6.
+- Next work: historical lesson excavation, executable controls/manual gates, fresh structural audit, bounded rollback/recovery proof.
+- Status: repository registration is distinct from read-back, integration, runtime automation and external persistence; these are independently gated.
