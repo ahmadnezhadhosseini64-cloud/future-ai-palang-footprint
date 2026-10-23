@@ -762,3 +762,9 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 | ICNG-HAIF-2026-10-23-001 | `docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001.md` v1.1.0 | Rule that every new input must connect to prior IN/OUT, events, open queues, prior checkpoints and next actions without abandoning ongoing work | ACTIVE / LIVING / APPEND-ONLY; repository write on update branch; final read-back and main-branch merge pending |
 | EVT-0111 / LAL-20261023-009 | `docs/architecture/BEHAVIOR-TRACE/EVT-0111-INTERACTION-CONTINUITY-NON-INTERRUPTION-2026-10-23.md` and `docs/architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-009-INTERACTION-CONTINUITY-NON-INTERRUPTION.md` | Independent event/lesson for continuity and non-interruption rule | REGISTERED on update branch; read-back/reconciliation pending |
 | IN-022 / OUT-022 / NEXT-023 | `docs/0.0/anchors/` | Independent interaction anchors and continuation checkpoint; historic census NEXT-022 remains open | REGISTERED on update branch; final commit-time binding and reconciliation pending |
+
+
+## Time binding and continuity — INT-20261023-022
+- Canonical UTC/Tehran time binding: [TIME-BINDING-INT-20261023-022](architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261023-022.md).
+- ULCG v1.1.0, EVT-0111, LAL-20261023-009, IN-022/OUT-022 and NEXT-023 are linked under the interaction-continuity governance rule.
+- Historic census NEXT-022 / Issue #21 and runtime recovery Issue #20 remain open; this interaction does not replace them.
