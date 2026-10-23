@@ -53,10 +53,13 @@ def _validate_evidence(evidence, result, source_mode):
         ):
             issues.append(prefix + "_placeholder_locator_not_allowed_in_production")
         if source_mode == "production" and result == "PASS":
-            for key in ("execution_id", "source_sha"):
+            for key in ("execution_id", "source_sha", "content_sha256"):
                 if not _nonempty(item.get(key)):
                     issues.append(prefix + "_missing_" + key)
             source_sha = str(item.get("source_sha", "")).strip()
+            content_sha256 = str(item.get("content_sha256", "")).strip()
+            if content_sha256 and not re.fullmatch(r"[0-9a-fA-F]{64}", content_sha256):
+                issues.append(prefix + "_invalid_content_sha256_format")
             if source_sha and not re.fullmatch(r"[0-9a-fA-F]{7,64}", source_sha):
                 issues.append(prefix + "_invalid_source_sha_format")
             locator = str(item.get("locator", "")).strip()
