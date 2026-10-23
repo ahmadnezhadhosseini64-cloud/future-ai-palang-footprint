@@ -548,3 +548,11 @@ Current active gate remains [EVT-0122](../../architecture/BEHAVIOR-TRACE/EVT-012
 - The previous ledger record version 1.0.0 is retained; version 1.1.0 explicitly records this authorized integration. CI runs the validator and uploads a machine-readable manifest.
 - CI proof for this new code is pending until its exact run/artifact is independently inspected. Fresh-session recovery remains NOT RUN; Issue #20 and #21 remain OPEN.
 - Current successor checkpoint: [NEXT-027](../../0.0/anchors/PALANG-0.0-NEXT-20261023-027-FRESH-SESSION-AND-ARCHITECTURE-GROWTH.md).
+
+
+## EVT-0126 verified implementation — run 40014035299
+- [EVT-0126](../../architecture/BEHAVIOR-TRACE/EVT-0126-LIVING-ARCHITECTURE-EVOLUTION-AND-DEEP-AUDIT-2026-10-23.md) and [OUT-029](../../0.0/anchors/PALANG-0.0-OUT-20261023-029-LIVING-ARCHITECTURE-EVOLUTION.md): CI PASS, artifact read-back verified.
+- [Run 40014035299](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40014035299): SUCCESS; 65 tests on tested SHA `11499b652676d6d89eea0fca42d528acc1d8b2e4`; artifact `12528275489`, SHA-256 `6ae23e424080b598395a558bc5f9ba4550e06e7dea9bda934f05f782d0526793`.
+- Append-only ledger manifest PASS (2 records, 2 unique versions, 1 stream, zero errors); proposal gate READY_FOR_OWNER_REVIEW with verified evidence and fixture owner decision PENDING; both recovery directions RECOVERED, zero failures.
+- Current main after the run is evidence-only commit `de703573646fd5afad69432f90328d8366ffe8e1`; that exact bot commit was not rerun. Fresh-session recovery NOT RUN; Issue #20/#21 OPEN.
+- Current pair: [IN-029](../../0.0/anchors/PALANG-0.0-IN-20261023-029-LIVING-ARCHITECTURE-EVOLUTION.md) / [OUT-029](../../0.0/anchors/PALANG-0.0-OUT-20261023-029-LIVING-ARCHITECTURE-EVOLUTION.md). Active successor: [NEXT-027](../../0.0/anchors/PALANG-0.0-NEXT-20261023-027-FRESH-SESSION-AND-ARCHITECTURE-GROWTH.md).
