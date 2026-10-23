@@ -1226,3 +1226,8 @@ The queue index and the timestamp case must each be read back after this update.
 - [Issue #21](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/21): full historical source/lesson/rule census and semantic reconciliation.
 - [Issue #20](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/20): runtime capture, schema validation, IN/OUT reverse lookup and cold-start recovery.
 - These gates are cross-linked but independently accepted; keep both OPEN until evidence matches their acceptance criteria.
+
+
+## Source-to-rule graph — SRCMAP-2026-10-23-001
+- [Initial verified source map](../ARCHITECTURE-LESSONS/SOURCE-RULE-COMPONENT-TEST-MAP-2026-10-23-001.md).
+- Next: extend the map, validate local links on exact final HEAD, and convert source-backed high-confidence rules into CI checks or explicit human gates. Historical census remains under Issue #21; runtime/cold-start under Issue #20.
