@@ -837,3 +837,9 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - [TALL learning loop](architecture/BEHAVIOR-OBSERVATORY/TEST-TO-ARCHITECTURE-LEARNING-LOOP-2026-10-23-001.md)
 - Gate: `scripts/behavior-hunter/architecture_update_gate.py`; tests: `tests/behavior-hunter/test_architecture_update_gate.py`.
 - CI and artifact verification pending; fresh-session recovery NOT RUN; Issue #20 and #21 OPEN.
+
+
+## Current verified architecture update — EVT-0125 / NEXT-026
+- [EVT-0125 — living architecture update capability](architecture/BEHAVIOR-TRACE/EVT-0125-LIVING-ARCHITECTURE-UPDATE-CAPABILITY-2026-10-23.md) — ACTIVE/LIVING; CI-PASS, 56 tests; artifact read-back verified.
+- [NEXT-026 — fresh-session and end-to-end learning](0.0/anchors/PALANG-0.0-NEXT-20261023-026-FRESH-SESSION-AND-END-TO-END-LEARNING.md).
+- [EVT-0124 fresh-session gate](architecture/BEHAVIOR-TRACE/EVT-0124-FRESH-SESSION-RECOVERY-2026-10-23.md) and [handoff prompt](architecture/BEHAVIOR-TRACE/EVT-0124-FRESH-SESSION-RECOVERY-PROMPT-2026-10-23.md); fresh-session recovery remains NOT RUN. Issue #20/#21 remain OPEN.
