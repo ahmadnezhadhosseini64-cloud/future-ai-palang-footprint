@@ -123,3 +123,10 @@ Latest read-back values supersede the earlier rows above:
 - PR #22 merged as `aa1b401803000a67baf9c05f5af86780bee74ecf` at `2026-10-23T04:21:33Z` / `2026-10-23T07:51:33+03:30`.
 - This closes the structural audit gate for the tested PR tree. A separate audit tied to the exact post-merge main HEAD is still NOT CONFIRMED; do not conflate the tested PR SHA with the merge SHA.
 - Issue #21 remains OPEN for full historical census and semantic reconciliation; Issue #20 remains OPEN for runtime/cold-start and destination-specific proof.
+
+
+## Addendum v1.0.7 — rollback lineage gate passed
+- Living Architecture Audit run [39900157186](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39900157186) completed SUCCESS on PR head `ebf95aeb2cdf22b142ea95a3496d2b80830a9133`.
+- The audit passed the ULCG source graph gate, the new EVT-0109/LAL-007 artifact/link gate, structural/link checks, historical 0.0 graph audit, timestamp inventory, graph-edge validation, UTC/Tehran pair audit, compile checks and durable host-adapter tests.
+- PR #23 merge commit: `41288a3a5d12e0b1ccd1213d54ad57703a3e5a79` at `2026-10-23T04:25:03Z` / `2026-10-23T07:55:03+03:30`.
+- Status: audit EXECUTION-PROVEN for the tested PR tree; exact post-merge main-head audit remains NOT CONFIRMED. Issue #21 remains OPEN for full historic census; Issue #20 remains OPEN for runtime/cold-start/global recovery.
