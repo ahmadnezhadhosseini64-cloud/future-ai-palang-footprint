@@ -1203,3 +1203,10 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - [IN-028](./anchors/PALANG-0.0-IN-20261023-028-ACTIVATE-LIVING-ARCHITECTURE-UPDATE.md) / [OUT-028](./anchors/PALANG-0.0-OUT-20261023-028-ACTIVATE-LIVING-ARCHITECTURE-UPDATE.md) record the architecture activation request and CI-verified result.
 - [EVT-0125](../architecture/BEHAVIOR-TRACE/EVT-0125-LIVING-ARCHITECTURE-UPDATE-CAPABILITY-2026-10-23.md) is ACTIVE/LIVING with CI PASS and artifact read-back verified.
 - [NEXT-026](./anchors/PALANG-0.0-NEXT-20261023-026-FRESH-SESSION-AND-END-TO-END-LEARNING.md) is the active continuation; fresh-session recovery remains NOT RUN and Issue #20/#21 remain OPEN.
+
+
+## Current living architecture evolution — IN-029 / OUT-029 / EVT-0126
+- [IN-029](./anchors/PALANG-0.0-IN-20261023-029-LIVING-ARCHITECTURE-EVOLUTION.md) / [OUT-029](./anchors/PALANG-0.0-OUT-20261023-029-LIVING-ARCHITECTURE-EVOLUTION.md) record the request and append-only evolution update.
+- [EVT-0126](../architecture/BEHAVIOR-TRACE/EVT-0126-LIVING-ARCHITECTURE-EVOLUTION-AND-DEEP-AUDIT-2026-10-23.md) is ACTIVE/LIVING; CI verification pending for the new validator.
+- [NEXT-027](./anchors/PALANG-0.0-NEXT-20261023-027-FRESH-SESSION-AND-ARCHITECTURE-GROWTH.md) is the active successor.
+- Previous versions/checkpoints are preserved. Fresh-session recovery remains NOT RUN; Issues #20/#21 remain OPEN.
