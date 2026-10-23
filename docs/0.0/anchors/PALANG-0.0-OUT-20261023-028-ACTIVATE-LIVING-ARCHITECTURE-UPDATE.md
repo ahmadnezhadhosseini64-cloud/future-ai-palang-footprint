@@ -20,3 +20,9 @@
 
 ## Governance boundary
 The living architecture-update capability is implemented and CI-verified as a proposal validation gate. It is not unrestricted self-modifying MASTER. Fresh-session recovery remains NOT RUN and requires a separate conversation. Issue #20 and Issue #21 remain OPEN.
+
+
+## Current-main revalidation — run 40010095560
+- [GitHub Actions run 40010095560](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40010095560): SUCCESS; 56 tests passed on tested SHA `f8e8c44667be7bd6a48f62240432069a8a78bd84`.
+- Artifact ID `12525767024`; downloaded and inspected; ZIP SHA-256 `2ac9491822fe8d250a30596cff38b1959b92066d7c192bc9f75821acac23fd0a`.
+- Architecture update gate `READY_FOR_OWNER_REVIEW`; evidence hash verified; canonical mutation false; promotion false. Both recovery manifests `RECOVERED`, zero failures.
