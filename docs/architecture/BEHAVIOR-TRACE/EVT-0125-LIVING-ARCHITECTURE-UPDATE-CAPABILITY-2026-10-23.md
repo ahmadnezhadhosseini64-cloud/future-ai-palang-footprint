@@ -77,3 +77,10 @@ Verify the exact CI run after these changes, inspect the `architecture-update-ga
 - Workflow run created at `2026-10-23T19:20:29Z` (UTC), equivalent to `2026-10-23T22:50:29+03:30` (Tehran).
 - Current main subsequently advanced to `3963ad1a3b1f7f344ee66aa4b2573a8e2633c0f7`; the successful run proves tested SHA `335e392...`, not that the later main SHA was independently rerun.
 - Limitation: workflow success and gate-step success are verified. The artifact is listed and available; its JSON contents have not yet been independently opened and inspected in this verification pass. Fresh-session recovery remains NOT RUN; Issue #20/#21 remain OPEN.
+
+
+## Successor update — EVT-0126
+- The evidence-gated proposal validator remains active and is now complemented by an append-only version-history validator in [EVT-0126](./EVT-0126-LIVING-ARCHITECTURE-EVOLUTION-AND-DEEP-AUDIT-2026-10-23.md).
+- This is an additive successor; EVT-0125 and all prior evidence are preserved, not overwritten.
+- New validator: `scripts/behavior-hunter/validate_architecture_update_ledger.py`; tests: `tests/behavior-hunter/test_architecture_update_ledger.py`.
+- Exact CI proof for the successor is pending until its run and artifact are inspected.
