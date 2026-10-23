@@ -119,3 +119,13 @@ Each proposed insight includes:
 - Existing five unit tests are authored but actual CI execution has not been independently retrieved.
 - Live capture of every ChatGPT IN/OUT remains OPEN.
 - This record does not claim that the learning loop is fully automated or operational end-to-end.
+
+
+## Implementation addendum — deterministic insight candidate extractor
+- Extractor: `scripts/behavior-hunter/extract_architecture_insights.py`.
+- Unit tests: `tests/behavior-hunter/test_extract_architecture_insights.py`.
+- Four explicitly illustrative outcome records (PASS, FAIL, BLOCKED, NOT RUN): `data/interaction-pairs/test-outcomes.jsonl`. These examples are fixtures, not claims about production test execution.
+- Workflow: `.github/workflows/palang-behavior-hunter.yml` now runs the extractor and uploads candidate-test and architecture-insight JSON manifests in one artifact bundle. Relevant architecture/reference changes were added to workflow path filters.
+- Extractor states are proposals only; PASS without evidence is rejected; FAIL creates a regression/anti-pattern candidate; BLOCKED creates an architecture-gap candidate; NOT RUN creates an evidence-gap candidate. Every proposal has source IDs, evidence fields, UNASSESSED confidence, OWNER_REVIEW_REQUIRED and `master_mutation: false`.
+- Commit registering extractor: `004974970583fc214d97b4b42638fcc3d6a4c05e`; unit tests: `e811cc864b9bf74ad699d5b19f7f67e9234195df`; outcome fixture: `68075ea7fddad8ec25b6d3d63ccdf42fe6d38149`; workflow update: `d15af1dce6a4f79420dc972bc8324dacdf12defd`.
+- Important: files are registered, but this addendum does not claim the CI workflow has actually passed. Independent run/job/artifact evidence remains required. The implementation is a deterministic candidate extractor, not yet a full root-cause engine or live ChatGPT host adapter.
