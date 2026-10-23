@@ -66,3 +66,14 @@ Verify the exact CI run after these changes, inspect the `architecture-update-ga
 - Artifact ID `12525353595`; downloaded and inspected; ZIP SHA-256 `9bf29f18268f720a5eedb423011ec6014b7f5da8ef22b589686faa9aa0188cd0`.
 - Gate `READY_FOR_OWNER_REVIEW`, zero errors, evidence VERIFIED, owner decision PENDING, canonical mutation false, promotion false. Both recovery directions `RECOVERED`, zero failures; 4 insight candidates, zero rejected/duplicates.
 - The later main commit `3301ded46901530fbd746ecdde7db4411dec6c6f` is an evidence-only automation commit (`evidence/evidence-gate-40010379492.txt)); the exact post-bot HEAD was not re-run. Do not state that it was tested.
+
+
+## CI verification record — run 40010637446
+- Workflow: [Palang Behavior Hunter CI](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40010637446).
+- Result: SUCCESS; all workflow steps succeeded, including the new architecture update gate and both interaction-graph recovery directions.
+- Unit test log: `Ran 56 tests in 0.053s`.
+- Tested source SHA: `335e392576b17a6262c3422bc2d2acf01887d0cb`.
+- Artifact ID: `12526007088`; artifact name: `palang-behavior-hunter-evidence-manifests`; available for download at verification time.
+- Workflow run created at `2026-10-23T19:20:29Z` (UTC), equivalent to `2026-10-23T22:50:29+03:30` (Tehran).
+- Current main subsequently advanced to `3963ad1a3b1f7f344ee66aa4b2573a8e2633c0f7`; the successful run proves tested SHA `335e392...`, not that the later main SHA was independently rerun.
+- Limitation: workflow success and gate-step success are verified. The artifact is listed and available; its JSON contents have not yet been independently opened and inspected in this verification pass. Fresh-session recovery remains NOT RUN; Issue #20/#21 remain OPEN.
