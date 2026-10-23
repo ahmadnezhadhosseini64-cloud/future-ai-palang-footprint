@@ -41,3 +41,14 @@ Verify the exact CI run and tested SHA for this update; inspect every generated 
 - Tested SHA: `11499b652676d6d89eea0fca42d528acc1d8b2e4`, repository commit time `2026-10-23T19:46:19Z` / Tehran `2026-10-23T23:16:19+03:30`.
 - Current main subsequently advanced to evidence-only automation commit `de703573646fd5afad69432f90328d8366ffe8e1` at `2026-10-23T19:46:26Z` / Tehran `2026-10-23T23:16:26+03:30`; that exact post-bot SHA was not rerun.
 - ZIP SHA-256 is verified from the downloaded bytes. Fresh-session recovery remains NOT RUN; runtime-wide capture and external persistence remain NOT PROVEN.
+
+
+## Hash-chain hardening and final CI proof — run 40014712373
+- Deep audit identified that version links alone could not detect silent edits to an earlier ledger row. Added `previous_record_sha256` and `record_sha256` to every row, computed from canonical JSON; the first row uses `GENESIS` and each later row must point to the preceding verified hash.
+- Added regression tests for record tampering and hash-chain link break/reordering. Earlier versions remain in the ledger and are now hash-linked.
+- [Run 40014712373](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40014712373): SUCCESS; 67 tests passed on tested/current-main SHA `965713b2ef2ca4873176015128313da9c03c1b48`, commit time `2026-10-23T19:51:32Z` / Tehran `2026-10-23T23:21:32+03:30`.
+- Artifact ID `12527726978`; downloaded and inspected; ZIP SHA-256 `6ddf0b23d3f33db2cdfc6cb4b1e7154899bf1477a0466ba5c01a2a3c7325c07b`.
+- `architecture-update-ledger.json`: PASS, 2 records, 2 unique versions, 1 change stream, hash chain verified, zero errors.
+- Proposal gate: READY_FOR_OWNER_REVIEW, evidence VERIFIED, fixture owner decision PENDING, canonical mutation false, promotion false. Both recovery manifests RECOVERED with zero failures; host-wide capture false, fresh-session test NOT RUN, external persistence false.
+- Two interim failures were preserved: one run caught tests not yet updated for newly required hash fields; another caught the fixture ledger missing its hashes. Both were corrected by sealing the fixture and adding hash-aware test helpers. These failures are part of the architecture's evidence trail.
+- At verification time the tested SHA equaled main HEAD. Any later doc/evidence-only commit must be distinguished from a tested source SHA; do not claim a later SHA was rerun unless a new run proves it.
