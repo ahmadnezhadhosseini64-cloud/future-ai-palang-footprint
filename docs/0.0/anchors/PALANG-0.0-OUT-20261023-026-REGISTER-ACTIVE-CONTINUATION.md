@@ -5,7 +5,7 @@
 - Production ID: OUT-026
 - Version: 1.0.0
 - Type: Independent output anchor
-- Status: REGISTERED / READ-BACK PENDING
+- Status: REGISTERED / READ-BACK VERIFIED on main; fresh final-main audit remains open
 - Paired input: [IN-026](./PALANG-0.0-IN-20261023-026-REGISTER-ACTIVE-CONTINUATION.md)
 - Related event: [EVT-0121](../../architecture/BEHAVIOR-TRACE/EVT-0121-REGISTER-ACTIVE-CONTINUATION-AND-COLD-START-RESULT-2026-10-23.md)
 - Canonical master: [CCCMR](../../reference/REFERENCE-DOCUMENTS/CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001.md)
