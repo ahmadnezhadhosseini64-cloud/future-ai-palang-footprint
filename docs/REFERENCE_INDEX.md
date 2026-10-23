@@ -728,3 +728,9 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - Governing master: [CMIND — Addendum v1.0.6](reference/REFERENCE-DOCUMENTS/CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-MASTER-REFERENCE-2026-10-22-001.md).
 - Required cycle: capture → classify → register → read-back → operationalize → test → validate → integrate → activate → reassess/version successor.
 - Status: records are committed; read-back, exact commit timestamps and post-reconciliation audit are separate gates. Historic migration, host-wide capture/enforcement and rollback remain OPEN until proven.
+
+
+
+## Time binding and historic lesson excavation — INT-20261023-020
+- Time binding: [TIME-BINDING-INT-20261023-020](architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261023-020.md) — canonical repository commit times in UTC with Tehran equivalents; exact message timestamps remain unknown.
+- Historic lesson migration ledger: [HALML-2026-10-23-001](architecture/ARCHITECTURE-LESSONS/HISTORIC-LESSON-MIGRATION-LEDGER-2026-10-23-001.md) — first source-linked candidate batch; full historical inventory remains OPEN.
