@@ -43,3 +43,8 @@
 - Convert high-confidence rules into CI assertions or explicit human gates.
 - Complete Issue #21 (historical census) separately from Issue #20 (runtime/cold-start).
 - Append version 1.0.1 only with new evidence, changed source status, resolved conflict or material implementation change.
+
+
+## Addendum v1.0.1 — operational audit gate
+- Structural check implementation: `scripts/audit_living_architecture.py` now requires the ULCG master, event, lesson, map, historic ledger, IN/OUT anchors, next point, verification/time ledgers and live inbox item, then checks the required IDs across nine surfaces.
+- Static read-back comparison found no missing expected IDs. Execution of the Python script / Living Architecture Audit workflow on the current final HEAD remains NOT CONFIRMED; retain the structural gate as OPEN until a real workflow result is retrieved.
