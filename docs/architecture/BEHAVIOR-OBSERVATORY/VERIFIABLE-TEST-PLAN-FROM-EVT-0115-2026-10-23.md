@@ -137,3 +137,10 @@ EVT-0118 supersedes stale forward-looking phrases in EVT-0117 such as “impleme
 - The resolver manifest marks all 4 synthetic rows `FIXTURE_ONLY`, with 0 production resolutions and 0 unresolved errors. This is the expected fixture outcome, not production evidence resolution.
 - Failed runs #32–#34 and the SyntaxError are retained in EVT-0120 as learning evidence; run #35 verifies the correction.
 - Still NOT RUN: a controlled real `repo://` locator with actual content SHA-256; independent fresh-session 0.0 recovery; live host-wide IN/OUT capture remains OPEN.
+
+
+## Latest EVT-0120 gate result — run #45
+- TALL-H02 controlled local evidence resolution: PASS for one real repository file using `repo://` and declared content SHA-256; evidence record itself remains `test_result=NOT RUN`, so no test PASS is claimed.
+- Run [#45](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40002313474): SUCCESS; 34 tests OK; artifact ID `12522836550`; artifact SHA-256 `fc386cf66f30904b2bd0cc3eebb9f48fc0f9aefdba9b5e2919fed80e274336aa`.
+- Four manifests independently inspected; the production smoke manifest records 1 resolved, 0 unresolved, 0 parse errors, `evidence_integrity_verified=true`, `production_claim_allowed=false`.
+- The next active gate is the repository cold-start recovery from NEXT-024. It must not be marked PASS until a fresh independent read-back reconstructs the complete continuation chain. Host-wide capture remains OPEN.
