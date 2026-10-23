@@ -1292,3 +1292,14 @@ The queue index and the timestamp case must each be read back after this update.
 - Test-plan commit: `a7cf278c41ab552db7453e08ac3f9c98ddca90bf`; UTC `2026-10-23T17:27:33Z`; derived Tehran `2026-10-23T20:57:33+03:30`.
 - The plan is a registered architecture artifact, not evidence that synchronization, restart recovery, automation execution, or all destination tests have passed.
 - Preserve all historical 0.0 anchors; this test-plan item does not close EVT-0115 or any other open workstream.
+
+
+## Behavior Hunter live test generation — EVT-0116
+| Stable ID | Topic | Status | Canonical evidence / next action |
+|---|---|---|---|
+| PALANG-BEHAVIOR-HUNTER-TEST-GENERATION-AND-GROWTH-GATE-2026-10-23-001 | Derive candidate tests from structured interaction IN/OUT, verify evidence, and route passes into Child/Rahm review | ACTIVE / LIVING / PARTIAL — implementation files and CI workflow written; CI run/artifact and host-wide live capture not yet verified | [Architecture](../BEHAVIOR-OBSERVATORY/PALANG-BEHAVIOR-HUNTER-TEST-GENERATION-AND-GROWTH-GATE-2026-10-23-001.md); [EVT-0116](../BEHAVIOR-TRACE/EVT-0116-BEHAVIOR-HUNTER-LIVE-TEST-ACTIVATION-2026-10-23.md); [test plan](../BEHAVIOR-OBSERVATORY/VERIFIABLE-TEST-PLAN-FROM-EVT-0115-2026-10-23.md). Retrieve actual CI run/artifact, then implement/verify the permitted host adapter. |
+
+- Generator: `scripts/behavior-hunter/generate_candidate_tests.py`; tests: `tests/behavior-hunter/test_generate_candidate_tests.py`; sample records: `data/interaction-pairs/interaction-pairs.jsonl`; workflow: `.github/workflows/palang-behavior-hunter.yml`.
+- Workflow commit `9d908b15220a9f4a97fd1c56ae32edd393d18196` — UTC `2026-10-23T17:33:36Z`, Tehran `2026-10-23T21:03:36+03:30`. Event commit `b3147c9fb16726eabe77858ec204dc5989907137` — UTC `2026-10-23T17:35:07Z`, Tehran `2026-10-23T21:05:07+03:30`.
+- VTP-02 remains PARTIAL / FAIL-CLOSED pending post-correction source read-back and mirror refresh; VTP-03 length delta 7 passes, semantic acceptance pending. Library write/refresh is blocked by the currently exposed tool surface.
+- Do not auto-promote test results into Master; require independent execution evidence and owner review. Preserve every 0.0 anchor and all failure records.
