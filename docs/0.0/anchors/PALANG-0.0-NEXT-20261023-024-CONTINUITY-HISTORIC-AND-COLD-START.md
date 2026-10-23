@@ -76,3 +76,13 @@ NEXT-024 is OPEN and resumable. It preserves NEXT-022 and NEXT-023. No open gate
 - A controlled non-fixture `repo://` locator resolved to a real repository file and its declared SHA-256 matched. The record's test status remains `NOT RUN`, and `production_claim_allowed=false`; only evidence integrity was verified.
 - Failures in runs #32–#34 and the SyntaxError correction remain preserved as learning evidence; run #35 proved the earlier resolver baseline, run #45 proves the controlled non-fixture locator step.
 - **Current next action:** perform a fresh-session recovery from NEXT-024, resolving the current master, queue, EVT-0120, evidence, and this next action without relying on the previous chat narrative. Then register the recovery result; preserve all prior 0.0 anchors and continue the historical source census/Issue #21 and runtime capture/Issue #20 tracks.
+
+
+## Canonical continuation bindings — refreshed after EVT-0120
+- Canonical continuation master: [CCCMR](../../reference/REFERENCE-DOCUMENTS/CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001.md).
+- Active integration queue: [Architecture Integration Queue](../../architecture/INTEGRATION-QUEUE/README.md).
+- Current implementation event: [EVT-0120](../../architecture/BEHAVIOR-TRACE/EVT-0120-EVIDENCE-LOCATOR-RESOLUTION-AND-COLD-RECOVERY-2026-10-23.md).
+- Test plan: [VTP/TALL](../../architecture/BEHAVIOR-OBSERVATORY/VERIFIABLE-TEST-PLAN-FROM-EVT-0115-2026-10-23.md).
+- Behavior Observatory index: [README](../../architecture/BEHAVIOR-OBSERVATORY/README.md).
+- Latest evidence gate: run #45 SUCCESS, 34 tests OK; artifact `12522836550`; controlled `repo://` file digest verified. The smoke record is `NOT RUN`, so only evidence integrity is verified.
+- Active work now: repository cold-start recovery test from this checkpoint. It must prove recovery of the canonical master, queue item, EVT-0120, resolver, evidence target and next action. This is separate from host-wide ChatGPT capture and separate from the historical census / Issue #21.
