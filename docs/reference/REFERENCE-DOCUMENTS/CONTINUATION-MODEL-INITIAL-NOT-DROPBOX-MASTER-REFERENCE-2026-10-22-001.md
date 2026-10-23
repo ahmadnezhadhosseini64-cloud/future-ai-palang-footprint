@@ -310,3 +310,10 @@ The exact user-message time was not exposed by repository tooling and must not b
 - Current interaction timestamp ledger: [TIME-BINDING-INT-20261023-020](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261023-020.md).
 - Historic lesson excavation: [HALML-2026-10-23-001](../../architecture/ARCHITECTURE-LESSONS/HISTORIC-LESSON-MIGRATION-LEDGER-2026-10-23-001.md).
 - Current evidence: independent IN/OUT/event/inbox files and cross-surface records were fetched back; IDs and primary links matched. Evidence Gate run 39887527345 passed for its tested commit. Full structural audit on final HEAD, full historic migration, host-wide capture/enforcement, controlled rollback/recovery and external persistence remain separate OPEN gates.
+
+
+## Addendum v1.0.9 — bounded rollback/recovery evidence
+- Controlled repository branch rollback test: [EVT-0109](../../architecture/BEHAVIOR-TRACE/EVT-0109-CONTROLLED-GIT-ROLLBACK-RECOVERY-TEST-2026-10-23.md).
+- Governing lesson: [LAL-20261023-007 v1.0.2](../../architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-007-ROLLBACK-AS-NEW-LINEAGE-EVENT.md).
+- Outcome: PASS for an isolated Git branch ref rollback. The test branch returned to the named baseline; the simulated candidate was absent from that branch and remained retrievable on the evidence branch.
+- Scope: this is not proof of global project rollback, host/runtime recovery or external destination restoration. Those remain OPEN / NOT PROVEN.
