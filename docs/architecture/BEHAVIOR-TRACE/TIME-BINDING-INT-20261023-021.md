@@ -132,3 +132,10 @@
 ## Addendum v1.0.8 — next 0.0 progress checkpoint
 - NEXT-0.0-20261023-022 progress update: [4312a1b](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/4312a1b4fc521ef16f071adf605501af1353ea9f), canonical UTC `2026-10-23T04:26:50Z`, Tehran equivalent `2026-10-23T07:56:50+03:30`.
 - The next-point anchor now records the 14-source full-fetch batch, source map, audit-gate implementation and successful PR audit, while keeping full tree/history census, exact post-merge main-head audit and runtime/cold-start acceptance OPEN.
+
+
+## Addendum v1.0.9 — final next-point read-back checkpoint
+- Verification checkpoint v1.0.8: [4018e5c](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/4018e5c494a9445d95e40d76a9304d3ca34a8f3b), canonical UTC `2026-10-23T04:27:23Z`, Tehran equivalent `2026-10-23T07:57:23+03:30`.
+- The checkpoint's latest blob SHA after this update is `eddc07955458c7fa7fb3966729711f5f1b380833`.
+- Current main-head full structural audit remains a separate gate; run 39900157186 passed on PR head `ebf95aeb2cdf22b142ea95a3496d2b80830a9133`, merged via `41288a3a5d12e0b1ccd1213d54ad57703a3e5a79`.
+- This time-binding successor is append-only. Its own commit time may be captured by a future successor if the ledger is revised again.
