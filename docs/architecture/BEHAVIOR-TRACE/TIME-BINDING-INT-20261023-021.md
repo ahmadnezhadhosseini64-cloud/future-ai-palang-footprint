@@ -41,3 +41,18 @@
 - Initial time-binding v1.0.0 commit: [f1fb511](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/f1fb5114fe99b41648b05eb86815c367134bae90), canonical UTC `2026-10-23T04:10:19Z`, Tehran equivalent `2026-10-23T07:40:19+03:30`.
 - The checkpoint v1.0.1 blob SHA after read-back is `4ca9607f4a7af384bcb4e8527ca7f6ccf200c73a`.
 - This is a successor entry; prior timestamp rows and versions remain preserved. The time-binding file's own latest successor commit timestamp can be recorded by a later successor if this ledger is revised again.
+
+
+## Addendum v1.0.2 — source-census issue and latest integrated records
+| Artifact / event | Commit or event time | UTC | Tehran equivalent |
+|---|---|---|---|
+| ULCG master with Issue #21 | [75588d2](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/75588d2d64ac0bb8fd54c166ecea55366e1a83d3) | 2026-10-23T04:11:20Z | 2026-10-23T07:41:20+03:30 |
+| NEXT-0.0-022 with Issue #21 | [973979d](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/973979dff21ac2060308d7472d66c05d77f33828) | 2026-10-23T04:11:25Z | 2026-10-23T07:41:25+03:30 |
+| Integration queue with Issues #20/#21 | [2acbe7c](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/2acbe7c1e41ba769b0d73c277163175c543992d7) | 2026-10-23T04:11:30Z | 2026-10-23T07:41:30+03:30 |
+| Historic lesson ledger with Issue #21 | [727cd06](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/727cd06bbaa04c857b7ecd2d6a52a7b54bfc4c52) | 2026-10-23T04:11:35Z | 2026-10-23T07:41:35+03:30 |
+| Issue #21 created (issue event time, not a commit) | [Issue #21](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/21) | 2026-10-23T04:11:07Z | 2026-10-23T07:41:07+03:30 |
+| Verification checkpoint v1.0.2 | [4a3a406](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/4a3a4069c58db923b01bcd3bcda8f99816e0718d) | 2026-10-23T04:12:07Z | 2026-10-23T07:42:07+03:30 |
+
+- These rows supersede earlier rows for the listed artifacts. UTC remains canonical.
+- The issue creation time is explicitly an issue event timestamp, not a repository commit time.
+- This time-binding file's own current successor timestamp may be added by a later successor; do not infer it from neighboring commits.
