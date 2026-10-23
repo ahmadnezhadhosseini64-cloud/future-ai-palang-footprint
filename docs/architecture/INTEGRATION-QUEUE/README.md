@@ -1271,3 +1271,14 @@ The queue index and the timestamp case must each be read back after this update.
 ## Status transparency follow-up — IN-025 / OUT-025
 - Registered [IN-025](../../0.0/anchors/PALANG-0.0-IN-20261023-025-STATUS-AND-VISIBLE-CONTINUATION.md) / [OUT-025](../../0.0/anchors/PALANG-0.0-OUT-20261023-025-STATUS-AND-VISIBLE-CONTINUATION.md), event [EVT-0114](../BEHAVIOR-TRACE/EVT-0114-STATUS-TRANSPARENCY-AND-RESUMABLE-EXECUTION-2026-10-23.md), lesson [LAL-20261023-012](../ARCHITECTURE-LESSONS/lessons/LAL-20261023-012-STATUS-TRANSPARENCY-AND-RESUMABLE-EXECUTION.md).
 - CURRENT-023 remains point 0. NEXT-025 remains the next 0.0. Continue source-clause crosswalk work; do not drop NEXT-022/023/024 or Issues #20/#21.
+
+
+## Live mirror sync recovery — EVT-0115 (2026-10-23)
+| Work item | Purpose | Status | Canonical evidence / next action |
+|---|---|---|---|
+| PALANG-LIVE-MIRROR-SYNC-RECOVERY-2026-10-23-001 | Resume canonical audit ↔ Library mirror comparison under user's accepted 7-character difference tolerance | ACTIVE / LIVING / OPEN — repository event registered and read back; current Library sync not yet verified | [EVT-0115](../BEHAVIOR-TRACE/EVT-0115-LIVE-MIRROR-SYNC-RECOVERY-AND-MASTER-REGISTRATION-2026-10-23.md); read both current copies, compare Stable ID / Version / Next Action / Destination Statuses, update Library if needed, independently read back and reconcile. |
+
+- User accepted the 7-character length difference (8915 vs 8908) as not being a blocker by itself; semantic key fields must still match.
+- EVT-0115 registration commit UTC: `2026-10-23T17:18:26Z`; derived Tehran: `2026-10-23T20:48:26+03:30`. Commit: `4fdaf1a6045cc5f3331f69b77425a82e3cbbd1df`.
+- Library: NOT VERIFIED for the current version until fresh write/read-back evidence. Buffer/Persistent Memory: NOT VERIFIED. Dropbox: OPEN / NOT VERIFIED. External end-to-end recovery: NOT RUN.
+- Keep all prior 0.0 anchors intact; this queue item does not close any other open workstream.
