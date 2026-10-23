@@ -1229,3 +1229,9 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - [EVT-0127](../architecture/BEHAVIOR-TRACE/EVT-0127-DEEP-REPOSITORY-AUDIT-AND-GAP-REGISTER-2026-10-23.md) records the baseline graph findings and the five link repairs.
 - [NEXT-028](./anchors/PALANG-0.0-NEXT-20261023-028-POST-REPAIR-AUDIT-AND-SEMANTIC-RECONCILIATION.md) is the active checkpoint; post-repair audit pending.
 - Previous checkpoints including NEXT-027 remain preserved; Issues #20/#21 remain OPEN and fresh-session recovery NOT RUN.
+
+
+## Post-repair audit — EVT-0127 / NEXT-028
+- Living Architecture Audit [run 40015739398](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40015739398) confirms zero missing local links on audited SHA `e6fead1da67b91cb382173903b7c8da4cf1aba16`.
+- Artifact `12528636433` inspected; ZIP SHA-256 `a3aeed395eed47f735144c49c68490ead39c7078ef4cbc84d0263719bca2b12c`.
+- [NEXT-028](./anchors/PALANG-0.0-NEXT-20261023-028-POST-REPAIR-AUDIT-AND-SEMANTIC-RECONCILIATION.md) remains ACTIVE/LIVING for identifier collisions, duplicate/alias adjudication and timestamp ambiguity. Prior 0.0 checkpoints preserved.
