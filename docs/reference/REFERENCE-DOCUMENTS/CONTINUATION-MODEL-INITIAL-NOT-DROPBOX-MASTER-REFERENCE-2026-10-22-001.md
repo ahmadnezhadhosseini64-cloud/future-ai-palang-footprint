@@ -266,3 +266,31 @@ The registry and first lesson are registered in the repository. This does not ye
 - Covered structural/link checks, historical 0.0 graph, repository timestamp inventory, graph-edge validation, semantic UTC/Tehran pairs, compilation and durable host-adapter tests.
 - The first two failed attempts remain preserved as evidence and their audit-script path defect was corrected.
 - This closes the structural audit gate for the tested commit only. Historic lesson migration, automatic capture/enforcement and dedicated rollback/recovery remain OPEN.
+
+
+
+## Addendum v1.0.6 — Living architecture execution checkpoint (2026-10-23)
+
+- New independent anchors: [IN-020](../../0.0/anchors/PALANG-0.0-IN-20261023-020-LIVING-ARCHITECTURE-EXECUTION-CYCLE.md) / [OUT-020](../../0.0/anchors/PALANG-0.0-OUT-20261023-020-LIVING-ARCHITECTURE-EXECUTION-CYCLE.md).
+- New event: [EVT-0108](../../architecture/BEHAVIOR-TRACE/EVT-0108-LIVING-ARCHITECTURE-EXECUTION-AND-EVIDENCE-CYCLE-2026-10-23.md).
+- New live inbox item: [INBOX-20261023-006](../../architecture/LIVE-INBOX/entries/INBOX-20261023-006.md).
+- Governing lesson: [LAL-20261023-001](../../architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-001-LIVING-APPEND-ONLY-VERIFY-RECOVER-CYCLE.md); registry: [ARCHITECTURE-LESSONS](../../architecture/ARCHITECTURE-LESSONS/README.md).
+- This addendum does not replace the model-initial return path and does not reopen the Dropbox branch.
+
+### Required execution cycle
+DISCOVER → CAPTURE → CLASSIFY → REGISTER → READ-BACK MATCH → OPERATIONALIZE → TEST → VALIDATE → INTEGRATE → ACTIVATE → MONITOR/REASSESS → VERSION SUCCESSOR.
+
+### Recovery and version rule
+Preserve prior good baselines and failed attempts. Do not promote an untested successor. On failure, preserve evidence, stop promotion, select the last verified baseline by commit/version, restore or branch, run relevant post-recovery tests, and record the outcome. Never describe document registration as runtime automation.
+
+### Work packages and status
+1. IN/OUT/event/inbox records: written; independent read-back and timestamps must be recorded after fetching the exact committed artifacts.
+2. Master/index/queue reconciliation: IN PROGRESS until each changed surface is fetched and matched.
+3. Historic lesson excavation and duplicate adjudication: OPEN.
+4. Operational controls/tests for each confirmed lesson: OPEN, except checks already present and proven by existing workflow evidence.
+5. Fresh structural audit on reconciled HEAD: OPEN until completed on the exact final commit.
+6. Controlled rollback/recovery test: OPEN / NOT RUN until a real test and post-recovery verification are evidenced.
+7. Host-wide automatic capture/enforcement and external persistence: OPEN / NOT PROVEN; not implied by repository records.
+
+### Time standard
+The exact user-message time was not exposed by repository tooling and must not be guessed. For each repository artifact, the canonical timestamp is the actual commit timestamp in UTC; show Tehran equivalent derived from that same instant. Operation and workflow timestamps remain separate contextual evidence.
