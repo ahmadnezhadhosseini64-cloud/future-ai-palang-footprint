@@ -166,3 +166,6 @@ Continue collecting observable interaction and evaluator behavior as evidence-ba
 
 - Repository cold-start regression from NEXT-024: run #53 SUCCESS, 38 tests OK; artifact ID `12521909205` independently downloaded and inspected. This does not prove a separate ChatGPT session or host-wide capture.
 - Active next gate: [EVT-0122 — Bidirectional IN/OUT Recovery](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-RECOVERY-2026-10-23.md); start from either anchor, reconstruct the pair and continuation graph, then run fresh-session recovery.
+
+- Current anchor-chain regression: run #60 SUCCESS, 39 tests OK; artifact ID `12521744939` and four manifests independently inspected. IN-026 → OUT-026 → EVT-0121 → NEXT-024 → master/queue → EVT-0122 linkage verified.
+- Active next gate: [EVT-0122 — Bidirectional IN/OUT Recovery](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-RECOVERY-2026-10-23.md); fresh ChatGPT session recovery and host-wide capture remain unverified.
