@@ -1085,3 +1085,9 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - Master: [CMIND](../reference/REFERENCE-DOCUMENTS/CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-MASTER-REFERENCE-2026-10-22-001.md), Addendum v1.0.6.
 - Next work: historical lesson excavation, executable controls/manual gates, fresh structural audit, bounded rollback/recovery proof.
 - Status: repository registration is distinct from read-back, integration, runtime automation and external persistence; these are independently gated.
+
+
+
+## Time binding and historic lesson ledger — INT-20261023-020
+- Canonical UTC/Tehran registration-time record: [TIME-BINDING-INT-20261023-020](../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261023-020.md).
+- First historic lesson migration batch: [HALML-2026-10-23-001](../architecture/ARCHITECTURE-LESSONS/HISTORIC-LESSON-MIGRATION-LEDGER-2026-10-23-001.md).
