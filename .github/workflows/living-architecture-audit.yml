@@ -63,6 +63,28 @@ jobs:
           grep -q 'Issue #21' docs/architecture/INTEGRATION-QUEUE/README.md
           echo "ULCG_SOURCE_GRAPH_GATE=PASS"
           echo "ULCG_RUNTIME_AUTOCAPTURE=NOT_PROVEN"
+
+      - name: Enforce current point 0 and next 0.0 continuity graph
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f docs/0.0/anchors/PALANG-0.0-CURRENT-20261023-023-USER-CHECKPOINT-AND-CONTINUATION.md
+          test -f docs/0.0/anchors/PALANG-0.0-NEXT-20261023-024-CONTINUITY-HISTORIC-AND-COLD-START.md
+          test -f docs/0.0/anchors/PALANG-0.0-IN-20261023-023-REGISTER-CURRENT-POINT-0.md
+          test -f docs/0.0/anchors/PALANG-0.0-OUT-20261023-023-REGISTER-CURRENT-POINT-0.md
+          test -f docs/architecture/BEHAVIOR-TRACE/EVT-0112-CURRENT-POINT-0-AND-NEXT-0.0-2026-10-23.md
+          test -f docs/architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-010-CURRENT-POINT-AND-NEXT-CHECKPOINT.md
+          test -f docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261023-023.md
+          grep -q 'CURRENT-023' docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001.md
+          grep -q 'NEXT-024' docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001.md
+          grep -q 'EVT-0112' docs/REFERENCE_INDEX.md
+          grep -q 'NEXT-024' docs/0.0/README.md
+          grep -q 'Issue #21' docs/0.0/anchors/PALANG-0.0-NEXT-20261023-024-CONTINUITY-HISTORIC-AND-COLD-START.md
+          grep -q 'Issue #20' docs/0.0/anchors/PALANG-0.0-NEXT-20261023-024-CONTINUITY-HISTORIC-AND-COLD-START.md
+          echo "CURRENT_POINT_0_NEXT_0_0_CONTINUITY=PASS"
+          echo "HISTORIC_CENSUS_AND_COLD_START_REMAIN_OPEN=true"
+          echo "RUNTIME_AUTOCAPTURE_PROVEN=false"
+
       - name: Run structural and link audit
         shell: bash
         run: |
