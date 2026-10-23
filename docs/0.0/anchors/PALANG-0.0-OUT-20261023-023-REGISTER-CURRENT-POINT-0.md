@@ -4,7 +4,7 @@
 - Production ID: OUT-023
 - Version: 1.0.0
 - Type: Independent output anchor
-- Status: REGISTERED; read-back and final audit pending
+- Status: REGISTERED / READ-BACK VERIFIED on main; exact final-main full audit remains OPEN
 - Input: [IN-023](./PALANG-0.0-IN-20261023-023-REGISTER-CURRENT-POINT-0.md)
 - Event/lesson: [EVT-0112](../../architecture/BEHAVIOR-TRACE/EVT-0112-CURRENT-POINT-0-AND-NEXT-0.0-2026-10-23.md) / [LAL-20261023-010](../../architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-010-CURRENT-POINT-AND-NEXT-CHECKPOINT.md)
 - Master: [ULCG v1.2.0](../../reference/REFERENCE-DOCUMENTS/UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001.md)

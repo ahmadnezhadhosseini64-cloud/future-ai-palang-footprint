@@ -4,7 +4,7 @@
 - Production ID: IN-023
 - Version: 1.0.0
 - Type: Independent input anchor
-- Status: REGISTERED; read-back pending
+- Status: REGISTERED / READ-BACK VERIFIED on main; exact final-main full audit remains OPEN
 - Predecessor: [IN-022](./PALANG-0.0-IN-20261023-022-INTERACTION-CONTINUITY.md) / [OUT-022](./PALANG-0.0-OUT-20261023-022-INTERACTION-CONTINUITY.md)
 - Paired output: [OUT-023](./PALANG-0.0-OUT-20261023-023-REGISTER-CURRENT-POINT-0.md)
 - Event: [EVT-0112](../../architecture/BEHAVIOR-TRACE/EVT-0112-CURRENT-POINT-0-AND-NEXT-0.0-2026-10-23.md)
