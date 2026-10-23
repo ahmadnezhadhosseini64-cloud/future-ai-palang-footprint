@@ -62,3 +62,12 @@ Start from EVT-0116 and the test plan. First read back the corrected audit and c
 - Test-plan latest status commit `ae1943a91b5451cbc0afb35129043c305e4bb4dc`: UTC `2026-10-23T17:37:20Z`; Tehran `2026-10-23T21:07:20+03:30`.
 - Master latest status update commit `e8770d6be88ec9d92170e8bc36ec022b03c0307c`; queue latest status update commit `6b84d1435fc4dffde5cb1619803dfcb565981be3`. Their commit UTC/Tehran conversions must be read from actual commit metadata before any exact timestamp is quoted.
 - Confirmed status: repository write/read-back PASS for the listed artifacts; VTP-02 PARTIAL / FAIL-CLOSED pending refreshed Library mirror; VTP-03 length delta check PASS but semantic acceptance pending; VTP-04 blocked by absent Library write/refresh action; GitHub Actions run/artifact NOT VERIFIED; live host capture OPEN.
+
+
+## Superseding destination result — Library mirror refreshed
+- This section supersedes earlier statements in this event that the Library refresh was still pending. The exact Library mirror was overwritten and independently read back after that upload.
+- Current Library snapshot file ID: `file_00000000422c8230b7b9709a831fd252`; stable Library file ID: `libfile_7ac3c9a6ec14819198eb2751e204aa48`; destination path remains `/Future AI/Palang Footprint/Master Reference Vault/Reference Documents/LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md`.
+- Independent read-back snapshot metadata: modified UTC `2026-10-23T17:39:33.763445Z`; this is file metadata time, not the exact read-back operation time.
+- VTP-02 PASS for semantic key fields in the refreshed mirror; VTP-03 PASS for the agreed length-tolerance rule; VTP-04 PASS for overwrite + independent read-back of this exact artifact/version. No byte-for-byte whole-file equality is claimed.
+- The repository's latest test-plan closure note is commit `2cda88abc61ce00ea458ea3c93e7f716bd517bcd`, blob `3c799d1059e2602974a16a6336b11042e50eef57`.
+- Still open: Behavior Hunter CI run/artifact NOT VERIFIED; host-wide live IN/OUT capture OPEN; VTP-06 and VTP-09 NOT RUN; VTP-07 execution NOT VERIFIED; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external recovery NOT RUN.
