@@ -872,3 +872,10 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - [NEXT-028](0.0/anchors/PALANG-0.0-NEXT-20261023-028-POST-REPAIR-AUDIT-AND-SEMANTIC-RECONCILIATION.md) — active post-repair audit and semantic reconciliation.
 - Baseline audit artifact `12528465986` read-back verified; post-repair audit pending.
 - Issues #20/#21 OPEN; fresh-session recovery NOT RUN.
+
+
+## EVT-0127 post-repair audit verified
+- [EVT-0127](architecture/BEHAVIOR-TRACE/EVT-0127-DEEP-REPOSITORY-AUDIT-AND-GAP-REGISTER-2026-10-23.md) — audit PASS; zero missing local links after five repairs.
+- [NEXT-028](0.0/anchors/PALANG-0.0-NEXT-20261023-028-POST-REPAIR-AUDIT-AND-SEMANTIC-RECONCILIATION.md) — active semantic reconciliation.
+- Run `40015739398`, artifact `12528636433`, SHA-256 `a3aeed395eed47f735144c49c68490ead39c7078ef4cbc84d0263719bca2b12c`.
+- Collision/duplicate/ambiguous-parent findings and EVT-0089 timezone remain open; fresh-session recovery NOT RUN; Issues #20/#21 OPEN.
