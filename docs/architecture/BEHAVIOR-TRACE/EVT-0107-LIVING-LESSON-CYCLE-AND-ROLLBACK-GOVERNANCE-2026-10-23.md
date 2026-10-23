@@ -54,5 +54,6 @@ A living architecture is not merely a document that says “living”. It must h
 ## Audit evidence update — 2026-10-23
 - First workflow audit: [Living Architecture Audit run 39885773714](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39885773714), commit tested: f174f98e789e8a7f17ab83c3d5f179e923b1dd77.
 - Result: FAIL, two findings — REFERENCE_INDEX_MISSING_FILE for docs/reference/REFERENCE_INDEX.md, and ARCHITECTURE_QUEUE_MISSING_LESSON_ID for LAL-20261023-001.
-- The audit ran while a multi-commit cross-index update was still in flight. Subsequent read-back from the current main branch shows the index and queue entry present. This is an evidence-backed explanation of timing, not permission to ignore the failure.
-- Required closure: execute a fresh audit against the reconciled current HEAD; only a passing result may close the structural audit gate. Preserve this failed run as historical evidence.
+- Root cause found: the audit script's lesson-surface list pointed to docs/reference/REFERENCE_INDEX.md, while the canonical file is docs/REFERENCE_INDEX.md. This was a real audit-script path defect and has been corrected in commit 3703a9ec653b5c3574fb3f5d9c8aa6eef67eb50b.
+- The second finding was that the queue did not contain the lesson ID in the tested commit; the current main-branch read-back shows it present.
+- Required closure: execute a fresh audit against the corrected and reconciled current HEAD; only a passing result may close the structural audit gate. Preserve the failed run as historical evidence.
