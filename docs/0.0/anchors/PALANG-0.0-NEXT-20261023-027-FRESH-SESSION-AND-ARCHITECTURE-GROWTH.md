@@ -30,3 +30,10 @@
 - Issue #21 historic census/semantic reconciliation: OPEN.
 - Library, Buffer, Persistent Memory and Dropbox destinations: not independently verified. Dropbox remains out of the active route unless explicitly reopened.
 - Previous 0.0 anchors and architecture versions remain preserved.
+
+
+## Latest verified CI after hash-chain hardening
+- [Run 40014712373](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40014712373): SUCCESS, 67 tests, SHA `965713b2ef2ca4873176015128313da9c03c1b48`.
+- Artifact `12527726978` inspected; SHA-256 `6ddf0b23d3f33db2cdfc6cb4b1e7154899bf1477a0466ba5c01a2a3c7325c07b`.
+- Ledger manifest PASS with verified hash chain; proposal gate owner-gated; both repository recovery directions RECOVERED.
+- Fresh-session recovery remains NOT RUN and is the next distinct test. Do not mark it complete from same-session repository CI.
