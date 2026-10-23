@@ -64,3 +64,11 @@
 - Five complete source fetches are recorded with blob SHAs and character counts in HALML. The count of 19 named full-source fetches is not a complete tree/history census.
 - Candidate CI [run 39920198247](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39920198247) passed all steps, including source graph, continuity gate, structural links, historic 0.0 graph, timestamps, manifest edges, UTC/Tehran semantic audit, compilation and durable host adapter.
 - Exact final-main audit status remains OPEN / NOT CONFIRMED unless a fresh full run is tied to the latest main SHA.
+
+
+## Latest source-census checkpoint — observed main state
+
+- Latest main HEAD observed after PR #28 and its Evidence Gate record: [`6d5a3e0`](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/6d5a3e0cecd87be8bec73e224ce086817062eef9), canonical UTC `2026-10-23T07:49:14Z`, Tehran equivalent `2026-10-23T11:19:14+03:30`.
+- The full Living Architecture Audit passed on the PR #28 candidate tree in run [39920198247](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39920198247).
+- A full Living Architecture Audit run tied to exact latest main HEAD `6d5a3e0cecd87be8bec73e224ce086817062eef9` was not independently surfaced by the available workflow-run retrieval. Therefore exact-main audit remains OPEN / NOT CONFIRMED.
+- Historical source census has progressed to 19 named full-source fetches; complete tree/history coverage and semantic rule-by-rule reconciliation remain OPEN under Issue #21. Runtime/cold-start remains OPEN under Issue #20.
