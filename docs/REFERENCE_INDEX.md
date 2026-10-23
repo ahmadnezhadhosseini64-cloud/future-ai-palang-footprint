@@ -796,3 +796,8 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - Event/lesson: [EVT-0113](architecture/BEHAVIOR-TRACE/EVT-0113-VISIBLE-CONTINUATION-AND-SOURCE-CLAUSE-EXCAVATION-2026-10-23.md) / [LAL-20261023-011](architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-011-VISIBLE-CONTINUATION-AND-RESUMABLE-WORK.md).
 - [Source clause crosswalk batch 2](architecture/ARCHITECTURE-LESSONS/SOURCE-CLAUSE-CROSSWALK-BATCH-2-2026-10-23-001.md) maps five full canonical sources to rules, components, tests and gaps.
 - Next 0.0: [NEXT-025](0.0/anchors/PALANG-0.0-NEXT-20261023-025-SOURCE-RULE-TEST-CROSSWALK-AND-COLD-START.md). NEXT-022/023/024 and Issues #20/#21 remain open as applicable.
+
+
+## Execution visibility and interaction IN-025 / OUT-025
+- [IN-025](0.0/anchors/PALANG-0.0-IN-20261023-025-STATUS-AND-VISIBLE-CONTINUATION.md) ↔ [OUT-025](0.0/anchors/PALANG-0.0-OUT-20261023-025-STATUS-AND-VISIBLE-CONTINUATION.md); event [EVT-0114](architecture/BEHAVIOR-TRACE/EVT-0114-STATUS-TRANSPARENCY-AND-RESUMABLE-EXECUTION-2026-10-23.md), lesson [LAL-20261023-012](architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-012-STATUS-TRANSPARENCY-AND-RESUMABLE-EXECUTION.md).
+- CURRENT-023 remains the current point 0. NEXT-025 remains the active next 0.0 work checkpoint; no earlier queue is cancelled.
