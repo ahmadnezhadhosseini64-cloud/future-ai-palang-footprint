@@ -107,3 +107,11 @@ Latest read-back values supersede the earlier rows above:
 - Static read-back comparison of all nine ULCG surfaces found no missing expected IDs. The audit script has been fetched back and the added checks are present.
 - Evidence Gate run [39899501989](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39899501989) reports Stable Retrieval Core VERIFIED and Independent Automated Execution PROVEN for tested commit `fe9ba1c16838986f18e6f037154424c4d9142e0c`. It does not execute the full Living Architecture Audit.
 - Actual Python audit / full structural workflow result on the current final HEAD: NOT CONFIRMED. Keep structural gate OPEN.
+
+
+## Addendum v1.0.5 — rollback lineage linked and current master read-back
+- Latest ULCG master blob SHA after linking the bounded rollback test: `264af93d4ccb1a0ade9fd79216370e087f4ed84a`.
+- Latest source-rule map blob SHA after linking EVT-0109 / LAL-007: `f2003cf2bbcbeeed5a2bfd2de3767e4ff63e6059`.
+- Both artifacts were fetched back after the append-only update.
+- Rollback governance is now connected across ULCG → EVT-0109 → LAL-20261023-007 → source map → Issue #20. The only PASS proven is the isolated Git ref rollback; global/runtime/cold-start/external rollback remain OPEN / NOT PROVEN.
+- Current master status: repository read-back verified; full structural audit on final HEAD still NOT CONFIRMED.
