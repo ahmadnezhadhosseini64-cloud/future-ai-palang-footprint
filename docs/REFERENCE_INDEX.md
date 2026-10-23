@@ -885,3 +885,9 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - [EVT-0127](architecture/BEHAVIOR-TRACE/EVT-0127-DEEP-REPOSITORY-AUDIT-AND-GAP-REGISTER-2026-10-23.md): audit [40016232683](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40016232683) PASS, artifact `12528337510` inspected.
 - [NEXT-028](0.0/anchors/PALANG-0.0-NEXT-20261023-028-POST-REPAIR-AUDIT-AND-SEMANTIC-RECONCILIATION.md) active; missing links 0; semantic collision/duplicate/alias review remains OPEN.
 - Behavior Hunter [40016232651](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40016232651): 67 tests PASS; hash chain verified.
+
+
+## Latest audit baseline — run 40016726450
+- [EVT-0127](architecture/BEHAVIOR-TRACE/EVT-0127-DEEP-REPOSITORY-AUDIT-AND-GAP-REGISTER-2026-10-23.md) and [NEXT-028](0.0/anchors/PALANG-0.0-NEXT-20261023-028-POST-REPAIR-AUDIT-AND-SEMANTIC-RECONCILIATION.md).
+- Audit [40016726450](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40016726450) PASS, artifact `12529305164` inspected, SHA-256 `20baa0684f3a99b612b8be6ebf03fc21b381d194ac11bbe51f7a493cb69aa5c6`.
+- Zero missing local links; identifier collision/duplicate/alias/parent review remains OPEN; one ambiguous timezone remains.
