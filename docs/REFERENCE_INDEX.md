@@ -759,12 +759,21 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 
 ## Living architecture update — interaction continuity
 
-| ICNG-HAIF-2026-10-23-001 | `docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001.md` v1.1.0 | Rule that every new input must connect to prior IN/OUT, events, open queues, prior checkpoints and next actions without abandoning ongoing work | ACTIVE / LIVING / APPEND-ONLY; repository write on update branch; final read-back and main-branch merge pending |
-| EVT-0111 / LAL-20261023-009 | `docs/architecture/BEHAVIOR-TRACE/EVT-0111-INTERACTION-CONTINUITY-NON-INTERRUPTION-2026-10-23.md` and `docs/architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-009-INTERACTION-CONTINUITY-NON-INTERRUPTION.md` | Independent event/lesson for continuity and non-interruption rule | REGISTERED on update branch; read-back/reconciliation pending |
-| IN-022 / OUT-022 / NEXT-023 | `docs/0.0/anchors/` | Independent interaction anchors and continuation checkpoint; historic census NEXT-022 remains open | REGISTERED on update branch; final commit-time binding and reconciliation pending |
+| ICNG-HAIF-2026-10-23-001 | `docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001.md` v1.1.0 | Rule that every new input must connect to prior IN/OUT, events, open queues, prior checkpoints and next actions without abandoning ongoing work | ACTIVE / LIVING / APPEND-ONLY; merged to main as PR #24; read-back verified |
+| EVT-0111 / LAL-20261023-009 | `docs/architecture/BEHAVIOR-TRACE/EVT-0111-INTERACTION-CONTINUITY-NON-INTERRUPTION-2026-10-23.md` and `docs/architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-009-INTERACTION-CONTINUITY-NON-INTERRUPTION.md` | Independent event/lesson for continuity and non-interruption rule | REGISTERED / READ-BACK VERIFIED; merged to main as PR #24 |
+| IN-022 / OUT-022 / NEXT-023 | `docs/0.0/anchors/` | Independent interaction anchors and continuation checkpoint; historic census NEXT-022 remains open | REGISTERED / READ-BACK VERIFIED; canonical commit-time binding recorded |
 
 
 ## Time binding and continuity — INT-20261023-022
 - Canonical UTC/Tehran time binding: [TIME-BINDING-INT-20261023-022](architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261023-022.md).
 - ULCG v1.1.0, EVT-0111, LAL-20261023-009, IN-022/OUT-022 and NEXT-023 are linked under the interaction-continuity governance rule.
 - Historic census NEXT-022 / Issue #21 and runtime recovery Issue #20 remain open; this interaction does not replace them.
+
+
+## Current point 0 — registration and living continuation (v1.2.0)
+- [CURRENT-023](0.0/anchors/PALANG-0.0-CURRENT-20261023-023-USER-CHECKPOINT-AND-CONTINUATION.md) is the active return point for this interaction.
+- Independent anchors: [IN-023](0.0/anchors/PALANG-0.0-IN-20261023-023-REGISTER-CURRENT-POINT-0.md) / [OUT-023](0.0/anchors/PALANG-0.0-OUT-20261023-023-REGISTER-CURRENT-POINT-0.md).
+- Event/lesson: [EVT-0112](architecture/BEHAVIOR-TRACE/EVT-0112-CURRENT-POINT-0-AND-NEXT-0.0-2026-10-23.md) / [LAL-20261023-010](architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-010-CURRENT-POINT-AND-NEXT-CHECKPOINT.md).
+- Next 0.0: [NEXT-024](0.0/anchors/PALANG-0.0-NEXT-20261023-024-CONTINUITY-HISTORIC-AND-COLD-START.md).
+- Canonical UTC/Tehran bindings: [TIME-BINDING-INT-20261023-023](architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261023-023.md).
+- Earlier NEXT-022 historic census and NEXT-023 continuity checkpoint remain preserved and OPEN; Issues #20 and #21 remain separate open workstreams.
