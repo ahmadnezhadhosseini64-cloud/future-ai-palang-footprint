@@ -1095,3 +1095,9 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 
 ## Verification checkpoint — INT-20261023-020
 - [VERIFY-INT-20261023-020](../architecture/BEHAVIOR-TRACE/VERIFICATION-CHECKPOINT-INT-20261023-020.md) records post-write read-back and separates registration from test, validation and runtime enforcement.
+
+
+## Controlled rollback/recovery test — EVT-0109
+- [EVT-0109](../architecture/BEHAVIOR-TRACE/EVT-0109-CONTROLLED-GIT-ROLLBACK-RECOVERY-TEST-2026-10-23.md) — bounded repository branch rollback evidence.
+- Baseline: beebca722fe52d1d628ecfad85dc480ee18a4d16; simulated candidate: fd5d19385ad3220bf0e8414bed7ad162256d4e1f; candidate retained on evidence branch, test branch restored to baseline.
+- Scope boundary: global/runtime/external rollback remains OPEN / NOT PROVEN.
