@@ -167,3 +167,11 @@ Each proposed insight includes:
 - [Run 40014712373](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40014712373) passed 67 tests on SHA `965713b2ef2ca4873176015128313da9c03c1b48`.
 - Artifact `12527726978`, ZIP SHA-256 `6ddf0b23d3f33db2cdfc6cb4b1e7154899bf1477a0466ba5c01a2a3c7325c07b`, inspected: ledger PASS, hash chain verified, zero errors; both recovery directions RECOVERED.
 - Interim test/fixture failures were fixed and retained as lessons in EVT-0126. Fresh-session recovery remains NOT RUN; no host-wide capture or external persistence claim.
+
+
+## 14. Deep repository audit feeds architecture growth — EVT-0127
+- The Living Architecture Audit is an active evidence source for model growth, not just a final status label. The inspected artifact found 5 broken links, 60 Stable ID collision groups, 71 Production ID collision groups, 7 reference-ID collision groups, 30 event-number collision groups, 11 exact duplicate groups, 13 ambiguous parent edges, 11 proposed alias edges and one unresolved timestamp.
+- Five local-link targets were checked against repository paths and repaired; the next audit must verify the new count before closure.
+- Collision/duplicate resolution must be semantic and history-aware. No bulk renaming, deletion or alias promotion is allowed solely because identifiers/content collide.
+- The separate workflow evidence shows bounded CI runtime transfer and automatic registration proof; it does not prove universal ChatGPT-host capture or arbitrary external persistence.
+- [NEXT-028](../../0.0/anchors/PALANG-0.0-NEXT-20261023-028-POST-REPAIR-AUDIT-AND-SEMANTIC-RECONCILIATION.md) is the active next gate.
