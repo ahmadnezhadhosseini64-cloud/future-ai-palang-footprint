@@ -31,3 +31,10 @@ The prior audit artifact is verified evidence of the earlier state, not proof of
 - Zero missing local links confirmed. Current snapshot: 2,673 files, 858 source files, 1,815 generated Evidence Gate files.
 - Remaining: 60 Stable ID collisions, 71 Production ID collisions, 7 reference-ID collisions, 30 event-number collisions, 11 exact duplicates, 13 ambiguous parent edges, 11 proposed aliases, one unresolved timezone at EVT-0089 line 21.
 - Behavior Hunter [run 40016232651](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40016232651) passed 67 tests; ledger hash chain PASS; both recovery manifests RECOVERED. Fresh-session recovery NOT RUN; Issues #20/#21 OPEN.
+
+
+## Latest audit snapshot — run 40016726450
+- [Living Architecture Audit](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40016726450) PASS on SHA `ffc4fb8136cdd4168910f8c0ba58d6619fddfa13`; artifact `12529305164`, ZIP SHA-256 `20baa0684f3a99b612b8be6ebf03fc21b381d194ac11bbe51f7a493cb69aa5c6`.
+- 2,680 files, 858 source files, 1,822 generated evidence files, 3,644 local-link edges, 0 missing links.
+- Remaining: 60 Stable ID collisions, 71 Production ID collisions, 7 reference-ID collisions, 30 event-number collisions, 11 exact duplicates, 13 ambiguous parent edges, 11 proposed aliases, one unresolved timezone.
+- This proves structural/link integrity on the audited SHA, not a clean semantic identity graph. Continue source/history adjudication without bulk renaming/deletion.
