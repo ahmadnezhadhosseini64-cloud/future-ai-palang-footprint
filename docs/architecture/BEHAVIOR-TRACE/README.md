@@ -475,3 +475,9 @@
 
 ## Verification checkpoint — INT-20261023-020
 - [VERIFY-INT-20261023-020](./VERIFICATION-CHECKPOINT-INT-20261023-020.md) — independent read-back ledger, workflow evidence and residual open gates.
+
+
+## EVT-0109 — controlled Git rollback and recovery test
+- [EVT-0109](./EVT-0109-CONTROLLED-GIT-ROLLBACK-RECOVERY-TEST-2026-10-23.md).
+- Governing lesson: [LAL-20261023-007](../ARCHITECTURE-LESSONS/lessons/LAL-20261023-007-ROLLBACK-AS-NEW-LINEAGE-EVENT.md).
+- Result: PASS for isolated branch ref restoration and candidate preservation; full-project rollback remains OPEN.
