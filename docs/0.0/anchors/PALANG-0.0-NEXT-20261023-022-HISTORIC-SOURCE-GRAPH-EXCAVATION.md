@@ -40,3 +40,9 @@ If the tree cannot be enumerated or an external capability is unavailable, prese
 
 ## Timestamp integrity
 The exact user-message timestamp is unavailable from repository evidence. Canonical repository time for this anchor will be added to the time ledger from its actual commit in UTC with the corresponding Tehran conversion; it is not a substitute for message time.
+
+
+## Tracking update — independent census issue
+- Historical census and semantic source graph: [Issue #21](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/21).
+- Runtime capture/cold-start: [Issue #20](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/20).
+- These remain separate gates; completion of one does not close the other.
