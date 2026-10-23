@@ -317,3 +317,13 @@ The exact user-message time was not exposed by repository tooling and must not b
 - Governing lesson: [LAL-20261023-007 v1.0.2](../../architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-007-ROLLBACK-AS-NEW-LINEAGE-EVENT.md).
 - Outcome: PASS for an isolated Git branch ref rollback. The test branch returned to the named baseline; the simulated candidate was absent from that branch and remained retrievable on the evidence branch.
 - Scope: this is not proof of global project rollback, host/runtime recovery or external destination restoration. Those remain OPEN / NOT PROVEN.
+
+
+
+## Addendum v1.1.0 — universal living component governance
+- New coordinating master: [ULCG](./UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001.md).
+- Governing lesson: [LAL-20261023-008](../../architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-008-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE.md).
+- Current event and independent anchors: [EVT-0110](../../architecture/BEHAVIOR-TRACE/EVT-0110-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-2026-10-23.md), [IN-021](../../0.0/anchors/PALANG-0.0-IN-20261023-021-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE.md), [OUT-021](../../0.0/anchors/PALANG-0.0-OUT-20261023-021-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE.md), [INBOX-007](../../architecture/LIVE-INBOX/entries/INBOX-20261023-007.md).
+- The six previously normalized lessons are only one batch. The ULCG source map now includes existing registration contracts/orchestrator, interaction continuity/validation masters, behavior foresight, historical audit and memory recovery source families. Full tree-wide inventory and semantic adjudication remain OPEN.
+- Rule: each component is independently sourced/versioned but graph-linked; ACTIVE/LIVING means the accepted version remains in force within its tested scope, not that every runtime capability is proven. Open gaps remain actionable.
+- Runtime/cold-start, destination-specific persistence and final-head structural audit remain separate gates under Issue #20 and the integration queue.
