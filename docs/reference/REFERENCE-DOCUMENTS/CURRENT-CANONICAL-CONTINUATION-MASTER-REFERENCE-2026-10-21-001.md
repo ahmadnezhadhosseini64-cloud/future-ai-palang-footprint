@@ -531,3 +531,11 @@ Current active gate remains [EVT-0122](../../architecture/BEHAVIOR-TRACE/EVT-012
 - Artifact `12525767024` downloaded and inspected; ZIP SHA-256 `2ac9491822fe8d250a30596cff38b1959b92066d7c192bc9f75821acac23fd0a`.
 - Architecture-update gate `READY_FOR_OWNER_REVIEW`, evidence verified, no errors, owner decision PENDING, no canonical mutation/promotion. Both IN/OUT recovery manifests `RECOVERED`, zero failures.
 - Active next checkpoint: [NEXT-026](../../0.0/anchors/PALANG-0.0-NEXT-20261023-026-FRESH-SESSION-AND-END-TO-END-LEARNING.md); fresh-session recovery remains NOT RUN. Issue #20/#21 remain OPEN.
+
+
+## Latest architecture update evidence — run 40010379551
+- [Run 40010379551](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40010379551): SUCCESS; 56 tests passed on tested SHA `0393d738583e8cc54977797dd470a31453fe9f00`.
+- Artifact `12525353595` downloaded and inspected; ZIP SHA-256 `9bf29f18268f720a5eedb423011ec6014b7f5da8ef22b589686faa9aa0188cd0`.
+- Architecture gate `READY_FOR_OWNER_REVIEW`; evidence VERIFIED; owner decision PENDING; no canonical mutation or promotion. Both recovery manifests `RECOVERED`, zero failures.
+- Current main later advanced to `3301ded46901530fbd746ecdde7db4411dec6c6f` through evidence-only automation commit `evidence/evidence-gate-40010379492.txt`; that exact post-bot SHA has not been rerun.
+- [NEXT-026](../../0.0/anchors/PALANG-0.0-NEXT-20261023-026-FRESH-SESSION-AND-END-TO-END-LEARNING.md) remains active; fresh-session recovery NOT RUN; Issue #20/#21 OPEN.
