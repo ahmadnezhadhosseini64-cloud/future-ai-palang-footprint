@@ -98,3 +98,7 @@ The first registered item is the user's request to make the live inbox a standar
 ## Current living component governance work — INBOX-20261023-007
 - [INBOX-007](entries/INBOX-20261023-007.md) links [ULCG](../../reference/REFERENCE-DOCUMENTS/UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001.md), [EVT-0110](../BEHAVIOR-TRACE/EVT-0110-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-2026-10-23.md), and independent anchors IN-021 / OUT-021.
 - Status: ACTIVE / LIVING / OPEN. The next actions are historical source excavation, graph reconciliation, final-head structural audit and runtime/cold-start proof under Issue #20.
+
+
+## Next continuation point — NEXT-0.0-20261023-022
+- [Full historic source graph excavation](../../0.0/anchors/PALANG-0.0-NEXT-20261023-022-HISTORIC-SOURCE-GRAPH-EXCAVATION.md) is the declared next point after current IN-021 / OUT-021.
