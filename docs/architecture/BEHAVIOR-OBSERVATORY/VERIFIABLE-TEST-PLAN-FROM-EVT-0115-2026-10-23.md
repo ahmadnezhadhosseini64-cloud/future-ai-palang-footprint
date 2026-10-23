@@ -35,3 +35,16 @@
 ## Current conclusion
 
 The recovery route and tests are now specified in the repository architecture. This is a test plan, not proof that the mirror has synchronized. Library, Buffer, Persistent Memory, Dropbox, restart recovery, and external end-to-end execution remain unverified unless new evidence is added.
+
+
+## Live update — EVT-0116 (2026-10-23)
+
+- Behavior Hunter architecture: [PALANG-BEHAVIOR-HUNTER-TEST-GENERATION-AND-GROWTH-GATE-2026-10-23-001](./PALANG-BEHAVIOR-HUNTER-TEST-GENERATION-AND-GROWTH-GATE-2026-10-23-001.md).
+- Event: [EVT-0116](../BEHAVIOR-TRACE/EVT-0116-BEHAVIOR-HUNTER-LIVE-TEST-ACTIVATION-2026-10-23.md).
+- VTP-02: PARTIAL / FAIL-CLOSED. The live comparison found a contradictory stale Library status in the canonical audit; corrected in commit `a2374d7da36a5af69b1bdf17f6dfd673bc03c97f` (UTC `2026-10-23T17:34:39Z`, Tehran `2026-10-23T21:04:39+03:30`). Post-update read-back and mirror refresh remain pending.
+- VTP-03: length check PASS (8,915 vs 8,908; delta 7); semantic acceptance PENDING until the corrected source is mirrored and read back.
+- VTP-04: BLOCKED for this execution; Library read is available but a Library write/refresh action is not exposed through the current tool surface.
+- Behavior Hunter implementation paths: `scripts/behavior-hunter/generate_candidate_tests.py`; `tests/behavior-hunter/test_generate_candidate_tests.py`; `data/interaction-pairs/interaction-pairs.jsonl`; `.github/workflows/palang-behavior-hunter.yml`.
+- Workflow commit `9d908b15220a9f4a97fd1c56ae32edd393d18196` — UTC `2026-10-23T17:33:36Z`; Tehran `2026-10-23T21:03:36+03:30`. EVT-0116 commit `b3147c9fb16726eabe77858ec204dc5989907137` — UTC `2026-10-23T17:35:07Z`; Tehran `2026-10-23T21:05:07+03:30`.
+- Five unit tests are authored, but the actual CI run/artifact has not been independently retrieved: NOT VERIFIED, not PASS. Candidate generation is not execution success.
+- Live host capture remains OPEN: the generator consumes structured interaction records in the repository and does not yet automatically capture every ChatGPT interaction. No automatic Master promotion; successful tests feed Child/Rahm review only.
