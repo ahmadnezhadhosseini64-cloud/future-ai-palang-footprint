@@ -140,3 +140,9 @@ G. Extend rollback testing beyond Git refs only when a concrete runtime/external
 - Repository read-back and cross-surface integration: pending until the post-write verification checkpoint is recorded.
 - Historic census, global runtime capture, cold-start and global recovery: OPEN / NOT PROVEN.
 - This version must evolve by append-only successor versions. Do not replace prior master content without preserving lineage.
+
+
+## Addendum v1.0.1 — current point 0 and next 0.0
+- Current point 0: [IN-021](../../0.0/anchors/PALANG-0.0-IN-20261023-021-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE.md) / [OUT-021](../../0.0/anchors/PALANG-0.0-OUT-20261023-021-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE.md), governed by [EVT-0110](../../architecture/BEHAVIOR-TRACE/EVT-0110-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-2026-10-23.md).
+- Next 0.0: [NEXT-0.0-20261023-022 — full historic source graph excavation](../../0.0/anchors/PALANG-0.0-NEXT-20261023-022-HISTORIC-SOURCE-GRAPH-EXCAVATION.md).
+- The next checkpoint must expand beyond search excerpts, enumerate source candidates, fetch canonical sources, build source→rule→component→test→evidence graph, reconcile all registries and run structural audit on exact final HEAD.
