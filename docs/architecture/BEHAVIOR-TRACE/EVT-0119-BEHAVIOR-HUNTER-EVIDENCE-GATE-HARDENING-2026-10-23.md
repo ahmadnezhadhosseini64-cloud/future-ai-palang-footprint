@@ -68,3 +68,7 @@ No hidden chain-of-thought capture. Record only observable inputs/outputs, actio
 - Candidate test manifest: one candidate, `execution_status=NOT_RUN`; this correctly does not claim that the candidate test itself executed.
 - Current verified boundary: CI and artifact are now VERIFIED for this exact run/head/artifact. This does **not** prove remote evidence locators resolve, does not activate live host capture, and does not prove fresh-session 0.0 recovery.
 - Next active work item: EVT-0120 — implement evidence-locator resolution/provenance and then test fresh-session recovery. See master and queue.
+
+
+## Handoff update — EVT-0120 activated
+EVT-0119's CI and artifact gate is now PASS for run #27, 20 tests, and artifact ID `12522286856` (see the verification addendum above). The next work item is no longer “obtain a CI run”; it is [EVT-0120 — Evidence Locator Resolution and Cold Recovery](./EVT-0120-EVIDENCE-LOCATOR-RESOLUTION-AND-COLD-RECOVERY-2026-10-23.md). Do not confuse the earlier 20-test result with the later 32-test resolver run; EVT-0120 holds the later proof.
