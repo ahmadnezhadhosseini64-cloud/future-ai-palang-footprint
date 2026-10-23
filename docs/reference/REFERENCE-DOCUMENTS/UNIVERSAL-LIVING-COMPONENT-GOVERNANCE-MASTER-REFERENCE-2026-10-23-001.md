@@ -277,3 +277,10 @@ NEXT-024 is the next 0.0 checkpoint. It must resume from the prior open queue, n
 ### Version history
 - v1.0.0–v1.1.0: source-linked universal living-component governance and non-interruption rule.
 - v1.2.0: formalizes current point 0, next 0.0, and continuation of multiple open workstreams without resetting earlier checkpoints.
+
+
+### Canonical current-pointer reconciliation — 2026-10-23
+- The legacy pointer [PALANG-0.0-CURRENT-2026-10-20-001](../../../checkpoints/PALANG-0.0-CURRENT-2026-10-20-001.md) is preserved as historical lineage and explicitly points to CURRENT-023.
+- Current point 0: [CURRENT-023](../../0.0/anchors/PALANG-0.0-CURRENT-20261023-023-USER-CHECKPOINT-AND-CONTINUATION.md).
+- Next 0.0: [NEXT-024](../../0.0/anchors/PALANG-0.0-NEXT-20261023-024-CONTINUITY-HISTORIC-AND-COLD-START.md).
+- This pointer reconciliation does not close Issue #20, Issue #21 or the fresh exact-main audit gate.
