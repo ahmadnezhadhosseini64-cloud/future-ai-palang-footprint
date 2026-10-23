@@ -170,3 +170,10 @@ Next point remains [NEXT-0.0-20261023-022](../../0.0/anchors/PALANG-0.0-NEXT-202
 - [SRCMAP-2026-10-23-001](../../architecture/ARCHITECTURE-LESSONS/SOURCE-RULE-COMPONENT-TEST-MAP-2026-10-23-001.md) records the extracted operational rules, connected components, known tests and explicit proof gaps for the initial verified source batch.
 - The map differentiates prior structural audit evidence from a fresh audit of the current final HEAD, and distinguishes schema/fixture smoke tests from cold-start recovery.
 - Source map status: ACTIVE / LIVING / PARTIAL. It is a first mapped batch, not the complete graph. Issue #21 remains OPEN.
+
+
+## Addendum v1.0.6 — ULCG enforcement added to structural audit script
+- Audit script: [scripts/audit_living_architecture.py](../../../scripts/audit_living_architecture.py), blob SHA `5e35cf8f8f4e3ac73e0d716810c4c46726a9db90` at read-back.
+- The script now requires the ULCG master, EVT-0110, LAL-008, source-rule map, historical ledger, IN-021, OUT-021, NEXT-0.0-022, verification checkpoint, time binding and INBOX-007. It checks IDs/links across nine governance surfaces and reports the new coverage counts.
+- A read-back-based static check of the exact expected IDs across those nine surfaces returned no missing IDs. This is not the same as executing the Python audit or GitHub Actions workflow.
+- Status: AUDIT GATE IMPLEMENTED / READ-BACK VERIFIED; WORKFLOW EXECUTION ON CURRENT HEAD NOT CONFIRMED. Keep full structural audit OPEN until a real run on the reconciled HEAD passes.
