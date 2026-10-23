@@ -1,0 +1,26 @@
+# NEXT-028 — Post-repair audit and semantic graph reconciliation
+
+- Checkpoint ID: NEXT-028
+- Stable ID: PALANG-0.0-NEXT-20261023-028-POST-REPAIR-AUDIT-AND-SEMANTIC-RECONCILIATION
+- Version: 1.0.0
+- Status: ACTIVE / LIVING / POST-REPAIR-AUDIT-PENDING
+- Previous checkpoint: [NEXT-027](./PALANG-0.0-NEXT-20261023-027-FRESH-SESSION-AND-ARCHITECTURE-GROWTH.md)
+- Current pair: [IN-029](./PALANG-0.0-IN-20261023-029-LIVING-ARCHITECTURE-EVOLUTION.md) / [OUT-029](./PALANG-0.0-OUT-20261023-029-LIVING-ARCHITECTURE-EVOLUTION.md)
+- Audit event: [EVT-0127](../../architecture/BEHAVIOR-TRACE/EVT-0127-DEEP-REPOSITORY-AUDIT-AND-GAP-REGISTER-2026-10-23.md)
+- Canonical master: [CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE](../../reference/REFERENCE-DOCUMENTS/CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001.md)
+
+## Why this is next
+The Living Architecture Audit on commit `5b9169d0313ead50e724cc0e9d6cf366aa539aac` found five broken local links, 60 Stable ID collision groups, 71 Production ID collision groups, 7 reference-ID collision groups, 30 event-number collision groups, 11 exact-content duplicate groups, 13 ambiguous parent edges, 11 proposed aliases, and one unresolved timezone on EVT-0089 line 21. The five broken links were repaired with repository-grounded target paths; a post-repair audit must verify the result.
+
+## Execution order
+1. Inspect the newest Living Architecture Audit run on the post-repair SHA; download and read its artifact. Confirm missing-link count and record any new findings.
+2. Run/read back Cross-Layer Integrity Gate and Behavior Hunter on the same exact source SHA; keep run IDs and tested SHA separate from later evidence-only bot commits.
+3. Resolve the 5 former broken links only as verified by the new audit; do not infer success from the edit itself.
+4. Create a collision/duplicate adjudication ledger. For each candidate, inspect full canonical sources, Git history, inbound/outbound links and semantic role. Do not bulk rename IDs or merge files just because their IDs collide or content matches.
+5. Review 13 ambiguous parent edges and 11 proposed alias edges; promote only after source-backed adjudication and explicit tests.
+6. Keep EVT-0089's timezone unresolved unless evidence supplies a timezone; do not manufacture a UTC value.
+7. Run fresh-session recovery in a separate ChatGPT conversation using the EVT-0124 handoff prompt without pasting this conversation's answer/summary.
+8. Continue Issue #20 runtime capture/schema/destination proof and Issue #21 historical census as separate open workstreams.
+
+## Evidence boundary
+The prior audit artifact is verified evidence of the earlier state, not proof of the post-repair state. The post-repair audit is NOT RUN until a new run and artifact are inspected. Repository CI does not prove host-wide ChatGPT capture or external persistence.
