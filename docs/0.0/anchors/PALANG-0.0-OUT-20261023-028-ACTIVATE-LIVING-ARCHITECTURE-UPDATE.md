@@ -26,3 +26,10 @@ The living architecture-update capability is implemented and CI-verified as a pr
 - [GitHub Actions run 40010095560](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40010095560): SUCCESS; 56 tests passed on tested SHA `f8e8c44667be7bd6a48f62240432069a8a78bd84`.
 - Artifact ID `12525767024`; downloaded and inspected; ZIP SHA-256 `2ac9491822fe8d250a30596cff38b1959b92066d7c192bc9f75821acac23fd0a`.
 - Architecture update gate `READY_FOR_OWNER_REVIEW`; evidence hash verified; canonical mutation false; promotion false. Both recovery manifests `RECOVERED`, zero failures.
+
+
+## Latest evidence-gate run — 40010379551
+- [Run 40010379551](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40010379551): SUCCESS; 56 tests passed on tested SHA `0393d738583e8cc54977797dd470a31453fe9f00`.
+- Artifact `12525353595`; downloaded and inspected; ZIP SHA-256 `9bf29f18268f720a5eedb423011ec6014b7f5da8ef22b589686faa9aa0188cd0`.
+- Gate `READY_FOR_OWNER_REVIEW`; evidence VERIFIED; no errors; no canonical mutation/promotion. Both recovery directions `RECOVERED`, zero failures.
+- Later main HEAD `3301ded46901530fbd746ecdde7db4411dec6c6f` is evidence-only automation commit and was not separately rerun.
