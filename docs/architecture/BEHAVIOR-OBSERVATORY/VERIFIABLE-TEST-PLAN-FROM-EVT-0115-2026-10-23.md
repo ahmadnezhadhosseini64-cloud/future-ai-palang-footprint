@@ -152,3 +152,11 @@ EVT-0118 supersedes stale forward-looking phrases in EVT-0117 such as “impleme
 - Verified chain: NEXT-024 → canonical master → integration queue → EVT-0120 → resolver/evidence → next action; prior checkpoints/successor anchor files remained present.
 - Run #52 failed because one assertion used repository-root paths while the checkpoint correctly used relative Markdown links; assertion corrected and #53 passed. Preserve this failure as test-harness learning.
 - New active gate EVT-0122: bidirectional recovery starting independently from IN or OUT; NOT RUN. Separate fresh ChatGPT session and host-wide capture also remain NOT RUN / OPEN.
+
+
+## Current IN/OUT anchor-chain test — run #60
+- Run [#60](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40003479619): SUCCESS; 39 tests ran; OK; tested HEAD `11a8c4808491818df5cb8bf4bb6c3ca992687d95`.
+- Artifact ID `12521744939`, SHA-256 `d4a9f7e53019e4eddd730da42743313240feaa771d31665f69d57d17628d08e9`; four manifests downloaded and inspected.
+- Verified links include IN-026 → OUT-026, both → EVT-0121, NEXT-024 → EVT-0122, and canonical master/queue references to EVT-0121/EVT-0122.
+- Run #59 exposed missing IN-026 → OUT-026 link; corrected and covered by passing run #60.
+- Next active gate EVT-0122: bidirectional recovery from either anchor; not yet implemented/tested. Fresh ChatGPT session recovery and host-wide capture remain NOT RUN / OPEN.
