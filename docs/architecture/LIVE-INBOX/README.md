@@ -74,3 +74,11 @@ The first registered item is the user's request to make the live inbox a standar
 - [INBOX-20261023-005](./entries/INBOX-20261023-005.md) — چرخهٔ زندهٔ درس‌های معماری، نسخه‌گذاری بدون بازنویسی، راستی‌آزمایی و بازیابی.
 - Independent anchors: [IN-019](../../0.0/anchors/PALANG-0.0-IN-20261023-019-LIVING-LESSON-CYCLE.md) / [OUT-019](../../0.0/anchors/PALANG-0.0-OUT-20261023-019-LIVING-LESSON-CYCLE.md).
 - Event: [EVT-0107](../BEHAVIOR-TRACE/EVT-0107-LIVING-LESSON-CYCLE-AND-ROLLBACK-GOVERNANCE-2026-10-23.md).
+
+
+
+## Sixth inbox item — system-wide architecture execution
+- [INBOX-20261023-006](entries/INBOX-20261023-006.md) tracks the user's request to register the current interaction, update the living master, reconcile the architecture, execute follow-up packages and keep each step evidence-gated.
+- Independent anchors: [IN-020](../../0.0/anchors/PALANG-0.0-IN-20261023-020-LIVING-ARCHITECTURE-EXECUTION-CYCLE.md) / [OUT-020](../../0.0/anchors/PALANG-0.0-OUT-20261023-020-LIVING-ARCHITECTURE-EXECUTION-CYCLE.md).
+- Event: [EVT-0108](../BEHAVIOR-TRACE/EVT-0108-LIVING-ARCHITECTURE-EXECUTION-AND-EVIDENCE-CYCLE-2026-10-23.md).
+- Status: registered; historic lesson migration, runtime automation, fresh audit and rollback/recovery remain separately OPEN until proven.
