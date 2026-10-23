@@ -123,3 +123,8 @@ The following 14 files were fetched in full from the repository (not only from s
 - Complete source tree and lesson census: OPEN.
 - The six previous normalized lessons remain an initial batch, not a total count.
 - Next point: [NEXT-0.0-20261023-022](../../0.0/anchors/PALANG-0.0-NEXT-20261023-022-HISTORIC-SOURCE-GRAPH-EXCAVATION.md).
+
+
+## Dedicated tracking issue
+- Full historic source/rule/lesson graph census and semantic reconciliation: [Issue #21](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/21) — OPEN / ACTIONABLE.
+- Runtime/cold-start is separate: [Issue #20](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/20).
