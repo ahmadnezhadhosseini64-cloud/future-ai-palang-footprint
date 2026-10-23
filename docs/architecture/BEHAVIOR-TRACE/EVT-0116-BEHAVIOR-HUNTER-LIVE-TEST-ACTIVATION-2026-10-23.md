@@ -55,3 +55,10 @@ These are actual repository writes. Their existence is not, by itself, proof tha
 
 ## 6. Resume contract
 Start from EVT-0116 and the test plan. First read back the corrected audit and current master/queue. Then close the semantic mirror mismatch, retrieve CI execution evidence, and only then promote any passing test pattern into a reviewed Child/Rahm proposal. Do not repeat already passing tests unless code, fixture, dependencies, deployment or evidence changed.
+
+
+## Post-write read-back and continuation state
+- Repository artifact read-back completed after the initial writes. Current observed blob SHAs: audit `de1b75f07241c9b313e476af5f1417177ff78c10`; test plan before this event update `fcd250a9ab16022bac5aa8c3bab7e59991ce8e67`; Behavior Hunter spec `93108610b3e30d454efde61d950eee3440b29ae7`; master reference before its latest status addendum `f228bac8684dee3f88662c568ee4dc4b24f78200`; queue before its latest status addendum `c84b3d0ab4294c2ccddc3d863663a8e3419fc724`; observatory index `fd6d94f3ed3bec1bb23603eeaedbefa0765a8efc`; generator `5bc67ec4128b6d85f55bff70c80a9beb40cdb191`; unit tests `f95e67cf030e27964b962e77c36c3f82df0ce30e`; fixture `7ba9204e732035cfc7e5c69ccb9b9b721f899774`; workflow `6ac98ae03adda11eb3a94038a1c7c859bb250a30`.
+- Test-plan latest status commit `ae1943a91b5451cbc0afb35129043c305e4bb4dc`: UTC `2026-10-23T17:37:20Z`; Tehran `2026-10-23T21:07:20+03:30`.
+- Master latest status update commit `e8770d6be88ec9d92170e8bc36ec022b03c0307c`; queue latest status update commit `6b84d1435fc4dffde5cb1619803dfcb565981be3`. Their commit UTC/Tehran conversions must be read from actual commit metadata before any exact timestamp is quoted.
+- Confirmed status: repository write/read-back PASS for the listed artifacts; VTP-02 PARTIAL / FAIL-CLOSED pending refreshed Library mirror; VTP-03 length delta check PASS but semantic acceptance pending; VTP-04 blocked by absent Library write/refresh action; GitHub Actions run/artifact NOT VERIFIED; live host capture OPEN.
