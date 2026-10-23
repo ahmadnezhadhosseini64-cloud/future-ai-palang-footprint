@@ -28,3 +28,10 @@
 
 ## Next active action
 Implement and test bidirectional recovery from either IN or OUT to the paired interaction, event, current master, queue, evidence, open gaps and successor checkpoint. Then conduct a separate fresh-session recovery test. Preserve all prior anchors and do not re-run closed tests unless a material change justifies it.
+
+
+## Latest verification addendum — run #60
+- [Run #60](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40003479619) passed **39 tests** on tested HEAD `11a8c4808491818df5cb8bf4bb6c3ca992687d95`.
+- Artifact ID `12521744939`; SHA-256 `d4a9f7e53019e4eddd730da42743313240feaa771d31665f69d57d17628d08e9`; downloaded and four manifests inspected.
+- IN-026 → OUT-026 → EVT-0121 → NEXT-024 → master/queue → EVT-0122 links are checked by the cold-start regression.
+- Next active gate remains EVT-0122, bidirectional recovery from either IN or OUT. A separate fresh ChatGPT session and host-wide capture remain unverified.
