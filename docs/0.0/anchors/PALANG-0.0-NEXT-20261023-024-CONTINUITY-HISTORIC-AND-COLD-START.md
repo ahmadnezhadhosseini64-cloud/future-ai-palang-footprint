@@ -86,3 +86,11 @@ NEXT-024 is OPEN and resumable. It preserves NEXT-022 and NEXT-023. No open gate
 - Behavior Observatory index: [README](../../architecture/BEHAVIOR-OBSERVATORY/README.md).
 - Latest evidence gate: run #45 SUCCESS, 34 tests OK; artifact `12522836550`; controlled `repo://` file digest verified. The smoke record is `NOT RUN`, so only evidence integrity is verified.
 - Active work now: repository cold-start recovery test from this checkpoint. It must prove recovery of the canonical master, queue item, EVT-0120, resolver, evidence target and next action. This is separate from host-wide ChatGPT capture and separate from the historical census / Issue #21.
+
+
+## Current interaction handoff — IN-026 / OUT-026 / EVT-0121
+- Current request input: [IN-026](./PALANG-0.0-IN-20261023-026-REGISTER-ACTIVE-CONTINUATION.md).
+- Assistant output: [OUT-026](./PALANG-0.0-OUT-20261023-026-REGISTER-ACTIVE-CONTINUATION.md).
+- Registration/cold-start event: [EVT-0121](../../architecture/BEHAVIOR-TRACE/EVT-0121-REGISTER-ACTIVE-CONTINUATION-AND-COLD-START-RESULT-2026-10-23.md).
+- **Next active work:** [EVT-0122](../../architecture/BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-RECOVERY-2026-10-23.md) — recover the full interaction graph independently from either IN or OUT. This is not yet implemented or verified.
+- Repository cold-start regression from NEXT-024 passed in run #53 (38 tests) on its tested HEAD; the separate fresh-session recovery and host-wide capture remain unverified.
