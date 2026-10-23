@@ -1160,3 +1160,9 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 
 ## Time binding for IN-025 / OUT-025
 - [TIME-BINDING-INT-20261023-025](../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261023-025.md) records actual repository commit timestamps in UTC and their Tehran equivalents; it does not infer message timestamps.
+
+
+## Live continuation update — NEXT-024 / EVT-0120 (2026-10-23)
+- Current resumable checkpoint: [NEXT-024 — continuity, historic census and cold-start recovery](./anchors/PALANG-0.0-NEXT-20261023-024-CONTINUITY-HISTORIC-AND-COLD-START.md).
+- Latest resolver proof: [EVT-0120](../architecture/BEHAVIOR-TRACE/EVT-0120-EVIDENCE-LOCATOR-RESOLUTION-AND-COLD-RECOVERY-2026-10-23.md), run #45 SUCCESS, 34 tests OK, artifact ID `12522836550`. One real repository `repo://` locator resolved and content SHA-256 matched; the associated test remains NOT RUN.
+- Next action: fresh repository cold-start reconstruction from NEXT-024 through canonical master, integration queue, EVT-0120, evidence and next action. Keep historical source census / Issue #21 and runtime capture / Issue #20 open; preserve every prior 0.0 anchor.
