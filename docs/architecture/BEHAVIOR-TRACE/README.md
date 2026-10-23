@@ -531,3 +531,9 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - [EVT-0123](./EVT-0123-DEEP-EXCAVATION-AND-ARCHITECTURE-UPDATE-2026-10-23.md) records the excavation findings and current interaction pair [IN-027](../../0.0/anchors/PALANG-0.0-IN-20261023-027-DEEP-EXCAVATION-ARCHITECTURE-UPDATE.md) / [OUT-027](../../0.0/anchors/PALANG-0.0-OUT-20261023-027-DEEP-EXCAVATION-ARCHITECTURE-UPDATE.md).
 - [EVT-0122](./EVT-0122-BIDIRECTIONAL-IN-OUT-RECOVERY-2026-10-23.md) passed repository-state recovery on run 40005934719 (47 tests); both directions' manifests were inspected.
 - [EVT-0124](./EVT-0124-FRESH-SESSION-RECOVERY-2026-10-23.md) is the active next gate; fresh-session test is NOT RUN. Issue #20 and Issue #21 remain OPEN.
+
+
+## EVT-0125 — living architecture update capability
+- [EVT-0125](./EVT-0125-LIVING-ARCHITECTURE-UPDATE-CAPABILITY-2026-10-23.md) registers the proposal-validation gate and governance boundary.
+- Gate: `scripts/behavior-hunter/architecture_update_gate.py`; tests: `tests/behavior-hunter/test_architecture_update_gate.py`.
+- CI run/artifact verification pending; [EVT-0124](./EVT-0124-FRESH-SESSION-RECOVERY-2026-10-23.md) remains NOT RUN as it requires a separate session.
