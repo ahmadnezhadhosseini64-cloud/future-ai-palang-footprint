@@ -22,7 +22,7 @@ class ArchitectureInsightTests(unittest.TestCase):
                 "type": "test_log",
                 "locator": "artifact://ci/run-117/test-log",
                 "execution_id": "ci-run-117",
-                "source_sha": "0123456789abcdef0123456789abcdef01234567",
+                "source_sha": "0123456789abcdef0123456789abcdef01234567",\n                "content_sha256": "a" * 64,
             }] if result == "PASS" else [],
             "counterexamples": [],
         }
@@ -65,6 +65,14 @@ class ArchitectureInsightTests(unittest.TestCase):
         out = extract(self.record("PASS") | {"evidence": evidence}, 1)
         self.assertIn("evidence[0]_invalid_source_sha_format", out["issues"])
         self.assertIn("evidence[0]_locator_must_be_uri_or_path", out["issues"])
+
+    def test_missing_content_sha256_is_rejected_for_production_pass(self):
+        evidence = [{
+            "type": "test_log", "locator": "artifact://ci/run-117/log",
+            "execution_id": "ci-run-117", "source_sha": "0123456789abcdef0123456789abcdef01234567"
+        }]
+        out = extract(self.record("PASS") | {"evidence": evidence}, 1)
+        self.assertIn("evidence[0]_missing_content_sha256", out["issues"])
 
     def test_placeholder_evidence_is_rejected_in_production(self):
         evidence = [{
