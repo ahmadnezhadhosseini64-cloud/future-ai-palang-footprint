@@ -1328,3 +1328,9 @@ The queue index and the timestamp case must each be read back after this update.
 - Updated workflow `.github/workflows/palang-behavior-hunter.yml` to generate and upload both candidate-test and architecture-insight manifests; actual run/artifact remains NOT VERIFIED pending independent retrieval.
 - Result handling: PASS with evidence → pattern candidate; FAIL → regression/anti-pattern candidate; BLOCKED → architecture-gap candidate; NOT RUN → evidence-gap candidate. All are proposals requiring owner review, never automatic MASTER mutation.
 - Next: retrieve CI run/job/artifact evidence; fix any runtime issues; then implement live host adapter and restart recovery. Keep old anchors/failures intact.
+
+
+### TALL verification plan expansion — 2026-10-23
+- Test plan commit `c7406c20da1a92486f1e3b4eaa10e69048bb72a8`, UTC `2026-10-23T17:54:10Z`, Tehran `2026-10-23T21:24:10+03:30` adds TALL-T01..TALL-T10.
+- The matrix covers all four outcome classes, evidence-required PASS, source IDs, artifact generation, growth across architecture domains, live host capture and post-integration read-back.
+- Repository artifacts are registered/read-back verified; actual CI run/artifact remains NOT VERIFIED. Host adapter OPEN; restart recovery and historical 0.0 end-to-end test NOT RUN.
