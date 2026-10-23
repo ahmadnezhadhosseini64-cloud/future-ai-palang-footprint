@@ -438,3 +438,9 @@
 - Findings: repository artifacts are read-back verified; design is registered; the extractor's PASS evidence check is too shallow; schema/duplicate-ID validation is incomplete; fixture outcomes are illustrative only; CI runtime/artifact is not verified; live host capture is open; restart/0.0 end-to-end is not run.
 - Test-plan/EVT history contains contradictory/stale status paragraphs; preserve history but follow the explicit current-state reconciliation in the VTP addendum and EVT-0118.
 - Next gates TALL-H01..H10: strict schema/provenance, fixture-vs-production labeling, deterministic IDs, actual CI job/artifact evidence, status reconciliation, host capture, and fresh-session recovery. No automatic MASTER promotion.
+
+
+## Active continuation — EVT-0119 (2026-10-23)
+The next implementation step from EVT-0118 has been activated and committed: [EVT-0119 — Behavior Hunter Evidence Gate Hardening](../../architecture/BEHAVIOR-TRACE/EVT-0119-BEHAVIOR-HUNTER-EVIDENCE-GATE-HARDENING-2026-10-23.md). The extractor now validates required identity/version/observation fields, evidence-object shape, production PASS execution/source provenance, source-hash format, locator shape, fixture-only mode and duplicate event/test pairs. Tests were expanded and the workflow now labels the committed sample outcome records as fixture-only.
+
+**Current truth:** implementation files are committed; actual test/CI execution and artifact read-back are NOT VERIFIED. Remote locator resolution is not yet proven. Live host-wide IN/OUT capture remains OPEN; independent 0.0 fresh-session recovery remains NOT RUN. Continue by independently reading back final code/tests/workflow, obtaining actual Actions logs and artifact, correcting any failures, then running fresh-session recovery. No automatic MASTER mutation and no Dropbox detour unless explicitly reopened.
