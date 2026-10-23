@@ -144,10 +144,48 @@ for rel, label in ulcg_surfaces:
         if required_id not in content:
             errors.append(f"ULCG_SURFACE_MISSING_ID surface={label} id={required_id}")
 
+
+# Current point 0 / next 0.0 continuity gate.
+# This is structural policy verification, not runtime-wide capture or cold-start proof.
+continuity_required = {
+    "current point 0": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261023-023-USER-CHECKPOINT-AND-CONTINUATION.md",
+    "next 0.0 checkpoint": "docs/0.0/anchors/PALANG-0.0-NEXT-20261023-024-CONTINUITY-HISTORIC-AND-COLD-START.md",
+    "current input anchor": "docs/0.0/anchors/PALANG-0.0-IN-20261023-023-REGISTER-CURRENT-POINT-0.md",
+    "current output anchor": "docs/0.0/anchors/PALANG-0.0-OUT-20261023-023-REGISTER-CURRENT-POINT-0.md",
+    "current point event": "docs/architecture/BEHAVIOR-TRACE/EVT-0112-CURRENT-POINT-0-AND-NEXT-0.0-2026-10-23.md",
+    "current point lesson": "docs/architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-010-CURRENT-POINT-AND-NEXT-CHECKPOINT.md",
+    "current point time binding": "docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261023-023.md",
+}
+for label, rel in continuity_required.items():
+    if not (ROOT / rel).is_file():
+        errors.append(f"CONTINUITY_MISSING_REQUIRED_FILE label={label!r} path={rel}")
+
+continuity_surfaces = {
+    "ULCG_MASTER": ("docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001.md", ("ULCG v1.2.0", "CURRENT-023", "NEXT-024", "EVT-0112", "LAL-20261023-010")),
+    "REFERENCE_INDEX": ("docs/REFERENCE_INDEX.md", ("CURRENT-023", "NEXT-024", "TIME-BINDING-INT-20261023-023")),
+    "ZERO_ZERO_REGISTRY": ("docs/0.0/README.md", ("CURRENT-023", "NEXT-024", "IN-023", "OUT-023", "EVT-0112")),
+    "SOURCE_RULE_MAP": ("docs/architecture/ARCHITECTURE-LESSONS/SOURCE-RULE-COMPONENT-TEST-MAP-2026-10-23-001.md", ("CURRENT-023", "NEXT-024", "EVT-0112", "LAL-20261023-010")),
+    "ARCHITECTURE_QUEUE": ("docs/architecture/INTEGRATION-QUEUE/README.md", ("CURRENT-023", "NEXT-024", "Issue #20", "Issue #21")),
+    "LESSON_REGISTRY": ("docs/architecture/ARCHITECTURE-LESSONS/README.md", ("LAL-20261023-010", "EVT-0112", "NEXT-024")),
+    "BEHAVIOR_TRACE_INDEX": ("docs/architecture/BEHAVIOR-TRACE/README.md", ("EVT-0112", "LAL-20261023-010", "CURRENT-023", "NEXT-024")),
+    "INITIAL_MODEL_MASTER": ("docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md", ("CURRENT-023", "NEXT-024", "EVT-0112", "LAL-20261023-010")),
+}
+for label, (rel, required_ids) in continuity_surfaces.items():
+    path = ROOT / rel
+    if not path.is_file():
+        errors.append(f"CONTINUITY_SURFACE_MISSING_FILE surface={label} path={rel}")
+        continue
+    content = path.read_text(encoding="utf-8")
+    for required_id in required_ids:
+        if required_id not in content:
+            errors.append(f"CONTINUITY_SURFACE_MISSING_ID surface={label} id={required_id}")
+
 print("LIVING_ARCHITECTURE_AUDIT")
 print(f"required_files_checked={len(required)}")
 print(f"ulcg_required_files_checked={len(ulcg_required)}")
 print(f"ulcg_surfaces_checked={len(ulcg_surfaces)}")
+print(f"continuity_required_files_checked={len(continuity_required)}")
+print(f"continuity_surfaces_checked={len(continuity_surfaces)}")
 print("external_persistence_tested=false")
 print("chatgpt_all_conversation_capture_tested=false")
 if errors:
