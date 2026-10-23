@@ -537,3 +537,9 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - [EVT-0125](./EVT-0125-LIVING-ARCHITECTURE-UPDATE-CAPABILITY-2026-10-23.md) registers the proposal-validation gate and governance boundary.
 - Gate: `scripts/behavior-hunter/architecture_update_gate.py`; tests: `tests/behavior-hunter/test_architecture_update_gate.py`.
 - CI run/artifact verification pending; [EVT-0124](./EVT-0124-FRESH-SESSION-RECOVERY-2026-10-23.md) remains NOT RUN as it requires a separate session.
+
+
+## EVT-0126 — living architecture evolution
+- [EVT-0126](./EVT-0126-LIVING-ARCHITECTURE-EVOLUTION-AND-DEEP-AUDIT-2026-10-23.md) registers append-only architecture history validation.
+- [IN-029](../../0.0/anchors/PALANG-0.0-IN-20261023-029-LIVING-ARCHITECTURE-EVOLUTION.md) / [OUT-029](../../0.0/anchors/PALANG-0.0-OUT-20261023-029-LIVING-ARCHITECTURE-EVOLUTION.md) are the current interaction pair.
+- [NEXT-027](../../0.0/anchors/PALANG-0.0-NEXT-20261023-027-FRESH-SESSION-AND-ARCHITECTURE-GROWTH.md) is the active continuation. New CI/artifact read-back pending; fresh-session recovery NOT RUN.
