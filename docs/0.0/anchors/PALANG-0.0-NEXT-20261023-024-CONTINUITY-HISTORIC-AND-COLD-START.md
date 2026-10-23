@@ -69,3 +69,10 @@ NEXT-024 is OPEN and resumable. It preserves NEXT-022 and NEXT-023. No open gate
 - A new interaction visibility lesson and IN-024/OUT-024 anchors preserve the user correction without replacing CURRENT-023 or NEXT-024.
 - Next: add CI assertions for the new interaction and crosswalk, inspect the resulting audit evidence, then continue numbered-clause adjudication and runtime recovery.
 - New successor: [NEXT-025](./PALANG-0.0-NEXT-20261023-025-SOURCE-RULE-TEST-CROSSWALK-AND-COLD-START.md).
+
+
+## Live continuation update — EVT-0120 (2026-10-23)
+- [EVT-0120](../../architecture/BEHAVIOR-TRACE/EVT-0120-EVIDENCE-LOCATOR-RESOLUTION-AND-COLD-RECOVERY-2026-10-23.md) is now implemented and CI-verified: run #45 SUCCESS, 34 tests OK, artifact ID `12522836550`, ZIP SHA-256 `fc386cf66f30904b2bd0cc3eebb9f48fc0f9aefdba9b5e2919fed80e274336aa`.
+- A controlled non-fixture `repo://` locator resolved to a real repository file and its declared SHA-256 matched. The record's test status remains `NOT RUN`, and `production_claim_allowed=false`; only evidence integrity was verified.
+- Failures in runs #32–#34 and the SyntaxError correction remain preserved as learning evidence; run #35 proved the earlier resolver baseline, run #45 proves the controlled non-fixture locator step.
+- **Current next action:** perform a fresh-session recovery from NEXT-024, resolving the current master, queue, EVT-0120, evidence, and this next action without relying on the previous chat narrative. Then register the recovery result; preserve all prior 0.0 anchors and continue the historical source census/Issue #21 and runtime capture/Issue #20 tracks.
