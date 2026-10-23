@@ -83,3 +83,22 @@ CI run and uploaded artifact are NOT VERIFIED because the available GitHub actio
 - VTP-03: PASS for the accepted seven-character tolerance rule; the refreshed archival mirror includes additive reconciliation notes, so whole-file length differs intentionally.
 - VTP-04: PASS for this exact mirror artifact/version: overwrite succeeded and independent retrieval/read-back confirmed the new snapshot.
 - Remaining gates: VTP-06 restart recovery NOT RUN; VTP-07 scheduled execution NOT VERIFIED; VTP-09 historical 0.0 end-to-end preservation NOT RUN. Behavior Hunter CI run/artifact NOT VERIFIED and live host capture OPEN.
+
+
+## EVT-0117 architecture-learning verification extension
+The tests below are added to the existing plan; they do not replace VTP-01..10. Design and code presence are not execution evidence.
+
+| Test ID | Verification | Pass criterion | Current state |
+|---|---|---|---|
+| TALL-T01 | Extractor input validation | Missing IDs, invalid result, unknown domain and PASS without evidence are rejected with explicit reasons | Code/tests registered; actual CI run NOT VERIFIED |
+| TALL-T02 | PASS learning | Evidence-backed PASS yields only a pattern candidate with source IDs and no MASTER mutation | Code/tests registered; actual CI run NOT VERIFIED |
+| TALL-T03 | FAIL learning | FAIL yields regression/anti-pattern candidate; failure evidence retained | Code/tests registered; actual CI run NOT VERIFIED |
+| TALL-T04 | BLOCKED learning | BLOCKED yields architecture-gap candidate, not PASS | Code/tests registered; actual CI run NOT VERIFIED |
+| TALL-T05 | NOT RUN learning | NOT RUN yields evidence-gap candidate and cannot be interpreted as success | Code/tests registered; actual CI run NOT VERIFIED |
+| TALL-T06 | Manifest provenance | Each candidate links source event/test/stable IDs and evidence | Code/tests registered; actual CI run NOT VERIFIED |
+| TALL-T07 | Workflow artifact | CI produces and uploads candidate-test and architecture-insight JSON manifests | Workflow updated; actual run/artifact retrieval NOT VERIFIED |
+| TALL-T08 | Architecture growth breadth | Proposal domains are not restricted to Child/Rahm; owner review and counterexample checks remain required | Design registered; full automated validation PENDING |
+| TALL-T09 | Host-wide IN/OUT capture | A permitted live interaction is captured, anchored, read back, and recovered in a fresh session | OPEN / NOT RUN |
+| TALL-T10 | Canonical post-integration check | Approved change runs regression tests and is independently read back from the repository | NOT RUN |
+
+Implementation paths: `scripts/behavior-hunter/extract_architecture_insights.py`, `tests/behavior-hunter/test_extract_architecture_insights.py`, `data/interaction-pairs/test-outcomes.jsonl`, `.github/workflows/palang-behavior-hunter.yml`. The four outcome records are illustrative fixtures, not real production test results. The workflow-run listing interface available in this session only returns pull-request-triggered runs; no successful CI run/artifact could be independently confirmed, so all runtime claims remain NOT VERIFIED.
