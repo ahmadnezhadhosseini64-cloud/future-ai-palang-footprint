@@ -84,6 +84,41 @@ class EvidenceLocatorResolverTests(unittest.TestCase):
         self.assertEqual(result["status"], "UNRESOLVED")
         self.assertFalse(result["production_claim_allowed"])
 
+    def test_not_run_evidence_can_resolve_without_claiming_test_pass(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            target = root / "evidence.txt"
+            target.write_text("content to verify", encoding="utf-8")
+            digest = hashlib.sha256(target.read_bytes()).hexdigest()
+            record = {
+                "event_id": "EVT-NOT-RUN",
+                "test_id": "T-NOT-RUN",
+                "test_result": "NOT RUN",
+                "evidence": [{"type": "repository_file", "locator": "repo://evidence.txt",
+                              "content_sha256": digest, "source_sha": "0123456789abcdef0123456789abcdef01234567"}],
+            }
+            result = resolve_record(record, root)
+        self.assertEqual(result["status"], "RESOLVED")
+        self.assertTrue(result["evidence_integrity_verified"])
+        self.assertFalse(result["production_claim_allowed"])
+
+    def test_pass_evidence_requires_execution_identity_and_source_sha(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            target = root / "evidence.txt"
+            target.write_text("content to verify", encoding="utf-8")
+            digest = hashlib.sha256(target.read_bytes()).hexdigest()
+            record = {
+                "event_id": "EVT-PASS",
+                "test_id": "T-PASS",
+                "test_result": "PASS",
+                "evidence": [{"type": "repository_file", "locator": "repo://evidence.txt",
+                              "content_sha256": digest}],
+            }
+            result = resolve_record(record, root)
+        self.assertEqual(result["status"], "UNRESOLVED")
+        self.assertFalse(result["production_claim_allowed"])
+
     def test_generate_labels_all_fixture_records(self):
         with tempfile.TemporaryDirectory() as td:
             root = Path(td)
