@@ -64,6 +64,7 @@ def resolve_record(record, repo_root, source_mode="production"):
             "test_id": record.get("test_id"),
             "status": "FIXTURE_ONLY",
             "evidence": [],
+            "evidence_integrity_verified": False,
             "production_claim_allowed": False,
         }
     evidence = record.get("evidence", [])
@@ -73,6 +74,7 @@ def resolve_record(record, repo_root, source_mode="production"):
             "test_id": record.get("test_id"),
             "status": "UNRESOLVED",
             "evidence": [],
+            "evidence_integrity_verified": False,
             "production_claim_allowed": False,
             "reason": "evidence_must_be_list",
         }
@@ -82,6 +84,7 @@ def resolve_record(record, repo_root, source_mode="production"):
             "test_id": record.get("test_id"),
             "status": "UNRESOLVED",
             "evidence": [],
+            "evidence_integrity_verified": False,
             "production_claim_allowed": False,
             "reason": "pass_without_evidence",
         }
@@ -91,14 +94,24 @@ def resolve_record(record, repo_root, source_mode="production"):
             outcomes.append({"index": index, "status": "UNRESOLVED", "reason": "evidence_item_must_be_object"})
             continue
         result = resolve_locator(item.get("locator"), item.get("content_sha256"), repo_root)
+        if str(record.get("test_result", "")).strip().upper() == "PASS":
+            source_sha = item.get("source_sha")
+            execution_id = item.get("execution_id")
+            if not isinstance(execution_id, str) or not execution_id.strip():
+                result = {"status": "UNRESOLVED", "reason": "pass_evidence_missing_execution_id"}
+            elif not isinstance(source_sha, str) or not re.fullmatch(r"[0-9a-fA-F]{7,64}", source_sha.strip()):
+                result = {"status": "UNRESOLVED", "reason": "pass_evidence_missing_or_invalid_source_sha"}
         outcomes.append({"index": index, **result})
     status = "RESOLVED" if outcomes and all(item["status"] == "RESOLVED" for item in outcomes) else ("NO_EVIDENCE" if not outcomes else "UNRESOLVED")
+    test_result = str(record.get("test_result", "")).strip().upper()
+    pass_claim_allowed = status == "RESOLVED" and test_result == "PASS"
     return {
         "event_id": record.get("event_id"),
         "test_id": record.get("test_id"),
         "status": status,
         "evidence": outcomes,
-        "production_claim_allowed": status == "RESOLVED",
+        "evidence_integrity_verified": status == "RESOLVED",
+        "production_claim_allowed": pass_claim_allowed,
     }
 
 
