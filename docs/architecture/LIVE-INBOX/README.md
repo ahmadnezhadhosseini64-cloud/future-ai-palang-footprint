@@ -82,3 +82,9 @@ The first registered item is the user's request to make the live inbox a standar
 - Independent anchors: [IN-020](../../0.0/anchors/PALANG-0.0-IN-20261023-020-LIVING-ARCHITECTURE-EXECUTION-CYCLE.md) / [OUT-020](../../0.0/anchors/PALANG-0.0-OUT-20261023-020-LIVING-ARCHITECTURE-EXECUTION-CYCLE.md).
 - Event: [EVT-0108](../BEHAVIOR-TRACE/EVT-0108-LIVING-ARCHITECTURE-EXECUTION-AND-EVIDENCE-CYCLE-2026-10-23.md).
 - Status: registered; historic lesson migration, runtime automation, fresh audit and rollback/recovery remain separately OPEN until proven.
+
+
+## Time binding and historic lesson ledger — IN-020
+- Time binding: [TIME-BINDING-INT-20261023-020](../BEHAVIOR-TRACE/TIME-BINDING-INT-20261023-020.md).
+- Historic lesson ledger: [HALML-2026-10-23-001](../ARCHITECTURE-LESSONS/HISTORIC-LESSON-MIGRATION-LEDGER-2026-10-23-001.md).
+- Verification checkpoint: [VERIFY-INT-20261023-020](../BEHAVIOR-TRACE/VERIFICATION-CHECKPOINT-INT-20261023-020.md).
