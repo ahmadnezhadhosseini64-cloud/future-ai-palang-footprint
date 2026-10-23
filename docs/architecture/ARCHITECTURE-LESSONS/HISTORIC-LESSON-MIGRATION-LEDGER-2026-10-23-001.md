@@ -95,3 +95,31 @@ Targeted repository searches found additional canonical source families not full
 - Results establish that additional source families exist and must collaborate with the six normalized lessons. Search excerpts are discovery evidence only; each candidate still requires a full source fetch, version/status/provenance review, semantic comparison, local-link test and component mapping.
 - This is NOT the complete repository file-tree census. More source families and lessons may exist. Keep full inventory OPEN; do not infer absence from no search result.
 - Governing master: [ULCG](../../reference/REFERENCE-DOCUMENTS/UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001.md); event: [EVT-0110](../BEHAVIOR-TRACE/EVT-0110-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-2026-10-23.md).
+
+
+## Full-source retrieval checkpoint — 14 named source files fetched
+The following 14 files were fetched in full from the repository (not only from search snippets); their current blob SHA and character count were observed during this execution. This confirms existence/retrieval and supports source mapping, but it does not mean every internal rule has been extracted or reconciled.
+
+| Source | Blob SHA | Characters |
+|---|---|---:|
+| `docs/protocols/EXCAVATION-TO-REGISTRATION-GATE-2026-09-02.md` | `9bdbf9c63673396d5e50cff8cabb1e972394cc8f` | 2,826 |
+| `docs/architecture/AUTOMATIC_FINAL_REGISTRATION_ORCHESTRATOR.md` | `2b36f1c24eeff4eadd1f9f444f45173a8368ead0` | 3,490 |
+| `docs/reference/REFERENCE-DOCUMENTS/THREE-LAYER-SYNCHRONOUS-DURABLE-REGISTRATION-2026-10-06-001.md` | `e7024d50fbfd04f402ff7c56e61357a4fde0153d` | 8,487 |
+| `docs/reference/REFERENCE-DOCUMENTS/REGISTER-COMMAND-GOVERNING-BINDING-2026-10-12-001.md` | `b647f72c860a41c99a4c552cef26c86d2b8989fb` | 16,948 |
+| `docs/reference/REFERENCE-DOCUMENTS/THREE-LEVEL-GOVERNED-REGISTRATION-COMMAND-2026-10-06-001.md` | `78db3590df3317ba739c7684b727e17da3f4ee73` | 29,130 |
+| `docs/reference/REFERENCE-DOCUMENTS/EVERY-INPUT-OUTPUT-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001.md` | `32c7194fc76c2393b1f64fe390422cf01b86cc14` | 9,553 |
+| `docs/reference/REFERENCE-DOCUMENTS/EVERY-INTERACTION-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001.md` | `a12b00090ffd3b19f7282df94f4befb6f57eaad1` | 16,145 |
+| `docs/reference/REFERENCE-DOCUMENTS/LIVING-BEHAVIOR-ARCHITECTURE-FORESIGHT-MASTER-REFERENCE-2026-10-22-001.md` | `9f8c76da167bc3a3751f3beae9427c47c17d5fac` | 13,393 |
+| `docs/reference/REFERENCE-DOCUMENTS/INTERACTION-PAIR-LEDGER-AND-RECOVERY-MASTER-REFERENCE-2026-10-22-001.md` | `afa72cb2c3a5cdb5bea21cc64fc145ca7f1b213d` | 4,464 |
+| `docs/reference/REFERENCE-DOCUMENTS/EXECUTABLE-INTERACTION-LEDGER-VALIDATION-MASTER-REFERENCE-2026-10-22-001.md` | `f627a66d3415ae51a464b7b9da9cccd2fee2b0ee` | 4,906 |
+| `architecture/memory/MEMORY-PERSISTENCE-PROOF-MASTER-ARCHIVE-RECOVERY-BOOTSTRAP-2026-09-29.md` | `be0f9dd9b8714d649f4678a73d334c7913aa6763` | 23,915 |
+| `architecture/memory/PERSISTENCE-CONTINUITY-NO-DROP-RECOVERY-ARCHITECTURE-2026-09-29.md` | `cb0e84f214679b689e120f482c26a60ed5a54dc4` | 19,336 |
+| `docs/reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-AUDIT-FINDINGS-2026-10-21-001.md` | `ef5d6124f46dde761f7b2faf990878d582a5a04a` | 25,330 |
+| `docs/reference/REFERENCE-DOCUMENTS/PALANG-LIVING-REGISTRATION-AND-ANCHORING-MASTER-REFERENCE-2026-10-22-001.md` | `daa4ed03577c67df0a2fb78a64cab358145748dc` | 4,128 |
+
+### Interpretation
+- All 14 named sources: FETCHED / RETRIEVABLE at the recorded read-back point.
+- Full semantic extraction and conflict/overlap resolution: OPEN.
+- Complete source tree and lesson census: OPEN.
+- The six previous normalized lessons remain an initial batch, not a total count.
+- Next point: [NEXT-0.0-20261023-022](../../0.0/anchors/PALANG-0.0-NEXT-20261023-022-HISTORIC-SOURCE-GRAPH-EXCAVATION.md).
