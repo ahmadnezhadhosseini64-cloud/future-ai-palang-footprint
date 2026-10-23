@@ -68,3 +68,9 @@ The first registered item is the user's request to make the live inbox a standar
 - Required lifecycle: discover → capture → classify → register → read-back → operationalize → test → validate → integrate → activate → reassess → version successor.
 - Required history rule: append-only version succession; preserve previous verified baselines and failed attempts; recovery must name the restored version and preserve failure evidence.
 - Open: dedicated lesson inventory migration, automatic host-side capture/enforcement, and runtime rollback/recovery proof.
+
+
+### Canonical fifth inbox entry
+- [INBOX-20261023-005](./entries/INBOX-20261023-005.md) — چرخهٔ زندهٔ درس‌های معماری، نسخه‌گذاری بدون بازنویسی، راستی‌آزمایی و بازیابی.
+- Independent anchors: [IN-019](../../0.0/anchors/PALANG-0.0-IN-20261023-019-LIVING-LESSON-CYCLE.md) / [OUT-019](../../0.0/anchors/PALANG-0.0-OUT-20261023-019-LIVING-LESSON-CYCLE.md).
+- Event: [EVT-0107](../BEHAVIOR-TRACE/EVT-0107-LIVING-LESSON-CYCLE-AND-ROLLBACK-GOVERNANCE-2026-10-23.md).
