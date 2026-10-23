@@ -407,3 +407,11 @@
 - VTP-02 PASS for semantic key fields; VTP-03 PASS for the agreed seven-character tolerance rule; VTP-04 PASS for overwrite plus independent read-back of this artifact/version. No whole-file byte equality is claimed.
 - Latest test-plan closure note commit `ce6c0f7b370932c50be3dcbf21c7dee7baf67e3f`, blob `e6330f9ad69c4d571ad6a23a85286d00c8347c28`.
 - Behavior Hunter CI run/artifact remains NOT VERIFIED; live host adapter/capture remains OPEN. VTP-06 and VTP-09 remain NOT RUN; VTP-07 execution remains NOT VERIFIED. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external recovery NOT RUN.
+
+
+## EVT-0117 — توسعهٔ دامنهٔ یادگیری چشم پلنگ شکارچی
+- Audit event: [EVT-0117](../../architecture/BEHAVIOR-TRACE/EVT-0117-ARCHITECTURE-LEARNING-LOOP-AUDIT-2026-10-23.md) — Stable ID `PALANG-ARCHITECTURE-LEARNING-LOOP-AUDIT-2026-10-23-001`.
+- Canonical design: [Test-to-Architecture Learning Loop](../../architecture/BEHAVIOR-OBSERVATORY/TEST-TO-ARCHITECTURE-LEARNING-LOOP-2026-10-23-001.md) — Stable ID `PALANG-TEST-TO-ARCHITECTURE-LEARNING-LOOP-2026-10-23-001`, Version 1.0.0, Status ACTIVE / LIVING / DESIGN-REGISTERED / IMPLEMENTATION-PENDING.
+- Audit conclusion: the prior Child/Rahm-only framing was too narrow. Verified results, failures, blocked cases, unrun tests, user corrections, recurring patterns, and source/mirror drift may inform proposals across all architecture domains: interfaces, schemas, provenance, recovery, verification, interaction design, automation, privacy/security, patterns, regression and documentation.
+- New pipeline: result → insight/failure/gap → hypothesis → counterexample/rule comparison → design alternatives → prototype/regression → evidence-linked proposal → owner review → canonical integration → post-integration verification.
+- Guardrail: broader proposal scope, not uncontrolled autonomous mutation. No auto-promotion to MASTER; all 0.0 anchors and failures are preserved. Actual CI run/artifact, deterministic insight extractor, live host capture, and end-to-end recovery remain NOT VERIFIED / OPEN / PENDING as appropriate.
