@@ -78,3 +78,11 @@ The repository-side generator and CI workflow validate structured interaction-pa
 OBSERVATION → CANDIDATE TEST → INDEPENDENT RUN → EVIDENCE REVIEW → CHILD PROPOSAL → OWNER APPROVAL → MASTER INTEGRATION.
 
 The generator must never promote a behavioral pattern directly into MASTER. It may suggest what should grow; the evidence gate and owner decide what is allowed to grow.
+
+
+## 10. Expanded architecture learning scope — EVT-0117
+The original Child/Rahm route is not the exclusive output of a passing test. Behavior Hunter can propose evidence-backed improvements across any HAIF layer: architecture structure, interfaces/adapters, schemas/data contracts, provenance and event anchors, recovery/continuity, verification/governance, user interaction, automation/CI, privacy/security, reusable patterns/anti-patterns, regression suites, and documentation. FAIL/BLOCKED/NOT RUN and explicit user correction are also learning inputs.
+
+The required extended loop is: verified result → pattern/failure/gap extraction → hypothesis → compare existing rules and counterexamples → design options/trade-offs → isolated prototype/regression test → versioned evidence-linked proposal → owner review → canonical integration → post-integration read-back. One PASS can inspire a local hypothesis but does not prove a general pattern. Preserve counterexamples and all 0.0 anchors; avoid redundant retests unless evidence, implementation, dependency, deployment, risk, or acceptance criteria change. No automatic MASTER mutation.
+
+See [Test-to-Architecture Learning Loop](./TEST-TO-ARCHITECTURE-LEARNING-LOOP-2026-10-23-001.md) and [EVT-0117 audit](../BEHAVIOR-TRACE/EVT-0117-ARCHITECTURE-LEARNING-LOOP-AUDIT-2026-10-23.md). Status: design registered; insight extractor, tests for proposal generation, actual CI evidence, and live host capture remain pending/open.
