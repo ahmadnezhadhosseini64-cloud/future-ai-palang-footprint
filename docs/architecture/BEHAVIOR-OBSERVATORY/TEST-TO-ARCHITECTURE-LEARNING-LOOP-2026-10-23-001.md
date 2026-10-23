@@ -141,3 +141,13 @@ Each proposed insight includes:
 - Safety invariant: the gate only emits a decision manifest; it never mutates MASTER or canonical architecture. Promotion remains false even when an approval decision is represented; integration requires a separate explicit, reviewable change followed by regression and independent read-back.
 - Test cases cover valid proposal, missing schema fields, wrong/missing evidence, path traversal, protected targets, integration without approval and approval-state mismatch.
 - The previous statement that insight extraction and independent execution were pending is superseded by the implementation addenda above. Current CI status and artifact inspection must be recorded separately; live host-wide capture and fresh-session recovery remain unproven.
+
+
+## 11. Append-only architecture evolution ledger — EVT-0126
+- New validator: `scripts/behavior-hunter/validate_architecture_update_ledger.py`.
+- Regression suite: `tests/behavior-hunter/test_architecture_update_ledger.py`.
+- Version history: `data/interaction-pairs/architecture-update-ledger.jsonl`; version 1.0.0 is retained and version 1.1.0 records the user-authorized integration of ledger validation. Earlier entries are not rewritten.
+- CI runs the validator and emits `architecture-update-ledger.json`.
+- The validator checks required fields, unique change/version pairs, monotonic sequence, explicit supersedes links, source events, evidence references, rollback plan, and explicit owner approval for APPROVED/INTEGRATED states.
+- The validator is read-only: no canonical mutation, no history rewrite, and no approval of future proposals. It complements the evidence proposal gate; neither gate alone proves host-wide capture or fresh-session recovery.
+- Status: implementation registered; the exact new CI run and generated manifest must be read back before EVT-0126 can be marked CI-VERIFIED.
