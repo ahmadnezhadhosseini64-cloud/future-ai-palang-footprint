@@ -28,3 +28,5 @@
 
 ## Time integrity
 Repository registration time is the actual Git commit time in UTC. Tehran time must be derived from that same instant. The user-message timestamp is not guessed.
+
+- Interaction pair ID: `INT-20261023-026` (shared by IN-026 and OUT-026).
