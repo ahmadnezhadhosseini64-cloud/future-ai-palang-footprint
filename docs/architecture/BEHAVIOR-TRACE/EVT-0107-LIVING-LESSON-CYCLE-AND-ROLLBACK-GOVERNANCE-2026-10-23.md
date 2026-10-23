@@ -42,3 +42,10 @@ Create a dedicated append-only Architecture Lessons registry; route each materia
 
 ## Lesson
 A living architecture is not merely a document that says “living”. It must have a versioned state transition, an executable verification gate, immutable history, a recoverable baseline and evidence-driven revalidation. If any of these are absent, the gap remains visible and open.
+
+
+## Independent interaction anchors and live inbox
+- Input: [IN-019](../../0.0/anchors/PALANG-0.0-IN-20261023-019-LIVING-LESSON-CYCLE.md).
+- Output: [OUT-019](../../0.0/anchors/PALANG-0.0-OUT-20261023-019-LIVING-LESSON-CYCLE.md).
+- Live inbox: [INBOX-20261023-005](../LIVE-INBOX/entries/INBOX-20261023-005.md).
+- Lesson registry and lesson record remain the durable architecture destination; the inbox tracks triage and open implementation gates.
