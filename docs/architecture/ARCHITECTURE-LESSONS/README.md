@@ -169,3 +169,8 @@ State: six source-linked lesson files have been created and fetched back; this d
 ## Current point 0 lesson — LAL-20261023-010
 - [LAL-20261023-010](./lessons/LAL-20261023-010-CURRENT-POINT-AND-NEXT-CHECKPOINT.md) — the current interaction becomes a recoverable point 0; NEXT-024 is the next 0.0; previous checkpoints and open work remain linked and open.
 - Event: [EVT-0112](../BEHAVIOR-TRACE/EVT-0112-CURRENT-POINT-0-AND-NEXT-0.0-2026-10-23.md); anchors: [IN-023](../../0.0/anchors/PALANG-0.0-IN-20261023-023-REGISTER-CURRENT-POINT-0.md) / [OUT-023](../../0.0/anchors/PALANG-0.0-OUT-20261023-023-REGISTER-CURRENT-POINT-0.md).
+
+
+## LAL-20261023-011 — visible continuation
+- [LAL-20261023-011](./lessons/LAL-20261023-011-VISIBLE-CONTINUATION-AND-RESUMABLE-WORK.md) — visible milestones, resume from the queue, and do not imply silent background execution.
+- Event: [EVT-0113](../BEHAVIOR-TRACE/EVT-0113-VISIBLE-CONTINUATION-AND-SOURCE-CLAUSE-EXCAVATION-2026-10-23.md); anchors IN-024 / OUT-024; next point [NEXT-025](../../0.0/anchors/PALANG-0.0-NEXT-20261023-025-SOURCE-RULE-TEST-CROSSWALK-AND-COLD-START.md).
