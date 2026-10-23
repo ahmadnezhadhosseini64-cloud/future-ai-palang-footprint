@@ -4,7 +4,7 @@
 - Stable ID: PALANG-BEHAVIOR-HUNTER-EVIDENCE-GATE-HARDENING-2026-10-23-001
 - Production ID: BHEGH-HAIF-2026-10-23-001
 - Version: 1.0.0
-- Status: ACTIVE / LIVING / IMPLEMENTED-IN-REPOSITORY / READ-BACK-PENDING / RUNTIME-UNVERIFIED
+- Status: ACTIVE / LIVING / IMPLEMENTED-IN-REPOSITORY / CI-PASS / ARTIFACT-READ-BACK-VERIFIED / NEXT-GATE-OPEN
 - Parent: EVT-0118
 - Scope: next active execution step — harden the insight extractor and its regression tests; label illustrative workflow inputs as fixture-only.
 - Canonical time rule: use actual Git commit timestamp in UTC; derive Asia/Tehran from that same instant.
@@ -53,3 +53,18 @@ EVT-0118 found that a non-empty evidence list was treated as enough for PASS, mi
 
 ## Governance
 No hidden chain-of-thought capture. Record only observable inputs/outputs, actions, results, corrections and minimum necessary evidence. Preserve all prior 0.0 anchors and historical status snapshots. No automatic MASTER mutation; structural/normative/permission/production-impact changes require owner review.
+
+
+## Execution and artifact verification addendum — 2026-10-23
+
+- GitHub Actions workflow: [Palang Behavior Hunter run #27](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40001413960).
+- Run ID: `40001413960`; head SHA: `4f2bfe0bbe99f4764989d621bfad184eb84d6d7e`; event: push to `main`.
+- Run conclusion: SUCCESS. Job `generate-and-verify` completed successfully.
+- Test evidence from job log: **20 tests ran; OK**. This includes the expanded extractor suite and existing candidate-test generator tests.
+- Artifact: `palang-behavior-hunter-evidence-manifests`; artifact ID `12522286856`; uploaded at UTC `2026-10-23T18:12:43Z` / Tehran `2026-10-23T21:42:43+03:30`.
+- Artifact ZIP SHA-256: `def2ce8b727e4965ecfb894c060d558e67bb853c0241d56e5e81c6fbdf921cf3`.
+- Independent download and content inspection confirmed both `architecture-insights.json` and `candidate-tests.json`.
+- Insight manifest: `source_mode=FIXTURE_ONLY`, 4 proposed records, 0 rejected records, 0 duplicate rows, 0 parse errors; all four insight records are `DEMONSTRATION_ONLY` and `NONE_FIXTURE_ONLY`. Therefore the synthetic fixture did not become production learning.
+- Candidate test manifest: one candidate, `execution_status=NOT_RUN`; this correctly does not claim that the candidate test itself executed.
+- Current verified boundary: CI and artifact are now VERIFIED for this exact run/head/artifact. This does **not** prove remote evidence locators resolve, does not activate live host capture, and does not prove fresh-session 0.0 recovery.
+- Next active work item: EVT-0120 — implement evidence-locator resolution/provenance and then test fresh-session recovery. See master and queue.
