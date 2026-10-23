@@ -3,7 +3,7 @@
 - Stable ID: PALANG-EVT-CURRENT-POINT-0-NEXT-0.0-2026-10-23-023
 - Production ID: EVT-0112
 - Version: 1.0.0
-- Status: REGISTERED / LIVING; final read-back and CI on reconciled HEAD pending
+- Status: REGISTERED / READ-BACK VERIFIED on main; candidate CI passed; fresh audit on exact final-main HEAD remains OPEN
 - Governing master: [ULCG v1.2.0](../../reference/REFERENCE-DOCUMENTS/UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001.md)
 - Lesson: [LAL-20261023-010](../ARCHITECTURE-LESSONS/lessons/LAL-20261023-010-CURRENT-POINT-AND-NEXT-CHECKPOINT.md)
 - Input/output: [IN-023](../../0.0/anchors/PALANG-0.0-IN-20261023-023-REGISTER-CURRENT-POINT-0.md) / [OUT-023](../../0.0/anchors/PALANG-0.0-OUT-20261023-023-REGISTER-CURRENT-POINT-0.md)
