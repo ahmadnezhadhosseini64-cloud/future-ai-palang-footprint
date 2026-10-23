@@ -25,7 +25,7 @@ EVT-0119 is now CI-verified for the exact GitHub Actions run and artifact record
 - Previous Behavior Hunter CI run #27: PASS, 20 tests; artifact independently inspected (see EVT-0119).
 - Live host-wide IN/OUT capture: OPEN / NOT PROVEN.
 - Fresh-session 0.0 recovery: NOT RUN.
-- Remote evidence locators: not resolved by the current local resolver; any unsupported external URL must remain UNRESOLVED, never PASS.
+- Remote evidence locators: external URLs remain unsupported and must remain UNRESOLVED, never PASS. One controlled non-fixture local repo:// locator has now resolved successfully in CI; this is a smoke test, not a production test PASS.
 - No automatic MASTER mutation; structural promotion requires owner review.
 - Do not reopen Dropbox unless the owner explicitly asks.
 
@@ -66,3 +66,14 @@ E. Start the fresh-session 0.0 recovery test only after A–D are verified.
 - Fresh-session recovery from an independent 0.0 through event → master → queue → evidence → next action: NOT RUN.
 - Live host-wide ChatGPT IN/OUT capture: OPEN / NOT PROVEN.
 - Next: run a controlled non-fixture evidence-resolution case using a real repository file and its SHA-256, then conduct the separate fresh-session 0.0 recovery test. Preserve the failures and all previous anchors.
+
+
+## Controlled non-fixture locator verification — run #45
+
+- Workflow: [Palang Behavior Hunter run #45](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40002313474).
+- Head SHA: `845a905af1639cd1c3302cd53ae04e08ac4bcbb2`; run success, **34 tests ran; OK**.
+- Artifact ID `12522836550`; artifact SHA-256 `fc386cf66f30904b2bd0cc3eebb9f48fc0f9aefdba9b5e2919fed80e274336aa`; uploaded UTC `2026-10-23T18:19:19Z`, Tehran `2026-10-23T21:49:19+03:30`.
+- Independently downloaded artifact and verified four manifests. In `evidence-resolution-production-smoke.json`, one non-fixture `repo://data/interaction-pairs/evidence/EVT-0120-RESOLVER-SMOKE-EVIDENCE.txt` record returned `RESOLVED`, `content_sha256_verified`, actual digest `1f5fefe857b5a8a5238c897ccb4dd637c1c8c4ecc00594b6aa887b87156bf44b`, 0 unresolved, 0 parse errors.
+- The smoke record is intentionally `test_result=NOT RUN`; `evidence_integrity_verified=true` but `production_claim_allowed=false`. It proves local evidence bytes matched their digest, not that the underlying architecture test passed.
+- Resolver now separates evidence integrity from permission to claim test PASS. PASS records additionally require execution identity and valid source SHA.
+- Active next step: fresh-session 0.0 recovery from the durable checkpoint, verifying anchor → master → queue → EVT-0120 → resolver source/evidence → next action. This cold recovery has not yet been run.
