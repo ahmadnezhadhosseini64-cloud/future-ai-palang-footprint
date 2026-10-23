@@ -51,3 +51,11 @@ Verify the exact CI run after these changes, inspect the `architecture-update-ga
 - `recovery-from-IN.json` and `recovery-from-OUT.json`: both `RECOVERED`, zero failures.
 - `architecture-insights.json`: 4 candidates proposed, 0 rejected, 0 duplicates.
 - Exact proof scope is the tested repository SHA/run. Fresh-session recovery remains NOT RUN; Issue #20 and Issue #21 remain OPEN.
+
+
+## Current-main revalidation — run 40010095560
+- [GitHub Actions run 40010095560](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40010095560): SUCCESS; 56 tests passed on tested SHA `f8e8c44667be7bd6a48f62240432069a8a78bd84`.
+- Artifact ID `12525767024`; downloaded and inspected; ZIP SHA-256 `2ac9491822fe8d250a30596cff38b1959b92066d7c192bc9f75821acac23fd0a`.
+- Update gate: `READY_FOR_OWNER_REVIEW`; evidence integrity verified; zero errors; owner decision PENDING; no canonical mutation or automatic promotion.
+- Both recovery manifests: `RECOVERED`, zero failures. Insight manifest: 4 proposals, 0 rejected, 0 duplicates.
+- This is repository/CI evidence only. Fresh-session recovery remains NOT RUN; Issue #20 and Issue #21 remain OPEN.
