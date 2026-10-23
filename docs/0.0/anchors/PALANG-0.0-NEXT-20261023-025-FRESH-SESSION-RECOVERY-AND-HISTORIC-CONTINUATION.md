@@ -31,3 +31,9 @@
 - Issue #21 historic source census/semantic reconciliation: OPEN.
 - Buffer, Library, Persistent Memory and Dropbox: NOT independently verified.
 - Do not replace NEXT-022, NEXT-023 or NEXT-024; this is a successor checkpoint.
+
+
+## Successor checkpoint — NEXT-026
+- [NEXT-026](./PALANG-0.0-NEXT-20261023-026-FRESH-SESSION-AND-END-TO-END-LEARNING.md) is the current continuation. NEXT-025 and earlier anchors remain preserved.
+- Architecture update capability: [EVT-0125](../../architecture/BEHAVIOR-TRACE/EVT-0125-LIVING-ARCHITECTURE-UPDATE-CAPABILITY-2026-10-23.md), CI PASS on tested SHA `4877bf89c5a72857d89f4dfd286a282ad9f3f932`, 56 tests; artifact `12525592052` read-back verified.
+- Fresh-session recovery remains NOT RUN; Issue #20/#21 remain OPEN.
