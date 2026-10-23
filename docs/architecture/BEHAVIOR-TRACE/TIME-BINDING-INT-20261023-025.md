@@ -69,3 +69,22 @@ The first candidate audit run [39984710314](https://github.com/ahmadnezhadhossei
 ## Canonical-clock qualification
 
 The UTC/Tehran rows above are the exact last-change timestamps for the current candidate-branch commits. They are useful provenance but are **not yet the canonical main-branch registration times**. If this PR is squash-merged, the changed files' canonical main last-change timestamp becomes the actual squash-merge commit timestamp. After merge, a successor time-binding entry must record that final main commit SHA and its actual UTC/Tehran pair; do not infer or prefill it.
+
+
+## Canonical main-branch registration — PR #32
+
+PR [#32](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/pull/32) was squash-merged as [dd9ecd9](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/dd9ecd9cbe027ee442c9fa9d867b238faa0afa52) at UTC `2026-10-23T16:14:39Z`, equivalent to Tehran `2026-10-23T19:44:39+03:30`.
+
+Because the following changed artifacts were included in that squash commit, their canonical main-branch last-change time is the same actual merge commit timestamp:
+
+| Artifact group | Canonical main commit | UTC | Tehran |
+|---|---|---|---|
+| ULCG master v1.2.3; IN-025 / OUT-025; EVT-0114; LAL-20261023-012; reference/0.0 indexes; source-rule map; queue; lesson/trace registries; initial-model master; NEXT-025; audit script; this time-binding record as merged | [dd9ecd9](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/dd9ecd9cbe027ee442c9fa9d867b238faa0afa52) | 2026-10-23T16:14:39Z | 2026-10-23T19:44:39+03:30 |
+
+## Audit status after merge
+
+- Candidate full audit run [39984866187](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39984866187) passed all 15 reported job steps after the version assertion was corrected.
+- This run tested the PR candidate merge ref, not the final main SHA after squash merge.
+- Fresh full Living Architecture Audit on exact final main HEAD `dd9ecd9cbe027ee442c9fa9d867b238faa0afa52` remains OPEN / NOT CONFIRMED until an exact-SHA run is surfaced and inspected.
+- Issue #21 (full historic source/rule census) and Issue #20 (runtime capture/reverse lookup/cold-start) remain OPEN.
+- This ledger update itself is a later main commit; its own canonical timestamp must be taken from its commit metadata and recorded by a successor binding, not predicted.
