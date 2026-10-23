@@ -54,3 +54,13 @@
 - The previous divergent candidate was not merged; it remains an unmerged historical branch. This clean candidate carries the IN-025 interaction update on top of current main.
 - Fresh PR audit and merge remain pending. Issue #21 (full historic source census) and Issue #20 (runtime/cold-start) remain OPEN.
 - The present update itself has a new last-change commit. Its canonical timestamp is obtained from that commit metadata; no time is guessed here.
+
+
+## Audit correction evidence
+
+The first candidate audit run [39984710314](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39984710314) failed one structural assertion because the older continuity surface still expected master version 1.2.2. The master had correctly advanced to 1.2.3. The assertion was corrected to match the current master version; this is a targeted correction, not a suppression of the check.
+
+- Corrected audit script commit: [b5433ce](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/b5433ce54e7a6237ef7bfaa09d96332ed2180bd8)
+- Canonical UTC: 2026-10-23T16:12:34Z
+- Tehran equivalent: 2026-10-23T19:42:34+03:30
+- A fresh rerun is required before treating the correction as passing.
