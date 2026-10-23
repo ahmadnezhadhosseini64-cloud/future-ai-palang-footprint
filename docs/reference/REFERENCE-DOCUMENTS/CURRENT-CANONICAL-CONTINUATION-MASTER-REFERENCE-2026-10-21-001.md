@@ -556,3 +556,10 @@ Current active gate remains [EVT-0122](../../architecture/BEHAVIOR-TRACE/EVT-012
 - Append-only ledger manifest PASS (2 records, 2 unique versions, 1 stream, zero errors); proposal gate READY_FOR_OWNER_REVIEW with verified evidence and fixture owner decision PENDING; both recovery directions RECOVERED, zero failures.
 - Current main after the run is evidence-only commit `de703573646fd5afad69432f90328d8366ffe8e1`; that exact bot commit was not rerun. Fresh-session recovery NOT RUN; Issue #20/#21 OPEN.
 - Current pair: [IN-029](../../0.0/anchors/PALANG-0.0-IN-20261023-029-LIVING-ARCHITECTURE-EVOLUTION.md) / [OUT-029](../../0.0/anchors/PALANG-0.0-OUT-20261023-029-LIVING-ARCHITECTURE-EVOLUTION.md). Active successor: [NEXT-027](../../0.0/anchors/PALANG-0.0-NEXT-20261023-027-FRESH-SESSION-AND-ARCHITECTURE-GROWTH.md).
+
+
+## Latest hash-chain verification — EVT-0126 / run 40014712373
+- [EVT-0126](../../architecture/BEHAVIOR-TRACE/EVT-0126-LIVING-ARCHITECTURE-EVOLUTION-AND-DEEP-AUDIT-2026-10-23.md) remains ACTIVE/LIVING and is CI-verified.
+- [Run 40014712373](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40014712373): SUCCESS, 67 tests, tested SHA `965713b2ef2ca4873176015128313da9c03c1b48`.
+- Artifact `12527726978` inspected; SHA-256 `6ddf0b23d3f33db2cdfc6cb4b1e7154899bf1477a0466ba5c01a2a3c7325c07b`. Ledger hash chain verified, zero errors; proposal gate owner-gated; both recovery directions RECOVERED.
+- The tested SHA was main HEAD at verification time. Fresh-session recovery NOT RUN; Issues #20/#21 OPEN. Previous architecture versions remain preserved.
