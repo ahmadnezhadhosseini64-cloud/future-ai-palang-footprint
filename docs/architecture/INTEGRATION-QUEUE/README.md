@@ -1318,3 +1318,6 @@ The queue index and the timestamp case must each be read back after this update.
 - VTP-02 semantic key fields PASS; VTP-03 accepted length tolerance PASS; VTP-04 write/read-back PASS. This is not whole-file byte equality and does not verify other Library files.
 - Updated test-plan evidence commit `ce6c0f7b370932c50be3dcbf21c7dee7baf67e3f`, blob `e6330f9ad69c4d571ad6a23a85286d00c8347c28`.
 - Behavior Hunter workflow run/artifact still NOT VERIFIED; automatic live ChatGPT IN/OUT capture OPEN. Continue with workflow execution evidence and host-adapter/restart recovery tests; no automatic Master promotion.
+
+
+| PALANG-TEST-TO-ARCHITECTURE-LEARNING-LOOP-2026-10-23-001 | گسترش چشم پلنگ شکارچی از مولد آزمون به حلقهٔ یادگیری و پیشنهاد معماری در همهٔ لایه‌ها | ACTIVE / LIVING / DESIGN-REGISTERED / IMPLEMENTATION-PENDING | [سند حلقهٔ یادگیری](../BEHAVIOR-OBSERVATORY/TEST-TO-ARCHITECTURE-LEARNING-LOOP-2026-10-23-001.md); [EVT-0117](../BEHAVIOR-TRACE/EVT-0117-ARCHITECTURE-LEARNING-LOOP-AUDIT-2026-10-23.md) | Implement TALL-01–08: insight schema/extractor, tests for all result classes, evidence-linked proposal manifest, actual CI artifact proof, host capture and restart recovery. No automatic MASTER promotion. |
