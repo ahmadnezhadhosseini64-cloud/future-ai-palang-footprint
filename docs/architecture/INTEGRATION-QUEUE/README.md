@@ -1150,3 +1150,11 @@ The queue index and the timestamp case must each be read back after this update.
 - علت خطا: پیاده‌سازی فرعی پیش از تثبیت مسیر کلان و reconciliation سند مادر بیش از حد در مرکز قرار گرفت.
 - اصلاح: ابتدا بازیابی 0.0/master/queue/Issue #20؛ سپس اجرای یک گام معماری؛ بعد ثبت نتیجه/خطا، read-back و به‌روزرسانی همهٔ نمایه‌ها.
 - باز: authorized producer، security/deployment، cold-start واقعی، end-to-end recovery و مقصدهای خارجی. Dropbox همچنان OPEN / WAITING و خارج از مسیر فعلی است.
+
+
+| EVT-0106-RESUME-HAIF-EXECUTION-NOT-DROPBOX-2026-10-23 | ازسرگیری اجرای مدل اولیه و ثبت درس خطای مسیر‌یابی | OPEN / PARTIAL — سه رکورد IN-018/OUT-018/EVT-0106 در مخزن نوشته و بازخوانی شدند؛ آزمون تازهٔ runtime هنوز اجرا نشده | سند مادر CMIND، دفتر ۰.۰، نمایهٔ مرجع، prototype/haif-v0، Issue #20 | [EVT-0106](../BEHAVIOR-TRACE/EVT-0106-RESUME-HAIF-EXECUTION-NOT-DROPBOX-2026-10-23.md) |
+
+## Continuation note — 2026-10-23
+- Active target: initial HAIF model and prototype/haif-v0.
+- Do not redirect work to Dropbox unless the user explicitly reopens that independent branch.
+- Next execution: inspect importer/schema/tests, then controlled ingest + cold-start recovery; capture actual test evidence or preserve NOT RUN.
