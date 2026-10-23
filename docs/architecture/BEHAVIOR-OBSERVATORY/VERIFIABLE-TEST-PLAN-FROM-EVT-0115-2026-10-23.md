@@ -12,11 +12,11 @@
 
 | Test ID | Test | Procedure / observable evidence | Pass criterion | Current state |
 |---|---|---|---|---|
-| VTP-01 | Repository write/read-back | Fetch the event, master reference, queue, and this test plan after each write; record paths and blob SHAs. | Every expected file is present and contains the intended Stable ID, status, and next action after independent fetch. | PARTIAL: EVT-0115, master and queue read-back were verified; this plan awaits its own post-write read-back. |
+| VTP-01 | Repository write/read-back | Fetch the event, master reference, queue, test plan, Behavior Hunter spec, generator, unit tests, fixture, workflow and observatory index; record paths and blob SHAs. | Each expected repository file is present after an independent fetch and contains the intended identifiers/content. | PASS for current listed repository artifacts: independent fetch/read-back completed; see EVT-0116 and latest blob SHAs recorded in the continuation evidence. This does not prove the CI workflow ran. |
 | VTP-02 | Semantic field reconciliation | Compare canonical audit and Library mirror for Stable ID, Version, Next Action, and Destination Statuses. | All key fields retain the same meaning. Any semantic mismatch is recorded as a failure even if lengths match. | NOT RUN for fresh current copies. |
 | VTP-03 | Accepted 7-character tolerance | Compare lengths and content; separately inspect key fields and any changed lines. | A 7-character length difference alone is not a blocker only when key-field meaning matches; no silent claim of byte-for-byte identity. | POLICY RECORDED; fresh comparison NOT RUN. |
 | VTP-04 | Library write and independent read-back | If mismatch requires repair, write from the canonical source, then re-open/read Library independently. Capture before/after evidence and content/field comparison. | Independent read-back confirms intended content and key-field match. A write response alone is insufficient. | BLOCKED / NOT VERIFIED until Library access works. |
-| VTP-05 | Destination-state honesty | Inspect claims for Repository, Library, Buffer, Persistent Memory, Dropbox, and external recovery separately. | Each destination has its own evidence-backed status; unknown or untested destinations remain NOT VERIFIED / NOT RUN. | POLICY CHECK DEFINED; recheck during execution. |
+| VTP-05 | Destination-state honesty | Inspect claims for Repository, Library, Buffer, Persistent Memory, Dropbox, and external recovery separately. | Each destination has its own evidence-backed status; unknown or untested destinations remain NOT VERIFIED / NOT RUN. | PARTIAL PASS: source audit's stale Library status was corrected; Library verification is limited to the older exact mirror, latest revision not synced. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external recovery NOT RUN. |
 | VTP-06 | Restart/retrieval from event only | In a fresh continuation, start from EVT-0115 and recover canonical path, master link, queue item, next action, accepted tolerance, and destination statuses without relying on this chat's narrative. | All required continuation fields can be recovered from repository records; gaps are explicitly listed. | NOT RUN. |
 | VTP-07 | Scheduled continuation claim | Inspect the one-off automation record and, after its scheduled time, capture actual execution/result evidence if available. | Distinguish “scheduled/created” from “executed successfully”; no completion claim without execution evidence and resulting read-back. | SCHEDULE WAS CREATED per conversation record; execution NOT VERIFIED. |
 | VTP-08 | UTC canonical timestamp | Fetch actual Git commit metadata for each repository change; derive Tehran time from that same UTC instant. | UTC matches real commit metadata; Tehran is a conversion of the same instant, not a separate guessed time. | Apply to this plan's commit and subsequent changes. |
@@ -48,3 +48,29 @@ The recovery route and tests are now specified in the repository architecture. T
 - Workflow commit `9d908b15220a9f4a97fd1c56ae32edd393d18196` — UTC `2026-10-23T17:33:36Z`; Tehran `2026-10-23T21:03:36+03:30`. EVT-0116 commit `b3147c9fb16726eabe77858ec204dc5989907137` — UTC `2026-10-23T17:35:07Z`; Tehran `2026-10-23T21:05:07+03:30`.
 - Five unit tests are authored, but the actual CI run/artifact has not been independently retrieved: NOT VERIFIED, not PASS. Candidate generation is not execution success.
 - Live host capture remains OPEN: the generator consumes structured interaction records in the repository and does not yet automatically capture every ChatGPT interaction. No automatic Master promotion; successful tests feed Child/Rahm review only.
+
+
+## Repository read-back evidence — EVT-0116 continuation
+
+Independent GitHub fetch/read-back returned the following current blobs after writes:
+- Canonical audit: `de1b75f07241c9b313e476af5f1417177ff78c10`.
+- This test plan: `a83665a32122b49210083cda1182902a5b85f18c`.
+- Behavior Hunter architecture: `93108610b3e30d454efde61d950eee3440b29ae7`.
+- EVT-0116: `e1e9a23905e20ae8308444d237f2f53bf6a99155`.
+- Master reference: `f228bac8684dee3f88662c568ee4dc4b24f78200`.
+- Integration queue: `c84b3d0ab4294c2ccddc3d863663a8e3419fc724`.
+- Behavior Observatory index: `fd6d94f3ed3bec1bb23603eeaedbefa0765a8efc`.
+- Generator: `5bc67ec4128b6d85f55bff70c80a9beb40cdb191`.
+- Unit tests: `f95e67cf030e27964b962e77c36c3f82df0ce30e` (read-back confirmed the corrected import path).
+- Structured IN/OUT fixture: `7ba9204e732035cfc7e5c69ccb9b9b721f899774`.
+- CI workflow: `6ac98ae03adda11eb3a94038a1c7c859bb250a30`.
+
+Repository commit timestamps observed from GitHub metadata (UTC canonical; Tehran derived):
+- Source audit correction `a2374d7da36a5af69b1bdf17f6dfd673bc03c97f`: UTC `2026-10-23T17:34:39Z`; Tehran `2026-10-23T21:04:39+03:30`.
+- Test-plan update `e30c08e434f8ae37d0668e0f146ab1cc4e37e4db`: UTC `2026-10-23T17:35:48Z`; Tehran `2026-10-23T21:05:48+03:30`.
+- Master update `e07d538c4d5ac407d2a3414c0f4d205270e76a6b`: UTC `2026-10-23T17:36:06Z`; Tehran `2026-10-23T21:06:06+03:30`.
+- Queue update `8a08b7e86a0992fb2b5eb279ea697db2caa72af9`: UTC `2026-10-23T17:36:10Z`; Tehran `2026-10-23T21:06:10+03:30`.
+- Unit-test import fix `5d3c8ae44296e949ff3a16a97817c9a06d839eee`: UTC `2026-10-23T17:36:23Z`; Tehran `2026-10-23T21:06:23+03:30`.
+- Observatory index update `e8e013f5360d5e7f533b5a56c2031d440a878a13`: UTC `2026-10-23T17:36:33Z`; Tehran `2026-10-23T21:06:33+03:30`.
+
+CI run and uploaded artifact are NOT VERIFIED because the available GitHub actions interface in this execution does not expose a workflow-run listing/dispatch operation. The workflow is configured to run on relevant pushes; do not mark the unit tests or generated artifact PASS until the actual run evidence is retrieved. Host-wide live capture remains OPEN.
