@@ -27,3 +27,12 @@ No silent/background progress claims. Provide visible, evidence-backed milestone
 ## Status
 
 EVENT REGISTERED IN BRANCH; read-back, CI run, merge, and exact-main audit are pending until evidence is retrieved.
+
+
+## Audit failure and correction lineage
+
+- First candidate audit: [run 39971900914](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39971900914), tested merge candidate `a8378ae8ff636ef9b0f413b77a192ac1066db062`.
+- Result: FAIL at structural audit with one precise finding: `CONTINUITY_SURFACE_MISSING_ID surface=ULCG_MASTER id=Version: 1.2.1`.
+- Cause: ULCG was advanced to v1.2.2, but an existing audit expectation still required v1.2.1. The new interaction/source matrix gates had already passed.
+- Correction: update the stale expected version string to v1.2.2. This is a test-contract correction; no prior evidence is deleted.
+- Status: correction registered; rerun required before validation or merge.
