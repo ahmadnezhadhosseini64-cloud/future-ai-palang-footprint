@@ -294,3 +294,12 @@ Preserve prior good baselines and failed attempts. Do not promote an untested su
 
 ### Time standard
 The exact user-message time was not exposed by repository tooling and must not be guessed. For each repository artifact, the canonical timestamp is the actual commit timestamp in UTC; show Tehran equivalent derived from that same instant. Operation and workflow timestamps remain separate contextual evidence.
+
+
+
+## Addendum v1.0.7 — time binding and historical lesson excavation (2026-10-23)
+- Canonical time-binding record: [TIME-BINDING-INT-20261023-020](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261023-020.md), with actual UTC commit times and Tehran equivalents for IN-020, OUT-020, EVT-0108, INBOX-20261023-006 and the first reconciliation surfaces.
+- Historic lesson migration ledger: [HALML-2026-10-23-001](../../architecture/ARCHITECTURE-LESSONS/HISTORIC-LESSON-MIGRATION-LEDGER-2026-10-23-001.md). This is an initial evidence-backed candidate batch, not a complete census.
+- Work packages are now materialized as records: interaction anchors, event, inbox item, time binding and historical lesson ledger. Master/index/queue reconciliation has been performed and must be judged by the read-back evidence checkpoint.
+- The first audit of the new interaction is a read-back/link reconciliation, not a claim of runtime-wide capture or rollback. The fresh full structural audit is still required on the final reconciled HEAD.
+- Remaining OPEN gates: complete historical lesson migration; convert confirmed rules into executable controls where possible; fresh structural audit; bounded rollback/recovery exercise; runtime-wide capture/enforcement; external persistence.
