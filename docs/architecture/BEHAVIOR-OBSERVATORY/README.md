@@ -150,4 +150,7 @@ Continue collecting observable interaction and evaluator behavior as evidence-ba
 - [رویداد ممیزی EVT-0117](../BEHAVIOR-TRACE/EVT-0117-ARCHITECTURE-LEARNING-LOOP-AUDIT-2026-10-23.md).
 - Domain expanded beyond Child/Rahm: structure, interfaces, schemas, provenance, recovery, verification, UX, automation, privacy/security, reusable patterns, regression and documentation.
 - PASS, FAIL, BLOCKED, NOT RUN, user correction and source drift can all generate evidence-linked design proposals; no automatic MASTER mutation.
-- Current status: design registered; implementation of insight extraction and its tests pending; CI run/artifact and host-wide capture not verified.
+- Current status after EVT-0119: extractor and expanded tests are committed and read-back is pending; actual runtime/CI run and artifact remain NOT VERIFIED; host-wide capture remains OPEN.
+
+
+- Active continuation event: [EVT-0119 — Behavior Hunter Evidence Gate Hardening](../BEHAVIOR-TRACE/EVT-0119-BEHAVIOR-HUNTER-EVIDENCE-GATE-HARDENING-2026-10-23.md). Implementation committed: stricter required fields, production evidence provenance, source hash/locator-shape validation, deterministic IDs, duplicate rejection, fixture-only labeling. CI and artifact remain NOT VERIFIED.
