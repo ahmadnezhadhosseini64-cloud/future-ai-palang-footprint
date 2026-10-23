@@ -311,6 +311,7 @@ Five more canonical sources have been fetched in full and provisionally mapped: 
 ### Addendum v1.2.3 — status visibility and interaction IN-025 / OUT-025
 
 - The user's concern about invisible progress is registered as [IN-025](../../0.0/anchors/PALANG-0.0-IN-20261023-025-STATUS-AND-VISIBLE-CONTINUATION.md) and the response as [OUT-025](../../0.0/anchors/PALANG-0.0-OUT-20261023-025-STATUS-AND-VISIBLE-CONTINUATION.md).
+- Time binding: [TIME-BINDING-INT-20261023-025](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261023-025.md).
 - Event and lesson: [EVT-0114](../../architecture/BEHAVIOR-TRACE/EVT-0114-STATUS-TRANSPARENCY-AND-RESUMABLE-EXECUTION-2026-10-23.md) / [LAL-20261023-012](../../architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-012-STATUS-TRANSPARENCY-AND-RESUMABLE-EXECUTION.md).
 - CURRENT-023 remains the user's requested current point 0; NEXT-025 remains the next 0.0 work checkpoint. This later status interaction does not replace either.
 - Progress visibility is a governance requirement: expose bounded milestones, identify what was actually changed/read back/tested, distinguish in-progress from complete, and never imply unattended background work.
