@@ -1110,3 +1110,9 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - Master: [ULCG](../reference/REFERENCE-DOCUMENTS/UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001.md).
 - Lesson: [LAL-20261023-008](../architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-008-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE.md).
 - Next point: expand source-linked historical lesson/rule census, then structural audit and runtime/cold-start work under Issue #20.
+
+
+## Current point 0 and next 0.0
+- Current point 0: [IN-021](anchors/PALANG-0.0-IN-20261023-021-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE.md) / [OUT-021](anchors/PALANG-0.0-OUT-20261023-021-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE.md), [EVT-0110](../architecture/BEHAVIOR-TRACE/EVT-0110-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-2026-10-23.md).
+- Next 0.0: [NEXT-0.0-20261023-022 — خاک‌برداری سرتاسری گراف منابع، قوانین و درس‌ها](anchors/PALANG-0.0-NEXT-20261023-022-HISTORIC-SOURCE-GRAPH-EXCAVATION.md).
+- The next point remains OPEN until source enumeration, provenance review, graph reconciliation and final-head audit evidence are recorded.
