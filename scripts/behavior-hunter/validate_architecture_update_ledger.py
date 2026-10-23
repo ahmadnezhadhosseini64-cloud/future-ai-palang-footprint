@@ -5,17 +5,19 @@ The validator never edits records or canonical architecture. It checks the histo
 provided in JSONL and emits a review manifest.
 """
 import argparse
+import hashlib
 import json
 from pathlib import Path
 
 ALLOWED_STATES = {"OBSERVED", "HYPOTHESIS", "PROPOSED", "PROTOTYPED", "VERIFIED", "APPROVED", "INTEGRATED", "REJECTED"}
-REQUIRED = {"change_id", "version", "sequence", "state", "supersedes", "owner_decision", "source_event_ids", "evidence_refs", "target_paths", "rollback_plan"}
+REQUIRED = {"change_id", "version", "sequence", "state", "supersedes", "owner_decision", "source_event_ids", "evidence_refs", "target_paths", "rollback_plan", "previous_record_sha256", "record_sha256"}
 
 def validate_records(records):
     errors, warnings = [], []
     seen_ids, seen_sequences = set(), set()
     latest_by_id = {}
     accepted = 0
+    previous_hash = "GENESIS"
     for i, r in enumerate(records, start=1):
         if not isinstance(r, dict):
             errors.append({"line": i, "code": "record_not_object"})
@@ -49,6 +51,14 @@ def validate_records(records):
             errors.append({"line": i, "code": "rollback_plan_required"})
         if r["owner_decision"] not in {"PENDING", "APPROVED", "REJECTED"}:
             errors.append({"line": i, "code": "invalid_owner_decision"})
+        if r.get("previous_record_sha256") != previous_hash:
+            errors.append({"line": i, "code": "hash_chain_link_mismatch", "expected_previous": previous_hash, "actual_previous": r.get("previous_record_sha256")})
+        unhashed = {k: v for k, v in r.items() if k != "record_sha256"}
+        canonical = json.dumps(unhashed, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")
+        actual_hash = hashlib.sha256(canonical).hexdigest()
+        if r.get("record_sha256") != actual_hash:
+            errors.append({"line": i, "code": "record_hash_mismatch", "expected": actual_hash, "actual": r.get("record_sha256")})
+        previous_hash = actual_hash
         prior = latest_by_id.get(cid)
         if prior is None:
             if r["supersedes"] not in (None, "", []):
@@ -58,8 +68,6 @@ def validate_records(records):
                 errors.append({"line": i, "code": "version_chain_break", "expected_supersedes": prior["version"], "actual_supersedes": r["supersedes"]})
             if isinstance(seq, int) and isinstance(prior["sequence"], int) and seq <= prior["sequence"]:
                 errors.append({"line": i, "code": "sequence_not_increasing"})
-            if prior["state"] == "INTEGRATED" and r["state"] not in {"OBSERVED", "HYPOTHESIS", "PROPOSED", "PROTOTYPED", "VERIFIED", "APPROVED", "INTEGRATED", "REJECTED"}:
-                errors.append({"line": i, "code": "invalid_state_regression"})
         if r["state"] == "INTEGRATED" and r["owner_decision"] != "APPROVED":
             errors.append({"line": i, "code": "integration_without_owner_approval"})
         if r["state"] == "APPROVED" and r["owner_decision"] != "APPROVED":
@@ -77,6 +85,7 @@ def validate_records(records):
         "change_streams": len(latest_by_id),
         "errors": errors,
         "warnings": warnings,
+        "hash_chain_verified": not any(e["code"] in {"hash_chain_link_mismatch", "record_hash_mismatch"} for e in errors),
         "canonical_mutation_performed": False,
         "history_rewritten": False,
         "governance": "Append-only validation only; it does not approve proposals or integrate canonical architecture.",
