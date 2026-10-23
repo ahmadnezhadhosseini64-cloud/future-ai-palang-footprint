@@ -333,3 +333,10 @@ The exact user-message time was not exposed by repository tooling and must not b
 - Current point 0: IN-021 / OUT-021 / EVT-0110 — universal source-linked living component governance.
 - Next 0.0: [NEXT-0.0-20261023-022](../../0.0/anchors/PALANG-0.0-NEXT-20261023-022-HISTORIC-SOURCE-GRAPH-EXCAVATION.md) — full historical source/rule/lesson graph excavation, canonical-source fetch, semantic adjudication, component mapping, cross-surface reconciliation and final-HEAD structural audit.
 - Do not mark this next point complete until its acceptance criteria and read-back evidence are satisfied.
+
+
+## Addendum v1.1.2 — verification and time provenance
+- [VERIFY-INT-20261023-021](../../architecture/BEHAVIOR-TRACE/VERIFICATION-CHECKPOINT-INT-20261023-021.md) records post-write read-back and gate boundaries for ULCG/EVT-0110.
+- [TIME-BINDING-INT-20261023-021](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261023-021.md) records canonical repository UTC times and their same-instant Tehran equivalents.
+- Current point 0 remains IN-021 / OUT-021 / EVT-0110; next 0.0 remains NEXT-0.0-20261023-022.
+- Structural audit on exact final HEAD and Issue #20 runtime/cold-start acceptance remain OPEN.
