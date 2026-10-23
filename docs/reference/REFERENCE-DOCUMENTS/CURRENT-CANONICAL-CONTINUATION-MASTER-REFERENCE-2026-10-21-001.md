@@ -579,3 +579,10 @@ Current active gate remains [EVT-0122](../../architecture/BEHAVIOR-TRACE/EVT-012
 - All five previously reported broken local links now pass; `local_markdown_links_missing=0`.
 - Still open: 60 Stable ID collision groups, 71 Production ID collision groups, 7 reference-ID collision groups, 30 event-number collision groups, 11 exact duplicates, 13 ambiguous parent edges, 11 proposed aliases, one ambiguous timestamp. Do not auto-merge/rename.
 - [NEXT-028](../../0.0/anchors/PALANG-0.0-NEXT-20261023-028-POST-REPAIR-AUDIT-AND-SEMANTIC-RECONCILIATION.md) remains ACTIVE/LIVING. Fresh-session recovery NOT RUN; Issues #20/#21 OPEN.
+
+
+## Latest integrated audit verification — EVT-0127 / run 40016232683
+- [EVT-0127](../../architecture/BEHAVIOR-TRACE/EVT-0127-DEEP-REPOSITORY-AUDIT-AND-GAP-REGISTER-2026-10-23.md) records the latest verified audit and behavior-hunter results.
+- Audit [40016232683](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40016232683) PASS, zero missing local links, artifact `12528337510` inspected (SHA-256 `c30af6bc37febe93e65f81b9b307e9607de7bd923c6dc0ab41576ca488c4e84d`).
+- Behavior Hunter [40016232651](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40016232651) passed 67 tests on the same SHA; ledger hash chain PASS, both recovery directions RECOVERED. Cross-Layer Integrity Gate [40016232821](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40016232821) PASS.
+- Open graph findings remain: 60 Stable ID, 71 Production ID, 7 reference-ID, 30 event-number collision groups; 11 exact duplicates; 13 ambiguous parent edges; 11 proposed aliases; one unresolved timestamp. [NEXT-028](../../0.0/anchors/PALANG-0.0-NEXT-20261023-028-POST-REPAIR-AUDIT-AND-SEMANTIC-RECONCILIATION.md) active; Issues #20/#21 OPEN.
