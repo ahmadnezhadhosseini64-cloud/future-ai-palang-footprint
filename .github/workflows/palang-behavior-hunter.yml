@@ -30,6 +30,8 @@ jobs:
         run: python scripts/behavior-hunter/generate_candidate_tests.py --input data/interaction-pairs/interaction-pairs.jsonl --output artifacts/behavior-hunter/candidate-tests.json
       - name: Generate architecture insight candidates from explicit outcome records
         run: python scripts/behavior-hunter/extract_architecture_insights.py --source-mode fixture --input data/interaction-pairs/test-outcomes.jsonl --output artifacts/behavior-hunter/architecture-insights.json
+      - name: Resolve evidence locators from explicit outcome records
+        run: python scripts/behavior-hunter/resolve_evidence_locators.py --source-mode fixture --input data/interaction-pairs/test-outcomes.jsonl --output artifacts/behavior-hunter/evidence-resolution.json
       - name: Upload generated manifests
         uses: actions/upload-artifact@v4
         with:
