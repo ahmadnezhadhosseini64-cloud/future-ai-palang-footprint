@@ -448,3 +448,10 @@
 - [INBOX-20261022-002](../LIVE-INBOX/entries/INBOX-20261022-002.md).
 - اسناد مادر: [UPRM](../../reference/REFERENCE-DOCUMENTS/PALANG-UNIVERSAL-PROJECT-RECONSTRUCTION-MASTER-2026-10-22-001.md) / [LBAF](../../reference/REFERENCE-DOCUMENTS/LIVING-BEHAVIOR-ARCHITECTURE-FORESIGHT-MASTER-REFERENCE-2026-10-22-001.md) / [CMIND](../../reference/REFERENCE-DOCUMENTS/CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-MASTER-REFERENCE-2026-10-22-001.md).
 - نکتهٔ اصلاحی: فایل تازهٔ EVT-0093 به‌اشتباه با شمارهٔ موجود برخورد کرد؛ سابقه حفظ و به EVT-0103 ارجاع شده است.
+
+
+## EVT-0107 — چرخهٔ زندهٔ درس‌های معماری، راستی‌آزمایی و بازگشت
+- [EVT-0107](./EVT-0107-LIVING-LESSON-CYCLE-AND-ROLLBACK-GOVERNANCE-2026-10-23.md)
+- [دفتر زندهٔ درس‌های معماری](../ARCHITECTURE-LESSONS/README.md) و [LAL-20261023-001](../ARCHITECTURE-LESSONS/lessons/LAL-20261023-001-LIVING-APPEND-ONLY-VERIFY-RECOVER-CYCLE.md).
+- موضوع: عملیاتی‌سازی درس‌ها، نسخه‌گذاری append-only، آزمون شواهدمحور و بازیابی از آخرین baseline سالم.
+- وضعیت: ثبت مخزن انجام شده؛ بازخوانی مستقل و تطبیق پیوندها پس از ثبت لازم است؛ runtime خودکار و مهاجرت همهٔ درس‌های تاریخی OPEN هستند.
