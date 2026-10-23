@@ -2,7 +2,7 @@
 
 - Stable ID: PALANG-TIME-BINDING-INT-20261023-020
 - Production ID: TIME-BINDING-INT-20261023-020
-- Version: 1.0.4 (append-only timestamp correction for LAL-007)
+- Version: 1.0.5 (append-only final source-target verification)
 - Interaction: INT-20261023-020
 - Input: [IN-020](../../0.0/anchors/PALANG-0.0-IN-20261023-020-LIVING-ARCHITECTURE-EXECUTION-CYCLE.md)
 - Output: [OUT-020](../../0.0/anchors/PALANG-0.0-OUT-20261023-020-LIVING-ARCHITECTURE-EXECUTION-CYCLE.md)
@@ -53,3 +53,10 @@ Rule: the actual commit time for the latest change to each artifact is its canon
 - Supersedes the LAL-20261023-007 row above: latest lesson commit [e9468f2](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/e9468f217ef38ab2c54c1ed8daa399b098aa0eef), canonical UTC 2026-10-23T02:11:40Z, Tehran equivalent 2026-10-23T05:41:40+03:30.
 - Evidence Gate run [39888181637](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39888181637) confirms the named Stable Retrieval Core / independent execution checks for tested commit f21eba4bb4629877ad61881f2aa02a1fe97396e6. This is not a full structural audit of the corrected lesson or final HEAD.
 - A fresh full structural audit on the corrected final HEAD remains OPEN / NOT CONFIRMED; the workflow is push-triggered, but its final run result is not available in this checkpoint.
+
+
+## Addendum v1.0.5 — latest verification checkpoint timestamp
+- Supersedes the Verification checkpoint row above: latest checkpoint commit [0d99ed7](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/0d99ed771952d49ae11faf2119a75be033f051a3), canonical UTC 2026-10-23T02:12:40Z, Tehran equivalent 2026-10-23T05:42:40+03:30.
+- Source targets for the six normalized lesson records were independently fetched and found to exist; LAL-20261023-007 source links were corrected in its version 1.0.1.
+- Evidence Gate run [39888263364](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39888263364) completed its named checks on commit e8b6aded752dd3456c8dbb9910b1deab1d51c283. This is not a full structural audit or global rollback proof.
+- Full structural audit of the final head and controlled rollback/recovery remain OPEN / NOT CONFIRMED.
