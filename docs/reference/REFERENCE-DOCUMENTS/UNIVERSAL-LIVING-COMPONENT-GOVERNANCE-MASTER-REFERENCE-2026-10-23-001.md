@@ -191,3 +191,10 @@ Next point remains [NEXT-0.0-20261023-022](../../0.0/anchors/PALANG-0.0-NEXT-202
 - The run passed the new ULCG source graph gate and the full workflow steps: structural/link audit, historical 0.0 graph audit, timestamp inventory, graph manifest/edge validation, semantic UTC/Tehran pair audit, compile checks and durable host-adapter tests.
 - The workflow change was merged in [`aa1b401`](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/aa1b401803000a67baf9c05f5af86780bee74ecf), canonical UTC `2026-10-23T04:21:33Z`, Tehran `2026-10-23T07:51:33+03:30`.
 - Status: EXECUTION-PROVEN for the tested PR tree. A separate full audit of the exact post-merge main HEAD has not been retrieved; keep that narrower gate OPEN. Historic census/semantic reconciliation (Issue #21) and runtime/cold-start (Issue #20) remain OPEN.
+
+
+## Addendum v1.0.9 — rollback lineage enforced and tested
+- Living Architecture Audit [run 39900157186](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39900157186) completed SUCCESS on tested PR commit `ebf95aeb2cdf22b142ea95a3496d2b80830a9133`.
+- The workflow now requires the bounded rollback event [EVT-0109](../../architecture/BEHAVIOR-TRACE/EVT-0109-CONTROLLED-GIT-ROLLBACK-RECOVERY-TEST-2026-10-23.md) and governing lesson [LAL-20261023-007](../../architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-007-ROLLBACK-AS-NEW-LINEAGE-EVENT.md), and checks their links in the ULCG master, source map, lesson registry and queue.
+- PR #23 merged as [`41288a3`](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/41288a3a5d12e0b1ccd1213d54ad57703a3e5a79), UTC `2026-10-23T04:25:03Z`, Tehran `2026-10-23T07:55:03+03:30`.
+- Execution-proven scope is the tested PR tree. Exact post-merge main-head audit remains unconfirmed. Full historic census (Issue #21) and runtime/cold-start/global recovery (Issue #20) remain OPEN.
