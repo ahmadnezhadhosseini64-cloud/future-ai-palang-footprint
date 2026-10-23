@@ -177,3 +177,10 @@ Next point remains [NEXT-0.0-20261023-022](../../0.0/anchors/PALANG-0.0-NEXT-202
 - The script now requires the ULCG master, EVT-0110, LAL-008, source-rule map, historical ledger, IN-021, OUT-021, NEXT-0.0-022, verification checkpoint, time binding and INBOX-007. It checks IDs/links across nine governance surfaces and reports the new coverage counts.
 - A read-back-based static check of the exact expected IDs across those nine surfaces returned no missing IDs. This is not the same as executing the Python audit or GitHub Actions workflow.
 - Status: AUDIT GATE IMPLEMENTED / READ-BACK VERIFIED; WORKFLOW EXECUTION ON CURRENT HEAD NOT CONFIRMED. Keep full structural audit OPEN until a real run on the reconciled HEAD passes.
+
+
+## Addendum v1.0.7 — rollback lineage remains a live governed path
+- Bounded Git branch rollback evidence: [EVT-0109](../../architecture/BEHAVIOR-TRACE/EVT-0109-CONTROLLED-GIT-ROLLBACK-RECOVERY-TEST-2026-10-23.md).
+- Governing rollback lesson: [LAL-20261023-007](../../architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-007-ROLLBACK-AS-NEW-LINEAGE-EVENT.md).
+- The tested isolated Git ref rollback remains PASS within its exact scope; the candidate is preserved on the evidence branch. It does not prove runtime, cold-start, global project or external-destination rollback.
+- Next distinct recovery target: cold-start/retrieval through the HAIF prototype under [Issue #20](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/20). Do not repeat the same branch-ref test without a material change, regression or contradictory evidence.
