@@ -151,3 +151,11 @@ Each proposed insight includes:
 - The validator checks required fields, unique change/version pairs, monotonic sequence, explicit supersedes links, source events, evidence references, rollback plan, and explicit owner approval for APPROVED/INTEGRATED states.
 - The validator is read-only: no canonical mutation, no history rewrite, and no approval of future proposals. It complements the evidence proposal gate; neither gate alone proves host-wide capture or fresh-session recovery.
 - Status: implementation registered; the exact new CI run and generated manifest must be read back before EVT-0126 can be marked CI-VERIFIED.
+
+
+## 12. Verified ledger validator execution — EVT-0126
+- [Run 40014035299](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40014035299): SUCCESS; 65 tests passed on tested SHA `11499b652676d6d89eea0fca42d528acc1d8b2e4`.
+- Artifact `12528275489`, SHA-256 `6ae23e424080b598395a558bc5f9ba4550e06e7dea9bda934f05f782d0526793`, downloaded and inspected.
+- Ledger manifest PASS: 2 records, 2 unique versions, 1 change stream, zero errors. Version 1.0.0 retained; version 1.1.0 records the explicitly authorized integration of the append-only validator.
+- Evidence proposal gate remains separate and owner-gated; fixture proposal decision is PENDING; no automatic promotion or canonical mutation.
+- Both repository recovery directions RECOVERED; fresh-session recovery remains NOT RUN; runtime-wide capture and external persistence remain unproven.
