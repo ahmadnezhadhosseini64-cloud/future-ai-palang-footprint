@@ -508,3 +508,9 @@
 ## Verification checkpoint and time binding — IN-024 / OUT-024
 - [VERIFICATION-CHECKPOINT-INT-20261023-024](./VERIFICATION-CHECKPOINT-INT-20261023-024.md) — candidate audit success, exact tested SHA, preserved failed run, and final-main audit boundary.
 - [TIME-BINDING-INT-20261023-024](./TIME-BINDING-INT-20261023-024.md) — canonical UTC and derived Tehran time.
+
+
+## EVT-0114 — status transparency and resumable execution
+- [EVT-0114](./EVT-0114-STATUS-TRANSPARENCY-AND-RESUMABLE-EXECUTION-2026-10-23.md), lesson [LAL-20261023-012](../ARCHITECTURE-LESSONS/lessons/LAL-20261023-012-STATUS-TRANSPARENCY-AND-RESUMABLE-EXECUTION.md).
+- Independent anchors: [IN-025](../../0.0/anchors/PALANG-0.0-IN-20261023-025-STATUS-AND-VISIBLE-CONTINUATION.md) / [OUT-025](../../0.0/anchors/PALANG-0.0-OUT-20261023-025-STATUS-AND-VISIBLE-CONTINUATION.md).
+- CURRENT-023 remains point 0; NEXT-025 remains next 0.0. Earlier checkpoints remain preserved.

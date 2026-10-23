@@ -108,3 +108,10 @@ The companion [SCRTC-B2 crosswalk](./SOURCE-CLAUSE-CROSSWALK-BATCH-2-2026-10-23-
 - STAR-HCR — UTC/Tehran semantic audit, runtime capture boundary, destination-specific recovery and cold-start.
 
 This remains provisional source mapping, not final authority adjudication. Existing executable evidence is mapped by scope; host-wide capture remains NOT PROVEN, and Issue #20 / Issue #21 remain OPEN.
+
+
+## Status visibility rule — IN-025 / OUT-025
+- Source event [EVT-0114](../BEHAVIOR-TRACE/EVT-0114-STATUS-TRANSPARENCY-AND-RESUMABLE-EXECUTION-2026-10-23.md), lesson [LAL-20261023-012](./lessons/LAL-20261023-012-STATUS-TRANSPARENCY-AND-RESUMABLE-EXECUTION.md).
+- Rule: each work unit must expose state, changed artifacts, read-back, test evidence, remaining gaps and next deterministic action. Silence is not evidence of background execution.
+- Component: interaction trace + current/next checkpoint + master/index/queue + structural audit.
+- Acceptance: IN-025/OUT-025 and EVT-0114/LAL-012 are linked in CI; historic and runtime gaps remain OPEN until their separate acceptance evidence passes.
