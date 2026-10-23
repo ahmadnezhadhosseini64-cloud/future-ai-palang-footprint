@@ -879,3 +879,9 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - [NEXT-028](0.0/anchors/PALANG-0.0-NEXT-20261023-028-POST-REPAIR-AUDIT-AND-SEMANTIC-RECONCILIATION.md) — active semantic reconciliation.
 - Run `40015739398`, artifact `12528636433`, SHA-256 `a3aeed395eed47f735144c49c68490ead39c7078ef4cbc84d0263719bca2b12c`.
 - Collision/duplicate/ambiguous-parent findings and EVT-0089 timezone remain open; fresh-session recovery NOT RUN; Issues #20/#21 OPEN.
+
+
+## Latest EVT-0127 audit — zero missing local links
+- [EVT-0127](architecture/BEHAVIOR-TRACE/EVT-0127-DEEP-REPOSITORY-AUDIT-AND-GAP-REGISTER-2026-10-23.md): audit [40016232683](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40016232683) PASS, artifact `12528337510` inspected.
+- [NEXT-028](0.0/anchors/PALANG-0.0-NEXT-20261023-028-POST-REPAIR-AUDIT-AND-SEMANTIC-RECONCILIATION.md) active; missing links 0; semantic collision/duplicate/alias review remains OPEN.
+- Behavior Hunter [40016232651](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40016232651): 67 tests PASS; hash chain verified.
