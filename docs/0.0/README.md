@@ -1184,3 +1184,10 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 ## Latest main-branch verification — run #66
 Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40003897972) SUCCESS; 39 tests OK; tested HEAD `3d7a27f082a1c121cc9f9d0bce53065fbcd0557a`; artifact ID `12523202337`; ZIP SHA-256 `a07abd33e8be8ab73f87ef35a1d3ed2faeeea8e75109b913f659ea9ccad7a92d`. Four manifests were independently downloaded and inspected. The production smoke record resolved one repository file and matched its content SHA-256, while remaining `NOT RUN` with `production_claim_allowed=false`.
 Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architecture/BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-RECOVERY-2026-10-23.md). Preserve all prior 0.0 anchors. Separate fresh-session recovery, Issue #20 live capture and Issue #21 historical census remain open.
+
+
+## Current continuation — IN-027 / OUT-027 / EVT-0123
+- [IN-027](./anchors/PALANG-0.0-IN-20261023-027-DEEP-EXCAVATION-ARCHITECTURE-UPDATE.md) / [OUT-027](./anchors/PALANG-0.0-OUT-20261023-027-DEEP-EXCAVATION-ARCHITECTURE-UPDATE.md) preserve the current deep-excavation request/result pair.
+- [EVT-0123](../architecture/BEHAVIOR-TRACE/EVT-0123-DEEP-EXCAVATION-AND-ARCHITECTURE-UPDATE-2026-10-23.md) records findings and architecture updates.
+- Active next checkpoint: [NEXT-025](./anchors/PALANG-0.0-NEXT-20261023-025-FRESH-SESSION-RECOVERY-AND-HISTORIC-CONTINUATION.md), with [EVT-0124](../architecture/BEHAVIOR-TRACE/EVT-0124-FRESH-SESSION-RECOVERY-2026-10-23.md).
+- EVT-0122 repository bidirectional recovery passed on its tested SHA/run; fresh-session recovery remains NOT RUN. Issue #20 and #21 remain OPEN. All earlier checkpoints remain preserved.
