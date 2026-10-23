@@ -1166,3 +1166,11 @@ The queue index and the timestamp case must each be read back after this update.
 - هر درس باید قاعدهٔ اجرایی، معیار پذیرش، شاهد آزمون و مسیر بازیابی داشته باشد.
 - نسخهٔ جدید append-only است؛ نسخهٔ قبلی و شکست‌ها پاک یا بازنویسی نمی‌شوند.
 - گام بعد: مهاجرت شاهددار درس‌های تاریخی، افزودن registry به ممیزی ساختاری و آزمون واقعی rollback از آخرین baseline سالم.
+
+
+## Audit retry ledger — living lesson registry
+- LALR-2026-10-23-001 and LAL-20261023-001 are present in the current queue and registry.
+- First audit run 39885773714 found the lesson ID missing in the tested intermediate commit and exposed an incorrect reference-index path in the audit script.
+- The audit script path was corrected in commit 3703a9ec653b5c3574fb3f5d9c8aa6eef67eb50b.
+- Retry run 39885912400 no longer reported the reference-index path error but still saw the queue before the lesson ID was present in the commit it checked.
+- Current main-branch read-back confirms the queue row exists. A fresh workflow must run against the reconciled HEAD before the structural gate is marked PASS. Historical failures remain preserved; do not erase them.
