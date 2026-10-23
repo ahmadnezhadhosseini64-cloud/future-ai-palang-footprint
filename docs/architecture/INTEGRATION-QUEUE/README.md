@@ -1236,3 +1236,9 @@ The queue index and the timestamp case must each be read back after this update.
 ## ULCG audit enforcement — implemented, execution still pending
 - `scripts/audit_living_architecture.py` now checks required ULCG artifacts and IDs across nine surfaces; source map: [SRCMAP-2026-10-23-001](../ARCHITECTURE-LESSONS/SOURCE-RULE-COMPONENT-TEST-MAP-2026-10-23-001.md).
 - Static read-back comparison: PASS for expected ID presence. Python/CI execution on the current reconciled HEAD: NOT CONFIRMED. Keep the structural audit gate OPEN until the exact run ID and tested SHA are inspected.
+
+
+## Rollback lineage gate — source-linked and actionable
+- Governing lesson: [LAL-20261023-007](../ARCHITECTURE-LESSONS/lessons/LAL-20261023-007-ROLLBACK-AS-NEW-LINEAGE-EVENT.md).
+- Bounded test evidence: [EVT-0109](../BEHAVIOR-TRACE/EVT-0109-CONTROLLED-GIT-ROLLBACK-RECOVERY-TEST-2026-10-23.md).
+- Runtime/cold-start and global/external recovery remain OPEN under Issue #20; do not infer global recovery from the bounded Git ref test.
