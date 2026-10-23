@@ -2,7 +2,7 @@
 
 - Stable ID: PALANG-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-2026-10-23-001
 - Production ID: ULCG-HAIF-2026-10-23-001
-- Version: 1.0.0
+- Version: 1.1.0
 - Lifecycle: ACTIVE / LIVING / APPEND-ONLY / EVOLVABLE
 - Evidence state: REGISTERED; repository read-back pending until independently fetched
 - Canonical clock: actual repository commit timestamp in UTC; Tehran equivalent is the same instant +03:30
@@ -198,3 +198,51 @@ Next point remains [NEXT-0.0-20261023-022](../../0.0/anchors/PALANG-0.0-NEXT-202
 - The workflow now requires the bounded rollback event [EVT-0109](../../architecture/BEHAVIOR-TRACE/EVT-0109-CONTROLLED-GIT-ROLLBACK-RECOVERY-TEST-2026-10-23.md) and governing lesson [LAL-20261023-007](../../architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-007-ROLLBACK-AS-NEW-LINEAGE-EVENT.md), and checks their links in the ULCG master, source map, lesson registry and queue.
 - PR #23 merged as [`41288a3`](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/41288a3a5d12e0b1ccd1213d54ad57703a3e5a79), UTC `2026-10-23T04:25:03Z`, Tehran `2026-10-23T07:55:03+03:30`.
 - Execution-proven scope is the tested PR tree. Exact post-merge main-head audit remains unconfirmed. Full historic census (Issue #21) and runtime/cold-start/global recovery (Issue #20) remain OPEN.
+
+
+## Version 1.1.0 — Interaction continuity and non-interruption governance
+
+- Stable addition ID: PALANG-INTERACTION-CONTINUITY-NON-INTERRUPTION-2026-10-23-001
+- Production ID: ICNG-HAIF-2026-10-23-001
+- Status: ACTIVE / LIVING / APPEND-ONLY / EVOLVABLE; runtime-wide automatic capture remains NOT PROVEN.
+- Event: [EVT-0111](../../architecture/BEHAVIOR-TRACE/EVT-0111-INTERACTION-CONTINUITY-NON-INTERRUPTION-2026-10-23.md)
+- Lesson: [LAL-20261023-009](../../architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-009-INTERACTION-CONTINUITY-NON-INTERRUPTION.md)
+- Independent anchors: [IN-022](../../0.0/anchors/PALANG-0.0-IN-20261023-022-INTERACTION-CONTINUITY.md) / [OUT-022](../../0.0/anchors/PALANG-0.0-OUT-20261023-022-INTERACTION-CONTINUITY.md)
+- Continuing work checkpoint: [NEXT-023](../../0.0/anchors/PALANG-0.0-NEXT-20261023-023-CONTINUITY-AND-OPEN-WORK.md)
+- Historic census checkpoint remains active: [NEXT-022](../../0.0/anchors/PALANG-0.0-NEXT-20261023-022-HISTORIC-SOURCE-GRAPH-EXCAVATION.md)
+- Runtime recovery remains open: [Issue #20](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/20); historic census remains open: [Issue #21](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/21).
+
+### Binding rule: continuity is not replaced by the newest input
+
+A new user input is a new node in the interaction graph, not an instruction to discard or silently supersede the existing work path. Intake must preserve and reconcile both (a) the prior active work queue/checkpoint and (b) the new input. It may reprioritize only when the user explicitly changes priority or evidence establishes a dependency; it must not silently abandon unfinished work.
+
+For each material interaction, create or update, as applicable:
+1. Independent IN and OUT anchors with stable identifiers and provenance.
+2. An event node connecting the pair to the prior checkpoint, master reference, applicable lesson/rule, source map, queue, open issues, tests and next checkpoint.
+3. Explicit predecessor/successor and related-work edges; never rely on adjacency in chat as the only connection.
+4. A continuity ledger entry that states what was already in progress before this input, what the input adds/changes, what remains open, and how both streams proceed.
+5. A repository commit-time binding in canonical UTC with the Asia/Tehran equivalent derived from the same instant; exact message time remains unknown unless independently available.
+6. Read-back and cross-index reconciliation evidence; statuses must reflect only completed checks.
+
+### Non-interruption operating algorithm
+
+`LOAD LAST VERIFIED CHECKPOINT → RESTORE OPEN WORK QUEUE → CAPTURE NEW IN/OUT → CLASSIFY DELTA → LINK TO PRIOR GRAPH → RECONCILE PRIOR + NEW WORK → EXECUTE THE NEXT UNBLOCKED ACTION → READ-BACK → UPDATE EVIDENCE/STATUS → ISSUE NEXT CHECKPOINT`
+
+- New input does not reset, replace or close a previous workstream by default.
+- Maintain a primary continuation track and any new parallel track explicitly. Here the primary historic source/rule census remains NEXT-022 / Issue #21; runtime capture and cold-start remain Issue #20. This interaction adds continuity governance to both, rather than replacing either.
+- When a new request conflicts with or reprioritizes earlier work, preserve the earlier state and record the explicit user decision or evidence that changed priority.
+- If work cannot continue in the current execution turn, write the exact next action, blockers, evidence state and links into the repository. Do not claim unattended background execution.
+- An architecture document being ACTIVE/LIVING does not mean runtime-wide capture is proven. The interaction hunter remains NOT EXECUTION-PROVEN until the runtime acceptance tests and evidence pass.
+
+### Acceptance gates
+
+- IN/OUT and event nodes are independently retrievable and connected to the prior checkpoint.
+- Both pre-existing open work and the new request appear in the next-action state.
+- The master, reference index, source-rule-component-test map, integration queue and 0.0 checkpoint agree on the rule and status.
+- The changed files are independently fetched back; exact content/identity is matched.
+- A fresh structural audit on the final reconciled HEAD is required before calling the complete change validated. Earlier passing runs on earlier SHAs remain historical evidence only.
+
+### Version history
+
+- v1.0.0: universal source-linked living-component governance.
+- v1.1.0: adds explicit non-interruption, predecessor/successor graph continuity, parallel open-work tracking, and paired IN/OUT continuity gates. Existing v1.0.0 content is preserved above; this is an additive successor, not a replacement of prior rules.
