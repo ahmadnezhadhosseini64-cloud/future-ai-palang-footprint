@@ -455,3 +455,13 @@
 - [دفتر زندهٔ درس‌های معماری](../ARCHITECTURE-LESSONS/README.md) و [LAL-20261023-001](../ARCHITECTURE-LESSONS/lessons/LAL-20261023-001-LIVING-APPEND-ONLY-VERIFY-RECOVER-CYCLE.md).
 - موضوع: عملیاتی‌سازی درس‌ها، نسخه‌گذاری append-only، آزمون شواهدمحور و بازیابی از آخرین baseline سالم.
 - وضعیت: ثبت مخزن انجام شده؛ بازخوانی مستقل و تطبیق پیوندها پس از ثبت لازم است؛ runtime خودکار و مهاجرت همهٔ درس‌های تاریخی OPEN هستند.
+
+
+
+## EVT-0108 — اجرای چرخهٔ زندهٔ معماری و شواهد
+- Event: [EVT-0108](./EVT-0108-LIVING-ARCHITECTURE-EXECUTION-AND-EVIDENCE-CYCLE-2026-10-23.md).
+- Input/output: [IN-020](../../0.0/anchors/PALANG-0.0-IN-20261023-020-LIVING-ARCHITECTURE-EXECUTION-CYCLE.md) / [OUT-020](../../0.0/anchors/PALANG-0.0-OUT-20261023-020-LIVING-ARCHITECTURE-EXECUTION-CYCLE.md).
+- Inbox: [INBOX-20261023-006](../LIVE-INBOX/entries/INBOX-20261023-006.md).
+- Governing master: [CMIND](../../reference/REFERENCE-DOCUMENTS/CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-MASTER-REFERENCE-2026-10-22-001.md).
+- Scope: full registration, execution tracking, historic lesson migration, executable gates, fresh audit and recovery test.
+- Status: tracker registered; each work package remains separately gated by read-back and real evidence.
