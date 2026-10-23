@@ -114,3 +114,16 @@
 - The workflow file was fetched back after merge; blob SHA `2fc910e5ff5094381abb3cf88a31b7d4c7dfdeb6`; the explicit ULCG gate is present.
 - Run 39899815040 passed the candidate tree at `61ce41f7c8ebfa7e67ec25a66762b79684fdcafe`. This is not an audit run on the merge SHA `aa1b401803000a67baf9c05f5af86780bee74ecf`; preserve that distinction.
 - The time-binding file's own current successor commit time can be added by a future successor if required.
+
+
+## Addendum v1.0.7 — rollback lineage gate execution and merge
+| Artifact / event | Commit or event time | UTC | Tehran equivalent |
+|---|---|---|---|
+| PR #23 merge | [41288a3](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/41288a3a5d12e0b1ccd1213d54ad57703a3e5a79) | 2026-10-23T04:25:03Z | 2026-10-23T07:55:03+03:30 |
+| ULCG master with rollback gate evidence | [91f4c74](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/91f4c74a335ba2356c451dfd9014ee98a75fe49d) | 2026-10-23T04:25:36Z | 2026-10-23T07:55:36+03:30 |
+| Source-rule map with rollback gate evidence | [751a586](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/751a5866f699eff2e4eac81a06d9fe1ea1164d11) | 2026-10-23T04:25:41Z | 2026-10-23T07:55:41+03:30 |
+| Verification checkpoint v1.0.7 | [cf4a615](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/cf4a6153cf4a446fd9442e0d6fbbdddee822907a) | 2026-10-23T04:25:47Z | 2026-10-23T07:55:47+03:30 |
+
+- Living Architecture Audit [run 39900157186](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39900157186) passed on tested PR head `ebf95aeb2cdf22b142ea95a3496d2b80830a9133`.
+- The run is separate from the merge timestamp. It proves the tested PR tree; a separate full audit of exact post-merge main HEAD remains unconfirmed.
+- Current ULCG / source-map rollback lineage is linked to EVT-0109 and LAL-007; runtime/global recovery remains open.
