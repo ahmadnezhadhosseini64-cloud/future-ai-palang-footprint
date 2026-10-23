@@ -50,3 +50,16 @@ This is the first evidence-backed excavation batch for the dedicated architectur
 - All candidates normalized into standalone lesson files: NO — OPEN.
 - Runtime enforcement: NOT PROVEN.
 - Global rollback/recovery: NOT PROVEN.
+
+
+
+## Normalization checkpoint — 2026-10-23
+Six derivative source-linked lesson records have been created and independently fetched back:
+- [LAL-20261023-002](./lessons/LAL-20261023-002-INTERACTION-IS-ARCHITECTURE-GROWTH-UNIT.md)
+- [LAL-20261023-003](./lessons/LAL-20261023-003-BEHAVIOR-HUNTER-FALSE-NEGATIVE-ID-COLLISION.md)
+- [LAL-20261023-004](./lessons/LAL-20261023-004-CONTINUE-MODEL-INITIAL-NOT-DROPBOX.md)
+- [LAL-20261023-005](./lessons/LAL-20261023-005-NO-REDUNDANT-RETEST.md)
+- [LAL-20261023-006](./lessons/LAL-20261023-006-AUTOMATED-FALSE-NEGATIVE-INVESTIGATION.md)
+- [LAL-20261023-007](./lessons/LAL-20261023-007-ROLLBACK-AS-NEW-LINEAGE-EVENT.md)
+
+This is a bounded normalization pass, not a claim of full historical coverage. The registry, ledger and each lesson still require structural link audit on a final commit. Runtime-wide behavior-hunter activation and end-to-end recovery remain OPEN.
