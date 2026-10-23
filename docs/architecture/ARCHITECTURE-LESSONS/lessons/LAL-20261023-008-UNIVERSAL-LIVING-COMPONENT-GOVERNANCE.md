@@ -34,3 +34,7 @@ For every material interaction or new architecture signal:
 
 ## Scope and limitations
 This lesson is a governing design rule and is registered in the repository. The repository write/read-back, structural audit, full historic census and runtime-wide enforcement are distinct gates. Do not promote the latter from prose alone.
+
+
+## Version 1.0.1 — structural audit enforcement
+The repository structural audit script now includes required-file and cross-surface ID/link checks for ULCG, EVT-0110, LAL-008, SRCMAP-2026-10-23-001, IN-021/OUT-021, NEXT-0.0-022, verification/time ledgers and INBOX-007. Static read-back checks matched all required IDs across the nine named surfaces. The Python/CI execution result on the current final HEAD is not yet confirmed; do not label the gate EXECUTION-PROVEN until a real workflow result is retrieved.
