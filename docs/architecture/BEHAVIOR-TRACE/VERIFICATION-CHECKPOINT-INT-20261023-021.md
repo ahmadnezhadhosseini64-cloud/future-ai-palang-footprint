@@ -115,3 +115,11 @@ Latest read-back values supersede the earlier rows above:
 - Both artifacts were fetched back after the append-only update.
 - Rollback governance is now connected across ULCG → EVT-0109 → LAL-20261023-007 → source map → Issue #20. The only PASS proven is the isolated Git ref rollback; global/runtime/cold-start/external rollback remain OPEN / NOT PROVEN.
 - Current master status: repository read-back verified; full structural audit on final HEAD still NOT CONFIRMED.
+
+
+## Addendum v1.0.6 — full audit workflow result and merge boundary
+- Living Architecture Audit run [39899815040](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39899815040): SUCCESS on tested PR commit `61ce41f7c8ebfa7e67ec25a66762b79684fdcafe`.
+- The job completed all steps successfully, including `Enforce universal living component governance graph`, `Run structural and link audit`, historical 0.0 graph audit, timestamp inventory, graph manifest/edge validation, semantic UTC/Tehran pair audit, compilation and durable host-adapter tests.
+- PR #22 merged as `aa1b401803000a67baf9c05f5af86780bee74ecf` at `2026-10-23T04:21:33Z` / `2026-10-23T07:51:33+03:30`.
+- This closes the structural audit gate for the tested PR tree. A separate audit tied to the exact post-merge main HEAD is still NOT CONFIRMED; do not conflate the tested PR SHA with the merge SHA.
+- Issue #21 remains OPEN for full historical census and semantic reconciliation; Issue #20 remains OPEN for runtime/cold-start and destination-specific proof.
