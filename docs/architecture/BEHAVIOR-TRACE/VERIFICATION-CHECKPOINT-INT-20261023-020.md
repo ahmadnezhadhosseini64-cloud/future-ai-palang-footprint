@@ -48,3 +48,18 @@ The following files were fetched independently from the canonical repository aft
 ## Rule
 
 Do not promote overall project status to fully validated from a successful subset. Each gate closes only on evidence for its own scope. If later edits change any listed file, create a successor checkpoint and update corresponding timestamp evidence without deleting this record.
+
+
+## Append-only verification update — lesson normalization and final cross-links
+
+Six normalized source-linked lesson files were fetched back and their Stable IDs / Production IDs matched:
+- LAL-20261023-002 — blob SHA df291f74fa10968ba8209aa2cdb126278299db01
+- LAL-20261023-003 — blob SHA ed954b3b2830629be2b9e283725dc938c72b6a6c
+- LAL-20261023-004 — blob SHA ab8c2ffa41672c15812d040321c85cc82d13c614
+- LAL-20261023-005 — blob SHA fde6d48179200eeff9dd4e1451c707a7d8eaa2ec
+- LAL-20261023-006 — blob SHA bad26b29aa0661e22ea53115f1c9cda37d66a266
+- LAL-20261023-007 — blob SHA 4f01617be55b711f37f14f5bbba421ba6ce65ed9
+
+The lesson registry and migration ledger now link these six derivative records; the canonical sources remain authoritative. The Live Inbox index now also links the time binding, migration ledger and verification checkpoint. These updates close the earlier cross-link gap for the read-back snapshot; a fresh structural audit of the final reconciled HEAD is still OPEN / NOT CONFIRMED.
+
+The current bounded migration batch now contains the original LAL-20261023-001 plus six source-linked successors. This is not a complete historical lesson inventory. Runtime behavior-hunter activation, host-wide automatic capture/enforcement, and actual rollback/recovery remain OPEN / NOT PROVEN.
