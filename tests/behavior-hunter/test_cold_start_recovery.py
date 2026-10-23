@@ -54,6 +54,31 @@ class RepositoryColdStartRecoveryTests(unittest.TestCase):
             with self.subTest(path=relative):
                 self.assertTrue((ROOT / relative).is_file(), relative)
 
+    def test_current_request_anchors_and_active_successor_are_linked(self):
+        input_anchor = self.read("docs/0.0/anchors/PALANG-0.0-IN-20261023-026-REGISTER-ACTIVE-CONTINUATION.md")
+        output_anchor = self.read("docs/0.0/anchors/PALANG-0.0-OUT-20261023-026-REGISTER-ACTIVE-CONTINUATION.md")
+        event = self.read("docs/architecture/BEHAVIOR-TRACE/EVT-0121-REGISTER-ACTIVE-CONTINUATION-AND-COLD-START-RESULT-2026-10-23.md")
+        successor = self.read("docs/architecture/BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-RECOVERY-2026-10-23.md")
+        checkpoint = self.read("docs/0.0/anchors/PALANG-0.0-NEXT-20261023-024-CONTINUITY-HISTORIC-AND-COLD-START.md")
+        master = self.read("docs/reference/REFERENCE-DOCUMENTS/CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001.md")
+        queue = self.read("docs/architecture/INTEGRATION-QUEUE/README.md")
+
+        self.assertIn("OUT-026", input_anchor)
+        self.assertIn("IN-026", output_anchor)
+        self.assertIn("EVT-0121", input_anchor)
+        self.assertIn("EVT-0121", output_anchor)
+        self.assertIn("IN-026", event)
+        self.assertIn("OUT-026", event)
+        self.assertIn("EVT-0122", event)
+        self.assertIn("ACTIVE / LIVING / IMPLEMENTATION-PENDING", successor)
+        self.assertIn("IN-026", checkpoint)
+        self.assertIn("OUT-026", checkpoint)
+        self.assertIn("EVT-0121", checkpoint)
+        self.assertIn("EVT-0122", checkpoint)
+        self.assertIn("EVT-0121", master)
+        self.assertIn("EVT-0122", master)
+        self.assertIn("PALANG-BIDIRECTIONAL-IN-OUT-RECOVERY-2026-10-23-001", queue)
+
     def test_checkpoint_declares_open_historical_and_host_capture_gates(self):
         checkpoint = self.read("docs/0.0/anchors/PALANG-0.0-NEXT-20261023-024-CONTINUITY-HISTORIC-AND-COLD-START.md")
         self.assertIn("Issue #21", checkpoint)
