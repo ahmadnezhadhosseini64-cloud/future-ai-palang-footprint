@@ -4,7 +4,10 @@ on:
     branches: ["main"]
     paths:
       - "data/interaction-pairs/**"
+      - "docs/architecture/BEHAVIOR-TRACE/**"
+      - "docs/reference/REFERENCE-DOCUMENTS/**"
       - "scripts/behavior-hunter/**"
+      - "docs/architecture/BEHAVIOR-OBSERVATORY/**"
       - "tests/behavior-hunter/**"
       - ".github/workflows/palang-behavior-hunter.yml"
   workflow_dispatch:
@@ -25,9 +28,11 @@ jobs:
         run: python -m unittest discover -s tests/behavior-hunter -v
       - name: Generate candidate test manifest
         run: python scripts/behavior-hunter/generate_candidate_tests.py --input data/interaction-pairs/interaction-pairs.jsonl --output artifacts/behavior-hunter/candidate-tests.json
-      - name: Upload generated manifest
+      - name: Generate architecture insight candidates from explicit outcome records
+        run: python scripts/behavior-hunter/extract_architecture_insights.py --input data/interaction-pairs/test-outcomes.jsonl --output artifacts/behavior-hunter/architecture-insights.json
+      - name: Upload generated manifests
         uses: actions/upload-artifact@v4
         with:
-          name: palang-behavior-hunter-candidate-tests
-          path: artifacts/behavior-hunter/candidate-tests.json
+          name: palang-behavior-hunter-evidence-manifests
+          path: artifacts/behavior-hunter/*.json
           if-no-files-found: error
