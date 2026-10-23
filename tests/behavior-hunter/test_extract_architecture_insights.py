@@ -22,7 +22,8 @@ class ArchitectureInsightTests(unittest.TestCase):
                 "type": "test_log",
                 "locator": "artifact://ci/run-117/test-log",
                 "execution_id": "ci-run-117",
-                "source_sha": "0123456789abcdef0123456789abcdef01234567",\n                "content_sha256": "a" * 64,
+                "source_sha": "0123456789abcdef0123456789abcdef01234567",
+                "content_sha256": "a" * 64,
             }] if result == "PASS" else [],
             "counterexamples": [],
         }
