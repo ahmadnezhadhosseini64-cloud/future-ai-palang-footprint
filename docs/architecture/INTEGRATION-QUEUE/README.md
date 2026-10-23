@@ -1427,3 +1427,10 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - Artifact `12527726978` inspected, ZIP SHA-256 `6ddf0b23d3f33db2cdfc6cb4b1e7154899bf1477a0466ba5c01a2a3c7325c07b`.
 - Ledger hash chain verified; zero errors. Previous version 1.0.0 preserved; 1.1.0 records the authorized integration of validation.
 - Next active checkpoint [NEXT-027](../../0.0/anchors/PALANG-0.0-NEXT-20261023-027-FRESH-SESSION-AND-ARCHITECTURE-GROWTH.md); fresh-session recovery NOT RUN; Issues #20/#21 OPEN.
+
+
+## Active post-repair graph audit — EVT-0127 / NEXT-028
+- [EVT-0127](../BEHAVIOR-TRACE/EVT-0127-DEEP-REPOSITORY-AUDIT-AND-GAP-REGISTER-2026-10-23.md) records the baseline audit and independently inspected CI evidence.
+- Baseline: 5 missing local links (all five have been edited), 60 Stable ID collision groups, 71 Production ID collision groups, 7 reference-ID collision groups, 30 event-number collision groups, 11 exact duplicate groups, 13 ambiguous parent edges, 11 proposed alias edges and one ambiguous timestamp.
+- [NEXT-028](../../0.0/anchors/PALANG-0.0-NEXT-20261023-028-POST-REPAIR-AUDIT-AND-SEMANTIC-RECONCILIATION.md) is ACTIVE/LIVING; post-repair audit result pending.
+- Do not rename/merge colliding historical records without source and Git-history adjudication. Issues #20/#21 and fresh-session recovery remain separate open gates.
