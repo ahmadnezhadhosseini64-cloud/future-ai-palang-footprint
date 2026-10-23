@@ -1441,3 +1441,10 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - Five source-grounded link fixes are confirmed; missing local links now 0.
 - Active semantic work remains: 60 Stable ID, 71 Production ID, 7 reference-ID and 30 event-number collision groups; 11 exact duplicates; 13 ambiguous parent edges; 11 proposed aliases; one ambiguous timestamp.
 - [NEXT-028](../../0.0/anchors/PALANG-0.0-NEXT-20261023-028-POST-REPAIR-AUDIT-AND-SEMANTIC-RECONCILIATION.md) is the active queue head. Preserve historic files; adjudicate before merging or renaming.
+
+
+## Latest verified audit/behavior gate — run 40016232683
+- Audit [40016232683](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40016232683): PASS, zero missing local links; artifact `12528337510` inspected.
+- Behavior Hunter [40016232651](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40016232651): 67 tests PASS; append-only ledger hash chain verified; both IN/OUT recovery directions PASS.
+- Cross-Layer Integrity Gate [40016232821](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40016232821): PASS.
+- Active queue head [NEXT-028](../../0.0/anchors/PALANG-0.0-NEXT-20261023-028-POST-REPAIR-AUDIT-AND-SEMANTIC-RECONCILIATION.md); semantic collisions/aliases/parent ambiguities and EVT-0089 timezone remain open.
