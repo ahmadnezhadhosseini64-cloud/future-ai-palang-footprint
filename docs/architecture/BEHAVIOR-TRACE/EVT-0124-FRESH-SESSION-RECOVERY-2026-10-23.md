@@ -34,3 +34,10 @@ Prove that a separate, newly opened ChatGPT conversation can reconstruct the pro
 - Fresh-session recovery: NOT RUN.
 - Host-wide automatic capture and external persistence: NOT PROVEN.
 - Issue #20 and Issue #21: OPEN.
+
+
+## Ready-to-use handoff and successor checkpoint
+- Handoff prompt: [EVT-0124 fresh-session recovery prompt](./EVT-0124-FRESH-SESSION-RECOVERY-PROMPT-2026-10-23.md). It intentionally omits the expected answer so the first response can be evaluated without coaching.
+- Current continuation checkpoint: [NEXT-026](../../0.0/anchors/PALANG-0.0-NEXT-20261023-026-FRESH-SESSION-AND-END-TO-END-LEARNING.md).
+- Current interaction pair: [IN-028](../../0.0/anchors/PALANG-0.0-IN-20261023-028-ACTIVATE-LIVING-ARCHITECTURE-UPDATE.md) / [OUT-028](../../0.0/anchors/PALANG-0.0-OUT-20261023-028-ACTIVATE-LIVING-ARCHITECTURE-UPDATE.md).
+- Architecture-update capability CI proof: [EVT-0125](./EVT-0125-LIVING-ARCHITECTURE-UPDATE-CAPABILITY-2026-10-23.md).
