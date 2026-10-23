@@ -133,3 +133,13 @@ Continue collecting observable interaction and evaluator behavior as evidence-ba
 - [سند حاکم ثبت همهٔ مقصدها](../../reference/REFERENCE-DOCUMENTS/PALANG-GMAIL-AND-ALL-DESTINATION-REGISTRATION-GOVERNANCE-2026-10-22-001.md).
 - [رویداد شکاف Gmail](../BEHAVIOR-TRACE/EVT-0039-GMAIL-REFERENCE-REGISTRATION-GAP-2026-10-22.md).
 - وضعیت فعلی: Gmail/Google Drive توسط مدیر غیرفعال؛ ارسال یا بازخوانی ایمیل انجام نشده. اقدام `GMAIL-CONNECTION-AND-READBACK-01` باز و فعال است.
+
+## 14. چشم پلنگ شکارچی — مولد آزمون از ورودی/خروجی (EVT-0116)
+- [سند معماری مولد آزمون و دروازهٔ رشد](./PALANG-BEHAVIOR-HUNTER-TEST-GENERATION-AND-GROWTH-GATE-2026-10-23-001.md) — Stable ID: `PALANG-BEHAVIOR-HUNTER-TEST-GENERATION-AND-GROWTH-GATE-2026-10-23-001`.
+- [رویداد فعال‌سازی EVT-0116](../BEHAVIOR-TRACE/EVT-0116-BEHAVIOR-HUNTER-LIVE-TEST-ACTIVATION-2026-10-23.md).
+- [طرح آزمون زنده](./VERIFIABLE-TEST-PLAN-FROM-EVT-0115-2026-10-23.md).
+- Generator: `scripts/behavior-hunter/generate_candidate_tests.py`; unit tests: `tests/behavior-hunter/test_generate_candidate_tests.py`; structured IN/OUT fixture: `data/interaction-pairs/interaction-pairs.jsonl`; CI workflow: `.github/workflows/palang-behavior-hunter.yml`.
+- CI runs on relevant pushes to `main` and can be manually dispatched. The workflow has been registered; actual run/artifact status must be independently retrieved before marking execution PASS.
+- Generator processes structured records and marks each generated candidate `NOT_RUN` until execution evidence exists. It does not yet capture every live ChatGPT interaction automatically; host adapter and end-to-end recovery remain OPEN.
+- Growth gate: passing tests → evidence review → Child/Rahm proposal → owner approval → Master integration. No automatic Master promotion.
+- Workflow commit: `9d908b15220a9f4a97fd1c56ae32edd393d18196`, UTC `2026-10-23T17:33:36Z`, Tehran `2026-10-23T21:03:36+03:30`. EVT-0116 commit: `b3147c9fb16726eabe77858ec204dc5989907137`, UTC `2026-10-23T17:35:07Z`, Tehran `2026-10-23T21:05:07+03:30`.
