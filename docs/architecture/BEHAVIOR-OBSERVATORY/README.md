@@ -157,3 +157,6 @@ Continue collecting observable interaction and evaluator behavior as evidence-ba
 
 - EVT-0120 current proof: [run #35](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40001818794) passed 32 tests; artifact ID `12522117128` and all three manifests were independently inspected. Resolver fixture records remain `FIXTURE_ONLY`; real non-fixture locator resolution and fresh-session 0.0 recovery remain NOT RUN.
 - Active next step: [EVT-0120 — Evidence Locator Resolution and Cold Recovery](../BEHAVIOR-TRACE/EVT-0120-EVIDENCE-LOCATOR-RESOLUTION-AND-COLD-RECOVERY-2026-10-23.md).
+
+- Latest EVT-0120 proof: run #45 SUCCESS, 34 tests OK; one non-fixture repo:// locator resolved and its SHA-256 matched. Artifact ID `12522836550` was downloaded and all four manifests inspected. This verifies evidence integrity only, not a test PASS.
+- Active next gate: cold-start recovery from NEXT-024; live host-wide capture remains OPEN / NOT PROVEN.
