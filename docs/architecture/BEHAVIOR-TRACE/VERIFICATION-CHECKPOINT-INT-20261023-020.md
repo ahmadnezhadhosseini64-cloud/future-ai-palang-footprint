@@ -82,3 +82,12 @@ The following latest canonical surfaces were fetched again after the lesson-regi
 | Time binding v1.0.2 | fetched successfully after write | PASS — UTC/Tehran table includes latest known commits for all listed surfaces |
 
 The final status remains evidence-scoped: read-back and cross-link reconciliation PASS for this fetched snapshot; full structural audit on the latest reconciled HEAD is NOT CONFIRMED here; historic migration is PARTIAL; runtime-wide capture/enforcement and end-to-end rollback remain OPEN / NOT PROVEN; external persistence was NOT ATTEMPTED.
+
+
+## Source-target and recovery-rule link verification
+
+The canonical targets for all six normalized lessons were fetched independently and exist: EVT-0093, EVT-0103, EVT-0106, REG-2026-09-03-NO-REDUNDANT-RETEST-001, EVT-0035, the Behavior Observatory recovery test, and both repository-root architecture/memory recovery documents. The initial relative-path defect in LAL-20261023-007 was corrected in version 1.0.1; the v1.0.0 history remains retrievable.
+
+- Latest Evidence Gate run observed: [39888263364](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39888263364), tested commit e8b6aded752dd3456c8dbb9910b1deab1d51c283. Its durable artifact reports Stable Retrieval Core VERIFIED and Independent Automated Execution PROVEN.
+- This Evidence Gate does not equal a full structural/link audit. The latest full structural audit status for the final post-normalization head remains NOT CONFIRMED from the available run evidence; keep that gate OPEN until its exact run/commit result is inspected.
+- No controlled global rollback/recovery exercise was run. Its status remains OPEN / NOT RUN.
