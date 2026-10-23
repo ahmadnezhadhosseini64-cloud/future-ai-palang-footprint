@@ -471,3 +471,7 @@
 ## Time binding and lesson excavation — INT-20261023-020
 - [TIME-BINDING-INT-20261023-020](./TIME-BINDING-INT-20261023-020.md) records actual commit timestamps for IN-020/OUT-020/EVT-0108/INBOX-20261023-006 and related reconciliation surfaces.
 - [HALML-2026-10-23-001](../ARCHITECTURE-LESSONS/HISTORIC-LESSON-MIGRATION-LEDGER-2026-10-23-001.md) records the first source-linked historic lesson candidate batch.
+
+
+## Verification checkpoint — INT-20261023-020
+- [VERIFY-INT-20261023-020](./VERIFICATION-CHECKPOINT-INT-20261023-020.md) — independent read-back ledger, workflow evidence and residual open gates.
