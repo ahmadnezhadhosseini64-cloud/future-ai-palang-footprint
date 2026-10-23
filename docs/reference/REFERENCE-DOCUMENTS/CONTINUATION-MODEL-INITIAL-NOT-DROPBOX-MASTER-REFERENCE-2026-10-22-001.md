@@ -327,3 +327,9 @@ The exact user-message time was not exposed by repository tooling and must not b
 - The six previously normalized lessons are only one batch. The ULCG source map now includes existing registration contracts/orchestrator, interaction continuity/validation masters, behavior foresight, historical audit and memory recovery source families. Full tree-wide inventory and semantic adjudication remain OPEN.
 - Rule: each component is independently sourced/versioned but graph-linked; ACTIVE/LIVING means the accepted version remains in force within its tested scope, not that every runtime capability is proven. Open gaps remain actionable.
 - Runtime/cold-start, destination-specific persistence and final-head structural audit remain separate gates under Issue #20 and the integration queue.
+
+
+## Addendum v1.1.1 — point 0 / next 0.0 continuation lock
+- Current point 0: IN-021 / OUT-021 / EVT-0110 — universal source-linked living component governance.
+- Next 0.0: [NEXT-0.0-20261023-022](../../0.0/anchors/PALANG-0.0-NEXT-20261023-022-HISTORIC-SOURCE-GRAPH-EXCAVATION.md) — full historical source/rule/lesson graph excavation, canonical-source fetch, semantic adjudication, component mapping, cross-surface reconciliation and final-HEAD structural audit.
+- Do not mark this next point complete until its acceptance criteria and read-back evidence are satisfied.
