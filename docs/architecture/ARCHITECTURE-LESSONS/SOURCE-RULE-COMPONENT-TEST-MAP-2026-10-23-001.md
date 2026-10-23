@@ -73,7 +73,7 @@
 
 | Source / rule | Connected architecture component | Required evidence / test | Current status |
 |---|---|---|---|
-| [ULCG v1.2.0](../../reference/REFERENCE-DOCUMENTS/UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001.md), [EVT-0112](../BEHAVIOR-TRACE/EVT-0112-CURRENT-POINT-0-AND-NEXT-0.0-2026-10-23.md), [LAL-20261023-010](./lessons/LAL-20261023-010-CURRENT-POINT-AND-NEXT-CHECKPOINT.md) | Current point 0, independent IN/OUT anchors, successor NEXT-024, master, index, lesson/trace registries, queue and model-initial master | Static CI links, read-back, final-HEAD audit, IN/OUT reverse lookup and cold-start recovery | Governance record registered; runtime proof and fresh final-HEAD audit remain OPEN |
+| [ULCG v1.2.1](../../reference/REFERENCE-DOCUMENTS/UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001.md), [EVT-0112](../BEHAVIOR-TRACE/EVT-0112-CURRENT-POINT-0-AND-NEXT-0.0-2026-10-23.md), [LAL-20261023-010](./lessons/LAL-20261023-010-CURRENT-POINT-AND-NEXT-CHECKPOINT.md) | Current point 0, independent IN/OUT anchors, successor NEXT-024, master, index, lesson/trace registries, queue and model-initial master | Static CI links, read-back, final-HEAD audit, IN/OUT reverse lookup and cold-start recovery | Governance record registered; runtime proof and fresh final-HEAD audit remain OPEN |
 
 
 ## Audit finding and reconciliation — run 39918423082
