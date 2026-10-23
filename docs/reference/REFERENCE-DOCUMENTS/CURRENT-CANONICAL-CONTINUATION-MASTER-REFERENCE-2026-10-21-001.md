@@ -571,3 +571,11 @@ Current active gate remains [EVT-0122](../../architecture/BEHAVIOR-TRACE/EVT-012
 - The five broken links were corrected using verified repository target paths; post-repair audit must prove the resulting count. Do not close this gate from the edits alone.
 - [NEXT-028](../../0.0/anchors/PALANG-0.0-NEXT-20261023-028-POST-REPAIR-AUDIT-AND-SEMANTIC-RECONCILIATION.md) is the active continuation. Collision reconciliation is source/history-driven and append-only; no mass renaming/merging.
 - [Issue #20](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/20) runtime capture and [Issue #21](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/21) historical census remain OPEN. Fresh-session recovery remains NOT RUN.
+
+
+## Post-repair graph audit — verified zero missing local links
+- [EVT-0127](../../architecture/BEHAVIOR-TRACE/EVT-0127-DEEP-REPOSITORY-AUDIT-AND-GAP-REGISTER-2026-10-23.md): [Living Architecture Audit run 40015739398](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40015739398) PASS on audited SHA `e6fead1da67b91cb382173903b7c8da4cf1aba16`.
+- Artifact `12528636433` inspected; ZIP SHA-256 `a3aeed395eed47f735144c49c68490ead39c7078ef4cbc84d0263719bca2b12c`.
+- All five previously reported broken local links now pass; `local_markdown_links_missing=0`.
+- Still open: 60 Stable ID collision groups, 71 Production ID collision groups, 7 reference-ID collision groups, 30 event-number collision groups, 11 exact duplicates, 13 ambiguous parent edges, 11 proposed aliases, one ambiguous timestamp. Do not auto-merge/rename.
+- [NEXT-028](../../0.0/anchors/PALANG-0.0-NEXT-20261023-028-POST-REPAIR-AUDIT-AND-SEMANTIC-RECONCILIATION.md) remains ACTIVE/LIVING. Fresh-session recovery NOT RUN; Issues #20/#21 OPEN.
