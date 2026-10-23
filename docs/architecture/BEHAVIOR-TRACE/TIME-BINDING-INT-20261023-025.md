@@ -64,3 +64,8 @@ The first candidate audit run [39984710314](https://github.com/ahmadnezhadhossei
 - Canonical UTC: 2026-10-23T16:12:34Z
 - Tehran equivalent: 2026-10-23T19:42:34+03:30
 - A fresh rerun is required before treating the correction as passing.
+
+
+## Canonical-clock qualification
+
+The UTC/Tehran rows above are the exact last-change timestamps for the current candidate-branch commits. They are useful provenance but are **not yet the canonical main-branch registration times**. If this PR is squash-merged, the changed files' canonical main last-change timestamp becomes the actual squash-merge commit timestamp. After merge, a successor time-binding entry must record that final main commit SHA and its actual UTC/Tehran pair; do not infer or prefill it.
