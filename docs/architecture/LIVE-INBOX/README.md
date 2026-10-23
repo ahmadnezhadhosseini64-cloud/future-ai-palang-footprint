@@ -88,3 +88,8 @@ The first registered item is the user's request to make the live inbox a standar
 - Time binding: [TIME-BINDING-INT-20261023-020](../BEHAVIOR-TRACE/TIME-BINDING-INT-20261023-020.md).
 - Historic lesson ledger: [HALML-2026-10-23-001](../ARCHITECTURE-LESSONS/HISTORIC-LESSON-MIGRATION-LEDGER-2026-10-23-001.md).
 - Verification checkpoint: [VERIFY-INT-20261023-020](../BEHAVIOR-TRACE/VERIFICATION-CHECKPOINT-INT-20261023-020.md).
+
+
+## Rollback evidence linked to current execution — EVT-0109
+- [EVT-0109](../BEHAVIOR-TRACE/EVT-0109-CONTROLLED-GIT-ROLLBACK-RECOVERY-TEST-2026-10-23.md) records the bounded repository branch rollback test requested by the current architecture execution package.
+- The test result applies to isolated Git ref recovery only; production runtime and external destinations remain open gates.
