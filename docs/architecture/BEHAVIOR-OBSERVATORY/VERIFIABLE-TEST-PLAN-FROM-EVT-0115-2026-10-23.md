@@ -144,3 +144,11 @@ EVT-0118 supersedes stale forward-looking phrases in EVT-0117 such as “impleme
 - Run [#45](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40002313474): SUCCESS; 34 tests OK; artifact ID `12522836550`; artifact SHA-256 `fc386cf66f30904b2bd0cc3eebb9f48fc0f9aefdba9b5e2919fed80e274336aa`.
 - Four manifests independently inspected; the production smoke manifest records 1 resolved, 0 unresolved, 0 parse errors, `evidence_integrity_verified=true`, `production_claim_allowed=false`.
 - The next active gate is the repository cold-start recovery from NEXT-024. It must not be marked PASS until a fresh independent read-back reconstructs the complete continuation chain. Host-wide capture remains OPEN.
+
+
+## Cold-start recovery gate — run #53
+- Repository-only recovery test from NEXT-024: PASS on tested HEAD `2dc6577ed0588de25667bc6525c64553cefd7712`; 38 tests ran; OK.
+- Workflow run [#53](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40002973802), artifact ID `12521909205`, SHA-256 `cf8b7c5cdc12255912c3516542a3cc96558010326d563fbb45d4be4d78bfcbc2`; downloaded and four manifests inspected.
+- Verified chain: NEXT-024 → canonical master → integration queue → EVT-0120 → resolver/evidence → next action; prior checkpoints/successor anchor files remained present.
+- Run #52 failed because one assertion used repository-root paths while the checkpoint correctly used relative Markdown links; assertion corrected and #53 passed. Preserve this failure as test-harness learning.
+- New active gate EVT-0122: bidirectional recovery starting independently from IN or OUT; NOT RUN. Separate fresh ChatGPT session and host-wide capture also remain NOT RUN / OPEN.
