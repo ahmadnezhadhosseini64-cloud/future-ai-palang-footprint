@@ -1067,3 +1067,10 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - رویداد: [EVT-0107](../architecture/BEHAVIOR-TRACE/EVT-0107-LIVING-LESSON-CYCLE-AND-ROLLBACK-GOVERNANCE-2026-10-23.md).
 - اصل حاکم: نسخهٔ تازه روی نسخهٔ قبلی نوشته نمی‌شود؛ نسخهٔ سالم پیشین و شکست‌ها حفظ می‌شوند؛ ارتقای نسخه به شواهد آزمون و تطبیق وابسته است.
 - شکاف‌های باز: مهاجرت کامل درس‌های تاریخی، اجرای خودکار قواعد در هر میزبان، و آزمون واقعی rollback/recovery هنوز اثبات نشده‌اند.
+
+
+## لنگرهای مستقل چرخهٔ درس معماری
+- IN-019: [ورودی درخواست چرخهٔ زنده](anchors/PALANG-0.0-IN-20261023-019-LIVING-LESSON-CYCLE.md).
+- OUT-019: [خروجی ممیزی و تصمیم چرخهٔ زنده](anchors/PALANG-0.0-OUT-20261023-019-LIVING-LESSON-CYCLE.md).
+- EVT-0107: [رویداد درس معماری، آزمون و بازیابی](../architecture/BEHAVIOR-TRACE/EVT-0107-LIVING-LESSON-CYCLE-AND-ROLLBACK-GOVERNANCE-2026-10-23.md).
+- Inbox: [INBOX-20261023-005](../architecture/LIVE-INBOX/entries/INBOX-20261023-005.md).
