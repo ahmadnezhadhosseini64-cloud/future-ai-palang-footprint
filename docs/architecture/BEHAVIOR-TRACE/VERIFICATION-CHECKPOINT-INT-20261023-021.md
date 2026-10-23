@@ -71,3 +71,14 @@ Latest read-back values supersede the earlier rows above:
 - The initial checkpoint's own blob SHA was `66509f4e02066632be07985b82fda82f83fbf394`; this addendum is an append-only successor and the new commit timestamp must be entered in the time-binding ledger.
 - Current ULCG state: REGISTERED / REPOSITORY READ-BACK VERIFIED for named artifacts; ACTIVE/LIVING as a governance contract. It does not assert full-tree completeness or runtime automation.
 - Full structural audit on the exact final reconciled HEAD remains OPEN / NOT CONFIRMED. The latest observed Evidence Gate artifact tests commit `f87cb3f9422afa4c4fc527b4960b8b9a5c280d8f`, not the generated evidence-record commit and not a full structural audit.
+
+
+## Addendum v1.0.2 — independent census gate and current read-back
+- Historical census tracking issue: [Issue #21](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/21), OPEN / ACTIONABLE.
+- Runtime/cold-start issue: [Issue #20](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/20), OPEN / ACTIONABLE.
+- Latest ULCG master blob SHA after Issue #21 integration: `99c047cef1c7da6f4f6f6971bd8d79304e48440c`.
+- Latest NEXT-0.0-022 blob SHA: `8f64e8d5d18c9f4618f07160149c878a0213ec96`.
+- Latest integration queue blob SHA: `f6d6ed623197c2f327a19b317553402fabf944db`.
+- Latest historic lesson ledger blob SHA: `b3640b8791f5ac22f2fd3500a5697ca72bf0eaf7`.
+- Both issues remain open and separately accepted. The bounded Git rollback test (EVT-0109) remains PASS only for isolated Git ref recovery.
+- Structural audit on the exact final reconciled HEAD remains OPEN / NOT CONFIRMED; this checkpoint is read-back evidence, not a full structural audit.
