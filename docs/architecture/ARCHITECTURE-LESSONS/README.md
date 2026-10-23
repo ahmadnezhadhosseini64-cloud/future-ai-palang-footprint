@@ -104,5 +104,5 @@ DISCOVERED → CAPTURED → CLASSIFIED → REGISTERED → READ-BACK VERIFIED →
 ## Repository verification checkpoint — 2026-10-23
 - Registry, lesson, event, IN-019, OUT-019, INBOX-20261023-005, CMIND, reference index (raw GitHub read), behavior-trace index, 0.0 registry, integration queue, live inbox and audit script were fetched/read back after writes.
 - Expected IDs and principal links matched in the fetched surfaces.
-- The first Living Architecture Audit run #1703 (run ID 39885773714) failed on an earlier/intermediate commit, reporting a missing reference index path and missing lesson ID in the queue. The current main-branch read-back now shows the reference index and queue entry present; a fresh audit on the fully reconciled HEAD is required before marking structural audit PASS.
+- The first Living Architecture Audit run #1703 (run ID 39885773714) failed with two findings: the audit script used the wrong path docs/reference/REFERENCE_INDEX.md instead of docs/REFERENCE_INDEX.md, and the queue did not yet contain the new lesson ID at the commit tested. The path defect was corrected in commit 3703a9ec653b5c3574fb3f5d9c8aa6eef67eb50b. The queue now contains the lesson ID; a fresh audit on the corrected HEAD is required before marking structural audit PASS.
 - Runtime lesson enforcement, complete historic lesson migration and real rollback/recovery remain OPEN.
