@@ -1242,3 +1242,8 @@ The queue index and the timestamp case must each be read back after this update.
 - Governing lesson: [LAL-20261023-007](../ARCHITECTURE-LESSONS/lessons/LAL-20261023-007-ROLLBACK-AS-NEW-LINEAGE-EVENT.md).
 - Bounded test evidence: [EVT-0109](../BEHAVIOR-TRACE/EVT-0109-CONTROLLED-GIT-ROLLBACK-RECOVERY-TEST-2026-10-23.md).
 - Runtime/cold-start and global/external recovery remain OPEN under Issue #20; do not infer global recovery from the bounded Git ref test.
+
+
+## Continuity / non-interruption rule — 2026-10-23
+
+| ICNG-HAIF-2026-10-23-001 | New inputs must be connected to prior work and checkpoints; the new request cannot silently displace unfinished historic census or runtime recovery work | OPEN / PARTIAL — governance rule and linked artifacts are being added; fresh audit on final HEAD and runtime enforcement remain unproven | ULCG v1.1.0, IN-022/OUT-022, EVT-0111, LAL-20261023-009, NEXT-023; Issues #20 and #21 | [Interaction continuity lesson](./../ARCHITECTURE-LESSONS/lessons/LAL-20261023-009-INTERACTION-CONTINUITY-NON-INTERRUPTION.md) |
