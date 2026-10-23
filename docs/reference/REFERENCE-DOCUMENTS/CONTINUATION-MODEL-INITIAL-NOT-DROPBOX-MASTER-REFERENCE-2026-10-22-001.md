@@ -303,3 +303,10 @@ The exact user-message time was not exposed by repository tooling and must not b
 - Work packages are now materialized as records: interaction anchors, event, inbox item, time binding and historical lesson ledger. Master/index/queue reconciliation has been performed and must be judged by the read-back evidence checkpoint.
 - The first audit of the new interaction is a read-back/link reconciliation, not a claim of runtime-wide capture or rollback. The fresh full structural audit is still required on the final reconciled HEAD.
 - Remaining OPEN gates: complete historical lesson migration; convert confirmed rules into executable controls where possible; fresh structural audit; bounded rollback/recovery exercise; runtime-wide capture/enforcement; external persistence.
+
+
+## Addendum v1.0.8 — verification checkpoint and evidence-gated status
+- Read-back checkpoint: [VERIFY-INT-20261023-020](../../architecture/BEHAVIOR-TRACE/VERIFICATION-CHECKPOINT-INT-20261023-020.md).
+- Current interaction timestamp ledger: [TIME-BINDING-INT-20261023-020](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261023-020.md).
+- Historic lesson excavation: [HALML-2026-10-23-001](../../architecture/ARCHITECTURE-LESSONS/HISTORIC-LESSON-MIGRATION-LEDGER-2026-10-23-001.md).
+- Current evidence: independent IN/OUT/event/inbox files and cross-surface records were fetched back; IDs and primary links matched. Evidence Gate run 39887527345 passed for its tested commit. Full structural audit on final HEAD, full historic migration, host-wide capture/enforcement, controlled rollback/recovery and external persistence remain separate OPEN gates.
