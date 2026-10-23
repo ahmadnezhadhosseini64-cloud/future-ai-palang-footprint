@@ -1,0 +1,40 @@
+{
+  "insight_id": "INSIGHT-EVT-0122-RECOVERY-EXPLICIT-PAIR-IDENTITY-001",
+  "title": "Require explicit interaction-pair identity for bidirectional recovery",
+  "version": "1.0.0",
+  "originating_event_ids": ["EVT-0122", "EVT-0123"],
+  "category": "continuity-and-recovery",
+  "affected_components": ["IN/OUT anchors", "interaction graph recovery", "cold-start regression tests"],
+  "observed_facts": [
+    "An earlier recovery CI run failed when pair identity and direct canonical graph bindings were missing.",
+    "The later recovery run passed after explicit pair identity and direct links were added."
+  ],
+  "hypothesis": "A shared pair identifier plus direct graph bindings makes recovery deterministic and exposes stale or missing links earlier.",
+  "evidence": [
+    {
+      "locator": "repo://docs/architecture/BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-RECOVERY-2026-10-23.md",
+      "sha256": "REPLACE_WITH_CURRENT_EVIDENCE_SHA256"
+    }
+  ],
+  "counterexamples": [
+    "The failed recovery run is a counterexample to inferring identity from nearby prose.",
+    "A mismatched pair ID must be detected as PARTIAL rather than silently recovered."
+  ],
+  "proposed_change": "Keep explicit pair IDs, bidirectional links, and direct canonical master/queue/evidence references as required invariants.",
+  "required_tests": [
+    "recover_from_IN",
+    "recover_from_OUT",
+    "missing_reverse_link",
+    "mismatched_pair_id",
+    "stale_master_reference",
+    "missing_queue_reference"
+  ],
+  "rollback_plan": "Revert the isolated prototype or the specific approved commit; preserve the failed-run evidence.",
+  "state": "PROPOSED",
+  "owner_decision": "PENDING",
+  "target_paths": [
+    "scripts/behavior-hunter/recover_interaction_graph.py",
+    "tests/behavior-hunter/test_recover_interaction_graph.py",
+    "docs/architecture/BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-RECOVERY-2026-10-23.md"
+  ]
+}
