@@ -53,3 +53,10 @@ Continue the prior architecture path and integrate the latest request without re
 
 ## Current state
 NEXT-024 is OPEN and resumable. It preserves NEXT-022 and NEXT-023. No open gate is closed by creating this checkpoint.
+
+
+## Execution progress — source census batch 2
+- Five additional full canonical source fetches completed and recorded in [HALML](../../architecture/ARCHITECTURE-LESSONS/HISTORIC-LESSON-MIGRATION-LEDGER-2026-10-23-001.md): PIATGCG, UIALAC, ICMCRR, H0GLMR and STAR-HCR.
+- [SRCMAP-2026-10-23-001](../../architecture/ARCHITECTURE-LESSONS/SOURCE-RULE-COMPONENT-TEST-MAP-2026-10-23-001.md) now includes provisional rule-family links for all five.
+- Cumulative named full-source fetches: 19. This is not a complete repository-tree/history census; rule-by-rule conflict adjudication remains OPEN.
+- Next immediate action: extract numbered clauses from the five sources, compare against the 14-source batch and ULCG v1.2.0, connect each rule to executable tests, and preserve collisions unresolved until evidence establishes authority.
