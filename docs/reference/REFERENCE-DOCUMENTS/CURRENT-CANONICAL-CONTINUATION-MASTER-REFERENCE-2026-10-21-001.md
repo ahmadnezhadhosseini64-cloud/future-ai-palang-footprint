@@ -365,3 +365,12 @@
 - [سند مادر PIAL](./PER-INTERACTION-IN-OUT-TEMPORAL-ANCHOR-LIVING-MASTER-REFERENCE-2026-10-22-001.md)
 - [پابند زمانی PIAL](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-PIAL-2026-10-22-001.md)
 - [EVT-0089](../../architecture/BEHAVIOR-TRACE/EVT-0089-EVERY-INTERACTION-IN-OUT-TEMPORAL-ANCHOR-AND-RECOVERY-GOVERNANCE-2026-10-22.md)
+
+
+## Live mirror sync recovery — EVT-0115 (2026-10-23)
+- User decision: the 7-character length difference (8915 vs 8908) is not by itself a blocker; treat copies as operationally equivalent only if Stable ID, Version, Next Action and Destination Statuses retain the same meaning.
+- Event: [EVT-0115](../../architecture/BEHAVIOR-TRACE/EVT-0115-LIVE-MIRROR-SYNC-RECOVERY-AND-MASTER-REGISTRATION-2026-10-23.md), Stable ID `PALANG-LIVE-MIRROR-SYNC-RECOVERY-2026-10-23-001`, Version 1.0.0, status ACTIVE / LIVING / OPEN.
+- Repository event commit: `4fdaf1a6045cc5f3331f69b77425a82e3cbbd1df`; canonical UTC `2026-10-23T17:18:26Z`; derived Asia/Tehran `2026-10-23T20:48:26+03:30`. Event file independently fetched after write; Stable ID and NOT VERIFIED destination statuses were present.
+- Recovery next action: re-read canonical audit and Library mirror, compare key fields, apply the accepted minor-difference tolerance, update Library only if needed, then independently read back and reconcile.
+- Library for current version: NOT VERIFIED until post-decision independent write/read-back/match. Buffer and Persistent Memory: NOT VERIFIED. Dropbox: OPEN / NOT VERIFIED and not the active target unless explicitly reopened. External recovery: NOT RUN.
+- Preserve every historical 0.0 anchor. Registration of this event is not proof that mirror synchronization completed or that a background process is continuously running.
