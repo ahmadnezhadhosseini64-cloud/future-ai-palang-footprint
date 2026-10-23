@@ -160,3 +160,6 @@ Continue collecting observable interaction and evaluator behavior as evidence-ba
 
 - Latest EVT-0120 proof: run #45 SUCCESS, 34 tests OK; one non-fixture repo:// locator resolved and its SHA-256 matched. Artifact ID `12522836550` was downloaded and all four manifests inspected. This verifies evidence integrity only, not a test PASS.
 - Active next gate: cold-start recovery from NEXT-024; live host-wide capture remains OPEN / NOT PROVEN.
+
+- Latest EVT-0120 proof: [run #45](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40002313474) SUCCESS, 34 tests OK; one non-fixture repo:// locator resolved and its SHA-256 matched. Artifact ID `12522836550` was downloaded and all four manifests inspected. This verifies evidence integrity only, not a test PASS.
+- Active next gate: cold-start recovery from NEXT-024; live host-wide capture remains OPEN / NOT PROVEN.
