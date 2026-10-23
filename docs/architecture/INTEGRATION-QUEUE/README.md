@@ -1190,3 +1190,9 @@ The queue index and the timestamp case must each be read back after this update.
 - Master addendum: [CMIND v1.0.6](../../reference/REFERENCE-DOCUMENTS/CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-MASTER-REFERENCE-2026-10-22-001.md).
 - Work items: historical lesson excavation; operational checks/manual gates; fresh structural audit on reconciled HEAD; bounded rollback/recovery test; host/runtime capture proof.
 - Status: OPEN until corresponding artifacts, tests and post-write read-back are evidenced. Do not repeat previously successful unchanged tests without a material trigger.
+
+
+## Historic lesson migration and timestamp evidence
+- Initial candidate ledger: [HALML-2026-10-23-001](../ARCHITECTURE-LESSONS/HISTORIC-LESSON-MIGRATION-LEDGER-2026-10-23-001.md) — partial inventory, source-linked, OPEN for full excavation.
+- Interaction time binding: [TIME-BINDING-INT-20261023-020](../BEHAVIOR-TRACE/TIME-BINDING-INT-20261023-020.md).
+- Next: extend source discovery and semantic adjudication; then execute the structural audit on the reconciled HEAD. A passing audit is scoped to that commit and cannot prove host-wide automation or global rollback.
