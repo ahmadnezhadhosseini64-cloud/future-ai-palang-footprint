@@ -100,3 +100,17 @@
 
 - The checkpoint blob after this update is `1af56c032ffe81e029128004bed24b40b78ddbe6`.
 - The timestamp table is append-only; prior rows remain historical evidence. The latest full structural audit on current HEAD is still not confirmed.
+
+
+## Addendum v1.0.6 — successful structural audit and merge
+| Artifact / event | Commit or event time | UTC | Tehran equivalent |
+|---|---|---|---|
+| PR #22 candidate with ULCG audit workflow gate | [61ce41f](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/61ce41f7c8ebfa7e67ec25a66762b79684fdcafe) | commit time retained in Git; workflow tested this exact SHA | derived from same commit instant when needed |
+| Living Architecture Audit run | [run 39899815040](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39899815040) | Workflow run: completed SUCCESS | run-time instant is distinct from commit time |
+| PR #22 merge commit | [aa1b401](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/aa1b401803000a67baf9c05f5af86780bee74ecf) | 2026-10-23T04:21:33Z | 2026-10-23T07:51:33+03:30 |
+| ULCG master audit evidence addendum | [64ede0b](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/64ede0b84b4cc3c9c5a8e483022d18a7e6b74a1e) | 2026-10-23T04:22:11Z | 2026-10-23T07:52:11+03:30 |
+| Verification checkpoint v1.0.6 | [1f61876](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/1f61876ca325a83f1a2086ee35d3d2beaaf41dd8) | 2026-10-23T04:22:16Z | 2026-10-23T07:52:16+03:30 |
+
+- The workflow file was fetched back after merge; blob SHA `2fc910e5ff5094381abb3cf88a31b7d4c7dfdeb6`; the explicit ULCG gate is present.
+- Run 39899815040 passed the candidate tree at `61ce41f7c8ebfa7e67ec25a66762b79684fdcafe`. This is not an audit run on the merge SHA `aa1b401803000a67baf9c05f5af86780bee74ecf`; preserve that distinction.
+- The time-binding file's own current successor commit time can be added by a future successor if required.
