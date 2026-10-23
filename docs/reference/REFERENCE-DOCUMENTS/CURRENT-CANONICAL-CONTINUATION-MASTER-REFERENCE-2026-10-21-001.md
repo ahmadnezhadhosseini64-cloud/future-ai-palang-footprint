@@ -400,3 +400,10 @@
 - VTP-01 repository read-back: PASS for the listed artifacts. VTP-02: PARTIAL / FAIL-CLOSED pending refresh/read-back of Library mirror. VTP-03: 7-character length delta check PASS; semantic acceptance pending. VTP-04: blocked by missing Library write/refresh action in current tool surface.
 - GitHub Actions run/artifact: NOT VERIFIED because this execution's available interface does not expose workflow run listing/dispatch. Unit tests are authored but must not be called PASS until actual run evidence is retrieved.
 - Host-wide live IN/OUT capture remains OPEN; the generator processes structured records committed to the repository. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external recovery NOT RUN.
+
+
+## EVT-0116 latest Library mirror result — 2026-10-23
+- Library mirror was overwritten and independently retrieved; stable Library file ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, snapshot file ID `file_00000000422c8230b7b9709a831fd252`.
+- VTP-02 PASS for semantic key fields; VTP-03 PASS for the agreed seven-character tolerance rule; VTP-04 PASS for overwrite plus independent read-back of this artifact/version. No whole-file byte equality is claimed.
+- Latest test-plan closure note commit `2cda88abc61ce00ea458ea3c93e7f716bd517bcd`, blob `3c799d1059e2602974a16a6336b11042e50eef57`.
+- Behavior Hunter CI run/artifact remains NOT VERIFIED; live host adapter/capture remains OPEN. VTP-06 and VTP-09 remain NOT RUN; VTP-07 execution remains NOT VERIFIED. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external recovery NOT RUN.
