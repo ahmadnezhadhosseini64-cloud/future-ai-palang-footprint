@@ -1,15 +1,15 @@
 {
-  "insight_id": "INSIGHT-EVT-0120-RECOVERY-EXPLICIT-PAIR-IDENTITY-001",
+  "insight_id": "INSIGHT-EVT-0120-EVIDENCE-INTEGRITY-GATE-001",
   "title": "Require verifiable evidence integrity for architecture proposals",
   "version": "1.0.0",
-  "originating_event_ids": ["EVT-0122", "EVT-0120"],
+  "originating_event_ids": ["EVT-0120"],
   "category": "provenance-and-governance",
-  "affected_components": ["IN/OUT anchors", "interaction graph recovery", "cold-start regression tests"],
+  "affected_components": ["evidence resolver", "architecture proposal gate", "provenance validation"],
   "observed_facts": [
     "A controlled repository evidence target exists for validating evidence integrity checks.",
     "This fixture supports testing the proposal gate's content-hash validation; it does not prove production recovery behavior."
   ],
-  "hypothesis": "A shared pair identifier plus direct graph bindings makes recovery deterministic and exposes stale or missing links earlier.",
+  "hypothesis": "Repository-confined evidence locators with exact SHA-256 checks make proposal provenance verifiable before owner review.",
   "evidence": [
     {
       "locator": "repo://data/interaction-pairs/evidence/EVT-0120-RESOLVER-SMOKE-EVIDENCE.txt",
@@ -17,17 +17,16 @@
     }
   ],
   "counterexamples": [
-    "The failed recovery run is a counterexample to inferring identity from nearby prose.",
-    "A mismatched pair ID must be detected as PARTIAL rather than silently recovered."
+    "A missing evidence file must block review readiness.",
+    "A mismatched SHA-256 must block review readiness."
   ],
   "proposed_change": "Require a repository-confined evidence locator and exact SHA-256 before a proposal can be considered reviewable.",
   "required_tests": [
-    "recover_from_IN",
-    "recover_from_OUT",
-    "missing_reverse_link",
-    "mismatched_pair_id",
-    "stale_master_reference",
-    "missing_queue_reference"
+    "evidence_sha256_match",
+    "missing_evidence_file",
+    "wrong_evidence_sha256",
+    "path_traversal_rejected",
+    "owner_approval_required_for_promotion"
   ],
   "rollback_plan": "Revert the isolated prototype or the specific approved commit; preserve the failed-run evidence.",
   "state": "PROPOSED",
