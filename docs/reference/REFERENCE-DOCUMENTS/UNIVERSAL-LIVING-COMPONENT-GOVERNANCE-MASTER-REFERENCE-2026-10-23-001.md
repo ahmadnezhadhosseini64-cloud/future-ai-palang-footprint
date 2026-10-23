@@ -284,3 +284,7 @@ NEXT-024 is the next 0.0 checkpoint. It must resume from the prior open queue, n
 - Current point 0: [CURRENT-023](../../0.0/anchors/PALANG-0.0-CURRENT-20261023-023-USER-CHECKPOINT-AND-CONTINUATION.md).
 - Next 0.0: [NEXT-024](../../0.0/anchors/PALANG-0.0-NEXT-20261023-024-CONTINUITY-HISTORIC-AND-COLD-START.md).
 - This pointer reconciliation does not close Issue #20, Issue #21 or the fresh exact-main audit gate.
+
+
+### Addendum v1.2.1 — expanded historical source retrieval (batch 2)
+Five more canonical sources have been fetched in full and provisionally mapped: PIATGCG, UIALAC, ICMCRR, H0GLMR and STAR-HCR. The historical migration ledger records their exact paths, blob SHAs and returned character counts; SRCMAP records their provisional rule families and open adjudication work. The cumulative named full-source retrieval count is 19, not a complete repository census. No source authority or rule has been silently merged or superseded. NEXT-024 and Issue #21 remain OPEN.
