@@ -1158,3 +1158,11 @@ The queue index and the timestamp case must each be read back after this update.
 - Active target: initial HAIF model and prototype/haif-v0.
 - Do not redirect work to Dropbox unless the user explicitly reopens that independent branch.
 - Next execution: inspect importer/schema/tests, then controlled ingest + cold-start recovery; capture actual test evidence or preserve NOT RUN.
+
+
+| LALR-2026-10-23-001 | ایجاد دفتر مستقل درس‌های معماری و چرخهٔ عملیاتی درس → آزمون → نسخه → بازیابی | OPEN / PARTIAL — دفتر/درس/رویداد ثبت شده‌اند؛ بازخوانی و تطبیق همهٔ نماها در جریان است؛ آزمون runtime و rollback هنوز اجرا نشده | سند مادر CMIND، نمایه مرجع، دفتر رفتار، دفتر ۰.۰، صندوق زنده، آزمون ممیزی ساختاری، Issue #20 | [دفتر درس‌های معماری](../ARCHITECTURE-LESSONS/README.md) / [EVT-0107](../BEHAVIOR-TRACE/EVT-0107-LIVING-LESSON-CYCLE-AND-ROLLBACK-GOVERNANCE-2026-10-23.md) |
+
+## Living lessons continuation — 2026-10-23
+- هر درس باید قاعدهٔ اجرایی، معیار پذیرش، شاهد آزمون و مسیر بازیابی داشته باشد.
+- نسخهٔ جدید append-only است؛ نسخهٔ قبلی و شکست‌ها پاک یا بازنویسی نمی‌شوند.
+- گام بعد: مهاجرت شاهددار درس‌های تاریخی، افزودن registry به ممیزی ساختاری و آزمون واقعی rollback از آخرین baseline سالم.
