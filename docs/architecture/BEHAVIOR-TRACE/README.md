@@ -481,3 +481,11 @@
 - [EVT-0109](./EVT-0109-CONTROLLED-GIT-ROLLBACK-RECOVERY-TEST-2026-10-23.md).
 - Governing lesson: [LAL-20261023-007](../ARCHITECTURE-LESSONS/lessons/LAL-20261023-007-ROLLBACK-AS-NEW-LINEAGE-EVENT.md).
 - Result: PASS for isolated branch ref restoration and candidate preservation; full-project rollback remains OPEN.
+
+
+## EVT-0110 — Universal Living Component Governance
+- [EVT-0110](./EVT-0110-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-2026-10-23.md).
+- [ULCG master](../../reference/REFERENCE-DOCUMENTS/UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001.md).
+- Independent anchors: [IN-021](../../0.0/anchors/PALANG-0.0-IN-20261023-021-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE.md) / [OUT-021](../../0.0/anchors/PALANG-0.0-OUT-20261023-021-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE.md).
+- Lesson: [LAL-20261023-008](../ARCHITECTURE-LESSONS/lessons/LAL-20261023-008-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE.md).
+- Source discovery is targeted and incomplete; see HALML ledger. Runtime automation remains unproven until Issue #20 acceptance tests pass.
