@@ -128,3 +128,8 @@ The following 14 files were fetched in full from the repository (not only from s
 ## Dedicated tracking issue
 - Full historic source/rule/lesson graph census and semantic reconciliation: [Issue #21](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/21) — OPEN / ACTIONABLE.
 - Runtime/cold-start is separate: [Issue #20](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/20).
+
+
+## Source-to-rule mapping created
+- [SRCMAP-2026-10-23-001](./SOURCE-RULE-COMPONENT-TEST-MAP-2026-10-23-001.md) extracts the operational obligations from the initial 14-source batch and connects them to components, tests and gaps.
+- The mapping is partial; several rules still need full extraction, automated checks and semantic conflict adjudication. Issue #21 remains OPEN.
