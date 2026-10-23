@@ -46,3 +46,11 @@ The exact user-message timestamp is unavailable from repository evidence. Canoni
 - Historical census and semantic source graph: [Issue #21](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/21).
 - Runtime capture/cold-start: [Issue #20](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/20).
 - These remain separate gates; completion of one does not close the other.
+
+
+## Execution progress update — 2026-10-23
+- Initial source map now exists: [SRCMAP-2026-10-23-001](../../architecture/ARCHITECTURE-LESSONS/SOURCE-RULE-COMPONENT-TEST-MAP-2026-10-23-001.md).
+- Fourteen named canonical sources were fetched in full; their SHAs and character counts are preserved in the historic lesson migration ledger.
+- ULCG and rollback-lineage enforcement are implemented in the structural audit script/workflow. Living Architecture Audit run [39900157186](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39900157186) passed on tested PR commit `ebf95aeb2cdf22b142ea95a3496d2b80830a9133`; PR #23 merged as `41288a3a5d12e0b1ccd1213d54ad57703a3e5a79`.
+- Remaining acceptance: full repository-tree/history enumeration; extract and compare all remaining rules; adjudicate semantic duplicates/conflicts; fresh full audit on exact post-merge main HEAD; continue Issue #20 runtime/cold-start; keep Issue #21 open until census criteria pass.
+- Do not mark NEXT-022 complete based on the first 14-source batch or a successful audit of a pre-merge PR tree.
