@@ -1,4 +1,5 @@
 name: Living Architecture Audit
+# Point-0 continuity gate: required files and cross-surface links are audited in this workflow.
 
 on:
   push:
