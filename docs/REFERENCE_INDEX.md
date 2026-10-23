@@ -843,3 +843,11 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - [EVT-0125 — living architecture update capability](architecture/BEHAVIOR-TRACE/EVT-0125-LIVING-ARCHITECTURE-UPDATE-CAPABILITY-2026-10-23.md) — ACTIVE/LIVING; CI-PASS, 56 tests; artifact read-back verified.
 - [NEXT-026 — fresh-session and end-to-end learning](0.0/anchors/PALANG-0.0-NEXT-20261023-026-FRESH-SESSION-AND-END-TO-END-LEARNING.md).
 - [EVT-0124 fresh-session gate](architecture/BEHAVIOR-TRACE/EVT-0124-FRESH-SESSION-RECOVERY-2026-10-23.md) and [handoff prompt](architecture/BEHAVIOR-TRACE/EVT-0124-FRESH-SESSION-RECOVERY-PROMPT-2026-10-23.md); fresh-session recovery remains NOT RUN. Issue #20/#21 remain OPEN.
+
+
+## EVT-0126 — living append-only architecture evolution
+- [EVT-0126](architecture/BEHAVIOR-TRACE/EVT-0126-LIVING-ARCHITECTURE-EVOLUTION-AND-DEEP-AUDIT-2026-10-23.md)
+- [TALL learning loop](architecture/BEHAVIOR-OBSERVATORY/TEST-TO-ARCHITECTURE-LEARNING-LOOP-2026-10-23-001.md)
+- [NEXT-027](0.0/anchors/PALANG-0.0-NEXT-20261023-027-FRESH-SESSION-AND-ARCHITECTURE-GROWTH.md)
+- Validator: `scripts/behavior-hunter/validate_architecture_update_ledger.py`; tests: `tests/behavior-hunter/test_architecture_update_ledger.py`.
+- New CI/artifact verification pending; fresh-session recovery NOT RUN; Issues #20/#21 OPEN.
