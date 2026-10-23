@@ -509,3 +509,11 @@ Current active gate remains [EVT-0122](../../architecture/BEHAVIOR-TRACE/EVT-012
 - Next active gate: [EVT-0124 fresh-session recovery](../../architecture/BEHAVIOR-TRACE/EVT-0124-FRESH-SESSION-RECOVERY-2026-10-23.md), checkpoint [NEXT-025](../../0.0/anchors/PALANG-0.0-NEXT-20261023-025-FRESH-SESSION-RECOVERY-AND-HISTORIC-CONTINUATION.md).
 - EVT-0122 repository recovery is PASS only for run 40005934719 / tested SHA `30f0eca4877039409ca3b0eda8643b6f8e0f4634`; fresh-session recovery remains NOT RUN. Issue #20 and Issue #21 remain OPEN.
 - Earlier 0.0 anchors remain preserved; this is an append-only continuation update.
+
+
+## Living architecture update capability — EVT-0125
+- Current capability event: [EVT-0125](../../architecture/BEHAVIOR-TRACE/EVT-0125-LIVING-ARCHITECTURE-UPDATE-CAPABILITY-2026-10-23.md).
+- Living learning-loop reference: [TALL](../../architecture/BEHAVIOR-OBSERVATORY/TEST-TO-ARCHITECTURE-LEARNING-LOOP-2026-10-23-001.md).
+- Gate implementation: `scripts/behavior-hunter/architecture_update_gate.py`; tests: `tests/behavior-hunter/test_architecture_update_gate.py`; proposal input: `data/interaction-pairs/architecture-update-proposal-fixture.json`.
+- The gate validates provenance/schema/owner decision and emits a manifest; it does not automatically mutate MASTER. Canonical integration still requires an explicit reviewable change, regression tests and independent read-back.
+- CI proof and artifact inspection remain pending until the corresponding run is complete and read back. Fresh-session recovery remains NOT RUN; Issue #20 and #21 remain OPEN.
