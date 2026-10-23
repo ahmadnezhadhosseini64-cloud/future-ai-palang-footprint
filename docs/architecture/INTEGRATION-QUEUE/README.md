@@ -1354,3 +1354,8 @@ The queue index and the timestamp case must each be read back after this update.
 - NEXT-024 anchor-chain regression: PASS, 39 tests OK on tested HEAD `11a8c4808491818df5cb8bf4bb6c3ca992687d95`; artifact `12521744939`, SHA-256 `d4a9f7e53019e4eddd730da42743313240feaa771d31665f69d57d17628d08e9`; four manifests inspected.
 - Run #59 identified a missing IN-026 → OUT-026 link; it was repaired and run #60 passed.
 - Current active work remains [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-RECOVERY-2026-10-23.md): bidirectional recovery from either anchor. It is not yet implemented/verified; separate fresh-session recovery and host-wide capture remain open.
+
+
+## Latest CI proof and active continuation — run #66
+Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40003897972) SUCCESS; 39 tests OK; tested HEAD `3d7a27f082a1c121cc9f9d0bce53065fbcd0557a`; artifact ID `12523202337`; ZIP SHA-256 `a07abd33e8be8ab73f87ef35a1d3ed2faeeea8e75109b913f659ea9ccad7a92d`. Four manifests were independently downloaded and inspected. The production smoke record resolved one repository file and matched its content SHA-256, while remaining `NOT RUN` with `production_claim_allowed=false`.
+Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-RECOVERY-2026-10-23.md), bidirectional IN/OUT recovery; this task itself is still IMPLEMENTATION-PENDING.

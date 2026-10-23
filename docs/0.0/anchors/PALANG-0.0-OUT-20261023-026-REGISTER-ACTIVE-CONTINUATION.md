@@ -35,3 +35,8 @@ Implement and test bidirectional recovery from either IN or OUT to the paired in
 - Artifact ID `12521744939`; SHA-256 `d4a9f7e53019e4eddd730da42743313240feaa771d31665f69d57d17628d08e9`; downloaded and four manifests inspected.
 - IN-026 → OUT-026 → EVT-0121 → NEXT-024 → master/queue → EVT-0122 links are checked by the cold-start regression.
 - Next active gate remains EVT-0122, bidirectional recovery from either IN or OUT. A separate fresh ChatGPT session and host-wide capture remain unverified.
+
+
+## Latest main-branch proof — run #66
+Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40003897972) SUCCESS; 39 tests OK; tested HEAD `3d7a27f082a1c121cc9f9d0bce53065fbcd0557a`; artifact ID `12523202337`; ZIP SHA-256 `a07abd33e8be8ab73f87ef35a1d3ed2faeeea8e75109b913f659ea9ccad7a92d`. Four manifests were independently downloaded and inspected. The production smoke record resolved one repository file and matched its content SHA-256, while remaining `NOT RUN` with `production_claim_allowed=false`.
+Next active task remains EVT-0122: bidirectional recovery from either IN or OUT; separate fresh-session recovery remains NOT RUN.

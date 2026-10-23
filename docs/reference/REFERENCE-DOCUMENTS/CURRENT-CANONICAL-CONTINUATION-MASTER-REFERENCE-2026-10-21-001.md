@@ -487,3 +487,8 @@ The earlier EVT-0120 paragraph that said the controlled non-fixture locator was 
 - Run #60 SUCCESS, 39 tests OK, tested HEAD `11a8c4808491818df5cb8bf4bb6c3ca992687d95`; artifact ID `12521744939`, SHA-256 `d4a9f7e53019e4eddd730da42743313240feaa771d31665f69d57d17628d08e9`; four manifests independently downloaded and inspected.
 - The regression validates the IN-026 → OUT-026 pair and links through EVT-0121, NEXT-024, master, queue and active EVT-0122. Run #59's missing paired-output link was fixed and #60 passed.
 - **Next active gate:** [EVT-0122](../../architecture/BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-RECOVERY-2026-10-23.md), implement/test recovery starting independently from either IN or OUT. A separate fresh ChatGPT session and host-wide capture remain NOT RUN / OPEN. Historical census / Issue #21 remains OPEN.
+
+
+## Latest main-branch verification — run #66
+Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40003897972) SUCCESS; 39 tests OK; tested HEAD `3d7a27f082a1c121cc9f9d0bce53065fbcd0557a`; artifact ID `12523202337`; ZIP SHA-256 `a07abd33e8be8ab73f87ef35a1d3ed2faeeea8e75109b913f659ea9ccad7a92d`. Four manifests were independently downloaded and inspected. The production smoke record resolved one repository file and matched its content SHA-256, while remaining `NOT RUN` with `production_claim_allowed=false`.
+Current active gate remains [EVT-0122](../../architecture/BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-RECOVERY-2026-10-23.md): implement recovery independently from either IN or OUT, then perform a separate fresh-session recovery. Live host-wide capture and historic source census / Issue #21 remain OPEN.

@@ -1179,3 +1179,8 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - Run #60 passed 39 tests on tested HEAD `11a8c4808491818df5cb8bf4bb6c3ca992687d95`; artifact ID `12521744939`; four manifests inspected.
 - [NEXT-024](anchors/PALANG-0.0-NEXT-20261023-024-CONTINUITY-HISTORIC-AND-COLD-START.md) remains the active return checkpoint.
 - Next active step: [EVT-0122](../architecture/BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-RECOVERY-2026-10-23.md), bidirectional IN/OUT recovery; separate fresh-session recovery and Issue #20 host capture remain open.
+
+
+## Latest main-branch verification — run #66
+Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40003897972) SUCCESS; 39 tests OK; tested HEAD `3d7a27f082a1c121cc9f9d0bce53065fbcd0557a`; artifact ID `12523202337`; ZIP SHA-256 `a07abd33e8be8ab73f87ef35a1d3ed2faeeea8e75109b913f659ea9ccad7a92d`. Four manifests were independently downloaded and inspected. The production smoke record resolved one repository file and matched its content SHA-256, while remaining `NOT RUN` with `production_claim_allowed=false`.
+Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architecture/BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-RECOVERY-2026-10-23.md). Preserve all prior 0.0 anchors. Separate fresh-session recovery, Issue #20 live capture and Issue #21 historical census remain open.

@@ -520,3 +520,8 @@
 - [EVT-0121](./EVT-0121-REGISTER-ACTIVE-CONTINUATION-AND-COLD-START-RESULT-2026-10-23.md) links IN-026 / OUT-026, NEXT-024, master and queue; run #60 verified the repository anchor chain with 39 tests.
 - [EVT-0122](./EVT-0122-BIDIRECTIONAL-IN-OUT-RECOVERY-2026-10-23.md) is ACTIVE / LIVING: implement recovery independently from either IN or OUT, then test a separate fresh session.
 - Prior checkpoints remain preserved; global live capture and external persistence are not inferred.
+
+
+## Latest main verification — run #66
+Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40003897972) SUCCESS; 39 tests OK; tested HEAD `3d7a27f082a1c121cc9f9d0bce53065fbcd0557a`; artifact ID `12523202337`; ZIP SHA-256 `a07abd33e8be8ab73f87ef35a1d3ed2faeeea8e75109b913f659ea9ccad7a92d`. Four manifests were independently downloaded and inspected. The production smoke record resolved one repository file and matched its content SHA-256, while remaining `NOT RUN` with `production_claim_allowed=false`.
+- [EVT-0121](./EVT-0121-REGISTER-ACTIVE-CONTINUATION-AND-COLD-START-RESULT-2026-10-23.md) is the current interaction/cold-start result; [EVT-0122](./EVT-0122-BIDIRECTIONAL-IN-OUT-RECOVERY-2026-10-23.md) is the active next gate.

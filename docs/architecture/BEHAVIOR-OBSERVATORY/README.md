@@ -172,3 +172,6 @@ Continue collecting observable interaction and evaluator behavior as evidence-ba
 
 - Latest anchor-chain regression: [run #60](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40003479619) SUCCESS, 39 tests OK; artifact ID `12521744939`, SHA-256 `d4a9f7e53019e4eddd730da42743313240feaa771d31665f69d57d17628d08e9`; four manifests independently inspected.
 - IN-026 → OUT-026 → EVT-0121 → NEXT-024 → master/queue → EVT-0122 links were checked. Active next gate: [EVT-0122 — Bidirectional IN/OUT Recovery](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-RECOVERY-2026-10-23.md). Fresh ChatGPT session recovery and host-wide capture remain unverified.
+
+
+- Latest main-branch verification: run #66 SUCCESS, 39 tests OK; artifact `12523202337` downloaded and all four manifests inspected. Current active gate: EVT-0122 bidirectional IN/OUT recovery; separate fresh-session recovery and host-wide capture remain open.
