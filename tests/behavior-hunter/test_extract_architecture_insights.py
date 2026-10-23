@@ -118,7 +118,12 @@ class ArchitectureInsightTests(unittest.TestCase):
     def test_manifest_keeps_source_ids_and_never_promotes_master(self):
         with tempfile.TemporaryDirectory() as td:
             source = Path(td) / "outcomes.jsonl"
-            source.write_text("\n".join(json.dumps(self.record(x)) for x in ("PASS", "FAIL", "BLOCKED", "NOT RUN")) + "\n", encoding="utf-8")
+            records = []
+            for outcome in ("PASS", "FAIL", "BLOCKED", "NOT RUN"):
+                rec = self.record(outcome)
+                rec["test_id"] = "T-" + outcome.replace(" ", "-")
+                records.append(json.dumps(rec))
+            source.write_text("\n".join(records) + "\n", encoding="utf-8")
             report = generate(source)
         self.assertEqual(report["records_proposed"], 4)
         self.assertEqual(report["records_rejected"], 0)
