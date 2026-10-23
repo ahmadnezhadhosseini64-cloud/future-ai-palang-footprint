@@ -58,3 +58,13 @@ The audit identified five broken local links; target candidates were checked aga
 - Timestamp-pair audit: 2,522 files; 2,132 timestamp strings; 2,131 normalized with UTC/Tehran pairs; zero offset/value failures; one ambiguous timestamp remains at EVT-0089 line 21 (`2026-10-22 14:28`, timezone not evidenced).
 - Audit explicitly reports `external_persistence_tested=false` and `chatgpt_all_conversation_capture_tested=false`.
 - Audited SHA predates later evidence-only/registration commits; do not claim later commits were included unless rerun.
+
+
+## Latest cross-layer revalidation — run 40016232683
+- [Living Architecture Audit run 40016232683](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40016232683): SUCCESS on audited SHA `e3b12108e4f0c461b6170b113a0f94c647f90b30`; artifact `12528337510` downloaded and inspected; ZIP SHA-256 `c30af6bc37febe93e65f81b9b307e9607de7bd923c6dc0ab41576ca488c4e84d`.
+- Final audited snapshot: 2,673 total files; 858 source files; 1,815 generated Evidence Gate files; 219 paths containing 0.0; 56 checkpoint paths; 160 EVT-named files; 138 reference paths; 3,627 local-link edges; zero decode errors; **zero missing local links**.
+- Collision/semantic queue unchanged: 60 Stable ID collision groups; 71 Production ID collision groups; 7 reference-ID collision groups; 30 event-number collision groups; 11 exact-content duplicate groups; 13 ambiguous parent edges; 11 proposed alias edges.
+- Timestamp pair audit: 2,522 files, 2,132 timestamp strings, 2,131 normalized pairs, zero offset/value failures, one timezone-ambiguous timestamp at EVT-0089 line 21.
+- [Behavior Hunter run 40016232651](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40016232651): SUCCESS, 67 tests on the same SHA; artifact `12528991099` inspected; ledger hash chain PASS; both IN/OUT recovery manifests RECOVERED; proposal gate remains owner-gated.
+- [Cross-Layer Integrity Gate run 40016232821](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40016232821): SUCCESS on the same SHA.
+- Current main later advanced to evidence-only bot commit `e3da20fbf83db496ce483e731607c31750ca15aa` at `2026-10-23T20:03:29Z`; the audited/tested SHA above remains the exact proof target. The later commit only adds an Evidence Gate record.
