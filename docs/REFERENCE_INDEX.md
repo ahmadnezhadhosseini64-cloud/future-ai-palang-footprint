@@ -858,3 +858,10 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - [IN-029](0.0/anchors/PALANG-0.0-IN-20261023-029-LIVING-ARCHITECTURE-EVOLUTION.md) / [OUT-029](0.0/anchors/PALANG-0.0-OUT-20261023-029-LIVING-ARCHITECTURE-EVOLUTION.md).
 - [NEXT-027](0.0/anchors/PALANG-0.0-NEXT-20261023-027-FRESH-SESSION-AND-ARCHITECTURE-GROWTH.md) active; fresh-session recovery NOT RUN; Issues #20/#21 OPEN.
 - [Run 40014035299](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40014035299), 65 tests, tested SHA `11499b652676d6d89eea0fca42d528acc1d8b2e4`; artifact ZIP SHA-256 `6ae23e424080b598395a558bc5f9ba4550e06e7dea9bda934f05f782d0526793`.
+
+
+## EVT-0126 — hash-chain verification
+- [EVT-0126](architecture/BEHAVIOR-TRACE/EVT-0126-LIVING-ARCHITECTURE-EVOLUTION-AND-DEEP-AUDIT-2026-10-23.md) — ACTIVE/LIVING, 67 tests PASS, artifact read-back verified.
+- [OUT-029](0.0/anchors/PALANG-0.0-OUT-20261023-029-LIVING-ARCHITECTURE-EVOLUTION.md), [NEXT-027](0.0/anchors/PALANG-0.0-NEXT-20261023-027-FRESH-SESSION-AND-ARCHITECTURE-GROWTH.md).
+- [Run 40014712373](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40014712373); tested SHA `965713b2ef2ca4873176015128313da9c03c1b48`; ledger hash chain verified.
+- Fresh-session recovery NOT RUN; Issues #20/#21 OPEN.
