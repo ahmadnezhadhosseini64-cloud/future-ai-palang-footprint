@@ -1241,3 +1241,9 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - Audit [40016232683](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40016232683) confirms zero missing local links; artifact `12528337510` inspected.
 - Behavior Hunter [40016232651](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40016232651) passed 67 tests; ledger hash chain PASS.
 - [NEXT-028](./anchors/PALANG-0.0-NEXT-20261023-028-POST-REPAIR-AUDIT-AND-SEMANTIC-RECONCILIATION.md) remains ACTIVE/LIVING for semantic reconciliation; previous checkpoints preserved.
+
+
+## Latest audit baseline — EVT-0127 / NEXT-028
+- Audit [40016726450](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40016726450) PASS; artifact `12529305164` inspected; zero missing local links.
+- [NEXT-028](./anchors/PALANG-0.0-NEXT-20261023-028-POST-REPAIR-AUDIT-AND-SEMANTIC-RECONCILIATION.md) remains ACTIVE/LIVING for source-backed semantic reconciliation.
+- Previous 0.0 anchors preserved; fresh-session recovery NOT RUN; Issues #20/#21 OPEN.
