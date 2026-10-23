@@ -1220,3 +1220,9 @@ The queue index and the timestamp case must each be read back after this update.
 - [NEXT-0.0-20261023-022](../../0.0/anchors/PALANG-0.0-NEXT-20261023-022-HISTORIC-SOURCE-GRAPH-EXCAVATION.md) is the next execution point after current point 0 / EVT-0110.
 - Acceptance: source enumeration, full canonical fetch, source-to-rule-to-component-to-test graph, semantic duplicate/conflict review, registry reconciliation, final-HEAD structural audit and Issue #20 runtime/cold-start progress.
 - State: OPEN / ACTIONABLE. Do not close on a report or search excerpts alone.
+
+
+## Independent open gates — ULCG continuation
+- [Issue #21](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/21): full historical source/lesson/rule census and semantic reconciliation.
+- [Issue #20](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/20): runtime capture, schema validation, IN/OUT reverse lookup and cold-start recovery.
+- These gates are cross-linked but independently accepted; keep both OPEN until evidence matches their acceptance criteria.
