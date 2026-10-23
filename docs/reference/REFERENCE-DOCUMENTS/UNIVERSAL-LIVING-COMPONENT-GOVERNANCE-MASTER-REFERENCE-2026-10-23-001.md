@@ -2,7 +2,7 @@
 
 - Stable ID: PALANG-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-2026-10-23-001
 - Production ID: ULCG-HAIF-2026-10-23-001
-- Version: 1.2.1
+- Version: 1.2.2
 - Lifecycle: ACTIVE / LIVING / APPEND-ONLY / EVOLVABLE
 - Evidence state: REGISTERED / READ-BACK VERIFIED on main for v1.2.1; fresh full audit on the exact final main HEAD remains OPEN
 - Canonical clock: actual repository commit timestamp in UTC; Tehran equivalent is the same instant +03:30
@@ -288,3 +288,13 @@ NEXT-024 is the next 0.0 checkpoint. It must resume from the prior open queue, n
 
 ### Addendum v1.2.1 — expanded historical source retrieval (batch 2)
 Five more canonical sources have been fetched in full and provisionally mapped: PIATGCG, UIALAC, ICMCRR, H0GLMR and STAR-HCR. The historical migration ledger records their exact paths, blob SHAs and returned character counts; SRCMAP records their provisional rule families and open adjudication work. The cumulative named full-source retrieval count is 19, not a complete repository census. No source authority or rule has been silently merged or superseded. NEXT-024 and Issue #21 remain OPEN.
+
+
+### Addendum v1.2.2 — visible continuation and clause-level source mapping
+
+- Current return point for the prior request remains [CURRENT-023](../../0.0/anchors/PALANG-0.0-CURRENT-20261023-023-USER-CHECKPOINT-AND-CONTINUATION.md); the subsequent concern is separately anchored as [IN-024](../../0.0/anchors/PALANG-0.0-IN-20261023-024-EXECUTION-VISIBILITY-AND-CONTINUATION.md) / [OUT-024](../../0.0/anchors/PALANG-0.0-OUT-20261023-024-EXECUTION-VISIBILITY-AND-CONTINUATION.md).
+- Event/lesson: [EVT-0113](../../architecture/BEHAVIOR-TRACE/EVT-0113-VISIBLE-CONTINUATION-AND-SOURCE-CLAUSE-EXCAVATION-2026-10-23.md) / [LAL-20261023-011](../../architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-011-VISIBLE-CONTINUATION-AND-RESUMABLE-WORK.md).
+- Provisional clause-level crosswalk: [SCRTC-B2-2026-10-23-001](../../architecture/ARCHITECTURE-LESSONS/SOURCE-CLAUSE-CROSSWALK-BATCH-2-2026-10-23-001.md). It records full-source blob SHAs, section families, architecture components, existing tests, and unresolved acceptance gates for PIATGCG, UIALAC, ICMCRR, H0GLMR and STAR-HCR.
+- Next 0.0 checkpoint: [NEXT-025](../../0.0/anchors/PALANG-0.0-NEXT-20261023-025-SOURCE-RULE-TEST-CROSSWALK-AND-COLD-START.md). Prior NEXT-022, NEXT-023 and NEXT-024 remain preserved.
+- Operational rule: do not imply unattended work during silence. Execute bounded work units in the active turn, expose durable milestones and evidence, and preserve the prior queue.
+- The five-source clause mapping is PROVISIONAL. Full repository/history census and semantic conflict adjudication remain OPEN under Issue #21. Runtime/cold-start acceptance remains OPEN under Issue #20. No source is marked superseded by this addendum.
