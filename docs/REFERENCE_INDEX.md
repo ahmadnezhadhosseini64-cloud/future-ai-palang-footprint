@@ -742,3 +742,12 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 
 ## Controlled rollback evidence — EVT-0109
 - [EVT-0109](architecture/BEHAVIOR-TRACE/EVT-0109-CONTROLLED-GIT-ROLLBACK-RECOVERY-TEST-2026-10-23.md) — isolated Git branch rollback passed; candidate preserved on evidence branch; global/runtime recovery remains OPEN.
+
+
+
+## Universal living component governance — ULCG / EVT-0110
+- [ULCG master reference](reference/REFERENCE-DOCUMENTS/UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001.md) — universal component contract, maturity ladder, source graph, version lineage and gap semantics.
+- [LAL-20261023-008](architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-008-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE.md) — independently sourced governance lesson.
+- [EVT-0110](architecture/BEHAVIOR-TRACE/EVT-0110-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-2026-10-23.md) — current event.
+- Independent anchors: [IN-021](0.0/anchors/PALANG-0.0-IN-20261023-021-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE.md) / [OUT-021](0.0/anchors/PALANG-0.0-OUT-20261023-021-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE.md).
+- Status boundary: repository registration is not equivalent to runtime enforcement, full historic census or global recovery.
