@@ -811,3 +811,9 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 
 ## Canonical time binding — IN-025 / OUT-025
 - [TIME-BINDING-INT-20261023-025](architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261023-025.md) binds repository commit timestamps to UTC and the equivalent Tehran time. Message timestamp remains separate and unknown where not exposed.
+
+
+## Current active interaction — IN-026 / OUT-026 / EVT-0121
+- [IN-026](0.0/anchors/PALANG-0.0-IN-20261023-026-REGISTER-ACTIVE-CONTINUATION.md) / [OUT-026](0.0/anchors/PALANG-0.0-OUT-20261023-026-REGISTER-ACTIVE-CONTINUATION.md) preserve the current user request and output.
+- [EVT-0121](architecture/BEHAVIOR-TRACE/EVT-0121-REGISTER-ACTIVE-CONTINUATION-AND-COLD-START-RESULT-2026-10-23.md) records the 39-test repository anchor-chain result.
+- [EVT-0122](architecture/BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-RECOVERY-2026-10-23.md) is the active next gate: recover from either IN or OUT. Fresh-session recovery and host-wide capture remain unverified.

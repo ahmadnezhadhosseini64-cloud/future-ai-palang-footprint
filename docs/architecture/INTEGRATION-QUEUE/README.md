@@ -1348,3 +1348,9 @@ The queue index and the timestamp case must each be read back after this update.
 | PALANG-BIDIRECTIONAL-IN-OUT-RECOVERY-2026-10-23-001 | بازیابی مستقل از IN یا OUT تا زوج تعامل، رویداد، سند مادر، صف، شواهد، شکاف‌ها و گام بعدی | ACTIVE / LIVING / IMPLEMENTATION-PENDING; NEXT-024 repository cold-start regression PASS (run #53, 38 tests); IN↔OUT recovery NOT RUN | EVT-0121، EVT-0122، IN-026/OUT-026، NEXT-024، resolver، tests، سند مادر | [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-RECOVERY-2026-10-23.md)؛ ساخت و اجرای آزمون بازیابی از هر دو جهت، سپس آزمون fresh-session مستقل |
 
 | PALANG-BIDIRECTIONAL-IN-OUT-RECOVERY-2026-10-23-001 | بازیابی مستقل از IN یا OUT تا زوج تعامل، رویداد، سند مادر، صف، شواهد، شکاف‌ها و گام بعدی | ACTIVE / LIVING / IMPLEMENTATION-PENDING; anchor-chain regression run #60 PASS (39 tests); bidirectional recovery itself NOT RUN | EVT-0121، EVT-0122، IN-026/OUT-026، NEXT-024، resolver، tests، سند مادر | [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-RECOVERY-2026-10-23.md)؛ ساخت و اجرای آزمون بازیابی از هر دو جهت، سپس آزمون fresh-session مستقل |
+
+
+## Latest status reconciliation — run #60 (2026-10-23)
+- NEXT-024 anchor-chain regression: PASS, 39 tests OK on tested HEAD `11a8c4808491818df5cb8bf4bb6c3ca992687d95`; artifact `12521744939`, SHA-256 `d4a9f7e53019e4eddd730da42743313240feaa771d31665f69d57d17628d08e9`; four manifests inspected.
+- Run #59 identified a missing IN-026 → OUT-026 link; it was repaired and run #60 passed.
+- Current active work remains [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-RECOVERY-2026-10-23.md): bidirectional recovery from either anchor. It is not yet implemented/verified; separate fresh-session recovery and host-wide capture remain open.

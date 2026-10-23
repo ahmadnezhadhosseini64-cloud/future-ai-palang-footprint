@@ -1173,3 +1173,9 @@ UTC مرجع اصلی ثبت و نمایش زمان است؛ زمان تهران
 - Event: [EVT-0121](../architecture/BEHAVIOR-TRACE/EVT-0121-REGISTER-ACTIVE-CONTINUATION-AND-COLD-START-RESULT-2026-10-23.md).
 - Current checkpoint: [NEXT-024](anchors/PALANG-0.0-NEXT-20261023-024-CONTINUITY-HISTORIC-AND-COLD-START.md); repository cold-start regression PASS on run #53, 38 tests.
 - Next active action: [EVT-0122](../architecture/BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-RECOVERY-2026-10-23.md), bidirectional recovery from either IN or OUT. Separate fresh-session recovery, Issue #20 live capture and Issue #21 historic census remain open.
+
+## Latest verified interaction chain — IN-026 / OUT-026
+- [IN-026](anchors/PALANG-0.0-IN-20261023-026-REGISTER-ACTIVE-CONTINUATION.md) and [OUT-026](anchors/PALANG-0.0-OUT-20261023-026-REGISTER-ACTIVE-CONTINUATION.md) are registered and read-back verified; [EVT-0121](../architecture/BEHAVIOR-TRACE/EVT-0121-REGISTER-ACTIVE-CONTINUATION-AND-COLD-START-RESULT-2026-10-23.md) records the result.
+- Run #60 passed 39 tests on tested HEAD `11a8c4808491818df5cb8bf4bb6c3ca992687d95`; artifact ID `12521744939`; four manifests inspected.
+- [NEXT-024](anchors/PALANG-0.0-NEXT-20261023-024-CONTINUITY-HISTORIC-AND-COLD-START.md) remains the active return checkpoint.
+- Next active step: [EVT-0122](../architecture/BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-RECOVERY-2026-10-23.md), bidirectional IN/OUT recovery; separate fresh-session recovery and Issue #20 host capture remain open.

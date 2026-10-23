@@ -514,3 +514,9 @@
 - [EVT-0114](./EVT-0114-STATUS-TRANSPARENCY-AND-RESUMABLE-EXECUTION-2026-10-23.md), lesson [LAL-20261023-012](../ARCHITECTURE-LESSONS/lessons/LAL-20261023-012-STATUS-TRANSPARENCY-AND-RESUMABLE-EXECUTION.md).
 - Independent anchors: [IN-025](../../0.0/anchors/PALANG-0.0-IN-20261023-025-STATUS-AND-VISIBLE-CONTINUATION.md) / [OUT-025](../../0.0/anchors/PALANG-0.0-OUT-20261023-025-STATUS-AND-VISIBLE-CONTINUATION.md).
 - CURRENT-023 remains point 0; NEXT-025 remains next 0.0. Earlier checkpoints remain preserved.
+
+
+## EVT-0121 / EVT-0122 — active continuation and recovery
+- [EVT-0121](./EVT-0121-REGISTER-ACTIVE-CONTINUATION-AND-COLD-START-RESULT-2026-10-23.md) links IN-026 / OUT-026, NEXT-024, master and queue; run #60 verified the repository anchor chain with 39 tests.
+- [EVT-0122](./EVT-0122-BIDIRECTIONAL-IN-OUT-RECOVERY-2026-10-23.md) is ACTIVE / LIVING: implement recovery independently from either IN or OUT, then test a separate fresh session.
+- Prior checkpoints remain preserved; global live capture and external persistence are not inferred.
