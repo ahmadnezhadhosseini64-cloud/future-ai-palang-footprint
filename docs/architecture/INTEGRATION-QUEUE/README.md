@@ -1196,3 +1196,8 @@ The queue index and the timestamp case must each be read back after this update.
 - Initial candidate ledger: [HALML-2026-10-23-001](../ARCHITECTURE-LESSONS/HISTORIC-LESSON-MIGRATION-LEDGER-2026-10-23-001.md) — partial inventory, source-linked, OPEN for full excavation.
 - Interaction time binding: [TIME-BINDING-INT-20261023-020](../BEHAVIOR-TRACE/TIME-BINDING-INT-20261023-020.md).
 - Next: extend source discovery and semantic adjudication; then execute the structural audit on the reconciled HEAD. A passing audit is scoped to that commit and cannot prove host-wide automation or global rollback.
+
+
+## Verification checkpoint — INT-20261023-020
+- [VERIFY-INT-20261023-020](../BEHAVIOR-TRACE/VERIFICATION-CHECKPOINT-INT-20261023-020.md) records read-back matches, evidence-gate run and residual gates.
+- Fresh structural audit on final HEAD and controlled rollback/recovery test remain OPEN until new evidence is recorded.
