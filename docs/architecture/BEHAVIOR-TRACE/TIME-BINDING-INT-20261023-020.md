@@ -2,7 +2,7 @@
 
 - Stable ID: PALANG-TIME-BINDING-INT-20261023-020
 - Production ID: TIME-BINDING-INT-20261023-020
-- Version: 1.0.3 (append-only final verification checkpoint)
+- Version: 1.0.4 (append-only timestamp correction for LAL-007)
 - Interaction: INT-20261023-020
 - Input: [IN-020](../../0.0/anchors/PALANG-0.0-IN-20261023-020-LIVING-ARCHITECTURE-EXECUTION-CYCLE.md)
 - Output: [OUT-020](../../0.0/anchors/PALANG-0.0-OUT-20261023-020-LIVING-ARCHITECTURE-EXECUTION-CYCLE.md)
@@ -46,3 +46,10 @@ Rule: the actual commit time for the latest change to each artifact is its canon
 - This time-binding v1.0.3 update has its own canonical commit time; it is not listed as its own row to avoid self-referential timestamping.
 - Evidence Gate run [39887527345](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39887527345) passed its named stable-retrieval/independent-execution checks on commit 5923acdb649faa6f35dceaaa0f9bb9402c2202a9. It does not prove the structural audit or rollback on the final head.
 - Status: canonical time metadata reconciled for listed artifacts; full structural audit on final HEAD and end-to-end recovery remain separate gates.
+
+
+## Addendum v1.0.4 — corrected lesson successor timestamp
+- The LAL-20261023-007 lesson was corrected in version 1.0.1 to repair two relative source paths. Its prior version remains available in Git history.
+- Supersedes the LAL-20261023-007 row above: latest lesson commit [e9468f2](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/e9468f217ef38ab2c54c1ed8daa399b098aa0eef), canonical UTC 2026-10-23T02:11:40Z, Tehran equivalent 2026-10-23T05:41:40+03:30.
+- Evidence Gate run [39888181637](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39888181637) confirms the named Stable Retrieval Core / independent execution checks for tested commit f21eba4bb4629877ad61881f2aa02a1fe97396e6. This is not a full structural audit of the corrected lesson or final HEAD.
+- A fresh full structural audit on the corrected final HEAD remains OPEN / NOT CONFIRMED; the workflow is push-triggered, but its final run result is not available in this checkpoint.
