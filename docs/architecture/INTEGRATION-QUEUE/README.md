@@ -1390,3 +1390,10 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - Architecture gate: `READY_FOR_OWNER_REVIEW`; exact evidence hash verified; no automatic canonical mutation/promotion; owner decision PENDING.
 - Current checkpoint: [NEXT-026](../../0.0/anchors/PALANG-0.0-NEXT-20261023-026-FRESH-SESSION-AND-END-TO-END-LEARNING.md).
 - Next: run [EVT-0124](../BEHAVIOR-TRACE/EVT-0124-FRESH-SESSION-RECOVERY-2026-10-23.md) in a separate fresh ChatGPT conversation using the [handoff prompt](../BEHAVIOR-TRACE/EVT-0124-FRESH-SESSION-RECOVERY-PROMPT-2026-10-23.md). Fresh-session recovery is NOT RUN; Issue #20/#21 remain OPEN.
+
+
+## Latest architecture update CI evidence — run 40010095560
+- [Run 40010095560](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40010095560): SUCCESS; 56 tests passed on tested SHA `f8e8c44667be7bd6a48f62240432069a8a78bd84`.
+- Artifact `12525767024` read back; ZIP SHA-256 `2ac9491822fe8d250a30596cff38b1959b92066d7c192bc9f75821acac23fd0a`.
+- Architecture update gate `READY_FOR_OWNER_REVIEW`; no canonical mutation or automatic promotion. IN/OUT recovery manifests both `RECOVERED`, zero failures.
+- Next checkpoint [NEXT-026](../../0.0/anchors/PALANG-0.0-NEXT-20261023-026-FRESH-SESSION-AND-END-TO-END-LEARNING.md); separate fresh-session recovery remains NOT RUN; Issue #20/#21 remain OPEN.
