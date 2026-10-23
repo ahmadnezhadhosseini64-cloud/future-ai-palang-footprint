@@ -28,3 +28,10 @@ The NEXT-024 repository cold-start regression passes, but it does not yet prove 
 - Live host-wide IN/OUT capture: OPEN / NOT PROVEN.
 - Historic source census / Issue #21 remains OPEN.
 - No automatic MASTER mutation; owner review is required for structural promotion.
+
+
+## Canonical graph bindings
+- Canonical master: [CCCMR](../../reference/REFERENCE-DOCUMENTS/CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001.md)
+- Integration queue: [Architecture Integration Queue](../INTEGRATION-QUEUE/README.md)
+- Evidence integrity target (not a production test PASS): [EVT-0120 resolver smoke evidence](../../../data/interaction-pairs/evidence/EVT-0120-RESOLVER-SMOKE-EVIDENCE.txt)
+- Current pair identity: `INT-20261023-026` — [IN-026](../../0.0/anchors/PALANG-0.0-IN-20261023-026-REGISTER-ACTIVE-CONTINUATION.md) / [OUT-026](../../0.0/anchors/PALANG-0.0-OUT-20261023-026-REGISTER-ACTIVE-CONTINUATION.md)
