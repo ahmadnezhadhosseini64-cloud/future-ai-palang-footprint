@@ -13,15 +13,15 @@
 
 | Artifact | Last-change commit | Canonical UTC | Tehran equivalent |
 |---|---|---|---|
-| Reference index (pointer reconciliation) | [2d9ec11](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/2d9ec1160a539e3bc61ca6b23c5d8fdf7e30270d) | 2026-10-23T07:39:23Z | 2026-10-23T11:09:23+03:30 |
+| Reference index (source census batch 2) | [434efba](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/434efbaf05bcf1c2eadaea7275c7470a44bc5bca) | 2026-10-23T07:48:36Z | 2026-10-23T11:18:36+03:30 |
 | 0.0 index (pointer reconciliation) | [2d9ec11](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/2d9ec1160a539e3bc61ca6b23c5d8fdf7e30270d) | 2026-10-23T07:39:23Z | 2026-10-23T11:09:23+03:30 |
-| Source-rule-component-test map | [a0746fa](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/a0746faf6f234d292a6221ad7c5631f35e192ac1) | 2026-10-23T07:35:16Z | 2026-10-23T11:05:16+03:30 |
-| Integration queue | [a0746fa](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/a0746faf6f234d292a6221ad7c5631f35e192ac1) | 2026-10-23T07:35:16Z | 2026-10-23T11:05:16+03:30 |
+| Source-rule-component-test map | [434efba](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/434efbaf05bcf1c2eadaea7275c7470a44bc5bca) | 2026-10-23T07:48:36Z | 2026-10-23T11:18:36+03:30 |
+| Integration queue | [434efba](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/434efbaf05bcf1c2eadaea7275c7470a44bc5bca) | 2026-10-23T07:48:36Z | 2026-10-23T11:18:36+03:30 |
 | Lesson registry | [a0746fa](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/a0746faf6f234d292a6221ad7c5631f35e192ac1) | 2026-10-23T07:35:16Z | 2026-10-23T11:05:16+03:30 |
 | Behavior trace index | [a0746fa](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/a0746faf6f234d292a6221ad7c5631f35e192ac1) | 2026-10-23T07:35:16Z | 2026-10-23T11:05:16+03:30 |
 | Initial-model mother reference | [a0746fa](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/a0746faf6f234d292a6221ad7c5631f35e192ac1) | 2026-10-23T07:35:16Z | 2026-10-23T11:05:16+03:30 |
 | EVT-0112, IN-023, OUT-023, CURRENT-023, NEXT-024 (read-back status reconciliation) | [e1e4ae6](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/e1e4ae6217004537a43906382b67786157c9fef1) | 2026-10-23T07:42:44Z | 2026-10-23T11:12:44+03:30 |
-| ULCG master v1.2.0 (canonical pointer reconciliation) | [2d9ec11](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/2d9ec1160a539e3bc61ca6b23c5d8fdf7e30270d) | 2026-10-23T07:39:23Z | 2026-10-23T11:09:23+03:30 |
+| ULCG master v1.2.1 (source census batch 2) | [434efba](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/434efbaf05bcf1c2eadaea7275c7470a44bc5bca) | 2026-10-23T07:48:36Z | 2026-10-23T11:18:36+03:30 |
 | Legacy current pointer reconciliation | [2d9ec11](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/2d9ec1160a539e3bc61ca6b23c5d8fdf7e30270d) | 2026-10-23T07:39:23Z | 2026-10-23T11:09:23+03:30 |
 | Python audit and workflow pointer gate | [2d9ec11](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/2d9ec1160a539e3bc61ca6b23c5d8fdf7e30270d) | 2026-10-23T07:39:23Z | 2026-10-23T11:09:23+03:30 |
 
@@ -55,3 +55,12 @@
 - The IN-023, OUT-023, CURRENT-023, EVT-0112 and NEXT-024 status labels now reflect main-branch read-back while retaining the open full-final-HEAD audit gate.
 - CI candidate [run 39919537621](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39919537621) passed all workflow steps. This remains candidate-tree evidence, not a claim that a push-triggered audit was independently retrieved for exact main SHA `e1e4ae6217004537a43906382b67786157c9fef1`.
 - Latest known main HEAD at this checkpoint is `e1e4ae6217004537a43906382b67786157c9fef1`; exact-main full audit status remains OPEN / NOT CONFIRMED.
+
+
+## Source census batch 2 — PR #28
+
+- Integration commit: [434efba](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/434efbaf05bcf1c2eadaea7275c7470a44bc5bca), UTC `2026-10-23T07:48:36Z`, Tehran `2026-10-23T11:18:36+03:30`.
+- Files last changed by this commit include the ULCG master v1.2.1, historic lesson migration ledger, source-rule-component-test map, NEXT-024, integration queue and reference index.
+- Five complete source fetches are recorded with blob SHAs and character counts in HALML. The count of 19 named full-source fetches is not a complete tree/history census.
+- Candidate CI [run 39920198247](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39920198247) passed all steps, including source graph, continuity gate, structural links, historic 0.0 graph, timestamps, manifest edges, UTC/Tehran semantic audit, compilation and durable host adapter.
+- Exact final-main audit status remains OPEN / NOT CONFIRMED unless a fresh full run is tied to the latest main SHA.
