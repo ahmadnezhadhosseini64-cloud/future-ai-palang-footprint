@@ -1383,3 +1383,10 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - Gate code: `scripts/behavior-hunter/architecture_update_gate.py`; tests: `tests/behavior-hunter/test_architecture_update_gate.py`.
 - Boundary: proposal validation only; no automatic MASTER mutation. Explicit owner review and post-integration regression/read-back remain required.
 - Next: inspect CI test results and the architecture-update decision artifact, then execute EVT-0124 fresh-session recovery separately. Issue #20/#21 remain OPEN.
+
+
+## Verified architecture update and NEXT-026 continuation
+- [EVT-0125](../BEHAVIOR-TRACE/EVT-0125-LIVING-ARCHITECTURE-UPDATE-CAPABILITY-2026-10-23.md): ACTIVE/LIVING, CI-PASS; 56 tests passed on tested SHA `4877bf89c5a72857d89f4dfd286a282ad9f3f932`; artifact `12525592052` inspected.
+- Architecture gate: `READY_FOR_OWNER_REVIEW`; exact evidence hash verified; no automatic canonical mutation/promotion; owner decision PENDING.
+- Current checkpoint: [NEXT-026](../../0.0/anchors/PALANG-0.0-NEXT-20261023-026-FRESH-SESSION-AND-END-TO-END-LEARNING.md).
+- Next: run [EVT-0124](../BEHAVIOR-TRACE/EVT-0124-FRESH-SESSION-RECOVERY-2026-10-23.md) in a separate fresh ChatGPT conversation using the [handoff prompt](../BEHAVIOR-TRACE/EVT-0124-FRESH-SESSION-RECOVERY-PROMPT-2026-10-23.md). Fresh-session recovery is NOT RUN; Issue #20/#21 remain OPEN.
