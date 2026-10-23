@@ -1321,3 +1321,10 @@ The queue index and the timestamp case must each be read back after this update.
 
 
 | PALANG-TEST-TO-ARCHITECTURE-LEARNING-LOOP-2026-10-23-001 | گسترش چشم پلنگ شکارچی از مولد آزمون به حلقهٔ یادگیری و پیشنهاد معماری در همهٔ لایه‌ها | ACTIVE / LIVING / DESIGN-REGISTERED / IMPLEMENTATION-PENDING | [سند حلقهٔ یادگیری](../BEHAVIOR-OBSERVATORY/TEST-TO-ARCHITECTURE-LEARNING-LOOP-2026-10-23-001.md); [EVT-0117](../BEHAVIOR-TRACE/EVT-0117-ARCHITECTURE-LEARNING-LOOP-AUDIT-2026-10-23.md) | Implement TALL-01–08: insight schema/extractor, tests for all result classes, evidence-linked proposal manifest, actual CI artifact proof, host capture and restart recovery. No automatic MASTER promotion. |
+
+
+### TALL executable layer update — 2026-10-23
+- Added `scripts/behavior-hunter/extract_architecture_insights.py`, `tests/behavior-hunter/test_extract_architecture_insights.py`, and `data/interaction-pairs/test-outcomes.jsonl` (four illustrative outcomes, not production claims).
+- Updated workflow `.github/workflows/palang-behavior-hunter.yml` to generate and upload both candidate-test and architecture-insight manifests; actual run/artifact remains NOT VERIFIED pending independent retrieval.
+- Result handling: PASS with evidence → pattern candidate; FAIL → regression/anti-pattern candidate; BLOCKED → architecture-gap candidate; NOT RUN → evidence-gap candidate. All are proposals requiring owner review, never automatic MASTER mutation.
+- Next: retrieve CI run/job/artifact evidence; fix any runtime issues; then implement live host adapter and restart recovery. Keep old anchors/failures intact.
