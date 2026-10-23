@@ -148,3 +148,8 @@ The following records were created as derivative, source-linked lessons. Canonic
 - [LAL-20261023-007 — بازگشت نسخه، رویداد تازه در تبار معماری است](./lessons/LAL-20261023-007-ROLLBACK-AS-NEW-LINEAGE-EVENT.md) — source persistence/recovery architecture.
 
 State: six source-linked lesson files have been created and fetched back; this does not close complete historical migration or prove runtime enforcement. The next pass must validate local links, operationalize tests and avoid duplicate retests without a material trigger.
+
+
+## Rollback test evidence — EVT-0109
+- [EVT-0109](../BEHAVIOR-TRACE/EVT-0109-CONTROLLED-GIT-ROLLBACK-RECOVERY-TEST-2026-10-23.md) validates the bounded Git ref rollback path.
+- [LAL-20261023-007 v1.0.2](./lessons/LAL-20261023-007-ROLLBACK-AS-NEW-LINEAGE-EVENT.md) now references the test. Do not generalize this result to runtime/global recovery.
