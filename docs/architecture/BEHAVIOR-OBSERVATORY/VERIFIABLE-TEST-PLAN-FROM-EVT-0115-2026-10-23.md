@@ -102,3 +102,19 @@ The tests below are added to the existing plan; they do not replace VTP-01..10. 
 | TALL-T10 | Canonical post-integration check | Approved change runs regression tests and is independently read back from the repository | NOT RUN |
 
 Implementation paths: `scripts/behavior-hunter/extract_architecture_insights.py`, `tests/behavior-hunter/test_extract_architecture_insights.py`, `data/interaction-pairs/test-outcomes.jsonl`, `.github/workflows/palang-behavior-hunter.yml`. The four outcome records are illustrative fixtures, not real production test results. The workflow-run listing interface available in this session only returns pull-request-triggered runs; no successful CI run/artifact could be independently confirmed, so all runtime claims remain NOT VERIFIED.
+
+
+## TALL/EVT status reconciliation addendum — EVT-0118 (2026-10-23)
+The historical VTP-02/03/04 rows and subsequent appendices contain different status snapshots. Do not silently delete the older entries; use this precedence record for current continuation:
+
+| Scope | Current authoritative state | Boundary |
+|---|---|---|
+| Repository files and listed blobs | REGISTERED / READ-BACK VERIFIED | Does not prove code execution. |
+| Library mirror | Read-back PASS for the specific mirror artifact/version cited in EVT-0116 and the mirror-refresh addendum | Not a global Library sync claim; does not prove Buffer, Persistent Memory, Dropbox or external recovery. |
+| Extractor and unit tests | Files present; runtime NOT VERIFIED | Authored tests are not executed tests. |
+| GitHub Actions and uploaded manifests | NOT VERIFIED | No independently retrieved run/job/log/artifact in this audit. |
+| Example `test-outcomes.jsonl` | FIXTURE ONLY | Never treat its synthetic PASS/FAIL/BLOCKED/NOT RUN records as production outcomes. |
+| Live host capture | OPEN / NOT PROVEN | Repository JSONL ingestion is not automatic capture of all live interactions. |
+| Fresh-session recovery and historical 0.0 preservation | NOT RUN | Must be tested from an independent anchor. |
+
+EVT-0118 supersedes stale forward-looking phrases in EVT-0117 such as “implement extractor” or “extractor PENDING” as current state, while preserving them as historical snapshot. It does not supersede the NOT VERIFIED / OPEN / NOT RUN runtime boundaries.
