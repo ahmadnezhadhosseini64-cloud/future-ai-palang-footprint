@@ -2,9 +2,9 @@
 
 - Stable ID: PALANG-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-2026-10-23-001
 - Production ID: ULCG-HAIF-2026-10-23-001
-- Version: 1.1.0
+- Version: 1.2.0
 - Lifecycle: ACTIVE / LIVING / APPEND-ONLY / EVOLVABLE
-- Evidence state: REGISTERED; repository read-back pending until independently fetched
+- Evidence state: REGISTERED / READ-BACK VERIFIED for v1.2.0 on the working branch; final main-branch audit pending
 - Canonical clock: actual repository commit timestamp in UTC; Tehran equivalent is the same instant +03:30
 - Governing architecture: Future AI / Palang Footprint / HAIF
 - Primary continuation master: [CMIND](./CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-MASTER-REFERENCE-2026-10-22-001.md)
@@ -246,3 +246,34 @@ For each material interaction, create or update, as applicable:
 
 - v1.0.0: universal source-linked living-component governance.
 - v1.1.0: adds explicit non-interruption, predecessor/successor graph continuity, parallel open-work tracking, and paired IN/OUT continuity gates. Existing v1.0.0 content is preserved above; this is an additive successor, not a replacement of prior rules.
+
+
+## Version 1.2.0 — current point 0 and successor 0.0
+
+- Stable ID: PALANG-CURRENT-POINT-0-AND-NEXT-0.0-2026-10-23-023
+- Production ID: CP0-NEXT00-HAIF-20261023-023
+- Lifecycle: ACTIVE / LIVING / APPEND-ONLY / EVOLVABLE
+- Current point 0: [CURRENT-023](../../0.0/anchors/PALANG-0.0-CURRENT-20261023-023-USER-CHECKPOINT-AND-CONTINUATION.md)
+- Interaction anchors: [IN-023](../../0.0/anchors/PALANG-0.0-IN-20261023-023-REGISTER-CURRENT-POINT-0.md) / [OUT-023](../../0.0/anchors/PALANG-0.0-OUT-20261023-023-REGISTER-CURRENT-POINT-0.md)
+- Event / lesson: [EVT-0112](../../architecture/BEHAVIOR-TRACE/EVT-0112-CURRENT-POINT-0-AND-NEXT-0.0-2026-10-23.md) / [LAL-20261023-010](../../architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-010-CURRENT-POINT-AND-NEXT-CHECKPOINT.md)
+- Next 0.0: [NEXT-024](../../0.0/anchors/PALANG-0.0-NEXT-20261023-024-CONTINUITY-HISTORIC-AND-COLD-START.md)
+- Prior checkpoints preserved: [NEXT-022 historic census](../../0.0/anchors/PALANG-0.0-NEXT-20261023-022-HISTORIC-SOURCE-GRAPH-EXCAVATION.md) and [NEXT-023 continuity](../../0.0/anchors/PALANG-0.0-NEXT-20261023-023-CONTINUITY-AND-OPEN-WORK.md)
+- Runtime recovery remains open: [Issue #20](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/20); historic source census remains open: [Issue #21](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/21).
+
+### Point 0 invariant
+
+This user interaction is the new current return point (point 0). It records the request to activate the living master, preserve all prior work, and set the next continuation as a 0.0 checkpoint. It does not close the historic source census, runtime/cold-start, or exact-final-HEAD audit gates.
+
+### Continuation invariant
+
+NEXT-024 is the next 0.0 checkpoint. It must resume from the prior open queue, not start from a blank state:
+1. Continue full historic source/rule census from NEXT-022 and Issue #21.
+2. Continue runtime pair schema, reverse lookup and cold-start recovery from Issue #20.
+3. Add CI assertions for current point 0, successor NEXT-024, paired IN/OUT, EVT-0112 and LAL-20261023-010.
+4. Run the full structural audit on the exact final reconciled main HEAD and record the exact SHA/run result.
+5. Reconcile the reference index, 0.0 index, lesson registry, behavior-trace index, source map, integration queue and CMIND/initial-model folder.
+6. Keep all prior anchors and evidence append-only; do not silently promote runtime automation or external persistence to proven.
+
+### Version history
+- v1.0.0–v1.1.0: source-linked universal living-component governance and non-interruption rule.
+- v1.2.0: formalizes current point 0, next 0.0, and continuation of multiple open workstreams without resetting earlier checkpoints.

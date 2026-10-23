@@ -1247,3 +1247,10 @@ The queue index and the timestamp case must each be read back after this update.
 ## Continuity / non-interruption rule — 2026-10-23
 
 | ICNG-HAIF-2026-10-23-001 | New inputs must be connected to prior work and checkpoints; the new request cannot silently displace unfinished historic census or runtime recovery work | OPEN / PARTIAL — governance rule and linked artifacts are being added; fresh audit on final HEAD and runtime enforcement remain unproven | ULCG v1.1.0, IN-022/OUT-022, EVT-0111, LAL-20261023-009, NEXT-023; Issues #20 and #21 | [Interaction continuity lesson](./../ARCHITECTURE-LESSONS/lessons/LAL-20261023-009-INTERACTION-CONTINUITY-NON-INTERRUPTION.md) |
+
+
+## Current point 0 / next 0.0 — 2026-10-23
+- Current point: [CURRENT-023](../../0.0/anchors/PALANG-0.0-CURRENT-20261023-023-USER-CHECKPOINT-AND-CONTINUATION.md), input/output [IN-023](../../0.0/anchors/PALANG-0.0-IN-20261023-023-REGISTER-CURRENT-POINT-0.md) / [OUT-023](../../0.0/anchors/PALANG-0.0-OUT-20261023-023-REGISTER-CURRENT-POINT-0.md), event [EVT-0112](../BEHAVIOR-TRACE/EVT-0112-CURRENT-POINT-0-AND-NEXT-0.0-2026-10-23.md).
+- Next continuation point: [NEXT-024](../../0.0/anchors/PALANG-0.0-NEXT-20261023-024-CONTINUITY-HISTORIC-AND-COLD-START.md).
+- Prior work preserved: NEXT-022 / Issue #21 historical source census; Issue #20 runtime pair/recovery/cold-start; exact-final-HEAD full audit.
+- Status: governance links are being registered; no workstream closes merely because a new checkpoint is created. Do not claim unattended background execution.
