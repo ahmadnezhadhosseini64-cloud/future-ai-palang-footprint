@@ -94,3 +94,16 @@ Latest read-back values supersede the earlier rows above:
 - Source map has 14 source rows and explicitly separates source retrieval, rule extraction, component links, test evidence and open gaps. It is an initial map, not a complete tree census.
 - Issue #21 remains OPEN for full census/semantic reconciliation; Issue #20 remains OPEN for runtime and cold-start proof.
 - The exact final-head full structural audit remains OPEN / NOT CONFIRMED. The latest Evidence Gate is not a substitute for it.
+
+
+## Addendum v1.0.4 — audit script operationalization read-back
+
+- Updated audit script blob SHA: `5e35cf8f8f4e3ac73e0d716810c4c46726a9db90`.
+- Latest ULCG master blob SHA: `6c52c2d2f3627eadeffcd9332272c1ff13b13340`.
+- Latest LAL-008 blob SHA: `a7fd805657a34497b28b893503e9406d434d824a`.
+- Latest EVT-0110 blob SHA: `653dc5cc9b6c4bc6dbcfda080f2eb4149a98f5c5`.
+- Latest source map blob SHA: `5202e9b65dde9ae5a89282351f7593827308f8c2`.
+- Latest integration queue blob SHA: `0a446302306aaceb5c311b320f4a3350bb72072e`.
+- Static read-back comparison of all nine ULCG surfaces found no missing expected IDs. The audit script has been fetched back and the added checks are present.
+- Evidence Gate run [39899501989](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39899501989) reports Stable Retrieval Core VERIFIED and Independent Automated Execution PROVEN for tested commit `fe9ba1c16838986f18e6f037154424c4d9142e0c`. It does not execute the full Living Architecture Audit.
+- Actual Python audit / full structural workflow result on the current final HEAD: NOT CONFIRMED. Keep structural gate OPEN.
