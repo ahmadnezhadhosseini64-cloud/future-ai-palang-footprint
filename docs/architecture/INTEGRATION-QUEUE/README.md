@@ -1214,3 +1214,9 @@ The queue index and the timestamp case must each be read back after this update.
 - [EVT-0110](../BEHAVIOR-TRACE/EVT-0110-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-2026-10-23.md), [LAL-20261023-008](../ARCHITECTURE-LESSONS/lessons/LAL-20261023-008-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE.md), [INBOX-007](../LIVE-INBOX/entries/INBOX-20261023-007.md).
 - Next gates: extend historical source census; validate local links on final HEAD; record full structural audit run + tested SHA; continue Issue #20 runtime schema/reverse-lookup/cold-start recovery.
 - Existing accepted rules remain active within proven scope while runtime and global recovery gates are OPEN.
+
+
+## Next 0.0 checkpoint — full historic source graph excavation
+- [NEXT-0.0-20261023-022](../../0.0/anchors/PALANG-0.0-NEXT-20261023-022-HISTORIC-SOURCE-GRAPH-EXCAVATION.md) is the next execution point after current point 0 / EVT-0110.
+- Acceptance: source enumeration, full canonical fetch, source-to-rule-to-component-to-test graph, semantic duplicate/conflict review, registry reconciliation, final-HEAD structural audit and Issue #20 runtime/cold-start progress.
+- State: OPEN / ACTIONABLE. Do not close on a report or search excerpts alone.
