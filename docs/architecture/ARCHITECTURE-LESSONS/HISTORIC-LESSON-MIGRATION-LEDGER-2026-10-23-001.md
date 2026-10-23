@@ -63,3 +63,8 @@ Six derivative source-linked lesson records have been created and independently 
 - [LAL-20261023-007](./lessons/LAL-20261023-007-ROLLBACK-AS-NEW-LINEAGE-EVENT.md)
 
 This is a bounded normalization pass, not a claim of full historical coverage. The registry, ledger and each lesson still require structural link audit on a final commit. Runtime-wide behavior-hunter activation and end-to-end recovery remain OPEN.
+
+
+## Recovery-rule test update — 2026-10-23
+- [LAL-20261023-007](./lessons/LAL-20261023-007-ROLLBACK-AS-NEW-LINEAGE-EVENT.md) now links [EVT-0109](../BEHAVIOR-TRACE/EVT-0109-CONTROLLED-GIT-ROLLBACK-RECOVERY-TEST-2026-10-23.md).
+- Bounded repository branch rollback: PASS. Full-project, host/runtime and external-destination recovery remain OPEN / NOT PROVEN.
