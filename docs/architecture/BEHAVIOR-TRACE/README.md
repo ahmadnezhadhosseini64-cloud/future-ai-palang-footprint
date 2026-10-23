@@ -503,3 +503,8 @@
 - [EVT-0113](./EVT-0113-VISIBLE-CONTINUATION-AND-SOURCE-CLAUSE-EXCAVATION-2026-10-23.md), lesson [LAL-20261023-011](../ARCHITECTURE-LESSONS/lessons/LAL-20261023-011-VISIBLE-CONTINUATION-AND-RESUMABLE-WORK.md).
 - IN-024 / OUT-024 are linked to CURRENT-023 and NEXT-025; NEXT-022/023/024 remain preserved.
 - Source clause crosswalk: [SCRTC-B2](../ARCHITECTURE-LESSONS/SOURCE-CLAUSE-CROSSWALK-BATCH-2-2026-10-23-001.md).
+
+
+## Verification checkpoint and time binding — IN-024 / OUT-024
+- [VERIFICATION-CHECKPOINT-INT-20261023-024](./VERIFICATION-CHECKPOINT-INT-20261023-024.md) — candidate audit success, exact tested SHA, preserved failed run, and final-main audit boundary.
+- [TIME-BINDING-INT-20261023-024](./TIME-BINDING-INT-20261023-024.md) — canonical UTC and derived Tehran time.
