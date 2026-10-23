@@ -73,7 +73,7 @@
 
 | Source / rule | Connected architecture component | Required evidence / test | Current status |
 |---|---|---|---|
-| [ULCG v1.2.0](../../reference/REFERENCE-DOCUMENTS/UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001.md), [EVT-0112](../BEHAVIOR-TRACE/EVT-0112-CURRENT-POINT-0-AND-NEXT-0.0-2026-10-23.md), [LAL-20261023-010](./lessons/LAL-20261023-010-CURRENT-POINT-AND-NEXT-CHECKPOINT.md) | Current point 0, independent IN/OUT anchors, successor NEXT-024, master, index, lesson/trace registries, queue and model-initial master | Static CI links, read-back, final-HEAD audit, IN/OUT reverse lookup and cold-start recovery | Governance record registered; runtime proof and fresh final-HEAD audit remain OPEN |
+| [ULCG v1.2.1](../../reference/REFERENCE-DOCUMENTS/UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001.md), [EVT-0112](../BEHAVIOR-TRACE/EVT-0112-CURRENT-POINT-0-AND-NEXT-0.0-2026-10-23.md), [LAL-20261023-010](./lessons/LAL-20261023-010-CURRENT-POINT-AND-NEXT-CHECKPOINT.md) | Current point 0, independent IN/OUT anchors, successor NEXT-024, master, index, lesson/trace registries, queue and model-initial master | Static CI links, read-back, final-HEAD audit, IN/OUT reverse lookup and cold-start recovery | Governance record registered; runtime proof and fresh final-HEAD audit remain OPEN |
 
 
 ## Audit finding and reconciliation — run 39918423082
@@ -83,3 +83,16 @@
 - Correction: this addendum connects CURRENT-023 to IN-023 / OUT-023, EVT-0112, LAL-20261023-010, ULCG v1.2.0 and NEXT-024.
 - Failure evidence retained: [Living Architecture Audit run 39918423082](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39918423082).
 - Status: defect identified and correction registered; rerun is required before validation. The failed run remains historical evidence and is not deleted or rewritten.
+
+
+## Full-source batch 2 — five additional canonical sources
+
+| Source / stable identity | Rule family extracted provisionally | Architecture links | Test/evidence and unresolved state |
+|---|---|---|---|
+| [PIATGCG](../../reference/REFERENCE-DOCUMENTS/PERMANENT-INTERACTION-ANCHORING-TIMESTAMP-GOVERNANCE-AND-CANONICAL-GRAPH-MASTER-REFERENCE-2026-10-21-001.md) — `PERMANENT-INTERACTION-ANCHORING-TIMESTAMP-GOVERNANCE-AND-CANONICAL-GRAPH-MASTER-REFERENCE-2026-10-21-001` | Each material interaction has independent anchors, canonical time governance, explicit graph edges, duplicate/version decisions and destination-specific evidence. | ULCG v1.2.0; IN/OUT pair ledger; CURRENT-023/NEXT-024; time-binding ledger | Full source fetch confirmed; exact rule-level crosswalk and collision adjudication OPEN. |
+| [UIALAC](../../reference/REFERENCE-DOCUMENTS/UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001.md) — `UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001` | Defines record schema, classification, capture→preserve→integrate→store→read-back→verify lifecycle, independent persistence layers, 0.0 continuity and recovery. | ULCG; registration orchestrator; pair ledger; indexes/queue | Full source fetch confirmed; compare v1.2.0 amendments to ULCG and executable validator; semantic equivalence not yet declared. |
+| [ICMCRR](../../reference/REFERENCE-DOCUMENTS/INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-REGISTRATION-2026-10-20-001.md) — `INTERACTION-CONTINUITY-MASTER-CHILD-RAHM-REGISTRATION-2026-10-20-001` | HAIF Master–Child–Rahm chain, continuity graph, portable package and explicit G-01…G-09 acceptance gaps. | Initial-model mother reference; ULCG; NEXT-024; Issue #20/#21 | Full source fetch confirmed; verify whether all nine gaps have current canonical successors; OPEN. |
+| [H0GLMR](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-RECONCILIATION-LIVING-MASTER-REFERENCE-2026-10-21-001.md) — `HISTORICAL-0.0-GRAPH-RECONCILIATION-LIVING-MASTER-REFERENCE-2026-10-21-001` | Historical 0.0 graph snapshot, duplicate/collision candidates, aliases, provenance and audit-scope discipline. | NEXT-022/NEXT-024; historical graph audit scripts; rollback lineage | Full source fetch confirmed; reconcile historical counts/snapshots with latest tree and avoid treating dated snapshots as current counts. |
+| [STAR-HCR](../../reference/REFERENCE-DOCUMENTS/SEMANTIC-TIMESTAMP-AUDIT-AND-HOST-CAPTURE-RECOVERY-MASTER-REFERENCE-2026-10-21-001.md) — `SEMANTIC-TIMESTAMP-AUDIT-AND-HOST-CAPTURE-RECOVERY-MASTER-REFERENCE-2026-10-21-001` | UTC semantic audit, producer/runtime connection boundary, destination-specific persistence and cold-start/recovery proof. | Issue #20; timestamp audit; host adapter tests; TIME-BINDING-INT-20261023-023 | Full source fetch confirmed; runtime-wide capture remains NOT PROVEN; cold-start remains OPEN. |
+
+**Interpretation rule:** these are provisional source-family mappings, not final merged laws. Source authority, versions, rule granularity, conflicts and tests must be compared before any equivalence or supersession decision.

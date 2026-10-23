@@ -1254,3 +1254,9 @@ The queue index and the timestamp case must each be read back after this update.
 - Next continuation point: [NEXT-024](../../0.0/anchors/PALANG-0.0-NEXT-20261023-024-CONTINUITY-HISTORIC-AND-COLD-START.md).
 - Prior work preserved: NEXT-022 / Issue #21 historical source census; Issue #20 runtime pair/recovery/cold-start; exact-final-HEAD full audit.
 - Status: governance links are being registered; no workstream closes merely because a new checkpoint is created. Do not claim unattended background execution.
+
+
+## NEXT-024 execution progress — historical source batch 2
+- Five additional full-source fetches recorded in HALML and SRCMAP: PIATGCG, UIALAC, ICMCRR, H0GLMR, STAR-HCR.
+- This is a meaningful continuation of Issue #21; it does not close the census. Cumulative named fetches are 19, with the full tree/history census and semantic conflict adjudication still OPEN.
+- Next: numbered-clause extraction, conflict/authority crosswalk, source→rule→component→test mapping, then exact-HEAD audit. Runtime/cold-start remains separately OPEN under Issue #20.
