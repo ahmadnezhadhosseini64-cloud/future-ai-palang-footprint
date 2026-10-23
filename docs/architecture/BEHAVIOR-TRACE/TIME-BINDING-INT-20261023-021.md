@@ -127,3 +127,8 @@
 - Living Architecture Audit [run 39900157186](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39900157186) passed on tested PR head `ebf95aeb2cdf22b142ea95a3496d2b80830a9133`.
 - The run is separate from the merge timestamp. It proves the tested PR tree; a separate full audit of exact post-merge main HEAD remains unconfirmed.
 - Current ULCG / source-map rollback lineage is linked to EVT-0109 and LAL-007; runtime/global recovery remains open.
+
+
+## Addendum v1.0.8 — next 0.0 progress checkpoint
+- NEXT-0.0-20261023-022 progress update: [4312a1b](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/4312a1b4fc521ef16f071adf605501af1353ea9f), canonical UTC `2026-10-23T04:26:50Z`, Tehran equivalent `2026-10-23T07:56:50+03:30`.
+- The next-point anchor now records the 14-source full-fetch batch, source map, audit-gate implementation and successful PR audit, while keeping full tree/history census, exact post-merge main-head audit and runtime/cold-start acceptance OPEN.
