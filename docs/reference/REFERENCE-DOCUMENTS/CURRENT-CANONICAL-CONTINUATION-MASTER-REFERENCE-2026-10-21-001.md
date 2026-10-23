@@ -415,3 +415,12 @@
 - Audit conclusion: the prior Child/Rahm-only framing was too narrow. Verified results, failures, blocked cases, unrun tests, user corrections, recurring patterns, and source/mirror drift may inform proposals across all architecture domains: interfaces, schemas, provenance, recovery, verification, interaction design, automation, privacy/security, patterns, regression and documentation.
 - New pipeline: result → insight/failure/gap → hypothesis → counterexample/rule comparison → design alternatives → prototype/regression → evidence-linked proposal → owner review → canonical integration → post-integration verification.
 - Guardrail: broader proposal scope, not uncontrolled autonomous mutation. No auto-promotion to MASTER; all 0.0 anchors and failures are preserved. Actual CI run/artifact, deterministic insight extractor, live host capture, and end-to-end recovery remain NOT VERIFIED / OPEN / PENDING as appropriate.
+
+
+## EVT-0117 — executable architecture-learning layer added
+- Learning-loop design: [TALL](../../architecture/BEHAVIOR-OBSERVATORY/TEST-TO-ARCHITECTURE-LEARNING-LOOP-2026-10-23-001.md); audit event: [EVT-0117](../../architecture/BEHAVIOR-TRACE/EVT-0117-ARCHITECTURE-LEARNING-LOOP-AUDIT-2026-10-23.md).
+- Added deterministic extractor `scripts/behavior-hunter/extract_architecture_insights.py`, tests `tests/behavior-hunter/test_extract_architecture_insights.py`, and four illustrative outcome fixtures in `data/interaction-pairs/test-outcomes.jsonl` covering PASS/FAIL/BLOCKED/NOT RUN.
+- Workflow `.github/workflows/palang-behavior-hunter.yml` now attempts candidate-test generation and architecture-insight manifest generation, then uploads the JSON manifests as one artifact bundle. Actual CI run status and artifact retrieval remain NOT VERIFIED until independently observed.
+- PASS without evidence is rejected; FAIL/BLOCKED/NOT RUN generate distinct proposal types; proposals remain PROPOSED with confidence UNASSESSED and owner review required; no MASTER mutation.
+- Key commits: extractor `004974970583fc214d97b4b42638fcc3d6a4c05e`; tests `e811cc864b9bf74ad699d5b19f7f67e9234195df`; fixture `68075ea7fddad8ec25b6d3d63ccdf42fe6d38149`; workflow `d15af1dce6a4f79420dc972bc8324dacdf12defd`.
+- Current boundary: candidate extraction is implemented in repository code, but actual CI outcome, host-wide live capture, and end-to-end restart recovery are not yet verified. The earlier narrow Child/Rahm-only growth rule is superseded by TALL's all-layer proposal scope.
