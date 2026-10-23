@@ -1420,3 +1420,10 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - Artifact `12528275489` inspected; ZIP SHA-256 `6ae23e424080b598395a558bc5f9ba4550e06e7dea9bda934f05f782d0526793`; ledger manifest PASS, evidence gate READY_FOR_OWNER_REVIEW, both recovery directions RECOVERED.
 - [IN-029](../../0.0/anchors/PALANG-0.0-IN-20261023-029-LIVING-ARCHITECTURE-EVOLUTION.md) / [OUT-029](../../0.0/anchors/PALANG-0.0-OUT-20261023-029-LIVING-ARCHITECTURE-EVOLUTION.md) are the current pair; [NEXT-027](../../0.0/anchors/PALANG-0.0-NEXT-20261023-027-FRESH-SESSION-AND-ARCHITECTURE-GROWTH.md) remains active.
 - Fresh-session recovery NOT RUN; Issues #20/#21 OPEN; no host-wide capture or external persistence claim.
+
+
+## Hash-chain ledger verification — run 40014712373
+- Architecture ledger validation PASS; 67 tests passed on SHA `965713b2ef2ca4873176015128313da9c03c1b48`.
+- Artifact `12527726978` inspected, ZIP SHA-256 `6ddf0b23d3f33db2cdfc6cb4b1e7154899bf1477a0466ba5c01a2a3c7325c07b`.
+- Ledger hash chain verified; zero errors. Previous version 1.0.0 preserved; 1.1.0 records the authorized integration of validation.
+- Next active checkpoint [NEXT-027](../../0.0/anchors/PALANG-0.0-NEXT-20261023-027-FRESH-SESSION-AND-ARCHITECTURE-GROWTH.md); fresh-session recovery NOT RUN; Issues #20/#21 OPEN.
