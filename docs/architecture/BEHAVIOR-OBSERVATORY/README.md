@@ -163,3 +163,6 @@ Continue collecting observable interaction and evaluator behavior as evidence-ba
 
 - Latest EVT-0120 proof: [run #45](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40002313474) SUCCESS, 34 tests OK; one non-fixture repo:// locator resolved and its SHA-256 matched. Artifact ID `12522836550` was downloaded and all four manifests inspected. This verifies evidence integrity only, not a test PASS.
 - Active next gate: cold-start recovery from NEXT-024; live host-wide capture remains OPEN / NOT PROVEN.
+
+- Repository cold-start regression from NEXT-024: run #53 SUCCESS, 38 tests OK; artifact ID `12521909205` independently downloaded and inspected. This does not prove a separate ChatGPT session or host-wide capture.
+- Active next gate: [EVT-0122 — Bidirectional IN/OUT Recovery](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-RECOVERY-2026-10-23.md); start from either anchor, reconstruct the pair and continuation graph, then run fresh-session recovery.
