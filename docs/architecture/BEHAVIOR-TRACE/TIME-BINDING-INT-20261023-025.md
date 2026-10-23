@@ -88,3 +88,13 @@ Because the following changed artifacts were included in that squash commit, the
 - Fresh full Living Architecture Audit on exact final main HEAD `dd9ecd9cbe027ee442c9fa9d867b238faa0afa52` remains OPEN / NOT CONFIRMED until an exact-SHA run is surfaced and inspected.
 - Issue #21 (full historic source/rule census) and Issue #20 (runtime capture/reverse lookup/cold-start) remain OPEN.
 - This ledger update itself is a later main commit; its own canonical timestamp must be taken from its commit metadata and recorded by a successor binding, not predicted.
+
+
+## OUT-025 post-merge update — canonical time
+
+The append-only post-merge result was added to OUT-025 in commit [fa5602c](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/fa5602cc7f89db646f9597f3beadfb263306e336).
+
+- OUT-025 last-change UTC: 2026-10-23T16:16:23Z
+- Tehran equivalent: 2026-10-23T19:46:23+03:30
+- This is the canonical last-change time for OUT-025 on main, superseding its earlier squash-merge timestamp for that file only.
+- The time-binding record itself is updated after this entry; its own last-change time is available from its actual Git commit metadata and is not inferred.
