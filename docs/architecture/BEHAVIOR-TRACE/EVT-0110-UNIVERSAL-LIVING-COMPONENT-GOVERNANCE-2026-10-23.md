@@ -46,3 +46,10 @@ The source search was a targeted repository search, not a complete file-tree cen
 
 ## Timestamp integrity
 Exact user-message timestamp was not supplied by the repository tooling. Do not infer it from commit timestamps. Canonical repository time will be appended after this event is committed and fetched back.
+
+
+## Version 1.0.1 — post-write verification checkpoint
+- ULCG master, LAL-008, IN-021, OUT-021, NEXT-0.0-022, INBOX-007, CMIND, reference index, 0.0 registry, behavior-trace index, lesson registry, integration queue and live inbox index were independently fetched back. Exact blob SHAs and statuses are in [VERIFY-INT-20261023-021](./VERIFICATION-CHECKPOINT-INT-20261023-021.md).
+- Fourteen named canonical sources were fetched in full; their blob SHAs and character counts are recorded in the historic lesson migration ledger.
+- Evidence Gate run 39898598290 confirms its named Stable Retrieval Core / Independent Automated Execution checks on commit f87cb3f9422afa4c4fc527b4960b8b9a5c280d8f. It is not the full structural audit.
+- Final-HEAD structural audit, complete source/lesson census, runtime-wide capture and cold-start recovery remain OPEN / NOT CONFIRMED.
