@@ -128,3 +128,12 @@ EVT-0118 supersedes stale forward-looking phrases in EVT-0117 such as “impleme
 - New regression tests cover missing identity, missing provenance, placeholder evidence, malformed locator/hash, fixture-only governance, duplicates, malformed JSON and non-object records.
 - Current state: files committed; final independent read-back and runtime execution still required. CI run/job/log/artifact: NOT VERIFIED. Locator shape checks do not prove remote artifact resolution.
 - New test gates: `TALL-H01` schema and evidence fields; `TALL-H02` locator resolution and immutable artifact provenance; `TALL-H03` deterministic IDs and duplicate rejection; `TALL-H04` fixture-vs-production segregation; `TALL-H05` actual Actions execution and artifact inspection.
+
+
+## EVT-0120 resolver verification update — 2026-10-23
+- Resolver and regression tests are registered and independently read-back verified.
+- Actual workflow [run #35](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40001818794): SUCCESS; 32 tests ran; all workflow steps including evidence-resolution manifest and artifact upload succeeded.
+- Artifact ID `12522117128`, ZIP SHA-256 `716c34a1ead3d63c4e4c290210e41780fe4a2ce0bd07b66c1056689e5dafa61b`; all three manifests were downloaded and inspected.
+- The resolver manifest marks all 4 synthetic rows `FIXTURE_ONLY`, with 0 production resolutions and 0 unresolved errors. This is the expected fixture outcome, not production evidence resolution.
+- Failed runs #32–#34 and the SyntaxError are retained in EVT-0120 as learning evidence; run #35 verifies the correction.
+- Still NOT RUN: a controlled real `repo://` locator with actual content SHA-256; independent fresh-session 0.0 recovery; live host-wide IN/OUT capture remains OPEN.
