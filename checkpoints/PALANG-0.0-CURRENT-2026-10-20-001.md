@@ -5,11 +5,11 @@
 - Version: 1.0.0
 - Project: Future AI / Palang Footprint
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
-- Reference point: 0.0 (new continuation anchor; does not replace prior anchors)
+- Reference point: historical 0.0 anchor; current pointer moved to CURRENT-023 on 2026-10-23
 - Captured date: 2026-10-20
 - Captured local time: 10:49
 - Timezone: Asia/Tehran (UTC+03:30)
-- Status: ACTIVE / LIVING / REPOSITORY-WRITTEN / READ-BACK MATCHED (initial registration)
+- Status at initial registration: ACTIVE / LIVING / REPOSITORY-WRITTEN / READ-BACK MATCHED; current-pointer status: HISTORICAL / PRESERVED
 - Origin: User instruction in the conversation dated 2026-10-20.
 - Lineage: Adds a new continuation anchor while preserving all previous 0.0 anchors and open work items.
 - Repository path: checkpoints/PALANG-0.0-CURRENT-2026-10-20-001.md
@@ -260,3 +260,10 @@ On 2026-10-20, the user explicitly approved applying the temporal bracketing rul
 - **شکاف‌های باز:** ادغام معنایی در سند مادر، بازیابی مستقل سند HAIF، آزمون سرتاسری هر ورودی/خروجی، ساخت و آزمون بسته قابل‌انتقال، دو آزمون تاریخی، Dropbox و مقصدهای Library/Buffer/Persistent Memory.
 - **زمان دقیق پیام:** UNKNOWN / UNVERIFIED؛ زمان commit جایگزین زمان پیام نیست.
 - این لنگر خروجی، نقطه ۰.۰ جاری را حفظ می‌کند و ۰.۰ جدیدی نمی‌سازد؛ لنگر Dropbox همچنان مستقل و OPEN / WAITING است.
+
+
+## Current pointer supersession — 2026-10-23 (append-only lineage)
+
+This file remains a preserved historical checkpoint. It is no longer the current return pointer. The active point 0 is now [CURRENT-023](../docs/0.0/anchors/PALANG-0.0-CURRENT-20261023-023-USER-CHECKPOINT-AND-CONTINUATION.md), with independent anchors [IN-023](../docs/0.0/anchors/PALANG-0.0-IN-20261023-023-REGISTER-CURRENT-POINT-0.md) / [OUT-023](../docs/0.0/anchors/PALANG-0.0-OUT-20261023-023-REGISTER-CURRENT-POINT-0.md) and successor 0.0 [NEXT-024](../docs/0.0/anchors/PALANG-0.0-NEXT-20261023-024-CONTINUITY-HISTORIC-AND-COLD-START.md).
+
+The original contents and lineage of this 2026-10-20 anchor remain preserved in Git history. This addendum changes only the current pointer, not the historical evidence or open work.

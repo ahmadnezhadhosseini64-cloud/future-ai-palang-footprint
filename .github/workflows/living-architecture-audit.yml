@@ -69,6 +69,9 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          test -f checkpoints/PALANG-0.0-CURRENT-2026-10-20-001.md
+          grep -q 'CURRENT-023' checkpoints/PALANG-0.0-CURRENT-2026-10-20-001.md
+          grep -q 'NEXT-024' checkpoints/PALANG-0.0-CURRENT-2026-10-20-001.md
           test -f docs/0.0/anchors/PALANG-0.0-CURRENT-20261023-023-USER-CHECKPOINT-AND-CONTINUATION.md
           test -f docs/0.0/anchors/PALANG-0.0-NEXT-20261023-024-CONTINUITY-HISTORIC-AND-COLD-START.md
           test -f docs/0.0/anchors/PALANG-0.0-IN-20261023-023-REGISTER-CURRENT-POINT-0.md

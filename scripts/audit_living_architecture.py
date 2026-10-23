@@ -148,6 +148,7 @@ for rel, label in ulcg_surfaces:
 # Current point 0 / next 0.0 continuity gate.
 # This is structural policy verification, not runtime-wide capture or cold-start proof.
 continuity_required = {
+    "legacy current pointer reconciled": "checkpoints/PALANG-0.0-CURRENT-2026-10-20-001.md",
     "current point 0": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261023-023-USER-CHECKPOINT-AND-CONTINUATION.md",
     "next 0.0 checkpoint": "docs/0.0/anchors/PALANG-0.0-NEXT-20261023-024-CONTINUITY-HISTORIC-AND-COLD-START.md",
     "current input anchor": "docs/0.0/anchors/PALANG-0.0-IN-20261023-023-REGISTER-CURRENT-POINT-0.md",
@@ -161,6 +162,7 @@ for label, rel in continuity_required.items():
         errors.append(f"CONTINUITY_MISSING_REQUIRED_FILE label={label!r} path={rel}")
 
 continuity_surfaces = {
+    "LEGACY_CURRENT_POINTER": ("checkpoints/PALANG-0.0-CURRENT-2026-10-20-001.md", ("CURRENT-023", "NEXT-024", "HISTORICAL / PRESERVED")),
     "ULCG_MASTER": ("docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001.md", ("Version: 1.2.0", "CURRENT-023", "NEXT-024", "EVT-0112", "LAL-20261023-010")),
     "REFERENCE_INDEX": ("docs/REFERENCE_INDEX.md", ("CURRENT-023", "NEXT-024", "TIME-BINDING-INT-20261023-023")),
     "ZERO_ZERO_REGISTRY": ("docs/0.0/README.md", ("CURRENT-023", "NEXT-024", "IN-023", "OUT-023", "EVT-0112")),

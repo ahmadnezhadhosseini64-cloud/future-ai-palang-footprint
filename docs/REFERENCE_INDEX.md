@@ -777,3 +777,9 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - Next 0.0: [NEXT-024](0.0/anchors/PALANG-0.0-NEXT-20261023-024-CONTINUITY-HISTORIC-AND-COLD-START.md).
 - Canonical UTC/Tehran bindings: [TIME-BINDING-INT-20261023-023](architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261023-023.md).
 - Earlier NEXT-022 historic census and NEXT-023 continuity checkpoint remain preserved and OPEN; Issues #20 and #21 remain separate open workstreams.
+
+
+## Canonical current-pointer state
+- Current point 0: [CURRENT-023](0.0/anchors/PALANG-0.0-CURRENT-20261023-023-USER-CHECKPOINT-AND-CONTINUATION.md).
+- Next 0.0: [NEXT-024](0.0/anchors/PALANG-0.0-NEXT-20261023-024-CONTINUITY-HISTORIC-AND-COLD-START.md).
+- The former pointer [PALANG-0.0-CURRENT-2026-10-20-001](../checkpoints/PALANG-0.0-CURRENT-2026-10-20-001.md) remains a preserved historical anchor and explicitly points forward to CURRENT-023.
