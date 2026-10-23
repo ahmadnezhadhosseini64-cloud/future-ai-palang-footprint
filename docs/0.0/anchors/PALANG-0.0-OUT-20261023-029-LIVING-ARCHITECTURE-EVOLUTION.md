@@ -31,3 +31,12 @@
 - `architecture-update-gate.json`: READY_FOR_OWNER_REVIEW; evidence VERIFIED; owner decision for the fixture proposal remains PENDING; no automatic promotion/canonical mutation.
 - Both recovery manifests: RECOVERED, zero failures; host-wide capture false; fresh-session test NOT RUN; external persistence false.
 - Current main later advanced to evidence-only bot commit `de703573646fd5afad69432f90328d8366ffe8e1` at `2026-10-23T19:46:26Z`; that post-run SHA was not independently rerun.
+
+
+## Final hash-chain verification — run 40014712373
+- [Run 40014712373](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40014712373): SUCCESS; 67 tests passed on tested/current-main SHA `965713b2ef2ca4873176015128313da9c03c1b48`.
+- Artifact `12527726978` downloaded and inspected; ZIP SHA-256 `6ddf0b23d3f33db2cdfc6cb4b1e7154899bf1477a0466ba5c01a2a3c7325c07b`.
+- Ledger manifest PASS: 2 records, 2 unique versions, 1 stream, hash chain verified, zero errors.
+- Proposal gate remains READY_FOR_OWNER_REVIEW; evidence VERIFIED; fixture owner decision PENDING; promotion and canonical mutation false.
+- Both recovery directions RECOVERED with zero failures; separate fresh-session recovery NOT RUN; host-wide capture/external persistence NOT PROVEN.
+- The two interim failures during hash-chain hardening were preserved and corrected; see EVT-0126.
