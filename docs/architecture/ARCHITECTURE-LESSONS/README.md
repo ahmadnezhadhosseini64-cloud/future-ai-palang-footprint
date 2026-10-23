@@ -3,7 +3,7 @@
 - Stable ID: PALANG-LIVING-ARCHITECTURE-LESSONS-REGISTRY-2026-10-23-001
 - Production ID: LALR-2026-10-23-001
 - Version: 1.0.0
-- Status: ACTIVE / LIVING / OPEN / EVOLVABLE
+- Status: ACTIVE / LIVING / OPEN / EVOLVABLE; repository READ-BACK VERIFIED; full lesson migration/runtime enforcement/rollback proof OPEN
 - Owner: Future AI / Palang Footprint
 - Governing master: [CMIND — ادامه از مدل اولیه، نه Dropbox](../../reference/REFERENCE-DOCUMENTS/CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-MASTER-REFERENCE-2026-10-22-001.md)
 - Governing architecture: [Living Evolutionary Architecture](../../../architecture/ARCH-2026-08-29-001-living-evolutionary-architecture.md)
@@ -63,7 +63,7 @@ DISCOVERED → CAPTURED → CLASSIFIED → REGISTERED → READ-BACK VERIFIED →
 ## 7. Current lesson inventory (initial, not exhaustive)
 | Lesson ID | Lesson | Operational rule | Current state |
 |---|---|---|---|
-| LAL-20261023-001 | درس معماری نباید فقط نوشته شود؛ باید عملیاتی، آزموده و به چرخهٔ نسخه‌پذیر وصل شود | هر درس → کنترل/آزمون/شاهد/بازخوانی/ارتباط/بازیابی | REGISTERED / READ-BACK PENDING |
+| LAL-20261023-001 | درس معماری نباید فقط نوشته شود؛ باید عملیاتی، آزموده و به چرخهٔ نسخه‌پذیر وصل شود | هر درس → کنترل/آزمون/شاهد/بازخوانی/ارتباط/بازیابی | REGISTERED / READ-BACK VERIFIED / INTEGRATION PARTIAL |
 | EVT-0103 | کشف رفتاری و برخورد شناسه باید آشکارا ثبت و اصلاح شود | طبقه‌بندی شواهد؛ یکتایی ID پیش از write؛ regression test | Existing event; runtime remains OPEN |
 | EVT-0093 | تعامل پروژه‌محور واحد رشد است | IN/OUT/EVT → inbox → master → action → evidence | Existing event |
 | NO-REDUNDANT-RETEST-2026-09-03-001 | آزمون بسته‌شده و معتبر بی‌دلیل تکرار نشود | retest on change, deployment, need, error, regression, conflicting evidence | Existing registered rule |
@@ -99,3 +99,10 @@ DISCOVERED → CAPTURED → CLASSIFIED → REGISTERED → READ-BACK VERIFIED →
 - Assistant output: [OUT-019](../../0.0/anchors/PALANG-0.0-OUT-20261023-019-LIVING-LESSON-CYCLE.md).
 - Behavior event: [EVT-0107](../BEHAVIOR-TRACE/EVT-0107-LIVING-LESSON-CYCLE-AND-ROLLBACK-GOVERNANCE-2026-10-23.md).
 - Live inbox item: [INBOX-20261023-005](../LIVE-INBOX/entries/INBOX-20261023-005.md).
+
+
+## Repository verification checkpoint — 2026-10-23
+- Registry, lesson, event, IN-019, OUT-019, INBOX-20261023-005, CMIND, reference index (raw GitHub read), behavior-trace index, 0.0 registry, integration queue, live inbox and audit script were fetched/read back after writes.
+- Expected IDs and principal links matched in the fetched surfaces.
+- The first Living Architecture Audit run #1703 (run ID 39885773714) failed on an earlier/intermediate commit, reporting a missing reference index path and missing lesson ID in the queue. The current main-branch read-back now shows the reference index and queue entry present; a fresh audit on the fully reconciled HEAD is required before marking structural audit PASS.
+- Runtime lesson enforcement, complete historic lesson migration and real rollback/recovery remain OPEN.
