@@ -154,3 +154,6 @@ Continue collecting observable interaction and evaluator behavior as evidence-ba
 
 
 - Active continuation event: [EVT-0119 — Behavior Hunter Evidence Gate Hardening](../BEHAVIOR-TRACE/EVT-0119-BEHAVIOR-HUNTER-EVIDENCE-GATE-HARDENING-2026-10-23.md). Implementation committed: stricter required fields, production evidence provenance, source hash/locator-shape validation, deterministic IDs, duplicate rejection, fixture-only labeling. CI and artifact remain NOT VERIFIED.
+
+- EVT-0120 current proof: [run #35](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40001818794) passed 32 tests; artifact ID `12522117128` and all three manifests were independently inspected. Resolver fixture records remain `FIXTURE_ONLY`; real non-fixture locator resolution and fresh-session 0.0 recovery remain NOT RUN.
+- Active next step: [EVT-0120 — Evidence Locator Resolution and Cold Recovery](../BEHAVIOR-TRACE/EVT-0120-EVIDENCE-LOCATOR-RESOLUTION-AND-COLD-RECOVERY-2026-10-23.md).
