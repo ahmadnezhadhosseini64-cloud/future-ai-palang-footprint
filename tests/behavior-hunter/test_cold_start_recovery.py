@@ -64,6 +64,7 @@ class RepositoryColdStartRecoveryTests(unittest.TestCase):
         queue = self.read("docs/architecture/INTEGRATION-QUEUE/README.md")
 
         self.assertIn("OUT-026", input_anchor)
+        self.assertIn("Paired output:", input_anchor)
         self.assertIn("IN-026", output_anchor)
         self.assertIn("EVT-0121", input_anchor)
         self.assertIn("EVT-0121", output_anchor)
