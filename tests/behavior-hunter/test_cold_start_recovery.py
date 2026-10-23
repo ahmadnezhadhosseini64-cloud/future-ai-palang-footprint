@@ -22,9 +22,9 @@ class RepositoryColdStartRecoveryTests(unittest.TestCase):
         queue = self.read(queue_path)
         event = self.read(event_path)
 
-        self.assertIn(master_path, checkpoint)
-        self.assertIn(queue_path, checkpoint)
-        self.assertIn(event_path, checkpoint)
+        self.assertIn("../../reference/REFERENCE-DOCUMENTS/CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001.md", checkpoint)
+        self.assertIn("../../architecture/INTEGRATION-QUEUE/README.md", checkpoint)
+        self.assertIn("../../architecture/BEHAVIOR-TRACE/EVT-0120-EVIDENCE-LOCATOR-RESOLUTION-AND-COLD-RECOVERY-2026-10-23.md", checkpoint)
         self.assertIn("EVT-0120", master)
         self.assertIn("PALANG-COLD-START-RECOVERY-FROM-NEXT-024-2026-10-23-001", queue)
         self.assertIn("40002313474", event)
