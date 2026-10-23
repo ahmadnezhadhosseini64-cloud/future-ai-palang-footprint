@@ -703,3 +703,11 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - Scope: repository only. The three records were written and independently fetched back; expected IDs and paired links matched. Runtime ingestion/restart was NOT RUN in this turn. External persistence was NOT ATTEMPTED.
 - Canonical registration commits (UTC; Tehran is +03:30): IN-018 2026-10-23T01:23:43Z = 2026-10-23T04:53:43+03:30; OUT-018 2026-10-23T01:23:46Z = 2026-10-23T04:53:46+03:30; EVT-0106 2026-10-23T01:23:48Z = 2026-10-23T04:53:48+03:30.
 - Next action: inspect the importer/schema/test paths, then perform controlled ingest and cold-start recovery where an executable checkout/API is available; do not reopen Dropbox.
+
+
+## Living Architecture Lessons — 2026-10-23
+- Registry: [Living Architecture Lessons](architecture/ARCHITECTURE-LESSONS/README.md) — LALR-2026-10-23-001, Version 1.0.0.
+- Current lesson: [LAL-20261023-001 — چرخهٔ زندهٔ درس، آزمون، نسخه و بازیابی](architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-001-LIVING-APPEND-ONLY-VERIFY-RECOVER-CYCLE.md).
+- Behavior event: [EVT-0107](architecture/BEHAVIOR-TRACE/EVT-0107-LIVING-LESSON-CYCLE-AND-ROLLBACK-GOVERNANCE-2026-10-23.md).
+- Governing master: [CMIND](reference/REFERENCE-DOCUMENTS/CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-MASTER-REFERENCE-2026-10-22-001.md).
+- Status: registry, lesson and event written to repository; post-write read-back and full reconciliation must be evidenced separately. Historic lesson migration, runtime enforcement and rollback test remain OPEN.
