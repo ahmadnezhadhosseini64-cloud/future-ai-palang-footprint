@@ -4,7 +4,7 @@
 - Stable ID: PALANG-EVIDENCE-LOCATOR-RESOLUTION-COLD-RECOVERY-2026-10-23-001
 - Production ID: ELRCR-HAIF-2026-10-23-001
 - Version: 1.0.0
-- Status: ACTIVE / LIVING / IMPLEMENTATION-IN-PROGRESS
+- Status: ACTIVE / LIVING / IMPLEMENTED-IN-REPOSITORY / CI-PASS / ARTIFACT-READ-BACK-VERIFIED / COLD-RECOVERY-NOT-RUN
 - Parent: EVT-0119
 - Current step: TALL-H02 — actual evidence locator resolution and content integrity, not merely URI/path shape validation.
 - Next linked gate: fresh-session recovery from an independent 0.0 anchor after the resolver passes.
@@ -35,3 +35,34 @@ B. Add unit tests for positive, negative and adversarial paths.
 C. Add fixture-safe CI manifest generation and inspect the actual run/artifact.
 D. Reconcile the test plan, master reference and integration queue with exact run and blob evidence.
 E. Start the fresh-session 0.0 recovery test only after A–D are verified.
+
+
+## Implementation, failure learning, and independent verification — 2026-10-23
+
+### Implemented
+- `scripts/behavior-hunter/resolve_evidence_locators.py`: resolves only `repo://relative/path` evidence inside the repository root; rejects traversal, absolute paths, missing files, symlink escapes, unsupported remote schemes and SHA-256 mismatch. It never makes network requests or claims that an external URL resolved.
+- Production PASS evidence now requires `content_sha256` in addition to `execution_id` and `source_sha`; digest format is checked by the extractor.
+- `tests/behavior-hunter/test_resolve_evidence_locators.py`: added tests for valid resolution, hash mismatch, missing file, traversal, absolute path, symlink escape, unsupported URL, malformed digest, fixture-only behavior and PASS without evidence.
+- Workflow now generates `evidence-resolution.json` in explicit fixture mode and uploads it with the other manifests.
+
+### Failure and correction retained as learning evidence
+- Runs #32 and #33 failed after the new content-digest requirement exposed an improperly escaped newline in a unit-test source line. Run #34 also failed on the same syntax error. The actual log identified the exact line and `SyntaxError: unexpected character after line continuation character`.
+- Corrected the test source in commit `5ea1252580a13ec5e2d2260a502b807ef82db8bc`; the next run #35 passed. This is a real regression lesson: code generation/string edits require syntax validation through CI before declaring the implementation complete.
+
+### Actual CI evidence
+- Workflow run [#35](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40001818794).
+- Run ID `40001818794`; head SHA `5ea1252580a13ec5e2d2260a502b807ef82db8bc`; run created UTC `2026-10-23T18:15:31Z`, Tehran `2026-10-23T21:45:31+03:30`.
+- Job `generate-and-verify`: SUCCESS; **32 tests ran; OK**; candidate manifest generation, architecture-insight generation, evidence-resolution manifest generation and artifact upload all succeeded.
+- Artifact ID `12522117128`; uploaded UTC `2026-10-23T18:15:44Z`, Tehran `2026-10-23T21:45:44+03:30`.
+- Artifact ZIP SHA-256: `716c34a1ead3d63c4e4c290210e41780fe4a2ce0bd07b66c1056689e5dafa61b`.
+- Downloaded and inspected all three files: `architecture-insights.json`, `candidate-tests.json`, `evidence-resolution.json`.
+- `architecture-insights.json`: 4 fixture-only demonstration proposals; 0 rejected, 0 duplicates, 0 parse errors; no production promotion.
+- `evidence-resolution.json`: 4 records marked `FIXTURE_ONLY`, 0 production resolutions, 0 unresolved errors. This is correct for synthetic fixtures and is **not** evidence that a real production locator has been resolved.
+- `candidate-tests.json`: one candidate with `execution_status=NOT_RUN`; the candidate itself was not executed.
+
+### Remaining truth / next active action
+- Resolver behavior and security boundaries: CI unit-tested successfully.
+- Real production evidence resolution against a real `repo://` evidence item: NOT YET RUN end-to-end; external URLs remain explicitly unsupported.
+- Fresh-session recovery from an independent 0.0 through event → master → queue → evidence → next action: NOT RUN.
+- Live host-wide ChatGPT IN/OUT capture: OPEN / NOT PROVEN.
+- Next: run a controlled non-fixture evidence-resolution case using a real repository file and its SHA-256, then conduct the separate fresh-session 0.0 recovery test. Preserve the failures and all previous anchors.
