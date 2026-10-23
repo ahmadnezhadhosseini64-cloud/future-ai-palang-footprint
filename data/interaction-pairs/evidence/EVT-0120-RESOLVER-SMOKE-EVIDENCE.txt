@@ -1,0 +1,5 @@
+EVT-0120 controlled repository evidence-resolution smoke target
+Stable-ID: PALANG-EVIDENCE-RESOLUTION-SMOKE-TARGET-2026-10-23-001
+Version: 1.0.0
+Purpose: verify repo:// path confinement and SHA-256 content matching.
+This is an evidence target, not a production interaction outcome.
