@@ -35,3 +35,12 @@ PASS به‌تنهایی اجازهٔ تغییر MASTER نیست. شواهد ب�
 - Live host adapter for all permitted IN/OUT: OPEN.
 - Fresh-session recovery and 0.0 preservation end-to-end: NOT RUN.
 - Next: implement a deterministic, evidence-linked insight manifest and tests; then retrieve real CI execution evidence. Keep all 0.0 anchors and prior failures intact.
+
+
+## Implementation update — repository artifacts added
+- Added deterministic extractor: `scripts/behavior-hunter/extract_architecture_insights.py`.
+- Added tests: `tests/behavior-hunter/test_extract_architecture_insights.py`.
+- Added four illustrative structured outcomes: `data/interaction-pairs/test-outcomes.jsonl`.
+- Updated workflow to generate and upload both JSON manifests: `.github/workflows/palang-behavior-hunter.yml`.
+- Commits: extractor `004974970583fc214d97b4b42638fcc3d6a4c05e`; tests `e811cc864b9bf74ad699d5b19f7f67e9234195df`; fixture `68075ea7fddad8ec25b6d3d63ccdf42fe6d38149`; workflow `d15af1dce6a4f79420dc972bc8324dacdf12defd`.
+- Read-back and actual CI run/artifact verification remain separate required checks; do not claim execution PASS based on code presence. The four outcomes are test fixtures only.
