@@ -164,3 +164,9 @@ Next point remains [NEXT-0.0-20261023-022](../../0.0/anchors/PALANG-0.0-NEXT-202
 - Full historical lesson/rule/source graph census is now independently tracked as [Issue #21](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/21).
 - Runtime/cold-start remains independently tracked as [Issue #20](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/20).
 - The two tracks are related but not interchangeable: Issue #21 governs source discovery/semantic mapping; Issue #20 governs implementation and runtime/recovery proof. Keep both OPEN until their own acceptance criteria pass.
+
+
+## Addendum v1.0.5 — initial source-to-rule graph materialized
+- [SRCMAP-2026-10-23-001](../../architecture/ARCHITECTURE-LESSONS/SOURCE-RULE-COMPONENT-TEST-MAP-2026-10-23-001.md) records the extracted operational rules, connected components, known tests and explicit proof gaps for the initial verified source batch.
+- The map differentiates prior structural audit evidence from a fresh audit of the current final HEAD, and distinguishes schema/fixture smoke tests from cold-start recovery.
+- Source map status: ACTIVE / LIVING / PARTIAL. It is a first mapped batch, not the complete graph. Issue #21 remains OPEN.
