@@ -2,7 +2,7 @@
 
 - Stable ID: PALANG-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-2026-10-23-001
 - Production ID: ULCG-HAIF-2026-10-23-001
-- Version: 1.2.0
+- Version: 1.2.1
 - Lifecycle: ACTIVE / LIVING / APPEND-ONLY / EVOLVABLE
 - Evidence state: REGISTERED / READ-BACK VERIFIED on main for v1.2.0; fresh full audit on the exact final main HEAD remains OPEN
 - Canonical clock: actual repository commit timestamp in UTC; Tehran equivalent is the same instant +03:30
