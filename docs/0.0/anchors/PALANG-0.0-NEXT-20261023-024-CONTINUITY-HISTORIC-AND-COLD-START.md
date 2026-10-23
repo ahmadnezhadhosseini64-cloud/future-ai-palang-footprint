@@ -94,3 +94,10 @@ NEXT-024 is OPEN and resumable. It preserves NEXT-022 and NEXT-023. No open gate
 - Registration/cold-start event: [EVT-0121](../../architecture/BEHAVIOR-TRACE/EVT-0121-REGISTER-ACTIVE-CONTINUATION-AND-COLD-START-RESULT-2026-10-23.md).
 - **Next active work:** [EVT-0122](../../architecture/BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-RECOVERY-2026-10-23.md) — recover the full interaction graph independently from either IN or OUT. This is not yet implemented or verified.
 - Repository cold-start regression from NEXT-024 passed in run #53 (38 tests) on its tested HEAD; the separate fresh-session recovery and host-wide capture remain unverified.
+
+
+## Latest anchor-chain verification — run #60
+- The cold-start regression now also checks IN-026's paired-output link, OUT-026/EVT-0121 linkage, NEXT-024 successor EVT-0122, and master/queue registrations.
+- Run #60 SUCCESS; 39 tests OK; tested HEAD `11a8c4808491818df5cb8bf4bb6c3ca992687d95`; artifact ID `12521744939`, SHA-256 `d4a9f7e53019e4eddd730da42743313240feaa771d31665f69d57d17628d08e9`; four manifests independently inspected.
+- Run #59's missing IN-026 → OUT-026 pair link was fixed and is now covered by a passing regression test.
+- **Next active gate:** EVT-0122 — bidirectional recovery starting independently from either IN or OUT; fresh ChatGPT session recovery and host-wide capture remain NOT RUN / OPEN.
