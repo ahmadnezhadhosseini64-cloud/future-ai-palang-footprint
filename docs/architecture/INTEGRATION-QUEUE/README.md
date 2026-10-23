@@ -1412,3 +1412,11 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - CI step emits `architecture-update-ledger.json`; new-run evidence pending until artifact inspection.
 - Governance: append-only version history; prior version retained; future updates still require evidence, tests and explicit owner decision; no automatic MASTER mutation.
 - Next: [NEXT-027](../../0.0/anchors/PALANG-0.0-NEXT-20261023-027-FRESH-SESSION-AND-ARCHITECTURE-GROWTH.md), with fresh-session recovery and Issues #20/#21 still open.
+
+
+## EVT-0126 CI verified — run 40014035299
+- [EVT-0126](../BEHAVIOR-TRACE/EVT-0126-LIVING-ARCHITECTURE-EVOLUTION-AND-DEEP-AUDIT-2026-10-23.md) is implemented and CI-verified.
+- 65 tests passed on tested SHA `11499b652676d6d89eea0fca42d528acc1d8b2e4`; [run 40014035299](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40014035299).
+- Artifact `12528275489` inspected; ZIP SHA-256 `6ae23e424080b598395a558bc5f9ba4550e06e7dea9bda934f05f782d0526793`; ledger manifest PASS, evidence gate READY_FOR_OWNER_REVIEW, both recovery directions RECOVERED.
+- [IN-029](../../0.0/anchors/PALANG-0.0-IN-20261023-029-LIVING-ARCHITECTURE-EVOLUTION.md) / [OUT-029](../../0.0/anchors/PALANG-0.0-OUT-20261023-029-LIVING-ARCHITECTURE-EVOLUTION.md) are the current pair; [NEXT-027](../../0.0/anchors/PALANG-0.0-NEXT-20261023-027-FRESH-SESSION-AND-ARCHITECTURE-GROWTH.md) remains active.
+- Fresh-session recovery NOT RUN; Issues #20/#21 OPEN; no host-wide capture or external persistence claim.
