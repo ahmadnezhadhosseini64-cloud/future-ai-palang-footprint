@@ -1404,3 +1404,11 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - Artifact `12525353595` inspected; ZIP SHA-256 `9bf29f18268f720a5eedb423011ec6014b7f5da8ef22b589686faa9aa0188cd0`.
 - Gate `READY_FOR_OWNER_REVIEW`; evidence VERIFIED; no auto-promotion; both recovery directions PASS.
 - Post-run main HEAD `3301ded46901530fbd746ecdde7db4411dec6c6f` is evidence-only and not separately rerun. Fresh-session recovery remains NOT RUN; Issue #20/#21 OPEN.
+
+
+## Active append-only architecture evolution — EVT-0126
+- [EVT-0126](../BEHAVIOR-TRACE/EVT-0126-LIVING-ARCHITECTURE-EVOLUTION-AND-DEEP-AUDIT-2026-10-23.md) — active architecture evolution/ledger validation.
+- Validator: `scripts/behavior-hunter/validate_architecture_update_ledger.py`; regression tests: `tests/behavior-hunter/test_architecture_update_ledger.py`; history: `data/interaction-pairs/architecture-update-ledger.jsonl`.
+- CI step emits `architecture-update-ledger.json`; new-run evidence pending until artifact inspection.
+- Governance: append-only version history; prior version retained; future updates still require evidence, tests and explicit owner decision; no automatic MASTER mutation.
+- Next: [NEXT-027](../../0.0/anchors/PALANG-0.0-NEXT-20261023-027-FRESH-SESSION-AND-ARCHITECTURE-GROWTH.md), with fresh-session recovery and Issues #20/#21 still open.
