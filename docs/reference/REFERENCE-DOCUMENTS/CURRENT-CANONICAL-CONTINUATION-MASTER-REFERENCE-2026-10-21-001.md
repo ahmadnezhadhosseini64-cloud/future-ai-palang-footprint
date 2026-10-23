@@ -471,3 +471,11 @@ The earlier EVT-0120 paragraph that said the controlled non-fixture locator was 
 - The test recovered NEXT-024 → canonical master → integration queue → EVT-0120 → resolver/evidence → next action and confirmed predecessor/successor 0.0 anchors remain present. This is a repository-checkout regression PASS, not proof of a separate ChatGPT session or host-wide auto-capture.
 - **Next active action:** [EVT-0122](../../architecture/BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-RECOVERY-2026-10-23.md) — implement recovery starting independently from either IN or OUT anchor and verify the paired interaction, event, master, queue, evidence, gaps and successor checkpoint.
 - Historic source census / Issue #21 remains OPEN; live runtime capture / Issue #20 remains OPEN / NOT PROVEN. External destinations remain separately unverified. No Dropbox detour unless explicitly reopened.
+
+
+## Latest verified anchor chain — run #60 (2026-10-23)
+- Current interaction: [IN-026](../../0.0/anchors/PALANG-0.0-IN-20261023-026-REGISTER-ACTIVE-CONTINUATION.md) / [OUT-026](../../0.0/anchors/PALANG-0.0-OUT-20261023-026-REGISTER-ACTIVE-CONTINUATION.md), event [EVT-0121](../../architecture/BEHAVIOR-TRACE/EVT-0121-REGISTER-ACTIVE-CONTINUATION-AND-COLD-START-RESULT-2026-10-23.md).
+- Current checkpoint: [NEXT-024](../../0.0/anchors/PALANG-0.0-NEXT-20261023-024-CONTINUITY-HISTORIC-AND-COLD-START.md).
+- Run #60 SUCCESS, 39 tests OK, tested HEAD `11a8c4808491818df5cb8bf4bb6c3ca992687d95`; artifact ID `12521744939`, SHA-256 `d4a9f7e53019e4eddd730da42743313240feaa771d31665f69d57d17628d08e9`; four manifests independently downloaded and inspected.
+- The regression now validates the IN-026 → OUT-026 pair and links through EVT-0121, NEXT-024, master, queue and active EVT-0122. Run #59's missing paired-output link was fixed and #60 passed.
+- **Next active gate:** [EVT-0122](../../architecture/BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-RECOVERY-2026-10-23.md), implement/test recovery starting independently from either IN or OUT. A separate fresh ChatGPT session and host-wide capture remain NOT RUN / OPEN. Historical census / Issue #21 remains OPEN.
