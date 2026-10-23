@@ -153,3 +153,9 @@ State: six source-linked lesson files have been created and fetched back; this d
 ## Rollback test evidence — EVT-0109
 - [EVT-0109](../BEHAVIOR-TRACE/EVT-0109-CONTROLLED-GIT-ROLLBACK-RECOVERY-TEST-2026-10-23.md) validates the bounded Git ref rollback path.
 - [LAL-20261023-007 v1.0.2](./lessons/LAL-20261023-007-ROLLBACK-AS-NEW-LINEAGE-EVENT.md) now references the test. Do not generalize this result to runtime/global recovery.
+
+
+## Universal component governance lesson — LAL-20261023-008
+- [LAL-20261023-008](./lessons/LAL-20261023-008-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE.md) — each law/lesson/component has independent source/version/evidence and remains linked to the shared graph.
+- Governing master: [ULCG](../../reference/REFERENCE-DOCUMENTS/UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001.md).
+- Event and anchors: [EVT-0110](../BEHAVIOR-TRACE/EVT-0110-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-2026-10-23.md), [IN-021](../../0.0/anchors/PALANG-0.0-IN-20261023-021-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE.md), [OUT-021](../../0.0/anchors/PALANG-0.0-OUT-20261023-021-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE.md).
