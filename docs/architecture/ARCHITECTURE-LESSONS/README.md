@@ -135,3 +135,16 @@ DISCOVERED → CAPTURED → CLASSIFIED → REGISTERED → READ-BACK VERIFIED →
 ## Verification evidence for current execution
 - [VERIFY-INT-20261023-020](../BEHAVIOR-TRACE/VERIFICATION-CHECKPOINT-INT-20261023-020.md) records read-back and test scopes.
 - [HALML-2026-10-23-001](./HISTORIC-LESSON-MIGRATION-LEDGER-2026-10-23-001.md) remains a partial inventory; migration completion is not inferred.
+
+
+
+## Normalized source-linked lesson records — 2026-10-23
+The following records were created as derivative, source-linked lessons. Canonical source documents remain authoritative; these records do not replace them.
+- [LAL-20261023-002 — تعامل، واحد رشد معماری است](./lessons/LAL-20261023-002-INTERACTION-IS-ARCHITECTURE-GROWTH-UNIT.md) — source EVT-0093.
+- [LAL-20261023-003 — شکارچی رفتار، منفی کاذب و یکتایی شناسه](./lessons/LAL-20261023-003-BEHAVIOR-HUNTER-FALSE-NEGATIVE-ID-COLLISION.md) — source EVT-0103; runtime remains OPEN.
+- [LAL-20261023-004 — تداوم مسیر مدل اولیه، نه Dropbox](./lessons/LAL-20261023-004-CONTINUE-MODEL-INITIAL-NOT-DROPBOX.md) — source EVT-0106.
+- [LAL-20261023-005 — عدم تکرار آزمون معتبر بدون محرک](./lessons/LAL-20261023-005-NO-REDUNDANT-RETEST.md) — source canonical NO-REDUNDANT-RETEST registration.
+- [LAL-20261023-006 — بررسی منفی کاذب سامانهٔ ارزیابی](./lessons/LAL-20261023-006-AUTOMATED-FALSE-NEGATIVE-INVESTIGATION.md) — source EVT-0035 and Behavior Observatory test.
+- [LAL-20261023-007 — بازگشت نسخه، رویداد تازه در تبار معماری است](./lessons/LAL-20261023-007-ROLLBACK-AS-NEW-LINEAGE-EVENT.md) — source persistence/recovery architecture.
+
+State: six source-linked lesson files have been created and fetched back; this does not close complete historical migration or prove runtime enforcement. The next pass must validate local links, operationalize tests and avoid duplicate retests without a material trigger.
