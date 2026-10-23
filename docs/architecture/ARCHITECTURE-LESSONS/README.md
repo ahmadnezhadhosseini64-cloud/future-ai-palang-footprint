@@ -123,3 +123,10 @@ DISCOVERED → CAPTURED → CLASSIFIED → REGISTERED → READ-BACK VERIFIED →
 - Inbox: [INBOX-20261023-006](../LIVE-INBOX/entries/INBOX-20261023-006.md).
 - Required next evolution: excavate historic lesson candidates with provenance, adjudicate duplicate IDs without merging uncertain records, turn confirmed rules into executable checks/manual gates, then run a fresh audit and bounded recovery test.
 - Status: this is an append-only continuation; the inventory remains non-exhaustive and host-wide automation remains NOT PROVEN.
+
+
+
+## Historic migration ledger
+- First evidence-backed excavation batch: [HALML-2026-10-23-001](./HISTORIC-LESSON-MIGRATION-LEDGER-2026-10-23-001.md).
+- Time provenance for the current interaction: [TIME-BINDING-INT-20261023-020](../BEHAVIOR-TRACE/TIME-BINDING-INT-20261023-020.md).
+- The ledger is intentionally partial. Existing canonical sources remain the source of truth until provenance, semantic equivalence and acceptance gates are checked. No ambiguous IDs are merged.
