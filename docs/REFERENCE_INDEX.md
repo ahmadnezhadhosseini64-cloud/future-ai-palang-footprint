@@ -711,3 +711,9 @@ At `0.0`, retrieval precedes response: retrieve the canonical source, verify its
 - Behavior event: [EVT-0107](architecture/BEHAVIOR-TRACE/EVT-0107-LIVING-LESSON-CYCLE-AND-ROLLBACK-GOVERNANCE-2026-10-23.md).
 - Governing master: [CMIND](reference/REFERENCE-DOCUMENTS/CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-MASTER-REFERENCE-2026-10-22-001.md).
 - Status: registry, lesson and event written to repository; post-write read-back and full reconciliation must be evidenced separately. Historic lesson migration, runtime enforcement and rollback test remain OPEN.
+
+
+### Provenance for living lesson cycle
+- IN: [IN-019](0.0/anchors/PALANG-0.0-IN-20261023-019-LIVING-LESSON-CYCLE.md).
+- OUT: [OUT-019](0.0/anchors/PALANG-0.0-OUT-20261023-019-LIVING-LESSON-CYCLE.md).
+- Live Inbox: [INBOX-20261023-005](architecture/LIVE-INBOX/entries/INBOX-20261023-005.md).
