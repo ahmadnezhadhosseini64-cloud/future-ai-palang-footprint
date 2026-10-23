@@ -59,3 +59,10 @@ Verify the exact CI run after these changes, inspect the `architecture-update-ga
 - Update gate: `READY_FOR_OWNER_REVIEW`; evidence integrity verified; zero errors; owner decision PENDING; no canonical mutation or automatic promotion.
 - Both recovery manifests: `RECOVERED`, zero failures. Insight manifest: 4 proposals, 0 rejected, 0 duplicates.
 - This is repository/CI evidence only. Fresh-session recovery remains NOT RUN; Issue #20 and Issue #21 remain OPEN.
+
+
+## Latest verification — run 40010379551
+- [Run 40010379551](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40010379551): SUCCESS; 56 tests passed on tested SHA `0393d738583e8cc54977797dd470a31453fe9f00`.
+- Artifact ID `12525353595`; downloaded and inspected; ZIP SHA-256 `9bf29f18268f720a5eedb423011ec6014b7f5da8ef22b589686faa9aa0188cd0`.
+- Gate `READY_FOR_OWNER_REVIEW`, zero errors, evidence VERIFIED, owner decision PENDING, canonical mutation false, promotion false. Both recovery directions `RECOVERED`, zero failures; 4 insight candidates, zero rejected/duplicates.
+- The later main commit `3301ded46901530fbd746ecdde7db4411dec6c6f` is an evidence-only automation commit (`evidence/evidence-gate-40010379492.txt)); the exact post-bot HEAD was not re-run. Do not state that it was tested.
