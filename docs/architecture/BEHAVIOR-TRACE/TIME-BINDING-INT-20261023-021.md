@@ -72,3 +72,20 @@
 - Source map and cross-surface index updates were fetched back by blob SHA as recorded in VERIFY-INT-20261023-021.
 - The above timestamps are repository commit times. They do not represent exact user-message time or exact branch-ref operation time.
 - This ledger's own v1.0.3 commit time is not yet recorded here; if needed, record it in a future successor rather than infer it.
+
+
+## Addendum v1.0.4 — audit enforcement and current checkpoint
+| Artifact / event | Commit or event time | UTC | Tehran equivalent |
+|---|---|---|---|
+| Audit script ULCG gate/output update | [18e81f8](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/18e81f8d47f12906eec774dd7570470f402975e5) | 2026-10-23T04:16:04Z | 2026-10-23T07:46:04+03:30 |
+| ULCG master enforcement addendum | [ccf24fc](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/ccf24fc816655b55daa84c6ed95672ca59fc7907) | 2026-10-23T04:16:42Z | 2026-10-23T07:46:42+03:30 |
+| LAL-008 enforcement addendum | [0a8e7e9](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/0a8e7e9755de86c57bcefbe9b32daeae170763a8) | 2026-10-23T04:16:47Z | 2026-10-23T07:46:47+03:30 |
+| EVT-0110 enforcement addendum | [798afa7](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/798afa720aad3e6f735d24838df51b0fded68e77) | 2026-10-23T04:16:52Z | 2026-10-23T07:46:52+03:30 |
+| Source map enforcement addendum | [266d0e5](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/266d0e5e675a25961e102c26fc3d44aa37c5c9c5) | 2026-10-23T04:16:57Z | 2026-10-23T07:46:57+03:30 |
+| Integration queue enforcement gate | [fe9ba1c](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/fe9ba1c16838986f18e6f037154424c4d9142e0c) | 2026-10-23T04:17:03Z | 2026-10-23T07:47:03+03:30 |
+| Issue #21 updated with audit gate | [Issue #21](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/21) | 2026-10-23T04:17:11Z | 2026-10-23T07:47:11+03:30 |
+| Verification checkpoint v1.0.4 | [9744b26](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/9744b26ff266036d5fdbdc980c3fafc15ea376ae) | 2026-10-23T04:17:51Z | 2026-10-23T07:47:51+03:30 |
+
+- All times are repository commit or explicitly labelled issue-event times; none is used as the original user-message time.
+- Current structural workflow execution remains NOT CONFIRMED; the Evidence Gate is a separate workflow and must not be mistaken for full structural audit.
+- This time-binding file's own latest successor commit time may be entered in a future successor if required.
