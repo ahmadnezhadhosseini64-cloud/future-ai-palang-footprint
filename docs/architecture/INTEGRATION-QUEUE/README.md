@@ -1359,3 +1359,12 @@ The queue index and the timestamp case must each be read back after this update.
 ## Latest CI proof and active continuation — run #66
 Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40003897972) SUCCESS; 39 tests OK; tested HEAD `3d7a27f082a1c121cc9f9d0bce53065fbcd0557a`; artifact ID `12523202337`; ZIP SHA-256 `a07abd33e8be8ab73f87ef35a1d3ed2faeeea8e75109b913f659ea9ccad7a92d`. Four manifests were independently downloaded and inspected. The production smoke record resolved one repository file and matched its content SHA-256, while remaining `NOT RUN` with `production_claim_allowed=false`.
 Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-RECOVERY-2026-10-23.md), bidirectional IN/OUT recovery; this task itself is still IMPLEMENTATION-PENDING.
+
+
+## Execution evidence — bidirectional repository recovery PASS
+- GitHub Actions run [40005934719](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40005934719): SUCCESS on tested HEAD `30f0eca4877039409ca3b0eda8643b6f8e0f4634`.
+- Test suite: **47 tests ran; OK**. Both workflow steps `Recover interaction graph starting from IN anchor` and `Recover interaction graph starting from OUT anchor` succeeded.
+- Artifact ID: `12523149825`; artifact ZIP SHA-256: `fbda979225dc567c54a8bcf984363f6a4e242fe7f602859e95033e69733201d2`.
+- Artifact was downloaded and inspected. `recovery-from-IN.json`: `RECOVERED`, IN-026 → OUT-026, zero failures. `recovery-from-OUT.json`: `RECOVERED`, OUT-026 → IN-026, zero failures. Both preserve Issue #20 and Issue #21 as OPEN.
+- Run `40005682381` failed before this correction because the anchor pair identity and EVT-0122's direct canonical graph bindings were missing. Those gaps were corrected; the failed run is preserved as evidence, not hidden.
+- Boundary: this proves repository-state recovery on the tested SHA only. A separate fresh ChatGPT session, host-wide capture, and external persistence remain NOT RUN / NOT PROVEN.
