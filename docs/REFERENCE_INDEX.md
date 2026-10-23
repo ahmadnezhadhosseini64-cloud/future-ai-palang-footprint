@@ -830,3 +830,10 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - [IN-027](0.0/anchors/PALANG-0.0-IN-20261023-027-DEEP-EXCAVATION-ARCHITECTURE-UPDATE.md) / [OUT-027](0.0/anchors/PALANG-0.0-OUT-20261023-027-DEEP-EXCAVATION-ARCHITECTURE-UPDATE.md)
 - [EVT-0124 fresh-session recovery gate](architecture/BEHAVIOR-TRACE/EVT-0124-FRESH-SESSION-RECOVERY-2026-10-23.md) and [NEXT-025](0.0/anchors/PALANG-0.0-NEXT-20261023-025-FRESH-SESSION-RECOVERY-AND-HISTORIC-CONTINUATION.md).
 - EVT-0122 repository recovery: run 40005934719 PASS, 47 tests; artifact manifests for both directions read back as RECOVERED. Fresh-session recovery remains NOT RUN; Issue #20 and #21 remain OPEN.
+
+
+## EVT-0125 — living architecture update capability
+- [EVT-0125](architecture/BEHAVIOR-TRACE/EVT-0125-LIVING-ARCHITECTURE-UPDATE-CAPABILITY-2026-10-23.md)
+- [TALL learning loop](architecture/BEHAVIOR-OBSERVATORY/TEST-TO-ARCHITECTURE-LEARNING-LOOP-2026-10-23-001.md)
+- Gate: `scripts/behavior-hunter/architecture_update_gate.py`; tests: `tests/behavior-hunter/test_architecture_update_gate.py`.
+- CI and artifact verification pending; fresh-session recovery NOT RUN; Issue #20 and #21 OPEN.
