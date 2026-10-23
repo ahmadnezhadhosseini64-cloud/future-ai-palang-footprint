@@ -48,3 +48,9 @@
 ## Addendum v1.0.1 — operational audit gate
 - Structural check implementation: `scripts/audit_living_architecture.py` now requires the ULCG master, event, lesson, map, historic ledger, IN/OUT anchors, next point, verification/time ledgers and live inbox item, then checks the required IDs across nine surfaces.
 - Static read-back comparison found no missing expected IDs. Execution of the Python script / Living Architecture Audit workflow on the current final HEAD remains NOT CONFIRMED; retain the structural gate as OPEN until a real workflow result is retrieved.
+
+
+## Addendum v1.0.2 — rollback test lineage
+- Bounded repository rollback test: [EVT-0109](../BEHAVIOR-TRACE/EVT-0109-CONTROLLED-GIT-ROLLBACK-RECOVERY-TEST-2026-10-23.md).
+- Governing lesson: [LAL-20261023-007](./lessons/LAL-20261023-007-ROLLBACK-AS-NEW-LINEAGE-EVENT.md).
+- Result: PASS for isolated Git branch restoration and evidence-branch preservation only. Runtime/cold-start/global/external recovery remain OPEN / NOT PROVEN under Issue #20.
