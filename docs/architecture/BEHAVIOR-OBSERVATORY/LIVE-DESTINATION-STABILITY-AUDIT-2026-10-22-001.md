@@ -44,7 +44,7 @@
 
 ## 4. وضعیت مقصدها — مستقل و جداگانه
 - Canonical Repository / مخزن مرجع: READ-BACK VERIFIED برای فایل‌های فهرست‌شده؛ تغییرات این آزمون پس از ثبت باید جداگانه بازخوانی شوند.
-- Project Library / کتابخانهٔ پروژه: NOT VERIFIED — دسترسی/شاهد مستقل در این اجرا وجود ندارد.
+- Project Library / کتابخانهٔ پروژه: REGISTERED / READ-BACK VERIFIED فقط برای همین فایل آینه و نسخهٔ مشخص؛ شاهد بازخوانی مستقل Library در الحاق‌های انتهایی همین سند ثبت شده است. این وضعیت به سایر فایل‌ها یا کل کتابخانه تعمیم ندارد.
 - Buffer / بافر: NOT VERIFIED.
 - Persistent Memory / حافظهٔ پایدار: NOT VERIFIED.
 - Dropbox / دراپ‌باکس: OPEN / NOT VERIFIED؛ اتصال، نوشتن و بازیابی واقعی هنوز اثبات نشده است.
@@ -96,3 +96,13 @@ Next: `BOART-FOLLOWUP-01` → `BOART-FOLLOWUP-02` → `BOART-FOLLOWUP-03`.
 - Controller commit UTC `2026-10-22T05:50:38Z`; derived Tehran `2026-10-22 09:20:38`.
 - Status: ACTIVE / LIVING / SCHEDULED. Each future run must produce its own comparison and read-back evidence; continuous background synchronization is not claimed.
 - Buffer and Persistent Memory: NOT VERIFIED. Dropbox: OPEN / NOT VERIFIED. External recovery: NOT RUN.
+
+
+## VTP-02 / VTP-03 live reconciliation — 2026-10-23
+- Canonical repository source blob read back before reconciliation: `c0ad949c8fd53e2dec7eb1c291171a5486d27742`.
+- Library mirror independently read by exact Library file ID `file_00000000c98481f4bb07be3239e4deba`; stable Library file ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`.
+- Source length: 8,915 characters; Library read-back length: 8,908 characters; delta: 7 characters.
+- Stable ID and Test ID match exactly; Version matches at 1.0.0; next-action chain BOART-FOLLOWUP-01 → 02 → 03 is present in both.
+- Semantic reconciliation detected a contradictory stale line in the canonical source: an earlier destination table said Library NOT VERIFIED while later addenda recorded READ-BACK VERIFIED for this exact mirror. This contradiction is corrected in this source update. The seven-character delta alone is not a blocker, but it does not waive semantic reconciliation.
+- VTP-02: PARTIAL / FAIL-CLOSED pending post-update read-back and fresh mirror comparison; contradictory status discovered and corrected in canonical source. Library write/refresh is not available through the current Library tool surface in this execution, so the mirror is not claimed synchronized to this revision.
+- VTP-03: LENGTH CHECK PASS (delta = 7); SEMANTIC ACCEPTANCE PENDING until the refreshed canonical source and Library mirror are compared again. No byte-for-byte identity claim.
