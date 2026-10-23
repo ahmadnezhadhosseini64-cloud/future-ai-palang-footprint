@@ -567,3 +567,8 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Behavior Hunter [40016232651](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40016232651): 67 tests PASS; ledger hash chain verified; both recovery directions recovered.
 - Cross-Layer Integrity Gate [40016232821](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40016232821): PASS.
 - [NEXT-028](../../0.0/anchors/PALANG-0.0-NEXT-20261023-028-POST-REPAIR-AUDIT-AND-SEMANTIC-RECONCILIATION.md) active; semantic reconciliation remains OPEN.
+
+
+## Latest audit evidence — EVT-0127 / run 40016726450
+- Audit [40016726450](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40016726450): PASS, zero missing local links; artifact read-back verified.
+- [EVT-0127](./EVT-0127-DEEP-REPOSITORY-AUDIT-AND-GAP-REGISTER-2026-10-23.md) and [NEXT-028](../../0.0/anchors/PALANG-0.0-NEXT-20261023-028-POST-REPAIR-AUDIT-AND-SEMANTIC-RECONCILIATION.md) preserve remaining semantic findings as OPEN.
