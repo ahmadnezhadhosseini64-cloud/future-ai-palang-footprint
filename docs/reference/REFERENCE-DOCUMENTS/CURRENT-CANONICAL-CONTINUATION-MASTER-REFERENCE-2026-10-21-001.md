@@ -424,3 +424,10 @@
 - PASS without evidence is rejected; FAIL/BLOCKED/NOT RUN generate distinct proposal types; proposals remain PROPOSED with confidence UNASSESSED and owner review required; no MASTER mutation.
 - Key commits: extractor `004974970583fc214d97b4b42638fcc3d6a4c05e`; tests `e811cc864b9bf74ad699d5b19f7f67e9234195df`; fixture `68075ea7fddad8ec25b6d3d63ccdf42fe6d38149`; workflow `d15af1dce6a4f79420dc972bc8324dacdf12defd`.
 - Current boundary: candidate extraction is implemented in repository code, but actual CI outcome, host-wide live capture, and end-to-end restart recovery are not yet verified. The earlier narrow Child/Rahm-only growth rule is superseded by TALL's all-layer proposal scope.
+
+
+## Latest EVT-0117 verification plan state
+- Extended test matrix: [VTP/TALL verification plan](../../architecture/BEHAVIOR-OBSERVATORY/VERIFIABLE-TEST-PLAN-FROM-EVT-0115-2026-10-23.md), commit `c7406c20da1a92486f1e3b4eaa10e69048bb72a8`, UTC `2026-10-23T17:54:10Z`, Tehran derived `2026-10-23T21:24:10+03:30`.
+- Added TALL-T01..TALL-T10 covering extractor validation, PASS/FAIL/BLOCKED/NOT RUN learning, source provenance, CI manifests, architecture breadth, host capture and post-integration verification.
+- The new code, tests, fixture and workflow were independently fetched after registration. This proves repository presence/read-back, not that Python tests or CI actually executed.
+- Latest status: design and code REGISTERED / READ-BACK VERIFIED; CI run/artifact NOT VERIFIED; host-wide live capture OPEN; restart recovery and end-to-end 0.0 preservation NOT RUN. No claims of runtime PASS.
