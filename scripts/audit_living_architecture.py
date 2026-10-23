@@ -218,6 +218,33 @@ for label, (rel, required_ids) in interaction_surfaces.items():
         if required_id not in content:
             errors.append(f"INTERACTION_SURFACE_MISSING_ID surface={label} id={required_id}")
 
+# Verification/time-binding evidence gate for the latest material interaction.
+verification_required = {
+    "IN-024 verification checkpoint": "docs/architecture/BEHAVIOR-TRACE/VERIFICATION-CHECKPOINT-INT-20261023-024.md",
+    "IN-024 time binding": "docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261023-024.md",
+}
+for label, rel in verification_required.items():
+    if not (ROOT / rel).is_file():
+        errors.append(f"VERIFICATION_MISSING_REQUIRED_FILE label={label!r} path={rel}")
+
+verification_surfaces = {
+    "ULCG_MASTER": ("docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001.md", ("VERIFICATION-CHECKPOINT-INT-20261023-024", "TIME-BINDING-INT-20261023-024", "39972058925", "39971900914")),
+    "REFERENCE_INDEX": ("docs/REFERENCE_INDEX.md", ("VERIFICATION-CHECKPOINT-INT-20261023-024", "TIME-BINDING-INT-20261023-024")),
+    "ZERO_ZERO_REGISTRY": ("docs/0.0/README.md", ("VERIFICATION-CHECKPOINT-INT-20261023-024", "TIME-BINDING-INT-20261023-024")),
+    "BEHAVIOR_TRACE_INDEX": ("docs/architecture/BEHAVIOR-TRACE/README.md", ("VERIFICATION-CHECKPOINT-INT-20261023-024", "TIME-BINDING-INT-20261023-024")),
+    "VERIFICATION_CHECKPOINT": ("docs/architecture/BEHAVIOR-TRACE/VERIFICATION-CHECKPOINT-INT-20261023-024.md", ("39972058925", "7e46b8a2d9062753dd6be2759c2fe03233a4b33b", "f3474ba4e1275b2b12b8ebdf99c77087e836ad57", "OPEN / NOT CONFIRMED")),
+    "TIME_BINDING": ("docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261023-024.md", ("2026-10-23T14:44:05Z", "2026-10-23T18:14:05+03:30", "UNKNOWN / UNVERIFIED")),
+}
+for label, (rel, required_ids) in verification_surfaces.items():
+    path = ROOT / rel
+    if not path.is_file():
+        errors.append(f"VERIFICATION_SURFACE_MISSING_FILE surface={label} path={rel}")
+        continue
+    content = path.read_text(encoding="utf-8")
+    for required_id in required_ids:
+        if required_id not in content:
+            errors.append(f"VERIFICATION_SURFACE_MISSING_ID surface={label} id={required_id}")
+
 print("LIVING_ARCHITECTURE_AUDIT")
 print(f"required_files_checked={len(required)}")
 print(f"ulcg_required_files_checked={len(ulcg_required)}")

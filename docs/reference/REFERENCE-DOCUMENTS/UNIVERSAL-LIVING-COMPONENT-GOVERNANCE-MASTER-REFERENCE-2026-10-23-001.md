@@ -298,3 +298,11 @@ Five more canonical sources have been fetched in full and provisionally mapped: 
 - Next 0.0 checkpoint: [NEXT-025](../../0.0/anchors/PALANG-0.0-NEXT-20261023-025-SOURCE-RULE-TEST-CROSSWALK-AND-COLD-START.md). Prior NEXT-022, NEXT-023 and NEXT-024 remain preserved.
 - Operational rule: do not imply unattended work during silence. Execute bounded work units in the active turn, expose durable milestones and evidence, and preserve the prior queue.
 - The five-source clause mapping is PROVISIONAL. Full repository/history census and semantic conflict adjudication remain OPEN under Issue #21. Runtime/cold-start acceptance remains OPEN under Issue #20. No source is marked superseded by this addendum.
+
+
+### Evidence and time binding for IN-024 / OUT-024
+
+- Candidate verification: [VERIFICATION-CHECKPOINT-INT-20261023-024](../../architecture/BEHAVIOR-TRACE/VERIFICATION-CHECKPOINT-INT-20261023-024.md).
+- Canonical UTC/Tehran binding: [TIME-BINDING-INT-20261023-024](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261023-024.md).
+- The audit passed on the PR candidate, and PR #29 was merged as f3474ba4e1275b2b12b8ebdf99c77087e836ad57. The audit did not run on the exact final main merge SHA; that gate remains OPEN / NOT CONFIRMED.
+- The first candidate audit failure (run 39971900914) remains preserved in EVT-0113. The corrected candidate run 39972058925 passed.
