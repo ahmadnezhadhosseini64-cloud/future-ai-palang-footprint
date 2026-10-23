@@ -89,3 +89,14 @@
 - All times are repository commit or explicitly labelled issue-event times; none is used as the original user-message time.
 - Current structural workflow execution remains NOT CONFIRMED; the Evidence Gate is a separate workflow and must not be mistaken for full structural audit.
 - This time-binding file's own latest successor commit time may be entered in a future successor if required.
+
+
+## Addendum v1.0.5 — rollback lineage and latest read-back checkpoint
+| Artifact | Commit | UTC canonical | Tehran equivalent |
+|---|---|---|---|
+| ULCG master linked to EVT-0109 / LAL-007 | [0dfcfd1](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/0dfcfd15a3b7f244365473a207d6d8f2da174661) | 2026-10-23T04:18:51Z | 2026-10-23T07:48:51+03:30 |
+| Source map linked to EVT-0109 / LAL-007 | [dca1d98](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/dca1d980ce93cc5ff69fb4c683295f338311c5de) | 2026-10-23T04:18:57Z | 2026-10-23T07:48:57+03:30 |
+| Verification checkpoint v1.0.5 | [93ef135](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/93ef135a69b23db78974e2c802ed41392edeef14) | 2026-10-23T04:19:24Z | 2026-10-23T07:49:24+03:30 |
+
+- The checkpoint blob after this update is `1af56c032ffe81e029128004bed24b40b78ddbe6`.
+- The timestamp table is append-only; prior rows remain historical evidence. The latest full structural audit on current HEAD is still not confirmed.
