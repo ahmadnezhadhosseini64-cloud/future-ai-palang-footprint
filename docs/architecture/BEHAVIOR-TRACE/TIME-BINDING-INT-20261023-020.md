@@ -2,7 +2,7 @@
 
 - Stable ID: PALANG-TIME-BINDING-INT-20261023-020
 - Production ID: TIME-BINDING-INT-20261023-020
-- Version: 1.0.5 (append-only final source-target verification)
+- Version: 1.0.6 (append-only rollback-test and timestamp reconciliation)
 - Interaction: INT-20261023-020
 - Input: [IN-020](../../0.0/anchors/PALANG-0.0-IN-20261023-020-LIVING-ARCHITECTURE-EXECUTION-CYCLE.md)
 - Output: [OUT-020](../../0.0/anchors/PALANG-0.0-OUT-20261023-020-LIVING-ARCHITECTURE-EXECUTION-CYCLE.md)
@@ -60,3 +60,26 @@ Rule: the actual commit time for the latest change to each artifact is its canon
 - Source targets for the six normalized lesson records were independently fetched and found to exist; LAL-20261023-007 source links were corrected in its version 1.0.1.
 - Evidence Gate run [39888263364](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39888263364) completed its named checks on commit e8b6aded752dd3456c8dbb9910b1deab1d51c283. This is not a full structural audit or global rollback proof.
 - Full structural audit of the final head and controlled rollback/recovery remain OPEN / NOT CONFIRMED.
+
+
+## Addendum v1.0.6 — controlled rollback test and latest canonical timestamps
+
+The following rows supersede older rows for artifacts changed by EVT-0109 integration. UTC remains canonical; Tehran is the same instant plus 03:30.
+
+| Artifact | Commit | Canonical UTC | Tehran equivalent |
+|---|---|---|---|
+| EVT-0109 controlled rollback test | [dd17873](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/dd1787337b71fa007655704a7b2284ebe7f87134) | 2026-10-23T02:14:04Z | 2026-10-23T05:44:04+03:30 |
+| LAL-20261023-007 v1.0.2 | [cc59274](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/cc59274e197d2ed46dc1219d3e57f75035d26083) | 2026-10-23T02:14:12Z | 2026-10-23T05:44:12+03:30 |
+| CMIND latest rollback addendum | [386b78c](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/386b78cd7f9f441a9faf8b75ab110505669daeb2) | 2026-10-23T02:14:27Z | 2026-10-23T05:44:27+03:30 |
+| Reference index latest rollback link | [9251c03](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/9251c03ee84cc39d0a35acbfe5b3735447479f40) | 2026-10-23T02:14:30Z | 2026-10-23T05:44:30+03:30 |
+| 0.0 registry latest rollback link | [cb82ade](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/cb82ade10e016c37b0723670a0f3c53290bb44d4) | 2026-10-23T02:14:33Z | 2026-10-23T05:44:33+03:30 |
+| Behavior-trace index latest rollback link | [f169dab](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/f169dabeacdb0d0b937234c86c926a249a45039e) | 2026-10-23T02:14:47Z | 2026-10-23T05:44:47+03:30 |
+| Lesson registry latest rollback link | [59a74dd](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/59a74dd740fc49f228e513cdf2f019f1ca13949c) | 2026-10-23T02:14:50Z | 2026-10-23T05:44:50+03:30 |
+| Historic lesson ledger latest rollback link | [60c38f9](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/60c38f9a1f7ad5b8ae36ebc8059b99dc3414cc29) | 2026-10-23T02:14:53Z | 2026-10-23T05:44:53+03:30 |
+| Integration queue latest rollback link | [a0360ac](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/a0360acef5e9d1bd5c21e080b83eed68c57a4c29) | 2026-10-23T02:14:56Z | 2026-10-23T05:44:56+03:30 |
+| Live inbox index latest rollback link | [6b38a45](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/6b38a45b4ef42e171447bb5381b9c87a2ef1aa9d) | 2026-10-23T02:14:59Z | 2026-10-23T05:44:59+03:30 |
+| Verification checkpoint latest rollback update | [7481f5b](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/7481f5bdce04dd18ce91ae1aef78dc05ac38dff4) | 2026-10-23T02:15:08Z | 2026-10-23T05:45:08+03:30 |
+
+- The isolated rollback test candidate commit is fd5d19385ad3220bf0e8414bed7ad162256d4e1f (2026-10-23T02:13:28Z / 2026-10-23T05:43:28+03:30); it remains on evidence/rollback-candidate-int-20261023-020. The test branch was restored to baseline beebca722fe52d1d628ecfad85dc480ee18a4d16.
+- Exact branch-ref operation time was not captured; commit timestamps are not substituted for it.
+- This time-binding v1.0.6 update has its own canonical commit time and is not listed as its own row.
