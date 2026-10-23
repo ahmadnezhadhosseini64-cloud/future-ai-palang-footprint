@@ -6,10 +6,11 @@
 - Interaction pair ID: INT-20261023-027
 - Version: 1.0.0
 - Type: Independent input anchor
-- Status: REGISTERED / READ-BACK VERIFICATION PENDING
+- Status: REGISTERED / READ-BACK VERIFIED
 - User message time: UNKNOWN / UNVERIFIED; do not invent a message timestamp.
 - Parent checkpoint: [NEXT-024](./PALANG-0.0-NEXT-20261023-024-CONTINUITY-HISTORIC-AND-COLD-START.md)
 - Active recovery gate reviewed: [EVT-0122](../../architecture/BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-RECOVERY-2026-10-23.md)
+- Result event: [EVT-0123](../../architecture/BEHAVIOR-TRACE/EVT-0123-DEEP-EXCAVATION-AND-ARCHITECTURE-UPDATE-2026-10-23.md)
 
 ## Exact user input
 > خوب خاک‌برداری عمیق کن
