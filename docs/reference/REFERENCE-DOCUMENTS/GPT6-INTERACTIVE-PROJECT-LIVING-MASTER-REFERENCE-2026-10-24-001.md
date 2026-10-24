@@ -92,3 +92,10 @@
 
 ## Behavior governance lesson
 - [LAL-20261024-014](../../architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261024-014-GPT6-PROJECT-ZERO-BEHAVIOR-GOVERNANCE.md) records the routing and evidence discipline for this branch.
+
+
+## Final read-back receipt — Project Zero
+- Status: READ-BACK VERIFIED / CONTENT PRESENT / IDENTIFIERS MATCHED.
+- Verification: this exact path was fetched again after write; expected project-zero identifiers and relevant cross-links were present in the repository.
+- Scope: repository file presence and text/link checks only. Prototype build and cold-start recovery remain OPEN / NOT RUN; other destinations remain independently unverified.
+- Canonical timestamp: use the actual last-change Git commit timestamp in UTC; Tehran equivalent is UTC+03:30 from that same instant. User-message timestamp remains UNKNOWN / UNVERIFIED.
