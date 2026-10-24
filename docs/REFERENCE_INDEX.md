@@ -1076,7 +1076,7 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Current checkpoint: [CURRENT-046](0.0/anchors/PALANG-0.0-CURRENT-20261024-046-HUMAN-AI-FUTURE-INTERACTION-ARCHITECTURE.md); parent [CURRENT-045](0.0/anchors/PALANG-0.0-CURRENT-20261024-045-LIVING-MOTHER-ANCHOR.md) preserved.
 - Input / output: [IN-038](0.0/anchors/PALANG-0.0-IN-20261024-038-HUMAN-AI-FUTURE-INTERACTION-ARCHITECTURE.md) ↔ [OUT-038](0.0/anchors/PALANG-0.0-OUT-20261024-038-HUMAN-AI-FUTURE-INTERACTION-ARCHITECTURE.md).
 - Event: [EVT-0146](architecture/BEHAVIOR-TRACE/EVT-0146-HUMAN-AI-FUTURE-INTERACTION-ARCHITECTURE-2026-10-24.md).
-- Living mother: [NPFAP v1.0.6](reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md).
+- Living mother: [NPFAP v1.0.7](reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md).
 - Discovery architecture: [Adaptive Discovery / Cross-Playground v1.1.0](../architecture/ADAPTIVE-DISCOVERY-CROSS-PLAYGROUND.md).
 - Next: [NEXT-044 — export and fresh-host cold-start recovery](0.0/anchors/PALANG-0.0-NEXT-20261024-044-EXTRACTABLE-RAHM-CHILD-AND-COLD-START-TEST.md).
 - Status boundary: the files were created, but current-chain full read-back and link matching remain pending until every linked file is fetched again. Export/recovery, second-project repository integration, and always-on runtime remain unverified.
