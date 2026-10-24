@@ -903,3 +903,11 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - [NEXT-030](0.0/anchors/PALANG-0.0-NEXT-20261024-030-SEMANTIC-REVIEW-BATCH-3-AND-COLD-START.md) is the active checkpoint.
 - [EVT-0128](architecture/BEHAVIOR-TRACE/EVT-0128-SEMANTIC-IDENTITY-ADJUDICATION-BATCH-1-2026-10-24.md) records source-backed identity role decisions and verified CI evidence.
 - Third Production-ID decision requires the next post-change source-hash audit; fresh-session recovery remains NOT RUN.
+
+
+## EVT-0129 — living registration and architecture growth
+- [EVT-0129](architecture/BEHAVIOR-TRACE/EVT-0129-LIVING-REGISTRATION-ARCHITECTURE-GROWTH-AND-RECOVERY-REPAIR-2026-10-24.md)
+- [IN-031](0.0/anchors/PALANG-0.0-IN-20261024-031-ACTIVATE-LIVING-ARCHITECTURE-GROWTH.md) / [OUT-031](0.0/anchors/PALANG-0.0-OUT-20261024-031-ACTIVATE-LIVING-ARCHITECTURE-GROWTH.md)
+- [NEXT-031](0.0/anchors/PALANG-0.0-NEXT-20261024-031-LATEST-PAIR-RECOVERY-AND-STATUS-TRANSPARENCY.md)
+- [Interaction Execution Status Protocol](architecture/BEHAVIOR-OBSERVATORY/INTERACTION-EXECUTION-STATUS-AND-LIVING-REGISTRATION-PROTOCOL-2026-10-24-001.md)
+- Dynamic latest-pair recovery is under CI verification; fresh-session recovery NOT RUN; Issues #19/#20/#21 OPEN.
