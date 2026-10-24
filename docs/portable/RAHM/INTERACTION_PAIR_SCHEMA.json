@@ -1,0 +1,21 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "title":"HAIF Rahm Interaction Pair",
+  "type":"object",
+  "required":["record_id","version","input","output","observation","evidence","status","lineage"],
+  "properties":{
+    "record_id":{"type":"string","minLength":1},
+    "version":{"type":"string"},
+    "timestamp_utc":{"type":["string","null"],"format":"date-time"},
+    "timestamp_tehran":{"type":["string","null"],"description":"Same instant as UTC converted to Asia/Tehran; null if source instant is unknown."},
+    "input":{"type":"object","required":["content"],"properties":{"content":{"type":"string"},"source_ref":{"type":["string","null"]},"received_at_utc":{"type":["string","null"]}}},
+    "output":{"type":"object","required":["content"],"properties":{"content":{"type":"string"},"artifact_refs":{"type":"array","items":{"type":"string"}},"written":{"type":"boolean"},"readback_verified":{"type":"boolean"}}},
+    "observation":{"type":"array","items":{"type":"object","required":["statement","kind"],"properties":{"statement":{"type":"string"},"kind":{"enum":["OBSERVED","HYPOTHESIS","INFERENCE","USER_FEEDBACK"]},"evidence_refs":{"type":"array","items":{"type":"string"}}}}},
+    "evidence":{"type":"array","items":{"type":"object","required":["ref","type","status"],"properties":{"ref":{"type":"string"},"type":{"type":"string"},"status":{"enum":["PRESENT","MISSING","CONFLICTING","UNVERIFIED"]},"digest":{"type":["string","null"]}}}},
+    "failures":{"type":"array","items":{"type":"object","required":["description","status"],"properties":{"description":{"type":"string"},"status":{"enum":["OPEN","RESOLVED","UNTESTED"]},"correction_ref":{"type":["string","null"]}}}},
+    "host_capability_snapshot":{"type":"string"},
+    "status":{"enum":["DRAFT","REGISTERED","READ-BACK VERIFIED","VALIDATED","OPEN","BLOCKED","FAILED"]},
+    "lineage":{"type":"object","required":["parent_ids","event_refs","next_action"],"properties":{"parent_ids":{"type":"array","items":{"type":"string"}},"event_refs":{"type":"array","items":{"type":"string"}},"next_action":{"type":["string","null"]}}}
+  },
+  "additionalProperties":false
+}
