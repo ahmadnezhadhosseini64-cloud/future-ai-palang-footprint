@@ -48,8 +48,8 @@ Resume from NEXT-047, but execute NEXT-044 first because it is the existing acti
 - Living mother extension: [NPFAP Addendum — CURRENT-053](../../reference/REFERENCE-DOCUMENTS/NPFAP-ADDENDUM-CURRENT-053-2026-10-24.md)
 
 ## Repository read-back status
-- New Point 0, IN-046, OUT-045, EVT-0153, CURRENT-053, NEXT-047, and the NPFAP addendum have been created in the repository.
-- Independent fetch/read-back and cross-file reconciliation are still required before marking this chain READ-BACK VERIFIED.
-- Export, schema, recovery, host transfer, persistence, background execution and full graph audit remain OPEN / NOT RUN.
+- New Point 0, IN-046, OUT-045, EVT-0153, EVT-0154, CURRENT-053, NEXT-047, NPFAP addendum, queue item and reference-index addendum were fetched after write.
+- Focused cross-file reconciliation: all nine core/extension files checked; all local relative links resolved against the main-branch tree with zero missing targets.
+- Repository-wide audit defects and export/schema/recovery/host transfer/persistence/background gates remain OPEN as documented in EVT-0154.
 
 - Reference index addendum: [REFERENCE_INDEX-CURRENT-053.md](../../REFERENCE_INDEX-CURRENT-053.md)
