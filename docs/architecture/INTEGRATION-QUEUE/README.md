@@ -1731,3 +1731,13 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - Rule: a new input does not erase an open NEXT. Preserve the lineage, return visible milestone status, and never claim invisible background execution. Main mother/index/queue integration is not considered verified until read-back and the relevant tests pass.
 
 | G6IP-RAHM-EVT-0158-20261024 | تداوم ورودی/خروجی، دروازهٔ هش سخت‌گیرانه و بازیابی قابل‌انتقال | OPEN / PARTIAL — run 40122001572 passed 37/37 digests; real-host/full-recovery gates remain open | سند مادر قابل‌انتقال، سند مادر HAIF، شاخص مرجع، NEXT-050 | [EVT-0158](../BEHAVIOR-TRACE/EVT-0158-NO-SILENT-GAP-OUTPUT-CONTINUITY-2026-10-24.md) |
+
+
+## CURRENT-057 — Repository Excavation and Living Recovery
+- Stable ID: `G6IP-RAHM-CURRENT-057-20261024`; Production ID: `G6IP-CURRENT-057`; Version: 1.0.0.
+- Status: REGISTERED; final manifest/read-back reconciliation pending; host and global graph gates OPEN.
+- Chain: POINT-0/006 → IN-050 → OUT-049 → EVT-0159 → CURRENT-057 → NEXT-051.
+- Preserve [NEXT-049](../0.0/anchors/PALANG-0.0-NEXT-20261024-049-REAL-HOST-TRANSFER-AND-GRAPH-AUDIT.md) and [NEXT-050](../0.0/anchors/PALANG-0.0-NEXT-20261024-050-FULL-RECOVERY-AND-REAL-HOST-IMPORT.md); neither is closed by this item.
+- Excavation evidence: latest inspected audit [40122633902](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40122633902) = REVIEW_REQUIRED; 11 missing links, 60 unreviewed stable-ID collision groups, 88 production-ID collision groups, 7 reference-ID collision groups, 36 event-number collision groups, 13 ambiguous parent edges.
+- Required rule: NO-SILENT-GAP / RESUME-ON-NEW-IN. Visible status at durable milestones; no hidden-work claims; every unverified gate remains OPEN/LIVING.
+- Next: run strict manifest/package conformance after all updates, then full IN/OUT recovery and real clean-host import if available. Keep unavailable host runtime tests NOT VERIFIED.
