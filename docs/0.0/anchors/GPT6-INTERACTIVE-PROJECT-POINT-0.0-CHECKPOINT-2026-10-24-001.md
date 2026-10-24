@@ -27,7 +27,7 @@
 - قراردادهای UTC-first، شواهد، IN/OUT، EVT، CURRENT/NEXT، Master–Child–Rahm، دو مسیر رفتاری، مقصدهای مستقل و منع آزمون تکراری بی‌دلیل به این شاخه اعمال می‌شوند.
 - این پرونده checkpoint است؛ به‌خودی‌خود پیاده‌سازی قابلیت‌ها یا اجرای آزمون‌های آینده را ثابت نمی‌کند.
 
-## 3. Resume packet — minimum state required to continue
+- Architecture zero / ریشهٔ معماری جدید: [G6IP-ARCH-ZERO-20261024-001](./PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md).\n- Latest interaction pair: [IN-032](./PALANG-0.0-IN-20261024-032-REGISTER-ARCHITECTURE-ZERO.md) ↔ [OUT-032](./PALANG-0.0-OUT-20261024-032-REGISTER-ARCHITECTURE-ZERO.md); event [EVT-0140](../../architecture/BEHAVIOR-TRACE/EVT-0140-ARCHITECTURE-ZERO-REGISTRATION-2026-10-24.md).\n\n## 3. Resume packet — minimum state required to continue
 1. ابتدا همین پرونده و وضعیت/نسخهٔ سند مادر معماری را بخوان.
 2. نقطهٔ ۰، CURRENT-039، IN-031، OUT-031 و EVT-0139 را بازخوانی و شناسه‌ها را تطبیق بده.
 3. معماری مادر HAIF و سند مادر زندهٔ GPT-6 را به‌عنوان منابع حاکم دنبال کن؛ تاریخچه را حذف نکن.
@@ -75,3 +75,4 @@
 
 - [CURRENT-040](./PALANG-0.0-CURRENT-20261024-040-GPT6-POINT-0.0-RECOVERY-CHECKPOINT.md) is the current recovery anchor; CURRENT-039 remains the historic initial-root anchor.
 - The governing architecture master is now version 1.0.3; this checkpoint must always link the latest read-back-verified master version, not a stale version.
+\n\n## Architecture-zero chain update\n- New architecture root: [G6IP-ARCH-ZERO-20261024-001](./PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md).\n- Latest interaction pair: IN-032 ↔ OUT-032; event EVT-0140.\n- Governing inherited architecture master: v1.0.4; GPT-6 living master: v1.3.5.\n- Current remains CURRENT-040; next remains NEXT-039.\n
