@@ -18,7 +18,7 @@ A new version is an additive successor, never a silent replacement. Each version
 
 - The prior CURRENT-043 point and earlier checkpoints remain linked as history.
 - This output defines the intended recovery/versioning baseline; it does not itself prove a cold-start restore, new-project adoption, prototype execution or external sync.
-- Earlier direct-link check: 19/19 unique Markdown targets directly linked from NPFAP v1.0.2 existed. This is not a full transitive repository graph scan.
+- Earlier direct-link check: 19/19 unique Markdown targets directly linked from NPFAP v1.0.3 existed. This is not a full transitive repository graph scan.
 - The detailed 16-principle acceptance audit remains open under NEXT-041 until each criterion has a recorded evidence-based result.
 - External Library/Buffer/Persistent Memory/Dropbox status remains NOT VERIFIED; no always-on background capture is claimed.
 
