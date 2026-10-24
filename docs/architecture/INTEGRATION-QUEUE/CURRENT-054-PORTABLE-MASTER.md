@@ -7,4 +7,4 @@
 - Next: [NEXT-048](../../0.0/anchors/PALANG-0.0-NEXT-20261024-048-FIRST-MASTER-CONFORMANCE.md)
 - Prior gate: [NEXT-044](../../0.0/anchors/PALANG-0.0-NEXT-20261024-044-EXTRACTABLE-RAHM-CHILD-AND-COLD-START-TEST.md)
 
-Status: OPEN / PARTIAL. This addendum does not claim the base queue README has been updated. Base queue integration and read-back, along with export, schema, recovery and host tests, remain open.
+Status: OPEN / PARTIAL. Canonical queue README was updated and independently fetched; CURRENT-054/NEXT-048 markers were observed. This queue item remains OPEN until export, recovery, host tests and full audit gates pass.
