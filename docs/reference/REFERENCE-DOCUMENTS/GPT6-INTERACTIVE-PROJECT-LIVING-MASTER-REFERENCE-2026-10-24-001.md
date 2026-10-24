@@ -109,3 +109,5 @@
 - Behavioral lesson: explicitly link user intent → IN/OUT → EVT → CURRENT → NEXT → living master; never imply that registering a next-step queue means the step itself ran.
 - Preserve the prior Project Zero baseline, CURRENT-037/CURRENT-038, NEXT-037/NEXT-036, historic anchors and open issues. Continue UTC-canonical timestamps with Tehran equivalent from the same actual commit instant.
 - Status boundary: repository registration/read-back must be verified; point 0, point 0.0, prototype build, cold-start recovery, and all external destinations remain NOT RUN / NOT VERIFIED until separate evidence exists.
+
+- Final commit time bindings (UTC canonical + Tehran equivalent): [TIME-BINDING-GPT6-INITIAL-POINT-2026-10-24-001](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-GPT6-INITIAL-POINT-2026-10-24-001.md). OUT-029, CURRENT-039 and EVT-0137 timestamps reflect their final read-back receipt updates.
