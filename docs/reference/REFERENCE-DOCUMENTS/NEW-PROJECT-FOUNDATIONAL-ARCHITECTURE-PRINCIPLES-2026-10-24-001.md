@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001`
 - Production ID / شناسهٔ تولید: `NPFAP-20261024-001`
-- Version / نسخه: 1.1.4
+- Version / نسخه: 1.1.7
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING / EVOLVABLE / EXTRACTABLE / RECOVERY-ORIENTED
 - Scope / دامنه: الگوی پایه برای هر پروژهٔ جدید در خانوادهٔ Future AI / Palang Footprint / HAIF و شاخه‌های محصول/میزبان آن؛ با سازگارسازی مستند برای پروژه‌های دیگر
 - Source anchor / منشأ: [G6IP-ARCH-ZERO-20261024-001](../../0.0/anchors/PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md)
@@ -456,3 +456,33 @@ When the user requests execution or registration, show an explicit state: workin
 - Interaction chain: [IN-044](../../0.0/anchors/PALANG-0.0-IN-20261024-044-REPOSITORY-EXCAVATION-AND-REVIVAL.md) → [OUT-043](../../0.0/anchors/PALANG-0.0-OUT-20261024-044-REPOSITORY-EXCAVATION-AND-REVIVAL.md) → [EVT-0151](../../architecture/BEHAVIOR-TRACE/EVT-0151-REPOSITORY-EXCAVATION-LIVING-STATE-RECONCILIATION-2026-10-24.md) → CURRENT-051 → this mother/index/queue → [NEXT-044](../../0.0/anchors/PALANG-0.0-NEXT-20261024-044-EXTRACTABLE-RAHM-CHILD-AND-COLD-START-TEST.md).
 - Finding retained: NEXT-044's stale CURRENT-047 / NPFAP v1.0.9 target was corrected additively to the current CURRENT-050 chain; historical records remain intact.
 - Status: repository registration and the named read-backs are evidenced; the portable export and fresh-context recovery tests remain OPEN / NOT RUN. Second-project integration and always-on automation remain NOT VERIFIED. Dropbox remains OPEN / WAITING.
+
+
+
+## Living Mother Update — CURRENT-052 Continuity and Recovery — 2026-10-24
+
+- Additive version / نسخهٔ افزایشی: **1.1.7**; earlier versions remain preserved.
+- Current checkpoint / نقطهٔ جاری: [CURRENT-052](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-052-CONTINUITY-AND-RECOVERY.md), parent [CURRENT-051](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-051-REPOSITORY-EXCAVATION-REVIVAL.md).
+- Interaction lineage / زنجیرهٔ تعامل: [IN-045](../../0.0/anchors/PALANG-0.0-IN-20261024-045-CURRENT-052-CONTINUITY-AND-RECOVERY.md) → [OUT-044](../../0.0/anchors/PALANG-0.0-OUT-20261024-044-CURRENT-052-CONTINUITY-AND-RECOVERY.md) → [EVT-0152](../../architecture/BEHAVIOR-TRACE/EVT-0152-CURRENT-052-CONTINUITY-AND-RECOVERY-2026-10-24.md) → CURRENT-052 → this mother/index → [NEXT-044](../../0.0/anchors/PALANG-0.0-NEXT-20261024-044-EXTRACTABLE-RAHM-CHILD-AND-COLD-START-TEST.md).
+- Discovery architecture: [Adaptive Discovery / Cross-Playground v1.1.0](../../../architecture/ADAPTIVE-DISCOVERY-CROSS-PLAYGROUND.md).
+
+### Foundational rule — visible, additive, recoverable
+Every meaningful input, output, event, error, correction, test, and validation outcome must be anchored independently and linked into a versioned lineage. Preserve provenance, evidence, stable ID, production ID, version, repository commit timestamp in UTC, equivalent Tehran timestamp, current status, and next action. Add new versions; do not erase historical checkpoints.
+
+قاعدهٔ بنیادین: هر ورودی، خروجی، رویداد، خطا، اصلاح، آزمون و نتیجهٔ اعتبارسنجی باید لنگر مستقل و پیوند نسخه‌دار داشته باشد. منشأ، شواهد، شناسهٔ پایدار، شناسهٔ تولید، نسخه، زمان commit مخزن به UTC و معادل تهران، وضعیت واقعی و گام بعدی باید حفظ شوند. نسخهٔ تازه افزوده می‌شود؛ تاریخچه پاک یا بی‌صدا جایگزین نمی‌شود.
+
+### Child → Rahm → Master
+- Child: candidate proposal with unique identity and provenance.
+- Rahm: evidence, contradiction, regression, portability, recovery, and acceptance checks.
+- Master: integrate only after validation and read-back evidence.
+- REGISTERED ≠ READ-BACK VERIFIED ≠ VALIDATED ≠ INTEGRATED ≠ RUNTIME TESTED.
+
+### Current state and open gates
+- CURRENT-052 is the new current checkpoint; CURRENT-051 and all older anchors remain preserved.
+- NEXT-044 remains OPEN / NOT RUN until an export artifact and independent clean-context recovery are evidenced.
+- Second-project repository/mother path remains unidentified; dual-project integration is not claimed.
+- Always-on discovery, scheduling, background execution, and notifications remain NOT VERIFIED.
+- Dropbox remains OPEN / WAITING and is not the current execution target.
+
+### Required continuation
+Read back and reconcile IN-045, OUT-044, EVT-0152, CURRENT-052, this mother, the reference index, and NEXT-044. Then execute NEXT-044 in a clean context and record the export artifact, recovery comparison, negative cases, failures, and corrections. Do not mark recovery or runtime as active before its evidence is committed and read back.
