@@ -17,7 +17,7 @@
 | EVT30-2026-10-20-001 | `docs/architecture/BEHAVIOR-TRACE/EVT-0030-CURRENT-0.0-AND-GAP-AUDIT-2026-10-20.md` | ممیزی نقطهٔ ۰.۰، نیاز به چهارتایی‌کردن، و شکاف‌های باز | Repository file read-back matched; cross-index reconciliation pending |
 | F0CBG-2026-10-20-001 | `docs/reference/REFERENCE-DOCUMENTS/FOUR-LINKED-0.0-CHAIN-AND-BEHAVIORAL-DISCOVERY-GATE-2026-10-20-001.md` | زنجیرهٔ مرجع چهارتایی نقاط ۰.۰ و دروازهٔ کشف/اعتبارسنجی رفتاری پیش از ارتقای معماری | Repository write and read-back verified; 0.0 registry, behavior trace, and queue linked; full historical reconciliation pending |
 | UIALAC-2026-10-20-001 | `docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001.md` | قرارداد جامع لنگرگذاری، ثبت، مستندسازی، سه سطح ماندگاری و تداوم زنده | REPOSITORY WRITE + READ-BACK VERIFIED; architecture index linked; Buffer/Persistent Memory and automatic execution unverified |
-| NPFAP-20261024-001 | `docs/reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md` | اصول بنیادین برای پروژه‌های جدید: نقطهٔ ۰، سند مادر زنده، رفتارشناسی پلنگ و AI، لنگرگذاری، UTC-first، بازیابی و تکامل شاهد‌محور | Repository write completed; exact read-back pending |
+| NPFAP-20261024-001 | `docs/reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md` | اصول بنیادین برای پروژه‌های جدید: نقطهٔ ۰، سند مادر زنده، رفتارشناسی پلنگ و AI، لنگرگذاری، UTC-first، بازیابی و تکامل شاهد‌محور | v1.0.1; repository exact read-back verified; adoption test OPEN / NOT RUN |
 | UIAWR-2026-10-20-001 | `docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-INTERACTION-ANCHOR-AND-WORKFLOW-RECOVERY-2026-10-20-001.md` | سند مرجع جامع لنگر تعامل، حاکمیت ثبت/زمان و مسیر واقعی بازیابی دو گردش کاری | ACTIVE / LIVING; workflow fixes committed; latest fresh runs 39454598933 and 39454598935 PASS / SUCCESS; artifacts and durable evidence read-back verified |
 | SRC-2026-08-29-001 | `docs/STABLE_RETRIEVAL_CORE.md` | Stable external retrieval contract | VERIFIED / ACTIVE |
 | RRT-2026-08-29-001 | `docs/RETRIEVAL_RUNTIME.md` | Operational retrieval sequence | VERIFIED / ACTIVE |
@@ -1025,3 +1025,10 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Governing mother: [NPFAP-20261024-001](reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md).
 - Lineage: CURRENT-041 → CURRENT-040 → CURRENT-039 / Point 0 → architecture zero; prior nodes preserved.
 - Status: registration and cross-file read-back to be verified after these updates; fresh-project adoption and cold-start recovery remain OPEN / NOT RUN.
+
+
+## Hard audit of the new GPT-6 project architecture — CURRENT-042
+| NPHA-20261024-001 | `reference/REFERENCE-DOCUMENTS/NEW-PROJECT-ARCHITECTURE-HARD-AUDIT-2026-10-24-001.md` | سند مادر چکش سخت معماری جدید؛ اختلاف نسخه/لنگر، پذیرش اصول، پیاده‌سازی و بازیابی | REGISTERED / ACTIVE / LIVING; repository read-back being reconciled; prototype NOT BUILT; cold-start NOT RUN |
+| G6IP-CURRENT-042 | `0.0/anchors/PALANG-0.0-CURRENT-20261024-042-NEW-PROJECT-ARCHITECTURE-HARD-AUDIT.md` | نقطهٔ جاری ممیزی سخت معماری و مسیر بازیابی | ACTIVE / LIVING / EVOLVABLE; see EVT-0142 and NEXT-040 |
+| G6IP-EVT-0142 | `architecture/BEHAVIOR-TRACE/EVT-0142-NEW-PROJECT-ARCHITECTURE-HARD-AUDIT-2026-10-24.md` | شواهد یافته‌ها و اصلاحات ممیزی سخت | Repository read-back pending final reconciliation |
+| G6IP-NEXT-040 | `0.0/anchors/PALANG-0.0-NEXT-20261024-040-FRESH-PROJECT-ADOPTION-TEST.md` | آزمون پذیرش اصول بنیادین روی پروژهٔ تازه | OPEN / NOT RUN |
