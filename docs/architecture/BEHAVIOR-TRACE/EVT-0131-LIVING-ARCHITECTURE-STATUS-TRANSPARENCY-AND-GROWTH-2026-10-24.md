@@ -143,3 +143,10 @@ Complete and read back the IN/OUT pair and all canonical graph edges; run the cu
 - On run [40062120276](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40062120276), 74 tests passed on tested SHA `e82839c679b52fb646824235db59092fd129148e`. The drift manifest returned PASS, checked six nodes, found zero failures, and found the durable receipt for EVT-0131 / INT-20261024-033. Artifact `12546884666`; ZIP SHA-256 `e45208b1bd2b63fa4e30fedcf27b9701532b8c85feee298ae18cbd6105c0d332`.
 - Architecture ledger version 1.4.0 appends this capability after 1.3.0 without rewriting history. Its validator result on the next run must confirm five hash-linked records before this new ledger row is called CI-verified.
 - The checker is read-only. It detects repository graph drift but does not auto-repair links, mutate MASTER, prove fresh-session recovery, or prove external persistence.
+
+
+## Durable receipt for drift detector — run 40062120276
+- [Status receipt JSON](./STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40062120276.json) preserves the actual terminal receipt for the drift-detector CI run.
+- Run 40062120276 passed 74 tests on tested SHA `e82839c679b52fb646824235db59092fd129148e`; drift manifest PASS with six graph nodes, zero failures, both recovery directions RECOVERED.
+- Artifact 12546884666; ZIP SHA-256 `e45208b1bd2b63fa4e30fedcf27b9701532b8c85feee298ae18cbd6105c0d332`.
+- This run predates ledger version 1.4.0. Run 40062202639 or a later exact run must validate the five-record ledger chain before the new version is marked CI-verified.
