@@ -2,11 +2,12 @@
 
 - Stable ID: `NEW-PROJECT-ARCHITECTURE-HARD-AUDIT-2026-10-24-001`
 - Production ID: `NPHA-20261024-001`
-- Version: 1.0.3
+- Version: 1.0.4
 - Status: REGISTERED / ACTIVE / LIVING / EVIDENCE-GATED / EVOLVABLE / RECOVERABLE
 - Scope: GPT-6 Interactive Project under Future AI / Palang Footprint / HAIF
 - Previous checkpoint: [CURRENT-041](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-041-FOUNDATIONAL-ARCHITECTURE-MOTHER-ACTIVATION.md)
-- Current checkpoint: [CURRENT-042](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-042-NEW-PROJECT-ARCHITECTURE-HARD-AUDIT.md)
+- Previous audit checkpoint: [CURRENT-042](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-042-NEW-PROJECT-ARCHITECTURE-HARD-AUDIT.md)
+- Current checkpoint: [CURRENT-043](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-043-FOUNDATIONAL-PRINCIPLES-COMPLETENESS.md)
 - Input/output: [IN-034](../../0.0/anchors/PALANG-0.0-IN-20261024-034-HARD-AUDIT-NEW-PROJECT-ARCHITECTURE.md) ↔ [OUT-034](../../0.0/anchors/PALANG-0.0-OUT-20261024-034-HARD-AUDIT-NEW-PROJECT-ARCHITECTURE.md)
 - Behavior event: [EVT-0142](../../architecture/BEHAVIOR-TRACE/EVT-0142-NEW-PROJECT-ARCHITECTURE-HARD-AUDIT-2026-10-24.md)
 - Governing foundational mother: [NPFAP-20261024-001](./NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md)
@@ -102,3 +103,9 @@ The audit's stale-pointer finding has now been corrected in the active document 
 
 ## Final current-anchor consistency check — v1.0.3
 The architecture-zero header now names CURRENT-042 and NEXT-040 as current, while CURRENT-040 is explicitly retained as a historical anchor. The inherited mother and GPT-6 living master likewise mark the older CURRENT-040 sections as historical snapshots and expose CURRENT-042 / NEXT-040 as the active continuation. This removes the restart ambiguity without deleting the original history.
+
+
+## Foundational-principles completion — v1.0.4
+The foundational mother is now v1.0.2 and includes a claim-level completeness contract, observable acceptance criteria, a principle-to-test matrix, link/identity integrity rules, explicit evidence boundaries and end-of-change reconciliation. The active checkpoint is CURRENT-043, with IN-035 / OUT-035 / EVT-0143 and NEXT-041.
+
+Earlier findings about version drift and stale current pointers are historical findings. The current verification pass must assess their corrected state by exact read-back; do not keep them labelled as unresolved if evidence shows they are corrected. Remaining open gates: NEXT-041 foundational verification, NEXT-040 fresh-project adoption, NEXT-039 prototype build, cold-start recovery and separately verified external destinations.
