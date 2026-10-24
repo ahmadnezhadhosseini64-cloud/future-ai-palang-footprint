@@ -3,7 +3,7 @@
 - Stable ID: `PALANG-OUT-RECOVERY-EVOLVABLE-BASELINE-2026-10-24-036`
 - Production ID: `G6IP-OUT-036`
 - Interaction ID: `INT-20261024-036`
-- Status: REGISTERED / READ-BACK VERIFICATION PENDING / ACTIVE / LIVING.
+- Status: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING.
 - Input: [IN-036](./PALANG-0.0-IN-20261024-036-RECOVERY-EVOLVABLE-BASELINE.md)
 - Current checkpoint: [CURRENT-044](./PALANG-0.0-CURRENT-20261024-044-RECOVERY-EVOLVABLE-BASELINE.md)
 - Event: [EVT-0144](../../architecture/BEHAVIOR-TRACE/EVT-0144-RECOVERY-EVOLVABLE-BASELINE-2026-10-24.md)
@@ -24,4 +24,4 @@ A new version is an additive successor, never a silent replacement. Each version
 
 ## Read-back receipt
 
-To be completed only after fetching this exact path from the default branch and matching Stable ID, Production ID, links and content.
+PASS: exact file fetched from the default branch after write; Stable ID, Production ID, CURRENT-044, IN-036, EVT-0144, NPFAP and NEXT-042 references matched. This confirms repository content only; it does not close the acceptance, adoption, prototype, recovery or external-destination gates.
