@@ -1099,3 +1099,15 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Next: [NEXT-044 — export and fresh-host cold-start recovery](0.0/anchors/PALANG-0.0-NEXT-20261024-044-EXTRACTABLE-RAHM-CHILD-AND-COLD-START-TEST.md).
 - Status: IN-041, OUT-040, EVT-0148, CURRENT-048, NEXT-044, mother, index, and discovery architecture were fetched after writes; IN/OUT/EVT/CURRENT records state READ-BACK VERIFIED. Export/recovery, always-on automation, and live second-project integration remain unverified. Export/recovery, always-on automation, and live second-project integration remain unverified.
 
+
+
+## CURRENT-049 — Live Status and Output Continuity — 2026-10-24
+- Current 0.0 anchor: [CURRENT-049](0.0/anchors/PALANG-0.0-CURRENT-20261024-049-LIVE-STATUS-AND-OUTPUT-CONTINUITY.md), additive successor to CURRENT-048.
+- Input: [IN-042](0.0/anchors/PALANG-0.0-IN-20261024-042-LIVE-STATUS-AND-OUTPUT-CONTINUITY.md).
+- Output: [OUT-041](0.0/anchors/PALANG-0.0-OUT-20261024-041-LIVE-STATUS-AND-OUTPUT-CONTINUITY.md).
+- Event: [EVT-0149](architecture/BEHAVIOR-TRACE/EVT-0149-LIVE-STATUS-AND-OUTPUT-CONTINUITY-2026-10-24.md).
+- Living mother: [NPFAP v1.1.2](reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md).
+- Next gate: [NEXT-044 — export and fresh-context recovery](0.0/anchors/PALANG-0.0-NEXT-20261024-044-EXTRACTABLE-RAHM-CHILD-AND-COLD-START-TEST.md).
+- Rule: show completed/blocked/next status; do not imply background work without a running mechanism; preserve every input/output/event/error/correction as an additive, linked record.
+- Verification boundary: new records and mother/index require read-back; export/recovery, always-on automation, and second-project integration remain unverified.
+
