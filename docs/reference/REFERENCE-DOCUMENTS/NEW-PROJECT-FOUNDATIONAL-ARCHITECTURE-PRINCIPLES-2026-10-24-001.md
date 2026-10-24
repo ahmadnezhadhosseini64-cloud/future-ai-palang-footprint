@@ -76,3 +76,9 @@ This is a cross-project foundational specification. It becomes repository READ-B
 
 ## Repository read-back receipt — 2026-10-24
 The exact foundational-principles file was fetched again after creation. Stable ID, Production ID, source architecture-zero link, governing contract v1.3.0, reference-index entry and repository README entry were confirmed. The governing contract, index, README and inherited architecture master were also fetched and their updates confirmed. This is repository-level read-back only; a fresh-project adoption test, export package test and cold-start recovery test remain open.
+
+
+## Living activation and independent 0.0 anchor — 2026-10-24
+This foundational mother is now linked to the independent living checkpoint [CURRENT-041](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-041-FOUNDATIONAL-ARCHITECTURE-MOTHER-ACTIVATION.md), parent [CURRENT-040](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-040-GPT6-POINT-0.0-RECOVERY-CHECKPOINT.md), interaction [IN-033](../../0.0/anchors/PALANG-0.0-IN-20261024-033-ACTIVATE-FOUNDATIONAL-ARCHITECTURE-MOTHER.md) ↔ [OUT-033](../../0.0/anchors/PALANG-0.0-OUT-20261024-033-ACTIVATE-FOUNDATIONAL-ARCHITECTURE-MOTHER.md), and event [EVT-0141](../../architecture/BEHAVIOR-TRACE/EVT-0141-FOUNDATIONAL-ARCHITECTURE-MOTHER-ACTIVATION-2026-10-24.md). The multi-point 0.0 registry and reference index carry the same links. Previous anchors remain preserved.
+
+Living status means versioned, evidence-gated, recoverable, and open to controlled growth; it does not imply global automatic background capture. Fresh-project adoption and export/cold-start recovery tests remain OPEN / NOT RUN until evidence is recorded.
