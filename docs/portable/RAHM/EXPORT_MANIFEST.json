@@ -1,7 +1,7 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.2.6",
-  "manifest_status": "CURRENT-056_ADDED; EXPECTED_SHA256_RECOMPUTE_REQUIRED",
+  "version": "1.2.7",
+  "manifest_status": "CURRENT-056_CHAIN_READBACK_VERIFIED; RECOMPUTE_EXACT_BYTE_DIGESTS",
   "created_from_checkpoint": "G6IP-RAHM-USER-POINT-0-20261024-005",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [
@@ -188,31 +188,31 @@
     {
       "path": "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-005-OUTPUT-CONTINUITY-AND-RECOVERY.md",
       "version": "1.0.0",
-      "git_blob_sha": "e0e00486d8f7719acd56a454caaa87997524e56a",
+      "git_blob_sha": "dced4581f42981fd04e1c6fd4fb2b43f762ddfbf",
       "sha256": "PENDING"
     },
     {
       "path": "docs/0.0/anchors/PALANG-0.0-IN-20261024-049-OUTPUT-CONTINUITY-AND-RECOVERY.md",
       "version": "1.0.0",
-      "git_blob_sha": "7b19a84af176a03bf895f01f5dd8bb8f2c395c00",
+      "git_blob_sha": "690569120dea805af4318e23d1aa2aabca2b28e5",
       "sha256": "PENDING"
     },
     {
       "path": "docs/0.0/anchors/PALANG-0.0-OUT-20261024-048-OUTPUT-CONTINUITY-AND-RECOVERY.md",
       "version": "1.0.0",
-      "git_blob_sha": "e33715071777ad93d6e016e70dcd8c87ae6868eb",
+      "git_blob_sha": "81bc31d9deb22fa7df93e735c8792dfea6ec88d5",
       "sha256": "PENDING"
     },
     {
       "path": "docs/architecture/BEHAVIOR-TRACE/EVT-0158-NO-SILENT-GAP-OUTPUT-CONTINUITY-2026-10-24.md",
       "version": "1.0.0",
-      "git_blob_sha": "59cf215ad47c4ef5a696a7e23283cc7513f13ded",
+      "git_blob_sha": "89654b2a4b07c613bcac0c033ccbaf16357e24c9",
       "sha256": "PENDING"
     },
     {
       "path": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261024-056-OUTPUT-CONTINUITY-AND-RECOVERY.md",
       "version": "1.0.0",
-      "git_blob_sha": "8bdfd71ed305aeb78756bab512b49cab740aba4c",
+      "git_blob_sha": "ae5dab77df3cc2597d75b75b99dd86b63f3b196e",
       "sha256": "PENDING"
     },
     {
@@ -233,14 +233,14 @@
     "persistent_memory": "NOT_VERIFIED",
     "idle_background_execution": "NOT VERIFIED",
     "cross_host": "NOT_RUN",
-    "exact_byte_sha256": "RECOMPUTE_CHANGED_FILES_AND_ALL_37_ENTRIES",
-    "schema_valid_fixture": "PASS_RUN_40117897971",
-    "schema_invalid_fixture": "REJECTED_WITH_4_ERRORS_RUN_40117897971",
-    "IN_OUT_recovery_equivalence": "PASS_LIMITED_LINK_CHECKPOINT_SCOPE_RUN_40117897971",
+    "exact_byte_sha256": "RECOMPUTE_AFTER_FINAL_READ-BACK STATUS AND IN POINTER UPDATES",
+    "schema_valid_fixture": "PASS_RUN_40120329021",
+    "schema_invalid_fixture": "REJECTED_WITH_4_ERRORS_RUN_40120329021",
+    "IN_OUT_recovery_equivalence": "PASS_LIMITED_LINK_CHECKPOINT_SCOPE_RUN_40120329021",
     "clean_AI_host_import": "NOT RUN",
     "second_AI_host_import": "NOT RUN",
     "persistence_restart": "NOT VERIFIED",
-    "canonical_mother_index_queue_integration": "CURRENT-056 WRITTEN; READ-BACK AND FINAL DIGEST RUN PENDING",
+    "canonical_mother_index_queue_integration": "UPDATED_AND_FETCHED; final manifest digest run pending",
     "schema_workflow_overall": "PASS_RUN_40115875047",
     "portable_package_build": "PASS_RUN_40117897971; final rebuild after manifest digest population",
     "full_state_recovery": "OPEN / NOT RUN"
