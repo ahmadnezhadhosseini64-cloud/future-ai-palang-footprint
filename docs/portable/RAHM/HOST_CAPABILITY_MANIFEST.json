@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0.0",
+  "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
+  "host": {"name":"UNKNOWN","model_version":"UNKNOWN","session_id":"UNKNOWN","observed_at_utc":"UNKNOWN"},
+  "capabilities": {
+    "persistent_memory":{"status":"UNTESTED","evidence":[],"restart_retrieval_test":"NOT_RUN"},
+    "repository_write":{"status":"UNTESTED","evidence":[],"readback_test":"NOT_RUN"},
+    "filesystem_access":{"status":"UNTESTED","evidence":[]},
+    "external_tools":{"status":"UNTESTED","evidence":[]},
+    "scheduled_execution":{"status":"UNTESTED","evidence":[]},
+    "background_execution_while_idle":{"status":"UNTESTED","evidence":[],"idle_job_test":"NOT_RUN"},
+    "cross_session_recovery":{"status":"UNTESTED","evidence":[]},
+    "package_export":{"status":"UNTESTED","evidence":[]}
+  },
+  "allowed_statuses":["AVAILABLE","UNAVAILABLE","UNTESTED","FAILED","PASS_WITH_EVIDENCE"],
+  "rule":"Do not change UNTESTED to AVAILABLE/PASS without a retained test receipt and independent read-back.",
+  "limitations":[],
+  "last_verified_commit":null
+}
