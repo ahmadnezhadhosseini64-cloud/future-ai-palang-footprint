@@ -70,6 +70,31 @@ jobs:
           if any(x.get("status") == "MISSING" for x in results):
               raise SystemExit("MANIFEST_INVENTORY_MISSING_FILES")
           PY
+      - name: Build extractable RAHM package archive
+        run: |
+          python - <<'PY'
+          import hashlib, json, zipfile
+          from pathlib import Path
+          manifest_path = Path("docs/portable/RAHM/EXPORT_MANIFEST.json")
+          manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+          archive = Path("haif-rahm-portable-package.zip")
+          files = [Path(entry["path"]) for entry in manifest["files"]]
+          files.append(manifest_path)
+          with zipfile.ZipFile(archive, "w", compression=zipfile.ZIP_DEFLATED) as zf:
+              for p in files:
+                  if not p.is_file():
+                      raise SystemExit(f"PACKAGE_FILE_MISSING: {p}")
+                  zf.write(p, arcname=str(p))
+          print(f"PACKAGE_FILE_COUNT={len(files)}")
+          print(f"PACKAGE_BYTES={archive.stat().st_size}")
+          print(f"PACKAGE_SHA256={hashlib.sha256(archive.read_bytes()).hexdigest()}")
+          print("PORTABLE_PACKAGE_BUILD=PASS")
+          PY
+      - name: Upload extractable package
+        uses: actions/upload-artifact@v4
+        with:
+          name: haif-rahm-portable-package
+          path: haif-rahm-portable-package.zip
       - name: Upload conformance and digest evidence
         uses: actions/upload-artifact@v4
         with:
