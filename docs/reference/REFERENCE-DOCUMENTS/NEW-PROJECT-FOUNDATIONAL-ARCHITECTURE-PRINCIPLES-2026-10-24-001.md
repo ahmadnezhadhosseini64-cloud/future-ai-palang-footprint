@@ -201,7 +201,7 @@ This mother is maintained as a versioned living reference, not a promise of unat
 ## Living Mother Update — Freshness Discovery Engine — 2026-10-24
 
 - **Additive version / نسخهٔ افزایشی:** 1.0.5
-- **Related architecture / معماری مرتبط:** [Adaptive Discovery / Cross-Playground v1.1.0](../../../../architecture/ADAPTIVE-DISCOVERY-CROSS-PLAYGROUND.md)
+- **Related architecture / معماری مرتبط:** [Adaptive Discovery / Cross-Playground v1.1.0](../../../architecture/ADAPTIVE-DISCOVERY-CROSS-PLAYGROUND.md)
 - **Engine ID / شناسهٔ موتور:** FRESHNESS-DISCOVERY-ENGINE-2026-10-24-001
 - **Status / وضعیت:** MOTHER UPDATED / LIVING / EVOLVABLE; second-project integration PENDING; runtime automation NOT VERIFIED.
 
