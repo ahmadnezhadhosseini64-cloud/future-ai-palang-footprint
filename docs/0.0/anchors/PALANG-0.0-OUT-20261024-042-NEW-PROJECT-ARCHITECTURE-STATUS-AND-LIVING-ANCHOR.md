@@ -3,7 +3,7 @@
 - Stable ID / شناسهٔ پایدار: `PALANG-OUT-NEW-PROJECT-ARCHITECTURE-STATUS-2026-10-24-042`
 - Production ID / شناسهٔ تولید: `G6IP-OUT-042`
 - Version / نسخه: `1.0.0`
-- Status / وضعیت: REGISTERED; read-back pending at creation.
+- Status / وضعیت: REGISTERED / READ-BACK VERIFIED; exact path and content fetched after write.
 - Input / ورودی: [IN-043](./PALANG-0.0-IN-20261024-043-NEW-PROJECT-ARCHITECTURE-STATUS-AND-LIVING-ANCHOR.md)
 - Parent current / نقطهٔ جاری والد: [CURRENT-049](./PALANG-0.0-CURRENT-20261024-049-LIVE-STATUS-AND-OUTPUT-CONTINUITY.md)
 - Living mother / سند مادر زنده: [NPFAP](../../reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md)
