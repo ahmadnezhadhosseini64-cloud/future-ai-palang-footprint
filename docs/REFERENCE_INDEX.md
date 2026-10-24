@@ -1139,3 +1139,15 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Correction: NEXT-044 now explicitly targets CURRENT-050, IN-043, OUT-042, EVT-0150 and NPFAP v1.1.4; older CURRENT-047 lineage is retained as historical recovery context.
 - Living mother: NPFAP additive v1.1.5.
 - Status: repository records written; read-back and cross-link reconciliation are the next verification step. Export and fresh-host recovery remain OPEN / NOT RUN; second-project integration and always-on automation remain NOT VERIFIED. Dropbox remains OPEN / WAITING.
+
+
+
+## CURRENT-052 — تداوم معماری و بازیابی — 2026-10-24
+
+- Current checkpoint: [CURRENT-052](0.0/anchors/PALANG-0.0-CURRENT-20261024-052-CONTINUITY-AND-RECOVERY.md), additive child of [CURRENT-051](0.0/anchors/PALANG-0.0-CURRENT-20261024-051-REPOSITORY-EXCAVATION-REVIVAL.md).
+- Interaction chain: [IN-045](0.0/anchors/PALANG-0.0-IN-20261024-045-CURRENT-052-CONTINUITY-AND-RECOVERY.md) → [OUT-044](0.0/anchors/PALANG-0.0-OUT-20261024-044-CURRENT-052-CONTINUITY-AND-RECOVERY.md) → [EVT-0152](architecture/BEHAVIOR-TRACE/EVT-0152-CURRENT-052-CONTINUITY-AND-RECOVERY-2026-10-24.md) → CURRENT-052.
+- Living mother: [NPFAP v1.1.7](reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md).
+- Discovery engine: [Adaptive Discovery / Cross-Playground v1.1.0](../architecture/ADAPTIVE-DISCOVERY-CROSS-PLAYGROUND.md).
+- Next gate: [NEXT-044 — export and fresh-context recovery](0.0/anchors/PALANG-0.0-NEXT-20261024-044-EXTRACTABLE-RAHM-CHILD-AND-COLD-START-TEST.md).
+- Status: records created; complete chain read-back/match is still in progress. NEXT-044 remains OPEN / NOT RUN. Second-project integration and always-on automation remain NOT VERIFIED. Dropbox remains OPEN / WAITING.
+- Rule: all inputs, outputs, events, errors, corrections, tests, and validation outcomes are independently anchored, version-linked, evidence-backed, and additive. Child → Rahm → Master; no silent overwrite.
