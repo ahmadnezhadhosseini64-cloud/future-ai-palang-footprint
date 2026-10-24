@@ -13,4 +13,4 @@
 The user's current interaction is recorded as Point 0 for the new Rahm branch. A separate 0.0 checkpoint is registered and linked to HAIF, the GPT-6 inherited architecture master, the GPT-6 living master, the interaction/event trace, the reference index and a deterministic next-action test plan.
 
 ## Status
-Repository writes are to be verified by fetch/read-back. The host-portable package, runtime behavior-capture mechanism, and tests on external AI hosts remain OPEN / NOT RUN until artifacts and independent test results are recorded.
+Repository read-back: Point 0, IN-036, OUT-036, EVT-0144, CURRENT-044, NEXT-042, and all three living masters were fetched after write; core identifiers and links matched. The host-portable package, runtime behavior-capture mechanism, and tests on external AI hosts remain OPEN / NOT RUN until artifacts and independent test results are recorded.
