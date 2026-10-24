@@ -3,7 +3,7 @@
 - Stable ID / شناسه پایدار: `G6IP-FIRST-LIVING-MASTER-PORTABLE-RAHM-20261024-001`
 - Production ID / شناسه تولید: `G6IP-FLM-RAHM-001`
 - Version / نسخه: 1.0.0
-- Status / وضعیت: REGISTERED; read-back and conformance gates tracked separately.
+- Status / وضعیت: REGISTERED / READ-BACK VERIFIED for this file and its focused relative links; conformance gates remain OPEN.
 - Authority / مرجع حاکم: اصول بنیادی پروژه + سند مادر معماری موروثی + بسته قابل‌حمل RAHM.
 - Current 0.0: [CURRENT-054](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-054-FIRST-LIVING-MASTER.md)
 - Next 0.0: [NEXT-048](../../0.0/anchors/PALANG-0.0-NEXT-20261024-048-FIRST-MASTER-CONFORMANCE.md)
