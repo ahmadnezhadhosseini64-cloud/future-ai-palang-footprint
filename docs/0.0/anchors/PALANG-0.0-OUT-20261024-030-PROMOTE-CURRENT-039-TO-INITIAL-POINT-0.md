@@ -1,5 +1,7 @@
 # OUT-030 — خروجی: نقطهٔ ۰ اولیه و ادغام قواعد HAIF
 
+- Status: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING
+
 - Stable ID: `PALANG-OUT-GPT6-INITIAL-POINT-0-2026-10-24-030`
 - Production ID: `G6IP-OUT-030`
 - Interaction: `INT-20261024-030`
