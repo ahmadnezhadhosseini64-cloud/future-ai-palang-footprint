@@ -21,3 +21,8 @@ The continuity failure is acknowledged. This response turns the user's instructi
 
 ## Next action / گام بعدی
 Create EVT-0149 and CURRENT-049, update the living mother and reference index additively, fetch every linked file again, retrieve actual commit timestamps in UTC and derive Tehran equivalents, then report the exact status. After that, execute NEXT-044 only as an observable export and fresh-context recovery test.
+
+
+## Verification addendum — repository read-back — 2026-10-24
+
+The exact repository path and content for this record was fetched after creation. The linked IN-042, OUT-041, EVT-0149, CURRENT-049, living mother v1.1.3, reference index, and NEXT-044 paths were also fetched and their expected identifiers/principal links were confirmed. Status: REGISTERED / READ-BACK VERIFIED. This is not a claim that NEXT-044 export/recovery, second-project integration, or always-on background automation has passed.
