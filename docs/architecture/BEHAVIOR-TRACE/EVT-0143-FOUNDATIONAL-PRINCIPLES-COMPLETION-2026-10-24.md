@@ -7,7 +7,7 @@
 - Output: [OUT-035](../../0.0/anchors/PALANG-0.0-OUT-20261024-035-COMPLETE-FOUNDATIONAL-PRINCIPLES.md)
 - Current checkpoint: [CURRENT-043](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-043-FOUNDATIONAL-PRINCIPLES-COMPLETENESS.md)
 - Foundational mother: [NPFAP-20261024-001 v1.0.2](../../reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md)
-- Status: REGISTERED / READ-BACK PENDING.
+- Status: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED.
 
 ## Observed behavior and outcome
 
@@ -24,3 +24,7 @@ Run [NEXT-041](../../0.0/anchors/PALANG-0.0-NEXT-20261024-041-FOUNDATIONAL-PRINC
 
 ## Reconciliation targets
 The foundational mother is v1.0.2; the current branch master is v1.3.7; the inherited mother must point to CURRENT-043; the Reference Index and 0.0 registry must identify NPFAP v1.0.2 and CURRENT-043 / EVT-0143 / NEXT-041. Fetch each exact path after write before promoting this event to READ-BACK VERIFIED.
+
+
+## Final repository read-back — 2026-10-24
+Exact paths fetched after writes: foundational mother NPFAP v1.0.2, HA-001 v1.0.4, inherited mother, GPT-6 living master v1.3.7, Reference Index, 0.0 registry, IN-035, OUT-035, CURRENT-043 and NEXT-041. Their expected stable IDs, versions and key cross-links were present. This is repository-only verification. NEXT-041's deeper principle-by-principle link/acceptance audit remains OPEN / NOT RUN; fresh-project adoption remains OPEN / NOT RUN; prototype NOT BUILT; cold-start recovery NOT RUN; external destinations NOT VERIFIED.
