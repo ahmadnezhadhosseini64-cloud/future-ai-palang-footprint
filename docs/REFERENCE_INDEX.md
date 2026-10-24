@@ -945,3 +945,8 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 ## EVT-0131 — verification closure
 - [EVT-0131](architecture/BEHAVIOR-TRACE/EVT-0131-LIVING-ARCHITECTURE-STATUS-TRANSPARENCY-AND-GROWTH-2026-10-24.md) and [NEXT-033](0.0/anchors/PALANG-0.0-NEXT-20261024-033-LIVING-STATUS-AND-COLD-START.md).
 - Run 40061468626 SUCCESS; 71 tests; tested SHA `cc1f61f18a364c896b251735ccb643e552d40fe2`; artifact 12547860733 inspected (SHA-256 `222398f7d4b601abe5559090c75d57653adb2a9e3b51dabc2da7f05cfbe74aa9`). Fresh-session recovery remains NOT RUN.
+
+
+## Durable terminal status receipt — EVT-0131
+- [Receipt JSON](architecture/BEHAVIOR-TRACE/STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40061713327.json).
+- Source run [40061713327](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40061713327), 71 tests PASS on tested SHA `26615121fd50276c9c978814b183b21b20330135`; artifact ZIP SHA-256 `448465dc742c90b1408d725ccce8a17eaf6d3b845ca639ad742c709cbdeb629a`.
