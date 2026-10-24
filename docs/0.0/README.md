@@ -1397,3 +1397,13 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - Governing project master: [GPT-6 interactive living master v1.3.0](../reference/REFERENCE-DOCUMENTS/GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001.md); it links the HAIF initial-model master, universal registration contract, dual-track behavioral architecture and Project Zero baseline.
 - Next: [NEXT-038 — create independent point 0.0](./anchors/PALANG-0.0-NEXT-20261024-038-DEFINE-POINT-0-THEN-0.0.md). Point 0.0 remains NOT CREATED until this next step is executed.
 - Verification boundary: writing done; final read-back reconciliation is pending. Prototype NOT BUILT in this step, cold-start recovery NOT RUN, and external destinations NOT VERIFIED.
+
+
+## GPT-6 project — current Point 0.0 checkpoint (CURRENT-040)
+- Current resumable anchor: [CURRENT-040](./anchors/PALANG-0.0-CURRENT-20261024-040-GPT6-POINT-0.0-RECOVERY-CHECKPOINT.md).
+- Independent checkpoint: [G6IP-POINT-0.0-20261024-001](./anchors/GPT6-INTERACTIVE-PROJECT-POINT-0.0-CHECKPOINT-2026-10-24-001.md).
+- Latest interaction: [IN-031](./anchors/PALANG-0.0-IN-20261024-031-ADVANCE-POINT-0.0-AND-LINK-LATEST-ARCHITECTURE.md) ↔ [OUT-031](./anchors/PALANG-0.0-OUT-20261024-031-ADVANCE-POINT-0.0-AND-LINK-LATEST-ARCHITECTURE.md); [EVT-0139](../architecture/BEHAVIOR-TRACE/EVT-0139-GPT6-POINT-0.0-CHECKPOINT-CREATION-2026-10-24.md).
+- Latest inherited architecture master: [G6IP-IAM-20261024-001 v1.0.3](../reference/REFERENCE-DOCUMENTS/GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md).
+- Next active task: [NEXT-039 — build interactive prototype](./anchors/PALANG-0.0-NEXT-20261024-039-BUILD-INTERACTIVE-PROTOTYPE.md).
+- History preserved: CURRENT-039 remains the initial point-0 root; CURRENT-040 is the current resumable checkpoint.
+- Open gates: prototype NOT BUILT; cold-start recovery NOT RUN; docs/REFERENCE_INDEX.md prior 404 OPEN; external destinations NOT VERIFIED.
