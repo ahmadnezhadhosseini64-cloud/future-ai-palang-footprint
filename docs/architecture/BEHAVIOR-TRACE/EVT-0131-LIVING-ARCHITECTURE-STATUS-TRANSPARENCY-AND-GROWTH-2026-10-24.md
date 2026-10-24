@@ -113,3 +113,10 @@ Complete and read back the IN/OUT pair and all canonical graph edges; run the cu
 - Artifact `12547334125` downloaded and inspected; ZIP SHA-256 `8278751f31a44e7fbd377a49aa64f688d080d87a7856ac000c00149dce891670`.
 - Both recovery directions RECOVERED IN-033/OUT-033 → EVT-0131/NEXT-033 with zero failures. Candidate tests: 2 CANDIDATE_READY, zero parse errors. Ledger PASS: 4 hash-linked records, zero errors. Proposal gate READY_FOR_OWNER_REVIEW, owner decision PENDING, no canonical mutation/promotion. Terminal receipt SUCCESS, terminal=true, tested SHA matches.
 - Fresh-session recovery remains NOT RUN; host-wide capture and external persistence remain NOT PROVEN; Issues #19/#20/#21 remain OPEN.
+
+
+## Durable terminal status receipt
+- The inspected `status-receipt.json` from run 40061713327 is preserved as [a repository receipt](./STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40061713327.json), rather than relying only on the expiring workflow artifact.
+- Receipt status: SUCCESS; tested SHA `26615121fd50276c9c978814b183b21b20330135`; UTC `2026-10-24T04:16:59.508963Z`; Tehran `2026-10-24T07:46:59.508963+03:30`.
+- Source artifact: `12547866288`; ZIP SHA-256 `448465dc742c90b1408d725ccce8a17eaf6d3b845ca639ad742c709cbdeb629a`.
+- The receipt deliberately says ChatGPT UI heartbeat, host-wide capture and external persistence are not proven. The durable copy is a historical terminal receipt; it does not imply the current HEAD was tested.
