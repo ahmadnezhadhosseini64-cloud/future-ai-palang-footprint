@@ -50,3 +50,9 @@ Evidence at audit SHA `ffc4fb8136cdd4168910f8c0ba58d6619fddfa13`:
 - Six dedicated semantic-role unit tests passed in the audit workflow. Cross-Layer Integrity Gate [40058848116](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40058848116) and Reconciliation Acceptance Test [40058848140](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40058848140) also passed on the same SHA.
 - Failure lesson preserved: an interim run [40058772530](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40058772530) failed because a literal escaped newline was inserted into the Python count dictionary. The run log identified the exact SyntaxError; the line was repaired and the later audit passed. The preceding run also exposed generated Python bytecode entering the graph; the builder now excludes `__pycache__` and `.pyc` files, and the final artifact reports zero decode errors.
 - Current main HEAD at verification was exactly `871e02fb87e2ff04db380dcad64fc1bd0939e8a6`; the audit artifact's commit equals the current HEAD observed at that check.
+
+
+## Interaction pair and continuation
+- Current pair: [IN-030](../../0.0/anchors/PALANG-0.0-IN-20261024-030-CONTINUE-SEMANTIC-RECONCILIATION.md) / [OUT-030](../../0.0/anchors/PALANG-0.0-OUT-20261024-030-CONTINUE-SEMANTIC-RECONCILIATION.md), interaction ID `INT-20261024-030`.
+- Active successor: [NEXT-029](../../0.0/anchors/PALANG-0.0-NEXT-20261024-029-SEMANTIC-REVIEW-BATCH-2-AND-FRESH-SESSION.md).
+- Decision ledger: `data/interaction-pairs/semantic-role-decisions.jsonl` contains H0-ID-REVIEW-001 and H0-ID-REVIEW-002; both are source-hash-verified by the graph builder on the audited source SHA.
