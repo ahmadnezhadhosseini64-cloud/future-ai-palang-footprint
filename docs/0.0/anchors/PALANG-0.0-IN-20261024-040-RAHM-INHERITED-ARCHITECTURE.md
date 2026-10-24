@@ -16,3 +16,9 @@ A repository link or specification proves documented architecture, not successfu
 
 ## Required continuation
 Create a new CURRENT anchor and NEXT 0.0 checkpoint; bind RAHM to the inherited architecture master, HAIF mother, index and integration queue; fetch and match every written artifact. Keep unrun tests open.
+
+## Resulting lineage
+- Output: [OUT-040](./PALANG-0.0-OUT-20261024-040-RAHM-INHERITED-ARCHITECTURE.md)
+- Event: [EVT-0148](../../architecture/BEHAVIOR-TRACE/EVT-0148-RAHM-INHERITED-ARCHITECTURE-AND-EXPORTABLE-RECOVERY-2026-10-24.md)
+- Current point: [CURRENT-048](./PALANG-0.0-CURRENT-20261024-048-RAHM-INHERITED-ARCHITECTURE.md)
+- Next 0.0: [NEXT-046](./PALANG-0.0-NEXT-20261024-046-RAHM-PORTABILITY-VALIDATION.md)
