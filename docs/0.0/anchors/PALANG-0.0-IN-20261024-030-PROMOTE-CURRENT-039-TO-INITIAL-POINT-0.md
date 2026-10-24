@@ -13,3 +13,7 @@
 
 ## Governance
 این درخواست افزایشی است. هیچ لنگر یا سابقهٔ قبلی حذف نمی‌شود. زمان پیام جدا از زمان commit است. دادهٔ حساس غیرضروری وارد مخزن نمی‌شود.
+
+
+## Repository status
+REGISTERED / READ-BACK VERIFIED. This exact path was fetched after registration and the IN-030 / INT-20261024-030 identifiers were present. The message timestamp remains unknown.
