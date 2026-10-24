@@ -661,3 +661,7 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Current point / next 0.0: [CURRENT-036](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-036-USER-REQUEST-AND-LIVING-REGISTRATION.md) / [NEXT-036](../../0.0/anchors/PALANG-0.0-NEXT-20261024-036-HISTORIC-SOURCE-CENSUS-AND-COLD-START.md).
 - Lesson: [LAL-20261024-013](../ARCHITECTURE-LESSONS/lessons/LAL-20261024-013-CURRENT-POINT-ZERO-AND-LIVING-REGISTRATION.md).
 - State: governance record registered; read-back, CI, runtime and final-main audit remain separate gates.
+
+
+## VERIFICATION-CHECKPOINT-INT-20261024-026
+- [Read-back verification checkpoint](./VERIFICATION-CHECKPOINT-INT-20261024-026.md) covers CURRENT-036 / IN-026 / OUT-026 / NEXT-036 / EVT-0134 / LAL-20261024-013 and records the candidate branch's current verification boundary.
