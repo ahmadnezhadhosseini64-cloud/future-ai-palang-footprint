@@ -749,8 +749,8 @@ Current active gate remains [EVT-0122](../../architecture/BEHAVIOR-TRACE/EVT-012
 ## Live mirror synchronization reconciliation — EVT-0132 / NEXT-034
 - Event: [EVT-0132](../../architecture/BEHAVIOR-TRACE/EVT-0132-LIVE-MIRROR-SYNC-RECONCILIATION-2026-10-24.md).
 - Current continuation anchor: [NEXT-034](../../0.0/anchors/PALANG-0.0-NEXT-20261024-034-LIVE-MIRROR-SYNC-AND-COLD-START.md); prior [NEXT-033](../../0.0/anchors/PALANG-0.0-NEXT-20261024-033-LIVING-STATUS-AND-COLD-START.md) remains preserved.
-- EVT-0132 final registration commit: `2b120b2a91fbcef6edcf8cebfd69c6d94aec0f33`; UTC `2026-10-24T04:40:02Z`; derived Tehran `2026-10-24T08:10:02+03:30`.
-- NEXT-034 registration commit: `a1028a60bb23f5acf1f3d4ef4b6b65c4d1d48154`; UTC `2026-10-24T04:40:24Z`; derived Tehran `2026-10-24T08:10:24+03:30`.
+- EVT-0132 final registration commit: `8ca21bfc6c76a37657a3dee2fd247dd49778729c`; UTC `2026-10-24T04:42:00Z`; derived Tehran `2026-10-24T08:12:00+03:30`.
+- NEXT-034 registration commit: `5a030f91e28174ff84db03dc2742c664c5e61e19`; UTC `2026-10-24T04:42:23Z`; derived Tehran `2026-10-24T08:12:23+03:30`.
 - Canonical mirror source remains blob `de1b75f07241c9b313e476af5f1417177ff78c10`, last source-changing commit `a2374d7da36a5af69b1bdf17f6dfd673bc03c97f` at UTC `2026-10-23T17:34:39Z` = Tehran `2026-10-23T21:04:39+03:30`.
 - Stable ID, Test ID, Version 1.0.0, next-action chain and destination status keys match the independently read Library snapshot. Full-file content does not: 10,479 source characters vs 11,980 Library characters (delta 1,501). The accepted 7-character tolerance applies only to the earlier 8,915/8,908 historical comparison.
 - Library upload was blocked by `container_session_unavailable` / `No active container session was found for container_path.`; no Library write occurred. Existing Library version 6 remains readable but is NOT SYNCED / NOT VERIFIED against the current canonical full content.
