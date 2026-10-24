@@ -26,3 +26,13 @@ CURRENT-053 → CURRENT-054 → IN-048 → OUT-047 → EVT-0157 → CURRENT-055 
 
 ## Timestamp authority
 Canonical repository registration time must be taken from the actual last-change Git commit timestamp in UTC; show Asia/Tehran equivalent derived from the same instant. The exact user-message time is not inferred from commit time.
+
+
+## Latest read-back conformance receipt
+- Run [40117800859](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40117800859), commit `85f1d3e83e85e9733ba708c90ba377e4132a43bc`, completed SUCCESS.
+- Valid schema fixture: 0 errors; invalid fixture: 4 errors and rejected.
+- Exact-byte SHA-256 comparison: PASS for 31 manifest inventory files.
+- Limited IN/OUT checkpoint/link recovery: PASS; full-state reconstruction remains OPEN.
+- Archive: 32 files including manifest; 189,123 bytes; SHA-256 `a37f833391212907c183e82c600179c12d87d356bee559672250c017929ac1d2`.
+- Download: [haif-rahm-portable-package artifact](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40117800859/artifacts/12570447087).
+- This receipt still does not prove clean-host import, second-host import, persistence restart or idle/background execution.
