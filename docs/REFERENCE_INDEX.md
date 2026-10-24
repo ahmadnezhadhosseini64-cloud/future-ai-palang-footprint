@@ -950,3 +950,8 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 ## Durable terminal status receipt — EVT-0131
 - [Receipt JSON](architecture/BEHAVIOR-TRACE/STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40061713327.json).
 - Source run [40061713327](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40061713327), 71 tests PASS on tested SHA `26615121fd50276c9c978814b183b21b20330135`; artifact ZIP SHA-256 `448465dc742c90b1408d725ccce8a17eaf6d3b845ca639ad742c709cbdeb629a`.
+
+
+## Latest verified terminal receipt — EVT-0131
+- [Durable receipt](architecture/BEHAVIOR-TRACE/STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40061873837.json).
+- [Run 40061873837](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40061873837): SUCCESS, 71 tests, tested SHA `edd82d08311c03f0506c651e5c33d128a0d70a35`; artifact SHA-256 `c44071afab49df4bfb33141f432db059e21455f3161801f4d711efd34d690f1f`.
