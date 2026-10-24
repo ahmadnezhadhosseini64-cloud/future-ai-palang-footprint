@@ -500,3 +500,12 @@ Read back and reconcile IN-045, OUT-044, EVT-0152, CURRENT-052, this mother, the
 
 ### Continuation after read-back
 The next active operation is to execute NEXT-044: generate a verifiable export artifact, reconstruct the project in a clean context, compare identifiers/paths/versions/integrity evidence, test negative cases, and record the result. Keep all historical anchors and versions; do not promote recovery to VERIFIED until the test evidence is independently read back.
+
+
+
+## CURRENT-054 — First Living Master / portable GPT-6 HAIF
+- First living master: [FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md](../../portable/RAHM/FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md).
+- Current checkpoint: [CURRENT-054](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-054-FIRST-LIVING-MASTER.md); next: [NEXT-048](../../0.0/anchors/PALANG-0.0-NEXT-20261024-048-FIRST-MASTER-CONFORMANCE.md).
+- Fundamental rule: every unverified, incomplete, conflicting or untested item remains OPEN/LIVING until criteria and independently read-back evidence support closure.
+- Required next gate: execute NEXT-044 first, then NEXT-048. Export SHA-256, schema fixtures, IN/OUT recovery, repo-wide link/ID remediation, clean/second-host AI import, persistence, idle background and independent destination read-back remain OPEN/NOT RUN or NOT VERIFIED.
+- This link is an additive update; earlier mother history and versions remain preserved.
