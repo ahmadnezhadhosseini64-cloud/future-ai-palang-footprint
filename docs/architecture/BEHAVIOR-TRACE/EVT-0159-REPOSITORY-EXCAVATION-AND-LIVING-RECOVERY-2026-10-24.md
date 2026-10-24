@@ -2,8 +2,8 @@
 
 - Stable ID: `G6IP-RAHM-EVT-0159-20261024`
 - Production ID: `G6IP-EVT-0159`
-- Version: 1.0.0
-- Status: REGISTERED; read-back required; global graph and real-host gates remain OPEN.
+- Version: 1.0.1
+- Status: REGISTERED / READ-BACK VERIFIED for event content and focused links; global graph and real-host gates remain OPEN.
 - Point 0: [User Point 0/006](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-006-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md)
 - Input: [IN-050](../../0.0/anchors/PALANG-0.0-IN-20261024-050-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md)
 - Output: [OUT-049](../../0.0/anchors/PALANG-0.0-OUT-20261024-049-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md)
@@ -34,3 +34,13 @@ Conformance [40122633966](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Structural audit workflow completed, but content result remains `REVIEW_REQUIRED`: 3,757 files including generated evidence; 5,564 local-link edges; 16 missing links; 62 stable-ID collision groups (61 unreviewed); 88 production-ID collision groups; 7 reference-ID collision groups; 36 event-number collision groups; 13 ambiguous parent edges; 0 decode errors.
 - Strict portable conformance run [40124425568](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40124425568) passed for manifest v1.4.2: schema valid fixture 0 errors, invalid fixture rejected with 4 errors, all expected file digests matched, limited IN/OUT checkpoint-link equivalence passed; package 44 files / 221380 bytes / SHA-256 `591377d03546e6f031ee98614b1c9fbd662dba08a15bc5c68b15bd918282f501`.
 - These are repository/CI results only. Full IN/OUT state reconstruction, clean/second AI-host import, actual persistence restart and idle/background execution remain OPEN / NOT VERIFIED.
+
+
+## Follow-up learning receipt — link-audit false positives and corrected links
+- Repository tree confirms all six lineage artifacts referenced by CURRENT-057/NEXT-051 exist at their exact canonical paths; focused link check across 13 target files returned zero broken relative links.
+- The initial query's missing-file conclusion was a query-path error and has been withdrawn. This is retained as an audit-method correction, not rewritten as an architecture defect.
+- Six actual broken documentation links were corrected: five in the initial-model mother and one in EVT-0132. The historical graph auditor now excludes Markdown-looking links embedded in Python source/test fixtures from navigation-link counts while continuing to scan those files for IDs/provenance.
+- Added an explicit CI continuity gate for Point 0/006, IN-050, OUT-049, EVT-0159, CURRENT-057, NEXT-051, portable master, manifest, canonical index and queue.
+- Latest completed pre-fix graph audit [40124660609](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40124660609) was `REVIEW_REQUIRED`: 3,768 files; 5,564 local-link edges; 16 missing-link findings, including the six real documentation links and ten Markdown-looking strings inside Python fixtures; 62 stable-ID collision groups (61 unreviewed); 88 production-ID collision groups; 7 reference-ID collision groups; 36 event-number collision groups; 13 ambiguous parent edges; one ambiguous timestamp. A post-fix audit is pending.
+- Conformance baseline [40124660624](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40124660624) passed its declared scope (43/43 exact-byte digests, schema positive/negative fixtures, limited IN/OUT link-checkpoint equivalence, archive build) on commit `98435ad73b4b7ea9e4da94b9f5abba5af968b753`; it predates the latest edits and must not be treated as final verification of them.
+- Real AI-host import, full-state recovery, persistent memory, and idle/background execution remain OPEN / NOT VERIFIED.
