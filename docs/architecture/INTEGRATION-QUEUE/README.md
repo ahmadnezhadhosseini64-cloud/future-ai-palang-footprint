@@ -1718,7 +1718,7 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - Current: [CURRENT-055](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-055-FIRST-MASTER-READINESS.md).
 - Event: [EVT-0157](../BEHAVIOR-TRACE/EVT-0157-TEST-HARNESS-FAILURE-AS-ARCHITECTURE-LEARNING-2026-10-24.md).
 - Portable master: [FIRST-LIVING-MASTER](../../portable/RAHM/FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md).
-- Next: [NEXT-049](../../../0.0/anchors/PALANG-0.0-NEXT-20261024-049-REAL-HOST-TRANSFER-AND-GRAPH-AUDIT.md), OPEN / LIVING. Actual host transfer, full state recovery, persistence restart, idle background and repository-wide graph remediation remain unverified.
+- Next: [NEXT-049](../../0.0/anchors/PALANG-0.0-NEXT-20261024-049-REAL-HOST-TRANSFER-AND-GRAPH-AUDIT.md), OPEN / LIVING. Actual host transfer, full state recovery, persistence restart, idle background and repository-wide graph remediation remain unverified.
 
 - User return anchor: [Point 0/004](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-004-TEST-HARNESS-AND-FIRST-MASTER-READINESS.md); prior Point 0/003 preserved.
 
@@ -1727,7 +1727,7 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - User Point 0: [Point 0/005](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-005-OUTPUT-CONTINUITY-AND-RECOVERY.md).
 - Current: [CURRENT-056](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-056-OUTPUT-CONTINUITY-AND-RECOVERY.md).
 - Input/output/event: [IN-049](../../0.0/anchors/PALANG-0.0-IN-20261024-049-OUTPUT-CONTINUITY-AND-RECOVERY.md) → [OUT-048](../../0.0/anchors/PALANG-0.0-OUT-20261024-048-OUTPUT-CONTINUITY-AND-RECOVERY.md) → [EVT-0158](../BEHAVIOR-TRACE/EVT-0158-NO-SILENT-GAP-OUTPUT-CONTINUITY-2026-10-24.md).
-- Next: [NEXT-050](../../../0.0/anchors/PALANG-0.0-NEXT-20261024-050-FULL-RECOVERY-AND-REAL-HOST-IMPORT.md), OPEN / LIVING. [NEXT-049](../../../0.0/anchors/PALANG-0.0-NEXT-20261024-049-REAL-HOST-TRANSFER-AND-GRAPH-AUDIT.md) remains open for repository-wide graph and real-host work.
+- Next: [NEXT-050](../../0.0/anchors/PALANG-0.0-NEXT-20261024-050-FULL-RECOVERY-AND-REAL-HOST-IMPORT.md), OPEN / LIVING. [NEXT-049](../../0.0/anchors/PALANG-0.0-NEXT-20261024-049-REAL-HOST-TRANSFER-AND-GRAPH-AUDIT.md) remains open for repository-wide graph and real-host work.
 - Rule: a new input does not erase an open NEXT. Preserve the lineage, return visible milestone status, and never claim invisible background execution. Main mother/index/queue integration is not considered verified until read-back and the relevant tests pass.
 
 | G6IP-RAHM-EVT-0158-20261024 | تداوم ورودی/خروجی، دروازهٔ هش سخت‌گیرانه و بازیابی قابل‌انتقال | OPEN / PARTIAL — run 40122001572 passed 37/37 digests; real-host/full-recovery gates remain open | سند مادر قابل‌انتقال، سند مادر HAIF، شاخص مرجع، NEXT-050 | [EVT-0158](../BEHAVIOR-TRACE/EVT-0158-NO-SILENT-GAP-OUTPUT-CONTINUITY-2026-10-24.md) |
