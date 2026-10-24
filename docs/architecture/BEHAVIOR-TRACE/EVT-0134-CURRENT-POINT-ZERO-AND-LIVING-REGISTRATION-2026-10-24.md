@@ -30,3 +30,9 @@ The interaction is a new node in a persistent graph, not a reason to discard or 
 ## Evidence boundary
 
 The event itself documents the registration intent and required controls. Registration is not equivalent to runtime capture proof, external persistence proof, or final-main audit PASS. Those require separate test artifacts.
+
+
+## Active automation continuity update
+- Existing automation: **Palang Mirror Sync**, ID `6ad9a407b9d481919c7145fbe4638dec`, remains ENABLED; its prompt was updated to include CURRENT-036 / NEXT-036 and preserve NEXT-034/NEXT-035, BOART-FOLLOWUP-01, Issue #20 and Issue #21.
+- Automation metadata update time: UTC `2026-10-24T06:09:34.525060Z` = Tehran `2026-10-24T09:39:34.525060+03:30`. This is automation metadata time, not a Git commit timestamp.
+- This update changes the automation instructions only; it does not claim a new mirror run, destination write, cold-start recovery or final-main audit.
