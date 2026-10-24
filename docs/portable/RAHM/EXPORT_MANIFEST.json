@@ -1,7 +1,7 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.1.1",
-  "manifest_status": "IN_OUT_RECOVERY_TEST_ADDED_SHA256_RECOMPUTE_PENDING",
+  "version": "1.1.2",
+  "manifest_status": "ALL_EXPECTED_SHA256_VALUES_POPULATED; ENFORCED_BY_CONFORMANCE_WORKFLOW",
   "created_from_checkpoint": "G6IP-RAHM-CURRENT-054-20261024",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [
@@ -57,7 +57,7 @@
       "path": "docs/0.0/anchors/PALANG-0.0-IN-20261024-047-FIRST-LIVING-MASTER.md",
       "version": "1.0.0",
       "git_blob_sha": "0645a0025d0b08278b2613ec139d9224c60e24b5",
-      "sha256": "PENDING"
+      "sha256": "b6c5aeb9bfdedab7e86b85e46828cfc2c5c99ea6274fb0567c35d6c13107a0a3"
     },
     {
       "path": "docs/0.0/anchors/PALANG-0.0-OUT-20261024-046-FIRST-LIVING-MASTER.md",
@@ -161,15 +161,16 @@
     "persistent_memory": "NOT_VERIFIED",
     "idle_background_execution": "NOT VERIFIED",
     "cross_host": "NOT_RUN",
-    "exact_byte_sha256": "RECOMPUTE_IN_047_AFTER_RECOVERY_POINTER_UPDATE",
-    "schema_valid_fixture": "PASS_RUN_40114451032",
-    "schema_invalid_fixture": "REJECTED_WITH_4_ERRORS_RUN_40114451032",
-    "IN_OUT_recovery_equivalence": "NEW_WORKFLOW_TEST_ADDED_PENDING_EXECUTION",
+    "exact_byte_sha256": "ALL_24_EXPECTED_DIGESTS_POPULATED; FINAL_FULL_COMPARISON_NEXT_RUN",
+    "schema_valid_fixture": "PASS_RUN_40114626413",
+    "schema_invalid_fixture": "REJECTED_WITH_4_ERRORS_RUN_40114626413",
+    "IN_OUT_recovery_equivalence": "PASS_RUN_40114626413; artifact-link/checkpoint equivalence only",
     "clean_AI_host_import": "NOT RUN",
     "second_AI_host_import": "NOT RUN",
     "persistence_restart": "NOT VERIFIED",
-    "canonical_mother_index_queue_integration": "WRITTEN_AND_FETCHED; FULL_GRAPH_REVIEW_OPEN",
-    "schema_workflow_overall": "PASS_RUN_40114451032"
+    "canonical_mother_index_queue_integration": "WRITTEN_AND_FETCHED; full graph review remains open",
+    "schema_workflow_overall": "PASS_RUN_40114626413",
+    "portable_package_build": "PASS_RUN_40114626413; rebuild and compare on every successful conformance run"
   },
-  "note": "The latest successful portable-conformance workflow is the authority for digest comparison, schema fixture results, and archive build. Do not infer AI-host import, persistent memory, or idle-background capability from package build success."
+  "note": "A successful conformance workflow must compare all exact-byte SHA-256 values, validate both fixtures, recover the canonical checkpoint independently from IN and OUT, and build the package archive. These tests do not prove an independent AI host, persistent memory, or idle background execution."
 }
