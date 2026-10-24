@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001`
 - Production ID / شناسهٔ تولید: `G6IP-LMR-20261024-001`
-- Version / نسخه: 1.3.7
+- Version / نسخه: 1.3.8
 - Project / پروژه: Future AI / Palang Footprint — HAIF
 - Owner / مالک معماری: احمد نژادحسینی (احمد پلنگ)
 - Host / میزبان این شاخه: ChatGPT / GPT-6
@@ -171,3 +171,20 @@ The current audit/recovery anchor is [CURRENT-042](../../0.0/anchors/PALANG-0.0-
 
 ## Foundational completeness update — v1.3.7 / CURRENT-043
 The active branch now follows the v1.0.2 completeness/verifiability contract. Every material architectural claim must have observable acceptance criteria, a verification method, evidence, an explicit status and closure condition. Current interaction: IN-035 ↔ OUT-035 ↔ EVT-0143 ↔ CURRENT-043. Next: NEXT-041 foundational verification, then NEXT-040 fresh-project adoption. Prototype NOT BUILT; cold-start recovery NOT RUN; external destinations NOT VERIFIED.
+
+
+## Living update — Rahm project Point 0 / CURRENT-044 — 2026-10-24
+
+- Additive version: **1.3.8**; prior master versions and anchors remain preserved.
+- New Rahm Point 0: [G6IP Rahm Point 0](../../0.0/anchors/GPT6-RAHM-PROJECT-POINT-0-2026-10-24-001.md).
+- Current independent 0.0: [G6IP-RAHM-CURRENT-044](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-044-RAHM-PROJECT-POINT-0.0.md).
+- Interaction: [IN-036](../../0.0/anchors/PALANG-0.0-IN-20261024-036-RAHM-PROJECT-POINT-0.md) → [OUT-036](../../0.0/anchors/PALANG-0.0-OUT-20261024-036-RAHM-PROJECT-POINT-0.md) → [EVT-0144](../../architecture/BEHAVIOR-TRACE/EVT-0144-GPT6-RAHM-PROJECT-POINT-0-2026-10-24.md).
+- HAIF governing mother: [v1.3.9](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md).
+- Inherited architecture master: [v1.0.6](./GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md).
+- Next action: [NEXT-042 — Rahm export and cross-host conformance](../../0.0/anchors/PALANG-0.0-NEXT-20261024-042-RAHM-CONFORMANCE-EXPORT-CROSS-HOST-TEST.md).
+
+### Behavioral and evolutionary rule
+Each interaction that materially changes the architecture should preserve input, output, observable behavior, evidence, failures/corrections, feedback, current state and next action. The Rahm layer may propose changes and Child candidates; Master changes require acceptance criteria, evidence, explicit approval where required, and independent read-back. Do not infer unseen internal causes from an observed response.
+
+### Current proof boundary
+This living master records repository architecture only. It does not prove continuous automatic capture, background evolution, an installed runtime, or cross-host compatibility. The portable package and conformance tests remain OPEN / NOT RUN.
