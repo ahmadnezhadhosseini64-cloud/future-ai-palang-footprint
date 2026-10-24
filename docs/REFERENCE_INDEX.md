@@ -1016,3 +1016,12 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 
 - Time binding: [TIME-BINDING-GPT6-INTERACTIVE-2026-10-24-001](architecture/BEHAVIOR-TRACE/TIME-BINDING-GPT6-INTERACTIVE-2026-10-24-001.md) — actual Git commit times in UTC and corresponding Tehran times; message timestamp remains UNKNOWN / UNVERIFIED.
 - Primary repository artifacts: READ-BACK VERIFIED / CONTENT PRESENT / IDENTIFIERS MATCHED. Buffer/Persistent Memory/Library unverified; Dropbox OPEN / NOT VERIFIED.
+
+
+## CURRENT-041 / EVT-0141 — foundational architecture mother activation
+- Current 0.0 anchor: [CURRENT-041](0.0/anchors/PALANG-0.0-CURRENT-20261024-041-FOUNDATIONAL-ARCHITECTURE-MOTHER-ACTIVATION.md).
+- Input/output: [IN-033](0.0/anchors/PALANG-0.0-IN-20261024-033-ACTIVATE-FOUNDATIONAL-ARCHITECTURE-MOTHER.md) ↔ [OUT-033](0.0/anchors/PALANG-0.0-OUT-20261024-033-ACTIVATE-FOUNDATIONAL-ARCHITECTURE-MOTHER.md).
+- Behavior event: [EVT-0141](architecture/BEHAVIOR-TRACE/EVT-0141-FOUNDATIONAL-ARCHITECTURE-MOTHER-ACTIVATION-2026-10-24.md).
+- Governing mother: [NPFAP-20261024-001](reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md).
+- Lineage: CURRENT-041 → CURRENT-040 → CURRENT-039 / Point 0 → architecture zero; prior nodes preserved.
+- Status: registration and cross-file read-back to be verified after these updates; fresh-project adoption and cold-start recovery remain OPEN / NOT RUN.
