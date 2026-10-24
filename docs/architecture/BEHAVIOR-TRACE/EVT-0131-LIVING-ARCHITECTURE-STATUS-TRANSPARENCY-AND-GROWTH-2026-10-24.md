@@ -52,3 +52,11 @@ The architecture is updateable through proposals, evidence validation, versioned
 
 ## Next action
 Complete and read back the IN/OUT pair and all canonical graph edges; run the current CI; inspect generated recovery, proposal-gate and ledger manifests; register the actual tested SHA/run/artifact digest; reconcile master/queue/index/NEXT-033; only then advance the gate. Preserve all earlier versions and failures.
+
+
+## Failure trail — event extraction and reciprocal graph
+- Run [40061117858](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40061117858) failed after 71 tests with six regex compilation errors. Root cause: the event-extraction regex was committed with double-escaped grouping syntax. This was corrected in the resolver and the affected tests.
+- Run [40061208765](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40061208765) then exposed a test-fixture issue: it contained literal backslash-n text instead of actual line separators. The fixture was corrected; the subsequent 71-unit-test stage passed.
+- Run [40061289952](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40061289952) passed unit tests but returned PARTIAL for pair 033 because IN-033's first EVT reference was the previous event EVT-0130. The current event EVT-0131 was linked only from OUT-033. The resolver correctly did not report RECOVERED while the event lacked direct references to the current pair.
+- Correction: IN-033 now explicitly identifies EVT-0131 as its result event. Re-run both recovery directions and inspect artifacts before changing this event to CI-PASS.
+- All failed attempts remain part of the evidence trail; do not suppress them or inherit pair-032's prior PASS.
