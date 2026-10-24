@@ -222,3 +222,12 @@ This living master records repository architecture only. It does not prove conti
 - Governing rule: implemented + read-back-proven items receive evidence-matched status; documented-only capability is not called active; every unrun/failed test stays open with an ID, reason and recovery step.
 - Behavioral inference is based on repeated explicit instructions and observed corrections, not hidden-thought access. Automatic continuous monitoring is NOT VERIFIED.
 - Open: JSON Schema fixtures, exact-byte SHA-256, full link/duplicate-ID audit, behavior regression and IN/OUT recovery, persistent-memory restart, idle background, clean-host and second-host tests.
+
+
+## CURRENT-048 — RAHM inherited architecture and transfer
+- Current: [CURRENT-048](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-048-RAHM-INHERITED-ARCHITECTURE.md).
+- Chain: [IN-040](../../0.0/anchors/PALANG-0.0-IN-20261024-040-RAHM-INHERITED-ARCHITECTURE.md) → [OUT-040](../../0.0/anchors/PALANG-0.0-OUT-20261024-040-RAHM-INHERITED-ARCHITECTURE.md) → [EVT-0148](../../architecture/BEHAVIOR-TRACE/EVT-0148-RAHM-INHERITED-ARCHITECTURE-AND-EXPORTABLE-RECOVERY-2026-10-24.md).
+- RAHM package: [boot](../../portable/RAHM/RAHM_BOOT.md) / [architecture](../../portable/RAHM/RAHM_ARCHITECTURE.md).
+- Next 0.0: [NEXT-046](../../0.0/anchors/PALANG-0.0-NEXT-20261024-046-RAHM-PORTABILITY-VALIDATION.md) — OPEN / IN PROGRESS.
+- Preserve observable user/AI inputs and outputs, provenance, corrections, behavior hypotheses, test receipts and recovery state. Promote only after version-specific acceptance tests.
+- Actual target-host transfer, SHA-256, schema fixtures, restart recovery, persistent memory and idle background execution remain OPEN / NOT VERIFIED until independently tested.
