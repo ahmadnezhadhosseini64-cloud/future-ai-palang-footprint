@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `PALANG-0.0-NEW-PROJECT-ARCHITECTURE-ZERO-2026-10-24-001`
 - Production ID / شناسهٔ تولید: `G6IP-ARCH-ZERO-20261024-001`
-- Version / نسخه: 1.0.0
+- Version / نسخه: 1.0.1
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING / EVOLVABLE / EXTRACTABLE / RECOVERABLE
 - Project / پروژه: Future AI / Palang Footprint — HAIF → GPT-6 Interactive Project
 - Parent root / ریشهٔ والد: [Point 0 — initial root](./GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001.md)
@@ -89,3 +89,6 @@ On a fresh host or after restart:
 
 This file is a living architecture anchor in the repository. Its registration/read-back state must be upgraded only after the exact path is fetched again. Prototype, cold-start recovery and external destinations remain unverified until their own evidence exists.
 \n\n## Latest update and read-back receipt\n- Governing inherited architecture master: [G6IP-IAM-20261024-001 v1.0.4](../../reference/REFERENCE-DOCUMENTS/GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md).\n- GPT-6 living master: [G6IP-LMR-20261024-001 v1.3.5](../../reference/REFERENCE-DOCUMENTS/GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001.md).\n- Latest interaction pair: [IN-032](./PALANG-0.0-IN-20261024-032-REGISTER-ARCHITECTURE-ZERO.md) ↔ [OUT-032](./PALANG-0.0-OUT-20261024-032-REGISTER-ARCHITECTURE-ZERO.md); event [EVT-0140](../../architecture/BEHAVIOR-TRACE/EVT-0140-ARCHITECTURE-ZERO-REGISTRATION-2026-10-24.md).\n- Read-back: exact architecture-zero path and linked records fetched from the default branch; IDs, version numbers and expected links matched. This verifies repository records only.\n- Prototype NOT BUILT; cold-start recovery NOT RUN; external destinations NOT VERIFIED.\n
+
+## Latest audit/current continuation — CURRENT-042
+The latest resumable checkpoint is [CURRENT-042](./PALANG-0.0-CURRENT-20261024-042-NEW-PROJECT-ARCHITECTURE-HARD-AUDIT.md), following [CURRENT-041](./PALANG-0.0-CURRENT-20261024-041-FOUNDATIONAL-ARCHITECTURE-MOTHER-ACTIVATION.md). The hard audit mother is [HA-001](../../reference/REFERENCE-DOCUMENTS/NEW-PROJECT-ARCHITECTURE-HARD-AUDIT-2026-10-24-001.md); its event is [EVT-0142](../../architecture/BEHAVIOR-TRACE/EVT-0142-NEW-PROJECT-ARCHITECTURE-HARD-AUDIT-2026-10-24.md). The governing foundational mother is [NPFAP-20261024-001 v1.0.1](../../reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md). Next action is [NEXT-040 — fresh-project adoption test](./PALANG-0.0-NEXT-20261024-040-FRESH-PROJECT-ADOPTION-TEST.md). Historical CURRENT-039/040/041 remain preserved. Prototype NOT BUILT; cold-start recovery NOT RUN; external destinations NOT VERIFIED.
