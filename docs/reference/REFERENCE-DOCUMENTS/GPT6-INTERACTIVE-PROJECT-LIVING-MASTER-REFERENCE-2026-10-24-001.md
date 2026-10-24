@@ -72,3 +72,9 @@
 - Verification method: fetched this exact repository path again after registration; file content and expected interaction identifiers were present. Related CURRENT-037, IN-027, OUT-027, EVT-0135 and master-reference identifiers were independently checked across the new files and both indexes.
 - Remaining boundary: this proves repository content/read-back and linked references only; it does not prove Buffer, Persistent Memory, Library, Dropbox or global automatic capture.
 - Canonical repository time is the actual last-change commit timestamp in UTC; the linked time-binding record will provide the final UTC and Tehran equivalents.
+
+
+## Latest canonical model mother / آخرین سند مادر اصلی مدل
+- The latest canonical HAIF initial-model master was independently fetched from the repository during this registration: [سند مرجع مادر مدل اولیه هوش مصنوعی HAIF](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md).
+- Stable ID: `HAIF-INITIAL-AI-MODEL-MASTER-REFERENCE-2026-10-21-001`; Production ID: `HAIF-IAM-MR-2026-10-21-001`; current version observed: `1.3.7`; status observed: `ACTIVE / LIVING / INITIAL DEVELOPMENT BASELINE`.
+- Its active continuation was CURRENT-036 and NEXT-036 at read time. This new CURRENT-037 adds the GPT-6 interactive product branch while preserving that model and its existing open tasks.
