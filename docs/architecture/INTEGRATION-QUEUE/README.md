@@ -1639,3 +1639,12 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - Next: [NEXT-039 — build interactive prototype](../../0.0/anchors/PALANG-0.0-NEXT-20261024-039-BUILD-INTERACTIVE-PROTOTYPE.md).
 - Open: prototype NOT BUILT; cold-start recovery NOT RUN; docs/REFERENCE_INDEX.md prior 404 OPEN; external destinations NOT VERIFIED.
 - Reference: [Point 0.0](../../0.0/anchors/GPT6-INTERACTIVE-PROJECT-POINT-0.0-CHECKPOINT-2026-10-24-001.md); [EVT-0139](../BEHAVIOR-TRACE/EVT-0139-GPT6-POINT-0.0-CHECKPOINT-CREATION-2026-10-24.md).
+
+
+## EVT-0151 — excavation finding and recovery-gate correction — 2026-10-24
+
+- [EVT-0151](../BEHAVIOR-TRACE/EVT-0151-REPOSITORY-EXCAVATION-LIVING-STATE-RECONCILIATION-2026-10-24.md) records the repository excavation.
+- Finding: NEXT-044's original acceptance criteria lagged behind the current chain (CURRENT-050 / NPFAP v1.1.4).
+- Correction: [NEXT-044](../../0.0/anchors/PALANG-0.0-NEXT-20261024-044-EXTRACTABLE-RAHM-CHILD-AND-COLD-START-TEST.md) was updated additively; historical CURRENT-047 lineage is preserved.
+- Current next action remains export a verifiable package and perform independent fresh-context recovery. This gate is OPEN / NOT RUN.
+- Issue #20 runtime capture/cold-start and Issue #21 historic source census remain separate open workstreams. Dropbox remains OPEN / WAITING and is not this task's target.
