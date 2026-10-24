@@ -2,7 +2,7 @@
 - Stable ID: G6IP-RAHM-IN-040-20261024
 - Production ID: G6IP-IN-040
 - Version: 1.0.0
-- Status: REGISTERED; read-back pending
+- Status: REGISTERED / READ-BACK VERIFIED
 - Parent: [CURRENT-047](./PALANG-0.0-CURRENT-20261024-047-BEHAVIOR-HUNTER-LIVING-ANCHOR.md)
 
 ## User intent captured
