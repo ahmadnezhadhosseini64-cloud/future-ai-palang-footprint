@@ -3,7 +3,7 @@
 - Stable ID: `G6IP-RAHM-OUT-045-20261024`
 - Production ID: `G6IP-OUT-045`
 - Version: 1.0.0
-- Status: REGISTERED; read-back pending.
+- Status: REGISTERED / READ-BACK VERIFIED; file fetched after write and IDs/links matched.
 - Input: [IN-046](./PALANG-0.0-IN-20261024-046-USER-POINT-0-PORTABLE-RAHM.md)
 - User Point 0: [G6IP-RAHM-USER-POINT-0-20261024-002](./GPT6-RAHM-USER-POINT-0-20261024-002.md)
 - Event: [EVT-0153](../../architecture/BEHAVIOR-TRACE/EVT-0153-USER-POINT-0-PORTABLE-RAHM-HARD-AUDIT-2026-10-24.md)
@@ -24,3 +24,5 @@ This interaction is anchored as a new Point 0 without overwriting CURRENT-052. C
 
 ## Evidence boundary
 Repository source inspection is complete for CURRENT-050/051/052, NEXT-044, the RAHM package specification, living mother, index and queue. Export/recovery and second-host success are not claimed.
+
+- Hard-audit event: [EVT-0154](../../architecture/BEHAVIOR-TRACE/EVT-0154-LIVING-ARCHITECTURE-HARD-AUDIT-RUN-2026-10-24.md)
