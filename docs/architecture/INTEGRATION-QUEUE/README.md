@@ -1489,3 +1489,8 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - Next: [NEXT-032](../../0.0/anchors/PALANG-0.0-NEXT-20261024-032-FRESH-SESSION-AND-DEEP-RECONCILIATION.md).
 - Previous baseline run 40060077581 verified pair 031 only; pair 032 requires a new CI run and artifact read-back. Do not inherit the prior PASS for the new pair.
 - Open: fresh-session recovery NOT RUN; Issues #19/#20/#21 OPEN; host-wide capture/external persistence NOT PROVEN.
+
+
+## Pair-032 correction and re-verification
+- First Behavior Hunter run [40060387719](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40060387719) failed at IN recovery because IN-032 lacked the direct OUT-032 reference; 65 unit tests passed before recovery failed.
+- Corrective link is being added. Re-run both directions and inspect artifacts before closing this gate. Preserve the failed run.

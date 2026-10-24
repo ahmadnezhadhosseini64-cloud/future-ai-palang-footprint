@@ -654,3 +654,8 @@ Current active gate remains [EVT-0122](../../architecture/BEHAVIOR-TRACE/EVT-012
 - Latest verified baseline before pair 032: Behavior Hunter run 40060077581, tested SHA `15bf46b3debe4131c6eb8c210ec0c334f76b449c`, artifact 12546492804; both directions recovered pair 031 and the append-only ledger passed with 3 records. Artifact SHA-256: `46f665b20cecda5229824194fbd83e040d734db279052376d650ffc047e92ed2`.
 - Pair 032 was added after that run; CI recovery of pair 032 remains pending until a newer run and artifact are inspected.
 - Architecture updates remain append-only and owner-gated. Fresh-session recovery NOT RUN; Issues #19/#20/#21 OPEN; host-wide capture and external persistence NOT PROVEN.
+
+
+## Pair-032 verification status — EVT-0130
+- First run 40060387719 failed after 65 unit tests passed because IN-032 lacked a direct reciprocal link to OUT-032. The resolver correctly blocked recovery; failure preserved in EVT-0130.
+- The link is being repaired. Pair 032 is registered and read-back verified, but CI recovery remains pending until a new run and both manifests are inspected.

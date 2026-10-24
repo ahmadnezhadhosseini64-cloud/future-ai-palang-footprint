@@ -918,3 +918,7 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - [IN-032](0.0/anchors/PALANG-0.0-IN-20261024-032-LIVING-STATUS-AND-ARCHITECTURE-GROWTH.md) / [OUT-032](0.0/anchors/PALANG-0.0-OUT-20261024-032-LIVING-STATUS-AND-ARCHITECTURE-GROWTH.md)
 - [NEXT-032](0.0/anchors/PALANG-0.0-NEXT-20261024-032-FRESH-SESSION-AND-DEEP-RECONCILIATION.md)
 - Status: registered in this atomic update; pair-032 CI recovery and artifact read-back pending. Prior versions preserved.
+
+
+## Pair-032 status correction
+- First recovery run 40060387719 failed because IN-032 omitted its reciprocal OUT-032 link. The fail-closed behavior is correct; repair and rerun are in progress. Do not transfer the prior pair-031 PASS to pair 032.

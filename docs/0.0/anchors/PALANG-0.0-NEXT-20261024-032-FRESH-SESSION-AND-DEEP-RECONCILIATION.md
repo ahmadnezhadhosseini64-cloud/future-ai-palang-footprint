@@ -21,3 +21,7 @@
 
 ## Completion conditions
 Pair 032 is recovered from both directions on the exact tested SHA; all canonical references point to the current pair; artifact manifests are downloaded and inspected; separate fresh-session recovery has its own first-response evidence; and all remaining gaps are explicitly preserved.
+
+
+## Immediate corrective action — pair-032 reciprocal link
+The first run failed because IN-032 lacked a direct OUT-032 link. This defect is recorded in EVT-0130. The next CI run must prove reciprocal identity and recover pair 032 from both directions. The failed run must remain preserved.

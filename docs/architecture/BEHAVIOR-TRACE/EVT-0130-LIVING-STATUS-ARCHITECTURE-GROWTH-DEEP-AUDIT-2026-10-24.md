@@ -4,7 +4,7 @@
 - Stable ID: PALANG-LIVING-STATUS-ARCHITECTURE-GROWTH-DEEP-AUDIT-2026-10-24-001
 - Production ID: LSA-GROWTH-HAIF-2026-10-24-001
 - Version: 1.0.0
-- Status: ACTIVE / LIVING / REGISTERED / CI-VERIFICATION-PENDING-FOR-PAIR-032
+- Status: ACTIVE / LIVING / REGISTERED / RECOVERY-REPAIR-IN-PROGRESS / CI-VERIFICATION-PENDING
 - Interaction pair: [IN-032](../../0.0/anchors/PALANG-0.0-IN-20261024-032-LIVING-STATUS-AND-ARCHITECTURE-GROWTH.md) / [OUT-032](../../0.0/anchors/PALANG-0.0-OUT-20261024-032-LIVING-STATUS-AND-ARCHITECTURE-GROWTH.md)
 - Previous event: [EVT-0129](./EVT-0129-LIVING-REGISTRATION-ARCHITECTURE-GROWTH-AND-RECOVERY-REPAIR-2026-10-24.md)
 - Previous checkpoint: [NEXT-031](../../0.0/anchors/PALANG-0.0-NEXT-20261024-031-LATEST-PAIR-RECOVERY-AND-STATUS-TRANSPARENCY.md)
@@ -39,3 +39,9 @@ The architecture update gate validates proposals; the append-only hash-linked le
 - Pair 032 registration: committed atomically with event/checkpoint/index updates in the same commit; independent read-back and CI recovery are the next verification gate.
 - Fresh-session recovery: NOT RUN.
 - External persistence and host-wide capture: NOT PROVEN.
+
+
+## First pair-032 CI failure and corrective action
+- Behavior Hunter run [40060387719](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40060387719) failed on commit `53939bd0b1d07fc41814d4d118107fecc731100b` after all 65 unit tests passed; the first recovery command exited non-zero and the later steps were skipped.
+- Read-back of the exact tested commit identified the cause: IN-032 did not contain a direct reciprocal link to OUT-032. The fail-closed resolver correctly refused to report RECOVERED. This is a genuine registration defect, not a test flake; it remains part of the audit history.
+- Repair: add an explicit `Paired output: OUT-032` link to IN-032, then rerun both recovery directions and inspect the resulting artifact. Do not mark pair 032 CI-verified until that run succeeds.
