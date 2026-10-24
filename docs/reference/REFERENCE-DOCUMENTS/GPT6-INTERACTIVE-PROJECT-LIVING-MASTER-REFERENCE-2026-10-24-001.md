@@ -146,7 +146,7 @@
 
 - Point 0.0 timestamp ledger: [TIME-BINDING-GPT6-POINT-0.0-2026-10-24-001](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-GPT6-POINT-0.0-2026-10-24-001.md), recording real Git commit times UTC-first with Tehran equivalents.
 - Current verified checkpoint: CURRENT-040 → Point 0.0 → inherited architecture master v1.0.3 → NEXT-039.
-\n\n## Latest architecture-zero update — v1.3.5\nArchitecture-zero anchor G6IP-ARCH-ZERO-20261024-001 is now the extractable recovery root for this GPT-6 branch. The governing inherited architecture master is v1.0.4. Prototype NOT BUILT; cold-start recovery NOT RUN; external destinations NOT VERIFIED.\n
+\n\n## Latest architecture-zero update — v1.3.6\nArchitecture-zero anchor G6IP-ARCH-ZERO-20261024-001 is now the extractable recovery root for this GPT-6 branch. The governing inherited architecture master is v1.0.4. Prototype NOT BUILT; cold-start recovery NOT RUN; external destinations NOT VERIFIED.\n
 
 ## Latest architecture-zero interaction — INT-20261024-032
 - Input: [IN-032](../../0.0/anchors/PALANG-0.0-IN-20261024-032-REGISTER-ARCHITECTURE-ZERO.md).
@@ -155,3 +155,11 @@
 - Architecture zero: [G6IP-ARCH-ZERO-20261024-001](../../0.0/anchors/PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md).
 - Current recovery anchor: [CURRENT-040](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-040-GPT6-POINT-0.0-RECOVERY-CHECKPOINT.md).
 - Governing architecture master: v1.0.4. This is a repository-level registration; prototype remains NOT BUILT and cold-start recovery NOT RUN.
+
+
+## Latest living 0.0 node — foundational architecture mother / CURRENT-041
+- Foundational mother: [NPFAP-20261024-001](./NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md), version 1.0.1.
+- Current independent checkpoint: [CURRENT-041](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-041-FOUNDATIONAL-ARCHITECTURE-MOTHER-ACTIVATION.md), parent [CURRENT-040](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-040-GPT6-POINT-0.0-RECOVERY-CHECKPOINT.md).
+- Interaction: [IN-033](../../0.0/anchors/PALANG-0.0-IN-20261024-033-ACTIVATE-FOUNDATIONAL-ARCHITECTURE-MOTHER.md) ↔ [OUT-033](../../0.0/anchors/PALANG-0.0-OUT-20261024-033-ACTIVATE-FOUNDATIONAL-ARCHITECTURE-MOTHER.md); event [EVT-0141](../../architecture/BEHAVIOR-TRACE/EVT-0141-FOUNDATIONAL-ARCHITECTURE-MOTHER-ACTIVATION-2026-10-24.md).
+- This node is additive: CURRENT-039, CURRENT-040, architecture zero and earlier 0.0 anchors remain preserved.
+- Status boundary: repository registration/read-back is to be reconciled after all writes; fresh-project adoption and cold-start recovery remain NOT RUN; external destinations NOT VERIFIED.
