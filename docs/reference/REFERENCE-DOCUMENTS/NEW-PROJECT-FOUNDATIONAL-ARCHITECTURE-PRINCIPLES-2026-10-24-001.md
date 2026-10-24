@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001`
 - Production ID / شناسهٔ تولید: `NPFAP-20261024-001`
-- Version / نسخه: 1.1.2
+- Version / نسخه: 1.1.3
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING / EVOLVABLE / EXTRACTABLE / RECOVERY-ORIENTED
 - Scope / دامنه: الگوی پایه برای هر پروژهٔ جدید در خانوادهٔ Future AI / Palang Footprint / HAIF و شاخه‌های محصول/میزبان آن؛ با سازگارسازی مستند برای پروژه‌های دیگر
 - Source anchor / منشأ: [G6IP-ARCH-ZERO-20261024-001](../../0.0/anchors/PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md)
@@ -396,4 +396,17 @@ The current chain is CURRENT-048 → IN-042 → OUT-041 → EVT-0149 → CURRENT
 
 ### Evidence and recovery boundary / مرز شواهد و بازیابی
 Writing a file, reading it back, validating a rule, integrating it, exporting a package, and recovering it in a fresh context are separate gates. The new interaction records and mother/index must be fetched and matched before claiming a fully verified chain. NEXT-044 remains OPEN / NOT RUN until a verifiable export is imported in a fresh host/context and recovered identifiers, links, versions, and open gaps match repository state. The second project's canonical repository is still unidentified; live two-project integration is not claimed.
+
+
+
+## Living Mother Update — CURRENT-049 read-back pass — 2026-10-24
+
+- **Additive version / نسخهٔ افزایشی:** 1.1.3
+- **Current checkpoint:** [CURRENT-049](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-049-LIVE-STATUS-AND-OUTPUT-CONTINUITY.md)
+- **Interaction chain:** [IN-042](../../0.0/anchors/PALANG-0.0-IN-20261024-042-LIVE-STATUS-AND-OUTPUT-CONTINUITY.md) → [OUT-041](../../0.0/anchors/PALANG-0.0-OUT-20261024-041-LIVE-STATUS-AND-OUTPUT-CONTINUITY.md) → [EVT-0149](../../architecture/BEHAVIOR-TRACE/EVT-0149-LIVE-STATUS-AND-OUTPUT-CONTINUITY-2026-10-24.md) → CURRENT-049 → this mother/index → [NEXT-044](../../0.0/anchors/PALANG-0.0-NEXT-20261024-044-EXTRACTABLE-RAHM-CHILD-AND-COLD-START-TEST.md).
+- **Read-back status:** exact paths for IN-042, OUT-041, EVT-0149, CURRENT-049, NEXT-044, this mother, and the reference index were fetched after the corresponding writes; expected IDs and principal cross-links were found.
+- **Still open:** NEXT-044 export and fresh-context recovery are not run; second-project repository remains unidentified; always-on search/background automation is not verified.
+
+### No false promotion / منع ارتقای بدون مدرک
+The read-back pass proves repository retrieval and presence of expected identifiers/links only. It does not prove the export package exists, a fresh host can reconstruct the architecture, the second project is connected, or a continuous background engine is running. Keep those states open until separately tested.
 
