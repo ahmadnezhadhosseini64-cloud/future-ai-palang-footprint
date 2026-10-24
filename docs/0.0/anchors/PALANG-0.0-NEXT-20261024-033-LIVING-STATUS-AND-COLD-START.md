@@ -37,3 +37,10 @@ Fresh-session recovery NOT RUN; host-wide automatic capture and external persist
 - SUCCESS on tested SHA `2634f15abf79cd546d2ebea2e152a3f0871dd1fb`; artifact 12548065100 inspected, ZIP SHA-256 `38047c11733e086471a542c6ee346eae3feb75e37d8cee8a767ecb9f31b37318`.
 - Both recovery directions recovered IN-033/OUT-033, EVT-0131 and NEXT-033 with zero failures. 71 unit tests passed; ledger PASS; proposal gate remains owner-gated.
 - Next: independent, uncoached fresh-session recovery; then continue source-backed historical semantic reconciliation and real-document/runtime acceptance. Fresh-session recovery remains NOT RUN; Issues #19/#20/#21 OPEN.
+
+
+## Repository gate closed; fresh-session gate remains open
+- Run [40061468626](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40061468626) passed 71 tests on tested SHA `cc1f61f18a364c896b251735ccb643e552d40fe2`; artifact `12547860733` was downloaded and inspected.
+- Both directions recovered INT-20261024-033 with zero failures; the append-only ledger validated 4 records and its hash chain; terminal receipt reports SUCCESS.
+- Next: perform the uncoached fresh-session recovery from the registered handoff prompt; record the first response before giving corrective context. Then continue source-backed semantic identity adjudication and the one timestamp ambiguity review.
+- Current main may contain later automation evidence commits; the tested SHA is explicitly the one above, not an assumed alias for all later commits.
