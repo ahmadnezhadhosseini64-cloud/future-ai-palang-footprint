@@ -39,3 +39,10 @@ Resume from NEXT-047, but execute NEXT-044 first because it is the existing acti
 
 ## Read-back status
 - This section will be replaced with the fetched write/read-back evidence after verification.
+
+- Living mother extension: [NPFAP Addendum — CURRENT-053](../../reference/REFERENCE-DOCUMENTS/NPFAP-ADDENDUM-CURRENT-053-2026-10-24.md)
+
+## Repository read-back status
+- New Point 0, IN-046, OUT-045, EVT-0153, CURRENT-053, NEXT-047, and the NPFAP addendum have been created in the repository.
+- Independent fetch/read-back and cross-file reconciliation are still required before marking this chain READ-BACK VERIFIED.
+- Export, schema, recovery, host transfer, persistence, background execution and full graph audit remain OPEN / NOT RUN.
