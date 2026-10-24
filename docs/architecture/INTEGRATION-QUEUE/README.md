@@ -1648,3 +1648,12 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - Correction: [NEXT-044](../../0.0/anchors/PALANG-0.0-NEXT-20261024-044-EXTRACTABLE-RAHM-CHILD-AND-COLD-START-TEST.md) was updated additively; historical CURRENT-047 lineage is preserved.
 - Current next action remains export a verifiable package and perform independent fresh-context recovery. This gate is OPEN / NOT RUN.
 - Issue #20 runtime capture/cold-start and Issue #21 historic source census remain separate open workstreams. Dropbox remains OPEN / WAITING and is not this task's target.
+
+
+## CURRENT-051 / EVT-0151 — repository excavation and living-state reconciliation — 2026-10-24
+- Current checkpoint: [CURRENT-051](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-051-REPOSITORY-EXCAVATION-REVIVAL.md).
+- Input/output: [IN-044](../../0.0/anchors/PALANG-0.0-IN-20261024-044-REPOSITORY-EXCAVATION-AND-REVIVAL.md) / [OUT-043](../../0.0/anchors/PALANG-0.0-OUT-20261024-044-REPOSITORY-EXCAVATION-AND-REVIVAL.md).
+- Event: [EVT-0151](../BEHAVIOR-TRACE/EVT-0151-REPOSITORY-EXCAVATION-LIVING-STATE-RECONCILIATION-2026-10-24.md); mother [NPFAP v1.1.6](../../reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md).
+- NEXT-044 was corrected additively to target the CURRENT-050 chain; the old CURRENT-047 target remains preserved as historical context.
+- Next execution: export a verifiable package and perform fresh-context reconstruction with negative cases. Status OPEN / NOT RUN; do not claim success before evidence.
+- Dropbox remains OPEN / WAITING and is not the current target. Issue #20 runtime recovery and Issue #21 historical source census remain distinct open workstreams.
