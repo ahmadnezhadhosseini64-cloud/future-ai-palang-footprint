@@ -4,7 +4,7 @@
 - Production ID: `G6IP-CURRENT-043`
 - Version: 1.0.0
 - Role: Independent Point 0.0 / recovery checkpoint
-- Status: REGISTERED / ACTIVE / LIVING / EVOLVABLE / RECOVERABLE; read-back pending.
+- Status: REGISTERED / ACTIVE / LIVING / EVOLVABLE / RECOVERABLE; final cross-file read-back pending.
 - Parent: [CURRENT-042](./PALANG-0.0-CURRENT-20261024-042-NEW-PROJECT-ARCHITECTURE-HARD-AUDIT.md)
 - Input: [IN-035](./PALANG-0.0-IN-20261024-035-COMPLETE-FOUNDATIONAL-PRINCIPLES.md)
 - Output: [OUT-035](./PALANG-0.0-OUT-20261024-035-COMPLETE-FOUNDATIONAL-PRINCIPLES.md)
@@ -31,3 +31,7 @@ The foundational principles were expanded to v1.0.2 with an explicit completenes
 ## Inherited hard rules
 
 Preserve every prior checkpoint. UTC repository commit time is canonical; derive Tehran time from the same commit instant. Message time remains separate. Use WRITE → READ-BACK → MATCH → VERIFY → RECONCILE → STATUS. Each claim needs evidence or an explicit unknown/not-run status. Do not repeat closed tests without a valid trigger.
+
+
+## Version and cross-link reconciliation — CURRENT-043
+The foundational mother is v1.0.2. The GPT-6 living master is updated to v1.3.7 and now names CURRENT-043 / IN-035 / OUT-035 / EVT-0143 / NEXT-041. The inherited mother links CURRENT-043 and NEXT-041. Reference Index and 0.0 registry entries have been updated to the v1.0.2 lineage. Exact post-write read-back is the remaining gate; no runtime/adoption/recovery PASS is claimed.
