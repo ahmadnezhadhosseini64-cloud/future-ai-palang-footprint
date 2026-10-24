@@ -1028,7 +1028,7 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 
 
 ## Hard audit of the new GPT-6 project architecture — CURRENT-042
-| NPHA-20261024-001 | `reference/REFERENCE-DOCUMENTS/NEW-PROJECT-ARCHITECTURE-HARD-AUDIT-2026-10-24-001.md` | سند مادر چکش سخت معماری جدید؛ اختلاف نسخه/لنگر، پذیرش اصول، پیاده‌سازی و بازیابی | v1.0.1; REGISTERED / READ-BACK VERIFIED / ACTIVE / LIVING; prototype NOT BUILT; cold-start NOT RUN |
+| NPHA-20261024-001 | `reference/REFERENCE-DOCUMENTS/NEW-PROJECT-ARCHITECTURE-HARD-AUDIT-2026-10-24-001.md` | سند مادر چکش سخت معماری جدید؛ اختلاف نسخه/لنگر، پذیرش اصول، پیاده‌سازی و بازیابی | v1.0.3; REGISTERED / READ-BACK VERIFIED / ACTIVE / LIVING; prototype NOT BUILT; cold-start NOT RUN |
 | G6IP-CURRENT-042 | `0.0/anchors/PALANG-0.0-CURRENT-20261024-042-NEW-PROJECT-ARCHITECTURE-HARD-AUDIT.md` | نقطهٔ جاری ممیزی سخت معماری و مسیر بازیابی | ACTIVE / LIVING / EVOLVABLE; see EVT-0142 and NEXT-040 |
 | G6IP-EVT-0142 | `architecture/BEHAVIOR-TRACE/EVT-0142-NEW-PROJECT-ARCHITECTURE-HARD-AUDIT-2026-10-24.md` | شواهد یافته‌ها و اصلاحات ممیزی سخت | READ-BACK VERIFIED / IDENTIFIERS MATCHED; external destinations remain NOT VERIFIED |
 | G6IP-NEXT-040 | `0.0/anchors/PALANG-0.0-NEXT-20261024-040-FRESH-PROJECT-ADOPTION-TEST.md` | آزمون پذیرش اصول بنیادین روی پروژهٔ تازه | OPEN / NOT RUN |
