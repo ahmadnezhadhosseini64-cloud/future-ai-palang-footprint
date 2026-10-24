@@ -106,3 +106,10 @@ Complete and read back the IN/OUT pair and all canonical graph edges; run the cu
 - Terminal receipt mechanism is ACTIVE in the Behavior Hunter workflow. It records terminal job state even when prior steps fail. User-facing assistant messages remain necessary; this repository feature cannot display a ChatGPT UI heartbeat by itself.
 - Repository CI PASS is pinned to tested SHA `cc1f61f18a364c896b251735ccb643e552d40fe2`; the run's manifests were inspected. Subsequent commits changed documentation and the interaction dataset; the exact current HEAD still needs its own final run/read-back.
 - Next active gate: separate uncoached fresh-session recovery; this cannot be honestly marked PASS from within this same conversation. Historic collision adjudication and the single timestamp ambiguity remain open.
+
+
+## Reverification on the latest canonical branch — run 40061688861
+- [Run 40061688861](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40061688861): SUCCESS on tested SHA `ee0f3c24431acd0f9be053fc6299301f0217d95b`; all steps succeeded.
+- Artifact `12547334125` downloaded and inspected; ZIP SHA-256 `8278751f31a44e7fbd377a49aa64f688d080d87a7856ac000c00149dce891670`.
+- Both recovery directions RECOVERED IN-033/OUT-033 → EVT-0131/NEXT-033 with zero failures. Candidate tests: 2 CANDIDATE_READY, zero parse errors. Ledger PASS: 4 hash-linked records, zero errors. Proposal gate READY_FOR_OWNER_REVIEW, owner decision PENDING, no canonical mutation/promotion. Terminal receipt SUCCESS, terminal=true, tested SHA matches.
+- Fresh-session recovery remains NOT RUN; host-wide capture and external persistence remain NOT PROVEN; Issues #19/#20/#21 remain OPEN.
