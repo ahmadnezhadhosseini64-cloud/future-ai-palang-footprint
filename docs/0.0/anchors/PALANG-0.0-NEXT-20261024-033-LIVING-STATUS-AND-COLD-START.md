@@ -4,7 +4,7 @@
 - Stable ID: PALANG-0.0-NEXT-20261024-033-LIVING-STATUS-AND-COLD-START
 - Production ID: NEXT-033
 - Version: 1.0.0
-- Status: ACTIVE / LIVING / IMPLEMENTATION-IN-PROGRESS / CI-VERIFICATION-PENDING
+- Status: ACTIVE / LIVING / REPOSITORY-CI-PASS / FRESH-SESSION-OPEN
 - Current pair: [IN-033](./PALANG-0.0-IN-20261024-033-LIVING-ARCHITECTURE-AND-STATUS-TRANSPARENCY.md) / [OUT-033](./PALANG-0.0-OUT-20261024-033-LIVING-ARCHITECTURE-AND-STATUS-TRANSPARENCY.md)
 - Current event: [EVT-0131](../../architecture/BEHAVIOR-TRACE/EVT-0131-LIVING-ARCHITECTURE-STATUS-TRANSPARENCY-AND-GROWTH-2026-10-24.md)
 - Prior checkpoint: [NEXT-032](./PALANG-0.0-NEXT-20261024-032-FRESH-SESSION-AND-DEEP-RECONCILIATION.md)
@@ -31,3 +31,9 @@ Fresh-session recovery NOT RUN; host-wide automatic capture and external persist
 - Prior run failures are preserved in [EVT-0131](../../architecture/BEHAVIOR-TRACE/EVT-0131-LIVING-ARCHITECTURE-STATUS-TRANSPARENCY-AND-GROWTH-2026-10-24.md); the status-receipt artifact proved that a terminal FAILURE can still be recorded and uploaded.
 - Current recovery parser correction is committed. Next gate: require both recovery directions to return RECOVERED for INT-20261024-033, run the ledger and proposal gate, inspect the status-receipt and all manifests, then reconcile current main versus tested SHA.
 - Do not skip to fresh-session testing until repository recovery is green. Fresh-session recovery remains a separate subsequent test.
+
+
+## CI verification — run 40061440975
+- SUCCESS on tested SHA `2634f15abf79cd546d2ebea2e152a3f0871dd1fb`; artifact 12548065100 inspected, ZIP SHA-256 `38047c11733e086471a542c6ee346eae3feb75e37d8cee8a767ecb9f31b37318`.
+- Both recovery directions recovered IN-033/OUT-033, EVT-0131 and NEXT-033 with zero failures. 71 unit tests passed; ledger PASS; proposal gate remains owner-gated.
+- Next: independent, uncoached fresh-session recovery; then continue source-backed historical semantic reconciliation and real-document/runtime acceptance. Fresh-session recovery remains NOT RUN; Issues #19/#20/#21 OPEN.
