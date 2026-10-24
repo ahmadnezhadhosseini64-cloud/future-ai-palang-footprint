@@ -176,3 +176,15 @@ The five canonical documents below were independently fetched in full from main 
 - Current interaction/event: IN-024 / OUT-024 / EVT-0113.
 - Next action: continue source-authority comparison against the first 14 named sources and capture exact test run IDs/tested SHAs before promoting any rule from provisional to validated.
 - Census state: 19 named full-source fetches cumulatively; this is not a full repository-tree/history enumeration. Issue #21 remains OPEN.
+
+
+## Source-clause census batch 3 — SCRTC-B3-2026-10-24-001
+
+The following five source artifacts were fetched in full from canonical main and their blob SHAs and character counts were recorded in [SOURCE-CLAUSE-CROSSWALK-BATCH-3](SOURCE-CLAUSE-CROSSWALK-BATCH-3-2026-10-24-001.md):
+- EXC-REG-GATE-2026-09-02-001 — excavation findings must terminate as REGISTERED or same-ID/provenance PENDING/RECOVERY with blocker and next transition.
+- AUTO-FINAL-REG-ORCH-2026-08-30-001 — idempotent lifecycle and first-unresolved-gate resume; implementation remains distinct from design.
+- THREE-LEVEL-GOVERNED-REGISTRATION-COMMAND-2026-10-06-001 — “ثبت کن” invokes full reference documentation, three independent destination states and evidence gates.
+- EVERY-INPUT-OUTPUT-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001 — per-input/output identity, provenance, timing and recovery pointers.
+- EVERY-INTERACTION-ANCHOR-AND-COMPLETE-REGISTRATION-GOVERNANCE-2026-10-20-001 — complete input/output pairing, no false claims, and append-only graph continuity.
+
+Batch 3 advances clause-level mapping only. It does not complete the historic repository/history census or runtime/cold-start acceptance; Issue #21 and Issue #20 remain OPEN.

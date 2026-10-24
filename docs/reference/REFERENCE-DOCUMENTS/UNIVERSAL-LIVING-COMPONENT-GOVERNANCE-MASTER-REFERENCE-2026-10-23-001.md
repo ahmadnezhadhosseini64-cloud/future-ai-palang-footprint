@@ -2,7 +2,7 @@
 
 - Stable ID: PALANG-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-2026-10-23-001
 - Production ID: ULCG-HAIF-2026-10-23-001
-- Version: 1.2.4
+- Version: 1.2.5
 - Lifecycle: ACTIVE / LIVING / APPEND-ONLY / EVOLVABLE
 - Evidence state: REGISTERED / READ-BACK VERIFIED on main for v1.2.1; fresh full audit on the exact final main HEAD remains OPEN
 - Canonical clock: actual repository commit timestamp in UTC; Tehran equivalent is the same instant +03:30
@@ -348,3 +348,33 @@ When the user explicitly designates a current point 0, register it as a distinct
 
 - v1.2.3: status visibility and resumable execution.
 - v1.2.4: explicit current point 0, successor 0.0, paired IN/OUT anchors, and preservation of all previously open tracks.
+
+
+---
+
+## Addendum v1.2.5 — source-clause crosswalk batch 3
+
+- Stable ID: PALANG-ULCG-SOURCE-CROSSWALK-B3-2026-10-24-001
+- Production ID: ULCG-SCRTC-B3-2026-10-24-001
+- Current point 0: [CURRENT-036](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-036-USER-REQUEST-AND-LIVING-REGISTRATION.md)
+- Next 0.0: [NEXT-036](../../0.0/anchors/PALANG-0.0-NEXT-20261024-036-HISTORIC-SOURCE-CENSUS-AND-COLD-START.md)
+- Source crosswalk: [SCRTC-B3](../../architecture/ARCHITECTURE-LESSONS/SOURCE-CLAUSE-CROSSWALK-BATCH-3-2026-10-24-001.md)
+
+Five canonical source families were fully fetched and clause-mapped in batch 3: Excavation-to-Registration Gate, Automatic Final Registration Orchestrator, Three-Level Governed Registration Command, Every Input/Output Anchor Governance, and Every Interaction Anchor Governance. The source blob SHAs and character counts are preserved in the crosswalk.
+
+### Newly reinforced architecture rules
+
+1. An excavation finding cannot close as finding-only: REGISTERED or same-ID/provenance PENDING/RECOVERY with blocker and next transition is mandatory.
+2. Orchestration must be idempotent and resumable from the first unresolved gate; workflow definitions alone do not prove universal runtime capture.
+3. “ثبت کن” expands to complete registration, reference document, IDs, lineage, write/read-back/match/verify and destination-specific status; one destination does not prove another.
+4. Every material IN/OUT has independent identity and links, while message time, operation time and repository commit time remain separate.
+5. Every interaction's visible output, blockers, evidence and next action must be linked to the same resumable graph; no false completion and no claim of hidden background work.
+
+### Evidence boundary
+
+SCRTC-B3 is a source-backed partial mapping. Full tree/history census and conflict adjudication remain OPEN under Issue #21. Runtime orchestration, host-wide capture, cold-start recovery and destination-specific persistence remain OPEN under Issue #20 and the relevant destination gates.
+
+### Version history
+
+- v1.2.4: CURRENT-036 / NEXT-036 explicit current point and resumable 0.0.
+- v1.2.5: Five-source clause crosswalk batch 3 connected to the master and audit graph.

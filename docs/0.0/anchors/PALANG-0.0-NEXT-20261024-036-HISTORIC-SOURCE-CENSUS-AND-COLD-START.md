@@ -7,13 +7,15 @@
 - Parent current point: [CURRENT-036](PALANG-0.0-CURRENT-20261024-036-USER-REQUEST-AND-LIVING-REGISTRATION.md)
 - Interaction anchors: [IN-026](PALANG-0.0-IN-20261024-026-REGISTER-CURRENT-POINT-0.md) / [OUT-026](PALANG-0.0-OUT-20261024-026-REGISTER-CURRENT-POINT-0.md)
 - Event / lesson: [EVT-0134](../../architecture/BEHAVIOR-TRACE/EVT-0134-CURRENT-POINT-ZERO-AND-LIVING-REGISTRATION-2026-10-24.md) / [LAL-20261024-013](../../architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261024-013-CURRENT-POINT-ZERO-AND-LIVING-REGISTRATION.md)
-- Governing master: ULCG v1.2.4
+- Governing master: ULCG v1.2.5
 - Read-back evidence: [VERIFICATION-CHECKPOINT-INT-20261024-026](../../architecture/BEHAVIOR-TRACE/VERIFICATION-CHECKPOINT-INT-20261024-026.md)
 - Time binding: [TIME-BINDING-INT-20261024-026](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261024-026.md)
 
 ## Why this is the next 0.0
 
 This checkpoint continues the active execution chain. It does not reset or replace NEXT-022 (historic graph excavation), NEXT-025 (source-rule/test crosswalk and cold start), or NEXT-035 (live mirror recheck). It joins those strands under a single resumable queue while preserving each strand's own evidence and acceptance boundary.
+
+- Source-clause crosswalk batch 3: [SCRTC-B3-2026-10-24-001](../../architecture/ARCHITECTURE-LESSONS/SOURCE-CLAUSE-CROSSWALK-BATCH-3-2026-10-24-001.md); five canonical sources were fetched and mapped. Mapping remains provisional and does not close Issue #21.
 
 ## Ordered execution queue
 

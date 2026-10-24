@@ -123,3 +123,13 @@ This remains provisional source mapping, not final authority adjudication. Exist
 |---|---|---|---|
 | ULCG v1.2.4 + EVT-0134 + LAL-20261024-013 | Current/next anchors, interaction trace, master, reference index, 0.0 registry, lesson/trace registries, queue, initial-model master, structural audit | Required IDs and links exist; IN/OUT reverse lookup; independent read-back; PR audit; final-main SHA audit | Registered on candidate branch; CI/read-back/merge pending; runtime/cold-start remains OPEN |
 | NEXT-022/NEXT-025/NEXT-035 + Issues #20/#21 | Historic source census, source-clause crosswalk, runtime behavior hunter, live mirror/BOART recovery | Full source inventory and clause adjudication; pair-schema and cold-start tests; destination-specific proof | OPEN; prior evidence preserved and not superseded |
+
+
+## Source-clause crosswalk batch 3 — SCRTC-B3-2026-10-24-001
+
+- Full crosswalk: [SOURCE-CLAUSE-CROSSWALK-BATCH-3](./SOURCE-CLAUSE-CROSSWALK-BATCH-3-2026-10-24-001.md).
+- Five sources: EXC-REG-GATE, AUTO-FINAL-REG, 3LR-GOVREG, EIO-ANCHOR, EI-ANCHOR; exact blob SHA and character count are included in the crosswalk.
+- New normalized rules: no finding-only closure; same-ID pending/recovery with blocker; idempotent resume; three destination states independently evidenced; IN/OUT time and identity separation; no false completion or silent-progress claims.
+- Components: source census/ledger, registration orchestrator, pending/recovery queue, interaction-pair graph, time-binding ledger, master/index/0.0 registries and CI.
+- Tests: current Living Architecture Audit includes static graph checks, structural links, historical 0.0 audit, timestamp inventory, semantic UTC/Tehran checks and durable adapter tests. These do not prove every live interaction is captured or external destinations recover.
+- Status: SOURCE-FETCHED / RULE-EXTRACTED / PROVISIONAL. Full census and conflict adjudication OPEN under Issue #21; runtime/cold-start OPEN under Issue #20.
