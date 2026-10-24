@@ -1625,8 +1625,17 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 
 
 ## GPT-6 inherited architecture master — live queue entry
-- Item: G6IP-IAM-20261024-001 — GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001, v1.0.1.
+- Item: G6IP-IAM-20261024-001 — GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001, v1.0.3.
 - Status: REGISTERED / READ-BACK VERIFIED / CONTENT PRESENT / IDENTIFIERS MATCHED.
-- Scope: HAIF layers, dual-track behavior governance, UTC-first evidence, Master–Child–Rahm promotion, modular evolution and recoverability are linked to GPT-6 point 0 and the living master.
-- Open gates: audit inherited source links; create point 0.0; build the interactive prototype; run cold-start recovery; fix/reconcile the known docs/REFERENCE_INDEX.md 404. External destinations remain NOT VERIFIED.
+- Scope: HAIF layers, dual-track behavior governance, UTC-first evidence, Master–Child–Rahm promotion, modular evolution and recoverability are linked to GPT-6 point 0, independent point 0.0, CURRENT-040 and the living master.
+- Open gates: build the interactive prototype; run cold-start recovery; fix/reconcile the known docs/REFERENCE_INDEX.md 404. External destinations remain NOT VERIFIED.
 - Reference: [Inherited architecture living master](../../reference/REFERENCE-DOCUMENTS/GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md).
+
+
+## GPT-6 Point 0.0 checkpoint — live queue entry
+- Item: G6IP-POINT-0.0-20261024-001 — independent recoverable checkpoint, linked to inherited architecture master v1.0.3.
+- Current anchor: [CURRENT-040](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-040-GPT6-POINT-0.0-RECOVERY-CHECKPOINT.md).
+- Status: checkpoint registered; final cross-file read-back reconciliation in progress.
+- Next: [NEXT-039 — build interactive prototype](../../0.0/anchors/PALANG-0.0-NEXT-20261024-039-BUILD-INTERACTIVE-PROTOTYPE.md).
+- Open: prototype NOT BUILT; cold-start recovery NOT RUN; docs/REFERENCE_INDEX.md prior 404 OPEN; external destinations NOT VERIFIED.
+- Reference: [Point 0.0](../../0.0/anchors/GPT6-INTERACTIVE-PROJECT-POINT-0.0-CHECKPOINT-2026-10-24-001.md); [EVT-0139](../BEHAVIOR-TRACE/EVT-0139-GPT6-POINT-0.0-CHECKPOINT-CREATION-2026-10-24.md).
