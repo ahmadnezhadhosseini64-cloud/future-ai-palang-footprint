@@ -135,3 +135,11 @@ Complete and read back the IN/OUT pair and all canonical graph edges; run the cu
 - The generator correctly treated unsupported invariants as candidate failures. The record was corrected to use the generator's supported executable invariants; additional architecture-level review targets were moved into a separate `audit_focus` field rather than falsely claiming the generator checks them.
 - Follow-up run [40061440975](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40061440975) passed all steps and 71 tests; later run 40061873837 repeated the pass with the durable receipt-linked documentation.
 - Preserve this failure as a design lesson: every automated invariant must either be implemented and tested by the validator or explicitly labeled as a review target, never treated as checked merely because it appears in a record.
+
+
+## Living graph drift detector — version 1.4.0
+- New read-only checker: `scripts/behavior-hunter/check_living_graph_drift.py`; tests: `tests/behavior-hunter/test_check_living_graph_drift.py`; CI step: `Detect drift across the living architecture graph`.
+- It checks both IN→OUT and OUT→IN recovery, current pair/event/NEXT IDs, six canonical graph nodes (master, queue, global index, 0.0 index, behavior-trace index, observatory), and a durable status receipt for the current event/pair.
+- On run [40062120276](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40062120276), 74 tests passed on tested SHA `e82839c679b52fb646824235db59092fd129148e`. The drift manifest returned PASS, checked six nodes, found zero failures, and found the durable receipt for EVT-0131 / INT-20261024-033. Artifact `12546884666`; ZIP SHA-256 `e45208b1bd2b63fa4e30fedcf27b9701532b8c85feee298ae18cbd6105c0d332`.
+- Architecture ledger version 1.4.0 appends this capability after 1.3.0 without rewriting history. Its validator result on the next run must confirm five hash-linked records before this new ledger row is called CI-verified.
+- The checker is read-only. It detects repository graph drift but does not auto-repair links, mutate MASTER, prove fresh-session recovery, or prove external persistence.
