@@ -1,0 +1,18 @@
+{
+  "package_id":"HAIF-RAHM-PORTABLE-20261024-001",
+  "version":"1.0.0",
+  "manifest_status":"INITIAL_DRAFT_DIGESTS_PENDING",
+  "created_from_checkpoint":"G6IP-RAHM-CURRENT-044-20261024",
+  "files":[
+    {"path":"docs/portable/RAHM/RAHM_BOOT.md","version":"1.0.0","sha256":null},
+    {"path":"docs/portable/RAHM/RAHM_ARCHITECTURE.md","version":"1.0.0","sha256":null},
+    {"path":"docs/portable/RAHM/HOST_CAPABILITY_MANIFEST.json","version":"1.0.0","sha256":null},
+    {"path":"docs/portable/RAHM/INTERACTION_PAIR_SCHEMA.json","version":"1.0.0","sha256":null},
+    {"path":"docs/portable/RAHM/EVIDENCE_LEDGER.md","version":"1.0.0","sha256":null},
+    {"path":"docs/portable/RAHM/CONFORMANCE_TESTS.md","version":"1.0.0","sha256":null},
+    {"path":"docs/portable/RAHM/RECOVERY_AND_ROLLBACK.md","version":"1.0.0","sha256":null}
+  ],
+  "dependencies":[],
+  "tests":{"specification_written":true,"execution_status":"NOT_RUN","persistent_memory":"NOT_VERIFIED","idle_background_execution":"NOT_VERIFIED","cross_host":"NOT_RUN"},
+  "note":"Draft until exact file digests are computed and read-back reconciled."
+}
