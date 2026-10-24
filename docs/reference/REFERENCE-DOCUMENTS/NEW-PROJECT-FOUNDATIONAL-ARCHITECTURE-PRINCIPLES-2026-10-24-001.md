@@ -436,3 +436,14 @@ When the user requests execution or registration, show an explicit state: workin
 - Always-on search, scheduled execution, notifications, and background automation: NOT VERIFIED.
 - Next step: read back and match IN-043, OUT-042, EVT-0150, CURRENT-050, this mother and index; then execute NEXT-044 with verifiable evidence.
 
+
+
+## Living Mother Update — Repository Excavation EVT-0151 — 2026-10-24
+
+- Additive version: **1.1.5** (prior v1.1.4 and all earlier versions preserved).
+- Excavation event: [EVT-0151](../../architecture/BEHAVIOR-TRACE/EVT-0151-REPOSITORY-EXCAVATION-LIVING-STATE-RECONCILIATION-2026-10-24.md).
+- Current checkpoint preserved: [CURRENT-050](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-050-NEW-PROJECT-ARCHITECTURE-STATUS.md).
+- Recovery gate corrected additively: [NEXT-044](../../0.0/anchors/PALANG-0.0-NEXT-20261024-044-EXTRACTABLE-RAHM-CHILD-AND-COLD-START-TEST.md) now names CURRENT-050 / IN-043 / OUT-042 / EVT-0150 / NPFAP v1.1.4 as current acceptance targets while preserving CURRENT-047 and its prior lineage as history.
+- Excavation finding: the prior NEXT-044 acceptance target was stale relative to the live chain. This has been recorded; the old chain was not deleted.
+- Status boundary: repository read-back and target reconciliation are distinct from export, fresh-host recovery, second-project integration, and always-on automation. Those remain OPEN / NOT RUN / NOT VERIFIED until independent evidence exists.
+- Dropbox remains a separate OPEN / WAITING branch and is not the current execution target.
