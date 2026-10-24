@@ -2,7 +2,7 @@
 
 - Stable ID: `G6IP-RAHM-CURRENT-058-20261024`
 - Production ID: `G6IP-CURRENT-058`
-- Version: 1.0.1
+- Version: 1.0.2
 - Status: REGISTERED; read-back gate pending; post-edit audit/digest runs pending; real-host gates OPEN.
 - Parent current: [CURRENT-057](./PALANG-0.0-CURRENT-20261024-057-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md)
 - Point 0: [POINT-0/007](./GPT6-RAHM-USER-POINT-0-20261024-007-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md)
@@ -37,3 +37,20 @@ Do not create NEXT-052 merely to renumber unfinished work. Resume from NEXT-051,
 ## Read-back receipt — final content
 - This version was fetched independently after write; Stable ID, Production ID, version and parent links were compared with the intended record.
 - This verifies repository content only. It does not close the final strict manifest/package run, full IN/OUT recovery or real-host gates.
+
+## Latest post-fix repository audit — run 40129104121
+- Workflow run: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129104121
+- Audit workflow conclusion: SUCCESS; structural repository checks PASS; content result remains REVIEW_REQUIRED.
+- Snapshot: 3,805 files including generated evidence; 5,564 local Markdown link edges; 0 missing Markdown links; 62 Stable-ID collision groups (61 unreviewed); 88 Production-ID collision groups; 7 Reference-ID collision groups; 36 event-number collision groups; 13 ambiguous parent edges; 1 ambiguous timestamp at EVT-0089 line 21 with missing timezone provenance.
+- Interpretation: the link gate is clean at this snapshot, but the architecture is not globally validated. Identifier/parent/time findings remain open and must be adjudicated individually.
+
+## Strict portable conformance baseline — run 40129104156
+- Workflow: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129104156
+- Manifest v1.4.8: 50/50 exact-byte SHA-256 entries matched; valid schema fixture 0 errors; invalid fixture rejected with 4 errors; limited IN/OUT checkpoint-link equivalence PASS.
+- Package built: 51 files / 249,389 bytes; archive SHA-256: `01ca37f0b0c8d1b9495d6fe77fdf571ec4e3cbef9bd090daf5952611f59a4de7`.
+- Artifact: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129104156/artifacts/12574940685
+- This is the successful baseline before the latest audit updates and the new full repository IN/OUT verifier. The current manifest will be reconciled and the strict workflow rerun; the latest run history is authoritative for exact final bytes.
+
+## Added actual IN/OUT reconstruction gate
+- A repository verifier now reconstructs the current canonical state independently from IN-051 and OUT-050, compares versions/lineage/open gates, and emits a JSON receipt. The living architecture workflow now executes it. Its first post-addition run is pending; full-state reconstruction remains OPEN until that run passes.
+- Active action remains NEXT-051. No NEXT-052 was created.
