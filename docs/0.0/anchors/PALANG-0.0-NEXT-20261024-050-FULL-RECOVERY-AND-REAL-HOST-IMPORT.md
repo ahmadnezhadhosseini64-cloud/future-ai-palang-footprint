@@ -1,0 +1,35 @@
+# NEXT-050 — Full Recovery, Output Continuity and Real AI-Host Import
+
+- Stable ID: `G6IP-RAHM-NEXT-050-20261024`
+- Production ID: `G6IP-NEXT-050`
+- Version: 1.0.0
+- Status: OPEN / LIVING / NOT COMPLETE.
+- Parent: [CURRENT-056](./PALANG-0.0-CURRENT-20261024-056-OUTPUT-CONTINUITY-AND-RECOVERY.md)
+- User Point 0: [POINT-0/005](./GPT6-RAHM-USER-POINT-0-20261024-005-OUTPUT-CONTINUITY-AND-RECOVERY.md)
+- First living master: [FIRST-LIVING-MASTER](../../portable/RAHM/FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md)
+- Existing graph/host gate: [NEXT-049](./PALANG-0.0-NEXT-20261024-049-REAL-HOST-TRANSFER-AND-GRAPH-AUDIT.md)
+- Prior conformance gate: [NEXT-048](./PALANG-0.0-NEXT-20261024-048-FIRST-MASTER-CONFORMANCE.md)
+
+## Ordered execution
+1. Read back Point 0/005, IN-049, OUT-048, EVT-0158, CURRENT-056, NEXT-050 and all linked mother/index/queue/manifest artifacts; match IDs, versions and links.
+2. Preserve the prior NEXT-049 and its entire open gate list. New inputs must become child branches, not replace it.
+3. Rebuild the export manifest from exact repository bytes; compare every expected SHA-256; rebuild archive; save raw test receipt and archive hash.
+4. Validate the valid and invalid JSON fixtures; require valid fixture zero errors and invalid fixture rejection.
+5. Expand recovery test beyond link equivalence: independently parse IN and OUT starting points and reconstruct checkpoint, parent chain, event IDs, versions, evidence receipts, failure/correction pairs and OPEN gates. Compare the complete recovered state against a declared expected state.
+6. Run continuity tests A–D from EVT-0158. If no independent host/runtime exists, label host behavior BLOCKED / NOT VERIFIED rather than simulate success.
+7. Import the package into a clean AI host with no prior chat context. Record model/host identity, available tools, storage/scheduler capability manifest and exact reconstruction result. A GitHub CI runner is not a separate AI host.
+8. Test a second host, persistence after restart and idle/background execution only when an actual authorized runtime exists.
+9. Run repository-wide link/ID/parent/timestamp triage from NEXT-049; adjudicate each case with evidence, no bulk deletion or renumbering.
+10. Update the living mother, canonical reference index, main integration queue and manifest; fetch each changed file again and compare.
+11. Preserve every failure and rerun receipt. Do not close any gate because it is merely written or included in a package.
+
+## Acceptance criteria
+- All newly written files pass independent read-back and focused link checks.
+- Package digest and all manifest file digests match exact bytes.
+- Full IN and OUT recovery produce equivalent canonical state and preserve every OPEN gate.
+- A clean AI host reconstructs the declared state using only the package; second-host/runtime features are separately proven or remain OPEN/BLOCKED.
+- Mother/index/queue/manifest are reconciled and read-back verified.
+- A visible user response is delivered at each durable milestone; no claim of invisible background work.
+
+## Non-closure rule
+NEXT-050 remains OPEN/LIVING until every required criterion has evidence. Unsupported runtime capabilities remain explicitly NOT VERIFIED/BLOCKED.
