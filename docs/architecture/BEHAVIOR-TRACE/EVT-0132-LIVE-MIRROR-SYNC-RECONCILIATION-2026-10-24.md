@@ -44,7 +44,7 @@ Resume the open mirror-sync task, independently read both destinations, preserve
 ## Historical automation limitation
 The prior scheduled attempt (run ID `26a23eb9-35ec-832d-a67d-c982137a4897`) recorded `BLOCKED / OPEN`. Library upload returned error code `container_session_unavailable`, message `No active container session was found for container_path.`. A repository write attempt was also blocked by a tool safety check in that prior run. This new event is a separate attempt; it must not retroactively change the prior run's status.
 
-## Required refresh and acceptance gate
+## Required refresh and acceptance gate (historical plan; completed below)
 1. Preserve the Library-only addenda in this repository event.
 2. If a supported Library upload path is available, replace only the Library mirror with the current canonical source snapshot; never delete or overwrite the canonical repository source.
 3. Independently read the Library copy back.
@@ -52,16 +52,16 @@ The prior scheduled attempt (run ID `26a23eb9-35ec-832d-a67d-c982137a4897`) reco
 5. Record upload outcome, new Library file/version metadata, read-back evidence, and any remaining limitation here and in the master/queue.
 6. Keep Buffer and Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external recovery NOT RUN until each has its own independent evidence.
 
-## Current status
-Pre-refresh comparison is registered. Full-copy equivalence is NOT PASS before refresh. This event remains open until the Library refresh/read-back comparison is evidenced or the exact tool limitation is recorded as the terminal result.
+## Pre-refresh status (historical; superseded by final sync outcome)
+At this stage, the pre-refresh comparison was registered and full-copy equivalence was NOT PASS. The later successful Library upload and independent read-back below supersede this interim status.
 
 
-## Execution outcome — 2026-10-24
+## Pre-refresh execution outcome — 2026-10-24 (historical; later superseded)
 
 - Independent source read-back remains blob SHA `de1b75f07241c9b313e476af5f1417177ff78c10`; latest source-changing commit remains `a2374d7da36a5af69b1bdf17f6dfd673bc03c97f`, UTC `2026-10-23T17:34:39Z`, derived Tehran `2026-10-23T21:04:39+03:30`. No canonical source write was performed.
 - Library copy was independently read again. Current file ID `file_00000000422c8230b7b9709a831fd252`, stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, version ID `6`, metadata modified UTC `2026-10-23T17:39:33.763445Z` = Tehran `2026-10-23T21:09:33.763445+03:30`. Exact read-back operation time remains UNKNOWN.
 - Semantic key comparison: Stable ID MATCH; Test ID MATCH; Version 1.0.0 MATCH; next action BOART-FOLLOWUP-01 → BOART-FOLLOWUP-02 → BOART-FOLLOWUP-03 MATCH. Destination statuses for Buffer, Persistent Memory, Dropbox and external recovery MATCH the canonical source.
-- Full-file comparison: NOT MATCH. Source length 10,479 characters; Library snapshot length 11,980 characters; delta 1,501. The 7-character tolerance remains accepted only for the previously documented historical snapshot (8,915 vs 8,908), not for the current full-file comparison. Library-only EVT-0116/history addenda remain preserved in the untouched Library copy.
+- Full-file comparison: NOT MATCH. Source length 10,479 characters; Library snapshot length 11,980 characters; delta 1,501. The 7-character tolerance remains accepted only for the previously documented historical snapshot (8,915 vs 8,908), not for the current full-file comparison. Library-only EVT-0116/history addenda were subsequently preserved in `EVT-0132-LIBRARY-ONLY-ADDENDA-ARCHIVE-2026-10-24.md`; the Library copy has since been refreshed and no longer carries those mirror-only notes.
 - Library overwrite attempts using these paths were blocked: `/mnt/data/LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md`, `/mnt/data/mirror-sync/mirror-working-copy.md`, `/mnt/data/LIVE-DESTINATION-STABILITY-AUDIT-2026-10-24-MIRROR.md`, and `/mnt/data/mirror-sync2/mirror-working-copy.md`. Each returned the exact error code `container_session_unavailable` and message `No active container session was found for container_path.`. No Library write occurred; the existing Library file was not changed. The earlier automation run recorded the same limitation.
 - Current sync result: `BLOCKED / OPEN / NOT SYNCED TO CURRENT CANONICAL SNAPSHOT`. The Library artifact remains independently readable, but the current source-to-Library full-copy match is NOT VERIFIED. Do not report the current mirror sync as complete.
 - Canonical repository source remains intact and was not deleted or overwritten. Repository event registration is recorded by commit metadata and linked from the current master/queue after this update.
