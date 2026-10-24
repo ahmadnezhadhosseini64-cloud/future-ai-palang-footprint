@@ -6,7 +6,7 @@
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING / EVOLVABLE / EXTRACTABLE / RECOVERY-ORIENTED
 - Scope / دامنه: الگوی پایه برای هر پروژهٔ جدید در خانوادهٔ Future AI / Palang Footprint / HAIF و شاخه‌های محصول/میزبان آن؛ با سازگارسازی مستند برای پروژه‌های دیگر
 - Source anchor / منشأ: [G6IP-ARCH-ZERO-20261024-001](../../0.0/anchors/PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md)
-- Governing contract / قرارداد حاکم: [UIALAC-2026-10-20-001](./UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001.md)
+- Governing contract / قرارداد حاکم: [UIALAC-2026-10-20-001 v1.3.1](./UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001.md)
 - HAIF parent / والد معماری: [GPT-6 inherited architecture master](./GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md)
 - Repository: `ahmadnezhadhosseini64-cloud/future-ai-palang-footprint`
 
@@ -64,7 +64,7 @@ This document adopts the architecture lessons from the new GPT-6 project’s arc
 - [x] Parent source architecture and governing contract linked.
 - [x] Foundational principles and minimum project bundle documented.
 - [x] Exact file read-back after creation; Stable ID, Production ID, source anchor, contract and index links matched.
-- [x] Governing contract updated to v1.3.0 and read back.
+- [x] Governing contract updated to v1.3.1 and read back.
 - [x] Reference index and project entry point updated and read back.
 - [ ] Fresh-project adoption test executed.
 - [ ] Export package and cold-start recovery test executed.
@@ -75,7 +75,7 @@ This is a cross-project foundational specification. It becomes repository READ-B
 
 
 ## Repository read-back receipt — 2026-10-24
-The exact foundational-principles file was fetched again after creation. Stable ID, Production ID, source architecture-zero link, governing contract v1.3.0, reference-index entry and repository README entry were confirmed. The governing contract, index, README and inherited architecture master were also fetched and their updates confirmed. This is repository-level read-back only; a fresh-project adoption test, export package test and cold-start recovery test remain open.
+The exact foundational-principles file was fetched again after creation. Stable ID, Production ID, source architecture-zero link, governing contract v1.3.1, reference-index entry and repository README entry were confirmed. The governing contract, index, README and inherited architecture master were also fetched and their updates confirmed. This is repository-level read-back only; a fresh-project adoption test, export package test and cold-start recovery test remain open.
 
 
 ## Living activation and independent 0.0 anchor — 2026-10-24
@@ -167,3 +167,7 @@ v1.0.2 turns the principle “nothing should be impossible to fully examine” i
 
 ## v1.0.2 active alignment
 The active recovery point is [CURRENT-043](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-043-FOUNDATIONAL-PRINCIPLES-COMPLETENESS.md), and the next step is [NEXT-041](../../0.0/anchors/PALANG-0.0-NEXT-20261024-041-FOUNDATIONAL-PRINCIPLES-VERIFICATION.md). The earlier CURRENT-041 and CURRENT-042 nodes remain historical and linked in the lineage. This mother governs the current branch; its operational adoption is not validated until NEXT-041 and then NEXT-040 have evidence-backed outcomes.
+
+
+## Contract alignment — UIALAC v1.3.1
+The governing universal contract is now [UIALAC-2026-10-20-001 v1.3.1](./UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001.md), which adopts this claim-level completeness and evidence-boundary rule. Repository read-back for that contract amendment remains to be recorded; it is not considered verified merely because the update call returned a commit.
