@@ -213,3 +213,12 @@ This living master records repository architecture only. It does not prove conti
 - CURRENT-046, IN-038/OUT-038, EVT-0146, NEXT-044, fallback folder, index, queue and mother documents were fetched after writes; principal IDs/links matched.
 - REFERENCE_INDEX read-back is now successful after its earlier 404; CURRENT-046/NEXT-044 markers are confirmed in the returned content.
 - Three package JSON files parse successfully. SHA-256 byte-level integrity, full schema fixtures, runtime installation, persistent memory, idle background and second-host tests remain OPEN / NOT RUN.
+
+
+## CURRENT-047 — Behavior Hunter / چشم پلنگ
+- Current anchor: [CURRENT-047](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-047-BEHAVIOR-HUNTER-LIVING-ANCHOR.md).
+- Interaction: [IN-039](../../0.0/anchors/PALANG-0.0-IN-20261024-039-BEHAVIOR-HUNTER-LIVING-RULE.md) → [OUT-039](../../0.0/anchors/PALANG-0.0-OUT-20261024-039-BEHAVIOR-HUNTER-LIVING-RULE.md) → [EVT-0147](../../architecture/BEHAVIOR-TRACE/EVT-0147-BEHAVIOR-HUNTER-LIVING-RULE-AND-CHECKPOINT-2026-10-24.md).
+- Next 0.0 execution checkpoint: [NEXT-045](../../0.0/anchors/PALANG-0.0-NEXT-20261024-045-BEHAVIOR-HUNTER-TEST-AND-OPEN-GATES.md) — OPEN / IN PROGRESS; tests individually remain NOT RUN until executed.
+- Governing rule: implemented + read-back-proven items receive evidence-matched status; documented-only capability is not called active; every unrun/failed test stays open with an ID, reason and recovery step.
+- Behavioral inference is based on repeated explicit instructions and observed corrections, not hidden-thought access. Automatic continuous monitoring is NOT VERIFIED.
+- Open: JSON Schema fixtures, exact-byte SHA-256, full link/duplicate-ID audit, behavior regression and IN/OUT recovery, persistent-memory restart, idle background, clean-host and second-host tests.
