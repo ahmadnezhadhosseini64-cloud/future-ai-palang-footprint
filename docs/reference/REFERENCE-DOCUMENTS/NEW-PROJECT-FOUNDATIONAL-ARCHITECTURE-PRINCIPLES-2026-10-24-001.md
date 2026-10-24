@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001`
 - Production ID / شناسهٔ تولید: `NPFAP-20261024-001`
-- Version / نسخه: 1.2.4
+- Version / نسخه: 1.2.5
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING / EVOLVABLE / EXTRACTABLE / RECOVERY-ORIENTED / CURRENT-054 + CURRENT-056 LINKED
 - Scope / دامنه: الگوی پایه برای هر پروژهٔ جدید در خانوادهٔ Future AI / Palang Footprint / HAIF و شاخه‌های محصول/میزبان آن؛ با سازگارسازی مستند برای پروژه‌های دیگر
 - Source anchor / منشأ: [G6IP-ARCH-ZERO-20261024-001](../../0.0/anchors/PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md)
@@ -562,3 +562,10 @@ Evidence branch: [CURRENT-057](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-057
 - Audit run [40129104121](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129104121): 3,805 files; 5,564 local Markdown link edges; zero missing links. Structural checks passed; content status remains REVIEW_REQUIRED because 62 Stable-ID collision groups (61 unreviewed), 88 Production-ID groups, 7 Reference-ID groups, 36 event-number groups, 13 ambiguous parents and one ambiguous timestamp remain.
 - Strict baseline [40129104156](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129104156) passed 50/50 exact-byte SHA-256 entries, schema positive/negative fixtures, limited recovery equivalence and archive construction. Latest post-update run history must be checked for final bytes.
 - A new IN/OUT canonical-state verifier is wired into CI; until its first run passes, full repository-state reconstruction stays OPEN. Real host import, persistent memory and idle/background execution remain separate unverified gates.
+
+## CURRENT-058 actual IN/OUT recovery receipt — run 40129551204
+- [Recovery verifier run](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129551204) PASS: IN-051 and OUT-050 independently reconstructed equivalent canonical repository state; both RECOVERED, `canonical_state_equivalent=true`, zero failures.
+- The test preserved six open-gate categories. This closes only current repository-chain equivalence, not independent AI-host import or runtime persistence.
+- First attempt [40129456947](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129456947) failed due to verifier path/field-name assumptions. Correction: `bf9b121fbcee82475696e98c8c5d9b25e5e683e8`; retest passed. Failure retained as architecture learning.
+- Latest global audit [40129551204](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129551204): 3,820 files; 5,564 Markdown links; zero missing links; 62 Stable-ID groups (61 unreviewed), 88 Production-ID groups, 7 Reference-ID groups, 36 event-number groups, 13 ambiguous parent edges, one ambiguous timestamp; content remains REVIEW_REQUIRED.
+- Strict package baseline [40129104156](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129104156) passed 50/50 hashes and built the v1.4.8 package before the latest edits. Final digest/package run is required after this checkpoint update; consult the [portable conformance workflow](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/workflows/rahm-portable-conformance.yml) for the latest run.
