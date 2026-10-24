@@ -11,3 +11,10 @@
 - Status boundary: input record is not proof of completion or runtime activation.
 
 - Link audit correction event: [EVT-0156](../../architecture/BEHAVIOR-TRACE/EVT-0156-FIRST-MASTER-HARNESS-CORRECTION-2026-10-24.md)
+
+
+## Canonical recovery target (added after output registration)
+- Canonical current checkpoint: [CURRENT-054](./PALANG-0.0-CURRENT-20261024-054-FIRST-LIVING-MASTER.md)
+- Deterministic next action: [NEXT-048](./PALANG-0.0-NEXT-20261024-048-FIRST-MASTER-CONFORMANCE.md); first execute [NEXT-044](./PALANG-0.0-NEXT-20261024-044-EXTRACTABLE-RAHM-CHILD-AND-COLD-START-TEST.md).
+- First living master: [FIRST-LIVING-MASTER](../../portable/RAHM/FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md)
+- Open gates to preserve: exact-byte SHA-256 comparison; valid/invalid schema; independent IN/OUT recovery; repository-wide link/ID triage; clean-host/second-host import; persistence restart; idle background; base mother/index/queue reconciliation.
