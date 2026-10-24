@@ -8,7 +8,7 @@
 - Architecture zero: [G6IP-ARCH-ZERO-20261024-001](../../0.0/anchors/PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md)
 - Mother architecture: [G6IP-IAM-20261024-001 v1.0.4](../../reference/REFERENCE-DOCUMENTS/GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md)
 - Branch master: [G6IP-LMR-20261024-001 v1.3.5](../../reference/REFERENCE-DOCUMENTS/GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001.md)
-- Status: REGISTERED / READ-BACK PENDING
+- Status: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED
 
 ## Observable event
 A new architecture-zero anchor was added to preserve the new project's path from Point 0 through Point 0.0/CURRENT-040, and the inherited architecture master was updated to v1.0.4. The GPT-6 living master was updated to v1.3.5. CURRENT-040 and the 0.0 registry were connected to the new anchor.
@@ -22,3 +22,7 @@ The user expects architecture work to continue from the active model-building pa
 - Cold-start recovery: NOT RUN.
 - Buffer / Persistent Memory / Library / Dropbox: NOT VERIFIED.
 - Global always-on background capture: NOT ESTABLISHED.
+
+
+## Read-back receipt
+The exact EVT-0140 path and linked IN-032, OUT-032, architecture-zero and mother-version records were fetched from the default branch. IDs and links matched. This is repository-level verification only.
