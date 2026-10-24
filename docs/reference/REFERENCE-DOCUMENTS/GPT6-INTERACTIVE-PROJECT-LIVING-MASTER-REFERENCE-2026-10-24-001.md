@@ -101,6 +101,13 @@
 - Canonical timestamp: use the actual last-change Git commit timestamp in UTC; Tehran equivalent is UTC+03:30 from that same instant. User-message timestamp remains UNKNOWN / UNVERIFIED.
 
 
+
+
+## Inherited architecture living master — GPT-6 branch
+- The previous Future AI / Palang Footprint and HAIF architecture is governed in this branch by [GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001](./GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md), Stable ID G6IP-IAM-20261024-001.
+- It imports modular layers, evidence gates, UTC-first timestamps, IN/OUT behavior trace, Master–Child–Rahm promotion, destination-specific status, versioned evolution and recoverability without replacing historic anchors.
+- Point 0.0 remains NOT CREATED; interactive prototype NOT BUILT; cold-start recovery NOT RUN until executed and read back.
+
 ## Project initial point — CURRENT-039 and the 0 → 0.0 chain
 - New root request: [IN-029](../../0.0/anchors/PALANG-0.0-IN-20261024-029-DECLARE-INITIAL-POINT-AND-LINK-ZERO-CHAIN.md) ↔ [OUT-029](../../0.0/anchors/PALANG-0.0-OUT-20261024-029-DECLARE-INITIAL-POINT-AND-LINK-ZERO-CHAIN.md), interaction INT-20261024-029.
 - Behavior event: [EVT-0137](../../architecture/BEHAVIOR-TRACE/EVT-0137-GPT6-INITIAL-POINT-ZERO-CHAIN-2026-10-24.md).
