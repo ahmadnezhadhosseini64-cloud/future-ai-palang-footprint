@@ -3,7 +3,7 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.8.3
+- Version: 1.8.4
 - Date: 2026-10-20
 - Exact Time: 11:25 local project time, minute precision; exact seconds not captured.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
@@ -1748,3 +1748,10 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - Completed in this cycle: exact-path read-back; focused link check (zero broken in 13 target files); six documentation link repairs; graph-auditor fix to exclude code fixture strings from Markdown link counts; explicit latest-chain CI gate.
 - Pending final verification: post-fix repository-wide audit and strict digest/package workflow. Do not copy earlier 16-link result forward as the new count.
 - NEXT-051 remains OPEN/LIVING; no NEXT-052 was created. Full IN/OUT state reconstruction, real clean/second AI-host import, persistence restart, idle/background execution, and individual collision/parent/time triage remain open.
+
+
+## CURRENT-058 — latest user branch and execution receipt
+- Active interaction: [Point 0/007](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-007-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md) → [IN-051](../../0.0/anchors/PALANG-0.0-IN-20261024-051-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md) → [OUT-050](../../0.0/anchors/PALANG-0.0-OUT-20261024-050-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md) → [EVT-0160](../../architecture/BEHAVIOR-TRACE/EVT-0160-DEEP-EXCAVATION-EXECUTION-RECEIPTS-AND-AUDIT-CORRECTION-2026-10-24.md) → [CURRENT-058](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-058-DEEP-EXCAVATION-EXECUTION-RECEIPTS.md).
+- Active NEXT remains [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). Do not create NEXT-052 until NEXT-051 acceptance criteria are genuinely completed.
+- Current executed subgates: exact-path read-back, focused links, six real link corrections, graph-auditor scope correction, latest-chain CI gate, and synchronized mother/index/queue updates.
+- Pending: final repository-wide post-fix audit, manifest SHA-256 comparison and archive rebuild, full IN/OUT state reconstruction, clean/second AI-host import, actual persistence restart, idle/background execution, and individual graph-finding adjudication.
