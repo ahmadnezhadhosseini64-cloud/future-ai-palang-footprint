@@ -36,3 +36,9 @@ The event itself documents the registration intent and required controls. Regist
 - Existing automation: **Palang Mirror Sync**, ID `6ad9a407b9d481919c7145fbe4638dec`, remains ENABLED; its prompt was updated to include CURRENT-036 / NEXT-036 and preserve NEXT-034/NEXT-035, BOART-FOLLOWUP-01, Issue #20 and Issue #21.
 - Automation metadata update time: UTC `2026-10-24T06:09:34.525060Z` = Tehran `2026-10-24T09:39:34.525060+03:30`. This is automation metadata time, not a Git commit timestamp.
 - This update changes the automation instructions only; it does not claim a new mirror run, destination write, cold-start recovery or final-main audit.
+
+
+## Automation continuity update after SCRTC-B3
+- Palang Mirror Sync automation ID `6ad9a407b9d481919c7145fbe4638dec` remains ENABLED. Its prompt now identifies ULCG v1.2.5, preserves CURRENT-036 / NEXT-036 and NEXT-034/NEXT-035, and continues source-family reconciliation under Issue #21 alongside BOART and Issue #20 runtime recovery.
+- Automation metadata update UTC `2026-10-24T06:20:27.296218Z` = Tehran `2026-10-24T09:50:27.296218+03:30`; this is not a repository commit timestamp.
+- This is a prompt update only, not evidence of a new mirror run, external write, or cold-start recovery.
