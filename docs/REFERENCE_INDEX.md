@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-24 — CURRENT-044 / EVT-0144 / NEXT-042 linked; prior checkpoints preserved; unresolved verification gates remain explicit.
+**Last Updated:** 2026-10-24 — CURRENT-045 / EVT-0145 / NEXT-043 linked; prior checkpoints preserved; unresolved verification gates remain explicit.
 
 ## Canonical References
 
@@ -1057,5 +1057,6 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Living mother: [NPFAP-20261024-001 v1.0.4](reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md).
 - Next: [NEXT-043](0.0/anchors/PALANG-0.0-NEXT-20261024-043-VERIFY-AND-CLOSE-GAPS.md); [NEXT-042](0.0/anchors/PALANG-0.0-NEXT-20261024-042-GAP-CLOSURE-AND-RECOVERY-VALIDATION.md) remains in lineage.
 - Rule: additive versioning, immutable historical checkpoints, explicit lineage and evidence-gated status transitions.
-- Canonical repository timestamps to be reconciled from actual commit metadata after writes; UTC primary, Asia/Tehran equivalent derived from the same instant.
+- CURRENT-045 canonical repository registration time (actual last-change commit): UTC `2026-10-24T11:53:56Z`; Tehran `2026-10-24T15:23:56+03:30`; commit `e240038a616dc706532c0de1e24d16fbf0396955`.
+- NPFAP v1.0.4 latest content commit: UTC `2026-10-24T11:52:09Z`; Tehran `2026-10-24T15:22:09+03:30`; commit `8ff088148c2598a58078ead2069b6a8aa23a74f6`.
 - Verification gates remain open unless separately supported by observed evidence.
