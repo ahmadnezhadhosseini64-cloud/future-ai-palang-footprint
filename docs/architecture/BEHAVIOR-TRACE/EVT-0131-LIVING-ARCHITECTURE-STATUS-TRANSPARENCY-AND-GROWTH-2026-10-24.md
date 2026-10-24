@@ -89,3 +89,12 @@ Complete and read back the IN/OUT pair and all canonical graph edges; run the cu
 - Proposal gate: `READY_FOR_OWNER_REVIEW`, source evidence hash verified, owner decision PENDING, canonical mutation false, promotion false.
 - Status receipt: `SUCCESS`, terminal=true, run ID 40061468626, tested SHA matches the run. It explicitly does not claim ChatGPT UI heartbeat, host-wide capture, or external persistence.
 - This run predates later evidence-only automation commits on main. Do not claim the exact current main SHA was rerun until its own workflow result is read back.
+
+
+## Latest terminal verification — run 40061600048
+- [Behavior Hunter run 40061600048](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40061600048): SUCCESS on tested SHA `2968455a8d72894fb167b6189783937e94abdf4a`; all workflow steps passed.
+- Artifact ID `12548055321`, downloaded and inspected; ZIP SHA-256 `03a3faedb32276f315d314e1f89f030ad7d41ff8de90c4b4da720daaf7732fa2`.
+- Both recovery manifests RECOVERED: IN-033 → OUT-033 and OUT-033 → IN-033; pair INT-20261024-033; event EVT-0131; checkpoint NEXT-033; zero failures.
+- Candidate tests: 2 generated, both CANDIDATE_READY, zero parse errors; no candidate is an execution PASS. Append-only architecture ledger: PASS, 4 records, 4 versions, zero errors, hash chain verified, no history rewrite. Proposal gate: READY_FOR_OWNER_REVIEW, owner decision PENDING, no canonical mutation/promotion. Production evidence smoke: one repository locator resolved; this does not prove a production test PASS.
+- Terminal status receipt: SUCCESS, terminal=true, run ID 40061600048, tested SHA matches; receipt UTC `2026-10-24T04:15:12.038073Z`, Tehran `2026-10-24T07:45:12.038073+03:30`.
+- Previous failed attempts remain documented above. This latest run is the verified repair result; it does not close fresh-session recovery (NOT RUN), host-wide capture/external persistence (NOT PROVEN), or Issues #19/#20/#21 (OPEN).
