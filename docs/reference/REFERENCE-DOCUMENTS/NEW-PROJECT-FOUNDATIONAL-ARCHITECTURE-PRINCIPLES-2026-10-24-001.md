@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001`
 - Production ID / شناسهٔ تولید: `NPFAP-20261024-001`
-- Version / نسخه: 1.1.1
+- Version / نسخه: 1.1.2
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING / EVOLVABLE / EXTRACTABLE / RECOVERY-ORIENTED
 - Scope / دامنه: الگوی پایه برای هر پروژهٔ جدید در خانوادهٔ Future AI / Palang Footprint / HAIF و شاخه‌های محصول/میزبان آن؛ با سازگارسازی مستند برای پروژه‌های دیگر
 - Source anchor / منشأ: [G6IP-ARCH-ZERO-20261024-001](../../0.0/anchors/PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md)
@@ -375,4 +375,25 @@ The repository paths and contents for IN-041, OUT-040, EVT-0148, CURRENT-048, NE
 
 ### Continuation / ادامه
 CURRENT-048 is the active additive checkpoint. Preserve CURRENT-047 and all earlier anchors. NEXT-044 remains OPEN / NOT RUN and is the next execution gate.
+
+
+
+## Living Mother Update — CURRENT-049 / Visible Status Continuity — 2026-10-24
+
+- **Additive version / نسخهٔ افزایشی:** 1.1.2
+- **Current anchor / نقطهٔ جاری:** [CURRENT-049](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-049-LIVE-STATUS-AND-OUTPUT-CONTINUITY.md)
+- **Input / ورودی:** [IN-042](../../0.0/anchors/PALANG-0.0-IN-20261024-042-LIVE-STATUS-AND-OUTPUT-CONTINUITY.md)
+- **Output / خروجی:** [OUT-041](../../0.0/anchors/PALANG-0.0-OUT-20261024-041-LIVE-STATUS-AND-OUTPUT-CONTINUITY.md)
+- **Event / رویداد:** [EVT-0149](../../architecture/BEHAVIOR-TRACE/EVT-0149-LIVE-STATUS-AND-OUTPUT-CONTINUITY-2026-10-24.md)
+- **Next / گام بعدی:** [NEXT-044 — export and fresh-context recovery](../../0.0/anchors/PALANG-0.0-NEXT-20261024-044-EXTRACTABLE-RAHM-CHILD-AND-COLD-START-TEST.md)
+- **Status / وضعیت:** additive mother update; read-back required after write.
+
+### Visible progress rule / قاعدهٔ نمایش روند
+Every multi-step task must expose a useful state to the user: completed with evidence, currently running only when an actual operation is running, blocked with cause, or not started. Do not imply background execution, ongoing monitoring, or future notifications unless an actual mechanism and run evidence exist. When useful, report completed steps, failed/blocked steps, and the next action rather than leaving the user to infer status from silence.
+
+### Interaction lineage / زنجیرهٔ تعامل
+The current chain is CURRENT-048 → IN-042 → OUT-041 → EVT-0149 → CURRENT-049 → this living mother and reference index → NEXT-044. This is an additive linkage, not a replacement of any earlier 0.0 point. The user's correction about silence/unclear status is retained as an architectural behavior lesson. Earlier IDs and versions remain intact.
+
+### Evidence and recovery boundary / مرز شواهد و بازیابی
+Writing a file, reading it back, validating a rule, integrating it, exporting a package, and recovering it in a fresh context are separate gates. The new interaction records and mother/index must be fetched and matched before claiming a fully verified chain. NEXT-044 remains OPEN / NOT RUN until a verifiable export is imported in a fresh host/context and recovered identifiers, links, versions, and open gaps match repository state. The second project's canonical repository is still unidentified; live two-project integration is not claimed.
 
