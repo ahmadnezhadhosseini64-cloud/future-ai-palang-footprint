@@ -3,7 +3,7 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.8.2
+- Version: 1.8.3
 - Date: 2026-10-20
 - Exact Time: 11:25 local project time, minute precision; exact seconds not captured.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
@@ -1741,3 +1741,10 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - Excavation evidence: latest inspected audit [40122633902](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40122633902) = REVIEW_REQUIRED; 11 missing links, 60 unreviewed stable-ID collision groups, 88 production-ID collision groups, 7 reference-ID collision groups, 36 event-number collision groups, 13 ambiguous parent edges.
 - Required rule: NO-SILENT-GAP / RESUME-ON-NEW-IN. Visible status at durable milestones; no hidden-work claims; every unverified gate remains OPEN/LIVING.
 - Next: run strict manifest/package conformance after all updates, then full IN/OUT recovery and real clean-host import if available. Keep unavailable host runtime tests NOT VERIFIED.
+
+
+## CURRENT-057 — executed excavation subgates
+- Active chain: [Point 0/006](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-006-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md) → [IN-050](../../0.0/anchors/PALANG-0.0-IN-20261024-050-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md) → [OUT-049](../../0.0/anchors/PALANG-0.0-OUT-20261024-049-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md) → [EVT-0159](../../architecture/BEHAVIOR-TRACE/EVT-0159-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY-2026-10-24.md) → [CURRENT-057](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-057-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Completed in this cycle: exact-path read-back; focused link check (zero broken in 13 target files); six documentation link repairs; graph-auditor fix to exclude code fixture strings from Markdown link counts; explicit latest-chain CI gate.
+- Pending final verification: post-fix repository-wide audit and strict digest/package workflow. Do not copy earlier 16-link result forward as the new count.
+- NEXT-051 remains OPEN/LIVING; no NEXT-052 was created. Full IN/OUT state reconstruction, real clean/second AI-host import, persistence restart, idle/background execution, and individual collision/parent/time triage remain open.
