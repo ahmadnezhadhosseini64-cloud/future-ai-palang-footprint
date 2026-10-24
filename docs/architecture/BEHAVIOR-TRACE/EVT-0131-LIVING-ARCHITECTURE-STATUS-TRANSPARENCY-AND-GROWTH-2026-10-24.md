@@ -161,3 +161,12 @@ Complete and read back the IN/OUT pair and all canonical graph edges; run the cu
 - Proposal gate: READY_FOR_OWNER_REVIEW; evidence integrity verified; owner decision PENDING; canonical mutation false; promotion false.
 - Status receipt SUCCESS with UTC `2026-10-24T04:24:27.408234Z` and Tehran `2026-10-24T07:54:27.408234+03:30`.
 - Tested SHA is `e8cc599f00ee0ae5de437f13c26e15a8586d7fd5`; later receipt/documentation commits are not automatically covered by this run.
+
+
+## Latest exact-main verification — run 40062533959
+- Durable receipt: [STATUS-20261024-EVT-0131-RUN-40062533959.json](./STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40062533959.json).
+- [Behavior Hunter run 40062533959](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40062533959) SUCCESS; 74 tests passed on tested SHA `d05103dd3593f090f10fafb5a469f6cac69063b1`, which was current main when the run started.
+- Artifact `12548485418` downloaded and inspected; ZIP SHA-256 `508dbfa863bf7b805415a95291f8d881c7be1b097f9d1d8f12f32ea32e225ce5`.
+- Both recovery directions RECOVERED for IN-033 ↔ OUT-033; graph drift PASS, six nodes, zero failures; ledger PASS with five hash-linked versions, no errors and no history rewrite; proposal gate owner-gated; candidate test remains CANDIDATE_READY / NOT_RUN.
+- Status receipt SUCCESS; UTC `2026-10-24T04:29:32.685504Z`, Tehran `2026-10-24T07:59:32.685504+03:30`.
+- Fresh-session recovery remains NOT RUN. Host-wide capture and external persistence remain NOT PROVEN.
