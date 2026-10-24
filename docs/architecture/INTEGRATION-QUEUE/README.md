@@ -1619,3 +1619,6 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - Palang Mirror Sync automation ID `6ad9a407b9d481919c7145fbe4638dec` remains ENABLED. Its prompt now identifies ULCG v1.2.5, preserves CURRENT-036 / NEXT-036 and NEXT-034/NEXT-035, and continues source-family reconciliation under Issue #21 alongside BOART and Issue #20 runtime recovery.
 - Automation metadata update UTC `2026-10-24T06:20:27.296218Z` = Tehran `2026-10-24T09:50:27.296218+03:30`; this is not a repository commit timestamp.
 - This is a prompt update only, not evidence of a new mirror run, external write, or cold-start recovery.
+
+
+| G6IP-POINT-0-20261024-001 | تعیین CURRENT-039 به‌عنوان نقطهٔ ۰ اولیه و اتصال قواعد حاکم HAIF / Future AI | REGISTERED / READ-BACK PENDING — پروندهٔ نقطهٔ ۰ و سند مادر به‌روزرسانی شده؛ تطبیق نهایی زنجیره در حال انجام | سند مادر GPT-6، دفتر نقاط ۰.۰، رفتارشناسی و صف ادامه | [Point 0](../../0.0/anchors/GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001.md); [EVT-0138](../BEHAVIOR-TRACE/EVT-0138-GPT6-POINT-0-PROMOTION-AND-HAIF-INTEGRATION-2026-10-24.md); [NEXT-038](../../0.0/anchors/PALANG-0.0-NEXT-20261024-038-DEFINE-POINT-0-THEN-0.0.md) |
