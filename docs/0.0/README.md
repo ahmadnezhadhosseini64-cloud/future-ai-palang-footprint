@@ -1437,3 +1437,13 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - Governing mother: [NPFAP-20261024-001 v1.0.2](../reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md).
 - Next active task: [NEXT-041 — foundational verification](./anchors/PALANG-0.0-NEXT-20261024-041-FOUNDATIONAL-PRINCIPLES-VERIFICATION.md), then [NEXT-040 — fresh-project adoption](./anchors/PALANG-0.0-NEXT-20261024-040-FRESH-PROJECT-ADOPTION-TEST.md).
 - Status: foundational mother v1.0.2 and linked repository records READ-BACK VERIFIED / IDENTIFIERS MATCHED; NEXT-041 detailed acceptance/link audit OPEN / NOT RUN. Adoption test OPEN / NOT RUN; prototype NOT BUILT; cold-start recovery NOT RUN; external destinations NOT VERIFIED.
+
+
+## CURRENT-044 — پایهٔ معماری بازیابی‌پذیر و تکامل‌پذیر — 2026-10-24
+- Current checkpoint: [CURRENT-044](./anchors/PALANG-0.0-CURRENT-20261024-044-RECOVERY-EVOLVABLE-BASELINE.md); parent [CURRENT-043](./anchors/PALANG-0.0-CURRENT-20261024-043-FOUNDATIONAL-PRINCIPLES-COMPLETENESS.md) preserved as history.
+- Input/output: [IN-036](./anchors/PALANG-0.0-IN-20261024-036-RECOVERY-EVOLVABLE-BASELINE.md) ↔ [OUT-036](./anchors/PALANG-0.0-OUT-20261024-036-RECOVERY-EVOLVABLE-BASELINE.md).
+- Event: [EVT-0144](../architecture/BEHAVIOR-TRACE/EVT-0144-RECOVERY-EVOLVABLE-BASELINE-2026-10-24.md).
+- Foundational mother: [NPFAP-20261024-001 v1.0.2](../reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md).
+- Next: [NEXT-042 — gap closure and recovery validation](./anchors/PALANG-0.0-NEXT-20261024-042-GAP-CLOSURE-AND-RECOVERY-VALIDATION.md); keep [NEXT-041](./anchors/PALANG-0.0-NEXT-20261024-041-FOUNDATIONAL-PRINCIPLES-VERIFICATION.md) open until its principle matrix is executed.
+- Versioning rule: additive successor; preserve old artifacts, connect versions explicitly, keep rollback and evidence. No silent replacement.
+- Status: new records written and fetched back; ID/link checks are underway/partially verified. Principle audit, transitive link scan, adoption, prototype, cold-start recovery and external destinations remain OPEN / NOT RUN / NOT BUILT / NOT VERIFIED as applicable.
