@@ -1,7 +1,7 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.2.2",
-  "manifest_status": "POINT0_003_INCLUDED; ALL_25_SHA256_EXPECTATIONS_POPULATED; VERIFIED_BY_WORKFLOW",
+  "version": "1.2.3",
+  "manifest_status": "POINT0_003_INCLUDED; ALL_25_SHA256_EXPECTATIONS_VERIFIED_BY_RUN_40115875047; WORKFLOW_RECHECKS_EACH_EXPORT",
   "created_from_checkpoint": "G6IP-RAHM-CURRENT-054-20261024",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [
@@ -167,16 +167,16 @@
     "persistent_memory": "NOT_VERIFIED",
     "idle_background_execution": "NOT VERIFIED",
     "cross_host": "NOT_RUN",
-    "exact_byte_sha256": "ALL_25_EXPECTED_DIGESTS_POPULATED; final comparison triggered by this manifest update",
-    "schema_valid_fixture": "PASS_RUN_40115810440",
-    "schema_invalid_fixture": "REJECTED_WITH_4_ERRORS_RUN_40115810440",
-    "IN_OUT_recovery_equivalence": "PASS_LIMITED_LINK_CHECKPOINT_SCOPE_RUN_40115810440",
+    "exact_byte_sha256": "PASS_RUN_40115875047; all 25 file digests matched exact bytes",
+    "schema_valid_fixture": "PASS_RUN_40115875047",
+    "schema_invalid_fixture": "REJECTED_WITH_4_ERRORS_RUN_40115875047",
+    "IN_OUT_recovery_equivalence": "PASS_LIMITED_LINK_CHECKPOINT_SCOPE_RUN_40115875047",
     "clean_AI_host_import": "NOT RUN",
     "second_AI_host_import": "NOT RUN",
     "persistence_restart": "NOT VERIFIED",
-    "canonical_mother_index_queue_integration": "UPDATED_AND_FETCHED; explicit Point 0 included; full graph review remains open",
-    "schema_workflow_overall": "PASS_RUN_40115810440",
-    "portable_package_build": "PASS_RUN_40115810440; final rebuild after digest population"
+    "canonical_mother_index_queue_integration": "UPDATED_AND_FETCHED; explicit Point 0 linked; full graph review remains open",
+    "schema_workflow_overall": "PASS_RUN_40115875047",
+    "portable_package_build": "PASS_RUN_40115875047; rebuild on every manifest/package update"
   },
-  "note": "The package includes explicit user Point 0-003 and 25 inventory files plus this manifest. The conformance workflow compares exact-byte SHA-256 values, validates valid/invalid schema fixtures, checks limited IN/OUT checkpoint-link equivalence, and builds a ZIP. Full AI-host import, complete state/evidence reconstruction, persistent memory, idle/background execution, and repository-wide graph repair remain unproven."
+  "note": "Explicit user Point 0-003 is included. All 25 inventory entries' SHA-256 values were compared successfully in run 40115875047. The workflow reruns exact-byte checks, schema fixtures, limited IN/OUT pointer recovery, and archive construction on each package change. This does not prove full AI-host import, persistent memory, idle/background execution, or resolution of repository-wide graph defects."
 }
