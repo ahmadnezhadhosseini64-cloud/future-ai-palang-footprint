@@ -1539,3 +1539,9 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - [Status receipt JSON](../BEHAVIOR-TRACE/STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40061713327.json) is stored in the repository as a durable copy of the inspected artifact.
 - Source run [40061713327](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40061713327) passed 71 tests on tested SHA `26615121fd50276c9c978814b183b21b20330135`; artifact SHA-256 `448465dc742c90b1408d725ccce8a17eaf6d3b845ca639ad742c709cbdeb629a`.
 - Next: separate fresh-session recovery, then continue semantic collision adjudication and timestamp ambiguity review. Issues #19/#20/#21 remain open.
+
+
+## Latest proof receipt — EVT-0131 / run 40061873837
+- Durable [status receipt](../BEHAVIOR-TRACE/STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40061873837.json).
+- [Behavior Hunter run 40061873837](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40061873837) SUCCESS, 71 tests, tested SHA `edd82d08311c03f0506c651e5c33d128a0d70a35`, artifact ZIP SHA-256 `c44071afab49df4bfb33141f432db059e21455f3161801f4d711efd34d690f1f`.
+- Both pair-033 recovery directions RECOVERED; ledger PASS, 4 records, hash chain verified. Next remains uncoached fresh-session recovery, then historic semantic reconciliation.
