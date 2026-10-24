@@ -1657,3 +1657,13 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - NEXT-044 was corrected additively to target the CURRENT-050 chain; the old CURRENT-047 target remains preserved as historical context.
 - Next execution: export a verifiable package and perform fresh-context reconstruction with negative cases. Status OPEN / NOT RUN; do not claim success before evidence.
 - Dropbox remains OPEN / WAITING and is not the current target. Issue #20 runtime recovery and Issue #21 historical source census remain distinct open workstreams.
+
+
+## GPT-6 Rahm project — CURRENT-044 / EVT-0144 — 2026-10-24
+- Point 0: [GPT6 Rahm Point 0](../../0.0/anchors/GPT6-RAHM-PROJECT-POINT-0-2026-10-24-001.md).
+- Independent 0.0: [CURRENT-044](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-044-RAHM-PROJECT-POINT-0.0.md).
+- Interaction: [IN-036](../../0.0/anchors/PALANG-0.0-IN-20261024-036-RAHM-PROJECT-POINT-0.md) → [OUT-036](../../0.0/anchors/PALANG-0.0-OUT-20261024-036-RAHM-PROJECT-POINT-0.md) → [EVT-0144](../BEHAVIOR-TRACE/EVT-0144-GPT6-RAHM-PROJECT-POINT-0-2026-10-24.md).
+- Latest masters: HAIF v1.3.9; inherited architecture v1.0.6; GPT-6 living master v1.3.8.
+- Next action: [NEXT-042](../../0.0/anchors/PALANG-0.0-NEXT-20261024-042-RAHM-CONFORMANCE-EXPORT-CROSS-HOST-TEST.md).
+- Required work: build the self-contained Rahm package and host capability manifest; implement interaction/evidence schemas; run positive and negative conformance cases; test clean-context recovery in GPT-6 and a separate AI host; record each result and read it back.
+- Status: package NOT BUILT; cross-host test NOT RUN; continuous runtime capture NOT VERIFIED. Do not claim universal host compatibility or background execution.
