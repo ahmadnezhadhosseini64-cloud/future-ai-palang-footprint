@@ -645,4 +645,4 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - [EVT-0132](./EVT-0132-LIVE-MIRROR-SYNC-RECONCILIATION-2026-10-24.md) documents the current canonical source vs Library mirror comparison.
 - [NEXT-034](../../0.0/anchors/PALANG-0.0-NEXT-20261024-034-LIVE-MIRROR-SYNC-AND-COLD-START.md) preserves the continuation path.
 - Event commit UTC `2026-10-24T04:42:00Z` = Tehran `2026-10-24T08:12:00+03:30`; anchor commit UTC `2026-10-24T04:42:23Z` = Tehran `2026-10-24T08:12:23+03:30`.
-- Full-file match NOT PASS; Library write BLOCKED by `container_session_unavailable`; no write/read-back of a new Library version exists.
+- Current source snapshot match PASS: Library version 7 was written and independently read back; one-character Levenshtein difference is within accepted tolerance. Earlier container_session_unavailable failures remain historical.
