@@ -205,7 +205,7 @@ manifest = {
     "reference_id_collisions": reference_collisions,
     "event_number_collisions": evt_collisions, "exact_content_duplicate_groups": duplicates,
     "proposed_alias_edges": alias_edges, "decode_errors": decode_errors,
-    "semantic_status": "STRUCTURAL ONLY. Human semantic review and architecture relationship adjudication remain required."
+    "semantic_status": "STRUCTURAL AUDIT WITH SOURCE-HASH-VERIFIED ROLE ANNOTATIONS. Human semantic review and architecture relationship adjudication remain required."
 }
 # Build a review queue that exposes every ID occurrence and inbound/outbound local links.
 # It is a triage aid, not semantic proof or an automatic promotion decision.
