@@ -1674,3 +1674,5 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - Interaction: [IN-037](../../0.0/anchors/PALANG-0.0-IN-20261024-037-PORTABLE-RAHM-AND-HOST-PERSISTENCE.md) → [OUT-037](../../0.0/anchors/PALANG-0.0-OUT-20261024-037-PORTABLE-RAHM-AND-HOST-PERSISTENCE.md) → [EVT-0145](../BEHAVIOR-TRACE/EVT-0145-PORTABLE-RAHM-HOST-CAPABILITY-ARCHITECTURE-2026-10-24.md).
 - Package artifacts: `docs/portable/RAHM/` (8 files; export digests pending).
 - Open gates: complete read-back, calculate and reconcile SHA-256 digests, validate JSON/schema, run fresh-context recovery, test persistent memory across restart, test idle background execution where supported, and run second-host conformance. No guarantee until evidence passes.
+- Focused branch Point 0: [host persistence/background proof](../../0.0/anchors/GPT6-RAHM-HOST-PERSISTENCE-POINT-0-2026-10-24-001.md).
+- Next action: [NEXT-043](../../0.0/anchors/PALANG-0.0-NEXT-20261024-043-HOST-PERSISTENCE-BACKGROUND-AND-EXPORT-PROOF.md) — OPEN / NOT RUN.
