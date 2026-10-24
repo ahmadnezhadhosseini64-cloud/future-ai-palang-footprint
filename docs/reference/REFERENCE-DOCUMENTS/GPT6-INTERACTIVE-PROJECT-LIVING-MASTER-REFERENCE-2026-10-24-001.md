@@ -198,3 +198,12 @@ This living master records repository architecture only. It does not prove conti
 - Capability proof: DECLARED → CONFIGURED → EXECUTION OBSERVED → RESTART/IDLE TEST PASSED → INDEPENDENT READ-BACK → ACCEPTED.
 - Current proof boundary: package files were written, but digest finalization, complete package read-back, schema validation, fresh-context recovery, persistent-memory restart test, idle-background test, and second-host test are not yet proven. Do not call these capabilities guaranteed or always-on.
 - Next action: [NEXT-043](../../0.0/anchors/PALANG-0.0-NEXT-20261024-043-HOST-PERSISTENCE-BACKGROUND-AND-EXPORT-PROOF.md) — OPEN / NOT RUN once registered.
+
+
+## Living update — CURRENT-046 host capability fallback — v1.4.0
+
+- New interaction: [IN-038](../../0.0/anchors/PALANG-0.0-IN-20261024-038-CAPABILITY-FALLBACK-AND-AUDIT.md) → [OUT-038](../../0.0/anchors/PALANG-0.0-OUT-20261024-038-CAPABILITY-FALLBACK-AND-AUDIT.md) → [EVT-0146](../../architecture/BEHAVIOR-TRACE/EVT-0146-HOST-CAPABILITY-FALLBACK-AND-ARCHITECTURE-AUDIT-2026-10-24.md) → [CURRENT-046](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-046-CAPABILITY-FALLBACK.md).
+- New bound architecture folder: [HOST-CAPABILITY-FALLBACK](../../architecture/HOST-CAPABILITY-FALLBACK/README.md), with runtime, persistence, scheduler and conformance contracts.
+- Next action: [NEXT-044](../../0.0/anchors/PALANG-0.0-NEXT-20261024-044-FALLBACK-TEST-AND-INDEX-RECONCILIATION.md) — OPEN / NOT RUN.
+- The prior REFERENCE_INDEX fetch 404 was recovered by a later successful fetch. Its update/read-back match is still pending until the new marker and links are verified after write.
+- Host memory, idle background execution, runtime installation, SHA-256 integrity, schema validation and second-host compatibility remain NOT VERIFIED / NOT RUN.
