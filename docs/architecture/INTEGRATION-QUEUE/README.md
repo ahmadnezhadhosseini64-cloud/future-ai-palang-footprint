@@ -1494,3 +1494,9 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 ## Pair-032 correction and re-verification
 - First Behavior Hunter run [40060387719](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40060387719) failed at IN recovery because IN-032 lacked the direct OUT-032 reference; 65 unit tests passed before recovery failed.
 - Corrective link is being added. Re-run both directions and inspect artifacts before closing this gate. Preserve the failed run.
+
+
+## Pair-032 verification closure — EVT-0130
+- Behavior Hunter run 40060524636 SUCCESS on tested SHA `6936932f39d21d5af422d357ee0b41082a9f281e`; artifact 12547123152 inspected (SHA-256 `c8a8cd44292be51def96d51dc4930fcaf5a304137f901053b69c1640784209ab`).
+- Both recovery directions returned RECOVERED for IN-032/OUT-032, EVT-0130 and NEXT-032; zero failures. Ledger PASS; proposal gate remains owner-gated.
+- Next: separate fresh-session recovery and continue Issues #19/#20/#21. Do not infer external persistence or host-wide capture from CI.

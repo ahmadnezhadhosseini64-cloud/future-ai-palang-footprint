@@ -594,3 +594,9 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - [EVT-0130](./EVT-0130-LIVING-STATUS-ARCHITECTURE-GROWTH-DEEP-AUDIT-2026-10-24.md): living status transparency, architecture-growth audit and pair-032 registration.
 - Pair: [IN-032](../../0.0/anchors/PALANG-0.0-IN-20261024-032-LIVING-STATUS-AND-ARCHITECTURE-GROWTH.md) / [OUT-032](../../0.0/anchors/PALANG-0.0-OUT-20261024-032-LIVING-STATUS-AND-ARCHITECTURE-GROWTH.md).
 - Next: [NEXT-032](../../0.0/anchors/PALANG-0.0-NEXT-20261024-032-FRESH-SESSION-AND-DEEP-RECONCILIATION.md).
+
+
+## Pair-032 recovery verification — EVT-0130
+- Run 40060524636 SUCCESS on tested SHA `6936932f39d21d5af422d357ee0b41082a9f281e`; artifact 12547123152 inspected; ZIP SHA-256 `c8a8cd44292be51def96d51dc4930fcaf5a304137f901053b69c1640784209ab`.
+- Both directions recovered the current pair IN-032/OUT-032, event EVT-0130 and checkpoint NEXT-032. First-run failure due to the missing reciprocal link is preserved in EVT-0130.
+- Fresh-session recovery remains NOT RUN; Issues #19/#20/#21 OPEN; host-wide capture/external persistence NOT PROVEN.

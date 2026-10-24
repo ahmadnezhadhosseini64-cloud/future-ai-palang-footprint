@@ -4,7 +4,7 @@
 - Stable ID: PALANG-0.0-NEXT-20261024-032-FRESH-SESSION-AND-DEEP-RECONCILIATION
 - Production ID: NEXT-032
 - Version: 1.0.0
-- Status: ACTIVE / LIVING / CI-VERIFICATION-PENDING-FOR-PAIR-032
+- Status: ACTIVE / LIVING / REPOSITORY-CI-PASS / FRESH-SESSION-OPEN
 - Current pair: [IN-032](./PALANG-0.0-IN-20261024-032-LIVING-STATUS-AND-ARCHITECTURE-GROWTH.md) / [OUT-032](./PALANG-0.0-OUT-20261024-032-LIVING-STATUS-AND-ARCHITECTURE-GROWTH.md)
 - Event: [EVT-0130](../../architecture/BEHAVIOR-TRACE/EVT-0130-LIVING-STATUS-ARCHITECTURE-GROWTH-DEEP-AUDIT-2026-10-24.md)
 - Prior checkpoint: [NEXT-031](./PALANG-0.0-NEXT-20261024-031-LATEST-PAIR-RECOVERY-AND-STATUS-TRANSPARENCY.md)
@@ -25,3 +25,7 @@ Pair 032 is recovered from both directions on the exact tested SHA; all canonica
 
 ## Immediate corrective action — pair-032 reciprocal link
 The first run failed because IN-032 lacked a direct OUT-032 link. This defect is recorded in EVT-0130. The next CI run must prove reciprocal identity and recover pair 032 from both directions. The failed run must remain preserved.
+
+
+## Pair-032 CI result
+Run 40060524636 succeeded on tested SHA `6936932f39d21d5af422d357ee0b41082a9f281e`; both recovery directions were inspected in artifact 12547123152 (SHA-256 `c8a8cd44292be51def96d51dc4930fcaf5a304137f901053b69c1640784209ab`). Next: perform the separate fresh-session test and continue Issues #19/#20/#21. This repository result does not close those external/runtime gaps.

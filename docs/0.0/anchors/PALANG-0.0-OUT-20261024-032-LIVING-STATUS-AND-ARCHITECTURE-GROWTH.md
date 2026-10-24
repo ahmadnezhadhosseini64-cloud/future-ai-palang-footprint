@@ -28,3 +28,11 @@
 4. Require an independently performed fresh-session recovery.
 5. Continue semantic ID adjudication and historical source reconciliation.
 6. Add a durable status heartbeat/receipt pattern to every long-running workflow so a user can distinguish running, finished, blocked and not-started.
+
+
+## CI verification — pair 032
+- [Behavior Hunter run 40060524636](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40060524636): SUCCESS on tested SHA `6936932f39d21d5af422d357ee0b41082a9f281e`; all workflow steps succeeded.
+- Artifact ID `12547123152`, downloaded and inspected; ZIP SHA-256 `c8a8cd44292be51def96d51dc4930fcaf5a304137f901053b69c1640784209ab`.
+- Both manifests independently recovered `IN-032 ↔ OUT-032`, interaction `INT-20261024-032`, event `EVT-0130`, checkpoint `NEXT-032`; zero recovery failures.
+- Ledger PASS: 3 hash-linked records, zero errors. Proposal gate READY_FOR_OWNER_REVIEW, evidence VERIFIED, owner decision PENDING, no canonical mutation or promotion. Production evidence smoke resolved 1 repository file; no production test PASS claimed.
+- Fresh-session recovery NOT RUN; host-wide capture and external persistence NOT PROVEN; Issues #19/#20/#21 OPEN.

@@ -4,7 +4,7 @@
 - Stable ID: PALANG-LIVING-STATUS-ARCHITECTURE-GROWTH-DEEP-AUDIT-2026-10-24-001
 - Production ID: LSA-GROWTH-HAIF-2026-10-24-001
 - Version: 1.0.0
-- Status: ACTIVE / LIVING / REGISTERED / RECOVERY-REPAIR-IN-PROGRESS / CI-VERIFICATION-PENDING
+- Status: ACTIVE / LIVING / REGISTERED / CI-PASS / ARTIFACT-READBACK-VERIFIED
 - Interaction pair: [IN-032](../../0.0/anchors/PALANG-0.0-IN-20261024-032-LIVING-STATUS-AND-ARCHITECTURE-GROWTH.md) / [OUT-032](../../0.0/anchors/PALANG-0.0-OUT-20261024-032-LIVING-STATUS-AND-ARCHITECTURE-GROWTH.md)
 - Previous event: [EVT-0129](./EVT-0129-LIVING-REGISTRATION-ARCHITECTURE-GROWTH-AND-RECOVERY-REPAIR-2026-10-24.md)
 - Previous checkpoint: [NEXT-031](../../0.0/anchors/PALANG-0.0-NEXT-20261024-031-LATEST-PAIR-RECOVERY-AND-STATUS-TRANSPARENCY.md)
@@ -45,3 +45,12 @@ The architecture update gate validates proposals; the append-only hash-linked le
 - Behavior Hunter run [40060387719](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40060387719) failed on commit `53939bd0b1d07fc41814d4d118107fecc731100b` after all 65 unit tests passed; the first recovery command exited non-zero and the later steps were skipped.
 - Read-back of the exact tested commit identified the cause: IN-032 did not contain a direct reciprocal link to OUT-032. The fail-closed resolver correctly refused to report RECOVERED. This is a genuine registration defect, not a test flake; it remains part of the audit history.
 - Repair: add an explicit `Paired output: OUT-032` link to IN-032, then rerun both recovery directions and inspect the resulting artifact. Do not mark pair 032 CI-verified until that run succeeds.
+
+
+## Pair-032 verification closure
+- The first run failed because IN-032 lacked the reciprocal OUT-032 link; that failure and correction remain preserved above.
+- [Successful Behavior Hunter run 40060524636](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40060524636) ran on tested SHA `6936932f39d21d5af422d357ee0b41082a9f281e`; all steps succeeded.
+- Artifact `12547123152` was downloaded and inspected; ZIP SHA-256 `c8a8cd44292be51def96d51dc4930fcaf5a304137f901053b69c1640784209ab`.
+- `recovery-from-IN.json`: RECOVERED IN-032 → OUT-032; `recovery-from-OUT.json`: RECOVERED OUT-032 → IN-032. Both identify INT-20261024-032, EVT-0130, NEXT-032; zero failures.
+- Ledger manifest PASS, 3 records, hash chain verified, zero errors. Proposal gate READY_FOR_OWNER_REVIEW, owner decision PENDING, canonical mutation false, promotion false. Resolver production smoke: one repo file resolved with matching hash; production claim remains false.
+- This verifies repository recovery on the tested SHA only. Fresh-session recovery NOT RUN; host-wide capture and external persistence NOT PROVEN; Issues #19/#20/#21 OPEN.

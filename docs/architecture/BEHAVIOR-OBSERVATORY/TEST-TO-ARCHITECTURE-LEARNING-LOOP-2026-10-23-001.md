@@ -191,3 +191,9 @@ Each proposed insight includes:
 - Pair 032 / EVT-0130 / NEXT-032 is newly registered. CI recovery and artifact read-back for pair 032 are pending.
 - User-facing status protocol: acknowledge promptly; report RUNNING only while a real operation is underway; report VERIFIED only after independent read-back; name OPEN gaps and next durable action. Do not claim background execution or live ChatGPT UI instrumentation.
 - Preserve issue status: #19 real-document acceptance OPEN; #20 runtime capture/end-to-end recovery OPEN; #21 historical census/semantic reconciliation OPEN. Fresh-session recovery NOT RUN; external persistence and host-wide capture NOT PROVEN.
+
+
+## Verified current pair — EVT-0130
+- Pair 032 is now recovered in both directions on tested SHA `6936932f39d21d5af422d357ee0b41082a9f281e` (run 40060524636); artifact 12547123152 inspected, SHA-256 `c8a8cd44292be51def96d51dc4930fcaf5a304137f901053b69c1640784209ab`.
+- The missing reciprocal link in the first attempt was caught, recorded and repaired. No prior history was overwritten.
+- Remaining boundaries: fresh-session NOT RUN; host-wide capture/external persistence NOT PROVEN; Issues #19/#20/#21 OPEN.

@@ -659,3 +659,9 @@ Current active gate remains [EVT-0122](../../architecture/BEHAVIOR-TRACE/EVT-012
 ## Pair-032 verification status — EVT-0130
 - First run 40060387719 failed after 65 unit tests passed because IN-032 lacked a direct reciprocal link to OUT-032. The resolver correctly blocked recovery; failure preserved in EVT-0130.
 - The link is being repaired. Pair 032 is registered and read-back verified, but CI recovery remains pending until a new run and both manifests are inspected.
+
+
+## Pair-032 verification closure — EVT-0130
+- [Behavior Hunter run 40060524636](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40060524636): SUCCESS on tested SHA `6936932f39d21d5af422d357ee0b41082a9f281e`; artifact 12547123152 inspected; ZIP SHA-256 `c8a8cd44292be51def96d51dc4930fcaf5a304137f901053b69c1640784209ab`.
+- Both directions recovered pair INT-20261024-032 (IN-032/OUT-032), EVT-0130 and NEXT-032 with zero failures. Ledger PASS (3 records/hash chain verified); proposal gate READY_FOR_OWNER_REVIEW (PENDING owner decision, no mutation/promotion).
+- The failed first attempt and reciprocal-link repair are preserved in EVT-0130. Fresh-session recovery NOT RUN; Issues #19/#20/#21 OPEN; host-wide capture and external persistence NOT PROVEN.

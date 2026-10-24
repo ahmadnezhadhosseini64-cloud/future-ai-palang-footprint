@@ -922,3 +922,8 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 
 ## Pair-032 status correction
 - First recovery run 40060387719 failed because IN-032 omitted its reciprocal OUT-032 link. The fail-closed behavior is correct; repair and rerun are in progress. Do not transfer the prior pair-031 PASS to pair 032.
+
+
+## Pair-032 verification closure — EVT-0130
+- [Behavior Hunter run 40060524636](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40060524636) SUCCESS on tested SHA `6936932f39d21d5af422d357ee0b41082a9f281e`; artifact 12547123152 inspected, SHA-256 `c8a8cd44292be51def96d51dc4930fcaf5a304137f901053b69c1640784209ab`.
+- IN-032 → OUT-032 and OUT-032 → IN-032 both RECOVERED; zero failures. Fresh-session recovery remains NOT RUN; Issues #19/#20/#21 remain OPEN.
