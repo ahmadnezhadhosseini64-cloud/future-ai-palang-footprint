@@ -29,3 +29,10 @@
 - Exact-byte SHA-256 comparison: PASS for all 24 files in the manifest inventory.
 - The workflow also emitted the manifest's own SHA-256 as external run evidence; because later manifest status updates change its bytes, use the final post-update run for the final manifest digest.
 - These results do not prove clean-host/second-host AI import, independent IN/OUT state equivalence, persistence, idle background, or full repository-wide graph repair.
+
+## Latest final package receipt
+- [Portable RAHM Conformance run 40114697473](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40114697473) completed SUCCESS.
+- 24 manifest file SHA-256 values matched exact checked-out bytes; schema valid fixture passed with 0 errors and invalid fixture was rejected with 4 errors.
+- Limited IN/OUT checkpoint/link recovery equivalence passed; the workflow explicitly does not claim full state reconstruction or AI-host transfer.
+- Archive artifact: [haif-rahm-portable-package](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40114697473/artifacts/12567559136); 25 files including the manifest, 173,495 bytes uncompressed archive size as logged; archive SHA-256 `109cdb9af62f9f4f270aafea96076a5e0177877eb553551ed2fa268e997478df`.
+- The repository-wide structural audit remains REVIEW_REQUIRED; the 11 missing links and identifier/parent/timestamp conflicts are not resolved by this package test.
