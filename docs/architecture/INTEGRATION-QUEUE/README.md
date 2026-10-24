@@ -1667,3 +1667,10 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - Next action: [NEXT-042](../../0.0/anchors/PALANG-0.0-NEXT-20261024-042-RAHM-CONFORMANCE-EXPORT-CROSS-HOST-TEST.md).
 - Required work: build the self-contained Rahm package and host capability manifest; implement interaction/evidence schemas; run positive and negative conformance cases; test clean-context recovery in GPT-6 and a separate AI host; record each result and read it back.
 - Status: package NOT BUILT; cross-host test NOT RUN; continuous runtime capture NOT VERIFIED. Do not claim universal host compatibility or background execution.
+
+
+## CURRENT-045 — Rahm portable package and host persistence proof
+- Current checkpoint: [CURRENT-045](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-045-RAHM-PORTABLE-HOST-PERSISTENCE.md).
+- Interaction: [IN-037](../../0.0/anchors/PALANG-0.0-IN-20261024-037-PORTABLE-RAHM-AND-HOST-PERSISTENCE.md) → [OUT-037](../../0.0/anchors/PALANG-0.0-OUT-20261024-037-PORTABLE-RAHM-AND-HOST-PERSISTENCE.md) → [EVT-0145](../BEHAVIOR-TRACE/EVT-0145-PORTABLE-RAHM-HOST-CAPABILITY-ARCHITECTURE-2026-10-24.md).
+- Package artifacts: `docs/portable/RAHM/` (8 files; export digests pending).
+- Open gates: complete read-back, calculate and reconcile SHA-256 digests, validate JSON/schema, run fresh-context recovery, test persistent memory across restart, test idle background execution where supported, and run second-host conformance. No guarantee until evidence passes.
