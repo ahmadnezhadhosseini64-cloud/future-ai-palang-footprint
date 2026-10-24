@@ -26,3 +26,10 @@ MASTER → RAHM → OBSERVATION → BEHAVIOR STUDY → VALIDATION → CHILD CAND
 REGISTERED = written; READ-BACK VERIFIED = fetched again and matched; VALIDATED = acceptance tests passed; ACTIVE = selected; LIVING = additive evolution; OPEN/PENDING = unfinished; NOT VERIFIED = insufficient evidence; NOT RUN = no execution evidence.
 
 Required response envelope: host capabilities → package integrity → reconstructed state → observations vs hypotheses → tests → failures/gaps → next action → persistence/background proof status.
+
+## Current inherited-architecture binding — CURRENT-048
+- Start/current checkpoint: [CURRENT-048](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-048-RAHM-INHERITED-ARCHITECTURE.md).
+- Inherited living master: [GPT6 New Project Inherited Architecture](../../reference/REFERENCE-DOCUMENTS/GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md).
+- Current interaction event: [EVT-0148](../../architecture/BEHAVIOR-TRACE/EVT-0148-RAHM-INHERITED-ARCHITECTURE-AND-EXPORTABLE-RECOVERY-2026-10-24.md).
+- Next action: [NEXT-046](../../0.0/anchors/PALANG-0.0-NEXT-20261024-046-RAHM-PORTABILITY-VALIDATION.md).
+- On host import, restore both the architecture and the open-gate ledger. Do not infer that host memory or background execution exists. Require independent read-back and target-host conformance evidence before declaring transfer verified.
