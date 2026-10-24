@@ -1,8 +1,8 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
   "version": "1.1.0",
-  "manifest_status": "SHA256_EXPECTATIONS_POPULATED; FINAL_COMPARISON_RUN_PENDING",
-  "created_from_checkpoint": "G6IP-RAHM-CURRENT-045-20261024",
+  "manifest_status": "SHA256_EXPECTATIONS_POPULATED; COMPARE_ON_EACH_EXPORT",
+  "created_from_checkpoint": "G6IP-RAHM-CURRENT-054-20261024",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [
     {
@@ -171,5 +171,5 @@
     "canonical_mother_index_queue_integration": "WRITTEN_AND_FETCHED; FULL_GRAPH_REVIEW_OPEN",
     "schema_workflow_overall": "PASS_RUN_40114451032"
   },
-  "note": "Git blob identifiers were read from repository responses. SHA-256 digest generation and independent byte-level verification remain pending."
+  "note": "The latest successful portable-conformance workflow is the authority for digest comparison, schema fixture results, and archive build. Do not infer AI-host import, persistent memory, or idle-background capability from package build success."
 }
