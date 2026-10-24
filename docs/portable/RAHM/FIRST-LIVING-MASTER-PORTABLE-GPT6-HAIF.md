@@ -2,7 +2,7 @@
 
 - Stable ID / شناسه پایدار: `G6IP-FIRST-LIVING-MASTER-PORTABLE-RAHM-20261024-001`
 - Production ID / شناسه تولید: `G6IP-FLM-RAHM-001`
-- Version / نسخه: 1.0.2
+- Version / نسخه: 1.0.3
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED for this file and its focused relative links; conformance gates remain OPEN.
 - Authority / مرجع حاکم: اصول بنیادی پروژه + سند مادر معماری موروثی + بسته قابل‌حمل RAHM.
 - User Point 0: [G6IP-RAHM-USER-POINT-0-20261024-003](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-003-FIRST-LIVING-MASTER-AND-PORTABILITY.md)
@@ -192,3 +192,12 @@ next_action: "<deterministic next step>"
 - [ ] مادر، index و queue اصلی ادغام و بازخوانی شوند.
 
 **وضعیت پذیرش:** OPEN / NOT RUN. ایجاد این سند به‌تنهایی هیچ‌یک از این معیارهای آزمون را PASS نمی‌کند.
+
+
+## Living update — CURRENT-055 / EVT-0157
+- Current checkpoint: [CURRENT-055](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-055-FIRST-MASTER-READINESS.md).
+- Input/output: [IN-048](../../0.0/anchors/PALANG-0.0-IN-20261024-048-TEST-HARNESS-FAILURE-AND-LIVING-MASTER-READYNESS.md) → [OUT-047](../../0.0/anchors/PALANG-0.0-OUT-20261024-047-TEST-HARNESS-FAILURE-AND-LIVING-MASTER-READYNESS.md).
+- Learning event: [EVT-0157](../../architecture/BEHAVIOR-TRACE/EVT-0157-TEST-HARNESS-FAILURE-AS-ARCHITECTURE-LEARNING-2026-10-24.md).
+- Next required action: [NEXT-049](../../0.0/anchors/PALANG-0.0-NEXT-20261024-049-REAL-HOST-TRANSFER-AND-GRAPH-AUDIT.md).
+- Run [40115178748](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40115178748) verifies only its defined CI scope. Real host import, full state recovery, persistence and background execution remain OPEN / NOT VERIFIED.
+- Permanent lesson: preserve a failed run; record cause and correction; rerun and read back evidence; never promote partial success into a broader claim.
