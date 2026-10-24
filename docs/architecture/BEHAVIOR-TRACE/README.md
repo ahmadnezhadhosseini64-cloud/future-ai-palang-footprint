@@ -605,3 +605,8 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 ## Deep audit baseline — EVT-0130
 - [EVT-0130](./EVT-0130-LIVING-STATUS-ARCHITECTURE-GROWTH-DEEP-AUDIT-2026-10-24.md) records the inspected Living Architecture Audit artifact and exact snapshot counts.
 - Next: classify template-derived link false positives, review collision/parent-edge batches, and resolve the single timestamp ambiguity from source evidence.
+
+
+## EVT-0131 — living architecture and status transparency
+- [Event](./EVT-0131-LIVING-ARCHITECTURE-STATUS-TRANSPARENCY-AND-GROWTH-2026-10-24.md) links [IN-033](../../0.0/anchors/PALANG-0.0-IN-20261024-033-LIVING-ARCHITECTURE-AND-STATUS-TRANSPARENCY.md), [OUT-033](../../0.0/anchors/PALANG-0.0-OUT-20261024-033-LIVING-ARCHITECTURE-AND-STATUS-TRANSPARENCY.md), and [NEXT-033](../../0.0/anchors/PALANG-0.0-NEXT-20261024-033-LIVING-STATUS-AND-COLD-START.md).
+- New status receipt capability: `scripts/behavior-hunter/emit_status_receipt.py`, covered by `tests/behavior-hunter/test_emit_status_receipt.py`, wired into Behavior Hunter CI. Verification pending until the exact run/artifact are inspected.
