@@ -35,15 +35,16 @@ def _pair_id(text):
     return m.group(1) if m else None
 
 def _event_id(text):
-    # Prefer an explicitly labeled current/result event. Earlier anchors often cite
-    # a prior event before the current result event; taking the first EVT token can
-    # incorrectly bind a new pair to stale history.
-    explicit = re.search(
-        r"(?mi)^\s*-?\s*(?:Result event|Event):\s*(?:\[(EVT-\d{4})\]\([^)]*\)|(EVT-\d{4}))",
-        text,
-    )
-    if explicit:
-        return explicit.group(1) or explicit.group(2)
+    # Prefer the explicitly labeled current/result event. A prior-event reference
+    # may appear earlier in the anchor and must not become the current graph root.
+    for line in text.splitlines():
+        explicit = re.match(
+            r"^\s*-?\s*(?:Result event|Event):\s*\[?(EVT-\d{4})\]?",
+            line,
+            flags=re.IGNORECASE,
+        )
+        if explicit:
+            return explicit.group(1)
     candidates = re.findall(r"\bEVT-\d{4}\b", text)
     return candidates[0] if candidates else None
 
