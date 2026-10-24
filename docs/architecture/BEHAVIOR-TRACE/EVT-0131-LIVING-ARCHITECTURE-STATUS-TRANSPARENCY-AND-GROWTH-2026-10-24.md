@@ -128,3 +128,10 @@ Complete and read back the IN/OUT pair and all canonical graph edges; run the cu
 - Artifact `12547921317` was downloaded and inspected; ZIP SHA-256 `c44071afab49df4bfb33141f432db059e21455f3161801f4d711efd34d690f1f`.
 - Both recovery directions: RECOVERED for IN-033 ↔ OUT-033, zero failures. Ledger: PASS, 4 records, hash chain verified. Candidate manifest: EVT-0131 CANDIDATE_READY / NOT_RUN. Proposal gate: READY_FOR_OWNER_REVIEW, owner decision PENDING, promotion false.
 - The exact tested SHA predates later evidence-only commits and this receipt-link commit. A subsequent workflow result is required before claiming the latest main SHA itself was tested.
+
+
+## Candidate generator fail-closed lesson
+- Run [40061383750](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40061383750) recovered IN-033 and OUT-033 successfully but later failed candidate-test generation because the new record used invariants the current generator does not implement.
+- The generator correctly treated unsupported invariants as candidate failures. The record was corrected to use the generator's supported executable invariants; additional architecture-level review targets were moved into a separate `audit_focus` field rather than falsely claiming the generator checks them.
+- Follow-up run [40061440975](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40061440975) passed all steps and 71 tests; later run 40061873837 repeated the pass with the durable receipt-linked documentation.
+- Preserve this failure as a design lesson: every automated invariant must either be implemented and tested by the validator or explicitly labeled as a review target, never treated as checked merely because it appears in a record.
