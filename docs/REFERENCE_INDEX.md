@@ -1111,3 +1111,12 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Rule: show completed/blocked/next status; do not imply background work without a running mechanism; preserve every input/output/event/error/correction as an additive, linked record.
 - Verification boundary: new records and mother/index require read-back; export/recovery, always-on automation, and second-project integration remain unverified.
 
+
+
+## CURRENT-049 read-back pass and NPFAP v1.1.3 — 2026-10-24
+- Current checkpoint: [CURRENT-049](0.0/anchors/PALANG-0.0-CURRENT-20261024-049-LIVE-STATUS-AND-OUTPUT-CONTINUITY.md); read-back verification pass appended.
+- Living mother: [NPFAP v1.1.3](reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md).
+- Interaction chain: [IN-042](0.0/anchors/PALANG-0.0-IN-20261024-042-LIVE-STATUS-AND-OUTPUT-CONTINUITY.md) → [OUT-041](0.0/anchors/PALANG-0.0-OUT-20261024-041-LIVE-STATUS-AND-OUTPUT-CONTINUITY.md) → [EVT-0149](architecture/BEHAVIOR-TRACE/EVT-0149-LIVE-STATUS-AND-OUTPUT-CONTINUITY-2026-10-24.md) → CURRENT-049 → mother/index → [NEXT-044](0.0/anchors/PALANG-0.0-NEXT-20261024-044-EXTRACTABLE-RAHM-CHILD-AND-COLD-START-TEST.md).
+- Verified by fetch after writes: IN-042, OUT-041, EVT-0149, CURRENT-049, NEXT-044, mother, and index. This confirms path/content retrieval and expected IDs/links only.
+- Still open: NEXT-044 export and fresh-context recovery test; identification and integration of second project's repository; always-on search/background automation.
+
