@@ -1686,3 +1686,11 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - Completed this cycle: post-write REFERENCE_INDEX read-back and key-link match; fallback folder and master read-backs.
 - Open gates: SHA-256 reconciliation; JSON Schema fixtures; full link audit; runtime deployment; persistent-memory restart test; idle background test; clean-host and second-host conformance.
 - Read-back reconciliation: CURRENT-046, IN-038/OUT-038, EVT-0146, NEXT-044, fallback files, index, queue and mother docs were fetched after writes; principal IDs/links matched. Runtime and integrity gates remain OPEN / NOT RUN.
+
+
+## CURRENT-047 — Behavior Hunter / چشم پلنگ
+- Current checkpoint: [CURRENT-047](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-047-BEHAVIOR-HUNTER-LIVING-ANCHOR.md).
+- Chain: [CURRENT-046](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-046-CAPABILITY-FALLBACK.md) → [IN-039](../../0.0/anchors/PALANG-0.0-IN-20261024-039-BEHAVIOR-HUNTER-LIVING-RULE.md) → [OUT-039](../../0.0/anchors/PALANG-0.0-OUT-20261024-039-BEHAVIOR-HUNTER-LIVING-RULE.md) → [EVT-0147](../BEHAVIOR-TRACE/EVT-0147-BEHAVIOR-HUNTER-LIVING-RULE-AND-CHECKPOINT-2026-10-24.md) → CURRENT-047 → [NEXT-045](../../0.0/anchors/PALANG-0.0-NEXT-20261024-045-BEHAVIOR-HUNTER-TEST-AND-OPEN-GATES.md).
+- Governing rule: evidence-matched status only; documented-only features are not active; unrun/failed tests stay OPEN with IDs, causes and recovery steps.
+- OPEN / NOT RUN: JSON Schema positive/negative fixtures, exact-byte SHA-256, full link and duplicate-ID audit, behavior regression, IN/OUT restart recovery, runtime persistence, idle background, clean-host and second-host tests.
+- Do not detour to Dropbox unless explicitly reopened; continue from NEXT-045.
