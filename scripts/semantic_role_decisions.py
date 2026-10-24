@@ -48,7 +48,7 @@ def apply_role_decisions(groups, nodes, decisions, identifier_type=None):
             accepted.append(decision.get("decision_id"))
             break
         enriched.append(item)
-    return enriched, {"decisions_loaded": len(decisions), "decisions_accepted": len(set(accepted)), "decisions_rejected": rejected,
+    return enriched, {"decisions_loaded": len(decisions), "decisions_accepted": len(set(accepted)), "accepted_decision_ids": sorted(set(accepted)), "decisions_rejected": rejected,
                       "groups_reviewed": sum(g["semantic_review"]["status"] == "ROLE-ADJUDICATED" for g in enriched),
                       "groups_unreviewed": sum(g["semantic_review"]["status"] != "ROLE-ADJUDICATED" for g in enriched)}
 
