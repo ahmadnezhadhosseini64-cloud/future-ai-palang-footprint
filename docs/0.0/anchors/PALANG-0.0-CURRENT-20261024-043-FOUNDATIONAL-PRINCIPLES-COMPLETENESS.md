@@ -39,3 +39,7 @@ The foundational mother is v1.0.2. The GPT-6 living master is updated to v1.3.7 
 
 ## Exact read-back receipt
 Fetched after write and checked identifiers/links: NPFAP v1.0.2, HA-001, inherited mother, GPT-6 living master v1.3.7, Reference Index, 0.0 registry, IN-035, OUT-035, EVT-0143, CURRENT-043 and NEXT-041. The active cross-links CURRENT-043 / IN-035 / OUT-035 / EVT-0143 / NPFAP v1.0.2 / NEXT-041 were present. This verifies repository content and declared links, not the still-open adoption, prototype, cold-start or external-destination gates.
+
+
+## Contract v1.3.1 final read-back
+UIALAC v1.3.1 was fetched after write and matched; its Reference Index entry now states READ-BACK VERIFIED / IDENTIFIERS MATCHED. The foundational mother v1.0.2 also fetched after its latest update. NEXT-041 remains open for detailed principle-by-principle and link verification.
