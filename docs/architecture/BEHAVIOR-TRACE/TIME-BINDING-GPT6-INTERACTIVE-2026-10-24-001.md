@@ -9,7 +9,7 @@
 - Exact user-message time: UNKNOWN / UNVERIFIED. It is not replaced by a commit time.
 - Read-back: all five primary artifacts were fetched again after write; exact paths and expected IDs were present. Exact wall-clock time of the read-back operation was not exposed, so no fabricated read-back timestamp is recorded.
 
-## Canonical last-change commit times
+## Canonical last-change commit times for the five primary artifacts
 
 | Artifact | Final commit SHA | UTC (canonical) | Asia/Tehran (UTC+03:30) |
 |---|---|---|---|
@@ -18,9 +18,6 @@
 | OUT-027 | `755e22a94735fa38d1bc3dbdbb926b416bc9fbcb` | `2026-10-24T07:01:40Z` | `2026-10-24T10:31:40+03:30` |
 | CURRENT-037 | `61b62118f702d61ad3a90582d05f3d899a1c7ccc` | `2026-10-24T07:01:55Z` | `2026-10-24T10:31:55+03:30` |
 | EVT-0135 | `908ba1e69498d63d9bc8bbc46742d7357d15cc16` | `2026-10-24T07:02:00Z` | `2026-10-24T10:32:00+03:30` |
-| Reference index | `a89b1d1ccda8d148ab0aa9800926cfbe8b3643b6` | `2026-10-24T07:00:55Z` | `2026-10-24T10:30:55+03:30` |
-| 0.0 index | `1d82f58adc4c786a1948e3c612dacf99c93af84d` | `2026-10-24T07:00:58Z` | `2026-10-24T10:30:58+03:30` |
-| Model initial README | `bdae442facc1facc88ef055776b3607d2bfb45ff` | `2026-10-24T07:01:01Z` | `2026-10-24T10:31:01+03:30` |
 
 ## Initial creation commits (history preserved)
 - Master initial creation: `5203c51fb8038ce62a5a2977f0d39378318b4e51` — UTC `2026-10-24T07:00:32Z` / Tehran `2026-10-24T10:30:32+03:30`.
@@ -35,3 +32,11 @@
 - Buffer / Persistent Memory / Library: NOT VERIFIED by this operation.
 - Dropbox: OPEN / NOT VERIFIED.
 - Automatic capture of every future ChatGPT interaction: NOT PROVEN by repository commits.
+
+
+## Navigation index history
+The following commits first linked CURRENT-037 into the navigation indexes; they are historical link commits, not the final last-change timestamps of those files after the time-binding link was added:
+- Reference index first link: `a89b1d1ccda8d148ab0aa9800926cfbe8b3643b6` — UTC `2026-10-24T07:00:55Z` / Tehran `2026-10-24T10:30:55+03:30`.
+- 0.0 index first link: `1d82f58adc4c786a1948e3c612dacf99c93af84d` — UTC `2026-10-24T07:00:58Z` / Tehran `2026-10-24T10:30:58+03:30`.
+- Model README first link: `bdae442facc1facc88ef055776b3607d2bfb45ff` — UTC `2026-10-24T07:01:01Z` / Tehran `2026-10-24T10:31:01+03:30`.
+- For current canonical timestamps of navigation files, inspect their actual latest Git commit metadata; this record avoids treating earlier link commits as their current last-change time.
