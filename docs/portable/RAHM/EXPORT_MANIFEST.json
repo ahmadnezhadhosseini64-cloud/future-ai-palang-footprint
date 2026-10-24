@@ -1,158 +1,158 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.0.7",
-  "manifest_status": "GIT_BLOB_IDS_RECONCILED; EXACT_BYTE_SHA256_RECOMPUTE_PENDING",
+  "version": "1.0.8",
+  "manifest_status": "SHA256_VALUES_POPULATED; COMPARISON_RUN_PENDING",
   "created_from_checkpoint": "G6IP-RAHM-CURRENT-045-20261024",
-  "digest_algorithm": "SHA-256 over exact checked-out/exported file bytes; compare non-pending sha256 values in rahm-portable-conformance workflow. Git blob SHA-1 is a separate content-object identifier.",
+  "digest_algorithm": "SHA-256 over exact checked-out file bytes; values populated from workflow run 40114274953, to be independently compared by a subsequent successful workflow run. Git blob SHA-1 is tracked separately.",
   "files": [
     {
       "path": "docs/portable/RAHM/RAHM_BOOT.md",
       "version": "1.0.0",
       "git_blob_sha": "a49e854654db9206941d6cd85bd156e57170ca16",
-      "sha256": "PENDING"
+      "sha256": "f7c63ff373b235423b2c33c9952b0db7073b2389c53c87c0e7509cdfd5950b87"
     },
     {
       "path": "docs/portable/RAHM/RAHM_ARCHITECTURE.md",
       "version": "1.0.0",
       "git_blob_sha": "695632372be7447197914feaadbd94987cad5a23",
-      "sha256": "PENDING"
+      "sha256": "6150d0a00c0280173986a9aa0eea4f60cb138e0f06f8d80ca05707c96d3c452e"
     },
     {
       "path": "docs/portable/RAHM/HOST_CAPABILITY_MANIFEST.json",
       "version": "1.0.0",
       "git_blob_sha": "01f9bb3256a44558b12fa02d43beccc8c139b287",
-      "sha256": "PENDING"
+      "sha256": "a19d58108a19ecb9c33e737e2c0fb57b404cc03918e8cdc006605fa782e4a000"
     },
     {
       "path": "docs/portable/RAHM/INTERACTION_PAIR_SCHEMA.json",
       "version": "1.0.0",
       "git_blob_sha": "4a67add8d7a3b03f9be89a5127dbc0508573dff0",
-      "sha256": "PENDING"
+      "sha256": "279c6db72c34df22fe16201f85e7f27b117422998fd8ca6e96d147ed65060d59"
     },
     {
       "path": "docs/portable/RAHM/EVIDENCE_LEDGER.md",
       "version": "1.0.0",
       "git_blob_sha": "5c94d2823e8d8b0b716a9976651c4716f1e1774b",
-      "sha256": "PENDING"
+      "sha256": "1d178a23fbcf710db9851ba61b854b0ac6560ee6dc936618c17d9c34379faae8"
     },
     {
       "path": "docs/portable/RAHM/CONFORMANCE_TESTS.md",
       "version": "1.0.0",
       "git_blob_sha": "de139ac9bc0584a31a316f814614430b40e39908",
-      "sha256": "PENDING"
+      "sha256": "af79e8515fa485e870786400ee469494901d84105ee7c75c0b93d7b97ad9d6d5"
     },
     {
       "path": "docs/portable/RAHM/RECOVERY_AND_ROLLBACK.md",
       "version": "1.0.0",
       "git_blob_sha": "973e52665a250a5271cb631b16d996a5586e36b4",
-      "sha256": "PENDING"
+      "sha256": "52f7d102e32b18ef061cfecff73dc396aa727fe61d43634495a16b45d59625ab"
     },
     {
       "path": "docs/portable/RAHM/FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md",
       "version": "1.0.0",
       "git_blob_sha": "6086efde5ebcf500c35803a0eed246593dde266c",
-      "sha256": "PENDING"
+      "sha256": "021be20538c5f9000a31748deabae157729a31b30bb646d0fcf3d0c0d62e376d"
     },
     {
       "path": "docs/0.0/anchors/PALANG-0.0-IN-20261024-047-FIRST-LIVING-MASTER.md",
       "version": "1.0.0",
       "git_blob_sha": "d4c909db670f0bc47e136ff74d80559319a7dc49",
-      "sha256": "PENDING"
+      "sha256": "f4f385b89e91fcb733f56a004249243d285a5b1e463fb8ecee98726a5d0e1d74"
     },
     {
       "path": "docs/0.0/anchors/PALANG-0.0-OUT-20261024-046-FIRST-LIVING-MASTER.md",
       "version": "1.0.0",
       "git_blob_sha": "770432c661f6f8bcb80280e238017a02ad00427a",
-      "sha256": "PENDING"
+      "sha256": "a5c983c5c93dce8fdf1ff396ef317defb61fb4d0000f17d2299b086c124e3ef0"
     },
     {
       "path": "docs/architecture/BEHAVIOR-TRACE/EVT-0155-FIRST-LIVING-MASTER-PORTABLE-RAHM-2026-10-24.md",
       "version": "1.0.0",
       "git_blob_sha": "4b7b06c167b24f65a3f92de58aa44a4a62e15e2c",
-      "sha256": "PENDING"
+      "sha256": "7b1955667f9fce8b9a59be8418813bb36182810e4987ff07a9ddb28fc77cdef4"
     },
     {
       "path": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261024-054-FIRST-LIVING-MASTER.md",
       "version": "1.0.0",
       "git_blob_sha": "280532742a040135617ebaf1555071db35535ef1",
-      "sha256": "PENDING"
+      "sha256": "61b9f17400282f602d050cf9085b1d4583d83d564ed127421bed2080258443cc"
     },
     {
       "path": "docs/0.0/anchors/PALANG-0.0-NEXT-20261024-048-FIRST-MASTER-CONFORMANCE.md",
       "version": "1.0.0",
       "git_blob_sha": "9925b5bdab7b5fedf67adc79fc211ab55bc2324b",
-      "sha256": "PENDING"
+      "sha256": "eaec70170d698c27326c630c61b1a4b729af470d887e8d66a5ff6f6ddf7e3b6e"
     },
     {
       "path": "docs/reference/REFERENCE-DOCUMENTS/NPFAP-ADDENDUM-CURRENT-054-2026-10-24.md",
       "version": "1.0.0",
       "git_blob_sha": "f2c7cb106842990557a8366163b6257935becad5",
-      "sha256": "PENDING"
+      "sha256": "cb45b4a174a60f649ca7b69b797bac7292b9fdc15a65f0fac81bdc53d8cb5919"
     },
     {
       "path": "docs/REFERENCE_INDEX-CURRENT-054.md",
       "version": "1.0.0",
       "git_blob_sha": "2168fd714890aa4605ac797b5ac823cc488d990b",
-      "sha256": "PENDING"
+      "sha256": "2f55faf55f40df3da4d5718b7bffecd960081d60fc484b7528f2f69cfa691c9f"
     },
     {
       "path": "docs/architecture/INTEGRATION-QUEUE/CURRENT-054-PORTABLE-MASTER.md",
       "version": "1.0.0",
       "git_blob_sha": "d51f10060f5627b868bbf484365366cc2a3c624d",
-      "sha256": "PENDING"
+      "sha256": "f4df4dab17f9ae84bf7f32a7922e9a8fe04cbbab8301c571ef0199de49f9539f"
     },
     {
       "path": "docs/portable/RAHM/fixtures/interaction-pair-valid.json",
       "version": "current",
       "git_blob_sha": "c5baa1435999fc80d9b6e98eca890af996400546",
-      "sha256": "PENDING"
+      "sha256": "17ac39c87b83bd46ad1cf7ac6a624881b48dd0719db96f0dc579333775529464"
     },
     {
       "path": "docs/portable/RAHM/fixtures/interaction-pair-invalid.json",
       "version": "current",
       "git_blob_sha": "98e0ff175645581d6b5f15e438013023e29ace37",
-      "sha256": "PENDING"
+      "sha256": "978c0a98683630b29f0afb21042d04b7c68df2d1348a44500b83efa969ccdeb5"
     },
     {
       "path": "docs/architecture/INTEGRATION-QUEUE/README.md",
       "version": "current",
       "git_blob_sha": "149cc7a87c04bb115391577781caaca38782537d",
-      "sha256": "PENDING"
+      "sha256": "2b49bc10279f0ebf819b5bc957a164b37d9bdcb598073482de234c175b9c14b6"
     },
     {
       "path": "docs/reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md",
       "version": "current",
       "git_blob_sha": "130bda5a7fb3f9146f858980dd95cb9e9791a8eb",
-      "sha256": "PENDING"
+      "sha256": "984e89f28edac2400febdd182f0cf565b29c96e80bf31ca896f779dec89ddff4"
     },
     {
       "path": "docs/reference/REFERENCE-DOCUMENTS/GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md",
       "version": "current",
       "git_blob_sha": "35d0216994fbe525f9a6fb0ceca2f578b5486707",
-      "sha256": "PENDING"
+      "sha256": "c8a965657d107ce406ddd44ed6a05219d9a6cdced89ee09ab31edd74eabe9031"
     },
     {
       "path": "docs/REFERENCE_INDEX.md",
       "version": "current",
       "git_blob_sha": "24c316bef741b4c901eba4fabc97dbcfddc268b7",
-      "sha256": "PENDING"
+      "sha256": "132cd2e3ec1ec708071ed0c7a98fd4b37dda14db08131c00e63fd482f0f63dc6"
     },
     {
       "path": "docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md",
       "version": "current",
       "git_blob_sha": "01e972e1ce5bdf617963b093670bdbd732879710",
-      "sha256": "PENDING"
+      "sha256": "158f8629e409f82a8f9d3a452a6166edcc36262697fed8492466139cba8169b8"
     },
     {
       "path": "docs/architecture/BEHAVIOR-TRACE/EVT-0156-FIRST-MASTER-HARNESS-CORRECTION-2026-10-24.md",
       "version": "1.0.0",
       "git_blob_sha": "fbfc42d3f351ad096e7fee618e58594465c3e3b3",
-      "sha256": "PENDING"
+      "sha256": "3e0bf1f5765f9cbce5223aabab2d0578da256e691e55051513dbc4d6d5a51d9a"
     }
   ],
   "manifest_itself": {
     "git_blob_sha": "SELF_REFERENCE_NOT_STORED_IN_SELF",
-    "sha256": "EXTERNAL_DIGEST_PENDING"
+    "sha256": "EXTERNAL_DIGEST_TO_BE_CAPTURED_FROM_FINAL_WORKFLOW"
   },
   "dependencies": [],
   "tests": {
@@ -161,15 +161,15 @@
     "persistent_memory": "NOT_VERIFIED",
     "idle_background_execution": "NOT VERIFIED",
     "cross_host": "NOT_RUN",
-    "exact_byte_sha256": "RECOMPUTE_AFTER_FINAL_INVENTORY_PENDING",
-    "schema_valid_fixture": "PASS_RUN_40114198517",
-    "schema_invalid_fixture": "REJECTED_RUN_40114198517",
+    "exact_byte_sha256": "VALUES_POPULATED_FROM_RUN_40114274953; FINAL_COMPARISON_PENDING",
+    "schema_valid_fixture": "PASS_RUN_40114274953",
+    "schema_invalid_fixture": "REJECTED_WITH_4_ERRORS_RUN_40114274953",
     "IN_OUT_recovery_equivalence": "NOT RUN",
     "clean_AI_host_import": "NOT RUN",
     "second_AI_host_import": "NOT RUN",
     "persistence_restart": "NOT VERIFIED",
     "canonical_mother_index_queue_integration": "WRITTEN_AND_FETCHED; FULL_GRAPH_REVIEW_OPEN",
-    "schema_workflow_overall": "PASS_RUN_40114198517"
+    "schema_workflow_overall": "PASS_RUN_40114274953"
   },
   "note": "Git blob identifiers were read from repository responses. SHA-256 digest generation and independent byte-level verification remain pending."
 }
