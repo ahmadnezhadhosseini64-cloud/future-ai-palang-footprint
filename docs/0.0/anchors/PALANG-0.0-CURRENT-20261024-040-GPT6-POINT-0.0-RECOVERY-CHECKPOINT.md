@@ -4,7 +4,7 @@
 - Production ID: G6IP-CURRENT-040
 - Version: 1.0.0
 - Role: CURRENT CHECKPOINT / نقطهٔ جاری قابل‌بازیابی
-- Status: REGISTERED / ACTIVE / LIVING / EVOLVABLE / RECOVERABLE / PENDING FINAL READ-BACK
+- Status: REGISTERED / READ-BACK VERIFIED / ACTIVE / LIVING / EVOLVABLE / RECOVERABLE
 - Parent root: [CURRENT-039 — initial point 0](./PALANG-0.0-CURRENT-20261024-039-GPT6-INITIAL-POINT-AND-ZERO-CHAIN.md)
 - Point 0: [GPT6 initial root](./GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001.md)
 - Point 0.0 checkpoint: [G6IP-POINT-0.0-20261024-001](./GPT6-INTERACTIVE-PROJECT-POINT-0.0-CHECKPOINT-2026-10-24-001.md)
@@ -29,5 +29,10 @@ The independent point-0.0 checkpoint has been created from verified point 0. The
 ## Time and recovery contract
 Canonical repository registration time must be fetched from this file's actual Git commit metadata in UTC; derive Tehran equivalent from that exact instant (+03:30). Do not infer user-message time from commit time. On restart, read this file first, then point 0.0, latest inherited architecture master, IN-031/OUT-031, EVT-0139 and NEXT-039; compare IDs and resume from the next open task.
 
+## Time ledger
+- [TIME-BINDING-GPT6-POINT-0.0-2026-10-24-001](../architecture/BEHAVIOR-TRACE/TIME-BINDING-GPT6-POINT-0.0-2026-10-24-001.md) — actual commit UTC first, Tehran equivalent from the same instant.
+
 ## Read-back receipt
-PENDING — complete only after re-fetching this exact path and verifying identifiers and linked files.
+- Status: READ-BACK VERIFIED / CONTENT PRESENT / IDENTIFIERS MATCHED.
+- Exact CURRENT-040 path was fetched again; its IDs and links to Point 0.0, CURRENT-039, IN-031/OUT-031, EVT-0139, latest architecture master, GPT-6 living master and NEXT-039 were present.
+- Prototype remains NOT BUILT; cold-start recovery NOT RUN; external destinations NOT VERIFIED.
