@@ -77,3 +77,15 @@ Complete and read back the IN/OUT pair and all canonical graph edges; run the cu
 - The earlier failures were preserved and corrected: over-escaped regex, test fixture literal line separators, prior-event selection, and candidate invariant vocabulary. The successful run is the first complete verified gate after these repairs.
 - Repository CI PASS does not close fresh-session recovery (NOT RUN), host-wide capture (NOT PROVEN), external persistence (NOT PROVEN), or Issues #19/#20/#21 (OPEN).
 - Terminal receipt timestamp: UTC `2026-10-24T04:12:47.948434Z`; Tehran `2026-10-24T07:42:47.948434+03:30`.
+
+
+## Successful verification closure — run 40061468626
+- [Behavior Hunter run 40061468626](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40061468626): SUCCESS; 71 unit tests passed on tested SHA `cc1f61f18a364c896b251735ccb643e552d40fe2`.
+- Tested commit timestamp: UTC `2026-10-24T04:13:06Z`; Tehran equivalent `2026-10-24T07:43:06+03:30`.
+- Artifact ID `12547860733`; downloaded and inspected; ZIP SHA-256 `222398f7d4b601abe5559090c75d57653adb2a9e3b51dabc2da7f05cfbe74aa9`.
+- Artifact manifest checksums: recovery-from-IN `27c950bd7c42eb196acb52a6f2092a97a6700108243913db6b50b68de0f7c7aa`; recovery-from-OUT `ac9a6b70f5d869c1f8a5b734736432623d255dcf09ad8c5f71554146a46cee3c`; ledger `7e3a8397e94b72708abb216b8aa54218cd0da1208d69223142e65fab13106522`; status receipt `2e1b509483dba27c3f65e78b1e7daf71139f58cb9872e0cba4f2876018f2bf1d`.
+- Both recovery manifests returned `RECOVERED` with zero failures for INT-20261024-033 (IN-033 ↔ OUT-033). Fresh-session recovery remained `NOT RUN`; host-wide capture and external persistence remained `false / NOT PROVEN`.
+- Architecture ledger manifest: PASS, 4 records, 4 unique versions, one change stream, hash chain verified, zero errors, history not rewritten.
+- Proposal gate: `READY_FOR_OWNER_REVIEW`, source evidence hash verified, owner decision PENDING, canonical mutation false, promotion false.
+- Status receipt: `SUCCESS`, terminal=true, run ID 40061468626, tested SHA matches the run. It explicitly does not claim ChatGPT UI heartbeat, host-wide capture, or external persistence.
+- This run predates later evidence-only automation commits on main. Do not claim the exact current main SHA was rerun until its own workflow result is read back.
