@@ -38,3 +38,10 @@ This event documents repository retrieval and the stale-target finding. It does 
 - Export and fresh-host recovery: OPEN / NOT RUN.
 - Dropbox: OPEN / WAITING; unchanged.
 - External Library/Buffer/Persistent Memory destinations: not re-proven by this event.
+
+
+## Interaction lineage / زنجیرهٔ تعامل
+- Input: [IN-044](../../0.0/anchors/PALANG-0.0-IN-20261024-044-REPOSITORY-EXCAVATION-AND-REVIVAL.md)
+- Output: [OUT-043](../../0.0/anchors/PALANG-0.0-OUT-20261024-044-REPOSITORY-EXCAVATION-AND-REVIVAL.md)
+- Current checkpoint: [CURRENT-051](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-051-REPOSITORY-EXCAVATION-REVIVAL.md), additive child of CURRENT-050.
+- Living mother/index/queue updated to reference this chain; external destinations remain unverified.
