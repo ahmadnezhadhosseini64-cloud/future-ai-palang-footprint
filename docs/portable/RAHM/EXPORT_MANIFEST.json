@@ -1,7 +1,7 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.0.8",
-  "manifest_status": "SHA256_VALUES_POPULATED; COMPARISON_RUN_PENDING",
+  "version": "1.0.9",
+  "manifest_status": "RECOMPUTING_SHA256_AFTER_EVIDENCE_RECONCILIATION",
   "created_from_checkpoint": "G6IP-RAHM-CURRENT-045-20261024",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; values populated from workflow run 40114274953, to be independently compared by a subsequent successful workflow run. Git blob SHA-1 is tracked separately.",
   "files": [
@@ -74,14 +74,14 @@
     {
       "path": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261024-054-FIRST-LIVING-MASTER.md",
       "version": "1.0.0",
-      "git_blob_sha": "280532742a040135617ebaf1555071db35535ef1",
-      "sha256": "61b9f17400282f602d050cf9085b1d4583d83d564ed127421bed2080258443cc"
+      "git_blob_sha": "8213814679f53f538f93243cf67fa3201e31282c",
+      "sha256": "PENDING"
     },
     {
       "path": "docs/0.0/anchors/PALANG-0.0-NEXT-20261024-048-FIRST-MASTER-CONFORMANCE.md",
       "version": "1.0.0",
-      "git_blob_sha": "9925b5bdab7b5fedf67adc79fc211ab55bc2324b",
-      "sha256": "eaec70170d698c27326c630c61b1a4b729af470d887e8d66a5ff6f6ddf7e3b6e"
+      "git_blob_sha": "ec16c6251219d1103ba0310ebfa3903e6c7f9011",
+      "sha256": "PENDING"
     },
     {
       "path": "docs/reference/REFERENCE-DOCUMENTS/NPFAP-ADDENDUM-CURRENT-054-2026-10-24.md",
@@ -146,8 +146,8 @@
     {
       "path": "docs/architecture/BEHAVIOR-TRACE/EVT-0156-FIRST-MASTER-HARNESS-CORRECTION-2026-10-24.md",
       "version": "1.0.0",
-      "git_blob_sha": "fbfc42d3f351ad096e7fee618e58594465c3e3b3",
-      "sha256": "3e0bf1f5765f9cbce5223aabab2d0578da256e691e55051513dbc4d6d5a51d9a"
+      "git_blob_sha": "a511e2ef88bd1fac82b3b33160bce3211b25cb50",
+      "sha256": "PENDING"
     }
   ],
   "manifest_itself": {
@@ -161,15 +161,15 @@
     "persistent_memory": "NOT_VERIFIED",
     "idle_background_execution": "NOT VERIFIED",
     "cross_host": "NOT_RUN",
-    "exact_byte_sha256": "VALUES_POPULATED_FROM_RUN_40114274953; FINAL_COMPARISON_PENDING",
-    "schema_valid_fixture": "PASS_RUN_40114274953",
-    "schema_invalid_fixture": "REJECTED_WITH_4_ERRORS_RUN_40114274953",
+    "exact_byte_sha256": "RECOMPUTE_CHANGED_CURRENT_NEXT_EVT156; OTHER_INVENTORY_HASHES_MATCHED_PREVIOUS_RUN",
+    "schema_valid_fixture": "PASS_RUN_40114363915",
+    "schema_invalid_fixture": "REJECTED_WITH_4_ERRORS_RUN_40114363915",
     "IN_OUT_recovery_equivalence": "NOT RUN",
     "clean_AI_host_import": "NOT RUN",
     "second_AI_host_import": "NOT RUN",
     "persistence_restart": "NOT VERIFIED",
     "canonical_mother_index_queue_integration": "WRITTEN_AND_FETCHED; FULL_GRAPH_REVIEW_OPEN",
-    "schema_workflow_overall": "PASS_RUN_40114274953"
+    "schema_workflow_overall": "PASS_RUN_40114363915"
   },
   "note": "Git blob identifiers were read from repository responses. SHA-256 digest generation and independent byte-level verification remain pending."
 }
