@@ -64,3 +64,11 @@
 
 ## 8. وضعیت صداقت ثبت
 این سند در آغاز با وضعیت «در انتظار ثبت/بازخوانی» نوشته می‌شود. تنها پس از مشاهدهٔ نتیجهٔ واقعی، وضعیت آن به READ-BACK VERIFIED / MATCHED ارتقا می‌یابد. هر مقصدی که شواهد مستقل ندارد، NOT VERIFIED باقی می‌ماند.
+
+
+## ثبت نهایی بازخوانی / Read-back verification
+- Initial registration commit: `5203c51fb8038ce62a5a2977f0d39378318b4e51`.
+- Status: READ-BACK VERIFIED / CONTENT PRESENT / IDENTIFIERS MATCHED.
+- Verification method: fetched this exact repository path again after registration; file content and expected interaction identifiers were present. Related CURRENT-037, IN-027, OUT-027, EVT-0135 and master-reference identifiers were independently checked across the new files and both indexes.
+- Remaining boundary: this proves repository content/read-back and linked references only; it does not prove Buffer, Persistent Memory, Library, Dropbox or global automatic capture.
+- Canonical repository time is the actual last-change commit timestamp in UTC; the linked time-binding record will provide the final UTC and Tehran equivalents.
