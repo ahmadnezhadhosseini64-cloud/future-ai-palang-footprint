@@ -16,7 +16,7 @@
 - HAIF mother: [Initial AI Model mother reference](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 - Previous continuation plan: [NEXT-038](./PALANG-0.0-NEXT-20261024-038-DEFINE-POINT-0-THEN-0.0.md)
 - Next action: [NEXT-039 — build first interactive prototype](./PALANG-0.0-NEXT-20261024-039-BUILD-INTERACTIVE-PROTOTYPE.md)
-- Timestamp ledger: [GPT-6 point 0.0 time-binding ledger](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-GPT6-POINT-0.0-2026-10-24-001.md)
+- Timestamp ledger: [GPT-6 point 0.0 time-binding ledger](../../../architecture/BEHAVIOR-TRACE/TIME-BINDING-GPT6-POINT-0.0-2026-10-24-001.md)
 
 ## 1. Purpose and checkpoint boundary
 این نقطهٔ ۰.۰ مستقل، وضعیت قابل‌بازیابی پس از ثبت نقطهٔ ۰ را نگه می‌دارد. نقطهٔ ۰ و تاریخچهٔ CURRENT-037/038/039 و Project Zero baseline حفظ می‌شوند؛ این پرونده آن‌ها را جایگزین نمی‌کند. معماری حاکم شاخه، آخرین نسخهٔ سند مادر معماری به‌ارث‌رسیده یعنی G6IP-IAM-20261024-001 v1.0.2 است و با نسخهٔ جدیدتر همان سند به‌صورت نسخه‌دار به‌روزرسانی خواهد شد.
@@ -70,7 +70,7 @@
 - Status: READ-BACK VERIFIED / CONTENT PRESENT / IDENTIFIERS MATCHED.
 - The exact point-0.0 path was fetched again after creation and after architecture-master v1.0.3 linkage; Stable ID, Production ID, version, CURRENT-040, IN-031/OUT-031, EVT-0139, NEXT-039 and time-ledger links are present.
 - Scope: repository content and key cross-file IDs were fetched. This is not a runtime prototype test, cold-start recovery, or external-destination verification.
-- Canonical commit for the latest checkpoint content is tracked in [TIME-BINDING](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-GPT6-POINT-0.0-2026-10-24-001.md); user-message timestamp remains UNKNOWN.
+- Canonical commit for the latest checkpoint content is tracked in [TIME-BINDING](../../../architecture/BEHAVIOR-TRACE/TIME-BINDING-GPT6-POINT-0.0-2026-10-24-001.md); user-message timestamp remains UNKNOWN.
 
 
 - [CURRENT-040](./PALANG-0.0-CURRENT-20261024-040-GPT6-POINT-0.0-RECOVERY-CHECKPOINT.md) is the current recovery anchor; CURRENT-039 remains the historic initial-root anchor.
