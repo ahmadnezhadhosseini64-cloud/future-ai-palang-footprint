@@ -2,7 +2,7 @@
 
 - Stable ID: `PALANG-CURRENT-GPT6-INITIAL-POINT-ZERO-CHAIN-2026-10-24-039`
 - Production ID: `G6IP-CURRENT-039`
-- Version: 1.2.0
+- Version: 1.3.0
 - Role: INITIAL POINT 0 / ریشه و نقطهٔ صفر اولیه
 - Status: REGISTERED / ACTIVE / LIVING / EVOLVABLE / RECOVERABLE
 - Parent: [CURRENT-038 — معماری Project Zero](./PALANG-0.0-CURRENT-20261024-038-GPT6-PROJECT-ZERO-ARCHITECTURE.md)
@@ -50,3 +50,10 @@ Project Zero، CURRENT-038 و NEXT-037 قبلاً ثبت و بازخوانی ش�
 - Status: READ-BACK VERIFIED / IDENTIFIERS MATCHED.
 - The point-0 record and the IN-030/OUT-030, EVT-0138, NEXT-038 and living-master paths were fetched after writes and expected IDs were present.
 - Point 0.0 remains NOT CREATED; prototype NOT BUILT; cold-start recovery NOT RUN; external destinations NOT VERIFIED.
+
+## Historical root → current checkpoint handoff
+- CURRENT-039 remains the initial point-0 root and is not replaced.
+- Current resumable anchor: [CURRENT-040](./PALANG-0.0-CURRENT-20261024-040-GPT6-POINT-0.0-RECOVERY-CHECKPOINT.md).
+- Independent point 0.0: [G6IP-POINT-0.0-20261024-001](./GPT6-INTERACTIVE-PROJECT-POINT-0.0-CHECKPOINT-2026-10-24-001.md).
+- Latest pair/event: [IN-031](./PALANG-0.0-IN-20261024-031-ADVANCE-POINT-0.0-AND-LINK-LATEST-ARCHITECTURE.md) ↔ [OUT-031](./PALANG-0.0-OUT-20261024-031-ADVANCE-POINT-0.0-AND-LINK-LATEST-ARCHITECTURE.md), [EVT-0139](../../architecture/BEHAVIOR-TRACE/EVT-0139-GPT6-POINT-0.0-CHECKPOINT-CREATION-2026-10-24.md).
+- The latest inherited architecture master is G6IP-IAM-20261024-001 v1.0.3. NEXT-039 is now the next active build task.
