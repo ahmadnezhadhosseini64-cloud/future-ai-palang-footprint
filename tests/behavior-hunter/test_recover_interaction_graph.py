@@ -4,7 +4,7 @@ import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "scripts" / "behavior-hunter"))
-from recover_interaction_graph import recover, discover_latest_pair
+from recover_interaction_graph import recover, discover_latest_pair, _event_id
 
 class LatestPairRecoveryTests(unittest.TestCase):
     def build_repo(self, root, latest=31):
@@ -92,6 +92,16 @@ class LatestPairRecoveryTests(unittest.TestCase):
         self.assertFalse(result["external_persistence_proven"])
         self.assertIn("Issue #20", [x["id"] for x in result["open_gaps"]])
         self.assertIn("Issue #21", [x["id"] for x in result["open_gaps"]])
+
+    def test_current_result_event_wins_over_prior_event_reference(self):
+        text = (
+            "- Previous event: [EVT-0130](./EVT-0130-prior.md)\\n"
+            "- Result event: [EVT-0131](./EVT-0131-current.md)\\n"
+        )
+        self.assertEqual(_event_id(text), "EVT-0131")
+
+    def test_event_label_without_markdown_link_is_supported(self):
+        self.assertEqual(_event_id("- Event: EVT-0131"), "EVT-0131")
 
 if __name__ == "__main__":
     unittest.main()
