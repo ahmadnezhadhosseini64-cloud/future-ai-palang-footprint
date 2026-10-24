@@ -205,7 +205,7 @@ Continue collecting observable interaction and evaluator behavior as evidence-ba
 
 
 ## Live mirror sync remains OPEN — EVT-0132
-- [EVT-0132](../BEHAVIOR-TRACE/EVT-0132-LIVE-MIRROR-SYNC-RECONCILIATION-2026-10-24.md) records the 1,501-character full-file delta and the accepted 7-character historical tolerance boundary.
+- [EVT-0132](../BEHAVIOR-TRACE/EVT-0132-LIVE-MIRROR-SYNC-RECONCILIATION-2026-10-24.md) records the pre-refresh 1,501-character delta and the final one-character Levenshtein difference within the accepted 7-character tolerance; mirror-only addenda are archived.
 - [NEXT-034](../../0.0/anchors/PALANG-0.0-NEXT-20261024-034-LIVE-MIRROR-SYNC-AND-COLD-START.md) is the active continuation anchor.
 - The canonical source is unchanged since commit `a2374d7da36a5af69b1bdf17f6dfd673bc03c97f`; Library version 6 is readable but not synchronized to the current canonical full content.
 - Current mirror snapshot PASS: Library version 7 independently read back and matched within tolerance. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external recovery NOT RUN.
