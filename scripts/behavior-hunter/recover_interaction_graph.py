@@ -39,12 +39,12 @@ def _event_id(text):
     # a prior event before the current result event; taking the first EVT token can
     # incorrectly bind a new pair to stale history.
     explicit = re.search(
-        r"(?mi)^\\s*-?\\s*(?:Result event|Event):\\s*(?:\\[(EVT-\\d{4})\\]\\([^)]*\\)|(EVT-\\d{4}))",
+        r"(?mi)^\s*-?\s*(?:Result event|Event):\s*(?:\[(EVT-\d{4})\]\([^)]*\)|(EVT-\d{4}))",
         text,
     )
     if explicit:
         return explicit.group(1) or explicit.group(2)
-    candidates = re.findall(r"\\bEVT-\\d{4}\\b", text)
+    candidates = re.findall(r"\bEVT-\d{4}\b", text)
     return candidates[0] if candidates else None
 
 def discover_latest_pair(root):
