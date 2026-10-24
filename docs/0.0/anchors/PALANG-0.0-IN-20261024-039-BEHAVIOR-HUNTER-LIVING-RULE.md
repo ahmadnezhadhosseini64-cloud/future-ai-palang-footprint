@@ -21,3 +21,10 @@ Preserve → classify → assign IDs/version → create IN/OUT/event/current/nex
 
 ## Acceptance
 The rule becomes repository-registered only after post-write read-back. The Behavior Hunter is an architecture/process rule, not an always-running autonomous service unless a deployed runtime independently proves that behavior.
+
+## Read-back receipt — CURRENT-047 registration cycle
+- The file was fetched again after creation/update; Stable ID and core rule were present in returned content.
+- Living-mother, Reference Index and integration-queue updates were each fetched after write; CURRENT-047 and NEXT-045 links and rule marker matched.
+- Repository write/read-back verification is limited to these named paths. It does not validate JSON Schema, SHA-256, runtime deployment, persistent memory, idle background execution, or cross-host behavior.
+- Canonical repository commit for the final cross-link update: `49bfeb2a64b808238c73c742fca9959703ccb464`, UTC `2026-10-24T15:37:59Z`, Tehran `2026-10-24T19:07:59+03:30`. This is the commit time, not the exact user-message time.
+- Remaining gates continue OPEN / NOT RUN; resume from NEXT-045.
