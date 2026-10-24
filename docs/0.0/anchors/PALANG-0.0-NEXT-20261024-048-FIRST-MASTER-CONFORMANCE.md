@@ -27,3 +27,15 @@ All package digests match; valid schema passes and invalid schema fails; IN and 
 
 ## Evidence per action
 Test ID; exact input; commit/artifact version; tool/version; host/model; actual UTC and derived Tehran timestamp; raw/expected result; status; evidence path; independent read-back; defect and recovery step.
+
+## Completed first gates (evidence-backed)
+- [x] Schema conformance: run [40114363915](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40114363915) — valid fixture 0 errors; invalid fixture 4 errors and rejected.
+- [x] Exact-byte SHA-256 inventory comparison: same run PASS across 24 manifest entries.
+- [x] Focused relative-link audit: 10 core/chain files checked, zero missing local targets; see [EVT-0156](../../architecture/BEHAVIOR-TRACE/EVT-0156-FIRST-MASTER-HARNESS-CORRECTION-2026-10-24.md).
+
+## Still OPEN / NOT RUN
+- Independent reconstruction from IN-047 and OUT-046 and equality comparison.
+- Actual cold import in an independent AI host and optional second AI host.
+- Persistence after restart and idle/background execution in an authorized runtime.
+- Repository-wide remediation of 11 missing links, 60 unreviewed Stable-ID collision groups, other ID collision groups, 13 ambiguous parent edges and one ambiguous timestamp.
+- Recheck manifest digests after any package file changes; update and read back base mother/index/queue after any further architectural changes.
