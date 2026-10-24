@@ -1,0 +1,14 @@
+{
+  "record_id": "G6IP-TEST-VALID-001",
+  "version": "1.0.0",
+  "timestamp_utc": "2026-10-24T16:00:00Z",
+  "timestamp_tehran": "2026-10-24T19:30:00+03:30",
+  "input": {"content": "portable master test input", "source_ref": "IN-047", "received_at_utc": "2026-10-24T16:00:00Z"},
+  "output": {"content": "portable master test output", "artifact_refs": ["FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md"], "written": true, "readback_verified": false},
+  "observation": [{"statement": "Fixture exists for schema conformance test", "kind": "OBSERVED", "evidence_refs": ["NEXT-048"]}],
+  "evidence": [{"ref": "NEXT-048", "type": "test-plan", "status": "PRESENT", "digest": null}],
+  "failures": [{"description": "Runtime transfer not yet proven", "status": "OPEN", "correction_ref": null}],
+  "host_capability_snapshot": "GitHub repository fixture; not a live AI-host claim",
+  "status": "REGISTERED",
+  "lineage": {"parent_ids": ["G6IP-RAHM-CURRENT-053-20261024"], "event_refs": ["G6IP-RAHM-EVT-0155-20261024"], "next_action": "Run clean-host recovery test"}
+}
