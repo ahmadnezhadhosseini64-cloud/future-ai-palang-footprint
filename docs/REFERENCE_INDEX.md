@@ -1045,5 +1045,6 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Input/output: [IN-036](0.0/anchors/PALANG-0.0-IN-20261024-036-RECOVERY-EVOLVABLE-BASELINE.md) ↔ [OUT-036](0.0/anchors/PALANG-0.0-OUT-20261024-036-RECOVERY-EVOLVABLE-BASELINE.md).
 - Event: [EVT-0144](architecture/BEHAVIOR-TRACE/EVT-0144-RECOVERY-EVOLVABLE-BASELINE-2026-10-24.md).
 - Next: [NEXT-042 — gap closure and recovery validation](0.0/anchors/PALANG-0.0-NEXT-20261024-042-GAP-CLOSURE-AND-RECOVERY-VALIDATION.md).
-- Rule: additive version lineage; previous versions are preserved, never silently overwritten. Current commit UTC 2026-10-24T10:57:08Z; Tehran equivalent 2026-10-24T14:27:08+03:30; commit SHA 6de027f5ce5e7b8b9946061ae85f828427fcbf50.
+- Rule: additive version lineage; previous versions are preserved, never silently overwritten. Current commit UTC 2026-10-24T10:59:28Z; Tehran equivalent 2026-10-24T14:29:28+03:30; commit SHA f75097c917db3012cc121eab477faa7b693e42a2.
+- Foundational mother NPFAP v1.0.3 latest content commit UTC 2026-10-24T10:58:53Z; Tehran equivalent 2026-10-24T14:28:53+03:30; commit SHA d22310465317af8e3735bfdc40610667b2ad2ee7.
 - Status boundary: repository records were fetched after write and IDs/links matched. Full 16-principle audit, transitive link scan, adoption, prototype, cold-start recovery and external destinations remain open/unverified.
