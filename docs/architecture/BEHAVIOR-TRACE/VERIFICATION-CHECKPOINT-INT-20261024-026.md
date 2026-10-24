@@ -14,7 +14,8 @@
 - New point/current anchor, input anchor, output anchor, successor 0.0, event, lesson, time binding, master, reference index, 0.0 index, behavior trace index, lesson registry, source-rule map, integration queue, initial-model master, and audit script were fetched from the working branch after writes.
 - All successful reads returned the expected new IDs and links. One initial read of IN-026 returned a transient remote protocol error; a retry succeeded and returned the expected complete content.
 - Repository read-back: PASS for the listed artifacts on the working branch.
-- Exact candidate CI audit: PENDING until the PR workflow finishes.
+- Candidate audit run [40068970902](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40068970902) passed all 16 reported steps on tested candidate SHA `b6e533505f2ed3787b9a041e0d2f83b0cdba6a01`.
+- Because this checkpoint is now being updated, a fresh audit must pass on the resulting exact PR head before merge.
 - Merge: PENDING.
 - Fresh full audit tied to the exact post-merge main SHA: OPEN until run evidence is retrieved.
 - Issue #20 runtime/cold-start acceptance: OPEN.
