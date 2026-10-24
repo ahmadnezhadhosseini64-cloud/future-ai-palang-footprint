@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001
 - Production ID / شناسهٔ تولید: G6IP-IAM-20261024-001
-- Version / نسخه: 1.0.1
+- Version / نسخه: 1.0.2
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED / CONTENT PRESENT / IDENTIFIERS MATCHED
 - Parent architecture / معماری والد: Future AI / Palang Footprint — HAIF
 - New project root / ریشهٔ پروژهٔ جدید: [Point 0](../../0.0/anchors/GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001.md)
@@ -108,3 +108,16 @@ OBSERVE → CAPTURE → CLASSIFY → CHILD HYPOTHESIS → TEST → RAHM REVIEW �
 - پس از نوشتن، همین مسیر با GitHub Contents API دوباره واکشی شد؛ محتوا و شناسه‌های اصلی حاضر بودند.
 - دامنهٔ تأیید: حضور فایل و بازخوانی محتوای همین سند. همهٔ پیوندهای تاریخی هنوز ممیزی مستقل نشده‌اند؛ نقطهٔ ۰.۰، نمونهٔ تعاملی و بازیابی سرد همچنان باز هستند.
 - این رسید، ادعای تأیید مقصدهای بیرونی یا اجرای قابلیت‌های نرم‌افزاری نیست.
+
+## پیوست ممیزی پیوندهای منبع — 2026-10-24
+
+در واکشی مستقیم مخزن پس از ثبت سند، این هفت مسیر موجود بودند و محتوایشان بازگشت داده شد:
+- سند مادر مدل اولیهٔ HAIF: docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md
+- معماری محصول اولیه: docs/reference/REFERENCE-DOCUMENTS/HAIF-INITIAL-PRODUCT-ARCHITECTURE-2026-10-21-001.md
+- معماری اجرایی: docs/reference/REFERENCE-DOCUMENTS/FUTURE-AI-PALANG-FOOTPRINT-IMPLEMENTABLE-REFERENCE-ARCHITECTURE-2026-10-21-001.md
+- معماری رفتاری دو‌مسیره: docs/reference/REFERENCE-DOCUMENTS/PALANG-DUAL-TRACK-BEHAVIORAL-ARCHITECTURE-MASTER-REFERENCE-2026-10-22-001.md
+- معماری قابل‌انتقال: docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-REGISTER-AND-PORTABLE-HAIF-ARCHITECTURE-MASTER-REFERENCE-2026-10-20-001.md
+- نقطهٔ ۰: docs/0.0/anchors/GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001.md
+- سند مادر زندهٔ GPT-6: docs/reference/REFERENCE-DOCUMENTS/GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001.md
+
+دامنهٔ این آزمون: وجود مسیر و بازگشت محتوای فایل. این آزمون، صحت معنایی تمام بندها، سلامت همهٔ پیوندهای درون اسناد، ساخت نقطهٔ ۰.۰، ساخت نمونه یا بازیابی سرد را اثبات نمی‌کند.
