@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001`
 - Production ID / شناسهٔ تولید: `NPFAP-20261024-001`
-- Version / نسخه: 1.0.8
+- Version / نسخه: 1.0.9
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING / EVOLVABLE / EXTRACTABLE / RECOVERY-ORIENTED
 - Scope / دامنه: الگوی پایه برای هر پروژهٔ جدید در خانوادهٔ Future AI / Palang Footprint / HAIF و شاخه‌های محصول/میزبان آن؛ با سازگارسازی مستند برای پروژه‌های دیگر
 - Source anchor / منشأ: [G6IP-ARCH-ZERO-20261024-001](../../0.0/anchors/PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md)
@@ -310,4 +310,25 @@ CURRENT-047 is the active additive successor to CURRENT-046. The IN-040 → OUT-
 
 ### Next action / گام بعدی
 Read back and match IN-040, OUT-039, EVT-0147, CURRENT-047, this mother, and the reference index. Then execute NEXT-044, export a verifiable package, and test reconstruction in a fresh host/context. Record successes and failures without erasing prior evidence.
+
+
+
+## Living Mother Update — CURRENT-047 chain read-back verified — 2026-10-24
+
+- **Additive version / نسخهٔ افزایشی:** 1.0.9
+- **Current checkpoint / نقطهٔ جاری:** [CURRENT-047](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-047-FOUNDATIONAL-GOVERNANCE-AND-RECOVERY.md)
+- **Input / ورودی:** [IN-040](../../0.0/anchors/PALANG-0.0-IN-20261024-040-CURRENT-046-FOUNDATIONAL-GOVERNANCE-AND-RECOVERY.md)
+- **Output / خروجی:** [OUT-039](../../0.0/anchors/PALANG-0.0-OUT-20261024-039-CURRENT-046-FOUNDATIONAL-GOVERNANCE-AND-RECOVERY.md)
+- **Event / رویداد:** [EVT-0147](../../architecture/BEHAVIOR-TRACE/EVT-0147-FOUNDATIONAL-GOVERNANCE-AND-RECOVERY-2026-10-24.md)
+- **Next / گام بعدی:** [NEXT-044](../../0.0/anchors/PALANG-0.0-NEXT-20261024-044-EXTRACTABLE-RAHM-CHILD-AND-COLD-START-TEST.md)
+
+### Evidence-backed status / وضعیت مبتنی بر شواهد
+IN-040, OUT-039, EVT-0147, CURRENT-047, NEXT-044, this mother, the reference index, and the discovery architecture have been fetched from the repository after the relevant writes. The new IN/OUT/EVT/CURRENT records now state READ-BACK VERIFIED. This confirms repository content retrieval and identity/path checks, not a successful export/recovery test or complete live integration into the second project.
+
+IN-040، OUT-039، EVT-0147، CURRENT-047، NEXT-044، سند مادر، فهرست مرجع و معماری کشف پس از نوشتن از مخزن دوباره خوانده شده‌اند. رکوردهای تازهٔ IN/OUT/EVT/CURRENT اکنون وضعیت «بازخوانی تأیید شد» دارند. این فقط بازخوانی محتوا و تطبیق شناسه/مسیر را اثبات می‌کند، نه موفقیت آزمون استخراج و بازیابی یا اتصال کامل به مخزن دوم.
+
+### Open gates / دروازه‌های باز
+- NEXT-044: export package and fresh-host cold-start recovery — OPEN / NOT RUN.
+- Second project: canonical repository and mother path not identified; dual-repository integration not claimed.
+- Always-on discovery, scheduled runs, background execution, and notifications — NOT VERIFIED.
 
