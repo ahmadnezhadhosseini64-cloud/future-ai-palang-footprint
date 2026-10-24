@@ -1473,3 +1473,11 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - [EVT-0128](../BEHAVIOR-TRACE/EVT-0128-SEMANTIC-IDENTITY-ADJUDICATION-BATCH-1-2026-10-24.md) preserves the three decisions and failure lessons.
 - Latest exact-head audit [40059261857](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40059261857) PASS on SHA `d0bb633ade46b94bf20452c74efbc8137f4cbe99`; artifact `12546287920` inspected; zero missing links, zero decode errors; three source-hash-verified decisions accepted.
 - No bulk rename/merge/delete. Fresh-session recovery NOT RUN; Issues #20/#21 remain OPEN.
+
+
+## EVT-0129 — living architecture registration and recovery repair
+- [EVT-0129](../BEHAVIOR-TRACE/EVT-0129-LIVING-REGISTRATION-ARCHITECTURE-GROWTH-AND-RECOVERY-REPAIR-2026-10-24.md) records the stale historical-pair defect and dynamic recovery repair.
+- Current pair: [IN-031](../../0.0/anchors/PALANG-0.0-IN-20261024-031-ACTIVATE-LIVING-ARCHITECTURE-GROWTH.md) / [OUT-031](../../0.0/anchors/PALANG-0.0-OUT-20261024-031-ACTIVATE-LIVING-ARCHITECTURE-GROWTH.md); current checkpoint [NEXT-031](../../0.0/anchors/PALANG-0.0-NEXT-20261024-031-LATEST-PAIR-RECOVERY-AND-STATUS-TRANSPARENCY.md).
+- Architecture evolution ledger version 1.2.0 is appended; prior versions remain preserved. Latest-pair resolver CI and artifact verification are pending.
+- [Interaction Execution Status Protocol](../BEHAVIOR-OBSERVATORY/INTERACTION-EXECUTION-STATUS-AND-LIVING-REGISTRATION-PROTOCOL-2026-10-24-001.md) is ACTIVE/LIVING for explicit RUNNING / BLOCKED / VERIFIED / OPEN reporting.
+- Fresh-session recovery NOT RUN; host-wide capture NOT PROVEN; external persistence NOT VERIFIED; Issues #19/#20/#21 OPEN.
