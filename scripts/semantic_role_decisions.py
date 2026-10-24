@@ -3,7 +3,7 @@
 import json
 from pathlib import Path
 
-def apply_role_decisions(groups, nodes, decisions):
+def apply_role_decisions(groups, nodes, decisions, identifier_type=None):
     node_by_path = {node.get("path"): node for node in nodes}
     accepted, rejected = [], []
     enriched = []
@@ -12,6 +12,8 @@ def apply_role_decisions(groups, nodes, decisions):
         item["semantic_review"] = {"status": "UNREVIEWED"}
         for decision in decisions:
             if decision.get("status") != "ROLE-ADJUDICATED":
+                continue
+            if identifier_type is not None and decision.get("identifier_type") != identifier_type:
                 continue
             if decision.get("identifier_value") != group.get("key"):
                 continue
