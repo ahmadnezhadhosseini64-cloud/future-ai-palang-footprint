@@ -1339,3 +1339,12 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - EVT-0133 commit `9069ed16ef37466f37a526e6da48067ac97af21c`: UTC `2026-10-24T05:00:44Z` = Tehran `2026-10-24T08:30:44+03:30`; NEXT-035 commit `0fd5941415b069c21c7c5aaf17ea754bfb5dda08`: UTC `2026-10-24T05:01:06Z` = Tehran `2026-10-24T08:31:06+03:30`.
 - Library version 7 read-back PASS; 1-character Levenshtein difference is within the accepted 7-character tolerance; semantic fields match. No new Library write required; prior actual write is documented in EVT-0132. NEXT-034 and earlier anchors remain preserved.
 - Next: BOART-FOLLOWUP-01, then uncoached fresh-session recovery. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external recovery NOT RUN.
+
+
+## CURRENT-036 — current point 0 and next 0.0
+- Current point 0: [CURRENT-036](anchors/PALANG-0.0-CURRENT-20261024-036-USER-REQUEST-AND-LIVING-REGISTRATION.md).
+- Input/output: [IN-026](anchors/PALANG-0.0-IN-20261024-026-REGISTER-CURRENT-POINT-0.md) ↔ [OUT-026](anchors/PALANG-0.0-OUT-20261024-026-REGISTER-CURRENT-POINT-0.md).
+- Event / lesson: [EVT-0134](../architecture/BEHAVIOR-TRACE/EVT-0134-CURRENT-POINT-ZERO-AND-LIVING-REGISTRATION-2026-10-24.md) / [LAL-20261024-013](../architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261024-013-CURRENT-POINT-ZERO-AND-LIVING-REGISTRATION.md).
+- Time binding: [TIME-BINDING-INT-20261024-026](../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261024-026.md).
+- Next 0.0: [NEXT-036](anchors/PALANG-0.0-NEXT-20261024-036-HISTORIC-SOURCE-CENSUS-AND-COLD-START.md).
+- Preserve NEXT-022–NEXT-035; continue Issue #21 historic census, Issue #20 runtime/cold-start, and BOART follow-up. The exact-final-main audit remains open until evidence is tied to the merged SHA.

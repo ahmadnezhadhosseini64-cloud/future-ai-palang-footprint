@@ -179,3 +179,9 @@ State: six source-linked lesson files have been created and fetched back; this d
 ## LAL-20261023-012 — visible status and resumable execution
 - [LAL-20261023-012](./lessons/LAL-20261023-012-STATUS-TRANSPARENCY-AND-RESUMABLE-EXECUTION.md) / [EVT-0114](../BEHAVIOR-TRACE/EVT-0114-STATUS-TRANSPARENCY-AND-RESUMABLE-EXECUTION-2026-10-23.md); anchors IN-025 / OUT-025.
 - NEXT-025 remains the next checkpoint. Work must report visible milestones and must not imply silent background execution.
+
+
+## LAL-20261024-013 — current point 0 and living registration
+- [Lesson](./lessons/LAL-20261024-013-CURRENT-POINT-ZERO-AND-LIVING-REGISTRATION.md) / [EVT-0134](../BEHAVIOR-TRACE/EVT-0134-CURRENT-POINT-ZERO-AND-LIVING-REGISTRATION-2026-10-24.md).
+- Current point / next 0.0: [CURRENT-036](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-036-USER-REQUEST-AND-LIVING-REGISTRATION.md) / [NEXT-036](../../0.0/anchors/PALANG-0.0-NEXT-20261024-036-HISTORIC-SOURCE-CENSUS-AND-COLD-START.md).
+- Rule: append-only point 0; separately anchored successor 0.0; prior work preserved; status claims require evidence.

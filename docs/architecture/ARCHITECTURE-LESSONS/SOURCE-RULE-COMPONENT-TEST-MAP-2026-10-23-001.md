@@ -115,3 +115,11 @@ This remains provisional source mapping, not final authority adjudication. Exist
 - Rule: each work unit must expose state, changed artifacts, read-back, test evidence, remaining gaps and next deterministic action. Silence is not evidence of background execution.
 - Component: interaction trace + current/next checkpoint + master/index/queue + structural audit.
 - Acceptance: IN-025/OUT-025 and EVT-0114/LAL-012 are linked in CI; historic and runtime gaps remain OPEN until their separate acceptance evidence passes.
+
+
+## CURRENT-036 / NEXT-036 continuity rule — source, component, test and gap
+
+| Rule/source | Component | Acceptance evidence | Current status |
+|---|---|---|---|
+| ULCG v1.2.4 + EVT-0134 + LAL-20261024-013 | Current/next anchors, interaction trace, master, reference index, 0.0 registry, lesson/trace registries, queue, initial-model master, structural audit | Required IDs and links exist; IN/OUT reverse lookup; independent read-back; PR audit; final-main SHA audit | Registered on candidate branch; CI/read-back/merge pending; runtime/cold-start remains OPEN |
+| NEXT-022/NEXT-025/NEXT-035 + Issues #20/#21 | Historic source census, source-clause crosswalk, runtime behavior hunter, live mirror/BOART recovery | Full source inventory and clause adjudication; pair-schema and cold-start tests; destination-specific proof | OPEN; prior evidence preserved and not superseded |

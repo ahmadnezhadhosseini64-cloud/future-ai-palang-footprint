@@ -653,3 +653,15 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Event commit UTC `2026-10-24T05:00:44Z` = Tehran `2026-10-24T08:30:44+03:30`; NEXT-035 commit UTC `2026-10-24T05:01:06Z` = Tehran `2026-10-24T08:31:06+03:30`.
 - Source/Library comparison PASS within accepted 7-character tolerance: actual delta 1, Levenshtein distance 1, one extra Library trailing newline. Stable ID, Test ID, Version, next action and destination statuses MATCH.
 - No write required this run because Library version 7 already reflects the current source; prior actual upload/read-back is preserved in EVT-0132. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external recovery NOT RUN.
+
+
+## EVT-0134 — current point 0 and living registration
+- Event: [EVT-0134](./EVT-0134-CURRENT-POINT-ZERO-AND-LIVING-REGISTRATION-2026-10-24.md).
+- Anchors: [IN-026](../../0.0/anchors/PALANG-0.0-IN-20261024-026-REGISTER-CURRENT-POINT-0.md) / [OUT-026](../../0.0/anchors/PALANG-0.0-OUT-20261024-026-REGISTER-CURRENT-POINT-0.md).
+- Current point / next 0.0: [CURRENT-036](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-036-USER-REQUEST-AND-LIVING-REGISTRATION.md) / [NEXT-036](../../0.0/anchors/PALANG-0.0-NEXT-20261024-036-HISTORIC-SOURCE-CENSUS-AND-COLD-START.md).
+- Lesson: [LAL-20261024-013](../ARCHITECTURE-LESSONS/lessons/LAL-20261024-013-CURRENT-POINT-ZERO-AND-LIVING-REGISTRATION.md).
+- State: governance record registered; read-back, CI, runtime and final-main audit remain separate gates.
+
+
+## VERIFICATION-CHECKPOINT-INT-20261024-026
+- [Read-back verification checkpoint](./VERIFICATION-CHECKPOINT-INT-20261024-026.md) covers CURRENT-036 / IN-026 / OUT-026 / NEXT-036 / EVT-0134 / LAL-20261024-013 and records the candidate branch's current verification boundary.

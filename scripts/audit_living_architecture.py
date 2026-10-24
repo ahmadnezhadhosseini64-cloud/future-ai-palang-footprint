@@ -163,7 +163,7 @@ for label, rel in continuity_required.items():
 
 continuity_surfaces = {
     "LEGACY_CURRENT_POINTER": ("checkpoints/PALANG-0.0-CURRENT-2026-10-20-001.md", ("CURRENT-023", "NEXT-024", "HISTORICAL / PRESERVED")),
-    "ULCG_MASTER": ("docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001.md", ("Version: 1.2.3", "CURRENT-023", "NEXT-024", "EVT-0112", "LAL-20261023-010")),
+    "ULCG_MASTER": ("docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001.md", ("Version: 1.2.4", "CURRENT-023", "NEXT-024", "EVT-0112", "LAL-20261023-010")),
     "REFERENCE_INDEX": ("docs/REFERENCE_INDEX.md", ("CURRENT-023", "NEXT-024", "TIME-BINDING-INT-20261023-023")),
     "ZERO_ZERO_REGISTRY": ("docs/0.0/README.md", ("CURRENT-023", "NEXT-024", "IN-023", "OUT-023", "EVT-0112")),
     "SOURCE_RULE_MAP": ("docs/architecture/ARCHITECTURE-LESSONS/SOURCE-RULE-COMPONENT-TEST-MAP-2026-10-23-001.md", ("CURRENT-023", "NEXT-024", "EVT-0112", "LAL-20261023-010")),
@@ -202,7 +202,7 @@ for label, rel in interaction_required.items():
         errors.append(f"INTERACTION_MISSING_REQUIRED_FILE label={label!r} path={rel}")
 
 interaction_surfaces = {
-    "ULCG_MASTER": ("docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001.md", ("Version: 1.2.3", "IN-024", "OUT-024", "EVT-0113", "LAL-20261023-011", "SCRTC-B2", "NEXT-025", "IN-025", "OUT-025", "EVT-0114", "LAL-20261023-012", "TIME-BINDING-INT-20261023-025")),
+    "ULCG_MASTER": ("docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001.md", ("Version: 1.2.4", "IN-024", "OUT-024", "EVT-0113", "LAL-20261023-011", "SCRTC-B2", "NEXT-025", "IN-025", "OUT-025", "EVT-0114", "LAL-20261023-012", "TIME-BINDING-INT-20261023-025")),
     "REFERENCE_INDEX": ("docs/REFERENCE_INDEX.md", ("IN-024", "OUT-024", "EVT-0113", "LAL-20261023-011", "NEXT-025", "IN-025", "OUT-025", "EVT-0114", "LAL-20261023-012", "SOURCE-CLAUSE-CROSSWALK-BATCH-2-2026-10-23-001.md", "IN-025", "OUT-025", "EVT-0114", "LAL-20261023-012")),
     "ZERO_ZERO_REGISTRY": ("docs/0.0/README.md", ("IN-024", "OUT-024", "EVT-0113", "LAL-20261023-011", "NEXT-025")),
     "SOURCE_RULE_MAP": ("docs/architecture/ARCHITECTURE-LESSONS/SOURCE-RULE-COMPONENT-TEST-MAP-2026-10-23-001.md", ("Version: 1.1.0", "SCRTC-B2", "PIATGCG", "UIALAC", "ICMCRR", "H0GLMR", "STAR-HCR")),
@@ -249,6 +249,36 @@ for label, (rel, required_ids) in verification_surfaces.items():
     for required_id in required_ids:
         if required_id not in content:
             errors.append(f"VERIFICATION_SURFACE_MISSING_ID surface={label} id={required_id}")
+
+
+# Current point 0 / next 0.0 graph gate (CURRENT-036)
+current_point_surfaces = {
+    "CURRENT_036": ("docs/0.0/anchors/PALANG-0.0-CURRENT-20261024-036-USER-REQUEST-AND-LIVING-REGISTRATION.md", ("CURRENT-036", "IN-026", "OUT-026", "EVT-0134", "LAL-20261024-013", "NEXT-036", "Issue #20", "Issue #21")),
+    "IN_026": ("docs/0.0/anchors/PALANG-0.0-IN-20261024-026-REGISTER-CURRENT-POINT-0.md", ("IN-026", "OUT-026", "CURRENT-036", "EVT-0134", "NEXT-036")),
+    "OUT_026": ("docs/0.0/anchors/PALANG-0.0-OUT-20261024-026-REGISTER-CURRENT-POINT-0.md", ("OUT-026", "IN-026", "CURRENT-036", "EVT-0134", "NEXT-036")),
+    "NEXT_036": ("docs/0.0/anchors/PALANG-0.0-NEXT-20261024-036-HISTORIC-SOURCE-CENSUS-AND-COLD-START.md", ("NEXT-036", "CURRENT-036", "IN-026", "OUT-026", "EVT-0134", "LAL-20261024-013", "Issue #20", "Issue #21")),
+    "EVT_0134": ("docs/architecture/BEHAVIOR-TRACE/EVT-0134-CURRENT-POINT-ZERO-AND-LIVING-REGISTRATION-2026-10-24.md", ("EVT-0134", "IN-026", "OUT-026", "CURRENT-036", "NEXT-036", "LAL-20261024-013")),
+    "LAL_013": ("docs/architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261024-013-CURRENT-POINT-ZERO-AND-LIVING-REGISTRATION.md", ("LAL-20261024-013", "EVT-0134", "IN-026", "OUT-026", "CURRENT-036", "NEXT-036")),
+    "TIME_BINDING_026": ("docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261024-026.md", ("TIME-BINDING-INT-20261024-026", "IN-026", "OUT-026", "EVT-0134", "CURRENT-036", "NEXT-036", "UTC+03:30")),
+    "VERIFICATION_CHECKPOINT_026": ("docs/architecture/BEHAVIOR-TRACE/VERIFICATION-CHECKPOINT-INT-20261024-026.md", ("VERIFICATION-CHECKPOINT-INT-20261024-026", "CURRENT-036", "IN-026", "OUT-026", "EVT-0134", "LAL-20261024-013", "NEXT-036", "Issue #20", "Issue #21", "PENDING")),
+    "ULCG_MASTER": ("docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001.md", ("Version: 1.2.4", "CURRENT-036", "NEXT-036", "EVT-0134", "LAL-20261024-013")),
+    "REFERENCE_INDEX": ("docs/REFERENCE_INDEX.md", ("CURRENT-036", "IN-026", "OUT-026", "EVT-0134", "NEXT-036")),
+    "ZERO_ZERO_REGISTRY": ("docs/0.0/README.md", ("CURRENT-036", "IN-026", "OUT-026", "EVT-0134", "NEXT-036")),
+    "BEHAVIOR_TRACE_INDEX": ("docs/architecture/BEHAVIOR-TRACE/README.md", ("CURRENT-036", "IN-026", "OUT-026", "EVT-0134", "NEXT-036")),
+    "LESSON_REGISTRY": ("docs/architecture/ARCHITECTURE-LESSONS/README.md", ("LAL-20261024-013", "EVT-0134", "CURRENT-036", "NEXT-036")),
+    "SOURCE_RULE_MAP": ("docs/architecture/ARCHITECTURE-LESSONS/SOURCE-RULE-COMPONENT-TEST-MAP-2026-10-23-001.md", ("CURRENT-036", "NEXT-036", "Issue #20", "Issue #21")),
+    "ARCHITECTURE_QUEUE": ("docs/architecture/INTEGRATION-QUEUE/README.md", ("CURRENT-036", "IN-026", "OUT-026", "EVT-0134", "NEXT-036", "Issue #20", "Issue #21")),
+    "INITIAL_MODEL_MASTER": ("docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md", ("CURRENT-036", "IN-026", "OUT-026", "EVT-0134", "NEXT-036")),
+}
+for label, (rel, required_ids) in current_point_surfaces.items():
+    path = ROOT / rel
+    if not path.is_file():
+        errors.append(f"CURRENT_POINT_MISSING_FILE surface={label} path={rel}")
+        continue
+    content = path.read_text(encoding="utf-8")
+    for required_id in required_ids:
+        if required_id not in content:
+            errors.append(f"CURRENT_POINT_MISSING_ID surface={label} id={required_id}")
 
 print("LIVING_ARCHITECTURE_AUDIT")
 print(f"required_files_checked={len(required)}")
