@@ -3,7 +3,7 @@
 - Stable ID: `G6IP-RAHM-USER-POINT-0-20261024-002`
 - Production ID: `G6IP-POINT-0-RAHM-002`
 - Version: 1.0.0
-- Status at creation: REGISTERED; read-back pending.
+- Status: REGISTERED / READ-BACK VERIFIED; file fetched after write and principal IDs/links matched.
 - Previous canonical checkpoint: [CURRENT-052](./PALANG-0.0-CURRENT-20261024-052-CONTINUITY-AND-RECOVERY.md)
 - Input: [IN-046](./PALANG-0.0-IN-20261024-046-USER-POINT-0-PORTABLE-RAHM.md)
 - Output: [OUT-045](./PALANG-0.0-OUT-20261024-045-USER-POINT-0-PORTABLE-RAHM.md)
@@ -19,3 +19,5 @@ Human request → IN → OUT → EVT → independent anchor → living mother/in
 
 ## Proof boundary
 Registration is not runtime activation. Repository read-back is not export integrity. Export integrity is not clean-host recovery. One host is not proof of second-host compatibility. A written background-work specification is not an executing background service. Unrun or failed gates remain OPEN with cause and recovery step.
+
+- Latest hard-audit evidence: [EVT-0154](../../architecture/BEHAVIOR-TRACE/EVT-0154-LIVING-ARCHITECTURE-HARD-AUDIT-RUN-2026-10-24.md)
