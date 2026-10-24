@@ -3,7 +3,7 @@
 - Stable ID: `PALANG-CURRENT-LIVING-MOTHER-ANCHOR-2026-10-24-045`
 - Production ID: `G6IP-CURRENT-045`
 - Version: 1.0.0
-- Status: REGISTERED / READ-BACK PENDING / ACTIVE / LIVING / EVOLVABLE
+- Status: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING / EVOLVABLE
 - Parent: [CURRENT-044](./PALANG-0.0-CURRENT-20261024-044-RECOVERY-EVOLVABLE-BASELINE.md) — retained, not replaced.
 - Input: [IN-037](./PALANG-0.0-IN-20261024-037-REGISTER-CURRENT-POINT.md)
 - Output: [OUT-037](./PALANG-0.0-OUT-20261024-037-REGISTER-CURRENT-POINT.md)
@@ -11,6 +11,9 @@
 - Living mother: [NPFAP-20261024-001](../../reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md)
 - Previous gap-closure task: [NEXT-042](./PALANG-0.0-NEXT-20261024-042-GAP-CLOSURE-AND-RECOVERY-VALIDATION.md)
 - Next action: [NEXT-043](./PALANG-0.0-NEXT-20261024-043-VERIFY-AND-CLOSE-GAPS.md)
+
+## Read-back receipt
+Exact-path fetch after write succeeded for IN-037, OUT-037, CURRENT-045, EVT-0145, NEXT-043, the living mother, Reference Index and 0.0 registry. Primary IDs and parent/next links matched. This verifies repository content, not the open implementation tests listed below.
 
 ## Purpose
 This is a new independent 0.0 checkpoint for the user's request to keep the project registered, living, and the mother document active. It preserves CURRENT-044 and all older checkpoints as history while explicitly connecting their lineage.
