@@ -2,8 +2,8 @@
 
 - Stable ID: `PALANG-NEXT-GPT6-POINT-0-THEN-0.0-2026-10-24-038`
 - Production ID: `G6IP-NEXT-038`
-- Version: 1.1.0
-- Status: OPEN / ACTIVE / LIVING / POINT-0 REGISTERED / READ-BACK VERIFIED; POINT-0.0 NEXT
+- Version: 1.2.0
+- Status: COMPLETED / READ-BACK VERIFIED / HISTORICAL; NEXT-039 ACTIVE
 - Parent current / initial point: [CURRENT-039](./PALANG-0.0-CURRENT-20261024-039-GPT6-INITIAL-POINT-AND-ZERO-CHAIN.md)
 - Point 0 record: [GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001](./GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001.md)
 - Latest interaction: [IN-030](./PALANG-0.0-IN-20261024-030-PROMOTE-CURRENT-039-TO-INITIAL-POINT-0.md) ↔ [OUT-030](./PALANG-0.0-OUT-20261024-030-PROMOTE-CURRENT-039-TO-INITIAL-POINT-0.md)
@@ -42,3 +42,10 @@
 
 ## Status boundary
 Point 0 record: REGISTERED / READ-BACK VERIFIED. Point 0.0: NOT CREATED; it is the next active step. Interactive prototype: NOT BUILT in this step. Cold-start recovery: NOT RUN. External destinations: NOT VERIFIED.
+
+
+## Completion and handoff receipt
+- The separate checkpoint [G6IP-POINT-0.0-20261024-001](./GPT6-INTERACTIVE-PROJECT-POINT-0.0-CHECKPOINT-2026-10-24-001.md) has been created and linked to the latest inherited architecture master.
+- Current anchor: [CURRENT-040](./PALANG-0.0-CURRENT-20261024-040-GPT6-POINT-0.0-RECOVERY-CHECKPOINT.md).
+- New next step: [NEXT-039 — build interactive prototype](./PALANG-0.0-NEXT-20261024-039-BUILD-INTERACTIVE-PROTOTYPE.md).
+- This closes only the checkpoint-creation task; prototype NOT BUILT, cold-start recovery NOT RUN, external destinations NOT VERIFIED.
