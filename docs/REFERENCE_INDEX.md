@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-24 — CURRENT-057 / POINT-0-006 / IN-050 / OUT-049 / EVT-0159 / NEXT-051; six documentation links repaired; graph auditor scope corrected; post-fix audit and strict digest rerun pending.very remains OPEN.
+**Last Updated:** 2026-10-24 — CURRENT-058 / POINT-0-007 / IN-051 / OUT-050 / EVT-0160; NEXT-051 remains active; post-fix audit and strict digest rerun pending.very remains OPEN.
 
 ## Canonical References
 
@@ -1258,3 +1258,10 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Six actual documentation links repaired; Python fixture link strings excluded from Markdown navigation audit; explicit latest-chain CI gate added.
 - Prior conformance [40124660624](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40124660624) passed v1.4.6's declared scope before the fixes; final post-edit strict digest/package receipt is pending.
 - Global collision/parent/timestamp triage, full IN/OUT state reconstruction, clean/second AI-host import, persistent memory and idle/background execution remain OPEN / NOT VERIFIED. See [CURRENT-057](0.0/anchors/PALANG-0.0-CURRENT-20261024-057-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md) and [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+
+
+## CURRENT-058 — latest living interaction branch
+- Point 0/007 → IN-051 → OUT-050 → EVT-0160 → CURRENT-058; active action remains NEXT-051.
+- [Portable first living master](portable/RAHM/FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md), [foundational mother](reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md), [inherited architecture mother](reference/REFERENCE-DOCUMENTS/GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md), [initial model mother](architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md) and [main integration queue](architecture/INTEGRATION-QUEUE/README.md) updated to the same active branch.
+- Post-edit repository-wide audit and exact-byte digest/package workflow remain pending; do not reuse prior-commit results as proof of latest content.
+- Full IN/OUT state reconstruction, real clean/second AI-host import, persistent memory, idle/background execution and unresolved graph collisions remain OPEN / NOT VERIFIED.
