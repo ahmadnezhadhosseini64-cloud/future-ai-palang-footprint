@@ -85,7 +85,7 @@ Living status means versioned, evidence-gated, recoverable, and open to controll
 
 
 ## Hard-audit amendment — v1.0.1 — 2026-10-24
-The cross-project principles are now governed alongside the hard-audit mother [HA-001](./NEW-PROJECT-ARCHITECTURE-HARD-AUDIT-2026-10-24-001.md) and current checkpoint [CURRENT-042](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-042-NEW-PROJECT-ARCHITECTURE-HARD-AUDIT.md). The previous CURRENT-041 node remains preserved as historical lineage. The active handoff is [NEXT-040 — fresh-project adoption test](../../0.0/anchors/PALANG-0.0-NEXT-20261024-040-FRESH-PROJECT-ADOPTION-TEST.md). This version corrects the document version ledger and does not claim that the adoption test, prototype or cold-start recovery has passed.
+The cross-project principles are governed alongside the hard-audit mother [HA-001](./NEW-PROJECT-ARCHITECTURE-HARD-AUDIT-2026-10-24-001.md). CURRENT-042 is preserved as the previous audit checkpoint; the current completion checkpoint is [CURRENT-043](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-043-FOUNDATIONAL-PRINCIPLES-COMPLETENESS.md), linked to [IN-035](../../0.0/anchors/PALANG-0.0-IN-20261024-035-COMPLETE-FOUNDATIONAL-PRINCIPLES.md), [OUT-035](../../0.0/anchors/PALANG-0.0-OUT-20261024-035-COMPLETE-FOUNDATIONAL-PRINCIPLES.md), [EVT-0143](../../architecture/BEHAVIOR-TRACE/EVT-0143-FOUNDATIONAL-PRINCIPLES-COMPLETION-2026-10-24.md), and [NEXT-041 — foundational verification](../../0.0/anchors/PALANG-0.0-NEXT-20261024-041-FOUNDATIONAL-PRINCIPLES-VERIFICATION.md). The adoption test, prototype and cold-start recovery are not claimed as passed.
 
 
 ## 8. Completeness and verifiability contract — v1.0.2
@@ -163,3 +163,7 @@ At this version, repository document presence and read-back can be verified thro
 ### 8.7 Versioned continuity
 
 v1.0.2 turns the principle “nothing should be impossible to fully examine” into a testable governance contract. It preserves v1.0.0/v1.0.1 history, links the hard-audit mother [HA-001](./NEW-PROJECT-ARCHITECTURE-HARD-AUDIT-2026-10-24-001.md), current checkpoint [CURRENT-042](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-042-NEW-PROJECT-ARCHITECTURE-HARD-AUDIT.md), interaction [IN-034](../../0.0/anchors/PALANG-0.0-IN-20261024-034-HARD-AUDIT-NEW-PROJECT-ARCHITECTURE.md) ↔ [OUT-034](../../0.0/anchors/PALANG-0.0-OUT-20261024-034-HARD-AUDIT-NEW-PROJECT-ARCHITECTURE.md), event [EVT-0142](../../architecture/BEHAVIOR-TRACE/EVT-0142-NEW-PROJECT-ARCHITECTURE-HARD-AUDIT-2026-10-24.md), and active adoption task [NEXT-040](../../0.0/anchors/PALANG-0.0-NEXT-20261024-040-FRESH-PROJECT-ADOPTION-TEST.md).
+
+
+## v1.0.2 active alignment
+The active recovery point is [CURRENT-043](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-043-FOUNDATIONAL-PRINCIPLES-COMPLETENESS.md), and the next step is [NEXT-041](../../0.0/anchors/PALANG-0.0-NEXT-20261024-041-FOUNDATIONAL-PRINCIPLES-VERIFICATION.md). The earlier CURRENT-041 and CURRENT-042 nodes remain historical and linked in the lineage. This mother governs the current branch; its operational adoption is not validated until NEXT-041 and then NEXT-040 have evidence-backed outcomes.
