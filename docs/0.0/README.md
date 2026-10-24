@@ -1253,3 +1253,9 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - [IN-030](./anchors/PALANG-0.0-IN-20261024-030-CONTINUE-SEMANTIC-RECONCILIATION.md) / [OUT-030](./anchors/PALANG-0.0-OUT-20261024-030-CONTINUE-SEMANTIC-RECONCILIATION.md) preserve this continuation.
 - [EVT-0128](../architecture/BEHAVIOR-TRACE/EVT-0128-SEMANTIC-IDENTITY-ADJUDICATION-BATCH-1-2026-10-24.md) and the canonical/alias decision register record one source-backed role adjudication.
 - [NEXT-029](./anchors/PALANG-0.0-NEXT-20261024-029-SEMANTIC-REVIEW-BATCH-2-AND-FRESH-SESSION.md) is active for batch-2 semantic review, audit integration and fresh-session recovery.
+
+
+## Current successor NEXT-030 — semantic review batch 3
+- [NEXT-030](./anchors/PALANG-0.0-NEXT-20261024-030-SEMANTIC-REVIEW-BATCH-3-AND-COLD-START.md) is ACTIVE/LIVING.
+- [IN-030](./anchors/PALANG-0.0-IN-20261024-030-CONTINUE-SEMANTIC-RECONCILIATION.md) / [OUT-030](./anchors/PALANG-0.0-OUT-20261024-030-CONTINUE-SEMANTIC-RECONCILIATION.md) preserve the interaction pair.
+- [EVT-0128](../architecture/BEHAVIOR-TRACE/EVT-0128-SEMANTIC-IDENTITY-ADJUDICATION-BATCH-1-2026-10-24.md) and the semantic role ledger record three source-backed candidates; post-change audit must verify the third decision.
