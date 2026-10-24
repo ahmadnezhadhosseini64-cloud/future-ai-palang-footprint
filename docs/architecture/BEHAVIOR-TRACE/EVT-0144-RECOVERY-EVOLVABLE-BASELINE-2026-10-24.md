@@ -3,7 +3,7 @@
 - Stable ID: `PALANG-EVT-RECOVERY-EVOLVABLE-BASELINE-2026-10-24-0144`
 - Production ID: `G6IP-EVT-0144`
 - Event type: User request → architecture checkpoint → version-lineage and gap-closure plan
-- Status: REGISTERED / READ-BACK VERIFICATION PENDING / ACTIVE / LIVING
+- Status: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING
 - Input: [IN-036](../../0.0/anchors/PALANG-0.0-IN-20261024-036-RECOVERY-EVOLVABLE-BASELINE.md)
 - Output: [OUT-036](../../0.0/anchors/PALANG-0.0-OUT-20261024-036-RECOVERY-EVOLVABLE-BASELINE.md)
 - Current: [CURRENT-044](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-044-RECOVERY-EVOLVABLE-BASELINE.md)
@@ -20,7 +20,7 @@ User requested that the present interaction become a new 0.0 checkpoint and that
 
 ## Evidence boundary
 
-The event records the requested transition and creates a testable follow-up. Its registration does not itself prove all linked files have been read back, timestamps reconciled, the entire repository graph checked, external destinations synced, prototype built or recovery passed.
+The event records the requested transition and creates a testable follow-up. Exact repository read-back confirmed this event file and its primary linked IDs/paths. Its registration does not itself prove all linked files have been read back, timestamps reconciled, the entire repository graph checked, external destinations synced, prototype built or recovery passed.
 
 ## Timestamp receipt
 
