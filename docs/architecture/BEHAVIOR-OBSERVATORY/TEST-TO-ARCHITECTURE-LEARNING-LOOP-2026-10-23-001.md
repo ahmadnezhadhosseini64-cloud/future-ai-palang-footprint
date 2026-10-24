@@ -204,3 +204,11 @@ Each proposed insight includes:
 - Build a provenance-first semantic adjudication workflow for duplicate/colliding IDs and ambiguous parent edges; aliases stay proposed until reviewed.
 - Resolve the one timestamp parse/timezone ambiguity using the original source line; keep UTC canonical and Tehran derived from the same instant.
 - Keep pair-032 repository recovery separate from fresh-session recovery, host-wide capture and external persistence.
+
+
+## 11. Status transparency and durable terminal receipts
+- The workflow now emits a machine-readable terminal receipt from `scripts/behavior-hunter/emit_status_receipt.py`, including on prior-step failure via `if: always()`.
+- Receipt fields include event/pair IDs, stage, terminal status, workflow run ID, tested commit SHA, UTC timestamp, and derived Asia/Tehran equivalent.
+- Regression tests explicitly verify that failure remains failure and that the receipt does not claim chat UI heartbeat, host-wide capture, or external persistence.
+- This is an additive capability; it does not replace the architecture-update proposal gate or append-only hash-linked version ledger. Previous versions remain intact.
+- Exact CI and artifact verification must be appended after the workflow completes.
