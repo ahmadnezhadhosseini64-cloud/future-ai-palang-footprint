@@ -1613,3 +1613,9 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - Next: continue remaining canonical source families and adjudicate rule conflicts, then run the runtime recovery gate and retrieve a full audit for the exact latest main SHA.
 
 - Exact crosswalk identity enforced by CI: `SCRTC-B3-2026-10-24-001`.
+
+
+## Automation continuity update after SCRTC-B3
+- Palang Mirror Sync automation ID `6ad9a407b9d481919c7145fbe4638dec` remains ENABLED. Its prompt now identifies ULCG v1.2.5, preserves CURRENT-036 / NEXT-036 and NEXT-034/NEXT-035, and continues source-family reconciliation under Issue #21 alongside BOART and Issue #20 runtime recovery.
+- Automation metadata update UTC `2026-10-24T06:20:27.296218Z` = Tehran `2026-10-24T09:50:27.296218+03:30`; this is not a repository commit timestamp.
+- This is a prompt update only, not evidence of a new mirror run, external write, or cold-start recovery.
