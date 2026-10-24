@@ -50,3 +50,9 @@ Fresh-session recovery NOT RUN; host-wide automatic capture and external persist
 - The terminal receipt is preserved at [STATUS-20261024-EVT-0131-RUN-40061713327.json](../../architecture/BEHAVIOR-TRACE/STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40061713327.json).
 - Source run 40061713327 passed 71 tests on SHA `26615121fd50276c9c978814b183b21b20330135`; artifact 12547866288 was inspected.
 - Next operational step remains the uncoached fresh-session recovery. Repository CI cannot perform that test from within the same conversation; it must be run separately and its first response preserved.
+
+
+## Latest durable status receipt
+- [Receipt JSON](../../architecture/BEHAVIOR-TRACE/STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40061873837.json) preserves the latest inspected CI terminal state.
+- Run 40061873837 passed 71 tests on tested SHA `edd82d08311c03f0506c651e5c33d128a0d70a35`; artifact 12547921317 inspected, ZIP SHA-256 `c44071afab49df4bfb33141f432db059e21455f3161801f4d711efd34d690f1f`.
+- Fresh-session recovery is still NOT RUN; do not call repository recovery equivalent to cross-session recovery.
