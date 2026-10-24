@@ -2,15 +2,15 @@
 
 - Stable ID / شناسه پایدار: `G6IP-FIRST-LIVING-MASTER-PORTABLE-RAHM-20261024-001`
 - Production ID / شناسه تولید: `G6IP-FLM-RAHM-001`
-- Version / نسخه: 1.0.4
+- Version / نسخه: 1.0.5
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED subject to latest post-write read-back; host-transfer and full graph gates remain OPEN.
 - Authority / مرجع حاکم: اصول بنیادی پروژه + سند مادر معماری موروثی + بسته قابل‌حمل RAHM.
-- User Point 0: [G6IP-RAHM-USER-POINT-0-20261024-003](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-003-FIRST-LIVING-MASTER-AND-PORTABILITY.md)
-- Current 0.0: [CURRENT-054](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-054-FIRST-LIVING-MASTER.md)
-- Next 0.0: [NEXT-048](../../0.0/anchors/PALANG-0.0-NEXT-20261024-048-FIRST-MASTER-CONFORMANCE.md)
-- User input: [IN-047](../../0.0/anchors/PALANG-0.0-IN-20261024-047-FIRST-LIVING-MASTER.md)
-- Assistant output: [OUT-046](../../0.0/anchors/PALANG-0.0-OUT-20261024-046-FIRST-LIVING-MASTER.md)
-- Event: [EVT-0155](../../architecture/BEHAVIOR-TRACE/EVT-0155-FIRST-LIVING-MASTER-PORTABLE-RAHM-2026-10-24.md)
+- User Point 0: [G6IP-RAHM-USER-POINT-0-20261024-005](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-005-OUTPUT-CONTINUITY-AND-RECOVERY.md)
+- Current 0.0: [CURRENT-056](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-056-OUTPUT-CONTINUITY-AND-RECOVERY.md)
+- Next 0.0: [NEXT-050](../../0.0/anchors/PALANG-0.0-NEXT-20261024-050-FULL-RECOVERY-AND-REAL-HOST-IMPORT.md)
+- User input: [IN-049](../../0.0/anchors/PALANG-0.0-IN-20261024-049-OUTPUT-CONTINUITY-AND-RECOVERY.md)
+- Assistant output: [OUT-048](../../0.0/anchors/PALANG-0.0-OUT-20261024-048-OUTPUT-CONTINUITY-AND-RECOVERY.md)
+- Event: [EVT-0158](../../architecture/BEHAVIOR-TRACE/EVT-0158-NO-SILENT-GAP-OUTPUT-CONTINUITY-2026-10-24.md)
 - Prior hard-audit evidence: [EVT-0154](../../architecture/BEHAVIOR-TRACE/EVT-0154-LIVING-ARCHITECTURE-HARD-AUDIT-RUN-2026-10-24.md)
 - Portable startup contract: [RAHM_BOOT](./RAHM_BOOT.md)
 - Architecture contract: [RAHM_ARCHITECTURE](./RAHM_ARCHITECTURE.md)
@@ -221,3 +221,10 @@ next_action: "<deterministic next step>"
 
 ### Permanent behavior: no-silent-gap continuity
 A new input must not make prior open work disappear. Keep the active NEXT, link the new IN to it, return a visible status at durable milestones, and resume from the last read-back-verified checkpoint. The assistant must not claim invisible background execution. Automatic capture, durable memory and idle execution remain separate, unverified host capabilities until tested.
+
+
+## Latest strict digest and continuity checkpoint
+- Current recovery anchor: [CURRENT-056](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-056-OUTPUT-CONTINUITY-AND-RECOVERY.md); next action: [NEXT-050](../../0.0/anchors/PALANG-0.0-NEXT-20261024-050-FULL-RECOVERY-AND-REAL-HOST-IMPORT.md).
+- No-silent-gap behavior is a binding architecture contract: a new IN must preserve the open NEXT; long work must expose a visible milestone; each response must state completion/partial/blocked/continuing status; no invisible background execution is claimed.
+- Strict conformance [40122001572](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40122001572): 37/37 expected file SHA-256 values matched; schema positive/negative fixtures passed; limited IN/OUT checkpoint-link equivalence passed; portable archive built with 38 files, SHA-256 `835531e59b3c1dcee0e0f689714fe377bca34c97b45597719e7dc3e30e4b2bb4`.
+- Latest graph audit [40122001601](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40122001601) remains REVIEW_REQUIRED. Real host transfer, full recovery, persistence and background execution remain open.
