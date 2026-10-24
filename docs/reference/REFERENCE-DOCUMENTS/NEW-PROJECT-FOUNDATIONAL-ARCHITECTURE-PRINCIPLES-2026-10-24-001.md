@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001`
 - Production ID / شناسهٔ تولید: `NPFAP-20261024-001`
-- Version / نسخه: 1.0.7
+- Version / نسخه: 1.0.8
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING / EVOLVABLE / EXTRACTABLE / RECOVERY-ORIENTED
 - Scope / دامنه: الگوی پایه برای هر پروژهٔ جدید در خانوادهٔ Future AI / Palang Footprint / HAIF و شاخه‌های محصول/میزبان آن؛ با سازگارسازی مستند برای پروژه‌های دیگر
 - Source anchor / منشأ: [G6IP-ARCH-ZERO-20261024-001](../../0.0/anchors/PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md)
@@ -283,4 +283,31 @@ OUT-038، EVT-0146، CURRENT-046، NEXT-044، این سند مادر و فهرس
 - Second project canonical repository and mother path: NOT IDENTIFIED; dual-repository integration is not claimed.
 - Always-on discovery, scheduled runs, background execution, and notifications: NOT VERIFIED.
 - Child → Rahm → Master remains mandatory: no candidate is promoted without evidence and acceptance checks.
+
+
+
+## Living Mother Update — CURRENT-047 / IN-040 / OUT-039 / EVT-0147 — 2026-10-24
+
+- **Additive version / نسخهٔ افزایشی:** 1.0.8
+- **Current checkpoint / نقطهٔ جاری:** [CURRENT-047](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-047-FOUNDATIONAL-GOVERNANCE-AND-RECOVERY.md)
+- **Input / ورودی:** [IN-040](../../0.0/anchors/PALANG-0.0-IN-20261024-040-CURRENT-046-FOUNDATIONAL-GOVERNANCE-AND-RECOVERY.md)
+- **Output / خروجی:** [OUT-039](../../0.0/anchors/PALANG-0.0-OUT-20261024-039-CURRENT-046-FOUNDATIONAL-GOVERNANCE-AND-RECOVERY.md)
+- **Event / رویداد:** [EVT-0147](../../architecture/BEHAVIOR-TRACE/EVT-0147-FOUNDATIONAL-GOVERNANCE-AND-RECOVERY-2026-10-24.md)
+- **Prior checkpoint / نقطهٔ پیشین:** [CURRENT-046](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-046-HUMAN-AI-FUTURE-INTERACTION-ARCHITECTURE.md)
+- **Next gate / گام بعدی:** [NEXT-044 — export and fresh-host recovery](../../0.0/anchors/PALANG-0.0-NEXT-20261024-044-EXTRACTABLE-RAHM-CHILD-AND-COLD-START-TEST.md)
+- **Discovery engine / موتور کشف:** [Adaptive Discovery v1.1.0](../../../architecture/ADAPTIVE-DISCOVERY-CROSS-PLAYGROUND.md)
+
+### Permanent interaction governance / قاعدهٔ دائمی تعامل
+Every user input, assistant output, event, error, correction, test, and validation result must have its own stable identity, production ID, version, provenance, evidence, parent/child links, canonical UTC repository timestamp derived from the actual commit, Tehran equivalent, status, and next action. Preserve old records. Append new material through additive versions.
+
+هر ورودی کاربر، خروجی دستیار، رویداد، خطا، اصلاح، آزمون و نتیجهٔ اعتبارسنجی باید شناسهٔ پایدار و تولید، نسخه، منشأ، شواهد، پیوند والد/فرزند، زمان مرجع مخزن از commit واقعی به UTC و معادل تهران، وضعیت و گام بعدی داشته باشد. سابقه حفظ می‌شود و اطلاعات تازه فقط به‌صورت افزایشی افزوده می‌شود.
+
+### Child → Rahm → Master
+Child is a proposal, not an accepted rule. Rahm checks provenance, evidence, contradictions, regression, portability, recoverability, and acceptance criteria. Only passing candidates are promoted to Master. “Registered,” “read-back verified,” “validated,” “integrated,” and “runtime tested” remain separate statuses.
+
+### State boundary / مرز وضعیت
+CURRENT-047 is the active additive successor to CURRENT-046. The IN-040 → OUT-039 → EVT-0147 chain is newly registered and must be read back after writing. NEXT-044 remains open: export and fresh-host cold-start recovery have not been executed. The second project's canonical repository remains unidentified; no live dual-repository integration or always-on background search is claimed.
+
+### Next action / گام بعدی
+Read back and match IN-040, OUT-039, EVT-0147, CURRENT-047, this mother, and the reference index. Then execute NEXT-044, export a verifiable package, and test reconstruction in a fresh host/context. Record successes and failures without erasing prior evidence.
 
