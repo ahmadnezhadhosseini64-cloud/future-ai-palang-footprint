@@ -2,7 +2,7 @@
 
 - Stable ID: `NEW-PROJECT-ARCHITECTURE-HARD-AUDIT-2026-10-24-001`
 - Production ID: `NPHA-20261024-001`
-- Version: 1.0.0
+- Version: 1.0.1
 - Status: REGISTERED / ACTIVE / LIVING / EVIDENCE-GATED / EVOLVABLE / RECOVERABLE
 - Scope: GPT-6 Interactive Project under Future AI / Palang Footprint / HAIF
 - Previous checkpoint: [CURRENT-041](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-041-FOUNDATIONAL-ARCHITECTURE-MOTHER-ACTIVATION.md)
@@ -85,3 +85,12 @@ F. Close only gates with matching evidence; preserve every failure and open item
 ## 6. Living update protocol
 
 Each future audit amendment must append its findings and evidence, increment this document's version, link a new event/current checkpoint where material, preserve older findings and state what changed. Do not mark this master FINAL while implementation and recovery gates remain open.
+
+
+## Corrective reconciliation — v1.0.1
+- The foundational mother header is now v1.0.1; the inherited architecture mother header is v1.0.5; the GPT-6 living master header is v1.3.6.
+- Architecture zero now links CURRENT-042 and NEXT-040; CURRENT-041 remains preserved and points forward rather than being rewritten as the current node.
+- The Reference Index now marks NPFAP v1.0.1 repository read-back verified and indexes HA-001, CURRENT-042, EVT-0142 and NEXT-040.
+- The 0.0 registry, Reference Index, foundational mother, inherited mother, branch living master, architecture-zero anchor, CURRENT-041 and CURRENT-042 have been fetched after their writes. Expected identifiers and key links were present.
+- CURRENT-042's latest content commit is `60df2967d8ed6ed8f5592334efbf682ebe877b94`, UTC `2026-10-24T10:03:55Z`, Tehran `2026-10-24T13:33:55+03:30`. This is the repository's last-change time for the current checkpoint, not the user's message time.
+- Fresh-project adoption test remains OPEN / NOT RUN. Prototype NOT BUILT; cold-start recovery NOT RUN; external destinations NOT VERIFIED.
