@@ -73,8 +73,8 @@ def discover_latest_pair(root):
     return {"interaction_id": interaction, **pair}, []
 
 def _linked_id(text, prefix):
-    vals = re.findall(rf"\b{prefix}-\d+\b", text)
-    return max(vals, key=lambda v: int(v.split("-")[1])) if vals else None
+    vals = re.findall(rf"\b{prefix}-(\d{{3}})\b", text)
+    return f"{prefix}-{max(vals, key=int)}" if vals else None
 
 def recover(start, repo_root="."):
     start = str(start).strip().upper()
