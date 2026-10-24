@@ -1212,3 +1212,12 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Inherited architecture master: [GPT6 inherited master](reference/REFERENCE-DOCUMENTS/GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md).
 - Next 0.0: [NEXT-046](0.0/anchors/PALANG-0.0-NEXT-20261024-046-RAHM-PORTABILITY-VALIDATION.md) — OPEN / IN PROGRESS.
 - Open gates: export-byte SHA-256, JSON Schema positive/negative fixtures, IN/OUT recovery, link/duplicate-ID audit, clean-host/second-host transfer, persistence restart and idle background tests.
+
+
+
+## CURRENT-054 — First Living Master / portable GPT-6 HAIF
+- First living master: [Portable GPT-6 HAIF RAHM master](portable/RAHM/FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md) — REGISTERED; conformance OPEN.
+- Current checkpoint: [CURRENT-054](0.0/anchors/PALANG-0.0-CURRENT-20261024-054-FIRST-LIVING-MASTER.md).
+- Next action: [NEXT-048](0.0/anchors/PALANG-0.0-NEXT-20261024-048-FIRST-MASTER-CONFORMANCE.md); first execute [NEXT-044](0.0/anchors/PALANG-0.0-NEXT-20261024-044-EXTRACTABLE-RAHM-CHILD-AND-COLD-START-TEST.md).
+- Event evidence: [EVT-0155](architecture/BEHAVIOR-TRACE/EVT-0155-FIRST-LIVING-MASTER-PORTABLE-RAHM-2026-10-24.md) and [EVT-0154](architecture/BEHAVIOR-TRACE/EVT-0154-LIVING-ARCHITECTURE-HARD-AUDIT-RUN-2026-10-24.md).
+- All unverified items remain OPEN/LIVING. SHA-256, schema, recovery, clean/second-host import, persistence, idle background, repo-wide link/ID remediation and full destination read-back are not claimed passed.
