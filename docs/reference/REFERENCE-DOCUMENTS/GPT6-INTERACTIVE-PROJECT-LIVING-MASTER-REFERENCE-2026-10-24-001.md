@@ -10,11 +10,11 @@
 - Scope / دامنهٔ اثبات: فقط مخزن GitHub، تا وقتی مقصد دیگر جداگانه نوشته و بازخوانی نشده باشد.
 - Parent current point / نقطهٔ والد: `CURRENT-036`
 - Parent continuation / ادامهٔ قبلی حفظ‌شده: `NEXT-036`
-- Current interaction / تعامل جاری: `INT-20261024-027`
-- Input / ورودی: `IN-027`
-- Output / خروجی: `OUT-027`
-- Event / رویداد: `EVT-0135`
-- Current anchor / لنگر مستقل این شاخه: `CURRENT-037`
+- Current interaction / تعامل جاری: `INT-20261024-032`
+- Input / ورودی: `IN-032`
+- Output / خروجی: `OUT-032`
+- Event / رویداد: `EVT-0140`
+- Current anchor / لنگر مستقل این شاخه: `CURRENT-040`
 
 ## 1. تصمیم و هدف
 این سند، آغاز یک شاخهٔ تازه برای کارهای تعاملی و تصویری در GPT-6 را به معماری موجود Future AI / Palang Footprint متصل می‌کند. «پروژهٔ جدید» به معنی ساخت معماری موازیِ بی‌ارتباط یا حذف تاریخچه نیست؛ این یک شاخهٔ میزبان/محصول است که زیر حاکمیت سند مادر HAIF و زنجیرهٔ نقاط ۰.۰ رشد می‌کند.
@@ -147,3 +147,11 @@
 - Point 0.0 timestamp ledger: [TIME-BINDING-GPT6-POINT-0.0-2026-10-24-001](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-GPT6-POINT-0.0-2026-10-24-001.md), recording real Git commit times UTC-first with Tehran equivalents.
 - Current verified checkpoint: CURRENT-040 → Point 0.0 → inherited architecture master v1.0.3 → NEXT-039.
 \n\n## Latest architecture-zero update — v1.3.5\nArchitecture-zero anchor G6IP-ARCH-ZERO-20261024-001 is now the extractable recovery root for this GPT-6 branch. The governing inherited architecture master is v1.0.4. Prototype NOT BUILT; cold-start recovery NOT RUN; external destinations NOT VERIFIED.\n
+
+## Latest architecture-zero interaction — INT-20261024-032
+- Input: [IN-032](../../0.0/anchors/PALANG-0.0-IN-20261024-032-REGISTER-ARCHITECTURE-ZERO.md).
+- Output: [OUT-032](../../0.0/anchors/PALANG-0.0-OUT-20261024-032-REGISTER-ARCHITECTURE-ZERO.md).
+- Event: [EVT-0140](../../architecture/BEHAVIOR-TRACE/EVT-0140-ARCHITECTURE-ZERO-REGISTRATION-2026-10-24.md).
+- Architecture zero: [G6IP-ARCH-ZERO-20261024-001](../../0.0/anchors/PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md).
+- Current recovery anchor: [CURRENT-040](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-040-GPT6-POINT-0.0-RECOVERY-CHECKPOINT.md).
+- Governing architecture master: v1.0.4. This is a repository-level registration; prototype remains NOT BUILT and cold-start recovery NOT RUN.
