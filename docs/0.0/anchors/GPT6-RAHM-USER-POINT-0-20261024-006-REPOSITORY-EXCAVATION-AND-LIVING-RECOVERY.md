@@ -2,8 +2,8 @@
 
 - Stable ID: `G6IP-RAHM-USER-POINT-0-20261024-006`
 - Production ID: `G6IP-POINT0-006`
-- Version: 1.0.0
-- Status: REGISTERED; read-back required.
+- Version: 1.0.1
+- Status: REGISTERED / READ-BACK VERIFIED for exact file content and focused local-link check; global graph remains REVIEW_REQUIRED.
 - Parent checkpoint: [CURRENT-056](./PALANG-0.0-CURRENT-20261024-056-OUTPUT-CONTINUITY-AND-RECOVERY.md)
 - Active open work: [NEXT-050](./PALANG-0.0-NEXT-20261024-050-FULL-RECOVERY-AND-REAL-HOST-IMPORT.md) and [NEXT-049](./PALANG-0.0-NEXT-20261024-049-REAL-HOST-TRANSFER-AND-GRAPH-AUDIT.md)
 - Input: [IN-050](./PALANG-0.0-IN-20261024-050-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md)
@@ -20,3 +20,9 @@ A gap between input and output must not silently sever work. New inputs become l
 
 ## Status boundary
 This point records the request and lineage only. It does not itself prove a fresh-host import, full state reconstruction, persistent memory, or idle background execution.
+
+
+## Read-back receipt
+- Independently fetched from the default branch; Stable ID and Production ID matched the expected values.
+- All 8 local relative links resolve in the inspected tree. This is a focused result, not a repository-wide pass.
+- The point captures intent and lineage only; it does not prove host transfer, full-state recovery, persistent memory or idle execution.
