@@ -7,5 +7,5 @@
 - User intent: designate the supplied CURRENT-053 timestamp and NEXT-047/NEXT-044 task list as a new Point 0; connect it to all prior anchors; build the first reviewable living master for portable, recoverable, extractable and evolvable GPT-6/HAIF architecture; link it to the fundamental principle; preserve all unverified tasks as open/live and update the mother/index/queue.
 - Source time policy: UTC canonical; Tehran is converted from same instant; repository registration time comes from actual commit.
 - Parent: [CURRENT-053](./PALANG-0.0-CURRENT-20261024-053-PORTABLE-RAHM-HARD-AUDIT.md)
-- New master: [FIRST-LIVING-MASTER](../portable/RAHM/FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md)
+- New master: [FIRST-LIVING-MASTER](../../portable/RAHM/FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md)
 - Status boundary: input record is not proof of completion or runtime activation.
