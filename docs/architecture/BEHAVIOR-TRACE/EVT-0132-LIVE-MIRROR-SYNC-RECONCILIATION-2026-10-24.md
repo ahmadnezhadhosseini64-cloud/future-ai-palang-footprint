@@ -4,7 +4,7 @@
 - Stable ID: PALANG-LIVE-MIRROR-SYNC-RECONCILIATION-2026-10-24-001
 - Production ID: LMSR-HAIF-2026-10-24-001
 - Version: 1.0.0
-- Status: ACTIVE / LIVING / RECONCILIATION-IN-PROGRESS
+- Status: ACTIVE / LIVING / BLOCKED / OPEN / NOT SYNCED TO CURRENT CANONICAL SNAPSHOT
 - Canonical registration clock: actual repository commit UTC; Asia/Tehran is derived from that same instant.
 - Canonical source: `docs/architecture/BEHAVIOR-OBSERVATORY/LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md`
 - Library mirror: `/Future AI/Palang Footprint/Master Reference Vault/Reference Documents/LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md`
