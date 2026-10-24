@@ -2,7 +2,7 @@
 
 - Stable ID: `G6IP-RAHM-EVT-0158-20261024`
 - Production ID: `G6IP-EVT-0158`
-- Version: 1.0.2
+- Version: 1.0.3
 - Status: REGISTERED / READ-BACK VERIFIED / LIVING; implementation and host behavior tests remain OPEN.
 - Input: [IN-049](../../0.0/anchors/PALANG-0.0-IN-20261024-049-OUTPUT-CONTINUITY-AND-RECOVERY.md)
 - Output: [OUT-048](../../0.0/anchors/PALANG-0.0-OUT-20261024-048-OUTPUT-CONTINUITY-AND-RECOVERY.md)
@@ -47,3 +47,11 @@ The rule is now specified in repository artifacts once the chain is read-back ve
 - Structural audit [run 40120495708](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40120495708): workflow completed but content status REVIEW_REQUIRED; 11 missing links, 60 unreviewed stable-ID collision groups, 88 production-ID collision groups, 7 reference-ID collision groups, 36 event-number collision groups, 13 ambiguous parent edges.
 - Acceptance/adapter workflows passed synthetic acceptance, idempotent retry, conflict rejection, simulated restart recovery and adapter read-back. These are synthetic CI tests, not proof of actual AI-host import or this chat's always-on background execution.
 - Because CURRENT-056 and this event are updated with this receipt, the manifest digest check must be rerun against the new commit.
+
+
+## Strict manifest gate correction — 2026-10-24
+- Workflow correction commit: [3f9b22f](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/3f9b22f4ce53d7230c12d41b6143a66e3aa162a6).
+- Conformance run: [40122001572](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40122001572): SUCCESS; valid fixture 0 errors, invalid fixture rejected with 4 errors; limited IN/OUT checkpoint-link recovery PASS; strict exact-byte digest gate matched 37/37 expected SHA-256 values; archive 38 files, 206,063 bytes, SHA-256 `835531e59b3c1dcee0e0f689714fe377bca34c97b45597719e7dc3e30e4b2bb4`.
+- The digest gate now rejects missing/invalid expected SHA-256, rejects mismatches, labels every digest `MATCH`, checks duplicate manifest paths, and only passes when every manifest entry is matched. This closes the harness weakness where a missing expected digest could previously be skipped.
+- Latest structural audit [40122001601](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40122001601): workflow SUCCESS, content result REVIEW_REQUIRED; 3,714 files, 5,495 local-link edges, 11 missing links, 61 stable-ID collision groups (60 unreviewed), 88 production-ID collision groups, 7 reference-ID collision groups, 36 event-number collision groups, 13 ambiguous parent edges.
+- Real AI-host import, full-state IN/OUT reconstruction, second-host import, persistence restart, idle/background execution and repo-wide graph remediation remain OPEN / NOT VERIFIED.
