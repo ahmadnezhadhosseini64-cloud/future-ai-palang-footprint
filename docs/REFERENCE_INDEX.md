@@ -979,4 +979,4 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - [EVT-0132](architecture/BEHAVIOR-TRACE/EVT-0132-LIVE-MIRROR-SYNC-RECONCILIATION-2026-10-24.md).
 - [NEXT-034](0.0/anchors/PALANG-0.0-NEXT-20261024-034-LIVE-MIRROR-SYNC-AND-COLD-START.md).
 - Status: PASS for current source snapshot / REGISTERED / READ-BACK VERIFIED / MATCHED WITHIN 7-CHAR TOLERANCE. Library version 7 read back; length delta 1, Levenshtein distance 1. Future recurring sync remains active.
-- Actual registration UTC: EVT-0132 commit `2026-10-24T04:42:00Z`; NEXT-034 commit `2026-10-24T04:42:23Z`; Tehran times derived in the master reference.
+- EVT-0132 final registration commit `79376c6069c2311c238f18b28c7ffb334ab3eb90`: UTC `2026-10-24T04:50:51Z` = Tehran `2026-10-24T08:20:51+03:30`; NEXT-034 final commit `96dfa85df9ecaf9ed26d54a608c5bfebf896b694`: UTC `2026-10-24T04:51:05Z` = Tehran `2026-10-24T08:21:05+03:30`.
