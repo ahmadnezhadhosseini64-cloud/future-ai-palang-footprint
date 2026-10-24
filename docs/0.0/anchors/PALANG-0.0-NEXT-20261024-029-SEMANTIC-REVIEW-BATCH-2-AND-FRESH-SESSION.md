@@ -1,0 +1,25 @@
+# NEXT-029 — Semantic review batch 2 and fresh-session recovery
+
+- Checkpoint ID: NEXT-029
+- Stable ID: PALANG-0.0-NEXT-20261024-029-SEMANTIC-REVIEW-BATCH-2-AND-FRESH-SESSION
+- Version: 1.0.0
+- Status: ACTIVE / LIVING / SEMANTIC-REVIEW-IN-PROGRESS / FRESH-SESSION-NOT-RUN
+- Previous checkpoint: [NEXT-028](./PALANG-0.0-NEXT-20261023-028-POST-REPAIR-AUDIT-AND-SEMANTIC-RECONCILIATION.md)
+- Current interaction pair: [IN-030](./PALANG-0.0-IN-20261024-030-CONTINUE-SEMANTIC-RECONCILIATION.md) / [OUT-030](./PALANG-0.0-OUT-20261024-030-CONTINUE-SEMANTIC-RECONCILIATION.md)
+- Current event: [EVT-0128](../../architecture/BEHAVIOR-TRACE/EVT-0128-SEMANTIC-IDENTITY-ADJUDICATION-BATCH-1-2026-10-24.md)
+- Canonical master: [CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE](../../reference/REFERENCE-DOCUMENTS/CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001.md)
+- Decision register: [Canonical/alias/lineage decision register](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-CANONICAL-ALIAS-LINEAGE-DECISION-REGISTER-2026-10-21-001.md)
+
+## Proven baseline
+Latest inspected historical graph audit SHA `ffc4fb8136cdd4168910f8c0ba58d6619fddfa13`: 2,680 total files, 858 source files, 3,644 local-link edges, zero missing local links; 60 Stable ID, 71 Production ID, 7 reference-ID and 30 event-number collision groups; 11 exact-content duplicate groups; 13 ambiguous parent edges; 11 proposed aliases; one unresolved timezone at EVT-0089 line 21. These counts describe the audited snapshot, not current HEAD after this change.
+
+## Next execution order
+1. Read back IN-030, OUT-030, EVT-0128, decision register and indexes.
+2. Run and inspect Living Architecture Audit, Behavior Hunter and Cross-Layer Integrity Gate after these changes.
+3. Continue collision adjudication batch 2 from full source content, Git history, inbound/outbound links and role; do not bulk rename, merge or delete.
+4. Teach the audit pipeline to consume the reviewed role-decision register so adjudicated role-sharing is distinguished from unresolved conflicts without hiding raw repeated-occurrence counts.
+5. Run fresh-session recovery in a separate ChatGPT conversation using the handoff prompt without supplying this conversation's answer key.
+6. Continue Issue #20 runtime capture and Issue #21 historic census as separate workstreams.
+
+## Open
+Fresh-session recovery NOT RUN; host-wide ChatGPT capture NOT PROVEN; external persistence NOT VERIFIED; remaining identity/lineage findings OPEN; EVT-0089 timezone unresolved. Previous 0.0 anchors remain preserved.
