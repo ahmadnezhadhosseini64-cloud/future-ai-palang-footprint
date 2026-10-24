@@ -1388,3 +1388,12 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - Status: root/queue registration only; point 0 and point 0.0 NOT EXECUTED, prototype/cold-start NOT RUN. Other destinations independently NOT VERIFIED.
 
 - Final UTC/Tehran commit-time binding for this chain: [TIME-BINDING-GPT6-INITIAL-POINT-2026-10-24-001](../architecture/BEHAVIOR-TRACE/TIME-BINDING-GPT6-INITIAL-POINT-2026-10-24-001.md). OUT-029, CURRENT-039 and EVT-0137 reflect final read-back receipt commits.
+
+
+## GPT-6 new project — initial Point 0 (CURRENT-039)
+- Initial point 0: [GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001](./anchors/GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001.md).
+- Root anchor: [CURRENT-039](./anchors/PALANG-0.0-CURRENT-20261024-039-GPT6-INITIAL-POINT-AND-ZERO-CHAIN.md).
+- Latest pair: [IN-030](./anchors/PALANG-0.0-IN-20261024-030-PROMOTE-CURRENT-039-TO-INITIAL-POINT-0.md) ↔ [OUT-030](./anchors/PALANG-0.0-OUT-20261024-030-PROMOTE-CURRENT-039-TO-INITIAL-POINT-0.md); behavior event [EVT-0138](../architecture/BEHAVIOR-TRACE/EVT-0138-GPT6-POINT-0-PROMOTION-AND-HAIF-INTEGRATION-2026-10-24.md).
+- Governing project master: [GPT-6 interactive living master v1.3.0](../reference/REFERENCE-DOCUMENTS/GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001.md); it links the HAIF initial-model master, universal registration contract, dual-track behavioral architecture and Project Zero baseline.
+- Next: [NEXT-038 — create independent point 0.0](./anchors/PALANG-0.0-NEXT-20261024-038-DEFINE-POINT-0-THEN-0.0.md). Point 0.0 remains NOT CREATED until this next step is executed.
+- Verification boundary: writing done; final read-back reconciliation is pending. Prototype NOT BUILT in this step, cold-start recovery NOT RUN, and external destinations NOT VERIFIED.
