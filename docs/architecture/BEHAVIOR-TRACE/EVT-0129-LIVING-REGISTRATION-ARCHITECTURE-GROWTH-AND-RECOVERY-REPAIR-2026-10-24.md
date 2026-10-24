@@ -44,3 +44,9 @@ Living Architecture Audit run [40059426371](https://github.com/ahmadnezhadhossei
 
 ## Next action
 Verify the newest Behavior Hunter run and inspect both recovery manifests. They must name IN-031/OUT-031 after this pair is registered, point to EVT-0129/NEXT-031, and show no stale historical fallback. Then append the evidence to this event, output anchor, master, queue, TALL, and indexes. Continue with a genuinely separate fresh-session recovery test and the next source-backed semantic-review batch.
+
+
+## Regression lesson — NEXT label parsing
+- Behavior Hunter run [40059863428](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40059863428) failed on SHA `c1806eb700a728ef0832e3b2aff0488ffadf2d37`: 65 tests ran; two recovery tests returned PARTIAL.
+- Failure evidence showed the resolver parsed `NEXT-20261024` from the date-stamped filename instead of the visible checkpoint label `NEXT-031`, producing a false missing-checkpoint diagnosis.
+- Corrective change committed as `0644c09ecfa50ed8deeec1330ed5cc0cf4427526`: parse the three-digit visible NEXT identifier, not the date segment in the link target. The next Behavior Hunter run must verify this correction and recover the current IN-031/OUT-031 pair.
