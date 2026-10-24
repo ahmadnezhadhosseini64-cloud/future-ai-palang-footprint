@@ -2,8 +2,8 @@
 
 - Stable ID / شناسه پایدار: `G6IP-FIRST-LIVING-MASTER-PORTABLE-RAHM-20261024-001`
 - Production ID / شناسه تولید: `G6IP-FLM-RAHM-001`
-- Version / نسخه: 1.0.5
-- Status / وضعیت: REGISTERED / READ-BACK VERIFIED subject to latest post-write read-back; host-transfer and full graph gates remain OPEN.
+- Version / نسخه: 1.0.6
+- Status / وضعیت: REGISTERED / READ-BACK VERIFIED for repository content; post-edit strict digest rerun pending; real-host and full graph gates remain OPEN.
 - Authority / مرجع حاکم: اصول بنیادی پروژه + سند مادر معماری موروثی + بسته قابل‌حمل RAHM.
 - User Point 0: [G6IP-RAHM-USER-POINT-0-20261024-005](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-005-OUTPUT-CONTINUITY-AND-RECOVERY.md)
 - Current 0.0: [CURRENT-056](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-056-OUTPUT-CONTINUITY-AND-RECOVERY.md)
@@ -243,3 +243,14 @@ A new input must not make prior open work disappear. Keep the active NEXT, link 
 - Structural audit workflow completed, but content result remains `REVIEW_REQUIRED`: 3,757 files including generated evidence; 5,564 local-link edges; 16 missing links; 62 stable-ID collision groups (61 unreviewed); 88 production-ID collision groups; 7 reference-ID collision groups; 36 event-number collision groups; 13 ambiguous parent edges; 0 decode errors.
 - Strict portable conformance run [40124425568](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40124425568) passed for manifest v1.4.2: schema valid fixture 0 errors, invalid fixture rejected with 4 errors, all expected file digests matched, limited IN/OUT checkpoint-link equivalence passed; package 44 files / 221380 bytes / SHA-256 `591377d03546e6f031ee98614b1c9fbd662dba08a15bc5c68b15bd918282f501`.
 - These are repository/CI results only. Full IN/OUT state reconstruction, clean/second AI-host import, actual persistence restart and idle/background execution remain OPEN / NOT VERIFIED.
+
+
+## CURRENT-057 execution update — audit corrections and real gates (2026-10-24)
+
+- Active checkpoint: [CURRENT-057](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-057-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md); active open action: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). Preserve [NEXT-050](../../0.0/anchors/PALANG-0.0-NEXT-20261024-050-FULL-RECOVERY-AND-REAL-HOST-IMPORT.md) and [NEXT-049](../../0.0/anchors/PALANG-0.0-NEXT-20261024-049-REAL-HOST-TRANSFER-AND-GRAPH-AUDIT.md) as independent open branches.
+- Read-back of Point 0/006, IN-050, OUT-049, EVT-0159, CURRENT-057, NEXT-051, this mother, manifest, canonical index and main queue was performed. Focused local-link check of these targeted files returned zero broken links at the checked tree snapshot.
+- Six actual documentation link fixes were made: five historical anchor links in the initial-model mother (including the older `../../../0.0/anchors/` pattern) and the NEXT-034 link in EVT-0132. The graph audit was also corrected so Markdown-like links inside Python fixture strings are not treated as repository navigation edges.
+- CI gate `CURRENT_POINT_0_006_NEXT_051_CONTINUITY` now checks the actual latest Point 0/006 → IN-050 → OUT-049 → EVT-0159 → CURRENT-057 → NEXT-051 chain and confirms the mother/index/queue surfaces exist.
+- Baseline conformance run [40124660624](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40124660624) passed its declared scope on the earlier commit: 43/43 exact-byte file digests; valid schema fixture 0 errors; invalid fixture rejected with 4 errors; limited IN/OUT checkpoint-link equivalence; archive 44 files / 224852 bytes / SHA-256 `475ff58474f10a4a75314c964302bac06f7ed15d47e31da1826c31bce293c50a`. This baseline predates the fixes; final post-edit digest and archive run is required.
+- The latest pre-fix graph audit [40124660609](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40124660609) reported 16 missing links; 6 were real documentation links and 10 were Markdown-like links in Python fixtures. Post-fix audit is pending. Identifier collisions and ambiguous parent/time findings remain open until individually adjudicated.
+- Actual independent AI-host import, full state reconstruction independently from IN and OUT, second-host import, persistence after a real restart, and idle/background execution remain OPEN / NOT VERIFIED. CI runtime transfer is not a substitute for these tests.
