@@ -2,8 +2,8 @@
 
 - Stable ID: `G6IP-RAHM-EVT-0158-20261024`
 - Production ID: `G6IP-EVT-0158`
-- Version: 1.0.0
-- Status: REGISTERED / LIVING; implementation and host behavior tests remain OPEN.
+- Version: 1.0.1
+- Status: REGISTERED / READ-BACK VERIFIED / LIVING; implementation and host behavior tests remain OPEN.
 - Input: [IN-049](../../0.0/anchors/PALANG-0.0-IN-20261024-049-OUTPUT-CONTINUITY-AND-RECOVERY.md)
 - Output: [OUT-048](../../0.0/anchors/PALANG-0.0-OUT-20261024-048-OUTPUT-CONTINUITY-AND-RECOVERY.md)
 - Point 0: [POINT-0/005](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-005-OUTPUT-CONTINUITY-AND-RECOVERY.md)
