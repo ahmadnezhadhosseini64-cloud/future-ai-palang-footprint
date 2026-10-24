@@ -2,15 +2,16 @@
 
 - Stable ID: GPT6-INTERACTIVE-PROJECT-POINT-0.0-CHECKPOINT-2026-10-24-001
 - Production ID: G6IP-POINT-0.0-20261024-001
-- Version: 1.0.0
-- Status: REGISTERED / ACTIVE / LIVING / EVOLVABLE / RECOVERABLE / PENDING FINAL READ-BACK
+- Version: 1.0.1
+- Status: REGISTERED / ACTIVE / LIVING / EVOLVABLE / RECOVERABLE / READ-BACK VERIFIED
 - Project: Future AI / Palang Footprint — HAIF
 - Host branch: ChatGPT / GPT-6
 - Parent point: [Point 0 initial root](./GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001.md)
-- Current root anchor: [CURRENT-039](./PALANG-0.0-CURRENT-20261024-039-GPT6-INITIAL-POINT-AND-ZERO-CHAIN.md)
+- Current anchor: [CURRENT-040](./PALANG-0.0-CURRENT-20261024-040-GPT6-POINT-0.0-RECOVERY-CHECKPOINT.md)
+- Historic root anchor: [CURRENT-039](./PALANG-0.0-CURRENT-20261024-039-GPT6-INITIAL-POINT-AND-ZERO-CHAIN.md)
 - Latest interaction: [IN-031](./PALANG-0.0-IN-20261024-031-ADVANCE-POINT-0.0-AND-LINK-LATEST-ARCHITECTURE.md) ↔ [OUT-031](./PALANG-0.0-OUT-20261024-031-ADVANCE-POINT-0.0-AND-LINK-LATEST-ARCHITECTURE.md)
 - Behavior event: [EVT-0139](../../architecture/BEHAVIOR-TRACE/EVT-0139-GPT6-POINT-0.0-CHECKPOINT-CREATION-2026-10-24.md)
-- Latest inherited architecture master: [G6IP-IAM-20261024-001 v1.0.2](../../reference/REFERENCE-DOCUMENTS/GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md)
+- Latest inherited architecture master: [G6IP-IAM-20261024-001 v1.0.3](../../reference/REFERENCE-DOCUMENTS/GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md)
 - GPT-6 living master: [GPT6 living master](../../reference/REFERENCE-DOCUMENTS/GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001.md)
 - HAIF mother: [Initial AI Model mother reference](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 - Previous continuation plan: [NEXT-038](./PALANG-0.0-NEXT-20261024-038-DEFINE-POINT-0-THEN-0.0.md)
@@ -67,3 +68,7 @@
 
 ## 7. Read-back receipt
 PENDING — fill only after the exact path is fetched again and commit metadata is retrieved. Do not infer completion from a successful write alone.
+
+
+- [CURRENT-040](./PALANG-0.0-CURRENT-20261024-040-GPT6-POINT-0.0-RECOVERY-CHECKPOINT.md) is the current recovery anchor; CURRENT-039 remains the historic initial-root anchor.
+- The governing architecture master is now version 1.0.3; this checkpoint must always link the latest read-back-verified master version, not a stale version.
