@@ -40,3 +40,9 @@ Fresh-session recovery NOT RUN; host-wide ChatGPT capture NOT PROVEN; external p
 - Role decision ledger: two decisions loaded; one Stable-ID and one Production-ID group source-hash-verified and annotated; 6 occurrences role-adjudicated, 1,417 remain unreviewed. Raw collision counts remain 60/71/7/30; 11 duplicate groups, 13 ambiguous parent edges, 11 alias proposals remain visible.
 - Six semantic role unit tests passed; Cross-Layer Integrity Gate and Reconciliation Acceptance Test passed on the same SHA.
 - The literal-newline SyntaxError and pycache source-scan issue were corrected and retained as regression lessons. Do not treat the remaining collision groups as resolved.
+
+
+## Successor handoff — NEXT-030
+- Batch 2 progressed to a third source-backed decision: [EVT-0128](../../architecture/BEHAVIOR-TRACE/EVT-0128-SEMANTIC-IDENTITY-ADJUDICATION-BATCH-1-2026-10-24.md) now records H0-ID-REVIEW-003 for the byte-identical operational architecture/reference-vault pair with Production ID `0.0V-ARCH-2026-09-13-001`.
+- Machine-readable decision appended; the next audit must verify the current source hashes and show 2 Production-ID groups adjudicated without suppressing raw collision counts.
+- [NEXT-030](./PALANG-0.0-NEXT-20261024-030-SEMANTIC-REVIEW-BATCH-3-AND-COLD-START.md) is the additive successor for the next batch, current-head CI/artifact verification, and fresh-session recovery. NEXT-029 remains preserved as the prior checkpoint.
