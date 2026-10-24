@@ -1520,3 +1520,10 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - SUCCESS on SHA `2634f15abf79cd546d2ebea2e152a3f0871dd1fb`; artifact 12548065100 inspected (SHA-256 `38047c11733e086471a542c6ee346eae3feb75e37d8cee8a767ecb9f31b37318`).
 - Both directions recovered IN-033/OUT-033, EVT-0131 and NEXT-033; zero failures; 71 tests passed; ledger PASS; terminal receipt SUCCESS.
 - Remaining: fresh-session recovery NOT RUN; Issues #19/#20/#21 OPEN; external persistence and host-wide capture NOT PROVEN.
+
+
+## EVT-0131 closure and next live gate
+- [EVT-0131](../BEHAVIOR-TRACE/EVT-0131-LIVING-ARCHITECTURE-STATUS-TRANSPARENCY-AND-GROWTH-2026-10-24.md), pair [IN-033](../../0.0/anchors/PALANG-0.0-IN-20261024-033-LIVING-ARCHITECTURE-AND-STATUS-TRANSPARENCY.md) / [OUT-033](../../0.0/anchors/PALANG-0.0-OUT-20261024-033-LIVING-ARCHITECTURE-AND-STATUS-TRANSPARENCY.md), checkpoint [NEXT-033](../../0.0/anchors/PALANG-0.0-NEXT-20261024-033-LIVING-STATUS-AND-COLD-START.md).
+- Run 40061468626 passed 71 tests on tested SHA `cc1f61f18a364c896b251735ccb643e552d40fe2`; artifact 12547860733 inspected, ZIP SHA-256 `222398f7d4b601abe5559090c75d57653adb2a9e3b51dabc2da7f05cfbe74aa9`.
+- Both recovery directions RECOVERED, ledger PASS with 4 records, status receipt SUCCESS. Previous failures and fixes remain documented.
+- Next active gate: uncoached fresh-session recovery, then source-backed identity collision adjudication and timestamp ambiguity review. Issues #19/#20/#21 remain OPEN; no host-wide capture or external persistence claim.
