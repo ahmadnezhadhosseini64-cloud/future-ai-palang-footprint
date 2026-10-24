@@ -2,7 +2,7 @@
 
 - Stable ID: `G6IP-RAHM-OUT-050-20261024`
 - Production ID: `G6IP-OUT-050`
-- Version: 1.0.2
+- Version: 1.0.3
 - Status: REGISTERED / READ-BACK VERIFIED for the exact current file content; final graph/digest/host gates remain open.
 - Parent input: [IN-051](./PALANG-0.0-IN-20261024-051-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md)
 - Parent Point 0: [POINT-0/007](./GPT6-RAHM-USER-POINT-0-20261024-007-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md)
@@ -54,3 +54,15 @@ No new NEXT is created by this output. Continue [NEXT-051](./PALANG-0.0-NEXT-202
 ## Current recovery-test status
 - New script `scripts/behavior-hunter/verify_current_0_0_chain.py` is wired into the Living Architecture Audit workflow to compare canonical state recovered from IN-051 and OUT-050. First execution is pending; it is not marked PASS in this record yet.
 - External AI-host import, second host, persistent memory, and idle/background execution remain OPEN / NOT VERIFIED.
+
+## Actual IN/OUT canonical-state recovery — run 40129551204
+- Workflow: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129551204
+- Result: PASS; `canonical_state_equivalent=true`; recovery starting independently from IN-051 and OUT-050 returned RECOVERED both ways, with no verifier failures.
+- The verifier checked stable IDs/versions, dated relative-link targets, Point 0/current/NEXT chain, manifest CURRENT-058 and NEXT-051 metadata, failure→correction lineage, and preservation of six open gates.
+- It explicitly preserved as open: full external state recovery, clean independent AI-host import, second-host import, persistence restart, idle/background execution, and global graph triage.
+- Evidence artifact: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129551204/artifacts/12574201632
+- Scope boundary: this proves the repository's current chain can be reconstructed equivalently from IN and OUT. It does not prove import into an independent AI host or durable host runtime behavior.
+
+## Test-harness failure and correction — preserved
+- First run [40129456947](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129456947) FAILED because the verifier matched undated shorthand fragments instead of actual dated anchor filenames, expected the manifest next-action at the wrong JSON level, and used a next-host phrase not present in NEXT-051.
+- Corrected in commit `bf9b121fbcee82475696e98c8c5d9b25e5e683e8`; retest [40129551204](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129551204) PASS. The failure remains visible as a test-harness correction event; it was not deleted or relabelled success.
