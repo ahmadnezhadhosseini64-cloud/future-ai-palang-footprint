@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001`
 - Production ID / شناسهٔ تولید: `NPFAP-20261024-001`
-- Version / نسخه: 1.0.5
+- Version / نسخه: 1.0.6
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING / EVOLVABLE / EXTRACTABLE / RECOVERY-ORIENTED
 - Scope / دامنه: الگوی پایه برای هر پروژهٔ جدید در خانوادهٔ Future AI / Palang Footprint / HAIF و شاخه‌های محصول/میزبان آن؛ با سازگارسازی مستند برای پروژه‌های دیگر
 - Source anchor / منشأ: [G6IP-ARCH-ZERO-20261024-001](../../0.0/anchors/PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md)
@@ -226,3 +226,39 @@ The architecture document was updated in the repository and fetched again succes
 - [ ] Run an end-to-end fresh-finding test in both project destinations.
 - [ ] Verify each destination by read-back and compare IDs, links, and evidence.
 - [ ] Test recovery/export and failure cases before declaring runtime automation active.
+
+
+## Living Mother Update — CURRENT-046 / Child-Rahm-Master / Recovery Gate — 2026-10-24
+
+- **Additive version / نسخهٔ افزایشی:** 1.0.6
+- **Current anchor / نقطهٔ جاری:** [CURRENT-046](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-046-HUMAN-AI-FUTURE-INTERACTION-ARCHITECTURE.md)
+- **Input / ورودی:** [IN-038](../../0.0/anchors/PALANG-0.0-IN-20261024-038-HUMAN-AI-FUTURE-INTERACTION-ARCHITECTURE.md)
+- **Output / خروجی:** [OUT-038](../../0.0/anchors/PALANG-0.0-OUT-20261024-038-HUMAN-AI-FUTURE-INTERACTION-ARCHITECTURE.md)
+- **Event / رویداد:** [EVT-0146](../../architecture/BEHAVIOR-TRACE/EVT-0146-HUMAN-AI-FUTURE-INTERACTION-ARCHITECTURE-2026-10-24.md)
+- **Next / گام بعدی:** [NEXT-044 — portable export and fresh-host recovery](../../0.0/anchors/PALANG-0.0-NEXT-20261024-044-EXTRACTABLE-RAHM-CHILD-AND-COLD-START-TEST.md)
+- **Discovery engine / موتور کشف:** [Adaptive Discovery v1.1.0](../../../architecture/ADAPTIVE-DISCOVERY-CROSS-PLAYGROUND.md)
+- **Status / وضعیت:** LIVING MOTHER UPDATED; record links require full read-back; export/recovery and second-project integration remain OPEN.
+
+### Foundational governance rule / قاعدهٔ بنیادین
+Every meaningful user input, assistant output, event, error, correction, test, and validation result must be linked to an immutable, versioned lineage with an independent anchor, provenance, evidence, UTC-first repository timestamp, Tehran equivalent, status, and next action. New material is additive; historical records are not silently erased or overwritten.
+
+هر ورودی، خروجی، رویداد، خطا، اصلاح، آزمون و نتیجهٔ اعتبارسنجی باید لنگر مستقل، منشأ، شواهد، شناسه و نسخهٔ مشخص و پیوند به زنجیرهٔ قبلی داشته باشد. زمان ثبت مخزن از commit واقعی Git به UTC گرفته می‌شود و زمان تهران از همان لحظه محاسبه می‌شود. سابقه پاک یا بی‌صدا جایگزین نمی‌شود.
+
+### Child → Rahm → Master / نوزاد → رحم → مستر
+1. Child: register a proposal as a candidate with provenance and a unique identity.
+2. Rahm: validate evidence, contradictions, regression risk, portability, recovery, and acceptance criteria.
+3. Master: integrate only accepted candidates using additive versioning and verified read-back.
+
+### Status separation / تفکیک وضعیت‌ها
+REGISTERED is not READ-BACK VERIFIED; READ-BACK VERIFIED is not VALIDATED; VALIDATED is not INTEGRATED; architecture-defined is not proof of always-on runtime automation. Every status change requires its own evidence.
+
+### Current state and open gates / وضعیت جاری و دروازه‌های باز
+- CURRENT-046 is an additive successor to CURRENT-045; historical anchors remain preserved.
+- IN-038, OUT-038, EVT-0146, CURRENT-046 and NEXT-044 are intended to form the current linked chain; all files must be read back and links matched before declaring the chain fully verified.
+- The export package and fresh-host cold-start recovery test have not yet passed; see NEXT-044.
+- The canonical repository and mother path of the second project remain unidentified; do not claim live dual-repository integration until both destinations are independently written and read back.
+- Always-on crawling, scheduled search, background work, and notifications remain NOT VERIFIED.
+
+### Continuation / ادامه
+Continue from CURRENT-046. First read back and match all IN/OUT/EVT/CURRENT/NEXT records and update the reference index. Then produce a verifiable export artifact and execute the NEXT-044 fresh-host recovery protocol. Keep the second-project connection pending until its exact repository is identified. Do not resume Dropbox unless explicitly reopened.
+
