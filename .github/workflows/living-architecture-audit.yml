@@ -141,6 +141,12 @@ jobs:
           echo "CURRENT_POINT_0_007_CURRENT_058_NEXT_051_CONTINUITY=PASS"
           echo "NEXT_051_ACCEPTANCE_GATES_STILL_OPEN=TRUE"
 
+      - name: Verify actual current IN/OUT canonical-state reconstruction
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/behavior-hunter/verify_current_0_0_chain.py
+
       - name: Run structural and link audit
         shell: bash
         run: |
