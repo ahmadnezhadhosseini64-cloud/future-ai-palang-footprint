@@ -3,7 +3,7 @@
 - Stable ID / شناسهٔ پایدار: `NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001`
 - Production ID / شناسهٔ تولید: `NPFAP-20261024-001`
 - Version / نسخه: 1.0.0
-- Status / وضعیت اولیه: REGISTERED / ACTIVE / LIVING / EVOLVABLE / EXTRACTABLE / RECOVERY-ORIENTED / READ-BACK PENDING
+- Status / وضعیت: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING / EVOLVABLE / EXTRACTABLE / RECOVERY-ORIENTED
 - Scope / دامنه: الگوی پایه برای هر پروژهٔ جدید در خانوادهٔ Future AI / Palang Footprint / HAIF و شاخه‌های محصول/میزبان آن؛ با سازگارسازی مستند برای پروژه‌های دیگر
 - Source anchor / منشأ: [G6IP-ARCH-ZERO-20261024-001](../../0.0/anchors/PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md)
 - Governing contract / قرارداد حاکم: [UIALAC-2026-10-20-001](./UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001.md)
@@ -63,12 +63,16 @@ This document adopts the architecture lessons from the new GPT-6 project’s arc
 - [x] Unique stable ID and production ID defined.
 - [x] Parent source architecture and governing contract linked.
 - [x] Foundational principles and minimum project bundle documented.
-- [ ] Exact file read-back after creation.
-- [ ] Governing contract updated and read back.
-- [ ] Reference index and project entry point updated and read back.
+- [x] Exact file read-back after creation; Stable ID, Production ID, source anchor, contract and index links matched.
+- [x] Governing contract updated to v1.3.0 and read back.
+- [x] Reference index and project entry point updated and read back.
 - [ ] Fresh-project adoption test executed.
 - [ ] Export package and cold-start recovery test executed.
 
 ## 7. Status semantics / معنای وضعیت
 
 This is a cross-project foundational specification. It becomes repository READ-BACK VERIFIED only after the exact file is fetched again and the expected identifiers, contents and links match. It becomes validated for a specific new project only after that project's own adoption evidence and acceptance tests exist.
+
+
+## Repository read-back receipt — 2026-10-24
+The exact foundational-principles file was fetched again after creation. Stable ID, Production ID, source architecture-zero link, governing contract v1.3.0, reference-index entry and repository README entry were confirmed. The governing contract, index, README and inherited architecture master were also fetched and their updates confirmed. This is repository-level read-back only; a fresh-project adoption test, export package test and cold-start recovery test remain open.
