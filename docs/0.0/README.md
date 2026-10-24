@@ -1436,4 +1436,4 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - Event: [EVT-0143](../architecture/BEHAVIOR-TRACE/EVT-0143-FOUNDATIONAL-PRINCIPLES-COMPLETION-2026-10-24.md).
 - Governing mother: [NPFAP-20261024-001 v1.0.2](../reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md).
 - Next active task: [NEXT-041 — foundational verification](./anchors/PALANG-0.0-NEXT-20261024-041-FOUNDATIONAL-PRINCIPLES-VERIFICATION.md), then [NEXT-040 — fresh-project adoption](./anchors/PALANG-0.0-NEXT-20261024-040-FRESH-PROJECT-ADOPTION-TEST.md).
-- Status: foundational mother updated; exact final read-back and cross-file verification in progress. Adoption test OPEN / NOT RUN; prototype NOT BUILT; cold-start recovery NOT RUN; external destinations NOT VERIFIED.
+- Status: foundational mother v1.0.2 and linked repository records READ-BACK VERIFIED / IDENTIFIERS MATCHED; NEXT-041 detailed acceptance/link audit OPEN / NOT RUN. Adoption test OPEN / NOT RUN; prototype NOT BUILT; cold-start recovery NOT RUN; external destinations NOT VERIFIED.
