@@ -1038,3 +1038,12 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 | G6IP-CURRENT-043 | `0.0/anchors/PALANG-0.0-CURRENT-20261024-043-FOUNDATIONAL-PRINCIPLES-COMPLETENESS.md` | نقطهٔ جاری تکمیل اصول بنیادین و بازیابی | READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING |
 | G6IP-EVT-0143 | `architecture/BEHAVIOR-TRACE/EVT-0143-FOUNDATIONAL-PRINCIPLES-COMPLETION-2026-10-24.md` | رویداد تکمیل اصول بنیادین و کنترل جامعیت | READ-BACK VERIFIED / IDENTIFIERS MATCHED |
 | G6IP-NEXT-041 | `0.0/anchors/PALANG-0.0-NEXT-20261024-041-FOUNDATIONAL-PRINCIPLES-VERIFICATION.md` | آزمون اجرایی کامل‌بودن اصول، نسخه‌ها و پیوندها | OPEN / NOT RUN |
+
+
+## CURRENT-044 — پایهٔ معماری بازیابی‌پذیر و تکامل‌پذیر — 2026-10-24
+- Current anchor: [CURRENT-044](0.0/anchors/PALANG-0.0-CURRENT-20261024-044-RECOVERY-EVOLVABLE-BASELINE.md); parent [CURRENT-043](0.0/anchors/PALANG-0.0-CURRENT-20261024-043-FOUNDATIONAL-PRINCIPLES-COMPLETENESS.md) remains preserved.
+- Input/output: [IN-036](0.0/anchors/PALANG-0.0-IN-20261024-036-RECOVERY-EVOLVABLE-BASELINE.md) ↔ [OUT-036](0.0/anchors/PALANG-0.0-OUT-20261024-036-RECOVERY-EVOLVABLE-BASELINE.md).
+- Event: [EVT-0144](architecture/BEHAVIOR-TRACE/EVT-0144-RECOVERY-EVOLVABLE-BASELINE-2026-10-24.md).
+- Next: [NEXT-042 — gap closure and recovery validation](0.0/anchors/PALANG-0.0-NEXT-20261024-042-GAP-CLOSURE-AND-RECOVERY-VALIDATION.md).
+- Rule: additive version lineage; previous versions are preserved, never silently overwritten. Current commit UTC 2026-10-24T10:52:44Z; Tehran equivalent 2026-10-24T14:22:44+03:30; commit SHA 5baf011be65f769d9694f9091eb9c0958f88d1f8.
+- Status boundary: repository records were fetched after write and IDs/links matched. Full 16-principle audit, transitive link scan, adoption, prototype, cold-start recovery and external destinations remain open/unverified.
