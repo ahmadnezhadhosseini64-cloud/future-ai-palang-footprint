@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001
 - Production ID / شناسهٔ تولید: G6IP-IAM-20261024-001
-- Version / نسخه: 1.1.1
+- Version / نسخه: 1.1.2
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED / CONTENT PRESENT / IDENTIFIERS MATCHED
 - Parent architecture / معماری والد: Future AI / Palang Footprint — HAIF
 - New project root / ریشهٔ پروژهٔ جدید: [Point 0](../../0.0/anchors/GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001.md)
@@ -266,3 +266,9 @@ Latest inspected structural audit [40122633902](https://github.com/ahmadnezhadho
 - [Point 0/007](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-007-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md) → [IN-051](../../0.0/anchors/PALANG-0.0-IN-20261024-051-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md) → [OUT-050](../../0.0/anchors/PALANG-0.0-OUT-20261024-050-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md) → [EVT-0160](../../architecture/BEHAVIOR-TRACE/EVT-0160-DEEP-EXCAVATION-EXECUTION-RECEIPTS-AND-AUDIT-CORRECTION-2026-10-24.md) → [CURRENT-058](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-058-DEEP-EXCAVATION-EXECUTION-RECEIPTS.md).
 - Continue from [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md); do not invent a successor NEXT while it remains incomplete.
 - All new files were written and read back; final manifest hash/package rerun and repository-wide post-fix audit remain pending. Full IN/OUT state reconstruction, clean/second AI-host import, persistence restart and idle/background execution remain OPEN / NOT VERIFIED.
+
+
+## CURRENT-058 latest audit receipt
+- [Audit run 40129104121](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129104121) passed structural checks and reports zero missing Markdown links across 5,564 edges; content remains REVIEW_REQUIRED due unresolved ID collisions, 13 ambiguous parent edges and one ambiguous timestamp.
+- [Strict conformance baseline 40129104156](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129104156) passed its declared 50-file digest/schema/limited-recovery/package scope before the latest edits. A new full repository IN/OUT verifier has been wired into CI; its first run is pending.
+- Keep NEXT-051 OPEN; no successor NEXT is created to disguise incomplete work. Real AI-host import, persistent memory and idle/background execution remain NOT VERIFIED.
