@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001`
 - Production ID / شناسهٔ تولید: `NPFAP-20261024-001`
-- Version / نسخه: 1.2.1
+- Version / نسخه: 1.2.2
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING / EVOLVABLE / EXTRACTABLE / RECOVERY-ORIENTED / CURRENT-054 + CURRENT-056 LINKED
 - Scope / دامنه: الگوی پایه برای هر پروژهٔ جدید در خانوادهٔ Future AI / Palang Footprint / HAIF و شاخه‌های محصول/میزبان آن؛ با سازگارسازی مستند برای پروژه‌های دیگر
 - Source anchor / منشأ: [G6IP-ARCH-ZERO-20261024-001](../../0.0/anchors/PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md)
@@ -548,3 +548,11 @@ Evidence branch: [CURRENT-057](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-057
 - Executed repository corrections: five historical anchor links in the initial-model mother and one NEXT-034 link in EVT-0132 were corrected; the historical graph auditor was narrowed to audit navigation links only in documentation formats, not Markdown-looking fixture strings in Python code.
 - CI gate now explicitly checks the latest Point 0/006 → CURRENT-057/NEXT-051 chain plus mother, manifest, index and queue. Final post-edit audit and strict package run are pending; no pass is inferred from a prior commit.
 - Open: global identifier collisions, ambiguous parent/time records, full IN/OUT canonical-state reconstruction, independent AI-host import, persistence restart and idle/background execution. These remain OPEN / NOT VERIFIED until separately evidenced.
+
+
+## CURRENT-058 — execution continuity and portable growth
+- Latest point and checkpoint: [POINT-0/007](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-007-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md) → [CURRENT-058](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-058-DEEP-EXCAVATION-EXECUTION-RECEIPTS.md); interaction [IN-051](../../0.0/anchors/PALANG-0.0-IN-20261024-051-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md) → [OUT-050](../../0.0/anchors/PALANG-0.0-OUT-20261024-050-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md) → [EVT-0160](../../architecture/BEHAVIOR-TRACE/EVT-0160-DEEP-EXCAVATION-EXECUTION-RECEIPTS-AND-AUDIT-CORRECTION-2026-10-24.md).
+- The active NEXT remains [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). Do not create a new NEXT to disguise unfinished work.
+- No-silent-gap rule: every durable milestone produces a visible status/result; unfinished work remains explicitly OPEN/PARTIAL/BLOCKED and is resumed from the last read-back-verified checkpoint.
+- Audit claims require exact path verification. Repository CI, package creation, independent host import, durable memory and idle/background execution are separate evidence classes.
+- Final post-edit audit and digest/package receipts are still pending; full IN/OUT reconstruction and real-host gates remain OPEN / NOT VERIFIED.
