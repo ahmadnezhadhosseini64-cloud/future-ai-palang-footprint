@@ -44,3 +44,7 @@ The following exact repository paths were fetched again after writes: IN-034, OU
 - Cold-start recovery: NOT RUN.
 - Buffer / Persistent Memory / Library / Dropbox: NOT VERIFIED.
 - Global always-on capture: NOT ESTABLISHED.
+
+
+## Active-pointer fix read-back
+After the additional corrections, the inherited mother, GPT-6 living master, architecture-zero root, CURRENT-042, NEXT-040, 0.0 registry and Reference Index were fetched again. The active headers now point to CURRENT-042 / NEXT-040 and the GPT-6 living master identifies INT-20261024-034, IN-034, OUT-034 and EVT-0142. The index's NPFAP status is READ-BACK VERIFIED and the index date is 2026-10-24. Historical anchors CURRENT-039/040/041 remain present and linked.
