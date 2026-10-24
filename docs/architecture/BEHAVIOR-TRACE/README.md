@@ -577,3 +577,8 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 ## EVT-0128 — semantic identity adjudication batch 1
 - [EVT-0128](./EVT-0128-SEMANTIC-IDENTITY-ADJUDICATION-BATCH-1-2026-10-24.md) records a source-backed role decision; raw collision counts remain unchanged.
 - [NEXT-029](../../0.0/anchors/PALANG-0.0-NEXT-20261024-029-SEMANTIC-REVIEW-BATCH-2-AND-FRESH-SESSION.md) continues the active work.
+
+
+## Active semantic review — EVT-0128 / NEXT-030
+- [EVT-0128](./EVT-0128-SEMANTIC-IDENTITY-ADJUDICATION-BATCH-1-2026-10-24.md) records the source-backed decisions and CI evidence.
+- [NEXT-030](../../0.0/anchors/PALANG-0.0-NEXT-20261024-030-SEMANTIC-REVIEW-BATCH-3-AND-COLD-START.md) is the active successor; verify the third decision in the next graph audit and keep fresh-session recovery open until actually run.
