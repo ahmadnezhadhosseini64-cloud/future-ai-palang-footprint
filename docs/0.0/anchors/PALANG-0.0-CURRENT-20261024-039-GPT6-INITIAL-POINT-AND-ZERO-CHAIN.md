@@ -2,7 +2,7 @@
 
 - Stable ID: `PALANG-CURRENT-GPT6-INITIAL-POINT-ZERO-CHAIN-2026-10-24-039`
 - Production ID: `G6IP-CURRENT-039`
-- Version: 1.1.0
+- Version: 1.2.0
 - Role: INITIAL POINT 0 / ریشه و نقطهٔ صفر اولیه
 - Status: REGISTERED / ACTIVE / LIVING / EVOLVABLE / RECOVERABLE
 - Parent: [CURRENT-038 — معماری Project Zero](./PALANG-0.0-CURRENT-20261024-038-GPT6-PROJECT-ZERO-ARCHITECTURE.md)
@@ -44,3 +44,9 @@ Project Zero، CURRENT-038 و NEXT-037 قبلاً ثبت و بازخوانی ش�
 - IN/OUT: [IN-030](./PALANG-0.0-IN-20261024-030-PROMOTE-CURRENT-039-TO-INITIAL-POINT-0.md) ↔ [OUT-030](./PALANG-0.0-OUT-20261024-030-PROMOTE-CURRENT-039-TO-INITIAL-POINT-0.md).
 - Behavior event: [EVT-0138](../../architecture/BEHAVIOR-TRACE/EVT-0138-GPT6-POINT-0-PROMOTION-AND-HAIF-INTEGRATION-2026-10-24.md).
 - Governing layers connected: HAIF initial-model master, universal registration/portable HAIF master, dual-track behavioral architecture, project-zero baseline and integration queue. No prior anchor is overwritten.
+
+
+## Point-0 read-back reconciliation
+- Status: READ-BACK VERIFIED / IDENTIFIERS MATCHED.
+- The point-0 record and the IN-030/OUT-030, EVT-0138, NEXT-038 and living-master paths were fetched after writes and expected IDs were present.
+- Point 0.0 remains NOT CREATED; prototype NOT BUILT; cold-start recovery NOT RUN; external destinations NOT VERIFIED.
