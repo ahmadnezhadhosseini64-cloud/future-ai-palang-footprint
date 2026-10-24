@@ -3,7 +3,7 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.8.4
+- Version: 1.8.5
 - Date: 2026-10-20
 - Exact Time: 11:25 local project time, minute precision; exact seconds not captured.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
@@ -1755,3 +1755,10 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - Active NEXT remains [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). Do not create NEXT-052 until NEXT-051 acceptance criteria are genuinely completed.
 - Current executed subgates: exact-path read-back, focused links, six real link corrections, graph-auditor scope correction, latest-chain CI gate, and synchronized mother/index/queue updates.
 - Pending: final repository-wide post-fix audit, manifest SHA-256 comparison and archive rebuild, full IN/OUT state reconstruction, clean/second AI-host import, actual persistence restart, idle/background execution, and individual graph-finding adjudication.
+
+
+## CURRENT-058 — latest audit receipt and IN/OUT recovery verifier
+- Audit run [40129104121](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129104121): 3,805 files; 5,564 local Markdown link edges; zero missing links; content REVIEW_REQUIRED due 62 Stable-ID collision groups (61 unreviewed), 88 Production-ID, 7 Reference-ID, 36 event-number groups, 13 ambiguous parent edges and one ambiguous timestamp.
+- Strict baseline [40129104156](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129104156) passed 50/50 digests, schema fixtures, limited recovery equivalence and archive build before the latest edits.
+- The actual repository IN/OUT canonical-state verifier `scripts/behavior-hunter/verify_current_0_0_chain.py` is now wired into CI; first result pending. NEXT-051 remains OPEN/LIVING; no NEXT-052 was created.
+- Real independent AI-host import, second host, persistence restart and idle/background execution remain OPEN / NOT VERIFIED.
