@@ -60,6 +60,11 @@ class SemanticRoleDecisionTests(unittest.TestCase):
         self.assertEqual(groups[0]["semantic_review"]["status"], "UNREVIEWED")
         self.assertEqual(summary["groups_reviewed"], 0)
 
+    def test_wrong_identifier_type_does_not_apply(self):
+        groups, summary = apply_role_decisions([self.group], self.nodes, [self.decision], "PRODUCTION_ID")
+        self.assertEqual(groups[0]["semantic_review"]["status"], "UNREVIEWED")
+        self.assertEqual(summary["groups_reviewed"], 0)
+
     def test_unreviewed_decision_is_not_promoted(self):
         bad = dict(self.decision)
         bad["status"] = "PROPOSED"
