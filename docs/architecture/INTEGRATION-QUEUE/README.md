@@ -1611,3 +1611,5 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - Rule-to-test mapping remains PROVISIONAL; Issue #21 historic census stays OPEN.
 - Issue #20 runtime capture / IN-OUT reverse lookup / cold-start remains OPEN; candidate audit pass does not prove those runtime capabilities.
 - Next: continue remaining canonical source families and adjudicate rule conflicts, then run the runtime recovery gate and retrieve a full audit for the exact latest main SHA.
+
+- Exact crosswalk identity enforced by CI: `SCRTC-B3-2026-10-24-001`.
