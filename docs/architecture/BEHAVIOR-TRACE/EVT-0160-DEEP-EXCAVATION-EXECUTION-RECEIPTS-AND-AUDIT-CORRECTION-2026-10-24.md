@@ -2,7 +2,7 @@
 
 - Stable ID: `G6IP-RAHM-EVT-0160-20261024`
 - Production ID: `G6IP-EVT-0160`
-- Version: 1.0.3
+- Version: 1.0.4
 - Status: REGISTERED; read-back gate pending; host and global graph gates OPEN.
 - Point 0: [POINT-0/007](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-007-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md)
 - Input: [IN-051](../../0.0/anchors/PALANG-0.0-IN-20261024-051-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md)
@@ -58,3 +58,11 @@ A dedicated repository verifier now reconstructs the current chain independently
 - It starts independently from IN-051 and OUT-050, checks parent/child links, versions, current/next identifiers, manifest linkage and preservation of open gates, then compares the reconstructed canonical state.
 - Its first CI execution is pending; no PASS is claimed yet. Even a PASS proves repository-state recovery only, not a clean external AI-host import.
 - Latest post-fix audit [40129104121](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129104121): zero missing Markdown links; content remains REVIEW_REQUIRED due unresolved ID/parent/time findings.
+
+
+## Verifier correction and retest — run 40129551204
+- First attempt [40129456947](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129456947) failed. Root causes were test-code defects: path checks used shorthand labels instead of canonical dated filenames, manifest `next_action` was read from the wrong object level, and the second-host marker did not match NEXT-051's wording.
+- Correction commit: `bf9b121fbcee82475696e98c8c5d9b25e5e683e8`.
+- Retest [40129551204](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129551204) PASS: both IN and OUT independently recovered the same canonical state; all six open-gate categories were preserved; no verifier failures.
+- This closes only the current repository-chain IN/OUT equivalence subgate. It does not close full external-host recovery, second-host import, persistence restart, idle/background execution, or global graph triage.
+- Inspectable workflow artifact: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129551204/artifacts/12574201632
