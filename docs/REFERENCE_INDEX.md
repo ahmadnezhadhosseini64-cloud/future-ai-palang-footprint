@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-24 — CURRENT-056 / EVT-0158 / NEXT-050 linked; strict SHA-256 37/37, schema fixtures and limited IN/OUT checkpoint-link checks passed in run 40122001572; audit 40122001601 remains REVIEW_REQUIRED; real AI-host transfer, full recovery, persistence/background and graph remediation remain open.
+**Last Updated:** 2026-10-24 — CURRENT-057 / POINT-0-006 / IN-050 / OUT-049 / EVT-0159 / NEXT-051 linked; repository audit remains REVIEW_REQUIRED; independent host recovery remains OPEN.
 
 ## Canonical References
 
@@ -1238,3 +1238,9 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Current checkpoint: [CURRENT-056](0.0/anchors/PALANG-0.0-CURRENT-20261024-056-OUTPUT-CONTINUITY-AND-RECOVERY.md).
 - Input/output/event: [IN-049](0.0/anchors/PALANG-0.0-IN-20261024-049-OUTPUT-CONTINUITY-AND-RECOVERY.md) → [OUT-048](0.0/anchors/PALANG-0.0-OUT-20261024-048-OUTPUT-CONTINUITY-AND-RECOVERY.md) → [EVT-0158](architecture/BEHAVIOR-TRACE/EVT-0158-NO-SILENT-GAP-OUTPUT-CONTINUITY-2026-10-24.md).
 - Next: [NEXT-050](0.0/anchors/PALANG-0.0-NEXT-20261024-050-FULL-RECOVERY-AND-REAL-HOST-IMPORT.md), OPEN / LIVING; [NEXT-049](0.0/anchors/PALANG-0.0-NEXT-20261024-049-REAL-HOST-TRANSFER-AND-GRAPH-AUDIT.md) remains open.
+
+
+## CURRENT-057 — Repository Excavation and Living Recovery
+- [User Point 0/006](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-006-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md)
+- [IN-050](0.0/anchors/PALANG-0.0-IN-20261024-050-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md) → [OUT-049](0.0/anchors/PALANG-0.0-OUT-20261024-049-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md) → [EVT-0159](architecture/BEHAVIOR-TRACE/EVT-0159-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY-2026-10-24.md) → [CURRENT-057](0.0/anchors/PALANG-0.0-CURRENT-20261024-057-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md) → [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Existing NEXT-049 and NEXT-050 remain OPEN and preserved. Full IN/OUT reconstruction, independent host import, persistence/background and graph triage remain OPEN.
