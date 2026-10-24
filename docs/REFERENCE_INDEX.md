@@ -1230,3 +1230,5 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Event: [EVT-0157](architecture/BEHAVIOR-TRACE/EVT-0157-TEST-HARNESS-FAILURE-AS-ARCHITECTURE-LEARNING-2026-10-24.md).
 - Next: [NEXT-049](0.0/anchors/PALANG-0.0-NEXT-20261024-049-REAL-HOST-TRANSFER-AND-GRAPH-AUDIT.md), OPEN / LIVING.
 - Evidence: [run 40115178748](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40115178748) passed schema, 24-file digest, limited IN/OUT checkpoint-link and archive-build checks; real-host import and runtime persistence remain unverified.
+
+- User return anchor: [Point 0/004 — First Master Readiness](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-004-TEST-HARNESS-AND-FIRST-MASTER-READINESS.md).
