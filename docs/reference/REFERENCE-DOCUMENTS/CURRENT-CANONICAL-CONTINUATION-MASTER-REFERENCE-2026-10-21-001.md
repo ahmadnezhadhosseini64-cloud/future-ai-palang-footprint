@@ -600,3 +600,12 @@ Current active gate remains [EVT-0122](../../architecture/BEHAVIOR-TRACE/EVT-012
 - Decision ledger: [HISTORICAL-0.0-CANONICAL-ALIAS-LINEAGE-DECISION-REGISTER](./HISTORICAL-0.0-CANONICAL-ALIAS-LINEAGE-DECISION-REGISTER-2026-10-21-001.md), one repeated Stable-ID group reviewed by document role, Git history, and audited graph links.
 - [NEXT-029](../../0.0/anchors/PALANG-0.0-NEXT-20261024-029-SEMANTIC-REVIEW-BATCH-2-AND-FRESH-SESSION.md) is active for batch-2 review, teaching the audit to consume reviewed role decisions, and separate fresh-session recovery.
 - This does not close the remaining collision groups, 13 ambiguous parent edges, 11 alias proposals, EVT-0089 timezone ambiguity, Issue #20 or Issue #21. No bulk rename/delete/merge.
+
+
+## Latest semantic role adjudication and validation proof
+- [EVT-0128](../../architecture/BEHAVIOR-TRACE/EVT-0128-SEMANTIC-IDENTITY-ADJUDICATION-BATCH-1-2026-10-24.md): two source-backed role decisions registered and consumed by the graph builder.
+- Audit [40058599484](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40058599484) PASS on SHA `c54ea409d43d0650066433b63bf364c9ae9e2279`; artifact `12546426252` inspected; 3,687 local links, zero missing links, zero decode errors.
+- Behavior Hunter [40058599527](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40058599527) PASS, 67 tests; artifact `12546421339` inspected; architecture update ledger hash chain PASS; owner gate remains explicit and promotion false.
+- Cross-Layer Integrity Gate [40058599467](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40058599467) PASS on the same source SHA.
+- Raw graph counters remain 60 Stable-ID, 71 Production-ID, 7 Reference-ID, 30 event-number collision groups; 11 exact duplicates; 13 ambiguous parent edges; 11 proposed aliases. Only 1 Stable-ID and 1 Production-ID group are role-adjudicated; others remain open.
+- Main subsequently received evidence-only commit `0d13be4be55aa6c29efb95ce00aa39f29314a19a`; do not conflate it with the tested source SHA.
