@@ -2,7 +2,7 @@
 
 - Stable ID: `G6IP-RAHM-CURRENT-054-20261024`
 - Production ID: `G6IP-CURRENT-054`
-- Version: 1.0.2
+- Version: 1.0.3
 - Status: REGISTERED / READ-BACK VERIFIED for core chain files and canonical mother/index/queue updates; conformance and runtime gates remain OPEN.
 - Parent: [CURRENT-053](./PALANG-0.0-CURRENT-20261024-053-PORTABLE-RAHM-HARD-AUDIT.md)
 - User-designated Point 0: [G6IP-RAHM-USER-POINT-0-20261024-003](./GPT6-RAHM-USER-POINT-0-20261024-003-FIRST-LIVING-MASTER-AND-PORTABILITY.md)
@@ -59,3 +59,11 @@ Execute NEXT-044 first, then NEXT-048 conformance steps. Never close a gate with
 - Dynamic run history: [Portable RAHM Conformance workflow](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/workflows/rahm-portable-conformance.yml).
 - Structural audit at the same repository head completed but reported `REVIEW_REQUIRED`: 11 missing local links, 60 unreviewed Stable-ID collision groups, 88 Production-ID collision groups, 7 reference-ID collision groups, 36 event-number collision groups, 13 ambiguous parent edges. See [Living Architecture Audit run 40115278044](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40115278044).
 - Still OPEN / NOT VERIFIED: full state/evidence reconstruction beyond the limited link/checkpoint test; real independent AI-host import; second-host conformance; persistent memory after restart; idle/background execution; repository-wide graph remediation.
+
+
+## Point 0-003 reconciliation — package expansion
+- Explicit user-designated Point 0: [G6IP-RAHM-USER-POINT-0-20261024-003](./GPT6-RAHM-USER-POINT-0-20261024-003-FIRST-LIVING-MASTER-AND-PORTABILITY.md).
+- The earlier 24-file manifest/package receipt above is historical. The expanded manifest now contains 25 inventory files, including this explicit Point 0; the ZIP contains 26 files including the manifest.
+- Expansion run [40115708630](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40115708630) passed schema fixtures, limited IN/OUT pointer recovery and archive construction. Five changed-file digest expectations were pending in that run; final SHA comparison is controlled by the next manifest-triggered workflow run.
+- Use the dynamic [Portable RAHM Conformance workflow](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/workflows/rahm-portable-conformance.yml) as the latest-run authority. Do not treat a historical receipt as current after package expansion.
+- Still open: full canonical state/evidence reconstruction; clean/second AI-host import; persistence restart; idle/background execution; repository-wide link/ID/parent/timestamp remediation.
