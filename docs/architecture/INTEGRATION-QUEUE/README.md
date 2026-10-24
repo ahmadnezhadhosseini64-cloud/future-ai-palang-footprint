@@ -3,13 +3,13 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.8.1
+- Version: 1.8.2
 - Date: 2026-10-20
 - Exact Time: 11:25 local project time, minute precision; exact seconds not captured.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: نسخهٔ 1.8.0؛ CURRENT-054 / NEXT-048 و سند مادر قابل‌انتقال ثبت شده‌اند؛ آزمون‌های واقعی میزبان و رفع کامل گراف همچنان باز هستند. نسخهٔ پیشین 1.7.9 در تاریخچهٔ Git حفظ شده. پیشینه: قرارداد اجرای خودکار و تطبیق زنده LIARC-2026-10-20-001 و رویداد راستی‌آزمایی ساختمان ABV-2026-10-20-001 به صف پیوند خورده‌اند؛ ممیزی ساختاری قبلی موفق است، اما اجرای ممیزی پس از آخرین تغییرات باید جداگانه تأیید شود. Library، Buffer، Persistent Memory، capture سراسری گفتگو و آزمون سرتاسری مستقل هنوز تأیید نشده‌اند.
+- Status: نسخهٔ 1.8.0؛ CURRENT-056 / NEXT-050 و قاعدهٔ بدون فاصلهٔ خاموش به سند مادر متصل‌اند؛ آزمون سخت‌گیرانهٔ SHA-256 و طرح تعامل پاس شده؛ انتقال واقعی میزبان و رفع کامل گراف همچنان باز هستند. نسخهٔ پیشین 1.7.9 در تاریخچهٔ Git حفظ شده. پیشینه: قرارداد اجرای خودکار و تطبیق زنده LIARC-2026-10-20-001 و رویداد راستی‌آزمایی ساختمان ABV-2026-10-20-001 به صف پیوند خورده‌اند؛ ممیزی ساختاری قبلی موفق است، اما اجرای ممیزی پس از آخرین تغییرات باید جداگانه تأیید شود. Library، Buffer، Persistent Memory، capture سراسری گفتگو و آزمون سرتاسری مستقل هنوز تأیید نشده‌اند.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
@@ -1729,3 +1729,5 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - Input/output/event: [IN-049](../../0.0/anchors/PALANG-0.0-IN-20261024-049-OUTPUT-CONTINUITY-AND-RECOVERY.md) → [OUT-048](../../0.0/anchors/PALANG-0.0-OUT-20261024-048-OUTPUT-CONTINUITY-AND-RECOVERY.md) → [EVT-0158](../BEHAVIOR-TRACE/EVT-0158-NO-SILENT-GAP-OUTPUT-CONTINUITY-2026-10-24.md).
 - Next: [NEXT-050](../../0.0/anchors/PALANG-0.0-NEXT-20261024-050-FULL-RECOVERY-AND-REAL-HOST-IMPORT.md), OPEN / LIVING. [NEXT-049](../../0.0/anchors/PALANG-0.0-NEXT-20261024-049-REAL-HOST-TRANSFER-AND-GRAPH-AUDIT.md) remains open for repository-wide graph and real-host work.
 - Rule: a new input does not erase an open NEXT. Preserve the lineage, return visible milestone status, and never claim invisible background execution. Main mother/index/queue integration is not considered verified until read-back and the relevant tests pass.
+
+| G6IP-RAHM-EVT-0158-20261024 | تداوم ورودی/خروجی، دروازهٔ هش سخت‌گیرانه و بازیابی قابل‌انتقال | OPEN / PARTIAL — run 40122001572 passed 37/37 digests; real-host/full-recovery gates remain open | سند مادر قابل‌انتقال، سند مادر HAIF، شاخص مرجع، NEXT-050 | [EVT-0158](../BEHAVIOR-TRACE/EVT-0158-NO-SILENT-GAP-OUTPUT-CONTINUITY-2026-10-24.md) |
