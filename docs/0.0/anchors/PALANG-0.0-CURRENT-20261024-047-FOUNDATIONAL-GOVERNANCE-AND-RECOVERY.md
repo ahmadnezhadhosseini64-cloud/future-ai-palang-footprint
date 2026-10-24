@@ -22,8 +22,8 @@ Every input, output, event, error, correction, test, and validation result must 
 The shared Freshness Discovery Engine governs discovery for behavioral analysis and excellence/evolution. Each project retains separate identifiers and its own mother. The second project's canonical repository has not been identified, so dual-repository integration remains pending.
 
 ## Verified / open
-- Repository records CURRENT-046, OUT-038, EVT-0146, NEXT-044, mother v1.0.7, and reference index have been fetched after writes.
-- This CURRENT-047 and its IN-040 / OUT-039 / EVT-0147 chain require read-back after creation.
+- Repository records CURRENT-046, OUT-038, EVT-0146, IN-040, OUT-039, EVT-0147, NEXT-044, mother v1.0.9, reference index, and discovery architecture have been fetched after writes.
+- CURRENT-047 and its IN-040 / OUT-039 / EVT-0147 chain have been fetched after creation; their expected IDs and paths matched. Export/recovery and second-project integration remain open.
 - NEXT-044 export package and fresh-host cold-start recovery test remain OPEN / NOT RUN.
 - Always-on discovery, scheduled execution, and background automation remain NOT VERIFIED.
 
