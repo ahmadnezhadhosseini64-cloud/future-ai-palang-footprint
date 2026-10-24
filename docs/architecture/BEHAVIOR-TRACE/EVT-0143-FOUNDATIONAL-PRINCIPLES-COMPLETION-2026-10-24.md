@@ -20,3 +20,7 @@ The foundational document update is a repository write. Its final exact read-bac
 ## Next action
 
 Run [NEXT-041](../../0.0/anchors/PALANG-0.0-NEXT-20261024-041-FOUNDATIONAL-PRINCIPLES-VERIFICATION.md), then resume [NEXT-040](../../0.0/anchors/PALANG-0.0-NEXT-20261024-040-FRESH-PROJECT-ADOPTION-TEST.md).
+
+
+## Reconciliation targets
+The foundational mother is v1.0.2; the current branch master is v1.3.7; the inherited mother must point to CURRENT-043; the Reference Index and 0.0 registry must identify NPFAP v1.0.2 and CURRENT-043 / EVT-0143 / NEXT-041. Fetch each exact path after write before promoting this event to READ-BACK VERIFIED.
