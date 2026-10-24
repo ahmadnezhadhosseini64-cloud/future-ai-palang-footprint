@@ -2,7 +2,7 @@
 
 - Stable ID: `G6IP-RAHM-NEXT-051-20261024`
 - Production ID: `G6IP-NEXT-051`
-- Version: 1.0.3
+- Version: 1.0.4
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE.
 - Parent: [CURRENT-057](./PALANG-0.0-CURRENT-20261024-057-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md)
 - Preserve existing gates: [NEXT-050](./PALANG-0.0-NEXT-20261024-050-FULL-RECOVERY-AND-REAL-HOST-IMPORT.md), [NEXT-049](./PALANG-0.0-NEXT-20261024-049-REAL-HOST-TRANSFER-AND-GRAPH-AUDIT.md)
@@ -66,3 +66,16 @@ NEXT-051 remains OPEN/LIVING. Do not create a new NEXT merely to move the number
 
 ## Still OPEN — do not close
 Full canonical-state recovery until the new verifier passes; real clean/second AI-host import; persistence restart; idle/background execution; individual adjudication of all collision, parent and timestamp findings. NEXT-051 remains active; do not create NEXT-052 while these gates remain open.
+
+
+## Current-chain IN/OUT equivalence — PASS (bounded scope)
+- Run [40129551204](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129551204) independently started reconstruction from IN-051 and OUT-050 and returned RECOVERED for both, `canonical_state_equivalent=true`, zero failures.
+- It checked current lineage, versions, link targets, manifest checkpoint/NEXT, failure/correction evidence, and preservation of six open gates. Evidence artifact: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129551204/artifacts/12574201632
+- The first verifier run [40129456947](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129456947) failed due to verifier path/field-name assumptions; correction commit `bf9b121fbcee82475696e98c8c5d9b25e5e683e8`; retest passed. The failed attempt remains in history.
+- [x] Current repository-chain IN/OUT equivalence gate.
+- [ ] Full project evidence reconstruction beyond this chain.
+- [ ] Clean independent AI-host import and second-host import.
+- [ ] Persistence after actual host restart and idle/background execution.
+- [ ] Individual triage of 62 Stable-ID collision groups (61 unreviewed), 88 Production-ID groups, 7 Reference-ID groups, 36 event-number groups, 13 ambiguous parent edges and one ambiguous timestamp.
+
+NEXT-051 remains OPEN/LIVING until all remaining acceptance gates are satisfied; no NEXT-052 was created.
