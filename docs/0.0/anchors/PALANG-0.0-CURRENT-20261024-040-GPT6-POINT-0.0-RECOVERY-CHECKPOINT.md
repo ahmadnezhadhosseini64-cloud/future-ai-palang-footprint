@@ -19,7 +19,7 @@ The independent point-0.0 checkpoint has been created from verified point 0. The
 
 ## Evidence boundaries
 - Point 0: previously REGISTERED / READ-BACK VERIFIED.
-- Point 0.0: created; read-back and final link reconciliation pending until this exact path and its connected records are fetched after writes.
+- Point 0.0: created; the exact path and key connected records have been fetched again; repository identifiers and expected links matched.
 - Prototype: NOT BUILT.
 - Cold-start recovery: NOT RUN.
 - `docs/REFERENCE_INDEX.md` previous 404: OPEN / not claimed fixed.
@@ -30,7 +30,7 @@ The independent point-0.0 checkpoint has been created from verified point 0. The
 Canonical repository registration time must be fetched from this file's actual Git commit metadata in UTC; derive Tehran equivalent from that exact instant (+03:30). Do not infer user-message time from commit time. On restart, read this file first, then point 0.0, latest inherited architecture master, IN-031/OUT-031, EVT-0139 and NEXT-039; compare IDs and resume from the next open task.
 
 ## Time ledger
-- [TIME-BINDING-GPT6-POINT-0.0-2026-10-24-001](../architecture/BEHAVIOR-TRACE/TIME-BINDING-GPT6-POINT-0.0-2026-10-24-001.md) — actual commit UTC first, Tehran equivalent from the same instant.
+- [TIME-BINDING-GPT6-POINT-0.0-2026-10-24-001](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-GPT6-POINT-0.0-2026-10-24-001.md) — actual commit UTC first, Tehran equivalent from the same instant.
 
 ## Read-back receipt
 - Status: READ-BACK VERIFIED / CONTENT PRESENT / IDENTIFIERS MATCHED.
