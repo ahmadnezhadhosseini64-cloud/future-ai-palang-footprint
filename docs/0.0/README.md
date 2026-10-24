@@ -1428,3 +1428,12 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - Governing mother: [NPFAP-20261024-001](../reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md).
 - Next active task: [NEXT-040 — fresh-project adoption test](./anchors/PALANG-0.0-NEXT-20261024-040-FRESH-PROJECT-ADOPTION-TEST.md); preserve [NEXT-039 prototype task](./anchors/PALANG-0.0-NEXT-20261024-039-BUILD-INTERACTIVE-PROTOTYPE.md).
 - Status: repository records REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED. Adoption test OPEN / NOT RUN; prototype NOT BUILT; cold-start recovery NOT RUN; external destinations NOT VERIFIED.
+
+
+## CURRENT-043 — تکمیل اصول بنیادین — 2026-10-24
+- Current checkpoint: [CURRENT-043](./anchors/PALANG-0.0-CURRENT-20261024-043-FOUNDATIONAL-PRINCIPLES-COMPLETENESS.md).
+- Input/output: [IN-035](./anchors/PALANG-0.0-IN-20261024-035-COMPLETE-FOUNDATIONAL-PRINCIPLES.md) ↔ [OUT-035](./anchors/PALANG-0.0-OUT-20261024-035-COMPLETE-FOUNDATIONAL-PRINCIPLES.md).
+- Event: [EVT-0143](../architecture/BEHAVIOR-TRACE/EVT-0143-FOUNDATIONAL-PRINCIPLES-COMPLETION-2026-10-24.md).
+- Governing mother: [NPFAP-20261024-001 v1.0.2](../reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md).
+- Next active task: [NEXT-041 — foundational verification](./anchors/PALANG-0.0-NEXT-20261024-041-FOUNDATIONAL-PRINCIPLES-VERIFICATION.md), then [NEXT-040 — fresh-project adoption](./anchors/PALANG-0.0-NEXT-20261024-040-FRESH-PROJECT-ADOPTION-TEST.md).
+- Status: foundational mother updated; exact final read-back and cross-file verification in progress. Adoption test OPEN / NOT RUN; prototype NOT BUILT; cold-start recovery NOT RUN; external destinations NOT VERIFIED.
