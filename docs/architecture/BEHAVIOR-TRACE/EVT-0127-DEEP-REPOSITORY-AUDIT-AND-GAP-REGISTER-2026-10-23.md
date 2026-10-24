@@ -75,3 +75,10 @@ The audit identified five broken local links; target candidates were checked aga
 - Current audited snapshot: 2,680 total files; 858 source files; 1,822 generated Evidence Gate files; 3,644 local-link edges; zero missing local links; zero decode errors.
 - Collision and semantic review counts remain unchanged: 60 Stable ID, 71 Production ID, 7 reference-ID and 30 event-number collision groups; 11 exact duplicate groups; 13 ambiguous parent edges; 11 proposed aliases.
 - Timestamp pair audit still reports one unresolved timezone at EVT-0089 line 21. The audit again explicitly states external persistence and all-conversation ChatGPT capture were not tested.
+
+
+## Semantic adjudication continuation — EVT-0128
+- [EVT-0128](./EVT-0128-SEMANTIC-IDENTITY-ADJUDICATION-BATCH-1-2026-10-24.md) records the first source-backed role decision for one repeated Stable ID shared by EVT-0022 and its governing reference.
+- The decision is in [H0CALDR](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-CANONICAL-ALIAS-LINEAGE-DECISION-REGISTER-2026-10-21-001.md), based on exact source text, Git history, manifest content hashes and inbound/outbound link counts.
+- This is a role adjudication only; it does not reduce raw structural collision counts, and it does not close the remaining semantic queue.
+- [NEXT-029](../../0.0/anchors/PALANG-0.0-NEXT-20261024-029-SEMANTIC-REVIEW-BATCH-2-AND-FRESH-SESSION.md) is the additive successor. Existing NEXT-028 and historical checkpoints are preserved.
