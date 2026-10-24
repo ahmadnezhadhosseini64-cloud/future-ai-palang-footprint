@@ -49,3 +49,7 @@ Read CURRENT-041 → IN-033/OUT-033 → EVT-0141 → foundational mother NPFAP-2
 - User message timestamp: UNKNOWN / UNVERIFIED.
 - Anchor creation commit: `0def375074fd6cb2e2a2b00cdec292d4a1640809`; UTC `2026-10-24T09:47:04Z`; Tehran `2026-10-24T13:17:04+03:30` (derived from the same commit instant). This is the anchor-creation time; later file modifications have their own commit timestamps.
 - User message timestamp: UNKNOWN / UNVERIFIED; do not infer it from the commit timestamp.
+
+
+## Successor handoff — CURRENT-042
+This checkpoint remains preserved as the record for the foundational-mother activation. Its earlier next-action note is historical; the current continuation is [CURRENT-042](./PALANG-0.0-CURRENT-20261024-042-NEW-PROJECT-ARCHITECTURE-HARD-AUDIT.md), and the next executable test is [NEXT-040](./PALANG-0.0-NEXT-20261024-040-FRESH-PROJECT-ADOPTION-TEST.md). Do not overwrite CURRENT-041 or repeat its completed link-registration step as an open task.
