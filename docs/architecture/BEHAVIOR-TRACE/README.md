@@ -621,3 +621,9 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 ## Durable receipt — run 40061873837
 - [Receipt JSON](./STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40061873837.json).
 - Run [40061873837](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40061873837) passed 71 tests on tested SHA `edd82d08311c03f0506c651e5c33d128a0d70a35`; artifact ZIP SHA-256 `c44071afab49df4bfb33141f432db059e21455f3161801f4d711efd34d690f1f`.
+
+
+## Drift detector — EVT-0131 / run 40062120276
+- [Durable receipt](./STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40062120276.json).
+- Run 40062120276 passed 74 tests; `living-graph-drift.json` PASS, six nodes, zero failures; artifact ZIP SHA-256 `e45208b1bd2b63fa4e30fedcf27b9701532b8c85feee298ae18cbd6105c0d332`.
+- The run predates ledger 1.4.0; validation of the appended five-record chain is a separate gate.
