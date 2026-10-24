@@ -1460,3 +1460,9 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - [EVT-0128](../BEHAVIOR-TRACE/EVT-0128-SEMANTIC-IDENTITY-ADJUDICATION-BATCH-1-2026-10-24.md): one source-backed Stable-ID role adjudication recorded in H0CALDR; event trace and governing reference retained as distinct roles.
 - [NEXT-029](../../0.0/anchors/PALANG-0.0-NEXT-20261024-029-SEMANTIC-REVIEW-BATCH-2-AND-FRESH-SESSION.md) active: continue semantic review batch 2, make reviewed decisions visible to the audit, and run fresh-session recovery separately.
 - Structural collision counters are not reduced by the decision itself; all other collision/alias/parent findings remain open. No bulk rename, merge or delete.
+
+
+## Source-hash-verified semantic review gate — EVT-0128
+- [EVT-0128](../BEHAVIOR-TRACE/EVT-0128-SEMANTIC-IDENTITY-ADJUDICATION-BATCH-1-2026-10-24.md) records two role decisions; graph builder now consumes `data/interaction-pairs/semantic-role-decisions.jsonl` and verifies source SHA-256 before annotation.
+- Audit [40058848054](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40058848054) PASS; artifact `12546671470` inspected; 3,689 local-link edges, zero missing links, zero decode errors; six semantic-role unit tests passed.
+- Current successor [NEXT-029](../../0.0/anchors/PALANG-0.0-NEXT-20261024-029-SEMANTIC-REVIEW-BATCH-2-AND-FRESH-SESSION.md) remains ACTIVE/LIVING for batch-2 source adjudication and separate fresh-session recovery. Raw collisions, aliases and parent ambiguities remain open; no bulk rename/delete/merge.
