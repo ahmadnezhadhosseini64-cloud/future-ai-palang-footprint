@@ -17,4 +17,4 @@
 ## Verification receipt
 - Status: READ-BACK VERIFIED / CONTENT PRESENT / IDENTIFIERS MATCHED.
 - Point 0.0, CURRENT-040, latest inherited architecture master v1.0.3, NEXT-039, IN-031 and EVT-0139 were fetched after writes; expected identifiers and links were present.
-- Commit times are recorded in [TIME-BINDING](../architecture/BEHAVIOR-TRACE/TIME-BINDING-GPT6-POINT-0.0-2026-10-24-001.md). This receipt does not claim prototype execution, cold-start recovery, or external destination writes.
+- Commit times are recorded in [TIME-BINDING](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-GPT6-POINT-0.0-2026-10-24-001.md). This receipt does not claim prototype execution, cold-start recovery, or external destination writes.
