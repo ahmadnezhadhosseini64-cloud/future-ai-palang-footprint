@@ -2,14 +2,14 @@
 
 - Stable ID / شناسهٔ پایدار: GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001
 - Production ID / شناسهٔ تولید: G6IP-IAM-20261024-001
-- Version / نسخه: 1.0.3
+- Version / نسخه: 1.0.4
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED / CONTENT PRESENT / IDENTIFIERS MATCHED
 - Parent architecture / معماری والد: Future AI / Palang Footprint — HAIF
 - New project root / ریشهٔ پروژهٔ جدید: [Point 0](../../0.0/anchors/GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001.md)
 - Root anchor / لنگر ریشه: [CURRENT-039](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-039-GPT6-INITIAL-POINT-AND-ZERO-CHAIN.md)
 - Existing GPT-6 master / سند مادر زندهٔ شاخه: [GPT-6 Living Master](./GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001.md)
 - HAIF mother / سند مادر مدل اولیه: [HAIF Initial AI Model](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
-- Next checkpoint / گام بعدی: [NEXT-038 — ایجاد نقطهٔ ۰.۰](../../0.0/anchors/PALANG-0.0-NEXT-20261024-038-DEFINE-POINT-0-THEN-0.0.md)
+- Architecture zero / نقطهٔ صفر معماری جدید: [G6IP-ARCH-ZERO-20261024-001](../../0.0/anchors/PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md)\n- Current recovery anchor / لنگر بازیابی جاری: [CURRENT-040](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-040-GPT6-POINT-0.0-RECOVERY-CHECKPOINT.md)\n- Next checkpoint / گام بعدی: [NEXT-039 — ساخت نمونهٔ تعاملی](../../0.0/anchors/PALANG-0.0-NEXT-20261024-039-BUILD-INTERACTIVE-PROTOTYPE.md)
 
 ## 1. تصمیم حاکم
 
@@ -86,7 +86,7 @@ OBSERVE → CAPTURE → CLASSIFY → CHILD HYPOTHESIS → TEST → RAHM REVIEW �
 ## 7. وضعیت واقعی و دروازه‌های باز
 
 - انتقال حاکمیت معماری به‌صورت مرجع و پیوندهای مخزنی: هدف این ثبت.
-- ساخت نقطهٔ ۰.۰ مستقل: NOT CREATED / هنوز ایجاد نشده.
+- نقطهٔ ۰.۰ مستقل: REGISTERED / READ-BACK VERIFIED؛ معماری صفر جدید نیز ثبت شده و بازخوانی نهایی این نسخه در جریان است.
 - ساخت نمونهٔ تعاملی جدید: NOT BUILT / هنوز ساخته نشده.
 - آزمون بازیابی سرد: NOT RUN / اجرا نشده.
 - بازخوانی و تطبیق همهٔ پیوندهای منابع قدیمی: PENDING / نیازمند ممیزی پیوندها.
@@ -130,3 +130,11 @@ OBSERVE → CAPTURE → CLASSIFY → CHILD HYPOTHESIS → TEST → RAHM REVIEW �
 - Latest interaction pair: [IN-031](../../0.0/anchors/PALANG-0.0-IN-20261024-031-ADVANCE-POINT-0.0-AND-LINK-LATEST-ARCHITECTURE.md) ↔ [OUT-031](../../0.0/anchors/PALANG-0.0-OUT-20261024-031-ADVANCE-POINT-0.0-AND-LINK-LATEST-ARCHITECTURE.md); event [EVT-0139](../../architecture/BEHAVIOR-TRACE/EVT-0139-GPT6-POINT-0.0-CHECKPOINT-CREATION-2026-10-24.md).
 - Next active step: [NEXT-039 — build the interactive prototype](../../0.0/anchors/PALANG-0.0-NEXT-20261024-039-BUILD-INTERACTIVE-PROTOTYPE.md).
 - Point 0.0 is now a separate registered checkpoint; prototype remains NOT BUILT, cold-start recovery NOT RUN, and external destinations NOT VERIFIED until evidence exists.
+
+
+## Architecture-zero integration — v1.0.4
+
+- New independent architecture anchor: [G6IP-ARCH-ZERO-20261024-001](../../0.0/anchors/PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md). It preserves the architecture lineage from Point 0 through Point 0.0 / CURRENT-040 and does not replace prior anchors.
+- Current recovery anchor: [CURRENT-040](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-040-GPT6-POINT-0.0-RECOVERY-CHECKPOINT.md).
+- Next executable task: [NEXT-039](../../0.0/anchors/PALANG-0.0-NEXT-20261024-039-BUILD-INTERACTIVE-PROTOTYPE.md).
+- Behavioral governance explicitly preserves the observed task-drift lesson; no hidden cause is inferred. Prototype remains NOT BUILT, cold-start recovery NOT RUN, external destinations NOT VERIFIED.
