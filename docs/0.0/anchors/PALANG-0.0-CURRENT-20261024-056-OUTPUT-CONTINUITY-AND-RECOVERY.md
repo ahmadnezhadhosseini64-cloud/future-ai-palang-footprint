@@ -2,8 +2,8 @@
 
 - Stable ID: `G6IP-RAHM-CURRENT-056-20261024`
 - Production ID: `G6IP-CURRENT-056`
-- Version: 1.0.0
-- Status: REGISTERED; read-back and integration gates pending until independently fetched.
+- Version: 1.0.1
+- Status: REGISTERED / READ-BACK VERIFIED for core chain and mother/index/queue writes; host and full graph gates remain OPEN.
 - Parent current: [CURRENT-055](./PALANG-0.0-CURRENT-20261024-055-FIRST-MASTER-READINESS.md)
 - User Point 0: [POINT-0/005](./GPT6-RAHM-USER-POINT-0-20261024-005-OUTPUT-CONTINUITY-AND-RECOVERY.md)
 - Input: [IN-049](./PALANG-0.0-IN-20261024-049-OUTPUT-CONTINUITY-AND-RECOVERY.md)
