@@ -2,7 +2,7 @@
 
 - Stable ID: `NEW-PROJECT-ARCHITECTURE-HARD-AUDIT-2026-10-24-001`
 - Production ID: `NPHA-20261024-001`
-- Version: 1.0.1
+- Version: 1.0.2
 - Status: REGISTERED / ACTIVE / LIVING / EVIDENCE-GATED / EVOLVABLE / RECOVERABLE
 - Scope: GPT-6 Interactive Project under Future AI / Palang Footprint / HAIF
 - Previous checkpoint: [CURRENT-041](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-041-FOUNDATIONAL-ARCHITECTURE-MOTHER-ACTIVATION.md)
@@ -94,3 +94,7 @@ Each future audit amendment must append its findings and evidence, increment thi
 - The 0.0 registry, Reference Index, foundational mother, inherited mother, branch living master, architecture-zero anchor, CURRENT-041 and CURRENT-042 have been fetched after their writes. Expected identifiers and key links were present.
 - CURRENT-042's latest content commit is `60df2967d8ed6ed8f5592334efbf682ebe877b94`, UTC `2026-10-24T10:03:55Z`, Tehran `2026-10-24T13:33:55+03:30`. This is the repository's last-change time for the current checkpoint, not the user's message time.
 - Fresh-project adoption test remains OPEN / NOT RUN. Prototype NOT BUILT; cold-start recovery NOT RUN; external destinations NOT VERIFIED.
+
+
+## Active-pointer reconciliation — v1.0.2
+The audit's stale-pointer finding has now been corrected in the active document headers: inherited architecture mother → CURRENT-042; GPT-6 living master → CURRENT-042 with INT-20261024-034 / IN-034 / OUT-034 / EVT-0142; architecture-zero header → CURRENT-042 and NEXT-040. The 0.0 registry status now says READ-BACK VERIFIED, and the Reference Index last-updated field now reflects the 2026-10-24 audit. CURRENT-040 and CURRENT-041 remain preserved as historical nodes. The file history is additive; old checkpoints are not rewritten as if they were current at the time.
