@@ -617,3 +617,9 @@ Current active gate remains [EVT-0122](../../architecture/BEHAVIOR-TRACE/EVT-012
 - The graph builder now consumes the machine-readable role-decision ledger, verifies current source hashes, annotates collision groups and individual occurrences, and preserves raw collision counts. Six unit tests passed; missing links 0; decode errors 0.
 - Cross-Layer Integrity Gate [40058848116](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40058848116) and Reconciliation Acceptance Test [40058848140](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40058848140) passed on the same SHA.
 - Open semantic findings remain: 59 Stable-ID groups and 70 Production-ID groups unreviewed, 7 reference-ID and 30 event-number collision groups, 11 exact duplicates, 13 ambiguous parents, 11 alias proposals and one timezone ambiguity. Fresh-session recovery remains NOT RUN; Issues #20/#21 remain OPEN.
+
+
+## Active checkpoint NEXT-030
+- [NEXT-030](../../0.0/anchors/PALANG-0.0-NEXT-20261024-030-SEMANTIC-REVIEW-BATCH-3-AND-COLD-START.md) is the current additive successor to NEXT-029.
+- [EVT-0128](../../architecture/BEHAVIOR-TRACE/EVT-0128-SEMANTIC-IDENTITY-ADJUDICATION-BATCH-1-2026-10-24.md) and the machine-readable decision ledger now contain three source-backed role decisions; the third requires post-change source-hash verification.
+- Next audit must inspect the latest graph manifest, semantic-review queue, Behavior Hunter and Cross-Layer artifacts. Fresh-session recovery remains NOT RUN; Issues #20/#21 remain OPEN.
