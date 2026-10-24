@@ -192,3 +192,11 @@ The package must declare host capabilities and limitations, retain IN/OUT/event 
 - New branch artifacts, fallback architecture, index, queue and living mothers were fetched after writes; current IDs and links matched.
 - REFERENCE_INDEX post-update read-back succeeded; the previous 404 is resolved for this cycle.
 - JSON syntax parse passed for three package JSON files. SHA-256, schema fixtures, persistent-memory restart, idle background, runtime deployment and cross-host conformance remain OPEN / NOT RUN.
+
+
+## CURRENT-047 — inherited Behavior Hunter governance
+- Current checkpoint: [CURRENT-047](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-047-BEHAVIOR-HUNTER-LIVING-ANCHOR.md).
+- IN/OUT/event: [IN-039](../../0.0/anchors/PALANG-0.0-IN-20261024-039-BEHAVIOR-HUNTER-LIVING-RULE.md) → [OUT-039](../../0.0/anchors/PALANG-0.0-OUT-20261024-039-BEHAVIOR-HUNTER-LIVING-RULE.md) → [EVT-0147](../../architecture/BEHAVIOR-TRACE/EVT-0147-BEHAVIOR-HUNTER-LIVING-RULE-AND-CHECKPOINT-2026-10-24.md).
+- Next 0.0: [NEXT-045](../../0.0/anchors/PALANG-0.0-NEXT-20261024-045-BEHAVIOR-HUNTER-TEST-AND-OPEN-GATES.md), OPEN / IN PROGRESS.
+- Enforce evidence-matched states: write is not read-back; read-back is not validation; documentation is not runtime activation. Keep unrun/failed tests open with ID, cause and recovery action.
+- Continuous behavior capture and external runtime remain NOT VERIFIED until independently tested.
