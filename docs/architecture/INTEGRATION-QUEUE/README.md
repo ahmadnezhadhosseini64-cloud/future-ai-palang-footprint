@@ -1500,3 +1500,9 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - Behavior Hunter run 40060524636 SUCCESS on tested SHA `6936932f39d21d5af422d357ee0b41082a9f281e`; artifact 12547123152 inspected (SHA-256 `c8a8cd44292be51def96d51dc4930fcaf5a304137f901053b69c1640784209ab`).
 - Both recovery directions returned RECOVERED for IN-032/OUT-032, EVT-0130 and NEXT-032; zero failures. Ledger PASS; proposal gate remains owner-gated.
 - Next: separate fresh-session recovery and continue Issues #19/#20/#21. Do not infer external persistence or host-wide capture from CI.
+
+
+## Deep audit queue — after pair-032 verification
+- Source graph snapshot from run 40060630376: 875 source files; 2,765 total including evidence; 3,819 local-link edges; 6 template-derived link candidates; 59 unreviewed Stable-ID collision groups; 71 Production-ID collision groups; 7 Reference-ID collision groups; 30 event-number collision groups; 11 exact duplicates; 13 ambiguous parent edges; 11 proposed aliases.
+- Timestamp-pair audit: 2,620 files, 2,149 UTC/Tehran pairs normalized, 1 ambiguity, zero offset/value failures.
+- Queue next: fix the audit parser's treatment of test-template link strings; then source-backed identity adjudication and timestamp ambiguity review. Keep all proposed aliases pending owner review.

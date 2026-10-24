@@ -197,3 +197,10 @@ Each proposed insight includes:
 - Pair 032 is now recovered in both directions on tested SHA `6936932f39d21d5af422d357ee0b41082a9f281e` (run 40060524636); artifact 12547123152 inspected, SHA-256 `c8a8cd44292be51def96d51dc4930fcaf5a304137f901053b69c1640784209ab`.
 - The missing reciprocal link in the first attempt was caught, recorded and repaired. No prior history was overwritten.
 - Remaining boundaries: fresh-session NOT RUN; host-wide capture/external persistence NOT PROVEN; Issues #19/#20/#21 OPEN.
+
+
+## Architecture growth backlog from verified audit — EVT-0130
+- Add template-aware link-audit exclusions/diagnostics for literal placeholders in test code; do not create fake files to silence false positives.
+- Build a provenance-first semantic adjudication workflow for duplicate/colliding IDs and ambiguous parent edges; aliases stay proposed until reviewed.
+- Resolve the one timestamp parse/timezone ambiguity using the original source line; keep UTC canonical and Tehran derived from the same instant.
+- Keep pair-032 repository recovery separate from fresh-session recovery, host-wide capture and external persistence.

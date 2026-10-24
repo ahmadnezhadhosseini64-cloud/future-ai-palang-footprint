@@ -665,3 +665,9 @@ Current active gate remains [EVT-0122](../../architecture/BEHAVIOR-TRACE/EVT-012
 - [Behavior Hunter run 40060524636](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40060524636): SUCCESS on tested SHA `6936932f39d21d5af422d357ee0b41082a9f281e`; artifact 12547123152 inspected; ZIP SHA-256 `c8a8cd44292be51def96d51dc4930fcaf5a304137f901053b69c1640784209ab`.
 - Both directions recovered pair INT-20261024-032 (IN-032/OUT-032), EVT-0130 and NEXT-032 with zero failures. Ledger PASS (3 records/hash chain verified); proposal gate READY_FOR_OWNER_REVIEW (PENDING owner decision, no mutation/promotion).
 - The failed first attempt and reciprocal-link repair are preserved in EVT-0130. Fresh-session recovery NOT RUN; Issues #19/#20/#21 OPEN; host-wide capture and external persistence NOT PROVEN.
+
+
+## Deep-audit source graph baseline — EVT-0130
+- Living Architecture Audit run 40060630376 succeeded on SHA `86412c2d3383da5665c871c1f4f1afbc349e6fe3`; artifact 12547536065 inspected, SHA-256 `d6ebe43e4908432f11fe0bb1b090b9e43b077ee8034610c63de1671c7ef32316`.
+- Snapshot: 875 source files / 2,765 total; 3,819 local-link edges; 6 missing-link candidates arising from literal test templates; 60 Stable-ID collision groups (59 unreviewed); 71 Production-ID, 7 Reference-ID, and 30 event-number collision groups; 11 duplicate groups; 13 ambiguous parent edges; 11 proposed aliases.
+- Timestamp audit: 2,620 files, 2,149 normalized UTC/Tehran pairs, 1 ambiguity, zero offset/value failures. Treat as a snapshot; adjudication remains open.

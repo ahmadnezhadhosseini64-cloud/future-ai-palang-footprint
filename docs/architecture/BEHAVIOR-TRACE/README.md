@@ -600,3 +600,8 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Run 40060524636 SUCCESS on tested SHA `6936932f39d21d5af422d357ee0b41082a9f281e`; artifact 12547123152 inspected; ZIP SHA-256 `c8a8cd44292be51def96d51dc4930fcaf5a304137f901053b69c1640784209ab`.
 - Both directions recovered the current pair IN-032/OUT-032, event EVT-0130 and checkpoint NEXT-032. First-run failure due to the missing reciprocal link is preserved in EVT-0130.
 - Fresh-session recovery remains NOT RUN; Issues #19/#20/#21 OPEN; host-wide capture/external persistence NOT PROVEN.
+
+
+## Deep audit baseline — EVT-0130
+- [EVT-0130](./EVT-0130-LIVING-STATUS-ARCHITECTURE-GROWTH-DEEP-AUDIT-2026-10-24.md) records the inspected Living Architecture Audit artifact and exact snapshot counts.
+- Next: classify template-derived link false positives, review collision/parent-edge batches, and resolve the single timestamp ambiguity from source evidence.

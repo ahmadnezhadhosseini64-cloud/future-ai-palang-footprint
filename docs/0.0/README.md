@@ -1279,3 +1279,8 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - Pair 032: [IN](./anchors/PALANG-0.0-IN-20261024-032-LIVING-STATUS-AND-ARCHITECTURE-GROWTH.md) / [OUT](./anchors/PALANG-0.0-OUT-20261024-032-LIVING-STATUS-AND-ARCHITECTURE-GROWTH.md), [EVT-0130](../architecture/BEHAVIOR-TRACE/EVT-0130-LIVING-STATUS-ARCHITECTURE-GROWTH-DEEP-AUDIT-2026-10-24.md).
 - Run 40060524636 passed on tested SHA `6936932f39d21d5af422d357ee0b41082a9f281e`; artifact 12547123152 inspected. Both recovery directions RECOVERED; zero failures.
 - Next: independent fresh-session recovery and open issues #19/#20/#21. External persistence and host-wide capture remain unproven.
+
+
+## Deep audit continuation
+- Latest source-backed audit is registered in [EVT-0130](../architecture/BEHAVIOR-TRACE/EVT-0130-LIVING-STATUS-ARCHITECTURE-GROWTH-DEEP-AUDIT-2026-10-24.md): 875 source files, 3,819 local-link edges, 59 unreviewed Stable-ID collision groups, 13 ambiguous parent edges, and one timestamp ambiguity in the audited snapshot.
+- Next is source-backed adjudication, not automatic merging; preserve all prior anchors and IDs.

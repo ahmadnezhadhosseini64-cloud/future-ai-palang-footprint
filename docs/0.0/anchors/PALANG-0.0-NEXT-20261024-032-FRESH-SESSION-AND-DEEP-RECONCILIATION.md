@@ -29,3 +29,9 @@ The first run failed because IN-032 lacked a direct OUT-032 link. This defect is
 
 ## Pair-032 CI result
 Run 40060524636 succeeded on tested SHA `6936932f39d21d5af422d357ee0b41082a9f281e`; both recovery directions were inspected in artifact 12547123152 (SHA-256 `c8a8cd44292be51def96d51dc4930fcaf5a304137f901053b69c1640784209ab`). Next: perform the separate fresh-session test and continue Issues #19/#20/#21. This repository result does not close those external/runtime gaps.
+
+
+## Deep-audit continuation — source graph and timestamp adjudication
+- Latest audit artifact from run 40060630376: 875 source files, 2,765 total including generated evidence, 3,819 local-link edges, 6 template-derived missing-link candidates, 60 Stable-ID collision groups (59 unreviewed), 71 Production-ID collisions, 7 Reference-ID collisions, 30 event-number collisions, 11 duplicate groups, 13 ambiguous parent edges, 11 proposed aliases.
+- Timestamp pair audit: 2,620 files scanned, 2,149 UTC/Tehran pairs normalized, 1 ambiguous/parse error, zero offset/value failures.
+- Next: inspect template false positives and adjudicate the identity/parent/timestamp queue using source evidence. No automatic merges. Pair 032 repository recovery is verified; fresh-session recovery remains NOT RUN.
