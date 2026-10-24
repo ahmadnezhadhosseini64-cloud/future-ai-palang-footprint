@@ -2,7 +2,7 @@
 
 - Stable ID / شناسه پایدار: `G6IP-FIRST-LIVING-MASTER-PORTABLE-RAHM-20261024-001`
 - Production ID / شناسه تولید: `G6IP-FLM-RAHM-001`
-- Version / نسخه: 1.0.6
+- Version / نسخه: 1.0.7
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED for repository content; post-edit strict digest rerun pending; real-host and full graph gates remain OPEN.
 - Authority / مرجع حاکم: اصول بنیادی پروژه + سند مادر معماری موروثی + بسته قابل‌حمل RAHM.
 - User Point 0: [G6IP-RAHM-USER-POINT-0-20261024-005](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-005-OUTPUT-CONTINUITY-AND-RECOVERY.md)
@@ -254,3 +254,11 @@ A new input must not make prior open work disappear. Keep the active NEXT, link 
 - Baseline conformance run [40124660624](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40124660624) passed its declared scope on the earlier commit: 43/43 exact-byte file digests; valid schema fixture 0 errors; invalid fixture rejected with 4 errors; limited IN/OUT checkpoint-link equivalence; archive 44 files / 224852 bytes / SHA-256 `475ff58474f10a4a75314c964302bac06f7ed15d47e31da1826c31bce293c50a`. This baseline predates the fixes; final post-edit digest and archive run is required.
 - The latest pre-fix graph audit [40124660609](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40124660609) reported 16 missing links; 6 were real documentation links and 10 were Markdown-like links in Python fixtures. Post-fix audit is pending. Identifier collisions and ambiguous parent/time findings remain open until individually adjudicated.
 - Actual independent AI-host import, full state reconstruction independently from IN and OUT, second-host import, persistence after a real restart, and idle/background execution remain OPEN / NOT VERIFIED. CI runtime transfer is not a substitute for these tests.
+
+
+## CURRENT-058 — latest continuation after executed excavation
+- Latest user point: [POINT-0/007](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-007-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md).
+- Interaction record: [IN-051](../../0.0/anchors/PALANG-0.0-IN-20261024-051-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md) → [OUT-050](../../0.0/anchors/PALANG-0.0-OUT-20261024-050-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md) → [EVT-0160](../../architecture/BEHAVIOR-TRACE/EVT-0160-DEEP-EXCAVATION-EXECUTION-RECEIPTS-AND-AUDIT-CORRECTION-2026-10-24.md) → [CURRENT-058](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-058-DEEP-EXCAVATION-EXECUTION-RECEIPTS.md).
+- Active work remains [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). No NEXT-052 is created while NEXT-051 acceptance criteria remain open.
+- This cycle corrected real relative links and the audit script's treatment of Python fixture strings, and added latest-chain CI gates. The strict digest/package run must be rerun after all current edits.
+- Full state recovery from IN and OUT, independent AI-host import, second-host import, actual persistence restart, idle/background execution, and remaining global identity/parent/time triage stay OPEN / NOT VERIFIED.
