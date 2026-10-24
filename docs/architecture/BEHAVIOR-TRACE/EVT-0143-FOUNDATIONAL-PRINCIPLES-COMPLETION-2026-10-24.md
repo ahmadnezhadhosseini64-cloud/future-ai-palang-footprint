@@ -32,6 +32,6 @@ Exact paths fetched after writes: foundational mother NPFAP v1.0.2, HA-001 v1.0.
 
 ## UTC-first repository timestamp evidence
 - CURRENT-043 latest content commit at the time of verification: `5e59164f14b2619abba9add18462b17f81f16ec8` — `2026-10-24T10:27:06Z` / Tehran `2026-10-24T13:57:06+03:30`.
-- NPFAP v1.0.2 latest content commit at the time of verification: `563e24b4776ce9dd4cb5fa67ef141c5b391a220d` — `2026-10-24T10:25:30Z` / Tehran `2026-10-24T13:55:30+03:30`.
+- NPFAP v1.0.2 latest content commit at the time of verification: `9df59c99331724c17462da0c9ddb68f9ec2af600` — `2026-10-24T10:26:35Z` / Tehran `2026-10-24T13:56:35+03:30`.
 - UIALAC v1.3.1 index reconciliation commit: `2804bf268d216207c0fd155d382ed71022ebe33a` — `2026-10-24T10:26:22Z` / Tehran `2026-10-24T13:56:22+03:30`.
 - User-message time: UNKNOWN / UNVERIFIED. The timestamps above are sourced from Git commit metadata and are not substitutes for the message timestamp.
