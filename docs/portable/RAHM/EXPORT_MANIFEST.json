@@ -1,7 +1,7 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.3.0",
-  "manifest_status": "ALL_37_EXPECTED_SHA256_POPULATED; FINAL_COMPARISON_REQUIRED",
+  "version": "1.3.1",
+  "manifest_status": "ALL_37_EXPECTED_SHA256_POPULATED; MATCHED_IN_RUN_40120692799; FINAL_MANIFEST_VERSION_CHECK_PENDING",
   "created_from_checkpoint": "G6IP-RAHM-USER-POINT-0-20261024-005",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [
@@ -233,18 +233,18 @@
     "persistent_memory": "NOT_VERIFIED",
     "idle_background_execution": "NOT VERIFIED",
     "cross_host": "NOT_RUN",
-    "exact_byte_sha256": "EXPECTED DIGESTS POPULATED FROM RUN_40120624760; FINAL COMPARISON NEXT",
-    "schema_valid_fixture": "PASS_RUN_40120624760",
-    "schema_invalid_fixture": "REJECTED_WITH_4_ERRORS_RUN_40120624760",
-    "IN_OUT_recovery_equivalence": "PASS_LIMITED_LINK_CHECKPOINT_SCOPE_RUN_40120624760",
+    "exact_byte_sha256": "PASS_RUN_40120692799; all 37 expected file digests matched exact checked-out bytes; rerun after manifest metadata update",
+    "schema_valid_fixture": "PASS_RUN_40120692799",
+    "schema_invalid_fixture": "REJECTED_WITH_4_ERRORS_RUN_40120692799",
+    "IN_OUT_recovery_equivalence": "PASS_LIMITED_LINK_CHECKPOINT_SCOPE_RUN_40120692799",
     "clean_AI_host_import": "NOT RUN",
     "second_AI_host_import": "NOT RUN",
     "persistence_restart": "NOT VERIFIED",
     "canonical_mother_index_queue_integration": "READ-BACK VERIFIED; current/event/next receipt updates need final digest run",
     "schema_workflow_overall": "PASS_RUN_40115875047",
-    "portable_package_build": "PASS_RUN_40120624760; rebuild after manifest digest population",
+    "portable_package_build": "PASS_RUN_40120692799; final rebuild after manifest metadata update",
     "full_state_recovery": "OPEN / NOT RUN",
     "focused_relative_link_audit": "PASS_13_CORE_AND_MOTHER_FILES_ZERO_BROKEN_LINKS"
   },
-  "note": "This manifest contains 37 architecture and evidence files. All expected file SHA-256 values are populated from exact checked-out bytes in a successful workflow; the next run must compare all 37 values. A focused relative-link audit of the current chain, portable master, boot/architecture contracts, mother documents, canonical index and queue found zero broken links across the inspected files. Repository-wide audit remains REVIEW_REQUIRED."
+  "note": "Run 40120692799 confirmed all 37 expected SHA-256 values against exact checked-out bytes, valid/invalid schema behavior, limited IN/OUT checkpoint-link recovery and archive construction. This metadata-only manifest update does not change any listed file bytes; a final run confirms the current manifest version and produces the current package artifact. The workflow's manifest self-digest is external run evidence, not recursively stored here."
 }
