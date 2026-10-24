@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001`
 - Production ID / شناسهٔ تولید: `G6IP-LMR-20261024-001`
-- Version / نسخه: 1.3.2
+- Version / نسخه: 1.3.3
 - Project / پروژه: Future AI / Palang Footprint — HAIF
 - Owner / مالک معماری: احمد نژادحسینی (احمد پلنگ)
 - Host / میزبان این شاخه: ChatGPT / GPT-6
@@ -133,3 +133,12 @@
 
 - Point-0 read-back receipt: the point-0 file and linked IN-030/OUT-030, CURRENT-039, EVT-0138 and NEXT-038 paths were fetched after write; IDs matched. Point 0.0, prototype and cold-start recovery remain NOT RUN.
 - Point-0 canonical commit time ledger: [TIME-BINDING-GPT6-POINT-0-2026-10-24-001](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-GPT6-POINT-0-2026-10-24-001.md).
+
+
+## Latest active checkpoint — Point 0.0 / CURRENT-040
+- [Current resumable anchor CURRENT-040](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-040-GPT6-POINT-0.0-RECOVERY-CHECKPOINT.md).
+- [Independent Point 0.0 checkpoint](../../0.0/anchors/GPT6-INTERACTIVE-PROJECT-POINT-0.0-CHECKPOINT-2026-10-24-001.md).
+- Latest inherited architecture master: [G6IP-IAM-20261024-001 v1.0.3](./GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md).
+- Interaction: [IN-031](../../0.0/anchors/PALANG-0.0-IN-20261024-031-ADVANCE-POINT-0.0-AND-LINK-LATEST-ARCHITECTURE.md) ↔ [OUT-031](../../0.0/anchors/PALANG-0.0-OUT-20261024-031-ADVANCE-POINT-0.0-AND-LINK-LATEST-ARCHITECTURE.md); event [EVT-0139](../../architecture/BEHAVIOR-TRACE/EVT-0139-GPT6-POINT-0.0-CHECKPOINT-CREATION-2026-10-24.md).
+- Next active work: [NEXT-039](../../0.0/anchors/PALANG-0.0-NEXT-20261024-039-BUILD-INTERACTIVE-PROTOTYPE.md).
+- Checkpoint creation is the completed scope of this turn. Prototype NOT BUILT, cold-start recovery NOT RUN, external destinations NOT VERIFIED.
