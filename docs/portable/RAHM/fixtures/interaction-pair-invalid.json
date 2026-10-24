@@ -1,0 +1,11 @@
+{
+  "record_id": "",
+  "version": "1.0.0",
+  "input": {"content": "invalid fixture"},
+  "output": {"content": "invalid fixture"},
+  "observation": [],
+  "evidence": [],
+  "status": "NOT_A_VALID_STATUS",
+  "lineage": {"parent_ids": [], "event_refs": []},
+  "unexpected_field": true
+}
