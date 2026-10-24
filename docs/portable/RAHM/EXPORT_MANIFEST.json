@@ -1,7 +1,7 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.2.2",
-  "manifest_status": "POINT-0-004_AND_CURRENT-055_LINKED; DIGESTS_PENDING_FINAL_CONFORMANCE",
+  "version": "1.2.3",
+  "manifest_status": "POINT-0-004_AND_CURRENT-055_SHA256_EXPECTATIONS_POPULATED; FINAL_RECHECK_REQUIRED",
   "created_from_checkpoint": "G6IP-RAHM-USER-POINT-0-20261024-004",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [
@@ -51,7 +51,7 @@
       "path": "docs/portable/RAHM/FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md",
       "version": "1.0.0",
       "git_blob_sha": "7c5ec69a2540052cb5503aa1c91a13ca17df62fe",
-      "sha256": "PENDING"
+      "sha256": "b64962d2ffb0478138ed7475e995936a7556032da05f863f00945f4037d288b2"
     },
     {
       "path": "docs/0.0/anchors/PALANG-0.0-IN-20261024-047-FIRST-LIVING-MASTER.md",
@@ -117,7 +117,7 @@
       "path": "docs/architecture/INTEGRATION-QUEUE/README.md",
       "version": "current",
       "git_blob_sha": "c469d5ff85330f35bea1f73f8c5bc1dacb8032d7",
-      "sha256": "PENDING"
+      "sha256": "e144599874827dd9d0db60cc80cf8e8d5ff56e1945428a539b1990294151c98e"
     },
     {
       "path": "docs/reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md",
@@ -135,7 +135,7 @@
       "path": "docs/REFERENCE_INDEX.md",
       "version": "current",
       "git_blob_sha": "d33779ed2c2de48789e6dad4f9eb73375ed95adb",
-      "sha256": "PENDING"
+      "sha256": "335c4d0250c440fb135d912684be9a253c93594db197630615635cc56ec82985"
     },
     {
       "path": "docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md",
@@ -173,7 +173,7 @@
     {
       "path": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261024-055-FIRST-MASTER-READINESS.md",
       "git_blob_sha": "dfd4e1f8b0c872ba0c5f9a627c6b9382d37dc5ff",
-      "sha256": "PENDING"
+      "sha256": "6f31fcda3e8a1a26647c178b7ae7c2f3b0cbdbd6d326e22b3dde8784dbea8293"
     },
     {
       "path": "docs/0.0/anchors/PALANG-0.0-NEXT-20261024-049-REAL-HOST-TRANSFER-AND-GRAPH-AUDIT.md",
@@ -183,7 +183,7 @@
     {
       "path": "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-004-TEST-HARNESS-AND-FIRST-MASTER-READINESS.md",
       "git_blob_sha": "cff9284eac866fe2b3c01256c06a9993465437da",
-      "sha256": "PENDING"
+      "sha256": "a663685e9a123de411fa063ca1a94b0048ec6b054763e8299fa356f7ebd218c6"
     }
   ],
   "manifest_itself": {
@@ -197,16 +197,16 @@
     "persistent_memory": "NOT_VERIFIED",
     "idle_background_execution": "NOT VERIFIED",
     "cross_host": "NOT_RUN",
-    "exact_byte_sha256": "RECOMPUTE_AFTER_POINT-0-004_AND_CURRENT-055_READINESS_UPDATE",
-    "schema_valid_fixture": "PASS_RUN_40117572636",
-    "schema_invalid_fixture": "REJECTED_WITH_4_ERRORS_RUN_40117572636",
-    "IN_OUT_recovery_equivalence": "PASS_LIMITED_LINK_CHECKPOINT_SCOPE_RUN_40117572636",
+    "exact_byte_sha256": "PASS_RUN_40117734575_FOR_31_ITEMS; expected digests now populated and must be rechecked",
+    "schema_valid_fixture": "PASS_RUN_40117734575",
+    "schema_invalid_fixture": "REJECTED_WITH_4_ERRORS_RUN_40117734575",
+    "IN_OUT_recovery_equivalence": "PASS_LIMITED_LINK_CHECKPOINT_SCOPE_RUN_40117734575",
     "clean_AI_host_import": "NOT RUN",
     "second_AI_host_import": "NOT RUN",
     "persistence_restart": "NOT VERIFIED",
     "canonical_mother_index_queue_integration": "UPDATED_AND_FETCHED; explicit Point 0 linked; full graph review remains open",
     "schema_workflow_overall": "PASS_RUN_40115875047",
-    "portable_package_build": "PASS_PRIOR_RUN; rebuild required after Point 0 inventory update",
+    "portable_package_build": "PASS_RUN_40117734575; final archive rebuild required after digest population",
     "full_state_recovery": "OPEN / NOT RUN"
   },
   "note": "Manifest does not hash itself to avoid recursive digest. Workflow computes and records manifest SHA-256 in evidence output. All untested host/runtime capabilities remain open."
