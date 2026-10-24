@@ -250,6 +250,35 @@ for label, (rel, required_ids) in verification_surfaces.items():
         if required_id not in content:
             errors.append(f"VERIFICATION_SURFACE_MISSING_ID surface={label} id={required_id}")
 
+
+# Current point 0 / next 0.0 graph gate (CURRENT-036)
+current_point_surfaces = {
+    "CURRENT_036": ("docs/0.0/anchors/PALANG-0.0-CURRENT-20261024-036-USER-REQUEST-AND-LIVING-REGISTRATION.md", ("CURRENT-036", "IN-026", "OUT-026", "EVT-0134", "LAL-20261024-013", "NEXT-036", "Issue #20", "Issue #21")),
+    "IN_026": ("docs/0.0/anchors/PALANG-0.0-IN-20261024-026-REGISTER-CURRENT-POINT-0.md", ("IN-026", "OUT-026", "CURRENT-036", "EVT-0134", "NEXT-036")),
+    "OUT_026": ("docs/0.0/anchors/PALANG-0.0-OUT-20261024-026-REGISTER-CURRENT-POINT-0.md", ("OUT-026", "IN-026", "CURRENT-036", "EVT-0134", "NEXT-036")),
+    "NEXT_036": ("docs/0.0/anchors/PALANG-0.0-NEXT-20261024-036-HISTORIC-SOURCE-CENSUS-AND-COLD-START.md", ("NEXT-036", "CURRENT-036", "IN-026", "OUT-026", "EVT-0134", "LAL-20261024-013", "Issue #20", "Issue #21")),
+    "EVT_0134": ("docs/architecture/BEHAVIOR-TRACE/EVT-0134-CURRENT-POINT-ZERO-AND-LIVING-REGISTRATION-2026-10-24.md", ("EVT-0134", "IN-026", "OUT-026", "CURRENT-036", "NEXT-036", "LAL-20261024-013")),
+    "LAL_013": ("docs/architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261024-013-CURRENT-POINT-ZERO-AND-LIVING-REGISTRATION.md", ("LAL-20261024-013", "EVT-0134", "IN-026", "OUT-026", "CURRENT-036", "NEXT-036")),
+    "TIME_BINDING_026": ("docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261024-026.md", ("TIME-BINDING-INT-20261024-026", "IN-026", "OUT-026", "EVT-0134", "CURRENT-036", "NEXT-036", "UTC+03:30")),
+    "ULCG_MASTER": ("docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-MASTER-REFERENCE-2026-10-23-001.md", ("Version: 1.2.4", "CURRENT-036", "NEXT-036", "EVT-0134", "LAL-20261024-013")),
+    "REFERENCE_INDEX": ("docs/REFERENCE_INDEX.md", ("CURRENT-036", "IN-026", "OUT-026", "EVT-0134", "NEXT-036")),
+    "ZERO_ZERO_REGISTRY": ("docs/0.0/README.md", ("CURRENT-036", "IN-026", "OUT-026", "EVT-0134", "NEXT-036")),
+    "BEHAVIOR_TRACE_INDEX": ("docs/architecture/BEHAVIOR-TRACE/README.md", ("CURRENT-036", "IN-026", "OUT-026", "EVT-0134", "NEXT-036")),
+    "LESSON_REGISTRY": ("docs/architecture/ARCHITECTURE-LESSONS/README.md", ("LAL-20261024-013", "EVT-0134", "CURRENT-036", "NEXT-036")),
+    "SOURCE_RULE_MAP": ("docs/architecture/ARCHITECTURE-LESSONS/SOURCE-RULE-COMPONENT-TEST-MAP-2026-10-23-001.md", ("CURRENT-036", "NEXT-036", "Issue #20", "Issue #21")),
+    "ARCHITECTURE_QUEUE": ("docs/architecture/INTEGRATION-QUEUE/README.md", ("CURRENT-036", "IN-026", "OUT-026", "EVT-0134", "NEXT-036", "Issue #20", "Issue #21")),
+    "INITIAL_MODEL_MASTER": ("docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md", ("CURRENT-036", "IN-026", "OUT-026", "EVT-0134", "NEXT-036")),
+}
+for label, (rel, required_ids) in current_point_surfaces.items():
+    path = ROOT / rel
+    if not path.is_file():
+        errors.append(f"CURRENT_POINT_MISSING_FILE surface={label} path={rel}")
+        continue
+    content = path.read_text(encoding="utf-8")
+    for required_id in required_ids:
+        if required_id not in content:
+            errors.append(f"CURRENT_POINT_MISSING_ID surface={label} id={required_id}")
+
 print("LIVING_ARCHITECTURE_AUDIT")
 print(f"required_files_checked={len(required)}")
 print(f"ulcg_required_files_checked={len(ulcg_required)}")
