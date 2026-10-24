@@ -38,3 +38,12 @@ Produce a portable, host-independent package that can reconstruct the project's 
 
 ## Boundary / مرز
 This is a test plan, not evidence of a successful export or recovery. Exportability, fresh-host adoption, recovery, and unattended execution remain unverified until the test is run and recorded.
+
+## Living excavation addendum — current target reconciliation — 2026-10-24
+
+- Excavation event / رویداد خاک‌برداری: [EVT-0151](../../architecture/BEHAVIOR-TRACE/EVT-0151-REPOSITORY-EXCAVATION-LIVING-STATE-RECONCILIATION-2026-10-24.md).
+- Current acceptance target / هدف پذیرش جاری: [CURRENT-050](./PALANG-0.0-CURRENT-20261024-050-NEW-PROJECT-ARCHITECTURE-STATUS.md), [IN-043](./PALANG-0.0-IN-20261024-043-NEW-PROJECT-ARCHITECTURE-STATUS-AND-LIVING-ANCHOR.md), [OUT-042](./PALANG-0.0-OUT-20261024-042-NEW-PROJECT-ARCHITECTURE-STATUS-AND-LIVING-ANCHOR.md), [EVT-0150](../../architecture/BEHAVIOR-TRACE/EVT-0150-NEW-PROJECT-ARCHITECTURE-STATUS-2026-10-24.md), [NPFAP v1.1.4](../../reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md), and [Reference Index](../../REFERENCE_INDEX.md).
+- Historical lineage / تبار تاریخی: CURRENT-047, IN-040, OUT-039, EVT-0147 and NPFAP v1.0.9 remain preserved and must still be represented in the export as historical context; they are no longer the sole/current acceptance target.
+- Updated mandatory checks: export the current CURRENT-050 chain and living mother; compare IDs, paths, versions and hashes; preserve CURRENT-047 and earlier chains; test fresh-context reconstruction and negative cases; report failures and unresolved gates without promoting untested states.
+- Current repository excavation found this task's original target stale. This additive correction does not claim export, import, fresh-host reconstruction, second-project integration, or unattended execution has passed.
+- Status remains OPEN / NOT RUN until a verifiable export artifact and independent fresh-context recovery evidence are read back and matched.
