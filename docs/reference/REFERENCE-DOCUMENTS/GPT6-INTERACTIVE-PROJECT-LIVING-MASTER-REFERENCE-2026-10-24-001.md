@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001`
 - Production ID / شناسهٔ تولید: `G6IP-LMR-20261024-001`
-- Version / نسخه: 1.0.0
+- Version / نسخه: 1.1.0
 - Project / پروژه: Future AI / Palang Footprint — HAIF
 - Owner / مالک معماری: احمد نژادحسینی (احمد پلنگ)
 - Host / میزبان این شاخه: ChatGPT / GPT-6
@@ -88,3 +88,7 @@
 - Governance inherited from HAIF: preserve history; UTC canonical with Tehran equivalent; evidence before claims; write/read-back/match/verify/reconcile/status; IN/OUT/event/anchor traceability; Child → Rahm → Master; destination-specific verification; privacy minimization; no redundant retest after a correctly verified result unless real change, need, regression, error or contradictory evidence warrants it.
 - Behavioral trace must capture observable user goal, assistant action, result, error/correction and explicit user feedback when present; hidden internal causes remain hypotheses unless independently evidenced.
 - This update is repository-scoped. Buffer/Persistent Memory/Library are NOT VERIFIED; Dropbox remains OPEN / NOT VERIFIED; always-on capture is not established.
+
+
+## Behavior governance lesson
+- [LAL-20261024-014](../../architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261024-014-GPT6-PROJECT-ZERO-BEHAVIOR-GOVERNANCE.md) records the routing and evidence discipline for this branch.
