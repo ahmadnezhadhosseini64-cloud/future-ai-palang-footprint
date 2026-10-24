@@ -99,3 +99,13 @@ One repeated Stable-ID group now has a source-backed role decision from document
 - Role decision: governance path = `OPERATIONAL_GOVERNANCE_CANONICAL_CANDIDATE`; reference-vault path = `REFERENCE_VAULT_MIRROR_CANDIDATE`. Identical bytes prove content equality, not that one path can be removed.
 - Status: `SOURCE-REVIEWED / ROLE-ADJUDICATED / MIRROR-CANDIDATE / NO-DELETION`. The canonical promotion remains provisional because neither path has graph links and no explicit source rule was found in this batch establishing a single exclusive canonical destination.
 - Machine-readable decision: `H0-ID-REVIEW-002` in `data/interaction-pairs/semantic-role-decisions.jsonl`. Both historical paths remain preserved; no rename, merge or delete.
+
+
+### Case H0-ID-REVIEW-003
+- Repeated Production ID: `0.0V-ARCH-2026-09-13-001` across `architecture/0.0-VAULT-ARCHITECTURAL-PLACEMENT-2026-09-13.md` and `docs/reference/REFERENCE-DOCUMENTS/0.0-VAULT-ARCHITECTURAL-PLACEMENT-0.0V-ARCH-2026-09-13-001.md`.
+- Both paths have identical content SHA-256 `d3921368cf3ad35d6b428860c67ad47f4e395c731f9249dc7b84006614558dad` at audited SHA `871e02fb87e2ff04db380dcad64fc1bd0939e8a6`.
+- Git history: operational architecture path commit `dfbed7d0c4e55a4d0caf443a0fd2b310dccd369e` at `2026-09-13T19:14:10Z`; reference-vault copy commit `af9cdb562ec54fc7df0ac07b99a60d69a0ef372a` at `2026-09-28T22:31:02Z`.
+- Audited graph: both paths have zero inbound and zero outbound local links. This means current navigation centrality cannot decide the canonical path.
+- Role decision: operational architecture path = `OPERATIONAL_ARCHITECTURE_PLACEMENT_CANDIDATE`; reference-vault path = `REFERENCE_VAULT_MIRROR_CANDIDATE`. The roles are distinct, content is identical, and both paths remain preserved.
+- Status: `SOURCE-REVIEWED / ROLE-ADJUDICATED / MIRROR-CANDIDATE / NO-DELETION`. Exclusive canonical promotion remains provisional because neither path has inbound/outbound links and no single-path requirement was established in this batch.
+- Machine-readable decision: `H0-ID-REVIEW-003` in `data/interaction-pairs/semantic-role-decisions.jsonl`.
