@@ -996,3 +996,9 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - UTC/Tehran time binding: [TIME-BINDING-INT-20261024-026](architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261024-026.md).
 - Next 0.0: [NEXT-036](0.0/anchors/PALANG-0.0-NEXT-20261024-036-HISTORIC-SOURCE-CENSUS-AND-COLD-START.md).
 - Prior NEXT-022 through NEXT-035 and Issues #20/#21 remain preserved; neither runtime recovery nor historic census is closed by this registration.
+
+
+## SCRTC-B3-2026-10-24-001 — source-clause crosswalk batch 3
+- [Crosswalk](architecture/ARCHITECTURE-LESSONS/SOURCE-CLAUSE-CROSSWALK-BATCH-3-2026-10-24-001.md) maps five full-source fetches to normalized rules, components, existing tests and open gaps.
+- Connected master: ULCG v1.2.5; current point CURRENT-036; next 0.0 NEXT-036.
+- Full historic census remains OPEN under Issue #21; runtime/cold-start remains OPEN under Issue #20.
