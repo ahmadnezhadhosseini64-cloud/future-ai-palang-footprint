@@ -7,7 +7,7 @@
 - Project / پروژه: Future AI / Palang Footprint — HAIF → GPT-6 Interactive Project
 - Parent root / ریشهٔ والد: [Point 0 — initial root](./GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001.md)
 - Previous checkpoint / نقطهٔ قبلی: [Point 0.0](./GPT6-INTERACTIVE-PROJECT-POINT-0.0-CHECKPOINT-2026-10-24-001.md)
-- Current recovery anchor / لنگر بازیابی جاری: [CURRENT-040](./PALANG-0.0-CURRENT-20261024-040-GPT6-POINT-0.0-RECOVERY-CHECKPOINT.md)
+- Current recovery anchor / لنگر بازیابی جاری: [CURRENT-042](./PALANG-0.0-CURRENT-20261024-042-NEW-PROJECT-ARCHITECTURE-HARD-AUDIT.md)
 - Governing mother architecture / سند مادر حاکم: [Inherited Architecture Living Master](../../reference/REFERENCE-DOCUMENTS/GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md)
 - GPT-6 living master / سند مادر زندهٔ شاخه: [GPT-6 Living Master](../../reference/REFERENCE-DOCUMENTS/GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001.md)
 - Latest interaction / تعامل جاری: [IN-034](./PALANG-0.0-IN-20261024-034-HARD-AUDIT-NEW-PROJECT-ARCHITECTURE.md) ↔ [OUT-034](./PALANG-0.0-OUT-20261024-034-HARD-AUDIT-NEW-PROJECT-ARCHITECTURE.md)
@@ -17,11 +17,11 @@
 
 ## 1. Purpose and scope
 
-This is the independent architecture-zero anchor for the new GPT-6 interactive project, preserving the path from its initial Point 0 through the latest registered Point 0.0 / CURRENT-040 state. It is a navigable, extractable recovery root, not a claim that all planned software is implemented. It adds a new architecture-level anchor without replacing Point 0, Point 0.0, CURRENT-039, CURRENT-040, or any historic checkpoint.
+This is the independent architecture-zero anchor for the new GPT-6 interactive project, preserving the path from initial Point 0 through historical CURRENT-040 and the newer CURRENT-041 / CURRENT-042 continuation. It is a navigable, extractable recovery root, not a claim that all planned software is implemented. It adds a new architecture-level anchor without replacing Point 0, Point 0.0, CURRENT-039, CURRENT-040, or any historic checkpoint.
 
 ## 2. Architecture lineage
 
-`HAIF / Future AI–Palang Footprint → GPT-6 branch → Point 0 → IN/OUT interaction chain → EVT behavior evidence → Point 0.0 → CURRENT-040 → Architecture Zero → latest mother version → NEXT-039`
+`HAIF / Future AI–Palang Footprint → GPT-6 branch → Point 0 → IN/OUT interaction chain → EVT behavior evidence → Point 0.0 → CURRENT-039 → CURRENT-040 → CURRENT-041 → CURRENT-042 → Architecture Zero → latest mother version → NEXT-040`
 
 The source-of-authority hierarchy is:
 1. HAIF mother architecture — governs principles and long-term continuity.
@@ -48,7 +48,7 @@ The source-of-authority hierarchy is:
 
 - Initial Point 0: REGISTERED / READ-BACK VERIFIED in prior records.
 - Point 0.0 checkpoint: REGISTERED / ACTIVE / LIVING / EVOLVABLE / RECOVERABLE / READ-BACK VERIFIED.
-- CURRENT-040: current recovery anchor, links the point, IN/OUT-031, EVT-0139, master documents and NEXT-039.
+- CURRENT-040: historical recovery anchor, preserved with its original IN/OUT-031, EVT-0139, master documents and NEXT-039 links. The current recovery anchor is CURRENT-042.
 - Inherited architecture master before this update: v1.0.3; this request requires it to be updated to point to this architecture-zero anchor.
 - GPT-6 Living Master: v1.3.4 before this update.
 - Prototype: NOT BUILT.
@@ -66,7 +66,7 @@ A previously observed task-drift risk was pursuing the Dropbox failover branch w
 On a fresh host or after restart:
 1. Open this architecture-zero file.
 2. Read the linked HAIF mother and the latest inherited architecture master version.
-3. Read GPT-6 Living Master, Point 0, Point 0.0 and CURRENT-040.
+3. Read CURRENT-042 first; then this architecture-zero root, the latest living masters, Point 0, Point 0.0 and historical CURRENT-040.
 4. Re-read IN-031, OUT-031 and EVT-0139; match stable/production IDs and status.
 5. Read the timestamp ledger and obtain actual current commit metadata from GitHub before declaring canonical repository time.
 6. Resume from NEXT-039. Build and test the prototype before changing NOT BUILT / NOT RUN statuses.
