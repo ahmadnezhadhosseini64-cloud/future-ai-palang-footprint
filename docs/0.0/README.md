@@ -1325,3 +1325,10 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - [Durable receipt](../architecture/BEHAVIOR-TRACE/STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40062533959.json).
 - Run 40062533959 passed 74 tests on tested SHA `d05103dd3593f090f10fafb5a469f6cac69063b1`; artifact 12548485418 inspected, ZIP SHA-256 `508dbfa863bf7b805415a95291f8d881c7be1b097f9d1d8f12f32ea32e225ce5`.
 - Both recovery directions RECOVERED; drift PASS; ledger 5 records PASS. Fresh-session recovery remains NOT RUN.
+
+
+## NEXT-034 — live mirror synchronization recovery
+- [EVT-0132](../architecture/BEHAVIOR-TRACE/EVT-0132-LIVE-MIRROR-SYNC-RECONCILIATION-2026-10-24.md) records the source/Library comparison and exact upload limitation.
+- [NEXT-034](anchors/PALANG-0.0-NEXT-20261024-034-LIVE-MIRROR-SYNC-AND-COLD-START.md) is a new continuation branch; NEXT-033 and all earlier 0.0 anchors remain intact.
+- Event commit `2b120b2a91fbcef6edcf8cebfd69c6d94aec0f33` UTC `2026-10-24T04:40:02Z` = Tehran `08:10:02+03:30`; anchor commit `a1028a60bb23f5acf1f3d4ef4b6b65c4d1d48154` UTC `2026-10-24T04:40:24Z` = Tehran `08:10:24+03:30`.
+- Stable ID/version/next action/destination statuses match; full-file delta 1,501 chars. Library upload blocked by `container_session_unavailable`; sync remains OPEN / NOT VERIFIED.
