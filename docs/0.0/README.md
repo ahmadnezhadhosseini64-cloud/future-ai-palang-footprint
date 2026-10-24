@@ -1443,7 +1443,7 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - Current checkpoint: [CURRENT-044](./anchors/PALANG-0.0-CURRENT-20261024-044-RECOVERY-EVOLVABLE-BASELINE.md); parent [CURRENT-043](./anchors/PALANG-0.0-CURRENT-20261024-043-FOUNDATIONAL-PRINCIPLES-COMPLETENESS.md) preserved as history.
 - Input/output: [IN-036](./anchors/PALANG-0.0-IN-20261024-036-RECOVERY-EVOLVABLE-BASELINE.md) ↔ [OUT-036](./anchors/PALANG-0.0-OUT-20261024-036-RECOVERY-EVOLVABLE-BASELINE.md).
 - Event: [EVT-0144](../architecture/BEHAVIOR-TRACE/EVT-0144-RECOVERY-EVOLVABLE-BASELINE-2026-10-24.md).
-- Foundational mother: [NPFAP-20261024-001 v1.0.2](../reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md).
+- Foundational mother: [NPFAP-20261024-001 v1.0.3](../reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md).
 - Next: [NEXT-042 — gap closure and recovery validation](./anchors/PALANG-0.0-NEXT-20261024-042-GAP-CLOSURE-AND-RECOVERY-VALIDATION.md); keep [NEXT-041](./anchors/PALANG-0.0-NEXT-20261024-041-FOUNDATIONAL-PRINCIPLES-VERIFICATION.md) open until its principle matrix is executed.
 - Versioning rule: additive successor; preserve old artifacts, connect versions explicitly, keep rollback and evidence. No silent replacement.
 - Status: IN-036 / OUT-036 / CURRENT-044 / EVT-0144 / NEXT-042 and index/registry were fetched after write; primary IDs and links matched. A broken prototype-task link in NEXT-042 was found and corrected; the direct NPFAP link check remains 19/19 only. Principle audit, full transitive link scan, adoption, prototype, cold-start recovery and external destinations remain OPEN / NOT RUN / NOT BUILT / NOT VERIFIED as applicable.
