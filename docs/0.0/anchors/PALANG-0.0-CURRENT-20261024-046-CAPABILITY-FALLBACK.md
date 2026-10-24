@@ -14,7 +14,7 @@
 
 ## State and open gates
 - Host fallback architecture specifications: written; deployment not performed.
-- Index prior fetch gap: prior 404 recovered by successful fetch; post-update read-back remains pending.
+- Index prior fetch gap: CLOSED for this cycle; post-update fetch confirmed CURRENT-046/NEXT-044/EVT-0146 and fallback folder links.
 - Export SHA-256 verification: OPEN.
 - Persistent host memory, idle background, clean-context and second-host tests: NOT VERIFIED / NOT RUN.
 - Existing main HAIF CURRENT-052 and Rahm CURRENT-044/045 anchors remain preserved; no lineage overwrite.
