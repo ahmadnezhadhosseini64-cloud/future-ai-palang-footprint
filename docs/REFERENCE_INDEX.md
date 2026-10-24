@@ -1094,8 +1094,8 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Current checkpoint: [CURRENT-048](0.0/anchors/PALANG-0.0-CURRENT-20261024-048-LIVING-ARCHITECTURE-SUMMARY-AND-RECOVERY.md); parent [CURRENT-047](0.0/anchors/PALANG-0.0-CURRENT-20261024-047-FOUNDATIONAL-GOVERNANCE-AND-RECOVERY.md) preserved.
 - Input/output: [IN-041](0.0/anchors/PALANG-0.0-IN-20261024-041-LIVING-ARCHITECTURE-SUMMARY-AND-RECOVERY.md) → [OUT-040](0.0/anchors/PALANG-0.0-OUT-20261024-040-LIVING-ARCHITECTURE-SUMMARY-AND-RECOVERY.md).
 - Event: [EVT-0148](architecture/BEHAVIOR-TRACE/EVT-0148-LIVING-ARCHITECTURE-SUMMARY-AND-RECOVERY-2026-10-24.md).
-- Living mother: [NPFAP v1.1.0](reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md).
+- Living mother: [NPFAP v1.1.1](reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md).
 - Discovery engine: [Adaptive Discovery v1.1.0](../architecture/ADAPTIVE-DISCOVERY-CROSS-PLAYGROUND.md).
 - Next: [NEXT-044 — export and fresh-host cold-start recovery](0.0/anchors/PALANG-0.0-NEXT-20261024-044-EXTRACTABLE-RAHM-CHILD-AND-COLD-START-TEST.md).
-- Status: new IN/OUT/EVT/CURRENT records and mother/index need full post-write read-back before the entire chain can be marked verified. Export/recovery, always-on automation, and live second-project integration remain unverified.
+- Status: IN-041, OUT-040, EVT-0148, CURRENT-048, NEXT-044, mother, index, and discovery architecture were fetched after writes; IN/OUT/EVT/CURRENT records state READ-BACK VERIFIED. Export/recovery, always-on automation, and live second-project integration remain unverified. Export/recovery, always-on automation, and live second-project integration remain unverified.
 
