@@ -6,7 +6,8 @@
 - Pair: [IN-029](../../0.0/anchors/PALANG-0.0-IN-20261024-029-DECLARE-INITIAL-POINT-AND-LINK-ZERO-CHAIN.md) ↔ [OUT-029](../../0.0/anchors/PALANG-0.0-OUT-20261024-029-DECLARE-INITIAL-POINT-AND-LINK-ZERO-CHAIN.md)
 - Current: [CURRENT-039](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-039-GPT6-INITIAL-POINT-AND-ZERO-CHAIN.md)
 - Next: [NEXT-038](../../0.0/anchors/PALANG-0.0-NEXT-20261024-038-DEFINE-POINT-0-THEN-0.0.md)
-- Status: REGISTERED; read-back verification pending.
+- Status: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED.
+- Time binding: [TIME-BINDING-GPT6-INITIAL-POINT-2026-10-24-001](./TIME-BINDING-GPT6-INITIAL-POINT-2026-10-24-001.md).
 
 ## Observed user goal
 کاربر صریحاً خواست این نقطه به‌عنوان نقطهٔ آغاز پروژهٔ جدید ثبت شود، سند مادر و رفتارشناسی زنده باشد، قواعد معماری موجود اعمال شوند و گام‌های بعدی به‌ترتیب نقطهٔ ۰ و سپس ۰.۰ به این ریشه پیوند بخورند.
