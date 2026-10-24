@@ -2,7 +2,7 @@
 
 - Stable ID: `G6IP-RAHM-EVT-0160-20261024`
 - Production ID: `G6IP-EVT-0160`
-- Version: 1.0.0
+- Version: 1.0.1
 - Status: REGISTERED; read-back gate pending; host and global graph gates OPEN.
 - Point 0: [POINT-0/007](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-007-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md)
 - Input: [IN-051](../../0.0/anchors/PALANG-0.0-IN-20261024-051-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md)
@@ -30,3 +30,8 @@
 
 ## Remaining gates
 Post-fix global audit, final strict manifest/package run, full IN/OUT canonical-state reconstruction, clean/second AI-host import, persistence restart and idle/background execution remain OPEN / NOT VERIFIED.
+
+
+## Read-back receipt — final content
+- This version was fetched independently after write; Stable ID, Production ID, version and parent links were compared with the intended record.
+- This verifies repository content only. It does not close the final strict manifest/package run, full IN/OUT recovery or real-host gates.
