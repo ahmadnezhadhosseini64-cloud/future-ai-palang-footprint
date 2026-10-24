@@ -34,3 +34,17 @@ Child proposals remain candidates; Rahm validates provenance, evidence, contradi
 
 ## Continuation instruction / دستور ادامه
 Continue from CURRENT-049. Complete mother/index linkage and full read-back first; then run NEXT-044 as an observable export and cold-start recovery test. Preserve failures and unresolved gates. Do not resume Dropbox unless explicitly reopened.
+
+
+## Verification pass — repository read-back / دور بازخوانی مخزن
+The following exact repository paths were fetched after creation: IN-042, OUT-041, EVT-0149, CURRENT-049, the living mother, the reference index, and NEXT-044. The expected IDs and the links to CURRENT-049, IN-042, OUT-041, EVT-0149, NPFAP v1.1.2, and NEXT-044 were confirmed present in the fetched content.
+
+- Repository write: confirmed by returned commit records.
+- Read-back: confirmed for the listed paths.
+- Cross-link consistency: main chain paths and IDs present; stale wording in this checkpoint's original open-gates section is superseded by this verification pass.
+- Export and fresh-context recovery: OPEN / NOT RUN.
+- Second-project repository integration: PENDING destination identification.
+- Always-on freshness search/background execution: NOT VERIFIED.
+
+This verification pass does not promote export/recovery or two-project integration to verified status.
+
