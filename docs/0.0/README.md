@@ -1348,3 +1348,9 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - Time binding: [TIME-BINDING-INT-20261024-026](../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261024-026.md).
 - Next 0.0: [NEXT-036](anchors/PALANG-0.0-NEXT-20261024-036-HISTORIC-SOURCE-CENSUS-AND-COLD-START.md).
 - Preserve NEXT-022–NEXT-035; continue Issue #21 historic census, Issue #20 runtime/cold-start, and BOART follow-up. The exact-final-main audit remains open until evidence is tied to the merged SHA.
+
+
+## NEXT-036 progress — SCRTC-B3 source-clause crosswalk
+- Five canonical sources fetched in full and mapped in [SCRTC-B3](../architecture/ARCHITECTURE-LESSONS/SOURCE-CLAUSE-CROSSWALK-BATCH-3-2026-10-24-001.md); exact blob SHAs and lengths retained.
+- ULCG master advanced to v1.2.5; current point CURRENT-036 and NEXT-036 remain the active continuity anchors.
+- Open work remains: full historic census/conflict adjudication (Issue #21), runtime pair/cold-start recovery (Issue #20), and exact-final-main audit evidence.
