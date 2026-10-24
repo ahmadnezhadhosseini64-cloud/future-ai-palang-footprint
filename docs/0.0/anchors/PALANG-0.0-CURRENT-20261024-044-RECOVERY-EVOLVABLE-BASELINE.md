@@ -4,7 +4,7 @@
 - Production ID: `G6IP-CURRENT-044`
 - Version: 1.0.0
 - Role: Independent 0.0 checkpoint and resumable recovery anchor
-- Status: REGISTERED / ACTIVE / LIVING / EVOLVABLE; read-back verification is a separate gate.
+- Status: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING / EVOLVABLE.
 - Parent: [CURRENT-043](./PALANG-0.0-CURRENT-20261024-043-FOUNDATIONAL-PRINCIPLES-COMPLETENESS.md) — preserved, not replaced.
 - Input: [IN-036](./PALANG-0.0-IN-20261024-036-RECOVERY-EVOLVABLE-BASELINE.md)
 - Output: [OUT-036](./PALANG-0.0-OUT-20261024-036-RECOVERY-EVOLVABLE-BASELINE.md)
@@ -49,4 +49,4 @@ Repository registration time is the actual last-change Git commit timestamp in U
 
 ## Current verification boundary
 
-At creation time, CURRENT-043 was previously read back and its commit timestamp verified. NPFAP v1.0.2 had 19/19 direct internal Markdown targets found. Neither fact proves this new point is read-back verified, the whole project link graph is clean, or the architecture passes adoption/recovery. Complete those checks under NEXT-042.
+At creation time, CURRENT-043 was previously read back and its commit timestamp verified. NPFAP v1.0.2 had 19/19 direct internal Markdown targets found. Neither fact proves this new point is read-back verified, the whole project link graph is clean, or the architecture passes adoption/recovery. Exact read-back of CURRENT-044 and the linked IN-036 / OUT-036 / EVT-0144 / NEXT-042 records succeeded; IDs and primary links matched. The detailed checks remain assigned to NEXT-042.
