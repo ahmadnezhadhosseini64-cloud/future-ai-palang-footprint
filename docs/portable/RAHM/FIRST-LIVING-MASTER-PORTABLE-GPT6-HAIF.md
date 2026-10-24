@@ -2,7 +2,7 @@
 
 - Stable ID / شناسه پایدار: `G6IP-FIRST-LIVING-MASTER-PORTABLE-RAHM-20261024-001`
 - Production ID / شناسه تولید: `G6IP-FLM-RAHM-001`
-- Version / نسخه: 1.0.7
+- Version / نسخه: 1.0.8
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED for repository content; post-edit strict digest rerun pending; real-host and full graph gates remain OPEN.
 - Authority / مرجع حاکم: اصول بنیادی پروژه + سند مادر معماری موروثی + بسته قابل‌حمل RAHM.
 - User Point 0: [G6IP-RAHM-USER-POINT-0-20261024-005](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-005-OUTPUT-CONTINUITY-AND-RECOVERY.md)
@@ -262,3 +262,21 @@ A new input must not make prior open work disappear. Keep the active NEXT, link 
 - Active work remains [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). No NEXT-052 is created while NEXT-051 acceptance criteria remain open.
 - This cycle corrected real relative links and the audit script's treatment of Python fixture strings, and added latest-chain CI gates. The strict digest/package run must be rerun after all current edits.
 - Full state recovery from IN and OUT, independent AI-host import, second-host import, actual persistence restart, idle/background execution, and remaining global identity/parent/time triage stay OPEN / NOT VERIFIED.
+
+## Latest post-fix repository audit — run 40129104121
+- Workflow run: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129104121
+- Audit workflow conclusion: SUCCESS; structural repository checks PASS; content result remains REVIEW_REQUIRED.
+- Snapshot: 3,805 files including generated evidence; 5,564 local Markdown link edges; 0 missing Markdown links; 62 Stable-ID collision groups (61 unreviewed); 88 Production-ID collision groups; 7 Reference-ID collision groups; 36 event-number collision groups; 13 ambiguous parent edges; 1 ambiguous timestamp at EVT-0089 line 21 with missing timezone provenance.
+- Interpretation: the link gate is clean at this snapshot, but the architecture is not globally validated. Identifier/parent/time findings remain open and must be adjudicated individually.
+
+## Strict portable conformance baseline — run 40129104156
+- Workflow: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129104156
+- Manifest v1.4.8: 50/50 exact-byte SHA-256 entries matched; valid schema fixture 0 errors; invalid fixture rejected with 4 errors; limited IN/OUT checkpoint-link equivalence PASS.
+- Package built: 51 files / 249,389 bytes; archive SHA-256: `01ca37f0b0c8d1b9495d6fe77fdf571ec4e3cbef9bd090daf5952611f59a4de7`.
+- Artifact: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129104156/artifacts/12574940685
+- This is the successful baseline before the latest audit updates and the new full repository IN/OUT verifier. The current manifest will be reconciled and the strict workflow rerun; the latest run history is authoritative for exact final bytes.
+
+## Latest audit and recovery-test receipt — CURRENT-058
+- Latest checkpoint: [CURRENT-058](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-058-DEEP-EXCAVATION-EXECUTION-RECEIPTS.md).
+- A dedicated verifier is now wired into the audit workflow to reconstruct canonical repository state from IN-051 and OUT-050 and compare open gates. Check the latest Living Architecture Audit run for its result; do not infer PASS before the receipt exists.
+- Active NEXT remains NEXT-051. Clean/second AI-host import, full external host recovery, persistence restart and idle/background execution are not established by CI package creation.
