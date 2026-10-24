@@ -2,7 +2,7 @@
 
 - Stable ID: `NEW-PROJECT-ARCHITECTURE-HARD-AUDIT-2026-10-24-001`
 - Production ID: `NPHA-20261024-001`
-- Version: 1.0.2
+- Version: 1.0.3
 - Status: REGISTERED / ACTIVE / LIVING / EVIDENCE-GATED / EVOLVABLE / RECOVERABLE
 - Scope: GPT-6 Interactive Project under Future AI / Palang Footprint / HAIF
 - Previous checkpoint: [CURRENT-041](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-041-FOUNDATIONAL-ARCHITECTURE-MOTHER-ACTIVATION.md)
@@ -98,3 +98,7 @@ Each future audit amendment must append its findings and evidence, increment thi
 
 ## Active-pointer reconciliation — v1.0.2
 The audit's stale-pointer finding has now been corrected in the active document headers: inherited architecture mother → CURRENT-042; GPT-6 living master → CURRENT-042 with INT-20261024-034 / IN-034 / OUT-034 / EVT-0142; architecture-zero header → CURRENT-042 and NEXT-040. The 0.0 registry status now says READ-BACK VERIFIED, and the Reference Index last-updated field now reflects the 2026-10-24 audit. CURRENT-040 and CURRENT-041 remain preserved as historical nodes. The file history is additive; old checkpoints are not rewritten as if they were current at the time.
+
+
+## Final current-anchor consistency check — v1.0.3
+The architecture-zero header now names CURRENT-042 and NEXT-040 as current, while CURRENT-040 is explicitly retained as a historical anchor. The inherited mother and GPT-6 living master likewise mark the older CURRENT-040 sections as historical snapshots and expose CURRENT-042 / NEXT-040 as the active continuation. This removes the restart ambiguity without deleting the original history.
