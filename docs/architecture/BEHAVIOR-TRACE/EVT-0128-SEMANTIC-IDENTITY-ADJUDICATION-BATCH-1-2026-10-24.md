@@ -56,3 +56,11 @@ Evidence at audit SHA `ffc4fb8136cdd4168910f8c0ba58d6619fddfa13`:
 - Current pair: [IN-030](../../0.0/anchors/PALANG-0.0-IN-20261024-030-CONTINUE-SEMANTIC-RECONCILIATION.md) / [OUT-030](../../0.0/anchors/PALANG-0.0-OUT-20261024-030-CONTINUE-SEMANTIC-RECONCILIATION.md), interaction ID `INT-20261024-030`.
 - Active successor: [NEXT-029](../../0.0/anchors/PALANG-0.0-NEXT-20261024-029-SEMANTIC-REVIEW-BATCH-2-AND-FRESH-SESSION.md).
 - Decision ledger: `data/interaction-pairs/semantic-role-decisions.jsonl` contains H0-ID-REVIEW-001 and H0-ID-REVIEW-002; both are source-hash-verified by the graph builder on the audited source SHA.
+
+
+## Additional adjudication — H0-ID-REVIEW-003
+- Third source-backed Production-ID role decision: `0.0V-ARCH-2026-09-13-001`, shared by `architecture/0.0-VAULT-ARCHITECTURAL-PLACEMENT-2026-09-13.md` and `docs/reference/REFERENCE-DOCUMENTS/0.0-VAULT-ARCHITECTURAL-PLACEMENT-0.0V-ARCH-2026-09-13-001.md`.
+- Both paths have identical content SHA-256 `d3921368cf3ad35d6b428860c67ad47f4e395c731f9249dc7b84006614558dad` at audited SHA `871e02fb87e2ff04db380dcad64fc1bd0939e8a6`.
+- Git history: operational path `dfbed7d0c4e55a4d0caf443a0fd2b310dccd369e` at `2026-09-13T19:14:10Z`; reference copy `af9cdb562ec54fc7df0ac07b99a60d69a0ef372a` at `2026-09-28T22:31:02Z`. Both had zero inbound/outbound local links in the audited manifest.
+- Roles: `OPERATIONAL_ARCHITECTURE_PLACEMENT_CANDIDATE` and `REFERENCE_VAULT_MIRROR_CANDIDATE`. The role distinction is recorded; exclusive canonical promotion remains provisional. No rename/delete/merge.
+- Machine-readable decision `H0-ID-REVIEW-003` was appended to `data/interaction-pairs/semantic-role-decisions.jsonl`; the next audit must prove it is accepted against the exact current source hashes.
