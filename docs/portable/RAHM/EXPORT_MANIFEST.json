@@ -1,7 +1,7 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.2.7",
-  "manifest_status": "CURRENT-056_CHAIN_READBACK_VERIFIED; RECOMPUTE_EXACT_BYTE_DIGESTS",
+  "version": "1.2.8",
+  "manifest_status": "ALL_37_EXPECTED_SHA256_POPULATED; FINAL_RECHECK_REQUIRED",
   "created_from_checkpoint": "G6IP-RAHM-USER-POINT-0-20261024-005",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [
@@ -9,13 +9,13 @@
       "path": "docs/portable/RAHM/RAHM_BOOT.md",
       "version": "1.0.0",
       "git_blob_sha": "be9fbf9e43827e0db9f7ba61df38bd6517011c31",
-      "sha256": "PENDING"
+      "sha256": "9489f30fca72080ce53a3be22dd99aa983b4444f53e024b7a8f012f3473e77cd"
     },
     {
       "path": "docs/portable/RAHM/RAHM_ARCHITECTURE.md",
       "version": "1.0.0",
       "git_blob_sha": "5f2d82617b3325f02e4248096535fdb9c6f6e3cf",
-      "sha256": "PENDING"
+      "sha256": "c79f10f24c824eb3288eac846330c83adac992a4870c4fa91ed15487ed688a51"
     },
     {
       "path": "docs/portable/RAHM/HOST_CAPABILITY_MANIFEST.json",
@@ -51,7 +51,7 @@
       "path": "docs/portable/RAHM/FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md",
       "version": "1.0.0",
       "git_blob_sha": "007f516e58a255f159e40068ab3e9a7fae26b943",
-      "sha256": "PENDING"
+      "sha256": "e1c66328e921e50a5b210e4cbf0a47df2118c02261d53b04aa5e44e88782dbbe"
     },
     {
       "path": "docs/0.0/anchors/PALANG-0.0-IN-20261024-047-FIRST-LIVING-MASTER.md",
@@ -117,25 +117,25 @@
       "path": "docs/architecture/INTEGRATION-QUEUE/README.md",
       "version": "current",
       "git_blob_sha": "aeb5958db6d09a5c16a327e650a30f401817fffd",
-      "sha256": "PENDING"
+      "sha256": "d3b656c59181232de46fa625e79d6407ea8ff5aa183058f708c324c243d2ab51"
     },
     {
       "path": "docs/reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md",
       "version": "current",
       "git_blob_sha": "3e828e80935017bbf697871c04a4cf7f343a23d8",
-      "sha256": "PENDING"
+      "sha256": "5e6ce35acc3497c935f24ebd2e2a6c5e80fe3bbf90a1bbcaf6805341cab670bc"
     },
     {
       "path": "docs/reference/REFERENCE-DOCUMENTS/GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md",
       "version": "current",
       "git_blob_sha": "d16e36edce2be787d8cb9b9bc340534312403d8a",
-      "sha256": "PENDING"
+      "sha256": "873e8c2fda1bcfc2ed817445fadef32d26201b3c247d8ef0b8f3f737a4aafec4"
     },
     {
       "path": "docs/REFERENCE_INDEX.md",
       "version": "current",
       "git_blob_sha": "cc5e1f6adc9322fc46ad53d26d7dd0bcd73744d5",
-      "sha256": "PENDING"
+      "sha256": "13afe491dad34d198c1dca5c631ad1c24b871e581ec30131ef519b459964daaa"
     },
     {
       "path": "docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md",
@@ -189,37 +189,37 @@
       "path": "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-005-OUTPUT-CONTINUITY-AND-RECOVERY.md",
       "version": "1.0.0",
       "git_blob_sha": "dced4581f42981fd04e1c6fd4fb2b43f762ddfbf",
-      "sha256": "PENDING"
+      "sha256": "47da3b33edf1b0b47d0b35939620fab46f9feea5daeaae4f2760f40f6183da36"
     },
     {
       "path": "docs/0.0/anchors/PALANG-0.0-IN-20261024-049-OUTPUT-CONTINUITY-AND-RECOVERY.md",
       "version": "1.0.0",
       "git_blob_sha": "690569120dea805af4318e23d1aa2aabca2b28e5",
-      "sha256": "PENDING"
+      "sha256": "472370621529ff29c482b6ff497176b22c3c081a6d682ea9ce0e5e998f6177df"
     },
     {
       "path": "docs/0.0/anchors/PALANG-0.0-OUT-20261024-048-OUTPUT-CONTINUITY-AND-RECOVERY.md",
       "version": "1.0.0",
       "git_blob_sha": "81bc31d9deb22fa7df93e735c8792dfea6ec88d5",
-      "sha256": "PENDING"
+      "sha256": "f506e858e96ec6a7b7bed7028d0457fb2b1d0c49b803674af968786f9e648b60"
     },
     {
       "path": "docs/architecture/BEHAVIOR-TRACE/EVT-0158-NO-SILENT-GAP-OUTPUT-CONTINUITY-2026-10-24.md",
       "version": "1.0.0",
       "git_blob_sha": "89654b2a4b07c613bcac0c033ccbaf16357e24c9",
-      "sha256": "PENDING"
+      "sha256": "1974238c53b1f4278863951187e8b953d98dece88ad4b9e522f932170f55405a"
     },
     {
       "path": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261024-056-OUTPUT-CONTINUITY-AND-RECOVERY.md",
       "version": "1.0.0",
       "git_blob_sha": "ae5dab77df3cc2597d75b75b99dd86b63f3b196e",
-      "sha256": "PENDING"
+      "sha256": "47cf052242001ba30ee131e85e9b718663847fc8b8eeeb21b2544403e186f15f"
     },
     {
       "path": "docs/0.0/anchors/PALANG-0.0-NEXT-20261024-050-FULL-RECOVERY-AND-REAL-HOST-IMPORT.md",
       "version": "1.0.0",
       "git_blob_sha": "7c49375f9676d031072d39234bbe451cee81320f",
-      "sha256": "PENDING"
+      "sha256": "2fc5878d84489af5e767520a4b2ece42be9f8ee4e4bfb5217e2ba275013b0205"
     }
   ],
   "manifest_itself": {
@@ -233,17 +233,17 @@
     "persistent_memory": "NOT_VERIFIED",
     "idle_background_execution": "NOT VERIFIED",
     "cross_host": "NOT_RUN",
-    "exact_byte_sha256": "RECOMPUTE_AFTER_FINAL_READ-BACK STATUS AND IN POINTER UPDATES",
-    "schema_valid_fixture": "PASS_RUN_40120329021",
-    "schema_invalid_fixture": "REJECTED_WITH_4_ERRORS_RUN_40120329021",
-    "IN_OUT_recovery_equivalence": "PASS_LIMITED_LINK_CHECKPOINT_SCOPE_RUN_40120329021",
+    "exact_byte_sha256": "PASS_RUN_40120435304; 37 manifest entries checked; final post-manifest recheck required",
+    "schema_valid_fixture": "PASS_RUN_40120435304",
+    "schema_invalid_fixture": "REJECTED_WITH_4_ERRORS_RUN_40120435304",
+    "IN_OUT_recovery_equivalence": "PASS_LIMITED_LINK_CHECKPOINT_SCOPE_RUN_40120435304",
     "clean_AI_host_import": "NOT RUN",
     "second_AI_host_import": "NOT RUN",
     "persistence_restart": "NOT VERIFIED",
-    "canonical_mother_index_queue_integration": "UPDATED_AND_FETCHED; final manifest digest run pending",
+    "canonical_mother_index_queue_integration": "UPDATED_AND_FETCHED; final read-back check required",
     "schema_workflow_overall": "PASS_RUN_40115875047",
-    "portable_package_build": "PASS_RUN_40117897971; final rebuild after manifest digest population",
+    "portable_package_build": "PASS_RUN_40120435304; final package rebuild required after manifest digest update",
     "full_state_recovery": "OPEN / NOT RUN"
   },
-  "note": "Current checkpoint CURRENT-056 and Point 0/005 add a no-silent-gap continuity rule. All changes must be independently read back; the manifest is rehashed by the conformance workflow. The package build and CI do not prove a separate AI-host import or background execution."
+  "note": "All expected SHA-256 values are populated from the successful conformance workflow's exact checked-out file bytes. A subsequent successful run must compare them all against the current commit. The manifest's own digest is emitted externally by the workflow to avoid recursive self-hashing. CI/package success does not prove separate AI-host import, full-state recovery, persistent memory, or idle/background execution."
 }
