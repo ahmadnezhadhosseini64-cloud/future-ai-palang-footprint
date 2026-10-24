@@ -117,6 +117,21 @@ stable_collisions, stable_decision_summary = apply_role_decisions(stable_collisi
 prod_collisions, prod_decision_summary = apply_role_decisions(prod_collisions, nodes, role_decisions, "PRODUCTION_ID")
 reference_collisions, reference_decision_summary = apply_role_decisions(groups(reference_id_map), nodes, role_decisions, "REFERENCE_ID")
 evt_collisions, evt_decision_summary = apply_role_decisions(evt_collisions, nodes, role_decisions, "EVENT_NUMBER")
+accepted_decision_ids = set()
+for decision_summary in (stable_decision_summary, prod_decision_summary, reference_decision_summary, evt_decision_summary):
+    accepted_decision_ids.update(decision_summary.get("accepted_decision_ids", []))
+accepted_decisions_by_key = {d.get("decision_id"): d for d in role_decisions if d.get("decision_id") in accepted_decision_ids}
+for occurrence in identifier_occurrences:
+    for decision in accepted_decisions_by_key.values():
+        if occurrence.get("identifier_type") != decision.get("identifier_type") or occurrence.get("identifier_value") != decision.get("identifier_value"):
+            continue
+        matching = [p for p in decision.get("paths", []) if p.get("path") == occurrence.get("path")]
+        if matching:
+            occurrence["role_status"] = "ROLE-ADJUDICATED"
+            occurrence["decision_id"] = decision.get("decision_id")
+            occurrence["adjudicated_role"] = matching[0].get("role")
+            break
+
 id_to_paths = defaultdict(set)
 for mapping in (stable_map, prod_map, reference_id_map):
     for ident, paths in mapping.items():
@@ -237,7 +252,7 @@ review_queue = {
         "reference_id_occurrences": sum(o["identifier_type"] == "REFERENCE_ID" for o in identifier_occurrences),
         "definition_or_metadata_candidates": sum(o["role_candidate"] == "DEFINITION_OR_METADATA_REVIEW" for o in identifier_occurrences),
         "reference_candidates": sum(o["role_candidate"] == "REFERENCE_REVIEW" for o in identifier_occurrences),
-        "unreviewed_occurrences": len(identifier_occurrences)
+        "reviewed_occurrences": sum(o.get("role_status") == "ROLE-ADJUDICATED" for o in identifier_occurrences),\n        "unreviewed_occurrences": sum(o.get("role_status") != "ROLE-ADJUDICATED" for o in identifier_occurrences)
     },
     "occurrences": identifier_occurrences,
     "link_context_by_path": link_context_by_path,
