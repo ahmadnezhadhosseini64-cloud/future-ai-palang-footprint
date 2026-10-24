@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001
 - Production ID / شناسهٔ تولید: G6IP-IAM-20261024-001
-- Version / نسخه: 1.0.8
+- Version / نسخه: 1.0.9
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED / CONTENT PRESENT / IDENTIFIERS MATCHED
 - Parent architecture / معماری والد: Future AI / Palang Footprint — HAIF
 - New project root / ریشهٔ پروژهٔ جدید: [Point 0](../../0.0/anchors/GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001.md)
@@ -234,3 +234,7 @@ The package must declare host capabilities and limitations, retain IN/OUT/event 
 - Input/output/event: [IN-049](../../0.0/anchors/PALANG-0.0-IN-20261024-049-OUTPUT-CONTINUITY-AND-RECOVERY.md) → [OUT-048](../../0.0/anchors/PALANG-0.0-OUT-20261024-048-OUTPUT-CONTINUITY-AND-RECOVERY.md) → [EVT-0158](../../architecture/BEHAVIOR-TRACE/EVT-0158-NO-SILENT-GAP-OUTPUT-CONTINUITY-2026-10-24.md).
 - Next: [NEXT-050](../../0.0/anchors/PALANG-0.0-NEXT-20261024-050-FULL-RECOVERY-AND-REAL-HOST-IMPORT.md); prior [NEXT-049](../../0.0/anchors/PALANG-0.0-NEXT-20261024-049-REAL-HOST-TRANSFER-AND-GRAPH-AUDIT.md) remains open.
 - Mandatory behavior: do not silently abandon open work at a message boundary. Link each new IN to the active NEXT, expose a status at durable milestones, and resume from the last read-back-verified checkpoint. Do not claim unproven background execution or persistent memory.
+
+
+## CURRENT-056 — no-silent-gap and portable RAHM binding
+Current recovery anchor: [CURRENT-056](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-056-OUTPUT-CONTINUITY-AND-RECOVERY.md). User Point 0/005, IN-049, OUT-048 and EVT-0158 are linked to the portable living master; deterministic continuation is [NEXT-050](../../0.0/anchors/PALANG-0.0-NEXT-20261024-050-FULL-RECOVERY-AND-REAL-HOST-IMPORT.md). Earlier NEXT-049 and NEXT-044 remain open and are not superseded. The digest workflow requires a valid expected SHA-256 and explicit MATCH for every manifest entry. Run 40122001572 passed the 37-file digest gate; structural audit 40122001601 remains REVIEW_REQUIRED. Real-host import, full-state recovery, persistence/background and graph remediation remain OPEN / NOT VERIFIED.
