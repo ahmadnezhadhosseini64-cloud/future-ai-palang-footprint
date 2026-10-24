@@ -325,7 +325,8 @@ Five more canonical sources have been fetched in full and provisionally mapped: 
 
 - Stable ID: PALANG-ULCG-ADDENDUM-CURRENT-POINT-ZERO-2026-10-24-036
 - Production ID: ULCG-ADDENDUM-036
-- Status: REGISTERED on candidate branch; read-back and CI audit required before merge.
+- Status: REGISTERED / READ-BACK VERIFIED on candidate branch; CI audit and merge pending.
+- Read-back evidence: [VERIFICATION-CHECKPOINT-INT-20261024-026](../../architecture/BEHAVIOR-TRACE/VERIFICATION-CHECKPOINT-INT-20261024-026.md).
 - Current point 0: [CURRENT-036](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-036-USER-REQUEST-AND-LIVING-REGISTRATION.md).
 - Input/output: [IN-026](../../0.0/anchors/PALANG-0.0-IN-20261024-026-REGISTER-CURRENT-POINT-0.md) / [OUT-026](../../0.0/anchors/PALANG-0.0-OUT-20261024-026-REGISTER-CURRENT-POINT-0.md).
 - Event / lesson: [EVT-0134](../../architecture/BEHAVIOR-TRACE/EVT-0134-CURRENT-POINT-ZERO-AND-LIVING-REGISTRATION-2026-10-24.md) / [LAL-20261024-013](../../architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261024-013-CURRENT-POINT-ZERO-AND-LIVING-REGISTRATION.md).
@@ -344,8 +345,6 @@ When the user explicitly designates a current point 0, register it as a distinct
 4. Make work visible in bounded milestones; silence is not proof of background execution.
 5. Every newly registered interaction must be independently read back, link-checked, and included in structural CI.
 6. The full audit must be tied to the exact final main SHA after merge; a passing candidate run does not satisfy that final-main gate.
-
-### Version history
 
 - v1.2.3: status visibility and resumable execution.
 - v1.2.4: explicit current point 0, successor 0.0, paired IN/OUT anchors, and preservation of all previously open tracks.
