@@ -48,3 +48,7 @@ The following exact repository paths were fetched again after writes: IN-034, OU
 
 ## Active-pointer fix read-back
 After the additional corrections, the inherited mother, GPT-6 living master, architecture-zero root, CURRENT-042, NEXT-040, 0.0 registry and Reference Index were fetched again. The active headers now point to CURRENT-042 / NEXT-040 and the GPT-6 living master identifies INT-20261024-034, IN-034, OUT-034 and EVT-0142. The index's NPFAP status is READ-BACK VERIFIED and the index date is 2026-10-24. Historical anchors CURRENT-039/040/041 remain present and linked.
+
+
+## Final consistency read-back — 2026-10-24
+After correcting stale CURRENT-040 wording, the architecture-zero root, inherited architecture mother and GPT-6 living master were fetched again. The active headers now resolve to CURRENT-042; NEXT-040 is the next adoption test; CURRENT-040/041 are preserved as historical nodes. The hard-audit mother is v1.0.3. This final pass verifies repository content and anchor consistency only, not a product/runtime pass.
