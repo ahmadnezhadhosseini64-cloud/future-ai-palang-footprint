@@ -1,5 +1,5 @@
 # RAHM_ARCHITECTURE — portable architecture contract
-Version 1.0.0 | Package ID: HAIF-RAHM-PORTABLE-20261024-001
+Version 1.0.1 | Package ID: HAIF-RAHM-PORTABLE-20261024-001
 
 ## Layers
 1. MASTER: canonical rules, identities, versions, lineage, acceptance and promotion.
@@ -32,3 +32,12 @@ Failure handling: missing access, failed writes, broken links, duplicate IDs, pa
 - Next execution checkpoint: [NEXT-046](../../0.0/anchors/PALANG-0.0-NEXT-20261024-046-RAHM-PORTABILITY-VALIDATION.md).
 - Transfer contract: export exact bytes and manifest, verify SHA-256, validate schemas, import into a clean host, reconstruct state and open gates, then independently read back and run conformance tests.
 - This binding is documentation, not transfer proof. Until a target-host import passes, status remains NOT VERIFIED.
+
+
+## No-silent-gap continuity contract — CURRENT-056
+- Current checkpoint: [CURRENT-056](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-056-OUTPUT-CONTINUITY-AND-RECOVERY.md).
+- User return point: [Point 0/005](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-005-OUTPUT-CONTINUITY-AND-RECOVERY.md).
+- Event: [EVT-0158](../../architecture/BEHAVIOR-TRACE/EVT-0158-NO-SILENT-GAP-OUTPUT-CONTINUITY-2026-10-24.md).
+- Next: [NEXT-050](../../0.0/anchors/PALANG-0.0-NEXT-20261024-050-FULL-RECOVERY-AND-REAL-HOST-IMPORT.md), OPEN / LIVING.
+
+Rule: do not silently abandon open work between input and output. Before long operations, expose a useful interim result when possible. Each delivered response must identify its completion state and deterministic next action. A new input must be linked to the latest open NEXT and must not erase it. Never claim hidden background work; asynchronous persistence/capture requires a real host capability and test receipt.
