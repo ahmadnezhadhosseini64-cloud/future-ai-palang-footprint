@@ -1002,3 +1002,12 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - [Crosswalk](architecture/ARCHITECTURE-LESSONS/SOURCE-CLAUSE-CROSSWALK-BATCH-3-2026-10-24-001.md) maps five full-source fetches to normalized rules, components, existing tests and open gaps.
 - Connected master: ULCG v1.2.5; current point CURRENT-036; next 0.0 NEXT-036.
 - Full historic census remains OPEN under Issue #21; runtime/cold-start remains OPEN under Issue #20.
+
+
+## GPT-6 interactive project branch — CURRENT-037 / EVT-0135
+- Living master: [GPT6 Interactive Project Living Master Reference](reference/REFERENCE-DOCUMENTS/GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001.md) — Stable ID `GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001`, Production ID `G6IP-LMR-20261024-001`, v1.0.0.
+- Current 0.0: [CURRENT-037](0.0/anchors/PALANG-0.0-CURRENT-20261024-037-GPT6-INTERACTIVE-PROJECT-START.md).
+- Independent pair: [IN-027](0.0/anchors/PALANG-0.0-IN-20261024-027-GPT6-INTERACTIVE-PROJECT-START.md) / [OUT-027](0.0/anchors/PALANG-0.0-OUT-20261024-027-GPT6-INTERACTIVE-PROJECT-START.md).
+- Event / behavior trace: [EVT-0135](architecture/BEHAVIOR-TRACE/EVT-0135-GPT6-INTERACTIVE-PROJECT-START-2026-10-24.md).
+- Parent CURRENT-036 and prior NEXT-036 are preserved. This branch does not close historic census, runtime/cold-start, or other open tasks.
+- Repository-only status until independent evidence exists for other destinations. Dropbox remains OPEN / NOT VERIFIED; no claim of always-on global capture.
