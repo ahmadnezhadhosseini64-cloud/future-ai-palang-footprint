@@ -39,7 +39,7 @@ EXPECTED = {
 GATE_MARKERS = {
     "full_state_recovery": ("canonical-state reconstruction", "FULL IN/OUT canonical-state reconstruction"),
     "clean_host_import": ("clean independent AI-host import", "clean/second AI-host import"),
-    "second_host_import": ("second-host import", "clean/second AI-host import"),
+    "second_host_import": ("second host", "clean/second AI-host import"),
     "persistence_restart": ("persistence restart", "persistence restart"),
     "idle_background": ("idle/background execution", "idle/background execution"),
     "graph_triage": ("ambiguous parent", "identifier collisions"),
@@ -138,19 +138,19 @@ def reconstruct(start):
         ("point0", point0, "PALANG-0.0-IN-20261024-051"),
         ("point0", point0, "PALANG-0.0-OUT-20261024-050"),
         ("point0", point0, "EVT-0160"),
-        ("point0", point0, "CURRENT-058"),
-        ("point0", point0, "NEXT-051"),
-        ("in", in_text, "CURRENT-057"),
-        ("in", in_text, "NEXT-051"),
+        ("point0", point0, "PALANG-0.0-CURRENT-20261024-058"),
+        ("point0", point0, "PALANG-0.0-NEXT-20261024-051"),
+        ("in", in_text, "PALANG-0.0-CURRENT-20261024-057"),
+        ("in", in_text, "PALANG-0.0-NEXT-20261024-051"),
         ("out", out_text, "EVT-0160"),
-        ("out", out_text, "CURRENT-058"),
-        ("event", event, "CURRENT-058"),
-        ("current", current, "NEXT-051"),
+        ("out", out_text, "PALANG-0.0-CURRENT-20261024-058"),
+        ("event", event, "PALANG-0.0-CURRENT-20261024-058"),
+        ("current", current, "PALANG-0.0-NEXT-20261024-051"),
         ("current", current, "FIRST-LIVING-MASTER"),
         ("current", current, "EXPORT_MANIFEST"),
         ("current", current, "REFERENCE_INDEX"),
         ("current", current, "INTEGRATION-QUEUE"),
-        ("next", nxt, "CURRENT-057"),
+        ("next", nxt, "PALANG-0.0-CURRENT-20261024-057"),
     ]
     for name, text, fragment in link_checks:
         if not require_link(name, text, fragment):
@@ -169,7 +169,7 @@ def reconstruct(start):
         failures.append({"check":"portable_master_not_current"})
     if manifest.get("created_from_checkpoint") != "G6IP-RAHM-CURRENT-058-20261024":
         failures.append({"check":"manifest_checkpoint_mismatch","actual":manifest.get("created_from_checkpoint")})
-    if manifest.get("next_action") != "NEXT-051":
+    if manifest.get("tests", {}).get("next_action") != "NEXT-051":
         failures.append({"check":"manifest_next_mismatch","actual":manifest.get("next_action")})
     return {
         "started_from": start,
