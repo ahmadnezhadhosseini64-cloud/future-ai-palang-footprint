@@ -1120,3 +1120,13 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Verified by fetch after writes: IN-042, OUT-041, EVT-0149, CURRENT-049, NEXT-044, mother, and index. This confirms path/content retrieval and expected IDs/links only.
 - Still open: NEXT-044 export and fresh-context recovery test; identification and integration of second project's repository; always-on search/background automation.
 
+
+
+## CURRENT-050 — وضعیت معماری پروژهٔ جدید — 2026-10-24
+- Current checkpoint: [CURRENT-050](0.0/anchors/PALANG-0.0-CURRENT-20261024-050-NEW-PROJECT-ARCHITECTURE-STATUS.md); additive parent [CURRENT-049](0.0/anchors/PALANG-0.0-CURRENT-20261024-049-LIVE-STATUS-AND-OUTPUT-CONTINUITY.md) preserved.
+- Interaction chain: [IN-043](0.0/anchors/PALANG-0.0-IN-20261024-043-NEW-PROJECT-ARCHITECTURE-STATUS-AND-LIVING-ANCHOR.md) → [OUT-042](0.0/anchors/PALANG-0.0-OUT-20261024-042-NEW-PROJECT-ARCHITECTURE-STATUS-AND-LIVING-ANCHOR.md) → [EVT-0150](architecture/BEHAVIOR-TRACE/EVT-0150-NEW-PROJECT-ARCHITECTURE-STATUS-2026-10-24.md) → CURRENT-050.
+- Living mother: [NPFAP v1.1.4](reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md).
+- Discovery engine: [Adaptive Discovery v1.1.0](../architecture/ADAPTIVE-DISCOVERY-CROSS-PLAYGROUND.md).
+- Next gate: [NEXT-044 — export and fresh-context recovery](0.0/anchors/PALANG-0.0-NEXT-20261024-044-EXTRACTABLE-RAHM-CHILD-AND-COLD-START-TEST.md).
+- Status: architecture and records registered; perform read-back of this new chain before upgrading its status. NEXT-044 remains OPEN / NOT RUN. Second-project repository and mother path are not identified. Always-on search/background automation is NOT VERIFIED.
+
