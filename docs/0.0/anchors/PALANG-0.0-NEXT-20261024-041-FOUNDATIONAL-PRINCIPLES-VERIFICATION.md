@@ -33,7 +33,7 @@ NOT RUN. This is an executable verification plan, not a claim of completion.
 
 - PASS: exact repository read-back of foundational mother v1.0.2, universal contract v1.3.1, inherited master, GPT-6 living master v1.3.7, Reference Index, 0.0 registry, IN-035, OUT-035, EVT-0143, CURRENT-043 and NEXT-041.
 - PASS: all 19 unique direct internal Markdown links in the foundational mother resolved to existing repository files.
-- PASS: current checkpoint commit `5e59164f14b2619abba9add18462b17f81f16ec8` at UTC `2026-10-24T10:27:06Z` / Tehran `2026-10-24T13:57:06+03:30`; foundational mother commit `563e24b4776ce9dd4cb5fa67ef141c5b391a220d` at UTC `2026-10-24T10:25:30Z` / Tehran `2026-10-24T13:55:30+03:30`.
+- PASS: current checkpoint commit `5e59164f14b2619abba9add18462b17f81f16ec8` at UTC `2026-10-24T10:27:06Z` / Tehran `2026-10-24T13:57:06+03:30`; foundational mother commit `9df59c99331724c17462da0c9ddb68f9ec2af600` at UTC `2026-10-24T10:26:35Z` / Tehran `2026-10-24T13:56:35+03:30`.
 - OPEN: review each of the 16 principles against its specific acceptance criterion and evidence location; the full project-wide transitive link graph has not been checked.
 - OPEN / NOT RUN: fresh-project adoption test NEXT-040, interactive prototype NEXT-039 and cold-start recovery.
 - NOT VERIFIED: external destinations and global automatic capture.
