@@ -212,3 +212,10 @@ Each proposed insight includes:
 - Regression tests explicitly verify that failure remains failure and that the receipt does not claim chat UI heartbeat, host-wide capture, or external persistence.
 - This is an additive capability; it does not replace the architecture-update proposal gate or append-only hash-linked version ledger. Previous versions remain intact.
 - Exact CI and artifact verification must be appended after the workflow completes.
+
+
+## 12. Living graph drift detector
+- The read-only detector `scripts/behavior-hunter/check_living_graph_drift.py` compares the latest bidirectional pair against master, queue, global index, 0.0 index, behavior-trace index, observatory and durable status receipt.
+- Regression tests cover complete graph, missing master link and missing durable receipt.
+- Run 40062120276: 74 tests passed; `living-graph-drift.json` returned PASS, six nodes checked, zero failures; artifact ZIP SHA-256 `e45208b1bd2b63fa4e30fedcf27b9701532b8c85feee298ae18cbd6105c0d332`.
+- Ledger 1.4.0 records the capability append-only; next CI must validate the five-record chain. This is repository drift detection only, not cross-session recovery or external persistence.
