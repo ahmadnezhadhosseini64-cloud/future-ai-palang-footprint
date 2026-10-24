@@ -1,43 +1,117 @@
 #!/usr/bin/env python3
-"""Recover HAIF interaction graph from either IN-026 or OUT-026.
+"""Recover the latest valid HAIF IN/OUT interaction pair from repository state.
 
-Repository-state recovery only; this does not claim runtime capture or external persistence.
+The resolver discovers the latest reciprocal pair from the anchors themselves;
+it must not keep passing merely because an old hard-coded pair still exists.
+Repository-state recovery only: no claim of live-host capture or external persistence.
 """
 import argparse
 import json
+import re
 from pathlib import Path
 
-PAIR = {
-    "IN": {"id": "IN-026", "path": "docs/0.0/anchors/PALANG-0.0-IN-20261023-026-REGISTER-ACTIVE-CONTINUATION.md", "paired_id": "OUT-026", "paired_path": "docs/0.0/anchors/PALANG-0.0-OUT-20261023-026-REGISTER-ACTIVE-CONTINUATION.md"},
-    "OUT": {"id": "OUT-026", "path": "docs/0.0/anchors/PALANG-0.0-OUT-20261023-026-REGISTER-ACTIVE-CONTINUATION.md", "paired_id": "IN-026", "paired_path": "docs/0.0/anchors/PALANG-0.0-IN-20261023-026-REGISTER-ACTIVE-CONTINUATION.md"},
-}
-NODES = {
-    "event": "docs/architecture/BEHAVIOR-TRACE/EVT-0121-REGISTER-ACTIVE-CONTINUATION-AND-COLD-START-RESULT-2026-10-23.md",
-    "active_gate": "docs/architecture/BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-RECOVERY-2026-10-23.md",
-    "checkpoint": "docs/0.0/anchors/PALANG-0.0-NEXT-20261023-024-CONTINUITY-HISTORIC-AND-COLD-START.md",
-    "master": "docs/reference/REFERENCE-DOCUMENTS/CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001.md",
-    "queue": "docs/architecture/INTEGRATION-QUEUE/README.md",
-    "evidence": "data/interaction-pairs/evidence/EVT-0120-RESOLVER-SMOKE-EVIDENCE.txt",
-}
+ANCHOR_ROOT = "docs/0.0/anchors"
+MASTER = "docs/reference/REFERENCE-DOCUMENTS/CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001.md"
+QUEUE = "docs/architecture/INTEGRATION-QUEUE/README.md"
+EVIDENCE = "data/interaction-pairs/evidence/EVT-0120-RESOLVER-SMOKE-EVIDENCE.txt"
 OPEN_GAPS = [
     {"id": "Issue #20", "meaning": "runtime capture and end-to-end recovery", "status": "OPEN"},
     {"id": "Issue #21", "meaning": "historic source census and semantic reconciliation", "status": "OPEN"},
+    {"id": "Issue #19", "meaning": "six real-document ingestion and restart-recovery acceptance", "status": "OPEN"},
 ]
 NEXT_ACTIONS = [
-    "Run both recovery directions on the exact final main HEAD and inspect both JSON manifests.",
-    "Perform and separately record a fresh ChatGPT session recovery; do not infer it from repository CI.",
-    "Continue historic source census / Issue #21 and runtime capture / Issue #20 without replacing prior 0.0 anchors.",
+    "Recover the latest reciprocal IN/OUT pair, not a hard-coded historical pair.",
+    "Run both recovery directions on the exact source SHA and inspect both JSON manifests.",
+    "Perform and separately record fresh-session ChatGPT recovery; do not infer it from repository CI.",
+    "Continue open runtime capture, real-document acceptance and historic semantic reconciliation without replacing prior 0.0 anchors.",
 ]
 
-def recover(start, repo_root):
+def _production_id(text):
+    m = re.search(r"(?m)^\\s*-?\\s*Production ID:\\s*(IN|OUT)-(\\d+)\\s*$", text)
+    return (m.group(1), int(m.group(2))) if m else None
+
+def _pair_id(text):
+    m = re.search(r"(?m)^\\s*-?\\s*Interaction pair ID:\\s*(INT-\\d{8}-\\d+)\\s*$", text)
+    return m.group(1) if m else None
+
+def _event_id(text):
+    candidates = re.findall(r"\\bEVT-\\d{4}\\b", text)
+    return candidates[0] if candidates else None
+
+def discover_latest_pair(root):
+    anchor_root = root / ANCHOR_ROOT
+    grouped = {}
+    if not anchor_root.is_dir():
+        return None, [{"node": "anchors", "reason": "anchor_directory_missing", "path": ANCHOR_ROOT}]
+    for path in sorted(anchor_root.glob("*.md")):
+        try:
+            text = path.read_text(encoding="utf-8")
+        except (OSError, UnicodeError):
+            continue
+        prod = _production_id(text)
+        interaction = _pair_id(text)
+        if not prod or not interaction:
+            continue
+        role, number = prod
+        grouped.setdefault(interaction, {})[role] = {
+            "id": f"{role}-{number:03d}",
+            "number": number,
+            "path": path.relative_to(root).as_posix(),
+            "text": text,
+        }
+    candidates = []
+    for interaction, pair in grouped.items():
+        if "IN" not in pair or "OUT" not in pair:
+            continue
+        incoming, outgoing = pair["IN"], pair["OUT"]
+        if incoming["number"] != outgoing["number"]:
+            continue
+        if f"OUT-{outgoing['number']:03d}" not in incoming["text"]:
+            continue
+        if f"IN-{incoming['number']:03d}" not in outgoing["text"]:
+            continue
+        candidates.append((interaction, pair))
+    if not candidates:
+        return None, [{"node": "interaction_pair", "reason": "no_reciprocal_pair_with_matching_identity"}]
+    interaction, pair = max(candidates, key=lambda item: (item[0].split("-")[1], int(item[0].split("-")[2])))
+    return {"interaction_id": interaction, **pair}, []
+
+def _linked_id(text, prefix):
+    vals = re.findall(rf"\\b{prefix}-\\d+\\b", text)
+    return max(vals, key=lambda v: int(v.split("-")[1])) if vals else None
+
+def recover(start, repo_root="."):
     start = str(start).strip().upper()
-    if start not in PAIR:
+    if start not in {"IN", "OUT"}:
         return {"status": "BLOCKED", "reason": "start_must_be_IN_or_OUT", "start": start}
-    spec = PAIR[start]
     root = Path(repo_root).resolve()
-    failures, content = [], {}
-    paths = {spec["id"]: spec["path"], spec["paired_id"]: spec["paired_path"], **NODES}
-    for name, relative in paths.items():
+    pair, failures = discover_latest_pair(root)
+    if pair is None:
+        return {"resolver": "PALANG-LATEST-BIDIRECTIONAL-INTERACTION-RECOVERY-2.0.0", "status": "BLOCKED", "scope": "repository_state_only", "failures": failures}
+    incoming, outgoing = pair["IN"], pair["OUT"]
+    starting, paired = (incoming, outgoing) if start == "IN" else (outgoing, incoming)
+    interaction = pair["interaction_id"]
+    current_event_id = _event_id(incoming["text"]) or _event_id(outgoing["text"])
+    next_id = _linked_id(incoming["text"] + "\n" + outgoing["text"], "NEXT")
+    event_candidates = sorted((root / "docs/architecture/BEHAVIOR-TRACE").glob(f"{current_event_id}-*.md")) if current_event_id else []
+    event_path = event_candidates[0].relative_to(root).as_posix() if len(event_candidates) == 1 else None
+    next_candidates = sorted((root / ANCHOR_ROOT).glob(f"PALANG-0.0-{next_id}-*.md")) if next_id else []
+    checkpoint_path = next_candidates[0].relative_to(root).as_posix() if len(next_candidates) == 1 else None
+    nodes = {
+        "event": event_path,
+        "checkpoint": checkpoint_path,
+        "master": MASTER,
+        "queue": QUEUE,
+        "evidence": EVIDENCE,
+    }
+    content = {starting["id"]: starting["text"], paired["id"]: paired["text"]}
+    if not current_event_id or not event_path:
+        failures.append({"node": "event", "reason": "event_reference_missing_or_ambiguous", "event_id": current_event_id})
+    if not next_id or not checkpoint_path:
+        failures.append({"node": "checkpoint", "reason": "next_checkpoint_missing_or_ambiguous", "checkpoint_id": next_id})
+    for name, relative in nodes.items():
+        if not relative:
+            continue
         target = root / relative
         if not target.is_file():
             failures.append({"node": name, "reason": "missing_required_file", "path": relative})
@@ -46,38 +120,35 @@ def recover(start, repo_root):
             content[name] = target.read_text(encoding="utf-8")
         except (OSError, UnicodeError) as exc:
             failures.append({"node": name, "reason": "unreadable_required_file", "path": relative, "detail": str(exc)})
-    if spec["id"] in content and spec["paired_id"] in content:
-        a, b = content[spec["id"]], content[spec["paired_id"]]
-        if spec["paired_id"] not in a:
-            failures.append({"node": spec["id"], "reason": "paired_anchor_link_missing"})
-        if spec["id"] not in b:
-            failures.append({"node": spec["paired_id"], "reason": "reverse_pair_link_missing"})
-        if "INT-20261023-026" not in a or "INT-20261023-026" not in b:
-            failures.append({"node": "interaction_pair", "reason": "pair_identity_missing_or_mismatched"})
-    required = {
-        "event": ["IN-026", "OUT-026", "EVT-0122"],
-        "active_gate": ["IN-026", "OUT-026", "NEXT-024", "CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001.md", "INTEGRATION-QUEUE/README.md", "EVT-0120-RESOLVER-SMOKE-EVIDENCE.txt"],
-        "checkpoint": ["IN-026", "OUT-026", "EVT-0121", "EVT-0122", "Issue #20", "Issue #21"],
-        "master": ["EVT-0121", "EVT-0122", "IN-026", "OUT-026"],
-        "queue": ["EVT-0122", "IN-026", "OUT-026"],
-    }
-    for node, markers in required.items():
+    if "event" in content:
+        for marker in (incoming["id"], outgoing["id"]):
+            if marker not in content["event"]:
+                failures.append({"node": "event", "reason": "current_pair_reference_missing", "reference": marker})
+    if "checkpoint" in content:
+        for marker in (incoming["id"], outgoing["id"]):
+            if marker not in content["checkpoint"]:
+                failures.append({"node": "checkpoint", "reason": "current_pair_reference_missing", "reference": marker})
+    for node in ("master", "queue"):
         if node in content:
-            for marker in markers:
-                if marker not in content[node]:
-                    failures.append({"node": node, "reason": "required_reference_missing", "reference": marker})
+            for marker in (incoming["id"], outgoing["id"], current_event_id or "", next_id or ""):
+                if marker and marker not in content[node]:
+                    failures.append({"node": node, "reason": "current_graph_reference_missing", "reference": marker})
     graph = {
-        "starting_anchor": {"id": spec["id"], "path": spec["path"]},
-        "paired_anchor": {"id": spec["paired_id"], "path": spec["paired_path"]},
-        **{key: {"path": value, "present": key in content} for key, value in NODES.items()},
+        "starting_anchor": {"id": starting["id"], "path": starting["path"]},
+        "paired_anchor": {"id": paired["id"], "path": paired["path"]},
+        "event": {"id": current_event_id, "path": event_path, "present": "event" in content},
+        "active_gate": {"id": next_id, "path": checkpoint_path, "present": "checkpoint" in content},
+        "master": {"path": MASTER, "present": "master" in content},
+        "queue": {"path": QUEUE, "present": "queue" in content},
+        "evidence": {"path": EVIDENCE, "present": "evidence" in content},
     }
     return {
-        "resolver": "PALANG-BIDIRECTIONAL-INTERACTION-RECOVERY-1.0.0",
+        "resolver": "PALANG-LATEST-BIDIRECTIONAL-INTERACTION-RECOVERY-2.0.0",
         "status": "RECOVERED" if not failures else "PARTIAL",
         "scope": "repository_state_only",
-        "starting_anchor": spec["id"],
-        "paired_anchor": spec["paired_id"],
-        "interaction_id": "INT-20261023-026",
+        "starting_anchor": starting["id"],
+        "paired_anchor": paired["id"],
+        "interaction_id": interaction,
         "graph": graph,
         "open_gaps": OPEN_GAPS,
         "next_actions": NEXT_ACTIONS,
