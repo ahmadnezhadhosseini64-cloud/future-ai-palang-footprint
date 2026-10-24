@@ -44,3 +44,9 @@ Fresh-session recovery NOT RUN; host-wide automatic capture and external persist
 - Both directions recovered INT-20261024-033 with zero failures; the append-only ledger validated 4 records and its hash chain; terminal receipt reports SUCCESS.
 - Next: perform the uncoached fresh-session recovery from the registered handoff prompt; record the first response before giving corrective context. Then continue source-backed semantic identity adjudication and the one timestamp ambiguity review.
 - Current main may contain later automation evidence commits; the tested SHA is explicitly the one above, not an assumed alias for all later commits.
+
+
+## Durable receipt and current continuation boundary
+- The terminal receipt is preserved at [STATUS-20261024-EVT-0131-RUN-40061713327.json](../../architecture/BEHAVIOR-TRACE/STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40061713327.json).
+- Source run 40061713327 passed 71 tests on SHA `26615121fd50276c9c978814b183b21b20330135`; artifact 12547866288 was inspected.
+- Next operational step remains the uncoached fresh-session recovery. Repository CI cannot perform that test from within the same conversation; it must be run separately and its first response preserved.
