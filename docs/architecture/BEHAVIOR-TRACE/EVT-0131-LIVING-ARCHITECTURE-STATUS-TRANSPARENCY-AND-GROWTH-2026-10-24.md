@@ -120,3 +120,11 @@ Complete and read back the IN/OUT pair and all canonical graph edges; run the cu
 - Receipt status: SUCCESS; tested SHA `26615121fd50276c9c978814b183b21b20330135`; UTC `2026-10-24T04:16:59.508963Z`; Tehran `2026-10-24T07:46:59.508963+03:30`.
 - Source artifact: `12547866288`; ZIP SHA-256 `448465dc742c90b1408d725ccce8a17eaf6d3b845ca639ad742c709cbdeb629a`.
 - The receipt deliberately says ChatGPT UI heartbeat, host-wide capture and external persistence are not proven. The durable copy is a historical terminal receipt; it does not imply the current HEAD was tested.
+
+
+## Latest durable receipt — run 40061873837
+- [Durable status receipt JSON](./STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40061873837.json) preserves the actual terminal receipt emitted by CI.
+- [Behavior Hunter run 40061873837](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40061873837) SUCCESS; 71 tests passed on tested SHA `edd82d08311c03f0506c651e5c33d128a0d70a35`.
+- Artifact `12547921317` was downloaded and inspected; ZIP SHA-256 `c44071afab49df4bfb33141f432db059e21455f3161801f4d711efd34d690f1f`.
+- Both recovery directions: RECOVERED for IN-033 ↔ OUT-033, zero failures. Ledger: PASS, 4 records, hash chain verified. Candidate manifest: EVT-0131 CANDIDATE_READY / NOT_RUN. Proposal gate: READY_FOR_OWNER_REVIEW, owner decision PENDING, promotion false.
+- The exact tested SHA predates later evidence-only commits and this receipt-link commit. A subsequent workflow result is required before claiming the latest main SHA itself was tested.
