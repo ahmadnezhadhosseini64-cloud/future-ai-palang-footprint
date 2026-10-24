@@ -1,8 +1,10 @@
 # OUT-046 — First Living Master for Portable GPT-6/HAIF
 
+- User Point 0: [G6IP-RAHM-USER-POINT-0-20261024-003](./GPT6-RAHM-USER-POINT-0-20261024-003-FIRST-LIVING-MASTER-AND-PORTABILITY.md)
+
 - Stable ID: `G6IP-RAHM-OUT-046-20261024`
 - Production ID: `G6IP-OUT-046`
-- Version: 1.0.1
+- Version: 1.0.2
 - Status: REGISTERED / READ-BACK VERIFIED; fetched after write and content/IDs matched.
 - Output artifact: [FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md](../../portable/RAHM/FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md)
 - Current checkpoint: [CURRENT-054](./PALANG-0.0-CURRENT-20261024-054-FIRST-LIVING-MASTER.md)
