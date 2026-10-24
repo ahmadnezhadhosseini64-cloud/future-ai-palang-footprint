@@ -2,7 +2,8 @@
 - Stable ID: G6IP-RAHM-CURRENT-045-20261024
 - Production ID: G6IP-CURRENT-045
 - Version: 1.0.0
-- Status: REGISTERED; package artifact writes have receipts. Full package read-back and integrity reconciliation PENDING.
+- Status: REGISTERED / PACKAGE FILES READ-BACK FETCHED; digest and runtime validation PENDING.
+- Focused branch Point 0: [Host persistence Point 0](./GPT6-RAHM-HOST-PERSISTENCE-POINT-0-2026-10-24-001.md)
 - Parent: [CURRENT-044](./PALANG-0.0-CURRENT-20261024-044-RAHM-PROJECT-POINT-0.0.md)
 - Branch Point 0: [Rahm Point 0](./GPT6-RAHM-PROJECT-POINT-0-2026-10-24-001.md)
 - Interaction: [IN-037](./PALANG-0.0-IN-20261024-037-PORTABLE-RAHM-AND-HOST-PERSISTENCE.md) → [OUT-037](./PALANG-0.0-OUT-20261024-037-PORTABLE-RAHM-AND-HOST-PERSISTENCE.md) → [EVT-0145](../../architecture/BEHAVIOR-TRACE/EVT-0145-PORTABLE-RAHM-HOST-CAPABILITY-ARCHITECTURE-2026-10-24.md).
@@ -13,7 +14,7 @@
 - Next action: [NEXT-043](./PALANG-0.0-NEXT-20261024-043-HOST-PERSISTENCE-BACKGROUND-AND-EXPORT-PROOF.md)
 
 ## Current state
-The package architecture has been written as eight repository files. The manifest is deliberately draft and its digests are null until computed from exact bytes. Package-wide read-back, integrity checks, JSON validation and tests are pending.
+Eight package files were fetched after write. The export manifest now records Git blob IDs (content object identifiers, not SHA-256); SHA-256 byte-level verification and full digest reconciliation remain pending. JSON/schema validation and runtime tests are pending.
 
 ## Capability proof boundary
 - Durable repository storage is not host conversational memory.
