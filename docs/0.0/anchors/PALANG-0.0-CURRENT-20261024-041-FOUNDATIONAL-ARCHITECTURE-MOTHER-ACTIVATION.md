@@ -4,7 +4,7 @@
 - Production ID: `G6IP-CURRENT-041`
 - Version: 1.0.0
 - Role: Independent Point 0.0 / current recovery checkpoint
-- Status: REGISTERED / ACTIVE / LIVING / EVOLVABLE / RECOVERABLE; final read-back pending.
+- Status: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING / EVOLVABLE / RECOVERABLE.
 - Parent checkpoint: [CURRENT-040](./PALANG-0.0-CURRENT-20261024-040-GPT6-POINT-0.0-RECOVERY-CHECKPOINT.md)
 - Parent root: [CURRENT-039 — initial Point 0](./PALANG-0.0-CURRENT-20261024-039-GPT6-INITIAL-POINT-AND-ZERO-CHAIN.md)
 - Point 0.0 base: [G6IP-POINT-0.0-20261024-001](./GPT6-INTERACTIVE-PROJECT-POINT-0.0-CHECKPOINT-2026-10-24-001.md)
@@ -33,7 +33,7 @@ The foundational architecture principles are now designated as the governing, ve
 
 ## Evidence and open gates
 
-- Repository records: write initiated; exact read-back and cross-link matching pending.
+- Repository records: exact files fetched after write; identifiers and expected cross-links matched across the checkpoint, IN/OUT, event, 0.0 registry, Reference Index and both living masters.
 - Fresh-project adoption test: OPEN / NOT RUN.
 - Export and cold-start recovery: OPEN / NOT RUN.
 - Prototype: NOT BUILT unless a separate artifact proves otherwise.
@@ -47,4 +47,5 @@ Read CURRENT-041 → IN-033/OUT-033 → EVT-0141 → foundational mother NPFAP-2
 ## Time ledger
 
 - User message timestamp: UNKNOWN / UNVERIFIED.
-- Repository commit UTC and Tehran equivalent: to be appended only from actual Git commit metadata after the write.
+- Anchor creation commit: `0def375074fd6cb2e2a2b00cdec292d4a1640809`; UTC `2026-10-24T09:47:04Z`; Tehran `2026-10-24T13:17:04+03:30` (derived from the same commit instant). This is the anchor-creation time; later file modifications have their own commit timestamps.
+- User message timestamp: UNKNOWN / UNVERIFIED; do not infer it from the commit timestamp.
