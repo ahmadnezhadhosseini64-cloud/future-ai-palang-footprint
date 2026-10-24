@@ -2,7 +2,7 @@
 
 - Stable ID: `G6IP-RAHM-CURRENT-056-20261024`
 - Production ID: `G6IP-CURRENT-056`
-- Version: 1.0.1
+- Version: 1.0.2
 - Status: REGISTERED / READ-BACK VERIFIED for core chain and mother/index/queue writes; host and full graph gates remain OPEN.
 - Parent current: [CURRENT-055](./PALANG-0.0-CURRENT-20261024-055-FIRST-MASTER-READINESS.md)
 - User Point 0: [POINT-0/005](./GPT6-RAHM-USER-POINT-0-20261024-005-OUTPUT-CONTINUITY-AND-RECOVERY.md)
@@ -33,3 +33,13 @@ If there is a gap between user input and output, do not silently abandon the act
 
 ## Recovery instruction
 Resume from NEXT-050. Also keep NEXT-049 active for graph remediation and real-host transfer; do not close either without evidence and read-back.
+
+
+## Latest CI receipts — 2026-10-24
+- Portable conformance run [40120495687](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40120495687) SUCCESS for its declared scope: valid schema fixture 0 errors; invalid fixture rejected with 4 errors; exact-byte SHA-256 scan PASS for the 37-file manifest inventory; limited IN/OUT checkpoint-link recovery PASS; package build PASS.
+- Archive SHA-256 from that run: `bc1b564b032cfe23562041011aac5a192a827c208a3626cea4db6cdf0f061a43`. Package artifact: [haif-rahm-portable-package](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40120495687/artifacts/12571171396). This receipt predates this addendum's file change, so a final post-addendum digest rerun is required.
+- Structural audit [40120495708](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40120495708) completed the workflow but its content result is REVIEW_REQUIRED: 3,707 files including generated evidence; 5,495 local-link edges; 11 missing links; 61 stable-ID collision groups (60 unreviewed); 88 production-ID collision groups; 7 reference-ID collision groups; 36 event-number collision groups; 13 ambiguous parent edges. Several files also have missing/unknown timestamp formats; these are not safely inferable from the audit alone.
+- Other CI checks reported simulated acceptance/interruption recovery and a synthetic adapter restart/read-back pass. They do not prove this GPT-6 conversation has persistent memory, automatic capture, idle background execution, or import into a separate AI host.
+
+## Status boundary
+Repository write/read-back and declared CI checks are verified within their exact scopes. Full state recovery from IN and OUT, real clean-host/second-host import, durable host persistence, idle/background execution, and repository-wide link/ID/parent/timestamp remediation remain OPEN / NOT VERIFIED.
