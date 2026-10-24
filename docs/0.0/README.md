@@ -1302,3 +1302,8 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - [Receipt JSON](../architecture/BEHAVIOR-TRACE/STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40061713327.json) preserves the verified terminal workflow result.
 - Source run 40061713327 passed 71 tests on tested SHA `26615121fd50276c9c978814b183b21b20330135`; artifact 12547866288 inspected.
 - Fresh-session recovery remains NOT RUN.
+
+
+## Latest durable receipt for pair-033
+- [Status receipt](../architecture/BEHAVIOR-TRACE/STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40061873837.json).
+- Run 40061873837 passed 71 tests; tested SHA `edd82d08311c03f0506c651e5c33d128a0d70a35`; artifact SHA-256 `c44071afab49df4bfb33141f432db059e21455f3161801f4d711efd34d690f1f`.
