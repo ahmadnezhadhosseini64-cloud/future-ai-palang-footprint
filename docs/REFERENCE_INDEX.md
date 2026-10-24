@@ -1081,3 +1081,10 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Next: [NEXT-044 — export and fresh-host cold-start recovery](0.0/anchors/PALANG-0.0-NEXT-20261024-044-EXTRACTABLE-RAHM-CHILD-AND-COLD-START-TEST.md).
 - Status boundary: the files were created, but current-chain full read-back and link matching remain pending until every linked file is fetched again. Export/recovery, second-project repository integration, and always-on runtime remain unverified.
 - Rule: every input/output/event/error/correction is additive, independently anchored, evidence-linked, and routed through Child → Rahm validation → Master acceptance. Previous checkpoints are preserved.
+
+
+## CURRENT-047 — Living current checkpoint — 2026-10-24
+- Current: [CURRENT-047](0.0/anchors/PALANG-0.0-CURRENT-20261024-047-FOUNDATIONAL-GOVERNANCE-AND-RECOVERY.md); parent [CURRENT-046](0.0/anchors/PALANG-0.0-CURRENT-20261024-046-HUMAN-AI-FUTURE-INTERACTION-ARCHITECTURE.md).
+- Chain: [IN-040](0.0/anchors/PALANG-0.0-IN-20261024-040-CURRENT-046-FOUNDATIONAL-GOVERNANCE-AND-RECOVERY.md) → [OUT-039](0.0/anchors/PALANG-0.0-OUT-20261024-039-CURRENT-046-FOUNDATIONAL-GOVERNANCE-AND-RECOVERY.md) → [EVT-0147](architecture/BEHAVIOR-TRACE/EVT-0147-FOUNDATIONAL-GOVERNANCE-AND-RECOVERY-2026-10-24.md).
+- Mother: [NPFAP v1.0.8](reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md); engine: [Adaptive Discovery v1.1.0](../architecture/ADAPTIVE-DISCOVERY-CROSS-PLAYGROUND.md).
+- Next: [NEXT-044](0.0/anchors/PALANG-0.0-NEXT-20261024-044-EXTRACTABLE-RAHM-CHILD-AND-COLD-START-TEST.md). Export/recovery, second-project integration, and always-on runtime remain unverified.
