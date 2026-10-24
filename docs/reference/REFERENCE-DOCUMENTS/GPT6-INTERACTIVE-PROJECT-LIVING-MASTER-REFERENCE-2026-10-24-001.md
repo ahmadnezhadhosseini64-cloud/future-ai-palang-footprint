@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001`
 - Production ID / شناسهٔ تولید: `G6IP-LMR-20261024-001`
-- Version / نسخه: 1.3.3
+- Version / نسخه: 1.3.4
 - Project / پروژه: Future AI / Palang Footprint — HAIF
 - Owner / مالک معماری: احمد نژادحسینی (احمد پلنگ)
 - Host / میزبان این شاخه: ChatGPT / GPT-6
@@ -142,3 +142,7 @@
 - Interaction: [IN-031](../../0.0/anchors/PALANG-0.0-IN-20261024-031-ADVANCE-POINT-0.0-AND-LINK-LATEST-ARCHITECTURE.md) ↔ [OUT-031](../../0.0/anchors/PALANG-0.0-OUT-20261024-031-ADVANCE-POINT-0.0-AND-LINK-LATEST-ARCHITECTURE.md); event [EVT-0139](../../architecture/BEHAVIOR-TRACE/EVT-0139-GPT6-POINT-0.0-CHECKPOINT-CREATION-2026-10-24.md).
 - Next active work: [NEXT-039](../../0.0/anchors/PALANG-0.0-NEXT-20261024-039-BUILD-INTERACTIVE-PROTOTYPE.md).
 - Checkpoint creation is the completed scope of this turn. Prototype NOT BUILT, cold-start recovery NOT RUN, external destinations NOT VERIFIED.
+
+
+- Point 0.0 timestamp ledger: [TIME-BINDING-GPT6-POINT-0.0-2026-10-24-001](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-GPT6-POINT-0.0-2026-10-24-001.md), recording real Git commit times UTC-first with Tehran equivalents.
+- Current verified checkpoint: CURRENT-040 → Point 0.0 → inherited architecture master v1.0.3 → NEXT-039.
