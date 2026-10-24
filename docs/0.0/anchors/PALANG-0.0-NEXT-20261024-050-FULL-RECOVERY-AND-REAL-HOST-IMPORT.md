@@ -2,7 +2,7 @@
 
 - Stable ID: `G6IP-RAHM-NEXT-050-20261024`
 - Production ID: `G6IP-NEXT-050`
-- Version: 1.0.1
+- Version: 1.0.2
 - Status: OPEN / LIVING / NOT COMPLETE.
 - Parent: [CURRENT-056](./PALANG-0.0-CURRENT-20261024-056-OUTPUT-CONTINUITY-AND-RECOVERY.md)
 - User Point 0: [POINT-0/005](./GPT6-RAHM-USER-POINT-0-20261024-005-OUTPUT-CONTINUITY-AND-RECOVERY.md)
@@ -39,3 +39,12 @@ NEXT-050 remains OPEN/LIVING until every required criterion has evidence. Unsupp
 - [Conformance run 40120495687](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40120495687) passed schema fixtures, exact-byte SHA-256 scan for the 37-entry manifest, limited IN/OUT link/checkpoint equivalence, and package build. Archive hash: `bc1b564b032cfe23562041011aac5a192a827c208a3626cea4db6cdf0f061a43`. Because CURRENT-056/EVT-0158/NEXT-050 were subsequently updated, rerun conformance on the resulting manifest commit before treating these digests as final.
 - [Structural audit 40120495708](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40120495708) ended REVIEW_REQUIRED: 11 missing links; 60 unreviewed stable-ID collision groups; 88 production-ID collision groups; 7 reference-ID collision groups; 36 event-number collision groups; 13 ambiguous parent edges. Keep these open and adjudicate individually.
 - Synthetic acceptance/adapter runs are not equivalent to clean-host AI import. Real host import, full-state reconstruction, second-host import, actual persistence restart and idle/background execution remain OPEN / NOT VERIFIED.
+
+
+## New evidence-backed completed subgate
+- [x] Digest harness strictness corrected in commit `3f9b22f4ce53d7230c12d41b6143a66e3aa162a6`: missing/invalid expected hashes and duplicate manifest paths now fail; all entries require explicit `MATCH`.
+- [x] Run [40122001572](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40122001572) passed 37/37 exact-byte SHA-256 checks, schema valid/invalid fixtures, limited IN/OUT checkpoint-link equivalence and archive build. Archive SHA-256: `835531e59b3c1dcee0e0f689714fe377bca34c97b45597719e7dc3e30e4b2bb4`.
+- [ ] Full canonical state/evidence reconstruction independently from IN and OUT — OPEN.
+- [ ] Clean independent AI-host import / second-host import — OPEN / NOT VERIFIED.
+- [ ] Persistence after real host restart / idle-background execution — NOT VERIFIED.
+- [ ] Repository-wide link/ID/parent/timestamp triage — OPEN; latest audit https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40122001601 remains REVIEW_REQUIRED.
