@@ -58,11 +58,16 @@ jobs:
                   results.append({"path": entry["path"], "status": "MISSING"})
                   continue
               data = p.read_bytes()
-              results.append({"path": entry["path"], "bytes": len(data), "sha256": hashlib.sha256(data).hexdigest(), "git_blob_sha1_recorded": entry.get("git_blob_sha")})
+              digest = hashlib.sha256(data).hexdigest()
+              expected = entry.get("sha256")
+              if expected and expected not in ("PENDING", "PENDING_SHA256") and expected != digest:
+                  raise SystemExit(f"SHA256_MISMATCH {entry['path']}: expected {expected} got {digest}")
+              results.append({"path": entry["path"], "bytes": len(data), "sha256": digest, "expected_sha256": expected, "git_blob_sha1_recorded": entry.get("git_blob_sha")})
           output = {"algorithm":"SHA-256 over exact checked-out file bytes", "manifest_path":str(manifest_path), "manifest_version":manifest.get("version"), "results":results}
           Path("rahm-sha256-evidence.json").write_text(json.dumps(output, indent=2)+"\n", encoding="utf-8")
           print(json.dumps(output, indent=2))
-          if any(x["status"] == "MISSING" for x in results):
+          print("EXACT_BYTE_SHA256_SCAN=PASS" if all(x.get("status") != "MISSING" for x in results) else "EXACT_BYTE_SHA256_SCAN=FAIL")
+          if any(x.get("status") == "MISSING" for x in results):
               raise SystemExit("MANIFEST_INVENTORY_MISSING_FILES")
           PY
       - name: Upload conformance and digest evidence
