@@ -29,3 +29,11 @@
 
 ## معیار تکمیل
 بازخوانی پنج فایل جدید، تطبیق شناسه‌ها و پیوندها، ثبت زمان commitهای واقعی از Git و به‌روزرسانی دفتر ۰.۰ و نمایهٔ مرجع. پس از آن، نمونهٔ تعاملی اول باید به‌صورت قابل‌آزمون ساخته شود.
+
+
+## ثبت نهایی بازخوانی / Read-back verification
+- Initial registration commit: `53b7c2be9e180fd2fdd26a19ea2c792e29afaebd`.
+- Status: READ-BACK VERIFIED / CONTENT PRESENT / IDENTIFIERS MATCHED.
+- Verification method: fetched this exact repository path again after registration; file content and expected interaction identifiers were present. Related CURRENT-037, IN-027, OUT-027, EVT-0135 and master-reference identifiers were independently checked across the new files and both indexes.
+- Remaining boundary: this proves repository content/read-back and linked references only; it does not prove Buffer, Persistent Memory, Library, Dropbox or global automatic capture.
+- Canonical repository time is the actual last-change commit timestamp in UTC; the linked time-binding record will provide the final UTC and Tehran equivalents.
