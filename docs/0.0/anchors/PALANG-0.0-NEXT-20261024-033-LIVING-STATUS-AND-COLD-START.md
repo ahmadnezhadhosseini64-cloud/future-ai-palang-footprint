@@ -56,3 +56,10 @@ Fresh-session recovery NOT RUN; host-wide automatic capture and external persist
 - [Receipt JSON](../../architecture/BEHAVIOR-TRACE/STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40061873837.json) preserves the latest inspected CI terminal state.
 - Run 40061873837 passed 71 tests on tested SHA `edd82d08311c03f0506c651e5c33d128a0d70a35`; artifact 12547921317 inspected, ZIP SHA-256 `c44071afab49df4bfb33141f432db059e21455f3161801f4d711efd34d690f1f`.
 - Fresh-session recovery is still NOT RUN; do not call repository recovery equivalent to cross-session recovery.
+
+
+## Latest verified continuation — drift gate closed
+- Run 40062202639 passed 74 tests on tested SHA `e8cc599f00ee0ae5de437f13c26e15a8586d7fd5`; artifact 12547867197 inspected, SHA-256 `82cb1c535c70b9b4d97464d3307c4b5320021ed2efe9c0d61d0fdaf76b48f2db`.
+- Graph drift PASS (6 nodes, zero failures); both recovery directions RECOVERED; ledger 5 hash-linked records PASS; durable terminal receipt preserved.
+- **Next gate:** perform the uncoached fresh-session recovery using [the handoff prompt](../../architecture/BEHAVIOR-TRACE/EVT-0124-FRESH-SESSION-RECOVERY-PROMPT-2026-10-23.md). Capture the first response before corrections. Do not mark this gate complete until that separate test is run and its evidence is registered.
+- After the cold-start test, continue source-backed identity collision adjudication, template-aware link-audit cleanup and resolution of the single timestamp ambiguity. Issues #19/#20/#21 remain open until their acceptance criteria pass.
