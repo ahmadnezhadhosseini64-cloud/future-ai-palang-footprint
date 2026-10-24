@@ -18,3 +18,11 @@
 - Export SHA-256 verification: OPEN.
 - Persistent host memory, idle background, clean-context and second-host tests: NOT VERIFIED / NOT RUN.
 - Existing main HAIF CURRENT-052 and Rahm CURRENT-044/045 anchors remain preserved; no lineage overwrite.
+
+
+## Read-back reconciliation — 2026-10-24
+- Status: REGISTERED / READ-BACK VERIFIED for the new IN-038, OUT-038, EVT-0146, CURRENT-046, NEXT-044, five fallback architecture files, REFERENCE_INDEX, integration queue and three living mother documents. Exact paths were fetched after writes; key IDs and links were present.
+- The previous REFERENCE_INDEX 404 gap is CLOSED for this cycle: fetch succeeded before update; the index was updated with CURRENT-046/NEXT-044 and then fetched again. Returned blob SHA: `6fc34f2d9433280b0a9c247c20533d2405f38d76`; marker/link match confirmed.
+- JSON syntax checks: PASS for HOST_CAPABILITY_MANIFEST.json, INTERACTION_PAIR_SCHEMA.json and EXPORT_MANIFEST.json. This is syntax parsing only, not full JSON Schema conformance.
+- Still OPEN: SHA-256 byte-level manifest verification; JSON Schema valid/invalid fixture test; host memory restart test; idle background execution test; runtime installation; clean-host and second-host tests; comprehensive link audit.
+- No runtime capability is marked active merely because its architecture has been written.
