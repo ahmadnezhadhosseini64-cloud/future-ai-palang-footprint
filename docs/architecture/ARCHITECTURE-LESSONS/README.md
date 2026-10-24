@@ -185,3 +185,9 @@ State: six source-linked lesson files have been created and fetched back; this d
 - [Lesson](./lessons/LAL-20261024-013-CURRENT-POINT-ZERO-AND-LIVING-REGISTRATION.md) / [EVT-0134](../BEHAVIOR-TRACE/EVT-0134-CURRENT-POINT-ZERO-AND-LIVING-REGISTRATION-2026-10-24.md).
 - Current point / next 0.0: [CURRENT-036](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-036-USER-REQUEST-AND-LIVING-REGISTRATION.md) / [NEXT-036](../../0.0/anchors/PALANG-0.0-NEXT-20261024-036-HISTORIC-SOURCE-CENSUS-AND-COLD-START.md).
 - Rule: append-only point 0; separately anchored successor 0.0; prior work preserved; status claims require evidence.
+
+
+## SCRTC-B3-2026-10-24-001 — source-clause crosswalk batch 3
+- [Crosswalk batch 3](./SOURCE-CLAUSE-CROSSWALK-BATCH-3-2026-10-24-001.md): five full-source fetches and rule-family mapping for excavation gate, registration orchestrator, three-level command, every-input/output anchors, and every-interaction anchors.
+- Connected master version: ULCG v1.2.5; current point CURRENT-036; next checkpoint NEXT-036.
+- Status: provisional source-backed mapping; full census and runtime tests remain open.
