@@ -9,7 +9,7 @@
 - Prior checkpoint: [CURRENT-050](./PALANG-0.0-CURRENT-20261024-050-NEW-PROJECT-ARCHITECTURE-STATUS.md)
 - Output: [OUT-043](./PALANG-0.0-OUT-20261024-044-REPOSITORY-EXCAVATION-AND-REVIVAL.md)
 - Event: [EVT-0151](../../architecture/BEHAVIOR-TRACE/EVT-0151-REPOSITORY-EXCAVATION-LIVING-STATE-RECONCILIATION-2026-10-24.md)
-- Status: REGISTERED / READ-BACK PENDING at creation.
+- Status: REGISTERED / READ-BACK VERIFIED; exact repository path and content fetched after creation.
 
 ## Intent / قصد
 Excavate the canonical repository, recover its actual current state, detect stale continuation targets and open gaps, preserve historical anchors, correct the living path additively, and make execution status and evidence boundaries explicit.
