@@ -609,3 +609,11 @@ Current active gate remains [EVT-0122](../../architecture/BEHAVIOR-TRACE/EVT-012
 - Cross-Layer Integrity Gate [40058599467](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40058599467) PASS on the same source SHA.
 - Raw graph counters remain 60 Stable-ID, 71 Production-ID, 7 Reference-ID, 30 event-number collision groups; 11 exact duplicates; 13 ambiguous parent edges; 11 proposed aliases. Only 1 Stable-ID and 1 Production-ID group are role-adjudicated; others remain open.
 - Main subsequently received evidence-only commit `0d13be4be55aa6c29efb95ce00aa39f29314a19a`; do not conflate it with the tested source SHA.
+
+
+## Latest graph decision ingestion proof — 2026-10-24
+- [EVT-0128](../../architecture/BEHAVIOR-TRACE/EVT-0128-SEMANTIC-IDENTITY-ADJUDICATION-BATCH-1-2026-10-24.md) records two role decisions and the corrective failure trail.
+- Audit [40058848054](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40058848054) PASS on SHA `871e02fb87e2ff04db380dcad64fc1bd0939e8a6`; artifact `12546671470` inspected; SHA-256 `6c15a33dc10a9e6f83bde49f7f6c3ae4d01501e00e92f5ed43d086659a131199`.
+- The graph builder now consumes the machine-readable role-decision ledger, verifies current source hashes, annotates collision groups and individual occurrences, and preserves raw collision counts. Six unit tests passed; missing links 0; decode errors 0.
+- Cross-Layer Integrity Gate [40058848116](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40058848116) and Reconciliation Acceptance Test [40058848140](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40058848140) passed on the same SHA.
+- Open semantic findings remain: 59 Stable-ID groups and 70 Production-ID groups unreviewed, 7 reference-ID and 30 event-number collision groups, 11 exact duplicates, 13 ambiguous parents, 11 alias proposals and one timezone ambiguity. Fresh-session recovery remains NOT RUN; Issues #20/#21 remain OPEN.
