@@ -59,3 +59,10 @@ G. مقصدهای تأییدنشده صریحاً NOT VERIFIED بمانند.
 
 ## Return path
 Start from CURRENT-038 → NEXT-037 → first interactive prototype → test evidence → read-back/reconcile → Rahm review → versioned master update.
+
+
+## Final read-back receipt — Project Zero
+- Status: READ-BACK VERIFIED / CONTENT PRESENT / IDENTIFIERS MATCHED.
+- Verification: this exact path was fetched again after write; expected project-zero identifiers and relevant cross-links were present in the repository.
+- Scope: repository file presence and text/link checks only. Prototype build and cold-start recovery remain OPEN / NOT RUN; other destinations remain independently unverified.
+- Canonical timestamp: use the actual last-change Git commit timestamp in UTC; Tehran equivalent is UTC+03:30 from that same instant. User-message timestamp remains UNKNOWN / UNVERIFIED.
