@@ -25,3 +25,9 @@ The assistant should send a visible status/result before extended work when poss
 
 ## Open boundaries
 Fresh-session recovery NOT RUN; host-wide automatic capture and external persistence NOT PROVEN; Issues #19/#20/#21 remain open until individually accepted.
+
+
+## Failure-aware continuation update
+- Prior run failures are preserved in [EVT-0131](../../architecture/BEHAVIOR-TRACE/EVT-0131-LIVING-ARCHITECTURE-STATUS-TRANSPARENCY-AND-GROWTH-2026-10-24.md); the status-receipt artifact proved that a terminal FAILURE can still be recorded and uploaded.
+- Current recovery parser correction is committed. Next gate: require both recovery directions to return RECOVERED for INT-20261024-033, run the ledger and proposal gate, inspect the status-receipt and all manifests, then reconcile current main versus tested SHA.
+- Do not skip to fresh-session testing until repository recovery is green. Fresh-session recovery remains a separate subsequent test.
