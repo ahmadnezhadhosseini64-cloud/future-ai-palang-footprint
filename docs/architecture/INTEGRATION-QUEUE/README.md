@@ -1589,3 +1589,11 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - Next: BOART-FOLLOWUP-01, then uncoached fresh-session recovery. Daily mirror automation remains enabled.
 
 - Daily automation prompt refreshed after EVT-0133 to use EVT-0133/NEXT-035 as the current baseline. Automation ID `6ad9a407b9d481919c7145fbe4638dec` remains ENABLED; automation metadata update UTC `2026-10-24T05:04:36.539653Z`, derived Tehran `2026-10-24T08:34:36.539653+03:30`. This is automation metadata time, not a repository commit timestamp.
+
+
+## CURRENT-036 / NEXT-036 — current point 0 and resumable execution
+- [CURRENT-036](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-036-USER-REQUEST-AND-LIVING-REGISTRATION.md) is the new user-designated point 0.
+- Paired interaction anchors: [IN-026](../../0.0/anchors/PALANG-0.0-IN-20261024-026-REGISTER-CURRENT-POINT-0.md) / [OUT-026](../../0.0/anchors/PALANG-0.0-OUT-20261024-026-REGISTER-CURRENT-POINT-0.md); event/lesson EVT-0134 / LAL-20261024-013.
+- [NEXT-036](../../0.0/anchors/PALANG-0.0-NEXT-20261024-036-HISTORIC-SOURCE-CENSUS-AND-COLD-START.md) is the next 0.0 and carries forward NEXT-022–NEXT-035.
+- Issue #21 historic source census remains OPEN; Issue #20 runtime/cold-start remains OPEN; exact-final-main audit remains OPEN until a run is tied to the merged SHA.
+- Status rule: after each bounded unit, expose changed files, independent read-back, test result, open gaps and the next deterministic action. Silence is not evidence of background execution.
