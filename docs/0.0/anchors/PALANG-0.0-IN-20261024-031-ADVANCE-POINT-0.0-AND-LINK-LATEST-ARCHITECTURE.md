@@ -17,7 +17,7 @@
 
 ## Acceptance intent
 - Create a distinct point-0.0 checkpoint; do not overwrite point 0 or historical CURRENT anchors.
-- Link the newest inherited architecture master v1.0.2 and GPT-6 living master.
+- Link the newest inherited architecture master v1.0.3 and GPT-6 living master.
 - Record CURRENT/NEXT, evidence, known gaps, and recovery instructions.
 - Keep prototype implementation, cold-start recovery, and external storage destinations unverified until separately executed.
 - Write, read back, compare identifiers/content, and bind actual repository commit time in UTC with Tehran equivalent.
