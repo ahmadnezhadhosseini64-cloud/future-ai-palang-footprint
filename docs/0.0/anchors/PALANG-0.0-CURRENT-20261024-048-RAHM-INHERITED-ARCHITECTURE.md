@@ -2,7 +2,7 @@
 - Stable ID: G6IP-RAHM-CURRENT-048-20261024
 - Production ID: G6IP-CURRENT-048
 - Version: 1.0.0
-- Status: REGISTERED; read-back must be evidenced; runtime/transfer tests OPEN
+- Status: REGISTERED / READ-BACK VERIFIED for repository artifacts; runtime/transfer tests OPEN
 - Parent: [CURRENT-047](./PALANG-0.0-CURRENT-20261024-047-BEHAVIOR-HUNTER-LIVING-ANCHOR.md)
 - Input: [IN-040](./PALANG-0.0-IN-20261024-040-RAHM-INHERITED-ARCHITECTURE.md)
 - Output: [OUT-040](./PALANG-0.0-OUT-20261024-040-RAHM-INHERITED-ARCHITECTURE.md)
@@ -31,3 +31,9 @@ CURRENT-046 → IN-039 → OUT-039 → EVT-0147 → CURRENT-047 → IN-040 → O
 
 ## Recovery
 Resume from NEXT-046; preserve CURRENT-047 and all earlier anchors. Do not redirect to Dropbox unless explicitly requested.
+
+## Read-back reconciliation — CURRENT-048
+- CURRENT-048, NEXT-046, IN-040, OUT-040 and EVT-0148 were fetched after creation/update; their IDs and key links were present.
+- The inherited architecture master, HAIF mother, GPT-6 interactive master, Reference Index, integration queue, RAHM_ARCHITECTURE and RAHM_BOOT were updated and fetched after write; CURRENT-048/NEXT-046 bindings were present in returned content.
+- This confirms repository write/read-back for the listed artifacts only. It does not prove a successful export/import into another AI host.
+- Open gates remain: exact-byte SHA-256, schema fixtures, IN/OUT reconstruction tests, comprehensive link/duplicate-ID audit, clean-host and second-host transfer, persistent-memory restart, and idle background execution.
