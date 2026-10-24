@@ -2,19 +2,19 @@
 
 - Stable ID / شناسهٔ پایدار: `GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001`
 - Production ID / شناسهٔ تولید: `G6IP-LMR-20261024-001`
-- Version / نسخه: 1.3.6
+- Version / نسخه: 1.3.7
 - Project / پروژه: Future AI / Palang Footprint — HAIF
 - Owner / مالک معماری: احمد نژادحسینی (احمد پلنگ)
 - Host / میزبان این شاخه: ChatGPT / GPT-6
 - Status / وضعیت: REGISTERED / ACTIVE / LIVING / OPEN FOR GROWTH
 - Scope / دامنهٔ اثبات: فقط مخزن GitHub، تا وقتی مقصد دیگر جداگانه نوشته و بازخوانی نشده باشد.
-- Parent current point / نقطهٔ والد: `CURRENT-041`
-- Active next action / اقدام بعدی فعال: `NEXT-040` (historic NEXT-036 preserved in prior records)
-- Current interaction / تعامل جاری: `INT-20261024-034`
-- Input / ورودی: `IN-034`
-- Output / خروجی: `OUT-034`
-- Event / رویداد: `EVT-0142`
-- Current anchor / لنگر مستقل این شاخه: `CURRENT-042`
+- Parent current point / نقطهٔ والد: `CURRENT-043`
+- Active next action / اقدام بعدی فعال: `NEXT-041` (then NEXT-040; historic NEXT-036 preserved in prior records)
+- Current interaction / تعامل جاری: `INT-20261024-035`
+- Input / ورودی: `IN-035`
+- Output / خروجی: `OUT-035`
+- Event / رویداد: `EVT-0143`
+- Current anchor / لنگر مستقل این شاخه: `CURRENT-043`
 
 ## 1. تصمیم و هدف
 این سند، آغاز یک شاخهٔ تازه برای کارهای تعاملی و تصویری در GPT-6 را به معماری موجود Future AI / Palang Footprint متصل می‌کند. «پروژهٔ جدید» به معنی ساخت معماری موازیِ بی‌ارتباط یا حذف تاریخچه نیست؛ این یک شاخهٔ میزبان/محصول است که زیر حاکمیت سند مادر HAIF و زنجیرهٔ نقاط ۰.۰ رشد می‌کند.
@@ -158,7 +158,7 @@
 
 
 ## Latest living 0.0 node — foundational architecture mother / CURRENT-041
-- Foundational mother: [NPFAP-20261024-001](./NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md), version 1.0.1.
+- Foundational mother: [NPFAP-20261024-001](./NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md), version 1.0.2.
 - Current independent checkpoint: [CURRENT-041](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-041-FOUNDATIONAL-ARCHITECTURE-MOTHER-ACTIVATION.md), parent [CURRENT-040](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-040-GPT6-POINT-0.0-RECOVERY-CHECKPOINT.md).
 - Interaction: [IN-033](../../0.0/anchors/PALANG-0.0-IN-20261024-033-ACTIVATE-FOUNDATIONAL-ARCHITECTURE-MOTHER.md) ↔ [OUT-033](../../0.0/anchors/PALANG-0.0-OUT-20261024-033-ACTIVATE-FOUNDATIONAL-ARCHITECTURE-MOTHER.md); event [EVT-0141](../../architecture/BEHAVIOR-TRACE/EVT-0141-FOUNDATIONAL-ARCHITECTURE-MOTHER-ACTIVATION-2026-10-24.md).
 - This node is additive: CURRENT-039, CURRENT-040, architecture zero and earlier 0.0 anchors remain preserved.
@@ -167,3 +167,7 @@
 
 ## Hard-audit handoff — v1.3.6 / CURRENT-042
 The current audit/recovery anchor is [CURRENT-042](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-042-NEW-PROJECT-ARCHITECTURE-HARD-AUDIT.md), backed by [HA-001](./NEW-PROJECT-ARCHITECTURE-HARD-AUDIT-2026-10-24-001.md), [IN-034](../../0.0/anchors/PALANG-0.0-IN-20261024-034-HARD-AUDIT-NEW-PROJECT-ARCHITECTURE.md), [OUT-034](../../0.0/anchors/PALANG-0.0-OUT-20261024-034-HARD-AUDIT-NEW-PROJECT-ARCHITECTURE.md), and [EVT-0142](../../architecture/BEHAVIOR-TRACE/EVT-0142-NEW-PROJECT-ARCHITECTURE-HARD-AUDIT-2026-10-24.md). The governing cross-project mother is [NPFAP-20261024-001 v1.0.1](./NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md). Next action: [NEXT-040 — fresh-project adoption test](../../0.0/anchors/PALANG-0.0-NEXT-20261024-040-FRESH-PROJECT-ADOPTION-TEST.md). Prototype remains NOT BUILT; cold-start recovery NOT RUN; external destinations NOT VERIFIED.
+
+
+## Foundational completeness update — v1.3.7 / CURRENT-043
+The active branch now follows the v1.0.2 completeness/verifiability contract. Every material architectural claim must have observable acceptance criteria, a verification method, evidence, an explicit status and closure condition. Current interaction: IN-035 ↔ OUT-035 ↔ EVT-0143 ↔ CURRENT-043. Next: NEXT-041 foundational verification, then NEXT-040 fresh-project adoption. Prototype NOT BUILT; cold-start recovery NOT RUN; external destinations NOT VERIFIED.
