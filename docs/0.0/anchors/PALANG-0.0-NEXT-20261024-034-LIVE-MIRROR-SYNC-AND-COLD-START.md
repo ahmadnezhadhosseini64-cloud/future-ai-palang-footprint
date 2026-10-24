@@ -10,10 +10,10 @@
 - Library mirror: `/Future AI/Palang Footprint/Master Reference Vault/Reference Documents/LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md`
 
 ## Repository registration anchor
-- Event record final commit: `2b120b2a91fbcef6edcf8cebfd69c6d94aec0f33`.
-- Canonical UTC: `2026-10-24T04:40:02Z`.
-- Derived Asia/Tehran: `2026-10-24T08:10:02+03:30`.
-- Commit reference: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/2b120b2a91fbcef6edcf8cebfd69c6d94aec0f33
+- Event record final commit: `8ca21bfc6c76a37657a3dee2fd247dd49778729c`.
+- Canonical UTC: `2026-10-24T04:42:00Z`.
+- Derived Asia/Tehran: `2026-10-24T08:12:00+03:30`.
+- Commit reference: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/8ca21bfc6c76a37657a3dee2fd247dd49778729c
 - This time is the actual commit registration time, not the Library read-back operation time.
 
 ## Verified facts
