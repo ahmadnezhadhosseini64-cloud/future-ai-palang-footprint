@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001`
 - Production ID / شناسهٔ تولید: `NPFAP-20261024-001`
-- Version / نسخه: 1.0.6
+- Version / نسخه: 1.0.7
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING / EVOLVABLE / EXTRACTABLE / RECOVERY-ORIENTED
 - Scope / دامنه: الگوی پایه برای هر پروژهٔ جدید در خانوادهٔ Future AI / Palang Footprint / HAIF و شاخه‌های محصول/میزبان آن؛ با سازگارسازی مستند برای پروژه‌های دیگر
 - Source anchor / منشأ: [G6IP-ARCH-ZERO-20261024-001](../../0.0/anchors/PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md)
@@ -261,4 +261,26 @@ REGISTERED is not READ-BACK VERIFIED; READ-BACK VERIFIED is not VALIDATED; VALID
 
 ### Continuation / ادامه
 Continue from CURRENT-046. First read back and match all IN/OUT/EVT/CURRENT/NEXT records and update the reference index. Then produce a verifiable export artifact and execute the NEXT-044 fresh-host recovery protocol. Keep the second-project connection pending until its exact repository is identified. Do not resume Dropbox unless explicitly reopened.
+
+
+
+## Living Mother Update — Read-back checkpoint and NEXT-044 — 2026-10-24
+
+- **Additive version / نسخهٔ افزایشی:** 1.0.7
+- **Current anchor / نقطهٔ جاری:** [CURRENT-046](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-046-HUMAN-AI-FUTURE-INTERACTION-ARCHITECTURE.md)
+- **Output / خروجی:** [OUT-038](../../0.0/anchors/PALANG-0.0-OUT-20261024-038-HUMAN-AI-FUTURE-INTERACTION-ARCHITECTURE.md)
+- **Event / رویداد:** [EVT-0146](../../architecture/BEHAVIOR-TRACE/EVT-0146-HUMAN-AI-FUTURE-INTERACTION-ARCHITECTURE-2026-10-24.md)
+- **Next / گام بعدی:** [NEXT-044](../../0.0/anchors/PALANG-0.0-NEXT-20261024-044-EXTRACTABLE-RAHM-CHILD-AND-COLD-START-TEST.md)
+- **Index / فهرست مرجع:** [REFERENCE_INDEX](../../REFERENCE_INDEX.md)
+
+### Read-back result / نتیجهٔ بازخوانی
+OUT-038, EVT-0146, CURRENT-046, NEXT-044, this mother document, and the reference index were fetched from the repository after writes. Their expected record IDs and the key current-chain references are present. This is repository content read-back, not a claim that every browser link was traversed or that a recovery test passed.
+
+OUT-038، EVT-0146، CURRENT-046، NEXT-044، این سند مادر و فهرست مرجع پس از نوشتن از مخزن دوباره خوانده شدند. شناسه‌های مورد انتظار و پیوندهای اصلی زنجیره در محتوا موجودند. این نتیجه فقط بازخوانی محتوای مخزن است؛ به معنی عبور همهٔ پیوندها در مرورگر یا موفقیت آزمون بازیابی نیست.
+
+### Open gates / دروازه‌های باز
+- NEXT-044 export artifact and fresh-host cold-start recovery test: OPEN / NOT RUN.
+- Second project canonical repository and mother path: NOT IDENTIFIED; dual-repository integration is not claimed.
+- Always-on discovery, scheduled runs, background execution, and notifications: NOT VERIFIED.
+- Child → Rahm → Master remains mandatory: no candidate is promoted without evidence and acceptance checks.
 
