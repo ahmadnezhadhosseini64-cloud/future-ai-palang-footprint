@@ -1195,3 +1195,11 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Proof boundary: fallback architecture is specified, not deployed; memory, idle background, runtime installation, SHA-256, schema and second-host tests remain NOT VERIFIED / NOT RUN.
 
 - Read-back reconciliation: CURRENT-046 and its linked records were fetched after write; principal IDs/links matched. Prior 404 is resolved for this cycle. Runtime and integrity gates remain open.
+
+
+## CURRENT-047 — Behavior Hunter / چشم پلنگ
+- Current anchor: [CURRENT-047](0.0/anchors/PALANG-0.0-CURRENT-20261024-047-BEHAVIOR-HUNTER-LIVING-ANCHOR.md).
+- Interaction lineage: [IN-039](0.0/anchors/PALANG-0.0-IN-20261024-039-BEHAVIOR-HUNTER-LIVING-RULE.md) → [OUT-039](0.0/anchors/PALANG-0.0-OUT-20261024-039-BEHAVIOR-HUNTER-LIVING-RULE.md) → [EVT-0147](architecture/BEHAVIOR-TRACE/EVT-0147-BEHAVIOR-HUNTER-LIVING-RULE-AND-CHECKPOINT-2026-10-24.md).
+- Next 0.0 execution queue: [NEXT-045](0.0/anchors/PALANG-0.0-NEXT-20261024-045-BEHAVIOR-HUNTER-TEST-AND-OPEN-GATES.md) — OPEN / IN PROGRESS.
+- Rule: implementation/read-back evidence controls status; documentation alone is not active capability; every unrun/failed test remains open with ID, reason and recovery.
+- Behavior Hunter automatic runtime, schema fixtures, SHA-256, full link/ID audit, persistent-memory restart, idle background and second-host tests remain OPEN / NOT RUN.
