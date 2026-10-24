@@ -1514,3 +1514,9 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - Goal: record terminal SUCCESS/FAILURE/CANCELLED plus run ID, tested SHA and UTC/Tehran timestamps, including when an earlier step fails.
 - Boundary: a repository receipt does not create a real-time ChatGPT UI heartbeat, does not capture every conversation, and does not prove external persistence. CI and artifact inspection for this change are pending.
 - Next: inspect the run and status receipt, reconcile tested SHA versus current main, then perform the uncoached fresh-session test. Issues #19/#20/#21 stay open.
+
+
+## EVT-0131 CI closure — run 40061440975
+- SUCCESS on SHA `2634f15abf79cd546d2ebea2e152a3f0871dd1fb`; artifact 12548065100 inspected (SHA-256 `38047c11733e086471a542c6ee346eae3feb75e37d8cee8a767ecb9f31b37318`).
+- Both directions recovered IN-033/OUT-033, EVT-0131 and NEXT-033; zero failures; 71 tests passed; ledger PASS; terminal receipt SUCCESS.
+- Remaining: fresh-session recovery NOT RUN; Issues #19/#20/#21 OPEN; external persistence and host-wide capture NOT PROVEN.
