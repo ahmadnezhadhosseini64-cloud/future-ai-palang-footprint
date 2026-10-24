@@ -731,3 +731,10 @@ Current active gate remains [EVT-0122](../../architecture/BEHAVIOR-TRACE/EVT-012
 - Run [40062120276](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40062120276) passed 74 tests on tested SHA `e82839c679b52fb646824235db59092fd129148e`; artifact `12546884666` inspected, ZIP SHA-256 `e45208b1bd2b63fa4e30fedcf27b9701532b8c85feee298ae18cbd6105c0d332`.
 - Drift manifest PASS: 6 canonical graph nodes checked, zero failures; both pair recovery directions RECOVERED. Ledger version 1.4.0 is appended; next CI must verify its 5-record hash chain.
 - The checker is read-only and repository-scoped. Fresh-session recovery and external persistence remain unproven.
+
+
+## Latest architecture-growth verification — run 40062202639
+- [Durable status receipt](../../architecture/BEHAVIOR-TRACE/STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40062202639.json).
+- [Run 40062202639](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40062202639) passed 74 tests on tested SHA `e8cc599f00ee0ae5de437f13c26e15a8586d7fd5`; artifact 12547867197 inspected, ZIP SHA-256 `82cb1c535c70b9b4d97464d3307c4b5320021ed2efe9c0d61d0fdaf76b48f2db`.
+- Ledger PASS: 5 hash-linked versions, zero errors, no history rewrite. Graph drift PASS: six nodes, zero failures. Both recovery directions RECOVERED.
+- Fresh-session recovery remains NOT RUN; Issues #19/#20/#21 remain OPEN; host-wide capture and external persistence NOT PROVEN.
