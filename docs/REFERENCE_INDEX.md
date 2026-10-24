@@ -17,7 +17,7 @@
 | EVT30-2026-10-20-001 | `docs/architecture/BEHAVIOR-TRACE/EVT-0030-CURRENT-0.0-AND-GAP-AUDIT-2026-10-20.md` | ممیزی نقطهٔ ۰.۰، نیاز به چهارتایی‌کردن، و شکاف‌های باز | Repository file read-back matched; cross-index reconciliation pending |
 | F0CBG-2026-10-20-001 | `docs/reference/REFERENCE-DOCUMENTS/FOUR-LINKED-0.0-CHAIN-AND-BEHAVIORAL-DISCOVERY-GATE-2026-10-20-001.md` | زنجیرهٔ مرجع چهارتایی نقاط ۰.۰ و دروازهٔ کشف/اعتبارسنجی رفتاری پیش از ارتقای معماری | Repository write and read-back verified; 0.0 registry, behavior trace, and queue linked; full historical reconciliation pending |
 | UIALAC-2026-10-20-001 | `docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001.md` | قرارداد جامع لنگرگذاری، ثبت، مستندسازی، سه سطح ماندگاری و تداوم زنده | REPOSITORY WRITE + READ-BACK VERIFIED; architecture index linked; Buffer/Persistent Memory and automatic execution unverified |
-| NPFAP-20261024-001 | `docs/reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md` | اصول بنیادین برای پروژه‌های جدید؛ اصول قابل‌آزمون، شواهد، وضعیت‌ها، بازیابی و تکامل | v1.0.2; final exact read-back to be reconciled; NEXT-041 OPEN / NOT RUN |
+| NPFAP-20261024-001 | `docs/reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md` | اصول بنیادین برای پروژه‌های جدید؛ اصول قابل‌آزمون، شواهد، وضعیت‌ها، بازیابی و تکامل | v1.0.2; exact repository read-back verified; principle-by-principle audit NEXT-041 OPEN / NOT RUN |
 | UIAWR-2026-10-20-001 | `docs/reference/REFERENCE-DOCUMENTS/UNIVERSAL-INTERACTION-ANCHOR-AND-WORKFLOW-RECOVERY-2026-10-20-001.md` | سند مرجع جامع لنگر تعامل، حاکمیت ثبت/زمان و مسیر واقعی بازیابی دو گردش کاری | ACTIVE / LIVING; workflow fixes committed; latest fresh runs 39454598933 and 39454598935 PASS / SUCCESS; artifacts and durable evidence read-back verified |
 | SRC-2026-08-29-001 | `docs/STABLE_RETRIEVAL_CORE.md` | Stable external retrieval contract | VERIFIED / ACTIVE |
 | RRT-2026-08-29-001 | `docs/RETRIEVAL_RUNTIME.md` | Operational retrieval sequence | VERIFIED / ACTIVE |
@@ -1035,6 +1035,6 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 
 
 ## Foundational-principles completeness — CURRENT-043
-| G6IP-CURRENT-043 | `0.0/anchors/PALANG-0.0-CURRENT-20261024-043-FOUNDATIONAL-PRINCIPLES-COMPLETENESS.md` | نقطهٔ جاری تکمیل اصول بنیادین و بازیابی | ACTIVE / LIVING; read-back pending |
-| G6IP-EVT-0143 | `architecture/BEHAVIOR-TRACE/EVT-0143-FOUNDATIONAL-PRINCIPLES-COMPLETION-2026-10-24.md` | رویداد تکمیل اصول بنیادین و کنترل جامعیت | READ-BACK pending final reconciliation |
+| G6IP-CURRENT-043 | `0.0/anchors/PALANG-0.0-CURRENT-20261024-043-FOUNDATIONAL-PRINCIPLES-COMPLETENESS.md` | نقطهٔ جاری تکمیل اصول بنیادین و بازیابی | READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING |
+| G6IP-EVT-0143 | `architecture/BEHAVIOR-TRACE/EVT-0143-FOUNDATIONAL-PRINCIPLES-COMPLETION-2026-10-24.md` | رویداد تکمیل اصول بنیادین و کنترل جامعیت | READ-BACK VERIFIED / IDENTIFIERS MATCHED |
 | G6IP-NEXT-041 | `0.0/anchors/PALANG-0.0-NEXT-20261024-041-FOUNDATIONAL-PRINCIPLES-VERIFICATION.md` | آزمون اجرایی کامل‌بودن اصول، نسخه‌ها و پیوندها | OPEN / NOT RUN |
