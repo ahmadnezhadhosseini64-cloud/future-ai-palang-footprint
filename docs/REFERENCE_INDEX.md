@@ -1203,3 +1203,12 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Next 0.0 execution queue: [NEXT-045](0.0/anchors/PALANG-0.0-NEXT-20261024-045-BEHAVIOR-HUNTER-TEST-AND-OPEN-GATES.md) — OPEN / IN PROGRESS.
 - Rule: implementation/read-back evidence controls status; documentation alone is not active capability; every unrun/failed test remains open with ID, reason and recovery.
 - Behavior Hunter automatic runtime, schema fixtures, SHA-256, full link/ID audit, persistent-memory restart, idle background and second-host tests remain OPEN / NOT RUN.
+
+
+## CURRENT-048 — RAHM inherited architecture / exportable recovery
+- Current checkpoint: [CURRENT-048](0.0/anchors/PALANG-0.0-CURRENT-20261024-048-RAHM-INHERITED-ARCHITECTURE.md).
+- Interaction chain: [IN-040](0.0/anchors/PALANG-0.0-IN-20261024-040-RAHM-INHERITED-ARCHITECTURE.md) → [OUT-040](0.0/anchors/PALANG-0.0-OUT-20261024-040-RAHM-INHERITED-ARCHITECTURE.md) → [EVT-0148](architecture/BEHAVIOR-TRACE/EVT-0148-RAHM-INHERITED-ARCHITECTURE-AND-EXPORTABLE-RECOVERY-2026-10-24.md).
+- Portable RAHM: [RAHM_BOOT](portable/RAHM/RAHM_BOOT.md), [RAHM_ARCHITECTURE](portable/RAHM/RAHM_ARCHITECTURE.md).
+- Inherited architecture master: [GPT6 inherited master](reference/REFERENCE-DOCUMENTS/GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md).
+- Next 0.0: [NEXT-046](0.0/anchors/PALANG-0.0-NEXT-20261024-046-RAHM-PORTABILITY-VALIDATION.md) — OPEN / IN PROGRESS.
+- Open gates: export-byte SHA-256, JSON Schema positive/negative fixtures, IN/OUT recovery, link/duplicate-ID audit, clean-host/second-host transfer, persistence restart and idle background tests.
