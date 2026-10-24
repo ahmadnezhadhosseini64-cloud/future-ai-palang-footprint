@@ -201,3 +201,6 @@ next_action: "<deterministic next step>"
 - Next required action: [NEXT-049](../../0.0/anchors/PALANG-0.0-NEXT-20261024-049-REAL-HOST-TRANSFER-AND-GRAPH-AUDIT.md).
 - Run [40115178748](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40115178748) verifies only its defined CI scope. Real host import, full state recovery, persistence and background execution remain OPEN / NOT VERIFIED.
 - Permanent lesson: preserve a failed run; record cause and correction; rerun and read back evidence; never promote partial success into a broader claim.
+
+## User return anchor — Point 0/004
+- [Point 0/004](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-004-TEST-HARNESS-AND-FIRST-MASTER-READINESS.md) is the current user-designated return point for first-master readiness and harness learning. Prior Point 0/003 remains preserved.
