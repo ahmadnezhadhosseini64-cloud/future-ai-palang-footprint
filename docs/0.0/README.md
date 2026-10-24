@@ -1356,3 +1356,11 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - Open work remains: full historic census/conflict adjudication (Issue #21), runtime pair/cold-start recovery (Issue #20), and exact-final-main audit evidence.
 
 - Full source-crosswalk ID: `SCRTC-B3-2026-10-24-001`.
+
+
+## CURRENT-037 — GPT-6 interactive project start
+- Current 0.0: [CURRENT-037](anchors/PALANG-0.0-CURRENT-20261024-037-GPT6-INTERACTIVE-PROJECT-START.md).
+- Pair: [IN-027](anchors/PALANG-0.0-IN-20261024-027-GPT6-INTERACTIVE-PROJECT-START.md) ↔ [OUT-027](anchors/PALANG-0.0-OUT-20261024-027-GPT6-INTERACTIVE-PROJECT-START.md).
+- Event: [EVT-0135](../architecture/BEHAVIOR-TRACE/EVT-0135-GPT6-INTERACTIVE-PROJECT-START-2026-10-24.md).
+- Living master: [GPT6 interactive project reference](../reference/REFERENCE-DOCUMENTS/GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001.md).
+- Parent CURRENT-036 and NEXT-036 remain preserved. Next: read back and reconcile these files, bind actual commit times UTC/Tehran, then build and test the first small interactive experience. Historic source census and cold-start recovery remain open.
