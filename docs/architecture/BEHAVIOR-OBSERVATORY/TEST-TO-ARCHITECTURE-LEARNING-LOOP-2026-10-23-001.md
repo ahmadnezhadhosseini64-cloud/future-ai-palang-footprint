@@ -219,3 +219,9 @@ Each proposed insight includes:
 - Regression tests cover complete graph, missing master link and missing durable receipt.
 - Run 40062120276: 74 tests passed; `living-graph-drift.json` returned PASS, six nodes checked, zero failures; artifact ZIP SHA-256 `e45208b1bd2b63fa4e30fedcf27b9701532b8c85feee298ae18cbd6105c0d332`.
 - Ledger 1.4.0 records the capability append-only; next CI must validate the five-record chain. This is repository drift detection only, not cross-session recovery or external persistence.
+
+
+## 13. Drift-detector receipt preservation
+- The terminal receipt from run 40062120276 is now stored as a repository JSON file under `docs/architecture/BEHAVIOR-TRACE/STATUS-RECEIPTS/`.
+- The run passed 74 tests; the drift detector returned PASS for six canonical graph nodes with zero failures.
+- This is an additive, immutable proof record. It does not replace prior receipts or imply the ledger 1.4.0 row was validated by that earlier run.
