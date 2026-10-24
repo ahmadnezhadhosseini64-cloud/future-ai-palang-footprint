@@ -33,3 +33,10 @@ For the complete executable interaction, architecture, registration, evidence, o
 - Event record: [EVT-0014](docs/architecture/BEHAVIOR-TRACE/EVT-0014-CANONICAL-COMPLETE-PATH-ARCHIVE-2026-10-19.md)
 
 This master is the single entry point for continuation; earlier anchors and source records remain preserved. External destinations and open operational items are not considered complete without destination-specific evidence.
+
+
+## GPT-6 interactive branch — initial point 0
+- [Initial Point 0 — GPT-6 interactive project](docs/0.0/anchors/GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001.md)
+- [GPT-6 living master v1.3.0](docs/reference/REFERENCE-DOCUMENTS/GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001.md)
+- [Next checkpoint: point 0.0](docs/0.0/anchors/PALANG-0.0-NEXT-20261024-038-DEFINE-POINT-0-THEN-0.0.md)
+- This branch inherits Future AI / Palang Footprint and HAIF registration, evidence, behavioral, time-binding and recoverability rules. Its registration does not assert that a prototype, point 0.0, cold-start test, or external destination is complete.
