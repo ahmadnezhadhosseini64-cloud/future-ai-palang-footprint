@@ -186,3 +186,9 @@ The package must declare host capabilities and limitations, retain IN/OUT/event 
 - Capability fallback folder: [HOST-CAPABILITY-FALLBACK](../../architecture/HOST-CAPABILITY-FALLBACK/README.md). It defines authorized external runtime, persistence adapter, scheduler adapter and conformance tests, but does not itself install or execute software.
 - Next: [NEXT-044](../../0.0/anchors/PALANG-0.0-NEXT-20261024-044-FALLBACK-TEST-AND-INDEX-RECONCILIATION.md) — OPEN / NOT RUN.
 - Prior REFERENCE_INDEX fetch failure is now recoverable; post-update marker/link read-back remains a required gate. All host runtime and cross-host tests remain open until evidence is retained.
+
+
+## Verification update — CURRENT-046 reconciliation
+- New branch artifacts, fallback architecture, index, queue and living mothers were fetched after writes; current IDs and links matched.
+- REFERENCE_INDEX post-update read-back succeeded; the previous 404 is resolved for this cycle.
+- JSON syntax parse passed for three package JSON files. SHA-256, schema fixtures, persistent-memory restart, idle background, runtime deployment and cross-host conformance remain OPEN / NOT RUN.
