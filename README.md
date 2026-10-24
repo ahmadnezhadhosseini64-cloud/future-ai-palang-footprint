@@ -44,4 +44,4 @@ This master is the single entry point for continuation; earlier anchors and sour
 - [Next active step NEXT-039 — interactive prototype](docs/0.0/anchors/PALANG-0.0-NEXT-20261024-039-BUILD-INTERACTIVE-PROTOTYPE.md)
 - [Inherited architecture living master — HAIF → GPT-6](docs/reference/REFERENCE-DOCUMENTS/GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md) — G6IP-IAM-20261024-001 v1.0.1; registered and read-back verified.
 - [Next checkpoint: point 0.0](docs/0.0/anchors/PALANG-0.0-NEXT-20261024-038-DEFINE-POINT-0-THEN-0.0.md)
-- This branch inherits Future AI / Palang Footprint and HAIF registration, evidence, behavioral, time-binding and recoverability rules. Its registration does not assert that a prototype, point 0.0, cold-start test, or external destination is complete.
+- This branch inherits Future AI / Palang Footprint and HAIF registration, evidence, behavioral, time-binding and recoverability rules. Point 0.0 is now registered and linked to CURRENT-040; prototype remains NOT BUILT, cold-start test NOT RUN, and external destinations NOT VERIFIED.
