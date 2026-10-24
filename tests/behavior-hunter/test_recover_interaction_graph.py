@@ -95,8 +95,8 @@ class LatestPairRecoveryTests(unittest.TestCase):
 
     def test_current_result_event_wins_over_prior_event_reference(self):
         text = (
-            "- Previous event: [EVT-0130](./EVT-0130-prior.md)\\n"
-            "- Result event: [EVT-0131](./EVT-0131-current.md)\\n"
+            "- Previous event: [EVT-0130](./EVT-0130-prior.md)\n"
+            "- Result event: [EVT-0131](./EVT-0131-current.md)\n"
         )
         self.assertEqual(_event_id(text), "EVT-0131")
 
