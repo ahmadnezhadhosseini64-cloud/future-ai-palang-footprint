@@ -1454,3 +1454,9 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - Audit PASS on SHA `ffc4fb8136cdd4168910f8c0ba58d6619fddfa13`; artifact `12529305164` inspected; SHA-256 `20baa0684f3a99b612b8be6ebf03fc21b381d194ac11bbe51f7a493cb69aa5c6`.
 - Zero missing local links. Graph has 60 Stable ID, 71 Production ID, 7 reference-ID, 30 event-number collision groups, 11 exact duplicate groups, 13 ambiguous parent edges, 11 proposed aliases, and one unresolved timezone.
 - [NEXT-028](../../0.0/anchors/PALANG-0.0-NEXT-20261023-028-POST-REPAIR-AUDIT-AND-SEMANTIC-RECONCILIATION.md) active for source-backed semantic reconciliation; no bulk merge/rename/delete.
+
+
+## Semantic reconciliation continuation — EVT-0128
+- [EVT-0128](../BEHAVIOR-TRACE/EVT-0128-SEMANTIC-IDENTITY-ADJUDICATION-BATCH-1-2026-10-24.md): one source-backed Stable-ID role adjudication recorded in H0CALDR; event trace and governing reference retained as distinct roles.
+- [NEXT-029](../../0.0/anchors/PALANG-0.0-NEXT-20261024-029-SEMANTIC-REVIEW-BATCH-2-AND-FRESH-SESSION.md) active: continue semantic review batch 2, make reviewed decisions visible to the audit, and run fresh-session recovery separately.
+- Structural collision counters are not reduced by the decision itself; all other collision/alias/parent findings remain open. No bulk rename, merge or delete.
