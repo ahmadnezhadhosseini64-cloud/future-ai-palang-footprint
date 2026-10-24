@@ -19,7 +19,7 @@ Each time below is from actual GitHub commit metadata for the artifact's last-ch
 | IN-026 | [34e36c7](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/34e36c7800e050ae17ca78d6c6caaa2f069c4c89) | 2026-10-24T06:04:45Z | 2026-10-24T09:34:45+03:30 |
 | OUT-026 | [23a46a7](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/23a46a77aa8139d18e8e754f34ecc16f6b69077a) | 2026-10-24T06:04:50Z | 2026-10-24T09:34:50+03:30 |
 | NEXT-036 | [65e7403](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/65e74034576d1e58e2f61833ae6cddc5c005b7ad) | 2026-10-24T06:04:54Z | 2026-10-24T09:34:54+03:30 |
-| EVT-0134 | [3c51086](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/3c5108600a344c5fc7ee4d257fd4634b8c8e1b07) | 2026-10-24T06:04:59Z | 2026-10-24T09:34:59+03:30 |
+| EVT-0134 | [3b22891](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/3b22891824a1894076bfad533cf3d8786c518624) | 2026-10-24T06:09:54Z | 2026-10-24T09:39:54+03:30 |
 | LAL-20261024-013 | [e277d10](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/e277d10e1214a2785d5037bd3de23572ba50de91) | 2026-10-24T06:00:16Z | 2026-10-24T09:30:16+03:30 |
 | ULCG master v1.2.4 | [9aef79d](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/9aef79d3662a609569fefa8c29d92c3a8d90ef59) | 2026-10-24T06:05:04Z | 2026-10-24T09:35:04+03:30 |
 | Reference index | [3c8b352](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/3c8b3527af37f2e6149f75c1a5c5e151671c757a) | 2026-10-24T06:01:24Z | 2026-10-24T09:31:24+03:30 |
@@ -27,10 +27,14 @@ Each time below is from actual GitHub commit metadata for the artifact's last-ch
 | Behavior trace index | [adcf78c](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/adcf78cb347762a08fe5cfdc8ac038e172ce73e4) | 2026-10-24T06:05:08Z | 2026-10-24T09:35:08+03:30 |
 | Lesson registry | [4d034c7](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/4d034c7f09bae1760aa8cdc13e99496a39cf0e7f) | 2026-10-24T06:01:38Z | 2026-10-24T09:31:38+03:30 |
 | Source-rule-component-test map | [91ea821](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/91ea82171d2efffbb87408c51d3a38d95d1b8f69) | 2026-10-24T06:01:42Z | 2026-10-24T09:31:42+03:30 |
-| Integration queue | [f5121b9](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/f5121b9d4e59b5767b8eed51fae2d1eda17606ce) | 2026-10-24T06:01:47Z | 2026-10-24T09:31:47+03:30 |
+| Integration queue | [c548b8e](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/c548b8eb62dc4b46b892393476396b32446456de) | 2026-10-24T06:09:59Z | 2026-10-24T09:39:59+03:30 |
 | Initial-model master | [c64a919](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/c64a9199de85af5da0ec85cdf8d49f8cb1d78cf7) | 2026-10-24T06:01:52Z | 2026-10-24T09:31:52+03:30 |
 | Audit script | [b6e5335](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/b6e533505f2ed3787b9a041e0d2f83b0cdba6a01) | 2026-10-24T06:07:43Z | 2026-10-24T09:37:43+03:30 |
-| Verification checkpoint | [1c22520](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/1c2252064c0b8c4603da3e554707339152c9e676) | 2026-10-24T06:03:44Z | 2026-10-24T09:33:44+03:30 |
+| Verification checkpoint | [1d5b580](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/1d5b580929fabb77e291b98f59df32435dbd18f0) | 2026-10-24T06:08:39Z | 2026-10-24T09:38:39+03:30 |
+
+## Automation metadata context
+
+Palang Mirror Sync automation ID `6ad9a407b9d481919c7145fbe4638dec` remains enabled. Its prompt update UTC `2026-10-24T06:09:34.525060Z` = Tehran `2026-10-24T09:39:34.525060+03:30` is an automation metadata timestamp, not a repository commit timestamp.
 
 ## Time-binding ledger's own change boundary
 
