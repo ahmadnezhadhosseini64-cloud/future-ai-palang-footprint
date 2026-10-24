@@ -11,8 +11,8 @@
 - Mother: [NPFAP-20261024-001](../../reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md)
 
 ## Acceptance checklist
-- [ ] Fetch IN-037, OUT-037, CURRENT-045, EVT-0145, this task, mother, Reference Index and 0.0 registry after writes.
-- [ ] Match IDs, version, parent links, next-action links, and current pointer.
+- [x] Fetch IN-037, OUT-037, CURRENT-045, EVT-0145, this task, mother, Reference Index and 0.0 registry after writes.
+- [x] Match IDs, version, parent links, next-action links, and current pointer.
 - [ ] Reconcile exact latest Git commit timestamps in UTC and Asia/Tehran.
 - [ ] Execute all 16 principle-level acceptance checks and attach evidence.
 - [ ] Run full transitive link/dependency scan and record broken/missing links.
