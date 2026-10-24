@@ -5,7 +5,7 @@
 - Production ID: OUT-033
 - Interaction pair ID: INT-20261024-033
 - Version: 1.0.0
-- Status: REGISTERED / READ-BACK VERIFIED
+- Status: REGISTERED / READ-BACK VERIFIED / CI-PASS / ARTIFACT-READBACK-VERIFIED
 - Input: [IN-033](./PALANG-0.0-IN-20261024-033-LIVING-ARCHITECTURE-AND-STATUS-TRANSPARENCY.md)
 - Event: [EVT-0131](../../architecture/BEHAVIOR-TRACE/EVT-0131-LIVING-ARCHITECTURE-STATUS-TRANSPARENCY-AND-GROWTH-2026-10-24.md)
 - Next checkpoint: [NEXT-033](./PALANG-0.0-NEXT-20261024-033-LIVING-STATUS-AND-COLD-START.md)
@@ -20,3 +20,10 @@ REGISTER INPUT → WRITE OUTPUT → REGISTER EVENT → UPDATE MASTER/QUEUE/INDEX
 
 ## Verification boundary
 The reciprocal pair and canonical graph links have been independently read back. The first two CI attempts exposed a recovery resolver event-selection bug and a regex regression; the failures are retained in EVT-0131. Do not mark CI PASS for this pair until a later run passes both recovery directions and its artifact is inspected.
+
+
+## Verified execution receipt
+- Behavior Hunter run [40061468626](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40061468626) passed 71 tests on tested SHA `cc1f61f18a364c896b251735ccb643e552d40fe2`.
+- Artifact `12547860733` downloaded and inspected; ZIP SHA-256 `222398f7d4b601abe5559090c75d57653adb2a9e3b51dabc2da7f05cfbe74aa9`.
+- Both IN/OUT recovery manifests RECOVERED with zero failures; ledger PASS with 4 hash-linked records; status receipt SUCCESS.
+- Fresh-session recovery remains NOT RUN; host-wide capture and external persistence remain NOT PROVEN.
