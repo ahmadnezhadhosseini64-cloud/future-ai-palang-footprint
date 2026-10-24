@@ -10,9 +10,9 @@
 - Current recovery anchor / لنگر بازیابی جاری: [CURRENT-040](./PALANG-0.0-CURRENT-20261024-040-GPT6-POINT-0.0-RECOVERY-CHECKPOINT.md)
 - Governing mother architecture / سند مادر حاکم: [Inherited Architecture Living Master](../../reference/REFERENCE-DOCUMENTS/GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md)
 - GPT-6 living master / سند مادر زندهٔ شاخه: [GPT-6 Living Master](../../reference/REFERENCE-DOCUMENTS/GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001.md)
-- Latest interaction / تعامل جاری: [IN-032](./PALANG-0.0-IN-20261024-032-REGISTER-ARCHITECTURE-ZERO.md) ↔ [OUT-032](./PALANG-0.0-OUT-20261024-032-REGISTER-ARCHITECTURE-ZERO.md)
-- Behavior event / رویداد رفتارشناسی: [EVT-0140](../../architecture/BEHAVIOR-TRACE/EVT-0140-ARCHITECTURE-ZERO-REGISTRATION-2026-10-24.md)
-- Next action / گام بعدی: [NEXT-039 — build the interactive prototype](./PALANG-0.0-NEXT-20261024-039-BUILD-INTERACTIVE-PROTOTYPE.md)
+- Latest interaction / تعامل جاری: [IN-034](./PALANG-0.0-IN-20261024-034-HARD-AUDIT-NEW-PROJECT-ARCHITECTURE.md) ↔ [OUT-034](./PALANG-0.0-OUT-20261024-034-HARD-AUDIT-NEW-PROJECT-ARCHITECTURE.md)
+- Behavior event / رویداد رفتارشناسی: [EVT-0142](../../architecture/BEHAVIOR-TRACE/EVT-0142-NEW-PROJECT-ARCHITECTURE-HARD-AUDIT-2026-10-24.md)
+- Next action / گام بعدی: [NEXT-040 — fresh-project adoption test](./PALANG-0.0-NEXT-20261024-040-FRESH-PROJECT-ADOPTION-TEST.md); prototype remains tracked by [NEXT-039](./PALANG-0.0-NEXT-20261024-039-BUILD-INTERACTIVE-PROTOTYPE.md)
 - Timestamp ledger / دفتر زمان: [TIME-BINDING](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-GPT6-POINT-0.0-2026-10-24-001.md)
 
 ## 1. Purpose and scope
