@@ -4,7 +4,7 @@
 - Production ID: G6IP-OUT-031
 - Interaction ID: INT-20261024-031
 - Version: 1.0.0
-- Status: REGISTERED / PENDING READ-BACK
+- Status: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED
 - Paired input: [IN-031](./PALANG-0.0-IN-20261024-031-ADVANCE-POINT-0.0-AND-LINK-LATEST-ARCHITECTURE.md)
 - Intended checkpoint: [GPT6 Point 0.0](./GPT6-INTERACTIVE-PROJECT-POINT-0.0-CHECKPOINT-2026-10-24-001.md)
 - Root point: [Point 0](./GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001.md)
@@ -15,4 +15,6 @@
 نقطهٔ ۰.۰ به‌صورت پروندهٔ مستقل، نسخه‌دار و قابل‌ازسرگیری ثبت می‌شود؛ معماری مادر جدید به‌عنوان آخرین نسخهٔ حاکم به آن متصل می‌شود. این گام فقط checkpoint و اتصال مرجع را پوشش می‌دهد، نه ساخت نمونهٔ تعاملی یا اثبات اجرای پس‌زمینه.
 
 ## Verification receipt
-این رسید پس از ایجاد نقطهٔ ۰.۰، بازخوانی مستقل فایل‌ها و دریافت زمان commit واقعی تکمیل می‌شود. تا پیش از آن، نتیجه PENDING است و نباید VERIFIED گزارش شود.
+- Status: READ-BACK VERIFIED / CONTENT PRESENT / IDENTIFIERS MATCHED.
+- Point 0.0, CURRENT-040, latest inherited architecture master v1.0.3, NEXT-039, IN-031 and EVT-0139 were fetched after writes; expected identifiers and links were present.
+- Commit times are recorded in [TIME-BINDING](../architecture/BEHAVIOR-TRACE/TIME-BINDING-GPT6-POINT-0.0-2026-10-24-001.md). This receipt does not claim prototype execution, cold-start recovery, or external destination writes.
