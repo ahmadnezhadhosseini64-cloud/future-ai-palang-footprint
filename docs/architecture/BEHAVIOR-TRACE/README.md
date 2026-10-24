@@ -582,3 +582,9 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 ## Active semantic review — EVT-0128 / NEXT-030
 - [EVT-0128](./EVT-0128-SEMANTIC-IDENTITY-ADJUDICATION-BATCH-1-2026-10-24.md) records the source-backed decisions and CI evidence.
 - [NEXT-030](../../0.0/anchors/PALANG-0.0-NEXT-20261024-030-SEMANTIC-REVIEW-BATCH-3-AND-COLD-START.md) is the active successor; verify the third decision in the next graph audit and keep fresh-session recovery open until actually run.
+
+
+## EVT-0129 — living registration, architecture growth and latest-pair recovery
+- [EVT-0129](./EVT-0129-LIVING-REGISTRATION-ARCHITECTURE-GROWTH-AND-RECOVERY-REPAIR-2026-10-24.md) records the stale IN-026/OUT-026 recovery defect and the dynamic resolver repair.
+- Current pair [IN-031](../../0.0/anchors/PALANG-0.0-IN-20261024-031-ACTIVATE-LIVING-ARCHITECTURE-GROWTH.md) / [OUT-031](../../0.0/anchors/PALANG-0.0-OUT-20261024-031-ACTIVATE-LIVING-ARCHITECTURE-GROWTH.md); next [NEXT-031](../../0.0/anchors/PALANG-0.0-NEXT-20261024-031-LATEST-PAIR-RECOVERY-AND-STATUS-TRANSPARENCY.md).
+- Dynamic latest-pair recovery CI is pending read-back. Earlier failures remain documented; fresh-session recovery and host-wide capture remain open.
