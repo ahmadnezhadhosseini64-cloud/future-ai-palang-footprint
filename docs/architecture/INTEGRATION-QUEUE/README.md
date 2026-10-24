@@ -1560,3 +1560,9 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - Run 40062202639 passed 74 tests on tested SHA `e8cc599f00ee0ae5de437f13c26e15a8586d7fd5`; artifact ZIP SHA-256 `82cb1c535c70b9b4d97464d3307c4b5320021ed2efe9c0d61d0fdaf76b48f2db`.
 - Ledger 5 records/hash chain PASS; drift detector PASS (6 nodes, 0 failures); both IN/OUT recovery directions RECOVERED.
 - Next active gate: uncoached fresh-session recovery, then source-backed identity collision adjudication and timestamp ambiguity review. Keep Issues #19/#20/#21 open until individually accepted.
+
+
+## Exact-main proof — EVT-0131 / run 40062533959
+- Durable receipt: [STATUS-20261024-EVT-0131-RUN-40062533959.json](../BEHAVIOR-TRACE/STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40062533959.json).
+- Run 40062533959 SUCCESS, 74 tests, tested SHA `d05103dd3593f090f10fafb5a469f6cac69063b1`; artifact ZIP SHA-256 `508dbfa863bf7b805415a95291f8d881c7be1b097f9d1d8f12f32ea32e225ce5`.
+- Graph drift PASS (6 nodes/0 failures), ledger PASS (5 records/hash chain), bidirectional recovery RECOVERED. Next: uncoached fresh-session recovery and source-backed historic reconciliation.
