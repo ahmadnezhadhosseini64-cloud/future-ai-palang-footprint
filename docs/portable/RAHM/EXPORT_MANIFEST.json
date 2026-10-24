@@ -1,7 +1,7 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.3.5",
-  "manifest_status": "STRICT_SHA256_GATE_ACTIVE; ALL_37_FILE_DIGESTS_MATCHED_IN_RUN_40122415885; FINAL_MANIFEST_1.3.5_RECHECK_TRIGGERED",
+  "version": "1.3.6",
+  "manifest_status": "STRICT_SHA256_GATE_ACTIVE; 37 EXPECTED DIGESTS POPULATED; CI REVALIDATES EACH COMMIT",
   "created_from_checkpoint": "G6IP-RAHM-USER-POINT-0-20261024-005",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [
@@ -233,19 +233,19 @@
     "persistent_memory": "NOT_VERIFIED",
     "idle_background_execution": "NOT VERIFIED",
     "cross_host": "NOT_RUN",
-    "exact_byte_sha256": "PASS_RUN_40122415885 on manifest 1.3.4: all 37 entries matched; strict gate rejects missing/invalid expected hashes, mismatches and duplicate paths; this 1.3.5 metadata revision triggers a final verification run",
-    "schema_valid_fixture": "PASS_RUN_40122415885; valid fixture errors=0",
-    "schema_invalid_fixture": "REJECTED_WITH_4_ERRORS_RUN_40122415885",
-    "IN_OUT_recovery_equivalence": "PASS_LIMITED_LINK_CHECKPOINT_SCOPE_RUN_40122415885; full state reconstruction remains OPEN",
+    "exact_byte_sha256": "Last verified PASS in run 40122534478 for manifest v1.3.5 (37/37); current metadata revision v1.3.6 must pass its own CI run",
+    "schema_valid_fixture": "PASS_RUN_40122534478; valid fixture errors=0",
+    "schema_invalid_fixture": "REJECTED_WITH_4_ERRORS_RUN_40122534478",
+    "IN_OUT_recovery_equivalence": "PASS_LIMITED_LINK_CHECKPOINT_SCOPE_RUN_40122534478; full state reconstruction remains OPEN",
     "clean_AI_host_import": "NOT RUN",
     "second_AI_host_import": "NOT RUN",
     "persistence_restart": "NOT VERIFIED",
-    "canonical_mother_index_queue_integration": "CURRENT-056, HAIF mother, inherited master, index and main queue updated and read-back verified",
+    "canonical_mother_index_queue_integration": "CURRENT-056, HAIF mother, inherited master, index and main queue updated/read-back verified",
     "schema_workflow_overall": "PASS_RUN_40122001572",
-    "portable_package_build": "PASS_RUN_40122415885; 38 files, 208713 bytes, SHA-256 57e5c5093d28b4a6d3b325328922ba4254b0b438ada8dfa1546e3707e0b9d95f; final rebuild after manifest v1.3.5",
+    "portable_package_build": "PASS_RUN_40122534478; 38 files, 208860 bytes, SHA-256 15b39b61b92b49f03d705f1561c13d568da57b32838d5af2f0c5eacfef9e2638; v1.3.6 will trigger new archive",
     "full_state_recovery": "OPEN / NOT RUN",
     "focused_relative_link_audit": "PASS_13_CORE_AND_MOTHER_FILES_ZERO_BROKEN_LINKS",
-    "repository_graph_audit": "REVIEW_REQUIRED_RUN_40122415854"
+    "repository_graph_audit": "REVIEW_REQUIRED_RUN_40122534477"
   },
-  "note": "Run 40122371651 exposed three stale expected digests; these were reconciled from exact-byte workflow evidence. The hardened gate was rerun successfully in 40122415885: all 37 listed files matched. Manifest self-digest is external run evidence to avoid recursive self-hashing. A successful CI run is not proof of import into an independent AI host, full state reconstruction, persistent memory or idle/background execution."
+  "note": "Strict digest conformance requires a lowercase 64-character expected SHA-256 for every manifest entry, exact-byte comparison, explicit MATCH for each file, and rejection of missing/invalid hashes, mismatches or duplicate paths. The manifest's own digest is external run evidence to avoid recursive self-hashing. CI success does not prove independent AI-host import, full recovery, persistent memory or idle/background execution."
 }
