@@ -635,3 +635,13 @@ Current active gate remains [EVT-0122](../../architecture/BEHAVIOR-TRACE/EVT-012
 - [Living Architecture Audit run 40059261857](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40059261857) PASS on exact HEAD `d0bb633ade46b94bf20452c74efbc8137f4cbe99`; artifact `12546287920` inspected; SHA-256 `065e43b81123d6aeb4b70ddbed8506c2a326459ea147109da46e6c9e682b7f5f`.
 - Three source-hash-verified role decisions accepted; 8 identifier occurrences reviewed, 1,416 remain unreviewed. 3,719 local links, zero missing links, zero decode errors.
 - Six semantic-role tests passed. NEXT-030 remains active for continued source-backed reconciliation and separate fresh-session recovery; Issues #20/#21 remain open.
+
+
+## Living architecture growth and latest-pair recovery — EVT-0129
+- Current interaction: [IN-031](../../0.0/anchors/PALANG-0.0-IN-20261024-031-ACTIVATE-LIVING-ARCHITECTURE-GROWTH.md) / [OUT-031](../../0.0/anchors/PALANG-0.0-OUT-20261024-031-ACTIVATE-LIVING-ARCHITECTURE-GROWTH.md).
+- Event: [EVT-0129](../../architecture/BEHAVIOR-TRACE/EVT-0129-LIVING-REGISTRATION-ARCHITECTURE-GROWTH-AND-RECOVERY-REPAIR-2026-10-24.md).
+- Current checkpoint: [NEXT-031](../../0.0/anchors/PALANG-0.0-NEXT-20261024-031-LATEST-PAIR-RECOVERY-AND-STATUS-TRANSPARENCY.md).
+- Living execution-status protocol: [IESLP](../../architecture/BEHAVIOR-OBSERVATORY/INTERACTION-EXECUTION-STATUS-AND-LIVING-REGISTRATION-PROTOCOL-2026-10-24-001.md).
+- Deep-audit correction: recovery must discover the latest reciprocal IN/OUT pair dynamically; hard-coded IN-026/OUT-026 passing was stale historical coverage, not current-pair proof.
+- Architecture evolution ledger version 1.2.0 was appended, preserving versions 1.0.0 and 1.1.0. CI/read-back of this new version is pending until the newest run and manifests are inspected.
+- Open: fresh-session recovery NOT RUN; host-wide capture NOT PROVEN; external persistence NOT VERIFIED; Issues #19/#20/#21 remain OPEN.
