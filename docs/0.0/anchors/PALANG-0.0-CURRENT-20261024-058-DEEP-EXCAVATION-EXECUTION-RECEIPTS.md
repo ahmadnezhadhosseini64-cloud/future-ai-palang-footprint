@@ -2,7 +2,7 @@
 
 - Stable ID: `G6IP-RAHM-CURRENT-058-20261024`
 - Production ID: `G6IP-CURRENT-058`
-- Version: 1.0.3
+- Version: 1.0.4
 - Status: REGISTERED; read-back gate pending; post-edit audit/digest runs pending; real-host gates OPEN.
 - Parent current: [CURRENT-057](./PALANG-0.0-CURRENT-20261024-057-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md)
 - Point 0: [POINT-0/007](./GPT6-RAHM-USER-POINT-0-20261024-007-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md)
@@ -59,5 +59,13 @@ Do not create NEXT-052 merely to renumber unfinished work. Resume from NEXT-051,
 ## Repository-state recovery verifier
 - Executable check: `scripts/behavior-hunter/verify_current_0_0_chain.py`.
 - Enforced by: [Living Architecture Audit workflow](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/workflows/living-architecture-audit.yml).
-- The verifier independently starts from IN-051 and OUT-050, reconstructs the current canonical chain and open-gate state, and compares results. Its first run after integration is not yet observed here; until a passing receipt exists, full IN/OUT repository-state recovery remains OPEN.
+- The verifier independently starts from IN-051 and OUT-050, reconstructs the current canonical chain and open-gate state, and compares results. Its first post-integration run [40129551204](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129551204) PASSed: canonical state reconstructed equivalently from IN-051 and OUT-050, with zero verifier failures. External host import and durable runtime gates remain OPEN.
 - Latest completed global audit is [40129104121](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129104121): zero missing Markdown links, but REVIEW_REQUIRED for unresolved identity/parent/time findings.
+
+## Actual IN/OUT canonical-state recovery — run 40129551204
+- Workflow: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129551204
+- Result: PASS; `canonical_state_equivalent=true`; recovery starting independently from IN-051 and OUT-050 returned RECOVERED both ways, with no verifier failures.
+- The verifier checked stable IDs/versions, dated relative-link targets, Point 0/current/NEXT chain, manifest CURRENT-058 and NEXT-051 metadata, failure→correction lineage, and preservation of six open gates.
+- It explicitly preserved as open: full external state recovery, clean independent AI-host import, second-host import, persistence restart, idle/background execution, and global graph triage.
+- Evidence artifact: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129551204/artifacts/12574201632
+- Scope boundary: this proves the repository's current chain can be reconstructed equivalently from IN and OUT. It does not prove import into an independent AI host or durable host runtime behavior.
