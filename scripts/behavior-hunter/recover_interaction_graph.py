@@ -59,21 +59,17 @@ def discover_latest_pair(root):
             "path": path.relative_to(root).as_posix(),
             "text": text,
         }
-    candidates = []
-    for interaction, pair in grouped.items():
-        if "IN" not in pair or "OUT" not in pair:
-            continue
-        incoming, outgoing = pair["IN"], pair["OUT"]
-        if incoming["number"] != outgoing["number"]:
-            continue
-        if f"OUT-{outgoing['number']:03d}" not in incoming["text"]:
-            continue
-        if f"IN-{incoming['number']:03d}" not in outgoing["text"]:
-            continue
-        candidates.append((interaction, pair))
-    if not candidates:
-        return None, [{"node": "interaction_pair", "reason": "no_reciprocal_pair_with_matching_identity"}]
-    interaction, pair = max(candidates, key=lambda item: (item[0].split("-")[1], int(item[0].split("-")[2])))
+    if not grouped:
+        return None, [{"node": "interaction_pair", "reason": "no_pair_identity_found"}]
+    interaction = max(grouped, key=lambda value: (value.split("-")[1], int(value.split("-")[2])))
+    pair = grouped[interaction]
+    if "IN" not in pair or "OUT" not in pair:
+        return None, [{"node": "interaction_pair", "reason": "latest_pair_incomplete_no_historical_fallback", "interaction_id": interaction, "roles_found": sorted(pair)}]
+    incoming, outgoing = pair["IN"], pair["OUT"]
+    if incoming["number"] != outgoing["number"]:
+        return None, [{"node": "interaction_pair", "reason": "latest_pair_anchor_number_mismatch", "interaction_id": interaction}]
+    if f"OUT-{outgoing['number']:03d}" not in incoming["text"] or f"IN-{incoming['number']:03d}" not in outgoing["text"]:
+        return None, [{"node": "interaction_pair", "reason": "latest_pair_not_reciprocal_no_historical_fallback", "interaction_id": interaction}]
     return {"interaction_id": interaction, **pair}, []
 
 def _linked_id(text, prefix):
