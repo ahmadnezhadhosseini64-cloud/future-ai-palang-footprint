@@ -49,4 +49,4 @@ Repository registration time is the actual last-change Git commit timestamp in U
 
 ## Current verification boundary
 
-At creation time, CURRENT-043 was previously read back and its commit timestamp verified. NPFAP v1.0.2 had 19/19 direct internal Markdown targets found. Neither fact proves this new point is read-back verified, the whole project link graph is clean, or the architecture passes adoption/recovery. Exact read-back of CURRENT-044 and the linked IN-036 / OUT-036 / EVT-0144 / NEXT-042 records succeeded; IDs and primary links matched. The detailed checks remain assigned to NEXT-042.
+At creation time, CURRENT-043 was previously read back and its commit timestamp verified. NPFAP v1.0.3 had 19/19 direct internal Markdown targets found. Neither fact proves this new point is read-back verified, the whole project link graph is clean, or the architecture passes adoption/recovery. Exact read-back of CURRENT-044 and the linked IN-036 / OUT-036 / EVT-0144 / NEXT-042 records succeeded; IDs and primary links matched. The detailed checks remain assigned to NEXT-042.
