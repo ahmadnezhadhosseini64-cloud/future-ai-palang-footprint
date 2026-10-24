@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001
 - Production ID / شناسهٔ تولید: G6IP-IAM-20261024-001
-- Version / نسخه: 1.1.3
+- Version / نسخه: 1.1.4
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED / CONTENT PRESENT / IDENTIFIERS MATCHED
 - Parent architecture / معماری والد: Future AI / Palang Footprint — HAIF
 - New project root / ریشهٔ پروژهٔ جدید: [Point 0](../../0.0/anchors/GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001.md)
