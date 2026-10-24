@@ -144,3 +144,9 @@ OBSERVE → CAPTURE → CLASSIFY → CHILD HYPOTHESIS → TEST → RAHM REVIEW �
 - [NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001](./NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md) is the default foundational pattern for new projects in the Future AI / Palang Footprint / HAIF family.
 - Each new branch must instantiate its own Point 0, living master, CURRENT/NEXT anchors, IN/OUT/event trace, UTC-first timestamp ledger, evidence gates and extraction/recovery bundle.
 - This is a governing rule and reusable template, not a claim of automatic capture or automatic deployment to every future project.
+
+
+## Cross-project foundational mother activation — v1.0.5
+The governing cross-project principles are [NPFAP-20261024-001](./NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md), now linked to independent checkpoint [CURRENT-041](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-041-FOUNDATIONAL-ARCHITECTURE-MOTHER-ACTIVATION.md). This activation is recorded by [IN-033](../../0.0/anchors/PALANG-0.0-IN-20261024-033-ACTIVATE-FOUNDATIONAL-ARCHITECTURE-MOTHER.md), [OUT-033](../../0.0/anchors/PALANG-0.0-OUT-20261024-033-ACTIVATE-FOUNDATIONAL-ARCHITECTURE-MOTHER.md) and [EVT-0141](../../architecture/BEHAVIOR-TRACE/EVT-0141-FOUNDATIONAL-ARCHITECTURE-MOTHER-ACTIVATION-2026-10-24.md). Parent CURRENT-040 and initial Point 0/CURRENT-039 remain intact. The 0.0 registry and Reference Index are updated to expose this node.
+
+Living governance: maintain versions, provenance, explicit open gates, rollback paths and evidence-backed promotion through Child → Rahm → Master. Fresh-project adoption and export/cold-start recovery are still OPEN / NOT RUN; external persistence destinations remain independently NOT VERIFIED.
