@@ -175,3 +175,11 @@ Each proposed insight includes:
 - Collision/duplicate resolution must be semantic and history-aware. No bulk renaming, deletion or alias promotion is allowed solely because identifiers/content collide.
 - The separate workflow evidence shows bounded CI runtime transfer and automatic registration proof; it does not prove universal ChatGPT-host capture or arbitrary external persistence.
 - [NEXT-028](../../0.0/anchors/PALANG-0.0-NEXT-20261023-028-POST-REPAIR-AUDIT-AND-SEMANTIC-RECONCILIATION.md) is the active next gate.
+
+
+## 15. Latest-pair recovery and status transparency — EVT-0129
+- [EVT-0129](../BEHAVIOR-TRACE/EVT-0129-LIVING-REGISTRATION-ARCHITECTURE-GROWTH-AND-RECOVERY-REPAIR-2026-10-24.md) records that earlier recovery manifests still recovered IN-026/OUT-026 after the active project had advanced to IN-030/OUT-030. That green result was historical-pair proof, not current-continuation proof.
+- Resolver implementation now discovers the newest shared interaction ID and refuses fallback when that latest pair is incomplete or non-reciprocal.
+- Regression coverage targets latest pair discovery, both directions, invalid newest pair, stale master reference, and non-inference of fresh-session/host-wide/external capabilities.
+- [Interaction Execution Status Protocol](./INTERACTION-EXECUTION-STATUS-AND-LIVING-REGISTRATION-PROTOCOL-2026-10-24-001.md) defines durable status vocabulary and the visible execution lifecycle.
+- Architecture ledger version 1.2.0 appended; versions 1.0.0 and 1.1.0 retained. Verification is not complete until CI and manifests prove the current pair.
