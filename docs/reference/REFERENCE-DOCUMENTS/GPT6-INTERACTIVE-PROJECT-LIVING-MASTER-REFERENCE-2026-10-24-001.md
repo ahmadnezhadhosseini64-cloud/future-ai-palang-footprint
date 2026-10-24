@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001`
 - Production ID / شناسهٔ تولید: `G6IP-LMR-20261024-001`
-- Version / نسخه: 1.2.0
+- Version / نسخه: 1.3.0
 - Project / پروژه: Future AI / Palang Footprint — HAIF
 - Owner / مالک معماری: احمد نژادحسینی (احمد پلنگ)
 - Host / میزبان این شاخه: ChatGPT / GPT-6
@@ -111,3 +111,15 @@
 - Status boundary: repository registration/read-back must be verified; point 0, point 0.0, prototype build, cold-start recovery, and all external destinations remain NOT RUN / NOT VERIFIED until separate evidence exists.
 
 - Final commit time bindings (UTC canonical + Tehran equivalent): [TIME-BINDING-GPT6-INITIAL-POINT-2026-10-24-001](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-GPT6-INITIAL-POINT-2026-10-24-001.md). OUT-029, CURRENT-039 and EVT-0137 timestamps reflect their final read-back receipt updates.
+
+
+## Current branch promotion — initial Point 0 and inherited HAIF governance
+- Initial point 0: [GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001](../../0.0/anchors/GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001.md). The previously registered independent root CURRENT-039 is designated as the initial point 0 of this GPT-6 branch; CURRENT-037, CURRENT-038 and the earlier Project Zero baseline remain preserved as history.
+- Latest interaction: [IN-030](../../0.0/anchors/PALANG-0.0-IN-20261024-030-PROMOTE-CURRENT-039-TO-INITIAL-POINT-0.md) ↔ [OUT-030](../../0.0/anchors/PALANG-0.0-OUT-20261024-030-PROMOTE-CURRENT-039-TO-INITIAL-POINT-0.md); behavioral event [EVT-0138](../../architecture/BEHAVIOR-TRACE/EVT-0138-GPT6-POINT-0-PROMOTION-AND-HAIF-INTEGRATION-2026-10-24.md).
+- Governing HAIF mother: [سند مرجع مادر — مدل اولیهٔ هوش مصنوعی HAIF](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md), Stable ID `HAIF-INITIAL-AI-MODEL-MASTER-REFERENCE-2026-10-21-001`, version observed 1.3.7.
+- Registration governance: [Universal Register and Portable HAIF Architecture](./UNIVERSAL-REGISTER-AND-PORTABLE-HAIF-ARCHITECTURE-MASTER-REFERENCE-2026-10-20-001.md).
+- Behavior governance: [Palang Dual-Track Behavioral Architecture](./PALANG-DUAL-TRACK-BEHAVIORAL-ARCHITECTURE-MASTER-REFERENCE-2026-10-22-001.md). Apply both growth/discovery and path-drift/error-control tracks; preserve evidence and distinguish observations from hypotheses.
+- Project-zero governance remains [GPT6 Project Zero baseline](../../architecture/INITIAL-BASELINES/GPT6-INTERACTIVE-PROJECT-ZERO-BASELINE-2026-10-24-001.md). The point-0 record explicitly inherits preserve-first, UTC-canonical, evidence gate, write/read-back/match/verify/reconcile/status, IN/OUT/event anchors, Child → Rahm → Master, recoverability, destination-specific status, privacy minimization, living versioning and no-redundant-retest.
+- Next: [NEXT-038](../../0.0/anchors/PALANG-0.0-NEXT-20261024-038-DEFINE-POINT-0-THEN-0.0.md) now concerns the independent point 0.0 checkpoint; point 0.0 is not yet created.
+- Status boundary: repository files are written; read-back and link reconciliation is required before final verified status. Prototype remains NOT BUILT in this step, cold-start recovery NOT RUN, and Buffer / Persistent Memory / Library / Dropbox NOT VERIFIED.
+- Time binding: [GPT-6 initial point UTC/Tehran ledger](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-GPT6-INITIAL-POINT-2026-10-24-001.md). The latest update commit time must be appended after the actual commit is fetched; message time remains unknown.
