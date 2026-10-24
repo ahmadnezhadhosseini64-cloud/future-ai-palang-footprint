@@ -8,4 +8,4 @@
 - Queue item: [CURRENT-054](architecture/INTEGRATION-QUEUE/CURRENT-054-PORTABLE-MASTER.md)
 - Prior hard-audit evidence: [EVT-0154](architecture/BEHAVIOR-TRACE/EVT-0154-LIVING-ARCHITECTURE-HARD-AUDIT-RUN-2026-10-24.md)
 
-Status: this is an additive index supplement. Incorporation into canonical REFERENCE_INDEX.md remains OPEN until the base file is updated and independently read back.
+Status: additive supplement registered. Canonical docs/REFERENCE_INDEX.md was updated and independently fetched; CURRENT-054 and NEXT-048 references were observed. The base file update/read-back is verified, while the broader repository graph and runtime conformance remain OPEN.
