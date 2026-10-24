@@ -718,3 +718,9 @@ Current active gate remains [EVT-0122](../../architecture/BEHAVIOR-TRACE/EVT-012
 - [Terminal status receipt](../../architecture/BEHAVIOR-TRACE/STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40061713327.json) is preserved in the repository from the inspected workflow artifact.
 - Source run [40061713327](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40061713327), 71 tests passed on tested SHA `26615121fd50276c9c978814b183b21b20330135`; artifact `12547866288`, ZIP SHA-256 `448465dc742c90b1408d725ccce8a17eaf6d3b845ca639ad742c709cbdeb629a`.
 - Current main later received evidence-only commits; the tested SHA is the canonical proof scope. The receipt does not prove a ChatGPT UI heartbeat, host-wide capture or external persistence.
+
+
+## Latest terminal receipt — run 40061873837
+- Durable receipt: [STATUS-20261024-EVT-0131-RUN-40061873837.json](../../architecture/BEHAVIOR-TRACE/STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40061873837.json).
+- [Run 40061873837](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40061873837) passed 71 tests on tested SHA `edd82d08311c03f0506c651e5c33d128a0d70a35`; artifact `12547921317` inspected, ZIP SHA-256 `c44071afab49df4bfb33141f432db059e21455f3161801f4d711efd34d690f1f`.
+- Pair-033 recovery both directions RECOVERED; ledger PASS with 4 hash-linked records; status receipt SUCCESS. Fresh-session recovery remains NOT RUN; Issues #19/#20/#21 remain OPEN.
