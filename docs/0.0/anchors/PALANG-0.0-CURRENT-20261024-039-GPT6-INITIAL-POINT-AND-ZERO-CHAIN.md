@@ -2,17 +2,21 @@
 
 - Stable ID: `PALANG-CURRENT-GPT6-INITIAL-POINT-ZERO-CHAIN-2026-10-24-039`
 - Production ID: `G6IP-CURRENT-039`
-- Version: 1.0.0
+- Version: 1.1.0
+- Role: INITIAL POINT 0 / ریشه و نقطهٔ صفر اولیه
 - Status: REGISTERED / ACTIVE / LIVING / EVOLVABLE / RECOVERABLE
 - Parent: [CURRENT-038 — معماری Project Zero](./PALANG-0.0-CURRENT-20261024-038-GPT6-PROJECT-ZERO-ARCHITECTURE.md)
 - Pair: [IN-029](./PALANG-0.0-IN-20261024-029-DECLARE-INITIAL-POINT-AND-LINK-ZERO-CHAIN.md) ↔ [OUT-029](./PALANG-0.0-OUT-20261024-029-DECLARE-INITIAL-POINT-AND-LINK-ZERO-CHAIN.md)
 - Event: [EVT-0137](../../architecture/BEHAVIOR-TRACE/EVT-0137-GPT6-INITIAL-POINT-ZERO-CHAIN-2026-10-24.md)
 - Baseline: [Project Zero](../../architecture/INITIAL-BASELINES/GPT6-INTERACTIVE-PROJECT-ZERO-BASELINE-2026-10-24-001.md)
 - Living master: [GPT-6 interactive project master](../../reference/REFERENCE-DOCUMENTS/GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001.md)
-- Next: [NEXT-038 — define point 0, then 0.0](./PALANG-0.0-NEXT-20261024-038-DEFINE-POINT-0-THEN-0.0.md)
+- Point 0 record: [GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001](./GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001.md)
+- Latest interaction: [IN-030](./PALANG-0.0-IN-20261024-030-PROMOTE-CURRENT-039-TO-INITIAL-POINT-0.md) ↔ [OUT-030](./PALANG-0.0-OUT-20261024-030-PROMOTE-CURRENT-039-TO-INITIAL-POINT-0.md)
+- Latest event: [EVT-0138](../../architecture/BEHAVIOR-TRACE/EVT-0138-GPT6-POINT-0-PROMOTION-AND-HAIF-INTEGRATION-2026-10-24.md)
+- Next: [NEXT-038 — point 0.0](./PALANG-0.0-NEXT-20261024-038-DEFINE-POINT-0-THEN-0.0.md)
 
 ## Meaning of this point
-این لنگر، نقطهٔ آغاز مستقل و قابل‌بازیابی شاخهٔ جدید GPT-6 است. Project Zero و CURRENT-037 پیشینهٔ معماری‌اند؛ CURRENT-039 آن‌ها را حذف نمی‌کند و درخواست تازه را به گراف وصل می‌کند.
+این لنگر، ریشهٔ مستقل شاخهٔ جدید GPT-6 و اکنون نقطهٔ ۰ اولیهٔ آن است. نقش نقطهٔ ۰ در پروندهٔ مستقل GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001 ثبت شده است. Project Zero و CURRENT-037 و CURRENT-038 پیشینه‌اند و حذف یا جایگزین نشده‌اند.
 
 ## Active governance
 1. قواعد Project Zero و سند مادر HAIF برای این شاخه اعمال می‌شوند.
@@ -33,3 +37,10 @@ Project Zero، CURRENT-038 و NEXT-037 قبلاً ثبت و بازخوانی ش�
 - این مسیر پس از ثبت دوباره از مخزن خوانده شد؛ شناسه‌ها و پیوندهای IN-029، OUT-029، EVT-0137 و NEXT-038 بررسی شدند.
 - Time binding: [TIME-BINDING-GPT6-INITIAL-POINT-2026-10-24-001](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-GPT6-INITIAL-POINT-2026-10-24-001.md).
 - زمان پیام کاربر نامعلوم است؛ زمان‌های مخزنی از commitهای واقعی گرفته شده‌اند. این رسید اجرای نقطهٔ ۰، نقطهٔ ۰.۰ یا آزمون بازیابی سرد را ثابت نمی‌کند.
+
+
+## Latest governance integration
+- Point 0 record: [GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001](./GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001.md).
+- IN/OUT: [IN-030](./PALANG-0.0-IN-20261024-030-PROMOTE-CURRENT-039-TO-INITIAL-POINT-0.md) ↔ [OUT-030](./PALANG-0.0-OUT-20261024-030-PROMOTE-CURRENT-039-TO-INITIAL-POINT-0.md).
+- Behavior event: [EVT-0138](../../architecture/BEHAVIOR-TRACE/EVT-0138-GPT6-POINT-0-PROMOTION-AND-HAIF-INTEGRATION-2026-10-24.md).
+- Governing layers connected: HAIF initial-model master, universal registration/portable HAIF master, dual-track behavioral architecture, project-zero baseline and integration queue. No prior anchor is overwritten.
