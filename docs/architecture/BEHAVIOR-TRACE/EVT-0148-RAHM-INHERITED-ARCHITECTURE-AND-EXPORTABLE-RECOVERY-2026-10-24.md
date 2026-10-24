@@ -1,7 +1,7 @@
 # EVT-0148 — RAHM ↔ معماری موروثیِ قابل بازیابی و انتقال
 - Stable ID: G6IP-RAHM-EVT-0148-20261024
 - Version: 1.0.0
-- Status: REGISTERED; read-back pending
+- Status: REGISTERED / READ-BACK VERIFIED
 - Input: [IN-040](../../0.0/anchors/PALANG-0.0-IN-20261024-040-RAHM-INHERITED-ARCHITECTURE.md)
 - Output: [OUT-040](../../0.0/anchors/PALANG-0.0-OUT-20261024-040-RAHM-INHERITED-ARCHITECTURE.md)
 - Parent: [CURRENT-047](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-047-BEHAVIOR-HUNTER-LIVING-ANCHOR.md)
