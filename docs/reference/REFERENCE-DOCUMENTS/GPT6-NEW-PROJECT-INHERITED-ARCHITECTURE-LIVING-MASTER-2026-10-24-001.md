@@ -2,8 +2,8 @@
 
 - Stable ID / شناسهٔ پایدار: GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001
 - Production ID / شناسهٔ تولید: G6IP-IAM-20261024-001
-- Version / نسخه: 1.0.0
-- Status / وضعیت: REGISTERED PENDING READ-BACK
+- Version / نسخه: 1.0.1
+- Status / وضعیت: REGISTERED / READ-BACK VERIFIED / CONTENT PRESENT / IDENTIFIERS MATCHED
 - Parent architecture / معماری والد: Future AI / Palang Footprint — HAIF
 - New project root / ریشهٔ پروژهٔ جدید: [Point 0](../../0.0/anchors/GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001.md)
 - Root anchor / لنگر ریشه: [CURRENT-039](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-039-GPT6-INITIAL-POINT-AND-ZERO-CHAIN.md)
@@ -102,6 +102,9 @@ OBSERVE → CAPTURE → CLASSIFY → CHILD HYPOTHESIS → TEST → RAHM REVIEW �
 4. سپس از نقطهٔ ۰ تأییدشده، یک نقطهٔ ۰.۰ مستقل ایجاد کن که وضعیت، شواهد، موانع و اقدام بعدی را بازسازی کند.
 5. بعد از نقطهٔ ۰.۰، اولین نمونهٔ تعاملی کوچک را با قرارداد و معیار پذیرش بساز؛ آزمون بازیابی سرد را فقط پس از وجود بستهٔ قابل‌بازیابی اجرا کن.
 
-## ثبت بازخوانی
+## ثبت بازخوانی نهایی
 
-این بخش فقط پس از واکشی دوبارهٔ همین مسیر تکمیل می‌شود. تا پیش از آن، وضعیت ثبت «در انتظار بازخوانی» است؛ زمان canonical نیز از commit واقعی پس از نوشتن استخراج می‌شود.
+- ثبت اولیه: commit `77858ee114232d53f2ee41be0921d93b71ac7293`؛ زمان canonical UTC `2026-10-24T07:49:16Z`؛ معادل تهران `2026-10-24T11:19:16+03:30`.
+- پس از نوشتن، همین مسیر با GitHub Contents API دوباره واکشی شد؛ محتوا و شناسه‌های اصلی حاضر بودند.
+- دامنهٔ تأیید: حضور فایل و بازخوانی محتوای همین سند. همهٔ پیوندهای تاریخی هنوز ممیزی مستقل نشده‌اند؛ نقطهٔ ۰.۰، نمونهٔ تعاملی و بازیابی سرد همچنان باز هستند.
+- این رسید، ادعای تأیید مقصدهای بیرونی یا اجرای قابلیت‌های نرم‌افزاری نیست.
