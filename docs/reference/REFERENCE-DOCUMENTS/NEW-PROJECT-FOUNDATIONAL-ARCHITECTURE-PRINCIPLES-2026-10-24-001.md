@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001`
 - Production ID / شناسهٔ تولید: `NPFAP-20261024-001`
-- Version / نسخه: 1.0.0
+- Version / نسخه: 1.0.1
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING / EVOLVABLE / EXTRACTABLE / RECOVERY-ORIENTED
 - Scope / دامنه: الگوی پایه برای هر پروژهٔ جدید در خانوادهٔ Future AI / Palang Footprint / HAIF و شاخه‌های محصول/میزبان آن؛ با سازگارسازی مستند برای پروژه‌های دیگر
 - Source anchor / منشأ: [G6IP-ARCH-ZERO-20261024-001](../../0.0/anchors/PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md)
@@ -82,3 +82,7 @@ The exact foundational-principles file was fetched again after creation. Stable 
 This foundational mother is now linked to the independent living checkpoint [CURRENT-041](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-041-FOUNDATIONAL-ARCHITECTURE-MOTHER-ACTIVATION.md), parent [CURRENT-040](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-040-GPT6-POINT-0.0-RECOVERY-CHECKPOINT.md), interaction [IN-033](../../0.0/anchors/PALANG-0.0-IN-20261024-033-ACTIVATE-FOUNDATIONAL-ARCHITECTURE-MOTHER.md) ↔ [OUT-033](../../0.0/anchors/PALANG-0.0-OUT-20261024-033-ACTIVATE-FOUNDATIONAL-ARCHITECTURE-MOTHER.md), and event [EVT-0141](../../architecture/BEHAVIOR-TRACE/EVT-0141-FOUNDATIONAL-ARCHITECTURE-MOTHER-ACTIVATION-2026-10-24.md). The multi-point 0.0 registry and reference index carry the same links. Previous anchors remain preserved.
 
 Living status means versioned, evidence-gated, recoverable, and open to controlled growth; it does not imply global automatic background capture. Fresh-project adoption and export/cold-start recovery tests remain OPEN / NOT RUN until evidence is recorded.
+
+
+## Hard-audit amendment — v1.0.1 — 2026-10-24
+The cross-project principles are now governed alongside the hard-audit mother [HA-001](./NEW-PROJECT-ARCHITECTURE-HARD-AUDIT-2026-10-24-001.md) and current checkpoint [CURRENT-042](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-042-NEW-PROJECT-ARCHITECTURE-HARD-AUDIT.md). The previous CURRENT-041 node remains preserved as historical lineage. The active handoff is [NEXT-040 — fresh-project adoption test](../../0.0/anchors/PALANG-0.0-NEXT-20261024-040-FRESH-PROJECT-ADOPTION-TEST.md). This version corrects the document version ledger and does not claim that the adoption test, prototype or cold-start recovery has passed.
