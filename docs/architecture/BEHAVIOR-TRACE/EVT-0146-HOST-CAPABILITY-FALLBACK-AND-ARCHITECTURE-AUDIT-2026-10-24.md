@@ -15,3 +15,10 @@ Created the HOST-CAPABILITY-FALLBACK architecture folder and five specifications
 - Persistent-memory restart, idle-background, fresh-host, second-host, schema validation and runtime installation remain unverified/not run.
 ## Learning rule
 Repeated steps should trigger a regression test; passing requires a reproducible receipt and independent read-back. Never convert repetition or documentation into evidence of runtime capability.
+
+
+## Regression/read-back result
+- The five fallback architecture files and the new interaction/checkpoint/next-action records were fetched after writes; expected IDs and links matched.
+- REFERENCE_INDEX post-update read-back succeeded; prior 404 gap is closed for this cycle (blob SHA `6fc34f2d9433280b0a9c247c20533d2405f38d76`).
+- JSON syntax parse PASS: HOST_CAPABILITY_MANIFEST.json, INTERACTION_PAIR_SCHEMA.json, EXPORT_MANIFEST.json. Full JSON Schema validation not run.
+- Still not run: SHA-256 manifest comparison, persistent memory across restart, idle background execution, runtime deployment, clean-host and second-host conformance.
