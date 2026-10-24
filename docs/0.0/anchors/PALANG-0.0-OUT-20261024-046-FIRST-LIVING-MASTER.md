@@ -2,7 +2,7 @@
 
 - Stable ID: `G6IP-RAHM-OUT-046-20261024`
 - Production ID: `G6IP-OUT-046`
-- Version: 1.0.0
+- Version: 1.0.1
 - Status: REGISTERED / READ-BACK VERIFIED; fetched after write and content/IDs matched.
 - Output artifact: [FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md](../../portable/RAHM/FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md)
 - Current checkpoint: [CURRENT-054](./PALANG-0.0-CURRENT-20261024-054-FIRST-LIVING-MASTER.md)
