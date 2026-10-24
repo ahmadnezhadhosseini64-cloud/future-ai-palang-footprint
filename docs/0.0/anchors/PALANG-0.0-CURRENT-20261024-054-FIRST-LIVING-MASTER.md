@@ -32,3 +32,9 @@ CURRENT-052 → CURRENT-053 → user Point 0/IN-047 → OUT-046 → EVT-0155 →
 Execute NEXT-044 first, then NEXT-048 conformance steps. Never close a gate without test output and independent read-back.
 
 - Harness correction evidence: [EVT-0156](../../architecture/BEHAVIOR-TRACE/EVT-0156-FIRST-MASTER-HARNESS-CORRECTION-2026-10-24.md)
+
+## First conformance evidence
+- Portable RAHM conformance run [40114363915](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40114363915) completed SUCCESS on the manifest containing 24 inventory entries.
+- JSON Schema valid fixture: 0 errors; invalid fixture: 4 errors and correctly rejected.
+- Exact-byte SHA-256 comparison against the populated manifest: PASS for the full 24-file inventory. The manifest's own digest is external evidence, not self-referenced.
+- Still OPEN: independent IN/OUT canonical-state equivalence; actual clean-host and second AI-host import; persistent-memory restart; idle/background execution; remaining repository-wide missing links and identifier collision review.
