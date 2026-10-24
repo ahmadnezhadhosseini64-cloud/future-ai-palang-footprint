@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-20 — LIARC-2026-10-20-001 and ABV-2026-10-20-001 linked; historical verification dates remain historical.
+**Last Updated:** 2026-10-24 — CURRENT-042 / EVT-0142 hard audit and NPFAP v1.0.1 linked; historical verification dates remain historical.
 
 ## Canonical References
 
