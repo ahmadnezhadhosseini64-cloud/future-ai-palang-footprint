@@ -3,7 +3,7 @@
 - Stable ID / شناسهٔ پایدار: `PALANG-CURRENT-HUMAN-AI-FUTURE-INTERACTION-ARCHITECTURE-2026-10-24-046`
 - Production ID / شناسهٔ تولید: `G6IP-CURRENT-046`
 - Version / نسخه: `1.0.0`
-- Status / وضعیت هنگام ایجاد: REGISTERED; read-back pending at creation.
+- Status / وضعیت: REGISTERED / READ-BACK VERIFIED; checkpoint and linked IDs fetched and matched.
 - Parent checkpoint / نقطهٔ والد: [CURRENT-045](./PALANG-0.0-CURRENT-20261024-045-LIVING-MOTHER-ANCHOR.md) — preserved, not replaced.
 - Input / ورودی: [IN-038](./PALANG-0.0-IN-20261024-038-HUMAN-AI-FUTURE-INTERACTION-ARCHITECTURE.md)
 - Output / خروجی: [OUT-038](./PALANG-0.0-OUT-20261024-038-HUMAN-AI-FUTURE-INTERACTION-ARCHITECTURE.md)
