@@ -11,7 +11,7 @@
 - Decision register: [HISTORICAL-0.0-CANONICAL-ALIAS-LINEAGE-DECISION-REGISTER](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-CANONICAL-ALIAS-LINEAGE-DECISION-REGISTER-2026-10-21-001.md)
 
 ## Output
-Two source-backed role decisions were added: one repeated Stable ID across EVT-0022 and its fuller governing reference, and one repeated Production ID across the 0.0 Vault governance source and its identical Reference Vault mirror candidate. Git history, graph-manifest content hashes, explicit links, and inbound/outbound link counts were checked. The files are classified as event provenance and governing-reference candidate; neither is deleted or renamed.
+Three source-backed role decisions were added: one repeated Stable ID across EVT-0022 and its governing reference, plus two repeated Production IDs across operational/governance paths and their byte-identical Reference Vault mirror candidates. Git history, graph-manifest content hashes, explicit links, and inbound/outbound link counts were checked. The files are classified as event provenance and governing-reference candidate; neither is deleted or renamed.
 
 ## Evidence boundary
-Read-back of the anchor text and its explicit pair/event/checkpoint links succeeded. CI evidence for the graph implementation is recorded in EVT-0128; this anchor edit itself is documentation, not an additional code test.
+Read-back of the anchor text and its explicit pair/event/checkpoint links succeeded. CI evidence for the graph implementation is recorded in EVT-0128. Latest exact-head audit: run 40059261857, SHA d0bb633ade46b94bf20452c74efbc8137f4cbe99, artifact 12546287920 inspected, zero missing links, zero decode errors, three role decisions accepted. This anchor edit itself is documentation, not an additional code test.
