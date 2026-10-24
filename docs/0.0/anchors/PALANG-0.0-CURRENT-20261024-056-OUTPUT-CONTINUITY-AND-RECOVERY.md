@@ -2,7 +2,7 @@
 
 - Stable ID: `G6IP-RAHM-CURRENT-056-20261024`
 - Production ID: `G6IP-CURRENT-056`
-- Version: 1.0.2
+- Version: 1.0.3
 - Status: REGISTERED / READ-BACK VERIFIED for core chain and mother/index/queue writes; host and full graph gates remain OPEN.
 - Parent current: [CURRENT-055](./PALANG-0.0-CURRENT-20261024-055-FIRST-MASTER-READINESS.md)
 - User Point 0: [POINT-0/005](./GPT6-RAHM-USER-POINT-0-20261024-005-OUTPUT-CONTINUITY-AND-RECOVERY.md)
@@ -43,3 +43,10 @@ Resume from NEXT-050. Also keep NEXT-049 active for graph remediation and real-h
 
 ## Status boundary
 Repository write/read-back and declared CI checks are verified within their exact scopes. Full state recovery from IN and OUT, real clean-host/second-host import, durable host persistence, idle/background execution, and repository-wide link/ID/parent/timestamp remediation remain OPEN / NOT VERIFIED.
+
+
+## Latest strict conformance receipt
+- Workflow hardening commit: `3f9b22f4ce53d7230c12d41b6143a66e3aa162a6`.
+- [Portable RAHM Conformance run 40122001572](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40122001572) completed SUCCESS. Strict exact-byte SHA-256 comparison: 37/37 expected digests matched; schema valid fixture 0 errors; invalid fixture rejected with 4 errors; limited IN/OUT checkpoint-link recovery PASS; package 38 files / 206,063 bytes / SHA-256 `835531e59b3c1dcee0e0f689714fe377bca34c97b45597719e7dc3e30e4b2bb4`.
+- [Living Architecture Audit 40122001601](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40122001601) completed workflow SUCCESS but content result REVIEW_REQUIRED: 3,714 files; 5,495 local links; 11 missing links; 60 unreviewed stable-ID collision groups; 88 production-ID collision groups; 7 reference-ID collision groups; 36 event-number collision groups; 13 ambiguous parent edges.
+- Full state recovery and real host/runtime gates remain OPEN / NOT VERIFIED.
