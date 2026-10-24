@@ -2,7 +2,7 @@
 
 - Stable ID: `G6IP-RAHM-NEXT-051-20261024`
 - Production ID: `G6IP-NEXT-051`
-- Version: 1.0.4
+- Version: 1.0.5
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE.
 - Parent: [CURRENT-057](./PALANG-0.0-CURRENT-20261024-057-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md)
 - Preserve existing gates: [NEXT-050](./PALANG-0.0-NEXT-20261024-050-FULL-RECOVERY-AND-REAL-HOST-IMPORT.md), [NEXT-049](./PALANG-0.0-NEXT-20261024-049-REAL-HOST-TRANSFER-AND-GRAPH-AUDIT.md)
@@ -47,7 +47,7 @@ NEXT-051 remains OPEN/LIVING until all required acceptance criteria have evidenc
 - [~] Global graph triage: post-fix audit pending. Pre-fix findings were 16 link reports (6 real documentation links now fixed; 10 Python fixture false positives), 61 unreviewed stable-ID groups, 88 production-ID groups, 7 reference-ID groups, 36 event-number groups, 13 ambiguous parents and one ambiguous timestamp.
 
 ## Remaining gates — OPEN
-- [ ] Final post-edit strict digest scan and package build.
+- [~] Final strict digest scan and package build: read the latest [portable conformance workflow](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/workflows/rahm-portable-conformance.yml); never rely on an older run for newer bytes.
 - [ ] Full canonical-state reconstruction independently from IN and OUT; compare evidence, failures, corrections, versions and open gates.
 - [ ] Clean independent AI-host import; CI runner transfer is not equivalent.
 - [ ] Second AI-host import.
