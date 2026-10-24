@@ -174,4 +174,8 @@ The governing universal contract is now [UIALAC-2026-10-20-001 v1.3.1](./UNIVERS
 
 
 ## Contract alignment — UIALAC v1.3.1
-The governing universal contract is [UIALAC-2026-10-20-001 v1.3.1](./UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001.md), which adopts this claim-level completeness and evidence-boundary rule. Its exact post-write read-back remains a separate gate; it is not verified merely because an update call returned a commit.
+The governing universal contract is [UIALAC-2026-10-20-001 v1.3.1](./UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001.md), which adopts this claim-level completeness and evidence-boundary rule. The exact contract file was fetched after its update; version v1.3.1 and the claim-level completeness amendment were present, and the Reference Index row was reconciled to READ-BACK VERIFIED.
+
+
+## UIALAC v1.3.1 read-back receipt
+The exact universal contract file was fetched after write. Its header states v1.3.1 and the claim-level completeness amendment is present. The Reference Index now lists UIALAC v1.3.1 as READ-BACK VERIFIED / IDENTIFIERS MATCHED. This is repository-content verification only.
