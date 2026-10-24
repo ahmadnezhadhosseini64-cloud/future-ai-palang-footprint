@@ -8,7 +8,7 @@
 - Canonical registration clock: actual repository commit UTC; Asia/Tehran is derived from that same instant.
 - Canonical source: `docs/architecture/BEHAVIOR-OBSERVATORY/LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md`
 - Library mirror: `/Future AI/Palang Footprint/Master Reference Vault/Reference Documents/LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md`
-- Current continuation: [NEXT-034](../../0.0/anchors/PALANG-0.0-NEXT-20261024-034-MIRROR-SYNC-AND-COLD-START.md)
+- Current continuation: [NEXT-034](../../0.0/anchors/PALANG-0.0-NEXT-20261024-034-LIVE-MIRROR-SYNC-AND-COLD-START.md)
 - Previous 0.0 anchor preserved: [NEXT-033](../../0.0/anchors/PALANG-0.0-NEXT-20261024-033-LIVING-STATUS-AND-COLD-START.md)
 
 ## Purpose
