@@ -170,3 +170,11 @@ Rahm is a controlled validation and behavior-study environment. The host must di
 
 ### Portability and proof boundary
 The package must declare host capabilities and limitations, retain IN/OUT/event lineage and open gaps, and provide reproducible positive/negative conformance tests. Cross-host compatibility is not inferred from GPT-6 registration; it remains OPEN / NOT RUN until a second host independently executes the package and produces evidence.
+
+
+## Host persistence and background execution proof — v1.0.7
+
+- Current Rahm branch checkpoint: [CURRENT-045](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-045-RAHM-PORTABLE-HOST-PERSISTENCE.md), interaction [IN-037](../../0.0/anchors/PALANG-0.0-IN-20261024-037-PORTABLE-RAHM-AND-HOST-PERSISTENCE.md) → [OUT-037](../../0.0/anchors/PALANG-0.0-OUT-20261024-037-PORTABLE-RAHM-AND-HOST-PERSISTENCE.md) → [EVT-0145](../../architecture/BEHAVIOR-TRACE/EVT-0145-PORTABLE-RAHM-HOST-CAPABILITY-ARCHITECTURE-2026-10-24.md).
+- Portable artifacts: `docs/portable/RAHM/` (boot, architecture, host manifest, interaction schema, evidence ledger, conformance tests, export manifest, recovery/rollback).
+- Persistence proof and idle execution proof are separate mandatory capability gates. A manifest declaration is not proof; require restart/idle execution evidence and independent read-back.
+- Current status: artifact writes started; full package read-back, digest reconciliation, JSON/schema validation, restart recovery, persistent memory, idle background and second-host tests remain OPEN / NOT RUN or NOT VERIFIED.
