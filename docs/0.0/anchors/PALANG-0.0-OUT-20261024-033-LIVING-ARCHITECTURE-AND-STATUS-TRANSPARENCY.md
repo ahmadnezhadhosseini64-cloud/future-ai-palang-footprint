@@ -5,7 +5,7 @@
 - Production ID: OUT-033
 - Interaction pair ID: INT-20261024-033
 - Version: 1.0.0
-- Status: REGISTERED / READ-BACK-VERIFICATION-PENDING
+- Status: REGISTERED / READ-BACK VERIFIED
 - Input: [IN-033](./PALANG-0.0-IN-20261024-033-LIVING-ARCHITECTURE-AND-STATUS-TRANSPARENCY.md)
 - Event: [EVT-0131](../../architecture/BEHAVIOR-TRACE/EVT-0131-LIVING-ARCHITECTURE-STATUS-TRANSPARENCY-AND-GROWTH-2026-10-24.md)
 - Next checkpoint: [NEXT-033](./PALANG-0.0-NEXT-20261024-033-LIVING-STATUS-AND-COLD-START.md)
@@ -16,3 +16,7 @@ This output registers the user's repeated request to keep the project visibly ac
 
 ## Required lifecycle
 REGISTER INPUT → WRITE OUTPUT → REGISTER EVENT → UPDATE MASTER/QUEUE/INDEX/NEXT → READ BACK ALL FILES → RUN CI → INSPECT ARTIFACTS → RECONCILE STATUS.
+
+
+## Verification boundary
+The reciprocal pair and canonical graph links have been independently read back. The first two CI attempts exposed a recovery resolver event-selection bug and a regex regression; the failures are retained in EVT-0131. Do not mark CI PASS for this pair until a later run passes both recovery directions and its artifact is inspected.
