@@ -1,7 +1,7 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.3.3",
-  "manifest_status": "STRICT_SHA256_GATE_ACTIVE; 8 UPDATED CORE/MOTHER/INDEX/QUEUE FILE DIGESTS RECONCILED; FINAL RUN PENDING",
+  "version": "1.3.4",
+  "manifest_status": "STRICT_SHA256_GATE_ACTIVE; THREE_DIGEST_MISMATCHES_FOUND_AND_RECONCILED FROM RUN_40122371651; FINAL_RECHECK_PENDING",
   "created_from_checkpoint": "G6IP-RAHM-USER-POINT-0-20261024-005",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [
@@ -117,7 +117,7 @@
       "path": "docs/architecture/INTEGRATION-QUEUE/README.md",
       "version": "current",
       "git_blob_sha": "878fe446b4aca6dbf5dda88399d92909dc359745",
-      "sha256": "1d9939a1d91198053719ebd01d39a7b420474a39b86f341004cbf52cb49fde98"
+      "sha256": "75d4b5478ccf7fc12e4f23d555540a9a7887c09984f1950295229c728924b411"
     },
     {
       "path": "docs/reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md",
@@ -129,13 +129,13 @@
       "path": "docs/reference/REFERENCE-DOCUMENTS/GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md",
       "version": "current",
       "git_blob_sha": "262c3a74656ae97f9a071a8af45dfb879cdf5305",
-      "sha256": "3f951b50082455cfe85a42ad56119c32767faddd11136ebcc416e6ab24ea4266"
+      "sha256": "e5edaec81dbcc6aa6e90284ec1c27367144609b136cebcafc742495174ea7c56"
     },
     {
       "path": "docs/REFERENCE_INDEX.md",
       "version": "current",
       "git_blob_sha": "a8d62868e3bc0106afdc48b73df2f273ad382978",
-      "sha256": "b2094b1b8e6d5d35cb9f789b1bd30b0cd198b1a9eb1f62422dda39cbe01fa281"
+      "sha256": "f16f518a9d5bb72fd8a7cdaacc5c536c97621daf59c1c942163f3a2948a58791"
     },
     {
       "path": "docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md",
@@ -233,19 +233,19 @@
     "persistent_memory": "NOT_VERIFIED",
     "idle_background_execution": "NOT VERIFIED",
     "cross_host": "NOT_RUN",
-    "exact_byte_sha256": "PASS_RUN_40122001572 for prior bytes; rerun against CURRENT-056 v1.0.3, master v1.0.5, HAIF mother v1.4.0, index/queue/inherited master updates",
+    "exact_byte_sha256": "RUN_40122371651 exposed 3 stale manifest digests (queue, inherited master, canonical index); expected values reconciled to exact-byte results; rerun pending",
     "schema_valid_fixture": "PASS_RUN_40122001572",
     "schema_invalid_fixture": "REJECTED_WITH_4_ERRORS_RUN_40122001572",
     "IN_OUT_recovery_equivalence": "PASS_LIMITED_LINK_CHECKPOINT_SCOPE_RUN_40122001572",
     "clean_AI_host_import": "NOT RUN",
     "second_AI_host_import": "NOT RUN",
     "persistence_restart": "NOT VERIFIED",
-    "canonical_mother_index_queue_integration": "CURRENT-056, HAIF mother, inherited master, index and queue updated/read-back; final digest run pending",
+    "canonical_mother_index_queue_integration": "Current checkpoint, HAIF mother, inherited master, index and queue updated/read-back; exact-byte reconciliation is active",
     "schema_workflow_overall": "PASS_RUN_40122001572",
-    "portable_package_build": "PASS_RUN_40122001572; rebuild after manifest v1.3.3",
+    "portable_package_build": "PASS_RUN_40122001572; rebuild after manifest v1.3.4",
     "full_state_recovery": "OPEN / NOT RUN",
     "focused_relative_link_audit": "PASS_13_CORE_AND_MOTHER_FILES_ZERO_BROKEN_LINKS",
     "repository_graph_audit": "REVIEW_REQUIRED_RUN_40122001601"
   },
-  "note": "Digest conformance must compare every manifest-listed file's exact checked-out bytes to a valid lowercase 64-character expected SHA-256, emit explicit MATCH for each, and reject missing/invalid values, mismatches or duplicate paths. The manifest's own digest is emitted in external run evidence to avoid recursive self-hashing. CI results do not prove independent AI-host import or persistent/background operation."
+  "note": "The strict gate reports every mismatch rather than stopping at the first one. Three stale expected SHA-256 values were discovered and reconciled from workflow exact-byte evidence; this failure is preserved in run 40122371651 and is not counted as success. A new conformance run must pass all entries before the manifest is considered reconciled."
 }
