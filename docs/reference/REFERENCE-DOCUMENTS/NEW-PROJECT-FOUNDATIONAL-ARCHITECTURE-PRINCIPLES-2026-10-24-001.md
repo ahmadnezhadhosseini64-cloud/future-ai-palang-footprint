@@ -447,3 +447,12 @@ When the user requests execution or registration, show an explicit state: workin
 - Excavation finding: the prior NEXT-044 acceptance target was stale relative to the live chain. This has been recorded; the old chain was not deleted.
 - Status boundary: repository read-back and target reconciliation are distinct from export, fresh-host recovery, second-project integration, and always-on automation. Those remain OPEN / NOT RUN / NOT VERIFIED until independent evidence exists.
 - Dropbox remains a separate OPEN / WAITING branch and is not the current execution target.
+
+
+## Living Mother Update — CURRENT-051 repository excavation — 2026-10-24
+
+- Additive version: **1.1.6**; v1.1.5 and all earlier versions preserved.
+- Current checkpoint: [CURRENT-051](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-051-REPOSITORY-EXCAVATION-REVIVAL.md), parent [CURRENT-050](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-050-NEW-PROJECT-ARCHITECTURE-STATUS.md).
+- Interaction chain: [IN-044](../../0.0/anchors/PALANG-0.0-IN-20261024-044-REPOSITORY-EXCAVATION-AND-REVIVAL.md) → [OUT-043](../../0.0/anchors/PALANG-0.0-OUT-20261024-044-REPOSITORY-EXCAVATION-AND-REVIVAL.md) → [EVT-0151](../../architecture/BEHAVIOR-TRACE/EVT-0151-REPOSITORY-EXCAVATION-LIVING-STATE-RECONCILIATION-2026-10-24.md) → CURRENT-051 → this mother/index/queue → [NEXT-044](../../0.0/anchors/PALANG-0.0-NEXT-20261024-044-EXTRACTABLE-RAHM-CHILD-AND-COLD-START-TEST.md).
+- Finding retained: NEXT-044's stale CURRENT-047 / NPFAP v1.0.9 target was corrected additively to the current CURRENT-050 chain; historical records remain intact.
+- Status: repository registration and the named read-backs are evidenced; the portable export and fresh-context recovery tests remain OPEN / NOT RUN. Second-project integration and always-on automation remain NOT VERIFIED. Dropbox remains OPEN / WAITING.
