@@ -1221,3 +1221,12 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Next action: [NEXT-048](0.0/anchors/PALANG-0.0-NEXT-20261024-048-FIRST-MASTER-CONFORMANCE.md); first execute [NEXT-044](0.0/anchors/PALANG-0.0-NEXT-20261024-044-EXTRACTABLE-RAHM-CHILD-AND-COLD-START-TEST.md).
 - Event evidence: [EVT-0155](architecture/BEHAVIOR-TRACE/EVT-0155-FIRST-LIVING-MASTER-PORTABLE-RAHM-2026-10-24.md) and [EVT-0154](architecture/BEHAVIOR-TRACE/EVT-0154-LIVING-ARCHITECTURE-HARD-AUDIT-RUN-2026-10-24.md).
 - All unverified items remain OPEN/LIVING. SHA-256, schema, recovery, clean/second-host import, persistence, idle background, repo-wide link/ID remediation and full destination read-back are not claimed passed.
+
+
+## Portable GPT-6 / HAIF living master — CURRENT-055
+- First living master: [FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF](portable/RAHM/FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md).
+- Current checkpoint: [CURRENT-055](0.0/anchors/PALANG-0.0-CURRENT-20261024-055-FIRST-MASTER-READINESS.md).
+- Input/output: [IN-048](0.0/anchors/PALANG-0.0-IN-20261024-048-TEST-HARNESS-FAILURE-AND-LIVING-MASTER-READYNESS.md) → [OUT-047](0.0/anchors/PALANG-0.0-OUT-20261024-047-TEST-HARNESS-FAILURE-AND-LIVING-MASTER-READYNESS.md).
+- Event: [EVT-0157](architecture/BEHAVIOR-TRACE/EVT-0157-TEST-HARNESS-FAILURE-AS-ARCHITECTURE-LEARNING-2026-10-24.md).
+- Next: [NEXT-049](0.0/anchors/PALANG-0.0-NEXT-20261024-049-REAL-HOST-TRANSFER-AND-GRAPH-AUDIT.md), OPEN / LIVING.
+- Evidence: [run 40115178748](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40115178748) passed schema, 24-file digest, limited IN/OUT checkpoint-link and archive-build checks; real-host import and runtime persistence remain unverified.
