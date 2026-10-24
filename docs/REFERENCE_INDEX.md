@@ -1130,3 +1130,12 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Next gate: [NEXT-044 — export and fresh-context recovery](0.0/anchors/PALANG-0.0-NEXT-20261024-044-EXTRACTABLE-RAHM-CHILD-AND-COLD-START-TEST.md).
 - Status: architecture and records registered; perform read-back of this new chain before upgrading its status. NEXT-044 remains OPEN / NOT RUN. Second-project repository and mother path are not identified. Always-on search/background automation is NOT VERIFIED.
 
+
+
+## EVT-0151 — repository excavation and living-state reconciliation — 2026-10-24
+
+- Excavation event: [EVT-0151](architecture/BEHAVIOR-TRACE/EVT-0151-REPOSITORY-EXCAVATION-LIVING-STATE-RECONCILIATION-2026-10-24.md).
+- Finding: the active [NEXT-044](0.0/anchors/PALANG-0.0-NEXT-20261024-044-EXTRACTABLE-RAHM-CHILD-AND-COLD-START-TEST.md) originally targeted CURRENT-047 / NPFAP v1.0.9 while the live chain had advanced to CURRENT-050 / NPFAP v1.1.4.
+- Correction: NEXT-044 now explicitly targets CURRENT-050, IN-043, OUT-042, EVT-0150 and NPFAP v1.1.4; older CURRENT-047 lineage is retained as historical recovery context.
+- Living mother: NPFAP additive v1.1.5.
+- Status: repository records written; read-back and cross-link reconciliation are the next verification step. Export and fresh-host recovery remain OPEN / NOT RUN; second-project integration and always-on automation remain NOT VERIFIED. Dropbox remains OPEN / WAITING.
