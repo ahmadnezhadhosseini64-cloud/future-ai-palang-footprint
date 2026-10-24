@@ -1,36 +1,42 @@
-# NEXT-038 — گام بعدی: تثبیت نقطهٔ ۰ و سپس نقطهٔ ۰.۰
+# NEXT-038 — گام بعدی: ساخت نقطهٔ ۰.۰ از ریشهٔ نقطهٔ ۰ تأییدشده
 
 - Stable ID: `PALANG-NEXT-GPT6-POINT-0-THEN-0.0-2026-10-24-038`
 - Production ID: `G6IP-NEXT-038`
-- Status: OPEN / ACTIVE / LIVING / NOT EXECUTED
-- Parent current: [CURRENT-039](./PALANG-0.0-CURRENT-20261024-039-GPT6-INITIAL-POINT-AND-ZERO-CHAIN.md)
-- Pair: [IN-029](./PALANG-0.0-IN-20261024-029-DECLARE-INITIAL-POINT-AND-LINK-ZERO-CHAIN.md) ↔ [OUT-029](./PALANG-0.0-OUT-20261024-029-DECLARE-INITIAL-POINT-AND-LINK-ZERO-CHAIN.md)
-- Event: [EVT-0137](../../architecture/BEHAVIOR-TRACE/EVT-0137-GPT6-INITIAL-POINT-ZERO-CHAIN-2026-10-24.md)
-- Master: [GPT-6 interactive project living master](../../reference/REFERENCE-DOCUMENTS/GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001.md)
+- Version: 1.1.0
+- Status: OPEN / ACTIVE / LIVING / POINT-0 REGISTERED; POINT-0 READ-BACK RECONCILIATION REQUIRED
+- Parent current / initial point: [CURRENT-039](./PALANG-0.0-CURRENT-20261024-039-GPT6-INITIAL-POINT-AND-ZERO-CHAIN.md)
+- Point 0 record: [GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001](./GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001.md)
+- Latest interaction: [IN-030](./PALANG-0.0-IN-20261024-030-PROMOTE-CURRENT-039-TO-INITIAL-POINT-0.md) ↔ [OUT-030](./PALANG-0.0-OUT-20261024-030-PROMOTE-CURRENT-039-TO-INITIAL-POINT-0.md)
+- Event: [EVT-0138](../../architecture/BEHAVIOR-TRACE/EVT-0138-GPT6-POINT-0-PROMOTION-AND-HAIF-INTEGRATION-2026-10-24.md)
+- Living master: [GPT-6 interactive living master](../../reference/REFERENCE-DOCUMENTS/GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001.md)
+
+## Purpose
+نقطهٔ ۰ اولیه اکنون به‌عنوان ریشهٔ معماری تعریف و در مخزن ثبت شده است. کار بعدی دیگر ساخت نقطهٔ ۰ نیست؛ کار بعدی ساخت یک نقطهٔ ۰.۰ مستقل، قابل‌بازیابی و مبتنی بر وضعیت تأییدشدهٔ نقطهٔ ۰ است.
 
 ## Ordered execution
-### Step A — point 0
-1. بازخوانی CURRENT-039، سند مبنای Project Zero و سند مادر.
-2. تعریف قرارداد پروژه بر اساس این ریشه: دامنه، مرزهای میزبان، خروجی تعاملی موردنظر، حریم خصوصی، قواعد شواهد، معیارهای پذیرش و وابستگی‌های باز.
-3. ساخت پروندهٔ مستقل نقطهٔ ۰ با شناسهٔ یکتا و پیوند به CURRENT-039 و EVT؛ به‌روزرسانی سند مادر بدون حذف تاریخچه.
-4. بازخوانی فایل و سند مادر، تطبیق شناسه‌ها/نسخه/پیوندها و ثبت زمان واقعی commit به UTC و معادل تهران.
-5. تکمیل نقطهٔ ۰ فقط پس از شواهد معیارهای پذیرش.
+1. بازخوانی نقطهٔ ۰، CURRENT-039، EVT-0138 و سند مادر؛ تطبیق شناسه‌ها و پیوندها.
+2. رفع هر پیوند شکسته یا تعارض نسخه پیش از ایجاد checkpoint؛ حفظ تمام نقاط تاریخی.
+3. ساخت پروندهٔ مستقل نقطهٔ ۰.۰ با شناسهٔ یکتا، نسخه، وضعیت، آخرین گام تأییدشده، باقی‌مانده‌ها، موانع، اقدام بعدی و مسیر بازیابی.
+4. اتصال نقطهٔ ۰.۰ ↔ نقطهٔ ۰ ↔ CURRENT-039 ↔ IN/OUT ↔ EVT-0138 ↔ سند مادر ↔ صف معماری.
+5. ثبت زمان commit واقعی به UTC و معادل تهران از همان لحظه؛ زمان پیام و زمان بازخوانی جدا بمانند.
+6. بازخوانی مستقل همهٔ مسیرهای جدید و تطبیق محتوا و پیوندها.
+7. فقط پس از ثبت و بررسی معیارها، وضعیت point-0 read-back reconciliation را به verified ارتقا بده.
+8. سپس اولین نمونهٔ تعاملی کوچک را با قرارداد ورودی/خروجی و معیار پذیرش تعریف کن؛ اجرای نمونه و آزمون بازیابی سرد، تا انجام واقعی NOT RUN بمانند.
 
-### Step B — point 0.0
-1. ساخت چک‌پوینت مستقل و قابل‌بازیابی بر مبنای نتیجهٔ تأییدشدهٔ نقطهٔ ۰.
-2. ثبت آخرین گام تأییدشده، کار باقی‌مانده، موانع، اقدام بعدی، مسیر شواهد و وضعیت هر مقصد.
-3. اتصال نقطهٔ ۰.۰ ↔ نقطهٔ ۰ ↔ CURRENT-039 ↔ IN/OUT ↔ EVT ↔ سند مادر.
-4. بازخوانی و تطبیق زنجیره؛ آزمون بازیابی تا اجرای واقعی NOT RUN می‌ماند.
-
-### Step C — behavior tracking
-هدف قابل‌مشاهدهٔ کاربر، اقدام دستیار، نتیجهٔ ابزار/مخزن، خطا و اصلاح، بازخورد صریح در صورت وجود و شواهد ثبت شوند. واقعیت از فرضیه جدا باشد؛ ارتقای Child به معماری مادر از دروازهٔ بررسی Rahm عبور کند.
+## Inherited governance
+- Apply Future AI / Palang Footprint registration lifecycle and evidence gate.
+- UTC is canonical for repository registration; Tehran is UTC+03:30 from the same commit instant.
+- Keep observed behavior separate from hypotheses; record error prevention and path-drift checks.
+- Child → Rahm → Master; no promotion without evidence.
+- Do not repeat a correctly closed test without real change, new need, error/regression, or conflicting evidence.
+- Keep GitHub, Buffer, Persistent Memory, Library and Dropbox statuses separate.
 
 ## Acceptance gates
-- شناسه‌های یکتا و نسخه؛ همهٔ پیوندها به مسیرهای واقعی مخزن برسند.
-- زمان commit واقعی UTC و معادل تهران از همان لحظه.
-- بازخوانی و تطبیق دقیق شناسه/محتوا.
-- نقطهٔ ۰ و نقطهٔ ۰.۰ دو پروندهٔ مستقل و قابل‌بازیابی باشند.
-- هیچ لنگر تاریخی یا مسئلهٔ باز حذف یا بی‌صدا بسته نشود.
+- Stable and production IDs unique; version and provenance present.
+- Point 0.0 is separate from point 0 and can be resumed independently.
+- Local links resolve and all expected files read back correctly.
+- Actual commit timestamps are sourced from Git, UTC canonical with Tehran equivalent.
+- No historic anchors or open issues are deleted or silently closed.
 
 ## Status boundary
-این صف اجراست، نه مدرک اجرا. نقطهٔ ۰: NOT CREATED / NOT RUN. نقطهٔ ۰.۰: NOT CREATED / NOT RUN. نمونهٔ تعاملی و بازیابی سرد: NOT RUN.
+Point 0 record: created and written; read-back reconciliation is the immediate next verification gate. Point 0.0: NOT CREATED. Interactive prototype: NOT BUILT in this step. Cold-start recovery: NOT RUN. External destinations: NOT VERIFIED.
