@@ -1,0 +1,24 @@
+{
+  "schema": "PALANG-STATUS-RECEIPT-1.0.0",
+  "event_id": "EVT-0131",
+  "interaction_pair_id": "INT-20261024-033",
+  "stage": "CI_TERMINAL",
+  "status": "SUCCESS",
+  "terminal": true,
+  "workflow_run_id": "40062533959",
+  "tested_commit_sha": "d05103dd3593f090f10fafb5a469f6cac69063b1",
+  "timestamps": {
+    "utc": "2026-10-24T04:29:32.685504Z",
+    "tehran": "2026-10-24T07:59:32.685504+03:30",
+    "canonical": "UTC",
+    "tehran_derived_from_same_instant": true
+  },
+  "next_action": "Perform uncoached fresh-session recovery; continue identity collision adjudication and timestamp ambiguity review.",
+  "scope": "repository_workflow_status_only",
+  "chat_ui_heartbeat_proven": false,
+  "host_wide_capture_proven": false,
+  "external_persistence_proven": false,
+  "artifact_id": 12548485418,
+  "artifact_zip_sha256": "508dbfa863bf7b805415a95291f8d881c7be1b097f9d1d8f12f32ea32e225ce5",
+  "preserved_from_artifact": true
+}
