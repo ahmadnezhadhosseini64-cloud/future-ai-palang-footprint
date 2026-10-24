@@ -15,3 +15,7 @@ CURRENT-039 به‌عنوان ریشهٔ ثبت‌شدهٔ پروژه و نقط�
 
 ## Status boundary
 ثبت نقطهٔ ۰ و ادغام مستندی قواعد در مخزن قابل راستی‌آزمایی است. این وضعیت به معنی ساخت نمونهٔ محصول، اجرای نقطهٔ ۰.۰، اجرای آزمون بازیابی سرد یا ثبت در مقصدهای خارج از GitHub نیست.
+
+
+## Read-back receipt
+This exact path was fetched after writing; IN-030, the point-0 record, CURRENT-039, EVT-0138, NEXT-038 and living-master links were present. Scope: repository path/content only; prototype, point 0.0 and cold-start recovery are not implied.
