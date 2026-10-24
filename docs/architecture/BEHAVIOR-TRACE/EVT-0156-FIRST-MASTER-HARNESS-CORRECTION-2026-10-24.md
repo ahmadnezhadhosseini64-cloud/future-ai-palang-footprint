@@ -22,3 +22,10 @@
 - A fixed digest workflow is proven to complete by run 40113998759, but the latest expanded inventory run must be read for current manifest contents.
 - Exact-byte SHA-256 values must be copied from the run output into manifest entries and then verified by a subsequent successful comparison run.
 - Full IN/OUT recovery equivalence, clean/second-host AI import, persistence restart, idle background, and repository-wide ID/link remediation remain OPEN / NOT RUN or NOT VERIFIED.
+
+## Final conformance comparison
+- Run [40114363915](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40114363915) completed SUCCESS on commit `2dd1b7836be7832a02f77a79d9d48c6423317538`.
+- Valid fixture: 0 validation errors. Invalid fixture: 4 validation errors; expected rejection confirmed.
+- Exact-byte SHA-256 comparison: PASS for all 24 files in the manifest inventory.
+- The workflow also emitted the manifest's own SHA-256 as external run evidence; because later manifest status updates change its bytes, use the final post-update run for the final manifest digest.
+- These results do not prove clean-host/second-host AI import, independent IN/OUT state equivalence, persistence, idle background, or full repository-wide graph repair.
