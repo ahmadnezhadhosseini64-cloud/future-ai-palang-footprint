@@ -22,3 +22,7 @@ The first regression run after this change failed three tests (two recovery case
 
 ## Scope boundary
 Repository registration and recovery are not equivalent to automatic capture of every ChatGPT interaction. Fresh-session recovery, host-wide capture, and arbitrary external persistence remain separate tests and cannot be marked PASS based on repository CI alone.
+
+
+## Follow-up failure retained — NEXT label parsing
+The next recovery CI exposed a second defect: the parser interpreted the date portion `NEXT-20261024` of a link target as the checkpoint ID, so two valid fixture recoveries returned PARTIAL. This failure is preserved, not suppressed. The parser now reads the three-digit NEXT label (`NEXT-031`) rather than the date in the filename. The new CI run and artifact read-back are pending.
