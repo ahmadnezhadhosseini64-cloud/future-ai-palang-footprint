@@ -10,11 +10,11 @@
 - Scope / دامنهٔ اثبات: فقط مخزن GitHub، تا وقتی مقصد دیگر جداگانه نوشته و بازخوانی نشده باشد.
 - Parent current point / نقطهٔ والد: `CURRENT-043`
 - Active next action / اقدام بعدی فعال: `NEXT-041` (then NEXT-040; historic NEXT-036 preserved in prior records)
-- Current interaction / تعامل جاری: `INT-20261024-035`
-- Input / ورودی: `IN-035`
-- Output / خروجی: `OUT-035`
-- Event / رویداد: `EVT-0143`
-- Current anchor / لنگر مستقل این شاخه: `CURRENT-043`
+- Current interaction / تعامل جاری شاخهٔ رحم: `INT-20261024-036`
+- Input / ورودی شاخهٔ رحم: `IN-036`
+- Output / خروجی شاخهٔ رحم: `OUT-036`
+- Event / رویداد شاخهٔ رحم: `EVT-0144`
+- Current anchor / لنگر جاری شاخهٔ رحم: `CURRENT-044`; parent branch checkpoint `CURRENT-043` remains preserved.
 
 ## 1. تصمیم و هدف
 این سند، آغاز یک شاخهٔ تازه برای کارهای تعاملی و تصویری در GPT-6 را به معماری موجود Future AI / Palang Footprint متصل می‌کند. «پروژهٔ جدید» به معنی ساخت معماری موازیِ بی‌ارتباط یا حذف تاریخچه نیست؛ این یک شاخهٔ میزبان/محصول است که زیر حاکمیت سند مادر HAIF و زنجیرهٔ نقاط ۰.۰ رشد می‌کند.
