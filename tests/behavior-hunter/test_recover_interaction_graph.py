@@ -55,7 +55,7 @@ class LatestPairRecoveryTests(unittest.TestCase):
     def test_recovery_from_latest_input_anchor(self):
         with tempfile.TemporaryDirectory() as td:
             root = Path(td); self.build_repo(root, latest=31); result = recover("IN", root)
-        self.assertEqual(result["status"], "RECOVERED")
+        self.assertEqual(result["status"], "RECOVERED", result.get("failures"))
         self.assertEqual(result["starting_anchor"], "IN-031")
         self.assertEqual(result["paired_anchor"], "OUT-031")
         self.assertEqual(result["interaction_id"], "INT-20261024-031")
@@ -73,7 +73,7 @@ class LatestPairRecoveryTests(unittest.TestCase):
             out = root / "docs/0.0/anchors/PALANG-0.0-OUT-20261024-031-TEST.md"
             out.write_text(out.read_text(encoding="utf-8").replace("IN-031", "IN-999"), encoding="utf-8")
             result = recover("IN", root)
-        self.assertEqual(result["status"], "BLOCKED")
+        self.assertEqual(result["status"], "BLOCKED", result.get("failures"))
 
     def test_current_master_reference_is_required(self):
         with tempfile.TemporaryDirectory() as td:
