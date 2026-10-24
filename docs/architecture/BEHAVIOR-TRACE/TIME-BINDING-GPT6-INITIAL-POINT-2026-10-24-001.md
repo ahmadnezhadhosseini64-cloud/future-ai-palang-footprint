@@ -12,8 +12,8 @@
 | NEXT-038 | `1e315e932af95796e4ff5f6aee36452f8f1f28a1` | `2026-10-24T07:26:23Z` | `2026-10-24T10:56:23+03:30` |
 | EVT-0137 | `eebb678cdbb6198401d74e85c66806c176fe27e6` | `2026-10-24T07:27:56Z` | `2026-10-24T11:00:56+03:30` |
 | Living master update | `f0427a58d0a0b69bc3d43ae74b4d317563ba3863` | `2026-10-24T07:26:54Z` | `2026-10-24T10:56:54+03:30` |
-| Living master v1.2.0 | `f9ea3971c022750ad54bdd2be8181b79573b8f92` | `2026-10-24T07:27:00Z` | `2026-10-24T10:57:00+03:30` |
-| 0.0 README index | `740841aee7edc311eb18ac004133d5ba689469d7` | `2026-10-24T07:27:08Z` | `2026-10-24T10:57:08+03:30` |
+| Living master v1.2.0 | `482dc57f39c7b4c2bfdc798ed2ed67fde21dc875` | `2026-10-24T07:28:14Z` | `2026-10-24T11:01:44+03:30` |
+| 0.0 README index | `41d33237396dfc1e81c5600347d7cf1196fdf930` | `2026-10-24T07:28:20Z` | `2026-10-24T11:01:50+03:30` |
 
 ## Verification boundary
 All seven primary files (IN-029, OUT-029, CURRENT-039, NEXT-038, EVT-0137, living master v1.2.0, and `docs/0.0/README.md`) were fetched again after the writes. File presence and expected identifiers were confirmed. The OUT-029, CURRENT-039, and EVT-0137 rows use their final last-change commit timestamps after read-back receipts were added. This is repository read-back evidence, not proof of execution of point 0, point 0.0, prototype build, cold-start recovery, or any external destination.
