@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001`
 - Production ID / شناسهٔ تولید: `NPFAP-20261024-001`
-- Version / نسخه: 1.1.0
+- Version / نسخه: 1.1.1
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING / EVOLVABLE / EXTRACTABLE / RECOVERY-ORIENTED
 - Scope / دامنه: الگوی پایه برای هر پروژهٔ جدید در خانوادهٔ Future AI / Palang Footprint / HAIF و شاخه‌های محصول/میزبان آن؛ با سازگارسازی مستند برای پروژه‌های دیگر
 - Source anchor / منشأ: [G6IP-ARCH-ZERO-20261024-001](../../0.0/anchors/PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md)
@@ -356,4 +356,23 @@ Repository write and read-back are distinct. Registration is not validation; val
 
 ### Continuity rule / قاعدهٔ تداوم
 CURRENT-048 is additive to CURRENT-047 and all earlier 0.0 checkpoints. Never delete or silently replace history. Continue with full read-back of IN-041, OUT-040, EVT-0148, CURRENT-048, this mother, and the reference index; then execute NEXT-044. Keep the second-project connection pending until its exact destination is verified.
+
+
+
+## Living Mother Update — Read-back confirmation for CURRENT-048 chain — 2026-10-24
+
+- **Additive version / نسخهٔ افزایشی:** 1.1.1
+- **Verified current anchor:** [CURRENT-048](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-048-LIVING-ARCHITECTURE-SUMMARY-AND-RECOVERY.md)
+- **Verified input:** [IN-041](../../0.0/anchors/PALANG-0.0-IN-20261024-041-LIVING-ARCHITECTURE-SUMMARY-AND-RECOVERY.md)
+- **Verified output:** [OUT-040](../../0.0/anchors/PALANG-0.0-OUT-20261024-040-LIVING-ARCHITECTURE-SUMMARY-AND-RECOVERY.md)
+- **Verified event:** [EVT-0148](../../architecture/BEHAVIOR-TRACE/EVT-0148-LIVING-ARCHITECTURE-SUMMARY-AND-RECOVERY-2026-10-24.md)
+- **Next gate:** [NEXT-044](../../0.0/anchors/PALANG-0.0-NEXT-20261024-044-EXTRACTABLE-RAHM-CHILD-AND-COLD-START-TEST.md)
+
+### Read-back evidence / شواهد بازخوانی
+The repository paths and contents for IN-041, OUT-040, EVT-0148, CURRENT-048, NEXT-044, this mother, the reference index, and the Adaptive Discovery architecture were fetched after the corresponding writes. IN-041, OUT-040, EVT-0148, and CURRENT-048 were then updated to state READ-BACK VERIFIED. This verifies repository content retrieval and identity/path presence. It does not verify export/recovery, fresh-host adoption, background automation, or second-project integration.
+
+مسیر و محتوای فایل‌های زنجیره پس از نوشتن دوباره از مخزن خوانده شد و وضعیت چهار رکورد ورودی، خروجی، رویداد و نقطهٔ جاری به «بازخوانی تأیید شد» ارتقا یافت. این تأیید فقط به دریافت محتوا و وجود مسیر/شناسه مربوط است؛ آزمون استخراج و بازیابی، پذیرش در میزبان تازه، اجرای خودکار پس‌زمینه یا اتصال واقعی پروژهٔ دوم را اثبات نمی‌کند.
+
+### Continuation / ادامه
+CURRENT-048 is the active additive checkpoint. Preserve CURRENT-047 and all earlier anchors. NEXT-044 remains OPEN / NOT RUN and is the next execution gate.
 
