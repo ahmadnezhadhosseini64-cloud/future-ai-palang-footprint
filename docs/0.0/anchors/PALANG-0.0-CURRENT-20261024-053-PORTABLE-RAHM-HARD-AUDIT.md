@@ -35,3 +35,7 @@ Preserve → classify → provenance → stable/production ID + version → regi
 
 ## Continuity
 Resume from NEXT-047, but execute NEXT-044 first because it is the existing active export/recovery acceptance gate. Preserve historical points and failed evidence. Do not rerun a passing test without real change, new deployment, need, regression or contradictory evidence.
+
+
+## Read-back status
+- This section will be replaced with the fetched write/read-back evidence after verification.
