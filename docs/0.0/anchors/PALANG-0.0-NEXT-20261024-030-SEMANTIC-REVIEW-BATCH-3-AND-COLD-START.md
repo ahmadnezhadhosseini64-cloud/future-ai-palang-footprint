@@ -32,3 +32,10 @@
 - Remaining collision groups, exact duplicates, ambiguous parents and proposed aliases: OPEN until source-backed review.
 - EVT-0089 line 21 timezone: unresolved; do not infer UTC.
 - No previous 0.0 checkpoint is replaced.
+
+
+## Post-decision verification — run 40059155300
+- [Living Architecture Audit](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40059155300) PASS on exact audited SHA `899bb63ba6461809b59a940e260da6e482f87d48`; artifact `12547095688` inspected; SHA-256 `4b9ba4f16d6d7fdbe2a3949c15948557e92239ce2df7b496cad24658b0a46329`.
+- 2,728 total files including evidence; 866 source files; 3,719 local links; zero missing links; zero decode errors.
+- Three role decisions were loaded and all three were accepted against exact source hashes: one Stable-ID and two Production-ID groups. Raw counters remain unchanged; 8 line-level occurrences are marked reviewed and 1,416 remain unreviewed.
+- Six semantic-role tests passed. The separate fresh-session test remains NOT RUN and cannot be inferred from this CI result.
