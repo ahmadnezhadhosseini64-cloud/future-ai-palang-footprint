@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001`
 - Production ID / شناسهٔ تولید: `NPFAP-20261024-001`
-- Version / نسخه: 1.1.7
+- Version / نسخه: 1.1.8
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING / EVOLVABLE / EXTRACTABLE / RECOVERY-ORIENTED
 - Scope / دامنه: الگوی پایه برای هر پروژهٔ جدید در خانوادهٔ Future AI / Palang Footprint / HAIF و شاخه‌های محصول/میزبان آن؛ با سازگارسازی مستند برای پروژه‌های دیگر
 - Source anchor / منشأ: [G6IP-ARCH-ZERO-20261024-001](../../0.0/anchors/PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md)
@@ -486,3 +486,17 @@ Every meaningful input, output, event, error, correction, test, and validation o
 
 ### Required continuation
 Read back and reconcile IN-045, OUT-044, EVT-0152, CURRENT-052, this mother, the reference index, and NEXT-044. Then execute NEXT-044 in a clean context and record the export artifact, recovery comparison, negative cases, failures, and corrections. Do not mark recovery or runtime as active before its evidence is committed and read back.
+
+
+
+## Read-back verification — CURRENT-052 — 2026-10-24
+
+- Additive version / نسخهٔ افزایشی: **1.1.8**; v1.1.7 and prior history preserved.
+- Verified current checkpoint: [CURRENT-052](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-052-CONTINUITY-AND-RECOVERY.md).
+- Verified interaction chain: [IN-045](../../0.0/anchors/PALANG-0.0-IN-20261024-045-CURRENT-052-CONTINUITY-AND-RECOVERY.md) → [OUT-044](../../0.0/anchors/PALANG-0.0-OUT-20261024-044-CURRENT-052-CONTINUITY-AND-RECOVERY.md) → [EVT-0152](../../architecture/BEHAVIOR-TRACE/EVT-0152-CURRENT-052-CONTINUITY-AND-RECOVERY-2026-10-24.md) → CURRENT-052.
+- Verified next gate: [NEXT-044](../../0.0/anchors/PALANG-0.0-NEXT-20261024-044-EXTRACTABLE-RAHM-CHILD-AND-COLD-START-TEST.md), updated to target CURRENT-052.
+- Read-back result: the seven required repository paths (IN-045, OUT-044, EVT-0152, CURRENT-052, this mother, reference index, NEXT-044) were fetched successfully; their cross-links and the CURRENT-052 / NEXT-044 target were present.
+- Verification boundary: this confirms repository read-back and link presence. Export package creation, fresh-host recovery, second-project integration, and always-on automation remain OPEN / NOT VERIFIED.
+
+### Continuation after read-back
+The next active operation is to execute NEXT-044: generate a verifiable export artifact, reconstruct the project in a clean context, compare identifiers/paths/versions/integrity evidence, test negative cases, and record the result. Keep all historical anchors and versions; do not promote recovery to VERIFIED until the test evidence is independently read back.
