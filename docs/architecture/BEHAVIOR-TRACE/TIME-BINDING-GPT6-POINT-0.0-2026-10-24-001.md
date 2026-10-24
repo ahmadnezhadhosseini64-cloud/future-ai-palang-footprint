@@ -4,7 +4,7 @@
 - Version: 1.0.0
 - Status: COMMIT TIMES FETCHED FROM GITHUB; UTC CANONICAL; Tehran = UTC+03:30.
 - User-message timestamp: UNKNOWN / NOT PROVIDED. Repository commit time is not a substitute.
-- Current checkpoint: [CURRENT-040](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-040-GPT6-POINT-0.0-RECOVERY-CHECKPOINT.md).
+- Current checkpoint: [CURRENT-040](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-040-GPT6-POINT-0.0-RECOVERY-CHECKPOINT.md).\n- Architecture zero: [G6IP-ARCH-ZERO-20261024-001](../../0.0/anchors/PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md).\n- Latest interaction: IN-032 / OUT-032 / EVT-0140.
 - Point 0.0: [G6IP-POINT-0.0-20261024-001](../../0.0/anchors/GPT6-INTERACTIVE-PROJECT-POINT-0.0-CHECKPOINT-2026-10-24-001.md).
 
 | Artifact | Commit SHA | Canonical UTC | Tehran equivalent |
@@ -30,3 +30,22 @@ On restart, read CURRENT-040 → Point 0.0 → inherited architecture master v1.
 
 ## Ledger self-timestamp
 - Pre-final ledger revision: `1be7b778b63097fade916d27e5ddd1d41afa835d` — UTC `2026-10-24T08:06:36Z`; Tehran `2026-10-24T11:36:36+03:30`. The latest revision's own commit timestamp is authoritative in GitHub commit metadata; embedding a self-referential timestamp would make the ledger stale with each update.
+
+
+## Architecture-zero registration time anchors — 2026-10-24
+| Artifact / آیتم | Commit SHA | Canonical UTC | Tehran equivalent |
+|---|---|---|---|
+| Architecture zero initial write | `b666d0e9f0e597d0220d3f91ab4ae46e8fb7df1d` | `2026-10-24T08:29:21Z` | `2026-10-24T11:59:21+03:30` |
+| IN-032 | `f6faa44f5100c6d124051951594b648711d8fc2f` | `2026-10-24T08:30:30Z` | `2026-10-24T12:00:30+03:30` |
+| OUT-032 | `a153bcd99565b58ab3882ffb70003323595d75b2` | `2026-10-24T08:30:39Z` | `2026-10-24T12:00:39+03:30` |
+| EVT-0140 | `2fc201624958237e8fcfce9b10e481895317ab07` | `2026-10-24T08:30:45Z` | `2026-10-24T12:00:45+03:30` |
+| Point 0.0 updated | `5780d30cc370664684513ab9b2dd0d702318e7d4` | `2026-10-24T08:30:58Z` | `2026-10-24T12:00:58+03:30` |
+| NEXT-039 updated | `b15849aaaf287481263ebe9631786ed7bedc3d8d` | `2026-10-24T08:31:06Z` | `2026-10-24T12:01:06+03:30` |
+| OUT-032 read-back receipt | `4a75191d99ed309a2b1ccd043ace98ca74cb06fe` | `2026-10-24T08:31:13Z` | `2026-10-24T12:01:13+03:30` |
+| 0.0 registry updated | `7e77ec6854799bccf87b0c2ed487bb6f77a8eba2` | `2026-10-24T08:30:12Z` | `2026-10-24T12:00:12+03:30` |
+| Inherited architecture master v1.0.4 latest update | `2b4b70cc1e64c8b36b6bf2ffd74d2abcbc88987e` | `2026-10-24T08:32:05Z` | `2026-10-24T12:02:05+03:30` |
+| GPT-6 living master latest update | `677bfa923daf85f2a42e6ee1cf17c9b20537d462` | `2026-10-24T08:32:36Z` | `2026-10-24T12:02:36+03:30` |
+| Architecture zero final link/read-back update | `4c93fdec8f38ca08764d05b112ce768930d9142a` | `2026-10-24T08:31:59Z` | `2026-10-24T12:01:59+03:30` |
+| CURRENT-040 latest update | `435c2eba168aad46fb5f8df8eee6a195d28441ae` | `2026-10-24T08:32:11Z` | `2026-10-24T12:02:11+03:30` |
+
+The current revision of this ledger must use its own actual Git commit timestamp as canonical; it is intentionally not embedded here to avoid a self-referential timestamp becoming stale.
