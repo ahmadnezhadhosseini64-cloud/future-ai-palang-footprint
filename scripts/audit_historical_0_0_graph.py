@@ -77,7 +77,13 @@ for p in source_files:
     evt = re.match(r"EVT-(\d+)-", p.name)
     if evt: evt_num_map[evt.group(1)].append(p.as_posix())
     links = []
-    for m in re.finditer(r"!??\[[^\]]*\]\(([^)]+)\)", text):
+    # Markdown links embedded in source-code test fixtures are examples, not repository navigation edges.
+    # Audit navigation links only in documentation formats; still scan all text files for IDs and provenance.
+    if p.suffix.lower() in {".md", ".markdown", ".mdx", ".rst"}:
+        link_matches = re.finditer(r"!??\[[^\]]*\]\(([^)]+)\)", text)
+    else:
+        link_matches = ()
+    for m in link_matches:
         target = m.group(1).strip().split()[0].strip("<>")
         if not target or target.startswith("#"): continue
         u = urlparse(target)
