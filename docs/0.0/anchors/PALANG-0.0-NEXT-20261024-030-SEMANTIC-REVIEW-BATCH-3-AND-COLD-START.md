@@ -39,3 +39,11 @@
 - 2,728 total files including evidence; 866 source files; 3,719 local links; zero missing links; zero decode errors.
 - Three role decisions were loaded and all three were accepted against exact source hashes: one Stable-ID and two Production-ID groups. Raw counters remain unchanged; 8 line-level occurrences are marked reviewed and 1,416 remain unreviewed.
 - Six semantic-role tests passed. The separate fresh-session test remains NOT RUN and cannot be inferred from this CI result.
+
+
+## Exact-current-head verification — run 40059261857
+- Audit [40059261857](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40059261857) SUCCESS on exact HEAD `d0bb633ade46b94bf20452c74efbc8137f4cbe99`; artifact `12546287920` inspected; ZIP SHA-256 `065e43b81123d6aeb4b70ddbed8506c2a326459ea147109da46e6c9e682b7f5f`.
+- UTC `2026-10-24T03:40:37Z` / Tehran `2026-10-24T07:10:37+03:30`.
+- 2,730 files including evidence, 866 source files, 3,719 local links, zero missing links, zero decode errors.
+- Three source-hash-verified role decisions accepted; 8 occurrences reviewed and 1,416 unreviewed. Raw collision counts remain unchanged.
+- Six semantic-role tests passed. Fresh-session recovery NOT RUN; host-wide capture NOT PROVEN; external persistence NOT VERIFIED.
