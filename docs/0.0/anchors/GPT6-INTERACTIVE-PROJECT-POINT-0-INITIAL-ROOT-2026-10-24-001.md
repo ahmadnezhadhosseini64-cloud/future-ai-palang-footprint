@@ -13,6 +13,8 @@
 - Living master: [GPT-6 interactive project living master](../../reference/REFERENCE-DOCUMENTS/GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001.md)
 - Next continuation: [NEXT-038 — point 0.0](./PALANG-0.0-NEXT-20261024-038-DEFINE-POINT-0-THEN-0.0.md)
 
+- Inherited architecture mother / سند مادر معماری به‌ارث‌رسیده: [GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001](../../reference/REFERENCE-DOCUMENTS/GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md)
+
 ## 1. Meaning of point 0
 این پرونده تعیین می‌کند که ریشهٔ مستقل و پیش‌تر ثبت‌شدهٔ CURRENT-039، نقطهٔ ۰ اولیهٔ پروژهٔ جدید باشد. این یک تعیین نقش و اتصال معماری است؛ نه ادعای اینکه تمام محصول ساخته یا آزموده شده است. CURRENT-037، CURRENT-038 و Project Zero baseline به‌عنوان پیشینه حفظ می‌شوند.
 
