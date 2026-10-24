@@ -724,3 +724,10 @@ Current active gate remains [EVT-0122](../../architecture/BEHAVIOR-TRACE/EVT-012
 - Durable receipt: [STATUS-20261024-EVT-0131-RUN-40061873837.json](../../architecture/BEHAVIOR-TRACE/STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40061873837.json).
 - [Run 40061873837](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40061873837) passed 71 tests on tested SHA `edd82d08311c03f0506c651e5c33d128a0d70a35`; artifact `12547921317` inspected, ZIP SHA-256 `c44071afab49df4bfb33141f432db059e21455f3161801f4d711efd34d690f1f`.
 - Pair-033 recovery both directions RECOVERED; ledger PASS with 4 hash-linked records; status receipt SUCCESS. Fresh-session recovery remains NOT RUN; Issues #19/#20/#21 remain OPEN.
+
+
+## Living graph drift detection — EVT-0131 / LAUC 1.4.0
+- Read-only drift checker: `scripts/behavior-hunter/check_living_graph_drift.py`; tests: `tests/behavior-hunter/test_check_living_graph_drift.py`; CI manifest: `living-graph-drift.json`.
+- Run [40062120276](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40062120276) passed 74 tests on tested SHA `e82839c679b52fb646824235db59092fd129148e`; artifact `12546884666` inspected, ZIP SHA-256 `e45208b1bd2b63fa4e30fedcf27b9701532b8c85feee298ae18cbd6105c0d332`.
+- Drift manifest PASS: 6 canonical graph nodes checked, zero failures; both pair recovery directions RECOVERED. Ledger version 1.4.0 is appended; next CI must verify its 5-record hash chain.
+- The checker is read-only and repository-scoped. Fresh-session recovery and external persistence remain unproven.
