@@ -117,6 +117,12 @@ jobs:
           set -euo pipefail
           python3 scripts/audit_timestamps.py | tee audit-output/timestamp-audit-run.txt
 
+      - name: Test source-hash-verified semantic role decisions
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m unittest discover -s tests -p test_semantic_role_decisions.py -v
+
       - name: Build canonical historical graph manifest and validate edges
         shell: bash
         run: |
@@ -133,7 +139,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          python3 -m py_compile scripts/audit_timestamp_pairs_semantic.py scripts/host_adapter.py scripts/host_adapter_github_worker.py scripts/test_host_adapter.py
+          python3 -m py_compile scripts/audit_timestamp_pairs_semantic.py scripts/host_adapter.py scripts/host_adapter_github_worker.py scripts/test_host_adapter.py scripts/semantic_role_decisions.py scripts/build_historical_graph_manifest.py
 
       - name: Test durable host adapter
         shell: bash
