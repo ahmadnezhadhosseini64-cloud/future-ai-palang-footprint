@@ -3,7 +3,7 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.8.6
+- Version: 1.8.7
 - Date: 2026-10-20
 - Exact Time: 11:25 local project time, minute precision; exact seconds not captured.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
@@ -1767,7 +1767,7 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - Recovery verifier: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129551204 — PASS, both IN-051 and OUT-050 recovered the same canonical repository state; zero verifier failures; all six open-gate categories preserved.
 - First verifier run [40129456947](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129456947) failed due to test-code path/field assumptions. Corrected in commit `bf9b121fbcee82475696e98c8c5d9b25e5e683e8`; retest passed. The failure remains in history.
 - Latest global audit at run 40129551204: 3,820 files; 5,564 Markdown links; zero missing links; 62 Stable-ID collision groups (61 unreviewed), 88 Production-ID groups, 7 Reference-ID groups, 36 event-number groups, 13 ambiguous parent edges and one ambiguous timestamp. Content remains REVIEW_REQUIRED.
-- The strict package baseline 40129104156 passed before the latest edits; a final post-update strict digest/package run is required. Latest run history: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/workflows/rahm-portable-conformance.yml
+- The strict package baseline 40129104156 passed before the latest edits; the latest strict workflow history is authoritative for current-byte verification. Latest run history: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/workflows/rahm-portable-conformance.yml
 - External AI-host import, second-host import, persistence restart and idle/background execution remain OPEN / NOT VERIFIED.
 
 ## NEXT-051 status
