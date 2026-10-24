@@ -35,7 +35,16 @@ def _pair_id(text):
     return m.group(1) if m else None
 
 def _event_id(text):
-    candidates = re.findall(r"\bEVT-\d{4}\b", text)
+    # Prefer an explicitly labeled current/result event. Earlier anchors often cite
+    # a prior event before the current result event; taking the first EVT token can
+    # incorrectly bind a new pair to stale history.
+    explicit = re.search(
+        r"(?mi)^\\s*-?\\s*(?:Result event|Event):\\s*(?:\\[[^]]*\\]\\()?\\s*(EVT-\\d{4})",
+        text,
+    )
+    if explicit:
+        return explicit.group(1)
+    candidates = re.findall(r"\\bEVT-\\d{4}\\b", text)
     return candidates[0] if candidates else None
 
 def discover_latest_pair(root):
