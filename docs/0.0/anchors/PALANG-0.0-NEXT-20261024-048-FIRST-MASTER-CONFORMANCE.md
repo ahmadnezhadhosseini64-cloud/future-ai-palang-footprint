@@ -39,3 +39,13 @@ Test ID; exact input; commit/artifact version; tool/version; host/model; actual 
 - Persistence after restart and idle/background execution in an authorized runtime.
 - Repository-wide remediation of 11 missing links, 60 unreviewed Stable-ID collision groups, other ID collision groups, 13 ambiguous parent edges and one ambiguous timestamp.
 - Recheck manifest digests after any package file changes; update and read back base mother/index/queue after any further architectural changes.
+
+## Latest verification receipt — run 40114697473
+- [x] Schema valid/invalid fixture conformance passed (0 errors / 4 rejection errors).
+- [x] Exact-byte SHA-256 comparison passed for all 24 manifest entries.
+- [x] Limited IN/OUT recovery equivalence passed for CURRENT/NEXT/master links and open-gate preservation. Full canonical-state/evidence reconstruction remains OPEN.
+- [x] Portable archive built with 25 files; SHA-256 `109cdb9af62f9f4f270aafea96076a5e0177877eb553551ed2fa268e997478df`.
+- [x] Evidence: [run 40114697473](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40114697473); [package artifact](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40114697473/artifacts/12567559136).
+
+## Remaining open gates
+Full canonical-state reconstruction from raw IN and OUT; real independent AI-host import; second-host conformance; persistent memory after restart; idle/background execution; repo-wide link/identifier collision remediation and ambiguous-parent/timestamp review. Do not mark these complete based on synthetic CI or artifact creation.
