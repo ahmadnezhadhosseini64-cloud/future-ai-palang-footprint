@@ -706,3 +706,9 @@ Current active gate remains [EVT-0122](../../architecture/BEHAVIOR-TRACE/EVT-012
 - [Run 40061600048](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40061600048) SUCCESS on tested SHA `2968455a8d72894fb167b6189783937e94abdf4a`; artifact 12548055321 inspected; ZIP SHA-256 `03a3faedb32276f315d314e1f89f030ad7d41ff8de90c4b4da720daaf7732fa2`.
 - Both recovery directions recovered IN-033/OUT-033, EVT-0131 and NEXT-033 with zero failures. Candidate tests: 2 CANDIDATE_READY, no parse errors. Architecture ledger PASS with 4 hash-linked records. Proposal gate remains owner-gated (PENDING); no automatic canonical mutation. Terminal receipt SUCCESS.
 - Fresh-session recovery NOT RUN; host-wide capture/external persistence NOT PROVEN; Issues #19/#20/#21 OPEN.
+
+
+## EVT-0131 latest-main re-verification — 40061688861
+- Run 40061688861 SUCCESS on tested SHA `ee0f3c24431acd0f9be053fc6299301f0217d95b`; artifact 12547334125 inspected; ZIP SHA-256 `8278751f31a44e7fbd377a49aa64f688d080d87a7856ac000c00149dce891670`.
+- IN-033/OUT-033 recovered both directions; EVT-0131/NEXT-033 present; zero failures. 2 candidate tests CANDIDATE_READY, no parse errors. Ledger PASS with 4 hash-linked records. Proposal gate remains owner-gated and does not mutate MASTER. Terminal receipt SUCCESS.
+- Fresh-session recovery NOT RUN; host-wide capture/external persistence NOT PROVEN; Issues #19/#20/#21 OPEN.
