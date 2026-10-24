@@ -1247,3 +1247,9 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - Audit [40016726450](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40016726450) PASS; artifact `12529305164` inspected; zero missing local links.
 - [NEXT-028](./anchors/PALANG-0.0-NEXT-20261023-028-POST-REPAIR-AUDIT-AND-SEMANTIC-RECONCILIATION.md) remains ACTIVE/LIVING for source-backed semantic reconciliation.
 - Previous 0.0 anchors preserved; fresh-session recovery NOT RUN; Issues #20/#21 OPEN.
+
+
+## Active semantic reconciliation — EVT-0128 / NEXT-029
+- [IN-030](./anchors/PALANG-0.0-IN-20261024-030-CONTINUE-SEMANTIC-RECONCILIATION.md) / [OUT-030](./anchors/PALANG-0.0-OUT-20261024-030-CONTINUE-SEMANTIC-RECONCILIATION.md) preserve this continuation.
+- [EVT-0128](../architecture/BEHAVIOR-TRACE/EVT-0128-SEMANTIC-IDENTITY-ADJUDICATION-BATCH-1-2026-10-24.md) and the canonical/alias decision register record one source-backed role adjudication.
+- [NEXT-029](./anchors/PALANG-0.0-NEXT-20261024-029-SEMANTIC-REVIEW-BATCH-2-AND-FRESH-SESSION.md) is active for batch-2 semantic review, audit integration and fresh-session recovery.
