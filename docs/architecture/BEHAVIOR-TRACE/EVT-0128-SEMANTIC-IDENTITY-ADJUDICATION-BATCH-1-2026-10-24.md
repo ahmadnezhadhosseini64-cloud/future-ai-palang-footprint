@@ -64,3 +64,11 @@ Evidence at audit SHA `ffc4fb8136cdd4168910f8c0ba58d6619fddfa13`:
 - Git history: operational path `dfbed7d0c4e55a4d0caf443a0fd2b310dccd369e` at `2026-09-13T19:14:10Z`; reference copy `af9cdb562ec54fc7df0ac07b99a60d69a0ef372a` at `2026-09-28T22:31:02Z`. Both had zero inbound/outbound local links in the audited manifest.
 - Roles: `OPERATIONAL_ARCHITECTURE_PLACEMENT_CANDIDATE` and `REFERENCE_VAULT_MIRROR_CANDIDATE`. The role distinction is recorded; exclusive canonical promotion remains provisional. No rename/delete/merge.
 - Machine-readable decision `H0-ID-REVIEW-003` was appended to `data/interaction-pairs/semantic-role-decisions.jsonl`; the next audit must prove it is accepted against the exact current source hashes.
+
+
+## Current-head proof after third decision — run 40059155300
+- [Living Architecture Audit run 40059155300](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40059155300): SUCCESS on exact audited SHA `899bb63ba6461809b59a940e260da6e482f87d48`; artifact `12547095688` downloaded and inspected; ZIP SHA-256 `4b9ba4f16d6d7fdbe2a3949c15948557e92239ce2df7b496cad24658b0a46329`.
+- Snapshot: 2,728 files including generated evidence; 866 source files; 3,719 local-link edges; zero missing links; zero decode errors.
+- Machine-readable role ledger: 3 decisions loaded, all 3 accepted against source hashes: 1 Stable-ID group and 2 Production-ID groups role-adjudicated. Raw counts remain 60 Stable-ID, 71 Production-ID, 7 Reference-ID and 30 event-number collision groups; 11 exact duplicate groups; 13 ambiguous parents; 11 alias proposals. Review queue: 8 line-level occurrences adjudicated, 1,416 remain unreviewed.
+- Six semantic-role tests passed in this audit run. [Cross-Layer Integrity Gate run 40059155289](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40059155289) is triggered on the same SHA; its final result must be checked separately.
+- This proves role-decision ingestion and source-hash checks in the repository audit. It does not close the global semantic census, prove fresh-session recovery, or prove host-wide capture/external persistence.
