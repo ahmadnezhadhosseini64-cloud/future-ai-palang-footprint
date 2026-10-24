@@ -189,3 +189,10 @@ Continue collecting observable interaction and evaluator behavior as evidence-ba
 - Both IN/OUT recovery manifests for pair 033 returned RECOVERED with zero failures; ledger PASS, 4 hash-linked records; proposal gate remains owner-gated; status receipt SUCCESS.
 - This is repository workflow visibility, not a ChatGPT UI heartbeat. Fresh-session recovery remains NOT RUN; host-wide capture and external persistence remain NOT PROVEN.
 - Current active continuation: [EVT-0131](../BEHAVIOR-TRACE/EVT-0131-LIVING-ARCHITECTURE-STATUS-TRANSPARENCY-AND-GROWTH-2026-10-24.md) → [NEXT-033](../../0.0/anchors/PALANG-0.0-NEXT-20261024-033-LIVING-STATUS-AND-COLD-START.md).
+
+
+## Graph drift detection — EVT-0131
+- Read-only detector: `scripts/behavior-hunter/check_living_graph_drift.py`; tests: `tests/behavior-hunter/test_check_living_graph_drift.py`; workflow manifest: `living-graph-drift.json`.
+- Run 40062120276 passed 74 tests; six graph nodes were checked, zero drift failures were found, both IN/OUT directions recovered the current pair, and a durable receipt was located.
+- Durable receipt: [STATUS-20261024-EVT-0131-RUN-40062120276.json](../BEHAVIOR-TRACE/STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40062120276.json).
+- This check is repository-scoped; separate fresh-session recovery remains NOT RUN.
