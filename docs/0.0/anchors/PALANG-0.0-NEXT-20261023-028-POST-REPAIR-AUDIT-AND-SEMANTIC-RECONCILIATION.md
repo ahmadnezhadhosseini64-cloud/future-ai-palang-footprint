@@ -38,3 +38,10 @@ The prior audit artifact is verified evidence of the earlier state, not proof of
 - 2,680 files, 858 source files, 1,822 generated evidence files, 3,644 local-link edges, 0 missing links.
 - Remaining: 60 Stable ID collisions, 71 Production ID collisions, 7 reference-ID collisions, 30 event-number collisions, 11 exact duplicates, 13 ambiguous parent edges, 11 proposed aliases, one unresolved timezone.
 - This proves structural/link integrity on the audited SHA, not a clean semantic identity graph. Continue source/history adjudication without bulk renaming/deletion.
+
+
+## Additive continuation — EVT-0128 / NEXT-029
+- First source-backed role adjudication: [EVT-0128](../../architecture/BEHAVIOR-TRACE/EVT-0128-SEMANTIC-IDENTITY-ADJUDICATION-BATCH-1-2026-10-24.md).
+- Decision register updated: [H0CALDR](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-CANONICAL-ALIAS-LINEAGE-DECISION-REGISTER-2026-10-21-001.md).
+- The original NEXT-028 remains preserved as the audit checkpoint; continue from [NEXT-029](./PALANG-0.0-NEXT-20261024-029-SEMANTIC-REVIEW-BATCH-2-AND-FRESH-SESSION.md) for the next semantic review batch and separate fresh-session recovery.
+- Current-head audit after these changes remains pending until a new run/artifact is inspected.
