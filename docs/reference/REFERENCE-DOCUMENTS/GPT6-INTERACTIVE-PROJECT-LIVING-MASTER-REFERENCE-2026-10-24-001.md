@@ -188,3 +188,13 @@ Each interaction that materially changes the architecture should preserve input,
 
 ### Current proof boundary
 This living master records repository architecture only. It does not prove continuous automatic capture, background evolution, an installed runtime, or cross-host compatibility. The portable package and conformance tests remain OPEN / NOT RUN.
+
+
+## Living update — Rahm portable package and host persistence proof — v1.3.9
+
+- New interaction chain: [IN-037](../../0.0/anchors/PALANG-0.0-IN-20261024-037-PORTABLE-RAHM-AND-HOST-PERSISTENCE.md) → [OUT-037](../../0.0/anchors/PALANG-0.0-OUT-20261024-037-PORTABLE-RAHM-AND-HOST-PERSISTENCE.md) → [EVT-0145](../../architecture/BEHAVIOR-TRACE/EVT-0145-PORTABLE-RAHM-HOST-CAPABILITY-ARCHITECTURE-2026-10-24.md) → [CURRENT-045](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-045-RAHM-PORTABLE-HOST-PERSISTENCE.md).
+- Portable package files are being created in `docs/portable/RAHM/`: boot contract, architecture, host capability manifest, interaction schema, evidence ledger, conformance tests, export manifest, and recovery/rollback.
+- New governing distinction: durable repository storage ≠ host conversational memory ≠ idle background execution. Each is a separate capability and requires its own observable proof.
+- Capability proof: DECLARED → CONFIGURED → EXECUTION OBSERVED → RESTART/IDLE TEST PASSED → INDEPENDENT READ-BACK → ACCEPTED.
+- Current proof boundary: package files were written, but digest finalization, complete package read-back, schema validation, fresh-context recovery, persistent-memory restart test, idle-background test, and second-host test are not yet proven. Do not call these capabilities guaranteed or always-on.
+- Next action: [NEXT-043](../../0.0/anchors/PALANG-0.0-NEXT-20261024-043-HOST-PERSISTENCE-BACKGROUND-AND-EXPORT-PROOF.md) — OPEN / NOT RUN once registered.
