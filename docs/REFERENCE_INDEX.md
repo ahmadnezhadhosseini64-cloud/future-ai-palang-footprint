@@ -955,3 +955,10 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 ## Latest verified terminal receipt — EVT-0131
 - [Durable receipt](architecture/BEHAVIOR-TRACE/STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40061873837.json).
 - [Run 40061873837](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40061873837): SUCCESS, 71 tests, tested SHA `edd82d08311c03f0506c651e5c33d128a0d70a35`; artifact SHA-256 `c44071afab49df4bfb33141f432db059e21455f3161801f4d711efd34d690f1f`.
+
+
+## Living graph drift detector — LAUC 1.4.0
+- [EVT-0131](architecture/BEHAVIOR-TRACE/EVT-0131-LIVING-ARCHITECTURE-STATUS-TRANSPARENCY-AND-GROWTH-2026-10-24.md).
+- Code: `scripts/behavior-hunter/check_living_graph_drift.py`; tests: `tests/behavior-hunter/test_check_living_graph_drift.py`.
+- Run 40062120276 passed 74 tests; drift manifest PASS, 6 nodes, zero failures; artifact ZIP SHA-256 `e45208b1bd2b63fa4e30fedcf27b9701532b8c85feee298ae18cbd6105c0d332`.
+- Ledger 1.4.0 verification pending next run; fresh-session recovery NOT RUN.
