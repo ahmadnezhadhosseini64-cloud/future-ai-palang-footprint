@@ -1386,3 +1386,5 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - Next: [NEXT-038](./anchors/PALANG-0.0-NEXT-20261024-038-DEFINE-POINT-0-THEN-0.0.md) — first create/verify point 0, then create a separate recoverable point 0.0.
 - Living master: [GPT-6 interactive living master](../reference/REFERENCE-DOCUMENTS/GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001.md), now v1.2.0.
 - Status: root/queue registration only; point 0 and point 0.0 NOT EXECUTED, prototype/cold-start NOT RUN. Other destinations independently NOT VERIFIED.
+
+- Final UTC/Tehran commit-time binding for this chain: [TIME-BINDING-GPT6-INITIAL-POINT-2026-10-24-001](../architecture/BEHAVIOR-TRACE/TIME-BINDING-GPT6-INITIAL-POINT-2026-10-24-001.md). OUT-029, CURRENT-039 and EVT-0137 reflect final read-back receipt commits.
