@@ -2,7 +2,7 @@
 
 - Stable ID: `G6IP-RAHM-NEXT-048-20261024`
 - Production ID: `G6IP-NEXT-048`
-- Version: 1.0.0
+- Version: 1.0.1
 - Status: OPEN / IN PROGRESS; tests remain NOT RUN until evidence exists.
 - Parent: [CURRENT-054](./PALANG-0.0-CURRENT-20261024-054-FIRST-LIVING-MASTER.md)
 - First living master: [FIRST-LIVING-MASTER](../../portable/RAHM/FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md)
