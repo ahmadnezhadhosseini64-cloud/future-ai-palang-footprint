@@ -5,12 +5,12 @@
 - Version / نسخه: 1.0.0
 - Status / وضعیت: REGISTERED; read-back and conformance gates tracked separately.
 - Authority / مرجع حاکم: اصول بنیادی پروژه + سند مادر معماری موروثی + بسته قابل‌حمل RAHM.
-- Current 0.0: [CURRENT-054](../0.0/anchors/PALANG-0.0-CURRENT-20261024-054-FIRST-LIVING-MASTER.md)
-- Next 0.0: [NEXT-048](../0.0/anchors/PALANG-0.0-NEXT-20261024-048-FIRST-MASTER-CONFORMANCE.md)
-- User input: [IN-047](../0.0/anchors/PALANG-0.0-IN-20261024-047-FIRST-LIVING-MASTER.md)
-- Assistant output: [OUT-046](../0.0/anchors/PALANG-0.0-OUT-20261024-046-FIRST-LIVING-MASTER.md)
-- Event: [EVT-0155](../architecture/BEHAVIOR-TRACE/EVT-0155-FIRST-LIVING-MASTER-PORTABLE-RAHM-2026-10-24.md)
-- Prior hard-audit evidence: [EVT-0154](../architecture/BEHAVIOR-TRACE/EVT-0154-LIVING-ARCHITECTURE-HARD-AUDIT-RUN-2026-10-24.md)
+- Current 0.0: [CURRENT-054](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-054-FIRST-LIVING-MASTER.md)
+- Next 0.0: [NEXT-048](../../0.0/anchors/PALANG-0.0-NEXT-20261024-048-FIRST-MASTER-CONFORMANCE.md)
+- User input: [IN-047](../../0.0/anchors/PALANG-0.0-IN-20261024-047-FIRST-LIVING-MASTER.md)
+- Assistant output: [OUT-046](../../0.0/anchors/PALANG-0.0-OUT-20261024-046-FIRST-LIVING-MASTER.md)
+- Event: [EVT-0155](../../architecture/BEHAVIOR-TRACE/EVT-0155-FIRST-LIVING-MASTER-PORTABLE-RAHM-2026-10-24.md)
+- Prior hard-audit evidence: [EVT-0154](../../architecture/BEHAVIOR-TRACE/EVT-0154-LIVING-ARCHITECTURE-HARD-AUDIT-RUN-2026-10-24.md)
 - Portable startup contract: [RAHM_BOOT](./RAHM_BOOT.md)
 - Architecture contract: [RAHM_ARCHITECTURE](./RAHM_ARCHITECTURE.md)
 - Interaction schema: [INTERACTION_PAIR_SCHEMA](./INTERACTION_PAIR_SCHEMA.json)
