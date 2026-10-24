@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001`
 - Production ID / شناسهٔ تولید: `G6IP-LMR-20261024-001`
-- Version / نسخه: 1.3.1
+- Version / نسخه: 1.3.2
 - Project / پروژه: Future AI / Palang Footprint — HAIF
 - Owner / مالک معماری: احمد نژادحسینی (احمد پلنگ)
 - Host / میزبان این شاخه: ChatGPT / GPT-6
@@ -125,3 +125,4 @@
 - Time binding: [GPT-6 initial point UTC/Tehran ledger](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-GPT6-INITIAL-POINT-2026-10-24-001.md). The latest update commit time must be appended after the actual commit is fetched; message time remains unknown.
 
 - Point-0 read-back receipt: the point-0 file and linked IN-030/OUT-030, CURRENT-039, EVT-0138 and NEXT-038 paths were fetched after write; IDs matched. Point 0.0, prototype and cold-start recovery remain NOT RUN.
+- Point-0 canonical commit time ledger: [TIME-BINDING-GPT6-POINT-0-2026-10-24-001](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-GPT6-POINT-0-2026-10-24-001.md).
