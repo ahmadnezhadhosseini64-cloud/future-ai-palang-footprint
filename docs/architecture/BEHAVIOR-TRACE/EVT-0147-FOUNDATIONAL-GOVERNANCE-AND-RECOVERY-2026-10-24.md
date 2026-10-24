@@ -4,7 +4,7 @@
 - Stable ID / شناسهٔ پایدار: `PALANG-EVT-FOUNDATIONAL-GOVERNANCE-AND-RECOVERY-2026-10-24-0147`
 - Production ID / شناسهٔ تولید: `G6IP-EVT-0147`
 - Version / نسخه: `1.0.0`
-- Status / وضعیت: REGISTERED; read-back pending at creation.
+- Status / وضعیت: REGISTERED / READ-BACK VERIFIED; fetched after write and identity/path matched.
 - Input / ورودی: [IN-040](../../0.0/anchors/PALANG-0.0-IN-20261024-040-CURRENT-046-FOUNDATIONAL-GOVERNANCE-AND-RECOVERY.md)
 - Output / خروجی: [OUT-039](../../0.0/anchors/PALANG-0.0-OUT-20261024-039-CURRENT-046-FOUNDATIONAL-GOVERNANCE-AND-RECOVERY.md)
 - Previous checkpoint / نقطهٔ قبلی: [CURRENT-046](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-046-HUMAN-AI-FUTURE-INTERACTION-ARCHITECTURE.md)
