@@ -183,3 +183,11 @@ Each proposed insight includes:
 - Regression coverage targets latest pair discovery, both directions, invalid newest pair, stale master reference, and non-inference of fresh-session/host-wide/external capabilities.
 - [Interaction Execution Status Protocol](./INTERACTION-EXECUTION-STATUS-AND-LIVING-REGISTRATION-PROTOCOL-2026-10-24-001.md) defines durable status vocabulary and the visible execution lifecycle.
 - Architecture ledger version 1.2.0 appended; versions 1.0.0 and 1.1.0 retained. Verification is not complete until CI and manifests prove the current pair.
+
+
+## Status-transparency and current-pair addendum — EVT-0130
+- A successful recovery applies only to the exact pair and source SHA named by its artifact; never carry a historical pair's PASS forward to a new pair.
+- Latest verified baseline before this pair: run 40060077581 on SHA `15bf46b3debe4131c6eb8c210ec0c334f76b449c`; both directions recovered IN-031/OUT-031; ledger PASS with 3 hash-linked records.
+- Pair 032 / EVT-0130 / NEXT-032 is newly registered. CI recovery and artifact read-back for pair 032 are pending.
+- User-facing status protocol: acknowledge promptly; report RUNNING only while a real operation is underway; report VERIFIED only after independent read-back; name OPEN gaps and next durable action. Do not claim background execution or live ChatGPT UI instrumentation.
+- Preserve issue status: #19 real-document acceptance OPEN; #20 runtime capture/end-to-end recovery OPEN; #21 historical census/semantic reconciliation OPEN. Fresh-session recovery NOT RUN; external persistence and host-wide capture NOT PROVEN.

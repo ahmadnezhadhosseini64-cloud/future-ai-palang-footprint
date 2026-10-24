@@ -911,3 +911,10 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - [NEXT-031](0.0/anchors/PALANG-0.0-NEXT-20261024-031-LATEST-PAIR-RECOVERY-AND-STATUS-TRANSPARENCY.md)
 - [Interaction Execution Status Protocol](architecture/BEHAVIOR-OBSERVATORY/INTERACTION-EXECUTION-STATUS-AND-LIVING-REGISTRATION-PROTOCOL-2026-10-24-001.md)
 - Dynamic latest-pair recovery is under CI verification; fresh-session recovery NOT RUN; Issues #19/#20/#21 OPEN.
+
+
+## Current living status and architecture growth — EVT-0130
+- [EVT-0130](architecture/BEHAVIOR-TRACE/EVT-0130-LIVING-STATUS-ARCHITECTURE-GROWTH-DEEP-AUDIT-2026-10-24.md)
+- [IN-032](0.0/anchors/PALANG-0.0-IN-20261024-032-LIVING-STATUS-AND-ARCHITECTURE-GROWTH.md) / [OUT-032](0.0/anchors/PALANG-0.0-OUT-20261024-032-LIVING-STATUS-AND-ARCHITECTURE-GROWTH.md)
+- [NEXT-032](0.0/anchors/PALANG-0.0-NEXT-20261024-032-FRESH-SESSION-AND-DEEP-RECONCILIATION.md)
+- Status: registered in this atomic update; pair-032 CI recovery and artifact read-back pending. Prior versions preserved.

@@ -50,3 +50,12 @@ Verify the newest Behavior Hunter run and inspect both recovery manifests. They 
 - Behavior Hunter run [40059863428](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40059863428) failed on SHA `c1806eb700a728ef0832e3b2aff0488ffadf2d37`: 65 tests ran; two recovery tests returned PARTIAL.
 - Failure evidence showed the resolver parsed `NEXT-20261024` from the date-stamped filename instead of the visible checkpoint label `NEXT-031`, producing a false missing-checkpoint diagnosis.
 - Corrective change committed as `0644c09ecfa50ed8deeec1330ed5cc0cf4427526`: parse the three-digit visible NEXT identifier, not the date segment in the link target. The next Behavior Hunter run must verify this correction and recover the current IN-031/OUT-031 pair.
+
+
+## Verification closure for the previously pending pair-031 gate
+- [Behavior Hunter run 40060077581](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40060077581): SUCCESS on tested SHA `15bf46b3debe4131c6eb8c210ec0c334f76b449c`; all workflow steps passed.
+- Artifact 12546492804 was downloaded and inspected; SHA-256 `46f665b20cecda5229824194fbd83e040d734db279052376d650ffc047e92ed2`.
+- Both directions recovered the newest pair available to that run: IN-031/OUT-031, interaction INT-20261024-031, event EVT-0129 and checkpoint NEXT-031; zero failures.
+- Architecture ledger PASS: 3 records, hash chain verified, zero errors. Proposal gate READY_FOR_OWNER_REVIEW with owner decision PENDING; no canonical mutation/promotion. Production resolver smoke resolved one repository file hash but production claim remained false.
+- This closure applies to pair 031 only. Pair 032 is a new later interaction and must receive its own CI run and artifact read-back.
+- The earlier stale-pair incident and the failed runs remain preserved above; they are not overwritten by this success.

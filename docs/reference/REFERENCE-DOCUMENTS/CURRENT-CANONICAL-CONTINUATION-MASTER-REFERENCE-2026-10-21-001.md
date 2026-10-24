@@ -645,3 +645,12 @@ Current active gate remains [EVT-0122](../../architecture/BEHAVIOR-TRACE/EVT-012
 - Deep-audit correction: recovery must discover the latest reciprocal IN/OUT pair dynamically; hard-coded IN-026/OUT-026 passing was stale historical coverage, not current-pair proof.
 - Architecture evolution ledger version 1.2.0 was appended, preserving versions 1.0.0 and 1.1.0. CI/read-back of this new version is pending until the newest run and manifests are inspected.
 - Open: fresh-session recovery NOT RUN; host-wide capture NOT PROVEN; external persistence NOT VERIFIED; Issues #19/#20/#21 remain OPEN.
+
+
+## Latest live continuation — EVT-0130 / pair 032
+- Current interaction: [IN-032](../../0.0/anchors/PALANG-0.0-IN-20261024-032-LIVING-STATUS-AND-ARCHITECTURE-GROWTH.md) / [OUT-032](../../0.0/anchors/PALANG-0.0-OUT-20261024-032-LIVING-STATUS-AND-ARCHITECTURE-GROWTH.md), pair `INT-20261024-032`.
+- Event: [EVT-0130](../../architecture/BEHAVIOR-TRACE/EVT-0130-LIVING-STATUS-ARCHITECTURE-GROWTH-DEEP-AUDIT-2026-10-24.md).
+- Next checkpoint: [NEXT-032](../../0.0/anchors/PALANG-0.0-NEXT-20261024-032-FRESH-SESSION-AND-DEEP-RECONCILIATION.md).
+- Latest verified baseline before pair 032: Behavior Hunter run 40060077581, tested SHA `15bf46b3debe4131c6eb8c210ec0c334f76b449c`, artifact 12546492804; both directions recovered pair 031 and the append-only ledger passed with 3 records. Artifact SHA-256: `46f665b20cecda5229824194fbd83e040d734db279052376d650ffc047e92ed2`.
+- Pair 032 was added after that run; CI recovery of pair 032 remains pending until a newer run and artifact are inspected.
+- Architecture updates remain append-only and owner-gated. Fresh-session recovery NOT RUN; Issues #19/#20/#21 OPEN; host-wide capture and external persistence NOT PROVEN.
