@@ -1533,3 +1533,9 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - SUCCESS on tested SHA `2968455a8d72894fb167b6189783937e94abdf4a`; artifact 12548055321 inspected (SHA-256 `03a3faedb32276f315d314e1f89f030ad7d41ff8de90c4b4da720daaf7732fa2`).
 - IN-033/OUT-033 recovered both directions; EVT-0131/NEXT-033 linked; zero failures. 2 candidate tests generated with no parse errors; ledger PASS with 4 hash-linked records; terminal receipt SUCCESS.
 - Still open: fresh-session recovery NOT RUN; Issues #19/#20/#21 OPEN; host-wide capture/external persistence NOT PROVEN.
+
+
+## Durable receipt preserved — EVT-0131
+- [Status receipt JSON](../BEHAVIOR-TRACE/STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40061713327.json) is stored in the repository as a durable copy of the inspected artifact.
+- Source run [40061713327](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40061713327) passed 71 tests on tested SHA `26615121fd50276c9c978814b183b21b20330135`; artifact SHA-256 `448465dc742c90b1408d725ccce8a17eaf6d3b845ca639ad742c709cbdeb629a`.
+- Next: separate fresh-session recovery, then continue semantic collision adjudication and timestamp ambiguity review. Issues #19/#20/#21 remain open.
