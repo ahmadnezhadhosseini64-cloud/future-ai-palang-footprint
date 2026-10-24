@@ -4,7 +4,7 @@
 - Stable ID: PALANG-LIVING-ARCHITECTURE-STATUS-TRANSPARENCY-GROWTH-2026-10-24-001
 - Production ID: LASTG-HAIF-2026-10-24-001
 - Version: 1.0.0
-- Status: ACTIVE / LIVING / IMPLEMENTATION-IN-PROGRESS / CI-VERIFICATION-PENDING
+- Status: ACTIVE / LIVING / IMPLEMENTED-IN-REPOSITORY / CI-PASS / ARTIFACT-READBACK-VERIFIED / FRESH-SESSION-OPEN
 - Interaction pair: [IN-033](../../0.0/anchors/PALANG-0.0-IN-20261024-033-LIVING-ARCHITECTURE-AND-STATUS-TRANSPARENCY.md) / [OUT-033](../../0.0/anchors/PALANG-0.0-OUT-20261024-033-LIVING-ARCHITECTURE-AND-STATUS-TRANSPARENCY.md)
 - Previous event: [EVT-0130](./EVT-0130-LIVING-STATUS-ARCHITECTURE-GROWTH-DEEP-AUDIT-2026-10-24.md)
 - Previous checkpoint: [NEXT-032](../../0.0/anchors/PALANG-0.0-NEXT-20261024-032-FRESH-SESSION-AND-DEEP-RECONCILIATION.md)
@@ -67,3 +67,13 @@ Complete and read back the IN/OUT pair and all canonical graph edges; run the cu
 - Runs [40061117858](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40061117858) and [40061132295](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40061132295) preserved follow-on regression failures while the event-selector correction was being developed. Run 40061117858 exposed an over-escaped regular expression; run 40061132295 showed the first corrected regex still fell back to the historical EVT-0130 token.
 - Corrective approach: parse each anchor line's explicit `Result event:` or `Event:` metadata before using a legacy fallback. Added regression tests for current event overriding a previous event and for a plain event label. The corrected source is committed; the new run must pass and its artifact must be inspected before CI PASS is recorded.
 - This incident demonstrates why status receipts and preserved failure evidence are required: an earlier step failed, yet the terminal status artifact was still generated and uploaded. A failed run is not relabeled as success.
+
+
+## Final verification — run 40061440975
+- [Palang Behavior Hunter run 40061440975](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40061440975): SUCCESS on tested SHA `2634f15abf79cd546d2ebea2e152a3f0871dd1fb`; all workflow steps succeeded, including 71 unit tests, both recovery directions, append-only ledger validation, proposal gate, candidate generation, evidence resolution, terminal receipt and artifact upload.
+- Artifact ID `12548065100`, downloaded and inspected; ZIP SHA-256 `38047c11733e086471a542c6ee346eae3feb75e37d8cee8a767ecb9f31b37318`.
+- Both recovery manifests: IN-033 → OUT-033 and OUT-033 → IN-033, pair `INT-20261024-033`, event EVT-0131, checkpoint NEXT-033, zero failures.
+- Architecture ledger: PASS, 3 hash-linked records, zero errors. Proposal gate: READY_FOR_OWNER_REVIEW, owner decision PENDING, canonical mutation false, promotion false. Candidate manifest: 2 records, no parse errors. Production resolver smoke: 1 repository evidence locator resolved with matching SHA; production claim remains false. Terminal receipt: SUCCESS, terminal=true, run 40061440975, tested SHA matches the workflow.
+- The earlier failures were preserved and corrected: over-escaped regex, test fixture literal line separators, prior-event selection, and candidate invariant vocabulary. The successful run is the first complete verified gate after these repairs.
+- Repository CI PASS does not close fresh-session recovery (NOT RUN), host-wide capture (NOT PROVEN), external persistence (NOT PROVEN), or Issues #19/#20/#21 (OPEN).
+- Terminal receipt timestamp: UTC `2026-10-24T04:12:47.948434Z`; Tehran `2026-10-24T07:42:47.948434+03:30`.
