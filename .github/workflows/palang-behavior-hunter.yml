@@ -44,7 +44,20 @@ jobs:
         run: python scripts/behavior-hunter/resolve_evidence_locators.py --source-mode production --input data/interaction-pairs/evidence-resolution-production-smoke.jsonl --output artifacts/behavior-hunter/evidence-resolution-production-smoke.json
       - name: Resolve evidence locators from explicit outcome records
         run: python scripts/behavior-hunter/resolve_evidence_locators.py --source-mode fixture --input data/interaction-pairs/test-outcomes.jsonl --output artifacts/behavior-hunter/evidence-resolution.json
+      - name: Emit terminal status receipt even when prior checks fail
+        if: always()
+        run: |
+          python scripts/behavior-hunter/emit_status_receipt.py \
+            --event-id EVT-0131 \
+            --pair-id INT-20261024-033 \
+            --stage CI_TERMINAL \
+            --status "${{ job.status }}" \
+            --run-id "${{ github.run_id }}" \
+            --tested-sha "${{ github.sha }}" \
+            --next-action "Inspect all manifests; verify current-main versus tested SHA; keep fresh-session recovery separate." \
+            --output artifacts/behavior-hunter/status-receipt.json
       - name: Upload generated manifests
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: palang-behavior-hunter-evidence-manifests
