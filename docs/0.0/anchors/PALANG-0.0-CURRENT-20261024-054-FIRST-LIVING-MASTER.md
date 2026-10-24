@@ -38,3 +38,12 @@ Execute NEXT-044 first, then NEXT-048 conformance steps. Never close a gate with
 - JSON Schema valid fixture: 0 errors; invalid fixture: 4 errors and correctly rejected.
 - Exact-byte SHA-256 comparison against the populated manifest: PASS for the full 24-file inventory. The manifest's own digest is external evidence, not self-referenced.
 - Still OPEN: independent IN/OUT canonical-state equivalence; actual clean-host and second AI-host import; persistent-memory restart; idle/background execution; remaining repository-wide missing links and identifier collision review.
+
+## Latest portable package conformance — run 40114697473
+- Workflow completed SUCCESS: [40114697473](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40114697473).
+- Schema: valid fixture 0 errors; invalid fixture 4 errors and rejected.
+- Exact-byte SHA-256: PASS across all 24 manifest files.
+- IN/OUT recovery test: PASS for canonical checkpoint/link equivalence and open-gate preservation only; full reconstruction of all state/evidence remains OPEN.
+- Package archive: PASS; 25 files including the 24 manifest entries plus EXPORT_MANIFEST.json; package SHA-256 `109cdb9af62f9f4f270aafea96076a5e0177877eb553551ed2fa268e997478df`.
+- Downloadable GitHub artifact: [haif-rahm-portable-package](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40114697473/artifacts/12567559136).
+- Still OPEN/NOT VERIFIED: full IN/OUT state reconstruction beyond link/checkpoint, clean independent AI-host import, second-host import, persistence restart, idle/background execution, and repo-wide link/ID collision remediation.
