@@ -210,3 +210,11 @@ The package must declare host capabilities and limitations, retain IN/OUT/event 
 - Inherited model contract: preserve observable IN/OUT, provenance, corrections, hypotheses, test receipts, failures and recovery instructions. A repeated pattern becomes a validated rule only after defined acceptance tests and version/environment-specific evidence.
 - Portability status: architecture/package specification is documented; clean-host and second-host transfer are NOT VERIFIED / NOT RUN. Host memory and background execution remain unverified without authorized runtime tests.
 - Evidence rule: repository write/read-back does not prove target-host import, runtime activation, or unattended continuity.
+
+
+## CURRENT-054 — First Living Master / portable GPT-6 HAIF
+- First living master: [FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md](../../portable/RAHM/FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md).
+- Current checkpoint: [CURRENT-054](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-054-FIRST-LIVING-MASTER.md); next: [NEXT-048](../../0.0/anchors/PALANG-0.0-NEXT-20261024-048-FIRST-MASTER-CONFORMANCE.md).
+- Event: [EVT-0155](../../architecture/BEHAVIOR-TRACE/EVT-0155-FIRST-LIVING-MASTER-PORTABLE-RAHM-2026-10-24.md); prior hard-audit evidence: [EVT-0154](../../architecture/BEHAVIOR-TRACE/EVT-0154-LIVING-ARCHITECTURE-HARD-AUDIT-RUN-2026-10-24.md).
+- Fundamental rule: every unverified, incomplete, conflicting or untested item remains OPEN/LIVING across checkpoints until explicit criteria and independent evidence permit closure.
+- Open: exact-byte SHA-256, schema fixtures, independent IN/OUT recovery, repo-wide link/ID remediation, clean-host/second-host AI import, persistence restart, idle background, and direct base mother/index/queue read-back. The first master itself lists these gates; its creation is not proof that they passed.
