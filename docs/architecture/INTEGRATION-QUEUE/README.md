@@ -1622,3 +1622,11 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 
 
 | G6IP-POINT-0-20261024-001 | تعیین CURRENT-039 به‌عنوان نقطهٔ ۰ اولیه و اتصال قواعد حاکم HAIF / Future AI | REGISTERED / READ-BACK VERIFIED — پروندهٔ نقطهٔ ۰، رویداد و سند مادر از مخزن بازخوانی شدند؛ نقطهٔ ۰.۰ و آزمون بازیابی همچنان باز هستند | سند مادر GPT-6، دفتر نقاط ۰.۰، رفتارشناسی و صف ادامه | [Point 0](../../0.0/anchors/GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001.md); [EVT-0138](../BEHAVIOR-TRACE/EVT-0138-GPT6-POINT-0-PROMOTION-AND-HAIF-INTEGRATION-2026-10-24.md); [NEXT-038](../../0.0/anchors/PALANG-0.0-NEXT-20261024-038-DEFINE-POINT-0-THEN-0.0.md) |
+
+
+## GPT-6 inherited architecture master — live queue entry
+- Item: G6IP-IAM-20261024-001 — GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001, v1.0.1.
+- Status: REGISTERED / READ-BACK VERIFIED / CONTENT PRESENT / IDENTIFIERS MATCHED.
+- Scope: HAIF layers, dual-track behavior governance, UTC-first evidence, Master–Child–Rahm promotion, modular evolution and recoverability are linked to GPT-6 point 0 and the living master.
+- Open gates: audit inherited source links; create point 0.0; build the interactive prototype; run cold-start recovery; fix/reconcile the known docs/REFERENCE_INDEX.md 404. External destinations remain NOT VERIFIED.
+- Reference: [Inherited architecture living master](../../reference/REFERENCE-DOCUMENTS/GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md).
