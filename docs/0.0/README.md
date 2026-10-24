@@ -1408,3 +1408,12 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - History preserved: CURRENT-039 remains the initial point-0 root; CURRENT-040 is the current resumable checkpoint.
 - Open gates: prototype NOT BUILT; cold-start recovery NOT RUN; docs/REFERENCE_INDEX.md prior 404 OPEN; external destinations NOT VERIFIED.
 \n\n## نقطهٔ صفر معماری جدید — 2026-10-24\n\n| Anchor ID | هدف | وضعیت | اقدام بعدی | پرونده |\n|---|---|---|---|---|\n| PALANG-0.0-NEW-PROJECT-ARCHITECTURE-ZERO-2026-10-24-001 | ریشهٔ معماری قابل استخراج از Point 0 تا وضعیت جاری CURRENT-040؛ اتصال به سند مادر و رفتارشناسی | REGISTERED / READ-BACK VERIFIED / ACTIVE / LIVING / EVOLVABLE | بازخوانی دقیق فایل و تطبیق پیوندها؛ سپس اجرای NEXT-039 | [G6IP-ARCH-ZERO-20261024-001](./anchors/PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md) |\n
+
+## CURRENT-041 — نقطهٔ مستقل ۰.۰ برای زنده‌سازی سند مادر اصول بنیادین — 2026-10-24
+- Current anchor: [CURRENT-041](./anchors/PALANG-0.0-CURRENT-20261024-041-FOUNDATIONAL-ARCHITECTURE-MOTHER-ACTIVATION.md).
+- Parent: [CURRENT-040](./anchors/PALANG-0.0-CURRENT-20261024-040-GPT6-POINT-0.0-RECOVERY-CHECKPOINT.md); initial Point 0 remains [CURRENT-039](./anchors/PALANG-0.0-CURRENT-20261024-039-GPT6-INITIAL-POINT-AND-ZERO-CHAIN.md).
+- Pair: [IN-033](./anchors/PALANG-0.0-IN-20261024-033-ACTIVATE-FOUNDATIONAL-ARCHITECTURE-MOTHER.md) ↔ [OUT-033](./anchors/PALANG-0.0-OUT-20261024-033-ACTIVATE-FOUNDATIONAL-ARCHITECTURE-MOTHER.md).
+- Behavior event: [EVT-0141](../architecture/BEHAVIOR-TRACE/EVT-0141-FOUNDATIONAL-ARCHITECTURE-MOTHER-ACTIVATION-2026-10-24.md).
+- Governing foundational mother: [NPFAP-20261024-001](../reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md).
+- Status: REGISTERED / ACTIVE / LIVING / EVOLVABLE; final read-back and cross-link reconciliation pending.
+- Next: fetch all five records after final writes, match IDs and links, then run the fresh-project adoption test. Export/cold-start recovery remains NOT RUN; external destinations remain NOT VERIFIED.
