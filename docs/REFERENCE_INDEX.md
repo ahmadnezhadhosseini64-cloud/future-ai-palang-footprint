@@ -1174,3 +1174,10 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Latest GPT-6 living master: [G6IP-LMR v1.3.8](reference/REFERENCE-DOCUMENTS/GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001.md).
 - Next active task: [NEXT-042 — Rahm export, conformance and cross-host test](0.0/anchors/PALANG-0.0-NEXT-20261024-042-RAHM-CONFORMANCE-EXPORT-CROSS-HOST-TEST.md), OPEN / NOT RUN.
 - Proof boundary: repository registration and read-back are not proof of an installed runtime, continuous capture, fresh-host recovery, or compatibility with every AI host.
+
+
+## GPT-6 Rahm portable package / host capability proof — CURRENT-045
+- Current checkpoint: [CURRENT-045](0.0/anchors/PALANG-0.0-CURRENT-20261024-045-RAHM-PORTABLE-HOST-PERSISTENCE.md).
+- Interaction chain: [IN-037](0.0/anchors/PALANG-0.0-IN-20261024-037-PORTABLE-RAHM-AND-HOST-PERSISTENCE.md) → [OUT-037](0.0/anchors/PALANG-0.0-OUT-20261024-037-PORTABLE-RAHM-AND-HOST-PERSISTENCE.md) → [EVT-0145](architecture/BEHAVIOR-TRACE/EVT-0145-PORTABLE-RAHM-HOST-CAPABILITY-ARCHITECTURE-2026-10-24.md).
+- Package: [RAHM_BOOT](portable/RAHM/RAHM_BOOT.md), [architecture](portable/RAHM/RAHM_ARCHITECTURE.md), [host manifest](portable/RAHM/HOST_CAPABILITY_MANIFEST.json), [interaction schema](portable/RAHM/INTERACTION_PAIR_SCHEMA.json), [evidence ledger](portable/RAHM/EVIDENCE_LEDGER.md), [conformance tests](portable/RAHM/CONFORMANCE_TESTS.md), [export manifest](portable/RAHM/EXPORT_MANIFEST.json), [recovery/rollback](portable/RAHM/RECOVERY_AND_ROLLBACK.md).
+- Proof boundary: package specification exists; digest finalization and read-back reconciliation pending. Persistent host memory, idle background execution, clean-context recovery and second-host conformance remain NOT VERIFIED / NOT RUN.
