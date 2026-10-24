@@ -933,3 +933,10 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Living Architecture Audit run 40060630376 SUCCESS; artifact 12547536065 inspected (SHA-256 `d6ebe43e4908432f11fe0bb1b090b9e43b077ee8034610c63de1671c7ef32316`).
 - Snapshot: 875 source files, 3,819 link edges, 6 template-derived link candidates, 60 Stable-ID collision groups (59 unreviewed), 71 Production-ID collisions, 7 Reference-ID collisions, 30 event-number collisions, 11 duplicate groups, 13 ambiguous parents, 11 proposed aliases.
 - Timestamp audit: 2,620 files, 2,149 UTC/Tehran pairs, 1 ambiguity; zero offset/value failures. Detailed counts and caveats are in EVT-0130.
+
+
+## EVT-0131 — living architecture and status transparency
+- Event: [EVT-0131](architecture/BEHAVIOR-TRACE/EVT-0131-LIVING-ARCHITECTURE-STATUS-TRANSPARENCY-AND-GROWTH-2026-10-24.md).
+- Pair: [IN-033](0.0/anchors/PALANG-0.0-IN-20261024-033-LIVING-ARCHITECTURE-AND-STATUS-TRANSPARENCY.md) / [OUT-033](0.0/anchors/PALANG-0.0-OUT-20261024-033-LIVING-ARCHITECTURE-AND-STATUS-TRANSPARENCY.md).
+- Next: [NEXT-033](0.0/anchors/PALANG-0.0-NEXT-20261024-033-LIVING-STATUS-AND-COLD-START.md).
+- Terminal status receipt: `scripts/behavior-hunter/emit_status_receipt.py`; tests `tests/behavior-hunter/test_emit_status_receipt.py`; CI/artifact verification pending.
