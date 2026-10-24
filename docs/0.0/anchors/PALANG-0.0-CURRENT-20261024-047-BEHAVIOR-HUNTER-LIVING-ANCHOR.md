@@ -36,3 +36,10 @@ Repository registration time is the actual Git commit timestamp in UTC, with Teh
 
 ## Recovery
 Resume from NEXT-045. If any write/read-back fails, preserve the failure, leave the gate OPEN, record the exact path and reason, and retry only after diagnosing the failure.
+
+## Read-back result
+- This checkpoint was fetched after creation; its Stable ID, CURRENT-046 parent, IN-039/OUT-039/EVT-0147 chain, mother links and NEXT-045 continuation link matched.
+- The HAIF mother, both GPT-6 living masters, Reference Index and integration queue were updated and fetched after write; the CURRENT-047/NEXT-045 markers and links matched.
+- Repository registration/read-back is verified for these named paths only. Runtime activation and all unrun test gates remain OPEN / NOT RUN.
+- Latest cross-link commit observed: `49bfeb2a64b808238c73c742fca9959703ccb464`; UTC `2026-10-24T15:37:59Z`; Tehran `2026-10-24T19:07:59+03:30`. This is repository commit time, not the exact user-message time.
+- Continue from NEXT-045; preserve earlier checkpoints.
