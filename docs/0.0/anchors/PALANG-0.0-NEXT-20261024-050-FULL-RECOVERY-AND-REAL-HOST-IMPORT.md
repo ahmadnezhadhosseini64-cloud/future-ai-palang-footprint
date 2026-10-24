@@ -2,7 +2,7 @@
 
 - Stable ID: `G6IP-RAHM-NEXT-050-20261024`
 - Production ID: `G6IP-NEXT-050`
-- Version: 1.0.0
+- Version: 1.0.1
 - Status: OPEN / LIVING / NOT COMPLETE.
 - Parent: [CURRENT-056](./PALANG-0.0-CURRENT-20261024-056-OUTPUT-CONTINUITY-AND-RECOVERY.md)
 - User Point 0: [POINT-0/005](./GPT6-RAHM-USER-POINT-0-20261024-005-OUTPUT-CONTINUITY-AND-RECOVERY.md)
@@ -33,3 +33,9 @@
 
 ## Non-closure rule
 NEXT-050 remains OPEN/LIVING until every required criterion has evidence. Unsupported runtime capabilities remain explicitly NOT VERIFIED/BLOCKED.
+
+
+## Latest run receipts
+- [Conformance run 40120495687](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40120495687) passed schema fixtures, exact-byte SHA-256 scan for the 37-entry manifest, limited IN/OUT link/checkpoint equivalence, and package build. Archive hash: `bc1b564b032cfe23562041011aac5a192a827c208a3626cea4db6cdf0f061a43`. Because CURRENT-056/EVT-0158/NEXT-050 were subsequently updated, rerun conformance on the resulting manifest commit before treating these digests as final.
+- [Structural audit 40120495708](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40120495708) ended REVIEW_REQUIRED: 11 missing links; 60 unreviewed stable-ID collision groups; 88 production-ID collision groups; 7 reference-ID collision groups; 36 event-number collision groups; 13 ambiguous parent edges. Keep these open and adjudicate individually.
+- Synthetic acceptance/adapter runs are not equivalent to clean-host AI import. Real host import, full-state reconstruction, second-host import, actual persistence restart and idle/background execution remain OPEN / NOT VERIFIED.
