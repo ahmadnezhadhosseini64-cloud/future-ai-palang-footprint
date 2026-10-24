@@ -98,3 +98,11 @@ Complete and read back the IN/OUT pair and all canonical graph edges; run the cu
 - Candidate tests: 2 generated, both CANDIDATE_READY, zero parse errors; no candidate is an execution PASS. Append-only architecture ledger: PASS, 4 records, 4 versions, zero errors, hash chain verified, no history rewrite. Proposal gate: READY_FOR_OWNER_REVIEW, owner decision PENDING, no canonical mutation/promotion. Production evidence smoke: one repository locator resolved; this does not prove a production test PASS.
 - Terminal status receipt: SUCCESS, terminal=true, run ID 40061600048, tested SHA matches; receipt UTC `2026-10-24T04:15:12.038073Z`, Tehran `2026-10-24T07:45:12.038073+03:30`.
 - Previous failed attempts remain documented above. This latest run is the verified repair result; it does not close fresh-session recovery (NOT RUN), host-wide capture/external persistence (NOT PROVEN), or Issues #19/#20/#21 (OPEN).
+
+
+## Current implementation status after repository CI closure
+- The status receipt implementation is integrated in repository version 1.3.0 of the append-only architecture ledger; ledger validator reports 4 records and a verified hash chain on run 40061468626.
+- Pair IN-033/OUT-033 is independently read back and recovered from both directions. The latest pair is also present in the structured interaction dataset; the candidate manifest reports EVT-0131 as CANDIDATE_READY / NOT_RUN (candidate generation is not execution proof).
+- Terminal receipt mechanism is ACTIVE in the Behavior Hunter workflow. It records terminal job state even when prior steps fail. User-facing assistant messages remain necessary; this repository feature cannot display a ChatGPT UI heartbeat by itself.
+- Repository CI PASS is pinned to tested SHA `cc1f61f18a364c896b251735ccb643e552d40fe2`; the run's manifests were inspected. Subsequent commits changed documentation and the interaction dataset; the exact current HEAD still needs its own final run/read-back.
+- Next active gate: separate uncoached fresh-session recovery; this cannot be honestly marked PASS from within this same conversation. Historic collision adjudication and the single timestamp ambiguity remain open.
