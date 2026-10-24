@@ -48,7 +48,12 @@
 - The prior `docs/REFERENCE_INDEX.md` 404 remains an open integration issue; no success is inferred.
 
 ## 5. Acceptance and status
-This record establishes point 0 as the initial architectural root and binds the governing rules to this branch. It does not close implementation or recovery gates. After write, this exact file and its linked records must be fetched again and IDs/links matched before READ-BACK VERIFIED is claimed.
+This record establishes point 0 as the initial architectural root and binds the governing rules to this branch. It does not close implementation or recovery gates.
+
+## Final read-back receipt
+- Status: READ-BACK VERIFIED / CONTENT PRESENT / IDENTIFIERS MATCHED.
+- This exact path was fetched after writing; expected point-0 identity, root CURRENT-039, IN-030/OUT-030, EVT-0138 and NEXT-038 links were present.
+- Verification scope: repository file presence and link-text checks. This does not prove point 0.0 creation, prototype implementation, cold-start recovery or external destinations.
 
 ## Recovery instruction
 On resumption, open this point 0, then CURRENT-039, the living master, EVT-0138, and NEXT-038. Continue with point 0.0 only after checking this chain and preserving every prior open item.
