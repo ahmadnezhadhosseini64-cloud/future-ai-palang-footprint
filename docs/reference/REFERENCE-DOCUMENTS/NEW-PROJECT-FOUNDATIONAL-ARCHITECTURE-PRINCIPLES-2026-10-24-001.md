@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001`
 - Production ID / شناسهٔ تولید: `NPFAP-20261024-001`
-- Version / نسخه: 1.0.9
+- Version / نسخه: 1.1.0
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING / EVOLVABLE / EXTRACTABLE / RECOVERY-ORIENTED
 - Scope / دامنه: الگوی پایه برای هر پروژهٔ جدید در خانوادهٔ Future AI / Palang Footprint / HAIF و شاخه‌های محصول/میزبان آن؛ با سازگارسازی مستند برای پروژه‌های دیگر
 - Source anchor / منشأ: [G6IP-ARCH-ZERO-20261024-001](../../0.0/anchors/PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md)
@@ -331,4 +331,29 @@ IN-040، OUT-039، EVT-0147، CURRENT-047، NEXT-044، سند مادر، فهر�
 - NEXT-044: export package and fresh-host cold-start recovery — OPEN / NOT RUN.
 - Second project: canonical repository and mother path not identified; dual-repository integration not claimed.
 - Always-on discovery, scheduled runs, background execution, and notifications — NOT VERIFIED.
+
+
+
+## Living Mother Update — CURRENT-048 / IN-041 / OUT-040 / EVT-0148 — 2026-10-24
+
+- **Additive version / نسخهٔ افزایشی:** 1.1.0
+- **Current anchor / نقطهٔ جاری:** [CURRENT-048](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-048-LIVING-ARCHITECTURE-SUMMARY-AND-RECOVERY.md)
+- **Input / ورودی:** [IN-041](../../0.0/anchors/PALANG-0.0-IN-20261024-041-LIVING-ARCHITECTURE-SUMMARY-AND-RECOVERY.md)
+- **Output / خروجی ذخیره‌شده:** [OUT-040](../../0.0/anchors/PALANG-0.0-OUT-20261024-040-LIVING-ARCHITECTURE-SUMMARY-AND-RECOVERY.md)
+- **Event / رویداد:** [EVT-0148](../../architecture/BEHAVIOR-TRACE/EVT-0148-LIVING-ARCHITECTURE-SUMMARY-AND-RECOVERY-2026-10-24.md)
+- **Previous current / نقطهٔ پیشین:** [CURRENT-047](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-047-FOUNDATIONAL-GOVERNANCE-AND-RECOVERY.md)
+- **Next action / گام بعدی:** [NEXT-044 — export and fresh-host recovery](../../0.0/anchors/PALANG-0.0-NEXT-20261024-044-EXTRACTABLE-RAHM-CHILD-AND-COLD-START-TEST.md)
+- **Discovery architecture / معماری کشف:** [Adaptive Discovery v1.1.0](../../../architecture/ADAPTIVE-DISCOVERY-CROSS-PLAYGROUND.md)
+- **Status / وضعیت:** ADDITIVE MOTHER UPDATE; new chain records require read-back verification after writing.
+
+### Concise living architecture / معماری زنده در یک نگاه
+Human ↔ AI Host ↔ HAIF. Master preserves accepted rules and history; Child holds new candidates; Rahm validates provenance, evidence, contradictions, regressions, portability, and recovery; only passing candidates are integrated into Master with additive versioning. The discovery engine routes new or changed evidence. Every input, output, event, error, correction, and test receives a stable identity, independent anchor, provenance, links, commit-based UTC timestamp and derived Tehran equivalent, status, and next action.
+
+انسان ↔ میزبان هوش مصنوعی ↔ HAIF. مستر قواعد پذیرفته‌شده و سابقه را نگه می‌دارد؛ نوزاد پیشنهاد تازه است؛ رحم منشأ، شواهد، تناقض، پس‌رفت، قابلیت انتقال و بازیابی را می‌سنجد؛ فقط پیشنهادهای پذیرفته‌شده با نسخه‌گذاری افزایشی وارد مستر می‌شوند. موتور کشف شواهد جدید یا تغییرکرده را مسیریابی می‌کند. هر ورودی، خروجی، رویداد، خطا، اصلاح و آزمون لنگر مستقل، منشأ، پیوند، زمان commit واقعی UTC و معادل تهران، وضعیت و گام بعدی دارد.
+
+### Certainty and recovery boundary / مرز قطعیت و بازیابی
+Repository write and read-back are distinct. Registration is not validation; validation is not integration; architecture is not proof of background automation. NEXT-044 remains OPEN / NOT RUN until a verifiable export is reconstructed in a fresh host/context and its recovered IDs, links, versions, and open gaps match the repository. The second project's canonical repository remains unidentified; dual-project live integration is not claimed.
+
+### Continuity rule / قاعدهٔ تداوم
+CURRENT-048 is additive to CURRENT-047 and all earlier 0.0 checkpoints. Never delete or silently replace history. Continue with full read-back of IN-041, OUT-040, EVT-0148, CURRENT-048, this mother, and the reference index; then execute NEXT-044. Keep the second-project connection pending until its exact destination is verified.
 
