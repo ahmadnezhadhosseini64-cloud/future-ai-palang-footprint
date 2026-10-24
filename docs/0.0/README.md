@@ -1368,3 +1368,11 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 
 - Time binding: [TIME-BINDING-GPT6-INTERACTIVE-2026-10-24-001](../architecture/BEHAVIOR-TRACE/TIME-BINDING-GPT6-INTERACTIVE-2026-10-24-001.md) records actual commit timestamps (UTC canonical + Tehran equivalent). Exact message time remains UNKNOWN / UNVERIFIED.
 - Read-back of the five primary artifacts and index linkage: VERIFIED; external destinations remain unverified.
+
+
+## GPT-6 Project Zero — CURRENT-038
+- Project-zero baseline: [GPT6 interactive project zero](../architecture/INITIAL-BASELINES/GPT6-INTERACTIVE-PROJECT-ZERO-BASELINE-2026-10-24-001.md).
+- Pair: [IN-028](anchors/PALANG-0.0-IN-20261024-028-DEFINE-GPT6-PROJECT-ZERO.md) / [OUT-028](anchors/PALANG-0.0-OUT-20261024-028-DEFINE-GPT6-PROJECT-ZERO.md).
+- Current: [CURRENT-038](anchors/PALANG-0.0-CURRENT-20261024-038-GPT6-PROJECT-ZERO-ARCHITECTURE.md); next: [NEXT-037](anchors/PALANG-0.0-NEXT-20261024-037-FIRST-GPT6-INTERACTIVE-PROTOTYPE-AND-RECOVERY.md).
+- Event: [EVT-0136](../architecture/BEHAVIOR-TRACE/EVT-0136-GPT6-PROJECT-ZERO-ARCHITECTURE-2026-10-24.md). Master: [GPT-6 interactive living master](../reference/REFERENCE-DOCUMENTS/GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001.md).
+- Prototype implementation and cold-start recovery remain OPEN / NOT RUN. Preserve CURRENT-037, CURRENT-036, NEXT-036, Issues #20/#21 and historic queues. UTC canonical; Tehran equivalent derived from the same instant. External destinations remain independently unverified.
