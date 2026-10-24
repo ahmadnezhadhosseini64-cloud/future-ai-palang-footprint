@@ -1,8 +1,10 @@
 # IN-047 — User Request: First Living Master and Open Gates
 
+- User Point 0: [G6IP-RAHM-USER-POINT-0-20261024-003](./GPT6-RAHM-USER-POINT-0-20261024-003-FIRST-LIVING-MASTER-AND-PORTABILITY.md)
+
 - Stable ID: `G6IP-RAHM-IN-047-20261024`
 - Production ID: `G6IP-IN-047`
-- Version: 1.0.1
+- Version: 1.0.2
 - Status: REGISTERED / READ-BACK VERIFIED; fetched after write and content/IDs matched.
 - User intent: designate the supplied CURRENT-053 timestamp and NEXT-047/NEXT-044 task list as a new Point 0; connect it to all prior anchors; build the first reviewable living master for portable, recoverable, extractable and evolvable GPT-6/HAIF architecture; link it to the fundamental principle; preserve all unverified tasks as open/live and update the mother/index/queue.
 - Source time policy: UTC canonical; Tehran is converted from same instant; repository registration time comes from actual commit.
