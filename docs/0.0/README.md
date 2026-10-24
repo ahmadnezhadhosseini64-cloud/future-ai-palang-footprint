@@ -1259,3 +1259,10 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - [NEXT-030](./anchors/PALANG-0.0-NEXT-20261024-030-SEMANTIC-REVIEW-BATCH-3-AND-COLD-START.md) is ACTIVE/LIVING.
 - [IN-030](./anchors/PALANG-0.0-IN-20261024-030-CONTINUE-SEMANTIC-RECONCILIATION.md) / [OUT-030](./anchors/PALANG-0.0-OUT-20261024-030-CONTINUE-SEMANTIC-RECONCILIATION.md) preserve the interaction pair.
 - [EVT-0128](../architecture/BEHAVIOR-TRACE/EVT-0128-SEMANTIC-IDENTITY-ADJUDICATION-BATCH-1-2026-10-24.md) and the semantic role ledger record three source-backed candidates; post-change audit must verify the third decision.
+
+
+## Active checkpoint NEXT-031 — latest-pair recovery and status transparency
+- Current interaction: [IN-031](./anchors/PALANG-0.0-IN-20261024-031-ACTIVATE-LIVING-ARCHITECTURE-GROWTH.md) / [OUT-031](./anchors/PALANG-0.0-OUT-20261024-031-ACTIVATE-LIVING-ARCHITECTURE-GROWTH.md).
+- [EVT-0129](../architecture/BEHAVIOR-TRACE/EVT-0129-LIVING-REGISTRATION-ARCHITECTURE-GROWTH-AND-RECOVERY-REPAIR-2026-10-24.md) records the latest-pair stale-recovery defect and repair.
+- [NEXT-031](./anchors/PALANG-0.0-NEXT-20261024-031-LATEST-PAIR-RECOVERY-AND-STATUS-TRANSPARENCY.md) is ACTIVE/LIVING; prior 0.0 anchors are preserved.
+- CI and artifact read-back for the latest-pair resolver remain pending; fresh-session recovery NOT RUN.
