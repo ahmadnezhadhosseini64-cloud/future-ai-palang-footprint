@@ -1319,3 +1319,9 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - [IN-033](anchors/PALANG-0.0-IN-20261024-033-LIVING-ARCHITECTURE-AND-STATUS-TRANSPARENCY.md) / [OUT-033](anchors/PALANG-0.0-OUT-20261024-033-LIVING-ARCHITECTURE-AND-STATUS-TRANSPARENCY.md); [EVT-0131](../architecture/BEHAVIOR-TRACE/EVT-0131-LIVING-ARCHITECTURE-STATUS-TRANSPARENCY-AND-GROWTH-2026-10-24.md); [NEXT-033](anchors/PALANG-0.0-NEXT-20261024-033-LIVING-STATUS-AND-COLD-START.md).
 - Run 40062202639 passed 74 tests; artifact 12547867197 inspected; ledger 5 records/hash chain PASS; graph drift PASS, six nodes/zero failures; both recovery directions RECOVERED.
 - [Durable receipt](../architecture/BEHAVIOR-TRACE/STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40062202639.json). Fresh-session recovery NOT RUN.
+
+
+## Latest exact-main pair-033 proof
+- [Durable receipt](../architecture/BEHAVIOR-TRACE/STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40062533959.json).
+- Run 40062533959 passed 74 tests on tested SHA `d05103dd3593f090f10fafb5a469f6cac69063b1`; artifact 12548485418 inspected, ZIP SHA-256 `508dbfa863bf7b805415a95291f8d881c7be1b097f9d1d8f12f32ea32e225ce5`.
+- Both recovery directions RECOVERED; drift PASS; ledger 5 records PASS. Fresh-session recovery remains NOT RUN.
