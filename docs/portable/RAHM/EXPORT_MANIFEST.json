@@ -1,7 +1,7 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.4.2",
-  "manifest_status": "STRICT_SHA256_GATE_ACTIVE; ALL_43 EXPECTED DIGESTS EXCEPT QUEUE PENDING AFTER SECOND LINK-REPAIR PASS",
+  "version": "1.4.3",
+  "manifest_status": "STRICT_SHA256_GATE_ACTIVE; 43 EXPECTED SHA256 VALUES POPULATED; FINAL POST-LINK-REPAIR RECHECK",
   "created_from_checkpoint": "G6IP-RAHM-CURRENT-057-20261024",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [
@@ -117,7 +117,7 @@
       "path": "docs/architecture/INTEGRATION-QUEUE/README.md",
       "version": "current",
       "git_blob_sha": "21f219554187c8fc0cce1c9eea3745b7ab98a416",
-      "sha256": "PENDING"
+      "sha256": "8b50798bf1b9dc61e445c45f09317af8a8c4607297d17da7c64110231bfdbed9"
     },
     {
       "path": "docs/reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md",
@@ -269,7 +269,7 @@
     "persistent_memory": "NOT_VERIFIED",
     "idle_background_execution": "NOT VERIFIED",
     "cross_host": "NOT_RUN",
-    "exact_byte_sha256": "Prior v1.4.1 strict pass; queue content changed again after a second focused link review; final v1.4.2 digest required",
+    "exact_byte_sha256": "Queue digest from strict workflow output 40124368822 recorded; run final exact-byte comparison against manifest v1.4.3",
     "schema_valid_fixture": "LAST_PASS_RUN_40122633966; valid fixture errors=0",
     "schema_invalid_fixture": "LAST_REJECTED_WITH_4_ERRORS_RUN_40122633966",
     "IN_OUT_recovery_equivalence": "LAST_PASS_LIMITED_LINK_CHECKPOINT_SCOPE_RUN_40122633966; full state reconstruction remains OPEN",
@@ -278,12 +278,12 @@
     "persistence_restart": "NOT VERIFIED",
     "canonical_mother_index_queue_integration": "CURRENT-057 chain and all target mothers/index/queue updated; focused link fixes applied; final read-back/digest workflow running",
     "schema_workflow_overall": "PASS_RUN_40122001572",
-    "portable_package_build": "PASS_RUN_40124302106 for manifest v1.4.1; rebuild after final queue link repair",
+    "portable_package_build": "PASS_RUN_40124302106 for v1.4.1; v1.4.3 archive rebuild pending",
     "full_state_recovery": "OPEN / NOT RUN",
-    "focused_relative_link_audit": "Point 0/006 links PASS; queue NEXT-049/NEXT-050 links corrected again after audit found remaining ../../../ prefixes; verify before closure",
+    "focused_relative_link_audit": "PASS_10_CORE_FILES; Point 0/006 and integration queue NEXT-049/NEXT-050 links have zero broken destinations",
     "repository_graph_audit": "REVIEW_REQUIRED_RUN_40122633902; global 11 missing links and identifier/parent conflicts remain open",
     "current_checkpoint": "CURRENT-057",
     "next_action": "NEXT-051"
   },
-  "note": "Strict conformance passed on v1.4.1, but a subsequent focused audit found two remaining ../../../ links in older queue entries. Those were corrected in this revision, so the queue digest and archive must be recomputed. This demonstrates why workflow PASS and content correctness are separate gates."
+  "note": "A strict run after the queue-link repair reported the exact queue SHA-256. Focused relative-link audit then verified zero broken destinations in the queue. The next strict run must verify all 43 digests against the final manifest. This is a repository/CI conformance check only, not a real AI-host import."
 }
