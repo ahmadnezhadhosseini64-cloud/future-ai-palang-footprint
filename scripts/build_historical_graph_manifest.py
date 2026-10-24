@@ -5,6 +5,7 @@ from collections import defaultdict
 from urllib.parse import urlparse, unquote
 from datetime import datetime, timezone
 import hashlib, json, re, subprocess
+from semantic_role_decisions import apply_role_decisions, load_decisions
 
 ROOT = Path(".").resolve()
 OUT = ROOT / "audit-output"
@@ -110,6 +111,12 @@ def groups(mapping):
     return [{"key": key, "paths": sorted(set(paths))} for key, paths in sorted(mapping.items()) if len(set(paths)) > 1]
 stable_collisions, prod_collisions, evt_collisions = groups(stable_map), groups(prod_map), groups(evt_map)
 duplicates = [{"sha256": sha, "paths": sorted(paths)} for sha, paths in sorted(sha_map.items()) if len(set(paths)) > 1]
+decision_path = ROOT / "data" / "interaction-pairs" / "semantic-role-decisions.jsonl"
+role_decisions, role_decision_parse_errors = load_decisions(decision_path)
+stable_collisions, stable_decision_summary = apply_role_decisions(stable_collisions, nodes, role_decisions, "STABLE_ID")
+prod_collisions, prod_decision_summary = apply_role_decisions(prod_collisions, nodes, role_decisions, "PRODUCTION_ID")
+reference_collisions, reference_decision_summary = apply_role_decisions(groups(reference_id_map), nodes, role_decisions, "REFERENCE_ID")
+evt_collisions, evt_decision_summary = apply_role_decisions(evt_collisions, nodes, role_decisions, "EVENT_NUMBER")
 id_to_paths = defaultdict(set)
 for mapping in (stable_map, prod_map, reference_id_map):
     for ident, paths in mapping.items():
@@ -185,14 +192,17 @@ manifest = {
                "local_link_edges": len(local_edges), "missing_local_links": len(missing_links),
                "stable_id_collision_groups": len(stable_collisions), "production_id_collision_groups": len(prod_collisions),
                "reference_id_collision_groups": len(groups(reference_id_map)),
+               "reviewed_stable_id_collision_groups": stable_decision_summary["groups_reviewed"],
+               "unreviewed_stable_id_collision_groups": stable_decision_summary["groups_unreviewed"],
                "event_number_collision_groups": len(evt_collisions), "exact_content_duplicate_groups": len(duplicates),
                "declared_parent_edges": len(parent_edges), "unresolved_parent_edges": len(unresolved),
                "ambiguous_parent_edges": len(ambiguous), "proposed_alias_edges": len(alias_edges),
                "identifier_occurrences": len(identifier_occurrences)},
     "nodes": nodes, "parent_edges": parent_edges, "unresolved_parent_edges": unresolved,
+    "semantic_role_decisions": {"stable_id": stable_decision_summary, "production_id": prod_decision_summary, "reference_id": reference_decision_summary, "event_number": evt_decision_summary, "parse_errors": role_decision_parse_errors},
     "ambiguous_parent_edges": ambiguous, "local_link_edges": local_edges, "missing_local_links": missing_links,
     "stable_id_collisions": stable_collisions, "production_id_collisions": prod_collisions,
-    "reference_id_collisions": groups(reference_id_map),
+    "reference_id_collisions": reference_collisions,
     "event_number_collisions": evt_collisions, "exact_content_duplicate_groups": duplicates,
     "proposed_alias_edges": alias_edges, "decode_errors": decode_errors,
     "semantic_status": "STRUCTURAL ONLY. Human semantic review and architecture relationship adjudication remain required."
@@ -234,16 +244,17 @@ review_queue = {
     "groups": {
         "stable_id": stable_collisions,
         "production_id": prod_collisions,
-        "reference_id": groups(reference_id_map),
+        "reference_id": reference_collisions,
         "event_number": evt_collisions,
         "exact_content_duplicates": duplicates
     },
-    "semantic_boundary": "Role candidates are not final decisions. Each group needs source/context/history review and read-back."
+    "semantic_role_decisions": {"stable_id": stable_decision_summary, "production_id": prod_decision_summary, "reference_id": reference_decision_summary, "event_number": evt_decision_summary, "parse_errors": role_decision_parse_errors},
+    "semantic_boundary": "Role candidates are not final decisions. Source-hash-verified decisions annotate only matching groups; raw collision counts remain visible and unresolved groups remain open."
 }
 (OUT / "historical-0.0-semantic-review-queue.json").write_text(json.dumps(review_queue, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 (OUT / "historical-0.0-canonical-graph-manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 summary = ["# Historical graph manifest summary", f"- Audit UTC: {run_utc}", f"- Commit: {commit}"]
 summary += [f"- {k}: {v}" for k, v in manifest["counts"].items()]
-summary += ["", "## Semantic boundary", "- Structural extraction only; proposed alias edges are not adjudicated.", "- A line-level semantic review queue is emitted; role candidates are not final decisions.", "- Preserve historical files; never auto-delete duplicates.", "- Review parent ambiguities, missing links and identity collisions before closure."]
+summary += ["", "## Semantic boundary", "- Structural extraction remains distinct from semantic adjudication.", "- Source-hash-verified role decisions annotate reviewed groups; raw collision counts remain visible.", "- Proposed aliases are not automatically accepted; preserve historical files and never auto-delete duplicates.", "- Review parent ambiguities, missing links and identity collisions before closure."]
 (OUT / "historical-0.0-graph-manifest-summary.txt").write_text("\n".join(summary) + "\n", encoding="utf-8")
 print("\n".join(summary))
