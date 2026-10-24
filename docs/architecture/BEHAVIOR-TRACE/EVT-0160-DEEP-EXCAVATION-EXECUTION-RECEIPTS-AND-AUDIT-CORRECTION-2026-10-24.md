@@ -2,7 +2,7 @@
 
 - Stable ID: `G6IP-RAHM-EVT-0160-20261024`
 - Production ID: `G6IP-EVT-0160`
-- Version: 1.0.2
+- Version: 1.0.3
 - Status: REGISTERED; read-back gate pending; host and global graph gates OPEN.
 - Point 0: [POINT-0/007](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-007-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md)
 - Input: [IN-051](../../0.0/anchors/PALANG-0.0-IN-20261024-051-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md)
@@ -51,3 +51,10 @@ Post-fix global audit, final strict manifest/package run, full IN/OUT canonical-
 
 ## Added recovery verification
 A dedicated repository verifier now reconstructs the current chain independently from IN-051 and OUT-050 and compares canonical state and open gates. The workflow has been wired to execute it; the first run is pending. Until it passes, full repository-state recovery remains OPEN; even a pass will not prove a separate AI-host import.
+
+
+## Repository-state verifier wiring
+- Added executable `scripts/behavior-hunter/verify_current_0_0_chain.py` and wired it into the [Living Architecture Audit workflow](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/workflows/living-architecture-audit.yml).
+- It starts independently from IN-051 and OUT-050, checks parent/child links, versions, current/next identifiers, manifest linkage and preservation of open gates, then compares the reconstructed canonical state.
+- Its first CI execution is pending; no PASS is claimed yet. Even a PASS proves repository-state recovery only, not a clean external AI-host import.
+- Latest post-fix audit [40129104121](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129104121): zero missing Markdown links; content remains REVIEW_REQUIRED due unresolved ID/parent/time findings.
