@@ -1,7 +1,7 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.0.5",
-  "manifest_status": "INVENTORY_RECONCILED_GIT_BLOB_IDS_SHA256_PENDING",
+  "version": "1.0.6",
+  "manifest_status": "INVENTORY_RECONCILED_SHA256_PENDING",
   "created_from_checkpoint": "G6IP-RAHM-CURRENT-045-20261024",
   "digest_algorithm": "SHA-256 over exact checked-out/exported file bytes; compare non-pending sha256 values in rahm-portable-conformance workflow. Git blob SHA-1 is a separate content-object identifier.",
   "files": [
@@ -141,6 +141,12 @@
       "path": "docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md",
       "version": "current",
       "git_blob_sha": "6f282ab91fc1bd4b7779e97628bc0bf041e2c0d6",
+      "sha256": "PENDING"
+    },
+    {
+      "path": "docs/architecture/BEHAVIOR-TRACE/EVT-0156-FIRST-MASTER-HARNESS-CORRECTION-2026-10-24.md",
+      "version": "1.0.0",
+      "git_blob_sha": "597e78681399424d635f1e47c6f28ce3603233dd",
       "sha256": "PENDING"
     }
   ],
