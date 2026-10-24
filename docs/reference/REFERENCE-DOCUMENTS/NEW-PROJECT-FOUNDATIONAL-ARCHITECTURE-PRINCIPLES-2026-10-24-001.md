@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001`
 - Production ID / شناسهٔ تولید: `NPFAP-20261024-001`
-- Version / نسخه: 1.2.2
+- Version / نسخه: 1.2.3
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING / EVOLVABLE / EXTRACTABLE / RECOVERY-ORIENTED / CURRENT-054 + CURRENT-056 LINKED
 - Scope / دامنه: الگوی پایه برای هر پروژهٔ جدید در خانوادهٔ Future AI / Palang Footprint / HAIF و شاخه‌های محصول/میزبان آن؛ با سازگارسازی مستند برای پروژه‌های دیگر
 - Source anchor / منشأ: [G6IP-ARCH-ZERO-20261024-001](../../0.0/anchors/PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md)
@@ -556,3 +556,9 @@ Evidence branch: [CURRENT-057](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-057
 - No-silent-gap rule: every durable milestone produces a visible status/result; unfinished work remains explicitly OPEN/PARTIAL/BLOCKED and is resumed from the last read-back-verified checkpoint.
 - Audit claims require exact path verification. Repository CI, package creation, independent host import, durable memory and idle/background execution are separate evidence classes.
 - Final post-edit audit and digest/package receipts are still pending; full IN/OUT reconstruction and real-host gates remain OPEN / NOT VERIFIED.
+
+
+## CURRENT-058 post-fix audit receipt
+- Audit run [40129104121](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129104121): 3,805 files; 5,564 local Markdown link edges; zero missing links. Structural checks passed; content status remains REVIEW_REQUIRED because 62 Stable-ID collision groups (61 unreviewed), 88 Production-ID groups, 7 Reference-ID groups, 36 event-number groups, 13 ambiguous parents and one ambiguous timestamp remain.
+- Strict baseline [40129104156](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129104156) passed 50/50 exact-byte SHA-256 entries, schema positive/negative fixtures, limited recovery equivalence and archive construction. Latest post-update run history must be checked for final bytes.
+- A new IN/OUT canonical-state verifier is wired into CI; until its first run passes, full repository-state reconstruction stays OPEN. Real host import, persistent memory and idle/background execution remain separate unverified gates.
