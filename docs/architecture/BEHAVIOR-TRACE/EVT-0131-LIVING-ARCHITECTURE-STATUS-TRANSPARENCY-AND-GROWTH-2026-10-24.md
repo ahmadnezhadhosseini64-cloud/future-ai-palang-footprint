@@ -150,3 +150,14 @@ Complete and read back the IN/OUT pair and all canonical graph edges; run the cu
 - Run 40062120276 passed 74 tests on tested SHA `e82839c679b52fb646824235db59092fd129148e`; drift manifest PASS with six graph nodes, zero failures, both recovery directions RECOVERED.
 - Artifact 12546884666; ZIP SHA-256 `e45208b1bd2b63fa4e30fedcf27b9701532b8c85feee298ae18cbd6105c0d332`.
 - This run predates ledger version 1.4.0. Run 40062202639 or a later exact run must validate the five-record ledger chain before the new version is marked CI-verified.
+
+
+## Ledger 1.4.0 and drift detector verification closure — run 40062202639
+- Durable receipt: [STATUS-20261024-EVT-0131-RUN-40062202639.json](./STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40062202639.json).
+- [Behavior Hunter run 40062202639](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40062202639) SUCCESS; 74 tests passed on tested SHA `e8cc599f00ee0ae5de437f13c26e15a8586d7fd5`.
+- Artifact `12547867197` downloaded and inspected; ZIP SHA-256 `82cb1c535c70b9b4d97464d3307c4b5320021ed2efe9c0d61d0fdaf76b48f2db`.
+- Ledger manifest: PASS, 5 records, 5 unique change versions, one change stream, hash chain verified, zero errors, history not rewritten.
+- Drift manifest: PASS, six graph nodes, zero failures. Both recovery directions RECOVERED for IN-033 ↔ OUT-033. Candidate manifest reports EVT-0131 CANDIDATE_READY / NOT_RUN; the candidate itself has not been executed as a separate test.
+- Proposal gate: READY_FOR_OWNER_REVIEW; evidence integrity verified; owner decision PENDING; canonical mutation false; promotion false.
+- Status receipt SUCCESS with UTC `2026-10-24T04:24:27.408234Z` and Tehran `2026-10-24T07:54:27.408234+03:30`.
+- Tested SHA is `e8cc599f00ee0ae5de437f13c26e15a8586d7fd5`; later receipt/documentation commits are not automatically covered by this run.
