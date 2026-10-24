@@ -4,7 +4,7 @@
 - Production ID: G6IP-EVT-0139
 - Interaction ID: INT-20261024-031
 - Version: 1.0.0
-- Status: REGISTERED / PENDING FINAL READ-BACK
+- Status: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED
 - IN: [IN-031](../../0.0/anchors/PALANG-0.0-IN-20261024-031-ADVANCE-POINT-0.0-AND-LINK-LATEST-ARCHITECTURE.md)
 - OUT: [OUT-031](../../0.0/anchors/PALANG-0.0-OUT-20261024-031-ADVANCE-POINT-0.0-AND-LINK-LATEST-ARCHITECTURE.md)
 - Point 0: [Initial root](../../0.0/anchors/GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001.md)
@@ -19,3 +19,9 @@ When a checkpoint is the next promised deliverable, do not merely restate the pl
 
 ## Evidence boundary
 This event must not imply that the interactive prototype is built, cold-start recovery is run, or Buffer/Persistent Memory/Library/Dropbox are verified. Record actual commit timestamps only after fetching commit metadata.
+
+
+## Final repository read-back
+- Point 0.0 and CURRENT-040 were fetched after write; IN-031/OUT-031, NEXT-039 and inherited architecture master v1.0.3 are linked and their expected IDs were present.
+- Timestamp ledger: [TIME-BINDING-GPT6-POINT-0.0-2026-10-24-001](./TIME-BINDING-GPT6-POINT-0.0-2026-10-24-001.md).
+- Scope remains repository registration/read-back only. Prototype NOT BUILT; cold-start recovery NOT RUN; external destinations NOT VERIFIED.
