@@ -629,3 +629,9 @@ Current active gate remains [EVT-0122](../../architecture/BEHAVIOR-TRACE/EVT-012
 - Audit [40059155300](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40059155300) PASS on SHA `899bb63ba6461809b59a940e260da6e482f87d48`; artifact `12547095688` inspected; ZIP SHA-256 `4b9ba4f16d6d7fdbe2a3949c15948557e92239ce2df7b496cad24658b0a46329`.
 - Three source-hash-verified role decisions accepted: one Stable-ID group, two Production-ID groups. The raw collision counts remain unchanged and 1,416 identifier occurrences remain unreviewed.
 - Structural graph: 3,719 local-link edges, zero missing links, zero decode errors. Semantic gaps remain active; fresh-session recovery NOT RUN; Issues #20/#21 OPEN.
+
+
+## Exact-current-head audit — 2026-10-24T03:40:37Z
+- [Living Architecture Audit run 40059261857](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40059261857) PASS on exact HEAD `d0bb633ade46b94bf20452c74efbc8137f4cbe99`; artifact `12546287920` inspected; SHA-256 `065e43b81123d6aeb4b70ddbed8506c2a326459ea147109da46e6c9e682b7f5f`.
+- Three source-hash-verified role decisions accepted; 8 identifier occurrences reviewed, 1,416 remain unreviewed. 3,719 local links, zero missing links, zero decode errors.
+- Six semantic-role tests passed. NEXT-030 remains active for continued source-backed reconciliation and separate fresh-session recovery; Issues #20/#21 remain open.
