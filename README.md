@@ -38,5 +38,6 @@ This master is the single entry point for continuation; earlier anchors and sour
 ## GPT-6 interactive branch — initial point 0
 - [Initial Point 0 — GPT-6 interactive project](docs/0.0/anchors/GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001.md)
 - [GPT-6 living master v1.3.0](docs/reference/REFERENCE-DOCUMENTS/GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001.md)
+- [Inherited architecture living master — HAIF → GPT-6](docs/reference/REFERENCE-DOCUMENTS/GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md) — G6IP-IAM-20261024-001 v1.0.1; registered and read-back verified.
 - [Next checkpoint: point 0.0](docs/0.0/anchors/PALANG-0.0-NEXT-20261024-038-DEFINE-POINT-0-THEN-0.0.md)
 - This branch inherits Future AI / Palang Footprint and HAIF registration, evidence, behavioral, time-binding and recoverability rules. Its registration does not assert that a prototype, point 0.0, cold-start test, or external destination is complete.
