@@ -639,3 +639,10 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - [Durable receipt](./STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40062533959.json).
 - Run 40062533959 passed 74 tests on tested SHA `d05103dd3593f090f10fafb5a469f6cac69063b1`; artifact ZIP SHA-256 `508dbfa863bf7b805415a95291f8d881c7be1b097f9d1d8f12f32ea32e225ce5`.
 - Ledger 5 records PASS; graph drift PASS; both IN/OUT recovery directions RECOVERED; fresh-session recovery NOT RUN.
+
+
+## EVT-0132 — live mirror sync reconciliation
+- [EVT-0132](./EVT-0132-LIVE-MIRROR-SYNC-RECONCILIATION-2026-10-24.md) documents the current canonical source vs Library mirror comparison.
+- [NEXT-034](../../0.0/anchors/PALANG-0.0-NEXT-20261024-034-LIVE-MIRROR-SYNC-AND-COLD-START.md) preserves the continuation path.
+- Event commit UTC `2026-10-24T04:40:02Z` = Tehran `2026-10-24T08:10:02+03:30`; anchor commit UTC `2026-10-24T04:40:24Z` = Tehran `2026-10-24T08:10:24+03:30`.
+- Full-file match NOT PASS; Library write BLOCKED by `container_session_unavailable`; no write/read-back of a new Library version exists.
