@@ -8,7 +8,7 @@
 - Audit report: [HA-001](../../reference/REFERENCE-DOCUMENTS/NEW-PROJECT-ARCHITECTURE-HARD-AUDIT-2026-10-24-001.md)
 - Previous checkpoint: [CURRENT-041](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-041-FOUNDATIONAL-ARCHITECTURE-MOTHER-ACTIVATION.md)
 - New checkpoint: [CURRENT-042](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-042-NEW-PROJECT-ARCHITECTURE-HARD-AUDIT.md)
-- Status: REGISTERED / READ-BACK PENDING.
+- Status: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING.
 
 ## Observed findings
 
@@ -32,3 +32,15 @@ Correct only the verifiable metadata and links; keep historical content as histo
 - Build and exercise a small interactive prototype, then record evidence.
 - Run cold-start recovery only after a real recoverable artifact exists.
 - Keep external destinations separately NOT VERIFIED.
+
+
+## Repository read-back receipt — 2026-10-24
+The following exact repository paths were fetched again after writes: IN-034, OUT-034, EVT-0142, CURRENT-042, NEXT-040, architecture zero, CURRENT-041, HA-001, foundational mother NPFAP-20261024-001, inherited architecture mother, GPT-6 living master, 0.0 registry and Reference Index. The expected CURRENT-042 / EVT-0142 / NEXT-040 / NPFAP identifiers and the required master/index links were present. NPFAP's index status now states repository exact read-back verified.
+
+- CURRENT-042 last-change commit: `60df2967d8ed6ed8f5592334efbf682ebe877b94`; UTC `2026-10-24T10:03:55Z`; Tehran `2026-10-24T13:33:55+03:30`.
+- User-message timestamp: UNKNOWN / UNVERIFIED; never infer it from repository time.
+- Fresh-project adoption: OPEN / NOT RUN.
+- Prototype: NOT BUILT.
+- Cold-start recovery: NOT RUN.
+- Buffer / Persistent Memory / Library / Dropbox: NOT VERIFIED.
+- Global always-on capture: NOT ESTABLISHED.
