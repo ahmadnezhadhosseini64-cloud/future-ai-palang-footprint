@@ -3,8 +3,8 @@
 - Stable ID / شناسهٔ پایدار: `GPT6-RAHM-PROJECT-POINT-0-2026-10-24-001`
 - Production ID / شناسهٔ تولید: `G6IP-RAHM-POINT-0-20261024-001`
 - Version / نسخه: 1.0.0
-- Status / وضعیت: REGISTERED; read-back pending at creation.
-- Parent HAIF / معماری والد: [HAIF Initial AI Model mother](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md), observed v1.3.8 before this update.
+- Status / وضعیت: REGISTERED / READ-BACK VERIFIED; exact path/content and principal links fetched.
+- Parent HAIF / معماری والد: [HAIF Initial AI Model mother](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md), updated to v1.3.9 in this registration.
 - Parent GPT-6 project root / ریشهٔ شاخهٔ GPT-6: [Initial Point 0](./GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001.md).
 - Parent current state / وضعیت قبلی شاخه: [CURRENT-043](./PALANG-0.0-CURRENT-20261024-043-FOUNDATIONAL-PRINCIPLES-COMPLETENESS.md), preserved.
 - Current Rahm checkpoint / نقطهٔ جاری رحم: [G6IP-RAHM-CURRENT-044](./PALANG-0.0-CURRENT-20261024-044-RAHM-PROJECT-POINT-0.0.md).
