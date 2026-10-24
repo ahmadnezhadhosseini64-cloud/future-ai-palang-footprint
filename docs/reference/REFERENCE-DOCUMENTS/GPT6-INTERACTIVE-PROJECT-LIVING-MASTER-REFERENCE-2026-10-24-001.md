@@ -207,3 +207,9 @@ This living master records repository architecture only. It does not prove conti
 - Next action: [NEXT-044](../../0.0/anchors/PALANG-0.0-NEXT-20261024-044-FALLBACK-TEST-AND-INDEX-RECONCILIATION.md) — OPEN / NOT RUN.
 - The prior REFERENCE_INDEX fetch 404 was recovered by a later successful fetch. Its update/read-back match is still pending until the new marker and links are verified after write.
 - Host memory, idle background execution, runtime installation, SHA-256 integrity, schema validation and second-host compatibility remain NOT VERIFIED / NOT RUN.
+
+
+## Verification update — CURRENT-046 reconciliation
+- CURRENT-046, IN-038/OUT-038, EVT-0146, NEXT-044, fallback folder, index, queue and mother documents were fetched after writes; principal IDs/links matched.
+- REFERENCE_INDEX read-back is now successful after its earlier 404; CURRENT-046/NEXT-044 markers are confirmed in the returned content.
+- Three package JSON files parse successfully. SHA-256 byte-level integrity, full schema fixtures, runtime installation, persistent memory, idle background and second-host tests remain OPEN / NOT RUN.
