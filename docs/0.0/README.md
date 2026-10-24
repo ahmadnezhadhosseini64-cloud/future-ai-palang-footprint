@@ -1364,3 +1364,7 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - Event: [EVT-0135](../architecture/BEHAVIOR-TRACE/EVT-0135-GPT6-INTERACTIVE-PROJECT-START-2026-10-24.md).
 - Living master: [GPT6 interactive project reference](../reference/REFERENCE-DOCUMENTS/GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001.md).
 - Parent CURRENT-036 and NEXT-036 remain preserved. Next: read back and reconcile these files, bind actual commit times UTC/Tehran, then build and test the first small interactive experience. Historic source census and cold-start recovery remain open.
+## CURRENT-037 — GPT-6 interactive project start
+
+- Time binding: [TIME-BINDING-GPT6-INTERACTIVE-2026-10-24-001](../architecture/BEHAVIOR-TRACE/TIME-BINDING-GPT6-INTERACTIVE-2026-10-24-001.md) records actual commit timestamps (UTC canonical + Tehran equivalent). Exact message time remains UNKNOWN / UNVERIFIED.
+- Read-back of the five primary artifacts and index linkage: VERIFIED; external destinations remain unverified.
