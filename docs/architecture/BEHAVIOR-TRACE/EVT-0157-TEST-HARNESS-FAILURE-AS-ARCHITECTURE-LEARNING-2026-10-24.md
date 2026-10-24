@@ -25,3 +25,10 @@ A harness/reporting failure is itself an architecture event. Never delete or rew
 - Limited IN/OUT checkpoint/link equivalence: verified; full graph/state reconstruction remains OPEN.
 - Extractable archive construction: verified.
 - Separate AI-host import, second-host import, runtime persistence, idle/background execution and automatic capture: OPEN / NOT VERIFIED.
+
+
+## Final rerun after CURRENT-055 inventory reconciliation
+- Run [40117800859](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40117800859) SUCCESS.
+- 31 manifest entries matched exact-byte SHA-256; valid fixture accepted, invalid fixture rejected with 4 errors; limited IN/OUT link/checkpoint equivalence passed.
+- Archive SHA-256: `a37f833391212907c183e82c600179c12d87d356bee559672250c017929ac1d2`.
+- This closes only the CI criteria stated above. Clean host import, full state recovery, durable memory and idle/background execution remain OPEN.
