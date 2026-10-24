@@ -3,7 +3,7 @@
 
 - Stable ID / شناسه پایدار: UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001
 - Production ID / شناسه تولید: UIALAC-2026-10-20-001
-- Version / نسخه: 1.2.0
+- Version / نسخه: 1.3.0
 - Date / تاریخ سند: 2026-10-20
 - Initial creation time / زمان ایجاد اولیه: در شواهد ایجاد اولیه ثبت نشده است. Amendment processing time / زمان پردازش اصلاحیه: 2026-10-20T22:20:19+03:30 (Asia/Tehran); UTC: 2026-10-20T18:50:19Z. User message time for amendment / زمان پیام کاربر برای اصلاحیه: UNKNOWN / UNVERIFIED.
 - Timezone / منطقه زمانی مرجع پروژه: Asia/Tehran (+03:30)
@@ -352,3 +352,12 @@ The overall state is not complete while any required destination is unverified. 
 - هر ورودی/خروجی رویداد مستقل و پیونددار است؛ ثبت قاعده یا تغییر باید به سند مرجع، دفتر ۰.۰، نمایه، دفتر رفتار و صف وصل شود.
 - قاعدهٔ ثبت‌شده، به‌تنهایی اثبات اجرای خودکار در هر میزبان/نشست نیست؛ آزمون runtime و read-back لازم است.
 
+
+
+## Amendment — Foundational architecture principles for new projects (2026-10-24)
+
+- Governing companion: [NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001](./NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md), Stable ID `NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001`, Production ID `NPFAP-20261024-001`.
+- Source anchor: [G6IP-ARCH-ZERO-20261024-001](../../0.0/anchors/PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md).
+- تصمیم: اصول حفظ تبار، نقطهٔ ۰ و لنگرهای مستقل، سند مادر نسخه‌دار، زنجیرهٔ IN/OUT/EVT، رفتارشناسی مبتنی بر شاهد، زمان UTC-first، دروازهٔ Child → Rahm → Master، بازیابی/استخراج، گام بعدی روشن و منع ادعای تکمیل بدون آزمون، اصول بنیادین پیش‌فرض برای همهٔ پروژه‌های جدید خانوادهٔ Future AI / Palang Footprint / HAIF هستند.
+- Every new project must instantiate its own IDs, Point 0, living master, CURRENT/NEXT anchors, behavior/event trace, timestamp ledger, evidence gates and recovery bundle. This rule does not mean that all projects are automatically instrumented or that background capture is active.
+- Status remains destination-specific: repository read-back, runtime validation, export/cold-start test, and external persistence are separate claims requiring separate evidence.
