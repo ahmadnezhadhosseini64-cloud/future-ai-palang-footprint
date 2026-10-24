@@ -1571,9 +1571,11 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 ## OPEN — EVT-0132 live mirror sync reconciliation
 - [EVT-0132](../BEHAVIOR-TRACE/EVT-0132-LIVE-MIRROR-SYNC-RECONCILIATION-2026-10-24.md) and [NEXT-034](../../0.0/anchors/PALANG-0.0-NEXT-20261024-034-LIVE-MIRROR-SYNC-AND-COLD-START.md) preserve the current sync attempt without replacing prior 0.0 anchors.
 - Source commit: `a2374d7da36a5af69b1bdf17f6dfd673bc03c97f`, UTC `2026-10-23T17:34:39Z`, Tehran `2026-10-23T21:04:39+03:30`; source blob `de1b75f07241c9b313e476af5f1417177ff78c10`.
-- Event commit UTC `2026-10-24T04:42:00Z` = Tehran `08:12:00+03:30`; NEXT-034 commit UTC `2026-10-24T04:42:23Z` = Tehran `08:12:23+03:30`.
-- Stable ID, Test ID, Version 1.0.0, next action and external destination statuses match. Full-file delta is 1,501 characters; the accepted 7-character tolerance only covers the earlier documented snapshot.
-- Library upload remains BLOCKED: `container_session_unavailable` / `No active container session was found for container_path.`. No write occurred; current Library mirror sync is NOT VERIFIED.
+- Event commit UTC `2026-10-24T04:48:10Z` = Tehran `08:18:10+03:30`; NEXT-034 commit UTC `2026-10-24T04:48:46Z` = Tehran `08:18:46+03:30`.
+- Stable ID, Test ID, Version 1.0.0, next action and external destination statuses match. Full-file delta is 1 character; Levenshtein distance 1, within the accepted 7-character tolerance. Stable ID/Test ID/Version/next-action/destination-status keys MATCH.
+- Library version 7 upload + independent read-back PASS via `source_file_ref`; current snapshot MATCHED WITHIN TOLERANCE. Earlier `container_session_unavailable` failures remain historical and are superseded.
 - Next: use a supported upload path; preserve Library-only addenda in repo; independently read back and compare. Then return to uncoached fresh-session recovery. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external recovery NOT RUN.
 
 - Automation `Palang Mirror Sync` (`6ad9a407b9d481919c7145fbe4638dec`) remains ENABLED. Prompt update metadata UTC `2026-10-24T04:43:53.616341Z` = Tehran `2026-10-24T08:13:53.616341+03:30`; it now records the accepted historical 7-character tolerance and current blocked write path. This is metadata time, not a repository commit time.
+
+- Archive commit `185d3eef6442134d44df56711714c88d1d7aded8`, UTC `2026-10-24T04:47:18Z`, derived Tehran `2026-10-24T08:17:18+03:30`: Library-only EVT-0116/history addenda preserved before the refresh in `docs/architecture/BEHAVIOR-TRACE/EVT-0132-LIBRARY-ONLY-ADDENDA-ARCHIVE-2026-10-24.md`.
