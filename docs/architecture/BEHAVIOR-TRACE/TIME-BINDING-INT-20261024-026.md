@@ -29,7 +29,7 @@ Each time below is from actual GitHub commit metadata for the artifact's last-ch
 | Source-rule-component-test map | [91ea821](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/91ea82171d2efffbb87408c51d3a38d95d1b8f69) | 2026-10-24T06:01:42Z | 2026-10-24T09:31:42+03:30 |
 | Integration queue | [f5121b9](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/f5121b9d4e59b5767b8eed51fae2d1eda17606ce) | 2026-10-24T06:01:47Z | 2026-10-24T09:31:47+03:30 |
 | Initial-model master | [c64a919](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/c64a9199de85af5da0ec85cdf8d49f8cb1d78cf7) | 2026-10-24T06:01:52Z | 2026-10-24T09:31:52+03:30 |
-| Audit script | [214193a](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/214193ab812949dbfa256fb2b36d4865e3580d59) | 2026-10-24T06:05:13Z | 2026-10-24T09:35:13+03:30 |
+| Audit script | [b6e5335](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/b6e533505f2ed3787b9a041e0d2f83b0cdba6a01) | 2026-10-24T06:07:43Z | 2026-10-24T09:37:43+03:30 |
 | Verification checkpoint | [1c22520](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/1c2252064c0b8c4603da3e554707339152c9e676) | 2026-10-24T06:03:44Z | 2026-10-24T09:33:44+03:30 |
 
 ## Time-binding ledger's own change boundary
