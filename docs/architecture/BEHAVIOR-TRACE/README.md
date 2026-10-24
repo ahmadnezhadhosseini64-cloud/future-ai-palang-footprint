@@ -616,3 +616,8 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Run [40061468626](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40061468626) passed 71 tests on tested SHA `cc1f61f18a364c896b251735ccb643e552d40fe2`; artifact `12547860733` inspected, ZIP SHA-256 `222398f7d4b601abe5559090c75d57653adb2a9e3b51dabc2da7f05cfbe74aa9`.
 - IN-033 → OUT-033 and OUT-033 → IN-033 both RECOVERED, zero failures; ledger PASS with 4 hash-linked records; status receipt SUCCESS.
 - Failures from earlier attempts remain preserved in EVT-0131. Fresh-session recovery NOT RUN; external persistence/host-wide capture NOT PROVEN.
+
+
+## Durable receipt — run 40061873837
+- [Receipt JSON](./STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40061873837.json).
+- Run [40061873837](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40061873837) passed 71 tests on tested SHA `edd82d08311c03f0506c651e5c33d128a0d70a35`; artifact ZIP SHA-256 `c44071afab49df4bfb33141f432db059e21455f3161801f4d711efd34d690f1f`.
