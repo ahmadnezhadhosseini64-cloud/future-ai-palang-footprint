@@ -593,3 +593,10 @@ Current active gate remains [EVT-0122](../../architecture/BEHAVIOR-TRACE/EVT-012
 - [Living Architecture Audit run 40016726450](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40016726450): SUCCESS on audited SHA `ffc4fb8136cdd4168910f8c0ba58d6619fddfa13`; artifact `12529305164` inspected; ZIP SHA-256 `20baa0684f3a99b612b8be6ebf03fc21b381d194ac11bbe51f7a493cb69aa5c6`.
 - 2,680 files; 858 source files; 1,822 generated evidence files; 3,644 local-link edges; zero missing links.
 - Semantic identity/lineage findings remain open: 60 Stable ID, 71 Production ID, 7 reference-ID, 30 event-number collision groups; 11 exact duplicates; 13 ambiguous parent edges; 11 proposed aliases; one ambiguous timestamp. [NEXT-028](../../0.0/anchors/PALANG-0.0-NEXT-20261023-028-POST-REPAIR-AUDIT-AND-SEMANTIC-RECONCILIATION.md) remains active.
+
+
+## Semantic reconciliation — EVT-0128 / NEXT-029
+- Current source-backed adjudication: [EVT-0128](../../architecture/BEHAVIOR-TRACE/EVT-0128-SEMANTIC-IDENTITY-ADJUDICATION-BATCH-1-2026-10-24.md).
+- Decision ledger: [HISTORICAL-0.0-CANONICAL-ALIAS-LINEAGE-DECISION-REGISTER](./HISTORICAL-0.0-CANONICAL-ALIAS-LINEAGE-DECISION-REGISTER-2026-10-21-001.md), one repeated Stable-ID group reviewed by document role, Git history, and audited graph links.
+- [NEXT-029](../../0.0/anchors/PALANG-0.0-NEXT-20261024-029-SEMANTIC-REVIEW-BATCH-2-AND-FRESH-SESSION.md) is active for batch-2 review, teaching the audit to consume reviewed role decisions, and separate fresh-session recovery.
+- This does not close the remaining collision groups, 13 ambiguous parent edges, 11 alias proposals, EVT-0089 timezone ambiguity, Issue #20 or Issue #21. No bulk rename/delete/merge.
