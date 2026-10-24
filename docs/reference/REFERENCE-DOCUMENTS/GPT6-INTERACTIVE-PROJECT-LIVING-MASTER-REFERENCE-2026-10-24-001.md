@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001`
 - Production ID / شناسهٔ تولید: `G6IP-LMR-20261024-001`
-- Version / نسخه: 1.3.0
+- Version / نسخه: 1.3.1
 - Project / پروژه: Future AI / Palang Footprint — HAIF
 - Owner / مالک معماری: احمد نژادحسینی (احمد پلنگ)
 - Host / میزبان این شاخه: ChatGPT / GPT-6
@@ -121,5 +121,7 @@
 - Behavior governance: [Palang Dual-Track Behavioral Architecture](./PALANG-DUAL-TRACK-BEHAVIORAL-ARCHITECTURE-MASTER-REFERENCE-2026-10-22-001.md). Apply both growth/discovery and path-drift/error-control tracks; preserve evidence and distinguish observations from hypotheses.
 - Project-zero governance remains [GPT6 Project Zero baseline](../../architecture/INITIAL-BASELINES/GPT6-INTERACTIVE-PROJECT-ZERO-BASELINE-2026-10-24-001.md). The point-0 record explicitly inherits preserve-first, UTC-canonical, evidence gate, write/read-back/match/verify/reconcile/status, IN/OUT/event anchors, Child → Rahm → Master, recoverability, destination-specific status, privacy minimization, living versioning and no-redundant-retest.
 - Next: [NEXT-038](../../0.0/anchors/PALANG-0.0-NEXT-20261024-038-DEFINE-POINT-0-THEN-0.0.md) now concerns the independent point 0.0 checkpoint; point 0.0 is not yet created.
-- Status boundary: repository files are written; read-back and link reconciliation is required before final verified status. Prototype remains NOT BUILT in this step, cold-start recovery NOT RUN, and Buffer / Persistent Memory / Library / Dropbox NOT VERIFIED.
+- Status boundary: point-0 record, IN/OUT and EVT/CURRENT/NEXT files were fetched again and expected identifiers matched. Prototype remains NOT BUILT in this step, cold-start recovery NOT RUN, and Buffer / Persistent Memory / Library / Dropbox NOT VERIFIED.
 - Time binding: [GPT-6 initial point UTC/Tehran ledger](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-GPT6-INITIAL-POINT-2026-10-24-001.md). The latest update commit time must be appended after the actual commit is fetched; message time remains unknown.
+
+- Point-0 read-back receipt: the point-0 file and linked IN-030/OUT-030, CURRENT-039, EVT-0138 and NEXT-038 paths were fetched after write; IDs matched. Point 0.0, prototype and cold-start recovery remain NOT RUN.
