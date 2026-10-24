@@ -1527,3 +1527,9 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - Run 40061468626 passed 71 tests on tested SHA `cc1f61f18a364c896b251735ccb643e552d40fe2`; artifact 12547860733 inspected, ZIP SHA-256 `222398f7d4b601abe5559090c75d57653adb2a9e3b51dabc2da7f05cfbe74aa9`.
 - Both recovery directions RECOVERED, ledger PASS with 4 records, status receipt SUCCESS. Previous failures and fixes remain documented.
 - Next active gate: uncoached fresh-session recovery, then source-backed identity collision adjudication and timestamp ambiguity review. Issues #19/#20/#21 remain OPEN; no host-wide capture or external persistence claim.
+
+
+## EVT-0131 latest terminal proof — run 40061600048
+- SUCCESS on tested SHA `2968455a8d72894fb167b6189783937e94abdf4a`; artifact 12548055321 inspected (SHA-256 `03a3faedb32276f315d314e1f89f030ad7d41ff8de90c4b4da720daaf7732fa2`).
+- IN-033/OUT-033 recovered both directions; EVT-0131/NEXT-033 linked; zero failures. 2 candidate tests generated with no parse errors; ledger PASS with 4 hash-linked records; terminal receipt SUCCESS.
+- Still open: fresh-session recovery NOT RUN; Issues #19/#20/#21 OPEN; host-wide capture/external persistence NOT PROVEN.
