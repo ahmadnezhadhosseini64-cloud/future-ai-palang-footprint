@@ -32,3 +32,13 @@ Evidence at audit SHA `ffc4fb8136cdd4168910f8c0ba58d6619fddfa13`:
 - 13 ambiguous parent edges, 11 proposed aliases and the unresolved timezone at EVT-0089 line 21 remain open.
 - Fresh-session recovery remains a separate test; Issues #20 and #21 remain open.
 - Continue source/history/link-based review one group at a time; add regression tests so role decisions remain visible to audits. Run Living Architecture Audit, Behavior Hunter and Cross-Layer Integrity Gate on identifiable SHAs and inspect artifacts.
+
+
+## Independent CI and artifact proof — source SHA `c54ea409d43d0650066433b63bf364c9ae9e2279`
+- Living Architecture Audit [run 40058599484](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40058599484): SUCCESS on the exact source SHA above; artifact `12546426252` downloaded and inspected; ZIP SHA-256 `881f6edd39e2f2e836e21e84ddee3f0f9b90a58c53a18a99950293308ce66b4e`.
+- Audit snapshot: 2,708 total files, 865 source files, 3,687 local-link edges, 0 missing local links, 0 decode errors. Raw counts remain 60 Stable-ID, 71 Production-ID, 7 Reference-ID and 30 event-number collision groups; 11 exact duplicate groups; 13 ambiguous parent edges; 11 proposed aliases.
+- The generated manifest independently applied two source-hash-verified role decisions: one Stable-ID group and one Production-ID group; remaining unreviewed groups are 59 Stable-ID and 70 Production-ID. Raw collision counts remain unchanged by design.
+- Behavior Hunter [run 40058599527](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40058599527): SUCCESS; 67 tests passed on the same SHA; artifact `12546421339` inspected; ZIP SHA-256 `b3d9e3c05044a57fd4485112b4a446427e1b7ad76bb4ec9184574ae4d4c1b8cf`. Append-only architecture ledger PASS (2 records, hash chain verified); proposal gate READY_FOR_OWNER_REVIEW, evidence VERIFIED, promotion false.
+- Cross-Layer Integrity Gate [run 40058599467](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40058599467): SUCCESS on the same SHA.
+- Main later advanced to evidence-only commit `0d13be4be55aa6c29efb95ce00aa39f29314a19a` at `2026-10-24T03:30:48Z`; this exact later HEAD was not rerun. The successful proofs are for source SHA `c54ea...`.
+- Audit also caught a generated `__pycache__/*.pyc` file as a non-text source node in an earlier run. The graph builder now excludes Python bytecode; the final artifact above shows zero decode errors. The failed/interim audit artifact remains part of the history.
