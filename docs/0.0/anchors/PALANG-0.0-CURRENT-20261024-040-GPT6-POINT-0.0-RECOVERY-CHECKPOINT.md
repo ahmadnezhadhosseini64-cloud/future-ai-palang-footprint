@@ -38,3 +38,8 @@ Canonical repository registration time must be fetched from this file's actual G
 - Exact CURRENT-040 path was fetched again; its IDs and links to Point 0.0, CURRENT-039, IN-031/OUT-031, EVT-0139, latest architecture master, GPT-6 living master and NEXT-039 were present.
 - Prototype remains NOT BUILT; cold-start recovery NOT RUN; external destinations NOT VERIFIED.
 \n\n## Architecture zero integration\n- New architecture root: [G6IP-ARCH-ZERO-20261024-001](./PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md).\n- Governing inherited architecture master: v1.0.4.\n- This link does not mean prototype or cold-start recovery is complete.\n\n\n## Latest interaction and architecture root\n- Architecture zero: [G6IP-ARCH-ZERO-20261024-001](./PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md).\n- Latest pair: IN-032 ↔ OUT-032; event EVT-0140.\n- Latest mother architecture: v1.0.4; GPT-6 living master: v1.3.5.\n
+
+## Successor checkpoint — CURRENT-041
+- This historical checkpoint remains preserved. The new independent continuation node is [CURRENT-041](./PALANG-0.0-CURRENT-20261024-041-FOUNDATIONAL-ARCHITECTURE-MOTHER-ACTIVATION.md).
+- Its interaction pair is [IN-033](./PALANG-0.0-IN-20261024-033-ACTIVATE-FOUNDATIONAL-ARCHITECTURE-MOTHER.md) ↔ [OUT-033](./PALANG-0.0-OUT-20261024-033-ACTIVATE-FOUNDATIONAL-ARCHITECTURE-MOTHER.md), with [EVT-0141](../../architecture/BEHAVIOR-TRACE/EVT-0141-FOUNDATIONAL-ARCHITECTURE-MOTHER-ACTIVATION-2026-10-24.md).
+- The active foundational mother is [NPFAP-20261024-001](../../reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md). Continue from CURRENT-041; do not restart at Dropbox or overwrite this history.
