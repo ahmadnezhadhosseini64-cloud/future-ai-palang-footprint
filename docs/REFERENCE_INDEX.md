@@ -1162,3 +1162,15 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Next action: [NEXT-044](0.0/anchors/PALANG-0.0-NEXT-20261024-044-EXTRACTABLE-RAHM-CHILD-AND-COLD-START-TEST.md) — OPEN / NOT RUN.
 - Seven linked paths were fetched successfully and cross-links were checked. This is repository read-back evidence only.
 - Still unverified: export artifact, fresh-context recovery, second-project integration, always-on search/scheduling/background automation. Preserve all historical anchors and versions.
+
+
+## GPT-6 Rahm project — Point 0 / CURRENT-044 / master v1.3.9+ — 2026-10-24
+
+- New branch Point 0: [GPT6-RAHM-PROJECT-POINT-0-2026-10-24-001](0.0/anchors/GPT6-RAHM-PROJECT-POINT-0-2026-10-24-001.md).
+- Independent 0.0 checkpoint: [CURRENT-044 — Rahm project](0.0/anchors/PALANG-0.0-CURRENT-20261024-044-RAHM-PROJECT-POINT-0.0.md).
+- Interaction lineage: [IN-036](0.0/anchors/PALANG-0.0-IN-20261024-036-RAHM-PROJECT-POINT-0.md) → [OUT-036](0.0/anchors/PALANG-0.0-OUT-20261024-036-RAHM-PROJECT-POINT-0.md) → [EVT-0144](architecture/BEHAVIOR-TRACE/EVT-0144-GPT6-RAHM-PROJECT-POINT-0-2026-10-24.md).
+- Latest HAIF mother: [v1.3.9](architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md).
+- Latest inherited architecture master: [G6IP-IAM v1.0.6](reference/REFERENCE-DOCUMENTS/GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md).
+- Latest GPT-6 living master: [G6IP-LMR v1.3.8](reference/REFERENCE-DOCUMENTS/GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001.md).
+- Next active task: [NEXT-042 — Rahm export, conformance and cross-host test](0.0/anchors/PALANG-0.0-NEXT-20261024-042-RAHM-CONFORMANCE-EXPORT-CROSS-HOST-TEST.md), OPEN / NOT RUN.
+- Proof boundary: repository registration and read-back are not proof of an installed runtime, continuous capture, fresh-host recovery, or compatibility with every AI host.
