@@ -1575,3 +1575,5 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - Stable ID, Test ID, Version 1.0.0, next action and external destination statuses match. Full-file delta is 1,501 characters; the accepted 7-character tolerance only covers the earlier documented snapshot.
 - Library upload remains BLOCKED: `container_session_unavailable` / `No active container session was found for container_path.`. No write occurred; current Library mirror sync is NOT VERIFIED.
 - Next: use a supported upload path; preserve Library-only addenda in repo; independently read back and compare. Then return to uncoached fresh-session recovery. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external recovery NOT RUN.
+
+- Automation `Palang Mirror Sync` (`6ad9a407b9d481919c7145fbe4638dec`) remains ENABLED. Prompt update metadata UTC `2026-10-24T04:43:53.616341Z` = Tehran `2026-10-24T08:13:53.616341+03:30`; it now records the accepted historical 7-character tolerance and current blocked write path. This is metadata time, not a repository commit time.
