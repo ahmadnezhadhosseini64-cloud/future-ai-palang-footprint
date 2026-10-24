@@ -27,15 +27,15 @@ NEXT_ACTIONS = [
 ]
 
 def _production_id(text):
-    m = re.search(r"(?m)^\\s*-?\\s*Production ID:\\s*(IN|OUT)-(\\d+)\\s*$", text)
+    m = re.search(r"(?m)^\s*-?\s*Production ID:\s*(IN|OUT)-(\d+)\s*$", text)
     return (m.group(1), int(m.group(2))) if m else None
 
 def _pair_id(text):
-    m = re.search(r"(?m)^\\s*-?\\s*Interaction pair ID:\\s*(INT-\\d{8}-\\d+)\\s*$", text)
+    m = re.search(r"(?m)^\s*-?\s*Interaction pair ID:\s*(INT-\d{8}-\d+)\s*$", text)
     return m.group(1) if m else None
 
 def _event_id(text):
-    candidates = re.findall(r"\\bEVT-\\d{4}\\b", text)
+    candidates = re.findall(r"\bEVT-\d{4}\b", text)
     return candidates[0] if candidates else None
 
 def discover_latest_pair(root):
@@ -77,7 +77,7 @@ def discover_latest_pair(root):
     return {"interaction_id": interaction, **pair}, []
 
 def _linked_id(text, prefix):
-    vals = re.findall(rf"\\b{prefix}-\\d+\\b", text)
+    vals = re.findall(rf"\b{prefix}-\d+\b", text)
     return max(vals, key=lambda v: int(v.split("-")[1])) if vals else None
 
 def recover(start, repo_root="."):
