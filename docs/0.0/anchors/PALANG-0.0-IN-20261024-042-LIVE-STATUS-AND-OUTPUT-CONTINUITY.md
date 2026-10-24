@@ -3,7 +3,7 @@
 - Stable ID / شناسهٔ پایدار: `PALANG-IN-LIVE-STATUS-AND-OUTPUT-CONTINUITY-2026-10-24-042`
 - Production ID / شناسهٔ تولید: `G6IP-IN-042`
 - Version / نسخه: `1.0.0`
-- Status at creation / وضعیت هنگام ایجاد: REGISTERED; read-back pending.
+- Status / وضعیت: REGISTERED / READ-BACK VERIFIED; exact path and content fetched after write.
 - Parent current / نقطهٔ جاری والد: [CURRENT-048](./PALANG-0.0-CURRENT-20261024-048-LIVING-ARCHITECTURE-SUMMARY-AND-RECOVERY.md)
 - Previous input / ورودی قبلی: [IN-041](./PALANG-0.0-IN-20261024-041-LIVING-ARCHITECTURE-SUMMARY-AND-RECOVERY.md)
 - Previous output / خروجی قبلی: [OUT-040](./PALANG-0.0-OUT-20261024-040-LIVING-ARCHITECTURE-SUMMARY-AND-RECOVERY.md)
