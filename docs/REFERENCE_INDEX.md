@@ -897,3 +897,9 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - [EVT-0128](architecture/BEHAVIOR-TRACE/EVT-0128-SEMANTIC-IDENTITY-ADJUDICATION-BATCH-1-2026-10-24.md) documents the first source-backed role decision.
 - [Decision register](reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-CANONICAL-ALIAS-LINEAGE-DECISION-REGISTER-2026-10-21-001.md) contains Git history, content hashes and graph-link counts.
 - [NEXT-029](0.0/anchors/PALANG-0.0-NEXT-20261024-029-SEMANTIC-REVIEW-BATCH-2-AND-FRESH-SESSION.md) is the active successor; remaining semantic findings and fresh-session recovery remain open.
+
+
+## NEXT-030 — active semantic review and cold-start
+- [NEXT-030](0.0/anchors/PALANG-0.0-NEXT-20261024-030-SEMANTIC-REVIEW-BATCH-3-AND-COLD-START.md) is the active checkpoint.
+- [EVT-0128](architecture/BEHAVIOR-TRACE/EVT-0128-SEMANTIC-IDENTITY-ADJUDICATION-BATCH-1-2026-10-24.md) records source-backed identity role decisions and verified CI evidence.
+- Third Production-ID decision requires the next post-change source-hash audit; fresh-session recovery remains NOT RUN.
