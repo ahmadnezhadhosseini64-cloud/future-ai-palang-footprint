@@ -1296,3 +1296,9 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - [IN-033](anchors/PALANG-0.0-IN-20261024-033-LIVING-ARCHITECTURE-AND-STATUS-TRANSPARENCY.md) / [OUT-033](anchors/PALANG-0.0-OUT-20261024-033-LIVING-ARCHITECTURE-AND-STATUS-TRANSPARENCY.md) are REGISTERED / READ-BACK VERIFIED.
 - [EVT-0131](../architecture/BEHAVIOR-TRACE/EVT-0131-LIVING-ARCHITECTURE-STATUS-TRANSPARENCY-AND-GROWTH-2026-10-24.md); [NEXT-033](anchors/PALANG-0.0-NEXT-20261024-033-LIVING-STATUS-AND-COLD-START.md).
 - Run 40061468626 passed 71 tests; both recovery directions RECOVERED; artifact 12547860733 inspected. Fresh-session recovery is still NOT RUN.
+
+
+## Durable status receipt for pair-033
+- [Receipt JSON](../architecture/BEHAVIOR-TRACE/STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40061713327.json) preserves the verified terminal workflow result.
+- Source run 40061713327 passed 71 tests on tested SHA `26615121fd50276c9c978814b183b21b20330135`; artifact 12547866288 inspected.
+- Fresh-session recovery remains NOT RUN.
