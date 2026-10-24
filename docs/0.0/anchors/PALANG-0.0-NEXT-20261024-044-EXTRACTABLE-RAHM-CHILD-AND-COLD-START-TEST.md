@@ -48,3 +48,14 @@ This is a test plan, not evidence of a successful export or recovery. Exportabil
 - Updated mandatory checks: export the current CURRENT-050 chain and living mother; compare IDs, paths, versions and hashes; preserve CURRENT-047 and earlier chains; test fresh-context reconstruction and negative cases; report failures and unresolved gates without promoting untested states.
 - Current repository excavation found this task's original target stale. This additive correction does not claim export, import, fresh-host reconstruction, second-project integration, or unattended execution has passed.
 - Status remains OPEN / NOT RUN until a verifiable export artifact and independent fresh-context recovery evidence are read back and matched.
+
+
+
+## Additive continuation update — CURRENT-052 — 2026-10-24
+
+- Current checkpoint / نقطهٔ جاری فعلی: [CURRENT-052](./PALANG-0.0-CURRENT-20261024-052-CONTINUITY-AND-RECOVERY.md).
+- Current interaction chain / زنجیرهٔ تعامل فعلی: [IN-045](./PALANG-0.0-IN-20261024-045-CURRENT-052-CONTINUITY-AND-RECOVERY.md) → [OUT-044](./PALANG-0.0-OUT-20261024-044-CURRENT-052-CONTINUITY-AND-RECOVERY.md) → [EVT-0152](../../architecture/BEHAVIOR-TRACE/EVT-0152-CURRENT-052-CONTINUITY-AND-RECOVERY-2026-10-24.md) → CURRENT-052.
+- Living mother target: [NPFAP v1.1.7](../../reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md).
+- Reference index: [docs/REFERENCE_INDEX.md](../../REFERENCE_INDEX.md).
+- Historical CURRENT-051 / NPFAP v1.1.6 targets and earlier versions remain preserved; this update changes the active recovery target only.
+- Status remains OPEN / NOT RUN. No export or fresh-context recovery test is claimed as passed.
