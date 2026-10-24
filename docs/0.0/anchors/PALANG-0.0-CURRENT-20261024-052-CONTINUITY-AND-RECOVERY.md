@@ -33,3 +33,12 @@ CURRENT-052 is an additive successor to CURRENT-051. CURRENT-051 already links t
 
 ## Status boundary / مرز وضعیت
 CURRENT-052 is a new repository record, not proof of successful extraction, fresh-host recovery, second-project integration, or always-on runtime. Status can advance only after the relevant independent evidence is committed and read back.
+
+## Read-back verification addendum — 2026-10-24
+
+- Status transition / تغییر وضعیت: REGISTERED → READ-BACK VERIFIED for this checkpoint and its required chain.
+- Exact paths fetched again: IN-045, OUT-044, EVT-0152, CURRENT-052, NPFAP living mother, reference index, and NEXT-044.
+- Matching result: all seven files were returned successfully; the current checkpoint, IN/OUT/event links, mother link, and NEXT-044 target are present across the relevant records.
+- Active mother version read back: NPFAP v1.1.7.
+- Recovery gate read back: NEXT-044 targets CURRENT-052 and NPFAP v1.1.7; status remains OPEN / NOT RUN.
+- This verifies repository read-back and link presence only. It does not verify a portable export artifact, fresh-host recovery, the second project's integration, or always-on automation.
