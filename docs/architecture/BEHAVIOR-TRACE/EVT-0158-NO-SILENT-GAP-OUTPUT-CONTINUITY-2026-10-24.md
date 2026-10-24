@@ -2,7 +2,7 @@
 
 - Stable ID: `G6IP-RAHM-EVT-0158-20261024`
 - Production ID: `G6IP-EVT-0158`
-- Version: 1.0.1
+- Version: 1.0.2
 - Status: REGISTERED / READ-BACK VERIFIED / LIVING; implementation and host behavior tests remain OPEN.
 - Input: [IN-049](../../0.0/anchors/PALANG-0.0-IN-20261024-049-OUTPUT-CONTINUITY-AND-RECOVERY.md)
 - Output: [OUT-048](../../0.0/anchors/PALANG-0.0-OUT-20261024-048-OUTPUT-CONTINUITY-AND-RECOVERY.md)
@@ -40,3 +40,10 @@ Before a long audit, publish the current anchor and deterministic action. At eac
 
 ## Status
 The rule is now specified in repository artifacts once the chain is read-back verified. It is not yet proven as automatic always-on behavior in a fresh AI host.
+
+
+## Latest evidence update
+- Conformance [run 40120495687](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40120495687): SUCCESS for declared CI scope; valid schema 0 errors, invalid schema rejected with 4 errors, exact-byte digest scan PASS for 37 manifest entries, limited IN/OUT link/checkpoint equivalence PASS, package archive build PASS. Archive SHA-256: `bc1b564b032cfe23562041011aac5a192a827c208a3626cea4db6cdf0f061a43`; artifact [haif-rahm-portable-package](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40120495687/artifacts/12571171396).
+- Structural audit [run 40120495708](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40120495708): workflow completed but content status REVIEW_REQUIRED; 11 missing links, 60 unreviewed stable-ID collision groups, 88 production-ID collision groups, 7 reference-ID collision groups, 36 event-number collision groups, 13 ambiguous parent edges.
+- Acceptance/adapter workflows passed synthetic acceptance, idempotent retry, conflict rejection, simulated restart recovery and adapter read-back. These are synthetic CI tests, not proof of actual AI-host import or this chat's always-on background execution.
+- Because CURRENT-056 and this event are updated with this receipt, the manifest digest check must be rerun against the new commit.
