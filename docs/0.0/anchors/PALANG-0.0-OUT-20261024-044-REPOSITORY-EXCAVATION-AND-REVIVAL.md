@@ -19,7 +19,7 @@
 
 ## Status / وضعیت
 - Repository writes: COMPLETE for the named artifacts.
-- Repository read-back: PASS for event, NEXT-044, mother, index and queue; IN-044 / OUT-043 / CURRENT-051 require their own read-back after creation.
+- Repository read-back: PASS for IN-044, OUT-043, CURRENT-051, EVT-0151, NEXT-044, mother, index and queue; expected IDs and principal links matched.
 - NEXT-044 export package: OPEN / NOT RUN.
 - Fresh-context recovery: OPEN / NOT RUN.
 - Second-project integration: NOT VERIFIED; canonical second repository not identified.
