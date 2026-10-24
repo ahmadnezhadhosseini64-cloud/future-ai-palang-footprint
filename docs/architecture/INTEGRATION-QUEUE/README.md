@@ -1506,3 +1506,11 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - Source graph snapshot from run 40060630376: 875 source files; 2,765 total including evidence; 3,819 local-link edges; 6 template-derived link candidates; 59 unreviewed Stable-ID collision groups; 71 Production-ID collision groups; 7 Reference-ID collision groups; 30 event-number collision groups; 11 exact duplicates; 13 ambiguous parent edges; 11 proposed aliases.
 - Timestamp-pair audit: 2,620 files, 2,149 UTC/Tehran pairs normalized, 1 ambiguity, zero offset/value failures.
 - Queue next: fix the audit parser's treatment of test-template link strings; then source-backed identity adjudication and timestamp ambiguity review. Keep all proposed aliases pending owner review.
+
+
+## EVT-0131 — visible terminal status receipt and living architecture
+- [Event](../BEHAVIOR-TRACE/EVT-0131-LIVING-ARCHITECTURE-STATUS-TRANSPARENCY-AND-GROWTH-2026-10-24.md), [IN-033](../../0.0/anchors/PALANG-0.0-IN-20261024-033-LIVING-ARCHITECTURE-AND-STATUS-TRANSPARENCY.md), [OUT-033](../../0.0/anchors/PALANG-0.0-OUT-20261024-033-LIVING-ARCHITECTURE-AND-STATUS-TRANSPARENCY.md), [NEXT-033](../../0.0/anchors/PALANG-0.0-NEXT-20261024-033-LIVING-STATUS-AND-COLD-START.md).
+- Implemented in repository: `scripts/behavior-hunter/emit_status_receipt.py`; tests `tests/behavior-hunter/test_emit_status_receipt.py`; wired into `.github/workflows/palang-behavior-hunter.yml` with `if: always()` receipt/artifact handling.
+- Goal: record terminal SUCCESS/FAILURE/CANCELLED plus run ID, tested SHA and UTC/Tehran timestamps, including when an earlier step fails.
+- Boundary: a repository receipt does not create a real-time ChatGPT UI heartbeat, does not capture every conversation, and does not prove external persistence. CI and artifact inspection for this change are pending.
+- Next: inspect the run and status receipt, reconcile tested SHA versus current main, then perform the uncoached fresh-session test. Issues #19/#20/#21 stay open.
