@@ -2,8 +2,8 @@
 
 - Stable ID: `G6IP-RAHM-IN-049-20261024`
 - Production ID: `G6IP-IN-049`
-- Version: 1.0.0
-- Status: REGISTERED; read-back required after write.
+- Version: 1.0.1
+- Status: REGISTERED / READ-BACK VERIFIED.
 - Point 0: [POINT-0/005](./GPT6-RAHM-USER-POINT-0-20261024-005-OUTPUT-CONTINUITY-AND-RECOVERY.md)
 - Prior checkpoint: [CURRENT-055](./PALANG-0.0-CURRENT-20261024-055-FIRST-MASTER-READINESS.md)
 - Prior open work: [NEXT-049](./PALANG-0.0-NEXT-20261024-049-REAL-HOST-TRANSFER-AND-GRAPH-AUDIT.md)
@@ -13,7 +13,7 @@ The user explains that when a gap appears between their input and the assistant'
 
 The user also supplies prior assistant outputs and the CURRENT-053 continuation gate as contextual evidence, including package SHA-256, schema fixtures, IN/OUT recovery, missing links and identifier collisions, clean/second-host import, integration of mother/index/queue, and persistent-memory/background execution remaining unverified. The user explicitly warns that pasted copies may be incomplete and that repository records—not pasted excerpts—are the registration authority.
 
-## Evidence and scope boundary
+## Canonical recovery links\n- Current checkpoint: [CURRENT-056](./PALANG-0.0-CURRENT-20261024-056-OUTPUT-CONTINUITY-AND-RECOVERY.md).\n- Next action: [NEXT-050](./PALANG-0.0-NEXT-20261024-050-FULL-RECOVERY-AND-REAL-HOST-IMPORT.md); prior [NEXT-049](./PALANG-0.0-NEXT-20261024-049-REAL-HOST-TRANSFER-AND-GRAPH-AUDIT.md) remains open.\n- Event: [EVT-0158](../../architecture/BEHAVIOR-TRACE/EVT-0158-NO-SILENT-GAP-OUTPUT-CONTINUITY-2026-10-24.md).\n\n## Evidence and scope boundary
 This IN record captures the request's operative requirements and points to repository source artifacts; it is not a verbatim archive of every quoted historical assistant paragraph. The historical artifacts remain the authoritative records. If an exact verbatim transcript is required and not present in repository or export, that gap must be marked OPEN rather than filled by guesswork.
 
 ## Required response behavior
