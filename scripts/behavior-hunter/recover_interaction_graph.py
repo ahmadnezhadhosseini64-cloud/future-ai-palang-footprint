@@ -95,7 +95,8 @@ def recover(start, repo_root="."):
     next_id = _linked_id(incoming["text"] + "\n" + outgoing["text"], "NEXT")
     event_candidates = sorted((root / "docs/architecture/BEHAVIOR-TRACE").glob(f"{current_event_id}-*.md")) if current_event_id else []
     event_path = event_candidates[0].relative_to(root).as_posix() if len(event_candidates) == 1 else None
-    next_candidates = sorted((root / ANCHOR_ROOT).glob(f"PALANG-0.0-{next_id}-*.md")) if next_id else []
+    next_number = next_id.split("-")[1] if next_id else None
+    next_candidates = sorted((root / ANCHOR_ROOT).glob(f"PALANG-0.0-NEXT-*-{next_number}-*.md")) if next_number else []
     checkpoint_path = next_candidates[0].relative_to(root).as_posix() if len(next_candidates) == 1 else None
     nodes = {
         "event": event_path,
