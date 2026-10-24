@@ -24,3 +24,11 @@ Idle-background proof: schedule a permitted job, leave user interaction inactive
 Never skip a rung.
 
 Failure handling: missing access, failed writes, broken links, duplicate IDs, partial imports, contradictory records and unavailable tools create explicit open gates.
+
+## Inherited architecture binding — CURRENT-048
+- Current checkpoint: [CURRENT-048](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-048-RAHM-INHERITED-ARCHITECTURE.md).
+- Inherited living master: [GPT6 New Project Inherited Architecture](../../reference/REFERENCE-DOCUMENTS/GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md).
+- Event chain: [IN-040](../../0.0/anchors/PALANG-0.0-IN-20261024-040-RAHM-INHERITED-ARCHITECTURE.md) → [OUT-040](../../0.0/anchors/PALANG-0.0-OUT-20261024-040-RAHM-INHERITED-ARCHITECTURE.md) → [EVT-0148](../../architecture/BEHAVIOR-TRACE/EVT-0148-RAHM-INHERITED-ARCHITECTURE-AND-EXPORTABLE-RECOVERY-2026-10-24.md).
+- Next execution checkpoint: [NEXT-046](../../0.0/anchors/PALANG-0.0-NEXT-20261024-046-RAHM-PORTABILITY-VALIDATION.md).
+- Transfer contract: export exact bytes and manifest, verify SHA-256, validate schemas, import into a clean host, reconstruct state and open gates, then independently read back and run conformance tests.
+- This binding is documentation, not transfer proof. Until a target-host import passes, status remains NOT VERIFIED.
