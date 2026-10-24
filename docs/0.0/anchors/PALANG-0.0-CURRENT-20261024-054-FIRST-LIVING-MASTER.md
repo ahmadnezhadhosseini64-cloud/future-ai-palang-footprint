@@ -47,3 +47,14 @@ Execute NEXT-044 first, then NEXT-048 conformance steps. Never close a gate with
 - Package archive: PASS; 25 files including the 24 manifest entries plus EXPORT_MANIFEST.json; package SHA-256 `109cdb9af62f9f4f270aafea96076a5e0177877eb553551ed2fa268e997478df`.
 - Downloadable GitHub artifact: [haif-rahm-portable-package](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40114697473/artifacts/12567559136).
 - Still OPEN/NOT VERIFIED: full IN/OUT state reconstruction beyond link/checkpoint, clean independent AI-host import, second-host import, persistence restart, idle/background execution, and repo-wide link/ID collision remediation.
+
+
+## Final verified package state — run 40115278043
+- Latest successful conformance receipt at this checkpoint update: [run 40115278043](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40115278043).
+- Current export manifest: [EXPORT_MANIFEST.json](../../portable/RAHM/EXPORT_MANIFEST.json), version 1.1.6; 24 listed files each have an exact-byte SHA-256 expectation.
+- Result: exact-byte SHA-256 comparison PASS; schema valid fixture 0 errors; invalid fixture rejected with 4 errors; limited IN/OUT checkpoint/link recovery PASS; archive build PASS.
+- Archive: 25 files (24 inventory entries + manifest), 174,962 bytes; SHA-256 `00320c04c0312a433e1a5e6050df7468a60ad2da3645cc23083799550422f430`.
+- Download: [haif-rahm-portable-package artifact](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40115278043/artifacts/12567968454).
+- Dynamic run history: [Portable RAHM Conformance workflow](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/workflows/rahm-portable-conformance.yml).
+- Structural audit at the same repository head completed but reported `REVIEW_REQUIRED`: 11 missing local links, 60 unreviewed Stable-ID collision groups, 88 Production-ID collision groups, 7 reference-ID collision groups, 36 event-number collision groups, 13 ambiguous parent edges. See [Living Architecture Audit run 40115278044](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40115278044).
+- Still OPEN / NOT VERIFIED: full state/evidence reconstruction beyond the limited link/checkpoint test; real independent AI-host import; second-host conformance; persistent memory after restart; idle/background execution; repository-wide graph remediation.
