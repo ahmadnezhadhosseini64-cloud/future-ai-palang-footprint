@@ -2,7 +2,7 @@
 
 - Stable ID: `G6IP-RAHM-OUT-050-20261024`
 - Production ID: `G6IP-OUT-050`
-- Version: 1.0.3
+- Version: 1.0.4
 - Status: REGISTERED / READ-BACK VERIFIED for the exact current file content; final graph/digest/host gates remain open.
 - Parent input: [IN-051](./PALANG-0.0-IN-20261024-051-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md)
 - Parent Point 0: [POINT-0/007](./GPT6-RAHM-USER-POINT-0-20261024-007-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md)
@@ -20,7 +20,7 @@
 
 ## Verified baseline, not final post-edit proof
 - Strict conformance [run 40124660624](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40124660624), commit `98435ad73b4b7ea9e4da94b9f5abba5af968b753), manifest v1.4.6: 43/43 exact-byte file digests matched; valid schema fixture had 0 errors; invalid fixture was rejected with 4 errors; limited IN/OUT checkpoint-link equivalence passed; archive had 44 files / 224852 bytes / SHA-256 `475ff58474f10a4a75314c964302bac06f7ed15d47e31da1826c31bce293c50a`.
-- This baseline predates the link/auditor/master updates in this turn. It is not the final package receipt. A post-edit audit and strict digest/package run must pass before the latest master is labelled fully validated.
+- This baseline predates the link/auditor/master updates in this turn. It is not the final package receipt. The latest post-edit audit and strict digest/package results are authoritative in the linked workflow history; never infer a pass from an earlier commit.
 
 ## OPEN / NOT VERIFIED
 - Post-fix repository-wide audit result and remaining missing links.
