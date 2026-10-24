@@ -38,8 +38,8 @@ EXPECTED = {
 }
 GATE_MARKERS = {
     "full_state_recovery": ("canonical-state reconstruction", "FULL IN/OUT canonical-state reconstruction"),
-    "clean_host_import": ("clean independent AI-host import", "clean independent AI-host import"),
-    "second_host_import": ("second AI-host import", "second AI-host import"),
+    "clean_host_import": ("clean independent AI-host import", "clean/second AI-host import"),
+    "second_host_import": ("second-host import", "clean/second AI-host import"),
     "persistence_restart": ("persistence restart", "persistence restart"),
     "idle_background": ("idle/background execution", "idle/background execution"),
     "graph_triage": ("ambiguous parent", "identifier collisions"),
