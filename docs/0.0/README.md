@@ -1332,3 +1332,10 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - [NEXT-034](anchors/PALANG-0.0-NEXT-20261024-034-LIVE-MIRROR-SYNC-AND-COLD-START.md) is a new continuation branch; NEXT-033 and all earlier 0.0 anchors remain intact.
 - Event commit `79376c6069c2311c238f18b28c7ffb334ab3eb90` UTC `2026-10-24T04:50:51Z` = Tehran `08:20:51+03:30`; anchor commit `96dfa85df9ecaf9ed26d54a608c5bfebf896b694` UTC `2026-10-24T04:51:05Z` = Tehran `08:21:05+03:30`.
 - Stable ID/Test ID/Version/next action/destination statuses MATCH. Library version 7 read-back PASS; length delta 1 and Levenshtein distance 1, within accepted tolerance. Current source snapshot sync PASS; Buffer/Persistent Memory NOT VERIFIED, Dropbox OPEN / NOT VERIFIED, external recovery NOT RUN.
+
+
+## NEXT-035 — live mirror recheck
+- [EVT-0133](../architecture/BEHAVIOR-TRACE/EVT-0133-LIVE-MIRROR-SYNC-RECHECK-2026-10-24.md) records the independent source/Library recheck; [NEXT-035](anchors/PALANG-0.0-NEXT-20261024-035-LIVE-MIRROR-RECHECK-AND-HISTORIC-RECONCILIATION.md) preserves continuation.
+- EVT-0133 commit `9069ed16ef37466f37a526e6da48067ac97af21c`: UTC `2026-10-24T05:00:44Z` = Tehran `2026-10-24T08:30:44+03:30`; NEXT-035 commit `0fd5941415b069c21c7c5aaf17ea754bfb5dda08`: UTC `2026-10-24T05:01:06Z` = Tehran `2026-10-24T08:31:06+03:30`.
+- Library version 7 read-back PASS; 1-character Levenshtein difference is within the accepted 7-character tolerance; semantic fields match. No new Library write required; prior actual write is documented in EVT-0132. NEXT-034 and earlier anchors remain preserved.
+- Next: BOART-FOLLOWUP-01, then uncoached fresh-session recovery. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external recovery NOT RUN.
