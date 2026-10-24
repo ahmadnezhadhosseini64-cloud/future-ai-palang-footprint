@@ -171,3 +171,7 @@ The active recovery point is [CURRENT-043](../../0.0/anchors/PALANG-0.0-CURRENT-
 
 ## Contract alignment — UIALAC v1.3.1
 The governing universal contract is now [UIALAC-2026-10-20-001 v1.3.1](./UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001.md), which adopts this claim-level completeness and evidence-boundary rule. Repository read-back for that contract amendment remains to be recorded; it is not considered verified merely because the update call returned a commit.
+
+
+## Contract alignment — UIALAC v1.3.1
+The governing universal contract is [UIALAC-2026-10-20-001 v1.3.1](./UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001.md), which adopts this claim-level completeness and evidence-boundary rule. Its exact post-write read-back remains a separate gate; it is not verified merely because an update call returned a commit.
