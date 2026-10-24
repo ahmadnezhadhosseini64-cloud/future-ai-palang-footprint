@@ -123,9 +123,9 @@ OBSERVE → CAPTURE → CLASSIFY → CHILD HYPOTHESIS → TEST → RAHM REVIEW �
 دامنهٔ این آزمون: وجود مسیر و بازگشت محتوای فایل. این آزمون، صحت معنایی تمام بندها، سلامت همهٔ پیوندهای درون اسناد، ساخت نقطهٔ ۰.۰، ساخت نمونه یا بازیابی سرد را اثبات نمی‌کند.
 
 
-## Latest checkpoint integration — Point 0.0 / CURRENT-040
+## Historical checkpoint integration — Point 0.0 / CURRENT-040
 
-- Current resumable checkpoint: [CURRENT-040](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-040-GPT6-POINT-0.0-RECOVERY-CHECKPOINT.md).
+- Historical resumable checkpoint at that update: [CURRENT-040](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-040-GPT6-POINT-0.0-RECOVERY-CHECKPOINT.md). Current checkpoint: CURRENT-042.
 - Independent Point 0.0: [G6IP-POINT-0.0-20261024-001](../../0.0/anchors/GPT6-INTERACTIVE-PROJECT-POINT-0.0-CHECKPOINT-2026-10-24-001.md).
 - Latest interaction pair: [IN-031](../../0.0/anchors/PALANG-0.0-IN-20261024-031-ADVANCE-POINT-0.0-AND-LINK-LATEST-ARCHITECTURE.md) ↔ [OUT-031](../../0.0/anchors/PALANG-0.0-OUT-20261024-031-ADVANCE-POINT-0.0-AND-LINK-LATEST-ARCHITECTURE.md); event [EVT-0139](../../architecture/BEHAVIOR-TRACE/EVT-0139-GPT6-POINT-0.0-CHECKPOINT-CREATION-2026-10-24.md).
 - Next active step: [NEXT-039 — build the interactive prototype](../../0.0/anchors/PALANG-0.0-NEXT-20261024-039-BUILD-INTERACTIVE-PROTOTYPE.md).
@@ -135,7 +135,7 @@ OBSERVE → CAPTURE → CLASSIFY → CHILD HYPOTHESIS → TEST → RAHM REVIEW �
 ## Architecture-zero integration — v1.0.4
 
 - New independent architecture anchor: [G6IP-ARCH-ZERO-20261024-001](../../0.0/anchors/PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md). It preserves the architecture lineage from Point 0 through Point 0.0 / CURRENT-040 and does not replace prior anchors.
-- Current recovery anchor: [CURRENT-040](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-040-GPT6-POINT-0.0-RECOVERY-CHECKPOINT.md).
+- Recovery anchor at that historical update: [CURRENT-040](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-040-GPT6-POINT-0.0-RECOVERY-CHECKPOINT.md). The active recovery anchor is CURRENT-042.
 - Next executable task: [NEXT-039](../../0.0/anchors/PALANG-0.0-NEXT-20261024-039-BUILD-INTERACTIVE-PROTOTYPE.md).
 - Behavioral governance explicitly preserves the observed task-drift lesson; no hidden cause is inferred. Prototype remains NOT BUILT, cold-start recovery NOT RUN, external destinations NOT VERIFIED.
 \n\n## Latest behavior registration — INT-20261024-032\n- Input: [IN-032](../../0.0/anchors/PALANG-0.0-IN-20261024-032-REGISTER-ARCHITECTURE-ZERO.md).\n- Output: [OUT-032](../../0.0/anchors/PALANG-0.0-OUT-20261024-032-REGISTER-ARCHITECTURE-ZERO.md).\n- Event: [EVT-0140](../../architecture/BEHAVIOR-TRACE/EVT-0140-ARCHITECTURE-ZERO-REGISTRATION-2026-10-24.md).\n- Architecture zero: [G6IP-ARCH-ZERO-20261024-001](../../0.0/anchors/PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md).\n- The interaction documents the user's requirement for an extractable, recoverable, living architecture root and records the observable task-drift prevention lesson.\n- Repository links are re-read; prototype NOT BUILT, cold-start recovery NOT RUN, and external destinations NOT VERIFIED.\n
