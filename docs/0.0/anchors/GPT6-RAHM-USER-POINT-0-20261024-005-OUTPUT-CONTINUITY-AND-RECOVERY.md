@@ -2,8 +2,8 @@
 
 - Stable ID: `G6IP-RAHM-USER-POINT-0-20261024-005`
 - Production ID: `G6IP-USER-POINT-0-005`
-- Version: 1.0.0
-- Status: REGISTERED / LIVING; full host-transfer and graph-remediation gates remain OPEN.
+- Version: 1.0.1
+- Status: REGISTERED / READ-BACK VERIFIED / LIVING; full host-transfer and graph-remediation gates remain OPEN.
 - Previous user Point 0: [POINT-0/004](./GPT6-RAHM-USER-POINT-0-20261024-004-TEST-HARNESS-AND-FIRST-MASTER-READINESS.md) — preserved, not overwritten.
 - Previous current: [CURRENT-055](./PALANG-0.0-CURRENT-20261024-055-FIRST-MASTER-READINESS.md)
 - New input: [IN-049](./PALANG-0.0-IN-20261024-049-OUTPUT-CONTINUITY-AND-RECOVERY.md)
