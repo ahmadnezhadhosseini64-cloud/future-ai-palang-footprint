@@ -3,15 +3,15 @@
 - Stable ID / شناسهٔ پایدار: `PALANG-0.0-NEW-PROJECT-ARCHITECTURE-ZERO-2026-10-24-001`
 - Production ID / شناسهٔ تولید: `G6IP-ARCH-ZERO-20261024-001`
 - Version / نسخه: 1.0.0
-- Status / وضعیت: REGISTERED / ACTIVE / LIVING / EVOLVABLE / EXTRACTABLE / RECOVERY-READY / READ-BACK PENDING
+- Status / وضعیت: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING / EVOLVABLE / EXTRACTABLE / RECOVERABLE
 - Project / پروژه: Future AI / Palang Footprint — HAIF → GPT-6 Interactive Project
 - Parent root / ریشهٔ والد: [Point 0 — initial root](./GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001.md)
 - Previous checkpoint / نقطهٔ قبلی: [Point 0.0](./GPT6-INTERACTIVE-PROJECT-POINT-0.0-CHECKPOINT-2026-10-24-001.md)
 - Current recovery anchor / لنگر بازیابی جاری: [CURRENT-040](./PALANG-0.0-CURRENT-20261024-040-GPT6-POINT-0.0-RECOVERY-CHECKPOINT.md)
 - Governing mother architecture / سند مادر حاکم: [Inherited Architecture Living Master](../../reference/REFERENCE-DOCUMENTS/GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md)
 - GPT-6 living master / سند مادر زندهٔ شاخه: [GPT-6 Living Master](../../reference/REFERENCE-DOCUMENTS/GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001.md)
-- Latest interaction / تعامل جاری: [IN-031](./PALANG-0.0-IN-20261024-031-ADVANCE-POINT-0.0-AND-LINK-LATEST-ARCHITECTURE.md) ↔ [OUT-031](./PALANG-0.0-OUT-20261024-031-ADVANCE-POINT-0.0-AND-LINK-LATEST-ARCHITECTURE.md)
-- Behavior event / رویداد رفتارشناسی: [EVT-0139](../../architecture/BEHAVIOR-TRACE/EVT-0139-GPT6-POINT-0.0-CHECKPOINT-CREATION-2026-10-24.md)
+- Latest interaction / تعامل جاری: [IN-032](./PALANG-0.0-IN-20261024-032-REGISTER-ARCHITECTURE-ZERO.md) ↔ [OUT-032](./PALANG-0.0-OUT-20261024-032-REGISTER-ARCHITECTURE-ZERO.md)
+- Behavior event / رویداد رفتارشناسی: [EVT-0140](../../architecture/BEHAVIOR-TRACE/EVT-0140-ARCHITECTURE-ZERO-REGISTRATION-2026-10-24.md)
 - Next action / گام بعدی: [NEXT-039 — build the interactive prototype](./PALANG-0.0-NEXT-20261024-039-BUILD-INTERACTIVE-PROTOTYPE.md)
 - Timestamp ledger / دفتر زمان: [TIME-BINDING](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-GPT6-POINT-0.0-2026-10-24-001.md)
 
@@ -88,3 +88,4 @@ On a fresh host or after restart:
 ## 8. Status semantics
 
 This file is a living architecture anchor in the repository. Its registration/read-back state must be upgraded only after the exact path is fetched again. Prototype, cold-start recovery and external destinations remain unverified until their own evidence exists.
+\n\n## Latest update and read-back receipt\n- Governing inherited architecture master: [G6IP-IAM-20261024-001 v1.0.4](../../reference/REFERENCE-DOCUMENTS/GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md).\n- GPT-6 living master: [G6IP-LMR-20261024-001 v1.3.5](../../reference/REFERENCE-DOCUMENTS/GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001.md).\n- Latest interaction pair: [IN-032](./PALANG-0.0-IN-20261024-032-REGISTER-ARCHITECTURE-ZERO.md) ↔ [OUT-032](./PALANG-0.0-OUT-20261024-032-REGISTER-ARCHITECTURE-ZERO.md); event [EVT-0140](../../architecture/BEHAVIOR-TRACE/EVT-0140-ARCHITECTURE-ZERO-REGISTRATION-2026-10-24.md).\n- Read-back: exact architecture-zero path and linked records fetched from the default branch; IDs, version numbers and expected links matched. This verifies repository records only.\n- Prototype NOT BUILT; cold-start recovery NOT RUN; external destinations NOT VERIFIED.\n
