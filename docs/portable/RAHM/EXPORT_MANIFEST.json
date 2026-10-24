@@ -1,7 +1,7 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.2.0",
-  "manifest_status": "POINT0_003_ADDED; RECOMPUTE_SHA256_AND_REVALIDATE",
+  "version": "1.2.1",
+  "manifest_status": "POINT0_003_INCLUDED; RECOMPUTE_SHA256_FOR_POINT0_CHAIN",
   "created_from_checkpoint": "G6IP-RAHM-CURRENT-054-20261024",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [
@@ -74,7 +74,7 @@
     {
       "path": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261024-054-FIRST-LIVING-MASTER.md",
       "version": "1.0.0",
-      "git_blob_sha": "6f3a69283de2827adbda58377d5568e9df4c98bd",
+      "git_blob_sha": "62fe08297b2c6df514e85f0de02ec507e0a97f14",
       "sha256": "PENDING"
     },
     {
@@ -167,16 +167,16 @@
     "persistent_memory": "NOT_VERIFIED",
     "idle_background_execution": "NOT VERIFIED",
     "cross_host": "NOT_RUN",
-    "exact_byte_sha256": "RECOMPUTE_CHANGED_POINT0_CHAIN_AND_COMPARE_ALL_25",
-    "schema_valid_fixture": "PASS_RUN_40115533738",
-    "schema_invalid_fixture": "REJECTED_WITH_4_ERRORS_RUN_40115533738",
-    "IN_OUT_recovery_equivalence": "PASS_LIMITED_LINK_CHECKPOINT_SCOPE_RUN_40115533738; rerun with explicit Point 0",
+    "exact_byte_sha256": "RECOMPUTE_4_UPDATED_CHAIN_FILES_PLUS_POINT0",
+    "schema_valid_fixture": "PASS_RUN_40115708630",
+    "schema_invalid_fixture": "REJECTED_WITH_4_ERRORS_RUN_40115708630",
+    "IN_OUT_recovery_equivalence": "PASS_LIMITED_LINK_CHECKPOINT_SCOPE_RUN_40115708630",
     "clean_AI_host_import": "NOT RUN",
     "second_AI_host_import": "NOT RUN",
     "persistence_restart": "NOT VERIFIED",
-    "canonical_mother_index_queue_integration": "UPDATED_AND_FETCHED; point-0 link integration pending read-back",
-    "schema_workflow_overall": "PASS_RUN_40115533738",
-    "portable_package_build": "PASS_RUN_40115533738; rebuild with explicit Point 0"
+    "canonical_mother_index_queue_integration": "UPDATED_AND_FETCHED; explicit Point 0 linked, final digest reconciliation pending",
+    "schema_workflow_overall": "PASS_RUN_40115708630",
+    "portable_package_build": "PASS_RUN_40115708630; rebuild after CURRENT-054 correction"
   },
   "note": "The explicit user Point 0 is now a package inventory entry. The conformance workflow must compare exact bytes for all listed files, validate schema fixtures, recover canonical pointers from IN/OUT, and build the export archive. Actual AI-host import, persistent memory, idle/background execution, and full repository graph remediation remain unproven."
 }
