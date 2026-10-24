@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001`
 - Production ID / شناسهٔ تولید: `NPFAP-20261024-001`
-- Version / نسخه: 1.2.0
+- Version / نسخه: 1.2.1
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING / EVOLVABLE / EXTRACTABLE / RECOVERY-ORIENTED / CURRENT-054 + CURRENT-056 LINKED
 - Scope / دامنه: الگوی پایه برای هر پروژهٔ جدید در خانوادهٔ Future AI / Palang Footprint / HAIF و شاخه‌های محصول/میزبان آن؛ با سازگارسازی مستند برای پروژه‌های دیگر
 - Source anchor / منشأ: [G6IP-ARCH-ZERO-20261024-001](../../0.0/anchors/PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md)
@@ -539,3 +539,12 @@ Evidence branch: [CURRENT-057](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-057
 - Structural audit workflow completed, but content result remains `REVIEW_REQUIRED`: 3,757 files including generated evidence; 5,564 local-link edges; 16 missing links; 62 stable-ID collision groups (61 unreviewed); 88 production-ID collision groups; 7 reference-ID collision groups; 36 event-number collision groups; 13 ambiguous parent edges; 0 decode errors.
 - Strict portable conformance run [40124425568](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40124425568) passed for manifest v1.4.2: schema valid fixture 0 errors, invalid fixture rejected with 4 errors, all expected file digests matched, limited IN/OUT checkpoint-link equivalence passed; package 44 files / 221380 bytes / SHA-256 `591377d03546e6f031ee98614b1c9fbd662dba08a15bc5c68b15bd918282f501`.
 - These are repository/CI results only. Full IN/OUT state reconstruction, clean/second AI-host import, actual persistence restart and idle/background execution remain OPEN / NOT VERIFIED.
+
+
+## CURRENT-057 / no-silent-gap execution receipt — 2026-10-24
+- Active chain: Point 0/006 → IN-050 → OUT-049 → EVT-0159 → CURRENT-057 → NEXT-051. Previous CURRENT-056, NEXT-050 and NEXT-049 remain preserved and open.
+- Permanent rule: a new input must not silently displace unfinished work. At each durable milestone, return a visible state/result or explicitly mark PARTIAL/BLOCKED, retain the active NEXT, and do not claim background execution without runtime evidence.
+- Audit method correction: verify exact canonical paths before claiming files missing. The first query used guessed filenames; the claimed missing artifacts were present at their actual paths. That finding is recorded as a query-method error, not an architecture defect.
+- Executed repository corrections: five historical anchor links in the initial-model mother and one NEXT-034 link in EVT-0132 were corrected; the historical graph auditor was narrowed to audit navigation links only in documentation formats, not Markdown-looking fixture strings in Python code.
+- CI gate now explicitly checks the latest Point 0/006 → CURRENT-057/NEXT-051 chain plus mother, manifest, index and queue. Final post-edit audit and strict package run are pending; no pass is inferred from a prior commit.
+- Open: global identifier collisions, ambiguous parent/time records, full IN/OUT canonical-state reconstruction, independent AI-host import, persistence restart and idle/background execution. These remain OPEN / NOT VERIFIED until separately evidenced.
