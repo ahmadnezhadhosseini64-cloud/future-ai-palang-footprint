@@ -1703,3 +1703,12 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - Scope: preserve and export interaction observations, provenance, behavior hypotheses, test receipts, failures and recovery state so a target AI host can reconstruct and verify the project.
 - OPEN / NOT RUN: SHA-256, schema fixtures, IN/OUT recovery, full link/ID audit, clean-host/second-host import, persistence restart and idle background execution.
 - Continue from NEXT-046; do not call portability validated before an independent target-host test passes.
+
+
+
+## CURRENT-054 — First Living Master / portable GPT-6 HAIF
+| Stable ID | موضوع | وضعیت | مقصد موردنظر | پرونده |
+|---|---|---|---|---|
+| G6IP-QUEUE-054-20261024 | اولین سند مادر زندهٔ قابل‌انتقال به میزبان GPT-6 | OPEN / PARTIAL — ثبت و پیوندهای افزایشی انجام شده؛ آزمون انتقال و ادغام کامل باز است | سند مادر اصلی، نمایه مرجع، manifest، آزمون‌های بازیابی و میزبان | [CURRENT-054](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-054-FIRST-LIVING-MASTER.md), [سند مادر](../../portable/RAHM/FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md), [NEXT-048](../../0.0/anchors/PALANG-0.0-NEXT-20261024-048-FIRST-MASTER-CONFORMANCE.md) |
+
+این ردیف تا زمانی که مقصدهای اصلی جداگانه بازخوانی نشده‌اند، INTEGRATED/VERIFIED اعلام نمی‌شود. موارد تأییدنشده در هر checkpoint بعدی زنده می‌مانند.
