@@ -89,3 +89,13 @@ Repeated Stable IDs and Production IDs are occurrence groups, not automatically 
 
 ### Batch-1 acceptance
 One repeated Stable-ID group now has a source-backed role decision from document contents, direct links, inbound/outbound graph counts and Git history. Continue with one collision group at a time; preserve ambiguous cases as OPEN and never promote a candidate based on identifier similarity alone.
+
+
+### Case H0-ID-REVIEW-002
+- Repeated Production ID: `0.0V-2026-09-13-001` across `docs/governance/0.0-VAULT/0.0-VAULT-GOVERNANCE-2026-09-13.md` and `docs/reference/REFERENCE-DOCUMENTS/0.0-VAULT-GOVERNANCE-0.0V-2026-09-13-001.md`.
+- Both paths have identical content SHA-256 `4cf0b6b7be9aa5b989be1a7fdca7d481c3ee883436b70ac5ed0762565c961049` at audit SHA `6b8a6e2eab42749547b646649c51e008584eaa4b`.
+- Git history: governance-path file `a30430d53e5136b6746b4a0265d4ff719903b682` at `2026-09-13T19:14:04Z`; reference-vault copy `dd7a839d36e74dc616e5e65565ad90586cb37d72` at `2026-09-28T22:30:59Z`.
+- Audited graph counts: 0 inbound and 0 outbound local Markdown links for each path. This weakens any claim of current navigation priority; role classification is grounded in directory semantics and Git history, not link centrality.
+- Role decision: governance path = `OPERATIONAL_GOVERNANCE_CANONICAL_CANDIDATE`; reference-vault path = `REFERENCE_VAULT_MIRROR_CANDIDATE`. Identical bytes prove content equality, not that one path can be removed.
+- Status: `SOURCE-REVIEWED / ROLE-ADJUDICATED / MIRROR-CANDIDATE / NO-DELETION`. The canonical promotion remains provisional because neither path has graph links and no explicit source rule was found in this batch establishing a single exclusive canonical destination.
+- Machine-readable decision: `H0-ID-REVIEW-002` in `data/interaction-pairs/semantic-role-decisions.jsonl`. Both historical paths remain preserved; no rename, merge or delete.
