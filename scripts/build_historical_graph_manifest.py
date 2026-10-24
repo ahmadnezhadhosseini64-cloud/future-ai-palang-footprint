@@ -15,7 +15,7 @@ try:
 except Exception:
     commit = "UNKNOWN"
 run_utc = datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
-files = sorted(p for p in ROOT.rglob("*") if p.is_file() and ".git" not in p.parts and "audit-output" not in p.parts)
+files = sorted(p for p in ROOT.rglob("*") if p.is_file() and ".git" not in p.parts and "__pycache__" not in p.parts and p.suffix != ".pyc" and "audit-output" not in p.parts)
 evidence = [p for p in files if p.parent.relative_to(ROOT).as_posix() == "evidence" and re.fullmatch(r"evidence-gate-.*\.txt", p.name)]
 source_files = [p for p in files if p not in evidence]
 stable_map, prod_map, reference_id_map, evt_map, sha_map = defaultdict(list), defaultdict(list), defaultdict(list), defaultdict(list), defaultdict(list)
