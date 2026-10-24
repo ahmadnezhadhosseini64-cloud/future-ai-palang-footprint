@@ -252,7 +252,8 @@ review_queue = {
         "reference_id_occurrences": sum(o["identifier_type"] == "REFERENCE_ID" for o in identifier_occurrences),
         "definition_or_metadata_candidates": sum(o["role_candidate"] == "DEFINITION_OR_METADATA_REVIEW" for o in identifier_occurrences),
         "reference_candidates": sum(o["role_candidate"] == "REFERENCE_REVIEW" for o in identifier_occurrences),
-        "reviewed_occurrences": sum(o.get("role_status") == "ROLE-ADJUDICATED" for o in identifier_occurrences),\n        "unreviewed_occurrences": sum(o.get("role_status") != "ROLE-ADJUDICATED" for o in identifier_occurrences)
+        "reviewed_occurrences": sum(o.get("role_status") == "ROLE-ADJUDICATED" for o in identifier_occurrences),
+        "unreviewed_occurrences": sum(o.get("role_status") != "ROLE-ADJUDICATED" for o in identifier_occurrences)
     },
     "occurrences": identifier_occurrences,
     "link_context_by_path": link_context_by_path,
