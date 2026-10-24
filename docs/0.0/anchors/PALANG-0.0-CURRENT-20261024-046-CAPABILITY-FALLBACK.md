@@ -1,8 +1,8 @@
 # CURRENT-046 — نقطهٔ ۰.۰ زنده: جایگزین قابلیت میزبان و ممیزی معماری
 - Stable ID: G6IP-RAHM-CURRENT-046-20261024
 - Production ID: G6IP-CURRENT-046
-- Version: 1.0.0
-- Status: REGISTERED; read-back verification pending until post-write fetches complete.
+- Version: 1.0.1
+- Status: REGISTERED / READ-BACK VERIFIED for listed repository artifacts; runtime capability validation remains OPEN.
 - Parent: [CURRENT-045](./PALANG-0.0-CURRENT-20261024-045-RAHM-PORTABLE-HOST-PERSISTENCE.md)
 - Input: [IN-038](./PALANG-0.0-IN-20261024-038-CAPABILITY-FALLBACK-AND-AUDIT.md)
 - Output: [OUT-038](./PALANG-0.0-OUT-20261024-038-CAPABILITY-FALLBACK-AND-AUDIT.md)
