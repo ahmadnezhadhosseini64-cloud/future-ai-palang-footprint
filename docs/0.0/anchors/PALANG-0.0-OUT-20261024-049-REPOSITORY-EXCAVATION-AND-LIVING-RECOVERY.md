@@ -2,8 +2,8 @@
 
 - Stable ID: `G6IP-RAHM-OUT-049-20261024`
 - Production ID: `G6IP-OUT-049`
-- Version: 1.0.0
-- Status: DRAFT RESULT / REGISTERED; read-back required.
+- Version: 1.0.1
+- Status: REGISTERED / READ-BACK VERIFIED; scoped checks passed; global audit remains REVIEW_REQUIRED.
 - Parent input: [IN-050](./PALANG-0.0-IN-20261024-050-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md)
 - Parent point: [User Point 0/006](./GPT6-RAHM-USER-POINT-0-20261024-006-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md)
 - Event: [EVT-0159](../../architecture/BEHAVIOR-TRACE/EVT-0159-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY-2026-10-24.md)
@@ -22,3 +22,13 @@ The existing continuity rule in EVT-0158 is correct and must remain active: a ne
 
 ## Status
 Repository excavation performed. Several repository and CI checks pass within their declared scope, while the global graph audit remains REVIEW_REQUIRED and full recovery/real-host gates remain OPEN. This output does not claim full architecture completion.
+
+
+## Follow-up excavation and executed corrections — 2026-10-24
+- Exact current repository tree contains Point 0/006 → IN-050 → OUT-049 → EVT-0159 → CURRENT-057 → NEXT-051; focused link check resolved all links. Earlier claim of missing files was withdrawn as a wrong-filename query error; no files were recreated on that premise.
+- Independently read back 13 targeted chain/master/index/queue files; focused relative-link audit found zero broken destinations.
+- Strict baseline [run 40124660624](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40124660624), commit `98435ad73b4b7ea9e4da94b9f5abba5af968b753`, manifest v1.4.6: 43/43 exact-byte digests matched; valid schema fixture 0 errors; invalid fixture rejected with 4 errors; limited IN/OUT checkpoint-link equivalence passed; archive 44 files / 224852 bytes / SHA-256 `475ff58474f10a4a75314c964302bac06f7ed15d47e31da1826c31bce293c50a`. This predates link/auditor corrections; final rerun required.
+- Corrected six actual documentation links: five in the initial-model mother and the NEXT-034 link in EVT-0132. Corrected the historical graph auditor to ignore Markdown-looking links in Python fixtures as navigation links, while still scanning files for IDs/provenance.
+- Added CI gate for Point 0/006 → IN-050 → OUT-049 → EVT-0159 → CURRENT-057 → NEXT-051 and master/index/queue. Post-fix workflow is pending.
+- Pre-fix global audit [40124660609](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40124660609) reported 16 links (6 real docs, 10 Python-fixture false positives), 62 stable-ID collision groups (61 unreviewed), 88 production-ID collision groups, 7 reference-ID collision groups, 36 event-number collision groups, 13 ambiguous parents, and one ambiguous timestamp. Post-fix count is pending.
+- Clean AI-host import, second-host import, full IN/OUT state reconstruction, actual persistence restart and idle/background execution remain OPEN / NOT VERIFIED.
