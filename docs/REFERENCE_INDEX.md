@@ -987,3 +987,12 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Status: PASS WITHIN ACCEPTED 7-CHAR TOLERANCE; Library version 7 independently read back; current delta 1 character / Levenshtein distance 1; semantic fields match.
 - Event commit `9069ed16ef37466f37a526e6da48067ac97af21c`: UTC `2026-10-24T05:00:44Z` = Tehran `2026-10-24T08:30:44+03:30`; NEXT-035 commit `0fd5941415b069c21c7c5aaf17ea754bfb5dda08`: UTC `2026-10-24T05:01:06Z` = Tehran `2026-10-24T08:31:06+03:30`.
 - No new Library write required; prior successful version-7 upload/read-back is in EVT-0132. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external recovery NOT RUN.
+
+
+## CURRENT-036 — Current point 0 / living registration v1.2.4
+- Current point: [CURRENT-036](0.0/anchors/PALANG-0.0-CURRENT-20261024-036-USER-REQUEST-AND-LIVING-REGISTRATION.md).
+- Independent input/output: [IN-026](0.0/anchors/PALANG-0.0-IN-20261024-026-REGISTER-CURRENT-POINT-0.md) / [OUT-026](0.0/anchors/PALANG-0.0-OUT-20261024-026-REGISTER-CURRENT-POINT-0.md).
+- Event / lesson: [EVT-0134](architecture/BEHAVIOR-TRACE/EVT-0134-CURRENT-POINT-ZERO-AND-LIVING-REGISTRATION-2026-10-24.md) / [LAL-20261024-013](architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261024-013-CURRENT-POINT-ZERO-AND-LIVING-REGISTRATION.md).
+- UTC/Tehran time binding: [TIME-BINDING-INT-20261024-026](architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261024-026.md).
+- Next 0.0: [NEXT-036](0.0/anchors/PALANG-0.0-NEXT-20261024-036-HISTORIC-SOURCE-CENSUS-AND-COLD-START.md).
+- Prior NEXT-022 through NEXT-035 and Issues #20/#21 remain preserved; neither runtime recovery nor historic census is closed by this registration.
