@@ -2,7 +2,7 @@
 
 - Stable ID: `NEW-PROJECT-ARCHITECTURE-HARD-AUDIT-2026-10-24-001`
 - Production ID: `NPHA-20261024-001`
-- Version: 1.0.4
+- Version: 1.0.5
 - Status: REGISTERED / ACTIVE / LIVING / EVIDENCE-GATED / EVOLVABLE / RECOVERABLE
 - Scope: GPT-6 Interactive Project under Future AI / Palang Footprint / HAIF
 - Previous checkpoint: [CURRENT-041](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-041-FOUNDATIONAL-ARCHITECTURE-MOTHER-ACTIVATION.md)
@@ -109,3 +109,7 @@ The architecture-zero header now names CURRENT-042 and NEXT-040 as current, whil
 The foundational mother is now v1.0.2 and includes a claim-level completeness contract, observable acceptance criteria, a principle-to-test matrix, link/identity integrity rules, explicit evidence boundaries and end-of-change reconciliation. The active checkpoint is CURRENT-043, with IN-035 / OUT-035 / EVT-0143 and NEXT-041.
 
 Earlier findings about version drift and stale current pointers are historical findings. The current verification pass must assess their corrected state by exact read-back; do not keep them labelled as unresolved if evidence shows they are corrected. Remaining open gates: NEXT-041 foundational verification, NEXT-040 fresh-project adoption, NEXT-039 prototype build, cold-start recovery and separately verified external destinations.
+
+
+## Governing contract alignment — v1.0.5
+The universal interaction/living architecture contract was amended to v1.3.1 with claim-level acceptance criteria and explicit status boundaries. The foundational mother NPFAP v1.0.2 links that contract. Verify the exact contract file and index entry by read-back before promoting this amendment to READ-BACK VERIFIED.
