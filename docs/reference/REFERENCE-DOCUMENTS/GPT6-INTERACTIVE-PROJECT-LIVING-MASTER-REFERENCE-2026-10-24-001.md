@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001`
 - Production ID / شناسهٔ تولید: `G6IP-LMR-20261024-001`
-- Version / نسخه: 1.3.5
+- Version / نسخه: 1.3.6
 - Project / پروژه: Future AI / Palang Footprint — HAIF
 - Owner / مالک معماری: احمد نژادحسینی (احمد پلنگ)
 - Host / میزبان این شاخه: ChatGPT / GPT-6
@@ -163,3 +163,7 @@
 - Interaction: [IN-033](../../0.0/anchors/PALANG-0.0-IN-20261024-033-ACTIVATE-FOUNDATIONAL-ARCHITECTURE-MOTHER.md) ↔ [OUT-033](../../0.0/anchors/PALANG-0.0-OUT-20261024-033-ACTIVATE-FOUNDATIONAL-ARCHITECTURE-MOTHER.md); event [EVT-0141](../../architecture/BEHAVIOR-TRACE/EVT-0141-FOUNDATIONAL-ARCHITECTURE-MOTHER-ACTIVATION-2026-10-24.md).
 - This node is additive: CURRENT-039, CURRENT-040, architecture zero and earlier 0.0 anchors remain preserved.
 - Status boundary: repository registration/read-back is to be reconciled after all writes; fresh-project adoption and cold-start recovery remain NOT RUN; external destinations NOT VERIFIED.
+
+
+## Hard-audit handoff — v1.3.6 / CURRENT-042
+The current audit/recovery anchor is [CURRENT-042](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-042-NEW-PROJECT-ARCHITECTURE-HARD-AUDIT.md), backed by [HA-001](./NEW-PROJECT-ARCHITECTURE-HARD-AUDIT-2026-10-24-001.md), [IN-034](../../0.0/anchors/PALANG-0.0-IN-20261024-034-HARD-AUDIT-NEW-PROJECT-ARCHITECTURE.md), [OUT-034](../../0.0/anchors/PALANG-0.0-OUT-20261024-034-HARD-AUDIT-NEW-PROJECT-ARCHITECTURE.md), and [EVT-0142](../../architecture/BEHAVIOR-TRACE/EVT-0142-NEW-PROJECT-ARCHITECTURE-HARD-AUDIT-2026-10-24.md). The governing cross-project mother is [NPFAP-20261024-001 v1.0.1](./NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md). Next action: [NEXT-040 — fresh-project adoption test](../../0.0/anchors/PALANG-0.0-NEXT-20261024-040-FRESH-PROJECT-ADOPTION-TEST.md). Prototype remains NOT BUILT; cold-start recovery NOT RUN; external destinations NOT VERIFIED.
