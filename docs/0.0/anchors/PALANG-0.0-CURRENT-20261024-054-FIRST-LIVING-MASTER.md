@@ -2,7 +2,7 @@
 
 - Stable ID: `G6IP-RAHM-CURRENT-054-20261024`
 - Production ID: `G6IP-CURRENT-054`
-- Version: 1.0.0
+- Version: 1.0.1
 - Status: REGISTERED / READ-BACK VERIFIED for core chain files and canonical mother/index/queue updates; conformance and runtime gates remain OPEN.
 - Parent: [CURRENT-053](./PALANG-0.0-CURRENT-20261024-053-PORTABLE-RAHM-HARD-AUDIT.md)
 - User input: [IN-047](./PALANG-0.0-IN-20261024-047-FIRST-LIVING-MASTER.md)
