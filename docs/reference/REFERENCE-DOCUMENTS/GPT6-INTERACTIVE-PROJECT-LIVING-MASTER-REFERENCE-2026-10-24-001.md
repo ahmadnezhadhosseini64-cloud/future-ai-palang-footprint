@@ -135,8 +135,8 @@
 - Point-0 canonical commit time ledger: [TIME-BINDING-GPT6-POINT-0-2026-10-24-001](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-GPT6-POINT-0-2026-10-24-001.md).
 
 
-## Latest active checkpoint — Point 0.0 / CURRENT-040
-- [Current resumable anchor CURRENT-040](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-040-GPT6-POINT-0.0-RECOVERY-CHECKPOINT.md).
+## Historical active-checkpoint snapshot — CURRENT-040 (preserved)
+- [Historical resumable anchor CURRENT-040](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-040-GPT6-POINT-0.0-RECOVERY-CHECKPOINT.md); current anchor is CURRENT-042.
 - [Independent Point 0.0 checkpoint](../../0.0/anchors/GPT6-INTERACTIVE-PROJECT-POINT-0.0-CHECKPOINT-2026-10-24-001.md).
 - Latest inherited architecture master: [G6IP-IAM-20261024-001 v1.0.3](./GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md).
 - Interaction: [IN-031](../../0.0/anchors/PALANG-0.0-IN-20261024-031-ADVANCE-POINT-0.0-AND-LINK-LATEST-ARCHITECTURE.md) ↔ [OUT-031](../../0.0/anchors/PALANG-0.0-OUT-20261024-031-ADVANCE-POINT-0.0-AND-LINK-LATEST-ARCHITECTURE.md); event [EVT-0139](../../architecture/BEHAVIOR-TRACE/EVT-0139-GPT6-POINT-0.0-CHECKPOINT-CREATION-2026-10-24.md).
@@ -145,7 +145,7 @@
 
 
 - Point 0.0 timestamp ledger: [TIME-BINDING-GPT6-POINT-0.0-2026-10-24-001](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-GPT6-POINT-0.0-2026-10-24-001.md), recording real Git commit times UTC-first with Tehran equivalents.
-- Current verified checkpoint: CURRENT-040 → Point 0.0 → inherited architecture master v1.0.3 → NEXT-039.
+- Historical verified checkpoint at that time: CURRENT-040 → Point 0.0 → inherited architecture master v1.0.3 → NEXT-039.
 \n\n## Latest architecture-zero update — v1.3.6\nArchitecture-zero anchor G6IP-ARCH-ZERO-20261024-001 is now the extractable recovery root for this GPT-6 branch. The governing inherited architecture master is v1.0.4. Prototype NOT BUILT; cold-start recovery NOT RUN; external destinations NOT VERIFIED.\n
 
 ## Latest architecture-zero interaction — INT-20261024-032
@@ -153,7 +153,7 @@
 - Output: [OUT-032](../../0.0/anchors/PALANG-0.0-OUT-20261024-032-REGISTER-ARCHITECTURE-ZERO.md).
 - Event: [EVT-0140](../../architecture/BEHAVIOR-TRACE/EVT-0140-ARCHITECTURE-ZERO-REGISTRATION-2026-10-24.md).
 - Architecture zero: [G6IP-ARCH-ZERO-20261024-001](../../0.0/anchors/PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md).
-- Current recovery anchor: [CURRENT-040](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-040-GPT6-POINT-0.0-RECOVERY-CHECKPOINT.md).
+- Recovery anchor in that historical snapshot: [CURRENT-040](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-040-GPT6-POINT-0.0-RECOVERY-CHECKPOINT.md). The active recovery anchor is CURRENT-042.
 - Governing architecture master: v1.0.4. This is a repository-level registration; prototype remains NOT BUILT and cold-start recovery NOT RUN.
 
 
