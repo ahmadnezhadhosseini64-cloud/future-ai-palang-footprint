@@ -610,3 +610,9 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 ## EVT-0131 — living architecture and status transparency
 - [Event](./EVT-0131-LIVING-ARCHITECTURE-STATUS-TRANSPARENCY-AND-GROWTH-2026-10-24.md) links [IN-033](../../0.0/anchors/PALANG-0.0-IN-20261024-033-LIVING-ARCHITECTURE-AND-STATUS-TRANSPARENCY.md), [OUT-033](../../0.0/anchors/PALANG-0.0-OUT-20261024-033-LIVING-ARCHITECTURE-AND-STATUS-TRANSPARENCY.md), and [NEXT-033](../../0.0/anchors/PALANG-0.0-NEXT-20261024-033-LIVING-STATUS-AND-COLD-START.md).
 - New status receipt capability: `scripts/behavior-hunter/emit_status_receipt.py`, covered by `tests/behavior-hunter/test_emit_status_receipt.py`, wired into Behavior Hunter CI. Verification pending until the exact run/artifact are inspected.
+
+
+## EVT-0131 — verified terminal receipt and pair-033 recovery
+- Run [40061468626](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40061468626) passed 71 tests on tested SHA `cc1f61f18a364c896b251735ccb643e552d40fe2`; artifact `12547860733` inspected, ZIP SHA-256 `222398f7d4b601abe5559090c75d57653adb2a9e3b51dabc2da7f05cfbe74aa9`.
+- IN-033 → OUT-033 and OUT-033 → IN-033 both RECOVERED, zero failures; ledger PASS with 4 hash-linked records; status receipt SUCCESS.
+- Failures from earlier attempts remain preserved in EVT-0131. Fresh-session recovery NOT RUN; external persistence/host-wide capture NOT PROVEN.
