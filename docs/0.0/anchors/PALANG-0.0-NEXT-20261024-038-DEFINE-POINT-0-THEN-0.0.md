@@ -3,7 +3,7 @@
 - Stable ID: `PALANG-NEXT-GPT6-POINT-0-THEN-0.0-2026-10-24-038`
 - Production ID: `G6IP-NEXT-038`
 - Version: 1.1.0
-- Status: OPEN / ACTIVE / LIVING / POINT-0 REGISTERED; POINT-0 READ-BACK RECONCILIATION REQUIRED
+- Status: OPEN / ACTIVE / LIVING / POINT-0 REGISTERED / READ-BACK VERIFIED; POINT-0.0 NEXT
 - Parent current / initial point: [CURRENT-039](./PALANG-0.0-CURRENT-20261024-039-GPT6-INITIAL-POINT-AND-ZERO-CHAIN.md)
 - Point 0 record: [GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001](./GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001.md)
 - Latest interaction: [IN-030](./PALANG-0.0-IN-20261024-030-PROMOTE-CURRENT-039-TO-INITIAL-POINT-0.md) ↔ [OUT-030](./PALANG-0.0-OUT-20261024-030-PROMOTE-CURRENT-039-TO-INITIAL-POINT-0.md)
@@ -39,4 +39,4 @@
 - No historic anchors or open issues are deleted or silently closed.
 
 ## Status boundary
-Point 0 record: created and written; read-back reconciliation is the immediate next verification gate. Point 0.0: NOT CREATED. Interactive prototype: NOT BUILT in this step. Cold-start recovery: NOT RUN. External destinations: NOT VERIFIED.
+Point 0 record: REGISTERED / READ-BACK VERIFIED. Point 0.0: NOT CREATED; it is the next active step. Interactive prototype: NOT BUILT in this step. Cold-start recovery: NOT RUN. External destinations: NOT VERIFIED.
