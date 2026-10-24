@@ -3,7 +3,7 @@
 - Stable ID: `G6IP-RAHM-IN-046-20261024`
 - Production ID: `G6IP-IN-046`
 - Version: 1.0.0
-- Status: REGISTERED; read-back pending.
+- Status: REGISTERED / READ-BACK VERIFIED; file fetched after write and IDs/links matched.
 - User Point 0: [G6IP-RAHM-USER-POINT-0-20261024-002](./GPT6-RAHM-USER-POINT-0-20261024-002.md)
 - Prior checkpoint: [CURRENT-052](./PALANG-0.0-CURRENT-20261024-052-CONTINUITY-AND-RECOVERY.md)
 
@@ -15,3 +15,5 @@ The user designates this interaction as Point 0 and asks the continuation to be 
 - Preserve CURRENT-052 and NEXT-044; do not replace them.
 - Separate documentation, read-back, schema validation, digest validation, recovery, transfer, persistence, and background execution as distinct proof gates.
 - Never invent test results, runtime capabilities, host compatibility, timestamps, hashes, or external writes.
+
+- Hard-audit event: [EVT-0154](../../architecture/BEHAVIOR-TRACE/EVT-0154-LIVING-ARCHITECTURE-HARD-AUDIT-RUN-2026-10-24.md)
