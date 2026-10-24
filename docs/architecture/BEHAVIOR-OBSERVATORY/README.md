@@ -175,3 +175,10 @@ Continue collecting observable interaction and evaluator behavior as evidence-ba
 
 
 - Latest main-branch verification: run #66 SUCCESS, 39 tests OK; artifact `12523202337` downloaded and all four manifests inspected. Current active gate: EVT-0122 bidirectional IN/OUT recovery; separate fresh-session recovery and host-wide capture remain open.
+
+
+## EVT-0131 — visible execution status and architecture growth
+- The status-receipt generator records terminal repository workflow state, run ID, tested SHA, and canonical UTC/derived Tehran timestamps; it explicitly sets chat UI heartbeat, host-wide capture and external persistence to false.
+- Implementation: `scripts/behavior-hunter/emit_status_receipt.py`; tests: `tests/behavior-hunter/test_emit_status_receipt.py`; CI integration: `.github/workflows/palang-behavior-hunter.yml`.
+- This improves durable operational visibility but does not substitute for a visible assistant response or prove automatic capture of all live interactions.
+- [EVT-0131](../BEHAVIOR-TRACE/EVT-0131-LIVING-ARCHITECTURE-STATUS-TRANSPARENCY-AND-GROWTH-2026-10-24.md); current pair [IN-033](../../0.0/anchors/PALANG-0.0-IN-20261024-033-LIVING-ARCHITECTURE-AND-STATUS-TRANSPARENCY.md) / [OUT-033](../../0.0/anchors/PALANG-0.0-OUT-20261024-033-LIVING-ARCHITECTURE-AND-STATUS-TRANSPARENCY.md).
