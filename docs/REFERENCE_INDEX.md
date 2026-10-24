@@ -1048,3 +1048,14 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Rule: additive version lineage; previous versions are preserved, never silently overwritten. Current commit UTC 2026-10-24T10:59:28Z; Tehran equivalent 2026-10-24T14:29:28+03:30; commit SHA f75097c917db3012cc121eab477faa7b693e42a2.
 - Foundational mother NPFAP v1.0.3 latest content commit UTC 2026-10-24T10:58:53Z; Tehran equivalent 2026-10-24T14:28:53+03:30; commit SHA d22310465317af8e3735bfdc40610667b2ad2ee7.
 - Status boundary: repository records were fetched after write and IDs/links matched. Full 16-principle audit, transitive link scan, adoption, prototype, cold-start recovery and external destinations remain open/unverified.
+
+
+## CURRENT-045 — نقطهٔ جاری زنده و سند مادر فعال — 2026-10-24
+- Current checkpoint: [CURRENT-045](0.0/anchors/PALANG-0.0-CURRENT-20261024-045-LIVING-MOTHER-ANCHOR.md); parent [CURRENT-044](0.0/anchors/PALANG-0.0-CURRENT-20261024-044-RECOVERY-EVOLVABLE-BASELINE.md) preserved.
+- Input/output: [IN-037](0.0/anchors/PALANG-0.0-IN-20261024-037-REGISTER-CURRENT-POINT.md) ↔ [OUT-037](0.0/anchors/PALANG-0.0-OUT-20261024-037-REGISTER-CURRENT-POINT.md).
+- Event: [EVT-0145](architecture/BEHAVIOR-TRACE/EVT-0145-REGISTER-CURRENT-POINT-2026-10-24.md).
+- Living mother: [NPFAP-20261024-001 v1.0.4](reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md).
+- Next: [NEXT-043](0.0/anchors/PALANG-0.0-NEXT-20261024-043-VERIFY-AND-CLOSE-GAPS.md); [NEXT-042](0.0/anchors/PALANG-0.0-NEXT-20261024-042-GAP-CLOSURE-AND-RECOVERY-VALIDATION.md) remains in lineage.
+- Rule: additive versioning, immutable historical checkpoints, explicit lineage and evidence-gated status transitions.
+- Canonical repository timestamps to be reconciled from actual commit metadata after writes; UTC primary, Asia/Tehran equivalent derived from the same instant.
+- Verification gates remain open unless separately supported by observed evidence.
