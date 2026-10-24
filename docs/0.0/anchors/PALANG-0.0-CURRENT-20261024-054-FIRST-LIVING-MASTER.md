@@ -1,0 +1,32 @@
+# CURRENT-054 — First Living Master / Portable GPT-6 HAIF
+
+- Stable ID: `G6IP-RAHM-CURRENT-054-20261024`
+- Production ID: `G6IP-CURRENT-054`
+- Version: 1.0.0
+- Status at registration: REGISTERED; read-back and conformance are distinct gates.
+- Parent: [CURRENT-053](./PALANG-0.0-CURRENT-20261024-053-PORTABLE-RAHM-HARD-AUDIT.md)
+- User input: [IN-047](./PALANG-0.0-IN-20261024-047-FIRST-LIVING-MASTER.md)
+- Assistant output: [OUT-046](./PALANG-0.0-OUT-20261024-046-FIRST-LIVING-MASTER.md)
+- Event: [EVT-0155](../../architecture/BEHAVIOR-TRACE/EVT-0155-FIRST-LIVING-MASTER-PORTABLE-RAHM-2026-10-24.md)
+- First living master: [FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md](../../portable/RAHM/FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md)
+- Existing open gate: [NEXT-044](./PALANG-0.0-NEXT-20261024-044-EXTRACTABLE-RAHM-CHILD-AND-COLD-START-TEST.md)
+- Hard-audit continuation: [NEXT-047](./PALANG-0.0-NEXT-20261024-047-RAHM-ARCHITECTURE-HARD-AUDIT.md)
+- New continuation: [NEXT-048](./PALANG-0.0-NEXT-20261024-048-FIRST-MASTER-CONFORMANCE.md)
+- Prior audit: [EVT-0154](../../architecture/BEHAVIOR-TRACE/EVT-0154-LIVING-ARCHITECTURE-HARD-AUDIT-RUN-2026-10-24.md)
+
+## Chain
+CURRENT-052 → CURRENT-053 → user Point 0/IN-047 → OUT-046 → EVT-0155 → CURRENT-054 → NEXT-048. Earlier branches CURRENT-048/NEXT-046 and all historic checkpoints remain preserved.
+
+## Current state
+- First living master artifact: created; independent read-back pending at initial registration.
+- Fundamental rules: written into the master as explicit non-negotiable lifecycle and status-state-machine requirements.
+- Export manifest exact-byte SHA-256: OPEN / NOT RUN.
+- Schema valid/invalid fixtures: OPEN / NOT RUN.
+- IN and OUT recovery comparison: OPEN / NOT RUN.
+- Full repository graph audit remediation: OPEN / REVIEW_REQUIRED.
+- Clean-host/second-host AI import: OPEN / NOT RUN.
+- Persistent memory / idle background: NOT VERIFIED.
+- Canonical mother, reference index and main queue integration: OPEN / PARTIAL until each target is updated and read back.
+
+## Next
+Execute NEXT-044 first, then NEXT-048 conformance steps. Never close a gate without test output and independent read-back.
