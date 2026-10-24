@@ -23,3 +23,11 @@
 
 ## مرز ادعا
 تا زمانی که فایل‌ها از مخزن دوباره خوانده و تطبیق نشوند، ثبت فقط REGISTERED است. این سند به‌تنهایی اثبات نمی‌کند که حافظهٔ پایدار، Buffer، Library، Dropbox یا capture خودکار همهٔ گفتگوها به‌روز شده‌اند.
+
+
+## ثبت نهایی بازخوانی / Read-back verification
+- Initial registration commit: `e5dd4c61b08b0f2f49217ed37f3ec381c8beeb84`.
+- Status: READ-BACK VERIFIED / CONTENT PRESENT / IDENTIFIERS MATCHED.
+- Verification method: fetched this exact repository path again after registration; file content and expected interaction identifiers were present. Related CURRENT-037, IN-027, OUT-027, EVT-0135 and master-reference identifiers were independently checked across the new files and both indexes.
+- Remaining boundary: this proves repository content/read-back and linked references only; it does not prove Buffer, Persistent Memory, Library, Dropbox or global automatic capture.
+- Canonical repository time is the actual last-change commit timestamp in UTC; the linked time-binding record will provide the final UTC and Tehran equivalents.
