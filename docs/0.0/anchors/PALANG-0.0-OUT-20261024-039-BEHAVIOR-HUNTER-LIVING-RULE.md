@@ -23,3 +23,10 @@ A successful repository write/read-back proves repository artifact presence and 
 - Repository write/read-back verification is limited to these named paths. It does not validate JSON Schema, SHA-256, runtime deployment, persistent memory, idle background execution, or cross-host behavior.
 - Canonical repository commit for the final cross-link update: `49bfeb2a64b808238c73c742fca9959703ccb464`, UTC `2026-10-24T15:37:59Z`, Tehran `2026-10-24T19:07:59+03:30`. This is the commit time, not the exact user-message time.
 - Remaining gates continue OPEN / NOT RUN; resume from NEXT-045.
+
+
+## Read-back result
+- Fetched after creation; Stable ID, current chain and the governing evidence/status rule matched.
+- Cross-link updates to the HAIF mother, both GPT-6 living masters, Reference Index and integration queue were fetched after write; CURRENT-047 and NEXT-045 markers/links matched.
+- This proves repository write/read-back for named files only. Runtime activation and unrun tests remain OPEN / NOT RUN.
+- Latest cross-link commit observed: `49bfeb2a64b808238c73c742fca9959703ccb464`; UTC `2026-10-24T15:37:59Z`; Tehran `2026-10-24T19:07:59+03:30`. Commit time is not the exact user-message time.
