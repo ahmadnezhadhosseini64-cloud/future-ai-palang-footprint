@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001`
 - Production ID / شناسهٔ تولید: `G6IP-LMR-20261024-001`
-- Version / نسخه: 1.3.4
+- Version / نسخه: 1.3.5
 - Project / پروژه: Future AI / Palang Footprint — HAIF
 - Owner / مالک معماری: احمد نژادحسینی (احمد پلنگ)
 - Host / میزبان این شاخه: ChatGPT / GPT-6
@@ -26,7 +26,7 @@
 - [نمایهٔ مرجع](../../REFERENCE_INDEX.md) و [دفتر نقاط ۰.۰](../../0.0/README.md).
 - مبنای تازهٔ دفتر مخزن هنگام ایجاد این سند، در `docs/REFERENCE_INDEX.md` شامل CURRENT-036 / IN-026 / OUT-026 / EVT-0134 / NEXT-036 و crosswalk شمارهٔ ۳ است. این‌ها حفظ می‌شوند و این شاخه جایگزین آن‌ها نیست.
 
-## 3. معماری محصول تعاملی
+## 2A. لنگر معماری صفر جدید\n- [نقطهٔ صفر معماری جدید / G6IP-ARCH-ZERO-20261024-001](../../0.0/anchors/PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md) — ریشهٔ قابل استخراج از Point 0 تا CURRENT-040؛ تاریخچهٔ قبلی را جایگزین نمی‌کند.\n- سند مادر معماری به نسخهٔ [1.0.4](./GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md) ارتقا یافت.\n- گام بعدی اجرایی: [NEXT-039](../../0.0/anchors/PALANG-0.0-NEXT-20261024-039-BUILD-INTERACTIVE-PROTOTYPE.md).\n\n## 3. معماری محصول تعاملی
 هدف، ساخت تجربه‌هایی است که کاربر با آن‌ها واقعاً تعامل کند، نه صرفاً تصویری ثابت ببیند. نمونهٔ مسیرها:
 - ابزارهای قابل‌کنترل: لغزنده، انتخاب‌گر، دکمه، چک‌لیست، سناریوهای چندمرحله‌ای.
 - تصویرسازی: نمودار وضعیت، نقشهٔ مفهومی، تصویر تولیدی در صورت درخواست صریح، و پیش‌نمایش مدل.
@@ -146,3 +146,4 @@
 
 - Point 0.0 timestamp ledger: [TIME-BINDING-GPT6-POINT-0.0-2026-10-24-001](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-GPT6-POINT-0.0-2026-10-24-001.md), recording real Git commit times UTC-first with Tehran equivalents.
 - Current verified checkpoint: CURRENT-040 → Point 0.0 → inherited architecture master v1.0.3 → NEXT-039.
+\n\n## Latest architecture-zero update — v1.3.5\nArchitecture-zero anchor G6IP-ARCH-ZERO-20261024-001 is now the extractable recovery root for this GPT-6 branch. The governing inherited architecture master is v1.0.4. Prototype NOT BUILT; cold-start recovery NOT RUN; external destinations NOT VERIFIED.\n
