@@ -1417,3 +1417,14 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - Governing foundational mother: [NPFAP-20261024-001](../reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md).
 - Status: REGISTERED / ACTIVE / LIVING / EVOLVABLE; final read-back and cross-link reconciliation pending.
 - Next: fetch all five records after final writes, match IDs and links, then run the fresh-project adoption test. Export/cold-start recovery remains NOT RUN; external destinations remain NOT VERIFIED.
+
+
+## CURRENT-042 — چکش سخت معماری پروژهٔ جدید — 2026-10-24
+- Current checkpoint: [CURRENT-042](./anchors/PALANG-0.0-CURRENT-20261024-042-NEW-PROJECT-ARCHITECTURE-HARD-AUDIT.md).
+- Parent: [CURRENT-041](./anchors/PALANG-0.0-CURRENT-20261024-041-FOUNDATIONAL-ARCHITECTURE-MOTHER-ACTIVATION.md).
+- Audit mother: [HA-001](../reference/REFERENCE-DOCUMENTS/NEW-PROJECT-ARCHITECTURE-HARD-AUDIT-2026-10-24-001.md).
+- Input/output: [IN-034](./anchors/PALANG-0.0-IN-20261024-034-HARD-AUDIT-NEW-PROJECT-ARCHITECTURE.md) ↔ [OUT-034](./anchors/PALANG-0.0-OUT-20261024-034-HARD-AUDIT-NEW-PROJECT-ARCHITECTURE.md).
+- Behavior event: [EVT-0142](../architecture/BEHAVIOR-TRACE/EVT-0142-NEW-PROJECT-ARCHITECTURE-HARD-AUDIT-2026-10-24.md).
+- Governing mother: [NPFAP-20261024-001](../reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md).
+- Next active task: [NEXT-040 — fresh-project adoption test](./anchors/PALANG-0.0-NEXT-20261024-040-FRESH-PROJECT-ADOPTION-TEST.md); preserve [NEXT-039 prototype task](./anchors/PALANG-0.0-NEXT-20261024-039-BUILD-INTERACTIVE-PROTOTYPE.md).
+- Status: repository records registered; read-back reconciliation in progress. Adoption test OPEN / NOT RUN; prototype NOT BUILT; cold-start recovery NOT RUN; external destinations NOT VERIFIED.
