@@ -99,3 +99,13 @@
 - Verification: this exact path was fetched again after write; expected project-zero identifiers and relevant cross-links were present in the repository.
 - Scope: repository file presence and text/link checks only. Prototype build and cold-start recovery remain OPEN / NOT RUN; other destinations remain independently unverified.
 - Canonical timestamp: use the actual last-change Git commit timestamp in UTC; Tehran equivalent is UTC+03:30 from that same instant. User-message timestamp remains UNKNOWN / UNVERIFIED.
+
+
+## Project initial point — CURRENT-039 and the 0 → 0.0 chain
+- New root request: [IN-029](../../0.0/anchors/PALANG-0.0-IN-20261024-029-DECLARE-INITIAL-POINT-AND-LINK-ZERO-CHAIN.md) ↔ [OUT-029](../../0.0/anchors/PALANG-0.0-OUT-20261024-029-DECLARE-INITIAL-POINT-AND-LINK-ZERO-CHAIN.md), interaction INT-20261024-029.
+- Behavior event: [EVT-0137](../../architecture/BEHAVIOR-TRACE/EVT-0137-GPT6-INITIAL-POINT-ZERO-CHAIN-2026-10-24.md).
+- Current root/anchor: [CURRENT-039](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-039-GPT6-INITIAL-POINT-AND-ZERO-CHAIN.md), child of CURRENT-038; this adds a node and does not replace CURRENT-037 or CURRENT-038.
+- Next ordered continuation: [NEXT-038](../../0.0/anchors/PALANG-0.0-NEXT-20261024-038-DEFINE-POINT-0-THEN-0.0.md). First define/register point 0 from this root; then derive a separate, resumable point 0.0 from the verified point-0 result. Neither point has been executed yet.
+- Behavioral lesson: explicitly link user intent → IN/OUT → EVT → CURRENT → NEXT → living master; never imply that registering a next-step queue means the step itself ran.
+- Preserve the prior Project Zero baseline, CURRENT-037/CURRENT-038, NEXT-037/NEXT-036, historic anchors and open issues. Continue UTC-canonical timestamps with Tehran equivalent from the same actual commit instant.
+- Status boundary: repository registration/read-back must be verified; point 0, point 0.0, prototype build, cold-start recovery, and all external destinations remain NOT RUN / NOT VERIFIED until separate evidence exists.
