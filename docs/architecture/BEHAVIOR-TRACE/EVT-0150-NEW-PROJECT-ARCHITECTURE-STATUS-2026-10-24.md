@@ -4,7 +4,7 @@
 - Stable ID / شناسهٔ پایدار: `PALANG-EVT-NEW-PROJECT-ARCHITECTURE-STATUS-2026-10-24-0150`
 - Production ID / شناسهٔ تولید: `G6IP-EVT-0150`
 - Version / نسخه: `1.0.0`
-- Status / وضعیت: REGISTERED; read-back pending at creation.
+- Status / وضعیت: REGISTERED / READ-BACK VERIFIED; exact path and content fetched after write.
 - Input / ورودی: [IN-043](../../0.0/anchors/PALANG-0.0-IN-20261024-043-NEW-PROJECT-ARCHITECTURE-STATUS-AND-LIVING-ANCHOR.md)
 - Output / خروجی: [OUT-042](../../0.0/anchors/PALANG-0.0-OUT-20261024-042-NEW-PROJECT-ARCHITECTURE-STATUS-AND-LIVING-ANCHOR.md)
 - Prior current / نقطهٔ جاری قبلی: [CURRENT-049](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-049-LIVE-STATUS-AND-OUTPUT-CONTINUITY.md)
