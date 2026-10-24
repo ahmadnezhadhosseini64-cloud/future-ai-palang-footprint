@@ -2,8 +2,8 @@
 
 - Stable ID: `G6IP-RAHM-CURRENT-058-20261024`
 - Production ID: `G6IP-CURRENT-058`
-- Version: 1.0.4
-- Status: REGISTERED; read-back gate pending; post-edit audit/digest runs pending; real-host gates OPEN.
+- Version: 1.0.5
+- Status: REGISTERED / READ-BACK VERIFIED / CURRENT-CHAIN IN-OUT RECOVERY PASS; latest strict digest result is tracked in workflow history; global graph REVIEW_REQUIRED; real-host gates OPEN.
 - Parent current: [CURRENT-057](./PALANG-0.0-CURRENT-20261024-057-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md)
 - Point 0: [POINT-0/007](./GPT6-RAHM-USER-POINT-0-20261024-007-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md)
 - Input: [IN-051](./PALANG-0.0-IN-20261024-051-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md)
