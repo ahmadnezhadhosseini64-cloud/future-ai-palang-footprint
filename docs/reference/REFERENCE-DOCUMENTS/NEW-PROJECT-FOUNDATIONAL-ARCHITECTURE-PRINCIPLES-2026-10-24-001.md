@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001`
 - Production ID / شناسهٔ تولید: `NPFAP-20261024-001`
-- Version / نسخه: 1.0.4
+- Version / نسخه: 1.0.5
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING / EVOLVABLE / EXTRACTABLE / RECOVERY-ORIENTED
 - Scope / دامنه: الگوی پایه برای هر پروژهٔ جدید در خانوادهٔ Future AI / Palang Footprint / HAIF و شاخه‌های محصول/میزبان آن؛ با سازگارسازی مستند برای پروژه‌های دیگر
 - Source anchor / منشأ: [G6IP-ARCH-ZERO-20261024-001](../../0.0/anchors/PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md)
@@ -197,3 +197,32 @@ The latest user-requested 0.0 checkpoint is [CURRENT-045](../../0.0/anchors/PALA
 CURRENT-045 is an additive successor to CURRENT-044. CURRENT-044 and every earlier checkpoint remain historical records and must not be silently replaced. The active pointer may advance again only through a new versioned checkpoint with explicit parent/child links and evidence.
 
 This mother is maintained as a versioned living reference, not a promise of unattended background execution. The following remain open until tested: 16-principle acceptance audit, full transitive link scan, fresh-project adoption, prototype build, cold-start recovery, and external-destination verification. The new checkpoint is not evidence that these gates passed.
+
+## Living Mother Update — Freshness Discovery Engine — 2026-10-24
+
+- **Additive version / نسخهٔ افزایشی:** 1.0.5
+- **Related architecture / معماری مرتبط:** [Adaptive Discovery / Cross-Playground v1.1.0](../../../../architecture/ADAPTIVE-DISCOVERY-CROSS-PLAYGROUND.md)
+- **Engine ID / شناسهٔ موتور:** FRESHNESS-DISCOVERY-ENGINE-2026-10-24-001
+- **Status / وضعیت:** MOTHER UPDATED / LIVING / EVOLVABLE; second-project integration PENDING; runtime automation NOT VERIFIED.
+
+### Decision / تصمیم
+The Freshness Discovery Engine is adopted as a shared discovery protocol for behavioral analysis and excellence/evolution work. Its purpose is to detect new or changed evidence, route it to the relevant project, compare it against prior knowledge, and send candidates through Rahm validation before promotion to a living master.
+
+موتور جست‌وجوی تازه‌ها به‌عنوان پروتکل مشترک کشف برای رفتارشناسی و تعالی/تکامل پذیرفته می‌شود: شواهد تازه یا تغییرکرده را پیدا می‌کند، به پروژهٔ مرتبط می‌فرستد، با دانش قبلی می‌سنجد و پیش از ارتقا به سند مادر از دروازهٔ اعتبارسنجی «رحم» عبور می‌دهد.
+
+### Required chain / زنجیرهٔ الزامی
+SOURCE → FRESHNESS CHECK → PROVENANCE → FINDING ID → PROJECT ROUTING → RELATIONSHIP CHECK → RAHM → VERSIONED CHANGE → READ-BACK → VERIFY → NEXT SEARCH
+
+Each project must retain its own identifiers, mother document, version history, evidence and acceptance results. No IDs or versions may be copied across projects as if they were the same artifact. The second project's canonical repository and mother-document path must be verified before claiming a live two-way connection.
+
+هر پروژه باید شناسه‌ها، سند مادر، تاریخچهٔ نسخه، شواهد و نتیجهٔ آزمون خودش را مستقل نگه دارد. تا زمانی که مخزن و مسیر سند مادر پروژهٔ دوم دقیقاً شناسایی و خواندن مجدد دوطرفه تأیید نشده، اتصال زندهٔ دو پروژه «در انتظار شناسایی مقصد» است.
+
+### Evidence boundary / مرز شواهد
+The architecture document was updated in the repository and fetched again successfully. This proves repository write and read-back for the discovery architecture only. It does not prove an always-on search process, scheduled execution, notification delivery, independent runtime testing, or integration into an unidentified second repository.
+
+### Open acceptance gates / آزمون‌های باز
+- [ ] Identify and verify the second project's canonical repository and mother document.
+- [ ] Add its local adapter and project-specific engine record.
+- [ ] Run an end-to-end fresh-finding test in both project destinations.
+- [ ] Verify each destination by read-back and compare IDs, links, and evidence.
+- [ ] Test recovery/export and failure cases before declaring runtime automation active.
