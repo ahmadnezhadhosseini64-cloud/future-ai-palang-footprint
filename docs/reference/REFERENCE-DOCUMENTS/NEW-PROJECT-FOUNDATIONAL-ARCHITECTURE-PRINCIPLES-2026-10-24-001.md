@@ -509,3 +509,11 @@ The next active operation is to execute NEXT-044: generate a verifiable export a
 - Fundamental rule: every unverified, incomplete, conflicting or untested item remains OPEN/LIVING until criteria and independently read-back evidence support closure.
 - Required next gate: execute NEXT-044 first, then NEXT-048. Export SHA-256, schema fixtures, IN/OUT recovery, repo-wide link/ID remediation, clean/second-host AI import, persistence, idle background and independent destination read-back remain OPEN/NOT RUN or NOT VERIFIED.
 - This link is an additive update; earlier mother history and versions remain preserved.
+
+
+## Living addendum — CURRENT-055 / EVT-0157
+- Current: [CURRENT-055](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-055-FIRST-MASTER-READINESS.md).
+- Input/output: [IN-048](../../0.0/anchors/PALANG-0.0-IN-20261024-048-TEST-HARNESS-FAILURE-AND-LIVING-MASTER-READYNESS.md) → [OUT-047](../../0.0/anchors/PALANG-0.0-OUT-20261024-047-TEST-HARNESS-FAILURE-AND-LIVING-MASTER-READYNESS.md).
+- Event: [EVT-0157](../../architecture/BEHAVIOR-TRACE/EVT-0157-TEST-HARNESS-FAILURE-AS-ARCHITECTURE-LEARNING-2026-10-24.md).
+- Next: [NEXT-049](../../0.0/anchors/PALANG-0.0-NEXT-20261024-049-REAL-HOST-TRANSFER-AND-GRAPH-AUDIT.md), OPEN / LIVING.
+- Permanent rule: harness/report failure is an architecture event. Preserve failed evidence, record cause/correction, rerun and read back. Untested host/runtime claims remain OPEN.
