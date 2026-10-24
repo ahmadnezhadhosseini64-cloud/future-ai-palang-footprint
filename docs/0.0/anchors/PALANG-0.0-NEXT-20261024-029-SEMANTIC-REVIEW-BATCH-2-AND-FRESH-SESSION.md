@@ -23,3 +23,12 @@ Latest inspected historical graph audit SHA `ffc4fb8136cdd4168910f8c0ba58d6619fd
 
 ## Open
 Fresh-session recovery NOT RUN; host-wide ChatGPT capture NOT PROVEN; external persistence NOT VERIFIED; remaining identity/lineage findings OPEN; EVT-0089 timezone unresolved. Previous 0.0 anchors remain preserved.
+
+
+## Verification addendum — batch 1 and batch 2
+- [EVT-0128](../../architecture/BEHAVIOR-TRACE/EVT-0128-SEMANTIC-IDENTITY-ADJUDICATION-BATCH-1-2026-10-24.md) now records two source-backed role decisions: one Stable-ID event/reference pair and one Production-ID governance/reference mirror candidate.
+- Living Architecture Audit [40058599484](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40058599484) PASS on tested SHA `c54ea409d43d0650066433b63bf364c9ae9e2279`; artifact `12546426252` inspected, SHA-256 `881f6edd39e2f2e836e21e84ddee3f0f9b90a58c53a18a99950293308ce66b4e`; zero missing local links and zero decode errors.
+- Behavior Hunter [40058599527](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40058599527) PASS: 67 tests on the same SHA; artifact `12546421339` inspected, SHA-256 `b3d9e3c05044a57fd4485112b4a446427e1b7ad76bb4ec9184574ae4d4c1b8cf`; append-only architecture ledger hash chain PASS.
+- Cross-Layer Integrity Gate [40058599467](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40058599467) PASS on the same SHA.
+- The graph builder now consumes source-hash-verified role decisions and annotates groups without suppressing raw collision counts. Python bytecode is excluded from source scanning; the final audited artifact has zero decode errors.
+- Current main advanced to evidence-only commit `0d13be4be55aa6c29efb95ce00aa39f29314a19a` after the tested SHA. Exact current main requires a new run if proof on that precise HEAD is required.
