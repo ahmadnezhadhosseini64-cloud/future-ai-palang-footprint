@@ -72,3 +72,20 @@ Repeated Stable IDs and Production IDs are occurrence groups, not automatically 
 - The manifest still detects 11 exact-content duplicate groups; all 11 remain preserved. The nine role-based mirror relationships and two earliest-commit alias candidates remain proposals for canonical pointer promotion, not deletion/merge instructions.
 - The audit's local-link parser found 1,020 edges and zero missing links. This does not establish that every link has the intended semantic target. The next audit after these register updates must refresh link counts and recheck all pointers.
 - EVT identity decisions are in [H0EVTCA](./HISTORICAL-0.0-EVT-NUMBER-COLLISION-ADJUDICATION-2026-10-21-001.md); the 0050 pair has distinct event identities, and 0051 includes a retained correction notice pointing to EVT-0052.
+
+
+## 6. Source-backed Stable-ID role adjudication — batch 1
+
+### Case H0-ID-REVIEW-001
+- Repeated Stable ID: `ACTIVE-LIVING-EVERY-INPUT-OUTPUT-ANCHOR-TEST-AND-PERMANENT-OPERATING-RULE-2026-10-20-001`.
+- Shared Production ID: `ALEIOAT-PALANG-2026-10-20-001`.
+- Event source: `docs/architecture/BEHAVIOR-TRACE/EVT-0022-USER-ACTIVATES-LIVING-ANCHOR-TEST-PERMANENT-RULE-2026-10-20.md`; graph-manifest content SHA-256 at audit SHA `ffc4fb8136cdd4168910f8c0ba58d6619fddfa13`: `966409f3f21f8814dee60310b81993271490b6b6cb19f1c5937f199f281d38af`.
+- Canonical reference candidate: `docs/reference/REFERENCE-DOCUMENTS/ACTIVE-LIVING-EVERY-INPUT-OUTPUT-ANCHOR-TEST-AND-PERMANENT-OPERATING-RULE-2026-10-20-001.md`; graph-manifest content SHA-256 at the same audit SHA: `52822f45817dd18d48392f13e0da526cda0261d1ee7691e757d6517e66c96688`.
+- Git history evidence: reference document's initial commit `2e9fb693b48cc34c89349bca3cb3044f90e1dd23` at `2026-10-20T10:06:24Z`; event commit `3394f983124cb80850a8fd9fa5c10a87897b1794` at `2026-10-20T10:07:02Z`. The event commit follows the reference registration by 38 seconds.
+- Graph evidence at the audited manifest: event node has 1 inbound local link and 5 outbound links; canonical reference node has 6 inbound links and 7 outbound links. The event explicitly links to the reference document and identifies itself as EVT-0022; the reference document carries the same Stable/Production identity and the fuller governing rule.
+- Role decision: event path = `EVENT_PROVENANCE / ORIGIN_TRACE`; reference-vault path = `CANONICAL_GOVERNING_REFERENCE_CANDIDATE`. The shared identifiers are treated as deliberate concept lineage across different document roles, not evidence that the files are interchangeable.
+- Status: `SOURCE-REVIEWED / ROLE-ADJUDICATED / HISTORICAL-PATHS-PRESERVED`.
+- Boundary: this decision does not rewrite either identifier, delete either file, or claim all collision groups are resolved. The global structural counter remains unchanged until the graph tooling explicitly consumes reviewed role decisions. This review used manifest SHA `ffc4fb...`; it is not a claim that these content hashes describe later revisions.
+
+### Batch-1 acceptance
+One repeated Stable-ID group now has a source-backed role decision from document contents, direct links, inbound/outbound graph counts and Git history. Continue with one collision group at a time; preserve ambiguous cases as OPEN and never promote a candidate based on identifier similarity alone.
