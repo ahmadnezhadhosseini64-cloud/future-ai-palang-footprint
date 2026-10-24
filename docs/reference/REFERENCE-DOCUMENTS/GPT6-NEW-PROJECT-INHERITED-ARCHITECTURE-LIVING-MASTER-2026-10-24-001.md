@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001
 - Production ID / شناسهٔ تولید: G6IP-IAM-20261024-001
-- Version / نسخه: 1.0.5
+- Version / نسخه: 1.0.6
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED / CONTENT PRESENT / IDENTIFIERS MATCHED
 - Parent architecture / معماری والد: Future AI / Palang Footprint — HAIF
 - New project root / ریشهٔ پروژهٔ جدید: [Point 0](../../0.0/anchors/GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001.md)
@@ -154,3 +154,19 @@ Living governance: maintain versions, provenance, explicit open gates, rollback 
 
 ## Hard-audit integration — v1.0.5
 The latest current checkpoint is [CURRENT-043](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-043-FOUNDATIONAL-PRINCIPLES-COMPLETENESS.md), with prior hard-audit findings in [HA-001](./NEW-PROJECT-ARCHITECTURE-HARD-AUDIT-2026-10-24-001.md) and latest completion event [EVT-0143](../../architecture/BEHAVIOR-TRACE/EVT-0143-FOUNDATIONAL-PRINCIPLES-COMPLETION-2026-10-24.md). The cross-project foundational mother is [NPFAP-20261024-001 v1.0.2](./NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md). Resume from CURRENT-043, then [NEXT-041](../../0.0/anchors/PALANG-0.0-NEXT-20261024-041-FOUNDATIONAL-PRINCIPLES-VERIFICATION.md), then [NEXT-040](../../0.0/anchors/PALANG-0.0-NEXT-20261024-040-FRESH-PROJECT-ADOPTION-TEST.md); keep NEXT-039 prototype work open and preserve CURRENT-039/040/041/042 as historical anchors.
+
+
+## New Rahm branch — Point 0 / Point 0.0 — 2026-10-24
+
+- Additive version: **1.0.6**; prior versions and checkpoints remain preserved.
+- New branch Point 0: [GPT6-RAHM-PROJECT-POINT-0-2026-10-24-001](../../0.0/anchors/GPT6-RAHM-PROJECT-POINT-0-2026-10-24-001.md).
+- Independent current Point 0.0: [G6IP-RAHM-CURRENT-044](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-044-RAHM-PROJECT-POINT-0.0.md).
+- Interaction lineage: [IN-036](../../0.0/anchors/PALANG-0.0-IN-20261024-036-RAHM-PROJECT-POINT-0.md) → [OUT-036](../../0.0/anchors/PALANG-0.0-OUT-20261024-036-RAHM-PROJECT-POINT-0.md) → [EVT-0144](../../architecture/BEHAVIOR-TRACE/EVT-0144-GPT6-RAHM-PROJECT-POINT-0-2026-10-24.md) → CURRENT-044 → [NEXT-042](../../0.0/anchors/PALANG-0.0-NEXT-20261024-042-RAHM-CONFORMANCE-EXPORT-CROSS-HOST-TEST.md).
+- Governing HAIF mother: [HAIF initial model mother v1.3.9](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md).
+- GPT-6 branch living master: [G6IP-LMR v1.3.8](./GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001.md).
+
+### Rahm contract
+Rahm is a controlled validation and behavior-study environment. The host must distinguish observations from hypotheses, proposal from approval, repository presence from runtime validation, and an export plan from a tested portable artifact. Child candidates require provenance, acceptance criteria, evidence, regression checks and read-back before promotion. The intended lifecycle is Master → Rahm → Validation → Child candidate → Master review.
+
+### Portability and proof boundary
+The package must declare host capabilities and limitations, retain IN/OUT/event lineage and open gaps, and provide reproducible positive/negative conformance tests. Cross-host compatibility is not inferred from GPT-6 registration; it remains OPEN / NOT RUN until a second host independently executes the package and produces evidence.
