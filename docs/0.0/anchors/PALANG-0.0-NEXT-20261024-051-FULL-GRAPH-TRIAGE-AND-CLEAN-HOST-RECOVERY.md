@@ -2,7 +2,7 @@
 
 - Stable ID: `G6IP-RAHM-NEXT-051-20261024`
 - Production ID: `G6IP-NEXT-051`
-- Version: 1.0.1
+- Version: 1.0.2
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE.
 - Parent: [CURRENT-057](./PALANG-0.0-CURRENT-20261024-057-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md)
 - Preserve existing gates: [NEXT-050](./PALANG-0.0-NEXT-20261024-050-FULL-RECOVERY-AND-REAL-HOST-IMPORT.md), [NEXT-049](./PALANG-0.0-NEXT-20261024-049-REAL-HOST-TRANSFER-AND-GRAPH-AUDIT.md)
@@ -55,3 +55,14 @@ NEXT-051 remains OPEN/LIVING until all required acceptance criteria have evidenc
 - [ ] Individual adjudication of remaining global graph findings; no bulk deletion or speculative renumbering.
 
 NEXT-051 remains OPEN/LIVING. Do not create a new NEXT merely to move the number while these acceptance gates remain unfinished.
+
+
+## Latest post-fix audit receipt — run 40129104121
+- [x] Repository-wide Markdown link gate: 0 missing local Markdown links across 5,564 edges; 3,805 files including generated evidence. Run: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129104121
+- [x] Latest Point 0/006 → CURRENT-057/NEXT-051 and Point 0/007 → CURRENT-058/NEXT-051 CI continuity gates passed.
+- [x] Structural repository checks passed; content result remains REVIEW_REQUIRED because 62 Stable-ID collision groups (61 unreviewed), 88 Production-ID collision groups, 7 Reference-ID collision groups, 36 event-number collision groups, 13 ambiguous parent edges and one ambiguous timestamp remain.
+- [x] Strict baseline run [40129104156](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129104156) passed 50/50 SHA-256 entries, schema fixtures, limited recovery equivalence and archive build; this predates the latest updates.
+- [~] New full repository IN/OUT state reconstruction verifier has been added and wired into the audit workflow; first run pending.
+
+## Still OPEN — do not close
+Full canonical-state recovery until the new verifier passes; real clean/second AI-host import; persistence restart; idle/background execution; individual adjudication of all collision, parent and timestamp findings. NEXT-051 remains active; do not create NEXT-052 while these gates remain open.
