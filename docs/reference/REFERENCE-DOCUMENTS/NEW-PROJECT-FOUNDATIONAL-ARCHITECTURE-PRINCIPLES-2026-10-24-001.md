@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001`
 - Production ID / شناسهٔ تولید: `NPFAP-20261024-001`
-- Version / نسخه: 1.1.3
+- Version / نسخه: 1.1.4
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING / EVOLVABLE / EXTRACTABLE / RECOVERY-ORIENTED
 - Scope / دامنه: الگوی پایه برای هر پروژهٔ جدید در خانوادهٔ Future AI / Palang Footprint / HAIF و شاخه‌های محصول/میزبان آن؛ با سازگارسازی مستند برای پروژه‌های دیگر
 - Source anchor / منشأ: [G6IP-ARCH-ZERO-20261024-001](../../0.0/anchors/PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md)
@@ -409,4 +409,30 @@ Writing a file, reading it back, validating a rule, integrating it, exporting a 
 
 ### No false promotion / منع ارتقای بدون مدرک
 The read-back pass proves repository retrieval and presence of expected identifiers/links only. It does not prove the export package exists, a fresh host can reconstruct the architecture, the second project is connected, or a continuous background engine is running. Keep those states open until separately tested.
+
+
+
+## Living Mother Update — CURRENT-050 Architecture Status — 2026-10-24
+
+- **Additive version / نسخهٔ افزایشی:** 1.1.4
+- **Current anchor / نقطهٔ جاری:** [CURRENT-050](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-050-NEW-PROJECT-ARCHITECTURE-STATUS.md)
+- **Input / ورودی:** [IN-043](../../0.0/anchors/PALANG-0.0-IN-20261024-043-NEW-PROJECT-ARCHITECTURE-STATUS-AND-LIVING-ANCHOR.md)
+- **Output / خروجی:** [OUT-042](../../0.0/anchors/PALANG-0.0-OUT-20261024-042-NEW-PROJECT-ARCHITECTURE-STATUS-AND-LIVING-ANCHOR.md)
+- **Event / رویداد:** [EVT-0150](../../architecture/BEHAVIOR-TRACE/EVT-0150-NEW-PROJECT-ARCHITECTURE-STATUS-2026-10-24.md)
+- **Prior checkpoint / نقطهٔ قبلی:** [CURRENT-049](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-049-LIVE-STATUS-AND-OUTPUT-CONTINUITY.md)
+- **Next gate / گام بعدی:** [NEXT-044 — export and fresh-context recovery](../../0.0/anchors/PALANG-0.0-NEXT-20261024-044-EXTRACTABLE-RAHM-CHILD-AND-COLD-START-TEST.md)
+
+### Architecture status / وضعیت معماری
+The new-project architecture is documented and version-linked through CURRENT-050. Its living mother, behavior/event lineage, Freshness Discovery / Adaptive Discovery protocol, and Child → Rahm → Master validation rule are preserved. This status means the architecture is documented in the repository; it does not prove a continuous background engine, successful export/recovery, or live integration into a second project.
+
+معماری پروژهٔ جدید تا CURRENT-050 به‌صورت نسخه‌دار و پیوندخورده مستند شده است. سند مادر زنده، زنجیرهٔ رفتار و رویداد، پروتکل کشف تازه‌ها و قاعدهٔ نوزاد ← رحم ← مستر حفظ شده‌اند. این وضعیت ثبت معماری در مخزن را نشان می‌دهد، نه اجرای پیوستهٔ موتور، موفقیت استخراج/بازیابی یا اتصال زنده به مخزن پروژهٔ دوم.
+
+### Living behavior rule / قاعدهٔ رفتاری زنده
+When the user requests execution or registration, show an explicit state: working only while an actual operation is underway, stopped if blocked, and complete only after evidence. Never leave silence as an ambiguous state. Keep write, read-back, validation, integration, export, and recovery as separate gates. Every change is additive; all previous anchors remain accessible.
+
+### Open gates / دروازه‌های باز
+- NEXT-044 export package and fresh-host reconstruction: OPEN / NOT RUN.
+- Second project's canonical repository and mother path: NOT IDENTIFIED; live dual-repository integration not claimed.
+- Always-on search, scheduled execution, notifications, and background automation: NOT VERIFIED.
+- Next step: read back and match IN-043, OUT-042, EVT-0150, CURRENT-050, this mother and index; then execute NEXT-044 with verifiable evidence.
 
