@@ -51,3 +51,5 @@ Resume from NEXT-047, but execute NEXT-044 first because it is the existing acti
 - New Point 0, IN-046, OUT-045, EVT-0153, CURRENT-053, NEXT-047, and the NPFAP addendum have been created in the repository.
 - Independent fetch/read-back and cross-file reconciliation are still required before marking this chain READ-BACK VERIFIED.
 - Export, schema, recovery, host transfer, persistence, background execution and full graph audit remain OPEN / NOT RUN.
+
+- Reference index addendum: [REFERENCE_INDEX-CURRENT-053.md](../../REFERENCE_INDEX-CURRENT-053.md)
