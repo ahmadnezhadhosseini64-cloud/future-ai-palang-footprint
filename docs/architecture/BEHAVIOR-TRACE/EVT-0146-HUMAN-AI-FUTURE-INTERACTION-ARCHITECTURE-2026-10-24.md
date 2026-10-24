@@ -4,7 +4,7 @@
 - Stable ID / شناسهٔ پایدار: `PALANG-EVT-HUMAN-AI-FUTURE-INTERACTION-ARCHITECTURE-2026-10-24-0146`
 - Production ID / شناسهٔ تولید: `G6IP-EVT-0146`
 - Version / نسخه: `1.0.0`
-- Status / وضعیت: REGISTERED; read-back pending at creation.
+- Status / وضعیت: REGISTERED / READ-BACK VERIFIED; event record fetched and its IDs/paths matched.
 - Input / ورودی: [IN-038](../../0.0/anchors/PALANG-0.0-IN-20261024-038-HUMAN-AI-FUTURE-INTERACTION-ARCHITECTURE.md)
 - Output / خروجی: [OUT-038](../../0.0/anchors/PALANG-0.0-OUT-20261024-038-HUMAN-AI-FUTURE-INTERACTION-ARCHITECTURE.md)
 - Previous current checkpoint / نقطهٔ جاری قبلی: [CURRENT-045](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-045-LIVING-MOTHER-ANCHOR.md)
@@ -19,7 +19,7 @@ Every meaningful interaction input, assistant output, event, error, correction, 
 
 ## Evidence / شواهد
 - IN-038 was previously committed and read back.
-- OUT-038 was created in this workflow; commit SHA `ec3e7e26c7c3cb5d92e14a21af71be39b54b959e`.
+- OUT-038 was created and then read-back verified; latest status-update commit is recorded in Git history.
 - Freshness Discovery Engine architecture v1.1.0 and mother v1.0.5 were previously written and read back.
 - The second project's canonical repository is not identified; two-repository integration remains pending.
 - Export package, new-host adoption, cold-start recovery, and always-on runtime execution are not yet proven.
