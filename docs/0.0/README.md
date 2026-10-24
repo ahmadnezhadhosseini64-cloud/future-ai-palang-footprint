@@ -1354,3 +1354,5 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - Five canonical sources fetched in full and mapped in [SCRTC-B3](../architecture/ARCHITECTURE-LESSONS/SOURCE-CLAUSE-CROSSWALK-BATCH-3-2026-10-24-001.md); exact blob SHAs and lengths retained.
 - ULCG master advanced to v1.2.5; current point CURRENT-036 and NEXT-036 remain the active continuity anchors.
 - Open work remains: full historic census/conflict adjudication (Issue #21), runtime pair/cold-start recovery (Issue #20), and exact-final-main audit evidence.
+
+- Full source-crosswalk ID: `SCRTC-B3-2026-10-24-001`.
