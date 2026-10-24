@@ -67,7 +67,10 @@
 - Prototype/recovery/external-destination statuses remain truthful.
 
 ## 7. Read-back receipt
-PENDING — fill only after the exact path is fetched again and commit metadata is retrieved. Do not infer completion from a successful write alone.
+- Status: READ-BACK VERIFIED / CONTENT PRESENT / IDENTIFIERS MATCHED.
+- The exact point-0.0 path was fetched again after creation and after architecture-master v1.0.3 linkage; Stable ID, Production ID, version, CURRENT-040, IN-031/OUT-031, EVT-0139, NEXT-039 and time-ledger links are present.
+- Scope: repository content and key cross-file IDs were fetched. This is not a runtime prototype test, cold-start recovery, or external-destination verification.
+- Canonical commit for the latest checkpoint content is tracked in [TIME-BINDING](../architecture/BEHAVIOR-TRACE/TIME-BINDING-GPT6-POINT-0.0-2026-10-24-001.md); user-message timestamp remains UNKNOWN.
 
 
 - [CURRENT-040](./PALANG-0.0-CURRENT-20261024-040-GPT6-POINT-0.0-RECOVERY-CHECKPOINT.md) is the current recovery anchor; CURRENT-039 remains the historic initial-root anchor.
