@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-24 — CURRENT-056 / EVT-0158 / NPFAP v1.2.0 / NEXT-050 linked; 31-file digest/schema/limited recovery checks passed in the inspected CI run; real AI-host transfer, full recovery, persistence/background and repository-wide graph remediation remain open.
+**Last Updated:** 2026-10-24 — CURRENT-056 / EVT-0158 / NEXT-050 linked; strict SHA-256 37/37, schema fixtures and limited IN/OUT checkpoint-link checks passed in run 40122001572; audit 40122001601 remains REVIEW_REQUIRED; real AI-host transfer, full recovery, persistence/background and graph remediation remain open.
 
 ## Canonical References
 
