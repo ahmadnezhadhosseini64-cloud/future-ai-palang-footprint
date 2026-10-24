@@ -1376,3 +1376,5 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - Current: [CURRENT-038](anchors/PALANG-0.0-CURRENT-20261024-038-GPT6-PROJECT-ZERO-ARCHITECTURE.md); next: [NEXT-037](anchors/PALANG-0.0-NEXT-20261024-037-FIRST-GPT6-INTERACTIVE-PROTOTYPE-AND-RECOVERY.md).
 - Event: [EVT-0136](../architecture/BEHAVIOR-TRACE/EVT-0136-GPT6-PROJECT-ZERO-ARCHITECTURE-2026-10-24.md). Master: [GPT-6 interactive living master](../reference/REFERENCE-DOCUMENTS/GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001.md).
 - Prototype implementation and cold-start recovery remain OPEN / NOT RUN. Preserve CURRENT-037, CURRENT-036, NEXT-036, Issues #20/#21 and historic queues. UTC canonical; Tehran equivalent derived from the same instant. External destinations remain independently unverified.
+
+- UTC/Tehran timestamp evidence: [TIME-BINDING-GPT6-PROJECT-ZERO-2026-10-24-001](../architecture/BEHAVIOR-TRACE/TIME-BINDING-GPT6-PROJECT-ZERO-2026-10-24-001.md).
