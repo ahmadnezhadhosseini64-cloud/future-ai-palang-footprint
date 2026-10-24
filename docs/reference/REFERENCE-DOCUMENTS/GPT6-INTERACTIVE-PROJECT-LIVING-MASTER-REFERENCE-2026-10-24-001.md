@@ -78,3 +78,13 @@
 - The latest canonical HAIF initial-model master was independently fetched from the repository during this registration: [سند مرجع مادر مدل اولیه هوش مصنوعی HAIF](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md).
 - Stable ID: `HAIF-INITIAL-AI-MODEL-MASTER-REFERENCE-2026-10-21-001`; Production ID: `HAIF-IAM-MR-2026-10-21-001`; current version observed: `1.3.7`; status observed: `ACTIVE / LIVING / INITIAL DEVELOPMENT BASELINE`.
 - Its active continuation was CURRENT-036 and NEXT-036 at read time. This new CURRENT-037 adds the GPT-6 interactive product branch while preserving that model and its existing open tasks.
+
+
+## Project Zero — governing baseline
+- Project-zero baseline: [GPT6-INTERACTIVE-PROJECT-ZERO-BASELINE-2026-10-24-001](../../architecture/INITIAL-BASELINES/GPT6-INTERACTIVE-PROJECT-ZERO-BASELINE-2026-10-24-001.md), Stable ID `GPT6-INTERACTIVE-PROJECT-ZERO-BASELINE-2026-10-24-001`, Production ID `G6IP-P0-20261024-001`, v1.0.0.
+- Original branch-start point CURRENT-037 is preserved; the post-baseline continuation is [CURRENT-038](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-038-GPT6-PROJECT-ZERO-ARCHITECTURE.md).
+- New interaction: INT-20261024-028; pair IN-028 / OUT-028; event EVT-0136; next action NEXT-037.
+- NEXT-037 defines the first interactive prototype, I/O contract, acceptance criteria, test evidence, read-back/reconciliation, Rahm review and cold-start recovery. Prototype implementation and cold-start test remain NOT RUN until executed.
+- Governance inherited from HAIF: preserve history; UTC canonical with Tehran equivalent; evidence before claims; write/read-back/match/verify/reconcile/status; IN/OUT/event/anchor traceability; Child → Rahm → Master; destination-specific verification; privacy minimization; no redundant retest after a correctly verified result unless real change, need, regression, error or contradictory evidence warrants it.
+- Behavioral trace must capture observable user goal, assistant action, result, error/correction and explicit user feedback when present; hidden internal causes remain hypotheses unless independently evidenced.
+- This update is repository-scoped. Buffer/Persistent Memory/Library are NOT VERIFIED; Dropbox remains OPEN / NOT VERIFIED; always-on capture is not established.
