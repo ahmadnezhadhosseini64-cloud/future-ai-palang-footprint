@@ -218,3 +218,11 @@ The package must declare host capabilities and limitations, retain IN/OUT/event 
 - Event: [EVT-0155](../../architecture/BEHAVIOR-TRACE/EVT-0155-FIRST-LIVING-MASTER-PORTABLE-RAHM-2026-10-24.md); prior hard-audit evidence: [EVT-0154](../../architecture/BEHAVIOR-TRACE/EVT-0154-LIVING-ARCHITECTURE-HARD-AUDIT-RUN-2026-10-24.md).
 - Fundamental rule: every unverified, incomplete, conflicting or untested item remains OPEN/LIVING across checkpoints until explicit criteria and independent evidence permit closure.
 - Open: exact-byte SHA-256, schema fixtures, independent IN/OUT recovery, repo-wide link/ID remediation, clean-host/second-host AI import, persistence restart, idle background, and direct base mother/index/queue read-back. The first master itself lists these gates; its creation is not proof that they passed.
+
+
+## Living continuation — CURRENT-055 / EVT-0157
+- Current: [CURRENT-055](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-055-FIRST-MASTER-READINESS.md).
+- First living master: [portable GPT-6 / HAIF / RAHM](../../portable/RAHM/FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md).
+- Harness learning: [EVT-0157](../../architecture/BEHAVIOR-TRACE/EVT-0157-TEST-HARNESS-FAILURE-AS-ARCHITECTURE-LEARNING-2026-10-24.md).
+- Next: [NEXT-049](../../0.0/anchors/PALANG-0.0-NEXT-20261024-049-REAL-HOST-TRANSFER-AND-GRAPH-AUDIT.md), OPEN / LIVING.
+- Repository CI success does not prove independent AI-host import, durable runtime memory or idle background execution.
