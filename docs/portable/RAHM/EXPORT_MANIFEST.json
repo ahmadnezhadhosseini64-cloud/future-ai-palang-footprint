@@ -1,7 +1,7 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.4.8",
-  "manifest_status": "EXPECTED SHA-256 VALUES POPULATED FROM STRICT RUN 40129023925 ACTUAL DIGEST OUTPUTS; FINAL RE-RUN REQUIRED",
+  "version": "1.4.9",
+  "manifest_status": "CURRENT-058 IN/OUT RECONSTRUCTION PASS; FINAL EXACT-BYTE HASHES PENDING STRICT RETEST AFTER MOTHER/QUEUE/VERIFIER UPDATES",
   "created_from_checkpoint": "G6IP-RAHM-CURRENT-058-20261024",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [
@@ -50,8 +50,8 @@
     {
       "path": "docs/portable/RAHM/FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md",
       "version": "1.0.0",
-      "git_blob_sha": "bf073a5595e1a22f1234f5540b147076dba2f008",
-      "sha256": "2dbee294d0ffcf095646a6ca817a12e7e2e146a5f8fe992729069941381a51ed"
+      "git_blob_sha": "d36dc9aced959accdd49de7521af9e47d48d3cc3",
+      "sha256": "PENDING"
     },
     {
       "path": "docs/0.0/anchors/PALANG-0.0-IN-20261024-047-FIRST-LIVING-MASTER.md",
@@ -116,32 +116,32 @@
     {
       "path": "docs/architecture/INTEGRATION-QUEUE/README.md",
       "version": "current",
-      "git_blob_sha": "7c1d97fc20517c96413d1c0ccbec4a1214daef01",
-      "sha256": "ece1aa95622120478a8aea6cf3184a835df15dccfec926c585afb1700f2a330b"
+      "git_blob_sha": "94dbda8bb50e1773b460728a7182f56dfe01a44e",
+      "sha256": "PENDING"
     },
     {
       "path": "docs/reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md",
       "version": "current",
-      "git_blob_sha": "b3f47aee9551ec9184ea67856667f447d422cfba",
-      "sha256": "11fb7aab9efdcd982d7f197435860ea10404d41da8795c2fac3089084e19f543"
+      "git_blob_sha": "fae10574d57755236129855a04b66666500b0625",
+      "sha256": "PENDING"
     },
     {
       "path": "docs/reference/REFERENCE-DOCUMENTS/GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md",
       "version": "current",
-      "git_blob_sha": "f4d25062754af226951b94a8a54d904205722409",
-      "sha256": "01319393643b61ff7edc4b04f78763f6cdd63752ed73c57d73aa9611f6d909e0"
+      "git_blob_sha": "d711d7a24d320534cab46d8c6ad9e8cc85cdcfb6",
+      "sha256": "PENDING"
     },
     {
       "path": "docs/REFERENCE_INDEX.md",
       "version": "current",
-      "git_blob_sha": "9c414bbf56524edda79d4e8af13e20a8ae7c6498",
-      "sha256": "b356572e736540f1a391fd2cc313eb6b98a6a200592f562766cc01bb644685fd"
+      "git_blob_sha": "5854e47c76555ac057ede29a7f6012ebc157efe2",
+      "sha256": "PENDING"
     },
     {
       "path": "docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md",
       "version": "current",
-      "git_blob_sha": "f740a2f65b14c053a8bc049e9cf73e98125c507f",
-      "sha256": "ae1447efcf2298cb6698f468fe12b40a0daed9f373e0dfea634b3617e58631f3"
+      "git_blob_sha": "4cb2b671e7a6e32fc102d0b765a61afac3b6b100",
+      "sha256": "PENDING"
     },
     {
       "path": "docs/architecture/BEHAVIOR-TRACE/EVT-0156-FIRST-MASTER-HARNESS-CORRECTION-2026-10-24.md",
@@ -254,8 +254,8 @@
     {
       "path": "docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md",
       "version": "1.0.0",
-      "git_blob_sha": "693ee0b0bcc252689b2cfe5428817dbe6325cfd1",
-      "sha256": "2daa4ad3ffd7b9fc5880b24d5a7de0c33df52e998c28d339d823431301401aa6"
+      "git_blob_sha": "1e0056f1d8a4bc68e993b3d1183fa7c943cb084b",
+      "sha256": "PENDING"
     },
     {
       "path": "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-007-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md",
@@ -272,20 +272,20 @@
     {
       "path": "docs/0.0/anchors/PALANG-0.0-OUT-20261024-050-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md",
       "version": "1.0.1",
-      "git_blob_sha": "bb5e779328d623acccb5c239451a87e273e1e5b8",
-      "sha256": "f8a294b5fe7c9117ad6f1ebed6e3bf5db0573b4e246d30b441b498cdaa89c34a"
+      "git_blob_sha": "dcb4069e8d37283e62f8d0fb902abaa117d558bd",
+      "sha256": "PENDING"
     },
     {
       "path": "docs/architecture/BEHAVIOR-TRACE/EVT-0160-DEEP-EXCAVATION-EXECUTION-RECEIPTS-AND-AUDIT-CORRECTION-2026-10-24.md",
       "version": "1.0.1",
-      "git_blob_sha": "6b8911cfbb7278f58e71027568d848d3652bbd66",
-      "sha256": "8400d40d270dcfe83c64099f8865295185db20eede09859ae6ecca15735b2fe6"
+      "git_blob_sha": "c85b9a9c21b88f672a8f06dce867a153892ec9b3",
+      "sha256": "PENDING"
     },
     {
       "path": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261024-058-DEEP-EXCAVATION-EXECUTION-RECEIPTS.md",
       "version": "1.0.1",
-      "git_blob_sha": "59ec0a42e32c22453312a48a9fcd1189400afdd1",
-      "sha256": "87d79dd9c3607966f7c2a255117e0da56acf7a7852d1c42c67c6a81826876a02"
+      "git_blob_sha": "b2e72e5952f87b8ed39120935b0bc7122e475486",
+      "sha256": "PENDING"
     },
     {
       "path": "scripts/audit_historical_0_0_graph.py",
@@ -296,8 +296,14 @@
     {
       "path": ".github/workflows/living-architecture-audit.yml",
       "version": "repository-current",
-      "git_blob_sha": "054eff2d9688768adbb4fa4605405a77b50bdefd",
-      "sha256": "2400afd403513f0753ca7f46b57b3970793a2d582fda8c40551c1463b3ac4f3e"
+      "git_blob_sha": "30a47460640852dd19f4c7fd7e4b085129512819",
+      "sha256": "PENDING"
+    },
+    {
+      "path": "scripts/behavior-hunter/verify_current_0_0_chain.py",
+      "version": "repository-current",
+      "git_blob_sha": "9796e8f7b703975c4bd5e3e0ff28d8b451e9a525",
+      "sha256": "PENDING"
     }
   ],
   "manifest_itself": {
@@ -311,19 +317,19 @@
     "persistent_memory": "NOT_VERIFIED",
     "idle_background_execution": "NOT VERIFIED",
     "cross_host": "NOT_RUN",
-    "exact_byte_sha256": "EXPECTED DIGESTS RECONCILED FROM ACTUAL_HASH OUTPUTS IN FAILED RUN 40129023925; FINAL STRICT RETEST REQUIRED",
-    "schema_valid_fixture": "PASS_RUN_40129023925; 0 errors",
-    "schema_invalid_fixture": "REJECTED_WITH_4_ERRORS_RUN_40129023925",
-    "IN_OUT_recovery_equivalence": "PASS_LIMITED_LINK_CHECKPOINT_SCOPE_RUN_40129023925; full canonical-state reconstruction remains OPEN",
+    "exact_byte_sha256": "PENDING_FINAL_POST_CURRENT-058_RUN",
+    "schema_valid_fixture": "PASS_RUN_40129104156; valid fixture errors=0",
+    "schema_invalid_fixture": "REJECTED_WITH_4_ERRORS_RUN_40129104156",
+    "IN_OUT_recovery_equivalence": "PASS_RUN_40129551204; independent IN-051 and OUT-050 repository-state reconstruction equivalent; external host import still open",
     "clean_AI_host_import": "NOT RUN",
     "second_AI_host_import": "NOT RUN",
     "persistence_restart": "NOT VERIFIED",
     "canonical_mother_index_queue_integration": "CURRENT-057 chain and all target mothers/index/queue updated; focused link fixes applied; final read-back/digest workflow running",
     "schema_workflow_overall": "PASS_RUN_40122001572",
-    "portable_package_build": "NOT REACHED IN RUN 40129023925 BECAUSE 19 EXPECTED DIGESTS WERE PENDING; FINAL REBUILD REQUIRED",
+    "portable_package_build": "PASS_RUN_40129104156 baseline; final post-update build pending",
     "full_state_recovery": "OPEN / NOT RUN",
-    "focused_relative_link_audit": "Focused chain/master/index/queue check passed; post-fix global audit pending",
-    "repository_graph_audit": "PASS_ZERO_MISSING_MARKDOWN_LINKS_RUN_40128925006; REVIEW_REQUIRED for identifier/parent/timestamp findings",
+    "focused_relative_link_audit": "PASS_RUN_40129551204; 0 missing Markdown links across 5564 edges",
+    "repository_graph_audit": "REVIEW_REQUIRED_RUN_40129551204; 3820 files; 0 missing links; 62 Stable-ID collision groups (61 unreviewed), 88 production-ID, 7 reference-ID, 36 event-number, 13 ambiguous parent edges, 1 ambiguous timestamp",
     "current_checkpoint": "CURRENT-058",
     "next_action": "NEXT-051"
   },
