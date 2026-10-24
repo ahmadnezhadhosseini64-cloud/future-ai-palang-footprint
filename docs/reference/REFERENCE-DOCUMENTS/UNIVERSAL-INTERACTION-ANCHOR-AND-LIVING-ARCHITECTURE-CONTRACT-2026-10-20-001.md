@@ -3,7 +3,7 @@
 
 - Stable ID / شناسه پایدار: UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001
 - Production ID / شناسه تولید: UIALAC-2026-10-20-001
-- Version / نسخه: 1.3.0
+- Version / نسخه: 1.3.1
 - Date / تاریخ سند: 2026-10-20
 - Initial creation time / زمان ایجاد اولیه: در شواهد ایجاد اولیه ثبت نشده است. Amendment processing time / زمان پردازش اصلاحیه: 2026-10-20T22:20:19+03:30 (Asia/Tehran); UTC: 2026-10-20T18:50:19Z. User message time for amendment / زمان پیام کاربر برای اصلاحیه: UNKNOWN / UNVERIFIED.
 - Timezone / منطقه زمانی مرجع پروژه: Asia/Tehran (+03:30)
@@ -361,3 +361,24 @@ The overall state is not complete while any required destination is unverified. 
 - تصمیم: اصول حفظ تبار، نقطهٔ ۰ و لنگرهای مستقل، سند مادر نسخه‌دار، زنجیرهٔ IN/OUT/EVT، رفتارشناسی مبتنی بر شاهد، زمان UTC-first، دروازهٔ Child → Rahm → Master، بازیابی/استخراج، گام بعدی روشن و منع ادعای تکمیل بدون آزمون، اصول بنیادین پیش‌فرض برای همهٔ پروژه‌های جدید خانوادهٔ Future AI / Palang Footprint / HAIF هستند.
 - Every new project must instantiate its own IDs, Point 0, living master, CURRENT/NEXT anchors, behavior/event trace, timestamp ledger, evidence gates and recovery bundle. This rule does not mean that all projects are automatically instrumented or that background capture is active.
 - Status remains destination-specific: repository read-back, runtime validation, export/cold-start test, and external persistence are separate claims requiring separate evidence.
+
+
+## Amendment — Claim-level completeness and verifiability contract (v1.3.1, 2026-10-24)
+
+Governing cross-project principles: [NPFAP-20261024-001 v1.0.2](./NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md). Current branch checkpoint: [CURRENT-043](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-043-FOUNDATIONAL-PRINCIPLES-COMPLETENESS.md).
+
+**Mandatory rule:** every material architectural claim, status, capability, integration, test or open task must be examinable. Each claim requires a stable requirement/claim ID, observable expected result, repeatable verification method, evidence reference, observed result, explicit status, closure condition/next action, and time provenance. If any field is not known or not evidenced, mark it UNKNOWN / NOT RUN / NOT BUILT / NOT VERIFIED / BLOCKED; do not imply success.
+
+The following status boundaries are mandatory:
+- REGISTERED = the write succeeded.
+- READ-BACK VERIFIED = the exact stored file was fetched after writing and expected content matched.
+- LINKS VERIFIED = declared local paths were checked against repository paths.
+- VALIDATED = acceptance criteria were exercised and passed with evidence.
+- INTEGRATED = the change is connected to active index/registry/master and that connection was read back.
+- ACTIVE / LIVING = versioned continuation and next-action path exists; this does not prove automatic execution.
+- RECOVERABLE DESIGN ≠ RECOVERY TEST PASS. Actual cold-start recovery needs a separate witnessed test.
+- Repository success does not prove Library, Buffer, Persistent Memory, Dropbox, runtime or another host.
+
+For every material change, run WRITE → READ-BACK → MATCH → VERIFY → RECONCILE → STATUS, and preserve the prior checkpoint. Active entry points must name the latest current checkpoint; historic checkpoints retain their historic role. If a criterion remains unknown, overall status cannot be unconditional PASS.
+
+This amendment is repository-written; exact read-back and Reference Index reconciliation are required before this contract amendment is called verified. It does not close NEXT-041, NEXT-040, prototype implementation, cold-start recovery or external destination gates.
