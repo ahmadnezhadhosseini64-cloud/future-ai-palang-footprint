@@ -2,7 +2,7 @@
 
 - Stable ID / شناسه پایدار: `G6IP-FIRST-LIVING-MASTER-PORTABLE-RAHM-20261024-001`
 - Production ID / شناسه تولید: `G6IP-FLM-RAHM-001`
-- Version / نسخه: 1.0.9
+- Version / نسخه: 1.1.0
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED for repository content; post-edit strict digest rerun pending; real-host and full graph gates remain OPEN.
 - Authority / مرجع حاکم: اصول بنیادی پروژه + سند مادر معماری موروثی + بسته قابل‌حمل RAHM.
 - User Point 0: [G6IP-RAHM-USER-POINT-0-20261024-005](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-005-OUTPUT-CONTINUITY-AND-RECOVERY.md)
@@ -274,7 +274,7 @@ A new input must not make prior open work disappear. Keep the active NEXT, link 
 - Manifest v1.4.8: 50/50 exact-byte SHA-256 entries matched; valid schema fixture 0 errors; invalid fixture rejected with 4 errors; limited IN/OUT checkpoint-link equivalence PASS.
 - Package built: 51 files / 249,389 bytes; archive SHA-256: `01ca37f0b0c8d1b9495d6fe77fdf571ec4e3cbef9bd090daf5952611f59a4de7`.
 - Artifact: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129104156/artifacts/12574940685
-- This is the successful baseline before the latest audit updates and the new full repository IN/OUT verifier. The current manifest will be reconciled and the strict workflow rerun; the latest run history is authoritative for exact final bytes.
+- This successful baseline predates later audit/master updates and the full repository IN/OUT verifier. The latest strict workflow run history is authoritative for the exact current bytes; never reuse a prior pass for later content.
 
 ## Latest audit and recovery-test receipt — CURRENT-058
 - Latest checkpoint: [CURRENT-058](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-058-DEEP-EXCAVATION-EXECUTION-RECEIPTS.md).
