@@ -18,3 +18,10 @@ Living status means versioned, maintainable and eligible for future evidence-bac
 
 ## Next
 Execute NEXT-037: choose the first small interactive experience, define input/output and acceptance criteria, build, test, register evidence, read back, reconcile and then review with Rahm.
+
+
+## Final read-back receipt — Project Zero
+- Status: READ-BACK VERIFIED / CONTENT PRESENT / IDENTIFIERS MATCHED.
+- Verification: this exact path was fetched again after write; expected project-zero identifiers and relevant cross-links were present in the repository.
+- Scope: repository file presence and text/link checks only. Prototype build and cold-start recovery remain OPEN / NOT RUN; other destinations remain independently unverified.
+- Canonical timestamp: use the actual last-change Git commit timestamp in UTC; Tehran equivalent is UTC+03:30 from that same instant. User-message timestamp remains UNKNOWN / UNVERIFIED.
