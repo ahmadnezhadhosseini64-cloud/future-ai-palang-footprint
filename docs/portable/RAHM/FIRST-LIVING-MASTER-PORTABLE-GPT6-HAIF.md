@@ -2,7 +2,7 @@
 
 - Stable ID / شناسه پایدار: `G6IP-FIRST-LIVING-MASTER-PORTABLE-RAHM-20261024-001`
 - Production ID / شناسه تولید: `G6IP-FLM-RAHM-001`
-- Version / نسخه: 1.0.8
+- Version / نسخه: 1.0.9
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED for repository content; post-edit strict digest rerun pending; real-host and full graph gates remain OPEN.
 - Authority / مرجع حاکم: اصول بنیادی پروژه + سند مادر معماری موروثی + بسته قابل‌حمل RAHM.
 - User Point 0: [G6IP-RAHM-USER-POINT-0-20261024-005](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-005-OUTPUT-CONTINUITY-AND-RECOVERY.md)
@@ -280,3 +280,13 @@ A new input must not make prior open work disappear. Keep the active NEXT, link 
 - Latest checkpoint: [CURRENT-058](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-058-DEEP-EXCAVATION-EXECUTION-RECEIPTS.md).
 - A dedicated verifier is now wired into the audit workflow to reconstruct canonical repository state from IN-051 and OUT-050 and compare open gates. Check the latest Living Architecture Audit run for its result; do not infer PASS before the receipt exists.
 - Active NEXT remains NEXT-051. Clean/second AI-host import, full external host recovery, persistence restart and idle/background execution are not established by CI package creation.
+
+## CURRENT-058 actual IN/OUT recovery receipt — run 40129551204
+- [Recovery verifier run](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129551204) PASS: IN-051 and OUT-050 independently reconstructed equivalent canonical repository state; both RECOVERED, `canonical_state_equivalent=true`, zero failures.
+- The test preserved six open-gate categories. This closes only current repository-chain equivalence, not independent AI-host import or runtime persistence.
+- First attempt [40129456947](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129456947) failed due to verifier path/field-name assumptions. Correction: `bf9b121fbcee82475696e98c8c5d9b25e5e683e8`; retest passed. Failure retained as architecture learning.
+- Latest global audit [40129551204](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129551204): 3,820 files; 5,564 Markdown links; zero missing links; 62 Stable-ID groups (61 unreviewed), 88 Production-ID groups, 7 Reference-ID groups, 36 event-number groups, 13 ambiguous parent edges, one ambiguous timestamp; content remains REVIEW_REQUIRED.
+- Strict package baseline [40129104156](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129104156) passed 50/50 hashes and built the v1.4.8 package before the latest edits. Final digest/package run is required after this checkpoint update; consult the [portable conformance workflow](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/workflows/rahm-portable-conformance.yml) for the latest run.
+
+## Host transfer boundary
+- The repository chain can now be reconstructed equivalently from IN and OUT within the tested scope. Independent import into a fresh GPT-6 host, a second host, persistence restart, automatic message capture and idle/background execution remain OPEN / NOT VERIFIED.
