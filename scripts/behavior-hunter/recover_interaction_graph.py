@@ -38,14 +38,12 @@ def _event_id(text):
     # Prefer the explicitly labeled current/result event. A prior-event reference
     # may appear earlier in the anchor and must not become the current graph root.
     for line in text.splitlines():
-        explicit = re.match(
-            r"^\s*-?\s*(?:Result event|Event):\s*\[?(EVT-\d{4})\]?",
-            line,
-            flags=re.IGNORECASE,
-        )
-        if explicit:
-            return explicit.group(1)
-    candidates = re.findall(r"\bEVT-\d{4}\b", text)
+        label = line.strip().lower()
+        if label.startswith(("- result event:", "result event:", "- event:", "event:")):
+            explicit = re.search(r"EVT-\d{4}", line)
+            if explicit:
+                return explicit.group(0)
+    candidates = re.findall(r"EVT-\d{4}", text)
     return candidates[0] if candidates else None
 
 def discover_latest_pair(root):
