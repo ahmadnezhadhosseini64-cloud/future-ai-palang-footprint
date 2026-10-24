@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001
 - Production ID / شناسهٔ تولید: G6IP-IAM-20261024-001
-- Version / نسخه: 1.0.4
+- Version / نسخه: 1.0.5
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED / CONTENT PRESENT / IDENTIFIERS MATCHED
 - Parent architecture / معماری والد: Future AI / Palang Footprint — HAIF
 - New project root / ریشهٔ پروژهٔ جدید: [Point 0](../../0.0/anchors/GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001.md)
@@ -150,3 +150,7 @@ OBSERVE → CAPTURE → CLASSIFY → CHILD HYPOTHESIS → TEST → RAHM REVIEW �
 The governing cross-project principles are [NPFAP-20261024-001](./NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md), now linked to independent checkpoint [CURRENT-041](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-041-FOUNDATIONAL-ARCHITECTURE-MOTHER-ACTIVATION.md). This activation is recorded by [IN-033](../../0.0/anchors/PALANG-0.0-IN-20261024-033-ACTIVATE-FOUNDATIONAL-ARCHITECTURE-MOTHER.md), [OUT-033](../../0.0/anchors/PALANG-0.0-OUT-20261024-033-ACTIVATE-FOUNDATIONAL-ARCHITECTURE-MOTHER.md) and [EVT-0141](../../architecture/BEHAVIOR-TRACE/EVT-0141-FOUNDATIONAL-ARCHITECTURE-MOTHER-ACTIVATION-2026-10-24.md). Parent CURRENT-040 and initial Point 0/CURRENT-039 remain intact. The 0.0 registry and Reference Index are updated to expose this node.
 
 Living governance: maintain versions, provenance, explicit open gates, rollback paths and evidence-backed promotion through Child → Rahm → Master. Fresh-project adoption and export/cold-start recovery are still OPEN / NOT RUN; external persistence destinations remain independently NOT VERIFIED.
+
+
+## Hard-audit integration — v1.0.5
+The latest audit checkpoint is [CURRENT-042](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-042-NEW-PROJECT-ARCHITECTURE-HARD-AUDIT.md), with findings in [HA-001](./NEW-PROJECT-ARCHITECTURE-HARD-AUDIT-2026-10-24-001.md) and event [EVT-0142](../../architecture/BEHAVIOR-TRACE/EVT-0142-NEW-PROJECT-ARCHITECTURE-HARD-AUDIT-2026-10-24.md). The cross-project foundational mother is [NPFAP-20261024-001 v1.0.1](./NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md). Resume from CURRENT-042, then [NEXT-040](../../0.0/anchors/PALANG-0.0-NEXT-20261024-040-FRESH-PROJECT-ADOPTION-TEST.md); keep NEXT-039 prototype work open and preserve CURRENT-039/040/041 as historical anchors.
