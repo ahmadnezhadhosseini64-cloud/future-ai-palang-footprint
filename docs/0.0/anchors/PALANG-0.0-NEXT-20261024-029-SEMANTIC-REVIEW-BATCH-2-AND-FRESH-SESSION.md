@@ -32,3 +32,11 @@ Fresh-session recovery NOT RUN; host-wide ChatGPT capture NOT PROVEN; external p
 - Cross-Layer Integrity Gate [40058599467](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40058599467) PASS on the same SHA.
 - The graph builder now consumes source-hash-verified role decisions and annotates groups without suppressing raw collision counts. Python bytecode is excluded from source scanning; the final audited artifact has zero decode errors.
 - Current main advanced to evidence-only commit `0d13be4be55aa6c29efb95ce00aa39f29314a19a` after the tested SHA. Exact current main requires a new run if proof on that precise HEAD is required.
+
+
+## Latest verified graph implementation
+- [Audit 40058848054](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40058848054) PASS on exact current HEAD `871e02fb87e2ff04db380dcad64fc1bd0939e8a6`; artifact `12546671470` inspected; SHA-256 `6c15a33dc10a9e6f83bde49f7f6c3ae4d01501e00e92f5ed43d086659a131199`.
+- Structural counts: 2,712 files including generated evidence; 865 source files; 3,689 local-link edges; zero missing links; zero decode errors.
+- Role decision ledger: two decisions loaded; one Stable-ID and one Production-ID group source-hash-verified and annotated; 6 occurrences role-adjudicated, 1,417 remain unreviewed. Raw collision counts remain 60/71/7/30; 11 duplicate groups, 13 ambiguous parent edges, 11 alias proposals remain visible.
+- Six semantic role unit tests passed; Cross-Layer Integrity Gate and Reconciliation Acceptance Test passed on the same SHA.
+- The literal-newline SyntaxError and pycache source-scan issue were corrected and retained as regression lessons. Do not treat the remaining collision groups as resolved.
