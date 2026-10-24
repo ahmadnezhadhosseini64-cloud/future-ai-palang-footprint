@@ -623,3 +623,9 @@ Current active gate remains [EVT-0122](../../architecture/BEHAVIOR-TRACE/EVT-012
 - [NEXT-030](../../0.0/anchors/PALANG-0.0-NEXT-20261024-030-SEMANTIC-REVIEW-BATCH-3-AND-COLD-START.md) is the current additive successor to NEXT-029.
 - [EVT-0128](../../architecture/BEHAVIOR-TRACE/EVT-0128-SEMANTIC-IDENTITY-ADJUDICATION-BATCH-1-2026-10-24.md) and the machine-readable decision ledger now contain three source-backed role decisions; the third requires post-change source-hash verification.
 - Next audit must inspect the latest graph manifest, semantic-review queue, Behavior Hunter and Cross-Layer artifacts. Fresh-session recovery remains NOT RUN; Issues #20/#21 remain OPEN.
+
+
+## Current-head semantic decision verification — 2026-10-24
+- Audit [40059155300](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40059155300) PASS on SHA `899bb63ba6461809b59a940e260da6e482f87d48`; artifact `12547095688` inspected; ZIP SHA-256 `4b9ba4f16d6d7fdbe2a3949c15948557e92239ce2df7b496cad24658b0a46329`.
+- Three source-hash-verified role decisions accepted: one Stable-ID group, two Production-ID groups. The raw collision counts remain unchanged and 1,416 identifier occurrences remain unreviewed.
+- Structural graph: 3,719 local-link edges, zero missing links, zero decode errors. Semantic gaps remain active; fresh-session recovery NOT RUN; Issues #20/#21 OPEN.
