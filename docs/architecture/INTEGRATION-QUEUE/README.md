@@ -1683,5 +1683,6 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - Interaction chain: [IN-038](../../0.0/anchors/PALANG-0.0-IN-20261024-038-CAPABILITY-FALLBACK-AND-AUDIT.md) → [OUT-038](../../0.0/anchors/PALANG-0.0-OUT-20261024-038-CAPABILITY-FALLBACK-AND-AUDIT.md) → [EVT-0146](../BEHAVIOR-TRACE/EVT-0146-HOST-CAPABILITY-FALLBACK-AND-ARCHITECTURE-AUDIT-2026-10-24.md).
 - Architecture folder: [HOST-CAPABILITY-FALLBACK](../HOST-CAPABILITY-FALLBACK/README.md); specifications written, runtime not installed.
 - Next action: [NEXT-044](../../0.0/anchors/PALANG-0.0-NEXT-20261024-044-FALLBACK-TEST-AND-INDEX-RECONCILIATION.md) — OPEN / NOT RUN.
-- Open gates: post-write index read-back; complete master read-back; SHA-256 reconciliation; schema validation; persistent-memory restart test; idle background test; clean-host and second-host conformance.
+- Completed this cycle: post-write REFERENCE_INDEX read-back and key-link match; fallback folder and master read-backs.
+- Open gates: SHA-256 reconciliation; JSON Schema fixtures; full link audit; runtime deployment; persistent-memory restart test; idle background test; clean-host and second-host conformance.
 - Read-back reconciliation: CURRENT-046, IN-038/OUT-038, EVT-0146, NEXT-044, fallback files, index, queue and mother docs were fetched after writes; principal IDs/links matched. Runtime and integrity gates remain OPEN / NOT RUN.
