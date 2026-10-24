@@ -1,8 +1,8 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.3.6",
-  "manifest_status": "STRICT_SHA256_GATE_ACTIVE; 37 EXPECTED DIGESTS POPULATED; CI REVALIDATES EACH COMMIT",
-  "created_from_checkpoint": "G6IP-RAHM-USER-POINT-0-20261024-005",
+  "version": "1.3.7",
+  "manifest_status": "STRICT_SHA256_GATE_ACTIVE; CURRENT-057 CHAIN AND UPDATED MOTHERS/INDEX/QUEUE INCLUDED; DIGEST RECONCILIATION REQUIRED",
+  "created_from_checkpoint": "G6IP-RAHM-CURRENT-057-20261024",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [
     {
@@ -50,8 +50,8 @@
     {
       "path": "docs/portable/RAHM/FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md",
       "version": "1.0.0",
-      "git_blob_sha": "35528288b1e74e29834fb3d0a1e86ae3a290bd98",
-      "sha256": "3c1dc33582498ed143d7be0f5bd6cb76893427293a215f88b7b17d3dbad53ed5"
+      "git_blob_sha": "9c6e843f7d364978481b319aa4fba815c5a6d447",
+      "sha256": "PENDING"
     },
     {
       "path": "docs/0.0/anchors/PALANG-0.0-IN-20261024-047-FIRST-LIVING-MASTER.md",
@@ -116,32 +116,32 @@
     {
       "path": "docs/architecture/INTEGRATION-QUEUE/README.md",
       "version": "current",
-      "git_blob_sha": "878fe446b4aca6dbf5dda88399d92909dc359745",
-      "sha256": "75d4b5478ccf7fc12e4f23d555540a9a7887c09984f1950295229c728924b411"
+      "git_blob_sha": "372f5e2552a061ab286f2436663e7bd88bef1818",
+      "sha256": "PENDING"
     },
     {
       "path": "docs/reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md",
       "version": "current",
-      "git_blob_sha": "3e828e80935017bbf697871c04a4cf7f343a23d8",
-      "sha256": "5e6ce35acc3497c935f24ebd2e2a6c5e80fe3bbf90a1bbcaf6805341cab670bc"
+      "git_blob_sha": "55bf994e9196e22bb7b69aefb7cbd707ac4fd4af",
+      "sha256": "PENDING"
     },
     {
       "path": "docs/reference/REFERENCE-DOCUMENTS/GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md",
       "version": "current",
-      "git_blob_sha": "262c3a74656ae97f9a071a8af45dfb879cdf5305",
-      "sha256": "e5edaec81dbcc6aa6e90284ec1c27367144609b136cebcafc742495174ea7c56"
+      "git_blob_sha": "35bc21627d75b8e323d7903c51890e5c1b02cc6f",
+      "sha256": "PENDING"
     },
     {
       "path": "docs/REFERENCE_INDEX.md",
       "version": "current",
-      "git_blob_sha": "a8d62868e3bc0106afdc48b73df2f273ad382978",
-      "sha256": "f16f518a9d5bb72fd8a7cdaacc5c536c97621daf59c1c942163f3a2948a58791"
+      "git_blob_sha": "290b1efe900b923fb74b9a811053b96b427e91a0",
+      "sha256": "PENDING"
     },
     {
       "path": "docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md",
       "version": "current",
-      "git_blob_sha": "f87cd5771828abfd5dd8d62786584ea833fda490",
-      "sha256": "9785f70c230f1e63f2e62d85de0b3983b8cef65436dbdaf71720b241ff83171d"
+      "git_blob_sha": "78ec7cb3cb64eb0a22b4704226e3a6d0e191ab13",
+      "sha256": "PENDING"
     },
     {
       "path": "docs/architecture/BEHAVIOR-TRACE/EVT-0156-FIRST-MASTER-HARNESS-CORRECTION-2026-10-24.md",
@@ -220,6 +220,42 @@
       "version": "1.0.0",
       "git_blob_sha": "3cc6b7030ee9c2d2fec268aed6f6b1df102f0e1a",
       "sha256": "f078223b06272027a47fc8fa0c1f96b44e24c0dfb6b3ae99e7c1e9a50bcb0b13"
+    },
+    {
+      "path": "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-006-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md",
+      "version": "1.0.0",
+      "git_blob_sha": "cb8532b617ff8acdb2d1f239b4f905e3946dfc43",
+      "sha256": "PENDING"
+    },
+    {
+      "path": "docs/0.0/anchors/PALANG-0.0-IN-20261024-050-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md",
+      "version": "1.0.0",
+      "git_blob_sha": "b03fa3fffa8ceee465466918857e45716932ee37",
+      "sha256": "PENDING"
+    },
+    {
+      "path": "docs/0.0/anchors/PALANG-0.0-OUT-20261024-049-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md",
+      "version": "1.0.0",
+      "git_blob_sha": "f5799d967b72c4f373f2f293285783f61a069237",
+      "sha256": "PENDING"
+    },
+    {
+      "path": "docs/architecture/BEHAVIOR-TRACE/EVT-0159-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY-2026-10-24.md",
+      "version": "1.0.0",
+      "git_blob_sha": "54b81274e230673de1c607f3184bad08a8ca6a77",
+      "sha256": "PENDING"
+    },
+    {
+      "path": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261024-057-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md",
+      "version": "1.0.0",
+      "git_blob_sha": "920f1fa528cde5241ff5cdeb855343e399fccc06",
+      "sha256": "PENDING"
+    },
+    {
+      "path": "docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md",
+      "version": "1.0.0",
+      "git_blob_sha": "7c5ac6dd7a2fa499076ade4ebb044a451309eec7",
+      "sha256": "PENDING"
     }
   ],
   "manifest_itself": {
@@ -233,19 +269,21 @@
     "persistent_memory": "NOT_VERIFIED",
     "idle_background_execution": "NOT VERIFIED",
     "cross_host": "NOT_RUN",
-    "exact_byte_sha256": "Last verified PASS in run 40122534478 for manifest v1.3.5 (37/37); current metadata revision v1.3.6 must pass its own CI run",
-    "schema_valid_fixture": "PASS_RUN_40122534478; valid fixture errors=0",
-    "schema_invalid_fixture": "REJECTED_WITH_4_ERRORS_RUN_40122534478",
-    "IN_OUT_recovery_equivalence": "PASS_LIMITED_LINK_CHECKPOINT_SCOPE_RUN_40122534478; full state reconstruction remains OPEN",
+    "exact_byte_sha256": "PENDING_FINAL_43_FILE_STRICT_RECHECK_AFTER_CURRENT-057",
+    "schema_valid_fixture": "LAST_PASS_RUN_40122633966; valid fixture errors=0",
+    "schema_invalid_fixture": "LAST_REJECTED_WITH_4_ERRORS_RUN_40122633966",
+    "IN_OUT_recovery_equivalence": "LAST_PASS_LIMITED_LINK_CHECKPOINT_SCOPE_RUN_40122633966; full state reconstruction remains OPEN",
     "clean_AI_host_import": "NOT RUN",
     "second_AI_host_import": "NOT RUN",
     "persistence_restart": "NOT VERIFIED",
     "canonical_mother_index_queue_integration": "CURRENT-056, HAIF mother, inherited master, index and main queue updated/read-back verified",
     "schema_workflow_overall": "PASS_RUN_40122001572",
-    "portable_package_build": "PASS_RUN_40122534478; 38 files, 208860 bytes, SHA-256 15b39b61b92b49f03d705f1561c13d568da57b32838d5af2f0c5eacfef9e2638; v1.3.6 will trigger new archive",
+    "portable_package_build": "LAST_PASS_RUN_40122633966; 38 files / 208866 bytes / SHA-256 c2770ea2aa10b67c2a0eaa5cb3975bbb1698a3c7cd3f9fabc15f39b73aded32e; new version requires rerun",
     "full_state_recovery": "OPEN / NOT RUN",
     "focused_relative_link_audit": "PASS_13_CORE_AND_MOTHER_FILES_ZERO_BROKEN_LINKS",
-    "repository_graph_audit": "REVIEW_REQUIRED_RUN_40122534477"
+    "repository_graph_audit": "REVIEW_REQUIRED_RUN_40122633902; 11 missing links; 60 unreviewed stable-ID collision groups; 88 production-ID collision groups; 7 reference-ID collision groups; 36 event-number collision groups; 13 ambiguous parent edges",
+    "current_checkpoint": "CURRENT-057",
+    "next_action": "NEXT-051"
   },
-  "note": "Strict digest conformance requires a lowercase 64-character expected SHA-256 for every manifest entry, exact-byte comparison, explicit MATCH for each file, and rejection of missing/invalid hashes, mismatches or duplicate paths. The manifest's own digest is external run evidence to avoid recursive self-hashing. CI success does not prove independent AI-host import, full recovery, persistent memory or idle/background execution."
+  "note": "CURRENT-057 adds the user point 0/006, IN-050, OUT-049, EVT-0159, CURRENT-057 and NEXT-051; it updates the portable master, inherited master, foundational principles, HAIF mother, canonical index and integration queue. PENDING digests are intentionally not treated as valid: the strict workflow must produce exact-byte values and all 43 manifest entries must match before package integrity can be claimed. CI does not prove a real AI-host import or persistent/background runtime."
 }
