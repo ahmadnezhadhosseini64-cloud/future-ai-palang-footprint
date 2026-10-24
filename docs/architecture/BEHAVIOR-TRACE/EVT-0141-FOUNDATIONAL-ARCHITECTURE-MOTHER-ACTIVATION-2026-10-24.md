@@ -11,7 +11,7 @@
 - Inherited architecture mother: [G6IP-IAM-20261024-001](../../reference/REFERENCE-DOCUMENTS/GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md)
 - GPT-6 branch living master: [G6IP-LMR-20261024-001](../../reference/REFERENCE-DOCUMENTS/GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001.md)
 - New-project architecture zero: [G6IP-ARCH-ZERO-20261024-001](../../0.0/anchors/PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md)
-- Status at creation: REGISTERED / READ-BACK PENDING.
+- Status: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING.
 
 ## Observable event
 
@@ -34,3 +34,13 @@
 ## Time provenance
 
 Exact user-message timestamp: UNKNOWN / UNVERIFIED. Repository registration time must be derived from the actual Git commit metadata for each registered artifact; never invent it.
+
+
+## Repository read-back receipt — 2026-10-24
+After the writes, the following exact paths were fetched again from the default branch: IN-033, OUT-033, EVT-0141, CURRENT-041, `docs/0.0/README.md`, `docs/REFERENCE_INDEX.md`, the foundational-principles mother, the inherited architecture mother and the GPT-6 branch living master. The required identifiers and cross-links to CURRENT-040, CURRENT-041, NPFAP-20261024-001 and EVT-0141 were present. CURRENT-040 was then linked forward to CURRENT-041. This verifies repository content and linkage only.
+
+- Anchor creation commit: `0def375074fd6cb2e2a2b00cdec292d4a1640809`, UTC `2026-10-24T09:47:04Z`, Tehran `2026-10-24T13:17:04+03:30`.
+- Fresh-project adoption test: OPEN / NOT RUN.
+- Export/cold-start recovery: OPEN / NOT RUN.
+- Buffer / Persistent Memory / Library / Dropbox: NOT VERIFIED.
+- Global always-on background capture: NOT ESTABLISHED.
