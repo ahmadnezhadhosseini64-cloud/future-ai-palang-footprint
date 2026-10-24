@@ -3,7 +3,7 @@
 - Stable ID / شناسهٔ پایدار: `PALANG-OUT-FOUNDATIONAL-GOVERNANCE-2026-10-24-039`
 - Production ID / شناسهٔ تولید: `G6IP-OUT-039`
 - Version / نسخه: `1.0.0`
-- Status / وضعیت: REGISTERED; read-back pending at creation.
+- Status / وضعیت: REGISTERED / READ-BACK VERIFIED; fetched after write and identity/path matched.
 - Input / ورودی: [IN-040](./PALANG-0.0-IN-20261024-040-CURRENT-046-FOUNDATIONAL-GOVERNANCE-AND-RECOVERY.md)
 - Parent checkpoint / نقطهٔ والد: [CURRENT-046](./PALANG-0.0-CURRENT-20261024-046-HUMAN-AI-FUTURE-INTERACTION-ARCHITECTURE.md)
 - Living mother / سند مادر زنده: [NPFAP](../../reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md)
