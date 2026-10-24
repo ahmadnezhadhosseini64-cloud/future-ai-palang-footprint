@@ -178,3 +178,11 @@ The package must declare host capabilities and limitations, retain IN/OUT/event 
 - Portable artifacts: `docs/portable/RAHM/` (boot, architecture, host manifest, interaction schema, evidence ledger, conformance tests, export manifest, recovery/rollback).
 - Persistence proof and idle execution proof are separate mandatory capability gates. A manifest declaration is not proof; require restart/idle execution evidence and independent read-back.
 - Current status: artifact writes started; full package read-back, digest reconciliation, JSON/schema validation, restart recovery, persistent memory, idle background and second-host tests remain OPEN / NOT RUN or NOT VERIFIED.
+
+
+## Living update — capability fallback architecture — v1.0.8
+
+- Current Rahm branch: [CURRENT-046](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-046-CAPABILITY-FALLBACK.md); chain [IN-038](../../0.0/anchors/PALANG-0.0-IN-20261024-038-CAPABILITY-FALLBACK-AND-AUDIT.md) → [OUT-038](../../0.0/anchors/PALANG-0.0-OUT-20261024-038-CAPABILITY-FALLBACK-AND-AUDIT.md) → [EVT-0146](../../architecture/BEHAVIOR-TRACE/EVT-0146-HOST-CAPABILITY-FALLBACK-AND-ARCHITECTURE-AUDIT-2026-10-24.md).
+- Capability fallback folder: [HOST-CAPABILITY-FALLBACK](../../architecture/HOST-CAPABILITY-FALLBACK/README.md). It defines authorized external runtime, persistence adapter, scheduler adapter and conformance tests, but does not itself install or execute software.
+- Next: [NEXT-044](../../0.0/anchors/PALANG-0.0-NEXT-20261024-044-FALLBACK-TEST-AND-INDEX-RECONCILIATION.md) — OPEN / NOT RUN.
+- Prior REFERENCE_INDEX fetch failure is now recoverable; post-update marker/link read-back remains a required gate. All host runtime and cross-host tests remain open until evidence is retained.
