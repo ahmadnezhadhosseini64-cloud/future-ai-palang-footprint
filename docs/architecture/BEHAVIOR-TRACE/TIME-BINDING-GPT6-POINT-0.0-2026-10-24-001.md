@@ -18,7 +18,7 @@
 | Inherited architecture master v1.0.3 | `4843709b1ec4eabd429e54f995d01c063fe5aa4c` | `2026-10-24T07:59:35Z` | `2026-10-24T11:29:35+03:30` |
 | CURRENT-039 historic root update | `c2be02477b0e4a8bec13a5f7960e528e25c646ea` | `2026-10-24T07:59:54Z` | `2026-10-24T11:29:54+03:30` |
 | NEXT-038 handoff | `3833e0769024892300d4e602b046462fdb04815d` | `2026-10-24T07:59:57Z` | `2026-10-24T11:29:57+03:30` |
-| GPT-6 living master v1.3.3 | `6d571fbaf0a7e3a5052562de8791bb2d6732728a` | `2026-10-24T08:00:08Z` | `2026-10-24T11:30:08+03:30` |
+| GPT-6 living master v1.3.4 | `e5e4aa1c496a335eaf25a677a824a79a1e414a30` | `2026-10-24T08:04:20Z` | `2026-10-24T11:34:20+03:30` |
 | 0.0 registry README | `77e8c5d3f9e899de66aabe6ea49ab9efc39274b8` | `2026-10-24T08:00:23Z` | `2026-10-24T11:30:23+03:30` |
 | Architecture integration queue | `ad9d132bb9adac43aa7d385eeb0fe77dae688d99` | `2026-10-24T08:00:27Z` | `2026-10-24T11:30:27+03:30` |
 
@@ -29,4 +29,4 @@ These are fetched GitHub commit timestamps for the listed changes. The exact poi
 On restart, read CURRENT-040 → Point 0.0 → inherited architecture master v1.0.3 → IN-031/OUT-031 → EVT-0139 → NEXT-039 → this ledger. Match stable/production IDs and current statuses before continuing.
 
 ## Ledger self-timestamp
-- Latest recorded ledger commit at this revision: `54a2093f8dfc16e0c1a55507cb88855febfbfc5f` — UTC `2026-10-24T08:01:17Z`; Tehran `2026-10-24T11:31:17+03:30`. This line must be refreshed after the next ledger update commit.
+- Pre-final ledger revision: `abff3511110b6335ac5a3840e8c3fbc17efa3108` — UTC `2026-10-24T08:03:58Z`; Tehran `2026-10-24T11:33:58+03:30`. The latest revision's own commit timestamp is authoritative in GitHub commit metadata; embedding a self-referential timestamp would make the ledger stale with each update.
