@@ -10,6 +10,8 @@
 - Event: [EVT-0138](../../architecture/BEHAVIOR-TRACE/EVT-0138-GPT6-POINT-0-PROMOTION-AND-HAIF-INTEGRATION-2026-10-24.md)
 - Living master: [GPT-6 interactive living master](../../reference/REFERENCE-DOCUMENTS/GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001.md)
 
+- Inherited architecture mother: [GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001](../../reference/REFERENCE-DOCUMENTS/GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md)
+
 ## Purpose
 نقطهٔ ۰ اولیه اکنون به‌عنوان ریشهٔ معماری تعریف و در مخزن ثبت شده است. کار بعدی دیگر ساخت نقطهٔ ۰ نیست؛ کار بعدی ساخت یک نقطهٔ ۰.۰ مستقل، قابل‌بازیابی و مبتنی بر وضعیت تأییدشدهٔ نقطهٔ ۰ است.
 
