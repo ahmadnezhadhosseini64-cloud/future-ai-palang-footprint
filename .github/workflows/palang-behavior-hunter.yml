@@ -32,6 +32,8 @@ jobs:
         run: python scripts/behavior-hunter/recover_interaction_graph.py --start IN --output artifacts/behavior-hunter/recovery-from-IN.json
       - name: Recover interaction graph starting from OUT anchor
         run: python scripts/behavior-hunter/recover_interaction_graph.py --start OUT --output artifacts/behavior-hunter/recovery-from-OUT.json
+      - name: Detect drift across the living architecture graph
+        run: python scripts/behavior-hunter/check_living_graph_drift.py --output artifacts/behavior-hunter/living-graph-drift.json
       - name: Validate append-only architecture evolution ledger
         run: python scripts/behavior-hunter/validate_architecture_update_ledger.py --input data/interaction-pairs/architecture-update-ledger.jsonl --output artifacts/behavior-hunter/architecture-update-ledger.json
       - name: Validate architecture update proposal and preserve owner gate
