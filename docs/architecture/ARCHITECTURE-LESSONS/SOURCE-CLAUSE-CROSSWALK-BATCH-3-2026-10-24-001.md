@@ -49,3 +49,9 @@
 - Runtime acceptance: OPEN under Issue #20; validate IN/OUT schema, reverse lookup from either side, cold-start recovery, and destination-specific read-back.
 - Exact-final-main audit: OPEN / NOT CONFIRMED until a full audit run is tied to the exact main SHA.
 - Next: continue source families beyond this five-source batch; preserve NEXT-022 through NEXT-036 and do not close Issue #20/#21 based on this partial crosswalk.
+
+
+## Audit correction record
+- Candidate Living Architecture Audit [run 40069565070](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40069565070) failed at the structural gate because the Integration Queue and 0.0 registry used the shorthand `SCRTC-B3` instead of the full required ID `SCRTC-B3-2026-10-24-001`.
+- Cause: human-readable short label was present but the stable full identity was not present on those two surfaces; the CI check correctly rejected this incomplete link.
+- Correction: add the full ID explicitly to both surfaces, retain the failed run as evidence, and rerun the audit. No previous evidence is deleted.
