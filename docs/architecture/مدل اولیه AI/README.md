@@ -141,3 +141,9 @@
 
 
 - Active investigation: [PICTR-2026-10-22-001](../../reference/REFERENCE-DOCUMENTS/PALANG-IDENTITY-COLLISION-AND-TIMESTAMP-RECONCILIATION-MASTER-REFERENCE-2026-10-22-001.md) — identity collisions and EVT-0089 timestamp; open until semantic audit closes.
+
+
+## شاخهٔ تعاملی GPT-6 — CURRENT-037
+- [سند مرجع مادر زندهٔ پروژهٔ تعاملی GPT-6](../../reference/REFERENCE-DOCUMENTS/GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001.md) — Stable ID: `GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001`, Production ID: `G6IP-LMR-20261024-001`, Version 1.0.0.
+- [CURRENT-037](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-037-GPT6-INTERACTIVE-PROJECT-START.md) is the new continuation anchor; [IN-027](../../0.0/anchors/PALANG-0.0-IN-20261024-027-GPT6-INTERACTIVE-PROJECT-START.md), [OUT-027](../../0.0/anchors/PALANG-0.0-OUT-20261024-027-GPT6-INTERACTIVE-PROJECT-START.md), and [EVT-0135](../BEHAVIOR-TRACE/EVT-0135-GPT6-INTERACTIVE-PROJECT-START-2026-10-24.md) preserve the interaction lineage.
+- This is an additive product branch under the existing HAIF master architecture. Prior anchors and NEXT-036 remain intact; external storage and always-on global capture are not implied.
