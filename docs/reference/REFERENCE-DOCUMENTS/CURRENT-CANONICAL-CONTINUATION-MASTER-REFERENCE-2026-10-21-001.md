@@ -712,3 +712,9 @@ Current active gate remains [EVT-0122](../../architecture/BEHAVIOR-TRACE/EVT-012
 - Run 40061688861 SUCCESS on tested SHA `ee0f3c24431acd0f9be053fc6299301f0217d95b`; artifact 12547334125 inspected; ZIP SHA-256 `8278751f31a44e7fbd377a49aa64f688d080d87a7856ac000c00149dce891670`.
 - IN-033/OUT-033 recovered both directions; EVT-0131/NEXT-033 present; zero failures. 2 candidate tests CANDIDATE_READY, no parse errors. Ledger PASS with 4 hash-linked records. Proposal gate remains owner-gated and does not mutate MASTER. Terminal receipt SUCCESS.
 - Fresh-session recovery NOT RUN; host-wide capture/external persistence NOT PROVEN; Issues #19/#20/#21 OPEN.
+
+
+## Durable receipt record — EVT-0131
+- [Terminal status receipt](../../architecture/BEHAVIOR-TRACE/STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40061713327.json) is preserved in the repository from the inspected workflow artifact.
+- Source run [40061713327](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40061713327), 71 tests passed on tested SHA `26615121fd50276c9c978814b183b21b20330135`; artifact `12547866288`, ZIP SHA-256 `448465dc742c90b1408d725ccce8a17eaf6d3b845ca639ad742c709cbdeb629a`.
+- Current main later received evidence-only commits; the tested SHA is the canonical proof scope. The receipt does not prove a ChatGPT UI heartbeat, host-wide capture or external persistence.
