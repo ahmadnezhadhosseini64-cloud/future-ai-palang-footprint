@@ -52,3 +52,7 @@ After the additional corrections, the inherited mother, GPT-6 living master, arc
 
 ## Final consistency read-back — 2026-10-24
 After correcting stale CURRENT-040 wording, the architecture-zero root, inherited architecture mother and GPT-6 living master were fetched again. The active headers now resolve to CURRENT-042; NEXT-040 is the next adoption test; CURRENT-040/041 are preserved as historical nodes. The hard-audit mother is v1.0.3. This final pass verifies repository content and anchor consistency only, not a product/runtime pass.
+
+
+## Final next-action reconciliation
+The inherited architecture mother was updated so its active next checkpoint is NEXT-040 (fresh-project adoption test), followed by the already-existing NEXT-039 prototype task. That master was fetched again after the update; CURRENT-042 and NEXT-040 are present, and no active-header CURRENT-040 pointer remains. NEXT-039 is preserved as the subsequent prototype task, not deleted or falsely marked complete.
