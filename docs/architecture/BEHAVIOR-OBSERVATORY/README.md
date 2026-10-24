@@ -196,3 +196,9 @@ Continue collecting observable interaction and evaluator behavior as evidence-ba
 - Run 40062120276 passed 74 tests; six graph nodes were checked, zero drift failures were found, both IN/OUT directions recovered the current pair, and a durable receipt was located.
 - Durable receipt: [STATUS-20261024-EVT-0131-RUN-40062120276.json](../BEHAVIOR-TRACE/STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40062120276.json).
 - This check is repository-scoped; separate fresh-session recovery remains NOT RUN.
+
+
+## Latest verified graph drift and ledger state — EVT-0131
+- Run [40062533959](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40062533959) passed 74 tests on tested SHA `d05103dd3593f090f10fafb5a469f6cac69063b1`; artifact 12548485418 inspected, ZIP SHA-256 `508dbfa863bf7b805415a95291f8d881c7be1b097f9d1d8f12f32ea32e225ce5`.
+- Both recovery directions RECOVERED; graph drift PASS across six nodes; ledger 5 records/hash chain PASS; durable receipt [here](../BEHAVIOR-TRACE/STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40062533959.json).
+- Fresh-session recovery NOT RUN; runtime-wide capture and external persistence NOT PROVEN.
