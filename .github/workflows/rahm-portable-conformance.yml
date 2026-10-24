@@ -43,6 +43,38 @@ jobs:
           assert invalid_errors, "Invalid fixture unexpectedly passed"
           print("SCHEMA_CONFORMANCE=PASS")
           PY
+      - name: Recover canonical state independently from IN and OUT
+        run: |
+          python - <<'PY'
+          import json, re
+          from pathlib import Path
+          root = Path(".")
+          sources = {
+              "IN": root / "docs/0.0/anchors/PALANG-0.0-IN-20261024-047-FIRST-LIVING-MASTER.md",
+              "OUT": root / "docs/0.0/anchors/PALANG-0.0-OUT-20261024-046-FIRST-LIVING-MASTER.md",
+          }
+          expected = {
+              "current": "PALANG-0.0-CURRENT-20261024-054-FIRST-LIVING-MASTER.md",
+              "next": "PALANG-0.0-NEXT-20261024-048-FIRST-MASTER-CONFORMANCE.md",
+              "master": "FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md",
+          }
+          recovered = {}
+          for side, path in sources.items():
+              content = path.read_text(encoding="utf-8")
+              links = re.findall(r'\]\(([^)]+)\)', content)
+              state = {}
+              for key, suffix in expected.items():
+                  matches = [link for link in links if link.split("#", 1)[0].endswith(suffix)]
+                  assert matches, f"{side} recovery missing {key} target {suffix}"
+                  state[key] = suffix
+              assert "OPEN" in content or "open gates" in content.lower(), f"{side} recovery did not preserve open gates"
+              recovered[side] = state
+          assert recovered["IN"] == recovered["OUT"], f"IN/OUT recovery mismatch: {recovered}"
+          evidence = {"test_id":"RAHM-IN-OUT-RECOVERY-054", "result":"PASS", "recovered_from":"IN-047 and OUT-046 independently", "canonical_state":recovered["IN"], "open_gates_preserved":True, "scope":"Artifact-link and checkpoint recovery equivalence; not a full hidden-memory or independent-host test."}
+          Path("rahm-recovery-equivalence.json").write_text(json.dumps(evidence, indent=2)+"\n", encoding="utf-8")
+          print(json.dumps(evidence, indent=2))
+          print("IN_OUT_RECOVERY_EQUIVALENCE=PASS")
+          PY
       - name: Produce exact-byte SHA-256 evidence for manifest inventory
         run: |
           python - <<'PY'
@@ -99,4 +131,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: rahm-portable-conformance-evidence
-          path: rahm-sha256-evidence.json
+          path: |
+            rahm-sha256-evidence.json
+            rahm-recovery-equivalence.json
