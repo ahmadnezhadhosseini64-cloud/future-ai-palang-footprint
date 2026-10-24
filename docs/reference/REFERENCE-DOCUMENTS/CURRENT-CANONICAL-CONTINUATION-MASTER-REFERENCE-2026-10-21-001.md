@@ -679,3 +679,11 @@ Current active gate remains [EVT-0122](../../architecture/BEHAVIOR-TRACE/EVT-012
 - New terminal status receipt generator: `scripts/behavior-hunter/emit_status_receipt.py`; tests: `tests/behavior-hunter/test_emit_status_receipt.py`. Workflow emits a receipt even when earlier steps fail and uploads it with the manifests.
 - This makes repository workflow terminal status durable; it cannot itself emit a live ChatGPT UI heartbeat. The assistant must provide a visible user-facing result when continuing work.
 - Prior architecture updates and ledger versions remain preserved. Current commit's CI/artifact proof is pending until run and manifests are inspected; fresh-session recovery remains NOT RUN; Issues #19/#20/#21 remain OPEN.
+
+
+## Latest independent audit artifact — 40060776822
+- See [EVT-0130](../../architecture/BEHAVIOR-TRACE/EVT-0130-LIVING-STATUS-ARCHITECTURE-GROWTH-DEEP-AUDIT-2026-10-24.md) for full findings and evidence.
+- Run 40060776822 SUCCESS on tested SHA `ef2731369e523bf6348ab09f61d60db78398407c`; artifact 12547176981 inspected; ZIP SHA-256 `f7ab623ade20308d122045f72d23d68c047cd2899f6697660083b7b3a0ecc5af`.
+- Audit snapshot: 875 source files, 2,766 total including evidence, 3,821 link edges; 6 template-derived link candidates; 59 unreviewed Stable-ID collision groups, 71 Production-ID collisions, 7 Reference-ID collisions, 30 event-number collisions, 11 duplicate groups, 13 ambiguous parents and 11 proposed aliases.
+- Timestamp pair audit: 2,621 files, 2,151 normalized UTC/Tehran pairs, one ambiguity, zero offset/value failures. This is a dated snapshot.
+- Pair 032 is recovered in both directions per run 40060776778 / artifact 12547665271. Fresh-session recovery NOT RUN; Issues #19/#20/#21 OPEN; host-wide capture and external persistence NOT PROVEN.
