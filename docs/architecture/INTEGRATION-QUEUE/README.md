@@ -1466,3 +1466,9 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - [EVT-0128](../BEHAVIOR-TRACE/EVT-0128-SEMANTIC-IDENTITY-ADJUDICATION-BATCH-1-2026-10-24.md) records two role decisions; graph builder now consumes `data/interaction-pairs/semantic-role-decisions.jsonl` and verifies source SHA-256 before annotation.
 - Audit [40058848054](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40058848054) PASS; artifact `12546671470` inspected; 3,689 local-link edges, zero missing links, zero decode errors; six semantic-role unit tests passed.
 - Current successor [NEXT-029](../../0.0/anchors/PALANG-0.0-NEXT-20261024-029-SEMANTIC-REVIEW-BATCH-2-AND-FRESH-SESSION.md) remains ACTIVE/LIVING for batch-2 source adjudication and separate fresh-session recovery. Raw collisions, aliases and parent ambiguities remain open; no bulk rename/delete/merge.
+
+
+## Active successor — NEXT-030 semantic review batch 3
+- [NEXT-030](../../0.0/anchors/PALANG-0.0-NEXT-20261024-030-SEMANTIC-REVIEW-BATCH-3-AND-COLD-START.md) is ACTIVE/LIVING for verifying H0-ID-REVIEW-003 against source hashes, inspecting latest artifacts and continuing non-destructive semantic adjudication.
+- [EVT-0128](../BEHAVIOR-TRACE/EVT-0128-SEMANTIC-IDENTITY-ADJUDICATION-BATCH-1-2026-10-24.md) preserves the three decisions and failure lessons.
+- No bulk rename/merge/delete. Fresh-session recovery NOT RUN; Issues #20/#21 remain OPEN.
