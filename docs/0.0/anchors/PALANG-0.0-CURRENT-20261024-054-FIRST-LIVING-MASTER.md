@@ -2,9 +2,10 @@
 
 - Stable ID: `G6IP-RAHM-CURRENT-054-20261024`
 - Production ID: `G6IP-CURRENT-054`
-- Version: 1.0.1
+- Version: 1.0.2
 - Status: REGISTERED / READ-BACK VERIFIED for core chain files and canonical mother/index/queue updates; conformance and runtime gates remain OPEN.
 - Parent: [CURRENT-053](./PALANG-0.0-CURRENT-20261024-053-PORTABLE-RAHM-HARD-AUDIT.md)
+- User-designated Point 0: [G6IP-RAHM-USER-POINT-0-20261024-003](./GPT6-RAHM-USER-POINT-0-20261024-003-FIRST-LIVING-MASTER-AND-PORTABILITY.md)
 - User input: [IN-047](./PALANG-0.0-IN-20261024-047-FIRST-LIVING-MASTER.md)
 - Assistant output: [OUT-046](./PALANG-0.0-OUT-20261024-046-FIRST-LIVING-MASTER.md)
 - Event: [EVT-0155](../../architecture/BEHAVIOR-TRACE/EVT-0155-FIRST-LIVING-MASTER-PORTABLE-RAHM-2026-10-24.md)
