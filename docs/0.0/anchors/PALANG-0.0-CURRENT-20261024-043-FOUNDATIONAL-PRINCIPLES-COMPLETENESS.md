@@ -4,7 +4,7 @@
 - Production ID: `G6IP-CURRENT-043`
 - Version: 1.0.0
 - Role: Independent Point 0.0 / recovery checkpoint
-- Status: REGISTERED / ACTIVE / LIVING / EVOLVABLE / RECOVERABLE; final cross-file read-back pending.
+- Status: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING / EVOLVABLE / RECOVERABLE.
 - Parent: [CURRENT-042](./PALANG-0.0-CURRENT-20261024-042-NEW-PROJECT-ARCHITECTURE-HARD-AUDIT.md)
 - Input: [IN-035](./PALANG-0.0-IN-20261024-035-COMPLETE-FOUNDATIONAL-PRINCIPLES.md)
 - Output: [OUT-035](./PALANG-0.0-OUT-20261024-035-COMPLETE-FOUNDATIONAL-PRINCIPLES.md)
@@ -19,9 +19,9 @@ The foundational principles were expanded to v1.0.2 with an explicit completenes
 
 ## Current gates
 
-- Foundational principles content update: WRITTEN; exact final read-back pending.
-- Reference index/version alignment: OPEN.
-- CURRENT/IN/OUT/EVT/mother/next links: OPEN for final reconciliation.
+- Foundational principles content update: WRITTEN / exact path fetched after write / key IDs and version v1.0.2 matched.
+- Reference index/version alignment: exact path fetched after write; NPFAP v1.0.2, CURRENT-043, EVT-0143 and NEXT-041 entries present.
+- CURRENT/IN/OUT/EVT/mother/next links: key identifiers and paths matched in repository read-back; external destination/runtime behavior remains unverified.
 - Fresh-project adoption test: OPEN / NOT RUN.
 - Interactive prototype: NOT BUILT.
 - Cold-start recovery: OPEN / NOT RUN.
@@ -35,3 +35,7 @@ Preserve every prior checkpoint. UTC repository commit time is canonical; derive
 
 ## Version and cross-link reconciliation — CURRENT-043
 The foundational mother is v1.0.2. The GPT-6 living master is updated to v1.3.7 and now names CURRENT-043 / IN-035 / OUT-035 / EVT-0143 / NEXT-041. The inherited mother links CURRENT-043 and NEXT-041. Reference Index and 0.0 registry entries have been updated to the v1.0.2 lineage. Exact post-write read-back is the remaining gate; no runtime/adoption/recovery PASS is claimed.
+
+
+## Exact read-back receipt
+Fetched after write and checked identifiers/links: NPFAP v1.0.2, HA-001, inherited mother, GPT-6 living master v1.3.7, Reference Index, 0.0 registry, IN-035, OUT-035, EVT-0143, CURRENT-043 and NEXT-041. The active cross-links CURRENT-043 / IN-035 / OUT-035 / EVT-0143 / NPFAP v1.0.2 / NEXT-041 were present. This verifies repository content and declared links, not the still-open adoption, prototype, cold-start or external-destination gates.
