@@ -1447,3 +1447,12 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - Next: [NEXT-042 — gap closure and recovery validation](./anchors/PALANG-0.0-NEXT-20261024-042-GAP-CLOSURE-AND-RECOVERY-VALIDATION.md); keep [NEXT-041](./anchors/PALANG-0.0-NEXT-20261024-041-FOUNDATIONAL-PRINCIPLES-VERIFICATION.md) open until its principle matrix is executed.
 - Versioning rule: additive successor; preserve old artifacts, connect versions explicitly, keep rollback and evidence. No silent replacement.
 - Status: IN-036 / OUT-036 / CURRENT-044 / EVT-0144 / NEXT-042 and index/registry were fetched after write; primary IDs and links matched. A broken prototype-task link in NEXT-042 was found and corrected; the direct NPFAP link check remains 19/19 only. Principle audit, full transitive link scan, adoption, prototype, cold-start recovery and external destinations remain OPEN / NOT RUN / NOT BUILT / NOT VERIFIED as applicable.
+
+
+## CURRENT-045 — نقطهٔ جاری زنده و سند مادر فعال — 2026-10-24
+- Current checkpoint: [CURRENT-045](./anchors/PALANG-0.0-CURRENT-20261024-045-LIVING-MOTHER-ANCHOR.md); parent [CURRENT-044](./anchors/PALANG-0.0-CURRENT-20261024-044-RECOVERY-EVOLVABLE-BASELINE.md) preserved.
+- Input/output: [IN-037](./anchors/PALANG-0.0-IN-20261024-037-REGISTER-CURRENT-POINT.md) ↔ [OUT-037](./anchors/PALANG-0.0-OUT-20261024-037-REGISTER-CURRENT-POINT.md).
+- Event: [EVT-0145](../architecture/BEHAVIOR-TRACE/EVT-0145-REGISTER-CURRENT-POINT-2026-10-24.md).
+- Living mother: [NPFAP-20261024-001 v1.0.4](../reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md).
+- Next: [NEXT-043](./anchors/PALANG-0.0-NEXT-20261024-043-VERIFY-AND-CLOSE-GAPS.md).
+- Status: records created; exact-path read-back and timestamp reconciliation are the next verification gate. Audit, recovery, adoption, prototype and external sync remain open.
