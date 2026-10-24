@@ -9,12 +9,12 @@
 
 | Artifact | Commit SHA | Canonical UTC | Tehran equivalent |
 |---|---|---|---|
-| IN-031 | `248c119ce181aab0acc9c7a597c9d24e3a83b9d9` | `2026-10-24T08:05:52Z` | `2026-10-24T11:35:52+03:30` |
+| IN-031 | `ecc90866e4a438aa7aa1298adf220f42d7afbc17` | `2026-10-24T08:07:22Z` | `2026-10-24T11:37:22+03:30` |
 | OUT-031 | `4cd384f5013ea7f65328fd2435779d07e70d4cc8` | `2026-10-24T08:05:57Z` | `2026-10-24T11:35:57+03:30` |
 | EVT-0139 | `8aa75cbad011232c9659c8e2d23b3a48545d7a84` | `2026-10-24T08:06:03Z` | `2026-10-24T11:36:03+03:30` |
-| NEXT-039 | `a58bbf84bf705d34c46ef53b21b4d861f92ffcd9` | `2026-10-24T07:58:53Z` | `2026-10-24T11:28:53+03:30` |
-| CURRENT-040 | `4a7066614216256946a5c939aaec32fe18e7228f` | `2026-10-24T08:05:40Z` | `2026-10-24T11:35:40+03:30` |
-| Point 0.0 checkpoint | `8145d3365f252ee7cd19b066da5ff7315851ec08` | `2026-10-24T08:05:33Z` | `2026-10-24T11:35:33+03:30` |
+| NEXT-039 | `d3079ccb230d6b4dc41de4a93f72ef78c578e58c` | `2026-10-24T08:07:25Z` | `2026-10-24T11:37:25+03:30` |
+| CURRENT-040 | `b55f07974398b571b1454963729d8c7bb395d61e` | `2026-10-24T08:07:28Z` | `2026-10-24T11:37:28+03:30` |
+| Point 0.0 checkpoint | `df38d4792fc813f210f0eefef557b5a3848e3a0b` | `2026-10-24T08:07:18Z` | `2026-10-24T11:37:18+03:30` |
 | Inherited architecture master v1.0.3 | `4843709b1ec4eabd429e54f995d01c063fe5aa4c` | `2026-10-24T07:59:35Z` | `2026-10-24T11:29:35+03:30` |
 | CURRENT-039 historic root update | `c2be02477b0e4a8bec13a5f7960e528e25c646ea` | `2026-10-24T07:59:54Z` | `2026-10-24T11:29:54+03:30` |
 | NEXT-038 handoff | `3833e0769024892300d4e602b046462fdb04815d` | `2026-10-24T07:59:57Z` | `2026-10-24T11:29:57+03:30` |
@@ -29,4 +29,4 @@ These are fetched GitHub commit timestamps for the listed changes. The exact poi
 On restart, read CURRENT-040 → Point 0.0 → inherited architecture master v1.0.3 → IN-031/OUT-031 → EVT-0139 → NEXT-039 → this ledger. Match stable/production IDs and current statuses before continuing.
 
 ## Ledger self-timestamp
-- Pre-final ledger revision: `8620792c09775a52840ca4c68cc5b2a1f84b0d82` — UTC `2026-10-24T08:04:48Z`; Tehran `2026-10-24T11:34:48+03:30`. The latest revision's own commit timestamp is authoritative in GitHub commit metadata; embedding a self-referential timestamp would make the ledger stale with each update.
+- Pre-final ledger revision: `1be7b778b63097fade916d27e5ddd1d41afa835d` — UTC `2026-10-24T08:06:36Z`; Tehran `2026-10-24T11:36:36+03:30`. The latest revision's own commit timestamp is authoritative in GitHub commit metadata; embedding a self-referential timestamp would make the ledger stale with each update.
