@@ -3,6 +3,7 @@
 - Stable ID: `PALANG-OUT-COMPLETE-FOUNDATIONAL-PRINCIPLES-2026-10-24-035`
 - Production ID: `G6IP-OUT-035`
 - Interaction ID: `INT-20261024-035`
+- Status: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING.
 - Input: [IN-035](./PALANG-0.0-IN-20261024-035-COMPLETE-FOUNDATIONAL-PRINCIPLES.md)
 - New current checkpoint: [CURRENT-043](./PALANG-0.0-CURRENT-20261024-043-FOUNDATIONAL-PRINCIPLES-COMPLETENESS.md)
 - Behavior event: [EVT-0143](../../architecture/BEHAVIOR-TRACE/EVT-0143-FOUNDATIONAL-PRINCIPLES-COMPLETION-2026-10-24.md)
@@ -25,3 +26,7 @@ The exact OUT-035 path was fetched after write and matched its Stable ID, Produc
 - Foundational mother NPFAP v1.0.2 latest content commit at this reconciliation: `563e24b4776ce9dd4cb5fa67ef141c5b391a220d` — UTC `2026-10-24T10:25:30Z`; Tehran `2026-10-24T13:55:30+03:30`.
 - UIALAC v1.3.1 index reconciliation commit: `2804bf268d216207c0fd155d382ed71022ebe33a` — UTC `2026-10-24T10:26:22Z`; Tehran `2026-10-24T13:56:22+03:30`.
 - These are repository commit times, not user-message times. User-message timestamp remains UNKNOWN / UNVERIFIED.
+
+
+## Link-verification result
+All 19 unique internal Markdown targets linked directly by the foundational mother were fetched from the repository; 19/19 existed. This proves those direct targets exist, not that every transitive link in the entire project is resolved.
