@@ -72,3 +72,11 @@ Evidence at audit SHA `ffc4fb8136cdd4168910f8c0ba58d6619fddfa13`:
 - Machine-readable role ledger: 3 decisions loaded, all 3 accepted against source hashes: 1 Stable-ID group and 2 Production-ID groups role-adjudicated. Raw counts remain 60 Stable-ID, 71 Production-ID, 7 Reference-ID and 30 event-number collision groups; 11 exact duplicate groups; 13 ambiguous parents; 11 alias proposals. Review queue: 8 line-level occurrences adjudicated, 1,416 remain unreviewed.
 - Six semantic-role tests passed in this audit run. [Cross-Layer Integrity Gate run 40059155289](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40059155289) is triggered on the same SHA; its final result must be checked separately.
 - This proves role-decision ingestion and source-hash checks in the repository audit. It does not close the global semantic census, prove fresh-session recovery, or prove host-wide capture/external persistence.
+
+
+## Latest exact-head audit — run 40059261857
+- [Living Architecture Audit run 40059261857](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40059261857): SUCCESS on exact audited HEAD `d0bb633ade46b94bf20452c74efbc8137f4cbe99`; artifact `12546287920` inspected; ZIP SHA-256 `065e43b81123d6aeb4b70ddbed8506c2a326459ea147109da46e6c9e682b7f5f`.
+- Audit UTC `2026-10-24T03:40:37Z` / Tehran `2026-10-24T07:10:37+03:30`.
+- Snapshot: 2,730 total files including generated evidence, 866 source files, 3,719 local-link edges, zero missing links and zero decode errors.
+- Decision ledger: 3 loaded / 3 accepted by exact source SHA; 1 Stable-ID and 2 Production-ID groups role-adjudicated. Raw collisions remain 60 Stable-ID, 71 Production-ID, 7 Reference-ID, 30 event-number; 11 duplicate groups, 13 ambiguous parent edges, 11 proposed aliases. Review queue marks 8 occurrences reviewed and 1,416 unreviewed.
+- Six semantic-role unit tests passed. This is repository-level proof; fresh-session recovery remains NOT RUN and external persistence / host-wide capture remain NOT PROVEN.
