@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001`
 - Production ID / شناسهٔ تولید: `NPFAP-20261024-001`
-- Version / نسخه: 1.0.2
+- Version / نسخه: 1.0.3
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING / EVOLVABLE / EXTRACTABLE / RECOVERY-ORIENTED
 - Scope / دامنه: الگوی پایه برای هر پروژهٔ جدید در خانوادهٔ Future AI / Palang Footprint / HAIF و شاخه‌های محصول/میزبان آن؛ با سازگارسازی مستند برای پروژه‌های دیگر
 - Source anchor / منشأ: [G6IP-ARCH-ZERO-20261024-001](../../0.0/anchors/PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md)
@@ -170,7 +170,7 @@ The active recovery point is [CURRENT-043](../../0.0/anchors/PALANG-0.0-CURRENT-
 
 
 ## Contract alignment — UIALAC v1.3.1
-The governing universal contract is now [UIALAC-2026-10-20-001 v1.3.1](./UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001.md), which adopts this claim-level completeness and evidence-boundary rule. Repository read-back for that contract amendment remains to be recorded; it is not considered verified merely because the update call returned a commit.
+The governing universal contract is now [UIALAC-2026-10-20-001 v1.3.1](./UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001.md), which adopts this claim-level completeness and evidence-boundary rule. Historical note from the earlier amendment stage: contract read-back was then pending. The later receipt below records the completed exact-path read-back; this earlier state is retained as history.
 
 
 ## Contract alignment — UIALAC v1.3.1
@@ -179,3 +179,12 @@ The governing universal contract is [UIALAC-2026-10-20-001 v1.3.1](./UNIVERSAL-I
 
 ## UIALAC v1.3.1 read-back receipt
 The exact universal contract file was fetched after write. Its header states v1.3.1 and the claim-level completeness amendment is present. The Reference Index now lists UIALAC v1.3.1 as READ-BACK VERIFIED / IDENTIFIERS MATCHED. This is repository-content verification only.
+
+
+## Append-only evolution and current recovery checkpoint — v1.0.3
+
+The current recovery/evolvable baseline is [CURRENT-044](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-044-RECOVERY-EVOLVABLE-BASELINE.md), linked to [IN-036](../../0.0/anchors/PALANG-0.0-IN-20261024-036-RECOVERY-EVOLVABLE-BASELINE.md), [OUT-036](../../0.0/anchors/PALANG-0.0-OUT-20261024-036-RECOVERY-EVOLVABLE-BASELINE.md), [EVT-0144](../../architecture/BEHAVIOR-TRACE/EVT-0144-RECOVERY-EVOLVABLE-BASELINE-2026-10-24.md), and [NEXT-042](../../0.0/anchors/PALANG-0.0-NEXT-20261024-042-GAP-CLOSURE-AND-RECOVERY-VALIDATION.md). Prior points including CURRENT-043 / CURRENT-042 / CURRENT-041 remain preserved and linked; this successor does not overwrite them.
+
+**Mandatory version rule:** each material successor is additive, uniquely identified and connected to its predecessor. Preserve prior artifacts; record the change rationale, provenance, dependencies, acceptance criteria, evidence, observed results, remaining gaps and rollback/recovery route. Update a mutable current pointer only after exact-path read-back and required checks. “Living”, “registered” or “recoverable by design” does not prove automatic execution, successful cold-start restoration, adoption or external synchronization.
+
+**CURRENT-044 exit gate:** the 16-principle audit, full transitive link scan, fresh-project adoption, prototype build, cold-start recovery and external destinations remain separately tracked under NEXT-041 / NEXT-042 / NEXT-040 / NEXT-039. Do not mark those gates passed without observed evidence. This amendment strengthens the mother contract; it does not declare those implementation gates closed.
