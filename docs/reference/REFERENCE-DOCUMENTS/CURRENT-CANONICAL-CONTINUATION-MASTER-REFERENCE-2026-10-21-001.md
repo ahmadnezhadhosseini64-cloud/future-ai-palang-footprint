@@ -671,3 +671,11 @@ Current active gate remains [EVT-0122](../../architecture/BEHAVIOR-TRACE/EVT-012
 - Living Architecture Audit run 40060630376 succeeded on SHA `86412c2d3383da5665c871c1f4f1afbc349e6fe3`; artifact 12547536065 inspected, SHA-256 `d6ebe43e4908432f11fe0bb1b090b9e43b077ee8034610c63de1671c7ef32316`.
 - Snapshot: 875 source files / 2,765 total; 3,819 local-link edges; 6 missing-link candidates arising from literal test templates; 60 Stable-ID collision groups (59 unreviewed); 71 Production-ID, 7 Reference-ID, and 30 event-number collision groups; 11 duplicate groups; 13 ambiguous parent edges; 11 proposed aliases.
 - Timestamp audit: 2,620 files, 2,149 normalized UTC/Tehran pairs, 1 ambiguity, zero offset/value failures. Treat as a snapshot; adjudication remains open.
+
+
+## Living architecture status transparency — EVT-0131
+- Current request pair: [IN-033](../../0.0/anchors/PALANG-0.0-IN-20261024-033-LIVING-ARCHITECTURE-AND-STATUS-TRANSPARENCY.md) / [OUT-033](../../0.0/anchors/PALANG-0.0-OUT-20261024-033-LIVING-ARCHITECTURE-AND-STATUS-TRANSPARENCY.md).
+- Event: [EVT-0131](../../architecture/BEHAVIOR-TRACE/EVT-0131-LIVING-ARCHITECTURE-STATUS-TRANSPARENCY-AND-GROWTH-2026-10-24.md); next: [NEXT-033](../../0.0/anchors/PALANG-0.0-NEXT-20261024-033-LIVING-STATUS-AND-COLD-START.md).
+- New terminal status receipt generator: `scripts/behavior-hunter/emit_status_receipt.py`; tests: `tests/behavior-hunter/test_emit_status_receipt.py`. Workflow emits a receipt even when earlier steps fail and uploads it with the manifests.
+- This makes repository workflow terminal status durable; it cannot itself emit a live ChatGPT UI heartbeat. The assistant must provide a visible user-facing result when continuing work.
+- Prior architecture updates and ledger versions remain preserved. Current commit's CI/artifact proof is pending until run and manifests are inspected; fresh-session recovery remains NOT RUN; Issues #19/#20/#21 remain OPEN.
