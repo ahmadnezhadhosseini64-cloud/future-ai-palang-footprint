@@ -1,0 +1,24 @@
+{
+  "schema": "PALANG-STATUS-RECEIPT-1.0.0",
+  "event_id": "EVT-0131",
+  "interaction_pair_id": "INT-20261024-033",
+  "stage": "CI_TERMINAL",
+  "status": "SUCCESS",
+  "terminal": true,
+  "workflow_run_id": "40062120276",
+  "tested_commit_sha": "e82839c679b52fb646824235db59092fd129148e",
+  "timestamps": {
+    "utc": "2026-10-24T04:23:11.139462Z",
+    "tehran": "2026-10-24T07:53:11.139462+03:30",
+    "canonical": "UTC",
+    "tehran_derived_from_same_instant": true
+  },
+  "next_action": "Inspect all manifests; verify current-main versus tested SHA; keep fresh-session recovery separate.",
+  "scope": "repository_workflow_status_only",
+  "chat_ui_heartbeat_proven": false,
+  "host_wide_capture_proven": false,
+  "external_persistence_proven": false,
+  "artifact_id": 12546884666,
+  "artifact_zip_sha256": "e45208b1bd2b63fa4e30fedcf27b9701532b8c85feee298ae18cbd6105c0d332",
+  "preserved_from_artifact": true
+}
