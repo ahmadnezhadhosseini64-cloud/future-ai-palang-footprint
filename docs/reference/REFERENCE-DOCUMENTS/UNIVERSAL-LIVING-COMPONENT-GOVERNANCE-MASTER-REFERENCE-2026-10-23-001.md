@@ -2,7 +2,7 @@
 
 - Stable ID: PALANG-UNIVERSAL-LIVING-COMPONENT-GOVERNANCE-2026-10-23-001
 - Production ID: ULCG-HAIF-2026-10-23-001
-- Version: 1.2.3
+- Version: 1.2.4
 - Lifecycle: ACTIVE / LIVING / APPEND-ONLY / EVOLVABLE
 - Evidence state: REGISTERED / READ-BACK VERIFIED on main for v1.2.1; fresh full audit on the exact final main HEAD remains OPEN
 - Canonical clock: actual repository commit timestamp in UTC; Tehran equivalent is the same instant +03:30
@@ -317,3 +317,35 @@ Five more canonical sources have been fetched in full and provisionally mapped: 
 - Progress visibility is a governance requirement: expose bounded milestones, identify what was actually changed/read back/tested, distinguish in-progress from complete, and never imply unattended background work.
 - The prior execution queue remains active: finish clause-level source mapping and its CI checks, continue Issue #21 historical census, continue Issue #20 runtime/cold-start recovery, then seek a fresh full audit tied to the exact final-main SHA.
 - This addendum does not claim this branch has merged, that runtime capture is globally automatic, or that cold-start and external destinations have passed.
+
+
+---
+
+## Addendum v1.2.4 — CURRENT-036 / NEXT-036: explicit point 0 and resumable 0.0
+
+- Stable ID: PALANG-ULCG-ADDENDUM-CURRENT-POINT-ZERO-2026-10-24-036
+- Production ID: ULCG-ADDENDUM-036
+- Status: REGISTERED on candidate branch; read-back and CI audit required before merge.
+- Current point 0: [CURRENT-036](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-036-USER-REQUEST-AND-LIVING-REGISTRATION.md).
+- Input/output: [IN-026](../../0.0/anchors/PALANG-0.0-IN-20261024-026-REGISTER-CURRENT-POINT-0.md) / [OUT-026](../../0.0/anchors/PALANG-0.0-OUT-20261024-026-REGISTER-CURRENT-POINT-0.md).
+- Event / lesson: [EVT-0134](../../architecture/BEHAVIOR-TRACE/EVT-0134-CURRENT-POINT-ZERO-AND-LIVING-REGISTRATION-2026-10-24.md) / [LAL-20261024-013](../../architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261024-013-CURRENT-POINT-ZERO-AND-LIVING-REGISTRATION.md).
+- Time binding: [TIME-BINDING-INT-20261024-026](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261024-026.md).
+- Next 0.0: [NEXT-036](../../0.0/anchors/PALANG-0.0-NEXT-20261024-036-HISTORIC-SOURCE-CENSUS-AND-COLD-START.md).
+
+### Normative rule
+
+When the user explicitly designates a current point 0, register it as a distinct append-only graph node. Register the next concrete execution step as its own 0.0 checkpoint. The new node must connect to the master, paired IN/OUT anchors, event, lesson, time binding, registries, source-rule map, integration queue, and initial-model reference.
+
+### Continuity invariants
+
+1. Never replace previous 0.0 anchors or open work merely because a new input arrived.
+2. Carry forward historic source census (Issue #21), runtime/cold-start recovery (Issue #20), and live-mirror/BOART follow-up (NEXT-034/NEXT-035).
+3. Keep all destination statuses scoped to their actual evidence; a verified Library mirror does not verify Buffer, Persistent Memory, Dropbox, or external recovery.
+4. Make work visible in bounded milestones; silence is not proof of background execution.
+5. Every newly registered interaction must be independently read back, link-checked, and included in structural CI.
+6. The full audit must be tied to the exact final main SHA after merge; a passing candidate run does not satisfy that final-main gate.
+
+### Version history
+
+- v1.2.3: status visibility and resumable execution.
+- v1.2.4: explicit current point 0, successor 0.0, paired IN/OUT anchors, and preservation of all previously open tracks.
