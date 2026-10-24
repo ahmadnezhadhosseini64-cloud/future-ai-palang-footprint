@@ -1545,3 +1545,11 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - Durable [status receipt](../BEHAVIOR-TRACE/STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40061873837.json).
 - [Behavior Hunter run 40061873837](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40061873837) SUCCESS, 71 tests, tested SHA `edd82d08311c03f0506c651e5c33d128a0d70a35`, artifact ZIP SHA-256 `c44071afab49df4bfb33141f432db059e21455f3161801f4d711efd34d690f1f`.
 - Both pair-033 recovery directions RECOVERED; ledger PASS, 4 records, hash chain verified. Next remains uncoached fresh-session recovery, then historic semantic reconciliation.
+
+
+## LAUC 1.4.0 — living graph drift detection
+- Implementation: `scripts/behavior-hunter/check_living_graph_drift.py`; tests: `tests/behavior-hunter/test_check_living_graph_drift.py`; CI emits `living-graph-drift.json`.
+- Run 40062120276 passed 74 tests; drift manifest PASS with six graph nodes and zero failures; both recovery directions RECOVERED.
+- Evidence: artifact 12546884666, ZIP SHA-256 `e45208b1bd2b63fa4e30fedcf27b9701532b8c85feee298ae18cbd6105c0d332`.
+- Ledger 1.4.0 is appended after 1.3.0; next run must verify 5 records/hash chain. Do not mark current main tested until its run is inspected.
+- Next gate remains uncoached fresh-session recovery, then identity collision adjudication and timestamp ambiguity review.
