@@ -1060,3 +1060,13 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - CURRENT-045 canonical repository registration time (actual last-change commit): UTC `2026-10-24T11:53:56Z`; Tehran `2026-10-24T15:23:56+03:30`; commit `e240038a616dc706532c0de1e24d16fbf0396955`.
 - NPFAP v1.0.4 latest content commit: UTC `2026-10-24T11:52:09Z`; Tehran `2026-10-24T15:22:09+03:30`; commit `8ff088148c2598a58078ead2069b6a8aa23a74f6`.
 - Verification gates remain open unless separately supported by observed evidence.
+
+
+## FRESHNESS-DISCOVERY-ENGINE-2026-10-24-001 — موتور جست‌وجوی تازه‌ها
+- Architecture: [Adaptive Discovery / Cross-Playground v1.1.0](../architecture/ADAPTIVE-DISCOVERY-CROSS-PLAYGROUND.md).
+- Living mother: [NPFAP v1.0.5](reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md).
+- Interaction anchor: [IN-039](0.0/anchors/PALANG-0.0-IN-20261024-039-FRESHNESS-DISCOVERY-ENGINE.md).
+- Status: architecture and mother read-back verified; second-project repository integration pending; always-on runtime/search scheduling not verified.
+- Latest mother correction commit: `984c5daa8d51bec1252b4465a34cc1c2c4f0ba42` (UTC `2026-10-24T12:44:08Z`; Tehran `2026-10-24T16:14:08+03:30`).
+- IN-039 commit: `087594b1a51b4709eb53a4e931aeb0a911677b0d` (UTC `2026-10-24T12:44:45Z`; Tehran `2026-10-24T16:14:45+03:30`).
+- Open gates: identify second project repository/mother; add its local adapter; run and read back one end-to-end fresh-finding test in each destination; verify export/cold-start recovery.
