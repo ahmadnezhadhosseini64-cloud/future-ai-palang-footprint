@@ -1011,3 +1011,7 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Event / behavior trace: [EVT-0135](architecture/BEHAVIOR-TRACE/EVT-0135-GPT6-INTERACTIVE-PROJECT-START-2026-10-24.md).
 - Parent CURRENT-036 and prior NEXT-036 are preserved. This branch does not close historic census, runtime/cold-start, or other open tasks.
 - Repository-only status until independent evidence exists for other destinations. Dropbox remains OPEN / NOT VERIFIED; no claim of always-on global capture.
+## GPT-6 interactive project branch — CURRENT-037 / EVT-0135
+
+- Time binding: [TIME-BINDING-GPT6-INTERACTIVE-2026-10-24-001](architecture/BEHAVIOR-TRACE/TIME-BINDING-GPT6-INTERACTIVE-2026-10-24-001.md) — actual Git commit times in UTC and corresponding Tehran times; message timestamp remains UNKNOWN / UNVERIFIED.
+- Primary repository artifacts: READ-BACK VERIFIED / CONTENT PRESENT / IDENTIFIERS MATCHED. Buffer/Persistent Memory/Library unverified; Dropbox OPEN / NOT VERIFIED.
