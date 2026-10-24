@@ -20,3 +20,11 @@
 
 ## زمان
 زمان دقیق خود پیام کاربر در دادهٔ GitHub به‌صورت مستقل اثبات نشده است؛ زمان commit و read-back جداگانه ثبت می‌شوند. UTC مرجع اصلی است و زمان تهران از همان لحظه مشتق می‌شود.
+
+
+## ثبت نهایی بازخوانی / Read-back verification
+- Initial registration commit: `45fc48d566994befdc4f88c5a5b22045ca72ec9c`.
+- Status: READ-BACK VERIFIED / CONTENT PRESENT / IDENTIFIERS MATCHED.
+- Verification method: fetched this exact repository path again after registration; file content and expected interaction identifiers were present. Related CURRENT-037, IN-027, OUT-027, EVT-0135 and master-reference identifiers were independently checked across the new files and both indexes.
+- Remaining boundary: this proves repository content/read-back and linked references only; it does not prove Buffer, Persistent Memory, Library, Dropbox or global automatic capture.
+- Canonical repository time is the actual last-change commit timestamp in UTC; the linked time-binding record will provide the final UTC and Tehran equivalents.
