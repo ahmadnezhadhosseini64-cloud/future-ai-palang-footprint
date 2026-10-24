@@ -1,6 +1,8 @@
 # Integration Queue Addendum — CURRENT-054
 
 - Stable ID: `G6IP-QUEUE-054-20261024`
+- Version: 1.0.1
+- Status: OPEN / PARTIAL; canonical queue update read back, host and graph gates remain open.
 - Current: [CURRENT-054](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-054-FIRST-LIVING-MASTER.md)
 - First living master: [FIRST-LIVING-MASTER](../../portable/RAHM/FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md)
 - Mother addendum: [NPFAP Addendum](../../reference/REFERENCE-DOCUMENTS/NPFAP-ADDENDUM-CURRENT-054-2026-10-24.md)
