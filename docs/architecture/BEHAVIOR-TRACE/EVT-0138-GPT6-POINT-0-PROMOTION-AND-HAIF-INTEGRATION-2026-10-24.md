@@ -7,7 +7,7 @@
 - Point 0: [GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001](../../0.0/anchors/GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001.md)
 - Root: [CURRENT-039](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-039-GPT6-INITIAL-POINT-AND-ZERO-CHAIN.md)
 - Next: [NEXT-038](../../0.0/anchors/PALANG-0.0-NEXT-20261024-038-DEFINE-POINT-0-THEN-0.0.md)
-- Status: REGISTERED / ACTIVE / LIVING; read-back pending.
+- Status: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING.
 
 ## Observed intent
 کاربر خواست ریشهٔ مستقل CURRENT-039 به‌عنوان نقطهٔ ۰ اولیه تعیین شود و قواعد معماری Future AI / Palang Footprint و HAIF در معماری شاخهٔ GPT-6 ادغام مستندی شوند.
@@ -23,3 +23,7 @@
 
 ## Recovery chain
 CURRENT-039 → IN-030 ↔ OUT-030 → EVT-0138 → Point 0 → living master → NEXT-038 (Point 0.0).
+
+
+## Final read-back receipt
+This exact event path was fetched again; IN-030, OUT-030, point-0 record, CURRENT-039, NEXT-038 and living-master references were present. External destinations and execution tests remain outside this verification.
