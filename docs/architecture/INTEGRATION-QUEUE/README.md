@@ -1553,3 +1553,10 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - Evidence: artifact 12546884666, ZIP SHA-256 `e45208b1bd2b63fa4e30fedcf27b9701532b8c85feee298ae18cbd6105c0d332`.
 - Ledger 1.4.0 is appended after 1.3.0; next run must verify 5 records/hash chain. Do not mark current main tested until its run is inspected.
 - Next gate remains uncoached fresh-session recovery, then identity collision adjudication and timestamp ambiguity review.
+
+
+## Verified architecture growth gate — LAUC 1.4.0
+- Durable receipt: [STATUS-20261024-EVT-0131-RUN-40062202639.json](../BEHAVIOR-TRACE/STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40062202639.json).
+- Run 40062202639 passed 74 tests on tested SHA `e8cc599f00ee0ae5de437f13c26e15a8586d7fd5`; artifact ZIP SHA-256 `82cb1c535c70b9b4d97464d3307c4b5320021ed2efe9c0d61d0fdaf76b48f2db`.
+- Ledger 5 records/hash chain PASS; drift detector PASS (6 nodes, 0 failures); both IN/OUT recovery directions RECOVERED.
+- Next active gate: uncoached fresh-session recovery, then source-backed identity collision adjudication and timestamp ambiguity review. Keep Issues #19/#20/#21 open until individually accepted.
