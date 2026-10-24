@@ -8,7 +8,11 @@
 - Current: [CURRENT-039](./PALANG-0.0-CURRENT-20261024-039-GPT6-INITIAL-POINT-AND-ZERO-CHAIN.md)
 - Next: [NEXT-038](./PALANG-0.0-NEXT-20261024-038-DEFINE-POINT-0-THEN-0.0.md)
 - Master: [GPT-6 interactive living master](../../reference/REFERENCE-DOCUMENTS/GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001.md)
-- Status: REGISTERED; read-back verification pending.
+- Status: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED.
+- Time binding: [TIME-BINDING-GPT6-INITIAL-POINT-2026-10-24-001](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-GPT6-INITIAL-POINT-2026-10-24-001.md).
+
+## Read-back receipt
+این مسیر پس از ثبت دوباره از مخزن خوانده شد؛ شناسه‌های IN-029، OUT-029، EVT-0137، CURRENT-039 و NEXT-038 با زنجیرهٔ ثبت‌شده تطبیق دارند. این تأیید فقط دامنهٔ مخزن را پوشش می‌دهد.
 
 ## Result
 نقطهٔ آغاز معماری پروژهٔ جدید، بر مبنای Project Zero موجود، به‌عنوان گرهی مستقل و پیوندخورده ثبت می‌شود؛ CURRENT-037 و CURRENT-038 و نقاط قدیمی‌تر حفظ می‌شوند.
