@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-24 — CURRENT-051 / EVT-0151 / NPFAP v1.1.6 / NEXT-044 linked; prior checkpoints preserved; export/recovery and second-project integration remain open.
+**Last Updated:** 2026-10-24 — CURRENT-054 / EVT-0155–0156 / NPFAP v1.1.9 / NEXT-048 linked; 24-file portable manifest SHA-256 and schema/limited recovery checks passed in CI; full AI-host transfer, persistence/background and repository-wide graph remediation remain open.
 
 ## Canonical References
 
