@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001`
 - Production ID / شناسهٔ تولید: `NPFAP-20261024-001`
-- Version / نسخه: 1.0.3
+- Version / نسخه: 1.0.4
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING / EVOLVABLE / EXTRACTABLE / RECOVERY-ORIENTED
 - Scope / دامنه: الگوی پایه برای هر پروژهٔ جدید در خانوادهٔ Future AI / Palang Footprint / HAIF و شاخه‌های محصول/میزبان آن؛ با سازگارسازی مستند برای پروژه‌های دیگر
 - Source anchor / منشأ: [G6IP-ARCH-ZERO-20261024-001](../../0.0/anchors/PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md)
@@ -188,3 +188,12 @@ The current recovery/evolvable baseline is [CURRENT-044](../../0.0/anchors/PALAN
 **Mandatory version rule:** each material successor is additive, uniquely identified and connected to its predecessor. Preserve prior artifacts; record the change rationale, provenance, dependencies, acceptance criteria, evidence, observed results, remaining gaps and rollback/recovery route. Update a mutable current pointer only after exact-path read-back and required checks. “Living”, “registered” or “recoverable by design” does not prove automatic execution, successful cold-start restoration, adoption or external synchronization.
 
 **CURRENT-044 exit gate:** the 16-principle audit, full transitive link scan, fresh-project adoption, prototype build, cold-start recovery and external destinations remain separately tracked under NEXT-041 / NEXT-042 / NEXT-040 / NEXT-039. Do not mark those gates passed without observed evidence. This amendment strengthens the mother contract; it does not declare those implementation gates closed.
+
+
+## Living checkpoint succession — v1.0.4
+
+The latest user-requested 0.0 checkpoint is [CURRENT-045](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-045-LIVING-MOTHER-ANCHOR.md), with [IN-037](../../0.0/anchors/PALANG-0.0-IN-20261024-037-REGISTER-CURRENT-POINT.md), [OUT-037](../../0.0/anchors/PALANG-0.0-OUT-20261024-037-REGISTER-CURRENT-POINT.md), [EVT-0145](../../architecture/BEHAVIOR-TRACE/EVT-0145-REGISTER-CURRENT-POINT-2026-10-24.md), and [NEXT-043](../../0.0/anchors/PALANG-0.0-NEXT-20261024-043-VERIFY-AND-CLOSE-GAPS.md).
+
+CURRENT-045 is an additive successor to CURRENT-044. CURRENT-044 and every earlier checkpoint remain historical records and must not be silently replaced. The active pointer may advance again only through a new versioned checkpoint with explicit parent/child links and evidence.
+
+This mother is maintained as a versioned living reference, not a promise of unattended background execution. The following remain open until tested: 16-principle acceptance audit, full transitive link scan, fresh-project adoption, prototype build, cold-start recovery, and external-destination verification. The new checkpoint is not evidence that these gates passed.
