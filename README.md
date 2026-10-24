@@ -9,6 +9,7 @@ Future AI / Palang Footprint — official project repository
 The default command contract is governed by the master reference:
 - [Command binding entry point](docs/reference/REFERENCE-DOCUMENTS/REGISTER-COMMAND-GOVERNING-BINDING-2026-10-12-001.md)
 - [Master Reference Vault contract](docs/reference/REFERENCE-DOCUMENTS/MRV-ARCHITECTURE-AND-LIVING-REFERENCE-CONTRACT-2026-09-15-001.md)
+- [Foundational architecture principles for all new projects](docs/reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md) — Point 0, living master, Palang/AI behaviorology, evidence-gated growth, UTC-first anchors, extraction and recovery.
 
 When «ثبت کن» is issued, follow the complete governed lifecycle in the master reference; do not require the user to restate it. Report repository, buffer, and persistent-memory status separately and only from destination-specific evidence. A repository file alone does not prove the other destinations.
 
