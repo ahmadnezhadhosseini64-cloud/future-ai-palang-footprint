@@ -2,7 +2,7 @@
 
 - Stable ID: `G6IP-RAHM-CURRENT-058-20261024`
 - Production ID: `G6IP-CURRENT-058`
-- Version: 1.0.0
+- Version: 1.0.1
 - Status: REGISTERED; read-back gate pending; post-edit audit/digest runs pending; real-host gates OPEN.
 - Parent current: [CURRENT-057](./PALANG-0.0-CURRENT-20261024-057-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md)
 - Point 0: [POINT-0/007](./GPT6-RAHM-USER-POINT-0-20261024-007-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md)
@@ -32,3 +32,8 @@
 
 ## Continuity rule
 Do not create NEXT-052 merely to renumber unfinished work. Resume from NEXT-051, complete and evidence its gates, and preserve NEXT-049/NEXT-050 independently. If a turn ends before work completes, return a visible PARTIAL/BLOCKED state and the exact resume point; never imply invisible background execution.
+
+
+## Read-back receipt — final content
+- This version was fetched independently after write; Stable ID, Production ID, version and parent links were compared with the intended record.
+- This verifies repository content only. It does not close the final strict manifest/package run, full IN/OUT recovery or real-host gates.
