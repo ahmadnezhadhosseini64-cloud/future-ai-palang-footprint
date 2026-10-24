@@ -31,3 +31,11 @@ Every unverified, incomplete, conflicting or untested item stays OPEN and LIVING
 - Reconcile the next package manifest after adding this point-0 anchor.
 
 This point is an anchor for continuity, not a claim that every gate has passed.
+
+
+## Latest verified package receipt
+- Run [40117800859](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40117800859) completed SUCCESS.
+- Schema fixtures passed their expected behavior; exact-byte SHA-256 passed for 31 inventory files; limited IN/OUT link/checkpoint recovery passed.
+- Archive SHA-256: `a37f833391212907c183e82c600179c12d87d356bee559672250c017929ac1d2`.
+- [Package artifact](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40117800859/artifacts/12570447087).
+- The actual AI-host import and runtime tests remain OPEN.
