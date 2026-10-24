@@ -4,7 +4,7 @@
 - Stable ID: `PALANG-EVT-LIVING-ARCHITECTURE-SUMMARY-AND-RECOVERY-2026-10-24-0148`
 - Production ID: `G6IP-EVT-0148`
 - Version: `1.0.0`
-- Status: REGISTERED; read-back pending at creation.
+- Status: READ-BACK VERIFIED; exact repository path and content fetched after write.
 - Input: [IN-041](../../0.0/anchors/PALANG-0.0-IN-20261024-041-LIVING-ARCHITECTURE-SUMMARY-AND-RECOVERY.md)
 - Output: [OUT-040](../../0.0/anchors/PALANG-0.0-OUT-20261024-040-LIVING-ARCHITECTURE-SUMMARY-AND-RECOVERY.md)
 - Prior checkpoint: [CURRENT-047](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-047-FOUNDATIONAL-GOVERNANCE-AND-RECOVERY.md)
