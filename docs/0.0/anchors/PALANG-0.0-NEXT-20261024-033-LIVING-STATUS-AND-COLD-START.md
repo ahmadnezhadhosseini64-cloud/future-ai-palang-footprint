@@ -63,3 +63,10 @@ Fresh-session recovery NOT RUN; host-wide automatic capture and external persist
 - Graph drift PASS (6 nodes, zero failures); both recovery directions RECOVERED; ledger 5 hash-linked records PASS; durable terminal receipt preserved.
 - **Next gate:** perform the uncoached fresh-session recovery using [the handoff prompt](../../architecture/BEHAVIOR-TRACE/EVT-0124-FRESH-SESSION-RECOVERY-PROMPT-2026-10-23.md). Capture the first response before corrections. Do not mark this gate complete until that separate test is run and its evidence is registered.
 - After the cold-start test, continue source-backed identity collision adjudication, template-aware link-audit cleanup and resolution of the single timestamp ambiguity. Issues #19/#20/#21 remain open until their acceptance criteria pass.
+
+
+## Latest verified repository gate
+- Run 40062533959 passed 74 tests on tested SHA `d05103dd3593f090f10fafb5a469f6cac69063b1`; artifact 12548485418 inspected, ZIP SHA-256 `508dbfa863bf7b805415a95291f8d881c7be1b097f9d1d8f12f32ea32e225ce5`.
+- Durable receipt: [STATUS-20261024-EVT-0131-RUN-40062533959.json](../../architecture/BEHAVIOR-TRACE/STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40062533959.json).
+- Graph drift PASS, six nodes/zero failures; ledger 5 records/hash chain PASS; both recovery directions RECOVERED.
+- Next gate remains the uncoached fresh-session recovery using the linked handoff prompt. Do not mark it passed from this repository run.
