@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-24 — CURRENT-054 / EVT-0155–0156 / NPFAP v1.1.9 / NEXT-048 linked; 24-file portable manifest SHA-256 and schema/limited recovery checks passed in CI; full AI-host transfer, persistence/background and repository-wide graph remediation remain open.
+**Last Updated:** 2026-10-24 — CURRENT-056 / EVT-0158 / NPFAP v1.2.0 / NEXT-050 linked; 31-file digest/schema/limited recovery checks passed in the inspected CI run; real AI-host transfer, full recovery, persistence/background and repository-wide graph remediation remain open.
 
 ## Canonical References
 
@@ -1232,3 +1232,9 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Evidence: [run 40115178748](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40115178748) passed schema, 24-file digest, limited IN/OUT checkpoint-link and archive-build checks; real-host import and runtime persistence remain unverified.
 
 - User return anchor: [Point 0/004 — First Master Readiness](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-004-TEST-HARNESS-AND-FIRST-MASTER-READINESS.md).
+
+
+- User return anchor: [Point 0/005 — Output Continuity and Recovery](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-005-OUTPUT-CONTINUITY-AND-RECOVERY.md).
+- Current checkpoint: [CURRENT-056](0.0/anchors/PALANG-0.0-CURRENT-20261024-056-OUTPUT-CONTINUITY-AND-RECOVERY.md).
+- Input/output/event: [IN-049](0.0/anchors/PALANG-0.0-IN-20261024-049-OUTPUT-CONTINUITY-AND-RECOVERY.md) → [OUT-048](0.0/anchors/PALANG-0.0-OUT-20261024-048-OUTPUT-CONTINUITY-AND-RECOVERY.md) → [EVT-0158](architecture/BEHAVIOR-TRACE/EVT-0158-NO-SILENT-GAP-OUTPUT-CONTINUITY-2026-10-24.md).
+- Next: [NEXT-050](0.0/anchors/PALANG-0.0-NEXT-20261024-050-FULL-RECOVERY-AND-REAL-HOST-IMPORT.md), OPEN / LIVING; [NEXT-049](0.0/anchors/PALANG-0.0-NEXT-20261024-049-REAL-HOST-TRANSFER-AND-GRAPH-AUDIT.md) remains open.
