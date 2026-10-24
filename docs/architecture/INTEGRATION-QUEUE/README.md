@@ -1694,3 +1694,12 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 - Governing rule: evidence-matched status only; documented-only features are not active; unrun/failed tests stay OPEN with IDs, causes and recovery steps.
 - OPEN / NOT RUN: JSON Schema positive/negative fixtures, exact-byte SHA-256, full link and duplicate-ID audit, behavior regression, IN/OUT restart recovery, runtime persistence, idle background, clean-host and second-host tests.
 - Do not detour to Dropbox unless explicitly reopened; continue from NEXT-045.
+
+
+## CURRENT-048 — RAHM inherited architecture / portability
+- Current: [CURRENT-048](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-048-RAHM-INHERITED-ARCHITECTURE.md).
+- Chain: [CURRENT-047](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-047-BEHAVIOR-HUNTER-LIVING-ANCHOR.md) → [IN-040](../../0.0/anchors/PALANG-0.0-IN-20261024-040-RAHM-INHERITED-ARCHITECTURE.md) → [OUT-040](../../0.0/anchors/PALANG-0.0-OUT-20261024-040-RAHM-INHERITED-ARCHITECTURE.md) → [EVT-0148](../BEHAVIOR-TRACE/EVT-0148-RAHM-INHERITED-ARCHITECTURE-AND-EXPORTABLE-RECOVERY-2026-10-24.md) → CURRENT-048 → [NEXT-046](../../0.0/anchors/PALANG-0.0-NEXT-20261024-046-RAHM-PORTABILITY-VALIDATION.md).
+- RAHM boot/architecture: [RAHM_BOOT](../../portable/RAHM/RAHM_BOOT.md), [RAHM_ARCHITECTURE](../../portable/RAHM/RAHM_ARCHITECTURE.md).
+- Scope: preserve and export interaction observations, provenance, behavior hypotheses, test receipts, failures and recovery state so a target AI host can reconstruct and verify the project.
+- OPEN / NOT RUN: SHA-256, schema fixtures, IN/OUT recovery, full link/ID audit, clean-host/second-host import, persistence restart and idle background execution.
+- Continue from NEXT-046; do not call portability validated before an independent target-host test passes.
