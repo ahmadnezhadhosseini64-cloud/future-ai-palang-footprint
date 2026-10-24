@@ -627,3 +627,9 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - [Durable receipt](./STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40062120276.json).
 - Run 40062120276 passed 74 tests; `living-graph-drift.json` PASS, six nodes, zero failures; artifact ZIP SHA-256 `e45208b1bd2b63fa4e30fedcf27b9701532b8c85feee298ae18cbd6105c0d332`.
 - The run predates ledger 1.4.0; validation of the appended five-record chain is a separate gate.
+
+
+## Verified drift and ledger chain — run 40062202639
+- [Durable receipt](./STATUS-RECEIPTS/STATUS-20261024-EVT-0131-RUN-40062202639.json).
+- Run 40062202639 passed 74 tests on tested SHA `e8cc599f00ee0ae5de437f13c26e15a8586d7fd5`; artifact SHA-256 `82cb1c535c70b9b4d97464d3307c4b5320021ed2efe9c0d61d0fdaf76b48f2db`.
+- Ledger 5 records PASS; drift manifest PASS; both IN/OUT directions RECOVERED. Fresh-session recovery remains NOT RUN.
