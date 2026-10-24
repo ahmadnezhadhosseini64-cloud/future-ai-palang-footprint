@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-24 — CURRENT-043 / EVT-0143 and NPFAP v1.0.2 linked; historical verification dates remain historical.
+**Last Updated:** 2026-10-24 — CURRENT-044 / EVT-0144 / NEXT-042 linked; prior checkpoints preserved; unresolved verification gates remain explicit.
 
 ## Canonical References
 
