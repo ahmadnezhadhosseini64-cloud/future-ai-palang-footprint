@@ -526,3 +526,10 @@ The next active operation is to execute NEXT-044: generate a verifiable export a
 - Next: [NEXT-050](../../0.0/anchors/PALANG-0.0-NEXT-20261024-050-FULL-RECOVERY-AND-REAL-HOST-IMPORT.md), while [NEXT-049](../../0.0/anchors/PALANG-0.0-NEXT-20261024-049-REAL-HOST-TRANSFER-AND-GRAPH-AUDIT.md) remains OPEN.
 
 New mandatory principle: never let an open action vanish between input and output. Every response must communicate a durable status and deterministic next action; new input becomes a linked child of the active work, not an implicit reset. This governs visible response/recovery behavior only and does not assert background execution or automatic capture.
+
+
+## Living amendment — no-silent-gap continuity / CURRENT-057
+
+The architecture must preserve work across gaps between user inputs and assistant outputs. Every material IN attaches to the latest verified CURRENT and active OPEN NEXT. A new IN creates a child branch; it does not cancel previous open work. At each durable milestone, provide a visible state/result; if the work cannot be completed, state PARTIAL or BLOCKED and name the next anchor. Never imply hidden background execution or persistent capture without an actual host/runtime receipt.
+
+Evidence branch: [CURRENT-057](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-057-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md), [EVT-0159](../../architecture/BEHAVIOR-TRACE/EVT-0159-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY-2026-10-24.md), [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). The latest graph audit remains REVIEW_REQUIRED: 11 missing links, 60 unreviewed stable-ID collision groups, 88 production-ID collision groups, 7 reference-ID collision groups, 36 event-number collision groups and 13 ambiguous parent edges. All unresolved gates remain OPEN/LIVING.
