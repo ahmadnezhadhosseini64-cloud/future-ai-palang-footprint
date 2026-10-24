@@ -39,3 +39,11 @@ UTC مرجع اصلی است؛ زمان تهران از همان لحظه با U
 
 ## قاعدهٔ تکامل
 هر ایده ابتدا در سطح فرضیه/Child ثبت می‌شود؛ با آزمون و داوری Rahm اعتبارسنجی می‌شود؛ فقط شواهد قابل‌بازخوانی و تصمیم روشن اجازهٔ ارتقا به Master را می‌دهند. نسخه‌های قبلی و نقاط ۰.۰ حذف یا ادغام نمی‌شوند.
+
+
+## ثبت نهایی بازخوانی / Read-back verification
+- Initial registration commit: `0a53920b9462736bda23141fe5a1af51a1e7fd53`.
+- Status: READ-BACK VERIFIED / CONTENT PRESENT / IDENTIFIERS MATCHED.
+- Verification method: fetched this exact repository path again after registration; file content and expected interaction identifiers were present. Related CURRENT-037, IN-027, OUT-027, EVT-0135 and master-reference identifiers were independently checked across the new files and both indexes.
+- Remaining boundary: this proves repository content/read-back and linked references only; it does not prove Buffer, Persistent Memory, Library, Dropbox or global automatic capture.
+- Canonical repository time is the actual last-change commit timestamp in UTC; the linked time-binding record will provide the final UTC and Tehran equivalents.
