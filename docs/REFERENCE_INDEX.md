@@ -1461,3 +1461,5 @@ Current continuation chain: POINT-0/013 → IN-057 → OUT-056 → EVT-0166 → 
 - Master: [HAIF Initial Model Master Reference](architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md); detailed plan: [model next steps](architecture/مدل%20اولیه%20AI/صف%20گام‌های%20بعدی%20و%20موارد%20باز.md).
 - Executable increment: `scripts/behavior-hunter/discover_current_0_0_pointer.py`; fixture tests: `scripts/behavior-hunter/tests/test_discover_current_0_0_pointer.py`; CI integration: `.github/workflows/living-architecture-audit.yml`.
 - Status: source and test wiring registered; exact-main workflow result pending inspection. CURRENT-065/CURRENT-066 stays OPEN; NEXT-051 and Issues #20/#21 plus BOART-FOLLOWUP-01 remain active/open.
+
+- Time binding: [TIME-BINDING-EVT-0181](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0181-POINT-0-019-2026-10-25.md) — actual POINT-0/019 and EVT-0181 commit UTC times with derived Tehran equivalents; not a runtime proof.
