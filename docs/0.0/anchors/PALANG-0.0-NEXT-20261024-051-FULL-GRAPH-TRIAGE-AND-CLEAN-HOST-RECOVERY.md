@@ -166,5 +166,6 @@ NEXT-051 remains OPEN/LIVING until all remaining acceptance gates are satisfied;
 - Current continuation: [CURRENT-062](./PALANG-0.0-CURRENT-20261025-062-OPEN-GAPS-AND-CONTINUITY.md).
 - New Point 0/011: [POINT-0/011](./GPT6-RAHM-USER-POINT-0-20261025-011-OPEN-GAPS-AND-CONTINUITY.md) → [IN-055](./PALANG-0.0-IN-20261025-055-OPEN-GAPS-AND-CONTINUITY.md) → [OUT-054](./PALANG-0.0-OUT-20261025-054-OPEN-GAPS-AND-CONTINUITY.md) → [EVT-0164](../../architecture/BEHAVIOR-TRACE/EVT-0164-OPEN-GAPS-AND-CONTINUITY-2026-10-25.md).
 - Mother/index/queue and graph adjudication register now link the new checkpoint; each destination still requires independent read-back.
+- Portable continuity inventory: [CURRENT-062 overlay manifest](../../portable/RAHM/CURRENT-062-OVERLAY-MANIFEST.json); exact-byte hashes and archive status must come from the fresh strict workflow, not this pointer.
 - Next executable work remains in this queue: create a current commit-scoped occurrence inventory and adjudicate identifiers/parent edges/timestamps/duplicates individually; run fresh strict package/digest; then real browser and clean-host tests.
 - Status: CURRENT-062 registered; no graph-wide findings are closed merely by this update. NEXT-039 and NEXT-040 remain open subtasks; do not create NEXT-052.
