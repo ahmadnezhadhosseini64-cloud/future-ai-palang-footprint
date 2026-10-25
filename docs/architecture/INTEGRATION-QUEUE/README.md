@@ -1906,7 +1906,7 @@ The source blob remained unchanged and Library version 7 was independently read 
 
 
 ## POINT-0/018 — living registration and 0.0 continuation
-- Root: [POINT-0/018](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-018-LIVING-REGISTRATION-AND-NEXT-STEPS.md); event: [EVT-0180](../BEHAVIOR-TRACE/EVT-0180-USER-POINT-0-018-LIVING-REGISTRATION-AND-NEXT-STEPS-2026-10-25.md); time evidence: [TIME-BINDING-EVT-0180](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0180-POINT-0-018-2026-10-25.md).
+- Root: [POINT-0/018](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-018-LIVING-REGISTRATION-AND-NEXT-STEPS.md); event: [EVT-0180](../BEHAVIOR-TRACE/EVT-0180-USER-POINT-0-018-LIVING-REGISTRATION-AND-NEXT-STEPS-2026-10-25.md). POINT-0/018 commit [9b459710](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/9b459710a1a757b8f9ccacc6bfdc9c6618e80f90): UTC `2026-10-25T07:37:13Z` → Tehran `2026-10-25T11:07:13+03:30`; EVT-0180 commit [a2dc3dcf](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/a2dc3dcfa3d68f75579efec66c29c1942e447f99): UTC `2026-10-25T07:37:15Z` → Tehran `2026-10-25T11:07:15+03:30`.
 - Current user-turn root and execution checkpoint are separate concepts. Do not use POINT-0/018 to guess whether CURRENT-065 or CURRENT-066 is the single execution pointer.
 - Continue existing NEXT-051 and Issues #20/#21 plus BOART-FOLLOWUP-01. Reconcile verifier/manifest lineage, identity collisions, references, tests and exact-final-main receipts.
 - Status: OPEN / LIVING. Code repair, full graph adjudication, fresh exact-HEAD audit, clean-host import and external-runtime evidence are not yet claimed complete.
