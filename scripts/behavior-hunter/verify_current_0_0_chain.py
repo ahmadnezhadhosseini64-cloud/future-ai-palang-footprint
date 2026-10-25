@@ -37,7 +37,7 @@ EXPECTED = {
     "next": "G6IP-RAHM-NEXT-051-20261024",
 }
 GATE_MARKERS = {
-    "full_state_recovery": ("canonical-state reconstruction", "FULL IN/OUT canonical-state reconstruction"),
+    "full_state_recovery": ("full independent external-host reconstruction", "full independent external-host reconstruction"),
     "clean_host_import": ("clean independent AI-host import", "clean/second AI-host import"),
     "second_host_import": ("second host", "clean/second AI-host import"),
     "persistence_restart": ("persistence restart", "persistence restart"),
