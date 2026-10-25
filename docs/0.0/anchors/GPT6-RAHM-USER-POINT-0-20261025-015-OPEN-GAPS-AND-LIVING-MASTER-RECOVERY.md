@@ -41,3 +41,6 @@ Treat this interaction as a new Point 0; connect it to the prior checkpoint and 
 Do not close any gate because a document exists. Close only when the required evidence is attached, independently read back, and reconciled against the exact revision. If blocked, record blocker, owner/action, evidence needed and next check in CURRENT-066/NEXT-051.
 
 This record is a repository artifact; its final canonical registration timestamp is the actual last-change Git commit timestamp, in UTC with the Tehran equivalent derived from that instant.
+
+
+- Verifier failure and correction lineage: [EVT-0175](../../architecture/BEHAVIOR-TRACE/EVT-0175-CURRENT-066-RECOVERY-VERIFIER-STALE-CHECKPOINT-2026-10-25.md); audit rerun remains required.
