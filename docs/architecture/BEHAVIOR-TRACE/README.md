@@ -672,3 +672,10 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - [Time binding](./TIME-BINDING-EVT-0167-LIVE-MIRROR-SYNC-2026-10-25.md) records the actual event commit UTC and derived Tehran equivalent, separately from source-commit and Library metadata times.
 - Result: source blob unchanged; 10,479 vs 10,480 characters; one trailing newline; Stable ID/Test ID/Version/next-action/destination statuses match; no redundant write.
 - Current repository continuation observed in main: CURRENT-064 / NEXT-051. Earlier CURRENT-036 / NEXT-036 and mirror NEXT-035 remain preserved.
+
+
+## EVT-0168 — audit failure and root cause
+- [EVT-0168](./EVT-0168-LIVING-ARCHITECTURE-AUDIT-FAILURE-AND-ROOT-CAUSE-2026-10-25.md) preserves Living Architecture Audit run 40167940024, tested SHA `5aed9604046d0802764531ff2e359827fb34edd1`, and job 121092733301.
+- [Time binding](./TIME-BINDING-EVT-0168-AUDIT-FAILURE-2026-10-25.md) records the actual event commit UTC and derived Tehran time.
+- Failure cause: three wrong runtime links in the integration queue plus a stale IN/OUT verifier bound to CURRENT-059 and an incompatible manifest expectation. Both IN and OUT routes were BLOCKED; equivalent blocked state is FAIL, not PASS.
+- Correction is in progress; the failed run and artifact remain preserved. Independent host, restart persistence, and full historical census remain OPEN.
