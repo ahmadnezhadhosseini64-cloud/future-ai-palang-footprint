@@ -8,7 +8,7 @@
 - Previous checkpoint: [CURRENT-063](./PALANG-0.0-CURRENT-20261025-063-EXECUTABLE-ARCHITECTURE.md).
 - Living mother: [HAIF Initial Model Master Reference](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md).
 - Existing active graph audit: [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
-- Runtime: [source](../../scripts/haif-runtime/haif_runtime.py); [tests](../../scripts/haif-runtime/tests/test_runtime.py); [runbook](../../scripts/haif-runtime/README.md).
+- Runtime: [source](../../../scripts/haif-runtime/haif_runtime.py); [tests](../../../scripts/haif-runtime/tests/test_runtime.py); [runbook](../../../scripts/haif-runtime/README.md).
 - Status: POINT REGISTERED; verification of changed surfaces pending; execution gates remain OPEN until actual evidence.
 
 ## Current baseline
