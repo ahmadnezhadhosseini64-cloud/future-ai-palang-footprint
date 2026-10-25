@@ -46,3 +46,15 @@ Starter ZIP SHA-256: 7372007564d94f02807c41291ea6e0976e8899c2d1c37306c5978b30fe1
 Workflow artifact: 12600674334; digest sha256:aabb3b5bada3386804710a6566f5137fb8f435c1716bff854f6aff268ce611ef
 
 The exact user-message timestamp remains UNKNOWN / UNVERIFIED.
+
+
+## Digest-reconciliation and living-reference update times
+
+| Item | Commit SHA | Repository time UTC | Asia/Tehran (+03:30) |
+|---|---|---|---|
+| Export manifest digest reconciliation | 99479872acaede69679b13273e37b9ca51f35ea5 | 2026-10-25T13:41:12Z | 2026-10-25T17:11:12+03:30 |
+| CURRENT-069 integrity resolution | 1cbe5dfc2208229b8a8762ac93a87cde6fd844f8 | 2026-10-25T13:42:23Z | 2026-10-25T17:12:23+03:30 |
+| EVT-0185 integrity resolution | 1580b5f03baaff06e7c7e865b87c3eadb9a83a67 | 2026-10-25T13:42:36Z | 2026-10-25T17:12:36+03:30 |
+| Living master update | dc7689c454684759740a6ea4fa0d53a5c763a3c5 | 2026-10-25T13:42:50Z | 2026-10-25T17:12:50+03:30 |
+
+The earlier CURRENT-069 evidence update commit 4a6500bff8c89beb339c88322fff93672a6e9ff1 occurred at 2026-10-25T13:38:50Z (2026-10-25T17:08:50+03:30). The user-message timestamp remains UNKNOWN / UNVERIFIED.
