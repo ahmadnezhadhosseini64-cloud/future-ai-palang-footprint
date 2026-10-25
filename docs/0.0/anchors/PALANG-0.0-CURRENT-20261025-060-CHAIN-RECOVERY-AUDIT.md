@@ -2,7 +2,7 @@
 
 - Stable ID: G6IP-CURRENT-060-20261025
 - Production ID: G6IP-CURRENT-060
-- Version: 1.0.0
+- Version: 1.0.1
 - Parent: [CURRENT-059](./PALANG-0.0-CURRENT-20261025-059-DEEP-AUDIT-AND-CORRECTED-CONFORMANCE.md)
 - User Point: [POINT-0/009](./GPT6-RAHM-USER-POINT-0-20261025-009-CHAIN-RECOVERY-AUDIT.md)
 - Interaction chain: [IN-053](./PALANG-0.0-IN-20261025-053-CHAIN-RECOVERY-AUDIT.md) → [OUT-052](./PALANG-0.0-OUT-20261025-052-CHAIN-RECOVERY-AUDIT.md) → [EVT-0162](../../architecture/BEHAVIOR-TRACE/EVT-0162-CHAIN-RECOVERY-AUDIT-AND-SCOPE-ERROR-LEARNING-2026-10-25.md) → CURRENT-060.
@@ -19,5 +19,13 @@
 5. Existing initial-model and living-master documents are not sufficient proof of full architecture implementation. The next execution must trace each promised component to its source, implementation, test and destination read-back.
 6. Scope-selection lesson: do not divert to Dropbox when the active request concerns model architecture and 0/0.0 continuity.
 
-## Status
-Repository checkpoint record created; repository write/read-back, current commit timestamp and global integration remain to be verified independently. NEXT-051 remains OPEN / LIVING. No new NEXT replaces it.
+## Verification receipt — repository scope only
+- [x] User Point 0/009, IN-053, OUT-052, EVT-0162 and CURRENT-060 were fetched after write; expected identifiers and chain pointers were inspected.
+- [x] Canonical reference index and integration queue were updated, then fetched again; their new entries and blob SHAs were confirmed.
+- [x] Focused relative-link reconciliation across the five new chain records: 18 Markdown link occurrences, 9 unique local targets, 0 missing targets.
+- [x] CURRENT-059 and NEXT-051 were fetched as historical/active baselines. The active NEXT was preserved; no successor was minted.
+- [ ] Current-commit strict package/digest workflow after these edits: NOT RUN / NOT VERIFIED.
+- [ ] Repository-wide semantic collision/parent/time triage: OPEN / REVIEW_REQUIRED.
+- [ ] Clean independent AI-host import, second-host import, persistent-memory restart, automatic capture and idle/background execution: OPEN / NOT VERIFIED.
+
+Status: CURRENT-060 repository write/read-back VERIFIED for the focused scope. This does not mean the overall architecture is complete. NEXT-051 remains OPEN / LIVING; no new NEXT replaces it.
