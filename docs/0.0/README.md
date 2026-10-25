@@ -1564,3 +1564,14 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 
 - رسید اجرایی: [EVT-0187](../architecture/BEHAVIOR-TRACE/EVT-0187-CLEAN-DISTRIBUTION-RUNTIME-SMOKE-2026-10-25.md).
 - چرخهٔ واقعی init/record/audit/export/import/audit در محیط Python فعلی PASS شد؛ میزبان GPT-6 مستقل هنوز NOT PROVEN.
+
+
+## POINT-0/024 (0+) — production marker and 0.0 continuation
+
+- Root: [POINT-0/024](./anchors/GPT6-RAHM-USER-POINT-0-20261025-024-0PLUS-PRODUCTION-MARKER.md)
+- IN/OUT: [IN-054](./anchors/PALANG-0.0-IN-20261025-054-0PLUS-PRODUCTION-MARKER.md) / [OUT-054](./anchors/PALANG-0.0-OUT-20261025-054-0PLUS-PRODUCTION-MARKER.md)
+- Event/time: [EVT-0188](../architecture/BEHAVIOR-TRACE/EVT-0188-POINT-0PLUS-IDENTITY-AND-0-0-LINEAGE-2026-10-25.md) / [time binding](../architecture/BEHAVIOR-TRACE/TIME-BINDING-POINT-0-024-EVT-0188-2026-10-25.md)
+- Current execution checkpoint: [CURRENT-071](./anchors/PALANG-0.0-CURRENT-20261025-071-0PLUS-ENGINE-AND-HARD-AUDIT.md)
+- Semantics: 0 and 0+ share one canonical point identity; 0+ marks a significant production; 0.0 is a separate child continuation.
+- The engine implements the rule. A hard audit exposed and fixed an event argument collision, then added state/event reconciliation and parent-order checks. Latest CI status must be read from the exact-head run [40213463189](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40213463189).
+- NEXT-051 remains active; NEXT-052 was not created.
