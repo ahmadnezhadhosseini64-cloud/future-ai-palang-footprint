@@ -5,8 +5,10 @@ on:
     branches: [main]
     paths:
       - 'docs/portable/RAHM/**'
-      - 'docs/0.0/anchors/PALANG-0.0-IN-20261024-047-FIRST-LIVING-MASTER.md'
-      - 'docs/0.0/anchors/PALANG-0.0-OUT-20261024-046-FIRST-LIVING-MASTER.md'
+      - 'docs/0.0/anchors/PALANG-0.0-IN-20261024-051-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md'
+      - 'docs/0.0/anchors/PALANG-0.0-OUT-20261024-050-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md'
+      - 'scripts/behavior-hunter/verify_current_0_0_chain.py'
+      - '.github/workflows/living-architecture-audit.yml'
       - '.github/workflows/rahm-portable-conformance.yml'
   workflow_dispatch:
 
@@ -50,12 +52,12 @@ jobs:
           from pathlib import Path
           root = Path(".")
           sources = {
-              "IN": root / "docs/0.0/anchors/PALANG-0.0-IN-20261024-047-FIRST-LIVING-MASTER.md",
-              "OUT": root / "docs/0.0/anchors/PALANG-0.0-OUT-20261024-046-FIRST-LIVING-MASTER.md",
+              "IN": root / "docs/0.0/anchors/PALANG-0.0-IN-20261024-051-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md",
+              "OUT": root / "docs/0.0/anchors/PALANG-0.0-OUT-20261024-050-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md",
           }
           expected = {
-              "current": "PALANG-0.0-CURRENT-20261024-054-FIRST-LIVING-MASTER.md",
-              "next": "PALANG-0.0-NEXT-20261024-048-FIRST-MASTER-CONFORMANCE.md",
+              "current": "PALANG-0.0-CURRENT-20261024-058-DEEP-EXCAVATION-EXECUTION-RECEIPTS.md",
+              "next": "PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md",
               "master": "FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md",
           }
           recovered = {}
@@ -70,7 +72,7 @@ jobs:
               assert "OPEN" in content or "open gates" in content.lower(), f"{side} recovery did not preserve open gates"
               recovered[side] = state
           assert recovered["IN"] == recovered["OUT"], f"IN/OUT recovery mismatch: {recovered}"
-          evidence = {"test_id":"RAHM-IN-OUT-RECOVERY-054", "result":"PASS", "recovered_from":"IN-047 and OUT-046 independently", "canonical_state":recovered["IN"], "open_gates_preserved":True, "scope":"Artifact-link and checkpoint recovery equivalence; not a full hidden-memory or independent-host test."}
+          evidence = {"test_id":"RAHM-IN-OUT-RECOVERY-058", "result":"PASS", "recovered_from":"IN-051 and OUT-050 independently", "canonical_state":recovered["IN"], "open_gates_preserved":True, "scope":"Artifact-link and checkpoint recovery equivalence; not a full hidden-memory or independent-host test."}
           Path("rahm-recovery-equivalence.json").write_text(json.dumps(evidence, indent=2)+"\n", encoding="utf-8")
           print(json.dumps(evidence, indent=2))
           print("IN_OUT_RECOVERY_EQUIVALENCE=PASS")
