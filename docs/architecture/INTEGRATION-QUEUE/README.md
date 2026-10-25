@@ -1822,3 +1822,16 @@ The current repository-chain IN/OUT equivalence subgate is PASS. NEXT-051 remain
 
 | G6IP-CURRENT-061-20261025 | ساخت نمونهٔ تعاملی واقعی، آماده‌سازی آزمون پروژهٔ تازه و حاکمیت داوری موردبه‌مورد گراف | PARTIAL — نمونهٔ HTML و fixture ایجاد و بازخوانی شد؛ ۳۲ رخداد پیوند در ۱۵ مقصد محلی بدون مقصد گمشده؛ آزمون مرورگر/میزبان مستقل، SHA-256 بستهٔ جاری و داوری معنایی سراسری هنوز باز است | [CURRENT-061](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-061-PROTOTYPE-AND-GRAPH-TRIAGE.md); [NEXT-039](../../0.0/anchors/PALANG-0.0-NEXT-20261024-039-BUILD-INTERACTIVE-PROTOTYPE.md); [NEXT-040](../../0.0/anchors/PALANG-0.0-NEXT-20261024-040-FRESH-PROJECT-ADOPTION-TEST.md); [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md) | OPEN / LIVING |
 | G6IP-CURRENT-062-20261025 | ثبت نقطهٔ ۰ جدید و تبدیل شکاف‌ها به برنامهٔ اجرایی ۰.۰؛ اتصال سند مادر و حفظ NEXT-051 | PARTIAL / OPEN — زنجیره و مقاصد اصلی به‌روزرسانی شده‌اند؛ بازخوانی تازه و آزمون ساختاری در حال انجام؛ ممیزی سراسری، بستهٔ جدید، مرورگر و میزبان مستقل بازند | سند مادر مدل اولیه، REFERENCE_INDEX، دفتر رفتار، بستهٔ RAHM، NEXT-051 و آزمون‌های بازیابی | [CURRENT-062](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-062-OPEN-GAPS-AND-CONTINUITY.md); [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md) | OPEN / LIVING | [Overlay](../../portable/RAHM/CURRENT-062-OVERLAY-MANIFEST.json) |
+
+
+## Current interaction chain — CURRENT-064
+
+| Stable ID | موضوع | وضعیت | مقصد / شاهد |
+|---|---|---|---|
+| HAIF-POINT-0-013 | ثبت این تعامل به‌عنوان نقطهٔ ۰ جدید و اتصال به زنجیرهٔ قبلی | REGISTERED; cross-surface read-back pending | [POINT-0/013](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-013-CURRENT-INTERACTION-AND-LIVING-CONTINUITY.md) |
+| HAIF-IN-057 | نگهداری ورودی کاربر و نیازمندی‌های نرمال‌شده | REGISTERED | [IN-057](../../0.0/anchors/PALANG-0.0-IN-20261025-057-CURRENT-INTERACTION-AND-LIVING-CONTINUITY.md) |
+| HAIF-OUT-056 | ترتیب اجرای بعدی و شکاف‌های باز | REGISTERED; no execution claims | [OUT-056](../../0.0/anchors/PALANG-0.0-OUT-20261025-056-NEXT-EXECUTION-AND-GAPS.md) |
+| HAIF-EVT-0166 | رویداد رفتارشناسی/تصمیم معماری | REGISTERED | [EVT-0166](../BEHAVIOR-TRACE/EVT-0166-CURRENT-INTERACTION-AND-NEXT-EXECUTION-2026-10-25.md) |
+| HAIF-CURRENT-064 | نقطهٔ جاری و صف اجرای مبتنی بر شاهد | REGISTERED; runtime and external gates OPEN | [CURRENT-064](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-064-NEXT-EXECUTION-AND-GAPS.md) |
+
+Next execution remains attached to existing [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). Priority: run exact-revision runtime tests with receipts; perform clean export/import recovery; continue occurrence-level graph adjudication; reconcile manifests and read back all changed surfaces. Independent host, restart persistence, second host and automatic/background capture remain OPEN / NOT VERIFIED. No successor NEXT was created.
