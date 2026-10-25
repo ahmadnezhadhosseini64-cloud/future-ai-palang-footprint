@@ -721,3 +721,13 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Open gates: pointer conflict, NEXT-051, Issue #20, Issue #21, BOART-FOLLOWUP-01, exact-SHA tests, external host import and persistence.
 
 - [TIME-BINDING-EVT-0181](./TIME-BINDING-EVT-0181-POINT-0-019-2026-10-25.md) records actual repository commit UTC and derived Tehran times; it does not certify runtime execution.
+
+
+## EVT-0184 — initial model completion gate and continuity handoff
+
+- Event: [EVT-0184](./EVT-0184-INITIAL-MODEL-COMPLETION-GATE-2026-10-25.md).
+- User root: [POINT-0/021](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-021-INITIAL-MODEL-COMPLETION-GATE.md).
+- Next checkpoint: [CURRENT-068](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-068-INITIAL-MODEL-COMPLETION-GATE.md).
+- The event records the request to make this interaction the new Point 0, move all open work to the next 0.0, and bring the initial model to an evidenced local acceptance baseline.
+- Root-cause lessons: incorrect branch selection toward Dropbox; parser tests did not represent date-bearing CURRENT filenames.
+- EVT-0183 receipts remain bounded to tested commits. CURRENT-065/CURRENT-066 and full graph review remain OPEN; NEXT-051 remains active.
