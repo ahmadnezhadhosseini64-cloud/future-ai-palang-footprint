@@ -16,11 +16,11 @@ OUT.mkdir(exist_ok=True)
 
 FILES = {
     "point0": "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-014-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md",
-    "in": "docs/0.0/anchors/PALANG-0.0-IN-20261025-058-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md",
-    "out": "docs/0.0/anchors/PALANG-0.0-OUT-20261025-057-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md",
-    "event": "docs/architecture/BEHAVIOR-TRACE/EVT-0167-AUTONOMOUS-CONTINUITY-AND-RECOVERY-2026-10-25.md",
-    "current": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-065-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md",
-    "prior_current": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-064-NEXT-EXECUTION-AND-GAPS.md",
+    "in": "docs/0.0/anchors/PALANG-0.0-IN-20261025-059-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md",
+    "out": "docs/0.0/anchors/PALANG-0.0-OUT-20261025-058-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md",
+    "event": "docs/architecture/BEHAVIOR-TRACE/EVT-0174-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY-2026-10-25.md",
+    "current": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-066-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md",
+    "prior_current": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-065-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md",
     "next": "docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md",
     "master": "docs/portable/RAHM/FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md",
     "manifest": "docs/portable/RAHM/CURRENT-065-OVERLAY-MANIFEST.json",
@@ -29,12 +29,12 @@ FILES = {
     "queue": "docs/architecture/INTEGRATION-QUEUE/README.md",
 }
 EXPECTED = {
-    "point0": "G6IP-POINT-0-014-20261025",
-    "in": "G6IP-IN-058-20261025",
-    "out": "G6IP-OUT-057-20261025",
-    "event": "HAIF-EVT-0167-AUTONOMOUS-CONTINUITY-AND-RECOVERY-2026-10-25",
-    "current": "G6IP-CURRENT-065-20261025",
-    "prior_current": "G6IP-CURRENT-064-20261025",
+    "point0": "G6IP-POINT-0-015-20261025",
+    "in": "G6IP-IN-059-20261025",
+    "out": "G6IP-OUT-058-20261025",
+    "event": "HAIF-EVT-0174-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY-2026-10-25",
+    "current": "G6IP-CURRENT-066-20261025",
+    "prior_current": "G6IP-CURRENT-065-20261025",
     "next": "G6IP-RAHM-NEXT-051-20261024",
 }
 GATE_MARKERS = {
@@ -140,15 +140,15 @@ def reconstruct(start):
         ("point0", point0, "PALANG-0.0-OUT-20261025-057"),
         ("point0", point0, "EVT-0167-AUTONOMOUS"),
         ("point0", point0, "PALANG-0.0-CURRENT-20261025-065"),
-        ("point0", point0, "EVT-0171-CURRENT-065"),
-        ("in", in_text, "PALANG-0.0-CURRENT-20261025-064"),
+        ("point0", point0, "EVT-0175-CURRENT-066"),
+        ("in", in_text, "PALANG-0.0-CURRENT-20261025-065"),
         ("out", out_text, "EVT-0167-AUTONOMOUS"),
         ("out", out_text, "PALANG-0.0-CURRENT-20261025-065"),
         ("event", event, "PALANG-0.0-CURRENT-20261025-065"),
         ("current", current, "PALANG-0.0-NEXT-20261024-051"),
         ("current", current, "CURRENT-065-OVERLAY-MANIFEST"),
         ("current", current, "EVT-0170-LIVE-MIRROR"),
-        ("current", current, "EVT-0171-CURRENT-065"),
+        ("current", current, "EVT-0175-CURRENT-066"),
         ("current", current, "سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی"),
         ("current", current, "REFERENCE_INDEX"),
         ("current", current, "INTEGRATION-QUEUE"),
@@ -170,7 +170,7 @@ def reconstruct(start):
         failures.append({"check":"failure_correction_lineage"})
     if "NEXT-051" not in master or "CURRENT-059" not in master:
         failures.append({"check":"portable_master_not_current"})
-    if manifest.get("current_checkpoint") != "docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-065-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md":
+    if manifest.get("current_checkpoint") != "docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-066-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md":
         failures.append({"check":"manifest_checkpoint_mismatch","actual":manifest.get("current_checkpoint")})
     if not require_link("current", current, "PALANG-0.0-NEXT-20261024-051"):
         failures.append({"check":"manifest_next_mismatch","actual":"CURRENT-064-to-NEXT-051 canonical link missing"})
@@ -194,7 +194,7 @@ def main():
     state_keys = ("canonical_current", "active_next", "lineage_ids", "versions", "manifest_version", "manifest_file_count", "open_gates")
     equivalent = all(from_in[k] == from_out[k] for k in state_keys)
     report = {
-        "test_id": "RAHM-CURRENT-065-IN-OUT-STATE-RECOVERY-2026-10-25-001",
+        "test_id": "RAHM-CURRENT-066-IN-OUT-STATE-RECOVERY-2026-10-25-001",
         "scope": "Repository current-chain reconstruction from independent IN and OUT starting anchors; not a real external-host import.",
         "from_IN": from_in,
         "from_OUT": from_out,
