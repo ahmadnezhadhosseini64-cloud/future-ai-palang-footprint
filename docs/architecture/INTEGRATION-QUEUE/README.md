@@ -24,7 +24,7 @@ PENDING ≠ LOST (در انتظار ≠ گم‌شده). ثبت در این صف 
 
 
 
-| HAIF-RUNTIME-0.1 | ساخت هستهٔ اجرایی محلی: ثبت IN/OUT با زنجیرهٔ هش، نقطهٔ ادامه، اعتبارسنجی و انتقال JSON | IMPLEMENTED IN REPOSITORY / CI RESULT PENDING — کد و آزمون‌ها ثبت شده‌اند؛ اجرای گردش‌کار و آزمون محیط پاک هنوز باید از شاهد واقعی تأیید شود | سند مادر، CURRENT-062، گردش‌کار Portable RAHM | [کد اجرایی](../../scripts/haif-runtime/haif_runtime.py) · [آزمون‌ها](../../scripts/haif-runtime/tests/test_runtime.py) · [راهنما](../../scripts/haif-runtime/README.md) |
+| HAIF-RUNTIME-0.1 | ساخت هستهٔ اجرایی محلی: ثبت IN/OUT با زنجیرهٔ هش، نقطهٔ ادامه، اعتبارسنجی و انتقال JSON | IMPLEMENTED IN REPOSITORY / CI RESULT PENDING — کد و آزمون‌ها ثبت شده‌اند؛ اجرای گردش‌کار و آزمون محیط پاک هنوز باید از شاهد واقعی تأیید شود | سند مادر، CURRENT-062، گردش‌کار Portable RAHM | [کد اجرایی](../../../scripts/haif-runtime/haif_runtime.py) · [آزمون‌ها](../../../scripts/haif-runtime/tests/test_runtime.py) · [راهنما](../../../scripts/haif-runtime/README.md) |
 
 
 | Stable ID | موضوع | وضعیت | مقصد موردنظر | پرونده |
