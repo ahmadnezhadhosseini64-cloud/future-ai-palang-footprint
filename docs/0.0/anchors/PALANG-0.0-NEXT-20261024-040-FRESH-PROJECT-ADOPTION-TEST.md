@@ -2,7 +2,7 @@
 
 - Stable ID: `PALANG-NEXT-FRESH-PROJECT-ADOPTION-TEST-2026-10-24-040`
 - Production ID: `G6IP-NEXT-040`
-- Version: 1.0.2
+- Version: 1.0.3
 - Status: OPEN / ACTIVE / LIVING / FIXTURE CREATED; STRUCTURAL CHECKS PASS; CLEAN-HOST TEST NOT RUN
 - Parent checkpoint: [CURRENT-042](./PALANG-0.0-CURRENT-20261024-042-NEW-PROJECT-ARCHITECTURE-HARD-AUDIT.md)
 - Audit mother: [HA-001](../../reference/REFERENCE-DOCUMENTS/NEW-PROJECT-ARCHITECTURE-HARD-AUDIT-2026-10-24-001.md)
@@ -34,7 +34,7 @@ Run a fresh-project adoption test to determine whether the new branch actually i
 
 ## Result
 
-PARTIAL PASS — fixture JSON parsed successfully; 31 local Markdown link occurrences across the focused CURRENT-061 chain/prototype/mother/queue set resolved to 14 unique local targets with zero missing destinations. Prototype HTML static contract markers were present. These are repository-structure checks only. Browser execution and actual fresh independent-host adoption remain NOT RUN / NOT VERIFIED.
+PARTIAL PASS — fixture JSON parsed successfully; 32 local Markdown link occurrences across the focused CURRENT-061 chain/prototype/mother/queue set resolved to 15 unique local targets with zero missing destinations. Prototype HTML static contract markers were present. These are repository-structure checks only. Browser execution and actual fresh independent-host adoption remain NOT RUN / NOT VERIFIED.
 
 
 ## CURRENT-061 execution receipt — fixture created
