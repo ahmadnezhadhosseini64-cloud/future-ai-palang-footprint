@@ -42,7 +42,8 @@ Continue NEXT-051. Do not create NEXT-052 while NEXT-051 acceptance remains open
 
 ## Canonical open-gate register (must remain open until independently evidenced)
 
-- FULL IN/OUT canonical repository-state reconstruction: PASS in run [40150679142](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150679142); independent external-host reconstruction remains OPEN / NOT RUN.
+- FULL IN/OUT canonical-state reconstruction (repository scope): PASS in run [40150679142](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150679142).
+- Full independent external-host reconstruction: OPEN / NOT RUN; a repository CI recovery test is not an external AI-host import.
 - clean/second AI-host import: OPEN / NOT VERIFIED.
 - second host: OPEN / NOT VERIFIED.
 - persistence restart: OPEN / NOT VERIFIED.
