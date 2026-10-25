@@ -19,3 +19,9 @@ A new continuity point is defined, linked to CURRENT-065 and the existing active
 
 ## Limitation
 This output records the plan and its repository chain. It does not itself execute the runtime tests or prove independent-host persistence.
+
+
+## Explicit recovery edges
+- Prior checkpoint preserved: [CURRENT-065](./PALANG-0.0-CURRENT-20261025-065-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md).
+- Event receipt: [EVT-0174](../../architecture/BEHAVIOR-TRACE/EVT-0174-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY-2026-10-25.md).
+- Current checkpoint: [CURRENT-066](./PALANG-0.0-CURRENT-20261025-066-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md).
