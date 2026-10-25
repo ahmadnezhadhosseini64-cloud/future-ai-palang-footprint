@@ -3,7 +3,7 @@
 - Stable ID: `G6IP-RAHM-CURRENT-059-20261025`
 - Production ID: `G6IP-CURRENT-059`
 - Version: 1.0.2
-- Status: REGISTERED / READ-BACK VERIFIED / STRICT CONFORMANCE PASS / CURRENT IN-OUT RECOVERY PASS; global identity graph REVIEW_REQUIRED; real-host/runtime gates OPEN.
+- Status: REGISTERED / READ-BACK VERIFIED / CURRENT IN-OUT RECOVERY PASS; previous strict conformance PASS is evidenced for commit 5047ee2; this checkpoint was updated afterward so final digest/package rerun is OPEN; global identity graph REVIEW_REQUIRED; real-host/runtime gates OPEN.
 - Parent: [CURRENT-058](./PALANG-0.0-CURRENT-20261024-058-DEEP-EXCAVATION-EXECUTION-RECEIPTS.md)
 - User Point 0: [POINT-0/008](./GPT6-RAHM-USER-POINT-0-20261025-008-DEEP-AUDIT-AND-NO-SILENT-GAP.md)
 - Input: [IN-052](./PALANG-0.0-IN-20261025-052-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md)
@@ -32,7 +32,7 @@
 - Portable mother write: done; version 1.1.3 now points to POINT-0/008 and CURRENT-059.
 - Fresh corrected conformance run: OPEN / PENDING; workflow now targets the latest IN-052 / OUT-051 / CURRENT-059 chain.
 - Exact-byte manifest reconciliation after current edits: OPEN / PENDING; manifest must include this point's IN/OUT/event/Point-0/current artifacts and the test harness itself.
-- Global missing-link and identity/parent/time triage: OPEN / REVIEW_REQUIRED; last audit found 10 missing links and unresolved ID/parent findings.
+- Global missing-link and identity/parent/time triage: OPEN / REVIEW_REQUIRED; the corrected historical graph parser now reports zero missing links, while ID/parent/time findings remain unresolved.
 - Clean independent AI-host import, second-host import, persistence restart, automatic interaction capture, and idle/background execution: OPEN / NOT VERIFIED.
 
 ## Resume rule
@@ -42,12 +42,12 @@ Continue NEXT-051. Do not create NEXT-052 while NEXT-051 acceptance remains open
 
 ## Canonical open-gate register (must remain open until independently evidenced)
 
-- FULL IN/OUT canonical-state reconstruction: pending fresh CURRENT-059 recovery verifier receipt.
+- FULL IN/OUT canonical repository-state reconstruction: PASS in run [40150679142](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150679142); independent external-host reconstruction remains OPEN / NOT RUN.
 - clean/second AI-host import: OPEN / NOT VERIFIED.
 - second host: OPEN / NOT VERIFIED.
 - persistence restart: OPEN / NOT VERIFIED.
 - idle/background execution: OPEN / NOT VERIFIED.
-- identifier collisions, ambiguous parent edges, missing links and timestamp provenance: OPEN / REVIEW_REQUIRED.
+- identifier collisions, ambiguous parent edges and timestamp provenance: OPEN / REVIEW_REQUIRED; latest parser-based missing-link count is zero.
 
 
 ## CURRENT-059 execution receipts — observed 2026-10-25
