@@ -753,3 +753,11 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - [Time binding](./TIME-BINDING-EVT-0186-POINT-0-023-2026-10-25.md)
 - Exact-head Living Architecture Audit [40206260132](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40206260132): SUCCESS; 8/8 starter tests passed.
 - Clean distribution ZIP: `d68e03b42e26b88385d1155c02d09b213a53366e27e99518c7c049f6ec6563be`; extracted into a fresh directory and tested 8/8.
+
+
+## EVT-0187 — اجرای واقعی بستهٔ تمیز
+
+- [EVT-0187](./EVT-0187-CLEAN-DISTRIBUTION-RUNTIME-SMOKE-2026-10-25.md)
+- [CURRENT-070](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-070-HARD-AUDIT-AND-HOST-EXECUTION.md)
+- توالی CLI واقعی در محیط Python: init → record → audit → export → import به فایل دوم → audit؛ همه PASS.
+- بستهٔ تمیز SHA-256: `d68e03b42e26b88385d1155c02d09b213a53366e27e99518c7c049f6ec6563be`; آزمون میزبان مستقل همچنان باز است.
