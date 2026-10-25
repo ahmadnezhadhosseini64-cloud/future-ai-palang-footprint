@@ -1456,3 +1456,9 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - Living mother: [NPFAP-20261024-001 v1.0.4](../reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md).
 - Next: [NEXT-043](./anchors/PALANG-0.0-NEXT-20261024-043-VERIFY-AND-CLOSE-GAPS.md).
 - Status: IN-037 / OUT-037 / CURRENT-045 / EVT-0145 / NEXT-043 / mother / index / registry fetched after write; primary IDs and parent/next links matched. CURRENT-045 canonical commit timestamp reconciled in Reference Index. Principle audit, full transitive link scan, adoption, prototype, cold-start recovery and external destinations remain OPEN / NOT RUN / NOT BUILT / NOT VERIFIED as applicable.
+
+
+## Mirror synchronization receipt — EVT-0167
+- [EVT-0167](../architecture/BEHAVIOR-TRACE/EVT-0167-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md) records the live Library mirror recheck; [time binding](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0167-LIVE-MIRROR-SYNC-2026-10-25.md) records the event commit's canonical UTC and derived Tehran time.
+- No new 0.0 checkpoint was created for this auxiliary check. Current main continuity remains [CURRENT-064](./anchors/PALANG-0.0-CURRENT-20261025-064-NEXT-EXECUTION-AND-GAPS.md) → [NEXT-051](./anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- CURRENT-036 / NEXT-036 and NEXT-035 remain preserved historical anchors; they are not overwritten.
