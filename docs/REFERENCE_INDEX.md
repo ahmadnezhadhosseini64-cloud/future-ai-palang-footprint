@@ -1399,3 +1399,12 @@ Current continuation chain: POINT-0/013 → IN-057 → OUT-056 → EVT-0166 → 
 - Time binding: `docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0173-EXACT-MAIN-AUDIT-2026-10-25.md`.
 - Failed audit run 40169128251 on SHA `19044f6a238e3d00805813695f328f0540af5e8d`; explicit graph links added to POINT-0/014; fresh exact-main audit pending.
 - Current continuation: CURRENT-065 / NEXT-051. Preserve earlier CURRENT-036 / NEXT-036 and NEXT-035.
+
+
+## POINT-0/015 and CURRENT-066 — open gaps and living-master recovery
+- User root: `docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-015-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md`
+- Input: `docs/0.0/anchors/PALANG-0.0-IN-20261025-059-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md`
+- Output: `docs/0.0/anchors/PALANG-0.0-OUT-20261025-058-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md`
+- Event: `docs/architecture/BEHAVIOR-TRACE/EVT-0174-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY-2026-10-25.md`
+- Current checkpoint: `docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-066-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md`
+- Status: chain written; independent read-back and full validation are pending. All unproven runtime, recovery, external-host and graph-triage gates remain OPEN. NEXT-051 remains active.
