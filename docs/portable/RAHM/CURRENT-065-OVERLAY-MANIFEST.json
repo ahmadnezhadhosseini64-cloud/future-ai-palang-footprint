@@ -1,7 +1,7 @@
 {
   "package_id": "HAIF-CURRENT-066-OVERLAY-20261025",
-  "version": "1.2.0",
-  "status": "POINT-0/020 and CURRENT-067 interaction checkpoint registered; execution pointer CURRENT-065/CURRENT-066 remains ambiguous; parser correction and exact-head CI pending",
+  "version": "1.2.1",
+  "status": "POINT-0/020 and CURRENT-067 registered; EVT-0183 records passing tested-commit receipts; live pointer remains ambiguous and graph review required",
   "current_checkpoint": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-066-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md",
   "files": [
     "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-014-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md",
@@ -37,7 +37,8 @@
     "docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-067-LIVE-POINTER-FAILURE-AND-RECOVERY.md",
     "docs/0.0/README.md",
     "scripts/behavior-hunter/discover_current_0_0_pointer.py",
-    "scripts/behavior-hunter/tests/test_discover_current_0_0_pointer.py"
+    "scripts/behavior-hunter/tests/test_discover_current_0_0_pointer.py",
+    "docs/architecture/BEHAVIOR-TRACE/EVT-0183-POINTER-PARSER-FIX-AND-PORTABLE-CONFORMANCE-RECEIPTS-2026-10-25.md"
   ],
   "sha256": null
 }
