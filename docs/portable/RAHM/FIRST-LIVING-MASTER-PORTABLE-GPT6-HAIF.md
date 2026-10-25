@@ -2,7 +2,7 @@
 
 - Stable ID / شناسه پایدار: `G6IP-FIRST-LIVING-MASTER-PORTABLE-RAHM-20261024-001`
 - Production ID / شناسه تولید: `G6IP-FLM-RAHM-001`
-- Version / نسخه: 1.1.4
+- Version / نسخه: 1.1.5
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED; latest strict digest/package result is tracked in workflow history; real-host gates OPEN; global graph REVIEW_REQUIRED.
 - Authority / مرجع حاکم: اصول بنیادی پروژه + سند مادر معماری موروثی + بسته قابل‌حمل RAHM.
 - User Point 0: [G6IP-RAHM-USER-POINT-0-20261025-008](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-008-DEEP-AUDIT-AND-NO-SILENT-GAP.md)
@@ -318,3 +318,17 @@ A new input must not make prior open work disappear. Keep the active NEXT, link 
 - Portable conformance run [40150549906](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150549906): PASS on commit `9d434cba8b44eb11e891f21e2ba7cc046395334b`; 62/62 manifest-listed files matched exact-byte SHA-256; valid fixture 0 errors; invalid fixture rejected with 4 errors; independent IN/OUT current-chain reconstruction PASS; portable archive built with 63 packaged entries, 286,591 bytes, SHA-256 `d5edd12abe4e87b3a72e2bec795c9d9a6760ba60cef2b2a3abe488e36ccc8d56`. Artifact: [portable package](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150549906/artifacts/12581383546).
 - Living Architecture Audit run [40150549910](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150549910): workflow SUCCESS; repository-state recovery from IN-052 and OUT-051 equivalent with zero verifier failures and all six open-gate categories preserved. Structural link check reported zero missing local links, while historical graph audit still reports 10 missing-link findings, 62 Stable-ID collision groups (61 unreviewed), 88 Production-ID groups, 7 Reference-ID groups, 37 event-number groups, 13 ambiguous parent edges and one ambiguous timestamp; content remains REVIEW_REQUIRED.
 - Scope: these receipts are for commit `9d434cba8b44eb11e891f21e2ba7cc046395334b`. Any subsequent manifest-listed edit requires a new strict conformance run. External AI-host import, second-host import, durable persistence, automatic live capture and idle/background execution remain OPEN / NOT VERIFIED.
+
+
+## CURRENT-059 final conformance receipt — run 40150704716
+
+- Workflow: [Portable RAHM Conformance and Digest Evidence](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150704716) — SUCCESS on commit `5047ee23407fd7fa47210ee68894587bc35e9988`.
+- Exact-byte SHA-256: PASS for all 62 manifest entries.
+- JSON Schema: valid fixture 0 errors; invalid fixture 4 errors and correctly rejected.
+- IN/OUT pointer recovery: PASS for IN-052 / OUT-051 → CURRENT-059 / NEXT-051 with open gates preserved.
+- Extractable archive: 63 entries, 289,293 bytes; SHA-256 `b98b34876de35d2d4c3cc89ed95b637a36d32adfe251c62db7a79a2bb86606a3`.
+- Package artifact: [haif-rahm-portable-package](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150704716/artifacts/12582014811).
+- Evidence artifact: [rahm-portable-conformance-evidence](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150704716/artifacts/12582334413).
+- Latest repository audit: [run 40150679142](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150679142) — zero missing local Markdown links and zero missing local links in the corrected historical graph parser; content remains REVIEW_REQUIRED due to 62 Stable-ID collision groups (61 unreviewed), 88 Production-ID groups, 7 Reference-ID groups, 37 event-number groups and 13 ambiguous parent edges.
+- This receipt is valid for the commit above. Any subsequent edit to a manifest-listed file requires digest reconciliation and a fresh conformance run.
+- Still OPEN / NOT VERIFIED: independent clean AI-host import, second-host import, persistent memory after restart, automatic capture of every interaction, idle/background execution, and individual adjudication of all remaining identity/parent/time findings.
