@@ -30,3 +30,19 @@ Tehran equivalents below are derived from the exact UTC commit instant, not from
 
 - Starter test workflow run: [40198249728](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40198249728), tested content commit 4dce5e5a919499a9d016b4949c3968e339e8fd7c.
 - User-message timestamp: UNKNOWN / UNVERIFIED.
+
+
+## Starter test revision and verified CI receipt
+
+| Item | Commit / run | Repository time UTC | Asia/Tehran (+03:30) | Result |
+|---|---|---|---|---|
+| CLI clean-process test added | e13b351f069daf7f7da6f857af06fea51f1a2c5c | 2026-10-25T13:37:15Z | 2026-10-25T17:07:15+03:30 | registered |
+| Event transitions added to hash chain | f482083cc2aeab82964c271c5d97ba4bb8657ce1 | 2026-10-25T13:37:31Z | 2026-10-25T17:07:31+03:30 | tested revision |
+| Living Architecture Audit | run 40198462347 | 2026-10-25T13:37:33Z (run creation) | 2026-10-25T17:07:33+03:30 | SUCCESS; 7 tests pass |
+| Current gate evidence update | 4a6500bff8c89beb339c88322fff93672a6e9ff1 | read commit metadata before treating as canonical | derived from same UTC instant | registered |
+
+Run URL: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40198462347
+Starter ZIP SHA-256: 7372007564d94f02807c41291ea6e0976e8899c2d1c37306c5978b30fe1399df
+Workflow artifact: 12600674334; digest sha256:aabb3b5bada3386804710a6566f5137fb8f435c1716bff854f6aff268ce611ef
+
+The exact user-message timestamp remains UNKNOWN / UNVERIFIED.
