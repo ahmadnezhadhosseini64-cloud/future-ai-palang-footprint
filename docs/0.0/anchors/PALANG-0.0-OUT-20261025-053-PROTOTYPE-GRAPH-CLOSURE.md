@@ -22,3 +22,10 @@
 - The prototype does not pretend to supply cloud sync, authentication, encryption, automatic host integration or autonomous background behavior.
 
 Status: IMPLEMENTATION PARTIAL; focused repository verification pending; external runtime gates remain OPEN.
+
+
+## Post-integration structural receipt
+- The CURRENT-061 overlay inventory is linked from the current checkpoint and index.
+- Final focused scan after overlay integration: 32 Markdown link occurrences across 15 unique local targets; all targets fetched successfully.
+- Adoption fixture JSON parsed successfully; prototype static contract markers were present.
+- This remains a repository structural PASS only; browser execution, fresh independent-host adoption, current strict SHA-256 package build and global semantic graph closure remain OPEN.
