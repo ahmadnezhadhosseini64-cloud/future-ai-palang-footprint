@@ -107,3 +107,14 @@ The user-message timestamp remains UNKNOWN / UNVERIFIED.
 Clean ZIP SHA-256: d8fb3ba5be22bc1064063fed67c4c705531179f221596b56f812c07a89bd028a.
 Clean ZIP was extracted to a fresh temporary directory and all seven tests passed.
 Exact user-message time remains UNKNOWN / UNVERIFIED.
+
+
+## Final evidence-index update times
+
+| Item | Commit SHA | Repository time UTC | Asia/Tehran (+03:30) |
+|---|---|---|---|
+| CURRENT-069 latest audit receipt | e328ebeae6031839d7c5d2c6992317e36f927d10 | 2026-10-25T13:51:25Z | 2026-10-25T17:21:25+03:30 |
+| EVT-0185 latest audit receipt | 2e828a26b7f96f59041adb2e106017e9bce7c33f | 2026-10-25T13:51:31Z | 2026-10-25T17:21:31+03:30 |
+| Living master latest audit receipt | 04875fc808e384f3356533ddbd8e9de36a0a247d | 2026-10-25T13:51:38Z | 2026-10-25T17:21:38+03:30 |
+
+Latest audit run 40199460301 was created at 2026-10-25T13:50:31Z (Asia/Tehran 2026-10-25T17:20:31+03:30) and completed SUCCESS. Exact user-message time remains UNKNOWN / UNVERIFIED.
