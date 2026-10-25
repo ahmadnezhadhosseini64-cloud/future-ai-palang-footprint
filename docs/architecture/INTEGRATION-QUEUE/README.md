@@ -3,7 +3,7 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.9.0
+- Version: 1.9.1
 - Date: 2026-10-20
 - Exact Time: 11:25 local project time, minute precision; exact seconds not captured.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
@@ -1910,3 +1910,10 @@ The source blob remained unchanged and Library version 7 was independently read 
 - Current user-turn root and execution checkpoint are separate concepts. Do not use POINT-0/018 to guess whether CURRENT-065 or CURRENT-066 is the single execution pointer.
 - Continue existing NEXT-051 and Issues #20/#21 plus BOART-FOLLOWUP-01. Reconcile verifier/manifest lineage, identity collisions, references, tests and exact-final-main receipts.
 - Status: OPEN / LIVING. Code repair, full graph adjudication, fresh exact-HEAD audit, clean-host import and external-runtime evidence are not yet claimed complete.
+
+
+## POINT-0/019 — capability implementation and pointer discovery
+- Root: [POINT-0/019](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-019-MODEL-CAPABILITY-BUILD.md); event: [EVT-0181](../BEHAVIOR-TRACE/EVT-0181-POINT-0-019-MODEL-CAPABILITY-BUILD-2026-10-25.md); master: [HAIF Initial Model Master Reference](../مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md).
+- Source addition: `scripts/behavior-hunter/discover_current_0_0_pointer.py` and fixture tests `scripts/behavior-hunter/tests/test_discover_current_0_0_pointer.py`; the Living Architecture Audit workflow invokes both. This is IMPLEMENTED IN REPOSITORY; runtime test result is pending exact-head evidence.
+- Expected gate: CURRENT-065/CURRENT-066 declarations remain AMBIGUOUS until provenance adjudication. The checker must not choose a winner.
+- Continue NEXT-051, Issue #20, Issue #21 and BOART-FOLLOWUP-01. No NEXT-052 placeholder. Independent host import, persistence, automatic capture and background execution remain OPEN / NOT PROVEN.
