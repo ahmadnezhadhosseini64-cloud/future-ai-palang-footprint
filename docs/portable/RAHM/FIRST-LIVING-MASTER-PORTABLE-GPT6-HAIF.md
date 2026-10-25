@@ -2,15 +2,16 @@
 
 - Stable ID / شناسه پایدار: `G6IP-FIRST-LIVING-MASTER-PORTABLE-RAHM-20261024-001`
 - Production ID / شناسه تولید: `G6IP-FLM-RAHM-001`
-- Version / نسخه: 1.1.1
+- Version / نسخه: 1.1.2
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED; latest strict digest/package result is tracked in workflow history; real-host gates OPEN; global graph REVIEW_REQUIRED.
 - Authority / مرجع حاکم: اصول بنیادی پروژه + سند مادر معماری موروثی + بسته قابل‌حمل RAHM.
-- User Point 0: [G6IP-RAHM-USER-POINT-0-20261024-005](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-005-OUTPUT-CONTINUITY-AND-RECOVERY.md)
-- Current 0.0: [CURRENT-056](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-056-OUTPUT-CONTINUITY-AND-RECOVERY.md)
-- Next 0.0: [NEXT-050](../../0.0/anchors/PALANG-0.0-NEXT-20261024-050-FULL-RECOVERY-AND-REAL-HOST-IMPORT.md)
-- User input: [IN-049](../../0.0/anchors/PALANG-0.0-IN-20261024-049-OUTPUT-CONTINUITY-AND-RECOVERY.md)
-- Assistant output: [OUT-048](../../0.0/anchors/PALANG-0.0-OUT-20261024-048-OUTPUT-CONTINUITY-AND-RECOVERY.md)
-- Event: [EVT-0158](../../architecture/BEHAVIOR-TRACE/EVT-0158-NO-SILENT-GAP-OUTPUT-CONTINUITY-2026-10-24.md)
+- User Point 0: [G6IP-RAHM-USER-POINT-0-20261024-007](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-007-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md)
+- Current 0.0: [CURRENT-058](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-058-DEEP-EXCAVATION-EXECUTION-RECEIPTS.md)
+- Next 0.0: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
+- User input: [IN-051](../../0.0/anchors/PALANG-0.0-IN-20261024-051-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md)
+- Assistant output: [OUT-050](../../0.0/anchors/PALANG-0.0-OUT-20261024-050-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md)
+- Event: [EVT-0160](../../architecture/BEHAVIOR-TRACE/EVT-0160-DEEP-EXCAVATION-EXECUTION-RECEIPTS-AND-AUDIT-CORRECTION-2026-10-24.md)
+- Output-gap behavioral rule: [EVT-0158](../../architecture/BEHAVIOR-TRACE/EVT-0158-NO-SILENT-GAP-OUTPUT-CONTINUITY-2026-10-24.md)
 - Prior hard-audit evidence: [EVT-0154](../../architecture/BEHAVIOR-TRACE/EVT-0154-LIVING-ARCHITECTURE-HARD-AUDIT-RUN-2026-10-24.md)
 - Portable startup contract: [RAHM_BOOT](./RAHM_BOOT.md)
 - Architecture contract: [RAHM_ARCHITECTURE](./RAHM_ARCHITECTURE.md)
@@ -290,3 +291,15 @@ A new input must not make prior open work disappear. Keep the active NEXT, link 
 
 ## Host transfer boundary
 - The repository chain can now be reconstructed equivalently from IN and OUT within the tested scope. Independent import into a fresh GPT-6 host, a second host, persistence restart, automatic message capture and idle/background execution remain OPEN / NOT VERIFIED.
+
+
+## CURRENT-058 — executable continuity and repository excavation update
+
+- Current branch: POINT-0/007 → IN-051 → OUT-050 → EVT-0160 → CURRENT-058 → NEXT-051.
+- The current point is not allowed to close or renumber NEXT-051 while acceptance criteria remain open. Existing NEXT-049 and NEXT-050 remain preserved as separate branches.
+- A missing assistant response, a long processing gap, or a new user message must not silently reset the task. If work cannot continue in the same turn, the assistant must return a durable visible state: current checkpoint, what was actually executed, what is blocked/open, evidence/read-back state, and exact resume action. Do not imply hidden/background execution.
+- Behavior hunter rule: observe user/assistant IN↔OUT pairs, latency/gap events, abandoned processing, repeated instructions, errors, recovery, and user feedback. Store observations as evidence-linked hypotheses first; promote to a reusable behavior rule only after explicit acceptance criteria and regression tests pass. No inference about hidden internal reasoning is recorded as fact.
+- The latest audit at run [40130267981](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40130267981) passes structural execution but leaves content REVIEW_REQUIRED: 10 missing Markdown links, 62 Stable-ID collision groups (61 unreviewed), 88 Production-ID collision groups, 7 Reference-ID collision groups, 36 event-number collision groups, 13 ambiguous parent edges, and one ambiguous timestamp. These remain open until individually adjudicated.
+- The strict package run [40130268087](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40130268087) passed 51/51 exact-byte SHA-256 entries, valid schema fixture 0 errors, invalid fixture rejected with 4 errors, limited IN/OUT pointer equivalence, and archive creation (52 files, 261742 bytes; ZIP SHA-256 `c1bc7137072dad5c47942b7c1a32953070e9c1020d14a3cec78af01f87a94718`). Its IN/OUT pointer test was stale (IN-047/OUT-046 and CURRENT-054/NEXT-048); the workflow has now been corrected to use IN-051/OUT-050 and CURRENT-058/NEXT-051. A fresh run is required before treating the new workflow as verified.
+- Full repository IN/OUT state reconstruction is separately PASS at run [40130267981](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40130267981): both anchors reconstructed equivalent canonical state and preserved six open-gate categories. This does not prove import into an independent AI host.
+- Still OPEN / NOT VERIFIED: clean independent GPT-6 host import, second-host import, persistent memory after restart, automatic capture of every interaction, idle/background execution, and repository-wide link/identity/parent/time remediation.
