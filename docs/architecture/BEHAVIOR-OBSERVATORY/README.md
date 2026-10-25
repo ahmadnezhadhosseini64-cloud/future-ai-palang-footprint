@@ -209,3 +209,11 @@ Continue collecting observable interaction and evaluator behavior as evidence-ba
 - [NEXT-034](../../0.0/anchors/PALANG-0.0-NEXT-20261024-034-LIVE-MIRROR-SYNC-AND-COLD-START.md) is the active continuation anchor.
 - The canonical source is unchanged since commit `a2374d7da36a5af69b1bdf17f6dfd673bc03c97f`; Library version 6 is readable but not synchronized to the current canonical full content.
 - Current mirror snapshot PASS: Library version 7 independently read back and matched within tolerance. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external recovery NOT RUN.
+
+
+## Live mirror sync recheck — EVT-0167
+- [EVT-0167](../BEHAVIOR-TRACE/EVT-0167-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md) and [time binding](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0167-LIVE-MIRROR-SYNC-2026-10-25.md) record today's independent source/Library comparison.
+- Canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10` is unchanged; Library version 7 read-back differs by one trailing newline only (Levenshtein distance 1). WRITE was not required; READ-BACK and semantic MATCH passed within the approved tolerance.
+- This supersedes the older statement above that Library version 6 was readable but unsynchronized. The older record is preserved as history; current mirror evidence is version 7 and is scoped to this exact artifact.
+- Buffer/Persistent Memory remain NOT VERIFIED; Dropbox remains OPEN / NOT VERIFIED; external end-to-end recovery remains NOT RUN.
+- Active repository continuation is CURRENT-064 / NEXT-051. The older CURRENT-036 / NEXT-036 references remain preserved and are not silently reactivated by this run.
