@@ -7,6 +7,7 @@
 - Root: [POINT-0/023](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-023-HARD-AUDIT-AND-ENGINE-HARDENING.md)
 - IN: [IN-053](../../0.0/anchors/PALANG-0.0-IN-20261025-053-HARD-AUDIT-AND-ENGINE-HARDENING.md)
 - OUT: [OUT-053](../../0.0/anchors/PALANG-0.0-OUT-20261025-053-HARD-AUDIT-AND-ENGINE-HARDENING.md)
+- Time binding: [TIME-BINDING-EVT-0186](./TIME-BINDING-EVT-0186-POINT-0-023-2026-10-25.md)
 - Current checkpoint: [CURRENT-070](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-070-HARD-AUDIT-AND-HOST-EXECUTION.md)
 
 ## Finding
@@ -18,7 +19,7 @@ Hard audit found a gap in `verify_state`: it tracked duplicate event IDs and Anc
 - Exact-head Living Architecture Audit: [40206260132](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40206260132) — SUCCESS on `81afd4f181e87ba71c4d1acf8b89d4ee8432e1ca`.
 - Log read-back: 8 tests ran; all 8 passed, including `test_duplicate_input_or_output_ids_are_rejected_even_with_valid_hash`.
 - Python compilation, manifest/schema JSON validation, and CI packaging passed.
-- CI-created ZIP digest: `036cfd3e1e5d7fe30b9104cca335b8cabd572f8ec152773561d8d39b923b7e5b`; package contains Python cache files and is not the cleaned distribution bundle.
+- CI-created ZIP digest: `036cfd3e1e5d7fe30b9104cca335b8cabd572f8ec152773561d8d39b923b7e5b`; package contains Python cache files. A clean distribution bundle was extracted to a fresh directory and all 8 tests passed; clean ZIP SHA-256: `d68e03b42e26b88385d1155c02d09b213a53366e27e99518c7c049f6ec6563be`.
 
 ## Classification
 The code change and CI result are OBSERVATION / VERIFIED for the named commit and tests. Successful adoption by an independent GPT-6 host is UNKNOWN / NOT PROVEN. No claim is made for automatic capture, host-native persistent memory, background execution, or external host writes.
