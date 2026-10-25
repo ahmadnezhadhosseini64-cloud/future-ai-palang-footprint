@@ -2,7 +2,7 @@
 
 - Stable ID: `G6IP-RAHM-CURRENT-059-20261025`
 - Production ID: `G6IP-CURRENT-059`
-- Version: 1.0.2
+- Version: 1.0.3
 - Status: REGISTERED / READ-BACK VERIFIED / CURRENT IN-OUT RECOVERY PASS; previous strict conformance PASS is evidenced for commit 5047ee2; this checkpoint was updated afterward so final digest/package rerun is OPEN; global identity graph REVIEW_REQUIRED; real-host/runtime gates OPEN.
 - Parent: [CURRENT-058](./PALANG-0.0-CURRENT-20261024-058-DEEP-EXCAVATION-EXECUTION-RECEIPTS.md)
 - User Point 0: [POINT-0/008](./GPT6-RAHM-USER-POINT-0-20261025-008-DEEP-AUDIT-AND-NO-SILENT-GAP.md)
@@ -69,3 +69,11 @@ Continue NEXT-051. Do not create NEXT-052 while NEXT-051 acceptance remains open
 - Latest repository audit: [run 40150679142](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150679142) — zero missing local Markdown links and zero missing local links in the corrected historical graph parser; content remains REVIEW_REQUIRED due to 62 Stable-ID collision groups (61 unreviewed), 88 Production-ID groups, 7 Reference-ID groups, 37 event-number groups and 13 ambiguous parent edges.
 - This receipt is valid for the commit above. Any subsequent edit to a manifest-listed file requires digest reconciliation and a fresh conformance run.
 - Still OPEN / NOT VERIFIED: independent clean AI-host import, second-host import, persistent memory after restart, automatic capture of every interaction, idle/background execution, and individual adjudication of all remaining identity/parent/time findings.
+
+
+## CURRENT-059 — race-safe living export and verified execution receipt (2026-10-25)
+- The portable package model is now split into 43 immutable, digest-pinned core files and 13 mutable live-reference files. The live references are included in each exported ZIP and receive exact SHA-256 plus Git blob SHA-1 observations in the same CI run. This prevents concurrent registration automation from making the manifest stale while preserving a verifiable snapshot. The conformance workflow checks unique paths across both sets.
+- Strict conformance [run 40151104210](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40151104210) PASS on commit `b17352891a9ecf3cf6e325942084f4e3dfbf50fc`: 43/43 pinned hashes matched; all 13 live references were observed and hashed; valid JSON fixture had 0 errors; invalid fixture was rejected with 4 errors; IN/OUT recovery equivalence PASS; archive contains 57 files, 282,810 bytes, SHA-256 `764b3a1ba8116bbe51c6d056368c84c207f54f9670648e7262a6b9f120bc8084`. [Package artifact](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40151104210/artifacts/12582424909).
+- Living architecture audit [run 40151104066](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40151104066) PASS structurally: 3,945 files including evidence, 1,094 source files, 2,851 generated evidence files, 5,744 local link edges, 0 missing local links; event-number collision groups reduced to 36 after renaming the noncanonical ALT-001 event. Remaining graph findings: 62 Stable-ID groups (61 unreviewed), 88 Production-ID groups, 7 Reference-ID groups, 13 ambiguous parent edges, 1 ambiguous timestamp and 11 exact-content duplicate groups. Content status remains REVIEW_REQUIRED.
+- The two-runtime CPREL transfer harness [run 40150879386](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150879386) passed artifact transfer between isolated CI runtimes. This is a synthetic runtime-transfer test, not proof of import into a real independent AI host.
+- Still OPEN / NOT VERIFIED: clean independent AI-host import, second AI-host import, durable persistence after restart, automatic live message capture, idle/background execution, and individual adjudication of identity/parent/time findings. Keep existing NEXT-051 OPEN; do not mint NEXT-052 to replace unfinished work.
