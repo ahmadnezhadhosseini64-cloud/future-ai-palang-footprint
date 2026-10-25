@@ -66,3 +66,13 @@ A separate Portable RAHM Conformance run [40198220828](https://github.com/ahmadn
 - Uploaded audit artifact: ID \`12600674334\`, artifact digest \`sha256:aabb3b5bada3386804710a6566f5137fb8f435c1716bff854f6aff268ce611ef\`.
 - A separate Portable RAHM Conformance run [40198220828](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40198220828) failed its exact-byte manifest inventory SHA scan. This remains open and must be reconciled separately.
 - CURRENT-068 is now superseded as the active execution checkpoint, with locally proven sub-gates closed by this receipt. It is not globally "all gates closed": pointer ambiguity, historic graph review, external-host import, host durability, automatic capture, background execution and external storage remain OPEN. CURRENT-069 carries these forward.
+
+
+## Integrity failure resolution
+
+- The failure in run [40198220828](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40198220828) was traced to the stale SHA-256/Git blob entry for .github/workflows/living-architecture-audit.yml in docs/portable/RAHM/EXPORT_MANIFEST.json.
+- The manifest entry was updated to match the actual workflow blob and exact-byte SHA-256; the file was fetched again and both values matched.
+- Follow-up Portable RAHM Conformance run [40198744680](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40198744680) completed SUCCESS on tested SHA 99479872acaede69679b13273e37b9ca51f35ea5. Portable package artifact ID 12600074529, digest sha256:0d7b0fa8ea010f8516b3091b5bcb623f862d5922b707842675c5240c7d767046; conformance evidence artifact ID 12599949689, digest sha256:4c9cf13643e4d15b4d4b11a012c8f27926ac6efa785731237be2e5ca2279bdf6.
+- Latest Living Architecture Audit [40198744637](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40198744637) completed SUCCESS on the same tested SHA; structural repository checks PASS; starter suite 7/7 PASS; the pointer checker correctly reports AMBIGUOUS/BLOCKED rather than choosing a winner. Artifact ID 12600689796, digest sha256:3f5d0dc97965b1fcf3b4bd4de9fe32f125a4c7458d0ef5df90dab626e7746e12.
+- Latest starter ZIP SHA-256: 79ebfb632bf108e7844b698692fa4f3b8878b3d457a2910f92411bbd75546974.
+- The stale manifest digest failure is resolved for tested SHA 99479872acaede69679b13273e37b9ca51f35ea5. Canonical pointer and historic graph ambiguity remain separate OPEN gates.
