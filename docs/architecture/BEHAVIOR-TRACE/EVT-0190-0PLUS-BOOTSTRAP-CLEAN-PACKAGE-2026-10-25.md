@@ -33,3 +33,7 @@
 
 ## Honest boundary
 The package is ready to transfer and has a one-command initial bootstrap. This is verified in the current Python/container runtime and GitHub Actions. It is not proof of execution inside an independent GPT-6 host. Host-side Python availability, file access, persistent memory across sessions/devices, automatic chat capture, background execution, and host-side GitHub write permissions remain OPEN / NOT PROVEN.
+
+
+## Time binding
+Repository registration timestamp: [TIME-BINDING-EVT-0190](./TIME-BINDING-EVT-0190-BOOTSTRAP-PACKAGE-2026-10-25.md). UTC is canonical; Tehran time is derived from the same instant. The original user-message timestamp remains UNKNOWN / UNVERIFIED.
