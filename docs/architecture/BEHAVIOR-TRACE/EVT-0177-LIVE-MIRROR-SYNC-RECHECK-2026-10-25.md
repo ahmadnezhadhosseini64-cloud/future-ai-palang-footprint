@@ -8,7 +8,7 @@
 - Library mirror: `/Future AI/Palang Footprint/Master Reference Vault/Reference Documents/LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md`
 - Prior mirror event: [EVT-0172](./EVT-0172-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md).
 - Current user-turn point preserved: [POINT-0/016](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-016-MIRROR-DELTA-AND-ARCHITECTURE-RECOVERY.md).
-- Active continuation observed: CURRENT-065 / NEXT-051 references remain in the canonical registry; a conflicting older CURRENT-064 reference is also present and is not silently adjudicated here.
+- Active continuation observed: CURRENT-065 is declared current and NEXT-051 active in the later registry entry. The earlier CURRENT-064 → NEXT-051 reference is a historical entry preceding CURRENT-065, not a competing current claim. POINT-0/016 is preserved as the current user-turn point, without replacing the CURRENT/NEXT execution checkpoint.
 
 ## Evidence captured in this run
 
