@@ -23,7 +23,7 @@
 ## Verification receipt — repository scope only
 - [x] User Point 0/009, IN-053, OUT-052, EVT-0162 and CURRENT-060 were fetched after write; expected identifiers and chain pointers were inspected.
 - [x] Canonical reference index and integration queue were updated, then fetched again; their new entries and blob SHAs were confirmed.
-- [x] Focused relative-link reconciliation across the five new chain records: 18 Markdown link occurrences, 9 unique local targets, 0 missing targets.
+- [x] Focused relative-link reconciliation across the five new chain records: 25 Markdown link occurrences, 11 unique local targets, 0 missing targets (URL-encoded Persian paths decoded before existence checks).
 - [x] CURRENT-059 and NEXT-051 were fetched as historical/active baselines. The active NEXT was preserved; no successor was minted.
 - [x] Initial-model mother updated to v1.4.8 and fetched after write; it now links Point 0/009, IN-053, OUT-052, EVT-0162 and CURRENT-060.
 - [ ] Current-commit strict package/digest workflow after these edits: NOT RUN / NOT VERIFIED; manifest/export inclusion of CURRENT-060 and updated mother is not proven.
