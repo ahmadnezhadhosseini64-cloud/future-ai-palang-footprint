@@ -27,7 +27,7 @@
 - Library metadata modified UTC: `2026-10-24T04:45:28.479773Z`; derived Tehran: `2026-10-24T08:15:28.479773+03:30`.
 - Library length: 10,480 characters.
 - Source/Library comparison: 10,479 / 10,480 characters; delta = 1; Levenshtein distance = 1. The only difference is one additional trailing newline in Library. This was independently checked against the exact Library version 7, not inferred from the search snippet.
-- Stable ID `PALANG-LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001), Test ID `LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001`, Version `1.0.0`, BOART-FOLLOWUP-01 → 02 → 03, and every destination-status line match.
+- Stable ID `PALANG-LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001`, Test ID `LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001`, Version `1.0.0`, BOART-FOLLOWUP-01 → 02 → 03, and every destination-status line match.
 - Accepted owner tolerance: up to 7 characters/edit distance only when all semantic fields match. This result is **PASS WITHIN TOLERANCE**, not byte-for-byte identity.
 - Write decision: **NO REDUNDANT LIBRARY WRITE REQUIRED**. The existing exact version was already present; no overwrite was performed.
 
