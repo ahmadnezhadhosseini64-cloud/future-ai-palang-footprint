@@ -62,3 +62,11 @@ The local starter package passes its six automated tests on the tested revision.
 - Workflow evidence artifact: ID \`12600674334\`, digest \`sha256:aabb3b5bada3386804710a6566f5137fb8f435c1716bff854f6aff268ce611ef\`.
 - Independent GPT host import remains NOT PROVEN.
 - Separate portable manifest SHA inventory failure run 40198220828 remains OPEN.
+
+
+## Follow-up integrity resolution — tested SHA 99479872
+
+- Updated docs/portable/RAHM/EXPORT_MANIFEST.json to match the current workflow Git blob SHA and raw-byte SHA-256.
+- Portable RAHM Conformance [40198744680](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40198744680): SUCCESS; portable package artifact 12600074529, digest sha256:0d7b0fa8ea010f8516b3091b5bcb623f862d5922b707842675c5240c7d767046.
+- Living Architecture Audit [40198744637](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40198744637): SUCCESS; structural checks PASS, pointer checker AMBIGUOUS/BLOCKED, starter tests 7/7 PASS; artifact 12600689796.
+- The stale manifest digest issue is resolved for this tested SHA. Pointer ambiguity, historic graph review and real external-host capability gates remain open.
