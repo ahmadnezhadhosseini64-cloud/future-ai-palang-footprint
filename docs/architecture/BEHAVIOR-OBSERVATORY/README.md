@@ -217,3 +217,9 @@ Continue collecting observable interaction and evaluator behavior as evidence-ba
 - This supersedes the older statement above that Library version 6 was readable but unsynchronized. The older record is preserved as history; current mirror evidence is version 7 and is scoped to this exact artifact.
 - Buffer/Persistent Memory remain NOT VERIFIED; Dropbox remains OPEN / NOT VERIFIED; external end-to-end recovery remains NOT RUN.
 - Active repository continuation is CURRENT-064 / NEXT-051. The older CURRENT-036 / NEXT-036 references remain preserved and are not silently reactivated by this run.
+
+
+## Separate architecture audit failure — EVT-0168
+- [EVT-0168](../BEHAVIOR-TRACE/EVT-0168-LIVING-ARCHITECTURE-AUDIT-FAILURE-AND-ROOT-CAUSE-2026-10-25.md) preserves the Living Architecture Audit failure surfaced during this run's repository updates.
+- This is separate from the mirror gate: EVT-0167 mirror READ-BACK/MATCH passed within tolerance; the architecture audit failed because of a stale recovery verifier/manifest contract and three incorrect queue-relative runtime links.
+- Corrective code and links are being revalidated; do not merge the two outcomes into a single PASS.
