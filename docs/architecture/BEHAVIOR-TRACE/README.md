@@ -779,3 +779,11 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Audit [40213760585](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40213760585): SUCCESS; 12/12 tests passed.
 - Clean ZIP SHA-256: `51a5f9a6def97a0564a8b6542bbf4a5b9ca46a81a267a4a02db7c53511e16f2d`.
 - Local CLI lifecycle including `0/0+`, child `0.0`, audit, export and import passed. Independent GPT host remains open.
+
+
+## EVT-0190 — v0.3.0 one-command bootstrap
+- Event: [EVT-0190](./EVT-0190-0PLUS-BOOTSTRAP-CLEAN-PACKAGE-2026-10-25.md)
+- Time binding: [EVT-0190 UTC/Tehran](./TIME-BINDING-EVT-0190-BOOTSTRAP-PACKAGE-2026-10-25.md)
+- Clean package: v0.3.0, SHA-256 `297b3b329143c4b99f55373db0c4bb97896b0e484253622e63eeb32a4429f164`.
+- 13/13 tests passed in CI and after fresh extraction; bootstrap + audit + export/import + post-import audit passed.
+- Independent GPT-6 host execution remains open.
