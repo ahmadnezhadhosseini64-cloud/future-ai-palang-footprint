@@ -1,4 +1,4 @@
-# HAIF GPT-6 Portable Starter v0.2.1
+# HAIF GPT-6 Portable Starter v0.3.0
 
 This is an executable starter package inside the existing Future AI / Palang Footprint repository. It is not a separate project and does not replace the living master, historical anchors or NEXT-051.
 
@@ -6,12 +6,23 @@ This is an executable starter package inside the existing Future AI / Palang Foo
 - Standard-library Python continuity engine.
 - Independent anchor, IN, OUT and event identifiers for each interaction pair.
 - Canonical point identity with aliases/markers: `0` and `0+` can be two labels on the same point; `0+` is not a duplicate point.
+- One-command `bootstrap_0plus.py` creates the `0/0+` root, its linked `0.0` continuation, and six explicitly OPEN host-capability gaps; it refuses to overwrite existing state.
 - Parent-linked `0.0` continuation checkpoints, with collision and lineage checks.
 - Append-only hash-linked event chain with tamper detection.
 - Explicit OPEN gap register; closure requires a passing test ID, exact tested revision and evidence reference.
 - Master → Child proposal and promotion gate; promotion without passing evidence is rejected.
 - Portable bundle export/import with SHA-256 verification.
 - Atomic local writes and validated read-back.
+
+## One-command initial bootstrap
+
+~~~bash
+python3 bootstrap_0plus.py --state ./haif-state.json
+python3 engine.py --state ./haif-state.json audit
+python3 engine.py --state ./haif-state.json export > ./haif-portable-bundle.json
+~~~
+
+The bootstrap does not pretend the target host has capabilities it has not demonstrated. It preserves six host/runtime gates as OPEN.
 
 ## Run locally
 From this directory:
