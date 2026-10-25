@@ -2,7 +2,7 @@
 
 - Stable ID: G6IP-CURRENT-062-20261025
 - Production ID: G6IP-CURRENT-062
-- Version: 1.0.4
+- Version: 1.0.5
 - Parent checkpoint: [CURRENT-061](./PALANG-0.0-CURRENT-20261025-061-PROTOTYPE-AND-GRAPH-TRIAGE.md)
 - User Point 0: [POINT-0/011](./GPT6-RAHM-USER-POINT-0-20261025-011-OPEN-GAPS-AND-CONTINUITY.md)
 - Interaction chain: [IN-055](./PALANG-0.0-IN-20261025-055-OPEN-GAPS-AND-CONTINUITY.md) → [OUT-054](./PALANG-0.0-OUT-20261025-054-OPEN-GAPS-AND-CONTINUITY.md) → [EVT-0164](../../architecture/BEHAVIOR-TRACE/EVT-0164-OPEN-GAPS-AND-CONTINUITY-2026-10-25.md) → CURRENT-062.
@@ -66,3 +66,25 @@ The first local runtime has now been added to the repository:
 The portable conformance workflow now runs `python -m unittest discover -s scripts/haif-runtime/tests -v` and watches `scripts/haif-runtime/**`. Test result for the final commit remains pending until the actual GitHub Actions run is read back.
 
 This changes the next 0.0 action from “design a runtime” to “execute and fix the runtime tests, then prove import/recovery in a separate clean environment.” The global historical graph audit remains open and must not block proving this small executable slice.
+
+
+## Final executable-slice read-back — 2026-10-25
+- [x] Read back the runnable runtime, tests and runbook from the repository.
+- [x] Read back the conformance workflow after adding the runtime test command and trigger path.
+- [x] Read back the living mother, CURRENT-062, Point 0/011, EVT-0164, index, integration queue and export manifest.
+- [x] Read back the 15-file CURRENT-062 overlay after refresh: all 15/15 declared Git blob SHA-1 values matched.
+- [x] Main export manifest parses as JSON; 41 pinned core files + 35 live references = 76 unique paths, no duplicate paths. Runtime source/tests/runbook are included as live references; the workflow itself is also a live reference so the manifest does not hold a stale self-referential expected digest for a changing workflow.
+- [ ] Automated runtime tests on GitHub Actions: NOT VERIFIED; current commit-status query returned no status entries. Source wiring is not a test pass.
+- [ ] Local clean-environment execution of the CLI: NOT RUN in this receipt.
+- [ ] Clean independent AI-host import, browser runtime, restart persistence, automatic capture and background execution: OPEN / NOT VERIFIED.
+- [ ] Full historical graph occurrence audit and per-conflict adjudication under NEXT-051: OPEN / REVIEW_REQUIRED.
+
+## Active implementation direction
+The project has moved beyond architecture prose to a first executable slice. Continue in this order:
+1. Obtain and inspect the actual conformance workflow result; repair any failing tests or package gates.
+2. Run the CLI end-to-end in a clean environment and compare source/export/import chain head hashes.
+3. Add signed/export provenance and encrypted backup only after the core recovery test passes; do not imply hashes alone prove authorship.
+4. Test the same package in an independent host, then test durable restart and cross-device transfer.
+5. Continue NEXT-051's commit-scoped historical graph audit without delaying the executable slice.
+
+Status: runnable local source committed; focused repository read-back PASS; automated runtime execution and real-host acceptance remain OPEN.
