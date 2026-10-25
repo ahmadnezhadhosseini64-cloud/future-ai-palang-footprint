@@ -79,6 +79,8 @@ def verify_state(state: Any) -> list[str]:
     previous = GENESIS
     seen = set()
     anchors = set()
+    input_ids = set()
+    output_ids = set()
     for i, event in enumerate(events):
         p = f"events[{i}]"
         if not isinstance(event, dict):
@@ -100,9 +102,17 @@ def verify_state(state: Any) -> list[str]:
                 if not event.get(key):
                     errors.append(f"{p}.{key} is required")
             aid = event.get("anchor_id")
+            iid = event.get("input_id")
+            oid = event.get("output_id")
             if aid in anchors:
                 errors.append(f"{p}.anchor_id duplicate: {aid}")
+            if iid in input_ids:
+                errors.append(f"{p}.input_id duplicate: {iid}")
+            if oid in output_ids:
+                errors.append(f"{p}.output_id duplicate: {oid}")
             anchors.add(aid)
+            input_ids.add(iid)
+            output_ids.add(oid)
         previous = event.get("event_hash", previous)
     gaps = state.get("gaps")
     if not isinstance(gaps, list):
