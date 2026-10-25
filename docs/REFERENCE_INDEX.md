@@ -1321,3 +1321,12 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Interaction chain: [IN-053](0.0/anchors/PALANG-0.0-IN-20261025-053-CHAIN-RECOVERY-AUDIT.md) → [OUT-052](0.0/anchors/PALANG-0.0-OUT-20261025-052-CHAIN-RECOVERY-AUDIT.md) → [EVT-0162](architecture/BEHAVIOR-TRACE/EVT-0162-CHAIN-RECOVERY-AUDIT-AND-SCOPE-ERROR-LEARNING-2026-10-25.md) → [CURRENT-060](0.0/anchors/PALANG-0.0-CURRENT-20261025-060-CHAIN-RECOVERY-AUDIT.md).
 - Active execution queue remains [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md); no successor NEXT created.
 - Status: focused repository read-back and 25-link/11-target reconciliation PASS; repository-wide identity/parent/time review and external runtime gates remain OPEN / REVIEW_REQUIRED.
+
+
+## CURRENT-061 — Prototype, adoption and graph triage (2026-10-25)
+- User Point 0/010: [prototype and graph closure request](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-010-PROTOTYPE-GRAPH-CLOSURE.md).
+- Interaction chain: [IN-054](0.0/anchors/PALANG-0.0-IN-20261025-054-PROTOTYPE-GRAPH-CLOSURE.md) → [OUT-053](0.0/anchors/PALANG-0.0-OUT-20261025-053-PROTOTYPE-GRAPH-CLOSURE.md) → [EVT-0163](architecture/BEHAVIOR-TRACE/EVT-0163-PROTOTYPE-GRAPH-CLOSURE-2026-10-25.md) → [CURRENT-061](0.0/anchors/PALANG-0.0-CURRENT-20261025-061-PROTOTYPE-AND-GRAPH-TRIAGE.md).
+- Prototype source: [index.html](architecture/interactive-prototype/index.html); test procedure: [README](architecture/interactive-prototype/README.md); adoption fixture: [JSON](architecture/interactive-prototype/ADOPTION-TEST-FIXTURE.json).
+- Graph decision rules: [AGACR](reference/REFERENCE-DOCUMENTS/ARCHITECTURE-GRAPH-ADJUDICATION-AND-CLOSURE-REGISTER-2026-10-25-001.md).
+- Current overlay inventory: [CURRENT-061-OVERLAY-MANIFEST](portable/RAHM/CURRENT-061-OVERLAY-MANIFEST.json). This inventory records Git blob IDs; exact-byte SHA-256 and export archive are still pending a fresh strict workflow.
+- Status: focused read-back and link/fixture structural checks PASS; browser/clean-host tests and global semantic graph adjudication remain OPEN. NEXT-051 remains active; NEXT-039 and NEXT-040 remain open subtasks.
