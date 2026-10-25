@@ -38,3 +38,15 @@ G. Continue the existing NEXT-051 until acceptance gates pass. Do not mint a suc
 Every item follows: REGISTER → IMPLEMENT → READ-BACK → MATCH → VERIFY → RECONCILE → STATUS. Preserve unknowns and failed attempts. A linked file is not automatically semantically correct; a passing structural gate is not full architecture acceptance.
 
 Status: NEW CURRENT 0.0 POINT; full acceptance remains OPEN pending evidence.
+
+
+## Final repository read-back receipt — 2026-10-25
+- [x] Read back Point 0/011, IN-055, OUT-054, EVT-0164 and CURRENT-062 from the repository.
+- [x] Parsed the CURRENT-062 overlay manifest as valid JSON; it contains 10 delta files. The first verification pass matched 10/10 declared Git blob SHA-1 values. Because this receipt updates CURRENT-062, the manifest's CURRENT-062 blob entry must be refreshed and rechecked before final acceptance.
+- [x] Focused Markdown-link audit across the five new chain records: 35 local Markdown link occurrences, 16 unique local targets, all 16 targets fetched successfully; no missing targets in this focused scope.
+- [x] Read-back retrieved the living mother, canonical index, integration queue, graph adjudication register, NEXT-051 and manifest.
+- [ ] Exact-byte SHA-256 and actual export archive: NOT RUN / NOT VERIFIED.
+- [ ] Current repository-wide occurrence-level semantic graph audit: OPEN / REVIEW_REQUIRED.
+- [ ] Browser interaction, clean independent-host adoption, second host, restart persistence and automatic/idle execution: NOT RUN / NOT VERIFIED.
+
+Status: focused repository registration and structural read-back PASS after final manifest hash reconciliation; broader architecture/runtime acceptance remains OPEN.
