@@ -378,3 +378,11 @@ SCRTC-B3 is a source-backed partial mapping. Full tree/history census and confli
 
 - v1.2.4: CURRENT-036 / NEXT-036 explicit current point and resumable 0.0.
 - v1.2.5: Five-source clause crosswalk batch 3 connected to the master and audit graph.
+
+
+## Operational mirror evidence — EVT-0167
+- [EVT-0167](../../architecture/BEHAVIOR-TRACE/EVT-0167-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md) records the recurring canonical-source/Library comparison; [TIME-BINDING-EVT-0167](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0167-LIVE-MIRROR-SYNC-2026-10-25.md) records the actual event commit UTC and derived Tehran time.
+- The source blob remains `de1b75f07241c9b313e476af5f1417177ff78c10`; Library version 7 is source-equivalent within the approved tolerance (one trailing newline). No redundant write was made.
+- Scope is this exact Library artifact only. Buffer/Persistent Memory are NOT VERIFIED; Dropbox is OPEN / NOT VERIFIED; external end-to-end recovery is NOT RUN.
+- Continuity reconciliation: current main queue/index identify CURRENT-064 / NEXT-051 as the active route. CURRENT-036 / NEXT-036 remain historical preserved checkpoints. This operational receipt does not replace the full historic census under Issue #21 or runtime/clean-host acceptance under Issue #20.
+- This is an append-only operational evidence addendum; it does not alter the governance rules or claim a new architecture capability version.
