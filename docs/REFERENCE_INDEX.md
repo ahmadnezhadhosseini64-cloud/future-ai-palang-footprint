@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-25 — POINT-0/018 / EVT-0180; living master and registries linked; CURRENT-065/CURRENT-066 pointer conflict OPEN; NEXT-051 remains active.
+**Last Updated:** 2026-10-25 — POINT-0/019 / EVT-0181; capability implementation and pointer discovery added; CURRENT-065/CURRENT-066 conflict remains OPEN; NEXT-051 remains active.
 
 ## Canonical References
 
@@ -1453,3 +1453,11 @@ Current continuation chain: POINT-0/013 → IN-057 → OUT-056 → EVT-0166 → 
 - Master: [HAIF Initial Model Master Reference](architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md).
 - 0.0 steps: reconcile CURRENT-065/CURRENT-066; separate historical recovery from live-pointer discovery; continue NEXT-051, Issues #20/#21 and BOART-FOLLOWUP-01; run final-SHA audit; reconcile all registries; independently test external/runtime capabilities.
 - Status: ROOT REGISTERED; downstream remediation and exact-final-main audit remain OPEN / NOT VERIFIED. NEXT-051 is preserved; no NEXT-052 placeholder.
+
+
+## Latest user-turn root — POINT-0/019 / EVT-0181
+- Point: [POINT-0/019](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-019-MODEL-CAPABILITY-BUILD.md) — `HAIF-POINT-0-019-MODEL-CAPABILITY-BUILD-20261025`.
+- Event: [EVT-0181](architecture/BEHAVIOR-TRACE/EVT-0181-POINT-0-019-MODEL-CAPABILITY-BUILD-2026-10-25.md).
+- Master: [HAIF Initial Model Master Reference](architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md); detailed plan: [model next steps](architecture/مدل%20اولیه%20AI/صف%20گام‌های%20بعدی%20و%20موارد%20باز.md).
+- Executable increment: `scripts/behavior-hunter/discover_current_0_0_pointer.py`; fixture tests: `scripts/behavior-hunter/tests/test_discover_current_0_0_pointer.py`; CI integration: `.github/workflows/living-architecture-audit.yml`.
+- Status: source and test wiring registered; exact-main workflow result pending inspection. CURRENT-065/CURRENT-066 stays OPEN; NEXT-051 and Issues #20/#21 plus BOART-FOLLOWUP-01 remain active/open.
