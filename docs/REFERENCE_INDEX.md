@@ -1503,3 +1503,17 @@ Current continuation chain: POINT-0/013 → IN-057 → OUT-056 → EVT-0166 → 
 - Execution checkpoint: [CURRENT-069](0.0/anchors/PALANG-0.0-CURRENT-20261025-069-PORTABLE-STARTER-ENGINE-AND-GATE-CLOSURE.md).
 - Executable starter: [README](../prototype/haif-gpt6-starter/README.md), [engine](../prototype/haif-gpt6-starter/engine.py), [GPT-6 host instructions](../prototype/haif-gpt6-starter/GPT6_HOST_INSTRUCTIONS.md).
 - Status: seven unit tests and clean-process round-trip passed on tested SHA f482083cc2aeab82964c271c5d97ba4bb8657ce1; follow-up audit and portable conformance passed on tested SHA 99479872acaede69679b13273e37b9ca51f35ea5. External-host import remains unproven.
+
+
+## POINT-0/023 — Engine hard audit and current GPT-host execution gate
+
+- Root: [POINT-0/023](./0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-023-HARD-AUDIT-AND-ENGINE-HARDENING.md)
+- Input/output: [IN-053](./0.0/anchors/PALANG-0.0-IN-20261025-053-HARD-AUDIT-AND-ENGINE-HARDENING.md) / [OUT-053](./0.0/anchors/PALANG-0.0-OUT-20261025-053-HARD-AUDIT-AND-ENGINE-HARDENING.md)
+- Event and timestamp evidence: [EVT-0186](./architecture/BEHAVIOR-TRACE/EVT-0186-HAIF-ENGINE-HARD-AUDIT-AND-ID-UNIQUENESS-2026-10-25.md) / [time binding](./architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0186-POINT-0-023-2026-10-25.md)
+- Current checkpoint: [CURRENT-070](./0.0/anchors/PALANG-0.0-CURRENT-20261025-070-HARD-AUDIT-AND-HOST-EXECUTION.md)
+- Living master: [Initial Model Master Reference](./architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
+- Active historical queue: [NEXT-051](./0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
+- Engine: [engine.py](../prototype/haif-gpt6-starter/engine.py); regression tests: [test_engine.py](../prototype/haif-gpt6-starter/test_engine.py); host instructions: [GPT6_HOST_INSTRUCTIONS.md](../prototype/haif-gpt6-starter/GPT6_HOST_INSTRUCTIONS.md).
+- Exact-head audit [40206260132](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40206260132): SUCCESS on `81afd4f181e87ba71c4d1acf8b89d4ee8432e1ca`; 8/8 tests passed.
+- Clean current distribution ZIP SHA-256: `d68e03b42e26b88385d1155c02d09b213a53366e27e99518c7c049f6ec6563be`; extracted into a fresh directory and tested 8/8.
+- Honest boundary: target GPT-6 host import, host persistence, automatic capture, background execution and external writes remain OPEN / NOT PROVEN.
