@@ -1,0 +1,39 @@
+{
+  "fixture_id": "HAIF-FRESH-PROJECT-ADOPTION-FIXTURE-2026-10-25-001",
+  "schema_version": "haif-fresh-project-fixture/1.0",
+  "project": "Future AI / Palang Footprint",
+  "status": "FIXTURE_ONLY_NOT_A_DEPLOYED_HOST",
+  "identity": {
+    "stable_id": "HAIF-FRESH-PROJECT-ADOPTION-FIXTURE-2026-10-25-001",
+    "production_id": "HAIF-FRESH-ADOPTION-FIXTURE"
+  },
+  "lineage": {
+    "root": "../../0.0/anchors/GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001.md",
+    "checkpoint": "../../0.0/anchors/GPT6-INTERACTIVE-PROJECT-POINT-0.0-CHECKPOINT-2026-10-24-001.md",
+    "architecture_zero": "../../0.0/anchors/PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md",
+    "next_039": "../../0.0/anchors/PALANG-0.0-NEXT-20261024-039-BUILD-INTERACTIVE-PROTOTYPE.md",
+    "next_040": "../../0.0/anchors/PALANG-0.0-NEXT-20261024-040-FRESH-PROJECT-ADOPTION-TEST.md"
+  },
+  "minimum_contract": {
+    "preserve_history": true,
+    "distinct_point_0_and_0_0": true,
+    "interaction_pair_in_out": true,
+    "behavior_event": true,
+    "utc_canonical_repository_time": true,
+    "tehran_time_derived_from_same_utc": true,
+    "provenance_and_evidence": true,
+    "open_gaps_preserved": true,
+    "manual_export_import": true,
+    "read_back_required": true,
+    "unverified_capabilities_must_not_be_promoted": true
+  },
+  "open_gates": [
+    "browser_execution_receipt",
+    "clean_independent_ai_host_import",
+    "second_host_import",
+    "persistent_memory_after_restart",
+    "automatic_interaction_capture",
+    "idle_background_execution",
+    "fresh_export_manifest_digest"
+  ]
+}
