@@ -93,17 +93,21 @@ for p in source_files:
     evt = re.match(r"EVT-(\d+)-", p.name)
     if evt: evt_map[evt.group(1)].append(relpath)
     own_edges = []
-    for m in re.finditer(r"!??\[[^\]]*\]\(([^)]+)\)", body):
-        target = m.group(1).strip().split()[0].strip("<>")
-        if not target or target.startswith("#"): continue
-        u = urlparse(target)
-        if u.scheme or u.netloc or not u.path: continue
-        candidate = (p.parent / unquote(u.path)).resolve()
-        try: resolved = candidate.relative_to(ROOT).as_posix()
-        except ValueError: continue
-        edge = {"source": relpath, "target": target, "resolved_path": resolved, "exists": candidate.exists()}
-        own_edges.append(edge); local_edges.append(edge)
-        if not candidate.exists(): missing_links.append(edge)
+    # Markdown navigation is only meaningful in Markdown documents. Python tests,
+    # code templates and fixture strings may contain illustrative Markdown links;
+    # counting those as repository edges creates false missing-link findings.
+    if p.suffix.lower() in {".md", ".markdown", ".mdx"}:
+        for m in re.finditer(r"!??\[[^\]]*\]\(([^)]+)\)", body):
+            target = m.group(1).strip().split()[0].strip("<>")
+            if not target or target.startswith("#"): continue
+            u = urlparse(target)
+            if u.scheme or u.netloc or not u.path: continue
+            candidate = (p.parent / unquote(u.path)).resolve()
+            try: resolved = candidate.relative_to(ROOT).as_posix()
+            except ValueError: continue
+            edge = {"source": relpath, "target": target, "resolved_path": resolved, "exists": candidate.exists()}
+            own_edges.append(edge); local_edges.append(edge)
+            if not candidate.exists(): missing_links.append(edge)
     nodes.append({"path": relpath, "sha256": sha, "bytes": len(raw), "stable_ids": stable,
                   "production_ids": prod, "versions": versions, "declared_parents": parents,
                   "event_number": evt.group(1) if evt else None, "local_links": own_edges})
