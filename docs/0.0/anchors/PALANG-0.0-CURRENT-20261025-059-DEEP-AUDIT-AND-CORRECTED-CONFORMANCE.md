@@ -2,7 +2,7 @@
 
 - Stable ID: `G6IP-RAHM-CURRENT-059-20261025`
 - Production ID: `G6IP-CURRENT-059`
-- Version: 1.0.0
+- Version: 1.0.1
 - Status: PARTIAL / LIVING / READ-BACK REQUIRED; corrected conformance, final manifest reconciliation and graph triage remain OPEN.
 - Parent: [CURRENT-058](./PALANG-0.0-CURRENT-20261024-058-DEEP-EXCAVATION-EXECUTION-RECEIPTS.md)
 - User Point 0: [POINT-0/008](./GPT6-RAHM-USER-POINT-0-20261025-008-DEEP-AUDIT-AND-NO-SILENT-GAP.md)
@@ -28,13 +28,13 @@
 
 ## Current verification state
 
-- Workflow correction write: done, commit `045f5b4e95743de5fefcc163bffc60938fea1d58`.
-- Portable mother write: done, commit `2d9b08efdb4e398c82f47894f148d9a43cd2cdd6`.
-- Fresh corrected conformance run: OPEN / PENDING.
-- Exact-byte manifest reconciliation after current edits: OPEN / PENDING.
-- Global missing-link and identity/parent/time triage: OPEN / REVIEW_REQUIRED.
+- Workflow correction write: done; latest corrected chain references IN-052 / OUT-051 and CURRENT-059 / NEXT-051.
+- Portable mother write: done; version 1.1.3 now points to POINT-0/008 and CURRENT-059.
+- Fresh corrected conformance run: OPEN / PENDING; workflow now targets the latest IN-052 / OUT-051 / CURRENT-059 chain.
+- Exact-byte manifest reconciliation after current edits: OPEN / PENDING; manifest must include this point's IN/OUT/event/Point-0/current artifacts and the test harness itself.
+- Global missing-link and identity/parent/time triage: OPEN / REVIEW_REQUIRED; last audit found 10 missing links and unresolved ID/parent findings.
 - Clean independent AI-host import, second-host import, persistence restart, automatic interaction capture, and idle/background execution: OPEN / NOT VERIFIED.
 
 ## Resume rule
 
-Continue NEXT-051. Do not create NEXT-052 while NEXT-051 acceptance remains open. If this turn ends before all gates close, return this exact CURRENT-059 checkpoint and the uncompleted gate list; never imply background work.
+Continue NEXT-051. Do not create NEXT-052 while NEXT-051 acceptance remains open. The recovery verifier has been advanced to this exact chain; wait for the audit receipt, then repair missing links one by one from inspectable evidence. If this turn ends before all gates close, return this exact CURRENT-059 checkpoint and the uncompleted gate list; never imply background work.
