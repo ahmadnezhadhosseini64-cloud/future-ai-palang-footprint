@@ -15,12 +15,12 @@ OUT = ROOT / "audit-output"
 OUT.mkdir(exist_ok=True)
 
 FILES = {
-    "point0": "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-007-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md",
-    "in": "docs/0.0/anchors/PALANG-0.0-IN-20261024-051-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md",
-    "out": "docs/0.0/anchors/PALANG-0.0-OUT-20261024-050-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md",
-    "event": "docs/architecture/BEHAVIOR-TRACE/EVT-0160-DEEP-EXCAVATION-EXECUTION-RECEIPTS-AND-AUDIT-CORRECTION-2026-10-24.md",
-    "current": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261024-058-DEEP-EXCAVATION-EXECUTION-RECEIPTS.md",
-    "prior_current": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261024-057-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md",
+    "point0": "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-008-DEEP-AUDIT-AND-NO-SILENT-GAP.md",
+    "in": "docs/0.0/anchors/PALANG-0.0-IN-20261025-052-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md",
+    "out": "docs/0.0/anchors/PALANG-0.0-OUT-20261025-051-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md",
+    "event": "docs/architecture/BEHAVIOR-TRACE/EVT-0161-DEEP-AUDIT-STALE-GATE-AND-NO-SILENT-GAP-2026-10-25.md",
+    "current": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-059-DEEP-AUDIT-AND-CORRECTED-CONFORMANCE.md",
+    "prior_current": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-059-DEEP-EXCAVATION-EXECUTION-RECEIPTS.md",
     "next": "docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md",
     "master": "docs/portable/RAHM/FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md",
     "manifest": "docs/portable/RAHM/EXPORT_MANIFEST.json",
@@ -28,12 +28,12 @@ FILES = {
     "queue": "docs/architecture/INTEGRATION-QUEUE/README.md",
 }
 EXPECTED = {
-    "point0": "G6IP-RAHM-USER-POINT-0-20261024-007",
-    "in": "G6IP-RAHM-IN-051-20261024",
-    "out": "G6IP-RAHM-OUT-050-20261024",
-    "event": "G6IP-RAHM-EVT-0160-20261024",
-    "current": "G6IP-RAHM-CURRENT-058-20261024",
-    "prior_current": "G6IP-RAHM-CURRENT-057-20261024",
+    "point0": "G6IP-RAHM-USER-POINT-0-20261025-008",
+    "in": "G6IP-RAHM-IN-052-20261025",
+    "out": "G6IP-RAHM-OUT-051-20261025",
+    "event": "G6IP-RAHM-EVT-0161-20261025",
+    "current": "G6IP-RAHM-CURRENT-059-20261025",
+    "prior_current": "G6IP-RAHM-CURRENT-059-20261024",
     "next": "G6IP-RAHM-NEXT-051-20261024",
 }
 GATE_MARKERS = {
@@ -130,27 +130,27 @@ def reconstruct(start):
     for key, expected in EXPECTED.items():
         if ids.get(key) != expected:
             failures.append({"check": "stable_id", "node": key, "expected": expected, "actual": ids.get(key)})
-    if expected_parent == "point0" and not require_link("in", in_text, "GPT6-RAHM-USER-POINT-0-20261024-007"):
+    if expected_parent == "point0" and not require_link("in", in_text, "GPT6-RAHM-USER-POINT-0-20261025-008"):
         failures.append({"check":"IN_to_Point0"})
-    if expected_parent == "in" and not require_link("out", out_text, "PALANG-0.0-IN-20261024-051"):
+    if expected_parent == "in" and not require_link("out", out_text, "PALANG-0.0-IN-20261025-052"):
         failures.append({"check":"OUT_to_IN"})
     link_checks = [
-        ("point0", point0, "PALANG-0.0-IN-20261024-051"),
-        ("point0", point0, "PALANG-0.0-OUT-20261024-050"),
-        ("point0", point0, "EVT-0160"),
-        ("point0", point0, "PALANG-0.0-CURRENT-20261024-058"),
+        ("point0", point0, "PALANG-0.0-IN-20261025-052"),
+        ("point0", point0, "PALANG-0.0-OUT-20261025-051"),
+        ("point0", point0, "EVT-0161"),
+        ("point0", point0, "PALANG-0.0-CURRENT-20261025-059"),
         ("point0", point0, "PALANG-0.0-NEXT-20261024-051"),
-        ("in", in_text, "PALANG-0.0-CURRENT-20261024-057"),
+        ("in", in_text, "PALANG-0.0-CURRENT-20261024-058"),
         ("in", in_text, "PALANG-0.0-NEXT-20261024-051"),
-        ("out", out_text, "EVT-0160"),
-        ("out", out_text, "PALANG-0.0-CURRENT-20261024-058"),
-        ("event", event, "PALANG-0.0-CURRENT-20261024-058"),
+        ("out", out_text, "EVT-0161"),
+        ("out", out_text, "PALANG-0.0-CURRENT-20261025-059"),
+        ("event", event, "PALANG-0.0-CURRENT-20261025-059"),
         ("current", current, "PALANG-0.0-NEXT-20261024-051"),
         ("current", current, "FIRST-LIVING-MASTER"),
         ("current", current, "EXPORT_MANIFEST"),
         ("current", current, "REFERENCE_INDEX"),
         ("current", current, "INTEGRATION-QUEUE"),
-        ("next", nxt, "PALANG-0.0-CURRENT-20261024-057"),
+        ("next", nxt, "PALANG-0.0-CURRENT-20261024-058"),
     ]
     for name, text, fragment in link_checks:
         if not require_link(name, text, fragment):
@@ -165,9 +165,9 @@ def reconstruct(start):
             failures.append({"check":"open_gate_not_preserved","gate":gate,"state":state})
     if "Audit-method error" not in event or "Correction" not in event:
         failures.append({"check":"failure_correction_lineage"})
-    if "NEXT-051" not in master or "CURRENT-058" not in master:
+    if "NEXT-051" not in master or "CURRENT-059" not in master:
         failures.append({"check":"portable_master_not_current"})
-    if manifest.get("created_from_checkpoint") != "G6IP-RAHM-CURRENT-058-20261024":
+    if manifest.get("created_from_checkpoint") != "G6IP-RAHM-CURRENT-059-20261025":
         failures.append({"check":"manifest_checkpoint_mismatch","actual":manifest.get("created_from_checkpoint")})
     if manifest.get("tests", {}).get("next_action") != "NEXT-051":
         failures.append({"check":"manifest_next_mismatch","actual":manifest.get("next_action")})
@@ -191,7 +191,7 @@ def main():
     state_keys = ("canonical_current", "active_next", "lineage_ids", "versions", "manifest_version", "manifest_file_count", "open_gates")
     equivalent = all(from_in[k] == from_out[k] for k in state_keys)
     report = {
-        "test_id": "RAHM-CURRENT-058-IN-OUT-STATE-RECOVERY-2026-10-24-001",
+        "test_id": "RAHM-CURRENT-059-IN-OUT-STATE-RECOVERY-2026-10-24-001",
         "scope": "Repository current-chain reconstruction from independent IN and OUT starting anchors; not a real external-host import.",
         "from_IN": from_in,
         "from_OUT": from_out,
