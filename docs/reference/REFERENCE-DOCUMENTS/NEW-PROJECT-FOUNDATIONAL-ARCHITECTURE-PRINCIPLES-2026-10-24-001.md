@@ -2,8 +2,8 @@
 
 - Stable ID / شناسهٔ پایدار: `NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001`
 - Production ID / شناسهٔ تولید: `NPFAP-20261024-001`
-- Version / نسخه: 1.2.6
-- Status / وضعیت: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING / EVOLVABLE / EXTRACTABLE / RECOVERY-ORIENTED / CURRENT-054 + CURRENT-056 LINKED
+- Version / نسخه: 1.2.7
+- Status / وضعیت: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING / EVOLVABLE / EXTRACTABLE / RECOVERY-ORIENTED / CURRENT-054 + CURRENT-056 + CURRENT-059 LINKED
 - Scope / دامنه: الگوی پایه برای هر پروژهٔ جدید در خانوادهٔ Future AI / Palang Footprint / HAIF و شاخه‌های محصول/میزبان آن؛ با سازگارسازی مستند برای پروژه‌های دیگر
 - Source anchor / منشأ: [G6IP-ARCH-ZERO-20261024-001](../../0.0/anchors/PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md)
 - Governing contract / قرارداد حاکم: [UIALAC-2026-10-20-001 v1.3.1](./UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001.md)
@@ -569,3 +569,12 @@ Evidence branch: [CURRENT-057](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-057
 - First attempt [40129456947](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129456947) failed due to verifier path/field-name assumptions. Correction: `bf9b121fbcee82475696e98c8c5d9b25e5e683e8`; retest passed. Failure retained as architecture learning.
 - Latest global audit [40129551204](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129551204): 3,820 files; 5,564 Markdown links; zero missing links; 62 Stable-ID groups (61 unreviewed), 88 Production-ID groups, 7 Reference-ID groups, 36 event-number groups, 13 ambiguous parent edges, one ambiguous timestamp; content remains REVIEW_REQUIRED.
 - Strict package baseline [40129104156](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129104156) passed 50/50 hashes and built the v1.4.8 package before the latest edits. Final digest/package run is required after this checkpoint update; consult the [portable conformance workflow](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/workflows/rahm-portable-conformance.yml) for the latest run.
+
+
+## CURRENT-059 update — no-silent-gap execution governance
+
+- Latest point: [POINT-0/008](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-008-DEEP-AUDIT-AND-NO-SILENT-GAP.md); input/output: [IN-052](../../0.0/anchors/PALANG-0.0-IN-20261025-052-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md) → [OUT-051](../../0.0/anchors/PALANG-0.0-OUT-20261025-051-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md) → [EVT-0161](../../architecture/BEHAVIOR-TRACE/EVT-0161-DEEP-AUDIT-STALE-GATE-AND-NO-SILENT-GAP-2026-10-25.md) → [CURRENT-059](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-059-DEEP-AUDIT-AND-CORRECTED-CONFORMANCE.md).
+- Rule: a gap between user input and assistant output must not silently reset an open task. If execution is incomplete, visibly state what was executed, what remains open, the evidence/read-back state, and the exact resume checkpoint.
+- A newly created NEXT is not evidence of execution. Keep NEXT-051 as the active continuation until its acceptance gates are genuinely met.
+- Conformance must assert the latest active IN/OUT/CURRENT/NEXT chain; a successful run against a stale branch is not a valid current acceptance receipt.
+- Automatic capture, persistent memory, independent AI-host transfer and idle/background execution remain NOT VERIFIED until tested in an authorized runtime.
