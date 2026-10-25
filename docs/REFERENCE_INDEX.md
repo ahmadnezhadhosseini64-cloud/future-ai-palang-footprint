@@ -1408,3 +1408,9 @@ Current continuation chain: POINT-0/013 → IN-057 → OUT-056 → EVT-0166 → 
 - Event: `docs/architecture/BEHAVIOR-TRACE/EVT-0174-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY-2026-10-25.md`
 - Current checkpoint: `docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-066-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md`
 - Status: chain written; independent read-back and full validation are pending. All unproven runtime, recovery, external-host and graph-triage gates remain OPEN. NEXT-051 remains active.
+
+
+## EVT-0175 — CURRENT-066 verifier stale-checkpoint failure
+- Event: `docs/architecture/BEHAVIOR-TRACE/EVT-0175-CURRENT-066-RECOVERY-VERIFIER-STALE-CHECKPOINT-2026-10-25.md`.
+- Related current: `docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-066-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md`.
+- Root cause: recovery verifier still expected CURRENT-065 while the overlay pointed to CURRENT-066. Correction is committed; exact-revision rerun is pending. Do not mark full recovery PASS yet.
