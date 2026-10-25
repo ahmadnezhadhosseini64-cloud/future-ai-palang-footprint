@@ -10,7 +10,7 @@
 - Canonical index: [REFERENCE_INDEX](../../REFERENCE_INDEX.md).
 - Integration queue: [INTEGRATION-QUEUE](../../architecture/INTEGRATION-QUEUE/README.md).
 - Active unresolved queue: [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
-- Executable runtime: [source](../../../../scripts/haif-runtime/haif_runtime.py), [tests](../../../../scripts/haif-runtime/tests/test_runtime.py), [runbook](../../../../scripts/haif-runtime/README.md).
+- Executable runtime: [source](../../../scripts/haif-runtime/haif_runtime.py), [tests](../../../scripts/haif-runtime/tests/test_runtime.py), [runbook](../../../scripts/haif-runtime/README.md).
 - Portable package manifest: [EXPORT_MANIFEST](../../portable/RAHM/EXPORT_MANIFEST.json).
 
 ## Delivered implementation
