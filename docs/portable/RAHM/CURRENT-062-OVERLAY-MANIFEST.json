@@ -1,7 +1,7 @@
 {
   "package_id": "HAIF-RAHM-CURRENT-062-OVERLAY-2026-10-25-001",
   "version": "1.0.0",
-  "status": "INCREMENTAL CONTINUITY INVENTORY; GIT BLOB SHA-1 RECORDED; EXACT-BYTE SHA-256 AND ARCHIVE NOT VERIFIED",
+  "status": "10-FILE INCREMENTAL INVENTORY; FINAL FOCUSED READ-BACK RECONCILIATION PENDING; EXACT-BYTE SHA-256 AND ARCHIVE NOT VERIFIED",
   "parent_manifest": "docs/portable/RAHM/CURRENT-061-OVERLAY-MANIFEST.json",
   "checkpoint": "G6IP-CURRENT-062-20261025",
   "purpose": "Delta inventory for the new CURRENT-062 chain and linked living architecture surfaces. The parent overlay retains prior prototype artifacts. This is not a complete release package.",
@@ -24,7 +24,7 @@
     },
     {
       "path": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-062-OPEN-GAPS-AND-CONTINUITY.md",
-      "git_blob_sha": "0106cbf62ac74bcd88f7131e425b4486a768679b",
+      "git_blob_sha": "49115d7e355d1834c6dcfa64b092992aacd43c9b",
       "sha256": null
     },
     {
@@ -59,7 +59,7 @@
     }
   ],
   "release_gates": [
-    "Read back every listed file and compare Git blob SHA-1.",
+    "Independently fetch each listed file after this manifest update and compare Git blob SHA-1.",
     "Run the current strict portable conformance workflow.",
     "Record exact-byte SHA-256 values and archive hash from its evidence.",
     "Fetch and inspect the resulting artifact and recovery receipt.",
