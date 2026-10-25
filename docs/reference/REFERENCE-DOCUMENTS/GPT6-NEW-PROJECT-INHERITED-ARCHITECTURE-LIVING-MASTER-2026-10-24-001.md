@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001
 - Production ID / شناسهٔ تولید: G6IP-IAM-20261024-001
-- Version / نسخه: 1.1.4
+- Version / نسخه: 1.1.5
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED / CONTENT PRESENT / IDENTIFIERS MATCHED
 - Parent architecture / معماری والد: Future AI / Palang Footprint — HAIF
 - New project root / ریشهٔ پروژهٔ جدید: [Point 0](../../0.0/anchors/GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001.md)
@@ -279,3 +279,10 @@ Latest inspected structural audit [40122633902](https://github.com/ahmadnezhadho
 - First attempt [40129456947](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129456947) failed due to verifier path/field-name assumptions. Correction: `bf9b121fbcee82475696e98c8c5d9b25e5e683e8`; retest passed. Failure retained as architecture learning.
 - Latest global audit [40129551204](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129551204): 3,820 files; 5,564 Markdown links; zero missing links; 62 Stable-ID groups (61 unreviewed), 88 Production-ID groups, 7 Reference-ID groups, 36 event-number groups, 13 ambiguous parent edges, one ambiguous timestamp; content remains REVIEW_REQUIRED.
 - Strict package baseline [40129104156](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40129104156) passed 50/50 hashes and built the v1.4.8 package before the latest edits. Final digest/package run is required after this checkpoint update; consult the [portable conformance workflow](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/workflows/rahm-portable-conformance.yml) for the latest run.
+
+
+## CURRENT-059 — latest continuation binding
+
+- Active point and interaction chain: [POINT-0/008](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-008-DEEP-AUDIT-AND-NO-SILENT-GAP.md) → [IN-052](../../0.0/anchors/PALANG-0.0-IN-20261025-052-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md) → [OUT-051](../../0.0/anchors/PALANG-0.0-OUT-20261025-051-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md) → [EVT-0161](../../architecture/BEHAVIOR-TRACE/EVT-0161-DEEP-AUDIT-STALE-GATE-AND-NO-SILENT-GAP-2026-10-25.md) → [CURRENT-059](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-059-DEEP-AUDIT-AND-CORRECTED-CONFORMANCE.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Preserve earlier checkpoints and NEXT-049/NEXT-050 as separate open branches. Do not renumber incomplete work.
+- Repository-state reconstruction is only one acceptance dimension; clean-host import, second-host import, persistence restart, automatic capture and idle/background execution each require independent receipts.
