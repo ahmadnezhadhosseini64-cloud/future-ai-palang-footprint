@@ -1381,3 +1381,9 @@ Current continuation chain: POINT-0/013 → IN-057 → OUT-056 → EVT-0166 → 
 - Event: `docs/architecture/BEHAVIOR-TRACE/EVT-0167-AUTONOMOUS-CONTINUITY-AND-RECOVERY-2026-10-25.md`
 - Current checkpoint: `docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-065-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md`
 - Status: chain registered; execution gates remain open. NEXT-051 remains the active graph audit.
+
+
+## EVT-0168 — audit failure and root cause
+- Event: `docs/architecture/BEHAVIOR-TRACE/EVT-0168-LIVING-ARCHITECTURE-AUDIT-FAILURE-AND-ROOT-CAUSE-2026-10-25.md`.
+- Time binding: `docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0168-AUDIT-FAILURE-2026-10-25.md`.
+- Living Architecture Audit run 40167940024 failed on tested SHA `5aed9604046d0802764531ff2e359827fb34edd1`; root cause and skipped downstream steps are preserved. Corrected verifier and queue-link tests remain to be read back on a fresh run.
