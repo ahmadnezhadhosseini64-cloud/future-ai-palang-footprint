@@ -92,3 +92,18 @@ The user-message timestamp remains UNKNOWN / UNVERIFIED.
 - Repository time UTC: 2026-10-25T13:47:25Z
 - Derived Asia/Tehran (+03:30): 2026-10-25T17:17:25+03:30
 - Queue update records the exact passing test runs, ZIP SHA-256, manifest reconciliation and remaining independent-host/graph gates.
+
+
+## Clean distribution ZIP and latest audit binding
+
+| Item | Commit / run | UTC | Asia/Tehran (+03:30) |
+|---|---|---|---|
+| Latest audit tested revision | 78c05af6653dead87ffda4d1ded4db92538a782f | 2026-10-25T13:48:00Z (run context; exact source commit metadata should be used for repository time) | 2026-10-25T17:18:00+03:30 |
+| Latest audit run | 40199267408 | 2026-10-25T13:48:01Z (run created) | 2026-10-25T17:18:01+03:30 |
+| CURRENT-069 clean ZIP receipt | 114c1c70f80f113eb2900158e44180189f864d3c | 2026-10-25T13:49:46Z | 2026-10-25T17:19:46+03:30 |
+| EVT-0185 clean ZIP receipt | 64203d3b9b7d9f28135238a5802b395b7b8149b1 | 2026-10-25T13:49:53Z | 2026-10-25T17:19:53+03:30 |
+| Living master clean bundle receipt | 6d84453bed876ae1e0bf829f7f484ed99257349b | 2026-10-25T13:50:06Z | 2026-10-25T17:20:06+03:30 |
+
+Clean ZIP SHA-256: d8fb3ba5be22bc1064063fed67c4c705531179f221596b56f812c07a89bd028a.
+Clean ZIP was extracted to a fresh temporary directory and all seven tests passed.
+Exact user-message time remains UNKNOWN / UNVERIFIED.
