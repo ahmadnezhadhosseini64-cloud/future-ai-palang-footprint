@@ -27,8 +27,8 @@ The current audit found that `.github/workflows/rahm-portable-conformance.yml` s
 
 ## Executable architecture step
 A dependency-free local continuity runtime was added:
-- [Runtime implementation](../../scripts/haif-runtime/haif_runtime.py)
-- [Tests](../../scripts/haif-runtime/tests/test_runtime.py)
-- [Runbook](../../scripts/haif-runtime/README.md)
+- [Runtime implementation](../../../scripts/haif-runtime/haif_runtime.py)
+- [Tests](../../../scripts/haif-runtime/tests/test_runtime.py)
+- [Runbook](../../../scripts/haif-runtime/README.md)
 
 The conformance workflow now includes this test suite and watches the runtime directory. This is a source-level implementation change; current workflow pass/fail must be confirmed from a run on the exact resulting commit. It does not imply live ChatGPT capture or an always-on agent.
