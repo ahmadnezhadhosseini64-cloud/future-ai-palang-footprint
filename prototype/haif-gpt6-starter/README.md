@@ -1,4 +1,4 @@
-# HAIF GPT-6 Portable Starter v0.1
+# HAIF GPT-6 Portable Starter v0.2.1
 
 This is an executable starter package inside the existing Future AI / Palang Footprint repository. It is not a separate project and does not replace the living master, historical anchors or NEXT-051.
 
