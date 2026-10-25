@@ -9,7 +9,7 @@
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: POINT-0/019 is the latest user-turn root; pointer-discovery source/tests are registered and wired into CI, but the exact-head result remains pending inspection; CURRENT-065/CURRENT-066 execution-pointer conflict remains OPEN; NEXT-051 remains OPEN/LIVING; no successor NEXT created to disguise unfinished work.
+- Status: POINT-0/020 is the latest user-turn root; the live pointer parser failure is recorded and a regex/test correction is registered, but fresh exact-head CI remains pending; CURRENT-065/CURRENT-066 execution-pointer conflict remains OPEN; NEXT-051 remains OPEN/LIVING; no successor NEXT created to disguise unfinished work.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
@@ -1919,3 +1919,10 @@ The source blob remained unchanged and Library version 7 was independently read 
 - Continue NEXT-051, Issue #20, Issue #21 and BOART-FOLLOWUP-01. No NEXT-052 placeholder. Independent host import, persistence, automatic capture and background execution remain OPEN / NOT PROVEN.
 
 - Time evidence: [TIME-BINDING-EVT-0181](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0181-POINT-0-019-2026-10-25.md); commit-based timestamps are recorded separately from tests and user-message time.
+
+
+## POINT-0/020 — Live pointer parser defect and recovery
+- Root: [POINT-0/020](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-020-LIVE-POINTER-FAILURE-AND-RECOVERY.md); chain: [IN-060](../../0.0/anchors/PALANG-0.0-IN-20261025-060-LIVE-POINTER-FAILURE-AND-RECOVERY.md) → [OUT-059](../../0.0/anchors/PALANG-0.0-OUT-20261025-059-LIVE-POINTER-FAILURE-AND-RECOVERY.md) → [EVT-0182](../BEHAVIOR-TRACE/EVT-0182-LIVE-POINTER-FAILURE-AND-RECOVERY-2026-10-25.md) → [CURRENT-067](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-067-LIVE-POINTER-FAILURE-AND-RECOVERY.md).
+- Evidence: audit run [40176902366](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40176902366) failed in pointer discovery; the traceback identifies a mismatch between short CURRENT IDs in the regex and date-bearing CURRENT filenames in the real repository.
+- Correction: parser pattern now accepts both forms and a regression fixture was added. Status: WRITTEN; fresh exact-head CI not yet verified.
+- Continue existing NEXT-051 and Issues #20/#21 plus BOART-FOLLOWUP-01. Do not create NEXT-052. Keep CURRENT-065/CURRENT-066 adjudication and all host/persistence/background/external-storage gates OPEN.
