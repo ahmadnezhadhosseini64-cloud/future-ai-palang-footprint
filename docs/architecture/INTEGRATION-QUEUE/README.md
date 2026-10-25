@@ -1849,3 +1849,9 @@ Next execution remains attached to existing [NEXT-051](../../0.0/anchors/PALANG-
 - Point: [POINT-0/014](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-014-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md)
 - Checkpoint: [CURRENT-065](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-065-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md)
 - Next work: execute runtime tests; run clean export/import recovery; continue NEXT-051 occurrence-level graph review; inspect current CI/artifact receipt; reconcile package manifests. Keep external host, restart durability and background capture open until directly tested.
+
+
+## Recovery verifier failure — EVT-0168
+- [EVT-0168](../BEHAVIOR-TRACE/EVT-0168-LIVING-ARCHITECTURE-AUDIT-FAILURE-AND-ROOT-CAUSE-2026-10-25.md) records failed Living Architecture Audit run 40167940024 on SHA `5aed9604046d0802764531ff2e359827fb34edd1`.
+- Root causes: three incorrect relative links to repository-root runtime files and a verifier/manifest mismatch between CURRENT-059 assumptions and CURRENT-064 state.
+- The links and verifier have been corrected in the working continuation; a fresh exact-commit audit must prove the correction. Do not close NEXT-051 or mark runtime/cold-host recovery complete from the failed run.
