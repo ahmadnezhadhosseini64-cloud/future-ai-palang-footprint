@@ -274,3 +274,11 @@ summary += [f"- {k}: {v}" for k, v in manifest["counts"].items()]
 summary += ["", "## Semantic boundary", "- Structural extraction remains distinct from semantic adjudication.", "- Source-hash-verified role decisions annotate reviewed groups; raw collision counts remain visible.", "- Proposed aliases are not automatically accepted; preserve historical files and never auto-delete duplicates.", "- Review parent ambiguities, missing links and identity collisions before closure."]
 (OUT / "historical-0.0-graph-manifest-summary.txt").write_text("\n".join(summary) + "\n", encoding="utf-8")
 print("\n".join(summary))
+
+for item in missing_links:
+    print("GRAPH_MISSING_LOCAL_LINK=" + json.dumps({
+        "source": item.get("source"),
+        "target": item.get("target"),
+        "resolved_path": item.get("resolved_path")
+    }, ensure_ascii=False, sort_keys=True))
+
