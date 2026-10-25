@@ -92,3 +92,13 @@ NEXT-051 remains OPEN/LIVING until all remaining acceptance gates are satisfied;
 - [ ] Inspectable report of current missing links; repair each verified target, then rerun the graph audit.
 - [ ] Clean independent AI-host import and runtime capability checks remain OPEN / NOT VERIFIED.
 - [ ] Second-host import, persistence restart, automatic interaction capture, idle/background execution remain OPEN / NOT VERIFIED.
+
+
+## Executed work receipts — 2026-10-25 (NEXT-051 remains OPEN)
+- [x] Corrected the portable conformance gate to target the canonical IN-052 / OUT-051 / CURRENT-059 / NEXT-051 chain; this fixes the stale-checkpoint false-pass defect.
+- [x] Exact-byte manifest reconciliation passed on run [40150549906](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150549906), commit `9d434cba8b44eb11e891f21e2ba7cc046395334b`: 62/62 hashes; schema valid=0 errors, invalid=4 errors; IN/OUT reconstruction PASS; package 63 entries, 286591 bytes, SHA-256 `d5edd12abe4e87b3a72e2bec795c9d9a6760ba60cef2b2a3abe488e36ccc8d56`.
+- [x] Current-chain recovery and structural audit workflow passed in [40150549910](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150549910); graph content remains REVIEW_REQUIRED (10 historical graph missing-link findings, 62 stable-ID groups/61 unreviewed, 88 production-ID groups, 7 reference-ID groups, 37 event-number groups, 13 ambiguous parents, 1 ambiguous timestamp).
+- [ ] Re-run strict conformance after any edits made after commit `9d434cba8b44eb11e891f21e2ba7cc046395334b`; use latest workflow history as authority.
+- [ ] Adjudicate each graph finding individually without bulk deletion or speculative renumbering.
+- [ ] Clean AI-host import, second-host import, actual persistence restart, live automatic capture and idle/background execution remain OPEN / NOT VERIFIED.
+- NEXT-051 stays OPEN/LIVING. Do not create NEXT-052 as a substitute for completing these gates.
