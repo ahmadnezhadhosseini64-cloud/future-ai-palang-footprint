@@ -24,6 +24,13 @@ class PointerDiscoveryTests(unittest.TestCase):
         self.assertEqual(result["candidate_ids"], ["CURRENT-066"])
         self.assertFalse(result["winner_selected"])
 
+    def test_date_bearing_checkpoint_filenames_are_recognized(self):
+        values = inputs(manifest_id="CURRENT-20261025-066", verifier_id="CURRENT-20261025-066", portable_id="CURRENT-20261025-066")
+        result = MODULE.discover_from_texts(*values)
+        self.assertEqual(result["status"], "CONSISTENT")
+        self.assertEqual(result["candidate_ids"], ["CURRENT-066"])
+        self.assertFalse(result["winner_selected"])
+
     def test_conflict_returns_ambiguous_without_winner(self):
         values = inputs(manifest_id="CURRENT-066", verifier_id="CURRENT-066",
                         portable_id="CURRENT-066",
