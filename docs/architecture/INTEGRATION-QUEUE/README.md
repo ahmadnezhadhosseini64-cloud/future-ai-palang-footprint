@@ -3,7 +3,7 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.8.7
+- Version: 1.8.3
 - Date: 2026-10-20
 - Exact Time: 11:25 local project time, minute precision; exact seconds not captured.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
@@ -1772,3 +1772,11 @@ Active next task: [EVT-0122](../BEHAVIOR-TRACE/EVT-0122-BIDIRECTIONAL-IN-OUT-REC
 
 ## NEXT-051 status
 The current repository-chain IN/OUT equivalence subgate is PASS. NEXT-051 remains OPEN for full project evidence reconstruction, clean/second AI-host import, real persistence/idle execution, and individual graph-finding adjudication.
+
+
+## CURRENT-059 — executed audit correction and open acceptance gates
+
+- Latest chain: POINT-0/008 → IN-052 → OUT-051 → EVT-0161 → CURRENT-059 → NEXT-051.
+- A real stale-test defect was corrected: portable conformance had referenced IN-047/OUT-046 and CURRENT-054/NEXT-048 rather than the active branch. The recovery verifier and conformance workflow are being advanced to the current chain; fresh workflow receipts are required.
+- Keep NEXT-051 OPEN/LIVING; do not create NEXT-052 to replace unfinished tasks.
+- Open gates: final exact-byte SHA-256 reconciliation and package build after all edits; full graph triage (latest observed: 10 missing links, 62 Stable-ID collision groups/61 unreviewed, 88 Production-ID groups, 7 Reference-ID groups, 36 event-number groups, 13 ambiguous parent edges); independent clean AI-host import; second-host import; persistence restart; automatic capture; idle/background execution.
