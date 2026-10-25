@@ -11,6 +11,7 @@
 - Integration queue: [INTEGRATION-QUEUE](../../architecture/INTEGRATION-QUEUE/README.md).
 - Current overlay manifest: [CURRENT-065-OVERLAY-MANIFEST](../../portable/RAHM/CURRENT-065-OVERLAY-MANIFEST.json).
 - Auxiliary live mirror evidence (not part of the IN/OUT interaction chain): [EVT-0170](../../architecture/BEHAVIOR-TRACE/EVT-0170-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md).
+- Current-chain recovery failure preserved for correction: [EVT-0171](../../architecture/BEHAVIOR-TRACE/EVT-0171-CURRENT-065-CHAIN-RECOVERY-FAILURE-2026-10-25.md).
 - Status: checkpoint registered; execution evidence still open.
 
 ## Baseline
