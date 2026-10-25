@@ -3,9 +3,15 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-25 — CURRENT-061 / POINT-0-010 / IN-054 / OUT-053 / EVT-0163; prototype source built; focused structural checks pass; NEXT-051 remains active/open; strict export digest and runtime tests pending.
+**Last Updated:** 2026-10-25 — CURRENT-062 / POINT-0-011; runnable local continuity runtime added; runtime CI result pending; NEXT-051 remains active/open.
 
 ## Canonical References
+
+| HAIF-RUNTIME-0.1 | `scripts/haif-runtime/haif_runtime.py` | Executable local continuity engine: hash-chained IN/OUT, checkpoints, JSON export/import and validation | Source committed; automated tests added to portable conformance; latest CI result pending |
+| HAIF-RUNTIME-TESTS-0.1 | `scripts/haif-runtime/tests/test_runtime.py` | Tests for continuity, checkpoint recovery, tamper detection and no-overwrite behavior | Added; execute and inspect current CI receipt |
+| HAIF-RUNTIME-RUNBOOK-0.1 | `scripts/haif-runtime/README.md` | Commands to run the local engine and recover from exported JSON | Registered; local clean-environment run pending |
+
+
 
 | PGGR-2026-10-20-001 | `docs/reference/REFERENCE-DOCUMENTS/PROJECT-GOAL-AND-GAP-RECONCILIATION-2026-10-20-001.md` | سند هدف نهایی پروژه و تطبیق شکاف‌ها با وضعیت مبتنی بر شواهد | Repository write completed; independent read-back and architecture reconciliation pending |
 
