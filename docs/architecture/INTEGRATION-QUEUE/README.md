@@ -1861,3 +1861,10 @@ Next execution remains attached to existing [NEXT-051](../../0.0/anchors/PALANG-
 - Mirror recheck [EVT-0172](../BEHAVIOR-TRACE/EVT-0172-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md): source blob unchanged; Library version 7 read back; delta/edit distance 1 from a trailing newline; semantic match within tolerance; no write required.
 - Exact-main audit [EVT-0173](../BEHAVIOR-TRACE/EVT-0173-CURRENT-065-EXACT-MAIN-AUDIT-FAILURE-AND-CORRECTION-2026-10-25.md): run 40169128251 failed on SHA `19044f6a238e3d00805813695f328f0540af5e8d` due to four missing explicit POINT-0/014 links. Links were added; rerun the full audit on the exact repaired main SHA and inspect the artifact before closing the gate.
 - Current point: CURRENT-065. Active next: NEXT-051. Issue #20 and #21 remain OPEN. No host-wide capture or external persistence claim is permitted.
+
+
+## POINT-0/015 → CURRENT-066 — living master recovery and open proof gates
+- Root: [POINT-0/015](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-015-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md) → [IN-059](../../0.0/anchors/PALANG-0.0-IN-20261025-059-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md) → [OUT-058](../../0.0/anchors/PALANG-0.0-OUT-20261025-058-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md) → [EVT-0174](../BEHAVIOR-TRACE/EVT-0174-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY-2026-10-25.md) → [CURRENT-066](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-066-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md).
+- Status: repository writes recorded; independent read-back, digest reconciliation, runtime tests and clean recovery still require receipts.
+- Required next actions: verify the current manifest against actual blob SHAs; inspect current workflow/artifact; run tests and clean export/import round-trip; compare state reconstructed from IN and OUT; adjudicate NEXT-051 graph findings individually.
+- Keep independent-host/second-host import, restart persistence, automatic capture, background execution and external storage OPEN / NOT PROVEN until tested in a real authorized runtime. Do not create a successor NEXT to hide unfinished NEXT-051 work.
