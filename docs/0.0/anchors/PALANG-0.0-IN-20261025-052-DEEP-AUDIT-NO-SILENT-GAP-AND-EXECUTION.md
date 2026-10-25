@@ -5,6 +5,7 @@
 - Version: 1.0.1
 - Status: REGISTERED; independent read-back required; no claim of full completion.
 - Parent checkpoint: [CURRENT-058](./PALANG-0.0-CURRENT-20261024-058-DEEP-EXCAVATION-EXECUTION-RECEIPTS.md); new current: [CURRENT-059](./PALANG-0.0-CURRENT-20261025-059-DEEP-AUDIT-AND-CORRECTED-CONFORMANCE.md)
+- Portable living master: [FIRST-LIVING-MASTER](../../portable/RAHM/FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md)
 - Active continuation retained: [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
 - Previous user point preserved: [POINT-0/007](./GPT6-RAHM-USER-POINT-0-20261024-007-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md)
 - Triggering request: current conversation, 2026-10-25; exact message timestamp is not asserted by this record.
