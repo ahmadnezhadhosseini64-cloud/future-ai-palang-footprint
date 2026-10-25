@@ -712,3 +712,10 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Root: [POINT-0/018](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-018-LIVING-REGISTRATION-AND-NEXT-STEPS.md); prior root POINT-0/017 remains preserved.
 - POINT-0/018 commit: [9b459710](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/9b459710a1a757b8f9ccacc6bfdc9c6618e80f90), UTC `2026-10-25T07:37:13Z` → Tehran `2026-10-25T11:07:13+03:30`; EVT-0180 commit: [a2dc3dcf](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/a2dc3dcfa3d68f75579efec66c29c1942e447f99), UTC `2026-10-25T07:37:15Z` → Tehran `2026-10-25T11:07:15+03:30`.
 - CURRENT-065/CURRENT-066 remains OPEN for source-backed reconciliation. NEXT-051 remains the existing active queue; Issue #20, Issue #21 and BOART-FOLLOWUP-01 remain OPEN.
+
+
+## EVT-0181 — POINT-0/019 model capability build
+- [EVT-0181](./EVT-0181-POINT-0-019-MODEL-CAPABILITY-BUILD-2026-10-25.md) records the request to advance the initial model into testable capabilities.
+- Root: [POINT-0/019](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-019-MODEL-CAPABILITY-BUILD.md); parent: [POINT-0/018](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-018-LIVING-REGISTRATION-AND-NEXT-STEPS.md).
+- New executable increment: `scripts/behavior-hunter/discover_current_0_0_pointer.py` with fixtures under `scripts/behavior-hunter/tests/`; integrated into Living Architecture Audit. Exact-head run and artifact inspection are required before PASS.
+- Open gates: pointer conflict, NEXT-051, Issue #20, Issue #21, BOART-FOLLOWUP-01, exact-SHA tests, external host import and persistence.
