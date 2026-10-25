@@ -1517,3 +1517,10 @@ Current continuation chain: POINT-0/013 → IN-057 → OUT-056 → EVT-0166 → 
 - Exact-head audit [40206260132](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40206260132): SUCCESS on `81afd4f181e87ba71c4d1acf8b89d4ee8432e1ca`; 8/8 tests passed.
 - Clean current distribution ZIP SHA-256: `d68e03b42e26b88385d1155c02d09b213a53366e27e99518c7c049f6ec6563be`; extracted into a fresh directory and tested 8/8.
 - Honest boundary: target GPT-6 host import, host persistence, automatic capture, background execution and external writes remain OPEN / NOT PROVEN.
+
+
+## EVT-0187 — Direct Python runtime smoke test
+
+- [EVT-0187](./architecture/BEHAVIOR-TRACE/EVT-0187-CLEAN-DISTRIBUTION-RUNTIME-SMOKE-2026-10-25.md)
+- [CURRENT-070](./0.0/anchors/PALANG-0.0-CURRENT-20261025-070-HARD-AUDIT-AND-HOST-EXECUTION.md)
+- Clean package SHA-256: `d68e03b42e26b88385d1155c02d09b213a53366e27e99518c7c049f6ec6563be`; direct CLI lifecycle passed in a fresh runtime directory. Independent GPT-host execution remains OPEN.
