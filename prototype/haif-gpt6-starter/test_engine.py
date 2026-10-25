@@ -138,6 +138,31 @@ class HaifStarterEngineTests(unittest.TestCase):
             self.assertEqual(json.loads(audit_result.stdout)["result"], "PASS")
             self.assertEqual(json.loads(audit_result.stdout)["event_count"], 1)
 
+    def test_one_command_bootstrap_creates_0_plus_root_and_open_gates(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            state_path = root / "haif-state.json"
+            script = Path(__file__).with_name("bootstrap_0plus.py")
+            result = subprocess.run(
+                [sys.executable, str(script), "--state", str(state_path)],
+                check=True, capture_output=True, text=True
+            )
+            output = json.loads(result.stdout)
+            self.assertEqual(output["result"], "BOOTSTRAPPED_AND_READBACK_VERIFIED")
+            self.assertEqual(output["canonical_root"]["labels"], ["0", "0+"])
+            self.assertEqual(output["next_0_0"]["parent_point_id"], output["canonical_root"]["point_id"])
+            self.assertEqual(output["open_gaps_preserved"], 6)
+            state = load_state(state_path)
+            self.assertEqual(audit(state)["result"], "PASS")
+            self.assertEqual(len(state["points"]), 2)
+            self.assertEqual(len(state["gaps"]), 6)
+            retry = subprocess.run(
+                [sys.executable, str(script), "--state", str(state_path)],
+                capture_output=True, text=True
+            )
+            self.assertNotEqual(retry.returncode, 0)
+            self.assertIn("refusing to overwrite existing state", retry.stderr)
+
     def test_atomic_file_readback(self):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "state.json"
