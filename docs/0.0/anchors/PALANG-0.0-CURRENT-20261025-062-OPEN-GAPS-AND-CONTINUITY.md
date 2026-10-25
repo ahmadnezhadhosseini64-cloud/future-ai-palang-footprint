@@ -2,7 +2,7 @@
 
 - Stable ID: G6IP-CURRENT-062-20261025
 - Production ID: G6IP-CURRENT-062
-- Version: 1.0.3
+- Version: 1.0.4
 - Parent checkpoint: [CURRENT-061](./PALANG-0.0-CURRENT-20261025-061-PROTOTYPE-AND-GRAPH-TRIAGE.md)
 - User Point 0: [POINT-0/011](./GPT6-RAHM-USER-POINT-0-20261025-011-OPEN-GAPS-AND-CONTINUITY.md)
 - Interaction chain: [IN-055](./PALANG-0.0-IN-20261025-055-OPEN-GAPS-AND-CONTINUITY.md) → [OUT-054](./PALANG-0.0-OUT-20261025-054-OPEN-GAPS-AND-CONTINUITY.md) → [EVT-0164](../../architecture/BEHAVIOR-TRACE/EVT-0164-OPEN-GAPS-AND-CONTINUITY-2026-10-25.md) → CURRENT-062.
@@ -55,3 +55,14 @@ Status: NEW CURRENT 0.0 POINT; full acceptance remains OPEN pending evidence.
 - [ ] Browser interaction, clean independent-host adoption, second host, restart persistence and automatic/idle execution: NOT RUN / NOT VERIFIED.
 
 Status: focused repository registration and structural read-back PASS after final manifest hash reconciliation; broader architecture/runtime acceptance remains OPEN.
+
+
+## Executable implementation slice — moved from plan to code
+The first local runtime has now been added to the repository:
+- [Runtime source](../../../scripts/haif-runtime/haif_runtime.py)
+- [Automated tests](../../../scripts/haif-runtime/tests/test_runtime.py)
+- [Run instructions](../../../scripts/haif-runtime/README.md)
+
+The portable conformance workflow now runs `python -m unittest discover -s scripts/haif-runtime/tests -v` and watches `scripts/haif-runtime/**`. Test result for the final commit remains pending until the actual GitHub Actions run is read back.
+
+This changes the next 0.0 action from “design a runtime” to “execute and fix the runtime tests, then prove import/recovery in a separate clean environment.” The global historical graph audit remains open and must not block proving this small executable slice.
