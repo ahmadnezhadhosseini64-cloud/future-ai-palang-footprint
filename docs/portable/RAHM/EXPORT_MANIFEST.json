@@ -1,7 +1,7 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.5.8",
-  "manifest_status": "Current canonical CURRENT-059 chain reconciled; ALT-001 drafts retained with unique IDs; strict byte-check and archive run pending",
+  "version": "1.5.9",
+  "manifest_status": "All 62 listed files have populated digests; latest strict workflow must verify the current commit",
   "created_from_checkpoint": "G6IP-RAHM-CURRENT-059-20261025",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [
@@ -14,8 +14,8 @@
     {
       "path": ".github/workflows/rahm-portable-conformance.yml",
       "version": "current",
-      "git_blob_sha": "7b38d018ff645af73ddf374ec3eba72977f3c788",
-      "sha256": "09bd4e8fc74c7d2198508fc3ccd5150b5523a199d43ac7eb07704df5c7c71078"
+      "git_blob_sha": "0196d570389856055ad84c3d3af1324b559f8fe6",
+      "sha256": "943c4f066065ea477fe73efe55d4e9ffca3b99cafc3d5426e19b1f7084ec573e"
     },
     {
       "path": "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-003-FIRST-LIVING-MASTER-AND-PORTABILITY.md",
