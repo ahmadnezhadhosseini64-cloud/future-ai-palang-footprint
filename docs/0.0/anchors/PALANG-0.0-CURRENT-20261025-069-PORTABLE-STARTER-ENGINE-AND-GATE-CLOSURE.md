@@ -87,3 +87,12 @@ A separate Portable RAHM Conformance run [40198220828](https://github.com/ahmadn
 - Audit artifact ID 12601800399; digest sha256:5edfca23d4f76152bbeb1bcb51830509024270d2a0bbecd66087438fe5208207.
 - Portable RAHM Conformance [40199078860](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40199078860): SUCCESS on the same tested SHA. Portable package artifact ID 12601380486; conformance evidence artifact ID 12601060622.
 - The stale workflow manifest digest issue is closed on this revision. Remaining open gates are pointer/graph adjudication and real GPT-host capabilities.
+
+
+## Latest audit and clean portable ZIP verification
+
+- Latest Living Architecture Audit [40199267408](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40199267408): SUCCESS on tested SHA 78c05af6653dead87ffda4d1ded4db92538a782f; 7/7 starter tests PASS. Audit artifact ID 12601436214, digest sha256:d9c253a5e15a21667e30d9bef926b83da0eb927485479473d77613af8826f199.
+- The workflow ZIP contained Python cache files. A clean distribution ZIP was rebuilt excluding __pycache__ and .pyc files, extracted into a fresh temporary directory, and the full seven-test suite was rerun successfully.
+- Clean distribution ZIP SHA-256: d8fb3ba5be22bc1064063fed67c4c705531179f221596b56f812c07a89bd028a.
+- The clean ZIP contains only manifest.json, test_engine.py, GPT6_HOST_INSTRUCTIONS.md, state.schema.json, README.md and engine.py inside prototype/haif-gpt6-starter/.
+- Latest Portable RAHM Conformance remains PASS on tested SHA e0a8683ed2789dcd4804970ac4a2b5a6d1d6a72a (run 40199225642). The intervening time-binding-only update did not alter the package code or export-manifested workflow bytes.
