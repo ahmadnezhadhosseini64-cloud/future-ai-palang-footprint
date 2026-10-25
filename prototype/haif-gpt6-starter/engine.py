@@ -50,6 +50,7 @@ def new_state(project: str = "Future AI / Palang Footprint") -> dict:
         "created_at_utc": now_utc(),
         "updated_at_utc": now_utc(),
         "events": [],
+        "points": [],
         "gaps": [],
         "children": [],
         "checkpoint": None,
@@ -114,6 +115,43 @@ def verify_state(state: Any) -> list[str]:
             input_ids.add(iid)
             output_ids.add(oid)
         previous = event.get("event_hash", previous)
+    points = state.get("points", [])
+    if not isinstance(points, list):
+        errors.append("points must be an array")
+    else:
+        point_ids = set()
+        labels_seen = {}
+        for i, point in enumerate(points):
+            p = f"points[{i}]"
+            if not isinstance(point, dict):
+                errors.append(f"{p} must be an object")
+                continue
+            pid = point.get("point_id")
+            labels = point.get("labels")
+            if not isinstance(pid, str) or not pid:
+                errors.append(f"{p}.point_id is required")
+            if pid in point_ids:
+                errors.append(f"{p}.point_id duplicate: {pid}")
+            point_ids.add(pid)
+            if not isinstance(labels, list) or not labels or any(not isinstance(x, str) or not x for x in labels):
+                errors.append(f"{p}.labels must be a non-empty string array")
+            else:
+                if len(set(labels)) != len(labels):
+                    errors.append(f"{p}.labels contains duplicate aliases")
+                for label in labels:
+                    if label in labels_seen and labels_seen[label] != pid:
+                        errors.append(f"{p}.label alias collision: {label}")
+                    labels_seen[label] = pid
+                if "0+" in labels and "0" not in labels:
+                    errors.append(f"{p}: 0+ production marker must share the canonical 0 point")
+                if "0+" in labels and point.get("production_marker") is not True:
+                    errors.append(f"{p}: 0+ requires production_marker=true")
+            if point.get("kind") not in {"ROOT", "CONTINUATION"}:
+                errors.append(f"{p}.kind is invalid")
+            if point.get("kind") == "CONTINUATION" and not point.get("parent_point_id"):
+                errors.append(f"{p}: continuation requires parent_point_id")
+            if point.get("kind") == "CONTINUATION" and point.get("parent_point_id") not in point_ids:
+                errors.append(f"{p}: continuation parent must precede the child")
     gaps = state.get("gaps")
     if not isinstance(gaps, list):
         errors.append("gaps must be an array")
@@ -220,6 +258,39 @@ def record_interaction(state: dict, user_input: str, assistant_output: str,
     event["registration_status"] = "WRITE_READBACK_VERIFIED"
     event["event_hash"] = digest(payload(event))
     return event
+
+
+def register_point(state: dict, point_id: str, labels: list[str], kind: str = "ROOT",
+                   parent_point_id: str | None = None, production_marker: bool = False,
+                   purpose: str = "") -> dict:
+    if not point_id.strip() or not labels or any(not isinstance(x, str) or not x.strip() for x in labels):
+        raise ValueError("point_id and non-empty labels are required")
+    if len(set(labels)) != len(labels):
+        raise ValueError("duplicate aliases within point")
+    if kind not in {"ROOT", "CONTINUATION"}:
+        raise ValueError("kind must be ROOT or CONTINUATION")
+    if "0+" in labels and ("0" not in labels or not production_marker):
+        raise ValueError("0+ is a production marker on the same canonical point as 0; include both labels and production_marker=true")
+    if kind == "CONTINUATION" and not parent_point_id:
+        raise ValueError("continuation requires parent_point_id")
+    existing = state.setdefault("points", [])
+    if any(p.get("point_id") == point_id for p in existing):
+        raise ValueError("duplicate canonical point_id")
+    occupied = {label for point in existing for label in point.get("labels", [])}
+    if any(label in occupied for label in labels):
+        raise ValueError("point label already belongs to another canonical point")
+    if parent_point_id and not any(p.get("point_id") == parent_point_id for p in existing):
+        raise ValueError("parent point does not exist")
+    point = {
+        "point_id": point_id, "labels": list(labels), "kind": kind,
+        "parent_point_id": parent_point_id, "production_marker": production_marker,
+        "purpose": purpose, "created_at_utc": now_utc()
+    }
+    existing.append(point)
+    append_event(state, "POINT_REGISTERED", point_id=point_id, labels=list(labels),
+                 kind=kind, parent_point_id=parent_point_id,
+                 production_marker=production_marker, purpose=purpose)
+    return point
 
 
 def add_gap(state: dict, title: str, description: str, evidence_class: str = "UNKNOWN",
@@ -354,6 +425,13 @@ def main(argv: list[str] | None = None) -> int:
     gap.add_argument("--description", default="")
     gap.add_argument("--evidence-class", choices=sorted(EVIDENCE_CLASSES), default="UNKNOWN")
     gap.add_argument("--source-ref")
+    point = sub.add_parser("point")
+    point.add_argument("--point-id", required=True)
+    point.add_argument("--labels", required=True, help="Comma-separated aliases for one canonical point")
+    point.add_argument("--kind", choices=["ROOT", "CONTINUATION"], default="ROOT")
+    point.add_argument("--parent-point-id")
+    point.add_argument("--production-marker", action="store_true")
+    point.add_argument("--purpose", default="")
     sub.add_parser("audit")
     sub.add_parser("export")
     imp = sub.add_parser("import")
@@ -376,7 +454,12 @@ def main(argv: list[str] | None = None) -> int:
             result = {"result": "IMPORTED_AND_VERIFIED", "state_id": state["state_id"]}
         else:
             state = load_state(path)
-            if args.command == "record":
+            if args.command == "point":
+                item = register_point(state, args.point_id, [x.strip() for x in args.labels.split(",") if x.strip()],
+                                      args.kind, args.parent_point_id, args.production_marker, args.purpose)
+                save_state(path, state)
+                result = {"result": "POINT_REGISTERED_AND_READBACK_VERIFIED", **item}
+            elif args.command == "record":
                 event = record_interaction(state, args.input, args.output, args.source_ref)
                 save_state(path, state)
                 result = {"result": "RECORDED_AND_READBACK_VERIFIED", "anchor_id": event["anchor_id"],
