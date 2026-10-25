@@ -288,7 +288,7 @@ def register_point(state: dict, point_id: str, labels: list[str], kind: str = "R
     }
     existing.append(point)
     append_event(state, "POINT_REGISTERED", point_id=point_id, labels=list(labels),
-                 kind=kind, parent_point_id=parent_point_id,
+                 point_kind=kind, parent_point_id=parent_point_id,
                  production_marker=production_marker, purpose=purpose)
     return point
 
