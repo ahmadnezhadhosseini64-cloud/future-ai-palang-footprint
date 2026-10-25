@@ -56,13 +56,14 @@ jobs:
           from pathlib import Path
           root = Path(".")
           sources = {
-              "IN": root / "docs/0.0/anchors/PALANG-0.0-IN-20261025-052-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md",
-              "OUT": root / "docs/0.0/anchors/PALANG-0.0-OUT-20261025-051-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md",
+              "IN": root / "docs/0.0/anchors/PALANG-0.0-IN-20261025-055-OPEN-GAPS-AND-CONTINUITY.md",
+              "OUT": root / "docs/0.0/anchors/PALANG-0.0-OUT-20261025-054-OPEN-GAPS-AND-CONTINUITY.md",
           }
           expected = {
-              "current": "PALANG-0.0-CURRENT-20261025-059-DEEP-AUDIT-AND-CORRECTED-CONFORMANCE.md",
+              "current": "PALANG-0.0-CURRENT-20261025-062-OPEN-GAPS-AND-CONTINUITY.md",
               "next": "PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md",
-              "master": "FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md",
+              "master": "سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md",
+              "manifest": "CURRENT-062-OVERLAY-MANIFEST.json",
           }
           recovered = {}
           for side, path in sources.items():
@@ -76,7 +77,7 @@ jobs:
               assert "open" in content.casefold() or "not verified" in content.casefold(), f"{side} recovery did not preserve open gates"
               recovered[side] = state
           assert recovered["IN"] == recovered["OUT"], f"IN/OUT recovery mismatch: {recovered}"
-          evidence = {"test_id":"RAHM-IN-OUT-RECOVERY-059", "result":"PASS", "recovered_from":"IN-052 and OUT-051 independently", "canonical_state":recovered["IN"], "open_gates_preserved":True, "scope":"Artifact-link and checkpoint recovery equivalence; not a full hidden-memory or independent-host test."}
+          evidence = {"test_id":"RAHM-IN-OUT-RECOVERY-062", "result":"PASS", "recovered_from":"IN-055 and OUT-054 independently", "canonical_state":recovered["IN"], "open_gates_preserved":True, "scope":"Artifact-link and checkpoint recovery equivalence; not a full hidden-memory or independent-host test."}
           Path("rahm-recovery-equivalence.json").write_text(json.dumps(evidence, indent=2)+"\n", encoding="utf-8")
           print(json.dumps(evidence, indent=2))
           print("IN_OUT_RECOVERY_EQUIVALENCE=PASS")
