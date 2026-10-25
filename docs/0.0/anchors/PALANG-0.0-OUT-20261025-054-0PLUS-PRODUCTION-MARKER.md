@@ -5,7 +5,7 @@
 - Parent: [POINT-0/024](./GPT6-RAHM-USER-POINT-0-20261025-024-0PLUS-PRODUCTION-MARKER.md)
 - IN: [IN-054](./PALANG-0.0-IN-20261025-054-0PLUS-PRODUCTION-MARKER.md)
 - Event: [EVT-0188](../../architecture/BEHAVIOR-TRACE/EVT-0188-POINT-0PLUS-IDENTITY-AND-0-0-LINEAGE-2026-10-25.md)
-- Status: IMPLEMENTED / READ-BACK VERIFIED / CI EXACT-HEAD PENDING
+- Status: IMPLEMENTED / READ-BACK VERIFIED / ENGINE TESTS PASS ON 49485c5 / RELEASE 0.2.1 EXACT-HEAD CI PENDING
 
 ## Code changes
 - Engine state now contains canonical point records.
@@ -18,3 +18,10 @@
 
 ## Remaining
 Final exact-head CI and clean distribution packaging are not marked PASS until run evidence exists. Independent GPT-6 host adoption and durable host memory remain OPEN / NOT PROVEN.
+
+
+## Hard-audit evidence update
+- Living Architecture Audit [40213463189](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40213463189) succeeded on engine/test commit `49485c593ebd6a3d115c05ddda8e8997b3c5138e`.
+- Exact test log confirms 12/12 starter tests passed, including: `test_zero_plus_is_a_marker_on_the_same_canonical_zero_point`, `test_zero_plus_cannot_be_a_separate_canonical_point`, `test_point_record_must_match_append_only_event_ledger`, and `test_continuation_cannot_parent_itself`.
+- State schema JSON validation and package build passed on that tested revision.
+- Release manifest/README version was then advanced to v0.2.1; final release head audit [40213697030](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40213697030) is pending, so the v0.2.1 package digest must be generated from that final passing run.
