@@ -58,3 +58,12 @@
 - Activation/read-back event: [EVT-0038](../BEHAVIOR-TRACE/EVT-0038-PALANG-MIRROR-SYNC-ACTIVATION-2026-10-22.md).
 - Audit source: [LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001](./LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md).
 - Library currently contains an independently read-back archival mirror with the controller ID and automation ID. Exact byte-for-byte equality with the current repository source has not been asserted; the scheduled sync must compare and reconcile this on each run.
+
+
+## Run receipt — EVT-0167 (2026-10-25)
+- Event: [EVT-0167](../BEHAVIOR-TRACE/EVT-0167-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md); canonical UTC/Tehran binding: [TIME-BINDING-EVT-0167](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0167-LIVE-MIRROR-SYNC-2026-10-25.md).
+- Source blob remains `de1b75f07241c9b313e476af5f1417177ff78c10`; last source-changing commit remains `a2374d7da36a5af69b1bdf17f6dfd673bc03c97f` at UTC `2026-10-23T17:34:39Z` / Tehran `2026-10-23T21:04:39+03:30`.
+- Library version 7 independently read back by exact current snapshot ID `file_00000000942881f8a4a3833110229fb7`; source 10,479 chars, Library 10,480 chars, one trailing newline only; Stable ID, Test ID, Version, next-action chain and destination statuses match.
+- Result: SOURCE DRIFT NONE; WRITE NOT REQUIRED; READ-BACK PASS; MATCH PASS within approved 7-character tolerance; byte-for-byte identity not claimed.
+- Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external recovery NOT RUN. No destination status was promoted from this mirror check.
+- Continuity: the current main index/queue points to CURRENT-064 / NEXT-051. CURRENT-036 / NEXT-036 and NEXT-035 remain preserved historical anchors. NEXT-051 stays active; no successor checkpoint was created.
