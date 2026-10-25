@@ -1414,3 +1414,10 @@ Current continuation chain: POINT-0/013 → IN-057 → OUT-056 → EVT-0166 → 
 - Event: `docs/architecture/BEHAVIOR-TRACE/EVT-0175-CURRENT-066-RECOVERY-VERIFIER-STALE-CHECKPOINT-2026-10-25.md`.
 - Related current: `docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-066-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md`.
 - Root cause: recovery verifier still expected CURRENT-065 while the overlay pointed to CURRENT-066. Correction is committed; exact-revision rerun is pending. Do not mark full recovery PASS yet.
+
+
+## CURRENT-066 latest audit receipt — run 40170382405
+- IN/OUT canonical-state reconstruction: PASS; IN and OUT recover the same state and preserve all six open gates.
+- Wider graph: REVIEW_REQUIRED — 63 Stable-ID collision groups (62 unreviewed), 89 Production-ID collision groups, 7 Reference-ID collision groups, 37 event-number collision groups, 13 ambiguous parent edges; 3 EVT-0164 links were corrected in commit `e91d5c77e955f7d1e8b1588703a09d95db187042`, rerun pending.
+- Timestamp audit: 4,092 files scanned; one historical timezone ambiguity remains at EVT-0089 line 21.
+- Artifact ZIP SHA-256: `b12332ff0bed16071342ae3bf52e305800c2b48defe80603b329aa834b5015ff`.
