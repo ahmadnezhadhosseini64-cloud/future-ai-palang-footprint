@@ -3,7 +3,7 @@
 - Stable ID: HAIF-CURRENT-071-0PLUS-ENGINE-AND-HARD-AUDIT-20261025
 - Production ID: HAIF-C071-20261025
 - Version: 1.0.0
-- Status: ACTIVE / LIVING / IMPLEMENTATION COMMITTED / EXACT-HEAD CI PENDING
+- Status: ACTIVE / LIVING / IMPLEMENTATION COMMITTED / FIRST AUDIT FAILED THEN FIXED / CORRECTED EXACT-HEAD CI PENDING
 - Root: [POINT-0/024](./GPT6-RAHM-USER-POINT-0-20261025-024-0PLUS-PRODUCTION-MARKER.md)
 - IN/OUT: [IN-054](./PALANG-0.0-IN-20261025-054-0PLUS-PRODUCTION-MARKER.md) / [OUT-054](./PALANG-0.0-OUT-20261025-054-0PLUS-PRODUCTION-MARKER.md)
 - Event: [EVT-0188](../../architecture/BEHAVIOR-TRACE/EVT-0188-POINT-0PLUS-IDENTITY-AND-0-0-LINEAGE-2026-10-25.md)
@@ -20,7 +20,7 @@
 - Updated JSON schema, README, host instructions and package manifest to v0.2.0.
 
 ## Immediate 0.0 tasks
-1. Verify the exact current main head with Living Architecture Audit run [40213050985](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40213050985); inspect logs, not just the green badge.
+1. Verify the corrected exact current main head with Living Architecture Audit run [40213205539](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40213205539); inspect logs, not just the green badge. Previous run [40213050985](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40213050985) failed on a real bug (duplicate `kind` argument), corrected by renaming the event field to `point_kind` in commit `ab20a52d111f58c243c0e218359ae798c1072616`.
 2. Run the clean package on the exact tested source, remove `__pycache__`, compute SHA-256, fresh-extract and run all tests plus a CLI scenario registering `0/0+`, registering child `0.0`, auditing, exporting and importing.
 3. Preserve the tested clean ZIP and its SHA-256 as the distribution artifact.
 4. Test in the intended GPT-6 host: confirm Python/file tools, execute the same CLI scenario, export state and prove cold-start import. If not available, mark blocked, not passed.
