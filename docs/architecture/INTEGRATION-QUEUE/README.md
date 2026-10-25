@@ -1873,3 +1873,9 @@ Next execution remains attached to existing [NEXT-051](../../0.0/anchors/PALANG-
 ## EVT-0175 — recovery verifier stale checkpoint (OPEN)
 - [EVT-0175](../BEHAVIOR-TRACE/EVT-0175-CURRENT-066-RECOVERY-VERIFIER-STALE-CHECKPOINT-2026-10-25.md) records audit run 40170056194 failing because the verifier expected CURRENT-065 but the overlay manifest named CURRENT-066.
 - The verifier was updated to CURRENT-066 paths/IDs and gate markers. Required next action: inspect the newest exact-commit audit receipt and repair any remaining stale assumptions. Recovery and external-host gates remain OPEN.
+
+
+## CURRENT-066 verification receipt — run 40170382405
+- Repository IN/OUT reconstruction passed and preserved all open gates; the audit artifact ZIP SHA-256 is `b12332ff0bed16071342ae3bf52e305800c2b48defe80603b329aa834b5015ff`.
+- The global graph remains REVIEW_REQUIRED. Three broken relative links in EVT-0164 were corrected on commit `e91d5c77e955f7d1e8b1588703a09d95db187042`; a new audit must verify the repaired exact revision.
+- Remaining evidence work: individually adjudicate collisions and 13 ambiguous parent edges; resolve the one timezone ambiguity only if reliable evidence exists; test actual independent-host import and external persistence in an authorized runtime.
