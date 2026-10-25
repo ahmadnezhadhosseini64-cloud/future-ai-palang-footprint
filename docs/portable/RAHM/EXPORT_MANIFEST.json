@@ -272,7 +272,7 @@
     {
       "path": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-064-NEXT-EXECUTION-AND-GAPS.md",
       "version": "1.0.0",
-      "git_blob_sha": "c0b57dd91ab10c03063c6760dd2b6907914622dc",
+      "git_blob_sha": "391e19a71b89c2d3008e434a6697a0b7ed5dd8c8",
       "sha256": null
     }
   ],
@@ -323,7 +323,7 @@
     "local_runtime": "Dependency-free Python runtime added: init, append IN/OUT with hash chain, verify, checkpoint, export, import into new target, tamper rejection and no-overwrite. Automated tests are wired into portable conformance; result for the final commit is pending.",
     "local_runtime_acceptance": "SOURCE COMMITTED; CI EXECUTION NOT YET READ BACK; clean local environment and external host acceptance remain separate."
   },
-  "note": "This manifest now carries both the prototype/adoption work from CURRENT-061 and the new CURRENT-062 continuity chain. A push should trigger conformance; only the resulting current-commit receipt can prove exact-byte digests and archive build. External-host/runtime acceptance remains separate.\nCURRENT-064 adds POINT-0/013 → IN-057 → OUT-056 → EVT-0166 → CURRENT-064. SHA-256 values for the new files remain null until an actual successful workflow computes exact-byte digests; do not treat null as verified.\nCURRENT-064 overlay inventory path is included in live references. New-chain exact-byte SHA-256 values remain null pending an actual workflow artifact; null values are not verification.",
+  "note": "This manifest now carries both the prototype/adoption work from CURRENT-061 and the new CURRENT-062 continuity chain. A push should trigger conformance; only the resulting current-commit receipt can prove exact-byte digests and archive build. External-host/runtime acceptance remains separate.\nCURRENT-064 adds POINT-0/013 → IN-057 → OUT-056 → EVT-0166 → CURRENT-064. SHA-256 values for the new files remain null until an actual successful workflow computes exact-byte digests; do not treat null as verified.\nCURRENT-064 overlay inventory path is included in live references. New-chain exact-byte SHA-256 values remain null pending an actual workflow artifact; null values are not verification.\nCURRENT-064 Git blob SHA-1 was refreshed after fixing runtime relative links; exact-byte SHA-256 remains null until a real workflow receipt.",
   "live_reference_files": [
     "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-008-DEEP-AUDIT-AND-NO-SILENT-GAP.md",
     "docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-059-DEEP-AUDIT-AND-CORRECTED-CONFORMANCE.md",
