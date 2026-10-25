@@ -2,7 +2,7 @@
 
 - Stable ID: `G6IP-RAHM-NEXT-051-20261024`
 - Production ID: `G6IP-NEXT-051`
-- Version: 1.0.6
+- Version: 1.0.7
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE.
 - Parent: [CURRENT-057](./PALANG-0.0-CURRENT-20261024-057-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md)
 - Preserve existing gates: [NEXT-050](./PALANG-0.0-NEXT-20261024-050-FULL-RECOVERY-AND-REAL-HOST-IMPORT.md), [NEXT-049](./PALANG-0.0-NEXT-20261024-049-REAL-HOST-TRANSFER-AND-GRAPH-AUDIT.md)
@@ -102,3 +102,27 @@ NEXT-051 remains OPEN/LIVING until all remaining acceptance gates are satisfied;
 - [ ] Adjudicate each graph finding individually without bulk deletion or speculative renumbering.
 - [ ] Clean AI-host import, second-host import, actual persistence restart, live automatic capture and idle/background execution remain OPEN / NOT VERIFIED.
 - NEXT-051 stays OPEN/LIVING. Do not create NEXT-052 as a substitute for completing these gates.
+
+
+## CURRENT-059 verified subgates — do not renumber the open work
+
+- [x] Current IN/OUT canonical repository-state recovery passed from IN-052 and OUT-051: [audit run 40150679142](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150679142). Both paths recovered equivalent CURRENT-059 state, zero verifier failures, all six open-gate categories preserved.
+- [x] Exact-byte digest comparison passed for all 62 manifest entries; schema valid=0 errors, invalid=4 errors and rejected; IN/OUT pointer recovery PASS; archive built (63 entries, 289,293 bytes, SHA-256 `b98b34876de35d2d4c3cc89ed95b637a36d32adfe251c62db7a79a2bb86606a3`) in [run 40150704716](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150704716).
+- [x] Link parser false-positive defect corrected: code examples in Python fixtures are no longer treated as document navigation links. [Audit run 40150679142](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150679142) reported zero missing local links in both structural Markdown scanning and the corrected historical graph link scan.
+- [ ] Identity/lineage adjudication remains open: 62 Stable-ID collision groups (61 unreviewed), 88 Production-ID groups, 7 Reference-ID groups, 37 event-number groups, 13 ambiguous parent edges, and one ambiguous timestamp.
+- [ ] Clean independent AI-host import; second-host import; persistent memory after restart; automatic capture; idle/background execution remain OPEN / NOT VERIFIED.
+- NEXT-051 remains OPEN/LIVING; no NEXT-052 is created as a substitute for unresolved work.
+
+
+## CURRENT-059 final conformance receipt — run 40150704716
+
+- Workflow: [Portable RAHM Conformance and Digest Evidence](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150704716) — SUCCESS on commit `5047ee23407fd7fa47210ee68894587bc35e9988`.
+- Exact-byte SHA-256: PASS for all 62 manifest entries.
+- JSON Schema: valid fixture 0 errors; invalid fixture 4 errors and correctly rejected.
+- IN/OUT pointer recovery: PASS for IN-052 / OUT-051 → CURRENT-059 / NEXT-051 with open gates preserved.
+- Extractable archive: 63 entries, 289,293 bytes; SHA-256 `b98b34876de35d2d4c3cc89ed95b637a36d32adfe251c62db7a79a2bb86606a3`.
+- Package artifact: [haif-rahm-portable-package](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150704716/artifacts/12582014811).
+- Evidence artifact: [rahm-portable-conformance-evidence](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150704716/artifacts/12582334413).
+- Latest repository audit: [run 40150679142](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150679142) — zero missing local Markdown links and zero missing local links in the corrected historical graph parser; content remains REVIEW_REQUIRED due to 62 Stable-ID collision groups (61 unreviewed), 88 Production-ID groups, 7 Reference-ID groups, 37 event-number groups and 13 ambiguous parent edges.
+- This receipt is valid for the commit above. Any subsequent edit to a manifest-listed file requires digest reconciliation and a fresh conformance run.
+- Still OPEN / NOT VERIFIED: independent clean AI-host import, second-host import, persistent memory after restart, automatic capture of every interaction, idle/background execution, and individual adjudication of all remaining identity/parent/time findings.
