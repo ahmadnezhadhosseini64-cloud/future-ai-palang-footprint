@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001`
 - Production ID / شناسهٔ تولید: `NPFAP-20261024-001`
-- Version / نسخه: 1.2.7
+- Version / نسخه: 1.2.8
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING / EVOLVABLE / EXTRACTABLE / RECOVERY-ORIENTED / CURRENT-054 + CURRENT-056 + CURRENT-059 LINKED
 - Scope / دامنه: الگوی پایه برای هر پروژهٔ جدید در خانوادهٔ Future AI / Palang Footprint / HAIF و شاخه‌های محصول/میزبان آن؛ با سازگارسازی مستند برای پروژه‌های دیگر
 - Source anchor / منشأ: [G6IP-ARCH-ZERO-20261024-001](../../0.0/anchors/PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md)
@@ -578,3 +578,7 @@ Evidence branch: [CURRENT-057](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-057
 - A newly created NEXT is not evidence of execution. Keep NEXT-051 as the active continuation until its acceptance gates are genuinely met.
 - Conformance must assert the latest active IN/OUT/CURRENT/NEXT chain; a successful run against a stale branch is not a valid current acceptance receipt.
 - Automatic capture, persistent memory, independent AI-host transfer and idle/background execution remain NOT VERIFIED until tested in an authorized runtime.
+
+
+## CURRENT-059 — No-silent-gap execution governance
+The latest interaction branch is Point 0/008 → IN-052 → OUT-051 → EVT-0161 → CURRENT-059 → NEXT-051. This is a new branch linked to, not a replacement for, Point 0/007 → IN-051 → OUT-050 → EVT-0160 → CURRENT-058. A new NEXT must not be created merely to advance numbering. Unfinished acceptance criteria remain open in NEXT-051 until real execution receipts and read-back exist. Whenever work is interrupted, publish a visible partial state and exact resume point; never imply hidden background processing.
