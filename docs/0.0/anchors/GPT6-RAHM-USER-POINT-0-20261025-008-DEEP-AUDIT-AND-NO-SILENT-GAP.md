@@ -2,7 +2,7 @@
 
 - Stable ID: `G6IP-RAHM-USER-POINT-0-20261025-008`
 - Production ID: `G6IP-POINT0-008`
-- Version: 1.0.0
+- Version: 1.0.1
 - Status: REGISTERED / READ-BACK REQUIRED; current audit and host gates remain open.
 - Parent: [POINT-0/007](./GPT6-RAHM-USER-POINT-0-20261024-007-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md)
 - Input: [IN-052](./PALANG-0.0-IN-20261025-052-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md)
@@ -21,7 +21,7 @@ This point captures the user's demand to perform real repository excavation and 
 - Found and corrected stale conformance references: IN-047 / OUT-046 and CURRENT-054 / NEXT-048 → IN-051 / OUT-050 and CURRENT-058 / NEXT-051.
 - Updated the portable living master to version 1.1.2 with current links and explicit output-continuity behavior.
 - Existing full repository-state IN/OUT verifier passed in run 40130267981; this is bounded to repository state and does not establish independent host import.
-- The corrected workflow's fresh digest/schema/package run is pending and must be recorded by CURRENT-059 before calling the correction verified.
+- The corrected workflow's fresh digest/schema/package run is pending and must be recorded by CURRENT-059 before calling the correction verified. Full verifier has also been advanced to start from Point 0/008, IN-052, OUT-051 and CURRENT-059; its next audit run must pass before recovery is accepted.
 
 ## Active continuation
 
