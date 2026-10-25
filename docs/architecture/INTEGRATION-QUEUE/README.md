@@ -3,13 +3,13 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.8.9
+- Version: 1.9.0
 - Date: 2026-10-20
 - Exact Time: 11:25 local project time, minute precision; exact seconds not captured.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: CURRENT-064 linked; interaction chain and execution gates recorded; runtime tests and clean-host recovery pending; NEXT-051 remains OPEN/LIVING; no successor NEXT created to disguise unfinished work.
+- Status: POINT-0/018 is the latest user-turn root; CURRENT-065/CURRENT-066 execution-pointer conflict remains OPEN; runtime tests and clean-host recovery pending; NEXT-051 remains OPEN/LIVING; no successor NEXT created to disguise unfinished work.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
@@ -1903,3 +1903,10 @@ The source blob remained unchanged and Library version 7 was independently read 
 
 
 | HAIF-EVT-0179-UNIQUE-ID-COLLISION-AND-POINTER-RECONCILIATION-2026-10-25 | Quarantine duplicate EVT-0178-numbered pointer draft; preserve canonical EVT-0178/POINT-0/017; reconcile CURRENT-065 vs CURRENT-066 from evidence | OPEN / PARTIAL — collision recorded and draft quarantined; pointer adjudication and exact-current-main audit remain OPEN | POINT-0/017, canonical EVT-0178, NEXT-051, Issue #20, Issue #21, BOART-FOLLOWUP-01 | [EVT-0179](../BEHAVIOR-TRACE/EVT-0179-UNIQUE-ID-COLLISION-AND-POINTER-RECONCILIATION-2026-10-25.md) |
+
+
+## POINT-0/018 — living registration and 0.0 continuation
+- Root: [POINT-0/018](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-018-LIVING-REGISTRATION-AND-NEXT-STEPS.md); event: [EVT-0180](../BEHAVIOR-TRACE/EVT-0180-USER-POINT-0-018-LIVING-REGISTRATION-AND-NEXT-STEPS-2026-10-25.md); time evidence: [TIME-BINDING-EVT-0180](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0180-POINT-0-018-2026-10-25.md).
+- Current user-turn root and execution checkpoint are separate concepts. Do not use POINT-0/018 to guess whether CURRENT-065 or CURRENT-066 is the single execution pointer.
+- Continue existing NEXT-051 and Issues #20/#21 plus BOART-FOLLOWUP-01. Reconcile verifier/manifest lineage, identity collisions, references, tests and exact-final-main receipts.
+- Status: OPEN / LIVING. Code repair, full graph adjudication, fresh exact-HEAD audit, clean-host import and external-runtime evidence are not yet claimed complete.
