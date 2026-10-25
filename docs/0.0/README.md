@@ -1547,3 +1547,14 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - Parent continuity: POINT-0/021 → POINT-0/022. CURRENT-068 preserved as history.
 - Active historical queue: NEXT-051. No NEXT-052 created.
 - Status: package and test wiring registered; actual CI result pending.
+
+
+## POINT-0/023 — چکش سخت و اجرای موتور
+
+- ریشه: [POINT-0/023](./anchors/GPT6-RAHM-USER-POINT-0-20261025-023-HARD-AUDIT-AND-ENGINE-HARDENING.md)
+- IN/OUT: [IN-053](./anchors/PALANG-0.0-IN-20261025-053-HARD-AUDIT-AND-ENGINE-HARDENING.md) / [OUT-053](./anchors/PALANG-0.0-OUT-20261025-053-HARD-AUDIT-AND-ENGINE-HARDENING.md)
+- رویداد: [EVT-0186](../architecture/BEHAVIOR-TRACE/EVT-0186-HAIF-ENGINE-HARD-AUDIT-AND-ID-UNIQUENESS-2026-10-25.md)
+- زمان ثبت ریشه: [TIME-BINDING-EVT-0186](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0186-POINT-0-023-2026-10-25.md)
+- نقطهٔ اجرای بعدی: [CURRENT-070](./anchors/PALANG-0.0-CURRENT-20261025-070-HARD-AUDIT-AND-HOST-EXECUTION.md)
+- نتیجهٔ ممیزی دقیق: run 40206260132 موفق روی SHA `81afd4f181e87ba71c4d1acf8b89d4ee8432e1ca`؛ 8/8 آزمون موتور گذشتند، از جمله کشف شناسه‌های تکراری IN/OUT. بستهٔ تمیز نیز در محیط تازه 8/8 آزموده شد.
+- صف تاریخی فعال همچنان NEXT-051 است؛ NEXT-052 ساخته نشده. اجرای مستقل در GPT-6 و ماندگاری میزبان هنوز اثبات نشده‌اند.
