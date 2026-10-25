@@ -1524,3 +1524,13 @@ Current continuation chain: POINT-0/013 → IN-057 → OUT-056 → EVT-0166 → 
 - [EVT-0187](./architecture/BEHAVIOR-TRACE/EVT-0187-CLEAN-DISTRIBUTION-RUNTIME-SMOKE-2026-10-25.md)
 - [CURRENT-070](./0.0/anchors/PALANG-0.0-CURRENT-20261025-070-HARD-AUDIT-AND-HOST-EXECUTION.md)
 - Clean package SHA-256: `d68e03b42e26b88385d1155c02d09b213a53366e27e99518c7c049f6ec6563be`; direct CLI lifecycle passed in a fresh runtime directory. Independent GPT-host execution remains OPEN.
+
+
+## POINT-0/024 (0+) — production marker and engine guard
+
+- Root: [POINT-0/024](./0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-024-0PLUS-PRODUCTION-MARKER.md)
+- IN/OUT: [IN-054](./0.0/anchors/PALANG-0.0-IN-20261025-054-0PLUS-PRODUCTION-MARKER.md) / [OUT-054](./0.0/anchors/PALANG-0.0-OUT-20261025-054-0PLUS-PRODUCTION-MARKER.md)
+- Event and time binding: [EVT-0188](./architecture/BEHAVIOR-TRACE/EVT-0188-POINT-0PLUS-IDENTITY-AND-0-0-LINEAGE-2026-10-25.md) / [time](./architecture/BEHAVIOR-TRACE/TIME-BINDING-POINT-0-024-EVT-0188-2026-10-25.md)
+- Current execution checkpoint: [CURRENT-071](./0.0/anchors/PALANG-0.0-CURRENT-20261025-071-0PLUS-ENGINE-AND-HARD-AUDIT.md)
+- Portable engine: [engine.py](../prototype/haif-gpt6-starter/engine.py); tests: [test_engine.py](../prototype/haif-gpt6-starter/test_engine.py); host instructions: [GPT6_HOST_INSTRUCTIONS.md](../prototype/haif-gpt6-starter/GPT6_HOST_INSTRUCTIONS.md).
+- Canonical rule: 0 and 0+ are labels on one canonical point; 0.0 is a parent-linked continuation. Host integration remains unproven.
