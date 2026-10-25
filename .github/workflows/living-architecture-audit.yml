@@ -147,6 +147,31 @@ jobs:
           set -euo pipefail
           python3 scripts/behavior-hunter/verify_current_0_0_chain.py
 
+      - name: Test live CURRENT pointer discovery and preserve ambiguity as an explicit gate
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m unittest discover -s scripts/behavior-hunter/tests -p 'test_discover_current_0_0_pointer.py' -v
+          set +e
+          python3 scripts/behavior-hunter/discover_current_0_0_pointer.py
+          rc=$?
+          set -e
+          if [ "$rc" -eq 2 ]; then
+            status=$(python3 -c "import json; print(json.load(open('audit-output/current-pointer-discovery.json', encoding='utf-8'))['status'])")
+            if [ "$status" = "AMBIGUOUS" ]; then
+              echo "LIVE_CURRENT_POINTER=AMBIGUOUS_BLOCKED"
+              echo "CURRENT_065_CURRENT_066_CONFLICT_REMAINS_OPEN=true"
+            else
+              echo "LIVE_CURRENT_POINTER_DISCOVERY=BLOCKED"
+              exit 2
+            fi
+          elif [ "$rc" -ne 0 ]; then
+            exit "$rc"
+          else
+            echo "LIVE_CURRENT_POINTER=CONSISTENT"
+          fi
+          echo "No current pointer is promoted by this checker; source adjudication remains a separate decision."
+
       - name: Run structural and link audit
         shell: bash
         run: |
