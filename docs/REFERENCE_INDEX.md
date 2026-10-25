@@ -1350,3 +1350,16 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Portable continuity inventory: [CURRENT-062 overlay manifest](portable/RAHM/CURRENT-062-OVERLAY-MANIFEST.json); not a complete release package.
 - Active execution remains [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md); NEXT-039 and NEXT-040 are not silently closed.
 - Confirmed boundary: new chain and master/index/queue integration must pass focused read-back; current semantic graph inventory, strict package/archive digest, browser execution, clean-host import, restart persistence and automated capture remain open until newly evidenced.
+
+
+## Current Point 0/013 — CURRENT-064
+
+| ID | Canonical path | Role | Status |
+|---|---|---|---|
+| HAIF-POINT-0-013 | `docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-013-CURRENT-INTERACTION-AND-LIVING-CONTINUITY.md` | Current user instruction anchored as a new Point 0 without replacing prior checkpoints | Registered; parent-surface reconciliation pending |
+| HAIF-IN-057 | `docs/0.0/anchors/PALANG-0.0-IN-20261025-057-CURRENT-INTERACTION-AND-LIVING-CONTINUITY.md` | Preserved user input and normalized requirements | Registered |
+| HAIF-OUT-056 | `docs/0.0/anchors/PALANG-0.0-OUT-20261025-056-NEXT-EXECUTION-AND-GAPS.md` | Next execution order and open gates | Registered |
+| HAIF-EVT-0166 | `docs/architecture/BEHAVIOR-TRACE/EVT-0166-CURRENT-INTERACTION-AND-NEXT-EXECUTION-2026-10-25.md` | Behavioral/architecture event and evidence boundary | Registered |
+| HAIF-CURRENT-064 | `docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-064-NEXT-EXECUTION-AND-GAPS.md` | Current checkpoint, open gaps and ordered execution plan | Registered; tests and external capability gates remain open |
+
+Current continuation chain: POINT-0/013 → IN-057 → OUT-056 → EVT-0166 → CURRENT-064. Previous CURRENT-063 is preserved. NEXT-051 remains the active graph-triage work item; no successor NEXT was created. Registration does not imply tests passed or external hosts/persistence verified.
