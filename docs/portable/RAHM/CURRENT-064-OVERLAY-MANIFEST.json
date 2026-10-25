@@ -34,17 +34,17 @@
     },
     {
       "path": "docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md",
-      "git_blob_sha": "b97addd640a8aebc27a014c884b917f22d3003e0",
+      "git_blob_sha": "78e00d6bd85a54903e12dec8dc128f913e18e4fa",
       "sha256": null
     },
     {
       "path": "docs/REFERENCE_INDEX.md",
-      "git_blob_sha": "794e64706c5bd3dac24ff9fa7ef0f15be1fbad35",
+      "git_blob_sha": "aa69c89d54b60525bb65d14bfd711d0eb5dc3107",
       "sha256": null
     },
     {
       "path": "docs/architecture/INTEGRATION-QUEUE/README.md",
-      "git_blob_sha": "87d2f1e395d6f4f05011ec929a7128354f0262cb",
+      "git_blob_sha": "9f876eb5d2d3a57efa917bc8c5cbb986fba3dd0f",
       "sha256": null
     }
   ],
