@@ -1,6 +1,6 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.7.6",
+  "version": "1.7.7",
   "manifest_status": "CURRENT-065 chain and overlay referenced; SHA-256 and runtime receipts pending",
   "created_from_checkpoint": "G6IP-CURRENT-064-20261025 + HAIF-RUNTIME-0.1",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
@@ -303,6 +303,12 @@
       "path": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-065-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md",
       "version": "1.0.0",
       "git_blob_sha": "026b5f3d3fd26c2fe940952eeb6d3f07bce899b7",
+      "sha256": null
+    },
+    {
+      "path": "docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md",
+      "version": "1.5.5",
+      "git_blob_sha": "3e11b19e32263aeb21527d5b3bee98ec1a9a8551",
       "sha256": null
     }
   ],
