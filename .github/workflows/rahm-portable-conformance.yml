@@ -112,13 +112,13 @@ jobs:
                   live_results.append({"path": raw_path, "status": "MISSING"})
                   continue
               data = p.read_bytes()
-              blob_sha1 = hashlib.sha1(b"blob " + str(len(data)).encode() + b"\\0" + data).hexdigest()
+              blob_sha1 = hashlib.sha1(b"blob " + str(len(data)).encode() + b"\0" + data).hexdigest()
               live_results.append({"path": raw_path, "status": "OBSERVED_CURRENT_BYTES", "bytes": len(data), "sha256": hashlib.sha256(data).hexdigest(), "git_blob_sha1": blob_sha1})
           paths = [entry["path"] for entry in manifest["files"]] + list(manifest.get("live_reference_files", []))
           if len(paths) != len(set(paths)):
               raise SystemExit("DUPLICATE_MANIFEST_PATH_ACROSS_STABLE_AND_LIVE_REFERENCES")
           output = {"algorithm":"SHA-256 over exact checked-out file bytes", "manifest_path":str(manifest_path), "manifest_version":manifest.get("version"), "manifest_sha256":hashlib.sha256(manifest_path.read_bytes()).hexdigest(), "expected_file_count":len(manifest["files"]), "matched_file_count":sum(1 for x in results if x.get("status") == "MATCH"), "live_reference_file_count":len(live_results), "live_reference_results":live_results, "results":results}
-          Path("rahm-sha256-evidence.json").write_text(json.dumps(output, indent=2)+"\\n", encoding="utf-8")
+          Path("rahm-sha256-evidence.json").write_text(json.dumps(output, indent=2)+"\n", encoding="utf-8")
           print(json.dumps(output, indent=2))
           if len(results) != len(manifest["files"]) or any(x.get("status") != "MATCH" for x in results) or len(live_results) != len(manifest.get("live_reference_files", [])) or any(x.get("status") != "OBSERVED_CURRENT_BYTES" for x in live_results):
               print("EXACT_BYTE_SHA256_SCAN=FAIL")
