@@ -2,7 +2,7 @@
 
 - Stable ID: `PALANG-NEXT-FRESH-PROJECT-ADOPTION-TEST-2026-10-24-040`
 - Production ID: `G6IP-NEXT-040`
-- Version: 1.0.0
+- Version: 1.0.1
 - Status: OPEN / ACTIVE / LIVING / NOT RUN
 - Parent checkpoint: [CURRENT-042](./PALANG-0.0-CURRENT-20261024-042-NEW-PROJECT-ARCHITECTURE-HARD-AUDIT.md)
 - Audit mother: [HA-001](../../reference/REFERENCE-DOCUMENTS/NEW-PROJECT-ARCHITECTURE-HARD-AUDIT-2026-10-24-001.md)
@@ -35,3 +35,13 @@ Run a fresh-project adoption test to determine whether the new branch actually i
 ## Result
 
 NOT RUN. This anchor defines the next test; it is not evidence that the test has passed.
+
+
+## CURRENT-061 execution receipt — fixture created
+- [x] Created [fresh-project adoption fixture](../../architecture/interactive-prototype/ADOPTION-TEST-FIXTURE.json) with root/checkpoint/architecture-zero/NEXT-039/NEXT-040 lineage and explicit required contract fields.
+- [x] Created a browser prototype README that separates repository fixture checks from real-host adoption.
+- [ ] Current fixture JSON parse and relative-link/target checks: pending independent verification.
+- [ ] Full fresh-project test result per criterion: PARTIAL / NOT YET RUN end-to-end.
+- [ ] Clean independent AI-host adoption with no prior chat context: NOT RUN.
+- [ ] Cold-start recovery, second-host import, persistence restart and idle/background execution: NOT RUN / NOT VERIFIED.
+- Result: fixture preparation is complete; the adoption test itself remains OPEN until current-commit checks and an actual clean-host test have evidence.
