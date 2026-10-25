@@ -1942,3 +1942,14 @@ The source blob remained unchanged and Library version 7 was independently read 
 - Active queue remains NEXT-051; no NEXT-052 created.
 - Immediate execution: C0 exact-current-main receipt inspection, then C1 local prototype acceptance, C2 pointer adjudication, C3 graph review, C4 independent-host proof, C5 external capability boundaries, C6 final exact-head audit.
 - The previous Dropbox branch-selection error is retained as an architecture lesson. Dropbox remains OPEN / WAITING and inactive.
+
+
+## POINT-0/022 — portable GPT-6 starter engine
+
+- Root: [POINT-0/022](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-022-PORTABLE-STARTER-ENGINE.md).
+- Event: [EVT-0185](../BEHAVIOR-TRACE/EVT-0185-PORTABLE-HAIF-GPT6-STARTER-ENGINE-2026-10-25.md).
+- Execution checkpoint: [CURRENT-069](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-069-PORTABLE-STARTER-ENGINE-AND-GATE-CLOSURE.md).
+- Package: [HAIF GPT-6 Portable Starter](../../../prototype/haif-gpt6-starter/README.md).
+- Evidence: seven starter tests passed; audit and portable conformance both passed after manifest SHA reconciliation.
+- Remaining work: actual GPT-6 host import, independent host persistence, pointer adjudication and historic graph review.
+- NEXT-051 remains active; no duplicate next queue created.
