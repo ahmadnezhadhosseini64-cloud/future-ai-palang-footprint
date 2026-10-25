@@ -12,3 +12,21 @@
 - EVT-0185: [event](./EVT-0185-PORTABLE-HAIF-GPT6-STARTER-ENGINE-2026-10-25.md)
 
 Populate commit SHA and UTC/Tehran time only after reading actual commit metadata. This file intentionally does not invent them.
+
+
+## Verified repository commit times
+
+Tehran equivalents below are derived from the exact UTC commit instant, not from an assumed message time.
+
+| Item | Commit SHA | Repository time UTC | Asia/Tehran (+03:30) |
+|---|---|---|---|
+| POINT-0/022 | 9f33435c7fd5a354d623c34a1cd5ab3fc53ed1fb | 2026-10-25T13:31:15Z | 2026-10-25T17:01:15+03:30 |
+| IN-052 | 58cce630af2ef615b4449bab53890f4eb4e7f654 | 2026-10-25T13:31:20Z | 2026-10-25T17:01:20+03:30 |
+| OUT-052 | d7b503aa6d74121d397e331a4fdaadf07798385a | 2026-10-25T13:31:24Z | 2026-10-25T17:01:24+03:30 |
+| CURRENT-069 | 8aa9f823f9a24062ecbbc0a422e44d89e80dbe9d | 2026-10-25T13:32:56Z | 2026-10-25T17:02:56+03:30 |
+| EVT-0185 | a6e9840a6cd05e8c5aae162c891d15984eed4e53 | 2026-10-25T13:33:00Z | 2026-10-25T17:03:00+03:30 |
+| EVT-0185 evidence update | d4d108ae23dc047c72ccfd012d402e12fb4b6f60 | 2026-10-25T13:35:58Z | 2026-10-25T17:05:58+03:30 |
+| CURRENT-069 evidence update | b54008093e222388cc05432475be996606fd66ee | 2026-10-25T13:36:03Z | 2026-10-25T17:06:03+03:30 |
+
+- Starter test workflow run: [40198249728](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40198249728), tested content commit 4dce5e5a919499a9d016b4949c3968e339e8fd7c.
+- User-message timestamp: UNKNOWN / UNVERIFIED.
