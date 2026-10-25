@@ -32,13 +32,13 @@ EXPECTED = {
     "point0": "G6IP-POINT-0-015-20261025",
     "in": "G6IP-IN-059-20261025",
     "out": "G6IP-OUT-058-20261025",
-    "event": "HAIF-EVT-0174-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY-2026-10-25",
+    "event": "HAIF-EVT-0174-20261025",
     "current": "G6IP-CURRENT-066-20261025",
     "prior_current": "G6IP-CURRENT-065-20261025",
     "next": "G6IP-RAHM-NEXT-051-20261024",
 }
 GATE_MARKERS = {
-    "full_state_recovery": ("full independent external-host reconstruction", "clean export/import round trip"),
+    "full_state_recovery": ("full independent external-host reconstruction", "clean init"),
     "clean_host_import": ("clean independent AI-host import", "real independent-host import"),
     "second_host_import": ("second host", "second-host import"),
     "persistence_restart": ("persistence restart", "restart persistence"),
