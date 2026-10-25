@@ -1515,3 +1515,5 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - First executable increment: independent live-pointer discovery plus fixture tests. Expected current state is AMBIGUOUS until CURRENT-065/CURRENT-066 declarations are adjudicated; the checker must not choose a winner.
 - Continue NEXT-051, Issue #20, Issue #21 and BOART-FOLLOWUP-01; no NEXT-052 placeholder. User-turn root POINT-0/019 is not itself an execution checkpoint.
 - Status: new point/event and checker/test source are registered; exact-head workflow result and runtime gates remain OPEN / NOT VERIFIED.
+
+- Repository time binding for POINT-0/019 and EVT-0181: [TIME-BINDING-EVT-0181](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0181-POINT-0-019-2026-10-25.md). POINT-0/019 final content commit: UTC `2026-10-25T07:56:47Z` → Tehran `2026-10-25T11:26:47+03:30`; EVT-0181 commit: UTC `2026-10-25T07:53:42Z` → Tehran `2026-10-25T11:23:42+03:30`. Exact user-message time remains UNKNOWN / UNVERIFIED.
