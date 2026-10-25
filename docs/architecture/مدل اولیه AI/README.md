@@ -151,3 +151,11 @@
 
 - پابند زمان: [TIME-BINDING-GPT6-INTERACTIVE-2026-10-24-001](../BEHAVIOR-TRACE/TIME-BINDING-GPT6-INTERACTIVE-2026-10-24-001.md)؛ UTC مرجع اصلی و زمان تهران معادل از همان commit.
 - بازخوانی پنج فایل اصلی و پیوندهای نمایه تأیید شد؛ مقصدهای بیرونی هنوز اثبات نشده‌اند.
+
+
+## Latest continuation — POINT-0/019
+- [POINT-0/019 — Build model capabilities](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-019-MODEL-CAPABILITY-BUILD.md)
+- [EVT-0181 — capability build event](../BEHAVIOR-TRACE/EVT-0181-POINT-0-019-MODEL-CAPABILITY-BUILD-2026-10-25.md)
+- [Updated living master](./سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
+- [Updated capability and open-gap queue](./صف%20گام‌های%20بعدی%20و%20موارد%20باز.md)
+- First executable addition: [live CURRENT pointer discovery checker](../../../scripts/behavior-hunter/discover_current_0_0_pointer.py) and [fixture tests](../../../scripts/behavior-hunter/tests/test_discover_current_0_0_pointer.py). CI result remains pending until the exact current main run and artifact are inspected.
