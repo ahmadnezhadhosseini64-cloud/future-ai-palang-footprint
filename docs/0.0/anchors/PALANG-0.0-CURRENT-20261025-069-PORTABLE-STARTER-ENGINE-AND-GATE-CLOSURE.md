@@ -76,3 +76,14 @@ A separate Portable RAHM Conformance run [40198220828](https://github.com/ahmadn
 - Latest Living Architecture Audit [40198744637](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40198744637) completed SUCCESS on the same tested SHA; structural repository checks PASS; starter suite 7/7 PASS; the pointer checker correctly reports AMBIGUOUS/BLOCKED rather than choosing a winner. Artifact ID 12600689796, digest sha256:3f5d0dc97965b1fcf3b4bd4de9fe32f125a4c7458d0ef5df90dab626e7746e12.
 - Latest starter ZIP SHA-256: 79ebfb632bf108e7844b698692fa4f3b8878b3d457a2910f92411bbd75546974.
 - The stale manifest digest failure is resolved for tested SHA 99479872acaede69679b13273e37b9ca51f35ea5. Canonical pointer and historic graph ambiguity remain separate OPEN gates.
+
+
+## Latest main-content audit — tested SHA ca374507
+
+- Living Architecture Audit [40199078903](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40199078903): SUCCESS on tested SHA ca3745072a35cdca8db74cd62bf8ee07b23c45b3.
+- Structural repository checks: PASS. Live current-pointer discovery: AMBIGUOUS/BLOCKED, preserved without selecting a winner.
+- Starter engine: 7/7 tests PASS, including clean-process export/import recovery.
+- Starter ZIP SHA-256: 9a594ddb424ef81ec3a1969ef64dc58f34277b94f8114510488ee2103b7a5237.
+- Audit artifact ID 12601800399; digest sha256:5edfca23d4f76152bbeb1bcb51830509024270d2a0bbecd66087438fe5208207.
+- Portable RAHM Conformance [40199078860](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40199078860): SUCCESS on the same tested SHA. Portable package artifact ID 12601380486; conformance evidence artifact ID 12601060622.
+- The stale workflow manifest digest issue is closed on this revision. Remaining open gates are pointer/graph adjudication and real GPT-host capabilities.
