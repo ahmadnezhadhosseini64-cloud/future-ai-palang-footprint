@@ -1,7 +1,7 @@
 {
   "package_id": "HAIF-RAHM-CURRENT-062-OVERLAY-2026-10-25-001",
-  "version": "1.2.0",
-  "status": "15-FILE CURRENT-062 + HAIF-RUNTIME-0.1 DELTA INVENTORY; EXACT GIT BLOB SHA-1 READ-BACK PENDING; EXACT-BYTE SHA-256/ARCHIVE PENDING",
+  "version": "1.2.1",
+  "status": "15-FILE CURRENT-062 + HAIF-RUNTIME-0.1 OVERLAY; FINAL 15/15 GIT BLOB SHA-1 READ-BACK PENDING; WORKFLOW/ARCHIVE/REAL-HOST ACCEPTANCE OPEN",
   "parent_manifest": "docs/portable/RAHM/CURRENT-061-OVERLAY-MANIFEST.json",
   "checkpoint": "G6IP-CURRENT-062-20261025",
   "purpose": "Incremental implementation overlay: current Point 0 chain, living mother/index/queue, conformance workflow, export manifest and executable local continuity runtime. Not a substitute for the parent export package.",
@@ -24,7 +24,7 @@
     },
     {
       "path": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-062-OPEN-GAPS-AND-CONTINUITY.md",
-      "git_blob_sha": "aa83ccad913aed3793bb61883bc1190e4bbf31d8",
+      "git_blob_sha": "60ed798b693d594a4e4e7d407244974aa7d9d5c1",
       "sha256": null
     },
     {
@@ -84,10 +84,10 @@
     }
   ],
   "release_gates": [
-    "Independently fetch all listed files after this manifest update and compare Git blob SHA-1 values.",
-    "Run the current strict portable conformance workflow and read back the actual result for the latest main commit.",
-    "Record exact-byte SHA-256 values and archive hash from the current workflow evidence.",
-    "Fetch and inspect the package and recovery evidence artifacts.",
-    "Do not infer independent-host or runtime acceptance from repository CI."
+    "Fetch all 15 listed paths after the final checkpoint update and match Git blob SHA-1 values.",
+    "Read the actual current GitHub Actions run; no status entry is not a pass.",
+    "Inspect exact-byte SHA-256 evidence and the built archive from that run.",
+    "Run the CLI end-to-end in a clean environment and compare imported chain head.",
+    "Do not infer independent-host, restart persistence, automatic capture or background acceptance from source presence."
   ]
 }
