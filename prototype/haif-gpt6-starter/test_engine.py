@@ -9,7 +9,7 @@ from pathlib import Path
 from engine import (
     add_gap, audit, close_gap, decide_child, export_bundle, import_bundle,
     new_state, propose_child, record_interaction, save_state, load_state,
-    verify_state,
+    verify_state, digest, payload,
 )
 
 
@@ -30,6 +30,17 @@ class HaifStarterEngineTests(unittest.TestCase):
         bad = copy.deepcopy(state)
         bad["events"][0]["output"] = "tampered"
         self.assertTrue(any("event_hash mismatch" in e for e in verify_state(bad)))
+
+    def test_duplicate_input_or_output_ids_are_rejected_even_with_valid_hash(self):
+        state = new_state()
+        first = record_interaction(state, "in-1", "out-1")
+        second = record_interaction(state, "in-2", "out-2")
+        second["input_id"] = first["input_id"]
+        second["output_id"] = first["output_id"]
+        second["event_hash"] = digest(payload(second))
+        errors = verify_state(state)
+        self.assertTrue(any("input_id duplicate" in error for error in errors))
+        self.assertTrue(any("output_id duplicate" in error for error in errors))
 
     def test_gaps_remain_open_until_evidence_closes_them(self):
         state = new_state()
