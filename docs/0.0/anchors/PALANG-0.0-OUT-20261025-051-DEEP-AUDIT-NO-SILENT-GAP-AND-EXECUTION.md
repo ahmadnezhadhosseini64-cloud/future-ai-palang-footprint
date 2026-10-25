@@ -2,10 +2,12 @@
 
 - Stable ID: `G6IP-RAHM-OUT-051-20261025`
 - Production ID: `G6IP-OUT-051`
-- Version: 1.0.0
+- Version: 1.0.1
 - Status: PARTIAL / READ-BACK PENDING AT CREATION; repository changes are not declared globally validated.
 - Input: [IN-052](./PALANG-0.0-IN-20261025-052-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md)
 - Prior checkpoint: [CURRENT-058](./PALANG-0.0-CURRENT-20261024-058-DEEP-EXCAVATION-EXECUTION-RECEIPTS.md)
+- Event: [EVT-0161](../../architecture/BEHAVIOR-TRACE/EVT-0161-DEEP-AUDIT-STALE-GATE-AND-NO-SILENT-GAP-2026-10-25.md)
+- Current checkpoint: [CURRENT-059](./PALANG-0.0-CURRENT-20261025-059-DEEP-AUDIT-AND-CORRECTED-CONFORMANCE.md)
 - Active continuation retained: [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
 
 ## Work actually executed in this turn
