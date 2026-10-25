@@ -1835,3 +1835,10 @@ The current repository-chain IN/OUT equivalence subgate is PASS. NEXT-051 remain
 | HAIF-CURRENT-064 | نقطهٔ جاری و صف اجرای مبتنی بر شاهد | REGISTERED; runtime and external gates OPEN | [CURRENT-064](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-064-NEXT-EXECUTION-AND-GAPS.md) |
 
 Next execution remains attached to existing [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). Priority: run exact-revision runtime tests with receipts; perform clean export/import recovery; continue occurrence-level graph adjudication; reconcile manifests and read back all changed surfaces. Independent host, restart persistence, second host and automatic/background capture remain OPEN / NOT VERIFIED. No successor NEXT was created.
+
+
+## Auxiliary mirror synchronization receipt — EVT-0167
+- [EVT-0167](../BEHAVIOR-TRACE/EVT-0167-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md) and [time binding](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0167-LIVE-MIRROR-SYNC-2026-10-25.md) record the recurring live mirror check.
+- Canonical source unchanged; Library version 7 read-back is the source plus one trailing newline; identity fields, next-action chain and destination statuses match. No write was required.
+- This is an auxiliary destination-evidence event, not a replacement NEXT task. CURRENT-064 remains the current point and NEXT-051 remains the active graph-triage/clean-host-recovery work item.
+- Issue #20 runtime/clean-host recovery and Issue #21 historic source/rule census remain OPEN. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external recovery NOT RUN.
