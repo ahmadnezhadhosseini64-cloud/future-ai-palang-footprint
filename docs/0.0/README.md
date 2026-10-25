@@ -1462,3 +1462,8 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - [EVT-0167](../architecture/BEHAVIOR-TRACE/EVT-0167-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md) records the live Library mirror recheck; [time binding](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0167-LIVE-MIRROR-SYNC-2026-10-25.md) records the event commit's canonical UTC and derived Tehran time.
 - No new 0.0 checkpoint was created for this auxiliary check. Current main continuity remains [CURRENT-064](./anchors/PALANG-0.0-CURRENT-20261025-064-NEXT-EXECUTION-AND-GAPS.md) → [NEXT-051](./anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - CURRENT-036 / NEXT-036 and NEXT-035 remain preserved historical anchors; they are not overwritten.
+
+
+## Recovery verifier failure — EVT-0168
+- [EVT-0168](../architecture/BEHAVIOR-TRACE/EVT-0168-LIVING-ARCHITECTURE-AUDIT-FAILURE-AND-ROOT-CAUSE-2026-10-25.md) preserves the failed current-chain recovery gate and its root causes.
+- This does not replace CURRENT-064 or NEXT-051. The corrected verifier must pass from both IN-057 and OUT-056; clean-host import and external persistence remain separate OPEN gates.
