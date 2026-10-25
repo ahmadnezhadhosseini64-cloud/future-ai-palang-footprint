@@ -1506,3 +1506,12 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - Living master: [HAIF Initial Model Master Reference](../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md).
 - This is the newest user-turn root, not an adjudication of the separate CURRENT-065/CURRENT-066 execution-pointer conflict. Keep NEXT-051 active; no NEXT-052 placeholder. All child steps 0.0-01 through 0.0-06 are enumerated in POINT-0/018.
 - Status: POINT-0/018 and EVT-0180 plus the linked registry/master surfaces were independently re-read from the repository and principal IDs, links and commit times matched. Runtime tests, exact-current-main audit, graph adjudication and external destinations remain OPEN / NOT VERIFIED until separate evidence is attached. The point file's initial status reflects the moment of creation, before this successful read-back.
+
+
+## Latest user-turn root — POINT-0/019: model capability build
+- Root: [POINT-0/019](./anchors/GPT6-RAHM-USER-POINT-0-20261025-019-MODEL-CAPABILITY-BUILD.md) — Stable ID `HAIF-POINT-0-019-MODEL-CAPABILITY-BUILD-20261025`.
+- Event: [EVT-0181](../architecture/BEHAVIOR-TRACE/EVT-0181-POINT-0-019-MODEL-CAPABILITY-BUILD-2026-10-25.md).
+- Living master: [HAIF Initial Model Master Reference](../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md); implementation queue: [model next steps](../architecture/مدل%20اولیه%20AI/صف%20گام‌های%20بعدی%20و%20موارد%20باز.md).
+- First executable increment: independent live-pointer discovery plus fixture tests. Expected current state is AMBIGUOUS until CURRENT-065/CURRENT-066 declarations are adjudicated; the checker must not choose a winner.
+- Continue NEXT-051, Issue #20, Issue #21 and BOART-FOLLOWUP-01; no NEXT-052 placeholder. User-turn root POINT-0/019 is not itself an execution checkpoint.
+- Status: new point/event and checker/test source are registered; exact-head workflow result and runtime gates remain OPEN / NOT VERIFIED.
