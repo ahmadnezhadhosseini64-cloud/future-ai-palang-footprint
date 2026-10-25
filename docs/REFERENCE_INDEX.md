@@ -1542,3 +1542,11 @@ Current continuation chain: POINT-0/013 → IN-057 → OUT-056 → EVT-0166 → 
 - Root: [POINT-0/024 (0+)](./0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-024-0PLUS-PRODUCTION-MARKER.md)
 - Current continuation: [CURRENT-071](./0.0/anchors/PALANG-0.0-CURRENT-20261025-071-0PLUS-ENGINE-AND-HARD-AUDIT.md)
 - Clean ZIP SHA-256: `51a5f9a6def97a0564a8b6542bbf4a5b9ca46a81a267a4a02db7c53511e16f2d`; 12/12 fresh-extract tests passed.
+
+
+## EVT-0190 — v0.3.0 one-command bootstrap package
+- Event: [EVT-0190](./architecture/BEHAVIOR-TRACE/EVT-0190-0PLUS-BOOTSTRAP-CLEAN-PACKAGE-2026-10-25.md)
+- Time binding: [EVT-0190 time](./architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0190-BOOTSTRAP-PACKAGE-2026-10-25.md)
+- Root: [POINT-0/024 (0+)](./0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-024-0PLUS-PRODUCTION-MARKER.md)
+- Current continuation: [CURRENT-071](./0.0/anchors/PALANG-0.0-CURRENT-20261025-071-0PLUS-ENGINE-AND-HARD-AUDIT.md)
+- v0.3.0 clean ZIP SHA-256: `297b3b329143c4b99f55373db0c4bb97896b0e484253622e63eeb32a4429f164`; 13/13 tests and bootstrap/export/import passed.
