@@ -1502,7 +1502,7 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 
 ## Latest user-turn root — POINT-0/018
 - Current user instruction anchor: [POINT-0/018](./anchors/GPT6-RAHM-USER-POINT-0-20261025-018-LIVING-REGISTRATION-AND-NEXT-STEPS.md).
-- Event: [EVT-0180](../architecture/BEHAVIOR-TRACE/EVT-0180-USER-POINT-0-018-LIVING-REGISTRATION-AND-NEXT-STEPS-2026-10-25.md); commit-time evidence: [TIME-BINDING for POINT-0/018 and EVT-0180](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0180-POINT-0-018-2026-10-25.md).
+- Event: [EVT-0180](../architecture/BEHAVIOR-TRACE/EVT-0180-USER-POINT-0-018-LIVING-REGISTRATION-AND-NEXT-STEPS-2026-10-25.md); POINT-0/018 commit: [9b459710]( https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/9b459710a1a757b8f9ccacc6bfdc9c6618e80f90 ) UTC 2026-10-25T07:37:13Z → Tehran 2026-10-25T11:07:13+03:30; EVT-0180 commit: [a2dc3dcf]( https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/a2dc3dcfa3d68f75579efec66c29c1942e447f99 ) UTC 2026-10-25T07:37:15Z → Tehran 2026-10-25T11:07:15+03:30.
 - Living master: [HAIF Initial Model Master Reference](../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md).
 - This is the newest user-turn root, not an adjudication of the separate CURRENT-065/CURRENT-066 execution-pointer conflict. Keep NEXT-051 active; no NEXT-052 placeholder. All child steps 0.0-01 through 0.0-06 are enumerated in POINT-0/018.
 - Status: repository write and cross-surface read-back are being verified; runtime, exact-current-main audit, graph adjudication and external destinations remain OPEN / NOT VERIFIED until evidence is attached.
