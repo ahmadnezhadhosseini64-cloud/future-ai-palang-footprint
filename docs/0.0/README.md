@@ -1524,3 +1524,14 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - زنجیره: [IN-060](./anchors/PALANG-0.0-IN-20261025-060-LIVE-POINTER-FAILURE-AND-RECOVERY.md) → [OUT-059](./anchors/PALANG-0.0-OUT-20261025-059-LIVE-POINTER-FAILURE-AND-RECOVERY.md) → [EVT-0182](../architecture/BEHAVIOR-TRACE/EVT-0182-LIVE-POINTER-FAILURE-AND-RECOVERY-2026-10-25.md) → [CURRENT-067](./anchors/PALANG-0.0-CURRENT-20261025-067-LIVE-POINTER-FAILURE-AND-RECOVERY.md).
 - وضعیت: ثبت مخزن انجام شده؛ بازخوانی نهایی و نتیجهٔ CI پس از اصلاح parser در انتظار است. همهٔ گیت‌های اثبات‌نشده باز می‌مانند.
 - ادامهٔ اجرایی: [NEXT-051](./anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md) فعال است؛ NEXT-052 ساخته نشده است.
+
+
+## POINT-0/021 — initial model completion gate
+
+- User-designated root: [POINT-0/021](./anchors/GPT6-RAHM-USER-POINT-0-20261025-021-INITIAL-MODEL-COMPLETION-GATE.md).
+- Next execution checkpoint: [CURRENT-068](./anchors/PALANG-0.0-CURRENT-20261025-068-INITIAL-MODEL-COMPLETION-GATE.md).
+- Event: [EVT-0184](../architecture/BEHAVIOR-TRACE/EVT-0184-INITIAL-MODEL-COMPLETION-GATE-2026-10-25.md).
+- Parent continuity: POINT-0/020 → POINT-0/021; CURRENT-067 history is preserved.
+- Active queue: NEXT-051. No NEXT-052 created.
+- Status: registered in repository; exact commit timestamps are available from Git history; current-head test receipts must be inspected after these changes.
+- Open: CURRENT-065/CURRENT-066 adjudication, graph review, local prototype acceptance gaps, independent-host import, live capture/background operation and external storage.
