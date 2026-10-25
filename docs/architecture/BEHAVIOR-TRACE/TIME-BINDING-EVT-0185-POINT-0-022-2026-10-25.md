@@ -84,3 +84,11 @@ The exact user-message timestamp remains UNKNOWN / UNVERIFIED.
 | Living master update | 3b5cf767fdb9caf5b5800996672ab5bc4fc88d66 | 2026-10-25T13:46:47Z | 2026-10-25T17:16:47+03:30 | registered |
 
 The user-message timestamp remains UNKNOWN / UNVERIFIED.
+
+
+## Final queue update time
+
+- Next-steps queue commit: e0a8683ed2789dcd4804970ac4a2b5a6d1d6a72a
+- Repository time UTC: 2026-10-25T13:47:25Z
+- Derived Asia/Tehran (+03:30): 2026-10-25T17:17:25+03:30
+- Queue update records the exact passing test runs, ZIP SHA-256, manifest reconciliation and remaining independent-host/graph gates.
