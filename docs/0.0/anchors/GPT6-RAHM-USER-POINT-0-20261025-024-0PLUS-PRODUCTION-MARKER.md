@@ -44,3 +44,10 @@ This root stays within Future AI / Palang Footprint and the HAIF loop:
 - Clean distribution and CLI lifecycle are proven by [EVT-0189](../../architecture/BEHAVIOR-TRACE/EVT-0189-0PLUS-CLEAN-DISTRIBUTION-SMOKE-2026-10-25.md); SHA-256 `51a5f9a6def97a0564a8b6542bbf4a5b9ca46a81a267a4a02db7c53511e16f2d`.
 - The root identity rule is now encoded in the engine: one canonical point with labels `0` and `0+`; `0.0` is a child continuation; point records must match append-only event evidence.
 - The next active execution point remains [CURRENT-071](./PALANG-0.0-CURRENT-20261025-071-0PLUS-ENGINE-AND-HARD-AUDIT.md). Independent GPT-6 host import/persistence remains OPEN / NOT PROVEN.
+
+
+## v0.3.0 bootstrap implementation receipt
+- The transferable initial model now includes one-command bootstrap: [EVT-0190](../../architecture/BEHAVIOR-TRACE/EVT-0190-0PLUS-BOOTSTRAP-CLEAN-PACKAGE-2026-10-25.md).
+- Package v0.3.0 SHA-256: `297b3b329143c4b99f55373db0c4bb97896b0e484253622e63eeb32a4429f164`; 13/13 tests passed in CI and after fresh extraction.
+- Bootstrap creates a single canonical `0`/`0+` root, linked `0.0` continuation, and six OPEN host-capability gaps; export/import recovery was verified.
+- Independent GPT-6 host execution is still the next gate, not a completed claim.
