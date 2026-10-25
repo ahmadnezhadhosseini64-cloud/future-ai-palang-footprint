@@ -370,7 +370,8 @@
     "docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-067-LIVE-POINTER-FAILURE-AND-RECOVERY.md",
     "docs/0.0/README.md",
     "scripts/behavior-hunter/discover_current_0_0_pointer.py",
-    "scripts/behavior-hunter/tests/test_discover_current_0_0_pointer.py"
+    "scripts/behavior-hunter/tests/test_discover_current_0_0_pointer.py",
+    "docs/architecture/BEHAVIOR-TRACE/EVT-0183-POINTER-PARSER-FIX-AND-PORTABLE-CONFORMANCE-RECEIPTS-2026-10-25.md"
   ],
   "live_reference_policy": "Mutable current-state and startup/governance references are included in each export and receive exact SHA-256 plus Git blob SHA-1 observations in the same CI run. This includes RAHM_BOOT and RAHM_ARCHITECTURE because their canonical checkpoint binding must track the current live chain. Stable core remains digest-pinned."
 }
