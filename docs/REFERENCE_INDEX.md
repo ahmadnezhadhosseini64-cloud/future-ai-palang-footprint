@@ -1320,4 +1320,4 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - User Point 0/009: [chain recovery audit request](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-009-CHAIN-RECOVERY-AUDIT.md).
 - Interaction chain: [IN-053](0.0/anchors/PALANG-0.0-IN-20261025-053-CHAIN-RECOVERY-AUDIT.md) → [OUT-052](0.0/anchors/PALANG-0.0-OUT-20261025-052-CHAIN-RECOVERY-AUDIT.md) → [EVT-0162](architecture/BEHAVIOR-TRACE/EVT-0162-CHAIN-RECOVERY-AUDIT-AND-SCOPE-ERROR-LEARNING-2026-10-25.md) → [CURRENT-060](0.0/anchors/PALANG-0.0-CURRENT-20261025-060-CHAIN-RECOVERY-AUDIT.md).
 - Active execution queue remains [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md); no successor NEXT created.
-- Status: focused repository read-back and 18-link/9-target reconciliation PASS; repository-wide identity/parent/time review and external runtime gates remain OPEN / REVIEW_REQUIRED.
+- Status: focused repository read-back and 25-link/11-target reconciliation PASS; repository-wide identity/parent/time review and external runtime gates remain OPEN / REVIEW_REQUIRED.
