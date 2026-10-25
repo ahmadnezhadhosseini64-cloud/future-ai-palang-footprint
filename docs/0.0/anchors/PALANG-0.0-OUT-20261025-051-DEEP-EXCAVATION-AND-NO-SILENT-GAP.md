@@ -1,9 +1,9 @@
 # OUT-051 — Deep Excavation Result and No-Silent-Gap Continuity
 
-- Stable ID: `G6IP-RAHM-OUT-051-20261025`
-- Production ID: `G6IP-OUT-051`
+- Stable ID: `G6IP-RAHM-OUT-051-20261025-ALT-001`
+- Production ID: `G6IP-OUT-051-ALT-001`
 - Version: 1.0.0
-- Status: PARTIAL / EVIDENCE-LINKED; repository audit performed, global adjudication and real-host tests remain open.
+- Status: ARCHIVED PARALLEL DRAFT / NON-CANONICAL; retained as audit evidence after collision detection. The canonical branch is [G6IP-RAHM-OUT-051-20261025-ALT-001](../../0.0/anchors/PALANG-0.0-OUT-20261025-051-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md) where path context permits.
 - Input: [IN-052](./PALANG-0.0-IN-20261025-052-DEEP-EXCAVATION-AND-NO-SILENT-GAP.md)
 - Point 0: [POINT-0/008](./GPT6-RAHM-USER-POINT-0-20261025-008-DEEP-EXCAVATION-AND-NO-SILENT-GAP.md)
 - Event: [EVT-0161](../../architecture/BEHAVIOR-TRACE/EVT-0161-DEEP-EXCAVATION-NO-SILENT-GAP-2026-10-25.md)
@@ -21,3 +21,7 @@
 ## Corrective architecture rule
 A task is not completed by creating a NEXT document. Evidence of execution must be attached to the existing NEXT. Keep NEXT-051 open until acceptance criteria are proven. No new NEXT is minted here.
 
+
+
+## Collision reconciliation
+This artifact was written in parallel with a pre-existing canonical artifact for the same turn and initially reused its stable/production ID. To avoid an unresolved duplicate-ID collision, this file is retained but re-identified as an ALT-001 archival branch. The canonical operational chain uses `docs/0.0/anchors/PALANG-0.0-OUT-20261025-051-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md`. Do not treat this file as the current checkpoint or duplicate its behavior rules into the active branch.
