@@ -33,3 +33,12 @@
 - Do not create NEXT-052 while NEXT-051 remains active.
 - Do not call the portable Python package a native GPT plugin.
 - Do not claim the target GPT-6 host has been tested based on GitHub Actions or the current tool runtime.
+
+
+## 0.0 execution update — distribution gate closed
+- Exact-head Living Architecture Audit [40213760585](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40213760585): SUCCESS on `0819d97283d892411a6868c544e92752a8c35c55`; 12/12 starter tests passed.
+- Clean package v0.2.1: `haif-gpt6-starter-v0.2.1-0plus-clean.zip`, SHA-256 `51a5f9a6def97a0564a8b6542bbf4a5b9ca46a81a267a4a02db7c53511e16f2d`, 14,077 bytes; extracted into a fresh directory and 12/12 tests passed.
+- Direct CLI smoke test: register canonical `0` + `0+`, register child `0.0`, record IN/OUT, audit, export, import into a second state path, audit again — PASS; same state ID and head hash `10c0f3193cabee8b0bc17c9273a362ce2768321f3ef0f7307c1aa470eb87afd4`.
+- Distribution evidence: [EVT-0189](../../architecture/BEHAVIOR-TRACE/EVT-0189-0PLUS-CLEAN-DISTRIBUTION-SMOKE-2026-10-25.md); repository time binding: [TIME-BINDING-EVT-0189](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0189-CLEAN-DISTRIBUTION-2026-10-25.md).
+- The clean-distribution gate is CLOSED_VERIFIED for the current local package. The next active gate is independent GPT-6 host import/runtime. Do not infer host persistence, automatic capture, background execution, or external writes from these local/CI passes.
+- The root `0` and marker `0+` remain one canonical identity; `0.0` remains its linked child continuation. NEXT-051 remains active; NEXT-052 was not created.
