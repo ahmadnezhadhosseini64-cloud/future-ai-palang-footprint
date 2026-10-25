@@ -3,7 +3,7 @@
 - Stable ID: `HAIF-POINT-0-019-MODEL-CAPABILITY-BUILD-20261025`
 - Production ID: `HAIF-P0-019-20261025`
 - Version: 1.0.0
-- Status: REGISTERED / OPEN / LIVING; repository read-back and exact-head tests required after writes.
+- Status: REGISTERED / REPOSITORY READ-BACK VERIFIED / OPEN / LIVING. Repository read-back confirms the point file exists and its identifiers/links match; exact-head tests and runtime acceptance remain OPEN.
 - User intent: advance the model toward the initial HAIF model with the capabilities requested throughout the project; make this interaction a new point 0 and link all next steps as 0.0.
 - Parent: [POINT-0/018](./GPT6-RAHM-USER-POINT-0-20261025-018-LIVING-REGISTRATION-AND-NEXT-STEPS.md).
 - Event: [EVT-0181](../../architecture/BEHAVIOR-TRACE/EVT-0181-POINT-0-019-MODEL-CAPABILITY-BUILD-2026-10-25.md).
