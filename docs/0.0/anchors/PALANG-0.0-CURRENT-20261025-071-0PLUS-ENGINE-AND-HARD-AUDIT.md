@@ -42,3 +42,13 @@
 - Distribution evidence: [EVT-0189](../../architecture/BEHAVIOR-TRACE/EVT-0189-0PLUS-CLEAN-DISTRIBUTION-SMOKE-2026-10-25.md); repository time binding: [TIME-BINDING-EVT-0189](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0189-CLEAN-DISTRIBUTION-2026-10-25.md).
 - The clean-distribution gate is CLOSED_VERIFIED for the current local package. The next active gate is independent GPT-6 host import/runtime. Do not infer host persistence, automatic capture, background execution, or external writes from these local/CI passes.
 - The root `0` and marker `0+` remain one canonical identity; `0.0` remains its linked child continuation. NEXT-051 remains active; NEXT-052 was not created.
+
+
+## v0.3.0 bootstrap release — clean package gate closed
+- Exact-head Living Architecture Audit: [40214177082](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40214177082), SUCCESS on `0d5107fcb389d3ab79e03079d7c1d4d761f911a7`; 13/13 tests passed.
+- Package upgraded to v0.3.0 with one-command bootstrap `bootstrap_0plus.py`.
+- Clean ZIP: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`; SHA-256 `297b3b329143c4b99f55373db0c4bb97896b0e484253622e63eeb32a4429f164`; 16,266 bytes.
+- Fresh-extraction tests: 13/13 PASS. Bootstrap created root labels `0` + `0+`, linked child `0.0`, and six OPEN host-capability gaps; audit PASS. Export/import into a second path and post-import audit also PASS with matching state ID and head hash.
+- Detailed evidence: [EVT-0190](../../architecture/BEHAVIOR-TRACE/EVT-0190-0PLUS-BOOTSTRAP-CLEAN-PACKAGE-2026-10-25.md); time binding [here](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0190-BOOTSTRAP-PACKAGE-2026-10-25.md).
+- **Next active execution gate:** import the package into the intended independent GPT-6 host and test host runtime/file access. If unavailable, record BLOCKED / NOT AVAILABLE; do not claim a pass.
+- Still OPEN / NOT PROVEN: automatic capture, host-wide durable memory/restart, background execution, external GitHub write permissions and cross-device persistence. NEXT-051 remains active; NEXT-052 not created.
