@@ -5,7 +5,7 @@
 - Parent root: [POINT-0/022](./GPT6-RAHM-USER-POINT-0-20261025-022-PORTABLE-STARTER-ENGINE.md)
 - IN: [IN-052](./PALANG-0.0-IN-20261025-052-PORTABLE-STARTER-ENGINE.md)
 - Event: [EVT-0185](../../architecture/BEHAVIOR-TRACE/EVT-0185-PORTABLE-HAIF-GPT6-STARTER-ENGINE-2026-10-25.md)
-- Status: IMPLEMENTATION REGISTERED; exact CI result pending.
+- Status: IMPLEMENTATION REGISTERED; seven starter tests PASS on tested SHA f482083cc2aeab82964c271c5d97ba4bb8657ce1; follow-up audit and portable conformance PASS on tested SHA 99479872acaede69679b13273e37b9ca51f35ea5.
 
 ## Output substance
 
@@ -16,3 +16,12 @@ The package is connected to the living master and active NEXT-051; it does not f
 ## Important limits
 
 This output is not evidence that a native GPT plugin has been installed. It does not prove automatic host-message capture, external repository write access, durable cross-session memory, background execution or independent GPT-host import. These remain open until directly tested.
+
+
+## Verified test result
+
+- Starter unit suite: 7 passed on tested SHA f482083cc2aeab82964c271c5d97ba4bb8657ce1.
+- Follow-up Living Architecture Audit: 40198744637 SUCCESS on tested SHA 99479872acaede69679b13273e37b9ca51f35ea5.
+- Follow-up Portable RAHM Conformance: 40198744680 SUCCESS on the same tested SHA.
+- Latest starter ZIP SHA-256: 79ebfb632bf108e7844b698692fa4f3b8878b3d457a2910f92411bbd75546974.
+- The canonical pointer remains ambiguous and independent GPT-host import is not yet proven.
