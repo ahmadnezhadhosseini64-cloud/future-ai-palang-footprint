@@ -12,6 +12,7 @@
 - Active unresolved queue: [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - Executable runtime: [source](../../../scripts/haif-runtime/haif_runtime.py), [tests](../../../scripts/haif-runtime/tests/test_runtime.py), [runbook](../../../scripts/haif-runtime/README.md).
 - Portable package manifest: [EXPORT_MANIFEST](../../portable/RAHM/EXPORT_MANIFEST.json).
+- Incremental package overlay: [CURRENT-063-OVERLAY-MANIFEST](../../portable/RAHM/CURRENT-063-OVERLAY-MANIFEST.json).
 
 ## Delivered implementation
 A dependency-free local Python engine now supports:
