@@ -35,3 +35,14 @@ Build the smallest useful interactive prototype under the inherited HAIF governa
 ## Current state
 Point 0.0 is the active checkpoint. Prototype: NOT BUILT. Runtime execution: NOT RUN. Cold-start recovery: NOT RUN. This is the next task, not a completion claim.
 \n\n## Architecture-zero handoff update\nResume from CURRENT-040 and architecture-zero anchor G6IP-ARCH-ZERO-20261024-001. The governing inherited architecture master is v1.0.4 and GPT-6 living master v1.3.5. Preserve IN-032/OUT-032 and EVT-0140. The prototype remains NOT BUILT until a real artifact is committed and exercised.\n
+
+## CURRENT-061 execution receipt — prototype source committed
+- Version: 1.0.1
+- Source artifact: [interactive prototype](../../architecture/interactive-prototype/index.html).
+- Test instructions: [prototype README](../../architecture/interactive-prototype/README.md).
+- [x] Prototype source and manual test contract exist in the repository.
+- [x] Source has explicit input validation, visible output, IN/OUT events, checkpoint, JSON import/export and best-effort same-browser persistence.
+- [ ] Browser execution against the acceptance steps: NOT RUN / NOT VERIFIED by repository write/read-back.
+- [ ] Clean-profile/cold-start recovery: NOT RUN.
+- [ ] Real AI-host import, second host, cross-host persistent memory and background execution: OPEN / NOT VERIFIED.
+- Decision: NEXT-039 advances from “prototype not built” to “prototype source built; execution and recovery gates open.” It is not closed.
