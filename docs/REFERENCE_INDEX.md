@@ -1330,3 +1330,11 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Graph decision rules: [AGACR](reference/REFERENCE-DOCUMENTS/ARCHITECTURE-GRAPH-ADJUDICATION-AND-CLOSURE-REGISTER-2026-10-25-001.md).
 - Current overlay inventory: [CURRENT-061-OVERLAY-MANIFEST](portable/RAHM/CURRENT-061-OVERLAY-MANIFEST.json). This inventory records Git blob IDs; exact-byte SHA-256 and export archive are still pending a fresh strict workflow.
 - Status: focused read-back and link/fixture structural checks PASS; browser/clean-host tests and global semantic graph adjudication remain OPEN. NEXT-051 remains active; NEXT-039 and NEXT-040 remain open subtasks.
+
+
+## CURRENT-062 — نقطهٔ صفر جدید، تداوم سند مادر و شکاف‌های معماری (2026-10-25)
+- User Point 0/011: [ثبت نقطهٔ صفر و شکاف‌های باز](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-011-OPEN-GAPS-AND-CONTINUITY.md).
+- Interaction chain: [IN-055](0.0/anchors/PALANG-0.0-IN-20261025-055-OPEN-GAPS-AND-CONTINUITY.md) → [OUT-054](0.0/anchors/PALANG-0.0-OUT-20261025-054-OPEN-GAPS-AND-CONTINUITY.md) → [EVT-0164](architecture/BEHAVIOR-TRACE/EVT-0164-OPEN-GAPS-AND-CONTINUITY-2026-10-25.md) → [CURRENT-062](0.0/anchors/PALANG-0.0-CURRENT-20261025-062-OPEN-GAPS-AND-CONTINUITY.md).
+- Living mother: [HAIF initial-model master](architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md); graph adjudication: [AGACR](reference/REFERENCE-DOCUMENTS/ARCHITECTURE-GRAPH-ADJUDICATION-AND-CLOSURE-REGISTER-2026-10-25-001.md).
+- Active execution remains [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md); NEXT-039 and NEXT-040 are not silently closed.
+- Confirmed boundary: new chain and master/index/queue integration must pass focused read-back; current semantic graph inventory, strict package/archive digest, browser execution, clean-host import, restart persistence and automated capture remain open until newly evidenced.
