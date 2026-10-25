@@ -665,3 +665,10 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 
 ## VERIFICATION-CHECKPOINT-INT-20261024-026
 - [Read-back verification checkpoint](./VERIFICATION-CHECKPOINT-INT-20261024-026.md) covers CURRENT-036 / IN-026 / OUT-026 / NEXT-036 / EVT-0134 / LAL-20261024-013 and records the candidate branch's current verification boundary.
+
+
+## EVT-0167 — Live Library mirror recheck
+- [Event](./EVT-0167-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md) records an independent read-back of the canonical live-destination audit and Library version 7.
+- [Time binding](./TIME-BINDING-EVT-0167-LIVE-MIRROR-SYNC-2026-10-25.md) records the actual event commit UTC and derived Tehran equivalent, separately from source-commit and Library metadata times.
+- Result: source blob unchanged; 10,479 vs 10,480 characters; one trailing newline; Stable ID/Test ID/Version/next-action/destination statuses match; no redundant write.
+- Current repository continuation observed in main: CURRENT-064 / NEXT-051. Earlier CURRENT-036 / NEXT-036 and mirror NEXT-035 remain preserved.
