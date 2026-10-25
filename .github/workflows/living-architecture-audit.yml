@@ -230,6 +230,16 @@ jobs:
           set -euo pipefail
           python3 scripts/test_host_adapter.py | tee audit-output/host-adapter-test-run.txt
 
+      - name: Test portable HAIF GPT-host starter engine
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m unittest discover -s prototype/haif-gpt6-starter -p 'test_engine.py' -v | tee audit-output/haif-gpt6-starter-tests.txt
+          python3 -m py_compile prototype/haif-gpt6-starter/engine.py
+          python3 -m json.tool prototype/haif-gpt6-starter/manifest.json >/dev/null
+          python3 -m json.tool prototype/haif-gpt6-starter/state.schema.json >/dev/null
+          echo "HAIF_GPT6_STARTER_ENGINE_TESTS=PASS"
+
       - name: Upload inspectable audit evidence
         if: always()
         uses: actions/upload-artifact@v4
