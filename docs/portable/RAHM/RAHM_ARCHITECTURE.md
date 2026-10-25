@@ -1,5 +1,5 @@
 # RAHM_ARCHITECTURE — portable architecture contract
-Version 1.0.1 | Package ID: HAIF-RAHM-PORTABLE-20261024-001
+Version 1.0.2 | Package ID: HAIF-RAHM-PORTABLE-20261024-001
 
 ## Layers
 1. MASTER: canonical rules, identities, versions, lineage, acceptance and promotion.
@@ -25,19 +25,18 @@ Never skip a rung.
 
 Failure handling: missing access, failed writes, broken links, duplicate IDs, partial imports, contradictory records and unavailable tools create explicit open gates.
 
-## Inherited architecture binding — CURRENT-048
-- Current checkpoint: [CURRENT-048](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-048-RAHM-INHERITED-ARCHITECTURE.md).
-- Inherited living master: [GPT6 New Project Inherited Architecture](../../reference/REFERENCE-DOCUMENTS/GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md).
-- Event chain: [IN-040](../../0.0/anchors/PALANG-0.0-IN-20261024-040-RAHM-INHERITED-ARCHITECTURE.md) → [OUT-040](../../0.0/anchors/PALANG-0.0-OUT-20261024-040-RAHM-INHERITED-ARCHITECTURE.md) → [EVT-0148](../../architecture/BEHAVIOR-TRACE/EVT-0148-RAHM-INHERITED-ARCHITECTURE-AND-EXPORTABLE-RECOVERY-2026-10-24.md).
-- Next execution checkpoint: [NEXT-046](../../0.0/anchors/PALANG-0.0-NEXT-20261024-046-RAHM-PORTABILITY-VALIDATION.md).
-- Transfer contract: export exact bytes and manifest, verify SHA-256, validate schemas, import into a clean host, reconstruct state and open gates, then independently read back and run conformance tests.
-- This binding is documentation, not transfer proof. Until a target-host import passes, status remains NOT VERIFIED.
+## Current canonical binding — CURRENT-059 / Point 0/008
 
+- Current checkpoint: [CURRENT-059](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-059-DEEP-AUDIT-AND-CORRECTED-CONFORMANCE.md).
+- User return point: [POINT-0/008](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-008-DEEP-AUDIT-AND-NO-SILENT-GAP.md).
+- Interaction chain: [IN-052](../../0.0/anchors/PALANG-0.0-IN-20261025-052-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md) → [OUT-051](../../0.0/anchors/PALANG-0.0-OUT-20261025-051-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md) → [EVT-0161](../../architecture/BEHAVIOR-TRACE/EVT-0161-DEEP-AUDIT-STALE-GATE-AND-NO-SILENT-GAP-2026-10-25.md) → CURRENT-059 → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Portable master: [FIRST-LIVING-MASTER](./FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md); startup contract: [RAHM_BOOT](./RAHM_BOOT.md); manifest: [EXPORT_MANIFEST](./EXPORT_MANIFEST.json).
+- Transfer contract: stable core files have pinned exact-byte SHA-256 values; mutable current-state references are included and hashed per build; the package archive SHA-256 binds the exact snapshot. A successful CI package does not prove independent AI-host import.
+- Latest successful strict conformance and audit receipts are linked from the workflow history. Use the latest successful run for the exact commit being transferred.
 
-## No-silent-gap continuity contract — CURRENT-056
-- Current checkpoint: [CURRENT-056](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-056-OUTPUT-CONTINUITY-AND-RECOVERY.md).
-- User return point: [Point 0/005](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-005-OUTPUT-CONTINUITY-AND-RECOVERY.md).
-- Event: [EVT-0158](../../architecture/BEHAVIOR-TRACE/EVT-0158-NO-SILENT-GAP-OUTPUT-CONTINUITY-2026-10-24.md).
-- Next: [NEXT-050](../../0.0/anchors/PALANG-0.0-NEXT-20261024-050-FULL-RECOVERY-AND-REAL-HOST-IMPORT.md), OPEN / LIVING.
-
-Rule: do not silently abandon open work between input and output. Before long operations, expose a useful interim result when possible. Each delivered response must identify its completion state and deterministic next action. A new input must be linked to the latest open NEXT and must not erase it. Never claim hidden background work; asynchronous persistence/capture requires a real host capability and test receipt.
+## No-silent-gap continuity contract — CURRENT-059
+- Every input is linked to a Point 0/IN record and a delivered OUT/event/current state; if execution cannot finish, expose a useful partial result with the exact resume step.
+- A new input does not overwrite or close prior open work. Preserve branches and update the existing NEXT with receipts.
+- A NEXT file is a plan, not proof of execution. Never mint a successor NEXT until the current acceptance criteria have evidence.
+- Keep all unverified gates OPEN: clean host import, second host, persistent-memory restart, automatic capture, idle/background execution, and unresolved graph identity/parent/time findings.
+- The architecture is ACTIVE/LIVING as repository artifacts; host runtime activation and permanent background operation remain NOT VERIFIED until tested in a real authorized host.
