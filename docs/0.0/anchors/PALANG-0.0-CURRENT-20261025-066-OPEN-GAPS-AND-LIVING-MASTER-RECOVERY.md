@@ -38,3 +38,10 @@ Continue NEXT-051 in this order: verify the current manifest and workflow receip
 ## Verifier failure preserved — EVT-0175
 - [EVT-0175](../../architecture/BEHAVIOR-TRACE/EVT-0175-CURRENT-066-RECOVERY-VERIFIER-STALE-CHECKPOINT-2026-10-25.md) records the exact-revision audit failure: the verifier still expected CURRENT-065 while the overlay pointed to CURRENT-066.
 - Correction: verifier chain paths, stable IDs, gate markers and overlay checkpoint expectations are being advanced to CURRENT-066. A fresh exact-commit audit is required; no test gate is closed by the correction alone.
+
+
+## Explicit continuity evidence
+- Previous live-mirror check: [EVT-0170](../../architecture/BEHAVIOR-TRACE/EVT-0170-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md).
+- Portable overlay: [CURRENT-065-OVERLAY-MANIFEST](../../portable/RAHM/CURRENT-065-OVERLAY-MANIFEST.json).
+- Recovery verifier defect: [EVT-0175](../../architecture/BEHAVIOR-TRACE/EVT-0175-CURRENT-066-RECOVERY-VERIFIER-STALE-CHECKPOINT-2026-10-25.md).
+- Clean round-trip recovery remains OPEN until the exact current revision passes the recovery verifier and a current artifact is inspected.
