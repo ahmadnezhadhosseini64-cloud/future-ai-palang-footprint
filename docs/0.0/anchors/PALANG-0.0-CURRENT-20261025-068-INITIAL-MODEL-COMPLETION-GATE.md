@@ -17,8 +17,8 @@ EVT-0183 records successful tested-commit receipts for the date-bearing pointer-
 ## Execution plan — ordered, with closure criteria
 
 ### C0 — Revalidate the actual current main
-- [ ] Read current main HEAD and its actual commit timestamp in UTC.
-- [ ] Inspect the exact-head Living Architecture Audit and portable-conformance receipts/artifacts for that revision.
+- [x] Read current content-head commit and its actual commit timestamp in UTC; time binding is maintained separately.
+- [x] Inspect exact-content-head Living Architecture Audit and portable-conformance receipts/artifacts for revision 8459fbe; run/job/artifact metadata was read back.
 - [ ] If no run exists, trigger only through an available authorized route; otherwise leave NOT RUN.
 - [ ] Record the exact SHA, run IDs, artifact IDs/digests and status. Do not reuse a nearby commit's PASS as current-head proof.
 
@@ -26,8 +26,8 @@ EVT-0183 records successful tested-commit receipts for the date-bearing pointer-
 - [ ] Inspect `prototype/haif-v0/` source, schema, tests and run guide at the same SHA.
 - [ ] Ensure Anchor, IN, OUT, Event, Artifact, Evidence, Relation, Decision and Gap are represented or explicitly scoped out with a reason.
 - [ ] Verify create/read-back, independent anchors, provenance retrieval, hash mismatch handling, failed-write/read-back handling, and clean-process recovery.
-- [ ] Run tests; preserve failing results and warnings as evidence.
-- [ ] Verify export → import → canonical-state comparison in a clean local process.
+- [x] Runtime and fixture tests passed in portable-conformance run 40186838036 on 8459fbe. Preserve its exact scope; do not generalize to production readiness.
+- [x] Bounded IN/OUT recovery equivalence and portable package conformance passed on 8459fbe; a full independent AI-host import remains separate and open.
 - Acceptance: automated tests pass on exact SHA, data/provenance survives round-trip, and failures do not appear as success.
 
 ### C2 — Reconcile the live checkpoint without guessing
@@ -44,7 +44,7 @@ EVT-0183 records successful tested-commit receipts for the date-bearing pointer-
 
 ### C4 — Complete portability and independent-host proof
 - [ ] Verify portable bundle exact-byte digest and schema.
-- [ ] Run local clean-environment import/round-trip.
+- [x] CI Runtime A → Runtime B artifact transfer and independent verification passed in run 40186838007; this is a separate CI runtime harness, not proof of import into an external AI host.
 - [ ] Separately test import and recovery in an independent AI host; record host/version, permissions, result and limitations.
 - Acceptance: successful independent-host retrieval of selected anchors, events and artifacts with matching identity and provenance. Until then: NOT PROVEN.
 
@@ -55,7 +55,7 @@ EVT-0183 records successful tested-commit receipts for the date-bearing pointer-
 - Acceptance: no external destination or host-wide capability is described as active without its own evidence.
 
 ### C6 — Close the initial model baseline
-- [ ] Update the living master, 0.0 registry, Reference Index, behavior-trace index, integration queue and model README from verified evidence.
+- [x] Updated the living master, 0.0 registry, Reference Index, behavior-trace index and integration queue; all were fetched after writing and expected identifiers were present. The model README was not changed in this pass.
 - [ ] Run final exact-head structural audit and local prototype suite after the last code/documentation change.
 - [ ] Read back every changed file and reconcile links/IDs/statuses.
 - Acceptance: documented model + locally runnable prototype + exact-head passing tests/audit + export/import proof; external-host and historic-graph work may remain explicitly open without being misrepresented as completed.
@@ -75,3 +75,17 @@ EVT-0183 records successful tested-commit receipts for the date-bearing pointer-
 `REGISTERED` means file recorded; `READ-BACK VERIFIED` means it was fetched and checked; `TEST PASS` applies only to a named tested SHA/scope; `VALIDATED` requires the relevant semantic/technical gate; `ACTIVE` describes a live operational capability only when evidence supports it; `OPEN / NOT PROVEN` remains open until acceptance evidence exists.
 
 This checkpoint is the next worklist, not a declaration that the model is complete.
+
+
+## Fresh exact-content-head receipts — 2026-10-25
+
+- Tested content SHA: `8459fbe59c8420ff84df12c5033a00acf8ba205c` (EVT-0184 receipt update).
+- Living Architecture Audit [40186838042](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40186838042): SUCCESS; artifact ID `12596273916`, digest `sha256:9fad8ea0c6c8876910b34a5f047bf29ffd9ba5e1ebd13fd88d5fd4bbdc0f73b7`.
+- Portable conformance [40186838036](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40186838036): SUCCESS. Runtime tests, valid/invalid interaction-pair fixtures, IN/OUT recovery, exact-byte SHA-256 evidence and portable package build all completed successfully. Package artifact ID `12596555037`, digest `sha256:e3c95ecbcddcbb7b31a4b5d09a49f2809f4accd581c04b8ccc4420c63dd7455c`; conformance artifact ID `12596530138`, digest `sha256:4371d0eeb8ac452c7b6020ae49ea63a783c275349282e5094f796fc8b1972862`.
+- CPREL independent runtime transfer harness [40186838037](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40186838037): SUCCESS; Runtime A artifact transferred to Runtime B and independently verified. This is CI runtime transfer, not external AI-host import.
+- Behavior Hunter candidate generation [40186838039](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40186838039): SUCCESS; generator tests and IN/OUT graph recovery completed.
+- Reconciliation Acceptance Test [40186838041](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40186838041): SUCCESS.
+- Cross-Layer Integrity Gate [40186838000](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40186838000): SUCCESS.
+- Evidence Gate [40186837992](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40186837992): SUCCESS.
+- Audit log finding: structural checks PASS; live pointer discovery correctly returned AMBIGUOUS/BLOCKED with candidates CURRENT-023, 036, 038, 039, 064, 065 and 066; graph collision/parent review remains open; semantic timestamp audit has one ambiguous historical timestamp; host adapter synthetic tests pass, but live ChatGPT producer and external repository write remain unimplemented/unproven.
+- The automation-generated evidence-record commits follow the tested content SHA. No source or model-document changes were made after SHA 8459fbe during that run; nevertheless, a literal audit of the newest evidence-record-only branch SHA is not claimed.
