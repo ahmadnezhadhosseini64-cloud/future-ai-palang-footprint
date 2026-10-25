@@ -51,7 +51,7 @@ Portable RAHM Conformance run [40198220828](https://github.com/ahmadnezhadhossei
 
 ## Acceptance boundary
 
-The local starter package passes its six automated tests on the tested revision. This does not prove native GPT plugin installation, independent GPT-host import, automatic capture, background execution, durable host memory or external repository writes.
+The local starter package passes seven automated tests on the tested revision. This does not prove native GPT plugin installation, independent GPT-host import, automatic capture, background execution, durable host memory or external repository writes.
 
 
 ## Latest starter verification — run 40198462347
@@ -61,7 +61,7 @@ The local starter package passes its six automated tests on the tested revision.
 - ZIP runner digest: \`7372007564d94f02807c41291ea6e0976e8899c2d1c37306c5978b30fe1399df\`.
 - Workflow evidence artifact: ID \`12600674334\`, digest \`sha256:aabb3b5bada3386804710a6566f5137fb8f435c1716bff854f6aff268ce611ef\`.
 - Independent GPT host import remains NOT PROVEN.
-- Separate portable manifest SHA inventory failure run 40198220828 remains OPEN.
+- The portable manifest SHA inventory failure run 40198220828 was resolved by updating the stale workflow digest in EXPORT_MANIFEST.json; follow-up run 40198744680 passed.
 
 
 ## Follow-up integrity resolution — tested SHA 99479872
