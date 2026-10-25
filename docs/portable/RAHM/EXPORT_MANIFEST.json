@@ -1,7 +1,7 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.5.7",
-  "manifest_status": "Canonical CURRENT-059 deep-audit chain and retained ALT-001 files: digest reconciliation in progress; strict CI receipt pending",
+  "version": "1.5.8",
+  "manifest_status": "Current canonical CURRENT-059 chain reconciled; ALT-001 drafts retained with unique IDs; strict byte-check and archive run pending",
   "created_from_checkpoint": "G6IP-RAHM-CURRENT-059-20261025",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [
@@ -55,8 +55,8 @@
     {
       "path": "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-008-DEEP-EXCAVATION-AND-NO-SILENT-GAP.md",
       "version": "1.0.0",
-      "git_blob_sha": "6ef3948c7f6429e50fba12d0402032a56643d0af",
-      "sha256": "3f61abf9671de223313353751b933251e80c15a36d5e8d949c4f2a2f199f48f6"
+      "git_blob_sha": "444a40f6945350898ed1da1a06144a95d5a387e4",
+      "sha256": "33b126df0760fa3abfa50c9c2efad63e4abf7adbd4c83ee90980e7ab09308e2f"
     },
     {
       "path": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261024-054-FIRST-LIVING-MASTER.md",
@@ -96,8 +96,8 @@
     {
       "path": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-059-DEEP-EXCAVATION-AND-NO-SILENT-GAP.md",
       "version": "1.0.0",
-      "git_blob_sha": "670212abc0145e9796ae32e002c6b2d6b6267f3c",
-      "sha256": "ad83510a0937fa8a4c9ec5e6f1c79747a328f2fbe58469090c527df5f41b03bb"
+      "git_blob_sha": "8230308438718a99f659b46219d474ea65876188",
+      "sha256": "ca27ef4bd98479086420d99aef6299e260d18215f97d88f8179f24a1fc364d74"
     },
     {
       "path": "docs/0.0/anchors/PALANG-0.0-IN-20261024-047-FIRST-LIVING-MASTER.md",
@@ -137,8 +137,8 @@
     {
       "path": "docs/0.0/anchors/PALANG-0.0-IN-20261025-052-DEEP-EXCAVATION-AND-NO-SILENT-GAP.md",
       "version": "1.0.0",
-      "git_blob_sha": "1535c1138829232204f18d8f74e08e7de94f9544",
-      "sha256": "cdd979404e67719fd89f4f4f34d7aed1db3301a862e1709c683e9b3e656b3de0"
+      "git_blob_sha": "97ffb68fa9b1f096f7fa75ed17fd780015251a21",
+      "sha256": "58a2713c492b0f9a4b47444560d59bdef51f51f1d1ed2fb75e28f8a2c5f2ba05"
     },
     {
       "path": "docs/0.0/anchors/PALANG-0.0-NEXT-20261024-048-FIRST-MASTER-CONFORMANCE.md",
@@ -201,8 +201,8 @@
     {
       "path": "docs/0.0/anchors/PALANG-0.0-OUT-20261025-051-DEEP-EXCAVATION-AND-NO-SILENT-GAP.md",
       "version": "1.0.0",
-      "git_blob_sha": "22074084b8b0cb39c36efd62319bf12259f58e09",
-      "sha256": "3c5eb312580b356795cd5254ce652d65491e2dad107e3af639b8d07b4c518b38"
+      "git_blob_sha": "a6be0c4daa655f507e4688ae368fefab64bb217f",
+      "sha256": "84e10eb6e4e1fde991a3ef1d48ef2a0312876741ca722d86041e22f86ed5cdfc"
     },
     {
       "path": "docs/architecture/BEHAVIOR-TRACE/EVT-0155-FIRST-LIVING-MASTER-PORTABLE-RAHM-2026-10-24.md",
@@ -248,8 +248,8 @@
     {
       "path": "docs/architecture/BEHAVIOR-TRACE/EVT-0161-DEEP-EXCAVATION-NO-SILENT-GAP-2026-10-25.md",
       "version": "1.0.0",
-      "git_blob_sha": "5e615a57218e899fa4e92c727aba4114e96941f1",
-      "sha256": "1ac6c6904590360f537d13d344b9cc55cba7c18c787e7a5219c28ec510723beb"
+      "git_blob_sha": "8be8d08f242951ed3a2ca48d3263eaa6b01838fd",
+      "sha256": "78c4cfc688827f43e233ab0bf284b727570dbb7c827eed5fc6e46a8a8b285c25"
     },
     {
       "path": "docs/architecture/INTEGRATION-QUEUE/CURRENT-054-PORTABLE-MASTER.md",
@@ -261,13 +261,13 @@
       "path": "docs/architecture/INTEGRATION-QUEUE/README.md",
       "version": "current",
       "git_blob_sha": "c3d3eec57ae336255834b472111f3893453dcc32",
-      "sha256": "PENDING"
+      "sha256": "a66ec629dfb22a086e54f42e0b029e21d94e4705ceddbfc17dec6940147ebb09"
     },
     {
       "path": "docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md",
       "version": "current",
-      "git_blob_sha": "2cb835cda4c5c17020015b3452382c268ca94323",
-      "sha256": "2ab7ae7dd6d7beabe64dbf49a807a0869fdaeefa69667a9e216c77151aa474e4"
+      "git_blob_sha": "083bab2f6924f0bd9455867ca2811951ff323ac1",
+      "sha256": "007885af316ff38879a42deb6702509207c150557af511795e4d9275455b3160"
     },
     {
       "path": "docs/portable/RAHM/CONFORMANCE_TESTS.md",
@@ -285,7 +285,7 @@
       "path": "docs/portable/RAHM/FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md",
       "version": "1.0.0",
       "git_blob_sha": "6d0f992dde3ae8825ad49e8abd2c13ebe632eb0a",
-      "sha256": "PENDING"
+      "sha256": "13a2e6802e6e4b8872e51cf9cd46e0a77e3a6787c7b2f6b16ee320d0153d7c2a"
     },
     {
       "path": "docs/portable/RAHM/fixtures/interaction-pair-invalid.json",
@@ -339,19 +339,19 @@
       "path": "docs/REFERENCE_INDEX.md",
       "version": "current",
       "git_blob_sha": "ed6ef5b6f34efc6dc070a8241d437532514b8405",
-      "sha256": "PENDING"
+      "sha256": "42345755ebd33d7ac6ca5aa9cd3e8c4448116da9e526d20051a48b9266e1294e"
     },
     {
       "path": "docs/reference/REFERENCE-DOCUMENTS/GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md",
       "version": "current",
       "git_blob_sha": "6321c725745810ca0ea9c5cf02662f9e69fff11e",
-      "sha256": "PENDING"
+      "sha256": "b5560d50b1114e93876bcfbd975eb0df0e3e642dd2065b3d5a05a6c233fcdf98"
     },
     {
       "path": "docs/reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md",
       "version": "current",
       "git_blob_sha": "a35cc2b763fbf2bfe553238417ab71f274c94385",
-      "sha256": "PENDING"
+      "sha256": "c40f02b59d90edb916f62f47b06e8c41aa2a9b70195d1ea077d23e0471c77fb3"
     },
     {
       "path": "docs/reference/REFERENCE-DOCUMENTS/NPFAP-ADDENDUM-CURRENT-054-2026-10-24.md",
@@ -400,7 +400,7 @@
     "next_action": "NEXT-051",
     "last_user_point": "POINT-0/008",
     "latest_interaction_chain": "POINT-0/008 -> IN-052 -> OUT-051 -> EVT-0161 -> CURRENT-059 -> NEXT-051",
-    "parallel_id_collision": "ALT-001 files retained with unique IDs; canonical DEEP-AUDIT files authoritative"
+    "parallel_id_collision": "ALT-001 drafts re-identified and retained; canonical branch authoritative"
   },
   "note": "Do not trust an earlier green workflow that tested a stale branch. Current conformance must prove IN-052 and OUT-051 recover CURRENT-059, preserve NEXT-051 and all open gates, validate schema fixtures, match every exact-byte SHA-256 entry, and build the extractable package. External AI-host import and runtime persistence/background remain separate unverified gates."
 }
