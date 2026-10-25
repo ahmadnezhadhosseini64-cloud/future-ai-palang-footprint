@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-24 — CURRENT-058 / POINT-0-007 / IN-051 / OUT-050 / EVT-0160; NEXT-051 remains active; post-fix audit and strict digest rerun pending.very remains OPEN.
+**Last Updated:** 2026-10-24 — CURRENT-059 / POINT-0-007 / IN-051 / OUT-050 / EVT-0160; NEXT-051 remains active; post-fix audit and strict digest rerun pending.very remains OPEN.
 
 ## Canonical References
 
@@ -1278,3 +1278,12 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Latest global audit at run 40129551204: 3,820 files; 5,564 Markdown links; zero missing links; 62 Stable-ID collision groups (61 unreviewed), 88 Production-ID groups, 7 Reference-ID groups, 36 event-number groups, 13 ambiguous parent edges and one ambiguous timestamp. Content remains REVIEW_REQUIRED.
 - The strict package baseline 40129104156 passed before the latest edits; a final post-update strict digest/package run is required. Latest run history: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/workflows/rahm-portable-conformance.yml
 - External AI-host import, second-host import, persistence restart and idle/background execution remain OPEN / NOT VERIFIED.
+
+
+## CURRENT-059 — latest living portable architecture
+
+- Latest user point: [POINT-0/008](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-008-DEEP-AUDIT-AND-NO-SILENT-GAP.md)
+- Current interaction chain: [IN-052](0.0/anchors/PALANG-0.0-IN-20261025-052-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md) → [OUT-051](0.0/anchors/PALANG-0.0-OUT-20261025-051-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md) → [EVT-0161](architecture/BEHAVIOR-TRACE/EVT-0161-DEEP-AUDIT-STALE-GATE-AND-NO-SILENT-GAP-2026-10-25.md) → [CURRENT-059](0.0/anchors/PALANG-0.0-CURRENT-20261025-059-DEEP-AUDIT-AND-CORRECTED-CONFORMANCE.md) → [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Portable master: [FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md](portable/RAHM/FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md)
+- Manifest: [EXPORT_MANIFEST.json](portable/RAHM/EXPORT_MANIFEST.json)
+- Status: active repository chain; corrected tests pending fresh receipt; global graph REVIEW_REQUIRED; external-host/runtime gates OPEN.
