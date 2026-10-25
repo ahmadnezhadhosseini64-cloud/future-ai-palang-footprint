@@ -20,7 +20,7 @@
     {"path":"docs/0.0/anchors/PALANG-0.0-NEXT-20261024-040-FRESH-PROJECT-ADOPTION-TEST.md","git_blob_sha":"7e2a8730cad00f88e312fd0b1c56bcc2a7bb834c","sha256":null},
     {"path":"docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md","git_blob_sha":"18b7856d187df6266765d694e5519055077e85ad","sha256":null},
     {"path":"docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md","git_blob_sha":"bfcf57ed3c540837bc0167fc116fce9397e9c9cb","sha256":null},
-    {"path":"docs/REFERENCE_INDEX.md","git_blob_sha":"6e8dac166766ed57dfad48c7ef3e44a3be72ef21","sha256":null},
+    {"path":"docs/REFERENCE_INDEX.md","git_blob_sha":"00ec45403cb7ca9c73bddfaa03e9ea9c66f29b02","sha256":null},
     {"path":"docs/architecture/INTEGRATION-QUEUE/README.md","git_blob_sha":"cf35215023e12215eac2b0e311cc634473d87092","sha256":null}
   ],
   "release_gates": [
