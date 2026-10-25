@@ -2,15 +2,15 @@
 
 - Stable ID / شناسه پایدار: `G6IP-FIRST-LIVING-MASTER-PORTABLE-RAHM-20261024-001`
 - Production ID / شناسه تولید: `G6IP-FLM-RAHM-001`
-- Version / نسخه: 1.1.2
+- Version / نسخه: 1.1.3
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED; latest strict digest/package result is tracked in workflow history; real-host gates OPEN; global graph REVIEW_REQUIRED.
 - Authority / مرجع حاکم: اصول بنیادی پروژه + سند مادر معماری موروثی + بسته قابل‌حمل RAHM.
-- User Point 0: [G6IP-RAHM-USER-POINT-0-20261024-007](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-007-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md)
-- Current 0.0: [CURRENT-058](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-058-DEEP-EXCAVATION-EXECUTION-RECEIPTS.md)
+- User Point 0: [G6IP-RAHM-USER-POINT-0-20261025-008](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-008-DEEP-AUDIT-AND-NO-SILENT-GAP.md)
+- Current 0.0: [CURRENT-059](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-059-DEEP-AUDIT-AND-CORRECTED-CONFORMANCE.md)
 - Next 0.0: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
-- User input: [IN-051](../../0.0/anchors/PALANG-0.0-IN-20261024-051-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md)
-- Assistant output: [OUT-050](../../0.0/anchors/PALANG-0.0-OUT-20261024-050-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md)
-- Event: [EVT-0160](../../architecture/BEHAVIOR-TRACE/EVT-0160-DEEP-EXCAVATION-EXECUTION-RECEIPTS-AND-AUDIT-CORRECTION-2026-10-24.md)
+- User input: [IN-052](../../0.0/anchors/PALANG-0.0-IN-20261025-052-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md)
+- Assistant output: [OUT-051](../../0.0/anchors/PALANG-0.0-OUT-20261025-051-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md)
+- Event: [EVT-0161](../../architecture/BEHAVIOR-TRACE/EVT-0161-DEEP-AUDIT-STALE-GATE-AND-NO-SILENT-GAP-2026-10-25.md)
 - Output-gap behavioral rule: [EVT-0158](../../architecture/BEHAVIOR-TRACE/EVT-0158-NO-SILENT-GAP-OUTPUT-CONTINUITY-2026-10-24.md)
 - Prior hard-audit evidence: [EVT-0154](../../architecture/BEHAVIOR-TRACE/EVT-0154-LIVING-ARCHITECTURE-HARD-AUDIT-RUN-2026-10-24.md)
 - Portable startup contract: [RAHM_BOOT](./RAHM_BOOT.md)
@@ -303,3 +303,12 @@ A new input must not make prior open work disappear. Keep the active NEXT, link 
 - The strict package run [40130268087](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40130268087) passed 51/51 exact-byte SHA-256 entries, valid schema fixture 0 errors, invalid fixture rejected with 4 errors, limited IN/OUT pointer equivalence, and archive creation (52 files, 261742 bytes; ZIP SHA-256 `c1bc7137072dad5c47942b7c1a32953070e9c1020d14a3cec78af01f87a94718`). Its IN/OUT pointer test was stale (IN-047/OUT-046 and CURRENT-054/NEXT-048); the workflow has now been corrected to use IN-051/OUT-050 and CURRENT-058/NEXT-051. A fresh run is required before treating the new workflow as verified.
 - Full repository IN/OUT state reconstruction is separately PASS at run [40130267981](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40130267981): both anchors reconstructed equivalent canonical state and preserved six open-gate categories. This does not prove import into an independent AI host.
 - Still OPEN / NOT VERIFIED: clean independent GPT-6 host import, second-host import, persistent memory after restart, automatic capture of every interaction, idle/background execution, and repository-wide link/identity/parent/time remediation.
+
+
+## CURRENT-059 — latest live master update (2026-10-25)
+
+- Latest chain: POINT-0/008 → IN-052 → OUT-051 → EVT-0161 → CURRENT-059 → NEXT-051.
+- This is the latest registered state of the portable master; it is not a declaration that all NEXT-051 acceptance criteria have passed.
+- Executed correction: the portable conformance workflow and the repository-state recovery verifier were found to reference an older chain. They are being advanced to test the actual current chain rather than allow a stale branch to pass.
+- The current branch must remain open until the corrected workflow, exact-byte manifest reconciliation, graph-finding triage and host-runtime gates have evidence.
+- Active NEXT is still NEXT-051. Do not create a new NEXT number merely because a turn has ended or a test is pending.
