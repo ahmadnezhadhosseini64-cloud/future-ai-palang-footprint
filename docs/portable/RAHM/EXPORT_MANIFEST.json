@@ -1,8 +1,8 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.7.9",
-  "manifest_status": "CURRENT-065 chain and overlay referenced; SHA-256 and runtime receipts pending",
-  "created_from_checkpoint": "G6IP-CURRENT-065-20261025 + HAIF-RUNTIME-0.1",
+  "version": "1.8.0",
+  "manifest_status": "CURRENT-066 chain and overlay referenced; exact SHA-256 and runtime receipts pending",
+  "created_from_checkpoint": "G6IP-CURRENT-066-20261025 + HAIF-RUNTIME-0.1",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [
     {
@@ -356,7 +356,12 @@
     "docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0168-AUDIT-FAILURE-2026-10-25.md",
     "docs/architecture/BEHAVIOR-TRACE/EVT-0169-PORTABLE-CONFORMANCE-FAILURES-AND-ROOT-CAUSE-2026-10-25.md",
     "docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0169-PORTABLE-CONFORMANCE-2026-10-25.md",
-    "docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0167-AUTONOMOUS-2026-10-25.md"
+    "docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0167-AUTONOMOUS-2026-10-25.md",
+    "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-015-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md",
+    "docs/0.0/anchors/PALANG-0.0-IN-20261025-059-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md",
+    "docs/0.0/anchors/PALANG-0.0-OUT-20261025-058-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md",
+    "docs/architecture/BEHAVIOR-TRACE/EVT-0174-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY-2026-10-25.md",
+    "docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-066-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md"
   ],
   "live_reference_policy": "Mutable current-state and startup/governance references are included in each export and receive exact SHA-256 plus Git blob SHA-1 observations in the same CI run. This includes RAHM_BOOT and RAHM_ARCHITECTURE because their canonical checkpoint binding must track the current live chain. Stable core remains digest-pinned."
 }
