@@ -733,3 +733,13 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - EVT-0183 receipts remain bounded to tested commits. CURRENT-065/CURRENT-066 and full graph review remain OPEN; NEXT-051 remains active.
 
 - Time binding for EVT-0184 / POINT-0/021 / CURRENT-068: [TIME-BINDING-EVT-0184](./TIME-BINDING-EVT-0184-POINT-0-021-CURRENT-068-2026-10-25.md); UTC commit timestamps and derived Tehran equivalents are recorded separately from the unknown user-message time.
+
+
+## EVT-0185 — portable HAIF GPT-6 starter engine
+
+- [EVT-0185](./EVT-0185-PORTABLE-HAIF-GPT6-STARTER-ENGINE-2026-10-25.md)
+- [POINT-0/022](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-022-PORTABLE-STARTER-ENGINE.md)
+- [CURRENT-069](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-069-PORTABLE-STARTER-ENGINE-AND-GATE-CLOSURE.md)
+- [Time binding](./TIME-BINDING-EVT-0185-POINT-0-022-2026-10-25.md)
+- Executable package: [prototype/haif-gpt6-starter](../../../prototype/haif-gpt6-starter/README.md)
+- Verified receipts: starter suite 7/7 PASS; Living Architecture Audit 40198744637 PASS; Portable RAHM Conformance 40198744680 PASS; stale workflow digest reconciled in EXPORT_MANIFEST.
