@@ -1480,3 +1480,9 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - Event: [EVT-0176](../architecture/BEHAVIOR-TRACE/EVT-0176-USER-POINT-0-016-MIRROR-DELTA-AND-ARCHITECTURE-RECOVERY-2026-10-25.md).
 - Living master: [HAIF Initial Model Master Reference](../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md).
 - Prior anchors are preserved. NEXT-051 remains open; no successor NEXT is minted while its acceptance criteria remain incomplete.
+
+
+## Auxiliary mirror recheck — EVT-0177 (not a new 0.0 checkpoint)
+- [EVT-0177](../architecture/BEHAVIOR-TRACE/EVT-0177-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md) records the source/Library comparison: one trailing-newline delta only; semantic fields match; no redundant write.
+- [Time binding](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0177-LIVE-MIRROR-SYNC-2026-10-25.md) binds the event to actual repository commit UTC and derived Tehran time.
+- Preserve POINT-0/016; current execution continuation remains CURRENT-065 / NEXT-051. Do not mint a placeholder successor.
