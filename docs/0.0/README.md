@@ -1535,3 +1535,15 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - Active queue: NEXT-051. No NEXT-052 created.
 - Status: registered in repository; exact commit timestamps are available from Git history; current-head test receipts must be inspected after these changes.
 - Open: CURRENT-065/CURRENT-066 adjudication, graph review, local prototype acceptance gaps, independent-host import, live capture/background operation and external storage.
+
+
+## POINT-0/022 — executable GPT-6 portable starter
+
+- Root: [POINT-0/022](./anchors/GPT6-RAHM-USER-POINT-0-20261025-022-PORTABLE-STARTER-ENGINE.md).
+- IN/OUT: [IN-052](./anchors/PALANG-0.0-IN-20261025-052-PORTABLE-STARTER-ENGINE.md) / [OUT-052](./anchors/PALANG-0.0-OUT-20261025-052-PORTABLE-STARTER-ENGINE.md).
+- Event: [EVT-0185](../architecture/BEHAVIOR-TRACE/EVT-0185-PORTABLE-HAIF-GPT6-STARTER-ENGINE-2026-10-25.md).
+- Time binding: [EVT-0185 time binding](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0185-POINT-0-022-2026-10-25.md).
+- Current execution checkpoint: [CURRENT-069](./anchors/PALANG-0.0-CURRENT-20261025-069-PORTABLE-STARTER-ENGINE-AND-GATE-CLOSURE.md).
+- Parent continuity: POINT-0/021 → POINT-0/022. CURRENT-068 preserved as history.
+- Active historical queue: NEXT-051. No NEXT-052 created.
+- Status: package and test wiring registered; actual CI result pending.
