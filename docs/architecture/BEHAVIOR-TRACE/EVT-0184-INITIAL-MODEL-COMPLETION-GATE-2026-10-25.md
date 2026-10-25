@@ -52,3 +52,17 @@ When the user asks to continue the model, an old open destination branch is not 
 PRESERVE → INSPECT → IMPLEMENT → TEST → READ-BACK → MATCH → RECONCILE → STATUS.
 
 This event records the handoff and execution order; it does not declare the initial model complete.
+
+
+## Fresh repository execution receipts observed after initial registration
+
+- Tested content commit: `67bae3178fdf1d68a76924e666e0f7ba42fe16e1` (the time-binding index update; it contains the newly registered root, checkpoint, event, time binding, and index/master/queue links).
+- Living Architecture Audit: [run 40186726307](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40186726307) — SUCCESS on that commit; artifact ID `12595539555`, digest `sha256:6ebaf83d42f5b1ebca5a942133ea0be21497fb7e43e8cd7fbac790df4be50e62`.
+- Portable RAHM Conformance and Digest Evidence: [run 40186726236](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40186726236) — SUCCESS on that commit; portable package artifact ID `12596094125`, digest `sha256:21ee09dcbd7c08de75e818831d4bb432b6515b70548a679d5542af3c668451e2`; conformance evidence artifact ID `12596089107`, digest `sha256:4d9762dd0e4204d248c26eccd7895543ff515d7a69eb4612998d79bb9cb674af`.
+- Cross-Layer Integrity Gate: [run 40186726316](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40186726316) — SUCCESS on the same tested commit.
+- Evidence Gate: [run 40186726278](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40186726278) — SUCCESS; the Stable Retrieval Core consistency test and independent automated execution test passed; artifact ID `12595609410`, digest `sha256:32bf11eadadde805b4f1d1669d21c15d847ab29ce4f00654f5cc38762423e221`.
+- These runs are confirmed from GitHub Actions run/job/artifact metadata, not inferred from commit messages.
+
+### Scope and remaining caveat
+
+These are passing runs for tested commit `67bae3178fdf1d68a76924e666e0f7ba42fe16e1`. Subsequent automated Evidence Gate receipt commits were observed on main; therefore they are not claimed as an audit of the literal newest branch SHA. The exact newest main head still needs its own audit receipt if the workflow is not triggered for automation-generated commits. The canonical pointer remains AMBIGUOUS; the graph remains REVIEW_REQUIRED; independent-host import and external runtime capabilities remain NOT PROVEN.
