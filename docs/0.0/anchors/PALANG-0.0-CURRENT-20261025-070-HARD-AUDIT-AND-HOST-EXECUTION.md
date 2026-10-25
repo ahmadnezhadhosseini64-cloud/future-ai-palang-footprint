@@ -19,7 +19,7 @@
 - Repository connector permission check returned push/admin capability; the two code commits were accepted by GitHub.
 
 ## Remaining gates — do not mark complete
-1. **Clean current distribution:** rebuild the user ZIP from the hardened exact-head code, exclude `__pycache__`, calculate SHA-256, extract into a fresh directory and run all 8 tests there.
+1. **[x] Clean current distribution:** rebuilt from the exact-head CI artifact; excluded `__pycache__`; extracted into a fresh directory; all 8 tests passed. ZIP SHA-256: `d68e03b42e26b88385d1155c02d09b213a53366e27e99518c7c049f6ec6563be`.
 2. **Target GPT-6 host execution:** import the clean ZIP into the intended host; check whether a Python execution tool exists; run the tests and a real init → record → audit → export → import → audit cycle. Record exact outputs and preserve the returned state bundle.
 3. **Host access:** verify GitHub connector presence and write/read-back permission in that host. The connection used in this conversation does not prove the target host has the same permission.
 4. **Persistence:** test restart and a new session/device only if the target host supports it. Otherwise mark BLOCKED / NOT AVAILABLE, not PASS.
