@@ -4,7 +4,7 @@
 - Production ID: `G6IP-NEXT-051`
 - Version: 1.0.8
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE.
-- Parent: [CURRENT-057](./PALANG-0.0-CURRENT-20261024-057-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md)
+- Historical parent: [CURRENT-057](./PALANG-0.0-CURRENT-20261024-057-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md) (historical; current parent is CURRENT-059 as specified below).
 - Preserve existing gates: [NEXT-050](./PALANG-0.0-NEXT-20261024-050-FULL-RECOVERY-AND-REAL-HOST-IMPORT.md), [NEXT-049](./PALANG-0.0-NEXT-20261024-049-REAL-HOST-TRANSFER-AND-GRAPH-AUDIT.md)
 
 ## Ordered actions
@@ -139,3 +139,13 @@ NEXT-051 remains OPEN/LIVING until all remaining acceptance gates are satisfied;
 - Living architecture audit [run 40151104066](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40151104066) PASS structurally: 3,945 files including evidence, 1,094 source files, 2,851 generated evidence files, 5,744 local link edges, 0 missing local links; event-number collision groups reduced to 36 after renaming the noncanonical ALT-001 event. Remaining graph findings: 62 Stable-ID groups (61 unreviewed), 88 Production-ID groups, 7 Reference-ID groups, 13 ambiguous parent edges, 1 ambiguous timestamp and 11 exact-content duplicate groups. Content status remains REVIEW_REQUIRED.
 - The two-runtime CPREL transfer harness [run 40150879386](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150879386) passed artifact transfer between isolated CI runtimes. This is a synthetic runtime-transfer test, not proof of import into a real independent AI host.
 - Still OPEN / NOT VERIFIED: clean independent AI-host import, second AI-host import, durable persistence after restart, automatic live message capture, idle/background execution, and individual adjudication of identity/parent/time findings. Keep existing NEXT-051 OPEN; do not mint NEXT-052 to replace unfinished work.
+
+
+## CURRENT authoritative continuation — CURRENT-059 / Point 0/008 (2026-10-25)
+- **Current parent:** [CURRENT-059](./PALANG-0.0-CURRENT-20261025-059-DEEP-AUDIT-AND-CORRECTED-CONFORMANCE.md). The earlier CURRENT-057 parent line and historical 2026-10-24 counts below are retained as history, not the current resume pointer.
+- **Current chain:** [POINT-0/008](./GPT6-RAHM-USER-POINT-0-20261025-008-DEEP-AUDIT-AND-NO-SILENT-GAP.md) → [IN-052](./PALANG-0.0-IN-20261025-052-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md) → [OUT-051](./PALANG-0.0-OUT-20261025-051-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md) → [EVT-0161](../../architecture/BEHAVIOR-TRACE/EVT-0161-DEEP-AUDIT-STALE-GATE-AND-NO-SILENT-GAP-2026-10-25.md) → [CURRENT-059](./PALANG-0.0-CURRENT-20261025-059-DEEP-AUDIT-AND-CORRECTED-CONFORMANCE.md) → this existing NEXT-051.
+- **Latest strict package run:** [40151464494](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40151464494) PASS on commit `c8e66ba2174c4c1a6eb650e72a76a73be0843b22`: 41/41 stable-core digests, 15 live references hashed per build, schema valid fixture 0 errors, invalid fixture rejected with 4 errors, IN/OUT reconstruction PASS, package 57 entries / 289311 bytes / SHA-256 `a0421fd049993a1576b59e5a81d61910e45c95f85d2c9db4e1d36048aa1a69a7`.
+- **Latest graph audit:** [40151464527](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40151464527) SUCCESS structurally, with zero missing local Markdown links and 36 event-number collision groups. Content remains REVIEW_REQUIRED: 62 Stable-ID groups (61 unreviewed), 88 Production-ID groups, 7 Reference-ID groups, 13 ambiguous parent edges, one ambiguous timestamp and 11 exact-content duplicate groups.
+- **Completed gates for this cycle:** stable core digest scan; live-reference snapshot hashing; schema positive/negative fixtures; repository IN/OUT recovery equivalence; archive build and ZIP integrity test; focused link verification; correction of stale RAHM_BOOT and RAHM_ARCHITECTURE checkpoint pointers to CURRENT-059.
+- **Still OPEN:** individually adjudicate graph collisions/parent/time/duplicate groups; clean independent AI-host import; second-host import; actual persistent-memory restart; automatic live interaction capture; idle/background execution. The CPREL two-runtime CI transfer is synthetic and is not a real AI-host import.
+- **No-successor rule:** do not create NEXT-052. Continue adding execution receipts and individually resolved findings to this NEXT-051 until its acceptance criteria are genuinely satisfied.
