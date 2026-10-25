@@ -2,7 +2,7 @@
 
 - Stable ID: G6IP-OUT-054-20261025
 - Production ID: G6IP-OUT-054
-- Version: 1.0.0
+- Version: 1.0.1
 - Input: [IN-055](./PALANG-0.0-IN-20261025-055-OPEN-GAPS-AND-CONTINUITY.md)
 - User Point: [POINT-0/011](./GPT6-RAHM-USER-POINT-0-20261025-011-OPEN-GAPS-AND-CONTINUITY.md)
 - Previous checkpoint: [CURRENT-061](./PALANG-0.0-CURRENT-20261025-061-PROTOTYPE-AND-GRAPH-TRIAGE.md)
@@ -38,3 +38,13 @@
 Do not create NEXT-052 to move the counter. All steps above remain children of active NEXT-051 until its acceptance gates are genuinely satisfied. Do not label this output as completion of the listed plan; it registers a concrete, ordered execution plan.
 
 Status: PARTIAL / REGISTERED; runtime and repository-wide semantic acceptance remain OPEN.
+
+
+## Canonical recovery pointer — CURRENT-062
+This output independently exposes the same canonical repository state as IN-055:
+- Current checkpoint: [CURRENT-062](./PALANG-0.0-CURRENT-20261025-062-OPEN-GAPS-AND-CONTINUITY.md).
+- Active execution queue: [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Living mother: [HAIF initial-model master](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md).
+- Portable continuation inventory: [CURRENT-062 overlay manifest](../../portable/RAHM/CURRENT-062-OVERLAY-MANIFEST.json).
+
+Recovery boundary: repository state only; all real-host, runtime, semantic graph and external persistence gates remain open as applicable.
