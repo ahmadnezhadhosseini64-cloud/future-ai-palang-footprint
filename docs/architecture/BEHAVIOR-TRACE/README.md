@@ -771,3 +771,11 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Current: [CURRENT-071](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-071-0PLUS-ENGINE-AND-HARD-AUDIT.md)
 - Hard audit: first run failed on a duplicate `kind` argument; fixed in commit `ab20a52d111f58c243c0e218359ae798c1072616`. Additional point/event tamper and self-parent tests are now included in commit `49485c593ebd6a3d115c05ddda8e8997b3c5138e`.
 - Latest exact-head CI: [40213463189](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40213463189), status pending at last check.
+
+
+## EVT-0189 — clean v0.2.1 package runtime evidence
+- [EVT-0189](./EVT-0189-0PLUS-CLEAN-DISTRIBUTION-SMOKE-2026-10-25.md)
+- [Time binding](./TIME-BINDING-EVT-0189-CLEAN-DISTRIBUTION-2026-10-25.md)
+- Audit [40213760585](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40213760585): SUCCESS; 12/12 tests passed.
+- Clean ZIP SHA-256: `51a5f9a6def97a0564a8b6542bbf4a5b9ca46a81a267a4a02db7c53511e16f2d`.
+- Local CLI lifecycle including `0/0+`, child `0.0`, audit, export and import passed. Independent GPT host remains open.
