@@ -227,6 +227,8 @@ def add_gap(state: dict, title: str, description: str, evidence_class: str = "UN
         "closure_evidence": None
     }
     state["gaps"].append(gap)
+    append_event(state, "GAP_OPENED", gap_id=gap["gap_id"], title=title,
+                 evidence_class=evidence_class, source_ref=source_ref)
     state["updated_at_utc"] = now_utc()
     return gap
 
@@ -240,6 +242,8 @@ def close_gap(state: dict, gap_id: str, evidence: dict) -> dict:
     gap["status"] = "CLOSED_VERIFIED"
     gap["closure_evidence"] = {key: evidence[key] for key in CLOSED_PROOF}
     gap["closed_at_utc"] = now_utc()
+    append_event(state, "GAP_CLOSED_VERIFIED", gap_id=gap_id,
+                 closure_evidence=gap["closure_evidence"])
     state["updated_at_utc"] = now_utc()
     return gap
 
@@ -257,6 +261,8 @@ def propose_child(state: dict, name: str, parent_ref: str, purpose: str) -> dict
         "promotion_evidence": None
     }
     state["children"].append(child)
+    append_event(state, "CHILD_PROPOSED", child_id=child["child_id"], name=name,
+                 parent_ref=parent_ref, purpose=purpose)
     state["updated_at_utc"] = now_utc()
     return child
 
@@ -274,6 +280,8 @@ def decide_child(state: dict, child_id: str, decision: str, evidence: dict | Non
         child["promotion_evidence"] = {key: evidence[key] for key in CLOSED_PROOF}
     child["status"] = decision
     child["updated_at_utc"] = now_utc()
+    append_event(state, "CHILD_DECISION", child_id=child_id, decision=decision,
+                 promotion_evidence=child.get("promotion_evidence"))
     state["updated_at_utc"] = now_utc()
     return child
 
