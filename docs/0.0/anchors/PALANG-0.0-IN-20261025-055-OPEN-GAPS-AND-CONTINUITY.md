@@ -2,7 +2,7 @@
 
 - Stable ID: G6IP-IN-055-20261025
 - Production ID: G6IP-IN-055
-- Version: 1.0.0
+- Version: 1.0.1
 - User Point 0: [POINT-0/011](./GPT6-RAHM-USER-POINT-0-20261025-011-OPEN-GAPS-AND-CONTINUITY.md)
 - Previous checkpoint: [CURRENT-061](./PALANG-0.0-CURRENT-20261025-061-PROTOTYPE-AND-GRAPH-TRIAGE.md)
 - Active queue: [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
@@ -29,3 +29,13 @@ Accept the current interaction as a new Point 0; connect it to the historical ch
 - Documentation for an open item ≠ implementation completed.
 
 Continue through [OUT-054](./PALANG-0.0-OUT-20261025-054-OPEN-GAPS-AND-CONTINUITY.md) and [EVT-0164](../../architecture/BEHAVIOR-TRACE/EVT-0164-OPEN-GAPS-AND-CONTINUITY-2026-10-25.md).
+
+
+## Canonical recovery pointer — CURRENT-062
+This input can independently recover the latest shared repository state through these same canonical destinations:
+- Current checkpoint: [CURRENT-062](./PALANG-0.0-CURRENT-20261025-062-OPEN-GAPS-AND-CONTINUITY.md).
+- Active execution queue: [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Living mother: [HAIF initial-model master](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md).
+- Portable continuation inventory: [CURRENT-062 overlay manifest](../../portable/RAHM/CURRENT-062-OVERLAY-MANIFEST.json).
+
+Recovery boundary: these links reconstruct repository-visible lineage and open gates; they do not prove hidden chat memory, clean-host transfer, browser runtime, persistence restart or background execution.
