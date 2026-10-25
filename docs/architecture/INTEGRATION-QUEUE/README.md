@@ -3,13 +3,13 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.8.8
+- Version: 1.8.9
 - Date: 2026-10-20
 - Exact Time: 11:25 local project time, minute precision; exact seconds not captured.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: CURRENT-063 linked; executable local runtime and test wiring added; CI and clean-host recovery pending; NEXT-051 remains OPEN/LIVING; no successor NEXT created to disguise unfinished work.
+- Status: CURRENT-064 linked; interaction chain and execution gates recorded; runtime tests and clean-host recovery pending; NEXT-051 remains OPEN/LIVING; no successor NEXT created to disguise unfinished work.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
