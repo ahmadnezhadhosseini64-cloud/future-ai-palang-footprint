@@ -159,3 +159,12 @@
 - [Updated living master](./سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 - [Updated capability and open-gap queue](./صف%20گام‌های%20بعدی%20و%20موارد%20باز.md)
 - First executable addition: [live CURRENT pointer discovery checker](../../../scripts/behavior-hunter/discover_current_0_0_pointer.py) and [fixture tests](../../../scripts/behavior-hunter/tests/test_discover_current_0_0_pointer.py). CI result remains pending until the exact current main run and artifact are inspected.
+
+
+## Executable portable starter — POINT-0/022
+
+- [HAIF GPT-6 Portable Starter v0.1](../../../prototype/haif-gpt6-starter/README.md): executable Python engine, evidence-gated gap/Child state, hash-linked IN/OUT and portable bundle.
+- [GPT-6 host instructions](../../../prototype/haif-gpt6-starter/GPT6_HOST_INSTRUCTIONS.md): startup, recovery, architecture governance and capability boundaries.
+- [CURRENT-069](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-069-PORTABLE-STARTER-ENGINE-AND-GATE-CLOSURE.md): next acceptance gate.
+- This is part of the existing Future AI / Palang Footprint repository, not a separate project.
+- Status: implementation registered; exact CI test result and ZIP artifact still require read-back. Native GPT plugin, automatic capture, background execution, external writes and independent-host durable memory are not claimed.
