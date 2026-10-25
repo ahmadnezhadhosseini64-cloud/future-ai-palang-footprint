@@ -48,7 +48,7 @@ NEXT-051 remains OPEN/LIVING until all required acceptance criteria have evidenc
 
 ## Remaining gates — OPEN
 - [~] Final strict digest scan and package build: read the latest [portable conformance workflow](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/workflows/rahm-portable-conformance.yml); never rely on an older run for newer bytes.
-- [ ] Full canonical-state reconstruction independently from IN and OUT; compare evidence, failures, corrections, versions and open gates.
+- [x] Current repository-state reconstruction independently from IN-052 and OUT-051 passed in run 40150679142; full independent external-host reconstruction remains OPEN / NOT RUN.
 - [ ] Clean independent AI-host import; CI runner transfer is not equivalent.
 - [ ] Second AI-host import.
 - [ ] Actual persistence restart and idle/background execution in an authorized real runtime.
