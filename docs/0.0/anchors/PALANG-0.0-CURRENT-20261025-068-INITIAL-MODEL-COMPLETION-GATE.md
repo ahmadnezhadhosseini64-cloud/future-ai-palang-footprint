@@ -3,7 +3,7 @@
 - Stable ID: `HAIF-CURRENT-068-INITIAL-MODEL-COMPLETION-20261025`
 - Production ID: `HAIF-C068-20261025`
 - Version: 1.0.0
-- Status: ACTIVE / LIVING / OPEN / EVIDENCE-BOUNDED.
+- Status: SUPERSEDED AS ACTIVE CHECKPOINT / PARTIALLY CLOSED WITH EVIDENCE; unresolved gates transferred to CURRENT-069.
 - Root: [POINT-0/021](./GPT6-RAHM-USER-POINT-0-20261025-021-INITIAL-MODEL-COMPLETION-GATE.md).
 - Parent history: [CURRENT-067](./PALANG-0.0-CURRENT-20261025-067-LIVE-POINTER-FAILURE-AND-RECOVERY.md), [CURRENT-066](./PALANG-0.0-CURRENT-20261025-066-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md); neither is deleted or silently replaced.
 - Event: [EVT-0184](../../architecture/BEHAVIOR-TRACE/EVT-0184-INITIAL-MODEL-COMPLETION-GATE-2026-10-25.md).
@@ -89,3 +89,13 @@ This checkpoint is the next worklist, not a declaration that the model is comple
 - Evidence Gate [40186837992](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40186837992): SUCCESS.
 - Audit log finding: structural checks PASS; live pointer discovery correctly returned AMBIGUOUS/BLOCKED with candidates CURRENT-023, 036, 038, 039, 064, 065 and 066; graph collision/parent review remains open; semantic timestamp audit has one ambiguous historical timestamp; host adapter synthetic tests pass, but live ChatGPT producer and external repository write remain unimplemented/unproven.
 - The automation-generated evidence-record commits follow the tested content SHA. No source or model-document changes were made after SHA 8459fbe during that run; nevertheless, a literal audit of the newest evidence-record-only branch SHA is not claimed.
+
+
+## Closure reconciliation — POINT-0/022
+
+- Status: **SUPERSEDED AS ACTIVE CHECKPOINT / PARTIALLY CLOSED WITH EVIDENCE**. The active execution pointer is CURRENT-069; this file is preserved as historical evidence.
+- Closed for the new portable starter on tested SHA \`f482083cc2aeab82964c271c5d97ba4bb8657ce1\`: seven unit tests; hash-chain tamper detection; proof-gated gap closure and Child promotion; local atomic read-back; portable bundle digest verification; clean-process CLI export/import; manifest/schema JSON checks; ZIP creation.
+- Evidence: [Living Architecture Audit 40198462347](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40198462347); artifact ID \`12600674334\`; ZIP SHA-256 \`7372007564d94f02807c41291ea6e0976e8899c2d1c37306c5978b30fe1399df\`.
+- Still OPEN and transferred to CURRENT-069/NEXT-051: canonical CURRENT-065/CURRENT-066 adjudication; historical graph and collision review; independent GPT-host import; durable host restart; automatic capture; background execution; external storage; hash-failure injection beyond the tests explicitly listed.
+- Separate integrity failure: [Portable RAHM Conformance 40198220828](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40198220828) failed the exact-byte manifest inventory SHA scan. This is not hidden by the successful starter suite and remains open for reconciliation.
+- CURRENT-068 is not declared globally complete. Its locally evidenced starter sub-gates are closed; unresolved gates remain explicitly open in CURRENT-069.
