@@ -36,3 +36,16 @@
 6. Run browser and clean-host acceptance tests only in actual environments, retaining explicit results.
 
 Status: CHECKPOINT CREATED; final read-back and cross-surface reconciliation pending.
+
+
+## Final focused verification receipt — 2026-10-25
+- [x] Read-back fetched the Point 0/010, IN-054, OUT-053, EVT-0163, CURRENT-061, prototype HTML, README, fixture JSON, graph adjudication register, NEXT-039, NEXT-040, NEXT-051, initial-model mother, reference index, integration queue and overlay manifest.
+- [x] Adoption fixture parsed as valid JSON.
+- [x] Prototype static-contract check found the required controls/state markers; this is not browser execution.
+- [x] Focused audit: 32 Markdown link occurrences across 15 unique local targets; all 15 targets were fetched successfully, zero missing destinations.
+- [x] All 15 Git blob SHA-1 values declared in the overlay manifest matched the currently fetched files at verification time.
+- [ ] Exact-byte SHA-256 and actual export archive build: NOT RUN / NOT VERIFIED; overlay deliberately leaves SHA-256 null.
+- [ ] Current full graph inventory and occurrence-level semantic adjudication: OPEN / REVIEW_REQUIRED.
+- [ ] Browser exercise, clean independent AI-host import, second host, durable restart persistence, automatic capture and idle/background execution: NOT RUN / NOT VERIFIED.
+
+Status: focused repository read-back and structural checks PASS; full architecture and runtime acceptance remain OPEN.
