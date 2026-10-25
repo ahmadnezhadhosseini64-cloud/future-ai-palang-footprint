@@ -2,7 +2,7 @@
 
 - Stable ID: G6IP-CURRENT-062-20261025
 - Production ID: G6IP-CURRENT-062
-- Version: 1.0.0
+- Version: 1.0.1
 - Parent checkpoint: [CURRENT-061](./PALANG-0.0-CURRENT-20261025-061-PROTOTYPE-AND-GRAPH-TRIAGE.md)
 - User Point 0: [POINT-0/011](./GPT6-RAHM-USER-POINT-0-20261025-011-OPEN-GAPS-AND-CONTINUITY.md)
 - Interaction chain: [IN-055](./PALANG-0.0-IN-20261025-055-OPEN-GAPS-AND-CONTINUITY.md) → [OUT-054](./PALANG-0.0-OUT-20261025-054-OPEN-GAPS-AND-CONTINUITY.md) → [EVT-0164](../../architecture/BEHAVIOR-TRACE/EVT-0164-OPEN-GAPS-AND-CONTINUITY-2026-10-25.md) → CURRENT-062.
@@ -11,6 +11,7 @@
 - Integration queue: [INTEGRATION-QUEUE](../../architecture/INTEGRATION-QUEUE/README.md).
 - Active execution queue retained: [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - Governance register: [AGACR](../../reference/REFERENCE-DOCUMENTS/ARCHITECTURE-GRAPH-ADJUDICATION-AND-CLOSURE-REGISTER-2026-10-25-001.md).
+- Portable continuity inventory: [CURRENT-062 overlay manifest](../../portable/RAHM/CURRENT-062-OVERLAY-MANIFEST.json).
 
 ## What this 0.0 point establishes
 This is the new current continuation point. It connects the latest user instruction and the input/output/event chain to the previous CURRENT-061 and preserves the already open NEXT-039/NEXT-040/NEXT-051 work.
