@@ -19,3 +19,10 @@ A real validator weakness was corrected in `prototype/haif-gpt6-starter/engine.p
 
 ## Remaining execution boundary
 The engine runs in GitHub Actions, but this is not a successful import into an independent GPT-6 host. Native GPT plugin installation, automatic chat capture, durable host memory, background execution, and host-side GitHub writes remain OPEN / NOT PROVEN. The existing cleaned package remains available from the previous handoff; regenerate and test a clean bundle after this code change before calling that distribution current.
+
+
+## Current clean distribution receipt
+- Clean ZIP created from the successful CI artifact after excluding `__pycache__`.
+- Fresh extraction and full test execution: 8/8 PASS.
+- SHA-256: `d68e03b42e26b88385d1155c02d09b213a53366e27e99518c7c049f6ec6563be`.
+- User-facing file in this conversation: `haif-gpt6-starter-v0.1-clean-8tests.zip`.
