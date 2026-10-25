@@ -5,6 +5,8 @@ This is an executable starter package inside the existing Future AI / Palang Foo
 ## What is implemented
 - Standard-library Python continuity engine.
 - Independent anchor, IN, OUT and event identifiers for each interaction pair.
+- Canonical point identity with aliases/markers: `0` and `0+` can be two labels on the same point; `0+` is not a duplicate point.
+- Parent-linked `0.0` continuation checkpoints, with collision and lineage checks.
 - Append-only hash-linked event chain with tamper detection.
 - Explicit OPEN gap register; closure requires a passing test ID, exact tested revision and evidence reference.
 - Master → Child proposal and promotion gate; promotion without passing evidence is rejected.
