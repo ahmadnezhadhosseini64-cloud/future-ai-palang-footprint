@@ -743,3 +743,13 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - [Time binding](./TIME-BINDING-EVT-0185-POINT-0-022-2026-10-25.md)
 - Executable package: [prototype/haif-gpt6-starter](../../../prototype/haif-gpt6-starter/README.md)
 - Verified receipts: starter suite 7/7 PASS; Living Architecture Audit 40198744637 PASS; Portable RAHM Conformance 40198744680 PASS; stale workflow digest reconciled in EXPORT_MANIFEST.
+
+
+## EVT-0186 — چکش سخت موتور و یکتایی IN/OUT
+
+- [EVT-0186](./EVT-0186-HAIF-ENGINE-HARD-AUDIT-AND-ID-UNIQUENESS-2026-10-25.md)
+- [POINT-0/023](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-023-HARD-AUDIT-AND-ENGINE-HARDENING.md)
+- [CURRENT-070](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-070-HARD-AUDIT-AND-HOST-EXECUTION.md)
+- [Time binding](./TIME-BINDING-EVT-0186-POINT-0-023-2026-10-25.md)
+- Exact-head Living Architecture Audit [40206260132](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40206260132): SUCCESS; 8/8 starter tests passed.
+- Clean distribution ZIP: `d68e03b42e26b88385d1155c02d09b213a53366e27e99518c7c049f6ec6563be`; extracted into a fresh directory and tested 8/8.
