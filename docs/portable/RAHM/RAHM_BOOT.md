@@ -1,5 +1,5 @@
 # RAHM_BOOT — Portable startup contract
-Package ID: HAIF-RAHM-PORTABLE-20261024-001 | Version: 1.0.1
+Package ID: HAIF-RAHM-PORTABLE-20261024-001 | Version: 1.0.2
 Purpose: initialize an evidence-based Rahm growth/testing environment without assuming hidden chat history, persistent memory, tools, or background execution.
 
 ## First response on a new host
@@ -27,17 +27,12 @@ REGISTERED = written; READ-BACK VERIFIED = fetched again and matched; VALIDATED 
 
 Required response envelope: host capabilities → package integrity → reconstructed state → observations vs hypotheses → tests → failures/gaps → next action → persistence/background proof status.
 
-## Current inherited-architecture binding — CURRENT-048
-- Start/current checkpoint: [CURRENT-048](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-048-RAHM-INHERITED-ARCHITECTURE.md).
-- Inherited living master: [GPT6 New Project Inherited Architecture](../../reference/REFERENCE-DOCUMENTS/GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md).
-- Current interaction event: [EVT-0148](../../architecture/BEHAVIOR-TRACE/EVT-0148-RAHM-INHERITED-ARCHITECTURE-AND-EXPORTABLE-RECOVERY-2026-10-24.md).
-- Next action: [NEXT-046](../../0.0/anchors/PALANG-0.0-NEXT-20261024-046-RAHM-PORTABILITY-VALIDATION.md).
-- On host import, restore both the architecture and the open-gate ledger. Do not infer that host memory or background execution exists. Require independent read-back and target-host conformance evidence before declaring transfer verified.
+## Current authoritative return anchor — CURRENT-059 / Point 0/008
 
-
-## Current return anchor — CURRENT-056 / Point 0/005
-- Start from [CURRENT-056](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-056-OUTPUT-CONTINUITY-AND-RECOVERY.md), not a stale checkpoint listed in earlier sections.
-- User-designated Point 0: [Point 0/005](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-005-OUTPUT-CONTINUITY-AND-RECOVERY.md).
-- IN/OUT/Event: [IN-049](../../0.0/anchors/PALANG-0.0-IN-20261024-049-OUTPUT-CONTINUITY-AND-RECOVERY.md) → [OUT-048](../../0.0/anchors/PALANG-0.0-OUT-20261024-048-OUTPUT-CONTINUITY-AND-RECOVERY.md) → [EVT-0158](../../architecture/BEHAVIOR-TRACE/EVT-0158-NO-SILENT-GAP-OUTPUT-CONTINUITY-2026-10-24.md).
-- Next action: [NEXT-050](../../0.0/anchors/PALANG-0.0-NEXT-20261024-050-FULL-RECOVERY-AND-REAL-HOST-IMPORT.md), while preserving [NEXT-049](../../0.0/anchors/PALANG-0.0-NEXT-20261024-049-REAL-HOST-TRANSFER-AND-GRAPH-AUDIT.md).
-- No-silent-gap rule: provide visible status at durable milestones; if a new input arrives, link it to the open work and resume from the last read-back-verified checkpoint. Do not claim background execution or permanent memory without runtime evidence.
+- Start from [CURRENT-059](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-059-DEEP-AUDIT-AND-CORRECTED-CONFORMANCE.md), not any earlier CURRENT-048/056/057/058 pointer.
+- User Point 0: [POINT-0/008](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-008-DEEP-AUDIT-AND-NO-SILENT-GAP.md).
+- Canonical chain: [IN-052](../../0.0/anchors/PALANG-0.0-IN-20261025-052-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md) → [OUT-051](../../0.0/anchors/PALANG-0.0-OUT-20261025-051-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md) → [EVT-0161](../../architecture/BEHAVIOR-TRACE/EVT-0161-DEEP-AUDIT-STALE-GATE-AND-NO-SILENT-GAP-2026-10-25.md) → [CURRENT-059](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-059-DEEP-AUDIT-AND-CORRECTED-CONFORMANCE.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Read [FIRST-LIVING-MASTER](./FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md) and [EXPORT_MANIFEST](./EXPORT_MANIFEST.json) after this boot contract; treat CURRENT-059 as the current checkpoint and NEXT-051 as the existing unfinished work item.
+- No-silent-gap rule: every new input must receive a visible state/output. If work is partial, record what actually ran, what did not run, the blocker and exact resume point. Never create a new NEXT merely to disguise unfinished work.
+- Latest tested package is commit-scoped. Use the latest successful Portable RAHM Conformance run for the exact package commit; do not reuse a prior hash after package contents change.
+- Open gates remain: clean independent AI-host import, second-host import, durable memory after restart, automatic live capture, idle/background execution, and graph identity/parent/time adjudication. These are not implied by CI package success.
