@@ -131,23 +131,22 @@ def reconstruct(start):
     for key, expected in EXPECTED.items():
         if ids.get(key) != expected:
             failures.append({"check": "stable_id", "node": key, "expected": expected, "actual": ids.get(key)})
-    if expected_parent == "point0" and not require_link("in", in_text, "GPT6-RAHM-USER-POINT-0-20261025-008"):
+    if expected_parent == "point0" and not require_link("in", in_text, "GPT6-RAHM-USER-POINT-0-20261025-013"):
         failures.append({"check":"IN_to_Point0"})
-    if expected_parent == "in" and not require_link("out", out_text, "PALANG-0.0-IN-20261025-052"):
+    if expected_parent == "in" and not require_link("out", out_text, "PALANG-0.0-IN-20261025-057"):
         failures.append({"check":"OUT_to_IN"})
     link_checks = [
         ("point0", point0, "PALANG-0.0-IN-20261025-057"),
         ("point0", point0, "PALANG-0.0-OUT-20261025-056"),
         ("point0", point0, "EVT-0166"),
         ("point0", point0, "PALANG-0.0-CURRENT-20261025-064"),
-        ("point0", point0, "PALANG-0.0-NEXT-20261024-051"),
         ("in", in_text, "PALANG-0.0-CURRENT-20261025-063"),
-        ("in", in_text, "PALANG-0.0-NEXT-20261024-051"),
         ("out", out_text, "EVT-0166"),
         ("out", out_text, "PALANG-0.0-CURRENT-20261025-064"),
         ("event", event, "PALANG-0.0-CURRENT-20261025-064"),
         ("current", current, "PALANG-0.0-NEXT-20261024-051"),
-        ("current", current, "سند%20مرجع%20مادر%20مدل%20هوش%20مصنوعی"),
+        ("current", current, "CURRENT-064-OVERLAY-MANIFEST"),
+        ("current", current, "سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی"),
         ("current", current, "REFERENCE_INDEX"),
         ("current", current, "INTEGRATION-QUEUE"),
         ("next", nxt, "PALANG-0.0-CURRENT-20261025-059"),
