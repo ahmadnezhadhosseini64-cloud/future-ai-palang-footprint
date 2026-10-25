@@ -15,35 +15,35 @@ OUT = ROOT / "audit-output"
 OUT.mkdir(exist_ok=True)
 
 FILES = {
-    "point0": "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-013-CURRENT-INTERACTION-AND-LIVING-CONTINUITY.md",
-    "in": "docs/0.0/anchors/PALANG-0.0-IN-20261025-057-CURRENT-INTERACTION-AND-LIVING-CONTINUITY.md",
-    "out": "docs/0.0/anchors/PALANG-0.0-OUT-20261025-056-NEXT-EXECUTION-AND-GAPS.md",
-    "event": "docs/architecture/BEHAVIOR-TRACE/EVT-0166-CURRENT-INTERACTION-AND-NEXT-EXECUTION-2026-10-25.md",
-    "current": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-064-NEXT-EXECUTION-AND-GAPS.md",
-    "prior_current": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-063-EXECUTABLE-ARCHITECTURE.md",
+    "point0": "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-014-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md",
+    "in": "docs/0.0/anchors/PALANG-0.0-IN-20261025-058-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md",
+    "out": "docs/0.0/anchors/PALANG-0.0-OUT-20261025-057-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md",
+    "event": "docs/architecture/BEHAVIOR-TRACE/EVT-0167-AUTONOMOUS-CONTINUITY-AND-RECOVERY-2026-10-25.md",
+    "current": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-065-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md",
+    "prior_current": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-064-NEXT-EXECUTION-AND-GAPS.md",
     "next": "docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md",
     "master": "docs/portable/RAHM/FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md",
-    "manifest": "docs/portable/RAHM/CURRENT-064-OVERLAY-MANIFEST.json",
+    "manifest": "docs/portable/RAHM/CURRENT-065-OVERLAY-MANIFEST.json",
     "failure_event": "docs/architecture/BEHAVIOR-TRACE/EVT-0161-DEEP-AUDIT-STALE-GATE-AND-NO-SILENT-GAP-2026-10-25.md",
     "index": "docs/REFERENCE_INDEX.md",
     "queue": "docs/architecture/INTEGRATION-QUEUE/README.md",
 }
 EXPECTED = {
-    "point0": "G6IP-POINT-0-013-20261025",
-    "in": "G6IP-IN-057-20261025",
-    "out": "G6IP-OUT-056-20261025",
-    "event": "HAIF-EVT-0166-2026-10-25",
-    "current": "G6IP-CURRENT-064-20261025",
-    "prior_current": "G6IP-CURRENT-063-20261025",
+    "point0": "G6IP-POINT-0-014-20261025",
+    "in": "G6IP-IN-058-20261025",
+    "out": "G6IP-OUT-057-20261025",
+    "event": "HAIF-EVT-0167-AUTONOMOUS-CONTINUITY-AND-RECOVERY-2026-10-25",
+    "current": "G6IP-CURRENT-065-20261025",
+    "prior_current": "G6IP-CURRENT-064-20261025",
     "next": "G6IP-RAHM-NEXT-051-20261024",
 }
 GATE_MARKERS = {
-    "full_state_recovery": ("full independent external-host reconstruction", "Clean export/import recovery"),
-    "clean_host_import": ("clean independent AI-host import", "Independent AI host import"),
-    "second_host_import": ("second host", "second-host durability"),
-    "persistence_restart": ("persistence restart", "Restart and second-host durability"),
-    "idle_background": ("idle/background execution", "Automatic/background capture"),
-    "graph_triage": ("ambiguous parent", "Historical graph findings"),
+    "full_state_recovery": ("full independent external-host reconstruction", "Clean recovery round trip"),
+    "clean_host_import": ("clean independent AI-host import", "Test independent-host import"),
+    "second_host_import": ("second host", "restart recovery and second-host persistence"),
+    "persistence_restart": ("persistence restart", "restart recovery and second-host persistence"),
+    "idle_background": ("idle/background execution", "Automatic capture/external storage"),
+    "graph_triage": ("ambiguous parent", "NEXT-051 graph findings"),
 }
 
 def read(name):
@@ -131,21 +131,22 @@ def reconstruct(start):
     for key, expected in EXPECTED.items():
         if ids.get(key) != expected:
             failures.append({"check": "stable_id", "node": key, "expected": expected, "actual": ids.get(key)})
-    if expected_parent == "point0" and not require_link("in", in_text, "GPT6-RAHM-USER-POINT-0-20261025-013"):
+    if expected_parent == "point0" and not require_link("in", in_text, "GPT6-RAHM-USER-POINT-0-20261025-014"):
         failures.append({"check":"IN_to_Point0"})
-    if expected_parent == "in" and not require_link("out", out_text, "PALANG-0.0-IN-20261025-057"):
+    if expected_parent == "in" and not require_link("out", out_text, "PALANG-0.0-IN-20261025-058"):
         failures.append({"check":"OUT_to_IN"})
     link_checks = [
-        ("point0", point0, "PALANG-0.0-IN-20261025-057"),
-        ("point0", point0, "PALANG-0.0-OUT-20261025-056"),
-        ("point0", point0, "EVT-0166"),
-        ("point0", point0, "PALANG-0.0-CURRENT-20261025-064"),
-        ("in", in_text, "PALANG-0.0-CURRENT-20261025-063"),
-        ("out", out_text, "EVT-0166"),
-        ("out", out_text, "PALANG-0.0-CURRENT-20261025-064"),
-        ("event", event, "PALANG-0.0-CURRENT-20261025-064"),
+        ("point0", point0, "PALANG-0.0-IN-20261025-058"),
+        ("point0", point0, "PALANG-0.0-OUT-20261025-057"),
+        ("point0", point0, "EVT-0167-AUTONOMOUS"),
+        ("point0", point0, "PALANG-0.0-CURRENT-20261025-065"),
+        ("in", in_text, "PALANG-0.0-CURRENT-20261025-064"),
+        ("out", out_text, "EVT-0167-AUTONOMOUS"),
+        ("out", out_text, "PALANG-0.0-CURRENT-20261025-065"),
+        ("event", event, "PALANG-0.0-CURRENT-20261025-065"),
         ("current", current, "PALANG-0.0-NEXT-20261024-051"),
-        ("current", current, "CURRENT-064-OVERLAY-MANIFEST"),
+        ("current", current, "CURRENT-065-OVERLAY-MANIFEST"),
+        ("current", current, "EVT-0170-LIVE-MIRROR"),
         ("current", current, "سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی"),
         ("current", current, "REFERENCE_INDEX"),
         ("current", current, "INTEGRATION-QUEUE"),
@@ -167,7 +168,7 @@ def reconstruct(start):
         failures.append({"check":"failure_correction_lineage"})
     if "NEXT-051" not in master or "CURRENT-059" not in master:
         failures.append({"check":"portable_master_not_current"})
-    if manifest.get("current_checkpoint") != "docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-064-NEXT-EXECUTION-AND-GAPS.md":
+    if manifest.get("current_checkpoint") != "docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-065-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md":
         failures.append({"check":"manifest_checkpoint_mismatch","actual":manifest.get("current_checkpoint")})
     if not require_link("current", current, "PALANG-0.0-NEXT-20261024-051"):
         failures.append({"check":"manifest_next_mismatch","actual":"CURRENT-064-to-NEXT-051 canonical link missing"})
@@ -191,7 +192,7 @@ def main():
     state_keys = ("canonical_current", "active_next", "lineage_ids", "versions", "manifest_version", "manifest_file_count", "open_gates")
     equivalent = all(from_in[k] == from_out[k] for k in state_keys)
     report = {
-        "test_id": "RAHM-CURRENT-064-IN-OUT-STATE-RECOVERY-2026-10-25-001",
+        "test_id": "RAHM-CURRENT-065-IN-OUT-STATE-RECOVERY-2026-10-25-001",
         "scope": "Repository current-chain reconstruction from independent IN and OUT starting anchors; not a real external-host import.",
         "from_IN": from_in,
         "from_OUT": from_out,
