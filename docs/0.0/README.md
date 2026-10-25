@@ -1486,3 +1486,10 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - [EVT-0177](../architecture/BEHAVIOR-TRACE/EVT-0177-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md) records the source/Library comparison: one trailing-newline delta only; semantic fields match; no redundant write.
 - [Time binding](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0177-LIVE-MIRROR-SYNC-2026-10-25.md) binds the event to actual repository commit UTC and derived Tehran time.
 - Preserve POINT-0/016; current execution continuation remains CURRENT-065 / NEXT-051. Do not mint a placeholder successor.
+
+
+## Latest user hard-audit point — POINT-0/017
+- [POINT-0/017 — Unified Palang architecture hard audit](./anchors/GPT6-RAHM-USER-POINT-0-20261025-017-UNIFIED-PALANG-ARCHITECTURE-HARD-AUDIT.md).
+- Event: [EVT-0178](../architecture/BEHAVIOR-TRACE/EVT-0178-UNIFIED-PALANG-ARCHITECTURE-HARD-AUDIT-2026-10-25.md).
+- Living master updated with the one-project invariant and current-pointer/verifier-manifest mismatch findings.
+- IMPORTANT: POINT-0/017 is the current user-turn root; it does not replace the execution checkpoint. Reconcile conflicting CURRENT-065 vs CURRENT-066 declarations from evidence. Preserve NEXT-051 as the active existing queue until acceptance; do not create NEXT-052 as a placeholder.
