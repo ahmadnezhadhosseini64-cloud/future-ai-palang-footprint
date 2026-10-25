@@ -7,6 +7,10 @@
 - Previous checkpoint: [CURRENT-064](./PALANG-0.0-CURRENT-20261025-064-NEXT-EXECUTION-AND-GAPS.md).
 - Living mother: [HAIF Initial Model Master Reference](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md).
 - Active graph audit: [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Canonical index: [REFERENCE_INDEX](../../REFERENCE_INDEX.md).
+- Integration queue: [INTEGRATION-QUEUE](../../architecture/INTEGRATION-QUEUE/README.md).
+- Current overlay manifest: [CURRENT-065-OVERLAY-MANIFEST](../../portable/RAHM/CURRENT-065-OVERLAY-MANIFEST.json).
+- Auxiliary live mirror evidence (not part of the IN/OUT interaction chain): [EVT-0170](../../architecture/BEHAVIOR-TRACE/EVT-0170-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md).
 - Status: checkpoint registered; execution evidence still open.
 
 ## Baseline
