@@ -1463,3 +1463,11 @@ Current continuation chain: POINT-0/013 → IN-057 → OUT-056 → EVT-0166 → 
 - Status: source and test wiring registered; exact-main workflow result pending inspection. CURRENT-065/CURRENT-066 stays OPEN; NEXT-051 and Issues #20/#21 plus BOART-FOLLOWUP-01 remain active/open.
 
 - Time binding: [TIME-BINDING-EVT-0181](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0181-POINT-0-019-2026-10-25.md) — actual POINT-0/019 and EVT-0181 commit UTC times with derived Tehran equivalents; not a runtime proof.
+
+
+## POINT-0/019 executable capability increment
+| Stable ID | Path | Role | Status |
+|---|---|---|---|
+| HAIF-CURRENT-POINTER-DISCOVERY-0.1 | `scripts/behavior-hunter/discover_current_0_0_pointer.py` | کشف اشاره‌گر اجرای جاری از منابع صریح؛ تعارض را AMBIGUOUS گزارش می‌کند و برنده انتخاب نمی‌کند | Source registered and wired into Living Architecture Audit; exact-head test receipt pending |
+| HAIF-CURRENT-POINTER-DISCOVERY-TESTS-0.1 | `scripts/behavior-hunter/tests/test_discover_current_0_0_pointer.py` | پنج fixture برای حالت سازگار، تعارض، اشاره‌گر تاریخی، manifest ناقص و JSON خراب | Test source registered; execution result pending |
+| HAIF-POINT-0-019-MODEL-CAPABILITY-BUILD-20261025 | `docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-019-MODEL-CAPABILITY-BUILD.md` | نقطهٔ کاربر برای رساندن مدل اولیه به قابلیت‌های اجرایی و آزمون‌پذیر | Repository read-back verified; capability gates remain open |
