@@ -70,3 +70,12 @@ The local starter package passes seven automated tests on the tested revision. T
 - Portable RAHM Conformance [40198744680](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40198744680): SUCCESS; portable package artifact 12600074529, digest sha256:0d7b0fa8ea010f8516b3091b5bcb623f862d5922b707842675c5240c7d767046.
 - Living Architecture Audit [40198744637](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40198744637): SUCCESS; structural checks PASS, pointer checker AMBIGUOUS/BLOCKED, starter tests 7/7 PASS; artifact 12600689796.
 - The stale manifest digest issue is resolved for this tested SHA. Pointer ambiguity, historic graph review and real external-host capability gates remain open.
+
+
+## Latest main-content verification
+
+- Living Architecture Audit [40199078903](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40199078903): SUCCESS on tested SHA ca3745072a35cdca8db74cd62bf8ee07b23c45b3; structural checks PASS; pointer checker AMBIGUOUS/BLOCKED; starter tests 7/7 PASS.
+- Starter ZIP SHA-256: 9a594ddb424ef81ec3a1969ef64dc58f34277b94f8114510488ee2103b7a5237.
+- Audit artifact ID 12601800399, digest sha256:5edfca23d4f76152bbeb1bcb51830509024270d2a0bbecd66087438fe5208207.
+- Portable RAHM Conformance [40199078860](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40199078860): SUCCESS on the same tested SHA; portable package artifact 12601380486, conformance evidence 12601060622.
+- The manifest SHA failure is resolved on this tested revision. Real independent GPT-host import and persistent host capabilities remain unproven.
