@@ -1432,3 +1432,7 @@ Current continuation chain: POINT-0/013 → IN-057 → OUT-056 → EVT-0166 → 
 - Portable conformance: exact-byte SHA-256 scan PASS; live-reference SHA-256 scan PASS; portable package build PASS. Package SHA-256: `1cd3f0aabed6991966e4e8881c365aafc644f11afb1fb7e08848d049475b00f3`. Conformance run: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40170492361
 - Audit artifact ZIP SHA-256: `e728314b02ab4315f8cf1687255bc7c717bcd46e163e07bc4cf05361e3879369`; artifact ID 12590125743.
 - Host adapter tests passed, but live ChatGPT producer remains NOT TESTED and repository write remains NOT IMPLEMENTED. Independent-host import, second-host import, restart persistence in a real host, idle/background execution and external storage remain OPEN / NOT PROVEN.
+
+
+| HAIF-POINT-0-016-MIRROR-DELTA-RECOVERY-20261025 | `docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-016-MIRROR-DELTA-AND-ARCHITECTURE-RECOVERY.md` | User's new point 0: mirror newline decision, recovery-verifier gaps, and ordered continuation | Registered and independently read back from repository; Library normalization and exact-current-SHA audit remain OPEN |
+| HAIF-EVT-0176-POINT-0-016-MIRROR-DELTA-RECOVERY-20261025 | `docs/architecture/BEHAVIOR-TRACE/EVT-0176-USER-POINT-0-016-MIRROR-DELTA-AND-ARCHITECTURE-RECOVERY-2026-10-25.md` | Event evidence for POINT-0/016, one-newline mirror delta and verifier defect | Registered and independently read back from repository; no external persistence claim |
