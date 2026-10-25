@@ -1,10 +1,10 @@
 {
   "package_id": "HAIF-RAHM-CURRENT-062-OVERLAY-2026-10-25-001",
-  "version": "1.0.0",
-  "status": "10-FILE INCREMENTAL INVENTORY; FOCUSED LINK CHECK PASS; FINAL GIT BLOB SHA-1 READ-BACK PASS; EXACT-BYTE SHA-256 AND ARCHIVE NOT VERIFIED",
+  "version": "1.1.0",
+  "status": "12-FILE CURRENT-062 DELTA INVENTORY; CURRENT INPUT/OUTPUT RECOVERY AND WORKFLOW SOURCE INCLUDED; FINAL SHA-1 READ-BACK PENDING; EXACT-BYTE SHA-256 AND ARCHIVE NOT VERIFIED",
   "parent_manifest": "docs/portable/RAHM/CURRENT-061-OVERLAY-MANIFEST.json",
   "checkpoint": "G6IP-CURRENT-062-20261025",
-  "purpose": "Delta inventory for the new CURRENT-062 chain and linked living architecture surfaces. The parent overlay retains prior prototype artifacts. This is not a complete release package.",
+  "purpose": "Incremental continuity inventory for CURRENT-062, current input/output recovery pointers, the portable conformance workflow and the main export manifest. The parent overlay retains the prototype/adoption artifacts. This is not itself a complete release package.",
   "digest_policy": "git_blob_sha is Git blob SHA-1. sha256 stays null pending a fresh strict conformance workflow. External-host/runtime acceptance is not inferred.",
   "files": [
     {
@@ -14,17 +14,17 @@
     },
     {
       "path": "docs/0.0/anchors/PALANG-0.0-IN-20261025-055-OPEN-GAPS-AND-CONTINUITY.md",
-      "git_blob_sha": "fd10d82cfa1227c4275e44393f279b74d8e4258c",
+      "git_blob_sha": "e29a9813a90140407bf016a89eefe16f806aa6a8",
       "sha256": null
     },
     {
       "path": "docs/0.0/anchors/PALANG-0.0-OUT-20261025-054-OPEN-GAPS-AND-CONTINUITY.md",
-      "git_blob_sha": "338e70490788195b8c8dd01dd475824c86dd1207",
+      "git_blob_sha": "fbd05230ce7f91ad0926c9f3a4eafeffac80f2eb",
       "sha256": null
     },
     {
       "path": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-062-OPEN-GAPS-AND-CONTINUITY.md",
-      "git_blob_sha": "ec099ff0912a930259e5758c3f25ac144423521b",
+      "git_blob_sha": "9b3a9b93d6ba33f3a7c5622a0966af0cb5e50f57",
       "sha256": null
     },
     {
@@ -56,13 +56,23 @@
       "path": "docs/reference/REFERENCE-DOCUMENTS/ARCHITECTURE-GRAPH-ADJUDICATION-AND-CLOSURE-REGISTER-2026-10-25-001.md",
       "git_blob_sha": "17d3400708730ca389d32e6bac8114792d8f5689",
       "sha256": null
+    },
+    {
+      "path": ".github/workflows/rahm-portable-conformance.yml",
+      "git_blob_sha": "77bee18d877ad0577145f509659122dad03c3214",
+      "sha256": null
+    },
+    {
+      "path": "docs/portable/RAHM/EXPORT_MANIFEST.json",
+      "git_blob_sha": "540e049bc7c6bb616d319f268846590b4324c67c",
+      "sha256": null
     }
   ],
   "release_gates": [
-    "Independently fetch each listed file and compare Git blob SHA-1; last recorded pass matched all 10 entries.",
-    "Run the current strict portable conformance workflow.",
-    "Record exact-byte SHA-256 values and archive hash from workflow evidence.",
-    "Fetch and inspect the resulting artifact and recovery receipt.",
+    "Independently fetch all listed files after the final manifest update and compare Git blob SHA-1 values.",
+    "Run the current strict portable conformance workflow on the resulting main commit.",
+    "Read exact-byte SHA-256 values and archive hash from that run's evidence artifact.",
+    "Fetch and inspect package and recovery evidence artifacts.",
     "Do not infer independent-host or runtime acceptance from repository CI."
   ]
 }
