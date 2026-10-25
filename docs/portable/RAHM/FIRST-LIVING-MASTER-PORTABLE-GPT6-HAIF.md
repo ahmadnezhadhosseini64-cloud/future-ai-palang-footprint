@@ -5,12 +5,12 @@
 - Version / نسخه: 1.1.6
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED; latest strict digest/package result is tracked in workflow history; real-host gates OPEN; global graph REVIEW_REQUIRED.
 - Authority / مرجع حاکم: اصول بنیادی پروژه + سند مادر معماری موروثی + بسته قابل‌حمل RAHM.
-- User Point 0: [G6IP-RAHM-USER-POINT-0-20261025-008](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-008-DEEP-AUDIT-AND-NO-SILENT-GAP.md)
-- Current 0.0: [CURRENT-059](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-059-DEEP-AUDIT-AND-CORRECTED-CONFORMANCE.md)
+- User Point 0: [G6IP-POINT-0-015-20261025](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-015-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md)
+- Current 0.0: [CURRENT-066](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-066-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md)
 - Next 0.0: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
-- User input: [IN-052](../../0.0/anchors/PALANG-0.0-IN-20261025-052-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md)
-- Assistant output: [OUT-051](../../0.0/anchors/PALANG-0.0-OUT-20261025-051-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md)
-- Event: [EVT-0161](../../architecture/BEHAVIOR-TRACE/EVT-0161-DEEP-AUDIT-STALE-GATE-AND-NO-SILENT-GAP-2026-10-25.md)
+- User input: [IN-059](../../0.0/anchors/PALANG-0.0-IN-20261025-059-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md)
+- Assistant output: [OUT-058](../../0.0/anchors/PALANG-0.0-OUT-20261025-058-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md)
+- Event: [EVT-0174](../../architecture/BEHAVIOR-TRACE/EVT-0174-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY-2026-10-25.md)
 - Output-gap behavioral rule: [EVT-0158](../../architecture/BEHAVIOR-TRACE/EVT-0158-NO-SILENT-GAP-OUTPUT-CONTINUITY-2026-10-24.md)
 - Prior hard-audit evidence: [EVT-0154](../../architecture/BEHAVIOR-TRACE/EVT-0154-LIVING-ARCHITECTURE-HARD-AUDIT-RUN-2026-10-24.md)
 - Portable startup contract: [RAHM_BOOT](./RAHM_BOOT.md)
@@ -345,3 +345,7 @@ The PASS receipt above belongs to commit `5047ee23407fd7fa47210ee68894587bc35e99
 - Living architecture audit [run 40151104066](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40151104066) PASS structurally: 3,945 files including evidence, 1,094 source files, 2,851 generated evidence files, 5,744 local link edges, 0 missing local links; event-number collision groups reduced to 36 after renaming the noncanonical ALT-001 event. Remaining graph findings: 62 Stable-ID groups (61 unreviewed), 88 Production-ID groups, 7 Reference-ID groups, 13 ambiguous parent edges, 1 ambiguous timestamp and 11 exact-content duplicate groups. Content status remains REVIEW_REQUIRED.
 - The two-runtime CPREL transfer harness [run 40150879386](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150879386) passed artifact transfer between isolated CI runtimes. This is a synthetic runtime-transfer test, not proof of import into a real independent AI host.
 - Still OPEN / NOT VERIFIED: clean independent AI-host import, second AI-host import, durable persistence after restart, automatic live message capture, idle/background execution, and individual adjudication of identity/parent/time findings. Keep existing NEXT-051 OPEN; do not mint NEXT-052 to replace unfinished work.
+
+
+## Current chain update — CURRENT-066
+The canonical live checkpoint is now [CURRENT-066](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-066-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md), rooted at [POINT-0/015](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-015-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md), with [IN-059](../../0.0/anchors/PALANG-0.0-IN-20261025-059-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md), [OUT-058](../../0.0/anchors/PALANG-0.0-OUT-20261025-058-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md), [EVT-0174](../../architecture/BEHAVIOR-TRACE/EVT-0174-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY-2026-10-25.md) and verifier failure [EVT-0175](../../architecture/BEHAVIOR-TRACE/EVT-0175-CURRENT-066-RECOVERY-VERIFIER-STALE-CHECKPOINT-2026-10-25.md). NEXT-051 remains active; all unproven gates remain OPEN.
