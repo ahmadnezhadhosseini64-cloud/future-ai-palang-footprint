@@ -41,3 +41,12 @@ This is a new Point 0 for the current interaction. The assistant is expected to 
 - [ ] Existing NEXT-051 graph audit continued, occurrence by occurrence.
 - [ ] CI receipt and exact-byte digests obtained from real workflow artifacts.
 - [ ] Independent-host and restart persistence only marked verified after direct tests.
+
+
+## Explicit recovery graph links — strict verifier requirement
+- Input anchor: [IN-058](./PALANG-0.0-IN-20261025-058-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md)
+- Output anchor: [OUT-057](./PALANG-0.0-OUT-20261025-057-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md)
+- Canonical event: [EVT-0167](../../architecture/BEHAVIOR-TRACE/EVT-0167-AUTONOMOUS-CONTINUITY-AND-RECOVERY-2026-10-25.md)
+- Current point: [CURRENT-065](./PALANG-0.0-CURRENT-20261025-065-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md)
+
+The chain description above is retained. These direct links are added so both IN- and OUT-origin reconstruction can resolve the canonical graph without inferring edges from plain text.

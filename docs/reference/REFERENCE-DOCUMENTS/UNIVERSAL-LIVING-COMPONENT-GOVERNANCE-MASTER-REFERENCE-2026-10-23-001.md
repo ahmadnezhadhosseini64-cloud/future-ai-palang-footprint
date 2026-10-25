@@ -392,3 +392,12 @@ SCRTC-B3 is a source-backed partial mapping. Full tree/history census and confli
 - [EVT-0168](../../architecture/BEHAVIOR-TRACE/EVT-0168-LIVING-ARCHITECTURE-AUDIT-FAILURE-AND-ROOT-CAUSE-2026-10-25.md) preserves a real failed audit result rather than allowing an equivalent-but-blocked IN/OUT state to appear successful.
 - The failure exposed stale test-chain/manifest assumptions and three incorrect repository-relative runtime links. Corrective work is bounded to the verifier's current-chain binding and those links; historical CURRENT-059 records remain preserved.
 - A fresh run on the corrected commit must be inspected before promoting the gate. Issue #20 runtime/clean-host acceptance and Issue #21 full source census remain OPEN.
+
+
+---
+
+## Living mirror sync and exact-main audit addendum — EVT-0172 / EVT-0173
+
+- The live mirror was independently checked against canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10`; Library version 7 is 1 character longer (one trailing newline), edit distance 1, and all semantic fields/statuses match within the approved tolerance. No redundant write was required. See [EVT-0172](../../architecture/BEHAVIOR-TRACE/EVT-0172-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md).
+- The exact-main Living Architecture Audit failed on SHA `19044f6a238e3d00805813695f328f0540af5e8d` because POINT-0/014 lacked four explicit graph links. The failure and correction are preserved in [EVT-0173](../../architecture/BEHAVIOR-TRACE/EVT-0173-CURRENT-065-EXACT-MAIN-AUDIT-FAILURE-AND-CORRECTION-2026-10-25.md). Fresh audit on the repaired exact SHA is required before promotion.
+- Live continuation: CURRENT-065 / NEXT-051. Issue #20 and #21 remain OPEN; external host/restart/background persistence is not proven by repository or Library evidence.

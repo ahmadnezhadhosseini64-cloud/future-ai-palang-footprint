@@ -1855,3 +1855,9 @@ Next execution remains attached to existing [NEXT-051](../../0.0/anchors/PALANG-
 - [EVT-0168](../BEHAVIOR-TRACE/EVT-0168-LIVING-ARCHITECTURE-AUDIT-FAILURE-AND-ROOT-CAUSE-2026-10-25.md) records failed Living Architecture Audit run 40167940024 on SHA `5aed9604046d0802764531ff2e359827fb34edd1`.
 - Root causes: three incorrect relative links to repository-root runtime files and a verifier/manifest mismatch between CURRENT-059 assumptions and CURRENT-064 state.
 - The links and verifier have been corrected in the working continuation; a fresh exact-commit audit must prove the correction. Do not close NEXT-051 or mark runtime/cold-host recovery complete from the failed run.
+
+
+## Live mirror sync and exact-main correction — EVT-0172 / EVT-0173
+- Mirror recheck [EVT-0172](../BEHAVIOR-TRACE/EVT-0172-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md): source blob unchanged; Library version 7 read back; delta/edit distance 1 from a trailing newline; semantic match within tolerance; no write required.
+- Exact-main audit [EVT-0173](../BEHAVIOR-TRACE/EVT-0173-CURRENT-065-EXACT-MAIN-AUDIT-FAILURE-AND-CORRECTION-2026-10-25.md): run 40169128251 failed on SHA `19044f6a238e3d00805813695f328f0540af5e8d` due to four missing explicit POINT-0/014 links. Links were added; rerun the full audit on the exact repaired main SHA and inspect the artifact before closing the gate.
+- Current point: CURRENT-065. Active next: NEXT-051. Issue #20 and #21 remain OPEN. No host-wide capture or external persistence claim is permitted.

@@ -1387,3 +1387,15 @@ Current continuation chain: POINT-0/013 → IN-057 → OUT-056 → EVT-0166 → 
 - Event: `docs/architecture/BEHAVIOR-TRACE/EVT-0168-LIVING-ARCHITECTURE-AUDIT-FAILURE-AND-ROOT-CAUSE-2026-10-25.md`.
 - Time binding: `docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0168-AUDIT-FAILURE-2026-10-25.md`.
 - Living Architecture Audit run 40167940024 failed on tested SHA `5aed9604046d0802764531ff2e359827fb34edd1`; root cause and skipped downstream steps are preserved. Corrected verifier and queue-link tests remain to be read back on a fresh run.
+
+
+## EVT-0172 — live mirror sync recheck
+- Event: `docs/architecture/BEHAVIOR-TRACE/EVT-0172-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md`.
+- Time binding: `docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0172-LIVE-MIRROR-SYNC-2026-10-25.md`.
+- Result: source blob unchanged; Library version 7 read back; 1-character trailing newline difference; semantic match within tolerance; no redundant write.
+
+## EVT-0173 — exact-main audit failure and correction
+- Event: `docs/architecture/BEHAVIOR-TRACE/EVT-0173-CURRENT-065-EXACT-MAIN-AUDIT-FAILURE-AND-CORRECTION-2026-10-25.md`.
+- Time binding: `docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0173-EXACT-MAIN-AUDIT-2026-10-25.md`.
+- Failed audit run 40169128251 on SHA `19044f6a238e3d00805813695f328f0540af5e8d`; explicit graph links added to POINT-0/014; fresh exact-main audit pending.
+- Current continuation: CURRENT-065 / NEXT-051. Preserve earlier CURRENT-036 / NEXT-036 and NEXT-035.

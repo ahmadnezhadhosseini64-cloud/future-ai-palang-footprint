@@ -36,3 +36,8 @@ CURRENT-064 is preserved. Runtime code and tests exist, but previous state did n
 - Automatic capture/external storage: OPEN / NOT PROVEN.
 
 REGISTERED is not READ-BACK VERIFIED; READ-BACK VERIFIED is not TEST PASSED. Canonical repository time must be derived from the actual last-change commit metadata and shown in UTC with Tehran equivalent.
+
+## Live mirror and exact-main audit update — EVT-0172 / EVT-0173
+- [EVT-0172](../../architecture/BEHAVIOR-TRACE/EVT-0172-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md): source unchanged; Library version 7 independently read back; 10,479 vs 10,480 characters, one extra trailing newline, semantic MATCH within tolerance; no redundant write.
+- [EVT-0173](../../architecture/BEHAVIOR-TRACE/EVT-0173-CURRENT-065-EXACT-MAIN-AUDIT-FAILURE-AND-CORRECTION-2026-10-25.md): exact-main audit run 40169128251 failed on prior SHA due to missing explicit POINT-0/014 links; correction is registered; fresh exact-SHA audit pending.
+- [NEXT-051](PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md) remains active. Issue #20/#21 and independent-host/restart/external persistence gates remain open.

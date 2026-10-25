@@ -1467,3 +1467,9 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 ## Recovery verifier failure — EVT-0168
 - [EVT-0168](../architecture/BEHAVIOR-TRACE/EVT-0168-LIVING-ARCHITECTURE-AUDIT-FAILURE-AND-ROOT-CAUSE-2026-10-25.md) preserves the failed current-chain recovery gate and its root causes.
 - This does not replace CURRENT-064 or NEXT-051. The corrected verifier must pass from both IN-057 and OUT-056; clean-host import and external persistence remain separate OPEN gates.
+
+
+## EVT-0172 / EVT-0173 — live mirror and current-chain verification
+- [EVT-0172](../architecture/BEHAVIOR-TRACE/EVT-0172-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md) records the current Library mirror comparison; no redundant write was needed.
+- [EVT-0173](../architecture/BEHAVIOR-TRACE/EVT-0173-CURRENT-065-EXACT-MAIN-AUDIT-FAILURE-AND-CORRECTION-2026-10-25.md) preserves the exact-main audit failure and the POINT-0/014 explicit-link repair.
+- CURRENT-065 remains current; NEXT-051 remains active. CURRENT-036/NEXT-036 and NEXT-035 remain preserved historical anchors.

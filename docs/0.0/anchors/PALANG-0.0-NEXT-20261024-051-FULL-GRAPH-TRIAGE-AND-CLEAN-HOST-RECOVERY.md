@@ -169,3 +169,10 @@ NEXT-051 remains OPEN/LIVING until all remaining acceptance gates are satisfied;
 - Portable continuity inventory: [CURRENT-062 overlay manifest](../../portable/RAHM/CURRENT-062-OVERLAY-MANIFEST.json); exact-byte hashes and archive status must come from the fresh strict workflow, not this pointer.
 - Next executable work remains in this queue: create a current commit-scoped occurrence inventory and adjudicate identifiers/parent edges/timestamps/duplicates individually; run fresh strict package/digest; then real browser and clean-host tests.
 - Status: CURRENT-062 registered; no graph-wide findings are closed merely by this update. NEXT-039 and NEXT-040 remain open subtasks; do not create NEXT-052.
+
+
+## Live mirror sync and exact-main audit addendum — 2026-10-25
+- Mirror event: [EVT-0172](../../architecture/BEHAVIOR-TRACE/EVT-0172-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md); canonical source blob unchanged; Library version 7 read back; 10,479/10,480 chars; edit distance 1 due only to one trailing newline; semantic fields/statuses match within tolerance. No Library write was required.
+- Exact-main audit failure and correction: [EVT-0173](../../architecture/BEHAVIOR-TRACE/EVT-0173-CURRENT-065-EXACT-MAIN-AUDIT-FAILURE-AND-CORRECTION-2026-10-25.md). Run 40169128251 failed on SHA `19044f6a238e3d00805813695f328f0540af5e8d` because POINT-0/014 lacked explicit Markdown links to IN-058, OUT-057, EVT-0167 and CURRENT-065. The links are now registered; fresh audit on the exact resulting main SHA remains pending.
+- Live pointer resolution: CURRENT-065 is current and NEXT-051 is the active next checkpoint. CURRENT-036/NEXT-036 and NEXT-035 remain preserved historical anchors; do not treat stale automation text as a current pointer.
+- Continue Issue #21 source/rule census, Issue #20 runtime pair schema/reverse lookup/cold-start and clean-host recovery, and BOART/source-backed graph reconciliation. Dropbox remains OPEN / NOT VERIFIED unless explicitly reopened; Buffer/Persistent Memory remain NOT VERIFIED; external end-to-end recovery remains NOT RUN.

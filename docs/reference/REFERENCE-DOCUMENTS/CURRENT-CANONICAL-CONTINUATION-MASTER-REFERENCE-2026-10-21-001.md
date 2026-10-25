@@ -772,3 +772,12 @@ Current active gate remains [EVT-0122](../../architecture/BEHAVIOR-TRACE/EVT-012
 - Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external recovery NOT RUN. Next: BOART-FOLLOWUP-01, then uncoached fresh-session recovery. Daily mirror automation remains enabled.
 
 - Daily automation prompt refreshed after EVT-0133 to use EVT-0133/NEXT-035 as the current baseline. Automation ID `6ad9a407b9d481919c7145fbe4638dec` remains ENABLED; automation metadata update UTC `2026-10-24T05:04:36.539653Z`, derived Tehran `2026-10-24T08:34:36.539653+03:30`. This is automation metadata time, not a repository commit timestamp.
+
+
+## Live continuation reconciliation — EVT-0172 / EVT-0173 (2026-10-25)
+
+The older continuation pointer recorded in earlier mirror automation snapshots as CURRENT-036 / NEXT-036 is preserved historically. Independent live-main reads now show [CURRENT-065](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-065-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md) as current and [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md) as the active next checkpoint.
+
+- [EVT-0172](../../architecture/BEHAVIOR-TRACE/EVT-0172-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md): mirror source unchanged; Library version 7 independently read back; one trailing newline difference; semantic PASS within tolerance; no write required.
+- [EVT-0173](../../architecture/BEHAVIOR-TRACE/EVT-0173-CURRENT-065-EXACT-MAIN-AUDIT-FAILURE-AND-CORRECTION-2026-10-25.md): exact-main audit failed because POINT-0/014 lacked explicit links to IN-058, OUT-057, EVT-0167 and CURRENT-065; correction registered, fresh exact-main audit pending.
+- NEXT-051, Issue #20, Issue #21 and BOART follow-up remain open. Earlier anchors are append-only and preserved. A Library mirror PASS does not imply whole-project or external-host PASS.

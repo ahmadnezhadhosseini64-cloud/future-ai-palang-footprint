@@ -679,3 +679,12 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - [Time binding](./TIME-BINDING-EVT-0168-AUDIT-FAILURE-2026-10-25.md) records the actual event commit UTC and derived Tehran time.
 - Failure cause: three wrong runtime links in the integration queue plus a stale IN/OUT verifier bound to CURRENT-059 and an incompatible manifest expectation. Both IN and OUT routes were BLOCKED; equivalent blocked state is FAIL, not PASS.
 - Correction is in progress; the failed run and artifact remain preserved. Independent host, restart persistence, and full historical census remain OPEN.
+
+
+## EVT-0172 — live mirror sync recheck
+- [EVT-0172](./EVT-0172-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md) records the current source/Library comparison; one trailing newline difference; semantic PASS within tolerance; no write required.
+- [Time binding](./TIME-BINDING-EVT-0172-LIVE-MIRROR-SYNC-2026-10-25.md) records the event's actual repository commit UTC and derived Tehran time.
+
+## EVT-0173 — exact-main audit failure and correction
+- [EVT-0173](./EVT-0173-CURRENT-065-EXACT-MAIN-AUDIT-FAILURE-AND-CORRECTION-2026-10-25.md) preserves failed run 40169128251 on SHA `19044f6a238e3d00805813695f328f0540af5e8d`, its artifact digest, and the explicit-link correction to POINT-0/014.
+- [Time binding](./TIME-BINDING-EVT-0173-EXACT-MAIN-AUDIT-2026-10-25.md) separates event registration time from audit run time. Fresh audit on the repaired exact main SHA is pending.
