@@ -1,15 +1,15 @@
 {
   "package_id": "HAIF-RAHM-CURRENT-062-OVERLAY-2026-10-25-001",
-  "version": "1.1.3",
-  "status": "12-FILE CURRENT-062 DELTA INVENTORY; UPDATED MOTHER AND EVT-0164 RECORDED; FINAL GIT BLOB SHA-1 READ-BACK REQUIRED; EXACT-BYTE SHA-256 AND ARCHIVE NOT VERIFIED",
+  "version": "1.2.0",
+  "status": "15-FILE CURRENT-062 + HAIF-RUNTIME-0.1 DELTA INVENTORY; EXACT GIT BLOB SHA-1 READ-BACK PENDING; EXACT-BYTE SHA-256/ARCHIVE PENDING",
   "parent_manifest": "docs/portable/RAHM/CURRENT-061-OVERLAY-MANIFEST.json",
   "checkpoint": "G6IP-CURRENT-062-20261025",
-  "purpose": "Incremental continuity inventory for CURRENT-062, current input/output recovery pointers, the portable conformance workflow and the main export manifest. The parent overlay retains the prototype/adoption artifacts. This is not itself a complete release package.",
+  "purpose": "Incremental implementation overlay: current Point 0 chain, living mother/index/queue, conformance workflow, export manifest and executable local continuity runtime. Not a substitute for the parent export package.",
   "digest_policy": "git_blob_sha is Git blob SHA-1. sha256 stays null pending a fresh strict conformance workflow. External-host/runtime acceptance is not inferred.",
   "files": [
     {
       "path": "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-011-OPEN-GAPS-AND-CONTINUITY.md",
-      "git_blob_sha": "3d860962f306b205b56f94b037d518349bc57a48",
+      "git_blob_sha": "efe75cdffd533a524a22845fc881ea7b39b42712",
       "sha256": null
     },
     {
@@ -24,12 +24,12 @@
     },
     {
       "path": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-062-OPEN-GAPS-AND-CONTINUITY.md",
-      "git_blob_sha": "91a6b76a2eb3eac04ded5760d8b8aada5cbe0f49",
+      "git_blob_sha": "aa83ccad913aed3793bb61883bc1190e4bbf31d8",
       "sha256": null
     },
     {
       "path": "docs/architecture/BEHAVIOR-TRACE/EVT-0164-OPEN-GAPS-AND-CONTINUITY-2026-10-25.md",
-      "git_blob_sha": "f66cb3c5822aa7d941dcb36167944466968b3654",
+      "git_blob_sha": "e1c60fe139b4a15b60e37f143e4557f31a4c8894",
       "sha256": null
     },
     {
@@ -39,17 +39,17 @@
     },
     {
       "path": "docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md",
-      "git_blob_sha": "ab351254fe8fd4b287ff4d41549022a312f46d27",
+      "git_blob_sha": "764665a3970c2550c803a2dad822137fc6c2a5b3",
       "sha256": null
     },
     {
       "path": "docs/REFERENCE_INDEX.md",
-      "git_blob_sha": "80e14a7bcf1ed9ea040a17a1b1b2ff2286c93158",
+      "git_blob_sha": "90c19316a747c2cdea5775d82aea513eb473ec27",
       "sha256": null
     },
     {
       "path": "docs/architecture/INTEGRATION-QUEUE/README.md",
-      "git_blob_sha": "27eca8eeeb92ff7b2b10ca4803383c69cd3476c5",
+      "git_blob_sha": "805135bab2dc7f962742b36b932d9c26472096ae",
       "sha256": null
     },
     {
@@ -59,20 +59,35 @@
     },
     {
       "path": ".github/workflows/rahm-portable-conformance.yml",
-      "git_blob_sha": "77bee18d877ad0577145f509659122dad03c3214",
+      "git_blob_sha": "bdb5382770ad2103361e386001ac44c11a77a277",
       "sha256": null
     },
     {
       "path": "docs/portable/RAHM/EXPORT_MANIFEST.json",
-      "git_blob_sha": "540e049bc7c6bb616d319f268846590b4324c67c",
+      "git_blob_sha": "0948c28d68930c5bf9e4b053e017b94bbe0d77de",
+      "sha256": null
+    },
+    {
+      "path": "scripts/haif-runtime/haif_runtime.py",
+      "git_blob_sha": "5b5b843130f68453fd51f1d88570571ed2395435",
+      "sha256": null
+    },
+    {
+      "path": "scripts/haif-runtime/tests/test_runtime.py",
+      "git_blob_sha": "5623eec8412a2f6bf599103559639ce56f09445e",
+      "sha256": null
+    },
+    {
+      "path": "scripts/haif-runtime/README.md",
+      "git_blob_sha": "80e5343f3fcc1b471fb6e746fcdf5bbea0f60cfd",
       "sha256": null
     }
   ],
   "release_gates": [
-    "Independently fetch all 12 listed files after this manifest update and compare Git blob SHA-1 values.",
-    "Run current strict portable conformance workflow and read back the actual result for the latest main commit.",
+    "Independently fetch all listed files after this manifest update and compare Git blob SHA-1 values.",
+    "Run the current strict portable conformance workflow and read back the actual result for the latest main commit.",
     "Record exact-byte SHA-256 values and archive hash from the current workflow evidence.",
-    "Fetch and inspect package and recovery evidence artifacts.",
+    "Fetch and inspect the package and recovery evidence artifacts.",
     "Do not infer independent-host or runtime acceptance from repository CI."
   ]
 }
