@@ -1842,3 +1842,10 @@ Next execution remains attached to existing [NEXT-051](../../0.0/anchors/PALANG-
 - Canonical source unchanged; Library version 7 read-back is the source plus one trailing newline; identity fields, next-action chain and destination statuses match. No write was required.
 - This is an auxiliary destination-evidence event, not a replacement NEXT task. CURRENT-064 remains the current point and NEXT-051 remains the active graph-triage/clean-host-recovery work item.
 - Issue #20 runtime/clean-host recovery and Issue #21 historic source/rule census remain OPEN. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external recovery NOT RUN.
+
+
+## CURRENT-065 — Point 0/014 continuity queue
+
+- Point: [POINT-0/014](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-014-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md)
+- Checkpoint: [CURRENT-065](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-065-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md)
+- Next work: execute runtime tests; run clean export/import recovery; continue NEXT-051 occurrence-level graph review; inspect current CI/artifact receipt; reconcile package manifests. Keep external host, restart durability and background capture open until directly tested.
