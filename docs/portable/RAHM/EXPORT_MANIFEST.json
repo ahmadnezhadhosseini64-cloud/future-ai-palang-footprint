@@ -1,8 +1,8 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.5.4",
-  "manifest_status": "ALL_51 EXACT-BYTE DIGESTS POPULATED; STRICT CONFORMANCE AND PACKAGE BUILD ARE ENFORCED ON EACH MANIFEST UPDATE",
-  "created_from_checkpoint": "G6IP-RAHM-CURRENT-058-20261024",
+  "version": "1.5.5",
+  "manifest_status": "CURRENT-059 chain registered; exact-byte digest/package workflow required on this revision",
+  "created_from_checkpoint": "G6IP-RAHM-CURRENT-059-20261025",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [
     {
@@ -317,7 +317,7 @@
     "persistent_memory": "NOT_VERIFIED",
     "idle_background_execution": "NOT VERIFIED",
     "cross_host": "NOT_RUN",
-    "exact_byte_sha256": "Strict exact-byte comparison is enforced on each manifest update; use the latest Portable RAHM Conformance workflow run as the authoritative current receipt.",
+    "exact_byte_sha256": "PENDING_FRESH_STRICT_WORKFLOW",
     "schema_valid_fixture": "The strict workflow must accept the valid fixture with 0 errors; inspect latest workflow run for current receipt.",
     "schema_invalid_fixture": "The strict workflow must reject the invalid fixture (expected 4 errors); inspect latest workflow run for current receipt.",
     "IN_OUT_recovery_equivalence": "Limited link/checkpoint equivalence is tested in the strict workflow; full current repository-state recovery is verified by Living Architecture Audit run history.",
@@ -326,12 +326,14 @@
     "persistence_restart": "NOT VERIFIED",
     "canonical_mother_index_queue_integration": "CURRENT-057 chain and all target mothers/index/queue updated; focused link fixes applied; final read-back/digest workflow running",
     "schema_workflow_overall": "PASS_RUN_40122001572",
-    "portable_package_build": "Every successful strict run builds and publishes a portable archive; use the latest run's artifact and emitted archive SHA-256.",
-    "full_state_recovery": "OPEN / NOT RUN",
+    "portable_package_build": "PENDING_FRESH_STRICT_WORKFLOW",
+    "full_state_recovery": "PASS_RUN_40129551204_REPOSITORY_SCOPE_ONLY",
     "focused_relative_link_audit": "Latest observed audit: zero missing Markdown links; inspect latest Living Architecture Audit run for current receipt.",
-    "repository_graph_audit": "Latest observed audit has zero missing Markdown links but unresolved identifier/parent/timestamp findings; content status remains REVIEW_REQUIRED until individually adjudicated.",
-    "current_checkpoint": "CURRENT-058",
-    "next_action": "NEXT-051"
+    "repository_graph_audit": "REVIEW_REQUIRED",
+    "current_checkpoint": "CURRENT-059",
+    "next_action": "NEXT-051",
+    "last_user_point": "POINT-0/008",
+    "latest_interaction_chain": "POINT-0/008 -> IN-052 -> OUT-051 -> EVT-0161 -> CURRENT-059 -> NEXT-051"
   },
-  "note": "The v1.4.5 strict run passed all 43 manifest file digests, valid/invalid schema fixtures, limited IN/OUT checkpoint-link equivalence and archive construction. The latest structural audit remains REVIEW_REQUIRED with 16 missing links and unresolved identifier/parent conflicts. This v1.4.6 metadata-only revision triggers a fresh run; independent AI-host import, full canonical-state recovery, persistence restart and idle/background execution remain OPEN / NOT VERIFIED."
+  "note": "CURRENT-059 introduces Point 0/008 and no-silent-gap continuity. Do not declare this manifest byte-verified until the strict workflow passes on this exact revision. CI does not prove independent AI-host import, durable memory, automatic capture or background execution."
 }
