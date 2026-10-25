@@ -239,6 +239,9 @@ jobs:
           python3 -m json.tool prototype/haif-gpt6-starter/manifest.json >/dev/null
           python3 -m json.tool prototype/haif-gpt6-starter/state.schema.json >/dev/null
           echo "HAIF_GPT6_STARTER_ENGINE_TESTS=PASS"
+          mkdir -p audit-output
+          zip -r audit-output/haif-gpt6-starter-v0.1.zip prototype/haif-gpt6-starter
+          sha256sum audit-output/haif-gpt6-starter-v0.1.zip | tee audit-output/haif-gpt6-starter-zip-sha256.txt
 
       - name: Upload inspectable audit evidence
         if: always()
