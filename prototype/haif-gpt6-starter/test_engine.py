@@ -9,7 +9,7 @@ from pathlib import Path
 from engine import (
     add_gap, audit, close_gap, decide_child, export_bundle, import_bundle,
     new_state, propose_child, record_interaction, save_state, load_state,
-    verify_state, digest, payload,
+    verify_state, digest, payload, register_point,
 )
 
 
@@ -30,6 +30,28 @@ class HaifStarterEngineTests(unittest.TestCase):
         bad = copy.deepcopy(state)
         bad["events"][0]["output"] = "tampered"
         self.assertTrue(any("event_hash mismatch" in e for e in verify_state(bad)))
+
+    def test_zero_plus_is_a_marker_on_the_same_canonical_zero_point(self):
+        state = new_state()
+        root = register_point(state, "HAIF-POINT-0-PLUS-20261025", ["0", "0+"],
+                              kind="ROOT", production_marker=True,
+                              purpose="Important initial architecture package")
+        next_point = register_point(state, "HAIF-POINT-0-0-20261025", ["0.0"],
+                                    kind="CONTINUATION", parent_point_id=root["point_id"],
+                                    purpose="Next execution checkpoint")
+        self.assertEqual(root["point_id"], state["points"][0]["point_id"])
+        self.assertEqual(state["points"][0]["labels"], ["0", "0+"])
+        self.assertEqual(next_point["parent_point_id"], root["point_id"])
+        self.assertEqual(verify_state(state), [])
+
+    def test_zero_plus_cannot_be_a_separate_canonical_point(self):
+        state = new_state()
+        with self.assertRaises(ValueError):
+            register_point(state, "HAIF-POINT-0-PLUS", ["0+"], production_marker=True)
+        root = register_point(state, "HAIF-POINT-0", ["0", "0+"], production_marker=True)
+        with self.assertRaises(ValueError):
+            register_point(state, "HAIF-POINT-0-PLUS-SECOND", ["0+"], kind="CONTINUATION",
+                           parent_point_id=root["point_id"], production_marker=True)
 
     def test_duplicate_input_or_output_ids_are_rejected_even_with_valid_hash(self):
         state = new_state()
