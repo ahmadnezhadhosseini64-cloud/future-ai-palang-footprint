@@ -1,7 +1,7 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.7.4",
-  "manifest_status": "CURRENT-064 + CURRENT-063 + HAIF-RUNTIME-0.1; CURRENT-064 OVERLAY INVENTORY INCLUDED; CURRENT WORKFLOW RECEIPT REQUIRED",
+  "version": "1.7.5",
+  "manifest_status": "CURRENT-065 chain included; SHA-256 and execution receipts pending",
   "created_from_checkpoint": "G6IP-CURRENT-064-20261025 + HAIF-RUNTIME-0.1",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [
@@ -274,6 +274,36 @@
       "version": "1.0.0",
       "git_blob_sha": "391e19a71b89c2d3008e434a6697a0b7ed5dd8c8",
       "sha256": null
+    },
+    {
+      "path": "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-014-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md",
+      "version": "1.0.0",
+      "git_blob_sha": "628104c377e61f82e64553fbf8c814f57b591a7e",
+      "sha256": null
+    },
+    {
+      "path": "docs/0.0/anchors/PALANG-0.0-IN-20261025-058-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md",
+      "version": "1.0.0",
+      "git_blob_sha": "8fa4e9bb54c80b320a80a29eb7a5513a6242ccdd",
+      "sha256": null
+    },
+    {
+      "path": "docs/0.0/anchors/PALANG-0.0-OUT-20261025-057-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md",
+      "version": "1.0.0",
+      "git_blob_sha": "7ae954c810ba33c8af50a5e593b0248272456172",
+      "sha256": null
+    },
+    {
+      "path": "docs/architecture/BEHAVIOR-TRACE/EVT-0167-AUTONOMOUS-CONTINUITY-AND-RECOVERY-2026-10-25.md",
+      "version": "1.0.0",
+      "git_blob_sha": "4cb182ee51e14f02c9ea649cf4cddc27e602df0b",
+      "sha256": null
+    },
+    {
+      "path": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-065-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md",
+      "version": "1.0.0",
+      "git_blob_sha": "026b5f3d3fd26c2fe940952eeb6d3f07bce899b7",
+      "sha256": null
     }
   ],
   "manifest_itself": {
@@ -323,7 +353,7 @@
     "local_runtime": "Dependency-free Python runtime added: init, append IN/OUT with hash chain, verify, checkpoint, export, import into new target, tamper rejection and no-overwrite. Automated tests are wired into portable conformance; result for the final commit is pending.",
     "local_runtime_acceptance": "SOURCE COMMITTED; CURRENT-064 IN/OUT verifier and queue runtime links corrected; current-commit audit receipt pending. Clean local environment and external-host acceptance remain separate."
   },
-  "note": "This manifest now carries both the prototype/adoption work from CURRENT-061 and the new CURRENT-062 continuity chain. A push should trigger conformance; only the resulting current-commit receipt can prove exact-byte digests and archive build. External-host/runtime acceptance remains separate.\nCURRENT-064 adds POINT-0/013 → IN-057 → OUT-056 → EVT-0166 → CURRENT-064. SHA-256 values for the new files remain null until an actual successful workflow computes exact-byte digests; do not treat null as verified.\nCURRENT-064 overlay inventory path is included in live references. New-chain exact-byte SHA-256 values remain null pending an actual workflow artifact; null values are not verification.\nCURRENT-064 Git blob SHA-1 was refreshed after fixing runtime relative links; exact-byte SHA-256 remains null until a real workflow receipt.\nCURRENT-064 parent surface blob pins refreshed after living-mother/index/queue version updates. Exact-byte SHA-256 values remain dependent on the next actual conformance workflow artifact.\nEVT-0167 records a successful source/Library mirror recheck: source blob unchanged; Library version 7 differs by one trailing newline and matches all identity/status fields; no write was required. EVT-0168 preserves the subsequent Living Architecture Audit failure and root cause. The current-chain verifier now targets POINT-0/013 → IN-057 → OUT-056 → EVT-0166 → CURRENT-064 and the CURRENT-064 overlay manifest; three incorrect queue-relative runtime links were corrected. The fresh exact-commit audit/conformance result must be read back; the earlier failed run remains historical evidence.\n",
+  "note": "This manifest now carries both the prototype/adoption work from CURRENT-061 and the new CURRENT-062 continuity chain. A push should trigger conformance; only the resulting current-commit receipt can prove exact-byte digests and archive build. External-host/runtime acceptance remains separate.\nCURRENT-064 adds POINT-0/013 → IN-057 → OUT-056 → EVT-0166 → CURRENT-064. SHA-256 values for the new files remain null until an actual successful workflow computes exact-byte digests; do not treat null as verified.\nCURRENT-064 overlay inventory path is included in live references. New-chain exact-byte SHA-256 values remain null pending an actual workflow artifact; null values are not verification.\nCURRENT-064 Git blob SHA-1 was refreshed after fixing runtime relative links; exact-byte SHA-256 remains null until a real workflow receipt.\nCURRENT-064 parent surface blob pins refreshed after living-mother/index/queue version updates. Exact-byte SHA-256 values remain dependent on the next actual conformance workflow artifact.\nEVT-0167 records a successful source/Library mirror recheck: source blob unchanged; Library version 7 differs by one trailing newline and matches all identity/status fields; no write was required. EVT-0168 preserves the subsequent Living Architecture Audit failure and root cause. The current-chain verifier now targets POINT-0/013 → IN-057 → OUT-056 → EVT-0166 → CURRENT-064 and the CURRENT-064 overlay manifest; three incorrect queue-relative runtime links were corrected. The fresh exact-commit audit/conformance result must be read back; the earlier failed run remains historical evidence.\n\nCURRENT-065 Point 0/014 chain paths added. SHA-256 values remain null until exact-byte digest evidence is available from an actual workflow.",
   "live_reference_files": [
     "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-008-DEEP-AUDIT-AND-NO-SILENT-GAP.md",
     "docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-059-DEEP-AUDIT-AND-CORRECTED-CONFORMANCE.md",
@@ -371,7 +401,12 @@
     "docs/0.0/anchors/PALANG-0.0-OUT-20261025-056-NEXT-EXECUTION-AND-GAPS.md",
     "docs/architecture/BEHAVIOR-TRACE/EVT-0166-CURRENT-INTERACTION-AND-NEXT-EXECUTION-2026-10-25.md",
     "docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-064-NEXT-EXECUTION-AND-GAPS.md",
-    "docs/portable/RAHM/CURRENT-064-OVERLAY-MANIFEST.json"
+    "docs/portable/RAHM/CURRENT-064-OVERLAY-MANIFEST.json",
+    "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-014-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md",
+    "docs/0.0/anchors/PALANG-0.0-IN-20261025-058-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md",
+    "docs/0.0/anchors/PALANG-0.0-OUT-20261025-057-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md",
+    "docs/architecture/BEHAVIOR-TRACE/EVT-0167-AUTONOMOUS-CONTINUITY-AND-RECOVERY-2026-10-25.md",
+    "docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-065-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md"
   ],
   "live_reference_policy": "Mutable current-state and startup/governance references are included in each export and receive exact SHA-256 plus Git blob SHA-1 observations in the same CI run. This includes RAHM_BOOT and RAHM_ARCHITECTURE because their canonical checkpoint binding must track the current live chain. Stable core remains digest-pinned."
 }
