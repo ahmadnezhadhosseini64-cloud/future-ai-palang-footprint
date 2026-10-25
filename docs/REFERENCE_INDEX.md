@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-25 — CURRENT-063 / POINT-0-012; executable local continuity runtime linked to mother/index/queue; runtime CI result pending; NEXT-051 remains active/open.
+**Last Updated:** 2026-10-25 — CURRENT-064 / POINT-0-013; interaction chain and open gates linked; runtime execution evidence pending; NEXT-051 remains active/open.
 
 ## Canonical References
 
