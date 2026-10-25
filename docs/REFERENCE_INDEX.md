@@ -1493,3 +1493,13 @@ Current continuation chain: POINT-0/013 → IN-057 → OUT-056 → EVT-0166 → 
 - Event: [EVT-0184](architecture/BEHAVIOR-TRACE/EVT-0184-INITIAL-MODEL-COMPLETION-GATE-2026-10-25.md).
 - Parent: POINT-0/020. Active queue: NEXT-051.
 - Status: repository registration; not a claim of model completion. Current-head CI, canonical pointer adjudication, historical graph review and external-host gates remain separately tracked.
+
+
+## POINT-0/022 — executable GPT-6 portable starter
+
+- Root: [POINT-0/022](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-022-PORTABLE-STARTER-ENGINE.md).
+- IN/OUT: [IN-052](0.0/anchors/PALANG-0.0-IN-20261025-052-PORTABLE-STARTER-ENGINE.md) / [OUT-052](0.0/anchors/PALANG-0.0-OUT-20261025-052-PORTABLE-STARTER-ENGINE.md).
+- Event: [EVT-0185](architecture/BEHAVIOR-TRACE/EVT-0185-PORTABLE-HAIF-GPT6-STARTER-ENGINE-2026-10-25.md).
+- Execution checkpoint: [CURRENT-069](0.0/anchors/PALANG-0.0-CURRENT-20261025-069-PORTABLE-STARTER-ENGINE-AND-GATE-CLOSURE.md).
+- Executable starter: [README](../prototype/haif-gpt6-starter/README.md), [engine](../prototype/haif-gpt6-starter/engine.py), [GPT-6 host instructions](../prototype/haif-gpt6-starter/GPT6_HOST_INSTRUCTIONS.md).
+- Status: seven unit tests and clean-process round-trip passed on tested SHA f482083cc2aeab82964c271c5d97ba4bb8657ce1; follow-up audit and portable conformance passed on tested SHA 99479872acaede69679b13273e37b9ca51f35ea5. External-host import remains unproven.
