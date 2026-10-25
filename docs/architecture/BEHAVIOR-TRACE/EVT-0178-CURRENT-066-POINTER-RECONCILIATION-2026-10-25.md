@@ -1,9 +1,11 @@
-# EVT-0178 — CURRENT-066 Pointer Reconciliation
+> **QUARANTINE NOTICE — EVENT-NUMBER COLLISION (2026-10-25).** This file was drafted with the number EVT-0178 before the current main branch's canonical [EVT-0178 — Unified Palang Architecture Hard Audit](./EVT-0178-UNIFIED-PALANG-ARCHITECTURE-HARD-AUDIT-2026-10-25.md) was observed. It is preserved as a non-authoritative collision artifact, not as the canonical EVT-0178. The draft recommendation below to promote CURRENT-066 is **NOT ADOPTED**; the CURRENT-065/CURRENT-066 pointer conflict remains OPEN. See [EVT-0179](./EVT-0179-UNIQUE-ID-COLLISION-AND-POINTER-RECONCILIATION-2026-10-25.md).
+
+# QUARANTINED DRAFT — CURRENT-066 Pointer Reconciliation (original EVT-0178 number preserved as collision evidence)
 
 - Stable ID: HAIF-EVT-0178-CURRENT-066-POINTER-RECONCILIATION-2026-10-25
 - Production ID: HAIF-P0-CURRENT-066-RECONCILIATION-20261025
 - Version: 1.0.0
-- Status: REGISTERED; pointer reconciliation is being applied additively; exact-current-main audit remains NOT VERIFIED.
+- Status: QUARANTINED / DUPLICATE EVENT NUMBER; NOT CANONICAL EVT-0178; no current-pointer adjudication is authorized by this file.
 - Related user-turn point: [POINT-0/016](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-016-MIRROR-DELTA-AND-ARCHITECTURE-RECOVERY.md).
 - Current execution checkpoint evidence: [CURRENT-066](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-066-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md).
 - Active next work: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).

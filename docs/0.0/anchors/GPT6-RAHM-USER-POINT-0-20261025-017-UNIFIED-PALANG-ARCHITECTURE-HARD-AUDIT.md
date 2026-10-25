@@ -54,3 +54,7 @@ H. No external capability is called verified without independent external eviden
 ## Canonical continuation
 
 Continue from the existing NEXT-051 queue. This point is a user-interaction root and audit overlay, not a replacement execution checkpoint and not permission to mint NEXT-052. Merge all findings into the original Future AI / Palang Footprint architecture and its living mother reference.
+
+
+## Registration collision follow-up — EVT-0179
+- [EVT-0179](../../architecture/BEHAVIOR-TRACE/EVT-0179-UNIQUE-ID-COLLISION-AND-POINTER-RECONCILIATION-2026-10-25.md) records and quarantines an accidental duplicate EVT-0178-numbered pointer draft. Canonical EVT-0178 remains this point's unified hard-audit event. CURRENT-065/CURRENT-066 pointer conflict remains OPEN; no promotion is inferred.

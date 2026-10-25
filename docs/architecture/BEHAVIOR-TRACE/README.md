@@ -700,3 +700,8 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 ## EVT-0178 — unified Palang architecture hard audit
 - [EVT-0178](./EVT-0178-UNIFIED-PALANG-ARCHITECTURE-HARD-AUDIT-2026-10-25.md) records POINT-0/017, the one-project invariant, CURRENT-065/CURRENT-066 pointer conflict, verifier/manifest scope mismatch, identity-overlap risks and open gates.
 - The related user point is [POINT-0/017](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-017-UNIFIED-PALANG-ARCHITECTURE-HARD-AUDIT.md); all historical points remain preserved.
+
+
+## EVT-0179 — unique event-number collision record
+- [EVT-0179](./EVT-0179-UNIQUE-ID-COLLISION-AND-POINTER-RECONCILIATION-2026-10-25.md) documents the duplicate EVT-0178-numbered draft, quarantines it without deletion, and preserves the CURRENT-065/CURRENT-066 pointer conflict for the canonical hard audit.
+- Canonical event 0178 remains [EVT-0178 — Unified Palang Architecture Hard Audit](./EVT-0178-UNIFIED-PALANG-ARCHITECTURE-HARD-AUDIT-2026-10-25.md).

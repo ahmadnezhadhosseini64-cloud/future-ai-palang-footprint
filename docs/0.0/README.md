@@ -1493,3 +1493,8 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - Event: [EVT-0178](../architecture/BEHAVIOR-TRACE/EVT-0178-UNIFIED-PALANG-ARCHITECTURE-HARD-AUDIT-2026-10-25.md).
 - Living master updated with the one-project invariant and current-pointer/verifier-manifest mismatch findings.
 - IMPORTANT: POINT-0/017 is the current user-turn root; it does not replace the execution checkpoint. Reconcile conflicting CURRENT-065 vs CURRENT-066 declarations from evidence. Preserve NEXT-051 as the active existing queue until acceptance; do not create NEXT-052 as a placeholder.
+
+
+## EVT-0179 — registration collision follow-up (2026-10-25)
+- [EVT-0179](../architecture/BEHAVIOR-TRACE/EVT-0179-UNIQUE-ID-COLLISION-AND-POINTER-RECONCILIATION-2026-10-25.md) preserves the duplicate EVT-0178-numbered draft as a quarantined artifact and points to canonical [EVT-0178](../architecture/BEHAVIOR-TRACE/EVT-0178-UNIFIED-PALANG-ARCHITECTURE-HARD-AUDIT-2026-10-25.md).
+- POINT-0/017 is the current user-turn root. CURRENT-065 versus CURRENT-066 remains unresolved by design until the unified hard audit adjudicates it; NEXT-051 remains the active queue.

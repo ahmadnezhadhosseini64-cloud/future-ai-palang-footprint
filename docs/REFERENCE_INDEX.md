@@ -1443,3 +1443,5 @@ Current continuation chain: POINT-0/013 → IN-057 → OUT-056 → EVT-0166 → 
 
 | HAIF-POINT-0-017-UNIFIED-PALANG-HARD-AUDIT-20261025 | `docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-017-UNIFIED-PALANG-ARCHITECTURE-HARD-AUDIT.md` | User's new audit point; one-project invariant, pointer conflict, verifier/manifest scope, identity overlap and external-proof boundaries | Registered; read-back pending |
 | HAIF-EVT-0178-UNIFIED-PALANG-HARD-AUDIT-20261025 | `docs/architecture/BEHAVIOR-TRACE/EVT-0178-UNIFIED-PALANG-ARCHITECTURE-HARD-AUDIT-2026-10-25.md` | Hard-audit event and ordered remediation gates | Registered; read-back pending |
+
+| HAIF-EVT-0179-UNIQUE-ID-COLLISION-AND-POINTER-RECONCILIATION-2026-10-25 | `docs/architecture/BEHAVIOR-TRACE/EVT-0179-UNIQUE-ID-COLLISION-AND-POINTER-RECONCILIATION-2026-10-25.md` | Preserves and quarantines duplicate EVT-0178-numbered draft; keeps CURRENT-065/CURRENT-066 pointer conflict open | Registered; canonical EVT-0178 remains the unified hard-audit event; no pointer promotion inferred |
