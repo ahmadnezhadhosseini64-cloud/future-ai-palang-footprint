@@ -7,6 +7,9 @@
 - Chain: [IN-057](./PALANG-0.0-IN-20261025-057-CURRENT-INTERACTION-AND-LIVING-CONTINUITY.md) → [OUT-056](./PALANG-0.0-OUT-20261025-056-NEXT-EXECUTION-AND-GAPS.md) → [EVT-0166](../../architecture/BEHAVIOR-TRACE/EVT-0166-CURRENT-INTERACTION-AND-NEXT-EXECUTION-2026-10-25.md) → CURRENT-064.
 - Previous checkpoint: [CURRENT-063](./PALANG-0.0-CURRENT-20261025-063-EXECUTABLE-ARCHITECTURE.md).
 - Living mother: [HAIF Initial Model Master Reference](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md).
+- Canonical index: [REFERENCE_INDEX](../../REFERENCE_INDEX.md).
+- Integration queue: [INTEGRATION-QUEUE](../../architecture/INTEGRATION-QUEUE/README.md).
+- Current overlay manifest: [CURRENT-064-OVERLAY-MANIFEST](../../portable/RAHM/CURRENT-064-OVERLAY-MANIFEST.json).
 - Existing active graph audit: [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - Runtime: [source](../../../scripts/haif-runtime/haif_runtime.py); [tests](../../../scripts/haif-runtime/tests/test_runtime.py); [runbook](../../../scripts/haif-runtime/README.md).
 - Status: POINT REGISTERED; verification of changed surfaces pending; execution gates remain OPEN until actual evidence.
