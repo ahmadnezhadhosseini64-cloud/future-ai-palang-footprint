@@ -70,3 +70,17 @@ The earlier CURRENT-069 evidence update commit 4a6500bff8c89beb339c88322fff93672
 | Integration queue index | cd2ade83e08b718992eb0d94ed2730037ffaa980 | 2026-10-25T13:44:52Z | 2026-10-25T17:14:52+03:30 |
 
 The exact user-message timestamp remains UNKNOWN / UNVERIFIED.
+
+
+## Latest exact-content verification and living reference updates
+
+| Item | Commit / run | Repository time UTC | Asia/Tehran (+03:30) | Status |
+|---|---|---|---|---|
+| Tested content revision | ca3745072a35cdca8db74cd62bf8ee07b23c45b3 | 2026-10-25T13:45:28Z | 2026-10-25T17:15:28+03:30 | audited |
+| Living Architecture Audit | 40199078903 | 2026-10-25T13:45:30Z | 2026-10-25T17:15:30+03:30 | SUCCESS |
+| Portable RAHM Conformance | 40199078860 | 2026-10-25T13:45:30Z | 2026-10-25T17:15:30+03:30 | SUCCESS |
+| CURRENT-069 receipt update | a84efa2f326d76559883f8c7f87ca0a4bf87d9e1 | 2026-10-25T13:46:21Z | 2026-10-25T17:16:21+03:30 | registered |
+| EVT-0185 receipt update | 9ec55d5319b51163428aeff11664dabd93f4ee75 | 2026-10-25T13:46:34Z | 2026-10-25T17:16:34+03:30 | registered |
+| Living master update | 3b5cf767fdb9caf5b5800996672ab5bc4fc88d66 | 2026-10-25T13:46:47Z | 2026-10-25T17:16:47+03:30 | registered |
+
+The user-message timestamp remains UNKNOWN / UNVERIFIED.
