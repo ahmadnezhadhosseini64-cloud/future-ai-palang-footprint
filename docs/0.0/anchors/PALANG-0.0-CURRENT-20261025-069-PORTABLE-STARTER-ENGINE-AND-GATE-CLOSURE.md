@@ -43,3 +43,16 @@
 ## Honest acceptance boundary
 
 The starter can be called a local executable prototype only after its tests pass on the exact revision and its portable bundle round-trip passes. It cannot be called a deployed GPT plugin unless a real GPT-host integration is implemented and tested. No background work is claimed.
+
+
+## Evidence update — starter tests actually run
+
+- [x] Living Architecture Audit run [40198249728](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40198249728) completed SUCCESS on tested content SHA \`4dce5e5a919499a9d016b4949c3968e339e8fd7c\`.
+- [x] Six HAIF starter unit tests passed; Python compilation and JSON validation for manifest/schema passed.
+- [x] ZIP generated: \`haif-gpt6-starter-v0.1.zip\`, runner SHA-256 \`f3dc8dde73107d5fd2f8695435d64a86ef7697e0c21d7cf6512d5c888e9c98fc\`; workflow artifact ID \`12600178291\`.
+- [ ] Download the workflow artifact and independently inspect the ZIP contents.
+- [ ] Perform clean-process CLI export/import round-trip from the actual ZIP.
+- [ ] Use in a real GPT-6 host; if no native file/connector execution route is available, preserve NOT RUN / NOT VERIFIED.
+- [ ] Continue CURRENT-065/CURRENT-066 adjudication and NEXT-051 graph work.
+
+A separate Portable RAHM Conformance run [40198220828](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40198220828) failed its exact-byte manifest inventory SHA scan. This remains an open repository-integrity issue; the starter test PASS does not close it.
