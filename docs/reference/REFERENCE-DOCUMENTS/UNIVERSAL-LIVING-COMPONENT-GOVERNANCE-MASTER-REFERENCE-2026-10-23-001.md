@@ -386,3 +386,9 @@ SCRTC-B3 is a source-backed partial mapping. Full tree/history census and confli
 - Scope is this exact Library artifact only. Buffer/Persistent Memory are NOT VERIFIED; Dropbox is OPEN / NOT VERIFIED; external end-to-end recovery is NOT RUN.
 - Continuity reconciliation: current main queue/index identify CURRENT-064 / NEXT-051 as the active route. CURRENT-036 / NEXT-036 remain historical preserved checkpoints. This operational receipt does not replace the full historic census under Issue #21 or runtime/clean-host acceptance under Issue #20.
 - This is an append-only operational evidence addendum; it does not alter the governance rules or claim a new architecture capability version.
+
+
+## Recovery gate failure and correction lineage — EVT-0168
+- [EVT-0168](../../architecture/BEHAVIOR-TRACE/EVT-0168-LIVING-ARCHITECTURE-AUDIT-FAILURE-AND-ROOT-CAUSE-2026-10-25.md) preserves a real failed audit result rather than allowing an equivalent-but-blocked IN/OUT state to appear successful.
+- The failure exposed stale test-chain/manifest assumptions and three incorrect repository-relative runtime links. Corrective work is bounded to the verifier's current-chain binding and those links; historical CURRENT-059 records remain preserved.
+- A fresh run on the corrected commit must be inspected before promoting the gate. Issue #20 runtime/clean-host acceptance and Issue #21 full source census remain OPEN.
