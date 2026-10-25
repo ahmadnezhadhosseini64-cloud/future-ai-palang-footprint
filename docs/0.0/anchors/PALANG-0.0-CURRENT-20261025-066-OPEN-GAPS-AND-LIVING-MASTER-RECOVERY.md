@@ -33,3 +33,8 @@ Given POINT-0/015 or OUT-058 alone, a recovery procedure must locate the prior c
 
 ## Next action
 Continue NEXT-051 in this order: verify the current manifest and workflow receipt; run runtime tests; execute clean round-trip recovery; update parent surfaces and exact digest pins; then resume graph triage. No new NEXT is created here.
+
+
+## Verifier failure preserved — EVT-0175
+- [EVT-0175](../../architecture/BEHAVIOR-TRACE/EVT-0175-CURRENT-066-RECOVERY-VERIFIER-STALE-CHECKPOINT-2026-10-25.md) records the exact-revision audit failure: the verifier still expected CURRENT-065 while the overlay pointed to CURRENT-066.
+- Correction: verifier chain paths, stable IDs, gate markers and overlay checkpoint expectations are being advanced to CURRENT-066. A fresh exact-commit audit is required; no test gate is closed by the correction alone.
