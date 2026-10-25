@@ -3,7 +3,7 @@
 - Stable ID: HAIF-POINT-0-022-PORTABLE-STARTER-ENGINE-20261025
 - Production ID: HAIF-P0-022-20261025
 - Version: 1.0.0
-- Status: REGISTERED / LIVING / ACTIVE DEVELOPMENT / OPEN
+- Status: REGISTERED / LIVING / STARTER BUILT AND TESTED / REMAINING GATES OPEN
 - Parent: [POINT-0/021](./GPT6-RAHM-USER-POINT-0-20261025-021-INITIAL-MODEL-COMPLETION-GATE.md)
 - IN: [IN-052](./PALANG-0.0-IN-20261025-052-PORTABLE-STARTER-ENGINE.md)
 - OUT: [OUT-052](./PALANG-0.0-OUT-20261025-052-PORTABLE-STARTER-ENGINE.md)
@@ -18,7 +18,7 @@ Make this interaction a new Point 0; close CURRENT-068's open gates as far as ev
 
 ## Implementation started
 
-A runnable starter package is being built inside the canonical repository at prototype/haif-gpt6-starter/. It contains:
+A runnable starter package has been built inside the canonical repository at prototype/haif-gpt6-starter/ and its seven-test suite passed in CI and again after clean repackaging. It contains:
 - standard-library Python runtime;
 - independent anchor, IN, OUT and event IDs;
 - append-only hash-linked event records;
