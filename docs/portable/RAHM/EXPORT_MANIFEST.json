@@ -1,7 +1,7 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.7.1",
-  "manifest_status": "CURRENT-063 + HAIF-RUNTIME-0.1; NEW POINT-0/IN/OUT/EVT/CURRENT CHAIN INCLUDED; CURRENT WORKFLOW RECEIPT REQUIRED",
+  "version": "1.7.2",
+  "manifest_status": "CURRENT-063 + HAIF-RUNTIME-0.1; CURRENT-063 OVERLAY INVENTORY INCLUDED; CURRENT WORKFLOW RECEIPT REQUIRED",
   "created_from_checkpoint": "G6IP-CURRENT-063-20261025 + HAIF-RUNTIME-0.1",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [
@@ -283,7 +283,7 @@
     "latest_successful_living_architecture_audit": "40150704693",
     "manifest_model": "STABLE_CORE_PINNED_PLUS_LIVE_REFERENCES_HASHED_PER_RUN",
     "stable_core_count": 41,
-    "live_reference_count": 40,
+    "live_reference_count": 41,
     "independent_host_import": "NOT RUN",
     "second_host_import": "NOT RUN",
     "persistent_memory_restart": "NOT VERIFIED",
@@ -334,7 +334,8 @@
     "docs/0.0/anchors/PALANG-0.0-IN-20261025-056-EXECUTABLE-ARCHITECTURE.md",
     "docs/0.0/anchors/PALANG-0.0-OUT-20261025-055-EXECUTABLE-ARCHITECTURE.md",
     "docs/architecture/BEHAVIOR-TRACE/EVT-0165-EXECUTABLE-ARCHITECTURE-2026-10-25.md",
-    "docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-063-EXECUTABLE-ARCHITECTURE.md"
+    "docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-063-EXECUTABLE-ARCHITECTURE.md",
+    "docs/portable/RAHM/CURRENT-063-OVERLAY-MANIFEST.json"
   ],
   "live_reference_policy": "Mutable current-state and startup/governance references are included in each export and receive exact SHA-256 plus Git blob SHA-1 observations in the same CI run. This includes RAHM_BOOT and RAHM_ARCHITECTURE because their canonical checkpoint binding must track the current live chain. Stable core remains digest-pinned."
 }
