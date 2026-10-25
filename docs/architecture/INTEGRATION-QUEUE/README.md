@@ -3,13 +3,13 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.8.7
+- Version: 1.8.8
 - Date: 2026-10-20
 - Exact Time: 11:25 local project time, minute precision; exact seconds not captured.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: CURRENT-062 linked; local runtime implementation added; runtime CI and clean-host recovery pending; NEXT-051 remains OPEN/LIVING; no successor NEXT created to disguise unfinished work.
+- Status: CURRENT-063 linked; executable local runtime and test wiring added; CI and clean-host recovery pending; NEXT-051 remains OPEN/LIVING; no successor NEXT created to disguise unfinished work.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
@@ -19,6 +19,10 @@
 PENDING ≠ LOST (در انتظار ≠ گم‌شده). ثبت در این صف به معنی ادغام در معماری مادر نیست. هیچ موردی تا وقتی مقصد نهایی به‌روزرسانی، بازخوانی و تطبیق نشده، INTEGRATED / VERIFIED (یکپارچه‌شده / تأییدشده) اعلام نمی‌شود.
 
 ## 3. فهرست موارد
+
+| HAIF-CURRENT-063 | تبدیل معماری به برش اجرایی قابل‌آزمون؛ زنجیرهٔ POINT-0/012 → IN-056 → OUT-055 → EVT-0165 → CURRENT-063 | SOURCE REGISTERED / CI NOT VERIFIED — هستهٔ محلی، آزمون‌ها و runbook در مخزن هستند؛ اجرای CI و میزبان مستقل اثبات نشده | سند مادر، نمایه، صف NEXT-051، بستهٔ قابل‌حمل | [CURRENT-063](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-063-EXECUTABLE-ARCHITECTURE.md) · [Runtime](../../../scripts/haif-runtime/haif_runtime.py) · [Tests](../../../scripts/haif-runtime/tests/test_runtime.py) |
+
+
 
 | HAIF-RUNTIME-0.1 | ساخت هستهٔ اجرایی محلی: ثبت IN/OUT با زنجیرهٔ هش، نقطهٔ ادامه، اعتبارسنجی و انتقال JSON | IMPLEMENTED IN REPOSITORY / CI RESULT PENDING — کد و آزمون‌ها ثبت شده‌اند؛ اجرای گردش‌کار و آزمون محیط پاک هنوز باید از شاهد واقعی تأیید شود | سند مادر، CURRENT-062، گردش‌کار Portable RAHM | [کد اجرایی](../../scripts/haif-runtime/haif_runtime.py) · [آزمون‌ها](../../scripts/haif-runtime/tests/test_runtime.py) · [راهنما](../../scripts/haif-runtime/README.md) |
 
