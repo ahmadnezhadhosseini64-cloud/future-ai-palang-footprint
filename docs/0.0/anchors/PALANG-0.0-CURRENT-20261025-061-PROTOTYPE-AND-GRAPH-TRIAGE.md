@@ -2,7 +2,7 @@
 
 - Stable ID: G6IP-CURRENT-061-20261025
 - Production ID: G6IP-CURRENT-061
-- Version: 1.0.1
+- Version: 1.0.2
 - Parent: [CURRENT-060](./PALANG-0.0-CURRENT-20261025-060-CHAIN-RECOVERY-AUDIT.md)
 - User Point: [POINT-0/010](./GPT6-RAHM-USER-POINT-0-20261025-010-PROTOTYPE-GRAPH-CLOSURE.md)
 - Interaction chain: [IN-054](./PALANG-0.0-IN-20261025-054-PROTOTYPE-GRAPH-CLOSURE.md) → [OUT-053](./PALANG-0.0-OUT-20261025-053-PROTOTYPE-GRAPH-CLOSURE.md) → [EVT-0163](../../architecture/BEHAVIOR-TRACE/EVT-0163-PROTOTYPE-GRAPH-CLOSURE-2026-10-25.md) → CURRENT-061.
@@ -10,6 +10,7 @@
 - Subtasks preserved: [NEXT-039](./PALANG-0.0-NEXT-20261024-039-BUILD-INTERACTIVE-PROTOTYPE.md) and [NEXT-040](./PALANG-0.0-NEXT-20261024-040-FRESH-PROJECT-ADOPTION-TEST.md).
 - Initial-model mother: [HAIF initial-model master](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md).
 - Graph adjudication register: [AGACR](../../reference/REFERENCE-DOCUMENTS/ARCHITECTURE-GRAPH-ADJUDICATION-AND-CLOSURE-REGISTER-2026-10-25-001.md).
+- Overlay inventory: [CURRENT-061-OVERLAY-MANIFEST](../../portable/RAHM/CURRENT-061-OVERLAY-MANIFEST.json).
 
 ## Confirmed repository actions
 1. Prototype HTML source created with interaction, checkpoint, local state, JSON export/import and structural validation.
