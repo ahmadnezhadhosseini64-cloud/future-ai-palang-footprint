@@ -51,3 +51,14 @@ Continue NEXT-051 in this order: verify the current manifest and workflow receip
 - [Run 40170382405](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40170382405) passed the CURRENT-066 IN/OUT canonical-state reconstruction on SHA `b366166df47cdd6e6bbe29ce2cb0cfd768dccfdd`; IN and OUT both RECOVERED, canonical states equivalent, all six gates preserved OPEN.
 - The same audit reported REVIEW_REQUIRED for the wider graph and one ambiguous timestamp. Three EVT-0164 local links were corrected in commit `e91d5c77e955f7d1e8b1588703a09d95db187042`; audit of that newer exact revision is pending.
 - Artifact ZIP SHA-256: `b12332ff0bed16071342ae3bf52e305800c2b48defe80603b329aa834b5015ff`. This digest identifies the audit artifact, not a clean-host import.
+
+
+## Fresh post-fix audit — run 40170492367 (2026-10-25)
+- Tested commit: `e9e8ba6a4745b18632ef564cf4a64f537a8b2e59`.
+- IN/OUT canonical-state reconstruction: PASS; IN and OUT independently recovered equivalent state; all six gates remain OPEN. Run: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40170492367
+- Local Markdown link audit: 0 missing links across 6,218 edges; the three EVT-0164 links were corrected and the fresh audit confirms zero remaining broken local Markdown links.
+- Wider graph remains REVIEW_REQUIRED: 63 Stable-ID collision groups (62 unreviewed), 89 Production-ID collision groups, 7 Reference-ID collision groups, 37 event-number collision groups, 13 ambiguous parent edges.
+- Timestamp audit scanned 4,096 files; one ambiguous historical timestamp remains at EVT-0089 line 21 because its timezone cannot be safely inferred.
+- Portable conformance: exact-byte SHA-256 scan PASS; live-reference SHA-256 scan PASS; portable package build PASS. Package SHA-256: `1cd3f0aabed6991966e4e8881c365aafc644f11afb1fb7e08848d049475b00f3`. Conformance run: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40170492361
+- Audit artifact ZIP SHA-256: `e728314b02ab4315f8cf1687255bc7c717bcd46e163e07bc4cf05361e3879369`; artifact ID 12590125743.
+- Host adapter tests passed, but live ChatGPT producer remains NOT TESTED and repository write remains NOT IMPLEMENTED. Independent-host import, second-host import, restart persistence in a real host, idle/background execution and external storage remain OPEN / NOT PROVEN.
