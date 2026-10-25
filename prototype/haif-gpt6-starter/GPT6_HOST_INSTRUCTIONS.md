@@ -47,3 +47,16 @@ A GPT chat instruction or uploaded knowledge file cannot, by itself, create dura
 - Verify external-host import separately from CI Runtime A → Runtime B transfer.
 - Implement and test a real host adapter only when its interface and permissions are available.
 - Keep automatic capture, background execution, cross-device persistence and external writes OPEN until direct evidence exists.
+
+
+## Canonical point identity and the 0+ production marker
+- Treat `0` as the canonical point identity. `0+` is a special production marker/alias on that same point when a significant output is produced; never create a second root or duplicate point for `0+`.
+- The next execution step is a separate `0.0` continuation whose `parent_point_id` points to the canonical `0` point.
+- Preserve one canonical `point_id`; aliases cannot be reused by another point. A continuation must reference an existing parent.
+- Example:
+  ```bash
+  python3 engine.py --state ./haif-state.json point --point-id HAIF-POINT-0-024 --labels 0,0+ --kind ROOT --production-marker --purpose "Important portable starter architecture output"
+  python3 engine.py --state ./haif-state.json point --point-id HAIF-POINT-0-0-071 --labels 0.0 --kind CONTINUATION --parent-point-id HAIF-POINT-0-024 --purpose "Continue execution from the 0+ production root"
+  python3 engine.py --state ./haif-state.json audit
+  ```
+- The `point` command persists through atomic write and validated read-back. These instructions do not automatically run themselves; a host must actually provide Python execution and file access.
