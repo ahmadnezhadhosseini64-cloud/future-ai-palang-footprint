@@ -21,3 +21,10 @@ Hard-audit evidence: run [40213050985](https://github.com/ahmadnezhadhosseini64-
 - The verifier now reconciles every point record against the append-only `POINT_REGISTERED` event, rejects tampered point fields and requires continuation parents to precede their children (self-parenting is rejected).
 - Living Architecture Audit [40213463189](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40213463189): SUCCESS on `49485c593ebd6a3d115c05ddda8e8997b3c5138e`; 12/12 starter tests passed.
 - The release was then bumped to v0.2.1 (manifest and README). Exact release-head audit [40213697030](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40213697030) was still pending at the time of this entry.
+
+
+## Final v0.2.1 verification
+- Exact-head audit [40213760585](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40213760585) passed on `0819d97283d892411a6868c544e92752a8c35c55`; 12/12 tests passed.
+- Clean distribution and CLI smoke receipt: [EVT-0189](./EVT-0189-0PLUS-CLEAN-DISTRIBUTION-SMOKE-2026-10-25.md).
+- Clean ZIP SHA-256: `51a5f9a6def97a0564a8b6542bbf4a5b9ca46a81a267a4a02db7c53511e16f2d`.
+- Independent GPT-6 host import remains OPEN / NOT PROVEN.
