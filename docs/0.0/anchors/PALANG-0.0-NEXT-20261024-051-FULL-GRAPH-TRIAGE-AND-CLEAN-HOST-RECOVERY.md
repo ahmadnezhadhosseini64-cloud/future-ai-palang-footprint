@@ -106,6 +106,8 @@ NEXT-051 remains OPEN/LIVING until all remaining acceptance gates are satisfied;
 
 ## CURRENT-059 verified subgates — do not renumber the open work
 
+- Conformance and package verification are commit-scoped: the latest successful workflow run for the exact current commit is authoritative; older run IDs remain historical receipts.
+
 - [x] Current IN/OUT canonical repository-state recovery passed from IN-052 and OUT-051: [audit run 40150679142](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150679142). Both paths recovered equivalent CURRENT-059 state, zero verifier failures, all six open-gate categories preserved.
 - [x] Exact-byte digest comparison passed for all 62 manifest entries; schema valid=0 errors, invalid=4 errors and rejected; IN/OUT pointer recovery PASS; archive built (63 entries, 289,293 bytes, SHA-256 `b98b34876de35d2d4c3cc89ed95b637a36d32adfe251c62db7a79a2bb86606a3`) in [run 40150704716](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150704716).
 - [x] Link parser false-positive defect corrected: code examples in Python fixtures are no longer treated as document navigation links. [Audit run 40150679142](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150679142) reported zero missing local links in both structural Markdown scanning and the corrected historical graph link scan.
