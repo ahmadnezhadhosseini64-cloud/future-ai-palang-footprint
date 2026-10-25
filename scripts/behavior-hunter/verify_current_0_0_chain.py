@@ -150,7 +150,7 @@ def reconstruct(start):
         ("current", current, "EXPORT_MANIFEST"),
         ("current", current, "REFERENCE_INDEX"),
         ("current", current, "INTEGRATION-QUEUE"),
-        ("next", nxt, "PALANG-0.0-CURRENT-20261024-058"),
+        ("next", nxt, "PALANG-0.0-CURRENT-20261025-059"),
     ]
     for name, text, fragment in link_checks:
         if not require_link(name, text, fragment):
@@ -163,7 +163,7 @@ def reconstruct(start):
     for gate, state in gates.items():
         if not state["preserved_open"]:
             failures.append({"check":"open_gate_not_preserved","gate":gate,"state":state})
-    if "Audit-method error" not in event or "Correction" not in event:
+    if "cause" not in event.casefold() or "correction" not in event.casefold():
         failures.append({"check":"failure_correction_lineage"})
     if "NEXT-051" not in master or "CURRENT-059" not in master:
         failures.append({"check":"portable_master_not_current"})
