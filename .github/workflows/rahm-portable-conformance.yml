@@ -11,7 +11,8 @@ on:
       - 'docs/architecture/مدل اولیه AI/**'
       - 'docs/reference/REFERENCE-DOCUMENTS/**'
       - 'docs/REFERENCE_INDEX.md'
-      - 'scripts/behavior-hunter/**'\n      - 'scripts/haif-runtime/**'
+      - 'scripts/behavior-hunter/**'
+      - 'scripts/haif-runtime/**'
       - '.github/workflows/living-architecture-audit.yml'
       - '.github/workflows/rahm-portable-conformance.yml'
   workflow_dispatch:
