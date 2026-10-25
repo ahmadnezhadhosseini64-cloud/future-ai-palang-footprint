@@ -2,7 +2,7 @@
 
 - Stable ID: G6IP-CURRENT-063-20261025
 - Production ID: G6IP-CURRENT-063
-- Version: 1.0.0
+- Version: 1.0.1
 - User Point: [POINT-0/012](./GPT6-RAHM-USER-POINT-0-20261025-012-EXECUTABLE-ARCHITECTURE.md)
 - Chain: [IN-056](./PALANG-0.0-IN-20261025-056-EXECUTABLE-ARCHITECTURE.md) → [OUT-055](./PALANG-0.0-OUT-20261025-055-EXECUTABLE-ARCHITECTURE.md) → [EVT-0165](../../architecture/BEHAVIOR-TRACE/EVT-0165-EXECUTABLE-ARCHITECTURE-2026-10-25.md) → CURRENT-063.
 - Previous checkpoint: [CURRENT-062](./PALANG-0.0-CURRENT-20261025-062-OPEN-GAPS-AND-CONTINUITY.md).
@@ -42,3 +42,16 @@ D. Run independent-host import and restart-recovery tests.
 E. Continue NEXT-051's commit-scoped occurrence-level graph audit and adjudicate each identifier/parent/time/duplicate group with evidence.
 
 Status: current executable implementation point; source committed; runtime test and host acceptance gates remain OPEN.
+
+
+## Final CURRENT-063 repository read-back
+- [x] Read back Point 0/012, IN-056, OUT-055, EVT-0165 and CURRENT-063.
+- [x] Read back the living mother, canonical index, integration queue and parent export manifest.
+- [x] CURRENT-063 overlay manifest parsed as valid JSON; independent read-back matched 8/8 declared Git blob SHA-1 values.
+- [x] Parent export manifest parsed as valid JSON: 41 core files + 41 live references = 82 unique paths, no duplicates; new Point 0/012 chain and runtime source/tests/runbook are included.
+- [x] Conformance workflow source contains the runtime test command and runtime path trigger.
+- [ ] GitHub Actions run result: NOT VERIFIED; combined status had no entries and commit workflow lookup returned no runs. This is not a pass.
+- [ ] Clean local runtime end-to-end test and independent-host adoption: NOT RUN / OPEN.
+- [ ] Historical graph adjudication, durable cross-device persistence and automatic/background capture: OPEN.
+
+Status: source registration and focused read-back PASS; executable test result and real-host acceptance OPEN.
