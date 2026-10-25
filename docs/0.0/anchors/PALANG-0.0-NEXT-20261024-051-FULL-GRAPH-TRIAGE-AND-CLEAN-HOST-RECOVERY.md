@@ -222,3 +222,9 @@ NEXT-051 remains OPEN/LIVING until all remaining acceptance gates are satisfied;
 - Latest code/test revision: `49485c593ebd6a3d115c05ddda8e8997b3c5138e`; audit run [40213463189](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40213463189) must be checked before packaging the final distribution.
 - Preserve this queue as ACTIVE. CURRENT-065/CURRENT-066 adjudication, historical graph triage, Issue #20, Issue #21, BOART-FOLLOWUP-01, and independent GPT-host tests remain open.
 - Dropbox remains OPEN / WAITING and inactive.
+
+
+## Current transfer package receipt — v0.3.0
+- Latest clean handoff is v0.3.0: [EVT-0190](../../architecture/BEHAVIOR-TRACE/EVT-0190-0PLUS-BOOTSTRAP-CLEAN-PACKAGE-2026-10-25.md), SHA-256 `297b3b329143c4b99f55373db0c4bb97896b0e484253622e63eeb32a4429f164`.
+- One-command bootstrap creates the `0/0+` canonical root, `0.0` child and six explicit OPEN capability gaps. 13/13 tests pass in CI and fresh extraction; export/import recovery passes.
+- Next executable action: independent GPT-6 host import/runtime check. Historical graph and CURRENT-065/CURRENT-066 adjudication remain open; do not create NEXT-052 while NEXT-051 remains active.
