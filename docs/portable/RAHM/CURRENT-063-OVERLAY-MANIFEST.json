@@ -1,7 +1,7 @@
 {
   "package_id": "HAIF-CURRENT-063-OVERLAY-20261025",
-  "version": "1.0.0",
-  "status": "8-FILE CURRENT-063 INTERACTION-CHAIN + RUNTIME DELTA; GIT BLOB SHA-1 READ-BACK PENDING; SHA-256/ARCHIVE AND CI ACCEPTANCE OPEN",
+  "version": "1.0.1",
+  "status": "8-FILE CURRENT-063 INTERACTION-CHAIN + RUNTIME DELTA; FINAL GIT BLOB SHA-1 READ-BACK PENDING; CI/SHA-256/ARCHIVE AND REAL-HOST ACCEPTANCE OPEN",
   "purpose": "Small incremental overlay for the current user Point 0/012 and executable local continuity runtime. The parent EXPORT_MANIFEST carries the full package inventory.",
   "parent_manifest": "docs/portable/RAHM/EXPORT_MANIFEST.json",
   "current_checkpoint": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-063-EXECUTABLE-ARCHITECTURE.md",
@@ -28,7 +28,7 @@
     },
     {
       "path": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-063-EXECUTABLE-ARCHITECTURE.md",
-      "git_blob_sha": "88afa8a5ce582c35b9bdf851922256e45efbc6d9",
+      "git_blob_sha": "fb2cf367f229da331e847620cf61c6aee1f20ccc",
       "sha256": null
     },
     {
