@@ -60,3 +60,13 @@ A GPT chat instruction or uploaded knowledge file cannot, by itself, create dura
   python3 engine.py --state ./haif-state.json audit
   ```
 - The `point` command persists through atomic write and validated read-back. These instructions do not automatically run themselves; a host must actually provide Python execution and file access.
+
+
+## Preferred first-run procedure (v0.3.0)
+Run the bootstrap script once before doing project work:
+```bash
+python3 bootstrap_0plus.py --state ./haif-state.json
+python3 engine.py --state ./haif-state.json audit
+python3 engine.py --state ./haif-state.json export > ./haif-portable-bundle.json
+```
+It creates one canonical point labelled `0` and `0+`, a child continuation `0.0`, and six OPEN gates for target-host Python, independent host import, durable host memory/restart, automatic capture, external GitHub write permission, and background execution. The script refuses to overwrite an existing state. Keep those gates open until the target host provides evidence.
