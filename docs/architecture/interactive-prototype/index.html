@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HAIF — نمونهٔ تعاملی v0</title>
+<style>
+:root{color-scheme:light dark;font-family:system-ui,sans-serif}body{max-width:900px;margin:0 auto;padding:1rem;line-height:1.65}header,section,article{border:1px solid #8887;border-radius:12px;padding:1rem;margin:.8rem 0}textarea,input{box-sizing:border-box;width:100%;padding:.7rem;border-radius:8px;border:1px solid #888;background:transparent;color:inherit}button{padding:.65rem .9rem;margin:.25rem;border-radius:8px;border:1px solid #888;cursor:pointer}button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #3984ff;outline-offset:2px}.row{display:flex;flex-wrap:wrap;gap:.4rem}.muted{opacity:.75;font-size:.92rem}.status{font-weight:700}.event{border-inline-start:4px solid #888;padding:.5rem .8rem;margin:.5rem 0;overflow-wrap:anywhere}.bad{color:#ff7b72}.good{color:#6fce8c}code,pre{overflow-wrap:anywhere;white-space:pre-wrap}
+</style>
+</head>
+<body>
+<header>
+<h1>HAIF / Palang Footprint — نمونهٔ تعاملی v0</h1>
+<p>نمونهٔ محدود برای آزمودن ورودی/خروجی، نقطهٔ ادامه، اعتبارسنجی و انتقال دستی. این نمونه محصول تولیدی یا میزبان مستقل نیست.</p>
+<p class="muted">حافظهٔ محلی همین مرورگر: <span id="storageState">در حال بررسی…</span> · ذخیره‌سازی دائمی بین میزبان‌ها تضمین نمی‌شود.</p>
+</header>
+<section>
+<h2>۱. ورودی تعامل (IN)</h2>
+<label for="userInput">قصد، تصمیم یا یادداشت</label>
+<textarea id="userInput" rows="4" placeholder="یک ورودی آزمایشی بنویس…"></textarea>
+<div class="row"><button id="recordBtn">ثبت تعامل و ساخت OUT</button><button id="checkpointBtn">ساخت نقطهٔ ادامه</button><button id="resetBtn">پاک‌سازی پیش‌نویس</button></div>
+<p id="message" role="status" aria-live="polite" class="status"></p>
+</section>
+<section>
+<h2>۲. وضعیت بازیابی‌شده</h2>
+<p>شناسهٔ نشست: <code id="sessionId"></code></p>
+<p>آخرین نقطه: <code id="checkpointId">هنوز ساخته نشده</code></p>
+<p>تعداد رویدادهای محلی: <strong id="eventCount">0</strong></p>
+<p>آخرین خروجی: <span id="lastOutput">هنوز خروجی ثبت نشده</span></p>
+</section>
+<section>
+<h2>۳. خروجی و بازیابی</h2>
+<div class="row"><button id="exportBtn">استخراج JSON</button><button id="importBtn">بازیابی از JSON</button><button id="verifyBtn">بررسی ساختاری</button><input id="fileInput" type="file" accept="application/json,.json" hidden></div>
+<label for="portableData">بستهٔ قابل‌انتقال / JSON</label>
+<textarea id="portableData" rows="10" spellcheck="false" placeholder="خروجی استخراج‌شده اینجا نمایش داده می‌شود؛ برای بازیابی JSON معتبر را اینجا قرار بده."></textarea>
+<p class="muted">زمان پیام کاربر در این نمونه از ساعت سیستم مرورگر به‌عنوان زمان قطعی پیام فرض نمی‌شود. زمان ثبت محلی و UTC تولیدشده هنگام عملیات جداگانه نگهداری می‌شوند؛ زمان commit مخزن، مرجع ثبت مخزنی است.</p>
+</section>
+<section>
+<h2>۴. دفتر رویدادهای محلی</h2>
+<div id="events"><p class="muted">هنوز رویدادی وجود ندارد.</p></div>
+</section>
+<section>
+<h2>محدودیت‌ها و قرارداد</h2>
+<ul>
+<li>ذخیره‌سازی با localStorage همین مرورگر است؛ پاک‌شدن داده‌های مرورگر یا تغییر دستگاه ممکن است آن را از بین ببرد.</li>
+<li>خروجی JSON برای انتقال دستی است؛ این نسخه به GitHub، میزبان AI، حافظهٔ ابری یا کار پس‌زمینه وصل نیست.</li>
+<li>هر رویداد دارای IN/OUT و وضعیت است؛ اعتبارسنجی ساختاری به‌تنهایی صحت معنایی را اثبات نمی‌کند.</li>
+<li>در محیط فاقد localStorage، وضعیت به‌عنوان حافظهٔ موقت همین صفحه اعلام می‌شود.</li>
+</ul>
+</section>
+<script>
+(function(){
+'use strict';
+const KEY='haif.interactive.prototype.v0';
+const $=id=>document.getElementById(id);
+const now=()=>new Date().toISOString();
+const id=(prefix)=>prefix+'-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,8);
+let state={schemaVersion:'haif-interaction-state/1.0',project:'Future AI / Palang Footprint',sessionId:id('SESSION'),checkpoint:null,events:[],lastOutput:null,updatedAtUtc:now()};
+let persistent=false;
+function say(text,ok){$('message').textContent=text;$('message').className='status '+(ok?'good':'bad')}
+function valid(s){return !!s&&s.schemaVersion==='haif-interaction-state/1.0'&&typeof s.sessionId==='string'&&Array.isArray(s.events)&&s.events.every(e=>e&&typeof e.id==='string'&&typeof e.input==='string'&&typeof e.output==='string'&&typeof e.createdAtUtc==='string'&&['RECORDED','IMPORTED'].includes(e.status))}
+function save(){state.updatedAtUtc=now();try{localStorage.setItem(KEY,JSON.stringify(state));persistent=true;$('storageState').textContent='فعال (فقط این مرورگر)';}catch(e){persistent=false;$('storageState').textContent='در دسترس نیست؛ فقط حافظهٔ موقت صفحه';}}
+function render(){ $('sessionId').textContent=state.sessionId;$('checkpointId').textContent=state.checkpoint?state.checkpoint.id:'هنوز ساخته نشده';$('eventCount').textContent=String(state.events.length);$('lastOutput').textContent=state.lastOutput||'هنوز خروجی ثبت نشده';const box=$('events');box.replaceChildren();if(!state.events.length){const p=document.createElement('p');p.className='muted';p.textContent='هنوز رویدادی وجود ندارد.';box.appendChild(p);return}state.events.slice().reverse().forEach(e=>{const a=document.createElement('article');a.className='event';const h=document.createElement('strong');h.textContent=e.id+' · '+e.status;const p=document.createElement('p');p.textContent='IN: '+e.input;const o=document.createElement('p');o.textContent='OUT: '+e.output;const t=document.createElement('small');t.textContent='ثبت UTC: '+e.createdAtUtc;a.append(h,p,o,t);box.appendChild(a)})}
+function checkpoint(){state.checkpoint={id:id('CHECKPOINT'),createdAtUtc:now(),eventCount:state.events.length,lastEventId:state.events.length?state.events[state.events.length-1].id:null,openGates:['external-host-import','persistent-cross-host-memory','background-execution']};save();render();say('نقطهٔ ادامه ساخته شد؛ دروازه‌های باز حفظ شدند.',true)}
+$('recordBtn').addEventListener('click',()=>{const input=$('userInput').value.trim();if(!input){say('ورودی خالی است؛ چیزی ثبت نشد.',false);return}const output='ورودی دریافت شد و به‌عنوان یک رویداد قابل‌بازیابی ثبت شد. این تأیید فقط در محدودهٔ نمونه است.';const e={id:id('EVT'),input,output,createdAtUtc:now(),status:'RECORDED',checkpointId:state.checkpoint?state.checkpoint.id:null};state.events.push(e);state.lastOutput=output;$('userInput').value='';save();render();say('تعامل IN/OUT ثبت شد. این به معنی تأیید معنایی یا ذخیرهٔ ابری نیست.',true)});
+$('checkpointBtn').addEventListener('click',checkpoint);
+$('resetBtn').addEventListener('click',()=>{$('userInput').value='';say('پیش‌نویس پاک شد؛ رویدادهای ثبت‌شده تغییر نکردند.',true)});
+$('exportBtn').addEventListener('click',()=>{$('portableData').value=JSON.stringify(state,null,2);say('بستهٔ JSON ساخته شد؛ آن را جداگانه ذخیره یا به میزبان دیگر منتقل کن.',true)});
+$('verifyBtn').addEventListener('click',()=>{try{const s=JSON.parse($('portableData').value);if(!valid(s)){say('اعتبارسنجی ناموفق: ساختار یا فیلدهای الزامی نادرست‌اند.',false);return}say('اعتبارسنجی ساختاری PASS؛ صحت معنایی و صحت میزبان مستقل هنوز آزموده نشده است.',true)}catch(e){say('JSON قابل‌خواندن نیست.',false)}});
+$('importBtn').addEventListener('click',()=>{try{const s=JSON.parse($('portableData').value);if(!valid(s)){say('بازیابی رد شد: ساختار بسته معتبر نیست.',false);return}state=s;save();render();say('بسته در همین نمونه بازیابی شد؛ این آزمون ورود به میزبان مستقل نیست.',true)}catch(e){say('بازیابی رد شد: JSON نامعتبر است.',false)}});
+$('fileInput').addEventListener('change',async e=>{const f=e.target.files&&e.target.files[0];if(!f)return;try{$('portableData').value=await f.text();say('فایل بارگذاری شد؛ برای اعمال آن «بازیابی از JSON» را بزن.',true)}catch(err){say('خواندن فایل شکست خورد.',false)}});
+try{const raw=localStorage.getItem(KEY);if(raw){const parsed=JSON.parse(raw);if(valid(parsed))state=parsed;else say('دادهٔ ذخیره‌شده ساختار معتبر نداشت؛ با وضعیت تازه ادامه می‌دهیم.',false)}persistent=true;$('storageState').textContent='فعال (فقط این مرورگر)'}catch(e){persistent=false;$('storageState').textContent='در دسترس نیست؛ فقط حافظهٔ موقت صفحه'}
+render();
+})();
+</script>
+</body>
+</html>
