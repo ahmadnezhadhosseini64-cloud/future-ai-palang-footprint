@@ -761,3 +761,13 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - [CURRENT-070](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-070-HARD-AUDIT-AND-HOST-EXECUTION.md)
 - توالی CLI واقعی در محیط Python: init → record → audit → export → import به فایل دوم → audit؛ همه PASS.
 - بستهٔ تمیز SHA-256: `d68e03b42e26b88385d1155c02d09b213a53366e27e99518c7c049f6ec6563be`; آزمون میزبان مستقل همچنان باز است.
+
+
+## EVT-0188 — 0+ marker identity and 0.0 lineage
+
+- Root: [POINT-0/024](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-024-0PLUS-PRODUCTION-MARKER.md)
+- Event: [EVT-0188](./EVT-0188-POINT-0PLUS-IDENTITY-AND-0-0-LINEAGE-2026-10-25.md)
+- Time binding: [UTC / Tehran](./TIME-BINDING-POINT-0-024-EVT-0188-2026-10-25.md)
+- Current: [CURRENT-071](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-071-0PLUS-ENGINE-AND-HARD-AUDIT.md)
+- Hard audit: first run failed on a duplicate `kind` argument; fixed in commit `ab20a52d111f58c243c0e218359ae798c1072616`. Additional point/event tamper and self-parent tests are now included in commit `49485c593ebd6a3d115c05ddda8e8997b3c5138e`.
+- Latest exact-head CI: [40213463189](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40213463189), status pending at last check.
