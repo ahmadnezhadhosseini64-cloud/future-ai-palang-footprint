@@ -82,6 +82,7 @@ def verify_state(state: Any) -> list[str]:
     anchors = set()
     input_ids = set()
     output_ids = set()
+    point_registration_events = []
     for i, event in enumerate(events):
         p = f"events[{i}]"
         if not isinstance(event, dict):
@@ -98,6 +99,8 @@ def verify_state(state: Any) -> list[str]:
             errors.append(f"{p}.parent_hash mismatch")
         if event.get("event_hash") != digest(payload(event)):
             errors.append(f"{p}.event_hash mismatch")
+        if event.get("kind") == "POINT_REGISTERED":
+            point_registration_events.append(event)
         if event.get("kind") == "INTERACTION":
             for key in ("anchor_id", "input_id", "output_id", "input", "output"):
                 if not event.get(key):
@@ -130,6 +133,7 @@ def verify_state(state: Any) -> list[str]:
             labels = point.get("labels")
             if not isinstance(pid, str) or not pid:
                 errors.append(f"{p}.point_id is required")
+            prior_point_ids = set(point_ids)
             if pid in point_ids:
                 errors.append(f"{p}.point_id duplicate: {pid}")
             point_ids.add(pid)
@@ -150,8 +154,31 @@ def verify_state(state: Any) -> list[str]:
                 errors.append(f"{p}.kind is invalid")
             if point.get("kind") == "CONTINUATION" and not point.get("parent_point_id"):
                 errors.append(f"{p}: continuation requires parent_point_id")
-            if point.get("kind") == "CONTINUATION" and point.get("parent_point_id") not in point_ids:
+            if point.get("kind") == "CONTINUATION" and point.get("parent_point_id") not in prior_point_ids:
                 errors.append(f"{p}: continuation parent must precede the child")
+        point_event_by_id = {}
+        for event in point_registration_events:
+            pid = event.get("point_id")
+            if pid in point_event_by_id:
+                errors.append(f"POINT_REGISTERED event duplicates point_id: {pid}")
+            point_event_by_id[pid] = event
+        point_by_id = {point.get("point_id"): point for point in points if isinstance(point, dict)}
+        if set(point_event_by_id) != set(point_by_id):
+            errors.append("points and POINT_REGISTERED event ledger do not match")
+        for pid in set(point_event_by_id) & set(point_by_id):
+            event = point_event_by_id[pid]
+            point = point_by_id[pid]
+            expected = {
+                "labels": event.get("labels"),
+                "kind": event.get("point_kind"),
+                "parent_point_id": event.get("parent_point_id"),
+                "production_marker": event.get("production_marker"),
+                "purpose": event.get("purpose"),
+                "created_at_utc": event.get("point_created_at_utc")
+            }
+            for key, value in expected.items():
+                if point.get(key) != value:
+                    errors.append(f"point {pid} disagrees with event ledger field {key}")
     gaps = state.get("gaps")
     if not isinstance(gaps, list):
         errors.append("gaps must be an array")
@@ -289,7 +316,8 @@ def register_point(state: dict, point_id: str, labels: list[str], kind: str = "R
     existing.append(point)
     append_event(state, "POINT_REGISTERED", point_id=point_id, labels=list(labels),
                  point_kind=kind, parent_point_id=parent_point_id,
-                 production_marker=production_marker, purpose=purpose)
+                 production_marker=production_marker, purpose=purpose,
+                 point_created_at_utc=point["created_at_utc"])
     return point
 
 
