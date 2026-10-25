@@ -9,6 +9,7 @@
 - Status: ACTIVE / LIVING / IMPLEMENTED IN ENGINE / CI VERIFICATION PENDING
 - IN: [IN-054](./PALANG-0.0-IN-20261025-054-0PLUS-PRODUCTION-MARKER.md)
 - OUT: [OUT-054](./PALANG-0.0-OUT-20261025-054-0PLUS-PRODUCTION-MARKER.md)
+- Time binding: [POINT-0/024 time binding](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-POINT-0-024-EVT-0188-2026-10-25.md)
 - Event: [EVT-0188](../../architecture/BEHAVIOR-TRACE/EVT-0188-POINT-0PLUS-IDENTITY-AND-0-0-LINEAGE-2026-10-25.md)
 - Next execution checkpoint: [CURRENT-071 / 0.0](./PALANG-0.0-CURRENT-20261025-071-0PLUS-ENGINE-AND-HARD-AUDIT.md)
 - Previous root: [POINT-0/023](./GPT6-RAHM-USER-POINT-0-20261025-023-HARD-AUDIT-AND-ENGINE-HARDENING.md)
@@ -27,7 +28,7 @@ The portable engine now supports canonical point records and the `point` CLI com
 - Manifest version: 0.2.0
 
 ## Verification boundary
-The implementation and two regression tests have been committed. Full verification of the final repository head is pending the current Living Architecture Audit run. Do not label this implementation CI-verified until that exact-head run succeeds. Independent target-GPT host execution remains a separate gate.
+The implementation and two regression tests were committed. The first exact-head run exposed an event-field collision (the event's `kind` argument collided with point metadata); this was fixed in commit `ab20a52d111f58c243c0e218359ae798c1072616` by renaming the metadata field to `point_kind`. The corrected exact-head Living Architecture Audit is pending. Do not label it CI-verified until that run succeeds. Independent target-GPT host execution remains a separate gate.
 
 ## Architecture
 This root stays within Future AI / Palang Footprint and the HAIF loop:
