@@ -705,3 +705,10 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 ## EVT-0179 — unique event-number collision record
 - [EVT-0179](./EVT-0179-UNIQUE-ID-COLLISION-AND-POINTER-RECONCILIATION-2026-10-25.md) documents the duplicate EVT-0178-numbered draft, quarantines it without deletion, and preserves the CURRENT-065/CURRENT-066 pointer conflict for the canonical hard audit.
 - Canonical event 0178 remains [EVT-0178 — Unified Palang Architecture Hard Audit](./EVT-0178-UNIFIED-PALANG-ARCHITECTURE-HARD-AUDIT-2026-10-25.md).
+
+
+## EVT-0180 — POINT-0/018 living registration and next steps
+- [EVT-0180](./EVT-0180-USER-POINT-0-018-LIVING-REGISTRATION-AND-NEXT-STEPS-2026-10-25.md) records the user request to register a new point 0, enumerate next 0.0 steps, and update the living master.
+- Root: [POINT-0/018](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-018-LIVING-REGISTRATION-AND-NEXT-STEPS.md); prior root POINT-0/017 remains preserved.
+- Commit-time evidence: [TIME-BINDING-EVT-0180](./TIME-BINDING-EVT-0180-POINT-0-018-2026-10-25.md).
+- CURRENT-065/CURRENT-066 remains OPEN for source-backed reconciliation. NEXT-051 remains the existing active queue; Issue #20, Issue #21 and BOART-FOLLOWUP-01 remain OPEN.
