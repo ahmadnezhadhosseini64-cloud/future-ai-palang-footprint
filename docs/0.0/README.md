@@ -1498,3 +1498,11 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 ## EVT-0179 — registration collision follow-up (2026-10-25)
 - [EVT-0179](../architecture/BEHAVIOR-TRACE/EVT-0179-UNIQUE-ID-COLLISION-AND-POINTER-RECONCILIATION-2026-10-25.md) preserves the duplicate EVT-0178-numbered draft as a quarantined artifact and points to canonical [EVT-0178](../architecture/BEHAVIOR-TRACE/EVT-0178-UNIFIED-PALANG-ARCHITECTURE-HARD-AUDIT-2026-10-25.md).
 - POINT-0/017 is the current user-turn root. CURRENT-065 versus CURRENT-066 remains unresolved by design until the unified hard audit adjudicates it; NEXT-051 remains the active queue.
+
+
+## Latest user-turn root — POINT-0/018
+- Current user instruction anchor: [POINT-0/018](./anchors/GPT6-RAHM-USER-POINT-0-20261025-018-LIVING-REGISTRATION-AND-NEXT-STEPS.md).
+- Event: [EVT-0180](../architecture/BEHAVIOR-TRACE/EVT-0180-USER-POINT-0-018-LIVING-REGISTRATION-AND-NEXT-STEPS-2026-10-25.md); commit-time evidence: [TIME-BINDING for POINT-0/018 and EVT-0180](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0180-POINT-0-018-2026-10-25.md).
+- Living master: [HAIF Initial Model Master Reference](../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md).
+- This is the newest user-turn root, not an adjudication of the separate CURRENT-065/CURRENT-066 execution-pointer conflict. Keep NEXT-051 active; no NEXT-052 placeholder. All child steps 0.0-01 through 0.0-06 are enumerated in POINT-0/018.
+- Status: repository write and cross-surface read-back are being verified; runtime, exact-current-main audit, graph adjudication and external destinations remain OPEN / NOT VERIFIED until evidence is attached.
