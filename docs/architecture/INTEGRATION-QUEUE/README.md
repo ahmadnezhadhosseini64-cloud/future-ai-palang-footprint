@@ -9,7 +9,7 @@
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: POINT-0/018 is the latest user-turn root; CURRENT-065/CURRENT-066 execution-pointer conflict remains OPEN; runtime tests and clean-host recovery pending; NEXT-051 remains OPEN/LIVING; no successor NEXT created to disguise unfinished work.
+- Status: POINT-0/019 is the latest user-turn root; pointer-discovery source/tests are registered and wired into CI, but the exact-head result remains pending inspection; CURRENT-065/CURRENT-066 execution-pointer conflict remains OPEN; NEXT-051 remains OPEN/LIVING; no successor NEXT created to disguise unfinished work.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
