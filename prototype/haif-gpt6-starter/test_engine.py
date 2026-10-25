@@ -53,6 +53,24 @@ class HaifStarterEngineTests(unittest.TestCase):
             register_point(state, "HAIF-POINT-0-PLUS-SECOND", ["0+"], kind="CONTINUATION",
                            parent_point_id=root["point_id"], production_marker=True)
 
+    def test_point_record_must_match_append_only_event_ledger(self):
+        state = new_state()
+        root = register_point(state, "HAIF-POINT-0", ["0", "0+"], production_marker=True)
+        register_point(state, "HAIF-POINT-0-0", ["0.0"], kind="CONTINUATION",
+                       parent_point_id=root["point_id"])
+        state["points"][0]["purpose"] = "tampered without event"
+        self.assertTrue(any("disagrees with event ledger field purpose" in error
+                            for error in verify_state(state)))
+
+    def test_continuation_cannot_parent_itself(self):
+        state = new_state()
+        root = register_point(state, "HAIF-POINT-0", ["0", "0+"], production_marker=True)
+        child = register_point(state, "HAIF-POINT-0-0", ["0.0"], kind="CONTINUATION",
+                               parent_point_id=root["point_id"])
+        child["parent_point_id"] = child["point_id"]
+        errors = verify_state(state)
+        self.assertTrue(any("continuation parent must precede the child" in error for error in errors))
+
     def test_duplicate_input_or_output_ids_are_rejected_even_with_valid_hash(self):
         state = new_state()
         first = record_interaction(state, "in-1", "out-1")
