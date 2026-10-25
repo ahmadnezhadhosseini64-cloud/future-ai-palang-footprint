@@ -1575,3 +1575,9 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - Semantics: 0 and 0+ share one canonical point identity; 0+ marks a significant production; 0.0 is a separate child continuation.
 - The engine implements the rule. A hard audit exposed and fixed an event argument collision, then added state/event reconciliation and parent-order checks. Latest CI status must be read from the exact-head run [40213463189](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40213463189).
 - NEXT-051 remains active; NEXT-052 was not created.
+
+
+## EVT-0189 — clean distribution and executable 0+ smoke test
+- Evidence: [EVT-0189](../architecture/BEHAVIOR-TRACE/EVT-0189-0PLUS-CLEAN-DISTRIBUTION-SMOKE-2026-10-25.md) and [time binding](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0189-CLEAN-DISTRIBUTION-2026-10-25.md).
+- Package v0.2.1 SHA-256: `51a5f9a6def97a0564a8b6542bbf4a5b9ca46a81a267a4a02db7c53511e16f2d`; 12/12 fresh-extract tests passed.
+- CURRENT-071's clean-package gate is closed; independent GPT-6 host import remains the next open execution gate.
