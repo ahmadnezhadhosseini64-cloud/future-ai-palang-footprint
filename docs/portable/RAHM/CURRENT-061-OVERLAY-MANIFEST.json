@@ -1,7 +1,7 @@
 {
   "package_id": "HAIF-RAHM-CURRENT-061-OVERLAY-2026-10-25-001",
-  "version": "1.0.0",
-  "status": "OVERLAY INVENTORY CREATED; EXACT-BYTE SHA-256 AND ARCHIVE BUILD NOT VERIFIED",
+  "version": "1.0.1",
+  "status": "15/15 GIT BLOB SHA-1 READ-BACK VERIFIED; EXACT-BYTE SHA-256 AND ARCHIVE BUILD NOT VERIFIED",
   "parent_manifest": "docs/portable/RAHM/EXPORT_MANIFEST.json",
   "checkpoint": "G6IP-CURRENT-061-20261025",
   "purpose": "Lists the new CURRENT-061 chain and implementation artifacts so they can be located and read back. This overlay does not replace the main export manifest and is not a release package.",
