@@ -1,9 +1,9 @@
 # POINT-0/008 — Deep Excavation and No-Silent-Gap Continuity
 
-- Stable ID: `G6IP-RAHM-USER-POINT-0-20261025-008`
-- Production ID: `G6IP-POINT0-008`
+- Stable ID: `G6IP-RAHM-USER-POINT-0-20261025-008-ALT-001`
+- Production ID: `G6IP-POINT0-008-ALT-001`
 - Version: 1.0.0
-- Status: REGISTERED / READ-BACK REQUIRED; not a host-runtime proof.
+- Status: ARCHIVED PARALLEL DRAFT / NON-CANONICAL; retained as audit evidence after collision detection. The canonical branch is [G6IP-RAHM-USER-POINT-0-20261025-008-ALT-001](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-008-DEEP-AUDIT-AND-NO-SILENT-GAP.md) where path context permits.
 - Previous current: [CURRENT-058](./PALANG-0.0-CURRENT-20261024-058-DEEP-EXCAVATION-EXECUTION-RECEIPTS.md)
 - Input: [IN-052](./PALANG-0.0-IN-20261025-052-DEEP-EXCAVATION-AND-NO-SILENT-GAP.md)
 - Output: [OUT-051](./PALANG-0.0-OUT-20261025-051-DEEP-EXCAVATION-AND-NO-SILENT-GAP.md)
@@ -26,3 +26,7 @@ The portable living master must be a usable, evidence-backed transfer artifact, 
 ## Branch preserved
 POINT-0/007 → IN-051 → OUT-050 → EVT-0160 → CURRENT-058 → NEXT-051 remains the prior active branch. This point creates a linked continuation; it does not close NEXT-051.
 
+
+
+## Collision reconciliation
+This artifact was written in parallel with a pre-existing canonical artifact for the same turn and initially reused its stable/production ID. To avoid an unresolved duplicate-ID collision, this file is retained but re-identified as an ALT-001 archival branch. The canonical operational chain uses `docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-008-DEEP-AUDIT-AND-NO-SILENT-GAP.md`. Do not treat this file as the current checkpoint or duplicate its behavior rules into the active branch.
