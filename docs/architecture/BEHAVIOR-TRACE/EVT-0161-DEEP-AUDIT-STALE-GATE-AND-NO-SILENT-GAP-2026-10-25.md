@@ -3,7 +3,7 @@
 - Stable ID: `G6IP-RAHM-EVT-0161-20261025`
 - Production ID: `G6IP-EVT-0161`
 - Version: 1.0.1
-- Status: REGISTERED / READ-BACK REQUIRED; correction run pending.
+- Status: REGISTERED / READ-BACK VERIFIED; corrected conformance PASS; repository graph REVIEW_REQUIRED; real-host/runtime gates OPEN.
 - Input: [IN-052](../../0.0/anchors/PALANG-0.0-IN-20261025-052-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md)
 - Output: [OUT-051](../../0.0/anchors/PALANG-0.0-OUT-20261025-051-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md)
 - Parent checkpoint: [CURRENT-058](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-058-DEEP-EXCAVATION-EXECUTION-RECEIPTS.md)
@@ -34,3 +34,27 @@ A pause, long processing gap, or subsequent user message must not silently aband
 ## Correction verification receipts
 - Corrected strict conformance run [40150549906](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150549906) PASS on `9d434cba8b44eb11e891f21e2ba7cc046395334b`: 62/62 exact-byte SHA-256 entries matched; schema fixtures passed (0 valid errors, 4 invalid errors); IN/OUT reconstruction passed; package SHA-256 `d5edd12abe4e87b3a72e2bec795c9d9a6760ba60cef2b2a3abe488e36ccc8d56`.
 - Current-chain audit [40150549910](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150549910) PASSed structurally; content remains REVIEW_REQUIRED. This confirms the test correction within repository/CI scope only, not independent host import or runtime durability.
+
+
+## Retained failed attempts and correction chain
+
+- Run [40150217064](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150217064): schema fixtures passed, but the IN/OUT test failed because OUT-051 did not yet satisfy the open-gate assertion. The assertion was corrected to case-insensitive semantic checking; the failure remains part of this event's history.
+- Run [40150343495](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150343495): repository recovery verifier failed due to an incorrect prior-current path, missing current-point link and overly strict open-gate markers. These assumptions were corrected and explicit open-gate language was added to CURRENT-059.
+- Run [40150492994](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150492994): full repository-state recovery from IN-052 and OUT-051 passed; all six open-gate categories were preserved.
+- Run [40150679142](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150679142): recovery PASS; Markdown link scan 0 missing; historical graph link findings reduced from 10 to 0 after excluding Markdown examples embedded in Python source/test templates.
+- Run [40150704716](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150704716): corrected strict conformance PASS, 62/62 exact-byte digests, schema valid/invalid fixtures PASS, IN/OUT pointer recovery PASS, package built.
+- The remaining identity/parent findings are not fixed by the link-parser correction and remain OPEN/REVIEW_REQUIRED.
+
+
+## CURRENT-059 final conformance receipt — run 40150704716
+
+- Workflow: [Portable RAHM Conformance and Digest Evidence](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150704716) — SUCCESS on commit `5047ee23407fd7fa47210ee68894587bc35e9988`.
+- Exact-byte SHA-256: PASS for all 62 manifest entries.
+- JSON Schema: valid fixture 0 errors; invalid fixture 4 errors and correctly rejected.
+- IN/OUT pointer recovery: PASS for IN-052 / OUT-051 → CURRENT-059 / NEXT-051 with open gates preserved.
+- Extractable archive: 63 entries, 289,293 bytes; SHA-256 `b98b34876de35d2d4c3cc89ed95b637a36d32adfe251c62db7a79a2bb86606a3`.
+- Package artifact: [haif-rahm-portable-package](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150704716/artifacts/12582014811).
+- Evidence artifact: [rahm-portable-conformance-evidence](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150704716/artifacts/12582334413).
+- Latest repository audit: [run 40150679142](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150679142) — zero missing local Markdown links and zero missing local links in the corrected historical graph parser; content remains REVIEW_REQUIRED due to 62 Stable-ID collision groups (61 unreviewed), 88 Production-ID groups, 7 Reference-ID groups, 37 event-number groups and 13 ambiguous parent edges.
+- This receipt is valid for the commit above. Any subsequent edit to a manifest-listed file requires digest reconciliation and a fresh conformance run.
+- Still OPEN / NOT VERIFIED: independent clean AI-host import, second-host import, persistent memory after restart, automatic capture of every interaction, idle/background execution, and individual adjudication of all remaining identity/parent/time findings.
