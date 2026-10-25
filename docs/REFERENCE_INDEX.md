@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-25 — CURRENT-064 / POINT-0-013; interaction chain and open gates linked; runtime execution evidence pending; NEXT-051 remains active/open.
+**Last Updated:** 2026-10-25 — POINT-0/018 / EVT-0180; living master and registries linked; CURRENT-065/CURRENT-066 pointer conflict OPEN; NEXT-051 remains active.
 
 ## Canonical References
 
@@ -1445,3 +1445,11 @@ Current continuation chain: POINT-0/013 → IN-057 → OUT-056 → EVT-0166 → 
 | HAIF-EVT-0178-UNIFIED-PALANG-HARD-AUDIT-20261025 | `docs/architecture/BEHAVIOR-TRACE/EVT-0178-UNIFIED-PALANG-ARCHITECTURE-HARD-AUDIT-2026-10-25.md` | Hard-audit event and ordered remediation gates | Registered; read-back pending |
 
 | HAIF-EVT-0179-UNIQUE-ID-COLLISION-AND-POINTER-RECONCILIATION-2026-10-25 | `docs/architecture/BEHAVIOR-TRACE/EVT-0179-UNIQUE-ID-COLLISION-AND-POINTER-RECONCILIATION-2026-10-25.md` | Preserves and quarantines duplicate EVT-0178-numbered draft; keeps CURRENT-065/CURRENT-066 pointer conflict open | Registered; canonical EVT-0178 remains the unified hard-audit event; no pointer promotion inferred |
+
+
+## Latest user-turn root — POINT-0/018
+- Point: [POINT-0/018](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-018-LIVING-REGISTRATION-AND-NEXT-STEPS.md) — Stable ID `HAIF-POINT-0-018-LIVING-REGISTRATION-AND-NEXT-STEPS-20261025`.
+- Event: [EVT-0180](architecture/BEHAVIOR-TRACE/EVT-0180-USER-POINT-0-018-LIVING-REGISTRATION-AND-NEXT-STEPS-2026-10-25.md); repository time evidence: [TIME-BINDING-EVT-0180](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0180-POINT-0-018-2026-10-25.md).
+- Master: [HAIF Initial Model Master Reference](architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md).
+- 0.0 steps: reconcile CURRENT-065/CURRENT-066; separate historical recovery from live-pointer discovery; continue NEXT-051, Issues #20/#21 and BOART-FOLLOWUP-01; run final-SHA audit; reconcile all registries; independently test external/runtime capabilities.
+- Status: ROOT REGISTERED; downstream remediation and exact-final-main audit remain OPEN / NOT VERIFIED. NEXT-051 is preserved; no NEXT-052 placeholder.
