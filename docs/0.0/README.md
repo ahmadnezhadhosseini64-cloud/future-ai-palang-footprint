@@ -1517,3 +1517,10 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - Status: new point/event and checker/test source are registered; exact-head workflow result and runtime gates remain OPEN / NOT VERIFIED.
 
 - Repository time binding for POINT-0/019 and EVT-0181: [TIME-BINDING-EVT-0181](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0181-POINT-0-019-2026-10-25.md). POINT-0/019 final content commit: UTC `2026-10-25T07:56:47Z` → Tehran `2026-10-25T11:26:47+03:30`; EVT-0181 commit: UTC `2026-10-25T07:53:42Z` → Tehran `2026-10-25T11:23:42+03:30`. Exact user-message time remains UNKNOWN / UNVERIFIED.
+
+
+## POINT-0/020 — زنجیرهٔ تازهٔ خطای اشاره‌گر و بازیابی
+- ریشه: [POINT-0/020](./anchors/GPT6-RAHM-USER-POINT-0-20261025-020-LIVE-POINTER-FAILURE-AND-RECOVERY.md).
+- زنجیره: [IN-060](./anchors/PALANG-0.0-IN-20261025-060-LIVE-POINTER-FAILURE-AND-RECOVERY.md) → [OUT-059](./anchors/PALANG-0.0-OUT-20261025-059-LIVE-POINTER-FAILURE-AND-RECOVERY.md) → [EVT-0182](../architecture/BEHAVIOR-TRACE/EVT-0182-LIVE-POINTER-FAILURE-AND-RECOVERY-2026-10-25.md) → [CURRENT-067](./anchors/PALANG-0.0-CURRENT-20261025-067-LIVE-POINTER-FAILURE-AND-RECOVERY.md).
+- وضعیت: ثبت مخزن انجام شده؛ بازخوانی نهایی و نتیجهٔ CI پس از اصلاح parser در انتظار است. همهٔ گیت‌های اثبات‌نشده باز می‌مانند.
+- ادامهٔ اجرایی: [NEXT-051](./anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md) فعال است؛ NEXT-052 ساخته نشده است.
