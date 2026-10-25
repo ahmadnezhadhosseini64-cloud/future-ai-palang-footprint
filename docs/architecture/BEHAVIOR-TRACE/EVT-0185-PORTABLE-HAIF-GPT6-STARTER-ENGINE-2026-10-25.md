@@ -7,7 +7,7 @@
 - Root: [POINT-0/022](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-022-PORTABLE-STARTER-ENGINE.md)
 - IN: [IN-052](../../0.0/anchors/PALANG-0.0-IN-20261025-052-PORTABLE-STARTER-ENGINE.md)
 - OUT: [OUT-052](../../0.0/anchors/PALANG-0.0-OUT-20261025-052-PORTABLE-STARTER-ENGINE.md)
-- Current execution checkpoint: [CURRENT-069](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-069-PORTABLE-STARTER-ENGINE-AND-GATE-CLOSURE.md)
+- Time binding: [TIME-BINDING-EVT-0185](./TIME-BINDING-EVT-0185-POINT-0-022-2026-10-25.md)\n- Current execution checkpoint: [CURRENT-069](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-069-PORTABLE-STARTER-ENGINE-AND-GATE-CLOSURE.md)
 - Existing queue retained: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
 
 ## Implementation
@@ -52,3 +52,13 @@ Portable RAHM Conformance run [40198220828](https://github.com/ahmadnezhadhossei
 ## Acceptance boundary
 
 The local starter package passes its six automated tests on the tested revision. This does not prove native GPT plugin installation, independent GPT-host import, automatic capture, background execution, durable host memory or external repository writes.
+
+
+## Latest starter verification — run 40198462347
+
+- Result: SUCCESS on exact tested SHA \`f482083cc2aeab82964c271c5d97ba4bb8657ce1\`.
+- Seven starter tests passed, including clean-process CLI export/import and tamper rejection.
+- ZIP runner digest: \`7372007564d94f02807c41291ea6e0976e8899c2d1c37306c5978b30fe1399df\`.
+- Workflow evidence artifact: ID \`12600674334\`, digest \`sha256:aabb3b5bada3386804710a6566f5137fb8f435c1716bff854f6aff268ce611ef\`.
+- Independent GPT host import remains NOT PROVEN.
+- Separate portable manifest SHA inventory failure run 40198220828 remains OPEN.
