@@ -25,3 +25,10 @@ They prove the coded pointer parser no longer crashes on the observed date-beari
 - Independent-host, second-host, restart persistence, automatic capture/background execution, Buffer/Persistent Memory, Library normalization and external storage remain OPEN / NOT PROVEN / NOT VERIFIED. Dropbox remains inactive.
 
 Status: TESTED RECEIPTS REGISTERED; architectural reconciliation and external-runtime proof remain OPEN.
+
+
+## Fresh exact-head rerun after receipt integration
+- Tested commit: `383266b17d2b38a0114367877c4b9c39a6c4ef76`.
+- Living Architecture Audit [40182671790](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40182671790): SUCCESS; six pointer tests passed; live pointer remained AMBIGUOUS/BLOCKED with no winner; graph content remained REVIEW_REQUIRED. Audit artifact ZIP SHA-256 `c1bbb52be530e1185d128e16cbdeffa88962247528958b1e7f889d7056cd2a38`, artifact ID `12593579729`.
+- Portable conformance [40182671578](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40182671578): SUCCESS; four runtime tests, schema validation, bounded IN/OUT recovery, exact-byte scan and live-reference scan passed. Package: 119 files / 460365 bytes / SHA-256 `694bd886f4870abd8d812da342287bf75e3fa227ff08ea29bc03ca0bc703e7d2`. Package artifact ZIP SHA-256 `b173a21d242a78272ab8aa12a722b4ac88a75bf63f932e911edf7f0a4c03b699`, artifact ID `12594677105`.
+- These are the latest verified receipts before this receipt-note update. The canonical pointer conflict, graph review, independent-host proof, restart persistence, automatic capture/background execution and external storage remain OPEN.
