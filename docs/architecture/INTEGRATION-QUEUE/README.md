@@ -3,13 +3,13 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.8.3
+- Version: 1.8.4
 - Date: 2026-10-20
 - Exact Time: 11:25 local project time, minute precision; exact seconds not captured.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: نسخهٔ 1.8.0؛ CURRENT-056 / NEXT-050 و قاعدهٔ بدون فاصلهٔ خاموش به سند مادر متصل‌اند؛ آزمون سخت‌گیرانهٔ SHA-256 و طرح تعامل پاس شده؛ انتقال واقعی میزبان و رفع کامل گراف همچنان باز هستند. نسخهٔ پیشین 1.7.9 در تاریخچهٔ Git حفظ شده. پیشینه: قرارداد اجرای خودکار و تطبیق زنده LIARC-2026-10-20-001 و رویداد راستی‌آزمایی ساختمان ABV-2026-10-20-001 به صف پیوند خورده‌اند؛ ممیزی ساختاری قبلی موفق است، اما اجرای ممیزی پس از آخرین تغییرات باید جداگانه تأیید شود. Library، Buffer، Persistent Memory، capture سراسری گفتگو و آزمون سرتاسری مستقل هنوز تأیید نشده‌اند.
+- Status: CURRENT-059 linked; NEXT-051 remains OPEN/LIVING until its real acceptance gates pass; no successor NEXT created to disguise unfinished work.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
