@@ -1,4 +1,7 @@
 import copy
+import json
+import subprocess
+import sys
 import tempfile
 import unittest
 from pathlib import Path
@@ -59,6 +62,30 @@ class HaifStarterEngineTests(unittest.TestCase):
         tampered["payload"]["events"][0]["output"] = "tampered"
         with self.assertRaises(ValueError):
             import_bundle(tampered)
+
+    def test_clean_process_cli_export_import_round_trip(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            source = root / "source.json"
+            bundle_path = root / "bundle.json"
+            imported = root / "imported.json"
+            script = Path(__file__).with_name("engine.py")
+
+            def run(*args):
+                return subprocess.run(
+                    [sys.executable, str(script), *args],
+                    check=True, capture_output=True, text=True
+                )
+
+            run("--state", str(source), "init")
+            run("--state", str(source), "record", "--input", "cold-start input", "--output", "cold-start output")
+            bundle = run("--state", str(source), "export").stdout
+            bundle_path.write_text(bundle, encoding="utf-8")
+            imported_result = run("--state", str(imported), "import", str(bundle_path))
+            self.assertEqual(json.loads(imported_result.stdout)["result"], "IMPORTED_AND_VERIFIED")
+            audit_result = run("--state", str(imported), "audit")
+            self.assertEqual(json.loads(audit_result.stdout)["result"], "PASS")
+            self.assertEqual(json.loads(audit_result.stdout)["event_count"], 1)
 
     def test_atomic_file_readback(self):
         with tempfile.TemporaryDirectory() as directory:
