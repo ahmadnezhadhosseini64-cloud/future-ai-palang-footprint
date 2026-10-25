@@ -7,10 +7,12 @@
 - Root: [POINT-0/023](./GPT6-RAHM-USER-POINT-0-20261025-023-HARD-AUDIT-AND-ENGINE-HARDENING.md)
 - IN/OUT: [IN-053](./PALANG-0.0-IN-20261025-053-HARD-AUDIT-AND-ENGINE-HARDENING.md) / [OUT-053](./PALANG-0.0-OUT-20261025-053-HARD-AUDIT-AND-ENGINE-HARDENING.md)
 - Event: [EVT-0186](../../architecture/BEHAVIOR-TRACE/EVT-0186-HAIF-ENGINE-HARD-AUDIT-AND-ID-UNIQUENESS-2026-10-25.md)
+- Runtime smoke: [EVT-0187](../../architecture/BEHAVIOR-TRACE/EVT-0187-CLEAN-DISTRIBUTION-RUNTIME-SMOKE-2026-10-25.md)
 - Previous execution checkpoint: [CURRENT-069](./PALANG-0.0-CURRENT-20261025-069-PORTABLE-STARTER-ENGINE-AND-GATE-CLOSURE.md)
 - Existing historical queue: [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
 
 ## Completed in this checkpoint
+- Executed the cleaned package in a fresh runtime directory: init → record → audit → export → import into a second state file → audit. Every command passed; imported state identity and event head hash matched. See [EVT-0187](../../architecture/BEHAVIOR-TRACE/EVT-0187-CLEAN-DISTRIBUTION-RUNTIME-SMOKE-2026-10-25.md).
 - Hard-audited identifier validation and found missing uniqueness checks for interaction IN and OUT IDs.
 - Patched `prototype/haif-gpt6-starter/engine.py` to reject duplicates.
 - Added a regression test that recomputes the modified event hash and still expects rejection.
@@ -20,7 +22,7 @@
 
 ## Remaining gates — do not mark complete
 1. **[x] Clean current distribution:** rebuilt from the exact-head CI artifact; excluded `__pycache__`; extracted into a fresh directory; all 8 tests passed. ZIP SHA-256: `d68e03b42e26b88385d1155c02d09b213a53366e27e99518c7c049f6ec6563be`.
-2. **Target GPT-6 host execution:** import the clean ZIP into the intended host; check whether a Python execution tool exists; run the tests and a real init → record → audit → export → import → audit cycle. Record exact outputs and preserve the returned state bundle.
+2. **Target GPT-6 host execution (OPEN):** import the clean ZIP into the intended host; check whether a Python execution tool exists; run the tests and repeat the init → record → audit → export → import → audit cycle there. Record exact outputs and preserve the returned state bundle. Local-container execution is not host proof.
 3. **Host access:** verify GitHub connector presence and write/read-back permission in that host. The connection used in this conversation does not prove the target host has the same permission.
 4. **Persistence:** test restart and a new session/device only if the target host supports it. Otherwise mark BLOCKED / NOT AVAILABLE, not PASS.
 5. **Unresolved project graph:** continue NEXT-051; adjudicate CURRENT-065/CURRENT-066 only from provenance and consumer evidence; continue Issue #20, Issue #21 and BOART-FOLLOWUP-01.
