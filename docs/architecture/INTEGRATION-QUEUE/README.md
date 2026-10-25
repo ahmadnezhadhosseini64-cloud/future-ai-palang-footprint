@@ -3,7 +3,7 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.9.1
+- Version: 1.9.2
 - Date: 2026-10-20
 - Exact Time: 11:25 local project time, minute precision; exact seconds not captured.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
@@ -1917,3 +1917,5 @@ The source blob remained unchanged and Library version 7 was independently read 
 - Source addition: `scripts/behavior-hunter/discover_current_0_0_pointer.py` and fixture tests `scripts/behavior-hunter/tests/test_discover_current_0_0_pointer.py`; the Living Architecture Audit workflow invokes both. This is IMPLEMENTED IN REPOSITORY; runtime test result is pending exact-head evidence.
 - Expected gate: CURRENT-065/CURRENT-066 declarations remain AMBIGUOUS until provenance adjudication. The checker must not choose a winner.
 - Continue NEXT-051, Issue #20, Issue #21 and BOART-FOLLOWUP-01. No NEXT-052 placeholder. Independent host import, persistence, automatic capture and background execution remain OPEN / NOT PROVEN.
+
+- Time evidence: [TIME-BINDING-EVT-0181](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0181-POINT-0-019-2026-10-25.md); commit-based timestamps are recorded separately from tests and user-message time.
