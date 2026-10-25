@@ -1,7 +1,7 @@
 {
   "package_id": "HAIF-RAHM-CURRENT-062-OVERLAY-2026-10-25-001",
-  "version": "1.1.0",
-  "status": "12-FILE CURRENT-062 DELTA INVENTORY; CURRENT INPUT/OUTPUT RECOVERY AND WORKFLOW SOURCE INCLUDED; FINAL SHA-1 READ-BACK PENDING; EXACT-BYTE SHA-256 AND ARCHIVE NOT VERIFIED",
+  "version": "1.1.1",
+  "status": "12-FILE CURRENT-062 DELTA INVENTORY; FINAL GIT BLOB SHA-1 READ-BACK PASS (12/12); EXACT-BYTE SHA-256 AND ARCHIVE NOT VERIFIED",
   "parent_manifest": "docs/portable/RAHM/CURRENT-061-OVERLAY-MANIFEST.json",
   "checkpoint": "G6IP-CURRENT-062-20261025",
   "purpose": "Incremental continuity inventory for CURRENT-062, current input/output recovery pointers, the portable conformance workflow and the main export manifest. The parent overlay retains the prototype/adoption artifacts. This is not itself a complete release package.",
@@ -69,10 +69,10 @@
     }
   ],
   "release_gates": [
-    "Independently fetch all listed files after the final manifest update and compare Git blob SHA-1 values.",
-    "Run the current strict portable conformance workflow on the resulting main commit.",
-    "Read exact-byte SHA-256 values and archive hash from that run's evidence artifact.",
-    "Fetch and inspect package and recovery evidence artifacts.",
+    "Last independent repository read-back matched all 12/12 declared Git blob SHA-1 values; repeat after any listed file changes.",
+    "Run the current strict portable conformance workflow and read back its actual result.",
+    "Record exact-byte SHA-256 values and archive hash from the current workflow evidence.",
+    "Fetch and inspect the package and recovery evidence artifacts.",
     "Do not infer independent-host or runtime acceptance from repository CI."
   ]
 }
