@@ -15,7 +15,7 @@ OUT = ROOT / "audit-output"
 OUT.mkdir(exist_ok=True)
 
 FILES = {
-    "point0": "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-014-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md",
+    "point0": "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-015-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md",
     "in": "docs/0.0/anchors/PALANG-0.0-IN-20261025-059-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md",
     "out": "docs/0.0/anchors/PALANG-0.0-OUT-20261025-058-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md",
     "event": "docs/architecture/BEHAVIOR-TRACE/EVT-0174-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY-2026-10-25.md",
@@ -24,7 +24,7 @@ FILES = {
     "next": "docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md",
     "master": "docs/portable/RAHM/FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md",
     "manifest": "docs/portable/RAHM/CURRENT-065-OVERLAY-MANIFEST.json",
-    "failure_event": "docs/architecture/BEHAVIOR-TRACE/EVT-0161-DEEP-AUDIT-STALE-GATE-AND-NO-SILENT-GAP-2026-10-25.md",
+    "failure_event": "docs/architecture/BEHAVIOR-TRACE/EVT-0175-CURRENT-066-RECOVERY-VERIFIER-STALE-CHECKPOINT-2026-10-25.md",
     "index": "docs/REFERENCE_INDEX.md",
     "queue": "docs/architecture/INTEGRATION-QUEUE/README.md",
 }
@@ -38,12 +38,12 @@ EXPECTED = {
     "next": "G6IP-RAHM-NEXT-051-20261024",
 }
 GATE_MARKERS = {
-    "full_state_recovery": ("full independent external-host reconstruction", "Clean recovery round trip"),
-    "clean_host_import": ("clean independent AI-host import", "Test independent-host import"),
-    "second_host_import": ("second host", "restart recovery and second-host persistence"),
-    "persistence_restart": ("persistence restart", "restart recovery and second-host persistence"),
-    "idle_background": ("idle/background execution", "Automatic capture/external storage"),
-    "graph_triage": ("ambiguous parent", "NEXT-051 graph findings"),
+    "full_state_recovery": ("full independent external-host reconstruction", "clean export/import round trip"),
+    "clean_host_import": ("clean independent AI-host import", "real independent-host import"),
+    "second_host_import": ("second host", "second-host import"),
+    "persistence_restart": ("persistence restart", "restart persistence"),
+    "idle_background": ("idle/background execution", "automatic capture"),
+    "graph_triage": ("ambiguous parent", "graph triage"),
 }
 
 def read(name):
@@ -131,20 +131,20 @@ def reconstruct(start):
     for key, expected in EXPECTED.items():
         if ids.get(key) != expected:
             failures.append({"check": "stable_id", "node": key, "expected": expected, "actual": ids.get(key)})
-    if expected_parent == "point0" and not require_link("in", in_text, "GPT6-RAHM-USER-POINT-0-20261025-014"):
+    if expected_parent == "point0" and not require_link("in", in_text, "GPT6-RAHM-USER-POINT-0-20261025-015"):
         failures.append({"check":"IN_to_Point0"})
-    if expected_parent == "in" and not require_link("out", out_text, "PALANG-0.0-IN-20261025-058"):
+    if expected_parent == "in" and not require_link("out", out_text, "PALANG-0.0-IN-20261025-059"):
         failures.append({"check":"OUT_to_IN"})
     link_checks = [
-        ("point0", point0, "PALANG-0.0-IN-20261025-058"),
-        ("point0", point0, "PALANG-0.0-OUT-20261025-057"),
-        ("point0", point0, "EVT-0167-AUTONOMOUS"),
-        ("point0", point0, "PALANG-0.0-CURRENT-20261025-065"),
-        ("point0", point0, "EVT-0175-CURRENT-066"),
+        ("point0", point0, "PALANG-0.0-IN-20261025-059"),
+        ("point0", point0, "PALANG-0.0-OUT-20261025-058"),
+        ("point0", point0, "EVT-0174-OPEN-GAPS"),
+        ("point0", point0, "PALANG-0.0-CURRENT-20261025-066"),
+        ("point0", point0, "EVT-0174-OPEN-GAPS"),
         ("in", in_text, "PALANG-0.0-CURRENT-20261025-065"),
-        ("out", out_text, "EVT-0167-AUTONOMOUS"),
+        ("out", out_text, "EVT-0174-OPEN-GAPS"),
         ("out", out_text, "PALANG-0.0-CURRENT-20261025-065"),
-        ("event", event, "PALANG-0.0-CURRENT-20261025-065"),
+        ("event", event, "PALANG-0.0-CURRENT-20261025-066"),
         ("current", current, "PALANG-0.0-NEXT-20261024-051"),
         ("current", current, "CURRENT-065-OVERLAY-MANIFEST"),
         ("current", current, "EVT-0170-LIVE-MIRROR"),
@@ -168,7 +168,7 @@ def reconstruct(start):
     failure_event = read("failure_event")
     if "cause" not in failure_event.casefold() or "correction" not in failure_event.casefold():
         failures.append({"check":"failure_correction_lineage"})
-    if "NEXT-051" not in master or "CURRENT-059" not in master:
+    if "NEXT-051" not in master or "CURRENT-066" not in master:
         failures.append({"check":"portable_master_not_current"})
     if manifest.get("current_checkpoint") != "docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-066-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md":
         failures.append({"check":"manifest_checkpoint_mismatch","actual":manifest.get("current_checkpoint")})
