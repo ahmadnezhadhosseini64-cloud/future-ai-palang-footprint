@@ -695,3 +695,8 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - [EVT-0177](./EVT-0177-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md) records the fresh source/Library comparison: 10,479 vs 10,480 characters, edit distance 1, one extra trailing newline, semantic fields match, no redundant write.
 - [Time binding for EVT-0177](./TIME-BINDING-EVT-0177-LIVE-MIRROR-SYNC-2026-10-25.md) records the event's actual final-change commit UTC and derived Tehran time.
 - CURRENT-065 / NEXT-051 remain the execution continuation; POINT-0/016 is preserved as the user-turn point. The older CURRENT-064 note is historical. Exact-current-main Living Architecture Audit remains NOT VERIFIED.
+
+
+## EVT-0178 — unified Palang architecture hard audit
+- [EVT-0178](./EVT-0178-UNIFIED-PALANG-ARCHITECTURE-HARD-AUDIT-2026-10-25.md) records POINT-0/017, the one-project invariant, CURRENT-065/CURRENT-066 pointer conflict, verifier/manifest scope mismatch, identity-overlap risks and open gates.
+- The related user point is [POINT-0/017](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-017-UNIFIED-PALANG-ARCHITECTURE-HARD-AUDIT.md); all historical points remain preserved.
