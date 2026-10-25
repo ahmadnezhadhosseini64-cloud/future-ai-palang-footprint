@@ -1363,3 +1363,11 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 | HAIF-CURRENT-064 | `docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-064-NEXT-EXECUTION-AND-GAPS.md` | Current checkpoint, open gaps and ordered execution plan | Registered; tests and external capability gates remain open |
 
 Current continuation chain: POINT-0/013 → IN-057 → OUT-056 → EVT-0166 → CURRENT-064. Previous CURRENT-063 is preserved. NEXT-051 remains the active graph-triage work item; no successor NEXT was created. Registration does not imply tests passed or external hosts/persistence verified.
+
+
+## EVT-0167 — Live Library mirror recheck
+- Event: `docs/architecture/BEHAVIOR-TRACE/EVT-0167-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md`.
+- Time binding: `docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0167-LIVE-MIRROR-SYNC-2026-10-25.md`.
+- Canonical source: `docs/architecture/BEHAVIOR-OBSERVATORY/LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md`, blob `de1b75f07241c9b313e476af5f1417177ff78c10`.
+- Library version 7: independently read back; one trailing newline difference; semantic match PASS within tolerance; no write required.
+- Continuation remains CURRENT-064 / NEXT-051 per current main index and queue. Historical CURRENT-036 / NEXT-036 and NEXT-035 are preserved.
