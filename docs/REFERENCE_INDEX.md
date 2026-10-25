@@ -1534,3 +1534,11 @@ Current continuation chain: POINT-0/013 → IN-057 → OUT-056 → EVT-0166 → 
 - Current execution checkpoint: [CURRENT-071](./0.0/anchors/PALANG-0.0-CURRENT-20261025-071-0PLUS-ENGINE-AND-HARD-AUDIT.md)
 - Portable engine: [engine.py](../prototype/haif-gpt6-starter/engine.py); tests: [test_engine.py](../prototype/haif-gpt6-starter/test_engine.py); host instructions: [GPT6_HOST_INSTRUCTIONS.md](../prototype/haif-gpt6-starter/GPT6_HOST_INSTRUCTIONS.md).
 - Canonical rule: 0 and 0+ are labels on one canonical point; 0.0 is a parent-linked continuation. Host integration remains unproven.
+
+
+## EVT-0189 — clean v0.2.1 package and local cold-start proof
+- Event: [EVT-0189](./architecture/BEHAVIOR-TRACE/EVT-0189-0PLUS-CLEAN-DISTRIBUTION-SMOKE-2026-10-25.md)
+- Time binding: [EVT-0189 time](./architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0189-CLEAN-DISTRIBUTION-2026-10-25.md)
+- Root: [POINT-0/024 (0+)](./0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-024-0PLUS-PRODUCTION-MARKER.md)
+- Current continuation: [CURRENT-071](./0.0/anchors/PALANG-0.0-CURRENT-20261025-071-0PLUS-ENGINE-AND-HARD-AUDIT.md)
+- Clean ZIP SHA-256: `51a5f9a6def97a0564a8b6542bbf4a5b9ca46a81a267a4a02db7c53511e16f2d`; 12/12 fresh-extract tests passed.
