@@ -33,7 +33,7 @@ EXPECTED = {
     "out": "G6IP-RAHM-OUT-051-20261025",
     "event": "G6IP-RAHM-EVT-0161-20261025",
     "current": "G6IP-RAHM-CURRENT-059-20261025",
-    "prior_current": "G6IP-RAHM-CURRENT-059-20261024",
+    "prior_current": "G6IP-RAHM-CURRENT-058-20261024",
     "next": "G6IP-RAHM-NEXT-051-20261024",
 }
 GATE_MARKERS = {
@@ -191,7 +191,7 @@ def main():
     state_keys = ("canonical_current", "active_next", "lineage_ids", "versions", "manifest_version", "manifest_file_count", "open_gates")
     equivalent = all(from_in[k] == from_out[k] for k in state_keys)
     report = {
-        "test_id": "RAHM-CURRENT-059-IN-OUT-STATE-RECOVERY-2026-10-24-001",
+        "test_id": "RAHM-CURRENT-059-IN-OUT-STATE-RECOVERY-2026-10-25-001",
         "scope": "Repository current-chain reconstruction from independent IN and OUT starting anchors; not a real external-host import.",
         "from_IN": from_in,
         "from_OUT": from_out,
