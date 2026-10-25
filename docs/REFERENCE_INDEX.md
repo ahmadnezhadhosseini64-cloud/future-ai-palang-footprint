@@ -1371,3 +1371,13 @@ Current continuation chain: POINT-0/013 → IN-057 → OUT-056 → EVT-0166 → 
 - Canonical source: `docs/architecture/BEHAVIOR-OBSERVATORY/LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md`, blob `de1b75f07241c9b313e476af5f1417177ff78c10`.
 - Library version 7: independently read back; one trailing newline difference; semantic match PASS within tolerance; no write required.
 - Continuation remains CURRENT-064 / NEXT-051 per current main index and queue. Historical CURRENT-036 / NEXT-036 and NEXT-035 are preserved.
+
+
+## CURRENT-065 — Point 0/014
+
+- Point: `docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-014-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md`
+- Input: `docs/0.0/anchors/PALANG-0.0-IN-20261025-058-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md`
+- Output: `docs/0.0/anchors/PALANG-0.0-OUT-20261025-057-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md`
+- Event: `docs/architecture/BEHAVIOR-TRACE/EVT-0167-AUTONOMOUS-CONTINUITY-AND-RECOVERY-2026-10-25.md`
+- Current checkpoint: `docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-065-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md`
+- Status: chain registered; execution gates remain open. NEXT-051 remains the active graph audit.
