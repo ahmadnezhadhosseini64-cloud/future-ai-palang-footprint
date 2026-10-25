@@ -19,17 +19,17 @@
 - [x] Add portable bundle export/import with SHA-256 and atomic local write/read-back.
 - [x] Add GPT-6 host instructions, manifest, state schema and unit tests.
 - [x] Wire starter unit tests and package/schema checks into Living Architecture Audit.
-- [ ] Read actual CI run and artifact after the exact package commit; no PASS may be inferred from workflow configuration.
-- [ ] Fix any test failure, then re-run and inspect logs.
+- [x] Read actual CI run and artifact: Living Architecture Audit run 40198462347 on tested SHA f482083cc2aeab82964c271c5d97ba4bb8657ce1; no PASS was inferred from workflow configuration.
+- [x] Re-ran after adding clean-process recovery; seven tests pass and logs were inspected.
 
 ## C1 — make the package usable in a GPT-6 host
-- [ ] Verify the exported ZIP/package artifact is present and downloadable from the workflow run.
-- [ ] Verify instructions, manifest, schema and a portable state bundle can be imported without losing identity/provenance.
+- [x] ZIP generated and included in workflow artifact 12600674334; artifact metadata read back. Independent download-and-open by a separate client remains pending.
+- [x] Clean-process CLI export/import passed; imported state retained identity and passed audit with one interaction event. Separate GPT-host import remains open.
 - [ ] Test on an independent GPT host, if a real host/import mechanism is available; otherwise record NOT RUN with blocker.
 - [ ] Keep host-native memory, automatic capture, background execution and external write permissions OPEN until directly tested.
 
 ## C2 — CURRENT-068 closure, evidence by evidence
-- [ ] Close only sub-gates proven complete by exact-revision evidence.
+- [x] Closed the local starter-engine unit-test, state-hash tamper detection, proof-gated gap/Child transitions, local file read-back and clean-process bundle round-trip sub-gates for tested SHA f482083. Other CURRENT-068 gates remain open and are carried forward.
 - [ ] Keep pointer adjudication CURRENT-065/CURRENT-066 unresolved until provenance and consumers are reconciled.
 - [ ] Keep historical graph review, Issue #20, Issue #21 and BOART-FOLLOWUP-01 in existing NEXT-051.
 - [ ] Keep hash-failure injection and independent-host persistence open unless directly tested.
@@ -56,3 +56,13 @@ The starter can be called a local executable prototype only after its tests pass
 - [ ] Continue CURRENT-065/CURRENT-066 adjudication and NEXT-051 graph work.
 
 A separate Portable RAHM Conformance run [40198220828](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40198220828) failed its exact-byte manifest inventory SHA scan. This remains an open repository-integrity issue; the starter test PASS does not close it.
+
+
+## Exact test receipt — 2026-10-25
+
+- Living Architecture Audit [40198462347](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40198462347): SUCCESS; tested SHA \`f482083cc2aeab82964c271c5d97ba4bb8657ce1\`.
+- Starter suite: 7 passed — independent anchor/IN/OUT IDs; event tamper detection; proof-gated gap closure; proof-gated Child promotion; portable digest tamper detection; atomic local read-back; clean-process CLI export/import recovery.
+- ZIP: \`haif-gpt6-starter-v0.1.zip\`; runner SHA-256 \`7372007564d94f02807c41291ea6e0976e8899c2d1c37306c5978b30fe1399df\`.
+- Uploaded audit artifact: ID \`12600674334\`, artifact digest \`sha256:aabb3b5bada3386804710a6566f5137fb8f435c1716bff854f6aff268ce611ef\`.
+- A separate Portable RAHM Conformance run [40198220828](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40198220828) failed its exact-byte manifest inventory SHA scan. This remains open and must be reconciled separately.
+- CURRENT-068 is now superseded as the active execution checkpoint, with locally proven sub-gates closed by this receipt. It is not globally "all gates closed": pointer ambiguity, historic graph review, external-host import, host durability, automatic capture, background execution and external storage remain OPEN. CURRENT-069 carries these forward.
