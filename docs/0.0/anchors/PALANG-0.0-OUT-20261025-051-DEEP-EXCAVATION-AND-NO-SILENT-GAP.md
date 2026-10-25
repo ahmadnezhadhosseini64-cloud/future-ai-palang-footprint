@@ -3,7 +3,7 @@
 - Stable ID: `G6IP-RAHM-OUT-051-20261025-ALT-001`
 - Production ID: `G6IP-OUT-051-ALT-001`
 - Version: 1.0.0
-- Status: ARCHIVED PARALLEL DRAFT / NON-CANONICAL; retained as audit evidence after collision detection. The canonical branch is [G6IP-RAHM-OUT-051-20261025-ALT-001](../../0.0/anchors/PALANG-0.0-OUT-20261025-051-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md) where path context permits.
+- Status: ARCHIVED PARALLEL DRAFT / NON-CANONICAL; retained as audit evidence after collision detection. Canonical operational branch is recorded in the portable living master.
 - Input: [IN-052](./PALANG-0.0-IN-20261025-052-DEEP-EXCAVATION-AND-NO-SILENT-GAP.md)
 - Point 0: [POINT-0/008](./GPT6-RAHM-USER-POINT-0-20261025-008-DEEP-EXCAVATION-AND-NO-SILENT-GAP.md)
 - Event: [EVT-0161](../../architecture/BEHAVIOR-TRACE/EVT-0161-DEEP-EXCAVATION-NO-SILENT-GAP-2026-10-25.md)
