@@ -2,7 +2,7 @@
 
 - Stable ID: `G6IP-RAHM-OUT-051-20261025`
 - Production ID: `G6IP-OUT-051`
-- Version: 1.0.1
+- Version: 1.0.2
 - Status: REGISTERED / READ-BACK VERIFIED for this record; strict repository conformance PASS; global graph REVIEW_REQUIRED and real-host gates OPEN.
 - Input: [IN-052](./PALANG-0.0-IN-20261025-052-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md)
 - Prior checkpoint: [CURRENT-058](./PALANG-0.0-CURRENT-20261024-058-DEEP-EXCAVATION-EXECUTION-RECEIPTS.md)
