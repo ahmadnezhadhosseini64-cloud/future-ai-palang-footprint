@@ -1473,3 +1473,10 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - [EVT-0172](../architecture/BEHAVIOR-TRACE/EVT-0172-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md) records the current Library mirror comparison; no redundant write was needed.
 - [EVT-0173](../architecture/BEHAVIOR-TRACE/EVT-0173-CURRENT-065-EXACT-MAIN-AUDIT-FAILURE-AND-CORRECTION-2026-10-25.md) preserves the exact-main audit failure and the POINT-0/014 explicit-link repair.
 - CURRENT-065 remains current; NEXT-051 remains active. CURRENT-036/NEXT-036 and NEXT-035 remain preserved historical anchors.
+
+
+## Latest preserved point — POINT-0/016 (2026-10-25)
+- [POINT-0/016 — Mirror delta and architecture recovery](./anchors/GPT6-RAHM-USER-POINT-0-20261025-016-MIRROR-DELTA-AND-ARCHITECTURE-RECOVERY.md) — REGISTERED / repository read-back matched; Library newline normalization remains OPEN until independent write/read-back.
+- Event: [EVT-0176](../architecture/BEHAVIOR-TRACE/EVT-0176-USER-POINT-0-016-MIRROR-DELTA-AND-ARCHITECTURE-RECOVERY-2026-10-25.md).
+- Living master: [HAIF Initial Model Master Reference](../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md).
+- Prior anchors are preserved. NEXT-051 remains open; no successor NEXT is minted while its acceptance criteria remain incomplete.
