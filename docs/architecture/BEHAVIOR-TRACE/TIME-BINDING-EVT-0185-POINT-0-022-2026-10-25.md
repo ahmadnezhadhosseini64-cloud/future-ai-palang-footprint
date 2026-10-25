@@ -58,3 +58,15 @@ The exact user-message timestamp remains UNKNOWN / UNVERIFIED.
 | Living master update | dc7689c454684759740a6ea4fa0d53a5c763a3c5 | 2026-10-25T13:42:50Z | 2026-10-25T17:12:50+03:30 |
 
 The earlier CURRENT-069 evidence update commit 4a6500bff8c89beb339c88322fff93672a6e9ff1 occurred at 2026-10-25T13:38:50Z (2026-10-25T17:08:50+03:30). The user-message timestamp remains UNKNOWN / UNVERIFIED.
+
+
+## Latest cross-index read-back commit times
+
+| Surface | Commit SHA | Repository time UTC | Asia/Tehran (+03:30) |
+|---|---|---|---|
+| 0.0 registry | 4dce5e5a919499a9d016b4949c3968e339e8fd7c | 2026-10-25T13:34:44Z | 2026-10-25T17:04:44+03:30 |
+| Reference Index | ceafdb02db3a9a08ada9872f53cf1fb7c06fd88a | 2026-10-25T13:44:28Z | 2026-10-25T17:14:28+03:30 |
+| Behavior-trace index | f740be4f19064c6330cdee965d96d89eadea4148 | 2026-10-25T13:44:40Z | 2026-10-25T17:14:40+03:30 |
+| Integration queue index | cd2ade83e08b718992eb0d94ed2730037ffaa980 | 2026-10-25T13:44:52Z | 2026-10-25T17:14:52+03:30 |
+
+The exact user-message timestamp remains UNKNOWN / UNVERIFIED.
