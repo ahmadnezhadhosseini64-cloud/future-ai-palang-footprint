@@ -1439,3 +1439,7 @@ Current continuation chain: POINT-0/013 → IN-057 → OUT-056 → EVT-0166 → 
 
 | PALANG-EVT-0177-LIVE-MIRROR-SYNC-2026-10-25 | `docs/architecture/BEHAVIOR-TRACE/EVT-0177-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md` | Fresh recurring comparison of canonical source and Library version 7; one trailing-newline delta; semantic fields match within tolerance | Registered; source and Library independently read; no redundant write; exact-current-main architecture audit remains NOT VERIFIED |
 | PALANG-TIME-BINDING-EVT-0177-2026-10-25 | `docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0177-LIVE-MIRROR-SYNC-2026-10-25.md` | Canonical UTC event registration time and derived Tehran time for EVT-0177 | Registered; timestamp is bound to actual event file final-change commit |
+
+
+| HAIF-POINT-0-017-UNIFIED-PALANG-HARD-AUDIT-20261025 | `docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-017-UNIFIED-PALANG-ARCHITECTURE-HARD-AUDIT.md` | User's new audit point; one-project invariant, pointer conflict, verifier/manifest scope, identity overlap and external-proof boundaries | Registered; read-back pending |
+| HAIF-EVT-0178-UNIFIED-PALANG-HARD-AUDIT-20261025 | `docs/architecture/BEHAVIOR-TRACE/EVT-0178-UNIFIED-PALANG-ARCHITECTURE-HARD-AUDIT-2026-10-25.md` | Hard-audit event and ordered remediation gates | Registered; read-back pending |
