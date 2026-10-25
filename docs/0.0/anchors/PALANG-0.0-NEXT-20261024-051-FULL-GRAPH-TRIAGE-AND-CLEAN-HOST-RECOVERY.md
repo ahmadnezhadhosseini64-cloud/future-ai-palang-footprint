@@ -2,7 +2,7 @@
 
 - Stable ID: `G6IP-RAHM-NEXT-051-20261024`
 - Production ID: `G6IP-NEXT-051`
-- Version: 1.0.8
+- Version: 1.0.9
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE.
 - Historical parent: [CURRENT-057](./PALANG-0.0-CURRENT-20261024-057-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md) (historical; current parent is CURRENT-059 as specified below).
 - Preserve existing gates: [NEXT-050](./PALANG-0.0-NEXT-20261024-050-FULL-RECOVERY-AND-REAL-HOST-IMPORT.md), [NEXT-049](./PALANG-0.0-NEXT-20261024-049-REAL-HOST-TRANSFER-AND-GRAPH-AUDIT.md)
@@ -149,3 +149,14 @@ NEXT-051 remains OPEN/LIVING until all remaining acceptance gates are satisfied;
 - **Completed gates for this cycle:** stable core digest scan; live-reference snapshot hashing; schema positive/negative fixtures; repository IN/OUT recovery equivalence; archive build and ZIP integrity test; focused link verification; correction of stale RAHM_BOOT and RAHM_ARCHITECTURE checkpoint pointers to CURRENT-059.
 - **Still OPEN:** individually adjudicate graph collisions/parent/time/duplicate groups; clean independent AI-host import; second-host import; actual persistent-memory restart; automatic live interaction capture; idle/background execution. The CPREL two-runtime CI transfer is synthetic and is not a real AI-host import.
 - **No-successor rule:** do not create NEXT-052. Continue adding execution receipts and individually resolved findings to this NEXT-051 until its acceptance criteria are genuinely satisfied.
+
+
+## CURRENT-061 execution receipt — prototype/adoption and graph adjudication setup
+- [x] Added prototype source, acceptance procedure and adoption fixture; see [OUT-053](./PALANG-0.0-OUT-20261025-053-PROTOTYPE-GRAPH-CLOSURE.md).
+- [x] Added the non-destructive [graph adjudication register](../../reference/REFERENCE-DOCUMENTS/ARCHITECTURE-GRAPH-ADJUDICATION-AND-CLOSURE-REGISTER-2026-10-25-001.md), including per-occurrence evidence requirements and rules preventing false collision closure.
+- [x] Preserved historical graph snapshots as commit/scope-specific evidence rather than mixing the counts.
+- [ ] Fresh current-commit graph inventory and occurrence-level manifest: NOT RUN / NOT VERIFIED in this execution.
+- [ ] Group-by-group Stable ID, Production ID, Reference ID, EVT, parent, timestamp and duplicate adjudication: OPEN / REVIEW_REQUIRED.
+- [ ] Current strict export manifest/digest and package rebuild after CURRENT-061 artifacts: NOT RUN / NOT VERIFIED.
+- [ ] Real clean-host/second-host import, actual persistence restart and idle/background runtime tests: OPEN.
+- Rule retained: no NEXT-052 while this NEXT-051 acceptance set is still open.
