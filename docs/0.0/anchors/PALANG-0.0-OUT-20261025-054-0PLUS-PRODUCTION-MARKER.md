@@ -34,3 +34,10 @@ Final exact-head CI and clean distribution packaging are not marked PASS until r
 - Direct CLI 0/0+ → 0.0 → interaction → audit → export → import → audit: PASS; imported state ID and head hash matched.
 - Detailed receipt: [EVT-0189](../../architecture/BEHAVIOR-TRACE/EVT-0189-0PLUS-CLEAN-DISTRIBUTION-SMOKE-2026-10-25.md); time binding [EVT-0189 time](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0189-CLEAN-DISTRIBUTION-2026-10-25.md).
 - Still open: independent GPT-6 host import, host-side Python availability, durable memory/restart across host sessions/devices, automatic capture, background execution and external writes.
+
+
+## Superseding release — v0.3.0 one-command bootstrap
+- v0.3.0 clean package and bootstrap proof: [EVT-0190](../../architecture/BEHAVIOR-TRACE/EVT-0190-0PLUS-BOOTSTRAP-CLEAN-PACKAGE-2026-10-25.md).
+- SHA-256: `297b3b329143c4b99f55373db0c4bb97896b0e484253622e63eeb32a4429f164`; 13/13 CI and fresh-extract tests passed.
+- This supersedes the v0.2.1 distribution for handoff. Use v0.3.0 for new installations.
+- Independent GPT-6 host runtime and persistence remain open.
