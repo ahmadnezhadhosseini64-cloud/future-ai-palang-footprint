@@ -45,3 +45,9 @@ Continue NEXT-051 in this order: verify the current manifest and workflow receip
 - Portable overlay: [CURRENT-065-OVERLAY-MANIFEST](../../portable/RAHM/CURRENT-065-OVERLAY-MANIFEST.json).
 - Recovery verifier defect: [EVT-0175](../../architecture/BEHAVIOR-TRACE/EVT-0175-CURRENT-066-RECOVERY-VERIFIER-STALE-CHECKPOINT-2026-10-25.md).
 - Clean round-trip recovery remains OPEN until the exact current revision passes the recovery verifier and a current artifact is inspected.
+
+
+## Latest verified execution receipt
+- [Run 40170382405](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40170382405) passed the CURRENT-066 IN/OUT canonical-state reconstruction on SHA `b366166df47cdd6e6bbe29ce2cb0cfd768dccfdd`; IN and OUT both RECOVERED, canonical states equivalent, all six gates preserved OPEN.
+- The same audit reported REVIEW_REQUIRED for the wider graph and one ambiguous timestamp. Three EVT-0164 local links were corrected in commit `e91d5c77e955f7d1e8b1588703a09d95db187042`; audit of that newer exact revision is pending.
+- Artifact ZIP SHA-256: `b12332ff0bed16071342ae3bf52e305800c2b48defe80603b329aa834b5015ff`. This digest identifies the audit artifact, not a clean-host import.
