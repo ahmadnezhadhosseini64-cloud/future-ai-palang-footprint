@@ -731,3 +731,5 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - The event records the request to make this interaction the new Point 0, move all open work to the next 0.0, and bring the initial model to an evidenced local acceptance baseline.
 - Root-cause lessons: incorrect branch selection toward Dropbox; parser tests did not represent date-bearing CURRENT filenames.
 - EVT-0183 receipts remain bounded to tested commits. CURRENT-065/CURRENT-066 and full graph review remain OPEN; NEXT-051 remains active.
+
+- Time binding for EVT-0184 / POINT-0/021 / CURRENT-068: [TIME-BINDING-EVT-0184](./TIME-BINDING-EVT-0184-POINT-0-021-CURRENT-068-2026-10-25.md); UTC commit timestamps and derived Tehran equivalents are recorded separately from the unknown user-message time.
