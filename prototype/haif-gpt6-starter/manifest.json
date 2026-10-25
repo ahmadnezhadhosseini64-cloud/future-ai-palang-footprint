@@ -1,0 +1,35 @@
+{
+  "package_schema": "haif-gpt6-starter/0.1",
+  "stable_id": "HAIF-GPT6-PORTABLE-STARTER-20261025-001",
+  "production_id": "HAIF-G6PS-20261025-001",
+  "version": "0.1.0",
+  "project": "Future AI / Palang Footprint",
+  "canonical_repository": "https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint",
+  "parent_architecture": [
+    "HAIF-INITIAL-MODEL-MASTER-REFERENCE-2026-10-21-001",
+    "POINT-0/022",
+    "CURRENT-069",
+    "NEXT-051"
+  ],
+  "entrypoint": "engine.py",
+  "host_instructions": "GPT6_HOST_INSTRUCTIONS.md",
+  "state_schema": "haif-gpt-starter-state/0.1",
+  "portable_bundle_schema": "haif-portable-bundle/0.1",
+  "runtime": "Python 3.10+ standard library",
+  "capabilities": [
+    "append-only hash-chained interaction events",
+    "independent anchor, IN and OUT identifiers",
+    "explicit open-gap register with evidence-gated closure",
+    "Master-Child promotion gate with test evidence",
+    "portable bundle export/import with SHA-256 verification",
+    "atomic local state writes and read-back verification"
+  ],
+  "not_proven": [
+    "native GPT plugin execution",
+    "automatic capture of all host messages",
+    "background or idle execution",
+    "independent host durable memory",
+    "external repository writes without a connector",
+    "cross-device persistence"
+  ]
+}
