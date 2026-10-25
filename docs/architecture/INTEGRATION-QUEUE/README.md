@@ -1810,3 +1810,6 @@ The current repository-chain IN/OUT equivalence subgate is PASS. NEXT-051 remain
 
 
 | G6IP-CHAIN-RECOVERY-AUDIT-2026-10-25-001 | بازیابی و ممیزی همهٔ نقاط ۰ و ۰.۰ از طرح اولیه تا معماری فعلی؛ تفکیک ثبت از تکمیل واقعی؛ ثبت درس خطای تغییر مسیر به Dropbox | OPEN / PARTIAL — زنجیرهٔ جدید بازخوانی شده و ۲۵ پیوند در ۱۱ مقصد محلی بدون مقصد گمشده تطبیق شد؛ ممیزی سراسری و دروازه‌های اجرایی هنوز بازند؛ NEXT-051 همچنان باز است | سند مادر مدل اولیه، سند مادر زنده، نمایهٔ مرجع، دفتر رفتار، صف ۰.۰، بستهٔ RAHM و دروازه‌های آزمون | [CURRENT-060](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-060-CHAIN-RECOVERY-AUDIT.md) |
+
+
+| G6IP-CURRENT-061-20261025 | ساخت نمونهٔ تعاملی واقعی، آماده‌سازی آزمون پروژهٔ تازه و حاکمیت داوری موردبه‌مورد گراف | PARTIAL — نمونهٔ HTML و fixture ایجاد و بازخوانی شد؛ ۳۱ رخداد پیوند در ۱۴ مقصد محلی بدون مقصد گمشده؛ آزمون مرورگر/میزبان مستقل، SHA-256 بستهٔ جاری و داوری معنایی سراسری هنوز باز است | [CURRENT-061](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-061-PROTOTYPE-AND-GRAPH-TRIAGE.md); [NEXT-039](../../0.0/anchors/PALANG-0.0-NEXT-20261024-039-BUILD-INTERACTIVE-PROTOTYPE.md); [NEXT-040](../../0.0/anchors/PALANG-0.0-NEXT-20261024-040-FRESH-PROJECT-ADOPTION-TEST.md); [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md) | OPEN / LIVING |
