@@ -32,7 +32,7 @@ The model must grow beyond documentation into a small, executable, portable, evi
 - Add an independent discovery check that detects candidate checkpoints and registry/manifest declarations. If evidence conflicts, return AMBIGUOUS/BLOCKED with the conflicting sources; never choose by filename or number alone.
 - Keep the existing historical CURRENT-066 reconstruction test separate from live-pointer discovery.
 - Acceptance: fixture tests cover one candidate, consistent multiple references, conflict, missing target and malformed checkpoint; report includes candidate paths, source declarations and exit status.
-- Status: implementation in progress; run on exact main SHA required.
+- Status: checker, fixture tests and CI wiring are IMPLEMENTED IN REPOSITORY; exact-head test result and generated artifact are PENDING / NOT VERIFIED.
 
 ### 0.0-02 — make the local continuity runtime a tested foundation
 - Inspect and test `scripts/haif-runtime/haif_runtime.py` and its test suite.
