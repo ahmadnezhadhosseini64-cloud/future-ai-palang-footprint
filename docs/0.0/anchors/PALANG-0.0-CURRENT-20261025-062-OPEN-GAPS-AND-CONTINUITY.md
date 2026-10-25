@@ -2,7 +2,7 @@
 
 - Stable ID: G6IP-CURRENT-062-20261025
 - Production ID: G6IP-CURRENT-062
-- Version: 1.0.2
+- Version: 1.0.3
 - Parent checkpoint: [CURRENT-061](./PALANG-0.0-CURRENT-20261025-061-PROTOTYPE-AND-GRAPH-TRIAGE.md)
 - User Point 0: [POINT-0/011](./GPT6-RAHM-USER-POINT-0-20261025-011-OPEN-GAPS-AND-CONTINUITY.md)
 - Interaction chain: [IN-055](./PALANG-0.0-IN-20261025-055-OPEN-GAPS-AND-CONTINUITY.md) → [OUT-054](./PALANG-0.0-OUT-20261025-054-OPEN-GAPS-AND-CONTINUITY.md) → [EVT-0164](../../architecture/BEHAVIOR-TRACE/EVT-0164-OPEN-GAPS-AND-CONTINUITY-2026-10-25.md) → CURRENT-062.
@@ -42,10 +42,13 @@ Status: NEW CURRENT 0.0 POINT; full acceptance remains OPEN pending evidence.
 
 ## Final repository read-back receipt — 2026-10-25
 - [x] Read back Point 0/011, IN-055, OUT-054, EVT-0164 and CURRENT-062 from the repository.
-- [x] Parsed the CURRENT-062 overlay manifest as valid JSON. After the checkpoint receipt was finalized, the manifest's CURRENT-062 blob entry was refreshed and final independent read-back matched all 10/10 declared Git blob SHA-1 values.
+- [x] Parsed the CURRENT-062 overlay manifest as valid JSON. After the checkpoint receipt was finalized, the manifest's CURRENT-062 blob entry was refreshed and final independent read-back matched all 12/12 declared Git blob SHA-1 values.
 - [x] Focused Markdown-link audit across the five chain records after synchronizing IN/OUT with the current checkpoint: 43 local Markdown link occurrences, 16 unique local targets, all 16 targets fetched successfully; no missing targets in this focused scope.
 - [x] Read-back retrieved the living mother, canonical index, integration queue, graph adjudication register, NEXT-051 and manifest.
 - [x] Corrected the portable conformance workflow's stale recovery target from IN-052 / OUT-051 → CURRENT-059 to IN-055 / OUT-054 → CURRENT-062; test expectations now also include NEXT-051, the initial-model mother and the CURRENT-062 manifest.
+- [x] Updated the main portable export manifest `docs/portable/RAHM/EXPORT_MANIFEST.json` to v1.6.9 and added the CURRENT-061/CURRENT-062 chains, prototype/adoption assets and both overlays as live references. JSON structural check: 41 pinned core files + 31 live references = 72 unique paths, no duplicate package paths; the new required paths are present.
+- [x] Static recovery preflight on repository-fetched IN-055 and OUT-054 confirms each independently links CURRENT-062, NEXT-051, the initial-model mother and the CURRENT-062 overlay manifest, with open-gate language preserved. This mirrors the workflow assertions but is not a GitHub Actions pass.
+- [ ] Combined commit-status query returned no status entries for the latest manifest commit; do not interpret this as a passing conformance or audit run.
 - [ ] Post-correction workflow execution: NOT RUN / NOT VERIFIED at this receipt; source alignment is not a passing CI result.
 - [ ] Exact-byte SHA-256 and actual export archive: NOT RUN / NOT VERIFIED.
 - [ ] Current repository-wide occurrence-level semantic graph audit: OPEN / REVIEW_REQUIRED.
