@@ -2,7 +2,7 @@
 
 - Stable ID: `G6IP-RAHM-EVT-0161-20261025`
 - Production ID: `G6IP-EVT-0161`
-- Version: 1.0.1
+- Version: 1.0.2
 - Status: REGISTERED / READ-BACK VERIFIED; corrected conformance PASS; repository graph REVIEW_REQUIRED; real-host/runtime gates OPEN.
 - Input: [IN-052](../../0.0/anchors/PALANG-0.0-IN-20261025-052-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md)
 - Output: [OUT-051](../../0.0/anchors/PALANG-0.0-OUT-20261025-051-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md)
