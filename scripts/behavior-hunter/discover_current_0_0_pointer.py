@@ -21,7 +21,7 @@ REGISTRY_SOURCES = {
 }
 
 CURRENT_PATH = re.compile(r"docs/0\.0/anchors/(PALANG-0\.0-CURRENT-[^\s)`]+\.md)")
-CURRENT_ID = re.compile(r"\bCURRENT-(\d{3})\b")
+CURRENT_ID = re.compile(r"\bCURRENT-(?:\d{8}-)?(\d{3})\b")
 
 
 def explicit_registry_claims(text: str, source: str) -> list[dict]:
