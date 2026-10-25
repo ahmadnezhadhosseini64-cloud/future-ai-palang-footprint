@@ -2,9 +2,9 @@
 
 - Stable ID: ARCHITECTURE-GRAPH-ADJUDICATION-AND-CLOSURE-REGISTER-2026-10-25-001
 - Production ID: AGACR-20261025-001
-- Version: 1.0.0
+- Version: 1.0.1
 - Status: ACTIVE / LIVING / OPEN-PARTIAL
-- Current anchor: [CURRENT-061](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-061-PROTOTYPE-AND-GRAPH-TRIAGE.md)
+- Current anchor: [CURRENT-062](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-062-OPEN-GAPS-AND-CONTINUITY.md)
 - Active queue: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
 - Historical semantic adjudication source: [H0IRAR](./HISTORICAL-0.0-IDENTIFIER-AND-RELATION-ADJUDICATION-REGISTER-2026-10-21-001.md)
 - Historical semantic queue snapshot: [H0SRQS](./HISTORICAL-0.0-SEMANTIC-REVIEW-QUEUE-SNAPSHOT-2026-10-21-001.md)
@@ -41,3 +41,13 @@ Historical snapshots disagree because they used different commits, source-file s
 
 ## Current result
 Governance gap corrected: the project now has an explicit decision contract and non-destructive closure rules. The graph findings themselves are NOT CLOSED by creating this register. Full current occurrence-level adjudication remains OPEN / REVIEW_REQUIRED.
+
+
+## CURRENT-062 execution handoff — 2026-10-25
+- The next current checkpoint is [CURRENT-062](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-062-OPEN-GAPS-AND-CONTINUITY.md); its ordered plan retains the existing active queue [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- The current baseline has not been freshly enumerated at occurrence level by this register update. Historical counts remain historical and must not be relabeled as current counts.
+- Immediate sequence: current-commit graph inventory → grouped occurrence manifest → per-group role and parent/source judgment → conservative correction only with evidence → post-fix read-back and regression run.
+- A new Point 0 or checkpoint does not close old groups. Empty/missing evidence is an OPEN gate, not a clean result.
+- Runtime gates and package digest are tracked separately from semantic graph integrity.
+
+Status: governance remains ACTIVE / LIVING; all unadjudicated graph groups remain OPEN / REVIEW_REQUIRED.
