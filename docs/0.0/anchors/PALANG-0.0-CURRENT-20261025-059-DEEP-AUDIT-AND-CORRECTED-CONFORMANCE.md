@@ -38,3 +38,13 @@
 ## Resume rule
 
 Continue NEXT-051. Do not create NEXT-052 while NEXT-051 acceptance remains open. The recovery verifier has been advanced to this exact chain; wait for the audit receipt, then repair missing links one by one from inspectable evidence. If this turn ends before all gates close, return this exact CURRENT-059 checkpoint and the uncompleted gate list; never imply background work.
+
+
+## Canonical open-gate register (must remain open until independently evidenced)
+
+- FULL IN/OUT canonical-state reconstruction: pending fresh CURRENT-059 recovery verifier receipt.
+- clean/second AI-host import: OPEN / NOT VERIFIED.
+- second host: OPEN / NOT VERIFIED.
+- persistence restart: OPEN / NOT VERIFIED.
+- idle/background execution: OPEN / NOT VERIFIED.
+- identifier collisions, ambiguous parent edges, missing links and timestamp provenance: OPEN / REVIEW_REQUIRED.
