@@ -1868,3 +1868,8 @@ Next execution remains attached to existing [NEXT-051](../../0.0/anchors/PALANG-
 - Status: repository writes recorded; independent read-back, digest reconciliation, runtime tests and clean recovery still require receipts.
 - Required next actions: verify the current manifest against actual blob SHAs; inspect current workflow/artifact; run tests and clean export/import round-trip; compare state reconstructed from IN and OUT; adjudicate NEXT-051 graph findings individually.
 - Keep independent-host/second-host import, restart persistence, automatic capture, background execution and external storage OPEN / NOT PROVEN until tested in a real authorized runtime. Do not create a successor NEXT to hide unfinished NEXT-051 work.
+
+
+## EVT-0175 — recovery verifier stale checkpoint (OPEN)
+- [EVT-0175](../BEHAVIOR-TRACE/EVT-0175-CURRENT-066-RECOVERY-VERIFIER-STALE-CHECKPOINT-2026-10-25.md) records audit run 40170056194 failing because the verifier expected CURRENT-065 but the overlay manifest named CURRENT-066.
+- The verifier was updated to CURRENT-066 paths/IDs and gate markers. Required next action: inspect the newest exact-commit audit receipt and repair any remaining stale assumptions. Recovery and external-host gates remain OPEN.
