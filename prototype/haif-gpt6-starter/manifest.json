@@ -1,8 +1,8 @@
 {
   "package_schema": "haif-gpt6-starter/0.1",
-  "stable_id": "HAIF-GPT6-PORTABLE-STARTER-20261025-003",
-  "production_id": "HAIF-G6PS-20261025-003",
-  "version": "0.2.1",
+  "stable_id": "HAIF-GPT6-PORTABLE-STARTER-20261025-004",
+  "production_id": "HAIF-G6PS-20261025-004",
+  "version": "0.3.0",
   "project": "Future AI / Palang Footprint",
   "canonical_repository": "https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint",
   "parent_architecture": [
@@ -26,7 +26,8 @@
     "portable bundle export/import with SHA-256 verification",
     "atomic local state writes and read-back verification",
     "canonical point identity with non-duplicating 0+ production marker and parent-linked 0.0 continuation",
-    "point state reconciled against append-only POINT_REGISTERED events; tampering and self-parenting rejected"
+    "point state reconciled against append-only POINT_REGISTERED events; tampering and self-parenting rejected",
+    "one-command bootstrap for canonical 0/0+ root, parent-linked 0.0 continuation and six explicit open capability gaps"
   ],
   "not_proven": [
     "native GPT plugin execution",
