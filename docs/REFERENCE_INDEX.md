@@ -3,9 +3,14 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-25 — CURRENT-062 / POINT-0-011; runnable local continuity runtime added; runtime CI result pending; NEXT-051 remains active/open.
+**Last Updated:** 2026-10-25 — CURRENT-063 / POINT-0-012; executable local continuity runtime linked to mother/index/queue; runtime CI result pending; NEXT-051 remains active/open.
 
 ## Canonical References
+
+| HAIF-CURRENT-063 | `docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-063-EXECUTABLE-ARCHITECTURE.md` | Current executable architecture checkpoint; runtime, test and clean-host acceptance gates | Source/wiring present; CI result NOT VERIFIED; NEXT-051 remains active |
+| HAIF-POINT-0-012 | `docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-012-EXECUTABLE-ARCHITECTURE.md` | User requirement: executable new-project architecture, not documentation substitution | Registered; linked to IN-056 / OUT-055 / EVT-0165 / CURRENT-063 |
+
+
 
 | HAIF-RUNTIME-0.1 | `scripts/haif-runtime/haif_runtime.py` | Executable local continuity engine: hash-chained IN/OUT, checkpoints, JSON export/import and validation | Source committed; automated tests added to portable conformance; latest CI result pending |
 | HAIF-RUNTIME-TESTS-0.1 | `scripts/haif-runtime/tests/test_runtime.py` | Tests for continuity, checkpoint recovery, tamper detection and no-overwrite behavior | Added; execute and inspect current CI receipt |
