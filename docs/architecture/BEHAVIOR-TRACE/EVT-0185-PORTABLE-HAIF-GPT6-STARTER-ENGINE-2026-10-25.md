@@ -35,3 +35,20 @@ The files were committed through the repository contents API. The workflow has b
 - Independent GPT-host import and durable host restart.
 - Native host adapter, automatic capture, background execution, external repository write and cross-device persistence.
 - Exact-head audit, portable bundle artifact and failure-injection coverage.
+
+
+## Verified starter execution receipt
+
+- Living Architecture Audit [run 40198249728](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40198249728): SUCCESS on tested content SHA \`4dce5e5a919499a9d016b4949c3968e339e8fd7c\`.
+- Starter engine test result: 6 tests passed; py_compile passed; manifest and state schema parsed as valid JSON.
+- ZIP created during the workflow: \`audit-output/haif-gpt6-starter-v0.1.zip\`; ZIP SHA-256 reported by the runner: \`f3dc8dde73107d5fd2f8695435d64a86ef7697e0c21d7cf6512d5c888e9c98fc\`.
+- Uploaded workflow evidence artifact: ID \`12600178291\`, name \`living-architecture-audit-40198249728\`, artifact digest \`sha256:0dade9e9a288144605e3831db049691e6fe68ce6f45d50f69a641a4e8d6cfd40\`.
+- The artifact contains the audit-output folder, including the generated ZIP and digest sidecar. Use the workflow run's Artifacts section to download it.
+
+## Separate open failure retained
+
+Portable RAHM Conformance run [40198220828](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40198220828) failed in its exact-byte manifest inventory SHA scan. This is not a failure reported by the six new starter tests; it remains a separate repository-integrity issue to diagnose and reconcile. Do not conceal this failure or infer its root cause without examining the mismatched inventory entries.
+
+## Acceptance boundary
+
+The local starter package passes its six automated tests on the tested revision. This does not prove native GPT plugin installation, independent GPT-host import, automatic capture, background execution, durable host memory or external repository writes.
