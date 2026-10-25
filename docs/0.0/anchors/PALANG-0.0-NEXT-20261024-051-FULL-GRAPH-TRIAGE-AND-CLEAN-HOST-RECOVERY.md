@@ -214,3 +214,11 @@ NEXT-051 remains OPEN/LIVING until all remaining acceptance gates are satisfied;
 - The clean distribution package was executed in a fresh Python runtime directory. `init`, `record`, `audit`, `export`, `import` to a second state file, and the second `audit` all passed. Evidence: [EVT-0187](../../architecture/BEHAVIOR-TRACE/EVT-0187-CLEAN-DISTRIBUTION-RUNTIME-SMOKE-2026-10-25.md).
 - This closes the local clean-package smoke gate only. It does not close target GPT-6 host import, durable host persistence, automatic capture, background execution, or external writes.
 - Resume [CURRENT-070](./PALANG-0.0-CURRENT-20261025-070-HARD-AUDIT-AND-HOST-EXECUTION.md) at the independent-host test, then continue historical graph and pointer adjudication.
+
+
+## Continuation receipt — POINT-0/024 (0+) / CURRENT-071
+- [POINT-0/024](./GPT6-RAHM-USER-POINT-0-20261025-024-0PLUS-PRODUCTION-MARKER.md) defines `0+` as a significance marker on the same canonical point as `0`, with [CURRENT-071](./PALANG-0.0-CURRENT-20261025-071-0PLUS-ENGINE-AND-HARD-AUDIT.md) as its next `0.0`.
+- Engine binds point records to `POINT_REGISTERED` event evidence and rejects record tampering, duplicate labels, invalid 0+ split identity and non-prior/self parents.
+- Latest code/test revision: `49485c593ebd6a3d115c05ddda8e8997b3c5138e`; audit run [40213463189](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40213463189) must be checked before packaging the final distribution.
+- Preserve this queue as ACTIVE. CURRENT-065/CURRENT-066 adjudication, historical graph triage, Issue #20, Issue #21, BOART-FOLLOWUP-01, and independent GPT-host tests remain open.
+- Dropbox remains OPEN / WAITING and inactive.
