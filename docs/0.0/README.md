@@ -1558,3 +1558,9 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - نقطهٔ اجرای بعدی: [CURRENT-070](./anchors/PALANG-0.0-CURRENT-20261025-070-HARD-AUDIT-AND-HOST-EXECUTION.md)
 - نتیجهٔ ممیزی دقیق: run 40206260132 موفق روی SHA `81afd4f181e87ba71c4d1acf8b89d4ee8432e1ca`؛ 8/8 آزمون موتور گذشتند، از جمله کشف شناسه‌های تکراری IN/OUT. بستهٔ تمیز نیز در محیط تازه 8/8 آزموده شد.
 - صف تاریخی فعال همچنان NEXT-051 است؛ NEXT-052 ساخته نشده. اجرای مستقل در GPT-6 و ماندگاری میزبان هنوز اثبات نشده‌اند.
+
+
+## EVT-0187 — اجرای عملی موتور
+
+- رسید اجرایی: [EVT-0187](../architecture/BEHAVIOR-TRACE/EVT-0187-CLEAN-DISTRIBUTION-RUNTIME-SMOKE-2026-10-25.md).
+- چرخهٔ واقعی init/record/audit/export/import/audit در محیط Python فعلی PASS شد؛ میزبان GPT-6 مستقل هنوز NOT PROVEN.
