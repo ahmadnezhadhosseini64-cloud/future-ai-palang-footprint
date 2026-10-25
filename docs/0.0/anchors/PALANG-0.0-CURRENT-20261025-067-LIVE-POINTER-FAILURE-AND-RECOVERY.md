@@ -20,10 +20,10 @@
 ## Current status
 - New point and chain registration: read-back verified; links resolve in repository.
 - Parser correction: written; six pointer-discovery tests passed on tested commit `985660e7a2d578bed9868d0f14e21990816dfa72`; latest rerun on later documentation commits must still be inspected.
-- Exact-head audit at tested commit: PASS; live pointer result remains AMBIGUOUS/BLOCKED without winner. Latest documentation-head rerun remains to be read back.
+- Exact-head audit at tested commit: PASS; live pointer result remains AMBIGUOUS/BLOCKED without winner. Latest exact-head rerun [40182671790](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40182671790) passed on commit `383266b17d2b38a0114367877c4b9c39a6c4ef76`; pointer remains AMBIGUOUS and graph remains REVIEW_REQUIRED.
 - Canonical live CURRENT pointer: OPEN / AMBIGUOUS until evidence-backed adjudication.
 - Full graph triage: OPEN / REVIEW_REQUIRED.
-- Runtime unit tests: 4 PASS on tested commit; schema conformance, bounded IN/OUT recovery equivalence, exact-byte SHA-256 scan and live-reference SHA-256 scan PASS. Independent AI-host import remains OPEN.
+- Runtime unit tests: 4 PASS on tested commit; schema conformance, bounded IN/OUT recovery equivalence, exact-byte SHA-256 scan and live-reference SHA-256 scan PASS. Independent AI-host import remains OPEN. Latest portable conformance [40182671578](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40182671578) passed on the same tested commit; package 119 files / 460365 bytes, SHA-256 `694bd886f4870abd8d812da342287bf75e3fa227ff08ea29bc03ca0bc703e7d2`.
 - Independent host, second host, restart persistence, automatic capture/background execution and external storage: NOT PROVEN.
 - Buffer, persistent memory and Library: NOT VERIFIED. Dropbox remains OPEN/WAITING and inactive.
 
@@ -36,3 +36,6 @@
 6. Continue NEXT-051 finding-by-finding. Do not renumber, merge or delete unresolved graph records.
 
 This checkpoint is a continuity anchor, not a claim that all requested capabilities are complete.
+
+
+Latest evidence is bounded to the tested repository revision. Later edits must be checked through their own current workflow receipts; passing CI does not close the independent-host, persistence, automatic-capture or graph-adjudication gates.
