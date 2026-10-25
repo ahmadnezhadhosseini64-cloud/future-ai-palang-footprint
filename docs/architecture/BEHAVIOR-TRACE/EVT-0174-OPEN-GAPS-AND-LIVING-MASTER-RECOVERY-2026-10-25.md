@@ -15,3 +15,8 @@ The architecture must retain failure and uncertainty as first-class evidence. A 
 
 ## Open evidence gates
 Runtime tests; clean export/import round trip; exact current manifest digest; current workflow/artifact receipt; full IN/OUT state reconstruction; remaining graph collisions/ambiguous parents; independent host, second host, restart persistence, automatic capture and external storage.
+
+
+## Follow-up failure evidence
+- [CURRENT-066](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-066-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md) is the current checkpoint.
+- [EVT-0175](./EVT-0175-CURRENT-066-RECOVERY-VERIFIER-STALE-CHECKPOINT-2026-10-25.md) records a verifier failure caused by stale CURRENT-065 expectations. Correction and rerun are tracked separately; the failure remains part of the lineage.
