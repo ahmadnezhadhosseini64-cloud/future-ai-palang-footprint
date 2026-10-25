@@ -1,6 +1,6 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.7.8",
+  "version": "1.7.9",
   "manifest_status": "CURRENT-065 chain and overlay referenced; SHA-256 and runtime receipts pending",
   "created_from_checkpoint": "G6IP-CURRENT-064-20261025 + HAIF-RUNTIME-0.1",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
@@ -315,6 +315,12 @@
       "path": "docs/REFERENCE_INDEX.md",
       "version": "1.0.0",
       "git_blob_sha": "e610abecc8b31c39d0f54bdd26390504b04a3616",
+      "sha256": null
+    },
+    {
+      "path": "docs/architecture/INTEGRATION-QUEUE/README.md",
+      "version": "1.0.0",
+      "git_blob_sha": "dc930fa319dc684f63ab1a300f8b3124888e61fe",
       "sha256": null
     }
   ],
