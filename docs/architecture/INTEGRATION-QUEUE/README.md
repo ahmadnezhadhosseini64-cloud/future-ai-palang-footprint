@@ -1926,3 +1926,9 @@ The source blob remained unchanged and Library version 7 was independently read 
 - Evidence: audit run [40176902366](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40176902366) failed in pointer discovery; the traceback identifies a mismatch between short CURRENT IDs in the regex and date-bearing CURRENT filenames in the real repository.
 - Correction: parser pattern now accepts both forms and a regression fixture was added. Status: WRITTEN; fresh exact-head CI not yet verified.
 - Continue existing NEXT-051 and Issues #20/#21 plus BOART-FOLLOWUP-01. Do not create NEXT-052. Keep CURRENT-065/CURRENT-066 adjudication and all host/persistence/background/external-storage gates OPEN.
+
+
+## EVT-0183 — Regression repair receipts (tested commit)
+- [EVT-0183](../BEHAVIOR-TRACE/EVT-0183-POINTER-PARSER-FIX-AND-PORTABLE-CONFORMANCE-RECEIPTS-2026-10-25.md) records Living Architecture Audit run 40182460073 and Portable RAHM Conformance run 40182460006 on `985660e7a2d578bed9868d0f14e21990816dfa72`.
+- Pointer regression tests 6/6, runtime tests 4/4, schema, bounded IN/OUT recovery, exact-byte SHA-256 scan and live-reference SHA-256 scan passed. The discovered live pointer remains AMBIGUOUS and graph result remains REVIEW_REQUIRED.
+- Remaining gates are still OPEN: canonical pointer adjudication, occurrence-by-occurrence graph review, independent/second host, restart persistence, automatic capture/background execution and external storage. NEXT-051 remains active.
