@@ -688,3 +688,10 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 ## EVT-0173 — exact-main audit failure and correction
 - [EVT-0173](./EVT-0173-CURRENT-065-EXACT-MAIN-AUDIT-FAILURE-AND-CORRECTION-2026-10-25.md) preserves failed run 40169128251 on SHA `19044f6a238e3d00805813695f328f0540af5e8d`, its artifact digest, and the explicit-link correction to POINT-0/014.
 - [Time binding](./TIME-BINDING-EVT-0173-EXACT-MAIN-AUDIT-2026-10-25.md) separates event registration time from audit run time. Fresh audit on the repaired exact main SHA is pending.
+
+
+## EVT-0176 / EVT-0177 — point registration and recurring mirror recheck
+- [EVT-0176](./EVT-0176-USER-POINT-0-016-MIRROR-DELTA-AND-ARCHITECTURE-RECOVERY-2026-10-25.md) records POINT-0/016 and the architecture recovery gaps.
+- [EVT-0177](./EVT-0177-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md) records the fresh source/Library comparison: 10,479 vs 10,480 characters, edit distance 1, one extra trailing newline, semantic fields match, no redundant write.
+- [Time binding for EVT-0177](./TIME-BINDING-EVT-0177-LIVE-MIRROR-SYNC-2026-10-25.md) records the event's actual final-change commit UTC and derived Tehran time.
+- CURRENT-065 / NEXT-051 remain the execution continuation; POINT-0/016 is preserved as the user-turn point. The older CURRENT-064 note is historical. Exact-current-main Living Architecture Audit remains NOT VERIFIED.
