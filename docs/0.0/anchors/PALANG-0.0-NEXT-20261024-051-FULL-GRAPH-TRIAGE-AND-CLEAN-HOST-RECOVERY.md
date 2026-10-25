@@ -208,3 +208,9 @@ NEXT-051 remains OPEN/LIVING until all remaining acceptance gates are satisfied;
 - NEXT-051 remains ACTIVE for historical graph triage and unresolved pointer adjudication. The first CURRENT-070 action is target-host import/runtime testing; do not treat the CI transfer harness as independent GPT-host adoption.
 - Still OPEN: CURRENT-065/CURRENT-066 evidence-based resolution; Issue #20 interaction-pair schema/reverse lookup/cold-start recovery; Issue #21 occurrence-level ID collision adjudication; BOART-FOLLOWUP-01; independent GPT-6 import and restart persistence; automatic capture/background execution; external destination permissions.
 - Dropbox remains OPEN / WAITING and inactive. Do not create NEXT-052 while this queue is still active.
+
+
+### Latest runtime receipt — EVT-0187
+- The clean distribution package was executed in a fresh Python runtime directory. `init`, `record`, `audit`, `export`, `import` to a second state file, and the second `audit` all passed. Evidence: [EVT-0187](../../architecture/BEHAVIOR-TRACE/EVT-0187-CLEAN-DISTRIBUTION-RUNTIME-SMOKE-2026-10-25.md).
+- This closes the local clean-package smoke gate only. It does not close target GPT-6 host import, durable host persistence, automatic capture, background execution, or external writes.
+- Resume [CURRENT-070](./PALANG-0.0-CURRENT-20261025-070-HARD-AUDIT-AND-HOST-EXECUTION.md) at the independent-host test, then continue historical graph and pointer adjudication.
