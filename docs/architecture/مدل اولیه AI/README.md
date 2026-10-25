@@ -167,4 +167,4 @@
 - [GPT-6 host instructions](../../../prototype/haif-gpt6-starter/GPT6_HOST_INSTRUCTIONS.md): startup, recovery, architecture governance and capability boundaries.
 - [CURRENT-069](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-069-PORTABLE-STARTER-ENGINE-AND-GATE-CLOSURE.md): next acceptance gate.
 - This is part of the existing Future AI / Palang Footprint repository, not a separate project.
-- Status: implementation registered; exact CI test result and ZIP artifact still require read-back. Native GPT plugin, automatic capture, background execution, external writes and independent-host durable memory are not claimed.
+- Status: seven starter tests and clean-process round-trip passed on tested SHA f482083cc2aeab82964c271c5d97ba4bb8657ce1; ZIP artifact 12600674334 was read back from Actions metadata. Independent download/import into a real GPT host is still unverified. Native GPT plugin, automatic capture, background execution, external writes and independent-host durable memory are not claimed.
