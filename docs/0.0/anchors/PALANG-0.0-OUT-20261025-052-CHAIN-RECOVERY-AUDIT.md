@@ -12,3 +12,9 @@
 - Scope error lesson: Dropbox was not the requested continuation target; the correct target is the original new-project model architecture and its connected 0/0.0 chain. Do not resume Dropbox unless the user explicitly reopens it.
 - Next: keep NEXT-051 active; inspect and adjudicate each finding with source evidence, then run current-commit conformance and external-host tests only where a real authorized host is available.
 - Status: AUDIT RESULT REGISTERED; the global audit is not closed and external runtime gates remain open.
+
+## Additional historical-root recovery findings — 2026-10-25
+- The original independent architecture-zero anchor explicitly leaves the interactive prototype NOT BUILT and cold-start recovery NOT RUN; its historical acceptance path includes NEXT-039 (build interactive prototype) and NEXT-040 (fresh-project adoption test). These are historical open obligations, not completed by registering later masters.
+- The initial-model mother v1.4.7 states that the sample executable v0 was tested but the production implementation is NOT BUILT. It has now been updated to v1.4.8 and linked to CURRENT-060; this is a documentation integration, not production build evidence.
+- The portable manifest currently points to the previous CURRENT-059 / Point 0/008 / IN-052 / OUT-051 chain. A fresh current-commit export/digest run must prove whether and how the new CURRENT-060 chain and updated mother are included; prior run receipts cannot prove this.
+- Therefore the project is not yet a fully deployed autonomous architecture. It is a repository-backed architecture and portable specification with partial CI-tested components; host/runtime deployment and several end-to-end acceptance gates remain open.
