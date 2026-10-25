@@ -719,3 +719,5 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Root: [POINT-0/019](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-019-MODEL-CAPABILITY-BUILD.md); parent: [POINT-0/018](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-018-LIVING-REGISTRATION-AND-NEXT-STEPS.md).
 - New executable increment: `scripts/behavior-hunter/discover_current_0_0_pointer.py` with fixtures under `scripts/behavior-hunter/tests/`; integrated into Living Architecture Audit. Exact-head run and artifact inspection are required before PASS.
 - Open gates: pointer conflict, NEXT-051, Issue #20, Issue #21, BOART-FOLLOWUP-01, exact-SHA tests, external host import and persistence.
+
+- [TIME-BINDING-EVT-0181](./TIME-BINDING-EVT-0181-POINT-0-019-2026-10-25.md) records actual repository commit UTC and derived Tehran times; it does not certify runtime execution.
