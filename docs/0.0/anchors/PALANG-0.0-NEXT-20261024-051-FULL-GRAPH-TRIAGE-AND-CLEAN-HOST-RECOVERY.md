@@ -2,7 +2,7 @@
 
 - Stable ID: `G6IP-RAHM-NEXT-051-20261024`
 - Production ID: `G6IP-NEXT-051`
-- Version: 1.0.5
+- Version: 1.0.6
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE.
 - Parent: [CURRENT-057](./PALANG-0.0-CURRENT-20261024-057-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md)
 - Preserve existing gates: [NEXT-050](./PALANG-0.0-NEXT-20261024-050-FULL-RECOVERY-AND-REAL-HOST-IMPORT.md), [NEXT-049](./PALANG-0.0-NEXT-20261024-049-REAL-HOST-TRANSFER-AND-GRAPH-AUDIT.md)
@@ -79,3 +79,16 @@ Full canonical-state recovery until the new verifier passes; real clean/second A
 - [ ] Individual triage of 62 Stable-ID collision groups (61 unreviewed), 88 Production-ID groups, 7 Reference-ID groups, 36 event-number groups, 13 ambiguous parent edges and one ambiguous timestamp.
 
 NEXT-051 remains OPEN/LIVING until all remaining acceptance gates are satisfied; no NEXT-052 was created.
+
+
+## CURRENT-059 execution update — continue this NEXT, do not create NEXT-052
+
+- Latest current chain: [POINT-0/008](./GPT6-RAHM-USER-POINT-0-20261025-008-DEEP-AUDIT-AND-NO-SILENT-GAP.md) → [IN-052](./PALANG-0.0-IN-20261025-052-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md) → [OUT-051](./PALANG-0.0-OUT-20261025-051-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md) → [EVT-0161](../../architecture/BEHAVIOR-TRACE/EVT-0161-DEEP-AUDIT-STALE-GATE-AND-NO-SILENT-GAP-2026-10-25.md) → [CURRENT-059](./PALANG-0.0-CURRENT-20261025-059-DEEP-AUDIT-AND-CORRECTED-CONFORMANCE.md).
+- Actual defect found: the portable conformance test used the stale IN-047 / OUT-046 and CURRENT-054 / NEXT-048 branch. Workflow and repository-state verifier were updated to the actual current branch; fresh workflow receipts are required.
+- [x] Existing repository IN/OUT state-recovery test passed for CURRENT-058 (run 40130267981); this is historical evidence for the previous chain, not proof of CURRENT-059 until the updated verifier reruns.
+- [x] Portable living master updated to version 1.1.3 with current branch and no-silent-gap rule.
+- [ ] Fresh current-chain repository recovery run from IN-052 and OUT-051.
+- [ ] Fresh strict conformance run with exact SHA-256 digest reconciliation and package archive.
+- [ ] Inspectable report of current missing links; repair each verified target, then rerun the graph audit.
+- [ ] Clean independent AI-host import and runtime capability checks remain OPEN / NOT VERIFIED.
+- [ ] Second-host import, persistence restart, automatic interaction capture, idle/background execution remain OPEN / NOT VERIFIED.
