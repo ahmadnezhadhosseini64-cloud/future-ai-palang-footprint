@@ -3,7 +3,7 @@
 - Stable ID: `G6IP-RAHM-CURRENT-059-20261025`
 - Production ID: `G6IP-CURRENT-059`
 - Version: 1.0.3
-- Status: REGISTERED / READ-BACK VERIFIED / CURRENT IN-OUT RECOVERY PASS; previous strict conformance PASS is evidenced for commit 5047ee2; this checkpoint was updated afterward so final digest/package rerun is OPEN; global identity graph REVIEW_REQUIRED; real-host/runtime gates OPEN.
+- Status: REGISTERED / READ-BACK VERIFIED / CURRENT IN-OUT RECOVERY PASS; strict conformance is commit-scoped and the latest run for the exact current commit is authoritative; global identity graph REVIEW_REQUIRED; real-host/runtime gates OPEN.
 - Parent: [CURRENT-058](./PALANG-0.0-CURRENT-20261024-058-DEEP-EXCAVATION-EXECUTION-RECEIPTS.md)
 - User Point 0: [POINT-0/008](./GPT6-RAHM-USER-POINT-0-20261025-008-DEEP-AUDIT-AND-NO-SILENT-GAP.md)
 - Input: [IN-052](./PALANG-0.0-IN-20261025-052-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md)
