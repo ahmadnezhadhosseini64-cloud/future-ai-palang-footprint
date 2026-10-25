@@ -25,3 +25,12 @@ Final exact-head CI and clean distribution packaging are not marked PASS until r
 - Exact test log confirms 12/12 starter tests passed, including: `test_zero_plus_is_a_marker_on_the_same_canonical_zero_point`, `test_zero_plus_cannot_be_a_separate_canonical_point`, `test_point_record_must_match_append_only_event_ledger`, and `test_continuation_cannot_parent_itself`.
 - State schema JSON validation and package build passed on that tested revision.
 - Release manifest/README version was then advanced to v0.2.1; final release head audit [40213697030](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40213697030) is pending, so the v0.2.1 package digest must be generated from that final passing run.
+
+
+## Final v0.2.1 distribution proof
+- Exact-head audit: [40213760585](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40213760585) SUCCESS on `0819d97283d892411a6868c544e92752a8c35c55`; 12/12 tests passed.
+- Clean ZIP: `haif-gpt6-starter-v0.2.1-0plus-clean.zip`; SHA-256 `51a5f9a6def97a0564a8b6542bbf4a5b9ca46a81a267a4a02db7c53511e16f2d`; 14,077 bytes.
+- Fresh extraction: 12/12 tests passed.
+- Direct CLI 0/0+ → 0.0 → interaction → audit → export → import → audit: PASS; imported state ID and head hash matched.
+- Detailed receipt: [EVT-0189](../../architecture/BEHAVIOR-TRACE/EVT-0189-0PLUS-CLEAN-DISTRIBUTION-SMOKE-2026-10-25.md); time binding [EVT-0189 time](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0189-CLEAN-DISTRIBUTION-2026-10-25.md).
+- Still open: independent GPT-6 host import, host-side Python availability, durable memory/restart across host sessions/devices, automatic capture, background execution and external writes.
