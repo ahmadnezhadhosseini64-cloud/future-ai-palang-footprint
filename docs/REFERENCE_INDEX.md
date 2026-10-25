@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-25 — POINT-0/019 / EVT-0181; capability implementation and pointer discovery added; CURRENT-065/CURRENT-066 conflict remains OPEN; NEXT-051 remains active.
+**Last Updated:** 2026-10-25 — POINT-0/020 / EVT-0182; live-pointer parser failure recorded; parser regression correction registered but exact-head CI pending; CURRENT-065/CURRENT-066 conflict remains OPEN; NEXT-051 remains active.
 
 ## Canonical References
 
@@ -1471,3 +1471,10 @@ Current continuation chain: POINT-0/013 → IN-057 → OUT-056 → EVT-0166 → 
 | HAIF-CURRENT-POINTER-DISCOVERY-0.1 | `scripts/behavior-hunter/discover_current_0_0_pointer.py` | کشف اشاره‌گر اجرای جاری از منابع صریح؛ تعارض را AMBIGUOUS گزارش می‌کند و برنده انتخاب نمی‌کند | Source registered and wired into Living Architecture Audit; exact-head test receipt pending |
 | HAIF-CURRENT-POINTER-DISCOVERY-TESTS-0.1 | `scripts/behavior-hunter/tests/test_discover_current_0_0_pointer.py` | پنج fixture برای حالت سازگار، تعارض، اشاره‌گر تاریخی، manifest ناقص و JSON خراب | Test source registered; execution result pending |
 | HAIF-POINT-0-019-MODEL-CAPABILITY-BUILD-20261025 | `docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-019-MODEL-CAPABILITY-BUILD.md` | نقطهٔ کاربر برای رساندن مدل اولیه به قابلیت‌های اجرایی و آزمون‌پذیر | Repository read-back verified; capability gates remain open |
+
+
+## POINT-0/020 — Live pointer failure and recovery
+- Point: [POINT-0/020](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-020-LIVE-POINTER-FAILURE-AND-RECOVERY.md).
+- Interaction chain: [IN-060](0.0/anchors/PALANG-0.0-IN-20261025-060-LIVE-POINTER-FAILURE-AND-RECOVERY.md) → [OUT-059](0.0/anchors/PALANG-0.0-OUT-20261025-059-LIVE-POINTER-FAILURE-AND-RECOVERY.md) → [EVT-0182](architecture/BEHAVIOR-TRACE/EVT-0182-LIVE-POINTER-FAILURE-AND-RECOVERY-2026-10-25.md) → [CURRENT-067](0.0/anchors/PALANG-0.0-CURRENT-20261025-067-LIVE-POINTER-FAILURE-AND-RECOVERY.md).
+- Defect: scheduled audit run [40176902366](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40176902366) failed because date-bearing CURRENT filenames were not handled by the pointer parser. Parser regex and regression fixture are now registered; fresh exact-head CI remains pending.
+- NEXT-051 remains OPEN/LIVING. CURRENT-065/CURRENT-066 pointer adjudication, runtime recovery, clean/second host, persistence, automatic capture, background execution and external storage remain OPEN / NOT PROVEN.
