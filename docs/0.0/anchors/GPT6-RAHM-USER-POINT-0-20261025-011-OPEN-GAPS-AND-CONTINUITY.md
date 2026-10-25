@@ -2,7 +2,7 @@
 
 - Stable ID: G6IP-USER-POINT-0-011-20261025
 - Production ID: G6IP-POINT-0-011
-- Version: 1.0.0
+- Version: 1.0.1
 - Parent: [CURRENT-061](./PALANG-0.0-CURRENT-20261025-061-PROTOTYPE-AND-GRAPH-TRIAGE.md)
 - User intent: Treat this interaction as a new Point 0, connect it to prior 0/0.0 history and the living mother reference, identify remaining work/gaps/architecture defects, then register the next executable steps as 0.0.
 - Scope: Future AI / Palang Footprint / HAIF repository architecture, continuity, recoverability, prototype/adoption, identifier/parent/time reconciliation and evidence-backed execution.
@@ -13,3 +13,13 @@
 - Scope guard: continue the model architecture and recovery path. Do not divert to Dropbox unless the user explicitly reopens that work.
 - Time rule: repository registration time is taken from the actual last-change Git commit timestamp in UTC; show the Tehran equivalent derived from that same instant. Message/event/test times are separate evidence types and must not be fabricated.
 - Status: REGISTERED IN REPOSITORY; cross-surface read-back is tracked in CURRENT-062. External runtime capabilities remain unverified until separately tested.
+
+
+## Implementation continuation — local runtime
+This Point 0 now continues into a runnable implementation, not documentation alone:
+- [Local runtime source](../../../scripts/haif-runtime/haif_runtime.py)
+- [Runtime tests](../../../scripts/haif-runtime/tests/test_runtime.py)
+- [Runbook](../../../scripts/haif-runtime/README.md)
+- [Current implementation checkpoint](./PALANG-0.0-CURRENT-20261025-062-OPEN-GAPS-AND-CONTINUITY.md)
+
+Source-level features: local append-only interaction events, hash-chain verification, checkpoints, JSON export/import, atomic save and no-overwrite protection. CI execution, real-host adoption and automatic capture remain separate gates.
