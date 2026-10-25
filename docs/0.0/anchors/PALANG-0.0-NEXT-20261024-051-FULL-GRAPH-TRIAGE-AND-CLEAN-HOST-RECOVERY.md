@@ -197,3 +197,14 @@ NEXT-051 remains OPEN/LIVING until all remaining acceptance gates are satisfied;
 - Portable conformance: exact-byte SHA-256 scan PASS; live-reference SHA-256 scan PASS; portable package build PASS. Package SHA-256: `1cd3f0aabed6991966e4e8881c365aafc644f11afb1fb7e08848d049475b00f3`. Conformance run: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40170492361
 - Audit artifact ZIP SHA-256: `e728314b02ab4315f8cf1687255bc7c717bcd46e163e07bc4cf05361e3879369`; artifact ID 12590125743.
 - Host adapter tests passed, but live ChatGPT producer remains NOT TESTED and repository write remains NOT IMPLEMENTED. Independent-host import, second-host import, restart persistence in a real host, idle/background execution and external storage remain OPEN / NOT PROVEN.
+
+
+## Continuation receipt — POINT-0/023 / CURRENT-070
+
+- New root and execution checkpoint: [POINT-0/023](./GPT6-RAHM-USER-POINT-0-20261025-023-HARD-AUDIT-AND-ENGINE-HARDENING.md) / [CURRENT-070](./PALANG-0.0-CURRENT-20261025-070-HARD-AUDIT-AND-HOST-EXECUTION.md).
+- Engine hard-audit event: [EVT-0186](../../architecture/BEHAVIOR-TRACE/EVT-0186-HAIF-ENGINE-HARD-AUDIT-AND-ID-UNIQUENESS-2026-10-25.md).
+- A concrete defect was corrected: duplicate IN/OUT IDs are now rejected even if a modified event hash is recalculated. Exact-head Living Architecture Audit [40206260132](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40206260132) passed on `81afd4f181e87ba71c4d1acf8b89d4ee8432e1ca`; all 8 tests passed.
+- Current clean package is available in this conversation: `haif-gpt6-starter-v0.1-clean-8tests.zip`; SHA-256 `d68e03b42e26b88385d1155c02d09b213a53366e27e99518c7c049f6ec6563be`. It was extracted into a fresh directory and tested 8/8.
+- NEXT-051 remains ACTIVE for historical graph triage and unresolved pointer adjudication. The first CURRENT-070 action is target-host import/runtime testing; do not treat the CI transfer harness as independent GPT-host adoption.
+- Still OPEN: CURRENT-065/CURRENT-066 evidence-based resolution; Issue #20 interaction-pair schema/reverse lookup/cold-start recovery; Issue #21 occurrence-level ID collision adjudication; BOART-FOLLOWUP-01; independent GPT-6 import and restart persistence; automatic capture/background execution; external destination permissions.
+- Dropbox remains OPEN / WAITING and inactive. Do not create NEXT-052 while this queue is still active.
