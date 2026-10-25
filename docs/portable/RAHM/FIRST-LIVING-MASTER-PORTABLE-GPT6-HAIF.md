@@ -349,3 +349,11 @@ The PASS receipt above belongs to commit `5047ee23407fd7fa47210ee68894587bc35e99
 
 ## Current chain update — CURRENT-066
 The canonical live checkpoint is now [CURRENT-066](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-066-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md), rooted at [POINT-0/015](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-015-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md), with [IN-059](../../0.0/anchors/PALANG-0.0-IN-20261025-059-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md), [OUT-058](../../0.0/anchors/PALANG-0.0-OUT-20261025-058-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md), [EVT-0174](../../architecture/BEHAVIOR-TRACE/EVT-0174-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY-2026-10-25.md) and verifier failure [EVT-0175](../../architecture/BEHAVIOR-TRACE/EVT-0175-CURRENT-066-RECOVERY-VERIFIER-STALE-CHECKPOINT-2026-10-25.md). NEXT-051 remains active; all unproven gates remain OPEN.
+
+
+## POINT-0/020 — current interaction checkpoint versus execution pointer
+- Latest interaction root: [POINT-0/020](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-020-LIVE-POINTER-FAILURE-AND-RECOVERY.md).
+- Recovery chain: [IN-060](../../0.0/anchors/PALANG-0.0-IN-20261025-060-LIVE-POINTER-FAILURE-AND-RECOVERY.md) → [OUT-059](../../0.0/anchors/PALANG-0.0-OUT-20261025-059-LIVE-POINTER-FAILURE-AND-RECOVERY.md) → [EVT-0182](../../architecture/BEHAVIOR-TRACE/EVT-0182-LIVE-POINTER-FAILURE-AND-RECOVERY-2026-10-25.md) → [CURRENT-067](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-067-LIVE-POINTER-FAILURE-AND-RECOVERY.md).
+- The current interaction checkpoint does not by itself promote a canonical execution pointer. CURRENT-065/CURRENT-066 declarations remain OPEN/AMBIGUOUS until source-backed adjudication.
+- Audit run [40176902366](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40176902366) exposed a parser defect: date-bearing CURRENT filenames were not accepted by the identifier pattern. Parser and regression fixture are now written; exact-head CI result is pending.
+- NEXT-051 remains the active work queue. Runtime, clean recovery, independent host, second host, persistence restart, automatic capture/background execution, external storage and full graph triage remain OPEN/NOT PROVEN.
