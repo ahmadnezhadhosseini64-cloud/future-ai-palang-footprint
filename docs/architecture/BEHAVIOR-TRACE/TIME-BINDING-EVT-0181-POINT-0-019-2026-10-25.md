@@ -6,10 +6,10 @@
 
 ## POINT-0/019 — final point-file content commit
 - File: [POINT-0/019](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-019-MODEL-CAPABILITY-BUILD.md)
-- Commit: `d12e3948766e29a64584ff3af4ef5c8dabfb0dcf`
-- Actual commit created_at UTC: `2026-10-25T07:56:47Z`
-- Derived Tehran: `2026-10-25T11:26:47+03:30`
-- Evidence: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/d12e3948766e29a64584ff3af4ef5c8dabfb0dcf
+- Commit: `4938378168c7679e0b805bfeb4663fa6697ac506`
+- Actual commit created_at UTC: `2026-10-25T07:59:35Z`
+- Derived Tehran: `2026-10-25T11:29:35+03:30`
+- Evidence: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/4938378168c7679e0b805bfeb4663fa6697ac506
 
 ## EVT-0181 — event-file creation commit
 - File: [EVT-0181](./EVT-0181-POINT-0-019-MODEL-CAPABILITY-BUILD-2026-10-25.md)
