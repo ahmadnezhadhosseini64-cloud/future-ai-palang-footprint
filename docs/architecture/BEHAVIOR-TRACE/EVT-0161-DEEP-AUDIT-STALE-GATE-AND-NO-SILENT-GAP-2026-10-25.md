@@ -29,3 +29,8 @@ A test must assert the current canonical checkpoint, not just any valid historic
 ## Behavioral continuity rule
 
 A pause, long processing gap, or subsequent user message must not silently abandon an open task. Preserve the open branch, log the new IN/OUT, state the actual executed step, and return a visible status with the exact resume point. Automatic capture/background behavior remains unverified until a real runtime test proves it.
+
+
+## Correction verification receipts
+- Corrected strict conformance run [40150549906](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150549906) PASS on `9d434cba8b44eb11e891f21e2ba7cc046395334b`: 62/62 exact-byte SHA-256 entries matched; schema fixtures passed (0 valid errors, 4 invalid errors); IN/OUT reconstruction passed; package SHA-256 `d5edd12abe4e87b3a72e2bec795c9d9a6760ba60cef2b2a3abe488e36ccc8d56`.
+- Current-chain audit [40150549910](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150549910) PASSed structurally; content remains REVIEW_REQUIRED. This confirms the test correction within repository/CI scope only, not independent host import or runtime durability.
