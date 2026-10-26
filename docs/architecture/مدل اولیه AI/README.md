@@ -168,3 +168,10 @@
 - [CURRENT-069](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-069-PORTABLE-STARTER-ENGINE-AND-GATE-CLOSURE.md): next acceptance gate.
 - This is part of the existing Future AI / Palang Footprint repository, not a separate project.
 - Status: seven starter tests and clean-process round-trip passed on tested SHA f482083cc2aeab82964c271c5d97ba4bb8657ce1; ZIP artifact 12600674334 was read back from Actions metadata. Independent download/import into a real GPT host is still unverified. Native GPT plugin, automatic capture, background execution, external writes and independent-host durable memory are not claimed.
+
+
+## اتصال معماری Master–Rahm–Child — 2026-10-26
+- نقطهٔ جاری: [POINT-0/032](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-032-MASTER-RAHM-CHILD-INITIAL-MODEL-BRIDGE.md) و [CURRENT-079](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-079-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION.md).
+- قرارداد آزمون و ارتقا: [Master–Rahm–Child](../MASTER-RAHM-CHILD/MASTER-RAHM-CHILD-CROSS-VALIDATION-CONTRACT-2026-10-26.md).
+- این پوشه نقش RAHM را دارد و زیرمجموعهٔ Master اصلی است؛ مستقل یا مرجع موازی نیست. خروجی آزمون فقط CHILD CANDIDATE است تا Master صریحاً آن را بپذیرد.
+- آزمون واقعی در محیط تعاملی، ورود میزبان مستقل و ماندگاری بیرونی هنوز رسید اجرایی ندارند و NOT RUN / OPEN باقی می‌مانند.
