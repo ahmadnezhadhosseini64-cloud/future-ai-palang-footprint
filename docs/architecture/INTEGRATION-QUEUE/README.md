@@ -2026,3 +2026,14 @@ The current root is [POINT-0/027](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261
 ## POINT-0/030 continuation — 2026-10-26
 - Root: [POINT-0/030](../../0.0/anchors/PALANG-0.0-POINT-0-030-CONTINUE-FROM-029-2026-10-26.md); event: [EVT-0198](../BEHAVIOR-TRACE/EVT-0198-USER-REQUEST-POINT-0-030-AND-CONTINUE-2026-10-26.md).
 - Continue NEXT-051 only. Do not create NEXT-052. CURRENT-065/CURRENT-066 remains unresolved. Exact-head audits and independent-host recovery remain open until evidence proves completion.
+
+
+
+## Latest active continuation — CURRENT-077
+- Root: [POINT-0/029](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-029-REVERSIBLE-GAP-COVERS-AND-FAST-HOST-TRANSFER.md)
+- Event: [EVT-0199](../BEHAVIOR-TRACE/EVT-0199-REVERSIBLE-GAP-COVERS-AND-FAST-HOST-TRANSFER-2026-10-26.md)
+- Checkpoint: [CURRENT-077](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-077-REVERSIBLE-GAP-COVERS.md)
+- Existing queue: NEXT-051 — OPEN / LIVING / IN PROGRESS. No NEXT-052.
+- Immediate priority: runbook-driven clean-host transfer and exact-final-SHA package verification.
+- Reversible covers: transfer checklist, generated-manifest discipline, historic collision preservation, and explicit external-destination evidence boundaries.
+- All gaps remain OPEN. CURRENT-065/CURRENT-066 has no inferred winner; EVT-0195 collision preserved; graph findings remain one-by-one work; clean host, Buffer/Persistent Memory/Library/Dropbox, runtime and background execution remain unverified.
