@@ -6,6 +6,7 @@ from urllib.parse import urlparse, unquote
 from datetime import datetime, timezone
 import hashlib, json, re, subprocess
 from semantic_role_decisions import apply_role_decisions, load_decisions
+from parent_edge_resolution import resolve_parent_target
 
 ROOT = Path(".").resolve()
 OUT = ROOT / "audit-output"
@@ -155,6 +156,21 @@ canonical_preferred_paths = {
     "AREP-2026-08-31-001": "docs/protocols/ARCHIVE-REVIVAL-EXECUTION-PATH.md",
     "PMRH-2026-09-06-001": "checkpoints/0.0/PMRH-2026-09-06-LIVE-CHECKPOINT-001.md"
 }
+source_parent_overrides = {
+    ("docs/0.0/PALANG-OUTPUT-ANCHOR-HAIF-INGESTION-2026-10-21-002.md", "PALANG-RETURN-EXECUTION-MASTER-ANCHOR-2026-10-21-001"): "docs/reference/REFERENCE-DOCUMENTS/PALANG-RETURN-EXECUTION-MASTER-ANCHOR-2026-10-21-001.md",
+    ("docs/0.0/anchors/PALANG-0.0-IN-20261022-005-CONTINUE-MODEL-INITIAL.md", "EVT-0091"): "docs/architecture/BEHAVIOR-TRACE/EVT-0091-CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-2026-10-22.md",
+    ("docs/0.0/anchors/PALANG-0.0-OUT-20261022-005-CONTINUE-MODEL-INITIAL.md", "EVT-0091"): "docs/architecture/BEHAVIOR-TRACE/EVT-0091-CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-2026-10-22.md",
+    ("docs/0.0/PALANG-0.0-REGISTRATION-LIMITATION-AND-PEH-RESUME-2026-10-22-001.md", "EVT-0051"): "docs/architecture/BEHAVIOR-TRACE/EVT-0051-GMAIL-ACCESS-CLAIM-AND-LIVING-0.0-ANCHOR-2026-10-22.md",
+    ("docs/architecture/BEHAVIOR-OBSERVATORY/PALANG-BEHAVIOR-HUNTER-TEST-GENERATION-AND-GROWTH-GATE-2026-10-23-001.md", "HUMAN-AI-INTERACTION-BEHAVIOR-OBSERVATORY-2026-10-22-001"): "docs/architecture/BEHAVIOR-OBSERVATORY/README.md",
+    ("docs/architecture/BEHAVIOR-TRACE/EVT-0035-LIVING-ANCHORING-AND-TEST-GOVERNANCE-2026-10-20.md", "EVT-0033"): "docs/architecture/BEHAVIOR-TRACE/EVT-0033-TWO-TIME-ANCHORING-AND-LIVING-CONTINUITY-2026-10-20.md",
+    ("docs/architecture/BEHAVIOR-TRACE/EVT-0035-LIVING-ANCHORING-AND-TEST-GOVERNANCE-2026-10-20.md", "EVT-0034"): "docs/architecture/BEHAVIOR-TRACE/EVT-0034-ASSISTANT-EXECUTION-AND-VERIFICATION-REPORT-2026-10-20.md",
+    ("docs/architecture/BEHAVIOR-TRACE/EVT-0038-ASSISTANT-EXECUTION-AND-PORTABLE-HAIF-REFERENCE-2026-10-20.md", "EVT-0037"): "docs/architecture/BEHAVIOR-TRACE/EVT-0037-UNIVERSAL-REGISTER-AND-PORTABLE-HAIF-REQUEST-2026-10-20.md",
+    ("docs/architecture/BEHAVIOR-TRACE/EVT-0040-INTERACTIVE-IO-TEMPORAL-INDEPENDENT-ANCHOR-2026-10-22.md", "EVT-0039"): "docs/architecture/BEHAVIOR-TRACE/EVT-0039-GMAIL-REFERENCE-REGISTRATION-GAP-2026-10-22.md",
+    ("docs/architecture/BEHAVIOR-TRACE/EVT-0041-UTC-INPUT-OUTPUT-LIVING-ANCHOR-2026-10-22.md", "EVT-0040"): "docs/architecture/BEHAVIOR-TRACE/EVT-0040-INTERACTIVE-IO-TEMPORAL-INDEPENDENT-ANCHOR-2026-10-22.md",
+    ("docs/architecture/BEHAVIOR-TRACE/EVT-0069-REGISTRATION-LIMITATION-CHECKLIST-REPAIR-AND-RESUME-2026-10-22.md", "EVT-0051"): "docs/architecture/BEHAVIOR-TRACE/EVT-0051-GMAIL-ACCESS-CLAIM-AND-LIVING-0.0-ANCHOR-2026-10-22.md",
+    ("docs/architecture/BEHAVIOR-TRACE/EVT-0121-REGISTER-ACTIVE-CONTINUATION-AND-COLD-START-RESULT-2026-10-23.md", "EVT-0120"): "docs/architecture/BEHAVIOR-TRACE/EVT-0120-EVIDENCE-LOCATOR-RESOLUTION-AND-COLD-RECOVERY-2026-10-23.md",
+    ("docs/reference/REFERENCE-DOCUMENTS/PEH-REGISTRATION-LIMITATION-AND-INTERACTION-BEHAVIOR-LIVING-REFERENCE-2026-10-22-001.md", "EVT-0051"): "docs/architecture/BEHAVIOR-TRACE/EVT-0051-GMAIL-ACCESS-CLAIM-AND-LIVING-0.0-ANCHOR-2026-10-22.md",
+}
 path_stems = {Path(n["path"]).stem: n["path"] for n in nodes}
 parent_edges, unresolved, ambiguous = [], [], []
 for node in nodes:
@@ -164,18 +180,13 @@ for node in nodes:
             candidates = sorted({path for ident, paths in id_to_paths.items() if ident.startswith(parent) for path in paths})
         if not candidates and len(parent) >= 12:
             candidates = sorted({n["path"] for n in nodes if Path(n["path"]).stem == parent or Path(n["path"]).stem.startswith(parent + "-") or parent in Path(n["path"]).stem})
-        preferred = canonical_preferred_paths.get(parent)
-        if preferred and preferred in candidates:
-            resolution = "CANONICAL_PREFERRED_WITH_DUPLICATE_OCCURRENCES"
-            selected_path = preferred
-        elif not candidates:
-            resolution, selected_path = "UNRESOLVED", None
-        elif len(candidates) == 1:
-            resolution, selected_path = "UNIQUE", candidates[0]
-        else:
-            resolution, selected_path = "AMBIGUOUS", None
+        resolution, selected_path, override_warning = resolve_parent_target(
+            node["path"], parent, candidates, canonical_preferred_paths, source_parent_overrides
+        )
         edge = {"source": node["path"], "target_id": parent, "candidate_paths": candidates,
                 "selected_path": selected_path, "resolution": resolution}
+        if override_warning:
+            edge["override_warning"] = override_warning
         parent_edges.append(edge)
         if resolution == "UNRESOLVED": unresolved.append(edge)
         elif resolution == "AMBIGUOUS": ambiguous.append(edge)
