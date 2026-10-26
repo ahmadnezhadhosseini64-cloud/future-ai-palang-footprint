@@ -38,3 +38,12 @@ When the user says “فعلاً ببند / صرف‌نظر کن”, mark the co
 ## Limitation
 
 This is a living architecture record, not proof that the entire historic graph has already been audited. Source-backed inventory and exact-head tests remain in NEXT-051 / CURRENT-078.
+
+## GAP-POINT032-DUPLICATE-CHAIN — OPEN / CONFLICTED / COVERED-DEFERRED
+
+- Canonical chain (active pointer): [POINT-0/032 Master–Rahm–Child bridge](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-032-MASTER-RAHM-CHILD-INITIAL-MODEL-BRIDGE.md) → [IN-067 bridge](../../0.0/anchors/PALANG-0.0-IN-20261026-067-MASTER-RAHM-CHILD-BRIDGE.md) → [OUT-066 bridge](../../0.0/anchors/PALANG-0.0-OUT-20261026-066-MASTER-RAHM-CHILD-BRIDGE.md) → [EVT-0201 bridge](./EVT-0201-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION-2026-10-26.md) → [CURRENT-079 bridge](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-079-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION.md).
+- Competing audit artifacts are retained, not deleted: `GPT6-RAHM-USER-POINT-0-20261026-032-MASTER-RAHM-CHILD-INTERACTIVE-VERIFICATION.md`, `PALANG-0.0-IN-20261026-067-MASTER-RAHM-CHILD-INTERACTIVE-VERIFICATION.md`, `PALANG-0.0-OUT-20261026-066-MASTER-RAHM-CHILD-INTERACTIVE-VERIFICATION.md`, `EVT-0201-MASTER-RAHM-CHILD-INTERACTIVE-VERIFICATION-2026-10-26.md`, and `PALANG-0.0-CURRENT-20261026-079-MASTER-RAHM-CHILD-INTERACTIVE-VERIFICATION.md`.
+- Finding: overlapping sequence labels/production IDs were created by competing writes. The alternate files have been annotated as non-canonical/conflicted; the canonical index and cross-validation contract point to the bridge chain. This does not establish source lineage or erase the collision.
+- Cover: COVERED / DEFERRED / REVERSIBLE. Underlying issue stays OPEN / ACTIVE / LIVING.
+- Reopen trigger: source/commit lineage audit, inbound-reference census, exact-current-SHA audit and manifest conformance. Do not delete or merge files by inference.
+- Queue: NEXT-051 remains active; no NEXT-052.
