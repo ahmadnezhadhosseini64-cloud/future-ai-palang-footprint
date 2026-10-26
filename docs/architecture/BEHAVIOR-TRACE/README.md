@@ -855,3 +855,9 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - [EVT-0197](./EVT-0197-POINT-0-PLUS-HIGHLIGHT-AND-ARCHITECTURE-CLOSURE-2026-10-26.md) and [time binding](./TIME-BINDING-EVT-0197-POINT-0-PLUS-2026-10-26.md) connect [POINT-0+](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-PLUS-20261026-028-PORTABLE-GPT6-MILESTONE.md) to canonical POINT-0/028 and CURRENT-076.
 - 0+ is emphasis only; all 0 rules remain identical. NEXT-051 remains active; no NEXT-052.
 - CI batch passed on SHA 282cb1acd859c188f4cbb2443a960a013380d385; follow-up commits mean latest main must be retested. Preserve the unresolved EVT-0195 collision.
+
+
+## EVT-0197 — New POINT-0 and continuation instruction (2026-10-26)
+- Event: [EVT-0197](./EVT-0197-USER-REQUEST-NEW-POINT-0-AND-CONTINUE-2026-10-26.md).
+- Root: [POINT-0/029](../../0.0/anchors/PALANG-0.0-POINT-0-029-CONTINUE-HAIF-ARCHITECTURE-2026-10-26.md); parent POINT-0/028; CURRENT-075; NEXT-051 remains the only active queue.
+- Lesson recorded: do not divert to Dropbox while the active objective is portable-model/architecture continuation. Dropbox remains OPEN / NOT VERIFIED.
