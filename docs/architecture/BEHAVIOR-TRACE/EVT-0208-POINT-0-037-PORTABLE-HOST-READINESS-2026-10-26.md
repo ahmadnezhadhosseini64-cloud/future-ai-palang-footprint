@@ -23,3 +23,4 @@ The project is ready for a controlled attempt to import the package into the tar
 
 ## Open proof gates
 Exact latest-main-SHA validation, real-host I1–I8, direct import receipt, restart recovery, persistence, round-trip, and evidence-backed resolution of the two unresolved parent edges and open identifier groups.
+- Canonical repository time binding: [TIME-BINDING-EVT-0208](./TIME-BINDING-EVT-0208-POINT-0-037-2026-10-26.md).
