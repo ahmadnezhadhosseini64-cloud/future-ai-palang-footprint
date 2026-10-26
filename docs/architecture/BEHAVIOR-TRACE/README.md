@@ -794,3 +794,6 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Event: [EVT-0191](./EVT-0191-EXCAVATION-FINDINGS-DUAL-PATH-2026-10-26.md)
 - Current: [CURRENT-072](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-072-DUAL-PATH-EXCAVATION.md)
 - Lesson: after accepted excavation findings, do not stop at a report; anchor and execute. Inspect the current register before assigning identifiers. Path A and Path B both remain active; NEXT-051 remains the remediation queue.
+
+## Time binding — CURRENT-072 / POINT-0/025
+- [TIME-BINDING-CURRENT-072](./TIME-BINDING-CURRENT-072-POINT-0-025-2026-10-26.md) records the actual CURRENT-072 last-change commit timestamp in UTC and its derived Asia/Tehran equivalent.
