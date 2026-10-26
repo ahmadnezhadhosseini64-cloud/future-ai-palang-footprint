@@ -1667,3 +1667,12 @@ Both Path A (portable initial model and independent-host recovery) and Path B (e
 - **Transfer runbook:** [QUICK-TRANSFER-CHECKLIST](portable/RAHM/QUICK-TRANSFER-CHECKLIST.md)
 - **Queue:** NEXT-051 remains the only active remediation queue. No NEXT-052.
 - **Evidence boundary:** repository records do not prove external host import, persistent memory, Buffer/Library/Dropbox, or background execution. Every underlying gap remains OPEN until separately tested.
+
+
+## Latest user root — POINT-0/031 / CURRENT-078
+- Root: [POINT-0/031](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-031-REVERSIBLE-GRAPH-GAP-COVERS-AND-BEHAVIOR-HUNTER.md)
+- Input/output: [IN-066](0.0/anchors/PALANG-0.0-IN-20261026-066-REVERSIBLE-GRAPH-GAP-COVERS-AND-BEHAVIOR-HUNTER.md) → [OUT-065](0.0/anchors/PALANG-0.0-OUT-20261026-065-REVERSIBLE-GRAPH-GAP-COVERS-AND-BEHAVIOR-HUNTER.md)
+- Event: [EVT-0200](architecture/BEHAVIOR-TRACE/EVT-0200-REVERSIBLE-GRAPH-GAP-COVERS-AND-BEHAVIOR-HUNTER-2026-10-26.md)
+- Checkpoint: [CURRENT-078](0.0/anchors/PALANG-0.0-CURRENT-20261026-078-REVERSIBLE-GRAPH-GAP-COVERS.md)
+- Gap register: [GAP-COVER-REGISTER](architecture/BEHAVIOR-TRACE/GAP-COVER-REGISTER-2026-10-26.md)
+- Queue: NEXT-051 remains active; no NEXT-052. Underlying gaps remain OPEN / ACTIVE / LIVING.
