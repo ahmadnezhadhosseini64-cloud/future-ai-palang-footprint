@@ -2021,3 +2021,8 @@ The current root is [POINT-0/027](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261
 ## POINT-0/029 continuation registration — 2026-10-26
 - Root: [POINT-0/029](../../0.0/anchors/PALANG-0.0-POINT-0-029-CONTINUE-HAIF-ARCHITECTURE-2026-10-26.md); event [EVT-0197](../BEHAVIOR-TRACE/EVT-0197-USER-REQUEST-NEW-POINT-0-AND-CONTINUE-2026-10-26.md).
 - Continue the existing NEXT-051 queue only; do not create NEXT-052. CURRENT-065/CURRENT-066 remains unresolved. New root registration does not close any acceptance gate.
+
+
+## POINT-0/030 continuation — 2026-10-26
+- Root: [POINT-0/030](../../0.0/anchors/PALANG-0.0-POINT-0-030-CONTINUE-FROM-029-2026-10-26.md); event: [EVT-0198](../BEHAVIOR-TRACE/EVT-0198-USER-REQUEST-POINT-0-030-AND-CONTINUE-2026-10-26.md).
+- Continue NEXT-051 only. Do not create NEXT-052. CURRENT-065/CURRENT-066 remains unresolved. Exact-head audits and independent-host recovery remain open until evidence proves completion.
