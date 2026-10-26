@@ -1742,3 +1742,11 @@ The canonical chain is [POINT-0/032](./anchors/GPT6-RAHM-USER-POINT-0-20261026-0
 - Current status: POINT-0/036 marked 0+; CURRENT-085 is the active checkpoint; NEXT-051 remains the sole active queue.
 - Reversible parent-gap cover: [Recovery Bridge](../reference/REFERENCE-DOCUMENTS/HAIF-CORE-MASTER-CHILD-RAHM-RECOVERY-BRIDGE-2026-10-26-001.md). It preserves continuity but is explicitly not the missing original master; the two edges stay UNRESOLVED.
 - Canonical time bindings (UTC + Tehran equivalent): [POINT-0/036 0+](../architecture/BEHAVIOR-TRACE/TIME-BINDING-POINT-0-036-0PLUS-2026-10-26.md), [IN-073](../architecture/BEHAVIOR-TRACE/TIME-BINDING-IN-073-POINT-0-036-2026-10-26.md), [OUT-072](../architecture/BEHAVIOR-TRACE/TIME-BINDING-OUT-072-POINT-0-036-2026-10-26.md), [EVT-0207](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0207-POINT-0-036-2026-10-26.md), [CURRENT-085](../architecture/BEHAVIOR-TRACE/TIME-BINDING-CURRENT-085-POINT-0-036-2026-10-26.md).
+
+
+## POINT-0/037 — Portable host readiness (2026-10-26)
+
+- Root: [POINT-0/037](anchors/GPT6-RAHM-USER-POINT-0-20261026-037-PORTABLE-HOST-READINESS-AND-REPOSITORY-STATE.md).
+- Interaction chain: [IN-074](anchors/PALANG-0.0-IN-20261026-074-PORTABLE-HOST-READINESS.md) → [OUT-073](anchors/PALANG-0.0-OUT-20261026-073-PORTABLE-HOST-READINESS.md) → [EVT-0208](../architecture/BEHAVIOR-TRACE/EVT-0208-POINT-0-037-PORTABLE-HOST-READINESS-2026-10-26.md) → [CURRENT-086](anchors/PALANG-0.0-CURRENT-20261026-086-PORTABLE-HOST-READINESS.md).
+- State: portable package ready for a controlled host trial; real interactive-host import/restart/persistence/round-trip NOT RUN. Path B retains 2 unresolved parent edges and open identity groups.
+- Existing global queue: [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md); no parallel queue.
