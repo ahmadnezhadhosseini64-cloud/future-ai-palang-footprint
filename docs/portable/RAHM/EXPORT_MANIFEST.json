@@ -1,7 +1,7 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.8.7",
-  "manifest_status": "POINT-0/032, CURRENT-079, Master–Rahm–Child cross-validation contract, UTC/Tehran time binding and reversible graph-gap covers included; underlying gaps remain OPEN/ACTIVE/LIVING; exact-final-SHA conformance and real interactive-project/clean-host tests required",
+  "version": "1.8.8",
+  "manifest_status": "POINT-0/032 and CURRENT-079 bridge included; manifest digests reconciled after final root/event/checkpoint/time-binding edits; underlying graph gaps remain OPEN; exact-final-SHA conformance and real interactive-project/clean-host tests required",
   "created_from_checkpoint": "HAIF-CURRENT-079-20261026 + HAIF-RUNTIME-0.1",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [
@@ -248,8 +248,8 @@
     {
       "path": "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-032-MASTER-RAHM-CHILD-INITIAL-MODEL-BRIDGE.md",
       "version": "repository-current",
-      "git_blob_sha": "cedeac69b20ac0ea9a533b1cca18ad995f33c916",
-      "sha256": "d6d08330d1348d1585c5d715168f2f7af3e68274b52e118ebbc54d44921f4324"
+      "git_blob_sha": "1d5366a767d206d5efa28e0162fe960279a40aa4",
+      "sha256": "f096bf8f3e6647f6dd87060534b5b6b3713abb5b2ebe6552e93595ae52b7ab34"
     },
     {
       "path": "docs/0.0/anchors/PALANG-0.0-IN-20261026-067-MASTER-RAHM-CHILD-BRIDGE.md",
@@ -266,14 +266,14 @@
     {
       "path": "docs/architecture/BEHAVIOR-TRACE/EVT-0201-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION-2026-10-26.md",
       "version": "repository-current",
-      "git_blob_sha": "52f692751fb713260a479d99f6dd8553ca0e8061",
-      "sha256": "f764c9def62f5197faaff3911309120bb0c57dc2a4d182f77744a015a2b1ab3f"
+      "git_blob_sha": "0268678e3df5f5469ab33537763b874bc8d5af62",
+      "sha256": "3042e56926146e07112ca900e0dc9f7a2d565883d0ab5c3283a2a61fef9d4037"
     },
     {
       "path": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261026-079-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION.md",
       "version": "repository-current",
-      "git_blob_sha": "c341d940f8c4682dbc2e19de1d008da54b764dd6",
-      "sha256": "1dd6b817819dca2455910634f8fe60ba766123b1a81e09e57d5ba0e66a6fa705"
+      "git_blob_sha": "6f4524908c8f6df16b573456a28f2022eb0f754d",
+      "sha256": "9f4a43de4dbb2664e6788fefcd46775d4f68555d7625e425c126778e841eb804"
     },
     {
       "path": "docs/architecture/MASTER-RAHM-CHILD/MASTER-RAHM-CHILD-CROSS-VALIDATION-CONTRACT-2026-10-26.md",
@@ -284,8 +284,8 @@
     {
       "path": "docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-POINT-0-032-EVT-0201-2026-10-26.md",
       "version": "repository-current",
-      "git_blob_sha": "9cd359298c81259966390b74dcfd47d7e0578863",
-      "sha256": "cbca34725c5a4d0c9d2a33098a107f56630e0fa5062f2c592eeef0897586d6af"
+      "git_blob_sha": "57361d0597983e7ad66ddfe1026e25ac67bcd461",
+      "sha256": "c2a03b6f1921971ce00cd1e4df2c5d2fa3d1a9a40550867b25800f3b73e37704"
     },
     {
       "path": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261026-078-REVERSIBLE-GRAPH-GAP-COVERS.md",
