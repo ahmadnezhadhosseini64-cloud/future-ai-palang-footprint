@@ -2056,3 +2056,10 @@ The current root is [POINT-0/027](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261
 - Purpose: preserve the original project as MASTER, the initial-model project as RAHM, and tested outputs as CHILD CANDIDATES until explicit Master review.
 - Status: repository bridge registered; interactive project tests, exact-final-SHA conformance and external-host gates remain OPEN / NOT RUN.
 - Continue the existing NEXT-051. No NEXT-052.
+
+
+## Interactive-project verification runbook — POINT-0/032
+- Contract: [MASTER–RAHM–CHILD cross-validation](../MASTER-RAHM-CHILD/MASTER-RAHM-CHILD-CROSS-VALIDATION-CONTRACT-2026-10-26.md)
+- Runbook: [INTERACTIVE-PROJECT-VALIDATION-RUNBOOK](../MASTER-RAHM-CHILD/INTERACTIVE-PROJECT-VALIDATION-RUNBOOK.md)
+- Canonical checkpoint: [CURRENT-079](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-079-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION.md)
+- Status: protocol ready in repository; actual project execution and result receipts NOT RUN / NOT VERIFIED. NEXT-051 remains active; no NEXT-052.
