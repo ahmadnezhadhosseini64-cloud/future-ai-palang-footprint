@@ -2,7 +2,7 @@
 
 - Stable ID: HAIF-CURRENT-085-0PLUS-MODEL-ACCELERATION-20261026
 - Production ID: HAIF-C085
-- Version: 1.0.0
+- Version: 1.0.1
 - Status: ACTIVE / LIVING / OPEN / EXECUTION REQUIRED
 - Root / 0+ marker: [POINT-0/036](./GPT6-RAHM-USER-POINT-0-20261026-036-DEEP-EXCAVATION-INITIAL-MODEL-COMPLETION.md)
 - Chain: [IN-073](./PALANG-0.0-IN-20261026-073-0PLUS-MODEL-ACCELERATION.md) → [OUT-072](./PALANG-0.0-OUT-20261026-072-0PLUS-MODEL-ACCELERATION.md) → [EVT-0207](../../architecture/BEHAVIOR-TRACE/EVT-0207-POINT-0-036-0PLUS-MODEL-ACCELERATION-2026-10-26.md)
@@ -10,13 +10,12 @@
 - Active queue: [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
 
 ## Last verified baseline
-Exact-head CI on main SHA `18ccbef16e5bae6e9e31879de8cf575c1c371bec`:
-- Living Architecture Audit: PASS; [run 40348805748](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40348805748).
-- Portable RAHM Conformance: PASS; [run 40348805726](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40348805726).
-- Audit artifact 12661318656, SHA-256 `da4e3ecd4e77f47830baec8c0ede02f9a835a2070db28f30de2069cc1431e41a`.
-- Portable package SHA-256 `a2d6cd45d2cafe48bf28c2304d3d1142b5c4a516ccc63e6afabe381e50a73dbd`.
+Exact-head CI receipts after 0+ registration and reversible parent-gap cover:
+- Living Architecture Audit: PASS on main SHA `159c9fc4f4e6b1699bccc5f0d351a80fb172c08b`; [run 40354029943](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40354029943). Audit artifact 12665002634, SHA-256 `22b68969bfd4ea0e934557e4a7d3d9947b86022443bb0cfe7a9e2c81c0829929`.
+- Portable RAHM Conformance: PASS on SHA `c68569a35d7e89e426732131615361a93afd3e77`; [run 40353992571](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40353992571). Package artifact 12665581346, archive digest `sha256:45200f30b4bd49d796a63a91c4249aa66938f1e7057d618a0c5d439ca3e6b152`; package content SHA-256 `be493445e9fe7493c36b1cd0a2f6e4909b7f4c2157e749f7b595570f073f4a6b`.
 - Local starter engine: 13 tests PASS. Host adapter tests: PASS.
-- Graph: 0 missing local links; 2 unresolved parent edges; 0 ambiguous parent edges. Identity groups still open: 1 Stable-ID, 66 Production-ID, 5 Reference-ID, 3 event-number groups unreviewed; 11 exact-content duplicate groups remain classified, not auto-deleted.
+- Graph audit on SHA `159c9fc4f4e6b1699bccc5f0d351a80fb172c08b`: 5,004 files including generated evidence; 1,332 source text files; 7,679 local-link edges; 0 missing local links; 2 unresolved parent edges; 0 ambiguous parent edges. Identity groups still open: 1 Stable-ID, 66 Production-ID, 5 Reference-ID, 3 event-number groups unreviewed; 11 exact-content duplicate groups remain classified, not auto-deleted.
+- The two unresolved edges both point to the missing standalone historical parent `HAIF-CORE-MASTER-CHILD-RAHM-2026-09-15-001`. A reversible gap cover is now registered: [Recovery Bridge](../../reference/REFERENCE-DOCUMENTS/HAIF-CORE-MASTER-CHILD-RAHM-RECOVERY-BRIDGE-2026-10-26-001.md). It is not the original parent; both edges remain UNRESOLVED.
 - Timestamp normalization at that SHA: 4,811 files; 2,880 timestamp strings normalized and paired; 0 parse/offset/UTC-label failures. Two legacy files still show missing/unknown exact-time labels.
 - Pointer scope: SCOPED_CONSISTENT. Historical overlay CURRENT-066 and global project pointer CURRENT-073 are intentionally distinct scopes.
 
