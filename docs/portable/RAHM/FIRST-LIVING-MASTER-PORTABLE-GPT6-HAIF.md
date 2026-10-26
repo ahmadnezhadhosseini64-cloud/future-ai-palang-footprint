@@ -380,3 +380,12 @@ The canonical live checkpoint is now [CURRENT-066](../../0.0/anchors/PALANG-0.0-
 - Reversible cover policy: improve navigation and risk containment without changing underlying gate status. No historic pointer, duplicate event ID, source/parent/time finding, or external-destination gap is closed by this update.
 - Fastest safe route: exact-SHA package conformance → export digest/read-back → real clean-host import receipt → independent reconstruction comparison → record failures and continue the existing queue.
 - Real host import remains NOT RUN until a destination host directly returns evidence. Buffer/Persistent Memory/Library/Dropbox and idle/background execution remain separately unverified.
+
+
+## Living update — POINT-0/031 / CURRENT-078
+- Root: [POINT-0/031](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-031-REVERSIBLE-GRAPH-GAP-COVERS-AND-BEHAVIOR-HUNTER.md)
+- Checkpoint: [CURRENT-078](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-078-REVERSIBLE-GRAPH-GAP-COVERS.md)
+- Event: [EVT-0200](../../architecture/BEHAVIOR-TRACE/EVT-0200-REVERSIBLE-GRAPH-GAP-COVERS-AND-BEHAVIOR-HUNTER-2026-10-26.md)
+- Gap register: [GAP-COVER-REGISTER](../../architecture/BEHAVIOR-TRACE/GAP-COVER-REGISTER-2026-10-26.md)
+- Covers are reversible deferrals: all underlying gaps stay OPEN / ACTIVE / LIVING, indexed and in Behavior Hunter scan scope. Never infer provenance or parentage.
+- NEXT-051 remains the sole active queue. Exact-head conformance and clean-host import remain evidence gates; a CI runner is not an independent AI host.
