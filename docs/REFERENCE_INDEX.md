@@ -1564,3 +1564,5 @@ Current continuation chain: POINT-0/013 → IN-057 → OUT-056 → EVT-0166 → 
 Invariant: Path A (initial model construction) and Path B (existing graph remediation) must both advance. NEXT-051 remains active. Independent-host import, persistence, automatic capture and background execution remain unverified until direct evidence exists.
 
 - Current continuation: [CURRENT-072](./0.0/anchors/PALANG-0.0-CURRENT-20261026-072-DUAL-PATH-EXCAVATION.md); NEXT-051 remains active.
+
+- Current checkpoint time binding: [TIME-BINDING-CURRENT-072](./architecture/BEHAVIOR-TRACE/TIME-BINDING-CURRENT-072-POINT-0-025-2026-10-26.md) — UTC 2026-10-26T04:01:15Z / Tehran 2026-10-26 07:31:15 +03:30.
