@@ -1693,3 +1693,9 @@ Both Path A (portable initial model and independent-host recovery) and Path B (e
 - HAIF-OUT-067-MASTER-RAHM-CHILD-CLARIFICATION-20261026: [OUT-067](0.0/anchors/PALANG-0.0-OUT-20261026-067-MASTER-RAHM-CHILD-CLARIFICATION.md) — assistant decision and evidence boundary.
 - HAIF-EVT-0202-MASTER-RAHM-CHILD-CLARIFICATION-20261026: [EVT-0202](architecture/BEHAVIOR-TRACE/EVT-0202-MASTER-RAHM-CHILD-CLARIFICATION-2026-10-26.md) — event record.
 - HAIF-CURRENT-080-MASTER-RAHM-CHILD-CLARIFICATION-20261026: [CURRENT-080](0.0/anchors/PALANG-0.0-CURRENT-20261026-080-MASTER-RAHM-CHILD-CLARIFICATION.md) — latest continuation checkpoint.
+
+## Clarification continuation — CURRENT-080
+- [IN-068](0.0/anchors/PALANG-0.0-IN-20261026-068-MASTER-RAHM-CHILD-CLARIFICATION.md) — user clarification; extend existing RAHM, no parallel project.
+- [OUT-067](0.0/anchors/PALANG-0.0-OUT-20261026-067-MASTER-RAHM-CHILD-CLARIFICATION.md) — assistant decision and evidence boundary.
+- [EVT-0202](architecture/BEHAVIOR-TRACE/EVT-0202-MASTER-RAHM-CHILD-CLARIFICATION-2026-10-26.md) — event record.
+- [CURRENT-080](0.0/anchors/PALANG-0.0-CURRENT-20261026-080-MASTER-RAHM-CHILD-CLARIFICATION.md) — latest continuation checkpoint.
