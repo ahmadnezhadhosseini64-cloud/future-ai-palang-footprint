@@ -2056,3 +2056,11 @@ The current root is [POINT-0/027](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261
 - Purpose: preserve the original project as MASTER, the initial-model project as RAHM, and tested outputs as CHILD CANDIDATES until explicit Master review.
 - Status: repository bridge registered; interactive project tests, exact-final-SHA conformance and external-host gates remain OPEN / NOT RUN.
 - Continue the existing NEXT-051. No NEXT-052.
+
+## MASTER → RAHM → CHILD integration — 2026-10-26
+
+- Root/checkpoint: [POINT-0/032](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-032-MASTER-RAHM-CHILD-ARCHITECTURE.md) → [CURRENT-079](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-079-MASTER-RAHM-CHILD-ARCHITECTURE.md).
+- Governing contract: [MASTER–RAHM–CHILD promotion and interactive-host verification](../../reference/REFERENCE-DOCUMENTS/MASTER-RAHM-CHILD-PROMOTION-AND-INTERACTIVE-HOST-VERIFICATION-2026-10-26-001.md).
+- Decision: original repository/project remains MASTER; initial-model package is RAHM; verified output remains CHILD CANDIDATE until explicit MASTER acceptance; NEWBORN is reserved for the promoted, independently recoverable version.
+- State: REPOSITORY DOCUMENTATION REGISTERED ON WORK BRANCH; final read-back, exact-head conformance, manifest digest regeneration, and actual interactive-project import remain OPEN.
+- Do not mark as integrated into an external project based on repository links alone. Continue NEXT-051; no NEXT-052.
