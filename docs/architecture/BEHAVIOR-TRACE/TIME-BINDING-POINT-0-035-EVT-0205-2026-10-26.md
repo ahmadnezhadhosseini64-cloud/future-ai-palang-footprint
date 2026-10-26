@@ -7,5 +7,5 @@
 - Canonical repository last-change commit: 71785796e89788b9f5efed536ee9931abca75c97
 - Canonical repository commit time (UTC): 2026-10-26T10:52:07Z
 - Derived Asia/Tehran time: 2026-10-26 14:22:07 +03:30
-- Root Git blob SHA-1:  (must be filled from current GitHub read-back)
+- Root Git blob SHA-1: ac36548366e2d23a201b118336b605a1fcbcce34
 - Rule: repository commit time is the canonical registration time; original user-message time is unknown and not replaced by commit time.
