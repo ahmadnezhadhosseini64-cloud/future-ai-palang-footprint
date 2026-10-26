@@ -35,3 +35,7 @@ Start by fetching this checkpoint, the bridge contract, the initial-model mother
 ## Direct interactive-project execution entry
 - Runbook: [INTERACTIVE-PROJECT-VALIDATION-RUNBOOK](../../architecture/MASTER-RAHM-CHILD/INTERACTIVE-PROJECT-VALIDATION-RUNBOOK.md)
 - This is a ready-to-paste test protocol. Actual IPV-01 through IPV-10 results remain NOT RUN / NOT VERIFIED until the interactive destination returns direct receipts. No Child promotion has occurred.
+
+## Canonical repository time
+- [TIME-BINDING-POINT-0-032 / EVT-0201](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-POINT-0-032-EVT-0201-2026-10-26.md) contains the actual commit-time ledger for this chain; use UTC as canonical and Tehran as a derived display.
+- Portable export manifest was refreshed to version 1.8.7; exact-final-SHA conformance is still required.
