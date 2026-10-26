@@ -168,7 +168,13 @@ jobs:
           elif [ "$rc" -ne 0 ]; then
             exit "$rc"
           else
-            echo "LIVE_CURRENT_POINTER=CONSISTENT"
+            status=$(python3 -c "import json; print(json.load(open('audit-output/current-pointer-discovery.json', encoding='utf-8'))['status'])")
+            if [ "$status" = "SCOPED_CONSISTENT" ]; then
+              echo "LIVE_CURRENT_POINTER=SCOPED_CONSISTENT"
+              echo "OVERLAY_RECOVERY_AND_GLOBAL_PROJECT_POINTERS_ARE_SEPARATELY_CONSISTENT=true"
+            else
+              echo "LIVE_CURRENT_POINTER=CONSISTENT"
+            fi
           fi
           echo "No current pointer is promoted by this checker; source adjudication remains a separate decision."
 
