@@ -1722,3 +1722,4 @@ The canonical chain is [POINT-0/032](./anchors/GPT6-RAHM-USER-POINT-0-20261026-0
 - MASTER remains authoritative; the existing initial-model package is RAHM; no CHILD is promoted without destination receipts and explicit MASTER acceptance.
 - Repository verification and destination-host verification are separate. Continue NEXT-051 only.
 
+- Time receipt: [TIME-BINDING-POINT-0-034](../architecture/BEHAVIOR-TRACE/TIME-BINDING-POINT-0-034-EVT-0204-2026-10-26.md) — repository commit time 10:16:08 UTC / 13:46:08 Tehran.
