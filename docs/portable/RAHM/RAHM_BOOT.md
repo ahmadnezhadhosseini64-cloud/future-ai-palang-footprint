@@ -80,3 +80,12 @@ Required response envelope: host capabilities → package integrity → reconstr
 
 - Latest continuation: [POINT-0/033](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-033-EXCAVATION-AND-MASTER-RAHM-CHILD-CONTINUATION.md) → [CURRENT-081](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-081-EXCAVATION-AND-MASTER-RAHM-CHILD-CONTINUATION.md). Preserve both POINT-0/032 source candidates until provenance-based reconciliation; no automatic promotion.
 
+
+## Latest continuation — POINT-0/034 / CURRENT-082
+
+- Root: [POINT-0/034](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-034-INTERACTIVE-RAHM-EXECUTION.md)
+- Current checkpoint: [CURRENT-082](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-082-INTERACTIVE-RAHM-EXECUTION.md)
+- Runbook: [interactive-project validation](../../architecture/MASTER-RAHM-CHILD/INTERACTIVE-PROJECT-VALIDATION-RUNBOOK.md)
+- Required proof: repository conformance on exact final SHA, then a destination receipt from the actual interactive project for I1–I8. Neither should be inferred from file registration.
+- Continue NEXT-051 only. Preserve all historical gaps as OPEN; do not create NEXT-052.
+
