@@ -2,7 +2,7 @@
 
 - Stable ID: HAIF-CURRENT-084-DEEP-EXCAVATION-INITIAL-MODEL-COMPLETION-20261026
 - Production ID: HAIF-C084
-- Version: 1.0.0
+- Version: 1.0.1
 - Status: ACTIVE / LIVING / OPEN / EXECUTION REQUIRED
 - Root: [POINT-0/036](./GPT6-RAHM-USER-POINT-0-20261026-036-DEEP-EXCAVATION-INITIAL-MODEL-COMPLETION.md)
 - Chain: [IN-072](./PALANG-0.0-IN-20261026-072-DEEP-EXCAVATION-INITIAL-MODEL-COMPLETION.md) → [OUT-071](./PALANG-0.0-OUT-20261026-071-DEEP-EXCAVATION-INITIAL-MODEL-COMPLETION.md) → [EVT-0206](../../architecture/BEHAVIOR-TRACE/EVT-0206-POINT-0-036-DEEP-EXCAVATION-INITIAL-MODEL-COMPLETION-2026-10-26.md)
@@ -16,6 +16,16 @@
 - Unit tests exist for both helper modules, and the living audit workflow contains explicit unittest and py_compile steps for them. Therefore the earlier CURRENT-083 statement that these helpers were not yet wired into CI is stale and must be reconciled with current receipts.
 - Recent workflow receipts on this head include successful Pending Registration Drain, Production Detection Safety Net and Reconciliation Watchdog. These are not a substitute for the living graph audit and portable RAHM conformance.
 - The latest known graph-audit baseline from the prior CURRENT-083 is 4 missing local links, 2 unresolved parent edges, 0 ambiguous parent edges, 63 Stable-ID groups, 92 Production-ID groups, 7 Reference-ID groups and 41 event-number groups. Treat these as a historical baseline only, not current counts.
+
+## Exact-head CI receipt on main SHA `18ccbef16e5bae6e9e31879de8cf575c1c371bec`
+
+- Living Architecture Audit run [40348805748](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40348805748): SUCCESS. Audit artifact `12661318656`, SHA-256 `da4e3ecd4e77f47830baec8c0ede02f9a835a2070db28f30de2069cc1431e41a`.
+- Portable RAHM Conformance run [40348805726](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40348805726): SUCCESS. Exact-byte and live-reference SHA-256 scans PASS; package SHA-256 `a2d6cd45d2cafe48bf28c2304d3d1142b5c4a516ccc63e6afabe381e50a73dbd`.
+- Starter engine: 13 tests PASS, including IN/OUT recovery, export/import round-trip, hash tamper detection, duplicate-ID rejection, child-promotion gate and open-gap preservation.
+- Host adapter tests PASS: synthetic ingest, authentication, durable readback, idempotent retry, conflicting retry rejection and restart recovery. This proves the adapter test harness, not an external interactive GPT host.
+- Graph audit at this SHA: 4,968 files including generated evidence; 1,322 source text files; 7,624 local-link edges; 0 missing local links; 2 unresolved parent edges; 0 ambiguous parent edges. Collision groups: 23 Stable ID (1 unreviewed), 68 Production ID (66 unreviewed), 5 Reference ID (5 unreviewed), 41 event-number groups (3 unreviewed), 11 exact-content duplicate groups.
+- Timestamp normalization: 4,811 files scanned; 2,880 timestamps normalized and paired UTC/Tehran; 0 parse ambiguity, offset/value or UTC-label failures. Two legacy records still have missing/unknown exact-time labels.
+- Pointer scope: `SCOPED_CONSISTENT`; overlay CURRENT-066 and global CURRENT-073 are separate scopes, not a forced winner.
 
 ## Path A — executable initial model
 - Local runtime and portable RAHM package must build and pass integrity/import/export/recovery tests on the same exact SHA.
