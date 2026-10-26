@@ -3,13 +3,13 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.9.4
+- Version: 1.9.5
 - Date: 2026-10-26
 - Exact Time: 11:25 local project time, minute precision; exact seconds not captured.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: POINT-0/035 is the latest user-turn root; CURRENT-083 is the active execution checkpoint; identifier-header extraction and source-specific parent resolution are implemented and queued for CI verification; four broken local links are being corrected; CURRENT-065/CURRENT-066 lineage remains OPEN; NEXT-051 remains the single active queue; no NEXT-052 placeholder.
+- Status: POINT-0/036 is the latest user-turn root; CURRENT-084 is the active execution checkpoint; identifier-header extraction and source-specific parent resolution are implemented and wired to the living audit's test/compile steps; exact-head audit and portable conformance after this registration are PENDING; CURRENT-065/CURRENT-066 lineage remains OPEN; NEXT-051 remains the single active queue; no NEXT-052 placeholder.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
