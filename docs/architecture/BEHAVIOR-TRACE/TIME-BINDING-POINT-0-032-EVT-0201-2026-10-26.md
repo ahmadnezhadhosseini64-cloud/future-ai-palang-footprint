@@ -12,7 +12,7 @@
 | OUT-066 | 4b3b70faf31a85b93676ae2bdb28355fa199d123 | 2026-10-26T08:51:16Z | 2026-10-26T12:21:16+03:30 |
 | EVT-0201 | b5af6112a503593a8874bfaa9de304b27ae41ebb | 2026-10-26T08:58:06Z | 2026-10-26T12:28:06+03:30 |
 | Cross-validation contract | d4f33fb192641aa35b5e33bde8985e4c846a50b6 | 2026-10-26T08:57:32Z | 2026-10-26T12:27:32+03:30 |
-| CURRENT-079 | 5ed2805d0bb0befb39570d60ffd04fd200a2d602 | 2026-10-26T08:57:44Z | 2026-10-26T12:27:44+03:30 |
+| CURRENT-079 | 2de366040c7b0e04a344bffac22cb6f7911a8085 | 2026-10-26T09:05:24Z | 2026-10-26T12:35:24+03:30 |
 
 ## Evidence boundary
 These timestamps are actual commit metadata fetched from the repository. They do not prove external project execution, independent-host import, persistence or background operation. The time-binding document's own timestamp is intentionally not self-referenced; it can be added by a later ledger update.
@@ -28,3 +28,5 @@ These timestamps are actual commit metadata fetched from the repository. They do
 | Export manifest 1.8.10 | 1f53122f2f0ccc0889e9219f36ff10d936d807b6 | 2026-10-26T09:01:03Z | 2026-10-26T12:31:03+03:30 |
 
 The duplicate same-number artifacts are intentionally not treated as canonical rows in this table; they are preserved as conflicted evidence in GAP-POINT032-DUPLICATE-CHAIN. The time-binding document's own current edit time is not self-referenced; a later ledger update may add it.
+
+- Current-checkpoint conformance receipt added by commit `2de366040c7b0e04a344bffac22cb6f7911a8085`; its actual commit time is now the canonical repository registration time for CURRENT-079.
