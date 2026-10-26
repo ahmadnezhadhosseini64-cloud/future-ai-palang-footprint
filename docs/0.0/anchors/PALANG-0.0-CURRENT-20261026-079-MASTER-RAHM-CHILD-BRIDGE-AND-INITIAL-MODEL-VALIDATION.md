@@ -30,3 +30,8 @@
 
 ## Resume action
 Start by fetching this checkpoint, the bridge contract, the initial-model mother and NEXT-051. Run a focused link/read-back check; then trigger or inspect exact-HEAD CI and record the real result. After repository verification, use the test protocol in the interactive project environment. A test result without a destination receipt remains NOT RUN / NOT VERIFIED.
+
+
+## Direct interactive-project execution entry
+- Runbook: [INTERACTIVE-PROJECT-VALIDATION-RUNBOOK](../../architecture/MASTER-RAHM-CHILD/INTERACTIVE-PROJECT-VALIDATION-RUNBOOK.md)
+- This is a ready-to-paste test protocol. Actual IPV-01 through IPV-10 results remain NOT RUN / NOT VERIFIED until the interactive destination returns direct receipts. No Child promotion has occurred.
