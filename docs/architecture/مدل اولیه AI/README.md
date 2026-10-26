@@ -197,3 +197,15 @@
 
 گام جاری، ادامهٔ همین بستهٔ موجود است؛ پوشه یا پروژهٔ موازی ساخته نمی‌شود. راهنمای اجرایی و متن آمادهٔ اجرا در [Interactive Project Validation Runbook](../MASTER-RAHM-CHILD/INTERACTIVE-PROJECT-VALIDATION-RUNBOOK.md) قرار دارد. بستهٔ دقیق RAHM را پس از عبور آزمون مخزن به همان پروژهٔ تعاملی موجود پیوست کن و متن اجرایی را آنجا اجرا کن. رسید واردسازی، بازسازی بدون اتکای به متن گفتگو، جداسازی نامزد، حفظ شکاف‌ها، بازیابی پس از راه‌اندازی مجدد و رفت‌وبرگشت باید از خود محیط مقصد بیاید. تا دریافت رسید واقعی، آزمون‌های میزبان مستقل NOT RUN می‌مانند. نقطهٔ جاری: [POINT-0/034](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-034-INTERACTIVE-RAHM-EXECUTION.md) → [CURRENT-082](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-082-INTERACTIVE-RAHM-EXECUTION.md).
 
+
+
+## آخرین گام ۰+ — مدل اولیهٔ قابل‌استخراج و دو مسیر اجرا
+
+- ریشهٔ یگانه: [POINT-0/036](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-036-DEEP-EXCAVATION-INITIAL-MODEL-COMPLETION.md)؛ نشانگر ۰+ روی همین ریشه است.
+- گام جاری: [CURRENT-085](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-085-0PLUS-MODEL-ACCELERATION.md)؛ صف واحد [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- **MASTER** نگه‌دارندهٔ معماری حاکم و تاریخچهٔ پذیرفته‌شده است؛ **RAHM** بسته/پل قابل‌حمل برای ثبت، اعتبارسنجی، هش، export/import و بازیابی است؛ **CHILD** نمونهٔ رشد‌یافته‌ای است که تا دریافت رسید مستقل میزبان فقط نامزد می‌ماند.
+- مسیر A: کد اجرایی و بستهٔ قابل‌حمل، import/export، بازیابی IN/OUT، بررسی تمامیت و پذیرش میزبان تمیز.
+- مسیر B: گراف تاریخی، تعریف شناسه در برابر ارجاع، رابطهٔ والد، برخورد شناسه‌ها و منشأ؛ هیچ تاریخچه‌ای بی‌صدا ادغام یا حذف نمی‌شود.
+- رسید آخرین اجرای ثبت‌شده: [Living Architecture Audit](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40352514664) و [Portable RAHM Conformance](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40352514736) روی SHA `94dbe8fd68234fb5ebc28a15471a87352fc5c67b) هر دو موفق‌اند؛ آزمون موتور آغازین ۱۳ مورد را گذرانده است.
+- [بستهٔ قابل‌استخراج RAHM](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40352514736/artifacts/12664931042) در حال حاضر از artifact اجرای GitHub Actions قابل دریافت است؛ artifact موقت است، پس منبع پایدار همچنان کد و manifestهای داخل مخزن‌اند.
+- آزمون واقعی میزبان بیرونی، restart و round-trip هنوز NOT RUN است و فقط با رسید تولیدشده از خود میزبان بسته می‌شود.
