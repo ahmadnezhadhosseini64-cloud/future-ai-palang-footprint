@@ -4,7 +4,8 @@
 - Production ID: PALANG-EVT0194-2026-10-26-001
 - Test ID: LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001
 - Version: 1.0.0
-- Status at initial registration: REGISTERED / READ-BACK VERIFICATION REQUIRED.
+- Status: REGISTERED / READ-BACK VERIFIED.
+- Initial registration state preserved: REGISTERED / READ-BACK VERIFICATION REQUIRED; an independent fetch after the initial write confirmed the event file and its key evidence fields.
 - Canonical source: [LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md](../BEHAVIOR-OBSERVATORY/LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md)
 - Library mirror: `/Future AI/Palang Footprint/Master Reference Vault/Reference Documents/LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md`
 - Previous mirror event preserved: [EVT-0177](./EVT-0177-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md) and [its time binding](./TIME-BINDING-EVT-0177-LIVE-MIRROR-SYNC-2026-10-25.md).
@@ -84,7 +85,11 @@ The previous automation prompt's observed root POINT-0/018 is historical, not th
 - A full Living Architecture Audit and Portable RAHM Conformance receipt on this exact main SHA was not independently retrieved. Exact-final-main audit remains NOT VERIFIED.
 - Event/test execution time: UNKNOWN unless independently exposed; repository commit time, workflow log time, Library metadata time, and operation time are separate clocks.
 
-## 5. Deterministic continuation
+## 5. Read-back boundary
+
+The event record itself was independently fetched after its initial write. Its path, source blob SHA, Library stable ID/version, newline delta, current root/checkpoint/queue, and unresolved gates matched the expected record. The status above refers only to this event file's repository read-back; it does not upgrade any external destination or the exact-main audit gate.
+
+## 6. Deterministic continuation
 
 1. Preserve this source/Library comparison and its one-newline delta; do not make a redundant Library write.
 2. Keep CURRENT-065 / CURRENT-066 OPEN until source-backed overlay-manifest and execution-pointer lineage proves a resolution.
