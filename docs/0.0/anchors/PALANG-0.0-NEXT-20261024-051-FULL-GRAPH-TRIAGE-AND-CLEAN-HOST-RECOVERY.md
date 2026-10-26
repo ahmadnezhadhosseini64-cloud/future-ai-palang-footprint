@@ -307,3 +307,10 @@ NEXT-051 remains OPEN/LIVING until all remaining acceptance gates are satisfied;
 - Register: [GAP-COVER-REGISTER](../../architecture/BEHAVIOR-TRACE/GAP-COVER-REGISTER-2026-10-26.md)
 - Cover semantics: COVERED / DEFERRED is reversible; every underlying gap remains OPEN / ACTIVE / LIVING. Preserve CURRENT-065/CURRENT-066 and EVT-0195 conflicts, source evidence, parent candidates and history. No NEXT-052.
 - Work order: evidence-backed graph inventory → Behavior Hunter scan → exact-current-SHA package conformance → real clean-host import only with a direct destination receipt. Dropbox is not the current objective.
+
+## POINT-0/035 continuation — identifier and parent graph repair
+
+- Latest user-turn root: [POINT-0/035](./GPT6-RAHM-USER-POINT-0-20261026-035-IDENTIFIER-AND-PARENT-GRAPH-REPAIR.md); active checkpoint: [CURRENT-083](./PALANG-0.0-CURRENT-20261026-083-IDENTIFIER-AND-PARENT-GRAPH-REPAIR.md).
+- Regression tests are now wired into Living Architecture Audit for metadata-header extraction and source-specific parent resolution. Run them on the final SHA and preserve their raw output.
+- The audit baseline on SHA 8aac51fa544d56913d01a148371c160f4a6a0714 found 4 missing links, 2 unresolved parent edges, 63 Stable-ID groups, 92 Production-ID groups, 7 Reference-ID groups and 41 event-number groups. These are historical baseline counts; do not carry them forward as current until the next audit completes.
+- Actual interactive-host import/restart/round-trip remains NOT RUN without destination receipts. Keep Path A and Path B separately gated.
