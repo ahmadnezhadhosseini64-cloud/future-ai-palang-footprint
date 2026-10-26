@@ -7,6 +7,7 @@ from datetime import datetime, timezone
 import hashlib, json, re, subprocess
 from semantic_role_decisions import apply_role_decisions, load_decisions
 from parent_edge_resolution import resolve_parent_target
+from graph_identifier_roles import metadata_header
 
 ROOT = Path(".").resolve()
 OUT = ROOT / "audit-output"
@@ -50,10 +51,20 @@ for p in source_files:
     except UnicodeDecodeError:
         decode_errors.append(relpath)
         continue
-    stable = id_vals(body, r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Stable ID(?:\s*/\s*شناسهٔ پایدار)?|Stable-ID|Canonical Stable ID|Stable Reference ID|Stable Report ID|شناسهٔ پایدار(?: این نقطه)?|شناسه پایدار(?: این نقطه)?)(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
-    prod = id_vals(body, r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Production ID(?:\s*/\s*شناسهٔ تولید)?|Production-ID|Production / Registration ID|شناسهٔ تولید|شناسه تولید|شناسهٔ ثبت)(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
-    reference_ids = id_vals(body, r"^\s*(?:[-*]\s*)?(?:\*\*)?Reference ID(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
-    versions = vals(body, r"^\s*(?:[-*]\s*)?(?:\*\*)?Version(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
+    header_body, header_line_count = metadata_header(body)
+    stable_pattern = r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Stable ID(?:\s*/\s*شناسهٔ پایدار)?|Stable-ID|Canonical Stable ID|Stable Reference ID|Stable Report ID|شناسهٔ پایدار(?: این نقطه)?|شناسه پایدار(?: این نقطه)?)(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)"
+    prod_pattern = r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Production ID(?:\s*/\s*شناسهٔ تولید)?|Production-ID|Production / Registration ID|شناسهٔ تولید|شناسه تولید|شناسهٔ ثبت)(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)"
+    reference_pattern = r"^\s*(?:[-*]\s*)?(?:\*\*)?Reference ID(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)"
+    version_pattern = r"^\s*(?:[-*]\s*)?(?:\*\*)?Version(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)"
+    # Only header metadata contributes definitions/collision groups. Body mentions
+    # remain in the occurrence ledger as references and are never promoted to definitions.
+    stable = id_vals(header_body, stable_pattern)
+    prod = id_vals(header_body, prod_pattern)
+    reference_ids = id_vals(header_body, reference_pattern)
+    versions = vals(header_body, version_pattern)
+    stable_all = id_vals(body, stable_pattern)
+    prod_all = id_vals(body, prod_pattern)
+    reference_ids_all = id_vals(body, reference_pattern)
     parent_values = vals(body, r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Parent(?: input| event| reference| protocol| architecture| excavation)?|Parent ID|Parent Stable ID)(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
     parents = []
     for pv in parent_values:
@@ -70,23 +81,23 @@ for p in source_files:
     # Preserve line-level occurrences for human semantic review. The role is only a
     # candidate; even a metadata-looking line is not automatically accepted as a definition.
     for line_no, line in enumerate(body.splitlines(), 1):
-        for ident in stable:
+        for ident in stable_all:
             if ident in line:
-                metadata_label = line_no <= 40 and bool(re.match(r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Stable ID|Stable-ID|Canonical Stable ID|Stable Reference ID|Stable Report ID|شناسهٔ پایدار|شناسه پایدار)", line, re.I))
+                metadata_label = line_no <= header_line_count and bool(re.match(r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Stable ID|Stable-ID|Canonical Stable ID|Stable Reference ID|Stable Report ID|شناسهٔ پایدار|شناسه پایدار)", line, re.I))
                 identifier_occurrences.append({"identifier_type": "STABLE_ID", "identifier_value": ident,
                     "path": relpath, "line": line_no, "line_text": line.strip()[:240],
                     "role_candidate": "DEFINITION_OR_METADATA_REVIEW" if metadata_label else "REFERENCE_REVIEW",
                     "role_status": "UNREVIEWED"})
-        for ident in prod:
+        for ident in prod_all:
             if ident in line:
-                metadata_label = line_no <= 40 and bool(re.match(r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Production ID|Production-ID|Production / Registration ID|شناسهٔ تولید|شناسه تولید|شناسهٔ ثبت)", line, re.I))
+                metadata_label = line_no <= header_line_count and bool(re.match(r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Production ID|Production-ID|Production / Registration ID|شناسهٔ تولید|شناسه تولید|شناسهٔ ثبت)", line, re.I))
                 identifier_occurrences.append({"identifier_type": "PRODUCTION_ID", "identifier_value": ident,
                     "path": relpath, "line": line_no, "line_text": line.strip()[:240],
                     "role_candidate": "DEFINITION_OR_METADATA_REVIEW" if metadata_label else "REFERENCE_REVIEW",
                     "role_status": "UNREVIEWED"})
-        for ident in reference_ids:
+        for ident in reference_ids_all:
             if ident in line:
-                metadata_label = line_no <= 40 and bool(re.match(r"^\s*(?:[-*]\s*)?(?:\*\*)?Reference ID", line, re.I))
+                metadata_label = line_no <= header_line_count and bool(re.match(r"^\s*(?:[-*]\s*)?(?:\*\*)?Reference ID", line, re.I))
                 identifier_occurrences.append({"identifier_type": "REFERENCE_ID", "identifier_value": ident,
                     "path": relpath, "line": line_no, "line_text": line.strip()[:240],
                     "role_candidate": "DEFINITION_OR_METADATA_REVIEW" if metadata_label else "REFERENCE_REVIEW",
