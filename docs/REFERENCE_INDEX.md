@@ -1727,7 +1727,7 @@ Both Path A (portable initial model and independent-host recovery) and Path B (e
 - Time bindings: [POINT-0/035](architecture/BEHAVIOR-TRACE/TIME-BINDING-POINT-0-035-EVT-0205-2026-10-26.md), [IN-071](architecture/BEHAVIOR-TRACE/TIME-BINDING-IN-071-POINT-0-035-2026-10-26.md), [OUT-070](architecture/BEHAVIOR-TRACE/TIME-BINDING-OUT-070-POINT-0-035-2026-10-26.md), [EVT-0205](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0205-POINT-0-035-2026-10-26.md), [CURRENT-083](architecture/BEHAVIOR-TRACE/TIME-BINDING-CURRENT-083-POINT-0-035-2026-10-26.md).
 
 
-## Latest root and execution checkpoint — POINT-0/036 / CURRENT-084 (2026-10-26)
+## Latest root and execution checkpoint — POINT-0/036 (0+ marker) / CURRENT-085 (2026-10-26)
 - Root: [POINT-0/036](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-036-DEEP-EXCAVATION-INITIAL-MODEL-COMPLETION.md).
 - 0+ is a production marker on this same canonical POINT-0/036, not a separate root.
 - Chain: [IN-073](0.0/anchors/PALANG-0.0-IN-20261026-073-0PLUS-MODEL-ACCELERATION.md) → [OUT-072](0.0/anchors/PALANG-0.0-OUT-20261026-072-0PLUS-MODEL-ACCELERATION.md) → [EVT-0207](architecture/BEHAVIOR-TRACE/EVT-0207-POINT-0-036-0PLUS-MODEL-ACCELERATION-2026-10-26.md) → [CURRENT-085](0.0/anchors/PALANG-0.0-CURRENT-20261026-085-0PLUS-MODEL-ACCELERATION.md).
@@ -1735,5 +1735,5 @@ Both Path A (portable initial model and independent-host recovery) and Path B (e
 - Architecture invariant: declared identifier metadata differs from body references; parent resolution must be source-specific and evidence-backed. Path A initial-model execution and Path B graph repair remain coordinated but independently verified.
 - Status: latest verified baseline on SHA 18ccbef16e5bae6e9e31879de8cf575c1c371bec passed Living Architecture Audit and Portable RAHM Conformance; 0 missing local links and 2 unresolved parent edges. External-host import/restart/round-trip remains NOT RUN.
 
-- Canonical repository-time binding for this chain: [TIME-BINDING-POINT-0-036-CHAIN](architecture/BEHAVIOR-TRACE/TIME-BINDING-POINT-0-036-CHAIN-2026-10-26.md). Root commit UTC is 2026-10-26T15:10:07Z (Tehran 18:40:07 +03:30); exact commit/blob distinctions are preserved in the binding record.
+- Canonical time bindings: [POINT-0/036 0+](architecture/BEHAVIOR-TRACE/TIME-BINDING-POINT-0-036-0PLUS-2026-10-26.md), [IN-073](architecture/BEHAVIOR-TRACE/TIME-BINDING-IN-073-POINT-0-036-2026-10-26.md), [OUT-072](architecture/BEHAVIOR-TRACE/TIME-BINDING-OUT-072-POINT-0-036-2026-10-26.md), [EVT-0207](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0207-POINT-0-036-2026-10-26.md), [CURRENT-085](architecture/BEHAVIOR-TRACE/TIME-BINDING-CURRENT-085-POINT-0-036-2026-10-26.md). UTC is canonical; Tehran is the equivalent instant.
 - Latest verified historical graph audit receipt before the raw-audit correction: [run 40347006195](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40347006195), tested SHA cf877f9a84d767bb6f0f3566b90efe4fd5dcd83c. Current rerun after correction remains required.
