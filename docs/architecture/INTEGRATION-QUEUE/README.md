@@ -2037,3 +2037,13 @@ The current root is [POINT-0/027](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261
 - Immediate priority: runbook-driven clean-host transfer and exact-final-SHA package verification.
 - Reversible covers: transfer checklist, generated-manifest discipline, historic collision preservation, and explicit external-destination evidence boundaries.
 - All gaps remain OPEN. CURRENT-065/CURRENT-066 has no inferred winner; EVT-0195 collision preserved; graph findings remain one-by-one work; clean host, Buffer/Persistent Memory/Library/Dropbox, runtime and background execution remain unverified.
+
+
+## Latest active continuation — POINT-0/031 / CURRENT-078
+- Root: [POINT-0/031](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-031-REVERSIBLE-GRAPH-GAP-COVERS-AND-BEHAVIOR-HUNTER.md)
+- Checkpoint: [CURRENT-078](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-078-REVERSIBLE-GRAPH-GAP-COVERS.md)
+- Event: [EVT-0200](../BEHAVIOR-TRACE/EVT-0200-REVERSIBLE-GRAPH-GAP-COVERS-AND-BEHAVIOR-HUNTER-2026-10-26.md)
+- Register: [GAP-COVER-REGISTER](../BEHAVIOR-TRACE/GAP-COVER-REGISTER-2026-10-26.md)
+- NEXT-051 remains OPEN / LIVING / IN PROGRESS; do not create NEXT-052.
+- Work order: source-backed graph/provenance/parent inventory → reversible covers → Behavior Hunter scan → exact-current-SHA package conformance → real clean-host import only with a direct destination receipt.
+- Covers mean COVERED / DEFERRED, never CLOSED. Preserve CURRENT-065/CURRENT-066 and EVT-0195 conflicts.
