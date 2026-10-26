@@ -1714,3 +1714,11 @@ The canonical chain is [POINT-0/032](./anchors/GPT6-RAHM-USER-POINT-0-20261026-0
 - Excavation evidence: [register](../architecture/BEHAVIOR-TRACE/EXCAVATION-REGISTER-2026-10-26-MASTER-RAHM-CHILD.md).
 - POINT-0/032 path lineage remains ambiguous; preserve both variants pending provenance reconciliation. Continue NEXT-051; no NEXT-052.
 
+
+## POINT-0/034 — interactive RAHM execution
+
+- [POINT-0/034](./anchors/GPT6-RAHM-USER-POINT-0-20261026-034-INTERACTIVE-RAHM-EXECUTION.md) → [IN-070](./anchors/PALANG-0.0-IN-20261026-070-INTERACTIVE-RAHM-EXECUTION.md) → [OUT-069](./anchors/PALANG-0.0-OUT-20261026-069-INTERACTIVE-RAHM-EXECUTION.md) → [EVT-0204](../architecture/BEHAVIOR-TRACE/EVT-0204-POINT-0-034-INTERACTIVE-RAHM-EXECUTION-2026-10-26.md) → [CURRENT-082](./anchors/PALANG-0.0-CURRENT-20261026-082-INTERACTIVE-RAHM-EXECUTION.md).
+- Interactive test prompt: [I1–I8 runbook](../architecture/MASTER-RAHM-CHILD/INTERACTIVE-PROJECT-VALIDATION-RUNBOOK.md).
+- MASTER remains authoritative; the existing initial-model package is RAHM; no CHILD is promoted without destination receipts and explicit MASTER acceptance.
+- Repository verification and destination-host verification are separate. Continue NEXT-051 only.
+
