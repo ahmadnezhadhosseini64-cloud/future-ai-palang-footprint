@@ -23,3 +23,5 @@ POINT-0/034, IN-070, OUT-069 and EVT-0204 are registered in this proposed contin
 - Run final merged-SHA repository tests.
 - Keep graph/provenance/parent gaps, restart/recovery, round-trip and background-runtime proof OPEN until evidenced.
 - Continue NEXT-051; do not create NEXT-052.
+
+- Canonical repository time binding: [TIME-BINDING-POINT-0-034](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-POINT-0-034-EVT-0204-2026-10-26.md).
