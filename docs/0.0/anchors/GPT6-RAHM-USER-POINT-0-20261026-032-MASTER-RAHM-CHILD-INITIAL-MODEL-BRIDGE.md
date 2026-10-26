@@ -42,3 +42,6 @@ Resume from [CURRENT-079](./PALANG-0.0-CURRENT-20261026-079-MASTER-RAHM-CHILD-BR
 ## Interactive-project test entry
 - Runbook: [Interactive Project Validation Runbook](../../architecture/MASTER-RAHM-CHILD/INTERACTIVE-PROJECT-VALIDATION-RUNBOOK.md)
 - It contains a paste-ready prompt, 10 test cases, result-receipt template and return protocol. It is ready to run, but actual project execution is NOT RUN until the destination supplies receipts.
+
+## Canonical time evidence
+- [TIME-BINDING-POINT-0-032 / EVT-0201](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-POINT-0-032-EVT-0201-2026-10-26.md) records actual Git commit timestamps in UTC and derived Tehran equivalents for the root, IN, OUT, event, contract and checkpoint.
