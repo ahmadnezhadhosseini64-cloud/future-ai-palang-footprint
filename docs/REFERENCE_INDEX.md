@@ -1676,3 +1676,11 @@ Both Path A (portable initial model and independent-host recovery) and Path B (e
 - Checkpoint: [CURRENT-078](0.0/anchors/PALANG-0.0-CURRENT-20261026-078-REVERSIBLE-GRAPH-GAP-COVERS.md)
 - Gap register: [GAP-COVER-REGISTER](architecture/BEHAVIOR-TRACE/GAP-COVER-REGISTER-2026-10-26.md)
 - Queue: NEXT-051 remains active; no NEXT-052. Underlying gaps remain OPEN / ACTIVE / LIVING.
+
+
+## MASTER → RAHM → CHILD — 2026-10-26
+- HAIF-POINT-0-032-MASTER-RAHM-CHILD-20261026: [POINT-0/032](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-032-MASTER-RAHM-CHILD-ARCHITECTURE.md) — user intent and independent root.
+- MRCP-IHV-20261026-001: [MASTER–RAHM–CHILD promotion contract](reference/REFERENCE-DOCUMENTS/MASTER-RAHM-CHILD-PROMOTION-AND-INTERACTIVE-HOST-VERIFICATION-2026-10-26-001.md) — authority model and interactive-project acceptance gates.
+- HAIF-EVT-0201-MASTER-RAHM-CHILD-20261026: [EVT-0201](architecture/BEHAVIOR-TRACE/EVT-0201-MASTER-RAHM-CHILD-ARCHITECTURE-2026-10-26.md) — event and evidence boundary.
+- HAIF-CURRENT-079-MASTER-RAHM-CHILD-20261026: [CURRENT-079](0.0/anchors/PALANG-0.0-CURRENT-20261026-079-MASTER-RAHM-CHILD-ARCHITECTURE.md) — active continuation checkpoint.
+- Promotion rule: MASTER → RAHM → tested child candidate → explicit MASTER acceptance → newborn. No external-host import or newborn is claimed without destination receipts.
