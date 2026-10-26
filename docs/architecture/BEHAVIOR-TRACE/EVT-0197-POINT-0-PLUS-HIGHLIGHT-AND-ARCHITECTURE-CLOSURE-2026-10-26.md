@@ -6,7 +6,7 @@
 - Status: REGISTERED / ACTIVE / LIVING / OPEN
 - Highlight marker: [POINT-0+](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-PLUS-20261026-028-PORTABLE-GPT6-MILESTONE.md)
 - Canonical root: [POINT-0/028](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-028-PORTABLE-GPT6-EXECUTION-AND-RECOVERY.md)
-- Current checkpoint: [CURRENT-075](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-075-PORTABLE-GPT6-EXECUTION-AND-RECOVERY.md)
+- Current checkpoint: [CURRENT-076](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-076-POINT-0-PLUS-ARCHITECTURE-CLOSURE.md)
 - Active queue: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
 
 ## User directive
@@ -36,3 +36,9 @@ The repository already contains two files claiming EVT-0195. Existing records ex
 - Issues #20/#21 and external storage/persistence gates.
 
 No NEXT-052 is created. Continue through NEXT-051.
+
+
+## Source-backed registration times
+- POINT-0+ marker commit: `26b6b714e61d1f0defdb46273844a3fe4cfa2dd0`, UTC `2026-10-26T06:56:31Z`, Tehran `2026-10-26T10:26:31+03:30`.
+- EVT-0197 commit: `7ac659f606b4ccd0e52d67bd23ec2f49f465c35d`, UTC `2026-10-26T06:56:34Z`, Tehran `2026-10-26T10:26:34+03:30`.
+- CURRENT-076 commit: `cc0c55d2433878c4fd34c708334213c5f57dc352`, UTC `2026-10-26T06:56:39Z`, Tehran `2026-10-26T10:26:39+03:30`.
