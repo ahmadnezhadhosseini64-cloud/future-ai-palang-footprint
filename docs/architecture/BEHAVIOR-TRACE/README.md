@@ -861,3 +861,9 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Event: [EVT-0197](./EVT-0197-USER-REQUEST-NEW-POINT-0-AND-CONTINUE-2026-10-26.md).
 - Root: [POINT-0/029](../../0.0/anchors/PALANG-0.0-POINT-0-029-CONTINUE-HAIF-ARCHITECTURE-2026-10-26.md); parent POINT-0/028; CURRENT-075; NEXT-051 remains the only active queue.
 - Lesson recorded: do not divert to Dropbox while the active objective is portable-model/architecture continuation. Dropbox remains OPEN / NOT VERIFIED.
+
+
+## EVT-0198 — POINT-0/030 user continuation (2026-10-26)
+- Event: [EVT-0198](./EVT-0198-USER-REQUEST-POINT-0-030-AND-CONTINUE-2026-10-26.md).
+- Root: [POINT-0/030](../../0.0/anchors/PALANG-0.0-POINT-0-030-CONTINUE-FROM-029-2026-10-26.md), parent POINT-0/029; CURRENT-075 must be rediscovered; NEXT-051 remains active.
+- Preserve all earlier roots and open gates. The prior HTTP 409 is recorded as a failed concurrent write, not as a completed update.
