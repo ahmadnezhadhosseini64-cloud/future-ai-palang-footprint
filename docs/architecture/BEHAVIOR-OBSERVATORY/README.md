@@ -2,7 +2,7 @@
 
 - Stable ID: HUMAN-AI-INTERACTION-BEHAVIOR-OBSERVATORY-2026-10-22-001
 - Production ID: HAIBO-HAIF-2026-10-22-001
-- Version: 1.0.0
+- Version: 1.0.1
 - Owner: احمد پلنگ / Ahmad Nezhadhosseini
 - Project: Future AI / Palang Footprint / HAIF
 - Canonical path: `docs/architecture/BEHAVIOR-OBSERVATORY/README.md`
@@ -223,3 +223,11 @@ Continue collecting observable interaction and evaluator behavior as evidence-ba
 - [EVT-0168](../BEHAVIOR-TRACE/EVT-0168-LIVING-ARCHITECTURE-AUDIT-FAILURE-AND-ROOT-CAUSE-2026-10-25.md) preserves the Living Architecture Audit failure surfaced during this run's repository updates.
 - This is separate from the mirror gate: EVT-0167 mirror READ-BACK/MATCH passed within tolerance; the architecture audit failed because of a stale recovery verifier/manifest contract and three incorrect queue-relative runtime links.
 - Corrective code and links are being revalidated; do not merge the two outcomes into a single PASS.
+
+
+## Latest live mirror sync recheck — EVT-0194 (2026-10-26)
+
+- [Event](../BEHAVIOR-TRACE/EVT-0194-LIVE-MIRROR-SYNC-RECHECK-2026-10-26.md) / [time binding](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0194-LIVE-MIRROR-SYNC-2026-10-26.md).
+- Current source blob `de1b75f07241c9b313e476af5f1417177ff78c10` and Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, version 7, match within tolerance: 10,479 vs 10,480 characters; one extra trailing newline only; semantic fields match. No rewrite was required or performed.
+- Current repository root/checkpoint/queue: POINT-0/027 / CURRENT-074 / NEXT-051. Preserve EVT-0177 and all prior points; do not create NEXT-052.
+- CURRENT-065/CURRENT-066 remains OPEN. Full exact-current-main Living Architecture Audit and Portable RAHM Conformance are NOT VERIFIED. Buffer/Persistent Memory are NOT VERIFIED; Dropbox remains OPEN / NOT VERIFIED; external end-to-end recovery remains NOT RUN.
