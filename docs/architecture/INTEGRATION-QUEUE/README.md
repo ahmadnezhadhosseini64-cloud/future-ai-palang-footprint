@@ -2047,3 +2047,12 @@ The current root is [POINT-0/027](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261
 - NEXT-051 remains OPEN / LIVING / IN PROGRESS; do not create NEXT-052.
 - Work order: source-backed graph/provenance/parent inventory → reversible covers → Behavior Hunter scan → exact-current-SHA package conformance → real clean-host import only with a direct destination receipt.
 - Covers mean COVERED / DEFERRED, never CLOSED. Preserve CURRENT-065/CURRENT-066 and EVT-0195 conflicts.
+
+
+## 2026-10-26 — Master–Rahm–Child bridge / CURRENT-079
+- Root: [POINT-0/032](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-032-MASTER-RAHM-CHILD-INITIAL-MODEL-BRIDGE.md)
+- Checkpoint: [CURRENT-079](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-079-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION.md)
+- Contract: [Master–Rahm–Child cross-validation](../MASTER-RAHM-CHILD/MASTER-RAHM-CHILD-CROSS-VALIDATION-CONTRACT-2026-10-26.md)
+- Purpose: preserve the original project as MASTER, the initial-model project as RAHM, and tested outputs as CHILD CANDIDATES until explicit Master review.
+- Status: repository bridge registered; interactive project tests, exact-final-SHA conformance and external-host gates remain OPEN / NOT RUN.
+- Continue the existing NEXT-051. No NEXT-052.
