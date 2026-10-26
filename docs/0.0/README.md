@@ -1723,3 +1723,10 @@ The canonical chain is [POINT-0/032](./anchors/GPT6-RAHM-USER-POINT-0-20261026-0
 - Repository verification and destination-host verification are separate. Continue NEXT-051 only.
 
 - Time receipt: [TIME-BINDING-POINT-0-034](../architecture/BEHAVIOR-TRACE/TIME-BINDING-POINT-0-034-EVT-0204-2026-10-26.md) — repository commit time 10:16:08 UTC / 13:46:08 Tehran.
+
+
+## POINT-0/035 — Evidence-governed identifier and parent-graph repair
+
+- [POINT-0/035](./anchors/GPT6-RAHM-USER-POINT-0-20261026-035-IDENTIFIER-AND-PARENT-GRAPH-REPAIR.md) → [IN-071](./anchors/PALANG-0.0-IN-20261026-071-IDENTIFIER-AND-PARENT-GRAPH-REPAIR.md) → [OUT-070](./anchors/PALANG-0.0-OUT-20261026-070-IDENTIFIER-AND-PARENT-GRAPH-REPAIR.md) → [EVT-0205](../architecture/BEHAVIOR-TRACE/EVT-0205-POINT-0-035-IDENTIFIER-AND-PARENT-GRAPH-REPAIR-2026-10-26.md) → [CURRENT-083](./anchors/PALANG-0.0-CURRENT-20261026-083-IDENTIFIER-AND-PARENT-GRAPH-REPAIR.md).
+- Basis: separate declared identifier metadata from body references; use evidence-backed source-specific parent edges; keep uncertain lineage and collision groups open.
+- Continue NEXT-051 only; Path A actual-host validation and Path B graph repair remain separate proof lanes.
