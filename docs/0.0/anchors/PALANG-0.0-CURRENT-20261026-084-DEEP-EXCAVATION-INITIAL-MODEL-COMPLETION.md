@@ -7,6 +7,7 @@
 - Root: [POINT-0/036](./GPT6-RAHM-USER-POINT-0-20261026-036-DEEP-EXCAVATION-INITIAL-MODEL-COMPLETION.md)
 - Chain: [IN-072](./PALANG-0.0-IN-20261026-072-DEEP-EXCAVATION-INITIAL-MODEL-COMPLETION.md) → [OUT-071](./PALANG-0.0-OUT-20261026-071-DEEP-EXCAVATION-INITIAL-MODEL-COMPLETION.md) → [EVT-0206](../../architecture/BEHAVIOR-TRACE/EVT-0206-POINT-0-036-DEEP-EXCAVATION-INITIAL-MODEL-COMPLETION-2026-10-26.md)
 - Previous execution checkpoint: [CURRENT-083](./PALANG-0.0-CURRENT-20261026-083-IDENTIFIER-AND-PARENT-GRAPH-REPAIR.md)
+- Canonical time binding: [POINT-0/036 chain time binding](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-POINT-0-036-CHAIN-2026-10-26.md)
 - Existing active queue: [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
 
 ## Live repository observations before this checkpoint
@@ -28,6 +29,13 @@
 - Adjudicate Stable-ID, Production-ID, Reference-ID and event-number groups in small batches, retaining role decisions and source hashes.
 - Reconcile CURRENT-065/CURRENT-066 lineage using provenance and consumers, not number ordering.
 - Keep unresolved and ambiguous cases OPEN; preserve NEXT-051 and do not create NEXT-052.
+
+## Verified audit receipt — prior exact head
+- Living Architecture Audit run [40347006195](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40347006195) passed on exact SHA cf877f9a84d767bb6f0f3566b90efe4fd5dcd83c; artifact ID 12661441741, digest sha256:3e937e32efd25bb71db2e471a49f8c7b2961302ce2ee4bb0e514bef824ac2ab8.
+- In that run: helper tests passed (5 parent resolver tests and 4 metadata-header tests); compile checks passed; local Markdown links missing = 0; manifest decode errors = 0; unresolved parent edges = 2; ambiguous parent edges = 0.
+- Manifest semantic collision classes: 23 Stable-ID groups (1 unreviewed/open), 68 Production-ID groups (66 unreviewed/open), 5 Reference-ID groups (5 open), 41 event-number groups (3 unreviewed/open), 11 exact-content duplicate groups.
+- The separate raw graph report still showed 63/92/7/41 raw collision counts and flagged two generated Python bytecode files as decode errors. This revealed that the raw audit was still scanning body references and bytecode unlike the canonical manifest.
+- Corrective change on a later commit: scripts/audit_historical_0_0_graph.py now excludes __pycache__/.pyc and derives identifier/parent definitions from the bounded metadata header. This correction is awaiting exact-head rerun; do not mark it validated until that run finishes.
 
 ## Acceptance gate
 CURRENT-084 stays OPEN until the exact-head audit and portable conformance have both completed, their logs/artifacts have been read back, and graph changes are reconciled in the master/index/queue. External-host acceptance remains a separate gate.
