@@ -1672,3 +1672,15 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - Parent root: POINT-0/029. Execution checkpoint observed: CURRENT-075 (re-discover before action). Active queue: NEXT-051 only; do not create NEXT-052.
 - Main SHA observed before registration: bbbc1cf7243be413097b18303008702ce7b0e89e. Current head must be re-discovered after each commit and audited on exact SHA.
 - Root/event read-back completed. Canonical linkage to the other indexes and living master remains in progress until each is individually written and read back.
+
+
+
+## Latest user root — POINT-0/029 / CURRENT-077
+- **POINT-0/029:** [Reversible Gap Covers and Fast Host Transfer](./anchors/GPT6-RAHM-USER-POINT-0-20261026-029-REVERSIBLE-GAP-COVERS-AND-FAST-HOST-TRANSFER.md)
+- **IN-065 → OUT-064:** [input](./anchors/PALANG-0.0-IN-20261026-065-REVERSIBLE-GAP-COVERS-AND-FAST-HOST-TRANSFER.md) → [output](./anchors/PALANG-0.0-OUT-20261026-064-REVERSIBLE-GAP-COVERS-AND-FAST-HOST-TRANSFER.md)
+- **Event:** [EVT-0199](../architecture/BEHAVIOR-TRACE/EVT-0199-REVERSIBLE-GAP-COVERS-AND-FAST-HOST-TRANSFER-2026-10-26.md)
+- **Current checkpoint:** [CURRENT-077](./anchors/PALANG-0.0-CURRENT-20261026-077-REVERSIBLE-GAP-COVERS.md)
+- **Portable transfer checklist:** [QUICK-TRANSFER-CHECKLIST](../portable/RAHM/QUICK-TRANSFER-CHECKLIST.md)
+- **Active queue:** [NEXT-051](./anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). Do not create NEXT-052.
+- **Cover status:** reversible covers applied; all underlying gaps remain OPEN / ACTIVE. Clean independent host import is NOT RUN until a real destination receipt exists.
+- **Priority:** accelerate clean-host transfer; do not divert this point to Dropbox. Preserve POINT-0/028 and POINT-0+ as history.
