@@ -389,3 +389,8 @@ The canonical live checkpoint is now [CURRENT-066](../../0.0/anchors/PALANG-0.0-
 - Gap register: [GAP-COVER-REGISTER](../../architecture/BEHAVIOR-TRACE/GAP-COVER-REGISTER-2026-10-26.md)
 - Covers are reversible deferrals: all underlying gaps stay OPEN / ACTIVE / LIVING, indexed and in Behavior Hunter scan scope. Never infer provenance or parentage.
 - NEXT-051 remains the sole active queue. Exact-head conformance and clean-host import remain evidence gates; a CI runner is not an independent AI host.
+
+
+## Authority boundary: original MASTER and initial-model RAHM — 2026-10-26
+
+The canonical original project is MASTER. The initial-model package is RAHM, an isolated experiment/verification space that inherits a pinned master snapshot; it is not a second competing source of truth. The RAHM can create versioned candidates but cannot self-promote. A NEWBORN requires exact package validation, behavior/recovery tests, clean independent-host import evidence and explicit MASTER acceptance. Governing contract: [MASTER–RAHM–CHILD promotion and interactive-host verification](../../reference/REFERENCE-DOCUMENTS/MASTER-RAHM-CHILD-PROMOTION-AND-INTERACTIVE-HOST-VERIFICATION-2026-10-26-001.md). Current chain: [POINT-0/032](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-032-MASTER-RAHM-CHILD-ARCHITECTURE.md) → [CURRENT-079](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-079-MASTER-RAHM-CHILD-ARCHITECTURE.md). The interactive destination has not yet been independently verified; retain OPEN / NOT RUN.
