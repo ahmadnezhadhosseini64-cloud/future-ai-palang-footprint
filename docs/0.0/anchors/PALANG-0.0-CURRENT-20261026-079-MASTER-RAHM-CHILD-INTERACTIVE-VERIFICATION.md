@@ -30,3 +30,5 @@
 3. اجرای بررسی پیوند و conformance روی SHA نهایی و ثبت رسید خام/digest.
 4. اگر مقصد مجاز محیط تعاملی واقعاً قابل دسترسی بود، واردسازی بستهٔ دقیق، آزمون IN-only/OUT-only و آزمون منفی digest/schema را اجرا و read-back مستقل ثبت کن.
 5. NEXT-051 را ادامه بده؛ NEXT-052 نساز.
+
+> **CONFLICTED DUPLICATE / NON-CANONICAL CHECKPOINT.** The active CURRENT-079 is [CURRENT-079 Master–Rahm–Child bridge](./PALANG-0.0-CURRENT-20261026-079-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION.md). Preserve this record for audit; use the canonical checkpoint for continuation. Duplicate IDs remain an OPEN reconciliation item.
