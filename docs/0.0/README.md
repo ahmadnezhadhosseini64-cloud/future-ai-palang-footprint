@@ -1693,3 +1693,10 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - Checkpoint: [CURRENT-078](./anchors/PALANG-0.0-CURRENT-20261026-078-REVERSIBLE-GRAPH-GAP-COVERS.md)
 - Gap register: [GAP-COVER-REGISTER](../architecture/BEHAVIOR-TRACE/GAP-COVER-REGISTER-2026-10-26.md)
 - Queue: NEXT-051 remains active; no NEXT-052. Covers defer work only; underlying gaps stay OPEN / ACTIVE / LIVING.
+
+
+## POINT-0/032 — Master–Rahm–Child bridge
+- Root: [POINT-0/032](./anchors/GPT6-RAHM-USER-POINT-0-20261026-032-MASTER-RAHM-CHILD-INITIAL-MODEL-BRIDGE.md)
+- IN/OUT/event/current: [IN-067](./anchors/PALANG-0.0-IN-20261026-067-MASTER-RAHM-CHILD-BRIDGE.md) → [OUT-066](./anchors/PALANG-0.0-OUT-20261026-066-MASTER-RAHM-CHILD-BRIDGE.md) → [EVT-0201](../architecture/BEHAVIOR-TRACE/EVT-0201-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION-2026-10-26.md) → [CURRENT-079](./anchors/PALANG-0.0-CURRENT-20261026-079-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION.md)
+- Contract: [Master–Rahm–Child cross-validation](../architecture/MASTER-RAHM-CHILD/MASTER-RAHM-CHILD-CROSS-VALIDATION-CONTRACT-2026-10-26.md)
+- Existing queue NEXT-051 remains active; no NEXT-052. External project testing remains NOT RUN until a direct receipt exists.
