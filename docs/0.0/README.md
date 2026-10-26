@@ -1615,7 +1615,7 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - **Continuity rule:** This entry supersedes earlier navigation pointers as the latest root/current pointer only; it does not replace or delete historical anchors. Both paths remain mandatory and separately gated. Dropbox remains out of scope unless explicitly reopened.
 
 
-- Current continuation: [CURRENT-073](./anchors/PALANG-0.0-CURRENT-20261026-073-DUAL-PATH-HAIF-CONTINUATION.md); NEXT-051 remains the active remediation queue.
+- Current continuation: [CURRENT-085](./anchors/PALANG-0.0-CURRENT-20261026-085-0PLUS-MODEL-ACCELERATION.md); NEXT-051 remains the sole active remediation queue.
 
 
 
