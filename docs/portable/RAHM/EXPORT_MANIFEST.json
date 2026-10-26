@@ -1,7 +1,7 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.8.19",
-  "manifest_status": "POINT-0/035 current checkpoint registered; identifier declaration/reference separation and source-specific parent resolution are part of the portable recovery context. NEXT-051 and current workflow digest pins refreshed; exact-current-main conformance and actual interactive-host tests remain separate gates; graph collision/lineage gaps remain OPEN.",
+  "version": "1.8.20",
+  "manifest_status": "POINT-0/035 current checkpoint registered. Manifest digest pins reconciled from the exact audit artifact on commit 86b649b078a581730622b7119ec536c52ac03036; re-run strict conformance after this manifest update. Graph/source/parent gaps and actual interactive-host validation remain OPEN.",
   "created_from_checkpoint": "HAIF-CURRENT-083-IDENTIFIER-AND-PARENT-GRAPH-REPAIR-20261026 + HAIF-TIME-BINDING-CURRENT-083-POINT-0-035-20261026",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [
@@ -9,7 +9,7 @@
       "path": ".github/workflows/living-architecture-audit.yml",
       "version": "repository-current",
       "git_blob_sha": "b43bb9df705cbbf95ae0546846e38dcfe94f117b",
-      "sha256": "d615115cc844203df550c95ae2d2a30826581765d1ea5bcd74981683a6428840"
+      "sha256": "f96e81bc57ac830168f9101247d49902337774a50284ae0f803ef8fde711db25"
     },
     {
       "path": "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-003-FIRST-LIVING-MASTER-AND-PORTABILITY.md",
