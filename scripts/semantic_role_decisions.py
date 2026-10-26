@@ -90,15 +90,24 @@ def apply_role_decisions(groups, nodes, decisions, identifier_type=None):
             accepted_ids.add(decision.get("decision_id"))
 
         covered = set(roles_by_path)
+        resolution_classes = {
+            d.get("resolution_class", "FULLY_ROLE_ADJUDICATED")
+            for d in accepted_for_group
+        }
         if not accepted_for_group:
             status = "UNREVIEWED"
-        elif covered == set(group_paths):
-            status = "ROLE-ADJUDICATED"
-        else:
+        elif covered != set(group_paths):
             status = "PARTIALLY-ROLE-ADJUDICATED"
+        elif "REKEY_REQUIRED" in resolution_classes:
+            status = "ROLE-ADJUDICATED-REKEY-REQUIRED"
+        elif "LINEAGE_REVIEW_REQUIRED" in resolution_classes:
+            status = "ROLE-ADJUDICATED-OPEN-LINEAGE"
+        else:
+            status = "ROLE-ADJUDICATED"
 
         item["semantic_review"] = {
             "status": status,
+            "resolution_classes": sorted(resolution_classes),
             "decision_ids": sorted({d.get("decision_id") for d in accepted_for_group}),
             "roles": [
                 {
@@ -124,8 +133,12 @@ def apply_role_decisions(groups, nodes, decisions, identifier_type=None):
         }
         enriched.append(item)
 
-    reviewed = sum(g["semantic_review"]["status"] == "ROLE-ADJUDICATED" for g in enriched)
-    partial = sum(g["semantic_review"]["status"] == "PARTIALLY-ROLE-ADJUDICATED" for g in enriched)
+    statuses = [g["semantic_review"]["status"] for g in enriched]
+    reviewed = sum(s == "ROLE-ADJUDICATED" for s in statuses)
+    partial = sum(s == "PARTIALLY-ROLE-ADJUDICATED" for s in statuses)
+    rekey = sum(s == "ROLE-ADJUDICATED-REKEY-REQUIRED" for s in statuses)
+    lineage = sum(s == "ROLE-ADJUDICATED-OPEN-LINEAGE" for s in statuses)
+    unreviewed = sum(s == "UNREVIEWED" for s in statuses)
     return enriched, {
         "decisions_loaded": len(decisions),
         "decisions_accepted": len(accepted_ids),
@@ -133,7 +146,10 @@ def apply_role_decisions(groups, nodes, decisions, identifier_type=None):
         "decisions_rejected": rejected,
         "groups_reviewed": reviewed,
         "groups_partially_reviewed": partial,
-        "groups_unreviewed": len(enriched) - reviewed,
+        "groups_rekey_required": rekey,
+        "groups_lineage_review_required": lineage,
+        "groups_unreviewed": unreviewed,
+        "groups_open": len(enriched) - reviewed,
     }
 
 
