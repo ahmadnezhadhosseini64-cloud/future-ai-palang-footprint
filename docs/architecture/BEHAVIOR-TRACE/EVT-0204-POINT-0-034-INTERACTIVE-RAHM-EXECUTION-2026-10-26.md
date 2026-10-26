@@ -21,3 +21,5 @@ Repository checks and independent interactive-host checks are different evidence
 
 ## Open gates
 I1–I8; exact final SHA validation; manifest digest regeneration; graph/source/parent gaps; POINT-0/032 provenance reconciliation; restart recovery; round-trip; and always-on runtime remain OPEN / NOT RUN as applicable. Continue NEXT-051; no NEXT-052.
+
+- Canonical repository time: [TIME-BINDING-POINT-0-034](./TIME-BINDING-POINT-0-034-EVT-0204-2026-10-26.md) — 2026-10-26 10:16:08 UTC / 13:46:08 Asia/Tehran.
