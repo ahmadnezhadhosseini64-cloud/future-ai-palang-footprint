@@ -8,11 +8,11 @@
 - Event: [EVT-0191](./EVT-0191-EXCAVATION-FINDINGS-DUAL-PATH-2026-10-26.md)
 
 ## Canonical repository registration time
-- Root file's creation commit: [fec34b0a6eacc31e8feb8f332e4d7d84540df68c](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/fec34b0a6eacc31e8feb8f332e4d7d84540df68c)
-- Repository commit timestamp (UTC, canonical): 2026-10-26T03:52:33Z
-- Equivalent Asia/Tehran time (UTC+03:30): 2026-10-26 07:22:33 +03:30
-- Evidence source: GitHub commit metadata returned created_at=2026-10-26T03:52:33Z; timestamp is not inferred from the user message.
-- Root content blob SHA observed on read-back: 6d88f9515d7d77db93055653627f0fa267c253c8
+- Root file's creation commit: [80822d3073aefe8075a8308409c777648b8dd983](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/80822d3073aefe8075a8308409c777648b8dd983)
+- Repository commit timestamp (UTC, canonical): 2026-10-26T04:05:14Z
+- Equivalent Asia/Tehran time (UTC+03:30): 2026-10-26 07:35:14 +03:30
+- Evidence source: GitHub commit metadata returned created_at=2026-10-26T04:05:14Z; timestamp is not inferred from the user message.
+- Root content blob SHA observed on read-back: 22815cf808df55ca2ae47076fe94f6d4be09fc5d
 
 ## Timestamp boundary
 This binds the root's creation commit. The root file has not been edited after that commit. If the root file is later changed, its canonical last-change timestamp must be rebound to the actual new commit. This does not assert that the user-message timestamp was captured, nor does it verify any non-repository destination.
