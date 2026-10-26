@@ -3,7 +3,7 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.9.6
+- Version: 1.9.7
 - Date: 2026-10-26
 - Exact Time: 11:25 local project time, minute precision; exact seconds not captured.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
@@ -2091,3 +2091,12 @@ The current root is [POINT-0/027](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261
 - Next: package build from a tested exact SHA; attach bundle to the existing interactive project; capture destination receipts for I1–I8; return receipts to MASTER for independent decision.
 - State: registered on working branch; not yet merged/integrated. External-host tests remain OPEN / NOT RUN. Continue NEXT-051; no NEXT-052.
 
+
+
+## Reversible gap cover — missing historical MASTER/RAHM/CHILD parent
+
+- Recovery bridge: [HAIF-CORE-MASTER-CHILD-RAHM-RECOVERY-BRIDGE-2026-10-26-001](../../reference/REFERENCE-DOCUMENTS/HAIF-CORE-MASTER-CHILD-RAHM-RECOVERY-BRIDGE-2026-10-26-001.md).
+- Affected source edges: `GPT6-RAHM-HOST-PERSISTENCE-POINT-0-2026-10-24-001.md` and `HOST-CAPABILITY-FALLBACK/README.md`.
+- The exact standalone historical parent is still absent from the currently recovered repository evidence. The bridge is explicitly NOT the original parent; both graph edges remain UNRESOLVED.
+- This cover preserves continuity and allows Path A to continue while Path B searches for the exact original artifact. It does not lower the validation bar or falsely close the gap.
+- Latest exact-head verified baseline before this bridge update: SHA `94dbe8fd68234fb5ebc28a15471a87352fc5c67b`; audit [40352514664](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40352514664), portable conformance [40352514736](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40352514736). Re-run both after the current update.
