@@ -186,3 +186,7 @@
 - نقش‌ها: پروژهٔ اصلی = MASTER؛ این بستهٔ مدل اولیه/محیط رشد = RAHM؛ نسخهٔ آزموده و دارای شواهد = CHILD candidate تا تصمیم مستر.
 - معیار آزمون مستقل و محدودیت محیط تعاملی در سند POINT-0/032 آمده است. CI یا ثبت مخزن، واردسازی واقعی در پروژهٔ تعاملی را ثابت نمی‌کند.
 - صف فعال همچنان NEXT-051 است؛ NEXT-052 ساخته نشود. شکاف‌های تاریخی و میزبان مستقل OPEN می‌مانند.
+
+## RAHM role and promotion contract — 2026-10-26
+
+This folder is the RAHM (womb/test environment) in the hierarchy, not the canonical MASTER. The original Future AI / Palang Footprint repository remains the master authority. Follow the [MASTER–RAHM–CHILD promotion and interactive-host verification contract](../../reference/REFERENCE-DOCUMENTS/MASTER-RAHM-CHILD-PROMOTION-AND-INTERACTIVE-HOST-VERIFICATION-2026-10-26-001.md) and the current [POINT-0/032](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-032-MASTER-RAHM-CHILD-ARCHITECTURE.md) → [CURRENT-079](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-079-MASTER-RAHM-CHILD-ARCHITECTURE.md) chain. Keep candidates separate until test receipts and explicit master acceptance. External interactive-project import remains OPEN / NOT RUN.
