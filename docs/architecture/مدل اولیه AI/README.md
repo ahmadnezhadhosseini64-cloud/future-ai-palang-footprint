@@ -191,3 +191,9 @@
 
 
 - **Run the RAHM project validation:** [Interactive Project Validation Runbook](../MASTER-RAHM-CHILD/INTERACTIVE-PROJECT-VALIDATION-RUNBOOK.md). Paste its prompt into the actual interactive project after attaching the exact export bundle. The runbook is ready; actual test results remain NOT RUN until the project returns receipts.
+
+
+## اجرای تعاملی واقعی — POINT-0/034 / CURRENT-082
+
+گام جاری، ادامهٔ همین بستهٔ موجود است؛ پوشه یا پروژهٔ موازی ساخته نمی‌شود. راهنمای اجرایی و متن آمادهٔ اجرا در [Interactive Project Validation Runbook](../MASTER-RAHM-CHILD/INTERACTIVE-PROJECT-VALIDATION-RUNBOOK.md) قرار دارد. بستهٔ دقیق RAHM را پس از عبور آزمون مخزن به همان پروژهٔ تعاملی موجود پیوست کن و متن اجرایی را آنجا اجرا کن. رسید واردسازی، بازسازی بدون اتکای به متن گفتگو، جداسازی نامزد، حفظ شکاف‌ها، بازیابی پس از راه‌اندازی مجدد و رفت‌وبرگشت باید از خود محیط مقصد بیاید. تا دریافت رسید واقعی، آزمون‌های میزبان مستقل NOT RUN می‌مانند. نقطهٔ جاری: [POINT-0/034](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-034-INTERACTIVE-RAHM-EXECUTION.md) → [CURRENT-082](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-082-INTERACTIVE-RAHM-EXECUTION.md).
+
