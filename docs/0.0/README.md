@@ -1738,3 +1738,4 @@ The canonical chain is [POINT-0/032](./anchors/GPT6-RAHM-USER-POINT-0-20261026-0
 - Continue the existing [NEXT-051](./anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md); do not create NEXT-052.
 - Path A: executable initial model, portable package, recovery and independent-host acceptance. Path B: historical graph excavation, identity collisions, declared-ID/reference separation and parent-edge repair. Both remain connected but separately gated.
 - Current status: root/chain registered; exact-head audit and portable conformance still required after this registration; external-host tests remain NOT RUN until direct receipts exist.
+- Canonical time binding: [TIME-BINDING-POINT-0-036-CHAIN](../architecture/BEHAVIOR-TRACE/TIME-BINDING-POINT-0-036-CHAIN-2026-10-26.md).
