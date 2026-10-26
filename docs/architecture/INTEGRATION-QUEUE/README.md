@@ -1967,3 +1967,14 @@ The source blob remained unchanged and Library version 7 was independently read 
 - Behavior lesson: a report is not execution. Register accepted findings and proceed with evidence-backed work.
 
 - Current point: [CURRENT-072](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-072-DUAL-PATH-EXCAVATION.md); active next: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+
+
+
+## Current execution checkpoint — CURRENT-073
+
+The active root is [POINT-0/026](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-026-DUAL-PATH-HAIF-CONTINUATION.md), with [IN-062](../../0.0/anchors/PALANG-0.0-IN-20261026-062-DUAL-PATH-HAIF-CONTINUATION.md), [OUT-061](../../0.0/anchors/PALANG-0.0-OUT-20261026-061-DUAL-PATH-HAIF-CONTINUATION.md), [EVT-0192](../BEHAVIOR-TRACE/EVT-0192-USER-REQUEST-POINT-0-DUAL-PATH-HAIF-CONTINUATION-2026-10-26.md) and [CURRENT-073](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-073-DUAL-PATH-HAIF-CONTINUATION.md).
+
+- **Path A:** rebuild/validate the portable initial model; run exact-head package checks, fresh extraction/import and restart recovery; independent-host import remains NOT RUN until an authorized host route is available.
+- **Path B:** continue NEXT-051 case-by-case graph reconciliation. Keep the latest known semantic status REVIEW_REQUIRED and preserve all provenance.
+- **Shared gates:** read-back every changed file; verify links; run exact-head Living Architecture Audit and Portable RAHM Conformance; record commit SHA, workflow IDs, artifacts and hashes. Do not infer external storage or host-native persistence from repository CI.
+- **Queue policy:** NEXT-051 remains the single active remediation queue. No competing NEXT queue is created by this checkpoint.
