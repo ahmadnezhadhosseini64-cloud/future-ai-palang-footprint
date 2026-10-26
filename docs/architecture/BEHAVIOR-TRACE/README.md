@@ -828,3 +828,9 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Current root/checkpoint/active queue discovered from main: POINT-0/027 / CURRENT-074 / NEXT-051. POINT-0/016, POINT-0/017, POINT-0/018 and prior mirror event EVT-0177 remain preserved. This event is not a new root or a new NEXT queue.
 - CURRENT-065/CURRENT-066 remains OPEN. Audit run 40267412937 returned scoped consistency (CURRENT-066 for overlay recovery; CURRENT-072 for global project registry; winner_selected=false) on tested SHA `6d6623a681cc7012dc0705d141197de7f818fcf0`; this is not an exact-current-main audit.
 - Buffer/Persistent Memory remain NOT VERIFIED; Dropbox remains OPEN / NOT VERIFIED; external end-to-end recovery remains NOT RUN. Issues #20/#21 and BOART-FOLLOWUP-01 remain open.
+
+
+## EVT-0195 — POINT-0/028 and portable GPT-6 HAIF execution
+- [EVT-0195](./EVT-0195-USER-REQUEST-POINT-028-PORTABLE-GPT6-HAIF-EXECUTION-2026-10-26.md) records the request to create a new 0.0 anchor and portable clean-host boot instructions.
+- [POINT-0/028](../../0.0/anchors/PALANG-0.0-POINT-0-028-GPT6-PORTABLE-HAIF-EXECUTION-2026-10-26.md) and [GPT-6 package](../../portable/GPT6-HAIF-BOOT-PACKAGE/README.md).
+- This event does not imply external-host import, persistent memory, Dropbox or background execution has been verified.
