@@ -182,6 +182,18 @@ source_parent_overrides = {
     ("docs/architecture/BEHAVIOR-TRACE/EVT-0121-REGISTER-ACTIVE-CONTINUATION-AND-COLD-START-RESULT-2026-10-23.md", "EVT-0120"): "docs/architecture/BEHAVIOR-TRACE/EVT-0120-EVIDENCE-LOCATOR-RESOLUTION-AND-COLD-RECOVERY-2026-10-23.md",
     ("docs/reference/REFERENCE-DOCUMENTS/PEH-REGISTRATION-LIMITATION-AND-INTERACTION-BEHAVIOR-LIVING-REFERENCE-2026-10-22-001.md", "EVT-0051"): "docs/architecture/BEHAVIOR-TRACE/EVT-0051-GMAIL-ACCESS-CLAIM-AND-LIVING-0.0-ANCHOR-2026-10-22.md",
 }
+unresolved_parent_evidence = {
+    "HAIF-CORE-MASTER-CHILD-RAHM-2026-09-15-001": {
+        "status": "MISSING_STANDALONE_PARENT_ARTIFACT",
+        "evidence_paths": [
+            "docs/reference/REFERENCE-DOCUMENTS/REF-ARCHAEOLOGY-EXCAVATION-2026-09-29-001.md",
+            "docs/reference/REFERENCE-DOCUMENTS/REF-ARCHAEOLOGY-REVIVAL-MIRROR-2026-09-29-001.md",
+            "docs/reference/REFERENCE-DOCUMENTS/REF-DOCUMENTS-ACTIVATION-CLOSURE-2026-09-29-001.md",
+            "docs/reference/REFERENCE-DOCUMENTS/REF-WORKBENCH-ARCHITECTURE-2026-09-29-001.md"
+        ],
+        "next_action": "Recover the exact standalone parent from source history or user-provided evidence. Do not fabricate a replacement or silently substitute a different master."
+    }
+}
 path_stems = {Path(n["path"]).stem: n["path"] for n in nodes}
 parent_edges, unresolved, ambiguous = [], [], []
 for node in nodes:
@@ -198,6 +210,8 @@ for node in nodes:
                 "selected_path": selected_path, "resolution": resolution}
         if override_warning:
             edge["override_warning"] = override_warning
+        if resolution == "UNRESOLVED" and parent in unresolved_parent_evidence:
+            edge["blocker"] = unresolved_parent_evidence[parent]
         parent_edges.append(edge)
         if resolution == "UNRESOLVED": unresolved.append(edge)
         elif resolution == "AMBIGUOUS": ambiguous.append(edge)
