@@ -15,3 +15,5 @@
 - نسخهٔ آزموده و دارای شواهد = CHILD نامزد برای بازبینی و پذیرش مستر.
 
 این ورودی خواستهٔ کاربر را ثبت می‌کند؛ به‌تنهایی اثبات نمی‌کند که مقصد تعاملی بیرونی در دسترس است یا آزمون واردسازی در آن اجرا شده است.
+
+> **CONFLICTED DUPLICATE / NON-CANONICAL.** The active IN-067 is [IN-067 Master–Rahm–Child bridge](./PALANG-0.0-IN-20261026-067-MASTER-RAHM-CHILD-BRIDGE.md). Keep this record for audit history; do not use it as the canonical input. Resolve the duplicate ID only with source/commit lineage evidence.
