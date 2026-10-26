@@ -1665,3 +1665,10 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - New root: [POINT-0/029](./anchors/PALANG-0.0-POINT-0-029-CONTINUE-HAIF-ARCHITECTURE-2026-10-26.md); event: [EVT-0197](../architecture/BEHAVIOR-TRACE/EVT-0197-USER-REQUEST-NEW-POINT-0-AND-CONTINUE-2026-10-26.md).
 - Parent: POINT-0/028. Current execution checkpoint observed: CURRENT-075. Existing active queue: NEXT-051; do not create NEXT-052.
 - This new root preserves POINT-0/016, /017, /018 and all later history. All next actions are tracked as 0.0 checkpoints in the root record. Exact-current-main audit and independent-host recovery remain unverified/open.
+
+
+## POINT-0/030 — Current user-designated root (2026-10-26)
+- Root: [POINT-0/030](./anchors/PALANG-0.0-POINT-0-030-CONTINUE-FROM-029-2026-10-26.md); event: [EVT-0198](../architecture/BEHAVIOR-TRACE/EVT-0198-USER-REQUEST-POINT-0-030-AND-CONTINUE-2026-10-26.md).
+- Parent root: POINT-0/029. Execution checkpoint observed: CURRENT-075 (re-discover before action). Active queue: NEXT-051 only; do not create NEXT-052.
+- Main SHA observed before registration: bbbc1cf7243be413097b18303008702ce7b0e89e. Current head must be re-discovered after each commit and audited on exact SHA.
+- Root/event read-back completed. Canonical linkage to the other indexes and living master remains in progress until each is individually written and read back.
