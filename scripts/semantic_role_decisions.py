@@ -1,15 +1,26 @@
 #!/usr/bin/env python3
-"""Apply source-backed role decisions to graph collision groups without hiding raw counts."""
-import json
+"""Apply source-backed role decisions without hiding raw collision groups.
+
+A decision may cover a verified subset of a collision group. Covered paths receive
+role annotations, but the group remains PARTIALLY-ROLE-ADJUDICATED until every
+member is covered without role conflicts. Stale hashes and paths outside the group
+are rejected.
+"""
 from pathlib import Path
+import json
+
 
 def apply_role_decisions(groups, nodes, decisions, identifier_type=None):
     node_by_path = {node.get("path"): node for node in nodes}
-    accepted, rejected = [], []
-    enriched = []
+    accepted_ids, rejected, enriched = set(), [], []
+
     for group in groups:
         item = dict(group)
-        item["semantic_review"] = {"status": "UNREVIEWED"}
+        group_paths = sorted(set(group.get("paths", [])))
+        roles_by_path = {}
+        decisions_by_path = {}
+        accepted_for_group = []
+
         for decision in decisions:
             if decision.get("status") != "ROLE-ADJUDICATED":
                 continue
@@ -17,40 +28,114 @@ def apply_role_decisions(groups, nodes, decisions, identifier_type=None):
                 continue
             if decision.get("identifier_value") != group.get("key"):
                 continue
-            decision_paths = decision.get("paths", [])
-            expected_paths = sorted(p.get("path", "") for p in decision_paths if isinstance(p, dict))
-            group_paths = sorted(group.get("paths", []))
-            if expected_paths != group_paths or len(expected_paths) != len(decision_paths):
-                rejected.append({"decision_id": decision.get("decision_id"), "reason": "path_set_mismatch", "identifier_value": group.get("key")})
+
+            records = decision.get("paths", [])
+            expected_paths = [p.get("path", "") for p in records if isinstance(p, dict)]
+            unique_paths = set(expected_paths)
+            if (not records or len(expected_paths) != len(records) or
+                    len(unique_paths) != len(expected_paths) or
+                    not unique_paths.issubset(set(group_paths))):
+                rejected.append({
+                    "decision_id": decision.get("decision_id"),
+                    "reason": "path_set_mismatch",
+                    "identifier_value": group.get("key"),
+                    "decision_paths": sorted(unique_paths),
+                    "group_paths": group_paths,
+                })
                 continue
+
             failures = []
-            for record in decision_paths:
-                node = node_by_path.get(record.get("path"))
+            for record in records:
+                path = record.get("path")
+                node = node_by_path.get(path)
                 if not node:
-                    failures.append({"path": record.get("path"), "reason": "source_node_missing"})
+                    failures.append({"path": path, "reason": "source_node_missing"})
                 elif node.get("sha256") != record.get("content_sha256"):
-                    failures.append({"path": record.get("path"), "reason": "source_sha256_mismatch", "expected": record.get("content_sha256"), "actual": node.get("sha256")})
+                    failures.append({
+                        "path": path,
+                        "reason": "source_sha256_mismatch",
+                        "expected": record.get("content_sha256"),
+                        "actual": node.get("sha256"),
+                    })
             if failures:
-                rejected.append({"decision_id": decision.get("decision_id"), "reason": "source_hash_verification_failed", "failures": failures})
+                rejected.append({
+                    "decision_id": decision.get("decision_id"),
+                    "reason": "source_hash_verification_failed",
+                    "failures": failures,
+                })
                 continue
-            item["semantic_review"] = {
-                "status": "ROLE-ADJUDICATED",
-                "decision_id": decision.get("decision_id"),
-                "decision_type": decision.get("decision_type"),
-                "roles": [{"path": p["path"], "role": p.get("role")} for p in decision_paths],
-                "rationale": decision.get("rationale"),
-                "source_manifest_commit": decision.get("source_manifest_commit"),
-                "evidence_refs": decision.get("evidence_refs", []),
-                "history_preserved": bool(decision.get("preserve_history")),
-                "no_rename": bool(decision.get("no_rename")),
-                "no_delete": bool(decision.get("no_delete")),
-            }
-            accepted.append(decision.get("decision_id"))
-            break
+
+            conflicts = []
+            for record in records:
+                path, role = record["path"], record.get("role")
+                if path in roles_by_path and roles_by_path[path] != role:
+                    conflicts.append({
+                        "path": path,
+                        "existing_role": roles_by_path[path],
+                        "proposed_role": role,
+                    })
+            if conflicts:
+                rejected.append({
+                    "decision_id": decision.get("decision_id"),
+                    "reason": "role_conflict",
+                    "conflicts": conflicts,
+                })
+                continue
+
+            for record in records:
+                path = record["path"]
+                roles_by_path[path] = record.get("role")
+                decisions_by_path.setdefault(path, []).append(decision.get("decision_id"))
+            accepted_for_group.append(decision)
+            accepted_ids.add(decision.get("decision_id"))
+
+        covered = set(roles_by_path)
+        if not accepted_for_group:
+            status = "UNREVIEWED"
+        elif covered == set(group_paths):
+            status = "ROLE-ADJUDICATED"
+        else:
+            status = "PARTIALLY-ROLE-ADJUDICATED"
+
+        item["semantic_review"] = {
+            "status": status,
+            "decision_ids": sorted({d.get("decision_id") for d in accepted_for_group}),
+            "roles": [
+                {
+                    "path": path,
+                    "role": roles_by_path[path],
+                    "decision_ids": sorted(set(decisions_by_path[path])),
+                }
+                for path in sorted(roles_by_path)
+            ],
+            "covered_paths": sorted(covered),
+            "unreviewed_paths": sorted(set(group_paths) - covered),
+            "rationales": [d.get("rationale") for d in accepted_for_group if d.get("rationale")],
+            "source_manifest_commits": sorted({
+                d.get("source_manifest_commit") for d in accepted_for_group
+                if d.get("source_manifest_commit")
+            }),
+            "evidence_refs": sorted({
+                ref for d in accepted_for_group for ref in d.get("evidence_refs", [])
+            }),
+            "history_preserved": all(bool(d.get("preserve_history")) for d in accepted_for_group),
+            "no_rename": all(bool(d.get("no_rename")) for d in accepted_for_group),
+            "no_delete": all(bool(d.get("no_delete")) for d in accepted_for_group),
+        }
         enriched.append(item)
-    return enriched, {"decisions_loaded": len(decisions), "decisions_accepted": len(set(accepted)), "accepted_decision_ids": sorted(set(accepted)), "decisions_rejected": rejected,
-                      "groups_reviewed": sum(g["semantic_review"]["status"] == "ROLE-ADJUDICATED" for g in enriched),
-                      "groups_unreviewed": sum(g["semantic_review"]["status"] != "ROLE-ADJUDICATED" for g in enriched)}
+
+    reviewed = sum(g["semantic_review"]["status"] == "ROLE-ADJUDICATED" for g in enriched)
+    partial = sum(g["semantic_review"]["status"] == "PARTIALLY-ROLE-ADJUDICATED" for g in enriched)
+    return enriched, {
+        "decisions_loaded": len(decisions),
+        "decisions_accepted": len(accepted_ids),
+        "accepted_decision_ids": sorted(accepted_ids),
+        "decisions_rejected": rejected,
+        "groups_reviewed": reviewed,
+        "groups_partially_reviewed": partial,
+        "groups_unreviewed": len(enriched) - reviewed,
+    }
+
 
 def load_decisions(path):
     decisions, errors = [], []
