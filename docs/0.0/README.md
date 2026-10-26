@@ -1616,3 +1616,13 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 
 
 - Current continuation: [CURRENT-073](./anchors/PALANG-0.0-CURRENT-20261026-073-DUAL-PATH-HAIF-CONTINUATION.md); NEXT-051 remains the active remediation queue.
+
+
+
+## Latest root POINT-0/027 — Path B gap reconciliation
+
+- Root: [POINT-0/027](./anchors/GPT6-RAHM-USER-POINT-0-20261026-027-PATH-B-GAP-RECONCILIATION.md) — ACTIVE / LIVING / OPEN.
+- Chain: [IN-063](./anchors/PALANG-0.0-IN-20261026-063-PATH-B-GAP-RECONCILIATION.md) → [OUT-062](./anchors/PALANG-0.0-OUT-20261026-062-PATH-B-GAP-RECONCILIATION.md) → [EVT-0193](../architecture/BEHAVIOR-TRACE/EVT-0193-POINT-0-PATH-B-GAP-RECONCILIATION-2026-10-26.md) → [CURRENT-074](./anchors/PALANG-0.0-CURRENT-20261026-074-PATH-B-GAP-RECONCILIATION.md).
+- Active remediation queue remains [NEXT-051](./anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md); do not create a competing queue.
+- Path B implementation focus: source-hash-verified partial role decisions must annotate only covered paths and must not close a group until all group members are covered without role conflict.
+- Last audit snapshot remains structural PASS / SCOPED_CONSISTENT / 0 missing local links, but semantic graph REVIEW_REQUIRED. Historical counts are in POINT-0/027 and must be refreshed on the next exact-head audit.
