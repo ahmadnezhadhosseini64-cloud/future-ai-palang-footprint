@@ -813,3 +813,9 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 ## Latest event — EVT-0192
 
 [EVT-0192 — New root POINT-0 and dual-path HAIF continuation](./EVT-0192-USER-REQUEST-POINT-0-DUAL-PATH-HAIF-CONTINUATION-2026-10-26.md) records the user's request, the parallel Path A / Path B contract, the scope-aware pointer lesson and the ID-allocation safeguards. Related anchors: [POINT-0/026](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-026-DUAL-PATH-HAIF-CONTINUATION.md), [IN-062](../../0.0/anchors/PALANG-0.0-IN-20261026-062-DUAL-PATH-HAIF-CONTINUATION.md), [OUT-061](../../0.0/anchors/PALANG-0.0-OUT-20261026-061-DUAL-PATH-HAIF-CONTINUATION.md), [CURRENT-073](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-073-DUAL-PATH-HAIF-CONTINUATION.md). The event is registered but semantic completion of both paths remains open.
+
+
+
+## EVT-0193 — Path B gap reconciliation
+
+[EVT-0193](./EVT-0193-POINT-0-PATH-B-GAP-RECONCILIATION-2026-10-26.md) records the new root POINT-0/027 and a concrete audit finding: all-or-nothing path-set matching discarded partial role evidence. The corrected rule accepts only source-hash-verified paths inside the audited group and keeps the group open until complete coverage without role conflict. Related anchors: [POINT-0/027](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-027-PATH-B-GAP-RECONCILIATION.md), [CURRENT-074](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-074-PATH-B-GAP-RECONCILIATION.md), [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). Semantic closure remains OPEN pending exact-head CI and case-level review.
