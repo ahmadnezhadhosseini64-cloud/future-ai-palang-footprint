@@ -14,13 +14,13 @@
 Path A and Path B are both mandatory, coordinated and separately gated. Progress in one path does not close or replace the other.
 
 ## Path A — initial model construction
-- [ ] Inspect latest exact-head portable-conformance and Living Architecture Audit runs and their tested SHAs.
-- [ ] Read current run/job/step receipts and confirm manifest exact-byte digests, package artifact and clean-package bootstrap evidence.
-- [ ] Verify the starter/runtime source and recovery state against the exact tested revision.
+- [x] Inspected exact-head Portable RAHM Conformance and Living Architecture Audit runs on SHA 2b1f44e7e956c08d8ac4fccdb23ceedf77a6513f.
+- [x] Read run/job/step receipts; exact-byte and live-reference SHA-256 scans PASS; package artifact metadata read back.
+- [x] Verified portable conformance on exact tested SHA: 119 package files, 77 live references, package SHA-256 8c971e3a9f17787b13da13b9ef4a2b091144dd43e7be6f9289eeeda95d9a7a7a; archive artifact 12626363984.
 - [ ] Keep independent AI-host import, second-host import, host-native persistence/restart, automatic capture and background execution OPEN until directly tested in an authorized runtime.
 
 ## Path B — existing architecture remediation
-- [ ] Rerun the current graph audit and retain the raw receipt; historical counts are not current counts.
+- [x] Reran the graph audit on exact tested SHA 2b1f44e7e956c08d8ac4fccdb23ceedf77a6513f; raw audit artifact and run receipt retained. Content result is REVIEW_REQUIRED.
 - [ ] Adjudicate Stable-ID, Production-ID, Reference-ID, event-number collisions, ambiguous parent edges and timestamps individually.
 - [ ] Reconcile CURRENT-065/CURRENT-066 provenance and consumers; remain AMBIGUOUS/BLOCKED until evidence decides the pointer.
 - [ ] Keep Issue #20, Issue #21, BOART-FOLLOWUP-01 and all unresolved findings in NEXT-051 unless evidence justifies a documented move.
@@ -63,3 +63,28 @@ OPEN / EXECUTION REQUIRED. Registration alone does not satisfy the acceptance cr
 - Pointer scope adjudication: OPEN / AMBIGUOUS; no winner selected.
 - Independent GPT host: OPEN / NOT RUN.
 - NEXT-051 remains ACTIVE / LIVING. Both paths remain mandatory.
+
+
+## Exact-head execution receipts — 2026-10-26
+
+### Path A — portable initial model
+- Portable RAHM Conformance [40266803063](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40266803063): SUCCESS on exact tested SHA 2b1f44e7e956c08d8ac4fccdb23ceedf77a6513f.
+- Exact-byte manifest inventory scan: PASS. Live-reference SHA-256 scan: PASS. Package build: PASS.
+- Package inventory: 119 files; 77 live references. Package archive SHA-256: 8c971e3a9f17787b13da13b9ef4a2b091144dd43e7be6f9289eeeda95d9a7a7a; size 458115 bytes.
+- Package artifact ID 12626363984, artifact digest sha256:912022e4fe8ad80856e5abce2657a48f50329f41c8f766a09587a92fd1989c78. Evidence artifact ID 12626598231, digest sha256:3531a5f166a501fc91a87c4745b0608907678f0c83088be10703828f4ab386cf.
+- This closes the exact-byte/package build gate for the tested SHA only. It does not close independent GPT-host import, host persistence/restart, automatic capture, background execution or external writes.
+
+### Path B — current pointer scope and graph
+- Living Architecture Audit [40266803100](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40266803100): workflow SUCCESS on the same exact tested SHA. Structural repository checks: PASS.
+- Pointer discovery test ID HAIF-CURRENT-POINTER-DISCOVERY-0.2: SCOPED_CONSISTENT; overlay recovery CURRENT-066 and global project CURRENT-072 are independently consistent; winner_selected=false. No historical file was rewritten or promoted.
+- Latest graph content audit remains REVIEW_REQUIRED: 1,221 text nodes scanned; 0 decode errors; 418 paths with 0.0; 62 checkpoint paths; 232 EVT files; 145 reference-document paths; 6,755 local-link edges; 0 missing local links; 63 Stable-ID collision groups (62 unreviewed); 89 Production-ID collision groups; 7 Reference-ID collision groups; 38 event-number collision groups; 11 exact-content duplicate groups; 79 declared parent edges, 0 unresolved parent edges, 13 ambiguous parent edges and 11 proposed alias edges.
+- Audit artifact ID 12626229346, digest sha256:194783c03554976684397e4112fee2f6ac11b4dfdf3e93adef04d54f5b3e672c.
+- The pointer-scope defect is corrected and tested. The remaining graph collision/parent findings are not solved by the parser fix and must be adjudicated individually under NEXT-051.
+
+### Current gate summary
+- [x] New point chain registered, independently read back, and connected to registry, reference index, integration queue, initial-model living mother, continuation master and HAIF architecture master.
+- [x] Pointer scope separated and regression-tested on the exact tested SHA.
+- [x] Portable exact-byte/package conformance passed on the exact tested SHA.
+- [ ] Individual adjudication of 62 unreviewed Stable-ID groups, 89 Production-ID groups, 7 Reference-ID groups, 38 event-number groups and 13 ambiguous parent edges.
+- [ ] Independent GPT-host import and real host persistence/automatic-capture/background-runtime tests.
+- NEXT-051 remains OPEN / LIVING. No NEXT-052 created.
