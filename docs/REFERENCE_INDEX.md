@@ -1676,3 +1676,11 @@ Both Path A (portable initial model and independent-host recovery) and Path B (e
 - Checkpoint: [CURRENT-078](0.0/anchors/PALANG-0.0-CURRENT-20261026-078-REVERSIBLE-GRAPH-GAP-COVERS.md)
 - Gap register: [GAP-COVER-REGISTER](architecture/BEHAVIOR-TRACE/GAP-COVER-REGISTER-2026-10-26.md)
 - Queue: NEXT-051 remains active; no NEXT-052. Underlying gaps remain OPEN / ACTIVE / LIVING.
+
+
+## POINT-0/032 — Master–Rahm–Child bridge and initial-model validation
+- Root: [POINT-0/032](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-032-MASTER-RAHM-CHILD-INITIAL-MODEL-BRIDGE.md)
+- Input/output/event/current: [IN-067](0.0/anchors/PALANG-0.0-IN-20261026-067-MASTER-RAHM-CHILD-BRIDGE.md) → [OUT-066](0.0/anchors/PALANG-0.0-OUT-20261026-066-MASTER-RAHM-CHILD-BRIDGE.md) → [EVT-0201](architecture/BEHAVIOR-TRACE/EVT-0201-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION-2026-10-26.md) → [CURRENT-079](0.0/anchors/PALANG-0.0-CURRENT-20261026-079-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION.md)
+- Contract: [Master–Rahm–Child cross-validation](architecture/MASTER-RAHM-CHILD/MASTER-RAHM-CHILD-CROSS-VALIDATION-CONTRACT-2026-10-26.md)
+- Initial-model mother: [living mother](architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
+- Status: repository registration; actual interactive-project validation and exact-final-SHA conformance remain OPEN / NOT RUN.
