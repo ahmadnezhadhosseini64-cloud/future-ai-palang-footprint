@@ -3,13 +3,13 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.9.3
+- Version: 1.9.4
 - Date: 2026-10-26
 - Exact Time: 11:25 local project time, minute precision; exact seconds not captured.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: POINT-0/027 is the latest user-turn root; CURRENT-074 is the current execution checkpoint; Path B partial-role correction is registered; exact-current-main CI/audit remains pending; CURRENT-065/CURRENT-066 scope/lineage remains OPEN and no winner is selected by inference; NEXT-051 remains the single active queue; no NEXT-052 placeholder.
+- Status: POINT-0/028 is the latest user-turn root; CURRENT-075 is the current execution checkpoint; Path B partial-role correction is registered; exact-current-main CI/audit remains pending; CURRENT-065/CURRENT-066 scope/lineage remains OPEN and no winner is selected by inference; NEXT-051 remains the single active queue; no NEXT-052 placeholder.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
@@ -2001,3 +2001,10 @@ The current root is [POINT-0/027](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261
 - This is evidence for the existing mirror follow-up, not a new queue. NEXT-051 remains the sole active remediation queue; no NEXT-052 is created.
 - Latest retrieved full Living Architecture Audit: run 40267412937, tested SHA `6d6623a681cc7012dc0705d141197de7f818fcf0`, result SUCCESS with scoped pointer consistency. The later main head is NOT VERIFIED by that run; exact-final-main audit and Portable RAHM Conformance remain required.
 - CURRENT-065/CURRENT-066 remains OPEN; preserve overlay and global-project scopes without selecting a winner by inference. Issues #20/#21 and BOART-FOLLOWUP-01 remain OPEN.
+
+
+## Live mirror sync follow-through — EVT-0196 (2026-10-26)
+- [EVT-0196](../BEHAVIOR-TRACE/EVT-0196-LIVE-MIRROR-SYNC-RECHECK-2026-10-26.md) and [time binding](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0196-LIVE-MIRROR-SYNC-2026-10-26.md): source unchanged; Library version 7 differs only by one trailing newline (edit distance 1), within approved tolerance. No redundant write.
+- Latest root/checkpoint: POINT-0/028 / CURRENT-075. Continue the existing NEXT-051; no NEXT-052.
+- The two EVT-0195 files are an unresolved event-number collision. Preserve both and adjudicate source-backed; do not silently renumber or merge.
+- Current-main full audit and Portable RAHM Conformance must be verified on the exact final SHA. Issues #20/#21, Buffer/Persistent Memory, Dropbox and independent-host recovery retain their open statuses.
