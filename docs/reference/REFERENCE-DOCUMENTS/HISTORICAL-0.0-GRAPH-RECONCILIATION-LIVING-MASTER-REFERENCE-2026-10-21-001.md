@@ -495,3 +495,9 @@ Resume from the anchor file and the existing [HAIF initial-model package](../../
 Latest root: [POINT-0/027](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-027-PATH-B-GAP-RECONCILIATION.md); current execution checkpoint: [CURRENT-074](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-074-PATH-B-GAP-RECONCILIATION.md).
 
 The latest audit snapshot reports 63 Stable-ID groups (62 unreviewed), 89 Production-ID groups, 7 Reference-ID groups, 38 event-number groups, 11 exact-content duplicate groups, 13 ambiguous parent edges and one timestamp parse ambiguity. These are candidate groups, not automatically genuine conflicts. The role-decision engine is being corrected to accept hash-verified partial path coverage without promoting a whole group prematurely. The next audit must persist a machine-readable case queue and record exact paths, line/context, source SHA-256, inbound/outbound links, parent candidates and decision state. Until that evidence exists, individual cases not already documented remain OPEN; no numeric/filename-based canonical winner may be inferred.
+
+
+
+## 8. Durable case review queue
+
+The case-by-case continuation is tracked in [Historical Graph Case Review Queue — 2026-10-26](../../architecture/INTEGRATION-QUEUE/HISTORICAL-GRAPH-CASE-REVIEW-QUEUE-2026-10-26.md). This queue preserves the latest audited counts as a dated snapshot, points to existing source-backed decisions and defines evidence required to close Stable-ID, Production-ID, Reference-ID, event-number, exact-duplicate, parent-edge and timestamp cases. It explicitly records that the raw machine-readable artifact was not retrieved in the current session; unnamed cases therefore remain OPEN instead of being guessed. Current root: [POINT-0/027](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-027-PATH-B-GAP-RECONCILIATION.md), current checkpoint: [CURRENT-074](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-074-PATH-B-GAP-RECONCILIATION.md).
