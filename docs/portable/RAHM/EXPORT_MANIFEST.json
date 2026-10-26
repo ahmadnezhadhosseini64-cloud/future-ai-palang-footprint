@@ -1,7 +1,7 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.8.11",
-  "manifest_status": "Master–Rahm–Child bridge, interactive validation runbook, current role baseline and canonical time binding included; exact-byte digests reconciled from CI receipts; duplicate chain retained as conflicted evidence; actual interactive-host tests and historic graph gaps remain OPEN/NOT VERIFIED",
+  "version": "1.8.12",
+  "manifest_status": "Master–Rahm–Child bridge, interactive validation runbook, current role baseline and canonical time binding included; CURRENT-079 and time-binding digests reconciled from CI receipt; duplicate chain retained as conflicted evidence; actual interactive-host tests and historic graph gaps remain OPEN/NOT VERIFIED",
   "created_from_checkpoint": "HAIF-CURRENT-079-20261026 + HAIF-MRCC-001 + HAIF-IPVR-001",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [
@@ -272,8 +272,8 @@
     {
       "path": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261026-079-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION.md",
       "version": "repository-current",
-      "git_blob_sha": "14fe6ff20d535643f6700523e2d65a888afdb508",
-      "sha256": "0978247df86f4d6c9f9383c68f14c10f8db897c74c59efd268c0b21946a1f264"
+      "git_blob_sha": "319eb1ae7e4fd28146537073846a114bff045d64",
+      "sha256": "c08f9733e14d1b15ba1e87189b5f5aee069912557ba7f035442d965befbd28e6"
     },
     {
       "path": "docs/architecture/MASTER-RAHM-CHILD/MASTER-RAHM-CHILD-CROSS-VALIDATION-CONTRACT-2026-10-26.md",
@@ -284,8 +284,8 @@
     {
       "path": "docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-POINT-0-032-EVT-0201-2026-10-26.md",
       "version": "repository-current",
-      "git_blob_sha": "62f6d4e8bb85a73e0aa8756a306c043e20ecb52d",
-      "sha256": "4f1f7f4632a28709d9d6de1ca817b60543e2fc25cb88b4a2c3dc23a76202f86b"
+      "git_blob_sha": "27f6a338dc61c576ecb3c48a7a46e575501393cc",
+      "sha256": "869389ceb919b4b8a4a4328cecda7b078953b17887d468d42be52b97802b008f"
     },
     {
       "path": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261026-078-REVERSIBLE-GRAPH-GAP-COVERS.md",
