@@ -1642,3 +1642,12 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - Portable boot entry: [GPT-6 HAIF package](../portable/GPT6-HAIF-BOOT-PACKAGE/README.md) and [BOOTSTRAP](../portable/GPT6-HAIF-BOOT-PACKAGE/BOOTSTRAP.md).
 - Previous observed root/checkpoint: POINT-0/027 → CURRENT-074. Continue existing NEXT-051; do not create NEXT-052.
 - Status: repository artifacts registered; index/master/queue linking and exact-final-SHA audit remain pending until read-back and run evidence.
+
+
+## Current root — POINT-0/028 (2026-10-26)
+- Root: [POINT-0/028 — Portable GPT-6 Execution and Recovery](./anchors/GPT6-RAHM-USER-POINT-0-20261026-028-PORTABLE-GPT6-EXECUTION-AND-RECOVERY.md)
+- Input/output: [IN-064](./anchors/PALANG-0.0-IN-20261026-064-PORTABLE-GPT6-EXECUTION-AND-RECOVERY.md) / [OUT-063](./anchors/PALANG-0.0-OUT-20261026-063-PORTABLE-GPT6-EXECUTION-AND-RECOVERY.md)
+- Event: [EVT-0195](../architecture/BEHAVIOR-TRACE/EVT-0195-PORTABLE-GPT6-EXECUTION-AND-RECOVERY-2026-10-26.md)
+- Current checkpoint: [CURRENT-075](./anchors/PALANG-0.0-CURRENT-20261026-075-PORTABLE-GPT6-EXECUTION-AND-RECOVERY.md)
+- Previous root POINT-0/027 and earlier roots are preserved. Existing NEXT-051 remains active; no NEXT-052 created.
+- Priority: exact-current-head package conformance + architecture audit, artifact verification, then real clean GPT-6 host import. External host execution remains NOT RUN until evidenced.
