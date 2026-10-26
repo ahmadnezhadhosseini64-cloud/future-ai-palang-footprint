@@ -1,0 +1,31 @@
+{
+  "stable_id": "GPT6-HAIF-BOOT-PACKAGE-2026-10-26-001",
+  "production_id": "G6IP-PORTABLE-HAIF-001",
+  "version": "1.0.0",
+  "status": "REPOSITORY_REGISTERED_OPEN_EXPORT_AND_CLEAN_HOST_TEST_PENDING",
+  "project": "Future AI / Palang Footprint",
+  "canonical_repository": "https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint",
+  "canonical_branch": "main",
+  "entrypoint": "docs/portable/GPT6-HAIF-BOOT-PACKAGE/BOOTSTRAP.md",
+  "readme": "docs/portable/GPT6-HAIF-BOOT-PACKAGE/README.md",
+  "point": "PALANG-0.0-POINT-0-028-GPT6-PORTABLE-HAIF-EXECUTION-2026-10-26-001",
+  "event": "EVT-0195-USER-REQUEST-POINT-028-PORTABLE-GPT6-HAIF-EXECUTION-2026-10-26-001",
+  "active_queue": "NEXT-051",
+  "do_not_create": "NEXT-052",
+  "must_rediscover": ["main SHA", "latest root", "current checkpoint", "active NEXT", "living master", "behavior-trace index", "reference index", "integration queue", "Issues #20/#21", "latest mirror event", "latest relevant Actions runs and exact tested SHAs"],
+  "gates": {
+    "full_audit_on_exact_final_main_sha": "PENDING",
+    "strict_portable_conformance_on_exact_final_sha": "PENDING",
+    "CURRENT-065-CURRENT-066": "OPEN",
+    "issue_20": "OPEN",
+    "issue_21": "OPEN",
+    "buffer": "NOT VERIFIED",
+    "persistent_memory": "NOT VERIFIED",
+    "dropbox": "OPEN / NOT VERIFIED",
+    "clean_independent_gpt6_host_import": "NOT RUN",
+    "external_end_to_end_recovery": "NOT RUN"
+  },
+  "portable_archive_created": false,
+  "clean_host_import": "NOT RUN",
+  "integrity_policy": "Compute digests only from actual exported bytes; never fabricate an archive hash or claim unverified host recovery."
+}
