@@ -2,12 +2,13 @@
 
 - Stable ID: HAIF-POINT-0-036-DEEP-EXCAVATION-INITIAL-MODEL-COMPLETION-20261026
 - Production ID: HAIF-P036-20261026
-- Version: 1.0.0
-- Status: REGISTERED / ACTIVE / LIVING / OPEN
+- Version: 1.0.1
+- Status: REGISTERED / ACTIVE / LIVING / OPEN / 0+ PRODUCTION MARKER
 - Project: Future AI / Palang Footprint
 - User request: make this turn a new Point 0, excavate the repository, continue 0.0 work, and complete the initial project model.
 - Previous observed chain: POINT-0/035 → IN-071 → OUT-070 → EVT-0205 → CURRENT-083.
-- This point's chain: IN-072 → OUT-071 → EVT-0206 → CURRENT-084.
+- This point's chain: IN-072 → OUT-071 → EVT-0206 → CURRENT-084 → IN-073 → OUT-072 → EVT-0207 → CURRENT-085.
+- 0+ rule: 0+ is a production marker on this same canonical POINT-0/036; it does not create or replace the root point.
 - Active remediation queue: NEXT-051. No parallel NEXT queue is created.
 - Path A (initial executable model): local HAIF runtime, portable RAHM, package integrity, import/export, recovery and clean-host acceptance.
 - Path B (repository excavation): historical graph manifest, declared-ID versus reference distinction, source-specific parent resolution, missing local links, identity collisions and lineage conflicts.
