@@ -1953,3 +1953,16 @@ The source blob remained unchanged and Library version 7 was independently read 
 - Evidence: seven starter tests passed; audit and portable conformance both passed after manifest SHA reconciliation.
 - Remaining work: actual GPT-6 host import, independent host persistence, pointer adjudication and historic graph review.
 - NEXT-051 remains active; no duplicate next queue created.
+
+
+## POINT-0/023 — Accepted Excavation Findings and Dual-Path Execution (2026-10-26)
+
+- Root: [POINT-0/023](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-023-EXCAVATION-FINDINGS-AND-DUAL-PATH-CONTINUATION.md)
+- IN/OUT: [IN-053](../../0.0/anchors/PALANG-0.0-IN-20261026-053-EXCAVATION-FINDINGS-AND-DUAL-PATH-CONTINUATION.md) · [OUT-053](../../0.0/anchors/PALANG-0.0-OUT-20261026-053-EXCAVATION-FINDINGS-AND-DUAL-PATH-CONTINUATION.md)
+- Event: [EVT-0186](../BEHAVIOR-TRACE/EVT-0186-EXCAVATION-FINDINGS-AND-DUAL-PATH-CONTINUATION-2026-10-26.md)
+- Current execution checkpoint: [CURRENT-070](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-070-DUAL-PATH-EXCAVATION-EXECUTION.md)
+- Status: REGISTERED / OPEN / LIVING. Repository write receipts exist; independent read-back, exact-head evidence inspection, and current graph audit remain required.
+- Path A — initial model construction: inspect current exact-head CI, package/manifest digests, portable bundle and recovery acceptance. Independent-host import, second-host import, host persistence, automatic capture and background execution remain OPEN until directly tested.
+- Path B — existing architecture remediation: continue NEXT-051; rerun the current graph audit; individually adjudicate ID collisions and ambiguous parent/time edges; reconcile CURRENT-065/CURRENT-066 using provenance and consumer evidence.
+- Shared rule: A and B are coordinated, not merged. Do not abandon either path. Do not create NEXT-052 to disguise unfinished work. Do not close any gate without a test ID, exact tested revision, PASS result and evidence reference.
+- Behavior lesson: a report is not execution. After accepted findings, register the point, link the event, create the next executable checkpoint and proceed with the first safe evidence-backed action.
