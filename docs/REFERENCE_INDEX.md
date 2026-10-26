@@ -1594,7 +1594,7 @@ Both Path A (portable initial model and independent-host recovery) and Path B (e
 - Canonical UTC/Tehran repository time bindings for this chain: [TIME-BINDING-POINT-0-026](architecture/BEHAVIOR-TRACE/TIME-BINDING-POINT-0-026-2026-10-26.md).
 
 
-- Current continuation: [CURRENT-073](./0.0/anchors/PALANG-0.0-CURRENT-20261026-073-DUAL-PATH-HAIF-CONTINUATION.md); NEXT-051 remains active.
+- Current continuation: [CURRENT-085](./0.0/anchors/PALANG-0.0-CURRENT-20261026-085-0PLUS-MODEL-ACCELERATION.md); NEXT-051 remains the sole active queue.
 
 
 
