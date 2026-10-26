@@ -53,3 +53,11 @@ Required response envelope: host capabilities → package integrity → reconstr
 - The covers are reversible and do not close any gate. Keep CURRENT-065/CURRENT-066 ambiguity, EVT-0195 collision, historic graph findings, Issues #20/#21, external persistence, actual host import, and runtime/background claims OPEN until evidence-based acceptance.
 - Before declaring package readiness, fetch current main HEAD, regenerate the manifest using the workflow, validate exact bytes on the exact final SHA, and repeat if Evidence Gate commits a newer head. A passing parent SHA does not validate its child.
 - Do not create NEXT-052. Keep user-visible milestone outputs explicit; no silent work or claim of background execution between turns.
+
+
+## Latest root and reversible gap-cover contract — POINT-0/031 / CURRENT-078
+- Start from [POINT-0/031](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-031-REVERSIBLE-GRAPH-GAP-COVERS-AND-BEHAVIOR-HUNTER.md), then [CURRENT-078](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-078-REVERSIBLE-GRAPH-GAP-COVERS.md), [IN-066](../../0.0/anchors/PALANG-0.0-IN-20261026-066-REVERSIBLE-GRAPH-GAP-COVERS-AND-BEHAVIOR-HUNTER.md), [OUT-065](../../0.0/anchors/PALANG-0.0-OUT-20261026-065-REVERSIBLE-GRAPH-GAP-COVERS-AND-BEHAVIOR-HUNTER.md), [EVT-0200](../../architecture/BEHAVIOR-TRACE/EVT-0200-REVERSIBLE-GRAPH-GAP-COVERS-AND-BEHAVIOR-HUNTER-2026-10-26.md), and [GAP-COVER-REGISTER](../../architecture/BEHAVIOR-TRACE/GAP-COVER-REGISTER-2026-10-26.md).
+- “Cover / set aside / close for now” means COVERED / DEFERRED; the underlying issue stays OPEN / ACTIVE / LIVING and retrievable. Never convert a cover into CLOSED or VERIFIED.
+- Behavior Hunter is scan/CI-driven unless a real always-on scheduler/runtime receipt exists. Never claim silent/background work between turns.
+- Keep NEXT-051; do not create NEXT-052. Preserve CURRENT-065/CURRENT-066, EVT-0195, graph/source/parent gaps, Issues #20/#21, host-import and persistence gaps as OPEN.
+- Prioritize portable clean-host transfer, exact-SHA conformance, and a real destination receipt. Do not divert to Dropbox.
