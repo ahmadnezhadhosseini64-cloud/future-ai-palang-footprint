@@ -3,13 +3,13 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.9.2
-- Date: 2026-10-20
+- Version: 1.9.3
+- Date: 2026-10-26
 - Exact Time: 11:25 local project time, minute precision; exact seconds not captured.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: POINT-0/020 is the latest user-turn root; the live pointer parser failure is recorded and a regex/test correction is registered, but fresh exact-head CI remains pending; CURRENT-065/CURRENT-066 execution-pointer conflict remains OPEN; NEXT-051 remains OPEN/LIVING; no successor NEXT created to disguise unfinished work.
+- Status: POINT-0/027 is the latest user-turn root; CURRENT-074 is the current execution checkpoint; Path B partial-role correction is registered; exact-current-main CI/audit remains pending; CURRENT-065/CURRENT-066 scope/lineage remains OPEN and no winner is selected by inference; NEXT-051 remains the single active queue; no NEXT-052 placeholder.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
@@ -1992,3 +1992,12 @@ The current root is [POINT-0/027](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261
 - Required tests: partial coverage, multiple partial decisions completing one group, stale hash rejection, out-of-group path rejection, conflicting role rejection, wrong identifier/type and unreviewed-decision rejection.
 - Next validation: exact-head Living Architecture Audit and Portable RAHM Conformance. Keep semantic graph REVIEW_REQUIRED until case-level findings are individually reconciled.
 - NEXT-051 remains the single active remediation queue; Path A's independent-host import gate remains separate and open.
+
+
+## EVT-0194 — Live mirror sync status (2026-10-26)
+
+- Evidence: [EVT-0194](../BEHAVIOR-TRACE/EVT-0194-LIVE-MIRROR-SYNC-RECHECK-2026-10-26.md) and [time binding](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0194-LIVE-MIRROR-SYNC-2026-10-26.md).
+- Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` is unchanged. Library version 7 differs only by one extra trailing newline (10,479 vs 10,480 characters; edit distance 1); semantic match passes within tolerance. No redundant Library write was made.
+- This is evidence for the existing mirror follow-up, not a new queue. NEXT-051 remains the sole active remediation queue; no NEXT-052 is created.
+- Latest retrieved full Living Architecture Audit: run 40267412937, tested SHA `6d6623a681cc7012dc0705d141197de7f818fcf0`, result SUCCESS with scoped pointer consistency. The later main head is NOT VERIFIED by that run; exact-final-main audit and Portable RAHM Conformance remain required.
+- CURRENT-065/CURRENT-066 remains OPEN; preserve overlay and global-project scopes without selecting a winner by inference. Issues #20/#21 and BOART-FOLLOWUP-01 remain OPEN.
