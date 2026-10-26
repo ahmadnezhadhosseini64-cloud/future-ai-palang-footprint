@@ -228,3 +228,14 @@ NEXT-051 remains OPEN/LIVING until all remaining acceptance gates are satisfied;
 - Latest clean handoff is v0.3.0: [EVT-0190](../../architecture/BEHAVIOR-TRACE/EVT-0190-0PLUS-BOOTSTRAP-CLEAN-PACKAGE-2026-10-25.md), SHA-256 `297b3b329143c4b99f55373db0c4bb97896b0e484253622e63eeb32a4429f164`.
 - One-command bootstrap creates the `0/0+` canonical root, `0.0` child and six explicit OPEN capability gaps. 13/13 tests pass in CI and fresh extraction; export/import recovery passes.
 - Next executable action: independent GPT-6 host import/runtime check. Historical graph and CURRENT-065/CURRENT-066 adjudication remain open; do not create NEXT-052 while NEXT-051 remains active.
+
+
+
+## Continuation receipt — POINT-0/025 / CURRENT-072 (2026-10-26)
+
+- [POINT-0/025](./GPT6-RAHM-USER-POINT-0-20261026-025-EXCAVATION-FINDINGS-DUAL-PATH.md) preserves the accepted excavation findings; [CURRENT-072](./PALANG-0.0-CURRENT-20261026-072-DUAL-PATH-EXCAVATION.md) is the next execution checkpoint.
+- [IN-055](./PALANG-0.0-IN-20261026-055-EXCAVATION-FINDINGS-DUAL-PATH.md) / [OUT-055](./PALANG-0.0-OUT-20261026-055-EXCAVATION-FINDINGS-DUAL-PATH.md) and [EVT-0191](../../architecture/BEHAVIOR-TRACE/EVT-0191-EXCAVATION-FINDINGS-DUAL-PATH-2026-10-26.md) connect the user instruction, decision and behavior lesson.
+- Path A: v0.3.0 local clean-package evidence remains useful (13/13 tests, fresh extraction, bootstrap and local export/import). The last read-back receipt is not an independent GPT-host test; independent-host import/runtime remains NOT RUN / OPEN.
+- Path B: source-level cross-read confirms the overlay manifest, recovery verifier and portable master point to CURRENT-066 inside the bounded recovery overlay, while global append-only registries retain older CURRENT-023/039/064/065 claims and the global chain now has CURRENT-071/072. The pointer checker currently risks mixing these scopes. Treat as a scope/lineage defect to fix with regression fixtures, not permission to select a winner or rewrite history.
+- Latest previously inspected graph audit run [40213463189](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40213463189) succeeded at the workflow level on tested SHA 49485c593ebd6a3d115c05ddda8e8997b3c5138e, but its graph content status was not a fresh exact-head pass; a new exact-head graph audit is still needed.
+- NEXT-051 remains OPEN / LIVING. No NEXT-052. Host, persistence, automatic capture, background and external-storage gates remain OPEN / NOT PROVEN.
