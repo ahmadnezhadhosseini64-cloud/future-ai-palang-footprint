@@ -1635,3 +1635,10 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - The Library version-7 comparison passed within the approved tolerance; source remains unchanged, one extra trailing newline remains in the Library, and no redundant write was performed.
 - Earlier POINT-0/016, POINT-0/017 and POINT-0/018 are preserved historical roots. This entry does not create or replace a root. CURRENT-065/CURRENT-066 remains OPEN; do not infer a winner. NEXT-051 remains active; no NEXT-052 is created.
 - Exact-current-main Living Architecture Audit and Portable RAHM Conformance remain NOT VERIFIED; Issues #20/#21, external-host recovery, persistence and external destination gates remain OPEN.
+
+
+## POINT-0/028 — GPT-6 portable HAIF execution (2026-10-26)
+- Current user request anchored as [POINT-0/028](./anchors/PALANG-0.0-POINT-0-028-GPT6-PORTABLE-HAIF-EXECUTION-2026-10-26.md), event [EVT-0195](../architecture/BEHAVIOR-TRACE/EVT-0195-USER-REQUEST-POINT-028-PORTABLE-GPT6-HAIF-EXECUTION-2026-10-26.md).
+- Portable boot entry: [GPT-6 HAIF package](../portable/GPT6-HAIF-BOOT-PACKAGE/README.md) and [BOOTSTRAP](../portable/GPT6-HAIF-BOOT-PACKAGE/BOOTSTRAP.md).
+- Previous observed root/checkpoint: POINT-0/027 → CURRENT-074. Continue existing NEXT-051; do not create NEXT-052.
+- Status: repository artifacts registered; index/master/queue linking and exact-final-SHA audit remain pending until read-back and run evidence.
