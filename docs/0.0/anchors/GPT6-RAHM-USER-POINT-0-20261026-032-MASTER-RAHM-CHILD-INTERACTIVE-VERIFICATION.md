@@ -53,3 +53,5 @@
 
 ## ادامه
 از CURRENT-079 و صف موجود NEXT-051 ادامه بده. پس از نوشتن، همهٔ فایل‌ها و پیوندها را بازخوانی کن؛ سپس ممیزی و بستهٔ portable را روی SHA دقیق اجرا کن. اگر مسیر واقعی مجاز محیط تعاملی در دسترس شد، آزمون مستقل را انجام بده. NEXT-052 نساز.
+
+> **RECONCILIATION NOTICE — NON-CANONICAL DUPLICATE CANDIDATE.** A parallel write created the canonical POINT-0/032 chain at [Master–Rahm–Child bridge](./GPT6-RAHM-USER-POINT-0-20261026-032-MASTER-RAHM-CHILD-INITIAL-MODEL-BRIDGE.md), with its own IN-067 / OUT-066 / EVT-0201 / CURRENT-079. Preserve this file as an audit artifact; do not treat it as the active root. The duplicate production/event numbers are an OPEN reconciliation item, not silently merged or deleted. Continue from the canonical root and NEXT-051.
