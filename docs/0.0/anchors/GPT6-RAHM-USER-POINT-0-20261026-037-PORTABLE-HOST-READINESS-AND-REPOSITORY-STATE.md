@@ -38,3 +38,4 @@ The project is **package-ready for a controlled host trial**, not yet proven as 
 - Re-run exact-main-SHA audit/conformance after this point is integrated; read back logs/artifacts.
 - Continue NEXT-051: adjudicate the remaining open Stable-ID/Production-ID/Reference-ID/event-number groups and resolve the 2 unresolved parent edges only from evidence.
 - Run I1–I8 in the actual interactive destination using the linked package; attach raw receipts and mark each gate PASS/FAIL/NOT RUN.
+- Canonical repository time binding: [TIME-BINDING-POINT-0-037](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-POINT-0-037-POINT-0-037-2026-10-26.md).
