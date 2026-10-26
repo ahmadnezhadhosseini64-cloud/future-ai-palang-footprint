@@ -834,3 +834,9 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - [EVT-0195](./EVT-0195-USER-REQUEST-POINT-028-PORTABLE-GPT6-HAIF-EXECUTION-2026-10-26.md) records the request to create a new 0.0 anchor and portable clean-host boot instructions.
 - [POINT-0/028](../../0.0/anchors/PALANG-0.0-POINT-0-028-GPT6-PORTABLE-HAIF-EXECUTION-2026-10-26.md) and [GPT-6 package](../../portable/GPT6-HAIF-BOOT-PACKAGE/README.md).
 - This event does not imply external-host import, persistent memory, Dropbox or background execution has been verified.
+
+
+## Latest event — EVT-0195 — Portable GPT-6 execution and recovery (2026-10-26)
+- [Event](./EVT-0195-PORTABLE-GPT6-EXECUTION-AND-RECOVERY-2026-10-26.md); root [POINT-0/028](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-028-PORTABLE-GPT6-EXECUTION-AND-RECOVERY.md); checkpoint [CURRENT-075](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-075-PORTABLE-GPT6-EXECUTION-AND-RECOVERY.md).
+- User priority: expedite portable HAIF/RAHM model readiness for a new GPT-6 host. Existing Palang Mirror Sync automation `6ad9a407b9d481919c7145fbe4638dec` remains enabled; immediate run requested, completion not yet confirmed.
+- Exact-current-head conformance/audit and external host import are not claimed. NEXT-051 remains active; no NEXT-052 created.
