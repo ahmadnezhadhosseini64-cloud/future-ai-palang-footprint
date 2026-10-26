@@ -9,6 +9,7 @@
 - Canonical source: [LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md](../BEHAVIOR-OBSERVATORY/LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md)
 - Library mirror: `/Future AI/Palang Footprint/Master Reference Vault/Reference Documents/LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md`
 - Previous mirror event preserved: [EVT-0177](./EVT-0177-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md) and [its time binding](./TIME-BINDING-EVT-0177-LIVE-MIRROR-SYNC-2026-10-25.md).
+- This event's time binding: [TIME-BINDING-EVT-0194](./TIME-BINDING-EVT-0194-LIVE-MIRROR-SYNC-2026-10-26.md).
 - Current repository root discovered from main: [POINT-0/027](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-027-PATH-B-GAP-RECONCILIATION.md).
 - Current execution checkpoint: [CURRENT-074](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-074-PATH-B-GAP-RECONCILIATION.md).
 - Existing active queue: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). No NEXT-052 created.
@@ -79,9 +80,10 @@ The previous automation prompt's observed root POINT-0/018 is historical, not th
 - Artifact ZIP SHA-256: `01f0da90efe87b4f59b8580f7da5066a6cfde3deb332279798597fee4fcb16ff`.
 - This receipt does NOT validate today's main head.
 
-### Main head observed before this event's registration
-- Exact main comparison: commit `218c6c6fc31bfc285864ed35d5aa6f6d93c4b0e4` compared with `main` returned `identical` (ahead_by 0, behind_by 0).
+### Main head observed at the pre-write inspection checkpoint
+- Exact main comparison at that inspection checkpoint: commit `218c6c6fc31bfc285864ed35d5aa6f6d93c4b0e4` compared with `main` returned `identical` (ahead_by 0, behind_by 0).
 - Commit timestamp from repository commit listing: UTC `2026-10-26T06:03:06Z`; Tehran derived: `2026-10-26T09:33:06+03:30`.
+- Concurrent automation commits advanced `main` during this run. This SHA is the independently verified pre-write inspection checkpoint, not a claim about the final head after event registration; the final head is re-discovered separately.
 - A full Living Architecture Audit and Portable RAHM Conformance receipt on this exact main SHA was not independently retrieved. Exact-final-main audit remains NOT VERIFIED.
 - Event/test execution time: UNKNOWN unless independently exposed; repository commit time, workflow log time, Library metadata time, and operation time are separate clocks.
 
