@@ -2,9 +2,9 @@
 
 - Stable ID: `G6IP-RAHM-NEXT-051-20261024`
 - Production ID: `G6IP-NEXT-051`
-- Version: 1.0.10
+- Version: 1.0.11
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE.
-- Historical parent: [CURRENT-057](./PALANG-0.0-CURRENT-20261024-057-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md) (historical); latest root/checkpoint observed: POINT-0/027 → CURRENT-074. NEXT-051 remains the active existing remediation queue.
+- Historical parent: [CURRENT-057](./PALANG-0.0-CURRENT-20261024-057-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md) (historical); latest root/checkpoint observed: POINT-0/028 → CURRENT-075. NEXT-051 remains the active existing remediation queue.
 - Preserve existing gates: [NEXT-050](./PALANG-0.0-NEXT-20261024-050-FULL-RECOVERY-AND-REAL-HOST-IMPORT.md), [NEXT-049](./PALANG-0.0-NEXT-20261024-049-REAL-HOST-TRANSFER-AND-GRAPH-AUDIT.md)
 
 ## Ordered actions
@@ -291,3 +291,10 @@ NEXT-051 remains OPEN/LIVING until all remaining acceptance gates are satisfied;
 - Latest root/checkpoint discovered during this run: POINT-0/027 / CURRENT-074. NEXT-051 remains the only active remediation queue; this mirror event does not create a successor NEXT.
 - Latest retrieved full Living Architecture Audit 40267412937 passed on SHA `6d6623a681cc7012dc0705d141197de7f818fcf0`, with scoped pointer consistency only. Exact-current-main audit and Portable RAHM Conformance remain NOT VERIFIED.
 - Keep CURRENT-065/CURRENT-066 OPEN; preserve overlay/global scopes, historical points and collision evidence. Issues #20/#21 and BOART-FOLLOWUP-01 remain OPEN.
+
+
+## Added case — EVT-0195 event-number collision and EVT-0196 mirror recheck (2026-10-26)
+- [EVT-0196](../../architecture/BEHAVIOR-TRACE/EVT-0196-LIVE-MIRROR-SYNC-RECHECK-2026-10-26.md) records the source/Library comparison and current mirror result.
+- Two separate files currently use event number EVT-0195: `EVT-0195-PORTABLE-GPT6-EXECUTION-AND-RECOVERY-2026-10-26.md` and `EVT-0195-USER-REQUEST-POINT-028-PORTABLE-GPT6-HAIF-EXECUTION-2026-10-26.md`. Preserve both and leave the collision OPEN until source-backed adjudication; do not renumber or merge by inference.
+- Latest root/checkpoint: POINT-0/028 / CURRENT-075. This is an update to the existing NEXT-051, not a new NEXT queue.
+- Full Living Architecture Audit and Portable RAHM Conformance must match the exact final main SHA. Issues #20/#21 remain OPEN; external clean-host import remains NOT RUN.
