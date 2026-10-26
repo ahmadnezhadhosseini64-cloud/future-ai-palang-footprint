@@ -179,10 +179,12 @@
 
 ## اتصال معماری MASTER / RAHM / CHILD — POINT-0/032
 
-- نقطهٔ ریشه: [POINT-0/032](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-032-MASTER-RAHM-CHILD-INTERACTIVE-VERIFICATION.md)
-- ورودی/خروجی: [IN-067](../../0.0/anchors/PALANG-0.0-IN-20261026-067-MASTER-RAHM-CHILD-INTERACTIVE-VERIFICATION.md) → [OUT-066](../../0.0/anchors/PALANG-0.0-OUT-20261026-066-MASTER-RAHM-CHILD-INTERACTIVE-VERIFICATION.md)
-- رویداد: [EVT-0201](../BEHAVIOR-TRACE/EVT-0201-MASTER-RAHM-CHILD-INTERACTIVE-VERIFICATION-2026-10-26.md)
-- وضعیت جاری: [CURRENT-079](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-079-MASTER-RAHM-CHILD-INTERACTIVE-VERIFICATION.md)
+- نقطهٔ ریشه: [POINT-0/032](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-032-MASTER-RAHM-CHILD-INITIAL-MODEL-BRIDGE.md)
+- ورودی/خروجی: [IN-067](../../0.0/anchors/PALANG-0.0-IN-20261026-067-MASTER-RAHM-CHILD-BRIDGE.md) → [OUT-066](../../0.0/anchors/PALANG-0.0-OUT-20261026-066-MASTER-RAHM-CHILD-BRIDGE.md)
+- رویداد: [EVT-0201](../BEHAVIOR-TRACE/EVT-0201-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION-2026-10-26.md)
+- وضعیت جاری: [CURRENT-079](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-079-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION.md)
 - نقش‌ها: پروژهٔ اصلی = MASTER؛ این بستهٔ مدل اولیه/محیط رشد = RAHM؛ نسخهٔ آزموده و دارای شواهد = CHILD candidate تا تصمیم مستر.
 - معیار آزمون مستقل و محدودیت محیط تعاملی در سند POINT-0/032 آمده است. CI یا ثبت مخزن، واردسازی واقعی در پروژهٔ تعاملی را ثابت نمی‌کند.
 - صف فعال همچنان NEXT-051 است؛ NEXT-052 ساخته نشود. شکاف‌های تاریخی و میزبان مستقل OPEN می‌مانند.
+
+> Reconciliation: the canonical POINT-0/032 chain is the Master–Rahm–Child bridge chain. Do not use alternate same-number artifacts as active pointers; the duplicate records are retained for audit and require explicit source-lineage reconciliation.
