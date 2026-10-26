@@ -1598,3 +1598,5 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - Path A (initial model construction) and Path B (NEXT-051 graph remediation) must both advance; they remain distinct and coordinated.
 - NEXT-051 remains the active remediation queue; no NEXT-052 is created just to renumber unfinished work.
 - Status: REGISTERED / OPEN / LIVING; read-back and exact-head acceptance remain required.
+
+- Current continuation: [CURRENT-072](./anchors/PALANG-0.0-CURRENT-20261026-072-DUAL-PATH-EXCAVATION.md); NEXT-051 remains the active remediation queue.
