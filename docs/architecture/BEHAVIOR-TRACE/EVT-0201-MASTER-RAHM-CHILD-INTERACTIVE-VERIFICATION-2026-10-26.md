@@ -21,3 +21,5 @@
 مخزن `ahmadnezhadhosseini64-cloud/future-ai-palang-footprint`، شاخهٔ `main`. پیش از زنجیرهٔ جدید، HEAD مشاهده‌شده `2e5cf4bf4a881fed2509acf3c3f15ce685c1cb40` با زمان `2026-10-26T08:15:44Z` بود. فایل‌های مدل اولیه، صف آن، RAHM_BOOT، manifest و سند مادر قابل‌خواندن بودند. ممیزی دقیق SHA نهایی، واردسازی مستقل، بازیابی پس از restart و مقصدهای بیرونی تا رسید مستقیم NOT VERIFIED هستند.
 
 هر واگرایی در شناسه‌ها، یال‌های والد، تاریخچه، hash شواهد، شکاف‌های باز یا اقدام بعدی باید شکاف مربوط را باز نگه دارد. ادغام گروهی یا انتخاب والد بر اساس حدس مجاز نیست.
+
+> **CONFLICTED EVENT-NUMBER COLLISION / NON-CANONICAL.** A competing EVT-0201 exists at [EVT-0201 Master–Rahm–Child bridge](./EVT-0201-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION-2026-10-26.md), linked by the canonical POINT-0/032 chain. Preserve both event files until lineage and inbound/outbound references are audited. Do not infer equivalence or delete either file.
