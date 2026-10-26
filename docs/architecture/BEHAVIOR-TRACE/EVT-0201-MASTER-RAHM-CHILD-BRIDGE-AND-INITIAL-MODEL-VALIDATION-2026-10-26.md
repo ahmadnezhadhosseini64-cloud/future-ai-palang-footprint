@@ -30,3 +30,6 @@ Use CURRENT-079 and the cross-validation contract to run the next source-backed,
 
 
 - Canonical commit time evidence: [TIME-BINDING-POINT-0-032 / EVT-0201](./TIME-BINDING-POINT-0-032-EVT-0201-2026-10-26.md).
+
+## User-supplied prior-output baseline linked
+The supplied prior output is retained as a role-definition source: MASTER owns durable policy/history/behavior/provenance and final acceptance; RAHM is the existing initial-model package plus intended interactive test environment; CHILD is a versioned candidate, never automatically accepted. Extend the existing package, do not create a parallel folder. Repository CI and independent interactive-host receipts remain separate evidence classes. The role baseline is now linked in the cross-validation contract, initial-model mother and portable living master; no external import or child promotion is claimed.
