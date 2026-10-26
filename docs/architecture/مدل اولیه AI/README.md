@@ -175,3 +175,14 @@
 - قرارداد آزمون و ارتقا: [Master–Rahm–Child](../MASTER-RAHM-CHILD/MASTER-RAHM-CHILD-CROSS-VALIDATION-CONTRACT-2026-10-26.md).
 - این پوشه نقش RAHM را دارد و زیرمجموعهٔ Master اصلی است؛ مستقل یا مرجع موازی نیست. خروجی آزمون فقط CHILD CANDIDATE است تا Master صریحاً آن را بپذیرد.
 - آزمون واقعی در محیط تعاملی، ورود میزبان مستقل و ماندگاری بیرونی هنوز رسید اجرایی ندارند و NOT RUN / OPEN باقی می‌مانند.
+
+
+## اتصال معماری MASTER / RAHM / CHILD — POINT-0/032
+
+- نقطهٔ ریشه: [POINT-0/032](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-032-MASTER-RAHM-CHILD-INTERACTIVE-VERIFICATION.md)
+- ورودی/خروجی: [IN-067](../../0.0/anchors/PALANG-0.0-IN-20261026-067-MASTER-RAHM-CHILD-INTERACTIVE-VERIFICATION.md) → [OUT-066](../../0.0/anchors/PALANG-0.0-OUT-20261026-066-MASTER-RAHM-CHILD-INTERACTIVE-VERIFICATION.md)
+- رویداد: [EVT-0201](../BEHAVIOR-TRACE/EVT-0201-MASTER-RAHM-CHILD-INTERACTIVE-VERIFICATION-2026-10-26.md)
+- وضعیت جاری: [CURRENT-079](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-079-MASTER-RAHM-CHILD-INTERACTIVE-VERIFICATION.md)
+- نقش‌ها: پروژهٔ اصلی = MASTER؛ این بستهٔ مدل اولیه/محیط رشد = RAHM؛ نسخهٔ آزموده و دارای شواهد = CHILD candidate تا تصمیم مستر.
+- معیار آزمون مستقل و محدودیت محیط تعاملی در سند POINT-0/032 آمده است. CI یا ثبت مخزن، واردسازی واقعی در پروژهٔ تعاملی را ثابت نمی‌کند.
+- صف فعال همچنان NEXT-051 است؛ NEXT-052 ساخته نشود. شکاف‌های تاریخی و میزبان مستقل OPEN می‌مانند.
