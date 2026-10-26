@@ -16,3 +16,4 @@ The passing workflow SHA was `62f8007deefbfbdb0fbe4156074f069f070fc7f2`, while t
 
 ## Next
 Run exact-main-SHA checks, then perform I1–I8 in the intended host and capture destination receipts. Continue graph cleanup through NEXT-051; 2 parent edges remain unresolved, along with open identifier collision groups.
+- Canonical repository time binding: [TIME-BINDING-OUT-073](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-OUT-073-POINT-0-037-2026-10-26.md).
