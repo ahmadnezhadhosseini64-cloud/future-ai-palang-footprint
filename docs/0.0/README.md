@@ -1626,3 +1626,12 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - Active remediation queue remains [NEXT-051](./anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md); do not create a competing queue.
 - Path B implementation focus: source-hash-verified partial role decisions must annotate only covered paths and must not close a group until all group members are covered without role conflict.
 - Last audit snapshot remains structural PASS / SCOPED_CONSISTENT / 0 missing local links, but semantic graph REVIEW_REQUIRED. Historical counts are in POINT-0/027 and must be refreshed on the next exact-head audit.
+
+
+## Current-root mirror-sync continuation — EVT-0194 (2026-10-26)
+
+- Current root remains [POINT-0/027](./anchors/GPT6-RAHM-USER-POINT-0-20261026-027-PATH-B-GAP-RECONCILIATION.md); current execution checkpoint [CURRENT-074](./anchors/PALANG-0.0-CURRENT-20261026-074-PATH-B-GAP-RECONCILIATION.md); active existing queue [NEXT-051](./anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Related mirror event [EVT-0194](../architecture/BEHAVIOR-TRACE/EVT-0194-LIVE-MIRROR-SYNC-RECHECK-2026-10-26.md) and [time binding](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0194-LIVE-MIRROR-SYNC-2026-10-26.md).
+- The Library version-7 comparison passed within the approved tolerance; source remains unchanged, one extra trailing newline remains in the Library, and no redundant write was performed.
+- Earlier POINT-0/016, POINT-0/017 and POINT-0/018 are preserved historical roots. This entry does not create or replace a root. CURRENT-065/CURRENT-066 remains OPEN; do not infer a winner. NEXT-051 remains active; no NEXT-052 is created.
+- Exact-current-main Living Architecture Audit and Portable RAHM Conformance remain NOT VERIFIED; Issues #20/#21, external-host recovery, persistence and external destination gates remain OPEN.
