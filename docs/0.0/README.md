@@ -1651,3 +1651,11 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - Current checkpoint: [CURRENT-075](./anchors/PALANG-0.0-CURRENT-20261026-075-PORTABLE-GPT6-EXECUTION-AND-RECOVERY.md)
 - Previous root POINT-0/027 and earlier roots are preserved. Existing NEXT-051 remains active; no NEXT-052 created.
 - Priority: exact-current-head package conformance + architecture audit, artifact verification, then real clean GPT-6 host import. External host execution remains NOT RUN until evidenced.
+
+
+## POINT-0+ — highlighted current milestone (2026-10-26)
+- Highlight: [POINT-0+](./anchors/GPT6-RAHM-USER-POINT-0-PLUS-20261026-028-PORTABLE-GPT6-MILESTONE.md) — emphasis overlay on POINT-0/028; no separate or replacement root.
+- Canonical root: [POINT-0/028](./anchors/GPT6-RAHM-USER-POINT-0-20261026-028-PORTABLE-GPT6-EXECUTION-AND-RECOVERY.md).
+- Current checkpoint: [CURRENT-076](./anchors/PALANG-0.0-CURRENT-20261026-076-POINT-0-PLUS-ARCHITECTURE-CLOSURE.md).
+- Event: [EVT-0197](../architecture/BEHAVIOR-TRACE/EVT-0197-POINT-0-PLUS-HIGHLIGHT-AND-ARCHITECTURE-CLOSURE-2026-10-26.md). Existing active queue: NEXT-051.
+- All 0 rules apply unchanged. Preserve prior points and collision evidence. Do not create NEXT-052. External host import and exact-current-head conformance remain open until proven.
