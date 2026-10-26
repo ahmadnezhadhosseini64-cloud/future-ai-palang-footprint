@@ -39,5 +39,14 @@
 
 - Conformance failure and correction: Portable RAHM Conformance run 40347913506 failed because the changed file scripts/audit_historical_0_0_graph.py no longer matched the pinned EXPORT_MANIFEST.json digest/blob. The manifest entry has now been refreshed to the exact script SHA256 and Git blob SHA. This is a corrected integrity mismatch, not a code-test failure; exact-head conformance must pass before it is marked resolved.
 
+## Latest exact-head audit and portable conformance receipt
+- Tested SHA: bd6da9f592850ad2b9274de54ebfa247f765ba59.
+- Living Architecture Audit [40348139100](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40348139100): SUCCESS. Artifact 12663235201; digest sha256:8835a22653c1a78d03af1283bc7999d27549f70ff932e000a1c0aa72c8a9900b.
+- Portable RAHM Conformance [40348138992](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40348138992): SUCCESS on the same SHA. Evidence artifact 12661674025; digest sha256:6f31e2bd7ef2a2e79e9a17522caf951b010aed700068d5ffdccad3407e16b57a. Package artifact 12661367970; digest sha256:72dabfa9a4a7a5eab004ac2c223c80403b4dcc3813a9a41903f80418763e1eac.
+- Verified outputs: 0 decode errors; 0 missing local Markdown links; 23 Stable-ID collision groups; 68 Production-ID groups; 5 Reference-ID groups; 41 event-number groups; 11 exact-content duplicate groups. Parent edges: 79 declared, 2 unresolved, 0 ambiguous. Two unresolved edges both point to the missing standalone HAIF-CORE-MASTER-CHILD-RAHM-2026-09-15-001 artifact; do not fabricate or substitute it.
+- Unit checks: current-pointer suite 8 passed; semantic-role suite 11 passed; parent resolver 5 passed; metadata-header 4 passed; starter engine 13 passed; host-adapter simulated tests passed; py_compile passed. Time normalization audit: 4,798 files scanned, 2,869 timestamp strings normalized and paired, 0 parse/ambiguity errors, 0 Tehran offset/value failures, 0 UTC-label failures.
+- Portable package verification: 50 exact-byte manifest files matched; 127 live-reference files scanned; EXACT_BYTE_SHA256_SCAN=PASS; LIVE_REFERENCE_SHA256_SCAN=PASS; PORTABLE_PACKAGE_BUILD=PASS; package contains 178 files, 634,386 bytes, SHA256 acf1e2c37a3eed4854a889e8667067b111d3b0e1994f732569a692a56952c254.
+- Scope limitation: these are repository CI and package conformance results, not proof of an independent interactive GPT host import, restart, durable persistence or live-chat producer. Path A external-host acceptance remains NOT RUN.
+
 ## Acceptance gate
 CURRENT-084 stays OPEN until the exact-head audit and portable conformance have both completed, their logs/artifacts have been read back, and graph changes are reconciled in the master/index/queue. External-host acceptance remains a separate gate.
