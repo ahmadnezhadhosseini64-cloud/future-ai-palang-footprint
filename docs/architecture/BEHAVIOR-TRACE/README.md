@@ -849,3 +849,9 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Two separate files claim EVT-0195; preserve both and keep the collision unresolved until source-backed adjudication. No NEXT-052.
 - Latest retrieved Living Architecture Audit run 40281757520 passed on `8e0f28b05eab22e91467cfc0c9585b93faad37ac`; Portable RAHM Conformance run 40281711445 passed on `c70f9068cb52c9deea329e88b51af58ff9ce7007`. Neither is proof for a later main head.
 - Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent clean-host recovery NOT RUN.
+
+
+## EVT-0197 — POINT-0+ highlighted milestone
+- [EVT-0197](./EVT-0197-POINT-0-PLUS-HIGHLIGHT-AND-ARCHITECTURE-CLOSURE-2026-10-26.md) and [time binding](./TIME-BINDING-EVT-0197-POINT-0-PLUS-2026-10-26.md) connect [POINT-0+](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-PLUS-20261026-028-PORTABLE-GPT6-MILESTONE.md) to canonical POINT-0/028 and CURRENT-076.
+- 0+ is emphasis only; all 0 rules remain identical. NEXT-051 remains active; no NEXT-052.
+- CI batch passed on SHA 282cb1acd859c188f4cbb2443a960a013380d385; follow-up commits mean latest main must be retested. Preserve the unresolved EVT-0195 collision.
