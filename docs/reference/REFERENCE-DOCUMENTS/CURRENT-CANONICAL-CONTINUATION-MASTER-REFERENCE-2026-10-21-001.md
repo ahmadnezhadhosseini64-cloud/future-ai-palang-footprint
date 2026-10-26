@@ -838,3 +838,11 @@ The canonical live-destination audit source and its exact Library version-7 snap
 - Two files use EVT-0195. This is an unresolved event-number collision; preserve both and do not choose a canonical file by inference. Continue case-level review under NEXT-051; do not create NEXT-052.
 - Latest observed Living Architecture Audit passed on tested SHA `8e0f28b05eab22e91467cfc0c9585b93faad37ac`; Portable RAHM Conformance passed on `c70f9068cb52c9deea329e88b51af58ff9ce7007`. These do not certify a later main head. Exact-current-main verification remains pending.
 - Issues #20/#21 remain OPEN. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent clean-host recovery NOT RUN.
+
+
+## Latest user-designated root — POINT-0/030 (2026-10-26)
+- Root: [POINT-0/030](../../0.0/anchors/PALANG-0.0-POINT-0-030-CONTINUE-FROM-029-2026-10-26.md); event: [EVT-0198](../../architecture/BEHAVIOR-TRACE/EVT-0198-USER-REQUEST-POINT-0-030-AND-CONTINUE-2026-10-26.md).
+- Parent: POINT-0/029. Execution checkpoint CURRENT-075 is only last observed and must be rediscovered. Active queue: NEXT-051 only.
+- Main was observed at bbbc1cf7243be413097b18303008702ce7b0e89e before root registration; newer main must be discovered and audited on its exact SHA.
+- Immediate steps: finish canonical links with sequential write/read-back; reconcile RAHM_BOOT, portable master and EXPORT_MANIFEST; run exact-SHA conformance and full audit; verify export artifact digests; perform actual clean-host recovery only with independent host evidence.
+- Keep CURRENT-065/CURRENT-066, Issues #20/#21, Buffer/Persistent Memory, Dropbox and independent-host recovery open/unverified until direct evidence changes status.
