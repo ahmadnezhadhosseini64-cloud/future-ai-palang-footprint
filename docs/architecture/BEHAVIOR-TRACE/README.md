@@ -899,3 +899,11 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 ## Latest continuation — POINT-0/035
 - [EVT-0205](./EVT-0205-POINT-0-035-IDENTIFIER-AND-PARENT-GRAPH-REPAIR-2026-10-26.md) — separates identifier declarations from body references and records source-specific parent-edge resolution rules.
 - Root: [POINT-0/035](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-035-IDENTIFIER-AND-PARENT-GRAPH-REPAIR.md); current: [CURRENT-083](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-083-IDENTIFIER-AND-PARENT-GRAPH-REPAIR.md); active queue: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+
+
+## Latest 0+ production-marker event — EVT-0207
+
+- [POINT-0/036](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-036-DEEP-EXCAVATION-INITIAL-MODEL-COMPLETION.md) remains the canonical root; 0+ is a production marker, not a second root.
+- Chain: [IN-073](../../0.0/anchors/PALANG-0.0-IN-20261026-073-0PLUS-MODEL-ACCELERATION.md) → [OUT-072](../../0.0/anchors/PALANG-0.0-OUT-20261026-072-0PLUS-MODEL-ACCELERATION.md) → [EVT-0207](./EVT-0207-POINT-0-036-0PLUS-MODEL-ACCELERATION-2026-10-26.md) → [CURRENT-085](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-085-0PLUS-MODEL-ACCELERATION.md).
+- Time bindings: [POINT-0/036 0+](./TIME-BINDING-POINT-0-036-0PLUS-2026-10-26.md), [IN-073](./TIME-BINDING-IN-073-POINT-0-036-2026-10-26.md), [OUT-072](./TIME-BINDING-OUT-072-POINT-0-036-2026-10-26.md), [EVT-0207](./TIME-BINDING-EVT-0207-POINT-0-036-2026-10-26.md), [CURRENT-085](./TIME-BINDING-CURRENT-085-POINT-0-036-2026-10-26.md).
+- Evidence: audit run [40352514664](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40352514664) and portable conformance [40352514736](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40352514736), both successful on SHA `94dbe8fd68234fb5ebc28a15471a87352fc5c67b`.
