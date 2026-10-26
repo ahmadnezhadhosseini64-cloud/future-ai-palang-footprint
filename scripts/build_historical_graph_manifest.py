@@ -333,7 +333,7 @@ review_queue = {
 (OUT / "historical-0.0-canonical-graph-manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 summary = ["# Historical graph manifest summary", f"- Audit UTC: {run_utc}", f"- Commit: {commit}"]
 summary += [f"- {k}: {v}" for k, v in manifest["counts"].items()]
-summary += ["", "## Semantic boundary", "- Structural extraction remains distinct from semantic adjudication.", "- Source-hash-verified role decisions annotate covered paths; groups are fully reviewed only when every member is covered without role conflict.", "- Partial role review is reported separately and remains open; raw collision counts remain visible.", "- Proposed aliases are not automatically accepted; preserve historical files and never auto-delete duplicates.", "- Review parent ambiguities, missing links and identity collisions before closure."]
+summary += ["", "## Semantic boundary", "- Structural extraction remains distinct from semantic adjudication.", "- Source-hash-verified role decisions annotate only covered paths; full closure requires all members covered without role conflict and no pending lineage/rekey class.", "- PARTIALLY-ROLE-ADJUDICATED, ROLE-ADJUDICATED-OPEN-LINEAGE and ROLE-ADJUDICATED-REKEY-REQUIRED remain open and are reported separately.", "- Raw collision counts remain visible even after role classification.", "- Proposed aliases are not automatically accepted; preserve historical files and never auto-delete duplicates.", "- Review parent blockers, missing links and identity collisions before closure."]
 (OUT / "historical-0.0-graph-manifest-summary.txt").write_text("\n".join(summary) + "\n", encoding="utf-8")
 print("\n".join(summary))
 
