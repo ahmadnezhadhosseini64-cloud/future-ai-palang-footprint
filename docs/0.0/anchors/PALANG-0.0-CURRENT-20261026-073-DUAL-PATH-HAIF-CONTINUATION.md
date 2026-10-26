@@ -43,3 +43,25 @@ Main SHA `ab9f96c52473e29f71cd4a00558986a763b0c6fc`:
 
 ## Current truth
 The new root is being registered. Independent-host import is NOT RUN. Semantic graph reconciliation is OPEN / REVIEW_REQUIRED. Repository-only work cannot prove external persistence. Do not claim completion until the exact-head receipts and read-back are available.
+
+
+## Exact-head execution receipt — 2026-10-26
+
+Tested commit SHA: `5d423ee3d51aa6e77ded02d8fcab6880a279ee20`.
+
+### Path B — Living Architecture Audit
+- Workflow: [Living Architecture Audit 40274870673](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40274870673) — SUCCESS on the exact tested SHA.
+- Structural repository checks: PASS; local link count missing: 0; pointer discovery: `SCOPED_CONSISTENT`; no winner selected across overlay/global scopes.
+- Historical graph content audit: `REVIEW_REQUIRED`, not closed.
+- Audit artifact: `living-architecture-audit-40274870673`, artifact ID `12629971292`; uploaded artifact ZIP digest `sha256:eff68572b41d06e4409f16f81a5f7a9b74cdf672d06ba5ef29aea387f7117216`.
+- Latest inventory from this run: 63 Stable-ID collision groups (62 unreviewed), 89 Production-ID collision groups, 7 Reference-ID collision groups, 38 event-number collision groups, 13 ambiguous parent edges, 0 missing local links. Timestamp audit: 2,749 timestamp strings; 1 ambiguous/parse error. Preserve these as open review findings.
+
+### Path A — Portable RAHM Conformance
+- Workflow: [Portable RAHM Conformance 40274870612](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40274870612) — SUCCESS on the exact same SHA.
+- Exact-byte SHA-256 scan: PASS; live-reference SHA-256 scan: PASS; portable package build: PASS.
+- Package: 119 files, 77 live references; package SHA-256 `b38d38c1ec388c6a6c2f49481a443fd76ce82254e9141edbedfa19df84f80e99`.
+- Package artifact ID `12630180630`; conformance evidence artifact ID `12630165696`.
+- The CI also passed local continuity-runtime checks, valid/invalid interaction-pair fixtures, and recovery equivalence from both IN and OUT. This is local/repository conformance, not an independent external AI-host import.
+
+### Boundary and next action
+Both workflows validate the exact SHA above, which predates this receipt append. The next commit must receive its own fresh workflow results. Independent host import remains NOT RUN; semantic graph review remains OPEN / REVIEW_REQUIRED. Continue Path A and Path B in parallel under NEXT-051, with no bulk merge or speculative closure.
