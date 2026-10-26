@@ -878,3 +878,11 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 
 ## Time binding — POINT-0/031 / EVT-0200
 - [TIME-BINDING-EVT-0200](./TIME-BINDING-EVT-0200-POINT-0-031-2026-10-26.md) records actual repository commit timestamps in UTC and their Asia/Tehran equivalents for POINT-0/031, IN-066, OUT-065, CURRENT-078, the gap register and EVT-0200. Git registration time is distinct from event/workflow time; time binding does not close any gap.
+
+
+## EVT-0201 — Master–Rahm–Child bridge and initial-model validation
+- Event: [EVT-0201](./EVT-0201-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION-2026-10-26.md)
+- Root: [POINT-0/032](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-032-MASTER-RAHM-CHILD-INITIAL-MODEL-BRIDGE.md)
+- Current: [CURRENT-079](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-079-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION.md)
+- Contract: [Master–Rahm–Child cross-validation](../MASTER-RAHM-CHILD/MASTER-RAHM-CHILD-CROSS-VALIDATION-CONTRACT-2026-10-26.md)
+- Status: repository event registered; external interactive-project test receipt not yet available.
