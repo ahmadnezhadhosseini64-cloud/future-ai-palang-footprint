@@ -184,14 +184,16 @@ source_parent_overrides = {
 }
 unresolved_parent_evidence = {
     "HAIF-CORE-MASTER-CHILD-RAHM-2026-09-15-001": {
-        "status": "MISSING_STANDALONE_PARENT_ARTIFACT",
+        "status": "MISSING_STANDALONE_PARENT_ARTIFACT / OPEN_GAP_COVER",
+        "recovery_bridge_path": "docs/reference/REFERENCE-DOCUMENTS/HAIF-CORE-MASTER-CHILD-RAHM-RECOVERY-BRIDGE-2026-10-26-001.md",
+        "recovery_bridge_status": "REVERSIBLE_GAP_COVER_NOT_ORIGINAL_PARENT",
         "evidence_paths": [
             "docs/reference/REFERENCE-DOCUMENTS/REF-ARCHAEOLOGY-EXCAVATION-2026-09-29-001.md",
             "docs/reference/REFERENCE-DOCUMENTS/REF-ARCHAEOLOGY-REVIVAL-MIRROR-2026-09-29-001.md",
             "docs/reference/REFERENCE-DOCUMENTS/REF-DOCUMENTS-ACTIVATION-CLOSURE-2026-09-29-001.md",
             "docs/reference/REFERENCE-DOCUMENTS/REF-WORKBENCH-ARCHITECTURE-2026-09-29-001.md"
         ],
-        "next_action": "Recover the exact standalone parent from source history or user-provided evidence. Do not fabricate a replacement or silently substitute a different master."
+        "next_action": "Use recovery_bridge_path as a noncanonical continuity route; recover the exact standalone parent from source history or user-provided evidence. Keep the edge UNRESOLVED and do not fabricate or substitute a master."
     }
 }
 path_stems = {Path(n["path"]).stem: n["path"] for n in nodes}
