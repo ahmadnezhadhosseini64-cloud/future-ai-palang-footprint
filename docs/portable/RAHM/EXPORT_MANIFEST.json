@@ -1,7 +1,7 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.8.16",
-  "manifest_status": "POINT-0/034 interactive RAHM hand-off and canonical time binding included; regenerate exact-byte SHA-256/Git blob SHA-1 evidence on final merged SHA; actual interactive-host tests and historic gaps remain OPEN/NOT RUN",
+  "version": "1.8.17",
+  "manifest_status": "POINT-0/034 and canonical time binding merged to main; read-back verified. Living Architecture Audit passed on PR heads, but exact final-main-SHA conformance and exact-byte digest regeneration remain required; actual interactive-host tests and historic gaps remain OPEN/NOT RUN",
   "created_from_checkpoint": "HAIF-CURRENT-082-INTERACTIVE-RAHM-EXECUTION-20261026 + HAIF-TIME-BINDING-POINT-0-034-EVT-0204-20261026",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [
@@ -307,7 +307,7 @@
   "dependencies": [],
   "tests": {
     "specification_written": true,
-    "execution_status": "POINT-0/034 registered on working branch; run exact-final-SHA conformance and regenerate artifact digests after merge. Actual interactive-host I1-I8 remain NOT RUN until destination receipts are returned.",
+    "execution_status": "POINT-0/034 is merged to main via PR #39 and time-binding follow-up via PR #40. Living Architecture Audit passed on PR heads 4895e290ad17b278f1968b06b192147de1218822 and 621c6ceb54ffa7afc48528eddbd824bf36c26ce7; exact final-main-SHA conformance and digest regeneration still required after all edits.",
     "persistent_memory": "NOT_VERIFIED",
     "idle_background_execution": "NOT VERIFIED",
     "cross_host": "NOT RUN",

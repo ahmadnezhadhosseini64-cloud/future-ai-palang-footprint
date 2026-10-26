@@ -25,3 +25,12 @@ POINT-0/034, IN-070, OUT-069 and EVT-0204 are registered in this proposed contin
 - Continue NEXT-051; do not create NEXT-052.
 
 - Canonical repository time binding: [TIME-BINDING-POINT-0-034](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-POINT-0-034-EVT-0204-2026-10-26.md).
+
+
+## Integration/read-back reconciliation — 2026-10-26
+
+- Main integration: **MERGED** via [PR #39](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/pull/39), merge SHA `6cb22b59a6d209b1768d5d71ff9f32c56fae91ae`; time-binding/index/manifest follow-up merged via [PR #40](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/pull/40), merge SHA `3e06f319506eeaa6df59a736ea2fa145da4838f6`.
+- Read-back verified on main: POINT-0/034, CURRENT-082, time-binding, runbook copy/paste prompt, initial-model mother link, and export manifest v1.8.16.
+- Living Architecture Audit passed on PR #39 head `4895e290ad17b278f1968b06b192147de1218822` and PR #40 head `621c6ceb54ffa7afc48528eddbd824bf36c26ce7`.
+- This does **not** mean those runs tested the later merged main SHA `3e06f319506eeaa6df59a736ea2fa145da4838f6`. Exact final-main-SHA conformance and exact-byte digest regeneration remain OPEN / NOT VERIFIED.
+- Actual interactive destination I1–I8 remain OPEN / NOT RUN until the destination returns raw receipts.

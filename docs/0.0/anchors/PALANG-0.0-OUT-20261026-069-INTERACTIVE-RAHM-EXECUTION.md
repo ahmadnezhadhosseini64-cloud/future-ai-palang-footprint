@@ -14,3 +14,8 @@
 - Required repository checks and real interactive-host checks to remain separate.
 - Preserved all historical graph, provenance, parent-edge and host-execution gaps as OPEN.
 - No claim is made that the destination project was accessed or that any I1–I8 test passed.
+
+
+## Integration status update
+
+POINT-0/034 and its runbook/manifest/mother/index links are now merged to main through PR #39; canonical time-binding follow-up is merged through PR #40. Read-back confirms the current checkpoint and runbook exist on main. Repository Living Architecture Audit passed on both PR heads; exact final-main-SHA conformance/digest regeneration remains pending. Interactive-host tests have not run and no destination receipt is claimed.
