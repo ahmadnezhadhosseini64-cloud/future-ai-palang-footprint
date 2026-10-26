@@ -1595,3 +1595,14 @@ Both Path A (portable initial model and independent-host recovery) and Path B (e
 
 
 - Current continuation: [CURRENT-073](./0.0/anchors/PALANG-0.0-CURRENT-20261026-073-DUAL-PATH-HAIF-CONTINUATION.md); NEXT-051 remains active.
+
+
+
+## Latest root — POINT-0/027 Path B reconciliation
+
+- Root: [POINT-0/027](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-027-PATH-B-GAP-RECONCILIATION.md)
+- Input/output: [IN-063](0.0/anchors/PALANG-0.0-IN-20261026-063-PATH-B-GAP-RECONCILIATION.md) / [OUT-062](0.0/anchors/PALANG-0.0-OUT-20261026-062-PATH-B-GAP-RECONCILIATION.md)
+- Event/current: [EVT-0193](architecture/BEHAVIOR-TRACE/EVT-0193-POINT-0-PATH-B-GAP-RECONCILIATION-2026-10-26.md) / [CURRENT-074](0.0/anchors/PALANG-0.0-CURRENT-20261026-074-PATH-B-GAP-RECONCILIATION.md)
+- Active queue: [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
+- Governing master: [Current canonical continuation master](reference/REFERENCE-DOCUMENTS/CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001.md); [historical graph living master](reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-RECONCILIATION-LIVING-MASTER-REFERENCE-2026-10-21-001.md); [initial-model mother](architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md).
+- Architecture correction: partial source-backed role decisions may annotate verified subsets; only complete path coverage can mark a collision group fully adjudicated. Semantic graph remains OPEN until fresh evidence confirms closure.
