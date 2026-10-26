@@ -26,3 +26,11 @@ Latest inspected audit run [40275138033](https://github.com/ahmadnezhadhosseini6
 
 ## Current boundary
 This checkpoint closes the investigation step and identifies a code-level correction; implementation and graph-wide semantic closure are still OPEN until tests and fresh receipts pass.
+
+
+
+## Durable case review queue
+
+- [Historical Graph Case Review Queue](../../architecture/INTEGRATION-QUEUE/HISTORICAL-GRAPH-CASE-REVIEW-QUEUE-2026-10-26.md) records the latest known counts, prior role decisions, EVT-number adjudications and exact closure rules.
+- The source-hash-verified partial-decision engine and regression tests have been committed. Exact-head CI must validate these changes before this checkpoint can be promoted.
+- The raw case-level audit artifact was not retrieved into this session; individual unnamed collision groups and parent edges remain OPEN until the fresh artifact is inspected and the exact paths/hashes are persisted.
