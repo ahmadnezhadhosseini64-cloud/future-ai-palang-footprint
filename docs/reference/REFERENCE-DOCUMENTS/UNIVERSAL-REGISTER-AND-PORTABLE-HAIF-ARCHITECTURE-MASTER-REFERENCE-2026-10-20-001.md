@@ -143,7 +143,7 @@ The living rule for automatic input/output anchoring, processing-time governance
 
 ## 2026-10-26 — POINT-0/025 dual-path excavation continuation
 
-The accepted excavation findings are anchored at [POINT-0/025](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-025-EXCAVATION-FINDINGS-DUAL-PATH.md), with [IN-055](../../0.0/anchors/PALANG-0.0-IN-20261026-055-EXCAVATION-FINDINGS-DUAL-PATH.md), [OUT-055](../../0.0/anchors/PALANG-0.0-OUT-20261026-055-EXCAVATION-FINDINGS-DUAL-PATH.md), [EVT-0191](../../architecture/BEHAVIOR-TRACE/EVT-0191-EXCAVATION-FINDINGS-DUAL-PATH-2026-10-26.md), and [CURRENT-072](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-072-DUAL-PATH-EXCAVATION.md).
+The accepted excavation findings are anchored at [POINT-0/025](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-025-EXCAVATION-FINDINGS-DUAL-PATH.md), with [IN-061](../../0.0/anchors/PALANG-0.0-IN-20261026-061-EXCAVATION-FINDINGS-DUAL-PATH.md), [OUT-060](../../0.0/anchors/PALANG-0.0-OUT-20261026-060-EXCAVATION-FINDINGS-DUAL-PATH.md), [EVT-0191](../../architecture/BEHAVIOR-TRACE/EVT-0191-EXCAVATION-FINDINGS-DUAL-PATH-2026-10-26.md), and [CURRENT-072](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-072-DUAL-PATH-EXCAVATION.md).
 
 **Permanent dual-path rule:** Path A constructs and verifies the portable initial HAIF model. Path B continues existing architecture remediation through [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). Both paths must progress and remain separately gated. Do not create NEXT-052 merely to renumber unfinished work. The report-only failure and risk of reusing occupied IDs are recorded in EVT-0191 as behavior/process lessons.
 
