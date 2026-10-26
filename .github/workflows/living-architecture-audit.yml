@@ -211,6 +211,8 @@ jobs:
         run: |
           set -euo pipefail
           python3 -m unittest discover -s tests -p test_semantic_role_decisions.py -v
+          python3 -m unittest discover -s tests -p test_parent_edge_resolution.py -v
+          python3 -m unittest discover -s tests -p test_graph_identifier_roles.py -v
 
       - name: Build canonical historical graph manifest and validate edges
         shell: bash
@@ -228,7 +230,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          python3 -m py_compile scripts/audit_timestamp_pairs_semantic.py scripts/host_adapter.py scripts/host_adapter_github_worker.py scripts/test_host_adapter.py scripts/semantic_role_decisions.py scripts/build_historical_graph_manifest.py
+          python3 -m py_compile scripts/audit_timestamp_pairs_semantic.py scripts/host_adapter.py scripts/host_adapter_github_worker.py scripts/test_host_adapter.py scripts/semantic_role_decisions.py scripts/build_historical_graph_manifest.py scripts/parent_edge_resolution.py scripts/graph_identifier_roles.py tests/test_parent_edge_resolution.py tests/test_graph_identifier_roles.py
 
       - name: Test durable host adapter
         shell: bash
