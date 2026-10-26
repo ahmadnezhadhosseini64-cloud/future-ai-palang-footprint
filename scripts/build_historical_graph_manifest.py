@@ -212,7 +212,14 @@ manifest = {
                "stable_id_collision_groups": len(stable_collisions), "production_id_collision_groups": len(prod_collisions),
                "reference_id_collision_groups": len(groups(reference_id_map)),
                "reviewed_stable_id_collision_groups": stable_decision_summary["groups_reviewed"],
+               "partially_reviewed_stable_id_collision_groups": stable_decision_summary["groups_partially_reviewed"],
                "unreviewed_stable_id_collision_groups": stable_decision_summary["groups_unreviewed"],
+               "reviewed_production_id_collision_groups": prod_decision_summary["groups_reviewed"],
+               "partially_reviewed_production_id_collision_groups": prod_decision_summary["groups_partially_reviewed"],
+               "reviewed_reference_id_collision_groups": reference_decision_summary["groups_reviewed"],
+               "partially_reviewed_reference_id_collision_groups": reference_decision_summary["groups_partially_reviewed"],
+               "reviewed_event_number_collision_groups": evt_decision_summary["groups_reviewed"],
+               "partially_reviewed_event_number_collision_groups": evt_decision_summary["groups_partially_reviewed"],
                "event_number_collision_groups": len(evt_collisions), "exact_content_duplicate_groups": len(duplicates),
                "declared_parent_edges": len(parent_edges), "unresolved_parent_edges": len(unresolved),
                "ambiguous_parent_edges": len(ambiguous), "proposed_alias_edges": len(alias_edges),
@@ -275,7 +282,7 @@ review_queue = {
 (OUT / "historical-0.0-canonical-graph-manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 summary = ["# Historical graph manifest summary", f"- Audit UTC: {run_utc}", f"- Commit: {commit}"]
 summary += [f"- {k}: {v}" for k, v in manifest["counts"].items()]
-summary += ["", "## Semantic boundary", "- Structural extraction remains distinct from semantic adjudication.", "- Source-hash-verified role decisions annotate reviewed groups; raw collision counts remain visible.", "- Proposed aliases are not automatically accepted; preserve historical files and never auto-delete duplicates.", "- Review parent ambiguities, missing links and identity collisions before closure."]
+summary += ["", "## Semantic boundary", "- Structural extraction remains distinct from semantic adjudication.", "- Source-hash-verified role decisions annotate covered paths; groups are fully reviewed only when every member is covered without role conflict.", "- Partial role review is reported separately and remains open; raw collision counts remain visible.", "- Proposed aliases are not automatically accepted; preserve historical files and never auto-delete duplicates.", "- Review parent ambiguities, missing links and identity collisions before closure."]
 (OUT / "historical-0.0-graph-manifest-summary.txt").write_text("\n".join(summary) + "\n", encoding="utf-8")
 print("\n".join(summary))
 
