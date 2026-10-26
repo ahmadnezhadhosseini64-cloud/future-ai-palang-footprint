@@ -8,8 +8,8 @@
     {
       "path": ".github/workflows/living-architecture-audit.yml",
       "version": "repository-current",
-      "git_blob_sha": "f5e24ada644c293f188494413d93aa504830d9fa",
-      "sha256": "9128a8cd0adf3b5c30c736e6c5d49529d782fd909213c70cd25974f53c2edead"
+      "git_blob_sha": "ae9ee9c5f22976af429a9c28e5dcd003614ca14e",
+      "sha256": "d615115cc844203df550c95ae2d2a30826581765d1ea5bcd74981683a6428840"
     },
     {
       "path": "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-003-FIRST-LIVING-MASTER-AND-PORTABILITY.md",
