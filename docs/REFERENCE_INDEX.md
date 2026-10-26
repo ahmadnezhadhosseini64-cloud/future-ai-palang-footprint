@@ -1556,8 +1556,8 @@ Current continuation chain: POINT-0/013 → IN-057 → OUT-056 → EVT-0166 → 
 | ID | Canonical path | Purpose | Status |
 |---|---|---|---|
 | HAIF-POINT-0-025-EXCAVATION-DUAL-PATH-20261026 | `docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-025-EXCAVATION-FINDINGS-DUAL-PATH.md` | Preserve accepted excavation findings and coordinate construction and remediation | REGISTERED / ACTIVE / LIVING / OPEN |
-| HAIF-IN-055-EXCAVATION-DUAL-PATH-20261026 | `docs/0.0/anchors/PALANG-0.0-IN-20261026-055-EXCAVATION-FINDINGS-DUAL-PATH.md` | Preserve user input and constraints | REGISTERED |
-| HAIF-OUT-055-EXCAVATION-DUAL-PATH-20261026 | `docs/0.0/anchors/PALANG-0.0-OUT-20261026-055-EXCAVATION-FINDINGS-DUAL-PATH.md` | Decision and execution contract for both paths | OPEN |
+| HAIF-IN-061-EXCAVATION-DUAL-PATH-20261026 | `docs/0.0/anchors/PALANG-0.0-IN-20261026-061-EXCAVATION-FINDINGS-DUAL-PATH.md` | Preserve user input and constraints | REGISTERED |
+| HAIF-OUT-060-EXCAVATION-DUAL-PATH-20261026 | `docs/0.0/anchors/PALANG-0.0-OUT-20261026-060-EXCAVATION-FINDINGS-DUAL-PATH.md` | Decision and execution contract for both paths | OPEN |
 | HAIF-EVT-0191-EXCAVATION-DUAL-PATH-20261026 | `docs/architecture/BEHAVIOR-TRACE/EVT-0191-EXCAVATION-FINDINGS-DUAL-PATH-2026-10-26.md` | Behavior/process lesson and correction | REGISTERED |
 | HAIF-CURRENT-072-DUAL-PATH-EXCAVATION-20261026 | `docs/0.0/anchors/PALANG-0.0-CURRENT-20261026-072-DUAL-PATH-EXCAVATION.md` | Next executable checkpoint for both paths | ACTIVE / LIVING / OPEN / EXECUTION REQUIRED |
 
