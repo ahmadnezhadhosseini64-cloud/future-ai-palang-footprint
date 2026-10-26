@@ -846,3 +846,12 @@ The canonical live-destination audit source and its exact Library version-7 snap
 - Main was observed at bbbc1cf7243be413097b18303008702ce7b0e89e before root registration; newer main must be discovered and audited on its exact SHA.
 - Immediate steps: finish canonical links with sequential write/read-back; reconcile RAHM_BOOT, portable master and EXPORT_MANIFEST; run exact-SHA conformance and full audit; verify export artifact digests; perform actual clean-host recovery only with independent host evidence.
 - Keep CURRENT-065/CURRENT-066, Issues #20/#21, Buffer/Persistent Memory, Dropbox and independent-host recovery open/unverified until direct evidence changes status.
+
+
+## Latest registered continuation — POINT-0/032 / CURRENT-079 (2026-10-26)
+- Root: [POINT-0/032](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-032-MASTER-RAHM-CHILD-INITIAL-MODEL-BRIDGE.md).
+- Input/output/event: [IN-067](../../0.0/anchors/PALANG-0.0-IN-20261026-067-MASTER-RAHM-CHILD-BRIDGE.md) → [OUT-066](../../0.0/anchors/PALANG-0.0-OUT-20261026-066-MASTER-RAHM-CHILD-BRIDGE.md) → [EVT-0201](../../architecture/BEHAVIOR-TRACE/EVT-0201-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION-2026-10-26.md).
+- Current checkpoint: [CURRENT-079](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-079-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION.md); existing queue: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Architecture contract: [Master–Rahm–Child cross-validation](../../architecture/MASTER-RAHM-CHILD/MASTER-RAHM-CHILD-CROSS-VALIDATION-CONTRACT-2026-10-26.md).
+- Authority: original project is MASTER; initial-model project is subordinate RAHM; only a tested and explicitly accepted candidate can become a CHILD. This relationship supersedes any interpretation of the two as peer authorities, but does not delete historical architecture.
+- Repository bridge registered. Interactive-project receipts, exact-head CI, portable manifest/digest refresh, clean-host import, persistent memory and background runtime remain OPEN / NOT RUN until directly evidenced.
