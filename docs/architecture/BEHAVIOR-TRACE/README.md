@@ -874,3 +874,7 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Root/checkpoint: [POINT-0/031](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-031-REVERSIBLE-GRAPH-GAP-COVERS-AND-BEHAVIOR-HUNTER.md) → [CURRENT-078](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-078-REVERSIBLE-GRAPH-GAP-COVERS.md)
 - Register: [GAP-COVER-REGISTER](./GAP-COVER-REGISTER-2026-10-26.md)
 - Covers mean COVERED / DEFERRED, not CLOSED. Underlying graph/source/parent gaps stay OPEN / ACTIVE / LIVING and in Behavior Hunter scope.
+
+
+## Time binding — POINT-0/031 / EVT-0200
+- [TIME-BINDING-EVT-0200](./TIME-BINDING-EVT-0200-POINT-0-031-2026-10-26.md) records actual repository commit timestamps in UTC and their Asia/Tehran equivalents for POINT-0/031, IN-066, OUT-065, CURRENT-078, the gap register and EVT-0200. Git registration time is distinct from event/workflow time; time binding does not close any gap.
