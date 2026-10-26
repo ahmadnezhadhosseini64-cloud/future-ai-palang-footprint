@@ -69,3 +69,11 @@ Required response envelope: host capabilities → package integrity → reconstr
 - Cross-validation contract: [Master–Rahm–Child](../../architecture/MASTER-RAHM-CHILD/MASTER-RAHM-CHILD-CROSS-VALIDATION-CONTRACT-2026-10-26.md)
 - The original Future AI / Palang Footprint is MASTER; the initial-model package is subordinate RAHM; outputs remain CHILD CANDIDATES until explicit Master acceptance.
 - Continue NEXT-051 only. Interactive-project tests, exact-final-SHA conformance, clean-host import, persistent memory and background execution are OPEN / NOT RUN until direct receipts exist.
+
+
+## Current Master–Rahm–Child bridge — POINT-0/032 / CURRENT-079
+- Canonical root: [POINT-0/032](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-032-MASTER-RAHM-CHILD-INITIAL-MODEL-BRIDGE.md)
+- Current checkpoint: [CURRENT-079](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-079-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION.md)
+- Governing contract: [MASTER–RAHM–CHILD cross-validation](../../architecture/MASTER-RAHM-CHILD/MASTER-RAHM-CHILD-CROSS-VALIDATION-CONTRACT-2026-10-26.md)
+- Copy/paste runbook: [INTERACTIVE-PROJECT-VALIDATION-RUNBOOK](../../architecture/MASTER-RAHM-CHILD/INTERACTIVE-PROJECT-VALIDATION-RUNBOOK.md)
+- Treat the original project as MASTER and the initial-model environment as RAHM. A candidate is not a promoted CHILD until explicit Master review is recorded. Interactive-project tests are NOT RUN until actual destination receipts exist.
