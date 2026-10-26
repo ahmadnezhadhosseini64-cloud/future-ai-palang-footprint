@@ -50,3 +50,9 @@
 
 ## Acceptance gate
 CURRENT-084 stays OPEN until the exact-head audit and portable conformance have both completed, their logs/artifacts have been read back, and graph changes are reconciled in the master/index/queue. External-host acceptance remains a separate gate.
+
+## Latest verification refresh — code head 4d41fa60c1ee360cccea05164d61152ac79cc577
+- Living Architecture Audit [40348437372](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40348437372) — SUCCESS on this code SHA; artifact 12661729460, digest sha256:aefe553328dca7fb4aa848f5e0851fb6d7b2fa84a64783a20584fb260579a6f7.
+- Portable RAHM Conformance [40348437106](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40348437106) — SUCCESS on the same SHA. Evidence artifact 12662357802, digest sha256:d921e6864296d36b8e1f3c4db8fa52fb89e9ac0789d283aa7dacfaa1e02c1d0b; package artifact 12662282368, digest sha256:3f9b016ddf19b4b75b8481f7f652194d7811c3b8d981c70bd38065f0d81c9733. Package SHA256 7d81087bf66f0d3f20ed39cb1d79b2ce2ddec364ad478b18414fd654299be676; 178 package files, 127 live references, exact-byte and live-reference scans PASS.
+- Final raw audit after the scanner fix: decode_errors=0; local_markdown_links_missing=0; Stable-ID=23, Production-ID=68, Reference-ID=5, event-number=41, exact-content duplicates=11; 79 declared parent edges, 2 unresolved, 0 ambiguous. Unresolved master-artifact gap remains OPEN.
+- The subsequent main commit da3b1e726aea53807e1e2676eeac3e4872af5879 only adds the successful Evidence Gate receipt file; it does not modify source code. A final post-registration audit/conformance is being triggered by this checkpoint refresh.
