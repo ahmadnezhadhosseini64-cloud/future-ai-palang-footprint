@@ -36,3 +36,11 @@ Required response envelope: host capabilities → package integrity → reconstr
 - No-silent-gap rule: every new input must receive a visible state/output. If work is partial, record what actually ran, what did not run, the blocker and exact resume point. Never create a new NEXT merely to disguise unfinished work.
 - Latest tested package is commit-scoped. Use the latest successful Portable RAHM Conformance run for the exact package commit; do not reuse a prior hash after package contents change.
 - Open gates remain: clean independent AI-host import, second-host import, durable memory after restart, automatic live capture, idle/background execution, and graph identity/parent/time adjudication. These are not implied by CI package success.
+
+
+## Current highlighted continuation — POINT-0+ / CURRENT-076
+- Current canonical root: [POINT-0/028](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-028-PORTABLE-GPT6-EXECUTION-AND-RECOVERY.md); its emphasis marker is [POINT-0+](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-PLUS-20261026-028-PORTABLE-GPT6-MILESTONE.md). The plus is a highlight only; all POINT-0 rules apply unchanged.
+- Current checkpoint: [CURRENT-076](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-076-POINT-0-PLUS-ARCHITECTURE-CLOSURE.md). Active queue remains NEXT-051. Do not create NEXT-052.
+- Latest milestone event: [EVT-0197](../../architecture/BEHAVIOR-TRACE/EVT-0197-POINT-0-PLUS-HIGHLIGHT-AND-ARCHITECTURE-CLOSURE-2026-10-26.md). Two existing EVT-0195 files remain a collision; preserve both and do not merge/renumber by inference.
+- Eight CI checks passed on SHA 282cb1acd859c188f4cbb2443a960a013380d385, but a follow-up Evidence Gate commit 3924818996f679d80a8335cab2429177c2ceba36 moved main after those checks. That follow-up SHA and every newer HEAD are unverified until exact-SHA conformance and audit pass.
+- Transfer goal is clean host recovery, not just file copy. External consumer GPT-6 host import remains NOT RUN absent a direct receipt. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN/NOT VERIFIED; Issues #20/#21 OPEN; CURRENT-065/CURRENT-066 OPEN.
