@@ -20,7 +20,7 @@
 - No historic graph conflict or external-runtime gap was closed by this registration.
 
 ## Open gates
-1. Update/read back the canonical index, integration queue and living mother with this bridge.
+1. [x] Canonical index, integration queue, 0.0 registry and both living-mother surfaces were fetched from main and their bridge references were confirmed in the inspected snapshot; this closes only the repository-link/read-back subtask, not exact-head CI or manifest conformance.
 2. Run link checks and current-head repository audit on the exact final SHA.
 3. Run portable RAHM conformance and reconcile exact package digests on that same SHA.
 4. Execute the validation protocol in the actual interactive project environment and capture receipts; until then its tests are NOT RUN.
@@ -38,4 +38,12 @@ Start by fetching this checkpoint, the bridge contract, the initial-model mother
 
 ## Canonical repository time
 - [TIME-BINDING-POINT-0-032 / EVT-0201](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-POINT-0-032-EVT-0201-2026-10-26.md) contains the actual commit-time ledger for this chain; use UTC as canonical and Tehran as a derived display.
-- Portable export manifest was refreshed to version 1.8.7; exact-final-SHA conformance is still required.
+- Portable export manifest currently reports version 1.8.7; exact-final-SHA conformance and exact digest reconciliation are still OPEN. A spot-check found manifest Git blob SHA entries that do not match the fetched current blobs for the cross-validation contract/time-binding artifacts, so do not treat the package as digest-verified until a fresh conformance run reconciles them.
+
+## Repository surface read-back — 2026-10-26
+- 0.0 registry blob SHA: `0116cf5219f83c666add93e4d515a7de9079836c`.
+- Canonical reference index blob SHA: `8066b70a143082ed55d5ef60ae2baedaa08f6470`.
+- Main integration queue blob SHA: `fa98d0b99c61b0817a315d93fce1c72202101333`.
+- Initial-model mother blob SHA: `ac13b595de485f680f0e7bb83060137a309f9421`.
+- Canonical continuation mother blob SHA: `f557ec4533aeb64c3134ca8639fcc06a577f2e08`.
+- These are content/blob identifiers from read-back, not commit timestamps or proof of exact-head workflow success.
