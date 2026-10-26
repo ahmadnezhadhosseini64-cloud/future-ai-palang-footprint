@@ -77,3 +77,6 @@ Required response envelope: host capabilities → package integrity → reconstr
 - Governing contract: [MASTER–RAHM–CHILD cross-validation](../../architecture/MASTER-RAHM-CHILD/MASTER-RAHM-CHILD-CROSS-VALIDATION-CONTRACT-2026-10-26.md)
 - Copy/paste runbook: [INTERACTIVE-PROJECT-VALIDATION-RUNBOOK](../../architecture/MASTER-RAHM-CHILD/INTERACTIVE-PROJECT-VALIDATION-RUNBOOK.md)
 - Treat the original project as MASTER and the initial-model environment as RAHM. A candidate is not a promoted CHILD until explicit Master review is recorded. Interactive-project tests are NOT RUN until actual destination receipts exist.
+
+- Latest continuation: [POINT-0/033](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-033-EXCAVATION-AND-MASTER-RAHM-CHILD-CONTINUATION.md) → [CURRENT-081](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-081-EXCAVATION-AND-MASTER-RAHM-CHILD-CONTINUATION.md). Preserve both POINT-0/032 source candidates until provenance-based reconciliation; no automatic promotion.
+
