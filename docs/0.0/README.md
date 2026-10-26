@@ -1706,3 +1706,11 @@ The canonical chain is [POINT-0/032](./anchors/GPT6-RAHM-USER-POINT-0-20261026-0
 ## Clarification continuation — CURRENT-080
 - [IN-068](./anchors/PALANG-0.0-IN-20261026-068-MASTER-RAHM-CHILD-CLARIFICATION.md) → [OUT-067](./anchors/PALANG-0.0-OUT-20261026-067-MASTER-RAHM-CHILD-CLARIFICATION.md) → [EVT-0202](../architecture/BEHAVIOR-TRACE/EVT-0202-MASTER-RAHM-CHILD-CLARIFICATION-2026-10-26.md) → [CURRENT-080](./anchors/PALANG-0.0-CURRENT-20261026-080-MASTER-RAHM-CHILD-CLARIFICATION.md).
 - This is a clarification extension of POINT-0/032, not a parallel project. Extend the existing initial-model package; keep repository validation distinct from interactive-host validation.
+
+
+### POINT-0/033 — excavation continuation
+- Root: [POINT-0/033](./anchors/GPT6-RAHM-USER-POINT-0-20261026-033-EXCAVATION-AND-MASTER-RAHM-CHILD-CONTINUATION.md).
+- Chain: [IN-069](./anchors/PALANG-0.0-IN-20261026-069-EXCAVATION-AND-MASTER-RAHM-CHILD-CONTINUATION.md) → [OUT-068](./anchors/PALANG-0.0-OUT-20261026-068-EXCAVATION-AND-MASTER-RAHM-CHILD-CONTINUATION.md) → [EVT-0203](../architecture/BEHAVIOR-TRACE/EVT-0203-POINT-0-033-EXCAVATION-AND-MRCC-CONTINUATION-2026-10-26.md) → [CURRENT-081](./anchors/PALANG-0.0-CURRENT-20261026-081-EXCAVATION-AND-MASTER-RAHM-CHILD-CONTINUATION.md).
+- Excavation evidence: [register](../architecture/BEHAVIOR-TRACE/EXCAVATION-REGISTER-2026-10-26-MASTER-RAHM-CHILD.md).
+- POINT-0/032 path lineage remains ambiguous; preserve both variants pending provenance reconciliation. Continue NEXT-051; no NEXT-052.
+

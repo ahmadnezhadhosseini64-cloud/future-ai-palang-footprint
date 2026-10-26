@@ -2066,3 +2066,10 @@ The current root is [POINT-0/027](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261
 
 ## Clarification continuation — CURRENT-080
 - [IN-068](../../0.0/anchors/PALANG-0.0-IN-20261026-068-MASTER-RAHM-CHILD-CLARIFICATION.md) → [OUT-067](../../0.0/anchors/PALANG-0.0-OUT-20261026-067-MASTER-RAHM-CHILD-CLARIFICATION.md) → [EVT-0202](../BEHAVIOR-TRACE/EVT-0202-MASTER-RAHM-CHILD-CLARIFICATION-2026-10-26.md) → [CURRENT-080](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-080-MASTER-RAHM-CHILD-CLARIFICATION.md). Extend existing RAHM; no parallel project.
+
+
+### CURRENT-081 — excavation and Master–Rahm–Child continuation
+- Root: [POINT-0/033](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-033-EXCAVATION-AND-MASTER-RAHM-CHILD-CONTINUATION.md).
+- Chain: IN-069 → OUT-068 → EVT-0203 → [CURRENT-081](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-081-EXCAVATION-AND-MASTER-RAHM-CHILD-CONTINUATION.md).
+- Gap cover: POINT-0/032 path identity remains OPEN/AMBIGUOUS until provenance history is inspected. Keep both records. PR #36 is closed/unmerged. Final SHA validation and destination-host tests remain OPEN. Continue NEXT-051 only.
+
