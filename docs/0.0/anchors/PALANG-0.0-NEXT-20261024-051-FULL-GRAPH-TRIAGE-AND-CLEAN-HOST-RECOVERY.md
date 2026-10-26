@@ -298,3 +298,12 @@ NEXT-051 remains OPEN/LIVING until all remaining acceptance gates are satisfied;
 - Two separate files currently use event number EVT-0195: `EVT-0195-PORTABLE-GPT6-EXECUTION-AND-RECOVERY-2026-10-26.md` and `EVT-0195-USER-REQUEST-POINT-028-PORTABLE-GPT6-HAIF-EXECUTION-2026-10-26.md`. Preserve both and leave the collision OPEN until source-backed adjudication; do not renumber or merge by inference.
 - Latest root/checkpoint: POINT-0/028 / CURRENT-075. This is an update to the existing NEXT-051, not a new NEXT queue.
 - Full Living Architecture Audit and Portable RAHM Conformance must match the exact final main SHA. Issues #20/#21 remain OPEN; external clean-host import remains NOT RUN.
+
+
+## POINT-0/031 / CURRENT-078 — reversible graph-gap covers
+- Root: [POINT-0/031](GPT6-RAHM-USER-POINT-0-20261026-031-REVERSIBLE-GRAPH-GAP-COVERS-AND-BEHAVIOR-HUNTER.md)
+- Checkpoint: [CURRENT-078](PALANG-0.0-CURRENT-20261026-078-REVERSIBLE-GRAPH-GAP-COVERS.md)
+- Event: [EVT-0200](../../architecture/BEHAVIOR-TRACE/EVT-0200-REVERSIBLE-GRAPH-GAP-COVERS-AND-BEHAVIOR-HUNTER-2026-10-26.md)
+- Register: [GAP-COVER-REGISTER](../../architecture/BEHAVIOR-TRACE/GAP-COVER-REGISTER-2026-10-26.md)
+- Cover semantics: COVERED / DEFERRED is reversible; every underlying gap remains OPEN / ACTIVE / LIVING. Preserve CURRENT-065/CURRENT-066 and EVT-0195 conflicts, source evidence, parent candidates and history. No NEXT-052.
+- Work order: evidence-backed graph inventory → Behavior Hunter scan → exact-current-SHA package conformance → real clean-host import only with a direct destination receipt. Dropbox is not the current objective.
