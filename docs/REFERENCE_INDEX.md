@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-25 — POINT-0/020 / EVT-0182; live-pointer parser failure recorded; parser regression correction registered but exact-head CI pending; CURRENT-065/CURRENT-066 conflict remains OPEN; NEXT-051 remains active.
+**Last Updated:** 2026-10-26 — POINT-0/027 / EVT-0193 is the latest user-turn root chain; EVT-0194 records the live mirror recheck; CURRENT-074 is the current execution checkpoint; NEXT-051 remains active; CURRENT-065/CURRENT-066 remains OPEN; exact-current-main audit is NOT VERIFIED.
 
 ## Canonical References
 
@@ -1613,3 +1613,12 @@ Both Path A (portable initial model and independent-host recovery) and Path B (e
 
 - [Case review queue](architecture/INTEGRATION-QUEUE/HISTORICAL-GRAPH-CASE-REVIEW-QUEUE-2026-10-26.md): historical inventory, known source-backed decisions, EVT collision cases, ambiguous-parent review protocol and timestamp exception protocol.
 - [POINT-0/027](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-027-PATH-B-GAP-RECONCILIATION.md) / [CURRENT-074](0.0/anchors/PALANG-0.0-CURRENT-20261026-074-PATH-B-GAP-RECONCILIATION.md).
+
+
+## EVT-0194 — live mirror sync recheck (2026-10-26)
+
+- Event: [EVT-0194](architecture/BEHAVIOR-TRACE/EVT-0194-LIVE-MIRROR-SYNC-RECHECK-2026-10-26.md); canonical time binding: [TIME-BINDING-EVT-0194](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0194-LIVE-MIRROR-SYNC-2026-10-26.md).
+- Canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10` remains unchanged at 10,479 characters. Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, version 7, reads as 10,480 characters; edit distance 1, solely one additional trailing newline. Semantic fields and remaining content match; no redundant Library rewrite was performed.
+- Current root/checkpoint/active queue discovered from main: POINT-0/027 / CURRENT-074 / NEXT-051. POINT-0/016, POINT-0/017, POINT-0/018 and prior mirror event EVT-0177 remain preserved. This event is not a new root or a new NEXT queue.
+- CURRENT-065/CURRENT-066 remains OPEN. Audit run 40267412937 returned scoped consistency (CURRENT-066 for overlay recovery; CURRENT-072 for global project registry; winner_selected=false) on tested SHA `6d6623a681cc7012dc0705d141197de7f818fcf0`; this is not an exact-current-main audit.
+- Buffer/Persistent Memory remain NOT VERIFIED; Dropbox remains OPEN / NOT VERIFIED; external end-to-end recovery remains NOT RUN. Issues #20/#21 and BOART-FOLLOWUP-01 remain open.
