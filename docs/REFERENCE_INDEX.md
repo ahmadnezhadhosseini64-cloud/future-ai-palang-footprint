@@ -1656,3 +1656,14 @@ Both Path A (portable initial model and independent-host recovery) and Path B (e
 - Event: [EVT-0198](architecture/BEHAVIOR-TRACE/EVT-0198-USER-REQUEST-POINT-0-030-AND-CONTINUE-2026-10-26.md)
 - Parent: POINT-0/029. Active queue: NEXT-051 only; NEXT-052 is not authorized.
 - CURRENT-065/CURRENT-066, Issues #20/#21, Buffer/Persistent Memory, Dropbox and independent-host recovery remain open/unverified as recorded in the root.
+
+
+
+## Latest return anchor — POINT-0/029
+- **User root:** [POINT-0/029 — Reversible Gap Covers and Fast Host Transfer](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-029-REVERSIBLE-GAP-COVERS-AND-FAST-HOST-TRANSFER.md)
+- **Current checkpoint:** [CURRENT-077](0.0/anchors/PALANG-0.0-CURRENT-20261026-077-REVERSIBLE-GAP-COVERS.md)
+- **Input/output:** [IN-065](0.0/anchors/PALANG-0.0-IN-20261026-065-REVERSIBLE-GAP-COVERS-AND-FAST-HOST-TRANSFER.md) → [OUT-064](0.0/anchors/PALANG-0.0-OUT-20261026-064-REVERSIBLE-GAP-COVERS-AND-FAST-HOST-TRANSFER.md)
+- **Event:** [EVT-0199](architecture/BEHAVIOR-TRACE/EVT-0199-REVERSIBLE-GAP-COVERS-AND-FAST-HOST-TRANSFER-2026-10-26.md)
+- **Transfer runbook:** [QUICK-TRANSFER-CHECKLIST](portable/RAHM/QUICK-TRANSFER-CHECKLIST.md)
+- **Queue:** NEXT-051 remains the only active remediation queue. No NEXT-052.
+- **Evidence boundary:** repository records do not prove external host import, persistent memory, Buffer/Library/Dropbox, or background execution. Every underlying gap remains OPEN until separately tested.
