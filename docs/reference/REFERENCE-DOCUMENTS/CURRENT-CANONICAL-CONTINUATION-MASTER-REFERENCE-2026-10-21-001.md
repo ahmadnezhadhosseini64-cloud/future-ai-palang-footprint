@@ -790,4 +790,4 @@ The accepted excavation findings are anchored at [POINT-0/025](../../0.0/anchors
 
 This entry records the link and governance decision. It does not close independent-host, persistence, automatic-capture, background-runtime, graph-collision or CURRENT-065/CURRENT-066 pointer gates without direct evidence.
 
-Current execution checkpoint time binding: [TIME-BINDING-CURRENT-072](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-CURRENT-072-POINT-0-025-2026-10-26.md) — CURRENT-072 last-change commit UTC 2026-10-26T04:01:15Z; Asia/Tehran 2026-10-26 07:31:15 +03:30.
+Current execution checkpoint time binding: [TIME-BINDING-CURRENT-072](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-CURRENT-072-POINT-0-025-2026-10-26.md) — CURRENT-072 last-change commit UTC 2026-10-26T04:05:17Z; Asia/Tehran 2026-10-26 07:35:17 +03:30.
