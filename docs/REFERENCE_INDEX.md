@@ -1733,3 +1733,6 @@ Both Path A (portable initial model and independent-host recovery) and Path B (e
 - Existing queue: [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md) remains the single active remediation queue.
 - Architecture invariant: declared identifier metadata differs from body references; parent resolution must be source-specific and evidence-backed. Path A initial-model execution and Path B graph repair remain coordinated but independently verified.
 - Status: registration completed; exact-current-main audit and portable conformance after this point are pending; external-host import/restart/round-trip remains NOT RUN.
+
+- Canonical repository-time binding for this chain: [TIME-BINDING-POINT-0-036-CHAIN](architecture/BEHAVIOR-TRACE/TIME-BINDING-POINT-0-036-CHAIN-2026-10-26.md). Root commit UTC is 2026-10-26T15:10:07Z (Tehran 18:40:07 +03:30); exact commit/blob distinctions are preserved in the binding record.
+- Latest verified historical graph audit receipt before the raw-audit correction: [run 40347006195](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40347006195), tested SHA cf877f9a84d767bb6f0f3566b90efe4fd5dcd83c. Current rerun after correction remains required.
