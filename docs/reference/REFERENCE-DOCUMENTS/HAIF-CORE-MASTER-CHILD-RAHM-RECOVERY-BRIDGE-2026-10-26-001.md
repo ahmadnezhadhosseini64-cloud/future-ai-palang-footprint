@@ -6,7 +6,7 @@
 - Status: ACTIVE / LIVING / OPEN / REVERSIBLE GAP COVER — NOT THE ORIGINAL PARENT
 - Project: Future AI / Palang Footprint / HAIF
 - Missing historical parent identity: `HAIF-CORE-MASTER-CHILD-RAHM-2026-09-15-001`
-- Current governing successor: [Initial AI Model Master Reference](../architecture/مدل%20 اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
+- Current governing successor: [Initial AI Model Master Reference](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 - Related validation contract: [MASTER–RAHM–CHILD Cross-Validation Contract](../../architecture/MASTER-RAHM-CHILD/MASTER-RAHM-CHILD-CROSS-VALIDATION-CONTRACT-2026-10-26.md)
 
 ## Purpose
