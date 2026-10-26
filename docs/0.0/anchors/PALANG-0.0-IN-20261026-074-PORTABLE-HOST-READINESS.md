@@ -11,3 +11,4 @@ The user instructs that this location become a new Point 0, the continuation ste
 
 ## Required response and execution
 Give a verified state, not a report-only claim; preserve the existing MASTER–RAHM–CHILD architecture and both paths A/B. Verify the actual package artifact, tests and limits. Continue the repository's single active queue NEXT-051. Do not call external-host import complete without direct host evidence.
+- Canonical repository time binding: [TIME-BINDING-IN-074](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-IN-074-POINT-0-037-2026-10-26.md).
