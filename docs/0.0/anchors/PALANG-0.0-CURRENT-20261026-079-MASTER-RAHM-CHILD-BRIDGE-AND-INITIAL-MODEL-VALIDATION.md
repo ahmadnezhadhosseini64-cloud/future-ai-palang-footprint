@@ -47,3 +47,11 @@ Start by fetching this checkpoint, the bridge contract, the initial-model mother
 - Initial-model mother blob SHA: `ac13b595de485f680f0e7bb83060137a309f9421`.
 - Canonical continuation mother blob SHA: `f557ec4533aeb64c3134ca8639fcc06a577f2e08`.
 - These are content/blob identifiers from read-back, not commit timestamps or proof of exact-head workflow success.
+
+## User-supplied prior-output baseline incorporated
+- MASTER is the final authority for durable rules, interaction/behavior history, accepted architecture, provenance and evidence.
+- RAHM is the existing initial-model package plus the intended interactive environment; extend the existing package rather than creating a parallel folder.
+- CHILD remains a versioned candidate until defined tests, evidence/limitations and explicit MASTER review support acceptance.
+- Repository CI and actual interactive-host tests are distinct evidence classes. The latter remains NOT RUN / NOT VERIFIED without direct destination receipts.
+- Preserve failures, rejected candidates and all open graph/source/parent gaps. Covers remain reversible; no gap is closed by this architecture decision.
+- Next action remains within NEXT-051: reconcile exact-current-main artifacts and package digests, run repository tests against the final SHA, then execute the interactive runbook in the actual destination and capture receipts.
