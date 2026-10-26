@@ -1,7 +1,7 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.8.17",
-  "manifest_status": "POINT-0/034 and canonical time binding merged to main; read-back verified. Living Architecture Audit passed on PR heads, but exact final-main-SHA conformance and exact-byte digest regeneration remain required; actual interactive-host tests and historic gaps remain OPEN/NOT RUN",
+  "version": "1.8.18",
+  "manifest_status": "POINT-0/034 current checkpoint reconciled through PR #41; manifest v1.8.18; Living Architecture Audit passed on PR head but exact final-main-SHA conformance/digest regeneration remain required; interactive-host tests and historical gaps OPEN/NOT RUN",
   "created_from_checkpoint": "HAIF-CURRENT-082-INTERACTIVE-RAHM-EXECUTION-20261026 + HAIF-TIME-BINDING-POINT-0-034-EVT-0204-20261026",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [

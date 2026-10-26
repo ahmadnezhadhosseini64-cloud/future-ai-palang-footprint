@@ -34,3 +34,12 @@ POINT-0/034, IN-070, OUT-069 and EVT-0204 are registered in this proposed contin
 - Living Architecture Audit passed on PR #39 head `4895e290ad17b278f1968b06b192147de1218822` and PR #40 head `621c6ceb54ffa7afc48528eddbd824bf36c26ce7`.
 - This does **not** mean those runs tested the later merged main SHA `3e06f319506eeaa6df59a736ea2fa145da4838f6`. Exact final-main-SHA conformance and exact-byte digest regeneration remain OPEN / NOT VERIFIED.
 - Actual interactive destination I1–I8 remain OPEN / NOT RUN until the destination returns raw receipts.
+
+
+## Latest main reconciliation — PR #41
+
+- PR #41 is merged: [main reconciliation](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/pull/41), merge SHA `865acd6009e7170ab7fbd3544af9363128aca39f`, repository time `2026-10-26T10:21:04Z` / `13:51:04+03:30`.
+- Export manifest is now **v1.8.17** (not v1.8.16); the earlier version string above is historical evidence from the previous read-back, not the current manifest.
+- Main read-back confirms POINT-0/034, CURRENT-082, the copy/paste I1–I8 prompt, initial-model mother links, and manifest v1.8.17.
+- Living Architecture Audit passed on PR #41 head `a616e491c457b0b59aba63f7caea27ad7a57bfd1`. This was a PR-head run, not a run against merge SHA `865acd6009e7170ab7fbd3544af9363128aca39f`.
+- Exact final-main-SHA portable conformance and digest regeneration remain OPEN / NOT VERIFIED. Interactive-host I1–I8 remain OPEN / NOT RUN.
