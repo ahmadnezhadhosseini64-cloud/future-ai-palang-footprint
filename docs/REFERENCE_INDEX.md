@@ -1699,3 +1699,12 @@ Both Path A (portable initial model and independent-host recovery) and Path B (e
 - [OUT-067](0.0/anchors/PALANG-0.0-OUT-20261026-067-MASTER-RAHM-CHILD-CLARIFICATION.md) — assistant decision and evidence boundary.
 - [EVT-0202](architecture/BEHAVIOR-TRACE/EVT-0202-MASTER-RAHM-CHILD-CLARIFICATION-2026-10-26.md) — event record.
 - [CURRENT-080](0.0/anchors/PALANG-0.0-CURRENT-20261026-080-MASTER-RAHM-CHILD-CLARIFICATION.md) — latest continuation checkpoint.
+
+
+## POINT-0/033 — excavation continuation (2026-10-26)
+- [POINT-0/033](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-033-EXCAVATION-AND-MASTER-RAHM-CHILD-CONTINUATION.md) — new root, tied to existing MASTER–RAHM–CHILD work.
+- [IN-069](0.0/anchors/PALANG-0.0-IN-20261026-069-EXCAVATION-AND-MASTER-RAHM-CHILD-CONTINUATION.md) / [OUT-068](0.0/anchors/PALANG-0.0-OUT-20261026-068-EXCAVATION-AND-MASTER-RAHM-CHILD-CONTINUATION.md) — preserved request and response.
+- [EVT-0203](architecture/BEHAVIOR-TRACE/EVT-0203-POINT-0-033-EXCAVATION-AND-MRCC-CONTINUATION-2026-10-26.md) — event record.
+- [CURRENT-081](0.0/anchors/PALANG-0.0-CURRENT-20261026-081-EXCAVATION-AND-MASTER-RAHM-CHILD-CONTINUATION.md) — active checkpoint.
+- [Excavation register](architecture/BEHAVIOR-TRACE/EXCAVATION-REGISTER-2026-10-26-MASTER-RAHM-CHILD.md) — recovered sources, gaps and reopening triggers.
+
