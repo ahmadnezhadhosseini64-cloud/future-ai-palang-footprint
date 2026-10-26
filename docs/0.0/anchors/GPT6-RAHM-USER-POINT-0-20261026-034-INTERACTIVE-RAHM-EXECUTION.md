@@ -41,3 +41,5 @@ Keep graph census, source provenance, parent-edge ambiguity, POINT-0/032 lineage
 4. Run tests against the exact merged SHA.
 5. Execute I1–I8 in the real interactive project and store returned receipts; if no access, document the exact blocker.
 6. Continue NEXT-051 only.
+
+- Canonical repository time binding: [TIME-BINDING-POINT-0-034](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-POINT-0-034-EVT-0204-2026-10-26.md) — commit `6cb22b59a6d209b1768d5d71ff9f32c56fae91ae`, 2026-10-26 10:16:08 UTC / 13:46:08 Tehran.
