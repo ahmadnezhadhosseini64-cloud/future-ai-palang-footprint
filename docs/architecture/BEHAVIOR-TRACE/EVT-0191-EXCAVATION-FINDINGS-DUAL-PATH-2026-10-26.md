@@ -14,7 +14,7 @@
 ## Event and behavior lesson
 The previous excavation described the project usefully but did not advance the repository state. The user accepted the findings and required actual registration and execution. This is a report-only/process failure: explanation is not execution.
 
-A second safeguard was revealed by checking the actual repository: POINT-0/023, IN-053, OUT-053, EVT-0186, CURRENT-070 and later POINT-0/024 / CURRENT-071 already existed for earlier work. Reusing those identifiers would create collisions. The correction is to inspect the live register before allocating IDs, preserve existing records, and allocate POINT-0/025, IN/OUT-060, EVT-0191 and CURRENT-072 for this new event.
+A second safeguard was revealed by checking the actual repository: POINT-0/023, IN-053, OUT-053, EVT-0186, CURRENT-070 and later POINT-0/024 / CURRENT-071 already existed for earlier work. Reusing those identifiers would create collisions. A second collision was then found: IN-055 and OUT-055 were already occupied. The temporary files using those IDs were removed. Final unique allocation: POINT-0/025, IN-061, OUT-060, EVT-0191 and CURRENT-072. The corrective rule is to inspect the live register before allocating every root, input, output, event and checkpoint ID, preserve existing records, and independently read back the final chain.
 
 ## Corrective rule
 1. Inspect current root, IN/OUT, event and current checkpoint before numbering.
