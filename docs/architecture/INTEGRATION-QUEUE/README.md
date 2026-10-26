@@ -1957,7 +1957,7 @@ The source blob remained unchanged and Library version 7 was independently read 
 ## POINT-0/025 — Accepted Excavation Findings and Dual-Path Execution (2026-10-26)
 
 - Root: [POINT-0/025](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-025-EXCAVATION-FINDINGS-DUAL-PATH.md)
-- IN/OUT: [IN-055](../../0.0/anchors/PALANG-0.0-IN-20261026-055-EXCAVATION-FINDINGS-DUAL-PATH.md) · [OUT-055](../../0.0/anchors/PALANG-0.0-OUT-20261026-055-EXCAVATION-FINDINGS-DUAL-PATH.md)
+- IN/OUT: [IN-061](../../0.0/anchors/PALANG-0.0-IN-20261026-061-EXCAVATION-FINDINGS-DUAL-PATH.md) · [OUT-060](../../0.0/anchors/PALANG-0.0-OUT-20261026-060-EXCAVATION-FINDINGS-DUAL-PATH.md)
 - Event: [EVT-0191](../BEHAVIOR-TRACE/EVT-0191-EXCAVATION-FINDINGS-DUAL-PATH-2026-10-26.md)
 - Current execution checkpoint: [CURRENT-072](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-072-DUAL-PATH-EXCAVATION.md)
 - Status: REGISTERED / OPEN / LIVING; independent read-back and technical acceptance still required.
