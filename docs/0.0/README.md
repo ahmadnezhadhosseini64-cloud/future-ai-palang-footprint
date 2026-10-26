@@ -1684,3 +1684,12 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - **Active queue:** [NEXT-051](./anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). Do not create NEXT-052.
 - **Cover status:** reversible covers applied; all underlying gaps remain OPEN / ACTIVE. Clean independent host import is NOT RUN until a real destination receipt exists.
 - **Priority:** accelerate clean-host transfer; do not divert this point to Dropbox. Preserve POINT-0/028 and POINT-0+ as history.
+
+
+## Latest user root — POINT-0/031 / CURRENT-078
+- Root: [POINT-0/031](./anchors/GPT6-RAHM-USER-POINT-0-20261026-031-REVERSIBLE-GRAPH-GAP-COVERS-AND-BEHAVIOR-HUNTER.md)
+- Input/output: [IN-066](./anchors/PALANG-0.0-IN-20261026-066-REVERSIBLE-GRAPH-GAP-COVERS-AND-BEHAVIOR-HUNTER.md) → [OUT-065](./anchors/PALANG-0.0-OUT-20261026-065-REVERSIBLE-GRAPH-GAP-COVERS-AND-BEHAVIOR-HUNTER.md)
+- Event: [EVT-0200](../architecture/BEHAVIOR-TRACE/EVT-0200-REVERSIBLE-GRAPH-GAP-COVERS-AND-BEHAVIOR-HUNTER-2026-10-26.md)
+- Checkpoint: [CURRENT-078](./anchors/PALANG-0.0-CURRENT-20261026-078-REVERSIBLE-GRAPH-GAP-COVERS.md)
+- Gap register: [GAP-COVER-REGISTER](../architecture/BEHAVIOR-TRACE/GAP-COVER-REGISTER-2026-10-26.md)
+- Queue: NEXT-051 remains active; no NEXT-052. Covers defer work only; underlying gaps stay OPEN / ACTIVE / LIVING.
