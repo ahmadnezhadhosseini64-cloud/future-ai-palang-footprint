@@ -795,3 +795,18 @@ Current execution checkpoint time binding: [TIME-BINDING-CURRENT-072](../../arch
 ## Follow-up — pointer-scope correction validated (2026-10-26)
 
 On tested SHA 453761e8f79a42e606a72a3215876fbb2724d952, Living Architecture Audit run [40267550332](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40267550332) passed the scope-aware pointer test. Result: SCOPED_CONSISTENT, winner_selected=false. CURRENT-066 remains the bounded overlay-recovery pointer; CURRENT-072 is the global project continuation. This resolves the false conflict caused by mixing scopes and historical append-only claims; it does not close the remaining graph identity/parent review or independent-host/runtime gates.
+
+
+
+## 10. Latest continuation — POINT-0/026 and dual-path execution
+
+The newest root is [POINT-0/026](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-026-DUAL-PATH-HAIF-CONTINUATION.md), with [IN-062](../../0.0/anchors/PALANG-0.0-IN-20261026-062-DUAL-PATH-HAIF-CONTINUATION.md), [OUT-061](../../0.0/anchors/PALANG-0.0-OUT-20261026-061-DUAL-PATH-HAIF-CONTINUATION.md), [EVT-0192](../../architecture/BEHAVIOR-TRACE/EVT-0192-USER-REQUEST-POINT-0-DUAL-PATH-HAIF-CONTINUATION-2026-10-26.md) and [CURRENT-073](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-073-DUAL-PATH-HAIF-CONTINUATION.md). This append-only continuation pointer does not overwrite previous roots or snapshots.
+
+### Path A — portable initial model
+Continue reproducible package build, schema and live-reference checks, fresh extraction/import, then an independent authorized AI-host import and restart/recovery test. Local tests or repository CI are not evidence that an external host import has occurred. Independent host import remains NOT RUN until an actual authorized route is available.
+
+### Path B — existing graph excavation
+Continue from NEXT-051. The latest carried-forward exact-head audit has pointer discovery SCOPED_CONSISTENT and structural checks passing, but the semantic graph remains REVIEW_REQUIRED. The recorded inventory includes 62 unreviewed Stable-ID groups and 13 ambiguous parent edges, plus Production-ID, Reference-ID, event-number and exact-content duplicate groups. Review each occurrence with provenance; do not bulk merge, delete, or select a winner by numeric order.
+
+### Shared execution contract
+Both paths are mandatory, parallel and separately gated. Preserve every historical anchor, error and superseded version. After each write, read back and match. Run fresh exact-head audits and record the tested SHA and artifacts. UTC is the canonical repository time; Asia/Tehran is derived from the same instant. External destinations remain independently unverified unless directly tested. Dropbox remains out of scope unless explicitly reopened.
