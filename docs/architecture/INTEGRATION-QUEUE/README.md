@@ -3,13 +3,13 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.9.5
+- Version: 1.9.6
 - Date: 2026-10-26
 - Exact Time: 11:25 local project time, minute precision; exact seconds not captured.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: POINT-0/036 is the latest user-turn root; CURRENT-084 is the active execution checkpoint; identifier-header extraction and source-specific parent resolution are implemented and wired to the living audit's test/compile steps; exact-head audit and portable conformance after this registration are PENDING; CURRENT-065/CURRENT-066 lineage remains OPEN; NEXT-051 remains the single active queue; no NEXT-052 placeholder.
+- Status: POINT-0/036 is the canonical root with 0+ production marker; CURRENT-085 is the active execution checkpoint; latest known exact-head audit and portable conformance on SHA 18ccbef16e5bae6e9e31879de8cf575c1c371bec passed; two parent edges and remaining identity groups stay OPEN; external interactive-host import remains NOT RUN; NEXT-051 remains the single active queue; no NEXT-052 placeholder.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
@@ -17,6 +17,16 @@
 
 ## 2. اصل حاکم
 PENDING ≠ LOST (در انتظار ≠ گم‌شده). ثبت در این صف به معنی ادغام در معماری مادر نیست. هیچ موردی تا وقتی مقصد نهایی به‌روزرسانی، بازخوانی و تطبیق نشده، INTEGRATED / VERIFIED (یکپارچه‌شده / تأییدشده) اعلام نمی‌شود.
+
+
+
+## Latest 0+ continuation — POINT-0/036 → CURRENT-085
+
+- Chain: IN-073 → OUT-072 → EVT-0207 → CURRENT-085; 0+ is attached to POINT-0/036 and is not a competing root.
+- Verified baseline SHA: `18ccbef16e5bae6e9e31879de8cf575c1c371bec`; audit run [40348805748](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40348805748); portable conformance run [40348805726](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40348805726).
+- The latest verified audit found zero missing local links and two unresolved parent edges. It found 1 unreviewed Stable-ID group, 66 unreviewed Production-ID groups, 5 unreviewed Reference-ID groups, 3 unreviewed event-number groups and 11 exact-content duplicate groups requiring role/provenance decisions.
+- Path A remains focused on portable model transfer and real-host acceptance; Path B remains focused on historical graph adjudication. Both are governed by the same MASTER/RAHM/CHILD architecture but retain independent proof gates.
+- Next: inspect the two unresolved parent edges from the audit artifact; resolve only with source evidence, then adjudicate remaining identity groups in small batches and rerun both workflows on the same final SHA.
 
 ## 3. فهرست موارد
 
