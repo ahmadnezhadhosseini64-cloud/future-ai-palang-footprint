@@ -2,9 +2,9 @@
 
 - Stable ID: `G6IP-RAHM-NEXT-051-20261024`
 - Production ID: `G6IP-NEXT-051`
-- Version: 1.0.9
+- Version: 1.0.10
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE.
-- Historical parent: [CURRENT-057](./PALANG-0.0-CURRENT-20261024-057-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md) (historical; current parent is CURRENT-059 as specified below).
+- Historical parent: [CURRENT-057](./PALANG-0.0-CURRENT-20261024-057-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md) (historical); latest root/checkpoint observed: POINT-0/027 → CURRENT-074. NEXT-051 remains the active existing remediation queue.
 - Preserve existing gates: [NEXT-050](./PALANG-0.0-NEXT-20261024-050-FULL-RECOVERY-AND-REAL-HOST-IMPORT.md), [NEXT-049](./PALANG-0.0-NEXT-20261024-049-REAL-HOST-TRANSFER-AND-GRAPH-AUDIT.md)
 
 ## Ordered actions
@@ -282,3 +282,12 @@ NEXT-051 remains OPEN/LIVING until all remaining acceptance gates are satisfied;
 - Builder summary now exposes partial-review counts separately for Stable ID, Production ID, Reference ID and event-number groups.
 - Latest exact-head Living Architecture Audit and Portable RAHM Conformance receipts are still required before marking these code changes validated. Do not mark the semantic graph closed based on this implementation alone.
 - Preserve the historic 11 exact-content duplicate groups and all source paths. Continue one case at a time; no bulk merge or renumbering.
+
+
+## EVT-0194 — recurring live mirror sync evidence (2026-10-26)
+
+- Event: [EVT-0194](../../architecture/BEHAVIOR-TRACE/EVT-0194-LIVE-MIRROR-SYNC-RECHECK-2026-10-26.md); time binding: [TIME-BINDING-EVT-0194](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0194-LIVE-MIRROR-SYNC-2026-10-26.md).
+- Canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10` unchanged; Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, version 7, differs only by one extra trailing newline (edit distance 1). Semantic match passes within tolerance; no redundant Library rewrite was performed.
+- Latest root/checkpoint discovered during this run: POINT-0/027 / CURRENT-074. NEXT-051 remains the only active remediation queue; this mirror event does not create a successor NEXT.
+- Latest retrieved full Living Architecture Audit 40267412937 passed on SHA `6d6623a681cc7012dc0705d141197de7f818fcf0`, with scoped pointer consistency only. Exact-current-main audit and Portable RAHM Conformance remain NOT VERIFIED.
+- Keep CURRENT-065/CURRENT-066 OPEN; preserve overlay/global scopes, historical points and collision evidence. Issues #20/#21 and BOART-FOLLOWUP-01 remain OPEN.
