@@ -1,8 +1,8 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.8.3",
-  "manifest_status": "POINT-0/020 chain, CURRENT-067 and EVT-0183 receipts referenced; tested commit passed pointer/runtime/schema/recovery/digest checks; pointer ambiguity and graph review remain OPEN",
-  "created_from_checkpoint": "G6IP-CURRENT-066-20261025 + HAIF-RUNTIME-0.1",
+  "version": "1.8.4",
+  "manifest_status": "POINT-0/029, CURRENT-077, IN-065, OUT-064 and EVT-0199 included in live transfer references; all gaps remain OPEN; exact-final-SHA conformance and clean-host import required",
+  "created_from_checkpoint": "HAIF-CURRENT-077-20261026 + HAIF-RUNTIME-0.1",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [
     {
@@ -371,7 +371,17 @@
     "docs/0.0/README.md",
     "scripts/behavior-hunter/discover_current_0_0_pointer.py",
     "scripts/behavior-hunter/tests/test_discover_current_0_0_pointer.py",
-    "docs/architecture/BEHAVIOR-TRACE/EVT-0183-POINTER-PARSER-FIX-AND-PORTABLE-CONFORMANCE-RECEIPTS-2026-10-25.md"
+    "docs/architecture/BEHAVIOR-TRACE/EVT-0183-POINTER-PARSER-FIX-AND-PORTABLE-CONFORMANCE-RECEIPTS-2026-10-25.md",
+    "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-029-REVERSIBLE-GAP-COVERS-AND-FAST-HOST-TRANSFER.md",
+    "docs/0.0/anchors/PALANG-0.0-CURRENT-20261026-077-REVERSIBLE-GAP-COVERS.md",
+    "docs/0.0/anchors/PALANG-0.0-IN-20261026-065-REVERSIBLE-GAP-COVERS-AND-FAST-HOST-TRANSFER.md",
+    "docs/0.0/anchors/PALANG-0.0-OUT-20261026-064-REVERSIBLE-GAP-COVERS-AND-FAST-HOST-TRANSFER.md",
+    "docs/architecture/BEHAVIOR-TRACE/EVT-0199-REVERSIBLE-GAP-COVERS-AND-FAST-HOST-TRANSFER-2026-10-26.md",
+    "docs/portable/RAHM/QUICK-TRANSFER-CHECKLIST.md",
+    "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-PLUS-20261026-028-PORTABLE-GPT6-MILESTONE.md",
+    "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-028-PORTABLE-GPT6-EXECUTION-AND-RECOVERY.md",
+    "docs/0.0/anchors/PALANG-0.0-CURRENT-20261026-076-POINT-0-PLUS-ARCHITECTURE-CLOSURE.md",
+    "docs/architecture/BEHAVIOR-TRACE/EVT-0197-POINT-0-PLUS-HIGHLIGHT-AND-ARCHITECTURE-CLOSURE-2026-10-26.md"
   ],
   "live_reference_policy": "Mutable current-state and startup/governance references are included in each export and receive exact SHA-256 plus Git blob SHA-1 observations in the same CI run. This includes RAHM_BOOT and RAHM_ARCHITECTURE because their canonical checkpoint binding must track the current live chain. Stable core remains digest-pinned."
 }
