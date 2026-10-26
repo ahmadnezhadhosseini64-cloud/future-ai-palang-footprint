@@ -7,7 +7,7 @@
 - Point: [POINT-0/032](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-032-MASTER-RAHM-CHILD-ARCHITECTURE.md)
 - Input: [IN-068](../../0.0/anchors/PALANG-0.0-IN-20261026-068-MASTER-RAHM-CHILD-CLARIFICATION.md)
 - Output: [OUT-067](../../0.0/anchors/PALANG-0.0-OUT-20261026-067-MASTER-RAHM-CHILD-CLARIFICATION.md)
-- Prior checkpoint: [CURRENT-079](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-079-MASTER-RAHM-CHILD-ARCHITECTURE.md)
+- Prior checkpoint: [CURRENT-079](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-079-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION.md)
 
 ## Event
 The user clarified that the initial-model package and interactive environment already exist and must be extended, not duplicated. MASTER remains canonical authority; RAHM receives a controlled package and creates testable candidates; CHILD promotion requires independent tests and explicit MASTER acceptance.
