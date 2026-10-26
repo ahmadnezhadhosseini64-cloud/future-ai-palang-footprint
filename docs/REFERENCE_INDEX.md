@@ -1562,3 +1562,5 @@ Current continuation chain: POINT-0/013 → IN-057 → OUT-056 → EVT-0166 → 
 | HAIF-CURRENT-072-DUAL-PATH-EXCAVATION-20261026 | `docs/0.0/anchors/PALANG-0.0-CURRENT-20261026-072-DUAL-PATH-EXCAVATION.md` | Next executable checkpoint for both paths | ACTIVE / LIVING / OPEN / EXECUTION REQUIRED |
 
 Invariant: Path A (initial model construction) and Path B (existing graph remediation) must both advance. NEXT-051 remains active. Independent-host import, persistence, automatic capture and background execution remain unverified until direct evidence exists.
+
+- Current continuation: [CURRENT-072](./0.0/anchors/PALANG-0.0-CURRENT-20261026-072-DUAL-PATH-EXCAVATION.md); NEXT-051 remains active.
