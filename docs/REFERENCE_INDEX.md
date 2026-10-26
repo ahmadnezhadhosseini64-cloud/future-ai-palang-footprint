@@ -1716,3 +1716,4 @@ Both Path A (portable initial model and independent-host recovery) and Path B (e
 - [Interactive Project Validation Runbook](architecture/MASTER-RAHM-CHILD/INTERACTIVE-PROJECT-VALIDATION-RUNBOOK.md) — includes a copy/paste prompt for real destination testing.
 - Status: interactive destination import/restart/round-trip are OPEN / NOT RUN until destination receipts are returned.
 
+- [TIME-BINDING-POINT-0-034](architecture/BEHAVIOR-TRACE/TIME-BINDING-POINT-0-034-EVT-0204-2026-10-26.md) — canonical Git commit timestamp and UTC/Tehran equivalence.
