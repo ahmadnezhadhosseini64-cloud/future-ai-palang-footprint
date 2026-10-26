@@ -829,3 +829,12 @@ The canonical live-destination audit source and its exact Library version-7 snap
 - Current root/checkpoint/queue: POINT-0/027 / CURRENT-074 / NEXT-051. Earlier points and EVT-0177 remain preserved.
 - CURRENT-065/CURRENT-066 remains OPEN. The latest retrieved full audit (40267412937 on SHA `6d6623a681cc7012dc0705d141197de7f818fcf0`) found scoped consistency between CURRENT-066 in overlay recovery and CURRENT-072 in the global project registry, with `winner_selected=false`; it does not validate the later main head.
 - Issues #20/#21, BOART-FOLLOWUP-01, external-host import, persistence, automatic capture and external destination gates remain open unless separate direct evidence closes them.
+
+
+## Live mirror sync continuation — EVT-0196 (2026-10-26)
+- Event: [EVT-0196](../../architecture/BEHAVIOR-TRACE/EVT-0196-LIVE-MIRROR-SYNC-RECHECK-2026-10-26.md); time binding: [TIME-BINDING-EVT-0196](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0196-LIVE-MIRROR-SYNC-2026-10-26.md).
+- The canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10` remains unchanged at 10,479 characters. Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, version 7, is 10,480 characters; edit distance 1 from one extra trailing newline. Semantic fields match; no redundant Library write.
+- Latest root/checkpoint/active queue: POINT-0/028 / CURRENT-075 / NEXT-051. Historical POINT-0/016, POINT-0/017, POINT-0/018 and EVT-0177 remain preserved.
+- Two files use EVT-0195. This is an unresolved event-number collision; preserve both and do not choose a canonical file by inference. Continue case-level review under NEXT-051; do not create NEXT-052.
+- Latest observed Living Architecture Audit passed on tested SHA `8e0f28b05eab22e91467cfc0c9585b93faad37ac`; Portable RAHM Conformance passed on `c70f9068cb52c9deea329e88b51af58ff9ce7007`. These do not certify a later main head. Exact-current-main verification remains pending.
+- Issues #20/#21 remain OPEN. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent clean-host recovery NOT RUN.
