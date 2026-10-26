@@ -1659,3 +1659,9 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - Current checkpoint: [CURRENT-076](./anchors/PALANG-0.0-CURRENT-20261026-076-POINT-0-PLUS-ARCHITECTURE-CLOSURE.md).
 - Event: [EVT-0197](../architecture/BEHAVIOR-TRACE/EVT-0197-POINT-0-PLUS-HIGHLIGHT-AND-ARCHITECTURE-CLOSURE-2026-10-26.md). Existing active queue: NEXT-051.
 - All 0 rules apply unchanged. Preserve prior points and collision evidence. Do not create NEXT-052. External host import and exact-current-head conformance remain open until proven.
+
+
+## POINT-0/029 — Current user-designated root (2026-10-26)
+- New root: [POINT-0/029](./anchors/PALANG-0.0-POINT-0-029-CONTINUE-HAIF-ARCHITECTURE-2026-10-26.md); event: [EVT-0197](../architecture/BEHAVIOR-TRACE/EVT-0197-USER-REQUEST-NEW-POINT-0-AND-CONTINUE-2026-10-26.md).
+- Parent: POINT-0/028. Current execution checkpoint observed: CURRENT-075. Existing active queue: NEXT-051; do not create NEXT-052.
+- This new root preserves POINT-0/016, /017, /018 and all later history. All next actions are tracked as 0.0 checkpoints in the root record. Exact-current-main audit and independent-host recovery remain unverified/open.
