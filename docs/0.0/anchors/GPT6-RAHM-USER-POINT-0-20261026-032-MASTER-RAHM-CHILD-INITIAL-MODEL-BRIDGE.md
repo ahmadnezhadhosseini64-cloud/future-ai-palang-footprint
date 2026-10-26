@@ -37,3 +37,8 @@ The original Future AI / Palang Footprint project is the **MASTER**: it owns acc
 
 ## Recovery rule
 Resume from [CURRENT-079](./PALANG-0.0-CURRENT-20261026-079-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION.md), then the bridge contract and NEXT-051. Preserve CURRENT-078 and all older points as history. This point does not claim that external interactive-project testing has already occurred.
+
+
+## Interactive-project test entry
+- Runbook: [Interactive Project Validation Runbook](../../architecture/MASTER-RAHM-CHILD/INTERACTIVE-PROJECT-VALIDATION-RUNBOOK.md)
+- It contains a paste-ready prompt, 10 test cases, result-receipt template and return protocol. It is ready to run, but actual project execution is NOT RUN until the destination supplies receipts.
