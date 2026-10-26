@@ -1649,3 +1649,10 @@ Both Path A (portable initial model and independent-host recovery) and Path B (e
 - Event: [EVT-0197](architecture/BEHAVIOR-TRACE/EVT-0197-USER-REQUEST-NEW-POINT-0-AND-CONTINUE-2026-10-26.md)
 - Parent root: POINT-0/028. Current checkpoint: CURRENT-075. Active queue: NEXT-051 only.
 - Exact-current-main audit, clean-host recovery, Buffer/Persistent Memory, Dropbox and Issues #20/#21 remain open or unverified until direct evidence changes their status.
+
+
+## POINT-0/030 — Current continuation root (2026-10-26)
+- Root: [POINT-0/030](0.0/anchors/PALANG-0.0-POINT-0-030-CONTINUE-FROM-029-2026-10-26.md)
+- Event: [EVT-0198](architecture/BEHAVIOR-TRACE/EVT-0198-USER-REQUEST-POINT-0-030-AND-CONTINUE-2026-10-26.md)
+- Parent: POINT-0/029. Active queue: NEXT-051 only; NEXT-052 is not authorized.
+- CURRENT-065/CURRENT-066, Issues #20/#21, Buffer/Persistent Memory, Dropbox and independent-host recovery remain open/unverified as recorded in the root.
