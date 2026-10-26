@@ -25,32 +25,33 @@ CURRENT_ID = re.compile(r"\bCURRENT-(?:\d{8}-)?(\d{3})\b")
 
 
 def explicit_registry_claims(text: str, source: str) -> list[dict]:
-    """Return only lines that assert a live/current execution pointer.
+    """Return the latest explicit live pointer claim from one append-only registry.
 
-    Historical headings and ordinary links are deliberately ignored. The rules
-    are narrow and reviewable; new registry wording must be added with a fixture.
+    Older lines that once said CURRENT-X was live must not compete with a later
+    explicit continuation. This chooses only the latest declaration within this
+    source and never rewrites or deletes historical records.
     """
+    patterns = (
+        re.compile(r"\b(CURRENT-(?:\d{8}-)?\d{3})\s+remains current\b", re.I),
+        re.compile(r"current point:\s*\[?(CURRENT-(?:\d{8}-)?\d{3})", re.I),
+        re.compile(r"current continuation:\s*\[?(CURRENT-(?:\d{8}-)?\d{3})", re.I),
+        re.compile(r"canonical live checkpoint is now\s+\[?(CURRENT-(?:\d{8}-)?\d{3})", re.I),
+        re.compile(r"current execution continuation remains\s+\[?(CURRENT-(?:\d{8}-)?\d{3})", re.I),
+    )
     claims = []
     for line_no, line in enumerate(text.splitlines(), 1):
-        lower = line.lower()
-        explicit = (
-            "remains current" in lower
-            or "current point:" in lower
-            or "current continuation:" in lower
-            or "canonical live checkpoint is now" in lower
-            or "current execution continuation remains" in lower
-        )
-        if not explicit:
-            continue
-        for match in CURRENT_ID.finditer(line):
-            claims.append({
-                "source": source,
-                "line": line_no,
-                "current_id": "CURRENT-" + match.group(1),
-                "declaration": line.strip(),
-            })
-    return claims
-
+        for pattern in patterns:
+            match = pattern.search(line)
+            if match:
+                claims.append({
+                    "source": source,
+                    "line": line_no,
+                    "current_id": match.group(1).upper(),
+                    "declaration": line.strip(),
+                    "scope": "global_project_registry",
+                })
+                break
+    return claims[-1:]
 
 def discover_from_texts(manifest_text: str, verifier_text: str, portable_text: str,
                         registry_texts: dict[str, str]) -> dict:
@@ -105,23 +106,51 @@ def discover_from_texts(manifest_text: str, verifier_text: str, portable_text: s
                 "declaration": portable_claim.strip(),
             })
 
+    # The manifest, verifier and portable master describe a bounded overlay
+    # recovery scope. Append-only registries describe the global project pointer.
+    # Different IDs can be valid across these scopes and must not be conflated.
+    for declaration in declarations:
+        declaration["scope"] = "overlay_recovery"
+    overlay_declarations = list(declarations)
+    registry_declarations = []
     for source, text in registry_texts.items():
-        declarations.extend(explicit_registry_claims(text, source))
+        registry_declarations.extend(explicit_registry_claims(text, source))
+    declarations.extend(registry_declarations)
 
+    overlay_ids = sorted({d["current_id"] for d in overlay_declarations})
+    registry_ids = sorted({d["current_id"] for d in registry_declarations})
+    registry_sources = {d["source"] for d in registry_declarations}
+    unique_ids = sorted({d["current_id"] for d in declarations})
     by_source = {}
     for declaration in declarations:
         by_source.setdefault(declaration["source"], []).append(declaration["current_id"])
-    unique_ids = sorted({d["current_id"] for d in declarations})
-    status = "BLOCKED" if failures else ("CONSISTENT" if len(unique_ids) == 1 else "AMBIGUOUS")
+
+    if failures:
+        status = "BLOCKED"
+    elif len(overlay_ids) != 1 or len(registry_ids) > 1:
+        status = "AMBIGUOUS"
+    elif not registry_ids:
+        status = "CONSISTENT" if len(overlay_ids) == 1 else "AMBIGUOUS"
+    elif overlay_ids[0] == registry_ids[0]:
+        status = "CONSISTENT"
+    elif len(registry_sources) == len(REGISTRY_SOURCES):
+        status = "SCOPED_CONSISTENT"
+    else:
+        status = "AMBIGUOUS"
+
     return {
-        "test_id": "HAIF-CURRENT-POINTER-DISCOVERY-0.1",
+        "test_id": "HAIF-CURRENT-POINTER-DISCOVERY-0.2",
         "status": status,
         "winner_selected": False,
         "candidate_ids": unique_ids,
+        "scopes": {
+            "overlay_recovery_current": overlay_ids,
+            "global_project_current": registry_ids,
+        },
         "declarations": declarations,
         "source_ids": by_source,
         "failures": failures,
-        "rule": "A conflict is evidence of ambiguity, not permission to choose the numerically largest anchor.",
+        "rule": "Use the latest live declaration per append-only registry. Keep overlay recovery and global project pointers in separate scopes; never choose a winner by numeric order.",
     }
 
 
@@ -146,7 +175,7 @@ def main() -> int:
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(result, ensure_ascii=False))
-    return 0 if result["status"] == "CONSISTENT" else 2
+    return 0 if result["status"] in ("CONSISTENT", "SCOPED_CONSISTENT") else 2
 
 
 if __name__ == "__main__":
