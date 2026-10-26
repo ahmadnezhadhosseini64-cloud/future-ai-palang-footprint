@@ -1748,3 +1748,11 @@ Both Path A (portable initial model and independent-host recovery) and Path B (e
 - [CURRENT-086](0.0/anchors/PALANG-0.0-CURRENT-20261026-086-PORTABLE-HOST-READINESS.md) — active continuation checkpoint.
 - Package artifact: [haif-rahm-portable-package](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40355991343/artifacts/12663829740); tested package SHA-256: `0864ff217585d03ffb649ca1f5c1a4b5404d6fa5bc7166be4c1e4c803d4b330f`.
 - External interactive host remains NOT RUN; continue I1–I8 and graph cleanup through NEXT-051.
+
+
+### Canonical time bindings — POINT-0/037
+- [POINT-0/037 UTC/Tehran binding](architecture/BEHAVIOR-TRACE/TIME-BINDING-POINT-0-037-POINT-0-037-2026-10-26.md) — 2026-10-26T16:35:50Z / 20:05:50 +03:30.
+- [IN-074 UTC/Tehran binding](architecture/BEHAVIOR-TRACE/TIME-BINDING-IN-074-POINT-0-037-2026-10-26.md) — 2026-10-26T16:35:56Z / 20:05:56 +03:30.
+- [OUT-073 UTC/Tehran binding](architecture/BEHAVIOR-TRACE/TIME-BINDING-OUT-073-POINT-0-037-2026-10-26.md) — 2026-10-26T16:36:03Z / 20:06:03 +03:30.
+- [EVT-0208 UTC/Tehran binding](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0208-POINT-0-037-2026-10-26.md) — 2026-10-26T16:36:10Z / 20:06:10 +03:30.
+- [CURRENT-086 UTC/Tehran binding](architecture/BEHAVIOR-TRACE/TIME-BINDING-CURRENT-086-POINT-0-037-2026-10-26.md) — 2026-10-26T16:36:15Z / 20:06:15 +03:30.
