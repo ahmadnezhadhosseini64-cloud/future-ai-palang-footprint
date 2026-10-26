@@ -49,7 +49,8 @@ class SemanticRoleDecisionTests(unittest.TestCase):
         self.assertEqual(review["unreviewed_paths"], ["reference.md"])
         self.assertEqual(summary["groups_reviewed"], 0)
         self.assertEqual(summary["groups_partially_reviewed"], 1)
-        self.assertEqual(summary["groups_unreviewed"], 1)
+        self.assertEqual(summary["groups_unreviewed"], 0)
+        self.assertEqual(summary["groups_open"], 1)
 
     def test_two_partial_decisions_can_complete_group(self):
         first = dict(self.decision)
@@ -91,6 +92,24 @@ class SemanticRoleDecisionTests(unittest.TestCase):
         groups, summary = apply_role_decisions([self.group], self.nodes, [first, second])
         self.assertEqual(groups[0]["semantic_review"]["status"], "PARTIALLY-ROLE-ADJUDICATED")
         self.assertEqual(summary["decisions_rejected"][0]["reason"], "role_conflict")
+
+    def test_rekey_required_group_is_not_counted_as_closed(self):
+        decision = dict(self.decision)
+        decision["resolution_class"] = "REKEY_REQUIRED"
+        groups, summary = apply_role_decisions([self.group], self.nodes, [decision])
+        self.assertEqual(groups[0]["semantic_review"]["status"], "ROLE-ADJUDICATED-REKEY-REQUIRED")
+        self.assertEqual(summary["groups_reviewed"], 0)
+        self.assertEqual(summary["groups_rekey_required"], 1)
+        self.assertEqual(summary["groups_open"], 1)
+
+    def test_lineage_review_group_is_not_counted_as_closed(self):
+        decision = dict(self.decision)
+        decision["resolution_class"] = "LINEAGE_REVIEW_REQUIRED"
+        groups, summary = apply_role_decisions([self.group], self.nodes, [decision])
+        self.assertEqual(groups[0]["semantic_review"]["status"], "ROLE-ADJUDICATED-OPEN-LINEAGE")
+        self.assertEqual(summary["groups_reviewed"], 0)
+        self.assertEqual(summary["groups_lineage_review_required"], 1)
+        self.assertEqual(summary["groups_open"], 1)
 
     def test_wrong_identifier_does_not_apply(self):
         bad = dict(self.decision)
