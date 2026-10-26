@@ -840,3 +840,12 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - [Event](./EVT-0195-PORTABLE-GPT6-EXECUTION-AND-RECOVERY-2026-10-26.md); root [POINT-0/028](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-028-PORTABLE-GPT6-EXECUTION-AND-RECOVERY.md); checkpoint [CURRENT-075](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-075-PORTABLE-GPT6-EXECUTION-AND-RECOVERY.md).
 - User priority: expedite portable HAIF/RAHM model readiness for a new GPT-6 host. Existing Palang Mirror Sync automation `6ad9a407b9d481919c7145fbe4638dec` remains enabled; immediate run requested, completion not yet confirmed.
 - Exact-current-head conformance/audit and external host import are not claimed. NEXT-051 remains active; no NEXT-052 created.
+
+
+## EVT-0196 — Live mirror recheck (2026-10-26)
+- Event: [EVT-0196](./EVT-0196-LIVE-MIRROR-SYNC-RECHECK-2026-10-26.md); time binding: [TIME-BINDING-EVT-0196](./TIME-BINDING-EVT-0196-LIVE-MIRROR-SYNC-2026-10-26.md).
+- Source blob `de1b75f07241c9b313e476af5f1417177ff78c10`, 10,479 characters; Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, version 7, 10,480 characters. Edit distance 1, only one extra trailing newline; semantic fields match. No redundant Library rewrite.
+- Latest root/checkpoint/queue: POINT-0/028 → CURRENT-075 → NEXT-051. Issues #20/#21 OPEN. CURRENT-065/CURRENT-066 remains OPEN.
+- Two separate files claim EVT-0195; preserve both and keep the collision unresolved until source-backed adjudication. No NEXT-052.
+- Latest retrieved Living Architecture Audit run 40281757520 passed on `8e0f28b05eab22e91467cfc0c9585b93faad37ac`; Portable RAHM Conformance run 40281711445 passed on `c70f9068cb52c9deea329e88b51af58ff9ce7007`. Neither is proof for a later main head.
+- Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent clean-host recovery NOT RUN.
