@@ -55,3 +55,27 @@
 - Dropbox: OPEN / NOT VERIFIED.
 - Independent clean GPT-6 host import / external end-to-end recovery: NOT RUN.
 - Continue BOART-FOLLOWUP-01 and existing NEXT-051. The full current-main audit, strict conformance on the exact final SHA, issue closure and external-host proof remain open.
+
+
+## 6. Follow-through registration commits — source-backed time bindings
+
+The following changed files were independently read back after their writes. UTC is the canonical repository commit time; Tehran is derived from the same instant. These are the final-change commits for the listed files as observed in this registration sequence.
+
+| Artifact | Final-change commit | UTC | Asia/Tehran |
+|---|---|---|---|
+| EVT-0196 | `83bcf59d35b3b1b4e0b20c2bfbb995c4ee0d0c04` | `2026-10-26T06:48:08Z` | `2026-10-26T10:18:08+03:30` |
+| Behavior-trace index | `131896b36710cccad42eb05834bdccd3698a6187` | `2026-10-26T06:50:12Z` | `2026-10-26T10:20:12+03:30` |
+| Reference index | `33a1d27d0a3acdea1d4920e93fd7b77961cab551` | `2026-10-26T06:50:16Z` | `2026-10-26T10:20:16+03:30` |
+| Integration queue | `a84af710b3569b53a7dff4a5a2bcc5baa7124a45` | `2026-10-26T06:50:20Z` | `2026-10-26T10:20:20+03:30` |
+| Living continuation master | `7916b651a56952e23ebee86c205d8919b6f50f93` | `2026-10-26T06:50:24Z` | `2026-10-26T10:20:24+03:30` |
+| NEXT-051 | `d6b0174ef70584bdd7d47eb2b01d03a300795da8` | `2026-10-26T06:50:30Z` | `2026-10-26T10:20:30+03:30` |
+
+- This binding's own final-change commit is determined from GitHub commit metadata after the addendum write; it is not self-asserted in this file.
+- Main head observed before this addendum: `4556fa0067c48a937207d99ef498b5a9775e78e5`, commit UTC `2026-10-26T06:50:42Z`, Tehran `2026-10-26T10:20:42+03:30`. That head was produced by Evidence Gate run `40282187020`, which tested `d6b0174ef70584bdd7d47eb2b01d03a300795da8`. The new head `4556fa...` is NOT VERIFIED by that run.
+
+## 7. Exact-SHA acceptance boundary
+
+- Living Architecture Audit [40282186803](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40282186803) passed on tested SHA `d6b0174ef70584bdd7d47eb2b01d03a300795da8`.
+- Portable RAHM Conformance [40282187167](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40282187167) passed on the same tested SHA `d6b0174ef70584bdd7d47eb2b01d03a300795da8`.
+- Evidence Gate [40282187020](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40282187020) also passed on `d6b0174ef70584bdd7d47eb2b01d03a300795da8`, then wrote evidence commit `4556fa0067c48a937207d99ef498b5a9775e78e5`.
+- Therefore the post-Evidence-Gate main head is not covered by the preceding audit or conformance result. Any newer head must receive its own exact-SHA audit and conformance receipts. Do not claim whole-project or external-host completion.
