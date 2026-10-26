@@ -357,3 +357,14 @@ The canonical live checkpoint is now [CURRENT-066](../../0.0/anchors/PALANG-0.0-
 - The current interaction checkpoint does not by itself promote a canonical execution pointer. CURRENT-065/CURRENT-066 declarations remain OPEN/AMBIGUOUS until source-backed adjudication.
 - Audit run [40176902366](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40176902366) exposed a parser defect: date-bearing CURRENT filenames were not accepted by the identifier pattern. Parser and regression fixture are now written; exact-head CI result is pending.
 - NEXT-051 remains the active work queue. Runtime, clean recovery, independent host, second host, persistence restart, automatic capture/background execution, external storage and full graph triage remain OPEN/NOT PROVEN.
+
+
+## POINT-0+ — highlighted milestone, same governance as POINT-0 (2026-10-26)
+- Highlight marker: [POINT-0+](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-PLUS-20261026-028-PORTABLE-GPT6-MILESTONE.md)
+- Canonical root: [POINT-0/028](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-028-PORTABLE-GPT6-EXECUTION-AND-RECOVERY.md)
+- Checkpoint: [CURRENT-076](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-076-POINT-0-PLUS-ARCHITECTURE-CLOSURE.md)
+- Event: [EVT-0197](../../architecture/BEHAVIOR-TRACE/EVT-0197-POINT-0-PLUS-HIGHLIGHT-AND-ARCHITECTURE-CLOSURE-2026-10-26.md)
+- Rule: 0+ is a significance/highlight overlay only. All 0 governance applies unchanged: preserve history, stable/prod IDs, provenance, UTC canonical repository commit time plus derived Tehran equivalent, independent read-back, explicit statuses and no unsupported claims.
+- Eight relevant CI runs passed on SHA 282cb1acd859c188f4cbb2443a960a013380d385. Evidence Gate then added commit 3924818996f679d80a8335cab2429177c2ceba36, so that later HEAD was not covered by the earlier test batch. Re-run full conformance and audit on the exact final HEAD after all changes.
+- Do not equate CI transfer harness success with a separate consumer ChatGPT/GPT-6 host being initialized. External clean-host import/recovery remains NOT RUN until a direct receipt exists.
+- NEXT-051 remains active; no NEXT-052. CURRENT-065/CURRENT-066 and Issues #20/#21 remain open. Preserve duplicate EVT-0195 artifacts and their collision record.
