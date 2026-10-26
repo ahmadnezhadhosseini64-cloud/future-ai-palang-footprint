@@ -2008,3 +2008,11 @@ The current root is [POINT-0/027](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261
 - Latest root/checkpoint: POINT-0/028 / CURRENT-075. Continue the existing NEXT-051; no NEXT-052.
 - The two EVT-0195 files are an unresolved event-number collision. Preserve both and adjudicate source-backed; do not silently renumber or merge.
 - Current-main full audit and Portable RAHM Conformance must be verified on the exact final SHA. Issues #20/#21, Buffer/Persistent Memory, Dropbox and independent-host recovery retain their open statuses.
+
+
+## POINT-0+ highlighted closure track
+- Highlight marker: [POINT-0+](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-PLUS-20261026-028-PORTABLE-GPT6-MILESTONE.md); canonical root remains POINT-0/028; current checkpoint CURRENT-076.
+- Event: [EVT-0197](../BEHAVIOR-TRACE/EVT-0197-POINT-0-PLUS-HIGHLIGHT-AND-ARCHITECTURE-CLOSURE-2026-10-26.md).
+- All 0 rules apply unchanged. NEXT-051 remains active; no NEXT-052.
+- Latest observed CI batch passed on SHA 282cb1acd859c188f4cbb2443a960a013380d385, but Evidence Gate follow-up commit 3924818996f679d80a8335cab2429177c2ceba36 moved main afterward. Exact-current-head conformance/audit must be repeated after this update batch.
+- Keep CURRENT-065/CURRENT-066 and Issues #20/#21 open. Preserve both EVT-0195 files and the collision lineage. External consumer GPT-6 host import remains NOT RUN until direct proof.
