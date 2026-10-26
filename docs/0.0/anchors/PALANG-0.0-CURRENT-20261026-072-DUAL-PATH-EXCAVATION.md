@@ -26,15 +26,15 @@ Path A and Path B are both mandatory, coordinated and separately gated. Progress
 - [ ] Keep Issue #20, Issue #21, BOART-FOLLOWUP-01 and all unresolved findings in NEXT-051 unless evidence justifies a documented move.
 
 ## Shared integration
-- [ ] Link this chain from the 0.0 registry, reference index, integration queue, living master and behavior-trace index.
-- [ ] Independently fetch each new file and compare identifiers, versions, statuses and relative links.
+- [x] Link this chain from the 0.0 registry, reference index, integration queue, living master and behavior-trace index; those files were independently fetched after writes.
+- [x] Independently fetch root, IN, OUT, event, current, index, queue, 0.0 registry and mother documents; identifiers and versions matched. Relative links were checked for the new chain; a full repository-wide link audit remains pending.
 - [ ] Read the exact-head workflow receipts before claiming validation.
-- [ ] Use actual commit metadata for canonical repository time (UTC) and derive the Asia/Tehran equivalent from the same instant.
+- [x] Bind the root creation commit timestamp from Git metadata: 2026-10-26T03:52:33Z = 2026-10-26 07:22:33 Asia/Tehran; see TIME-BINDING-EVT-0191.
 - [ ] Report durable milestones visibly; do not imply background execution between turns.
 
 ## Acceptance criteria
-- [ ] All new files read back and match.
-- [ ] 0.0 registry, reference index, integration queue and mother references link to POINT-0/025 and CURRENT-072.
+- [x] Root, IN, OUT, event and CURRENT files were independently fetched; IDs, versions and core links match.
+- [x] 0.0 registry, reference index, integration queue and both living master references link to POINT-0/025 and CURRENT-072.
 - [ ] Path A has a verified next action or explicit blocker.
 - [ ] Path B has a verified next action or explicit blocker.
 - [ ] Unresolved host and graph gates remain open; no speculative closure or bulk renumbering.
