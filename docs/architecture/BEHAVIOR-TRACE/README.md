@@ -787,3 +787,10 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Clean package: v0.3.0, SHA-256 `297b3b329143c4b99f55373db0c4bb97896b0e484253622e63eeb32a4429f164`.
 - 13/13 tests passed in CI and after fresh extraction; bootstrap + audit + export/import + post-import audit passed.
 - Independent GPT-6 host execution remains open.
+
+## EVT-0191 — Excavation findings and dual-path correction
+
+- Root: [POINT-0/025](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-025-EXCAVATION-FINDINGS-DUAL-PATH.md)
+- Event: [EVT-0191](./EVT-0191-EXCAVATION-FINDINGS-DUAL-PATH-2026-10-26.md)
+- Current: [CURRENT-072](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-072-DUAL-PATH-EXCAVATION.md)
+- Lesson: after accepted excavation findings, do not stop at a report; anchor and execute. Inspect the current register before assigning identifiers. Path A and Path B both remain active; NEXT-051 remains the remediation queue.
