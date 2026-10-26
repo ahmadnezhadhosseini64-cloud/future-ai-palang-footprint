@@ -22,3 +22,14 @@
 4. Continue source-evidence review of two unresolved parent edges and remaining identity collisions in NEXT-051. Do not bulk-merge or declare them closed.
 5. Preserve MASTER as canonical, RAHM as the existing test/growth environment, and CHILD as candidate until direct evidence plus explicit MASTER acceptance.
 - Canonical repository time binding: [TIME-BINDING-CURRENT-086](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-CURRENT-086-POINT-0-037-2026-10-26.md).
+
+## Latest verified repository receipt — 2026-10-26
+
+- Exact tested source SHA: `8ef4553536d26cac6ca0d83765fd12c74c57ec43`.
+- Living Architecture Audit [40361236504](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40361236504): PASS.
+- Portable RAHM Conformance [40361236203](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40361236203): PASS; exact-byte SHA-256 and live-reference SHA-256 scans PASS.
+- Extractable package artifact: [haif-rahm-portable-package](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40361236203/artifacts/12667234747). 178 files; 640,897 bytes; package SHA-256 `3a52e817dcb60870b0ece6545abde2fd18c081f7719bdac77b310c99480d18e2`.
+- Graph on this tested SHA: 0 missing local links; 0 ambiguous parent edges; 2 unresolved parent edges; 23 Stable-ID groups (22 reviewed, 1 open); 68 Production-ID groups (66 open); 5 Reference-ID groups (all 5 open); 41 event-number groups (3 open); 11 exact-content duplicate groups preserved for evidence review.
+- Timestamp audit: 2,905 timestamp strings normalized and paired UTC/Tehran; 0 parse/ambiguity errors; result `REPOSITORY_TIME_NORMALIZATION_PASS`.
+- Latest main subsequently advanced to `5094b1475fe40c8850175666ba12390cb762a462` through the Evidence Gate result-recording commit. The above audit/conformance receipts are for the exact prior source SHA `8ef4553536d26cac6ca0d83765fd12c74c57ec43`; they are not misrepresented as a run on the later evidence-only commit.
+- External interactive-host import/restart/persistence/round-trip remains NOT RUN. Package is ready for a controlled host trial, not yet accepted as running in the real target host.
