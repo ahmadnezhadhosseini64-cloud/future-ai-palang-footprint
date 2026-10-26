@@ -810,3 +810,11 @@ Continue from NEXT-051. The latest carried-forward exact-head audit has pointer 
 
 ### Shared execution contract
 Both paths are mandatory, parallel and separately gated. Preserve every historical anchor, error and superseded version. After each write, read back and match. Run fresh exact-head audits and record the tested SHA and artifacts. UTC is the canonical repository time; Asia/Tehran is derived from the same instant. External destinations remain independently unverified unless directly tested. Dropbox remains out of scope unless explicitly reopened.
+
+
+
+## 11. POINT-0/027 — Path B role-decision coverage correction
+
+Latest root: [POINT-0/027](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-027-PATH-B-GAP-RECONCILIATION.md); checkpoint: [CURRENT-074](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-074-PATH-B-GAP-RECONCILIATION.md); event: [EVT-0193](../../architecture/BEHAVIOR-TRACE/EVT-0193-POINT-0-PATH-B-GAP-RECONCILIATION-2026-10-26.md).
+
+Path B now distinguishes UNREVIEWED, PARTIALLY-ROLE-ADJUDICATED and ROLE-ADJUDICATED. Source-hash-verified decisions can classify only covered paths; they cannot close the full collision group unless every member is covered without conflicting roles. Raw group counts remain visible and history is never deleted to reduce counters. Latest inspected audit is structural PASS with zero missing local links and SCOPED_CONSISTENT pointer discovery, while the semantic graph remains REVIEW_REQUIRED. NEXT-051 remains active.
