@@ -44,3 +44,12 @@ Required response envelope: host capabilities → package integrity → reconstr
 - Latest milestone event: [EVT-0197](../../architecture/BEHAVIOR-TRACE/EVT-0197-POINT-0-PLUS-HIGHLIGHT-AND-ARCHITECTURE-CLOSURE-2026-10-26.md). Two existing EVT-0195 files remain a collision; preserve both and do not merge/renumber by inference.
 - Eight CI checks passed on SHA 282cb1acd859c188f4cbb2443a960a013380d385, but a follow-up Evidence Gate commit 3924818996f679d80a8335cab2429177c2ceba36 moved main after those checks. That follow-up SHA and every newer HEAD are unverified until exact-SHA conformance and audit pass.
 - Transfer goal is clean host recovery, not just file copy. External consumer GPT-6 host import remains NOT RUN absent a direct receipt. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN/NOT VERIFIED; Issues #20/#21 OPEN; CURRENT-065/CURRENT-066 OPEN.
+
+
+## Latest authoritative return point — POINT-0/029 / CURRENT-077
+- Begin at [POINT-0/029](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-029-REVERSIBLE-GAP-COVERS-AND-FAST-HOST-TRANSFER.md) and [CURRENT-077](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-077-REVERSIBLE-GAP-COVERS.md). Earlier pointers in this file are historical unless independently confirmed current.
+- Read [IN-065](../../0.0/anchors/PALANG-0.0-IN-20261026-065-REVERSIBLE-GAP-COVERS-AND-FAST-HOST-TRANSFER.md), [OUT-064](../../0.0/anchors/PALANG-0.0-OUT-20261026-064-REVERSIBLE-GAP-COVERS-AND-FAST-HOST-TRANSFER.md), [EVT-0199](../../architecture/BEHAVIOR-TRACE/EVT-0199-REVERSIBLE-GAP-COVERS-AND-FAST-HOST-TRANSFER-2026-10-26.md), and the existing [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Use the [QUICK-TRANSFER-CHECKLIST](./QUICK-TRANSFER-CHECKLIST.md) to prepare the minimum package and the independent destination receipt. Do not divert this continuation into Dropbox.
+- The covers are reversible and do not close any gate. Keep CURRENT-065/CURRENT-066 ambiguity, EVT-0195 collision, historic graph findings, Issues #20/#21, external persistence, actual host import, and runtime/background claims OPEN until evidence-based acceptance.
+- Before declaring package readiness, fetch current main HEAD, regenerate the manifest using the workflow, validate exact bytes on the exact final SHA, and repeat if Evidence Gate commits a newer head. A passing parent SHA does not validate its child.
+- Do not create NEXT-052. Keep user-visible milestone outputs explicit; no silent work or claim of background execution between turns.
