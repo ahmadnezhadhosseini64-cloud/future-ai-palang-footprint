@@ -368,3 +368,15 @@ The canonical live checkpoint is now [CURRENT-066](../../0.0/anchors/PALANG-0.0-
 - Eight relevant CI runs passed on SHA 282cb1acd859c188f4cbb2443a960a013380d385. Evidence Gate then added commit 3924818996f679d80a8335cab2429177c2ceba36, so that later HEAD was not covered by the earlier test batch. Re-run full conformance and audit on the exact final HEAD after all changes.
 - Do not equate CI transfer harness success with a separate consumer ChatGPT/GPT-6 host being initialized. External clean-host import/recovery remains NOT RUN until a direct receipt exists.
 - NEXT-051 remains active; no NEXT-052. CURRENT-065/CURRENT-066 and Issues #20/#21 remain open. Preserve duplicate EVT-0195 artifacts and their collision record.
+
+
+## Living update — POINT-0/029 and reversible gap covers
+- Current user root: [POINT-0/029](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-029-REVERSIBLE-GAP-COVERS-AND-FAST-HOST-TRANSFER.md)
+- Current checkpoint: [CURRENT-077](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-077-REVERSIBLE-GAP-COVERS.md)
+- Current input/output: [IN-065](../../0.0/anchors/PALANG-0.0-IN-20261026-065-REVERSIBLE-GAP-COVERS-AND-FAST-HOST-TRANSFER.md) → [OUT-064](../../0.0/anchors/PALANG-0.0-OUT-20261026-064-REVERSIBLE-GAP-COVERS-AND-FAST-HOST-TRANSFER.md)
+- Event: [EVT-0199](../../architecture/BEHAVIOR-TRACE/EVT-0199-REVERSIBLE-GAP-COVERS-AND-FAST-HOST-TRANSFER-2026-10-26.md)
+- Transfer runbook: [QUICK-TRANSFER-CHECKLIST](./QUICK-TRANSFER-CHECKLIST.md)
+- NEXT-051 remains the existing active queue. No NEXT-052.
+- Reversible cover policy: improve navigation and risk containment without changing underlying gate status. No historic pointer, duplicate event ID, source/parent/time finding, or external-destination gap is closed by this update.
+- Fastest safe route: exact-SHA package conformance → export digest/read-back → real clean-host import receipt → independent reconstruction comparison → record failures and continue the existing queue.
+- Real host import remains NOT RUN until a destination host directly returns evidence. Buffer/Persistent Memory/Library/Dropbox and idle/background execution remain separately unverified.
