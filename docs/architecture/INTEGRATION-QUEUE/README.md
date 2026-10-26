@@ -1965,3 +1965,5 @@ The source blob remained unchanged and Library version 7 was independently read 
 - Path B: continue NEXT-051, rerun current graph audit, adjudicate collisions and ambiguous parent/time edges individually, and reconcile CURRENT-065/CURRENT-066 with provenance.
 - Shared rule: A and B are coordinated, not merged. Do not abandon either; do not create NEXT-052 to disguise unfinished work; do not close gates without test ID, exact revision, PASS and evidence.
 - Behavior lesson: a report is not execution. Register accepted findings and proceed with evidence-backed work.
+
+- Current point: [CURRENT-072](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-072-DUAL-PATH-EXCAVATION.md); active next: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
