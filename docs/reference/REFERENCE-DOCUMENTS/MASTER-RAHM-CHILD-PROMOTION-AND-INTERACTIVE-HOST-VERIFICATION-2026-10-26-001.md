@@ -73,3 +73,7 @@ A cover is a temporary workflow overlay, never a gap closure. Required fields: g
 
 ## 8. Current limitation and next action
 The canonical repository is accessible, and the RAHM package exists inside it. The user’s desired separate interactive project environment has not been independently accessed by this contract. Next: exact-head repository tests, then perform I1–I8 in the actual destination project and retain its receipts. Do not divert to Dropbox; its independent queue remains OPEN / WAITING.
+
+
+### Terminology safeguard — master reference vs conceptual MASTER
+The whole-project reconstruction/living master reference document is a meta-level recovery and governance artifact; it is not identical to the conceptual MASTER node in the lifecycle. In this lifecycle, MASTER denotes the original project as canonical authority for behavioral history, architecture patterns, policy and promotion decisions; RAHM denotes the initial-model experimental environment. Preserve this distinction in IDs, graph edges and documentation. A file-name or the word “master” alone is not evidence of a parent/authority edge.
