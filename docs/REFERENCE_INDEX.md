@@ -1551,15 +1551,14 @@ Current continuation chain: POINT-0/013 → IN-057 → OUT-056 → EVT-0166 → 
 - Current continuation: [CURRENT-071](./0.0/anchors/PALANG-0.0-CURRENT-20261025-071-0PLUS-ENGINE-AND-HARD-AUDIT.md)
 - v0.3.0 clean ZIP SHA-256: `297b3b329143c4b99f55373db0c4bb97896b0e484253622e63eeb32a4429f164`; 13/13 tests and bootstrap/export/import passed.
 
-
-## 2026-10-26 — POINT-0/023 Dual-Path Excavation Continuation
+## 2026-10-26 — POINT-0/025 Excavation Findings and Dual-Path Continuation
 
 | ID | Canonical path | Purpose | Status |
 |---|---|---|---|
-| HAIF-POINT-0-023-EXCAVATION-DUAL-PATH-20261026 | `docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-023-EXCAVATION-FINDINGS-AND-DUAL-PATH-CONTINUATION.md` | Preserve accepted excavation findings and govern both construction and remediation paths | Repository write recorded; independent read-back and index/queue reconciliation required |
-| HAIF-IN-053-EXCAVATION-DUAL-PATH-20261026 | `docs/0.0/anchors/PALANG-0.0-IN-20261026-053-EXCAVATION-FINDINGS-AND-DUAL-PATH-CONTINUATION.md` | User input and constraints for the accepted excavation | Registered |
-| HAIF-OUT-053-EXCAVATION-DUAL-PATH-20261026 | `docs/0.0/anchors/PALANG-0.0-OUT-20261026-053-EXCAVATION-FINDINGS-AND-DUAL-PATH-CONTINUATION.md` | Decision to execute both paths and preserve open gates | Registered / Open |
-| HAIF-EVT-0186-EXCAVATION-DUAL-PATH-20261026 | `docs/architecture/BEHAVIOR-TRACE/EVT-0186-EXCAVATION-FINDINGS-AND-DUAL-PATH-CONTINUATION-2026-10-26.md` | Record report-only failure mode and corrective rule | Registered |
-| HAIF-CURRENT-070-DUAL-PATH-EXCAVATION-20261026 | `docs/0.0/anchors/PALANG-0.0-CURRENT-20261026-070-DUAL-PATH-EXCAVATION-EXECUTION.md` | Next executable checkpoint for model construction and graph remediation | ACTIVE / LIVING / OPEN / EXECUTION REQUIRED |
+| HAIF-POINT-0-025-EXCAVATION-DUAL-PATH-20261026 | `docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-025-EXCAVATION-FINDINGS-DUAL-PATH.md` | Preserve accepted excavation findings and coordinate construction and remediation | REGISTERED / ACTIVE / LIVING / OPEN |
+| HAIF-IN-055-EXCAVATION-DUAL-PATH-20261026 | `docs/0.0/anchors/PALANG-0.0-IN-20261026-055-EXCAVATION-FINDINGS-DUAL-PATH.md` | Preserve user input and constraints | REGISTERED |
+| HAIF-OUT-055-EXCAVATION-DUAL-PATH-20261026 | `docs/0.0/anchors/PALANG-0.0-OUT-20261026-055-EXCAVATION-FINDINGS-DUAL-PATH.md` | Decision and execution contract for both paths | OPEN |
+| HAIF-EVT-0191-EXCAVATION-DUAL-PATH-20261026 | `docs/architecture/BEHAVIOR-TRACE/EVT-0191-EXCAVATION-FINDINGS-DUAL-PATH-2026-10-26.md` | Behavior/process lesson and correction | REGISTERED |
+| HAIF-CURRENT-072-DUAL-PATH-EXCAVATION-20261026 | `docs/0.0/anchors/PALANG-0.0-CURRENT-20261026-072-DUAL-PATH-EXCAVATION.md` | Next executable checkpoint for both paths | ACTIVE / LIVING / OPEN / EXECUTION REQUIRED |
 
-Dual-path invariant: Path A (initial model construction) and Path B (existing graph remediation) must both advance. NEXT-051 remains the active remediation queue; no cosmetic NEXT-052 is created. External-host import, host persistence, automatic capture and background execution remain unverified until directly tested.
+Invariant: Path A (initial model construction) and Path B (existing graph remediation) must both advance. NEXT-051 remains active. Independent-host import, persistence, automatic capture and background execution remain unverified until direct evidence exists.
