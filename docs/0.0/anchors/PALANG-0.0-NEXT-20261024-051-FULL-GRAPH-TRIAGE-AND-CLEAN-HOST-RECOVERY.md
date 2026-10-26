@@ -257,3 +257,16 @@ NEXT-051 remains OPEN/LIVING until all remaining acceptance gates are satisfied;
 - Portable RAHM Conformance [40267410919](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40267410919): SUCCESS on the same SHA; exact-byte and live-reference SHA-256 scans PASS; 119 package files / 77 live references; package SHA-256 67586524f3af402d79b44b1987407f0eae81b476d5fcb41765e46406c88df4d8; package artifact ID 12627111525 (digest sha256:199cd4bcc4f62ac950abd70d1d0e9b7d87e88450038db50764ed820d19319aa6).
 - This receipt predates the later EVT-0191 wording-only correction. It proves the tested repository revision above; it does not close independent-host import, persistence, automatic capture, background execution, or individual graph adjudication.
 
+
+
+## Continuation receipt — POINT-0/026 / CURRENT-073
+
+- New root: [POINT-0/026](./GPT6-RAHM-USER-POINT-0-20261026-026-DUAL-PATH-HAIF-CONTINUATION.md).
+- Latest execution checkpoint: [CURRENT-073](./PALANG-0.0-CURRENT-20261026-073-DUAL-PATH-HAIF-CONTINUATION.md).
+- IN/OUT/Event: [IN-062](./PALANG-0.0-IN-20261026-062-DUAL-PATH-HAIF-CONTINUATION.md) / [OUT-061](./PALANG-0.0-OUT-20261026-061-DUAL-PATH-HAIF-CONTINUATION.md) / [EVT-0192](../../architecture/BEHAVIOR-TRACE/EVT-0192-USER-REQUEST-POINT-0-DUAL-PATH-HAIF-CONTINUATION-2026-10-26.md).
+- Exact-head receipts on SHA `5d423ee3d51aa6e77ded02d8fcab6880a279ee20`: Living Architecture Audit [40274870673](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40274870673) SUCCESS; Portable RAHM Conformance [40274870612](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40274870612) SUCCESS.
+- Audit artifact `12629971292`, digest `sha256:eff68572b41d06e4409f16f81a5f7a9b74cdf672d06ba5ef29aea387f7117216`. Portable package: 119 files, 77 live references, SHA-256 `b38d38c1ec388c6a6c2f49481a443fd76ce82254e9141edbedfa19df84f80e99`; package artifact `12630180630`, evidence artifact `12630165696`.
+- Audit boundary: pointer scope `SCOPED_CONSISTENT`, structural checks PASS, 0 missing local links; graph remains `REVIEW_REQUIRED` with 62 unreviewed Stable-ID groups and 13 ambiguous parent edges. These are open tasks, not completed work.
+- Path A: local package/conformance and IN/OUT recovery fixtures PASS; independent external-host import and host-native restart persistence remain NOT RUN / NOT VERIFIED.
+- Path B: case-by-case identity and parent-edge adjudication remains OPEN. Preserve all source paths and lineage; do not bulk merge or choose a winner by numeric order.
+- These receipts predate this append; rerun both workflows on the resulting HEAD. Keep this NEXT-051 queue active; do not create a competing NEXT queue.
