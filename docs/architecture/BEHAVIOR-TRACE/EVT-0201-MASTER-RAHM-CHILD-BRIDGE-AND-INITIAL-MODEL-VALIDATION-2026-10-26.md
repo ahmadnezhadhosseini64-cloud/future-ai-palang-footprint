@@ -27,3 +27,6 @@ Do not drift to Dropbox or other side branches when the selected continuation is
 
 ## Next
 Use CURRENT-079 and the cross-validation contract to run the next source-backed, reproducible step. Keep untested gates OPEN.
+
+
+- Canonical commit time evidence: [TIME-BINDING-POINT-0-032 / EVT-0201](./TIME-BINDING-POINT-0-032-EVT-0201-2026-10-26.md).
