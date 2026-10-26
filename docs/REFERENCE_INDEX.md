@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-26 — POINT-0/035 → IN-071 → OUT-070 → EVT-0205 → CURRENT-083 is the latest user-turn root chain; NEXT-051 remains active; graph collisions and independent interactive-host validation remain OPEN.
+**Last Updated:** 2026-10-26 — POINT-0/036 (0+ marker) → IN-073 → OUT-072 → EVT-0207 → CURRENT-085; NEXT-051 remains the sole active queue; Path A host acceptance and Path B graph adjudication remain OPEN.
 
 ## Canonical References
 
