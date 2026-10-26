@@ -1978,3 +1978,6 @@ The active root is [POINT-0/026](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-202610
 - **Path B:** continue NEXT-051 case-by-case graph reconciliation. Keep the latest known semantic status REVIEW_REQUIRED and preserve all provenance.
 - **Shared gates:** read-back every changed file; verify links; run exact-head Living Architecture Audit and Portable RAHM Conformance; record commit SHA, workflow IDs, artifacts and hashes. Do not infer external storage or host-native persistence from repository CI.
 - **Queue policy:** NEXT-051 remains the single active remediation queue. No competing NEXT queue is created by this checkpoint.
+
+
+- Current point: [CURRENT-073](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-073-DUAL-PATH-HAIF-CONTINUATION.md); active next: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
