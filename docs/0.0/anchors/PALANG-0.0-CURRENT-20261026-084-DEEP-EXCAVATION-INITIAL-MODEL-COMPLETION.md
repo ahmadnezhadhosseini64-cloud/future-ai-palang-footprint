@@ -37,5 +37,7 @@
 - The separate raw graph report still showed 63/92/7/41 raw collision counts and flagged two generated Python bytecode files as decode errors. This revealed that the raw audit was still scanning body references and bytecode unlike the canonical manifest.
 - Corrective change on a later commit: scripts/audit_historical_0_0_graph.py now excludes __pycache__/.pyc and derives identifier/parent definitions from the bounded metadata header. This correction is awaiting exact-head rerun; do not mark it validated until that run finishes.
 
+- Conformance failure and correction: Portable RAHM Conformance run 40347913506 failed because the changed file scripts/audit_historical_0_0_graph.py no longer matched the pinned EXPORT_MANIFEST.json digest/blob. The manifest entry has now been refreshed to the exact script SHA256 and Git blob SHA. This is a corrected integrity mismatch, not a code-test failure; exact-head conformance must pass before it is marked resolved.
+
 ## Acceptance gate
 CURRENT-084 stays OPEN until the exact-head audit and portable conformance have both completed, their logs/artifacts have been read back, and graph changes are reconciled in the master/index/queue. External-host acceptance remains a separate gate.
