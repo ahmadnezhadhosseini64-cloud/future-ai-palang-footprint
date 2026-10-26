@@ -3,7 +3,7 @@
 ## 0. شناسنامه، لنگر و وضعیت
 - **Stable ID / شناسهٔ پایدار:** CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001
 - **Production ID / شناسهٔ تولید:** CCCMR-2026-10-21-001
-- **Version / نسخه:** 1.0.3
+- **Version / نسخه:** 1.0.4
 - **Owner / مالک:** Ahmad Nezhadhosseini / احمد پلنگ
 - **Project / پروژه:** Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
 - **Architecture target / هدف معماری:** HAIF — Human–AI Interaction Future (آیندهٔ تعامل انسان و هوش مصنوعی)
@@ -818,3 +818,14 @@ Both paths are mandatory, parallel and separately gated. Preserve every historic
 Latest root: [POINT-0/027](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-027-PATH-B-GAP-RECONCILIATION.md); checkpoint: [CURRENT-074](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-074-PATH-B-GAP-RECONCILIATION.md); event: [EVT-0193](../../architecture/BEHAVIOR-TRACE/EVT-0193-POINT-0-PATH-B-GAP-RECONCILIATION-2026-10-26.md).
 
 Path B now distinguishes UNREVIEWED, PARTIALLY-ROLE-ADJUDICATED and ROLE-ADJUDICATED. Source-hash-verified decisions can classify only covered paths; they cannot close the full collision group unless every member is covered without conflicting roles. Raw group counts remain visible and history is never deleted to reduce counters. Latest inspected audit is structural PASS with zero missing local links and SCOPED_CONSISTENT pointer discovery, while the semantic graph remains REVIEW_REQUIRED. NEXT-051 remains active.
+
+
+## 12. Live mirror sync evidence — EVT-0194 (2026-10-26)
+
+The canonical live-destination audit source and its exact Library version-7 snapshot were independently read during the recurring mirror check. Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` is unchanged (10,479 characters); Library version 7 is 10,480 characters, with edit distance 1 caused only by one additional trailing newline. Stable ID, Test ID, Production ID, Version, BOART-FOLLOWUP-01 → 02 → 03, destination statuses and remaining content match. Under the no-redundant-write rule, no Library rewrite was performed.
+
+- Event: [EVT-0194](../../architecture/BEHAVIOR-TRACE/EVT-0194-LIVE-MIRROR-SYNC-RECHECK-2026-10-26.md).
+- Time binding: [TIME-BINDING-EVT-0194](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0194-LIVE-MIRROR-SYNC-2026-10-26.md).
+- Current root/checkpoint/queue: POINT-0/027 / CURRENT-074 / NEXT-051. Earlier points and EVT-0177 remain preserved.
+- CURRENT-065/CURRENT-066 remains OPEN. The latest retrieved full audit (40267412937 on SHA `6d6623a681cc7012dc0705d141197de7f818fcf0`) found scoped consistency between CURRENT-066 in overlay recovery and CURRENT-072 in the global project registry, with `winner_selected=false`; it does not validate the later main head.
+- Issues #20/#21, BOART-FOLLOWUP-01, external-host import, persistence, automatic capture and external destination gates remain open unless separate direct evidence closes them.
