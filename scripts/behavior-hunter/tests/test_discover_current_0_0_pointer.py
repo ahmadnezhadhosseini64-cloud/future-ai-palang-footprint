@@ -57,5 +57,30 @@ class PointerDiscoveryTests(unittest.TestCase):
         self.assertEqual(result["status"], "BLOCKED")
 
 
+    def test_scoped_overlay_and_global_current_are_consistent(self):
+        manifest, verifier, portable, _ = inputs()
+        registry = {
+            "0.0 registry": "- Current continuation: [CURRENT-072](docs/0.0/anchors/CURRENT-072.md)",
+            "integration queue": "- Current point: [CURRENT-072](docs/0.0/anchors/CURRENT-072.md)",
+            "reference index": "- Current continuation: [CURRENT-072](docs/0.0/anchors/CURRENT-072.md)",
+        }
+        result = MODULE.discover_from_texts(manifest, verifier, portable, registry)
+        self.assertEqual(result["status"], "SCOPED_CONSISTENT")
+        self.assertEqual(result["scopes"]["overlay_recovery_current"], ["CURRENT-066"])
+        self.assertEqual(result["scopes"]["global_project_current"], ["CURRENT-072"])
+        self.assertFalse(result["winner_selected"])
+
+    def test_latest_live_claim_supersedes_historical_registry_claim(self):
+        values = inputs()
+        registry = {
+            "0.0 registry": "- CURRENT-065 remains current; historical notes preserved.\\n- Current continuation: CURRENT-072.",
+            "integration queue": "- Current point: CURRENT-072.",
+            "reference index": "- Current continuation: CURRENT-072.",
+        }
+        result = MODULE.discover_from_texts(values[0], values[1], values[2], registry)
+        self.assertEqual(result["status"], "SCOPED_CONSISTENT")
+        self.assertEqual(result["scopes"]["global_project_current"], ["CURRENT-072"])
+
+
 if __name__ == "__main__":
     unittest.main()
