@@ -83,3 +83,8 @@ Return the completed receipts and any candidate proposal to the canonical Master
 ## Current status
 
 This runbook is committed to the repository. The actual interactive-project tests have **not** been executed by this file creation. Until a result is returned from the actual destination, all IPV tests remain NOT RUN / NOT VERIFIED and no Child is promoted.
+
+
+## Latest checkpoint
+Use [POINT-0/033](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-033-EXCAVATION-AND-MASTER-RAHM-CHILD-CONTINUATION.md) and [CURRENT-081](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-081-EXCAVATION-AND-MASTER-RAHM-CHILD-CONTINUATION.md) as the latest repository continuation. This does not change the status of any destination test: I1–I8 remain NOT RUN until the actual interactive project returns receipts.
+
