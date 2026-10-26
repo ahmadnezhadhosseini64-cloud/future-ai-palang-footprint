@@ -87,3 +87,7 @@ These remain OPEN / NOT VERIFIED until evidence changes their state.
 ## 8. Relationship to existing model initial package
 
 This contract extends, rather than replaces, the initial-model mother, portable RAHM package, canonical continuation master, graph inventory and behavior trace. The repository index and current checkpoint are recovery entry points. Keep one canonical Master; do not create a second parallel authority.
+
+
+## Executable interactive-project runbook
+Use [INTERACTIVE-PROJECT-VALIDATION-RUNBOOK.md](./INTERACTIVE-PROJECT-VALIDATION-RUNBOOK.md) as the copy/paste test procedure in the actual RAHM project. The runbook is a protocol, not a test receipt; every IPV test remains NOT RUN until actual destination output is returned and independently read back.
