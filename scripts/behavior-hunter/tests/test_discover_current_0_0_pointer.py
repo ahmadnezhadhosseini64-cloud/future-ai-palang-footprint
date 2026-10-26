@@ -73,7 +73,7 @@ class PointerDiscoveryTests(unittest.TestCase):
     def test_latest_live_claim_supersedes_historical_registry_claim(self):
         values = inputs()
         registry = {
-            "0.0 registry": "- CURRENT-065 remains current; historical notes preserved.\\n- Current continuation: CURRENT-072.",
+            "0.0 registry": "- CURRENT-065 remains current; historical notes preserved.\n- Current continuation: CURRENT-072.",
             "integration queue": "- Current point: CURRENT-072.",
             "reference index": "- Current continuation: CURRENT-072.",
         }
