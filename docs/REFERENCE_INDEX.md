@@ -1622,3 +1622,10 @@ Both Path A (portable initial model and independent-host recovery) and Path B (e
 - Current root/checkpoint/active queue discovered from main: POINT-0/027 / CURRENT-074 / NEXT-051. POINT-0/016, POINT-0/017, POINT-0/018 and prior mirror event EVT-0177 remain preserved. This event is not a new root or a new NEXT queue.
 - CURRENT-065/CURRENT-066 remains OPEN. Audit run 40267412937 returned scoped consistency (CURRENT-066 for overlay recovery; CURRENT-072 for global project registry; winner_selected=false) on tested SHA `6d6623a681cc7012dc0705d141197de7f818fcf0`; this is not an exact-current-main audit.
 - Buffer/Persistent Memory remain NOT VERIFIED; Dropbox remains OPEN / NOT VERIFIED; external end-to-end recovery remains NOT RUN. Issues #20/#21 and BOART-FOLLOWUP-01 remain open.
+
+
+## GPT-6 portable HAIF continuation — POINT-0/028
+- Point: [POINT-0/028](0.0/anchors/PALANG-0.0-POINT-0-028-GPT6-PORTABLE-HAIF-EXECUTION-2026-10-26.md)
+- Event: [EVT-0195](architecture/BEHAVIOR-TRACE/EVT-0195-USER-REQUEST-POINT-028-PORTABLE-GPT6-HAIF-EXECUTION-2026-10-26.md)
+- Portable package: [README](portable/GPT6-HAIF-BOOT-PACKAGE/README.md), [Bootstrap](portable/GPT6-HAIF-BOOT-PACKAGE/BOOTSTRAP.md), [manifest](portable/GPT6-HAIF-BOOT-PACKAGE/manifest.json)
+- Continue NEXT-051; exact-final-SHA audit and clean-host import remain open.
