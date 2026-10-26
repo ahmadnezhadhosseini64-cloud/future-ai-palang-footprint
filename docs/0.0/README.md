@@ -1613,3 +1613,6 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - **Path A:** portable initial HAIF/RAHM model, fresh extraction/import, independent-host validation and restart recovery. External-host import remains NOT RUN until an authorized route exists.
 - **Path B:** provenance-preserving excavation and case-by-case graph reconciliation. The latest carried-forward audit remains REVIEW_REQUIRED; no bulk merge or silent deletion.
 - **Continuity rule:** This entry supersedes earlier navigation pointers as the latest root/current pointer only; it does not replace or delete historical anchors. Both paths remain mandatory and separately gated. Dropbox remains out of scope unless explicitly reopened.
+
+
+- Current continuation: [CURRENT-073](./anchors/PALANG-0.0-CURRENT-20261026-073-DUAL-PATH-HAIF-CONTINUATION.md); NEXT-051 remains the active remediation queue.
