@@ -1576,3 +1576,17 @@ Invariant: Path A (initial model construction) and Path B (existing graph remedi
 - Current checkpoint: [TIME-BINDING-CURRENT-072](./architecture/BEHAVIOR-TRACE/TIME-BINDING-CURRENT-072-POINT-0-025-2026-10-26.md) — UTC 2026-10-26T04:05:17Z / Tehran 07:35:17.
 
 Each binding uses the actual last-change Git commit timestamp in UTC; the Tehran time is derived from that same instant. These are repository timestamps, not guessed user-message times.
+
+
+
+## Latest continuation pointer — POINT-0/026
+
+- Root: [POINT-0/026](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-026-DUAL-PATH-HAIF-CONTINUATION.md)
+- IN: [IN-062](0.0/anchors/PALANG-0.0-IN-20261026-062-DUAL-PATH-HAIF-CONTINUATION.md)
+- OUT: [OUT-061](0.0/anchors/PALANG-0.0-OUT-20261026-061-DUAL-PATH-HAIF-CONTINUATION.md)
+- Event: [EVT-0192](architecture/BEHAVIOR-TRACE/EVT-0192-USER-REQUEST-POINT-0-DUAL-PATH-HAIF-CONTINUATION-2026-10-26.md)
+- Current execution checkpoint: [CURRENT-073](0.0/anchors/PALANG-0.0-CURRENT-20261026-073-DUAL-PATH-HAIF-CONTINUATION.md)
+- Active remediation queue: [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
+- Governing mother: [Current canonical continuation master](reference/REFERENCE-DOCUMENTS/CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001.md) and [initial-model mother](architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md).
+
+Both Path A (portable initial model and independent-host recovery) and Path B (existing graph excavation and evidence-based reconciliation) are active, separately gated workstreams. This pointer is append-only and does not replace historical records. Latest known graph state remains REVIEW_REQUIRED; external-host import remains NOT RUN.
