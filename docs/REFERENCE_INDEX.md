@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-26 — POINT-0/027 / EVT-0193 is the latest user-turn root chain; EVT-0194 records the live mirror recheck; CURRENT-074 is the current execution checkpoint; NEXT-051 remains active; CURRENT-065/CURRENT-066 remains OPEN; exact-current-main audit is NOT VERIFIED.
+**Last Updated:** 2026-10-26 — POINT-0/035 → IN-071 → OUT-070 → EVT-0205 → CURRENT-083 is the latest user-turn root chain; NEXT-051 remains active; graph collisions and independent interactive-host validation remain OPEN.
 
 ## Canonical References
 
@@ -1724,3 +1724,4 @@ Both Path A (portable initial model and independent-host recovery) and Path B (e
 - [IN-071](0.0/anchors/PALANG-0.0-IN-20261026-071-IDENTIFIER-AND-PARENT-GRAPH-REPAIR.md) / [OUT-070](0.0/anchors/PALANG-0.0-OUT-20261026-070-IDENTIFIER-AND-PARENT-GRAPH-REPAIR.md) — input/output anchors.
 - [EVT-0205](architecture/BEHAVIOR-TRACE/EVT-0205-POINT-0-035-IDENTIFIER-AND-PARENT-GRAPH-REPAIR-2026-10-26.md) — event and error-learning record.
 - [CURRENT-083](0.0/anchors/PALANG-0.0-CURRENT-20261026-083-IDENTIFIER-AND-PARENT-GRAPH-REPAIR.md) — active checkpoint; NEXT-051 remains the sole global queue.
+- Time bindings: [POINT-0/035](architecture/BEHAVIOR-TRACE/TIME-BINDING-POINT-0-035-EVT-0205-2026-10-26.md), [IN-071](architecture/BEHAVIOR-TRACE/TIME-BINDING-IN-071-POINT-0-035-2026-10-26.md), [OUT-070](architecture/BEHAVIOR-TRACE/TIME-BINDING-OUT-070-POINT-0-035-2026-10-26.md), [EVT-0205](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0205-POINT-0-035-2026-10-26.md), [CURRENT-083](architecture/BEHAVIOR-TRACE/TIME-BINDING-CURRENT-083-POINT-0-035-2026-10-26.md).
