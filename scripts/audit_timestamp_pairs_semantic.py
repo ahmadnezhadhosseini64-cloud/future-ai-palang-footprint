@@ -8,7 +8,7 @@ ROOT=Path('.'); OUT=ROOT/'audit-output'; OUT.mkdir(exist_ok=True)
 UTC=timezone.utc; TEHRAN=ZoneInfo('Asia/Tehran')
 EXT={'.md','.txt','.yml','.yaml','.json','.py','.html','.xml','.csv','.toml'}
 SKIP={'.git','node_modules','.venv','venv','audit-output','__pycache__'}
-ISO=re.compile(r'(?<![A-Za-z0-9])((?:19|20)\d{2}-\d{2}-\d{2}[T ]\d{2}:\d{2}(?::\d{2}(?:\.\d{1,9})?)?(?:Z|[+-]\d{2}:?\d{2})?)(?![A-Za-z0-9])')
+ISO=re.compile(r'(?<![A-Za-z0-9])((?:19|20)\d{2}-\d{2}-\d{2}[T ]\d{2}:\d{2}(?::\d{2}(?:\.\d{1,9})?)?(?:\s*(?:Z|[+-]\d{2}:?\d{2}))?)(?![A-Za-z0-9])')
 UTC_LABEL=re.compile(r'\bUTC\b|\bZ\b|معادل UTC|زمان مرجع',re.I)
 LOCAL_LABEL=re.compile(r'Asia/Tehran|تهران|Tehran local|local time|زمان تهران|local-session time context',re.I)
 def parse(s):
