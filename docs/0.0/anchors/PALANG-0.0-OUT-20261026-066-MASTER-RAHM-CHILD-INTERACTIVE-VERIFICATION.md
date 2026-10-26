@@ -17,3 +17,5 @@
 6. گراف تاریخی، برخورد شناسه‌ها، والدهای مبهم و مقصدهای خارجی OPEN می‌مانند.
 
 ثبت سند یا موفقیت CI معادل آزمون واقعی داخل محیط پروژهٔ تعاملی نیست. واردسازی مستقل، restart، حافظهٔ پایدار و اجرای پس‌زمینه ادعا نمی‌شوند.
+
+> **CONFLICTED DUPLICATE / NON-CANONICAL.** The active OUT-066 is [OUT-066 Master–Rahm–Child bridge](./PALANG-0.0-OUT-20261026-066-MASTER-RAHM-CHILD-BRIDGE.md). Keep this record for audit history; do not use it as the canonical output. Resolve the duplicate ID only with source/commit lineage evidence.
