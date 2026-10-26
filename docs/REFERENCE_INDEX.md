@@ -1634,3 +1634,11 @@ Both Path A (portable initial model and independent-host recovery) and Path B (e
 ## Live mirror sync — EVT-0196 (2026-10-26)
 - [EVT-0196](architecture/BEHAVIOR-TRACE/EVT-0196-LIVE-MIRROR-SYNC-RECHECK-2026-10-26.md) and [time binding](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0196-LIVE-MIRROR-SYNC-2026-10-26.md) record the fresh comparison of source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars) with Library version 7 (10,480 chars; one extra trailing newline; edit distance 1). Semantic fields match; no redundant Library write.
 - Current root/checkpoint/active queue: POINT-0/028 / CURRENT-075 / NEXT-051. The duplicate EVT-0195 number is recorded as unresolved; both files are preserved. Issues #20/#21 remain open.
+
+
+## POINT-0+ — highlighted milestone (2026-10-26)
+- Marker: [POINT-0+](0.0/anchors/GPT6-RAHM-USER-POINT-0-PLUS-20261026-028-PORTABLE-GPT6-MILESTONE.md); canonical root POINT-0/028 remains unchanged.
+- Event/time binding: [EVT-0197](architecture/BEHAVIOR-TRACE/EVT-0197-POINT-0-PLUS-HIGHLIGHT-AND-ARCHITECTURE-CLOSURE-2026-10-26.md) / [TIME-BINDING](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0197-POINT-0-PLUS-2026-10-26.md).
+- Current checkpoint: [CURRENT-076](0.0/anchors/PALANG-0.0-CURRENT-20261026-076-POINT-0-PLUS-ARCHITECTURE-CLOSURE.md). Existing queue NEXT-051 remains active.
+- Eight CI checks passed on 282cb1acd859c188f4cbb2443a960a013380d385; follow-up commit 3924818996f679d80a8335cab2429177c2ceba36 advanced main afterward, so exact current-head verification is required.
+- Two EVT-0195 files remain a preserved unresolved collision. CURRENT-065/CURRENT-066 and Issues #20/#21 remain open. External GPT-6 host import not run; Buffer/Persistent Memory unverified; Dropbox open/not verified.
