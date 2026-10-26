@@ -791,3 +791,7 @@ The accepted excavation findings are anchored at [POINT-0/025](../../0.0/anchors
 This entry records the link and governance decision. It does not close independent-host, persistence, automatic-capture, background-runtime, graph-collision or CURRENT-065/CURRENT-066 pointer gates without direct evidence.
 
 Current execution checkpoint time binding: [TIME-BINDING-CURRENT-072](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-CURRENT-072-POINT-0-025-2026-10-26.md) — CURRENT-072 last-change commit UTC 2026-10-26T04:05:17Z; Asia/Tehran 2026-10-26 07:35:17 +03:30.
+
+## Follow-up — pointer-scope correction validated (2026-10-26)
+
+On tested SHA 453761e8f79a42e606a72a3215876fbb2724d952, Living Architecture Audit run [40267550332](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40267550332) passed the scope-aware pointer test. Result: SCOPED_CONSISTENT, winner_selected=false. CURRENT-066 remains the bounded overlay-recovery pointer; CURRENT-072 is the global project continuation. This resolves the false conflict caused by mixing scopes and historical append-only claims; it does not close the remaining graph identity/parent review or independent-host/runtime gates.
