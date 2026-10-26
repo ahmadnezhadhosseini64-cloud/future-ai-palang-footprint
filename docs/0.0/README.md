@@ -1587,3 +1587,14 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - Event: [EVT-0190](../architecture/BEHAVIOR-TRACE/EVT-0190-0PLUS-BOOTSTRAP-CLEAN-PACKAGE-2026-10-25.md); time binding: [UTC/Tehran](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0190-BOOTSTRAP-PACKAGE-2026-10-25.md).
 - v0.3.0 clean ZIP SHA-256: `297b3b329143c4b99f55373db0c4bb97896b0e484253622e63eeb32a4429f164`.
 - 13/13 tests pass; one-command bootstrap creates `0/0+`, child `0.0`, and six open capability gates.
+
+## POINT-0/025 — Excavation Findings and Dual-Path Continuation
+
+- Root: [POINT-0/025](./anchors/GPT6-RAHM-USER-POINT-0-20261026-025-EXCAVATION-FINDINGS-DUAL-PATH.md)
+- IN/OUT: [IN-055](./anchors/PALANG-0.0-IN-20261026-055-EXCAVATION-FINDINGS-DUAL-PATH.md) / [OUT-055](./anchors/PALANG-0.0-OUT-20261026-055-EXCAVATION-FINDINGS-DUAL-PATH.md)
+- Event: [EVT-0191](../architecture/BEHAVIOR-TRACE/EVT-0191-EXCAVATION-FINDINGS-DUAL-PATH-2026-10-26.md)
+- Current execution checkpoint: [CURRENT-072](./anchors/PALANG-0.0-CURRENT-20261026-072-DUAL-PATH-EXCAVATION.md)
+- Previous root/checkpoint preserved: [POINT-0/024](./anchors/GPT6-RAHM-USER-POINT-0-20261025-024-0PLUS-PRODUCTION-MARKER.md) / [CURRENT-071](./anchors/PALANG-0.0-CURRENT-20261025-071-0PLUS-ENGINE-AND-HARD-AUDIT.md)
+- Path A (initial model construction) and Path B (NEXT-051 graph remediation) must both advance; they remain distinct and coordinated.
+- NEXT-051 remains the active remediation queue; no NEXT-052 is created just to renumber unfinished work.
+- Status: REGISTERED / OPEN / LIVING; read-back and exact-head acceptance remain required.
