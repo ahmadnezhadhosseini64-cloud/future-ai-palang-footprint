@@ -2073,3 +2073,11 @@ The current root is [POINT-0/027](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261
 - Chain: IN-069 → OUT-068 → EVT-0203 → [CURRENT-081](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-081-EXCAVATION-AND-MASTER-RAHM-CHILD-CONTINUATION.md).
 - Gap cover: POINT-0/032 path identity remains OPEN/AMBIGUOUS until provenance history is inspected. Keep both records. PR #36 is closed/unmerged. Final SHA validation and destination-host tests remain OPEN. Continue NEXT-051 only.
 
+
+## POINT-0/034 — interactive RAHM execution
+
+- Root/checkpoint: [POINT-0/034](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-034-INTERACTIVE-RAHM-EXECUTION.md) → [CURRENT-082](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-082-INTERACTIVE-RAHM-EXECUTION.md).
+- Work product: executable copy/paste prompt added to the existing [interactive-project runbook](../MASTER-RAHM-CHILD/INTERACTIVE-PROJECT-VALIDATION-RUNBOOK.md).
+- Next: package build from a tested exact SHA; attach bundle to the existing interactive project; capture destination receipts for I1–I8; return receipts to MASTER for independent decision.
+- State: registered on working branch; not yet merged/integrated. External-host tests remain OPEN / NOT RUN. Continue NEXT-051; no NEXT-052.
+
