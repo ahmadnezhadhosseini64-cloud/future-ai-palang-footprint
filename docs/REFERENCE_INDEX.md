@@ -1717,3 +1717,10 @@ Both Path A (portable initial model and independent-host recovery) and Path B (e
 - Status: interactive destination import/restart/round-trip are OPEN / NOT RUN until destination receipts are returned.
 
 - [TIME-BINDING-POINT-0-034](architecture/BEHAVIOR-TRACE/TIME-BINDING-POINT-0-034-EVT-0204-2026-10-26.md) — canonical Git commit timestamp and UTC/Tehran equivalence.
+
+
+## POINT-0/035 — Evidence-governed graph repair (2026-10-26)
+- [POINT-0/035](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-035-IDENTIFIER-AND-PARENT-GRAPH-REPAIR.md) — latest root for this interaction.
+- [IN-071](0.0/anchors/PALANG-0.0-IN-20261026-071-IDENTIFIER-AND-PARENT-GRAPH-REPAIR.md) / [OUT-070](0.0/anchors/PALANG-0.0-OUT-20261026-070-IDENTIFIER-AND-PARENT-GRAPH-REPAIR.md) — input/output anchors.
+- [EVT-0205](architecture/BEHAVIOR-TRACE/EVT-0205-POINT-0-035-IDENTIFIER-AND-PARENT-GRAPH-REPAIR-2026-10-26.md) — event and error-learning record.
+- [CURRENT-083](0.0/anchors/PALANG-0.0-CURRENT-20261026-083-IDENTIFIER-AND-PARENT-GRAPH-REPAIR.md) — active checkpoint; NEXT-051 remains the sole global queue.
