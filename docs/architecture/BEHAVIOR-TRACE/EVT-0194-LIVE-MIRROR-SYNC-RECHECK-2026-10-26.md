@@ -66,19 +66,21 @@ The previous automation prompt's observed root POINT-0/018 is historical, not th
 
 ## 4. Actions evidence and scope
 
-### Latest independently inspected Evidence Gate
+### Evidence Gate observed at the pre-write inspection checkpoint
 - Run: [40277398514](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40277398514) — SUCCESS.
 - Exact tested commit reported by the run's durable evidence file: `f217aacde074169458632fe5665dfc8e05a792c0`.
 - Evidence artifact ID: `12631010494`.
 - Artifact ZIP SHA-256: `b0a6559e13cfe7307f021be8bb334ec22801fcc6e92ac321dd4301d80cfdb29b`.
 - This is an Evidence Gate execution proof, not a Living Architecture Audit.
 
-### Latest full Living Architecture Audit independently inspected in this run
-- Run: [40173685857](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40173685857) — SUCCESS on its tested tree.
-- Exact tested commit from the job log: `9eeeba08404fee6d12400c7445b1504c448a4d7a`.
-- Evidence artifact ID: `12591067623`.
-- Artifact ZIP SHA-256: `01f0da90efe87b4f59b8580f7da5066a6cfde3deb332279798597fee4fcb16ff`.
-- This receipt does NOT validate today's main head.
+### Latest full Living Architecture Audit independently retrieved during this run
+- Run: [40267412937](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40267412937) — SUCCESS on its tested tree.
+- Exact tested commit from the job log: `6d6623a681cc7012dc0705d141197de7f818fcf0`.
+- Audit timestamp from the job log: UTC `2026-10-26T04:07:38Z`; Tehran derived: `2026-10-26T07:37:38+03:30`.
+- Evidence artifact ID: `12626901669`.
+- Artifact ZIP SHA-256: `ccc014c2e2b5677243361eeec7f24d3fac44fab0d528f228e2ddaa9784b11f61`.
+- Pointer discovery 0.2 returned `SCOPED_CONSISTENT`, `winner_selected=false`: CURRENT-066 is scoped to the bounded overlay recovery; CURRENT-072 is scoped to the global project registry. This is a scope distinction, not a global winner selection and not permission to rewrite history.
+- The run explicitly reported external persistence and all-conversation capture as not tested. It does NOT validate today's main head.
 
 ### Main head observed at the pre-write inspection checkpoint
 - Exact main comparison at that inspection checkpoint: commit `218c6c6fc31bfc285864ed35d5aa6f6d93c4b0e4` compared with `main` returned `identical` (ahead_by 0, behind_by 0).
