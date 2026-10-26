@@ -829,3 +829,10 @@ The canonical live-destination audit source and its exact Library version-7 snap
 - Current root/checkpoint/queue: POINT-0/027 / CURRENT-074 / NEXT-051. Earlier points and EVT-0177 remain preserved.
 - CURRENT-065/CURRENT-066 remains OPEN. The latest retrieved full audit (40267412937 on SHA `6d6623a681cc7012dc0705d141197de7f818fcf0`) found scoped consistency between CURRENT-066 in overlay recovery and CURRENT-072 in the global project registry, with `winner_selected=false`; it does not validate the later main head.
 - Issues #20/#21, BOART-FOLLOWUP-01, external-host import, persistence, automatic capture and external destination gates remain open unless separate direct evidence closes them.
+
+
+## POINT-0/028 — Portable GPT-6 HAIF execution and continuation
+- [Point](../../0.0/anchors/PALANG-0.0-POINT-0-028-GPT6-PORTABLE-HAIF-EXECUTION-2026-10-26.md); [event EVT-0195](../../architecture/BEHAVIOR-TRACE/EVT-0195-USER-REQUEST-POINT-028-PORTABLE-GPT6-HAIF-EXECUTION-2026-10-26.md).
+- Portable startup package: [README](../../portable/GPT6-HAIF-BOOT-PACKAGE/README.md), [BOOTSTRAP](../../portable/GPT6-HAIF-BOOT-PACKAGE/BOOTSTRAP.md), [manifest](../../portable/GPT6-HAIF-BOOT-PACKAGE/manifest.json).
+- Prior observed state: POINT-0/027 → CURRENT-074 → NEXT-051. Rediscover live state every run; do not create NEXT-052.
+- Status: repository package registered; exact-final-SHA audits and independent GPT-6 host import remain open. CURRENT-065/CURRENT-066 remains unresolved; Issues #20/#21 remain open.
