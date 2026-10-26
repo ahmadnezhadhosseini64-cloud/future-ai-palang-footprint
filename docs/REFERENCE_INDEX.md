@@ -1565,4 +1565,4 @@ Invariant: Path A (initial model construction) and Path B (existing graph remedi
 
 - Current continuation: [CURRENT-072](./0.0/anchors/PALANG-0.0-CURRENT-20261026-072-DUAL-PATH-EXCAVATION.md); NEXT-051 remains active.
 
-- Current checkpoint time binding: [TIME-BINDING-CURRENT-072](./architecture/BEHAVIOR-TRACE/TIME-BINDING-CURRENT-072-POINT-0-025-2026-10-26.md) — UTC 2026-10-26T04:01:15Z / Tehran 2026-10-26 07:31:15 +03:30.
+- Current checkpoint time binding: [TIME-BINDING-CURRENT-072](./architecture/BEHAVIOR-TRACE/TIME-BINDING-CURRENT-072-POINT-0-025-2026-10-26.md) — UTC 2026-10-26T04:05:17Z / Tehran 2026-10-26 07:35:17 +03:30.
