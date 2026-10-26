@@ -21,3 +21,4 @@
 3. In the intended interactive host, follow the [I1–I8 validation runbook](../../architecture/MASTER-RAHM-CHILD/INTERACTIVE-PROJECT-VALIDATION-RUNBOOK.md); record raw receipts for import, restart/recovery, persistence and round-trip.
 4. Continue source-evidence review of two unresolved parent edges and remaining identity collisions in NEXT-051. Do not bulk-merge or declare them closed.
 5. Preserve MASTER as canonical, RAHM as the existing test/growth environment, and CHILD as candidate until direct evidence plus explicit MASTER acceptance.
+- Canonical repository time binding: [TIME-BINDING-CURRENT-086](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-CURRENT-086-POINT-0-037-2026-10-26.md).
