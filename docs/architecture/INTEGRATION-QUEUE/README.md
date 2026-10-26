@@ -2001,3 +2001,10 @@ The current root is [POINT-0/027](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261
 - This is evidence for the existing mirror follow-up, not a new queue. NEXT-051 remains the sole active remediation queue; no NEXT-052 is created.
 - Latest retrieved full Living Architecture Audit: run 40267412937, tested SHA `6d6623a681cc7012dc0705d141197de7f818fcf0`, result SUCCESS with scoped pointer consistency. The later main head is NOT VERIFIED by that run; exact-final-main audit and Portable RAHM Conformance remain required.
 - CURRENT-065/CURRENT-066 remains OPEN; preserve overlay and global-project scopes without selecting a winner by inference. Issues #20/#21 and BOART-FOLLOWUP-01 remain OPEN.
+
+
+## POINT-0/028 — Portable GPT-6 HAIF execution
+- **Stable ID:** PALANG-0.0-POINT-0-028-GPT6-PORTABLE-HAIF-EXECUTION-2026-10-26-001
+- **Status:** OPEN / LIVING / IN PROGRESS; portable instructions registered, clean-host import and exact-final-SHA audits pending.
+- **Evidence:** [EVT-0195](../BEHAVIOR-TRACE/EVT-0195-USER-REQUEST-POINT-028-PORTABLE-GPT6-HAIF-EXECUTION-2026-10-26.md), [point](../../0.0/anchors/PALANG-0.0-POINT-0-028-GPT6-PORTABLE-HAIF-EXECUTION-2026-10-26.md), [package](../../portable/GPT6-HAIF-BOOT-PACKAGE/README.md).
+- **Next:** continue NEXT-051; run full Living Architecture Audit and strict Portable RAHM Conformance on exact final main SHA; then attempt real clean GPT-6 host import if authorized access exists. Do not create NEXT-052.
