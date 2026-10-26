@@ -797,3 +797,13 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 
 ## Time binding — CURRENT-072 / POINT-0/025
 - [TIME-BINDING-CURRENT-072](./TIME-BINDING-CURRENT-072-POINT-0-025-2026-10-26.md) records the actual CURRENT-072 last-change commit timestamp in UTC and its derived Asia/Tehran equivalent.
+
+## POINT-0/025 time bindings — 2026-10-26
+
+- [Root time binding](./TIME-BINDING-EVT-0191-POINT-0-025-2026-10-26.md)
+- [IN-061 time binding](./TIME-BINDING-IN-061-POINT-0-025-2026-10-26.md)
+- [OUT-060 time binding](./TIME-BINDING-OUT-060-POINT-0-025-2026-10-26.md)
+- [EVT-0191 event time binding](./TIME-BINDING-EVT-0191-EVENT-2026-10-26.md)
+- [CURRENT-072 time binding](./TIME-BINDING-CURRENT-072-POINT-0-025-2026-10-26.md)
+
+All canonical repository timestamps are sourced from actual last-change Git commits in UTC, with Asia/Tehran derived from the same instant.
