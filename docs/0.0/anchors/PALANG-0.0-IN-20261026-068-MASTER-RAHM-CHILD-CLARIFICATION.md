@@ -5,7 +5,7 @@
 - Version: 1.0.0
 - Status: ACTIVE / LIVING / READ-BACK REQUIRED
 - Parent anchor: [POINT-0/032](./GPT6-RAHM-USER-POINT-0-20261026-032-MASTER-RAHM-CHILD-ARCHITECTURE.md)
-- Previous checkpoint: [CURRENT-079](./PALANG-0.0-CURRENT-20261026-079-MASTER-RAHM-CHILD-ARCHITECTURE.md)
+- Previous checkpoint: [CURRENT-079](./PALANG-0.0-CURRENT-20261026-079-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION.md)
 
 ## User-provided governing meaning
 This message is preserved as a clarification/evidence extension of the existing MASTER–RAHM–CHILD point, not as a parallel project.
