@@ -9,7 +9,7 @@
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: POINT-0/036 is the canonical root with 0+ production marker; CURRENT-085 is the active execution checkpoint; latest known exact-head audit and portable conformance on SHA 18ccbef16e5bae6e9e31879de8cf575c1c371bec passed; two parent edges and remaining identity groups stay OPEN; external interactive-host import remains NOT RUN; NEXT-051 remains the single active queue; no NEXT-052 placeholder.
+- Status: POINT-0/036 is the canonical root with 0+ production marker; CURRENT-085 is the active execution checkpoint; same-SHA audit and portable conformance on SHA `127cfd03095a881ae2aa9a625e0fe923644e9795` passed; global live pointer is CURRENT-085; two historical parent edges and remaining identity groups stay OPEN; external interactive-host import remains NOT RUN; NEXT-051 remains the single active queue; no NEXT-052 placeholder.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
