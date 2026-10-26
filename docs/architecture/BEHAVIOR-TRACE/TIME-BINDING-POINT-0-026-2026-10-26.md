@@ -17,7 +17,7 @@
 | IN-062 | `f1387a79eb57422d20cc8326228bd0bbb9a5cafb` | `2026-10-26T05:30:36Z` | `2026-10-26 09:00:36 +03:30` |
 | OUT-061 | `09c54fcc9440a33d421140526f8ec8c0e0a8fe65` | `2026-10-26T05:30:40Z` | `2026-10-26 09:00:40 +03:30` |
 | EVT-0192 | `38c466d53737ee9e2e7fdbb2b8968865a91594ba` | `2026-10-26T05:30:45Z` | `2026-10-26 09:00:45 +03:30` |
-| CURRENT-073 | `14945996ceea0cfbbe5b1fb5bc9c7be9fe9aa65f` | `2026-10-26T05:30:48Z` | `2026-10-26 09:00:48 +03:30` |
+| CURRENT-073 (after exact-head receipt append) | `5c970ca457f81eedea8b65ffc2fe376994d968ad` | `2026-10-26T05:34:52Z` | `2026-10-26 09:04:52 +03:30` |
 
 ## Evidence and boundary
 Each commit timestamp was retrieved from GitHub commit metadata for the exact commit SHA listed above. The files were independently fetched after creation and their identifiers and cross-links were checked. This binding does not assert the exact time the user sent the message, and it does not verify any non-repository storage destination.
