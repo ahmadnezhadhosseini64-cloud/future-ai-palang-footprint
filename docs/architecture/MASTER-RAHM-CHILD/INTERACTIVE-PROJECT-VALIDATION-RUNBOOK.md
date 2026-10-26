@@ -88,3 +88,35 @@ This runbook is committed to the repository. The actual interactive-project test
 ## Latest checkpoint
 Use [POINT-0/033](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-033-EXCAVATION-AND-MASTER-RAHM-CHILD-CONTINUATION.md) and [CURRENT-081](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-081-EXCAVATION-AND-MASTER-RAHM-CHILD-CONTINUATION.md) as the latest repository continuation. This does not change the status of any destination test: I1–I8 remain NOT RUN until the actual interactive project returns receipts.
 
+
+## Copy/paste execution prompt — POINT-0/034 / CURRENT-082
+
+Use this prompt inside the **actual target interactive project** after attaching/importing the exact RAHM export bundle produced from the repository. If the project cannot access the attachment or perform a requested operation, it must say so and leave that test NOT RUN.
+
+> You are the RAHM validation environment, not MASTER. Do not create a parallel project. Use the attached Future AI / Palang Footprint export bundle and its manifest as the only source package for this run.
+>
+> **First, identify the evidence:** return the exact package filename, package version, source repository commit SHA, manifest version, package SHA-256 if available, destination project identifier, model/runtime identifier if visible, and import receipt. Never infer missing values; use UNKNOWN.
+>
+> **Then run I1–I8 and IPV-01–IPV-10 from the attached runbook, to the extent the environment actually supports them.** For each test, return: test ID, exact action taken, expected invariant, observed result, PASS / FAIL / BLOCKED / NOT SUPPORTED / NOT RUN, evidence or receipt, read-back method, and any limitations.
+>
+> At minimum:
+> 1. Import the exact bundle and return a destination-side receipt (I1).
+> 2. Without relying on this prompt's explanatory text, reconstruct MASTER/RAHM/CHILD roles, current checkpoint CURRENT-082, global queue NEXT-051, and all known OPEN gaps from the imported package (I2).
+> 3. Cite source paths and version/digest for sampled artifacts (I3).
+> 4. Propose a harmless candidate change and demonstrate that it remains a candidate and cannot silently modify MASTER (I4).
+> 5. Confirm conflicting POINT-0/032 candidates and EVT-0195 collision remain preserved without guessed adjudication (I5).
+> 6. If supported, restart/reopen the project and reconstruct state; otherwise mark NOT RUN and explain the exact capability blocker (I6).
+> 7. Export a round-trip copy and compare IDs, hashes, parent edges and OPEN-gap state (I7).
+> 8. Do not promote anything. Return a CHILD CANDIDATE package only; MASTER must separately review and record ACCEPT / REJECT / RETURN FOR WORK (I8).
+>
+> Preserve failures, rejected candidates, source provenance and open gaps. Do not claim persistence, background execution, independent-host recovery, or successful import without observed receipts. Do not fabricate timestamps, hashes, model versions or project IDs.
+>
+> End with a machine-readable YAML receipt for every test, plus a concise blocker list. Keep the original bundle unchanged.
+
+### Execution hand-off
+
+1. Build/download the current export bundle from the repository after exact-SHA conformance passes.
+2. Attach that exact bundle to the already-existing interactive project; do not make a new project merely to bypass a failed import.
+3. Paste the prompt above and collect the raw response/receipt.
+4. Bring the receipt back to MASTER for independent read-back and adjudication. Until that return is reviewed, keep all destination tests OPEN / NOT RUN and do not promote a CHILD.
+

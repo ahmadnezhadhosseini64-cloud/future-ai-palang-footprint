@@ -886,3 +886,10 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Current: [CURRENT-079](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-079-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION.md)
 - Contract: [Master–Rahm–Child cross-validation](../MASTER-RAHM-CHILD/MASTER-RAHM-CHILD-CROSS-VALIDATION-CONTRACT-2026-10-26.md)
 - Status: repository event registered; external interactive-project test receipt not yet available.
+
+
+## EVT-0204 — interactive RAHM execution
+- Event: [EVT-0204](./EVT-0204-POINT-0-034-INTERACTIVE-RAHM-EXECUTION-2026-10-26.md)
+- Root/checkpoint: [POINT-0/034](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-034-INTERACTIVE-RAHM-EXECUTION.md) → [CURRENT-082](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-082-INTERACTIVE-RAHM-EXECUTION.md)
+- This event records the runbook execution hand-off, not a successful destination import. I1–I8 remain OPEN / NOT RUN until raw receipts are returned.
+

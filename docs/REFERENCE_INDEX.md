@@ -1708,3 +1708,11 @@ Both Path A (portable initial model and independent-host recovery) and Path B (e
 - [CURRENT-081](0.0/anchors/PALANG-0.0-CURRENT-20261026-081-EXCAVATION-AND-MASTER-RAHM-CHILD-CONTINUATION.md) — active checkpoint.
 - [Excavation register](architecture/BEHAVIOR-TRACE/EXCAVATION-REGISTER-2026-10-26-MASTER-RAHM-CHILD.md) — recovered sources, gaps and reopening triggers.
 
+
+## POINT-0/034 — Interactive RAHM execution (2026-10-26)
+- [POINT-0/034](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-034-INTERACTIVE-RAHM-EXECUTION.md) — new continuation root.
+- [CURRENT-082](0.0/anchors/PALANG-0.0-CURRENT-20261026-082-INTERACTIVE-RAHM-EXECUTION.md) — current active checkpoint.
+- [EVT-0204](architecture/BEHAVIOR-TRACE/EVT-0204-POINT-0-034-INTERACTIVE-RAHM-EXECUTION-2026-10-26.md) — behavior/event record.
+- [Interactive Project Validation Runbook](architecture/MASTER-RAHM-CHILD/INTERACTIVE-PROJECT-VALIDATION-RUNBOOK.md) — includes a copy/paste prompt for real destination testing.
+- Status: interactive destination import/restart/round-trip are OPEN / NOT RUN until destination receipts are returned.
+
