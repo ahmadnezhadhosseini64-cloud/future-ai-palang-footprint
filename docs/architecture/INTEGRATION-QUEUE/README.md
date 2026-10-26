@@ -9,7 +9,7 @@
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: POINT-0/036 is the canonical root with 0+ production marker; CURRENT-085 is the active execution checkpoint; same-SHA audit and portable conformance on SHA `127cfd03095a881ae2aa9a625e0fe923644e9795` passed; global live pointer is CURRENT-085; two historical parent edges and remaining identity groups stay OPEN; external interactive-host import remains NOT RUN; NEXT-051 remains the single active queue; no NEXT-052 placeholder.
+- Status: POINT-0/037 is the latest continuation root; CURRENT-086 is the active execution checkpoint; the latest inspected main head was `d1207fe71ac95b4c6606226486cc4b0cfe9dd6fd`; the most recent audit/conformance pair passed on tested SHA `62f8007deefbfbdb0fbe4156074f069f070fc7f2`, not the later head; external interactive-host import remains NOT RUN; 2 parent edges and identity groups stay OPEN; NEXT-051 remains the single active queue; no NEXT-052 placeholder.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
@@ -2102,3 +2102,10 @@ The current root is [POINT-0/027](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261
 - Same-SHA audit and conformance receipt on `127cfd03095a881ae2aa9a625e0fe923644e9795`: Living Architecture Audit [40355174264](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40355174264) PASS; Portable RAHM Conformance [40355174175](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40355174175) PASS.
 - Audit artifact 12665756382, digest `sha256:e866aa261fb199e3bfa7e0aaa6c4f591d5ff955aaa59a54b2de3c4b702fffafd`; 0 missing local links, 2 unresolved parent edges, 0 ambiguous edges. The global live pointer now consistently declares CURRENT-085; overlay CURRENT-066 remains a separate scope.
 - Portable package content SHA-256 `a96485ead239e3fa6150fc6e76b7382dd5b1cd54b98c2a16f6c448a42c445826`; exact-byte scan 50/50 and 127 live references PASS.
+
+
+## Latest continuation — POINT-0/037 → CURRENT-086
+- Chain: IN-074 → OUT-073 → EVT-0208 → CURRENT-086; POINT-0/037 is the new root for this host-readiness turn.
+- Package-ready for a controlled trial: [portable package artifact](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40355991343/artifacts/12663829740), 178 files, 639,095 bytes, package SHA-256 `0864ff217585d03ffb649ca1f5c1a4b5404d6fa5bc7166be4c1e4c803d4b330f`.
+- Evidence boundary: CI transfer Runtime A→B passed; actual target-host import/restart/persistence/round-trip NOT RUN. Two parent edges remain unresolved; continue source-based graph review under NEXT-051.
+- Fresh exact-head audit and conformance must run after the new checkpoint is integrated; prior passing runs were on SHA `62f8007deefbfbdb0fbe4156074f069f070fc7f2`.
