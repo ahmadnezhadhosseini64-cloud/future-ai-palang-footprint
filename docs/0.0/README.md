@@ -1732,10 +1732,12 @@ The canonical chain is [POINT-0/032](./anchors/GPT6-RAHM-USER-POINT-0-20261026-0
 - Continue NEXT-051 only; Path A actual-host validation and Path B graph repair remain separate proof lanes.
 
 
-## POINT-0/036 — Deep excavation and initial-model completion (2026-10-26)
+## POINT-0/036 — Deep excavation, 0+ production milestone and initial-model acceleration (2026-10-26)
 - Root: [POINT-0/036](./anchors/GPT6-RAHM-USER-POINT-0-20261026-036-DEEP-EXCAVATION-INITIAL-MODEL-COMPLETION.md).
-- Chain: [IN-072](./anchors/PALANG-0.0-IN-20261026-072-DEEP-EXCAVATION-INITIAL-MODEL-COMPLETION.md) → [OUT-071](./anchors/PALANG-0.0-OUT-20261026-071-DEEP-EXCAVATION-INITIAL-MODEL-COMPLETION.md) → [EVT-0206](../architecture/BEHAVIOR-TRACE/EVT-0206-POINT-0-036-DEEP-EXCAVATION-INITIAL-MODEL-COMPLETION-2026-10-26.md) → [CURRENT-084](./anchors/PALANG-0.0-CURRENT-20261026-084-DEEP-EXCAVATION-INITIAL-MODEL-COMPLETION.md).
+- 0+ is a production marker on this same POINT-0/036, not a second root.
+- Chain: [IN-072](./anchors/PALANG-0.0-IN-20261026-072-DEEP-EXCAVATION-INITIAL-MODEL-COMPLETION.md) → [OUT-071](./anchors/PALANG-0.0-OUT-20261026-071-DEEP-EXCAVATION-INITIAL-MODEL-COMPLETION.md) → [EVT-0206](../architecture/BEHAVIOR-TRACE/EVT-0206-POINT-0-036-DEEP-EXCAVATION-INITIAL-MODEL-COMPLETION-2026-10-26.md) → [CURRENT-084](./anchors/PALANG-0.0-CURRENT-20261026-084-DEEP-EXCAVATION-INITIAL-MODEL-COMPLETION.md) → [IN-073](./anchors/PALANG-0.0-IN-20261026-073-0PLUS-MODEL-ACCELERATION.md) → [OUT-072](./anchors/PALANG-0.0-OUT-20261026-072-0PLUS-MODEL-ACCELERATION.md) → [EVT-0207](../architecture/BEHAVIOR-TRACE/EVT-0207-POINT-0-036-0PLUS-MODEL-ACCELERATION-2026-10-26.md) → [CURRENT-085](./anchors/PALANG-0.0-CURRENT-20261026-085-0PLUS-MODEL-ACCELERATION.md).
 - Continue the existing [NEXT-051](./anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md); do not create NEXT-052.
 - Path A: executable initial model, portable package, recovery and independent-host acceptance. Path B: historical graph excavation, identity collisions, declared-ID/reference separation and parent-edge repair. Both remain connected but separately gated.
-- Current status: root/chain registered; exact-head audit and portable conformance still required after this registration; external-host tests remain NOT RUN until direct receipts exist.
+- Verified baseline at SHA 18ccbef16e5bae6e9e31879de8cf575c1c371bec: Living Architecture Audit and Portable RAHM Conformance PASS; 0 missing local links, 2 unresolved parent edges; external-host tests remain NOT RUN until direct receipts exist.
+- Current status: POINT-0/036 marked 0+; CURRENT-085 is the active checkpoint; NEXT-051 remains the sole active queue.
 - Canonical time binding: [TIME-BINDING-POINT-0-036-CHAIN](../architecture/BEHAVIOR-TRACE/TIME-BINDING-POINT-0-036-CHAIN-2026-10-26.md).
