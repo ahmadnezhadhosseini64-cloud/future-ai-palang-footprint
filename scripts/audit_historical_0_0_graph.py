@@ -10,6 +10,7 @@ from collections import defaultdict
 from urllib.parse import urlparse, unquote
 import hashlib, json, re, subprocess
 from datetime import datetime, timezone
+from graph_identifier_roles import metadata_header
 
 ROOT = Path(".")
 OUT = ROOT / "audit-output"
@@ -21,7 +22,7 @@ except Exception:
     commit = "UNKNOWN"
 
 # Evidence Gate outputs are retained and counted separately from architectural source nodes.
-all_files = sorted(p for p in ROOT.rglob("*") if p.is_file() and ".git" not in p.parts and "audit-output" not in p.parts)
+all_files = sorted(p for p in ROOT.rglob("*") if p.is_file() and ".git" not in p.parts and "__pycache__" not in p.parts and p.suffix != ".pyc" and "audit-output" not in p.parts)
 evidence_files = [p for p in all_files if re.fullmatch(r"evidence-gate-.*\.txt", p.name) and p.parent.as_posix() == "evidence"]
 source_files = [p for p in all_files if p not in evidence_files]
 zero_paths = [p for p in all_files if "0.0" in p.as_posix()]
@@ -66,11 +67,14 @@ for p in source_files:
     if text is None:
         decode_errors.append(p.as_posix())
         continue
-    stable = id_vals(text, r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Stable ID(?:\s*/\s*شناسهٔ پایدار)?|Stable-ID|Canonical Stable ID|Stable Reference ID|Stable Report ID|شناسهٔ پایدار(?: این نقطه)?|شناسه پایدار(?: این نقطه)?)(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
-    prod = id_vals(text, r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Production ID(?:\s*/\s*شناسهٔ تولید)?|Production-ID|Production / Registration ID|شناسهٔ تولید|شناسه تولید|شناسهٔ ثبت)(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
-    reference_ids = id_vals(text, r"^\s*(?:[-*]\s*)?(?:\*\*)?Reference ID(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
-    vers = vals(text, r"^\s*(?:[-*]\s*)?(?:\*\*)?Version(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
-    parent = vals(text, r"^\s*(?:[-*]\s*)?(?:Parent(?: input| event| reference)?|Parent ID|Parent Stable ID)\s*:\s*`?([^`\r\n]+)")
+    metadata_text, metadata_line_count = metadata_header(text)
+    # Identity collision maps use only this file's own bounded metadata header.
+    # Body mentions remain provenance/reference evidence and cannot create definitions.
+    stable = id_vals(metadata_text, r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Stable ID(?:\s*/\s*شناسهٔ پایدار)?|Stable-ID|Canonical Stable ID|Stable Reference ID|Stable Report ID|شناسهٔ پایدار(?: این نقطه)?|شناسه پایدار(?: این نقطه)?)(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
+    prod = id_vals(metadata_text, r"^\s*(?:[-*]\s*)?(?:\*\*)?(?:Production ID(?:\s*/\s*شناسهٔ تولید)?|Production-ID|Production / Registration ID|شناسهٔ تولید|شناسه تولید|شناسهٔ ثبت)(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
+    reference_ids = id_vals(metadata_text, r"^\s*(?:[-*]\s*)?(?:\*\*)?Reference ID(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
+    vers = vals(metadata_text, r"^\s*(?:[-*]\s*)?(?:\*\*)?Version(?:\*\*)?\s*:\s*(?:\*\*)?`?([^`\r\n]+)")
+    parent = vals(metadata_text, r"^\s*(?:[-*]\s*)?(?:Parent(?: input| event| reference)?|Parent ID|Parent Stable ID)\s*:\s*`?([^`\r\n]+)")
     for x in stable: stable_map[x].append(p.as_posix())
     for x in prod: prod_map[x].append(p.as_posix())
     for x in reference_ids: reference_id_map[x].append(p.as_posix())
