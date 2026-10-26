@@ -1642,3 +1642,10 @@ Both Path A (portable initial model and independent-host recovery) and Path B (e
 - Current checkpoint: [CURRENT-076](0.0/anchors/PALANG-0.0-CURRENT-20261026-076-POINT-0-PLUS-ARCHITECTURE-CLOSURE.md). Existing queue NEXT-051 remains active.
 - Eight CI checks passed on 282cb1acd859c188f4cbb2443a960a013380d385; follow-up commit 3924818996f679d80a8335cab2429177c2ceba36 advanced main afterward, so exact current-head verification is required.
 - Two EVT-0195 files remain a preserved unresolved collision. CURRENT-065/CURRENT-066 and Issues #20/#21 remain open. External GPT-6 host import not run; Buffer/Persistent Memory unverified; Dropbox open/not verified.
+
+
+## POINT-0/029 — Current continuation root (2026-10-26)
+- Root: [POINT-0/029](0.0/anchors/PALANG-0.0-POINT-0-029-CONTINUE-HAIF-ARCHITECTURE-2026-10-26.md)
+- Event: [EVT-0197](architecture/BEHAVIOR-TRACE/EVT-0197-USER-REQUEST-NEW-POINT-0-AND-CONTINUE-2026-10-26.md)
+- Parent root: POINT-0/028. Current checkpoint: CURRENT-075. Active queue: NEXT-051 only.
+- Exact-current-main audit, clean-host recovery, Buffer/Persistent Memory, Dropbox and Issues #20/#21 remain open or unverified until direct evidence changes their status.
