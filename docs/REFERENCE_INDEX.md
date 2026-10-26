@@ -1566,3 +1566,13 @@ Invariant: Path A (initial model construction) and Path B (existing graph remedi
 - Current continuation: [CURRENT-072](./0.0/anchors/PALANG-0.0-CURRENT-20261026-072-DUAL-PATH-EXCAVATION.md); NEXT-051 remains active.
 
 - Current checkpoint time binding: [TIME-BINDING-CURRENT-072](./architecture/BEHAVIOR-TRACE/TIME-BINDING-CURRENT-072-POINT-0-025-2026-10-26.md) — UTC 2026-10-26T04:05:17Z / Tehran 2026-10-26 07:35:17 +03:30.
+
+## POINT-0/025 time bindings — 2026-10-26
+
+- Root: [TIME-BINDING-POINT-0/025](./architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0191-POINT-0-025-2026-10-26.md) — UTC 2026-10-26T04:05:14Z / Tehran 07:35:14.
+- Input: [TIME-BINDING-IN-061](./architecture/BEHAVIOR-TRACE/TIME-BINDING-IN-061-POINT-0-025-2026-10-26.md) — UTC 2026-10-26T04:04:55Z / Tehran 07:34:55.
+- Output: [TIME-BINDING-OUT-060](./architecture/BEHAVIOR-TRACE/TIME-BINDING-OUT-060-POINT-0-025-2026-10-26.md) — UTC 2026-10-26T04:04:57Z / Tehran 07:34:57.
+- Event: [TIME-BINDING-EVT-0191](./architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0191-EVENT-2026-10-26.md) — UTC 2026-10-26T04:10:35Z / Tehran 07:40:35.
+- Current checkpoint: [TIME-BINDING-CURRENT-072](./architecture/BEHAVIOR-TRACE/TIME-BINDING-CURRENT-072-POINT-0-025-2026-10-26.md) — UTC 2026-10-26T04:05:17Z / Tehran 07:35:17.
+
+Each binding uses the actual last-change Git commit timestamp in UTC; the Tehran time is derived from that same instant. These are repository timestamps, not guessed user-message times.
