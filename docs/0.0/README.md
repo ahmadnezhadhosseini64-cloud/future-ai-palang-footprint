@@ -1609,7 +1609,7 @@ Current checkpoint remains NEXT-024; active next task is [EVT-0122](../architect
 - **Input / Output:** [IN-062](./anchors/PALANG-0.0-IN-20261026-062-DUAL-PATH-HAIF-CONTINUATION.md) / [OUT-061](./anchors/PALANG-0.0-OUT-20261026-061-DUAL-PATH-HAIF-CONTINUATION.md).
 - **Event:** [EVT-0192](../architecture/BEHAVIOR-TRACE/EVT-0192-USER-REQUEST-POINT-0-DUAL-PATH-HAIF-CONTINUATION-2026-10-26.md).
 - **Current checkpoint:** [CURRENT-073](./anchors/PALANG-0.0-CURRENT-20261026-073-DUAL-PATH-HAIF-CONTINUATION.md) — ACTIVE / LIVING / OPEN / EXECUTION REQUIRED.
-- **Queue:** [NEXT-051](../anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md) remains the active remediation queue; do not fork a competing queue.
+- **Queue:** [NEXT-051](./anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md) remains the active remediation queue; do not fork a competing queue.
 - **Path A:** portable initial HAIF/RAHM model, fresh extraction/import, independent-host validation and restart recovery. External-host import remains NOT RUN until an authorized route exists.
 - **Path B:** provenance-preserving excavation and case-by-case graph reconciliation. The latest carried-forward audit remains REVIEW_REQUIRED; no bulk merge or silent deletion.
 - **Continuity rule:** This entry supersedes earlier navigation pointers as the latest root/current pointer only; it does not replace or delete historical anchors. Both paths remain mandatory and separately gated. Dropbox remains out of scope unless explicitly reopened.
