@@ -188,3 +188,6 @@
 - صف فعال همچنان NEXT-051 است؛ NEXT-052 ساخته نشود. شکاف‌های تاریخی و میزبان مستقل OPEN می‌مانند.
 
 > Reconciliation: the canonical POINT-0/032 chain is the Master–Rahm–Child bridge chain. Do not use alternate same-number artifacts as active pointers; the duplicate records are retained for audit and require explicit source-lineage reconciliation.
+
+
+- **Run the RAHM project validation:** [Interactive Project Validation Runbook](../MASTER-RAHM-CHILD/INTERACTIVE-PROJECT-VALIDATION-RUNBOOK.md). Paste its prompt into the actual interactive project after attaching the exact export bundle. The runbook is ready; actual test results remain NOT RUN until the project returns receipts.
