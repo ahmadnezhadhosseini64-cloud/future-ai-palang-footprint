@@ -123,8 +123,3 @@ The initial-model AI package and HAIF executable sample already exist in the rep
 2. **Real interactive-project/independent-host verification:** destination-side import, reconstruction, restart, isolation, round-trip and receipt.
 
 Passing class 1 never proves class 2. Promotion to an accepted CHILD requires both the required test evidence and an explicit MASTER decision. Until then, status stays OPEN / CANDIDATE / NOT VERIFIED.
-
-
-## Latest excavation checkpoint — 2026-10-26
-The current continuation is [POINT-0/033](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-033-EXCAVATION-AND-MASTER-RAHM-CHILD-CONTINUATION.md) → [CURRENT-081](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-081-EXCAVATION-AND-MASTER-RAHM-CHILD-CONTINUATION.md). The excavation register preserves the unresolved POINT-0/032 source-path ambiguity. Both paths remain intact until Git provenance and consumer references establish lineage.
-
