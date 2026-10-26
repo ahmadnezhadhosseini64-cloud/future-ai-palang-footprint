@@ -1,7 +1,7 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.2
+- Version: 1.0.3
 - Date: 2026-10-19
 - Project: Future AI / Palang Footprint / HAIF
 
@@ -819,3 +819,12 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 ## EVT-0193 — Path B gap reconciliation
 
 [EVT-0193](./EVT-0193-POINT-0-PATH-B-GAP-RECONCILIATION-2026-10-26.md) records the new root POINT-0/027 and a concrete audit finding: all-or-nothing path-set matching discarded partial role evidence. The corrected rule accepts only source-hash-verified paths inside the audited group and keeps the group open until complete coverage without role conflict. Related anchors: [POINT-0/027](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-027-PATH-B-GAP-RECONCILIATION.md), [CURRENT-074](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-074-PATH-B-GAP-RECONCILIATION.md), [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). Semantic closure remains OPEN pending exact-head CI and case-level review.
+
+
+## EVT-0194 — Live mirror sync recheck (2026-10-26)
+
+- Event: [EVT-0194](./EVT-0194-LIVE-MIRROR-SYNC-RECHECK-2026-10-26.md); canonical time binding: [TIME-BINDING-EVT-0194](./TIME-BINDING-EVT-0194-LIVE-MIRROR-SYNC-2026-10-26.md).
+- Canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10` remains unchanged at 10,479 characters. Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, version 7, reads as 10,480 characters; edit distance 1, solely one additional trailing newline. Semantic fields and remaining content match; no redundant Library rewrite was performed.
+- Current root/checkpoint/active queue discovered from main: POINT-0/027 / CURRENT-074 / NEXT-051. POINT-0/016, POINT-0/017, POINT-0/018 and prior mirror event EVT-0177 remain preserved. This event is not a new root or a new NEXT queue.
+- CURRENT-065/CURRENT-066 remains OPEN. Audit run 40267412937 returned scoped consistency (CURRENT-066 for overlay recovery; CURRENT-072 for global project registry; winner_selected=false) on tested SHA `6d6623a681cc7012dc0705d141197de7f818fcf0`; this is not an exact-current-main audit.
+- Buffer/Persistent Memory remain NOT VERIFIED; Dropbox remains OPEN / NOT VERIFIED; external end-to-end recovery remains NOT RUN. Issues #20/#21 and BOART-FOLLOWUP-01 remain open.
