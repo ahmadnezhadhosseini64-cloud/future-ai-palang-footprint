@@ -807,3 +807,9 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - [CURRENT-072 time binding](./TIME-BINDING-CURRENT-072-POINT-0-025-2026-10-26.md)
 
 All canonical repository timestamps are sourced from actual last-change Git commits in UTC, with Asia/Tehran derived from the same instant.
+
+
+
+## Latest event — EVT-0192
+
+[EVT-0192 — New root POINT-0 and dual-path HAIF continuation](./EVT-0192-USER-REQUEST-POINT-0-DUAL-PATH-HAIF-CONTINUATION-2026-10-26.md) records the user's request, the parallel Path A / Path B contract, the scope-aware pointer lesson and the ID-allocation safeguards. Related anchors: [POINT-0/026](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-026-DUAL-PATH-HAIF-CONTINUATION.md), [IN-062](../../0.0/anchors/PALANG-0.0-IN-20261026-062-DUAL-PATH-HAIF-CONTINUATION.md), [OUT-061](../../0.0/anchors/PALANG-0.0-OUT-20261026-061-DUAL-PATH-HAIF-CONTINUATION.md), [CURRENT-073](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-073-DUAL-PATH-HAIF-CONTINUATION.md). The event is registered but semantic completion of both paths remains open.
