@@ -91,3 +91,19 @@ This contract extends, rather than replaces, the initial-model mother, portable 
 
 ## Executable interactive-project runbook
 Use [INTERACTIVE-PROJECT-VALIDATION-RUNBOOK.md](./INTERACTIVE-PROJECT-VALIDATION-RUNBOOK.md) as the copy/paste test procedure in the actual RAHM project. The runbook is a protocol, not a test receipt; every IPV test remains NOT RUN until actual destination output is returned and independently read back.
+
+## 9. Canonical role definition confirmed from user-provided prior output — 2026-10-26
+
+This section preserves the user's supplied earlier assistant output as a project baseline; it is not treated as proof that external runtime tests already passed.
+
+- **MASTER — original project:** durable rules, interaction history, behavioral patterns, accepted architecture, provenance and evidence. MASTER is the final decision authority. A new proposal does not automatically become accepted policy.
+- **RAHM — womb / growth and validation environment:** the existing initial-model AI package plus its intended interactive-project runtime. It receives a versioned MASTER package, reconstructs state, runs tests, records failures and produces candidates. It must not silently turn raw data or unresolved gaps into accepted rules.
+- **CHILD — candidate initial version:** a specifically versioned result that passes defined tests, carries evidence and limitations, and is submitted for MASTER review. A failed or partially verified result does not become MASTER policy.
+- **Growth cycle:** MASTER → RAHM → tests/evidence → CHILD candidate → MASTER review → ACCEPT or RETURN FOR WORK. Rejected versions, errors and gaps remain preserved.
+
+### Implementation consequence
+The initial-model AI package and HAIF executable sample already exist in the repository. Extend and connect those existing artifacts; do not create a parallel model folder or a competing Master. Keep two evidence classes separate:
+1. **Repository-executable verification:** code, schema, links, package digests and CI tests against a named exact commit.
+2. **Real interactive-project/independent-host verification:** destination-side import, reconstruction, restart, isolation, round-trip and receipt.
+
+Passing class 1 never proves class 2. Promotion to an accepted CHILD requires both the required test evidence and an explicit MASTER decision. Until then, status stays OPEN / CANDIDATE / NOT VERIFIED.
