@@ -1981,3 +1981,14 @@ The active root is [POINT-0/026](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-202610
 
 
 - Current point: [CURRENT-073](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-073-DUAL-PATH-HAIF-CONTINUATION.md); active next: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+
+
+
+## CURRENT-074 — Path B semantic review correction
+
+The current root is [POINT-0/027](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-027-PATH-B-GAP-RECONCILIATION.md); see [IN-063](../../0.0/anchors/PALANG-0.0-IN-20261026-063-PATH-B-GAP-RECONCILIATION.md), [OUT-062](../../0.0/anchors/PALANG-0.0-OUT-20261026-062-PATH-B-GAP-RECONCILIATION.md), [EVT-0193](../BEHAVIOR-TRACE/EVT-0193-POINT-0-PATH-B-GAP-RECONCILIATION-2026-10-26.md), and [CURRENT-074](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-074-PATH-B-GAP-RECONCILIATION.md).
+
+- Implemented code change: source-hash-verified partial role decisions can annotate only the exact subset they cover; a group stays PARTIALLY-ROLE-ADJUDICATED until all paths are covered without role conflict.
+- Required tests: partial coverage, multiple partial decisions completing one group, stale hash rejection, out-of-group path rejection, conflicting role rejection, wrong identifier/type and unreviewed-decision rejection.
+- Next validation: exact-head Living Architecture Audit and Portable RAHM Conformance. Keep semantic graph REVIEW_REQUIRED until case-level findings are individually reconciled.
+- NEXT-051 remains the single active remediation queue; Path A's independent-host import gate remains separate and open.
