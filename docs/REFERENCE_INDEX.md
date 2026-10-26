@@ -1725,3 +1725,11 @@ Both Path A (portable initial model and independent-host recovery) and Path B (e
 - [EVT-0205](architecture/BEHAVIOR-TRACE/EVT-0205-POINT-0-035-IDENTIFIER-AND-PARENT-GRAPH-REPAIR-2026-10-26.md) — event and error-learning record.
 - [CURRENT-083](0.0/anchors/PALANG-0.0-CURRENT-20261026-083-IDENTIFIER-AND-PARENT-GRAPH-REPAIR.md) — active checkpoint; NEXT-051 remains the sole global queue.
 - Time bindings: [POINT-0/035](architecture/BEHAVIOR-TRACE/TIME-BINDING-POINT-0-035-EVT-0205-2026-10-26.md), [IN-071](architecture/BEHAVIOR-TRACE/TIME-BINDING-IN-071-POINT-0-035-2026-10-26.md), [OUT-070](architecture/BEHAVIOR-TRACE/TIME-BINDING-OUT-070-POINT-0-035-2026-10-26.md), [EVT-0205](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0205-POINT-0-035-2026-10-26.md), [CURRENT-083](architecture/BEHAVIOR-TRACE/TIME-BINDING-CURRENT-083-POINT-0-035-2026-10-26.md).
+
+
+## Latest root and execution checkpoint — POINT-0/036 / CURRENT-084 (2026-10-26)
+- Root: [POINT-0/036](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-036-DEEP-EXCAVATION-INITIAL-MODEL-COMPLETION.md).
+- Chain: [IN-072](0.0/anchors/PALANG-0.0-IN-20261026-072-DEEP-EXCAVATION-INITIAL-MODEL-COMPLETION.md) → [OUT-071](0.0/anchors/PALANG-0.0-OUT-20261026-071-DEEP-EXCAVATION-INITIAL-MODEL-COMPLETION.md) → [EVT-0206](architecture/BEHAVIOR-TRACE/EVT-0206-POINT-0-036-DEEP-EXCAVATION-INITIAL-MODEL-COMPLETION-2026-10-26.md) → [CURRENT-084](0.0/anchors/PALANG-0.0-CURRENT-20261026-084-DEEP-EXCAVATION-INITIAL-MODEL-COMPLETION.md).
+- Existing queue: [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md) remains the single active remediation queue.
+- Architecture invariant: declared identifier metadata differs from body references; parent resolution must be source-specific and evidence-backed. Path A initial-model execution and Path B graph repair remain coordinated but independently verified.
+- Status: registration completed; exact-current-main audit and portable conformance after this point are pending; external-host import/restart/round-trip remains NOT RUN.
