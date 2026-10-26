@@ -1629,3 +1629,8 @@ Both Path A (portable initial model and independent-host recovery) and Path B (e
 - Event: [EVT-0195](architecture/BEHAVIOR-TRACE/EVT-0195-USER-REQUEST-POINT-028-PORTABLE-GPT6-HAIF-EXECUTION-2026-10-26.md)
 - Portable package: [README](portable/GPT6-HAIF-BOOT-PACKAGE/README.md), [Bootstrap](portable/GPT6-HAIF-BOOT-PACKAGE/BOOTSTRAP.md), [manifest](portable/GPT6-HAIF-BOOT-PACKAGE/manifest.json)
 - Continue NEXT-051; exact-final-SHA audit and clean-host import remain open.
+
+
+## Live mirror sync — EVT-0196 (2026-10-26)
+- [EVT-0196](architecture/BEHAVIOR-TRACE/EVT-0196-LIVE-MIRROR-SYNC-RECHECK-2026-10-26.md) and [time binding](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0196-LIVE-MIRROR-SYNC-2026-10-26.md) record the fresh comparison of source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars) with Library version 7 (10,480 chars; one extra trailing newline; edit distance 1). Semantic fields match; no redundant Library write.
+- Current root/checkpoint/active queue: POINT-0/028 / CURRENT-075 / NEXT-051. The duplicate EVT-0195 number is recorded as unresolved; both files are preserved. Issues #20/#21 remain open.
