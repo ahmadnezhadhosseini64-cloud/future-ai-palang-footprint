@@ -487,3 +487,11 @@ Resume from the anchor file and the existing [HAIF initial-model package](../../
 - Post-edit proof: [Living Architecture Audit 39579658484](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/39579658484), SUCCESS on commit `a548f2665882684caa7f32d657dca7a20e8209f6`; artifact `12335398419`, SHA-256 `e90b532e82b5e39bffe90d20e40f8a46e426ea9ee41a5535fc84ff6c727a123b`.
 - Verified structural metrics: 543 source files, 1,336 local Markdown edges, 0 missing links, 0 decode errors, 39 Stable ID groups, 50 Production ID groups, 7 Reference ID groups, 10 EVT-number groups, 11 exact-content duplicate groups, 38 declared parent edges and 0 unresolved/ambiguous parent edges.
 - Acceptance: parser count reconciliation and local-link gate CLOSED for this audited snapshot. Semantic identity/alias adjudication remains OPEN / PARTIAL; no duplicate is auto-deleted and no provisional canonical choice is promoted by this structural pass.
+
+
+
+## 7. POINT-0/027 — Path B role coverage and case-ledger continuation
+
+Latest root: [POINT-0/027](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-027-PATH-B-GAP-RECONCILIATION.md); current execution checkpoint: [CURRENT-074](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-074-PATH-B-GAP-RECONCILIATION.md).
+
+The latest audit snapshot reports 63 Stable-ID groups (62 unreviewed), 89 Production-ID groups, 7 Reference-ID groups, 38 event-number groups, 11 exact-content duplicate groups, 13 ambiguous parent edges and one timestamp parse ambiguity. These are candidate groups, not automatically genuine conflicts. The role-decision engine is being corrected to accept hash-verified partial path coverage without promoting a whole group prematurely. The next audit must persist a machine-readable case queue and record exact paths, line/context, source SHA-256, inbound/outbound links, parent candidates and decision state. Until that evidence exists, individual cases not already documented remain OPEN; no numeric/filename-based canonical winner may be inferred.
