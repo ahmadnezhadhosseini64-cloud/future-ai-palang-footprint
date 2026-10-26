@@ -893,3 +893,5 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Root/checkpoint: [POINT-0/034](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-034-INTERACTIVE-RAHM-EXECUTION.md) → [CURRENT-082](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-082-INTERACTIVE-RAHM-EXECUTION.md)
 - This event records the runbook execution hand-off, not a successful destination import. I1–I8 remain OPEN / NOT RUN until raw receipts are returned.
 
+## Time binding — POINT-0/034 / EVT-0204
+- [TIME-BINDING-POINT-0-034](./TIME-BINDING-POINT-0-034-EVT-0204-2026-10-26.md) records actual repository commit `6cb22b59a6d209b1768d5d71ff9f32c56fae91ae` at 2026-10-26T10:16:08Z and Tehran equivalent 13:46:08+03:30.
