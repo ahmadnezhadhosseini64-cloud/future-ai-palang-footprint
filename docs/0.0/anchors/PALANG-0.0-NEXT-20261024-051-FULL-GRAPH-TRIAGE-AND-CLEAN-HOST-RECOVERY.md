@@ -270,3 +270,15 @@ NEXT-051 remains OPEN/LIVING until all remaining acceptance gates are satisfied;
 - Path A: local package/conformance and IN/OUT recovery fixtures PASS; independent external-host import and host-native restart persistence remain NOT RUN / NOT VERIFIED.
 - Path B: case-by-case identity and parent-edge adjudication remains OPEN. Preserve all source paths and lineage; do not bulk merge or choose a winner by numeric order.
 - These receipts predate this append; rerun both workflows on the resulting HEAD. Keep this NEXT-051 queue active; do not create a competing NEXT queue.
+
+
+## CURRENT-074 execution update — partial role decisions
+
+- New root: [POINT-0/027](./GPT6-RAHM-USER-POINT-0-20261026-027-PATH-B-GAP-RECONCILIATION.md).
+- Current execution checkpoint: [CURRENT-074](./PALANG-0.0-CURRENT-20261026-074-PATH-B-GAP-RECONCILIATION.md).
+- Event: [EVT-0193](../../architecture/BEHAVIOR-TRACE/EVT-0193-POINT-0-PATH-B-GAP-RECONCILIATION-2026-10-26.md).
+- Root-cause correction committed: semantic role decisions can now cover a verified subset of a collision group; only exact path members with matching source SHA-256 are annotated. Full group status remains open until every member is covered and roles do not conflict.
+- Regression tests were expanded for partial coverage, multiple partial decisions completing one group, stale hash, out-of-group path, conflicting role, wrong identifier/type, and unreviewed decisions.
+- Builder summary now exposes partial-review counts separately for Stable ID, Production ID, Reference ID and event-number groups.
+- Latest exact-head Living Architecture Audit and Portable RAHM Conformance receipts are still required before marking these code changes validated. Do not mark the semantic graph closed based on this implementation alone.
+- Preserve the historic 11 exact-content duplicate groups and all source paths. Continue one case at a time; no bulk merge or renumbering.
