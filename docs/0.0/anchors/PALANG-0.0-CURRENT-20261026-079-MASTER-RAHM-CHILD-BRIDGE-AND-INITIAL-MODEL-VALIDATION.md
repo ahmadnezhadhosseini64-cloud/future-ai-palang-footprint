@@ -55,3 +55,10 @@ Start by fetching this checkpoint, the bridge contract, the initial-model mother
 - Repository CI and actual interactive-host tests are distinct evidence classes. The latter remains NOT RUN / NOT VERIFIED without direct destination receipts.
 - Preserve failures, rejected candidates and all open graph/source/parent gaps. Covers remain reversible; no gap is closed by this architecture decision.
 - Next action remains within NEXT-051: reconcile exact-current-main artifacts and package digests, run repository tests against the final SHA, then execute the interactive runbook in the actual destination and capture receipts.
+
+
+## Portable conformance receipt — candidate SHA 8f1c0f64714fed441c8ceb6f7114b147bceb3e11
+- Run: [Portable RAHM Conformance and Digest Evidence #40296792208](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40296792208)
+- Result: SUCCESS on tested SHA `8f1c0f64714fed441c8ceb6f7114b147bceb3e11` at 2026-10-26T09:04:52Z.
+- Scope: the workflow's exact-byte manifest checks, JSON Schema valid/invalid fixtures, repository IN/OUT link/checkpoint equivalence and package build passed on that SHA. It does not prove a real interactive-project import, an independent AI-host transfer, persistent memory, or background execution.
+- This checkpoint update itself changes a live package reference; run portable conformance again on the resulting candidate SHA before claiming exact-final-SHA conformance. Interactive-project receipts remain NOT RUN.
