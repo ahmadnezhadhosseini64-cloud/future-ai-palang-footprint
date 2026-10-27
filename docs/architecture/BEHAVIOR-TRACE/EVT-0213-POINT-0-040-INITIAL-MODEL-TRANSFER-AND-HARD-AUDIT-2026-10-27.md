@@ -1,9 +1,13 @@
-# EVT-0213 — POINT-0/040 Initial Model Transfer and Hard Audit
+# QUARANTINED DUPLICATE EVENT ARTIFACT — DO NOT USE AS CANONICAL EVT-0213
+
+> EVT-0213 was already assigned to the canonical Initial Model New-Host Handoff. Preserve this alternate artifact as collision evidence only. Canonical event: [EVT-0213 Initial Model New-Host Handoff](./EVT-0213-INITIAL-MODEL-NEW-HOST-HANDOFF-2026-10-27.md). Continue with canonical [POINT-0/040](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-040-INITIAL-MODEL-NEW-HOST-HANDOFF.md) and [CURRENT-089](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-089-INITIAL-MODEL-NEW-HOST-HANDOFF.md).
+
+# QUARANTINED — EVT-0213 duplicate draft (historical content retained)
 
 - Stable ID: HAIF-EVT-0213-POINT-0-040-20261027
 - Production ID: HAIF-EVT0213-20261027
 - Version: 1.0.0
-- Status: ACTIVE / LIVING / OPEN / EXECUTION REQUIRED
+- Status: QUARANTINED / DUPLICATE ID ARTIFACT / NOT CANONICAL
 - Root: [POINT-0/040](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-040-INITIAL-MODEL-TRANSFER-AND-ARCHITECTURE-HARD-AUDIT.md)
 - Checkpoint: [CURRENT-089](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-089-INITIAL-MODEL-TRANSFER-EXECUTION.md)
 - Queue: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
