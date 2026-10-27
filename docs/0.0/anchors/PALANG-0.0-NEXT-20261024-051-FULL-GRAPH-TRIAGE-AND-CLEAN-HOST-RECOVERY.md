@@ -414,3 +414,12 @@ Status remains OPEN / LIVING / NOT COMPLETE. CI or synthetic runtime transfer is
 - Successful workflow [40489753805](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40489753805), tested commit 95e42fdffa0f0de956220403200c6f2390cfe645.
 - Exact bytes 19,042; SHA-256 3a17f64880519a0da714f09a1dc8065fafcd88321fa5674eb2d995dfd8f63e83; fresh extraction 16/16 tests PASS; RAHM exact-byte scan PASS.
 - Real independent-host import, negative controls and restart persistence remain OPEN / NOT RUN.
+
+
+## CURRENT-095 — existing starter ZIP actually rebuilt
+
+- Chain: POINT-0/045 → IN-083 → OUT-082 → EVT-0220 → CURRENT-095 → NEXT-051.
+- The existing starter ZIP has a verified build receipt from workflow 40490479934. Existing filename retained; internal package version 0.3.1; stable ID unchanged.
+- Nested archive: 19,042 bytes; SHA-256 `3a17f64880519a0da714f09a1dc8065fafcd88321fa5674eb2d995dfd8f63e83`; 8 files; protocol included; ZIP integrity PASS; tests 16/16 PASS.
+- Open: filename version label mismatch; real independent-host import; negative controls; read-back; restart persistence.
+- NEXT-051 remains the sole active queue. Do not create NEXT-052.

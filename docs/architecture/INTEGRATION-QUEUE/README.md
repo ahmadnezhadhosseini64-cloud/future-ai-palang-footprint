@@ -2213,3 +2213,15 @@ The current root is [POINT-0/027](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261
 - [ ] Independent host import, negative controls, read-back and restart persistence.
 
 NEXT-051 remains the only active queue. Do not create NEXT-052.
+
+
+## CURRENT-095 — existing starter ZIP actually rebuilt
+
+- [x] Successful workflow 40490479934 rebuilt the existing canonical archive filename and uploaded it.
+- [x] Downloaded the artifact and independently inspected the nested ZIP: 19,042 bytes, SHA-256 `3a17f64880519a0da714f09a1dc8065fafcd88321fa5674eb2d995dfd8f63e83`, 8 files, recovery protocol included, ZIP integrity PASS.
+- [x] Starter unit tests 16/16 PASS in that exact workflow.
+- [ ] Reconcile canonical filename v0.3.0 with internal manifest version 0.3.1 under an explicit policy.
+- [ ] Real independent-host import, negative controls, read-back and restart persistence.
+- [ ] Re-run if package source changes after tested commit.
+
+NEXT-051 remains the sole active queue; no NEXT-052.

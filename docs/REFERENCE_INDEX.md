@@ -1853,3 +1853,14 @@ The v0.3.0 digest remains historical evidence. A fresh CI artifact and SHA-256 m
 - Checkpoint: `docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-094-STARTER-ZIP-INPLACE-UPDATE.md`
 - Canonical ZIP filename retained: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`
 - Workflow rebuilds same-name archive from the existing package source and emits exact SHA-256/byte-count receipt; current artifact status must be read from the latest run.
+
+
+## POINT-0/045 — Existing starter ZIP confirmation
+
+- Point: `docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-045-EXISTING-ZIP-UPDATE-CONFIRMATION.md`
+- Input: `docs/0.0/anchors/PALANG-0.0-IN-20261027-083-EXISTING-ZIP-UPDATE-CONFIRMATION.md`
+- Output: `docs/0.0/anchors/PALANG-0.0-OUT-20261027-082-EXISTING-ZIP-UPDATE-CONFIRMATION.md`
+- Event: `docs/architecture/BEHAVIOR-TRACE/EVT-0220-EXISTING-ZIP-UPDATE-CONFIRMATION-2026-10-27.md`
+- Checkpoint: `docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-095-EXISTING-ZIP-UPDATE-CONFIRMATION.md`
+- Verified archive SHA-256: `3a17f64880519a0da714f09a1dc8065fafcd88321fa5674eb2d995dfd8f63e83`; 19,042 bytes; internal version 0.3.1; canonical filename preserved.
+- Real independent-host acceptance remains NOT RUN.
