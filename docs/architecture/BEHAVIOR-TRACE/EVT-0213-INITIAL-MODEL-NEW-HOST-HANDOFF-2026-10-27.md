@@ -33,3 +33,10 @@ A hard architecture check was requested, along with a portable initial model pre
 - Export, independently read back and verify archive/file digests.
 - Perform clean-context host import and reconstruct canonical state from both IN and OUT.
 - Verify restart persistence only in a real host and preserve any failures as durable evidence.
+
+
+
+## Collision-containment follow-up
+
+- [EVT-0214](./EVT-0214-POINT-040-DUPLICATE-ID-QUARANTINE-2026-10-27.md) records and contains a competing draft that reused POINT-0/040, EVT-0213 and CURRENT-089. The alternate files are preserved but quarantined; this canonical event remains authoritative for the user request.
+- Supplementary host-transfer contract: [INITIAL-MODEL-HOST-TRANSFER-BOOTSTRAP](../../portable/RAHM/INITIAL-MODEL-HOST-TRANSFER-BOOTSTRAP-2026-10-27.md); supplementary prompt: [HOST-BOOTSTRAP-PROMPT](../../portable/RAHM/HOST-BOOTSTRAP-PROMPT-2026-10-27.md).
