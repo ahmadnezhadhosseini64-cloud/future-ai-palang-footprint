@@ -2120,3 +2120,11 @@ The current root is [POINT-0/027](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261
 - Path B: keep the two missing-parent edges under the existing Recovery Bridge; continue identity and lineage review through this queue without bulk merge/renumber/delete.
 - NEXT-051 remains the only active queue. Dropbox stays out of scope unless explicitly reopened.
 - Exact-head audit and portable conformance for the newly integrated state must be recorded separately; prior receipts remain bound to their tested SHAs.
+
+
+### POINT-0/038 time anchors
+- Root: [time binding](../BEHAVIOR-TRACE/TIME-BINDING-POINT-0-038-2026-10-27.md) — UTC 2026-10-27T04:11:51Z; Tehran 07:41:51 +03:30.
+- IN-075: [time binding](../BEHAVIOR-TRACE/TIME-BINDING-IN-075-POINT-0-038-2026-10-27.md) — UTC 2026-10-27T04:11:55Z; Tehran 07:41:55 +03:30.
+- OUT-074: [time binding](../BEHAVIOR-TRACE/TIME-BINDING-OUT-074-POINT-0-038-2026-10-27.md) — UTC 2026-10-27T04:11:59Z; Tehran 07:41:59 +03:30.
+- EVT-0209: [time binding](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0209-POINT-0-038-2026-10-27.md) — UTC 2026-10-27T04:12:03Z; Tehran 07:42:03 +03:30.
+- CURRENT-087: [time binding](../BEHAVIOR-TRACE/TIME-BINDING-CURRENT-087-POINT-0-038-2026-10-27.md) — UTC 2026-10-27T04:12:06Z; Tehran 07:42:06 +03:30.
