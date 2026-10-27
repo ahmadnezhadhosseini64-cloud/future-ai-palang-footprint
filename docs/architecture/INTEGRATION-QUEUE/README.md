@@ -2294,3 +2294,19 @@ Run 40518077494; canonical ZIP SHA-256 `fa226aab5a35a76c3f289b511566257a44382119
 - [ ] Test IN/OUT recovery equivalence, negative controls, restart/persistence and authorized repository write-back.
 
 NEXT-051 remains the only active queue. Do not create NEXT-052.
+
+
+## CURRENT-100 — deep audit and first interactive GPT-6 host
+
+- [x] Verified v0.3.4 canonical ZIP on run 40529853028: same archive filename, 20,075 bytes, SHA-256 `2ae583a3029d489e636439133b40e24a480754f6b569ada475694abad97c7f3b`, 17/17 tests and downloaded artifact read-back PASS.
+- [x] Verified paired ZIP + living-master artifact read-back.
+- [x] Verified two-runtime CI transfer within its declared scope.
+- [x] Found and corrected the stale conformance target (IN-084 / OUT-083 / CURRENT-096) so the new run checks current IN-088 / OUT-087 / CURRENT-100. Link equivalence is not real host recovery.
+- [x] Added in-package first-host acceptance checklist.
+- [ ] Build and verify v0.3.5 under the unchanged canonical ZIP filename and stable package ID; exact-head workflow, downloaded artifact, hash, inventory, source-byte comparison and extracted tests required.
+- [ ] Real interactive GPT-6 import receipt.
+- [ ] Actual live message producer / automatic capture proof, or explicit NOT SUPPORTED result.
+- [ ] Authorized repository write-back with read-back receipt.
+- [ ] Independent restart/persistence test.
+
+NEXT-051 remains the sole active queue. Do not create NEXT-052.

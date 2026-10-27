@@ -178,11 +178,11 @@ if __name__ == "__main__":
 
 
 class PortablePackageProtocolTests(unittest.TestCase):
-    def test_package_manifest_is_version_034_and_keeps_existing_stable_id(self):
+    def test_package_manifest_is_version_035_and_keeps_existing_stable_id(self):
         package = Path(__file__).parent
         manifest = json.loads((package / "manifest.json").read_text(encoding="utf-8"))
-        self.assertEqual(manifest["version"], "0.3.4")
-        self.assertEqual(manifest["supersedes"], "0.3.3")
+        self.assertEqual(manifest["version"], "0.3.5")
+        self.assertEqual(manifest["supersedes"], "0.3.4")
         self.assertEqual(manifest["stable_id"], "HAIF-GPT6-PORTABLE-STARTER-20261025-004")
         self.assertEqual(manifest["recovery_protocol"], "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md")
 
@@ -202,9 +202,19 @@ class PortablePackageProtocolTests(unittest.TestCase):
         self.assertIn("CURRENT-094 — latest 0.0 continuation checkpoint", architecture)
 
 
-    def test_manifest_declares_paired_first_host_transfer(self):
+    def test_manifest_declares_paired_first_host_transfer_and_current_audit_chain(self):
         package = Path(__file__).parent
         manifest = json.loads((package / "manifest.json").read_text(encoding="utf-8"))
-        self.assertEqual(manifest["version"], "0.3.4")
+        self.assertEqual(manifest["version"], "0.3.5")
         self.assertIn("POINT-0/049 (0+ marker on canonical point 0)", manifest["parent_architecture"])
         self.assertIn("CURRENT-099", manifest["parent_architecture"])
+        self.assertIn("POINT-0/050 (0+ marker on canonical root 0)", manifest["parent_architecture"])
+        self.assertIn("CURRENT-100", manifest["parent_architecture"])
+        self.assertEqual(manifest["host_acceptance_checklist"], "FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST.md")
+
+
+    def test_first_host_checklist_keeps_live_host_and_writeback_gates_open(self):
+        package = Path(__file__).parent
+        checklist = (package / "FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST.md").read_text(encoding="utf-8")
+        for required in ("clean interactive GPT-6 session", "live producer", "repository write-back", "restart/persistence", "NOT RUN / NOT VERIFIED"):
+            self.assertIn(required.casefold(), checklist.casefold())

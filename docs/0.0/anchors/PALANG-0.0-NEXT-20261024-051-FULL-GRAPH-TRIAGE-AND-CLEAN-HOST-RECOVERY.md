@@ -477,3 +477,12 @@ Status remains OPEN / LIVING / NOT COMPLETE. CI or synthetic runtime transfer is
 - ZIP inside artifact: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`; internal version 0.3.3; 19,268 bytes; SHA-256 `fa226aab5a35a76c3f289b511566257a443821195ebdfdfb21f1cc093026e091`.
 - Exact ZIP extracted and source bytes matched: PASS. Tests run from extracted ZIP: 16/16 PASS. Uploaded artifact was downloaded back by the workflow; the contained ZIP's byte count and SHA-256 matched the receipt, ZIP CRC/inventory passed, and tests ran again from the downloaded artifact: PASS.
 - This proves the repository CI artifact round-trip for this run. It does NOT prove import into a real independent AI host; that gate remains NOT RUN.
+
+
+## CURRENT-100 — deep audit / first-host acceptance gates
+
+- The v0.3.4 canonical ZIP and paired living master were verified in CI; this is file-transfer evidence only.
+- The portable-conformance link check was stale (IN-084 / OUT-083 / CURRENT-096) and must now target IN-088 / OUT-087 / CURRENT-100. The check is link/checkpoint equivalence, not independent host recovery.
+- Package v0.3.5 is planned in the same stable package line, same canonical filename; do not create a version-named ZIP or new project.
+- Actual interactive GPT-6 import, live capture, permitted GitHub write-back and restart remain OPEN / NOT RUN until direct receipts exist.
+- Keep NEXT-051 as sole active queue; no NEXT-052.

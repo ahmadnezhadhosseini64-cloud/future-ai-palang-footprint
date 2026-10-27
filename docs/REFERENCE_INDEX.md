@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-27 — POINT-0/049 (0+ marker on canonical root) → IN-087 → OUT-086 → EVT-0224 → CURRENT-099 → NEXT-051; paired first-host transfer contract; ZIP v0.3.4 verified; paired transfer artifact run 40529591695 PASS; canonical ZIP 20,075 bytes, SHA-256 2ae583a3029d489e636439133b40e24a480754f6b569ada475694abad97c7f3b; 17/17 tests; paired mother read-back PASS; real-host acceptance OPEN.
+**Last Updated:** 2026-10-27 — POINT-0/050 (0+ marker on canonical root) → IN-088 → OUT-087 → EVT-0225 → CURRENT-100 → NEXT-051; v0.3.4 ZIP + living mother paired artifact verified; hard audit found stale IN-084/OUT-083/CURRENT-096 conformance pointer; v0.3.5 build pending; real GPT-6 host acceptance OPEN.
 
 ## Canonical References
 
@@ -1962,3 +1962,17 @@ Previous verified ZIP v0.3.3: run 40518292922; 19,268 bytes; SHA-256 fa226aab5a3
 - The artifact contains the canonical ZIP, its exact-byte receipt, and the current living master file. Downloaded master was compared byte-for-byte with the repository master: PAIRED_LIVING_MASTER_ARTIFACT_READBACK=PASS.
 - Inner canonical ZIP remains 20,075 bytes, SHA-256 2ae583a3029d489e636439133b40e24a480754f6b569ada475694abad97c7f3b; internal version 0.3.4; 17/17 tests PASS; ZIP/artifact round-trip PASS.
 - This proves package and paired-file transfer integrity, not acceptance by a real independent GPT-6 host.
+
+
+## Latest 0+ deep audit — CURRENT-100
+
+| ID | Path | Finding / status |
+|---|---|---|
+| HAIF-POINT-0-050 | `docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-050-0PLUS-DEEP-AUDIT-FIRST-HOST.md` | 0+ marker on canonical root 0; not a second root |
+| HAIF-IN-088 | `docs/0.0/anchors/PALANG-0.0-IN-20261027-088-DEEP-AUDIT-FIRST-HOST.md` | Current user intent and scope |
+| HAIF-OUT-087 | `docs/0.0/anchors/PALANG-0.0-OUT-20261027-087-DEEP-AUDIT-FIRST-HOST.md` | v0.3.4 ZIP verified; live host gap OPEN |
+| HAIF-EVT-0225 | `docs/architecture/BEHAVIOR-TRACE/EVT-0225-DEEP-AUDIT-FIRST-HOST-2026-10-27.md` | stale conformance target recorded and corrected |
+| HAIF-CURRENT-100 | `docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-100-DEEP-AUDIT-FIRST-HOST.md` | active execution checkpoint |
+| HAIF-GPT6-FIRST-HOST-CHECKLIST | `prototype/haif-gpt6-starter/FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST.md` | import, integrity, IN/OUT, live producer, write-back and restart acceptance gates |
+
+Current verdict: v0.3.4 is a verified transferable artifact, but the requested interactive host architecture is not complete until real GPT-6 receipts prove import, live producer behavior, authorized repository write-back and restart recovery. Package source v0.3.5 must pass exact-head CI and artifact read-back before its ZIP is called verified.

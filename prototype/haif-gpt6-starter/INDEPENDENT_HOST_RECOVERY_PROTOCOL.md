@@ -1,8 +1,8 @@
 # Independent-host recovery proof protocol
 
-Package version: 0.3.4
+Package version: 0.3.5
 Project: Future AI / Palang Footprint
-Canonical chain: POINT-0/049 (0+ marker on canonical 0) → IN-087 → OUT-086 → EVT-0224 → CURRENT-099 → NEXT-051
+Canonical chain: POINT-0/050 (0+ marker on canonical 0) → IN-088 → OUT-087 → EVT-0225 → CURRENT-100 → NEXT-051
 
 ## Purpose
 Prove that a genuinely separate AI host can reconstruct the project from the package without relying on this chat's hidden history. Repository presence, a CI pass, or a runtime-to-runtime test is not independent-host acceptance.
@@ -36,3 +36,7 @@ The deliverable is the existing starter package continuously updated under the c
 
 ## Paired transfer requirement
 The receiving GPT-6 host must receive both this canonical ZIP and the current living master reference from the repository. The mother is the governing architecture; this ZIP is the portable starter. Uploading both is a transfer attempt, not proof of successful import. Record direct host receipts and keep restart/persistence as separate gates.
+
+
+## First GPT-6 host integration gate
+The package can be uploaded as files, but it is not a native plugin and does not itself subscribe to ChatGPT messages. To prove integration, follow `FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST.md`. A direct producer and authorized repository write path must be supplied by the actual host environment or connector. The repository adapter is separately deployed; its worker requires a secret held outside the conversation. If the host has no such connector, record manual export / NOT SUPPORTED instead of claiming live automatic sync.

@@ -1,4 +1,4 @@
-# HAIF GPT-6 Portable Starter v0.3.4
+# HAIF GPT-6 Portable Starter v0.3.5
 
 This is the updated release of the existing HAIF starter package, not a separate project. It updates the existing v0.3.0 0/0+ bootstrap package at the same stable package identity and canonical ZIP filename; history and prior digests remain preserved. It does not replace the living master, historical anchors or NEXT-051.
 
@@ -11,7 +11,8 @@ This is the updated release of the existing HAIF starter package, not a separate
 - Evidence-gated gap closure and Master → Child promotion.
 - Portable bundle export/import with SHA-256 verification, atomic local writes and validated read-back.
 - Independent-host recovery protocol included in this package: exact package digest, clean-host import, independent reconstruction from IN and OUT, negative controls, read-back and restart/persistence acceptance.
-- Current continuation reference: POINT-0/049 (0+) → IN-087 → OUT-086 → EVT-0224 → CURRENT-099 → NEXT-051; older 0+ markers remain historical.
+- First interactive GPT-6 host acceptance checklist included; separates archive portability from real host import, live message capture, repository write-back and restart proof.
+- Current continuation reference: POINT-0/050 (0+ marker on canonical root 0) → IN-088 → OUT-087 → EVT-0225 → CURRENT-100 → NEXT-051; older 0+ markers remain historical.
 
 ## Bootstrap
 ~~~bash
@@ -61,3 +62,9 @@ The current 0.0 chain is POINT-0/046 → IN-084 → OUT-083 → EVT-0221 → CUR
 
 ## First GPT-6 host transfer rule
 Always transfer the canonical ZIP and the current living master together. Do not substitute an old master snapshot for the current repository master. After import, request a structured receipt for the exact package digest, recovered current point/checkpoint, NEXT-051, IN/OUT equivalence, open gaps, negative controls, and restart/persistence. A successful archive test is not host acceptance.
+
+
+## First interactive GPT-6 host — acceptance gate
+Read `FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST.md` before treating this package as integrated. Transfer the canonical ZIP and the current living master together. The source engine and CI are not a native ChatGPT plugin; automatic message capture, durable host memory and GitHub write-back are unproven until a real host/connector supplies direct receipts.
+
+The v0.3.4 archive is historical verified evidence. Version 0.3.5 is source-only until the current workflow builds the unchanged canonical filename, uploads/downloads it, compares exact hash and inventory, and runs tests from the extracted ZIP.

@@ -1,4 +1,4 @@
-# HAIF — Instructions for a GPT-6 host (package v0.3.4)
+# HAIF — Instructions for a GPT-6 host (package v0.3.5)
 
 You are the host-side execution partner for **Future AI / Palang Footprint**. This package is a portable operating contract connected to the existing project, not a detached project. The canonical source remains the GitHub repository:
 https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
@@ -85,5 +85,12 @@ It creates one canonical point labelled `0` and `0+`, a child continuation `0.0`
 Do not treat a repository source update as a ZIP update. The canonical starter ZIP keeps the established filename `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip` and stable package identity; rebuild the same package from the current source, then verify its exact archive hash, byte count and artifact read-back. Do not create a separate version-named ZIP. Real independent-host acceptance remains a separate evidence gate.
 
 
-## First-host paired transfer (v0.3.4)
+## First-host paired transfer (v0.3.5)
 Upload the canonical ZIP and current living master reference together. Use the master as the governing architecture and the ZIP as the portable runtime/bootstrap. After upload, reconstruct the current anchor/checkpoint/queue and open gaps; do not infer live message capture, durable memory, background execution or repository write-back. Return a direct import receipt. The real GPT-6 host gate stays OPEN until that receipt is recorded.
+
+
+## First-host acceptance — current source chain
+- Current chain: POINT-0/050 (0+ marker on the canonical root 0) → IN-088 → OUT-087 → EVT-0225 → CURRENT-100 → NEXT-051.
+- Read FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST.md and the living master before claiming integration.
+- Do not report automatic live capture or repository write-back as active unless the actual GPT-6 host has a working producer/authorized connector and returns direct write/read-back receipts. The local engine, adapter source, CI build, and two-runtime test do not prove those features are active in ChatGPT.
+- Current verified ZIP baseline is v0.3.4. Source v0.3.5 is not a verified ZIP until the new exact-head workflow and artifact read-back pass.
