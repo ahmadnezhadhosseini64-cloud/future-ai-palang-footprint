@@ -2165,7 +2165,15 @@ The current root is [POINT-0/027](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261
 - Preserve CURRENT-065/CURRENT-066 as OPEN; Issues #20/#21 remain open; no independent host, persistence or external destination status is upgraded without direct evidence.
 
 
-## POINT-0/040 — Initial model transfer and architecture hard audit — 2026-10-27
+## POINT-0/040 — Initial model new-host handoff — canonical continuation
+
+- Canonical root: [POINT-0/040](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-040-INITIAL-MODEL-NEW-HOST-HANDOFF.md).
+- Chain: IN-077 → OUT-076 → [EVT-0213](../BEHAVIOR-TRACE/EVT-0213-INITIAL-MODEL-NEW-HOST-HANDOFF-2026-10-27.md) → CURRENT-089 → NEXT-051.
+- Canonical bootstrap: [NEW-HOST-BOOTSTRAP](../مدل%20اولیه%20AI/NEW-HOST-BOOTSTRAP-2026-10-27.md); executable starter: [prototype/haif-gpt6-starter](../../../prototype/haif-gpt6-starter/README.md).
+- Supplemental transfer contract: [INITIAL-MODEL-HOST-TRANSFER-BOOTSTRAP](../../portable/RAHM/INITIAL-MODEL-HOST-TRANSFER-BOOTSTRAP-2026-10-27.md); supplementary prompt: [HOST-BOOTSTRAP-PROMPT](../../portable/RAHM/HOST-BOOTSTRAP-PROMPT-2026-10-27.md).
+- Collision containment: [EVT-0214](../BEHAVIOR-TRACE/EVT-0214-POINT-040-DUPLICATE-ID-QUARANTINE-2026-10-27.md). Do not use the quarantined alternate root/event/checkpoint.
+- NEXT-051 remains sole queue. Current-pointer conflict CURRENT-065/CURRENT-066 and Issues #20/#21 remain OPEN. Independent-host import and cold recovery remain NOT RUN until direct receipts.
+
 
 - Root: [POINT-0/040](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-040-INITIAL-MODEL-TRANSFER-AND-ARCHITECTURE-HARD-AUDIT.md).
 - Checkpoint: [CURRENT-089](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-089-INITIAL-MODEL-TRANSFER-EXECUTION.md).
