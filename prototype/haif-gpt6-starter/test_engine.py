@@ -181,8 +181,8 @@ class PortablePackageProtocolTests(unittest.TestCase):
     def test_package_manifest_is_version_036_and_keeps_existing_stable_id(self):
         package = Path(__file__).parent
         manifest = json.loads((package / "manifest.json").read_text(encoding="utf-8"))
-        self.assertEqual(manifest["version"], "0.3.6")
-        self.assertEqual(manifest["supersedes"], "0.3.5")
+        self.assertEqual(manifest["version"], "0.3.7")
+        self.assertEqual(manifest["supersedes"], "0.3.6")
         self.assertEqual(manifest["stable_id"], "HAIF-GPT6-PORTABLE-STARTER-20261025-004")
         self.assertEqual(manifest["recovery_protocol"], "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md")
 
@@ -242,3 +242,21 @@ class HostGrowthRepositoryContractTests(unittest.TestCase):
         self.assertEqual(manifest["supersedes"], "0.3.5")
         self.assertEqual(manifest["stable_id"], "HAIF-GPT6-PORTABLE-STARTER-20261025-004")
         self.assertEqual(manifest["recovery_protocol"], "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md")
+
+
+class InteractionResponseAnchorProtocolTests(unittest.TestCase):
+    def test_response_protocol_requires_truthful_visible_statuses(self):
+        root = Path(__file__).parent
+        protocol = (root / "INTERACTION-RESPONSE-AND-ANCHOR-PROTOCOL.md").read_text(encoding="utf-8")
+        for phrase in ("ACKNOWLEDGED", "COMPLETED", "BLOCKED", "FAILED", "PARTIAL", "never claim success", "NOT VERIFIED"):
+            self.assertIn(phrase.casefold(), protocol.casefold())
+
+    def test_response_protocol_preserves_same_zip_identity_and_open_host_gates(self):
+        root = Path(__file__).parent
+        manifest = json.loads((root / "manifest.json").read_text(encoding="utf-8"))
+        protocol = (root / "INTERACTION-RESPONSE-AND-ANCHOR-PROTOCOL.md").read_text(encoding="utf-8")
+        self.assertEqual(manifest["version"], "0.3.7")
+        self.assertEqual(manifest["stable_id"], "HAIF-GPT6-PORTABLE-STARTER-20261025-004")
+        self.assertEqual(manifest["archive_policy"]["canonical_filename"], "haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip")
+        self.assertIn("actual host integration", protocol.casefold())
+        self.assertIn("NOT VERIFIED", protocol)

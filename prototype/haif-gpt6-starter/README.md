@@ -1,4 +1,4 @@
-# HAIF GPT-6 Portable Starter v0.3.6
+# HAIF GPT-6 Portable Starter v0.3.7
 
 This is the updated release of the existing HAIF starter package, not a separate project. It updates the existing v0.3.0 0/0+ bootstrap package at the same stable package identity and canonical ZIP filename; history and prior digests remain preserved. It does not replace the living master, historical anchors or NEXT-051.
 
@@ -13,7 +13,8 @@ This is the updated release of the existing HAIF starter package, not a separate
 - Independent-host recovery protocol included in this package: exact package digest, clean-host import, independent reconstruction from IN and OUT, negative controls, read-back and restart/persistence acceptance.
 - First interactive GPT-6 host acceptance checklist included; separates archive portability from real host import, live message capture, repository write-back and restart proof.
 - Host-growth/repository-sync contract included; defines behavior evidence, authorized repo return, RAHM validation and controlled Master/Child promotion.
-- Current continuation reference: POINT-0/051 (0+ marker on canonical root 0) → IN-089 → OUT-088 → EVT-0226 → CURRENT-101 → NEXT-051; older 0+ markers remain historical.
+- Interaction response/anchor protocol included; requires visible acknowledgment/status, failure disclosure, paired input/output anchors and explicit non-verified gates.
+- Current continuation reference: POINT-0/052 (0+ marker on canonical root 0) → IN-090 → OUT-089 → EVT-0227 → CURRENT-102 → NEXT-051; older 0+ markers remain historical.
 
 ## Bootstrap
 ~~~bash

@@ -197,6 +197,7 @@ jobs:
               "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md",
               "FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST.md",
               "HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md",
+              "INTERACTION-RESPONSE-AND-ANCHOR-PROTOCOL.md",
               "bootstrap_0plus.py",
               "engine.py",
               "state.schema.json",

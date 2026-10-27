@@ -70,3 +70,8 @@ The repository contains `scripts/host_adapter.py` and `scripts/host_adapter_gith
 ## 7. Release rule
 
 The only canonical package identity is the existing stable ID and filename. Each source revision may produce a fresh artifact with the same filename and a different digest. A previous digest is historical evidence only. Never mark an external host refreshed simply because CI generated an artifact.
+
+
+## Visible response and interaction anchoring
+
+See `INTERACTION-RESPONSE-AND-ANCHOR-PROTOCOL.md`. Each actual host interaction must receive a visible truthful status. Where authorized storage exists, pair actual input/output with independent anchors, provenance, payload digest, and read-back receipt. Missing response, unavailable persistence or failed writes must remain explicit gaps rather than silently implying completion. This rule is architectural; live automatic capture remains unproven until the host producer and connector pass direct acceptance tests.

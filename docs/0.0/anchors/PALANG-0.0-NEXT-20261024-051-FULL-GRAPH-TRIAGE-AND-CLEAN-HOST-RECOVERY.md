@@ -2,12 +2,12 @@
 
 - Stable ID: G6IP-RAHM-NEXT-051-20261024
 - Production ID: G6IP-RAHM-NEXT-051-20261024
-- Version: 1.0.13
+- Version: 1.0.14
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE
 - Project: Future AI / Palang Footprint — HAIF
 - Canonical queue: this file only
-- Current checkpoint: [CURRENT-101](PALANG-0.0-CURRENT-20261027-101-HOST-GROWTH-AND-REPOSITORY-LOOP.md)
-- Current point: [POINT-0/051 (0+)](GPT6-RAHM-USER-POINT-0-20261027-051-0PLUS-HOST-GROWTH-AND-REPOSITORY-LOOP.md)
+- Current checkpoint: [CURRENT-102](PALANG-0.0-CURRENT-20261027-102-RESPONSE-AND-HOST-GROWTH.md)
+- Current point: [POINT-0/052 (0+)](GPT6-RAHM-USER-POINT-0-20261027-052-0PLUS-RESPONSE-AND-HOST-GROWTH.md)
 - Living mother: [سند مرجع مادر مدل اولیه](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 - Historical recovery checkpoint A: [CURRENT-059 — deep audit and corrected conformance](PALANG-0.0-CURRENT-20261025-059-DEEP-AUDIT-AND-CORRECTED-CONFORMANCE.md)
 - Historical recovery checkpoint B: [CURRENT-059 — deep excavation and no silent gap](PALANG-0.0-CURRENT-20261025-059-DEEP-EXCAVATION-AND-NO-SILENT-GAP.md)
@@ -105,3 +105,15 @@ These gates are intentionally listed in the active queue so recovery validators 
 - Persistence restart: OPEN / NOT VERIFIED; restart persistence evidence is absent.
 - Idle/background execution: OPEN / NOT PROVEN; automatic capture is not established.
 - Ambiguous parent relations and graph triage: OPEN until provenance resolves the edges.
+
+
+## CURRENT-102 — visible response and same-package growth
+
+- [x] Hard-audited the current package receipt: v0.3.6 canonical ZIP rebuilt/read-back verified on run 40543657491; exact source commit 1b2ad27702bfc8dcd5bda62e0c0ab96d18d8d44f; 27,751 bytes; SHA-256 172d0bcd4b80d03b52326d9544595ef49083cdcdb12806fc79bad05255c749b6; 20/20 extracted tests passed.
+- [x] Added a visible-response and interaction-anchor protocol to the same package source.
+- [x] Bumped internal package version to 0.3.7, preserving stable package ID and canonical ZIP filename.
+- [x] Added protocol test coverage and required the file in the existing ZIP build workflow.
+- [ ] Verify fresh v0.3.7 archive, exact SHA-256, inventory, extracted tests and artifact read-back.
+- [ ] Real interactive host import, automatic producer, authorized repository write-back and restart persistence.
+
+Do not create NEXT-052. NEXT-051 remains the sole active queue.
