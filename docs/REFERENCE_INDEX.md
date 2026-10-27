@@ -1808,3 +1808,9 @@ Both Path A (portable initial model and independent-host recovery) and Path B (e
 | HAIF-OUT-077 | docs/0.0/anchors/PALANG-0.0-OUT-20261027-077-CURRENT-INTERACTION.md | Output and ordered next actions | REGISTERED / OPEN |
 | HAIF-EVT-0215 | docs/architecture/BEHAVIOR-TRACE/EVT-0215-CURRENT-INTERACTION-POINT-041-2026-10-27.md | Event trace linking POINT-0/041, IN-078, OUT-077 and CURRENT-090 | REGISTERED / OPEN; exact-final-SHA validation pending |
 | HAIF-CURRENT-090 | docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-090-CURRENT-INTERACTION.md | Current checkpoint for continuation under NEXT-051 | ACTIVE / LIVING / OPEN / VERIFICATION REQUIRED |
+
+| HAIF-POINT-0-042 | docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-042-NEXT-051-GAP-AND-FOCUS-CLARIFICATION.md | Clarifies NEXT-051 versus primary model goal and records current gap focus | REGISTERED / ACTIVE / OPEN |
+| HAIF-IN-079 | docs/0.0/anchors/PALANG-0.0-IN-20261027-079-NEXT-051-GAP-AND-FOCUS-CLARIFICATION.md | Preserved user input asking what NEXT-051 means and whether gaps remain | REGISTERED / OPEN |
+| HAIF-OUT-078 | docs/0.0/anchors/PALANG-0.0-OUT-20261027-078-NEXT-051-GAP-AND-FOCUS-CLARIFICATION.md | Goal-aligned interpretation and next execution order | REGISTERED / OPEN |
+| HAIF-EVT-0216 | docs/architecture/BEHAVIOR-TRACE/EVT-0216-POINT-042-NEXT-051-GAP-FOCUS-CLARIFICATION-2026-10-27.md | Behavior/event record for gap-versus-goal focus | REGISTERED / OPEN |
+| HAIF-CURRENT-091 | docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-091-NEXT-051-GAP-FOCUS.md | Checkpoint for current NEXT-051 focus | ACTIVE / LIVING / OPEN / VERIFICATION REQUIRED |
