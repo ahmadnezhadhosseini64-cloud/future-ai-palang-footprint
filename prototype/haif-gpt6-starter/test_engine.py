@@ -238,6 +238,14 @@ class HostGrowthRepositoryContractTests(unittest.TestCase):
         for phrase in required:
             self.assertIn(phrase.casefold(), contract.casefold())
 
+    def test_recovery_protocol_version_matches_manifest(self):
+        root = Path(__file__).parent
+        manifest = json.loads((root / "manifest.json").read_text(encoding="utf-8"))
+        protocol = (root / "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md").read_text(encoding="utf-8")
+        self.assertIn(f"Package version: {manifest['version']}", protocol)
+        self.assertIn("POINT-0/052", protocol)
+        self.assertIn("CURRENT-102", protocol)
+
     def test_package_manifest_version_and_identity_remain_continuous(self):
         root = Path(__file__).parent
         manifest = json.loads((root / "manifest.json").read_text(encoding="utf-8"))
