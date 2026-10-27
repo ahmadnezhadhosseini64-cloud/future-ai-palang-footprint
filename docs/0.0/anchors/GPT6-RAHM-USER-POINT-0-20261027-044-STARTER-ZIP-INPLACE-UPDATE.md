@@ -19,9 +19,9 @@ The 0+ marker belongs to the existing canonical root 0. This record is retained 
 
 ## ZIP replacement receipt
 
-- Successful workflow: [40489299348](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40489299348).
+- Successful workflow: [40489753805](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40489753805).
 - Canonical filename preserved: haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip.
 - Internal package version: 0.3.1; stable package ID unchanged.
-- Verified archive: 18,815 bytes; SHA-256 b3429acaa5d33fb93dec7ad0ba8c1cdf233fbb28b8839794eea74457013e1309.
+- Verified archive: 19,042 bytes; SHA-256 3a17f64880519a0da714f09a1dc8065fafcd88321fa5674eb2d995dfd8f63e83.
 - Package unit tests: 15/15 PASS after fresh extraction; ZIP integrity PASS; RAHM exact-byte manifest scan PASS on the tested revision.
 - Real independent AI-host import and restart persistence: NOT RUN / NOT VERIFIED.
