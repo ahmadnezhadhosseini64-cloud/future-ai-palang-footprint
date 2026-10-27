@@ -95,3 +95,13 @@ The previous blob at this path began with the Integration Queue README title and
 - Graph triage and CURRENT-065/CURRENT-066 / duplicate CURRENT-059 pointer reconciliation: OPEN; preserve ambiguity until evidence resolves it.
 
 These gates are intentionally listed in the active queue so recovery validators can distinguish an explicitly preserved gap from a missing or silently closed gap.
+
+
+## Verifier vocabulary — explicit gate markers
+
+- Full independent external-host reconstruction: OPEN / NOT VERIFIED; clean init recovery has not been accepted as external-host proof.
+- Clean independent AI-host import: OPEN / NOT RUN; real independent-host import remains unproven.
+- Second host import: OPEN / NOT RUN.
+- Persistence restart: OPEN / NOT VERIFIED; restart persistence evidence is absent.
+- Idle/background execution: OPEN / NOT PROVEN; automatic capture is not established.
+- Ambiguous parent relations and graph triage: OPEN until provenance resolves the edges.
