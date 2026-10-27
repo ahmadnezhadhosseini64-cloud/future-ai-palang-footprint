@@ -1918,3 +1918,11 @@ Verified current package receipt: run 40507481687 on SHA `c6af49386493f5c542336d
 - Existing canonical archive filename and package stable ID are unchanged. Previous successful archive receipt remains historical evidence; new digest must be obtained from the fresh run.
 - Fresh workflow commit: `08155ef02f30533558b2396848e9772621b865ba`; run [40517444577](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40517444577) was QUEUED at checkpoint creation. The new gate extracts the archive, compares all eight files byte-for-byte, and executes tests from the extracted package.
 - Real independent-host acceptance and restart persistence remain OPEN / NOT RUN. NEXT-051 is still the sole active queue.
+
+
+## CURRENT-098 — verified same-ZIP artifact round-trip
+
+- Canonical filename and stable package ID preserved. Run [40518077494](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40518077494) built internal version 0.3.3 under the original filename.
+- ZIP: 19,268 bytes; SHA-256 `fa226aab5a35a76c3f289b511566257a443821195ebdfdfb21f1cc093026e091`; extracted ZIP tests 16/16 PASS.
+- Artifact [12740188113](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40518077494/artifacts/12740188113) was downloaded back in CI; embedded ZIP digest/bytes matched the receipt and the extracted tests passed again.
+- Real independent AI-host import, negative controls and restart/persistence remain OPEN / NOT RUN.

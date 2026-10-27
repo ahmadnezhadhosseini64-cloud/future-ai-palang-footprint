@@ -2271,3 +2271,14 @@ NEXT-051 remains the sole active queue; no NEXT-052.
 - [ ] Perform real independent-host import, independent reconstruction from IN and OUT, negative controls and restart/persistence.
 
 CURRENT-098 is the continuation checkpoint. NEXT-051 remains the only active queue; no NEXT-052.
+
+
+## CURRENT-098 — confirmed existing ZIP round-trip
+
+- [x] Existing canonical ZIP filename and stable package ID preserved.
+- [x] ZIP rebuilt, extracted, and every package member byte-compared to source.
+- [x] 16/16 tests passed from extracted package.
+- [x] Uploaded artifact downloaded back; contained ZIP bytes/hash matched receipt; ZIP tests passed again.
+- [ ] Real independent AI-host import and restart/persistence.
+
+Run 40518077494; canonical ZIP SHA-256 `fa226aab5a35a76c3f289b511566257a443821195ebdfdfb21f1cc093026e091`. NEXT-051 remains the only active queue.

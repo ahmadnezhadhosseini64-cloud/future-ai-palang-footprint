@@ -19,3 +19,14 @@ The portable conformance workflow now extracts the exact newly built ZIP to a cl
 - Real independent-host import and restart/persistence remain OPEN / NOT RUN.
 
 NEXT-051 remains the only active queue. Do not create NEXT-052.
+
+
+## Verified canonical ZIP build and artifact round-trip — run 40518077494
+
+- Tested source commit: `b5e29697ec2733c9e9f3ff914525304b2fcb6914`.
+- Run: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40518077494
+- Uploaded artifact: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40518077494/artifacts/12740188113
+- Artifact name: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean`; artifact wrapper: 19,903 bytes; artifact digest SHA-256 `8966f5c58517d1d2c032ae2fcdffb0dd12a1ad8a22f47981ed6b756c1b699d83`.
+- ZIP inside artifact: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`; internal version 0.3.3; 19,268 bytes; SHA-256 `fa226aab5a35a76c3f289b511566257a443821195ebdfdfb21f1cc093026e091`.
+- Exact ZIP extracted and source bytes matched: PASS. Tests run from extracted ZIP: 16/16 PASS. Uploaded artifact was downloaded back by the workflow; the contained ZIP's byte count and SHA-256 matched the receipt, ZIP CRC/inventory passed, and tests ran again from the downloaded artifact: PASS.
+- This proves the repository CI artifact round-trip for this run. It does NOT prove import into a real independent AI host; that gate remains NOT RUN.
