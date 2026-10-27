@@ -2225,3 +2225,14 @@ NEXT-051 remains the only active queue. Do not create NEXT-052.
 - [ ] Re-run if package source changes after tested commit.
 
 NEXT-051 remains the sole active queue; no NEXT-052.
+
+
+## CURRENT-095 — same initial ZIP continuity
+
+- [x] Register POINT-0/045 and the chain IN-083 → OUT-082 → EVT-0220 → CURRENT-095.
+- [x] Confirmed the original canonical archive was rebuilt under the same filename; package Stable ID preserved; internal version 0.3.1.
+- [x] Exact receipt: workflow 40489753805, artifact 12726786662, 19,042 bytes, SHA-256 `3a17f64880519a0da714f09a1dc8065fafcd88321fa5674eb2d995dfd8f63e83`, 16/16 tests PASS after fresh extraction, ZIP CRC and 8-file inventory PASS.
+- [ ] Real independent-host import, independent IN/OUT reconstruction, negative controls, read-back and restart persistence.
+- [ ] For each future source change, rebuild the same canonical archive, inspect artifact, record exact hash/size/inventory and run all package tests; never use a stale digest.
+
+NEXT-051 remains the sole active queue; no NEXT-052.
