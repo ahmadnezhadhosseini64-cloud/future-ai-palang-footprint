@@ -2154,3 +2154,12 @@ The current root is [POINT-0/027](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261
 - Sole queue remains NEXT-051; do not create NEXT-052.
 - Next actions: rediscover current main and exact tested SHAs; repair EXPORT_MANIFEST live-reference coverage only with verified hashes; audit CURRENT-065/CURRENT-066 lineage without inference; obtain audit and portable conformance PASS on the same final SHA.
 - Open: Issues #20/#21, historical identity groups, real-host import/recovery. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external-host recovery NOT RUN without direct receipts.
+
+
+## POINT-0/040 → CURRENT-089 — Initial model new-host handoff — 2026-10-27
+
+- Root: [POINT-0/040](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-040-INITIAL-MODEL-NEW-HOST-HANDOFF.md).
+- Chain: [IN-077](../../0.0/anchors/PALANG-0.0-IN-20261027-077-INITIAL-MODEL-NEW-HOST-HANDOFF.md) → [OUT-076](../../0.0/anchors/PALANG-0.0-OUT-20261027-076-INITIAL-MODEL-NEW-HOST-HANDOFF.md) → [EVT-0213](../BEHAVIOR-TRACE/EVT-0213-INITIAL-MODEL-NEW-HOST-HANDOFF-2026-10-27.md) → [CURRENT-089](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-089-INITIAL-MODEL-NEW-HOST-HANDOFF.md).
+- Host boot contract: [NEW-HOST-BOOTSTRAP](../مدل%20اولیه%20AI/NEW-HOST-BOOTSTRAP-2026-10-27.md).
+- Continue under the existing NEXT-051 only. Reconcile portable manifest coverage with exact workflow-generated digests, then run audit and conformance on the same final main SHA.
+- Preserve CURRENT-065/CURRENT-066 as OPEN; Issues #20/#21 remain open; no independent host, persistence or external destination status is upgraded without direct evidence.
