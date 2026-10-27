@@ -921,3 +921,11 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - [EVT-0210](./EVT-0210-POINT-0-038-EXACT-SHA-VALIDATION-AND-MANIFEST-REPAIR-2026-10-27.md) — exact-SHA audit/conformance receipt and manifest-digest repair lesson.
 - [EVT-0210 time binding](./TIME-BINDING-EVT-0210-POINT-0-038-2026-10-27.md) — UTC 2026-10-27T04:19:13Z; Tehran 07:49:13 +03:30.
 - CURRENT-087's refreshed binding: [time binding](./TIME-BINDING-CURRENT-087-POINT-0-038-2026-10-27.md) — UTC 2026-10-27T04:19:28Z; Tehran 07:49:28 +03:30.
+
+## EVT-0211 — Live Mirror Sync Recheck (2026-10-27)
+
+- Event: [EVT-0211](./EVT-0211-LIVE-MIRROR-SYNC-RECHECK-2026-10-27.md); time binding: [TIME-BINDING-EVT-0211](./TIME-BINDING-EVT-0211-LIVE-MIRROR-SYNC-2026-10-27.md).
+- Canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10` is unchanged. Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, exposed version ID 7, reads as 10,480 characters vs source 10,479; only difference is one extra trailing LF. Semantic fields match and edit distance is 1, so no rewrite was performed. No supported source_file_ref/export upload route was available; the delta remains documented.
+- Latest root/checkpoint/queue: POINT-0/038 → CURRENT-087 → NEXT-051. Preserve POINT-0/016, /017, /018 and the EVT-0177 lineage. CURRENT-065/CURRENT-066 remains OPEN; no inferred winner and no NEXT-052.
+- Audit [40449320066](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40449320066) and Portable RAHM Conformance [40449320049](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40449320049) passed on the same tested SHA `77cb3b725d493cf92af6a95d4b7a00888fbdb7bc`. Main at run start was `9124fd841f357889bdc5c8604effb7cb368b56cc`, newer than those receipts; it and any later head remain NOT VERIFIED until the full pair passes on the exact final SHA.
+- Buffer/Persistent Memory: NOT VERIFIED; Dropbox: OPEN / NOT VERIFIED; external interactive-host import/recovery: NOT RUN. Issues #20/#21 and BOART-FOLLOWUP-01 → 02 → 03 remain open/active.
