@@ -929,3 +929,11 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Latest root/checkpoint/queue: POINT-0/038 → CURRENT-087 → NEXT-051. Preserve POINT-0/016, /017, /018 and the EVT-0177 lineage. CURRENT-065/CURRENT-066 remains OPEN; no inferred winner and no NEXT-052.
 - Audit [40449320066](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40449320066) and Portable RAHM Conformance [40449320049](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40449320049) passed on the same tested SHA `77cb3b725d493cf92af6a95d4b7a00888fbdb7bc`. Main at run start was `9124fd841f357889bdc5c8604effb7cb368b56cc`, newer than those receipts; it and any later head remain NOT VERIFIED until the full pair passes on the exact final SHA.
 - Buffer/Persistent Memory: NOT VERIFIED; Dropbox: OPEN / NOT VERIFIED; external interactive-host import/recovery: NOT RUN. Issues #20/#21 and BOART-FOLLOWUP-01 → 02 → 03 remain open/active.
+
+
+## Latest event — EVT-0212 / POINT-0/039 — 2026-10-27
+
+- [EVT-0212](./EVT-0212-POINT-0-039-REGISTRATION-AND-ARCHITECTURE-CONTINUATION-2026-10-27.md): user-designated new root and deterministic continuation plan.
+- Root: [POINT-0/039](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-039-MIRROR-SYNC-AND-ARCHITECTURE-CONTINUATION.md); interaction chain IN-076 → OUT-075 → EVT-0212 → CURRENT-088.
+- Preserve all previous roots and collision lineage. NEXT-051 remains the sole active queue; no NEXT-052.
+- The current HEAD and latest exact-SHA audit/conformance pair must be freshly rediscovered after these writes. Do not infer that prior workflow receipts cover new commits.
