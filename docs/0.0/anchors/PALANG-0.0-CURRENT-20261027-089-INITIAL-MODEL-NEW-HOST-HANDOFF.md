@@ -23,3 +23,12 @@
 ## State boundary
 
 The existing starter is an executable prototype, not a native GPT plugin. Repository and CI evidence are not proof of actual host import, persistent memory, background execution, or external destination writes. Keep those gates open until direct evidence exists. No NEXT-052.
+
+
+
+## Collision-containment update
+
+- Collision evidence: [EVT-0214](../../architecture/BEHAVIOR-TRACE/EVT-0214-POINT-040-DUPLICATE-ID-QUARANTINE-2026-10-27.md).
+- Canonical root/event IDs remain POINT-0/040 and EVT-0213 as defined by this handoff chain. Alternate duplicate drafts are quarantined, not deleted.
+- Supplementary host transfer contract: [INITIAL-MODEL-HOST-TRANSFER-BOOTSTRAP](../../portable/RAHM/INITIAL-MODEL-HOST-TRANSFER-BOOTSTRAP-2026-10-27.md). Canonical starter remains the existing prototype/haif-gpt6-starter.
+- Next deterministic work: validate manifest and exact package hashes, run paired audit/conformance on one final main SHA, then obtain independent-host import and cold-recovery receipts. NEXT-051 remains the sole queue.
