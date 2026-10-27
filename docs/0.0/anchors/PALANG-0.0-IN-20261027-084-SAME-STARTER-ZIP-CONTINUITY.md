@@ -12,3 +12,10 @@
 - Active queue: [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
 
 The user wants the current interaction anchored as point 0, the work as a linked 0.0 continuation, and the architecture corrected so it repeatedly updates and completes the same initial ZIP. No new package identity or parallel version-named ZIP is wanted. The already-verified ZIP replacement receipt is valid for its tested SHA; the new source changes need a fresh exact-head build receipt.
+
+- Current checkpoint: [CURRENT-096](./PALANG-0.0-CURRENT-20261027-096-SAME-STARTER-ZIP-CONTINUITY.md)
+- Active queue: [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
+- Living mother: [سند مرجع مادر مدل اولیه](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
+- Recovery protocol: [INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL](../../architecture/مدل%20اولیه%20AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md)
+- Package recovery protocol: [INDEPENDENT_HOST_RECOVERY_PROTOCOL.md](../../../prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md)
+- Export manifest: [EXPORT_MANIFEST.json](../../portable/RAHM/EXPORT_MANIFEST.json)

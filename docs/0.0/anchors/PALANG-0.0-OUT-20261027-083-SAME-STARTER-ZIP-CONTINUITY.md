@@ -20,3 +20,10 @@
 7. Treat actual independent-host import, IN/OUT reconstruction, negative controls, read-back and restart persistence as separate gates.
 
 The prior ZIP is confirmed updated. This continuation adds current lineage references and ensures the conformance workflow checks the current IN/OUT pair. Fresh CI evidence for this new exact main SHA remains pending.
+
+- Current checkpoint: [CURRENT-096](./PALANG-0.0-CURRENT-20261027-096-SAME-STARTER-ZIP-CONTINUITY.md)
+- Active queue: [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
+- Living mother: [سند مرجع مادر مدل اولیه](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
+- Recovery protocol: [INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL](../../architecture/مدل%20اولیه%20AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md)
+- Package recovery protocol: [INDEPENDENT_HOST_RECOVERY_PROTOCOL.md](../../../prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md)
+- Export manifest: [EXPORT_MANIFEST.json](../../portable/RAHM/EXPORT_MANIFEST.json)
