@@ -177,10 +177,12 @@ jobs:
             rahm-recovery-equivalence.json
 
       - name: Test the existing HAIF starter package source
+        if: always()
         run: |
           cd prototype/haif-gpt6-starter
           python -m unittest -v
       - name: Rebuild the existing starter ZIP under its canonical filename
+        if: always()
         run: |
           python - <<'PY'
           import hashlib, json, zipfile
@@ -236,6 +238,7 @@ jobs:
           print("EXISTING_STARTER_ZIP_REBUILD=PASS")
           PY
       - name: Upload updated bytes for the existing starter ZIP
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean
