@@ -23,5 +23,5 @@ The 0+ marker belongs to the existing canonical root 0. This record is retained 
 - Canonical filename preserved: haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip.
 - Internal package version: 0.3.1; stable package ID unchanged.
 - Verified archive: 19,042 bytes; SHA-256 3a17f64880519a0da714f09a1dc8065fafcd88321fa5674eb2d995dfd8f63e83.
-- Package unit tests: 15/15 PASS after fresh extraction; ZIP integrity PASS; RAHM exact-byte manifest scan PASS on the tested revision.
+- Package unit tests: 16/16 PASS after fresh extraction; ZIP integrity PASS; RAHM exact-byte manifest scan PASS on the tested revision.
 - Real independent AI-host import and restart persistence: NOT RUN / NOT VERIFIED.
