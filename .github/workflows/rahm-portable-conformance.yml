@@ -208,9 +208,13 @@ jobs:
               raise SystemExit("STARTER_STABLE_ID_CHANGED")
           if manifest.get("production_id") != "HAIF-G6PS-20261025-004":
               raise SystemExit("STARTER_PRODUCTION_ID_CHANGED")
-          with zipfile.ZipFile(archive, "w", compression=zipfile.ZIP_DEFLATED) as zf:
+          with zipfile.ZipFile(archive, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as zf:
               for name in required:
-                  zf.write(source / name, arcname=name)
+                  info = zipfile.ZipInfo(name, date_time=(2026, 10, 27, 0, 0, 0))
+                  info.compress_type = zipfile.ZIP_DEFLATED
+                  info.create_system = 3
+                  info.external_attr = 0o100644 << 16
+                  zf.writestr(info, (source / name).read_bytes(), compress_type=zipfile.ZIP_DEFLATED, compresslevel=9)
           with zipfile.ZipFile(archive, "r") as zf:
               bad = zf.testzip()
               if bad:
