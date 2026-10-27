@@ -11,7 +11,7 @@ This is the updated release of the existing HAIF starter package, not a separate
 - Evidence-gated gap closure and Master → Child promotion.
 - Portable bundle export/import with SHA-256 verification, atomic local writes and validated read-back.
 - Independent-host recovery protocol included in this package: exact package digest, clean-host import, independent reconstruction from IN and OUT, negative controls, read-back and restart/persistence acceptance.
-- Current continuation reference: POINT-0/043 (0+) → IN-081 → OUT-080 → EVT-0218 → CURRENT-093 → NEXT-051.
+- Current continuation reference: POINT-0/044 (canonical 0; parent production marker POINT-0/043 (0+)) → IN-082 → OUT-081 → EVT-0219 → CURRENT-094 → NEXT-051.
 
 ## Bootstrap
 ~~~bash
@@ -45,3 +45,9 @@ An uploaded instruction file alone is not a native plugin and does not provide a
 
 ## Acceptance scope
 CI tests validate the local engine and protocol presence. CI is not proof of actual independent AI-host acceptance. Real host import, negative controls, independent read-back and restart need direct evidence.
+
+
+## Existing ZIP continuity rule
+The package remains the same established starter package and stable identity. The canonical replacement archive filename is `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip` for compatibility with the original package record. Its contents are rebuilt from this existing source folder; do not publish a second version-named ZIP. The internal manifest/version and exact ZIP digest must describe the actual rebuilt bytes. The historic v0.3.0 digest is not the digest of the updated archive.
+
+The recovery protocol is included in the existing package line. A ZIP build or CI pass does not prove a real independent AI host accepted the package.
