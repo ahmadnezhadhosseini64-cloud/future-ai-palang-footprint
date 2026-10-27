@@ -279,3 +279,56 @@ jobs:
             haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip
             haif-gpt6-starter-zip-receipt.json
           if-no-files-found: error
+
+      - name: Download uploaded canonical ZIP artifact and verify round-trip bytes
+        if: success()
+        uses: actions/download-artifact@v4
+        with:
+          name: haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean
+          path: downloaded-starter-artifact
+
+      - name: Verify downloaded artifact receipt and extracted ZIP
+        if: success()
+        run: |
+          python - <<'PY'
+          import hashlib, json, zipfile, subprocess, sys, tempfile
+          from pathlib import Path
+          root = Path("downloaded-starter-artifact")
+          archive = root / "haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip"
+          receipt_path = root / "haif-gpt6-starter-zip-receipt.json"
+          if not archive.is_file() or not receipt_path.is_file():
+              raise SystemExit("DOWNLOADED_ARTIFACT_MISSING_ZIP_OR_RECEIPT")
+          receipt = json.loads(receipt_path.read_text(encoding="utf-8"))
+          data = archive.read_bytes()
+          actual = hashlib.sha256(data).hexdigest()
+          if len(data) != receipt["bytes"] or actual != receipt["sha256"]:
+              raise SystemExit(f"DOWNLOADED_ARTIFACT_DIGEST_MISMATCH: bytes={len(data)} sha256={actual}")
+          with zipfile.ZipFile(archive, "r") as zf:
+              bad = zf.testzip()
+              if bad:
+                  raise SystemExit(f"DOWNLOADED_ZIP_CRC_FAILURE: {bad}")
+              names = set(zf.namelist())
+              if names != set(receipt["inventory"]):
+                  raise SystemExit("DOWNLOADED_ZIP_INVENTORY_MISMATCH")
+              with tempfile.TemporaryDirectory(prefix="haif-downloaded-zip-test-") as tmp:
+                  extracted = Path(tmp) / "package"
+                  extracted.mkdir()
+                  zf.extractall(extracted)
+                  test = subprocess.run(
+                      [sys.executable, "-m", "unittest", "discover", "-s", str(extracted), "-p", "test_engine.py", "-v"],
+                      text=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT
+                  )
+                  print(test.stdout)
+                  if test.returncode:
+                      raise SystemExit(f"DOWNLOADED_ZIP_TESTS_FAILED: exit={test.returncode}")
+          print(json.dumps({
+              "artifact_round_trip": "PASS",
+              "archive_filename": archive.name,
+              "bytes": len(data),
+              "sha256": actual,
+              "extracted_tests": "PASS",
+              "test_result": "PASS",
+              "source_commit": receipt.get("repository_commit_sha"),
+              "workflow_run_id": receipt.get("workflow_run_id")
+          }, indent=2))
+          PY
