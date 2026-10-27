@@ -16,7 +16,7 @@
 - RAHM export manifest: [EXPORT_MANIFEST.json](../../portable/RAHM/EXPORT_MANIFEST.json)
 
 - Sole active queue: [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
-- Acceptance gates: OPEN / NOT VERIFIED — fresh ZIP build receipt pending; real independent-host import NOT RUN; restart persistence NOT RUN.
+- ZIP build receipt: VERIFIED — 19,042 bytes, SHA-256 3a17f64880519a0da714f09a1dc8065fafcd88321fa5674eb2d995dfd8f63e83, 16/16 tests PASS after fresh extraction. Acceptance gates still OPEN / NOT VERIFIED for real independent-host import and restart persistence.
 
 - Living mother reference: [سند مرجع مادر مدل اولیه](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 
