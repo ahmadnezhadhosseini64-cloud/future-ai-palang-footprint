@@ -2289,7 +2289,7 @@ Run 40518077494; canonical ZIP SHA-256 `fa226aab5a35a76c3f289b511566257a44382119
 - [x] Verified v0.3.3 canonical ZIP artifact round-trip: run 40518292922, 19,268 bytes, SHA-256 fa226aab5a35a76c3f289b511566257a443821195ebdfdfb21f1cc093026e091, 16/16 extracted tests PASS.
 - [x] Preserve one stable package ID and original canonical ZIP filename.
 - [x] Align source metadata/instructions to current POINT-0/049 → CURRENT-099 chain and paired ZIP + living-master transfer.
-- [ ] Read back v0.3.4 exact-head build receipt, ZIP hash, downloaded artifact and extracted tests.
+- [ ] Verified v0.3.4 receipt: run 40528951992, 20,075 bytes, SHA-256 2ae583a3029d489e636439133b40e24a480754f6b569ada475694abad97c7f3b; artifact round-trip and 17/17 extracted tests PASS.
 - [ ] Import ZIP + master into a separate interactive GPT-6 host and capture direct receipt.
 - [ ] Test IN/OUT recovery equivalence, negative controls, restart/persistence and authorized repository write-back.
 

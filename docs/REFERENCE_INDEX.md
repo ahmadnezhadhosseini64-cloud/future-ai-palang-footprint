@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-27 — POINT-0/049 (0+ marker on canonical root) → IN-087 → OUT-086 → EVT-0224 → CURRENT-099 → NEXT-051; paired first-host transfer contract; ZIP v0.3.4 build receipt pending; real-host acceptance OPEN.
+**Last Updated:** 2026-10-27 — POINT-0/049 (0+ marker on canonical root) → IN-087 → OUT-086 → EVT-0224 → CURRENT-099 → NEXT-051; paired first-host transfer contract; ZIP v0.3.4 verified on run 40528951992; 20,075 bytes; SHA-256 2ae583a3029d489e636439133b40e24a480754f6b569ada475694abad97c7f3b; 17/17 tests and artifact round-trip PASS; real-host acceptance OPEN.
 
 ## Canonical References
 
@@ -1940,3 +1940,16 @@ Verified current package receipt: run 40507481687 on SHA `c6af49386493f5c542336d
 - Sole active queue: NEXT-051.
 
 Previous verified ZIP v0.3.3: run 40518292922; 19,268 bytes; SHA-256 fa226aab5a35a76c3f289b511566257a443821195ebdfdfb21f1cc093026e091; 16/16 extracted tests PASS. v0.3.4 pending fresh receipt.
+
+
+## Verified v0.3.4 canonical ZIP receipt
+
+- Workflow: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40528951992
+- Source commit: 399aeb38cb10e9983754ec5543b0cce7727aac06
+- Stable package ID unchanged: HAIF-GPT6-PORTABLE-STARTER-20261025-004
+- Canonical filename unchanged: haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip
+- Internal package version: 0.3.4
+- Exact ZIP size: 20,075 bytes
+- Exact ZIP SHA-256: 2ae583a3029d489e636439133b40e24a480754f6b569ada475694abad97c7f3b
+- ZIP CRC/inventory: PASS; source-byte read-back: PASS; uploaded artifact downloaded back and matched: PASS; tests from extracted ZIP: 17/17 PASS.
+- Real independent GPT-6 host acceptance, live message capture, durable memory and restart persistence: NOT RUN / NOT VERIFIED.
