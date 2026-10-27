@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-27 — POINT-0/046 → IN-084 → OUT-083 → EVT-0221 → CURRENT-096; same-name starter ZIP v0.3.2 built and read-back verified on SHA c97167348de9e0fe57b5e4a61f9051f012aea719; paired audit/conformance PASS; NEXT-051 remains sole active queue; real-host acceptance OPEN.
+**Last Updated:** 2026-10-27 — POINT-0/048 (0+ marker) → IN-086 → OUT-085 → EVT-0223 → CURRENT-098 → NEXT-051; same-name starter ZIP v0.3.2 built and read-back verified on SHA c97167348de9e0fe57b5e4a61f9051f012aea719; paired audit/conformance PASS; NEXT-051 remains sole active queue; real-host acceptance OPEN.
 
 ## Canonical References
 
@@ -1909,3 +1909,12 @@ Verified current package receipt: run 40507481687 on SHA `c6af49386493f5c542336d
 - Root cause of the latest starter test failure: stale test expected v0.3.2 while the manifest declared v0.3.3. README and independent-host protocol were also stale at v0.3.2 / v0.3.1.
 - Source-level correction aligns README, manifest, test and recovery protocol at v0.3.3. Fresh paired CI and artifact inspection on one exact final commit remain pending.
 - Real independent-host acceptance remains NOT RUN; NEXT-051 remains the sole active queue.
+
+
+## CURRENT-098 — same ZIP, exact read-back and extracted-package test
+
+- [POINT-0/048 (0+)](docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-048-SAME-ZIP-READBACK-AND-CONTINUOUS-UPDATE.md): production marker on existing root, not a new canonical root.
+- [IN-086](docs/0.0/anchors/PALANG-0.0-IN-20261027-086-SAME-ZIP-READBACK-AND-CONTINUOUS-UPDATE.md) → [OUT-085](docs/0.0/anchors/PALANG-0.0-OUT-20261027-085-SAME-ZIP-READBACK-AND-CONTINUOUS-UPDATE.md) → [EVT-0223](docs/architecture/BEHAVIOR-TRACE/EVT-0223-SAME-ZIP-READBACK-AND-CONTINUOUS-UPDATE-2026-10-27.md) → [CURRENT-098](docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-098-SAME-ZIP-READBACK-AND-CONTINUOUS-UPDATE.md).
+- Existing canonical archive filename and package stable ID are unchanged. Previous successful archive receipt remains historical evidence; new digest must be obtained from the fresh run.
+- Fresh workflow commit: `08155ef02f30533558b2396848e9772621b865ba`; run [40517444577](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40517444577) was QUEUED at checkpoint creation. The new gate extracts the archive, compares all eight files byte-for-byte, and executes tests from the extracted package.
+- Real independent-host acceptance and restart persistence remain OPEN / NOT RUN. NEXT-051 is still the sole active queue.

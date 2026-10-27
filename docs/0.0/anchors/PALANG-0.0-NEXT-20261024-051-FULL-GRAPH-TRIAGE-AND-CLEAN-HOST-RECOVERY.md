@@ -457,3 +457,12 @@ Status remains OPEN / LIVING / NOT COMPLETE. CI or synthetic runtime transfer is
 - Downloaded artifact ID `12735088499`; outer wrapper 19,841 bytes, SHA-256 `ec7d6e280fefc34272cff6cce96f16a0bb8ed48f7b718263e1662c8b5e701394`.
 - Nested canonical ZIP: 19,242 bytes; SHA-256 `861be3d9998e96c8588d03642f70d01a6e2060b7b5056f45ef50008fc6f61da4`; 8 members; CRC PASS; internal version 0.3.2; stable package ID unchanged; 16/16 starter tests PASS in CI.
 - Real independent-host import, negative controls at a separate host, independent read-back and restart/persistence remain OPEN / NOT RUN.
+
+
+## CURRENT-098 — same initial ZIP and actual extracted-package test
+
+- Chain: POINT-0/048 (0+ marker) → IN-086 → OUT-085 → EVT-0223 → CURRENT-098 → NEXT-051.
+- The package identity and canonical archive filename are unchanged. The previously successful 0.3.3 receipt is historical evidence only.
+- The existing build workflow now extracts the ZIP into a clean temporary directory, compares every required file byte-for-byte with source and runs package tests from the extracted archive before artifact upload.
+- The workflow run for fix commit `08155ef02f30533558b2396848e9772621b865ba` must be read back before this gate is marked PASS.
+- Real independent-host acceptance and restart persistence remain OPEN / NOT RUN.

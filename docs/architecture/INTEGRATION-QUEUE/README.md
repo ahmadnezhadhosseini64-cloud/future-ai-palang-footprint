@@ -3,7 +3,7 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.10.0
+- Version: 1.10.1
 - Date: 2026-10-27
 - Exact Time: 11:25 local project time, minute precision; exact seconds not captured.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
@@ -2259,3 +2259,15 @@ NEXT-051 remains the sole active queue; no NEXT-052.
 - Downloaded artifact ID `12735088499`; outer wrapper 19,841 bytes, SHA-256 `ec7d6e280fefc34272cff6cce96f16a0bb8ed48f7b718263e1662c8b5e701394`.
 - Nested canonical ZIP: 19,242 bytes; SHA-256 `861be3d9998e96c8588d03642f70d01a6e2060b7b5056f45ef50008fc6f61da4`; 8 members; CRC PASS; internal version 0.3.2; stable package ID unchanged; 16/16 starter tests PASS in CI.
 - Real independent-host import, negative controls at a separate host, independent read-back and restart/persistence remain OPEN / NOT RUN.
+
+
+## CURRENT-098 — product-first same-ZIP hardening
+
+- [x] Preserve the canonical ZIP filename and stable package identity; do not publish separate version-named ZIPs.
+- [x] Keep the prior 0.3.3 archive digest as historical evidence, not the new digest.
+- [x] Add clean extraction, byte-for-byte comparison of all required members, and tests run from the extracted ZIP to the existing portable-conformance workflow.
+- [ ] Read the fresh workflow result on fix commit `08155ef02f30533558b2396848e9772621b865ba`; record its archive SHA, byte count, package tests and artifact receipt.
+- [ ] Download the artifact and compare the contained ZIP bytes/hash against its receipt.
+- [ ] Perform real independent-host import, independent reconstruction from IN and OUT, negative controls and restart/persistence.
+
+CURRENT-098 is the continuation checkpoint. NEXT-051 remains the only active queue; no NEXT-052.
