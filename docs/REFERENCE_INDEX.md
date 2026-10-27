@@ -1842,3 +1842,14 @@ The current ZIP is not considered delivered until a fresh portable-conformance r
 | HAIF-IHRP-001 | `prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md` | Included in existing starter package line v0.3.1 |
 
 The v0.3.0 digest remains historical evidence. A fresh CI artifact and SHA-256 must be verified before marking the updated ZIP delivered. Real AI-host import remains NOT RUN.
+
+
+## POINT-0/044 — Existing starter ZIP in-place update
+
+- Point: `docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-044-STARTER-ZIP-INPLACE-UPDATE.md`
+- Input: `docs/0.0/anchors/PALANG-0.0-IN-20261027-082-STARTER-ZIP-INPLACE-UPDATE.md`
+- Output: `docs/0.0/anchors/PALANG-0.0-OUT-20261027-081-STARTER-ZIP-INPLACE-UPDATE.md`
+- Event: `docs/architecture/BEHAVIOR-TRACE/EVT-0219-STARTER-ZIP-INPLACE-UPDATE-2026-10-27.md`
+- Checkpoint: `docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-094-STARTER-ZIP-INPLACE-UPDATE.md`
+- Canonical ZIP filename retained: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`
+- Workflow rebuilds same-name archive from the existing package source and emits exact SHA-256/byte-count receipt; current artifact status must be read from the latest run.
