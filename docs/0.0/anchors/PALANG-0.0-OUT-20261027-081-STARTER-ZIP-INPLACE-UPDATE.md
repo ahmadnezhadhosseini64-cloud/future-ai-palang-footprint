@@ -23,12 +23,12 @@
 
 ## Final archive receipt
 
-- Exact build commit: `fa930e8e895eae7dea3f7eb13449321c5658a2c2`.
-- Successful run: [40489299348](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40489299348).
+- Exact build commit: `95e42fdffa0f0de956220403200c6f2390cfe645`.
+- Successful run: [40489753805](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40489753805).
 - Artifact ID: `12726786662`.
 - Same canonical ZIP filename: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`.
-- Current ZIP size: 18,815 bytes.
-- Current ZIP SHA-256: `b3429acaa5d33fb93dec7ad0ba8c1cdf233fbb28b8839794eea74457013e1309`.
+- Current ZIP size: 19,042 bytes.
+- Current ZIP SHA-256: `3a17f64880519a0da714f09a1dc8065fafcd88321fa5674eb2d995dfd8f63e83`.
 - Package unit tests PASS; ZIP CRC PASS; 8-file inventory PASS; exact-byte manifest scan PASS.
 - The old digest `297b3b329143c4b99f55373db0c4bb97896b0e484253622e63eeb32a4429f164` remains historical and is not reused.
 - Real independent-host import and restart persistence remain OPEN / NOT RUN.
@@ -36,9 +36,9 @@
 
 ## Verified current archive receipt
 
-- Workflow: [40489299348](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40489299348) — SUCCESS.
+- Workflow: [40489753805](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40489753805) — SUCCESS.
 - Archive filename: haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip (same canonical filename retained).
 - Internal package version: 0.3.1; stable ID HAIF-GPT6-PORTABLE-STARTER-20261025-004.
-- Size: 18,815 bytes; SHA-256: b3429acaa5d33fb93dec7ad0ba8c1cdf233fbb28b8839794eea74457013e1309.
-- Fresh extraction: 15/15 tests PASS; ZIP CRC PASS; 8-file inventory PASS.
+- Size: 19,042 bytes; SHA-256: 3a17f64880519a0da714f09a1dc8065fafcd88321fa5674eb2d995dfd8f63e83.
+- Fresh extraction: 16/16 tests PASS; ZIP CRC PASS; 8-file inventory PASS.
 - Real independent-host import and restart persistence: OPEN / NOT RUN.
