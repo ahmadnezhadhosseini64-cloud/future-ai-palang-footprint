@@ -14,3 +14,6 @@
 - Package manifest: [manifest.json](../../../prototype/haif-gpt6-starter/manifest.json)
 
 - RAHM export manifest: [EXPORT_MANIFEST.json](../../portable/RAHM/EXPORT_MANIFEST.json)
+
+- Sole active queue: [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
+- Acceptance gates: OPEN / NOT VERIFIED — fresh ZIP build receipt pending; real independent-host import NOT RUN; restart persistence NOT RUN.
