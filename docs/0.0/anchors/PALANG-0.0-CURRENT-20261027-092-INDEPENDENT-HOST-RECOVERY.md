@@ -15,11 +15,11 @@
 - Real AI-host import is NOT RUN; CI transfer is not external-host acceptance.
 
 ## Open gates
-1. Reclassify mutable references in the manifest and reconcile hashes.
-2. Update conformance recovery inputs to IN-080 and OUT-079 and compare current state.
-3. Build ZIP on the final SHA and verify its hash, byte count and artifact.
-4. Test real clean-host import, negative controls and independent read-back.
-5. Test a second host and restart persistence when authorized.
-6. Continue identity/parent/time graph triage in NEXT-051.
+1. [x] Reclassify mutable references: manifest v1.8.23 moves NEXT-051 to live references and includes the POINT-0/043 recovery chain and protocol.
+2. [x] Update conformance workflow inputs to IN-080 / OUT-079 and compare CURRENT-092, NEXT-051, mother, protocol and manifest pointers; full-state reconstruction remains a separate acceptance gate.
+3. [ ] Fresh conformance run on one exact final SHA; verify exact-byte digests, ZIP hash, byte count and visible artifact.
+4. [ ] Real clean-host import, negative controls and independent read-back.
+5. [ ] Second-host and restart persistence tests when authorized.
+6. [ ] Continue identity/parent/time graph triage in NEXT-051.
 
 Do not close NEXT-051 or create NEXT-052 to replace unfinished work.
