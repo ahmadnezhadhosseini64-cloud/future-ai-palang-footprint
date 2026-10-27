@@ -6,3 +6,8 @@
 - Input: user requires the existing initial ZIP to be continuously updated, not a separate new-version ZIP.
 - Requirements: keep stable package identity and established ZIP filename; update the package's existing source line; include independent-host recovery proof protocol; build ZIP from exact source; test, hash and read back; record gaps without false closure.
 - Status: REGISTERED; ZIP build and replacement artifact NOT YET VERIFIED.
+
+- Current checkpoint: [CURRENT-094](./PALANG-0.0-CURRENT-20261027-094-STARTER-ZIP-INPLACE-UPDATE.md)
+- Independent-host protocol: [repository protocol](../../architecture/مدل%20اولیه%20AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md)
+- Package recovery protocol: [INDEPENDENT_HOST_RECOVERY_PROTOCOL.md](../../../prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md)
+- Package manifest: [manifest.json](../../../prototype/haif-gpt6-starter/manifest.json)
