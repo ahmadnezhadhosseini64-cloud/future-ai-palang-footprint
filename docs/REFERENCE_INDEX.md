@@ -1780,3 +1780,9 @@ Both Path A (portable initial model and independent-host recovery) and Path B (e
 - [EVT-0210 exact-SHA audit/conformance receipt](architecture/BEHAVIOR-TRACE/EVT-0210-POINT-0-038-EXACT-SHA-VALIDATION-AND-MANIFEST-REPAIR-2026-10-27.md).
 - [EVT-0210 canonical time binding](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0210-POINT-0-038-2026-10-27.md) — UTC 2026-10-27T04:19:13Z / Tehran 07:49:13 +03:30.
 - [CURRENT-087 refreshed canonical time binding](architecture/BEHAVIOR-TRACE/TIME-BINDING-CURRENT-087-POINT-0-038-2026-10-27.md) — UTC 2026-10-27T04:19:28Z / Tehran 07:49:28 +03:30.
+
+## EVT-0211 — Live Mirror Sync Recheck
+- Event: [EVT-0211](architecture/BEHAVIOR-TRACE/EVT-0211-LIVE-MIRROR-SYNC-RECHECK-2026-10-27.md); time binding: [TIME-BINDING-EVT-0211](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0211-LIVE-MIRROR-SYNC-2026-10-27.md).
+- Canonical source: [LIVE-DESTINATION-STABILITY-AUDIT](architecture/BEHAVIOR-OBSERVATORY/LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md), blob `de1b75f07241c9b313e476af5f1417177ff78c10`; Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, version ID 7. Semantic match within approved tolerance; exact text differs by one trailing LF; no Library overwrite.
+- Root/checkpoint/active queue: POINT-0/038 → CURRENT-087 → NEXT-051. CURRENT-065/CURRENT-066 remains OPEN; preserve all earlier roots and collision lineage.
+- Audit/conformance passed only on tested SHA `77cb3b725d493cf92af6a95d4b7a00888fbdb7bc`; the pre-registration main `9124fd841f357889bdc5c8604effb7cb368b56cc` and later heads require exact-SHA receipts. Issues #20/#21 remain OPEN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN/NOT VERIFIED; independent host NOT RUN.
