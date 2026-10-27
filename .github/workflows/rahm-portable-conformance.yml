@@ -224,6 +224,29 @@ jobs:
                   raise SystemExit(f"ZIP_INVENTORY_MISMATCH: {sorted(names)}")
               if "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md" not in names:
                   raise SystemExit("INDEPENDENT_HOST_RECOVERY_PROTOCOL_MISSING")
+          # Read back the exact ZIP contents into a clean temporary directory,
+          # compare every byte with the source, then run the package tests from the
+          # extracted archive (not merely from the repository source tree).
+          import shutil, subprocess, sys, tempfile
+          with tempfile.TemporaryDirectory(prefix="haif-starter-zip-readback-") as tmp:
+              extracted = Path(tmp) / "package"
+              extracted.mkdir()
+              with zipfile.ZipFile(archive, "r") as zf:
+                  zf.extractall(extracted)
+              for name in required:
+                  source_bytes = (source / name).read_bytes()
+                  extracted_bytes = (extracted / name).read_bytes()
+                  if source_bytes != extracted_bytes:
+                      raise SystemExit(f"ZIP_READBACK_BYTE_MISMATCH: {name}")
+              print("ZIP_READBACK_SOURCE_BYTE_MATCH=PASS")
+              test = subprocess.run(
+                  [sys.executable, "-m", "unittest", "discover", "-s", str(extracted), "-p", "test_engine.py", "-v"],
+                  text=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT
+              )
+              print(test.stdout)
+              if test.returncode:
+                  raise SystemExit(f"EXTRACTED_ZIP_TESTS_FAILED: exit={test.returncode}")
+              print("EXTRACTED_ZIP_TESTS=PASS")
           data = archive.read_bytes()
           receipt = {
               "package_identity": manifest["stable_id"],
@@ -239,6 +262,8 @@ jobs:
               "file_count": len(required),
               "inventory": required,
               "zip_integrity": "PASS",
+              "zip_readback_source_byte_match": "PASS",
+              "extracted_zip_tests": "PASS",
               "real_independent_host_acceptance": "NOT_RUN"
           }
           Path("haif-gpt6-starter-zip-receipt.json").write_text(json.dumps(receipt, indent=2)+"\n", encoding="utf-8")
