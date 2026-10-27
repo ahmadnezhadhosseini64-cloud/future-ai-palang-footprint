@@ -2182,3 +2182,12 @@ The current root is [POINT-0/027](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261
 - NEXT-051 remains the only active queue. Do not create NEXT-052.
 - Ordered next work: verify manifest hashes; audit identity/links/pointers; preserve CURRENT-065/CURRENT-066 as OPEN; inspect Issues #20/#21; run audit and Portable RAHM Conformance on the same final main SHA; then seek direct independent-host import and cold-recovery receipts.
 - No claim of Library write, external persistence, host import or cold recovery is made by these repository edits.
+
+## POINT-0/041 — Current interaction anchor and continuation
+
+- Root: [POINT-0/041](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-041-CURRENT-INTERACTION-ANCHOR.md).
+- Chain: [IN-078](../../0.0/anchors/PALANG-0.0-IN-20261027-078-CURRENT-INTERACTION.md) → [OUT-077](../../0.0/anchors/PALANG-0.0-OUT-20261027-077-CURRENT-INTERACTION.md) → [EVT-0215](../BEHAVIOR-TRACE/EVT-0215-CURRENT-INTERACTION-POINT-041-2026-10-27.md) → [CURRENT-090](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-090-CURRENT-INTERACTION.md) → NEXT-051.
+- NEXT-051 remains the sole active queue; do not create NEXT-052.
+- Next execution: read-back and link audit; manifest exact-byte digest/package validation; paired Living Architecture Audit + Portable RAHM Conformance on one final SHA; clean independent-host import and cold recovery only with direct authorized runtime evidence.
+- Known unresolved gates remain OPEN: CURRENT-065/CURRENT-066, Issues #20/#21, Buffer/Persistent Memory, Dropbox, and real-host acceptance.
+- Current main must be re-discovered after these writes. Previously passing tests on a different SHA do not certify the latest main.
