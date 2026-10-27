@@ -249,12 +249,12 @@ jobs:
           echo "HAIF_GPT6_STARTER_ENGINE_TESTS=PASS"
           mkdir -p audit-output
           rm -rf prototype/haif-gpt6-starter/__pycache__
-          (cd prototype/haif-gpt6-starter && zip -r ../../audit-output/haif-gpt6-starter-v0.3.1-0plus-bootstrap-clean.zip . -x '__pycache__/*' '*.pyc')
-          sha256sum audit-output/haif-gpt6-starter-v0.3.1-0plus-bootstrap-clean.zip | tee audit-output/haif-gpt6-starter-zip-sha256.txt
+          (cd prototype/haif-gpt6-starter && zip -r ../../audit-output/haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip . -x '__pycache__/*' '*.pyc')
+          sha256sum audit-output/haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip | tee audit-output/haif-gpt6-starter-zip-sha256.txt
           python3 - <<'PY'
           import zipfile
           from pathlib import Path
-          p = Path('audit-output/haif-gpt6-starter-v0.3.1-0plus-bootstrap-clean.zip')
+          p = Path('audit-output/haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip')
           with zipfile.ZipFile(p) as z:
               names = z.namelist()
               assert 'engine.py' in names and 'manifest.json' in names and 'INDEPENDENT_HOST_RECOVERY_PROTOCOL.md' in names
