@@ -3,6 +3,7 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
+- Historical Stable ID / شناسهٔ پایدار ثبت‌شده برای ممیزی: `G6IP-RAHM-NEXT-051-20261024`
 - Version: 1.10.3
 - Date: 2026-10-27
 - Exact Time: 11:25 local project time, minute precision; exact seconds not captured.
