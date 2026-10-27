@@ -13,6 +13,7 @@ on:
       - 'docs/REFERENCE_INDEX.md'
       - 'scripts/behavior-hunter/**'
       - 'scripts/haif-runtime/**'
+      - 'prototype/haif-gpt6-starter/**'
       - '.github/workflows/living-architecture-audit.yml'
       - '.github/workflows/rahm-portable-conformance.yml'
   workflow_dispatch:
@@ -174,3 +175,71 @@ jobs:
           path: |
             rahm-sha256-evidence.json
             rahm-recovery-equivalence.json
+
+      - name: Test the existing HAIF starter package source
+        run: |
+          cd prototype/haif-gpt6-starter
+          python -m unittest -v
+      - name: Rebuild the existing starter ZIP under its canonical filename
+        run: |
+          python - <<'PY'
+          import hashlib, json, zipfile
+          from pathlib import Path
+          source = Path("prototype/haif-gpt6-starter")
+          archive = Path("haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip")
+          required = [
+              "README.md",
+              "manifest.json",
+              "GPT6_HOST_INSTRUCTIONS.md",
+              "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md",
+              "bootstrap_0plus.py",
+              "engine.py",
+              "state.schema.json",
+              "test_engine.py",
+          ]
+          missing = [name for name in required if not (source / name).is_file()]
+          if missing:
+              raise SystemExit(f"STARTER_PACKAGE_FILES_MISSING: {missing}")
+          manifest = json.loads((source / "manifest.json").read_text(encoding="utf-8"))
+          if manifest.get("stable_id") != "HAIF-GPT6-PORTABLE-STARTER-20261025-004":
+              raise SystemExit("STARTER_STABLE_ID_CHANGED")
+          if manifest.get("production_id") != "HAIF-G6PS-20261025-004":
+              raise SystemExit("STARTER_PRODUCTION_ID_CHANGED")
+          with zipfile.ZipFile(archive, "w", compression=zipfile.ZIP_DEFLATED) as zf:
+              for name in required:
+                  zf.write(source / name, arcname=name)
+          with zipfile.ZipFile(archive, "r") as zf:
+              bad = zf.testzip()
+              if bad:
+                  raise SystemExit(f"ZIP_CRC_FAILURE: {bad}")
+              names = set(zf.namelist())
+              if names != set(required):
+                  raise SystemExit(f"ZIP_INVENTORY_MISMATCH: {sorted(names)}")
+              if "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md" not in names:
+                  raise SystemExit("INDEPENDENT_HOST_RECOVERY_PROTOCOL_MISSING")
+          data = archive.read_bytes()
+          receipt = {
+              "package_identity": manifest["stable_id"],
+              "production_id": manifest["production_id"],
+              "internal_package_version": manifest["version"],
+              "archive_filename": archive.name,
+              "update_mode": "REBUILT_EXISTING_PACKAGE_SAME_CANONICAL_FILENAME",
+              "bytes": len(data),
+              "sha256": hashlib.sha256(data).hexdigest(),
+              "file_count": len(required),
+              "inventory": required,
+              "zip_integrity": "PASS",
+              "real_independent_host_acceptance": "NOT_RUN"
+          }
+          Path("haif-gpt6-starter-zip-receipt.json").write_text(json.dumps(receipt, indent=2)+"\n", encoding="utf-8")
+          print(json.dumps(receipt, indent=2))
+          print("EXISTING_STARTER_ZIP_REBUILD=PASS")
+          PY
+      - name: Upload updated bytes for the existing starter ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean
+          path: |
+            haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip
+            haif-gpt6-starter-zip-receipt.json
+          if-no-files-found: error
