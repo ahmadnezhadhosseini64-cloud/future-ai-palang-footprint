@@ -3,8 +3,8 @@
 - Stable ID: `PALANG-EVT-0211-LIVE-MIRROR-SYNC-2026-10-27`
 - Production ID: `PALANG-EVT0211-2026-10-27-001`
 - Test ID: `LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001`
-- Version: 1.0.0
-- Status: REGISTERED / READ-BACK VERIFIED — full event file independently fetched and matched after creation.
+- Version: 1.0.1
+- Status: REGISTERED / READ-BACK PENDING
 - Canonical source: [LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md](../BEHAVIOR-OBSERVATORY/LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md)
 - Library mirror: `/Future AI/Palang Footprint/Master Reference Vault/Reference Documents/LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md`
 - Stable Library ID: `libfile_7ac3c9a6ec14819198eb2751e204aa48`
@@ -43,3 +43,11 @@
 ## 4. Required closure
 
 After this event is written, independently read it back and compare the full content. Bind its actual final-change Git commit timestamp in the linked time-binding record. After any further repository writes or Evidence Gate commit, rediscover main and inspect audit/conformance runs for the exact final SHA. Keep every unresolved gate OPEN.
+
+
+## 5. Additional portable-export coverage finding (2026-10-27)
+
+- Independently read current `docs/portable/RAHM/EXPORT_MANIFEST.json`: blob `5f4af3d2573bed3102d69597a398708fecd63be5`, version `1.8.22`; `live_reference_files` contains 127 entries.
+- That live-reference list does not include the current root POINT-0/038, checkpoint CURRENT-087, EVT-0211, or TIME-BINDING-EVT-0211. Its tail still ends at TIME-BINDING-CURRENT-083 plus older helper/test paths. Therefore the portable export's live-reference coverage is not aligned with the latest registered chain; registration in the repository does not by itself prove the event is included in a clean exported package.
+- Status: OPEN / NOT RECONCILED. Keep this as an existing NEXT-051 follow-through item; do not create NEXT-052. Do not bulk-rewrite the manifest in this mirror run. A separate evidence-backed manifest refresh must preserve the CURRENT-065/CURRENT-066 overlay lineage, include the current root/checkpoint/event/time-binding references, regenerate exact digests from actual bytes, and pass conformance on the exact final SHA.
+- At the time this finding was added, main was observed at `cbbe2a66858bd82d7e039f5103fa4e3c1315236a`; commit UTC `2026-10-27T06:27:31Z`; Tehran `2026-10-27T10:57:31+03:30`. This observation is time-bounded; later commits must be rediscovered.
