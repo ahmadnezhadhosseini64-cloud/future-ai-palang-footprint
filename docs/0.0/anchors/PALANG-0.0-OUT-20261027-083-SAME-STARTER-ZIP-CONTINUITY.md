@@ -27,3 +27,5 @@ The prior ZIP is confirmed updated. This continuation adds current lineage refer
 - Recovery protocol: [INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL](../../architecture/مدل%20اولیه%20AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md)
 - Package recovery protocol: [INDEPENDENT_HOST_RECOVERY_PROTOCOL.md](../../../prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md)
 - Export manifest: [EXPORT_MANIFEST.json](../../portable/RAHM/EXPORT_MANIFEST.json)
+
+Open gates: real independent AI-host import, independent reconstruction from IN and OUT, negative controls, independent read-back, and restart/persistence are OPEN / NOT VERIFIED. CI link-equivalence and ZIP build do not close these gates.
