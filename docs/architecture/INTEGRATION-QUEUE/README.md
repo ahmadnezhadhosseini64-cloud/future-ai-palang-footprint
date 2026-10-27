@@ -9,7 +9,7 @@
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: POINT-0/046 is the current interaction point; CURRENT-096 is the active 0.0 continuation. The same starter package Stable ID and canonical ZIP filename are preserved; latest prior archive receipt is verified; fresh exact-head receipt for CURRENT-096 was verified on SHA c97167348de9e0fe57b5e4a61f9051f012aea719; archive v0.3.2 is read-back verified. Real independent-host import remains NOT RUN; graph identity/parent/time adjudication remains OPEN; NEXT-051 remains the single active queue; no NEXT-052 placeholder.
+- Status: POINT-0/051 (0+) is the current production marker on canonical root 0; CURRENT-101 is the active 0.0 continuation. The same starter package Stable ID and canonical ZIP filename are preserved; latest prior archive receipt is verified; fresh exact-head receipt for CURRENT-096 was verified on SHA c97167348de9e0fe57b5e4a61f9051f012aea719; archive v0.3.2 is read-back verified. Real independent-host import remains NOT RUN; graph identity/parent/time adjudication remains OPEN; NEXT-051 remains the single active queue; no NEXT-052 placeholder.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
@@ -2313,3 +2313,12 @@ NEXT-051 remains the sole active queue. Do not create NEXT-052.
 
 
 Additional hard-audit finding: Living Architecture Audit run 40539823090 failed because a historical Point 0/006 check still required CURRENT-057 to appear in the live Reference Index and Integration Queue. That is an obsolete current-pointer assertion, not evidence that the historical files are missing. The workflow was changed to preserve/test the 0/006 historical baseline without requiring an obsolete checkpoint to remain the current pointer. Fresh exact-head audit must pass before closure.
+
+
+## CURRENT-101 — host growth and repository-return loop
+
+- Chain: POINT-0/051 (0+) → IN-089 → OUT-088 → EVT-0226 → CURRENT-101 → NEXT-051.
+- The same starter stable ID and canonical ZIP filename are preserved; source internal version advances to 0.3.6. The new host-growth contract is included in the ZIP inventory and extracted-package tests.
+- Defined path: real host producer (if available) → pair/provenance → authenticated durable intake → separately authorized GitHub worker → exact read-back → behavior evidence → RAHM gate → Child proposal → explicit approval → living Master → same-name ZIP rebuild and host refresh.
+- Current gap: host producer is not connected by the package itself; adapter says repository_write=NOT_IMPLEMENTED and worker deployment/secret are not proven. No claim of live automatic sync is allowed without receipts.
+- Fresh package build, artifact download/read-back and extracted tests are pending on the exact commit; NEXT-051 remains the only active queue.

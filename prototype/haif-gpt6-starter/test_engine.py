@@ -218,3 +218,24 @@ class PortablePackageProtocolTests(unittest.TestCase):
         checklist = (package / "FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST.md").read_text(encoding="utf-8")
         for required in ("clean interactive GPT-6 session", "live producer", "repository write-back", "restart/persistence", "NOT RUN / NOT VERIFIED"):
             self.assertIn(required.casefold(), checklist.casefold())
+
+
+class HostGrowthRepositoryContractTests(unittest.TestCase):
+    def test_growth_contract_is_packaged_and_preserves_open_host_gates(self):
+        root = Path(__file__).parent
+        contract = (root / "HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md").read_text(encoding="utf-8")
+        required = [
+            "same initial package", "canonical ZIP filename", "repository worker",
+            "read-back", "RAHM gate", "Master/Child promotion",
+            "NOT VERIFIED", "hidden chain-of-thought", "NEXT-051",
+        ]
+        for phrase in required:
+            self.assertIn(phrase.casefold(), contract.casefold())
+
+    def test_package_manifest_version_and_identity_remain_continuous(self):
+        root = Path(__file__).parent
+        manifest = json.loads((root / "manifest.json").read_text(encoding="utf-8"))
+        self.assertEqual(manifest["version"], "0.3.6")
+        self.assertEqual(manifest["supersedes"], "0.3.5")
+        self.assertEqual(manifest["stable_id"], "HAIF-GPT6-PORTABLE-STARTER-20261025-004")
+        self.assertEqual(manifest["recovery_protocol"], "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md")

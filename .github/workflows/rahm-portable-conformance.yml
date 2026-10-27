@@ -61,11 +61,11 @@ jobs:
           from urllib.parse import unquote
           root = Path(".")
           sources = {
-              "IN": root / "docs/0.0/anchors/PALANG-0.0-IN-20261027-088-DEEP-AUDIT-FIRST-HOST.md",
-              "OUT": root / "docs/0.0/anchors/PALANG-0.0-OUT-20261027-087-DEEP-AUDIT-FIRST-HOST.md",
+              "IN": root / "docs/0.0/anchors/PALANG-0.0-IN-20261027-089-HOST-GROWTH-AND-REPOSITORY-LOOP.md",
+              "OUT": root / "docs/0.0/anchors/PALANG-0.0-OUT-20261027-088-HOST-GROWTH-AND-REPOSITORY-LOOP.md",
           }
           expected = {
-              "current": "PALANG-0.0-CURRENT-20261027-100-DEEP-AUDIT-FIRST-HOST.md",
+              "current": "PALANG-0.0-CURRENT-20261027-101-HOST-GROWTH-AND-REPOSITORY-LOOP.md",
               "next": "PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md",
               "master": "سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md",
               "protocol": "INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md",
@@ -90,7 +90,7 @@ jobs:
               content = path.read_text(encoding="utf-8")
               assert "NEXT-051" in content, f"{side} recovery did not preserve the sole active queue"
               assert "NOT VERIFIED" in content or "OPEN" in content, f"{side} recovery did not preserve unresolved gates"
-          evidence = {"test_id":"RAHM-IN-OUT-LINK-EQUIVALENCE-100", "result":"PASS", "recovered_from":"IN-088 and OUT-087 independently", "canonical_state":recovered["IN"], "open_gates_preserved":True, "scope":"Only verifies linked target and checkpoint equivalence; it does not reconstruct full state or prove actual independent-host acceptance."}
+          evidence = {"test_id":"RAHM-IN-OUT-LINK-EQUIVALENCE-101", "result":"PASS", "recovered_from":"IN-089 and OUT-088 independently", "canonical_state":recovered["IN"], "open_gates_preserved":True, "scope":"Only verifies linked target and checkpoint equivalence; it does not reconstruct full state or prove actual independent-host acceptance."}
           Path("rahm-recovery-equivalence.json").write_text(json.dumps(evidence, indent=2)+"\n", encoding="utf-8")
           print(json.dumps(evidence, indent=2))
           print("IN_OUT_RECOVERY_EQUIVALENCE=PASS")
@@ -196,6 +196,7 @@ jobs:
               "GPT6_HOST_INSTRUCTIONS.md",
               "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md",
               "FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST.md",
+              "HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md",
               "bootstrap_0plus.py",
               "engine.py",
               "state.schema.json",
@@ -227,6 +228,8 @@ jobs:
                   raise SystemExit("INDEPENDENT_HOST_RECOVERY_PROTOCOL_MISSING")
               if "FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST.md" not in names:
                   raise SystemExit("FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST_MISSING")
+              if "HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md" not in names:
+                  raise SystemExit("HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT_MISSING")
           # Read back the exact ZIP contents into a clean temporary directory,
           # compare every byte with the source, then run the package tests from the
           # extracted archive (not merely from the repository source tree).

@@ -2,8 +2,8 @@
   "package_schema": "haif-gpt6-starter/0.1",
   "stable_id": "HAIF-GPT6-PORTABLE-STARTER-20261025-004",
   "production_id": "HAIF-G6PS-20261025-004",
-  "version": "0.3.5",
-  "supersedes": "0.3.4",
+  "version": "0.3.6",
+  "supersedes": "0.3.5",
   "project": "Future AI / Palang Footprint",
   "canonical_repository": "https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint",
   "parent_architecture": [
@@ -46,7 +46,13 @@
     "IN-088",
     "OUT-087",
     "EVT-0225",
-    "CURRENT-100"
+    "CURRENT-100",
+    "POINT-0/051 (0+ marker on canonical root 0)",
+    "IN-089",
+    "OUT-088",
+    "EVT-0226",
+    "CURRENT-101",
+    "HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md"
   ],
   "entrypoint": "engine.py",
   "host_instructions": "GPT6_HOST_INSTRUCTIONS.md",
@@ -68,7 +74,9 @@
     "existing starter ZIP is continuously rebuilt from this package source under the established canonical filename; exact bytes/hash receipt required",
     "same-package continuous update contract with stable identity and canonical archive filename; per-build exact-byte evidence and independent-host acceptance gates",
     "first-host transfer requires the canonical starter ZIP and the living master reference as a paired handoff",
-    "first interactive GPT-6 host acceptance checklist with explicit integrity, live-producer, repository-writeback and restart gates"
+    "first interactive GPT-6 host acceptance checklist with explicit integrity, live-producer, repository-writeback and restart gates",
+    "host growth and repository synchronization contract: interaction provenance, behavior evidence, authenticated intake, authorized repository worker, exact read-back, RAHM validation and controlled Master/Child promotion",
+    "same canonical ZIP filename and stable package identity retained across internal package versions"
   ],
   "not_proven": [
     "native GPT plugin execution",
@@ -80,7 +88,11 @@
     "real independent AI-host import and restart acceptance until direct host receipts exist",
     "updated canonical ZIP digest and artifact until a fresh workflow receipt is inspected",
     "real interactive GPT-6 import and restart until direct host receipts exist",
-    "automatic live message capture and authorized GitHub write-back from the ChatGPT session"
+    "automatic live message capture and authorized GitHub write-back from the ChatGPT session",
+    "live ChatGPT interaction producer connected to adapter",
+    "deployed and running GitHub repository worker in an authorized host environment",
+    "automatic refresh of external host after each CI build",
+    "unreviewed raw behavior data safely promoted into the living Master"
   ],
   "archive_policy": {
     "canonical_filename": "haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip",

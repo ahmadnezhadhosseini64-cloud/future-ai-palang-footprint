@@ -1,0 +1,22 @@
+# OUT-088 — خروجی: قرارداد رشد میزبان و همگام‌سازی مخزن
+
+- Stable ID: HAIF-OUT-088-HOST-GROWTH-REPOSITORY-LOOP-20261027
+- Production ID: G6IP-OUT-088
+- Status: SOURCE IMPLEMENTED / PACKAGE BUILD RECEIPT PENDING / LIVE HOST OPEN
+- Parent: [IN-089](./PALANG-0.0-IN-20261027-089-HOST-GROWTH-AND-REPOSITORY-LOOP.md)
+- Point: [POINT-0/051 (0+)](./GPT6-RAHM-USER-POINT-0-20261027-051-0PLUS-HOST-GROWTH-AND-REPOSITORY-LOOP.md)
+- Current checkpoint: [CURRENT-101](./PALANG-0.0-CURRENT-20261027-101-HOST-GROWTH-AND-REPOSITORY-LOOP.md)
+- Queue: [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
+- Package contract: [HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md](../../../prototype/haif-gpt6-starter/HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md)
+
+## Implemented in source
+- Defined the host → evidence capture → durable queue → authorized GitHub worker → read-back → behavior classification → RAHM validation → Master/Child decision loop.
+- Added an in-package contract and tests for the update-in-place identity, source-of-truth, privacy, evidence and open-gate rules.
+- Advanced the internal package version to 0.3.6 while preserving the same stable ID and canonical ZIP filename.
+- Updated the existing canonical ZIP build workflow to include the contract and test the extracted archive.
+- Repointed the portable conformance link-equivalence check to IN-089 / OUT-088 / CURRENT-101.
+
+## Not yet proven
+- A fresh exact-head workflow must build, upload, download and verify the same-name ZIP and its SHA-256.
+- A real interactive AI host must import the ZIP + living mother, produce a synthetic interaction receipt, use an authorized repository connection, and prove exact write/read-back.
+- Live capture, autonomous background operation, durable cross-session host memory and restart persistence remain OPEN / NOT VERIFIED.

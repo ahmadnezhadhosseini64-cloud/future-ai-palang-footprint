@@ -1,4 +1,4 @@
-# HAIF GPT-6 Portable Starter v0.3.5
+# HAIF GPT-6 Portable Starter v0.3.6
 
 This is the updated release of the existing HAIF starter package, not a separate project. It updates the existing v0.3.0 0/0+ bootstrap package at the same stable package identity and canonical ZIP filename; history and prior digests remain preserved. It does not replace the living master, historical anchors or NEXT-051.
 
@@ -12,7 +12,8 @@ This is the updated release of the existing HAIF starter package, not a separate
 - Portable bundle export/import with SHA-256 verification, atomic local writes and validated read-back.
 - Independent-host recovery protocol included in this package: exact package digest, clean-host import, independent reconstruction from IN and OUT, negative controls, read-back and restart/persistence acceptance.
 - First interactive GPT-6 host acceptance checklist included; separates archive portability from real host import, live message capture, repository write-back and restart proof.
-- Current continuation reference: POINT-0/050 (0+ marker on canonical root 0) → IN-088 → OUT-087 → EVT-0225 → CURRENT-100 → NEXT-051; older 0+ markers remain historical.
+- Host-growth/repository-sync contract included; defines behavior evidence, authorized repo return, RAHM validation and controlled Master/Child promotion.
+- Current continuation reference: POINT-0/051 (0+ marker on canonical root 0) → IN-089 → OUT-088 → EVT-0226 → CURRENT-101 → NEXT-051; older 0+ markers remain historical.
 
 ## Bootstrap
 ~~~bash
@@ -36,7 +37,7 @@ python3 -m unittest -v
 The engine refuses to overwrite existing state/import targets. Original user-message time remains null unless supplied by a verified integration. Repository commit time is separate UTC evidence; Tehran time is derived from the same instant.
 
 ## Bring it into GPT-6
-1. Read GPT6_HOST_INSTRUCTIONS.md and INDEPENDENT_HOST_RECOVERY_PROTOCOL.md.
+1. Read GPT6_HOST_INSTRUCTIONS.md, INDEPENDENT_HOST_RECOVERY_PROTOCOL.md and HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md.
 2. Upload the canonical living master reference from docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md together with this ZIP. The mother is the architecture authority; the ZIP is the portable starter/runtime package.
 2. Upload the manifest, instructions, recovery protocol and latest living master / CURRENT checkpoint / NEXT-051 where supported.
 3. Verify portable bundle digest before reuse.
@@ -44,6 +45,10 @@ The engine refuses to overwrite existing state/import targets. Original user-mes
 5. After a new session, follow the startup/recovery sequence and save actual receipts.
 
 An uploaded instruction file alone is not a native plugin and does not provide automatic memory, live message capture or background execution.
+
+## Same-package growth contract
+
+`HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md` defines how the same package grows from real host interactions and returns validated evidence to the repository. It does not claim the interactive host producer or GitHub worker is already deployed. Those require direct acceptance receipts.
 
 ## Acceptance scope
 CI tests validate the local engine and protocol presence. CI is not proof of actual independent AI-host acceptance. Real host import, negative controls, independent read-back and restart need direct evidence.

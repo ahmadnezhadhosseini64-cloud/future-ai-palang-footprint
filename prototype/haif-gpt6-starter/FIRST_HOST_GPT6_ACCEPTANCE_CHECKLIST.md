@@ -3,7 +3,7 @@
 Package identity: `HAIF-GPT6-PORTABLE-STARTER-20261025-004`
 Canonical ZIP filename: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`
 Paired handoff: canonical ZIP + current living master reference.
-Current source chain: POINT-0/050 (0+ marker on canonical root 0) → IN-088 → OUT-087 → EVT-0225 → CURRENT-100 → NEXT-051.
+Current source chain: POINT-0/051 (0+ marker on canonical root 0) → IN-089 → OUT-088 → EVT-0226 → CURRENT-101 → NEXT-051.
 
 ## A. Before import
 - [ ] Record exact source commit, internal package version, ZIP byte count and SHA-256 from the fresh workflow receipt.
@@ -37,3 +37,11 @@ Current source chain: POINT-0/050 (0+ marker on canonical root 0) → IN-088 →
 
 ## Status boundary
 A CI build, a local engine test, or two independent CI runners do not prove that an interactive GPT-6 host imported the package. Until this checklist has direct host evidence, real host acceptance is `NOT RUN / NOT VERIFIED`.
+
+
+## F. Controlled learning and package growth
+- [ ] Verify HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md is present in the received ZIP and exact inventory.
+- [ ] Use a synthetic interaction only; verify input/output IDs, provenance, behavior evidence and digest.
+- [ ] Test authenticated intake, idempotent retry, conflicting replay rejection, durable restart and exact repository read-back.
+- [ ] Confirm candidate insights remain Child proposals until RAHM validation and explicit approval.
+- [ ] After a new package build, refresh the same canonical ZIP plus living mother and verify the host's imported digest.
