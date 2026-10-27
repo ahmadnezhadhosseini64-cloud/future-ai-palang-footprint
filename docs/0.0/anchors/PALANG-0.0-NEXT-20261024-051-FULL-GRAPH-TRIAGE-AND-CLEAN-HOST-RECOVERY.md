@@ -9,6 +9,9 @@
 - Current checkpoint: [CURRENT-101](PALANG-0.0-CURRENT-20261027-101-HOST-GROWTH-AND-REPOSITORY-LOOP.md)
 - Current point: [POINT-0/051 (0+)](GPT6-RAHM-USER-POINT-0-20261027-051-0PLUS-HOST-GROWTH-AND-REPOSITORY-LOOP.md)
 - Living mother: [سند مرجع مادر مدل اولیه](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
+- Historical recovery checkpoint A: [CURRENT-059 — deep audit and corrected conformance](PALANG-0.0-CURRENT-20261025-059-DEEP-AUDIT-AND-CORRECTED-CONFORMANCE.md)
+- Historical recovery checkpoint B: [CURRENT-059 — deep excavation and no silent gap](PALANG-0.0-CURRENT-20261025-059-DEEP-EXCAVATION-AND-NO-SILENT-GAP.md)
+- CURRENT-059 pointer relation: AMBIGUOUS until provenance and consumers resolve which record owns each relation.
 - Package contract: [HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md](../../../prototype/haif-gpt6-starter/HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md)
 - Canonical ZIP filename: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`
 - Stable package ID: `HAIF-GPT6-PORTABLE-STARTER-20261025-004`
@@ -80,3 +83,15 @@ The package source has been advanced to v0.3.6 and the growth/synchronization co
 ## Path-content repair note
 
 The previous blob at this path began with the Integration Queue README title and lacked the expected NEXT-051 stable identity. It has been preserved without byte modification at `docs/architecture/INTEGRATION-QUEUE/FORENSIC-ORIGINAL-BLOB-FROM-NEXT-051-PATH-20261027.md`. The small reconciliation record documents the move. This archive is forensic preservation, not a second active queue.
+
+
+## Explicitly preserved open gates
+
+- Full state recovery: OPEN / NOT VERIFIED.
+- Clean host import: OPEN / NOT RUN.
+- Second host import: OPEN / NOT RUN.
+- Persistence and restart recovery: OPEN / NOT VERIFIED.
+- Idle/background execution: OPEN / NOT PROVEN.
+- Graph triage and CURRENT-065/CURRENT-066 / duplicate CURRENT-059 pointer reconciliation: OPEN; preserve ambiguity until evidence resolves it.
+
+These gates are intentionally listed in the active queue so recovery validators can distinguish an explicitly preserved gap from a missing or silently closed gap.
