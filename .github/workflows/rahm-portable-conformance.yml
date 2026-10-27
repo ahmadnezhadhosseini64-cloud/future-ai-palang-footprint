@@ -186,7 +186,7 @@ jobs:
         if: always()
         run: |
           python - <<'PY'
-          import hashlib, json, zipfile
+          import hashlib, json, os, zipfile
           from pathlib import Path
           source = Path("prototype/haif-gpt6-starter")
           archive = Path("haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip")
