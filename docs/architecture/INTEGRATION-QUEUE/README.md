@@ -3,7 +3,7 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.9.8
+- Version: 1.9.9
 - Date: 2026-10-27
 - Exact Time: 11:25 local project time, minute precision; exact seconds not captured.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
@@ -2137,3 +2137,11 @@ The current root is [POINT-0/027](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261
 - [EVT-0210](../BEHAVIOR-TRACE/EVT-0210-POINT-0-038-EXACT-SHA-VALIDATION-AND-MANIFEST-REPAIR-2026-10-27.md) records Living Architecture Audit and Portable RAHM Conformance PASS on exact SHA df89fd802bb3142611a719e0e22b2d5ad03a420f.
 - [EVT-0210 time binding](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0210-POINT-0-038-2026-10-27.md) — UTC 2026-10-27T04:19:13Z; Tehran 07:49:13 +03:30.
 - CURRENT-087 refreshed binding — UTC 2026-10-27T04:19:28Z; Tehran 07:49:28 +03:30.
+
+## EVT-0211 — Mirror sync evidence (2026-10-27)
+
+- Root/checkpoint/sole active queue: [POINT-0/038](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-038-TEMPORARY-GAP-COVER-AND-GOAL-EXECUTION.md) → [CURRENT-087](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-087-GOAL-EXECUTION-WITH-TEMPORARY-COVER.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Mirror event: [EVT-0211](../BEHAVIOR-TRACE/EVT-0211-LIVE-MIRROR-SYNC-RECHECK-2026-10-27.md); time binding: [TIME-BINDING-EVT-0211](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0211-LIVE-MIRROR-SYNC-2026-10-27.md).
+- Source blob unchanged; Library version ID 7 differs only by one additional trailing LF (edit distance 1, semantic fields match). No Library rewrite was made because no supported source_file_ref/export-snapshot upload route was available. Canonical source remains authoritative.
+- At the start of this registration, main was `9124fd841f357889bdc5c8604effb7cb368b56cc`; the most recent full audit/conformance pair was successful only on `77cb3b725d493cf92af6a95d4b7a00888fbdb7bc`. New registration commits advance main; the final head remains NOT VERIFIED until the exact-SHA pair passes.
+- CURRENT-065/CURRENT-066 overlay-manifest lineage, two unresolved parent edges, identity/duplicate groups, Issues #20/#21, and external-host acceptance remain OPEN/NOT RUN as applicable. NEXT-051 remains the sole queue; no NEXT-052.
