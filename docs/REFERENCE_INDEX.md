@@ -1913,8 +1913,8 @@ Verified current package receipt: run 40507481687 on SHA `c6af49386493f5c542336d
 
 ## CURRENT-098 — same ZIP, exact read-back and extracted-package test
 
-- [POINT-0/048 (0+)](docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-048-SAME-ZIP-READBACK-AND-CONTINUOUS-UPDATE.md): production marker on existing root, not a new canonical root.
-- [IN-086](docs/0.0/anchors/PALANG-0.0-IN-20261027-086-SAME-ZIP-READBACK-AND-CONTINUOUS-UPDATE.md) → [OUT-085](docs/0.0/anchors/PALANG-0.0-OUT-20261027-085-SAME-ZIP-READBACK-AND-CONTINUOUS-UPDATE.md) → [EVT-0223](docs/architecture/BEHAVIOR-TRACE/EVT-0223-SAME-ZIP-READBACK-AND-CONTINUOUS-UPDATE-2026-10-27.md) → [CURRENT-098](docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-098-SAME-ZIP-READBACK-AND-CONTINUOUS-UPDATE.md).
+- [POINT-0/048 (0+)](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-048-SAME-ZIP-READBACK-AND-CONTINUOUS-UPDATE.md): production marker on existing root, not a new canonical root.
+- [IN-086](0.0/anchors/PALANG-0.0-IN-20261027-086-SAME-ZIP-READBACK-AND-CONTINUOUS-UPDATE.md) → [OUT-085](0.0/anchors/PALANG-0.0-OUT-20261027-085-SAME-ZIP-READBACK-AND-CONTINUOUS-UPDATE.md) → [EVT-0223](architecture/BEHAVIOR-TRACE/EVT-0223-SAME-ZIP-READBACK-AND-CONTINUOUS-UPDATE-2026-10-27.md) → [CURRENT-098](0.0/anchors/PALANG-0.0-CURRENT-20261027-098-SAME-ZIP-READBACK-AND-CONTINUOUS-UPDATE.md).
 - Existing canonical archive filename and package stable ID are unchanged. Previous successful archive receipt remains historical evidence; new digest must be obtained from the fresh run.
 - Fresh workflow commit: `08155ef02f30533558b2396848e9772621b865ba`; run [40517444577](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40517444577) was QUEUED at checkpoint creation. The new gate extracts the archive, compares all eight files byte-for-byte, and executes tests from the extracted package.
 - Real independent-host acceptance and restart persistence remain OPEN / NOT RUN. NEXT-051 is still the sole active queue.
