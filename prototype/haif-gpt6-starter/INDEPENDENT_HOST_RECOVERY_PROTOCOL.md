@@ -1,8 +1,8 @@
 # Independent-host recovery proof protocol
 
-Package version: 0.3.1
+Package version: 0.3.3
 Project: Future AI / Palang Footprint
-Canonical chain: POINT-0/043 (0+ marker) → POINT-0/044 (canonical 0) → IN-082 → OUT-081 → EVT-0219 → CURRENT-094 → NEXT-051
+Canonical chain: POINT-0/043 (0+ marker) → POINT-0/044 (canonical 0) → IN-082 → OUT-081 → EVT-0219 → CURRENT-097 → NEXT-051
 
 ## Purpose
 Prove that a genuinely separate AI host can reconstruct the project from the package without relying on this chat's hidden history. Repository presence, a CI pass, or a runtime-to-runtime test is not independent-host acceptance.
