@@ -359,3 +359,19 @@ NEXT-051 remains OPEN/LIVING until all remaining acceptance gates are satisfied;
 - New chain still needs read-back/link validation, manifest inclusion with exact-byte digest, and paired audit/conformance on one exact final SHA.
 - Real clean-host import/cold recovery is NOT RUN; second-host, actual persistence restart, and idle/background runtime behavior remain NOT VERIFIED. CURRENT-065/CURRENT-066 and Issues #20/#21 remain OPEN. Buffer/Persistent Memory not verified; Dropbox open/not verified.
 - No NEXT-052; no speculative merge, renumbering or deletion.
+
+
+## POINT-0/043 — independent-host recovery hard audit and ZIP remediation (2026-10-27)
+
+- Current chain: [POINT-0/043](./GPT6-RAHM-USER-POINT-0-20261027-043-INDEPENDENT-HOST-RECOVERY-HARD-AUDIT.md) → [IN-080](./PALANG-0.0-IN-20261027-080-INDEPENDENT-HOST-RECOVERY.md) → [OUT-079](./PALANG-0.0-OUT-20261027-079-INDEPENDENT-HOST-RECOVERY.md) → [EVT-0217](../../architecture/BEHAVIOR-TRACE/EVT-0217-INDEPENDENT-HOST-RECOVERY-HARD-AUDIT-2026-10-27.md) → [CURRENT-092](./PALANG-0.0-CURRENT-20261027-092-INDEPENDENT-HOST-RECOVERY.md).
+- Proof protocol: [INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL](../../architecture/مدل%20اولیه%20AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md).
+- [x] Root cause confirmed in run [40477792889](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40477792889): pinned NEXT-051 digest stale; expected SHA-256 c12cb9be6d1053fefcfb8c3167539b63c5aa4c6f8b9f0d49609f289b9d60287c, actual f16a86cabd85b0173d7b4585532148e4a08f11a11916cdaa1dcf34213e5e8bfe over 52,372 bytes; ZIP build/upload skipped.
+- [x] Manifest v1.8.23 reclassifies NEXT-051 and the portable-conformance workflow as live references; adds POINT-0/043, IN-080, OUT-079, EVT-0217, CURRENT-092 and the recovery protocol to the portable ZIP inventory.
+- [x] Portable conformance recovery inputs changed from stale IN-055 / OUT-054 / CURRENT-062 to IN-080 / OUT-079 / CURRENT-092; test checks current queue, living mother, protocol, manifest and preservation of open gates.
+- [x] New point, input, output, event, checkpoint, protocol, mother, index, queue and manifest were fetched for repository read-back. This is repository read-back, not a claim of real-host acceptance.
+- [ ] Fresh portable-conformance workflow receipt on one exact final SHA, including all exact-byte digests and successful ZIP build/upload. No current artifact is marked delivered until the run receipt and artifact are inspected.
+- [ ] Clean independent AI-host import with no prior chat context, negative controls and independent read-back.
+- [ ] Second host and durable restart/persistence test.
+- [ ] Continue individual identity, parent-edge and timestamp adjudication; preserve all unresolved findings.
+
+Status remains OPEN / LIVING / NOT COMPLETE. CI or synthetic runtime transfer is not a substitute for real independent AI-host acceptance. Do not create NEXT-052.
