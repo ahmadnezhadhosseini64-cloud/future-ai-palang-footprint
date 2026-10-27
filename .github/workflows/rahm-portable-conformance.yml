@@ -78,8 +78,8 @@ jobs:
                   matches = [link for link in links if link.split("#", 1)[0].endswith(suffix)]
                   assert matches, f"{side} recovery missing {key} target {suffix}"
                   state[key] = suffix
-              if key == "protocol":
-                  assert "independent-host" in content.casefold() or "independent host" in content.casefold(), f"{side} recovery missing host-proof protocol declaration"
+                  if key == "protocol":
+                      assert "independent-host" in content.casefold() or "independent host" in content.casefold(), f"{side} recovery missing host-proof protocol declaration"
               assert "open" in content.casefold() or "not verified" in content.casefold(), f"{side} recovery did not preserve open gates"
               recovered[side] = state
           assert recovered["IN"] == recovered["OUT"], f"IN/OUT recovery mismatch: {recovered}"
