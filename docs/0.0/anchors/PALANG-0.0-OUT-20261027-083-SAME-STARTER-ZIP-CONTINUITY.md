@@ -29,3 +29,12 @@ The prior ZIP is confirmed updated. This continuation adds current lineage refer
 - Export manifest: [EXPORT_MANIFEST.json](../../portable/RAHM/EXPORT_MANIFEST.json)
 
 Open gates: real independent AI-host import, independent reconstruction from IN and OUT, negative controls, independent read-back, and restart/persistence are OPEN / NOT VERIFIED. CI link-equivalence and ZIP build do not close these gates.
+
+
+## Exact verified v0.3.2 archive receipt — run 40507481687
+- Tested source SHA: `c6af49386493f5c542336d54511f66085c1b7906`; paired Living Architecture Audit and Portable RAHM Conformance both PASS on that same SHA.
+- Workflow: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40507481687
+- Artifact ID: `12735876293`; outer artifact wrapper 19,842 bytes, SHA-256 `39e11184ca4c3cb4a3255c8a2678af7b9d8057afe447b08d6dcd7a7d36df7722`.
+- Downloaded and inspected nested canonical ZIP: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`, 19,242 bytes, SHA-256 `861be3d9998e96c8588d03642f70d01a6e2060b7b5056f45ef50008fc6f61da4`; ZIP CRC PASS; 8-file inventory; internal version 0.3.2; stable package ID unchanged.
+- Starter tests succeeded in CI (16 tests); real independent-host acceptance remains NOT RUN.
+- The tested SHA is the source revision for this receipt; later evidence-ledger commits do not alter the ZIP bytes. Do not claim the external host gate passed.

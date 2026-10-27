@@ -443,3 +443,10 @@ Status remains OPEN / LIVING / NOT COMPLETE. CI or synthetic runtime transfer is
 - [ ] Verify new exact-head paired audit/conformance and inspect the rebuilt ZIP artifact after CURRENT-096 source/manifest lineage update.
 - [ ] Actual independent-host import, separate IN/OUT reconstruction, negative controls, read-back and restart persistence remain OPEN / NOT RUN.
 - No NEXT-052.
+
+
+## CURRENT-096 verified package receipt
+- Same canonical filename rebuilt with internal version 0.3.2 and unchanged Stable ID.
+- Tested SHA `c6af49386493f5c542336d54511f66085c1b7906`; paired audit/conformance PASS.
+- Nested ZIP 19,242 bytes; SHA-256 `861be3d9998e96c8588d03642f70d01a6e2060b7b5056f45ef50008fc6f61da4`; 8 files; CRC PASS; 16/16 tests PASS.
+- Real independent-host acceptance and restart/persistence remain NOT RUN. Keep this queue active; no NEXT-052.

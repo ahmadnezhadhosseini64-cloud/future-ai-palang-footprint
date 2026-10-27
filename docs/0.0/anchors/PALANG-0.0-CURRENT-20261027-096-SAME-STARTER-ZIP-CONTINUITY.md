@@ -24,11 +24,21 @@
 - [x] Rebuild the canonical ZIP from the same source folder through the existing CI workflow.
 - [x] Inspect the downloaded artifact, nested archive, file inventory and ZIP CRC.
 - [x] Confirm internal version 0.3.1 and recovery protocol is present.
-- [ ] Update current package manifest's parent lineage and rerun the same-package build for this new checkpoint.
-- [ ] Read back the exact-head artifact receipt, ZIP hash, size, inventory and test output.
+- [x] Updated the same package manifest lineage to POINT-0/046 / CURRENT-096; internal version advanced to 0.3.2 without changing Stable ID or canonical ZIP filename.
+- [x] Fresh exact-head paired audit/conformance passed on tested SHA c6af49386493f5c542336d54511f66085c1b7906.
+- [x] Read back the exact-head artifact receipt, ZIP hash, size, inventory and test output: run 40507481687; nested ZIP 19,242 bytes; SHA-256 861be3d9998e96c8588d03642f70d01a6e2060b7b5056f45ef50008fc6f61da4; 8 files; ZIP CRC PASS; 16/16 CI tests PASS.
 - [ ] Resolve the intentional filename-vs-internal-version label discrepancy without breaking canonical filename continuity.
 - [ ] Import into a genuinely independent AI host with no prior chat context; reconstruct separately from IN and OUT.
 - [ ] Negative controls, independent read-back and cold restart/persistence.
 - [ ] Preserve unresolved identity/parent conflicts and all other open gaps.
 
 This checkpoint does not claim the new exact-head ZIP is built until the workflow for the commit containing CURRENT-096 completes. Actual independent-host acceptance remains OPEN / NOT RUN. NEXT-051 remains the sole active queue; do not create NEXT-052.
+
+
+## Exact verified v0.3.2 archive receipt — run 40507481687
+- Tested source SHA: `c6af49386493f5c542336d54511f66085c1b7906`; paired Living Architecture Audit and Portable RAHM Conformance both PASS on that same SHA.
+- Workflow: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40507481687
+- Artifact ID: `12735876293`; outer artifact wrapper 19,842 bytes, SHA-256 `39e11184ca4c3cb4a3255c8a2678af7b9d8057afe447b08d6dcd7a7d36df7722`.
+- Downloaded and inspected nested canonical ZIP: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`, 19,242 bytes, SHA-256 `861be3d9998e96c8588d03642f70d01a6e2060b7b5056f45ef50008fc6f61da4`; ZIP CRC PASS; 8-file inventory; internal version 0.3.2; stable package ID unchanged.
+- Starter tests succeeded in CI (16 tests); real independent-host acceptance remains NOT RUN.
+- The tested SHA is the source revision for this receipt; later evidence-ledger commits do not alter the ZIP bytes. Do not claim the external host gate passed.

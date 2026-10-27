@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-27 — POINT-0/046 → IN-084 → OUT-083 → EVT-0221 → CURRENT-096; same-package architecture retained; exact-head ZIP receipt pending; NEXT-051 remains sole active queue; real-host acceptance OPEN.
+**Last Updated:** 2026-10-27 — POINT-0/046 → IN-084 → OUT-083 → EVT-0221 → CURRENT-096; same-name starter ZIP v0.3.2 built and read-back verified; NEXT-051 remains sole active queue; real-host acceptance OPEN.
 
 ## Canonical References
 
@@ -1891,3 +1891,6 @@ Canonical ZIP: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`; internal pa
 | HAIF-IHRP-001 | `prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md` | Independent host recovery protocol in the same package |
 
 Verified prior canonical ZIP: 19,042 bytes, SHA-256 `3a17f64880519a0da714f09a1dc8065fafcd88321fa5674eb2d995dfd8f63e83`; artifact wrapper SHA-256 is a different digest. Fresh exact-head build required after this checkpoint's source/manifest changes. Real independent-host acceptance remains NOT RUN.
+
+
+Verified current package receipt: run 40507481687 on SHA `c6af49386493f5c542336d54511f66085c1b7906`; canonical nested ZIP 19,242 bytes, SHA-256 `861be3d9998e96c8588d03642f70d01a6e2060b7b5056f45ef50008fc6f61da4`; 8 files; 16/16 CI tests PASS. Independent host acceptance remains NOT RUN.
