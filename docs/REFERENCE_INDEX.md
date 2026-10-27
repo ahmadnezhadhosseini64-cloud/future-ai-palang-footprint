@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-27 — POINT-0/049 (0+ marker on canonical root) → IN-087 → OUT-086 → EVT-0224 → CURRENT-099 → NEXT-051; paired first-host transfer contract; ZIP v0.3.4 verified on run 40528951992; 20,075 bytes; SHA-256 2ae583a3029d489e636439133b40e24a480754f6b569ada475694abad97c7f3b; 17/17 tests and artifact round-trip PASS; real-host acceptance OPEN.
+**Last Updated:** 2026-10-27 — POINT-0/049 (0+ marker on canonical root) → IN-087 → OUT-086 → EVT-0224 → CURRENT-099 → NEXT-051; paired first-host transfer contract; ZIP v0.3.4 verified; paired transfer artifact run 40529591695 PASS; canonical ZIP 20,075 bytes, SHA-256 2ae583a3029d489e636439133b40e24a480754f6b569ada475694abad97c7f3b; 17/17 tests; paired mother read-back PASS; real-host acceptance OPEN.
 
 ## Canonical References
 
@@ -1953,3 +1953,12 @@ Previous verified ZIP v0.3.3: run 40518292922; 19,268 bytes; SHA-256 fa226aab5a3
 - Exact ZIP SHA-256: 2ae583a3029d489e636439133b40e24a480754f6b569ada475694abad97c7f3b
 - ZIP CRC/inventory: PASS; source-byte read-back: PASS; uploaded artifact downloaded back and matched: PASS; tests from extracted ZIP: 17/17 PASS.
 - Real independent GPT-6 host acceptance, live message capture, durable memory and restart persistence: NOT RUN / NOT VERIFIED.
+
+
+## Verified paired first-host transfer artifact
+
+- Workflow run: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40529591695 — PASS.
+- Artifact ID: 12745013747; artifact wrapper size 82,318 bytes; wrapper digest SHA-256 d8d6b2fda9b4aba690d74a7a0bb1606bed18d755cddd35693a976d92390ad66c.
+- The artifact contains the canonical ZIP, its exact-byte receipt, and the current living master file. Downloaded master was compared byte-for-byte with the repository master: PAIRED_LIVING_MASTER_ARTIFACT_READBACK=PASS.
+- Inner canonical ZIP remains 20,075 bytes, SHA-256 2ae583a3029d489e636439133b40e24a480754f6b569ada475694abad97c7f3b; internal version 0.3.4; 17/17 tests PASS; ZIP/artifact round-trip PASS.
+- This proves package and paired-file transfer integrity, not acceptance by a real independent GPT-6 host.
