@@ -209,3 +209,11 @@
 - رسید آخرین اجرای ثبت‌شده: [Living Architecture Audit](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40352514664) و [Portable RAHM Conformance](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40352514736) روی SHA `94dbe8fd68234fb5ebc28a15471a87352fc5c67b) هر دو موفق‌اند؛ آزمون موتور آغازین ۱۳ مورد را گذرانده است.
 - [بستهٔ قابل‌استخراج RAHM](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40352514736/artifacts/12664931042) در حال حاضر از artifact اجرای GitHub Actions قابل دریافت است؛ artifact موقت است، پس منبع پایدار همچنان کد و manifestهای داخل مخزن‌اند.
 - آزمون واقعی میزبان بیرونی، restart و round-trip هنوز NOT RUN است و فقط با رسید تولیدشده از خود میزبان بسته می‌شود.
+
+
+## New-host handoff — POINT-0/040
+
+- [NEW-HOST-BOOTSTRAP-2026-10-27.md](./NEW-HOST-BOOTSTRAP-2026-10-27.md): standalone boot contract to import the initial model into a clean AI host without relying on previous chat context.
+- [POINT-0/040](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-040-INITIAL-MODEL-NEW-HOST-HANDOFF.md) and [CURRENT-089](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-089-INITIAL-MODEL-NEW-HOST-HANDOFF.md) preserve the handoff chain.
+- Reuse the existing executable [HAIF GPT-6 Starter](../../../prototype/haif-gpt6-starter/README.md); do not fork a competing engine.
+- Status: bootstrap document registered; exact export-manifest coverage and exact-head audit/conformance must still be verified. Real independent-host acceptance remains NOT RUN.
