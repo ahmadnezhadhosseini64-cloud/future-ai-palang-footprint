@@ -1791,3 +1791,9 @@ Both Path A (portable initial model and independent-host recovery) and Path B (e
 | HAIF-POINT-0-039 | docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-039-MIRROR-SYNC-AND-ARCHITECTURE-CONTINUATION.md | User-designated continuation root for mirror sync and architecture follow-through | REGISTERED / ACTIVE / LIVING / OPEN; CURRENT-088 and NEXT-051 remain execution path |
 | HAIF-EVT-0212 | docs/architecture/BEHAVIOR-TRACE/EVT-0212-POINT-0-039-REGISTRATION-AND-ARCHITECTURE-CONTINUATION-2026-10-27.md | Event linking POINT-0/039, IN-076, OUT-075 and CURRENT-088 | REGISTERED / OPEN; exact-final-SHA validation remains required |
 | HAIF-CURRENT-088 | docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-088-POINT-0-039-EXECUTION.md | Active checkpoint for deterministic continuation under NEXT-051 | ACTIVE / LIVING / OPEN / EXECUTION REQUIRED |
+
+
+| HAIF-POINT-0-040 | docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-040-INITIAL-MODEL-NEW-HOST-HANDOFF.md | New-host handoff root for the initial model | REGISTERED / ACTIVE / LIVING / OPEN; exact-final-SHA validation and real-host acceptance pending |
+| HAIF-EVT-0213 | docs/architecture/BEHAVIOR-TRACE/EVT-0213-INITIAL-MODEL-NEW-HOST-HANDOFF-2026-10-27.md | Event linking the new-host handoff chain | REGISTERED / OPEN; manifest coverage and paired validation pending |
+| HAIF-CURRENT-089 | docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-089-INITIAL-MODEL-NEW-HOST-HANDOFF.md | Current checkpoint for portable model transfer | ACTIVE / LIVING / OPEN / ACCEPTANCE REQUIRED |
+| HAIF-NEW-HOST-BOOTSTRAP-20261027-001 | docs/architecture/مدل اولیه AI/NEW-HOST-BOOTSTRAP-2026-10-27.md | Standalone clean-host startup, recovery, governance and acceptance contract | READY FOR CONTROLLED TRIAL; real-host acceptance NOT RUN |
