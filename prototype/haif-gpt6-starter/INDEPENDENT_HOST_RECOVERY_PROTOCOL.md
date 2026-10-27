@@ -2,7 +2,7 @@
 
 Package version: 0.3.1
 Project: Future AI / Palang Footprint
-Canonical chain: POINT-0/043 (0+) → IN-081 → OUT-080 → EVT-0218 → CURRENT-093 → NEXT-051
+Canonical chain: POINT-0/043 (0+ marker) → POINT-0/044 (canonical 0) → IN-082 → OUT-081 → EVT-0219 → CURRENT-094 → NEXT-051
 
 ## Purpose
 Prove that a genuinely separate AI host can reconstruct the project from the package without relying on this chat's hidden history. Repository presence, a CI pass, or a runtime-to-runtime test is not independent-host acceptance.
@@ -28,3 +28,7 @@ PASS requires direct evidence for package hash, complete inventory, clean host i
 - Automatic message capture and background execution: NOT PROVEN.
 
 Never mark a host gate PASS from documentation alone.
+
+
+## Existing ZIP replacement identity
+The deliverable is the existing starter package continuously updated under the canonical filename `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`; do not publish a second version-named ZIP. The historic v0.3.0 digest (297b3b329143c4b99f55373db0c4bb97896b0e484253622e63eeb32a4429f164) is historical only. The updated archive must carry a fresh digest and byte count from its own build receipt.
