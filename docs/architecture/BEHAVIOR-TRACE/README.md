@@ -944,3 +944,12 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - [EVT-0213](./EVT-0213-INITIAL-MODEL-NEW-HOST-HANDOFF-2026-10-27.md) links [POINT-0/040](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-040-INITIAL-MODEL-NEW-HOST-HANDOFF.md), IN-077, OUT-076 and CURRENT-089.
 - Host bootstrap: [NEW-HOST-BOOTSTRAP](../مدل%20اولیه%20AI/NEW-HOST-BOOTSTRAP-2026-10-27.md).
 - Existing starter reused; external-host acceptance remains NOT RUN. NEXT-051 remains sole active queue.
+
+
+## EVT-0213 — POINT-0/040 Initial Model Transfer and Hard Audit — 2026-10-27
+
+- [EVT-0213](./EVT-0213-POINT-0-040-INITIAL-MODEL-TRANSFER-AND-HARD-AUDIT-2026-10-27.md): transfer model for a new AI host and hard architecture audit.
+- Root: [POINT-0/040](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-040-INITIAL-MODEL-TRANSFER-AND-ARCHITECTURE-HARD-AUDIT.md); checkpoint: [CURRENT-089](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-089-INITIAL-MODEL-TRANSFER-EXECUTION.md).
+- Contract: [host transfer bootstrap](../../portable/RAHM/INITIAL-MODEL-HOST-TRANSFER-BOOTSTRAP-2026-10-27.md); prompt: [receiving-host prompt](../../portable/RAHM/HOST-BOOTSTRAP-PROMPT-2026-10-27.md).
+- NEXT-051 remains the sole queue. CURRENT-065/CURRENT-066 and Issues #20/#21 remain open until source-backed acceptance evidence resolves them.
+- Exact-final-main audit/conformance, independent host import and cold recovery are not claimed by this registration.
