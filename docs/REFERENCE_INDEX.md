@@ -1763,3 +1763,11 @@ Both Path A (portable initial model and independent-host recovery) and Path B (e
 - Chain: [IN-075](0.0/anchors/PALANG-0.0-IN-20261027-075-TEMPORARY-GAP-COVER.md) → [OUT-074](0.0/anchors/PALANG-0.0-OUT-20261027-074-GOAL-EXECUTION.md) → [EVT-0209](architecture/BEHAVIOR-TRACE/EVT-0209-TEMPORARY-GAP-COVER-AND-GOAL-EXECUTION-2026-10-27.md) → [CURRENT-087](0.0/anchors/PALANG-0.0-CURRENT-20261027-087-GOAL-EXECUTION-WITH-TEMPORARY-COVER.md).
 - Covered does not mean closed: graph gaps remain OPEN/UNRESOLVED; the Recovery Bridge is not the missing original parent.
 - Path A host tests remain NOT RUN without direct host receipts; NEXT-051 remains the sole active queue.
+
+
+### Canonical time bindings — POINT-0/038
+- [POINT-0/038 UTC/Tehran binding](architecture/BEHAVIOR-TRACE/TIME-BINDING-POINT-0-038-2026-10-27.md) — 2026-10-27T04:11:51Z / 07:41:51 Tehran.
+- [IN-075 UTC/Tehran binding](architecture/BEHAVIOR-TRACE/TIME-BINDING-IN-075-POINT-0-038-2026-10-27.md) — 2026-10-27T04:11:55Z / 07:41:55 Tehran.
+- [OUT-074 UTC/Tehran binding](architecture/BEHAVIOR-TRACE/TIME-BINDING-OUT-074-POINT-0-038-2026-10-27.md) — 2026-10-27T04:11:59Z / 07:41:59 Tehran.
+- [EVT-0209 UTC/Tehran binding](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0209-POINT-0-038-2026-10-27.md) — 2026-10-27T04:12:03Z / 07:42:03 Tehran.
+- [CURRENT-087 UTC/Tehran binding](architecture/BEHAVIOR-TRACE/TIME-BINDING-CURRENT-087-POINT-0-038-2026-10-27.md) — 2026-10-27T04:12:06Z / 07:42:06 Tehran.
