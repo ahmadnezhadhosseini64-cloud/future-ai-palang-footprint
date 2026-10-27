@@ -907,3 +907,11 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Chain: [IN-073](../../0.0/anchors/PALANG-0.0-IN-20261026-073-0PLUS-MODEL-ACCELERATION.md) → [OUT-072](../../0.0/anchors/PALANG-0.0-OUT-20261026-072-0PLUS-MODEL-ACCELERATION.md) → [EVT-0207](./EVT-0207-POINT-0-036-0PLUS-MODEL-ACCELERATION-2026-10-26.md) → [CURRENT-085](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-085-0PLUS-MODEL-ACCELERATION.md).
 - Time bindings: [POINT-0/036 0+](./TIME-BINDING-POINT-0-036-0PLUS-2026-10-26.md), [IN-073](./TIME-BINDING-IN-073-POINT-0-036-2026-10-26.md), [OUT-072](./TIME-BINDING-OUT-072-POINT-0-036-2026-10-26.md), [EVT-0207](./TIME-BINDING-EVT-0207-POINT-0-036-2026-10-26.md), [CURRENT-085](./TIME-BINDING-CURRENT-085-POINT-0-036-2026-10-26.md).
 - Evidence: audit run [40352514664](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40352514664) and portable conformance [40352514736](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40352514736), both successful on SHA `94dbe8fd68234fb5ebc28a15471a87352fc5c67b`.
+
+
+## POINT-0/038 canonical repository time bindings
+- [POINT-0/038](./TIME-BINDING-POINT-0-038-2026-10-27.md) — UTC 2026-10-27T04:11:51Z; Tehran 07:41:51 +03:30.
+- [IN-075](./TIME-BINDING-IN-075-POINT-0-038-2026-10-27.md) — UTC 2026-10-27T04:11:55Z; Tehran 07:41:55 +03:30.
+- [OUT-074](./TIME-BINDING-OUT-074-POINT-0-038-2026-10-27.md) — UTC 2026-10-27T04:11:59Z; Tehran 07:41:59 +03:30.
+- [EVT-0209](./TIME-BINDING-EVT-0209-POINT-0-038-2026-10-27.md) — UTC 2026-10-27T04:12:03Z; Tehran 07:42:03 +03:30.
+- [CURRENT-087](./TIME-BINDING-CURRENT-087-POINT-0-038-2026-10-27.md) — UTC 2026-10-27T04:12:06Z; Tehran 07:42:06 +03:30.
