@@ -15,4 +15,4 @@
 
 User intent: audit all 0 / 0.0 / 0+ relations; verify the original ZIP is actually updated in place; establish whether it is complete and transferable; prepare the first interactive GPT-6 host using the canonical ZIP and living mother together; enable controlled capture, provenance, behavior evidence and authorized repository return.
 
-0+ is a highlight on the same canonical root 0, not a second root. Preserve all prior anchors and hashes. Do not treat a CI-only cross-runtime transfer as real GPT-6 host acceptance.
+0+ is a highlight on the same canonical root 0, not a second root. Preserve all prior anchors and hashes. Open gates are preserved: actual GPT-6 import, live producer, repository write-back and restart/persistence remain OPEN / NOT VERIFIED. Do not treat a CI-only cross-runtime transfer as real GPT-6 host acceptance.
