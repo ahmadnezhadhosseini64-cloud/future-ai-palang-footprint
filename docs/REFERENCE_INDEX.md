@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-27 — POINT-0/043 (0+) → IN-081 → OUT-080 → EVT-0218 → CURRENT-093; NEXT-051 remains the sole active queue; package build receipt and real-host acceptance remain OPEN.
+**Last Updated:** 2026-10-27 — POINT-0/043 (0+ marker) → POINT-0/044 (0.0 continuation anchor) → IN-082 → OUT-081 → EVT-0219 → CURRENT-094; NEXT-051 remains the sole active queue; ZIP build/read-back verified, real-host acceptance remains OPEN.
 
 ## Canonical References
 
