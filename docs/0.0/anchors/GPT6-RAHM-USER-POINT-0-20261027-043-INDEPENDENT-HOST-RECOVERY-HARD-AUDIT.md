@@ -3,7 +3,8 @@
 - Stable ID: HAIF-POINT-0-043-INDEPENDENT-HOST-RECOVERY-20261027
 - Production ID: G6IP-POINT-043
 - Version: 1.0.0
-- Status: REGISTERED / LIVING / OPEN GATES PRESERVED
+- Status: REGISTERED / LIVING / 0+ PRODUCTION MARKER / OPEN GATES PRESERVED
+- Canonical point identity: 0 with 0+ as production marker on the same point; not a separate root.
 - Chain: POINT-0/042 → POINT-0/043 → IN-080 → OUT-079 → EVT-0217 → CURRENT-092 → NEXT-051
 - Protocol: [Independent-host recovery proof](../architecture/مدل%20اولیه%20AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md)
 - Active queue: [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
@@ -34,3 +35,8 @@
 5. ادامهٔ داوری گراف در NEXT-051.
 
 ثبت یا نوشتن ≠ بازخوانی؛ بازخوانی ≠ اعتبارسنجی؛ موفقیت CI ≠ پذیرش میزبان خارجی.
+
+
+## 0+ correction — existing starter ZIP package
+
+The previous step updated documentation and the RAHM export manifest only; it did not update the initial starter ZIP. This correction advances the existing starter package line from v0.3.0 to v0.3.1 under the same stable package ID, includes the independent-host recovery protocol inside the package, and preserves the old digest as historical evidence. The next 0.0 continuation is CURRENT-093; build receipt and ZIP digest remain pending until a fresh workflow run is inspected.

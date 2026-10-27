@@ -175,3 +175,19 @@ class HaifStarterEngineTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
+
+
+class PortablePackageProtocolTests(unittest.TestCase):
+    def test_package_manifest_is_version_031_and_keeps_existing_stable_id(self):
+        package = Path(__file__).parent
+        manifest = json.loads((package / "manifest.json").read_text(encoding="utf-8"))
+        self.assertEqual(manifest["version"], "0.3.1")
+        self.assertEqual(manifest["supersedes"], "0.3.0")
+        self.assertEqual(manifest["stable_id"], "HAIF-GPT6-PORTABLE-STARTER-20261025-004")
+        self.assertEqual(manifest["recovery_protocol"], "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md")
+
+    def test_independent_host_protocol_preserves_acceptance_boundaries(self):
+        package = Path(__file__).parent
+        protocol = (package / "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md").read_text(encoding="utf-8")
+        for required in ("clean host", "Negative controls", "Independent read-back", "Restart/persistence", "NOT RUN"):
+            self.assertIn(required.casefold(), protocol.casefold())

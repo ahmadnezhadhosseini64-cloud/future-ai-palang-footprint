@@ -2,7 +2,8 @@
   "package_schema": "haif-gpt6-starter/0.1",
   "stable_id": "HAIF-GPT6-PORTABLE-STARTER-20261025-004",
   "production_id": "HAIF-G6PS-20261025-004",
-  "version": "0.3.0",
+  "version": "0.3.1",
+  "supersedes": "0.3.0",
   "project": "Future AI / Palang Footprint",
   "canonical_repository": "https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint",
   "parent_architecture": [
@@ -11,10 +12,16 @@
     "CURRENT-069",
     "NEXT-051",
     "POINT-0/024",
-    "CURRENT-071"
+    "CURRENT-071",
+    "POINT-0/043 (0+ marker)",
+    "IN-081",
+    "OUT-080",
+    "EVT-0218",
+    "CURRENT-093"
   ],
   "entrypoint": "engine.py",
   "host_instructions": "GPT6_HOST_INSTRUCTIONS.md",
+  "recovery_protocol": "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md",
   "state_schema": "haif-gpt-starter-state/0.1",
   "portable_bundle_schema": "haif-portable-bundle/0.1",
   "runtime": "Python 3.10+ standard library",
@@ -27,7 +34,8 @@
     "atomic local state writes and read-back verification",
     "canonical point identity with non-duplicating 0+ production marker and parent-linked 0.0 continuation",
     "point state reconciled against append-only POINT_REGISTERED events; tampering and self-parenting rejected",
-    "one-command bootstrap for canonical 0/0+ root, parent-linked 0.0 continuation and six explicit open capability gaps"
+    "one-command bootstrap for canonical 0/0+ root, parent-linked 0.0 continuation and six explicit open capability gaps",
+    "independent-host recovery protocol with clean-host import, IN/OUT reconstruction, negative controls and restart acceptance gates"
   ],
   "not_proven": [
     "native GPT plugin execution",
@@ -35,6 +43,7 @@
     "background or idle execution",
     "independent host durable memory",
     "external repository writes without a connector",
-    "cross-device persistence"
+    "cross-device persistence",
+    "real independent AI-host import and restart acceptance until direct host receipts exist"
   ]
 }

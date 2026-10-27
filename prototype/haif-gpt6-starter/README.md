@@ -1,52 +1,47 @@
-# HAIF GPT-6 Portable Starter v0.3.0
+# HAIF GPT-6 Portable Starter v0.3.1
 
-This is an executable starter package inside the existing Future AI / Palang Footprint repository. It is not a separate project and does not replace the living master, historical anchors or NEXT-051.
+This is the updated release of the existing HAIF starter package, not a separate project. It extends the v0.3.0 0/0+ bootstrap package at the same source-package line; history and prior digests remain preserved. It does not replace the living master, historical anchors or NEXT-051.
 
 ## What is implemented
 - Standard-library Python continuity engine.
 - Independent anchor, IN, OUT and event identifiers for each interaction pair.
-- Canonical point identity with aliases/markers: `0` and `0+` can be two labels on the same point; `0+` is not a duplicate point.
-- One-command `bootstrap_0plus.py` creates the `0/0+` root, its linked `0.0` continuation, and six explicitly OPEN host-capability gaps; it refuses to overwrite existing state.
-- Parent-linked `0.0` continuation checkpoints, with collision and lineage checks.
-- Append-only hash-linked event chain with tamper detection.
-- Explicit OPEN gap register; closure requires a passing test ID, exact tested revision and evidence reference.
-- Master → Child proposal and promotion gate; promotion without passing evidence is rejected.
-- Portable bundle export/import with SHA-256 verification.
-- Atomic local writes and validated read-back.
+- Canonical point identity: 0 and 0+ are labels on the same point; 0+ is not a duplicate point.
+- One-command bootstrap creates the 0/0+ root, linked 0.0 continuation and six explicitly OPEN host-capability gaps; it refuses to overwrite existing state.
+- Parent-linked 0.0 continuation checkpoints, collision and lineage checks, append-only hash-linked events and tamper detection.
+- Evidence-gated gap closure and Master → Child promotion.
+- Portable bundle export/import with SHA-256 verification, atomic local writes and validated read-back.
+- Independent-host recovery protocol included in this package: exact package digest, clean-host import, independent reconstruction from IN and OUT, negative controls, read-back and restart/persistence acceptance.
+- Current continuation reference: POINT-0/043 (0+) → IN-081 → OUT-080 → EVT-0218 → CURRENT-093 → NEXT-051.
 
-## One-command initial bootstrap
-
+## Bootstrap
 ~~~bash
 python3 bootstrap_0plus.py --state ./haif-state.json
 python3 engine.py --state ./haif-state.json audit
 python3 engine.py --state ./haif-state.json export > ./haif-portable-bundle.json
 ~~~
 
-The bootstrap does not pretend the target host has capabilities it has not demonstrated. It preserves six host/runtime gates as OPEN.
+The bootstrap preserves six host/runtime gates as OPEN.
 
 ## Run locally
-From this directory:
-
 ~~~bash
 python3 engine.py --state ./haif-state.json init
 python3 engine.py --state ./haif-state.json record --input "user input" --output "assistant output"
-python3 engine.py --state ./haif-state.json gap --title "Independent host import" --description "Not yet verified"
 python3 engine.py --state ./haif-state.json audit
 python3 engine.py --state ./haif-state.json export > haif-portable-bundle.json
 python3 engine.py --state ./imported-state.json import haif-portable-bundle.json
 python3 -m unittest -v
 ~~~
 
-The engine refuses to overwrite an existing state/import target. Original user-message time is left null unless an actual timestamp is provided through a verified integration. A repository commit timestamp is not substituted for it.
+The engine refuses to overwrite existing state/import targets. Original user-message time remains null unless supplied by a verified integration. Repository commit time is separate UTC evidence; Tehran time is derived from the same instant.
 
 ## Bring it into GPT-6
-1. Open GPT6_HOST_INSTRUCTIONS.md and copy its text into the host's instruction/configuration area where supported.
-2. Upload manifest.json, this README, and the current living master / CURRENT checkpoint / NEXT-051 as knowledge files if file upload is supported.
-3. Keep a copy of the exported portable bundle as state; verify its digest before reuse.
-4. If the host has a GitHub connector, grant only the permissions needed and point it to the canonical repository. Otherwise it cannot commit changes by itself; use the engine locally and import/export files.
-5. After a new session, begin with the Startup / recovery sequence in the instructions.
+1. Read GPT6_HOST_INSTRUCTIONS.md and INDEPENDENT_HOST_RECOVERY_PROTOCOL.md.
+2. Upload the manifest, instructions, recovery protocol and latest living master / CURRENT checkpoint / NEXT-051 where supported.
+3. Verify portable bundle digest before reuse.
+4. Use only authorized repository connectors; otherwise use the local engine and import/export files.
+5. After a new session, follow the startup/recovery sequence and save actual receipts.
 
-An uploaded instruction file alone is not a native plugin and does not provide automatic memory, live message capture or background execution. Those require a real host adapter and permissioned runtime.
+An uploaded instruction file alone is not a native plugin and does not provide automatic memory, live message capture or background execution.
 
 ## Acceptance scope
-Tests in test_engine.py cover independent IDs, tamper detection, evidence-gated gap closure, evidence-gated Child promotion, portable round-trip/tamper detection and local file read-back. CI results must be read from the exact tested revision before these are described as passing.
+CI tests validate the local engine and protocol presence. CI is not proof of actual independent AI-host acceptance. Real host import, negative controls, independent read-back and restart need direct evidence.
