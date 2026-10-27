@@ -937,3 +937,10 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Root: [POINT-0/039](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-039-MIRROR-SYNC-AND-ARCHITECTURE-CONTINUATION.md); interaction chain IN-076 → OUT-075 → EVT-0212 → CURRENT-088.
 - Preserve all previous roots and collision lineage. NEXT-051 remains the sole active queue; no NEXT-052.
 - The current HEAD and latest exact-SHA audit/conformance pair must be freshly rediscovered after these writes. Do not infer that prior workflow receipts cover new commits.
+
+
+## EVT-0213 — Initial Model New-Host Handoff — 2026-10-27
+
+- [EVT-0213](./EVT-0213-INITIAL-MODEL-NEW-HOST-HANDOFF-2026-10-27.md) links [POINT-0/040](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-040-INITIAL-MODEL-NEW-HOST-HANDOFF.md), IN-077, OUT-076 and CURRENT-089.
+- Host bootstrap: [NEW-HOST-BOOTSTRAP](../مدل%20اولیه%20AI/NEW-HOST-BOOTSTRAP-2026-10-27.md).
+- Existing starter reused; external-host acceptance remains NOT RUN. NEXT-051 remains sole active queue.
