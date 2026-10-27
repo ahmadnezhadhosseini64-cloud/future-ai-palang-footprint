@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-27 — POINT-0/050 (0+ marker on canonical root) → IN-088 → OUT-087 → EVT-0225 → CURRENT-100 → NEXT-051; v0.3.4 ZIP + living mother paired artifact verified; hard audit found stale IN-084/OUT-083/CURRENT-096 conformance pointer; v0.3.5 build pending; real GPT-6 host acceptance OPEN.
+**Last Updated:** 2026-10-27 — POINT-0/050 (0+ marker on canonical root) → IN-088 → OUT-087 → EVT-0225 → CURRENT-100 → NEXT-051; v0.3.5 ZIP + paired living mother verified (22,896 bytes; SHA-256 0b5c6e512b498ddf3a6c50b0eda65b669930c9059a069da7152c7745ef02a8f7; 18/18 tests); stale conformance target corrected; actual GPT-6 host acceptance OPEN.
 
 ## Canonical References
 
@@ -1976,3 +1976,11 @@ Previous verified ZIP v0.3.3: run 40518292922; 19,268 bytes; SHA-256 fa226aab5a3
 | HAIF-GPT6-FIRST-HOST-CHECKLIST | `prototype/haif-gpt6-starter/FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST.md` | import, integrity, IN/OUT, live producer, write-back and restart acceptance gates |
 
 Current verdict: v0.3.4 is a verified transferable artifact, but the requested interactive host architecture is not complete until real GPT-6 receipts prove import, live producer behavior, authorized repository write-back and restart recovery. Package source v0.3.5 must pass exact-head CI and artifact read-back before its ZIP is called verified.
+
+
+## CURRENT-100 verified v0.3.5 handoff
+- Canonical ZIP: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`; stable package ID unchanged.
+- Run [40539499813](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40539499813); 22,896 bytes; SHA-256 `0b5c6e512b498ddf3a6c50b0eda65b669930c9059a069da7152c7745ef02a8f7`; 18/18 extracted tests PASS; source-byte comparison and artifact round-trip PASS.
+- Paired ZIP + living master artifact ID `12749462911`; wrapper digest `114282bdbd0c1b919a18adbbde8e28739e06213af5cb24e50033c319f76aa3f8`; master byte-readback PASS.
+- Graph audit run [40539499870](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40539499870): 10 missing local links; 23 stable-ID collision groups (1 open), 74 production-ID collision groups (72 open), 5 reference-ID collision groups. These remain tracked in NEXT-051.
+- Real interactive GPT-6 import, automatic live capture, repository write-back and restart/persistence: NOT RUN / NOT VERIFIED.

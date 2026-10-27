@@ -2,7 +2,7 @@
 
 - Stable ID: HAIF-OUT-087-DEEP-AUDIT-FIRST-HOST-20261027
 - Production ID: G6IP-OUT-087
-- Status: REPOSITORY HARD AUDIT RECORDED / v0.3.4 ARTIFACT VERIFIED / LIVE HOST GAP OPEN
+- Status: REPOSITORY HARD AUDIT RECORDED / v0.3.5 ZIP + PAIRED MASTER ARTIFACT VERIFIED / LIVE HOST GAP OPEN
 - Parent: [IN-088](./PALANG-0.0-IN-20261027-088-DEEP-AUDIT-FIRST-HOST.md)
 - Point: [POINT-0/050 (0+)](./GPT6-RAHM-USER-POINT-0-20261027-050-0PLUS-DEEP-AUDIT-FIRST-HOST.md)
 - Current checkpoint: [CURRENT-100](./PALANG-0.0-CURRENT-20261027-100-DEEP-AUDIT-FIRST-HOST.md)
@@ -26,3 +26,12 @@
 - Full readiness is therefore NOT COMPLETE until direct host receipts prove import, independent reconstruction, negative controls, restart, and permitted write-back.
 
 The next package source revision is v0.3.5 in the same package line, with the same canonical archive filename and stable identity. It must be rebuilt and verified by the workflow; do not claim it exists as a verified ZIP until the fresh run succeeds.
+
+
+## Repository-wide graph audit (run 40539499870)
+- paths_with_0.0: 539; checkpoint_paths: 62; EVT files: 272; reference-document paths: 146; local-link edges: 8,365.
+- Missing local links: 10.
+- Stable ID collision groups: 23 (22 reviewed, 1 unreviewed/open; no rekey-required stable groups).
+- Production ID collision groups: 74 (72 unreviewed/open; 2 reviewed).
+- Reference ID collision groups: 5.
+- These counts are audit inventory, not a reason to mass-delete or renumber historical records. NEXT-051 retains them as open remediation work.
