@@ -350,3 +350,12 @@ NEXT-051 remains OPEN/LIVING until all remaining acceptance gates are satisfied;
 - Last observed prior main HEAD was 9636b11bacb0ee010ac4bc71ffafdb4b8a592e4b; paired tests cited before this continuation passed on 8007ea3acc218d78065fd8ed78a55c71be38df59. These are different SHAs. Re-discover current main and run audit plus conformance on the same final SHA before claiming current-head validation.
 - Independent AI-host import/cold recovery: NOT RUN. Buffer/Persistent Memory: NOT VERIFIED. Dropbox: OPEN / NOT VERIFIED. CURRENT-065/CURRENT-066 and Issues #20/#21 remain OPEN.
 - NEXT-051 remains the sole active queue; do not create NEXT-052.
+
+## POINT-0/042 — gap versus goal focus
+
+- Root: [POINT-0/042](./GPT6-RAHM-USER-POINT-0-20261027-042-NEXT-051-GAP-AND-FOCUS-CLARIFICATION.md); checkpoint: [CURRENT-091](./PALANG-0.0-CURRENT-20261027-091-NEXT-051-GAP-FOCUS.md).
+- Chain: [IN-079](./PALANG-0.0-IN-20261027-079-NEXT-051-GAP-AND-FOCUS-CLARIFICATION.md) → [OUT-078](./PALANG-0.0-OUT-20261027-078-NEXT-051-GAP-AND-FOCUS-CLARIFICATION.md) → [EVT-0216](../../architecture/BEHAVIOR-TRACE/EVT-0216-POINT-042-NEXT-051-GAP-FOCUS-CLARIFICATION-2026-10-27.md).
+- Decision: NEXT-051 remains the sole active queue, but every repository task must be tied to the primary goal of portable model reconstruction and real independent-host recovery. Repository checks are means, not the destination.
+- New chain still needs read-back/link validation, manifest inclusion with exact-byte digest, and paired audit/conformance on one exact final SHA.
+- Real clean-host import/cold recovery is NOT RUN; second-host, actual persistence restart, and idle/background runtime behavior remain NOT VERIFIED. CURRENT-065/CURRENT-066 and Issues #20/#21 remain OPEN. Buffer/Persistent Memory not verified; Dropbox open/not verified.
+- No NEXT-052; no speculative merge, renumbering or deletion.
