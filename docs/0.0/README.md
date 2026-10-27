@@ -1750,3 +1750,12 @@ The canonical chain is [POINT-0/032](./anchors/GPT6-RAHM-USER-POINT-0-20261026-0
 - Interaction chain: [IN-074](anchors/PALANG-0.0-IN-20261026-074-PORTABLE-HOST-READINESS.md) → [OUT-073](anchors/PALANG-0.0-OUT-20261026-073-PORTABLE-HOST-READINESS.md) → [EVT-0208](../architecture/BEHAVIOR-TRACE/EVT-0208-POINT-0-037-PORTABLE-HOST-READINESS-2026-10-26.md) → [CURRENT-086](anchors/PALANG-0.0-CURRENT-20261026-086-PORTABLE-HOST-READINESS.md).
 - State: portable package ready for a controlled host trial; real interactive-host import/restart/persistence/round-trip NOT RUN. Path B retains 2 unresolved parent edges and open identity groups.
 - Existing global queue: [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md); no parallel queue.
+
+
+## POINT-0/038 — Temporary gap cover and goal execution (2026-10-27)
+
+- Root: [POINT-0/038](anchors/GPT6-RAHM-USER-POINT-0-20261027-038-TEMPORARY-GAP-COVER-AND-GOAL-EXECUTION.md).
+- Interaction chain: [IN-075](anchors/PALANG-0.0-IN-20261027-075-TEMPORARY-GAP-COVER.md) → [OUT-074](anchors/PALANG-0.0-OUT-20261027-074-GOAL-EXECUTION.md) → [EVT-0209](../architecture/BEHAVIOR-TRACE/EVT-0209-TEMPORARY-GAP-COVER-AND-GOAL-EXECUTION-2026-10-27.md) → [CURRENT-087](anchors/PALANG-0.0-CURRENT-20261027-087-GOAL-EXECUTION-WITH-TEMPORARY-COVER.md).
+- Path A continues toward real-host import and I1–I8 validation; actual host import/restart/persistence/round-trip remain NOT RUN until direct receipts exist.
+- Path B gaps are COVERED_FOR_CONTINUITY / REVERSIBLE only; underlying issues remain OPEN / UNRESOLVED. The existing Recovery Bridge remains the cover for two missing-parent edges.
+- [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md) remains the sole active queue; no competing queue created.
