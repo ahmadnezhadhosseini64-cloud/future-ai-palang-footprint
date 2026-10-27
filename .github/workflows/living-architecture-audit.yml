@@ -242,26 +242,14 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          python3 -m unittest discover -s prototype/haif-gpt6-starter -p 'test_engine.py' -v | tee audit-output/haif-gpt6-starter-tests.txt
+          python3 -m unittest discover -s prototype/haif-gpt6-starter -p 'test_engine.py' -v 2>&1 | tee audit-output/haif-gpt6-starter-tests.txt
           python3 -m py_compile prototype/haif-gpt6-starter/engine.py
           python3 -m json.tool prototype/haif-gpt6-starter/manifest.json >/dev/null
           python3 -m json.tool prototype/haif-gpt6-starter/state.schema.json >/dev/null
           echo "HAIF_GPT6_STARTER_ENGINE_TESTS=PASS"
           mkdir -p audit-output
-          rm -rf prototype/haif-gpt6-starter/__pycache__
-          (cd prototype/haif-gpt6-starter && zip -r ../../audit-output/haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip . -x '__pycache__/*' '*.pyc')
-          sha256sum audit-output/haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip | tee audit-output/haif-gpt6-starter-zip-sha256.txt
-          python3 - <<'PY'
-          import zipfile
-          from pathlib import Path
-          p = Path('audit-output/haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip')
-          with zipfile.ZipFile(p) as z:
-              names = z.namelist()
-              assert 'engine.py' in names and 'manifest.json' in names and 'INDEPENDENT_HOST_RECOVERY_PROTOCOL.md' in names
-              assert not any('__pycache__' in n or n.endswith('.pyc') for n in names)
-              print(f'PACKAGE_MEMBER_COUNT={len(names)}')
-              print('PACKAGE_LAYOUT_AND_CLEANLINESS=PASS')
-          PY
+          echo "CANONICAL_ZIP_BUILD_AND_DIGEST_ARE_PRODUCED_BY_PORTABLE_CONFORMANCE_WORKFLOW" 
+          echo "This audit validates source/tests only; it does not emit a second archive with potentially different bytes."
 
       - name: Upload inspectable audit evidence
         if: always()
