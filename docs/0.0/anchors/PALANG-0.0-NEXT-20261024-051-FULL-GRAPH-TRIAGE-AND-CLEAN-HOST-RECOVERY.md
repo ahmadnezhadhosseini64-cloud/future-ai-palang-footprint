@@ -423,3 +423,12 @@ Status remains OPEN / LIVING / NOT COMPLETE. CI or synthetic runtime transfer is
 - Nested archive: 19,042 bytes; SHA-256 `3a17f64880519a0da714f09a1dc8065fafcd88321fa5674eb2d995dfd8f63e83`; 8 files; protocol included; ZIP integrity PASS; tests 16/16 PASS.
 - Open: filename version label mismatch; real independent-host import; negative controls; read-back; restart persistence.
 - NEXT-051 remains the sole active queue. Do not create NEXT-052.
+
+
+## CURRENT-095 — verified initial ZIP continuity
+
+- Current interaction chain: POINT-0/045 → IN-083 → OUT-082 → EVT-0220 → CURRENT-095 → NEXT-051.
+- The original canonical ZIP has a verified replacement build under the same filename `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`; internal version 0.3.1; stable package ID unchanged.
+- Workflow 40489753805; artifact ID 12726786662; size 19,042 bytes; SHA-256 `3a17f64880519a0da714f09a1dc8065fafcd88321fa5674eb2d995dfd8f63e83`; fresh-extraction tests 16/16 PASS; CRC and 8-file inventory PASS.
+- Remaining mandatory gap: actual import into a genuinely independent AI host, reconstruct from IN and OUT separately, negative controls, independent read-back and cold restart/persistence. Do not infer these from CI.
+- Continue modifying the same source package and rebuilding the same canonical ZIP. NEXT-051 remains the only active queue; do not create NEXT-052.
