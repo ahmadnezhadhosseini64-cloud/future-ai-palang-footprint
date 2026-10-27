@@ -42,3 +42,10 @@ This checkpoint does not claim the new exact-head ZIP is built until the workflo
 - Downloaded and inspected nested canonical ZIP: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`, 19,242 bytes, SHA-256 `861be3d9998e96c8588d03642f70d01a6e2060b7b5056f45ef50008fc6f61da4`; ZIP CRC PASS; 8-file inventory; internal version 0.3.2; stable package ID unchanged.
 - Starter tests succeeded in CI (16 tests); real independent-host acceptance remains NOT RUN.
 - The tested SHA is the source revision for this receipt; later evidence-ledger commits do not alter the ZIP bytes. Do not claim the external host gate passed.
+
+
+## Latest exact-head build receipt — v0.3.2
+- Paired CI on SHA `c97167348de9e0fe57b5e4a61f9051f012aea719`: [Portable RAHM Conformance 40507927671](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40507927671) PASS and [Living Architecture Audit 40507927480](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40507927480) PASS.
+- Downloaded artifact ID `12735088499`; outer wrapper 19,841 bytes, SHA-256 `ec7d6e280fefc34272cff6cce96f16a0bb8ed48f7b718263e1662c8b5e701394`.
+- Nested canonical ZIP: 19,242 bytes; SHA-256 `861be3d9998e96c8588d03642f70d01a6e2060b7b5056f45ef50008fc6f61da4`; 8 members; CRC PASS; internal version 0.3.2; stable package ID unchanged; 16/16 starter tests PASS in CI.
+- Real independent-host import, negative controls at a separate host, independent read-back and restart/persistence remain OPEN / NOT RUN.

@@ -9,7 +9,7 @@
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: POINT-0/046 is the current interaction point; CURRENT-096 is the active 0.0 continuation. The same starter package Stable ID and canonical ZIP filename are preserved; latest prior archive receipt is verified; fresh exact-head receipt for CURRENT-096 was verified on SHA c6af49386493f5c542336d54511f66085c1b7906; archive v0.3.2 is read-back verified. Real independent-host import remains NOT RUN; graph identity/parent/time adjudication remains OPEN; NEXT-051 remains the single active queue; no NEXT-052 placeholder.
+- Status: POINT-0/046 is the current interaction point; CURRENT-096 is the active 0.0 continuation. The same starter package Stable ID and canonical ZIP filename are preserved; latest prior archive receipt is verified; fresh exact-head receipt for CURRENT-096 was verified on SHA c97167348de9e0fe57b5e4a61f9051f012aea719; archive v0.3.2 is read-back verified. Real independent-host import remains NOT RUN; graph identity/parent/time adjudication remains OPEN; NEXT-051 remains the single active queue; no NEXT-052 placeholder.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
@@ -2252,3 +2252,10 @@ NEXT-051 remains the sole active queue; no NEXT-052.
 - Workflow [40507481687](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40507481687), paired audit [40507482427](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40507482427), same tested SHA `c6af49386493f5c542336d54511f66085c1b7906`.
 - Canonical ZIP `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`, internal version 0.3.2, 19,242 bytes, SHA-256 `861be3d9998e96c8588d03642f70d01a6e2060b7b5056f45ef50008fc6f61da4`; 8 files; ZIP CRC PASS; 16/16 tests PASS.
 - Independent AI-host import/restart remains OPEN / NOT RUN.
+
+
+## Latest exact-head build receipt — v0.3.2
+- Paired CI on SHA `c97167348de9e0fe57b5e4a61f9051f012aea719`: [Portable RAHM Conformance 40507927671](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40507927671) PASS and [Living Architecture Audit 40507927480](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40507927480) PASS.
+- Downloaded artifact ID `12735088499`; outer wrapper 19,841 bytes, SHA-256 `ec7d6e280fefc34272cff6cce96f16a0bb8ed48f7b718263e1662c8b5e701394`.
+- Nested canonical ZIP: 19,242 bytes; SHA-256 `861be3d9998e96c8588d03642f70d01a6e2060b7b5056f45ef50008fc6f61da4`; 8 members; CRC PASS; internal version 0.3.2; stable package ID unchanged; 16/16 starter tests PASS in CI.
+- Real independent-host import, negative controls at a separate host, independent read-back and restart/persistence remain OPEN / NOT RUN.
