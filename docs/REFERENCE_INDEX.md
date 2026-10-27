@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-27 — POINT-0/050 (0+ marker on canonical root) → IN-088 → OUT-087 → EVT-0225 → CURRENT-100 → NEXT-051; v0.3.5 ZIP + paired living mother verified (22,896 bytes; SHA-256 0b5c6e512b498ddf3a6c50b0eda65b669930c9059a069da7152c7745ef02a8f7; 18/18 tests); stale conformance target corrected; actual GPT-6 host acceptance OPEN.
+**Last Updated:** 2026-10-27 — POINT-0/053 (0+ marker on canonical root 0) → IN-091 → OUT-090 → EVT-0228 → CURRENT-103 → NEXT-051; v0.3.7 canonical ZIP verified (30,573 bytes; SHA-256 fcc09933dd67ca1300af051e14dbcf80c76b6f620dc6c9623323caca307969fb; 11 files; 23/23 tests); source now targets v0.3.8 under the same stable ID and canonical filename; duplicate numbered graph records remain OPEN; real-host acceptance OPEN.
 
 ## Canonical References
 

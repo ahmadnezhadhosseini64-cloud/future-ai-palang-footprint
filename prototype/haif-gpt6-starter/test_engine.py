@@ -205,7 +205,7 @@ class PortablePackageProtocolTests(unittest.TestCase):
     def test_manifest_declares_paired_first_host_transfer_and_current_audit_chain(self):
         package = Path(__file__).parent
         manifest = json.loads((package / "manifest.json").read_text(encoding="utf-8"))
-        self.assertEqual(manifest["version"], "0.3.7")
+        self.assertEqual(manifest["version"], "0.3.8")
         self.assertIn("POINT-0/049 (0+ marker on canonical point 0)", manifest["parent_architecture"])
         self.assertIn("CURRENT-099", manifest["parent_architecture"])
         self.assertIn("POINT-0/050 (0+ marker on canonical root 0)", manifest["parent_architecture"])
@@ -214,6 +214,8 @@ class PortablePackageProtocolTests(unittest.TestCase):
         self.assertIn("CURRENT-101", manifest["parent_architecture"])
         self.assertIn("POINT-0/052 (0+ marker on canonical root 0)", manifest["parent_architecture"])
         self.assertIn("CURRENT-102", manifest["parent_architecture"])
+        self.assertIn("POINT-0/053 (0+ marker on canonical root 0)", manifest["parent_architecture"])
+        self.assertIn("CURRENT-103", manifest["parent_architecture"])
         self.assertIn("POINT-0/053 (0+ marker on canonical root 0)", manifest["parent_architecture"])
         self.assertIn("CURRENT-103", manifest["parent_architecture"])
         self.assertIn("INTERACTION-RESPONSE-AND-ANCHOR-PROTOCOL.md", manifest["parent_architecture"])
@@ -251,8 +253,8 @@ class HostGrowthRepositoryContractTests(unittest.TestCase):
     def test_package_manifest_version_and_identity_remain_continuous(self):
         root = Path(__file__).parent
         manifest = json.loads((root / "manifest.json").read_text(encoding="utf-8"))
-        self.assertEqual(manifest["version"], "0.3.7")
-        self.assertEqual(manifest["supersedes"], "0.3.6")
+        self.assertEqual(manifest["version"], "0.3.8")
+        self.assertEqual(manifest["supersedes"], "0.3.7")
         self.assertEqual(manifest["stable_id"], "HAIF-GPT6-PORTABLE-STARTER-20261025-004")
         self.assertEqual(manifest["recovery_protocol"], "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md")
 
@@ -268,7 +270,7 @@ class InteractionResponseAnchorProtocolTests(unittest.TestCase):
         root = Path(__file__).parent
         manifest = json.loads((root / "manifest.json").read_text(encoding="utf-8"))
         protocol = (root / "INTERACTION-RESPONSE-AND-ANCHOR-PROTOCOL.md").read_text(encoding="utf-8")
-        self.assertEqual(manifest["version"], "0.3.7")
+        self.assertEqual(manifest["version"], "0.3.8")
         self.assertEqual(manifest["stable_id"], "HAIF-GPT6-PORTABLE-STARTER-20261025-004")
         self.assertEqual(manifest["archive_policy"]["canonical_filename"], "haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip")
         self.assertIn("actual host integration", protocol.casefold())
