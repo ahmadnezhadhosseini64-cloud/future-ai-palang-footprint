@@ -384,3 +384,13 @@ Status remains OPEN / LIVING / NOT COMPLETE. CI or synthetic runtime transfer is
 - The recovery protocol is included inside the same starter package family. The existing audit workflow now creates the versioned ZIP from a clean package root, excludes Python cache files and prints exact SHA-256.
 - Build receipt and artifact validation remain OPEN until a fresh workflow run passes and its artifact is inspected.
 - Real independent AI-host import and restart persistence remain NOT RUN / NOT VERIFIED.
+
+
+## POINT-0/044 — Existing starter ZIP in-place update
+
+- Chain: [POINT-0/044](./GPT6-RAHM-USER-POINT-0-20261027-044-STARTER-ZIP-INPLACE-UPDATE.md) → [IN-082](./PALANG-0.0-IN-20261027-082-STARTER-ZIP-INPLACE-UPDATE.md) → [OUT-081](./PALANG-0.0-OUT-20261027-081-STARTER-ZIP-INPLACE-UPDATE.md) → [EVT-0219](../../architecture/BEHAVIOR-TRACE/EVT-0219-STARTER-ZIP-INPLACE-UPDATE-2026-10-27.md) → [CURRENT-094](./PALANG-0.0-CURRENT-20261027-094-STARTER-ZIP-INPLACE-UPDATE.md).
+- Requirement: preserve stable package identity `HAIF-GPT6-PORTABLE-STARTER-20261025-004` / `HAIF-G6PS-20261025-004`; rebuild the existing package under its original canonical filename `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`, not a separate version-named ZIP.
+- Workflow now runs starter unit tests, rebuilds the same canonical filename, checks ZIP CRC/inventory, and emits SHA-256/byte-count receipt.
+- The historic v0.3.0 digest remains historical and must not be reused as the new digest.
+- Pending until fresh workflow result/artifact is inspected: successful build, current archive SHA-256, byte count, download/read-back. Real independent AI-host acceptance remains NOT RUN.
+- NEXT-051 remains the only active queue; do not create NEXT-052.
