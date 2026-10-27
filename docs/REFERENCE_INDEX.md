@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-27 — POINT-0/043 (0+ marker) → POINT-0/044 (0.0 continuation anchor) → IN-082 → OUT-081 → EVT-0219 → CURRENT-094; NEXT-051 remains the sole active queue; ZIP build/read-back verified, real-host acceptance remains OPEN.
+**Last Updated:** 2026-10-27 — POINT-0/045 → IN-083 → OUT-082 → EVT-0220 → CURRENT-095; same canonical starter ZIP updated/read-back verified; NEXT-051 remains the sole active queue; real-host acceptance remains OPEN.
 
 ## Canonical References
 
@@ -1864,3 +1864,16 @@ The v0.3.0 digest remains historical evidence. A fresh CI artifact and SHA-256 m
 - Checkpoint: `docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-095-EXISTING-ZIP-UPDATE-CONFIRMATION.md`
 - Verified archive SHA-256: `3a17f64880519a0da714f09a1dc8065fafcd88321fa5674eb2d995dfd8f63e83`; 19,042 bytes; internal version 0.3.1; canonical filename preserved.
 - Real independent-host acceptance remains NOT RUN.
+
+
+## Current interaction and initial ZIP continuity — CURRENT-095
+
+| ID | Path | Purpose / status |
+|---|---|---|
+| HAIF-POINT-0-045 | `docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-045-INITIAL-ZIP-CONTINUITY-AND-0.0-RESUME.md` | Current user point, linked to canonical point-0 root |
+| HAIF-IN-083 | `docs/0.0/anchors/PALANG-0.0-IN-20261027-083-INITIAL-ZIP-CONTINUITY.md` | User intent and verified ZIP baseline |
+| HAIF-OUT-082 | `docs/0.0/anchors/PALANG-0.0-OUT-20261027-082-INITIAL-ZIP-CONTINUITY.md` | Same-package update rule and remaining gates |
+| HAIF-EVT-0220 | `docs/architecture/BEHAVIOR-TRACE/EVT-0220-INITIAL-ZIP-CONTINUITY-2026-10-27.md` | Verified package event |
+| HAIF-CURRENT-095 | `docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-095-INITIAL-ZIP-CONTINUITY.md` | Active 0.0 continuation |
+
+Canonical ZIP: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`; internal package version 0.3.1; size 19,042 bytes; SHA-256 `3a17f64880519a0da714f09a1dc8065fafcd88321fa5674eb2d995dfd8f63e83`; workflow 40489753805; fresh-extraction tests 16/16 PASS. Independent-host acceptance remains OPEN / NOT RUN.
