@@ -1,4 +1,4 @@
-# HAIF GPT-6 Portable Starter v0.3.3
+# HAIF GPT-6 Portable Starter v0.3.4
 
 This is the updated release of the existing HAIF starter package, not a separate project. It updates the existing v0.3.0 0/0+ bootstrap package at the same stable package identity and canonical ZIP filename; history and prior digests remain preserved. It does not replace the living master, historical anchors or NEXT-051.
 
@@ -11,7 +11,7 @@ This is the updated release of the existing HAIF starter package, not a separate
 - Evidence-gated gap closure and Master → Child promotion.
 - Portable bundle export/import with SHA-256 verification, atomic local writes and validated read-back.
 - Independent-host recovery protocol included in this package: exact package digest, clean-host import, independent reconstruction from IN and OUT, negative controls, read-back and restart/persistence acceptance.
-- Current continuation reference: POINT-0/046 → IN-084 → OUT-083 → EVT-0221 → CURRENT-096 → NEXT-051; POINT-0/043 remains the 0+ production marker.
+- Current continuation reference: POINT-0/049 (0+) → IN-087 → OUT-086 → EVT-0224 → CURRENT-099 → NEXT-051; older 0+ markers remain historical.
 
 ## Bootstrap
 ~~~bash
@@ -36,6 +36,7 @@ The engine refuses to overwrite existing state/import targets. Original user-mes
 
 ## Bring it into GPT-6
 1. Read GPT6_HOST_INSTRUCTIONS.md and INDEPENDENT_HOST_RECOVERY_PROTOCOL.md.
+2. Upload the canonical living master reference from docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md together with this ZIP. The mother is the architecture authority; the ZIP is the portable starter/runtime package.
 2. Upload the manifest, instructions, recovery protocol and latest living master / CURRENT checkpoint / NEXT-051 where supported.
 3. Verify portable bundle digest before reuse.
 4. Use only authorized repository connectors; otherwise use the local engine and import/export files.
@@ -56,3 +57,7 @@ The recovery protocol is included in the existing package line. A ZIP build or C
 ## Current continuous-update checkpoint
 
 The current 0.0 chain is POINT-0/046 → IN-084 → OUT-083 → EVT-0221 → CURRENT-096 → NEXT-051. The stable package ID and canonical ZIP filename do not change. Internal version 0.3.3 identifies the next source content; the new archive digest is pending until the exact-head CI artifact is downloaded, inspected and tested. The prior 0.3.1 ZIP receipt remains historical evidence.
+
+
+## First GPT-6 host transfer rule
+Always transfer the canonical ZIP and the current living master together. Do not substitute an old master snapshot for the current repository master. After import, request a structured receipt for the exact package digest, recovered current point/checkpoint, NEXT-051, IN/OUT equivalence, open gaps, negative controls, and restart/persistence. A successful archive test is not host acceptance.

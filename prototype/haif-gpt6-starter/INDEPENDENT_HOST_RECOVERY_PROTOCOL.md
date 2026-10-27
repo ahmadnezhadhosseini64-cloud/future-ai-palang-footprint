@@ -1,8 +1,8 @@
 # Independent-host recovery proof protocol
 
-Package version: 0.3.3
+Package version: 0.3.4
 Project: Future AI / Palang Footprint
-Canonical chain: POINT-0/043 (0+ marker) → POINT-0/044 (canonical 0) → IN-082 → OUT-081 → EVT-0219 → CURRENT-097 → NEXT-051
+Canonical chain: POINT-0/049 (0+ marker on canonical 0) → IN-087 → OUT-086 → EVT-0224 → CURRENT-099 → NEXT-051
 
 ## Purpose
 Prove that a genuinely separate AI host can reconstruct the project from the package without relying on this chat's hidden history. Repository presence, a CI pass, or a runtime-to-runtime test is not independent-host acceptance.
@@ -32,3 +32,7 @@ Never mark a host gate PASS from documentation alone.
 
 ## Existing ZIP replacement identity
 The deliverable is the existing starter package continuously updated under the canonical filename `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`; do not publish a second version-named ZIP. The historic v0.3.0 digest (297b3b329143c4b99f55373db0c4bb97896b0e484253622e63eeb32a4429f164) is historical only. The updated archive must carry a fresh digest and byte count from its own build receipt.
+
+
+## Paired transfer requirement
+The receiving GPT-6 host must receive both this canonical ZIP and the current living master reference from the repository. The mother is the governing architecture; this ZIP is the portable starter. Uploading both is a transfer attempt, not proof of successful import. Record direct host receipts and keep restart/persistence as separate gates.

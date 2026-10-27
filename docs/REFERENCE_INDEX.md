@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-27 — POINT-0/048 (0+ marker) → IN-086 → OUT-085 → EVT-0223 → CURRENT-098 → NEXT-051; same-name starter ZIP v0.3.2 built and read-back verified on SHA c97167348de9e0fe57b5e4a61f9051f012aea719; paired audit/conformance PASS; NEXT-051 remains sole active queue; real-host acceptance OPEN.
+**Last Updated:** 2026-10-27 — POINT-0/049 (0+ marker on canonical root) → IN-087 → OUT-086 → EVT-0224 → CURRENT-099 → NEXT-051; paired first-host transfer contract; ZIP v0.3.4 build receipt pending; real-host acceptance OPEN.
 
 ## Canonical References
 
@@ -1926,3 +1926,17 @@ Verified current package receipt: run 40507481687 on SHA `c6af49386493f5c542336d
 - ZIP: 19,268 bytes; SHA-256 `fa226aab5a35a76c3f289b511566257a443821195ebdfdfb21f1cc093026e091`; extracted ZIP tests 16/16 PASS.
 - Artifact [12740188113](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40518077494/artifacts/12740188113) was downloaded back in CI; embedded ZIP digest/bytes matched the receipt and the extracted tests passed again.
 - Real independent AI-host import, negative controls and restart/persistence remain OPEN / NOT RUN.
+
+
+## Latest 0+ / first GPT-6 host transfer chain — CURRENT-099
+
+- POINT-0/049: docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-049-0PLUS-LIVING-MASTER-GPT6-HOST.md
+- IN-087: docs/0.0/anchors/PALANG-0.0-IN-20261027-087-LIVING-MASTER-GPT6-HOST.md
+- OUT-086: docs/0.0/anchors/PALANG-0.0-OUT-20261027-086-LIVING-MASTER-GPT6-HOST.md
+- EVT-0224: docs/architecture/BEHAVIOR-TRACE/EVT-0224-LIVING-MASTER-GPT6-HOST-2026-10-27.md
+- CURRENT-099: docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-099-LIVING-MASTER-GPT6-HOST.md
+- Living mother: docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md
+- Package source: prototype/haif-gpt6-starter/
+- Sole active queue: NEXT-051.
+
+Previous verified ZIP v0.3.3: run 40518292922; 19,268 bytes; SHA-256 fa226aab5a35a76c3f289b511566257a443821195ebdfdfb21f1cc093026e091; 16/16 extracted tests PASS. v0.3.4 pending fresh receipt.

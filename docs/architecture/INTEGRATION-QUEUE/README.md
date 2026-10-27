@@ -3,7 +3,7 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.10.1
+- Version: 1.10.2
 - Date: 2026-10-27
 - Exact Time: 11:25 local project time, minute precision; exact seconds not captured.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
@@ -2282,3 +2282,15 @@ CURRENT-098 is the continuation checkpoint. NEXT-051 remains the only active que
 - [ ] Real independent AI-host import and restart/persistence.
 
 Run 40518077494; canonical ZIP SHA-256 `fa226aab5a35a76c3f289b511566257a443821195ebdfdfb21f1cc093026e091`. NEXT-051 remains the only active queue.
+
+
+## CURRENT-099 — first GPT-6 host paired transfer
+
+- [x] Verified v0.3.3 canonical ZIP artifact round-trip: run 40518292922, 19,268 bytes, SHA-256 fa226aab5a35a76c3f289b511566257a443821195ebdfdfb21f1cc093026e091, 16/16 extracted tests PASS.
+- [x] Preserve one stable package ID and original canonical ZIP filename.
+- [x] Align source metadata/instructions to current POINT-0/049 → CURRENT-099 chain and paired ZIP + living-master transfer.
+- [ ] Read back v0.3.4 exact-head build receipt, ZIP hash, downloaded artifact and extracted tests.
+- [ ] Import ZIP + master into a separate interactive GPT-6 host and capture direct receipt.
+- [ ] Test IN/OUT recovery equivalence, negative controls, restart/persistence and authorized repository write-back.
+
+NEXT-051 remains the only active queue. Do not create NEXT-052.

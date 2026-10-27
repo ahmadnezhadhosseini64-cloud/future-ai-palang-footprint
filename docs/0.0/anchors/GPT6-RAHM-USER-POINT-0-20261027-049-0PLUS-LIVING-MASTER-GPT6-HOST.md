@@ -1,0 +1,12 @@
+# POINT-0/049 (0+) — سند مادر زنده و نخستین میزبان GPT-6
+
+- Stable ID: HAIF-POINT-0-049-LIVING-MASTER-GPT6-HOST-20261027
+- Production ID: HAIF-P049-LIVING-MASTER-GPT6-HOST-20261027
+- Type: 0+ production marker on the existing canonical point-0 identity; not a separate root.
+- Parent/context: POINT-0/048 (0+) → CURRENT-098; preserve all prior anchors and digests.
+- Continuation: IN-087 → OUT-086 → EVT-0224 → CURRENT-099 → NEXT-051.
+- Repository base SHA: a798e61d3d4c68447356020a5ebee29b03ca18f8; repository commit time UTC: 2026-10-27T14:08:44Z. This is repository evidence, not the exact user-message timestamp.
+
+Hard-audit result: run 40518292922 rebuilt the established canonical filename for internal version 0.3.3, checked CRC and exact inventory, extracted it cleanly, compared all eight member bytes to source, ran 16/16 tests from extracted bytes, uploaded and downloaded the artifact, compared exact byte count/hash, and reran tests. ZIP: 19,268 bytes; SHA-256 fa226aab5a35a76c3f289b511566257a443821195ebdfdfb21f1cc093026e091. This proves archive-level transfer integrity, not real GPT-6 acceptance.
+
+Design decision: transfer the canonical ZIP and the current living master together. One stable package ID and one canonical ZIP filename remain; internal package version advances to 0.3.4 for chain alignment. The mother is the architecture authority; ZIP is the portable runtime/bootstrap. NEXT-051 remains the only active queue; no NEXT-052. Fresh 0.3.4 receipt and actual host import remain open.

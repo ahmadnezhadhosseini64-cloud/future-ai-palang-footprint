@@ -178,11 +178,11 @@ if __name__ == "__main__":
 
 
 class PortablePackageProtocolTests(unittest.TestCase):
-    def test_package_manifest_is_version_033_and_keeps_existing_stable_id(self):
+    def test_package_manifest_is_version_034_and_keeps_existing_stable_id(self):
         package = Path(__file__).parent
         manifest = json.loads((package / "manifest.json").read_text(encoding="utf-8"))
-        self.assertEqual(manifest["version"], "0.3.3")
-        self.assertEqual(manifest["supersedes"], "0.3.2")
+        self.assertEqual(manifest["version"], "0.3.4")
+        self.assertEqual(manifest["supersedes"], "0.3.3")
         self.assertEqual(manifest["stable_id"], "HAIF-GPT6-PORTABLE-STARTER-20261025-004")
         self.assertEqual(manifest["recovery_protocol"], "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md")
 
@@ -200,3 +200,11 @@ class PortablePackageProtocolTests(unittest.TestCase):
         self.assertIn("POINT-0/043 (0+ marker)", architecture)
         self.assertIn("POINT-0/044 (0.0 continuation anchor; canonical root identity remains 0/0+)", architecture)
         self.assertIn("CURRENT-094 — latest 0.0 continuation checkpoint", architecture)
+
+
+    def test_manifest_declares_paired_first_host_transfer(self):
+        package = Path(__file__).parent
+        manifest = json.loads((package / "manifest.json").read_text(encoding="utf-8"))
+        self.assertEqual(manifest["version"], "0.3.4")
+        self.assertIn("POINT-0/049 (0+ marker on canonical point 0)", manifest["parent_architecture"])
+        self.assertIn("CURRENT-099", manifest["parent_architecture"])
