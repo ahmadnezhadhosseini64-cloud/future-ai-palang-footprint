@@ -12,6 +12,7 @@
 - Repository export manifest: [EXPORT_MANIFEST.json](../../portable/RAHM/EXPORT_MANIFEST.json)
 - Repository recovery protocol: [INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md](../../architecture/مدل%20اولیه%20AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md)
 - Growth contract: [HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md](../../../prototype/haif-gpt6-starter/HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md)
+- In-package recovery protocol: [INDEPENDENT_HOST_RECOVERY_PROTOCOL.md](../../../prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md)
 
 ورودی کاربر: نقطه را 0+ کن و ادامه را 0.0؛ ZIP موجود پیوسته تکمیل شود؛ در میزبان رشد کند؛ ارتباط کنترل‌شده با مخزن و پروژهٔ آینده AI / ردپای پلنگ داشته باشد؛ داده‌ها و رفتارهای ارزشمند را با اعتبارسنجی وارد معماری کند.
 
