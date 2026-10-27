@@ -3,13 +3,13 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.9.7
-- Date: 2026-10-26
+- Version: 1.9.8
+- Date: 2026-10-27
 - Exact Time: 11:25 local project time, minute precision; exact seconds not captured.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: POINT-0/037 is the latest continuation root; CURRENT-086 is the active execution checkpoint; the latest inspected main head was `d1207fe71ac95b4c6606226486cc4b0cfe9dd6fd`; the most recent audit/conformance pair passed on tested SHA `62f8007deefbfbdb0fbe4156074f069f070fc7f2`, not the later head; external interactive-host import remains NOT RUN; 2 parent edges and identity groups stay OPEN; NEXT-051 remains the single active queue; no NEXT-052 placeholder.
+- Status: POINT-0/038 is the latest continuation root; CURRENT-087 is the active execution checkpoint; the latest inspected main head was `d1207fe71ac95b4c6606226486cc4b0cfe9dd6fd`; the most recent audit/conformance pair passed on tested SHA `62f8007deefbfbdb0fbe4156074f069f070fc7f2`, not the later head; external interactive-host import remains NOT RUN; 2 parent edges and identity groups stay OPEN; NEXT-051 remains the single active queue; no NEXT-052 placeholder.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
@@ -2109,3 +2109,14 @@ The current root is [POINT-0/027](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261
 - Package-ready for a controlled trial: [portable package artifact](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40355991343/artifacts/12663829740), 178 files, 639,095 bytes, package SHA-256 `0864ff217585d03ffb649ca1f5c1a4b5404d6fa5bc7166be4c1e4c803d4b330f`.
 - Evidence boundary: CI transfer Runtime A→B passed; actual target-host import/restart/persistence/round-trip NOT RUN. Two parent edges remain unresolved; continue source-based graph review under NEXT-051.
 - Fresh exact-head audit and conformance must run after the new checkpoint is integrated; prior passing runs were on SHA `62f8007deefbfbdb0fbe4156074f069f070fc7f2`.
+
+
+## POINT-0/038 continuation — temporary cover, goal remains primary
+
+- Latest root: [POINT-0/038](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-038-TEMPORARY-GAP-COVER-AND-GOAL-EXECUTION.md); active checkpoint: [CURRENT-087](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-087-GOAL-EXECUTION-WITH-TEMPORARY-COVER.md).
+- Chain: IN-075 → OUT-074 → EVT-0209 → CURRENT-087.
+- User-approved handling: reversible cover lets Path A and model development proceed while Path B keeps the underlying gaps OPEN. Cover is not closure and is not the missing parent.
+- Path A: proceed to controlled real-host I1–I8 import/recovery/persistence/round-trip; remain NOT RUN until direct destination receipts are recorded.
+- Path B: keep the two missing-parent edges under the existing Recovery Bridge; continue identity and lineage review through this queue without bulk merge/renumber/delete.
+- NEXT-051 remains the only active queue. Dropbox stays out of scope unless explicitly reopened.
+- Exact-head audit and portable conformance for the newly integrated state must be recorded separately; prior receipts remain bound to their tested SHAs.
