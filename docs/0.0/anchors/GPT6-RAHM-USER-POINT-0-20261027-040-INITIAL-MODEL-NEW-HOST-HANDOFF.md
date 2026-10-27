@@ -41,3 +41,13 @@ Continue under NEXT-051: finish the host handoff instructions and package pointe
 ## Preservation
 
 All earlier POINT-0 anchors, IN/OUT records, events, checkpoints, collisions, and open gaps remain preserved. No NEXT-052 is created. Repository registration alone does not prove Library, Buffer, Persistent Memory, Dropbox or independent-host status.
+
+
+
+## Continuation update — EVT-0214 collision containment
+
+- Collision event: [EVT-0214](../../architecture/BEHAVIOR-TRACE/EVT-0214-POINT-040-DUPLICATE-ID-QUARANTINE-2026-10-27.md).
+- Canonical transfer bootstrap: [NEW-HOST-BOOTSTRAP](../../architecture/مدل%20اولیه%20AI/NEW-HOST-BOOTSTRAP-2026-10-27.md); existing executable starter: [haif-gpt6-starter](../../../prototype/haif-gpt6-starter/README.md).
+- Supplementary test contract: [Initial Model Host Transfer Bootstrap](../../portable/RAHM/INITIAL-MODEL-HOST-TRANSFER-BOOTSTRAP-2026-10-27.md); supplementary host prompt: [HOST-BOOTSTRAP-PROMPT](../../portable/RAHM/HOST-BOOTSTRAP-PROMPT-2026-10-27.md).
+- Alternate artifacts that reused POINT-0/040, EVT-0213 and CURRENT-089 have been preserved and marked QUARANTINED; canonical IDs stay with this handoff chain.
+- The current package still needs supported digest validation, paired audit/conformance on the same final main SHA, and direct independent-host/cold-recovery receipts.
