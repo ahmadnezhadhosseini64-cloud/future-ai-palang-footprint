@@ -36,3 +36,6 @@ NEXT-051 remains the sole active queue. No NEXT-052.
 
 ## Repository graph audit results
 The latest successful Living Architecture Audit run [40539499870](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40539499870) reports 539 paths with 0.0, 62 checkpoint paths, 272 EVT files, 146 reference-document paths, 8,365 local-link edges, 10 missing local links, 23 stable-ID collision groups (1 unreviewed/open), 74 production-ID collision groups (72 unreviewed/open), and 5 reference-ID collision groups. Historical items are not to be bulk-deleted or renumbered; NEXT-051 remains responsible for evidence-based triage.
+
+
+Additional hard-audit finding: Living Architecture Audit run 40539823090 failed because a historical Point 0/006 check still required CURRENT-057 to appear in the live Reference Index and Integration Queue. That is an obsolete current-pointer assertion, not evidence that the historical files are missing. The workflow was changed to preserve/test the 0/006 historical baseline without requiring an obsolete checkpoint to remain the current pointer. Fresh exact-head audit must pass before closure.

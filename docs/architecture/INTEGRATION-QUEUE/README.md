@@ -2310,3 +2310,6 @@ NEXT-051 remains the only active queue. Do not create NEXT-052.
 - [ ] Independent restart/persistence test.
 
 NEXT-051 remains the sole active queue. Do not create NEXT-052.
+
+
+Additional hard-audit finding: Living Architecture Audit run 40539823090 failed because a historical Point 0/006 check still required CURRENT-057 to appear in the live Reference Index and Integration Queue. That is an obsolete current-pointer assertion, not evidence that the historical files are missing. The workflow was changed to preserve/test the 0/006 historical baseline without requiring an obsolete checkpoint to remain the current pointer. Fresh exact-head audit must pass before closure.

@@ -2319,3 +2319,6 @@ NEXT-051 remains the sole active queue. Do not create NEXT-052.
 - Continue evidence-based classification and repair. Do not bulk-delete or renumber history. The conformance link check now targets IN-088 / OUT-087 / CURRENT-100, but real host acceptance remains a separate gate.
 - [ ] Import paired v0.3.5 ZIP + living master into a clean interactive GPT-6 session and save direct receipt.
 - [ ] Prove live producer, authorized repository write-back, independent recovery, negative controls and restart/persistence.
+
+
+Additional hard-audit finding: Living Architecture Audit run 40539823090 failed because a historical Point 0/006 check still required CURRENT-057 to appear in the live Reference Index and Integration Queue. That is an obsolete current-pointer assertion, not evidence that the historical files are missing. The workflow was changed to preserve/test the 0/006 historical baseline without requiring an obsolete checkpoint to remain the current pointer. Fresh exact-head audit must pass before closure.

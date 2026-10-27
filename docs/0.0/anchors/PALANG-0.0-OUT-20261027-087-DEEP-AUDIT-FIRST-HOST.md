@@ -35,3 +35,6 @@ The next package source revision is v0.3.5 in the same package line, with the sa
 - Production ID collision groups: 74 (72 unreviewed/open; 2 reviewed).
 - Reference ID collision groups: 5.
 - These counts are audit inventory, not a reason to mass-delete or renumber historical records. NEXT-051 retains them as open remediation work.
+
+
+Additional hard-audit finding: Living Architecture Audit run 40539823090 failed because a historical Point 0/006 check still required CURRENT-057 to appear in the live Reference Index and Integration Queue. That is an obsolete current-pointer assertion, not evidence that the historical files are missing. The workflow was changed to preserve/test the 0/006 historical baseline without requiring an obsolete checkpoint to remain the current pointer. Fresh exact-head audit must pass before closure.
