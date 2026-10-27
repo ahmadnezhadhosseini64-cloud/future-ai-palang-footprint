@@ -1984,3 +1984,17 @@ Current verdict: v0.3.4 is a verified transferable artifact, but the requested i
 - Paired ZIP + living master artifact ID `12749462911`; wrapper digest `114282bdbd0c1b919a18adbbde8e28739e06213af5cb24e50033c319f76aa3f8`; master byte-readback PASS.
 - Graph audit run [40539499870](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40539499870): 10 missing local links; 23 stable-ID collision groups (1 open), 74 production-ID collision groups (72 open), 5 reference-ID collision groups. These remain tracked in NEXT-051.
 - Real interactive GPT-6 import, automatic live capture, repository write-back and restart/persistence: NOT RUN / NOT VERIFIED.
+
+
+## Verified v0.3.6 package build — run 40543391689
+
+- Exact source commit: `47f9e7fb0aaa2a96fd198a650dc5be5b6b5deb60`
+- Workflow: [Portable RAHM Conformance and Digest Evidence](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40543391689) — SUCCESS.
+- Canonical ZIP filename: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip` (unchanged).
+- Internal version: `0.3.6`; stable package ID unchanged.
+- Exact ZIP size: 27,751 bytes; SHA-256: `172d0bcd4b80d03b52326d9544595ef49083cdcdb12806fc79bad05255c749b6`.
+- Package inventory: 10 files, including `HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md`.
+- Source tests and extracted-ZIP tests: 20/20 PASS; ZIP integrity, inventory, exact source-byte match, artifact download/read-back and paired living-master read-back: PASS.
+- GitHub artifact ID: `12752086217`; artifact wrapper digest: `sha256:efa4aa32792c7c58844f6167181c159ce8c07047ccb4790e46ad06f77948bdd1`.
+- Exact-head Living Architecture Audit: run [40543391548](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40543391548) — SUCCESS.
+- Scope boundary: this proves package build and CI round-trip, not live GPT-host capture, authorized write-back, automatic host refresh or restart persistence. Those remain OPEN / NOT VERIFIED.

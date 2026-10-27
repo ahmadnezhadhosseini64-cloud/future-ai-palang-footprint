@@ -2,7 +2,7 @@
 
 - Stable ID: HAIF-OUT-088-HOST-GROWTH-REPOSITORY-LOOP-20261027
 - Production ID: G6IP-OUT-088
-- Status: SOURCE IMPLEMENTED / PACKAGE BUILD RECEIPT PENDING / LIVE HOST OPEN
+- Status: SOURCE IMPLEMENTED / v0.3.6 ZIP READ-BACK VERIFIED / LIVE HOST OPEN / HOST SYNC NOT VERIFIED
 - Parent: [IN-089](./PALANG-0.0-IN-20261027-089-HOST-GROWTH-AND-REPOSITORY-LOOP.md)
 - Point: [POINT-0/051 (0+)](./GPT6-RAHM-USER-POINT-0-20261027-051-0PLUS-HOST-GROWTH-AND-REPOSITORY-LOOP.md)
 - Current checkpoint: [CURRENT-101](./PALANG-0.0-CURRENT-20261027-101-HOST-GROWTH-AND-REPOSITORY-LOOP.md)
@@ -24,3 +24,6 @@
 - A fresh exact-head workflow must build, upload, download and verify the same-name ZIP and its SHA-256.
 - A real interactive AI host must import the ZIP + living mother, produce a synthetic interaction receipt, use an authorized repository connection, and prove exact write/read-back.
 - Live capture, autonomous background operation, durable cross-session host memory and restart persistence remain OPEN / NOT VERIFIED.
+
+
+Package receipt: run 40543391689, source commit `47f9e7fb0aaa2a96fd198a650dc5be5b6b5deb60`, canonical ZIP size 27,751 bytes, SHA-256 `172d0bcd4b80d03b52326d9544595ef49083cdcdb12806fc79bad05255c749b6`, 10 files, 20/20 extracted tests, ZIP source-byte comparison and artifact round-trip PASS. See [workflow run](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40543391689). Live host remains OPEN.

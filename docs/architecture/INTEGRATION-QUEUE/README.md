@@ -2322,3 +2322,17 @@ Additional hard-audit finding: Living Architecture Audit run 40539823090 failed 
 - Defined path: real host producer (if available) → pair/provenance → authenticated durable intake → separately authorized GitHub worker → exact read-back → behavior evidence → RAHM gate → Child proposal → explicit approval → living Master → same-name ZIP rebuild and host refresh.
 - Current gap: host producer is not connected by the package itself; adapter says repository_write=NOT_IMPLEMENTED and worker deployment/secret are not proven. No claim of live automatic sync is allowed without receipts.
 - Fresh package build, artifact download/read-back and extracted tests are pending on the exact commit; NEXT-051 remains the only active queue.
+
+
+## Verified v0.3.6 package build — run 40543391689
+
+- Exact source commit: `47f9e7fb0aaa2a96fd198a650dc5be5b6b5deb60`
+- Workflow: [Portable RAHM Conformance and Digest Evidence](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40543391689) — SUCCESS.
+- Canonical ZIP filename: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip` (unchanged).
+- Internal version: `0.3.6`; stable package ID unchanged.
+- Exact ZIP size: 27,751 bytes; SHA-256: `172d0bcd4b80d03b52326d9544595ef49083cdcdb12806fc79bad05255c749b6`.
+- Package inventory: 10 files, including `HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md`.
+- Source tests and extracted-ZIP tests: 20/20 PASS; ZIP integrity, inventory, exact source-byte match, artifact download/read-back and paired living-master read-back: PASS.
+- GitHub artifact ID: `12752086217`; artifact wrapper digest: `sha256:efa4aa32792c7c58844f6167181c159ce8c07047ccb4790e46ad06f77948bdd1`.
+- Exact-head Living Architecture Audit: run [40543391548](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40543391548) — SUCCESS.
+- Scope boundary: this proves package build and CI round-trip, not live GPT-host capture, authorized write-back, automatic host refresh or restart persistence. Those remain OPEN / NOT VERIFIED.
