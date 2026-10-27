@@ -1,5 +1,12 @@
 # پوشهٔ ۰.۰ — دفتر نقاط ادامهٔ پروژه
 
+## آخرین زنجیرهٔ فعال — CURRENT-103
+
+نقطهٔ تولیدی فعلی: [POINT-0/053 (0+)](anchors/GPT6-RAHM-USER-POINT-0-20261027-053-0PLUS-GRAPH-AUDIT-AND-ZIP-CONTINUITY.md) → [IN-091](anchors/PALANG-0.0-IN-20261027-091-0PLUS-GRAPH-AUDIT-AND-ZIP-CONTINUITY.md) → [OUT-090](anchors/PALANG-0.0-OUT-20261027-090-0PLUS-GRAPH-AUDIT-AND-ZIP-CONTINUITY.md) → [EVT-0228](../architecture/BEHAVIOR-TRACE/EVT-0228-0PLUS-GRAPH-AUDIT-AND-ZIP-CONTINUITY-2026-10-27.md) → [CURRENT-103](anchors/PALANG-0.0-CURRENT-20261027-103-0PLUS-GRAPH-AUDIT-AND-ZIP-CONTINUITY.md) → [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+
+**گیت‌های باز:** تعارض شماره‌ای POINT-0/045، CURRENT-095، IN-083، OUT-082 و EVT-0220؛ رسید ZIP نسخهٔ داخلی 0.3.8؛ آزمون میزبان مستقل و بازیابی پس از restart. این گیت‌ها حذف یا با حدس حل نمی‌شوند.
+
+
 ## هدف
 این پوشه، فهرست مرکزی و مخزن نقطه‌های «۰.۰» پروژهٔ Future AI / Palang Footprint است. هر نقطهٔ ۰.۰ یک لنگر مستقل برای ازسرگیری کار است؛ ۰.۰ها ممکن است متعدد باشند و ممکن است باز، ناقص، مسدود، تکمیل‌شده یا نیازمند راستی‌آزمایی باشند. ایجاد یک نقطه، آن را به‌طور خودکار تکمیل نمی‌کند.
 

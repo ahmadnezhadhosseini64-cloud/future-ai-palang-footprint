@@ -1,8 +1,8 @@
 # Independent-host recovery proof protocol
 
-Package version: 0.3.7
+Package version: 0.3.8
 Project: Future AI / Palang Footprint
-Canonical chain: POINT-0/052 (0+ marker on canonical root 0) → IN-090 → OUT-089 → EVT-0227 → CURRENT-102 → NEXT-051
+Canonical chain: POINT-0/053 (0+ marker on canonical root 0) → IN-091 → OUT-090 → EVT-0228 → CURRENT-103 → NEXT-051
 
 ## Purpose
 Prove that a genuinely separate AI host can reconstruct the project from the package without relying on this chat's hidden history. Repository presence, a CI pass, or a runtime-to-runtime test is not independent-host acceptance.
@@ -23,7 +23,8 @@ PASS requires direct evidence for package hash, complete inventory, clean host i
 ## Status at package build
 - Local starter tests: read from the exact CI run for this package revision.
 - Same-package identity: HAIF-GPT6-PORTABLE-STARTER-20261025-004; canonical ZIP filename remains haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip.
-- ZIP build and SHA-256: pending until workflow artifact and digest are inspected.
+- Previous v0.3.7 ZIP receipt: run 40546488170; 30,573 bytes; SHA-256 `fcc09933dd67ca1300af051e14dbcf80c76b6f620dc6c9623323caca307969fb`; 11 files; 23/23 extracted tests PASS.
+- v0.3.8 ZIP build and SHA-256: PENDING until the exact-head workflow artifact and digest are inspected.
 - Real independent AI-host import: NOT RUN.
 - Second-host and restart persistence: NOT RUN.
 - Automatic message capture and background execution: NOT PROVEN.

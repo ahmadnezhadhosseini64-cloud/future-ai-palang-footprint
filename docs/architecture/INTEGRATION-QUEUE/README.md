@@ -3,13 +3,13 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.10.2
+- Version: 1.10.3
 - Date: 2026-10-27
 - Exact Time: 11:25 local project time, minute precision; exact seconds not captured.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: POINT-0/051 (0+) is the current production marker on canonical root 0; CURRENT-101 is the active 0.0 continuation. The same starter package Stable ID and canonical ZIP filename are preserved; latest prior archive receipt is verified; fresh exact-head receipt for CURRENT-096 was verified on SHA c97167348de9e0fe57b5e4a61f9051f012aea719; archive v0.3.2 is read-back verified. Real independent-host import remains NOT RUN; graph identity/parent/time adjudication remains OPEN; NEXT-051 remains the single active queue; no NEXT-052 placeholder.
+- Status: POINT-0/053 (0+) is the current production marker on canonical root 0; CURRENT-103 is the active 0.0 continuation. The same starter Stable ID and canonical ZIP filename remain fixed. Latest verified v0.3.7 archive receipt is run 40546488170 (30,573 bytes; SHA-256 fcc09933dd67ca1300af051e14dbcf80c76b6f620dc6c9623323caca307969fb; 23/23 tests). Source version 0.3.8 is pending fresh artifact read-back. Duplicate numbered graph records POINT-0/045, CURRENT-095, IN-083, OUT-082 and EVT-0220 remain OPEN. Real independent-host import remains NOT RUN; NEXT-051 remains the single active queue; no NEXT-052 placeholder.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
@@ -2336,3 +2336,13 @@ Additional hard-audit finding: Living Architecture Audit run 40539823090 failed 
 - GitHub artifact ID: `12752086217`; artifact wrapper digest: `sha256:efa4aa32792c7c58844f6167181c159ce8c07047ccb4790e46ad06f77948bdd1`.
 - Exact-head Living Architecture Audit: run [40543391548](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40543391548) — SUCCESS.
 - Scope boundary: this proves package build and CI round-trip, not live GPT-host capture, authorized write-back, automatic host refresh or restart persistence. Those remain OPEN / NOT VERIFIED.
+
+
+## CURRENT-103 — hard audit of point graph and same-package continuity
+
+- Chain: POINT-0/053 (0+) → IN-091 → OUT-090 → EVT-0228 → CURRENT-103 → NEXT-051.
+- v0.3.7 was actually rebuilt and downloaded under the unchanged canonical filename, with unchanged stable package ID; its internal version is not a separate ZIP product. Receipt: run 40546488170, 30,573 nested ZIP bytes, SHA-256 fcc09933dd67ca1300af051e14dbcf80c76b6f620dc6c9623323caca307969fb, 11 files, 23/23 tests and artifact round-trip PASS.
+- The package test source changed after an earlier v0.3.7 receipt, changing archive bytes without advancing the internal version. Source version is now 0.3.8; its fresh receipt is pending.
+- Duplicate-numbered records in the current audited slice: POINT-0/045 (two files), CURRENT-095 (two files), IN-083 (two files), OUT-082 (two files), EVT-0220 (two files). Preserve all records; determine intended parents/roles through provenance and consumers before resolving.
+- The living mother, Reference Index and queue status had lagged behind the current 052/102 chain. Live pointers are corrected to 053/103 in this revision; historical sections are not rewritten.
+- Remaining release gates: exact-head v0.3.8 artifact, host-independent import, IN/OUT reconstruction, negative controls, read-back and restart/persistence. Do not create NEXT-052.

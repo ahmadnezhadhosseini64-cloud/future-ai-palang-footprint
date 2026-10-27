@@ -3,8 +3,8 @@
 Package family: HAIF GPT-6 Portable Starter
 Stable package ID: HAIF-GPT6-PORTABLE-STARTER-20261025-004
 Canonical ZIP filename: haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip
-Internal version: 0.3.7
-Current chain: POINT-0/052 (0+ marker on canonical root 0) → IN-090 → OUT-089 → EVT-0227 → CURRENT-102 → NEXT-051
+Internal version: 0.3.8
+Current chain: POINT-0/053 (0+ marker on canonical root 0) → IN-091 → OUT-090 → EVT-0228 → CURRENT-103 → NEXT-051
 
 ## 1. Visible response is mandatory
 When an input is received, the host must produce one of:

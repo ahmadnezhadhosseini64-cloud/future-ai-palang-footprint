@@ -178,11 +178,11 @@ if __name__ == "__main__":
 
 
 class PortablePackageProtocolTests(unittest.TestCase):
-    def test_package_manifest_is_version_036_and_keeps_existing_stable_id(self):
+    def test_package_manifest_is_version_038_and_keeps_existing_stable_id(self):
         package = Path(__file__).parent
         manifest = json.loads((package / "manifest.json").read_text(encoding="utf-8"))
-        self.assertEqual(manifest["version"], "0.3.7")
-        self.assertEqual(manifest["supersedes"], "0.3.6")
+        self.assertEqual(manifest["version"], "0.3.8")
+        self.assertEqual(manifest["supersedes"], "0.3.7")
         self.assertEqual(manifest["stable_id"], "HAIF-GPT6-PORTABLE-STARTER-20261025-004")
         self.assertEqual(manifest["recovery_protocol"], "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md")
 
@@ -214,6 +214,8 @@ class PortablePackageProtocolTests(unittest.TestCase):
         self.assertIn("CURRENT-101", manifest["parent_architecture"])
         self.assertIn("POINT-0/052 (0+ marker on canonical root 0)", manifest["parent_architecture"])
         self.assertIn("CURRENT-102", manifest["parent_architecture"])
+        self.assertIn("POINT-0/053 (0+ marker on canonical root 0)", manifest["parent_architecture"])
+        self.assertIn("CURRENT-103", manifest["parent_architecture"])
         self.assertIn("INTERACTION-RESPONSE-AND-ANCHOR-PROTOCOL.md", manifest["parent_architecture"])
         self.assertIn("HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md", manifest["parent_architecture"])
         self.assertEqual(manifest["host_acceptance_checklist"], "FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST.md")
@@ -243,8 +245,8 @@ class HostGrowthRepositoryContractTests(unittest.TestCase):
         manifest = json.loads((root / "manifest.json").read_text(encoding="utf-8"))
         protocol = (root / "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md").read_text(encoding="utf-8")
         self.assertIn(f"Package version: {manifest['version']}", protocol)
-        self.assertIn("POINT-0/052", protocol)
-        self.assertIn("CURRENT-102", protocol)
+        self.assertIn("POINT-0/053", protocol)
+        self.assertIn("CURRENT-103", protocol)
 
     def test_package_manifest_version_and_identity_remain_continuous(self):
         root = Path(__file__).parent

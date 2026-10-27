@@ -1,4 +1,4 @@
-# HAIF GPT-6 Portable Starter v0.3.7
+# HAIF GPT-6 Portable Starter v0.3.8
 
 This is the updated release of the existing HAIF starter package, not a separate project. It updates the existing v0.3.0 0/0+ bootstrap package at the same stable package identity and canonical ZIP filename; history and prior digests remain preserved. It does not replace the living master, historical anchors or NEXT-051.
 
@@ -14,7 +14,7 @@ This is the updated release of the existing HAIF starter package, not a separate
 - First interactive GPT-6 host acceptance checklist included; separates archive portability from real host import, live message capture, repository write-back and restart proof.
 - Host-growth/repository-sync contract included; defines behavior evidence, authorized repo return, RAHM validation and controlled Master/Child promotion.
 - Interaction response/anchor protocol included; requires visible acknowledgment/status, failure disclosure, paired input/output anchors and explicit non-verified gates.
-- Current continuation reference: POINT-0/052 (0+ marker on canonical root 0) → IN-090 → OUT-089 → EVT-0227 → CURRENT-102 → NEXT-051; older 0+ markers remain historical.
+- Current continuation reference: POINT-0/053 (0+ marker on canonical root 0) → IN-091 → OUT-090 → EVT-0228 → CURRENT-103 → NEXT-051; older 0+ markers remain historical.
 
 ## Bootstrap
 ~~~bash
@@ -74,3 +74,13 @@ Always transfer the canonical ZIP and the current living master together. Do not
 Read `FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST.md` before treating this package as integrated. Transfer the canonical ZIP and the current living master together. The source engine and CI are not a native ChatGPT plugin; automatic message capture, durable host memory and GitHub write-back are unproven until a real host/connector supplies direct receipts.
 
 The v0.3.4 archive is historical verified evidence. Version 0.3.5 is source-only until the current workflow builds the unchanged canonical filename, uploads/downloads it, compares exact hash and inventory, and runs tests from the extracted ZIP.
+
+
+## Current continuous-update receipt (2026-10-27)
+
+- Stable package ID: `HAIF-GPT6-PORTABLE-STARTER-20261025-004` (unchanged).
+- Canonical ZIP filename: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip` (unchanged; no separate version-named ZIP product).
+- Latest verified v0.3.7 receipt: run [40546488170](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40546488170), source commit `62d1791face55f972cf4bd944537b50f9d179fcb`, 30,573 bytes, SHA-256 `fcc09933dd67ca1300af051e14dbcf80c76b6f620dc6c9623323caca307969fb`, 11 files, 23/23 extracted tests, artifact round-trip PASS.
+- The test-only source change after the earlier v0.3.7 receipt changed the packaged ZIP bytes without advancing the internal version. This is being reconciled by advancing the internal version to 0.3.8 while retaining the same package identity and canonical ZIP filename.
+- v0.3.8 artifact receipt: PENDING until the fresh exact-head workflow completes and its downloaded ZIP is inspected.
+- Real independent-host acceptance remains NOT RUN.

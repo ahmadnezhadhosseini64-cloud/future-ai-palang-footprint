@@ -2020,3 +2020,16 @@ NEXT-051 remains the sole active queue. Actual live host acceptance remains sepa
 - Chain: `IN-090 → OUT-089 → EVT-0227 → CURRENT-102 → NEXT-051`
 - Same starter ZIP internal version 0.3.7, canonical filename preserved; verified receipt run 40544593941, SHA-256 `587f67e0d7d57ef70a78b253a934af90076531b2f3a61fed942dc78f387bdb7f`, 22/22 tests pass.
 - Real host integration remains OPEN / NOT VERIFIED; NEXT-051 remains the sole active queue.
+
+
+## Latest 0+ / 0.0 continuation — CURRENT-103
+
+| ID | Canonical path | Role / status |
+|---|---|---|
+| HAIF-POINT-0-053 | `docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-053-0PLUS-GRAPH-AUDIT-AND-ZIP-CONTINUITY.md` | 0+ production marker on canonical root 0; hard graph audit |
+| HAIF-IN-091 | `docs/0.0/anchors/PALANG-0.0-IN-20261027-091-0PLUS-GRAPH-AUDIT-AND-ZIP-CONTINUITY.md` | User input |
+| HAIF-OUT-090 | `docs/0.0/anchors/PALANG-0.0-OUT-20261027-090-0PLUS-GRAPH-AUDIT-AND-ZIP-CONTINUITY.md` | Implementation and audit result |
+| HAIF-EVT-0228 | `docs/architecture/BEHAVIOR-TRACE/EVT-0228-0PLUS-GRAPH-AUDIT-AND-ZIP-CONTINUITY-2026-10-27.md` | Evidence and gap event |
+| HAIF-CURRENT-103 | `docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-103-0PLUS-GRAPH-AUDIT-AND-ZIP-CONTINUITY.md` | Active continuation |
+
+Latest verified canonical ZIP receipt is run 40546488170, filename `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`, stable ID `HAIF-GPT6-PORTABLE-STARTER-20261025-004`, 30,573 bytes, SHA-256 `fcc09933dd67ca1300af051e14dbcf80c76b6f620dc6c9623323caca307969fb`, 23/23 extracted tests. Source version 0.3.8 is pending fresh artifact proof. Duplicate numbered records remain OPEN, and real independent-host acceptance is NOT RUN.
