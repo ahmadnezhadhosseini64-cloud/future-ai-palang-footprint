@@ -3,7 +3,7 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.9.9
+- Version: 1.10.0
 - Date: 2026-10-27
 - Exact Time: 11:25 local project time, minute precision; exact seconds not captured.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
@@ -2191,3 +2191,12 @@ The current root is [POINT-0/027](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261
 - Next execution: read-back and link audit; manifest exact-byte digest/package validation; paired Living Architecture Audit + Portable RAHM Conformance on one final SHA; clean independent-host import and cold recovery only with direct authorized runtime evidence.
 - Known unresolved gates remain OPEN: CURRENT-065/CURRENT-066, Issues #20/#21, Buffer/Persistent Memory, Dropbox, and real-host acceptance.
 - Current main must be re-discovered after these writes. Previously passing tests on a different SHA do not certify the latest main.
+
+
+## POINT-0/043 — Independent-host recovery hard audit
+
+- Chain: POINT-0/043 → IN-080 → OUT-079 → EVT-0217 → CURRENT-092 → NEXT-051.
+- Recovery protocol: [independent-host proof procedure](../مدل%20اولیه%20AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md).
+- Confirmed defect: run [40477792889](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40477792889) failed exact-byte SHA-256 reconciliation for NEXT-051; ZIP build/upload skipped. Workflow's IN/OUT test targeted stale checkpoint names and proved only bounded link equivalence.
+- Action: rerun portable conformance after manifest reclassification and current-chain update; verify exact final SHA, archive SHA-256, byte count and artifact; then perform real independent-host import/read-back if an authorized host is available.
+- Status: ZIP for current snapshot NOT YET VERIFIED; real host import NOT RUN; restart persistence NOT RUN; graph adjudication OPEN. NEXT-051 remains the only active queue; do not create NEXT-052.
