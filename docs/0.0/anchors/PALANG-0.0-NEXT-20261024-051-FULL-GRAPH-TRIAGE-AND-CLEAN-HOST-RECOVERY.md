@@ -340,3 +340,13 @@ NEXT-051 remains OPEN/LIVING until all remaining acceptance gates are satisfied;
 - Canonical mirror source blob `de1b75f07241c9b313e476af5f1417177ff78c10` remains unchanged. Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, version ID 7, reads 10,480 chars vs source 10,479; the only difference is one extra trailing LF. Semantic comparison passed within the approved <=7-character tolerance; no Library rewrite was performed.
 - Exact-SHA audit/conformance receipts currently available: [Living Architecture Audit 40449320066](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40449320066) and [Portable RAHM Conformance 40449320049](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40449320049), both successful on `77cb3b725d493cf92af6a95d4b7a00888fbdb7bc`. Pre-registration main `9124fd841f357889bdc5c8604effb7cb368b56cc` is newer and not covered by that pair; every later head needs its own pair.
 - Keep CURRENT-065/CURRENT-066 unresolved; preserve all roots and duplicate/collision records. Issues #20/#21 stay OPEN. Actual external-host import, cold start, restart, persistence and round-trip remain NOT RUN without direct receipts. Continue this existing queue; do not create NEXT-052.
+
+## Continuation ledger — POINT-0/041 (2026-10-27)
+
+- New successor anchor: [POINT-0/041](./GPT6-RAHM-USER-POINT-0-20261027-041-CURRENT-INTERACTION-ANCHOR.md).
+- Interaction chain: [IN-078](./PALANG-0.0-IN-20261027-078-CURRENT-INTERACTION.md) → [OUT-077](./PALANG-0.0-OUT-20261027-077-CURRENT-INTERACTION.md) → [EVT-0215](../../architecture/BEHAVIOR-TRACE/EVT-0215-CURRENT-INTERACTION-POINT-041-2026-10-27.md) → [CURRENT-090](./PALANG-0.0-CURRENT-20261027-090-CURRENT-INTERACTION.md).
+- Reference index, integration queue, and living mother now link to the successor chain. Individual writes still require independent read-back and relative-link validation.
+- The portable export manifest has intentionally not been edited with guessed digests. Add the new chain only through the supported digest/package workflow and record exact-byte receipts.
+- Last observed prior main HEAD was 9636b11bacb0ee010ac4bc71ffafdb4b8a592e4b; paired tests cited before this continuation passed on 8007ea3acc218d78065fd8ed78a55c71be38df59. These are different SHAs. Re-discover current main and run audit plus conformance on the same final SHA before claiming current-head validation.
+- Independent AI-host import/cold recovery: NOT RUN. Buffer/Persistent Memory: NOT VERIFIED. Dropbox: OPEN / NOT VERIFIED. CURRENT-065/CURRENT-066 and Issues #20/#21 remain OPEN.
+- NEXT-051 remains the sole active queue; do not create NEXT-052.
