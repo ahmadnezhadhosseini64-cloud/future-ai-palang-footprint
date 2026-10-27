@@ -8,6 +8,8 @@
 - Current checkpoint: [CURRENT-101](./PALANG-0.0-CURRENT-20261027-101-HOST-GROWTH-AND-REPOSITORY-LOOP.md)
 - Queue: [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
 - Package contract: [HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md](../../../prototype/haif-gpt6-starter/HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md)
+- Repository export manifest: [EXPORT_MANIFEST.json](../../portable/RAHM/EXPORT_MANIFEST.json)
+- Repository recovery protocol: [INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md](../../architecture/مدل%20اولیه%20AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md)
 
 ## Implemented in source
 - Defined the host → evidence capture → durable queue → authorized GitHub worker → read-back → behavior classification → RAHM validation → Master/Child decision loop.
