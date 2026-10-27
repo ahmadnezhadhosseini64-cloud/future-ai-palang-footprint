@@ -9,7 +9,7 @@
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: POINT-0/043 is the latest registered continuation root; CURRENT-092 is the active execution checkpoint; manifest v1.8.23 classifies NEXT-051 and the mutable workflow as live references; recovery conformance now targets IN-080 / OUT-079. Fresh digest/package receipt on one exact final SHA is PENDING; real independent-host import remains NOT RUN; graph identity/parent/time adjudication remains OPEN; NEXT-051 remains the single active queue; no NEXT-052 placeholder.
+- Status: POINT-0/043 is the canonical 0+ production marker; CURRENT-093 is the active 0.0 continuation. Existing starter package line advanced to v0.3.1 with recovery protocol in-package; exact artifact digest and clean extraction receipt are PENDING. Real independent-host import remains NOT RUN; graph identity/parent/time adjudication remains OPEN; NEXT-051 remains the single active queue; no NEXT-052 placeholder.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
@@ -2200,3 +2200,16 @@ The current root is [POINT-0/027](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261
 - Confirmed defect: run [40477792889](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40477792889) failed exact-byte SHA-256 reconciliation for NEXT-051; ZIP build/upload skipped. Workflow's IN/OUT test targeted stale checkpoint names and proved only bounded link equivalence.
 - Action: rerun portable conformance after manifest reclassification and current-chain update; verify exact final SHA, archive SHA-256, byte count and artifact; then perform real independent-host import/read-back if an authorized host is available.
 - Status: ZIP for current snapshot NOT YET VERIFIED; real host import NOT RUN; restart persistence NOT RUN; graph adjudication OPEN. NEXT-051 remains the only active queue; do not create NEXT-052.
+
+
+## CURRENT-093 — update existing starter ZIP, not a separate project
+
+- [x] Corrected prior status: previous turn changed docs/manifest but did not update the starter ZIP.
+- [x] Existing package lineage preserved: Stable ID HAIF-GPT6-PORTABLE-STARTER-20261025-004; version advances from 0.3.0 to 0.3.1, and historic 0.3.0 digest remains immutable.
+- [x] Added independent-host recovery protocol to the package source and included it in package manifest.
+- [x] Added tests for package version, stable ID and protocol acceptance boundaries.
+- [x] Updated the existing audit workflow to build a clean v0.3.1 ZIP and calculate SHA-256.
+- [ ] Verify fresh artifact from the exact final commit; inspect package member list, bytes, SHA-256 and tests.
+- [ ] Independent host import, negative controls, read-back and restart persistence.
+
+NEXT-051 remains the only active queue. Do not create NEXT-052.

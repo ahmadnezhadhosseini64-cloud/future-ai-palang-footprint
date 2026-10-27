@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-27 — POINT-0/043 → IN-080 → OUT-079 → EVT-0217 → CURRENT-092; NEXT-051 remains the sole active queue; real-host acceptance and graph recovery remain OPEN.
+**Last Updated:** 2026-10-27 — POINT-0/043 (0+) → IN-081 → OUT-080 → EVT-0218 → CURRENT-093; NEXT-051 remains the sole active queue; package build receipt and real-host acceptance remain OPEN.
 
 ## Canonical References
 
@@ -1828,3 +1828,17 @@ Both Path A (portable initial model and independent-host recovery) and Path B (e
 | HAIF-IHRP-001 | `docs/architecture/مدل اولیه AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md` | Strict independent-host acceptance procedure |
 
 The current ZIP is not considered delivered until a fresh portable-conformance run succeeds and exposes the package artifact. A CI pass does not establish real AI-host acceptance.
+
+
+## Latest 0+ production and package update — CURRENT-093
+
+| ID | Canonical path | Role / status |
+|---|---|---|
+| HAIF-POINT-0-043 | `docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-043-INDEPENDENT-HOST-RECOVERY-HARD-AUDIT.md` | Canonical root with 0+ production marker; not a second root |
+| HAIF-IN-081 | `docs/0.0/anchors/PALANG-0.0-IN-20261027-081-ZIP-UPDATE-AND-POINT-0PLUS.md` | User correction input |
+| HAIF-OUT-080 | `docs/0.0/anchors/PALANG-0.0-OUT-20261027-080-ZIP-UPDATE-AND-POINT-0PLUS.md` | Implementation record; ZIP build receipt pending |
+| HAIF-EVT-0218 | `docs/architecture/BEHAVIOR-TRACE/EVT-0218-EXISTING-ZIP-UPDATE-AND-0PLUS-2026-10-27.md` | Existing package update event |
+| HAIF-CURRENT-093 | `docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-093-EXISTING-ZIP-UPDATE.md` | Active 0.0 continuation |
+| HAIF-IHRP-001 | `prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md` | Included in existing starter package line v0.3.1 |
+
+The v0.3.0 digest remains historical evidence. A fresh CI artifact and SHA-256 must be verified before marking the updated ZIP delivered. Real AI-host import remains NOT RUN.

@@ -375,3 +375,12 @@ NEXT-051 remains OPEN/LIVING until all remaining acceptance gates are satisfied;
 - [ ] Continue individual identity, parent-edge and timestamp adjudication; preserve all unresolved findings.
 
 Status remains OPEN / LIVING / NOT COMPLETE. CI or synthetic runtime transfer is not a substitute for real independent AI-host acceptance. Do not create NEXT-052.
+
+
+## CURRENT-093 — update existing starter ZIP and preserve 0+ lineage
+
+- Chain: POINT-0/043 (0+) → IN-081 → OUT-080 → EVT-0218 → CURRENT-093 → NEXT-051.
+- Existing package stable ID remains HAIF-GPT6-PORTABLE-STARTER-20261025-004. Source package version advances from v0.3.0 to v0.3.1; previous digest remains historical evidence.
+- The recovery protocol is included inside the same starter package family. The existing audit workflow now creates the versioned ZIP from a clean package root, excludes Python cache files and prints exact SHA-256.
+- Build receipt and artifact validation remain OPEN until a fresh workflow run passes and its artifact is inspected.
+- Real independent AI-host import and restart persistence remain NOT RUN / NOT VERIFIED.
