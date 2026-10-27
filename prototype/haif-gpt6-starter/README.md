@@ -1,6 +1,6 @@
 # HAIF GPT-6 Portable Starter v0.3.1
 
-This is the updated release of the existing HAIF starter package, not a separate project. It extends the v0.3.0 0/0+ bootstrap package at the same source-package line; history and prior digests remain preserved. It does not replace the living master, historical anchors or NEXT-051.
+This is the updated release of the existing HAIF starter package, not a separate project. It updates the existing v0.3.0 0/0+ bootstrap package at the same stable package identity and canonical ZIP filename; history and prior digests remain preserved. It does not replace the living master, historical anchors or NEXT-051.
 
 ## What is implemented
 - Standard-library Python continuity engine.

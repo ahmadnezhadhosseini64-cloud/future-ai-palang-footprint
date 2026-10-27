@@ -73,8 +73,8 @@ It creates one canonical point labelled `0` and `0+`, a child continuation `0.0`
 
 
 ## Current 0+ / 0.0 package continuation (2026-10-27)
-- POINT-0/043 is the 0+ production marker on the canonical root, not a second canonical point.
-- Current continuation: IN-081 → OUT-080 → EVT-0218 → CURRENT-093 → NEXT-051.
+- POINT-0/043 carries the 0+ production marker on canonical root 0. POINT-0/044 is a 0.0 continuation anchor, not a second canonical root.
+- Current continuation: POINT-0/043 (0+ marker on canonical 0) → POINT-0/044 (0.0 continuation anchor, not a second canonical root) → IN-082 → OUT-081 → EVT-0219 → CURRENT-094 → NEXT-051.
 - Existing starter package line is version 0.3.1; the prior 0.3.0 digest remains historical evidence.
 - Use INDEPENDENT_HOST_RECOVERY_PROTOCOL.md for clean-host import, IN/OUT reconstruction, negative controls, read-back and restart gates.
 - A CI-built ZIP or local runtime test does not prove acceptance by a real independent AI host.

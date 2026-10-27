@@ -394,3 +394,14 @@ Status remains OPEN / LIVING / NOT COMPLETE. CI or synthetic runtime transfer is
 - The historic v0.3.0 digest remains historical and must not be reused as the new digest.
 - Pending until fresh workflow result/artifact is inspected: successful build, current archive SHA-256, byte count, download/read-back. Real independent AI-host acceptance remains NOT RUN.
 - NEXT-051 remains the only active queue; do not create NEXT-052.
+
+
+## CURRENT-094 — verified existing starter ZIP replacement and identity reconciliation
+
+- [x] Rebuilt the existing package under its established canonical filename; no separate version-named ZIP is published.
+- [x] Internal package version 0.3.1; stable package identity retained.
+- [x] Archive receipt verified on run [40489299348](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40489299348): 18,815 bytes; SHA-256 b3429acaa5d33fb93dec7ad0ba8c1cdf233fbb28b8839794eea74457013e1309; 8-file inventory; ZIP integrity PASS; 15/15 tests after fresh extraction.
+- [x] Exact-byte RAHM manifest scan and current IN-082 / OUT-081 recovery link check passed on the same workflow run.
+- [x] Reconciled identity: POINT-0/043 is the 0+ marker on canonical 0; POINT-0/044 is retained as a 0.0 continuation anchor, not a second canonical root.
+- [ ] Real independent AI-host import, negative controls, independent read-back and restart persistence.
+- NEXT-051 remains the only active queue; no NEXT-052.

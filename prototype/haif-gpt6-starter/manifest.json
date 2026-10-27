@@ -19,12 +19,12 @@
     "EVT-0218",
     "CURRENT-093",
     "POINT-0/043 (0+ production marker)",
-    "POINT-0/044 (canonical point 0)",
+    "POINT-0/044 (0.0 continuation anchor; canonical root identity remains 0/0+)",
     "IN-082",
     "OUT-081",
     "EVT-0219",
     "CURRENT-094",
-    "NEXT-051"
+    "CURRENT-094 — latest 0.0 continuation checkpoint"
   ],
   "entrypoint": "engine.py",
   "host_instructions": "GPT6_HOST_INSTRUCTIONS.md",

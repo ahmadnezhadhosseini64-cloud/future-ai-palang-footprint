@@ -191,3 +191,12 @@ class PortablePackageProtocolTests(unittest.TestCase):
         protocol = (package / "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md").read_text(encoding="utf-8")
         for required in ("clean host", "Negative controls", "Independent read-back", "Restart/persistence", "NOT RUN"):
             self.assertIn(required.casefold(), protocol.casefold())
+
+
+    def test_current_chain_does_not_promote_point_044_to_a_second_zero_root(self):
+        package = Path(__file__).parent
+        manifest = json.loads((package / "manifest.json").read_text(encoding="utf-8"))
+        architecture = manifest["parent_architecture"]
+        self.assertIn("POINT-0/043 (0+ marker)", architecture)
+        self.assertIn("POINT-0/044 (0.0 continuation anchor; canonical root identity remains 0/0+)", architecture)
+        self.assertIn("CURRENT-094 — latest 0.0 continuation checkpoint", architecture)
