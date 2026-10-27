@@ -35,7 +35,7 @@ A GPT chat instruction or uploaded knowledge file cannot, by itself, create dura
 
 ## Startup / recovery sequence
 1. Read this file, manifest.json, and INDEPENDENT_HOST_RECOVERY_PROTOCOL.md.
-2. Retrieve the repository's living master, latest verified CURRENT checkpoint (CURRENT-093 for this package-update chain), NEXT-051, 0.0 index and Reference Index. Preserve CURRENT-065/CURRENT-066 ambiguity unless source evidence resolves it.
+2. Retrieve the repository's living master, latest verified CURRENT checkpoint (CURRENT-094 for this package-update chain), NEXT-051, 0.0 index and Reference Index. Preserve CURRENT-065/CURRENT-066 ambiguity unless source evidence resolves it.
 3. Run the repository pointer checker. Preserve AMBIGUOUS results.
 4. Load the latest verified portable state bundle if available; verify SHA-256 before trusting it.
 5. Resume the first open acceptance gate. Do not create a new planning document instead of executing a gate.
@@ -78,3 +78,7 @@ It creates one canonical point labelled `0` and `0+`, a child continuation `0.0`
 - Existing starter package line is version 0.3.1; the prior 0.3.0 digest remains historical evidence.
 - Use INDEPENDENT_HOST_RECOVERY_PROTOCOL.md for clean-host import, IN/OUT reconstruction, negative controls, read-back and restart gates.
 - A CI-built ZIP or local runtime test does not prove acceptance by a real independent AI host.
+
+
+## Existing package update rule
+Do not treat a repository source update as a ZIP update. The canonical starter ZIP keeps the established filename `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip` and stable package identity; rebuild the same package from the current source, then verify its exact archive hash, byte count and artifact read-back. Do not create a separate version-named ZIP. Real independent-host acceptance remains a separate evidence gate.
