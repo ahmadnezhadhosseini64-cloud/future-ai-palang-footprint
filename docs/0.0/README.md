@@ -1759,3 +1759,11 @@ The canonical chain is [POINT-0/032](./anchors/GPT6-RAHM-USER-POINT-0-20261026-0
 - Path A continues toward real-host import and I1–I8 validation; actual host import/restart/persistence/round-trip remain NOT RUN until direct receipts exist.
 - Path B gaps are COVERED_FOR_CONTINUITY / REVERSIBLE only; underlying issues remain OPEN / UNRESOLVED. The existing Recovery Bridge remains the cover for two missing-parent edges.
 - [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md) remains the sole active queue; no competing queue created.
+
+
+### Canonical repository time bindings — POINT-0/038
+- [POINT-0/038](../architecture/BEHAVIOR-TRACE/TIME-BINDING-POINT-0-038-2026-10-27.md) — 2026-10-27T04:11:51Z / 07:41:51 Tehran.
+- [IN-075](../architecture/BEHAVIOR-TRACE/TIME-BINDING-IN-075-POINT-0-038-2026-10-27.md) — 2026-10-27T04:11:55Z / 07:41:55 Tehran.
+- [OUT-074](../architecture/BEHAVIOR-TRACE/TIME-BINDING-OUT-074-POINT-0-038-2026-10-27.md) — 2026-10-27T04:11:59Z / 07:41:59 Tehran.
+- [EVT-0209](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0209-POINT-0-038-2026-10-27.md) — 2026-10-27T04:12:03Z / 07:42:03 Tehran.
+- [CURRENT-087](../architecture/BEHAVIOR-TRACE/TIME-BINDING-CURRENT-087-POINT-0-038-2026-10-27.md) — 2026-10-27T04:12:06Z / 07:42:06 Tehran.
