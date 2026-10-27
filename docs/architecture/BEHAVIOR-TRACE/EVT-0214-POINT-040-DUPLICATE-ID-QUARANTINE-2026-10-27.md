@@ -34,3 +34,6 @@ Before assigning a new POINT, EVT, CURRENT, IN or OUT identifier, query the live
 - Update indexes/mother/queue links and independently read back each change.
 - Run the supported package digest/conformance workflow and Living Architecture Audit on the exact same final main SHA.
 - Independent-host import and cold recovery remain NOT RUN until direct receipts exist.
+
+
+- Time binding: [TIME-BINDING-EVT-0214](./TIME-BINDING-EVT-0214-POINT-040-DUPLICATE-ID-QUARANTINE-2026-10-27.md).
