@@ -2,24 +2,24 @@
 
 - Stable ID: `PALANG-TIME-BINDING-EVT-0211-LIVE-MIRROR-SYNC-2026-10-27`
 - Production ID: `PALANG-TIME0211-2026-10-27-001`
-- Version: 1.0.0
-- Status: READ-BACK VERIFIED / ACTIVE — full time-binding file independently fetched and matched after creation.
+- Version: 1.0.1
+- Status: REGISTERED / READ-BACK PENDING
 - Target event: [EVT-0211](./EVT-0211-LIVE-MIRROR-SYNC-RECHECK-2026-10-27.md)
 - Clock rule: actual final-change Git commit UTC is canonical for each repository artifact; Tehran is derived from that same instant (+03:30). User-message, operation, workflow and Library metadata times are distinct and must not be substituted for commit time.
 
 ## 1. Final-change commit of EVT-0211
 
-- Target commit: `211af1b049db4df2eecb2b2a734b210020192ebb`.
-- Commit message: `Verify read-back for EVT-0211`.
-- Canonical repository registration UTC: `2026-10-27T06:23:04Z`.
-- Asia/Tehran equivalent: `2026-10-27T09:53:04+03:30`.
+- Target commit: `725f917e6b7719ca0461101ba5000a24615f3414`.
+- Commit message: `Verify revised EVT-0211 read-back`.
+- Canonical repository registration UTC: `2026-10-27T06:29:16Z`.
+- Asia/Tehran equivalent: `2026-10-27T09:59:16+03:30`.
 - The final event content was independently fetched after its status update and matched exactly. This timestamp describes the event file's final-change commit, not the Library read operation or automation start time.
 
 ## 2. Final-change commit times for registration artifacts
 
 | Artifact | Final-change commit | Canonical UTC | Asia/Tehran (+03:30) |
 |---|---|---|---|
-| EVT-0211 | `211af1b049db4df2eecb2b2a734b210020192ebb` | `2026-10-27T06:23:04Z` | `2026-10-27T09:53:04+03:30` |
+| EVT-0211 | `725f917e6b7719ca0461101ba5000a24615f3414` | `2026-10-27T06:29:16Z` | `2026-10-27T09:59:16+03:30` |
 | Behavior-trace index | `e0d810d47503f67b992a7bd93970311c79b1b41d` | `2026-10-27T06:23:53Z` | `2026-10-27T09:53:53+03:30` |
 | Reference index | `9184e278783b7f66bc53651ce92030ed3fbbadd9` | `2026-10-27T06:23:56Z` | `2026-10-27T09:53:56+03:30` |
 | Integration queue | `cf0d27e6c1361620510a56dfcaaa148cdbf584ca` | `2026-10-27T06:24:00Z` | `2026-10-27T09:54:00+03:30` |
@@ -34,7 +34,7 @@
 
 - Main observed immediately before the time-binding write: `eec8aef310ff0861eb38f447d0e60c3dd726678f`; commit UTC `2026-10-27T06:25:45Z`; Tehran `2026-10-27T09:55:45+03:30`. This is not a statement that main remains at that SHA after this file is written.
 - Portable RAHM Conformance [run 40461038215](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40461038215) passed on tested SHA `10faee84ebecf8a7cefb1392850f86f087498f41` after the NEXT-051 manifest digest correction.
-- Living Architecture Audit [run 40461038119](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40461038119) failed on that same SHA because this time-binding target had not yet been created; it reported three broken local links from NEXT-051, Reference Index and Integration Queue to this path. The missing target is now being registered. This prior failure remains evidence; a new audit must verify the post-binding exact final main SHA.
+- Living Architecture Audit [run 40461038119](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40461038119) failed on SHA `10faee84ebecf8a7cefb1392850f86f087498f41` because this time-binding target had not yet been created; it reported three broken local links from NEXT-051, Reference Index and Integration Queue to this path. After the binding was created, Living Architecture Audit [run 40461204175](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40461204175) and Portable RAHM Conformance [run 40461203987](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40461203987) both passed on the same tested SHA `eade6e97e00c10c4e9681da048667bb9955c7a03`. Evidence Gate then moved main to `cbbe2a66858bd82d7e039f5103fa4e3c1315236a`; that newer head was not covered by the pair.
 - Earlier Portable RAHM Conformance [run 40460883908](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40460883908) failed on SHA `760112637c9676826b7cc2ad256da8f5c646da93` because the manifest still pinned the old NEXT-051 blob/digest. The correction in manifest commit `10faee84ebecf8a7cefb1392850f86f087498f41` set the entry to blob `e2b9c01f35870b911c15469771f3be0fd02c937e` and SHA-256 `c12cb9be6d1053fefcfb8c3167539b63c5aa4c6f8b9f0d49609f289b9d60287c`; the later conformance run passed on that correction's tested SHA.
 
 ## 4. Source and Library time boundary
@@ -45,6 +45,10 @@
 - Exact Library read operation time: UNKNOWN. The runtime timestamp observed for this run is not the read operation timestamp.
 - Buffer and Persistent Memory: NOT VERIFIED. Dropbox: OPEN / NOT VERIFIED. External interactive-host import/recovery: NOT RUN.
 
-## 5. Verification scope
+## 5. Additional portable-export coverage finding
+
+- Current `docs/portable/RAHM/EXPORT_MANIFEST.json` blob `5f4af3d2573bed3102d69597a398708fecd63be5`, version `1.8.22`, has 127 `live_reference_files` entries but does not include POINT-0/038, CURRENT-087, EVT-0211 or this time binding. Its list still ends at older CURRENT-083-era references. This package-coverage gap remains OPEN under NEXT-051; no broad manifest refresh was attempted in this mirror run.
+
+## 6. Verification scope
 
 This binding records repository commit provenance and the workflow observations listed above. It does not prove byte-for-byte identity between source and Library, does not imply a Library write, and does not close CURRENT-065/CURRENT-066, Issues #20/#21, graph gaps or external-host gates.
