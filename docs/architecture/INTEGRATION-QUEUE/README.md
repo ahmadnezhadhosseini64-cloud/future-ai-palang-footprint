@@ -2145,3 +2145,12 @@ The current root is [POINT-0/027](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261
 - Source blob unchanged; Library version ID 7 differs only by one additional trailing LF (edit distance 1, semantic fields match). No Library rewrite was made because no supported source_file_ref/export-snapshot upload route was available. Canonical source remains authoritative.
 - At the start of this registration, main was `9124fd841f357889bdc5c8604effb7cb368b56cc`; the most recent full audit/conformance pair was successful only on `77cb3b725d493cf92af6a95d4b7a00888fbdb7bc`. New registration commits advance main; the final head remains NOT VERIFIED until the exact-SHA pair passes.
 - CURRENT-065/CURRENT-066 overlay-manifest lineage, two unresolved parent edges, identity/duplicate groups, Issues #20/#21, and external-host acceptance remain OPEN/NOT RUN as applicable. NEXT-051 remains the sole queue; no NEXT-052.
+
+
+## New continuation registration — POINT-0/039 → CURRENT-088 — 2026-10-27
+
+- Root: [POINT-0/039](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-039-MIRROR-SYNC-AND-ARCHITECTURE-CONTINUATION.md).
+- Chain: [IN-076](../../0.0/anchors/PALANG-0.0-IN-20261027-076-POINT-0-039-USER-INSTRUCTION.md) → [OUT-075](../../0.0/anchors/PALANG-0.0-OUT-20261027-075-POINT-0-039-REGISTRATION-AND-NEXT-STEPS.md) → [EVT-0212](../BEHAVIOR-TRACE/EVT-0212-POINT-0-039-REGISTRATION-AND-ARCHITECTURE-CONTINUATION-2026-10-27.md) → [CURRENT-088](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-088-POINT-0-039-EXECUTION.md).
+- Sole queue remains NEXT-051; do not create NEXT-052.
+- Next actions: rediscover current main and exact tested SHAs; repair EXPORT_MANIFEST live-reference coverage only with verified hashes; audit CURRENT-065/CURRENT-066 lineage without inference; obtain audit and portable conformance PASS on the same final SHA.
+- Open: Issues #20/#21, historical identity groups, real-host import/recovery. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external-host recovery NOT RUN without direct receipts.
