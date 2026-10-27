@@ -9,7 +9,7 @@
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: POINT-0/038 is the latest continuation root; CURRENT-087 is the active execution checkpoint; the latest inspected main head was `d1207fe71ac95b4c6606226486cc4b0cfe9dd6fd`; the most recent audit/conformance pair passed on tested SHA `62f8007deefbfbdb0fbe4156074f069f070fc7f2`, not the later head; external interactive-host import remains NOT RUN; 2 parent edges and identity groups stay OPEN; NEXT-051 remains the single active queue; no NEXT-052 placeholder.
+- Status: POINT-0/043 is the latest registered continuation root; CURRENT-092 is the active execution checkpoint; manifest v1.8.23 classifies NEXT-051 and the mutable workflow as live references; recovery conformance now targets IN-080 / OUT-079. Fresh digest/package receipt on one exact final SHA is PENDING; real independent-host import remains NOT RUN; graph identity/parent/time adjudication remains OPEN; NEXT-051 remains the single active queue; no NEXT-052 placeholder.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
