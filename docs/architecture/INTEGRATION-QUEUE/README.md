@@ -2163,3 +2163,14 @@ The current root is [POINT-0/027](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261
 - Host boot contract: [NEW-HOST-BOOTSTRAP](../مدل%20اولیه%20AI/NEW-HOST-BOOTSTRAP-2026-10-27.md).
 - Continue under the existing NEXT-051 only. Reconcile portable manifest coverage with exact workflow-generated digests, then run audit and conformance on the same final main SHA.
 - Preserve CURRENT-065/CURRENT-066 as OPEN; Issues #20/#21 remain open; no independent host, persistence or external destination status is upgraded without direct evidence.
+
+
+## POINT-0/040 — Initial model transfer and architecture hard audit — 2026-10-27
+
+- Root: [POINT-0/040](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-040-INITIAL-MODEL-TRANSFER-AND-ARCHITECTURE-HARD-AUDIT.md).
+- Checkpoint: [CURRENT-089](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-089-INITIAL-MODEL-TRANSFER-EXECUTION.md).
+- Event: [EVT-0213](../BEHAVIOR-TRACE/EVT-0213-POINT-0-040-INITIAL-MODEL-TRANSFER-AND-HARD-AUDIT-2026-10-27.md).
+- Portable contract: [INITIAL-MODEL-HOST-TRANSFER-BOOTSTRAP](../../portable/RAHM/INITIAL-MODEL-HOST-TRANSFER-BOOTSTRAP-2026-10-27.md); host prompt: [HOST-BOOTSTRAP-PROMPT](../../portable/RAHM/HOST-BOOTSTRAP-PROMPT-2026-10-27.md).
+- NEXT-051 remains the only active queue. Do not create NEXT-052.
+- Ordered next work: verify manifest hashes; audit identity/links/pointers; preserve CURRENT-065/CURRENT-066 as OPEN; inspect Issues #20/#21; run audit and Portable RAHM Conformance on the same final main SHA; then seek direct independent-host import and cold-recovery receipts.
+- No claim of Library write, external persistence, host import or cold recovery is made by these repository edits.
