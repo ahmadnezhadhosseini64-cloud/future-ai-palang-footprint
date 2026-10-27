@@ -1,4 +1,4 @@
-# HAIF GPT-6 Portable Starter v0.3.1
+# HAIF GPT-6 Portable Starter v0.3.2
 
 This is the updated release of the existing HAIF starter package, not a separate project. It updates the existing v0.3.0 0/0+ bootstrap package at the same stable package identity and canonical ZIP filename; history and prior digests remain preserved. It does not replace the living master, historical anchors or NEXT-051.
 
@@ -11,7 +11,7 @@ This is the updated release of the existing HAIF starter package, not a separate
 - Evidence-gated gap closure and Master → Child promotion.
 - Portable bundle export/import with SHA-256 verification, atomic local writes and validated read-back.
 - Independent-host recovery protocol included in this package: exact package digest, clean-host import, independent reconstruction from IN and OUT, negative controls, read-back and restart/persistence acceptance.
-- Current continuation reference: POINT-0/044 (canonical 0; parent production marker POINT-0/043 (0+)) → IN-082 → OUT-081 → EVT-0219 → CURRENT-094 → NEXT-051.
+- Current continuation reference: POINT-0/046 → IN-084 → OUT-083 → EVT-0221 → CURRENT-096 → NEXT-051; POINT-0/043 remains the 0+ production marker.
 
 ## Bootstrap
 ~~~bash
@@ -51,3 +51,8 @@ CI tests validate the local engine and protocol presence. CI is not proof of act
 The package remains the same established starter package and stable identity. The canonical replacement archive filename is `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip` for compatibility with the original package record. Its contents are rebuilt from this existing source folder; do not publish a second version-named ZIP. The internal manifest/version and exact ZIP digest must describe the actual rebuilt bytes. The historic v0.3.0 digest is not the digest of the updated archive.
 
 The recovery protocol is included in the existing package line. A ZIP build or CI pass does not prove a real independent AI host accepted the package.
+
+
+## Current continuous-update checkpoint
+
+The current 0.0 chain is POINT-0/046 → IN-084 → OUT-083 → EVT-0221 → CURRENT-096 → NEXT-051. The stable package ID and canonical ZIP filename do not change. Internal version 0.3.2 identifies the next source content; the new archive digest is pending until the exact-head CI artifact is downloaded, inspected and tested. The prior 0.3.1 ZIP receipt remains historical evidence.

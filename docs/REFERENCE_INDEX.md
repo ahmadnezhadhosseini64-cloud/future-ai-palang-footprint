@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-27 — POINT-0/045 → IN-083 → OUT-082 → EVT-0220 → CURRENT-095; same canonical starter ZIP updated/read-back verified; NEXT-051 remains the sole active queue; real-host acceptance remains OPEN.
+**Last Updated:** 2026-10-27 — POINT-0/046 → IN-084 → OUT-083 → EVT-0221 → CURRENT-096; same-package architecture retained; exact-head ZIP receipt pending; NEXT-051 remains sole active queue; real-host acceptance OPEN.
 
 ## Canonical References
 
@@ -1877,3 +1877,17 @@ The v0.3.0 digest remains historical evidence. A fresh CI artifact and SHA-256 m
 | HAIF-CURRENT-095 | `docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-095-INITIAL-ZIP-CONTINUITY.md` | Active 0.0 continuation |
 
 Canonical ZIP: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`; internal package version 0.3.1; size 19,042 bytes; SHA-256 `3a17f64880519a0da714f09a1dc8065fafcd88321fa5674eb2d995dfd8f63e83`; workflow 40489753805; fresh-extraction tests 16/16 PASS. Independent-host acceptance remains OPEN / NOT RUN.
+
+
+## POINT-0/046 — Same initial ZIP continuity and 0.0 continuation
+
+| ID | Canonical path | Role / status |
+|---|---|---|
+| HAIF-POINT-0-046 | `docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-046-SAME-STARTER-ZIP-CONTINUITY.md` | Current interaction point 0 |
+| HAIF-IN-084 | `docs/0.0/anchors/PALANG-0.0-IN-20261027-084-SAME-STARTER-ZIP-CONTINUITY.md` | User intent and package lineage |
+| HAIF-OUT-083 | `docs/0.0/anchors/PALANG-0.0-OUT-20261027-083-SAME-STARTER-ZIP-CONTINUITY.md` | Same-package update contract |
+| HAIF-EVT-0221 | `docs/architecture/BEHAVIOR-TRACE/EVT-0221-SAME-STARTER-ZIP-CONTINUITY-2026-10-27.md` | Event and evidence boundary |
+| HAIF-CURRENT-096 | `docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-096-SAME-STARTER-ZIP-CONTINUITY.md` | Active 0.0 checkpoint |
+| HAIF-IHRP-001 | `prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md` | Independent host recovery protocol in the same package |
+
+Verified prior canonical ZIP: 19,042 bytes, SHA-256 `3a17f64880519a0da714f09a1dc8065fafcd88321fa5674eb2d995dfd8f63e83`; artifact wrapper SHA-256 is a different digest. Fresh exact-head build required after this checkpoint's source/manifest changes. Real independent-host acceptance remains NOT RUN.

@@ -432,3 +432,14 @@ Status remains OPEN / LIVING / NOT COMPLETE. CI or synthetic runtime transfer is
 - Workflow 40489753805; artifact ID 12726786662; size 19,042 bytes; SHA-256 `3a17f64880519a0da714f09a1dc8065fafcd88321fa5674eb2d995dfd8f63e83`; fresh-extraction tests 16/16 PASS; CRC and 8-file inventory PASS.
 - Remaining mandatory gap: actual import into a genuinely independent AI host, reconstruct from IN and OUT separately, negative controls, independent read-back and cold restart/persistence. Do not infer these from CI.
 - Continue modifying the same source package and rebuilding the same canonical ZIP. NEXT-051 remains the only active queue; do not create NEXT-052.
+
+
+## POINT-0/046 → CURRENT-096 — one package, continuous updates
+
+- Current user point: [POINT-0/046](./GPT6-RAHM-USER-POINT-0-20261027-046-SAME-STARTER-ZIP-CONTINUITY.md).
+- Interaction chain: [IN-084](./PALANG-0.0-IN-20261027-084-SAME-STARTER-ZIP-CONTINUITY.md) → [OUT-083](./PALANG-0.0-OUT-20261027-083-SAME-STARTER-ZIP-CONTINUITY.md) → [EVT-0221](../../architecture/BEHAVIOR-TRACE/EVT-0221-SAME-STARTER-ZIP-CONTINUITY-2026-10-27.md) → [CURRENT-096](./PALANG-0.0-CURRENT-20261027-096-SAME-STARTER-ZIP-CONTINUITY.md).
+- Keep one package Stable ID `HAIF-GPT6-PORTABLE-STARTER-20261025-004`, one canonical archive filename `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`, and the existing source directory. Update internal package version only when contents change; rebuild same archive name and capture new hash/size/inventory/tests.
+- Prior verified archive: 19,042 bytes; SHA-256 `3a17f64880519a0da714f09a1dc8065fafcd88321fa5674eb2d995dfd8f63e83`; 8 members; 16/16 tests PASS. This is a historical receipt for the prior tested bytes.
+- [ ] Verify new exact-head paired audit/conformance and inspect the rebuilt ZIP artifact after CURRENT-096 source/manifest lineage update.
+- [ ] Actual independent-host import, separate IN/OUT reconstruction, negative controls, read-back and restart persistence remain OPEN / NOT RUN.
+- No NEXT-052.

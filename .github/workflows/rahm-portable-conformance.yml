@@ -53,7 +53,7 @@ jobs:
           assert invalid_errors, "Invalid fixture unexpectedly passed"
           print("SCHEMA_CONFORMANCE=PASS")
           PY
-      - name: Recover current canonical chain independently from IN-082 and OUT-081
+      - name: Recover current canonical chain independently from IN-084 and OUT-083
         run: |
           python - <<'PY'
           import json, re
@@ -61,11 +61,11 @@ jobs:
           from urllib.parse import unquote
           root = Path(".")
           sources = {
-              "IN": root / "docs/0.0/anchors/PALANG-0.0-IN-20261027-082-STARTER-ZIP-INPLACE-UPDATE.md",
-              "OUT": root / "docs/0.0/anchors/PALANG-0.0-OUT-20261027-081-STARTER-ZIP-INPLACE-UPDATE.md",
+              "IN": root / "docs/0.0/anchors/PALANG-0.0-IN-20261027-084-SAME-STARTER-ZIP-CONTINUITY.md",
+              "OUT": root / "docs/0.0/anchors/PALANG-0.0-OUT-20261027-083-SAME-STARTER-ZIP-CONTINUITY.md",
           }
           expected = {
-              "current": "PALANG-0.0-CURRENT-20261027-094-STARTER-ZIP-INPLACE-UPDATE.md",
+              "current": "PALANG-0.0-CURRENT-20261027-096-SAME-STARTER-ZIP-CONTINUITY.md",
               "next": "PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md",
               "master": "سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md",
               "protocol": "INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md",
@@ -90,7 +90,7 @@ jobs:
               content = path.read_text(encoding="utf-8")
               assert "NEXT-051" in content, f"{side} recovery did not preserve the sole active queue"
               assert "NOT VERIFIED" in content or "OPEN" in content, f"{side} recovery did not preserve unresolved gates"
-          evidence = {"test_id":"RAHM-IN-OUT-RECOVERY-094", "result":"PASS", "recovered_from":"IN-082 and OUT-081 independently", "canonical_state":recovered["IN"], "open_gates_preserved":True, "scope":"Current-chain link/checkpoint equivalence only; full canonical state and real independent-host acceptance require separate receipts."}
+          evidence = {"test_id":"RAHM-IN-OUT-RECOVERY-096", "result":"PASS", "recovered_from":"IN-084 and OUT-083 independently", "canonical_state":recovered["IN"], "open_gates_preserved":True, "scope":"Current-chain link/checkpoint equivalence only; full canonical state and real independent-host acceptance require separate receipts."}
           Path("rahm-recovery-equivalence.json").write_text(json.dumps(evidence, indent=2)+"\n", encoding="utf-8")
           print(json.dumps(evidence, indent=2))
           print("IN_OUT_RECOVERY_EQUIVALENCE=PASS")

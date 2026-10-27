@@ -9,7 +9,7 @@
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: POINT-0/043 is the canonical 0+ production marker; CURRENT-093 is the active 0.0 continuation. Existing starter package line advanced to v0.3.1 with recovery protocol in-package; exact artifact digest and clean extraction receipt are PENDING. Real independent-host import remains NOT RUN; graph identity/parent/time adjudication remains OPEN; NEXT-051 remains the single active queue; no NEXT-052 placeholder.
+- Status: POINT-0/046 is the current interaction point; CURRENT-096 is the active 0.0 continuation. The same starter package Stable ID and canonical ZIP filename are preserved; latest prior archive receipt is verified; fresh exact-head receipt for this continuation is pending. Real independent-host import remains NOT RUN; graph identity/parent/time adjudication remains OPEN; NEXT-051 remains the single active queue; no NEXT-052 placeholder.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
@@ -2236,3 +2236,13 @@ NEXT-051 remains the sole active queue; no NEXT-052.
 - [ ] For each future source change, rebuild the same canonical archive, inspect artifact, record exact hash/size/inventory and run all package tests; never use a stale digest.
 
 NEXT-051 remains the sole active queue; no NEXT-052.
+
+
+## POINT-0/046 → CURRENT-096 — same starter ZIP continuity
+
+- Current chain: [POINT-0/046](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-046-SAME-STARTER-ZIP-CONTINUITY.md) → [IN-084](../../0.0/anchors/PALANG-0.0-IN-20261027-084-SAME-STARTER-ZIP-CONTINUITY.md) → [OUT-083](../../0.0/anchors/PALANG-0.0-OUT-20261027-083-SAME-STARTER-ZIP-CONTINUITY.md) → [EVT-0221](../BEHAVIOR-TRACE/EVT-0221-SAME-STARTER-ZIP-CONTINUITY-2026-10-27.md) → [CURRENT-096](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-096-SAME-STARTER-ZIP-CONTINUITY.md).
+- One package only: Stable ID `HAIF-GPT6-PORTABLE-STARTER-20261025-004`; canonical filename `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`; source `prototype/haif-gpt6-starter/`. No separate version-named ZIP.
+- Prior archive receipt verified: 19,042 bytes, SHA-256 `3a17f64880519a0da714f09a1dc8065fafcd88321fa5674eb2d995dfd8f63e83`, 8 files, 16/16 tests PASS. The new exact-head run must produce its own receipt.
+- [ ] Verify audit + portable conformance on the same exact final SHA; inspect the latest artifact and nested ZIP digest/size/inventory/test output.
+- [ ] Independent AI-host import, independent IN/OUT reconstruction, negative controls, read-back and restart/persistence.
+- NEXT-051 remains the sole active queue. Do not create NEXT-052.
