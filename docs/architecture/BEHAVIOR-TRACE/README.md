@@ -946,7 +946,14 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Existing starter reused; external-host acceptance remains NOT RUN. NEXT-051 remains sole active queue.
 
 
-## EVT-0213 — POINT-0/040 Initial Model Transfer and Hard Audit — 2026-10-27
+## EVT-0214 — POINT-0/040 duplicate-ID quarantine — 2026-10-27
+
+- [EVT-0214](./EVT-0214-POINT-040-DUPLICATE-ID-QUARANTINE-2026-10-27.md) records the identifier collision found during new-host handoff.
+- Canonical chain remains [POINT-0/040](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-040-INITIAL-MODEL-NEW-HOST-HANDOFF.md) → IN-077 → OUT-076 → [EVT-0213](./EVT-0213-INITIAL-MODEL-NEW-HOST-HANDOFF-2026-10-27.md) → CURRENT-089 → NEXT-051.
+- Competing draft files remain preserved but marked QUARANTINED; they are excluded from the live export inventory.
+- Supplementary transfer specification and prompt are references only; they do not allocate new POINT/EVT/CURRENT IDs.
+- Continue manifest validation, exact-final-SHA audit/conformance and real-host acceptance under NEXT-051.
+
 
 - [EVT-0213](./EVT-0213-POINT-0-040-INITIAL-MODEL-TRANSFER-AND-HARD-AUDIT-2026-10-27.md): transfer model for a new AI host and hard architecture audit.
 - Root: [POINT-0/040](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-040-INITIAL-MODEL-TRANSFER-AND-ARCHITECTURE-HARD-AUDIT.md); checkpoint: [CURRENT-089](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-089-INITIAL-MODEL-TRANSFER-EXECUTION.md).
