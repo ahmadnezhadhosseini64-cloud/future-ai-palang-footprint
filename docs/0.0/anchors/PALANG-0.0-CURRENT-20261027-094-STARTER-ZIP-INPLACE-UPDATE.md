@@ -6,20 +6,20 @@
 - Canonical archive filename to replace/refresh: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip` (legacy filename retained deliberately; not a separate version ZIP).
 - Build workflow: must build this archive from the existing starter source directory and upload it with the same artifact name.
 - Completed: registered point/input/output/event/checkpoint; documented distinction between source update and actual ZIP update.
-- Verified: workflow run 40489299348 SUCCESS; same canonical ZIP filename rebuilt; size 18,815 bytes; SHA-256 b3429acaa5d33fb93dec7ad0ba8c1cdf233fbb28b8839794eea74457013e1309; 15/15 tests pass after fresh extraction; artifact downloaded and read back.
+- Verified: workflow run 40489753805 SUCCESS; same canonical ZIP filename rebuilt; size 19,042 bytes; SHA-256 3a17f64880519a0da714f09a1dc8065fafcd88321fa5674eb2d995dfd8f63e83; 16/16 tests pass after fresh extraction; artifact downloaded and read back.
 - Independent-host import, negative controls in the actual AI host, and restart persistence: NOT RUN.
 - NEXT-051 remains the only active queue. No NEXT-052.
 - Status: ZIP BUILD + ARTIFACT READ-BACK VERIFIED / HOST ACCEPTANCE OPEN / LIVING.
 
 
-## Verified ZIP replacement receipt — run 40489299348
+## Verified ZIP replacement receipt — run 40489753805
 
-- Workflow result: SUCCESS on exact source commit `fa930e8e895eae7dea3f7eb13449321c5658a2c2`.
-- Run: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40489299348
+- Workflow result: SUCCESS on exact source commit `95e42fdffa0f0de956220403200c6f2390cfe645`.
+- Run: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40489753805
 - Artifact ID: `12726786662`; artifact name: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean`.
 - Canonical filename preserved: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`.
 - Internal package version: `0.3.1`; stable ID `HAIF-GPT6-PORTABLE-STARTER-20261025-004`; production ID `HAIF-G6PS-20261025-004`.
-- Updated archive bytes: `18,815`; SHA-256: `b3429acaa5d33fb93dec7ad0ba8c1cdf233fbb28b8839794eea74457013e1309`.
+- Updated archive bytes: `18,815`; SHA-256: `3a17f64880519a0da714f09a1dc8065fafcd88321fa5674eb2d995dfd8f63e83`.
 - Inventory: 8 expected files including `INDEPENDENT_HOST_RECOVERY_PROTOCOL.md`; ZIP CRC/integrity check PASS; starter package unit tests PASS; exact-byte RAHM manifest scan PASS.
 - Update mode: rebuilt the existing package under the same canonical filename and stable identity; no separate version-named ZIP.
 - Real independent AI-host import/recovery and restart persistence: NOT RUN. Keep those gates OPEN.
