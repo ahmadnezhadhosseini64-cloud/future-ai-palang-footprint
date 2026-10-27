@@ -1802,3 +1802,9 @@ Both Path A (portable initial model and independent-host recovery) and Path B (e
 | HAIF-EVT-0214 | docs/architecture/BEHAVIOR-TRACE/EVT-0214-POINT-040-DUPLICATE-ID-QUARANTINE-2026-10-27.md | Collision evidence and quarantine of duplicate POINT-0/040 / EVT-0213 / CURRENT-089 drafts | REGISTERED / OPEN; canonical handoff IDs preserved |
 | HAIF-IMHTB-20261027-001 | docs/portable/RAHM/INITIAL-MODEL-HOST-TRANSFER-BOOTSTRAP-2026-10-27.md | Supplemental host-transfer acceptance contract | Candidate specification; independent-host acceptance NOT RUN |
 | HAIF-HOST-BOOTSTRAP-PROMPT-20261027 | docs/portable/RAHM/HOST-BOOTSTRAP-PROMPT-2026-10-27.md | Supplemental receiving-host prompt | Supplementary only; canonical bootstrap remains NEW-HOST-BOOTSTRAP-2026-10-27.md |
+
+| HAIF-POINT-0-041 | docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-041-CURRENT-INTERACTION-ANCHOR.md | Successor anchor for the current user instruction and continued model execution | REGISTERED / ACTIVE / LIVING / OPEN |
+| HAIF-IN-078 | docs/0.0/anchors/PALANG-0.0-IN-20261027-078-CURRENT-INTERACTION.md | Preserved current user input | REGISTERED / OPEN |
+| HAIF-OUT-077 | docs/0.0/anchors/PALANG-0.0-OUT-20261027-077-CURRENT-INTERACTION.md | Output and ordered next actions | REGISTERED / OPEN |
+| HAIF-EVT-0215 | docs/architecture/BEHAVIOR-TRACE/EVT-0215-CURRENT-INTERACTION-POINT-041-2026-10-27.md | Event trace linking POINT-0/041, IN-078, OUT-077 and CURRENT-090 | REGISTERED / OPEN; exact-final-SHA validation pending |
+| HAIF-CURRENT-090 | docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-090-CURRENT-INTERACTION.md | Current checkpoint for continuation under NEXT-051 | ACTIVE / LIVING / OPEN / VERIFICATION REQUIRED |
