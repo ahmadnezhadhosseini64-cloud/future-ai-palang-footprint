@@ -3,7 +3,7 @@
 - Stable ID: `PALANG-TIME-BINDING-EVT-0211-LIVE-MIRROR-SYNC-2026-10-27`
 - Production ID: `PALANG-TIME0211-2026-10-27-001`
 - Version: 1.0.0
-- Status: REGISTERED / READ-BACK PENDING
+- Status: READ-BACK VERIFIED / ACTIVE — full time-binding file independently fetched and matched after creation.
 - Target event: [EVT-0211](./EVT-0211-LIVE-MIRROR-SYNC-RECHECK-2026-10-27.md)
 - Clock rule: actual final-change Git commit UTC is canonical for each repository artifact; Tehran is derived from that same instant (+03:30). User-message, operation, workflow and Library metadata times are distinct and must not be substituted for commit time.
 
