@@ -1,4 +1,4 @@
-# HAIF GPT-6 Portable Starter v0.3.2
+# HAIF GPT-6 Portable Starter v0.3.3
 
 This is the updated release of the existing HAIF starter package, not a separate project. It updates the existing v0.3.0 0/0+ bootstrap package at the same stable package identity and canonical ZIP filename; history and prior digests remain preserved. It does not replace the living master, historical anchors or NEXT-051.
 
@@ -55,4 +55,4 @@ The recovery protocol is included in the existing package line. A ZIP build or C
 
 ## Current continuous-update checkpoint
 
-The current 0.0 chain is POINT-0/046 → IN-084 → OUT-083 → EVT-0221 → CURRENT-096 → NEXT-051. The stable package ID and canonical ZIP filename do not change. Internal version 0.3.2 identifies the next source content; the new archive digest is pending until the exact-head CI artifact is downloaded, inspected and tested. The prior 0.3.1 ZIP receipt remains historical evidence.
+The current 0.0 chain is POINT-0/046 → IN-084 → OUT-083 → EVT-0221 → CURRENT-096 → NEXT-051. The stable package ID and canonical ZIP filename do not change. Internal version 0.3.3 identifies the next source content; the new archive digest is pending until the exact-head CI artifact is downloaded, inspected and tested. The prior 0.3.1 ZIP receipt remains historical evidence.
