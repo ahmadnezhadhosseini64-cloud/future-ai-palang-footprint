@@ -6,6 +6,7 @@
 - Parent: [IN-089](./PALANG-0.0-IN-20261027-089-HOST-GROWTH-AND-REPOSITORY-LOOP.md)
 - Point: [POINT-0/051 (0+)](./GPT6-RAHM-USER-POINT-0-20261027-051-0PLUS-HOST-GROWTH-AND-REPOSITORY-LOOP.md)
 - Current checkpoint: [CURRENT-101](./PALANG-0.0-CURRENT-20261027-101-HOST-GROWTH-AND-REPOSITORY-LOOP.md)
+- Living mother: [سند مرجع مادر مدل اولیه](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 - Queue: [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
 - Package contract: [HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md](../../../prototype/haif-gpt6-starter/HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md)
 - In-package recovery protocol: [INDEPENDENT_HOST_RECOVERY_PROTOCOL.md](../../../prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md)
