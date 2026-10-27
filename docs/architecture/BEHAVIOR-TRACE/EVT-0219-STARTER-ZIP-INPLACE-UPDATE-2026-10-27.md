@@ -13,4 +13,4 @@
 
 
 ## Verified archive receipt
-Run 40489299348 succeeded on tested commit fa930e8e895eae7dea3f7eb13449321c5658a2c2. The existing canonical ZIP filename was rebuilt with internal package version 0.3.1, 18,815 bytes, SHA-256 b3429acaa5d33fb93dec7ad0ba8c1cdf233fbb28b8839794eea74457013e1309. Fresh extraction, ZIP CRC, inventory and 15/15 unit tests passed. Real independent-host acceptance remains NOT RUN.
+Run 40489753805 succeeded on tested commit 95e42fdffa0f0de956220403200c6f2390cfe645. The existing canonical ZIP filename was rebuilt with internal package version 0.3.1, 19,042 bytes, SHA-256 3a17f64880519a0da714f09a1dc8065fafcd88321fa5674eb2d995dfd8f63e83. Fresh extraction, ZIP CRC, inventory and 16/16 unit tests passed. Real independent-host acceptance remains NOT RUN.
