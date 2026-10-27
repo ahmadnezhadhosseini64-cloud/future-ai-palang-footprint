@@ -52,21 +52,22 @@ jobs:
           assert invalid_errors, "Invalid fixture unexpectedly passed"
           print("SCHEMA_CONFORMANCE=PASS")
           PY
-      - name: Recover canonical state independently from IN and OUT
+      - name: Recover current canonical chain independently from IN-080 and OUT-079
         run: |
           python - <<'PY'
           import json, re
           from pathlib import Path
           root = Path(".")
           sources = {
-              "IN": root / "docs/0.0/anchors/PALANG-0.0-IN-20261025-055-OPEN-GAPS-AND-CONTINUITY.md",
-              "OUT": root / "docs/0.0/anchors/PALANG-0.0-OUT-20261025-054-OPEN-GAPS-AND-CONTINUITY.md",
+              "IN": root / "docs/0.0/anchors/PALANG-0.0-IN-20261027-080-INDEPENDENT-HOST-RECOVERY.md",
+              "OUT": root / "docs/0.0/anchors/PALANG-0.0-OUT-20261027-079-INDEPENDENT-HOST-RECOVERY.md",
           }
           expected = {
-              "current": "PALANG-0.0-CURRENT-20261025-062-OPEN-GAPS-AND-CONTINUITY.md",
+              "current": "PALANG-0.0-CURRENT-20261027-092-INDEPENDENT-HOST-RECOVERY.md",
               "next": "PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md",
               "master": "سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md",
-              "manifest": "CURRENT-062-OVERLAY-MANIFEST.json",
+              "protocol": "INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md",
+              "manifest": "EXPORT_MANIFEST.json",
           }
           recovered = {}
           for side, path in sources.items():
@@ -77,10 +78,16 @@ jobs:
                   matches = [link for link in links if link.split("#", 1)[0].endswith(suffix)]
                   assert matches, f"{side} recovery missing {key} target {suffix}"
                   state[key] = suffix
+              if key == "protocol":
+                  assert "independent-host" in content.casefold() or "independent host" in content.casefold(), f"{side} recovery missing host-proof protocol declaration"
               assert "open" in content.casefold() or "not verified" in content.casefold(), f"{side} recovery did not preserve open gates"
               recovered[side] = state
           assert recovered["IN"] == recovered["OUT"], f"IN/OUT recovery mismatch: {recovered}"
-          evidence = {"test_id":"RAHM-IN-OUT-RECOVERY-062", "result":"PASS", "recovered_from":"IN-055 and OUT-054 independently", "canonical_state":recovered["IN"], "open_gates_preserved":True, "scope":"Artifact-link and checkpoint recovery equivalence; not a full hidden-memory or independent-host test."}
+          for side, path in sources.items():
+              content = path.read_text(encoding="utf-8")
+              assert "NEXT-051" in content, f"{side} recovery did not preserve the sole active queue"
+              assert "NOT VERIFIED" in content or "OPEN" in content, f"{side} recovery did not preserve unresolved gates"
+          evidence = {"test_id":"RAHM-IN-OUT-RECOVERY-092", "result":"PASS", "recovered_from":"IN-080 and OUT-079 independently", "canonical_state":recovered["IN"], "open_gates_preserved":True, "scope":"Current-chain link/checkpoint equivalence only; full canonical state and real independent-host acceptance require separate receipts."}
           Path("rahm-recovery-equivalence.json").write_text(json.dumps(evidence, indent=2)+"\n", encoding="utf-8")
           print(json.dumps(evidence, indent=2))
           print("IN_OUT_RECOVERY_EQUIVALENCE=PASS")
