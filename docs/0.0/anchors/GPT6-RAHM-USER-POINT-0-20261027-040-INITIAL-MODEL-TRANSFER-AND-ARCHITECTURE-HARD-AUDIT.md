@@ -1,9 +1,13 @@
-# POINT-0/040 — Initial Model Transfer and Architecture Hard Audit
+# QUARANTINED DUPLICATE ARTIFACT — NOT THE CANONICAL POINT-0/040
+
+> This file was created as a competing artifact with an already-existing POINT-0/040. Preserve it as collision evidence only. Do not use this file as the current root. Canonical root: [POINT-0/040 Initial Model and New-Host Handoff](./GPT6-RAHM-USER-POINT-0-20261027-040-INITIAL-MODEL-NEW-HOST-HANDOFF.md). Canonical event: [EVT-0213](../../architecture/BEHAVIOR-TRACE/EVT-0213-INITIAL-MODEL-NEW-HOST-HANDOFF-2026-10-27.md). Canonical checkpoint: [CURRENT-089](./PALANG-0.0-CURRENT-20261027-089-INITIAL-MODEL-NEW-HOST-HANDOFF.md).
+
+# QUARANTINED — POINT-0/040 duplicate draft (historical content retained)
 
 - Stable ID: HAIF-POINT-0-040-INITIAL-MODEL-TRANSFER-HARD-AUDIT-20261027
 - Production ID: HAIF-P040-20261027
 - Version: 1.0.0
-- Status: ACTIVE / LIVING / OPEN / EXECUTION REQUIRED
+- Status: QUARANTINED / DUPLICATE ID ARTIFACT / NOT CANONICAL
 - Parent: [POINT-0/039](./GPT6-RAHM-USER-POINT-0-20261027-039-MIRROR-SYNC-AND-ARCHITECTURE-CONTINUATION.md)
 - New checkpoint: [CURRENT-089](./PALANG-0.0-CURRENT-20261027-089-INITIAL-MODEL-TRANSFER-EXECUTION.md)
 - Sole queue: [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
