@@ -297,7 +297,7 @@ jobs:
           root = Path("downloaded-starter-artifact")
           archive = root / "haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip"
           receipt_path = root / "haif-gpt6-starter-zip-receipt.json"
-          master = root / "سند مرجع مادر مدل اولیه هوش مصنوعی.md"
+          master = root / "docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md"
           repository_master = Path("docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md")
           if not archive.is_file() or not receipt_path.is_file() or not master.is_file():
               raise SystemExit("DOWNLOADED_ARTIFACT_MISSING_ZIP_RECEIPT_OR_MASTER")
