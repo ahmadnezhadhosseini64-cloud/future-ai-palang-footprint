@@ -17,7 +17,14 @@
     "IN-081",
     "OUT-080",
     "EVT-0218",
-    "CURRENT-093"
+    "CURRENT-093",
+    "POINT-0/043 (0+ production marker)",
+    "POINT-0/044 (canonical point 0)",
+    "IN-082",
+    "OUT-081",
+    "EVT-0219",
+    "CURRENT-094",
+    "NEXT-051"
   ],
   "entrypoint": "engine.py",
   "host_instructions": "GPT6_HOST_INSTRUCTIONS.md",
@@ -35,7 +42,8 @@
     "canonical point identity with non-duplicating 0+ production marker and parent-linked 0.0 continuation",
     "point state reconciled against append-only POINT_REGISTERED events; tampering and self-parenting rejected",
     "one-command bootstrap for canonical 0/0+ root, parent-linked 0.0 continuation and six explicit open capability gaps",
-    "independent-host recovery protocol with clean-host import, IN/OUT reconstruction, negative controls and restart acceptance gates"
+    "independent-host recovery protocol with clean-host import, IN/OUT reconstruction, negative controls and restart acceptance gates",
+    "existing starter ZIP is continuously rebuilt from this package source under the established canonical filename; exact bytes/hash receipt required"
   ],
   "not_proven": [
     "native GPT plugin execution",
@@ -44,6 +52,13 @@
     "independent host durable memory",
     "external repository writes without a connector",
     "cross-device persistence",
-    "real independent AI-host import and restart acceptance until direct host receipts exist"
-  ]
+    "real independent AI-host import and restart acceptance until direct host receipts exist",
+    "updated canonical ZIP digest and artifact until a fresh workflow receipt is inspected"
+  ],
+  "archive_policy": {
+    "canonical_filename": "haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip",
+    "update_mode": "REBUILD_IN_PLACE_SAME_PACKAGE_IDENTITY",
+    "do_not_publish_separate_version_named_zip": true,
+    "historical_v0_3_0_digest_is_not_current": true
+  }
 }
