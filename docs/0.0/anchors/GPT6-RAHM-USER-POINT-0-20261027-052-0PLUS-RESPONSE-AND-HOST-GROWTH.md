@@ -9,7 +9,7 @@
 - Package stable ID: `HAIF-GPT6-PORTABLE-STARTER-20261025-004`
 - Canonical ZIP filename: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`
 - Package version: 0.3.7 (same package lineage; not a separate ZIP product)
-- Status: REGISTERED IN SOURCE / BUILD RECEIPT PENDING / LIVE HOST AND REPOSITORY SYNC OPEN
+- Status: ZIP v0.3.7 BUILT AND READ-BACK VERIFIED / LIVE HOST AND REPOSITORY SYNC OPEN
 
 ## User intent
 The same initial Future AI / Palang Footprint model must keep evolving in an AI host. Project-relevant interactions and behavior evidence should be captured with provenance, validated, and returned to the living master/repository through an authorized, auditable path.
@@ -30,3 +30,16 @@ The same initial Future AI / Palang Footprint model must keep evolving in an AI 
 - [CURRENT-102](PALANG-0.0-CURRENT-20261027-102-RESPONSE-AND-HOST-GROWTH.md)
 - [NEXT-051](PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
 - [Interaction response and anchor protocol](../../../prototype/haif-gpt6-starter/INTERACTION-RESPONSE-AND-ANCHOR-PROTOCOL.md)
+
+
+## Verified package receipt — run 40544593941
+
+- Source commit: `fe63eee0ee2057d5fbfe83c670b0b389c8ca3c19`
+- Workflow: [Portable RAHM Conformance and Digest Evidence](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40544593941) — SUCCESS
+- Exact canonical ZIP filename: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip` (unchanged)
+- Internal package version: `0.3.7`; stable package ID unchanged
+- ZIP bytes: `30,453`; SHA-256: `587f67e0d7d57ef70a78b253a934af90076531b2f3a61fed942dc78f387bdb7f`
+- Inventory: 11 files; ZIP CRC/integrity PASS; source-to-extracted byte match PASS; extracted tests 22/22 PASS; artifact download/read-back PASS.
+- Artifact ID: `12752785696`; artifact wrapper SHA-256: `cc4f674b6a13c75a722f8893494f4401df468e672e84e8067838ee0def31582b`.
+- Exact-head Living Architecture Audit: [run 40544593664](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40544593664) — SUCCESS.
+- Real interactive host acceptance: NOT RUN. Automatic capture, authorized repository write-back and restart persistence remain OPEN / NOT VERIFIED.

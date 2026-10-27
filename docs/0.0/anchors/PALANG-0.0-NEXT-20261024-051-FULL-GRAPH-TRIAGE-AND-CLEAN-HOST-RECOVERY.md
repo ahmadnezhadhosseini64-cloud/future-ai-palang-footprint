@@ -2,7 +2,7 @@
 
 - Stable ID: G6IP-RAHM-NEXT-051-20261024
 - Production ID: G6IP-RAHM-NEXT-051-20261024
-- Version: 1.0.14
+- Version: 1.0.15
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE
 - Project: Future AI / Palang Footprint — HAIF
 - Canonical queue: this file only
@@ -117,3 +117,8 @@ These gates are intentionally listed in the active queue so recovery validators 
 - [ ] Real interactive host import, automatic producer, authorized repository write-back and restart persistence.
 
 Do not create NEXT-052. NEXT-051 remains the sole active queue.
+
+
+## CURRENT-102 verified receipt
+
+The existing starter ZIP v0.3.7 has a successful canonical rebuild/read-back receipt in run 40544593941: 30,453 bytes; SHA-256 `587f67e0d7d57ef70a78b253a934af90076531b2f3a61fed942dc78f387bdb7f`; 22/22 extracted tests; same canonical filename and stable ID. Real host acceptance remains NOT RUN; NEXT-051 remains the only active queue.

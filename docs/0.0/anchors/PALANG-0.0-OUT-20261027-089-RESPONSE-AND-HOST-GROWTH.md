@@ -2,7 +2,7 @@
 
 - Stable ID: HAIF-OUT-089-RESPONSE-AND-HOST-GROWTH-20261027
 - Production ID: G6IP-OUT-089
-- Status: SOURCE UPDATED / TESTS ADDED / CANONICAL ZIP BUILD PENDING / LIVE HOST OPEN
+- Status: ZIP v0.3.7 BUILT AND READ-BACK VERIFIED / LIVE HOST OPEN / HOST SYNC NOT VERIFIED
 - Parent: [IN-090](./PALANG-0.0-IN-20261027-090-RESPONSE-AND-HOST-GROWTH.md)
 - Point: [POINT-0/052 (0+)](./GPT6-RAHM-USER-POINT-0-20261027-052-0PLUS-RESPONSE-AND-HOST-GROWTH.md)
 - Current checkpoint: [CURRENT-102](./PALANG-0.0-CURRENT-20261027-102-RESPONSE-AND-HOST-GROWTH.md)
@@ -16,3 +16,12 @@
 
 ## Not yet proven
 The fresh ZIP receipt, exact digest and extracted tests must pass on the resulting commit. A live GPT host has not thereby been connected; automatic capture, repository write-back and restart persistence remain OPEN / NOT VERIFIED.
+
+
+## Verified ZIP receipt
+
+- Workflow run: [40544593941](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40544593941) — SUCCESS.
+- Source commit: `fe63eee0ee2057d5fbfe83c670b0b389c8ca3c19`.
+- Canonical filename unchanged: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`.
+- Internal version 0.3.7; 30,453 bytes; SHA-256 `587f67e0d7d57ef70a78b253a934af90076531b2f3a61fed942dc78f387bdb7f`; 11 files; 22/22 extracted tests pass; artifact round-trip pass.
+- Real host acceptance and automatic repository sync remain NOT VERIFIED.
