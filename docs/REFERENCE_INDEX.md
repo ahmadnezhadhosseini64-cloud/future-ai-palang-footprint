@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-27 — POINT-0/038 → IN-075 → OUT-074 → EVT-0209 → CURRENT-087; NEXT-051 remains the sole active queue; Path A real-host acceptance and Path B graph recovery remain OPEN under reversible cover.
+**Last Updated:** 2026-10-27 — POINT-0/043 → IN-080 → OUT-079 → EVT-0217 → CURRENT-092; NEXT-051 remains the sole active queue; real-host acceptance and graph recovery remain OPEN.
 
 ## Canonical References
 
@@ -1814,3 +1814,17 @@ Both Path A (portable initial model and independent-host recovery) and Path B (e
 | HAIF-OUT-078 | docs/0.0/anchors/PALANG-0.0-OUT-20261027-078-NEXT-051-GAP-AND-FOCUS-CLARIFICATION.md | Goal-aligned interpretation and next execution order | REGISTERED / OPEN |
 | HAIF-EVT-0216 | docs/architecture/BEHAVIOR-TRACE/EVT-0216-POINT-042-NEXT-051-GAP-FOCUS-CLARIFICATION-2026-10-27.md | Behavior/event record for gap-versus-goal focus | REGISTERED / OPEN |
 | HAIF-CURRENT-091 | docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-091-NEXT-051-GAP-FOCUS.md | Checkpoint for current NEXT-051 focus | ACTIVE / LIVING / OPEN / VERIFICATION REQUIRED |
+
+
+## Latest independent-host recovery chain — POINT-0/043
+
+| ID | Canonical path | Role / status |
+|---|---|---|
+| HAIF-POINT-0-043 | `docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-043-INDEPENDENT-HOST-RECOVERY-HARD-AUDIT.md` | New user anchor; hard audit; OPEN gates preserved |
+| HAIF-IN-080 | `docs/0.0/anchors/PALANG-0.0-IN-20261027-080-INDEPENDENT-HOST-RECOVERY.md` | Input anchor |
+| HAIF-OUT-079 | `docs/0.0/anchors/PALANG-0.0-OUT-20261027-079-INDEPENDENT-HOST-RECOVERY.md` | Output and verified failure evidence |
+| HAIF-EVT-0217 | `docs/architecture/BEHAVIOR-TRACE/EVT-0217-INDEPENDENT-HOST-RECOVERY-HARD-AUDIT-2026-10-27.md` | Behavior/audit event |
+| HAIF-CURRENT-092 | `docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-092-INDEPENDENT-HOST-RECOVERY.md` | Active checkpoint; not complete |
+| HAIF-IHRP-001 | `docs/architecture/مدل اولیه AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md` | Strict independent-host acceptance procedure |
+
+The current ZIP is not considered delivered until a fresh portable-conformance run succeeds and exposes the package artifact. A CI pass does not establish real AI-host acceptance.
