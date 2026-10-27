@@ -58,6 +58,7 @@ jobs:
           python - <<'PY'
           import json, re
           from pathlib import Path
+          from urllib.parse import unquote
           root = Path(".")
           sources = {
               "IN": root / "docs/0.0/anchors/PALANG-0.0-IN-20261027-082-STARTER-ZIP-INPLACE-UPDATE.md",
@@ -77,7 +78,7 @@ jobs:
               links = re.findall(r'\]\(([^)]+)\)', content)
               state = {}
               for key, suffix in expected.items():
-                  matches = [link for link in links if link.split("#", 1)[0].endswith(suffix)]
+                  matches = [link for link in links if unquote(link.split("#", 1)[0]).endswith(unquote(suffix))]
                   assert matches, f"{side} recovery missing {key} target {suffix}"
                   state[key] = suffix
                   if key in ("protocol", "package_protocol"):
