@@ -216,8 +216,6 @@ class PortablePackageProtocolTests(unittest.TestCase):
         self.assertIn("CURRENT-102", manifest["parent_architecture"])
         self.assertIn("POINT-0/053 (0+ marker on canonical root 0)", manifest["parent_architecture"])
         self.assertIn("CURRENT-103", manifest["parent_architecture"])
-        self.assertIn("POINT-0/053 (0+ marker on canonical root 0)", manifest["parent_architecture"])
-        self.assertIn("CURRENT-103", manifest["parent_architecture"])
         self.assertIn("INTERACTION-RESPONSE-AND-ANCHOR-PROTOCOL.md", manifest["parent_architecture"])
         self.assertIn("HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md", manifest["parent_architecture"])
         self.assertEqual(manifest["host_acceptance_checklist"], "FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST.md")
