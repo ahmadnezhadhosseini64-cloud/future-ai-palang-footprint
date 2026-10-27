@@ -41,3 +41,6 @@ Additional hard-audit finding: Living Architecture Audit run 40539823090 failed 
 
 
 Audit follow-up: after removing the obsolete CURRENT-057 live-pointer assertion, the historical baseline step still failed because it required the exact text `OPEN / LIVING` in NEXT-051. That exact wording is not a stable contract. The check now accepts the semantic status tokens OPEN, LIVING, or IN PROGRESS while still requiring the queue file and its identity. Fresh exact-head audit remains the acceptance test.
+
+
+Audit follow-up: the historical baseline test still failed on a case-sensitive status-text grep for NEXT-051 even after allowing equivalent tokens. This status-text assertion is removed; the check continues to verify the historical anchor/IN/OUT/EVT/CURRENT files, stable IDs and NEXT-051 identity. Current queue status is handled by current-chain and queue validation checks, not a brittle literal string.
