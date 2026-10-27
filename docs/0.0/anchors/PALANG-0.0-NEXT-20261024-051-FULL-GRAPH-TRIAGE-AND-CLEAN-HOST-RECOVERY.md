@@ -2,9 +2,9 @@
 
 - Stable ID: `G6IP-RAHM-NEXT-051-20261024`
 - Production ID: `G6IP-NEXT-051`
-- Version: 1.0.11
+- Version: 1.0.12
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE.
-- Historical parent: [CURRENT-057](./PALANG-0.0-CURRENT-20261024-057-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md) (historical); latest root/checkpoint observed: POINT-0/028 → CURRENT-075. NEXT-051 remains the active existing remediation queue.
+- Historical parent: [CURRENT-057](./PALANG-0.0-CURRENT-20261024-057-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md) (historical); latest root/checkpoint: POINT-0/038 → CURRENT-087. NEXT-051 remains the sole active remediation queue.
 - Preserve existing gates: [NEXT-050](./PALANG-0.0-NEXT-20261024-050-FULL-RECOVERY-AND-REAL-HOST-IMPORT.md), [NEXT-049](./PALANG-0.0-NEXT-20261024-049-REAL-HOST-TRANSFER-AND-GRAPH-AUDIT.md)
 
 ## Ordered actions
@@ -322,3 +322,14 @@ NEXT-051 remains OPEN/LIVING until all remaining acceptance gates are satisfied;
 - Independent CI Runtime A→B transfer passed; external interactive-host import/restart/persistence/round-trip remain NOT RUN.
 - Tested-SHA graph snapshot: 0 missing local links; 0 ambiguous parent edges; 2 unresolved parent edges; 1 open Stable-ID collision group; 66 unreviewed Production-ID groups; 5 Reference-ID groups; 41 event-number collision groups; 11 exact-content duplicate groups. Counts are a dated snapshot, not a claim about later untested revisions.
 - Exact current-main audit/conformance, inspect evidence artifacts, then run I1–I8 at the intended host and capture raw receipts. Preserve all unresolved lineage; no bulk merges. Continue this queue; do not create NEXT-052.
+
+
+## POINT-0/038 — temporary gap cover; continue toward the primary goal
+
+- Root/checkpoint: [POINT-0/038](./GPT6-RAHM-USER-POINT-0-20261027-038-TEMPORARY-GAP-COVER-AND-GOAL-EXECUTION.md) → [CURRENT-087](./PALANG-0.0-CURRENT-20261027-087-GOAL-EXECUTION-WITH-TEMPORARY-COVER.md).
+- Interaction chain: [IN-075](./PALANG-0.0-IN-20261027-075-TEMPORARY-GAP-COVER.md) → [OUT-074](./PALANG-0.0-OUT-20261027-074-GOAL-EXECUTION.md) → [EVT-0209](../../architecture/BEHAVIOR-TRACE/EVT-0209-TEMPORARY-GAP-COVER-AND-GOAL-EXECUTION-2026-10-27.md).
+- Decision: gaps safe to bridge are COVERED_FOR_CONTINUITY / REVERSIBLE so Path A and model development continue; underlying gaps remain OPEN / UNRESOLVED / NOT VERIFIED.
+- Path A: keep package ready for controlled real-host I1–I8 validation; real host remains NOT RUN until direct receipts are supplied.
+- Path B: keep the existing Recovery Bridge for the two known missing-parent edges and continue source-based identity/lineage review without bulk merge, speculative renumbering or deletion.
+- The two paths remain independently gated and linked to the same master. No competing NEXT queue is created; NEXT-051 remains active.
+- Re-run exact-head audit/conformance for the newly integrated state. Earlier receipts apply only to their stated tested SHA.
