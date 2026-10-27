@@ -11,7 +11,7 @@
 
 | Artifact | Commit SHA | Canonical UTC commit time | Tehran equivalent |
 |---|---|---|---|
-| EVT-0214 collision event | 17f138368fcb99b5b347482a62477e23474dae15 | 2026-10-27T07:53:50Z | 2026-10-27T11:23:50+03:30 |
+| EVT-0214 collision event (final change includes its time-binding link) | 10b30a4d6c226d57268fe2433cae1d6fbb770a50 | 2026-10-27T07:56:08Z | 2026-10-27T11:26:08+03:30 |
 | Canonical POINT-0/040 last linked update | da340204158a2548571a5f318af0ef0148e6404a | 2026-10-27T07:55:02Z | 2026-10-27T11:25:02+03:30 |
 | Canonical EVT-0213 last linked update | 94d74932477553fcdaacfc932dbb223bbd0c0717 | 2026-10-27T07:55:06Z | 2026-10-27T11:25:06+03:30 |
 | Canonical CURRENT-089 last linked update | 825e1e9d5723e84d94358e0d46fe45d4f7c58c7b | 2026-10-27T07:55:11Z | 2026-10-27T11:25:11+03:30 |
@@ -20,4 +20,4 @@
 
 ## Verification limits
 
-These timestamps are the Git commit metadata returned for the exact commits above. They are not message times, workflow run times, or Library metadata times. A later change to any artifact requires a new final-change binding. The current main HEAD must be independently discovered; no claim that the current HEAD passed paired audit/conformance is made here.
+These timestamps are the Git commit metadata returned for the exact commits above. EVT-0214’s canonical time is its latest content-changing commit, not its original creation commit. They are not message times, workflow run times, or Library metadata times. A later change to any artifact requires a new final-change binding. The current main HEAD must be independently discovered; no claim that the current HEAD passed paired audit/conformance is made here.
