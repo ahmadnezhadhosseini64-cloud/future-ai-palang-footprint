@@ -30,7 +30,7 @@ Current source chain: POINT-0/050 (0+ marker on canonical root 0) → IN-088 →
 - [ ] Send only a synthetic test event first; require repository write, fetch-back, byte/content comparison and evidence receipt.
 - [ ] If no write permission exists, export a portable event file for an authorized manual import and leave automated write-back OPEN.
 
-## E. Restart and final verdict
+## E. Restart/persistence and final verdict
 - [ ] Close/restart the session and recover from the same pair of files or proven durable state.
 - [ ] Record separate PASS/FAIL/NOT RUN for import, digest, IN/OUT equivalence, negative controls, read-back, live producer, repository write-back and restart.
 - [ ] Save the direct host receipt into the project chain only after read-back verification.
