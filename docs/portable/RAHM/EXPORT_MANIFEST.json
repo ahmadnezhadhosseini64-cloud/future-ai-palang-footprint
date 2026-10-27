@@ -1,8 +1,8 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
   "version": "1.8.22",
-  "manifest_status": "POINT-0/040 initial-model transfer candidate registered; five required artifacts added to live-reference inventory. Exact-final-main SHA, fresh digest scan, package build, and independent-host import/recovery remain OPEN / NOT RUN.",
-  "created_from_checkpoint": "HAIF-POINT-0-040-INITIAL-MODEL-TRANSFER-HARD-AUDIT-20261027 + HAIF-CURRENT-089-INITIAL-MODEL-TRANSFER-20261027",
+  "manifest_status": "Canonical POINT-0/040 new-host handoff (IN-077 → OUT-076 → EVT-0213 → CURRENT-089) and EVT-0214 collision record are in the live inventory; competing duplicate-ID drafts are quarantined and excluded. Exact digest scan, package build, paired final-SHA audit/conformance and real-host acceptance remain OPEN / NOT RUN.",
+  "created_from_checkpoint": "HAIF-POINT-0-040-INITIAL-MODEL-NEW-HOST-HANDOFF-20261027 + HAIF-CURRENT-089-INITIAL-MODEL-NEW-HOST-HANDOFF-20261027",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [
     {
@@ -324,9 +324,9 @@
     "full_state_recovery": "Current repository pointer equivalence is gated by IN-058/OUT-057 and CURRENT-065; independent external-host reconstruction, clean import, restart persistence and second-host recovery remain OPEN / NOT RUN.",
     "focused_relative_link_audit": "PASS_RUN_40150679142: zero missing Markdown links and zero missing links in corrected historical graph parser",
     "repository_graph_audit": "REVIEW_REQUIRED: use current commit-scoped inventory; historical collisions/parent/time counts must not be reused as current counts.",
-    "current_checkpoint": "CURRENT-089",
-    "next_action": "Continue NEXT-051; recompute exact live-reference digests and build package; run audit and conformance on same final main SHA; then clean-host import and cold recovery.",
-    "last_user_point": "POINT-0/040",
+    "current_checkpoint": "CURRENT-089 (canonical new-host handoff)",
+    "next_action": "Continue NEXT-051; validate canonical handoff live references through supported digest workflow; run audit and conformance on the same final main SHA; then perform clean-host import and cold recovery with direct receipts.",
+    "last_user_point": "POINT-0/040 (canonical new-host handoff)",
     "latest_interaction_chain": "POINT-0/014 -> IN-058 -> OUT-057 -> EVT-0167 -> CURRENT-065 -> NEXT-051",
     "parallel_id_collision": "ALT-001 drafts re-identified and retained; canonical branch authoritative",
     "latest_successful_receipts": {
@@ -476,11 +476,16 @@
     "scripts/parent_edge_resolution.py",
     "tests/test_graph_identifier_roles.py",
     "tests/test_parent_edge_resolution.py",
-    "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-040-INITIAL-MODEL-TRANSFER-AND-ARCHITECTURE-HARD-AUDIT.md",
-    "docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-089-INITIAL-MODEL-TRANSFER-EXECUTION.md",
-    "docs/architecture/BEHAVIOR-TRACE/EVT-0213-POINT-0-040-INITIAL-MODEL-TRANSFER-AND-HARD-AUDIT-2026-10-27.md",
     "docs/portable/RAHM/INITIAL-MODEL-HOST-TRANSFER-BOOTSTRAP-2026-10-27.md",
-    "docs/portable/RAHM/HOST-BOOTSTRAP-PROMPT-2026-10-27.md"
+    "docs/portable/RAHM/HOST-BOOTSTRAP-PROMPT-2026-10-27.md",
+    "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-040-INITIAL-MODEL-NEW-HOST-HANDOFF.md",
+    "docs/0.0/anchors/PALANG-0.0-IN-20261027-077-INITIAL-MODEL-NEW-HOST-HANDOFF.md",
+    "docs/0.0/anchors/PALANG-0.0-OUT-20261027-076-INITIAL-MODEL-NEW-HOST-HANDOFF.md",
+    "docs/architecture/BEHAVIOR-TRACE/EVT-0213-INITIAL-MODEL-NEW-HOST-HANDOFF-2026-10-27.md",
+    "docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-089-INITIAL-MODEL-NEW-HOST-HANDOFF.md",
+    "docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0213-POINT-0-040-2026-10-27.md",
+    "docs/architecture/BEHAVIOR-TRACE/EVT-0214-POINT-040-DUPLICATE-ID-QUARANTINE-2026-10-27.md",
+    "docs/architecture/مدل اولیه AI/NEW-HOST-BOOTSTRAP-2026-10-27.md"
   ],
   "live_reference_policy": "Mutable current-state and startup/governance references are included in each export and receive exact SHA-256 plus Git blob SHA-1 observations in the same CI run. This includes RAHM_BOOT and RAHM_ARCHITECTURE because their canonical checkpoint binding must track the current live chain. Stable core remains digest-pinned."
 }
