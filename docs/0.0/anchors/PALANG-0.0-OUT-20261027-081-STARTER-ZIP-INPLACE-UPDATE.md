@@ -19,3 +19,16 @@
 - Acceptance gates: OPEN / NOT VERIFIED — fresh ZIP build receipt pending; real independent-host import NOT RUN; restart persistence NOT RUN.
 
 - Living mother reference: [سند مرجع مادر مدل اولیه](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
+
+
+## Final archive receipt
+
+- Exact build commit: `fa930e8e895eae7dea3f7eb13449321c5658a2c2`.
+- Successful run: [40489299348](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40489299348).
+- Artifact ID: `12726786662`.
+- Same canonical ZIP filename: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`.
+- Current ZIP size: 18,815 bytes.
+- Current ZIP SHA-256: `b3429acaa5d33fb93dec7ad0ba8c1cdf233fbb28b8839794eea74457013e1309`.
+- Package unit tests PASS; ZIP CRC PASS; 8-file inventory PASS; exact-byte manifest scan PASS.
+- The old digest `297b3b329143c4b99f55373db0c4bb97896b0e484253622e63eeb32a4429f164` remains historical and is not reused.
+- Real independent-host import and restart persistence remain OPEN / NOT RUN.
