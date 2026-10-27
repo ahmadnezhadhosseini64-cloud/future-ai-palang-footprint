@@ -400,8 +400,17 @@ Status remains OPEN / LIVING / NOT COMPLETE. CI or synthetic runtime transfer is
 
 - [x] Rebuilt the existing package under its established canonical filename; no separate version-named ZIP is published.
 - [x] Internal package version 0.3.1; stable package identity retained.
-- [x] Archive receipt verified on run [40489299348](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40489299348): 18,815 bytes; SHA-256 b3429acaa5d33fb93dec7ad0ba8c1cdf233fbb28b8839794eea74457013e1309; 8-file inventory; ZIP integrity PASS; 15/15 tests after fresh extraction.
+- [x] Archive receipt verified on run [40489753805](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40489753805): 19,042 bytes; SHA-256 3a17f64880519a0da714f09a1dc8065fafcd88321fa5674eb2d995dfd8f63e83; 8-file inventory; ZIP integrity PASS; 16/16 tests after fresh extraction.
 - [x] Exact-byte RAHM manifest scan and current IN-082 / OUT-081 recovery link check passed on the same workflow run.
 - [x] Reconciled identity: POINT-0/043 is the 0+ marker on canonical 0; POINT-0/044 is retained as a 0.0 continuation anchor, not a second canonical root.
 - [ ] Real independent AI-host import, negative controls, independent read-back and restart persistence.
 - NEXT-051 remains the only active queue; no NEXT-052.
+
+
+## Latest verified existing starter ZIP — CURRENT-094
+
+- Same canonical filename rebuilt: haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip.
+- Internal package version 0.3.1; stable ID HAIF-GPT6-PORTABLE-STARTER-20261025-004.
+- Successful workflow [40489753805](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40489753805), tested commit 95e42fdffa0f0de956220403200c6f2390cfe645.
+- Exact bytes 19,042; SHA-256 3a17f64880519a0da714f09a1dc8065fafcd88321fa5674eb2d995dfd8f63e83; fresh extraction 16/16 tests PASS; RAHM exact-byte scan PASS.
+- Real independent-host import, negative controls and restart persistence remain OPEN / NOT RUN.
