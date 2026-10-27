@@ -39,3 +39,6 @@ The latest successful Living Architecture Audit run [40539499870](https://github
 
 
 Additional hard-audit finding: Living Architecture Audit run 40539823090 failed because a historical Point 0/006 check still required CURRENT-057 to appear in the live Reference Index and Integration Queue. That is an obsolete current-pointer assertion, not evidence that the historical files are missing. The workflow was changed to preserve/test the 0/006 historical baseline without requiring an obsolete checkpoint to remain the current pointer. Fresh exact-head audit must pass before closure.
+
+
+Audit follow-up: after removing the obsolete CURRENT-057 live-pointer assertion, the historical baseline step still failed because it required the exact text `OPEN / LIVING` in NEXT-051. That exact wording is not a stable contract. The check now accepts the semantic status tokens OPEN, LIVING, or IN PROGRESS while still requiring the queue file and its identity. Fresh exact-head audit remains the acceptance test.
