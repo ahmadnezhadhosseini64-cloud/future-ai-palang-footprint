@@ -1797,3 +1797,8 @@ Both Path A (portable initial model and independent-host recovery) and Path B (e
 | HAIF-EVT-0213 | docs/architecture/BEHAVIOR-TRACE/EVT-0213-INITIAL-MODEL-NEW-HOST-HANDOFF-2026-10-27.md | Event linking the new-host handoff chain | REGISTERED / OPEN; manifest coverage and paired validation pending |
 | HAIF-CURRENT-089 | docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-089-INITIAL-MODEL-NEW-HOST-HANDOFF.md | Current checkpoint for portable model transfer | ACTIVE / LIVING / OPEN / ACCEPTANCE REQUIRED |
 | HAIF-NEW-HOST-BOOTSTRAP-20261027-001 | docs/architecture/مدل اولیه AI/NEW-HOST-BOOTSTRAP-2026-10-27.md | Standalone clean-host startup, recovery, governance and acceptance contract | READY FOR CONTROLLED TRIAL; real-host acceptance NOT RUN |
+
+
+| HAIF-EVT-0214 | docs/architecture/BEHAVIOR-TRACE/EVT-0214-POINT-040-DUPLICATE-ID-QUARANTINE-2026-10-27.md | Collision evidence and quarantine of duplicate POINT-0/040 / EVT-0213 / CURRENT-089 drafts | REGISTERED / OPEN; canonical handoff IDs preserved |
+| HAIF-IMHTB-20261027-001 | docs/portable/RAHM/INITIAL-MODEL-HOST-TRANSFER-BOOTSTRAP-2026-10-27.md | Supplemental host-transfer acceptance contract | Candidate specification; independent-host acceptance NOT RUN |
+| HAIF-HOST-BOOTSTRAP-PROMPT-20261027 | docs/portable/RAHM/HOST-BOOTSTRAP-PROMPT-2026-10-27.md | Supplemental receiving-host prompt | Supplementary only; canonical bootstrap remains NEW-HOST-BOOTSTRAP-2026-10-27.md |
