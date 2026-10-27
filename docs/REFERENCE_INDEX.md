@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-26 — POINT-0/037 → IN-074 → OUT-073 → EVT-0208 → CURRENT-086; NEXT-051 remains the sole active queue; Path A real-host acceptance and Path B graph adjudication remain OPEN.
+**Last Updated:** 2026-10-27 — POINT-0/038 → IN-075 → OUT-074 → EVT-0209 → CURRENT-087; NEXT-051 remains the sole active queue; Path A real-host acceptance and Path B graph recovery remain OPEN under reversible cover.
 
 ## Canonical References
 
@@ -1756,3 +1756,10 @@ Both Path A (portable initial model and independent-host recovery) and Path B (e
 - [OUT-073 UTC/Tehran binding](architecture/BEHAVIOR-TRACE/TIME-BINDING-OUT-073-POINT-0-037-2026-10-26.md) — 2026-10-26T16:36:03Z / 20:06:03 +03:30.
 - [EVT-0208 UTC/Tehran binding](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0208-POINT-0-037-2026-10-26.md) — 2026-10-26T16:36:10Z / 20:06:10 +03:30.
 - [CURRENT-086 UTC/Tehran binding](architecture/BEHAVIOR-TRACE/TIME-BINDING-CURRENT-086-POINT-0-037-2026-10-26.md) — 2026-10-26T16:36:15Z / 20:06:15 +03:30.
+
+
+## Latest continuation — POINT-0/038 (2026-10-27)
+- [POINT-0/038](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-038-TEMPORARY-GAP-COVER-AND-GOAL-EXECUTION.md) — user-approved reversible gap cover so development continues toward the HAIF goal.
+- Chain: [IN-075](0.0/anchors/PALANG-0.0-IN-20261027-075-TEMPORARY-GAP-COVER.md) → [OUT-074](0.0/anchors/PALANG-0.0-OUT-20261027-074-GOAL-EXECUTION.md) → [EVT-0209](architecture/BEHAVIOR-TRACE/EVT-0209-TEMPORARY-GAP-COVER-AND-GOAL-EXECUTION-2026-10-27.md) → [CURRENT-087](0.0/anchors/PALANG-0.0-CURRENT-20261027-087-GOAL-EXECUTION-WITH-TEMPORARY-COVER.md).
+- Covered does not mean closed: graph gaps remain OPEN/UNRESOLVED; the Recovery Bridge is not the missing original parent.
+- Path A host tests remain NOT RUN without direct host receipts; NEXT-051 remains the sole active queue.
