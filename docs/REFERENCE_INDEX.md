@@ -1770,7 +1770,13 @@ Both Path A (portable initial model and independent-host recovery) and Path B (e
 - [IN-075 UTC/Tehran binding](architecture/BEHAVIOR-TRACE/TIME-BINDING-IN-075-POINT-0-038-2026-10-27.md) — 2026-10-27T04:11:55Z / 07:41:55 Tehran.
 - [OUT-074 UTC/Tehran binding](architecture/BEHAVIOR-TRACE/TIME-BINDING-OUT-074-POINT-0-038-2026-10-27.md) — 2026-10-27T04:11:59Z / 07:41:59 Tehran.
 - [EVT-0209 UTC/Tehran binding](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0209-POINT-0-038-2026-10-27.md) — 2026-10-27T04:12:03Z / 07:42:03 Tehran.
-- [CURRENT-087 UTC/Tehran binding](architecture/BEHAVIOR-TRACE/TIME-BINDING-CURRENT-087-POINT-0-038-2026-10-27.md) — 2026-10-27T04:12:06Z / 07:42:06 Tehran.
+- [CURRENT-087 UTC/Tehran binding](architecture/BEHAVIOR-TRACE/TIME-BINDING-CURRENT-087-POINT-0-038-2026-10-27.md) — 2026-10-27T04:19:28Z / 07:42:06 Tehran.
 
 
 - Current continuation: [CURRENT-087](./0.0/anchors/PALANG-0.0-CURRENT-20261027-087-GOAL-EXECUTION-WITH-TEMPORARY-COVER.md); NEXT-051 remains the sole active queue.
+
+
+### POINT-0/038 validation receipt
+- [EVT-0210 exact-SHA audit/conformance receipt](architecture/BEHAVIOR-TRACE/EVT-0210-POINT-0-038-EXACT-SHA-VALIDATION-AND-MANIFEST-REPAIR-2026-10-27.md).
+- [EVT-0210 canonical time binding](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0210-POINT-0-038-2026-10-27.md) — UTC 2026-10-27T04:19:13Z / Tehran 07:49:13 +03:30.
+- [CURRENT-087 refreshed canonical time binding](architecture/BEHAVIOR-TRACE/TIME-BINDING-CURRENT-087-POINT-0-038-2026-10-27.md) — UTC 2026-10-27T04:19:28Z / Tehran 07:49:28 +03:30.
