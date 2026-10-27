@@ -34,6 +34,11 @@
     "IN-085",
     "OUT-084",
     "EVT-0222",
+    "CURRENT-097",
+    "POINT-0/047",
+    "IN-085",
+    "OUT-084",
+    "EVT-0222",
     "CURRENT-097"
   ],
   "entrypoint": "engine.py",
