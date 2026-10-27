@@ -1786,3 +1786,8 @@ Both Path A (portable initial model and independent-host recovery) and Path B (e
 - Canonical source: [LIVE-DESTINATION-STABILITY-AUDIT](architecture/BEHAVIOR-OBSERVATORY/LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md), blob `de1b75f07241c9b313e476af5f1417177ff78c10`; Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, version ID 7. Semantic match within approved tolerance; exact text differs by one trailing LF; no Library overwrite.
 - Root/checkpoint/active queue: POINT-0/038 → CURRENT-087 → NEXT-051. CURRENT-065/CURRENT-066 remains OPEN; preserve all earlier roots and collision lineage.
 - Audit/conformance passed only on tested SHA `77cb3b725d493cf92af6a95d4b7a00888fbdb7bc`; the pre-registration main `9124fd841f357889bdc5c8604effb7cb368b56cc` and later heads require exact-SHA receipts. Issues #20/#21 remain OPEN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN/NOT VERIFIED; independent host NOT RUN.
+
+
+| HAIF-POINT-0-039 | docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-039-MIRROR-SYNC-AND-ARCHITECTURE-CONTINUATION.md | User-designated continuation root for mirror sync and architecture follow-through | REGISTERED / ACTIVE / LIVING / OPEN; CURRENT-088 and NEXT-051 remain execution path |
+| HAIF-EVT-0212 | docs/architecture/BEHAVIOR-TRACE/EVT-0212-POINT-0-039-REGISTRATION-AND-ARCHITECTURE-CONTINUATION-2026-10-27.md | Event linking POINT-0/039, IN-076, OUT-075 and CURRENT-088 | REGISTERED / OPEN; exact-final-SHA validation remains required |
+| HAIF-CURRENT-088 | docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-088-POINT-0-039-EXECUTION.md | Active checkpoint for deterministic continuation under NEXT-051 | ACTIVE / LIVING / OPEN / EXECUTION REQUIRED |
