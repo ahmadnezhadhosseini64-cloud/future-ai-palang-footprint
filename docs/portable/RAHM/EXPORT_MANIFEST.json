@@ -1,8 +1,8 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.8.22",
-  "manifest_status": "Canonical new-host handoff chain and EVT-0214 collision/time-binding evidence included in live-reference inventory; alternate duplicate-ID drafts quarantined and excluded. Digest scan and package artifact require fresh supported workflow evidence; paired final-SHA audit/conformance and independent-host acceptance remain open.",
-  "created_from_checkpoint": "HAIF-POINT-0-040-INITIAL-MODEL-NEW-HOST-HANDOFF-20261027 + HAIF-CURRENT-089-INITIAL-MODEL-NEW-HOST-HANDOFF-20261027",
+  "version": "1.8.23",
+  "manifest_status": "Mutable workflow and NEXT-051 are live references to prevent stale pinned digests; POINT-0/043 independent-host recovery protocol and chain added. Exact-byte conformance and ZIP artifact must pass on final SHA. Real AI-host acceptance remains OPEN / NOT RUN.",
+  "created_from_checkpoint": "HAIF-POINT-0-043-INDEPENDENT-HOST-RECOVERY-20261027 + HAIF-CURRENT-092-INDEPENDENT-HOST-RECOVERY-20261027",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [
     {
@@ -292,12 +292,6 @@
       "version": "repository-current",
       "git_blob_sha": "f56f8a6369336013cb5fe2be1daeb45626916fd0",
       "sha256": "1d74baef6742045f7b9a33ede511c38231698673896da74a729273d55246f023"
-    },
-    {
-      "path": "docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md",
-      "version": "repository-current",
-      "git_blob_sha": "e2b9c01f35870b911c15469771f3be0fd02c937e",
-      "sha256": "c12cb9be6d1053fefcfb8c3167539b63c5aa4c6f8b9f0d49609f289b9d60287c"
     }
   ],
   "manifest_itself": {
@@ -486,7 +480,14 @@
     "docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0213-POINT-0-040-2026-10-27.md",
     "docs/architecture/BEHAVIOR-TRACE/EVT-0214-POINT-040-DUPLICATE-ID-QUARANTINE-2026-10-27.md",
     "docs/architecture/مدل اولیه AI/NEW-HOST-BOOTSTRAP-2026-10-27.md",
-    "docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0214-POINT-040-DUPLICATE-ID-QUARANTINE-2026-10-27.md"
+    "docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0214-POINT-040-DUPLICATE-ID-QUARANTINE-2026-10-27.md",
+    "docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md",
+    "docs/architecture/مدل اولیه AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md",
+    "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-043-INDEPENDENT-HOST-RECOVERY-HARD-AUDIT.md",
+    "docs/0.0/anchors/PALANG-0.0-IN-20261027-080-INDEPENDENT-HOST-RECOVERY.md",
+    "docs/0.0/anchors/PALANG-0.0-OUT-20261027-079-INDEPENDENT-HOST-RECOVERY.md",
+    "docs/architecture/BEHAVIOR-TRACE/EVT-0217-INDEPENDENT-HOST-RECOVERY-HARD-AUDIT-2026-10-27.md",
+    "docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-092-INDEPENDENT-HOST-RECOVERY.md"
   ],
   "live_reference_policy": "Mutable current-state and startup/governance references are included in each export and receive exact SHA-256 plus Git blob SHA-1 observations in the same CI run. This includes RAHM_BOOT and RAHM_ARCHITECTURE because their canonical checkpoint binding must track the current live chain. Stable core remains digest-pinned."
 }
