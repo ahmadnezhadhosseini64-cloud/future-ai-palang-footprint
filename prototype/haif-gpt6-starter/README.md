@@ -1,4 +1,4 @@
-# HAIF GPT-6 Portable Starter v0.3.8
+# HAIF GPT-6 Portable Starter v0.3.9
 
 This is the updated release of the existing HAIF starter package, not a separate project. It updates the existing v0.3.0 0/0+ bootstrap package at the same stable package identity and canonical ZIP filename; history and prior digests remain preserved. It does not replace the living master, historical anchors or NEXT-051.
 
@@ -81,6 +81,6 @@ The v0.3.4 archive is historical verified evidence. Version 0.3.5 is source-only
 - Stable package ID: `HAIF-GPT6-PORTABLE-STARTER-20261025-004` (unchanged).
 - Canonical ZIP filename: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip` (unchanged; no separate version-named ZIP product).
 - Latest verified v0.3.7 receipt: run [40546488170](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40546488170), source commit `62d1791face55f972cf4bd944537b50f9d179fcb`, 30,573 bytes, SHA-256 `fcc09933dd67ca1300af051e14dbcf80c76b6f620dc6c9623323caca307969fb`, 11 files, 23/23 extracted tests, artifact round-trip PASS.
-- The test-only source change after the earlier v0.3.7 receipt changed the packaged ZIP bytes without advancing the internal version. This is being reconciled by advancing the internal version to 0.3.8 while retaining the same package identity and canonical ZIP filename.
-- v0.3.8 artifact receipt: PENDING until the fresh exact-head workflow completes and its downloaded ZIP is inspected.
+- The test-only source change after the earlier v0.3.7 receipt changed the packaged ZIP bytes without advancing the internal version. This was reconciled by advancing the internal version to 0.3.8; the next source change advances to 0.3.9 while retaining the same package identity and canonical ZIP filename.
+- v0.3.8 is the previous verified receipt; v0.3.9 artifact receipt: PENDING until the fresh exact-head workflow completes and its downloaded ZIP is inspected.
 - Real independent-host acceptance remains NOT RUN.
