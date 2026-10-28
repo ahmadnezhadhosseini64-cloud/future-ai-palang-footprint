@@ -14,11 +14,11 @@ OUTDIR = ROOT / "audit-output"
 OUTDIR.mkdir(exist_ok=True)
 
 FILES = {
-    "point": "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261028-056-0PLUS-INPLACE-UPDATE-VERSION-GOVERNANCE.md",
-    "in": "docs/0.0/anchors/PALANG-0.0-IN-20261028-094-POINT-056-INPLACE-VERSION-GOVERNANCE.md",
-    "out": "docs/0.0/anchors/PALANG-0.0-OUT-20261028-093-POINT-056-INPLACE-VERSION-GOVERNANCE.md",
-    "event": "docs/architecture/BEHAVIOR-TRACE/EVT-0231-POINT-056-INPLACE-VERSION-GOVERNANCE-2026-10-28.md",
-    "current": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261028-106-INPLACE-VERSION-GOVERNANCE.md",
+    "point": "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261028-057-0PLUS-PORTABLE-CONFORMANCE-REPAIR.md",
+    "in": "docs/0.0/anchors/PALANG-0.0-IN-20261028-095-POINT-057-CONFORMANCE-REPAIR.md",
+    "out": "docs/0.0/anchors/PALANG-0.0-OUT-20261028-094-POINT-057-CONFORMANCE-REPAIR.md",
+    "event": "docs/architecture/BEHAVIOR-TRACE/EVT-0232-POINT-057-PORTABLE-CONFORMANCE-REPAIR-2026-10-28.md",
+    "current": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261028-107-PORTABLE-CONFORMANCE-REPAIR.md",
     "next": "docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md",
     "master": "docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md",
     "index": "docs/REFERENCE_INDEX.md",
@@ -26,7 +26,7 @@ FILES = {
     "package_manifest": "prototype/haif-gpt6-starter/manifest.json",
     "package_protocol": "prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md",
 }
-CHAIN = ["POINT-0/056", "IN-094", "OUT-093", "EVT-0231", "CURRENT-106", "NEXT-051"]
+CHAIN = ["POINT-0/057", "IN-095", "OUT-094", "EVT-0232", "CURRENT-107", "NEXT-051"]
 OPEN_GATES = {
     "full_state_recovery": ("full IN/OUT state reconstruction", "open proof gates"),
     "clean_host_import": ("clean/second AI-host import", "open proof gates"),
@@ -89,7 +89,7 @@ def main():
                 failures.append({"check":"broken_local_link","source":key,"target":target})
     canonical = " → ".join(CHAIN)
     for key in ("point", "out", "event", "current", "master", "index", "queue", "package_protocol"):
-        if "POINT-0/056" not in docs[key] or "CURRENT-106" not in docs[key] or "NEXT-051" not in docs[key]:
+        if "POINT-0/056" not in docs[key] or "CURRENT-107" not in docs[key] or "NEXT-051" not in docs[key]:
             failures.append({"check":"canonical_chain_not_visible","source":key})
     manifest = json.loads(docs["package_manifest"])
     if manifest.get("version") != "0.3.8" or manifest.get("supersedes") != "0.3.7":
