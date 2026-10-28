@@ -4,7 +4,7 @@
 - Production ID: `PALANG-EVT0233-2026-10-28-001`
 - Test ID: `LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001`
 - Version: 1.0.0
-- Status: REGISTERED / READ-BACK VERIFICATION REQUIRED until the post-write fetch and time binding are confirmed.
+- Status: REGISTERED / READ-BACK VERIFIED for this event file and its recorded source/Library comparison; exact-current-main CI remains NOT VERIFIED.
 - Canonical source: [LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md](../BEHAVIOR-OBSERVATORY/LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md)
 - Library mirror: `/Future AI/Palang Footprint/Master Reference Vault/Reference Documents/LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md`
 - Stable Library ID: `libfile_7ac3c9a6ec14819198eb2751e204aa48`
@@ -55,3 +55,8 @@
 ## 5. Status boundary
 
 This event registers the current source/Library comparison and its observed evidence. It does not claim automatic background synchronization, full graph reconciliation, exact-current-head CI verification, or external-host acceptance.
+
+
+## Event-file registration read-back
+- Initial event creation commit: `87097d23fbe4492fb58343168fde093e08ad9d7b`; commit UTC `2026-10-28T06:19:31Z`; derived Tehran `2026-10-28T09:49:31+03:30`. This is the initial creation commit, not the final last-change time after this status reconciliation.
+- Independent fetch of the exact event path returned the complete 6,536-character event body and confirmed the Stable ID, source blob, Library version, time-binding path, root/checkpoint/queue links and open status boundaries. The final event last-change commit is recorded separately in the time-binding file.
