@@ -10,6 +10,7 @@
 - Independent-host proof protocol: [INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001](../../architecture/مدل%20اولیه%20AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md)
 - Package recovery protocol: [INDEPENDENT_HOST_RECOVERY_PROTOCOL.md](../../../prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md)
 - Package manifest: [manifest.json](../../../prototype/haif-gpt6-starter/manifest.json)
+- RAHM export manifest: [EXPORT_MANIFEST.json](../../portable/RAHM/EXPORT_MANIFEST.json)
 
 ## Implemented source changes
 - Manifest restored to internal version 0.3.8; `supersedes=0.3.7`; Stable ID and canonical filename unchanged.
