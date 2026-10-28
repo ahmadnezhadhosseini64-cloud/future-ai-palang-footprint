@@ -5,14 +5,14 @@
 - Type: canonical point-0 marker and continuation; not a new independent root and not a 0+ highlight.
 - Project: Future AI / Palang Footprint / HAIF
 - Previous verified chain: POINT-0/058 (0+) → IN-096 → OUT-095 → EVT-0233 → CURRENT-108 → NEXT-051
-- Input: IN-097 (to be registered in the same continuation transaction)
-- Output: OUT-096 (to be registered in the same continuation transaction)
-- Event: EVT-0235 (EVT-0234 collision history preserved; no reuse)
-- Current: CURRENT-109
+- Input: [IN-097](./PALANG-0.0-IN-20261028-097-POINT-059-REPOSITORY-PERSISTENCE-REPAIR.md) — independently registered and read back
+- Output: [OUT-096](./PALANG-0.0-OUT-20261028-096-POINT-059-REPOSITORY-PERSISTENCE-REPAIR.md) — independently registered and read back
+- Event: [EVT-0235](../../architecture/BEHAVIOR-TRACE/EVT-0235-POINT-059-REPOSITORY-PERSISTENCE-REPAIR-2026-10-28.md) — independently registered and read back; EVT-0234 collision history preserved
+- Current: [CURRENT-109](./PALANG-0.0-CURRENT-20261028-109-REPOSITORY-PERSISTENCE-REPAIR.md)
 - Sole active queue: NEXT-051; do not create NEXT-052.
 - User-message timestamp: UNKNOWN / UNVERIFIED.
 - Repository commit timestamp: to be read from the actual resulting Git commit; UTC canonical, Tehran +03:30 derived from that instant.
-- Status: WRITE ATTEMPT IN PROGRESS; not REGISTERED until repository write and read-back match.
+- Status: REPOSITORY WRITE + READ-BACK VERIFIED for POINT-0/059, IN-097, OUT-096, EVT-0235, CURRENT-109, 0.0 README, Reference Index and living mother reference. External destinations and host acceptance remain OPEN.
 
 ## User intent
 The user designates this turn as point 0 and asks the continuation to remain 0.0, with a direct attempt to make a durable record in the canonical GitHub repository.
@@ -23,7 +23,7 @@ Preserve this turn and the previous audit outcome as separate evidence:
 - The inner ZIP's 23/23 unit tests and structural integrity are not independent-host acceptance.
 - The bundled master reference was version 1.7.24 while the repository master was reported at version 1.7.29; this mismatch blocks declaring the old bundle current.
 - External independent-host acceptance, fresh-session/restart recovery, and host write-back remain OPEN / NOT VERIFIED.
-- Earlier repository write attempt for POINT-0/059 failed; this new attempt must be verified by a successful write and exact read-back.
+- The earlier write attempt failed, but this subsequent attempt succeeded. Each canonical file and central pointer was independently fetched after writing; identities and the 0.0 chain matched.
 
 ## Canonical continuation
 POINT-0/059 → IN-097 → OUT-096 → EVT-0235 → CURRENT-109 → NEXT-051
