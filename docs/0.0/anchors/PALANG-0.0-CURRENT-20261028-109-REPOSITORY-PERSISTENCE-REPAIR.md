@@ -29,3 +29,10 @@ Preserved prior chain: `POINT-0/058 (0+) → IN-096 → OUT-095 → EVT-0233 →
 3. Rebuild the canonical ZIP and `LIVING_MASTER_REFERENCE.md` from the same current main/source commit, preserve stable package identity/name/version unless a governing change requires otherwise, and independently check SHA-256 + byte count + receipt.
 4. Run a real independent AI-host import with both artifacts; capture raw receipt, perform negative control and fresh-session/restart recovery.
 5. Keep every gate OPEN until its own evidence is read back and matched.
+
+
+## Live mirror sync side-event — EVT-0236 (2026-10-28)
+- Event / time binding: [EVT-0236](../../architecture/BEHAVIOR-TRACE/EVT-0236-LIVE-MIRROR-SYNC-RECHECK-2026-10-28.md) / [TIME-BINDING-EVT-0236](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0236-LIVE-MIRROR-SYNC-2026-10-28.md). This side-event does not replace the checkpoint's existing chain.
+- Mirror source blob `de1b75f07241c9b313e476af5f1417177ff78c10`, 10,479 characters; Library v7, 10,480 characters, one extra trailing LF only. No write performed; source remains authoritative.
+- POINT-0/059 root lineage is ambiguous across the mirror-normalization root and repository-persistence root. Preserve both; CURRENT-065/CURRENT-066 remains OPEN. EVT-0235 is duplicated across mirror-sync and root-event paths; EVT-0236 is the unique mirror-sync event.
+- NEXT-051 remains the sole active queue; its path/body mismatch is OPEN. Exact-current-main audit/conformance and external-host acceptance remain NOT VERIFIED / OPEN. No NEXT-052.

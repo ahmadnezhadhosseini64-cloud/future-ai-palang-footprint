@@ -3,13 +3,13 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.10.8
+- Version: 1.10.9
 - Date: 2026-10-28
 - Exact Time: UNKNOWN / UNVERIFIED for this source update; prior recorded time retained as historical evidence.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: POINT-0/059 is the latest canonical point-0 record; POINT-0/058 remains the 0+ highlight; CURRENT-109 is the active 0.0 continuation. The package Stable ID and canonical ZIP filename remain fixed; internal package version remains 0.3.8. Last confirmed ZIP digest (32,235 bytes; SHA-256 6ef2a5b0eab4c527db6f47ad8ef330f9854e692cd02fc3b2a02298636fa5bb78; 23/23 tests) is historical for its tested source commit, not proof for current main after CURRENT-109 repository-registration and package-test/acceptance-prompt updates. Exact-head audit/conformance and fresh artifact read-back must be rechecked. Duplicate records POINT-0/045, CURRENT-095, IN-083, OUT-082 and EVT-0220 remain OPEN; EVT-0233 collision is preserved under EVT-0234. The active NEXT-051 path currently contains a stale queue-like Version 1.10.3 snapshot rather than a task-specific action document; preserve it and recover path-specific Git history before repair. NEXT-051 remains the sole active queue label; no NEXT-052. Independent-host import, restart persistence, live capture and authorized write-back remain OPEN / NOT VERIFIED.
+- Status: POINT-0/059 remains a duplicated root label across two distinct candidate files; CURRENT-109 is the observed checkpoint. NEXT-051 remains the sole active queue label, but its path resolves to stale queue-like Version 1.10.3 rather than a task-specific NEXT document. Exact-head audit/conformance and fresh paired ZIP/master remain NOT VERIFIED. Duplicate IDs and CURRENT-065/CURRENT-066 remain OPEN; no NEXT-052.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
@@ -2409,3 +2409,11 @@ Canonical chain: `POINT-0/058 (0+ marker on canonical root 0) → IN-096 → OUT
 - Source blob `de1b75f07241c9b313e476af5f1417177ff78c10`, 10,479 chars; Library v7, 10,480 chars, one extra trailing LF. No redundant write.
 - NEXT-051 path still returns a stale queue-like Version 1.10.3 body while this queue README is advanced to Version 1.10.7. Keep OPEN pending path-specific Git history recovery; do not reconstruct by inference.
 - CURRENT-065/CURRENT-066 and Issues #20/#21 remain OPEN; Route A and Route B remain distinct but connected; no NEXT-052.
+
+
+## Live mirror synchronization — EVT-0236 (2026-10-28)
+- Event / time binding: [EVT-0236](../BEHAVIOR-TRACE/EVT-0236-LIVE-MIRROR-SYNC-RECHECK-2026-10-28.md) / [TIME-BINDING-EVT-0236](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0236-LIVE-MIRROR-SYNC-2026-10-28.md).
+- Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 characters); Library v7 (10,480 characters), one extra trailing LF only. Normalized content and semantic fields match; no Library write because the supported exported-snapshot/source_file_ref route is unavailable.
+- Current observed main `11e69bb6b5e62a11186569b23312ba06e1d4e1c3`; exact-head audit/conformance NOT VERIFIED. POINT-0/059 has two conflicting candidate files; EVT-0235 is duplicated between mirror-sync and repository-persistence event files. Preserve both lineages; no inferred winner.
+- CURRENT-109 remains the observed checkpoint. This README was Version 1.10.8 before this additive update and is now Version 1.10.9. The older EVT-0235 note saying the README was 1.10.7 is stale; preserved as historical text, superseded by this current metadata. NEXT-051 remains the sole active queue label, but its path still returns stale Version 1.10.3. Keep OPEN pending Git-history recovery. CURRENT-065/CURRENT-066 and Issues #20/#21 remain OPEN; Route A and Route B stay distinct but linked. No NEXT-052.
+- Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN.

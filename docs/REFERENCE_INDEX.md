@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-28 — POINT-0/059 (canonical point 0) → IN-097 → OUT-096 → EVT-0235 → CURRENT-109 → NEXT-051. Prior POINT-0/058 remains the 0+ highlight. Current paired ZIP/master release readiness is NOT VERIFIED; external host acceptance remains OPEN. Living mother reference is being advanced to v1.7.29; use the final-change commit recorded in Git history, not the older v1.7.27 receipt. Canonical starter internal v0.3.8: 32,235 bytes, SHA-256 `6ef2a5b0eab4c527db6f47ad8ef330f9854e692cd02fc3b2a02298636fa5bb78`, 11 files, 23/23 extracted tests PASS. Portable Conformance run 40638629879 and Living Architecture Audit run 40638629757 succeeded on source commit `db5d960c80d47c39b75d2b8821312eba9ad38cfa`; subsequent mother-reference-only commit records the evidence. Independent host, second-host recovery, restart persistence, live capture, authorized write-back, unattended execution and historical graph reconciliation remain OPEN.
+**Last Updated:** 2026-10-28 — EVT-0236 live mirror sync recheck. POINT-0/059 remains an unresolved duplicate-root label; CURRENT-109 is the observed checkpoint; NEXT-051 remains the sole active queue. Living mother reference advances additively to v1.7.31 in this commit; bundled snapshot v1.7.24 and paired ZIP/master release readiness remain NOT VERIFIED. Exact-current-main audit/conformance NOT VERIFIED. Preserve POINT-0/058 (0+) and POINT-0/016, /017, /018.
 
 ## Canonical References
 
@@ -2122,3 +2122,10 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - CURRENT-065/CURRENT-066 disposition is COVERED / NOT CLOSED / OPEN only; no winner inferred, both lineages preserved.
 - NEXT-051 remains sole active continuation; no NEXT-052. Current ZIP hash and old passing CI do not prove a fresh artifact or exact current main.
 - Library trailing LF correction remains NOT EXECUTED because no supported exported-snapshot/source_file_ref route is available; canonical source remains authoritative.
+
+
+## EVT-0236 — live mirror sync and current-pointer conflict (2026-10-28)
+- Event / time binding: [EVT-0236](architecture/BEHAVIOR-TRACE/EVT-0236-LIVE-MIRROR-SYNC-RECHECK-2026-10-28.md) / [TIME-BINDING-EVT-0236](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0236-LIVE-MIRROR-SYNC-2026-10-28.md).
+- Source blob `de1b75f07241c9b313e476af5f1417177ff78c10`, 10,479 characters; Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, version 7, 10,480 characters. Only one extra trailing LF in Library; normalized body and semantic fields match. No Library write; no supported exported `source_file_ref` route was available.
+- Two POINT-0/059 candidates remain distinct: mirror-normalization/portable-package root `docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261028-059-MIRROR-NORMALIZATION-PORTABLE-PACKAGE.md` and repository-persistence root `docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261028-059-REPOSITORY-PERSISTENCE-REPAIR.md`. CURRENT-109 remains the observed checkpoint; do not adjudicate the root by inference. EVT-0235 mirror-sync / root-event collision is preserved; EVT-0236 is the new unique mirror-sync event.
+- NEXT-051 remains the sole active queue label; its path/body mismatch, CURRENT-065/CURRENT-066 and Issues #20/#21 remain OPEN. Exact-current-main audit/conformance NOT VERIFIED. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN. No NEXT-052.

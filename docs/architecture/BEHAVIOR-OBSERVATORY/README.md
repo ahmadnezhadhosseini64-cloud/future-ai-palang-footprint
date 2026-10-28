@@ -2,7 +2,7 @@
 
 - Stable ID: HUMAN-AI-INTERACTION-BEHAVIOR-OBSERVATORY-2026-10-22-001
 - Production ID: HAIBO-HAIF-2026-10-22-001
-- Version: 1.0.3
+- Version: 1.0.4
 - Owner: احمد پلنگ / Ahmad Nezhadhosseini
 - Project: Future AI / Palang Footprint / HAIF
 - Canonical path: `docs/architecture/BEHAVIOR-OBSERVATORY/README.md`
@@ -245,3 +245,10 @@ Continue collecting observable interaction and evaluator behavior as evidence-ba
 - Event/time binding: [EVT-0235](../BEHAVIOR-TRACE/EVT-0235-LIVE-MIRROR-SYNC-RECHECK-2026-10-28.md) / [TIME-BINDING-EVT-0235](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0235-LIVE-MIRROR-SYNC-2026-10-28.md).
 - Current chain POINT-0/058 → CURRENT-108 → NEXT-051. NEXT-051 path/body mismatch, CURRENT-065/CURRENT-066 and Issues #20/#21 remain OPEN.
 - Exact tested SHAs are recorded in EVT-0235/time binding; exact-main verification is not inferred. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external recovery NOT RUN.
+
+
+## EVT-0236 — Live destination recheck (2026-10-28)
+- [Event](../BEHAVIOR-TRACE/EVT-0236-LIVE-MIRROR-SYNC-RECHECK-2026-10-28.md) / [time binding](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0236-LIVE-MIRROR-SYNC-2026-10-28.md).
+- Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library v7 (10,480 chars), one extra trailing LF only. Normalized body and semantic fields match; no rewrite performed because no supported exported source_file_ref route was available.
+- Current root label POINT-0/059 remains ambiguous across two distinct files; CURRENT-109 is the observed checkpoint; NEXT-051 is the sole queue label but its path/body mismatch remains OPEN. CURRENT-065/CURRENT-066 and Issues #20/#21 remain OPEN.
+- Exact-current-main audit/conformance NOT VERIFIED; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external-host recovery NOT RUN. Preserve all earlier points and collisions; no NEXT-052.

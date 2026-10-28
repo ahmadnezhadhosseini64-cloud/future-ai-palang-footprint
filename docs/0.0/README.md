@@ -1809,3 +1809,11 @@ The canonical chain is [POINT-0/032](./anchors/GPT6-RAHM-USER-POINT-0-20261026-0
 - CURRENT-065/CURRENT-066: attempt source-backed reconciliation; if ambiguous, apply a reversible cover and leave OPEN / COVERED-NOT-CLOSED, retaining both histories.
 - Library newline correction: requested, but NOT YET EXECUTED because a supported exported-snapshot/source_file_ref route is not available. Canonical repository source remains authoritative.
 - Priority: rebuild and independently hash/read-back a fresh portable ZIP and living master; exact-head audit/conformance and independent-host import remain unverified until evidenced.
+
+
+## Live mirror synchronization — EVT-0236 (2026-10-28)
+- Event / time binding: [EVT-0236](../architecture/BEHAVIOR-TRACE/EVT-0236-LIVE-MIRROR-SYNC-RECHECK-2026-10-28.md) / [TIME-BINDING-EVT-0236](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0236-LIVE-MIRROR-SYNC-2026-10-28.md).
+- Mirror result: source blob `de1b75f07241c9b313e476af5f1417177ff78c10`, 10,479 characters; Library v7, 10,480 characters. Library has one extra trailing LF; normalized content and semantic fields match. No Library write because no supported exported `source_file_ref` route is available.
+- The label POINT-0/059 remains ambiguous between `GPT6-RAHM-USER-POINT-0-20261028-059-MIRROR-NORMALIZATION-PORTABLE-PACKAGE.md` (Reference Index) and `GPT6-RAHM-USER-POINT-0-20261028-059-REPOSITORY-PERSISTENCE-REPAIR.md` (this 0.0 chain / CURRENT-109). Preserve both, along with POINT-0/016, /017, /018, /057 and /058 (0+); do not choose by inference.
+- EVT-0235 also has a mirror-sync / POINT-059 event-number collision; EVT-0236 is the new unique mirror event. CURRENT-065/CURRENT-066 remains OPEN. NEXT-051 remains the only active queue; no NEXT-052. Its path/body mismatch remains OPEN.
+- Exact-current-main audit/conformance NOT VERIFIED; Issues #20/#21 OPEN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN. Route A and Route B remain separate but connected.

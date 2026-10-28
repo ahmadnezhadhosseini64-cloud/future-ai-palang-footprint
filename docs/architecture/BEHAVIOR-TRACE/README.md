@@ -1,7 +1,7 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.5
+- Version: 1.0.6
 - Date: 2026-10-19
 - Project: Future AI / Palang Footprint / HAIF
 
@@ -974,3 +974,10 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Source blob `de1b75f07241c9b313e476af5f1417177ff78c10`; Library v7 differs only by one trailing LF (10,479 vs 10,480 chars). No rewrite.
 - Current chain POINT-0/058 → CURRENT-108 → NEXT-051. EVT-0233 collision preserved; EVT-0234 and EVT-0235 are unique mirror events. CURRENT-065/CURRENT-066 and NEXT-051 path integrity remain OPEN.
 - Audit/conformance passed on `ac091ffa0ab60ee6ba404490e596709b61136eef`; Evidence Gate moved main to `a6ef55cdf0586c7fb3057dbe214fa5969728df21`, not covered by that pair.
+
+
+## EVT-0236 — Live mirror sync recheck (2026-10-28)
+- Event / time binding: [EVT-0236](./EVT-0236-LIVE-MIRROR-SYNC-RECHECK-2026-10-28.md) / [TIME-BINDING-EVT-0236](./TIME-BINDING-EVT-0236-LIVE-MIRROR-SYNC-2026-10-28.md).
+- Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library v7 (10,480 chars), one extra trailing LF only. Normalized content and semantic fields match; no Library write because no supported exported source_file_ref route was available.
+- Current observed main `11e69bb6b5e62a11186569b23312ba06e1d4e1c3`; exact-head audit/conformance NOT VERIFIED. POINT-0/059 and EVT-0235 each have duplicate-number lineage; preserve both candidates. CURRENT-109 is the observed checkpoint; NEXT-051 remains sole active queue label with path/body mismatch OPEN.
+- CURRENT-065/CURRENT-066 and Issues #20/#21 remain OPEN. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external-host recovery NOT RUN. No NEXT-052.
