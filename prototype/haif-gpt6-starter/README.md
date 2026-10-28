@@ -14,7 +14,7 @@ This is the updated release of the existing HAIF starter package, not a separate
 - First interactive GPT-6 host acceptance checklist included; separates archive portability from real host import, live message capture, repository write-back and restart proof.
 - Host-growth/repository-sync contract included; defines behavior evidence, authorized repo return, RAHM validation and controlled Master/Child promotion.
 - Interaction response/anchor protocol included; requires visible acknowledgment/status, failure disclosure, paired input/output anchors and explicit non-verified gates.
-- Current continuation reference: POINT-0/053 (0+ marker on canonical root 0) → IN-091 → OUT-090 → EVT-0228 → CURRENT-103 → NEXT-051; older 0+ markers remain historical.
+- Current continuation reference: POINT-0/057 (0+ marker on canonical root 0) → IN-095 → OUT-094 → EVT-0232 → CURRENT-107 → NEXT-051; older 0+ markers remain historical. The canonical living mother reference is included in the built ZIP as `LIVING_MASTER_REFERENCE.md` and must be transferred alongside the archive.
 
 ## Bootstrap
 ~~~bash
@@ -23,7 +23,7 @@ python3 engine.py --state ./haif-state.json audit
 python3 engine.py --state ./haif-state.json export > ./haif-portable-bundle.json
 ~~~
 
-The bootstrap preserves six host/runtime gates as OPEN.
+The bootstrap preserves six host/runtime gates as OPEN. The package build copies the current repository mother reference into `LIVING_MASTER_REFERENCE.md`; that copy is build-time synchronized, and the receiver must compare it with the repository master before relying on freshness.
 
 ## Run locally
 ~~~bash
