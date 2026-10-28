@@ -2,6 +2,7 @@
 
 - Stable ID: HAIF-CURRENT-106-INPLACE-VERSION-GOVERNANCE-20261028
 - Production ID: G6IP-CURRENT-106
+- Registration commit UTC (canonical): 2026-10-28T04:43:41Z (`c174814cdb8da9b2df83a055ec98bc4ce3e25a75`); Tehran equivalent 2026-10-28T08:13:41+03:30
 - Prior 0+ point: [POINT-0/056](./GPT6-RAHM-USER-POINT-0-20261028-056-0PLUS-INPLACE-UPDATE-VERSION-GOVERNANCE.md)
 - Input: [IN-094](./PALANG-0.0-IN-20261028-094-POINT-056-INPLACE-VERSION-GOVERNANCE.md)
 - Output: [OUT-093](./PALANG-0.0-OUT-20261028-093-POINT-056-INPLACE-VERSION-GOVERNANCE.md)
@@ -22,6 +23,9 @@
 - Package regression assertions updated to 0.3.8 and current-chain consistency.
 - The prior 0.3.9 source-only edits were reverted; no 0.3.9 package version is intended.
 - Current 0+ and 0.0 work now continues as POINT-0/056 → IN-094 → OUT-093 → EVT-0231 → CURRENT-106 → NEXT-051.
+
+## Latest available gate evidence
+- Evidence Gate run [40634030956](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40634030956) succeeded. It does not prove the Portable Conformance ZIP build or independent-host acceptance.
 
 ## Open proof gates
 - Exact-head Portable Conformance: NOT VERIFIED.
