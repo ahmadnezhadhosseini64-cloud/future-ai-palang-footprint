@@ -9,7 +9,7 @@
 - Output: [OUT-096](./PALANG-0.0-OUT-20261028-096-POINT-059-REPOSITORY-PERSISTENCE-REPAIR.md) — independently registered and read back
 - Event: [EVT-0235](../../architecture/BEHAVIOR-TRACE/EVT-0235-POINT-059-REPOSITORY-PERSISTENCE-REPAIR-2026-10-28.md) — independently registered and read back; EVT-0234 collision history preserved
 - Current: [CURRENT-109](./PALANG-0.0-CURRENT-20261028-109-REPOSITORY-PERSISTENCE-REPAIR.md)
-- Sole active queue: NEXT-051; do not create NEXT-052.
+- Sole active queue: [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md); do not create NEXT-052.
 - User-message timestamp: UNKNOWN / UNVERIFIED.
 - Repository commit timestamp: to be read from the actual resulting Git commit; UTC canonical, Tehran +03:30 derived from that instant.
 - Status: REPOSITORY WRITE + READ-BACK VERIFIED for POINT-0/059, IN-097, OUT-096, EVT-0235, CURRENT-109, 0.0 README, Reference Index and living mother reference. External destinations and host acceptance remain OPEN.
