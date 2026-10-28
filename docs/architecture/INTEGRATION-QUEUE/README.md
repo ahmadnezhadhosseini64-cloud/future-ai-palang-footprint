@@ -9,7 +9,7 @@
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: POINT-0/055 is the latest 0+ marker on canonical root 0; CURRENT-105 is active 0.0 continuation. Same starter Stable ID and canonical ZIP filename remain fixed. Source manifest/internal package version is now 0.3.9; package host/recovery contracts and regression tests are aligned to POINT-0/055 → IN-093 → OUT-092 → EVT-0230 → CURRENT-105 → NEXT-051; the duplicate historical NEXT-051 reference is disambiguated, IN/OUT recovery links match, and Portable Conformance now targets CURRENT-105. Exact-head CI and v0.3.9 ZIP build/hash/read-back are PENDING; last verified ZIP is v0.3.8, run 40549743811 (31,487 bytes; SHA-256 7b9d6df16f4423e3c448c3720cbb8ce95205fc2322b1194511c0b722d4e6205b; 23/23 tests). Missing prior chain provenance, historical audit failures and duplicate records POINT-0/045, CURRENT-095, IN-083, OUT-082 and EVT-0220 remain OPEN. Real independent-host import, restart persistence, live capture and authorized write-back remain NOT RUN / NOT VERIFIED. NEXT-051 remains the sole active queue; no NEXT-052.
+- Status: POINT-0/055 is the latest 0+ marker on canonical root 0; CURRENT-105 is active 0.0 continuation. Same starter Stable ID and canonical ZIP filename remain fixed. Source manifest/internal package version remains 0.3.8 and is being rebuilt in place; package host/recovery contracts and regression tests are aligned to POINT-0/055 → IN-093 → OUT-092 → EVT-0230 → CURRENT-105 → NEXT-051; the duplicate historical NEXT-051 reference is disambiguated, IN/OUT recovery links match, and Portable Conformance now targets CURRENT-105. Exact-head CI and updated in-place v0.3.8 ZIP build/hash/read-back are PENDING; last verified ZIP is v0.3.8, run 40549743811 (31,487 bytes; SHA-256 7b9d6df16f4423e3c448c3720cbb8ce95205fc2322b1194511c0b722d4e6205b; 23/23 tests). Missing prior chain provenance, historical audit failures and duplicate records POINT-0/045, CURRENT-095, IN-083, OUT-082 and EVT-0220 remain OPEN. Real independent-host import, restart persistence, live capture and authorized write-back remain NOT RUN / NOT VERIFIED. NEXT-051 remains the sole active queue; no NEXT-052.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
@@ -2374,3 +2374,5 @@ NEXT-051 remains the sole active queue. Do not create NEXT-052.
 - [ ] Clean independent-host import, full IN/OUT recovery, negative controls and actual restart persistence.
 - [ ] Prove live capture and authorized write-back, or record NOT SUPPORTED.
 - NEXT-051 remains the only active queue; do not create NEXT-052. Unchecked items remain OPEN.
+
+- Version governance: do not increment the internal version for this work. Rebuild the existing v0.3.8 canonical package in place under the same Stable ID and ZIP filename; previous v0.3.8 digest remains historical evidence only.
