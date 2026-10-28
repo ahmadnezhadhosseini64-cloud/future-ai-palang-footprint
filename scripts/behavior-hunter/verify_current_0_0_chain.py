@@ -65,15 +65,15 @@ def main():
     expected_links = {
         "point": [("in", "PALANG-0.0-IN-20261028-095"), ("out", "PALANG-0.0-OUT-20261028-094"),
                   ("event", "EVT-0232-POINT-057"), ("current", "PALANG-0.0-CURRENT-20261028-107"), ("next", "PALANG-0.0-NEXT-20261024-051")],
-        "in": [("out", "PALANG-0.0-OUT-20261028-093"), ("event", "EVT-0231-POINT-056"),
-               ("current", "PALANG-0.0-CURRENT-20261028-106"), ("next", "PALANG-0.0-NEXT-20261024-051")],
-        "out": [("in", "PALANG-0.0-IN-20261028-094"), ("event", "EVT-0231-POINT-056"),
-                ("current", "PALANG-0.0-CURRENT-20261028-106"), ("next", "PALANG-0.0-NEXT-20261024-051")],
-        "event": [("point", "GPT6-RAHM-USER-POINT-0-20261028-057"), ("in", "PALANG-0.0-IN-20261028-094"),
-                  ("out", "PALANG-0.0-OUT-20261028-093"), ("current", "PALANG-0.0-CURRENT-20261028-106"),
+        "in": [("out", "PALANG-0.0-OUT-20261028-094"), ("event", "EVT-0232-POINT-057"),
+               ("current", "PALANG-0.0-CURRENT-20261028-107"), ("next", "PALANG-0.0-NEXT-20261024-051")],
+        "out": [("in", "PALANG-0.0-IN-20261028-095"), ("event", "EVT-0232-POINT-057"),
+                ("current", "PALANG-0.0-CURRENT-20261028-107"), ("next", "PALANG-0.0-NEXT-20261024-051")],
+        "event": [("point", "GPT6-RAHM-USER-POINT-0-20261028-057"), ("in", "PALANG-0.0-IN-20261028-095"),
+                  ("out", "PALANG-0.0-OUT-20261028-094"), ("current", "PALANG-0.0-CURRENT-20261028-107"),
                   ("next", "PALANG-0.0-NEXT-20261024-051")],
-        "current": [("point", "GPT6-RAHM-USER-POINT-0-20261028-056"), ("in", "PALANG-0.0-IN-20261028-094"),
-                    ("out", "PALANG-0.0-OUT-20261028-093"), ("event", "EVT-0231-POINT-056"),
+        "current": [("point", "GPT6-RAHM-USER-POINT-0-20261028-057"), ("in", "PALANG-0.0-IN-20261028-095"),
+                    ("out", "PALANG-0.0-OUT-20261028-094"), ("event", "EVT-0232-POINT-057"),
                     ("next", "PALANG-0.0-NEXT-20261024-051")],
     }
     for source, checks in expected_links.items():
@@ -117,7 +117,7 @@ def main():
         if not gates[name]["preserved_open"]:
             failures.append({"check":"open_gate_not_preserved","gate":name,"state":gates[name]})
     result = {
-        "test_id":"RAHM-CURRENT-106-IN-OUT-STATE-RECOVERY-2026-10-28-001",
+        "test_id":"RAHM-CURRENT-107-IN-OUT-STATE-RECOVERY-2026-10-28-001",
         "scope":"Current repository-chain reconstruction from IN and OUT anchors; not real external-host acceptance.",
         "canonical_chain":canonical,
         "version":"0.3.8",
