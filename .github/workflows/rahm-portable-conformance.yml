@@ -179,6 +179,8 @@ jobs:
             rahm-sha256-evidence.json
             rahm-recovery-equivalence.json
 
+      - name: Synchronize current living mother into portable starter
+        run: cp "docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md" "prototype/haif-gpt6-starter/LIVING_MASTER_REFERENCE.md"
       - name: Test the existing HAIF starter package source
         if: always()
         run: |
@@ -194,6 +196,7 @@ jobs:
           archive = Path("haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip")
           required = [
               "README.md",
+              "LIVING_MASTER_REFERENCE.md",
               "manifest.json",
               "GPT6_HOST_INSTRUCTIONS.md",
               "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md",
