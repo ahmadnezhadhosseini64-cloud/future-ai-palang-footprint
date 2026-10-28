@@ -234,6 +234,7 @@ class PortablePackageProtocolTests(unittest.TestCase):
         self.assertIn("INTERACTION-RESPONSE-AND-ANCHOR-PROTOCOL.md", manifest["parent_architecture"])
         self.assertIn("HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md", manifest["parent_architecture"])
         self.assertEqual(manifest["host_acceptance_checklist"], "FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST.md")
+        self.assertEqual(manifest["independent_host_acceptance_prompt"], "INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md")
 
 
     def test_first_host_checklist_keeps_live_host_and_writeback_gates_open(self):
@@ -260,8 +261,8 @@ class HostGrowthRepositoryContractTests(unittest.TestCase):
         manifest = json.loads((root / "manifest.json").read_text(encoding="utf-8"))
         protocol = (root / "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md").read_text(encoding="utf-8")
         self.assertIn(f"Package version: {manifest['version']}", protocol)
-        self.assertIn("POINT-0/057", protocol)
-        self.assertIn("CURRENT-107", protocol)
+        self.assertIn("POINT-0/058", protocol)
+        self.assertIn("CURRENT-108", protocol)
 
     def test_package_manifest_version_and_identity_remain_continuous(self):
         root = Path(__file__).parent
@@ -288,7 +289,7 @@ class InteractionResponseAnchorProtocolTests(unittest.TestCase):
         self.assertEqual(manifest["archive_policy"]["canonical_filename"], "haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip")
         self.assertIn("actual host integration", protocol.casefold())
         self.assertIn("NOT VERIFIED", protocol)
-        expected_chain = "POINT-0/057 (0+ marker on canonical root 0) → IN-095 → OUT-094 → EVT-0232 → CURRENT-107 → NEXT-051"
+        expected_chain = "POINT-0/058 (0+ marker on canonical root 0) → IN-096 → OUT-095 → EVT-0233 → CURRENT-108 → NEXT-051"
         for filename in (
             "GPT6_HOST_INSTRUCTIONS.md",
             "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md",
