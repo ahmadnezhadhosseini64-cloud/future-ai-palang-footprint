@@ -35,8 +35,8 @@ A GPT chat instruction or uploaded knowledge file cannot, by itself, create dura
 
 ## Startup / recovery sequence
 1. Read this file, manifest.json, and INDEPENDENT_HOST_RECOVERY_PROTOCOL.md.
-2. Import the current living master reference as a separate companion file; it is canonical and must be transferred together with the ZIP.
-2. Retrieve the repository's living master, latest verified CURRENT checkpoint (CURRENT-103 for this package-update chain), NEXT-051, 0.0 index and Reference Index. Preserve CURRENT-065/CURRENT-066 ambiguity unless source evidence resolves it.
+2. Import the current living master reference from the included `LIVING_MASTER_REFERENCE.md` companion. Verify its freshness against the canonical repository before treating it as latest.
+3. Retrieve and compare `LIVING_MASTER_REFERENCE.md` against the repository's canonical living master, then retrieve the latest verified CURRENT checkpoint (CURRENT-107 for this package-update chain), NEXT-051, the 0.0 index and Reference Index. Preserve CURRENT-065/CURRENT-066 ambiguity unless source evidence resolves it.
 3. Run the repository pointer checker. Preserve AMBIGUOUS results.
 4. Load the latest verified portable state bundle if available; verify SHA-256 before trusting it.
 5. Resume the first open acceptance gate. Do not create a new planning document instead of executing a gate.
@@ -50,7 +50,7 @@ A GPT chat instruction or uploaded knowledge file cannot, by itself, create dura
 
 ## Current 0+ / 0.0 recovery pointer (v0.3.8)
 - Current chain: POINT-0/057 (0+ marker on canonical root 0) → IN-095 → OUT-094 → EVT-0232 → CURRENT-107 → NEXT-051.
-- Canonical ZIP filename and stable package ID remain unchanged; the earlier v0.3.8 receipt is historical; the in-place updated v0.3.8 ZIP requires a fresh exact-byte receipt.
+- Canonical ZIP filename and stable package ID remain unchanged; the earlier v0.3.8 receipt is historical; the latest in-place updated v0.3.8 ZIP receipt is tracked by the exact-head Portable Conformance workflow; verify the receipt bundled with the downloaded artifact.
 - Known unresolved graph collisions: POINT-0/045, IN-083, OUT-082, EVT-0220 and CURRENT-095 each have multiple same-numbered files in the current slice. Preserve them; do not choose/merge/renumber without provenance evidence.
 
 ## First work targets
