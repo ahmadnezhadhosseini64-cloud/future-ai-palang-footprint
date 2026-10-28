@@ -19,8 +19,9 @@
 
 ## Source checks completed
 - Manifest read-back: version=0.3.8; supersedes=0.3.7; current_internal_version=0.3.8.
-- Manifest chain order: POINT-0/055 → IN-093 → OUT-092 → EVT-0230 → CURRENT-105 → NEXT-051; only one active exact NEXT-051 pointer, with historical reference explicitly labeled.
+- Manifest chain order: POINT-0/056 → IN-094 → OUT-093 → EVT-0231 → CURRENT-106 → NEXT-051; only one active exact NEXT-051 pointer, with historical reference explicitly labeled.
 - Package regression assertions updated to 0.3.8 and current-chain consistency.
+- Post-update repository read-back structural checks PASS: version/identity/filename unchanged, no 0.3.9 labels remain in package source, chain order correct, package docs and test assertions align to CURRENT-106, workflow target paths align, and master/index/queue point to POINT-0/056.
 - The prior 0.3.9 source-only edits were reverted; no 0.3.9 package version is intended.
 - Current 0+ and 0.0 work now continues as POINT-0/056 → IN-094 → OUT-093 → EVT-0231 → CURRENT-106 → NEXT-051.
 
