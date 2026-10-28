@@ -1,10 +1,10 @@
 # پوشهٔ ۰.۰ — دفتر نقاط ادامهٔ پروژه
 
-## آخرین زنجیرهٔ فعال — CURRENT-103
+## آخرین زنجیرهٔ فعال — CURRENT-108
 
-نقطهٔ تولیدی فعلی: [POINT-0/053 (0+)](anchors/GPT6-RAHM-USER-POINT-0-20261027-053-0PLUS-GRAPH-AUDIT-AND-ZIP-CONTINUITY.md) → [IN-091](anchors/PALANG-0.0-IN-20261027-091-0PLUS-GRAPH-AUDIT-AND-ZIP-CONTINUITY.md) → [OUT-090](anchors/PALANG-0.0-OUT-20261027-090-0PLUS-GRAPH-AUDIT-AND-ZIP-CONTINUITY.md) → [EVT-0228](../architecture/BEHAVIOR-TRACE/EVT-0228-0PLUS-GRAPH-AUDIT-AND-ZIP-CONTINUITY-2026-10-27.md) → [CURRENT-103](anchors/PALANG-0.0-CURRENT-20261027-103-0PLUS-GRAPH-AUDIT-AND-ZIP-CONTINUITY.md) → [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+نقطهٔ تولیدی فعلی: [POINT-0/058 (0+)](anchors/GPT6-RAHM-USER-POINT-0-20261028-058-0PLUS-INDEPENDENT-HOST-RECOVERY.md) → [IN-096](anchors/PALANG-0.0-IN-20261028-096-POINT-058-INDEPENDENT-HOST-RECOVERY.md) → [OUT-095](anchors/PALANG-0.0-OUT-20261028-095-POINT-058-INDEPENDENT-HOST-RECOVERY.md) → [EVT-0233](../architecture/BEHAVIOR-TRACE/EVT-0233-POINT-058-INDEPENDENT-HOST-RECOVERY-2026-10-28.md) → [CURRENT-108](anchors/PALANG-0.0-CURRENT-20261028-108-INDEPENDENT-HOST-RECOVERY.md) → [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 
-**گیت‌های باز:** تعارض شماره‌ای POINT-0/045، CURRENT-095، IN-083، OUT-082 و EVT-0220؛ رسید ZIP نسخهٔ داخلی 0.3.8؛ آزمون میزبان مستقل و بازیابی پس از restart. این گیت‌ها حذف یا با حدس حل نمی‌شوند.
+**گیت‌های باز:** تعارض شماره‌ای POINT-0/045، CURRENT-095، IN-083، OUT-082 و EVT-0220؛ تعارض شماره‌ای EVT-0233 (ثبت‌شده در EVT-0234)؛ ناسازگاری محتوای مسیر NEXT-051؛ آزمون میزبان مستقل و بازیابی پس از restart؛ و اثبات ممیزی/بسته روی HEAD نهایی. این گیت‌ها حذف یا با حدس حل نمی‌شوند.
 
 
 ## هدف
@@ -1783,3 +1783,10 @@ The canonical chain is [POINT-0/032](./anchors/GPT6-RAHM-USER-POINT-0-20261026-0
 - [EVT-0210](../architecture/BEHAVIOR-TRACE/EVT-0210-POINT-0-038-EXACT-SHA-VALIDATION-AND-MANIFEST-REPAIR-2026-10-27.md) records exact-SHA audit/conformance PASS and the repaired stale manifest digest.
 - [EVT-0210 time binding](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0210-POINT-0-038-2026-10-27.md) — UTC 2026-10-27T04:19:13Z; Tehran 07:49:13 +03:30.
 - CURRENT-087's refreshed repository time binding: UTC 2026-10-27T04:19:28Z; Tehran 07:49:28 +03:30.
+
+
+## Live mirror synchronization — EVT-0234 (2026-10-28)
+- Current chain: POINT-0/058 (0+) → CURRENT-108 → sole active queue label NEXT-051. Mirror sync created no new root or NEXT item.
+- EVT-0234 / time binding record source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars) and Library version 7 (10,480 chars); only one extra trailing newline in Library, no rewrite performed.
+- Two EVT-0233 files are preserved: the POINT-0/058 user-turn event remains active; the mirror-sync EVT-0233 artifact and its time binding are quarantined. EVT-0234 is the unique mirror-sync/collision record.
+- NEXT-051 path body is a stale queue-like Version 1.10.3 snapshot, not a task-specific NEXT document. Keep OPEN pending path-specific Git history recovery; do not reconstruct by inference. CURRENT-065/CURRENT-066 remains OPEN; preserve Route A and Route B; no NEXT-052.

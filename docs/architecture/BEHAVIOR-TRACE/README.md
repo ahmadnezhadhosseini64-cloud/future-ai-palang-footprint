@@ -1,7 +1,7 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.3
+- Version: 1.0.4
 - Date: 2026-10-19
 - Project: Future AI / Palang Footprint / HAIF
 
@@ -960,3 +960,10 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Contract: [host transfer bootstrap](../../portable/RAHM/INITIAL-MODEL-HOST-TRANSFER-BOOTSTRAP-2026-10-27.md); prompt: [receiving-host prompt](../../portable/RAHM/HOST-BOOTSTRAP-PROMPT-2026-10-27.md).
 - NEXT-051 remains the sole queue. CURRENT-065/CURRENT-066 and Issues #20/#21 remain open until source-backed acceptance evidence resolves them.
 - Exact-final-main audit/conformance, independent host import and cold recovery are not claimed by this registration.
+
+
+## EVT-0234 — Live mirror sync recheck and EVT-0233 collision (2026-10-28)
+- Event / time binding: `EVT-0234-LIVE-MIRROR-SYNC-RECHECK-AND-EVT0233-COLLISION-2026-10-28.md` / `TIME-BINDING-EVT-0234-LIVE-MIRROR-SYNC-2026-10-28.md`.
+- Source blob `de1b75f07241c9b313e476af5f1417177ff78c10`, 10,479 chars; Library version 7, 10,480 chars. After trimming trailing line feeds, exact match; one extra trailing newline in Library. No write required.
+- EVT-0233 collision preserved; point058 user event active, mirror-sync artifact quarantined. Current chain POINT-0/058 → CURRENT-108 → NEXT-051. NEXT-051 path mismatch OPEN; no NEXT-052.
+- Exact-current-main audit/conformance must be rechecked. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external host recovery NOT RUN.

@@ -2,7 +2,7 @@
 
 - Stable ID: HUMAN-AI-INTERACTION-BEHAVIOR-OBSERVATORY-2026-10-22-001
 - Production ID: HAIBO-HAIF-2026-10-22-001
-- Version: 1.0.1
+- Version: 1.0.2
 - Owner: احمد پلنگ / Ahmad Nezhadhosseini
 - Project: Future AI / Palang Footprint / HAIF
 - Canonical path: `docs/architecture/BEHAVIOR-OBSERVATORY/README.md`
@@ -231,3 +231,10 @@ Continue collecting observable interaction and evaluator behavior as evidence-ba
 - Current source blob `de1b75f07241c9b313e476af5f1417177ff78c10` and Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, version 7, match within tolerance: 10,479 vs 10,480 characters; one extra trailing newline only; semantic fields match. No rewrite was required or performed.
 - Current repository root/checkpoint/queue: POINT-0/027 / CURRENT-074 / NEXT-051. Preserve EVT-0177 and all prior points; do not create NEXT-052.
 - CURRENT-065/CURRENT-066 remains OPEN. Full exact-current-main Living Architecture Audit and Portable RAHM Conformance are NOT VERIFIED. Buffer/Persistent Memory are NOT VERIFIED; Dropbox remains OPEN / NOT VERIFIED; external end-to-end recovery remains NOT RUN.
+
+
+## Latest live mirror sync and collision record — EVT-0234 (2026-10-28)
+- EVT-0234 / time binding record source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library version 7 (10,480 chars); one additional trailing newline in Library only. No rewrite performed.
+- Two files used EVT-0233. POINT-0/058's linked event remains the active user-turn event; the mirror-sync EVT-0233 artifact and time binding are preserved and quarantined. EVT-0234 is the unique mirror-sync event.
+- Current root/checkpoint POINT-0/058 (0+) → CURRENT-108 → NEXT-051. NEXT-051 path returns stale queue-like Version 1.10.3 body; OPEN pending path-specific history recovery. CURRENT-065/CURRENT-066 and Issues #20/#21 remain OPEN.
+- Exact-current-main audit/conformance are not established by prior runs on SHA `764b9173c4a802669b9e13bc370a3922db0cbb3a`. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external recovery NOT RUN.

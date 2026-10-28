@@ -3,13 +3,13 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.10.5
+- Version: 1.10.6
 - Date: 2026-10-28
 - Exact Time: UNKNOWN / UNVERIFIED for this source update; prior recorded time retained as historical evidence.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: POINT-0/056 is the latest 0+ marker on canonical root 0; CURRENT-106 is active 0.0 continuation. Same starter Stable ID and canonical ZIP filename remain fixed. Source manifest/internal package version remains 0.3.8 and is being rebuilt in place; package host/recovery contracts and regression tests are aligned to POINT-0/056 → IN-094 → OUT-093 → EVT-0231 → CURRENT-106 → NEXT-051; the duplicate historical NEXT-051 reference is disambiguated, IN/OUT recovery links match, and Portable Conformance now targets CURRENT-106. Exact-head CI and updated in-place v0.3.8 ZIP build/hash/read-back are PENDING; last verified ZIP is v0.3.8, run 40549743811 (31,487 bytes; SHA-256 7b9d6df16f4423e3c448c3720cbb8ce95205fc2322b1194511c0b722d4e6205b; 23/23 tests). Missing prior chain provenance, historical audit failures and duplicate records POINT-0/045, CURRENT-095, IN-083, OUT-082 and EVT-0220 remain OPEN. Real independent-host import, restart persistence, live capture and authorized write-back remain NOT RUN / NOT VERIFIED. NEXT-051 remains the sole active queue; no NEXT-052.
+- Status: POINT-0/058 (0+) is the latest user-turn marker on canonical root 0; CURRENT-108 is the active 0.0 continuation. The package Stable ID and canonical ZIP filename remain fixed; internal package version remains 0.3.8. Last confirmed ZIP digest (32,235 bytes; SHA-256 6ef2a5b0eab4c527db6f47ad8ef330f9854e692cd02fc3b2a02298636fa5bb78; 23/23 tests) is historical for its tested source commit, not proof for current main after CURRENT-108 package-test and acceptance-prompt updates. Exact-head audit/conformance and fresh artifact read-back must be rechecked. Duplicate records POINT-0/045, CURRENT-095, IN-083, OUT-082 and EVT-0220 remain OPEN; EVT-0233 collision is preserved under EVT-0234. The active NEXT-051 path currently contains a stale queue-like Version 1.10.3 snapshot rather than a task-specific action document; preserve it and recover path-specific Git history before repair. NEXT-051 remains the sole active queue label; no NEXT-052. Independent-host import, restart persistence, live capture and authorized write-back remain OPEN / NOT VERIFIED.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
@@ -2394,3 +2394,10 @@ Package build/read-back is verified on source commit `a5924a4aaac9521dc5f1f79a63
 ## Active continuation — POINT-0/058 / CURRENT-108
 
 Canonical chain: `POINT-0/058 (0+ marker on canonical root 0) → IN-096 → OUT-095 → EVT-0233 → CURRENT-108 → NEXT-051`. NEXT-051 remains the sole active queue. External-host acceptance, negative-control and restart recovery are OPEN / NOT RUN / NOT VERIFIED; repository CI is not external-host evidence.
+
+
+## EVT-0234 — live mirror sync and event-number collision preservation (2026-10-28)
+- EVT-0234 / time binding: source blob `de1b75f07241c9b313e476af5f1417177ff78c10`, 10,479 chars; Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, version 7, 10,480 chars. Trimmed content matches exactly; only one trailing newline differs. No redundant Library write.
+- Two EVT-0233 files were discovered. The POINT-0/058 event remains the active user-turn event; the mirror-sync EVT-0233 file and old time binding are quarantined but preserved. EVT-0234 is the unique mirror sync event.
+- NEXT-051 remains the sole active queue label, but its path returns a stale queue-like Version 1.10.3 body while this README is Version 1.10.6. OPEN / SOURCE-BACKED RECOVERY REQUIRED; inspect prior blobs and path-specific history before repair. No NEXT-052.
+- Preserve POINT-0/016, /017, /018, /057 and all history. CURRENT-065/CURRENT-066, Issues #20/#21, independent-host acceptance, persistence, Buffer and Dropbox remain open or unverified.
