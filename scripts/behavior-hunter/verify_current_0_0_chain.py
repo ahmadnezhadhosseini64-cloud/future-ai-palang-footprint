@@ -28,8 +28,8 @@ FILES = {
 }
 CHAIN = ["POINT-0/056", "IN-094", "OUT-093", "EVT-0231", "CURRENT-106", "NEXT-051"]
 OPEN_GATES = {
-    "full_state_recovery": ("full project evidence reconstruction", "open proof gates"),
-    "clean_host_import": ("clean independent AI-host import", "open proof gates"),
+    "full_state_recovery": ("full IN/OUT state reconstruction", "open proof gates"),
+    "clean_host_import": ("clean/second AI-host import", "open proof gates"),
     "second_host_import": ("second AI-host import", "open proof gates"),
     "persistence_restart": ("restart persistence", "open proof gates"),
     "idle_background": ("automatic live message capture", "open proof gates"),
@@ -102,7 +102,7 @@ def main():
     positions = []
     for marker in CHAIN:
         try:
-            positions.append(architecture.index(marker))
+            positions.append(next(i for i, item in enumerate(architecture) if marker in item))
         except ValueError:
             failures.append({"check":"manifest_chain_marker_missing","marker":marker})
     if len(positions) == len(CHAIN) and positions != sorted(positions):
