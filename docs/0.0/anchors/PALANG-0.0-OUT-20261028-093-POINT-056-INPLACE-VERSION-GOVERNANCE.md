@@ -18,5 +18,7 @@
 - New downloaded ZIP, exact SHA-256, inventory and extracted test output: PENDING.
 - Real independent-host import, restart persistence, live capture and authorized write-back: OPEN / NOT RUN.
 
-## Status
-SOURCE READ-BACK VERIFIED; ARTIFACT REBUILD NOT VERIFIED; HOST ACCEPTANCE OPEN.
+## Registration anchor and status
+- Commit UTC: 2026-10-28T04:43:25Z (`3ec8308d74937de55cfe4c854121f1d2af250166`); Tehran equivalent 2026-10-28T08:13:25+03:30.
+- Evidence Gate run [40634030956](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40634030956) completed successfully; this is not the Portable Conformance ZIP receipt.
+- Status: SOURCE READ-BACK VERIFIED; ARTIFACT REBUILD NOT VERIFIED; HOST ACCEPTANCE OPEN.
