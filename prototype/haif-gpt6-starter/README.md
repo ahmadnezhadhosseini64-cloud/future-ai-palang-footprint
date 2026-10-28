@@ -14,7 +14,7 @@ This is the updated release of the existing HAIF starter package, not a separate
 - First interactive GPT-6 host acceptance checklist included; separates archive portability from real host import, live message capture, repository write-back and restart proof.
 - Host-growth/repository-sync contract included; defines behavior evidence, authorized repo return, RAHM validation and controlled Master/Child promotion.
 - Interaction response/anchor protocol included; requires visible acknowledgment/status, failure disclosure, paired input/output anchors and explicit non-verified gates.
-- Current continuation reference: POINT-0/058 (0+ marker on canonical root 0) → IN-096 → OUT-095 → EVT-0233 → CURRENT-108 → NEXT-051; older 0+ markers remain historical. The canonical living mother reference is included in the built ZIP as `LIVING_MASTER_REFERENCE.md`; the Persian external-host test is included as `INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md`. Transfer the ZIP with its included master snapshot and use the prompt on a genuinely independent host.
+- Current continuation reference: POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-110 → NEXT-051; preserve POINT-0/058 as the earlier 0+ marker and preserve both unresolved POINT-0/059 candidates; older 0+ markers remain historical. The canonical living mother reference is included in the built ZIP as `LIVING_MASTER_REFERENCE.md`; the Persian external-host test is included as `INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md`. Transfer the ZIP with its included master snapshot and use the prompt on a genuinely independent host.
 
 ## Bootstrap
 ~~~bash
@@ -84,5 +84,5 @@ The v0.3.4 archive is historical verified evidence. Version 0.3.5 is source-only
 - Historical v0.3.7 receipt remains preserved: run [40546488170](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40546488170), 30,573 bytes, SHA-256 `fcc09933dd67ca1300af051e14dbcf80c76b6f620dc6c9623323caca307969fb`.
 - The test-only source change after the earlier v0.3.7 receipt changed the packaged ZIP bytes without advancing the internal version. This is an in-place update of the existing internal version 0.3.8, retaining the same package identity and canonical ZIP filename.
 - Previous v0.3.8 build receipt is historical evidence only; the in-place v0.3.8 rebuild receipt is PENDING until the fresh exact-head workflow completes and its downloaded ZIP is inspected.
-- Current recovery chain: POINT-0/057 (0+ marker on canonical root 0) → IN-095 → OUT-094 → EVT-0232 → CURRENT-107 → NEXT-051.
+- Current recovery chain: POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-110 → NEXT-051. The living master source is v1.7.32; the next archive must copy this exact source from the same checked-out commit and its downloaded artifact must prove embedded-master equality. This source README update is not a build receipt.
 - Real independent-host acceptance remains NOT RUN.
