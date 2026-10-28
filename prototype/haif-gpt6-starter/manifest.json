@@ -81,12 +81,12 @@
     "OUT-094",
     "EVT-0232",
     "CURRENT-107",
-    "NEXT-051",
     "POINT-0/058 (0+ marker on canonical root 0)",
     "IN-096",
     "OUT-095",
     "EVT-0233",
-    "CURRENT-108"
+    "CURRENT-108",
+    "NEXT-051"
   ],
   "entrypoint": "engine.py",
   "host_instructions": "GPT6_HOST_INSTRUCTIONS.md",
