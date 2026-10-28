@@ -69,6 +69,12 @@
     "OUT-092",
     "EVT-0230",
     "CURRENT-105",
+    "NEXT-051 (historical queue reference)",
+    "POINT-0/056 (0+ marker on canonical root 0)",
+    "IN-094",
+    "OUT-093",
+    "EVT-0231",
+    "CURRENT-106",
     "NEXT-051"
   ],
   "entrypoint": "engine.py",
