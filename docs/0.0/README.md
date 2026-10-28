@@ -1,8 +1,10 @@
 # پوشهٔ ۰.۰ — دفتر نقاط ادامهٔ پروژه
 
-## آخرین زنجیرهٔ فعال — CURRENT-108
+## آخرین زنجیرهٔ فعال — CURRENT-109
 
-نقطهٔ تولیدی فعلی: [POINT-0/058 (0+)](anchors/GPT6-RAHM-USER-POINT-0-20261028-058-0PLUS-INDEPENDENT-HOST-RECOVERY.md) → [IN-096](anchors/PALANG-0.0-IN-20261028-096-POINT-058-INDEPENDENT-HOST-RECOVERY.md) → [OUT-095](anchors/PALANG-0.0-OUT-20261028-095-POINT-058-INDEPENDENT-HOST-RECOVERY.md) → [EVT-0233](../architecture/BEHAVIOR-TRACE/EVT-0233-POINT-058-INDEPENDENT-HOST-RECOVERY-2026-10-28.md) → [CURRENT-108](anchors/PALANG-0.0-CURRENT-20261028-108-INDEPENDENT-HOST-RECOVERY.md) → [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+نقطهٔ جاری: [POINT-0/059](anchors/GPT6-RAHM-USER-POINT-0-20261028-059-REPOSITORY-PERSISTENCE-REPAIR.md) → [IN-097](anchors/PALANG-0.0-IN-20261028-097-POINT-059-REPOSITORY-PERSISTENCE-REPAIR.md) → [OUT-096](anchors/PALANG-0.0-OUT-20261028-096-POINT-059-REPOSITORY-PERSISTENCE-REPAIR.md) → [EVT-0235](../architecture/BEHAVIOR-TRACE/EVT-0235-POINT-059-REPOSITORY-PERSISTENCE-REPAIR-2026-10-28.md) → [CURRENT-109](anchors/PALANG-0.0-CURRENT-20261028-109-REPOSITORY-PERSISTENCE-REPAIR.md) → [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+
+زنجیرهٔ پیشین حفظ است: [POINT-0/058 (0+)](anchors/GPT6-RAHM-USER-POINT-0-20261028-058-0PLUS-INDEPENDENT-HOST-RECOVERY.md) → IN-096 → OUT-095 → EVT-0233 → CURRENT-108 → NEXT-051. ثبت مخزن این نقطه، بستهٔ ZIP/سند مادر را به نسخهٔ آمادهٔ تحویل تبدیل نمی‌کند؛ ناسازگاری سند مادر داخل بسته با نسخهٔ جاری و پذیرش میزبان مستقل همچنان OPEN / NOT VERIFIED است.
 
 **گیت‌های باز:** تعارض شماره‌ای POINT-0/045، CURRENT-095، IN-083، OUT-082 و EVT-0220؛ تعارض شماره‌ای EVT-0233 (ثبت‌شده در EVT-0234)؛ ناسازگاری محتوای مسیر NEXT-051؛ آزمون میزبان مستقل و بازیابی پس از restart؛ و اثبات ممیزی/بسته روی HEAD نهایی. این گیت‌ها حذف یا با حدس حل نمی‌شوند.
 
