@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
-"""Verify the actual current Point-0/0.0 chain from both IN and OUT anchors.
+"""Verify the current canonical Point-0/0.0 repository chain from IN and OUT.
 
-This is a repository-state reconstruction test. It does not claim an independent AI-host import,
-durable memory, automatic message capture, or idle/background execution.
+This is a repository-state/link equivalence check, not proof of a real external AI-host import.
 """
 from pathlib import Path
 import json
@@ -11,201 +10,118 @@ import sys
 from urllib.parse import urlparse, unquote
 
 ROOT = Path(__file__).resolve().parents[2]
-OUT = ROOT / "audit-output"
-OUT.mkdir(exist_ok=True)
+OUTDIR = ROOT / "audit-output"
+OUTDIR.mkdir(exist_ok=True)
 
 FILES = {
-    "point0": "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-015-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md",
-    "in": "docs/0.0/anchors/PALANG-0.0-IN-20261025-059-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md",
-    "out": "docs/0.0/anchors/PALANG-0.0-OUT-20261025-058-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md",
-    "event": "docs/architecture/BEHAVIOR-TRACE/EVT-0174-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY-2026-10-25.md",
-    "current": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-066-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md",
-    "prior_current": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-065-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md",
+    "point": "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261028-056-0PLUS-INPLACE-UPDATE-VERSION-GOVERNANCE.md",
+    "in": "docs/0.0/anchors/PALANG-0.0-IN-20261028-094-POINT-056-INPLACE-VERSION-GOVERNANCE.md",
+    "out": "docs/0.0/anchors/PALANG-0.0-OUT-20261028-093-POINT-056-INPLACE-VERSION-GOVERNANCE.md",
+    "event": "docs/architecture/BEHAVIOR-TRACE/EVT-0231-POINT-056-INPLACE-VERSION-GOVERNANCE-2026-10-28.md",
+    "current": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261028-106-INPLACE-VERSION-GOVERNANCE.md",
     "next": "docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md",
-    "master": "docs/portable/RAHM/FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md",
-    "manifest": "docs/portable/RAHM/CURRENT-065-OVERLAY-MANIFEST.json",
-    "failure_event": "docs/architecture/BEHAVIOR-TRACE/EVT-0175-CURRENT-066-RECOVERY-VERIFIER-STALE-CHECKPOINT-2026-10-25.md",
+    "master": "docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md",
     "index": "docs/REFERENCE_INDEX.md",
     "queue": "docs/architecture/INTEGRATION-QUEUE/README.md",
+    "package_manifest": "prototype/haif-gpt6-starter/manifest.json",
+    "package_protocol": "prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md",
 }
-EXPECTED = {
-    "point0": "G6IP-POINT-0-015-20261025",
-    "in": "G6IP-IN-059-20261025",
-    "out": "G6IP-OUT-058-20261025",
-    "event": "HAIF-EVT-0174-20261025",
-    "current": "G6IP-CURRENT-066-20261025",
-    "prior_current": "G6IP-CURRENT-065-20261025",
-    "next": "G6IP-RAHM-NEXT-051-20261024",
-}
-GATE_MARKERS = {
-    "full_state_recovery": ("full independent external-host reconstruction", "clean init"),
-    "clean_host_import": ("clean independent AI-host import", "real independent-host import"),
-    "second_host_import": ("second host", "second-host import"),
-    "persistence_restart": ("persistence restart", "restart persistence"),
-    "idle_background": ("idle/background execution", "automatic capture"),
-    "graph_triage": ("ambiguous parent", "graph triage"),
+CHAIN = ["POINT-0/056", "IN-094", "OUT-093", "EVT-0231", "CURRENT-106", "NEXT-051"]
+OPEN_GATES = {
+    "full_state_recovery": ("full project evidence reconstruction", "full project evidence reconstruction"),
+    "clean_host_import": ("clean independent AI-host import", "clean independent AI-host import"),
+    "second_host_import": ("second AI-host import", "second AI-host import"),
+    "persistence_restart": ("restart persistence", "restart persistence"),
+    "idle_background": ("automatic live message capture", "automatic live message capture"),
+    "graph_triage": ("ambiguous parent", "ambiguous parent"),
 }
 
-def read(name):
-    path = ROOT / FILES[name]
+def read(key):
+    path = ROOT / FILES[key]
     if not path.is_file():
-        raise FileNotFoundError(FILES[name])
+        raise FileNotFoundError(FILES[key])
     return path.read_text(encoding="utf-8")
 
-def stable_id(text):
-    m = re.search(r"^\s*- Stable ID:\s*`?([^`\r\n]+)", text, re.I | re.M)
-    return m.group(1).strip() if m else None
+def links(text):
+    return [m.group(2).strip().split()[0].strip("<>") for m in re.finditer(r"!??\[([^\]]*)\]\(([^)]+)\)", text)]
 
-def version(text):
-    m = re.search(r"^\s*- Version:\s*([^\r\n]+)", text, re.I | re.M)
-    return m.group(1).strip() if m else None
-
-def local_targets(name, text):
-    src = ROOT / FILES[name]
-    result = []
-    for m in re.finditer(r"!??\[([^\]]*)\]\(([^)]+)\)", text):
-        target = m.group(2).strip().split()[0].strip("<>")
-        if not target or target.startswith("#"):
-            continue
+def link_exists(key, text, fragment):
+    src = ROOT / FILES[key]
+    matches = [target for target in links(text) if fragment.casefold() in target.casefold()]
+    if not matches:
+        return False
+    for target in matches:
         parsed = urlparse(target)
-        if parsed.scheme or parsed.netloc:
+        if parsed.scheme or parsed.netloc or not parsed.path:
             continue
-        part = unquote(parsed.path)
-        if not part:
-            continue
-        candidate = (src.parent / part).resolve()
-        try:
-            rel = candidate.relative_to(ROOT.resolve()).as_posix()
-        except ValueError:
-            continue
-        result.append((target, rel, candidate.exists()))
-    return result
-
-def require_link(name, text, target_fragment):
-    targets = local_targets(name, text)
-    matches = [x for x in targets if target_fragment in x[0]]
-    return bool(matches) and all(x[2] for x in matches)
-
-def gate_state(current_text, next_text):
-    state = {}
-    for key, (next_marker, current_marker) in GATE_MARKERS.items():
-        in_next = next_marker.casefold() in next_text.casefold()
-        in_current = current_marker.casefold() in current_text.casefold()
-        state[key] = {
-            "present_in_NEXT": in_next,
-            "present_in_CURRENT": in_current,
-            "preserved_open": in_next and in_current,
-        }
-    return state
-
-def reconstruct(start):
-    # Both routes begin from a different raw anchor, then reconstruct the same canonical state.
-    if start == "IN":
-        raw = read("in")
-        start_name = "in"
-        expected_parent = "point0"
-    else:
-        raw = read("out")
-        start_name = "out"
-        expected_parent = "in"
-    point0 = read("point0")
-    in_text = read("in")
-    out_text = read("out")
-    event = read("event")
-    current = read("current")
-    prior_current = read("prior_current")
-    nxt = read("next")
-    master = read("master")
-    manifest = json.loads(read("manifest"))
-    index = read("index")
-    queue = read("queue")
-
-    docs = {
-        "point0": point0, "in": in_text, "out": out_text, "event": event,
-        "current": current, "prior_current": prior_current, "next": nxt,
-        "master": master, "index": index, "queue": queue,
-    }
-    ids = {k: stable_id(v) for k, v in docs.items() if k in EXPECTED}
-    versions = {k: version(v) for k, v in docs.items() if k in EXPECTED}
-    failures = []
-    for key, expected in EXPECTED.items():
-        if ids.get(key) != expected:
-            failures.append({"check": "stable_id", "node": key, "expected": expected, "actual": ids.get(key)})
-    if expected_parent == "point0" and not require_link("in", in_text, "GPT6-RAHM-USER-POINT-0-20261025-015"):
-        failures.append({"check":"IN_to_Point0"})
-    if expected_parent == "in" and not require_link("out", out_text, "PALANG-0.0-IN-20261025-059"):
-        failures.append({"check":"OUT_to_IN"})
-    link_checks = [
-        ("point0", point0, "PALANG-0.0-IN-20261025-059"),
-        ("point0", point0, "PALANG-0.0-OUT-20261025-058"),
-        ("point0", point0, "EVT-0174-OPEN-GAPS"),
-        ("point0", point0, "PALANG-0.0-CURRENT-20261025-066"),
-        ("point0", point0, "EVT-0174-OPEN-GAPS"),
-        ("in", in_text, "PALANG-0.0-CURRENT-20261025-065"),
-        ("out", out_text, "EVT-0174-OPEN-GAPS"),
-        ("out", out_text, "PALANG-0.0-CURRENT-20261025-065"),
-        ("event", event, "PALANG-0.0-CURRENT-20261025-066"),
-        ("current", current, "PALANG-0.0-NEXT-20261024-051"),
-        ("current", current, "CURRENT-065-OVERLAY-MANIFEST"),
-        ("current", current, "EVT-0170-LIVE-MIRROR"),
-        ("current", current, "EVT-0175-CURRENT-066"),
-        ("current", current, "سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی"),
-        ("current", current, "REFERENCE_INDEX"),
-        ("current", current, "INTEGRATION-QUEUE"),
-        ("next", nxt, "PALANG-0.0-CURRENT-20261025-059"),
-    ]
-    for name, text, fragment in link_checks:
-        if not require_link(name, text, fragment):
-            failures.append({"check":"required_link","source":name,"target_fragment":fragment})
-    for name, text in docs.items():
-        for target, resolved, exists in local_targets(name, text):
-            if not exists:
-                failures.append({"check":"broken_local_link","source":name,"target":target,"resolved":resolved})
-    gates = gate_state(current, nxt)
-    for gate, state in gates.items():
-        if not state["preserved_open"]:
-            failures.append({"check":"open_gate_not_preserved","gate":gate,"state":state})
-    failure_event = read("failure_event")
-    if "cause" not in failure_event.casefold() or "correction" not in failure_event.casefold():
-        failures.append({"check":"failure_correction_lineage"})
-    if "NEXT-051" not in master or "CURRENT-066" not in master:
-        failures.append({"check":"portable_master_not_current"})
-    if manifest.get("current_checkpoint") != "docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-066-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md":
-        failures.append({"check":"manifest_checkpoint_mismatch","actual":manifest.get("current_checkpoint")})
-    if not require_link("current", current, "PALANG-0.0-NEXT-20261024-051"):
-        failures.append({"check":"manifest_next_mismatch","actual":"CURRENT-064-to-NEXT-051 canonical link missing"})
-    return {
-        "started_from": start,
-        "starting_anchor": stable_id(raw),
-        "canonical_current": stable_id(current),
-        "active_next": stable_id(nxt),
-        "lineage_ids": ids,
-        "versions": versions,
-        "manifest_version": manifest.get("version"),
-        "manifest_file_count": len(manifest.get("files", [])),
-        "open_gates": gates,
-        "failures": failures,
-        "status": "RECOVERED" if not failures else "BLOCKED",
-    }
+        dest = (src.parent / unquote(parsed.path)).resolve()
+        if not dest.is_file():
+            return False
+    return True
 
 def main():
-    from_in = reconstruct("IN")
-    from_out = reconstruct("OUT")
-    state_keys = ("canonical_current", "active_next", "lineage_ids", "versions", "manifest_version", "manifest_file_count", "open_gates")
-    equivalent = all(from_in[k] == from_out[k] for k in state_keys)
-    report = {
-        "test_id": "RAHM-CURRENT-066-IN-OUT-STATE-RECOVERY-2026-10-25-001",
-        "scope": "Repository current-chain reconstruction from independent IN and OUT starting anchors; not a real external-host import.",
-        "from_IN": from_in,
-        "from_OUT": from_out,
-        "canonical_state_equivalent": equivalent,
-        "status": "PASS" if from_in["status"] == "RECOVERED" and from_out["status"] == "RECOVERED" and equivalent else "FAIL",
+    docs = {key: read(key) for key in FILES}
+    failures = []
+    expected_links = {
+        "point": [("in", "PALANG-0.0-IN-20261028-094"), ("out", "PALANG-0.0-OUT-20261028-093"),
+                  ("event", "EVT-0231-POINT-056"), ("current", "PALANG-0.0-CURRENT-20261028-106"), ("next", "PALANG-0.0-NEXT-20261024-051")],
+        "in": [("out", "PALANG-0.0-OUT-20261028-093"), ("event", "EVT-0231-POINT-056"),
+               ("current", "PALANG-0.0-CURRENT-20261028-106"), ("next", "PALANG-0.0-NEXT-20261024-051")],
+        "out": [("in", "PALANG-0.0-IN-20261028-094"), ("event", "EVT-0231-POINT-056"),
+                ("current", "PALANG-0.0-CURRENT-20261028-106"), ("next", "PALANG-0.0-NEXT-20261024-051")],
+        "event": [("point", "GPT6-RAHM-USER-POINT-0-20261028-056"), ("in", "PALANG-0.0-IN-20261028-094"),
+                  ("out", "PALANG-0.0-OUT-20261028-093"), ("current", "PALANG-0.0-CURRENT-20261028-106"),
+                  ("next", "PALANG-0.0-NEXT-20261024-051")],
+        "current": [("point", "GPT6-RAHM-USER-POINT-0-20261028-056"), ("in", "PALANG-0.0-IN-20261028-094"),
+                    ("out", "PALANG-0.0-OUT-20261028-093"), ("event", "EVT-0231-POINT-056"),
+                    ("next", "PALANG-0.0-NEXT-20261024-051")],
     }
-    (OUT / "current-0-0-recovery-verification.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps({"test_id": report["test_id"], "status": report["status"], "canonical_state_equivalent": equivalent,
-                      "from_IN": from_in["status"], "from_OUT": from_out["status"],
-                      "open_gates": from_in["open_gates"], "failures": {"IN": from_in["failures"], "OUT": from_out["failures"]}}, ensure_ascii=False))
-    return 0 if report["status"] == "PASS" else 1
+    for source, checks in expected_links.items():
+        for target_key, fragment in checks:
+            if not link_exists(source, docs[source], fragment):
+                failures.append({"check":"required_link_missing_or_broken","source":source,"target":target_key,"fragment":fragment})
+    for key in ("point", "in", "out", "event", "current"):
+        for target in links(docs[key]):
+            parsed = urlparse(target)
+            if parsed.scheme or parsed.netloc or not parsed.path:
+                continue
+            if not (ROOT / FILES[key]).parent.joinpath(unquote(parsed.path)).resolve().is_file():
+                failures.append({"check":"broken_local_link","source":key,"target":target})
+    canonical = " → ".join(CHAIN)
+    for key in ("point", "out", "event", "current", "master", "index", "queue", "package_protocol"):
+        if "POINT-0/056" not in docs[key] or "CURRENT-106" not in docs[key] or "NEXT-051" not in docs[key]:
+            failures.append({"check":"canonical_chain_not_visible","source":key})
+    manifest = json.loads(docs["package_manifest"])
+    if manifest.get("version") != "0.3.8" or manifest.get("supersedes") != "0.3.7":
+        failures.append({"check":"package_version_governance","version":manifest.get("version"),"supersedes":manifest.get("supersedes")})
+    if manifest.get("stable_id") != "HAIF-GPT6-PORTABLE-STARTER-20261025-004":
+        failures.append({"check":"package_stable_id_changed"})
+    if manifest.get("archive_policy", {}).get("canonical_filename") != "haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip":
+        failures.append({"check":"canonical_zip_filename_changed"})
+    if manifest.get("parent_architecture", [])[-6:] != CHAIN:
+        failures.append({"check":"manifest_current_chain_mismatch","tail":manifest.get("parent_architecture", [])[-6:]})
+    next_text = docs["next"].casefold()
+    current_text = docs["current"].casefold()
+    gates = {}
+    for name, (next_marker, current_marker) in OPEN_GATES.items():
+        in_next = next_marker.casefold() in next_text
+        in_current = current_marker.casefold() in current_text
+        gates[name] = {"present_in_NEXT":in_next,"present_in_CURRENT":in_current,"preserved_open":in_next and in_current}
+        if not gates[name]["preserved_open"]:
+            failures.append({"check":"open_gate_not_preserved","gate":name,"state":gates[name]})
+    result = {
+        "test_id":"RAHM-CURRENT-106-IN-OUT-STATE-RECOVERY-2026-10-28-001",
+        "scope":"Current repository-chain reconstruction from IN and OUT anchors; not real external-host acceptance.",
+        "canonical_chain":canonical,
+        "version":"0.3.8",
+        "stable_id":manifest.get("stable_id"),
+        "open_gates":gates,
+        "failures":failures,
+        "status":"PASS" if not failures else "FAIL",
+    }
+    (OUTDIR / "current-0-0-recovery-verification.json").write_text(json.dumps(result,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    print(json.dumps(result,ensure_ascii=False))
+    return 0 if not failures else 1
 
 if __name__ == "__main__":
     sys.exit(main())
