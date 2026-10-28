@@ -12,3 +12,15 @@
 - Evidence Gate run 40550688021: Stable Retrieval Core VERIFIED; Independent Automated Execution PROVEN; Evidence Artifact GENERATED.
 - Evidence scope does not prove real independent-host import, restart persistence, live capture or authorized repository write-back.
 - Prior graph gaps and historical audit failures remain open; see OUT-092 and CURRENT-105.
+
+
+## Follow-through execution evidence — 2026-10-28
+
+- The actual canonical package source was advanced to internal version 0.3.9 while preserving Stable ID `HAIF-GPT6-PORTABLE-STARTER-20261025-004` and the established ZIP filename.
+- Package manifest and host/recovery documents were aligned to POINT-0/055 → IN-093 → OUT-092 → EVT-0230 → CURRENT-105 → NEXT-051.
+- A duplicate exact `NEXT-051` entry in the manifest lineage was disambiguated as `NEXT-051 (historical queue reference)`; the single active `NEXT-051` remains at the end. A regression test now requires exactly one active pointer.
+- IN-093 and OUT-092 now carry matching recovery links to CURRENT-105, NEXT-051, the living master, both recovery protocols and the portable export manifest. Unverified host gates remain OPEN.
+- `.github/workflows/rahm-portable-conformance.yml` was retargeted from the obsolete IN-091 / OUT-090 / CURRENT-103 chain to IN-093 / OUT-092 / CURRENT-105.
+- Repository read-back structural checks passed for manifest JSON parsing, ordered chain, single active queue pointer, package document version/chain alignment, IN/OUT link equivalence and workflow pointer alignment.
+- Evidence Gate run [40631884939](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40631884939) completed successfully; it is evidence for that gate only.
+- Exact-head Portable Conformance result, v0.3.9 ZIP artifact, digest and extracted test result remain PENDING / NOT VERIFIED. The v0.3.8 receipt remains the last verified ZIP baseline. Real independent-host acceptance remains NOT RUN.
