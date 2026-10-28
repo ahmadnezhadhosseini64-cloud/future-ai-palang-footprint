@@ -2389,3 +2389,8 @@ NEXT-051 remains the sole active queue. Do not create NEXT-052.
 ## Evidence update — CURRENT-107 artifact verification (2026-10-28)
 
 Package build/read-back is verified on source commit `a5924a4aaac9521dc5f1f79a636b0e0f6d74b7ed`: canonical ZIP 32,235 bytes, SHA-256 `6ef2a5b0eab4c527db6f47ad8ef330f9854e692cd02fc3b2a02298636fa5bb78`, 11 files, 23/23 extracted tests PASS. Both [Portable Conformance](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40635832753) and [Living Architecture Audit](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40635832696) succeeded. No new queue item is created; NEXT-051 remains the sole active queue because real external-host acceptance and persistence gates are still OPEN.
+
+
+## Active continuation — POINT-0/058 / CURRENT-108
+
+Canonical chain: `POINT-0/058 (0+ marker on canonical root 0) → IN-096 → OUT-095 → EVT-0233 → CURRENT-108 → NEXT-051`. NEXT-051 remains the sole active queue. External-host acceptance, negative-control and restart recovery are OPEN / NOT RUN / NOT VERIFIED; repository CI is not external-host evidence.
