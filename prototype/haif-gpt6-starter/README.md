@@ -90,3 +90,7 @@ The v0.3.4 archive is historical verified evidence. Version 0.3.5 is source-only
 
 ## Living-master snapshot and receipt integrity
 The bundled `LIVING_MASTER_REFERENCE.md` is copied byte-for-byte from the canonical repository master at the exact build checkout. The resulting ZIP SHA-256, byte count, inventory, extracted-test result and tested repository SHA belong in the external workflow artifact receipt and linked OUT record; never rewrite the bundled master to insert the digest of the ZIP that contains it. Resolve current package status from the latest successful Portable RAHM Conformance run on the exact main SHA. A passing CI/build proves package integrity only, not acceptance by an independent AI host.
+
+
+## POINT-0/060 (0+) — current verified transfer baseline
+The user-designated 0+ production marker is POINT-0/060; the active 0.0 continuation is CURRENT-110 and the sole queue remains NEXT-051. Preserve POINT-0/016, /017, /018, /057, /058 and both unresolved POINT-0/059 candidates. The paired ZIP/master receipt is registered in `docs/0.0/anchors/PALANG-0.0-OUT-20261028-097-LIVING-MASTER-AND-EXECUTABLE-ZIP.md`; always resolve the latest exact-main-SHA build from Actions rather than treating an older receipt as current. The current canonical master version is 1.7.34. Independent-host acceptance remains NOT RUN until a separate host returns a raw receipt.
