@@ -193,6 +193,8 @@ class PortablePackageProtocolTests(unittest.TestCase):
         self.assertLess(chain.index("OUT-092"), chain.index("EVT-0230"))
         self.assertLess(chain.index("EVT-0230"), chain.index("CURRENT-105"))
         self.assertLess(chain.index("CURRENT-105"), chain.index("NEXT-051"))
+        self.assertEqual(chain.count("NEXT-051"), 1, "only one canonical active NEXT-051 pointer is allowed")
+        self.assertIn("NEXT-051 (historical queue reference)", chain)
 
     def test_independent_host_protocol_preserves_acceptance_boundaries(self):
         package = Path(__file__).parent
