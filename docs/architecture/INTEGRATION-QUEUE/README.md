@@ -2361,3 +2361,16 @@ Additional hard-audit finding: Living Architecture Audit run 40539823090 failed 
 - [ ] Real independent-host import, negative controls, read-back and restart persistence.
 
 NEXT-051 remains the sole active queue. Do not create NEXT-052.
+
+
+## POINT-0/055 → CURRENT-105 — hard audit continuation (2026-10-28)
+- [x] Registered 0+ / 0.0 chain: POINT-0/055 → IN-093 → OUT-092 → EVT-0230 → CURRENT-105 → NEXT-051.
+- [x] Recorded canonical ZIP identity/name policy and inspected v0.3.8 receipt (run 40549743811, 31,487 bytes, SHA-256 `7b9d6df16f4423e3c448c3720cbb8ce95205fc2322b1194511c0b722d4e6205b`, 23/23 extracted tests).
+- [x] Separated Evidence Gate execution evidence (run 40550688021) from real-host acceptance.
+- [ ] Recover provenance for IN-091 / OUT-090 / CURRENT-103 without guessing.
+- [ ] Repair and rerun Point 0/006 historical preservation audit.
+- [ ] Repair and rerun Stable Retrieval Core consistency on exact HEAD.
+- [ ] Resolve duplicate identities POINT-0/045, CURRENT-095, IN-083, OUT-082, EVT-0220 from source evidence.
+- [ ] Clean independent-host import, full IN/OUT recovery, negative controls and actual restart persistence.
+- [ ] Prove live capture and authorized write-back, or record NOT SUPPORTED.
+- NEXT-051 remains the only active queue; do not create NEXT-052. Unchecked items remain OPEN.
