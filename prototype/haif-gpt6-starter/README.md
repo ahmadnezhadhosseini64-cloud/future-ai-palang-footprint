@@ -86,3 +86,7 @@ The v0.3.4 archive is historical verified evidence. Version 0.3.5 is source-only
 - Previous v0.3.8 build receipt is historical evidence only; the in-place v0.3.8 rebuild receipt is PENDING until the fresh exact-head workflow completes and its downloaded ZIP is inspected.
 - Current recovery chain: POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-110 → NEXT-051. The living master source is v1.7.32; the next archive must copy this exact source from the same checked-out commit and its downloaded artifact must prove embedded-master equality. This source README update is not a build receipt.
 - Real independent-host acceptance remains NOT RUN.
+
+
+## Living-master snapshot and receipt integrity
+The bundled `LIVING_MASTER_REFERENCE.md` is copied byte-for-byte from the canonical repository master at the exact build checkout. The resulting ZIP SHA-256, byte count, inventory, extracted-test result and tested repository SHA belong in the external workflow artifact receipt and linked OUT record; never rewrite the bundled master to insert the digest of the ZIP that contains it. Resolve current package status from the latest successful Portable RAHM Conformance run on the exact main SHA. A passing CI/build proves package integrity only, not acceptance by an independent AI host.
