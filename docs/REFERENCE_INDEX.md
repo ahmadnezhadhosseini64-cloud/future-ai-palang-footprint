@@ -2103,3 +2103,10 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - Current root/checkpoint/queue POINT-0/058 → CURRENT-108 → NEXT-051. Preserve earlier roots including POINT-0/016, /017, /018. EVT-0233 collision remains preserved; EVT-0235 is the new unique mirror event.
 - Audit and conformance passed on `ac091ffa0ab60ee6ba404490e596709b61136eef`; Evidence Gate moved main to `a6ef55cdf0586c7fb3057dbe214fa5969728df21`, not covered by that pair.
 - CURRENT-065/CURRENT-066, NEXT-051 path mismatch and Issues #20/#21 remain OPEN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN.
+
+
+## POINT-0/059 — current root / 0.0 continuation
+- [POINT-0/059](docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261028-059-MIRROR-NORMALIZATION-PORTABLE-PACKAGE.md): current user root for Library newline correction, conflict cover/reconciliation, and rapid production of a fresh transferable ZIP plus living master.
+- CURRENT-065/CURRENT-066 disposition is COVERED / NOT CLOSED / OPEN only; no winner inferred, both lineages preserved.
+- NEXT-051 remains sole active continuation; no NEXT-052. Current ZIP hash and old passing CI do not prove a fresh artifact or exact current main.
+- Library trailing LF correction remains NOT EXECUTED because no supported exported-snapshot/source_file_ref route is available; canonical source remains authoritative.
