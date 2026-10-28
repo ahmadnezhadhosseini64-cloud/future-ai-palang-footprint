@@ -197,6 +197,7 @@ jobs:
           required = [
               "README.md",
               "LIVING_MASTER_REFERENCE.md",
+              "INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md",
               "manifest.json",
               "GPT6_HOST_INSTRUCTIONS.md",
               "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md",
