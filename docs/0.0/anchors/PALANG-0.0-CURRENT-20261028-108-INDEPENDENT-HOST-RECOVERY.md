@@ -22,3 +22,15 @@
 
 ## Still open
 No independent host has supplied a raw response in this context. Therefore external import, acceptance, second-host recovery, restart persistence, automatic live capture, authorized GitHub write-back, unattended/background execution, and historical graph reconciliation remain OPEN / NOT PROVEN.
+
+
+## Exact package receipt — Portable Conformance run 40644166088
+
+- Source commit for this build: `76122145020a5a55e31375dd02c190abadff59bb`.
+- Canonical ZIP filename: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`.
+- Internal package version: `0.3.8`; Stable ID: `HAIF-GPT6-PORTABLE-STARTER-20261025-004`.
+- Size: `101556` bytes; SHA-256: `330f6aab2f2b98959f1155099d20d344b20448cbdceaf2b765dce5a25f842177`.
+- Inventory: 13 files, including `LIVING_MASTER_REFERENCE.md` and `INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md`.
+- ZIP integrity: PASS; source-byte read-back: PASS; extracted package tests: 23/23 PASS. Downloaded artifact was independently extracted and hashed in this session; digest and byte count matched the workflow receipt.
+- Workflow: [Portable Conformance run 40644166088](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40644166088).
+- External independent-host acceptance: NOT RUN. This receipt is package/repository evidence only.
