@@ -21,3 +21,11 @@
 
 - Initial event creation commit time retained as historical evidence: UTC `2026-10-28T06:26:30Z`, Tehran `2026-10-28T09:56:30+03:30`.
 - Independent read-back of the final event revision returned blob `13a35b817c10d6f93f7bf0f45ce6bb2dba9d0423`, 7,986 characters, and confirmed `REGISTERED / READ-BACK VERIFIED` plus both OPEN gap records.
+
+
+## Architecture reconciliation batch read-back
+- Six living indexes/masters were updated atomically in commit `2b59cef0fc2f55a15e73b2ee675fc9340477fcf0`: `docs/0.0/README.md`, `docs/architecture/INTEGRATION-QUEUE/README.md`, `docs/architecture/BEHAVIOR-TRACE/README.md`, `docs/REFERENCE_INDEX.md`, `docs/architecture/BEHAVIOR-OBSERVATORY/README.md`, and `docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md`.
+- Reconciliation batch commit UTC: `2026-10-28T06:34:19Z`; derived Tehran `2026-10-28T10:04:19+03:30`.
+- All six exact paths were independently fetched after the batch commit. Read-back blobs: 0.0 index `3dea6b5abfc5d04d49507d4ede953b4e5cd2fa51`; integration queue `b3aee62b1cf2253a5653ba018c74f8830ee03344`; behavior-trace index `50e563d63112ebe9151f49aaa5177ceb93c9c800`; reference index `4aa2fb504817e2d9e8c4e52ae89e70e51b9051d8`; observatory index `749d26e29bf65dac5e7cef833da31aa7ec376a79`; living master `33210ab317fbf15e9cad41f3f55cd8d87510eb01`.
+- Those read-backs confirm POINT-0/058 → CURRENT-108 → NEXT-051, EVT-0234/time binding references, the EVT-0233 collision preservation, and the stale NEXT-051 path gap. The root index, queue, trace index, reference index, observatory index and living master remain separate artifacts; none proves external-host acceptance.
+- After this batch, main advanced to Evidence Gate follow-up commit `87ad6ac487448e6b4555dfb9532940a39e13daf7`, UTC `2026-10-28T06:34:29Z`, message `Record Evidence Gate execution 40644672144`. The batch SHA and later head are distinct. Exact-current-main audit/conformance status must be determined from the run records and tested SHAs; a post-audit Evidence Gate commit is not automatically covered.
