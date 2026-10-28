@@ -17,5 +17,6 @@ The user explicitly reaffirmed: do not create a new version number; update the e
 4. Trigger/inspect exact-head conformance workflow and verify downloaded ZIP bytes, digest, inventory and extracted tests.
 5. Leave external host acceptance gates OPEN until direct host receipts exist.
 
-## Status
-REGISTERED / READ-BACK REQUIRED at creation. All gates not directly proven remain OPEN.
+## Registration anchor and status
+- Commit UTC: 2026-10-28T04:43:22Z (`c49448bc2b57feb980ee93e082d9090c33440362`); Tehran equivalent 2026-10-28T08:13:22+03:30.
+- Status: REGISTERED / READ-BACK VERIFIED. All gates not directly proven remain OPEN.
