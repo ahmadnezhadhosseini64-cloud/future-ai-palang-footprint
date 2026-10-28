@@ -35,11 +35,11 @@ POINT-0/056 → CURRENT-106 is preserved as the prior checkpoint and not overwri
 - The above build receipts are commit-specific and do not certify the newer POINT-0/057 HEAD. Final exact-head rerun and read-back remain required.
 
 ## Open proof gates
-- Final current-HEAD Portable Conformance and Living Architecture Audit: PENDING.
-- Final canonical ZIP receipt after POINT-0/057 integration: PENDING.
+- Exact-head result source of truth: inspect the newest completed [Portable Conformance workflow](../../.github/workflows/rahm-portable-conformance.yml) and [Living Architecture Audit workflow](../../.github/workflows/living-architecture-audit.yml) for the repository HEAD. A prior run never certifies later commits.
+- Final canonical ZIP receipt is produced by the newest completed exact-head workflow run; do not copy an older digest forward.
 - Real clean external AI-host import and acceptance: OPEN / NOT RUN.
 - Second-host recovery, restart persistence, automatic live message capture, authorized repository write-back and idle/background execution: OPEN / NOT RUN.
 - Historical missing-node provenance, duplicate/collision groups, ambiguous parents/times and remaining graph adjudication: OPEN under NEXT-051.
 
 ## Status
-ACTIVE / LIVING / SOURCE FIXES REGISTERED / PRIOR EXACT-COMMIT ZIP VERIFIED / FINAL CURRENT-HEAD ARTIFACT PENDING / HOST ACCEPTANCE OPEN.
+ACTIVE / LIVING / SOURCE FIXES REGISTERED / EXACT-HEAD BUILD STATUS DEFINED BY LATEST WORKFLOW RECEIPT / HOST ACCEPTANCE OPEN.
