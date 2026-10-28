@@ -81,7 +81,12 @@
     "OUT-094",
     "EVT-0232",
     "CURRENT-107",
-    "NEXT-051"
+    "NEXT-051",
+    "POINT-0/058 (0+ marker on canonical root 0)",
+    "IN-096",
+    "OUT-095",
+    "EVT-0233",
+    "CURRENT-108"
   ],
   "entrypoint": "engine.py",
   "host_instructions": "GPT6_HOST_INSTRUCTIONS.md",
@@ -123,7 +128,9 @@
     "automatic refresh of external host after each CI build",
     "unreviewed raw behavior data safely promoted into the living Master",
     "response acknowledgments and anchors for every host interaction until an actual authorized live producer is integrated and verified",
-    "updated in-place v0.3.8 canonical ZIP digest and artifact until a fresh exact-head workflow receipt is inspected"
+    "updated in-place v0.3.8 canonical ZIP digest and artifact until a fresh exact-head workflow receipt is inspected",
+    "independent external AI host import, raw receipt and exact chain read-back",
+    "negative missing-anchor control and fresh-session/restart recovery"
   ],
   "archive_policy": {
     "canonical_filename": "haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip",
@@ -132,5 +139,5 @@
     "historical_v0_3_0_digest_is_not_current": true,
     "current_internal_version": "0.3.8"
   },
-  "host_acceptance_checklist": "FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST.md"
+  "host_acceptance_checklist": "INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md"
 }
