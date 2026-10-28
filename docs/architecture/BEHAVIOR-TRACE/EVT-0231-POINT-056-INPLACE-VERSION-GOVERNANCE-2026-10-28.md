@@ -17,4 +17,4 @@ The source files have been read back from the repository. That is not equivalent
 - Manifest and package tests now point to POINT-0/056 → IN-094 → OUT-093 → EVT-0231 → CURRENT-106 → NEXT-051.
 - Portable Conformance workflow references IN-094, OUT-093 and CURRENT-106.
 - Internal version remains 0.3.8; no new version number or alternate ZIP name is introduced.
-- The workflow run/artifact for the latest exact source has not yet been verified from a returned receipt; archive rebuild remains PENDING.
+- Evidence Gate run [40634030956](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40634030956) completed successfully, with artifact `evidence-gate-40634030956` (436 bytes). This gate is not the Portable Conformance ZIP build. The workflow run/artifact for the latest exact source has not yet been verified from a returned receipt; archive rebuild remains PENDING.
