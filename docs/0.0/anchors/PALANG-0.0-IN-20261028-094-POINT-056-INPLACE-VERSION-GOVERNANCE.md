@@ -6,6 +6,7 @@
 - Output: [OUT-093](./PALANG-0.0-OUT-20261028-093-POINT-056-INPLACE-VERSION-GOVERNANCE.md)
 - Event: [EVT-0231](../../architecture/BEHAVIOR-TRACE/EVT-0231-POINT-056-INPLACE-VERSION-GOVERNANCE-2026-10-28.md)
 - Current: [CURRENT-106](./PALANG-0.0-CURRENT-20261028-106-INPLACE-VERSION-GOVERNANCE.md)
+- Sole active queue: [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
 
 ## Captured requirement
 The user explicitly reaffirmed: do not create a new version number; update the existing version and rebuild the same canonical ZIP. Version remains 0.3.8. Stable package ID and canonical filename must not change. Prior artifact digest is historical only.
