@@ -21,10 +21,10 @@ Prove that a genuinely separate AI host can reconstruct the project from the pac
 PASS requires direct evidence for package hash, complete inventory, clean host identity, independent import, IN/OUT equivalence, preserved open gaps, negative controls and read-back. Restart persistence is a separate gate.
 
 ## Status at package build
-- Local starter tests: read from the exact CI run for this package revision.
+- Latest exact-head receipt: Portable Conformance run 40638629879; 32,235 bytes; SHA-256 `6ef2a5b0eab4c527db6f47ad8ef330f9854e692cd02fc3b2a02298636fa5bb78`; 11 ZIP files; 23/23 extracted tests PASS on source commit `db5d960c80d47c39b75d2b8821312eba9ad38cfa`. The next package rebuild adds the living mother as a companion file and will therefore produce a new digest.
 - Same-package identity: HAIF-GPT6-PORTABLE-STARTER-20261025-004; canonical ZIP filename remains haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip.
 - Previous v0.3.7 ZIP receipt: run 40546488170; 30,573 bytes; SHA-256 `fcc09933dd67ca1300af051e14dbcf80c76b6f620dc6c9623323caca307969fb`; 11 files; 23/23 extracted tests PASS.
-- Prior verified v0.3.8 ZIP: run 40549743811, 31,487 bytes, SHA-256 7b9d6df16f4423e3c448c3720cbb8ce95205fc2322b1194511c0b722d4e6205b. In-place v0.3.8 rebuild ZIP and SHA-256: PENDING until the exact-head workflow artifact and digest are inspected.
+- Earlier v0.3.8 ZIP receipts are historical only; never copy their digest to a newer archive.
 - Real independent AI-host import: NOT RUN.
 - Second-host and restart persistence: NOT RUN.
 - Automatic message capture and background execution: NOT PROVEN.
@@ -37,7 +37,7 @@ The deliverable is the existing starter package continuously updated under the c
 
 
 ## Paired transfer requirement
-The receiving GPT-6 host must receive both this canonical ZIP and the current living master reference from the repository. The mother is the governing architecture; this ZIP is the portable starter. Uploading both is a transfer attempt, not proof of successful import. Record direct host receipts and keep restart/persistence as separate gates.
+The receiving GPT-6 host must receive this canonical ZIP, which includes a build-time snapshot named `LIVING_MASTER_REFERENCE.md`, and compare that snapshot with the current repository living master. The mother is the governing architecture; this ZIP is the portable starter. Uploading both is a transfer attempt, not proof of successful import. Record direct host receipts and keep restart/persistence as separate gates.
 
 
 ## First GPT-6 host integration gate
