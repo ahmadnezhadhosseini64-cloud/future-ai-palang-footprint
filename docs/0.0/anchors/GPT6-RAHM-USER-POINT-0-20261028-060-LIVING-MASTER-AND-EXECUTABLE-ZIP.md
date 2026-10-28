@@ -1,8 +1,8 @@
-# POINT-0/060 — نقطهٔ ۰: عبور از گزارش به اجرای واقعی سند مادر و بستهٔ قابل‌اجرا
+# POINT-0/060 (0+) — نقطهٔ ۰: نشان تولید مهم و ادامهٔ اجرای سند مادر و بستهٔ قابل‌اجرا
 
 - Stable ID: HAIF-POINT-0-060-LIVING-MASTER-EXECUTION-20261028
 - Production ID: G6IP-POINT-0-060
-- Type: new user-designated point 0 with 0.0 continuation; not a resolution of the duplicated POINT-0/059 labels.
+- Type: user-designated 0+ highlight on the canonical point-0 line, with 0.0 continuation; not a second root and not a resolution of the duplicated POINT-0/059 labels.
 - Project: Future AI / Palang Footprint / HAIF
 - Prior observed checkpoint: CURRENT-109 (retained as historical, not overwritten).
 - Input: [IN-098](./PALANG-0.0-IN-20261028-098-LIVING-MASTER-AND-EXECUTABLE-ZIP.md)
@@ -12,6 +12,9 @@
 - Sole active queue: [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). Do not create NEXT-052.
 - User-message timestamp: UNKNOWN / UNVERIFIED. Repository commit UTC is canonical and must be read from Git evidence after commit; Tehran is derived +03:30.
 - Status: IN THIS TURN REGISTERED IN REPOSITORY; post-write read-back and exact-head CI are pending until independently fetched/tested.
+
+## 0+ designation
+The user explicitly promoted this point to 0+ because it marks important progress. 0+ is a production/highlight label on the existing canonical point-0 identity, not a separate root. Preserve every earlier 0/0.0/0+ point.
 
 ## User requirement
 The user explicitly states that reporting is insufficient: the living master and the existing portable ZIP must be actively developed toward the intended executable capabilities. This point is an execution mandate, not a claim that the work is already complete.
