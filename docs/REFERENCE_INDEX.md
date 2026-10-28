@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-28 — POINT-0/057 (0+ on canonical root 0) → IN-095 → OUT-094 → EVT-0232 → CURRENT-107 → NEXT-051. Living mother reference updated to v1.7.27 in commit `daec24758807b6b290fc2b3ef9aea9d328bf85eb`. Canonical starter internal v0.3.8: 32,235 bytes, SHA-256 `6ef2a5b0eab4c527db6f47ad8ef330f9854e692cd02fc3b2a02298636fa5bb78`, 11 files, 23/23 extracted tests PASS. Portable Conformance run 40638629879 and Living Architecture Audit run 40638629757 succeeded on source commit `db5d960c80d47c39b75d2b8821312eba9ad38cfa`; subsequent mother-reference-only commit records the evidence. Independent host, second-host recovery, restart persistence, live capture, authorized write-back, unattended execution and historical graph reconciliation remain OPEN.
+**Last Updated:** 2026-10-28 — POINT-0/058 (0+ on canonical root 0) → IN-096 → OUT-095 → EVT-0233 → CURRENT-108 → NEXT-051. Living mother reference updated to v1.7.27 in commit `daec24758807b6b290fc2b3ef9aea9d328bf85eb`. Canonical starter internal v0.3.8: 32,235 bytes, SHA-256 `6ef2a5b0eab4c527db6f47ad8ef330f9854e692cd02fc3b2a02298636fa5bb78`, 11 files, 23/23 extracted tests PASS. Portable Conformance run 40638629879 and Living Architecture Audit run 40638629757 succeeded on source commit `db5d960c80d47c39b75d2b8821312eba9ad38cfa`; subsequent mother-reference-only commit records the evidence. Independent host, second-host recovery, restart persistence, live capture, authorized write-back, unattended execution and historical graph reconciliation remain OPEN.
 
 ## Canonical References
 
@@ -2073,3 +2073,17 @@ Current active 0+ / 0.0 chain: POINT-0/056 → IN-094 → OUT-093 → EVT-0231 �
 
 | HAIF-CURRENT-107 | `docs/0.0/anchors/PALANG-0.0-CURRENT-20261028-107-PORTABLE-CONFORMANCE-REPAIR.md` | Current verified package/CI checkpoint and active continuation | Repository/package conformance PASS; external host acceptance OPEN |
 | HAIF-MASTER-REFERENCE-1.7.27 | `docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md` | Living master reference, canonical graph state, package proof and open gates | Updated and registered in commit `daec24758807b6b290fc2b3ef9aea9d328bf85eb` |
+
+
+## Independent-host recovery — POINT-0/058 / CURRENT-108
+
+| ID | Canonical path | Purpose | Status |
+|---|---|---|---|
+| HAIF-POINT-0-058 | `docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261028-058-0PLUS-INDEPENDENT-HOST-RECOVERY.md` | User-designated 0+ for paired ZIP + living-master external-host recovery | Registered; host acceptance OPEN |
+| HAIF-IN-096 | `docs/0.0/anchors/PALANG-0.0-IN-20261028-096-POINT-058-INDEPENDENT-HOST-RECOVERY.md` | Independent input record | Registered |
+| HAIF-OUT-095 | `docs/0.0/anchors/PALANG-0.0-OUT-20261028-095-POINT-058-INDEPENDENT-HOST-RECOVERY.md` | Operational acceptance matrix and proof boundaries | Protocol prepared; external execution OPEN |
+| HAIF-EVT-0233 | `docs/architecture/BEHAVIOR-TRACE/EVT-0233-POINT-058-INDEPENDENT-HOST-RECOVERY-2026-10-28.md` | Event record | Registered |
+| HAIF-CURRENT-108 | `docs/0.0/anchors/PALANG-0.0-CURRENT-20261028-108-INDEPENDENT-HOST-RECOVERY.md` | Latest 0.0 checkpoint | Active; external-host acceptance OPEN |
+| HAIF-HOST-ACCEPTANCE-PROMPT-FA | `prototype/haif-gpt6-starter/INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md` | Copy-ready Persian positive/negative/fresh-session host test | Added to canonical ZIP inventory |
+
+Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity are not evidence of external-host acceptance.
