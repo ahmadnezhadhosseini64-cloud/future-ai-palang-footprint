@@ -31,14 +31,15 @@ The recovery task is now specified as a falsifiable host acceptance test, not a 
 ## Next action
 Use a separate AI host/session with both artifacts. Paste the recovery prompt from CURRENT-108, save the raw response without editing, then add its real hash and a read-back comparison to NEXT-051 evidence. Keep unresolved gates open.
 
+## Exact package receipt — Portable Conformance run 40644355767
 
-## Exact package receipt — Portable Conformance run 40644166088
-
-- Source commit for this build: `76122145020a5a55e31375dd02c190abadff59bb`.
+- Source commit for this build: `a0361dda721418604b923f48cf22162186deb2d4`.
 - Canonical ZIP filename: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`.
 - Internal package version: `0.3.8`; Stable ID: `HAIF-GPT6-PORTABLE-STARTER-20261025-004`.
 - Size: `101556` bytes; SHA-256: `330f6aab2f2b98959f1155099d20d344b20448cbdceaf2b765dce5a25f842177`.
 - Inventory: 13 files, including `LIVING_MASTER_REFERENCE.md` and `INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md`.
-- ZIP integrity: PASS; source-byte read-back: PASS; extracted package tests: 23/23 PASS. Downloaded artifact was independently extracted and hashed in this session; digest and byte count matched the workflow receipt.
-- Workflow: [Portable Conformance run 40644166088](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40644166088).
+- ZIP integrity: PASS; source-byte read-back: PASS; extracted package tests: 23/23 PASS. The downloaded canonical ZIP was independently extracted and hashed; the digest and byte count matched the workflow receipt.
+- Portable Conformance: [run 40644355767](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40644355767) — SUCCESS.
+- Living Architecture Audit: [run 40644355892](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40644355892) — SUCCESS.
+- Cross-layer integrity: [run 40644355836](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40644355836) — SUCCESS.
 - External independent-host acceptance: NOT RUN. This receipt is package/repository evidence only.
