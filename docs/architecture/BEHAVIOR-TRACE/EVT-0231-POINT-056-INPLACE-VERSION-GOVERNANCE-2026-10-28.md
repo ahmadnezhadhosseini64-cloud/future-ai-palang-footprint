@@ -12,3 +12,9 @@ The user clarified that this work must not increment the package version. The ca
 
 ## Evidence boundary
 The source files have been read back from the repository. That is not equivalent to a newly built ZIP. The exact-head Portable Conformance run and updated archive digest are not verified from currently available run receipts. Prior v0.3.8 digest is historical evidence only. Real independent-host import, restart persistence, live capture and authorized write-back remain OPEN.
+
+## Current chain and package source follow-through
+- Manifest and package tests now point to POINT-0/056 → IN-094 → OUT-093 → EVT-0231 → CURRENT-106 → NEXT-051.
+- Portable Conformance workflow references IN-094, OUT-093 and CURRENT-106.
+- Internal version remains 0.3.8; no new version number or alternate ZIP name is introduced.
+- The workflow run/artifact for the latest exact source has not yet been verified from a returned receipt; archive rebuild remains PENDING.
