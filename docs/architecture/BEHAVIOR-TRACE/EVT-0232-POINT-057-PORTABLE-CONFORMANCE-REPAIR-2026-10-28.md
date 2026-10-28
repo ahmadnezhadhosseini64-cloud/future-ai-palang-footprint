@@ -7,6 +7,10 @@
 - Current: [CURRENT-107](../../0.0/anchors/PALANG-0.0-CURRENT-20261028-107-PORTABLE-CONFORMANCE-REPAIR.md)
 - Sole active queue: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
 
+## Canonical chain
+
+`POINT-0/057 (0+ marker on canonical root 0) → IN-095 → OUT-094 → EVT-0232 → CURRENT-107 → NEXT-051`
+
 ## Behavior observed
 The first exact-head CI run exposed real defects: stale test expectations for the active point chain, missing NEXT-051 / RAHM manifest links in IN/OUT, and an audit verifier pinned to a historical CURRENT-066 checkpoint. These were treated as defects, not hidden or re-labeled as success.
 
