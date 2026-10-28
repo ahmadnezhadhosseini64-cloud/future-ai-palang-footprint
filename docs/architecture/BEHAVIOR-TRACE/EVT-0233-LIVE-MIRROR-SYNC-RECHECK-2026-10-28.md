@@ -4,7 +4,7 @@
 - Production ID: `PALANG-EVT0233-2026-10-28-001`
 - Test ID: `LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001`
 - Version: 1.0.0
-- Status: REGISTERED / READ-BACK VERIFIED for this event file and its recorded source/Library comparison; exact-current-main CI remains NOT VERIFIED.
+- Status: QUARANTINED / DUPLICATE EVENT-NUMBER ARTIFACT — file and evidence preserved; not the canonical EVT-0233 user-turn event.
 - Canonical source: [LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md](../BEHAVIOR-OBSERVATORY/LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md)
 - Library mirror: `/Future AI/Palang Footprint/Master Reference Vault/Reference Documents/LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md`
 - Stable Library ID: `libfile_7ac3c9a6ec14819198eb2751e204aa48`
@@ -67,3 +67,9 @@ This event registers the current source/Library comparison and its observed evid
 - The returned body begins with the Integration Queue title and Stable ID `ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001`, and identifies itself as Version 1.10.3 with a stale POINT-0/053 → CURRENT-103 header. It is a 262,950-character queue-like snapshot, not a task-specific NEXT-051 action document.
 - The canonical `docs/architecture/INTEGRATION-QUEUE/README.md` is separately present at Version 1.10.5 and declares POINT-0/056 → CURRENT-106 in its header, while the latest living master and CURRENT-107 declare POINT-0/057 → CURRENT-107. These pointers require reconciliation; do not select or reconstruct the NEXT-051 body by inference.
 - Disposition: OPEN / SOURCE-BACKED RECOVERY REQUIRED. Preserve the current file and its history. Next deterministic action: inspect path-specific Git history and prior blobs for NEXT-051, compare the original task body with current queue/master/index evidence, and only then repair or explicitly quarantine the stale snapshot. NEXT-051 remains the single active queue label; no NEXT-052 is created.
+
+
+## Quarantine notice — EVT-0233 number collision
+- A later independent read of main discovered the active user-turn event [EVT-0233 — POINT-0/058 independent-host recovery](./EVT-0233-POINT-058-INDEPENDENT-HOST-RECOVERY-2026-10-28.md), explicitly referenced by POINT-0/058, CURRENT-108, the living master and reference index.
+- This live-mirror event file uses the same event number. It is therefore retained unchanged as a historical evidence artifact but quarantined as a duplicate number. The mirror comparison it records remains valid for the fetched source and Library version 7; its event number is not canonical.
+- Canonical unique follow-up and collision record: [EVT-0234](./EVT-0234-LIVE-MIRROR-SYNC-RECHECK-AND-EVT0233-COLLISION-2026-10-28.md) with [TIME-BINDING-EVT-0234](./TIME-BINDING-EVT-0234-LIVE-MIRROR-SYNC-2026-10-28.md). Do not delete or silently renumber this file or its prior time-binding.
