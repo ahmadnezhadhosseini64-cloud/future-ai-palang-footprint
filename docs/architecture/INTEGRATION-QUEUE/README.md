@@ -3,13 +3,13 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.10.7
+- Version: 1.10.8
 - Date: 2026-10-28
 - Exact Time: UNKNOWN / UNVERIFIED for this source update; prior recorded time retained as historical evidence.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: POINT-0/058 (0+) is the latest user-turn marker on canonical root 0; CURRENT-108 is the active 0.0 continuation. The package Stable ID and canonical ZIP filename remain fixed; internal package version remains 0.3.8. Last confirmed ZIP digest (32,235 bytes; SHA-256 6ef2a5b0eab4c527db6f47ad8ef330f9854e692cd02fc3b2a02298636fa5bb78; 23/23 tests) is historical for its tested source commit, not proof for current main after CURRENT-108 package-test and acceptance-prompt updates. Exact-head audit/conformance and fresh artifact read-back must be rechecked. Duplicate records POINT-0/045, CURRENT-095, IN-083, OUT-082 and EVT-0220 remain OPEN; EVT-0233 collision is preserved under EVT-0234. The active NEXT-051 path currently contains a stale queue-like Version 1.10.3 snapshot rather than a task-specific action document; preserve it and recover path-specific Git history before repair. NEXT-051 remains the sole active queue label; no NEXT-052. Independent-host import, restart persistence, live capture and authorized write-back remain OPEN / NOT VERIFIED.
+- Status: POINT-0/059 is the latest canonical point-0 record; POINT-0/058 remains the 0+ highlight; CURRENT-109 is the active 0.0 continuation. The package Stable ID and canonical ZIP filename remain fixed; internal package version remains 0.3.8. Last confirmed ZIP digest (32,235 bytes; SHA-256 6ef2a5b0eab4c527db6f47ad8ef330f9854e692cd02fc3b2a02298636fa5bb78; 23/23 tests) is historical for its tested source commit, not proof for current main after CURRENT-109 repository-registration and package-test/acceptance-prompt updates. Exact-head audit/conformance and fresh artifact read-back must be rechecked. Duplicate records POINT-0/045, CURRENT-095, IN-083, OUT-082 and EVT-0220 remain OPEN; EVT-0233 collision is preserved under EVT-0234. The active NEXT-051 path currently contains a stale queue-like Version 1.10.3 snapshot rather than a task-specific action document; preserve it and recover path-specific Git history before repair. NEXT-051 remains the sole active queue label; no NEXT-052. Independent-host import, restart persistence, live capture and authorized write-back remain OPEN / NOT VERIFIED.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
