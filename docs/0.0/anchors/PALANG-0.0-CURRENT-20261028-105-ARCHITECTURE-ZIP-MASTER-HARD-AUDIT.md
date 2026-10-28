@@ -26,13 +26,15 @@ Keep all unverified items OPEN. Do not create NEXT-052 or mark whole architectur
 
 ## 0.0 execution delta — canonical starter source alignment
 
-- Source implementation: the existing starter package was advanced internally from 0.3.8 to 0.3.9; Stable ID and canonical ZIP filename remain unchanged.
+- Source implementation: the existing starter package is being updated IN PLACE at internal version 0.3.8; no new version number, Stable ID or canonical ZIP filename is introduced.
 - Source files updated: `manifest.json`, `test_engine.py`, `README.md`, `GPT6_HOST_INSTRUCTIONS.md`, `INDEPENDENT_HOST_RECOVERY_PROTOCOL.md`, `INTERACTION-RESPONSE-AND-ANCHOR-PROTOCOL.md`, and `HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md`.
 - Regression coverage added: the test suite checks the ordered POINT-0/055 → IN-093 → OUT-092 → EVT-0230 → CURRENT-105 → NEXT-051 chain, the same canonical package identity/update mode, and version/receipt alignment across the package documents.
-- Read-back: all seven package files were fetched again from the repository; expected 0.3.9 markers were present, and the four host/recovery contracts plus README contained the current chain.
+- Read-back: all seven package files were fetched again from the repository; expected package continuity markers were present, and the four host/recovery contracts plus README contained the current chain.
 - Additional hard-audit correction: the manifest repeated the exact active queue ID NEXT-051 near the historical prefix and again at the live tail. The earlier reference is now labeled `NEXT-051 (historical queue reference)`; the live `NEXT-051` occurs exactly once at the end, and a regression assertion enforces this.
 - Recovery graph repair: IN-093 and OUT-092 now expose identical six-target recovery links and explicitly retain OPEN / NOT VERIFIED host gates. Portable Conformance was retargeted from the missing/obsolete IN-091 / OUT-090 / CURRENT-103 files to IN-093 / OUT-092 / CURRENT-105.
 - Connector-side structural checks PASS for manifest JSON parsing, chain order, unique active NEXT-051, same-package identity, host-document chain/version alignment, IN/OUT link equivalence, target coverage, and workflow pointer alignment. This is a read-back structural check, NOT a GitHub Actions test result.
-- Exact-head CI/test execution and a new 0.3.9 ZIP artifact/hash have NOT yet been verified by an available workflow receipt. The last proven archive remains v0.3.8, run 40549743811. Do not reuse its hash as v0.3.9 evidence.
+- Exact-head CI/test execution and a new 0.3.9 ZIP artifact/hash have NOT yet been verified by an available workflow receipt. The last proven archive remains v0.3.8, run 40549743811. Do not reuse its hash as v0.3.8 evidence.
 - Real independent-host import, restart persistence, live capture and authorized write-back remain OPEN / NOT RUN.
 - Latest source commit recorded by GitHub: `e303b3385a9adac4021fb0cf213e7c7588f83c17` (2026-10-28T04:19:20Z). Combined status endpoint returned no status records; this is NOT a passing CI result.
+
+- Governance correction: user reaffirmed no version increment. The 0.3.9 source-only edit was rolled back to the existing internal version 0.3.8; the intended operation is rebuild-in-place under the same Stable ID and canonical filename. A fresh artifact receipt remains required.
