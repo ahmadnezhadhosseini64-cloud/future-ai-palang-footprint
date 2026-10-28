@@ -14,11 +14,11 @@ OUTDIR = ROOT / "audit-output"
 OUTDIR.mkdir(exist_ok=True)
 
 FILES = {
-    "point": "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261028-057-0PLUS-PORTABLE-CONFORMANCE-REPAIR.md",
-    "in": "docs/0.0/anchors/PALANG-0.0-IN-20261028-095-POINT-057-CONFORMANCE-REPAIR.md",
-    "out": "docs/0.0/anchors/PALANG-0.0-OUT-20261028-094-POINT-057-CONFORMANCE-REPAIR.md",
-    "event": "docs/architecture/BEHAVIOR-TRACE/EVT-0232-POINT-057-PORTABLE-CONFORMANCE-REPAIR-2026-10-28.md",
-    "current": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261028-107-PORTABLE-CONFORMANCE-REPAIR.md",
+    "point": "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261028-058-0PLUS-INDEPENDENT-HOST-RECOVERY.md",
+    "in": "docs/0.0/anchors/PALANG-0.0-IN-20261028-096-POINT-058-INDEPENDENT-HOST-RECOVERY.md",
+    "out": "docs/0.0/anchors/PALANG-0.0-OUT-20261028-095-POINT-058-INDEPENDENT-HOST-RECOVERY.md",
+    "event": "docs/architecture/BEHAVIOR-TRACE/EVT-0233-POINT-058-INDEPENDENT-HOST-RECOVERY-2026-10-28.md",
+    "current": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261028-108-INDEPENDENT-HOST-RECOVERY.md",
     "next": "docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md",
     "master": "docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md",
     "index": "docs/REFERENCE_INDEX.md",
@@ -26,7 +26,7 @@ FILES = {
     "package_manifest": "prototype/haif-gpt6-starter/manifest.json",
     "package_protocol": "prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md",
 }
-CHAIN = ["POINT-0/057", "IN-095", "OUT-094", "EVT-0232", "CURRENT-107", "NEXT-051"]
+CHAIN = ["POINT-0/058", "IN-096", "OUT-095", "EVT-0233", "CURRENT-108", "NEXT-051"]
 OPEN_GATES = {
     "full_state_recovery": ("full IN/OUT state reconstruction", "open proof gates"),
     "clean_host_import": ("clean/second AI-host import", "open proof gates"),
@@ -64,16 +64,16 @@ def main():
     failures = []
     expected_links = {
         "point": [("in", "PALANG-0.0-IN-20261028-095"), ("out", "PALANG-0.0-OUT-20261028-094"),
-                  ("event", "EVT-0232-POINT-057"), ("current", "PALANG-0.0-CURRENT-20261028-107"), ("next", "PALANG-0.0-NEXT-20261024-051")],
-        "in": [("out", "PALANG-0.0-OUT-20261028-094"), ("event", "EVT-0232-POINT-057"),
+                  ("event", "EVT-0233-POINT-057"), ("current", "PALANG-0.0-CURRENT-20261028-107"), ("next", "PALANG-0.0-NEXT-20261024-051")],
+        "in": [("out", "PALANG-0.0-OUT-20261028-094"), ("event", "EVT-0233-POINT-057"),
                ("current", "PALANG-0.0-CURRENT-20261028-107"), ("next", "PALANG-0.0-NEXT-20261024-051")],
-        "out": [("in", "PALANG-0.0-IN-20261028-095"), ("event", "EVT-0232-POINT-057"),
+        "out": [("in", "PALANG-0.0-IN-20261028-095"), ("event", "EVT-0233-POINT-057"),
                 ("current", "PALANG-0.0-CURRENT-20261028-107"), ("next", "PALANG-0.0-NEXT-20261024-051")],
         "event": [("point", "GPT6-RAHM-USER-POINT-0-20261028-057"), ("in", "PALANG-0.0-IN-20261028-095"),
                   ("out", "PALANG-0.0-OUT-20261028-094"), ("current", "PALANG-0.0-CURRENT-20261028-107"),
                   ("next", "PALANG-0.0-NEXT-20261024-051")],
         "current": [("point", "GPT6-RAHM-USER-POINT-0-20261028-057"), ("in", "PALANG-0.0-IN-20261028-095"),
-                    ("out", "PALANG-0.0-OUT-20261028-094"), ("event", "EVT-0232-POINT-057"),
+                    ("out", "PALANG-0.0-OUT-20261028-094"), ("event", "EVT-0233-POINT-057"),
                     ("next", "PALANG-0.0-NEXT-20261024-051")],
     }
     for source, checks in expected_links.items():
@@ -89,7 +89,7 @@ def main():
                 failures.append({"check":"broken_local_link","source":key,"target":target})
     canonical = " → ".join(CHAIN)
     for key in ("point", "out", "event", "current", "master", "index", "queue", "package_protocol"):
-        if "POINT-0/057" not in docs[key] or "CURRENT-107" not in docs[key] or "NEXT-051" not in docs[key]:
+        if "POINT-0/058" not in docs[key] or "CURRENT-108" not in docs[key] or "NEXT-051" not in docs[key]:
             failures.append({"check":"canonical_chain_not_visible","source":key})
     manifest = json.loads(docs["package_manifest"])
     if manifest.get("version") != "0.3.8" or manifest.get("supersedes") != "0.3.7":
@@ -117,7 +117,7 @@ def main():
         if not gates[name]["preserved_open"]:
             failures.append({"check":"open_gate_not_preserved","gate":name,"state":gates[name]})
     result = {
-        "test_id":"RAHM-CURRENT-107-IN-OUT-STATE-RECOVERY-2026-10-28-001",
+        "test_id":"RAHM-CURRENT-108-IN-OUT-STATE-RECOVERY-2026-10-28-001",
         "scope":"Current repository-chain reconstruction from IN and OUT anchors; not real external-host acceptance.",
         "canonical_chain":canonical,
         "version":"0.3.8",
