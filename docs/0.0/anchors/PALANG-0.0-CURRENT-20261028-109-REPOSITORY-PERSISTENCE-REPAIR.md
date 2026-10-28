@@ -18,14 +18,14 @@ Preserved prior chain: `POINT-0/058 (0+) → IN-096 → OUT-095 → EVT-0233 →
 ## Verified findings carried forward
 - The previous local hard-audit bundle is evidence-only and not release-ready as a current paired package.
 - The inner package's 23/23 tests and ZIP integrity do not prove external-host acceptance.
-- The bundled master reference was version 1.7.24, while the repository mother reference is version 1.7.29; rebuild both from the same source state before presenting as current.
+- The bundled master reference was version 1.7.24, while the repository mother reference is version 1.7.30; rebuild both from the same source state before presenting as current.
 - External host import, exact identity read-back, negative-control test, fresh-session/restart recovery, second-host recovery, persistent memory, Buffer, Dropbox, and host write-back remain OPEN / NOT VERIFIED.
 - CURRENT-065/CURRENT-066 pointer/overlay lineage conflict remains OPEN; do not resolve by inference.
 - NEXT-051 remains the only active queue; no NEXT-052.
 
 ## Next actions
 1. Repository chain and central pointers are written and read back; the current checkpoint is repository-verified.
-2. Update `docs/0.0/README.md`, `docs/REFERENCE_INDEX.md`, and the living mother reference to the verified chain and status.
+2. The 0.0 README, Reference Index, integration queue and living mother reference have been updated and read back.
 3. Rebuild the canonical ZIP and `LIVING_MASTER_REFERENCE.md` from the same current main/source commit, preserve stable package identity/name/version unless a governing change requires otherwise, and independently check SHA-256 + byte count + receipt.
 4. Run a real independent AI-host import with both artifacts; capture raw receipt, perform negative control and fresh-session/restart recovery.
 5. Keep every gate OPEN until its own evidence is read back and matched.
