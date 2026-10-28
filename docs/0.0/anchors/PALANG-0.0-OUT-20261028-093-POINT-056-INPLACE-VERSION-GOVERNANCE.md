@@ -9,13 +9,13 @@
 
 ## Implemented source changes
 - Manifest restored to internal version 0.3.8; `supersedes=0.3.7`; Stable ID and canonical filename unchanged.
-- Package test assertions aligned to version 0.3.8 and the current POINT-0/055 → IN-093 → OUT-092 → EVT-0230 → CURRENT-105 → NEXT-051 chain.
+- Package test assertions aligned to version 0.3.8 and the current POINT-0/056 → IN-094 → OUT-093 → EVT-0231 → CURRENT-106 → NEXT-051 chain.
 - Package README, host instructions and recovery contracts aligned to the existing version 0.3.8.
 - Version-governance correction now requires rebuilding the same canonical ZIP in place; the prior v0.3.8 digest cannot be reused for updated bytes.
 
 ## Not yet proven
 - Exact-head Portable Conformance result for the latest source: NOT VERIFIED from available run evidence.
-- New downloaded ZIP, exact SHA-256, inventory and extracted test output: PENDING.
+- Latest exact-head workflow found source regression and IN/OUT-link failures; corrective source edits are being applied. New downloaded ZIP, exact SHA-256, inventory and extracted test output remain PENDING until a fresh run passes.
 - Real independent-host import, restart persistence, live capture and authorized write-back: OPEN / NOT RUN.
 
 - Post-update repository read-back structural checks PASS for manifest version/identity, chain order, unique active NEXT-051, package-doc version/chain alignment, and workflow target paths. This is not a ZIP build/test receipt.
