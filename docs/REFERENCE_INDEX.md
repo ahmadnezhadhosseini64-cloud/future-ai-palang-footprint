@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-28 — POINT-0/058 (0+ on canonical root 0) → IN-096 → OUT-095 → EVT-0233 → CURRENT-108 → NEXT-051. Living mother reference updated to v1.7.27 in commit `daec24758807b6b290fc2b3ef9aea9d328bf85eb`. Canonical starter internal v0.3.8: 32,235 bytes, SHA-256 `6ef2a5b0eab4c527db6f47ad8ef330f9854e692cd02fc3b2a02298636fa5bb78`, 11 files, 23/23 extracted tests PASS. Portable Conformance run 40638629879 and Living Architecture Audit run 40638629757 succeeded on source commit `db5d960c80d47c39b75d2b8821312eba9ad38cfa`; subsequent mother-reference-only commit records the evidence. Independent host, second-host recovery, restart persistence, live capture, authorized write-back, unattended execution and historical graph reconciliation remain OPEN.
+**Last Updated:** 2026-10-28 — POINT-0/058 (0+ on canonical root 0) → IN-096 → OUT-095 → EVT-0233 → CURRENT-108 → NEXT-051. Living mother reference updated to v1.7.27 in commit `daec24758807b6b290fc2b3ef9aea9d328bf85eb`. Canonical starter internal v0.3.8: 101,556 bytes, SHA-256 `330f6aab2f2b98959f1155099d20d344b20448cbdceaf2b765dce5a25f842177`, 13 files, 23/23 extracted tests PASS. Portable Conformance run 40644355767, Living Architecture Audit run 40644355892 and Cross-layer Integrity run 40644355836 succeeded on source commit `a0361dda721418604b923f48cf22162186deb2d4`. Independent-host acceptance remains NOT RUN. Independent host, second-host recovery, restart persistence, live capture, authorized write-back, unattended execution and historical graph reconciliation remain OPEN.
 
 ## Canonical References
 
@@ -2087,3 +2087,20 @@ Current active 0+ / 0.0 chain: POINT-0/056 → IN-094 → OUT-093 → EVT-0231 �
 | HAIF-HOST-ACCEPTANCE-PROMPT-FA | `prototype/haif-gpt6-starter/INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md` | Copy-ready Persian positive/negative/fresh-session host test | Added to canonical ZIP inventory |
 
 Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity are not evidence of external-host acceptance.
+
+
+## Latest exact receipt — CURRENT-108
+
+## Exact package receipt — Portable Conformance run 40644355767
+
+- Source commit for this build: `a0361dda721418604b923f48cf22162186deb2d4`.
+- Canonical ZIP filename: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`.
+- Internal package version: `0.3.8`; Stable ID: `HAIF-GPT6-PORTABLE-STARTER-20261025-004`.
+- Size: `101556` bytes; SHA-256: `330f6aab2f2b98959f1155099d20d344b20448cbdceaf2b765dce5a25f842177`.
+- Inventory: 13 files, including `LIVING_MASTER_REFERENCE.md` and `INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md`.
+- ZIP integrity: PASS; source-byte read-back: PASS; extracted package tests: 23/23 PASS. The downloaded canonical ZIP was independently extracted and hashed; the digest and byte count matched the workflow receipt.
+- Portable Conformance: [run 40644355767](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40644355767) — SUCCESS.
+- Living Architecture Audit: [run 40644355892](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40644355892) — SUCCESS.
+- Cross-layer integrity: [run 40644355836](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40644355836) — SUCCESS.
+- External independent-host acceptance: NOT RUN. This receipt is package/repository evidence only.
+
