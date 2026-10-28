@@ -1797,3 +1797,13 @@ The canonical chain is [POINT-0/032](./anchors/GPT6-RAHM-USER-POINT-0-20261026-0
 - Current chain remains POINT-0/058 (0+) → IN-096 → OUT-095 → EVT-0233 (user-turn event) → CURRENT-108 → NEXT-051. Preserve POINT-0/016, /017, /018, /057 and all history; no new root or NEXT item.
 - Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library v7 (10,480 chars), one extra trailing LF only. No redundant write.
 - EVT-0233 collision lineage preserved; EVT-0234 and EVT-0235 are unique mirror records. CURRENT-065/CURRENT-066, NEXT-051 path mismatch, Issues #20/#21 and external destination/host gates remain OPEN/NOT VERIFIED as applicable. Route A and Route B remain separate and connected. No NEXT-052.
+
+
+## Latest user root — POINT-0/059 (2026-10-28)
+
+- [POINT-0/059 — Library newline normalization and portable HAIF package](anchors/GPT6-RAHM-USER-POINT-0-20261028-059-MIRROR-NORMALIZATION-PORTABLE-PACKAGE.md) is the newly registered user-turn root. Root 0 is active; all follow-up work is 0.0.
+- Preserve prior root/highlight POINT-0/058 (0+), POINT-0/057, POINT-0/018, POINT-0/017, POINT-0/016 and the intervening collision lineage. This root does not erase or silently supersede them.
+- NEXT-051 remains the sole active continuation; no NEXT-052.
+- CURRENT-065/CURRENT-066: attempt source-backed reconciliation; if ambiguous, apply a reversible cover and leave OPEN / COVERED-NOT-CLOSED, retaining both histories.
+- Library newline correction: requested, but NOT YET EXECUTED because a supported exported-snapshot/source_file_ref route is not available. Canonical repository source remains authoritative.
+- Priority: rebuild and independently hash/read-back a fresh portable ZIP and living master; exact-head audit/conformance and independent-host import remain unverified until evidenced.
