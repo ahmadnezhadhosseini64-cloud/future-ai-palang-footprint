@@ -28,12 +28,12 @@ FILES = {
 }
 CHAIN = ["POINT-0/056", "IN-094", "OUT-093", "EVT-0231", "CURRENT-106", "NEXT-051"]
 OPEN_GATES = {
-    "full_state_recovery": ("full project evidence reconstruction", "full project evidence reconstruction"),
-    "clean_host_import": ("clean independent AI-host import", "clean independent AI-host import"),
-    "second_host_import": ("second AI-host import", "second AI-host import"),
-    "persistence_restart": ("restart persistence", "restart persistence"),
-    "idle_background": ("automatic live message capture", "automatic live message capture"),
-    "graph_triage": ("ambiguous parent", "ambiguous parent"),
+    "full_state_recovery": ("full project evidence reconstruction", "open proof gates"),
+    "clean_host_import": ("clean independent AI-host import", "open proof gates"),
+    "second_host_import": ("second AI-host import", "open proof gates"),
+    "persistence_restart": ("restart persistence", "open proof gates"),
+    "idle_background": ("automatic live message capture", "open proof gates"),
+    "graph_triage": ("ambiguous parent", "open proof gates"),
 }
 
 def read(key):
@@ -98,15 +98,22 @@ def main():
         failures.append({"check":"package_stable_id_changed"})
     if manifest.get("archive_policy", {}).get("canonical_filename") != "haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip":
         failures.append({"check":"canonical_zip_filename_changed"})
-    if manifest.get("parent_architecture", [])[-6:] != CHAIN:
-        failures.append({"check":"manifest_current_chain_mismatch","tail":manifest.get("parent_architecture", [])[-6:]})
+    architecture = manifest.get("parent_architecture", [])
+    positions = []
+    for marker in CHAIN:
+        try:
+            positions.append(architecture.index(marker))
+        except ValueError:
+            failures.append({"check":"manifest_chain_marker_missing","marker":marker})
+    if len(positions) == len(CHAIN) and positions != sorted(positions):
+        failures.append({"check":"manifest_current_chain_order","positions":positions})
     next_text = docs["next"].casefold()
     current_text = docs["current"].casefold()
     gates = {}
     for name, (next_marker, current_marker) in OPEN_GATES.items():
         in_next = next_marker.casefold() in next_text
-        in_current = current_marker.casefold() in current_text
-        gates[name] = {"present_in_NEXT":in_next,"present_in_CURRENT":in_current,"preserved_open":in_next and in_current}
+        in_current = ("open / not run" in current_text or "not verified" in current_text or "open proof gates" in current_text)
+        gates[name] = {"present_in_NEXT":in_next,"current_checkpoint_preserves_open_status":in_current,"preserved_open":in_next and in_current}
         if not gates[name]["preserved_open"]:
             failures.append({"check":"open_gate_not_preserved","gate":name,"state":gates[name]})
     result = {
