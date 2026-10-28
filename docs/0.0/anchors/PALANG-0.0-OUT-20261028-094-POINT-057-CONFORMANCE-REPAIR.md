@@ -23,4 +23,4 @@
 ## Boundary and remaining proof
 These successful receipts belong to the commits explicitly named above, not automatically to later commits. After POINT-0/057 is integrated, rerun both workflows on the exact resulting HEAD and record the final ZIP receipt. Real external AI-host import, second-host acceptance, restart persistence, automatic message capture and authorized repository write-back remain OPEN / NOT RUN.
 
-- Status: SOURCE FIXES APPLIED; HISTORICAL EXACT-COMMIT BUILD VERIFIED; FINAL CURRENT-HEAD RECEIPT PENDING.
+- Status: SOURCE FIXES APPLIED; PRIOR EXACT-COMMIT BUILDS VERIFIED; CURRENT-HEAD STATUS IS RESOLVED FROM THE LATEST WORKFLOW RUN.
