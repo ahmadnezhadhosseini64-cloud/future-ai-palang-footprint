@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-28 — POINT-0/055 (0+ marker on canonical root 0) → IN-093 → OUT-092 → EVT-0230 → CURRENT-105 → NEXT-051. Starter source is updated in place at v0.3.8 without incrementing the version; manifest and host/recovery documents align to CURRENT-105, the duplicate active NEXT-051 pointer is disambiguated, IN-093/OUT-092 recovery links match, and Portable Conformance targets the current chain. Exact-head CI and the updated in-place v0.3.8 ZIP receipt remain PENDING. Last verified ZIP is v0.3.8 (run 40549743811; 31,487 bytes; SHA-256 7b9d6df16f4423e3c448c3720cbb8ce95205fc2322b1194511c0b722d4e6205b; 23/23 tests). Missing prior chain provenance, historic audit failures, identifier collisions and real-host acceptance remain OPEN.
+**Last Updated:** 2026-10-28 — POINT-0/056 (0+ marker on canonical root 0) → IN-094 → OUT-093 → EVT-0231 → CURRENT-106 → NEXT-051. Starter source is updated in place at v0.3.8 without incrementing the version; manifest and host/recovery documents align to CURRENT-105, the duplicate active NEXT-051 pointer is disambiguated, IN-093/OUT-092 recovery links match, and Portable Conformance targets the current chain. Exact-head CI and the updated in-place v0.3.8 ZIP receipt remain PENDING. Last verified ZIP is v0.3.8 (run 40549743811; 31,487 bytes; SHA-256 7b9d6df16f4423e3c448c3720cbb8ce95205fc2322b1194511c0b722d4e6205b; 23/23 tests). Missing prior chain provenance, historic audit failures, identifier collisions and real-host acceptance remain OPEN.
 
 ## Canonical References
 
@@ -2054,3 +2054,6 @@ The prior chain references IN-091 / OUT-090 / CURRENT-103 are missing from the i
 - [IN-093](0.0/anchors/PALANG-0.0-IN-20261028-093-POINT-055-HARD-AUDIT.md) → [OUT-092](0.0/anchors/PALANG-0.0-OUT-20261028-092-POINT-055-HARD-AUDIT.md) → [EVT-0230](architecture/BEHAVIOR-TRACE/EVT-0230-POINT-055-ARCHITECTURE-ZIP-MASTER-HARD-AUDIT-2026-10-28.md) → [CURRENT-105](0.0/anchors/PALANG-0.0-CURRENT-20261028-105-ARCHITECTURE-ZIP-MASTER-HARD-AUDIT.md) → [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - ZIP identity and canonical filename unchanged. Inspected v0.3.8 receipt: run 40549743811; 31,487 bytes; SHA-256 `7b9d6df16f4423e3c448c3720cbb8ce95205fc2322b1194511c0b722d4e6205b`; 23/23 extracted tests.
 - Real independent-host import, full recovery, negative controls, restart persistence, live capture and authorized write-back remain OPEN / NOT VERIFIED. Historical audit failures and duplicate IDs remain open. NEXT-051 remains the sole active queue.
+
+
+Current active 0+ / 0.0 chain: POINT-0/056 → IN-094 → OUT-093 → EVT-0231 → CURRENT-106 → NEXT-051. Internal package version remains 0.3.8; same Stable ID and canonical ZIP filename. Updated artifact receipt remains PENDING.
