@@ -1790,3 +1790,10 @@ The canonical chain is [POINT-0/032](./anchors/GPT6-RAHM-USER-POINT-0-20261026-0
 - EVT-0234 / time binding record source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars) and Library version 7 (10,480 chars); only one extra trailing newline in Library, no rewrite performed.
 - Two EVT-0233 files are preserved: the POINT-0/058 user-turn event remains active; the mirror-sync EVT-0233 artifact and its time binding are quarantined. EVT-0234 is the unique mirror-sync/collision record.
 - NEXT-051 path body is a stale queue-like Version 1.10.3 snapshot, not a task-specific NEXT document. Keep OPEN pending path-specific Git history recovery; do not reconstruct by inference. CURRENT-065/CURRENT-066 remains OPEN; preserve Route A and Route B; no NEXT-052.
+
+
+## Live mirror synchronization — EVT-0235 (2026-10-28)
+- Event / time binding: [EVT-0235](../architecture/BEHAVIOR-TRACE/EVT-0235-LIVE-MIRROR-SYNC-RECHECK-2026-10-28.md) / [TIME-BINDING-EVT-0235](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0235-LIVE-MIRROR-SYNC-2026-10-28.md).
+- Current chain remains POINT-0/058 (0+) → IN-096 → OUT-095 → EVT-0233 (user-turn event) → CURRENT-108 → NEXT-051. Preserve POINT-0/016, /017, /018, /057 and all history; no new root or NEXT item.
+- Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library v7 (10,480 chars), one extra trailing LF only. No redundant write.
+- EVT-0233 collision lineage preserved; EVT-0234 and EVT-0235 are unique mirror records. CURRENT-065/CURRENT-066, NEXT-051 path mismatch, Issues #20/#21 and external destination/host gates remain OPEN/NOT VERIFIED as applicable. Route A and Route B remain separate and connected. No NEXT-052.

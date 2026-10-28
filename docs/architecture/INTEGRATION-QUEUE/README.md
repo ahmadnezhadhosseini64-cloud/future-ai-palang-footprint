@@ -3,7 +3,7 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.10.6
+- Version: 1.10.7
 - Date: 2026-10-28
 - Exact Time: UNKNOWN / UNVERIFIED for this source update; prior recorded time retained as historical evidence.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
@@ -2401,3 +2401,11 @@ Canonical chain: `POINT-0/058 (0+ marker on canonical root 0) → IN-096 → OUT
 - Two EVT-0233 files were discovered. The POINT-0/058 event remains the active user-turn event; the mirror-sync EVT-0233 file and old time binding are quarantined but preserved. EVT-0234 is the unique mirror sync event.
 - NEXT-051 remains the sole active queue label, but its path returns a stale queue-like Version 1.10.3 body while this README is Version 1.10.6. OPEN / SOURCE-BACKED RECOVERY REQUIRED; inspect prior blobs and path-specific history before repair. No NEXT-052.
 - Preserve POINT-0/016, /017, /018, /057 and all history. CURRENT-065/CURRENT-066, Issues #20/#21, independent-host acceptance, persistence, Buffer and Dropbox remain open or unverified.
+
+
+## Live mirror synchronization — EVT-0235 (2026-10-28)
+- Event / time binding: [EVT-0235](../BEHAVIOR-TRACE/EVT-0235-LIVE-MIRROR-SYNC-RECHECK-2026-10-28.md) / [TIME-BINDING-EVT-0235](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0235-LIVE-MIRROR-SYNC-2026-10-28.md).
+- Current chain POINT-0/058 → CURRENT-108 → NEXT-051; no new root or queue label. Preserve POINT-0/016, /017, /018, /057 and intervening records.
+- Source blob `de1b75f07241c9b313e476af5f1417177ff78c10`, 10,479 chars; Library v7, 10,480 chars, one extra trailing LF. No redundant write.
+- NEXT-051 path still returns a stale queue-like Version 1.10.3 body while this queue README is advanced to Version 1.10.7. Keep OPEN pending path-specific Git history recovery; do not reconstruct by inference.
+- CURRENT-065/CURRENT-066 and Issues #20/#21 remain OPEN; Route A and Route B remain distinct but connected; no NEXT-052.

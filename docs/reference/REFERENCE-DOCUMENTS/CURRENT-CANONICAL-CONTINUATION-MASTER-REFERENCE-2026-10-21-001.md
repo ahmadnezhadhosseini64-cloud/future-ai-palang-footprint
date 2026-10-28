@@ -3,7 +3,7 @@
 ## 0. شناسنامه، لنگر و وضعیت
 - **Stable ID / شناسهٔ پایدار:** CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001
 - **Production ID / شناسهٔ تولید:** CCCMR-2026-10-21-001
-- **Version / نسخه:** 1.0.4
+- **Version / نسخه:** 1.0.5
 - **Owner / مالک:** Ahmad Nezhadhosseini / احمد پلنگ
 - **Project / پروژه:** Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
 - **Architecture target / هدف معماری:** HAIF — Human–AI Interaction Future (آیندهٔ تعامل انسان و هوش مصنوعی)
@@ -855,3 +855,11 @@ The canonical live-destination audit source and its exact Library version-7 snap
 - Architecture contract: [Master–Rahm–Child cross-validation](../../architecture/MASTER-RAHM-CHILD/MASTER-RAHM-CHILD-CROSS-VALIDATION-CONTRACT-2026-10-26.md).
 - Authority: original project is MASTER; initial-model project is subordinate RAHM; only a tested and explicitly accepted candidate can become a CHILD. This relationship supersedes any interpretation of the two as peer authorities, but does not delete historical architecture.
 - Repository bridge registered. Interactive-project receipts, exact-head CI, portable manifest/digest refresh, clean-host import, persistent memory and background runtime remain OPEN / NOT RUN until directly evidenced.
+
+
+## Latest continuation evidence — EVT-0235 (2026-10-28)
+- Event/time binding: [EVT-0235](../../architecture/BEHAVIOR-TRACE/EVT-0235-LIVE-MIRROR-SYNC-RECHECK-2026-10-28.md) / [TIME-BINDING-EVT-0235](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0235-LIVE-MIRROR-SYNC-2026-10-28.md).
+- Current root/checkpoint/queue: POINT-0/058 → CURRENT-108 → NEXT-051. Preserve POINT-0/016, /017, /018 and all history.
+- Source and Library v7 match after trimming trailing LF; one extra Library newline remains. No redundant write.
+- Audit/conformance passed on `ac091ffa0ab60ee6ba404490e596709b61136eef`; Evidence Gate created `a6ef55cdf0586c7fb3057dbe214fa5969728df21`, which is not covered by that pair.
+- CURRENT-065/CURRENT-066, NEXT-051 path mismatch, Issues #20/#21 and external destination/host gates remain open. This update does not claim full external recovery.

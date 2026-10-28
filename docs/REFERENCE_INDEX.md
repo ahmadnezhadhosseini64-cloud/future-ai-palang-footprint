@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-28 — POINT-0/058 (0+ on canonical root 0) → IN-096 → OUT-095 → EVT-0233 → CURRENT-108 → NEXT-051. Living mother reference is being advanced to v1.7.28; use the final-change commit recorded in Git history, not the older v1.7.27 receipt. Canonical starter internal v0.3.8: 32,235 bytes, SHA-256 `6ef2a5b0eab4c527db6f47ad8ef330f9854e692cd02fc3b2a02298636fa5bb78`, 11 files, 23/23 extracted tests PASS. Portable Conformance run 40638629879 and Living Architecture Audit run 40638629757 succeeded on source commit `db5d960c80d47c39b75d2b8821312eba9ad38cfa`; subsequent mother-reference-only commit records the evidence. Independent host, second-host recovery, restart persistence, live capture, authorized write-back, unattended execution and historical graph reconciliation remain OPEN.
+**Last Updated:** 2026-10-28 — POINT-0/058 (0+ on canonical root 0) → IN-096 → OUT-095 → EVT-0233 → CURRENT-108 → NEXT-051. Living mother reference is being advanced to v1.7.29; use the final-change commit recorded in Git history, not the older v1.7.27 receipt. Canonical starter internal v0.3.8: 32,235 bytes, SHA-256 `6ef2a5b0eab4c527db6f47ad8ef330f9854e692cd02fc3b2a02298636fa5bb78`, 11 files, 23/23 extracted tests PASS. Portable Conformance run 40638629879 and Living Architecture Audit run 40638629757 succeeded on source commit `db5d960c80d47c39b75d2b8821312eba9ad38cfa`; subsequent mother-reference-only commit records the evidence. Independent host, second-host recovery, restart persistence, live capture, authorized write-back, unattended execution and historical graph reconciliation remain OPEN.
 
 ## Canonical References
 
@@ -2095,3 +2095,11 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - POINT-0/058's EVT-0233 remains the active chain because the point and CURRENT-108 explicitly reference it. The mirror-sync EVT-0233 artifact and its time binding are preserved and quarantined; EVT-0234 is the unique mirror-sync record.
 - Current chain POINT-0/058 → IN-096 → OUT-095 → EVT-0233 (user event) → CURRENT-108 → NEXT-051. NEXT-051 path mismatch and CURRENT-065/CURRENT-066 remain OPEN. No NEXT-052.
 - Prior successful audit/conformance runs 40639681454 and 40639681489 tested SHA `764b9173c4a802669b9e13bc370a3922db0cbb3a`; newer main commits are not verified by those runs.
+
+
+## EVT-0235 — Live mirror sync recheck (2026-10-28)
+- Event: `architecture/BEHAVIOR-TRACE/EVT-0235-LIVE-MIRROR-SYNC-RECHECK-2026-10-28.md`; time binding: `architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0235-LIVE-MIRROR-SYNC-2026-10-28.md`.
+- Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, v7 (10,480 chars), one extra trailing newline; no rewrite or byte-identical claim.
+- Current root/checkpoint/queue POINT-0/058 → CURRENT-108 → NEXT-051. Preserve earlier roots including POINT-0/016, /017, /018. EVT-0233 collision remains preserved; EVT-0235 is the new unique mirror event.
+- Audit and conformance passed on `ac091ffa0ab60ee6ba404490e596709b61136eef`; Evidence Gate moved main to `a6ef55cdf0586c7fb3057dbe214fa5969728df21`, not covered by that pair.
+- CURRENT-065/CURRENT-066, NEXT-051 path mismatch and Issues #20/#21 remain OPEN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN.
