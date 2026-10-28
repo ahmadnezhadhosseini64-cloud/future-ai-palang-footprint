@@ -3,13 +3,13 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.10.4
-- Date: 2026-10-27
-- Exact Time: 11:25 local project time, minute precision; exact seconds not captured.
+- Version: 1.10.5
+- Date: 2026-10-28
+- Exact Time: UNKNOWN / UNVERIFIED for this source update; prior recorded time retained as historical evidence.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: POINT-0/054 is the latest 0+ marker on canonical root 0; CURRENT-104 is active 0.0 continuation. The same starter Stable ID and canonical ZIP filename remain fixed. v0.3.8 canonical ZIP receipt verified on run 40549743811 (31,487 bytes; SHA-256 7b9d6df16f4423e3c448c3720cbb8ce95205fc2322b1194511c0b722d4e6205b; 23/23 tests). Missing prior chain files IN-091 / OUT-090 / CURRENT-103 and audit failures remain OPEN. Duplicate numbered graph records POINT-0/045, CURRENT-095, IN-083, OUT-082 and EVT-0220 remain OPEN. Real independent-host import remains NOT RUN; NEXT-051 remains the single active queue; no NEXT-052 placeholder.
+- Status: POINT-0/055 is the latest 0+ marker on canonical root 0; CURRENT-105 is active 0.0 continuation. Same starter Stable ID and canonical ZIP filename remain fixed. Source manifest/internal package version is now 0.3.9; package host/recovery contracts and regression tests are aligned to POINT-0/055 → IN-093 → OUT-092 → EVT-0230 → CURRENT-105 → NEXT-051. Exact-head CI and v0.3.9 ZIP build/hash/read-back are PENDING; last verified ZIP is v0.3.8, run 40549743811 (31,487 bytes; SHA-256 7b9d6df16f4423e3c448c3720cbb8ce95205fc2322b1194511c0b722d4e6205b; 23/23 tests). Missing prior chain provenance, historical audit failures and duplicate records POINT-0/045, CURRENT-095, IN-083, OUT-082 and EVT-0220 remain OPEN. Real independent-host import, restart persistence, live capture and authorized write-back remain NOT RUN / NOT VERIFIED. NEXT-051 remains the sole active queue; no NEXT-052.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
