@@ -2378,3 +2378,9 @@ NEXT-051 remains the sole active queue. Do not create NEXT-052.
 - Version governance: do not increment the internal version for this work. Rebuild the existing v0.3.8 canonical package in place under the same Stable ID and ZIP filename; previous v0.3.8 digest remains historical evidence only.
 
 - Current active chain: POINT-0/056 → IN-094 → OUT-093 → EVT-0231 → CURRENT-106 → NEXT-051. Version remains 0.3.8; rebuild in place only. Updated ZIP digest and extracted tests remain PENDING.
+
+
+## Current active continuation — POINT-0/057 / CURRENT-107 (2026-10-28)
+
+- Active chain: [POINT-0/057 (0+)](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261028-057-0PLUS-PORTABLE-CONFORMANCE-REPAIR.md) → [IN-095](../../0.0/anchors/PALANG-0.0-IN-20261028-095-POINT-057-CONFORMANCE-REPAIR.md) → [OUT-094](../../0.0/anchors/PALANG-0.0-OUT-20261028-094-POINT-057-CONFORMANCE-REPAIR.md) → [EVT-0232](../BEHAVIOR-TRACE/EVT-0232-POINT-057-PORTABLE-CONFORMANCE-REPAIR-2026-10-28.md) → [CURRENT-107](../../0.0/anchors/PALANG-0.0-CURRENT-20261028-107-PORTABLE-CONFORMANCE-REPAIR.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- NEXT-051 remains the sole active queue; no NEXT-052. Version 0.3.8 and the canonical ZIP identity do not change. Exact-head final rebuild/read-back and external-host proof remain pending/open respectively.
