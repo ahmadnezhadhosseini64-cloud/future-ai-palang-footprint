@@ -89,7 +89,7 @@ def main():
                 failures.append({"check":"broken_local_link","source":key,"target":target})
     canonical = " → ".join(CHAIN)
     for key in ("point", "out", "event", "current", "master", "index", "queue", "package_protocol"):
-        if "POINT-0/056" not in docs[key] or "CURRENT-107" not in docs[key] or "NEXT-051" not in docs[key]:
+        if "POINT-0/057" not in docs[key] or "CURRENT-107" not in docs[key] or "NEXT-051" not in docs[key]:
             failures.append({"check":"canonical_chain_not_visible","source":key})
     manifest = json.loads(docs["package_manifest"])
     if manifest.get("version") != "0.3.8" or manifest.get("supersedes") != "0.3.7":
