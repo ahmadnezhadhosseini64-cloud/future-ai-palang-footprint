@@ -5,7 +5,7 @@ Stable package ID: `HAIF-GPT6-PORTABLE-STARTER-20261025-004`
 Canonical ZIP filename: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`
 Internal package version: 0.3.8
 Project source of truth: `ahmadnezhadhosseini64-cloud/future-ai-palang-footprint`
-Current chain: POINT-0/056 (0+ marker on canonical root 0) → IN-094 → OUT-093 → EVT-0231 → CURRENT-106 → NEXT-051
+Current chain: POINT-0/057 (0+ marker on canonical root 0) → IN-095 → OUT-094 → EVT-0232 → CURRENT-107 → NEXT-051
 
 ## 1. Design goal
 
