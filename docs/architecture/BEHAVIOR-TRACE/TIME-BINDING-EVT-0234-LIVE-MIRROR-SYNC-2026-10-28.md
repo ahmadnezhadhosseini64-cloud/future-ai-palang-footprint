@@ -4,9 +4,9 @@
 - Stable ID: PALANG-TIME-BINDING-EVT-0234-LIVE-MIRROR-SYNC-2026-10-28
 - Version: 1.0.0
 - Canonical clock: actual last-change Git commit timestamp in UTC; Asia/Tehran is derived from the same instant.
-- EVT-0234 final last-change commit at initial registration: `3a13cdd9dda73bbfebe9803eb468ce1167152e93`.
-- EVT-0234 registration UTC: `2026-10-28T06:26:30Z`.
-- Derived Asia/Tehran time: `2026-10-28T09:56:30+03:30`.
+- EVT-0234 initial registration commit: `3a13cdd9dda73bbfebe9803eb468ce1167152e93`.
+- EVT-0234 final last-change commit after independent read-back: `50fbea4e11a1db3e9a4cee41e66b2a78748274c7`; canonical UTC `2026-10-28T06:28:04Z`.
+- Derived Asia/Tehran time for the final event commit: `2026-10-28T09:58:04+03:30`.
 - Pre-registration main observation: `36dead156b7e4f7a0fca41687d5d98b4620c82ee`, UTC `2026-10-28T06:25:13Z), Tehran `2026-10-28T09:55:13+03:30`. Later writes are not covered by that head observation.
 - Canonical source blob: `de1b75f07241c9b313e476af5f1417177ff78c10`; source length 10,479 characters.
 - Library snapshot file ID `file_00000000942881f8a4a3833110229fb7`; stable Library ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`; version 7; content length 10,480 characters. After trimming trailing line feeds, source and Library content are exactly equal; the only difference is one extra trailing newline in Library.
@@ -18,3 +18,6 @@
 - Latest previously observed successful Living Architecture Audit run 40639681454 and Portable RAHM Conformance run 40639681489 both tested SHA `764b9173c4a802669b9e13bc370a3922db0cbb3a`; Evidence Gate follow-up commit `0250a487aa4af58a0d0a4c39be0a6a130f28c7c0` and later commits are outside those runs' tested SHA.
 - Buffer and Persistent Memory: NOT VERIFIED. Dropbox: OPEN / NOT VERIFIED. External-host/end-to-end recovery: NOT RUN unless separate raw evidence is supplied.
 - Workflow timestamps, repository commit timestamps, Library metadata timestamps and exact read-operation timestamps are distinct. Unknown operation time remains UNKNOWN.
+
+- Initial event creation commit time retained as historical evidence: UTC `2026-10-28T06:26:30Z`, Tehran `2026-10-28T09:56:30+03:30`.
+- Independent read-back of the final event revision returned blob `13a35b817c10d6f93f7bf0f45ce6bb2dba9d0423`, 7,986 characters, and confirmed `REGISTERED / READ-BACK VERIFIED` plus both OPEN gap records.
