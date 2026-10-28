@@ -61,8 +61,8 @@ jobs:
           from urllib.parse import unquote
           root = Path(".")
           sources = {
-              "IN": root / "docs/0.0/anchors/PALANG-0.0-IN-20261028-095-POINT-057-CONFORMANCE-REPAIR.md",
-              "OUT": root / "docs/0.0/anchors/PALANG-0.0-OUT-20261028-094-POINT-057-CONFORMANCE-REPAIR.md",
+              "IN": root / "docs/0.0/anchors/PALANG-0.0-IN-20261028-098-LIVING-MASTER-AND-EXECUTABLE-ZIP.md",
+              "OUT": root / "docs/0.0/anchors/PALANG-0.0-OUT-20261028-097-LIVING-MASTER-AND-EXECUTABLE-ZIP.md",
           }
           expected = {
               "current": "PALANG-0.0-CURRENT-20261028-107-PORTABLE-CONFORMANCE-REPAIR.md",
@@ -89,8 +89,8 @@ jobs:
           for side, path in sources.items():
               content = path.read_text(encoding="utf-8")
               assert "NEXT-051" in content, f"{side} recovery did not preserve the sole active queue"
-              assert "POINT-0/057" in content, f"{side} recovery did not identify current 0+ marker"
-              assert "CURRENT-107" in content, f"{side} recovery did not identify current 0.0 checkpoint"
+              assert "POINT-0/060" in content, f"{side} recovery did not identify current 0+ marker"
+              assert "CURRENT-110" in content, f"{side} recovery did not identify current 0.0 checkpoint"
               assert "NOT VERIFIED" in content or "OPEN" in content, f"{side} recovery did not preserve unresolved gates"
           evidence = {"test_id":"RAHM-IN-OUT-LINK-EQUIVALENCE-107", "result":"PASS", "recovered_from":"IN-095 and OUT-094 independently", "canonical_state":recovered["IN"], "open_gates_preserved":True, "scope":"Only verifies linked target and checkpoint equivalence; it does not reconstruct full state or prove actual independent-host acceptance."}
           Path("rahm-recovery-equivalence.json").write_text(json.dumps(evidence, indent=2)+"\n", encoding="utf-8")
