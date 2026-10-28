@@ -178,7 +178,7 @@ if __name__ == "__main__":
 
 
 class PortablePackageProtocolTests(unittest.TestCase):
-    def test_package_manifest_is_version_038_and_keeps_existing_stable_id(self):
+    def test_package_manifest_is_version_039_and_keeps_existing_stable_id(self):
         package = Path(__file__).parent
         manifest = json.loads((package / "manifest.json").read_text(encoding="utf-8"))
         self.assertEqual(manifest["version"], "0.3.9")
@@ -226,6 +226,9 @@ class PortablePackageProtocolTests(unittest.TestCase):
         self.assertIn("CURRENT-102", manifest["parent_architecture"])
         self.assertIn("POINT-0/053 (0+ marker on canonical root 0)", manifest["parent_architecture"])
         self.assertIn("CURRENT-103", manifest["parent_architecture"])
+        self.assertIn("POINT-0/055 (0+ marker on canonical root 0)", manifest["parent_architecture"])
+        self.assertIn("CURRENT-105", manifest["parent_architecture"])
+        self.assertIn("NEXT-051", manifest["parent_architecture"])
         self.assertIn("INTERACTION-RESPONSE-AND-ANCHOR-PROTOCOL.md", manifest["parent_architecture"])
         self.assertIn("HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md", manifest["parent_architecture"])
         self.assertEqual(manifest["host_acceptance_checklist"], "FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST.md")
