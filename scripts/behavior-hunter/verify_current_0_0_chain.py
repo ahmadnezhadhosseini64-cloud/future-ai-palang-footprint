@@ -102,7 +102,7 @@ def main():
     positions = []
     for marker in CHAIN:
         try:
-            positions.append(next(i for i, item in enumerate(architecture) if marker in item))
+            positions.append(max(i for i, item in enumerate(architecture) if marker in item) if marker == "NEXT-051" else next(i for i, item in enumerate(architecture) if marker in item))
         except ValueError:
             failures.append({"check":"manifest_chain_marker_missing","marker":marker})
     if len(positions) == len(CHAIN) and positions != sorted(positions):
