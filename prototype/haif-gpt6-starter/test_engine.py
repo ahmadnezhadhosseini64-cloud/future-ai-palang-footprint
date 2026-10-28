@@ -188,13 +188,13 @@ class PortablePackageProtocolTests(unittest.TestCase):
         self.assertEqual(manifest["archive_policy"]["current_internal_version"], "0.3.8")
         self.assertEqual(manifest["archive_policy"]["update_mode"], "REBUILD_IN_PLACE_SAME_PACKAGE_IDENTITY")
         chain = manifest["parent_architecture"]
-        self.assertLess(chain.index("POINT-0/055 (0+ marker on canonical root 0)"), chain.index("IN-093"))
-        self.assertLess(chain.index("IN-093"), chain.index("OUT-092"))
-        self.assertLess(chain.index("OUT-092"), chain.index("EVT-0230"))
-        self.assertLess(chain.index("EVT-0230"), chain.index("CURRENT-105"))
+        self.assertLess(chain.index("POINT-0/056 (0+ marker on canonical root 0)"), chain.index("IN-094"))
+        self.assertLess(chain.index("IN-093"), chain.index("OUT-093"))
+        self.assertLess(chain.index("OUT-092"), chain.index("EVT-0231"))
+        self.assertLess(chain.index("EVT-0230"), chain.index("CURRENT-106"))
         self.assertLess(chain.index("CURRENT-105"), chain.index("NEXT-051"))
         self.assertEqual(chain.count("NEXT-051"), 1, "only one canonical active NEXT-051 pointer is allowed")
-        self.assertIn("NEXT-051 (historical queue reference)", chain)
+        self.assertGreaterEqual(chain.count("NEXT-051 (historical queue reference)"), 1)
 
     def test_independent_host_protocol_preserves_acceptance_boundaries(self):
         package = Path(__file__).parent
@@ -227,7 +227,9 @@ class PortablePackageProtocolTests(unittest.TestCase):
         self.assertIn("POINT-0/053 (0+ marker on canonical root 0)", manifest["parent_architecture"])
         self.assertIn("CURRENT-103", manifest["parent_architecture"])
         self.assertIn("POINT-0/055 (0+ marker on canonical root 0)", manifest["parent_architecture"])
+        self.assertIn("POINT-0/056 (0+ marker on canonical root 0)", manifest["parent_architecture"])
         self.assertIn("CURRENT-105", manifest["parent_architecture"])
+        self.assertIn("CURRENT-106", manifest["parent_architecture"])
         self.assertIn("NEXT-051", manifest["parent_architecture"])
         self.assertIn("INTERACTION-RESPONSE-AND-ANCHOR-PROTOCOL.md", manifest["parent_architecture"])
         self.assertIn("HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md", manifest["parent_architecture"])
@@ -286,7 +288,7 @@ class InteractionResponseAnchorProtocolTests(unittest.TestCase):
         self.assertEqual(manifest["archive_policy"]["canonical_filename"], "haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip")
         self.assertIn("actual host integration", protocol.casefold())
         self.assertIn("NOT VERIFIED", protocol)
-        expected_chain = "POINT-0/055 (0+ marker on canonical root 0) → IN-093 → OUT-092 → EVT-0230 → CURRENT-105 → NEXT-051"
+        expected_chain = "POINT-0/056 (0+ marker on canonical root 0) → IN-094 → OUT-093 → EVT-0231 → CURRENT-106 → NEXT-051"
         for filename in (
             "GPT6_HOST_INSTRUCTIONS.md",
             "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md",
