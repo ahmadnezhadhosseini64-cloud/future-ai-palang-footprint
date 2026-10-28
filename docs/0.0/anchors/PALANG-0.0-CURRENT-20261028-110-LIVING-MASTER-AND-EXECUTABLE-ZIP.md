@@ -38,3 +38,16 @@ POINT-0/060 is explicitly highlighted as 0+ on the canonical point-0 line; this 
 5. Run restart/persistence and, if available, second-host tests as separate gates.
 6. Keep CURRENT-065/CURRENT-066, duplicate POINT-0/059 candidates, historical ID/parent/time collisions and NEXT-051 path/body mismatch OPEN until source evidence resolves them.
 7. After this document update, treat the new main HEAD as UNVERIFIED until the existing audit and conformance workflows pass on that exact same SHA. Do not create NEXT-052 or a new master document.
+
+
+## User-confirmed continuation — current conversation point 0
+- User instruction: designate this continuation as point 0 and proceed with the necessary work; confirms the paired ZIP and living master are prepared and must now be made ready for a real-host acceptance test.
+- Keep POINT-0/060 as the historical 0+ highlight; this continuation does not erase or rename it, does not resolve POINT-0/059 collisions, and does not create NEXT-052.
+- Transfer artifacts already built and locally rechecked:
+  - Paired transfer ZIP: `POINT-0-PLUS-PAIRED-TRANSFER.zip`, 173,940 bytes, SHA-256 `da2c86af202ca0197652748dfdb6634b1a7d40ab0f1374f3afacb6875c77a334`.
+  - Inner executable ZIP: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`, 104,005 bytes, SHA-256 `5af61e863560dcc95798b1d482dea77047862208e786447c55d473bdef81e806`.
+  - Living master: version 1.7.34, 251,963 bytes, SHA-256 `b5f24b1f4cc21c96dba9833669c244a6686bca6def2544ad3e6d4df10bd10e02`.
+  - Paired archive inventory read-back confirms exactly these three entries: executable ZIP, living master, and build/verification receipt.
+- Verified boundary: archive presence, recorded hashes, master-in-package byte match, and 23 extracted package tests are repository/package-level evidence only. No independent host has been run from this chat; real-host acceptance remains NOT RUN until raw output is returned from a separate host/session without this conversation history.
+- Immediate execution gate under existing NEXT-051: transfer the paired archive; have the independent host reconstruct state from the package alone; capture raw output and errors; verify IN/OUT reconstruction, negative controls, and restart recovery. Do not mark any gate PASS without its direct evidence.
+- Repository HEAD observed during this continuation: `9668a61af6962afc1353eb8c316afe71878183ea`. Existing audit/conformance successes are for parent SHA `4550fc816c639808ca9b9c4ef9872a1f04294055`; exact-HEAD verification for `9668a61...` is not established by those runs.
