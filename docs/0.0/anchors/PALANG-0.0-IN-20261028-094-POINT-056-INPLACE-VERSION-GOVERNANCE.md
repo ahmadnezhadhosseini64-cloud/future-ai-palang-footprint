@@ -7,6 +7,10 @@
 - Event: [EVT-0231](../../architecture/BEHAVIOR-TRACE/EVT-0231-POINT-056-INPLACE-VERSION-GOVERNANCE-2026-10-28.md)
 - Current: [CURRENT-106](./PALANG-0.0-CURRENT-20261028-106-INPLACE-VERSION-GOVERNANCE.md)
 - Sole active queue: [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
+- Living master: [سند مرجع مادر مدل اولیه هوش مصنوعی](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
+- Independent-host proof protocol: [INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001](../../architecture/مدل%20اولیه%20AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md)
+- Package recovery protocol: [INDEPENDENT_HOST_RECOVERY_PROTOCOL.md](../../../prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md)
+- Package manifest: [manifest.json](../../../prototype/haif-gpt6-starter/manifest.json)
 
 ## Captured requirement
 The user explicitly reaffirmed: do not create a new version number; update the existing version and rebuild the same canonical ZIP. Version remains 0.3.8. Stable package ID and canonical filename must not change. Prior artifact digest is historical only.
