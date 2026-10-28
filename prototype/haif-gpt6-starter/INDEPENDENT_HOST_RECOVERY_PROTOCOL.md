@@ -2,7 +2,7 @@
 
 Package version: 0.3.8
 Project: Future AI / Palang Footprint
-Canonical chain: POINT-0/055 (0+ marker on canonical root 0) → IN-093 → OUT-092 → EVT-0230 → CURRENT-105 → NEXT-051
+Canonical chain: POINT-0/056 (0+ marker on canonical root 0) → IN-094 → OUT-093 → EVT-0231 → CURRENT-106 → NEXT-051
 
 ## Purpose
 Prove that a genuinely separate AI host can reconstruct the project from the package without relying on this chat's hidden history. Repository presence, a CI pass, or a runtime-to-runtime test is not independent-host acceptance.
