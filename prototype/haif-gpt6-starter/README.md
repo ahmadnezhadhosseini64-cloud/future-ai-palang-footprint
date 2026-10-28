@@ -84,5 +84,5 @@ The v0.3.4 archive is historical verified evidence. Version 0.3.5 is source-only
 - Historical v0.3.7 receipt remains preserved: run [40546488170](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40546488170), 30,573 bytes, SHA-256 `fcc09933dd67ca1300af051e14dbcf80c76b6f620dc6c9623323caca307969fb`.
 - The test-only source change after the earlier v0.3.7 receipt changed the packaged ZIP bytes without advancing the internal version. This is an in-place update of the existing internal version 0.3.8, retaining the same package identity and canonical ZIP filename.
 - Previous v0.3.8 build receipt is historical evidence only; the in-place v0.3.8 rebuild receipt is PENDING until the fresh exact-head workflow completes and its downloaded ZIP is inspected.
-- Current recovery chain: POINT-0/056 (0+ marker on canonical root 0) → IN-094 → OUT-093 → EVT-0231 → CURRENT-106 → NEXT-051.
+- Current recovery chain: POINT-0/057 (0+ marker on canonical root 0) → IN-095 → OUT-094 → EVT-0232 → CURRENT-107 → NEXT-051.
 - Real independent-host acceptance remains NOT RUN.
