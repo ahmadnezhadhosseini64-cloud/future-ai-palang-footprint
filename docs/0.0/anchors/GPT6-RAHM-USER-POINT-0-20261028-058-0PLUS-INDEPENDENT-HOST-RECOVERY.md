@@ -5,11 +5,11 @@
 - Type: 0+ marker on canonical root 0; not a replacement root.
 - Project: Future AI / Palang Footprint — HAIF
 - Previous verified checkpoint: CURRENT-107
-- Input: IN-096
-- Output: OUT-095
-- Event: EVT-0233
-- Current checkpoint: CURRENT-108
-- Sole active queue: NEXT-051
+- Input: [IN-096](./PALANG-0.0-IN-20261028-096-POINT-058-INDEPENDENT-HOST-RECOVERY.md)
+- Output: [OUT-095](./PALANG-0.0-OUT-20261028-095-POINT-058-INDEPENDENT-HOST-RECOVERY.md)
+- Event: [EVT-0233](../../architecture/BEHAVIOR-TRACE/EVT-0233-POINT-058-INDEPENDENT-HOST-RECOVERY-2026-10-28.md)
+- Current checkpoint: [CURRENT-108](./PALANG-0.0-CURRENT-20261028-108-INDEPENDENT-HOST-RECOVERY.md)
+- Sole active queue: [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
 - Package Stable ID: HAIF-GPT6-PORTABLE-STARTER-20261025-004
 - Fixed canonical ZIP name: haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip
 - Internal package version: 0.3.8 (do not increment in this work)
