@@ -20,3 +20,14 @@ User correction: prior assistant replies appeared to be reports rather than actu
 - Run current-main audit and portable conformance against the exact same candidate SHA.
 - External-host import and restart recovery require direct host evidence; keep OPEN until received.
 - All collision history and 0+ highlights remain preserved.
+
+
+## Current recovery links (continuity contract)
+- Checkpoint: [CURRENT-110](./PALANG-0.0-CURRENT-20261028-110-LIVING-MASTER-AND-EXECUTABLE-ZIP.md)
+- Sole active queue: [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
+- Living master: [canonical living master](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20مدل%20اولیه%20هوش%20مصنوعی.md)
+- Host recovery protocol: [INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md](../../reference/REFERENCE-DOCUMENTS/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md)
+- Package recovery protocol: [INDEPENDENT_HOST_RECOVERY_PROTOCOL.md](../../../prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md)
+- Export manifest: [EXPORT_MANIFEST.json](../../portable/RAHM/EXPORT_MANIFEST.json)
+
+These links preserve repository-level recoverability only. External-host import, negative-control, restart, persistent memory, Buffer, Dropbox, automatic capture and background execution remain OPEN / NOT VERIFIED until direct evidence exists.
