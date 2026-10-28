@@ -281,3 +281,16 @@ class InteractionResponseAnchorProtocolTests(unittest.TestCase):
         self.assertEqual(manifest["archive_policy"]["canonical_filename"], "haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip")
         self.assertIn("actual host integration", protocol.casefold())
         self.assertIn("NOT VERIFIED", protocol)
+        expected_chain = "POINT-0/055 (0+ marker on canonical root 0) → IN-093 → OUT-092 → EVT-0230 → CURRENT-105 → NEXT-051"
+        for filename in (
+            "GPT6_HOST_INSTRUCTIONS.md",
+            "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md",
+            "INTERACTION-RESPONSE-AND-ANCHOR-PROTOCOL.md",
+            "HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md",
+        ):
+            text = (root / filename).read_text(encoding="utf-8")
+            self.assertIn(expected_chain, text, filename)
+            self.assertIn("0.3.9", text, filename)
+        readme = (root / "README.md").read_text(encoding="utf-8")
+        self.assertIn("v0.3.9", readme)
+        self.assertIn("v0.3.9 artifact receipt: PENDING", readme)
