@@ -35,8 +35,8 @@ A GPT chat instruction or uploaded knowledge file cannot, by itself, create dura
 
 ## Startup / recovery sequence
 1. Read this file, manifest.json, and INDEPENDENT_HOST_RECOVERY_PROTOCOL.md.
-2. Import the current living master reference from the included `LIVING_MASTER_REFERENCE.md` companion. Verify its freshness against the canonical repository before treating it as latest.
-3. Retrieve and compare `LIVING_MASTER_REFERENCE.md` against the repository's canonical living master, then retrieve the latest verified CURRENT checkpoint (CURRENT-107 for this package-update chain), NEXT-051, the 0.0 index and Reference Index. Preserve CURRENT-065/CURRENT-066 ambiguity unless source evidence resolves it.
+2. Import the included `LIVING_MASTER_REFERENCE.md` and run `INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md`. Verify master freshness and execute positive, negative-anchor and fresh-session tests; report any unavailable test as NOT RUN.
+3. Retrieve and compare `LIVING_MASTER_REFERENCE.md` against the repository's canonical living master, then retrieve the latest verified CURRENT checkpoint (CURRENT-108 for this package-update chain), NEXT-051, the 0.0 index and Reference Index. Preserve CURRENT-065/CURRENT-066 ambiguity unless source evidence resolves it.
 3. Run the repository pointer checker. Preserve AMBIGUOUS results.
 4. Load the latest verified portable state bundle if available; verify SHA-256 before trusting it.
 5. Resume the first open acceptance gate. Do not create a new planning document instead of executing a gate.
