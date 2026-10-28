@@ -63,7 +63,7 @@ def main():
     docs = {key: read(key) for key in FILES}
     failures = []
     expected_links = {
-        "point": [("in", "PALANG-0.0-IN-20261028-096"), ("out", "PALANG-0.0-OUT-20261028-096"),
+        "point": [("in", "PALANG-0.0-IN-20261028-097"), ("out", "PALANG-0.0-OUT-20261028-096"),
                   ("event", "EVT-0235-POINT-059"), ("current", "PALANG-0.0-CURRENT-20261028-109"), ("next", "PALANG-0.0-NEXT-20261024-051")],
         "in": [("out", "PALANG-0.0-OUT-20261028-096"), ("event", "EVT-0235-POINT-059"),
                ("current", "PALANG-0.0-CURRENT-20261028-109"), ("next", "PALANG-0.0-NEXT-20261024-051")],
