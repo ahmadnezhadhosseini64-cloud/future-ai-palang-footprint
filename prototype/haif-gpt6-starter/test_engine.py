@@ -189,10 +189,10 @@ class PortablePackageProtocolTests(unittest.TestCase):
         self.assertEqual(manifest["archive_policy"]["update_mode"], "REBUILD_IN_PLACE_SAME_PACKAGE_IDENTITY")
         chain = manifest["parent_architecture"]
         self.assertLess(chain.index("POINT-0/056 (0+ marker on canonical root 0)"), chain.index("IN-094"))
-        self.assertLess(chain.index("IN-093"), chain.index("OUT-093"))
-        self.assertLess(chain.index("OUT-092"), chain.index("EVT-0231"))
-        self.assertLess(chain.index("EVT-0230"), chain.index("CURRENT-106"))
-        self.assertLess(chain.index("CURRENT-105"), chain.index("NEXT-051"))
+        self.assertLess(chain.index("IN-094"), chain.index("OUT-093"))
+        self.assertLess(chain.index("OUT-093"), chain.index("EVT-0231"))
+        self.assertLess(chain.index("EVT-0231"), chain.index("CURRENT-106"))
+        self.assertLess(chain.index("CURRENT-106"), chain.index("NEXT-051"))
         self.assertEqual(chain.count("NEXT-051"), 1, "only one canonical active NEXT-051 pointer is allowed")
         self.assertGreaterEqual(chain.count("NEXT-051 (historical queue reference)"), 1)
 
@@ -260,8 +260,8 @@ class HostGrowthRepositoryContractTests(unittest.TestCase):
         manifest = json.loads((root / "manifest.json").read_text(encoding="utf-8"))
         protocol = (root / "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md").read_text(encoding="utf-8")
         self.assertIn(f"Package version: {manifest['version']}", protocol)
-        self.assertIn("POINT-0/053", protocol)
-        self.assertIn("CURRENT-103", protocol)
+        self.assertIn("POINT-0/056", protocol)
+        self.assertIn("CURRENT-106", protocol)
 
     def test_package_manifest_version_and_identity_remain_continuous(self):
         root = Path(__file__).parent
@@ -300,6 +300,6 @@ class InteractionResponseAnchorProtocolTests(unittest.TestCase):
             self.assertIn("0.3.8", text, filename)
         readme = (root / "README.md").read_text(encoding="utf-8")
         self.assertIn("v0.3.8", readme)
-        self.assertIn("v0.3.8 in-place rebuild receipt: PENDING", readme)
+        self.assertIn("in-place v0.3.8 rebuild receipt is PENDING", readme)
         self.assertIn("Previous verified v0.3.8 build receipt", readme)
         self.assertIn(expected_chain, readme)
