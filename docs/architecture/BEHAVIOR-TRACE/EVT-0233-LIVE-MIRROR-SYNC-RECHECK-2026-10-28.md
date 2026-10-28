@@ -60,3 +60,10 @@ This event registers the current source/Library comparison and its observed evid
 ## Event-file registration read-back
 - Initial event creation commit: `87097d23fbe4492fb58343168fde093e08ad9d7b`; commit UTC `2026-10-28T06:19:31Z`; derived Tehran `2026-10-28T09:49:31+03:30`. This is the initial creation commit, not the final last-change time after this status reconciliation.
 - Independent fetch of the exact event path returned the complete 6,536-character event body and confirmed the Stable ID, source blob, Library version, time-binding path, root/checkpoint/queue links and open status boundaries. The final event last-change commit is recorded separately in the time-binding file.
+
+
+## Active NEXT path integrity observation — OPEN
+- Independently fetched the exact active NEXT path `docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md` through both the repository contents endpoint and raw GitHub path.
+- The returned body begins with the Integration Queue title and Stable ID `ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001`, and identifies itself as Version 1.10.3 with a stale POINT-0/053 → CURRENT-103 header. It is a 262,950-character queue-like snapshot, not a task-specific NEXT-051 action document.
+- The canonical `docs/architecture/INTEGRATION-QUEUE/README.md` is separately present at Version 1.10.5 and declares POINT-0/056 → CURRENT-106 in its header, while the latest living master and CURRENT-107 declare POINT-0/057 → CURRENT-107. These pointers require reconciliation; do not select or reconstruct the NEXT-051 body by inference.
+- Disposition: OPEN / SOURCE-BACKED RECOVERY REQUIRED. Preserve the current file and its history. Next deterministic action: inspect path-specific Git history and prior blobs for NEXT-051, compare the original task body with current queue/master/index evidence, and only then repair or explicitly quarantine the stale snapshot. NEXT-051 remains the single active queue label; no NEXT-052 is created.
