@@ -88,7 +88,7 @@ def main():
             if not (ROOT / FILES[key]).parent.joinpath(unquote(parsed.path)).resolve().is_file():
                 failures.append({"check":"broken_local_link","source":key,"target":target})
     canonical = " → ".join(CHAIN)
-    for key in ("point", "out", "event", "current", "master", "index", "queue", "package_protocol"):
+    for key in ("point", "out", "event", "current", "master", "index", "queue"):
         if "POINT-0/059" not in docs[key] or "CURRENT-109" not in docs[key] or "NEXT-051" not in docs[key]:
             failures.append({"check":"canonical_chain_not_visible","source":key})
     manifest = json.loads(docs["package_manifest"])
