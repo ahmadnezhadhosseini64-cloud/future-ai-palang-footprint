@@ -51,3 +51,13 @@ POINT-0/060 is explicitly highlighted as 0+ on the canonical point-0 line; this 
 - Verified boundary: archive presence, recorded hashes, master-in-package byte match, and 23 extracted package tests are repository/package-level evidence only. No independent host has been run from this chat; real-host acceptance remains NOT RUN until raw output is returned from a separate host/session without this conversation history.
 - Immediate execution gate under existing NEXT-051: transfer the paired archive; have the independent host reconstruct state from the package alone; capture raw output and errors; verify IN/OUT reconstruction, negative controls, and restart recovery. Do not mark any gate PASS without its direct evidence.
 - Repository HEAD observed during this continuation: `9668a61af6962afc1353eb8c316afe71878183ea`. Existing audit/conformance successes are for parent SHA `4550fc816c639808ca9b9c4ef9872a1f04294055`; exact-HEAD verification for `9668a61...` is not established by those runs.
+
+
+## POINT-0+ HIGHLIGHT — TRANSFER PACKAGE IDENTITY AND USER INSTRUCTION
+- User instruction recorded: for future requests phrased as “نسخه زیپ قابل انتقال به میزبان” or “سند مادر قابل انتقال به میزبان”, return the already prepared canonical paired transfer package identified below; do not substitute an arbitrary ZIP or a documentation-only artifact.
+- Canonical paired transfer ZIP: `/mnt/data/palang_point0plus_transfer/POINT-0-PLUS-PAIRED-TRANSFER.zip`
+- Paired ZIP SHA-256: `da2c86af202ca0197652748dfdb6634b1a7d40ab0f1374f3afacb6875c77a334`; size 173,940 bytes.
+- Contents: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip` (SHA-256 `5af61e863560dcc95798b1d482dea77047862208e786447c55d473bdef81e806`); `سند-مرجع-مادر-مدل-اولیه-هوش-مصنوعی.md` (version 1.7.34; SHA-256 `b5f24b1f4cc21c96dba9833669c244a6686bca6def2544ad3e6d4df10bd10e02`); and `رسید-ساخت-و-راستی‌آزمایی.json` (SHA-256 `9a725b724483b4defebff903bd2a46ed1cd71d4407c2bd37e52dc89b13fc6eb7`).
+- Previous extracted-package test receipt: 23 tests passed. This is package-local evidence only; it does not establish independent-host acceptance, persistence after restart, or verification against any repository HEAD created after the tested build.
+- Anchor semantics: this user turn is designated **POINT-0+** because it highlights the stable identity and retrieval rule for the transferable ZIP + master document. Preserve the existing chain and the prior POINT-0/060 highlight; do not create NEXT-052. Existing NEXT-051 remains the active queue item.
+- Status: package identity and retrieval rule recorded here; external host import/acceptance remains **NOT RUN / OPEN** until a separate host returns raw, inspectable evidence.
