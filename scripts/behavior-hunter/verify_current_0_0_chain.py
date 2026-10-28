@@ -63,17 +63,17 @@ def main():
     docs = {key: read(key) for key in FILES}
     failures = []
     expected_links = {
-        "point": [("in", "PALANG-0.0-IN-20261028-095"), ("out", "PALANG-0.0-OUT-20261028-094"),
-                  ("event", "EVT-0233-POINT-057"), ("current", "PALANG-0.0-CURRENT-20261028-107"), ("next", "PALANG-0.0-NEXT-20261024-051")],
-        "in": [("out", "PALANG-0.0-OUT-20261028-094"), ("event", "EVT-0233-POINT-057"),
-               ("current", "PALANG-0.0-CURRENT-20261028-107"), ("next", "PALANG-0.0-NEXT-20261024-051")],
-        "out": [("in", "PALANG-0.0-IN-20261028-095"), ("event", "EVT-0233-POINT-057"),
-                ("current", "PALANG-0.0-CURRENT-20261028-107"), ("next", "PALANG-0.0-NEXT-20261024-051")],
-        "event": [("point", "GPT6-RAHM-USER-POINT-0-20261028-057"), ("in", "PALANG-0.0-IN-20261028-095"),
-                  ("out", "PALANG-0.0-OUT-20261028-094"), ("current", "PALANG-0.0-CURRENT-20261028-107"),
+        "point": [("in", "PALANG-0.0-IN-20261028-096"), ("out", "PALANG-0.0-OUT-20261028-095"),
+                  ("event", "EVT-0233-POINT-058"), ("current", "PALANG-0.0-CURRENT-20261028-108"), ("next", "PALANG-0.0-NEXT-20261024-051")],
+        "in": [("out", "PALANG-0.0-OUT-20261028-095"), ("event", "EVT-0233-POINT-058"),
+               ("current", "PALANG-0.0-CURRENT-20261028-108"), ("next", "PALANG-0.0-NEXT-20261024-051")],
+        "out": [("in", "PALANG-0.0-IN-20261028-096"), ("event", "EVT-0233-POINT-058"),
+                ("current", "PALANG-0.0-CURRENT-20261028-108"), ("next", "PALANG-0.0-NEXT-20261024-051")],
+        "event": [("point", "GPT6-RAHM-USER-POINT-0-20261028-058"), ("in", "PALANG-0.0-IN-20261028-096"),
+                  ("out", "PALANG-0.0-OUT-20261028-095"), ("current", "PALANG-0.0-CURRENT-20261028-108"),
                   ("next", "PALANG-0.0-NEXT-20261024-051")],
-        "current": [("point", "GPT6-RAHM-USER-POINT-0-20261028-057"), ("in", "PALANG-0.0-IN-20261028-095"),
-                    ("out", "PALANG-0.0-OUT-20261028-094"), ("event", "EVT-0233-POINT-057"),
+        "current": [("point", "GPT6-RAHM-USER-POINT-0-20261028-058"), ("in", "PALANG-0.0-IN-20261028-096"),
+                    ("out", "PALANG-0.0-OUT-20261028-095"), ("event", "EVT-0233-POINT-058"),
                     ("next", "PALANG-0.0-NEXT-20261024-051")],
     }
     for source, checks in expected_links.items():
