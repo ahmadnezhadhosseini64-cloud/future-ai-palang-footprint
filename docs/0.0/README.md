@@ -6,6 +6,12 @@
 
 این زنجیره درخواست کاربر را به اجرای واقعی سند مادر و بستهٔ موجود متصل می‌کند. ثبت زنجیره به معنی ساخت ZIP جدید یا پذیرش میزبان نیست؛ این دو نیازمند رسید مستقل‌اند. تعارض دو ریشهٔ POINT-0/059 عمداً حل‌نشده باقی می‌ماند.
 
+## تازه‌ترین زنجیره — POINT-0/060 → CURRENT-110
+
+[POINT-0/060](anchors/GPT6-RAHM-USER-POINT-0-20261028-060-LIVING-MASTER-AND-EXECUTABLE-ZIP.md) → [IN-098](anchors/PALANG-0.0-IN-20261028-098-LIVING-MASTER-AND-EXECUTABLE-ZIP.md) → [OUT-097](anchors/PALANG-0.0-OUT-20261028-097-LIVING-MASTER-AND-EXECUTABLE-ZIP.md) → [EVT-0237](../architecture/BEHAVIOR-TRACE/EVT-0237-POINT-060-LIVING-MASTER-AND-EXECUTABLE-ZIP-2026-10-28.md) → [CURRENT-110](anchors/PALANG-0.0-CURRENT-20261028-110-LIVING-MASTER-AND-EXECUTABLE-ZIP.md) → [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+
+این زنجیره درخواست کاربر را به اجرای واقعی سند مادر و بستهٔ موجود متصل می‌کند. ثبت زنجیره به معنی ساخت ZIP جدید یا پذیرش میزبان نیست؛ این دو نیازمند رسید مستقل‌اند. تعارض دو ریشهٔ POINT-0/059 عمداً حل‌نشده باقی می‌ماند.
+
 ## آخرین زنجیرهٔ فعال — CURRENT-109
 
 نقطهٔ جاری: [POINT-0/059](anchors/GPT6-RAHM-USER-POINT-0-20261028-059-REPOSITORY-PERSISTENCE-REPAIR.md) → [IN-097](anchors/PALANG-0.0-IN-20261028-097-POINT-059-REPOSITORY-PERSISTENCE-REPAIR.md) → [OUT-096](anchors/PALANG-0.0-OUT-20261028-096-POINT-059-REPOSITORY-PERSISTENCE-REPAIR.md) → [EVT-0235](../architecture/BEHAVIOR-TRACE/EVT-0235-POINT-059-REPOSITORY-PERSISTENCE-REPAIR-2026-10-28.md) → [CURRENT-109](anchors/PALANG-0.0-CURRENT-20261028-109-REPOSITORY-PERSISTENCE-REPAIR.md) → [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
