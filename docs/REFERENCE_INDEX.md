@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-27 — POINT-0/054 (0+ marker on canonical root 0) → IN-092 → OUT-091 → EVT-0229 → CURRENT-104 → NEXT-051; v0.3.8 canonical ZIP verified (31,487 bytes; SHA-256 7b9d6df16f4423e3c448c3720cbb8ce95205fc2322b1194511c0b722d4e6205b; 23/23 tests); prior chain files IN-091 / OUT-090 / CURRENT-103 missing; Living Architecture and Evidence Gate failures on exact commit 730473d6e9fab01b2404d81f897857712b47bd29 remain OPEN; real-host acceptance OPEN.
+**Last Updated:** 2026-10-28 — POINT-0/055 (0+ marker on canonical root 0) → IN-093 → OUT-092 → EVT-0230 → CURRENT-105 → NEXT-051. Starter source is internally advanced to v0.3.9 with manifest, host/recovery documents and regression assertions aligned; exact-head CI and the v0.3.9 ZIP receipt remain PENDING. Last verified ZIP is v0.3.8 (run 40549743811; 31,487 bytes; SHA-256 7b9d6df16f4423e3c448c3720cbb8ce95205fc2322b1194511c0b722d4e6205b; 23/23 tests). Missing prior chain provenance, historic audit failures, identifier collisions and real-host acceptance remain OPEN.
 
 ## Canonical References
 
