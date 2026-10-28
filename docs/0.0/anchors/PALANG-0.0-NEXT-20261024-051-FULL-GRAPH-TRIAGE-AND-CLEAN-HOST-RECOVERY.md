@@ -10,7 +10,7 @@
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: POINT-0/058 (0+) is the current production marker on canonical root 0; CURRENT-108 is the active 0.0 continuation. The same starter Stable ID and canonical ZIP filename remain fixed. Latest verified v0.3.7 archive receipt is run 40546488170 (30,573 bytes; SHA-256 fcc09933dd67ca1300af051e14dbcf80c76b6f620dc6c9623323caca307969fb; 23/23 tests). Source version 0.3.8 is pending fresh artifact read-back. Duplicate numbered graph records POINT-0/045, CURRENT-095, IN-083, OUT-082 and EVT-0220 remain OPEN. Real independent-host import remains NOT RUN; NEXT-051 remains the single active queue; no NEXT-052 placeholder.
+- Status: POINT-0/058 (0+) is the current production marker on canonical root 0; CURRENT-108 is the active 0.0 continuation. The same starter Stable ID and canonical ZIP filename remain fixed. Latest verified v0.3.7 archive receipt is run 40546488170 (30,573 bytes; SHA-256 fcc09933dd67ca1300af051e14dbcf80c76b6f620dc6c9623323caca307969fb; 23/23 tests). Source version 0.3.8 is read-back verified: run 40644355767, 101,556 bytes, SHA-256 `330f6aab2f2b98959f1155099d20d344b20448cbdceaf2b765dce5a25f842177`, 13 files, 23/23 extracted tests. Independent-host acceptance remains NOT RUN. Duplicate numbered graph records POINT-0/045, CURRENT-095, IN-083, OUT-082 and EVT-0220 remain OPEN. Real independent-host import remains NOT RUN; NEXT-051 remains the single active queue; no NEXT-052 placeholder.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
