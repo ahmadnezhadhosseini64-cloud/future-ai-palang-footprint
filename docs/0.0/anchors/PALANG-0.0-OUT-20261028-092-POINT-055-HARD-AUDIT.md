@@ -2,7 +2,7 @@
 
 - Stable ID: HAIF-OUT-092-POINT-055-HARD-AUDIT-20261028
 - Parent: IN-093
-- Status: AUDIT RESULT RECORDED; READ-BACK REQUIRED; GAPS OPEN
+- Status: AUDIT RESULT RECORDED / READ-BACK VERIFIED / GAPS OPEN
 
 ## Confirmed
 - Same canonical package identity: HAIF-GPT6-PORTABLE-STARTER-20261025-004.
@@ -20,3 +20,14 @@
 
 ## Architecture balance judgment
 The repository has a real portable package and CI conformance evidence. The design direction matches transferable, recoverable and growth-controlled HAIF goals, but end-to-end operational continuity is not yet proven. Do not promote CI evidence to host acceptance. Do not close any open gate without direct evidence. NEXT-051 remains the sole active queue.
+
+## Canonical recovery links
+
+- Current checkpoint: [CURRENT-105](./PALANG-0.0-CURRENT-20261028-105-ARCHITECTURE-ZIP-MASTER-HARD-AUDIT.md)
+- Sole active queue: [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
+- Living master: [سند مرجع مادر](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
+- Repository host-recovery proof protocol: [INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL](../../architecture/مدل%20اولیه%20AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md)
+- Packaged independent-host recovery protocol: [INDEPENDENT_HOST_RECOVERY_PROTOCOL.md](../../../prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md)
+- Portable export manifest: [EXPORT_MANIFEST.json](../../portable/RAHM/EXPORT_MANIFEST.json)
+
+These links identify recovery sources only. They do not prove a clean external host has imported the package or persisted state after restart.
