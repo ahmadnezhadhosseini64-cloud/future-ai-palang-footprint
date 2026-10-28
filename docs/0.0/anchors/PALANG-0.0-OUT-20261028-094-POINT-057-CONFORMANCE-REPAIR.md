@@ -24,3 +24,12 @@
 These successful receipts belong to the commits explicitly named above, not automatically to later commits. After POINT-0/057 is integrated, rerun both workflows on the exact resulting HEAD and record the final ZIP receipt. Real external AI-host import, second-host acceptance, restart persistence, automatic message capture and authorized repository write-back remain OPEN / NOT RUN.
 
 - Status: SOURCE FIXES APPLIED; PRIOR EXACT-COMMIT BUILDS VERIFIED; CURRENT-HEAD STATUS IS RESOLVED FROM THE LATEST WORKFLOW RUN.
+
+
+## Successful exact-source-commit receipt — 2026-10-28
+- Portable Conformance: [run 40635832753](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40635832753) — SUCCESS on source commit `a5924a4aaac9521dc5f1f79a636b0e0f6d74b7ed`.
+- Living Architecture Audit: [run 40635832696](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40635832696) — SUCCESS on the same commit.
+- Canonical starter ZIP: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`; internal version `0.3.8`; Stable ID `HAIF-GPT6-PORTABLE-STARTER-20261025-004`; bytes `32235`; SHA-256 `6ef2a5b0eab4c527db6f47ad8ef330f9854e692cd02fc3b2a02298636fa5bb78`; 11 files.
+- ZIP integrity PASS; exact extracted-source byte match PASS; 23/23 tests executed from the extracted ZIP PASS; artifact round-trip/download digest PASS. The artifact was downloaded from GitHub Actions and independently checked in a clean temporary extraction in this session.
+- RAHM portable archive: 195 files; 770,968 bytes; SHA-256 `bc62f930993fabdd9c860589af3308e76edce7ce2f4b84b98e77405796b43dd1`; exact-byte SHA-256 scan PASS; live-reference SHA-256 scan PASS.
+- These receipts prove the package/repository conformance scope at the stated source commit. They do **not** prove acceptance by a real independent AI host, second-host import, persistent memory across restart, automatic live capture, authorized repository write-back, or background execution; those gates remain OPEN / NOT RUN.
