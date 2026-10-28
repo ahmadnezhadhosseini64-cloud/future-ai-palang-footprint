@@ -2,7 +2,7 @@
 
 Package version: 0.3.8
 Project: Future AI / Palang Footprint
-Canonical chain: POINT-0/057 (0+ marker on canonical root 0) → IN-095 → OUT-094 → EVT-0232 → CURRENT-107 → NEXT-051
+Canonical chain: POINT-0/058 (0+ marker on canonical root 0) → IN-096 → OUT-095 → EVT-0233 → CURRENT-108 → NEXT-051
 
 ## Purpose
 Prove that a genuinely separate AI host can reconstruct the project from the package without relying on this chat's hidden history. Repository presence, a CI pass, or a runtime-to-runtime test is not independent-host acceptance.
@@ -37,7 +37,7 @@ The deliverable is the existing starter package continuously updated under the c
 
 
 ## Paired transfer requirement
-The receiving GPT-6 host must receive this canonical ZIP, which includes a build-time snapshot named `LIVING_MASTER_REFERENCE.md`, and compare that snapshot with the current repository living master. The mother is the governing architecture; this ZIP is the portable starter. Uploading both is a transfer attempt, not proof of successful import. Record direct host receipts and keep restart/persistence as separate gates.
+The receiving GPT-6 host must receive this canonical ZIP, which includes a build-time snapshot named `LIVING_MASTER_REFERENCE.md` and `INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md`; use the prompt to run positive, negative-anchor and fresh-session tests, and compare the snapshot with the current repository living master. The mother is the governing architecture; this ZIP is the portable starter. Uploading both is a transfer attempt, not proof of successful import. Record direct host receipts and keep restart/persistence as separate gates.
 
 
 ## First GPT-6 host integration gate
