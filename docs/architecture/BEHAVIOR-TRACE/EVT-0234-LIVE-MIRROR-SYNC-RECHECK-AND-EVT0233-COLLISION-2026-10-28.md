@@ -4,7 +4,7 @@
 - Production ID: `PALANG-EVT0234-2026-10-28-001`
 - Test ID: `LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001`
 - Version: 1.0.0
-- Status: REGISTERED / READ-BACK VERIFICATION REQUIRED until this file and its time binding are independently fetched.
+- Status: REGISTERED / READ-BACK VERIFIED for the event file and source/Library comparison; collision and active-NEXT gaps remain OPEN.
 - Canonical source: [LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md](../BEHAVIOR-OBSERVATORY/LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md)
 - Library mirror: `/Future AI/Palang Footprint/Master Reference Vault/Reference Documents/LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md`
 - Stable Library ID: `libfile_7ac3c9a6ec14819198eb2751e204aa48`
@@ -56,3 +56,8 @@ Two different files currently carry the EVT-0233 event number:
 - Dropbox: OPEN / NOT VERIFIED.
 - External end-to-end / independent-host recovery: NOT RUN unless direct raw host evidence is independently supplied.
 - Keep Route A (portable transfer and actual host acceptance) and Route B (historical source/rule census and graph reconciliation) separate but linked under MASTER/RAHM/CHILD. Continue BOART-FOLLOWUP-01 → 02 → 03, Issue #20, Issue #21 and NEXT-051.
+
+
+## Event-file read-back receipt
+- Independent fetch of this exact event path returned the complete 7,460-character event file and confirmed the Stable ID, source blob, Library version/tolerance result, POINT-0/058 → CURRENT-108 → NEXT-051 chain, EVT-0233 collision, NEXT-051 path-integrity gap and open destination statuses.
+- Read-back blob at this check: `ca294cdec6340db6be92ae82c3b5e415d8b5ff0f`. The final event last-change commit is recorded in TIME-BINDING-EVT-0234 after this status reconciliation.
