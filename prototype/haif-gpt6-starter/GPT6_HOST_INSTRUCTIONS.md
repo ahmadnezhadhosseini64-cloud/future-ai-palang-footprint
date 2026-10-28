@@ -49,7 +49,7 @@ A GPT chat instruction or uploaded knowledge file cannot, by itself, create dura
 - Keep candidates in Child until RAHM validation and explicit approval. Refresh the same canonical ZIP plus the current living mother; verify the digest in the receiving host.
 
 ## Current 0+ / 0.0 recovery pointer (v0.3.8)
-- Current chain: POINT-0/058 (0+ marker on canonical root 0) → IN-096 → OUT-095 → EVT-0233 → CURRENT-108 → NEXT-051.
+- Current chain: POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-110 → NEXT-051.
 - Canonical ZIP filename and stable package ID remain unchanged; the earlier v0.3.8 receipt is historical; the latest in-place updated v0.3.8 ZIP receipt is tracked by the exact-head Portable Conformance workflow; verify the receipt bundled with the downloaded artifact.
 - Known unresolved graph collisions: POINT-0/045, IN-083, OUT-082, EVT-0220 and CURRENT-095 each have multiple same-numbered files in the current slice. Preserve them; do not choose/merge/renumber without provenance evidence.
 
