@@ -8,6 +8,9 @@
 - Sole active queue: NEXT-051. Do not create NEXT-052.
 - Status: ACTIVE / LIVING / EXECUTION REQUIRED. Repository records are not product acceptance.
 
+## User-designated 0+ marker
+POINT-0/060 is explicitly highlighted as 0+ on the canonical point-0 line; this is not a second root. All earlier points and 0+ markers remain preserved.
+
 ## Verified source baseline before this continuation
 - Main HEAD: dc5fbc866e962ebc4a3835326082b1831832c6e6; exact-head audit/conformance NOT VERIFIED.
 - Living master source: docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md; version 1.7.31.
