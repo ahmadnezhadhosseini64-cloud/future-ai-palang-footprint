@@ -2384,3 +2384,8 @@ NEXT-051 remains the sole active queue. Do not create NEXT-052.
 
 - Active chain: [POINT-0/057 (0+)](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261028-057-0PLUS-PORTABLE-CONFORMANCE-REPAIR.md) → [IN-095](../../0.0/anchors/PALANG-0.0-IN-20261028-095-POINT-057-CONFORMANCE-REPAIR.md) → [OUT-094](../../0.0/anchors/PALANG-0.0-OUT-20261028-094-POINT-057-CONFORMANCE-REPAIR.md) → [EVT-0232](../BEHAVIOR-TRACE/EVT-0232-POINT-057-PORTABLE-CONFORMANCE-REPAIR-2026-10-28.md) → [CURRENT-107](../../0.0/anchors/PALANG-0.0-CURRENT-20261028-107-PORTABLE-CONFORMANCE-REPAIR.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - NEXT-051 remains the sole active queue; no NEXT-052. Version 0.3.8 and the canonical ZIP identity do not change. Exact-head final rebuild/read-back and external-host proof remain pending/open respectively.
+
+
+## Evidence update — CURRENT-107 artifact verification (2026-10-28)
+
+Package build/read-back is verified on source commit `a5924a4aaac9521dc5f1f79a636b0e0f6d74b7ed`: canonical ZIP 32,235 bytes, SHA-256 `6ef2a5b0eab4c527db6f47ad8ef330f9854e692cd02fc3b2a02298636fa5bb78`, 11 files, 23/23 extracted tests PASS. Both [Portable Conformance](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40635832753) and [Living Architecture Audit](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40635832696) succeeded. No new queue item is created; NEXT-051 remains the sole active queue because real external-host acceptance and persistence gates are still OPEN.
