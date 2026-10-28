@@ -6,26 +6,35 @@
 - Output: [OUT-097](./PALANG-0.0-OUT-20261028-097-LIVING-MASTER-AND-EXECUTABLE-ZIP.md)
 - Event: [EVT-0237](../../architecture/BEHAVIOR-TRACE/EVT-0237-POINT-060-LIVING-MASTER-AND-EXECUTABLE-ZIP-2026-10-28.md)
 - Sole active queue: NEXT-051. Do not create NEXT-052.
-- Status: ACTIVE / LIVING / EXECUTION REQUIRED. Repository records are not product acceptance.
+- Status: ACTIVE / LIVING. Transfer package verified for the recorded source SHA; independent-host acceptance remains NOT RUN.
 
 ## User-designated 0+ marker
-POINT-0/060 is explicitly highlighted as 0+ on the canonical point-0 line; this is not a second root. All earlier points and 0+ markers remain preserved.
+POINT-0/060 is explicitly highlighted as 0+ on the canonical point-0 line; this is not a second root. This continuation preserves all earlier points, collisions, parent relations, and open gaps. No new master document or parallel queue is created.
 
-## Verified source baseline before this continuation
-- Main HEAD: dc5fbc866e962ebc4a3835326082b1831832c6e6; exact-head audit/conformance NOT VERIFIED.
-- Living master source: docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md; version 1.7.31.
-- Existing package source: prototype/haif-gpt6-starter/; internal version 0.3.8; stable package ID HAIF-GPT6-PORTABLE-STARTER-20261025-004.
-- Canonical archive filename: haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip.
-- Previously recorded bundled master: 1.7.24; current pairing is NOT VERIFIED.
-- Latest observed checkpoint before this new chain: CURRENT-109. Preserve its chain and all earlier points.
+## Latest exact-source build receipt — verified for SHA 76406271
+- Repository HEAD at build: `76406271ab5ce0624bb22eec0457826e7e987c41`.
+- Portable RAHM Conformance: [run 40658339336](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40658339336) — SUCCESS.
+- Living Architecture Audit: [run 40658339338](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40658339338) — SUCCESS.
+- Living master source version: 1.7.34; exact bytes 251,963; SHA-256 `b5f24b1f4cc21c96dba9833669c244a6686bca6def2544ad3e6d4df10bd10e02`.
+- Existing package identity: `HAIF-GPT6-PORTABLE-STARTER-20261025-004`; internal version 0.3.8; canonical archive filename remains `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`.
+- ZIP size: 104,005 bytes; SHA-256 `5af61e863560dcc95798b1d482dea77047862208e786447c55d473bdef81e806`; 13 files.
+- The bundled `LIVING_MASTER_REFERENCE.md` was extracted and matched the master source byte-for-byte (251,963 bytes; same SHA-256).
+- The ZIP was independently extracted in this inspection and all 23 tests in `test_engine.py` passed.
+- IN/OUT automated equivalence artifact: PASS for link-target/checkpoint equivalence only. It does not prove full reconstruction or a real independent AI host.
+- This receipt belongs only to SHA `76406271...`. Any later repository commit requires a fresh exact-HEAD receipt before that new HEAD is called verified.
 
-## Executable work queue
-1. Advance living master with the current 0/0.0 chain and explicit release gate.
-2. Update the same starter source so its current continuation and pairing rule are accurate; keep stable ID and canonical filename.
-3. Run the existing package build/conformance path; inspect downloaded artifact, exact SHA-256, bytes, file inventory, embedded master version and extracted tests.
-4. Run Living Architecture Audit and Portable RAHM Conformance on the exact same candidate SHA; a later Evidence Gate commit makes the new HEAD unverified.
-5. Obtain raw independent-host import/read-back, negative-control and restart evidence.
-6. Preserve unresolved CURRENT-065/CURRENT-066, duplicate POINT-0/059, historical collisions and NEXT-051 path/body mismatch as OPEN until evidence resolves them.
+## Current readiness boundary
+- READY FOR TRANSFER TEST: yes — the paired ZIP and living master are available and internally matched.
+- REAL INDEPENDENT-HOST ACCEPTANCE: NOT RUN.
+- Host restart/persistence and second-host recovery: NOT RUN.
+- Buffer, Persistent Memory, Dropbox, live message capture, authorized host write-back, and unattended background execution: NOT VERIFIED.
+- No documentation, repository CI result, or package self-test may be promoted to proof of host acceptance.
 
-## Not verified
-Fresh paired ZIP/master, exact-current-main audit/conformance, external host import, restart persistence, second host, Buffer, Persistent Memory, Dropbox, live message capture, authorized host write-back and unattended background execution.
+## Executable continuation — existing NEXT-051 only
+1. Transfer the paired ZIP and living master to a genuinely separate host/session with no access to this conversation history.
+2. Ask the host to reconstruct the current point, parent chain, active queue, master version, package identity and all open gaps using the included acceptance prompt.
+3. Recover IN and OUT independently; compare normalized state and preserve all OPEN / NOT VERIFIED gates.
+4. Run negative controls (modified byte, missing required file, invalid state), then collect raw host output and independently read it back.
+5. Run restart/persistence and, if available, second-host tests as separate gates.
+6. Keep CURRENT-065/CURRENT-066, duplicate POINT-0/059 candidates, historical ID/parent/time collisions and NEXT-051 path/body mismatch OPEN until source evidence resolves them.
+7. After this document update, treat the new main HEAD as UNVERIFIED until the existing audit and conformance workflows pass on that exact same SHA. Do not create NEXT-052 or a new master document.
