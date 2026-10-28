@@ -863,3 +863,13 @@ The canonical live-destination audit source and its exact Library version-7 snap
 - Source and Library v7 match after trimming trailing LF; one extra Library newline remains. No redundant write.
 - Audit/conformance passed on `ac091ffa0ab60ee6ba404490e596709b61136eef`; Evidence Gate created `a6ef55cdf0586c7fb3057dbe214fa5969728df21`, which is not covered by that pair.
 - CURRENT-065/CURRENT-066, NEXT-051 path mismatch, Issues #20/#21 and external destination/host gates remain open. This update does not claim full external recovery.
+
+
+## POINT-0/059 — current user root and reversible conflict cover (2026-10-28)
+
+- Root 0: [POINT-0/059](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261028-059-MIRROR-NORMALIZATION-PORTABLE-PACKAGE.md). All continuation work remains under 0.0. Prior points and 0+ highlights remain preserved.
+- Library mirror: repository source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, v7 (10,480 chars). Delta is one trailing LF. Correction is requested but not performed because the supported exact-snapshot upload route is unavailable; never mutate canonical source to match Library.
+- CURRENT-065/CURRENT-066 disposition: **COVERED / NOT CLOSED / OPEN**. This is a reversible operational cover, not a resolution or selection of either pointer. Preserve both histories and the overlay-manifest lineage. Reopen for source-backed adjudication using actual path history, commit/manifest ancestry, and independent read-back; do not decide by inference.
+- NEXT-051 remains the sole active continuation; no NEXT-052. Route A (portable ZIP/master/independent-host recovery) and Route B (historical graph census and pointer reconciliation) remain separate but connected.
+- Package priority: rebuild from canonical source; calculate fresh SHA-256; verify manifest and positive/negative schema cases; independently read back ZIP and living master; then exact-SHA audit/conformance and clean-host import. Historical ZIP digest `6ef2a5b0eab4c527db6f47ad8ef330f9854e692cd02fc3b2a02298636fa5bb78` is not evidence for a newly rebuilt artifact.
+- Latest known audit/conformance pair passed on `7a1ff93e608c5c91faca54694e12b60b4452a844`; Evidence Gate then moved main to `6834ad8061b06eb286715890759b8defeada2691`. Exact-head proof is required for the current branch head.
