@@ -10,6 +10,8 @@
 
 ## Canonical recovery links
 
+- Open gates: OPEN / NOT VERIFIED — real independent-host import, complete state reconstruction, negative controls, restart persistence, live capture and authorized write-back remain unproven.
+
 - Current checkpoint: [CURRENT-105](./PALANG-0.0-CURRENT-20261028-105-ARCHITECTURE-ZIP-MASTER-HARD-AUDIT.md)
 - Sole active queue: [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
 - Living master: [سند مرجع مادر](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
