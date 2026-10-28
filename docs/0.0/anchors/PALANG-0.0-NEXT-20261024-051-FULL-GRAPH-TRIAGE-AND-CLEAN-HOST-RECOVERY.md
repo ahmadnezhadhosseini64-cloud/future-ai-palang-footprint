@@ -10,7 +10,7 @@
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: POINT-0/053 (0+) is the current production marker on canonical root 0; CURRENT-103 is the active 0.0 continuation. The same starter Stable ID and canonical ZIP filename remain fixed. Latest verified v0.3.7 archive receipt is run 40546488170 (30,573 bytes; SHA-256 fcc09933dd67ca1300af051e14dbcf80c76b6f620dc6c9623323caca307969fb; 23/23 tests). Source version 0.3.8 is pending fresh artifact read-back. Duplicate numbered graph records POINT-0/045, CURRENT-095, IN-083, OUT-082 and EVT-0220 remain OPEN. Real independent-host import remains NOT RUN; NEXT-051 remains the single active queue; no NEXT-052 placeholder.
+- Status: POINT-0/058 (0+) is the current production marker on canonical root 0; CURRENT-108 is the active 0.0 continuation. The same starter Stable ID and canonical ZIP filename remain fixed. Latest verified v0.3.7 archive receipt is run 40546488170 (30,573 bytes; SHA-256 fcc09933dd67ca1300af051e14dbcf80c76b6f620dc6c9623323caca307969fb; 23/23 tests). Source version 0.3.8 is pending fresh artifact read-back. Duplicate numbered graph records POINT-0/045, CURRENT-095, IN-083, OUT-082 and EVT-0220 remain OPEN. Real independent-host import remains NOT RUN; NEXT-051 remains the single active queue; no NEXT-052 placeholder.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
@@ -2370,3 +2370,23 @@ Additional hard-audit finding: Living Architecture Audit run 40539823090 failed 
 4. Only after these receipts exist, consider RAHM validation and an explicit Child proposal. Do not silently promote into MASTER.
 
 Status: package and repository conformance verified; real-host acceptance and remaining graph gates OPEN. NEXT-051 remains the sole active queue.
+
+
+## CURRENT-108 — independent-host recovery continuation (2026-10-28)
+
+Canonical chain: `POINT-0/058 (0+) → IN-096 → OUT-095 → EVT-0233 → CURRENT-108 → NEXT-051`. This is a continuation of the existing canonical root, not a new root; preserve POINT-0/057 and all earlier history. Do not create NEXT-052.
+
+### Prepared for execution
+- Added the Persian independent-host acceptance prompt to `prototype/haif-gpt6-starter/INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md` and included it in the canonical ZIP inventory.
+- The prompt requires paired ZIP + `LIVING_MASTER_REFERENCE.md`, exact identity/chain read-back, positive recovery, a negative missing-anchor control, fresh-session/restart test, raw response preservation and a real SHA-256 receipt.
+- Latest point/checkpoint records: [POINT-0/058](./GPT6-RAHM-USER-POINT-0-20261028-058-0PLUS-INDEPENDENT-HOST-RECOVERY.md), [IN-096](./PALANG-0.0-IN-20261028-096-POINT-058-INDEPENDENT-HOST-RECOVERY.md), [OUT-095](./PALANG-0.0-OUT-20261028-095-POINT-058-INDEPENDENT-HOST-RECOVERY.md), [CURRENT-108](./PALANG-0.0-CURRENT-20261028-108-INDEPENDENT-HOST-RECOVERY.md), [EVT-0233](../../architecture/BEHAVIOR-TRACE/EVT-0233-POINT-058-INDEPENDENT-HOST-RECOVERY-2026-10-28.md).
+
+### Acceptance gates — remain OPEN until raw host evidence is read back
+1. Deliver the built canonical ZIP and included master snapshot to a genuinely independent AI host/session.
+2. Capture raw response, actual host identity/version if available, and actual timestamp; never infer missing metadata.
+3. Compare recovered Stable ID, version, mother reference and chain with the source.
+4. Run the missing/altered-anchor negative control.
+5. Run a fresh-session or actual restart test; mark NOT RUN if the host cannot do it.
+6. Hash and read back the raw host receipt independently.
+
+Current result: protocol and prompt prepared in repository; external-host import/acceptance NOT RUN here because no independent-host session or raw response is available. Repository CI cannot close these gates. Historical ID collisions, missing nodes, ambiguous parents/times and the preserved POINT-0/006 baseline failure remain OPEN. Path A (portable host acceptance) and Path B (graph adjudication) remain separate but connected under this sole queue.
