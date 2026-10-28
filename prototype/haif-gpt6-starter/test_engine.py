@@ -294,3 +294,5 @@ class InteractionResponseAnchorProtocolTests(unittest.TestCase):
         readme = (root / "README.md").read_text(encoding="utf-8")
         self.assertIn("v0.3.9", readme)
         self.assertIn("v0.3.9 artifact receipt: PENDING", readme)
+        self.assertIn("Latest verified v0.3.8 receipt", readme)
+        self.assertIn(expected_chain, readme)
