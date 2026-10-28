@@ -48,3 +48,11 @@ Latest relevant successful runs retrieved:
 ## 5. Evidence boundary
 
 This event records a fresh source/Library comparison and independently retrieved repository/Actions evidence. It does not claim a Library rewrite, exact-head audit, runtime capture, Dropbox write/read-back, persistent memory, background execution, or external-host acceptance. Repository event registration is not equivalent to external destination acceptance.
+
+
+## Event-file independent read-back receipt
+- The exact event path was fetched again after the initial write. The full content was returned; the source blob, Library version/tolerance result, active chain, prior-event collision handling, exact-head audit gap, both open issues and destination statuses were present.
+- Initial registration commit: `4f7b8109ed09bcb9e0c1000f25956581d489f31e`.
+- Initial-write blob read back before this receipt: `663be22cfae3d99018e8976d6a65f6d8d1252bc6` (5,352 characters).
+- This receipt is append-only evidence of the read-back; the event's final-change commit is captured in its time-binding file after this update.
+- Status: EVENT FILE READ-BACK VERIFIED. This does not change the Library newline delta or any external-host/destination gate.
