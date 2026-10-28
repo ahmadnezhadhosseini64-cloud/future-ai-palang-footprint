@@ -2417,3 +2417,8 @@ Canonical chain: `POINT-0/058 (0+ marker on canonical root 0) → IN-096 → OUT
 - Current observed main `11e69bb6b5e62a11186569b23312ba06e1d4e1c3`; exact-head audit/conformance NOT VERIFIED. POINT-0/059 has two conflicting candidate files; EVT-0235 is duplicated between mirror-sync and repository-persistence event files. Preserve both lineages; no inferred winner.
 - CURRENT-109 remains the observed checkpoint. This README was Version 1.10.8 before this additive update and is now Version 1.10.9. The older EVT-0235 note saying the README was 1.10.7 is stale; preserved as historical text, superseded by this current metadata. NEXT-051 remains the sole active queue label, but its path still returns stale Version 1.10.3. Keep OPEN pending Git-history recovery. CURRENT-065/CURRENT-066 and Issues #20/#21 remain OPEN; Route A and Route B stay distinct but linked. No NEXT-052.
 - Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN.
+
+
+## Active continuation — POINT-0/060 / CURRENT-110 (2026-10-28)
+
+Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-110 → NEXT-051`. The POINT-0/058 / CURRENT-108 chain remains historical evidence. NEXT-051 remains the sole active queue. Package rebuild and exact-head tests are in progress; external-host acceptance remains OPEN / NOT RUN / NOT VERIFIED.
