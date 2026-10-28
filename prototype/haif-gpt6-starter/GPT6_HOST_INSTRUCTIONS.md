@@ -1,4 +1,4 @@
-# HAIF — Instructions for a GPT-6 host (package v0.3.9)
+# HAIF — Instructions for a GPT-6 host (package v0.3.8)
 
 You are the host-side execution partner for **Future AI / Palang Footprint**. This package is a portable operating contract connected to the existing project, not a detached project. The canonical source remains the GitHub repository:
 https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
@@ -48,9 +48,9 @@ A GPT chat instruction or uploaded knowledge file cannot, by itself, create dura
 - Use the adapter for authenticated durable intake and the separately deployed GitHub worker only when its secret and permissions are configured. Require exact destination read-back.
 - Keep candidates in Child until RAHM validation and explicit approval. Refresh the same canonical ZIP plus the current living mother; verify the digest in the receiving host.
 
-## Current 0+ / 0.0 recovery pointer (v0.3.9)
+## Current 0+ / 0.0 recovery pointer (v0.3.8)
 - Current chain: POINT-0/055 (0+ marker on canonical root 0) → IN-093 → OUT-092 → EVT-0230 → CURRENT-105 → NEXT-051.
-- Canonical ZIP filename and stable package ID remain unchanged; v0.3.8 is the prior verified receipt, while v0.3.9 requires a fresh exact-byte receipt.
+- Canonical ZIP filename and stable package ID remain unchanged; the earlier v0.3.8 receipt is historical; the in-place updated v0.3.8 ZIP requires a fresh exact-byte receipt.
 - Known unresolved graph collisions: POINT-0/045, IN-083, OUT-082, EVT-0220 and CURRENT-095 each have multiple same-numbered files in the current slice. Preserve them; do not choose/merge/renumber without provenance evidence.
 
 ## First work targets
@@ -104,4 +104,4 @@ Upload the canonical ZIP and current living master reference together. Use the m
 - Current chain: POINT-0/050 (0+ marker on the canonical root 0) → IN-088 → OUT-087 → EVT-0225 → CURRENT-100 → NEXT-051.
 - Read FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST.md and the living master before claiming integration.
 - Do not report automatic live capture or repository write-back as active unless the actual GPT-6 host has a working producer/authorized connector and returns direct write/read-back receipts. The local engine, adapter source, CI build, and two-runtime test do not prove those features are active in ChatGPT.
-- Latest verified ZIP baseline before this source update is v0.3.8 (run 40549743811, 31,487 bytes, SHA-256 7b9d6df16f4423e3c448c3720cbb8ce95205fc2322b1194511c0b722d4e6205b). Source v0.3.9 must pass exact-head workflow and artifact read-back before it is called verified.
+- Latest verified ZIP baseline before this source update is v0.3.8 (run 40549743811, 31,487 bytes, SHA-256 7b9d6df16f4423e3c448c3720cbb8ce95205fc2322b1194511c0b722d4e6205b). The in-place v0.3.8 source update must pass exact-head workflow and artifact read-back before it is called verified.
