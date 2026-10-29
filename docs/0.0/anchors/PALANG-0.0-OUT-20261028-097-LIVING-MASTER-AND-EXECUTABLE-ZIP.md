@@ -40,3 +40,14 @@ These links preserve repository-level recoverability only. External-host import,
 - Workflow-reported ZIP integrity, source-byte match, extracted ZIP tests and artifact round-trip: PASS. Independently downloaded outer artifact: 173,848 bytes, SHA-256 `833fdf0229c8ba670c13155546adbba36836dcc69947b13373dbee7a2676a713`; extracted inner ZIP receipt and master snapshot independently inspected; exact master byte equality confirmed.
 - Boundary: this proves repository package build/integrity only. Real independent AI-host acceptance, negative controls on that host, restart/persistence, Buffer, Persistent Memory, Dropbox, live capture, host write-back and background execution remain OPEN / NOT VERIFIED.
 - This is a receipt for the tested SHA above. Any later main SHA must be checked independently; this receipt is not automatically inherited by later revisions.
+
+
+
+## EVT-0238 paired artifact receipt — 2026-10-29
+- Portable RAHM Conformance and Digest Evidence: run [40831649316](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40831649316), SUCCESS on exact source SHA `2f8610f80f6b3639b584c6fa907bddc26090193f`.
+- Living Architecture Audit: run [40831649401](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40831649401), SUCCESS on that same exact SHA.
+- Master v1.7.35: 254,091 bytes, SHA-256 `310dfb6894f363487e13836f6ee8509a60021a4926ac140ba9d2dc26780f514e`; artifact's separate master and embedded `LIVING_MASTER_REFERENCE.md` matched byte-for-byte.
+- Existing canonical starter ZIP retained the same stable ID `HAIF-GPT6-PORTABLE-STARTER-20261025-004`, production ID `HAIF-G6PS-20261025-004`, internal version 0.3.8 and filename `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`. Rebuilt ZIP: 104,535 bytes, SHA-256 `90cfb1b565c0716b417f351d14ea2a43ccd0145a228a35ac83c1b688afcf60a7`, 13 files.
+- Downloaded outer artifact ID `12879077163`: 175,128 bytes, SHA-256 `114dc5e4833bea335069e8d2e10ae1f1456fe6d14be23cea4ff15cc4cd747998`. Independent inspection: outer ZIP integrity PASS; inner ZIP CRC/integrity PASS; 13-file inventory matches receipt; inner archive digest matches receipt; embedded master byte-match PASS. Workflow receipt reports source-byte match, extracted ZIP tests and artifact round-trip PASS.
+- Boundary: this proves a repository build for exact SHA `2f8610f...`; `real_independent_host_acceptance=NOT_RUN`. No external-host, restart/persistence, second-host, Buffer, Persistent Memory or Dropbox acceptance is claimed.
+- Evidence Gate run [40831649321](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40831649321) succeeded on `2f8610f...` then moved main to `3e779b7d77f8579527ff930862b841c4c96b847e` at UTC `2026-10-29T06:50:31Z` / Tehran `2026-10-29T10:20:31+03:30`. Exact-SHA Actions query for this newer head returned zero runs; current main remains NOT VERIFIED until separately audited/conformant.
