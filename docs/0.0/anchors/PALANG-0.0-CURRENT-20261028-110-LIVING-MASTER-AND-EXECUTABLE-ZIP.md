@@ -61,3 +61,15 @@ POINT-0/060 is explicitly highlighted as 0+ on the canonical point-0 line; this 
 - Previous extracted-package test receipt: 23 tests passed. This is package-local evidence only; it does not establish independent-host acceptance, persistence after restart, or verification against any repository HEAD created after the tested build.
 - Anchor semantics: this user turn is designated **POINT-0+** because it highlights the stable identity and retrieval rule for the transferable ZIP + master document. Preserve the existing chain and the prior POINT-0/060 highlight; do not create NEXT-052. Existing NEXT-051 remains the active queue item.
 - Status: package identity and retrieval rule recorded here; external host import/acceptance remains **NOT RUN / OPEN** until a separate host returns raw, inspectable evidence.
+
+
+## POINT-0+ — INITIAL TRANSFER / HISTORY-INDEPENDENT RECOVERY TEST
+- User intent: this point is both a POINT-0+ highlight and the initial test anchor for the paired ZIP + master reference transfer path.
+- Canonical package identity and retrieval rule remain as recorded in the section above; the paired ZIP is the transfer envelope, not proof of host acceptance.
+- New protocol ID: `HAIF-INITIAL-HISTORY-INDEPENDENT-RECOVERY-TEST-20261029-001`.
+- Protocol path: `docs/0.0/anchors/HAIF-INITIAL-HISTORY-INDEPENDENT-RECOVERY-TEST-PROTOCOL-20261029-001.md`.
+- Test order is mandatory: (1) blind package-only recovery in a fresh GPT-6 conversation without repository access or prior conversation context; (2) save raw output; (3) separately grant/read-test access only to `ahmadnezhadhosseini64-cloud/future-ai-palang-footprint`, preferably read-only; (4) later run a separate independent-host acceptance test; (5) only then consider controlled evolution through a branch/PR.
+- Archive caution: do not rely on the model reading nested ZIP contents automatically. Upload the paired ZIP and, where supported, its inner starter ZIP, master Markdown and receipt JSON as individual attachments.
+- Governance safeguards: no writes to main during the blind test; no access to similarly named `palang-footprint`; no conflating facts, inference, and unknowns; no silent gap closure; preserve Route A/B, historical anchors and unresolved lineage/collision items; do not create NEXT-052; NEXT-051 remains active unless evidence-backed governance changes it.
+- Required evidence: exact uploaded/readable files, raw host output, hashes actually computed, tests actually executed, cited file sections, open gaps, and explicit PASS/PARTIAL/FAIL/NOT RUN status.
+- Status at registration: protocol text prepared; recovery execution NOT RUN; host acceptance OPEN; repository permission/access NOT assumed.
