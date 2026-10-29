@@ -3,13 +3,13 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.10.9
-- Date: 2026-10-28
-- Exact Time: UNKNOWN / UNVERIFIED for this source update; prior recorded time retained as historical evidence.
+- Version: 1.10.10
+- Date: 2026-10-29
+- Exact Time: UNKNOWN / UNVERIFIED for this index update; event registration time is bound in TIME-BINDING-EVT-0238; prior times remain historical evidence.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: POINT-0/059 remains a duplicated root label across two distinct candidate files; CURRENT-109 is the observed checkpoint. NEXT-051 remains the sole active queue label, but its path resolves to stale queue-like Version 1.10.3 rather than a task-specific NEXT document. Exact-head audit/conformance and fresh paired ZIP/master remain NOT VERIFIED. Duplicate IDs and CURRENT-065/CURRENT-066 remain OPEN; no NEXT-052.
+- Status: ACTIVE / LIVING — latest observed user-turn root POINT-0/060 (0+); current execution checkpoint CURRENT-110; sole active queue NEXT-051. Living master v1.7.35. Current-head audit/conformance must be judged only against exact tested SHAs. CURRENT-065/CURRENT-066, duplicate POINT-0/059 and NEXT-051 path/body mismatch remain OPEN.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
@@ -2422,3 +2422,13 @@ Canonical chain: `POINT-0/058 (0+ marker on canonical root 0) → IN-096 → OUT
 ## Active continuation — POINT-0/060 / CURRENT-110 (2026-10-28)
 
 Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-110 → NEXT-051`. The POINT-0/058 / CURRENT-108 chain remains historical evidence. NEXT-051 remains the sole active queue. Package rebuild and exact-head tests are in progress; external-host acceptance remains OPEN / NOT RUN / NOT VERIFIED.
+
+
+
+## Live mirror synchronization — EVT-0238 (2026-10-29)
+- Event / time binding: [EVT-0238](../BEHAVIOR-TRACE/EVT-0238-LIVE-MIRROR-SYNC-RECHECK-2026-10-29.md) / [TIME-BINDING-EVT-0238](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0238-LIVE-MIRROR-SYNC-2026-10-29.md).
+- Canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10` remains unchanged at 10,479 characters. Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, version 7, is 10,480 characters; exact delta is one additional trailing LF. Semantic fields match; no Library rewrite or byte-identical claim.
+- Latest observed root/checkpoint/queue: POINT-0/060 (0+ marker) → CURRENT-110 → NEXT-051. This is a mirror event, not a new user root or queue item. Preserve POINT-0/016, /017, /018, POINT-0/058 (0+), both POINT-0/059 candidates and all collision lineage.
+- Living master advanced additively to v1.7.35. Portable RAHM Conformance rebuild/read-back receipt for this updated source is pending; do not infer package readiness from earlier ZIP receipts.
+- Audit and conformance passed on the event commit `0b84b4e1fe687432f039f4c4294d903bbc05e4a7`, but Evidence Gate then moved main to a newer commit. Exact-head audit/conformance for that newer head remain NOT VERIFIED until runs test that exact SHA.
+- NEXT-051 remains the sole active queue. Its path still returns a stale queue-like Version 1.10.3 body; keep path-specific Git-history recovery OPEN. CURRENT-065/CURRENT-066 and Issues #20/#21 remain OPEN. Route A and Route B remain separate but connected. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN. No NEXT-052.

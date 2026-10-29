@@ -1,8 +1,8 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.6
-- Date: 2026-10-19
+- Version: 1.0.7
+- Date: 2026-10-29
 - Project: Future AI / Palang Footprint / HAIF
 
 ## مسیرهای بازیابی
@@ -981,3 +981,12 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library v7 (10,480 chars), one extra trailing LF only. Normalized content and semantic fields match; no Library write because no supported exported source_file_ref route was available.
 - Current observed main `11e69bb6b5e62a11186569b23312ba06e1d4e1c3`; exact-head audit/conformance NOT VERIFIED. POINT-0/059 and EVT-0235 each have duplicate-number lineage; preserve both candidates. CURRENT-109 is the observed checkpoint; NEXT-051 remains sole active queue label with path/body mismatch OPEN.
 - CURRENT-065/CURRENT-066 and Issues #20/#21 remain OPEN. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external-host recovery NOT RUN. No NEXT-052.
+
+
+
+## EVT-0238 — Live mirror synchronization recheck (2026-10-29)
+- Event: [EVT-0238](./EVT-0238-LIVE-MIRROR-SYNC-RECHECK-2026-10-29.md); time binding: [TIME-BINDING-EVT-0238](./TIME-BINDING-EVT-0238-LIVE-MIRROR-SYNC-2026-10-29.md).
+- Source blob `de1b75f07241c9b313e476af5f1417177ff78c10`, 10,479 characters; Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, version 7, 10,480 characters. Library is source plus one trailing LF; semantic match PASS, exact byte/text identity FALSE, no Library rewrite.
+- Root/checkpoint/queue remain POINT-0/060 → CURRENT-110 → NEXT-051. Preserve POINT-0/016, /017, /018, POINT-0/058 (0+), duplicate POINT-0/059 roots and EVT-0235 collision. CURRENT-065/CURRENT-066 and NEXT-051 path/body mismatch remain OPEN.
+- Event commit `0b84b4e1fe687432f039f4c4294d903bbc05e4a7` at `2026-10-29T06:45:45Z` / `2026-10-29T10:15:45+03:30`. Living Architecture Audit and Portable RAHM Conformance passed on that exact event SHA; the later Evidence Gate commit moved main, so current-head verification must be rechecked.
+- Issues #20/#21 OPEN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN. No NEXT-052.

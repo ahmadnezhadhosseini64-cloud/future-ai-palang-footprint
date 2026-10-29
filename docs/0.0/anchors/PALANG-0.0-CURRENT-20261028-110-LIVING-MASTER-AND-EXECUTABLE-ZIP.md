@@ -105,3 +105,12 @@ POINT-0/060 is explicitly highlighted as 0+ on the canonical point-0 line; this 
 - Open gates remain open: independent-host recovery/acceptance, restart/persistence, second-host recovery, unresolved lineage/ID/time collisions, stale NEXT-051 path history, CURRENT-065/CURRENT-066, Issues #20/#21, Buffer/Persistent Memory and Dropbox. Keep Route A and Route B distinct but linked.
 - No work is claimed beyond this repository registration and read-back; no host test was run by this pause marker.
 - Status: pause marker pending read-back verification.
+
+
+
+## Additive execution update — EVT-0238 live mirror sync (2026-10-29)
+- This is an update to the existing CURRENT-110 continuation, not a new root/checkpoint identity and not a new queue item. Current chain remains POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-110 → NEXT-051.
+- Event / time binding: [EVT-0238](../../architecture/BEHAVIOR-TRACE/EVT-0238-LIVE-MIRROR-SYNC-RECHECK-2026-10-29.md) / [TIME-BINDING-EVT-0238](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0238-LIVE-MIRROR-SYNC-2026-10-29.md).
+- Living master source advanced additively to v1.7.35. The existing starter stable ID, internal version 0.3.8 and canonical ZIP filename remain unchanged; exact rebuilt artifact receipt and downloaded read-back are pending the exact-SHA workflow result.
+- Library mirror version 7 remains semantically matched to the canonical source within one trailing LF; no write was made. External-host acceptance, restart/persistence, second-host recovery, Buffer/Persistent Memory and Dropbox remain OPEN / NOT VERIFIED as applicable.
+- Preserve POINT-0/016, /017, /018, POINT-0/058 (0+), both POINT-0/059 candidates, CURRENT-065/CURRENT-066 ambiguity and NEXT-051 path/body mismatch. NEXT-051 remains sole queue; no NEXT-052.

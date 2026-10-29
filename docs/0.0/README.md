@@ -1829,3 +1829,12 @@ The canonical chain is [POINT-0/032](./anchors/GPT6-RAHM-USER-POINT-0-20261026-0
 - The label POINT-0/059 remains ambiguous between `GPT6-RAHM-USER-POINT-0-20261028-059-MIRROR-NORMALIZATION-PORTABLE-PACKAGE.md` (Reference Index) and `GPT6-RAHM-USER-POINT-0-20261028-059-REPOSITORY-PERSISTENCE-REPAIR.md` (this 0.0 chain / CURRENT-109). Preserve both, along with POINT-0/016, /017, /018, /057 and /058 (0+); do not choose by inference.
 - EVT-0235 also has a mirror-sync / POINT-059 event-number collision; EVT-0236 is the new unique mirror event. CURRENT-065/CURRENT-066 remains OPEN. NEXT-051 remains the only active queue; no NEXT-052. Its path/body mismatch remains OPEN.
 - Exact-current-main audit/conformance NOT VERIFIED; Issues #20/#21 OPEN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN. Route A and Route B remain separate but connected.
+
+
+
+## Live mirror synchronization — EVT-0238 (2026-10-29)
+- Event / time binding: [EVT-0238](../architecture/BEHAVIOR-TRACE/EVT-0238-LIVE-MIRROR-SYNC-RECHECK-2026-10-29.md) / [TIME-BINDING-EVT-0238](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0238-LIVE-MIRROR-SYNC-2026-10-29.md).
+- Canonical source `de1b75f07241c9b313e476af5f1417177ff78c10`, 10,479 characters; Library version 7, 10,480 characters. Exact difference: one extra trailing LF in Library; edit distance 1, semantic fields match. No Library write because no supported exported `source_file_ref` route is exposed; canonical source remains authoritative.
+- Latest root/checkpoint/queue remains `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-110 → NEXT-051`; this is a mirror event only. Preserve POINT-0/016, /017, /018, POINT-0/058 (0+), both POINT-0/059 candidates, EVT-0235 collision lineage and the CURRENT-065/CURRENT-066 ambiguity. No NEXT-052.
+- Event registration commit `0b84b4e1fe687432f039f4c4294d903bbc05e4a7` UTC `2026-10-29T06:45:45Z` / Tehran `2026-10-29T10:15:45+03:30`; see the linked time binding. Audit/conformance on that event commit passed, then Evidence Gate advanced main; the newer head is NOT VERIFIED until separately tested.
+- Issues #20/#21 OPEN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN. Route A and Route B remain distinct but linked.

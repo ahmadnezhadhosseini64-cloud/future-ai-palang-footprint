@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-28 — POINT-0/060 / EVT-0237 living-master and executable-ZIP continuation. POINT-0/059 remains an unresolved duplicate-root label; CURRENT-109 is the observed checkpoint; NEXT-051 remains the sole active queue. Living mother reference advances additively to v1.7.32 in this commit; bundled snapshot v1.7.24 and paired ZIP/master release readiness remain NOT VERIFIED. Exact-current-main audit/conformance NOT VERIFIED. Preserve POINT-0/058 (0+) and POINT-0/016, /017, /018.
+**Last Updated:** 2026-10-29 — live mirror sync EVT-0238; latest observed root POINT-0/060 (0+), checkpoint CURRENT-110, sole active queue NEXT-051. Living master advances additively to v1.7.35. The event commit passed Living Architecture Audit and Portable RAHM Conformance on exact SHA 0b84b4e1fe687432f039f4c4294d903bbc05e4a7; Evidence Gate then advanced main, so the newer head remains NOT VERIFIED until exact-SHA runs cover it. Preserve POINT-0/058 (0+), POINT-0/016, /017, /018, both POINT-0/059 candidates and CURRENT-065/CURRENT-066 ambiguity.
 
 ## Canonical References
 
@@ -2137,3 +2137,10 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - Existing starter package: `prototype/haif-gpt6-starter/`, stable ID `HAIF-GPT6-PORTABLE-STARTER-20261025-004`, internal version 0.3.8; canonical ZIP filename unchanged.
 - Last recorded embedded master was v1.7.24; same-source paired rebuild and downloaded artifact inspection remain NOT VERIFIED.
 - Preserve duplicate POINT-0/059 candidates and CURRENT-065/CURRENT-066 conflict. NEXT-051 remains the sole active queue; no NEXT-052. External-host recovery remains OPEN.
+
+
+
+## Live mirror sync — EVT-0238 (2026-10-29)
+- [EVT-0238](architecture/BEHAVIOR-TRACE/EVT-0238-LIVE-MIRROR-SYNC-RECHECK-2026-10-29.md) / [time binding](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0238-LIVE-MIRROR-SYNC-2026-10-29.md).
+- Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 characters); Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, version 7 (10,480 characters), one extra trailing LF only. No Library rewrite; no byte-identical claim.
+- Current root/checkpoint/queue: POINT-0/060 → CURRENT-110 → NEXT-051. Master version 1.7.35; paired starter ZIP rebuild and artifact receipt are gated on exact-SHA Portable RAHM Conformance. CURRENT-065/CURRENT-066, duplicate POINT-0/059 and stale NEXT-051 path remain OPEN. Issues #20/#21 OPEN; external-host acceptance NOT RUN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED.
