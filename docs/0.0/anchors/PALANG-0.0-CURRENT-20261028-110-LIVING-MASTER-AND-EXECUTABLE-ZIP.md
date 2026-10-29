@@ -95,3 +95,13 @@ POINT-0/060 is explicitly highlighted as 0+ on the canonical point-0 line; this 
 - Status before write: pending. Status may be upgraded only after GitHub returns a commit SHA and the changed file is read back and matched.
 
 - Post-write result: GitHub commit `e9198cb7fe9e6ed734fc2965b205d26594dd2d4c`, canonical commit UTC `2026-10-29T04:39:21Z` (Tehran `2026-10-29T08:09:21+03:30`). Read-back SHA `0e37b05173c490150b71c9a8fa839f70ae7ad40c`; anchor text, NEXT-051 continuation, NEXT-052 prohibition, and OPEN host-acceptance status were all confirmed present. Registration: REGISTERED + READ-BACK VERIFIED. Independent-host recovery remains NOT RUN / OPEN.
+
+
+## USER PAUSE / RESUME MARKER — POINT-0.0-PAUSE-20261029-001
+- User confirmed: "اوکی ثبت کن من میرم" — acknowledge pause and preserve exact continuation point.
+- Resume from the existing active queue NEXT-051; do not create NEXT-052.
+- First pending action on return: perform the blind recovery test in a fresh GPT-6 conversation using the transfer kit and protocol's Persian first-message prompt; no repository access or prior chat history during Phase 1.
+- Preserve the host's raw output, then reconcile claims against source files. Only after Phase 1, test repository read-only access as a separate phase.
+- Open gates remain open: independent-host recovery/acceptance, restart/persistence, second-host recovery, unresolved lineage/ID/time collisions, stale NEXT-051 path history, CURRENT-065/CURRENT-066, Issues #20/#21, Buffer/Persistent Memory and Dropbox. Keep Route A and Route B distinct but linked.
+- No work is claimed beyond this repository registration and read-back; no host test was run by this pause marker.
+- Status: pause marker pending read-back verification.
