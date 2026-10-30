@@ -19,3 +19,20 @@
 - NEXT-051 source revision restored: commit 94361a0dc62f10496e766238e125578576401310; source blob ba77fc0c4dc02a2413279761d71567e7f407ecb3.
 - NEXT-051 restoration commit: ac26a589487cdc915d3994058b383a7ee20b94f5; resulting blob e0b6b1bf7f951e6fae2b98feb480832288b3cdbd; independently read back with exact blob match and Stable ID G6IP-RAHM-NEXT-051-20261024, version 1.0.14.
 - This time binding records repository commit times only. It does not assert that workflows, Library writes, host operations or user message occurred at those times.
+
+
+## Parent-surface integration and execution evidence
+| Surface | Commit SHA | Commit UTC | Asia/Tehran |
+|---|---|---|---|
+| 0.0 index | 21c11484cf4f25126272d8d5d98a3ee5b12a93bb | 2026-10-30T07:22:37Z | 2026-10-30T10:52:37+03:30 |
+| Reference index | e2d395823f7e91bd4a9125359878c545c43b8d90 | 2026-10-30T07:22:41Z | 2026-10-30T10:52:41+03:30 |
+| Behavior-trace index | 79fbca5da7d1d0077846982b38e3e0f597b8dc8b | 2026-10-30T07:22:44Z | 2026-10-30T10:52:44+03:30 |
+| Integration queue | 3582498c1e64423245f133e3625cff94887cf736 | 2026-10-30T07:22:48Z | 2026-10-30T10:52:48+03:30 |
+| Living master v1.7.38 | 1b68437125d275e5a48b3d99d5ecf2b08a3b43af | 2026-10-30T07:22:52Z | 2026-10-30T10:52:52+03:30 |
+| CURRENT-111 restoration update | 86fc70b07058863483857f316e0577274b1003d3 | 2026-10-30T07:22:55Z | 2026-10-30T10:52:55+03:30 |
+| This time-binding first commit | 4f9d287e02e3ae1428cfa724dd19adb7c954c8a5 | 2026-10-30T07:22:26Z | 2026-10-30T10:52:26+03:30 |
+| Evidence Gate record commit | b593e627df264ab104978cc8c51f95280727b10f | 2026-10-30T07:23:00Z | 2026-10-30T10:53:00+03:30 |
+
+- Evidence Gate run 41019727871: SUCCESS, but its tested SHA was 3582498c1e64423245f133e3625cff94887cf736, not the final main observed after subsequent commits.
+- At the time this addendum was prepared, main HEAD observed was b593e627df264ab104978cc8c51f95280727b10f. Exact-SHA Living Architecture Audit and Portable RAHM Conformance on that HEAD were not found (0 runs returned for that SHA).
+- Workflow run time is 2026-10-30T07:22:50Z for run 41019727871; this is distinct from the run's tested commit time and the Evidence Gate record commit time.
