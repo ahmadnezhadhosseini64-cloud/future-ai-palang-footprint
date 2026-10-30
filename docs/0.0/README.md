@@ -1858,3 +1858,9 @@ The canonical chain is [POINT-0/032](./anchors/GPT6-RAHM-USER-POINT-0-20261026-0
 - Main HEAD before EVT-0239 registration was `81077ecd3cb25e4c559c036a13f9a420e1bb648a`; it is NOT VERIFIED by the preceding Actions runs. Living Architecture Audit and Portable RAHM Conformance succeeded on `fe0c25cf623aa708dbdf8c8f77249d96193cdb1b`; Evidence Gate then wrote the newer head.
 - Pointer discovery remains ambiguous across CURRENT-066 / CURRENT-109 (overlay recovery) and CURRENT-087 (global project pointer); no winner selected. CURRENT-065/CURRENT-066 lineage remains OPEN. NEXT-051 path still returns stale Version 1.10.3 while this queue index is newer; keep path-specific history recovery OPEN. No NEXT-052.
 - Issues #20/#21 OPEN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN. Route A and Route B remain distinct but connected.
+
+
+## تازه‌ترین زنجیره — POINT-0/061 → CURRENT-111
+[POINT-0/061](anchors/GPT6-RAHM-USER-POINT-0-20261030-061-ARCHITECTURE-GAP-RECONCILIATION.md) → [IN-099](anchors/PALANG-0.0-IN-20261030-099-ARCHITECTURE-GAP-RECONCILIATION.md) → [OUT-098](anchors/PALANG-0.0-OUT-20261030-098-ARCHITECTURE-GAP-RECONCILIATION.md) → [EVT-0240](../architecture/BEHAVIOR-TRACE/EVT-0240-POINT-061-ARCHITECTURE-GAP-RECONCILIATION-2026-10-30.md) → [CURRENT-111](anchors/PALANG-0.0-CURRENT-20261030-111-ARCHITECTURE-GAP-RECONCILIATION.md) → NEXT-051.
+
+این نقطهٔ ۰+ جدیدترین ورودی کاربر در این اجراست. ریشه‌های قبلی از جمله POINT-0/016، /017، /018 و دو نامزد /059 حفظ شده‌اند. NEXT-051 همچنان تنها صف فعال است؛ NEXT-052 ساخته نشده. تعارض CURRENT-065/CURRENT-066 باز است و هیچ اشاره‌گری با حدس انتخاب نشده.
