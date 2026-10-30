@@ -1008,3 +1008,10 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Source `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars) remains unchanged. Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, exact version 7 (10,480 chars), is source plus one trailing LF; semantic match PASS, exact equality FALSE. No Library rewrite.
 - Current root/checkpoint/queue: POINT-0/060 → CURRENT-110 → NEXT-051. Preserve all earlier roots and collision lineage; no new root or NEXT-052.
 - Latest successful audit/conformance runs tested `fe0c25cf623aa708dbdf8c8f77249d96193cdb1b`; Evidence Gate advanced main to `81077ecd3cb25e4c559c036a13f9a420e1bb648a`, which remains NOT VERIFIED. Pointer discovery and historical graph findings remain OPEN.
+
+
+## EVT-0240 — POINT-0/061 architecture gap reconciliation (2026-10-30)
+- EVT-0240 links POINT-0/061 → IN-099 → OUT-098 → CURRENT-111 → NEXT-051.
+- New user root is POINT-0/061. Prior roots and EVT collision lineage remain preserved.
+- Confirmed: rejected one-character-short export candidate; NEXT-051 path/body mismatch; CURRENT-065/CURRENT-066 conflict remains unresolved.
+- No Library overwrite, no inferred pointer winner, no NEXT-052. Issues #20/#21 remain open; external persistence and independent-host recovery are not verified.
