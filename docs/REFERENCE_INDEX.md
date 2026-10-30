@@ -2164,3 +2164,9 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - Library newline delta remains unnormalized: the prior export candidate was one character shorter than canonical source and was rejected. No Library overwrite.
 - CURRENT-065/CURRENT-066 remains OPEN. NEXT-051 path/body mismatch remains OPEN; its claimed forensic archive path is currently 404 and the fetched historical blob is still the Integration Queue README, not a dedicated NEXT-051 body.
 - Issues #20/#21 OPEN. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN. No NEXT-052.
+
+
+## NEXT-051 canonical path restoration — 2026-10-30
+- Canonical file restored from source-backed dedicated revision 94361a0dc62f10496e766238e125578576401310 and advanced to Version 1.0.14.
+- Restoration commit ac26a589487cdc915d3994058b383a7ee20b94f5; blob e0b6b1bf7f951e6fae2b98feb480832288b3cdbd; independent read-back and Stable ID G6IP-RAHM-NEXT-051-20261024 verified.
+- This resolves the path/body mismatch at repository level only; NEXT-051 acceptance remains OPEN pending exact-SHA audit/conformance and independent-host evidence.
