@@ -1015,3 +1015,9 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - New user root is POINT-0/061. Prior roots and EVT collision lineage remain preserved.
 - Confirmed: rejected one-character-short export candidate; NEXT-051 path/body mismatch; CURRENT-065/CURRENT-066 conflict remains unresolved.
 - No Library overwrite, no inferred pointer winner, no NEXT-052. Issues #20/#21 remain open; external persistence and independent-host recovery are not verified.
+
+
+## EVT-0240 time binding and NEXT-051 restoration — 2026-10-30
+- [TIME-BINDING-EVT-0240](./TIME-BINDING-EVT-0240-POINT-061-2026-10-30.md) binds POINT-0/061, IN-099, OUT-098, EVT-0240, CURRENT-111 and NEXT-051 restoration to actual commit UTC and derived Tehran time.
+- NEXT-051 canonical file restored from commit 94361a0dc62f10496e766238e125578576401310; restoration commit ac26a589487cdc915d3994058b383a7ee20b94f5; exact blob read-back verified.
+- CURRENT-065/CURRENT-066 remains OPEN. Library newline normalization remains NOT DONE. Issues #20/#21 remain OPEN.
