@@ -2452,3 +2452,10 @@ Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-11
 - Mirror export candidate file_0000000056e481f48767fc826e1d9b80 was rejected: 10,478 chars vs canonical source 10,479. No Library write.
 - NEXT-051 remains the sole active queue; no NEXT-052. Continue Path A (portable package/independent-host acceptance) and Path B (historical graph/identity reconciliation) separately but linked.
 - Issue #20 and #21 remain OPEN. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN.
+
+
+## POINT-0/061 — NEXT-051 path repair receipt (2026-10-30)
+- NEXT-051 was restored at its canonical path from the last verified dedicated revision, commit 94361a0dc62f10496e766238e125578576401310, source blob ba77fc0c4dc02a2413279761d71567e7f407ecb3.
+- Current restored NEXT-051: Version 1.0.14; commit ac26a589487cdc915d3994058b383a7ee20b94f5; blob e0b6b1bf7f951e6fae2b98feb480832288b3cdbd; independent read-back PASS.
+- The displaced forensic archive claimed by the old repair note is still missing (404); blob afb99f50b24027e89170900cf3deaddcc5cc38bf is Integration Queue content, not NEXT-051. Preserve this failed archive pointer as OPEN evidence.
+- The path/body mismatch is repaired in the current repository tree; audit acceptance and full NEXT-051 completion remain OPEN. No NEXT-052.
