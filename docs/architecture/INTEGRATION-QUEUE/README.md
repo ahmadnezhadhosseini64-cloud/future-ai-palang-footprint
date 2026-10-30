@@ -3,13 +3,13 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.10.10
-- Date: 2026-10-29
-- Exact Time: UNKNOWN / UNVERIFIED for this index update; event registration time is bound in TIME-BINDING-EVT-0238; prior times remain historical evidence.
+- Version: 1.10.11
+- Date: 2026-10-30
+- Exact Time: UNKNOWN / UNVERIFIED for this index update; event registration time is bound in TIME-BINDING-EVT-0239; prior times remain historical evidence.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: ACTIVE / LIVING — latest observed user-turn root POINT-0/060 (0+); current execution checkpoint CURRENT-110; sole active queue NEXT-051. Living master v1.7.35. Current-head audit/conformance must be judged only against exact tested SHAs. CURRENT-065/CURRENT-066, duplicate POINT-0/059 and NEXT-051 path/body mismatch remain OPEN.
+- Status: ACTIVE / LIVING — latest observed user-turn root POINT-0/060 (0+); current execution checkpoint CURRENT-110; sole active queue NEXT-051. Living master v1.7.36. Current-head audit/conformance must be judged only against exact tested SHAs. CURRENT-065/CURRENT-066, duplicate POINT-0/059 and NEXT-051 path/body mismatch remain OPEN.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف

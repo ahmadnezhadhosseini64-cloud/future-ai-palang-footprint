@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-29 — EVT-0238 mirror reconciliation and paired artifact receipt. Latest observed root POINT-0/060 (0+), checkpoint CURRENT-110, sole active queue NEXT-051. Living master v1.7.35 and the existing starter ZIP were rebuilt/read back successfully on exact SHA 2f8610f80f6b3639b584c6fa907bddc26090193f (ZIP 104,535 bytes; SHA-256 90cfb1b565c0716b417f351d14ea2a43ccd0145a228a35ac83c1b688afcf60a7). Evidence Gate then advanced main to 3e779b7d77f8579527ff930862b841c4c96b847e, which has no exact-SHA audit/conformance runs and remains NOT VERIFIED. Preserve POINT-0/058 (0+), POINT-0/016, /017, /018, both POINT-0/059 candidates and CURRENT-065/CURRENT-066 ambiguity.
+**Last Updated:** 2026-10-30 — EVT-0239 live mirror synchronization. Latest observed root POINT-0/060 (0+), checkpoint CURRENT-110, sole active queue NEXT-051. Living master v1.7.36. Main HEAD at EVT-0239 observation 81077ecd3cb25e4c559c036a13f9a420e1bb648a remains NOT VERIFIED by the preceding exact-SHA audit/conformance runs.
 
 ## Canonical References
 
