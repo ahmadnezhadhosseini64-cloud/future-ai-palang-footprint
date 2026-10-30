@@ -1864,3 +1864,10 @@ The canonical chain is [POINT-0/032](./anchors/GPT6-RAHM-USER-POINT-0-20261026-0
 [POINT-0/061](anchors/GPT6-RAHM-USER-POINT-0-20261030-061-ARCHITECTURE-GAP-RECONCILIATION.md) → [IN-099](anchors/PALANG-0.0-IN-20261030-099-ARCHITECTURE-GAP-RECONCILIATION.md) → [OUT-098](anchors/PALANG-0.0-OUT-20261030-098-ARCHITECTURE-GAP-RECONCILIATION.md) → [EVT-0240](../architecture/BEHAVIOR-TRACE/EVT-0240-POINT-061-ARCHITECTURE-GAP-RECONCILIATION-2026-10-30.md) → [CURRENT-111](anchors/PALANG-0.0-CURRENT-20261030-111-ARCHITECTURE-GAP-RECONCILIATION.md) → NEXT-051.
 
 این نقطهٔ ۰+ جدیدترین ورودی کاربر در این اجراست. ریشه‌های قبلی از جمله POINT-0/016، /017، /018 و دو نامزد /059 حفظ شده‌اند. NEXT-051 همچنان تنها صف فعال است؛ NEXT-052 ساخته نشده. تعارض CURRENT-065/CURRENT-066 باز است و هیچ اشاره‌گری با حدس انتخاب نشده.
+
+
+### NEXT-051 path restoration — 2026-10-30
+- The canonical NEXT-051 file was restored from its last verified dedicated queue revision (source commit 94361a0dc62f10496e766238e125578576401310; source blob ba77fc0c4dc02a2413279761d71567e7f407ecb3), then advanced additively to v1.0.14.
+- Restoration commit ac26a589487cdc915d3994058b383a7ee20b94f5; resulting blob e0b6b1bf7f951e6fae2b98feb480832288b3cdbd; independent read-back matched exact blob and Stable ID G6IP-RAHM-NEXT-051-20261024.
+- The prior queue README body was not used as NEXT-051. The claimed forensic archive path remains missing; its blob was not mistaken for NEXT-051.
+- NEXT-051 is restored but still OPEN; exact-SHA audit/conformance must pass. No NEXT-052.
