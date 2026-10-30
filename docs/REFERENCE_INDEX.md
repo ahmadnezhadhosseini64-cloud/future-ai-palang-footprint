@@ -2155,3 +2155,12 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - Downloaded outer artifact ID `12879077163`: 175,128 bytes, SHA-256 `114dc5e4833bea335069e8d2e10ae1f1456fe6d14be23cea4ff15cc4cd747998`. Independent inspection: outer ZIP integrity PASS; inner ZIP CRC/integrity PASS; 13-file inventory matches receipt; inner archive digest matches receipt; embedded master byte-match PASS. Workflow receipt reports source-byte match, extracted ZIP tests and artifact round-trip PASS.
 - Boundary: this proves a repository build for exact SHA `2f8610f...`; `real_independent_host_acceptance=NOT_RUN`. No external-host, restart/persistence, second-host, Buffer, Persistent Memory or Dropbox acceptance is claimed.
 - Evidence Gate run [40831649321](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40831649321) succeeded on `2f8610f...` then moved main to `3e779b7d77f8579527ff930862b841c4c96b847e` at UTC `2026-10-29T06:50:31Z` / Tehran `2026-10-29T10:20:31+03:30`. Exact-SHA Actions query for this newer head returned zero runs; current main remains NOT VERIFIED until separately audited/conformant.
+
+
+## POINT-0/061 — architecture gap reconciliation (2026-10-30)
+- Root: docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261030-061-ARCHITECTURE-GAP-RECONCILIATION.md.
+- Chain: POINT-0/061 → IN-099 → OUT-098 → EVT-0240 → CURRENT-111 → NEXT-051.
+- Root and four supporting artifacts registered and independently read back in the repository. Historical roots and collision lineage preserved.
+- Library newline delta remains unnormalized: the prior export candidate was one character shorter than canonical source and was rejected. No Library overwrite.
+- CURRENT-065/CURRENT-066 remains OPEN. NEXT-051 path/body mismatch remains OPEN; its claimed forensic archive path is currently 404 and the fetched historical blob is still the Integration Queue README, not a dedicated NEXT-051 body.
+- Issues #20/#21 OPEN. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN. No NEXT-052.
