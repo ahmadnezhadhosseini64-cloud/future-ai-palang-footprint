@@ -1,8 +1,8 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.7
-- Date: 2026-10-29
+- Version: 1.0.8
+- Date: 2026-10-30
 - Project: Future AI / Palang Footprint / HAIF
 
 ## مسیرهای بازیابی
@@ -1001,3 +1001,10 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Downloaded outer artifact ID `12879077163`: 175,128 bytes, SHA-256 `114dc5e4833bea335069e8d2e10ae1f1456fe6d14be23cea4ff15cc4cd747998`. Independent inspection: outer ZIP integrity PASS; inner ZIP CRC/integrity PASS; 13-file inventory matches receipt; inner archive digest matches receipt; embedded master byte-match PASS. Workflow receipt reports source-byte match, extracted ZIP tests and artifact round-trip PASS.
 - Boundary: this proves a repository build for exact SHA `2f8610f...`; `real_independent_host_acceptance=NOT_RUN`. No external-host, restart/persistence, second-host, Buffer, Persistent Memory or Dropbox acceptance is claimed.
 - Evidence Gate run [40831649321](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40831649321) succeeded on `2f8610f...` then moved main to `3e779b7d77f8579527ff930862b841c4c96b847e` at UTC `2026-10-29T06:50:31Z` / Tehran `2026-10-29T10:20:31+03:30`. Exact-SHA Actions query for this newer head returned zero runs; current main remains NOT VERIFIED until separately audited/conformant.
+
+
+## EVT-0239 — Live mirror synchronization recheck (2026-10-30)
+- [EVT-0239](./EVT-0239-LIVE-MIRROR-SYNC-RECHECK-2026-10-30.md) / [TIME-BINDING-EVT-0239](./TIME-BINDING-EVT-0239-LIVE-MIRROR-SYNC-2026-10-30.md).
+- Source `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars) remains unchanged. Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, exact version 7 (10,480 chars), is source plus one trailing LF; semantic match PASS, exact equality FALSE. No Library rewrite.
+- Current root/checkpoint/queue: POINT-0/060 → CURRENT-110 → NEXT-051. Preserve all earlier roots and collision lineage; no new root or NEXT-052.
+- Latest successful audit/conformance runs tested `fe0c25cf623aa708dbdf8c8f77249d96193cdb1b`; Evidence Gate advanced main to `81077ecd3cb25e4c559c036a13f9a420e1bb648a`, which remains NOT VERIFIED. Pointer discovery and historical graph findings remain OPEN.
