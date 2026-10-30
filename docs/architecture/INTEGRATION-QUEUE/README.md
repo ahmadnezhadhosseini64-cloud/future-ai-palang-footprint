@@ -2443,3 +2443,12 @@ Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-11
 - Downloaded outer artifact ID `12879077163`: 175,128 bytes, SHA-256 `114dc5e4833bea335069e8d2e10ae1f1456fe6d14be23cea4ff15cc4cd747998`. Independent inspection: outer ZIP integrity PASS; inner ZIP CRC/integrity PASS; 13-file inventory matches receipt; inner archive digest matches receipt; embedded master byte-match PASS. Workflow receipt reports source-byte match, extracted ZIP tests and artifact round-trip PASS.
 - Boundary: this proves a repository build for exact SHA `2f8610f...`; `real_independent_host_acceptance=NOT_RUN`. No external-host, restart/persistence, second-host, Buffer, Persistent Memory or Dropbox acceptance is claimed.
 - Evidence Gate run [40831649321](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40831649321) succeeded on `2f8610f...` then moved main to `3e779b7d77f8579527ff930862b841c4c96b847e` at UTC `2026-10-29T06:50:31Z` / Tehran `2026-10-29T10:20:31+03:30`. Exact-SHA Actions query for this newer head returned zero runs; current main remains NOT VERIFIED until separately audited/conformant.
+
+
+## POINT-0/061 continuation and architecture-gap findings — 2026-10-30
+- New user root: POINT-0/061 → IN-099 → OUT-098 → EVT-0240 → CURRENT-111 → NEXT-051.
+- Confirmed the NEXT-051 path/body mismatch and located historical repair commit 94361a0dc62f10496e766238e125578576401310. That commit claims the displaced prior blob afb99f50b24027e89170900cf3deaddcc5cc38bf was archived at FORENSIC-ORIGINAL-BLOB-FROM-NEXT-051-PATH-2026-10-27.md, but that archive path currently returns 404. The fetched blob itself begins with the Architecture Integration Queue heading and is not a dedicated NEXT-051 body. Therefore NEXT-051's intended body is still NOT RECOVERED; do not restore this blob as NEXT-051.
+- CURRENT-065/CURRENT-066 pointer and overlay-manifest lineage remains OPEN. Do not infer a winner.
+- Mirror export candidate file_0000000056e481f48767fc826e1d9b80 was rejected: 10,478 chars vs canonical source 10,479. No Library write.
+- NEXT-051 remains the sole active queue; no NEXT-052. Continue Path A (portable package/independent-host acceptance) and Path B (historical graph/identity reconciliation) separately but linked.
+- Issue #20 and #21 remain OPEN. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN.
