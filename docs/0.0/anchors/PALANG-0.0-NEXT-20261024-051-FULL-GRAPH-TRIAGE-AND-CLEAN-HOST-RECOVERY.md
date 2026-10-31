@@ -2,7 +2,7 @@
 
 - Stable ID: G6IP-RAHM-NEXT-051-20261024
 - Production ID: G6IP-RAHM-NEXT-051-20261024
-- Version: 1.0.16
+- Version: 1.0.17
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE
 - Project: Future AI / Palang Footprint — HAIF
 - Canonical queue: this file only
@@ -132,3 +132,10 @@ The previous blob at this path began with the Integration Queue README title and
 - Evidence Gate run 41178131764 passed on the tested SHA, then created follow-up main `e8e5cf448119e328e12b7801e953edfe9438751e` at UTC `2026-10-31T06:49:19Z` / Tehran `2026-10-31T10:19:19+03:30`. No Actions runs were found for that follow-up SHA at the time of this queue revision; it remains NOT VERIFIED. A later exact-SHA audit/conformance is required.
 - Issues #20/#21 remain OPEN. Missing NEXT-051 forensic archive remains OPEN/404. CURRENT-065/CURRENT-066 remains OPEN. BOART-FOLLOWUP-01 remains the next source/rule graph reconciliation. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external host, second host, restart persistence and background capture NOT RUN / NOT VERIFIED.
 - Path A and Path B remain distinct but connected. NEXT-051 remains the only active queue; do not create NEXT-052.
+
+
+## Mirror-event link retention — EVT-0241 and EVT-0242
+
+- Latest mirror-only event: [EVT-0242](../../architecture/BEHAVIOR-TRACE/EVT-0242-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) / [TIME-BINDING-EVT-0242](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0242-LIVE-MIRROR-SYNC-2026-10-31.md).
+- Previous mirror-only event remains preserved and linked: [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) / [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md).
+- Both events are mirror-only records; neither creates a new user-turn root or a competing queue. NEXT-051 remains the sole active queue; no NEXT-052.
