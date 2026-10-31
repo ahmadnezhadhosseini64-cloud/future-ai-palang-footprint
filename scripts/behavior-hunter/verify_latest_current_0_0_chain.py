@@ -85,12 +85,18 @@ def local_links(source_path: Path, content: str):
 
 def require_one_link(source_path: Path, content: str, suffix: str) -> str:
     matches = [(target, resolved) for _, target, resolved in local_links(source_path, content) if resolved.name == suffix]
-    if len(matches) != 1:
-        raise ValueError(f"{source_path.relative_to(ROOT)}: expected one link to {suffix}; found {len(matches)}")
-    target, resolved = matches[0]
-    if not resolved.is_file():
-        raise ValueError(f"{source_path.relative_to(ROOT)}: broken link {target}")
-    return target
+    if not matches:
+        raise ValueError(f"{source_path.relative_to(ROOT)}: no link to {suffix}")
+    unique_paths = {resolved for _, resolved in matches}
+    if len(unique_paths) != 1:
+        raise ValueError(f"{source_path.relative_to(ROOT)}: ambiguous links to {suffix}; {len(unique_paths)} distinct targets")
+    for target, resolved in matches:
+        if not resolved.is_file():
+            raise ValueError(f"{source_path.relative_to(ROOT)}: broken link {target}")
+    # Repeated navigation links are acceptable only when every occurrence resolves
+    # to the same canonical file. This avoids treating repeated index links as
+    # ambiguous while still rejecting same-name links to different destinations.
+    return matches[0][0]
 
 
 def read_text(path: Path) -> str:
