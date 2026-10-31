@@ -1877,3 +1877,12 @@ The canonical chain is [POINT-0/032](./anchors/GPT6-RAHM-USER-POINT-0-20261026-0
 - این رویداد فقط ثبت همگام‌سازی آینه است؛ ریشهٔ جاری همچنان POINT-0/061 → IN-099 → OUT-098 → EVT-0240 → CURRENT-111 → NEXT-051 است.
 - منبع مخزن تغییر نکرده؛ Library نسخهٔ 7 دقیقاً یک LF انتهایی بیشتر دارد. هیچ بازنویسی Library انجام نشد.
 - تعارض CURRENT-065/CURRENT-066 باز می‌ماند؛ NEXT-051 تنها صف فعال است و NEXT-052 ساخته نشده است.
+
+
+## Live mirror synchronization — EVT-0242 (2026-10-31)
+
+- [EVT-0242](../architecture/BEHAVIOR-TRACE/EVT-0242-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) / [TIME-BINDING-EVT-0242](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0242-LIVE-MIRROR-SYNC-2026-10-31.md).
+- This is a mirror-only event. Latest user-turn root remains POINT-0/061 → IN-099 → OUT-098 → EVT-0240 → CURRENT-111 → NEXT-051. POINT-0/016, /017, /018 remain preserved; no new root or NEXT-052.
+- Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library version 7 (10,480 chars), exactly source plus one terminal LF. No Library write; no supported source_file_ref route; canonical source remains authoritative.
+- Audit and Portable RAHM Conformance passed on exact SHA `b5853aa5aa33b922e7e4388e45d08d59f81fccd1` (runs 41178131603 / 41178131559). Evidence Gate then advanced main to `e8e5cf448119e328e12b7801e953edfe9438751e` at UTC `2026-10-31T06:49:19Z`; this follow-up was NOT VERIFIED at the time of this index revision.
+- CURRENT-065/CURRENT-066, 14 missing links, duplicate-ID/event groups, 2 unresolved parent edges, Issues #20/#21, and external recovery gates remain OPEN / NOT VERIFIED / NOT RUN as appropriate.

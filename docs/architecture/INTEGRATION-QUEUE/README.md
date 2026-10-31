@@ -3,13 +3,13 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.10.12
+- Version: 1.10.13
 - Date: 2026-10-31
-- Exact Time: UNKNOWN / UNVERIFIED for this index update; event registration time is bound in TIME-BINDING-EVT-0239; prior times remain historical evidence.
+- Exact Time: EVT-0242 event commit UTC `2026-10-31T06:47:51Z` / Tehran `2026-10-31T10:17:51+03:30` is bound in TIME-BINDING-EVT-0242. This queue-index revision's own final-change commit time is retrieved separately from Git metadata; it is not inferred from event time.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: ACTIVE / LIVING — latest observed user-turn root POINT-0/061 (0+); current execution checkpoint CURRENT-111; sole active queue NEXT-051. Living master v1.7.39. Exact tested SHAs govern audit/conformance claims. CURRENT-065/CURRENT-066, duplicate POINT-0/059, missing NEXT-051 forensic archive and historic graph/identity/time reconciliation remain OPEN.
+- Status: ACTIVE / LIVING — latest observed user-turn root POINT-0/061 (0+); current execution checkpoint CURRENT-111; sole active queue NEXT-051. Living master v1.7.40. Latest exact tested main SHA before this index revision: `b5853aa5aa33b922e7e4388e45d08d59f81fccd1` (audit and conformance PASS); Evidence Gate follow-up `e8e5cf448119e328e12b7801e953edfe9438751e` NOT VERIFIED at this revision. Exact tested SHAs govern audit/conformance claims. CURRENT-065/CURRENT-066, duplicate POINT-0/059, missing NEXT-051 forensic archive and historic graph/identity/time reconciliation remain OPEN.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
@@ -2466,3 +2466,14 @@ Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-11
 - Repository source blob `de1b75f07241c9b313e476af5f1417177ff78c10` remains authoritative. Library version 7 is source plus one extra terminal LF; no rewrite.
 - The exact-head audit failure on 702f41dd7b8347526bd99cb116040df23d158abf was a stale global-chain verifier assumption, not independent-host evidence. The new dynamic verifier is separate from historical overlay-pointer discovery. CURRENT-065/CURRENT-066 remains OPEN; no winner selected.
 - Path A (portable package and clean-host acceptance) and Path B (historical graph, identity, parent and time reconciliation) remain separate but connected. Issues #20/#21 remain OPEN.
+
+
+## Live mirror synchronization — EVT-0242 (2026-10-31)
+
+- Event / time binding: [EVT-0242](../BEHAVIOR-TRACE/EVT-0242-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) / [TIME-BINDING-EVT-0242](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0242-LIVE-MIRROR-SYNC-2026-10-31.md).
+- Current user-turn root/checkpoint/queue remains POINT-0/061 → CURRENT-111 → NEXT-051. This is a mirror-only event; preserve POINT-0/016, /017, /018 and all collision lineage. No NEXT-052.
+- Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library v7 (10,480 chars), exactly source plus one extra terminal LF. Semantic fields and normalized content match; no Library rewrite.
+- EVT-0242 event commit `30b47655909dbe22d12a38c5916933b6d2ff21b0` UTC `2026-10-31T06:47:51Z` / Tehran `2026-10-31T10:17:51+03:30`. Time-binding and EVT-0241 timestamp correction commit `b5853aa5aa33b922e7e4388e45d08d59f81fccd1` UTC `2026-10-31T06:49:09Z` / Tehran `2026-10-31T10:19:09+03:30`.
+- Living Architecture Audit 41178131603 and Portable RAHM Conformance 41178131559 passed on exact SHA `b5853aa5aa33b922e7e4388e45d08d59f81fccd1`. Evidence Gate 41178131764 created `e8e5cf448119e328e12b7801e953edfe9438751e`; that follow-up was NOT VERIFIED at this revision.
+- Audit findings remain open: 14 missing local links; 1 open Stable-ID group; 72 open Production-ID groups; 5 open Reference-ID groups; 8 open event-number groups; 11 exact-content duplicate groups; 2 unresolved parent edges. CURRENT-065/CURRENT-066 remains OPEN; no winner selected.
+- Issues #20/#21 remain OPEN. BOART-FOLLOWUP-01 remains next. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN. Route A and Route B remain distinct but linked.

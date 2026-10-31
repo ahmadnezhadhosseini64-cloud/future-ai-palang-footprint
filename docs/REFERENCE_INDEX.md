@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-31 — EVT-0241 live mirror synchronization. Latest observed root POINT-0/061 (0+), checkpoint CURRENT-111, sole active queue NEXT-051. Living master v1.7.39. Main HEAD before EVT-0241 registration 702f41dd7b8347526bd99cb116040df23d158abf (commit UTC 2026-10-30T07:23:57Z); its latest Living Architecture Audit failed on that exact SHA because the global-chain verifier was stale. Latest Portable RAHM Conformance passed only on prior SHA ea769d9564ed45c41373cb9435e398fa8adc8261.
+**Last Updated:** 2026-10-31 — EVT-0242 live mirror synchronization. Latest observed root POINT-0/061 (0+), checkpoint CURRENT-111, sole active queue NEXT-051; living master v1.7.40. Latest exact tested main SHA before this index revision was `b5853aa5aa33b922e7e4388e45d08d59f81fccd1`: Living Architecture Audit 41178131603 and Portable RAHM Conformance 41178131559 passed on that exact SHA. Evidence Gate then created `e8e5cf448119e328e12b7801e953edfe9438751e`; that follow-up head was NOT VERIFIED at this revision.
 
 ## Canonical References
 
@@ -2177,3 +2177,14 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library v7 (10,480 chars) equals source plus one terminal LF. Semantic fields match; no Library write.
 - The exact-head audit failure on 702f41dd7b8347526bd99cb116040df23d158abf was traced to a verifier pinned to POINT-0/059 / CURRENT-109. A separate dynamic latest-chain verifier is now used by audit and conformance workflows; the historical overlay pointer verifier remains separate and CURRENT-065/CURRENT-066 remains OPEN.
 - Issues #20/#21 OPEN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN.
+
+
+## EVT-0242 — live mirror synchronization and exact-SHA evidence (2026-10-31)
+
+- Event/time binding: [EVT-0242](architecture/BEHAVIOR-TRACE/EVT-0242-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) / [TIME-BINDING-EVT-0242](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0242-LIVE-MIRROR-SYNC-2026-10-31.md).
+- Current user-turn chain remains POINT-0/061 → IN-099 → OUT-098 → EVT-0240 → CURRENT-111 → NEXT-051. This is a mirror-only event; POINT-0/016, /017, /018 and all later roots remain preserved. No NEXT-052.
+- Source blob `de1b75f07241c9b313e476af5f1417177ff78c10`, 10,479 chars; Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, version 7, 10,480 chars. Library equals source plus one terminal LF; normalized content and semantic fields match; exact equality FALSE; no Library rewrite.
+- Latest tested main SHA: `b5853aa5aa33b922e7e4388e45d08d59f81fccd1`; audit 41178131603 and conformance 41178131559 both SUCCESS on that exact SHA. Evidence Gate 41178131764 then moved main to `e8e5cf448119e328e12b7801e953edfe9438751e` at UTC `2026-10-31T06:49:19Z`; no Actions runs were found for that follow-up head at this revision, so it remains NOT VERIFIED.
+- Audit inventory: 14 missing local links; 1 open Stable-ID group; 72 open Production-ID groups; 5 open Reference-ID groups; 8 open event-number groups; 11 exact-content duplicate groups; 2 unresolved parent edges; 0 ambiguous parent edges.
+- Portable package v0.3.8: 106,500 bytes; SHA-256 `924035df7cbe79ab710958b1e509a68d4a4bc1ac0175c85cd8eda10b83a370c0`; 23 extracted tests and artifact round-trip PASS; real independent-host acceptance NOT RUN.
+- CURRENT-065/CURRENT-066, Issues #20/#21, Buffer/Persistent Memory, Dropbox and independent-host gates remain OPEN / NOT VERIFIED / NOT RUN as appropriate.

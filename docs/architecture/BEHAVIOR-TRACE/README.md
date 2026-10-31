@@ -1,7 +1,7 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.9
+- Version: 1.0.10
 - Date: 2026-10-31
 - Project: Future AI / Palang Footprint / HAIF
 
@@ -1028,3 +1028,16 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Current root/checkpoint/queue: POINT-0/061 → CURRENT-111 → NEXT-051. This is a mirror-only event, not a new user root.
 - Audit run `41038536961` failed on tested SHA `702f41dd7b8347526bd99cb116040df23d158abf` because the global current-chain verifier was stale. Conformance run `41019834175` passed only on previous SHA `ea769d9564ed45c41373cb9435e398fa8adc8261`; Watchdog `41027558272` passed on `702f41dd7b8347526bd99cb116040df23d158abf` but is not full audit/conformance.
 - CURRENT-065/CURRENT-066, Issues #20/#21 and external-host/persistence gates remain OPEN / NOT VERIFIED / NOT RUN as appropriate.
+
+
+## EVT-0242 — Live mirror synchronization recheck (2026-10-31)
+
+- [EVT-0242](./EVT-0242-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) / [TIME-BINDING-EVT-0242](./TIME-BINDING-EVT-0242-LIVE-MIRROR-SYNC-2026-10-31.md).
+- Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, version 7 (10,480 chars). Library is source plus exactly one terminal LF; normalized content and semantic fields match; exact equality FALSE; no Library rewrite.
+- Latest user-turn chain remains POINT-0/061 → IN-099 → OUT-098 → EVT-0240 → CURRENT-111 → NEXT-051. This is a mirror-only event. Preserve POINT-0/016, /017, /018 and all subsequent points.
+- EVT-0242 commit `30b47655909dbe22d12a38c5916933b6d2ff21b0` at UTC `2026-10-31T06:47:51Z` / Tehran `2026-10-31T10:17:51+03:30`; event file read-back PASS. Its event commit audit/conformance passed, then Evidence Gate created `1f3f9ddc5b9b73d875452a6d6a6a8fb8b1f952b2`.
+- EVT-0242 time-binding and EVT-0241 time-binding correction commit `b5853aa5aa33b922e7e4388e45d08d59f81fccd1` at UTC `2026-10-31T06:49:09Z` / Tehran `2026-10-31T10:19:09+03:30`; EVT-0241 pending fields were reconciled from Git history and independently read back.
+- Living Architecture Audit 41178131603 and Portable RAHM Conformance 41178131559 both SUCCESS on exact SHA `b5853aa5aa33b922e7e4388e45d08d59f81fccd1`. Evidence Gate 41178131764 then created `e8e5cf448119e328e12b7801e953edfe9438751e`; no runs were found on that follow-up SHA, so it remains NOT VERIFIED.
+- Tested audit findings: 14 missing local links; 23 Stable-ID groups (1 open); 74 Production-ID groups (72 open); 5 Reference-ID groups (all open); 46 event-number groups (8 open); 11 exact-content duplicate groups; 2 unresolved parent edges (0 ambiguous). No collision group or pointer was silently closed.
+- Portable starter v0.3.8: 106,500 bytes; SHA-256 `924035df7cbe79ab710958b1e509a68d4a4bc1ac0175c85cd8eda10b83a370c0`; 23 extracted tests and artifact round-trip PASS. Real independent-host acceptance NOT RUN.
+- Issues #20/#21 OPEN; CURRENT-065/CURRENT-066 OPEN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN.

@@ -57,3 +57,13 @@
 - This file's own final-change commit metadata is retrieved separately from Git history and is not self-referenced.
 - Exact Library read-back operation time and exact time-binding read-back operation time are UNKNOWN.
 - Post-registration commits require their own exact-SHA audit/conformance; the pre-registration PASS is not transferred to later main heads.
+
+
+## 8. Exact-head verification after the time-binding commit
+
+- Time-binding and EVT-0241 correction commit: `b5853aa5aa33b922e7e4388e45d08d59f81fccd1`; commit UTC `2026-10-31T06:49:09Z`; derived Tehran `2026-10-31T10:19:09+03:30`.
+- Corrected EVT-0241 time-binding blob: `bcdaab1c429b5cae666f6593212d2f9f03277088`; independently read back; all prior PENDING event fields are now populated from Git history.
+- Living Architecture Audit run 41178131603: SUCCESS on exact SHA `b5853aa5aa33b922e7e4388e45d08d59f81fccd1`.
+- Portable RAHM Conformance run 41178131559: SUCCESS on the same exact SHA. Starter package v0.3.8: 106,500 bytes; SHA-256 `924035df7cbe79ab710958b1e509a68d4a4bc1ac0175c85cd8eda10b83a370c0`; 23 extracted tests PASS; ZIP integrity, source-byte match, artifact round-trip and paired master read-back PASS; real independent-host acceptance NOT RUN.
+- Evidence Gate run 41178131764: SUCCESS on that exact SHA; follow-up main commit `e8e5cf448119e328e12b7801e953edfe9438751e` at UTC `2026-10-31T06:49:19Z` / Tehran `2026-10-31T10:19:19+03:30`. The follow-up contains `evidence/evidence-gate-41178131764.txt`; no Actions runs were found for that new SHA at the time of this receipt, so it remains NOT VERIFIED.
+- This file's own final-change commit metadata is not self-referenced and must be retrieved separately from Git history.

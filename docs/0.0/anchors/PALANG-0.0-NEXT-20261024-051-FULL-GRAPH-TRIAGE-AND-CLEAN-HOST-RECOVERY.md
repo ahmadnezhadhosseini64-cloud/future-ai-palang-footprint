@@ -2,7 +2,7 @@
 
 - Stable ID: G6IP-RAHM-NEXT-051-20261024
 - Production ID: G6IP-RAHM-NEXT-051-20261024
-- Version: 1.0.15
+- Version: 1.0.16
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE
 - Project: Future AI / Palang Footprint — HAIF
 - Canonical queue: this file only
@@ -12,7 +12,7 @@
 - Package contract: [HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md](../../../prototype/haif-gpt6-starter/HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md)
 - Canonical ZIP filename: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`
 - Stable package ID: `HAIF-GPT6-PORTABLE-STARTER-20261025-004`
-- Latest package source target: v0.3.6; artifact build/read-back receipt must be inspected on the exact target SHA.
+- Latest verified package source target: v0.3.8; exact-SHA build/read-back receipts are required for every later main SHA.
 - Queue rule: do not create NEXT-052.
 
 ## Mission
@@ -96,7 +96,7 @@ The previous blob at this path began with the Integration Queue README title and
 ## Current continuation — POINT-0/061 / CURRENT-111 / EVT-0241 (2026-10-31)
 
 - Current chain: [POINT-0/061](./GPT6-RAHM-USER-POINT-0-20261030-061-ARCHITECTURE-GAP-RECONCILIATION.md) → [IN-099](./PALANG-0.0-IN-20261030-099-ARCHITECTURE-GAP-RECONCILIATION.md) → [OUT-098](./PALANG-0.0-OUT-20261030-098-ARCHITECTURE-GAP-RECONCILIATION.md) → [EVT-0240](../../architecture/BEHAVIOR-TRACE/EVT-0240-POINT-061-ARCHITECTURE-GAP-RECONCILIATION-2026-10-30.md) → [CURRENT-111](./PALANG-0.0-CURRENT-20261030-111-ARCHITECTURE-GAP-RECONCILIATION.md) → NEXT-051.
-- Latest mirror-only event: [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) / [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md).
+- Latest mirror-only event: [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0242-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) / [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0242-LIVE-MIRROR-SYNC-2026-10-31.md).
 - CURRENT-065/CURRENT-066 execution-pointer and overlay-manifest lineage remains OPEN; no winner selected. Preserve both branches and EVT-0178/EVT-0179 collision lineage.
 - NEXT-051 remains the sole active queue. Do not create NEXT-052. The missing forensic archive link remains OPEN even though the canonical NEXT-051 path/body was restored from a dedicated source revision.
 
@@ -119,4 +119,16 @@ The previous blob at this path began with the Integration Queue README title and
 - Portable package recovery protocol: [package protocol](../../../prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md)
 - Export manifest: [EXPORT_MANIFEST](../../portable/RAHM/EXPORT_MANIFEST.json)
 - Root: [POINT-0/061](./GPT6-RAHM-USER-POINT-0-20261030-061-ARCHITECTURE-GAP-RECONCILIATION.md)
-- Latest mirror-only event: [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) / [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md)
+- Latest mirror-only event: [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0242-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) / [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0242-LIVE-MIRROR-SYNC-2026-10-31.md)
+
+
+## Latest exact-SHA audit, conformance and transfer evidence — 2026-10-31
+
+- Latest tested main SHA before this queue revision: `b5853aa5aa33b922e7e4388e45d08d59f81fccd1`, commit UTC `2026-10-31T06:49:09Z` / Tehran `2026-10-31T10:19:09+03:30`.
+- Living Architecture Audit run 41178131603: SUCCESS on that exact SHA. Dynamic latest-global-chain reconstruction passed separately from historical overlay-pointer discovery. CURRENT-065/CURRENT-066 and other pointer candidates remain ambiguous/open; no winner selected.
+- Portable RAHM Conformance run 41178131559: SUCCESS on the same exact SHA. Existing package ID and canonical filename retained; internal version 0.3.8; ZIP 106,500 bytes; SHA-256 `924035df7cbe79ab710958b1e509a68d4a4bc1ac0175c85cd8eda10b83a370c0`; 23 extracted tests, source-byte comparison, ZIP integrity, downloaded artifact round-trip and paired living-master artifact read-back PASS. `real_independent_host_acceptance=NOT_RUN`.
+- Audit inventory on the tested SHA: 14 missing local links; 23 Stable-ID collision groups (1 open); 74 Production-ID groups (72 open); 5 Reference-ID groups (5 open); 46 event-number groups (8 open); 11 exact-content duplicate groups; 79 declared parent edges; 2 unresolved parent edges; 0 ambiguous parent edges.
+- CPREL Independent Transfer Evidence run 41178131577 and CPREL Independent Runtime Transfer Harness run 41178131554 passed on the same SHA. These demonstrate CI-to-CI transfer only, not real AI-host acceptance.
+- Evidence Gate run 41178131764 passed on the tested SHA, then created follow-up main `e8e5cf448119e328e12b7801e953edfe9438751e` at UTC `2026-10-31T06:49:19Z` / Tehran `2026-10-31T10:19:19+03:30`. No Actions runs were found for that follow-up SHA at the time of this queue revision; it remains NOT VERIFIED. A later exact-SHA audit/conformance is required.
+- Issues #20/#21 remain OPEN. Missing NEXT-051 forensic archive remains OPEN/404. CURRENT-065/CURRENT-066 remains OPEN. BOART-FOLLOWUP-01 remains the next source/rule graph reconciliation. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external host, second host, restart persistence and background capture NOT RUN / NOT VERIFIED.
+- Path A and Path B remain distinct but connected. NEXT-051 remains the only active queue; do not create NEXT-052.
