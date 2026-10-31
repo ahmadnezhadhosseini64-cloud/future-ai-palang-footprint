@@ -3,16 +3,16 @@
 - Event: [EVT-0241](./EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md)
 - Stable ID: PALANG-TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31
 - Version: 1.0.0
-- Status: PENDING — event commit metadata and independent read-back will be populated from Git metadata after registration.
+- Status: EVENT COMMIT TIME VERIFIED / EVENT FILE READ-BACK VERIFIED. The original pending fields were reconciled from Git commit metadata on 2026-10-31; this file's own final-change commit is recorded separately in the EVT-0242 execution receipt.
 - Canonical time rule: event registration time is the actual final-change Git commit UTC timestamp of EVT-0241; Tehran is derived from the same instant (+03:30). Workflow run time, Library metadata time and read-back operation time are separate.
 
-## 1. Event registration time — pending Git read-back
+## 1. Event registration time — recovered from Git metadata
 
-- Event commit SHA: PENDING.
-- Commit UTC: PENDING.
-- Derived Asia/Tehran: PENDING.
-- Event blob SHA: PENDING.
-- Event file exact read-back: PENDING.
+- Event commit SHA: `75a50dade8f9c65375c7c26f3effbeb1b43225fb`.
+- Commit UTC: `2026-10-31T06:35:00Z`.
+- Derived Asia/Tehran: `2026-10-31T10:05:00+03:30`.
+- Event blob SHA: `59f098c944a69687de7df4374a3034eb2e16097a`.
+- Event file exact read-back: PASS — fetched from `main`; Stable ID and expected event content confirmed.
 
 ## 2. Source and Library comparison
 
@@ -33,6 +33,5 @@
 
 ## 4. Repository registration read-back
 
-- All changed files are intended to be read back independently after commit.
-- This placeholder is deliberately not a success receipt. Replace PENDING fields only from the actual commit metadata and independent file read-back.
-- The time-binding file's own final-change commit time is not self-referenced; retrieve it separately from Git metadata.
+- EVT-0241 event commit metadata and event-file read-back are now independently verified.
+- The time-binding file's own final-change commit time is not self-referenced; it is retrieved separately from Git history and cross-linked in the EVT-0242 registration receipt.
