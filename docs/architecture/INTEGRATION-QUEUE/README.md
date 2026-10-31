@@ -3,13 +3,13 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.10.11
-- Date: 2026-10-30
+- Version: 1.10.12
+- Date: 2026-10-31
 - Exact Time: UNKNOWN / UNVERIFIED for this index update; event registration time is bound in TIME-BINDING-EVT-0239; prior times remain historical evidence.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: ACTIVE / LIVING — latest observed user-turn root POINT-0/060 (0+); current execution checkpoint CURRENT-110; sole active queue NEXT-051. Living master v1.7.36. Current-head audit/conformance must be judged only against exact tested SHAs. CURRENT-065/CURRENT-066, duplicate POINT-0/059 and NEXT-051 path/body mismatch remain OPEN.
+- Status: ACTIVE / LIVING — latest observed user-turn root POINT-0/061 (0+); current execution checkpoint CURRENT-111; sole active queue NEXT-051. Living master v1.7.39. Exact tested SHAs govern audit/conformance claims. CURRENT-065/CURRENT-066, duplicate POINT-0/059, missing NEXT-051 forensic archive and historic graph/identity/time reconciliation remain OPEN.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
@@ -2459,3 +2459,10 @@ Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-11
 - Current restored NEXT-051: Version 1.0.14; commit ac26a589487cdc915d3994058b383a7ee20b94f5; blob e0b6b1bf7f951e6fae2b98feb480832288b3cdbd; independent read-back PASS.
 - The displaced forensic archive claimed by the old repair note is still missing (404); blob afb99f50b24027e89170900cf3deaddcc5cc38bf is Integration Queue content, not NEXT-051. Preserve this failed archive pointer as OPEN evidence.
 - The path/body mismatch is repaired in the current repository tree; audit acceptance and full NEXT-051 completion remain OPEN. No NEXT-052.
+
+## EVT-0241 — live mirror synchronization and current-chain verifier repair (2026-10-31)
+- [EVT-0241](../BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) / [TIME-BINDING-EVT-0241](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md).
+- Current global chain: POINT-0/061 → IN-099 → OUT-098 → EVT-0240 → CURRENT-111 → NEXT-051. NEXT-051 remains the sole active queue; no NEXT-052.
+- Repository source blob `de1b75f07241c9b313e476af5f1417177ff78c10` remains authoritative. Library version 7 is source plus one extra terminal LF; no rewrite.
+- The exact-head audit failure on 702f41dd7b8347526bd99cb116040df23d158abf was a stale global-chain verifier assumption, not independent-host evidence. The new dynamic verifier is separate from historical overlay-pointer discovery. CURRENT-065/CURRENT-066 remains OPEN; no winner selected.
+- Path A (portable package and clean-host acceptance) and Path B (historical graph, identity, parent and time reconciliation) remain separate but connected. Issues #20/#21 remain OPEN.

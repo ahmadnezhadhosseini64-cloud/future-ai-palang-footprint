@@ -2,12 +2,12 @@
 
 - Stable ID: G6IP-RAHM-NEXT-051-20261024
 - Production ID: G6IP-RAHM-NEXT-051-20261024
-- Version: 1.0.14
+- Version: 1.0.15
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE
 - Project: Future AI / Palang Footprint — HAIF
 - Canonical queue: this file only
-- Current checkpoint: [CURRENT-101](PALANG-0.0-CURRENT-20261027-101-HOST-GROWTH-AND-REPOSITORY-LOOP.md)
-- Current point: [POINT-0/051 (0+)](GPT6-RAHM-USER-POINT-0-20261027-051-0PLUS-HOST-GROWTH-AND-REPOSITORY-LOOP.md)
+- Current checkpoint: [CURRENT-111](PALANG-0.0-CURRENT-20261030-111-ARCHITECTURE-GAP-RECONCILIATION.md)
+- Current point: [POINT-0/061 (0+)](GPT6-RAHM-USER-POINT-0-20261030-061-ARCHITECTURE-GAP-RECONCILIATION.md)
 - Living mother: [سند مرجع مادر مدل اولیه](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 - Package contract: [HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md](../../../prototype/haif-gpt6-starter/HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md)
 - Canonical ZIP filename: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`
@@ -92,3 +92,31 @@ The previous blob at this path began with the Integration Queue README title and
 - Issues #20 and #21 remain OPEN. Path A (portable package and independent-host acceptance) and Path B (historical graph/identity reconciliation) remain separate but linked.
 - Buffer and Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN. Do not infer closure from repository CI.
 - No NEXT-052 created. Continue this existing NEXT-051 queue only.
+
+## Current continuation — POINT-0/061 / CURRENT-111 / EVT-0241 (2026-10-31)
+
+- Current chain: [POINT-0/061](./GPT6-RAHM-USER-POINT-0-20261030-061-ARCHITECTURE-GAP-RECONCILIATION.md) → [IN-099](./PALANG-0.0-IN-20261030-099-ARCHITECTURE-GAP-RECONCILIATION.md) → [OUT-098](./PALANG-0.0-OUT-20261030-098-ARCHITECTURE-GAP-RECONCILIATION.md) → [EVT-0240](../../architecture/BEHAVIOR-TRACE/EVT-0240-POINT-061-ARCHITECTURE-GAP-RECONCILIATION-2026-10-30.md) → [CURRENT-111](./PALANG-0.0-CURRENT-20261030-111-ARCHITECTURE-GAP-RECONCILIATION.md) → NEXT-051.
+- Latest mirror-only event: [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) / [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md).
+- CURRENT-065/CURRENT-066 execution-pointer and overlay-manifest lineage remains OPEN; no winner selected. Preserve both branches and EVT-0178/EVT-0179 collision lineage.
+- NEXT-051 remains the sole active queue. Do not create NEXT-052. The missing forensic archive link remains OPEN even though the canonical NEXT-051 path/body was restored from a dedicated source revision.
+
+## Acceptance gates — all remain OPEN
+
+- Full state recovery: OPEN / NOT RUN — reconstruct independently from IN and OUT.
+- Clean host import: OPEN / NOT RUN — use a fresh clean interactive AI-host session.
+- Second-host import: OPEN / NOT RUN.
+- Restart persistence: OPEN / NOT VERIFIED — restart/new-session recovery.
+- Idle/background capture: OPEN / NOT VERIFIED — automatic live message capture.
+- Graph/identity/parent/time triage: OPEN / REVIEW_REQUIRED — duplicate IDs, ambiguous parents and complete source/rule census.
+- Issue #20: OPEN. Issue #21: OPEN.
+- Buffer: NOT VERIFIED. Persistent Memory: NOT VERIFIED. Dropbox: OPEN / NOT VERIFIED. Independent-host recovery: NOT RUN.
+
+## Recovery links — NEXT-051
+- Current checkpoint: [CURRENT-111](PALANG-0.0-CURRENT-20261030-111-ARCHITECTURE-GAP-RECONCILIATION.md)
+- Sole active queue: [NEXT-051](PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
+- Living master: [سند مرجع مادر](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
+- Independent-host recovery protocol: [protocol](../../architecture/مدل%20اولیه%20AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md)
+- Portable package recovery protocol: [package protocol](../../../prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md)
+- Export manifest: [EXPORT_MANIFEST](../../portable/RAHM/EXPORT_MANIFEST.json)
+- Root: [POINT-0/061](./GPT6-RAHM-USER-POINT-0-20261030-061-ARCHITECTURE-GAP-RECONCILIATION.md)
+- Latest mirror-only event: [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) / [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md)

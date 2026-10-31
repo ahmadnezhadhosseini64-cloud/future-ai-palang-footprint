@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-30 — EVT-0239 live mirror synchronization. Latest observed root POINT-0/060 (0+), checkpoint CURRENT-110, sole active queue NEXT-051. Living master v1.7.36. Main HEAD at EVT-0239 observation 81077ecd3cb25e4c559c036a13f9a420e1bb648a remains NOT VERIFIED by the preceding exact-SHA audit/conformance runs.
+**Last Updated:** 2026-10-31 — EVT-0241 live mirror synchronization. Latest observed root POINT-0/061 (0+), checkpoint CURRENT-111, sole active queue NEXT-051. Living master v1.7.39. Main HEAD before EVT-0241 registration 702f41dd7b8347526bd99cb116040df23d158abf (commit UTC 2026-10-30T07:23:57Z); its latest Living Architecture Audit failed on that exact SHA because the global-chain verifier was stale. Latest Portable RAHM Conformance passed only on prior SHA ea769d9564ed45c41373cb9435e398fa8adc8261.
 
 ## Canonical References
 
@@ -2170,3 +2170,10 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - Canonical file restored from source-backed dedicated revision 94361a0dc62f10496e766238e125578576401310 and advanced to Version 1.0.14.
 - Restoration commit ac26a589487cdc915d3994058b383a7ee20b94f5; blob e0b6b1bf7f951e6fae2b98feb480832288b3cdbd; independent read-back and Stable ID G6IP-RAHM-NEXT-051-20261024 verified.
 - This resolves the path/body mismatch at repository level only; NEXT-051 acceptance remains OPEN pending exact-SHA audit/conformance and independent-host evidence.
+
+## EVT-0241 — live mirror sync and current-chain verifier separation (2026-10-31)
+- [EVT-0241](architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) / [TIME-BINDING-EVT-0241](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md).
+- Current user chain: POINT-0/061 → IN-099 → OUT-098 → EVT-0240 → CURRENT-111 → NEXT-051. NEXT-051 remains the only active queue; no NEXT-052.
+- Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library v7 (10,480 chars) equals source plus one terminal LF. Semantic fields match; no Library write.
+- The exact-head audit failure on 702f41dd7b8347526bd99cb116040df23d158abf was traced to a verifier pinned to POINT-0/059 / CURRENT-109. A separate dynamic latest-chain verifier is now used by audit and conformance workflows; the historical overlay pointer verifier remains separate and CURRENT-065/CURRENT-066 remains OPEN.
+- Issues #20/#21 OPEN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN.

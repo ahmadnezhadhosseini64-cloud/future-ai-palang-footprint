@@ -91,7 +91,14 @@
     "OUT-097",
     "EVT-0237",
     "CURRENT-110",
-    "NEXT-051"
+    "NEXT-051",
+    "POINT-0/061",
+    "IN-099",
+    "OUT-098",
+    "EVT-0240",
+    "CURRENT-111",
+    "NEXT-051 (sole active queue)",
+    "EVT-0241 (mirror-only event; not a new user root)"
   ],
   "entrypoint": "engine.py",
   "host_instructions": "GPT6_HOST_INSTRUCTIONS.md",

@@ -1,7 +1,7 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.8.24",
-  "manifest_status": "Moved mutable living-architecture-audit workflow from pinned digest inventory to live references after exact-byte mismatch (expected f96e81bc57ac830168f9101247d49902337774a50284ae0f803ef8fde711db25; observed 48ced2ebfead5ff50d0ad1b83de0192b922ed6218d69dc5e45fda51c6082e814 at run 40488966295). Existing starter ZIP rebuilt under its original canonical filename; latest artifact receipt is tracked by the starter-package workflow. Real independent-host acceptance remains NOT RUN.",
+  "version": "1.8.25",
+  "manifest_status": "Mutable current-state and startup/governance references are included in each export and receive exact SHA-256 plus Git blob SHA-1 observations in the same CI run. Latest global chain POINT-0/061 → IN-099 → OUT-098 → EVT-0240 → CURRENT-111 → NEXT-051 is explicitly tracked; the dynamic latest-chain verifier is separate from historical overlay-pointer discovery. CURRENT-065/CURRENT-066 remains OPEN / AMBIGUOUS; exact-SHA audit/conformance and independent-host acceptance must be judged from their own receipts. Existing starter ZIP is rebuilt in place under its canonical filename and stable identity/internal version 0.3.8; real independent-host acceptance remains NOT RUN.",
   "created_from_checkpoint": "HAIF-POINT-0-044-STARTER-ZIP-INPLACE-UPDATE-20261027 + HAIF-CURRENT-094",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [
@@ -482,7 +482,16 @@
     "docs/0.0/anchors/PALANG-0.0-OUT-20261027-079-INDEPENDENT-HOST-RECOVERY.md",
     "docs/architecture/BEHAVIOR-TRACE/EVT-0217-INDEPENDENT-HOST-RECOVERY-HARD-AUDIT-2026-10-27.md",
     "docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-092-INDEPENDENT-HOST-RECOVERY.md",
-    ".github/workflows/living-architecture-audit.yml"
+    ".github/workflows/living-architecture-audit.yml",
+    "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261030-061-ARCHITECTURE-GAP-RECONCILIATION.md",
+    "docs/0.0/anchors/PALANG-0.0-IN-20261030-099-ARCHITECTURE-GAP-RECONCILIATION.md",
+    "docs/0.0/anchors/PALANG-0.0-OUT-20261030-098-ARCHITECTURE-GAP-RECONCILIATION.md",
+    "docs/architecture/BEHAVIOR-TRACE/EVT-0240-POINT-061-ARCHITECTURE-GAP-RECONCILIATION-2026-10-30.md",
+    "docs/0.0/anchors/PALANG-0.0-CURRENT-20261030-111-ARCHITECTURE-GAP-RECONCILIATION.md",
+    "docs/architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md",
+    "docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md",
+    "scripts/behavior-hunter/verify_latest_current_0_0_chain.py",
+    "scripts/behavior-hunter/tests/test_verify_latest_current_0_0_chain.py"
   ],
   "live_reference_policy": "Mutable current-state and startup/governance references are included in each export and receive exact SHA-256 plus Git blob SHA-1 observations in the same CI run. This includes RAHM_BOOT and RAHM_ARCHITECTURE because their canonical checkpoint binding must track the current live chain. Stable core remains digest-pinned."
 }

@@ -1,8 +1,8 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.8
-- Date: 2026-10-30
+- Version: 1.0.9
+- Date: 2026-10-31
 - Project: Future AI / Palang Footprint / HAIF
 
 ## مسیرهای بازیابی
@@ -1021,3 +1021,10 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - [TIME-BINDING-EVT-0240](./TIME-BINDING-EVT-0240-POINT-061-2026-10-30.md) binds POINT-0/061, IN-099, OUT-098, EVT-0240, CURRENT-111 and NEXT-051 restoration to actual commit UTC and derived Tehran time.
 - NEXT-051 canonical file restored from commit 94361a0dc62f10496e766238e125578576401310; restoration commit ac26a589487cdc915d3994058b383a7ee20b94f5; exact blob read-back verified.
 - CURRENT-065/CURRENT-066 remains OPEN. Library newline normalization remains NOT DONE. Issues #20/#21 remain OPEN.
+
+## EVT-0241 — Live mirror synchronization recheck (2026-10-31)
+- [EVT-0241](./EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) / [TIME-BINDING-EVT-0241](./TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md).
+- Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, version 7 (10,480 chars). Library equals source plus one trailing LF; semantic match PASS; exact equality FALSE; no Library write.
+- Current root/checkpoint/queue: POINT-0/061 → CURRENT-111 → NEXT-051. This is a mirror-only event, not a new user root.
+- Audit run `41038536961` failed on tested SHA `702f41dd7b8347526bd99cb116040df23d158abf` because the global current-chain verifier was stale. Conformance run `41019834175` passed only on previous SHA `ea769d9564ed45c41373cb9435e398fa8adc8261`; Watchdog `41027558272` passed on `702f41dd7b8347526bd99cb116040df23d158abf` but is not full audit/conformance.
+- CURRENT-065/CURRENT-066, Issues #20/#21 and external-host/persistence gates remain OPEN / NOT VERIFIED / NOT RUN as appropriate.

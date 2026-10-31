@@ -138,11 +138,12 @@ jobs:
           echo "CURRENT_POINT_0_007_CURRENT_058_NEXT_051_CONTINUITY=PASS"
           echo "NEXT_051_ACCEPTANCE_GATES_STILL_OPEN=TRUE"
 
-      - name: Verify actual current IN/OUT canonical-state reconstruction
+      - name: Verify latest global current chain separately from overlay-pointer recovery
         shell: bash
         run: |
           set -euo pipefail
-          python3 scripts/behavior-hunter/verify_current_0_0_chain.py
+          python3 -m unittest discover -s scripts/behavior-hunter/tests -p 'test_verify_latest_current_0_0_chain.py' -v
+          python3 scripts/behavior-hunter/verify_latest_current_0_0_chain.py
 
       - name: Test live CURRENT pointer discovery and preserve ambiguity as an explicit gate
         shell: bash
