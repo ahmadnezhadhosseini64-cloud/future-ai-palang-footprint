@@ -2,7 +2,7 @@
 
 - Stable ID: G6IP-RAHM-NEXT-051-20261024
 - Production ID: G6IP-RAHM-NEXT-051-20261024
-- Version: 1.0.18
+- Version: 1.0.19
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE
 - Project: Future AI / Palang Footprint — HAIF
 - Canonical queue: this file only
@@ -96,7 +96,8 @@ The previous blob at this path began with the Integration Queue README title and
 ## Current continuation — POINT-0/061 / CURRENT-111 / EVT-0242 (2026-10-31)
 
 - Current chain: [POINT-0/061](./GPT6-RAHM-USER-POINT-0-20261030-061-ARCHITECTURE-GAP-RECONCILIATION.md) → [IN-099](./PALANG-0.0-IN-20261030-099-ARCHITECTURE-GAP-RECONCILIATION.md) → [OUT-098](./PALANG-0.0-OUT-20261030-098-ARCHITECTURE-GAP-RECONCILIATION.md) → [EVT-0240](../../architecture/BEHAVIOR-TRACE/EVT-0240-POINT-061-ARCHITECTURE-GAP-RECONCILIATION-2026-10-30.md) → [CURRENT-111](./PALANG-0.0-CURRENT-20261030-111-ARCHITECTURE-GAP-RECONCILIATION.md) → NEXT-051.
-- Latest mirror-only event: [EVT-0242](../../architecture/BEHAVIOR-TRACE/EVT-0242-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) / [TIME-BINDING-EVT-0242](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0242-LIVE-MIRROR-SYNC-2026-10-31.md).
+- Latest mirror-only event: [EVT-0243](../../architecture/BEHAVIOR-TRACE/EVT-0243-LIVE-MIRROR-SYNC-RECHECK-2026-11-01.md) / [TIME-BINDING-EVT-0243](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0243-LIVE-MIRROR-SYNC-2026-11-01.md).
+- Previous mirror-only event retained: [EVT-0242](../../architecture/BEHAVIOR-TRACE/EVT-0242-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) / [TIME-BINDING-EVT-0242](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0242-LIVE-MIRROR-SYNC-2026-10-31.md).
 - CURRENT-065/CURRENT-066 execution-pointer and overlay-manifest lineage remains OPEN; no winner selected. Preserve both branches and EVT-0178/EVT-0179 collision lineage.
 - NEXT-051 remains the sole active queue. Do not create NEXT-052. The missing forensic archive link remains OPEN even though the canonical NEXT-051 path/body was restored from a dedicated source revision.
 
@@ -139,3 +140,12 @@ The previous blob at this path began with the Integration Queue README title and
 - Latest mirror-only event: [EVT-0242](../../architecture/BEHAVIOR-TRACE/EVT-0242-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) / [TIME-BINDING-EVT-0242](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0242-LIVE-MIRROR-SYNC-2026-10-31.md).
 - Previous mirror-only event remains preserved and linked: [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) / [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md).
 - Both events are mirror-only records; neither creates a new user-turn root or a competing queue. NEXT-051 remains the sole active queue; no NEXT-052.
+
+
+## EVT-0243 exact-SHA and mirror continuation — 2026-11-01
+
+- Latest user-turn root/checkpoint/queue remains POINT-0/061 → CURRENT-111 → NEXT-051. EVT-0243 is mirror-only; no new root or competing queue.
+- Event commit `aadc163fdfb0fc872fbf00221fc4d628acf688fc`, UTC `2026-11-01T06:27:16Z` / Tehran `2026-11-01T09:57:16+03:30`; event read-back PASS. Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` 10,479 chars; Library v7 10,480 chars, source plus one terminal LF; semantic match PASS; no Library write.
+- Living Architecture Audit 41280898957 and Portable RAHM Conformance 41280898982 both SUCCESS on exact SHA `aadc163fdfb0fc872fbf00221fc4d628acf688fc`. Canonical ZIP SHA-256 `6e7ba0be76469836c3b017ca6773899bc0a27136ea91772f4f095493a3a3971f`; 23 extracted tests, ZIP integrity, source-byte match, artifact round-trip and paired master read-back PASS. Real independent-host acceptance NOT RUN.
+- Evidence Gate 41280898970 then moved main to `2d60082ef7fe681bb2dc34407a0afabcdd366554` at UTC `2026-11-01T06:27:24Z` / Tehran `2026-11-01T09:57:24+03:30`. No Actions runs were found on that exact head at this revision; it remains NOT VERIFIED. The audit on `aadc...` found 15 missing links, including the not-yet-created EVT-0243 time-binding link; 23 Stable-ID groups (1 open), 74 Production-ID groups (72 open), 5 Reference-ID groups (5 open), 46 event-number groups (8 open), 11 exact duplicates, 2 unresolved parent edges and 0 ambiguous.
+- Continue CURRENT-065/CURRENT-066 and overlay-manifest lineage, duplicate-ID/parent/time reconciliation, missing forensic archive recovery, Issues #20/#21 and BOART-FOLLOWUP-01. Keep Route A and Route B distinct but connected. Preserve all points and collisions. NEXT-051 remains the sole active queue; no NEXT-052.

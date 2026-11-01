@@ -4,9 +4,9 @@
 - Parent chain: POINT-0/061 → IN-099 → OUT-098 → EVT-0240
 - Active queue: NEXT-051 only; no NEXT-052.
 - Status: ACTIVE / LIVING / OPEN / PARTIAL.
-- Latest verified exact-main baseline before the Evidence Gate follow-up: `b5853aa5aa33b922e7e4388e45d08d59f81fccd1` (UTC `2026-10-31T06:49:09Z`; Tehran `2026-10-31T10:19:09+03:30`). Audit 41178131603 and Portable RAHM Conformance 41178131559 passed on this exact SHA.
+- Latest exact tested SHA after EVT-0243 registration: `aadc163fdfb0fc872fbf00221fc4d628acf688fc` (event commit UTC `2026-11-01T06:27:16Z`; Tehran `2026-11-01T09:57:16+03:30`). Living Architecture Audit 41280898957 and Portable RAHM Conformance 41280898982 both passed on this exact SHA. Evidence Gate 41280898970 then created follow-up main `2d60082ef7fe681bb2dc34407a0afabcdd366554` at UTC `2026-11-01T06:27:24Z` / Tehran `2026-11-01T09:57:24+03:30`; no Actions runs were found on that exact head at this revision, so current main remains NOT VERIFIED.
 - Verified this cycle: canonical source and exact current Library version 7 independently read; source 10,479 chars and Library 10,480 chars (source plus one terminal LF); semantic fields match; no Library write; NEXT-051 restored from exact Git provenance; CURRENT-065/CURRENT-066 remains OPEN.
-- Not verified: Library newline normalization and exact source_file_ref export/upload; missing NEXT-051 forensic archive link; CURRENT-065/CURRENT-066 pointer/overlay adjudication; complete identity/parent/time reconciliation; exact-final-SHA audit/conformance after verifier repair; independent host; Buffer/Persistent Memory/Dropbox.
+- Not verified: Library newline normalization and exact source_file_ref export/upload; missing NEXT-051 forensic archive link; CURRENT-065/CURRENT-066 pointer/overlay adjudication; complete identity/parent/time reconciliation; exact-current-main audit/conformance on the post-Evidence-Gate head `2d60082ef7fe681bb2dc34407a0afabcdd366554`; independent host; Buffer/Persistent Memory/Dropbox.
 - Next action: run the dynamic latest-chain verifier in Living Architecture Audit and Portable RAHM Conformance on the same exact main SHA; then continue CURRENT-065/CURRENT-066 overlay lineage, duplicate-ID/parent/time audit, missing forensic archive recovery and exact source_file_ref export discovery. Keep all branches and collision records.
 - Resume protocol: read current main, this checkpoint, NEXT-051, living master, behavior-trace index, reference index, integration queue, Issues #20/#21, mirror event and latest Actions tested SHAs before each continuation.
 - Unknown execution timestamps remain UNKNOWN until commit metadata is fetched.
@@ -44,7 +44,8 @@
 - Input: [IN-099](./PALANG-0.0-IN-20261030-099-ARCHITECTURE-GAP-RECONCILIATION.md)
 - Output: [OUT-098](./PALANG-0.0-OUT-20261030-098-ARCHITECTURE-GAP-RECONCILIATION.md)
 - User-turn event: [EVT-0240](../../architecture/BEHAVIOR-TRACE/EVT-0240-POINT-061-ARCHITECTURE-GAP-RECONCILIATION-2026-10-30.md)
-- Latest mirror event: [EVT-0242](../../architecture/BEHAVIOR-TRACE/EVT-0242-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) / [TIME-BINDING-EVT-0242](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0242-LIVE-MIRROR-SYNC-2026-10-31.md).
+- Latest mirror event: [EVT-0243](../../architecture/BEHAVIOR-TRACE/EVT-0243-LIVE-MIRROR-SYNC-RECHECK-2026-11-01.md) / [TIME-BINDING-EVT-0243](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0243-LIVE-MIRROR-SYNC-2026-11-01.md).
+- Previous mirror event retained: [EVT-0242](../../architecture/BEHAVIOR-TRACE/EVT-0242-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) / [TIME-BINDING-EVT-0242](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0242-LIVE-MIRROR-SYNC-2026-10-31.md).
 - Previous mirror event retained: [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) / [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md); its pending time-binding fields were corrected from Git commit metadata.
 - Sole active queue: [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
 - Living master: [سند مرجع مادر](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
@@ -59,3 +60,14 @@
 - The tested audit found 14 missing local links, 1 open Stable-ID collision group, 72 open Production-ID groups, 5 open Reference-ID groups, 8 open event-number groups, 11 exact-content duplicate groups and 2 unresolved parent edges (0 ambiguous). No identity group or pointer was automatically adjudicated.
 - Package v0.3.8 build on the tested SHA: 106,500 bytes; SHA-256 `924035df7cbe79ab710958b1e509a68d4a4bc1ac0175c85cd8eda10b83a370c0`; 23 extracted tests PASS; artifact round-trip and paired master read-back PASS. Real independent-host acceptance remains NOT RUN.
 - CURRENT-065/CURRENT-066 remains OPEN; Issue #20 and #21 remain OPEN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent host, second host, restart and background capture NOT RUN / NOT VERIFIED. No NEXT-052.
+
+
+## Execution update — EVT-0243 live mirror synchronization and exact-SHA follow-through (2026-11-01)
+
+- Latest global user-turn chain remains POINT-0/061 → IN-099 → OUT-098 → EVT-0240 → CURRENT-111 → NEXT-051. This is a mirror-only event, not a new root. Preserve POINT-0/016, /017, /018 and all later roots.
+- Canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10`, 10,479 chars; exact Library v7 under `libfile_7ac3c9a6ec14819198eb2751e204aa48`, 10,480 chars, equals source plus one terminal LF. Semantic match PASS; exact equality FALSE; no Library write; source unchanged.
+- EVT-0243 event commit `aadc163fdfb0fc872fbf00221fc4d628acf688fc`, UTC `2026-11-01T06:27:16Z` / Tehran `2026-11-01T09:57:16+03:30`; event blob `94c953e77ca7ecf5475698d351372293a939ab62`; event read-back exact PASS.
+- Living Architecture Audit 41280898957 and Portable RAHM Conformance 41280898982 both SUCCESS on exact SHA `aadc163fdfb0fc872fbf00221fc4d628acf688fc`. Starter ZIP v0.3.8 SHA-256 `6e7ba0be76469836c3b017ca6773899bc0a27136ea91772f4f095493a3a3971f`; 23 extracted tests, ZIP integrity, source-byte read-back, artifact round-trip and paired master artifact read-back PASS.
+- Evidence Gate 41280898970 created follow-up main `2d60082ef7fe681bb2dc34407a0afabcdd366554` at UTC `2026-11-01T06:27:24Z` / Tehran `2026-11-01T09:57:24+03:30`. No Actions runs were found on that exact head at this revision; it remains NOT VERIFIED. The audit on `aadc...` found 15 missing local links, including this event's time-binding link not yet present on that tested tree; 23 Stable-ID groups (1 open), 74 Production-ID groups (72 open), 5 Reference-ID groups (5 open), 46 event-number groups (8 open), 11 exact duplicates, 2 unresolved parent edges and 0 ambiguous parent edges.
+- The time-binding file is added in the current registration update. Its link repair and the new documentation commit require fresh exact-SHA audit/conformance; no result is inferred from the parent run.
+- CURRENT-065/CURRENT-066 remains OPEN; Issue #20 and #21 remain OPEN; missing NEXT-051 forensic archive remains OPEN. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent host, second host, restart and background capture remain NOT RUN / NOT VERIFIED. No NEXT-052.

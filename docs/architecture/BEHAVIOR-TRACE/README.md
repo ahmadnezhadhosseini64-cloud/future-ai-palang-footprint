@@ -1,8 +1,8 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.10
-- Date: 2026-10-31
+- Version: 1.0.11
+- Date: 2026-11-01
 - Project: Future AI / Palang Footprint / HAIF
 
 ## مسیرهای بازیابی
@@ -1041,3 +1041,14 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Tested audit findings: 14 missing local links; 23 Stable-ID groups (1 open); 74 Production-ID groups (72 open); 5 Reference-ID groups (all open); 46 event-number groups (8 open); 11 exact-content duplicate groups; 2 unresolved parent edges (0 ambiguous). No collision group or pointer was silently closed.
 - Portable starter v0.3.8: 106,500 bytes; SHA-256 `924035df7cbe79ab710958b1e509a68d4a4bc1ac0175c85cd8eda10b83a370c0`; 23 extracted tests and artifact round-trip PASS. Real independent-host acceptance NOT RUN.
 - Issues #20/#21 OPEN; CURRENT-065/CURRENT-066 OPEN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN.
+
+
+## EVT-0243 — Live mirror synchronization and exact-SHA verification (2026-11-01)
+
+- [EVT-0243](./EVT-0243-LIVE-MIRROR-SYNC-RECHECK-2026-11-01.md) / [TIME-BINDING-EVT-0243](./TIME-BINDING-EVT-0243-LIVE-MIRROR-SYNC-2026-11-01.md).
+- Event commit `aadc163fdfb0fc872fbf00221fc4d628acf688fc`, UTC `2026-11-01T06:27:16Z`, Tehran `2026-11-01T09:57:16+03:30`; event file read-back exact PASS.
+- Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); exact Library v7 under `libfile_7ac3c9a6ec14819198eb2751e204aa48` (10,480 chars) equals source plus one terminal LF. Semantic fields match; exact equality FALSE; no Library write or source change.
+- Living Architecture Audit 41280898957 and Portable RAHM Conformance 41280898982 both SUCCESS on exact SHA `aadc163fdfb0fc872fbf00221fc4d628acf688fc`. Canonical starter ZIP SHA-256 `6e7ba0be76469836c3b017ca6773899bc0a27136ea91772f4f095493a3a3971f`; 23 extracted tests, ZIP integrity, source-byte match and artifact round-trip PASS.
+- Evidence Gate 41280898970 passed on `aadc...` and created follow-up main `2d60082ef7fe681bb2dc34407a0afabcdd366554` at UTC `2026-11-01T06:27:24Z` / Tehran `2026-11-01T09:57:24+03:30`. No Actions runs found on that exact follow-up SHA; it remains NOT VERIFIED.
+- Audit findings on `aadc...`: 15 missing local links (one was this event's time-binding link, not yet created on that tested tree); 23 Stable-ID groups (1 open); 74 Production-ID groups (72 open); 5 Reference-ID groups (all open); 46 event-number groups (8 open); 11 exact-content duplicate groups; 2 unresolved parent edges; 0 ambiguous parent edges.
+- Latest root/checkpoint/queue remains POINT-0/061 → CURRENT-111 → NEXT-051. CURRENT-065/CURRENT-066, Issues #20/#21 and external destination/host gates remain OPEN / NOT VERIFIED / NOT RUN as appropriate. No NEXT-052.

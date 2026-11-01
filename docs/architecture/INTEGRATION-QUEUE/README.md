@@ -3,13 +3,13 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.10.13
-- Date: 2026-10-31
-- Exact Time: EVT-0242 event commit UTC `2026-10-31T06:47:51Z` / Tehran `2026-10-31T10:17:51+03:30` is bound in TIME-BINDING-EVT-0242. This queue-index revision's own final-change commit time is retrieved separately from Git metadata; it is not inferred from event time.
+- Version: 1.10.14
+- Date: 2026-11-01
+- Exact Time: EVT-0243 event commit UTC `2026-11-01T06:27:16Z` / Tehran `2026-11-01T09:57:16+03:30` is bound in TIME-BINDING-EVT-0243. This queue-index revision's own final-change commit time is retrieved separately from Git metadata; it is not inferred from event time.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: ACTIVE / LIVING — latest observed user-turn root POINT-0/061 (0+); current execution checkpoint CURRENT-111; sole active queue NEXT-051. Living master v1.7.40. Latest exact tested main SHA before this index revision: `b5853aa5aa33b922e7e4388e45d08d59f81fccd1` (audit and conformance PASS); Evidence Gate follow-up `e8e5cf448119e328e12b7801e953edfe9438751e` NOT VERIFIED at this revision. Exact tested SHAs govern audit/conformance claims. CURRENT-065/CURRENT-066, duplicate POINT-0/059, missing NEXT-051 forensic archive and historic graph/identity/time reconciliation remain OPEN.
+- Status: ACTIVE / LIVING — latest observed user-turn root POINT-0/061 (0+); current execution checkpoint CURRENT-111; sole active queue NEXT-051. Living master v1.7.41. Living Architecture Audit 41280898957 and Portable RAHM Conformance 41280898982 passed on exact SHA `aadc163fdfb0fc872fbf00221fc4d628acf688fc`; Evidence Gate 41280898970 then created follow-up main `2d60082ef7fe681bb2dc34407a0afabcdd366554` at UTC `2026-11-01T06:27:24Z`, with no Actions runs found on that exact head at this revision. Current head remains NOT VERIFIED. Exact tested SHAs govern all audit/conformance claims. CURRENT-065/CURRENT-066, duplicate POINT-0/059, missing NEXT-051 forensic archive and historic graph/identity/time reconciliation remain OPEN.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
@@ -2477,3 +2477,11 @@ Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-11
 - Living Architecture Audit 41178131603 and Portable RAHM Conformance 41178131559 passed on exact SHA `b5853aa5aa33b922e7e4388e45d08d59f81fccd1`. Evidence Gate 41178131764 created `e8e5cf448119e328e12b7801e953edfe9438751e`; that follow-up was NOT VERIFIED at this revision.
 - Audit findings remain open: 14 missing local links; 1 open Stable-ID group; 72 open Production-ID groups; 5 open Reference-ID groups; 8 open event-number groups; 11 exact-content duplicate groups; 2 unresolved parent edges. CURRENT-065/CURRENT-066 remains OPEN; no winner selected.
 - Issues #20/#21 remain OPEN. BOART-FOLLOWUP-01 remains next. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN. Route A and Route B remain distinct but linked.
+
+
+## EVT-0243 mirror synchronization and exact-SHA evidence — 2026-11-01
+- [EVT-0243](../BEHAVIOR-TRACE/EVT-0243-LIVE-MIRROR-SYNC-RECHECK-2026-11-01.md) / [TIME-BINDING-EVT-0243](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0243-LIVE-MIRROR-SYNC-2026-11-01.md). Root remains POINT-0/061 → IN-099 → OUT-098 → EVT-0240 → CURRENT-111 → NEXT-051; mirror-only event, not a new user root.
+- Source blob `de1b75f07241c9b313e476af5f1417177ff78c10`, 10,479 chars; Library v7 10,480 chars = source + one terminal LF; semantic match PASS, exact equality FALSE; no Library write.
+- Event commit `aadc163fdfb0fc872fbf00221fc4d628acf688fc`, UTC `2026-11-01T06:27:16Z` / Tehran `2026-11-01T09:57:16+03:30`. Audit 41280898957 and Conformance 41280898982 both SUCCESS on that exact SHA. Starter ZIP v0.3.8 SHA-256 `6e7ba0be76469836c3b017ca6773899bc0a27136ea91772f4f095493a3a3971f`; 23 extracted tests and artifact round-trip PASS.
+- Evidence Gate 41280898970 then created `2d60082ef7fe681bb2dc34407a0afabcdd366554` at UTC `2026-11-01T06:27:24Z`; this follow-up head had no Actions runs at this revision and remains NOT VERIFIED. The tested audit found 15 missing links, including the EVT-0243 time-binding link not yet created on that tested tree; other counts: 23 Stable-ID groups (1 open), 74 Production-ID groups (72 open), 5 Reference-ID groups (5 open), 46 event-number groups (8 open), 11 exact duplicates, 2 unresolved parent edges, 0 ambiguous.
+- CURRENT-065/CURRENT-066, Issues #20/#21, missing forensic archive, Buffer/Persistent Memory, Dropbox and independent-host gates remain OPEN / NOT VERIFIED / NOT RUN as appropriate. Route A and Route B remain distinct but linked; NEXT-051 remains the only active queue; no NEXT-052.

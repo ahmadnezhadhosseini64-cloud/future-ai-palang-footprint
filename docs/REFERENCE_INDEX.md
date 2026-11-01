@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-10-31 — EVT-0242 live mirror synchronization. Latest observed root POINT-0/061 (0+), checkpoint CURRENT-111, sole active queue NEXT-051; living master v1.7.40. Latest exact tested main SHA before this index revision was `b5853aa5aa33b922e7e4388e45d08d59f81fccd1`: Living Architecture Audit 41178131603 and Portable RAHM Conformance 41178131559 passed on that exact SHA. Evidence Gate then created `e8e5cf448119e328e12b7801e953edfe9438751e`; that follow-up head was NOT VERIFIED at this revision.
+**Last Updated:** 2026-11-01 — EVT-0243 live mirror synchronization. Latest observed root POINT-0/061 (0+), checkpoint CURRENT-111, sole active queue NEXT-051; living master v1.7.41. Living Architecture Audit 41280898957 and Portable RAHM Conformance 41280898982 passed on exact SHA `aadc163fdfb0fc872fbf00221fc4d628acf688fc`. Evidence Gate 41280898970 then created follow-up main `2d60082ef7fe681bb2dc34407a0afabcdd366554` at UTC `2026-11-01T06:27:24Z`; no Actions runs were found on that exact head at this revision, so it remains NOT VERIFIED.
 
 ## Canonical References
 
@@ -2188,3 +2188,12 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - Audit inventory: 14 missing local links; 1 open Stable-ID group; 72 open Production-ID groups; 5 open Reference-ID groups; 8 open event-number groups; 11 exact-content duplicate groups; 2 unresolved parent edges; 0 ambiguous parent edges.
 - Portable package v0.3.8: 106,500 bytes; SHA-256 `924035df7cbe79ab710958b1e509a68d4a4bc1ac0175c85cd8eda10b83a370c0`; 23 extracted tests and artifact round-trip PASS; real independent-host acceptance NOT RUN.
 - CURRENT-065/CURRENT-066, Issues #20/#21, Buffer/Persistent Memory, Dropbox and independent-host gates remain OPEN / NOT VERIFIED / NOT RUN as appropriate.
+
+
+## EVT-0243 — live mirror synchronization and exact-head evidence (2026-11-01)
+- Event/time binding: [EVT-0243](architecture/BEHAVIOR-TRACE/EVT-0243-LIVE-MIRROR-SYNC-RECHECK-2026-11-01.md) / [TIME-BINDING-EVT-0243](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0243-LIVE-MIRROR-SYNC-2026-11-01.md). Event commit `aadc163fdfb0fc872fbf00221fc4d628acf688fc` at UTC `2026-11-01T06:27:16Z` / Tehran `2026-11-01T09:57:16+03:30`; event read-back PASS.
+- Latest root/checkpoint/queue: POINT-0/061 → CURRENT-111 → NEXT-051. Preserve POINT-0/016, /017, /018, EVT-0177, canonical EVT-0178, EVT-0179 and the quarantined duplicate draft. CURRENT-065/CURRENT-066 remains OPEN; no winner inferred; no NEXT-052.
+- Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library v7 (10,480 chars) is source plus one terminal LF. Exact equality FALSE; semantic match PASS; no Library write; canonical source unchanged.
+- Audit 41280898957 and Portable RAHM Conformance 41280898982 passed on exact SHA `aadc163fdfb0fc872fbf00221fc4d628acf688fc`; starter ZIP SHA-256 `6e7ba0be76469836c3b017ca6773899bc0a27136ea91772f4f095493a3a3971f`, 23 extracted tests and artifact round-trip PASS.
+- Evidence Gate 41280898970 created follow-up main `2d60082ef7fe681bb2dc34407a0afabcdd366554` at UTC `2026-11-01T06:27:24Z`; no runs found on that exact head, so it remains NOT VERIFIED. Audit findings on the tested parent include 15 missing links (one was the not-yet-created EVT-0243 time binding), 23 Stable-ID groups (1 open), 74 Production-ID groups (72 open), 5 Reference-ID groups (all open), 46 event-number groups (8 open), 11 exact duplicates and 2 unresolved parent edges.
+- Issues #20/#21 OPEN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN.
