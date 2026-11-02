@@ -1,8 +1,8 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.11
-- Date: 2026-11-01
+- Version: 1.0.12
+- Date: 2026-11-02
 - Project: Future AI / Palang Footprint / HAIF
 
 ## مسیرهای بازیابی
@@ -1052,3 +1052,10 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Evidence Gate 41280898970 passed on `aadc...` and created follow-up main `2d60082ef7fe681bb2dc34407a0afabcdd366554` at UTC `2026-11-01T06:27:24Z` / Tehran `2026-11-01T09:57:24+03:30`. No Actions runs found on that exact follow-up SHA; it remains NOT VERIFIED.
 - Audit findings on `aadc...`: 15 missing local links (one was this event's time-binding link, not yet created on that tested tree); 23 Stable-ID groups (1 open); 74 Production-ID groups (72 open); 5 Reference-ID groups (all open); 46 event-number groups (8 open); 11 exact-content duplicate groups; 2 unresolved parent edges; 0 ambiguous parent edges.
 - Latest root/checkpoint/queue remains POINT-0/061 → CURRENT-111 → NEXT-051. CURRENT-065/CURRENT-066, Issues #20/#21 and external destination/host gates remain OPEN / NOT VERIFIED / NOT RUN as appropriate. No NEXT-052.
+
+## EVT-0244 — live mirror synchronization recheck (2026-11-02)
+- [EVT-0244](./EVT-0244-LIVE-MIRROR-SYNC-RECHECK-2026-11-02.md) / [TIME-BINDING-EVT-0244](./TIME-BINDING-EVT-0244-LIVE-MIRROR-SYNC-2026-11-02.md).
+- Event commit b6e4374080cac71a5b09e6bf465344be1469f9b0, UTC 2026-11-02T06:42:51Z, Tehran 2026-11-02T10:12:51+03:30; exact event read-back PASS.
+- Source blob de1b75f07241c9b313e476af5f1417177ff78c10 (10,479 chars); Library v7 (10,480 chars) equals source plus one terminal LF; semantic match PASS; exact equality FALSE; no Library write.
+- Audit 41401656990 and Portable RAHM Conformance 41401656970 both SUCCESS on exact event SHA b6e4374080cac71a5b09e6bf465344be1469f9b0. Evidence Gate 41401656868 created 77b11e18517ea37a581a0638411b26e815ebf990 at 2026-11-02T06:42:58Z; no runs found on that exact follow-up head.
+- Latest root/checkpoint/queue remains POINT-0/061 → CURRENT-111 → NEXT-051. CURRENT-065/CURRENT-066 and Issues #20/#21 remain OPEN. No NEXT-052.

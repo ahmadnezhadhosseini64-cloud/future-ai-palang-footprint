@@ -2,11 +2,11 @@
 
 - Stable ID: HUMAN-AI-INTERACTION-BEHAVIOR-OBSERVATORY-2026-10-22-001
 - Production ID: HAIBO-HAIF-2026-10-22-001
-- Version: 1.0.6
+- Version: 1.0.7
 - Owner: احمد پلنگ / Ahmad Nezhadhosseini
 - Project: Future AI / Palang Footprint / HAIF
 - Canonical path: `docs/architecture/BEHAVIOR-OBSERVATORY/README.md`
-- Status: ACTIVE / LIVING in repository; EVT-0243 is registered and its time binding, master, checkpoint and indexes are updated in this repository change; independent read-back is required before this update is treated as INTEGRATED. Full architecture-wide and external integration remains OPEN.
+- Status: ACTIVE / LIVING in repository; EVT-0244 is registered and its time binding, master, checkpoint, NEXT-051 and indexes are being integrated in this repository change. Exact event-SHA audit and Portable RAHM Conformance both passed; the Evidence Gate follow-up head and this subsequent integration head require their own exact-SHA verification. Full architecture-wide and external integration remains OPEN.
 - Time rule: UTC is canonical; Asia/Tehran time is derived from the same UTC instant (+03:30 for this date). Unknown timestamps remain UNKNOWN, never guessed.
 - Independent anchor: `PALANG-BEHAVIOR-OBSERVATION-AND-RECOVERY-TEST-2026-10-22-001`
 - Related event: `EVT-0034`
@@ -268,4 +268,10 @@ Continue collecting observable interaction and evaluator behavior as evidence-ba
 - Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` remains canonical (10,479 chars). Exact Library v7 read-back is 10,480 chars, exactly one extra terminal LF; semantic fields match; no Library write.
 - EVT-0243 commit `aadc163fdfb0fc872fbf00221fc4d628acf688fc` UTC `2026-11-01T06:27:16Z` / Tehran `2026-11-01T09:57:16+03:30`; linked time binding records its actual commit metadata and independent read-back.
 - Audit 41280898957 and Portable RAHM Conformance 41280898982 passed on exact SHA `aadc163fdfb0fc872fbf00221fc4d628acf688fc`; Evidence Gate 41280898970 then created `2d60082ef7fe681bb2dc34407a0afabcdd366554`, which had no Actions runs at this revision and remains NOT VERIFIED.
+- Root/checkpoint/queue remains POINT-0/061 → CURRENT-111 → NEXT-051. CURRENT-065/CURRENT-066 and Issues #20/#21 remain OPEN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN.
+
+## Latest mirror synchronization — EVT-0244 (2026-11-02)
+- Source blob de1b75f07241c9b313e476af5f1417177ff78c10 remains canonical (10,479 chars). Exact Library v7 read-back is 10,480 chars, one extra terminal LF; semantic fields match; no Library write.
+- EVT-0244 commit b6e4374080cac71a5b09e6bf465344be1469f9b0 UTC 2026-11-02T06:42:51Z / Tehran 2026-11-02T10:12:51+03:30; linked time binding records actual commit metadata and exact event-file read-back.
+- Living Architecture Audit 41401656990 and Portable RAHM Conformance 41401656970 both passed on exact event SHA b6e4374080cac71a5b09e6bf465344be1469f9b0; Evidence Gate 41401656868 then created 77b11e18517ea37a581a0638411b26e815ebf990 at 2026-11-02T06:42:58Z; no runs found on that exact follow-up head at integration preparation.
 - Root/checkpoint/queue remains POINT-0/061 → CURRENT-111 → NEXT-051. CURRENT-065/CURRENT-066 and Issues #20/#21 remain OPEN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN.

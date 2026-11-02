@@ -2,7 +2,7 @@
 
 - Stable ID: G6IP-RAHM-NEXT-051-20261024
 - Production ID: G6IP-RAHM-NEXT-051-20261024
-- Version: 1.0.19
+- Version: 1.0.20
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE
 - Project: Future AI / Palang Footprint — HAIF
 - Canonical queue: this file only
@@ -149,3 +149,16 @@ The previous blob at this path began with the Integration Queue README title and
 - Living Architecture Audit 41280898957 and Portable RAHM Conformance 41280898982 both SUCCESS on exact SHA `aadc163fdfb0fc872fbf00221fc4d628acf688fc`. Canonical ZIP SHA-256 `6e7ba0be76469836c3b017ca6773899bc0a27136ea91772f4f095493a3a3971f`; 23 extracted tests, ZIP integrity, source-byte match, artifact round-trip and paired master read-back PASS. Real independent-host acceptance NOT RUN.
 - Evidence Gate 41280898970 then moved main to `2d60082ef7fe681bb2dc34407a0afabcdd366554` at UTC `2026-11-01T06:27:24Z` / Tehran `2026-11-01T09:57:24+03:30`. No Actions runs were found on that exact head at this revision; it remains NOT VERIFIED. The audit on `aadc...` found 15 missing links, including the not-yet-created EVT-0243 time-binding link; 23 Stable-ID groups (1 open), 74 Production-ID groups (72 open), 5 Reference-ID groups (5 open), 46 event-number groups (8 open), 11 exact duplicates, 2 unresolved parent edges and 0 ambiguous.
 - Continue CURRENT-065/CURRENT-066 and overlay-manifest lineage, duplicate-ID/parent/time reconciliation, missing forensic archive recovery, Issues #20/#21 and BOART-FOLLOWUP-01. Keep Route A and Route B distinct but connected. Preserve all points and collisions. NEXT-051 remains the sole active queue; no NEXT-052.
+
+## EVT-0244 live mirror synchronization continuation — 2026-11-02
+
+- EVT-0244 event commit: b6e4374080cac71a5b09e6bf465344be1469f9b0; UTC 2026-11-02T06:42:51Z; Tehran 2026-11-02T10:12:51+03:30; event blob 0c4507075bcfb7177352862cb04d822d29a4b83e; exact event-file read-back PASS (6,816 characters).
+- Canonical source blob: de1b75f07241c9b313e476af5f1417177ff78c10; 10,479 characters, unchanged. Exact Library v7: stable ID libfile_7ac3c9a6ec14819198eb2751e204aa48, backing file file_00000000942881f8a4a3833110229fb7, 10,480 characters; source plus one terminal LF, edit distance 1, exact equality FALSE, semantic match PASS. No Library write; no source_file_ref upload route exposed; container_path not used.
+- Latest user-turn chain remains POINT-0/061 → IN-099 → OUT-098 → EVT-0240 → CURRENT-111 → NEXT-051 (mirror-only event; no new root).
+- Preserve POINT-0/016, /017, /018 / EVT-0180 and all later roots; preserve EVT-0177 and its time binding, canonical EVT-0178, EVT-0179 and quarantined duplicate-number lineage. CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN; winner_selected=false.
+- Issue #20 OPEN; Issue #21 OPEN; BOART-FOLLOWUP-01 remains active. NEXT-051 remains the sole active queue; no NEXT-052.
+- Buffer NOT VERIFIED; Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN; second-host/restart/background-capture acceptance NOT VERIFIED.
+
+- EVT-0244 event commit b6e4374080cac71a5b09e6bf465344be1469f9b0; UTC 2026-11-02T06:42:51Z; Tehran 2026-11-02T10:12:51+03:30; event read-back PASS.
+- Living Architecture Audit 41401656990 and Portable RAHM Conformance 41401656970 both SUCCESS on exact SHA b6e4374080cac71a5b09e6bf465344be1469f9b0; Evidence Gate 41401656868 then created 77b11e18517ea37a581a0638411b26e815ebf990 at 2026-11-02T06:42:58Z. The post-gate main has no Actions runs at this inspection and remains NOT VERIFIED.
+- Next deterministic action: run both workflows on the exact final main SHA after the current master/index integration; then continue missing-link, parent-edge, identity-collision, CURRENT-065/CURRENT-066, Issue #20/#21, forensic archive and independent-host recovery work. Keep all gates open until direct evidence exists.
