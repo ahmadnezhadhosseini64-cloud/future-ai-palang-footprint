@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-11-02 — EVT-0244 live mirror synchronization. Latest observed root POINT-0/061 (0+), checkpoint CURRENT-111, sole active queue NEXT-051; living master v1.7.42. Audit 41401656990 and Portable RAHM Conformance 41401656970 passed on exact event SHA b6e4374080cac71a5b09e6bf465344be1469f9b0; Evidence Gate 41401656868 then created 77b11e18517ea37a581a0638411b26e815ebf990 at 2026-11-02T06:42:58Z, which has no Actions runs at this inspection and remains NOT VERIFIED.
+**Last Updated:** 2026-11-02 — EVT-0244 integration verification. Latest observed root POINT-0/061 (0+), checkpoint CURRENT-111, sole active queue NEXT-051; living master v1.7.43. Audit 41401951353 and Portable RAHM Conformance 41401951387 passed on exact integration SHA 31c169db67c237cf56aca1e42058d3e083075159; Evidence Gate 41401951570 then created 19ef179bd81311fe6a6862395f15e0f70c962248 at 2026-11-02T06:45:45Z, with no Actions runs found on that exact head; current main remains NOT VERIFIED.
 
 ## Canonical References
 
@@ -2204,3 +2204,9 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - Source blob de1b75f07241c9b313e476af5f1417177ff78c10 (10,479 chars); Library v7 (10,480 chars) is source plus one terminal LF. Exact equality FALSE; semantic match PASS; no Library write; canonical source unchanged.
 - Living Architecture Audit 41401656990 and Portable RAHM Conformance 41401656970 both SUCCESS on exact SHA b6e4374080cac71a5b09e6bf465344be1469f9b0. Evidence Gate 41401656868 created 77b11e18517ea37a581a0638411b26e815ebf990 at UTC 2026-11-02T06:42:58Z; no runs found on that exact head, so it remains NOT VERIFIED.
 - Audit findings: 14 missing links; 23 Stable-ID groups; 74 Production-ID groups; 5 Reference-ID groups; 46 event-number groups; 11 exact duplicates; 2 unresolved parent edges; 0 ambiguous parent edges. Issues #20/#21 OPEN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN.
+
+## EVT-0244 integration verification — 2026-11-02
+- Integration commit 31c169db67c237cf56aca1e42058d3e083075159 at UTC 2026-11-02T06:45:34Z / Tehran 2026-11-02T10:15:34+03:30; eight changed files exact read-back PASS.
+- Living Architecture Audit 41401951353 and Portable RAHM Conformance 41401951387 both SUCCESS on exact SHA 31c169db67c237cf56aca1e42058d3e083075159; Evidence Gate 41401951570 created 19ef179bd81311fe6a6862395f15e0f70c962248 at 2026-11-02T06:45:45Z; no Actions runs found on that exact follow-up head.
+- Package v0.3.8, stable ID HAIF-GPT6-PORTABLE-STARTER-20261025-004, canonical ZIP 108,282 bytes, SHA-256 5eac26315f1ea77fa72a2dcc95aa6960c99e1cc931618312a46ba735d2bb52dc; 13 files; ZIP integrity, source-byte match, extracted tests and artifact round-trip PASS. External host acceptance NOT RUN.
+- CURRENT-065/CURRENT-066 and Issues #20/#21 remain OPEN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN.

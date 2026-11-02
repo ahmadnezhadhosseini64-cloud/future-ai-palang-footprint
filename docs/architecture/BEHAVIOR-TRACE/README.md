@@ -1,7 +1,7 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.12
+- Version: 1.0.13
 - Date: 2026-11-02
 - Project: Future AI / Palang Footprint / HAIF
 
@@ -1059,3 +1059,8 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Source blob de1b75f07241c9b313e476af5f1417177ff78c10 (10,479 chars); Library v7 (10,480 chars) equals source plus one terminal LF; semantic match PASS; exact equality FALSE; no Library write.
 - Audit 41401656990 and Portable RAHM Conformance 41401656970 both SUCCESS on exact event SHA b6e4374080cac71a5b09e6bf465344be1469f9b0. Evidence Gate 41401656868 created 77b11e18517ea37a581a0638411b26e815ebf990 at 2026-11-02T06:42:58Z; no runs found on that exact follow-up head.
 - Latest root/checkpoint/queue remains POINT-0/061 → CURRENT-111 → NEXT-051. CURRENT-065/CURRENT-066 and Issues #20/#21 remain OPEN. No NEXT-052.
+
+## EVT-0244 integration verification — 2026-11-02
+- Architecture/index integration commit 31c169db67c237cf56aca1e42058d3e083075159 at UTC 2026-11-02T06:45:34Z / Tehran 2026-11-02T10:15:34+03:30; all eight changed files exact read-back PASS.
+- Living Architecture Audit 41401951353 and Portable RAHM Conformance 41401951387 both SUCCESS on exact SHA 31c169db67c237cf56aca1e42058d3e083075159. Evidence Gate 41401951570 created 19ef179bd81311fe6a6862395f15e0f70c962248 at 2026-11-02T06:45:45Z; no Actions runs found on that exact follow-up head.
+- Current head 19ef179bd81311fe6a6862395f15e0f70c962248 remains NOT VERIFIED; latest user-turn root/checkpoint/queue remains POINT-0/061 → CURRENT-111 → NEXT-051. Issues #20/#21 and CURRENT-065/CURRENT-066 remain OPEN; no NEXT-052.

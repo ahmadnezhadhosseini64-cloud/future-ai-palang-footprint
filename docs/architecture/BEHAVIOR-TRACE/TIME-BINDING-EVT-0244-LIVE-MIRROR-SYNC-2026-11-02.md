@@ -3,7 +3,7 @@
 - Event: [EVT-0244](./EVT-0244-LIVE-MIRROR-SYNC-RECHECK-2026-11-02.md)
 - Stable ID: PALANG-TIME-BINDING-EVT-0244-LIVE-MIRROR-SYNC-2026-11-02
 - Version: 1.0.0
-- Status: EVENT COMMIT TIME VERIFIED / EVENT FILE READ-BACK VERIFIED / EXACT-SHA AUDIT AND CONFORMANCE VERIFIED ON EVENT COMMIT / POST-EVIDENCE-GATE MAIN NOT VERIFIED.
+- Status: EVT-0244 EVENT COMMIT TIME VERIFIED / EVENT FILE READ-BACK VERIFIED / INTEGRATION COMMIT READ-BACK VERIFIED 8/8 / AUDIT AND PORTABLE CONFORMANCE PASS ON EXACT INTEGRATION SHA / POST-EVIDENCE-GATE MAIN NOT VERIFIED.
 - Canonical time rule: event registration time is the actual Git commit UTC timestamp of EVT-0244. Tehran is derived from that same instant (+03:30). Workflow run time, Library metadata time and operation/read-back time remain separate.
 
 ## 1. Event registration time — Git metadata
@@ -59,3 +59,15 @@
 - Continue CURRENT-065/CURRENT-066 overlay lineage, identity overlap/duplicate-ID adjudication, missing-link and parent-edge repair, Issue #20/#21 and BOART-FOLLOWUP-01.
 - NEXT-051 remains active; do not create NEXT-052.
 - Buffer/Persistent Memory remain NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN.
+
+## 6. Post-event architecture/index integration and exact-SHA verification — 2026-11-02
+
+- Integration commit: 31c169db67c237cf56aca1e42058d3e083075159; UTC 2026-11-02T06:45:34Z; derived Tehran 2026-11-02T10:15:34+03:30; parent 19ef179bd81311fe6a6862395f15e0f70c962248.
+- Eight changed files (TIME-BINDING-EVT-0244, living master, CURRENT-111, NEXT-051, behavior-trace index, reference index and integration queue) were independently fetched at the exact integration commit. All 8/8 file blobs matched the integration commit tree; exact content read-back PASS.
+- Living Architecture Audit 41401951353: SUCCESS on exact integration SHA 31c169db67c237cf56aca1e42058d3e083075159; started 2026-11-02T06:45:39Z, completed 2026-11-02T06:45:59Z.
+- Portable RAHM Conformance 41401951387: SUCCESS on the same exact integration SHA; started 2026-11-02T06:45:39Z, completed 2026-11-02T06:46:01Z.
+- Evidence Gate 41401951570: SUCCESS on the same exact SHA; created follow-up main 19ef179bd81311fe6a6862395f15e0f70c962248 at UTC 2026-11-02T06:45:45Z / Tehran 2026-11-02T10:15:45+03:30.
+- Exact-head Actions query for 19ef179bd81311fe6a6862395f15e0f70c962248 returned no runs at this inspection; this current post-gate main remains NOT VERIFIED. No prior run is transferred to it.
+- Audit metrics on 31c169db67c237cf56aca1e42058d3e083075159: 14 missing local links; 23 Stable-ID groups; 74 Production-ID groups; 5 Reference-ID groups; 46 event-number groups; 11 exact-content duplicate groups; 79 declared parent edges; 2 unresolved parent edges; 0 ambiguous parent edges; 11 proposed alias edges; 2,684 identifier occurrences; decode errors 0. CURRENT-065/CURRENT-066 remains OPEN and winner_selected=false. Starter-engine tests 23/23 PASS.
+- Portable package evidence on 31c169db67c237cf56aca1e42058d3e083075159: existing stable package ID HAIF-GPT6-PORTABLE-STARTER-20261025-004; internal version 0.3.8; canonical filename haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip; 108,282 bytes; SHA-256 5eac26315f1ea77fa72a2dcc95aa6960c99e1cc931618312a46ba735d2bb52dc; 13 packaged files; ZIP integrity, source-byte match, extracted tests and artifact round-trip PASS. This is CI/package proof only; release_ready=false and real independent-host acceptance NOT_RUN.
+- Workflow times above are distinct from event and integration commit times. Library metadata remains 2026-10-24T04:45:28.479773Z; exact read-back operation time remains UNKNOWN.
