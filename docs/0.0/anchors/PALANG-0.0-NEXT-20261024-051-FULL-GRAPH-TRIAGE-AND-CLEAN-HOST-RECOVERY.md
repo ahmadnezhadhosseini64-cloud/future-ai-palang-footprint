@@ -2,7 +2,7 @@
 
 - Stable ID: G6IP-RAHM-NEXT-051-20261024
 - Production ID: G6IP-RAHM-NEXT-051-20261024
-- Version: 1.0.21
+- Version: 1.0.23
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE
 - Project: Future AI / Palang Footprint — HAIF
 - Canonical queue: this file only
@@ -168,3 +168,9 @@ The previous blob at this path began with the Integration Queue README title and
 - Living Architecture Audit 41401951353 and Portable RAHM Conformance 41401951387 both SUCCESS on exact SHA 31c169db67c237cf56aca1e42058d3e083075159; Evidence Gate 41401951570 then created 19ef179bd81311fe6a6862395f15e0f70c962248 at 2026-11-02T06:45:45Z. The post-gate main has no Actions runs at this inspection and remains NOT VERIFIED.
 - Existing package ID HAIF-GPT6-PORTABLE-STARTER-20261025-004; version 0.3.8; canonical ZIP SHA-256 5eac26315f1ea77fa72a2dcc95aa6960c99e1cc931618312a46ba735d2bb52dc, 108,282 bytes, 13 files; ZIP integrity, source-byte match, extracted tests and artifact round-trip PASS. Real host acceptance remains NOT RUN.
 - Next: verify 19ef179bd81311fe6a6862395f15e0f70c962248 on an exact SHA with both audit and conformance, then continue graph/identity/pointer reconciliation, Issue #20/#21, missing forensic archive recovery and independent-host acceptance. Keep all open gates; no NEXT-052.
+
+## EVT-0244 follow-up exact-SHA verification — 2026-11-02
+- Verification commit 2b0439d745133fb702beab3bb1d7a4f3fa2080ef at UTC 2026-11-02T06:49:34Z / Tehran 2026-11-02T10:19:34+03:30; seven changed files exact read-back PASS.
+- Living Architecture Audit 41402370018 and Portable RAHM Conformance 41402369917 both SUCCESS on exact SHA 2b0439d745133fb702beab3bb1d7a4f3fa2080ef; Evidence Gate 41402369926 created b9957a0aac09d584f49d81596a4fb9e2a4d6212c at 2026-11-02T06:49:44Z. No Actions runs found on b9957a0aac09d584f49d81596a4fb9e2a4d6212c; it remains NOT VERIFIED.
+- Package v0.3.8, stable ID HAIF-GPT6-PORTABLE-STARTER-20261025-004, production ID HAIF-G6PS-20261025-004; canonical ZIP 108,688 bytes, SHA-256 0edb1b2c43600849a8138acc67c5004250a2f13f3c691ebaefddda799d4e2903, 13 files; exact-byte/live-reference scans, ZIP integrity, source-byte match, extracted tests and artifact round-trip PASS. Real host acceptance NOT RUN.
+- Next: verify b9957a0aac09d584f49d81596a4fb9e2a4d6212c on an exact SHA with both audit and conformance, then continue graph/identity/pointer reconciliation, Issue #20/#21, missing forensic archive recovery and independent-host acceptance. Keep all gates open; no NEXT-052.

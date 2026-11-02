@@ -3,13 +3,13 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.10.16
+- Version: 1.10.19
 - Date: 2026-11-02
 - Exact Time: EVT-0244 event commit UTC `2026-11-02T06:42:51Z` / Tehran `2026-11-02T10:12:51+03:30` is bound in TIME-BINDING-EVT-0244. This queue-index revision's own final-change commit time is retrieved separately from Git metadata; it is not inferred from event time.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: ACTIVE / LIVING — latest observed user-turn root POINT-0/061 (0+); current execution checkpoint CURRENT-111; sole active queue NEXT-051. Living master v1.7.43. Living Architecture Audit 41401951353 and Portable RAHM Conformance 41401951387 passed on exact integration SHA `31c169db67c237cf56aca1e42058d3e083075159`; Evidence Gate 41401951570 then created follow-up main `19ef179bd81311fe6a6862395f15e0f70c962248` at UTC `2026-11-02T06:45:45Z`, with no Actions runs found on that exact head at this inspection. Current main remains NOT VERIFIED. Exact tested SHAs govern all claims. CURRENT-065/CURRENT-066, duplicate POINT-0/059, missing NEXT-051 forensic archive and historic graph/identity/time reconciliation remain OPEN.
+- Status: ACTIVE / LIVING — latest observed user-turn root POINT-0/061 (0+); current execution checkpoint CURRENT-111; sole active queue NEXT-051. Living master v1.7.45. Living Architecture Audit 41402370018 and Portable RAHM Conformance 41402369917 passed on exact verification SHA `2b0439d745133fb702beab3bb1d7a4f3fa2080ef`; Evidence Gate 41402369926 then created follow-up main `b9957a0aac09d584f49d81596a4fb9e2a4d6212c` at UTC `2026-11-02T06:49:44Z`, with no Actions runs found on that exact head at this inspection. Current main remains NOT VERIFIED. Exact tested SHAs govern all claims. CURRENT-065/CURRENT-066, duplicate POINT-0/059, missing NEXT-051 forensic archive and historic graph/identity/time reconciliation remain OPEN.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
@@ -2498,4 +2498,11 @@ Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-11
 - Living Architecture Audit 41401951353 and Portable RAHM Conformance 41401951387 both SUCCESS on exact SHA 31c169db67c237cf56aca1e42058d3e083075159; Evidence Gate 41401951570 created 19ef179bd81311fe6a6862395f15e0f70c962248 at UTC 2026-11-02T06:45:45Z; no Actions runs found on that exact follow-up head.
 - Package ID HAIF-GPT6-PORTABLE-STARTER-20261025-004, version 0.3.8; canonical ZIP 108,282 bytes, SHA-256 5eac26315f1ea77fa72a2dcc95aa6960c99e1cc931618312a46ba735d2bb52dc, 13 files; ZIP integrity, source-byte match, extracted tests and artifact round-trip PASS. Real independent-host acceptance NOT RUN.
 - Audit findings: 14 missing links; 23 Stable-ID groups; 74 Production-ID groups; 5 Reference-ID groups; 46 event-number groups; 11 exact duplicates; 79 parent edges; 2 unresolved; 0 ambiguous; 11 proposed aliases; 2,684 identifier occurrences; 23 engine tests PASS.
+- CURRENT-065/CURRENT-066, Issues #20/#21, missing forensic archive, Buffer/Persistent Memory, Dropbox and independent-host gates remain OPEN / NOT VERIFIED / NOT RUN as appropriate. NEXT-051 remains sole active queue; no NEXT-052.
+
+## EVT-0244 follow-up exact-SHA verification — 2026-11-02
+- Verification commit 2b0439d745133fb702beab3bb1d7a4f3fa2080ef at UTC 2026-11-02T06:49:34Z / Tehran 2026-11-02T10:19:34+03:30; seven changed files exact read-back PASS.
+- Living Architecture Audit 41402370018 and Portable RAHM Conformance 41402369917 both SUCCESS on exact SHA 2b0439d745133fb702beab3bb1d7a4f3fa2080ef; Evidence Gate 41402369926 created b9957a0aac09d584f49d81596a4fb9e2a4d6212c at UTC 2026-11-02T06:49:44Z; no Actions runs found on that exact follow-up head.
+- Package ID HAIF-GPT6-PORTABLE-STARTER-20261025-004; production ID HAIF-G6PS-20261025-004; version 0.3.8; canonical ZIP 108,688 bytes, SHA-256 0edb1b2c43600849a8138acc67c5004250a2f13f3c691ebaefddda799d4e2903, 13 files; exact-byte/live-reference scans, ZIP integrity, source-byte match, extracted tests and artifact round-trip PASS. Real independent-host acceptance NOT RUN.
+- Audit: 14 missing links; 23 Stable-ID groups; 74 Production-ID groups; 5 Reference-ID groups; 46 event-number groups; 11 exact duplicates; 79 parent edges; 2 unresolved; 0 ambiguous; 11 proposed aliases; 2,684 identifier occurrences; 23 engine tests PASS.
 - CURRENT-065/CURRENT-066, Issues #20/#21, missing forensic archive, Buffer/Persistent Memory, Dropbox and independent-host gates remain OPEN / NOT VERIFIED / NOT RUN as appropriate. NEXT-051 remains sole active queue; no NEXT-052.
