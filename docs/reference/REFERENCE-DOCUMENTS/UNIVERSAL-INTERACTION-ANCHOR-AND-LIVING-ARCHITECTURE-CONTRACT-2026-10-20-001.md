@@ -3,7 +3,7 @@
 
 - Stable ID / شناسه پایدار: UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001
 - Production ID / شناسه تولید: UIALAC-2026-10-20-001
-- Version / نسخه: 1.3.1
+- Version / نسخه: 1.3.2
 - Date / تاریخ سند: 2026-10-20
 - Initial creation time / زمان ایجاد اولیه: در شواهد ایجاد اولیه ثبت نشده است. Amendment processing time / زمان پردازش اصلاحیه: 2026-10-20T22:20:19+03:30 (Asia/Tehran); UTC: 2026-10-20T18:50:19Z. User message time for amendment / زمان پیام کاربر برای اصلاحیه: UNKNOWN / UNVERIFIED.
 - Timezone / منطقه زمانی مرجع پروژه: Asia/Tehran (+03:30)
@@ -382,3 +382,14 @@ The following status boundaries are mandatory:
 For every material change, run WRITE → READ-BACK → MATCH → VERIFY → RECONCILE → STATUS, and preserve the prior checkpoint. Active entry points must name the latest current checkpoint; historic checkpoints retain their historic role. If a criterion remains unknown, overall status cannot be unconditional PASS.
 
 This amendment is repository-written; exact read-back and Reference Index reconciliation are required before this contract amendment is called verified. It does not close NEXT-041, NEXT-040, prototype implementation, cold-start recovery or external destination gates.
+
+
+## Decision continuity and settled-decision review gate — v1.3.2
+
+Governing rule: [DCRG — Decision Continuity & Review Governance](../../reference/REFERENCE-DOCUMENTS/DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03-001.md).
+
+Before materially reviewing, criticizing, editing or handing off an artifact, retrieve its relevant settled decisions and rationales. A decision explicitly accepted by the user remains SETTLED / ACTIVE within its scope. It may be reopened only by reliable new evidence, changed external conditions or requirements, documented contradiction, demonstrated error, material previously unconsidered risk, or explicit user request. Assistant preference, generic checklists, a new session, or forgotten context are not triggers.
+
+If no trigger exists, preserve the accepted decision and do not ask the user to repeat the earlier reasoning. If a trigger exists, state the new evidence and impact, preserve the prior decision/history, and obtain user approval where the decision is user-owned. Classify alternatives as alternatives, not defects. This amendment extends the contract without replacing earlier rules.
+
+Source chain: [IN-100](../../0.0/anchors/PALANG-0.0-IN-20261103-100-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [OUT-099](../../0.0/anchors/PALANG-0.0-OUT-20261103-099-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [EVT-0246](../../architecture/BEHAVIOR-TRACE/EVT-0246-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03.md) → [CURRENT-112](../../0.0/anchors/PALANG-0.0-CURRENT-20261103-112-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md).
