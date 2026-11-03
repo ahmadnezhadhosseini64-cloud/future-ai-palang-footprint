@@ -217,3 +217,7 @@
 - [POINT-0/040](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-040-INITIAL-MODEL-NEW-HOST-HANDOFF.md) and [CURRENT-089](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-089-INITIAL-MODEL-NEW-HOST-HANDOFF.md) preserve the handoff chain.
 - Reuse the existing executable [HAIF GPT-6 Starter](../../../prototype/haif-gpt6-starter/README.md); do not fork a competing engine.
 - Status: bootstrap document registered; exact export-manifest coverage and exact-head audit/conformance must still be verified. Real independent-host acceptance remains NOT RUN.
+
+
+## قاعدهٔ تداوم تصمیم
+پیش از هر بازبینی یا اصلاح، تصمیم‌های تثبیت‌شده و دلیل آن‌ها را از [سند حاکم تداوم تصمیم](../../reference/REFERENCE-DOCUMENTS/DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03-001.md) بازیابی کن. تصمیم SETTLED / ACTIVE بدون محرک معتبر دوباره باز نمی‌شود. این قاعده در سند مادر زنده و دستورهای میزبان نیز افزوده شده است؛ آزمون میزبان مستقل همچنان در NEXT-051 باز است.
