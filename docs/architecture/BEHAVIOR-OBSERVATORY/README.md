@@ -2,7 +2,7 @@
 
 - Stable ID: HUMAN-AI-INTERACTION-BEHAVIOR-OBSERVATORY-2026-10-22-001
 - Production ID: HAIBO-HAIF-2026-10-22-001
-- Version: 1.0.8
+- Version: 1.0.9
 - Owner: احمد پلنگ / Ahmad Nezhadhosseini
 - Project: Future AI / Palang Footprint / HAIF
 - Canonical path: `docs/architecture/BEHAVIOR-OBSERVATORY/README.md`
@@ -285,3 +285,11 @@ Continue collecting observable interaction and evaluator behavior as evidence-ba
 - Reference Index docs/REFERENCE_INDEX.md was independently read from main (blob 6fe1f5ba8cc4299c1c7e06f2d5c751aedd93d2c7); its prior EVT-0244 status required this additive update.
 - Preserve POINT-0/016, POINT-0/017, POINT-0/018 / EVT-0180 and all later roots; preserve EVT-0177 and its time binding, canonical EVT-0178, EVT-0179 collision lineage and the quarantined duplicate-number draft. CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN; winner_selected=false. NEXT-051 remains the sole active queue; no NEXT-052. Issues #20/#21 remain OPEN. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
 - Next deterministic action: after all integration writes, rediscover final main and run Living Architecture Audit plus Portable RAHM Conformance on that exact SHA; if Evidence Gate advances main, verify the new head separately.
+
+
+## New observed pattern — decision continuity
+- Event: [EVT-0246](../BEHAVIOR-TRACE/EVT-0246-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03.md).
+- Canonical rule: [DCRG](../../reference/REFERENCE-DOCUMENTS/DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03-001.md).
+- Finding: a later review that does not retrieve an already settled user decision can reopen it without cause, create avoidable rework and require repeated explanation.
+- Corrective behavior: retrieve decision and rationale first; honour SETTLED / ACTIVE; reopen only on a valid trigger; preserve the old decision and lineage.
+- Status: OBSERVED / REGISTERED. Regression and clean-host tests remain OPEN / NOT RUN until actual receipts exist.
