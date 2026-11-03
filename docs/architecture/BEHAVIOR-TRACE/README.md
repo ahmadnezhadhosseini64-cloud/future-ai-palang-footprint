@@ -1,7 +1,7 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.16
+- Version: 1.0.17
 - Date: 2026-11-03
 - Project: Future AI / Palang Footprint / HAIF
 
@@ -1081,3 +1081,11 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Next deterministic action: after all integration writes, rediscover final main and run Living Architecture Audit plus Portable RAHM Conformance on that exact SHA; if Evidence Gate advances main, verify the new head separately.
 
 - [EVT-0245](./EVT-0245-LIVE-MIRROR-SYNC-RECHECK-2026-11-03.md) / [TIME-BINDING-EVT-0245](./TIME-BINDING-EVT-0245-LIVE-MIRROR-SYNC-2026-11-03.md).
+
+
+## EVT-0246 — Decision continuity
+- Event: [EVT-0246](./EVT-0246-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03.md).
+- Input/output: [IN-100](../../0.0/anchors/PALANG-0.0-IN-20261103-100-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [OUT-099](../../0.0/anchors/PALANG-0.0-OUT-20261103-099-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md).
+- Current: [CURRENT-112](../../0.0/anchors/PALANG-0.0-CURRENT-20261103-112-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md); sole queue [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Rule: [DCRG](../../reference/REFERENCE-DOCUMENTS/DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03-001.md) — retrieve and honour settled decisions; reopen only on valid trigger.
+- Runtime and clean-host enforcement: OPEN / NOT RUN.
