@@ -2,7 +2,7 @@
 
 - Event: [EVT-0245](./EVT-0245-LIVE-MIRROR-SYNC-RECHECK-2026-11-03.md)
 - Stable ID: PALANG-TIME-BINDING-EVT-0245-LIVE-MIRROR-SYNC-2026-11-03
-- Version: 1.0.0
+- Version: 1.0.1
 - Status: EVENT COMMIT TIME VERIFIED / EVENT FILE READ-BACK VERIFIED / MIRROR COMPARISON VERIFIED / CURRENT MAIN NOT VERIFIED BY FULL AUDIT-CONFORMANCE.
 - Canonical time rule: EVT-0245 registration time is the actual Git commit UTC timestamp of the event file. Tehran is derived from that same instant (+03:30). Workflow run time, Library metadata time and operation/read-back time remain separate.
 
@@ -68,3 +68,18 @@
 - External independent-host recovery: NOT RUN.
 - Second-host/restart/background-capture: NOT VERIFIED / NOT RUN.
 
+
+
+## Post-integration Evidence Gate follow-up — 2026-11-03
+
+- Latest Evidence Gate run found: 41590550462, job conclusion SUCCESS.
+- Evidence Gate job log confirms checkout SHA and GITHUB_SHA: 64bf50faefafcc7af6b4e6617e3c66b2a9fca798.
+- Durable evidence artifact: evidence/evidence-gate-41590550462.txt; blob 2ee36d8d415069576b1fdb7257c8d295fbcb8583; content confirms Run ID 41590550462 and Commit 64bf50faefafcc7af6b4e6617e3c66b2a9fca798.
+- Evidence Gate created follow-up main commit a064fbdaeb26a1dee518515a9f4e5185e22d019c at UTC 2026-11-03T06:32:53Z / Tehran 2026-11-03T10:02:53+03:30.
+- The current main was independently compared to a064fbdaeb26a1dee518515a9f4e5185e22d019c and returned identical.
+- Combined commit-status query on a064fbdaeb26a1dee518515a9f4e5185e22d019c returned no status entries; the available commit-workflow query surfaced no PR-triggered runs. Push-triggered run enumeration is not exposed by the available connector query.
+- Full Living Architecture Audit on exact current main a064fbdaeb26a1dee518515a9f4e5185e22d019c: NOT VERIFIED.
+- Portable RAHM Conformance on exact current main a064fbdaeb26a1dee518515a9f4e5185e22d019c: NOT VERIFIED.
+- Latest verifiable full audit/conformance receipts found remain Living Architecture Audit 41402645307 and Portable RAHM Conformance 41402645266, both SUCCESS on exact SHA 027dff048c77e563901e94563e7ce0f4e6de2edb. No PASS is transferred to a064fb... or any later main head.
+- Evidence Gate workflow completion time and event commit time are distinct. The Evidence Gate job completed at 2026-11-03T06:32:56Z; this is workflow time, not the follow-up commit time.
+- Deterministic next action: obtain full Living Architecture Audit and Portable RAHM Conformance on the exact latest main SHA after this time-binding update; if another Evidence Gate commit advances main, leave the new head NOT VERIFIED until directly audited.
