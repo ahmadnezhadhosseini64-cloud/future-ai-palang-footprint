@@ -47,3 +47,10 @@ The package can be uploaded as files, but it is not a native plugin and does not
 
 ## Host growth contract
 Follow `HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md` for the controlled host → event evidence → authorized repository worker → read-back → RAHM → Child/Master loop. The host producer and worker deployment are separate acceptance gates; package documentation does not prove they are connected.
+
+
+## Decision continuity recovery test
+
+Canonical current chain: POINT-0/061 → IN-100 → OUT-099 → EVT-0246 → CURRENT-112 → NEXT-051. Canonical governance: [DCRG](../../docs/reference/REFERENCE-DOCUMENTS/DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03-001.md).
+
+During clean-host import, the receiving host must retrieve settled decisions with rationale, scope, constraints and reopening triggers. Test at least one decision with no new trigger (must remain settled) and one with valid new evidence (may be reopened only with an explicit evidence explanation and preserved prior state). Record the host's raw output and independent read-back. This test is NOT RUN until a separate host supplies a receipt; repository documentation alone is not a pass.
