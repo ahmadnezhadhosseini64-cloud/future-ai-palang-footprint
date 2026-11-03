@@ -3,13 +3,13 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.10.20
+- Version: 1.10.21
 - Date: 2026-11-03
 - Exact Time: EVT-0245 event commit UTC `2026-11-03T06:30:27Z` / Tehran `2026-11-03T10:00:27+03:30`, bound in TIME-BINDING-EVT-0245. Time-binding commit UTC `2026-11-03T06:30:48Z` / Tehran `2026-11-03T10:00:48+03:30`.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: ACTIVE / LIVING — latest user-turn root POINT-0/061; current checkpoint CURRENT-111; sole active queue NEXT-051; living master v1.7.46. EVT-0245 mirror event registered; current final main requires exact-SHA audit/conformance. CURRENT-065/CURRENT-066, Issues #20/#21, missing NEXT-051 forensic archive and historic graph/identity/parent/time reconciliation remain OPEN.
+- Status: ACTIVE / LIVING — latest user-turn root POINT-0/061; current checkpoint CURRENT-112; sole active queue NEXT-051; living master v1.7.47; DCRG decision-continuity rule added. EVT-0245 mirror event registered; current final main requires exact-SHA audit/conformance. CURRENT-065/CURRENT-066, Issues #20/#21, missing NEXT-051 forensic archive and historic graph/identity/parent/time reconciliation remain OPEN.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
@@ -2516,3 +2516,12 @@ Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-11
 - Reference Index docs/REFERENCE_INDEX.md was independently read from main (blob 6fe1f5ba8cc4299c1c7e06f2d5c751aedd93d2c7); its prior EVT-0244 status required this additive update.
 - Preserve POINT-0/016, POINT-0/017, POINT-0/018 / EVT-0180 and all later roots; preserve EVT-0177 and its time binding, canonical EVT-0178, EVT-0179 collision lineage and the quarantined duplicate-number draft. CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN; winner_selected=false. NEXT-051 remains the sole active queue; no NEXT-052. Issues #20/#21 remain OPEN. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
 - Next deterministic action: after all integration writes, rediscover final main and run Living Architecture Audit plus Portable RAHM Conformance on that exact SHA; if Evidence Gate advances main, verify the new head separately.
+
+
+## DCRG — Decision continuity governance
+
+| Stable ID | موضوع | وضعیت | مقصد موردنظر | پرونده |
+|---|---|---|---|---|
+| DCRG-HAIF-2026-11-03-001 | حفظ تصمیم‌های تثبیت‌شده و بازبینی فقط با محرک معتبر | REGISTERED / INTEGRATION RECORDED; exact read-back and runtime acceptance pending | سند مادر HAIF، NPFAP، UIALAC، دستور میزبان، بستهٔ قابل‌حمل، نمایه‌ها | [DCRG](../../reference/REFERENCE-DOCUMENTS/DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03-001.md) · [CURRENT-112](../../0.0/anchors/PALANG-0.0-CURRENT-20261103-112-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) · [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md) |
+
+این مورد به صف فعال موجود افزوده شده است؛ صف جدید NEXT ساخته نشده. بستهٔ ZIP موجود تا زمان افزودن فایل/قاعده به manifest و ساخت و آزمون مجدد، شامل این الحاقیه فرض نمی‌شود.
