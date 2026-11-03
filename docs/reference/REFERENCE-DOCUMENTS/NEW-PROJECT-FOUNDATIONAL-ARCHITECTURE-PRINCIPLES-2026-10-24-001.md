@@ -2,8 +2,8 @@
 
 - Stable ID / شناسهٔ پایدار: `NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001`
 - Production ID / شناسهٔ تولید: `NPFAP-20261024-001`
-- Version / نسخه: 1.2.10
-- Status / وضعیت: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING / EVOLVABLE / EXTRACTABLE / RECOVERY-ORIENTED / CURRENT-054 + CURRENT-056 + CURRENT-059 LINKED
+- Version / نسخه: 1.2.11
+- Status / وضعیت: REGISTERED / READ-BACK VERIFIED / IDENTIFIERS MATCHED / ACTIVE / LIVING / EVOLVABLE / EXTRACTABLE / RECOVERY-ORIENTED / CURRENT-054 + CURRENT-056 + CURRENT-059 + CURRENT-112 LINKED
 - Scope / دامنه: الگوی پایه برای هر پروژهٔ جدید در خانوادهٔ Future AI / Palang Footprint / HAIF و شاخه‌های محصول/میزبان آن؛ با سازگارسازی مستند برای پروژه‌های دیگر
 - Source anchor / منشأ: [G6IP-ARCH-ZERO-20261024-001](../../0.0/anchors/PALANG-0.0-ARCHITECTURE-ZERO-20261024-001-NEW-PROJECT-ARCHITECTURE-ROOT.md)
 - Governing contract / قرارداد حاکم: [UIALAC-2026-10-20-001 v1.3.1](./UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001.md)
@@ -608,3 +608,14 @@ Strict portable conformance [40150549906](https://github.com/ahmadnezhadhosseini
 - Living architecture audit [run 40151104066](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40151104066) PASS structurally: 3,945 files including evidence, 1,094 source files, 2,851 generated evidence files, 5,744 local link edges, 0 missing local links; event-number collision groups reduced to 36 after renaming the noncanonical ALT-001 event. Remaining graph findings: 62 Stable-ID groups (61 unreviewed), 88 Production-ID groups, 7 Reference-ID groups, 13 ambiguous parent edges, 1 ambiguous timestamp and 11 exact-content duplicate groups. Content status remains REVIEW_REQUIRED.
 - The two-runtime CPREL transfer harness [run 40150879386](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40150879386) passed artifact transfer between isolated CI runtimes. This is a synthetic runtime-transfer test, not proof of import into a real independent AI host.
 - Still OPEN / NOT VERIFIED: clean independent AI-host import, second AI-host import, durable persistence after restart, automatic live message capture, idle/background execution, and individual adjudication of identity/parent/time findings. Keep existing NEXT-051 OPEN; do not mint NEXT-052 to replace unfinished work.
+
+
+## Decision continuity principle — v1.2.11
+
+Cross-project rule: [DCRG — Decision Continuity & Review Governance](../../reference/REFERENCE-DOCUMENTS/DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03-001.md).
+
+Every project must preserve material user-approved decisions with their rationale, scope, constraints, status and valid reopening triggers. Before review or editing, retrieve relevant settled decisions. Reopen only for new reliable evidence, changed requirements/conditions, documented contradiction, demonstrable error, material unconsidered risk, or explicit user request. Do not turn optional alternatives or assistant preference into defects. Preserve prior decision lineage when a justified change is accepted.
+
+Required adoption test: provide a previously settled decision to a later review with no new trigger; expected result is preserve and apply, not reopen. Then provide a valid new trigger; expected result is evidence-based review while retaining the previous decision. Actual host/session recovery remains NOT RUN until independently receipted.
+
+Source chain: [IN-100](../../0.0/anchors/PALANG-0.0-IN-20261103-100-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [OUT-099](../../0.0/anchors/PALANG-0.0-OUT-20261103-099-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [EVT-0246](../../architecture/BEHAVIOR-TRACE/EVT-0246-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03.md) → [CURRENT-112](../../0.0/anchors/PALANG-0.0-CURRENT-20261103-112-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md). This amendment is additive and does not overwrite earlier principles or checkpoints.
