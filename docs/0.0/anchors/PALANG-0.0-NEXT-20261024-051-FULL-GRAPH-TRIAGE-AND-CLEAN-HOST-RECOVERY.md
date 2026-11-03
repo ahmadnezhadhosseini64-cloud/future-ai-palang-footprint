@@ -2,11 +2,11 @@
 
 - Stable ID: G6IP-RAHM-NEXT-051-20261024
 - Production ID: G6IP-RAHM-NEXT-051-20261024
-- Version: 1.0.24
+- Version: 1.0.25
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE
 - Project: Future AI / Palang Footprint — HAIF
 - Canonical queue: this file only
-- Current checkpoint: [CURRENT-111](PALANG-0.0-CURRENT-20261030-111-ARCHITECTURE-GAP-RECONCILIATION.md)
+- Current checkpoint: [CURRENT-112](PALANG-0.0-CURRENT-20261030-111-ARCHITECTURE-GAP-RECONCILIATION.md)
 - Current point: [POINT-0/061 (0+)](GPT6-RAHM-USER-POINT-0-20261030-061-ARCHITECTURE-GAP-RECONCILIATION.md)
 - Living mother: [سند مرجع مادر مدل اولیه](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 - Package contract: [HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md](../../../prototype/haif-gpt6-starter/HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md)
@@ -113,7 +113,7 @@ The previous blob at this path began with the Integration Queue README title and
 - Buffer: NOT VERIFIED. Persistent Memory: NOT VERIFIED. Dropbox: OPEN / NOT VERIFIED. Independent-host recovery: NOT RUN.
 
 ## Recovery links — NEXT-051
-- Current checkpoint: [CURRENT-111](PALANG-0.0-CURRENT-20261030-111-ARCHITECTURE-GAP-RECONCILIATION.md)
+- Current checkpoint: [CURRENT-112](PALANG-0.0-CURRENT-20261103-112-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md)
 - Sole active queue: [NEXT-051](PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
 - Living master: [سند مرجع مادر](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 - Independent-host recovery protocol: [protocol](../../architecture/مدل%20اولیه%20AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md)
@@ -190,3 +190,13 @@ The previous blob at this path began with the Integration Queue README title and
 - Current main after the EVT-0245 documentation integration requires exact-SHA audit/conformance; no previous PASS transfers to it.
 - Continue CURRENT-065/CURRENT-066 overlay-manifest lineage without selecting a winner; preserve all collision records. Continue Issues #20/#21 and BOART-FOLLOWUP-01. The missing forensic archive remains OPEN / NOT RECOVERED.
 - NEXT-051 remains the sole active queue. Do not create NEXT-052.
+
+
+## DCRG-01 — Decision continuity integration and host recovery test
+- Rule: [DCRG](../../reference/REFERENCE-DOCUMENTS/DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03-001.md); event [EVT-0246](../../architecture/BEHAVIOR-TRACE/EVT-0246-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03.md); checkpoint [CURRENT-112](PALANG-0.0-CURRENT-20261103-112-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md).
+- [ ] Add decision-ledger retrieval to the portable package and host startup/recovery instructions.
+- [ ] Rebuild the existing canonical ZIP under its stable identity and filename only after manifest/inventory update; record a new exact-byte SHA-256 receipt. Do not create a parallel package identity.
+- [ ] Add repository regression fixtures for: settled decision/no trigger; valid new trigger; optional alternative vs objective defect; preserved superseded decision/history.
+- [ ] Run the new tests and both full repository workflows on the same exact final main SHA; do not reuse prior PASS receipts.
+- [ ] In a clean independent host, verify retrieval of the settled decision and rationale from the transferred package without hidden chat history. Until direct receipt: NOT RUN / NOT VERIFIED.
+- Acceptance: DCRG-AT-01…06 pass where executable; all unsupported host behaviors remain explicitly NOT VERIFIED.
