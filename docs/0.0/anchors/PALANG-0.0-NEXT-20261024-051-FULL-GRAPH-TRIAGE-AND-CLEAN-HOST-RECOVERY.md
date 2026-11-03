@@ -2,7 +2,7 @@
 
 - Stable ID: G6IP-RAHM-NEXT-051-20261024
 - Production ID: G6IP-RAHM-NEXT-051-20261024
-- Version: 1.0.23
+- Version: 1.0.24
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE
 - Project: Future AI / Palang Footprint — HAIF
 - Canonical queue: this file only
@@ -174,3 +174,19 @@ The previous blob at this path began with the Integration Queue README title and
 - Living Architecture Audit 41402370018 and Portable RAHM Conformance 41402369917 both SUCCESS on exact SHA 2b0439d745133fb702beab3bb1d7a4f3fa2080ef; Evidence Gate 41402369926 created b9957a0aac09d584f49d81596a4fb9e2a4d6212c at 2026-11-02T06:49:44Z. No Actions runs found on b9957a0aac09d584f49d81596a4fb9e2a4d6212c; it remains NOT VERIFIED.
 - Package v0.3.8, stable ID HAIF-GPT6-PORTABLE-STARTER-20261025-004, production ID HAIF-G6PS-20261025-004; canonical ZIP 108,688 bytes, SHA-256 0edb1b2c43600849a8138acc67c5004250a2f13f3c691ebaefddda799d4e2903, 13 files; exact-byte/live-reference scans, ZIP integrity, source-byte match, extracted tests and artifact round-trip PASS. Real host acceptance NOT RUN.
 - Next: verify b9957a0aac09d584f49d81596a4fb9e2a4d6212c on an exact SHA with both audit and conformance, then continue graph/identity/pointer reconciliation, Issue #20/#21, missing forensic archive recovery and independent-host acceptance. Keep all gates open; no NEXT-052.
+
+
+## EVT-0245 — live mirror synchronization recheck (2026-11-03)
+
+- Event commit cc12712a7ef140065afacfb492131e0d1dc542b0; UTC 2026-11-03T06:30:27Z; Tehran 2026-11-03T10:00:27+03:30. Time-binding commit e5f0ea780ab65dc4ee2a98eadde4f6887e5ff53d; UTC 2026-11-03T06:30:48Z; Tehran 2026-11-03T10:00:48+03:30. Event and time-binding files exact read-back PASS.
+- Source blob de1b75f07241c9b313e476af5f1417177ff78c10 (10,479 chars); Library Stable ID libfile_7ac3c9a6ec14819198eb2751e204aa48, version 7 (10,480 chars), source plus one terminal LF. Normalized content and semantic fields match; exact equality FALSE; edit distance 1. No Library write; no container_path.
+- Latest user-turn chain: POINT-0/061 → IN-099 → OUT-098 → EVT-0240 → CURRENT-111 → NEXT-051. EVT-0245 is mirror-only; no new root or competing queue.
+- Latest full audit/conformance receipts found: Living Architecture Audit 41402645307 and Portable RAHM Conformance 41402645266 both SUCCESS on exact SHA 027dff048c77e563901e94563e7ce0f4e6de2edb; job logs confirm checkout/GITHUB_SHA/source_commit. Latest Evidence Gate 41499499454 SUCCESS on exact SHA c803062cbf08aa0fa885c1d555a3b5a60fb86ca7; job log and evidence artifact confirm. Current main at pre-event inspection cc70757edc7bd43c3c9826de775c7186b019c2f2 was newer than those tested SHAs. This integration head remains NOT VERIFIED until both full workflows run on the exact same final SHA.
+- Preserve POINT-0/016, POINT-0/017, POINT-0/018 / EVT-0180 and all later roots; preserve EVT-0177 and its time binding, canonical EVT-0178, EVT-0179 collision lineage and the quarantined duplicate-number draft. CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN; winner_selected=false. NEXT-051 remains the sole active queue; no NEXT-052. Issues #20/#21 remain OPEN. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
+- Next deterministic action: rediscover final main after all integration writes and run Living Architecture Audit plus Portable RAHM Conformance on that exact SHA; if Evidence Gate advances main, test the new head separately.
+
+## EVT-0245 continuation — 2026-11-03
+- EVT-0245 and TIME-BINDING-EVT-0245 are registered and independently read back.
+- Current main after the EVT-0245 documentation integration requires exact-SHA audit/conformance; no previous PASS transfers to it.
+- Continue CURRENT-065/CURRENT-066 overlay-manifest lineage without selecting a winner; preserve all collision records. Continue Issues #20/#21 and BOART-FOLLOWUP-01. The missing forensic archive remains OPEN / NOT RECOVERED.
+- NEXT-051 remains the sole active queue. Do not create NEXT-052.
