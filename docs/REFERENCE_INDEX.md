@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-11-03 — EVT-0245 live mirror synchronization. Latest root POINT-0/061, checkpoint CURRENT-111, sole active queue NEXT-051; master v1.7.46. Current final main requires exact-SHA audit and conformance.
+**Last Updated:** 2026-11-03 — EVT-0245 live mirror synchronization. Latest root POINT-0/061, checkpoint CURRENT-112, sole active queue NEXT-051; master v1.7.47. Decision continuity rule DCRG v1.0.0 registered; clean-host enforcement remains NOT RUN. Current final main requires exact-SHA audit and conformance.
 
 ## Canonical References
 
@@ -2229,3 +2229,7 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 
 ## Latest mirror event
 - [EVT-0245](architecture/BEHAVIOR-TRACE/EVT-0245-LIVE-MIRROR-SYNC-RECHECK-2026-11-03.md) / [TIME-BINDING-EVT-0245](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0245-LIVE-MIRROR-SYNC-2026-11-03.md).
+
+
+| DCRG-HAIF-2026-11-03-001 | `docs/reference/REFERENCE-DOCUMENTS/DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03-001.md` | حاکمیت تداوم تصمیم‌های تثبیت‌شده؛ بازیابی دلیل پیشین و بازبینی فقط با محرک معتبر | Repository integration / read-back to be reconciled; runtime and clean-host enforcement NOT RUN |
+| HAIF-CURRENT-112 | `docs/0.0/anchors/PALANG-0.0-CURRENT-20261103-112-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md` | نقطهٔ کنترل زنجیرهٔ IN-100 / OUT-099 / EVT-0246 و درس تداوم تصمیم | Registered; exact read-back and link reconciliation pending |
