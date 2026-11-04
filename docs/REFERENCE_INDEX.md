@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-11-04 — EVT-0247 second reconstruction-gate correction. Root POINT-0/061, checkpoint CURRENT-112, active queue NEXT-051, living master v1.7.49. The first integration failed exact-SHA audit/conformance because IN-100/OUT-099 lacked packaged protocol and manifest links and CURRENT-112/NEXT-051 lacked the full verifier link/gate markers; the complete link matrix is added in this correction. Final main requires fresh audit and conformance.
+**Last Updated:** 2026-11-04 — EVT-0248 live mirror synchronization recheck. Root POINT-0/061, checkpoint CURRENT-112, active queue NEXT-051, living master v1.7.49 at run start; latest main a318103d4e877ae3a258009d45e338cb5b1f3842 remains NOT VERIFIED by full audit/conformance.
 
 ## Canonical References
 
@@ -2249,3 +2249,13 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - The second correction adds those references and markers without changing the user-turn root or active queue.
 - Evidence Gate 41786131427 created follow-up main `807b5b79080e40c994d52a77e9c9776c3cb0a985`; that head had no full audit/conformance receipt at correction start.
 - Issues #20/#21 and CURRENT-065/CURRENT-066 remain OPEN; no winner is selected. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN.
+
+## EVT-0248 — live mirror synchronization recheck — 2026-11-04
+
+- [EVT-0248](architecture/BEHAVIOR-TRACE/EVT-0248-LIVE-MIRROR-SYNC-RECHECK-2026-11-04.md) / [TIME-BINDING-EVT-0248](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0248-LIVE-MIRROR-SYNC-2026-11-04.md).
+- Source blob de1b75f07241c9b313e476af5f1417177ff78c10 (10,479 chars); Library stable ID libfile_7ac3c9a6ec14819198eb2751e204aa48, version 7 (10,480 chars); only one terminal LF differs. Normalized equality and semantic match PASS; exact equality FALSE. No Library write.
+- Latest root/checkpoint/queue remain POINT-0/061 → CURRENT-112 → NEXT-051; no NEXT-052.
+- Latest main at run start a318103d4e877ae3a258009d45e338cb5b1f3842 is an Evidence Gate follow-up after c086039767eca934302f8323c7de416767ac74fe; full audit/conformance not found on the current head. It remains NOT VERIFIED.
+- Latest full audit 41786131486 and conformance 41786131274 failed on exact SHA 4f1232acd7ee0bffa737c6da2f5f4e4382815251. Evidence Gate 41786733124 succeeded on c086039767eca934302f8323c7de416767ac74fe only.
+- CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN; Issues #20/#21 remain OPEN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN.
+
