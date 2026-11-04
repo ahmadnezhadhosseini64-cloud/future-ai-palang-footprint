@@ -2,7 +2,7 @@
 
 - Stable ID: `PALANG-0.0-CURRENT-20261103-112-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE`
 - Production ID: `HAIF-CURRENT-112`
-- Version: 1.0.2
+- Version: 1.0.3
 - Parent current: [CURRENT-111](./PALANG-0.0-CURRENT-20261030-111-ARCHITECTURE-GAP-RECONCILIATION.md)
 - Root: [POINT-0/061](./GPT6-RAHM-USER-POINT-0-20261030-061-ARCHITECTURE-GAP-RECONCILIATION.md), preserved; no new root created.
 - Chain: [IN-100](./PALANG-0.0-IN-20261103-100-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [OUT-099](./PALANG-0.0-OUT-20261103-099-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [EVT-0246](../../architecture/BEHAVIOR-TRACE/EVT-0246-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03.md) → this checkpoint.
@@ -60,3 +60,10 @@ Continue the single active queue NEXT-051. Keep POINT-0/061 and CURRENT-111 hist
 - Graph/identity/parent/time triage: OPEN; duplicate IDs and ambiguous parents remain unresolved.
 
 - The first correction used the canonical proof-protocol filename but omitted the separate packaged protocol and export-manifest links required by the reconstruction gate. The verifier's exact failure and this second correction are preserved in EVT-0247 / TIME-BINDING-EVT-0247.
+
+## EVT-0248 — mirror synchronization evidence — 2026-11-04
+
+- [EVT-0248](../../architecture/BEHAVIOR-TRACE/EVT-0248-LIVE-MIRROR-SYNC-RECHECK-2026-11-04.md) / [TIME-BINDING-EVT-0248](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0248-LIVE-MIRROR-SYNC-2026-11-04.md).
+- Latest user-turn root remains POINT-0/061; this mirror-only event does not create a new root or alter CURRENT-112 identity.
+- Latest main at run start a318103d4e877ae3a258009d45e338cb5b1f3842 is NOT VERIFIED by full Living Architecture Audit and Portable RAHM Conformance.
+- CURRENT-065/CURRENT-066 remains OPEN; no winner selected. Issues #20/#21 remain OPEN. NEXT-051 remains sole active queue.
