@@ -3,7 +3,7 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.10.23
+- Version: 1.10.24
 - Date: 2026-11-04
 - Exact Time: EVT-0247 initial event commit UTC `2026-11-04T06:23:22Z` / Tehran `2026-11-04T09:53:22+03:30`; the time-binding file's own final-change time is read separately from its Git commit metadata.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
@@ -2541,3 +2541,12 @@ Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-11
 - The exact verifier requires a shared link matrix in IN-100 and OUT-099: current living master, repository proof protocol, packaged `INDEPENDENT_HOST_RECOVERY_PROTOCOL.md`, and `EXPORT_MANIFEST.json`; it also requires all six chain links and explicit open gates in CURRENT-112 and NEXT-051.
 - Audit 41786131486 and conformance 41786131274 failed on `4f1232acd7ee0bffa737c6da2f5f4e4382815251` because those references/markers were incomplete. Evidence Gate 41786131427 advanced main to `807b5b79080e40c994d52a77e9c9776c3cb0a985`; no full audit/conformance on that follow-up head.
 - Second correction adds the missing links and markers; exact final main must pass both workflows. Any Evidence Gate follow-up remains NOT VERIFIED until separately tested.
+
+## EVT-0248 — live mirror synchronization recheck — 2026-11-04
+
+- Event/time binding: [EVT-0248](../BEHAVIOR-TRACE/EVT-0248-LIVE-MIRROR-SYNC-RECHECK-2026-11-04.md) / [TIME-BINDING-EVT-0248](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0248-LIVE-MIRROR-SYNC-2026-11-04.md).
+- Source blob de1b75f07241c9b313e476af5f1417177ff78c10, 10,479 chars; Library v7, 10,480 chars; sole difference is one extra terminal LF. Normalized content/semantic fields match; exact equality FALSE. No Library write or source modification.
+- Root/checkpoint/queue remain POINT-0/061 → CURRENT-112 → NEXT-051. No NEXT-052.
+- Latest main at run start a318103d4e877ae3a258009d45e338cb5b1f3842 follows Evidence Gate 41786733124 on c086039767eca934302f8323c7de416767ac74fe. Current main has no full audit/conformance receipt and remains NOT VERIFIED.
+- Audit 41786131486 and conformance 41786131274 failed on exact SHA 4f1232acd7ee0bffa737c6da2f5f4e4382815251; preserve the failures. CURRENT-065/CURRENT-066, Issues #20/#21, forensic archive, Buffer/Persistent Memory, Dropbox and independent-host recovery remain OPEN / NOT VERIFIED / NOT RUN as applicable.
+
