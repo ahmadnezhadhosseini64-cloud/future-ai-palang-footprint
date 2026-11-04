@@ -2,7 +2,7 @@
 
 - Stable ID: G6IP-RAHM-NEXT-051-20261024
 - Production ID: G6IP-RAHM-NEXT-051-20261024
-- Version: 1.0.26
+- Version: 1.0.27
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE
 - Project: Future AI / Palang Footprint — HAIF
 - Canonical queue: this file only
@@ -209,3 +209,24 @@ The previous blob at this path began with the Integration Queue README title and
 - Audit 41785190735 and Portable RAHM Conformance 41785190874 failed on exact SHA `80cd9c752f999e5ac30496fa359fb9482319bc22` at the missing IN-100 protocol link. The ZIP rebuild's missing generated `LIVING_MASTER_REFERENCE.md` followed because the workflow's master-sync step was skipped after that earlier failure.
 - Evidence Gate 41785190844 succeeded on `80cd9c752f999e5ac30496fa359fb9482319bc22` and advanced main to `2a30ea08cc72922fae4eedcb5ee464628be6a20c`; that follow-up head had not been fully audited. This integration triggers both full workflows because the changed paths match their push filters.
 - Keep the forensic archive, CURRENT-065/CURRENT-066, identity/duplicate-ID, parent-edge, Issues #20/#21 and external-host gates OPEN until their own evidence passes. NEXT-051 remains the only queue; do not create NEXT-052.
+
+## Current-chain reconstruction links and explicit open gates — 2026-11-04
+
+- User root: [POINT-0/061](GPT6-RAHM-USER-POINT-0-20261030-061-ARCHITECTURE-GAP-RECONCILIATION.md)
+- Input: [IN-100](PALANG-0.0-IN-20261103-100-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md)
+- Output: [OUT-099](PALANG-0.0-OUT-20261103-099-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md)
+- User-turn event: [EVT-0246](../../architecture/BEHAVIOR-TRACE/EVT-0246-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03.md)
+- Current checkpoint: [CURRENT-112](PALANG-0.0-CURRENT-20261103-112-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md)
+- Sole active queue (self-reference): [NEXT-051](PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
+
+- CURRENT-065/CURRENT-066: OPEN; no winner selected. Overlay-manifest lineage remains OPEN.
+- Issue #20: OPEN — interaction-pair runtime, stable INT/IN/OUT capture, reverse lookup, cold-start, clean export/import and runtime/host proof.
+- Issue #21: OPEN — full historical source/rule census and semantic reconciliation.
+- Full state recovery: OPEN / NOT RUN; reconstruct independently from IN and OUT.
+- Clean host import: OPEN / NOT RUN.
+- Second-host import: OPEN / NOT RUN.
+- Restart persistence: OPEN / NOT VERIFIED; restart/new-session recovery remains OPEN.
+- Idle/background capture: OPEN / NOT VERIFIED; automatic live message capture remains NOT PROVEN.
+- Graph/identity/parent/time triage: OPEN; duplicate IDs and ambiguous parents remain unresolved.
+
+- The verifier requires both the repository proof protocol and the distinct in-package protocol, plus EXPORT_MANIFEST.json, in both IN-100 and OUT-099. Those references are now present; exact-SHA audit/conformance evidence remains required.

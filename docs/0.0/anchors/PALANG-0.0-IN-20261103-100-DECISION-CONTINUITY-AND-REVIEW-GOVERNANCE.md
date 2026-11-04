@@ -26,3 +26,8 @@
 
 ## Boundary
 This input records the user's request and the observed interaction pattern. It does not claim automatic cross-session recall, background capture, external memory synchronization, or runtime enforcement. Those capabilities require separate destination-side evidence.
+
+## Portable recovery and export references — 2026-11-04
+
+- Packaged recovery protocol: [INDEPENDENT_HOST_RECOVERY_PROTOCOL.md](../../../prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md)
+- Portable export manifest: [EXPORT_MANIFEST.json](../../portable/RAHM/EXPORT_MANIFEST.json)

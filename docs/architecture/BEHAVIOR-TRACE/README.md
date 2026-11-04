@@ -1,7 +1,7 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.18
+- Version: 1.0.19
 - Date: 2026-11-04
 - Project: Future AI / Palang Footprint / HAIF
 
@@ -1099,3 +1099,9 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Evidence Gate 41785190844 succeeded on `80cd9c752f999e5ac30496fa359fb9482319bc22` and advanced main to `2a30ea08cc72922fae4eedcb5ee464628be6a20c` at UTC `2026-11-04T06:23:31Z` / Tehran `2026-11-04T09:53:31+03:30`. That follow-up head had no full audit/conformance run at integration start.
 - IN-100 protocol link, NEXT-051 checkpoint target and 0.0 registry top chain are corrected in this integration. The final integration head still requires exact-SHA audit and conformance.
 - Root/checkpoint/queue remain POINT-0/061 → CURRENT-112 → NEXT-051; CURRENT-065/CURRENT-066 and Issues #20/#21 remain OPEN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN.
+
+## EVT-0247 — second reconstruction-gate correction (2026-11-04)
+
+- First integration `4f1232acd7ee0bffa737c6da2f5f4e4382815251`: audit 41786131486 and conformance 41786131274 failed on exact SHA because the package-protocol/export-manifest link matrix was incomplete in IN-100/OUT-099 and current-chain self/anchor links and explicit open-gate markers were incomplete in CURRENT-112/NEXT-051.
+- The workflow's generated living-master copy was absent only because its sync step was skipped after the earlier chain failure; artifact 13301535411 is not a fresh package acceptance receipt.
+- Second correction supplies the full verifier link matrix and gate markers. Exact final main still requires fresh audit and conformance; no previous PASS is inherited.

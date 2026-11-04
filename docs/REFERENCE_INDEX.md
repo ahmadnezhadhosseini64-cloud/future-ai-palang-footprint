@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-11-04 — EVT-0247 live mirror synchronization. Latest root POINT-0/061, checkpoint CURRENT-112, sole active queue NEXT-051; living master v1.7.48. The event-push audit and portable conformance failed on exact SHA 80cd9c752f999e5ac30496fa359fb9482319bc22 because IN-100 lacked the repository recovery protocol link; corrective integration is applied, and its final main SHA still requires both exact-SHA workflows.
+**Last Updated:** 2026-11-04 — EVT-0247 second reconstruction-gate correction. Root POINT-0/061, checkpoint CURRENT-112, active queue NEXT-051, living master v1.7.49. The first integration failed exact-SHA audit/conformance because IN-100/OUT-099 lacked packaged protocol and manifest links and CURRENT-112/NEXT-051 lacked the full verifier link/gate markers; the complete link matrix is added in this correction. Final main requires fresh audit and conformance.
 
 ## Canonical References
 
@@ -2242,3 +2242,10 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - Audit 41785190735 and Portable RAHM Conformance 41785190874 failed on exact SHA `80cd9c752f999e5ac30496fa359fb9482319bc22` at the missing IN-100 protocol link. The ZIP rebuild error was downstream of the skipped master-sync step. Evidence Gate 41785190844 advanced main to `2a30ea08cc72922fae4eedcb5ee464628be6a20c`; no full audit/conformance was found on that follow-up head.
 - This integration adds the required protocol link, corrects the NEXT-051 CURRENT-112 link and updates the 0.0 top chain. The resulting main requires both full exact-SHA workflows.
 - CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / winner_selected=false. Issues #20/#21 remain OPEN. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN.
+
+## EVT-0247 second reconstruction-gate correction — 2026-11-04
+
+- First integration `4f1232acd7ee0bffa737c6da2f5f4e4382815251` was tested by Living Architecture Audit 41786131486 (FAILURE) and Portable RAHM Conformance 41786131274 (FAILURE). The verifier's exact link matrix requires both IN-100 and OUT-099 to link to the same master, repository proof protocol, packaged protocol and EXPORT_MANIFEST.json; CURRENT-112 and NEXT-051 must each link all six current-chain anchors and explicitly retain the open gates.
+- The second correction adds those references and markers without changing the user-turn root or active queue.
+- Evidence Gate 41786131427 created follow-up main `807b5b79080e40c994d52a77e9c9776c3cb0a985`; that head had no full audit/conformance receipt at correction start.
+- Issues #20/#21 and CURRENT-065/CURRENT-066 remain OPEN; no winner is selected. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN.

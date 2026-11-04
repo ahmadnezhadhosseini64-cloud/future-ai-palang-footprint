@@ -53,3 +53,16 @@
 - Buffer and Persistent Memory: NOT VERIFIED. Dropbox: OPEN / NOT VERIFIED. External independent-host recovery: NOT RUN. Second-host/restart/background-capture: NOT VERIFIED / NOT RUN.
 - Tool-operation and Library read-back operation timestamps: UNKNOWN.
 - The time-binding file's own final-change commit is the integration commit that adds this file; its exact UTC/Tehran pair is taken from Git metadata, not inferred from the event's initial registration time.
+
+## 5. Second reconstruction-gate attempt and corrective link matrix — 2026-11-04
+
+- First integration commit: `4f1232acd7ee0bffa737c6da2f5f4e4382815251`, UTC `2026-11-04T06:31:47Z`, derived Tehran `2026-11-04T10:01:47+03:30`.
+- Living Architecture Audit run `41786131486`: created `2026-11-04T06:31:51Z`, completed `2026-11-04T06:32:04Z`, FAILURE on exact tested SHA `4f1232acd7ee0bffa737c6da2f5f4e4382815251`; job log confirms checkout SHA. Exact failure: IN-100 had no link resolving to `INDEPENDENT_HOST_RECOVERY_PROTOCOL.md`.
+- Portable RAHM Conformance run `41786131274`: created `2026-11-04T06:31:51Z`, completed `2026-11-04T06:32:04Z`, FAILURE on exact tested SHA `4f1232acd7ee0bffa737c6da2f5f4e4382815251`; job log confirms checkout SHA. Four runtime tests and five schema tests passed; IN/OUT reconstruction failed on the same missing package-protocol link.
+- The workflow's “Synchronize current living mother into portable starter” step was skipped after step 7 failed. The later rebuild therefore failed with `STARTER_PACKAGE_FILES_MISSING: ['LIVING_MASTER_REFERENCE.md']`; this is downstream of the failed chain gate, not a separate package-source defect.
+- Failed conformance artifact `13301535411`: 76,613 bytes; SHA-256 `3b1b9a2cc17be0b38be365c301160849849563d5732c2e018b0b0608314f9c9a`. Rebuild failed and round-trip steps were skipped; do not treat this artifact as a fresh accepted package.
+- Reconciliation Watchdog `41786131336`: created `2026-11-04T06:31:51Z`, completed `2026-11-04T06:32:01Z`, SUCCESS on `4f1232acd7ee0bffa737c6da2f5f4e4382815251`.
+- Evidence Gate `41786131427`: created `2026-11-04T06:31:51Z`, completed `2026-11-04T06:32:02Z`, SUCCESS on `4f1232acd7ee0bffa737c6da2f5f4e4382815251`; follow-up main commit `807b5b79080e40c994d52a77e9c9776c3cb0a985` at UTC `2026-11-04T06:31:56Z` / Tehran `2026-11-04T10:01:56+03:30`.
+- The verifier was read directly. Its exact link matrix requires IN-100 and OUT-099 to resolve to the same living master, repository proof protocol, packaged `INDEPENDENT_HOST_RECOVERY_PROTOCOL.md`, and `EXPORT_MANIFEST.json`; both must also link to the other current-chain anchors. CURRENT-112 and NEXT-051 must each link to all six chain anchors, including a self-link, and explicitly preserve CURRENT-065/CURRENT-066 with “no winner selected”, Issue #20, Issue #21 and the six open recovery gates.
+- Second corrective integration adds that complete matrix and explicit open-gate markers. The resulting main must be independently audited and conformance-tested; any subsequent Evidence Gate commit remains NOT VERIFIED until separately tested.
+- Operation time and exact tool read-back wall-clock time remain UNKNOWN.

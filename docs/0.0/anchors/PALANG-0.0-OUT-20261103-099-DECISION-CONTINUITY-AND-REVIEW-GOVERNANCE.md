@@ -29,3 +29,12 @@
 
 ## Limits
 Repository documentation and read-back do not prove that another AI host automatically retrieves or enforces this rule. Until a clean-host test demonstrates it, cross-session/host enforcement remains NOT VERIFIED.
+
+## Recovery and transfer references — 2026-11-04
+
+- Living product master: [سند مرجع مادر مدل اولیه هوش مصنوعی](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
+- Repository recovery proof protocol: [INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md](../../architecture/مدل%20اولیه%20AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md)
+- Packaged recovery protocol: [INDEPENDENT_HOST_RECOVERY_PROTOCOL.md](../../../prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md)
+- Portable export manifest: [EXPORT_MANIFEST.json](../../portable/RAHM/EXPORT_MANIFEST.json)
+
+These references identify canonical and packaged recovery sources. They do not claim external host import or restart acceptance.

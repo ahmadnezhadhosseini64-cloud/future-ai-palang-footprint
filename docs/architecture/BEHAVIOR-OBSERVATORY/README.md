@@ -2,7 +2,7 @@
 
 - Stable ID: HUMAN-AI-INTERACTION-BEHAVIOR-OBSERVATORY-2026-10-22-001
 - Production ID: HAIBO-HAIF-2026-10-22-001
-- Version: 1.0.10
+- Version: 1.0.11
 - Owner: احمد پلنگ / Ahmad Nezhadhosseini
 - Project: Future AI / Palang Footprint / HAIF
 - Canonical path: `docs/architecture/BEHAVIOR-OBSERVATORY/README.md`
@@ -303,3 +303,10 @@ Continue collecting observable interaction and evaluator behavior as evidence-ba
 - Evidence Gate 41785190844 created follow-up main `2a30ea08cc72922fae4eedcb5ee464628be6a20c`; that head had no full audit/conformance receipt at integration start.
 - The protocol link, NEXT-051 checkpoint path and 0.0 registry top chain are corrected in this integration. Both full workflows must pass on the exact resulting SHA; any later Evidence Gate commit remains NOT VERIFIED until directly tested.
 - Root/checkpoint/queue remain POINT-0/061 → CURRENT-112 → NEXT-051. CURRENT-065/CURRENT-066, Issues #20/#21 and external-destination gates remain open.
+
+## EVT-0247 — second reconstruction-gate correction (2026-11-04)
+
+- Audit 41786131486 and Portable RAHM Conformance 41786131274 failed on exact SHA `4f1232acd7ee0bffa737c6da2f5f4e4382815251` because the required shared recovery link matrix and explicit CURRENT-112/NEXT-051 chain/open-gate markers were incomplete.
+- Evidence Gate 41786131427 advanced main to `807b5b79080e40c994d52a77e9c9776c3cb0a985`; that follow-up head had no full audit/conformance receipt.
+- The second correction adds the canonical master, repository proof protocol, packaged protocol and export-manifest links to both IN-100 and OUT-099, plus all six chain links and open-gate markers to CURRENT-112 and NEXT-051.
+- The conformance ZIP rebuild failure was downstream of the skipped master-sync step; artifact 13301535411 is not accepted as a fresh package rebuild. The resulting main requires fresh exact-SHA audit and conformance.

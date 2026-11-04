@@ -2,7 +2,7 @@
 
 - Stable ID: `PALANG-0.0-CURRENT-20261103-112-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE`
 - Production ID: `HAIF-CURRENT-112`
-- Version: 1.0.1
+- Version: 1.0.2
 - Parent current: [CURRENT-111](./PALANG-0.0-CURRENT-20261030-111-ARCHITECTURE-GAP-RECONCILIATION.md)
 - Root: [POINT-0/061](./GPT6-RAHM-USER-POINT-0-20261030-061-ARCHITECTURE-GAP-RECONCILIATION.md), preserved; no new root created.
 - Chain: [IN-100](./PALANG-0.0-IN-20261103-100-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [OUT-099](./PALANG-0.0-OUT-20261103-099-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [EVT-0246](../../architecture/BEHAVIOR-TRACE/EVT-0246-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03.md) → this checkpoint.
@@ -39,3 +39,24 @@ Continue the single active queue NEXT-051. Keep POINT-0/061 and CURRENT-111 hist
 - Evidence Gate 41785190844 succeeded on `80cd9c752f999e5ac30496fa359fb9482319bc22` and created follow-up main `2a30ea08cc72922fae4eedcb5ee464628be6a20c` at UTC `2026-11-04T06:23:31Z` / Tehran `2026-11-04T09:53:31+03:30`. That newer head had no full audit or portable-conformance run at the time of this integration.
 - Corrective integration adds the missing protocol link to IN-100, corrects NEXT-051's CURRENT-112 target path and updates the 0.0 registry's top chain to CURRENT-112. The resulting exact main SHA still requires direct audit and portable conformance.
 - Issue #20/#21 remain OPEN; CURRENT-065/CURRENT-066 remains OPEN with no inferred winner; Buffer/Persistent Memory remain NOT VERIFIED; Dropbox remains OPEN / NOT VERIFIED; independent-host recovery remains NOT RUN.
+
+## Current-chain reconstruction links and explicit open gates — 2026-11-04
+
+- User root: [POINT-0/061](./GPT6-RAHM-USER-POINT-0-20261030-061-ARCHITECTURE-GAP-RECONCILIATION.md)
+- Input: [IN-100](./PALANG-0.0-IN-20261103-100-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md)
+- Output: [OUT-099](./PALANG-0.0-OUT-20261103-099-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md)
+- User-turn event: [EVT-0246](../../architecture/BEHAVIOR-TRACE/EVT-0246-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03.md)
+- Current checkpoint (self-reference): [CURRENT-112](./PALANG-0.0-CURRENT-20261103-112-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md)
+- Sole active queue: [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
+
+- CURRENT-065/CURRENT-066: OPEN; no winner selected. Overlay-manifest lineage remains OPEN.
+- Issue #20: OPEN — interaction-pair runtime, stable INT/IN/OUT capture, reverse lookup, cold-start, clean export/import and runtime/host proof.
+- Issue #21: OPEN — full historical source/rule census and semantic reconciliation.
+- Full state recovery: OPEN / NOT RUN; reconstruct independently from IN and OUT.
+- Clean host import: OPEN / NOT RUN.
+- Second-host import: OPEN / NOT RUN.
+- Restart persistence: OPEN / NOT VERIFIED; restart/new-session recovery remains OPEN.
+- Idle/background capture: OPEN / NOT VERIFIED; automatic live message capture remains NOT PROVEN.
+- Graph/identity/parent/time triage: OPEN; duplicate IDs and ambiguous parents remain unresolved.
+
+- The first correction used the canonical proof-protocol filename but omitted the separate packaged protocol and export-manifest links required by the reconstruction gate. The verifier's exact failure and this second correction are preserved in EVT-0247 / TIME-BINDING-EVT-0247.

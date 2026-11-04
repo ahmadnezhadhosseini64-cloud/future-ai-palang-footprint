@@ -3,13 +3,13 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.10.22
+- Version: 1.10.23
 - Date: 2026-11-04
 - Exact Time: EVT-0247 initial event commit UTC `2026-11-04T06:23:22Z` / Tehran `2026-11-04T09:53:22+03:30`; the time-binding file's own final-change time is read separately from its Git commit metadata.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: ACTIVE / LIVING — latest user-turn root POINT-0/061; current checkpoint CURRENT-112; sole active queue NEXT-051; living master v1.7.48. EVT-0247 mirror event is registered and integrated. Audit 41785190735 and Portable RAHM Conformance 41785190874 failed on exact SHA 80cd9c752f999e5ac30496fa359fb9482319bc22 because IN-100 lacked the repository recovery protocol link; the conformance ZIP rebuild failure followed from the skipped master-sync step. The IN-100 link, NEXT-051 checkpoint target and 0.0 top chain are corrected in this integration; the resulting main requires fresh exact-SHA audit/conformance. CURRENT-065/CURRENT-066, Issues #20/#21, missing NEXT-051 forensic archive and historic graph/identity/parent/time reconciliation remain OPEN.
+- Status: ACTIVE / LIVING — latest user-turn root POINT-0/061; current checkpoint CURRENT-112; sole active queue NEXT-051; living master v1.7.49. EVT-0247 second corrective integration adds the full IN-100/OUT-099 recovery link matrix and explicit CURRENT-112/NEXT-051 chain/open-gate markers after audit 41786131486 and conformance 41786131274 failed on exact SHA 4f1232acd7ee0bffa737c6da2f5f4e4382815251. Evidence Gate 41786131427 advanced main to 807b5b79080e40c994d52a77e9c9776c3cb0a985; that follow-up head had no full audit/conformance receipt. The resulting second-correction main requires both exact-SHA workflows. CURRENT-065/CURRENT-066, Issues #20/#21, missing NEXT-051 forensic archive and historic graph/identity/parent/time reconciliation remain OPEN.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
@@ -2535,3 +2535,9 @@ Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-11
 - Corrective changes: add the canonical independent-host recovery protocol link to IN-100; fix NEXT-051's CURRENT-112 target; make the 0.0 registry top chain agree with the already registered CURRENT-112 chain; integrate EVT-0247 and time binding into living references. No new root or NEXT-052.
 - Exact-SHA audit and conformance must be inspected on the resulting main; any Evidence Gate follow-up head remains NOT VERIFIED until separately tested.
 - CURRENT-065/CURRENT-066, Issues #20/#21, forensic archive, Buffer/Persistent Memory, Dropbox and independent-host recovery remain OPEN / NOT VERIFIED / NOT RUN as applicable.
+
+## EVT-0247 — second reconstruction-gate correction — 2026-11-04
+
+- The exact verifier requires a shared link matrix in IN-100 and OUT-099: current living master, repository proof protocol, packaged `INDEPENDENT_HOST_RECOVERY_PROTOCOL.md`, and `EXPORT_MANIFEST.json`; it also requires all six chain links and explicit open gates in CURRENT-112 and NEXT-051.
+- Audit 41786131486 and conformance 41786131274 failed on `4f1232acd7ee0bffa737c6da2f5f4e4382815251` because those references/markers were incomplete. Evidence Gate 41786131427 advanced main to `807b5b79080e40c994d52a77e9c9776c3cb0a985`; no full audit/conformance on that follow-up head.
+- Second correction adds the missing links and markers; exact final main must pass both workflows. Any Evidence Gate follow-up remains NOT VERIFIED until separately tested.
