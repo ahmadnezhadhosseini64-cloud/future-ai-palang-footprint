@@ -44,7 +44,7 @@
 - Preserve POINT-0/016, POINT-0/017, POINT-0/018 / EVT-0180 and all later roots; preserve EVT-0177 and its time binding, canonical EVT-0178, EVT-0179 collision lineage and the quarantined duplicate-number draft.
 - CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN; `winner_selected=false`. No pointer is selected by inference.
 
-## 3. Latest relevant Actions evidence on the exact current main SHA
+## 3. Actions evidence on the initial main HEAD at start of this run
 
 - Living Architecture Audit run `41698078148`: FAILURE on exact SHA `8c20ecd65036230f41f7a26542bfccb8201669ad`. The job log confirms checkout SHA and `GITHUB_SHA`. It failed at “Verify latest global current chain separately from overlay-pointer recovery” because IN-100 has no link to `INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md`; subsequent audit steps were skipped.
 - Reconciliation Watchdog run `41784078066`: SUCCESS on the same exact SHA; the job log confirms checkout SHA and `GITHUB_SHA`.
@@ -80,3 +80,16 @@
 4. Run Living Architecture Audit and Portable RAHM Conformance on the same exact final main SHA. If an Evidence Gate or another workflow advances main, the new head remains NOT VERIFIED until separately tested.
 5. Continue CURRENT-065/CURRENT-066 overlay lineage, identity overlap/duplicate-ID adjudication, missing-link and parent-edge repair, NEXT-051 forensic archive recovery, Issues #20/#21 and BOART-FOLLOWUP-01.
 6. Do not create a new user root or NEXT-052. Do not overwrite the canonical source or infer an execution-pointer winner.
+
+## 5. Corrective integration and post-registration workflow results — 2026-11-04
+
+- EVT-0247 initial registration commit: `80cd9c752f999e5ac30496fa359fb9482319bc22`, UTC `2026-11-04T06:23:22Z`, derived Asia/Tehran `2026-11-04T09:53:22+03:30`; initial event blob `895cbd9e78434e3360b078a292ecf127ef4d5141`, 7,720 characters, exact read-back PASS.
+- Push-triggered Living Architecture Audit run `41785190735`: FAILURE on exact SHA `80cd9c752f999e5ac30496fa359fb9482319bc22`; checkout and `GITHUB_SHA` confirmed. The same IN-100 missing-protocol-link failure occurred.
+- Push-triggered Portable RAHM Conformance run `41785190874`: FAILURE on exact SHA `80cd9c752f999e5ac30496fa359fb9482319bc22`. Runtime unit tests and schema fixtures passed (valid fixture errors 0; invalid fixture errors 4), but latest IN/OUT reconstruction failed on the same missing IN-100 protocol link.
+- The conformance ZIP rebuild step then failed with `STARTER_PACKAGE_FILES_MISSING: ['LIVING_MASTER_REFERENCE.md']`. The workflow's preceding “Synchronize current living mother into portable starter” step had been skipped after the earlier failed chain gate; therefore this missing generated file is a downstream consequence, not an independent reason to alter the canonical package source.
+- Conformance artifact `13300608726` was uploaded (75,951 bytes; archive SHA-256 `1c20dd86a85563105c50516c492e5cfdeee77c3245bfd27d9c7fd2687d14836b`), but the rebuild failed and the round-trip verification steps were skipped. This artifact is NOT accepted as a fresh package rebuild receipt.
+- Reconciliation Watchdog run `41785190765`: SUCCESS on the same exact SHA.
+- Evidence Gate run `41785190844`: SUCCESS on the same exact SHA; workflow run created `2026-11-04T06:23:25Z` and completed `2026-11-04T06:23:37Z`. It created follow-up main commit `2a30ea08cc72922fae4eedcb5ee464628be6a20c` at UTC `2026-11-04T06:23:31Z` / Tehran `2026-11-04T09:53:31+03:30`.
+- Current main at integration start was `2a30ea08cc72922fae4eedcb5ee464628be6a20c`; no Living Architecture Audit or Portable RAHM Conformance run was found on that follow-up SHA.
+- Corrective integration now adds the exact repository recovery-proof protocol link to IN-100, corrects NEXT-051's CURRENT-112 target path, and updates the 0.0 registry's top chain to CURRENT-112. The resulting new main must receive both full workflows on its exact SHA; any subsequent Evidence Gate commit remains NOT VERIFIED until directly audited.
+- Operation/read-back wall-clock time is not exposed by the connected tools and remains UNKNOWN.

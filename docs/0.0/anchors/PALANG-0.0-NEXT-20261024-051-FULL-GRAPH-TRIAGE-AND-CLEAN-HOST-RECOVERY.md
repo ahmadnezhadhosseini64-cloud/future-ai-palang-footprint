@@ -2,11 +2,11 @@
 
 - Stable ID: G6IP-RAHM-NEXT-051-20261024
 - Production ID: G6IP-RAHM-NEXT-051-20261024
-- Version: 1.0.25
+- Version: 1.0.26
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE
 - Project: Future AI / Palang Footprint — HAIF
 - Canonical queue: this file only
-- Current checkpoint: [CURRENT-112](PALANG-0.0-CURRENT-20261030-111-ARCHITECTURE-GAP-RECONCILIATION.md)
+- Current checkpoint: [CURRENT-112](PALANG-0.0-CURRENT-20261103-112-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md)
 - Current point: [POINT-0/061 (0+)](GPT6-RAHM-USER-POINT-0-20261030-061-ARCHITECTURE-GAP-RECONCILIATION.md)
 - Living mother: [سند مرجع مادر مدل اولیه](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 - Package contract: [HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md](../../../prototype/haif-gpt6-starter/HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md)
@@ -200,3 +200,12 @@ The previous blob at this path began with the Integration Queue README title and
 - [ ] Run the new tests and both full repository workflows on the same exact final main SHA; do not reuse prior PASS receipts.
 - [ ] In a clean independent host, verify retrieval of the settled decision and rationale from the transferred package without hidden chat history. Until direct receipt: NOT RUN / NOT VERIFIED.
 - Acceptance: DCRG-AT-01…06 pass where executable; all unsupported host behaviors remain explicitly NOT VERIFIED.
+
+## EVT-0247 live mirror synchronization continuation — 2026-11-04
+
+- Mirror-only event: [EVT-0247](../../architecture/BEHAVIOR-TRACE/EVT-0247-LIVE-MIRROR-SYNC-RECHECK-2026-11-04.md) / [TIME-BINDING-EVT-0247](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0247-LIVE-MIRROR-SYNC-2026-11-04.md).
+- Corrected the top checkpoint link to the actual CURRENT-112 file; the prior label/target mismatch is preserved in Git history.
+- Added the required independent-host recovery protocol link to IN-100 and reconciled the top 0.0 registry chain to POINT-0/061 → IN-100 → OUT-099 → EVT-0246 → CURRENT-112 → NEXT-051.
+- Audit 41785190735 and Portable RAHM Conformance 41785190874 failed on exact SHA `80cd9c752f999e5ac30496fa359fb9482319bc22` at the missing IN-100 protocol link. The ZIP rebuild's missing generated `LIVING_MASTER_REFERENCE.md` followed because the workflow's master-sync step was skipped after that earlier failure.
+- Evidence Gate 41785190844 succeeded on `80cd9c752f999e5ac30496fa359fb9482319bc22` and advanced main to `2a30ea08cc72922fae4eedcb5ee464628be6a20c`; that follow-up head had not been fully audited. This integration triggers both full workflows because the changed paths match their push filters.
+- Keep the forensic archive, CURRENT-065/CURRENT-066, identity/duplicate-ID, parent-edge, Issues #20/#21 and external-host gates OPEN until their own evidence passes. NEXT-051 remains the only queue; do not create NEXT-052.

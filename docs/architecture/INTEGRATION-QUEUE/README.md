@@ -3,13 +3,13 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.10.21
-- Date: 2026-11-03
-- Exact Time: EVT-0245 event commit UTC `2026-11-03T06:30:27Z` / Tehran `2026-11-03T10:00:27+03:30`, bound in TIME-BINDING-EVT-0245. Time-binding commit UTC `2026-11-03T06:30:48Z` / Tehran `2026-11-03T10:00:48+03:30`.
+- Version: 1.10.22
+- Date: 2026-11-04
+- Exact Time: EVT-0247 initial event commit UTC `2026-11-04T06:23:22Z` / Tehran `2026-11-04T09:53:22+03:30`; the time-binding file's own final-change time is read separately from its Git commit metadata.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: ACTIVE / LIVING — latest user-turn root POINT-0/061; current checkpoint CURRENT-112; sole active queue NEXT-051; living master v1.7.47; DCRG decision-continuity rule added. EVT-0245 mirror event registered; current final main requires exact-SHA audit/conformance. CURRENT-065/CURRENT-066, Issues #20/#21, missing NEXT-051 forensic archive and historic graph/identity/parent/time reconciliation remain OPEN.
+- Status: ACTIVE / LIVING — latest user-turn root POINT-0/061; current checkpoint CURRENT-112; sole active queue NEXT-051; living master v1.7.48. EVT-0247 mirror event is registered and integrated. Audit 41785190735 and Portable RAHM Conformance 41785190874 failed on exact SHA 80cd9c752f999e5ac30496fa359fb9482319bc22 because IN-100 lacked the repository recovery protocol link; the conformance ZIP rebuild failure followed from the skipped master-sync step. The IN-100 link, NEXT-051 checkpoint target and 0.0 top chain are corrected in this integration; the resulting main requires fresh exact-SHA audit/conformance. CURRENT-065/CURRENT-066, Issues #20/#21, missing NEXT-051 forensic archive and historic graph/identity/parent/time reconciliation remain OPEN.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
@@ -2525,3 +2525,13 @@ Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-11
 | DCRG-HAIF-2026-11-03-001 | حفظ تصمیم‌های تثبیت‌شده و بازبینی فقط با محرک معتبر | REGISTERED / INTEGRATION RECORDED; exact read-back and runtime acceptance pending | سند مادر HAIF، NPFAP، UIALAC، دستور میزبان، بستهٔ قابل‌حمل، نمایه‌ها | [DCRG](../../reference/REFERENCE-DOCUMENTS/DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03-001.md) · [CURRENT-112](../../0.0/anchors/PALANG-0.0-CURRENT-20261103-112-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) · [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md) |
 
 این مورد به صف فعال موجود افزوده شده است؛ صف جدید NEXT ساخته نشده. بستهٔ ZIP موجود تا زمان افزودن فایل/قاعده به manifest و ساخت و آزمون مجدد، شامل این الحاقیه فرض نمی‌شود.
+
+## EVT-0247 — live mirror synchronization and corrective integration (2026-11-04)
+
+- [EVT-0247](../BEHAVIOR-TRACE/EVT-0247-LIVE-MIRROR-SYNC-RECHECK-2026-11-04.md) / [TIME-BINDING-EVT-0247](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0247-LIVE-MIRROR-SYNC-2026-11-04.md).
+- Initial event commit `80cd9c752f999e5ac30496fa359fb9482319bc22` at UTC `2026-11-04T06:23:22Z` / Tehran `2026-11-04T09:53:22+03:30`; source blob de1b75f07241c9b313e476af5f1417177ff78c10 (10,479 chars) and Library v7 (10,480 chars) differ only by one terminal LF; normalized content and semantic fields match, exact equality FALSE; no Library rewrite.
+- Main before integration was `2a30ea08cc72922fae4eedcb5ee464628be6a20c`, created by Evidence Gate 41785190844 after the event-push workflows ran on `80cd9c752f999e5ac30496fa359fb9482319bc22`.
+- Living Architecture Audit 41785190735 and Portable RAHM Conformance 41785190874 both failed on `80cd9c752f999e5ac30496fa359fb9482319bc22` at the missing protocol link in IN-100. Conformance's later ZIP rebuild failure was downstream of the skipped living-master sync step; artifact 13300608726 is not accepted as a fresh rebuild receipt.
+- Corrective changes: add the canonical independent-host recovery protocol link to IN-100; fix NEXT-051's CURRENT-112 target; make the 0.0 registry top chain agree with the already registered CURRENT-112 chain; integrate EVT-0247 and time binding into living references. No new root or NEXT-052.
+- Exact-SHA audit and conformance must be inspected on the resulting main; any Evidence Gate follow-up head remains NOT VERIFIED until separately tested.
+- CURRENT-065/CURRENT-066, Issues #20/#21, forensic archive, Buffer/Persistent Memory, Dropbox and independent-host recovery remain OPEN / NOT VERIFIED / NOT RUN as applicable.

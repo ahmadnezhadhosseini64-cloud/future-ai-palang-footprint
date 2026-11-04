@@ -2,7 +2,7 @@
 
 - Stable ID: `PALANG-0.0-CURRENT-20261103-112-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE`
 - Production ID: `HAIF-CURRENT-112`
-- Version: 1.0.0
+- Version: 1.0.1
 - Parent current: [CURRENT-111](./PALANG-0.0-CURRENT-20261030-111-ARCHITECTURE-GAP-RECONCILIATION.md)
 - Root: [POINT-0/061](./GPT6-RAHM-USER-POINT-0-20261030-061-ARCHITECTURE-GAP-RECONCILIATION.md), preserved; no new root created.
 - Chain: [IN-100](./PALANG-0.0-IN-20261103-100-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [OUT-099](./PALANG-0.0-OUT-20261103-099-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [EVT-0246](../../architecture/BEHAVIOR-TRACE/EVT-0246-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03.md) → this checkpoint.
@@ -29,3 +29,13 @@ This checkpoint records an observed interaction and a repository-level architect
 
 ## Resume
 Continue the single active queue NEXT-051. Keep POINT-0/061 and CURRENT-111 history intact. After all writes, fetch every changed file, compare identifiers, versions and links, then run the exact-SHA repository audit and portable conformance; do not inherit earlier PASS results for a newer commit.
+
+## Execution update — EVT-0247 live mirror synchronization (2026-11-04)
+
+- Mirror-only event [EVT-0247](../../architecture/BEHAVIOR-TRACE/EVT-0247-LIVE-MIRROR-SYNC-RECHECK-2026-11-04.md) is registered; [TIME-BINDING-EVT-0247](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0247-LIVE-MIRROR-SYNC-2026-11-04.md) binds its actual Git registration commit. No new user root was created.
+- User-turn root remains POINT-0/061; CURRENT-112 remains the active checkpoint, with CURRENT-111 preserved as parent; NEXT-051 remains the sole active queue.
+- EVT-0247 initial registration commit: `80cd9c752f999e5ac30496fa359fb9482319bc22`, UTC `2026-11-04T06:23:22Z`, derived Tehran `2026-11-04T09:53:22+03:30`.
+- Audit 41785190735 and Portable RAHM Conformance 41785190874 failed on exact SHA `80cd9c752f999e5ac30496fa359fb9482319bc22` because IN-100 lacked the independent-host recovery protocol link. The conformance ZIP rebuild then failed because its preceding master-sync step was skipped, leaving generated `LIVING_MASTER_REFERENCE.md` absent; this is a downstream failure, not evidence that canonical package source should be overwritten.
+- Evidence Gate 41785190844 succeeded on `80cd9c752f999e5ac30496fa359fb9482319bc22` and created follow-up main `2a30ea08cc72922fae4eedcb5ee464628be6a20c` at UTC `2026-11-04T06:23:31Z` / Tehran `2026-11-04T09:53:31+03:30`. That newer head had no full audit or portable-conformance run at the time of this integration.
+- Corrective integration adds the missing protocol link to IN-100, corrects NEXT-051's CURRENT-112 target path and updates the 0.0 registry's top chain to CURRENT-112. The resulting exact main SHA still requires direct audit and portable conformance.
+- Issue #20/#21 remain OPEN; CURRENT-065/CURRENT-066 remains OPEN with no inferred winner; Buffer/Persistent Memory remain NOT VERIFIED; Dropbox remains OPEN / NOT VERIFIED; independent-host recovery remains NOT RUN.

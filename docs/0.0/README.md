@@ -1,8 +1,8 @@
 # پوشهٔ ۰.۰ — دفتر نقاط ادامهٔ پروژه
 
-## تازه‌ترین زنجیره — POINT-0/061 → CURRENT-111
+## تازه‌ترین زنجیره — POINT-0/061 → CURRENT-112
 
-[POINT-0/061](anchors/GPT6-RAHM-USER-POINT-0-20261030-061-ARCHITECTURE-GAP-RECONCILIATION.md) → [IN-099](anchors/PALANG-0.0-IN-20261030-099-ARCHITECTURE-GAP-RECONCILIATION.md) → [OUT-098](anchors/PALANG-0.0-OUT-20261030-098-ARCHITECTURE-GAP-RECONCILIATION.md) → [EVT-0240](../architecture/BEHAVIOR-TRACE/EVT-0240-POINT-061-ARCHITECTURE-GAP-RECONCILIATION-2026-10-30.md) → [CURRENT-111](anchors/PALANG-0.0-CURRENT-20261030-111-ARCHITECTURE-GAP-RECONCILIATION.md) → [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+[POINT-0/061](anchors/GPT6-RAHM-USER-POINT-0-20261030-061-ARCHITECTURE-GAP-RECONCILIATION.md) → [IN-100](anchors/PALANG-0.0-IN-20261103-100-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [OUT-099](anchors/PALANG-0.0-OUT-20261103-099-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [EVT-0246](../architecture/BEHAVIOR-TRACE/EVT-0246-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03.md) → [CURRENT-112](anchors/PALANG-0.0-CURRENT-20261103-112-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 
 این زنجیره درخواست کاربر را به اجرای واقعی سند مادر و بستهٔ موجود متصل می‌کند. ثبت زنجیره به معنی ساخت ZIP جدید یا پذیرش میزبان نیست؛ این دو نیازمند رسید مستقل‌اند. تعارض دو ریشهٔ POINT-0/059 عمداً حل‌نشده باقی می‌ماند.
 
@@ -1917,3 +1917,11 @@ The canonical chain is [POINT-0/032](./anchors/GPT6-RAHM-USER-POINT-0-20261026-0
 [POINT-0/061](anchors/GPT6-RAHM-USER-POINT-0-20261030-061-ARCHITECTURE-GAP-RECONCILIATION.md) → [IN-100](anchors/PALANG-0.0-IN-20261103-100-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [OUT-099](anchors/PALANG-0.0-OUT-20261103-099-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [EVT-0246](../architecture/BEHAVIOR-TRACE/EVT-0246-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03.md) → [CURRENT-112](anchors/PALANG-0.0-CURRENT-20261103-112-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 
 این زنجیره یک درس رفتاری تازه را به نقطهٔ جاری موجود متصل می‌کند؛ POINT-0/061 و CURRENT-111 حفظ می‌شوند و ریشهٔ موازی ساخته نشده است. NEXT-051 همچنان تنها صف فعال است. حاکمیت تصمیم: [DCRG](../reference/REFERENCE-DOCUMENTS/DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03-001.md). آزمون میزبان مستقل هنوز OPEN / NOT RUN است.
+
+## رویداد آینه‌ای EVT-0247 — 2026-11-04، بدون ساخت ریشهٔ کاربر جدید
+
+- [EVT-0247](../architecture/BEHAVIOR-TRACE/EVT-0247-LIVE-MIRROR-SYNC-RECHECK-2026-11-04.md) / [TIME-BINDING-EVT-0247](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0247-LIVE-MIRROR-SYNC-2026-11-04.md).
+- رویداد EVT-0247 فقط همگام‌سازی آینه است؛ تازه‌ترین ریشهٔ کاربر POINT-0/061 و checkpoint جاری CURRENT-112 باقی می‌مانند. CURRENT-111 به‌عنوان والد حفظ می‌شود و NEXT-051 تنها صف فعال است.
+- EVT-0247 ابتدا در commit `80cd9c752f999e5ac30496fa359fb9482319bc22` در UTC `2026-11-04T06:23:22Z` / تهران `2026-11-04T09:53:22+03:30` ثبت شد. Evidence Gate سپس main را به `2a30ea08cc72922fae4eedcb5ee464628be6a20c` در UTC `2026-11-04T06:23:31Z` / تهران `2026-11-04T09:53:31+03:30` منتقل کرد.
+- ممیزی و Portable RAHM Conformance روی SHA `80cd9c752f999e5ac30496fa359fb9482319bc22` به‌دلیل نبود پیوند پروتکل در IN-100 شکست خوردند. پیوند در این به‌روزرسانی افزوده شد؛ پیوند checkpoint در NEXT-051 و زنجیرهٔ بالای این دفتر نیز اصلاح شدند.
+- CURRENT-065/CURRENT-066، Issues #20/#21 و گیت‌های مقصد خارجی باز می‌مانند؛ NEXT-052 ساخته نشده است.

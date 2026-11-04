@@ -1,8 +1,8 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.17
-- Date: 2026-11-03
+- Version: 1.0.18
+- Date: 2026-11-04
 - Project: Future AI / Palang Footprint / HAIF
 
 ## مسیرهای بازیابی
@@ -1089,3 +1089,13 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Current: [CURRENT-112](../../0.0/anchors/PALANG-0.0-CURRENT-20261103-112-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md); sole queue [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - Rule: [DCRG](../../reference/REFERENCE-DOCUMENTS/DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03-001.md) — retrieve and honour settled decisions; reopen only on valid trigger.
 - Runtime and clean-host enforcement: OPEN / NOT RUN.
+
+## Latest mirror synchronization — EVT-0247 (2026-11-04)
+
+- [EVT-0247](./EVT-0247-LIVE-MIRROR-SYNC-RECHECK-2026-11-04.md) / [TIME-BINDING-EVT-0247](./TIME-BINDING-EVT-0247-LIVE-MIRROR-SYNC-2026-11-04.md).
+- Initial event registration commit `80cd9c752f999e5ac30496fa359fb9482319bc22` at UTC `2026-11-04T06:23:22Z` / Tehran `2026-11-04T09:53:22+03:30`; exact event-file read-back PASS.
+- Source blob de1b75f07241c9b313e476af5f1417177ff78c10 (10,479 chars); Library v7 is 10,480 chars, source plus one terminal LF; normalized content and semantic fields match, exact equality FALSE, edit distance 1. No Library write.
+- Event-push audit 41785190735 and conformance 41785190874 failed on exact SHA `80cd9c752f999e5ac30496fa359fb9482319bc22` because IN-100 lacked the repository recovery protocol link. The conformance package rebuild's generated-master absence followed because the master-sync step was skipped after the chain failure.
+- Evidence Gate 41785190844 succeeded on `80cd9c752f999e5ac30496fa359fb9482319bc22` and advanced main to `2a30ea08cc72922fae4eedcb5ee464628be6a20c` at UTC `2026-11-04T06:23:31Z` / Tehran `2026-11-04T09:53:31+03:30`. That follow-up head had no full audit/conformance run at integration start.
+- IN-100 protocol link, NEXT-051 checkpoint target and 0.0 registry top chain are corrected in this integration. The final integration head still requires exact-SHA audit and conformance.
+- Root/checkpoint/queue remain POINT-0/061 → CURRENT-112 → NEXT-051; CURRENT-065/CURRENT-066 and Issues #20/#21 remain OPEN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN.

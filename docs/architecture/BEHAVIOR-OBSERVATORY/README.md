@@ -2,11 +2,11 @@
 
 - Stable ID: HUMAN-AI-INTERACTION-BEHAVIOR-OBSERVATORY-2026-10-22-001
 - Production ID: HAIBO-HAIF-2026-10-22-001
-- Version: 1.0.9
+- Version: 1.0.10
 - Owner: احمد پلنگ / Ahmad Nezhadhosseini
 - Project: Future AI / Palang Footprint / HAIF
 - Canonical path: `docs/architecture/BEHAVIOR-OBSERVATORY/README.md`
-- Status: ACTIVE / LIVING in repository; EVT-0245 and its time binding are registered and integrated. The source/Library comparison passed within tolerance; exact equality remains false by one terminal LF. Latest full audit/conformance receipts are bound to older SHA 027dff...; current final main requires its own exact-SHA verification. External integration remains OPEN.
+- Status: ACTIVE / LIVING in repository; EVT-0247 and its time binding are integrated. Source/Library v7 comparison remains a semantic match with one additional terminal LF in Library; exact equality FALSE; no rewrite. On event commit 80cd9c752f999e5ac30496fa359fb9482319bc22, Living Architecture Audit 41785190735 and Portable RAHM Conformance 41785190874 failed at the missing IN-100 recovery-protocol link; the conformance ZIP rebuild error followed because the master-sync step was skipped after the chain failure. Evidence Gate 41785190844 advanced main to 2a30ea08cc72922fae4eedcb5ee464628be6a20c; the follow-up head was not fully audited. The IN-100 link, NEXT-051 checkpoint target and 0.0 registry top chain are corrected in this integration; resulting exact main still requires both full workflows. External integration remains OPEN.
 - Time rule: UTC is canonical; Asia/Tehran time is derived from the same UTC instant (+03:30 for this date). Unknown timestamps remain UNKNOWN, never guessed.
 - Independent anchor: `PALANG-BEHAVIOR-OBSERVATION-AND-RECOVERY-TEST-2026-10-22-001`
 - Related event: `EVT-0034`
@@ -293,3 +293,13 @@ Continue collecting observable interaction and evaluator behavior as evidence-ba
 - Finding: a later review that does not retrieve an already settled user decision can reopen it without cause, create avoidable rework and require repeated explanation.
 - Corrective behavior: retrieve decision and rationale first; honour SETTLED / ACTIVE; reopen only on a valid trigger; preserve the old decision and lineage.
 - Status: OBSERVED / REGISTERED. Regression and clean-host tests remain OPEN / NOT RUN until actual receipts exist.
+
+## Latest mirror synchronization — EVT-0247 (2026-11-04)
+
+- [EVT-0247](../BEHAVIOR-TRACE/EVT-0247-LIVE-MIRROR-SYNC-RECHECK-2026-11-04.md) / [TIME-BINDING-EVT-0247](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0247-LIVE-MIRROR-SYNC-2026-11-04.md).
+- Initial event registration commit `80cd9c752f999e5ac30496fa359fb9482319bc22` at UTC `2026-11-04T06:23:22Z` / Tehran `2026-11-04T09:53:22+03:30`; event read-back PASS.
+- Canonical source blob de1b75f07241c9b313e476af5f1417177ff78c10, 10,479 chars; Library v7, 10,480 chars, source plus one terminal LF; normalized equality and semantic match PASS, exact equality FALSE, no Library write.
+- Audit and conformance both failed on exact event SHA `80cd9c752f999e5ac30496fa359fb9482319bc22` due the missing IN-100 protocol link. The package rebuild failure was downstream of the skipped master-sync step; the uploaded artifact is not a fresh accepted package.
+- Evidence Gate 41785190844 created follow-up main `2a30ea08cc72922fae4eedcb5ee464628be6a20c`; that head had no full audit/conformance receipt at integration start.
+- The protocol link, NEXT-051 checkpoint path and 0.0 registry top chain are corrected in this integration. Both full workflows must pass on the exact resulting SHA; any later Evidence Gate commit remains NOT VERIFIED until directly tested.
+- Root/checkpoint/queue remain POINT-0/061 → CURRENT-112 → NEXT-051. CURRENT-065/CURRENT-066, Issues #20/#21 and external-destination gates remain open.

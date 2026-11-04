@@ -22,6 +22,7 @@
 - Foundational mother: [NPFAP](../../reference/REFERENCE-DOCUMENTS/NEW-PROJECT-FOUNDATIONAL-ARCHITECTURE-PRINCIPLES-2026-10-24-001.md)
 - Governing interaction contract: [UIALAC](../../reference/REFERENCE-DOCUMENTS/UNIVERSAL-INTERACTION-ANCHOR-AND-LIVING-ARCHITECTURE-CONTRACT-2026-10-20-001.md)
 - Canonical lesson: [Decision Continuity & Review Governance](../../reference/REFERENCE-DOCUMENTS/DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03-001.md)
+- Repository recovery proof protocol: [INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md](../../architecture/مدل%20اولیه%20AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md)
 
 ## Boundary
 This input records the user's request and the observed interaction pattern. It does not claim automatic cross-session recall, background capture, external memory synchronization, or runtime enforcement. Those capabilities require separate destination-side evidence.

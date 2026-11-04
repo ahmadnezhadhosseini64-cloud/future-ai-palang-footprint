@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-11-03 — EVT-0245 live mirror synchronization. Latest root POINT-0/061, checkpoint CURRENT-112, sole active queue NEXT-051; master v1.7.47. Decision continuity rule DCRG v1.0.0 registered; clean-host enforcement remains NOT RUN. Current final main requires exact-SHA audit and conformance.
+**Last Updated:** 2026-11-04 — EVT-0247 live mirror synchronization. Latest root POINT-0/061, checkpoint CURRENT-112, sole active queue NEXT-051; living master v1.7.48. The event-push audit and portable conformance failed on exact SHA 80cd9c752f999e5ac30496fa359fb9482319bc22 because IN-100 lacked the repository recovery protocol link; corrective integration is applied, and its final main SHA still requires both exact-SHA workflows.
 
 ## Canonical References
 
@@ -2228,8 +2228,17 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - Next deterministic action: after all integration writes, rediscover final main and run Living Architecture Audit plus Portable RAHM Conformance on that exact SHA; if Evidence Gate advances main, verify the new head separately.
 
 ## Latest mirror event
-- [EVT-0245](architecture/BEHAVIOR-TRACE/EVT-0245-LIVE-MIRROR-SYNC-RECHECK-2026-11-03.md) / [TIME-BINDING-EVT-0245](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0245-LIVE-MIRROR-SYNC-2026-11-03.md).
+- [EVT-0247](architecture/BEHAVIOR-TRACE/EVT-0247-LIVE-MIRROR-SYNC-RECHECK-2026-11-04.md) / [TIME-BINDING-EVT-0247](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0247-LIVE-MIRROR-SYNC-2026-11-04.md).
 
 
 | DCRG-HAIF-2026-11-03-001 | `docs/reference/REFERENCE-DOCUMENTS/DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03-001.md` | حاکمیت تداوم تصمیم‌های تثبیت‌شده؛ بازیابی دلیل پیشین و بازبینی فقط با محرک معتبر | Repository integration / read-back to be reconciled; runtime and clean-host enforcement NOT RUN |
 | HAIF-CURRENT-112 | `docs/0.0/anchors/PALANG-0.0-CURRENT-20261103-112-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md` | نقطهٔ کنترل زنجیرهٔ IN-100 / OUT-099 / EVT-0246 و درس تداوم تصمیم | Registered; exact read-back and link reconciliation pending |
+
+## EVT-0247 live mirror synchronization — 2026-11-04
+
+- Event [EVT-0247](architecture/BEHAVIOR-TRACE/EVT-0247-LIVE-MIRROR-SYNC-RECHECK-2026-11-04.md); time binding [TIME-BINDING-EVT-0247](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0247-LIVE-MIRROR-SYNC-2026-11-04.md).
+- Initial registration commit `80cd9c752f999e5ac30496fa359fb9482319bc22` at UTC `2026-11-04T06:23:22Z` / Tehran `2026-11-04T09:53:22+03:30`; source/Library normalized content and semantic fields match, exact text equality remains FALSE by one terminal LF.
+- Root POINT-0/061, checkpoint CURRENT-112, active queue NEXT-051; living master v1.7.48. CURRENT-111 remains parent history.
+- Audit 41785190735 and Portable RAHM Conformance 41785190874 failed on exact SHA `80cd9c752f999e5ac30496fa359fb9482319bc22` at the missing IN-100 protocol link. The ZIP rebuild error was downstream of the skipped master-sync step. Evidence Gate 41785190844 advanced main to `2a30ea08cc72922fae4eedcb5ee464628be6a20c`; no full audit/conformance was found on that follow-up head.
+- This integration adds the required protocol link, corrects the NEXT-051 CURRENT-112 link and updates the 0.0 top chain. The resulting main requires both full exact-SHA workflows.
+- CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / winner_selected=false. Issues #20/#21 remain OPEN. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN.
