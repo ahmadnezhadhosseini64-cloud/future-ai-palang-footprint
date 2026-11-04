@@ -2,7 +2,7 @@
 
 - Stable ID: G6IP-RAHM-NEXT-051-20261024
 - Production ID: G6IP-RAHM-NEXT-051-20261024
-- Version: 1.0.27
+- Version: 1.0.28
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE
 - Project: Future AI / Palang Footprint — HAIF
 - Canonical queue: this file only
@@ -230,3 +230,11 @@ The previous blob at this path began with the Integration Queue README title and
 - Graph/identity/parent/time triage: OPEN; duplicate IDs and ambiguous parents remain unresolved.
 
 - The verifier requires both the repository proof protocol and the distinct in-package protocol, plus EXPORT_MANIFEST.json, in both IN-100 and OUT-099. Those references are now present; exact-SHA audit/conformance evidence remains required.
+
+## EVT-0248 mirror synchronization checkpoint — 2026-11-04
+
+- [EVT-0248](../../architecture/BEHAVIOR-TRACE/EVT-0248-LIVE-MIRROR-SYNC-RECHECK-2026-11-04.md) / [TIME-BINDING-EVT-0248](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0248-LIVE-MIRROR-SYNC-2026-11-04.md).
+- Re-discovered root/checkpoint/queue: POINT-0/061 → CURRENT-112 → NEXT-051. No new root or NEXT-052.
+- Source blob de1b75f07241c9b313e476af5f1417177ff78c10 (10,479 chars); Library v7 (10,480 chars) differs only by one terminal LF. Normalized content and semantic fields match; exact equality FALSE. No Library write.
+- Current main at run start a318103d4e877ae3a258009d45e338cb5b1f3842 is an Evidence Gate follow-up after tested parent c086039767eca934302f8323c7de416767ac74fe. Latest full audit/conformance remain failures on 4f1232acd7ee0bffa737c6da2f5f4e4382815251; no full exact-SHA runs on current main were found. Current main NOT VERIFIED.
+- CURRENT-065/CURRENT-066, overlay-manifest lineage, Issues #20/#21, graph/identity/parent/time triage and external recovery gates remain OPEN / NOT VERIFIED / NOT RUN as applicable.
