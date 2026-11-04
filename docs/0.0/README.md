@@ -1933,3 +1933,11 @@ The canonical chain is [POINT-0/032](./anchors/GPT6-RAHM-USER-POINT-0-20261026-0
 - CURRENT-112 و NEXT-051 نیز باید همهٔ شش لینک زنجیره، از جمله پیوند خودشان، و نشانگرهای صریح گیت‌های باز را داشته باشند.
 - این اصلاح دوم، لینک‌های مفقود، self-linkهای لازم، Issue #20/#21، تعارض CURRENT-065/CURRENT-066 و همهٔ نشانگرهای بازیابی/میزبان را به‌صورت افزایشی ثبت می‌کند؛ هیچ ریشه یا صف جدیدی ساخته نمی‌شود.
 - EVT-0247 و TIME-BINDING-EVT-0247 تمام شکست‌ها، زمان‌ها و مسیر اصلاح را حفظ می‌کنند.
+
+## Mirror synchronization event EVT-0248 — 2026-11-04
+
+- [EVT-0248](../architecture/BEHAVIOR-TRACE/EVT-0248-LIVE-MIRROR-SYNC-RECHECK-2026-11-04.md) / [TIME-BINDING-EVT-0248](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0248-LIVE-MIRROR-SYNC-2026-11-04.md).
+- This is a mirror-only event. Latest user root remains POINT-0/061; current checkpoint CURRENT-112; sole active queue NEXT-051. No NEXT-052.
+- Source and Library v7 match after terminal-newline normalization; exact equality remains FALSE by one additional Library LF. No Library write.
+- Current main a318103d4e877ae3a258009d45e338cb5b1f3842 remains NOT VERIFIED by full audit/conformance. CURRENT-065/CURRENT-066 and Issues #20/#21 remain OPEN.
+
