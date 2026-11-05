@@ -1,8 +1,8 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.20
-- Date: 2026-11-04
+- Version: 1.0.21
+- Date: 2026-11-05
 - Project: Future AI / Palang Footprint / HAIF
 
 ## مسیرهای بازیابی
@@ -1114,3 +1114,12 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Latest main a318103d4e877ae3a258009d45e338cb5b1f3842 was created by Evidence Gate 41786733124 on tested SHA c086039767eca934302f8323c7de416767ac74fe. Evidence Gate is not a full architecture audit or portable conformance.
 - Latest full audit 41786131486 and conformance 41786131274 both failed on exact tested SHA 4f1232acd7ee0bffa737c6da2f5f4e4382815251. No full audit/conformance was found on current main; current main remains NOT VERIFIED.
 - CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / winner_selected=false; Issues #20/#21 remain OPEN. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN.
+
+
+## EVT-0249 — live mirror synchronization recheck (2026-11-05)
+
+- [EVT-0249](./EVT-0249-LIVE-MIRROR-SYNC-RECHECK-2026-11-05.md) / [TIME-BINDING-EVT-0249](./TIME-BINDING-EVT-0249-LIVE-MIRROR-SYNC-2026-11-05.md).
+- Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library v7 (10,480 chars) differs by one terminal LF. Normalized content and semantic fields match; exact equality FALSE; no Library write.
+- Root/checkpoint/queue remain POINT-0/061 → CURRENT-112 → NEXT-051; no NEXT-052. Preserve POINT-0/016, /017, /018, EVT-0177, canonical EVT-0178, EVT-0179 and quarantined duplicate lineage.
+- Event commit `f94dadb23fa923dcadf51e5b8a6a8e4185e1ed3e`: audit 41982538116 and conformance 41982538087 failed because export live-reference entries for IN-100, OUT-099 and EVT-0246 were missing. Evidence Gate 41982538031 succeeded on that event commit and advanced main to `6f31c904a840ee3aedd941d386b08f76164c9036`; the follow-up head remains NOT VERIFIED.
+- CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / winner_selected=false; Issues #20/#21 OPEN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN.

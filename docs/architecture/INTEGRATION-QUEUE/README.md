@@ -3,7 +3,7 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.10.24
+- Version: 1.10.25
 - Date: 2026-11-04
 - Exact Time: EVT-0247 initial event commit UTC `2026-11-04T06:23:22Z` / Tehran `2026-11-04T09:53:22+03:30`; the time-binding file's own final-change time is read separately from its Git commit metadata.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
@@ -2550,3 +2550,12 @@ Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-11
 - Latest main at run start a318103d4e877ae3a258009d45e338cb5b1f3842 follows Evidence Gate 41786733124 on c086039767eca934302f8323c7de416767ac74fe. Current main has no full audit/conformance receipt and remains NOT VERIFIED.
 - Audit 41786131486 and conformance 41786131274 failed on exact SHA 4f1232acd7ee0bffa737c6da2f5f4e4382815251; preserve the failures. CURRENT-065/CURRENT-066, Issues #20/#21, forensic archive, Buffer/Persistent Memory, Dropbox and independent-host recovery remain OPEN / NOT VERIFIED / NOT RUN as applicable.
 
+
+
+## EVT-0249 — live mirror synchronization recheck — 2026-11-05
+
+- [EVT-0249](../BEHAVIOR-TRACE/EVT-0249-LIVE-MIRROR-SYNC-RECHECK-2026-11-05.md) / [TIME-BINDING-EVT-0249](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0249-LIVE-MIRROR-SYNC-2026-11-05.md).
+- Root/checkpoint/sole queue remain POINT-0/061 → CURRENT-112 → NEXT-051; mirror-only registration, no new root or NEXT-052.
+- Source blob `de1b75f07241c9b313e476af5f1417177ff78c10`, 10,479 chars; Library v7, 10,480 chars; one additional terminal LF. Normalized content and semantic fields match; no Library write.
+- Audit 41982538116 and conformance 41982538087 failed on event SHA `f94dadb23fa923dcadf51e5b8a6a8e4185e1ed3e` because three live-reference paths were missing from EXPORT_MANIFEST. They are added in this follow-up; exact new main requires fresh full tests.
+- CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN; Issues #20/#21 OPEN; BOART-FOLLOWUP-01 ACTIVE; external-host and destination gates remain open/not verified/not run.

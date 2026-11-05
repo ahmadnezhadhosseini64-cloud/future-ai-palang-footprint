@@ -2,7 +2,7 @@
 
 - Stable ID: G6IP-RAHM-NEXT-051-20261024
 - Production ID: G6IP-RAHM-NEXT-051-20261024
-- Version: 1.0.28
+- Version: 1.0.29
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE
 - Project: Future AI / Palang Footprint — HAIF
 - Canonical queue: this file only
@@ -238,3 +238,13 @@ The previous blob at this path began with the Integration Queue README title and
 - Source blob de1b75f07241c9b313e476af5f1417177ff78c10 (10,479 chars); Library v7 (10,480 chars) differs only by one terminal LF. Normalized content and semantic fields match; exact equality FALSE. No Library write.
 - Current main at run start a318103d4e877ae3a258009d45e338cb5b1f3842 is an Evidence Gate follow-up after tested parent c086039767eca934302f8323c7de416767ac74fe. Latest full audit/conformance remain failures on 4f1232acd7ee0bffa737c6da2f5f4e4382815251; no full exact-SHA runs on current main were found. Current main NOT VERIFIED.
 - CURRENT-065/CURRENT-066, overlay-manifest lineage, Issues #20/#21, graph/identity/parent/time triage and external recovery gates remain OPEN / NOT VERIFIED / NOT RUN as applicable.
+
+
+## EVT-0249 mirror-only continuation — 2026-11-05
+
+- [EVT-0249](../../architecture/BEHAVIOR-TRACE/EVT-0249-LIVE-MIRROR-SYNC-RECHECK-2026-11-05.md) / [TIME-BINDING-EVT-0249](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0249-LIVE-MIRROR-SYNC-2026-11-05.md).
+- Preserve verifier-required historical links: [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) / [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md).
+- Current chain remains POINT-0/061 → IN-100 → OUT-099 → EVT-0246 → CURRENT-112 → NEXT-051. This mirror event creates no new root or successor queue.
+- Audit 41982538116 and conformance 41982538087 failed on event SHA `f94dadb23fa923dcadf51e5b8a6a8e4185e1ed3e` because EXPORT_MANIFEST omitted IN-100, OUT-099 and EVT-0246; repair is now registered.
+- CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN; no winner selected. Issues #20/#21 OPEN. BOART-FOLLOWUP-01 ACTIVE. No NEXT-052.
+- Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN.

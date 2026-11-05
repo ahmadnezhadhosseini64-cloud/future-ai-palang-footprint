@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-11-04 — EVT-0248 live mirror synchronization recheck. Root POINT-0/061, checkpoint CURRENT-112, active queue NEXT-051, living master v1.7.49 at run start; latest main a318103d4e877ae3a258009d45e338cb5b1f3842 remains NOT VERIFIED by full audit/conformance.
+**Last Updated:** 2026-11-05 — EVT-0249 live mirror synchronization recheck. Root POINT-0/061, checkpoint CURRENT-112, active queue NEXT-051, living master v1.7.51; current main 6f31c904a840ee3aedd941d386b08f76164c9036 remains NOT VERIFIED by full audit/conformance.
 
 ## Canonical References
 
@@ -2259,3 +2259,12 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - Latest full audit 41786131486 and conformance 41786131274 failed on exact SHA 4f1232acd7ee0bffa737c6da2f5f4e4382815251. Evidence Gate 41786733124 succeeded on c086039767eca934302f8323c7de416767ac74fe only.
 - CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN; Issues #20/#21 remain OPEN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN.
 
+
+
+## EVT-0249 — live mirror synchronization recheck — 2026-11-05
+
+- [EVT-0249](architecture/BEHAVIOR-TRACE/EVT-0249-LIVE-MIRROR-SYNC-RECHECK-2026-11-05.md) / [TIME-BINDING-EVT-0249](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0249-LIVE-MIRROR-SYNC-2026-11-05.md).
+- Current root/checkpoint/queue: POINT-0/061 → CURRENT-112 → NEXT-051; no NEXT-052.
+- Source blob `de1b75f07241c9b313e476af5f1417177ff78c10`, 10,479 chars; Library v7, 10,480 chars; one additional terminal LF. Normalized equality and semantic match PASS; exact equality FALSE; no Library write.
+- Audit 41982538116 and conformance 41982538087 failed on exact event SHA `f94dadb23fa923dcadf51e5b8a6a8e4185e1ed3e` due three missing export live-reference entries: IN-100, OUT-099 and EVT-0246. Evidence Gate 41982538031 succeeded on that event SHA only; follow-up main `6f31c904a840ee3aedd941d386b08f76164c9036` remains NOT VERIFIED.
+- CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN; no winner selected. Issues #20/#21 OPEN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN.
