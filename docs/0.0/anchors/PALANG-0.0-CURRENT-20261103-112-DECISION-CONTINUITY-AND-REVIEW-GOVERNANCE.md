@@ -2,7 +2,7 @@
 
 - Stable ID: `PALANG-0.0-CURRENT-20261103-112-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE`
 - Production ID: `HAIF-CURRENT-112`
-- Version: 1.0.4
+- Version: 1.0.5
 - Parent current: [CURRENT-111](./PALANG-0.0-CURRENT-20261030-111-ARCHITECTURE-GAP-RECONCILIATION.md)
 - Root: [POINT-0/061](./GPT6-RAHM-USER-POINT-0-20261030-061-ARCHITECTURE-GAP-RECONCILIATION.md), preserved; no new root created.
 - Chain: [IN-100](./PALANG-0.0-IN-20261103-100-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [OUT-099](./PALANG-0.0-OUT-20261103-099-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [EVT-0246](../../architecture/BEHAVIOR-TRACE/EVT-0246-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03.md) → this checkpoint.
@@ -80,3 +80,14 @@ Continue the single active queue NEXT-051. Keep POINT-0/061 and CURRENT-111 hist
 - CURRENT-065/CURRENT-066 remains OPEN; `winner_selected=false`. Issues #20/#21 remain OPEN. NEXT-051 remains sole active queue; no NEXT-052.
 - Full-state recovery, clean-host import, second-host import, restart persistence, automatic live message capture, idle/background capture and graph/identity/parent/time triage remain OPEN / NOT VERIFIED / NOT RUN as applicable.
 - Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
+
+## EVT-0250 — mirror-only synchronization evidence
+
+- EVT-0250: `docs/architecture/BEHAVIOR-TRACE/EVT-0250-LIVE-MIRROR-SYNC-RECHECK-2026-11-05.md`; time binding: `docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0250-LIVE-MIRROR-SYNC-2026-11-05.md`.
+- Canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, version 7 (10,480 chars). Normalized full content and semantic fields MATCH; exact equality FALSE because Library has one extra terminal LF. No Library write; no source modification.
+- Root/checkpoint/sole active queue remain POINT-0/061 → CURRENT-112 → NEXT-051; NEXT-052 not created. Preserve POINT-0/016, /017, /018 / EVT-0180, EVT-0177, canonical EVT-0178, EVT-0179 and quarantined duplicate lineage.
+- Living Architecture Audit 41984307259 and Portable RAHM Conformance 41984307227 both SUCCESS on exact tested SHA `66f2d91c9a0dde182e051ca8714fe446f3ca720a`; job logs independently confirm checkout of that SHA.
+- Evidence Gate 41984307392 succeeded on the same event SHA and created follow-up main `04d6508862f193db880fa10218b11030387208fa` (UTC `2026-11-05T07:01:27Z` / Tehran `2026-11-05T10:31:27+03:30`). That one-file evidence follow-up has no full audit/conformance receipt and remains NOT VERIFIED.
+- CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; `winner_selected=false`. Issues #20/#21 OPEN; BOART-FOLLOWUP-01 ACTIVE. NEXT-051 forensic archive OPEN / NOT RECOVERED.
+- Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
+- This checkpoint remains CURRENT-112; no new checkpoint was created.

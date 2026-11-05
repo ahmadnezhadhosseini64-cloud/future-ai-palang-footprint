@@ -2,11 +2,11 @@
 
 - Stable ID: HUMAN-AI-INTERACTION-BEHAVIOR-OBSERVATORY-2026-10-22-001
 - Production ID: HAIBO-HAIF-2026-10-22-001
-- Version: 1.0.12
+- Version: 1.0.13
 - Owner: احمد پلنگ / Ahmad Nezhadhosseini
 - Project: Future AI / Palang Footprint / HAIF
 - Canonical path: `docs/architecture/BEHAVIOR-OBSERVATORY/README.md`
-- Status: ACTIVE / LIVING in repository; EVT-0247 and its time binding are integrated. Source/Library v7 comparison remains a semantic match with one additional terminal LF in Library; exact equality FALSE; no rewrite. On event commit 80cd9c752f999e5ac30496fa359fb9482319bc22, Living Architecture Audit 41785190735 and Portable RAHM Conformance 41785190874 failed at the missing IN-100 recovery-protocol link; the conformance ZIP rebuild error followed because the master-sync step was skipped after the chain failure. Evidence Gate 41785190844 advanced main to 2a30ea08cc72922fae4eedcb5ee464628be6a20c; the follow-up head was not fully audited. The IN-100 link, NEXT-051 checkpoint target and 0.0 registry top chain are corrected in this integration; resulting exact main still requires both full workflows. External integration remains OPEN.
+- Status: ACTIVE / LIVING in repository; EVT-0250 and its time binding are integrated. Source/Library v7 normalized content and semantic fields match; exact equality FALSE by one additional terminal LF; no Library rewrite. Living Architecture Audit 41984307259 and Portable RAHM Conformance 41984307227 passed on exact event SHA 66f2d91c9a0dde182e051ca8714fe446f3ca720a. Evidence Gate 41984307392 advanced main to 04d6508862f193db880fa10218b11030387208fa; this follow-up head has no full audit/conformance receipt and remains NOT VERIFIED. External destination and host gates remain OPEN / NOT VERIFIED / NOT RUN.
 - Time rule: UTC is canonical; Asia/Tehran time is derived from the same UTC instant (+03:30 for this date). Unknown timestamps remain UNKNOWN, never guessed.
 - Independent anchor: `PALANG-BEHAVIOR-OBSERVATION-AND-RECOVERY-TEST-2026-10-22-001`
 - Related event: `EVT-0034`
@@ -319,3 +319,12 @@ Continue collecting observable interaction and evaluator behavior as evidence-ba
 - Latest main a318103d4e877ae3a258009d45e338cb5b1f3842 has no full audit/conformance receipt. Evidence Gate 41786733124 succeeded only on parent c086039767eca934302f8323c7de416767ac74fe. Current main remains NOT VERIFIED.
 - Latest full audit/conformance runs 41786131486 / 41786131274 failed on exact SHA 4f1232acd7ee0bffa737c6da2f5f4e4382815251. CURRENT-065/CURRENT-066 and Issues #20/#21 remain OPEN; external destination and host gates remain unverified/open/not run.
 
+## EVT-0250 — live mirror synchronization
+
+- EVT-0250: `docs/architecture/BEHAVIOR-TRACE/EVT-0250-LIVE-MIRROR-SYNC-RECHECK-2026-11-05.md`; time binding: `docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0250-LIVE-MIRROR-SYNC-2026-11-05.md`.
+- Canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, version 7 (10,480 chars). Normalized full content and semantic fields MATCH; exact equality FALSE because Library has one extra terminal LF. No Library write; no source modification.
+- Root/checkpoint/sole active queue remain POINT-0/061 → CURRENT-112 → NEXT-051; NEXT-052 not created. Preserve POINT-0/016, /017, /018 / EVT-0180, EVT-0177, canonical EVT-0178, EVT-0179 and quarantined duplicate lineage.
+- Living Architecture Audit 41984307259 and Portable RAHM Conformance 41984307227 both SUCCESS on exact tested SHA `66f2d91c9a0dde182e051ca8714fe446f3ca720a`; job logs independently confirm checkout of that SHA.
+- Evidence Gate 41984307392 succeeded on the same event SHA and created follow-up main `04d6508862f193db880fa10218b11030387208fa` (UTC `2026-11-05T07:01:27Z` / Tehran `2026-11-05T10:31:27+03:30`). That one-file evidence follow-up has no full audit/conformance receipt and remains NOT VERIFIED.
+- CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; `winner_selected=false`. Issues #20/#21 OPEN; BOART-FOLLOWUP-01 ACTIVE. NEXT-051 forensic archive OPEN / NOT RECOVERED.
+- Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.

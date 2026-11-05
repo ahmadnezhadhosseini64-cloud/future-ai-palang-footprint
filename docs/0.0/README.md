@@ -1941,3 +1941,12 @@ The canonical chain is [POINT-0/032](./anchors/GPT6-RAHM-USER-POINT-0-20261026-0
 - Source and Library v7 match after terminal-newline normalization; exact equality remains FALSE by one additional Library LF. No Library write.
 - Current main a318103d4e877ae3a258009d45e338cb5b1f3842 remains NOT VERIFIED by full audit/conformance. CURRENT-065/CURRENT-066 and Issues #20/#21 remain OPEN.
 
+## Mirror synchronization event EVT-0250 — 2026-11-05
+
+- EVT-0250: `docs/architecture/BEHAVIOR-TRACE/EVT-0250-LIVE-MIRROR-SYNC-RECHECK-2026-11-05.md`; time binding: `docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0250-LIVE-MIRROR-SYNC-2026-11-05.md`.
+- Canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, version 7 (10,480 chars). Normalized full content and semantic fields MATCH; exact equality FALSE because Library has one extra terminal LF. No Library write; no source modification.
+- Root/checkpoint/sole active queue remain POINT-0/061 → CURRENT-112 → NEXT-051; NEXT-052 not created. Preserve POINT-0/016, /017, /018 / EVT-0180, EVT-0177, canonical EVT-0178, EVT-0179 and quarantined duplicate lineage.
+- Living Architecture Audit 41984307259 and Portable RAHM Conformance 41984307227 both SUCCESS on exact tested SHA `66f2d91c9a0dde182e051ca8714fe446f3ca720a`; job logs independently confirm checkout of that SHA.
+- Evidence Gate 41984307392 succeeded on the same event SHA and created follow-up main `04d6508862f193db880fa10218b11030387208fa` (UTC `2026-11-05T07:01:27Z` / Tehran `2026-11-05T10:31:27+03:30`). That one-file evidence follow-up has no full audit/conformance receipt and remains NOT VERIFIED.
+- CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; `winner_selected=false`. Issues #20/#21 OPEN; BOART-FOLLOWUP-01 ACTIVE. NEXT-051 forensic archive OPEN / NOT RECOVERED.
+- Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
