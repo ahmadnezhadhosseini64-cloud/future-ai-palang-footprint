@@ -59,3 +59,12 @@
 ## انضباط وضعیت
 REGISTERED ≠ READ-BACK VERIFIED ≠ VALIDATED ≠ INTEGRATED ≠ ACTIVE ≠ LIVING.
 نوشتن در مخزن اثبات Library، Buffer، Persistent Memory، Dropbox یا بازیابی میزبان مستقل نیست. زمان نامعلوم UNKNOWN می‌ماند. این نقطه لنگر کار زنده است، نه ادعای رفع کامل نقص‌ها.
+
+
+## Current 0.0 execution continuation — 2026-11-05
+
+- Preserved user-turn root: [POINT-0/061](./GPT6-RAHM-USER-POINT-0-20261030-061-ARCHITECTURE-GAP-RECONCILIATION.md); no new root is created.
+- Current interaction chain: [IN-100](./PALANG-0.0-IN-20261103-100-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [OUT-099](./PALANG-0.0-OUT-20261103-099-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [EVT-0246](../../architecture/BEHAVIOR-TRACE/EVT-0246-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03.md) → [CURRENT-112](./PALANG-0.0-CURRENT-20261103-112-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Mirror-only evidence: [EVT-0249](../../architecture/BEHAVIOR-TRACE/EVT-0249-LIVE-MIRROR-SYNC-RECHECK-2026-11-05.md) / [TIME-BINDING-EVT-0249](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0249-LIVE-MIRROR-SYNC-2026-11-05.md); it does not replace the root, IN/OUT pair, checkpoint or queue.
+- Preserve POINT-0/016, POINT-0/017, POINT-0/018 / EVT-0180, EVT-0177, canonical EVT-0178, EVT-0179 and the quarantined duplicate-number artifact.
+- CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN; no winner is selected. NEXT-051 remains the sole active queue; no NEXT-052.

@@ -2,7 +2,7 @@
 
 - Stable ID: `PALANG-0.0-CURRENT-20261103-112-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE`
 - Production ID: `HAIF-CURRENT-112`
-- Version: 1.0.3
+- Version: 1.0.4
 - Parent current: [CURRENT-111](./PALANG-0.0-CURRENT-20261030-111-ARCHITECTURE-GAP-RECONCILIATION.md)
 - Root: [POINT-0/061](./GPT6-RAHM-USER-POINT-0-20261030-061-ARCHITECTURE-GAP-RECONCILIATION.md), preserved; no new root created.
 - Chain: [IN-100](./PALANG-0.0-IN-20261103-100-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [OUT-099](./PALANG-0.0-OUT-20261103-099-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [EVT-0246](../../architecture/BEHAVIOR-TRACE/EVT-0246-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03.md) → this checkpoint.
@@ -67,3 +67,16 @@ Continue the single active queue NEXT-051. Keep POINT-0/061 and CURRENT-111 hist
 - Latest user-turn root remains POINT-0/061; this mirror-only event does not create a new root or alter CURRENT-112 identity.
 - Latest main at run start a318103d4e877ae3a258009d45e338cb5b1f3842 is NOT VERIFIED by full Living Architecture Audit and Portable RAHM Conformance.
 - CURRENT-065/CURRENT-066 remains OPEN; no winner selected. Issues #20/#21 remain OPEN. NEXT-051 remains sole active queue.
+
+
+## Mirror synchronization and verifier continuity — 2026-11-05
+
+- Root: [POINT-0/061](./GPT6-RAHM-USER-POINT-0-20261030-061-ARCHITECTURE-GAP-RECONCILIATION.md); input: [IN-100](./PALANG-0.0-IN-20261103-100-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md); output: [OUT-099](./PALANG-0.0-OUT-20261103-099-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md); root event: [EVT-0246](../../architecture/BEHAVIOR-TRACE/EVT-0246-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03.md).
+- Current checkpoint: CURRENT-112 (this file); sole active queue: [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Preserve verifier-required mirror links: [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) / [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md).
+- Latest mirror-only event: [EVT-0249](../../architecture/BEHAVIOR-TRACE/EVT-0249-LIVE-MIRROR-SYNC-RECHECK-2026-11-05.md) / [TIME-BINDING-EVT-0249](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0249-LIVE-MIRROR-SYNC-2026-11-05.md). No new user root, IN/OUT pair, CURRENT identity or NEXT identity.
+- At run start main was `bd7e6f40193155b1473680d8b768c49e87ac1860` (commit UTC `2026-11-04T06:54:23Z`, Tehran `2026-11-04T10:24:23.000+03:30`); Living Architecture Audit 41818194567 failed on this exact SHA. Portable RAHM Conformance 41788605506 failed on parent SHA `eb179af2a44f03dd3f9fd5f7013b06867b6a01c4`. Evidence Gate 41788605864 passed only on that parent SHA.
+- Audit findings: POINT-0/061 lacked CURRENT-112 marker; CURRENT-112 lacked EVT-0241 and time-binding links; package parent architecture and export live-reference inventory lacked CURRENT-112. Additive links/manifest entries are added here without adjudicating CURRENT-065/CURRENT-066.
+- CURRENT-065/CURRENT-066 remains OPEN; `winner_selected=false`. Issues #20/#21 remain OPEN. NEXT-051 remains sole active queue; no NEXT-052.
+- Full-state recovery, clean-host import, second-host import, restart persistence, automatic live message capture, idle/background capture and graph/identity/parent/time triage remain OPEN / NOT VERIFIED / NOT RUN as applicable.
+- Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.

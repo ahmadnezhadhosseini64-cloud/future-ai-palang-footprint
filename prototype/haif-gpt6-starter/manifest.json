@@ -98,7 +98,14 @@
     "EVT-0240",
     "CURRENT-111",
     "NEXT-051 (sole active queue)",
-    "EVT-0241 (mirror-only event; not a new user root)"
+    "EVT-0241 (mirror-only event; not a new user root)",
+    "IN-100",
+    "OUT-099",
+    "EVT-0246",
+    "CURRENT-112",
+    "TIME-BINDING-EVT-0241",
+    "EVT-0249 (mirror-only event; not a new user root)",
+    "TIME-BINDING-EVT-0249"
   ],
   "entrypoint": "engine.py",
   "host_instructions": "GPT6_HOST_INSTRUCTIONS.md",
