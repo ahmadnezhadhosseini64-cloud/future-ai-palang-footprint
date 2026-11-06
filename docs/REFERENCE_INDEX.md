@@ -2305,4 +2305,13 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - Event: [EVT-0252](architecture/BEHAVIOR-TRACE/EVT-0252-CANONICAL-SOURCE-ROUTING-AND-READBACK-RECOVERY-2026-11-06.md).
 - Permanent rule: destination-first routing; strict store separation; canonical index/README alias resolution; complete fetch and identity read-back; same-destination retry after an initial miss; no cross-store absence inference.
 - Automated check: `.github/workflows/main.yml` repository CI regression step. It validates policy presence, not universal AI-host behavior.
-- Status: repository policy operationalized; exact-head CI result pending; independent-host retrieval and live runtime enforcement remain OPEN / NOT RUN.
+- Status: repository policy operationalized; repository CI regression PASS on source SHA `471941d0cbc5f28a0c4364e85c1b99c833f0529d` (run `42284923957`); independent-host retrieval and live runtime enforcement remain OPEN / NOT RUN.
+
+
+### Repository regression execution receipt — 2026-11-06
+- Workflow: Evidence Gate - Independent Execution Test
+- Run ID: 42284923957
+- Tested source commit: `471941d0cbc5f28a0c4364e85c1b99c833f0529d`
+- Result: SUCCESS; job `evidence-gate` completed successfully.
+- Log confirms the destination-first regression assertions executed and printed `Canonical source-routing regression contract: VERIFIED`.
+- Scope: repository policy-presence/linkage regression only. It does not prove live AI tool-selection behavior or independent-host recovery.
