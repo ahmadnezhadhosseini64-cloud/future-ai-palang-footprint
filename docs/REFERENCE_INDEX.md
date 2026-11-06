@@ -2295,4 +2295,4 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - Lesson: [LAL-20261106-001](architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261106-001-CANONICAL-SOURCE-ROUTING-AND-READBACK-RECOVERY.md).
 - Event: [EVT-0252](architecture/BEHAVIOR-TRACE/EVT-0252-CANONICAL-SOURCE-ROUTING-AND-READBACK-RECOVERY-2026-11-06.md).
 - Rule: a user-named repository is the primary retrieval destination; Library and repository are separate stores. Resolve aliases through canonical indexes, fetch the complete artifact and read back its path/ref/SHA/content. A miss in one store is not evidence of absence in another.
-- Status: lesson and event registered; integration read-back, regression automation and independent-host retrieval remain pending / open.
+- Status: lesson and event registered; linked repository surfaces read-back verified; regression automation and independent-host retrieval remain OPEN / NOT RUN.
