@@ -51,7 +51,7 @@
 - Lesson: [LAL-20261106-001](../ARCHITECTURE-LESSONS/lessons/LAL-20261106-001-CANONICAL-SOURCE-ROUTING-AND-READBACK-RECOVERY.md)
 - Root/checkpoint/queue unchanged: POINT-0/061 → CURRENT-112 → NEXT-051.
 - No NEXT-052 created.
-- Completed: lesson connected to the living lesson registry, Reference Index, integration queue and HAIF mother; destination-first controls added to Stable Retrieval Core and Retrieval Runtime; repository CI regression check wired. Pending: inspect CI on the final integration SHA, then run fresh-context/independent-host retrieval as a separate acceptance gate.
+- Completed: lesson connected to the living lesson registry, Reference Index, integration queue and HAIF mother; destination-first controls added to Stable Retrieval Core and Retrieval Runtime; repository CI regression check wired. CI regression has now been inspected and passed on workflow-source commit `471941d0cbc5f28a0c4364e85c1b99c833f0529d` (run `42284923957`). Remaining acceptance gate: fresh-context/independent-host retrieval.
 
 
 ### Repository regression execution receipt — 2026-11-06
