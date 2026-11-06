@@ -2589,3 +2589,12 @@ Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-11
 - Required follow-up: add regression coverage for repository-vs-Library routing and perform a fresh-context/independent-host retrieval test.
 - Status: REGISTERED / REPOSITORY READ-BACK VERIFIED across linked architecture surfaces; runtime enforcement and independent-host test OPEN / NOT RUN.
 - Preserve current chain POINT-0/061 → CURRENT-112 → NEXT-051; this lesson does not create a new root or NEXT-052.
+
+
+## LAL-20261106-001 — permanent retrieval control integration
+
+- Permanent control integrated into `docs/STABLE_RETRIEVAL_CORE.md` and `docs/RETRIEVAL_RUNTIME.md`.
+- Repository regression check added to `.github/workflows/main.yml`: checks the stable rule, store separation, alias mapping, full fetch/read-back, retry-within-destination, and lesson/event links.
+- Living lesson registry now identifies LAL-20261106-001 as the current lesson; the lesson/event, Reference Index, HAIF mother and NEXT-051 remain linked.
+- State: POLICY OPERATIONALIZED IN REPOSITORY; CI RESULT PENDING exact final SHA; LIVE AI-HOST ENFORCEMENT NOT PROVEN; INDEPENDENT-HOST RECOVERY NOT RUN.
+- Continue under existing NEXT-051 only. No new root, checkpoint or queue identity.
