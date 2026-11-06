@@ -5,7 +5,7 @@
 - Version: 1.0.0
 - Date: 2026-11-06
 - Project: Future AI / Palang Footprint — HAIF
-- Status: DISCOVERED / CAPTURED / CLASSIFIED / REGISTERED / READ-BACK VERIFIED; OPERATIONALIZATION AND TESTING OPEN
+- Status: DISCOVERED / CAPTURED / CLASSIFIED / REGISTERED / READ-BACK VERIFIED / OPERATIONALIZED IN REPOSITORY POLICY; CI REGRESSION EXECUTION PENDING; AI-HOST ENFORCEMENT AND INDEPENDENT-HOST TEST OPEN
 - Source event: [EVT-0252](../../BEHAVIOR-TRACE/EVT-0252-CANONICAL-SOURCE-ROUTING-AND-READBACK-RECOVERY-2026-11-06.md)
 - Related architecture: [Living Architecture Lessons Registry](../README.md), [HAIF living mother](../../../مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 - Recovery case: repository `ahmadnezhadhosseini64-cloud/future-ai-palang-footprint`, branch `main`, canonical file `گواهی/گواهی-سابقه-کار-دوزبانه-آخر.md`
@@ -72,12 +72,22 @@
 
 ## 7. کارهای باز
 
-- [ ] پیوند این درس در رجیستری درس‌ها، صف یکپارچه‌سازی، Reference Index و سند مادر بازخوانی شود.
-- [ ] آزمون رگرسیون برای تفکیک GitHub repository از ChatGPT Library به مسیر بازیابی/آزمون‌های خودکار افزوده شود.
+- [x] پیوند این درس در رجیستری درس‌ها، صف یکپارچه‌سازی، Reference Index و سند مادر ثبت و در read-back بررسی شد.
+- [x] کنترل رگرسیون مخزن برای وجود قاعدهٔ مقصد-اول، تفکیک Storeها، نگاشت alias، fetch کامل و read-back به workflow اصلی اضافه شد؛ اجرای همین commit باید جداگانه بررسی شود.
 - [ ] آزمون بازیابی همین نام در یک میزبان مستقل و بدون تاریخچهٔ گفت‌وگو اجرا و رسید آن ثبت شود.
-- [ ] بررسی شود آیا قرارداد Stable Retrieval Core و دستورالعمل بستهٔ انتقال میزبان باید این قاعده را به‌صورت صریح‌تر وارد کنند.
+- [x] قاعده به Stable Retrieval Core و Retrieval Runtime افزوده شد؛ ادغام در آداپتورهای میزبان/بستهٔ انتقال هنوز باز است.
 - [ ] تا اجرای آزمون‌ها، وضعیت OPERATIONALIZED / TESTED / VALIDATED / INTEGRATED برای اجرای runtime ادعا نشود.
 
 ## 8. پیوند رویداد
 
 این درس از مورد واقعی بازیابی «۲ زبانه آخر» استخراج شده است. رویداد [EVT-0252](../../BEHAVIOR-TRACE/EVT-0252-CANONICAL-SOURCE-ROUTING-AND-READBACK-RECOVERY-2026-11-06.md) منشأ، خطای مسیریابی، اصلاح راهبرد و مرز شواهد را ثبت می‌کند.
+
+
+## 9. وضعیت عملیاتی‌سازی پس از یکپارچه‌سازی — 2026-11-06
+
+- The rule is now explicit in `docs/STABLE_RETRIEVAL_CORE.md` and `docs/RETRIEVAL_RUNTIME.md`.
+- A repository CI regression check is wired into `.github/workflows/main.yml` to fail if the permanent rule, lesson/event references or acceptance matrix disappear.
+- The lesson, event, registry, integration queue, Reference Index, HAIF mother and NEXT-051 are linked as architecture surfaces.
+- CI execution on the final integration head is PENDING until a matching workflow run is fetched and inspected.
+- This repository-level check verifies contract presence and linkage. It does not yet test an AI model's live tool choice or prove universal host enforcement.
+- Fresh-context / independent-host retrieval remains NOT RUN. Do not promote to host-wide VALIDATED or universal ACTIVE enforcement before that receipt exists.
