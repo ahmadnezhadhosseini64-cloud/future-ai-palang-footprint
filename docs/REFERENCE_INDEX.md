@@ -2296,3 +2296,13 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - Event: [EVT-0252](architecture/BEHAVIOR-TRACE/EVT-0252-CANONICAL-SOURCE-ROUTING-AND-READBACK-RECOVERY-2026-11-06.md).
 - Rule: a user-named repository is the primary retrieval destination; Library and repository are separate stores. Resolve aliases through canonical indexes, fetch the complete artifact and read back its path/ref/SHA/content. A miss in one store is not evidence of absence in another.
 - Status: lesson and event registered; linked repository surfaces read-back verified; regression automation and independent-host retrieval remain OPEN / NOT RUN.
+
+
+## Permanent retrieval control — LAL-20261106-001
+
+- Stable contract: [Stable Retrieval Core](STABLE_RETRIEVAL_CORE.md) and [Retrieval Runtime](RETRIEVAL_RUNTIME.md).
+- Lesson: [LAL-20261106-001](architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261106-001-CANONICAL-SOURCE-ROUTING-AND-READBACK-RECOVERY.md).
+- Event: [EVT-0252](architecture/BEHAVIOR-TRACE/EVT-0252-CANONICAL-SOURCE-ROUTING-AND-READBACK-RECOVERY-2026-11-06.md).
+- Permanent rule: destination-first routing; strict store separation; canonical index/README alias resolution; complete fetch and identity read-back; same-destination retry after an initial miss; no cross-store absence inference.
+- Automated check: `.github/workflows/main.yml` repository CI regression step. It validates policy presence, not universal AI-host behavior.
+- Status: repository policy operationalized; exact-head CI result pending; independent-host retrieval and live runtime enforcement remain OPEN / NOT RUN.
