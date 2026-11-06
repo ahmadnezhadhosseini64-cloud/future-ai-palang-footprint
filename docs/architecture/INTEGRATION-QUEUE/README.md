@@ -2587,5 +2587,5 @@ Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-11
 - Finding: the initial retrieval searched ChatGPT Library while the user explicitly identified the project repository; the final artifact existed in GitHub from the outset.
 - Operational rule: select the named destination first; consult its canonical index/README; map aliases to exact paths; fetch full content; verify ref, blob SHA and key fields; do not infer absence from a miss in another store.
 - Required follow-up: add regression coverage for repository-vs-Library routing and perform a fresh-context/independent-host retrieval test.
-- Status: REGISTERED / REPOSITORY INTEGRATION PENDING READ-BACK; runtime enforcement and independent-host test OPEN / NOT RUN.
+- Status: REGISTERED / REPOSITORY READ-BACK VERIFIED across linked architecture surfaces; runtime enforcement and independent-host test OPEN / NOT RUN.
 - Preserve current chain POINT-0/061 → CURRENT-112 → NEXT-051; this lesson does not create a new root or NEXT-052.
