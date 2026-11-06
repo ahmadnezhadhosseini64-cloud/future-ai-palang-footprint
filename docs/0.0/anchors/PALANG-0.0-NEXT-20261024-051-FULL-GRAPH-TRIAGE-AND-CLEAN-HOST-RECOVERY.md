@@ -276,3 +276,14 @@ The previous blob at this path began with the Integration Queue README title and
 - Add regression coverage: when a user explicitly names GitHub/repository, the retrieval path must not stop after searching ChatGPT Library; use repository README/index, exact path fetch and full read-back with SHA.
 - Add fresh-context/independent-host retrieval of the same canonical alias as a separate acceptance test.
 - This is an additive lesson under existing NEXT-051; do not create NEXT-052 or alter POINT-0/061 / CURRENT-112 identity.
+
+
+### LAL-20261106-001 implementation and verification state
+
+- Permanent destination-first routing rule added to Stable Retrieval Core and Retrieval Runtime.
+- Repository CI regression checks policy presence and links on documentation/workflow changes.
+- Registry current-lesson pointer, Reference Index, integration queue, HAIF mother and lesson/event records reconciled.
+- Next verification: fetch workflow run on the exact final integration SHA and inspect its job result/logs.
+- Separate acceptance gate: fresh-context/independent-host must retrieve the same canonical alias without prior chat history and produce a receipt with host identity/context, UTC time, destination, path, ref, SHA, content-match result and errors.
+- CI policy-presence PASS must not be represented as live AI-host behavior or independent-host recovery.
+- Continue within NEXT-051; do not create NEXT-052 or change POINT-0/061 / CURRENT-112.
