@@ -4,7 +4,7 @@
 - Stable ID: CANONICAL-SOURCE-ROUTING-AND-READBACK-RECOVERY-2026-11-06-001
 - Date: 2026-11-06
 - Project: Future AI / Palang Footprint
-- Status: REGISTERED / REPOSITORY READ-BACK VERIFIED; runtime regression and independent-host test OPEN
+- Status: REGISTERED / REPOSITORY READ-BACK VERIFIED / POLICY OPERATIONALIZED; repository CI regression run PENDING; live AI-host enforcement and independent-host test OPEN
 - Root preserved: POINT-0/061
 - Checkpoint preserved: CURRENT-112
 - Sole active queue preserved: NEXT-051
@@ -51,4 +51,4 @@
 - Lesson: [LAL-20261106-001](../ARCHITECTURE-LESSONS/lessons/LAL-20261106-001-CANONICAL-SOURCE-ROUTING-AND-READBACK-RECOVERY.md)
 - Root/checkpoint/queue unchanged: POINT-0/061 → CURRENT-112 → NEXT-051.
 - No NEXT-052 created.
-- Next: connect the lesson to the living lesson registry, Reference Index, integration queue and HAIF mother; then run exact-HEAD audit and portable conformance. A fresh-context/independent-host retrieval test remains a separate open gate.
+- Completed: lesson connected to the living lesson registry, Reference Index, integration queue and HAIF mother; destination-first controls added to Stable Retrieval Core and Retrieval Runtime; repository CI regression check wired. Pending: inspect CI on the final integration SHA, then run fresh-context/independent-host retrieval as a separate acceptance gate.
