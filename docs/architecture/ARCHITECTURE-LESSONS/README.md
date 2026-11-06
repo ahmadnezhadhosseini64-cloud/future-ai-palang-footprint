@@ -3,7 +3,7 @@
 - Stable ID: PALANG-LIVING-ARCHITECTURE-LESSONS-REGISTRY-2026-10-23-001
 - Production ID: LALR-2026-10-23-001
 - Version: 1.0.0
-- Status: ACTIVE / LIVING / OPEN / EVOLVABLE; repository READ-BACK VERIFIED; full lesson migration/runtime enforcement/rollback proof OPEN
+- Status: ACTIVE / LIVING / OPEN / EVOLVABLE; repository READ-BACK VERIFIED; full lesson migration/live host enforcement/rollback proof OPEN
 - Owner: Future AI / Palang Footprint
 - Governing master: [CMIND — ادامه از مدل اولیه، نه Dropbox](../../reference/REFERENCE-DOCUMENTS/CONTINUATION-MODEL-INITIAL-NOT-DROPBOX-MASTER-REFERENCE-2026-10-22-001.md)
 - Governing architecture: [Living Evolutionary Architecture](../../../architecture/ARCH-2026-08-29-001-living-evolutionary-architecture.md)
@@ -199,3 +199,9 @@ State: six source-linked lesson files have been created and fetched back; this d
 - Rule: when the user names a repository, search that repository first; distinguish it from ChatGPT Library; resolve short names through the canonical README/index; fetch the full file and verify path, ref, SHA and content.
 - Observed failure: initial Library-only routing missed the final GitHub artifact; direct GitHub fetch and repository guide read-back recovered it.
 - Status: REGISTERED / READ-BACK VERIFIED across lesson registry, behavior trace, queue, index and HAIF mother; runtime regression and independent-host retrieval NOT RUN.
+
+
+### LAL-20261106-001 current verification state
+- Permanent rule integrated in Stable Retrieval Core and Retrieval Runtime.
+- Repository CI regression: PASS on source commit `471941d0cbc5f28a0c4364e85c1b99c833f0529d`, run `42284923957`.
+- Scope: repository policy-presence and linkage only; live AI-host behavior and independent-host recovery remain OPEN / NOT RUN.
