@@ -4,7 +4,7 @@
 - Stable ID: CANONICAL-SOURCE-ROUTING-AND-READBACK-RECOVERY-2026-11-06-001
 - Date: 2026-11-06
 - Project: Future AI / Palang Footprint
-- Status: REGISTERED; repository read-back pending
+- Status: REGISTERED / REPOSITORY READ-BACK VERIFIED; runtime regression and independent-host test OPEN
 - Root preserved: POINT-0/061
 - Checkpoint preserved: CURRENT-112
 - Sole active queue preserved: NEXT-051
