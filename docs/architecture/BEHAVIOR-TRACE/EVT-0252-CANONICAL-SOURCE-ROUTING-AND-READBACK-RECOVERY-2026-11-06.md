@@ -4,7 +4,7 @@
 - Stable ID: CANONICAL-SOURCE-ROUTING-AND-READBACK-RECOVERY-2026-11-06-001
 - Date: 2026-11-06
 - Project: Future AI / Palang Footprint
-- Status: REGISTERED / REPOSITORY READ-BACK VERIFIED / POLICY OPERATIONALIZED; repository CI regression run PENDING; live AI-host enforcement and independent-host test OPEN
+- Status: REGISTERED / REPOSITORY READ-BACK VERIFIED / POLICY OPERATIONALIZED; repository CI regression PASS on exact source commit `471941d0cbc5f28a0c4364e85c1b99c833f0529d` (run `42284923957`); live AI-host enforcement and independent-host test OPEN
 - Root preserved: POINT-0/061
 - Checkpoint preserved: CURRENT-112
 - Sole active queue preserved: NEXT-051
@@ -52,3 +52,12 @@
 - Root/checkpoint/queue unchanged: POINT-0/061 → CURRENT-112 → NEXT-051.
 - No NEXT-052 created.
 - Completed: lesson connected to the living lesson registry, Reference Index, integration queue and HAIF mother; destination-first controls added to Stable Retrieval Core and Retrieval Runtime; repository CI regression check wired. Pending: inspect CI on the final integration SHA, then run fresh-context/independent-host retrieval as a separate acceptance gate.
+
+
+### Repository regression execution receipt — 2026-11-06
+- Workflow: Evidence Gate - Independent Execution Test
+- Run ID: 42284923957
+- Tested source commit: `471941d0cbc5f28a0c4364e85c1b99c833f0529d`
+- Result: SUCCESS; job `evidence-gate` completed successfully.
+- Log confirms the destination-first regression assertions executed and printed `Canonical source-routing regression contract: VERIFIED`.
+- Scope: repository policy-presence/linkage regression only. It does not prove live AI tool-selection behavior or independent-host recovery.
