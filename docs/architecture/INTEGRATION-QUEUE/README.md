@@ -2596,5 +2596,14 @@ Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-11
 - Permanent control integrated into `docs/STABLE_RETRIEVAL_CORE.md` and `docs/RETRIEVAL_RUNTIME.md`.
 - Repository regression check added to `.github/workflows/main.yml`: checks the stable rule, store separation, alias mapping, full fetch/read-back, retry-within-destination, and lesson/event links.
 - Living lesson registry now identifies LAL-20261106-001 as the current lesson; the lesson/event, Reference Index, HAIF mother and NEXT-051 remain linked.
-- State: POLICY OPERATIONALIZED IN REPOSITORY; CI RESULT PENDING exact final SHA; LIVE AI-HOST ENFORCEMENT NOT PROVEN; INDEPENDENT-HOST RECOVERY NOT RUN.
+- State: POLICY OPERATIONALIZED IN REPOSITORY; CI REGRESSION PASS on exact source SHA `471941d0cbc5f28a0c4364e85c1b99c833f0529d` (run `42284923957`); LIVE AI-HOST ENFORCEMENT NOT PROVEN; INDEPENDENT-HOST RECOVERY NOT RUN.
 - Continue under existing NEXT-051 only. No new root, checkpoint or queue identity.
+
+
+### Repository regression execution receipt — 2026-11-06
+- Workflow: Evidence Gate - Independent Execution Test
+- Run ID: 42284923957
+- Tested source commit: `471941d0cbc5f28a0c4364e85c1b99c833f0529d`
+- Result: SUCCESS; job `evidence-gate` completed successfully.
+- Log confirms the destination-first regression assertions executed and printed `Canonical source-routing regression contract: VERIFIED`.
+- Scope: repository policy-presence/linkage regression only. It does not prove live AI tool-selection behavior or independent-host recovery.
