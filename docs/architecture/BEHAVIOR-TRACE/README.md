@@ -1149,4 +1149,4 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 
 - [EVT-0252](./EVT-0252-CANONICAL-SOURCE-ROUTING-AND-READBACK-RECOVERY-2026-11-06.md) records the Library-vs-GitHub source-routing error, direct canonical-path recovery, repository guide discovery and evidence boundaries.
 - Derived lesson: [LAL-20261106-001](../ARCHITECTURE-LESSONS/lessons/LAL-20261106-001-CANONICAL-SOURCE-ROUTING-AND-READBACK-RECOVERY.md).
-- No new user root; preserve POINT-0/061 → CURRENT-112 → NEXT-051. Runtime enforcement and independent-host retrieval remain open.
+- No new user root; preserve POINT-0/061 → CURRENT-112 → NEXT-051. Repository read-back verified; runtime enforcement and independent-host retrieval remain open.
