@@ -268,3 +268,11 @@ The previous blob at this path began with the Integration Queue README title and
 - Living Architecture Audit 42172829315 and Portable RAHM Conformance 42172828710 both passed on exact SHA `88d1d368e854da5e9f6f1963419778b7eccb289f`. Evidence Gate 42172828774 advanced main to `1234599754401221891592d232436c8810018ef0`; this follow-up head is NOT VERIFIED.
 - Next deterministic action: run both full workflows on the exact current main SHA. If Evidence Gate advances main, the new head remains NOT VERIFIED until separately tested. Continue pointer/manifest, identity/parent, missing-link, forensic archive, Issue #20/#21 and BOART-FOLLOWUP-01 work without resolving ambiguous pointers by inference.
 - CURRENT-065/CURRENT-066 remains OPEN / winner_selected=false; Issues #20/#21 OPEN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external-host recovery NOT RUN.
+
+
+## EVT-0252 / LAL-20261106-001 — source-routing recovery lesson
+
+- [EVT-0252](../../architecture/BEHAVIOR-TRACE/EVT-0252-CANONICAL-SOURCE-ROUTING-AND-READBACK-RECOVERY-2026-11-06.md) and [LAL-20261106-001](../../architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261106-001-CANONICAL-SOURCE-ROUTING-AND-READBACK-RECOVERY.md) record a real retrieval failure and correction.
+- Add regression coverage: when a user explicitly names GitHub/repository, the retrieval path must not stop after searching ChatGPT Library; use repository README/index, exact path fetch and full read-back with SHA.
+- Add fresh-context/independent-host retrieval of the same canonical alias as a separate acceptance test.
+- This is an additive lesson under existing NEXT-051; do not create NEXT-052 or alter POINT-0/061 / CURRENT-112 identity.
