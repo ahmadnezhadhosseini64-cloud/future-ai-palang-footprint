@@ -273,7 +273,7 @@ The previous blob at this path began with the Integration Queue README title and
 ## EVT-0252 / LAL-20261106-001 — source-routing recovery lesson
 
 - [EVT-0252](../../architecture/BEHAVIOR-TRACE/EVT-0252-CANONICAL-SOURCE-ROUTING-AND-READBACK-RECOVERY-2026-11-06.md) and [LAL-20261106-001](../../architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261106-001-CANONICAL-SOURCE-ROUTING-AND-READBACK-RECOVERY.md) record a real retrieval failure and correction.
-- Add regression coverage: when a user explicitly names GitHub/repository, the retrieval path must not stop after searching ChatGPT Library; use repository README/index, exact path fetch and full read-back with SHA.
+- [x] Regression coverage for explicit GitHub/repository routing, store separation, canonical README/index alias resolution, full fetch/read-back and same-destination retry is implemented and PASS on source commit `471941d0cbc5f28a0c4364e85c1b99c833f0529d` (run `42284923957`).
 - Add fresh-context/independent-host retrieval of the same canonical alias as a separate acceptance test.
 - This is an additive lesson under existing NEXT-051; do not create NEXT-052 or alter POINT-0/061 / CURRENT-112 identity.
 
@@ -283,7 +283,7 @@ The previous blob at this path began with the Integration Queue README title and
 - Permanent destination-first routing rule added to Stable Retrieval Core and Retrieval Runtime.
 - Repository CI regression checks policy presence and links on documentation/workflow changes.
 - Registry current-lesson pointer, Reference Index, integration queue, HAIF mother and lesson/event records reconciled.
-- Next verification: fetch workflow run on the exact final integration SHA and inspect its job result/logs.
+- [x] Workflow run `42284923957` fetched and inspected: run and `evidence-gate` job completed SUCCESS on source commit `471941d0cbc5f28a0c4364e85c1b99c833f0529d`; all seven job steps succeeded.
 - Separate acceptance gate: fresh-context/independent-host must retrieve the same canonical alias without prior chat history and produce a receipt with host identity/context, UTC time, destination, path, ref, SHA, content-match result and errors.
 - CI policy-presence PASS must not be represented as live AI-host behavior or independent-host recovery.
 - Continue within NEXT-051; do not create NEXT-052 or change POINT-0/061 / CURRENT-112.
