@@ -191,3 +191,11 @@ State: six source-linked lesson files have been created and fetched back; this d
 - [Crosswalk batch 3](./SOURCE-CLAUSE-CROSSWALK-BATCH-3-2026-10-24-001.md): five full-source fetches and rule-family mapping for excavation gate, registration orchestrator, three-level command, every-input/output anchors, and every-interaction anchors.
 - Connected master version: ULCG v1.2.5; current point CURRENT-036; next checkpoint NEXT-036.
 - Status: provisional source-backed mapping; full census and runtime tests remain open.
+
+
+## LAL-20261106-001 — canonical source routing and read-back recovery
+
+- [Lesson](./lessons/LAL-20261106-001-CANONICAL-SOURCE-ROUTING-AND-READBACK-RECOVERY.md) / [EVT-0252](../BEHAVIOR-TRACE/EVT-0252-CANONICAL-SOURCE-ROUTING-AND-READBACK-RECOVERY-2026-11-06.md).
+- Rule: when the user names a repository, search that repository first; distinguish it from ChatGPT Library; resolve short names through the canonical README/index; fetch the full file and verify path, ref, SHA and content.
+- Observed failure: initial Library-only routing missed the final GitHub artifact; direct GitHub fetch and repository guide read-back recovered it.
+- Status: REGISTERED; integration read-back and runtime regression test pending; independent-host retrieval NOT RUN.
