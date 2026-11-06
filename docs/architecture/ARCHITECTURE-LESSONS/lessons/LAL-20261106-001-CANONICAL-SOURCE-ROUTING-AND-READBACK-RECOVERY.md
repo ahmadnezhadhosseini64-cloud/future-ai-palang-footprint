@@ -88,6 +88,15 @@
 - The rule is now explicit in `docs/STABLE_RETRIEVAL_CORE.md` and `docs/RETRIEVAL_RUNTIME.md`.
 - A repository CI regression check is wired into `.github/workflows/main.yml` to fail if the permanent rule, lesson/event references or acceptance matrix disappear.
 - The lesson, event, registry, integration queue, Reference Index, HAIF mother and NEXT-051 are linked as architecture surfaces.
-- CI execution on the final integration head is PENDING until a matching workflow run is fetched and inspected.
+- Repository CI regression: PASS on exact source commit `471941d0cbc5f28a0c4364e85c1b99c833f0529d`, run `42284923957`; the workflow log was inspected.
 - This repository-level check verifies contract presence and linkage. It does not yet test an AI model's live tool choice or prove universal host enforcement.
 - Fresh-context / independent-host retrieval remains NOT RUN. Do not promote to host-wide VALIDATED or universal ACTIVE enforcement before that receipt exists.
+
+
+### Repository regression execution receipt — 2026-11-06
+- Workflow: Evidence Gate - Independent Execution Test
+- Run ID: 42284923957
+- Tested source commit: `471941d0cbc5f28a0c4364e85c1b99c833f0529d`
+- Result: SUCCESS; job `evidence-gate` completed successfully.
+- Log confirms the destination-first regression assertions executed and printed `Canonical source-routing regression contract: VERIFIED`.
+- Scope: repository policy-presence/linkage regression only. It does not prove live AI tool-selection behavior or independent-host recovery.
