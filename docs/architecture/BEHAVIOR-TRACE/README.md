@@ -1,8 +1,8 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.22
-- Date: 2026-11-05
+- Version: 1.0.23
+- Date: 2026-11-06
 - Project: Future AI / Palang Footprint / HAIF
 
 ## مسیرهای بازیابی
@@ -1133,3 +1133,13 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Evidence Gate 41984307392 succeeded on the same event SHA and created follow-up main `04d6508862f193db880fa10218b11030387208fa` (UTC `2026-11-05T07:01:27Z` / Tehran `2026-11-05T10:31:27+03:30`). That one-file evidence follow-up has no full audit/conformance receipt and remains NOT VERIFIED.
 - CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; `winner_selected=false`. Issues #20/#21 OPEN; BOART-FOLLOWUP-01 ACTIVE. NEXT-051 forensic archive OPEN / NOT RECOVERED.
 - Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
+
+
+## EVT-0251 — live mirror synchronization recheck — 2026-11-06
+- [EVT-0251](../BEHAVIOR-TRACE/EVT-0251-LIVE-MIRROR-SYNC-RECHECK-2026-11-06.md) / [TIME-BINDING-EVT-0251](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0251-LIVE-MIRROR-SYNC-2026-11-06.md).
+- Canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10`, 10,479 chars; Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, exact version 7, 10,480 chars. Normalized content and semantic fields MATCH; exact equality FALSE; edit distance 1, solely one extra terminal LF in Library. No source or Library write; no supported `source_file_ref` upload route; `container_path` not used.
+- Latest root/checkpoint/sole queue remain POINT-0/061 → CURRENT-112 → NEXT-051. Mirror-only; no new root or NEXT-052. Preserve POINT-0/016, /017, /018 / EVT-0180, EVT-0177/time binding, canonical EVT-0178, EVT-0179 and quarantined duplicate-number lineage.
+- Run-start main `ca86557ac9d12582f3962fdece9863c09697378e`: Living Architecture Audit 42015763286 SUCCESS on exact SHA; no Portable RAHM Conformance was found on ca865; latest pre-event conformance 41985021983 was on parent `dfa5c8390350031770af969ac94add523199de51`.
+- EVT-0251 registration commit `88d1d368e854da5e9f6f1963419778b7eccb289f`, UTC `2026-11-06T06:11:02Z`, Tehran `2026-11-06T09:41:02+03:30`. Audit 42172829315 and Portable RAHM Conformance 42172828710 both SUCCESS on exact SHA `88d1d368e854da5e9f6f1963419778b7eccb289f`; job logs independently confirm checkout and tested SHA. CPREL runtime transfer 42172828635 and transfer evidence 42172828737 also SUCCESS on that exact SHA (CI-to-CI only).
+- Evidence Gate 42172828774 SUCCESS on `88d1d368e854da5e9f6f1963419778b7eccb289f`; it created follow-up main `1234599754401221891592d232436c8810018ef0` at UTC `2026-11-06T06:11:11Z` / Tehran `2026-11-06T09:41:11+03:30`. The follow-up contains only its evidence artifact; no full audit/conformance run is recorded on this new head. Current main `123459...` remains NOT VERIFIED.
+- CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; `winner_selected=false`. Issues #20/#21 OPEN; BOART-FOLLOWUP-01 ACTIVE; NEXT-051 forensic archive OPEN / NOT RECOVERED. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.

@@ -1950,3 +1950,11 @@ The canonical chain is [POINT-0/032](./anchors/GPT6-RAHM-USER-POINT-0-20261026-0
 - Evidence Gate 41984307392 succeeded on the same event SHA and created follow-up main `04d6508862f193db880fa10218b11030387208fa` (UTC `2026-11-05T07:01:27Z` / Tehran `2026-11-05T10:31:27+03:30`). That one-file evidence follow-up has no full audit/conformance receipt and remains NOT VERIFIED.
 - CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; `winner_selected=false`. Issues #20/#21 OPEN; BOART-FOLLOWUP-01 ACTIVE. NEXT-051 forensic archive OPEN / NOT RECOVERED.
 - Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
+
+
+## Mirror synchronization event EVT-0251 — 2026-11-06
+- [EVT-0251](../architecture/BEHAVIOR-TRACE/EVT-0251-LIVE-MIRROR-SYNC-RECHECK-2026-11-06.md) / [TIME-BINDING-EVT-0251](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0251-LIVE-MIRROR-SYNC-2026-11-06.md).
+- This is a mirror-only event. Latest user root remains POINT-0/061; current checkpoint CURRENT-112; sole active queue NEXT-051. No NEXT-052.
+- Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, version 7 (10,480 chars). Normalized content and semantic fields match; exact equality FALSE by one extra terminal LF. No source or Library write.
+- Audit 42172829315 and Portable RAHM Conformance 42172828710 passed on exact event SHA `88d1d368e854da5e9f6f1963419778b7eccb289f`; Evidence Gate 42172828774 created follow-up main `1234599754401221891592d232436c8810018ef0`, which remains NOT VERIFIED.
+- CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN; Issues #20/#21 remain OPEN. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN.
