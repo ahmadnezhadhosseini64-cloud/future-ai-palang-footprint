@@ -2579,3 +2579,13 @@ Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-11
 - EVT-0251 registration commit `88d1d368e854da5e9f6f1963419778b7eccb289f`, UTC `2026-11-06T06:11:02Z`, Tehran `2026-11-06T09:41:02+03:30`. Audit 42172829315 and Portable RAHM Conformance 42172828710 both SUCCESS on exact SHA `88d1d368e854da5e9f6f1963419778b7eccb289f`; job logs independently confirm checkout and tested SHA. CPREL runtime transfer 42172828635 and transfer evidence 42172828737 also SUCCESS on that exact SHA (CI-to-CI only).
 - Evidence Gate 42172828774 SUCCESS on `88d1d368e854da5e9f6f1963419778b7eccb289f`; it created follow-up main `1234599754401221891592d232436c8810018ef0` at UTC `2026-11-06T06:11:11Z` / Tehran `2026-11-06T09:41:11+03:30`. The follow-up contains only its evidence artifact; no full audit/conformance run is recorded on this new head. Current main `123459...` remains NOT VERIFIED.
 - CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; `winner_selected=false`. Issues #20/#21 OPEN; BOART-FOLLOWUP-01 ACTIVE; NEXT-051 forensic archive OPEN / NOT RECOVERED. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
+
+
+## LAL-20261106-001 — source routing and canonical read-back
+
+- Lesson [LAL-20261106-001](../ARCHITECTURE-LESSONS/lessons/LAL-20261106-001-CANONICAL-SOURCE-ROUTING-AND-READBACK-RECOVERY.md); event [EVT-0252](../BEHAVIOR-TRACE/EVT-0252-CANONICAL-SOURCE-ROUTING-AND-READBACK-RECOVERY-2026-11-06.md).
+- Finding: the initial retrieval searched ChatGPT Library while the user explicitly identified the project repository; the final artifact existed in GitHub from the outset.
+- Operational rule: select the named destination first; consult its canonical index/README; map aliases to exact paths; fetch full content; verify ref, blob SHA and key fields; do not infer absence from a miss in another store.
+- Required follow-up: add regression coverage for repository-vs-Library routing and perform a fresh-context/independent-host retrieval test.
+- Status: REGISTERED / REPOSITORY INTEGRATION PENDING READ-BACK; runtime enforcement and independent-host test OPEN / NOT RUN.
+- Preserve current chain POINT-0/061 → CURRENT-112 → NEXT-051; this lesson does not create a new root or NEXT-052.
