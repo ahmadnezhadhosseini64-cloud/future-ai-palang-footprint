@@ -9,7 +9,7 @@
 - Governing architecture: [Living Evolutionary Architecture](../../../architecture/ARCH-2026-08-29-001-living-evolutionary-architecture.md)
 - Intake: [Live Inbox](../LIVE-INBOX/README.md)
 - Verification queue: [Architecture Integration Queue](../INTEGRATION-QUEUE/README.md)
-- Current lesson: [LAL-20261023-001](./lessons/LAL-20261023-001-LIVING-APPEND-ONLY-VERIFY-RECOVER-CYCLE.md)
+- Current lesson: [LAL-20261106-001](./lessons/LAL-20261106-001-CANONICAL-SOURCE-ROUTING-AND-READBACK-RECOVERY.md) — destination-first routing and verified retrieval. Historical governance lesson: [LAL-20261023-001](./lessons/LAL-20261023-001-LIVING-APPEND-ONLY-VERIFY-RECOVER-CYCLE.md).
 - Related event: [EVT-0107](../BEHAVIOR-TRACE/EVT-0107-LIVING-LESSON-CYCLE-AND-ROLLBACK-GOVERNANCE-2026-10-23.md)
 
 ## 1. Purpose
