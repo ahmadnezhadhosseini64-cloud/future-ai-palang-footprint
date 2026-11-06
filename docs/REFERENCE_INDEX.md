@@ -2288,3 +2288,11 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - EVT-0251 registration commit `88d1d368e854da5e9f6f1963419778b7eccb289f`, UTC `2026-11-06T06:11:02Z`, Tehran `2026-11-06T09:41:02+03:30`. Audit 42172829315 and Portable RAHM Conformance 42172828710 both SUCCESS on exact SHA `88d1d368e854da5e9f6f1963419778b7eccb289f`; job logs independently confirm checkout and tested SHA. CPREL runtime transfer 42172828635 and transfer evidence 42172828737 also SUCCESS on that exact SHA (CI-to-CI only).
 - Evidence Gate 42172828774 SUCCESS on `88d1d368e854da5e9f6f1963419778b7eccb289f`; it created follow-up main `1234599754401221891592d232436c8810018ef0` at UTC `2026-11-06T06:11:11Z` / Tehran `2026-11-06T09:41:11+03:30`. The follow-up contains only its evidence artifact; no full audit/conformance run is recorded on this new head. Current main `123459...` remains NOT VERIFIED.
 - CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; `winner_selected=false`. Issues #20/#21 OPEN; BOART-FOLLOWUP-01 ACTIVE; NEXT-051 forensic archive OPEN / NOT RECOVERED. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
+
+
+## Architecture lesson — canonical source routing and read-back recovery (2026-11-06)
+
+- Lesson: [LAL-20261106-001](architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261106-001-CANONICAL-SOURCE-ROUTING-AND-READBACK-RECOVERY.md).
+- Event: [EVT-0252](architecture/BEHAVIOR-TRACE/EVT-0252-CANONICAL-SOURCE-ROUTING-AND-READBACK-RECOVERY-2026-11-06.md).
+- Rule: a user-named repository is the primary retrieval destination; Library and repository are separate stores. Resolve aliases through canonical indexes, fetch the complete artifact and read back its path/ref/SHA/content. A miss in one store is not evidence of absence in another.
+- Status: lesson and event registered; integration read-back, regression automation and independent-host retrieval remain pending / open.
