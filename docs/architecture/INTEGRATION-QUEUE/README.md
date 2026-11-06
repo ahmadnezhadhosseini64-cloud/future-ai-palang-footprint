@@ -2586,8 +2586,8 @@ Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-11
 - Lesson [LAL-20261106-001](../ARCHITECTURE-LESSONS/lessons/LAL-20261106-001-CANONICAL-SOURCE-ROUTING-AND-READBACK-RECOVERY.md); event [EVT-0252](../BEHAVIOR-TRACE/EVT-0252-CANONICAL-SOURCE-ROUTING-AND-READBACK-RECOVERY-2026-11-06.md).
 - Finding: the initial retrieval searched ChatGPT Library while the user explicitly identified the project repository; the final artifact existed in GitHub from the outset.
 - Operational rule: select the named destination first; consult its canonical index/README; map aliases to exact paths; fetch full content; verify ref, blob SHA and key fields; do not infer absence from a miss in another store.
-- Required follow-up: add regression coverage for repository-vs-Library routing and perform a fresh-context/independent-host retrieval test.
-- Status: REGISTERED / REPOSITORY READ-BACK VERIFIED across linked architecture surfaces; runtime enforcement and independent-host test OPEN / NOT RUN.
+- Regression coverage for repository-vs-Library routing is now implemented and PASS on source commit `471941d0cbc5f28a0c4364e85c1b99c833f0529d` (run `42284923957`). Fresh-context/independent-host retrieval remains the separate required acceptance test.
+- Status: REGISTERED / REPOSITORY READ-BACK VERIFIED / POLICY OPERATIONALIZED / REPOSITORY CI REGRESSION PASS; live AI-host enforcement and independent-host test OPEN / NOT RUN.
 - Preserve current chain POINT-0/061 → CURRENT-112 → NEXT-051; this lesson does not create a new root or NEXT-052.
 
 
