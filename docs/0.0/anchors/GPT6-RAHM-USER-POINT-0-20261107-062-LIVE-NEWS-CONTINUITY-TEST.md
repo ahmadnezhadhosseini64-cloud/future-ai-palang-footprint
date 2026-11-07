@@ -101,3 +101,6 @@ Next action: complete the linked 0.0 registration and update the existing living
 ## 7. Status discipline
 
 Current status is OPEN / ACTIVE / EXECUTION REQUIRED. The 0+ designation highlights importance; it does not mean completion. Keep the test open until evidence supports each individual acceptance criterion.
+
+## Append-only child continuation — POINT-0/063 (0+)
+This historical root remains unchanged in identity and original content. Its next connected user-turn root is [POINT-0/063 (0+)](GPT6-RAHM-USER-POINT-0-20261107-063-GRAPH-WIDE-CONTINUITY-AND-ANCHORING.md), with [CURRENT-114](PALANG-0.0-CURRENT-20261107-114-GRAPH-WIDE-CONTINUITY.md) and the same sole active [NEXT-051](PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). The prior POINT-0/062 → IN-101 → OUT-100 → EVT-0254 → CURRENT-113 chain is preserved as history; this child pointer does not rewrite or close it.
