@@ -5,7 +5,7 @@
 - Parent: [POINT-0/063](GPT6-RAHM-USER-POINT-0-20261107-063-GRAPH-WIDE-CONTINUITY-AND-ANCHORING.md) → [CURRENT-114](PALANG-0.0-CURRENT-20261107-114-GRAPH-WIDE-CONTINUITY.md) → existing [NEXT-051](PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
 - Chain: POINT-0/064 → IN-103 + OUT-102 → EVT-0256 → TIME-BINDING-EVT-0256 → CURRENT-115 → NEXT-051
 - Version: 1.0.0
-- Status: OPEN / ACTIVE / CONFIGURATION READ-BACK VERIFIED / RUNTIME TESTS PENDING
+- Status: OPEN / ACTIVE / REPOSITORY CHAIN READ-BACK VERIFIED / AUTOMATION CONFIGURATION VERIFIED / RUNTIME TESTS PENDING
 - Root commit: 627e178322e23d26e54bf3dc1b852351bd5f8f0f
 - UTC: 2026-11-07T18:28:57Z
 - Tehran: 2026-11-07T21:58:57+03:30
@@ -30,7 +30,7 @@
 
 ## Open runtime and continuity tests
 
-- N01–N03: configuration checks recorded; final repository read-back evidence is being completed.
+- N01–N03: saved schedule and prompt configuration checks plus automation-dashboard read-back are VERIFIED; cross-file repository chain read-back is VERIFIED.
 - N04: next actual 07:00 run must cover preceding 24 hours.
 - N05: next actual 23:00 run must cover same-day 07:00–23:00.
 - N06: missed manual windows must not shorten the next 07:00 coverage.
