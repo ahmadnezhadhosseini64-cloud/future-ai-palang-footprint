@@ -7,7 +7,7 @@
 - Parent interaction: POINT-0/062 (0+) and all prior project roots/checkpoints through the canonical historical graph.
 - Designation: NEW USER-TURN ROOT / 0+ HIGHLIGHT / APPEND-ONLY.
 - User-message timestamp: UNKNOWN / UNVERIFIED; do not infer it from repository time.
-- Repository registration time: to be bound to the actual Git commit metadata and converted to Asia/Tehran.
+- Repository registration commit: `7b55de39c19691a28ae50406e50ee6ddbcd3c4fe`.\n- Repository registration UTC: `2026-11-07T18:13:22Z`; Asia/Tehran: `2026-11-07T21:43:22+03:30` (exact commit metadata; UTC is permanent base).
 - Status: REGISTERED; cross-file integration and read-back pending until evidenced.
 - Sole active queue: NEXT-051. Do not create NEXT-052.
 
