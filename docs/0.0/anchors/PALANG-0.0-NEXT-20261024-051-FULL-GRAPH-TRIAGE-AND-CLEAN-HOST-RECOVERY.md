@@ -2,12 +2,12 @@
 
 - Stable ID: G6IP-RAHM-NEXT-051-20261024
 - Production ID: G6IP-RAHM-NEXT-051-20261024
-- Version: 1.0.32
+- Version: 1.0.33
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE
 - Project: Future AI / Palang Footprint — HAIF
 - Canonical queue: this file only
-- Current checkpoint: [CURRENT-112](PALANG-0.0-CURRENT-20261103-112-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md)
-- Current point: [POINT-0/061 (0+)](GPT6-RAHM-USER-POINT-0-20261030-061-ARCHITECTURE-GAP-RECONCILIATION.md)
+- Current checkpoint: [CURRENT-114](PALANG-0.0-CURRENT-20261107-114-GRAPH-WIDE-CONTINUITY.md)
+- Current point: [POINT-0/063 (0+)](GPT6-RAHM-USER-POINT-0-20261107-063-GRAPH-WIDE-CONTINUITY-AND-ANCHORING.md)
 - Living mother: [سند مرجع مادر مدل اولیه](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 - Package contract: [HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md](../../../prototype/haif-gpt6-starter/HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md)
 - Canonical ZIP filename: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`
@@ -295,3 +295,14 @@ The previous blob at this path began with the Integration Queue README title and
 - Mirror source blob `de1b75f07241c9b313e476af5f1417177ff78c10`; Library v7 is source plus one terminal LF; normalized content and semantic fields match; no Library write.
 - Living Architecture Audit 42289713783 passed on exact run-start main `ca715af1d2dca3457c7d6d096bcb88bfccadb7b2`. Portable RAHM Conformance was not found on that exact SHA; latest prior conformance 42285693526 was on parent `918d4de4474cc0e4559858a46cd4feb5b30ce36a`.
 - Continue pointer/manifest, identity/parent, missing-link, forensic archive, Issue #20/#21 and BOART-FOLLOWUP-01 work without resolving ambiguous pointers by inference. Keep CURRENT-065/CURRENT-066 OPEN / winner_selected=false; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external-host recovery NOT RUN.
+
+
+## Latest continuation — POINT-0/063 (0+) / CURRENT-114 / EVT-0255
+- New root: [POINT-0/063 (0+)](GPT6-RAHM-USER-POINT-0-20261107-063-GRAPH-WIDE-CONTINUITY-AND-ANCHORING.md).
+- Input/output: [IN-102](PALANG-0.0-IN-20261107-102-GRAPH-WIDE-CONTINUITY.md) + [OUT-101](PALANG-0.0-OUT-20261107-101-GRAPH-WIDE-CONTINUITY.md).
+- Event/time binding: [EVT-0255](../../architecture/BEHAVIOR-TRACE/EVT-0255-POINT-063-GRAPH-WIDE-CONTINUITY-2026-11-07.md) / [TIME-BINDING-EVT-0255](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0255-GRAPH-WIDE-CONTINUITY-2026-11-07.md).
+- Current: [CURRENT-114](PALANG-0.0-CURRENT-20261107-114-GRAPH-WIDE-CONTINUITY.md); sole queue remains this NEXT-051.
+- Parent/history: POINT-0/062 (0+) and POINT-0/061 remain preserved. All earlier roots, checkpoints, events, lessons, manifests and ambiguous branches remain part of the graph; no historical node is silently superseded.
+- Root registration UTC 2026-11-07T18:13:22Z / Tehran 2026-11-07T21:43:22+03:30; commit 7b55de39c19691a28ae50406e50ee6ddbcd3c4fe. User-message time UNKNOWN / UNVERIFIED.
+- New work lanes: G01–G06 full graph/link/identity/parent reconciliation; T01–T04 UTC-first provenance; H01–H05 fresh-session, clean-host and independent-host recovery.
+- Keep every unrun test OPEN / NOT RUN. Continue all existing package, exact-SHA, RAHM, runtime, historical graph, CURRENT-065/CURRENT-066, overlay manifest, Issues #20/#21, Buffer/Persistent Memory and Dropbox tasks. No NEXT-052.
