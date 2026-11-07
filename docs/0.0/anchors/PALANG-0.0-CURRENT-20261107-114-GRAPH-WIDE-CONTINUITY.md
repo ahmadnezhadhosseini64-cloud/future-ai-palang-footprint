@@ -5,7 +5,7 @@
 - Parent root: POINT-0/062 (0+) → POINT-0/061 lineage retained.
 - Chain: POINT-0/063 → IN-102 + OUT-101 → EVT-0255 → TIME-BINDING-EVT-0255 → CURRENT-114 → NEXT-051
 - Version: 1.0.0
-- Status: OPEN / ACTIVE / EXECUTION REQUIRED
+- Status: OPEN / ACTIVE / REPOSITORY CHAIN READ-BACK VERIFIED / EXECUTION REQUIRED
 - Canonical timezone: UTC; display equivalent: Asia/Tehran
 - Root registration UTC: 2026-11-07T18:13:22Z
 - Root registration Tehran: 2026-11-07T21:43:22+03:30
