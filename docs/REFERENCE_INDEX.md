@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-11-07 — EVT-0253 live mirror synchronization recheck. Root POINT-0/061, checkpoint CURRENT-112, active queue NEXT-051, living master v1.7.54. Source/Library v7 normalized content and semantic fields match; exact equality FALSE by one additional terminal LF; no Library rewrite. Living Architecture Audit 42289713783 passed on run-start main SHA ca715af1d2dca3457c7d6d096bcb88bfccadb7b2; Portable RAHM Conformance on that exact SHA was not found.
+**Last Updated:** 2026-11-07 — POINT-0/062 (0+) news-continuity test registered; CURRENT-113; sole active queue NEXT-051; living master append pending read-back. EVT-0254 is the new user-turn event; prior EVT-0253 remains preserved. Source/Library v7 normalized content and semantic fields match; exact equality FALSE by one additional terminal LF; no Library rewrite. Living Architecture Audit 42289713783 passed on run-start main SHA ca715af1d2dca3457c7d6d096bcb88bfccadb7b2; Portable RAHM Conformance on that exact SHA was not found.
 
 ## Canonical References
 
@@ -2323,3 +2323,10 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - Run-start main `ca715af1d2dca3457c7d6d096bcb88bfccadb7b2`; latest user root POINT-0/061; checkpoint CURRENT-112; sole active queue NEXT-051. No NEXT-052.
 - Canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10`, 10,479 chars; Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, version 7, 10,480 chars. One additional terminal LF in Library; normalized equality and semantic fields MATCH; exact equality FALSE. No source/Library write.
 - Living Architecture Audit 42289713783 passed on exact run-start SHA. Portable RAHM Conformance was not found on that exact SHA. Issues #20/#21 and CURRENT-065/CURRENT-066 remain OPEN; external independent-host recovery NOT RUN.
+
+
+## New user-turn root — POINT-0/062 (0+)
+- [POINT-0/062 (0+)](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261107-062-LIVE-NEWS-CONTINUITY-TEST.md): live test of the user's 07:00 daily news report and on-demand incremental updates at any time.
+- Chain: IN-101 → OUT-100 → EVT-0254 → CURRENT-113 → existing NEXT-051.
+- [Test/event](architecture/BEHAVIOR-TRACE/EVT-0254-POINT-062-LIVE-NEWS-CONTINUITY-TEST-2026-11-07.md). [0.0 registry](0.0/README.md).
+- Status: repository files written; read-back and cross-index verification pending. T01–T10 OPEN / NOT RUN. 11:00, 15:00 and 23:00 remain manual suggestion windows; only 07:00 is scheduled.
