@@ -3,13 +3,13 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.10.31
+- Version: 1.10.32
 - Date: 2026-11-07
 - Exact Time: EVT-0247 initial event commit UTC `2026-11-04T06:23:22Z` / Tehran `2026-11-04T09:53:22+03:30`; the time-binding file's own final-change time is read separately from its Git commit metadata.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: ACTIVE / LIVING — latest user-turn root POINT-0/064 (0+); current checkpoint CURRENT-115; sole active queue NEXT-051; living master v1.7.57 and new root chain repository read-back verified; exact-final-SHA full audit/conformance and external host tests remain open. EVT-0255 is the latest user-turn event; EVT-0253 remains the latest mirror-only event. Source/Library v7 normalized content and semantic fields match; exact equality FALSE by one terminal LF; no Library rewrite. Living Architecture Audit 42289713783 passed on exact run-start main SHA ca715af1d2dca3457c7d6d096bcb88bfccadb7b2; Portable RAHM Conformance on that exact SHA was not found. CURRENT-065/CURRENT-066, overlay-manifest lineage, Issues #20/#21, NEXT-051 forensic archive and historic graph/identity/parent/time reconciliation remain OPEN.
+- Status: ACTIVE / LIVING — latest user-turn root POINT-0/064 (0+); additive handoff EVT-0257; current checkpoint CURRENT-115; sole active queue NEXT-051; living master v1.7.57 and new root chain repository read-back verified; exact-final-SHA full audit/conformance and external host tests remain open. EVT-0255 is the latest user-turn event; EVT-0253 remains the latest mirror-only event. Source/Library v7 normalized content and semantic fields match; exact equality FALSE by one terminal LF; no Library rewrite. Living Architecture Audit 42289713783 passed on exact run-start main SHA ca715af1d2dca3457c7d6d096bcb88bfccadb7b2; Portable RAHM Conformance on that exact SHA was not found. CURRENT-065/CURRENT-066, overlay-manifest lineage, Issues #20/#21, NEXT-051 forensic archive and historic graph/identity/parent/time reconciliation remain OPEN.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
@@ -2641,3 +2641,11 @@ Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-11
 - Automation configuration is enabled and dashboard-read-back verified. Actual run/delivery/content acceptance remains OPEN / NOT RUN.
 - Root registration UTC 2026-11-07T18:28:57Z / Tehran 2026-11-07T21:58:57+03:30; commit 627e178322e23d26e54bf3dc1b852351bd5f8f0f.
 - Continue the existing NEXT-051 only; no NEXT-052.
+
+
+## Latest additive handoff — POINT-0/064 / EVT-0257
+
+- Root remains [POINT-0/064](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261107-064-DAILY-NEWS-CADENCE-AND-24H-CONTINUITY.md); current checkpoint [CURRENT-115](../../0.0/anchors/PALANG-0.0-CURRENT-20261107-115-DAILY-NEWS-CADENCE.md); sole queue [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Additive event: [EVT-0257](../BEHAVIOR-TRACE/EVT-0257-POINT-064-DEPARTURE-CONTINUITY-2026-11-07.md), with [IN-104](../../0.0/anchors/PALANG-0.0-IN-20261107-104-DEPARTURE-CONTINUITY-AND-PERMANENT-TEST-GOVERNANCE.md) + [OUT-103](../../0.0/anchors/PALANG-0.0-OUT-20261107-103-DEPARTURE-CONTINUITY-AND-PERMANENT-TEST-GOVERNANCE.md).
+- Keep all subsequent work under 0.0; keep the living mother and acceptance tests active/living. Preserve all historical anchors and unresolved gates. No NEXT-052.
+- Tests are not passed by documentation or schedule configuration alone; require exact-SHA run receipts. All unrun gates remain OPEN / NOT RUN.
