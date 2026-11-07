@@ -7,8 +7,9 @@
 - Parent: POINT-0/063 (0+) → CURRENT-114 → NEXT-051.
 - Designation: NEW USER-TURN ROOT / 0+ HIGHLIGHT / APPEND-ONLY.
 - User-message timestamp: UNKNOWN / UNVERIFIED.
-- Repository registration timestamp: to be bound to exact Git commit metadata.
-- Status: ROOT REGISTRATION; cross-file read-back and integration pending.
+- Repository registration commit: `627e178322e23d26e54bf3dc1b852351bd5f8f0f`.
+- Repository registration UTC: `2026-11-07T18:28:57Z`; Asia/Tehran: `2026-11-07T21:58:57+03:30` (exact commit metadata; UTC is permanent base).
+- Status: ROOT REGISTERED; automation configuration dashboard-read-back verified; cross-file repository read-back and runtime acceptance tracked separately.
 
 ## 1. User intent
 
@@ -93,3 +94,27 @@ Continue the existing NEXT-051 queue only. Preserve all prior package identity, 
 Apply WRITE → READ-BACK → MATCH → VERIFY → RECONCILE → STATUS. UTC is the permanent time base; derive Asia/Tehran (+03:30) from exact UTC metadata. Keep user-message, automation configuration, actual run, report delivery and Git commit times distinct. Unknown values remain UNKNOWN / UNVERIFIED.
 
 This point is append-only and does not replace POINT-0/063 or close any prior open gate.
+
+
+## 8. Canonical graph navigation and reciprocal anchors
+
+### Parent and prior roots
+- Parent root: [POINT-0/063 (0+)](GPT6-RAHM-USER-POINT-0-20261107-063-GRAPH-WIDE-CONTINUITY-AND-ANCHORING.md).
+- Prior execution checkpoint: [CURRENT-114](PALANG-0.0-CURRENT-20261107-114-GRAPH-WIDE-CONTINUITY.md).
+- Earlier roots POINT-0/062 and POINT-0/061 remain linked through POINT-0/063 and the central 0.0 registry.
+
+### Current chain
+- [IN-103](PALANG-0.0-IN-20261107-103-DAILY-NEWS-CADENCE.md) + [OUT-102](PALANG-0.0-OUT-20261107-102-DAILY-NEWS-CADENCE.md).
+- [EVT-0256](../../architecture/BEHAVIOR-TRACE/EVT-0256-POINT-064-DAILY-NEWS-CADENCE-2026-11-07.md) / [TIME-BINDING-EVT-0256](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0256-DAILY-NEWS-CADENCE-2026-11-07.md).
+- [CURRENT-115](PALANG-0.0-CURRENT-20261107-115-DAILY-NEWS-CADENCE.md) → sole active queue [NEXT-051](PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+
+### Central records
+- [0.0 registry](../README.md).
+- [Reference Index](../../REFERENCE_INDEX.md).
+- [Behavior Trace index](../../architecture/BEHAVIOR-TRACE/README.md).
+- [Integration Queue](../../architecture/INTEGRATION-QUEUE/README.md).
+- [Living mother reference](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md).
+- [RAHM export manifest](../../portable/RAHM/EXPORT_MANIFEST.json).
+- [Independent-host recovery proof protocol](../../architecture/مدل%20اولیه%20AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md).
+
+The links establish the navigable current chain and canonical recovery surfaces; they do not claim that all historical edges or future automation runs have passed acceptance.
