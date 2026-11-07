@@ -2,7 +2,7 @@
 
 - Stable ID: G6IP-RAHM-NEXT-051-20261024
 - Production ID: G6IP-RAHM-NEXT-051-20261024
-- Version: 1.0.34
+- Version: 1.0.35
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE
 - Project: Future AI / Palang Footprint — HAIF
 - Canonical queue: this file only
@@ -316,3 +316,15 @@ The previous blob at this path began with the Integration Queue README title and
 - Tests N01–N03 have configuration-level evidence; N04–N08 require actual run receipts and remain OPEN / NOT RUN.
 - Root commit 627e178322e23d26e54bf3dc1b852351bd5f8f0f; UTC 2026-11-07T18:28:57Z / Tehran 2026-11-07T21:58:57+03:30.
 - Continue all prior NEXT-051 lanes; no NEXT-052.
+
+
+
+## Latest additive handoff — POINT-0/064 / EVT-0257
+
+- User departure continuity instruction: [IN-104](PALANG-0.0-IN-20261107-104-DEPARTURE-CONTINUITY-AND-PERMANENT-TEST-GOVERNANCE.md) + [OUT-103](PALANG-0.0-OUT-20261107-103-DEPARTURE-CONTINUITY-AND-PERMANENT-TEST-GOVERNANCE.md) → [EVT-0257](../../architecture/BEHAVIOR-TRACE/EVT-0257-POINT-064-DEPARTURE-CONTINUITY-2026-11-07.md).
+- Current root remains POINT-0/064; checkpoint CURRENT-115; this file remains the sole active queue NEXT-051. No NEXT-052.
+- Continue every existing lane and all prior open gates; do not restart from scratch, silently close ambiguity, renumber history or create a competing package identity.
+- Keep all relevant tests active as acceptance gates; execute on exact final main SHA and retain workflow/run/artifact receipts. A scheduled workflow or written test plan is not a passing test.
+- Maintain living mother, central 0.0 registry, Reference Index, Behavior Trace index, Integration Queue and package/recovery manifests with write/read-back/match evidence.
+- Next deterministic actions: cross-file read-back of EVT-0257 handoff; inspect actual 23:00/07:00 scheduled report receipts when available; run exact-SHA Living Architecture Audit and Portable RAHM Conformance; continue graph triage and independent-host recovery.
+- All unexecuted tests remain OPEN / NOT RUN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external-host recovery NOT RUN.
