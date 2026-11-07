@@ -118,3 +118,17 @@ This point is append-only and does not replace POINT-0/063 or close any prior op
 - [Independent-host recovery proof protocol](../../architecture/مدل%20اولیه%20AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md).
 
 The links establish the navigable current chain and canonical recovery surfaces; they do not claim that all historical edges or future automation runs have passed acceptance.
+
+
+
+## 9. Additive departure handoff — EVT-0257
+
+The user is leaving and instructs that this root, its historical connections and all remaining work remain registered, active and living. All next steps continue under 0.0. This is a child event under POINT-0/064, not a new root.
+
+- [IN-104](PALANG-0.0-IN-20261107-104-DEPARTURE-CONTINUITY-AND-PERMANENT-TEST-GOVERNANCE.md) + [OUT-103](PALANG-0.0-OUT-20261107-103-DEPARTURE-CONTINUITY-AND-PERMANENT-TEST-GOVERNANCE.md) → [EVT-0257](../../architecture/BEHAVIOR-TRACE/EVT-0257-POINT-064-DEPARTURE-CONTINUITY-2026-11-07.md) → CURRENT-115 → NEXT-051.
+- Preserve all prior POINT-0/0+/0.0 anchors and branches; do not create NEXT-052.
+- Keep the living mother and all central registries/indexes synchronized and read-back verified.
+- Keep structural, regression, behavioral, scheduled-run, restart, clean-host and independent-host tests as active acceptance gates. Run against exact final SHAs and retain receipts; never mark unrun tests PASS.
+- Continue every existing open lane in NEXT-051, including the stable original ZIP, RAHM reconstruction, exact-SHA audit/conformance, historical graph reconciliation, runtime return, persistent-memory/Buffer, Dropbox and independent-host recovery.
+- UTC remains the permanent time base. User-message time is UNKNOWN / UNVERIFIED.
+- This handoff does not claim unattended background execution or future report delivery. All unproven runtime gates remain OPEN / NOT RUN.
