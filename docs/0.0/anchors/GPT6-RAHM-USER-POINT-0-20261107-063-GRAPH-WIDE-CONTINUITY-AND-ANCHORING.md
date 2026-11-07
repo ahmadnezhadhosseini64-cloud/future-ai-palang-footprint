@@ -126,3 +126,7 @@ POINT-0/063 is additive. It does not replace POINT-0/062, POINT-0/061 or any old
 - [Starter package recovery protocol](../../../prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md).
 
 These links establish the current navigable edges. They do not claim that every historical node, manifest entry or semantic parent edge has already passed the full graph audit; that reconciliation remains OPEN under NEXT-051.
+
+
+## Append-only child continuation — POINT-0/064 (0+)
+The next user-turn root is [POINT-0/064](GPT6-RAHM-USER-POINT-0-20261107-064-DAILY-NEWS-CADENCE-AND-24H-CONTINUITY.md), followed by [CURRENT-115](PALANG-0.0-CURRENT-20261107-115-DAILY-NEWS-CADENCE.md) and the existing [NEXT-051](PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). POINT-0/063, CURRENT-114, EVT-0255 and all earlier anchors remain preserved as history.
