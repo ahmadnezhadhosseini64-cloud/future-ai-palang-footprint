@@ -4,7 +4,7 @@
 - Parent root: POINT-0/064 (0+)
 - Prior checkpoint: CURRENT-115
 - Sole queue: NEXT-051
-- Status: REGISTERED / APPEND-ONLY
+- Status: REGISTERED / READ-BACK VERIFIED / APPEND-ONLY
 - User-message timestamp: UNKNOWN / UNVERIFIED
 - Source: direct user instruction in the current conversation.
 
