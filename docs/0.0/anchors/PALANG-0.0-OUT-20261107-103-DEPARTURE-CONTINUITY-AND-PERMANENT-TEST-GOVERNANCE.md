@@ -5,7 +5,7 @@
 - Input: IN-104
 - Prior checkpoint: CURRENT-115
 - Sole queue: NEXT-051
-- Status: REGISTERED / ACTION PLAN / EXECUTION PARTIAL
+- Status: REGISTERED / READ-BACK VERIFIED / ACTION PLAN / EXECUTION PARTIAL
 - User-message timestamp: UNKNOWN / UNVERIFIED
 
 ## Actions completed in this handoff
