@@ -3,7 +3,7 @@
 - Stable ID: HAIF-OUT-101-GRAPH-WIDE-CONTINUITY-2026-11-07-001
 - Parent: POINT-0/063 (0+)
 - Version: 1.0.0
-- Status: REGISTERED IN REPOSITORY; read-back pending
+- Status: REGISTERED IN REPOSITORY / READ-BACK VERIFIED
 - Source: assistant execution commitment in response to the user's direct instruction.
 - User-message timestamp: UNKNOWN / UNVERIFIED
 - Project timezone: Asia/Tehran
