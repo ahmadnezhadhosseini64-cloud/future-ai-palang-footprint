@@ -3,7 +3,7 @@
 - Stable ID: HAIF-IN-102-GRAPH-WIDE-CONTINUITY-2026-11-07-001
 - Parent: POINT-0/063 (0+)
 - Version: 1.0.0
-- Status: REGISTERED IN REPOSITORY; read-back pending
+- Status: REGISTERED IN REPOSITORY / READ-BACK VERIFIED
 - User-message timestamp: UNKNOWN / UNVERIFIED
 - Source: direct user instruction in this conversation.
 
