@@ -1,7 +1,7 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.25
+- Version: 1.0.26
 - Date: 2026-11-07
 - Project: Future AI / Palang Footprint / HAIF
 
