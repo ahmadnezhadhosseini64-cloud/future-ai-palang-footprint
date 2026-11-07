@@ -39,3 +39,11 @@ Maintain one connected, auditable graph across every POINT-0, POINT-0.0 and POIN
 ## Evidence boundary
 
 Repository registration is not equivalent to architecture validation, runtime activation, persistent memory, background execution or independent-host recovery. Record each destination and capability separately.
+
+
+## Automation configuration recheck — 2026-11-07
+- Existing automation: `6aef62341be0819185b2b0c8c126e672` — «خلاصه صبحگاهی ایران، سیاست، دلار و آب‌وهوا».
+- Recorded schedule: daily at 07:00 Asia/Tehran, DTSTART 2026-11-08.
+- Configuration state: ENABLED.
+- Run history at inspection: no last run and no latest result; next_run_time was null. This confirms the saved enabled configuration only, not successful future delivery or background execution.
+- No additional 11:00 / 15:00 / 23:00 automations were created; those remain manual suggested windows.
