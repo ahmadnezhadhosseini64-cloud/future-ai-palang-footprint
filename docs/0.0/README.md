@@ -1,5 +1,11 @@
 # پوشهٔ ۰.۰ — دفتر نقاط ادامهٔ پروژه
 
+## تازه‌ترین ریشه و چرخهٔ خبر — POINT-0/064 (0+) → CURRENT-115
+
+[POINT-0/064 (0+)](anchors/GPT6-RAHM-USER-POINT-0-20261107-064-DAILY-NEWS-CADENCE-AND-24H-CONTINUITY.md) → [IN-103](anchors/PALANG-0.0-IN-20261107-103-DAILY-NEWS-CADENCE.md) + [OUT-102](anchors/PALANG-0.0-OUT-20261107-102-DAILY-NEWS-CADENCE.md) → [EVT-0256](../architecture/BEHAVIOR-TRACE/EVT-0256-POINT-064-DAILY-NEWS-CADENCE-2026-11-07.md) → [TIME-BINDING-EVT-0256](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0256-DAILY-NEWS-CADENCE-2026-11-07.md) → [CURRENT-115](anchors/PALANG-0.0-CURRENT-20261107-115-DAILY-NEWS-CADENCE.md) → existing [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+
+چرخهٔ گزارش خبر: ۰۷:۰۰ خودکار با پوشش ۲۴ ساعت گذشته (۰۷ روز قبل تا ۰۷ روز جاری)، ۲۳:۰۰ خودکار با پوشش همان روز از ۰۷ تا ۲۳، و ۱۱/۱۵ فقط دستی با درخواست «بروزرسانی خبر». هر دو automation ذخیره و در داشبورد بازخوانی شدند؛ اجرای واقعی و تحویل آینده هنوز آزموده نشده است. ریشه POINT-0/064 در commit `627e178322e23d26e54bf3dc1b852351bd5f8f0f` در UTC `2026-11-07T18:28:57Z` / تهران `2026-11-07T21:58:57+03:30` ثبت شد. زمان پیام کاربر UNKNOWN / UNVERIFIED است. صف یگانه NEXT-051 باقی می‌ماند.
+
 ## تازه‌ترین ریشه و زنجیرهٔ سراسری — POINT-0/063 (0+) → CURRENT-114
 
 [POINT-0/063 (0+)](anchors/GPT6-RAHM-USER-POINT-0-20261107-063-GRAPH-WIDE-CONTINUITY-AND-ANCHORING.md) → [IN-102](anchors/PALANG-0.0-IN-20261107-102-GRAPH-WIDE-CONTINUITY.md) + [OUT-101](anchors/PALANG-0.0-OUT-20261107-101-GRAPH-WIDE-CONTINUITY.md) → [EVT-0255](../architecture/BEHAVIOR-TRACE/EVT-0255-POINT-063-GRAPH-WIDE-CONTINUITY-2026-11-07.md) → [TIME-BINDING-EVT-0255](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0255-GRAPH-WIDE-CONTINUITY-2026-11-07.md) → [CURRENT-114](anchors/PALANG-0.0-CURRENT-20261107-114-GRAPH-WIDE-CONTINUITY.md) → [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
