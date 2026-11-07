@@ -1,7 +1,7 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.26
+- Version: 1.0.27
 - Date: 2026-11-07
 - Project: Future AI / Palang Footprint / HAIF
 
@@ -1174,3 +1174,12 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Root commit 7b55de39c19691a28ae50406e50ee6ddbcd3c4fe; UTC 2026-11-07T18:13:22Z / Tehran 2026-11-07T21:43:22+03:30. User-message timestamp UNKNOWN / UNVERIFIED.
 - Requirement: all POINT-0, 0.0 and 0+ anchors connect through the canonical project graph; preserve historical branches, collisions and unresolved edges until evidence-based reconciliation.
 - New root and event are registered; graph-wide reconciliation G01–G06, timestamp checks T01–T04 and recovery tests H01–H05 remain OPEN / NOT RUN. No NEXT-052.
+
+
+## EVT-0256 — POINT-0/064 daily news cadence and 24-hour continuity
+- [POINT-0/064 (0+)](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261107-064-DAILY-NEWS-CADENCE-AND-24H-CONTINUITY.md).
+- [IN-103](../../0.0/anchors/PALANG-0.0-IN-20261107-103-DAILY-NEWS-CADENCE.md) + [OUT-102](../../0.0/anchors/PALANG-0.0-OUT-20261107-102-DAILY-NEWS-CADENCE.md).
+- [TIME-BINDING-EVT-0256](./TIME-BINDING-EVT-0256-DAILY-NEWS-CADENCE-2026-11-07.md) / [CURRENT-115](../../0.0/anchors/PALANG-0.0-CURRENT-20261107-115-DAILY-NEWS-CADENCE.md) / sole queue [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Morning automation: daily 07:00 Asia/Tehran; coverage previous day 07:00 → current day 07:00. Night automation: daily 23:00; coverage same day 07:00–23:00. 11:00/15:00 remain manual.
+- Both automation configurations enabled and dashboard-read-back verified; future execution/delivery/content tests remain OPEN / NOT RUN.
+- Root commit 627e178322e23d26e54bf3dc1b852351bd5f8f0f; UTC 2026-11-07T18:28:57Z / Tehran 2026-11-07T21:58:57+03:30. User-message time UNKNOWN / UNVERIFIED.
