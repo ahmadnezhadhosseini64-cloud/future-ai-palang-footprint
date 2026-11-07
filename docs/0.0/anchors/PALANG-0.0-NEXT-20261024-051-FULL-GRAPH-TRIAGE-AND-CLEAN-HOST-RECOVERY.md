@@ -2,12 +2,12 @@
 
 - Stable ID: G6IP-RAHM-NEXT-051-20261024
 - Production ID: G6IP-RAHM-NEXT-051-20261024
-- Version: 1.0.33
+- Version: 1.0.34
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE
 - Project: Future AI / Palang Footprint — HAIF
 - Canonical queue: this file only
-- Current checkpoint: [CURRENT-114](PALANG-0.0-CURRENT-20261107-114-GRAPH-WIDE-CONTINUITY.md)
-- Current point: [POINT-0/063 (0+)](GPT6-RAHM-USER-POINT-0-20261107-063-GRAPH-WIDE-CONTINUITY-AND-ANCHORING.md)
+- Current checkpoint: [CURRENT-115](PALANG-0.0-CURRENT-20261107-115-DAILY-NEWS-CADENCE.md)
+- Current point: [POINT-0/064 (0+)](GPT6-RAHM-USER-POINT-0-20261107-064-DAILY-NEWS-CADENCE-AND-24H-CONTINUITY.md)
 - Living mother: [سند مرجع مادر مدل اولیه](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 - Package contract: [HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md](../../../prototype/haif-gpt6-starter/HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md)
 - Canonical ZIP filename: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`
@@ -306,3 +306,13 @@ The previous blob at this path began with the Integration Queue README title and
 - Root registration UTC 2026-11-07T18:13:22Z / Tehran 2026-11-07T21:43:22+03:30; commit 7b55de39c19691a28ae50406e50ee6ddbcd3c4fe. User-message time UNKNOWN / UNVERIFIED.
 - New work lanes: G01–G06 full graph/link/identity/parent reconciliation; T01–T04 UTC-first provenance; H01–H05 fresh-session, clean-host and independent-host recovery.
 - Keep every unrun test OPEN / NOT RUN. Continue all existing package, exact-SHA, RAHM, runtime, historical graph, CURRENT-065/CURRENT-066, overlay manifest, Issues #20/#21, Buffer/Persistent Memory and Dropbox tasks. No NEXT-052.
+
+
+## Latest continuation — POINT-0/064 (0+) / CURRENT-115 / EVT-0256
+- New root: [POINT-0/064](GPT6-RAHM-USER-POINT-0-20261107-064-DAILY-NEWS-CADENCE-AND-24H-CONTINUITY.md).
+- Chain: [IN-103](PALANG-0.0-IN-20261107-103-DAILY-NEWS-CADENCE.md) + [OUT-102](PALANG-0.0-OUT-20261107-102-DAILY-NEWS-CADENCE.md) → [EVT-0256](../../architecture/BEHAVIOR-TRACE/EVT-0256-POINT-064-DAILY-NEWS-CADENCE-2026-11-07.md) → [TIME-BINDING-EVT-0256](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0256-DAILY-NEWS-CADENCE-2026-11-07.md) → [CURRENT-115](PALANG-0.0-CURRENT-20261107-115-DAILY-NEWS-CADENCE.md).
+- Parent: POINT-0/063 (0+) → CURRENT-114; preserve all earlier roots and graph branches.
+- Automation configuration: existing daily 07:00 task updated for exact previous-24-hour coverage; new daily 23:00 task created for same-day 07:00–23:00. Both enabled and dashboard-read-back verified. 11:00/15:00 remain manual.
+- Tests N01–N03 have configuration-level evidence; N04–N08 require actual run receipts and remain OPEN / NOT RUN.
+- Root commit 627e178322e23d26e54bf3dc1b852351bd5f8f0f; UTC 2026-11-07T18:28:57Z / Tehran 2026-11-07T21:58:57+03:30.
+- Continue all prior NEXT-051 lanes; no NEXT-052.
