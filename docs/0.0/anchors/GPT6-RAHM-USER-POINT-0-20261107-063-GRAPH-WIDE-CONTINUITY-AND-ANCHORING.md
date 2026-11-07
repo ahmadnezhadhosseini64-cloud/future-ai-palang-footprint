@@ -99,3 +99,30 @@ Repository, Library, Buffer, Persistent Memory, Dropbox, automation, runtime hos
 ## 7. Historical integrity
 
 POINT-0/063 is additive. It does not replace POINT-0/062, POINT-0/061 or any older root; it does not resolve historical collisions by itself; it does not close NEXT-051; it does not create NEXT-052; and it does not claim that the independent host, persistent memory, Dropbox or background runtime has passed.
+
+
+## 8. Navigation and graph edges — canonical paths
+
+### Parent and historical roots
+- Parent: [POINT-0/062 (0+)](GPT6-RAHM-USER-POINT-0-20261107-062-LIVE-NEWS-CONTINUITY-TEST.md).
+- Earlier root: [POINT-0/061 (0+)](GPT6-RAHM-USER-POINT-0-20261030-061-ARCHITECTURE-GAP-RECONCILIATION.md).
+- Prior checkpoint: [CURRENT-113](PALANG-0.0-CURRENT-20261107-113-LIVE-NEWS-CONTINUITY-TEST.md).
+
+### Current chain
+- [IN-102](PALANG-0.0-IN-20261107-102-GRAPH-WIDE-CONTINUITY.md) + [OUT-101](PALANG-0.0-OUT-20261107-101-GRAPH-WIDE-CONTINUITY.md).
+- [EVT-0255](../../architecture/BEHAVIOR-TRACE/EVT-0255-POINT-063-GRAPH-WIDE-CONTINUITY-2026-11-07.md) / [TIME-BINDING-EVT-0255](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0255-GRAPH-WIDE-CONTINUITY-2026-11-07.md).
+- [CURRENT-114](PALANG-0.0-CURRENT-20261107-114-GRAPH-WIDE-CONTINUITY.md) → sole queue [NEXT-051](PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+
+### Central registries and architecture
+- [0.0 central registry](../README.md).
+- [Reference Index](../../REFERENCE_INDEX.md).
+- [Behavior Trace index](../../architecture/BEHAVIOR-TRACE/README.md).
+- [Integration Queue index](../../architecture/INTEGRATION-QUEUE/README.md).
+- [Living mother reference](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md).
+
+### Recovery and export
+- [RAHM export manifest](../../portable/RAHM/EXPORT_MANIFEST.json).
+- [Independent-host recovery protocol](../../architecture/مدل%20اولیه%20AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md).
+- [Starter package recovery protocol](../../../prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md).
+
+These links establish the current navigable edges. They do not claim that every historical node, manifest entry or semantic parent edge has already passed the full graph audit; that reconciliation remains OPEN under NEXT-051.
