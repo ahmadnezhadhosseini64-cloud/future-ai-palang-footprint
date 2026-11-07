@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-11-07 — POINT-0/063 (0+) registered; CURRENT-114; sole active queue NEXT-051; living master v1.7.56 and new root chain READ-BACK VERIFIED; exact-final-SHA audit/conformance and external-host acceptance remain OPEN. Root commit 7b55de39c19691a28ae50406e50ee6ddbcd3c4fe at UTC 2026-11-07T18:13:22Z / Tehran 2026-11-07T21:43:22+03:30. IN-102 / OUT-101 / EVT-0255 / TIME-BINDING-EVT-0255 / CURRENT-114 registered. POINT-0/062 and POINT-0/061 history preserved; graph-wide reconciliation, runtime and independent-host gates remain OPEN.
+**Last Updated:** 2026-11-07 — POINT-0/064 (0+) registered; CURRENT-115; sole active queue NEXT-051; living master v1.7.57; daily 07:00 24-hour and 23:00 same-day news automations enabled and dashboard-read-back verified; runtime tests, exact-final-SHA audit/conformance and external-host acceptance remain OPEN. Root commit 7b55de39c19691a28ae50406e50ee6ddbcd3c4fe at UTC 2026-11-07T18:13:22Z / Tehran 2026-11-07T21:43:22+03:30. IN-102 / OUT-101 / EVT-0255 / TIME-BINDING-EVT-0255 / CURRENT-114 registered. POINT-0/062 and POINT-0/061 history preserved; graph-wide reconciliation, runtime and independent-host gates remain OPEN.
 
 ## Canonical References
 
@@ -2337,3 +2337,12 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - Parent/history: POINT-0/062 (0+) → POINT-0/061 and all earlier roots remain preserved; see the 0.0 registry and NEXT-051 for graph reconciliation.
 - Root commit: 7b55de39c19691a28ae50406e50ee6ddbcd3c4fe; UTC 2026-11-07T18:13:22Z; Asia/Tehran 2026-11-07T21:43:22+03:30. User-message time UNKNOWN / UNVERIFIED.
 - Status: root and chain files registered; central-index/mother/queue integration undergoing read-back. G01–G06, T01–T04, H01–H05 OPEN / NOT RUN. NEXT-051 remains the sole active queue; no NEXT-052.
+
+
+## Latest user-turn root — POINT-0/064 (0+) — daily news cadence
+- [POINT-0/064](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261107-064-DAILY-NEWS-CADENCE-AND-24H-CONTINUITY.md).
+- Chain: [IN-103](0.0/anchors/PALANG-0.0-IN-20261107-103-DAILY-NEWS-CADENCE.md) + [OUT-102](0.0/anchors/PALANG-0.0-OUT-20261107-102-DAILY-NEWS-CADENCE.md) → [EVT-0256](architecture/BEHAVIOR-TRACE/EVT-0256-POINT-064-DAILY-NEWS-CADENCE-2026-11-07.md) → [TIME-BINDING-EVT-0256](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0256-DAILY-NEWS-CADENCE-2026-11-07.md) → [CURRENT-115](0.0/anchors/PALANG-0.0-CURRENT-20261107-115-DAILY-NEWS-CADENCE.md) → existing [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Parent: POINT-0/063 (0+) → CURRENT-114; older graph remains preserved.
+- Automation: 07:00 daily 24-hour rolling window; 23:00 daily same-day 07:00–23:00; 11:00/15:00 manual only.
+- Root commit 627e178322e23d26e54bf3dc1b852351bd5f8f0f; UTC 2026-11-07T18:28:57Z / Tehran 2026-11-07T21:58:57+03:30. User-message time UNKNOWN / UNVERIFIED.
+- Both automation configurations are enabled and dashboard-read-back verified; actual scheduled-run delivery/content tests N04–N08 remain OPEN / NOT RUN. No NEXT-052.
