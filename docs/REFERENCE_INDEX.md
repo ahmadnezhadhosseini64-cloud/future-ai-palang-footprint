@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-11-06 — EVT-0251 live mirror synchronization recheck. Root POINT-0/061, checkpoint CURRENT-112, active queue NEXT-051, living master v1.7.53. Audit 42172829315 and Portable RAHM Conformance 42172828710 passed on exact event SHA 88d1d368e854da5e9f6f1963419778b7eccb289f; Evidence Gate 42172828774 advanced main to 1234599754401221891592d232436c8810018ef0, which remains NOT VERIFIED by paired full tests.
+**Last Updated:** 2026-11-07 — EVT-0253 live mirror synchronization recheck. Root POINT-0/061, checkpoint CURRENT-112, active queue NEXT-051, living master v1.7.54. Source/Library v7 normalized content and semantic fields match; exact equality FALSE by one additional terminal LF; no Library rewrite. Living Architecture Audit 42289713783 passed on run-start main SHA ca715af1d2dca3457c7d6d096bcb88bfccadb7b2; Portable RAHM Conformance on that exact SHA was not found.
 
 ## Canonical References
 
@@ -2315,3 +2315,11 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - Result: SUCCESS; job `evidence-gate` completed successfully.
 - Log confirms the destination-first regression assertions executed and printed `Canonical source-routing regression contract: VERIFIED`.
 - Scope: repository policy-presence/linkage regression only. It does not prove live AI tool-selection behavior or independent-host recovery.
+
+## EVT-0253 — live mirror synchronization recheck — 2026-11-07
+
+- Event: `docs/architecture/BEHAVIOR-TRACE/EVT-0253-LIVE-MIRROR-SYNC-RECHECK-2026-11-07.md`; time binding: `docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0253-LIVE-MIRROR-SYNC-2026-11-07.md`.
+- Stable ID: `PALANG-EVT-0253-LIVE-MIRROR-SYNC-2026-11-07`; Production ID: `HAIF-EVT-0253`; Version 1.0.0.
+- Run-start main `ca715af1d2dca3457c7d6d096bcb88bfccadb7b2`; latest user root POINT-0/061; checkpoint CURRENT-112; sole active queue NEXT-051. No NEXT-052.
+- Canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10`, 10,479 chars; Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, version 7, 10,480 chars. One additional terminal LF in Library; normalized equality and semantic fields MATCH; exact equality FALSE. No source/Library write.
+- Living Architecture Audit 42289713783 passed on exact run-start SHA. Portable RAHM Conformance was not found on that exact SHA. Issues #20/#21 and CURRENT-065/CURRENT-066 remain OPEN; external independent-host recovery NOT RUN.

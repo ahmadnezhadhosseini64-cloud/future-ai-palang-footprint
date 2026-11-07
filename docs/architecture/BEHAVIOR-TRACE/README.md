@@ -1,8 +1,8 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.23
-- Date: 2026-11-06
+- Version: 1.0.24
+- Date: 2026-11-07
 - Project: Future AI / Palang Footprint / HAIF
 
 ## مسیرهای بازیابی
@@ -1150,3 +1150,12 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - [EVT-0252](./EVT-0252-CANONICAL-SOURCE-ROUTING-AND-READBACK-RECOVERY-2026-11-06.md) records the Library-vs-GitHub source-routing error, direct canonical-path recovery, repository guide discovery and evidence boundaries.
 - Derived lesson: [LAL-20261106-001](../ARCHITECTURE-LESSONS/lessons/LAL-20261106-001-CANONICAL-SOURCE-ROUTING-AND-READBACK-RECOVERY.md).
 - No new user root; preserve POINT-0/061 → CURRENT-112 → NEXT-051. Repository read-back verified; runtime enforcement and independent-host retrieval remain open.
+
+## EVT-0253 — live mirror synchronization recheck — 2026-11-07
+
+- [EVT-0253](./EVT-0253-LIVE-MIRROR-SYNC-RECHECK-2026-11-07.md) / [TIME-BINDING-EVT-0253](./TIME-BINDING-EVT-0253-LIVE-MIRROR-SYNC-2026-11-07.md).
+- Mirror-only event; root/checkpoint/sole queue remain POINT-0/061 → CURRENT-112 → NEXT-051. No NEXT-052.
+- Canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, version 7 (10,480 chars). Normalized content/semantic fields MATCH; exact equality FALSE by one extra terminal LF. No source or Library write.
+- Living Architecture Audit 42289713783 SUCCESS on exact run-start main SHA `ca715af1d2dca3457c7d6d096bcb88bfccadb7b2`. No Portable RAHM Conformance run found on that exact SHA; latest prior run 42285693526 tested parent `918d4de4474cc0e4559858a46cd4feb5b30ce36a`.
+- CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; Issues #20/#21 OPEN; NEXT-051 forensic archive OPEN / NOT RECOVERED; BOART-FOLLOWUP-01 ACTIVE.
+- Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.

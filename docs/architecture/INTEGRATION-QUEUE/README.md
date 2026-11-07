@@ -3,13 +3,13 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.10.27
+- Version: 1.10.28
 - Date: 2026-11-06
 - Exact Time: EVT-0247 initial event commit UTC `2026-11-04T06:23:22Z` / Tehran `2026-11-04T09:53:22+03:30`; the time-binding file's own final-change time is read separately from its Git commit metadata.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: ACTIVE / LIVING — latest user-turn root POINT-0/061; current checkpoint CURRENT-112; sole active queue NEXT-051; living master v1.7.53. EVT-0251 is the latest mirror-only event. Audit 42172829315 and Portable RAHM Conformance 42172828710 both passed on exact event SHA 88d1d368e854da5e9f6f1963419778b7eccb289f. Evidence Gate 42172828774 advanced main to 1234599754401221891592d232436c8810018ef0; that follow-up head has no full audit/conformance receipt and remains NOT VERIFIED. CURRENT-065/CURRENT-066, overlay-manifest lineage, Issues #20/#21, NEXT-051 forensic archive and historic graph/identity/parent/time reconciliation remain OPEN.
+- Status: ACTIVE / LIVING — latest user-turn root POINT-0/061; current checkpoint CURRENT-112; sole active queue NEXT-051; living master v1.7.54. EVT-0253 is the latest mirror-only event. Source/Library v7 normalized content and semantic fields match; exact equality FALSE by one terminal LF; no Library rewrite. Living Architecture Audit 42289713783 passed on exact run-start main SHA ca715af1d2dca3457c7d6d096bcb88bfccadb7b2; Portable RAHM Conformance on that exact SHA was not found. CURRENT-065/CURRENT-066, overlay-manifest lineage, Issues #20/#21, NEXT-051 forensic archive and historic graph/identity/parent/time reconciliation remain OPEN.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
@@ -2607,3 +2607,12 @@ Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-11
 - Result: SUCCESS; job `evidence-gate` completed successfully.
 - Log confirms the destination-first regression assertions executed and printed `Canonical source-routing regression contract: VERIFIED`.
 - Scope: repository policy-presence/linkage regression only. It does not prove live AI tool-selection behavior or independent-host recovery.
+
+## EVT-0253 mirror synchronization and exact-SHA evidence — 2026-11-07
+
+- [EVT-0253](../BEHAVIOR-TRACE/EVT-0253-LIVE-MIRROR-SYNC-RECHECK-2026-11-07.md) / [TIME-BINDING-EVT-0253](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0253-LIVE-MIRROR-SYNC-2026-11-07.md). Mirror-only; root POINT-0/061, checkpoint CURRENT-112, sole active queue NEXT-051. No NEXT-052.
+- Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library v7 10,480 chars = source plus one terminal LF; normalized content and semantic fields match, exact equality FALSE; no source or Library write.
+- Living Architecture Audit 42289713783 SUCCESS on exact run-start main `ca715af1d2dca3457c7d6d096bcb88bfccadb7b2`; job log confirms checkout and GITHUB_SHA. No Portable RAHM Conformance run found on that SHA; latest prior conformance 42285693526 was on parent `918d4de4474cc0e4559858a46cd4feb5b30ce36a`.
+- CPREL transfer/evidence 42289714115 / 42289713915 and Cross-Layer Integrity Gate 42289713949 passed on run SHA `ca715af1d2dca3457c7d6d096bcb88bfccadb7b2`; CI-to-CI evidence does not establish external-host recovery.
+- CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / winner_selected=false. Issues #20/#21 OPEN. NEXT-051 forensic archive OPEN / NOT RECOVERED. BOART-FOLLOWUP-01 ACTIVE. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN.
+- Next: full Portable RAHM Conformance on the exact post-registration main SHA; if Evidence Gate moves main, audit the new head separately.
