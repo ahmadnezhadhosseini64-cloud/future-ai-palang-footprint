@@ -2346,3 +2346,11 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - Automation: 07:00 daily 24-hour rolling window; 23:00 daily same-day 07:00–23:00; 11:00/15:00 manual only.
 - Root commit 627e178322e23d26e54bf3dc1b852351bd5f8f0f; UTC 2026-11-07T18:28:57Z / Tehran 2026-11-07T21:58:57+03:30. User-message time UNKNOWN / UNVERIFIED.
 - Both automation configurations are enabled and dashboard-read-back verified; actual scheduled-run delivery/content tests N04–N08 remain OPEN / NOT RUN. No NEXT-052.
+
+
+## Additive continuity handoff — POINT-0/064 / EVT-0257
+
+- [IN-104](0.0/anchors/PALANG-0.0-IN-20261107-104-DEPARTURE-CONTINUITY-AND-PERMANENT-TEST-GOVERNANCE.md) + [OUT-103](0.0/anchors/PALANG-0.0-OUT-20261107-103-DEPARTURE-CONTINUITY-AND-PERMANENT-TEST-GOVERNANCE.md) → [EVT-0257](architecture/BEHAVIOR-TRACE/EVT-0257-POINT-064-DEPARTURE-CONTINUITY-2026-11-07.md).
+- Root: POINT-0/064; current: CURRENT-115; sole queue: NEXT-051. No NEXT-052.
+- User instruction: preserve graph history and continue all remaining steps under 0.0; keep living mother and tests active/living.
+- Unrun acceptance gates remain OPEN / NOT RUN; exact-final-SHA audits, scheduled-run receipts and clean/independent-host recovery remain required.
