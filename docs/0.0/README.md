@@ -1,5 +1,11 @@
 # پوشهٔ ۰.۰ — دفتر نقاط ادامهٔ پروژه
 
+## تازه‌ترین ریشه و زنجیرهٔ سراسری — POINT-0/063 (0+) → CURRENT-114
+
+[POINT-0/063 (0+)](anchors/GPT6-RAHM-USER-POINT-0-20261107-063-GRAPH-WIDE-CONTINUITY-AND-ANCHORING.md) → [IN-102](anchors/PALANG-0.0-IN-20261107-102-GRAPH-WIDE-CONTINUITY.md) + [OUT-101](anchors/PALANG-0.0-OUT-20261107-101-GRAPH-WIDE-CONTINUITY.md) → [EVT-0255](../architecture/BEHAVIOR-TRACE/EVT-0255-POINT-063-GRAPH-WIDE-CONTINUITY-2026-11-07.md) → [TIME-BINDING-EVT-0255](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0255-GRAPH-WIDE-CONTINUITY-2026-11-07.md) → [CURRENT-114](anchors/PALANG-0.0-CURRENT-20261107-114-GRAPH-WIDE-CONTINUITY.md) → [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+
+این ریشهٔ تازه، نقطهٔ ۰ و ۰+ این نوبت است و به POINT-0/062، POINT-0/061 و گراف تاریخی از طریق دفتر مرکزی، نمایه‌ها، سند مادر و صف یگانه متصل می‌شود. اتصال زنجیرهٔ جاری به معنی تکمیل ممیزی تمام گراف نیست؛ تعارض‌ها، شاخه‌های مبهم و گیت‌های باز حفظ می‌شوند. زمان ثبت ریشه UTC `2026-11-07T18:13:22Z` و معادل تهران `2026-11-07T21:43:22+03:30` بر اساس commit `7b55de39c19691a28ae50406e50ee6ddbcd3c4fe` است. زمان پیام کاربر UNKNOWN / UNVERIFIED می‌ماند. NEXT-051 تنها صف فعال است؛ NEXT-052 ساخته نشده است. آزمون‌های G01–G06، T01–T04 و H01–H05 باز می‌مانند تا رسید واقعی ثبت شود.
+
 ## تازه‌ترین زنجیره — POINT-0/062 (0+) → CURRENT-113
 
 [POINT-0/062 (0+)](anchors/GPT6-RAHM-USER-POINT-0-20261107-062-LIVE-NEWS-CONTINUITY-TEST.md) → [IN-101](anchors/PALANG-0.0-IN-20261107-101-LIVE-NEWS-CONTINUITY-TEST.md) → [OUT-100](anchors/PALANG-0.0-OUT-20261107-100-LIVE-NEWS-CONTINUITY-TEST.md) → [EVT-0254](../architecture/BEHAVIOR-TRACE/EVT-0254-POINT-062-LIVE-NEWS-CONTINUITY-TEST-2026-11-07.md) → [CURRENT-113](anchors/PALANG-0.0-CURRENT-20261107-113-LIVE-NEWS-CONTINUITY-TEST.md) → [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
