@@ -3,13 +3,13 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.10.28
-- Date: 2026-11-06
+- Version: 1.10.29
+- Date: 2026-11-07
 - Exact Time: EVT-0247 initial event commit UTC `2026-11-04T06:23:22Z` / Tehran `2026-11-04T09:53:22+03:30`; the time-binding file's own final-change time is read separately from its Git commit metadata.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: ACTIVE / LIVING — latest user-turn root POINT-0/061; current checkpoint CURRENT-112; sole active queue NEXT-051; living master v1.7.54. EVT-0253 is the latest mirror-only event. Source/Library v7 normalized content and semantic fields match; exact equality FALSE by one terminal LF; no Library rewrite. Living Architecture Audit 42289713783 passed on exact run-start main SHA ca715af1d2dca3457c7d6d096bcb88bfccadb7b2; Portable RAHM Conformance on that exact SHA was not found. CURRENT-065/CURRENT-066, overlay-manifest lineage, Issues #20/#21, NEXT-051 forensic archive and historic graph/identity/parent/time reconciliation remain OPEN.
+- Status: ACTIVE / LIVING — latest user-turn root POINT-0/062 (0+); current checkpoint CURRENT-113; sole active queue NEXT-051; living master update v1.7.55 pending read-back. EVT-0253 is the latest mirror-only event. Source/Library v7 normalized content and semantic fields match; exact equality FALSE by one terminal LF; no Library rewrite. Living Architecture Audit 42289713783 passed on exact run-start main SHA ca715af1d2dca3457c7d6d096bcb88bfccadb7b2; Portable RAHM Conformance on that exact SHA was not found. CURRENT-065/CURRENT-066, overlay-manifest lineage, Issues #20/#21, NEXT-051 forensic archive and historic graph/identity/parent/time reconciliation remain OPEN.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
@@ -2616,3 +2616,11 @@ Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-11
 - CPREL transfer/evidence 42289714115 / 42289713915 and Cross-Layer Integrity Gate 42289713949 passed on run SHA `ca715af1d2dca3457c7d6d096bcb88bfccadb7b2`; CI-to-CI evidence does not establish external-host recovery.
 - CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / winner_selected=false. Issues #20/#21 OPEN. NEXT-051 forensic archive OPEN / NOT RECOVERED. BOART-FOLLOWUP-01 ACTIVE. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN.
 - Next: full Portable RAHM Conformance on the exact post-registration main SHA; if Evidence Gate moves main, audit the new head separately.
+
+
+## POINT-0/062 (0+) — live news continuity test
+- Root: [POINT-0/062](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261107-062-LIVE-NEWS-CONTINUITY-TEST.md).
+- Chain: IN-101 → OUT-100 → EVT-0254 → CURRENT-113 → existing NEXT-051. No NEXT-052.
+- Scope: preserve 07:00 Asia/Tehran scheduled report; 11:00 / 15:00 / 23:00 are manual update windows; «بروزرسانی خبر» at any time continues from the last actually delivered report/update. Full coverage and evidence rules are in POINT-0/062.
+- Status: OPEN / ACTIVE / EXECUTION REQUIRED. T01–T10 not yet run. Repository registration is not proof of scheduled delivery, persistent memory or independent-host recovery.
+- Next: finish read-back and master integration; verify the existing 07:00 automation; run incremental-update, arbitrary-time, missed-window and restart recovery tests; continue NEXT-051.
