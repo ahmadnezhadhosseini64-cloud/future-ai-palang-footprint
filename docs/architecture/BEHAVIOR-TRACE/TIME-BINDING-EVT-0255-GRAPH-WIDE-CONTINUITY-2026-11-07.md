@@ -10,6 +10,6 @@
 - Root registration time and user-message time are distinct; do not conflate them.
 - Last modified time: will be taken from the actual commit metadata of each later modification.
 - Last verified time: will be recorded only after successful fetch-back and match.
-- Status: TIME ANCHOR REGISTERED; final read-back verification pending.
+- Status: TIME ANCHOR REGISTERED / READ-BACK VERIFIED. Exact last-verification clock time is not exposed by the repository fetch receipt and remains UNKNOWN / UNVERIFIED.
 
 UTC is the permanent base. The Tehran value is the deterministic +03:30 conversion of the exact UTC commit timestamp; no guessed clock value is used.
