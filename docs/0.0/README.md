@@ -1,10 +1,10 @@
 # پوشهٔ ۰.۰ — دفتر نقاط ادامهٔ پروژه
 
-## تازه‌ترین زنجیره — POINT-0/061 → CURRENT-112
+## تازه‌ترین زنجیره — POINT-0/062 (0+) → CURRENT-113
 
-[POINT-0/061](anchors/GPT6-RAHM-USER-POINT-0-20261030-061-ARCHITECTURE-GAP-RECONCILIATION.md) → [IN-100](anchors/PALANG-0.0-IN-20261103-100-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [OUT-099](anchors/PALANG-0.0-OUT-20261103-099-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [EVT-0246](../architecture/BEHAVIOR-TRACE/EVT-0246-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03.md) → [CURRENT-112](anchors/PALANG-0.0-CURRENT-20261103-112-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+[POINT-0/062 (0+)](anchors/GPT6-RAHM-USER-POINT-0-20261107-062-LIVE-NEWS-CONTINUITY-TEST.md) → [IN-101](anchors/PALANG-0.0-IN-20261107-101-LIVE-NEWS-CONTINUITY-TEST.md) → [OUT-100](anchors/PALANG-0.0-OUT-20261107-100-LIVE-NEWS-CONTINUITY-TEST.md) → [EVT-0254](../architecture/BEHAVIOR-TRACE/EVT-0254-POINT-062-LIVE-NEWS-CONTINUITY-TEST-2026-11-07.md) → [CURRENT-113](anchors/PALANG-0.0-CURRENT-20261107-113-LIVE-NEWS-CONTINUITY-TEST.md) → [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 
-این زنجیره درخواست کاربر را به اجرای واقعی سند مادر و بستهٔ موجود متصل می‌کند. ثبت زنجیره به معنی ساخت ZIP جدید یا پذیرش میزبان نیست؛ این دو نیازمند رسید مستقل‌اند. تعارض دو ریشهٔ POINT-0/059 عمداً حل‌نشده باقی می‌ماند.
+این نقطه، آزمون زندهٔ تداوم دستورهای خبری و بازیابی بین نشست‌ها را ثبت می‌کند. 0+ برچسب برجستهٔ همین ریشهٔ تازه است؛ ریشه‌ها و زنجیره‌های قبلی حفظ می‌شوند. NEXT-051 همچنان تنها صف فعال است؛ NEXT-052 ساخته نشده است. آزمون‌های رفتاری، بازیابی نشست پاک و میزبان مستقل تا دریافت رسید واقعی OPEN / NOT RUN می‌مانند.
 
 ## زنجیرهٔ پیشین — POINT-0/060 → CURRENT-110
 
