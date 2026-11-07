@@ -1979,3 +1979,11 @@ The canonical chain is [POINT-0/032](./anchors/GPT6-RAHM-USER-POINT-0-20261026-0
 - Run-start main `ca715af1d2dca3457c7d6d096bcb88bfccadb7b2`; Living Architecture Audit 42289713783 SUCCESS on that exact SHA. No Portable RAHM Conformance run found on that SHA; latest prior run 42285693526 was on parent `918d4de4474cc0e4559858a46cd4feb5b30ce36a`.
 - CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; `winner_selected=false`. Issues #20/#21 remain OPEN; NEXT-051 forensic archive OPEN / NOT RECOVERED; BOART-FOLLOWUP-01 ACTIVE.
 - Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
+
+
+
+## Additive handoff under the current root — EVT-0257
+
+[POINT-0/064](anchors/GPT6-RAHM-USER-POINT-0-20261107-064-DAILY-NEWS-CADENCE-AND-24H-CONTINUITY.md) → [IN-104](anchors/PALANG-0.0-IN-20261107-104-DEPARTURE-CONTINUITY-AND-PERMANENT-TEST-GOVERNANCE.md) + [OUT-103](anchors/PALANG-0.0-OUT-20261107-103-DEPARTURE-CONTINUITY-AND-PERMANENT-TEST-GOVERNANCE.md) → [EVT-0257](../architecture/BEHAVIOR-TRACE/EVT-0257-POINT-064-DEPARTURE-CONTINUITY-2026-11-07.md) → [CURRENT-115](anchors/PALANG-0.0-CURRENT-20261107-115-DAILY-NEWS-CADENCE.md) → sole queue [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+
+این تحویل، دستور کاربر برای حفظ نقطهٔ جاری، اتصال تاریخچه، ادامهٔ همهٔ گام‌ها در ۰.۰ و زنده نگه‌داشتن سند مادر و آزمون‌ها را ثبت می‌کند. ریشهٔ جدید یا صف جدید ساخته نشده است. تمام آزمون‌های اجرا‌نشده OPEN / NOT RUN می‌مانند.
