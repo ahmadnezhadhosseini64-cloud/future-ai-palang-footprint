@@ -32,3 +32,6 @@ Each test remains OPEN / NOT RUN until a real, inspectable receipt is recorded. 
 ## Evidence boundaries
 
 Repository writes do not prove Buffer, Library, Persistent Memory, Dropbox, app automation, background monitoring or independent-host recovery. Do not claim those destinations or capabilities ACTIVE/VERIFIED without destination-specific evidence.
+
+## Child continuation pointer — POINT-0/063
+The next user-turn root is [POINT-0/063 (0+)](GPT6-RAHM-USER-POINT-0-20261107-063-GRAPH-WIDE-CONTINUITY-AND-ANCHORING.md), followed by [CURRENT-114](PALANG-0.0-CURRENT-20261107-114-GRAPH-WIDE-CONTINUITY.md) and the existing [NEXT-051](PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). CURRENT-113 remains the historical checkpoint for POINT-0/062; no prior state is overwritten.
