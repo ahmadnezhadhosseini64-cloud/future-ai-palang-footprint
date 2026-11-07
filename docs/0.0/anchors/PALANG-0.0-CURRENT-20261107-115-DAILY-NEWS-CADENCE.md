@@ -5,7 +5,7 @@
 - Parent: [POINT-0/063](GPT6-RAHM-USER-POINT-0-20261107-063-GRAPH-WIDE-CONTINUITY-AND-ANCHORING.md) → [CURRENT-114](PALANG-0.0-CURRENT-20261107-114-GRAPH-WIDE-CONTINUITY.md) → existing [NEXT-051](PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
 - Chain: POINT-0/064 → IN-103 + OUT-102 → EVT-0256 → TIME-BINDING-EVT-0256 → CURRENT-115 → NEXT-051
 - Version: 1.0.0
-- Status: OPEN / ACTIVE / REPOSITORY CHAIN READ-BACK VERIFIED / AUTOMATION CONFIGURATION VERIFIED / RUNTIME TESTS PENDING
+- Status: OPEN / ACTIVE / REPOSITORY CHAIN READ-BACK VERIFIED / HANDOFF REGISTERED / AUTOMATION CONFIGURATION VERIFIED / RUNTIME TESTS PENDING
 - Root commit: 627e178322e23d26e54bf3dc1b852351bd5f8f0f
 - UTC: 2026-11-07T18:28:57Z
 - Tehran: 2026-11-07T21:58:57+03:30
@@ -50,3 +50,14 @@ All runtime tests remain OPEN / NOT RUN until actual scheduled-run receipts and 
 5. Continue the full existing NEXT-051 work: package identity/exact-SHA, RAHM reconstruction, graph triage, runtime return, persistent-memory/Buffer, Dropbox, Issues #20/#21, clean-host and independent-host recovery.
 
 Repository registration is not proof of future scheduled delivery or runtime behavior. Keep every unrun test OPEN.
+
+
+
+## Additive handoff — EVT-0257
+
+- [IN-104](PALANG-0.0-IN-20261107-104-DEPARTURE-CONTINUITY-AND-PERMANENT-TEST-GOVERNANCE.md) + [OUT-103](PALANG-0.0-OUT-20261107-103-DEPARTURE-CONTINUITY-AND-PERMANENT-TEST-GOVERNANCE.md) → [EVT-0257](../../architecture/BEHAVIOR-TRACE/EVT-0257-POINT-064-DEPARTURE-CONTINUITY-2026-11-07.md).
+- Root remains POINT-0/064; current checkpoint remains CURRENT-115; sole active queue remains NEXT-051. No new root or NEXT-052.
+- User departure/handoff instruction: preserve all historical graph connections; continue all work under 0.0; keep mother, indices and tests active/living.
+- Next execution: finish cross-file read-back, exact-final-SHA audits/conformance, run scheduled-report acceptance after actual occurrences, and continue all NEXT-051 lanes.
+- Tests N04–N08, G01–G06, T01–T04, H01–H05 and all other unrun acceptance gates remain OPEN / NOT RUN.
+- No claim of background execution, unattended repository mutation, or independent-host recovery is made.
