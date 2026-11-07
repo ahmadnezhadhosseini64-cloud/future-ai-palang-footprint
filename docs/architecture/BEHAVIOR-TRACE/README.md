@@ -1,7 +1,7 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.27
+- Version: 1.0.28
 - Date: 2026-11-07
 - Project: Future AI / Palang Footprint / HAIF
 
@@ -1183,3 +1183,11 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Morning automation: daily 07:00 Asia/Tehran; coverage previous day 07:00 → current day 07:00. Night automation: daily 23:00; coverage same day 07:00–23:00. 11:00/15:00 remain manual.
 - Both automation configurations enabled and dashboard-read-back verified; future execution/delivery/content tests remain OPEN / NOT RUN.
 - Root commit 627e178322e23d26e54bf3dc1b852351bd5f8f0f; UTC 2026-11-07T18:28:57Z / Tehran 2026-11-07T21:58:57+03:30. User-message time UNKNOWN / UNVERIFIED.
+
+
+## Additive user handoff — EVT-0257 (2026-11-07)
+
+- [EVT-0257 — تحویل تداوم نقطهٔ ۰۶۴ و حاکمیت دائمی آزمون‌ها](./EVT-0257-POINT-064-DEPARTURE-CONTINUITY-2026-11-07.md).
+- [IN-104](../../0.0/anchors/PALANG-0.0-IN-20261107-104-DEPARTURE-CONTINUITY-AND-PERMANENT-TEST-GOVERNANCE.md) + [OUT-103](../../0.0/anchors/PALANG-0.0-OUT-20261107-103-DEPARTURE-CONTINUITY-AND-PERMANENT-TEST-GOVERNANCE.md).
+- Parent root POINT-0/064; checkpoint CURRENT-115; sole queue NEXT-051. This is an additive child event, not a new root.
+- User requested all next steps remain under 0.0 and all relevant tests/reference documents remain active and living. Unrun tests remain OPEN / NOT RUN.
