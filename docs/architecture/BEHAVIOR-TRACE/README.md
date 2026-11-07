@@ -1191,3 +1191,5 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - [IN-104](../../0.0/anchors/PALANG-0.0-IN-20261107-104-DEPARTURE-CONTINUITY-AND-PERMANENT-TEST-GOVERNANCE.md) + [OUT-103](../../0.0/anchors/PALANG-0.0-OUT-20261107-103-DEPARTURE-CONTINUITY-AND-PERMANENT-TEST-GOVERNANCE.md).
 - Parent root POINT-0/064; checkpoint CURRENT-115; sole queue NEXT-051. This is an additive child event, not a new root.
 - User requested all next steps remain under 0.0 and all relevant tests/reference documents remain active and living. Unrun tests remain OPEN / NOT RUN.
+
+- زمان‌بندی رویداد [EVT-0257](./EVT-0257-POINT-064-DEPARTURE-CONTINUITY-2026-11-07.md): [TIME-BINDING-EVT-0257](./TIME-BINDING-EVT-0257-DEPARTURE-CONTINUITY-2026-11-07.md) — UTC 2026-11-07T18:36:52Z / Tehran 2026-11-07T22:06:52+03:30; زمان پیام UNKNOWN / UNVERIFIED.
