@@ -1,7 +1,7 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.24
+- Version: 1.0.25
 - Date: 2026-11-07
 - Project: Future AI / Palang Footprint / HAIF
 
@@ -1159,3 +1159,10 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Living Architecture Audit 42289713783 SUCCESS on exact run-start main SHA `ca715af1d2dca3457c7d6d096bcb88bfccadb7b2`. No Portable RAHM Conformance run found on that exact SHA; latest prior run 42285693526 tested parent `918d4de4474cc0e4559858a46cd4feb5b30ce36a`.
 - CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; Issues #20/#21 OPEN; NEXT-051 forensic archive OPEN / NOT RECOVERED; BOART-FOLLOWUP-01 ACTIVE.
 - Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
+
+
+## EVT-0254 — POINT-0/062 live news continuity test (2026-11-07)
+- [POINT-0/062 (0+)](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261107-062-LIVE-NEWS-CONTINUITY-TEST.md).
+- [IN-101](../../0.0/anchors/PALANG-0.0-IN-20261107-101-LIVE-NEWS-CONTINUITY-TEST.md) / [OUT-100](../../0.0/anchors/PALANG-0.0-OUT-20261107-100-LIVE-NEWS-CONTINUITY-TEST.md) / [CURRENT-113](../../0.0/anchors/PALANG-0.0-CURRENT-20261107-113-LIVE-NEWS-CONTINUITY-TEST.md).
+- Event: user-defined daily and incremental news workflow becomes an HAIF continuity/recovery acceptance test. Exact user-message time UNKNOWN / UNVERIFIED; use actual Git commit metadata for repository registration time.
+- T01–T10 OPEN / NOT RUN. Preserve all prior event identities and continue sole active NEXT-051.
