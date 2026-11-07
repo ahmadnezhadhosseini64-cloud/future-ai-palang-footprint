@@ -8,7 +8,7 @@
 - Prior event: [EVT-0256](./EVT-0256-POINT-064-DAILY-NEWS-CADENCE-2026-11-07.md)
 - Current checkpoint: [CURRENT-115](../../0.0/anchors/PALANG-0.0-CURRENT-20261107-115-DAILY-NEWS-CADENCE.md)
 - Sole active queue: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
-- Status: REGISTERED / APPEND-ONLY; repository cross-file read-back pending.
+- Status: REGISTERED / APPEND-ONLY / EVENT READ-BACK VERIFIED; cross-file reconciliation in progress.
 
 ## Event summary
 
