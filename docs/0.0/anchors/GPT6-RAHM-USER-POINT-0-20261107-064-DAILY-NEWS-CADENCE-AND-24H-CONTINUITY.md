@@ -9,7 +9,7 @@
 - User-message timestamp: UNKNOWN / UNVERIFIED.
 - Repository registration commit: `627e178322e23d26e54bf3dc1b852351bd5f8f0f`.
 - Repository registration UTC: `2026-11-07T18:28:57Z`; Asia/Tehran: `2026-11-07T21:58:57+03:30` (exact commit metadata; UTC is permanent base).
-- Status: ROOT REGISTERED; automation configuration dashboard-read-back verified; cross-file repository read-back and runtime acceptance tracked separately.
+- Status: ROOT REGISTERED / CROSS-FILE REPOSITORY READ-BACK VERIFIED; automation configuration dashboard-read-back verified; scheduled runtime acceptance OPEN / NOT RUN.
 
 ## 1. User intent
 
