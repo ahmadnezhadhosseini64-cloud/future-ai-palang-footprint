@@ -7,9 +7,9 @@
 
 ## Event registration and exact Git binding
 
-- Event file final-change commit UTC: PENDING — populate only after Git commit metadata is independently fetched.
-- Event file final-change commit Tehran: PENDING — derive from the same verified UTC instant.
-- Event registration commit SHA: PENDING — populate from GitHub commit read-back.
+- Event file final-change commit UTC: `2026-11-07T05:59:58Z`.
+- Event file final-change commit Tehran: `2026-11-07T09:29:58+03:30`, derived from the same UTC instant.
+- Event registration commit SHA: `873615b8e44d16699e9f183e69f91764a25d62bb`.
 - Time-binding file's own final-change time is its Git commit metadata; it is not guessed or self-embedded.
 
 ## Run-start repository and mirror evidence
@@ -65,3 +65,16 @@ Living Architecture Audit job log confirms checkout of `ca715af1d2dca3457c7d6d09
 - Library metadata time: `2026-10-24T04:45:28.479773Z`; not a read/write operation timestamp.
 - Exact Library read-back operation time: UNKNOWN.
 - Exact automation operation time: UNKNOWN unless independently returned by the tool.
+
+## Post-registration Actions evidence — exact event commit
+
+- Event registration commit `873615b8e44d16699e9f183e69f91764a25d62bb` was independently fetched. Git commit UTC: `2026-11-07T05:59:58Z`; derived Tehran: `2026-11-07T09:29:58+03:30`.
+- Living Architecture Audit run `42345037760`: SUCCESS on exact tested SHA `873615b8e44d16699e9f183e69f91764a25d62bb`. Job log confirms checkout, `GITHUB_SHA`, and repository commit SHA.
+- Portable RAHM Conformance and Digest Evidence run `42345037774`: SUCCESS on exact tested SHA `873615b8e44d16699e9f183e69f91764a25d62bb`. Job log confirms checkout; schema conformance, exact-byte SHA-256 scan, portable package build, existing starter ZIP rebuild, download round-trip and extracted ZIP tests all passed.
+- CPREL Independent Runtime Transfer Harness `42345037741`, CPREL Independent Transfer Evidence `42345037804`, Cross-Layer Integrity Gate `42345037718`, Reconciliation Acceptance Test `42345037793`, Reconciliation Watchdog `42345037801`, Pending Registration Drain `42345037984`, Production Detection Safety Net `42345037719`, Automatic Final Registration Proof `42345037745`, and Palang Behavior Hunter Candidate Test Generation `42345037714` all completed SUCCESS on that same event SHA. CPREL evidence remains CI-to-CI, not external-host proof.
+- Evidence Gate run `42345037755`: SUCCESS on the same event SHA. It created follow-up main commit `9cd7d2a4bb99bb995491dbcedd949b60d3f0b3ab`, parent `873615b8e44d16699e9f183e69f91764a25d62bb`, at UTC `2026-11-07T06:00:07Z`; derived Tehran `2026-11-07T09:30:07+03:30`. Its only changed path is `evidence/evidence-gate-42345037755.txt`.
+- Current main after that follow-up: `9cd7d2a4bb99bb995491dbcedd949b60d3f0b3ab`. No Living Architecture Audit or Portable RAHM Conformance run was found on this new head. It remains `NOT VERIFIED` until both required workflows are tied to this exact SHA.
+
+## Current deterministic continuation
+
+Run the full Living Architecture Audit and Portable RAHM Conformance on the exact current main SHA `9cd7d2a4bb99bb995491dbcedd949b60d3f0b3ab`. If a subsequent Evidence Gate or other workflow advances main, that newer head remains `NOT VERIFIED` until separately audited. Continue only under NEXT-051; do not create NEXT-052 or resolve CURRENT-065/CURRENT-066 by inference.
