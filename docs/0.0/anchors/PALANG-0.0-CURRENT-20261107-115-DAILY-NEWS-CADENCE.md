@@ -4,7 +4,7 @@
 - Root: [POINT-0/064 (0+)](GPT6-RAHM-USER-POINT-0-20261107-064-DAILY-NEWS-CADENCE-AND-24H-CONTINUITY.md)
 - Parent: [POINT-0/063](GPT6-RAHM-USER-POINT-0-20261107-063-GRAPH-WIDE-CONTINUITY-AND-ANCHORING.md) → [CURRENT-114](PALANG-0.0-CURRENT-20261107-114-GRAPH-WIDE-CONTINUITY.md) → existing [NEXT-051](PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
 - Chain: POINT-0/064 → IN-103 + OUT-102 → EVT-0256 → TIME-BINDING-EVT-0256 → CURRENT-115 → NEXT-051
-- Version: 1.0.0
+- Version: 1.0.1
 - Status: OPEN / ACTIVE / REPOSITORY CHAIN READ-BACK VERIFIED / HANDOFF REGISTERED / AUTOMATION CONFIGURATION VERIFIED / RUNTIME TESTS PENDING
 - Root commit: 627e178322e23d26e54bf3dc1b852351bd5f8f0f
 - UTC: 2026-11-07T18:28:57Z
@@ -61,3 +61,12 @@ Repository registration is not proof of future scheduled delivery or runtime beh
 - Next execution: finish cross-file read-back, exact-final-SHA audits/conformance, run scheduled-report acceptance after actual occurrences, and continue all NEXT-051 lanes.
 - Tests N04–N08, G01–G06, T01–T04, H01–H05 and all other unrun acceptance gates remain OPEN / NOT RUN.
 - No claim of background execution, unattended repository mutation, or independent-host recovery is made.
+
+
+## Mirror-only event — EVT-0258 (2026-11-08)
+- [EVT-0258](../../architecture/BEHAVIOR-TRACE/EVT-0258-LIVE-MIRROR-SYNC-RECHECK-2026-11-08.md) / [TIME-BINDING-EVT-0258](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0258-LIVE-MIRROR-SYNC-2026-11-08.md).
+- Root remains POINT-0/064; this checkpoint remains CURRENT-115; sole active queue remains NEXT-051. No new root, IN/OUT pair, checkpoint identity or NEXT-052.
+- Latest mirror-only event is EVT-0258; latest user-turn event remains EVT-0257.
+- Canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, exact version 7 (10,480 chars). Normalized full content and semantic fields MATCH; exact equality FALSE by one additional terminal LF. No source or Library write; the supported `source_file_ref` route was not used because unchanged-source policy prohibits a rewrite in this case.
+- Latest retrieved full audit/conformance pair: Living Architecture Audit 42345139960 and Portable RAHM Conformance 42345140040 both SUCCESS on exact SHA `af0fdb89c2e357661a7a8703776174cf78016df9`; job logs independently confirm checkout / repository_commit_sha. Latest Evidence Gate 42402348230 succeeded on exact tested SHA `05471a4ea1a332eb8e125806da6ef2de09498e31` and created follow-up main `8050b99f9d53dc336b5681f0c2645611e15842ca`. Exact-current-main audit/conformance on that follow-up were NOT FOUND / NOT VERIFIED.
+- CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; `winner_selected=false`. Issues #20/#21 OPEN; NEXT-051 forensic archive OPEN / NOT RECOVERED; BOART-FOLLOWUP-01 ACTIVE. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
