@@ -2,11 +2,11 @@
 
 - Stable ID: HUMAN-AI-INTERACTION-BEHAVIOR-OBSERVATORY-2026-10-22-001
 - Production ID: HAIBO-HAIF-2026-10-22-001
-- Version: 1.0.15
+- Version: 1.0.16
 - Owner: احمد پلنگ / Ahmad Nezhadhosseini
 - Project: Future AI / Palang Footprint / HAIF
 - Canonical path: `docs/architecture/BEHAVIOR-OBSERVATORY/README.md`
-- Status: ACTIVE / LIVING in repository; EVT-0253 and its time binding are integrated. Source/Library v7 normalized content and semantic fields match; exact equality FALSE by one additional terminal LF; no Library rewrite. Living Architecture Audit 42289713783 passed on exact run-start main SHA ca715af1d2dca3457c7d6d096bcb88bfccadb7b2; Portable RAHM Conformance on that exact SHA was not found. External destination and host gates remain OPEN / NOT VERIFIED / NOT RUN.
+- Status: ACTIVE / LIVING in repository; EVT-0258 and its time binding are integrated. Source/Library v7 normalized content and semantic fields match; exact equality FALSE by one additional terminal LF; no Library rewrite. Latest full audit/conformance pair 42345139960 / 42345140040 passed on exact SHA af0fdb89c2e357661a7a8703776174cf78016df9; latest Evidence Gate 42402348230 succeeded on 05471a4ea1a332eb8e125806da6ef2de09498e31 and advanced main to 8050b99f9d53dc336b5681f0c2645611e15842ca. Exact-current-main audit/conformance remain NOT VERIFIED. External destination and host gates remain OPEN / NOT VERIFIED / NOT RUN.
 - Time rule: UTC is canonical; Asia/Tehran time is derived from the same UTC instant (+03:30 for this date). Unknown timestamps remain UNKNOWN, never guessed.
 - Independent anchor: `PALANG-BEHAVIOR-OBSERVATION-AND-RECOVERY-TEST-2026-10-22-001`
 - Related event: `EVT-0034`
@@ -346,3 +346,11 @@ Continue collecting observable interaction and evaluator behavior as evidence-ba
 - Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library v7 (10,480 chars), one extra terminal LF; normalized content/semantic match, exact equality FALSE; no Library write.
 - Root/checkpoint/queue remain POINT-0/061 → CURRENT-112 → NEXT-051. Preserve prior roots and EVT-0177 / EVT-0178 / EVT-0179 collision lineage. CURRENT-065/CURRENT-066 remains OPEN / AMBIGUOUS; Issues #20/#21 OPEN.
 - Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
+
+
+## EVT-0258 — live mirror synchronization recheck — 2026-11-08
+- [EVT-0258](../BEHAVIOR-TRACE/EVT-0258-LIVE-MIRROR-SYNC-RECHECK-2026-11-08.md) / [TIME-BINDING-EVT-0258](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0258-LIVE-MIRROR-SYNC-2026-11-08.md).
+- Root/checkpoint/queue remain POINT-0/064 → CURRENT-115 → NEXT-051. This is a mirror-only event; no new root or queue.
+- Canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, exact version 7 (10,480 chars). Normalized full content and semantic fields MATCH; exact equality FALSE by one additional terminal LF. No source or Library write; the supported `source_file_ref` route was not used because unchanged-source policy prohibits a rewrite in this case.
+- Latest retrieved full audit/conformance pair: Living Architecture Audit 42345139960 and Portable RAHM Conformance 42345140040 both SUCCESS on exact SHA `af0fdb89c2e357661a7a8703776174cf78016df9`; job logs independently confirm checkout / repository_commit_sha. Latest Evidence Gate 42402348230 succeeded on exact tested SHA `05471a4ea1a332eb8e125806da6ef2de09498e31` and created follow-up main `8050b99f9d53dc336b5681f0c2645611e15842ca`. Exact-current-main audit/conformance on that follow-up were NOT FOUND / NOT VERIFIED.
+- CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; `winner_selected=false`. Issues #20/#21 OPEN; NEXT-051 forensic archive OPEN / NOT RECOVERED; BOART-FOLLOWUP-01 ACTIVE. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
