@@ -2,7 +2,7 @@
 
 - Stable ID: G6IP-RAHM-NEXT-051-20261024
 - Production ID: G6IP-RAHM-NEXT-051-20261024
-- Version: 1.0.35
+- Version: 1.0.36
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE
 - Project: Future AI / Palang Footprint — HAIF
 - Canonical queue: this file only
@@ -328,3 +328,12 @@ The previous blob at this path began with the Integration Queue README title and
 - Maintain living mother, central 0.0 registry, Reference Index, Behavior Trace index, Integration Queue and package/recovery manifests with write/read-back/match evidence.
 - Next deterministic actions: cross-file read-back of EVT-0257 handoff; inspect actual 23:00/07:00 scheduled report receipts when available; run exact-SHA Living Architecture Audit and Portable RAHM Conformance; continue graph triage and independent-host recovery.
 - All unexecuted tests remain OPEN / NOT RUN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external-host recovery NOT RUN.
+
+
+## Latest mirror synchronization — EVT-0258 (2026-11-08)
+- [EVT-0258](../../architecture/BEHAVIOR-TRACE/EVT-0258-LIVE-MIRROR-SYNC-RECHECK-2026-11-08.md) / [TIME-BINDING-EVT-0258](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0258-LIVE-MIRROR-SYNC-2026-11-08.md).
+- Mirror-only under POINT-0/064 / CURRENT-115. NEXT-051 remains the sole active queue; no NEXT-052.
+- Canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, exact version 7 (10,480 chars). Normalized full content and semantic fields MATCH; exact equality FALSE by one additional terminal LF. No source or Library write; supported `source_file_ref` was not used because unchanged-source policy prohibits a rewrite in this case.
+- Latest full audit/conformance pair: Living Architecture Audit 42345139960 and Portable RAHM Conformance 42345140040 both SUCCESS on exact SHA `af0fdb89c2e357661a7a8703776174cf78016df9`. Latest Evidence Gate 42454843737 succeeded on exact tested SHA `07b3e6b0653c4a3299cfec3ed4f997db01f0a95f`; its evidence commit is not an audit or conformance result. Exact-current-main audit/conformance remain NOT VERIFIED.
+- CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; `winner_selected=false`. Issues #20/#21 OPEN; NEXT-051 forensic archive OPEN / NOT RECOVERED; BOART-FOLLOWUP-01 ACTIVE. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
+- Continue every existing package, exact-SHA, RAHM, runtime, historic source/rule census, identity/parent/time triage, pointer/overlay-manifest, Issue #20/#21 and independent-host lane.
