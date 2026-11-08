@@ -53,11 +53,58 @@
 
 ## Registration and integration ledger
 
-- EVT-0258 event commit: recorded above.
-- Time-binding file commit: read from Git metadata after registration and reported in the final execution receipt.
-- Subsequent index, queue, master and registry integration commits: record each actual commit SHA and UTC from Git metadata after each write/read-back.
-- Every changed file must be independently fetched after its write and compared with the exact intended content/blob.
-- Final main SHA and its exact-head audit/conformance status must be rediscovered after all integration writes. Any later Evidence Gate commit creates a newer unverified head until separately tested.
+### Event and initial time-binding registration
+
+- EVT-0258 event commit: `c577addfc32386dbbfd58d32efd8d4e4d6837665`; UTC `2026-11-08T06:25:49Z`; Tehran `2026-11-08T09:55:49+03:30`; blob `3209030945e5146c0f8f1e4edcf840769f186ded`; exact read-back PASS.
+- Initial time-binding registration commit: `f545108fb7448ca338e92f81adb1447f055b00e5`; UTC `2026-11-08T06:26:12Z`; Tehran `2026-11-08T09:56:12+03:30`; blob `e9836f5c1b325e93f5042e21cad1c2e5e88fcccf`; exact read-back PASS before this ledger expansion.
+
+### Cross-file integration commits and independent read-back
+
+| File | Commit SHA | Commit UTC | Read-back blob | Result |
+|---|---|---|---|---|
+| Behavior Trace Index v1.0.29 | `6780ad53346263f72383bc8af14516b4eb1a68ad` | `2026-11-08T06:27:43Z` | `b86004490274aa67fc2c134788383b4362d020d7` | EXACT |
+| Reference Index | `f61c7715df0436ed623f8991a445b28c58b8ecbf` | `2026-11-08T06:27:46Z` | `f00e3d217eacb0f066195f058259d4415f125961` | EXACT |
+| Integration Queue v1.10.33 | `07b3e6b0653c4a3299cfec3ed4f997db01f0a95f` | `2026-11-08T06:27:49Z` | `b4b60b2e5e4a5311300f54850853d13c807c5a29` | EXACT |
+| Behavior Observatory v1.0.16 | `daed51f4ec5006bf643b6ddd404111b38cced5b8` | `2026-11-08T06:27:52Z` | `5c7e00fc86cb90a8f69a828f8f0c6a48b30af877` | EXACT |
+| CURRENT-115 v1.0.1 | `f7c6dd69550d418b4dbf1761ebca55cf906c17fc` | `2026-11-08T06:27:55Z` | `982262d5e94c8c043f4411182cdf29ec5754494f` | EXACT |
+| NEXT-051 v1.0.36 | `75515603760aca0f9a2cf2fd732e5c43d7c5f043` | `2026-11-08T06:29:06Z` | `f877cacc1285d6406e6aedbad4f81f141846e572` | EXACT |
+| 0.0 Registry | `b61be309550a4db3ff01fabb3c7c0d8d8fe4dfb2` | `2026-11-08T06:29:09Z` | `5c891faba15dd0ece21e57c47e2fc002e6696e3a` | EXACT |
+| Living Master v1.7.59 | `ed61f8395c0f65d216f7ea5fde6baba4cb66187c` | `2026-11-08T06:29:12Z` | `071ef5655f6b10ad83a1542ed032d88fc51f58dd` | EXACT |
+
+The above file contents were independently fetched after their writes; intended content and read-back content matched exactly. Stable identities and current root/checkpoint/queue identities were retained. No canonical source or Library content was written.
+
+### Evidence Gate runs after registration
+
+Each listed run completed SUCCESS. The tested SHA comes from its independently fetched evidence artifact, not from the later follow-up commit.
+
+| Run ID | Tested SHA recorded in artifact | Log window UTC |
+|---:|---|---|
+| 42454708536 | `c577addfc32386dbbfd58d32efd8d4e4d6837665` | `2026-11-08T06:25:54.4371465Z–06:25:59.9187023Z` |
+| 42454736135 | `f545108fb7448ca338e92f81adb1447f055b00e5` | `2026-11-08T06:26:17.6139373Z–06:26:22.8491476Z` |
+| 42454836664 | `6780ad53346263f72383bc8af14516b4eb1a68ad` | `2026-11-08T06:27:48.3127543Z–06:27:53.8303717Z` |
+| 42454840215 | `f61c7715df0436ed623f8991a445b28c58b8ecbf` | `2026-11-08T06:27:51.6801200Z–06:28:00.8164532Z` |
+| 42454843737 | `07b3e6b0653c4a3299cfec3ed4f997db01f0a95f` | `2026-11-08T06:27:57.6999625Z–06:28:03.3272151Z` |
+| 42454846612 | `daed51f4ec5006bf643b6ddd404111b38cced5b8` | `2026-11-08T06:28:00.4445772Z–06:28:05.2002770Z` |
+| 42454849355 | `f7c6dd69550d418b4dbf1761ebca55cf906c17fc` | `2026-11-08T06:28:07.3387370Z–06:28:12.3755569Z` |
+| 42454931441 | `75515603760aca0f9a2cf2fd732e5c43d7c5f043` | `2026-11-08T06:29:12.1100418Z–06:29:18.0683027Z` |
+
+### Latest observed main after the integration batch
+
+- Latest main observed before this time-binding ledger expansion: `7fff3a2061a5c2201b1ac29e1ae91cfe36cb6247`.
+- Commit message: `Record Evidence Gate execution 42454931441`.
+- Commit UTC: `2026-11-08T06:29:15Z`; Tehran: `2026-11-08T09:59:15+03:30`.
+- Its Evidence Gate artifact records tested SHA `75515603760aca0f9a2cf2fd732e5c43d7c5f043`; therefore the follow-up main SHA `7fff3a2...` is not itself certified by that run.
+- Latest full audit/conformance pair remains Living Architecture Audit 42345139960 and Portable RAHM Conformance 42345140040, both SUCCESS on exact SHA `af0fdb89c2e357661a7a8703776174cf78016df9`. No full audit/conformance on `7fff3a2...` was found.
+- This time-binding ledger update itself receives a new Git commit timestamp after write; that final-change time is read from Git metadata and reported separately below.
+
+### Time categories
+
+- Repository commit times: exact Git commit metadata listed above; UTC is canonical and Tehran is derived by +03:30.
+- Workflow run times: job-log windows listed above; these are not commit timestamps.
+- Library metadata time: `2026-10-24T04:45:28.479773Z` (Tehran `2026-10-24T08:15:28.479773+03:30`).
+- Library read/write operation time: UNKNOWN / not exposed.
+- Repository file read-back operation time: exact operation timestamp not exposed; content/blob equality is independently verified.
+- Final time-binding ledger commit time: read from Git metadata after this update; it is not inferred from any workflow or Library timestamp.
 
 ## Open gates retained
 
@@ -68,3 +115,4 @@
 - Dropbox: OPEN / NOT VERIFIED.
 - External independent-host recovery: NOT RUN.
 - CURRENT-065/CURRENT-066 and overlay-manifest lineage: OPEN / AMBIGUOUS.
+- Exact-current-main Living Architecture Audit and Portable RAHM Conformance: NOT VERIFIED.
