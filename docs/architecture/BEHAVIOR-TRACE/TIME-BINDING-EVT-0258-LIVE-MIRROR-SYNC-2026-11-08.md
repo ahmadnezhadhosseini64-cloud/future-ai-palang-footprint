@@ -92,6 +92,7 @@ Each listed run completed SUCCESS. The tested SHA comes from its independently f
 | 42454937768 | `ed61f8395c0f65d216f7ea5fde6baba4cb66187c` | `2026-11-08T06:29:19.9149404Z–06:29:28.2054884Z` |
 | 42455069335 | `ca8f84098ccf28bb192441fbe76810f59e3ebe4e` | `2026-11-08T06:31:02.5300057Z–06:31:07.9994603Z` |
 | 42455108948 | `0bcb45f57a1c18a4a4ee60003e772b848ed234da` | `2026-11-08T06:31:37.4970102Z–06:31:41.7500834Z` |
+| 42455149773 | `798b2020cf8a752683f3e959c068d06b0e5045ec` | `2026-11-08T06:32:12.5402174Z–06:32:17.0996185Z` |
 
 ### Latest observed main after the integration batch
 
@@ -99,9 +100,10 @@ Each listed run completed SUCCESS. The tested SHA comes from its independently f
 - Evidence Gate 42454937768 SUCCESS tested `ed61f8395c0f65d216f7ea5fde6baba4cb66187c` and produced follow-up commit `1aaca439aa84f539506e8fd12f0c5b28c8ec42c8`.
 - Evidence Gate 42455069335 SUCCESS tested `ca8f84098ccf28bb192441fbe76810f59e3ebe4e`; artifact blob `e7fe63b65be6537cbd4dfd94535999bc54c31f77`; log window `2026-11-08T06:31:02.5300057Z–06:31:07.9994603Z`; it produced follow-up commit `5719ce39682330d52792057373e8b164c4ce3526` at UTC `2026-11-08T06:31:05Z`.
 - Evidence Gate 42455108948 SUCCESS tested `0bcb45f57a1c18a4a4ee60003e772b848ed234da`; artifact blob `d6781464a940ff219fcb78aabaa608f288d38e95`; log window `2026-11-08T06:31:37.4970102Z–06:31:41.7500834Z`; it produced follow-up commit `92557c7703e3b7a89218211a4f41d23c8667db6e` at UTC `2026-11-08T06:31:39Z`.
-- Latest main observed before this ledger refresh: `798b2020cf8a752683f3e959c068d06b0e5045ec`, commit message `Bind EVT-0258 to latest Evidence Gate run and current main`, UTC `2026-11-08T06:32:07Z`, Tehran `2026-11-08T10:02:07+03:30`.
-- The latest Evidence Gate tested `0bcb45f...`, not current main `798b2020...`. The current main is therefore NOT VERIFIED by that run.
-- Latest full audit/conformance pair remains Living Architecture Audit 42345139960 and Portable RAHM Conformance 42345140040, both SUCCESS on exact SHA `af0fdb89c2e357661a7a8703776174cf78016df9`. No full audit/conformance on `798b2020...` was found.
+- Evidence Gate 42455149773 SUCCESS tested `798b2020cf8a752683f3e959c068d06b0e5045ec`; artifact blob `0a5a26f7f14a10afcd6788bf619aaf7939188e22`; log window `2026-11-08T06:32:12.5402174Z–06:32:17.0996185Z`; it produced follow-up commit `92cf87ad405af615883e03bebaef2b3498f1cbdb` at UTC `2026-11-08T06:32:14Z`.
+- Latest main observed before this ledger refresh: `d5dd37e3048ded7d789e23ae2f82cfbd109ace6c`, commit message `Add latest Evidence Gate receipt to EVT-0258 time binding`, UTC `2026-11-08T06:32:43Z`, Tehran `2026-11-08T10:02:43+03:30`.
+- The latest Evidence Gate tested `798b2020...`, not current main `d5dd37e...`. The current main is therefore NOT VERIFIED by that run.
+- Latest full audit/conformance pair remains Living Architecture Audit 42345139960 and Portable RAHM Conformance 42345140040, both SUCCESS on exact SHA `af0fdb89c2e357661a7a8703776174cf78016df9`. No full audit/conformance on `d5dd37e...` was found.
 - This ledger refresh receives a new Git commit timestamp after write; that final-change time is read from Git metadata and reported separately below.
 
 ### Time categories
