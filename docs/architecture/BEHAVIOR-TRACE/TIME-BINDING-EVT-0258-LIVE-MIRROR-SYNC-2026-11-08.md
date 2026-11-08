@@ -90,15 +90,17 @@ Each listed run completed SUCCESS. The tested SHA comes from its independently f
 | 42454931441 | `75515603760aca0f9a2cf2fd732e5c43d7c5f043` | `2026-11-08T06:29:12.1100418Z–06:29:18.0683027Z` |
 | 42454934663 | `b61be309550a4db3ff01fabb3c7c0d8d8fe4dfb2` | `2026-11-08T06:29:18.7781871Z–06:29:25.0564756Z` |
 | 42454937768 | `ed61f8395c0f65d216f7ea5fde6baba4cb66187c` | `2026-11-08T06:29:19.9149404Z–06:29:28.2054884Z` |
+| 42455069335 | `ca8f84098ccf28bb192441fbe76810f59e3ebe4e` | `2026-11-08T06:31:02.5300057Z–06:31:07.9994603Z` |
 
 ### Latest observed main after the integration batch
 
 - Evidence Gate 42454934663 SUCCESS tested `b61be309550a4db3ff01fabb3c7c0d8d8fe4dfb2` and produced follow-up commit `f32503ef7f6628434d85e285d069151c5a7af20c`.
 - Evidence Gate 42454937768 SUCCESS tested `ed61f8395c0f65d216f7ea5fde6baba4cb66187c` and produced follow-up commit `1aaca439aa84f539506e8fd12f0c5b28c8ec42c8`.
-- Latest main observed before this ledger update: `ca8f84098ccf28bb192441fbe76810f59e3ebe4e`, commit message `Complete EVT-0258 time-binding and integration ledger`, UTC `2026-11-08T06:30:57Z`, Tehran `2026-11-08T10:00:57+03:30`.
-- The latest Evidence Gate run 42454937768 tested the older master commit `ed61f83...`, not current main `ca8f840...`. The current main is therefore NOT VERIFIED by that run.
-- Latest full audit/conformance pair remains Living Architecture Audit 42345139960 and Portable RAHM Conformance 42345140040, both SUCCESS on exact SHA `af0fdb89c2e357661a7a8703776174cf78016df9`. No full audit/conformance on `ca8f840...` was found.
-- This ledger expansion receives a new Git commit timestamp after write; that final-change time is read from Git metadata and reported separately below.
+- Evidence Gate 42455069335 SUCCESS tested `ca8f84098ccf28bb192441fbe76810f59e3ebe4e`; artifact blob `e7fe63b65be6537cbd4dfd94535999bc54c31f77`; log window `2026-11-08T06:31:02.5300057Z–06:31:07.9994603Z`; it produced follow-up commit `5719ce39682330d52792057373e8b164c4ce3526` at UTC `2026-11-08T06:31:05Z`.
+- Latest main observed before this ledger refresh: `0bcb45f57a1c18a4a4ee60003e772b848ed234da`, commit message `Refresh EVT-0258 time binding with latest Evidence Gate receipts`, UTC `2026-11-08T06:31:32Z`, Tehran `2026-11-08T10:01:32+03:30`.
+- The latest Evidence Gate tested `ca8f840...`, not current main `0bcb45f...`. The current main is therefore NOT VERIFIED by that run.
+- Latest full audit/conformance pair remains Living Architecture Audit 42345139960 and Portable RAHM Conformance 42345140040, both SUCCESS on exact SHA `af0fdb89c2e357661a7a8703776174cf78016df9`. No full audit/conformance on `0bcb45f...` was found.
+- This ledger refresh receives a new Git commit timestamp after write; that final-change time is read from Git metadata and reported separately below.
 
 ### Time categories
 
