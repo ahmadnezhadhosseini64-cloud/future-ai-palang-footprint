@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-11-07 — POINT-0/064 (0+) registered; CURRENT-115; sole active queue NEXT-051; living master v1.7.58; additive handoff EVT-0257 under POINT-0/064; daily 07:00 24-hour and 23:00 same-day news automations enabled and dashboard-read-back verified; runtime tests, exact-final-SHA audit/conformance and external-host acceptance remain OPEN. Root commit 7b55de39c19691a28ae50406e50ee6ddbcd3c4fe at UTC 2026-11-07T18:13:22Z / Tehran 2026-11-07T21:43:22+03:30. IN-102 / OUT-101 / EVT-0255 / TIME-BINDING-EVT-0255 / CURRENT-114 registered. POINT-0/062 and POINT-0/061 history preserved; graph-wide reconciliation, runtime and independent-host gates remain OPEN.
+**Last Updated:** 2026-11-08 — EVT-0258 mirror-only sync registered under POINT-0/064; CURRENT-115; sole active queue NEXT-051; living master target v1.7.59; Library v7 normalized content/semantic match with one extra terminal LF; exact-current-main audit/conformance remain NOT VERIFIED; Issues #20/#21 and external-host gates remain OPEN / NOT VERIFIED / NOT RUN.
 
 ## Canonical References
 
@@ -2354,3 +2354,11 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - Root: POINT-0/064; current: CURRENT-115; sole queue: NEXT-051. No NEXT-052.
 - User instruction: preserve graph history and continue all remaining steps under 0.0; keep living mother and tests active/living.
 - Unrun acceptance gates remain OPEN / NOT RUN; exact-final-SHA audits, scheduled-run receipts and clean/independent-host recovery remain required.
+
+
+## EVT-0258 — live mirror synchronization recheck (2026-11-08)
+- Event: [EVT-0258](architecture/BEHAVIOR-TRACE/EVT-0258-LIVE-MIRROR-SYNC-RECHECK-2026-11-08.md); time binding: [TIME-BINDING-EVT-0258](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0258-LIVE-MIRROR-SYNC-2026-11-08.md).
+- Mirror-only under current root POINT-0/064; checkpoint CURRENT-115; sole active queue NEXT-051. No new user root or NEXT-052.
+- Canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, exact version 7 (10,480 chars). Normalized full content and semantic fields MATCH; exact equality FALSE by one additional terminal LF. No source or Library write; the supported `source_file_ref` route was not used because unchanged-source policy prohibits a rewrite in this case.
+- Latest retrieved full audit/conformance pair: Living Architecture Audit 42345139960 and Portable RAHM Conformance 42345140040 both SUCCESS on exact SHA `af0fdb89c2e357661a7a8703776174cf78016df9`; job logs independently confirm checkout / repository_commit_sha. Latest Evidence Gate 42402348230 succeeded on exact tested SHA `05471a4ea1a332eb8e125806da6ef2de09498e31` and created follow-up main `8050b99f9d53dc336b5681f0c2645611e15842ca`. Exact-current-main audit/conformance on that follow-up were NOT FOUND / NOT VERIFIED.
+- CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; `winner_selected=false`. Issues #20/#21 OPEN; NEXT-051 forensic archive OPEN / NOT RECOVERED; BOART-FOLLOWUP-01 ACTIVE. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
