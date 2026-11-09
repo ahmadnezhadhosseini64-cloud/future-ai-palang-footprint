@@ -37,3 +37,8 @@
 ## 3. Next deterministic action
 
 Continue under existing NEXT-051. Obtain Portable RAHM Conformance on the exact current/final main SHA when the workflow runs; retain its exact tested SHA and job-log proof. Continue CURRENT-065/CURRENT-066 and overlay-manifest reconciliation without inferred selection, and keep all unproven destination/host gates open. Any later commit that advances main must be independently re-audited; a passing run on an earlier SHA is not transferred.
+
+## Additive time-binding repair — 2026-11-09
+- Time binding: [TIME-BINDING-EVT-0259](./TIME-BINDING-EVT-0259-LIVE-MIRROR-SYNC-2026-11-09.md).
+- Original EVT-0259 registration commit remains `3d4c4b9e6929e894f1bc78c8962c4ef05b94ff0a` at UTC `2026-11-09T06:48:23Z` / Tehran `2026-11-09T10:18:23+03:30`.
+- This additive repair supplies the missing explicit time-binding artifact; it does not alter the event's original registration time, root, checkpoint, queue, or mirror decision.

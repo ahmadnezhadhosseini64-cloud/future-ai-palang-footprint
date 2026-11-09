@@ -2,7 +2,7 @@
 
 - Stable ID: G6IP-RAHM-NEXT-051-20261024
 - Production ID: G6IP-RAHM-NEXT-051-20261024
-- Version: 1.0.36
+- Version: 1.0.37
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE
 - Project: Future AI / Palang Footprint — HAIF
 - Canonical queue: this file only
@@ -337,3 +337,11 @@ The previous blob at this path began with the Integration Queue README title and
 - Latest full audit/conformance pair: Living Architecture Audit 42345139960 and Portable RAHM Conformance 42345140040 both SUCCESS on exact SHA `af0fdb89c2e357661a7a8703776174cf78016df9`. Latest Evidence Gate 42454843737 succeeded on exact tested SHA `07b3e6b0653c4a3299cfec3ed4f997db01f0a95f`; its evidence commit is not an audit or conformance result. Exact-current-main audit/conformance remain NOT VERIFIED.
 - CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; `winner_selected=false`. Issues #20/#21 OPEN; NEXT-051 forensic archive OPEN / NOT RECOVERED; BOART-FOLLOWUP-01 ACTIVE. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
 - Continue every existing package, exact-SHA, RAHM, runtime, historic source/rule census, identity/parent/time triage, pointer/overlay-manifest, Issue #20/#21 and independent-host lane.
+
+## Latest mirror synchronization evidence — EVT-0260 (2026-11-09)
+- Event/time binding: [EVT-0260](../../architecture/BEHAVIOR-TRACE/EVT-0260-LIVE-MIRROR-SYNC-RECHECK-2026-11-09.md) / [TIME-BINDING-EVT-0260](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0260-LIVE-MIRROR-SYNC-2026-11-09.md).
+- NEXT-051 remains the only active queue and stays OPEN / LIVING / IN PROGRESS / NOT COMPLETE. No NEXT-052.
+- Current root POINT-0/064; current checkpoint CURRENT-115; latest user-turn event EVT-0257. This mirror-only event does not create a new root or checkpoint identity.
+- Source blob `de1b75f07241c9b313e476af5f1417177ff78c10`; Library version 7; normalized content/semantic match; exact equality FALSE by one terminal LF; no source or Library write.
+- Latest full audit/conformance pair 42575319320 / 42575319373 passed on `3d4c4b9e6929e894f1bc78c8962c4ef05b94ff0a`; Evidence Gate 42575319341 passed on that tested SHA and advanced main to `7b6c4e3aa93fef0e9ad3be04ef96b6aa041d8e61`. The follow-up main remains NOT VERIFIED.
+- Continue CURRENT-065/CURRENT-066 and overlay-manifest lineage without inferred selection; preserve Issue #20 runtime/cold-start work, Issue #21 historic census, BOART-FOLLOWUP-01, package and independent-host gates. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external host NOT RUN.
