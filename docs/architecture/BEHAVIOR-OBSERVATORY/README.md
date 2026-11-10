@@ -2,11 +2,11 @@
 
 - Stable ID: HUMAN-AI-INTERACTION-BEHAVIOR-OBSERVATORY-2026-10-22-001
 - Production ID: HAIBO-HAIF-2026-10-22-001
-- Version: 1.0.17
+- Version: 1.0.18
 - Owner: احمد پلنگ / Ahmad Nezhadhosseini
 - Project: Future AI / Palang Footprint / HAIF
 - Canonical path: `docs/architecture/BEHAVIOR-OBSERVATORY/README.md`
-- Status: ACTIVE / LIVING in repository; EVT-0260 and its time binding are integrated. Source/Library v7 normalized content and semantic fields match; exact equality FALSE by one additional terminal LF; no source or Library write. Latest full audit/conformance pair 42575319320 / 42575319373 passed on exact SHA 3d4c4b9e6929e894f1bc78c8962c4ef05b94ff0a; Evidence Gate 42575319341 passed on that same tested SHA and advanced main to 7b6c4e3aa93fef0e9ad3be04ef96b6aa041d8e61. That follow-up main was NOT VERIFIED by the preceding pair; a fresh exact-final-main audit/conformance is required. CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; Issues #20/#21 OPEN; external destination and host gates remain OPEN / NOT VERIFIED / NOT RUN.
+- Status: ACTIVE / LIVING in repository; EVT-0261 and its time binding are integrated. Source/Library v7 normalized content and semantic fields match; exact equality FALSE by one additional terminal LF; no source or Library write. Latest full audit/conformance pair 42575319320 / 42575319373 passed on exact SHA 3d4c4b9e6929e894f1bc78c8962c4ef05b94ff0a; Evidence Gate 42575319341 passed on that same tested SHA and advanced main to 7b6c4e3aa93fef0e9ad3be04ef96b6aa041d8e61. That follow-up main was NOT VERIFIED by the preceding pair; a fresh exact-final-main audit/conformance is required. CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; Issues #20/#21 OPEN; external destination and host gates remain OPEN / NOT VERIFIED / NOT RUN.
 - Time rule: UTC is canonical; Asia/Tehran time is derived from the same UTC instant (+03:30 for this date). Unknown timestamps remain UNKNOWN, never guessed.
 - Independent anchor: `PALANG-BEHAVIOR-OBSERVATION-AND-RECOVERY-TEST-2026-10-22-001`
 - Related event: `EVT-0034`
@@ -361,3 +361,20 @@ Continue collecting observable interaction and evaluator behavior as evidence-ba
 - Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, version 7 (10,480 chars). Normalized content/semantic match; exact equality FALSE by one terminal LF. No rewrite.
 - Audit/conformance 42575319320 / 42575319373 passed on exact SHA `3d4c4b9e6929e894f1bc78c8962c4ef05b94ff0a`; Evidence Gate 42575319341 passed on the same tested SHA and advanced main to `7b6c4e3aa93fef0e9ad3be04ef96b6aa041d8e61`. That follow-up is NOT VERIFIED.
 - Preserve CURRENT-065/CURRENT-066 ambiguity and historical collision records. Issues #20/#21 OPEN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
+
+
+## EVT-0261 — live mirror synchronization — 2026-11-10
+
+- Event: [EVT-0261](../BEHAVIOR-TRACE/EVT-0261-LIVE-MIRROR-SYNC-RECHECK-2026-11-10.md); time binding: [TIME-BINDING-EVT-0261](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0261-LIVE-MIRROR-SYNC-2026-11-10.md).
+- Mirror-only under POINT-0/064 / latest user-turn event EVT-0257 / CURRENT-115 / NEXT-051. No new user root, IN/OUT pair, checkpoint identity or NEXT-052.
+- Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, file ID `file_00000000942881f8a4a3833110229fb7`, version 7 (10,480 chars). Normalized content and semantic fields MATCH; exact equality FALSE by one extra terminal LF. No source or Library write.
+- Event commit `02b7a4f2afbd3f8f210e5aecda548c91ca93a283`: UTC `2026-11-10T06:47:53Z` / Tehran `2026-11-10T10:17:53+03:30`. Initial time-binding commit `7384c94bf2bdcc5aff31801db487fbd598042fd4`: UTC `2026-11-10T06:48:18Z` / Tehran `2026-11-10T10:18:18+03:30`.
+- Latest full Living Architecture Audit 42770970319 and Portable RAHM Conformance 42770970304 both SUCCESS on the same exact SHA `7384c94bf2bdcc5aff31801db487fbd598042fd4`. Audit job log confirms checkout, `git log -1` and `GITHUB_SHA`; 21/21 steps succeeded. Conformance job log confirms `repository_commit_sha`, 23 tests, ZIP integrity/source-byte match and artifact round-trip PASS.
+- Conformance ZIP: 118,578 bytes; SHA-256 `f9211160805d1107da773c6ed375626fea01ea4ee90091125fab5a7f43f4d4a4`.
+- Audit findings remain OPEN: 17 missing local links; 23 Stable-ID collision groups; 74 Production-ID collision groups; 5 Reference-ID collision groups; 46 event-number collision groups; 11 exact-content duplicate groups; 0 ambiguous parent edges.
+- Pointer discovery remains AMBIGUOUS with `winner_selected=false`: CURRENT-066 and CURRENT-109 are overlay-recovery candidates; CURRENT-087 is the global-project candidate. Preserve the CURRENT-065/CURRENT-066 historical and overlay-manifest lineage; no winner is inferred.
+- Evidence Gate 42770970808 SUCCESS on exact tested SHA `7384c94bf2bdcc5aff31801db487fbd598042fd4`; it created follow-up main `b46ea289580b53b1fbc9e73135b9abc7cec7d02b` at UTC `2026-11-10T06:48:27Z` / Tehran `2026-11-10T10:18:27+03:30`. That follow-up HEAD has no full audit/conformance receipt and remains NOT VERIFIED.
+- Main at integration start: `b46ea289580b53b1fbc9e73135b9abc7cec7d02b`. The preceding PASS pair applies to its parent `7384c94bf2bdcc5aff31801db487fbd598042fd4`, not to this HEAD.
+- Reconciliation Watchdog 42770970265, Pending Registration Drain 42770970299, Production Detection Safety Net 42770970382, Reconciliation Acceptance Test 42770970581 and CPREL runtime/transfer runs 42770970269 / 42770970424 report SUCCESS on `7384c94bf2bdcc5aff31801db487fbd598042fd4`; these do not replace exact-final-main verification.
+- CURRENT-065/CURRENT-066 and overlay-manifest lineage OPEN / AMBIGUOUS; Issues #20/#21 OPEN; NEXT-051 forensic archive OPEN / NOT RECOVERED; BOART-FOLLOWUP-01 ACTIVE. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
+- Existing `Palang Mirror Sync` automation remains ENABLED; no duplicate automation or schedule change.
