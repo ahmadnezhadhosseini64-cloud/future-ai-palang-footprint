@@ -3,8 +3,8 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.10.35
-- Date: 2026-11-10
+- Version: 1.10.36
+- Date: 2026-11-11
 - Exact Time: EVT-0261 event commit UTC `2026-11-10T06:47:53Z` / Tehran `2026-11-10T10:17:53+03:30`; initial time-binding commit UTC `2026-11-10T06:48:18Z` / Tehran `2026-11-10T10:18:18+03:30`.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
@@ -2681,3 +2681,19 @@ Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-11
 - Reconciliation Watchdog 42770970265, Pending Registration Drain 42770970299, Production Detection Safety Net 42770970382, Reconciliation Acceptance Test 42770970581 and CPREL runtime/transfer runs 42770970269 / 42770970424 report SUCCESS on `7384c94bf2bdcc5aff31801db487fbd598042fd4`; these do not replace exact-final-main verification.
 - CURRENT-065/CURRENT-066 and overlay-manifest lineage OPEN / AMBIGUOUS; Issues #20/#21 OPEN; NEXT-051 forensic archive OPEN / NOT RECOVERED; BOART-FOLLOWUP-01 ACTIVE. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
 - Existing `Palang Mirror Sync` automation remains ENABLED; no duplicate automation or schedule change.
+
+## EVT-0262 — live mirror synchronization — 2026-11-11
+
+- Event: [EVT-0262](../BEHAVIOR-TRACE/EVT-0262-LIVE-MIRROR-SYNC-RECHECK-2026-11-11.md); time binding: [TIME-BINDING-EVT-0262](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0262-LIVE-MIRROR-SYNC-2026-11-11.md).
+- Run-start main: `336c12e415f41a61b0fa281772478674c4aac9dd`; branch main matched exactly at run start.
+- Event commit `4c1c63b8dff0e9b56c78566aac3f308d546f2e8e`: UTC `2026-11-11T06:50:02Z` / Tehran `2026-11-11T10:20:02+03:30`. Time-binding commit `131fff1d2d78168916228e37305e0463f75f3876`: UTC `2026-11-11T06:50:04Z` / Tehran `2026-11-11T10:20:04+03:30`.
+- Latest user-turn root POINT-0/064; latest user-turn event EVT-0257; checkpoint CURRENT-115 v1.0.3 → 1.0.4; sole active queue NEXT-051 v1.0.38 → 1.0.39. Mirror-only; no new root, IN/OUT pair, checkpoint identity or NEXT-052.
+- Living mother v1.7.61 → 1.7.62. Behavior Trace Index v1.0.31 → 1.0.32. Behavior Observatory v1.0.18 → 1.0.19. Integration Queue v1.10.35 → 1.10.36.
+- Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, file ID `file_00000000942881f8a4a3833110229fb7`, version 7 (10,480 chars). Normalized content and semantic fields MATCH; exact equality FALSE due solely to one extra terminal LF. No source or Library write.
+- Audit 42771321087 and Portable RAHM Conformance 42771321211 both SUCCESS on exact SHA `3ca69a22078fe9b0d08d1e8e67e70e7cbedce07d`; job logs/evidence confirm the tested SHA. Evidence Gate 42771321096 SUCCESS on that same tested SHA and created run-start main `336c12e415f41a61b0fa281772478674c4aac9dd` at UTC `2026-11-10T06:51:38Z` / Tehran `2026-11-10T10:21:38+03:30`. That main remains NOT VERIFIED by the preceding pair.
+- Preserve open findings: 17 missing local links; 23 Stable-ID collision groups; 74 Production-ID collision groups; 5 Reference-ID collision groups; 46 event-number collision groups; 11 exact-content duplicate groups; 0 ambiguous parent edges.
+- CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; `winner_selected=false`. Preserve canonical EVT-0178, EVT-0179, quarantined duplicate artifact, POINT-0/016, POINT-0/017, POINT-0/018 / EVT-0180 and all later roots. No inferred pointer selection.
+- Issues #20/#21 OPEN; NEXT-051 forensic archive OPEN / NOT RECOVERED; BOART-FOLLOWUP-01 ACTIVE. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
+- Existing Palang Mirror Sync automation ID `6ad9a407b9d481919c7145fbe4638dec` remains ENABLED; no duplicate or schedule change.
+- Automation run-start clock `2026-11-11T10:11:30+03:30` / `2026-11-11T06:41:30Z` is distinct from repository commits and Library metadata time. Library metadata time `2026-10-24T04:45:28.479773Z`; exact read-back operation time UNKNOWN.
+- Status: SOURCE DRIFT NONE; NORMALIZED MIRROR MATCH; EXACT BYTE MATCH FALSE; NO REWRITE; ROOT/QUEUE UNCHANGED; RUN-START MAIN NOT VERIFIED.
