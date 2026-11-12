@@ -52,3 +52,12 @@
 
 - Status: SOURCE DRIFT NONE; LIBRARY NORMALIZED MATCH; EXACT BYTE MATCH FALSE; NO MIRROR REWRITE; ROOT/QUEUE IDENTITY UNCHANGED; PARENT-SHA AUDIT PASS; PARENT-SHA PORTABLE CONFORMANCE PASS; CURRENT-MAIN AUDIT/CONFORMANCE NOT VERIFIED.
 - Next deterministic action: run Living Architecture Audit and Portable RAHM Conformance on the exact latest main SHA after the integration commit; continue NEXT-051 graph/identity triage, CURRENT-065/CURRENT-066 and overlay-manifest provenance reconciliation, Issues #20/#21, and BOART-FOLLOWUP-01. Keep all external-destination and independent-host gates open until direct evidence exists.
+
+
+## Post-registration Actions evidence — exact tested SHAs
+
+- Living Architecture Audit run [43177904569](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/43177904569): SUCCESS on exact tested SHA `726f3a575bfa049ceddda183ad55a9779e9af98b`.
+- Portable RAHM Conformance run [43177904553](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/43177904553): SUCCESS on exact tested SHA `726f3a575bfa049ceddda183ad55a9779e9af98b`.
+- Evidence Gate run [43177904648](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/43177904648): SUCCESS on exact tested SHA `726f3a575bfa049ceddda183ad55a9779e9af98b`; it created main `0d55261172ccab8fc37f7178f77eaf36eaf40569` at `2026-11-12T07:47:58Z` / Tehran `2026-11-12T11:17:58+03:30`.
+- The new main `0d55261172ccab8fc37f7178f77eaf36eaf40569` has no exact-head Living Architecture Audit or Portable RAHM Conformance run at this check. It remains NOT VERIFIED by those gates.
+- The event file's final integration revision and the time-binding/index repairs are recorded in the subsequent integration commit; EVT-0264's event-registration time remains the original `726f3a575bfa049ceddda183ad55a9779e9af98b` commit time.

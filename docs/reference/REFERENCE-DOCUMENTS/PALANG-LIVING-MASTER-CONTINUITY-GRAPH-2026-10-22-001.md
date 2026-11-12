@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `PALANG-LIVING-MASTER-CONTINUITY-GRAPH-2026-10-22-001`
 - Production ID / شناسهٔ تولید: `PLMCG-2026-10-22-001`
-- Version / نسخه: 1.0.4
+- Version / نسخه: 1.0.5
 - Owner / مالک: احمد پلنگ (Ahmad Nezhadhosseini)
 - Project / پروژه: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
 - Architecture / معماری: HAIF — Human–AI Interaction Future (آیندهٔ تعامل انسان و هوش مصنوعی)
@@ -276,3 +276,13 @@
 - قاعدهٔ حاکم: «سند مادر کل پروژه» با گرهٔ مفهومی Master یکی نیست؛ برخورد شناسه‌ها و ابهام روابط والد نیز طبقه‌های جداگانه‌اند.
 - آخرین شاهد چکش ثبت‌شده: run 39817056241 روی snapshot 7ced5075aad8c2b4e894f70965f9fc405d02bf94؛ 9 یال والد مبهم، منبع ادعای 6 مورد هنوز تأییدنشده.
 - وضعیت: ACTIVE / LIVING / OPEN; ممیزی معنایی و مقصدهای بیرونی بازند.
+
+
+## EVT-0264 — mirror-only continuity update — 2026-11-12
+
+- Latest user-turn root POINT-0/064; latest user-turn event EVT-0257; execution checkpoint CURRENT-115 v1.0.5; sole active queue NEXT-051 v1.0.40.
+- [EVT-0263](../../architecture/BEHAVIOR-TRACE/EVT-0263-LIVE-MIRROR-SYNC-RECHECK-2026-11-12.md) / [TIME-BINDING-EVT-0263](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0263-LIVE-MIRROR-SYNC-2026-11-12.md); [EVT-0264](../../architecture/BEHAVIOR-TRACE/EVT-0264-LIVE-MIRROR-SYNC-RECHECK-2026-11-12.md) / [TIME-BINDING-EVT-0264](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0264-LIVE-MIRROR-SYNC-2026-11-12.md).
+- Mirror-only: no new root, IN/OUT pair, checkpoint identity or NEXT-052. Preserve all prior points, including POINT-0/016, POINT-0/017 and POINT-0/018 / EVT-0180.
+- Source unchanged; Library v7 normalized match with one extra terminal LF; exact byte match FALSE; no rewrite.
+- Audit and Conformance passed on event commit `726f3a575bfa049ceddda183ad55a9779e9af98b`; Evidence Gate created main `0d55261172ccab8fc37f7178f77eaf36eaf40569`, which remains NOT VERIFIED by those gates.
+- CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; Issues #20/#21 OPEN; NEXT-051 forensic recovery OPEN / NOT RECOVERED; external destination and independent-host gates remain open.

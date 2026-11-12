@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-11-11 — EVT-0262 mirror-only sync under POINT-0/064 / CURRENT-115 / NEXT-051; source unchanged; Library v7 normalized match with one extra terminal LF; Audit/Conformance 42771321087 / 42771321211 passed on 3ca69a2; Evidence Gate 42771321096 advanced run-start main to 336c12e, which remains NOT VERIFIED.
+**Last Updated:** 2026-11-12 — EVT-0264 mirror-only sync under POINT-0/064 / CURRENT-115 / NEXT-051; source unchanged; Library v7 normalized match with one extra terminal LF; Audit/Conformance 43177904569 / 43177904553 passed on 726f3a5; Evidence Gate 43177904648 advanced main to 0d55261, which remains NOT VERIFIED by those gates.
 
 ## Canonical References
 
@@ -2389,7 +2389,7 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 
 ## EVT-0262 — live mirror synchronization — 2026-11-11
 
-- Event: [EVT-0262](../BEHAVIOR-TRACE/EVT-0262-LIVE-MIRROR-SYNC-RECHECK-2026-11-11.md); time binding: [TIME-BINDING-EVT-0262](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0262-LIVE-MIRROR-SYNC-2026-11-11.md).
+- Event: [EVT-0262](architecture/BEHAVIOR-TRACE/EVT-0262-LIVE-MIRROR-SYNC-RECHECK-2026-11-11.md); time binding: [TIME-BINDING-EVT-0262](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0262-LIVE-MIRROR-SYNC-2026-11-11.md).
 - Run-start main: `336c12e415f41a61b0fa281772478674c4aac9dd`; branch main matched exactly at run start.
 - Event commit `4c1c63b8dff0e9b56c78566aac3f308d546f2e8e`: UTC `2026-11-11T06:50:02Z` / Tehran `2026-11-11T10:20:02+03:30`. Time-binding commit `131fff1d2d78168916228e37305e0463f75f3876`: UTC `2026-11-11T06:50:04Z` / Tehran `2026-11-11T10:20:04+03:30`.
 - Latest user-turn root POINT-0/064; latest user-turn event EVT-0257; checkpoint CURRENT-115 v1.0.3 → 1.0.4; sole active queue NEXT-051 v1.0.38 → 1.0.39. Mirror-only; no new root, IN/OUT pair, checkpoint identity or NEXT-052.
@@ -2402,3 +2402,13 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - Existing Palang Mirror Sync automation ID `6ad9a407b9d481919c7145fbe4638dec` remains ENABLED; no duplicate or schedule change.
 - Automation run-start clock `2026-11-11T10:11:30+03:30` / `2026-11-11T06:41:30Z` is distinct from repository commits and Library metadata time. Library metadata time `2026-10-24T04:45:28.479773Z`; exact read-back operation time UNKNOWN.
 - Status: SOURCE DRIFT NONE; NORMALIZED MIRROR MATCH; EXACT BYTE MATCH FALSE; NO REWRITE; ROOT/QUEUE UNCHANGED; RUN-START MAIN NOT VERIFIED.
+
+
+## EVT-0263 / EVT-0264 — live mirror synchronization — 2026-11-12
+
+- [EVT-0263](architecture/BEHAVIOR-TRACE/EVT-0263-LIVE-MIRROR-SYNC-RECHECK-2026-11-12.md) / [TIME-BINDING-EVT-0263](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0263-LIVE-MIRROR-SYNC-2026-11-12.md). EVT-0263 registration commit: `ecfeb6a16d09efe33c1d079b5dd6f33d68bd2b7a`, UTC `2026-11-12T06:57:27Z`, Tehran `2026-11-12T10:27:27+03:30`.
+- [EVT-0264](architecture/BEHAVIOR-TRACE/EVT-0264-LIVE-MIRROR-SYNC-RECHECK-2026-11-12.md) / [TIME-BINDING-EVT-0264](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0264-LIVE-MIRROR-SYNC-2026-11-12.md). EVT-0264 registration commit: `726f3a575bfa049ceddda183ad55a9779e9af98b`, UTC `2026-11-12T07:47:47Z`, Tehran `2026-11-12T11:17:47+03:30`.
+- Latest user-turn root POINT-0/064; latest user-turn event EVT-0257; checkpoint CURRENT-115 v1.0.5; sole active queue NEXT-051 v1.0.40.
+- Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, file ID `file_00000000942881f8a4a3833110229fb7`, version 7 (10,480 chars). Normalized content MATCH; exact byte equality FALSE by one terminal LF; no rewrite.
+- Living Architecture Audit 43177904569 and Portable RAHM Conformance 43177904553 both SUCCESS on exact SHA `726f3a575bfa049ceddda183ad55a9779e9af98b`. Evidence Gate 43177904648 SUCCESS on that same SHA and created current main `0d55261172ccab8fc37f7178f77eaf36eaf40569`; exact-current-main audit/conformance are NOT VERIFIED.
+- CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; Issues #20/#21 OPEN; NEXT-051 forensic recovery OPEN / NOT RECOVERED; BOART-FOLLOWUP-01 ACTIVE. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.

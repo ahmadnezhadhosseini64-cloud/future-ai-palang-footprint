@@ -1,8 +1,8 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.32
-- Date: 2026-11-11
+- Version: 1.0.33
+- Date: 2026-11-12
 - Project: Future AI / Palang Footprint / HAIF
 
 ## مسیرهای بازیابی
@@ -1233,7 +1233,7 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 
 ## EVT-0262 — live mirror synchronization — 2026-11-11
 
-- Event: [EVT-0262](../BEHAVIOR-TRACE/EVT-0262-LIVE-MIRROR-SYNC-RECHECK-2026-11-11.md); time binding: [TIME-BINDING-EVT-0262](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0262-LIVE-MIRROR-SYNC-2026-11-11.md).
+- Event: [EVT-0262](./EVT-0262-LIVE-MIRROR-SYNC-RECHECK-2026-11-11.md); time binding: [TIME-BINDING-EVT-0262](./TIME-BINDING-EVT-0262-LIVE-MIRROR-SYNC-2026-11-11.md).
 - Run-start main: `336c12e415f41a61b0fa281772478674c4aac9dd`; branch main matched exactly at run start.
 - Event commit `4c1c63b8dff0e9b56c78566aac3f308d546f2e8e`: UTC `2026-11-11T06:50:02Z` / Tehran `2026-11-11T10:20:02+03:30`. Time-binding commit `131fff1d2d78168916228e37305e0463f75f3876`: UTC `2026-11-11T06:50:04Z` / Tehran `2026-11-11T10:20:04+03:30`.
 - Latest user-turn root POINT-0/064; latest user-turn event EVT-0257; checkpoint CURRENT-115 v1.0.3 → 1.0.4; sole active queue NEXT-051 v1.0.38 → 1.0.39. Mirror-only; no new root, IN/OUT pair, checkpoint identity or NEXT-052.
@@ -1246,3 +1246,18 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Existing Palang Mirror Sync automation ID `6ad9a407b9d481919c7145fbe4638dec` remains ENABLED; no duplicate or schedule change.
 - Automation run-start clock `2026-11-11T10:11:30+03:30` / `2026-11-11T06:41:30Z` is distinct from repository commits and Library metadata time. Library metadata time `2026-10-24T04:45:28.479773Z`; exact read-back operation time UNKNOWN.
 - Status: SOURCE DRIFT NONE; NORMALIZED MIRROR MATCH; EXACT BYTE MATCH FALSE; NO REWRITE; ROOT/QUEUE UNCHANGED; RUN-START MAIN NOT VERIFIED.
+
+
+## EVT-0263 — live mirror synchronization — 2026-11-12
+
+- [EVT-0263](./EVT-0263-LIVE-MIRROR-SYNC-RECHECK-2026-11-12.md) / [TIME-BINDING-EVT-0263](./TIME-BINDING-EVT-0263-LIVE-MIRROR-SYNC-2026-11-12.md).
+- Event registration commit `ecfeb6a16d09efe33c1d079b5dd6f33d68bd2b7a`, UTC `2026-11-12T06:57:27Z`, Tehran `2026-11-12T10:27:27+03:30`. The missing time-binding file is restored by EVT-0264 integration.
+
+## EVT-0264 — live mirror synchronization — 2026-11-12
+
+- [EVT-0264](./EVT-0264-LIVE-MIRROR-SYNC-RECHECK-2026-11-12.md) / [TIME-BINDING-EVT-0264](./TIME-BINDING-EVT-0264-LIVE-MIRROR-SYNC-2026-11-12.md).
+- Event registration commit `726f3a575bfa049ceddda183ad55a9779e9af98b`, UTC `2026-11-12T07:47:47Z`, Tehran `2026-11-12T11:17:47+03:30`.
+- Mirror-only under POINT-0/064 / EVT-0257 / CURRENT-115 / NEXT-051. No new root, IN/OUT pair, checkpoint identity or NEXT-052.
+- Source unchanged; Library v7 normalized match with one extra terminal LF; exact byte equality FALSE; no rewrite.
+- Audit 43177904569 and Portable RAHM Conformance 43177904553 passed on exact SHA `726f3a575bfa049ceddda183ad55a9779e9af98b`; Evidence Gate 43177904648 advanced main to `0d55261172ccab8fc37f7178f77eaf36eaf40569`, which remains NOT VERIFIED by those gates.
+- CURRENT-065/CURRENT-066, overlay-manifest lineage, Issues #20/#21 and external destination/host gates remain open as documented.

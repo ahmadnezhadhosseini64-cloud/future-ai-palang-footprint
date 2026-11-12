@@ -3,7 +3,7 @@
 ## 0. شناسنامه، لنگر و وضعیت
 - **Stable ID / شناسهٔ پایدار:** CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001
 - **Production ID / شناسهٔ تولید:** CCCMR-2026-10-21-001
-- **Version / نسخه:** 1.0.5
+- **Version / نسخه:** 1.0.6
 - **Owner / مالک:** Ahmad Nezhadhosseini / احمد پلنگ
 - **Project / پروژه:** Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
 - **Architecture target / هدف معماری:** HAIF — Human–AI Interaction Future (آیندهٔ تعامل انسان و هوش مصنوعی)
@@ -873,3 +873,13 @@ The canonical live-destination audit source and its exact Library version-7 snap
 - NEXT-051 remains the sole active continuation; no NEXT-052. Route A (portable ZIP/master/independent-host recovery) and Route B (historical graph census and pointer reconciliation) remain separate but connected.
 - Package priority: rebuild from canonical source; calculate fresh SHA-256; verify manifest and positive/negative schema cases; independently read back ZIP and living master; then exact-SHA audit/conformance and clean-host import. Historical ZIP digest `6ef2a5b0eab4c527db6f47ad8ef330f9854e692cd02fc3b2a02298636fa5bb78` is not evidence for a newly rebuilt artifact.
 - Latest known audit/conformance pair passed on `7a1ff93e608c5c91faca54694e12b60b4452a844`; Evidence Gate then moved main to `6834ad8061b06eb286715890759b8defeada2691`. Exact-head proof is required for the current branch head.
+
+
+## EVT-0264 — mirror-only continuity update — 2026-11-12
+
+- [EVT-0263](../../architecture/BEHAVIOR-TRACE/EVT-0263-LIVE-MIRROR-SYNC-RECHECK-2026-11-12.md) and its restored [TIME-BINDING-EVT-0263](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0263-LIVE-MIRROR-SYNC-2026-11-12.md) are preserved.
+- [EVT-0264](../../architecture/BEHAVIOR-TRACE/EVT-0264-LIVE-MIRROR-SYNC-RECHECK-2026-11-12.md) and [TIME-BINDING-EVT-0264](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0264-LIVE-MIRROR-SYNC-2026-11-12.md) record the current mirror-only run.
+- Latest user-turn root POINT-0/064; latest user-turn event EVT-0257; checkpoint CURRENT-115 v1.0.5; sole active queue NEXT-051 v1.0.40. No new root or successor queue.
+- Repository source blob `de1b75f07241c9b313e476af5f1417177ff78c10`; Library v7 normalized match with one extra terminal LF; exact byte match FALSE; no rewrite.
+- Audit and Portable RAHM Conformance passed on `726f3a575bfa049ceddda183ad55a9779e9af98b`; Evidence Gate advanced main to `0d55261172ccab8fc37f7178f77eaf36eaf40569`, which remains NOT VERIFIED by those gates.
+- CURRENT-065/CURRENT-066, overlay-manifest lineage, Issues #20/#21 and NEXT-051 forensic recovery remain OPEN. External destination and independent-host gates remain open.

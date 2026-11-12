@@ -4,7 +4,7 @@
 - Root: [POINT-0/064 (0+)](GPT6-RAHM-USER-POINT-0-20261107-064-DAILY-NEWS-CADENCE-AND-24H-CONTINUITY.md)
 - Parent: [POINT-0/063](GPT6-RAHM-USER-POINT-0-20261107-063-GRAPH-WIDE-CONTINUITY-AND-ANCHORING.md) → [CURRENT-114](PALANG-0.0-CURRENT-20261107-114-GRAPH-WIDE-CONTINUITY.md) → existing [NEXT-051](PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
 - Chain: POINT-0/064 → IN-103 + OUT-102 → EVT-0256 → TIME-BINDING-EVT-0256 → CURRENT-115 → NEXT-051
-- Version: 1.0.4
+- Version: 1.0.5
 - Status: OPEN / ACTIVE / REPOSITORY CHAIN READ-BACK VERIFIED / HANDOFF REGISTERED / AUTOMATION CONFIGURATION VERIFIED / RUNTIME TESTS PENDING
 - Root commit: 627e178322e23d26e54bf3dc1b852351bd5f8f0f
 - UTC: 2026-11-07T18:28:57Z
@@ -193,7 +193,7 @@ Repository registration is not proof of future scheduled delivery or runtime beh
 
 ## EVT-0262 — live mirror synchronization — 2026-11-11
 
-- Event: [EVT-0262](../BEHAVIOR-TRACE/EVT-0262-LIVE-MIRROR-SYNC-RECHECK-2026-11-11.md); time binding: [TIME-BINDING-EVT-0262](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0262-LIVE-MIRROR-SYNC-2026-11-11.md).
+- Event: [EVT-0262](../../architecture/BEHAVIOR-TRACE/EVT-0262-LIVE-MIRROR-SYNC-RECHECK-2026-11-11.md); time binding: [TIME-BINDING-EVT-0262](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0262-LIVE-MIRROR-SYNC-2026-11-11.md).
 - Run-start main: `336c12e415f41a61b0fa281772478674c4aac9dd`; comparison against `main` returned IDENTICAL (0 ahead / 0 behind).
 - Event commit: `4c1c63b8dff0e9b56c78566aac3f308d546f2e8e`, UTC `2026-11-11T06:50:02Z`, Tehran `2026-11-11T10:20:02.000+03:30`. Time-binding commit: `131fff1d2d78168916228e37305e0463f75f3876`, UTC `2026-11-11T06:50:04Z`, Tehran `2026-11-11T10:20:04.000+03:30`.
 - Latest user-turn root POINT-0/064; latest user-turn event EVT-0257; checkpoint CURRENT-115 v1.0.3; sole active queue NEXT-051 v1.0.38. Mirror-only; no new root, IN/OUT pair, checkpoint identity or NEXT-052.
@@ -206,3 +206,14 @@ Repository registration is not proof of future scheduled delivery or runtime beh
 - Existing Palang Mirror Sync automation ID `6ad9a407b9d481919c7145fbe4638dec` remains ENABLED; no duplicate or schedule change.
 - Automation run-start clock `2026-11-11T10:11:30+03:30` / `2026-11-11T06:41:30Z` is distinct from both repository commits and Library metadata time. Library metadata time `2026-10-24T04:45:28.479773Z`; exact read-back operation time UNKNOWN.
 - Status: SOURCE DRIFT NONE; NORMALIZED MIRROR MATCH; EXACT BYTE MATCH FALSE; NO REWRITE; ROOT/QUEUE UNCHANGED; RUN-START MAIN NOT VERIFIED.
+
+
+## EVT-0263 / EVT-0264 — live mirror synchronization — 2026-11-12
+
+- EVT-0263 event commit `ecfeb6a16d09efe33c1d079b5dd6f33d68bd2b7a` is time-bound by [TIME-BINDING-EVT-0263](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0263-LIVE-MIRROR-SYNC-2026-11-12.md); its previously missing linked file is now restored.
+- EVT-0264 event commit `726f3a575bfa049ceddda183ad55a9779e9af98b` is time-bound by [TIME-BINDING-EVT-0264](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0264-LIVE-MIRROR-SYNC-2026-11-12.md).
+- Latest user-turn root remains POINT-0/064; latest user-turn event remains EVT-0257. CURRENT-115 remains the same checkpoint identity, now v1.0.5; NEXT-051 remains the sole active queue, now v1.0.40. No new root, IN/OUT pair, checkpoint identity or NEXT-052.
+- Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library v7 (10,480 chars); normalized match, exact byte match FALSE by one terminal LF; no rewrite.
+- Audit 43177904569 and Portable RAHM Conformance 43177904553 passed on exact SHA `726f3a575bfa049ceddda183ad55a9779e9af98b`; Evidence Gate 43177904648 passed on that SHA and created main `0d55261172ccab8fc37f7178f77eaf36eaf40569`. That main is NOT VERIFIED by the preceding audit/conformance pair.
+- CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; Issues #20/#21 remain OPEN; NEXT-051 forensic recovery remains OPEN / NOT RECOVERED; BOART-FOLLOWUP-01 remains ACTIVE.
+- Buffer/Persistent Memory: NOT VERIFIED; Dropbox: OPEN / NOT VERIFIED; external independent-host recovery: NOT RUN.

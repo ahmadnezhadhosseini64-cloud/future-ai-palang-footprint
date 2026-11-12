@@ -3,8 +3,8 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.10.36
-- Date: 2026-11-11
+- Version: 1.10.37
+- Date: 2026-11-12
 - Exact Time: EVT-0261 event commit UTC `2026-11-10T06:47:53Z` / Tehran `2026-11-10T10:17:53+03:30`; initial time-binding commit UTC `2026-11-10T06:48:18Z` / Tehran `2026-11-10T10:18:18+03:30`.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
@@ -2697,3 +2697,13 @@ Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-11
 - Existing Palang Mirror Sync automation ID `6ad9a407b9d481919c7145fbe4638dec` remains ENABLED; no duplicate or schedule change.
 - Automation run-start clock `2026-11-11T10:11:30+03:30` / `2026-11-11T06:41:30Z` is distinct from repository commits and Library metadata time. Library metadata time `2026-10-24T04:45:28.479773Z`; exact read-back operation time UNKNOWN.
 - Status: SOURCE DRIFT NONE; NORMALIZED MIRROR MATCH; EXACT BYTE MATCH FALSE; NO REWRITE; ROOT/QUEUE UNCHANGED; RUN-START MAIN NOT VERIFIED.
+
+
+## EVT-0264 — live mirror synchronization — 2026-11-12
+
+- Event/time binding: [EVT-0264](../BEHAVIOR-TRACE/EVT-0264-LIVE-MIRROR-SYNC-RECHECK-2026-11-12.md) / [TIME-BINDING-EVT-0264](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0264-LIVE-MIRROR-SYNC-2026-11-12.md).
+- EVT-0263's missing time-binding link is restored: [TIME-BINDING-EVT-0263](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0263-LIVE-MIRROR-SYNC-2026-11-12.md).
+- Mirror-only under POINT-0/064 / EVT-0257 / CURRENT-115 v1.0.5 / NEXT-051 v1.0.40; no new root, IN/OUT pair, checkpoint identity or NEXT-052.
+- Source blob `de1b75f07241c9b313e476af5f1417177ff78c10`; Library v7 normalized match, one extra terminal LF; no mirror rewrite.
+- Audit 43177904569 and Portable RAHM Conformance 43177904553 passed on `726f3a575bfa049ceddda183ad55a9779e9af98b`; Evidence Gate 43177904648 advanced main to `0d55261172ccab8fc37f7178f77eaf36eaf40569`. Current main remains NOT VERIFIED by those gates.
+- CURRENT-065/CURRENT-066 and overlay-manifest lineage OPEN / AMBIGUOUS; Issues #20/#21 OPEN; NEXT-051 forensic archive OPEN / NOT RECOVERED; BOART-FOLLOWUP-01 ACTIVE; external gates remain NOT VERIFIED / NOT RUN.

@@ -2,7 +2,7 @@
 
 - Stable ID: HUMAN-AI-INTERACTION-BEHAVIOR-OBSERVATORY-2026-10-22-001
 - Production ID: HAIBO-HAIF-2026-10-22-001
-- Version: 1.0.19
+- Version: 1.0.20
 - Owner: احمد پلنگ / Ahmad Nezhadhosseini
 - Project: Future AI / Palang Footprint / HAIF
 - Canonical path: `docs/architecture/BEHAVIOR-OBSERVATORY/README.md`
@@ -394,3 +394,13 @@ Continue collecting observable interaction and evaluator behavior as evidence-ba
 - Existing Palang Mirror Sync automation ID `6ad9a407b9d481919c7145fbe4638dec` remains ENABLED; no duplicate or schedule change.
 - Automation run-start clock `2026-11-11T10:11:30+03:30` / `2026-11-11T06:41:30Z` is distinct from repository commits and Library metadata time. Library metadata time `2026-10-24T04:45:28.479773Z`; exact read-back operation time UNKNOWN.
 - Status: SOURCE DRIFT NONE; NORMALIZED MIRROR MATCH; EXACT BYTE MATCH FALSE; NO REWRITE; ROOT/QUEUE UNCHANGED; RUN-START MAIN NOT VERIFIED.
+
+
+## EVT-0264 — live mirror synchronization — 2026-11-12
+
+- [EVT-0264](../BEHAVIOR-TRACE/EVT-0264-LIVE-MIRROR-SYNC-RECHECK-2026-11-12.md) / [TIME-BINDING-EVT-0264](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0264-LIVE-MIRROR-SYNC-2026-11-12.md).
+- EVT-0263's missing time binding is restored at [TIME-BINDING-EVT-0263](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0263-LIVE-MIRROR-SYNC-2026-11-12.md).
+- Latest user root POINT-0/064; latest user-turn event EVT-0257; checkpoint CURRENT-115 v1.0.5; active queue NEXT-051 v1.0.40.
+- Repository source unchanged; Library v7 normalized match with one additional terminal LF; exact byte equality FALSE; no Library rewrite.
+- Audit and Portable RAHM Conformance passed on event commit SHA `726f3a575bfa049ceddda183ad55a9779e9af98b`; Evidence Gate created main `0d55261172ccab8fc37f7178f77eaf36eaf40569`, which remains NOT VERIFIED by those gates.
+- Issues #20/#21 OPEN; CURRENT-065/CURRENT-066 and overlay-manifest lineage OPEN / AMBIGUOUS; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.

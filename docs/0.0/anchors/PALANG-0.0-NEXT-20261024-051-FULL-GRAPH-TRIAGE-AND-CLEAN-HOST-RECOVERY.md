@@ -2,7 +2,7 @@
 
 - Stable ID: G6IP-RAHM-NEXT-051-20261024
 - Production ID: G6IP-RAHM-NEXT-051-20261024
-- Version: 1.0.39
+- Version: 1.0.40
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE
 - Project: Future AI / Palang Footprint — HAIF
 - Canonical queue: this file only
@@ -729,7 +729,7 @@ The previous blob at this path began with the Integration Queue README title and
 
 ## EVT-0262 — live mirror synchronization — 2026-11-11
 
-- Event: [EVT-0262](../BEHAVIOR-TRACE/EVT-0262-LIVE-MIRROR-SYNC-RECHECK-2026-11-11.md); time binding: [TIME-BINDING-EVT-0262](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0262-LIVE-MIRROR-SYNC-2026-11-11.md).
+- Event: [EVT-0262](../../architecture/BEHAVIOR-TRACE/EVT-0262-LIVE-MIRROR-SYNC-RECHECK-2026-11-11.md); time binding: [TIME-BINDING-EVT-0262](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0262-LIVE-MIRROR-SYNC-2026-11-11.md).
 - Run-start main: `336c12e415f41a61b0fa281772478674c4aac9dd`; comparison against `main` returned IDENTICAL (0 ahead / 0 behind).
 - Event commit: `4c1c63b8dff0e9b56c78566aac3f308d546f2e8e`, UTC `2026-11-11T06:50:02Z`, Tehran `2026-11-11T10:20:02.000+03:30`. Time-binding commit: `131fff1d2d78168916228e37305e0463f75f3876`, UTC `2026-11-11T06:50:04Z`, Tehran `2026-11-11T10:20:04.000+03:30`.
 - Latest user-turn root POINT-0/064; latest user-turn event EVT-0257; checkpoint CURRENT-115 v1.0.3; sole active queue NEXT-051 v1.0.38. Mirror-only; no new root, IN/OUT pair, checkpoint identity or NEXT-052.
@@ -742,3 +742,14 @@ The previous blob at this path began with the Integration Queue README title and
 - Existing Palang Mirror Sync automation ID `6ad9a407b9d481919c7145fbe4638dec` remains ENABLED; no duplicate or schedule change.
 - Automation run-start clock `2026-11-11T10:11:30+03:30` / `2026-11-11T06:41:30Z` is distinct from both repository commits and Library metadata time. Library metadata time `2026-10-24T04:45:28.479773Z`; exact read-back operation time UNKNOWN.
 - Status: SOURCE DRIFT NONE; NORMALIZED MIRROR MATCH; EXACT BYTE MATCH FALSE; NO REWRITE; ROOT/QUEUE UNCHANGED; RUN-START MAIN NOT VERIFIED.
+
+
+## EVT-0264 live mirror sync — 2026-11-12
+
+- [EVT-0263](../../architecture/BEHAVIOR-TRACE/EVT-0263-LIVE-MIRROR-SYNC-RECHECK-2026-11-12.md) and [TIME-BINDING-EVT-0263](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0263-LIVE-MIRROR-SYNC-2026-11-12.md) are preserved; the previously missing time-binding link is now restored.
+- [EVT-0264](../../architecture/BEHAVIOR-TRACE/EVT-0264-LIVE-MIRROR-SYNC-RECHECK-2026-11-12.md) and [TIME-BINDING-EVT-0264](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0264-LIVE-MIRROR-SYNC-2026-11-12.md) record this mirror-only run.
+- NEXT-051 remains OPEN / LIVING / IN PROGRESS / NOT COMPLETE and is the sole active queue, now v1.0.40. No NEXT-052.
+- Preserve POINT-0/016, POINT-0/017, POINT-0/018 / EVT-0180 and all later roots. Latest user-turn root remains POINT-0/064; CURRENT-115 remains the checkpoint identity.
+- Living Architecture Audit 43177904569 and Portable RAHM Conformance 43177904553 passed on exact SHA `726f3a575bfa049ceddda183ad55a9779e9af98b`; Evidence Gate 43177904648 advanced main to `0d55261172ccab8fc37f7178f77eaf36eaf40569`. That new main remains NOT VERIFIED by those gates.
+- CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS. Issues #20/#21 remain OPEN; forensic-original-blob recovery remains OPEN / NOT RECOVERED; BOART-FOLLOWUP-01 remains ACTIVE.
+- Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
