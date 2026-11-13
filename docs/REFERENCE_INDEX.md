@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-11-12 — EVT-0264 mirror-only sync under POINT-0/064 / CURRENT-115 / NEXT-051; source unchanged; Library v7 normalized match with one extra terminal LF; Audit/Conformance 43177904569 / 43177904553 passed on 726f3a5; Evidence Gate 43177904648 advanced main to 0d55261, which remains NOT VERIFIED by those gates.
+**Last Updated:** 2026-11-13 — EVT-0265 mirror-only sync under POINT-0/064 / EVT-0257 / CURRENT-115 / NEXT-051; source blob unchanged; Library v7 normalized match with one extra terminal LF; Audit 43381926543 and Portable RAHM Conformance 43381926557 passed on exact SHA ab8faa4c4d13c4d5f3f1f5d889005c22959672ca; Evidence Gate 43381926817 advanced main to d19a69dc874d114279b628cf91c1a0b6f2ac2915, which remains NOT VERIFIED by that pair.
 
 ## Canonical References
 
@@ -2411,4 +2411,12 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - Latest user-turn root POINT-0/064; latest user-turn event EVT-0257; checkpoint CURRENT-115 v1.0.5; sole active queue NEXT-051 v1.0.40.
 - Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, file ID `file_00000000942881f8a4a3833110229fb7`, version 7 (10,480 chars). Normalized content MATCH; exact byte equality FALSE by one terminal LF; no rewrite.
 - Living Architecture Audit 43177904569 and Portable RAHM Conformance 43177904553 both SUCCESS on exact SHA `726f3a575bfa049ceddda183ad55a9779e9af98b`. Evidence Gate 43177904648 SUCCESS on that same SHA and created current main `0d55261172ccab8fc37f7178f77eaf36eaf40569`; exact-current-main audit/conformance are NOT VERIFIED.
+- CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; Issues #20/#21 OPEN; NEXT-051 forensic recovery OPEN / NOT RECOVERED; BOART-FOLLOWUP-01 ACTIVE. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
+
+## EVT-0265 — live mirror synchronization — 2026-11-13
+
+- [EVT-0265](architecture/BEHAVIOR-TRACE/EVT-0265-LIVE-MIRROR-SYNC-RECHECK-2026-11-13.md) / [TIME-BINDING-EVT-0265](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0265-LIVE-MIRROR-SYNC-2026-11-13.md). Registration commit `ab8faa4c4d13c4d5f3f1f5d889005c22959672ca`, UTC `2026-11-13T06:54:14Z`, Tehran `2026-11-13T10:24:14+03:30`.
+- Latest user-turn root POINT-0/064; latest user-turn event EVT-0257; checkpoint CURRENT-115; sole active queue NEXT-051.
+- Source blob `de1b75f07241c9b313e476af5f1417177ff78c10`; Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, version 7. Normalized content MATCH; exact equality FALSE by one terminal LF; no rewrite.
+- Audit 43381926543 and Conformance 43381926557 both SUCCESS on exact SHA `ab8faa4c4d13c4d5f3f1f5d889005c22959672ca`. Evidence Gate 43381926817 created main `d19a69dc874d114279b628cf91c1a0b6f2ac2915`; exact-current-main Audit/Conformance were not found at integration start.
 - CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; Issues #20/#21 OPEN; NEXT-051 forensic recovery OPEN / NOT RECOVERED; BOART-FOLLOWUP-01 ACTIVE. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.

@@ -1,8 +1,8 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.33
-- Date: 2026-11-12
+- Version: 1.0.34
+- Date: 2026-11-13
 - Project: Future AI / Palang Footprint / HAIF
 
 ## مسیرهای بازیابی
@@ -1261,3 +1261,12 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Source unchanged; Library v7 normalized match with one extra terminal LF; exact byte equality FALSE; no rewrite.
 - Audit 43177904569 and Portable RAHM Conformance 43177904553 passed on exact SHA `726f3a575bfa049ceddda183ad55a9779e9af98b`; Evidence Gate 43177904648 advanced main to `0d55261172ccab8fc37f7178f77eaf36eaf40569`, which remains NOT VERIFIED by those gates.
 - CURRENT-065/CURRENT-066, overlay-manifest lineage, Issues #20/#21 and external destination/host gates remain open as documented.
+
+## EVT-0265 — live mirror synchronization — 2026-11-13
+
+- [EVT-0265](./EVT-0265-LIVE-MIRROR-SYNC-RECHECK-2026-11-13.md) / [TIME-BINDING-EVT-0265](./TIME-BINDING-EVT-0265-LIVE-MIRROR-SYNC-2026-11-13.md).
+- Event registration commit `ab8faa4c4d13c4d5f3f1f5d889005c22959672ca`, UTC `2026-11-13T06:54:14Z`, Tehran `2026-11-13T10:24:14+03:30`.
+- Mirror-only under POINT-0/064 / EVT-0257 / CURRENT-115 / NEXT-051. No new root, IN/OUT pair, checkpoint identity, or successor queue.
+- Source unchanged; Library v7 normalized match with one extra terminal LF; exact byte equality FALSE; no rewrite.
+- Audit 43381926543 and Portable RAHM Conformance 43381926557 both SUCCESS on exact SHA `ab8faa4c4d13c4d5f3f1f5d889005c22959672ca`; Evidence Gate 43381926817 advanced main to `d19a69dc874d114279b628cf91c1a0b6f2ac2915`, which remains NOT VERIFIED by that pair.
+- CURRENT-065/CURRENT-066, overlay-manifest lineage, Issues #20/#21, NEXT-051 forensic archive and external destination/host gates remain open as documented.

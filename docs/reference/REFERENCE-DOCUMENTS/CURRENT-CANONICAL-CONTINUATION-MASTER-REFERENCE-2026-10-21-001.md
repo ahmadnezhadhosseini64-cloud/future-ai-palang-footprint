@@ -3,7 +3,7 @@
 ## 0. شناسنامه، لنگر و وضعیت
 - **Stable ID / شناسهٔ پایدار:** CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001
 - **Production ID / شناسهٔ تولید:** CCCMR-2026-10-21-001
-- **Version / نسخه:** 1.0.6
+- **Version / نسخه:** 1.0.7
 - **Owner / مالک:** Ahmad Nezhadhosseini / احمد پلنگ
 - **Project / پروژه:** Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
 - **Architecture target / هدف معماری:** HAIF — Human–AI Interaction Future (آیندهٔ تعامل انسان و هوش مصنوعی)
@@ -883,3 +883,11 @@ The canonical live-destination audit source and its exact Library version-7 snap
 - Repository source blob `de1b75f07241c9b313e476af5f1417177ff78c10`; Library v7 normalized match with one extra terminal LF; exact byte match FALSE; no rewrite.
 - Audit and Portable RAHM Conformance passed on `726f3a575bfa049ceddda183ad55a9779e9af98b`; Evidence Gate advanced main to `0d55261172ccab8fc37f7178f77eaf36eaf40569`, which remains NOT VERIFIED by those gates.
 - CURRENT-065/CURRENT-066, overlay-manifest lineage, Issues #20/#21 and NEXT-051 forensic recovery remain OPEN. External destination and independent-host gates remain open.
+
+## Mirror-only continuity update — EVT-0265 (2026-11-13)
+
+- [EVT-0265](../../architecture/BEHAVIOR-TRACE/EVT-0265-LIVE-MIRROR-SYNC-RECHECK-2026-11-13.md) / [TIME-BINDING-EVT-0265](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0265-LIVE-MIRROR-SYNC-2026-11-13.md).
+- Latest user-turn root POINT-0/064 / EVT-0257; current checkpoint CURRENT-115; sole active queue NEXT-051. This mirror-only event creates no new root, IN/OUT pair, checkpoint identity, or queue.
+- Repository source blob `de1b75f07241c9b313e476af5f1417177ff78c10`; Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, version 7. Normalized match with one extra terminal LF; no rewrite.
+- Audit 43381926543 and Portable RAHM Conformance 43381926557 passed on exact SHA `ab8faa4c4d13c4d5f3f1f5d889005c22959672ca`. Evidence Gate 43381926817 advanced main to `d19a69dc874d114279b628cf91c1a0b6f2ac2915`; exact-head verification of that follow-up remains open.
+- CURRENT-065/CURRENT-066, overlay-manifest lineage, Issues #20/#21, NEXT-051 forensic recovery and external-destination/host gates remain OPEN / NOT VERIFIED / NOT RUN as applicable.

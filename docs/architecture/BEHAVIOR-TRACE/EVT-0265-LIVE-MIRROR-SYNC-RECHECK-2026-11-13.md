@@ -50,3 +50,13 @@
 
 - Status: SOURCE DRIFT NONE; LIBRARY NORMALIZED MATCH; EXACT BYTE MATCH FALSE BY ONE TERMINAL LF; NO SOURCE OR LIBRARY WRITE; ROOT/CHECKPOINT/QUEUE IDENTITY UNCHANGED; EXACT-HEAD LIVING ARCHITECTURE AUDIT PASS; EXACT-HEAD PORTABLE CONFORMANCE NOT FOUND.
 - Next: integrate this event and time binding into the existing indexes, CURRENT-115, NEXT-051, living masters, and integration queue; independently read back every changed file; then inspect new Actions runs by exact tested SHA. Continue pointer/manifest reconciliation and Issues #20/#21 without selecting a winner by inference.
+
+## Registration and integration-stage evidence — 2026-11-13
+
+- EVT-0265 registration commit: `ab8faa4c4d13c4d5f3f1f5d889005c22959672ca`; exact GitHub committer UTC `2026-11-13T06:54:14Z`; derived Asia/Tehran `2026-11-13T10:24:14+03:30`.
+- Registration commit parent: `67ea091067e5a5eaa8b188118361d059316b6914`.
+- Living Architecture Audit run [43381926543](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/43381926543): SUCCESS on exact SHA `ab8faa4c4d13c4d5f3f1f5d889005c22959672ca`.
+- Portable RAHM Conformance run [43381926557](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/43381926557): SUCCESS on the same exact SHA.
+- Evidence Gate run [43381926817](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/43381926817): SUCCESS on the same exact SHA; it created follow-up main `d19a69dc874d114279b628cf91c1a0b6f2ac2915` at `2026-11-13T06:54:22Z` / Tehran `2026-11-13T10:24:22+03:30`.
+- Integration-parent main at the start of this index/master integration: `d19a69dc874d114279b628cf91c1a0b6f2ac2915`. No exact-head Living Architecture Audit or Portable RAHM Conformance run on that Evidence Gate follow-up was found at integration start.
+- The event registration commit is distinct from this later integration commit. The exact final-change commit for the files updated in this integration is read from GitHub metadata after the write and reported separately.

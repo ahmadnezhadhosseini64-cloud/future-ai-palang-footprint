@@ -2,7 +2,7 @@
 
 - Stable ID / شناسهٔ پایدار: `PALANG-LIVING-MASTER-CONTINUITY-GRAPH-2026-10-22-001`
 - Production ID / شناسهٔ تولید: `PLMCG-2026-10-22-001`
-- Version / نسخه: 1.0.5
+- Version / نسخه: 1.0.6
 - Owner / مالک: احمد پلنگ (Ahmad Nezhadhosseini)
 - Project / پروژه: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
 - Architecture / معماری: HAIF — Human–AI Interaction Future (آیندهٔ تعامل انسان و هوش مصنوعی)
@@ -286,3 +286,11 @@
 - Source unchanged; Library v7 normalized match with one extra terminal LF; exact byte match FALSE; no rewrite.
 - Audit and Conformance passed on event commit `726f3a575bfa049ceddda183ad55a9779e9af98b`; Evidence Gate created main `0d55261172ccab8fc37f7178f77eaf36eaf40569`, which remains NOT VERIFIED by those gates.
 - CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; Issues #20/#21 OPEN; NEXT-051 forensic recovery OPEN / NOT RECOVERED; external destination and independent-host gates remain open.
+
+## Mirror-only continuity update — EVT-0265 (2026-11-13)
+
+- Latest user-turn root remains POINT-0/064 / EVT-0257; execution checkpoint CURRENT-115; active queue NEXT-051. No new root or successor queue was created.
+- [EVT-0265](../../architecture/BEHAVIOR-TRACE/EVT-0265-LIVE-MIRROR-SYNC-RECHECK-2026-11-13.md) and [TIME-BINDING-EVT-0265](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0265-LIVE-MIRROR-SYNC-2026-11-13.md) record the mirror-only run.
+- Source unchanged; Library v7 normalized match with one extra terminal LF; no rewrite.
+- Audit and Portable RAHM Conformance passed on exact event-registration SHA `ab8faa4c4d13c4d5f3f1f5d889005c22959672ca`; Evidence Gate advanced main to `d19a69dc874d114279b628cf91c1a0b6f2ac2915`, which requires independent exact-head verification.
+- Preserve all historical roots, the EVT-0177 / EVT-0178 / EVT-0179 lineage, and the open CURRENT-065/CURRENT-066 pointer conflict. Issues #20/#21 and external host/destination gates remain open.

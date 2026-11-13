@@ -4,7 +4,7 @@
 - Root: [POINT-0/064 (0+)](GPT6-RAHM-USER-POINT-0-20261107-064-DAILY-NEWS-CADENCE-AND-24H-CONTINUITY.md)
 - Parent: [POINT-0/063](GPT6-RAHM-USER-POINT-0-20261107-063-GRAPH-WIDE-CONTINUITY-AND-ANCHORING.md) → [CURRENT-114](PALANG-0.0-CURRENT-20261107-114-GRAPH-WIDE-CONTINUITY.md) → existing [NEXT-051](PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
 - Chain: POINT-0/064 → IN-103 + OUT-102 → EVT-0256 → TIME-BINDING-EVT-0256 → CURRENT-115 → NEXT-051
-- Version: 1.0.5
+- Version: 1.0.6
 - Status: OPEN / ACTIVE / REPOSITORY CHAIN READ-BACK VERIFIED / HANDOFF REGISTERED / AUTOMATION CONFIGURATION VERIFIED / RUNTIME TESTS PENDING
 - Root commit: 627e178322e23d26e54bf3dc1b852351bd5f8f0f
 - UTC: 2026-11-07T18:28:57Z
@@ -217,3 +217,12 @@ Repository registration is not proof of future scheduled delivery or runtime beh
 - Audit 43177904569 and Portable RAHM Conformance 43177904553 passed on exact SHA `726f3a575bfa049ceddda183ad55a9779e9af98b`; Evidence Gate 43177904648 passed on that SHA and created main `0d55261172ccab8fc37f7178f77eaf36eaf40569`. That main is NOT VERIFIED by the preceding audit/conformance pair.
 - CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; Issues #20/#21 remain OPEN; NEXT-051 forensic recovery remains OPEN / NOT RECOVERED; BOART-FOLLOWUP-01 remains ACTIVE.
 - Buffer/Persistent Memory: NOT VERIFIED; Dropbox: OPEN / NOT VERIFIED; external independent-host recovery: NOT RUN.
+
+## Mirror-only synchronization — EVT-0265 (2026-11-13)
+
+- [EVT-0265](../../architecture/BEHAVIOR-TRACE/EVT-0265-LIVE-MIRROR-SYNC-RECHECK-2026-11-13.md) / [TIME-BINDING-EVT-0265](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0265-LIVE-MIRROR-SYNC-2026-11-13.md).
+- Event registration commit `ab8faa4c4d13c4d5f3f1f5d889005c22959672ca`, UTC `2026-11-13T06:54:14Z`, Tehran `2026-11-13T10:24:14+03:30`.
+- Root remains POINT-0/064; latest user-turn event remains EVT-0257; checkpoint remains CURRENT-115; sole active queue remains NEXT-051. No new root, IN/OUT pair, checkpoint identity, or NEXT-052.
+- Source unchanged; Library v7 normalized match with one extra terminal LF; exact equality FALSE; no source or Library write.
+- Audit 43381926543 and Portable RAHM Conformance 43381926557 both SUCCESS on exact SHA `ab8faa4c4d13c4d5f3f1f5d889005c22959672ca`. Evidence Gate 43381926817 succeeded on that SHA and advanced main to `d19a69dc874d114279b628cf91c1a0b6f2ac2915`; that follow-up main was not covered by the preceding pair.
+- CURRENT-065/CURRENT-066, overlay-manifest lineage, Issues #20/#21, NEXT-051 forensic recovery and external destination/host gates remain OPEN / NOT VERIFIED / NOT RUN as applicable.

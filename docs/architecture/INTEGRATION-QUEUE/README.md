@@ -3,13 +3,13 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.10.37
-- Date: 2026-11-12
+- Version: 1.10.38
+- Date: 2026-11-13
 - Exact Time: EVT-0261 event commit UTC `2026-11-10T06:47:53Z` / Tehran `2026-11-10T10:17:53+03:30`; initial time-binding commit UTC `2026-11-10T06:48:18Z` / Tehran `2026-11-10T10:18:18+03:30`.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: ACTIVE / LIVING — latest user-turn root POINT-0/064 (0+); additive handoff EVT-0257; current checkpoint CURRENT-115; sole active queue NEXT-051; living master target v1.7.60; latest mirror-only event EVT-0260. Source/Library v7 normalized content and semantic fields match; exact equality FALSE by one terminal LF; no source or Library write. Latest full audit/conformance pair 42575319320 / 42575319373 passed on exact SHA 3d4c4b9e6929e894f1bc78c8962c4ef05b94ff0a; Evidence Gate 42575319341 succeeded on that same tested SHA and advanced main to 7b6c4e3aa93fef0e9ad3be04ef96b6aa041d8e61. Exact-current-main audit/conformance remain NOT VERIFIED. CURRENT-065/CURRENT-066, overlay-manifest lineage, Issues #20/#21, NEXT-051 forensic archive and historic graph/identity/parent/time reconciliation remain OPEN.
+- Status: ACTIVE / LIVING — latest user-turn root POINT-0/064 (0+); latest user-turn event EVT-0257; current checkpoint CURRENT-115; sole active queue NEXT-051; latest mirror-only event EVT-0265. Source blob de1b75f07241c9b313e476af5f1417177ff78c10 unchanged; Library v7 normalized content match with one extra terminal LF; no source or Library write. Audit 43381926543 and Portable RAHM Conformance 43381926557 passed on exact SHA ab8faa4c4d13c4d5f3f1f5d889005c22959672ca; Evidence Gate 43381926817 advanced main to d19a69dc874d114279b628cf91c1a0b6f2ac2915, which remains NOT VERIFIED by that pair. CURRENT-065/CURRENT-066 and overlay-manifest lineage, Issues #20/#21, NEXT-051 forensic archive and historic graph/identity/parent/time reconciliation remain OPEN.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
@@ -2707,3 +2707,10 @@ Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-11
 - Source blob `de1b75f07241c9b313e476af5f1417177ff78c10`; Library v7 normalized match, one extra terminal LF; no mirror rewrite.
 - Audit 43177904569 and Portable RAHM Conformance 43177904553 passed on `726f3a575bfa049ceddda183ad55a9779e9af98b`; Evidence Gate 43177904648 advanced main to `0d55261172ccab8fc37f7178f77eaf36eaf40569`. Current main remains NOT VERIFIED by those gates.
 - CURRENT-065/CURRENT-066 and overlay-manifest lineage OPEN / AMBIGUOUS; Issues #20/#21 OPEN; NEXT-051 forensic archive OPEN / NOT RECOVERED; BOART-FOLLOWUP-01 ACTIVE; external gates remain NOT VERIFIED / NOT RUN.
+
+## EVT-0265 — mirror-only synchronization
+
+- Event [EVT-0265](../BEHAVIOR-TRACE/EVT-0265-LIVE-MIRROR-SYNC-RECHECK-2026-11-13.md) / [TIME-BINDING-EVT-0265](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0265-LIVE-MIRROR-SYNC-2026-11-13.md), registration commit `ab8faa4c4d13c4d5f3f1f5d889005c22959672ca` at UTC `2026-11-13T06:54:14Z` / Tehran `2026-11-13T10:24:14+03:30`.
+- Root/checkpoint/queue identity unchanged: POINT-0/064 / CURRENT-115 / NEXT-051. No NEXT-052.
+- Audit and Portable RAHM Conformance passed on exact event-registration SHA `ab8faa4c4d13c4d5f3f1f5d889005c22959672ca`; Evidence Gate advanced main to `d19a69dc874d114279b628cf91c1a0b6f2ac2915`. Exact-current-main gates remained unverified at integration start.
+- Continue pointer/manifest reconciliation, source/rule census, runtime/cold-start, package identity and independent-host proof. Do not close Issues #20/#21 without their separate acceptance criteria.

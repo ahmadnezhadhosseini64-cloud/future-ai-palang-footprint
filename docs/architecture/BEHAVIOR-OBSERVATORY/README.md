@@ -2,11 +2,11 @@
 
 - Stable ID: HUMAN-AI-INTERACTION-BEHAVIOR-OBSERVATORY-2026-10-22-001
 - Production ID: HAIBO-HAIF-2026-10-22-001
-- Version: 1.0.20
+- Version: 1.0.21
 - Owner: احمد پلنگ / Ahmad Nezhadhosseini
 - Project: Future AI / Palang Footprint / HAIF
 - Canonical path: `docs/architecture/BEHAVIOR-OBSERVATORY/README.md`
-- Status: ACTIVE / LIVING in repository; EVT-0261 and its time binding are integrated. Source/Library v7 normalized content and semantic fields match; exact equality FALSE by one additional terminal LF; no source or Library write. Latest full audit/conformance pair 42575319320 / 42575319373 passed on exact SHA 3d4c4b9e6929e894f1bc78c8962c4ef05b94ff0a; Evidence Gate 42575319341 passed on that same tested SHA and advanced main to 7b6c4e3aa93fef0e9ad3be04ef96b6aa041d8e61. That follow-up main was NOT VERIFIED by the preceding pair; a fresh exact-final-main audit/conformance is required. CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; Issues #20/#21 OPEN; external destination and host gates remain OPEN / NOT VERIFIED / NOT RUN.
+- Status: ACTIVE / LIVING in repository; latest mirror-only event EVT-0265. Source/Library v7 normalized content and semantic fields match; exact equality FALSE by one extra terminal LF; no source or Library write. Audit 43381926543 and Portable RAHM Conformance 43381926557 passed on exact SHA ab8faa4c4d13c4d5f3f1f5d889005c22959672ca; Evidence Gate 43381926817 advanced main to d19a69dc874d114279b628cf91c1a0b6f2ac2915, which remains NOT VERIFIED by that pair. CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; Issues #20/#21 OPEN; external destination and host gates remain OPEN / NOT VERIFIED / NOT RUN.
 - Time rule: UTC is canonical; Asia/Tehran time is derived from the same UTC instant (+03:30 for this date). Unknown timestamps remain UNKNOWN, never guessed.
 - Independent anchor: `PALANG-BEHAVIOR-OBSERVATION-AND-RECOVERY-TEST-2026-10-22-001`
 - Related event: `EVT-0034`
@@ -404,3 +404,11 @@ Continue collecting observable interaction and evaluator behavior as evidence-ba
 - Repository source unchanged; Library v7 normalized match with one additional terminal LF; exact byte equality FALSE; no Library rewrite.
 - Audit and Portable RAHM Conformance passed on event commit SHA `726f3a575bfa049ceddda183ad55a9779e9af98b`; Evidence Gate created main `0d55261172ccab8fc37f7178f77eaf36eaf40569`, which remains NOT VERIFIED by those gates.
 - Issues #20/#21 OPEN; CURRENT-065/CURRENT-066 and overlay-manifest lineage OPEN / AMBIGUOUS; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
+
+## Mirror-only synchronization — EVT-0265 (2026-11-13)
+
+- [EVT-0265](../BEHAVIOR-TRACE/EVT-0265-LIVE-MIRROR-SYNC-RECHECK-2026-11-13.md) / [TIME-BINDING-EVT-0265](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0265-LIVE-MIRROR-SYNC-2026-11-13.md).
+- Root remains POINT-0/064; checkpoint CURRENT-115; sole active queue NEXT-051.
+- Canonical source unchanged; Library v7 differs only by one additional terminal LF; no rewrite.
+- Exact event-registration SHA `ab8faa4c4d13c4d5f3f1f5d889005c22959672ca` passed Living Architecture Audit 43381926543 and Portable RAHM Conformance 43381926557. Evidence Gate 43381926817 advanced main to `d19a69dc874d114279b628cf91c1a0b6f2ac2915`; that follow-up needs its own exact-SHA verification.
+- Buffer/Persistent Memory remain NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
