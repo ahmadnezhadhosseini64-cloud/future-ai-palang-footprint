@@ -1,7 +1,7 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.34
+- Version: 1.0.35
 - Date: 2026-11-13
 - Project: Future AI / Palang Footprint / HAIF
 
@@ -1270,3 +1270,12 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Source unchanged; Library v7 normalized match with one extra terminal LF; exact byte equality FALSE; no rewrite.
 - Audit 43381926543 and Portable RAHM Conformance 43381926557 both SUCCESS on exact SHA `ab8faa4c4d13c4d5f3f1f5d889005c22959672ca`; Evidence Gate 43381926817 advanced main to `d19a69dc874d114279b628cf91c1a0b6f2ac2915`, which remains NOT VERIFIED by that pair.
 - CURRENT-065/CURRENT-066, overlay-manifest lineage, Issues #20/#21, NEXT-051 forensic archive and external destination/host gates remain open as documented.
+
+## EVT-0266 — mirror-only synchronization — 2026-11-14
+
+- [EVT-0266](./EVT-0266-LIVE-MIRROR-SYNC-RECHECK-2026-11-14.md) / [TIME-BINDING-EVT-0266](./TIME-BINDING-EVT-0266-LIVE-MIRROR-SYNC-2026-11-14.md).
+- Latest user-turn root POINT-0/064 / EVT-0257; checkpoint CURRENT-115 v1.0.6; sole active queue NEXT-051 v1.0.41. Mirror-only: no new root, IN/OUT pair, checkpoint identity, or NEXT-052.
+- Source blob `de1b75f07241c9b313e476af5f1417177ff78c10`; Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, exact version 7. Normalized full content MATCH; exact equality FALSE by one extra terminal LF; no source or Library write.
+- Living Architecture Audit 43414527299 passed on exact current-main SHA `12a4d4427e60ea0dfecf47de7e45791b64c56980`. Latest Portable RAHM Conformance 43382337406 passed on parent SHA `a86dc13ba026ccf53c536f5ae68f989fc7cab9c6`; exact-current-main conformance remains NOT VERIFIED.
+- CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; Issues #20/#21 OPEN; NEXT-051 forensic archive OPEN / NOT RECOVERED; BOART-FOLLOWUP-01 ACTIVE.
+- Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
