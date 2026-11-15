@@ -1,8 +1,8 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.35
-- Date: 2026-11-13
+- Version: 1.0.36
+- Date: 2026-11-15
 - Project: Future AI / Palang Footprint / HAIF
 
 ## مسیرهای بازیابی
@@ -1279,3 +1279,11 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Living Architecture Audit 43414527299 passed on exact current-main SHA `12a4d4427e60ea0dfecf47de7e45791b64c56980`. Latest Portable RAHM Conformance 43382337406 passed on parent SHA `a86dc13ba026ccf53c536f5ae68f989fc7cab9c6`; exact-current-main conformance remains NOT VERIFIED.
 - CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; Issues #20/#21 OPEN; NEXT-051 forensic archive OPEN / NOT RECOVERED; BOART-FOLLOWUP-01 ACTIVE.
 - Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
+
+## EVT-0267 — live mirror synchronization — 2026-11-15
+
+- [EVT-0267](./EVT-0267-LIVE-MIRROR-SYNC-RECHECK-2026-11-15.md) / [TIME-BINDING-EVT-0267](./TIME-BINDING-EVT-0267-LIVE-MIRROR-SYNC-2026-11-15.md).
+- Mirror-only under POINT-0/064 / EVT-0257 / CURRENT-115 / NEXT-051. No new root or NEXT-052.
+- Repository source blob de1b75f07241c9b313e476af5f1417177ff78c10 is unchanged. Library v7 under stable ID libfile_7ac3c9a6ec14819198eb2751e204aa48 remains normalized-match with one extra terminal LF; no source or Library rewrite.
+- Run-start main 7ff74e0ad2ad7a2f1c5bafbc7ab9510530b5bca1 had Living Architecture Audit 43585962833 PASS on that exact SHA; exact-head Portable RAHM Conformance was not found. Latest conformance 43566715588 passed on parent SHA 51482601340c9ba93595c7a99fbc7ef7a70f6833.
+- CURRENT-065/CURRENT-066 and overlay manifest remain OPEN / AMBIGUOUS; Issues #20/#21 OPEN; NEXT-051 remains sole active queue; external host and destination gates remain OPEN / NOT VERIFIED / NOT RUN.

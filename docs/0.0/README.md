@@ -1995,3 +1995,12 @@ The canonical chain is [POINT-0/032](./anchors/GPT6-RAHM-USER-POINT-0-20261026-0
 - Canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, exact version 7 (10,480 chars). Normalized full content and semantic fields MATCH; exact equality FALSE by one additional terminal LF. No source or Library write; supported `source_file_ref` was not used because unchanged-source policy prohibits a rewrite in this case.
 - Latest full audit/conformance pair: Living Architecture Audit 42345139960 and Portable RAHM Conformance 42345140040 both SUCCESS on exact SHA `af0fdb89c2e357661a7a8703776174cf78016df9`. Latest Evidence Gate 42454843737 succeeded on exact tested SHA `07b3e6b0653c4a3299cfec3ed4f997db01f0a95f`; its evidence commit is not an audit or conformance result. Exact-current-main audit/conformance remain NOT VERIFIED.
 - CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; `winner_selected=false`. Issues #20/#21 OPEN; NEXT-051 forensic archive OPEN / NOT RECOVERED; BOART-FOLLOWUP-01 ACTIVE. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
+
+## Mirror-only synchronization — EVT-0267 (2026-11-15)
+
+- [EVT-0267](../architecture/BEHAVIOR-TRACE/EVT-0267-LIVE-MIRROR-SYNC-RECHECK-2026-11-15.md) / [TIME-BINDING-EVT-0267](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0267-LIVE-MIRROR-SYNC-2026-11-15.md).
+- Latest user-turn root remains POINT-0/064 / EVT-0257; current checkpoint CURRENT-115; sole active queue NEXT-051. No new root or NEXT-052.
+- Preserve POINT-0/016, POINT-0/017, POINT-0/018 / EVT-0180 and every later point; preserve EVT-0177/time binding, canonical EVT-0178, EVT-0179 and the quarantined duplicate-number draft.
+- CURRENT-065/CURRENT-066 and the CURRENT-065 overlay manifest remain OPEN / AMBIGUOUS; no pointer winner is inferred. Issues #20/#21 remain OPEN.
+- Source blob de1b75f07241c9b313e476af5f1417177ff78c10 is unchanged; Library v7 remains normalized-match with one extra terminal LF; no source or Library rewrite.
+- Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN. Continue NEXT-051 only.

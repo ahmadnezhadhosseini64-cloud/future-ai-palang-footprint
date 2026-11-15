@@ -100,7 +100,7 @@ Repository registration is not proof of future scheduled delivery or runtime beh
 - Root: [POINT-0/064 (0+)](GPT6-RAHM-USER-POINT-0-20261107-064-DAILY-NEWS-CADENCE-AND-24H-CONTINUITY.md)
 - Parent: [POINT-0/063](GPT6-RAHM-USER-POINT-0-20261107-063-GRAPH-WIDE-CONTINUITY-AND-ANCHORING.md) → [CURRENT-114](PALANG-0.0-CURRENT-20261107-114-GRAPH-WIDE-CONTINUITY.md) → existing [NEXT-051](PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
 - Chain: POINT-0/064 → IN-103 + OUT-102 → EVT-0256 → TIME-BINDING-EVT-0256 → CURRENT-115 → NEXT-051
-- Version: 1.0.3
+- Version: 1.0.4
 - Status: OPEN / ACTIVE / REPOSITORY CHAIN READ-BACK VERIFIED / HANDOFF REGISTERED / AUTOMATION CONFIGURATION VERIFIED / RUNTIME TESTS PENDING
 - Root commit: 627e178322e23d26e54bf3dc1b852351bd5f8f0f
 - UTC: 2026-11-07T18:28:57Z
@@ -235,3 +235,10 @@ Repository registration is not proof of future scheduled delivery or runtime beh
 - Living Architecture Audit 43414527299 passed on exact current-main SHA `12a4d4427e60ea0dfecf47de7e45791b64c56980`. Latest Portable RAHM Conformance 43382337406 passed on parent SHA `a86dc13ba026ccf53c536f5ae68f989fc7cab9c6`; exact-current-main conformance remains NOT VERIFIED.
 - CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; Issues #20/#21 OPEN; NEXT-051 forensic archive OPEN / NOT RECOVERED; BOART-FOLLOWUP-01 ACTIVE.
 - Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
+
+## Mirror-only synchronization — EVT-0267 (2026-11-15)
+
+- [EVT-0267](../../architecture/BEHAVIOR-TRACE/EVT-0267-LIVE-MIRROR-SYNC-RECHECK-2026-11-15.md) / [TIME-BINDING-EVT-0267](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0267-LIVE-MIRROR-SYNC-2026-11-15.md).
+- Root remains POINT-0/064; latest user-turn event remains EVT-0257; checkpoint identity remains CURRENT-115; sole active queue remains NEXT-051. No new root, IN/OUT pair, or NEXT-052.
+- Version reconciliation: the directly read CURRENT-115 header was 1.0.3, while EVT-0266 and some parent summaries referenced 1.0.6. This update advances the observed header 1.0.3 → 1.0.4 and preserves the conflicting 1.0.6 reference as an OPEN discrepancy; no unsupported version is adopted.
+- The source/Library normalized match, one-terminal-LF delta, no-rewrite decision, current-main SHA, Actions evidence and all open destination/host gates are recorded in EVT-0267 and its time binding.

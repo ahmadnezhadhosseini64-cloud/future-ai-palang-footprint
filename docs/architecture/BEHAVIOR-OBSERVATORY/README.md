@@ -2,11 +2,11 @@
 
 - Stable ID: HUMAN-AI-INTERACTION-BEHAVIOR-OBSERVATORY-2026-10-22-001
 - Production ID: HAIBO-HAIF-2026-10-22-001
-- Version: 1.0.22
+- Version: 1.0.23
 - Owner: احمد پلنگ / Ahmad Nezhadhosseini
 - Project: Future AI / Palang Footprint / HAIF
 - Canonical path: `docs/architecture/BEHAVIOR-OBSERVATORY/README.md`
-- Status: ACTIVE / LIVING in repository; latest mirror-only event EVT-0266. Source/Library v7 normalized content and semantic fields match; exact equality FALSE by one extra terminal LF; no source or Library write. Living Architecture Audit 43414527299 passed on exact current main 12a4d4427e60ea0dfecf47de7e45791b64c56980; latest Portable RAHM Conformance 43382337406 passed on parent SHA a86dc13ba026ccf53c536f5ae68f989fc7cab9c6, so exact-current-main conformance remains NOT VERIFIED. CURRENT-065/CURRENT-066 and overlay-manifest lineage OPEN / AMBIGUOUS; Issues #20/#21 OPEN; external destination and host gates OPEN / NOT VERIFIED / NOT RUN.
+- Status: ACTIVE / LIVING in repository; latest mirror-only event EVT-0267 under POINT-0/064 / EVT-0257 / CURRENT-115 / NEXT-051. Source blob de1b75f07241c9b313e476af5f1417177ff78c10 unchanged; Library v7 normalized content and semantic fields match with one extra terminal LF; exact equality FALSE; no source or Library write. Run-start main 7ff74e0ad2ad7a2f1c5bafbc7ab9510530b5bca1 passed Living Architecture Audit 43585962833 on that exact SHA; exact-head Portable RAHM Conformance was not found (latest pass 43566715588 on 51482601340c9ba93595c7a99fbc7ef7a70f6833). CURRENT-065/CURRENT-066 and overlay-manifest lineage OPEN / AMBIGUOUS; Issues #20/#21 OPEN; external destination and host gates OPEN / NOT VERIFIED / NOT RUN.
 - Time rule: UTC is canonical; Asia/Tehran time is derived from the same UTC instant (+03:30 for this date). Unknown timestamps remain UNKNOWN, never guessed.
 - Independent anchor: `PALANG-BEHAVIOR-OBSERVATION-AND-RECOVERY-TEST-2026-10-22-001`
 - Related event: `EVT-0034`
@@ -421,3 +421,9 @@ Continue collecting observable interaction and evaluator behavior as evidence-ba
 - Living Architecture Audit 43414527299 passed on exact current-main SHA `12a4d4427e60ea0dfecf47de7e45791b64c56980`. Latest Portable RAHM Conformance 43382337406 passed on parent SHA `a86dc13ba026ccf53c536f5ae68f989fc7cab9c6`; exact-current-main conformance remains NOT VERIFIED.
 - CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; Issues #20/#21 OPEN; NEXT-051 forensic archive OPEN / NOT RECOVERED; BOART-FOLLOWUP-01 ACTIVE.
 - Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
+
+## EVT-0267 — mirror-only synchronization — 2026-11-15
+
+- [EVT-0267](../BEHAVIOR-TRACE/EVT-0267-LIVE-MIRROR-SYNC-RECHECK-2026-11-15.md) / [TIME-BINDING-EVT-0267](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0267-LIVE-MIRROR-SYNC-2026-11-15.md).
+- No source or Library rewrite: normalized content/semantic match; one additional terminal LF remains in Library.
+- Preserve CURRENT-065/CURRENT-066 and overlay-manifest ambiguity, Issues #20/#21, NEXT-051 and all unverified external/host gates.

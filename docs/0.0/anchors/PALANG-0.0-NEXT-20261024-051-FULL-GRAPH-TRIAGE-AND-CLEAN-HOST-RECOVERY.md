@@ -2,7 +2,7 @@
 
 - Stable ID: G6IP-RAHM-NEXT-051-20261024
 - Production ID: G6IP-RAHM-NEXT-051-20261024
-- Version: 1.0.42
+- Version: 1.0.43
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE
 - Project: Future AI / Palang Footprint — HAIF
 - Canonical queue: this file only
@@ -770,3 +770,10 @@ The previous blob at this path began with the Integration Queue README title and
 - Living Architecture Audit 43414527299 passed on exact current-main SHA `12a4d4427e60ea0dfecf47de7e45791b64c56980`. Latest Portable RAHM Conformance 43382337406 passed on parent SHA `a86dc13ba026ccf53c536f5ae68f989fc7cab9c6`; exact-current-main conformance remains NOT VERIFIED.
 - CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; Issues #20/#21 OPEN; NEXT-051 forensic archive OPEN / NOT RECOVERED; BOART-FOLLOWUP-01 ACTIVE.
 - Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
+
+## Latest mirror-only continuation — EVT-0267 (2026-11-15)
+
+- [EVT-0267](../../architecture/BEHAVIOR-TRACE/EVT-0267-LIVE-MIRROR-SYNC-RECHECK-2026-11-15.md) / [TIME-BINDING-EVT-0267](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0267-LIVE-MIRROR-SYNC-2026-11-15.md).
+- Latest user-turn root remains POINT-0/064 / EVT-0257; current checkpoint remains CURRENT-115 (header version advanced from directly read 1.0.3 to 1.0.4; earlier 1.0.6 references remain a documented discrepancy); this file remains the sole active queue, now v1.0.43.
+- Mirror-only: no new user root, IN/OUT pair, checkpoint identity, or successor queue. NEXT-052 is not created.
+- Continue exact-final-SHA audit/conformance, CURRENT-065/CURRENT-066 and overlay-manifest lineage, Issues #20/#21, BOART-FOLLOWUP-01, historic graph/identity reconciliation, package proof, and clean-host/independent-host recovery. Preserve all unverified gates.
