@@ -2,6 +2,7 @@
 
 - Event: [EVT-0268](./EVT-0268-LIVE-MIRROR-SYNC-RECHECK-2026-11-16.md)
 - Stable ID: PALANG-TIME-BINDING-EVT-0268-2026-11-16
+- Version: 1.0.1 (post-binding Actions evidence addendum)
 - Canonical clock: actual last-change Git commit timestamp in UTC; Asia/Tehran is derived from the same instant.
 - Run observation UTC: 2026-11-16T06:50:39Z; derived Tehran: 2026-11-16T10:20:39+03:30. This is the scheduled-run observation time, not a Git commit or Actions workflow start.
 - Run-start main SHA: 576d20a23ec469e043c93b2f6f68457ef991d7e3; its commit UTC: 2026-11-15T06:28:19Z; derived Tehran: 2026-11-15T09:58:19+03:30.
@@ -42,4 +43,15 @@ All runs below were triggered by push to exact tested SHA 8b37035496d961850f5cea
 - Library metadata modified UTC is the stored Library metadata timestamp.
 - Library listing observation UTC is the listing response timestamp, not the exact content-read operation time.
 - Exact Library content-read operation time: UNKNOWN.
-- This time-binding file's own final-change commit timestamp is to be read independently from Git commit metadata after creation; it is not self-asserted here.
+- This time-binding file's initial creation commit was cb0e46eb769da0a8babb89290e3256e5d8e45765 at UTC 2026-11-16T07:03:03Z / Tehran 2026-11-16T10:33:03+03:30. This addendum creates a later final-change commit; its exact timestamp is independently read from Git metadata and reported outside the file.
+
+
+## Subsequent Actions on the initial time-binding commit
+
+All runs in this section tested the exact commit SHA `cb0e46eb769da0a8babb89290e3256e5d8e45765` and started at UTC `2026-11-16T07:03:06Z`.
+
+- Living Architecture Audit run `43821035465`: SUCCESS on exact SHA `cb0e46eb769da0a8babb89290e3256e5d8e45765`. Audit confirmed the ten newly created time-binding references now resolve: missing local links returned to 20. Remaining counts: 23 Stable-ID collision groups (22 reviewed, 1 open); 74 Production-ID collision groups (2 reviewed, 72 open); 5 Reference-ID collision groups (all open); 46 event-number collision groups (38 reviewed, 8 open); 11 exact-content duplicate groups; 79 declared parent edges, 2 unresolved, 0 ambiguous.
+- Portable RAHM Conformance run `43821035546`: SUCCESS on exact SHA `cb0e46eb769da0a8babb89290e3256e5d8e45765`. Existing starter ZIP rebuild passed; artifact upload and download round-trip passed; artifact ID `14205210359`; uploaded/downloaded ZIP digest `02ba061a7279511a536a7924f2b9a8fe96b168f87f2a86b5d626a7b557ef15e7`; source commit in the conformance receipt equals the tested SHA. Extracted ZIP tests passed.
+- The earlier Portable RAHM Conformance failure `43820888295` on `8b37035496d961850f5cea8475e2eaf48b57536f` remains durable evidence. The subsequent exact-SHA run passed and successfully uploaded/downloaded the expected artifact name, but the original transient artifact-not-found root cause is not conclusively diagnosed.
+- Evidence Gate run `43821035506`: SUCCESS on exact tested SHA `cb0e46eb769da0a8babb89290e3256e5d8e45765`; it created main `94e02c3ef9b92d71fe8990165292587207749c8c` at UTC `2026-11-16T07:03:11Z`, derived Tehran `2026-11-16T10:33:11+03:30`.
+- No Actions run was found with exact tested SHA `94e02c3ef9b92d71fe8990165292587207749c8c`. This Evidence Gate follow-up HEAD remains NOT VERIFIED by an exact-SHA Living Architecture Audit and Portable RAHM Conformance pair.
