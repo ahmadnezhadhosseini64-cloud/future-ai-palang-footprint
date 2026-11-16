@@ -1,8 +1,8 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.36
-- Date: 2026-11-15
+- Version: 1.0.37
+- Date: 2026-11-16
 - Project: Future AI / Palang Footprint / HAIF
 
 ## مسیرهای بازیابی
@@ -1287,3 +1287,11 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Repository source blob de1b75f07241c9b313e476af5f1417177ff78c10 is unchanged. Library v7 under stable ID libfile_7ac3c9a6ec14819198eb2751e204aa48 remains normalized-match with one extra terminal LF; no source or Library rewrite.
 - Run-start main 7ff74e0ad2ad7a2f1c5bafbc7ab9510530b5bca1 had Living Architecture Audit 43585962833 PASS on that exact SHA; exact-head Portable RAHM Conformance was not found. Latest conformance 43566715588 passed on parent SHA 51482601340c9ba93595c7a99fbc7ef7a70f6833.
 - CURRENT-065/CURRENT-066 and overlay manifest remain OPEN / AMBIGUOUS; Issues #20/#21 OPEN; NEXT-051 remains sole active queue; external host and destination gates remain OPEN / NOT VERIFIED / NOT RUN.
+
+## EVT-0268 — live mirror synchronization — 2026-11-16
+
+- [EVT-0268](./EVT-0268-LIVE-MIRROR-SYNC-RECHECK-2026-11-16.md) / [TIME-BINDING-EVT-0268](./TIME-BINDING-EVT-0268-LIVE-MIRROR-SYNC-2026-11-16.md).
+- Mirror-only under POINT-0/064 / EVT-0257 / CURRENT-115 / NEXT-051. No new root, IN/OUT pair, checkpoint identity or NEXT-052.
+- Canonical source blob de1b75f07241c9b313e476af5f1417177ff78c10 is unchanged. Library v7 under stable ID libfile_7ac3c9a6ec14819198eb2751e204aa48 remains normalized-match with one extra terminal LF; no source or Library rewrite.
+- Latest Audit 43685575943 and Portable RAHM Conformance 43685576097 passed on exact SHA bf97fdf8a6a349fb57d112f07ba29a8d885279ed. Evidence Gate 43685575928 created current run-start main 576d20a23ec469e043c93b2f6f68457ef991d7e3; that follow-up has no exact-head Audit/Conformance receipt and remains NOT VERIFIED.
+- CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; Issues #20/#21 OPEN; NEXT-051 remains sole active queue; external destination/host gates remain OPEN / NOT VERIFIED / NOT RUN.

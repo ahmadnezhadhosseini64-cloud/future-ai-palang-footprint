@@ -2,7 +2,7 @@
 
 - Stable ID: G6IP-RAHM-NEXT-051-20261024
 - Production ID: G6IP-RAHM-NEXT-051-20261024
-- Version: 1.0.43
+- Version: 1.0.44
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE
 - Project: Future AI / Palang Footprint — HAIF
 - Canonical queue: this file only
@@ -777,3 +777,11 @@ The previous blob at this path began with the Integration Queue README title and
 - Latest user-turn root remains POINT-0/064 / EVT-0257; current checkpoint remains CURRENT-115 (header version advanced from directly read 1.0.3 to 1.0.4; earlier 1.0.6 references remain a documented discrepancy); this file remains the sole active queue, now v1.0.43.
 - Mirror-only: no new user root, IN/OUT pair, checkpoint identity, or successor queue. NEXT-052 is not created.
 - Continue exact-final-SHA audit/conformance, CURRENT-065/CURRENT-066 and overlay-manifest lineage, Issues #20/#21, BOART-FOLLOWUP-01, historic graph/identity reconciliation, package proof, and clean-host/independent-host recovery. Preserve all unverified gates.
+
+## EVT-0268 — mirror-only synchronization — 2026-11-16
+
+- [EVT-0268](../../architecture/BEHAVIOR-TRACE/EVT-0268-LIVE-MIRROR-SYNC-RECHECK-2026-11-16.md) / [TIME-BINDING-EVT-0268](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0268-LIVE-MIRROR-SYNC-2026-11-16.md).
+- NEXT-051 remains the sole active queue, now v1.0.44; no NEXT-052. Root POINT-0/064 / EVT-0257 and checkpoint CURRENT-115 remain unchanged.
+- Source blob de1b75f07241c9b313e476af5f1417177ff78c10 unchanged; Library v7 normalized match with one extra terminal LF; no rewrite.
+- Audit 43685575943 and Portable RAHM Conformance 43685576097 passed on exact SHA bf97fdf8a6a349fb57d112f07ba29a8d885279ed; Evidence Gate 43685575928 created run-start main 576d20a23ec469e043c93b2f6f68457ef991d7e3. The follow-up HEAD has no exact-head Audit/Conformance receipt and remains NOT VERIFIED.
+- Continue exact-final-main Audit/Conformance, package identity and RAHM reconstruction, forensic-original-blob recovery, CURRENT-065/CURRENT-066 and overlay-manifest provenance, Issues #20/#21, BOART-FOLLOWUP-01, historic graph/identity reconciliation and independent-host recovery. Preserve all open gates.
