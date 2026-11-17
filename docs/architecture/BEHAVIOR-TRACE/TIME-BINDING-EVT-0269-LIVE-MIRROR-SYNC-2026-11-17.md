@@ -2,7 +2,7 @@
 
 - Event: [EVT-0269](./EVT-0269-LIVE-MIRROR-SYNC-RECHECK-2026-11-17.md)
 - Stable ID: PALANG-TIME-BINDING-EVT-0269-2026-11-17
-- Version: 1.0.0 (initial binding)
+- Version: 1.0.1 (completed Actions evidence addendum)
 - Canonical clock: actual last-change Git commit timestamp in UTC; Asia/Tehran is derived from that same instant.
 
 ## 1. Event and repository commit anchors
@@ -53,3 +53,24 @@ All runs below are associated with exact event commit `e18f1c2cdc28a386892cc6e61
 - Capture exact-SHA Living Architecture Audit and Portable RAHM Conformance receipts for the latest main.
 - If Evidence Gate advances main after those runs, do not carry PASS forward; the new HEAD remains NOT VERIFIED until separately tested.
 - Continue the existing NEXT-051 only; preserve the pointer conflict and all destination/host gaps.
+
+## 6. Completed Actions evidence on both registration commits
+
+### EVT-0269 event-registration SHA
+
+- Living Architecture Audit run `44031030420`: SUCCESS on exact SHA `e18f1c2cdc28a386892cc6e61a260944f6c5f9b8`. Job `133862741494` log records `repository_commit=e18f1c2cdc28a386892cc6e61a260944f6c5f9b8`. Audit artifact ID `14304563251`; artifact digest `246932d08cbb4449ab69290345d859a8529e4d8a970135a91f05a31806d9f9e7`.
+- Portable RAHM Conformance run `44031030260`: SUCCESS on the same exact SHA. Job `133862740992` records `repository_commit_sha=e18f1c2cdc28a386892cc6e61a260944f6c5f9b8` and `source_commit=e18f1c2cdc28a386892cc6e61a260944f6c5f9b8`. Canonical starter ZIP artifact ID `14304847734`; uploaded/downloaded SHA-256 `bbb4f80970254901588d0a9e16499a82ccbd06049ea2cd61ad362f432c66001b`; extracted ZIP tests PASS.
+- Evidence Gate run `44031030230`: SUCCESS on the same exact SHA; created follow-up main `406a364b5ede31d049d20838327987ec47f47170` at UTC `2026-11-17T06:24:59Z` / Tehran `2026-11-17T09:54:59+03:30`.
+
+### TIME-BINDING-EVT-0269 initial commit SHA
+
+- Living Architecture Audit run `44031160848`: SUCCESS on exact SHA `aa48a1b975fec307685f011463deb4ef5f3ffa75`. Job `133863167585` log records `repository_commit=aa48a1b975fec307685f011463deb4ef5f3ffa75`. Audit artifact ID `14305246853`; artifact digest `0f6b8edb01c409a011c8cc79d4e621be772037bcb6ffc56361defe58532f6d32`.
+- Portable RAHM Conformance run `44031161120`: SUCCESS on the same exact SHA. Job `133863168174` records `repository_commit_sha=aa48a1b975fec307685f011463deb4ef5f3ffa75` and `source_commit=aa48a1b975fec307685f011463deb4ef5f3ffa75`. Canonical starter ZIP artifact ID `14305705861`; uploaded/downloaded SHA-256 `7bdd1dd659c0b5ec266650af3c6b1ad20672df5da0a812fe3cb06e6ef8cc42d4`; extracted ZIP tests PASS. Conformance evidence artifact ID `14304603268`, digest `606e288d48b4d16238219b041c0f223c056da6853eb2217d6a7121de1053e59f`.
+- Evidence Gate run `44031161106`: SUCCESS on exact SHA `aa48a1b975fec307685f011463deb4ef5f3ffa75`; created follow-up main `731da320785ce4f2628edbc13db111ab63bcc2f0` at UTC `2026-11-17T06:26:02Z` / Tehran `2026-11-17T09:56:02+03:30`.
+
+### Exact latest HEAD boundary
+
+- Main after the latest Evidence Gate: `731da320785ce4f2628edbc13db111ab63bcc2f0`.
+- The Audit and RAHM successes above apply to `aa48a1b975fec307685f011463deb4ef5f3ffa75`, not to the Evidence Gate follow-up `731da320785ce4f2628edbc13db111ab63bcc2f0`.
+- Therefore the current main `731da320785ce4f2628edbc13db111ab63bcc2f0` remains NOT VERIFIED until a full Living Architecture Audit and Portable RAHM Conformance are observed on that exact SHA.
+- The earlier artifact-not-found failure on EVT-0268 remains historical evidence; the two EVT-0269 RAHM runs above passed artifact upload/download round-trip and extracted ZIP tests. This does not establish external independent-host recovery.
