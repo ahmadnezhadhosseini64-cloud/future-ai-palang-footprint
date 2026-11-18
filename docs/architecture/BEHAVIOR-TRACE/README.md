@@ -1,7 +1,7 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.38
+- Version: 1.0.39
 - Date: 2026-11-16
 - Project: Future AI / Palang Footprint / HAIF
 
@@ -1303,3 +1303,12 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Source blob de1b75f07241c9b313e476af5f1417177ff78c10 unchanged. Library v7 normalized content/semantic match with one extra terminal LF; no source or Library rewrite.
 - Audit 43858796862 PASS on exact main SHA 129622f2da1ff77bc46208fa647de6613b0a1f6b. Latest RAHM 43821249491 PASS on parent SHA caa83afa447683061a64309b19965cf3ec4a28b5; exact-main RAHM NOT VERIFIED.
 - CURRENT-065/CURRENT-066 and overlay-manifest lineage OPEN / AMBIGUOUS; Issues #20/#21 OPEN; NEXT-051 forensic recovery OPEN / NOT RECOVERED; BOART-FOLLOWUP-01 ACTIVE. External destination/host gates remain OPEN / NOT VERIFIED / NOT RUN.
+
+## EVT-0270 — live mirror synchronization — 2026-11-18
+
+- [EVT-0270](./EVT-0270-LIVE-MIRROR-SYNC-RECHECK-2026-11-18.md) / [TIME-BINDING-EVT-0270](./TIME-BINDING-EVT-0270-LIVE-MIRROR-SYNC-2026-11-18.md).
+- Mirror-only under main POINT-0/064 / EVT-0257 / CURRENT-115 / NEXT-051; no new main root, IN/OUT pair, checkpoint identity or NEXT-052.
+- Parallel fisheries POINT-0+ under `صیادی/` is preserved as a separate additive project root.
+- Source blob de1b75f07241c9b313e476af5f1417177ff78c10; Library v7 normalized full-content match with one extra terminal LF; no source or Library rewrite.
+- Audit 44101311777 PASS on exact main `f8bb694b4f11790585171b73439b246e90e148a9`; latest RAHM 44031392845 PASS on `5b2e5f3d...`, not current main; exact-main RAHM NOT VERIFIED.
+- CURRENT-065/CURRENT-066, Issues #20/#21, NEXT-051 forensic recovery and external destination/host gates remain OPEN / NOT VERIFIED / NOT RUN as applicable.

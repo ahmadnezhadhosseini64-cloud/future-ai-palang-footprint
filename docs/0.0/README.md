@@ -2013,3 +2013,13 @@ The canonical chain is [POINT-0/032](./anchors/GPT6-RAHM-USER-POINT-0-20261026-0
 - CURRENT-065/CURRENT-066 and the CURRENT-065 overlay manifest remain OPEN / AMBIGUOUS; no pointer winner is inferred. Issues #20/#21 remain OPEN.
 - Source blob de1b75f07241c9b313e476af5f1417177ff78c10 is unchanged; Library v7 remains normalized-match with one extra terminal LF; no source or Library rewrite.
 - Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN. Continue NEXT-051 only.
+
+## Mirror-only synchronization — EVT-0270 — 2026-11-18
+
+- [EVT-0270](../architecture/BEHAVIOR-TRACE/EVT-0270-LIVE-MIRROR-SYNC-RECHECK-2026-11-18.md) / [TIME-BINDING-EVT-0270](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0270-LIVE-MIRROR-SYNC-2026-11-18.md).
+- Latest main 0.0 user-turn root remains POINT-0/064 / EVT-0257; checkpoint CURRENT-115 v1.0.8; sole active queue NEXT-051 v1.0.44. This is mirror-only; no new root, IN/OUT pair or NEXT-052.
+- The separate fisheries/employment project has an additive POINT-0+ under `صیادی/`; it does not replace the main 0.0 root.
+- Preserve POINT-0/016, POINT-0/017, POINT-0/018 / EVT-0180 and all later roots; preserve EVT-0177/time binding, canonical EVT-0178, EVT-0179 and the quarantined duplicate-number draft.
+- CURRENT-065/CURRENT-066 and the overlay manifest remain OPEN / AMBIGUOUS; Issues #20/#21 remain OPEN; NEXT-051 forensic recovery remains OPEN / NOT RECOVERED.
+- Source blob de1b75f07241c9b313e476af5f1417177ff78c10; Library v7 normalized match with one extra terminal LF; no source or Library rewrite.
+- Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN. Continue NEXT-051 only.
