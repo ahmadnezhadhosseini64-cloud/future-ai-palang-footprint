@@ -2034,3 +2034,12 @@ The canonical chain is [POINT-0/032](./anchors/GPT6-RAHM-USER-POINT-0-20261026-0
 - Source blob de1b75f07241c9b313e476af5f1417177ff78c10 unchanged; Library stable ID libfile_7ac3c9a6ec14819198eb2751e204aa48, version 7, normalized match with one extra terminal LF; exact equality FALSE; no source or Library rewrite.
 - CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; Issues #20/#21 OPEN; NEXT-051 forensic recovery OPEN / NOT RECOVERED; BOART-FOLLOWUP-01 ACTIVE.
 - Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN. Continue NEXT-051 only.
+
+
+## شاخه فرزند پروژه گواهی — نقطه ۰+ → نقطه ۰.۰ بعدی (2026-11-19)
+این زنجیره یک شاخه مستقل و افزایشی زیر پروژه اصلی Palang است؛ جایگزین ریشه اصلی POINT-0/064، checkpoint CURRENT-115 یا صف یگانه NEXT-051 نمی‌شود.
+- [نقطه ۰+ گواهی](../../گواهی/شروع-جدید-۳۰-آبان-۱۴۰۵/نقطه-۰-مثبت-لنگر-جاری-پروژه-گواهی-۲۰۲۶-۱۱-۱۹.md) — `CERT-POINT-0PLUS-20261119-001`.
+- [نقطه ۰.۰ بعدی گواهی](../../گواهی/شروع-جدید-۳۰-آبان-۱۴۰۵/نقطه-۰-۰-بعدی-برنامه-اجرایی-و-رفتارشناسی-پروژه-گواهی.md) — `CERT-POINT-0.0-20261119-001`.
+- [سند مادر زنده گواهی](../../گواهی/شروع-جدید-۳۰-آبان-۱۴۰۵/سند-مادر-زنده-و-قرارداد-دائمی-پروژه-گواهی.md).
+- [EVT-0272 رفتارشناسی میان‌پروژه‌ای](../architecture/BEHAVIOR-TRACE/EVT-0272-CERTIFICATE-0PLUS-AND-NEXT-0.0-2026-11-19.md).
+- قرارداد حاکم در شاخه گواهی: اسناد ۱ تا ۴ ثابت و قفل‌شده؛ فقط سند پنجم متغیر؛ هر تغییر سند پنجم منوط به تأیید صریح کاربر.
