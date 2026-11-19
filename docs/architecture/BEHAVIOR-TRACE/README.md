@@ -1,8 +1,8 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.39
-- Date: 2026-11-16
+- Version: 1.0.40
+- Date: 2026-11-19
 - Project: Future AI / Palang Footprint / HAIF
 
 ## مسیرهای بازیابی
@@ -1312,3 +1312,12 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Source blob de1b75f07241c9b313e476af5f1417177ff78c10; Library v7 normalized full-content match with one extra terminal LF; no source or Library rewrite.
 - Audit 44101311777 PASS on exact main `f8bb694b4f11790585171b73439b246e90e148a9`; latest RAHM 44031392845 PASS on `5b2e5f3d...`, not current main; exact-main RAHM NOT VERIFIED.
 - CURRENT-065/CURRENT-066, Issues #20/#21, NEXT-051 forensic recovery and external destination/host gates remain OPEN / NOT VERIFIED / NOT RUN as applicable.
+
+
+## EVT-0271 — live mirror synchronization — 2026-11-19
+
+- [EVT-0271](./EVT-0271-LIVE-MIRROR-SYNC-RECHECK-2026-11-19.md) / [TIME-BINDING-EVT-0271](./TIME-BINDING-EVT-0271-LIVE-MIRROR-SYNC-2026-11-19.md).
+- Mirror-only under POINT-0/064 / EVT-0257 / CURRENT-115 / NEXT-051; no new main root, IN/OUT pair, checkpoint identity or NEXT-052.
+- Source blob de1b75f07241c9b313e476af5f1417177ff78c10 unchanged; Library v7 normalized full-content match with one extra terminal LF; exact equality FALSE; no source or Library rewrite.
+- Audit 44472618022 PASS on exact run-start main `a06a4c3a24ae768bdab00f98511c1f1dc7b6d3f8`; latest RAHM 44257358104 PASS on `47894652fbd5b4ab47cbd9fecc84464bcebe9041`, not current main; exact-main RAHM NOT VERIFIED. Evidence Gate 44257358290 succeeded on its parent and created an earlier main; Safety Net 44472617950, Reconciliation Watchdog 44472618027 and Pending Registration Drain 44472618103 passed on exact current main.
+- CURRENT-065/CURRENT-066 and overlay-manifest lineage, Issues #20/#21, NEXT-051 forensic recovery and external destination/host gates remain OPEN / NOT VERIFIED / NOT RUN as applicable.
