@@ -1321,3 +1321,11 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Source blob de1b75f07241c9b313e476af5f1417177ff78c10 unchanged; Library v7 normalized full-content match with one extra terminal LF; exact equality FALSE; no source or Library rewrite.
 - Audit 44472618022 PASS on exact run-start main `a06a4c3a24ae768bdab00f98511c1f1dc7b6d3f8`; latest RAHM 44257358104 PASS on `47894652fbd5b4ab47cbd9fecc84464bcebe9041`, not current main; exact-main RAHM NOT VERIFIED. Evidence Gate 44257358290 succeeded on its parent and created an earlier main; Safety Net 44472617950, Reconciliation Watchdog 44472618027 and Pending Registration Drain 44472618103 passed on exact current main.
 - CURRENT-065/CURRENT-066 and overlay-manifest lineage, Issues #20/#21, NEXT-051 forensic recovery and external destination/host gates remain OPEN / NOT VERIFIED / NOT RUN as applicable.
+
+
+## EVT-0272 — شاخه فرزند پروژه گواهی و رفتارشناسی حاکمیت اسناد — 2026-11-19
+- [EVT-0272](./EVT-0272-CERTIFICATE-0PLUS-AND-NEXT-0.0-2026-11-19.md) ثبت‌کننده رفتار مشاهده‌شده در پروژه گواهی است.
+- شاخه پروژه گواهی: [نقطه ۰+](../../../گواهی/شروع-جدید-۳۰-آبان-۱۴۰۵/نقطه-۰-مثبت-لنگر-جاری-پروژه-گواهی-۲۰۲۶-۱۱-۱۹.md) → [نقطه ۰.۰ بعدی](../../../گواهی/شروع-جدید-۳۰-آبان-۱۴۰۵/نقطه-۰-۰-بعدی-برنامه-اجرایی-و-رفتارشناسی-پروژه-گواهی.md) → [سند مادر گواهی](../../../گواهی/شروع-جدید-۳۰-آبان-۱۴۰۵/سند-مادر-زنده-و-قرارداد-دائمی-پروژه-گواهی.md).
+- این رویداد یک شاخه فرزند افزایشی است؛ ریشه سراسری Palang، آخرین ریشه اصلی POINT-0/064، checkpoint جاری و صف یگانه NEXT-051 را جایگزین نمی‌کند.
+- مشاهده رفتاری: حفظ تاریخچه، لنگرگذاری هر ورودی/خروجی، دروازه تأیید انسانی، محدودکردن تغییر عادی به سند پنجم و جداسازی ثبت فنی از تأیید محتوایی.
+- وضعیت ارتقای این مشاهده به قاعده مادر HAIF: OPEN / PENDING REVIEW؛ ثبت رویداد به‌تنهایی ارتقای معماری نیست.
