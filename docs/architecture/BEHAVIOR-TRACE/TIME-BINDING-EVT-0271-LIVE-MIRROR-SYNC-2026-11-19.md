@@ -2,7 +2,7 @@
 
 - Event: [EVT-0271](./EVT-0271-LIVE-MIRROR-SYNC-RECHECK-2026-11-19.md)
 - Stable ID: PALANG-TIME-BINDING-EVT-0271-2026-11-19
-- Version: 1.0.0 (initial registration; exact commit metadata addendum pending)
+- Version: 1.0.1
 - Canonical clock: actual last-change Git commit timestamp in UTC; Asia/Tehran is derived from that same instant.
 
 ## 1. Run-start repository anchors
@@ -43,5 +43,11 @@
 
 ## 4. Registration commit boundary
 
-- EVT-0271 and this time-binding file are initially registered together. The exact registration commit SHA and UTC/Tehran pair will be added in version 1.0.1 after independent Git metadata read-back.
-- Do not substitute GitHub Actions run time, Library metadata time, listing response time or content-read operation time for the canonical Git commit time.
+- Initial EVT-0271 + time-binding + six living-index/master files registration commit: `b7172c5f3d5be1e98236a375e46df1e6ab0c6eb0`.
+- Canonical commit UTC: `2026-11-19T06:40:16Z`; derived Asia/Tehran: `2026-11-19T10:10:16+03:30`.
+- All eight changed files were independently read back at that exact commit. Every read-back blob SHA matched the commit tree blob SHA.
+- On that exact registration SHA, Living Architecture Audit [44473863559](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44473863559) and Portable RAHM Conformance [44473863695](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44473863695) both completed SUCCESS. Audit job 135389568655 logged `repository_commit=b7172c5f3d5be1e98236a375e46df1e6ab0c6eb0`; audit artifact 14504648804. RAHM job 135389568145 logged `repository_commit_sha=b7172c5f3d5be1e98236a375e46df1e6ab0c6eb0`; package artifact 14504683713 SHA-256 `04ba8f0471eb79365fca27b71359bb4fdcba482ea788391eea42c8130914d74d`; downloaded digest matched and package tests PASS.
+- Evidence Gate [44473863560](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44473863560) completed SUCCESS on the same registration SHA and created follow-up main `dbbdf95b463b1b2361612dacff39c7544724abb2` at UTC `2026-11-19T06:40:26Z` / Tehran `2026-11-19T10:10:26+03:30`.
+- Production Detection Safety Net 44473863703, Reconciliation Watchdog 44473863388 and Pending Registration Drain 44473863564 also completed SUCCESS on the exact registration SHA.
+- At the time of this version 1.0.1 update, current main is the Evidence Gate follow-up `dbbdf95b463b1b2361612dacff39c7544724abb2`; the immediately preceding Audit and RAHM runs tested its parent, not this new HEAD. This HEAD is therefore NOT VERIFIED by those preceding runs.
+- This version 1.0.1 file is updated in a separate Git commit; its own final-change timestamp is taken from that commit's independently fetched Git metadata and is reported separately. Do not substitute GitHub Actions run time, Library metadata time, listing response time or content-read operation time for the canonical Git commit time.
