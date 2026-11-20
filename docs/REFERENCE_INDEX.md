@@ -2517,6 +2517,11 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - Parent remains global POINT-0/064 → CURRENT-115 → NEXT-051; this child root does not replace the global root or its queue.
 
 
+## CURRENT-117 — latest verified export and on-demand delivery — 2026-11-20
+- [CURRENT-117](0.0/anchors/PALANG-0.0-CURRENT-20261120-117-LATEST-VERIFIED-EXPORT-DELIVERY.md); [IN-106](0.0/anchors/PALANG-0.0-IN-20261120-106-LATEST-VERIFIED-EXPORT-DELIVERY.md); [OUT-105](0.0/anchors/PALANG-0.0-OUT-20261120-105-LATEST-VERIFIED-EXPORT-DELIVERY.md).
+- [EVT-0281](architecture/BEHAVIOR-TRACE/EVT-0281-LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-2026-11-20.md); [contract](portable/RAHM/LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-CONTRACT-2026-11-20-001.md).
+- Sole queue remains [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). The package is not yet marked PACKAGE_VERIFIED for exact current main.
+
 ## POINT-0/065 (0+) — 2026-11-20 continuity registration
 - Root: [POINT-0/065](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261120-065-CONTINUITY-AND-REGISTRATION.md).
 - Input: [IN-105](0.0/anchors/PALANG-0.0-IN-20261120-105-CONTINUITY-AND-REGISTRATION.md); output: [OUT-104](0.0/anchors/PALANG-0.0-OUT-20261120-104-CONTINUITY-AND-REGISTRATION.md).
