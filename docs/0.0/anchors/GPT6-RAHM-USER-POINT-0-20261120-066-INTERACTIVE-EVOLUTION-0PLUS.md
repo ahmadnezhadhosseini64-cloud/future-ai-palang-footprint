@@ -17,7 +17,7 @@
 
 ## User intent captured
 
-The user requires the current point to be anchored as 0+, connected to the existing project graph, registered in the repository as a living record, and time-anchored. The prepared ZIP and living master must not be treated as frozen snapshots. They must gain the capability to evolve through ongoing human–AI interaction, instruction, feedback, validation and learning, and each newly accepted advance must be reflected in the same continuously maintained deliverable identity.
+The user requires the current point to be anchored as 0+, connected to the existing project graph, registered in the repository as a living record, and time-anchored. The prepared ZIP and living master must not be treated as frozen snapshots. They must gain the capability to evolve through ongoing human–AI interaction, instruction, feedback, learning and validation, and each newly accepted advance must be reflected in the same continuously maintained deliverable identity.
 
 ## Governing interpretation
 
@@ -64,3 +64,13 @@ The authoritative parent source commit is `9ba469281ffda02cbfcccd174ba4495fa89ab
 ## Continuation
 
 Continue from CURRENT-118 and the existing NEXT-051. For each future material advance, update this living chain and rebuild the same canonical deliverable only after validation. Do not close any gate by wording alone.
+
+
+## Permanent root binding — automatic evidence-gated promotion
+
+- Governing contract: [INTERACTION-DRIVEN-AUTO-PROMOTION-AND-LIVING-EVOLUTION-CONTRACT-2026-11-20-001](../../architecture/مدل اولیه AI/INTERACTION-DRIVEN-AUTO-PROMOTION-AND-LIVING-EVOLUTION-CONTRACT-2026-11-20-001.md).
+- User's clarified requirement: this POINT-0/066 (0+) is the foundational, permanent, living root of the initial interactive AI model. It remains connected to all parent points and future checkpoints; future growth extends this root rather than creating competing roots or package identities.
+- Automatic promotion: durable, project-relevant outputs already present in an authorized repository/tool/automation path must enter the normal verification lifecycle without requiring the user to repeat «ثبت کن». When all applicable provenance, privacy, approval, consistency, test, exact-SHA, reconciliation and read-back gates pass, promote the result into the living master and applicable architecture/runtime/package sources, then refresh the same canonical ZIP identity and release receipt.
+- Quarantine: uncertain, sensitive, destructive, permission-expanding, externally consequential or otherwise approval-dependent outputs remain proposed/quarantined until authorized. Failed or missing checks never count as success.
+- Execution boundary: this is not a claim that every chat is automatically captured or that this assistant runs continuously in the background. Promotion applies to outputs entering authorized repository/automation paths; unsupported background capture and model-weight retraining remain unproven.
+- Permanent deliverable: keep the living master, working source, tested candidate and final verified ZIP in one evolving lineage. A passing result is integrated without a second user prompt; a non-passing result remains open with its evidence.
