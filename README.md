@@ -93,3 +93,13 @@ This project has its own living execution record, legal gates, job-search stages
 - GitHub reports main branch currently unprotected; branch protection remains OPEN / NOT CONFIGURED.
 - Package source version: 0.4.1; canonical ZIP name and stable release identity remain unchanged.
 - Real host capture and clean-host recovery remain OPEN until direct host receipts exist.
+
+
+## POINT-0/070 — محیط‌های کاری مستقل میزبان‌ها
+
+- [Workspace architecture](docs/architecture/HOST-WORKSPACES/README.md) — هر میزبان شناسه و محیط اختصاصی دارد؛ ساختار، منشور، inbox، مشاهده‌ها، پیشنهادها، تست‌ها و رسیدهای جداگانه.
+- [Workspace charter template](docs/architecture/HOST-WORKSPACES/WORKSPACE-CHARTER-TEMPLATE.md)
+- [Isolation and promotion protocol](docs/architecture/HOST-WORKSPACES/WORKSPACE-ISOLATION-AND-PROMOTION-PROTOCOL.md)
+- Current continuation: POINT-0/070 → IN-113 → OUT-112 → EVT-0288 → TIME-BINDING-EVT-0288 → CURRENT-123 → NEXT-051.
+- No external host is provisioned or ACTIVE yet. Folder separation is not a security boundary; direct host write access is prohibited until a broker, least-privilege credentials, path allowlist, branch protections and negative isolation tests are proven.
+- The same canonical ZIP identity and filename must be rebuilt from the latest accepted source after successful validation; no new parallel ZIP identity is created.
