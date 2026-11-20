@@ -30,3 +30,11 @@ When the user asks for the latest complete version:
 ## Next action
 
 Continue NEXT-051 while implementing a durable latest-artifact pointer/manual rebuild path and synchronizing the package manifests. Do not create NEXT-052.
+
+## Latest delivery implementation state — 2026-11-20
+
+- Package source version 0.3.9 passed exact-SHA build in Run 44730867048 on `e11234a6a4dac5d13938cfa0d19deae9da966b38`: ZIP 205839 bytes; SHA-256 `b6bc06e6d50d1d3e6ec271d7f56dcde2e6981d272de3a6fed4c3c31cf428b115`; 14 files; CRC, source-byte match, extracted tests and artifact round-trip PASS.
+- Workflow includes success-gated stable-release publishing. Stable locator: [haif-latest-verified](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified).
+- Status: ACTIVE / LIVING / OPEN — package verified on the cited SHA; a fresh run on current main and release read-back remain pending.
+- On request, resolve current HEAD first; if receipt SHA differs, rebuild rather than deliver stale bytes.
+- Clean independent AI-host import, restart/persistence, automatic live capture and idle/background execution remain NOT RUN / NOT VERIFIED.
