@@ -15,7 +15,7 @@ This is the updated release of the existing HAIF starter package, not a separate
 - Host-growth/repository-sync contract included; defines behavior evidence, authorized repo return, RAHM validation and controlled Master/Child promotion.
 - Interaction response/anchor protocol included; requires visible acknowledgment/status, failure disclosure, paired input/output anchors and explicit non-verified gates.
 - Latest verified export and on-demand delivery contract included; requires exact-current-main package receipts and paired living-master delivery.
-- Current continuation reference: POINT-0/065 → IN-105 → OUT-104 → EVT-0280 → CURRENT-116 → IN-106 → OUT-105 → EVT-0281 → CURRENT-117 → NEXT-051. Preserve all earlier roots, the certificate child branch, the unresolved CURRENT-065/CURRENT-066 lineage and all open gates; older 0+ markers remain historical. The canonical living mother reference is included in the built ZIP as `LIVING_MASTER_REFERENCE.md`; the Persian external-host test is included as `INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md`. Transfer the ZIP with its included master snapshot and use the prompt on a genuinely independent host.
+- Current continuation reference: POINT-0/066 (0+) → IN-107 → OUT-106 → EVT-0282 → CURRENT-118 → NEXT-051. Preserve all earlier roots, the certificate child branch, the unresolved CURRENT-065/CURRENT-066 lineage and all open gates; older 0+ markers remain historical. The canonical living mother reference is included in the built ZIP as `LIVING_MASTER_REFERENCE.md`; the Persian external-host test is included as `INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md`. Transfer the ZIP with its included master snapshot and use the prompt on a genuinely independent host.
 
 ## Bootstrap
 ~~~bash
@@ -89,7 +89,7 @@ The v0.3.4 archive is historical verified evidence. Version 0.3.5 is source-only
 - Historical v0.3.7 receipt remains preserved: run [40546488170](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40546488170), 30,573 bytes, SHA-256 `fcc09933dd67ca1300af051e14dbcf80c76b6f620dc6c9623323caca307969fb`.
 - The test-only source change after the earlier v0.3.7 receipt changed the packaged ZIP bytes without advancing the internal version. This was the historical in-place v0.3.8 update, retaining the same package identity and canonical ZIP filename.
 - The v0.3.8 build receipt is historical evidence only. The current v0.3.9 archive must be resolved from the newest successful exact-main-SHA workflow receipt.
-- Current recovery chain: POINT-0/065 → IN-105 → OUT-104 → EVT-0280 → CURRENT-116 → IN-106 → OUT-105 → EVT-0281 → CURRENT-117 → NEXT-051. The living master source is v1.7.69; the package workflow copies that exact source from the same checkout and verifies the paired artifact. This README is package source, not a substitute for the external build receipt.
+- Current recovery chain: POINT-0/066 (0+) → IN-107 → OUT-106 → EVT-0282 → CURRENT-118 → NEXT-051. The living master source is v1.7.69; the package workflow copies that exact source from the same checkout and verifies the paired artifact. This README is package source, not a substitute for the external build receipt.
 - Real independent-host acceptance remains NOT RUN.
 
 
@@ -103,7 +103,7 @@ This is a preserved historical baseline, not the current pointer. Its prior rece
 
 ## CURRENT-117 — latest exact-source delivery baseline
 
-- Current chain: POINT-0/065 → IN-105 → OUT-104 → EVT-0280 → CURRENT-116 → IN-106 → OUT-105 → EVT-0281 → CURRENT-117 → NEXT-051.
+- Current chain: POINT-0/066 (0+) → IN-107 → OUT-106 → EVT-0282 → CURRENT-118 → NEXT-051.
 - Delivery contract: `LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-CONTRACT.md`.
 - Internal package version: 0.3.9. Stable package ID and canonical ZIP filename remain unchanged.
 - The matching living mother is copied into the ZIP as `LIVING_MASTER_REFERENCE.md` by the exact-checkout workflow.
@@ -135,3 +135,6 @@ This is a preserved historical baseline, not the current pointer. Its prior rece
 - The canonical living mother is synchronized from the repository's HAIF mother at build time. Every accepted interaction-derived advance must update the mother and applicable package sources, pass validation and extracted tests, then rebuild this same ZIP filename with a fresh receipt and SHA-256.
 - Package stable ID, production ID, canonical filename and stable release tag do not change. Internal version is now 0.4.0; prior receipts remain historical.
 - This package's update loop is interaction-driven and evidence-gated. Automatic capture of every ChatGPT message, model-weight retraining, idle/background execution and independent-host recovery remain NOT PROVEN.
+
+
+Current canonical chain (plain-text): POINT-0/066 (0+) → IN-107 → OUT-106 → EVT-0282 → CURRENT-118 → NEXT-051
