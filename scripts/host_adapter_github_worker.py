@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-"""Transfer queued adapter events to GitHub with destination read-back verification.
+"""Transfer queued adapter events to an isolated intake branch with destination read-back verification.
 Requires GITHUB_TOKEN with contents:write and a durable adapter SQLite database.
+Never writes to main; all intake events require owner review and an explicit pull request before promotion.
 This worker is deployable but is not invoked by the ChatGPT host automatically.
 """
 import base64,json,os,re,sqlite3,sys,urllib.error,urllib.request
@@ -8,7 +9,9 @@ DB=os.environ.get('PALANG_DB_PATH','palang-events.sqlite3')
 REPO=os.environ.get('PALANG_GITHUB_REPOSITORY','ahmadnezhadhosseini64-cloud/future-ai-palang-footprint')
 TOKEN=os.environ.get('GITHUB_TOKEN','')
 API=os.environ.get('GITHUB_API_URL','https://api.github.com')
-BRANCH=os.environ.get('PALANG_GITHUB_BRANCH','main')
+BRANCH=os.environ.get('PALANG_GITHUB_BRANCH','host-intake')
+if BRANCH == 'main':
+    raise SystemExit('BLOCKED: host intake worker is prohibited from writing directly to main; use host-intake and an owner-reviewed pull request.')
 def request(method,url,payload=None):
  if not TOKEN: raise RuntimeError('GITHUB_TOKEN is required; no repository write attempted')
  data=None if payload is None else json.dumps(payload,ensure_ascii=False).encode()
@@ -30,7 +33,7 @@ def main():
    safe=re.sub(r'[^A-Za-z0-9._-]','-',eid)[:120]
    path=f'docs/architecture/BEHAVIOR-TRACE/INGESTED-EVENTS/{safe}.json'
    url=f'{API}/repos/{REPO}/contents/{path}'
-   record={'event_id':eid,'event_type':etype,'parent_event_id':parent,'received_utc':utc,'received_tehran':tehran,'payload_sha256':digest,'payload':json.loads(payload_text)}
+   record={'event_id':eid,'event_type':etype,'parent_event_id':parent,'received_utc':utc,'received_tehran':tehran,'payload_sha256':digest,'payload':json.loads(payload_text),'promotion_status':'QUARANTINED_OWNER_REVIEW_REQUIRED'}
    raw=(json.dumps(record,ensure_ascii=False,sort_keys=True,indent=2)+'\n').encode()
    status,existing=request('GET',url)
    if status==200:
