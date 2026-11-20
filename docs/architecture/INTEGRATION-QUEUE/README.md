@@ -2783,3 +2783,10 @@ Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-11
 - Run-start main Audit 44688034068 and CPREL harness/evidence 44688034103 / 44688034176 PASS on exact SHA 2ea7e826931a42fb0a5957cdb58b698bb8f30e00. Latest RAHM 44687870952 PASS on prior SHA bd44a799ce6296aede0ee6be64bdf26cd0af3383; exact-main RAHM NOT VERIFIED.
 - CURRENT-065/CURRENT-066 and overlay-manifest lineage OPEN / AMBIGUOUS; no winner selected. Manifest has no winner_selected field; filename CURRENT-065 and package/checkpoint lineage references CURRENT-066. Issues #20/#21 OPEN; NEXT-051 forensic recovery OPEN / NOT RECOVERED; BOART-FOLLOWUP-01 ACTIVE. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
 - No new main root, IN/OUT pair, checkpoint identity, successor queue or automation; NEXT-052 not created.
+
+
+## POINT-0/065 (0+) — EVT-0280 continuity registration — 2026-11-20
+- Root: [POINT-0/065](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261120-065-CONTINUITY-AND-REGISTRATION.md); input/output: [IN-105](../../0.0/anchors/PALANG-0.0-IN-20261120-105-CONTINUITY-AND-REGISTRATION.md) / [OUT-104](../../0.0/anchors/PALANG-0.0-OUT-20261120-104-CONTINUITY-AND-REGISTRATION.md).
+- Event/time: [EVT-0280](../BEHAVIOR-TRACE/EVT-0280-POINT-065-CONTINUITY-AND-REGISTRATION-2026-11-20.md) / [TIME-BINDING-EVT-0280](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0280-POINT-065-CONTINUITY-AND-REGISTRATION-2026-11-20.md); checkpoint [CURRENT-116](../../0.0/anchors/PALANG-0.0-CURRENT-20261120-116-CONTINUITY-AND-REGISTRATION.md).
+- Status: repository registration sequence created; cross-file read-back and link audit are the acceptance gate. The existing NEXT-051 remains the sole active queue; no NEXT-052 is created.
+- Preserve POINT-0/064 → CURRENT-115, certificate child branch EVT-0278, and living behavior model EVT-0279. This registration does not resolve CURRENT-065/CURRENT-066, historical graph conflicts, or any pending test.
