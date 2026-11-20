@@ -1,5 +1,16 @@
 # پوشهٔ ۰.۰ — دفتر نقاط ادامهٔ پروژه
 
+## فرمان تحویل آخرین نسخهٔ کامل
+
+- [CURRENT-117](anchors/PALANG-0.0-CURRENT-20261120-117-LATEST-VERIFIED-EXPORT-DELIVERY.md) → [OUT-105](anchors/PALANG-0.0-OUT-20261120-105-LATEST-VERIFIED-EXPORT-DELIVERY.md) → [EVT-0281](../architecture/BEHAVIOR-TRACE/EVT-0281-LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-2026-11-20.md) → [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- [قرارداد تحویل](../portable/RAHM/LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-CONTRACT-2026-11-20-001.md) و [راهنمای اجرایی](../portable/RAHM/LATEST-VERIFIED-EXPORT-DELIVERY-RUNBOOK.md).
+- نشانی پایدار خروجی: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified
+- فقط ZIP با رسیدی که SHA منبع آن دقیقاً با HEAD جاری برابر است «آخرین نسخهٔ کامل» محسوب می‌شود. اگر HEAD جلوتر باشد، ابتدا بسته دوباره ساخته و آزموده می‌شود.
+- هویت بسته و نام ZIP ثابت می‌ماند؛ سند مادر متناظر، رسید JSON و SHA-256 همراه بسته تحویل می‌شوند. پذیرش میزبان مستقل از آزمون بسته جداست.
+
+---
+
+
 ## تازه‌ترین نقطهٔ اقدام — CURRENT-117 → NEXT-051
 
 [CURRENT-117](anchors/PALANG-0.0-CURRENT-20261120-117-LATEST-VERIFIED-EXPORT-DELIVERY.md) → [IN-106](anchors/PALANG-0.0-IN-20261120-106-LATEST-VERIFIED-EXPORT-DELIVERY.md) + [OUT-105](anchors/PALANG-0.0-OUT-20261120-105-LATEST-VERIFIED-EXPORT-DELIVERY.md) → [EVT-0281](../architecture/BEHAVIOR-TRACE/EVT-0281-LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-2026-11-20.md) → [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
