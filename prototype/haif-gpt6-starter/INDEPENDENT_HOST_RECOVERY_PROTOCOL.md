@@ -1,8 +1,8 @@
 # Independent-host recovery proof protocol
 
-Package version: 0.4.0
+Package version: 0.4.1
 Project: Future AI / Palang Footprint
-Canonical chain: POINT-0/066 (0+) → IN-107 → OUT-106 → EVT-0282 → CURRENT-118 → NEXT-051; prior POINT-0/065 → CURRENT-117 chain is preserved as parent history
+Canonical chain: POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → POINT-0/069 → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122 → NEXT-051; prior POINT-0/065 → CURRENT-117 chain is preserved as parent history
 Preserved prior chain: POINT-0/058 (0+ marker on canonical root 0) → IN-096 → OUT-095 → EVT-0233 → CURRENT-108 → NEXT-051; historical point retained, not current pointer.
 
 ## Purpose
@@ -56,6 +56,6 @@ Canonical current chain: POINT-0/066 (0+) → IN-107 → OUT-106 → EVT-0282 �
 During clean-host import, the receiving host must retrieve settled decisions with rationale, scope, constraints and reopening triggers. Test at least one decision with no new trigger (must remain settled) and one with valid new evidence (may be reopened only with an explicit evidence explanation and preserved prior state). Record the host's raw output and independent read-back. This test is NOT RUN until a separate host supplies a receipt; repository documentation alone is not a pass.
 
 
-## Interactive evolution acceptance — package v0.4.0
+## Interactive evolution acceptance — package v0.4.1
 
 The receiving host must treat the archive as a living, updateable package, not a frozen export. It must preserve the canonical ZIP filename and stable package identity while accepting only provenance-backed, validated changes to the living mother, architecture, runtime and package sources. Each accepted change requires updated tests, a fresh exact-byte receipt and SHA-256, and repository read-back. This contract does not imply automatic capture of every conversation, background execution, model-weight retraining or successful host recovery.
