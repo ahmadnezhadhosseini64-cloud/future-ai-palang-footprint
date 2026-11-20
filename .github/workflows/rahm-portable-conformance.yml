@@ -191,6 +191,9 @@ jobs:
               "HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md",
               "INTERACTION-RESPONSE-AND-ANCHOR-PROTOCOL.md",
               "LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-CONTRACT.md",
+              "PERMANENT_INTERACTION_LEDGER_CONTRACT.md",
+              "HOST_REGISTRY_SCHEMA.json",
+              "HOST_REGISTRY_TEMPLATE.json",
               "bootstrap_0plus.py",
               "engine.py",
               "state.schema.json",
@@ -224,6 +227,9 @@ jobs:
                   raise SystemExit("FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST_MISSING")
               if "HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md" not in names:
                   raise SystemExit("HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT_MISSING")
+              for required_governance_file in ("PERMANENT_INTERACTION_LEDGER_CONTRACT.md", "HOST_REGISTRY_SCHEMA.json", "HOST_REGISTRY_TEMPLATE.json"):
+                  if required_governance_file not in names:
+                      raise SystemExit(f"GOVERNANCE_FILE_MISSING_FROM_ZIP: {required_governance_file}")
           # Read back the exact ZIP contents into a clean temporary directory,
           # compare every byte with the source, then run the package tests from the
           # extracted archive (not merely from the repository source tree).
