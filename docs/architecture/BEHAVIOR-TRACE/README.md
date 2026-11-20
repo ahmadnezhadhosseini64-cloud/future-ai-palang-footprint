@@ -1355,3 +1355,11 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Run-start main Audit 44688034068 and CPREL harness/evidence 44688034103 / 44688034176 PASS on exact SHA 2ea7e826931a42fb0a5957cdb58b698bb8f30e00. Latest RAHM 44687870952 PASS on prior SHA bd44a799ce6296aede0ee6be64bdf26cd0af3383; exact-main RAHM NOT VERIFIED.
 - CURRENT-065/CURRENT-066 and overlay-manifest lineage OPEN / AMBIGUOUS; no winner selected. Manifest has no winner_selected field; filename CURRENT-065 and package/checkpoint lineage references CURRENT-066. Issues #20/#21 OPEN; NEXT-051 forensic recovery OPEN / NOT RECOVERED; BOART-FOLLOWUP-01 ACTIVE. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
 - No new main root, IN/OUT pair, checkpoint identity, successor queue or automation; NEXT-052 not created.
+
+
+## EVT-0277 — Certificate introduction reference anchor — 2026-11-20
+- [EVT-0277](./EVT-0277-CERTIFICATE-INTRO-REFERENCE-ANCHOR-2026-11-20.md) ثبت‌کننده مرجع ثابت معرفی‌نامه و رفتار کنترل تغییر توسط کاربر است.
+- شاخه گواهی: [ورودی و متن مرجع](../../../گواهی/شروع-جدید-۳۰-آبان-۱۴۰۵/رویدادها/CERT-IN-20261120-002.md) → [نقطه ۰+](../../../گواهی/شروع-جدید-۳۰-آبان-۱۴۰۵/نقطه-۰-مثبت-لنگر-معرفی‌نامه-۲۰۲۶-۱۱-۲۰.md) → [سند مادر](../../../گواهی/شروع-جدید-۳۰-آبان-۱۴۰۵/سند-مادر-زنده-و-قرارداد-دائمی-پروژه-گواهی.md).
+- مشاهده رفتاری: کاربر مرجع را عیناً تثبیت می‌کند، تغییر را فقط با دستور خود می‌پذیرد، و مقایسه نسخه‌های بعدی را نسبت به مرجع می‌خواهد.
+- فرضیه معماری: مرجع تغییرناپذیر با تکامل افزایشی و دروازه تأیید صریح انسان؛ هنوز فقط مشاهده موردی است و به قاعده مادر HAIF ارتقا نیافته است.
+- ریشه سراسری POINT-0/064، CURRENT-115 و NEXT-051 بدون تغییر می‌مانند.
