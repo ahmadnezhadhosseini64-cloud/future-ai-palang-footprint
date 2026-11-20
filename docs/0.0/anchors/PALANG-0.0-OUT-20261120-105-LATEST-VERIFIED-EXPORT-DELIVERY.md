@@ -44,3 +44,11 @@ When the user says "آخرین نسخه کامل را بده", resolve current m
 - Update stale package lineage and export manifests from source evidence, without inventing hashes.
 - Run package build and strict conformance against the exact current main SHA.
 - Keep clean-host recovery, persistence, background capture and external destination acceptance as separate OPEN gates until directly tested.
+
+## Implementation update — exact build and durable-release automation
+
+- Successful exact-SHA package build: [Run 44730867048](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44730867048), source SHA `e11234a6a4dac5d13938cfa0d19deae9da966b38`.
+- Canonical ZIP: 205839 bytes; SHA-256 `b6bc06e6d50d1d3e6ec271d7f56dcde2e6981d272de3a6fed4c3c31cf428b115`; 14 files; CRC/source-byte match/extracted tests/downloaded round-trip PASS.
+- Durable release publishing is implemented in the workflow at [haif-latest-verified](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified). It uploads ZIP, paired living mother, JSON receipt, checksum and latest pointer only after successful package verification.
+- The workflow and runbook commits are newer than the cited receipt. A fresh run on current main and release read-back remain pending; do not label the stable release published until verified.
+- Package identity and canonical filename remain unchanged. Independent clean-host recovery remains NOT RUN.
