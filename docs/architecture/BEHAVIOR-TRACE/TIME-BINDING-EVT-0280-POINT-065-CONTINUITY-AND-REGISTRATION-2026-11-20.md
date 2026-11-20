@@ -65,3 +65,12 @@ The following exact paths were fetched from the default branch after their write
 ## Final read-back acceptance
 
 All 11 registered paths were fetched from the default branch after their latest writes. The expected new point/event/checkpoint identifiers and the cross-links among the root, IN/OUT, event, time binding, current checkpoint, 0.0 register, Behavior Trace index, Reference Index, Integration Queue and living mother were checked. The new-root heading and index version headers were also checked. This is a successful repository read-back, not a claim that NEXT-051's open architecture tests have passed.
+
+
+## Final root/output acceptance writes
+
+| Artifact | Commit SHA | Git UTC | Asia/Tehran |
+|---|---|---|---|
+| POINT-0/065 root linked to time binding | `53ec3b22a0b283438d064c0f986ccdbd0fb460a6` | 2026-11-20T10:35:08Z | 2026-11-20T14:05:08+03:30 |
+| OUT-104 final repository acceptance status | `7a48fb9d321a2950255dd95405c7f96bb002bf32` | 2026-11-20T10:35:11Z | 2026-11-20T14:05:11+03:30 |
+| Previous complete time-binding update | `720755877184650dacf3d35cb51f12cc27efec56` | 2026-11-20T10:34:43Z | 2026-11-20T14:04:43+03:30 |
