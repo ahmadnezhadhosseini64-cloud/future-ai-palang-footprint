@@ -205,6 +205,9 @@ class PortablePackageProtocolTests(unittest.TestCase):
         self.assertIn("LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-CONTRACT.md", chain)
         self.assertIn("PERMANENT_INTERACTION_LEDGER_CONTRACT.md", manifest["governance_documents"])
         self.assertIn("HOST_REGISTRY_SCHEMA.json", manifest["governance_documents"])
+        for filename in manifest["governance_documents"]:
+            if filename != "LIVING_MASTER_REFERENCE.md":
+                self.assertTrue((package / filename).is_file(), filename)
         self.assertEqual(chain.count("NEXT-051 (sole active queue; current)"), 1)
 
     def test_latest_verified_export_delivery_contract_is_packaged(self):
