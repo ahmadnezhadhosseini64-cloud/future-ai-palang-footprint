@@ -1,0 +1,30 @@
+# Latest Verified Export and On-Demand Delivery — Portable Host Contract
+
+- Stable ID: HAIF-LATEST-VERIFIED-EXPORT-DELIVERY-CONTRACT-2026-11-20-001
+- Package stable ID: HAIF-GPT6-PORTABLE-STARTER-20261025-004
+- Canonical ZIP filename: haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip
+- Current project checkpoint at source registration: CURRENT-117
+- Sole active queue: NEXT-051
+
+## Required behavior
+
+When the user asks for the latest complete version, resolve the current canonical repository main SHA, latest living mother reference, latest successful package build and its exact tested SHA. Deliver only the canonical ZIP whose receipt matches current main, together with the byte-matched living mother and machine-readable receipt/checksum.
+
+A newer main commit invalidates the exact-current-head label until a new build succeeds. Never silently substitute an older archive.
+
+## Package acceptance
+
+Require stable package identity, canonical filename, valid inventory, ZIP CRC, exact source-to-extracted byte match, tests executed from the extracted ZIP, actual byte count and SHA-256, and downloaded-artifact round-trip verification. Keep the build receipt external to the ZIP to avoid a self-referential digest.
+
+## Status vocabulary
+
+- SOURCE_CURRENT: current sources identified; no archive proof.
+- PACKAGE_BUILT: archive exists; verification may be incomplete.
+- PACKAGE_VERIFIED: all package-level checks pass on exact current main SHA.
+- HOST_RECOVERED: a genuinely independent clean AI host imported and reconstructed the state with direct evidence.
+
+PACKAGE_VERIFIED is not HOST_RECOVERED.
+
+## Honest capability boundaries
+
+A verified archive does not prove clean-host import, restart persistence, persistent memory, automatic live message capture, background execution, live ChatGPT producer, repository write-back from a host, or external storage persistence. Keep those gates OPEN / NOT RUN / NOT VERIFIED until direct evidence exists.
