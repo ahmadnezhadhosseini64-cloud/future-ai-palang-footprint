@@ -199,7 +199,7 @@ class PortablePackageProtocolTests(unittest.TestCase):
         self.assertLess(chain.index("EVT-0287"), chain.index("CURRENT-122"))
         self.assertEqual(chain.count("NEXT-051"), 1, "only one canonical active NEXT-051 pointer is allowed")
         self.assertGreaterEqual(chain.count("NEXT-051 (historical queue reference)"), 1)
-        expected_current = ["IN-105", "OUT-104", "EVT-0280", "CURRENT-116", "IN-106", "OUT-105", "EVT-0281", "TIME-BINDING-EVT-0281", "CURRENT-117", "POINT-0/066 (0+ — interactive evolution)", "IN-107", "OUT-106", "EVT-0282", "TIME-BINDING-EVT-0282", "CURRENT-118", "POINT-0/067", "CURRENT-120", "POINT-0/068", "CURRENT-121", "POINT-0/069", "IN-112", "OUT-111", "EVT-0287", "TIME-BINDING-EVT-0287", "CURRENT-122"]
+        expected_current = ["IN-105", "OUT-104", "EVT-0280", "CURRENT-116", "IN-106", "OUT-105", "EVT-0281", "TIME-BINDING-EVT-0281", "CURRENT-117", "POINT-0/066 (0+ — interactive evolution)", "IN-107", "OUT-106", "EVT-0282", "TIME-BINDING-EVT-0282", "CURRENT-118", "POINT-0/067 (0+ continuation marker)", "CURRENT-120", "POINT-0/068", "CURRENT-121", "POINT-0/069", "IN-112", "OUT-111", "EVT-0287", "TIME-BINDING-EVT-0287", "CURRENT-122"]
         for identifier in expected_current:
             self.assertIn(identifier, chain)
         self.assertIn("LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-CONTRACT.md", chain)
