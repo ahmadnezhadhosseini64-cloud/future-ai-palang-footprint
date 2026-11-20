@@ -1,7 +1,7 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.43
+- Version: 1.0.44
 - Date: 2026-11-20
 - Project: Future AI / Palang Footprint / HAIF
 
@@ -1389,3 +1389,11 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - [POINT-0/065 (0+)](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261120-065-CONTINUITY-AND-REGISTRATION.md) → [IN-105](../../0.0/anchors/PALANG-0.0-IN-20261120-105-CONTINUITY-AND-REGISTRATION.md) + [OUT-104](../../0.0/anchors/PALANG-0.0-OUT-20261120-104-CONTINUITY-AND-REGISTRATION.md) → [EVT-0280](./EVT-0280-POINT-065-CONTINUITY-AND-REGISTRATION-2026-11-20.md) → [TIME-BINDING-EVT-0280](./TIME-BINDING-EVT-0280-POINT-065-CONTINUITY-AND-REGISTRATION-2026-11-20.md) → [CURRENT-116](../../0.0/anchors/PALANG-0.0-CURRENT-20261120-116-CONTINUITY-AND-REGISTRATION.md) → existing [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - Previous event chain EVT-0278 → EVT-0279 is preserved; certificate child branch remains separate.
 - New root is append-only; no historical root or unresolved gate is replaced or silently closed.
+
+
+## EVT-0281 — آخرین خروجی تأییدشده و تحویل برحسب درخواست
+
+- [EVT-0281](./EVT-0281-LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-2026-11-20.md) → [CURRENT-117](../../0.0/anchors/PALANG-0.0-CURRENT-20261120-117-LATEST-VERIFIED-EXPORT-DELIVERY.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- قرارداد: [Latest Verified Export](../../portable/RAHM/LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-CONTRACT-2026-11-20-001.md)؛ راهنما: [Delivery Runbook](../../portable/RAHM/LATEST-VERIFIED-EXPORT-DELIVERY-RUNBOOK.md).
+- ساخت موفق Run 44730867048 روی SHA `e11234a6a4dac5d13938cfa0d19deae9da966b38`: ZIP v0.3.9، 205839 bytes، SHA-256 `b6bc06e6d50d1d3e6ec271d7f56dcde2e6981d272de3a6fed4c3c31cf428b115`، 14 files، package checks PASS.
+- انتشار پایدار در workflow پیاده‌سازی شده است؛ اجرای تازه روی HEAD جاری و read-back release لازم است.
