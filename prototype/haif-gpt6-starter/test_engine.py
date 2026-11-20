@@ -178,14 +178,14 @@ if __name__ == "__main__":
 
 
 class PortablePackageProtocolTests(unittest.TestCase):
-    def test_package_manifest_is_version_038_and_keeps_existing_stable_id(self):
+    def test_package_manifest_is_version_039_and_keeps_existing_stable_id(self):
         package = Path(__file__).parent
         manifest = json.loads((package / "manifest.json").read_text(encoding="utf-8"))
-        self.assertEqual(manifest["version"], "0.3.8")
-        self.assertEqual(manifest["supersedes"], "0.3.7")
+        self.assertEqual(manifest["version"], "0.3.9")
+        self.assertEqual(manifest["supersedes"], "0.3.8")
         self.assertEqual(manifest["stable_id"], "HAIF-GPT6-PORTABLE-STARTER-20261025-004")
         self.assertEqual(manifest["recovery_protocol"], "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md")
-        self.assertEqual(manifest["archive_policy"]["current_internal_version"], "0.3.8")
+        self.assertEqual(manifest["archive_policy"]["current_internal_version"], "0.3.9")
         self.assertEqual(manifest["archive_policy"]["update_mode"], "REBUILD_IN_PLACE_SAME_PACKAGE_IDENTITY")
         chain = manifest["parent_architecture"]
         self.assertLess(chain.index("POINT-0/057 (0+ marker on canonical root 0)"), chain.index("IN-095"))
@@ -215,7 +215,7 @@ class PortablePackageProtocolTests(unittest.TestCase):
     def test_manifest_declares_paired_first_host_transfer_and_current_audit_chain(self):
         package = Path(__file__).parent
         manifest = json.loads((package / "manifest.json").read_text(encoding="utf-8"))
-        self.assertEqual(manifest["version"], "0.3.8")
+        self.assertEqual(manifest["version"], "0.3.9")
         self.assertIn("POINT-0/049 (0+ marker on canonical point 0)", manifest["parent_architecture"])
         self.assertIn("CURRENT-099", manifest["parent_architecture"])
         self.assertIn("POINT-0/050 (0+ marker on canonical root 0)", manifest["parent_architecture"])
@@ -267,8 +267,8 @@ class HostGrowthRepositoryContractTests(unittest.TestCase):
     def test_package_manifest_version_and_identity_remain_continuous(self):
         root = Path(__file__).parent
         manifest = json.loads((root / "manifest.json").read_text(encoding="utf-8"))
-        self.assertEqual(manifest["version"], "0.3.8")
-        self.assertEqual(manifest["supersedes"], "0.3.7")
+        self.assertEqual(manifest["version"], "0.3.9")
+        self.assertEqual(manifest["supersedes"], "0.3.8")
         self.assertEqual(manifest["stable_id"], "HAIF-GPT6-PORTABLE-STARTER-20261025-004")
         self.assertEqual(manifest["recovery_protocol"], "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md")
 
@@ -284,12 +284,12 @@ class InteractionResponseAnchorProtocolTests(unittest.TestCase):
         root = Path(__file__).parent
         manifest = json.loads((root / "manifest.json").read_text(encoding="utf-8"))
         protocol = (root / "INTERACTION-RESPONSE-AND-ANCHOR-PROTOCOL.md").read_text(encoding="utf-8")
-        self.assertEqual(manifest["version"], "0.3.8")
+        self.assertEqual(manifest["version"], "0.3.9")
         self.assertEqual(manifest["stable_id"], "HAIF-GPT6-PORTABLE-STARTER-20261025-004")
         self.assertEqual(manifest["archive_policy"]["canonical_filename"], "haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip")
         self.assertIn("actual host integration", protocol.casefold())
         self.assertIn("NOT VERIFIED", protocol)
-        expected_chain = "POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-110 → NEXT-051"
+        expected_chain = "POINT-0/065 → IN-105 → OUT-104 → EVT-0280 → CURRENT-116 → IN-106 → OUT-105 → EVT-0281 → CURRENT-117 → NEXT-051"
         for filename in (
             "GPT6_HOST_INSTRUCTIONS.md",
             "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md",
@@ -298,9 +298,9 @@ class InteractionResponseAnchorProtocolTests(unittest.TestCase):
         ):
             text = (root / filename).read_text(encoding="utf-8")
             self.assertIn(expected_chain, text, filename)
-            self.assertIn("0.3.8", text, filename)
+            self.assertIn("0.3.9", text, filename)
         readme = (root / "README.md").read_text(encoding="utf-8")
-        self.assertIn("v0.3.8", readme)
-        self.assertIn("in-place v0.3.8 rebuild receipt is PENDING", readme)
+        self.assertIn("v0.3.9", readme)
+        self.assertIn("external build receipt", readme)
         self.assertIn("Previous verified v0.3.8 build receipt", readme)
         self.assertIn(expected_chain, readme)
