@@ -235,3 +235,10 @@
 - [سند مرجع مادر نسخه 1.7.74](./سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md) — مرجع حاکم و زنده.
 - زنجیره: POINT-0/069 → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122 → NEXT-051.
 - هر تعامل واقعی فقط از میزبان/producer متصل و مسیر مجاز ثبت می‌شود؛ ثبت دفتر از ارتقای دانش به MASTER جداست.
+
+
+## دفتر دائمی ورودی/خروجی و تداوم میزبان‌ها — POINT-0/069
+- [CURRENT-122](../../0.0/anchors/PALANG-0.0-CURRENT-20261120-122-PERMANENT-INTERACTION-LEDGER.md) — مرجع وضعیت جاری.
+- [EVT-0287](../BEHAVIOR-TRACE/EVT-0287-PERMANENT-INTERACTION-LEDGER-2026-11-20.md) و [لنگر زمانی](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0287-PERMANENT-INTERACTION-LEDGER-2026-11-20.md).
+- سند مادر زنده: نسخهٔ 1.7.74؛ قرارداد دفتر دائمی، جفت IN/OUT، رسید بازخوانی و مسیر قرنطینه/اعتبارسنجی.
+- بستهٔ قابل انتقال: manifest نسخهٔ داخلی 0.4.1؛ همان شناسه و نام canonical قبلی.
