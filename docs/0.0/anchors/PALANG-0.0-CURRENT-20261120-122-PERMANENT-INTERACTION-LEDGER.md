@@ -49,3 +49,11 @@ POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 
 - Worker enforcement: repository worker writes exclusively to `host-intake` and rejects any other branch. GitHub reported `main.protected=false` during inspection; actual branch protection remains OPEN / NOT CONFIGURED.
 - Schema conformance: interaction pair schema now requires distinct input/output IDs, host/session identity, exact master commit, checkpoint, adapter version, digest, privacy/redaction state, capture status and receipt.
 
+
+
+## Package identity
+- Stable ID: HAIF-GPT6-PORTABLE-STARTER-20261025-004
+- Internal package source target: 0.4.1 (supersedes 0.4.0)
+- Canonical ZIP filename: haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip
+- Stable release tag: haif-latest-verified
+- This target is not a verified release until the exact current main SHA passes conformance and archive read-back.
