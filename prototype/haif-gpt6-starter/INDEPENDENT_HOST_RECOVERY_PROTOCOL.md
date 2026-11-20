@@ -51,7 +51,7 @@ Follow `HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md` for the controlled host →
 
 ## Decision continuity recovery test
 
-Canonical current chain: POINT-0/065 → IN-105 → OUT-104 → EVT-0280 → CURRENT-116 → IN-106 → OUT-105 → EVT-0281 → CURRENT-117 → NEXT-051. Canonical governance: [DCRG](../../docs/reference/REFERENCE-DOCUMENTS/DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03-001.md).
+Canonical current chain: POINT-0/066 (0+) → IN-107 → OUT-106 → EVT-0282 → CURRENT-118 → NEXT-051. Canonical governance: [DCRG](../../docs/reference/REFERENCE-DOCUMENTS/DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03-001.md).
 
 During clean-host import, the receiving host must retrieve settled decisions with rationale, scope, constraints and reopening triggers. Test at least one decision with no new trigger (must remain settled) and one with valid new evidence (may be reopened only with an explicit evidence explanation and preserved prior state). Record the host's raw output and independent read-back. This test is NOT RUN until a separate host supplies a receipt; repository documentation alone is not a pass.
 

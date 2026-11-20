@@ -49,7 +49,7 @@ A GPT chat instruction or uploaded knowledge file cannot, by itself, create dura
 - Keep candidates in Child until RAHM validation and explicit approval. Refresh the same canonical ZIP plus the current living mother; verify the digest in the receiving host.
 
 ## Current 0+ / 0.0 recovery pointer (v0.3.9)
-- Current chain: POINT-0/065 → IN-105 → OUT-104 → EVT-0280 → CURRENT-116 → IN-106 → OUT-105 → EVT-0281 → CURRENT-117 → NEXT-051.
+- Current chain: POINT-0/066 (0+) → IN-107 → OUT-106 → EVT-0282 → CURRENT-118 → NEXT-051.
 - Canonical ZIP filename and stable package ID remain unchanged; the v0.3.8 receipt is historical; the current v0.3.9 ZIP receipt is tracked by the exact-head Portable Conformance workflow; verify the receipt bundled with the downloaded artifact.
 - Known unresolved graph collisions: POINT-0/045, IN-083, OUT-082, EVT-0220 and CURRENT-095 each have multiple same-numbered files in the current slice. Preserve them; do not choose/merge/renumber without provenance evidence.
 
@@ -116,3 +116,8 @@ Canonical rule: [DCRG](../../docs/reference/REFERENCE-DOCUMENTS/DECISION-CONTINU
 ## Current living evolution rule — POINT-0/066 / CURRENT-118
 
 Treat the package as a living, updateable system, not a frozen export. For every material instruction, correction, decision, feedback item or discovery: preserve its provenance; create/continue the IN/OUT → EVT → time binding → CURRENT chain; distinguish durable rules from one-off requests and hypotheses; validate and reconcile the relevant living mother, index, queue, runtime and package source; run tests; rebuild the same canonical ZIP identity; refresh the exact receipt and digest; and read back the result. Never claim a capability merely because it is documented. The sole inherited active queue remains NEXT-051.
+
+
+## Current living evolution pointer — v0.4.0
+
+Current chain: POINT-0/066 (0+) → IN-107 → OUT-106 → EVT-0282 → CURRENT-118 → NEXT-051. Treat the archive as an updateable, interaction-driven living package. Preserve stable identity and filename; update the living mother and applicable source files only after provenance checks, validation and tests; rebuild and read back the same canonical ZIP with a fresh receipt and digest. Model-weight retraining, automatic capture of every conversation, background execution and independent-host recovery remain separate unproven gates.

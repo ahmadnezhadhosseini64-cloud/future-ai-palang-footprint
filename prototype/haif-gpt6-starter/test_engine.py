@@ -182,7 +182,7 @@ class PortablePackageProtocolTests(unittest.TestCase):
         package = Path(__file__).parent
         manifest = json.loads((package / "manifest.json").read_text(encoding="utf-8"))
         self.assertEqual(manifest["version"], "0.4.0")
-        self.assertEqual(manifest["supersedes"], "0.3.8")
+        self.assertEqual(manifest["supersedes"], "0.3.9")
         self.assertEqual(manifest["stable_id"], "HAIF-GPT6-PORTABLE-STARTER-20261025-004")
         self.assertEqual(manifest["recovery_protocol"], "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md")
         self.assertEqual(manifest["archive_policy"]["current_internal_version"], "0.4.0")
@@ -195,7 +195,7 @@ class PortablePackageProtocolTests(unittest.TestCase):
         self.assertLess(chain.index("CURRENT-107"), chain.index("NEXT-051"))
         self.assertEqual(chain.count("NEXT-051"), 1, "only one canonical active NEXT-051 pointer is allowed")
         self.assertGreaterEqual(chain.count("NEXT-051 (historical queue reference)"), 1)
-        expected_current = ["IN-105", "OUT-104", "EVT-0280", "CURRENT-116", "IN-106", "OUT-105", "EVT-0281", "TIME-BINDING-EVT-0281", "CURRENT-117"]
+        expected_current = ["IN-105", "OUT-104", "EVT-0280", "CURRENT-116", "IN-106", "OUT-105", "EVT-0281", "TIME-BINDING-EVT-0281", "CURRENT-117", "POINT-0/066 (0+ — interactive evolution)", "IN-107", "OUT-106", "EVT-0282", "TIME-BINDING-EVT-0282", "CURRENT-118"]
         for identifier in expected_current:
             self.assertIn(identifier, chain)
         self.assertIn("LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-CONTRACT.md", chain)
@@ -279,7 +279,7 @@ class HostGrowthRepositoryContractTests(unittest.TestCase):
         root = Path(__file__).parent
         manifest = json.loads((root / "manifest.json").read_text(encoding="utf-8"))
         self.assertEqual(manifest["version"], "0.4.0")
-        self.assertEqual(manifest["supersedes"], "0.3.8")
+        self.assertEqual(manifest["supersedes"], "0.3.9")
         self.assertEqual(manifest["stable_id"], "HAIF-GPT6-PORTABLE-STARTER-20261025-004")
         self.assertEqual(manifest["recovery_protocol"], "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md")
 
@@ -300,7 +300,7 @@ class InteractionResponseAnchorProtocolTests(unittest.TestCase):
         self.assertEqual(manifest["archive_policy"]["canonical_filename"], "haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip")
         self.assertIn("actual host integration", protocol.casefold())
         self.assertIn("NOT VERIFIED", protocol)
-        expected_chain = "POINT-0/065 → IN-105 → OUT-104 → EVT-0280 → CURRENT-116 → IN-106 → OUT-105 → EVT-0281 → CURRENT-117 → NEXT-051"
+        expected_chain = "POINT-0/066 (0+) → IN-107 → OUT-106 → EVT-0282 → CURRENT-118 → NEXT-051"
         for filename in (
             "GPT6_HOST_INSTRUCTIONS.md",
             "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md",
