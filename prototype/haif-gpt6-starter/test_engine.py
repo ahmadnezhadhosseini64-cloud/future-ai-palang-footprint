@@ -195,6 +195,17 @@ class PortablePackageProtocolTests(unittest.TestCase):
         self.assertLess(chain.index("CURRENT-107"), chain.index("NEXT-051"))
         self.assertEqual(chain.count("NEXT-051"), 1, "only one canonical active NEXT-051 pointer is allowed")
         self.assertGreaterEqual(chain.count("NEXT-051 (historical queue reference)"), 1)
+        expected_current = ["IN-105", "OUT-104", "EVT-0280", "CURRENT-116", "IN-106", "OUT-105", "EVT-0281", "TIME-BINDING-EVT-0281", "CURRENT-117"]
+        for identifier in expected_current:
+            self.assertIn(identifier, chain)
+        self.assertIn("LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-CONTRACT.md", chain)
+        self.assertEqual(chain.count("NEXT-051 (sole active queue; current)"), 1)
+
+    def test_latest_verified_export_delivery_contract_is_packaged(self):
+        package = Path(__file__).parent
+        contract = (package / "LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-CONTRACT.md").read_text(encoding="utf-8")
+        for required in ("exact current main SHA", "PACKAGE_VERIFIED", "HOST_RECOVERED", "canonical ZIP filename", "living mother", "never silently substitute"):
+            self.assertIn(required.casefold(), contract.casefold())
 
     def test_independent_host_protocol_preserves_acceptance_boundaries(self):
         package = Path(__file__).parent
