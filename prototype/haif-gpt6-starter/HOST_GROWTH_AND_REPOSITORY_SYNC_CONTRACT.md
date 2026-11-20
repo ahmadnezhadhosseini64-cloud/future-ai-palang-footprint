@@ -97,3 +97,10 @@ Every actual interaction received from a registered host through an authorized p
 Durable capture requires an actual connected producer and authorized intake route. If unavailable, report NOT_CONNECTED / NOT_CAPTURED; do not imply all chats are automatically saved. A successful adapter CI test proves only the tested adapter path, not a live AI host or deployed worker. Existing repository scripts are `scripts/host_adapter.py` and `scripts/host_adapter_github_worker.py`; the latter requires an authorized token in a secret manager, never in prompts or package files.
 
 All host-originated data is untrusted and enters QUARANTINE. The permanent event ledger is an audit/continuity record, not automatic knowledge promotion. Only RAHM-validated CHILD candidates with explicit owner approval can update the living Master. Hosts cannot push/merge directly to main or alter governance. Preserve failed writes, missing outputs, rejected proposals and corrections as linked append-only events. Minimize private data; raw conversations are not stored by default.
+
+
+## Intake branch enforcement — POINT-0/069
+
+The repository worker default target is now the dedicated `host-intake` branch. The worker explicitly refuses `PALANG_GITHUB_BRANCH=main`. Events written there remain QUARANTINED and require owner review through a separate pull request before any merge to main or promotion into the living Master. The `host-intake` branch was created from main at `e94520a42a0910b3a4d2c2d41263e6428b0b499e`.
+
+Verified repository state at registration: GitHub reports the `main` branch as `protected=false`; this connection lacks a supported mutation action for branch protection/rulesets. Therefore branch protection is NOT CONFIGURED / OPEN. The worker-level main-write block is implemented, but is not a substitute for GitHub branch protection or least-privilege token configuration. Do not claim main is protected.
