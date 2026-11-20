@@ -2785,6 +2785,12 @@ Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-11
 - No new main root, IN/OUT pair, checkpoint identity, successor queue or automation; NEXT-052 not created.
 
 
+## CURRENT-117 — latest verified export and on-demand delivery — 2026-11-20
+- [CURRENT-117](../../0.0/anchors/PALANG-0.0-CURRENT-20261120-117-LATEST-VERIFIED-EXPORT-DELIVERY.md) / [EVT-0281](../BEHAVIOR-TRACE/EVT-0281-LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-2026-11-20.md).
+- [IN-106](../../0.0/anchors/PALANG-0.0-IN-20261120-106-LATEST-VERIFIED-EXPORT-DELIVERY.md) / [OUT-105](../../0.0/anchors/PALANG-0.0-OUT-20261120-105-LATEST-VERIFIED-EXPORT-DELIVERY.md).
+- Contract: [Latest verified export and on-demand delivery](../../portable/RAHM/LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-CONTRACT-2026-11-20-001.md).
+- Status: contract registered; stable latest locator, exact-current-SHA package build and full acceptance remain OPEN. Continue the existing NEXT-051; no NEXT-052.
+
 ## POINT-0/065 (0+) — EVT-0280 continuity registration — 2026-11-20
 - Root: [POINT-0/065](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261120-065-CONTINUITY-AND-REGISTRATION.md); input/output: [IN-105](../../0.0/anchors/PALANG-0.0-IN-20261120-105-CONTINUITY-AND-REGISTRATION.md) / [OUT-104](../../0.0/anchors/PALANG-0.0-OUT-20261120-104-CONTINUITY-AND-REGISTRATION.md).
 - Event/time: [EVT-0280](../BEHAVIOR-TRACE/EVT-0280-POINT-065-CONTINUITY-AND-REGISTRATION-2026-11-20.md) / [TIME-BINDING-EVT-0280](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0280-POINT-065-CONTINUITY-AND-REGISTRATION-2026-11-20.md); checkpoint [CURRENT-116](../../0.0/anchors/PALANG-0.0-CURRENT-20261120-116-CONTINUITY-AND-REGISTRATION.md).
