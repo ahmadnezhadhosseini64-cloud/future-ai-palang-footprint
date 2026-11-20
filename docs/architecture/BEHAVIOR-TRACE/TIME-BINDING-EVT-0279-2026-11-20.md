@@ -26,3 +26,7 @@
 - This registration does not prove automatic background capture or independent-host recovery.
 
 - Time-binding ledger update commit: `9b1aa1fdd2ec365da4cd5bb026d26500c9d4ebb6` (metadata recorded above for index write); final time-binding update commit metadata is appended after its write.
+
+- Dedicated input anchor commit: `67397ebf7d4c509306f02519940f7cdcac0d4137`, Git UTC `2026-11-20T08:49:35Z`, Asia/Tehran `2026-11-20T12:19:35+03:30`.
+- Dedicated output anchor commit: `b1c541180ef9648409a796ab983ecce36ef3cd7b`, Git UTC `2026-11-20T08:49:42Z`, Asia/Tehran `2026-11-20T12:19:42+03:30`.
+- EVT-0279 event link update commit: `1a459efebfd847314f7c236b341ffb4adcce42a2`, Git UTC `2026-11-20T08:49:57Z`.
