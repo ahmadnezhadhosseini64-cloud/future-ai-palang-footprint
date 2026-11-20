@@ -40,3 +40,12 @@ POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 
 - GitHub در زمان بررسی `main.protected=false` گزارش کرد. ابزار در دسترس، تغییر branch protection/rulesets را پشتیبانی نمی‌کند؛ بنابراین محافظت واقعی شاخه هنوز NOT CONFIGURED / OPEN است. محدودیت کد worker جایگزین branch protection یا credential کم‌اختیار نیست.
 - قرارداد JSON Schema دفتر تعامل به‌روزرسانی شد تا input_id، output_id، host_id، host_session_id، master_commit_sha، master_version، checkpoint_id، adapter_version، payload_sha256، privacy_class، redaction_status، capture_status و receipt_ref الزامی باشند.
 - این به‌روزرسانی ساختار و گیت‌ها را محکم‌تر می‌کند؛ اتصال زندهٔ میزبان، استقرار worker و بازیابی مستقل همچنان نیازمند رسید end-to-end واقعی‌اند.
+
+
+## Implementation references
+
+- Host Registry source: [HOST-REGISTRY](../HOST-REGISTRY/README.md), [schema](../HOST-REGISTRY/HOST-REGISTRY-SCHEMA.json), [current registry](../HOST-REGISTRY/HOST-REGISTRY.json). The registry is intentionally empty until a real host passes identity and acceptance checks.
+- Event destination: [INGESTED-EVENTS](../BEHAVIOR-TRACE/INGESTED-EVENTS/README.md); events arrive on `host-intake` and remain quarantined pending owner-reviewed PR.
+- Worker enforcement: repository worker writes exclusively to `host-intake` and rejects any other branch. GitHub reported `main.protected=false` during inspection; actual branch protection remains OPEN / NOT CONFIGURED.
+- Schema conformance: interaction pair schema now requires distinct input/output IDs, host/session identity, exact master commit, checkpoint, adapter version, digest, privacy/redaction state, capture status and receipt.
+
