@@ -33,3 +33,19 @@ Read-back must be recorded only after fetching the exact paths from the default 
 - Preserve EVT-0279 and its living behavior model.
 - NEXT-051 remains the sole active queue; no NEXT-052 is created.
 - Repository registration and read-back do not close historical graph, runtime, external destination, or independent persistence gates.
+
+
+## Cross-index and living-master writes
+
+| Artifact | Commit SHA | Git UTC | Asia/Tehran |
+|---|---|---|---|
+| 0.0 register README | `385a7299fcac15a477d9267df7990a15d7dbecbd` | 2026-11-20T10:32:42Z | 2026-11-20T14:02:42+03:30 |
+| Behavior Trace index | `143d7f599948d5b0ad41433b4326f9044757e8cf` | 2026-11-20T10:32:46Z | 2026-11-20T14:02:46+03:30 |
+| Reference Index | `0e50cf4ef91ee5f2f97ba73f07f9638d612faf52` | 2026-11-20T10:32:49Z | 2026-11-20T14:02:49+03:30 |
+| Integration Queue README | `b0be452e31f773886642964d2a82c162940989d9` | 2026-11-20T10:32:52Z | 2026-11-20T14:02:52+03:30 |
+| Living mother reference | `0a744573b31fcebaafe5de531cd778e1994587e2` | 2026-11-20T10:33:13Z | 2026-11-20T14:03:13+03:30 |
+| Initial time-binding ledger | `dc408676ce698faa8f2c8ffa1cb9ff01fd690a75` | 2026-11-20T10:32:13Z | 2026-11-20T14:02:13+03:30 |
+
+## Repository read-back verification
+
+The following exact paths were fetched from the default branch after their writes: POINT-0/065 root, IN-105, OUT-104, CURRENT-116, EVT-0280, TIME-BINDING-EVT-0280, docs/0.0/README.md, Behavior Trace README, docs/REFERENCE_INDEX.md, Integration Queue README, and the living mother reference. Their stable identifiers and expected links were checked. Read-back is a repository-content check; it is not a full historical graph audit.
