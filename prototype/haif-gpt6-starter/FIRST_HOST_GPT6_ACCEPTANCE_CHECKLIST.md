@@ -45,3 +45,17 @@ A CI build, a local engine test, or two independent CI runners do not prove that
 - [ ] Test authenticated intake, idempotent retry, conflicting replay rejection, durable restart and exact repository read-back.
 - [ ] Confirm candidate insights remain Child proposals until RAHM validation and explicit approval.
 - [ ] After a new package build, refresh the same canonical ZIP plus living mother and verify the host's imported digest.
+
+
+## G. Multi-host governance and owner authority — POINT-0/068
+
+- [ ] Read the paired living master version 1.7.73 and its multi-host governance section.
+- [ ] Confirm this host is a distinct Host Node and default access is L1 READ-ONLY.
+- [ ] Confirm no direct write/merge to main, no self-promotion, no authority to change Master rules, and no admin/bypass permissions.
+- [ ] Submit only a synthetic observation/proposal to an authorized quarantine/proposal route; if no such route is available, mark NOT IMPLEMENTED and do not invent a live connection.
+- [ ] Include host identity, exact master commit/version, checkpoint, source references, UTC timestamp or UNKNOWN, SHA-256, privacy/redaction status and limitations.
+- [ ] Verify cross-host reconciliation does not treat copied/shared-source outputs as independent evidence.
+- [ ] Verify RAHM validation and CHILD candidacy are separate from owner approval.
+- [ ] Confirm explicit owner approval is required before any Master promotion.
+- [ ] Verify host credentials are least-privilege, stored outside prompts/files, and revocable by the owner.
+- [ ] Return a raw receipt proving what was actually read, submitted, accepted or rejected. A ZIP import alone is not proof of repository connection.
