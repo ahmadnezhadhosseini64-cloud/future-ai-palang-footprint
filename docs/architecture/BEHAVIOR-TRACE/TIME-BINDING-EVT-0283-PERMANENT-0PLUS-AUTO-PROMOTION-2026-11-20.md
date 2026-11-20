@@ -32,3 +32,9 @@ All timestamps below are GitHub commit metadata in UTC; Tehran is derived from t
 
 - Last direct registration commit in this chain: `48789bc1ec652fca143c253e54c1910c6cb69336`, UTC `2026-11-20T13:52:50Z`, Tehran `2026-11-20T17:22:50+03:30`.
 - Later GitHub Actions evidence-only commits are recorded separately and must not be mistaken for the user-message time.
+
+
+## Living-master integration time
+
+- Canonical living master updated and read back at commit `e9d18d870bc273db6aa505a9c0d4fec64da48507`, UTC `2026-11-20T13:54:03Z`, Tehran `2026-11-20T17:24:03+03:30`; version 1.7.72.
+- Living-master header reconciled to POINT-0/066 / CURRENT-118 at commit `38e574c1e5d70563f952f407f67a5687c1cf94a8`, UTC `2026-11-20T13:54:22Z`, Tehran `2026-11-20T17:24:22+03:30`.
