@@ -26,6 +26,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
@@ -331,22 +333,46 @@ jobs:
           test -s "$archive"
           test -s "$receipt"
           test -s "$master"
+          cp "$master" "$root/LIVING_MASTER_REFERENCE.md"
+          git fetch origin main --quiet
+          current_head="$(git rev-parse origin/main)"
+          git merge-base --is-ancestor "$GITHUB_SHA" "$current_head"
+          mapfile -t delta_paths < <(git diff --name-only "$GITHUB_SHA" "$current_head")
+          for changed_path in "${delta_paths[@]}"; do
+            case "$changed_path" in
+              evidence/evidence-gate-*.txt) ;;
+              *) echo "NON_EVIDENCE_POST_BUILD_CHANGE=$changed_path"; exit 1 ;;
+            esac
+          done
+          export VERIFIED_CURRENT_HEAD="$current_head"
+          export VERIFIED_DELTA_PATHS="$(printf '%s\n' "${delta_paths[@]}")"
           python - <<'PY'
           import json, os
           from pathlib import Path
           root = Path("downloaded-starter-artifact")
-          receipt = json.loads((root / "haif-gpt6-starter-zip-receipt.json").read_text(encoding="utf-8"))
+          receipt_path = root / "haif-gpt6-starter-zip-receipt.json"
+          receipt = json.loads(receipt_path.read_text(encoding="utf-8"))
           if receipt.get("repository_commit_sha") != os.environ["GITHUB_SHA"]:
               raise SystemExit("RELEASE_SOURCE_SHA_MISMATCH")
           if receipt.get("zip_integrity") != "PASS" or receipt.get("zip_readback_source_byte_match") != "PASS" or receipt.get("extracted_zip_tests") != "PASS":
               raise SystemExit("RELEASE_PACKAGE_ACCEPTANCE_INCOMPLETE")
+          delta_paths = [p for p in os.environ.get("VERIFIED_DELTA_PATHS", "").splitlines() if p]
+          receipt["build_source_commit_sha"] = receipt["repository_commit_sha"]
+          receipt["current_main_head_sha"] = os.environ["VERIFIED_CURRENT_HEAD"]
+          receipt["post_build_delta_paths"] = delta_paths
+          receipt["current_head_equivalence_verified"] = True
+          receipt["equivalence_rule"] = "Only evidence/evidence-gate-*.txt additions occurred after the package build; package source and living-master bytes are unchanged."
+          receipt_path.write_text(json.dumps(receipt, indent=2) + "\n", encoding="utf-8")
           pointer = {
               "status": "PACKAGE_VERIFIED",
               "package_identity": receipt["package_identity"],
               "production_id": receipt["production_id"],
               "internal_package_version": receipt["internal_package_version"],
               "canonical_filename": receipt["archive_filename"],
-              "source_commit_sha": receipt["repository_commit_sha"],
+              "build_source_commit_sha": receipt["build_source_commit_sha"],
+              "current_main_head_sha": receipt["current_main_head_sha"],
+              "current_head_equivalence_verified": receipt["current_head_equivalence_verified"],
+              "post_build_delta_paths": delta_paths,
               "workflow_run_id": receipt["workflow_run_id"],
               "workflow_run_url": receipt["workflow_run_url"],
               "bytes": receipt["bytes"],
@@ -378,10 +404,11 @@ jobs:
           else
             gh release create "$tag" --target "$GITHUB_SHA" --title "HAIF Latest Verified Export" --notes-file "$root/release-notes.md"
           fi
+          gh release delete-asset "$tag" default.md --yes || true
           gh release upload "$tag" \
             "$archive" \
             "$receipt" \
-            "$master" \
+            "$root/LIVING_MASTER_REFERENCE.md" \
             "$root/haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip.sha256" \
             "$root/latest-verified-export.json" \
             --clobber
