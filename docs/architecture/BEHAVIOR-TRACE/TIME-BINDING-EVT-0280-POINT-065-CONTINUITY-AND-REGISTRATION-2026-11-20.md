@@ -74,3 +74,18 @@ All 11 registered paths were fetched from the default branch after their latest 
 | POINT-0/065 root linked to time binding | `53ec3b22a0b283438d064c0f986ccdbd0fb460a6` | 2026-11-20T10:35:08Z | 2026-11-20T14:05:08+03:30 |
 | OUT-104 final repository acceptance status | `7a48fb9d321a2950255dd95405c7f96bb002bf32` | 2026-11-20T10:35:11Z | 2026-11-20T14:05:11+03:30 |
 | Previous complete time-binding update | `720755877184650dacf3d35cb51f12cc27efec56` | 2026-11-20T10:34:43Z | 2026-11-20T14:04:43+03:30 |
+
+
+## Independent Evidence Gate receipts
+
+| Run | Result | Tested commit | Durable evidence | Artifact digest |
+|---|---|---|---|---|
+| [44720485758](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44720485758) | SUCCESS | `53ec3b22a0b283438d064c0f986ccdbd0fb460a6` | `evidence/evidence-gate-44720485758.txt` | `sha256:ccf356bf8e9632782083ff9f62faa8f71c45636d44021203dadc6e813e416cd2` |
+| [44720491699](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44720491699) | SUCCESS | `7a48fb9d321a2950255dd95405c7f96bb002bf32` | `evidence/evidence-gate-44720491699.txt` | `sha256:0067ab6d517a4127ba3a4a6df89675e237c631538eba88423a6a20d8d12bbc8c` |
+
+Both runs' jobs were fetched and all steps completed successfully; the durable evidence files were fetched and read. Run 44720491699 tested the OUT-104 acceptance commit. The later CURRENT-116 and time-binding writes are newer than that tested commit. These receipts prove the Evidence Gate execution on their respective tested SHAs; they do not prove a full architecture audit or portable conformance on final HEAD.
+
+## Latest checkpoint status write
+
+- CURRENT-116 status/read-back update commit: `57915466277e751bf985b9c9de9bb34c2bd9e25e`.
+- Git UTC: `2026-11-20T10:35:58Z`; Asia/Tehran: `2026-11-20T14:05:58+03:30`.
