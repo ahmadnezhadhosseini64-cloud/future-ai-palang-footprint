@@ -39,8 +39,10 @@ POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 
 پوشه‌بندی در GitHub به‌تنهایی مرز امنیتی نیست؛ میزبان نباید credential نوشتن مستقیم مخزن بگیرد. تا استقرار broker، allowlist مسیر، credential حداقلی، branch protection و آزمون منفی جداسازی، اتصال نوشتنی میزبان واقعی مجاز نیست. اگر این مرز در یک مخزن قابل تضمین نباشد، از repo/sandbox جدا استفاده می‌شود.
 
 ## لنگر زمانی
-- CURRENT-123 commit SHA: PENDING METADATA READ-BACK
-- Commit UTC / Tehran: PENDING METADATA READ-BACK
+- CURRENT-123 creation commit SHA: `32b86a9f05e7508a5a2c6672958780bbbc07ced3`
+- Commit UTC: `2026-11-20T18:14:17Z`
+- Tehran: `2026-11-20T21:44:17+03:30`
+- Timestamp source: GitHub commit metadata read-back; user-message time remains UNKNOWN / UNVERIFIED
 - Exact user message timestamp: UNKNOWN / UNVERIFIED
 
 NEXT-051 remains the sole active execution queue. No parallel root or queue is created.
