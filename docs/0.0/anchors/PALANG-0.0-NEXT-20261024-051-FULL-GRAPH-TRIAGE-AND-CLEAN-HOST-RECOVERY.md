@@ -2,12 +2,12 @@
 
 - Stable ID: G6IP-RAHM-NEXT-051-20261024
 - Production ID: G6IP-RAHM-NEXT-051-20261024
-- Version: 1.0.44
+- Version: 1.0.45
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE
 - Project: Future AI / Palang Footprint — HAIF
 - Canonical queue: this file only
-- Current checkpoint: [CURRENT-115](PALANG-0.0-CURRENT-20261107-115-DAILY-NEWS-CADENCE.md)
-- Current point: [POINT-0/064 (0+)](GPT6-RAHM-USER-POINT-0-20261107-064-DAILY-NEWS-CADENCE-AND-24H-CONTINUITY.md)
+- Current checkpoint: [CURRENT-117](PALANG-0.0-CURRENT-20261120-117-LATEST-VERIFIED-EXPORT-DELIVERY.md)
+- Current point: [POINT-0/065 (0+)](GPT6-RAHM-USER-POINT-0-20261120-065-CONTINUITY-AND-REGISTRATION.md)
 - Living mother: [سند مرجع مادر مدل اولیه](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 - Package contract: [HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md](../../../prototype/haif-gpt6-starter/HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md)
 - Canonical ZIP filename: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`
@@ -785,3 +785,15 @@ The previous blob at this path began with the Integration Queue README title and
 - Source blob de1b75f07241c9b313e476af5f1417177ff78c10 unchanged; Library v7 normalized match with one extra terminal LF; no rewrite.
 - Audit 43685575943 and Portable RAHM Conformance 43685576097 passed on exact SHA bf97fdf8a6a349fb57d112f07ba29a8d885279ed; Evidence Gate 43685575928 created run-start main 576d20a23ec469e043c93b2f6f68457ef991d7e3. The follow-up HEAD has no exact-head Audit/Conformance receipt and remains NOT VERIFIED.
 - Continue exact-final-main Audit/Conformance, package identity and RAHM reconstruction, forensic-original-blob recovery, CURRENT-065/CURRENT-066 and overlay-manifest provenance, Issues #20/#21, BOART-FOLLOWUP-01, historic graph/identity reconciliation and independent-host recovery. Preserve all open gates.
+
+
+## CURRENT-117 / EVT-0281 — latest verified export and on-demand delivery — 2026-11-20
+
+- Current checkpoint: [CURRENT-117](PALANG-0.0-CURRENT-20261120-117-LATEST-VERIFIED-EXPORT-DELIVERY.md); event [EVT-0281](../../architecture/BEHAVIOR-TRACE/EVT-0281-LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-2026-11-20.md); contract [LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY](../../portable/RAHM/LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-CONTRACT-2026-11-20-001.md).
+- User requirement: the same canonical package identity and ZIP filename must evolve continuously; on request, deliver the newest actually verified extractable package together with the matching living mother and a machine-readable receipt/checksum.
+- Existing workflow already contains ZIP build, source-byte comparison, extracted tests, SHA-256 receipt and downloaded-artifact round-trip steps. This is a build mechanism, not proof that the latest main SHA currently has a passing receipt.
+- Current repository has no GitHub Releases or committed ZIP binary. Existing starter manifest says v0.3.8 and explicitly lists a fresh exact-head ZIP receipt as not proven. The separate boot-package manifest says portable_archive_created=false and clean-host import NOT RUN.
+- Open implementation: establish a durable latest-artifact locator or stable release endpoint; keep package source/manifest lineage synchronized; run build, conformance and full audit on the exact current main SHA; inspect the resulting artifact and receipt.
+- Delivery acceptance: ZIP CRC/inventory, source-to-extracted byte equality, tests from extracted package, downloaded-artifact byte round-trip, actual SHA-256 and exact source main SHA must all pass. Then deliver ZIP + matching living mother + receipt/checksum.
+- PACKAGE_VERIFIED does not equal HOST_RECOVERED. Clean independent AI-host import, restart recovery, persistent memory, background capture, live producer and external persistence remain separate open gates.
+- NEXT-051 remains OPEN / LIVING / IN PROGRESS / NOT COMPLETE. No NEXT-052 is created.
