@@ -19,7 +19,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   portable-conformance:
@@ -312,3 +312,78 @@ jobs:
               "workflow_run_id": receipt.get("workflow_run_id")
           }, indent=2))
           PY
+
+      - name: Publish or refresh durable latest verified release
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GITHUB_SHA: ${{ github.sha }}
+          GITHUB_RUN_ID: ${{ github.run_id }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_SERVER_URL: ${{ github.server_url }}
+        run: |
+          set -euo pipefail
+          tag="haif-latest-verified"
+          root="downloaded-starter-artifact"
+          archive="$root/haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip"
+          receipt="$root/haif-gpt6-starter-zip-receipt.json"
+          master="$root/docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md"
+          test -s "$archive"
+          test -s "$receipt"
+          test -s "$master"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          root = Path("downloaded-starter-artifact")
+          receipt = json.loads((root / "haif-gpt6-starter-zip-receipt.json").read_text(encoding="utf-8"))
+          if receipt.get("repository_commit_sha") != os.environ["GITHUB_SHA"]:
+              raise SystemExit("RELEASE_SOURCE_SHA_MISMATCH")
+          if receipt.get("zip_integrity") != "PASS" or receipt.get("zip_readback_source_byte_match") != "PASS" or receipt.get("extracted_zip_tests") != "PASS":
+              raise SystemExit("RELEASE_PACKAGE_ACCEPTANCE_INCOMPLETE")
+          pointer = {
+              "status": "PACKAGE_VERIFIED",
+              "package_identity": receipt["package_identity"],
+              "production_id": receipt["production_id"],
+              "internal_package_version": receipt["internal_package_version"],
+              "canonical_filename": receipt["archive_filename"],
+              "source_commit_sha": receipt["repository_commit_sha"],
+              "workflow_run_id": receipt["workflow_run_id"],
+              "workflow_run_url": receipt["workflow_run_url"],
+              "bytes": receipt["bytes"],
+              "sha256": receipt["sha256"],
+              "inventory": receipt["inventory"],
+              "zip_integrity": receipt["zip_integrity"],
+              "source_byte_match": receipt["zip_readback_source_byte_match"],
+              "extracted_tests": receipt["extracted_zip_tests"],
+              "paired_living_master": "INCLUDED_AND_BYTE_MATCHED",
+              "independent_host_acceptance": receipt["real_independent_host_acceptance"],
+              "stable_release_tag": "haif-latest-verified",
+              "stable_release_url": f'{os.environ["GITHUB_SERVER_URL"]}/{os.environ["GITHUB_REPOSITORY"]}/releases/tag/haif-latest-verified'
+          }
+          (root / "latest-verified-export.json").write_text(json.dumps(pointer, indent=2) + "\n", encoding="utf-8")
+          PY
+          (cd "$root" && sha256sum "haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip" > "haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip.sha256")
+          cat > "$root/release-notes.md" <<EOF
+          Canonical HAIF starter package, rebuilt and verified on exact source SHA: $GITHUB_SHA
+          
+          Package identity and version are in latest-verified-export.json. This stable release tag is the permanent latest-delivery locator; the machine-readable receipt records the exact source SHA and package digest.
+          
+          Package-level checks: ZIP CRC PASS; source-byte read-back PASS; extracted tests PASS; downloaded artifact round-trip PASS.
+          
+          Independent AI-host recovery: NOT RUN. PACKAGE_VERIFIED is not HOST_RECOVERED.
+          Workflow: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID
+          EOF
+          if gh release view "$tag" >/dev/null 2>&1; then
+            gh release edit "$tag" --title "HAIF Latest Verified Export" --notes-file "$root/release-notes.md"
+          else
+            gh release create "$tag" --target "$GITHUB_SHA" --title "HAIF Latest Verified Export" --notes-file "$root/release-notes.md"
+          fi
+          gh release upload "$tag" \
+            "$archive" \
+            "$receipt" \
+            "$master" \
+            "$root/haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip.sha256" \
+            "$root/latest-verified-export.json" \
+            --clobber
+          echo "DURABLE_LATEST_RELEASE_PUBLISHED=PASS"
+          echo "STABLE_RELEASE_URL=$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/releases/tag/$tag"
