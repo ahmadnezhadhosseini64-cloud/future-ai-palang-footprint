@@ -1370,3 +1370,11 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 ## EVT-0278 — Certificate branch new Point 0 and next 0.0
 - [EVT-0278](./EVT-0278-CERTIFICATE-NEW-POINT-0-AND-NEXT-0.0-2026-11-20.md): user-designated local certificate-branch root and its successor 0.0 action checkpoint.
 - Child branch only; global POINT-0/064, CURRENT-115 and NEXT-051 remain unchanged.
+
+
+## EVT-0279 — تبدیل تعامل به مدل رفتارشناسی زنده و قابل استفاده مجدد — 2026-11-20
+- [مدل زندهٔ رفتارشناسی](./LIVING-BEHAVIOR-MODEL-INTERACTION-TO-REUSABLE-PATTERN-2026-11-20-001.md) — Stable ID: `LIVING-BEHAVIOR-MODEL-INTERACTION-TO-REUSABLE-PATTERN-2026-11-20-001`, Version 1.0.0, ACTIVE / LIVING.
+- [رویداد EVT-0279](./EVT-0279-INTERACTION-TO-LIVING-REUSABLE-BEHAVIOR-MODEL-2026-11-20.md) و [لنگر زمانی](./TIME-BINDING-EVT-0279-2026-11-20.md).
+- قاعده: الگوی رفتاریِ معنادار و دارای شواهد، پس از استخراج و اعتبارسنجی باید به مدل مستقل و قابل استفاده مجدد تبدیل، در مخزن ثبت، به لنگرهای ورودی/خروجی و زمان متصل، بازخوانی و در تعاملات بعدی استفاده و تکامل داده شود.
+- اصلاح ثبت وضعیت: زنجیرهٔ EVT-0278 پروژهٔ گواهی از قبل دارای ورودی/خروجی، رویداد، لنگر زمانی، نقاط، رسید و شواهد بازخوانی بود؛ EVT-0279 مدل رفتاری عمومی را به‌صورت افزایشی به آن پیوند می‌دهد و هیچ ریشه یا سند محتوایی قبلی را جایگزین نمی‌کند.
+- ریشهٔ سراسری POINT-0/064، CURRENT-115 و NEXT-051 بدون تغییر باقی می‌مانند؛ شاخهٔ گواهی نیز مستقل باقی می‌ماند.
