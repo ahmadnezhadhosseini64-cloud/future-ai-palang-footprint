@@ -112,3 +112,20 @@ Verified repository state at registration: GitHub reports the `main` branch as `
 - GitHub در زمان بررسی `main.protected=false` گزارش کرد. ابزار در دسترس، تغییر branch protection/rulesets را پشتیبانی نمی‌کند؛ بنابراین محافظت واقعی شاخه هنوز NOT CONFIGURED / OPEN است. محدودیت کد worker جایگزین branch protection یا credential کم‌اختیار نیست.
 - قرارداد JSON Schema دفتر تعامل به‌روزرسانی شد تا input_id، output_id، host_id، host_session_id، master_commit_sha، master_version، checkpoint_id، adapter_version، payload_sha256، privacy_class، redaction_status، capture_status و receipt_ref الزامی باشند.
 - این به‌روزرسانی ساختار و گیت‌ها را محکم‌تر می‌کند؛ اتصال زندهٔ میزبان، استقرار worker و بازیابی مستقل همچنان نیازمند رسید end-to-end واقعی‌اند.
+
+
+---
+
+## POINT-0/070 — Host-scoped isolated workspaces
+
+Every newly accepted AI host receives a stable `host_id`, `workspace_id` and opaque session ID only after identity verification and explicit owner approval. Each host works inside its own isolated workspace with a charter, inbox, observations, proposals, tests, receipts and owner decisions. Hosts consume a version-pinned, read-only master snapshot; they cannot write to MASTER/main, modify workflows or registry, access another host workspace, or promote their own output.
+
+The approved flow is:
+
+`MASTER SNAPSHOT (READ-ONLY) → HOST WORKSPACE → AUTHENTICATED HOST-SCOPED BROKER → QUARANTINE → OWNER MONITORING → CROSS-HOST RECONCILIATION → RAHM → CHILD CANDIDATE → EXPLICIT OWNER APPROVAL → MASTER + SAME CANONICAL ZIP`
+
+A Git folder is not a security boundary. Do not give an AI host a direct repository write token. A broker must authenticate host identity, derive the allowed destination from that identity, validate the schema and digest, reject arbitrary paths/path traversal, and write only to the host's quarantine area on `host-intake`. Least-privilege credentials, real branch protection and negative cross-workspace tests must be proven before any live write-enabled host is accepted. If GitHub's repository-level permissions cannot enforce the needed separation, use a dedicated private intake repository or isolated sandbox and pass only sanitized evidence through the broker.
+
+The Host Registry remains empty until a real host returns identity and read-back receipts. A workspace template or package does not mean that a host is connected or provisioned. Raw conversations are not automatically copied into the master. Only independently verifiable, reproducible, RAHM-validated results explicitly accepted by the owner may update the living master and the same canonical ZIP identity. All other host outputs remain isolated/quarantined or are recorded as rejected/open gaps.
+
+Implementation status at POINT-0/070: architecture and templates registered; live broker, credential isolation, branch protection, cross-workspace denial tests, real host registration and end-to-end receipts remain OPEN / NOT VERIFIED.
