@@ -6,4 +6,5 @@
 - Display timezone: Asia/Tehran (+03:30)
 - User-message instant: UNKNOWN / UNVERIFIED.
 - Event evidence source: Portable RAHM workflow run `44749613468`, created `2026-11-20T14:02:11Z`; this is workflow start time, not the user-message time.
-- Registration commit and exact UTC/Tehran commit timestamps: PENDING direct Git commit read-back.
+- Registration commit: `7edff0a153255c3abe30491e66e186f084a19a30`.
+- Exact Git commit timestamp: UTC `2026-11-20T14:06:48Z` / Asia/Tehran `2026-11-20T17:36:48+03:30`.
