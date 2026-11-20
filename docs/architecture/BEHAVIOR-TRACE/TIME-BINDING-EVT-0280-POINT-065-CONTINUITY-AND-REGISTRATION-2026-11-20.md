@@ -89,3 +89,11 @@ Both runs' jobs were fetched and all steps completed successfully; the durable e
 
 - CURRENT-116 status/read-back update commit: `57915466277e751bf985b9c9de9bb34c2bd9e25e`.
 - Git UTC: `2026-11-20T10:35:58Z`; Asia/Tehran: `2026-11-20T14:05:58+03:30`.
+
+
+## Latest exact-content Evidence Gate and checkpoint link
+
+- Run [44720648749](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44720648749): SUCCESS; tested exact content commit `f4920f49f2d587e24c65ccb8cada84ab186f24b2` (the time-binding and index synchronization write).
+- Durable evidence: `evidence/evidence-gate-44720648749.txt`; artifact ID `14622140269`; SHA-256 `3540aaa04d937f203b381bf5b76699a1a304bb9a87eb4b17ee421d171ab9fd77`.
+- All job steps completed successfully; the evidence file was fetched and read. This verifies the Evidence Gate workflow on the exact content commit, not a full architecture audit or portable conformance.
+- CURRENT-116 latest receipt-link update commit: `10e328fbcd5ee108da5bdb5a9efc633ecf614444`; Git UTC `2026-11-20T10:36:53Z`; Asia/Tehran `2026-11-20T14:06:53+03:30`.
