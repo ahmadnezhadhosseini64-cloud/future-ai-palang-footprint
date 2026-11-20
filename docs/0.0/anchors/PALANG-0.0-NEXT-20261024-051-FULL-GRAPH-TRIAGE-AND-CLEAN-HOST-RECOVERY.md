@@ -835,3 +835,15 @@ The previous blob at this path began with the Integration Queue README title and
 - Governing master: version 1.7.74; permanent event ledger and multi-host governance are append-only.
 - Existing adapter code and synthetic CI tests are not evidence of live external host connection; actual producer, worker deployment, credential and clean-host acceptance remain OPEN.
 - NEXT-051 remains the sole execution queue. No NEXT-052 or parallel root.
+
+
+## Current continuation pointer — POINT-0/069 / CURRENT-122
+- Current point: [POINT-0/069 (0+)](GPT6-RAHM-USER-POINT-0-20261120-069-PERMANENT-INTERACTION-LEDGER-0PLUS.md)
+- Current checkpoint: [CURRENT-122](PALANG-0.0-CURRENT-20261120-122-PERMANENT-INTERACTION-LEDGER.md)
+- Previous point/checkpoint: POINT-0/068 → CURRENT-121
+- Current input/output: IN-112 → OUT-111
+- Event/time: EVT-0287 → TIME-BINDING-EVT-0287
+- Living master: version 1.7.74; package source internal version 0.4.1; canonical ZIP identity and filename unchanged.
+- Permanent interaction ledger: actual authorized host interactions are append-only IN/OUT events with provenance, UTC or UNKNOWN, digest, privacy status and read-back receipt. Unavailable capture must be explicitly marked NOT_CONNECTED / NOT_CAPTURED.
+- Existing adapter and synthetic CI tests do not prove live external host connection or worker deployment. Keep those gates OPEN until direct receipts.
+- NEXT-051 remains the only execution queue; no NEXT-052 or parallel root.
