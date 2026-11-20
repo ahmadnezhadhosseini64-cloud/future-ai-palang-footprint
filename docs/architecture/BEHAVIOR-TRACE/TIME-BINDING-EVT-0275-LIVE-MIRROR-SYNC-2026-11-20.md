@@ -2,7 +2,7 @@
 
 - Event: [EVT-0275](./EVT-0275-LIVE-MIRROR-SYNC-RECHECK-2026-11-20.md)
 - Stable ID: PALANG-TIME-BINDING-EVT-0275-2026-11-20
-- Version: 1.0.0
+- Version: 1.0.1
 - Canonical clock: actual last-change Git commit timestamp in UTC; Asia/Tehran is derived from that same instant.
 - Run observation time: UTC `2026-11-20T06:05:32Z`; Asia/Tehran `2026-11-20T09:35:32+03:30`. This is distinct from repository commit time, Actions run time, Library metadata time and Library listing time.
 
@@ -42,7 +42,15 @@
 - RAHM job 135869312102 ran 23 tests; existing ZIP SHA-256 `79a0fe09eb2b8aa0d8a988aa129d4a9afca0267985f9840a7819b6d30c09bfa8`; uploaded artifact 14572916765 SHA-256 `4d4a22319674074f5e92cf2a7ae3d8a0c2cea6b44d3ae9278d0b73e0c20fec15`; downloaded digest matched and extracted tests PASS. Tested SHA is not run-start main.
 - Exact-main Audit PASS; exact-main RAHM NOT VERIFIED at run start.
 
-## 4. Registration commit boundary
+## 4. Registration and exact-SHA verification boundary
 
-- Initial event/index registration commit: pending Git metadata fetch after write; this file will be updated to version 1.0.1 only after independent read-back.
-- Time-binding file final-change timestamp will be taken from its own Git commit metadata after its final update; it is not substituted with run-start time, Actions time or Library metadata time.
+- Initial event/index registration commit: `ec06d2d3d33333d336951c3aee57e13d61ca4f6c`; Git commit UTC `2026-11-20T06:24:56Z`; derived Asia/Tehran `2026-11-20T09:54:56+03:30`.
+- All eight changed files (EVT-0275, this time-binding v1.0.0, and six central index/master surfaces) were independently read back at the exact registration commit. Every returned blob SHA matched the created blob SHA.
+- Living Architecture Audit [44687638120](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44687638120): SUCCESS on exact registration SHA `ec06d2d3d33333d336951c3aee57e13d61ca4f6c`; job 136125649463 logged `repository_commit=ec06d2d3d33333d336951c3aee57e13d61ca4f6c`. It scanned 5,783 files, reported zero timestamp parse/ambiguity errors, and retained 17 missing local-link findings.
+- Portable RAHM Conformance [44687638009](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44687638009): SUCCESS on exact registration SHA `ec06d2d3d33333d336951c3aee57e13d61ca4f6c`; job 136125648996 logged the same repository_commit_sha and ran 23 tests. Existing starter ZIP SHA-256 `79a0fe09eb2b8aa0d8a988aa129d4a9afca0267985f9840a7819b6d30c09bfa8`; artifact 14606579005 SHA-256 `accc9d7038af240e731dfd8a218408bd362cf103018b4855d0e5a90282bcb216`; downloaded digest matched; ZIP integrity, source-byte match, extracted tests and artifact round-trip PASS.
+- Evidence Gate - Independent Execution Test [44687637988](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44687637988): SUCCESS on exact registration SHA `ec06d2d3d33333d336951c3aee57e13d61ca4f6c`; job 136125648761 created the durable follow-up commit below.
+- Automatic Final Registration Proof [44687638152](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44687638152), Production Detection Safety Net [44687637946](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44687637946), Reconciliation Watchdog [44687637961](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44687637961) and Pending Registration Drain [44687637994](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44687637994) all succeeded on exact registration SHA `ec06d2d3d33333d336951c3aee57e13d61ca4f6c`.
+- Actions created/updated times are run metadata, not Git commit time: the three principal runs were created at `2026-11-20T06:25:00Z`; Audit and RAHM updated at `06:25:18Z`, Evidence Gate at `06:25:17Z`.
+- Evidence Gate created follow-up main commit `63e5ca4b87853623cbbf18f73735888a74893232`, UTC `2026-11-20T06:25:10Z`, derived Tehran `2026-11-20T09:55:10+03:30`, adding `evidence/evidence-gate-44687637988.txt`.
+- The current main after Evidence Gate is `63e5ca4b87853623cbbf18f73735888a74893232`. The preceding Audit and RAHM runs tested its parent `ec06d2d3d33333d336951c3aee57e13d61ca4f6c`, not this follow-up. Therefore the current main is NOT VERIFIED by that pair until separately audited and conformed.
+- This time-binding file's own final-change commit timestamp is taken from its Git commit metadata after this update; it is not substituted with the initial registration commit, Actions run time, Library metadata or Library listing time.
