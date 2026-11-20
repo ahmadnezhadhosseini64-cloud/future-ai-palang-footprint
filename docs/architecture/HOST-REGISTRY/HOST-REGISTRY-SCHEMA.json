@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HAIF Host Registry",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "owner_authority",
+    "hosts",
+    "updated_at_utc"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "owner_authority": {
+      "type": "string",
+      "minLength": 1
+    },
+    "updated_at_utc": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "hosts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "host_id",
+          "host_type",
+          "model_version",
+          "adapter_version",
+          "permission_scope",
+          "status",
+          "registered_at_utc",
+          "master_version_seen",
+          "master_commit_seen"
+        ],
+        "properties": {
+          "host_id": {
+            "type": "string",
+            "pattern": "^[A-Z0-9][A-Z0-9._-]{2,127}$"
+          },
+          "host_type": {
+            "type": "string",
+            "minLength": 1
+          },
+          "model_version": {
+            "type": "string",
+            "minLength": 1
+          },
+          "adapter_version": {
+            "type": "string",
+            "minLength": 1
+          },
+          "permission_scope": {
+            "enum": [
+              "L0_OFFLINE",
+              "L1_READ_ONLY",
+              "L2_PROPOSAL_ONLY",
+              "L3_TEST_CONTRIBUTOR",
+              "L4_OWNER_APPROVED_MAINTAINER"
+            ]
+          },
+          "status": {
+            "enum": [
+              "PROPOSED",
+              "IDENTITY_VERIFIED",
+              "ACTIVE",
+              "SUSPENDED",
+              "REVOKED"
+            ]
+          },
+          "registered_at_utc": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date-time"
+          },
+          "last_seen_at_utc": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date-time"
+          },
+          "master_version_seen": {
+            "type": "string"
+          },
+          "master_commit_seen": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "owner_approval_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "credential_reference": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Secret-manager reference only; never a token or secret."
+          },
+          "acceptance_receipt_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "revocation_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
