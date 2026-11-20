@@ -3,13 +3,13 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.10.45
+- Version: 1.10.46
 - Date: 2026-11-20
 - Exact Time: EVT-0261 event commit UTC `2026-11-10T06:47:53Z` / Tehran `2026-11-10T10:17:53+03:30`; initial time-binding commit UTC `2026-11-10T06:48:18Z` / Tehran `2026-11-10T10:18:18+03:30`.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: ACTIVE / LIVING — latest user-turn root POINT-0/064 / EVT-0257; checkpoint CURRENT-115 v1.0.8; sole active queue NEXT-051 v1.0.44; latest mirror-only event EVT-0271. Source unchanged; Library v7 normalized match with one extra terminal LF; no source or Library write. Living Architecture Audit 44472618022 PASS on exact main SHA a06a4c3a24ae768bdab00f98511c1f1dc7b6d3f8; latest RAHM 44257358104 PASS on parent SHA 47894652fbd5b4ab47cbd9fecc84464bcebe9041, not current main; exact-main RAHM NOT VERIFIED. CURRENT-065/CURRENT-066 and overlay-manifest lineage, Issues #20/#21, NEXT-051 forensic archive and historic graph/identity/parent/time reconciliation remain OPEN.
+- Status: ACTIVE / LIVING — main root POINT-0/064 / EVT-0257; certificate child root CERT-POINT-0.0-20261120-002 / EVT-0274; checkpoint CURRENT-115 v1.0.8; sole active queue NEXT-051 v1.0.44; latest mirror-only event EVT-0276. Source unchanged; Library v7 normalized match with one extra terminal LF; no source or Library write. Audit 44688034068 PASS on exact main SHA 2ea7e826931a42fb0a5957cdb58b698bb8f30e00; latest RAHM 44687870952 PASS on prior SHA bd44a799ce6296aede0ee6be64bdf26cd0af3383, not current main; exact-main RAHM NOT VERIFIED. CURRENT-065/CURRENT-066 and overlay-manifest lineage, Issues #20/#21, NEXT-051 forensic archive and historic graph/identity/parent/time reconciliation remain OPEN.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
@@ -2775,3 +2775,11 @@ Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-11
 - Source/Library v7 normalized match; exact equality FALSE by one terminal LF; no source or Library write.
 - Run-start Audit 44611950220 PASS on exact main 0810674cb5340a62a4c3bcb547585c9b9263e1c2; latest RAHM 44611586010 PASS on 553efa493f6bca5c60385151961e56c46ca4430d, not current main. Post-registration exact-SHA audit/conformance required.
 - Continue NEXT-051: exact-SHA package proof, forensic original-blob recovery, graph/identity/parent/time reconciliation, CURRENT-065/CURRENT-066 and overlay-manifest review, Issues #20/#21, BOART-FOLLOWUP-01 and independent-host recovery.
+
+## EVT-0276 — Live mirror synchronization — 2026-11-20
+- [EVT-0276](./EVT-0276-LIVE-MIRROR-SYNC-RECHECK-2026-11-20.md) / [TIME-BINDING-EVT-0276](./TIME-BINDING-EVT-0276-LIVE-MIRROR-SYNC-2026-11-20.md).
+- Mirror-only under main POINT-0/064 / EVT-0257 / CURRENT-115 v1.0.8 / NEXT-051 v1.0.44; separate certificate child root CERT-POINT-0.0-20261120-002 / EVT-0274 remains separate.
+- Source blob de1b75f07241c9b313e476af5f1417177ff78c10 unchanged; Library v7 normalized match with one extra terminal LF; exact equality FALSE; no source or Library write.
+- Run-start main Audit 44688034068 and CPREL harness/evidence 44688034103 / 44688034176 PASS on exact SHA 2ea7e826931a42fb0a5957cdb58b698bb8f30e00. Latest RAHM 44687870952 PASS on prior SHA bd44a799ce6296aede0ee6be64bdf26cd0af3383; exact-main RAHM NOT VERIFIED.
+- CURRENT-065/CURRENT-066 and overlay-manifest lineage OPEN / AMBIGUOUS; no winner selected. Manifest has no winner_selected field; filename CURRENT-065 and package/checkpoint lineage references CURRENT-066. Issues #20/#21 OPEN; NEXT-051 forensic recovery OPEN / NOT RECOVERED; BOART-FOLLOWUP-01 ACTIVE. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
+- No new main root, IN/OUT pair, checkpoint identity, successor queue or automation; NEXT-052 not created.

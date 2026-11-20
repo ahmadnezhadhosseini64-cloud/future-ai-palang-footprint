@@ -3,7 +3,7 @@
 ## 0. شناسنامه، لنگر و وضعیت
 - **Stable ID / شناسهٔ پایدار:** CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001
 - **Production ID / شناسهٔ تولید:** CCCMR-2026-10-21-001
-- **Version / نسخه:** 1.0.13
+- **Version / نسخه:** 1.0.14
 - **Owner / مالک:** Ahmad Nezhadhosseini / احمد پلنگ
 - **Project / پروژه:** Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
 - **Architecture target / هدف معماری:** HAIF — Human–AI Interaction Future (آیندهٔ تعامل انسان و هوش مصنوعی)
@@ -945,3 +945,12 @@ The canonical live-destination audit source and its exact Library version-7 snap
 - Source/Library v7 normalized content MATCH; exact equality FALSE by one extra terminal LF; no source or Library write.
 - Run-start Audit 44611950220 PASS on exact main; latest RAHM 44611586010 PASS on prior SHA 553efa493f6bca5c60385151961e56c46ca4430d, not current main. Exact-main RAHM NOT VERIFIED at run start.
 - CURRENT-065/CURRENT-066, overlay-manifest lineage, Issues #20/#21, NEXT-051 forensic archive, BOART-FOLLOWUP-01 and external-host/destination gates remain OPEN / NOT VERIFIED / NOT RUN.
+
+## EVT-0276 — Live mirror synchronization — 2026-11-20
+- [EVT-0276](../../architecture/BEHAVIOR-TRACE/EVT-0276-LIVE-MIRROR-SYNC-RECHECK-2026-11-20.md) / [TIME-BINDING-EVT-0276](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0276-LIVE-MIRROR-SYNC-2026-11-20.md).
+- Mirror-only under POINT-0/064 / EVT-0257 / CURRENT-115 v1.0.8 / NEXT-051 v1.0.44; certificate child root CERT-POINT-0.0-20261120-002 / EVT-0274 remains separate.
+- Run-start main 2ea7e826931a42fb0a5957cdb58b698bb8f30e00; commit UTC 2026-11-20T06:28:22Z / Tehran 09:58:22+03:30.
+- Source/Library v7 normalized match; exact equality false by one terminal LF; no source or Library write.
+- Audit 44688034068 and CPREL 44688034103 / 44688034176 passed on exact main. Latest RAHM 44687870952 passed on prior SHA bd44a799ce6296aede0ee6be64bdf26cd0af3383; exact-main RAHM remains NOT VERIFIED.
+- Preserve POINT-0/016, /017, /018 / EVT-0180, EVT-0177, canonical EVT-0178, EVT-0179 and quarantined duplicate-number artifact. CURRENT-065/CURRENT-066 and overlay-manifest lineage OPEN / AMBIGUOUS; no winner selected.
+- Issues #20/#21 OPEN; NEXT-051 forensic archive OPEN / NOT RECOVERED; BOART-FOLLOWUP-01 ACTIVE. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN.
