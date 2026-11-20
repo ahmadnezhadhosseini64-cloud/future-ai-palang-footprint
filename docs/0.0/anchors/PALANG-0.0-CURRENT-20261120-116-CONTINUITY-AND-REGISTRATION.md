@@ -10,7 +10,7 @@
 - Sole active queue: [NEXT-051](PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
 - Related previous events: [EVT-0278](../../architecture/BEHAVIOR-TRACE/EVT-0278-CERTIFICATE-NEW-POINT-0-AND-NEXT-0.0-2026-11-20.md) → [EVT-0279](../../architecture/BEHAVIOR-TRACE/EVT-0279-INTERACTION-TO-LIVING-REUSABLE-BEHAVIOR-MODEL-2026-11-20.md) → [EVT-0280](../../architecture/BEHAVIOR-TRACE/EVT-0280-POINT-065-CONTINUITY-AND-REGISTRATION-2026-11-20.md)
 - Version: 1.0.0
-- Status: ACTIVE / LIVING / OPEN; repository registration and read-back pending.
+- Status: ACTIVE / LIVING / OPEN; repository registration and cross-file read-back VERIFIED. NEXT-051 remains OPEN.
 
 ## Current point status
 
@@ -41,3 +41,10 @@ No NEXT-052 is created. CURRENT-065/CURRENT-066 historic conflict remains unreso
 - A new point registration does not prove automatic capture of every future interaction.
 - Keep all pending items OPEN until their own direct evidence passes.
 - The user-message receipt timestamp remains UNKNOWN / UNVERIFIED; Git times belong only to repository writes.
+
+
+## Evidence Gate execution receipt
+
+- Run [44720491699](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44720491699): SUCCESS; evidence artifact [evidence-gate-44720491699](../../evidence/evidence-gate-44720491699.txt) confirms Stable Retrieval Core VERIFIED and Independent Automated Execution PROVEN.
+- Tested commit: `7a48fb9d321a2950255dd95405c7f96bb002bf32` (OUT-104 acceptance write). The later time-binding ledger update is a newer main commit; therefore this Evidence Gate result is not represented as a test of the final HEAD.
+- The Evidence Gate does not replace a full Living Architecture Audit or Portable RAHM Conformance run on the exact final HEAD.
