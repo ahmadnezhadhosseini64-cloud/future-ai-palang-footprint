@@ -1,21 +1,319 @@
 {
-  "$schema":"https://json-schema.org/draft/2020-12/schema",
-  "title":"HAIF Rahm Interaction Pair",
-  "type":"object",
-  "required":["record_id","version","input","output","observation","evidence","status","lineage"],
-  "properties":{
-    "record_id":{"type":"string","minLength":1},
-    "version":{"type":"string"},
-    "timestamp_utc":{"type":["string","null"],"format":"date-time"},
-    "timestamp_tehran":{"type":["string","null"],"description":"Same instant as UTC converted to Asia/Tehran; null if source instant is unknown."},
-    "input":{"type":"object","required":["content"],"properties":{"content":{"type":"string"},"source_ref":{"type":["string","null"]},"received_at_utc":{"type":["string","null"]}}},
-    "output":{"type":"object","required":["content"],"properties":{"content":{"type":"string"},"artifact_refs":{"type":"array","items":{"type":"string"}},"written":{"type":"boolean"},"readback_verified":{"type":"boolean"}}},
-    "observation":{"type":"array","items":{"type":"object","required":["statement","kind"],"properties":{"statement":{"type":"string"},"kind":{"enum":["OBSERVED","HYPOTHESIS","INFERENCE","USER_FEEDBACK"]},"evidence_refs":{"type":"array","items":{"type":"string"}}}}},
-    "evidence":{"type":"array","items":{"type":"object","required":["ref","type","status"],"properties":{"ref":{"type":"string"},"type":{"type":"string"},"status":{"enum":["PRESENT","MISSING","CONFLICTING","UNVERIFIED"]},"digest":{"type":["string","null"]}}}},
-    "failures":{"type":"array","items":{"type":"object","required":["description","status"],"properties":{"description":{"type":"string"},"status":{"enum":["OPEN","RESOLVED","UNTESTED"]},"correction_ref":{"type":["string","null"]}}}},
-    "host_capability_snapshot":{"type":"string"},
-    "status":{"enum":["DRAFT","REGISTERED","READ-BACK VERIFIED","VALIDATED","OPEN","BLOCKED","FAILED"]},
-    "lineage":{"type":"object","required":["parent_ids","event_refs","next_action"],"properties":{"parent_ids":{"type":"array","items":{"type":"string"}},"event_refs":{"type":"array","items":{"type":"string"}},"next_action":{"type":["string","null"]}}}
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HAIF Rahm Host Interaction Pair with Permanent Provenance",
+  "type": "object",
+  "required": [
+    "record_id",
+    "version",
+    "input",
+    "output",
+    "observation",
+    "evidence",
+    "status",
+    "lineage",
+    "input_id",
+    "output_id",
+    "host_id",
+    "host_session_id",
+    "master_commit_sha",
+    "master_version",
+    "checkpoint_id",
+    "adapter_version",
+    "payload_sha256",
+    "privacy_class",
+    "redaction_status",
+    "capture_status",
+    "receipt_ref"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string"
+    },
+    "timestamp_utc": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "timestamp_tehran": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Same instant as UTC converted to Asia/Tehran; null if source instant is unknown."
+    },
+    "input": {
+      "type": "object",
+      "required": [
+        "content"
+      ],
+      "properties": {
+        "content": {
+          "type": "string"
+        },
+        "source_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "received_at_utc": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "output": {
+      "type": "object",
+      "required": [
+        "content"
+      ],
+      "properties": {
+        "content": {
+          "type": "string"
+        },
+        "artifact_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "written": {
+          "type": "boolean"
+        },
+        "readback_verified": {
+          "type": "boolean"
+        }
+      }
+    },
+    "observation": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "statement",
+          "kind"
+        ],
+        "properties": {
+          "statement": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "OBSERVED",
+              "HYPOTHESIS",
+              "INFERENCE",
+              "USER_FEEDBACK"
+            ]
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "ref",
+          "type",
+          "status"
+        ],
+        "properties": {
+          "ref": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "PRESENT",
+              "MISSING",
+              "CONFLICTING",
+              "UNVERIFIED"
+            ]
+          },
+          "digest": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "failures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "description",
+          "status"
+        ],
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "OPEN",
+              "RESOLVED",
+              "UNTESTED"
+            ]
+          },
+          "correction_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "host_capability_snapshot": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "DRAFT",
+        "REGISTERED",
+        "READ-BACK VERIFIED",
+        "VALIDATED",
+        "OPEN",
+        "BLOCKED",
+        "FAILED"
+      ]
+    },
+    "lineage": {
+      "type": "object",
+      "required": [
+        "parent_ids",
+        "event_refs",
+        "next_action"
+      ],
+      "properties": {
+        "parent_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "event_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "next_action": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "input_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "output_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "host_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "host_session_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Pseudonymous session identifier; never a user secret."
+    },
+    "master_commit_sha": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "master_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "checkpoint_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "adapter_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "payload_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "privacy_class": {
+      "enum": [
+        "PUBLIC",
+        "INTERNAL",
+        "CONFIDENTIAL",
+        "SENSITIVE_REDACTED"
+      ]
+    },
+    "redaction_status": {
+      "enum": [
+        "NOT_REQUIRED",
+        "REDACTED",
+        "PENDING",
+        "BLOCKED"
+      ]
+    },
+    "consent_basis": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "capture_status": {
+      "enum": [
+        "CAPTURED",
+        "QUARANTINED",
+        "WRITE_FAILED",
+        "READBACK_FAILED",
+        "NOT_CONNECTED",
+        "NOT_CAPTURED"
+      ]
+    },
+    "receipt_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "created_at_utc": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "received_at_utc": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    }
   },
-  "additionalProperties":false
+  "additionalProperties": false
 }
