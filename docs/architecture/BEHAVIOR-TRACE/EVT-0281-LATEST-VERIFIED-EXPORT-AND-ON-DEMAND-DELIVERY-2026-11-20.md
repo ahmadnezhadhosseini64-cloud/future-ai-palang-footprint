@@ -46,3 +46,8 @@ No historical root, queue, package identity or unresolved gate is replaced by th
 - Paired living mother: 629579 bytes; SHA-256 `a6dd51f62f214476f17a40896b14c3e39a3ba4d713247297689f293af02702a9`.
 - Stable release [haif-latest-verified](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified), ID `452647521`, refreshed at 2026-11-20T12:19:12Z. Five assets are present: ZIP, `LIVING_MASTER_REFERENCE.md`, receipt JSON, latest pointer JSON and checksum.
 - This supersedes the previous v0.3.9 receipt for source SHA 8859b3b. Independent-host recovery remains NOT RUN.
+
+
+## Dynamic latest-pointer authority
+
+The stable release [haif-latest-verified](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified) and its `latest-verified-export.json` are the authoritative moving pointer for on-demand delivery. Historical run IDs, source SHAs and digests written earlier in this event remain preserved as historical receipts; they must not be treated as current without re-reading the latest pointer and receipt. Each delivery requires current main equality with `current_main_head_sha`, or the explicitly verified evidence-only equivalence rule; any other source delta requires rebuild. Deliver ZIP + paired living mother + receipt + pointer + checksum. Host recovery remains a separate NOT RUN gate.

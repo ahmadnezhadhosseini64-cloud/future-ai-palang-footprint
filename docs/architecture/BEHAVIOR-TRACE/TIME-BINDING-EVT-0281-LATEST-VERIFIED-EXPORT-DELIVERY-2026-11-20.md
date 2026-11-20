@@ -77,3 +77,8 @@ This timestamp ledger records repository/workflow/release events only. It does n
 | Package tests | CI extracted tests PASS; local extracted rerun 24/24 PASS |
 
 Release assets read back: canonical ZIP, `LIVING_MASTER_REFERENCE.md`, receipt JSON, `latest-verified-export.json`, and SHA-256 checksum. The evidence-only equivalence is explicitly recorded; user-message receipt and assistant-processing timestamps remain unknown/unverified.
+
+
+## Dynamic timestamp and receipt authority
+
+The stable release [haif-latest-verified](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified) is the moving delivery pointer. Its latest JSON pointer and receipt provide the currently authoritative build source SHA, release-time main SHA, workflow run, exact package digest and paired mother digest. Prior run timestamps and hashes in this ledger are immutable historical observations, not a promise that they remain latest. Re-read the release metadata and pointer at every delivery. UTC remains canonical; Tehran is derived from the same sourced instant. User-message receipt and assistant-processing times remain unknown unless directly captured.

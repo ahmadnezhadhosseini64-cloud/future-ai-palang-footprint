@@ -77,3 +77,8 @@ Independent AI-host import, cold-start/restart recovery, persistent memory, auto
 - ZIP v0.3.9, 207402 bytes, SHA-256 `36966dc71f951021a68defe72677a35b58c8fb5b25100b7e59e5d63c90109be2`; 14 files; local extracted tests 24/24 PASS.
 - Mother 629579 bytes, SHA-256 `a6dd51f62f214476f17a40896b14c3e39a3ba4d713247297689f293af02702a9`.
 - Independent-host import remains NOT RUN.
+
+
+## Moving-pointer authority
+
+The stable release URL is a moving pointer by design. The release asset `latest-verified-export.json` is authoritative for the current package. At each request, re-read it and the receipt; require its `current_main_head_sha` to equal current main HEAD. If build SHA differs, require `current_head_equivalence_verified=true` with only recorded Evidence Gate receipt files in the delta. Otherwise the package is stale and must be rebuilt. Never use a run ID, hash or byte count copied from an older conversation or static note as the current version.

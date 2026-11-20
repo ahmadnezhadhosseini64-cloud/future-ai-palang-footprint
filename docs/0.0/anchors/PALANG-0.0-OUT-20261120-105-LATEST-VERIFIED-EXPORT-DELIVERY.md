@@ -73,3 +73,12 @@ When the user says "آخرین نسخه کامل را بده", resolve current m
 - Paired mother: 629579 bytes; SHA-256 `a6dd51f62f214476f17a40896b14c3e39a3ba4d713247297689f293af02702a9`.
 - Stable release ID 452647521 refreshed; five assets verified in release metadata. The latest pointer records the build SHA, current main SHA and allowed evidence-only delta.
 - Package status: PACKAGE_VERIFIED. Independent-host recovery remains NOT RUN / OPEN.
+
+
+## قرارداد منبع حقیقت پویا
+
+- انتشار [haif-latest-verified](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified) به‌همراه `latest-verified-export.json` مرجع دائمی و متغیر آخرین خروجی است.
+- در زمان هر تحویل، HEAD جاری، current_main_head_sha، build_source_commit_sha، current_head_equivalence_verified، receipt، digest، اندازه و موجودی ZIP دوباره تطبیق داده می‌شوند. شمارهٔ run و SHAهای مندرج در ثبت‌های قدیمی فقط تاریخچه‌اند.
+- اختلاف build SHA و HEAD فقط در صورت ثبت و تأیید deltaهای صرفاً Evidence Gate پذیرفته است؛ هر اختلاف منبعی دیگر نیازمند rebuild است.
+- خروجی کامل: ZIP canonical + سند مادر هم‌نسخه + receipt JSON + latest pointer + SHA-256.
+- بازیابی میزبان مستقل همچنان گیت جدا و NOT RUN است.

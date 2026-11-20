@@ -60,3 +60,12 @@ Continue NEXT-051 while implementing a durable latest-artifact pointer/manual re
 - Mother: 629579 bytes; SHA-256 `a6dd51f62f214476f17a40896b14c3e39a3ba4d713247297689f293af02702a9`.
 - Stable release ID 452647521 updated with five assets. On-demand delivery must compare receipt `current_main_head_sha` with current main and honor the evidence-only equivalence list.
 - Independent host import/recovery remains NOT RUN; do not claim HOST_RECOVERED.
+
+
+## مرجع زندهٔ نهایی برای هر درخواست تحویل
+
+- منبع حقیقت متغیر: [انتشار پایدار haif-latest-verified](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified) و دارایی `latest-verified-export.json`.
+- در هر درخواست «آخرین نسخه کامل را بده»، مقدارهای current main SHA، build source SHA، نسخه، digest، byte count، run ID و inventory باید از pointer و receipt همان انتشار دوباره خوانده شوند؛ snapshotهای عددی قبلی در این checkpoint تاریخچه‌اند.
+- شرط تحویل: pointer.current_main_head_sha باید با HEAD جاری برابر باشد؛ اگر build_source_commit_sha متفاوت است، current_head_equivalence_verified باید true باشد و deltaها فقط Evidence Gate receipt باشند. هر تغییر دیگر نیازمند build تازه است.
+- بسته، سند مادر هم‌نسخه، receipt، pointer و checksum با هم تحویل می‌شوند.
+- وضعیت بسته PACKAGE_VERIFIED است؛ HOST_RECOVERED تا زمان دریافت رسید واقعی میزبان مستقل اعلام نمی‌شود.
