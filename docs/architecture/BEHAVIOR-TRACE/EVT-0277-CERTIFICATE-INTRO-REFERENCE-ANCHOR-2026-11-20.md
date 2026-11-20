@@ -32,3 +32,8 @@ This interaction is evidence for a candidate HAIF behavior: user-controlled immu
 - UTC equivalent: 2026-11-20T07:21Z; seconds unknown.
 - These are conversation time references, not Git timestamps.
 - Git author/committer times for each artifact must be retrieved from commit metadata after the write.
+ 
+
+## Time-binding and receipt
+- [TIME-BINDING-EVT-0277](./TIME-BINDING-EVT-0277-2026-11-20.md) records message-time precision and actual Git commit timestamps.
+- Certificate receipt: [CERT-RECEIPT-20261120-002](../../../گواهی/شروع-جدید-۳۰-آبان-۱۴۰۵/رویدادها/CERT-RECEIPT-20261120-002.md).
