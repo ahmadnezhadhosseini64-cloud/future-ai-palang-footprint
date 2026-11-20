@@ -49,3 +49,19 @@ Read-back must be recorded only after fetching the exact paths from the default 
 ## Repository read-back verification
 
 The following exact paths were fetched from the default branch after their writes: POINT-0/065 root, IN-105, OUT-104, CURRENT-116, EVT-0280, TIME-BINDING-EVT-0280, docs/0.0/README.md, Behavior Trace README, docs/REFERENCE_INDEX.md, Integration Queue README, and the living mother reference. Their stable identifiers and expected links were checked. Read-back is a repository-content check; it is not a full historical graph audit.
+
+
+## Final index/header synchronization
+
+| Artifact | Commit SHA | Git UTC | Asia/Tehran |
+|---|---|---|---|
+| 0.0 register latest-root header | `c7b4f789865b14875946fd7b758629cf606f010b` | 2026-11-20T10:33:50Z | 2026-11-20T14:03:50+03:30 |
+| Behavior Trace index version 1.0.43 | `329ccb154c0f0a35a52f36d2e8fa9642d40d7276` | 2026-11-20T10:33:54Z | 2026-11-20T14:03:54+03:30 |
+| Reference Index latest-root header | `4905bd5ff5ce18a3cb0fa4548fc64bcf627bf80f` | 2026-11-20T10:33:58Z | 2026-11-20T14:03:58+03:30 |
+| Integration Queue version 1.10.47 | `0c2c14948b89dacbcb013262c6c7349636447652` | 2026-11-20T10:34:02Z | 2026-11-20T14:04:02+03:30 |
+| Living mother version 1.7.68 and current-root header | `977f99b3e7bfb5956cd1f8521e98f5473d96f566` | 2026-11-20T10:34:20Z | 2026-11-20T14:04:20+03:30 |
+| Prior time-binding ledger update | `555f26562e734813b9ba1584f57dda5c32e36b82` | 2026-11-20T10:33:29Z | 2026-11-20T14:03:29+03:30 |
+
+## Final read-back acceptance
+
+All 11 registered paths were fetched from the default branch after their latest writes. The expected new point/event/checkpoint identifiers and the cross-links among the root, IN/OUT, event, time binding, current checkpoint, 0.0 register, Behavior Trace index, Reference Index, Integration Queue and living mother were checked. The new-root heading and index version headers were also checked. This is a successful repository read-back, not a claim that NEXT-051's open architecture tests have passed.
