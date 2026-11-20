@@ -2,17 +2,17 @@
 
 - Stable ID: G6IP-RAHM-NEXT-051-20261024
 - Production ID: G6IP-RAHM-NEXT-051-20261024
-- Version: 1.0.46
+- Version: 1.0.47
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE
 - Project: Future AI / Palang Footprint — HAIF
 - Canonical queue: this file only
-- Current checkpoint: [CURRENT-121](PALANG-0.0-CURRENT-20261120-121-OWNER-GOVERNED-MULTI-HOST-EVOLUTION.md)
-- Current point: [POINT-0/068 (0+)](GPT6-RAHM-USER-POINT-0-20261120-068-OWNER-GOVERNED-MULTI-HOST-EVOLUTION-0PLUS.md)
+- Current checkpoint: [CURRENT-122](PALANG-0.0-CURRENT-20261120-122-PERMANENT-INTERACTION-LEDGER.md)
+- Current point: [POINT-0/069 (0+)](GPT6-RAHM-USER-POINT-0-20261120-069-PERMANENT-INTERACTION-LEDGER-0PLUS.md)
 - Living mother: [سند مرجع مادر مدل اولیه](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 - Package contract: [HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md](../../../prototype/haif-gpt6-starter/HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md)
 - Canonical ZIP filename: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`
 - Stable package ID: `HAIF-GPT6-PORTABLE-STARTER-20261025-004`
-- Latest verified package source target: v0.3.8; exact-SHA build/read-back receipts are required for every later main SHA.
+- Current package source target: internal v0.4.1 under the unchanged stable package ID and canonical ZIP filename. The new package is not VERIFIED until exact-current-main CI build, extracted tests, artifact round-trip, digest and receipt all pass.
 - Queue rule: do not create NEXT-052.
 
 ## Mission
