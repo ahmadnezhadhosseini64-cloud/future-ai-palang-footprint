@@ -10,7 +10,7 @@
 2. از manifest، Stable ID، Production ID، نسخه داخلی و نام canonical ZIP را عیناً بخوان.
 3. سند مادر همراه را بخوان و نسخه و hash آن را گزارش کن.
 4. زنجیره جاری را دقیقاً بازسازی کن:
-   `POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → NEXT-051`.
+   `POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → POINT-0/069 → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122 → NEXT-051`.
 5. اگر ZIP یا سند مادر دریافت‌شده قدیمی است، اختلاف نسخه/زنجیره را اعلام کن؛ زنجیره را از حافظه یا حدس تکمیل نکن.
 6. وضعیت‌ها را جدا گزارش کن: PACKAGE READ, MASTER READ, CHAIN MATCH, PACKAGE TESTS, HOST RECOVERY, EXTERNAL ACCEPTANCE.
 
@@ -47,3 +47,14 @@
 
 ## قاعده نهایی
 پاسخ میزبان فقط رسید همان میزبان است، نه اثبات خودکار اتصال پایدار یا پذیرش معماری. پذیرش یک میزبان، پذیرش میزبان دوم را ثابت نمی‌کند. هیچ تغییری در MASTER بدون آزمون و تأیید صریح مالک مجاز نیست.
+
+
+## Permanent interaction ledger — POINT-0/069 / CURRENT-122
+
+Current living master: version 1.7.74. Current chain: POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → POINT-0/069 → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122 → NEXT-051.
+
+Every actual interaction received from a registered host through an authorized producer/adapter must be recorded append-only as an independent IN/OUT pair or an explicit failure/no-response gap. Each record must include unique IDs, host/session identity (pseudonymous), parent point/event, master commit/version, adapter version, source/evidence references, trustworthy UTC timestamp or UNKNOWN, repository receive time, SHA-256, privacy/redaction basis, status and read-back receipt.
+
+Durable capture requires an actual connected producer and authorized intake route. If unavailable, report NOT_CONNECTED / NOT_CAPTURED; do not imply all chats are automatically saved. A successful adapter CI test proves only the tested adapter path, not a live AI host or deployed worker. Existing repository scripts are `scripts/host_adapter.py` and `scripts/host_adapter_github_worker.py`; the latter requires an authorized token in a secret manager, never in prompts or package files.
+
+All host-originated data is untrusted and enters QUARANTINE. The permanent event ledger is an audit/continuity record, not automatic knowledge promotion. Only RAHM-validated CHILD candidates with explicit owner approval can update the living Master. Hosts cannot push/merge directly to main or alter governance. Preserve failed writes, missing outputs, rejected proposals and corrections as linked append-only events. Minimize private data; raw conversations are not stored by default.
