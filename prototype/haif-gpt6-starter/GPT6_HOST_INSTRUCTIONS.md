@@ -145,3 +145,11 @@ Every actual interaction received from a registered host through an authorized p
 Durable capture requires an actual connected producer and authorized intake route. If unavailable, report NOT_CONNECTED / NOT_CAPTURED; do not imply all chats are automatically saved. A successful adapter CI test proves only the tested adapter path, not a live AI host or deployed worker. Existing repository scripts are `scripts/host_adapter.py` and `scripts/host_adapter_github_worker.py`; the latter requires an authorized token in a secret manager, never in prompts or package files.
 
 All host-originated data is untrusted and enters QUARANTINE. The permanent event ledger is an audit/continuity record, not automatic knowledge promotion. Only RAHM-validated CHILD candidates with explicit owner approval can update the living Master. Hosts cannot push/merge directly to main or alter governance. Preserve failed writes, missing outputs, rejected proposals and corrections as linked append-only events. Minimize private data; raw conversations are not stored by default.
+
+ 
+### اجرای امن ورودی مخزن — وضعیت واقعی POINT-0/069
+- worker مخزن اکنون فقط شاخهٔ `host-intake` را می‌پذیرد و در صورت تنظیم هر شاخهٔ دیگری متوقف می‌شود؛ به‌ویژه هیچ نوشتن مستقیمی روی `main` انجام نمی‌دهد.
+- شاخهٔ `host-intake` از main در commit `e94520a42a0910b3a4d2c2d41263e6428b0b499e` ساخته شد. رویدادهای آن شاخه QUARANTINED هستند و برای ورود به main نیازمند PR و بررسی/تصمیم مالک‌اند.
+- GitHub در زمان بررسی `main.protected=false` گزارش کرد. ابزار در دسترس، تغییر branch protection/rulesets را پشتیبانی نمی‌کند؛ بنابراین محافظت واقعی شاخه هنوز NOT CONFIGURED / OPEN است. محدودیت کد worker جایگزین branch protection یا credential کم‌اختیار نیست.
+- قرارداد JSON Schema دفتر تعامل به‌روزرسانی شد تا input_id، output_id، host_id، host_session_id، master_commit_sha، master_version، checkpoint_id، adapter_version، payload_sha256، privacy_class، redaction_status، capture_status و receipt_ref الزامی باشند.
+- این به‌روزرسانی ساختار و گیت‌ها را محکم‌تر می‌کند؛ اتصال زندهٔ میزبان، استقرار worker و بازیابی مستقل همچنان نیازمند رسید end-to-end واقعی‌اند.
