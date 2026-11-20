@@ -847,3 +847,16 @@ The previous blob at this path began with the Integration Queue README title and
 - Permanent interaction ledger: actual authorized host interactions are append-only IN/OUT events with provenance, UTC or UNKNOWN, digest, privacy status and read-back receipt. Unavailable capture must be explicitly marked NOT_CONNECTED / NOT_CAPTURED.
 - Existing adapter and synthetic CI tests do not prove live external host connection or worker deployment. Keep those gates OPEN until direct receipts.
 - NEXT-051 remains the only execution queue; no NEXT-052 or parallel root.
+
+
+## POINT-0/070 — محیط کاری مستقل و شناسه‌دار هر میزبان
+
+- Current point: [POINT-0/070](GPT6-RAHM-USER-POINT-0-20261120-070-ISOLATED-HOST-WORKSPACES-0PLUS.md)
+- Input/output: [IN-113](PALANG-0.0-IN-20261120-113-ISOLATED-HOST-WORKSPACES.md) → [OUT-112](PALANG-0.0-OUT-20261120-112-ISOLATED-HOST-WORKSPACES.md)
+- Event/time: [EVT-0288](../../architecture/BEHAVIOR-TRACE/EVT-0288-ISOLATED-HOST-WORKSPACES-2026-11-20.md) → [TIME-BINDING-EVT-0288](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0288-ISOLATED-HOST-WORKSPACES-2026-11-20.md)
+- Checkpoint: CURRENT-123 (در حال ثبت)
+- Living master target: 1.7.75; multi-host architecture target: 1.1.0.
+- هر میزبان باید Host ID / Workspace ID / Session ID مشخص و محیط اختصاصی داشته باشد؛ هیچ میزبان حق نوشتن مستقیم در MASTER/main یا دسترسی به workspace میزبان دیگر را ندارد.
+- پوشه در Git مرز امنیتی نیست؛ broker/credential محدود، allowlist مسیر و آزمون جداسازی واقعی الزامی‌اند. این گیت‌ها OPEN هستند.
+- فقط نتایج راستی‌آزمایی‌شده و مفید با تأیید صریح مالک به سند مادر و همان ZIP canonical ارتقا می‌یابند.
+- NEXT-051 تنها صف اجرایی باقی می‌ماند؛ صف یا ریشه موازی ساخته نمی‌شود.
