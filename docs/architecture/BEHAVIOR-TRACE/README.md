@@ -1378,3 +1378,9 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - قاعده: الگوی رفتاریِ معنادار و دارای شواهد، پس از استخراج و اعتبارسنجی باید به مدل مستقل و قابل استفاده مجدد تبدیل، در مخزن ثبت، به لنگرهای ورودی/خروجی و زمان متصل، بازخوانی و در تعاملات بعدی استفاده و تکامل داده شود.
 - اصلاح ثبت وضعیت: زنجیرهٔ EVT-0278 پروژهٔ گواهی از قبل دارای ورودی/خروجی، رویداد، لنگر زمانی، نقاط، رسید و شواهد بازخوانی بود؛ EVT-0279 مدل رفتاری عمومی را به‌صورت افزایشی به آن پیوند می‌دهد و هیچ ریشه یا سند محتوایی قبلی را جایگزین نمی‌کند.
 - ریشهٔ سراسری POINT-0/064، CURRENT-115 و NEXT-051 بدون تغییر باقی می‌مانند؛ شاخهٔ گواهی نیز مستقل باقی می‌ماند.
+
+
+## EVT-0280 — POINT-0/065 (0+) continuity and registration — 2026-11-20
+- [POINT-0/065 (0+)](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261120-065-CONTINUITY-AND-REGISTRATION.md) → [IN-105](../../0.0/anchors/PALANG-0.0-IN-20261120-105-CONTINUITY-AND-REGISTRATION.md) + [OUT-104](../../0.0/anchors/PALANG-0.0-OUT-20261120-104-CONTINUITY-AND-REGISTRATION.md) → [EVT-0280](./EVT-0280-POINT-065-CONTINUITY-AND-REGISTRATION-2026-11-20.md) → [TIME-BINDING-EVT-0280](./TIME-BINDING-EVT-0280-POINT-065-CONTINUITY-AND-REGISTRATION-2026-11-20.md) → [CURRENT-116](../../0.0/anchors/PALANG-0.0-CURRENT-20261120-116-CONTINUITY-AND-REGISTRATION.md) → existing [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Previous event chain EVT-0278 → EVT-0279 is preserved; certificate child branch remains separate.
+- New root is append-only; no historical root or unresolved gate is replaced or silently closed.
