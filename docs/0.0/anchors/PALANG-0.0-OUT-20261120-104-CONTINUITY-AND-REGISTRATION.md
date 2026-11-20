@@ -4,7 +4,7 @@
 - Parent: [POINT-0/065 (0+)](GPT6-RAHM-USER-POINT-0-20261120-065-CONTINUITY-AND-REGISTRATION.md)
 - Input: [IN-105](PALANG-0.0-IN-20261120-105-CONTINUITY-AND-REGISTRATION.md)
 - Version: 1.0.0
-- Status: REGISTERED / EXECUTION IN PROGRESS.
+- Status: COMPLETE / REPOSITORY WRITE + CROSS-FILE READ-BACK VERIFIED; unresolved architecture gates remain OPEN.
 
 ## Actions carried out in this registration sequence
 
@@ -27,3 +27,11 @@
 ## Acceptance boundary
 
 The point registration is complete only after actual writes, exact-main read-back, link checks, and the commit/time-binding ledger are verified. This OUT record does not itself assert that those operations succeeded before their evidence exists.
+
+
+## Final repository acceptance
+
+- Exact paths for the root, IN-105, OUT-104, CURRENT-116, EVT-0280, TIME-BINDING-EVT-0280, 0.0 register, Behavior Trace index, Reference Index, Integration Queue, and living mother were fetched from the default branch after their latest writes.
+- Expected identifiers and the POINT-0/065 → IN-105/OUT-104 → EVT-0280 → TIME-BINDING-EVT-0280 → CURRENT-116 → NEXT-051 chain were checked.
+- Latest time-binding commit at the time of this acceptance: `720755877184650dacf3d35cb51f12cc27efec56`, Git UTC `2026-11-20T10:34:43Z`, Asia/Tehran `2026-11-20T14:04:43+03:30`.
+- This completes the repository registration and read-back for POINT-0/065. It does not close NEXT-051 or certify unresolved historical, runtime, or external gates.
