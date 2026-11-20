@@ -2504,3 +2504,14 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - وضعیت: ACTIVE / LIVING / OPEN؛ مشاهده رفتاری ثبت شد، تعمیم به معماری مادر نیازمند اعتبارسنجی چندموردی است.
 
 - زمان‌نگاری مستقل رویداد: [TIME-BINDING-EVT-0277](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0277-2026-11-20.md).
+
+
+## Certificate child-branch root — CERT-POINT-0-20261120-003
+- Input: [CERT-IN-20261120-003](../گواهی/شروع-جدید-۳۰-آبان-۱۴۰۵/رویدادها/CERT-IN-20261120-003.md).
+- Output: [CERT-OUT-20261120-003](../گواهی/شروع-جدید-۳۰-آبان-۱۴۰۵/رویدادها/CERT-OUT-20261120-003.md).
+- Project event: [CERT-EVT-20261120-003](../گواهی/شروع-جدید-۳۰-آبان-۱۴۰۵/رویدادها/CERT-EVT-20261120-003.md).
+- Local Point 0: [CERT-POINT-0-20261120-003](../گواهی/شروع-جدید-۳۰-آبان-۱۴۰۵/نقطه-۰-جدید-لنگر-ادامه-۲۰۲۶-۱۱-۲۰.md).
+- Next 0.0 action checkpoint: [CERT-POINT-0.0-20261120-003](../گواهی/شروع-جدید-۳۰-آبان-۱۴۰۵/نقطه-۰-۰-بعدی-اقدامات-و-اتصال-نقاط-۲۰۲۶-۱۱-۲۰.md).
+- Prior introduction baseline: [CERT-POINT-0PLUS-20261120-002](../گواهی/شروع-جدید-۳۰-آبان-۱۴۰۵/نقطه-۰-مثبت-لنگر-معرفی‌نامه-۲۰۲۶-۱۱-۲۰.md) / `CERT-INTRO-BASELINE-20261120-001`.
+- Behavior trace: [EVT-0278](architecture/BEHAVIOR-TRACE/EVT-0278-CERTIFICATE-NEW-POINT-0-AND-NEXT-0.0-2026-11-20.md).
+- Parent remains global POINT-0/064 → CURRENT-115 → NEXT-051; this child root does not replace the global root or its queue.
