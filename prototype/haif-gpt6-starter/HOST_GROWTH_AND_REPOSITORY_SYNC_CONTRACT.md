@@ -104,3 +104,11 @@ All host-originated data is untrusted and enters QUARANTINE. The permanent event
 The repository worker default target is now the dedicated `host-intake` branch. The worker explicitly refuses `PALANG_GITHUB_BRANCH=main`. Events written there remain QUARANTINED and require owner review through a separate pull request before any merge to main or promotion into the living Master. The `host-intake` branch was created from main at `e94520a42a0910b3a4d2c2d41263e6428b0b499e`.
 
 Verified repository state at registration: GitHub reports the `main` branch as `protected=false`; this connection lacks a supported mutation action for branch protection/rulesets. Therefore branch protection is NOT CONFIGURED / OPEN. The worker-level main-write block is implemented, but is not a substitute for GitHub branch protection or least-privilege token configuration. Do not claim main is protected.
+
+ 
+### اجرای امن ورودی مخزن — وضعیت واقعی POINT-0/069
+- worker مخزن اکنون فقط شاخهٔ `host-intake` را می‌پذیرد و در صورت تنظیم هر شاخهٔ دیگری متوقف می‌شود؛ به‌ویژه هیچ نوشتن مستقیمی روی `main` انجام نمی‌دهد.
+- شاخهٔ `host-intake` از main در commit `e94520a42a0910b3a4d2c2d41263e6428b0b499e` ساخته شد. رویدادهای آن شاخه QUARANTINED هستند و برای ورود به main نیازمند PR و بررسی/تصمیم مالک‌اند.
+- GitHub در زمان بررسی `main.protected=false` گزارش کرد. ابزار در دسترس، تغییر branch protection/rulesets را پشتیبانی نمی‌کند؛ بنابراین محافظت واقعی شاخه هنوز NOT CONFIGURED / OPEN است. محدودیت کد worker جایگزین branch protection یا credential کم‌اختیار نیست.
+- قرارداد JSON Schema دفتر تعامل به‌روزرسانی شد تا input_id، output_id، host_id، host_session_id، master_commit_sha، master_version، checkpoint_id، adapter_version، payload_sha256، privacy_class، redaction_status، capture_status و receipt_ref الزامی باشند.
+- این به‌روزرسانی ساختار و گیت‌ها را محکم‌تر می‌کند؛ اتصال زندهٔ میزبان، استقرار worker و بازیابی مستقل همچنان نیازمند رسید end-to-end واقعی‌اند.
