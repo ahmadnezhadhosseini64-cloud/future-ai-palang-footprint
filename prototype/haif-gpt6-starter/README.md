@@ -89,7 +89,7 @@ The v0.3.4 archive is historical verified evidence. Version 0.3.5 is source-only
 - Historical v0.3.7 receipt remains preserved: run [40546488170](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40546488170), 30,573 bytes, SHA-256 `fcc09933dd67ca1300af051e14dbcf80c76b6f620dc6c9623323caca307969fb`.
 - The test-only source change after the earlier v0.3.7 receipt changed the packaged ZIP bytes without advancing the internal version. This was the historical in-place v0.3.8 update, retaining the same package identity and canonical ZIP filename.
 - The v0.3.8 build receipt is historical evidence only. The current v0.3.9 archive must be resolved from the newest successful exact-main-SHA workflow receipt.
-- Current recovery chain: POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → POINT-0/069 → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122 → NEXT-051. The living master source is v1.7.69; the package workflow copies that exact source from the same checkout and verifies the paired artifact. This README is package source, not a substitute for the external build receipt.
+- Current recovery chain: POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → POINT-0/069 → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122 → NEXT-051. The living master source is v1.7.74; the package workflow copies that exact source from the same checkout and verifies the paired artifact. This README is package source, not a substitute for the external build receipt.
 - Real independent-host acceptance remains NOT RUN.
 
 
@@ -129,9 +129,9 @@ This is a preserved historical baseline, not the current pointer. Its prior rece
 - Release contains canonical ZIP, `LIVING_MASTER_REFERENCE.md`, receipt JSON, latest pointer JSON and checksum. Independent-host acceptance remains NOT RUN.
 
 
-## Current living evolution checkpoint — POINT-0/066 / CURRENT-122
+## Current living evolution checkpoint — POINT-0/069 / CURRENT-122
 
-- Latest continuation for this package: [POINT-0/069 (0+)](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261120-066-INTERACTIVE-EVOLUTION-0PLUS.md) → IN-107 → OUT-106 → EVT-0282 → CURRENT-122 → NEXT-051.
+- Latest continuation for this package: [POINT-0/069 (0+)](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261120-069-PERMANENT-INTERACTION-LEDGER-0PLUS.md) → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122 → NEXT-051.
 - The canonical living mother is synchronized from the repository's HAIF mother at build time. Every accepted interaction-derived advance must update the mother and applicable package sources, pass validation and extracted tests, then rebuild this same ZIP filename with a fresh receipt and SHA-256.
 - Package stable ID, production ID, canonical filename and stable release tag do not change. Internal version is now 0.4.1; prior receipts remain historical.
 - This package's update loop is interaction-driven and evidence-gated. Automatic capture of every ChatGPT message, model-weight retraining, idle/background execution and independent-host recovery remain NOT PROVEN.
@@ -140,10 +140,14 @@ This is a preserved historical baseline, not the current pointer. Its prior rece
 Current canonical chain (plain-text): POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → POINT-0/069 → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122 → NEXT-051
 
 
-## Current multi-host governance — POINT-0/068 / CURRENT-121
+## Current multi-host governance — POINT-0/069 / CURRENT-122
 
 - Current living master: version 1.7.74; paired file: `LIVING_MASTER_REFERENCE.md`.
-- Current chain: POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → NEXT-051.
+- Current chain: POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → POINT-0/069 → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122 → NEXT-051.
 - Every connected host is a separate Host Node. Default access is L1 READ-ONLY; proposals enter quarantine and cannot write directly to main.
 - Promotion path: HOST → QUARANTINE → CROSS-HOST RECONCILIATION → RAHM → CHILD CANDIDATE → EXPLICIT OWNER APPROVAL → MASTER.
 - Live multi-host connection and independent-host acceptance remain OPEN / NOT RUN until direct host receipts exist.
+
+
+## Permanent interaction ledger — package 0.4.1
+The package includes `PERMANENT_INTERACTION_LEDGER_CONTRACT.md`, `HOST_REGISTRY_SCHEMA.json` and `HOST_REGISTRY_TEMPLATE.json`. The host registry template is intentionally empty. The repository worker targets only `host-intake`; events require owner-reviewed PR before promotion. GitHub main branch protection remains OPEN / NOT CONFIGURED.
