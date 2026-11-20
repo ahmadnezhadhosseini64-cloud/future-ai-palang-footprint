@@ -46,3 +46,19 @@ POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 
 - Exact user message timestamp: UNKNOWN / UNVERIFIED
 
 NEXT-051 remains the sole active execution queue. No parallel root or queue is created.
+
+
+## اثبات بستهٔ قابل‌انتقال در POINT-0/070
+- Stable package identity: `HAIF-GPT6-PORTABLE-STARTER-20261025-004` (بدون تغییر)
+- Internal package version: `0.4.1`
+- Canonical ZIP filename: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip` (بدون تغییر)
+- Verified build run: [44791239083](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44791239083)
+- Build source/current main at verification: `fcdd91540d21e6ae3389f0aba80be41e9d12d6cb`
+- ZIP bytes: `230252`; SHA-256: `2f9fa0dd10e70566892382def1e5b3762e8a652b68261d999fbe14758c3377d8`
+- Package inventory: 17 files; extracted package tests: 24/24 PASS.
+- ZIP CRC, source-byte read-back, paired living-master byte match, downloaded-artifact digest/read-back and extracted tests: PASS.
+- Stable release: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified
+- Direct ZIP: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/download/haif-latest-verified/haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip
+- Independent AI-host recovery remains NOT RUN; package verification does not mean host recovery.
+
+این رسید، اثبات بستهٔ نسخهٔ 0.4.1 در commit یادشده است. هر تغییر بعدی در main نیازمند اجرای دوبارهٔ build/conformance و تطبیق release locator با HEAD جاری است.
