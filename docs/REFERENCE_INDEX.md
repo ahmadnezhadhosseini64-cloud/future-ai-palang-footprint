@@ -2515,3 +2515,11 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - Prior introduction baseline: [CERT-POINT-0PLUS-20261120-002](../گواهی/شروع-جدید-۳۰-آبان-۱۴۰۵/نقطه-۰-مثبت-لنگر-معرفی‌نامه-۲۰۲۶-۱۱-۲۰.md) / `CERT-INTRO-BASELINE-20261120-001`.
 - Behavior trace: [EVT-0278](architecture/BEHAVIOR-TRACE/EVT-0278-CERTIFICATE-NEW-POINT-0-AND-NEXT-0.0-2026-11-20.md).
 - Parent remains global POINT-0/064 → CURRENT-115 → NEXT-051; this child root does not replace the global root or its queue.
+
+
+## POINT-0/065 (0+) — 2026-11-20 continuity registration
+- Root: [POINT-0/065](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261120-065-CONTINUITY-AND-REGISTRATION.md).
+- Input: [IN-105](0.0/anchors/PALANG-0.0-IN-20261120-105-CONTINUITY-AND-REGISTRATION.md); output: [OUT-104](0.0/anchors/PALANG-0.0-OUT-20261120-104-CONTINUITY-AND-REGISTRATION.md).
+- Event: [EVT-0280](architecture/BEHAVIOR-TRACE/EVT-0280-POINT-065-CONTINUITY-AND-REGISTRATION-2026-11-20.md); time ledger: [TIME-BINDING-EVT-0280](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0280-POINT-065-CONTINUITY-AND-REGISTRATION-2026-11-20.md).
+- Checkpoint: [CURRENT-116](0.0/anchors/PALANG-0.0-CURRENT-20261120-116-CONTINUITY-AND-REGISTRATION.md); sole active queue remains [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Parent lineage POINT-0/064 → CURRENT-115 → NEXT-051 and certificate child branch EVT-0278 remain preserved. No NEXT-052 created; CURRENT-065/CURRENT-066 ambiguity remains open.
