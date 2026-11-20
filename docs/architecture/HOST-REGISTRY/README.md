@@ -21,3 +21,12 @@ host_id, host_type, model_version, adapter_version, owner_approval_ref, permissi
 
 ## Status truth
 این دفتر، ساختار ثبت را ایجاد می‌کند؛ وجود میزبان متصل را اثبات نمی‌کند. میزبان فقط پس از ارائه رسید خام از خود میزبان، آزمون مجوز و read-back مخزن می‌تواند REGISTERED / ACTIVE شود. در این commit هیچ میزبان خارجی به‌عنوان ACTIVE ثبت نشده است.
+
+
+## POINT-0/070 — محیط‌های مستقل میزبان
+
+- Workspace model: [HOST-WORKSPACES](../HOST-WORKSPACES/README.md)
+- Workspace charter: [template](../HOST-WORKSPACES/WORKSPACE-CHARTER-TEMPLATE.md)
+- Isolation and promotion protocol: [protocol](../HOST-WORKSPACES/WORKSPACE-ISOLATION-AND-PROMOTION-PROTOCOL.md)
+- Host Registry همچنان تا دریافت هویت و رسید واقعی خالی می‌ماند؛ هیچ میزبان در این نقطه ACTIVE نشده است.
+- پوشه‌بندی به‌تنهایی جداسازی امنیتی نیست؛ broker، allowlist مسیر، credential حداقلی و branch protection واقعی باید پیش از اتصال نوشتنی اثبات شوند.
