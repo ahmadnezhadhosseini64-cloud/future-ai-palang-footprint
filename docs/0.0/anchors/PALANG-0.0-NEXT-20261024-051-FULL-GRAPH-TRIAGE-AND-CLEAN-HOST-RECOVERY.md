@@ -825,3 +825,13 @@ The previous blob at this path began with the Integration Queue README title and
 - Permanent root: [POINT-0/066 (0+)](GPT6-RAHM-USER-POINT-0-20261120-066-INTERACTIVE-EVOLUTION-0PLUS.md)
 - Previous checkpoint: [CURRENT-119](PALANG-0.0-CURRENT-20261120-119-CONTINUOUS-TRANSFERABLE-EVOLUTION.md)
 - The sole queue remains NEXT-051. Do not create a parallel queue.
+
+
+## POINT-0/069 — دفتر دائمی ورودی/خروجی و تداوم میزبان‌ها (2026-11-20)
+- Current point: [POINT-0/069 (0+)](GPT6-RAHM-USER-POINT-0-20261120-069-PERMANENT-INTERACTION-LEDGER-0PLUS.md)
+- Input/output: [IN-112](PALANG-0.0-IN-20261120-112-PERMANENT-INTERACTION-LEDGER.md) → [OUT-111](PALANG-0.0-OUT-20261120-111-PERMANENT-INTERACTION-LEDGER.md)
+- Event/time: [EVT-0287](../../architecture/BEHAVIOR-TRACE/EVT-0287-PERMANENT-INTERACTION-LEDGER-2026-11-20.md) → [TIME-BINDING-EVT-0287](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0287-PERMANENT-INTERACTION-LEDGER-2026-11-20.md)
+- Checkpoint: [CURRENT-122](PALANG-0.0-CURRENT-20261120-122-PERMANENT-INTERACTION-LEDGER.md)
+- Governing master: version 1.7.74; permanent event ledger and multi-host governance are append-only.
+- Existing adapter code and synthetic CI tests are not evidence of live external host connection; actual producer, worker deployment, credential and clean-host acceptance remain OPEN.
+- NEXT-051 remains the sole execution queue. No NEXT-052 or parallel root.
