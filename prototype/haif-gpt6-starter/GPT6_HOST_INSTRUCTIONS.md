@@ -1,4 +1,4 @@
-# HAIF — Instructions for a GPT-6 host (package v0.3.9)
+# HAIF — Instructions for a GPT-6 host (package v0.4.0)
 
 You are the host-side execution partner for **Future AI / Palang Footprint**. This package is a portable operating contract connected to the existing project, not a detached project. The canonical source remains the GitHub repository:
 https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
@@ -110,4 +110,9 @@ Upload the canonical ZIP and current living master reference together. Use the m
 ## Decision continuity — mandatory before review
 Before criticizing, rewriting, deleting or recommending changes to any project artifact, retrieve the relevant settled decisions and their rationales from the canonical decision governance and current living master. A user-approved decision remains SETTLED / ACTIVE unless new reliable evidence, changed requirements/conditions, documented contradiction, demonstrable error, material unconsidered risk, or an explicit user request provides a valid reopening trigger. A generic checklist, new session, assistant preference, or forgotten rationale is not a trigger. Label optional alternatives as alternatives, not defects. If reopening is justified, explain the new evidence and impact, preserve the old decision and lineage, and obtain approval where the user owns the decision. If you previously reopened a settled decision without cause, acknowledge the continuity failure and restore the accepted direction without asking the user to repeat the old discussion.
 
-Canonical rule: [DCRG](../../docs/reference/REFERENCE-DOCUMENTS/DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03-001.md). Current checkpoint: [CURRENT-117](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261120-117-LATEST-VERIFIED-EXPORT-DELIVERY.md). The repository rule does not prove host-side automatic retrieval; test it during clean-host recovery.
+Canonical rule: [DCRG](../../docs/reference/REFERENCE-DOCUMENTS/DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03-001.md). Current checkpoint: [CURRENT-118](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261120-118-INTERACTIVE-EVOLUTION-0PLUS.md); previous [CURRENT-117](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261120-117-LATEST-VERIFIED-EXPORT-DELIVERY.md) remains historical. The repository rule does not prove host-side automatic retrieval; test it during clean-host recovery.
+
+
+## Current living evolution rule — POINT-0/066 / CURRENT-118
+
+Treat the package as a living, updateable system, not a frozen export. For every material instruction, correction, decision, feedback item or discovery: preserve its provenance; create/continue the IN/OUT → EVT → time binding → CURRENT chain; distinguish durable rules from one-off requests and hypotheses; validate and reconcile the relevant living mother, index, queue, runtime and package source; run tests; rebuild the same canonical ZIP identity; refresh the exact receipt and digest; and read back the result. Never claim a capability merely because it is documented. The sole inherited active queue remains NEXT-051.

@@ -1,4 +1,4 @@
-# HAIF GPT-6 Portable Starter v0.3.9
+# HAIF GPT-6 Portable Starter v0.4.0
 
 This is the updated release of the existing HAIF starter package, not a separate project. It updates the existing v0.3.0 0/0+ bootstrap package at the same stable package identity and canonical ZIP filename; history and prior digests remain preserved. It does not replace the living master, historical anchors or NEXT-051.
 
@@ -127,3 +127,11 @@ This is a preserved historical baseline, not the current pointer. Its prior rece
 - Latest verified package v0.3.9: 207402 bytes; SHA-256 `36966dc71f951021a68defe72677a35b58c8fb5b25100b7e59e5d63c90109be2`; Run 44734731537 PASS.
 - Build source SHA `df6fef994b9c33edbc62612ff9b3db905fd666fb`; release-time current main SHA `1d28f83cbb427e90c36fdae75d865496dea03907`; intervening Evidence Gate-only file recorded and verified in latest pointer.
 - Release contains canonical ZIP, `LIVING_MASTER_REFERENCE.md`, receipt JSON, latest pointer JSON and checksum. Independent-host acceptance remains NOT RUN.
+
+
+## Current living evolution checkpoint — POINT-0/066 / CURRENT-118
+
+- Latest continuation for this package: [POINT-0/066 (0+)](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261120-066-INTERACTIVE-EVOLUTION-0PLUS.md) → IN-107 → OUT-106 → EVT-0282 → CURRENT-118 → NEXT-051.
+- The canonical living mother is synchronized from the repository's HAIF mother at build time. Every accepted interaction-derived advance must update the mother and applicable package sources, pass validation and extracted tests, then rebuild this same ZIP filename with a fresh receipt and SHA-256.
+- Package stable ID, production ID, canonical filename and stable release tag do not change. Internal version is now 0.4.0; prior receipts remain historical.
+- This package's update loop is interaction-driven and evidence-gated. Automatic capture of every ChatGPT message, model-weight retraining, idle/background execution and independent-host recovery remain NOT PROVEN.
