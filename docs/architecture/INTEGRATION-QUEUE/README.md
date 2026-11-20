@@ -3,8 +3,8 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.10.44
-- Date: 2026-11-19
+- Version: 1.10.45
+- Date: 2026-11-20
 - Exact Time: EVT-0261 event commit UTC `2026-11-10T06:47:53Z` / Tehran `2026-11-10T10:17:53+03:30`; initial time-binding commit UTC `2026-11-10T06:48:18Z` / Tehran `2026-11-10T10:18:18+03:30`.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
@@ -2764,4 +2764,14 @@ Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-11
 - Source blob de1b75f07241c9b313e476af5f1417177ff78c10; Library v7 normalized match with one extra terminal LF; no source or Library write.
 - Audit 44472618022 PASS on exact run-start main `a06a4c3a24ae768bdab00f98511c1f1dc7b6d3f8`; latest RAHM 44257358104 PASS on `47894652fbd5b4ab47cbd9fecc84464bcebe9041`, not current main. Exact-main RAHM NOT VERIFIED.
 - Evidence Gate 44257358290 succeeded on its parent SHA and created an earlier main; Production Detection Safety Net 44472617950, Reconciliation Watchdog 44472618027 and Pending Registration Drain 44472618103 succeeded on exact current main.
+- Continue NEXT-051: exact-SHA package proof, forensic original-blob recovery, graph/identity/parent/time reconciliation, CURRENT-065/CURRENT-066 and overlay-manifest review, Issues #20/#21, BOART-FOLLOWUP-01 and independent-host recovery.
+
+## EVT-0274 — Certificate child-branch point 0.0 — 2026-11-20
+- [EVT-0274](../BEHAVIOR-TRACE/EVT-0274-CERTIFICATE-DOC05-LIVING-CV-ANCHOR-2026-11-20.md) records CERT-POINT-0.0-20261120-002. It is a child branch; main POINT-0/064 / CURRENT-115 / NEXT-051 remain unchanged.
+
+## EVT-0275 — mirror-only synchronization — 2026-11-20
+- [EVT-0275](../BEHAVIOR-TRACE/EVT-0275-LIVE-MIRROR-SYNC-RECHECK-2026-11-20.md) / [TIME-BINDING-EVT-0275](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0275-LIVE-MIRROR-SYNC-2026-11-20.md).
+- NEXT-051 remains the sole active queue (v1.0.44); no NEXT-052. Main root POINT-0/064 / EVT-0257 and checkpoint CURRENT-115 v1.0.8 remain unchanged.
+- Source/Library v7 normalized match; exact equality FALSE by one terminal LF; no source or Library write.
+- Run-start Audit 44611950220 PASS on exact main 0810674cb5340a62a4c3bcb547585c9b9263e1c2; latest RAHM 44611586010 PASS on 553efa493f6bca5c60385151961e56c46ca4430d, not current main. Post-registration exact-SHA audit/conformance required.
 - Continue NEXT-051: exact-SHA package proof, forensic original-blob recovery, graph/identity/parent/time reconciliation, CURRENT-065/CURRENT-066 and overlay-manifest review, Issues #20/#21, BOART-FOLLOWUP-01 and independent-host recovery.

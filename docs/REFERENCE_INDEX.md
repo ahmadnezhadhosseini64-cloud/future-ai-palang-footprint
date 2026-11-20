@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-11-19 — EVT-0271 mirror-only sync under POINT-0/064 / EVT-0257 / CURRENT-115 / NEXT-051; source unchanged; Library v7 normalized match with one extra terminal LF; no rewrite. Living Architecture Audit 44472618022 PASS on exact main a06a4c3a24ae768bdab00f98511c1f1dc7b6d3f8; latest RAHM 44257358104 tested parent 47894652fbd5b4ab47cbd9fecc84464bcebe9041, so exact-main RAHM remains NOT VERIFIED. CURRENT-065/CURRENT-066, Issues #20/#21 and external host/destination gates remain open.
+**Last Updated:** 2026-11-20 — EVT-0275 mirror-only recheck under POINT-0/064 / EVT-0257 / CURRENT-115 / NEXT-051; source unchanged; Library v7 normalized match with one extra terminal LF; no rewrite. Run-start Audit 44611950220 PASS on exact main 0810674cb5340a62a4c3bcb547585c9b9263e1c2; latest RAHM 44611586010 tested prior SHA 553efa493f6bca5c60385151961e56c46ca4430d, so exact-main RAHM remains NOT VERIFIED at run start. CURRENT-065/CURRENT-066, Issues #20/#21 and external host/destination gates remain open.
 
 ## Canonical References
 
@@ -2473,3 +2473,15 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - Source blob de1b75f07241c9b313e476af5f1417177ff78c10; Library stable ID libfile_7ac3c9a6ec14819198eb2751e204aa48, file ID file_00000000942881f8a4a3833110229fb7, version 7. Normalized full content MATCH; exact equality FALSE by one extra terminal LF; no source or Library write.
 - Audit 44472618022 PASS on exact run-start main `a06a4c3a24ae768bdab00f98511c1f1dc7b6d3f8`; RAHM 44257358104 PASS on parent `47894652fbd5b4ab47cbd9fecc84464bcebe9041`; exact-main RAHM NOT VERIFIED. Evidence Gate 44257358290 created an earlier main; Safety Net 44472617950, Reconciliation Watchdog 44472618027 and Pending Registration Drain 44472618103 passed on exact current main.
 - CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; Issues #20/#21 OPEN; NEXT-051 forensic recovery OPEN / NOT RECOVERED; BOART-FOLLOWUP-01 ACTIVE. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; independent-host recovery NOT RUN.
+
+## EVT-0274 — Certificate child-branch point 0.0 — 2026-11-20
+- [EVT-0274](architecture/BEHAVIOR-TRACE/EVT-0274-CERTIFICATE-DOC05-LIVING-CV-ANCHOR-2026-11-20.md); child root [CERT-POINT-0.0-20261120-002](../گواهی/شروع-جدید-۳۰-آبان-۱۴۰۵/نقطه-۰-۰-نسخه-۵-آخر-و-ادامه-کار-۲۰۲۶-۱۱-۲۰.md); [receipt](../گواهی/شروع-جدید-۳۰-آبان-۱۴۰۵/رویدادها/CERT-RECEIPT-20261120-001.md).
+- Child branch only; main root POINT-0/064 / EVT-0257, CURRENT-115 and NEXT-051 remain unchanged.
+
+## EVT-0275 — Live mirror synchronization — 2026-11-20
+- Event: `architecture/BEHAVIOR-TRACE/EVT-0275-LIVE-MIRROR-SYNC-RECHECK-2026-11-20.md`.
+- Time binding: `architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0275-LIVE-MIRROR-SYNC-2026-11-20.md`.
+- Run-start main SHA `0810674cb5340a62a4c3bcb547585c9b9263e1c2`; root POINT-0/064 / EVT-0257; CURRENT-115 v1.0.8; NEXT-051 v1.0.44; no NEXT-052.
+- Source blob de1b75f07241c9b313e476af5f1417177ff78c10; Library stable ID libfile_7ac3c9a6ec14819198eb2751e204aa48, version 7. Normalized content MATCH; exact equality FALSE by one extra terminal LF; no source or Library write.
+- Audit 44611950220 PASS on exact run-start main; RAHM 44611586010 PASS on earlier SHA 553efa493f6bca5c60385151961e56c46ca4430d; exact-main RAHM NOT VERIFIED at run start. Post-registration exact-SHA verification pending.
+- CURRENT-065/CURRENT-066, Issues #20/#21, NEXT-051 forensic recovery, Buffer/Persistent Memory, Dropbox and independent-host gates remain OPEN / NOT VERIFIED / NOT RUN as applicable.

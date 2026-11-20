@@ -1,8 +1,8 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.40
-- Date: 2026-11-19
+- Version: 1.0.41
+- Date: 2026-11-20
 - Project: Future AI / Palang Footprint / HAIF
 
 ## مسیرهای بازیابی
@@ -1336,3 +1336,14 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - شاخه گواهی: [گزارش ممیزی](../../../گواهی/شروع-جدید-۳۰-آبان-۱۴۰۵/گزارش-ممیزی-۰-۰-رویداد-۰۰۳-۲۰۲۶-۱۱-۱۹.md) → [نقطه ۰.۰ بعدی](../../../گواهی/شروع-جدید-۳۰-آبان-۱۴۰۵/نقطه-۰-۰-بعدی-رفع-تعارض-اسناد-و-بازیابی-مستقل-۲۰۲۶-۱۱-۱۹.md) → [سند مادر](../../../گواهی/شروع-جدید-۳۰-آبان-۱۴۰۵/سند-مادر-زنده-و-قرارداد-دائمی-پروژه-گواهی.md).
 - مشاهده معماری: تجمیع اسناد و SHA پایدار، به‌تنهایی برابری محتوایی آن با همه منابع مستقل را ثابت نمی‌کند؛ کنترل تقدم منبع و اختلاف محتوا لازم است.
 - این رویداد مشاهده‌ای در شاخه فرزند است و قانون مادر HAIF یا ریشه POINT-0/064 و صف NEXT-051 را تغییر نمی‌دهد.
+
+## EVT-0274 — Certificate child-branch living CV anchor — 2026-11-20
+- [EVT-0274](./EVT-0274-CERTIFICATE-DOC05-LIVING-CV-ANCHOR-2026-11-20.md) ثبت‌کنندهٔ شاخهٔ فرزند پروژه گواهی و [CERT-POINT-0.0-20261120-002](../../../گواهی/شروع-جدید-۳۰-آبان-۱۴۰۵/نقطه-۰-۰-نسخه-۵-آخر-و-ادامه-کار-۲۰۲۶-۱۱-۲۰.md) است.
+- این شاخه جایگزین ریشه اصلی POINT-0/064، CURRENT-115 یا NEXT-051 نیست؛ اسناد ۱ تا ۴ ثابت و سند ۵ نسخه ۵ فعال/زنده و غیرنهایی باقی می‌ماند.
+
+## EVT-0275 — Live mirror synchronization — 2026-11-20
+- [EVT-0275](./EVT-0275-LIVE-MIRROR-SYNC-RECHECK-2026-11-20.md) / [TIME-BINDING-EVT-0275](./TIME-BINDING-EVT-0275-LIVE-MIRROR-SYNC-2026-11-20.md).
+- Mirror-only under POINT-0/064 / EVT-0257 / CURRENT-115 / NEXT-051. No new main root, IN/OUT pair, checkpoint identity or NEXT-052.
+- Source blob de1b75f07241c9b313e476af5f1417177ff78c10 (10,479 chars); Library stable ID libfile_7ac3c9a6ec14819198eb2751e204aa48, version 7 (10,480 chars). Normalized content and semantic fields MATCH; exact equality FALSE by one additional terminal LF; no source or Library write.
+- Run-start main audit 44611950220 PASS on exact SHA 0810674cb5340a62a4c3bcb547585c9b9263e1c2; latest RAHM 44611586010 PASS on 553efa493f6bca5c60385151961e56c46ca4430d, not current main. Post-registration exact-SHA tests remain pending.
+- CURRENT-065/CURRENT-066 and overlay-manifest lineage, Issues #20/#21, NEXT-051 forensic recovery and external destination/host gates remain OPEN / NOT VERIFIED / NOT RUN as applicable.
