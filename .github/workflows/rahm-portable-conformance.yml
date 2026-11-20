@@ -55,6 +55,27 @@ jobs:
           assert invalid_errors, "Invalid fixture unexpectedly passed"
           print("SCHEMA_CONFORMANCE=PASS")
           PY
+
+      - name: Validate host registry schema and isolated worker branch policy
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from jsonschema import Draft202012Validator, FormatChecker
+          schema = json.loads(Path("docs/architecture/HOST-REGISTRY/HOST-REGISTRY-SCHEMA.json").read_text(encoding="utf-8"))
+          registry = json.loads(Path("docs/architecture/HOST-REGISTRY/HOST-REGISTRY.json").read_text(encoding="utf-8"))
+          Draft202012Validator.check_schema(schema)
+          errors = list(Draft202012Validator(schema, format_checker=FormatChecker()).iter_errors(registry))
+          assert not errors, [e.message for e in errors]
+          assert registry["hosts"] == [], "Do not claim a live host without a direct acceptance receipt"
+          worker = Path("scripts/host_adapter_github_worker.py").read_text(encoding="utf-8")
+          assert "BRANCH='host-intake'" in worker
+          assert "PALANG_GITHUB_BRANCH" in worker and "BLOCKED:" in worker
+          assert "QUARANTINED_OWNER_REVIEW_REQUIRED" in worker
+          print("HOST_REGISTRY_SCHEMA=PASS")
+          print("NO_UNVERIFIED_ACTIVE_HOSTS=PASS")
+          print("WORKER_INTAKE_BRANCH_GUARD=PASS")
+          PY
       - name: Validate latest IN/OUT link and checkpoint equivalence (not real-host recovery)
         run: |
           python -m unittest discover -s scripts/behavior-hunter/tests -p 'test_verify_latest_current_0_0_chain.py' -v
