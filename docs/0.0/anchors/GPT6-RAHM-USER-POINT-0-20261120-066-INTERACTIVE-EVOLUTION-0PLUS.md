@@ -74,3 +74,11 @@ Continue from CURRENT-118 and the existing NEXT-051. For each future material ad
 - Quarantine: uncertain, sensitive, destructive, permission-expanding, externally consequential or otherwise approval-dependent outputs remain proposed/quarantined until authorized. Failed or missing checks never count as success.
 - Execution boundary: this is not a claim that every chat is automatically captured or that this assistant runs continuously in the background. Promotion applies to outputs entering authorized repository/automation paths; unsupported background capture and model-weight retraining remain unproven.
 - Permanent deliverable: keep the living master, working source, tested candidate and final verified ZIP in one evolving lineage. A passing result is integrated without a second user prompt; a non-passing result remains open with its evidence.
+
+
+## Permanent clarification lineage — EVT-0283
+
+The user's clarification is registered as an append-only continuation of this same foundational root:
+- [IN-108](PALANG-0.0-IN-20261120-108-AUTO-PROMOTION-CLARIFICATION.md) → [OUT-107](PALANG-0.0-OUT-20261120-107-AUTO-PROMOTION-CLARIFICATION.md) → [EVT-0283](../../architecture/BEHAVIOR-TRACE/EVT-0283-PERMANENT-0PLUS-AUTO-PROMOTION-2026-11-20.md) → [TIME-BINDING-EVT-0283](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0283-PERMANENT-0PLUS-AUTO-PROMOTION-2026-11-20.md) → [CURRENT-118](PALANG-0.0-CURRENT-20261120-118-INTERACTIVE-EVOLUTION-0PLUS.md) → existing [NEXT-051](PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Governing contract: [INTERACTION-DRIVEN-AUTO-PROMOTION-AND-LIVING-EVOLUTION](../../architecture/مدل اولیه AI/INTERACTION-DRIVEN-AUTO-PROMOTION-AND-LIVING-EVOLUTION-CONTRACT-2026-11-20-001.md).
+- This is not a replacement root. POINT-0/066 remains the permanent 0+ foundation; all future growth extends this graph.
