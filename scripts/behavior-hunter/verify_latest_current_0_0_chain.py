@@ -233,7 +233,13 @@ def main() -> int:
             "version":package.get("version"),
             "canonical_filename":package.get("archive_policy",{}).get("canonical_filename"),
         }
-        if identity["stable_id"]!="HAIF-GPT6-PORTABLE-STARTER-20261025-004" or identity["version"]!="0.3.8":
+        expected_version = package.get("archive_policy",{}).get("current_internal_version")
+        if (
+            identity["stable_id"]!="HAIF-GPT6-PORTABLE-STARTER-20261025-004"
+            or not isinstance(identity["version"],str)
+            or identity["version"]!=expected_version
+            or identity["canonical_filename"]!="haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip"
+        ):
             failures.append("portable_package_identity_or_version_changed")
         if not any("NEXT-051" in str(x) for x in parents):
             failures.append("package_parent_architecture_missing_NEXT_051")
