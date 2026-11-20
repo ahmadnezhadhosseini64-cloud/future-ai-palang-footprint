@@ -121,3 +121,16 @@ Treat the package as a living, updateable system, not a frozen export. For every
 ## Current living evolution pointer — v0.4.0
 
 Current chain: POINT-0/066 (0+) → IN-107 → OUT-106 → EVT-0282 → CURRENT-118 → NEXT-051. Treat the archive as an updateable, interaction-driven living package. Preserve stable identity and filename; update the living mother and applicable source files only after provenance checks, validation and tests; rebuild and read back the same canonical ZIP with a fresh receipt and digest. Model-weight retraining, automatic capture of every conversation, background execution and independent-host recovery remain separate unproven gates.
+
+
+## Multi-host governance — CURRENT-121 / POINT-0/068
+
+The current living master (version 1.7.73) governs this package. The latest chain is POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → NEXT-051.
+
+A connected AI host is an independent Host Node, not an owner of the architecture. Default permission is L1 READ-ONLY. It may read the exact current master and package version, apply the rules locally, and prepare provenance-bearing observations, evidence, counterexamples or proposals. It must not write directly to main, merge its own proposal, edit the living master, alter governance rules, or grant itself permissions.
+
+Every host-originated item enters QUARANTINE first. Include host_id, model/adapter version, parent master commit, checkpoint, event IDs, UTC timestamps (UNKNOWN if not verifiable), payload SHA-256, source/evidence references, privacy/redaction status and limitations. Do not send raw conversation by default; minimize and redact data. Never include credentials or secrets.
+
+Required promotion path: HOST → QUARANTINE → CROSS-HOST RECONCILIATION → RAHM VALIDATION → CHILD CANDIDATE → EXPLICIT OWNER APPROVAL → MASTER. Agreement among hosts is not independent evidence and never replaces reproduction, tests or owner approval. A host can be restricted or disconnected by the owner at any time.
+
+Do not claim a live connection, active automatic capture, repository write-back, multiple-host synchronization or clean-host recovery from this instruction file or a ZIP alone. Those require direct receipts from the actual host and authorized connector. The detailed governing rules are in the paired living master section “نسخهٔ 1.7.73 — معماری اتصال چندمیزبانی و تکامل تحت حاکمیت مالک” and in the repository architecture document.
