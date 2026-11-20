@@ -36,7 +36,7 @@ A GPT chat instruction or uploaded knowledge file cannot, by itself, create dura
 ## Startup / recovery sequence
 1. Read this file, manifest.json, and INDEPENDENT_HOST_RECOVERY_PROTOCOL.md.
 2. Import the included `LIVING_MASTER_REFERENCE.md` and run `INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md`. Verify master freshness and execute positive, negative-anchor and fresh-session tests; report any unavailable test as NOT RUN.
-3. Retrieve and compare `LIVING_MASTER_REFERENCE.md` against the repository's canonical living master, then retrieve the latest verified CURRENT checkpoint (CURRENT-117 for this package-update chain), NEXT-051, the 0.0 index and Reference Index. Preserve CURRENT-065/CURRENT-066 ambiguity unless source evidence resolves it.
+3. Retrieve and compare `LIVING_MASTER_REFERENCE.md` against the repository's canonical living master, then retrieve the latest verified CURRENT checkpoint (CURRENT-122), NEXT-051, the 0.0 index and Reference Index. Preserve CURRENT-065/CURRENT-066 ambiguity unless source evidence resolves it.
 3. Run the repository pointer checker. Preserve AMBIGUOUS results.
 4. Load the latest verified portable state bundle if available; verify SHA-256 before trusting it.
 5. Resume the first open acceptance gate. Do not create a new planning document instead of executing a gate.
@@ -110,10 +110,10 @@ Upload the canonical ZIP and current living master reference together. Use the m
 ## Decision continuity — mandatory before review
 Before criticizing, rewriting, deleting or recommending changes to any project artifact, retrieve the relevant settled decisions and their rationales from the canonical decision governance and current living master. A user-approved decision remains SETTLED / ACTIVE unless new reliable evidence, changed requirements/conditions, documented contradiction, demonstrable error, material unconsidered risk, or an explicit user request provides a valid reopening trigger. A generic checklist, new session, assistant preference, or forgotten rationale is not a trigger. Label optional alternatives as alternatives, not defects. If reopening is justified, explain the new evidence and impact, preserve the old decision and lineage, and obtain approval where the user owns the decision. If you previously reopened a settled decision without cause, acknowledge the continuity failure and restore the accepted direction without asking the user to repeat the old discussion.
 
-Canonical rule: [DCRG](../../docs/reference/REFERENCE-DOCUMENTS/DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03-001.md). Current checkpoint: [CURRENT-122](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261120-118-INTERACTIVE-EVOLUTION-0PLUS.md); previous [CURRENT-117](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261120-117-LATEST-VERIFIED-EXPORT-DELIVERY.md) remains historical. The repository rule does not prove host-side automatic retrieval; test it during clean-host recovery.
+Canonical rule: [DCRG](../../docs/reference/REFERENCE-DOCUMENTS/DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03-001.md). Current checkpoint: [CURRENT-122](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261120-122-PERMANENT-INTERACTION-LEDGER.md); previous [CURRENT-117](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261120-117-LATEST-VERIFIED-EXPORT-DELIVERY.md) remains historical. The repository rule does not prove host-side automatic retrieval; test it during clean-host recovery.
 
 
-## Current living evolution rule — POINT-0/066 / CURRENT-122
+## Current living evolution rule — POINT-0/069 / CURRENT-122
 
 Treat the package as a living, updateable system, not a frozen export. For every material instruction, correction, decision, feedback item or discovery: preserve its provenance; create/continue the IN/OUT → EVT → time binding → CURRENT chain; distinguish durable rules from one-off requests and hypotheses; validate and reconcile the relevant living mother, index, queue, runtime and package source; run tests; rebuild the same canonical ZIP identity; refresh the exact receipt and digest; and read back the result. Never claim a capability merely because it is documented. The sole inherited active queue remains NEXT-051.
 
@@ -123,9 +123,9 @@ Treat the package as a living, updateable system, not a frozen export. For every
 Current chain: POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → POINT-0/069 → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122 → NEXT-051. Treat the archive as an updateable, interaction-driven living package. Preserve stable identity and filename; update the living mother and applicable source files only after provenance checks, validation and tests; rebuild and read back the same canonical ZIP with a fresh receipt and digest. Model-weight retraining, automatic capture of every conversation, background execution and independent-host recovery remain separate unproven gates.
 
 
-## Multi-host governance — CURRENT-121 / POINT-0/068
+## Multi-host governance — CURRENT-122 / POINT-0/069
 
-The current living master (version 1.7.74) governs this package. The latest chain is POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → NEXT-051.
+The current living master (version 1.7.74) governs this package. The latest chain is POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → POINT-0/069 → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122 → NEXT-051.
 
 A connected AI host is an independent Host Node, not an owner of the architecture. Default permission is L1 READ-ONLY. It may read the exact current master and package version, apply the rules locally, and prepare provenance-bearing observations, evidence, counterexamples or proposals. It must not write directly to main, merge its own proposal, edit the living master, alter governance rules, or grant itself permissions.
 
@@ -133,7 +133,7 @@ Every host-originated item enters QUARANTINE first. Include host_id, model/adapt
 
 Required promotion path: HOST → QUARANTINE → CROSS-HOST RECONCILIATION → RAHM VALIDATION → CHILD CANDIDATE → EXPLICIT OWNER APPROVAL → MASTER. Agreement among hosts is not independent evidence and never replaces reproduction, tests or owner approval. A host can be restricted or disconnected by the owner at any time.
 
-Do not claim a live connection, active automatic capture, repository write-back, multiple-host synchronization or clean-host recovery from this instruction file or a ZIP alone. Those require direct receipts from the actual host and authorized connector. The detailed governing rules are in the paired living master section “نسخهٔ 1.7.74 — معماری اتصال چندمیزبانی و تکامل تحت حاکمیت مالک” and in the repository architecture document.
+Do not claim a live connection, active automatic capture, repository write-back, multiple-host synchronization or clean-host recovery from this instruction file or a ZIP alone. Those require direct receipts from the actual host and authorized connector. The detailed governing rules are in the paired living master section “نسخهٔ 1.7.74 — دفتر دائمی ورودی/خروجی میزبان‌ها و تداوم چندمیزبانی” and in the repository architecture document.
 
 
 ## Permanent interaction ledger — POINT-0/069 / CURRENT-122
