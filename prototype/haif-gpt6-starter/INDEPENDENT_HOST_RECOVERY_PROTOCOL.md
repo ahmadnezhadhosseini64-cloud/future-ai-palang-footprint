@@ -1,8 +1,8 @@
 # Independent-host recovery proof protocol
 
-Package version: 0.3.8
+Package version: 0.3.9
 Project: Future AI / Palang Footprint
-Canonical chain: POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-110 → NEXT-051
+Canonical chain: POINT-0/065 → IN-105 → OUT-104 → EVT-0280 → CURRENT-116 → IN-106 → OUT-105 → EVT-0281 → CURRENT-117 → NEXT-051
 Preserved prior chain: POINT-0/058 (0+ marker on canonical root 0) → IN-096 → OUT-095 → EVT-0233 → CURRENT-108 → NEXT-051; historical point retained, not current pointer.
 
 ## Purpose
@@ -51,6 +51,6 @@ Follow `HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md` for the controlled host →
 
 ## Decision continuity recovery test
 
-Canonical current chain: POINT-0/061 → IN-100 → OUT-099 → EVT-0246 → CURRENT-112 → NEXT-051. Canonical governance: [DCRG](../../docs/reference/REFERENCE-DOCUMENTS/DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03-001.md).
+Canonical current chain: POINT-0/065 → IN-105 → OUT-104 → EVT-0280 → CURRENT-116 → IN-106 → OUT-105 → EVT-0281 → CURRENT-117 → NEXT-051. Canonical governance: [DCRG](../../docs/reference/REFERENCE-DOCUMENTS/DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03-001.md).
 
 During clean-host import, the receiving host must retrieve settled decisions with rationale, scope, constraints and reopening triggers. Test at least one decision with no new trigger (must remain settled) and one with valid new evidence (may be reopened only with an explicit evidence explanation and preserved prior state). Record the host's raw output and independent read-back. This test is NOT RUN until a separate host supplies a receipt; repository documentation alone is not a pass.
