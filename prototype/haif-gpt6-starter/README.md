@@ -138,3 +138,12 @@ This is a preserved historical baseline, not the current pointer. Its prior rece
 
 
 Current canonical chain (plain-text): POINT-0/066 (0+) → IN-107 → OUT-106 → EVT-0282 → CURRENT-118 → NEXT-051
+
+
+## Current multi-host governance — POINT-0/068 / CURRENT-121
+
+- Current living master: version 1.7.73; paired file: `LIVING_MASTER_REFERENCE.md`.
+- Current chain: POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → NEXT-051.
+- Every connected host is a separate Host Node. Default access is L1 READ-ONLY; proposals enter quarantine and cannot write directly to main.
+- Promotion path: HOST → QUARANTINE → CROSS-HOST RECONCILIATION → RAHM → CHILD CANDIDATE → EXPLICIT OWNER APPROVAL → MASTER.
+- Live multi-host connection and independent-host acceptance remain OPEN / NOT RUN until direct host receipts exist.
