@@ -78,5 +78,19 @@ historical material
             MODULE.parse_latest_chain(fixture)
 
 
+    def test_accepts_manifest_aligned_package_version_without_hardcoded_minor_version(self):
+        package = {
+            "stable_id": "HAIF-GPT6-PORTABLE-STARTER-20261025-004",
+            "version": "0.3.9",
+            "archive_policy": {
+                "current_internal_version": "0.3.9",
+                "canonical_filename": "haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip",
+            },
+        }
+        self.assertTrue(MODULE.package_identity_consistent(package))
+        package["archive_policy"]["current_internal_version"] = "0.3.8"
+        self.assertFalse(MODULE.package_identity_consistent(package))
+
+
 if __name__ == "__main__":
     unittest.main()
