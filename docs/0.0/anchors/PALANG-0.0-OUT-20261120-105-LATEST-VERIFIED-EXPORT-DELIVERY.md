@@ -3,7 +3,7 @@
 - Stable ID: HAIF-OUT-105-LATEST-VERIFIED-EXPORT-20261120-001
 - Input: [IN-106](PALANG-0.0-IN-20261120-106-LATEST-VERIFIED-EXPORT-DELIVERY.md)
 - Parent context: POINT-0/065 → CURRENT-116 → NEXT-051
-- Status: DESIGN REGISTERED / IMPLEMENTATION OPEN
+- Status: IMPLEMENTED / PACKAGE_VERIFIED / DURABLE RELEASE PUBLISHED; INDEPENDENT HOST RECOVERY OPEN
 
 ## Repository findings
 
@@ -52,3 +52,14 @@ When the user says "آخرین نسخه کامل را بده", resolve current m
 - Durable release publishing is implemented in the workflow at [haif-latest-verified](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified). It uploads ZIP, paired living mother, JSON receipt, checksum and latest pointer only after successful package verification.
 - The workflow and runbook commits are newer than the cited receipt. A fresh run on current main and release read-back remain pending; do not label the stable release published until verified.
 - Package identity and canonical filename remain unchanged. Independent clean-host recovery remains NOT RUN.
+
+
+## Final implementation acceptance — 2026-11-20
+
+- Exact current main SHA: `8859b3b8aa4017585540a0720687eed070fddda2`.
+- Successful workflow: [Run 44734261656](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44734261656).
+- Canonical ZIP internal version 0.3.9; 206531 bytes; SHA-256 `a3df4951fbd03cc59845beee78bb0c7d3acedc815842a1cfcc30fd18fd525c99`; 14 files; CRC, source-byte read-back, extracted tests and artifact round-trip PASS. Local extracted rerun: 24/24 PASS.
+- Matching living mother: 627238 bytes; SHA-256 `8d3c0383cd460f68fa59d936b1206f31c536b9332c433872f8fab03f3214e102`.
+- Permanent release: [haif-latest-verified](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified), release ID `452647521`; five assets read back in release metadata.
+- Delivery set is now available at the stable release locator. Exact source SHA is the current main HEAD at acceptance.
+- Remaining separate gate: genuine independent AI-host import/reconstruction and returned receipt remain NOT RUN. Package verification is not host recovery.

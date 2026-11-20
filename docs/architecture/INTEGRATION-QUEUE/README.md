@@ -3,7 +3,7 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.10.47
+- Version: 1.10.48
 - Date: 2026-11-20
 - Exact Time: EVT-0261 event commit UTC `2026-11-10T06:47:53Z` / Tehran `2026-11-10T10:17:53+03:30`; initial time-binding commit UTC `2026-11-10T06:48:18Z` / Tehran `2026-11-10T10:18:18+03:30`.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
@@ -2796,3 +2796,12 @@ Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-11
 - Event/time: [EVT-0280](../BEHAVIOR-TRACE/EVT-0280-POINT-065-CONTINUITY-AND-REGISTRATION-2026-11-20.md) / [TIME-BINDING-EVT-0280](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0280-POINT-065-CONTINUITY-AND-REGISTRATION-2026-11-20.md); checkpoint [CURRENT-116](../../0.0/anchors/PALANG-0.0-CURRENT-20261120-116-CONTINUITY-AND-REGISTRATION.md).
 - Status: repository registration sequence created; cross-file read-back and link audit are the acceptance gate. The existing NEXT-051 remains the sole active queue; no NEXT-052 is created.
 - Preserve POINT-0/064 → CURRENT-115, certificate child branch EVT-0278, and living behavior model EVT-0279. This registration does not resolve CURRENT-065/CURRENT-066, historical graph conflicts, or any pending test.
+
+
+## EVT-0281 — Latest verified export and on-demand delivery
+
+- Checkpoint: [CURRENT-117](../../0.0/anchors/PALANG-0.0-CURRENT-20261120-117-LATEST-VERIFIED-EXPORT-DELIVERY.md); event: [EVT-0281](../BEHAVIOR-TRACE/EVT-0281-LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-2026-11-20.md).
+- Exact-current-main Run 44734261656 PASS on SHA `8859b3b8aa4017585540a0720687eed070fddda2`.
+- ZIP v0.3.9: 206531 bytes; SHA-256 `a3df4951fbd03cc59845beee78bb0c7d3acedc815842a1cfcc30fd18fd525c99`; 14 files; 24/24 local extracted tests PASS.
+- Stable release ID 452647521: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified.
+- Package verified; independent-host recovery remains NOT RUN. NEXT-051 remains sole active queue; no NEXT-052.

@@ -109,3 +109,12 @@ This is a preserved historical baseline, not the current pointer. Its prior rece
 - The matching living mother is copied into the ZIP as `LIVING_MASTER_REFERENCE.md` by the exact-checkout workflow.
 - The external build receipt, not this README, is authoritative for source SHA, run ID, ZIP byte count and SHA-256.
 - PACKAGE_VERIFIED is not HOST_RECOVERED. Clean independent-host import and restart remain NOT RUN.
+
+
+## Permanent latest delivery locator — verified baseline
+
+- Stable release: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified
+- Direct canonical ZIP: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/download/haif-latest-verified/haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip
+- Verified current main SHA: `8859b3b8aa4017585540a0720687eed070fddda2`; Run 44734261656 PASS; internal version 0.3.9; ZIP 206531 bytes; SHA-256 `a3df4951fbd03cc59845beee78bb0c7d3acedc815842a1cfcc30fd18fd525c99`.
+- Release ID 452647521 contains the canonical ZIP, `LIVING_MASTER_REFERENCE.md`, receipt JSON, latest pointer JSON and checksum. The exact main SHA and package digest are recorded in the release receipt.
+- Runbook: `docs/portable/RAHM/LATEST-VERIFIED-EXPORT-DELIVERY-RUNBOOK.md`. Independent-host acceptance remains NOT RUN.

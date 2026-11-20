@@ -26,3 +26,13 @@ No historical root, queue, package identity or unresolved gate is replaced by th
 - Workflow artifact ID `14626341982`; outer artifact SHA-256 `8c7912510aab21e3aa494be56ea771d1e2a8bb0d992c8b3c9035f399b45111d9` (not the inner canonical ZIP digest).
 - Durable-release publishing has been added to the workflow. It publishes ZIP + matching mother + receipt + checksum + latest pointer to stable tag `haif-latest-verified` only after all checks pass.
 - A fresh run on the newer current HEAD and release read-back are still required. Independent-host acceptance remains NOT RUN.
+
+
+## Final acceptance — permanent release and exact-current-main package
+
+- [Portable RAHM Conformance Run 44734261656](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44734261656) completed SUCCESS on exact current main SHA `8859b3b8aa4017585540a0720687eed070fddda2`.
+- Package: stable ID `HAIF-GPT6-PORTABLE-STARTER-20261025-004`; internal version `0.3.9`; canonical filename unchanged; 14 files; 206531 bytes; SHA-256 `a3df4951fbd03cc59845beee78bb0c7d3acedc815842a1cfcc30fd18fd525c99`.
+- ZIP CRC, source-byte read-back, extracted package tests and downloaded artifact round-trip all PASS. The extracted package was independently rerun in the working environment: 24/24 tests PASS.
+- Paired living mother: 627238 bytes; SHA-256 `8d3c0383cd460f68fa59d936b1206f31c536b9332c433872f8fab03f3214e102`; exact bytes match the packaged `LIVING_MASTER_REFERENCE.md`.
+- Durable GitHub Release published and read back: [haif-latest-verified](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified), release ID `452647521`. Assets: canonical ZIP, `LIVING_MASTER_REFERENCE.md`, JSON receipt, latest pointer and SHA-256 file.
+- Status: PACKAGE_VERIFIED for exact current main SHA. Independent clean-host import remains NOT RUN; therefore HOST_RECOVERED is not claimed.

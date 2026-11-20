@@ -52,3 +52,12 @@ This master is the single entry point for continuation; earlier anchors and sour
 - [صیادی — مرجع زندهٔ کاریابی در صنعت صید و شیلات ترکیه](صیادی/README.md)
 
 This project has its own living execution record, legal gates, job-search stages, evidence rules, and continuation checkpoint. Its status remains ACTIVE / OPEN until each real-world step is verified.
+
+
+## Latest verified package delivery — permanent retrieval
+
+- [Current checkpoint CURRENT-117](docs/0.0/anchors/PALANG-0.0-CURRENT-20261120-117-LATEST-VERIFIED-EXPORT-DELIVERY.md) and [delivery contract](docs/portable/RAHM/LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-CONTRACT-2026-11-20-001.md).
+- Stable release locator: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified
+- Direct canonical ZIP: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/download/haif-latest-verified/haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip
+- Verified exact main SHA: `8859b3b8aa4017585540a0720687eed070fddda2`; workflow Run 44734261656 PASS; ZIP v0.3.9, 206531 bytes, SHA-256 `a3df4951fbd03cc59845beee78bb0c7d3acedc815842a1cfcc30fd18fd525c99`.
+- Delivery command: «آخرین نسخه کامل را بده». Require receipt current-main match and verify ZIP, paired living mother, receipt and checksum. Package verification does not prove independent-host recovery.

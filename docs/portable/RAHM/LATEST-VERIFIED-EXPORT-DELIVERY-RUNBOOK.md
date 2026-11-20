@@ -56,3 +56,13 @@ The workflow runs for relevant main-source changes and supports manual dispatch.
 ## Unclosed capabilities
 
 Independent AI-host import, cold-start/restart recovery, persistent memory, automatic capture of every live conversation, idle/background execution, automatic external host refresh, and cross-device/external storage remain separate OPEN / NOT RUN / NOT VERIFIED gates until direct evidence exists.
+
+
+## Verified baseline — 2026-11-20
+
+- Current main SHA: `8859b3b8aa4017585540a0720687eed070fddda2`.
+- Successful exact-SHA run: [44734261656](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44734261656).
+- Stable release: [haif-latest-verified](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified), ID `452647521`.
+- Canonical ZIP v0.3.9, 206531 bytes, SHA-256 `a3df4951fbd03cc59845beee78bb0c7d3acedc815842a1cfcc30fd18fd525c99`.
+- Matching living mother 627238 bytes, SHA-256 `8d3c0383cd460f68fa59d936b1206f31c536b9332c433872f8fab03f3214e102`.
+- Five release assets read back. Package tests pass 24/24 locally. Independent-host import remains NOT RUN.

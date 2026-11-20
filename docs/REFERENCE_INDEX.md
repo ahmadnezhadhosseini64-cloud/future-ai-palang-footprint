@@ -2528,3 +2528,12 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - Event: [EVT-0280](architecture/BEHAVIOR-TRACE/EVT-0280-POINT-065-CONTINUITY-AND-REGISTRATION-2026-11-20.md); time ledger: [TIME-BINDING-EVT-0280](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0280-POINT-065-CONTINUITY-AND-REGISTRATION-2026-11-20.md).
 - Checkpoint: [CURRENT-116](0.0/anchors/PALANG-0.0-CURRENT-20261120-116-CONTINUITY-AND-REGISTRATION.md); sole active queue remains [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - Parent lineage POINT-0/064 → CURRENT-115 → NEXT-051 and certificate child branch EVT-0278 remain preserved. No NEXT-052 created; CURRENT-065/CURRENT-066 ambiguity remains open.
+
+
+## Latest verified export and on-demand delivery — EVT-0281
+
+- [CURRENT-117](0.0/anchors/PALANG-0.0-CURRENT-20261120-117-LATEST-VERIFIED-EXPORT-DELIVERY.md) / [OUT-105](0.0/anchors/PALANG-0.0-OUT-20261120-105-LATEST-VERIFIED-EXPORT-DELIVERY.md) / [EVT-0281](architecture/BEHAVIOR-TRACE/EVT-0281-LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-2026-11-20.md).
+- [Delivery contract](portable/RAHM/LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-CONTRACT-2026-11-20-001.md) and [runbook](portable/RAHM/LATEST-VERIFIED-EXPORT-DELIVERY-RUNBOOK.md).
+- Stable release locator: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified.
+- Exact current main SHA `8859b3b8aa4017585540a0720687eed070fddda2`; Run 44734261656 SUCCESS; ZIP v0.3.9, 206531 bytes, SHA-256 `a3df4951fbd03cc59845beee78bb0c7d3acedc815842a1cfcc30fd18fd525c99`.
+- Delivery set: ZIP + exact matching living mother + receipt JSON + SHA-256 checksum + latest pointer. Independent-host recovery remains NOT RUN; NEXT-051 remains sole queue.

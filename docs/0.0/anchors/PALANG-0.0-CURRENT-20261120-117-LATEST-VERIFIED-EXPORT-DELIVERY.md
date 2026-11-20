@@ -9,7 +9,7 @@
 - Contract: [Latest verified export and on-demand delivery](../../portable/RAHM/LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-CONTRACT-2026-11-20-001.md)
 - Sole active queue: [NEXT-051](PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
 - Version: 1.0.0
-- Status: ACTIVE / LIVING / OPEN — contract registered; durable latest delivery and exact-current-SHA package acceptance not yet proven
+- Status: ACTIVE / LIVING / PACKAGE_VERIFIED — exact-current-main package and durable release verified; independent-host recovery OPEN
 
 ## Current truth
 
@@ -38,3 +38,14 @@ Continue NEXT-051 while implementing a durable latest-artifact pointer/manual re
 - Status: ACTIVE / LIVING / OPEN — package verified on the cited SHA; a fresh run on current main and release read-back remain pending.
 - On request, resolve current HEAD first; if receipt SHA differs, rebuild rather than deliver stale bytes.
 - Clean independent AI-host import, restart/persistence, automatic live capture and idle/background execution remain NOT RUN / NOT VERIFIED.
+
+
+## Verified current delivery state — 2026-11-20
+
+- Current main HEAD at acceptance: `8859b3b8aa4017585540a0720687eed070fddda2`.
+- Successful exact-HEAD workflow: [44734261656](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44734261656).
+- Canonical ZIP internal version 0.3.9; 206531 bytes; SHA-256 `a3df4951fbd03cc59845beee78bb0c7d3acedc815842a1cfcc30fd18fd525c99`; 14 files; ZIP CRC, source-byte match, extracted tests and artifact round-trip PASS; local extracted test rerun 24/24 PASS.
+- Matching living mother 627238 bytes; SHA-256 `8d3c0383cd460f68fa59d936b1206f31c536b9332c433872f8fab03f3214e102`.
+- Durable release ID `452647521`: [haif-latest-verified](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified). ZIP, mother, receipt, pointer and checksum assets are published.
+- On-demand command «آخرین نسخه کامل را بده» now resolves this stable release, rechecks current HEAD and receipt, and delivers ZIP + living mother + receipt + checksum.
+- HOST_RECOVERED remains NOT CLAIMED: independent AI-host import, restart persistence, automatic live capture and idle/background execution remain OPEN / NOT RUN / NOT VERIFIED.

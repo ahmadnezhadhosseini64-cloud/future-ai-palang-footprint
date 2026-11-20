@@ -2095,3 +2095,12 @@ The canonical chain is [POINT-0/032](./anchors/GPT6-RAHM-USER-POINT-0-20261026-0
 - [CURRENT-116](anchors/PALANG-0.0-CURRENT-20261120-116-CONTINUITY-AND-REGISTRATION.md) — checkpoint اجرایی این مرحله.
 - صف یگانه همچنان [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md) است؛ NEXT-052 ساخته نشده است.
 - زنجیرهٔ سراسری قبلی POINT-0/064 → CURRENT-115 → NEXT-051 و شاخهٔ فرزند گواهی EVT-0278 مستقل و محفوظ‌اند.
+
+
+## وضعیت نهایی تحویل آخرین نسخه — CURRENT-117 / EVT-0281
+
+- [CURRENT-117](anchors/PALANG-0.0-CURRENT-20261120-117-LATEST-VERIFIED-EXPORT-DELIVERY.md) → [OUT-105](anchors/PALANG-0.0-OUT-20261120-105-LATEST-VERIFIED-EXPORT-DELIVERY.md) → [EVT-0281](../architecture/BEHAVIOR-TRACE/EVT-0281-LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-2026-11-20.md) → [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- آخرین HEAD تأییدشده: `8859b3b8aa4017585540a0720687eed070fddda2`؛ Run 44734261656 موفق.
+- بستهٔ 0.3.9، ZIP برابر ۲۰۶٬۵۳۱ بایت، SHA-256 برابر `a3df4951fbd03cc59845beee78bb0c7d3acedc815842a1cfcc30fd18fd525c99`، ۱۴ فایل و ۲۴ آزمون محلی موفق.
+- انتشار پایدار: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified
+- بسته و سند مادر متناظر قابل تحویل‌اند؛ بازیابی میزبان مستقل هنوز NOT RUN است. NEXT-051 باز و یگانه باقی می‌ماند.

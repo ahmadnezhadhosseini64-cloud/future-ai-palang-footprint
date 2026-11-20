@@ -38,3 +38,22 @@ These commits establish registration and cross-index integration. They do not es
 | CURRENT-117 linked to TIME-BINDING-EVT-0281 | `f3018767e592a6a7e83df9e537d749709c55cf43` | 2026-11-20T11:43:15Z | 2026-11-20T15:13:15+03:30 |
 
 Cross-file read-back fetched IN-106, OUT-105, EVT-0281, this time ledger, CURRENT-117, the delivery contract, 0.0 register, Behavior Trace index, Reference Index, Integration Queue index, living mother and NEXT-051. Their expected CURRENT-117 / EVT-0281 / contract references were present. This verifies registration and linking only; package build and delivery acceptance remain OPEN.
+
+
+## Final exact-current-main build and durable release receipt
+
+| Evidence | Value |
+|---|---|
+| Workflow run | [44734261656](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44734261656) — SUCCESS |
+| Source/current main SHA | `8859b3b8aa4017585540a0720687eed070fddda2` |
+| Run created | 2026-11-20T12:15:27Z / 2026-11-20T15:45:27+03:30 |
+| Release updated | 2026-11-20T12:15:56Z / 2026-11-20T15:45:56+03:30 |
+| Release ID / tag | `452647521` / `haif-latest-verified` |
+| ZIP | 206531 bytes; SHA-256 `a3df4951fbd03cc59845beee78bb0c7d3acedc815842a1cfcc30fd18fd525c99` |
+| Living mother | 627238 bytes; SHA-256 `8d3c0383cd460f68fa59d936b1206f31c536b9332c433872f8fab03f3214e102` |
+| Workflow artifact ID | `14627118713`; outer artifact digest `sha256:9961cbc632fd1d8def6a08b4134a995f16090136af9e9332d3fa6fbb98cf495e` |
+| Package checks | ZIP CRC PASS; source-byte match PASS; extracted tests PASS; downloaded round-trip PASS; local extracted rerun 24/24 PASS |
+
+Release metadata read-back confirmed five assets: canonical ZIP, `LIVING_MASTER_REFERENCE.md`, receipt JSON, `latest-verified-export.json`, and SHA-256 checksum. The stable release locator is https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified.
+
+This timestamp ledger records repository/workflow/release events only. It does not infer user-message receipt or assistant-processing time. Independent AI-host recovery remains NOT RUN.

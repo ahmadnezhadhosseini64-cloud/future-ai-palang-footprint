@@ -86,3 +86,13 @@ The release contains the canonical ZIP, exact paired living mother, JSON receipt
 A successful package run exists for SHA `e11234a6a4dac5d13938cfa0d19deae9da966b38` (Run 44730867048), internal version 0.3.9, 205839 ZIP bytes, SHA-256 `b6bc06e6d50d1d3e6ec271d7f56dcde2e6981d272de3a6fed4c3c31cf428b115`, 14 files, package checks PASS. This is evidence for that SHA only. A fresh successful run and release read-back on current main are required after release automation changes.
 
 See [Latest Verified Export Delivery Runbook](./LATEST-VERIFIED-EXPORT-DELIVERY-RUNBOOK.md).
+
+
+## 10. Verified production baseline — 2026-11-20
+
+- Current main SHA: `8859b3b8aa4017585540a0720687eed070fddda2`.
+- Workflow: [Run 44734261656](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44734261656), SUCCESS on that exact SHA.
+- Canonical ZIP internal version 0.3.9; 206531 bytes; SHA-256 `a3df4951fbd03cc59845beee78bb0c7d3acedc815842a1cfcc30fd18fd525c99`; 14 files; CRC, source-byte equality, extracted tests and artifact round-trip PASS; local extracted rerun 24/24 PASS.
+- Paired mother 627238 bytes; SHA-256 `8d3c0383cd460f68fa59d936b1206f31c536b9332c433872f8fab03f3214e102`.
+- Stable release [haif-latest-verified](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified), ID `452647521`, has five published assets: ZIP, LIVING_MASTER_REFERENCE.md, receipt JSON, latest pointer JSON and checksum.
+- This establishes PACKAGE_VERIFIED for the cited exact main SHA. HOST_RECOVERED remains NOT RUN until an independent host returns a matching raw receipt.
