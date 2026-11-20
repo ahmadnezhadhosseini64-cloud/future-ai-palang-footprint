@@ -179,7 +179,11 @@
     "append-only per-host interaction event ledger with paired IN/OUT anchors",
     "durable authenticated intake with idempotency, conflicting replay rejection and destination read-back",
     "explicit capture-gap events for no response, disconnected producer, failed write or failed read-back",
-    "owner-governed multi-host quarantine and RAHM-to-CHILD-to-MASTER promotion"
+    "owner-governed multi-host quarantine and RAHM-to-CHILD-to-MASTER promotion",
+    "permanent append-only interaction ledger with paired input_id/output_id and parent lineage",
+    "host registry schema and empty template with no false active-host claims",
+    "host intake worker constrained exclusively to host-intake branch; owner-reviewed PR required",
+    "interaction schema requires host provenance, exact master revision, digest, privacy status and receipt"
   ],
   "not_proven": [
     "native GPT plugin execution",
@@ -206,7 +210,10 @@
     "automatic capture of every interaction from all external hosts without a live producer integration",
     "live AI host connection and deployment of the repository worker",
     "multi-host Host Registry and production cross-host reconciliation",
-    "clean independent interactive AI host acceptance until direct raw host receipts exist"
+    "clean independent interactive AI host acceptance until direct raw host receipts exist",
+    "GitHub main branch protection until an administrator configures and verifies branch protection/rulesets",
+    "live external host producer and actual host registry activation",
+    "automatic capture of every interaction without an authorized live producer connection"
   ],
   "archive_policy": {
     "canonical_filename": "haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip",
@@ -219,5 +226,16 @@
   },
   "host_acceptance_checklist": "FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST.md",
   "independent_host_acceptance_prompt": "INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md",
-  "build_receipt_policy": "Keep exact archive SHA-256 in the external build receipt; do not embed a self-referential ZIP digest in the packaged manifest."
+  "build_receipt_policy": "Keep exact archive SHA-256 in the external build receipt; do not embed a self-referential ZIP digest in the packaged manifest.",
+  "governance_documents": [
+    "LIVING_MASTER_REFERENCE.md",
+    "GPT6_HOST_INSTRUCTIONS.md",
+    "HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md",
+    "INTERACTION-RESPONSE-AND-ANCHOR-PROTOCOL.md",
+    "PERMANENT_INTERACTION_LEDGER_CONTRACT.md",
+    "HOST_REGISTRY_SCHEMA.json",
+    "HOST_REGISTRY_TEMPLATE.json",
+    "FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST.md",
+    "INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md"
+  ]
 }
