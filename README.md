@@ -71,3 +71,11 @@ This project has its own living execution record, legal gates, job-search stages
 - Latest package v0.3.9: 207402 bytes; SHA-256 `36966dc71f951021a68defe72677a35b58c8fb5b25100b7e59e5d63c90109be2`; Run 44734731537 PASS.
 - Release receipt records build SHA and release-time current main SHA with verified evidence-only equivalence. On delivery, require pointer current_main_head_sha to equal current main HEAD.
 - Deliver ZIP + exact matching living mother + receipt + checksum. PACKAGE_VERIFIED does not mean HOST_RECOVERED.
+
+
+## Latest 0+ — interactive evolution / CURRENT-118
+
+- [POINT-0/066 (0+)](docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261120-066-INTERACTIVE-EVOLUTION-0PLUS.md) → [IN-107](docs/0.0/anchors/PALANG-0.0-IN-20261120-107-INTERACTIVE-EVOLUTION.md) → [OUT-106](docs/0.0/anchors/PALANG-0.0-OUT-20261120-106-INTERACTIVE-EVOLUTION.md) → [EVT-0282](docs/architecture/BEHAVIOR-TRACE/EVT-0282-INTERACTIVE-EVOLUTION-0PLUS-2026-11-20.md) → [TIME-BINDING](docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0282-INTERACTIVE-EVOLUTION-2026-11-20.md) → [CURRENT-118](docs/0.0/anchors/PALANG-0.0-CURRENT-20261120-118-INTERACTIVE-EVOLUTION-0PLUS.md) → existing [NEXT-051](docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Governing evolution rule: each accepted interaction-derived advance is captured, validated, reconciled into the living reference and applicable package sources, tested, rebuilt into the same canonical ZIP identity, and read back. Stable filename/release locator remain; internal version, contents, mother, manifests and receipts evolve.
+- This point is additive; prior roots, certificate child branch and the single active queue NEXT-051 remain preserved. Model-weight retraining, automatic capture of every conversation, background execution and independent-host recovery are not claimed.
+- Parent source anchor: commit `9ba469281ffda02cbfcccd174ba4495fa89abb74`, UTC `2026-11-20T12:24:19Z` / Tehran `2026-11-20T15:54:19+03:30`. User-message time remains UNKNOWN / UNVERIFIED.
