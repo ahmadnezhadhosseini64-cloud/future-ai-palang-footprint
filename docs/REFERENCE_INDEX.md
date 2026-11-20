@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-11-20 — EVT-0276 mirror-only recheck under POINT-0/064 / EVT-0257 / CURRENT-115 / NEXT-051; certificate child root EVT-0274 preserved separately. Source unchanged; Library v7 normalized match with one extra terminal LF; no source or Library write. Audit 44688034068 PASS on exact main 2ea7e826931a42fb0a5957cdb58b698bb8f30e00; latest RAHM 44687870952 tested prior SHA bd44a799ce6296aede0ee6be64bdf26cd0af3383, so exact-main RAHM remains NOT VERIFIED. CURRENT-065/CURRENT-066, Issues #20/#21 and external host/destination gates remain open.
+**Last Updated:** 2026-11-20 — POINT-0/065 (0+) / IN-105 / OUT-104 / EVT-0280 / CURRENT-116 registered and linked; existing POINT-0/064 / CURRENT-115 / NEXT-051 and certificate child branch preserved; certificate child root EVT-0274 preserved separately. Source unchanged; Library v7 normalized match with one extra terminal LF; no source or Library write. Audit 44688034068 PASS on exact main 2ea7e826931a42fb0a5957cdb58b698bb8f30e00; latest RAHM 44687870952 tested prior SHA bd44a799ce6296aede0ee6be64bdf26cd0af3383, so exact-main RAHM remains NOT VERIFIED. CURRENT-065/CURRENT-066, Issues #20/#21 and external host/destination gates remain open.
 
 ## Canonical References
 
