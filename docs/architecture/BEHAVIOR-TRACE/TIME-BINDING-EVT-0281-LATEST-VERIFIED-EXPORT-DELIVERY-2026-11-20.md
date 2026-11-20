@@ -29,3 +29,12 @@
 ## Verification boundary
 
 These commits establish registration and cross-index integration. They do not establish that the latest package has been rebuilt, that a permanent release pointer exists, or that clean-host recovery has passed. Those remain explicit acceptance gates under CURRENT-117 and NEXT-051.
+
+
+## Final checkpoint link write
+
+| Artifact | Commit SHA | Git UTC | Asia/Tehran |
+|---|---|---|---|
+| CURRENT-117 linked to TIME-BINDING-EVT-0281 | `f3018767e592a6a7e83df9e537d749709c55cf43` | 2026-11-20T11:43:15Z | 2026-11-20T15:13:15+03:30 |
+
+Cross-file read-back fetched IN-106, OUT-105, EVT-0281, this time ledger, CURRENT-117, the delivery contract, 0.0 register, Behavior Trace index, Reference Index, Integration Queue index, living mother and NEXT-051. Their expected CURRENT-117 / EVT-0281 / contract references were present. This verifies registration and linking only; package build and delivery acceptance remain OPEN.
