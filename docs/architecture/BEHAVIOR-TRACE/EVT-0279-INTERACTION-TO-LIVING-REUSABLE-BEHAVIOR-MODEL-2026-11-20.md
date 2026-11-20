@@ -39,3 +39,10 @@ The user expects the model to survive beyond the current chat and be understanda
 - UTC equivalent: 2026-11-20T08:47:00Z.
 - Exact Git commit timestamps: to be fetched from the actual commit metadata after each write.
 - Read-back time: to be recorded only after the actual read-back operation.
+
+
+## Dedicated input/output anchors
+
+- Input: [IN-EVT-0279](./IN-EVT-0279-USER-CORRECTION-2026-11-20.md)
+- Output: [OUT-EVT-0279](./OUT-EVT-0279-ASSISTANT-REGISTRATION-2026-11-20.md)
+- Time binding: [TIME-BINDING-EVT-0279](./TIME-BINDING-EVT-0279-2026-11-20.md)
