@@ -32,7 +32,6 @@ Prepared versions must be evolvable through interaction and instruction. Every a
 
 Run/read back the repository workflows triggered by this registration. If package conformance succeeds on the new current main, verify the refreshed stable release assets and receipt. If any workflow fails, retain the failure as an open item and do not label the new package verified.
 
-
 ## Permanent 0+ binding — clarified living-model rule
 
 - Governing contract: [INTERACTION-DRIVEN-AUTO-PROMOTION-AND-LIVING-EVOLUTION-CONTRACT-2026-11-20-001](../../architecture/مدل اولیه AI/INTERACTION-DRIVEN-AUTO-PROMOTION-AND-LIVING-EVOLUTION-CONTRACT-2026-11-20-001.md).
@@ -42,3 +41,15 @@ Run/read back the repository workflows triggered by this registration. If packag
 - One evolving canonical ZIP, living master and stable release locator are maintained. Working changes, verified candidates and final package remain traceable in this lineage; only exact-source passing builds may update the verified release.
 - This is a governing architecture rule, not proof of always-on background capture, automatic processing of every chat, model-weight training, or independent-host recovery. Those remain separate capabilities requiring implementation and direct evidence.
 - Registration contract file created at commit `45422ef8900aa72d0b4c0b00ee48c7f6b24f38f0`; POINT-0/066 updated at commit `91da54f6ae33cecea8dd318c7d8d7452ba9586eb`. CURRENT-118 read-back and exact-main tests remain pending.
+
+
+## Permanent binding continuation — IN-108 / OUT-107 / EVT-0283
+
+- Clarification input: [IN-108](PALANG-0.0-IN-20261120-108-AUTO-PROMOTION-CLARIFICATION.md).
+- Registered output: [OUT-107](PALANG-0.0-OUT-20261120-107-AUTO-PROMOTION-CLARIFICATION.md).
+- Behavior event: [EVT-0283](../../architecture/BEHAVIOR-TRACE/EVT-0283-PERMANENT-0PLUS-AUTO-PROMOTION-2026-11-20.md).
+- Time ledger: [TIME-BINDING-EVT-0283](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0283-PERMANENT-0PLUS-AUTO-PROMOTION-2026-11-20.md).
+- Governing contract: [automatic promotion and living evolution](../../architecture/مدل اولیه AI/INTERACTION-DRIVEN-AUTO-PROMOTION-AND-LIVING-EVOLUTION-CONTRACT-2026-11-20-001.md).
+- New registration commits: IN-108 `e571ff6cb2678c51913a3fe6991bbfb1e1671b6d`; OUT-107 `0ed8ffc539ee81e9b352361afd2301e0eea203a8`; EVT-0283 `bec7bb4e78e300a7cbf9aef1923b2cee037223d4`; TIME-BINDING `8b6981e114a82a7a28c6a51909103bc046bd0d8d`.
+- The chain extends POINT-0/066 and does not create a new root or queue. NEXT-051 remains the sole active queue.
+- Repository registration is complete for these records; exact-main audit, package conformance, mother/package synchronization and release refresh remain pending until workflow evidence is read back.
