@@ -1365,3 +1365,8 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - ریشه سراسری POINT-0/064، CURRENT-115 و NEXT-051 بدون تغییر می‌مانند.
 
 - Time binding: [TIME-BINDING-EVT-0277](./TIME-BINDING-EVT-0277-2026-11-20.md) — actual commit metadata and message-time precision.
+
+
+## EVT-0278 — Certificate branch new Point 0 and next 0.0
+- [EVT-0278](./EVT-0278-CERTIFICATE-NEW-POINT-0-AND-NEXT-0.0-2026-11-20.md): user-designated local certificate-branch root and its successor 0.0 action checkpoint.
+- Child branch only; global POINT-0/064, CURRENT-115 and NEXT-051 remain unchanged.
