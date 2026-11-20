@@ -72,3 +72,17 @@ Repository inspection at main tree SHA `c4b8fd21eafbdc9a22121af36705d19201bbbf15
 - GPT6 HAIF Boot Package manifest with `portable_archive_created=false`, export pending and clean-host import NOT RUN.
 
 Therefore the current state is not yet PACKAGE_VERIFIED for the exact latest main SHA. This contract does not upgrade any gate by declaration.
+
+## 9. Implemented stable release publication — 2026-11-20
+
+The Portable RAHM Conformance workflow now has a success-gated publishing step. Only after package construction, ZIP CRC, source-byte read-back, extracted tests, downloaded-artifact receipt/digest verification and paired living-master byte match succeed does it create or refresh the stable GitHub Release tag `haif-latest-verified`.
+
+Stable locator: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified
+
+Direct canonical ZIP asset: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/download/haif-latest-verified/haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip
+
+The release contains the canonical ZIP, exact paired living mother, JSON receipt, SHA-256 checksum and `latest-verified-export.json`. The receipt identifies the exact tested source SHA; the stable tag is a locator, not a claim that its original tag target equals every later source commit.
+
+A successful package run exists for SHA `e11234a6a4dac5d13938cfa0d19deae9da966b38` (Run 44730867048), internal version 0.3.9, 205839 ZIP bytes, SHA-256 `b6bc06e6d50d1d3e6ec271d7f56dcde2e6981d272de3a6fed4c3c31cf428b115`, 14 files, package checks PASS. This is evidence for that SHA only. A fresh successful run and release read-back on current main are required after release automation changes.
+
+See [Latest Verified Export Delivery Runbook](./LATEST-VERIFIED-EXPORT-DELIVERY-RUNBOOK.md).
