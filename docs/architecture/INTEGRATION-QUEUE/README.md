@@ -3,7 +3,7 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.10.48
+- Version: 1.10.49
 - Date: 2026-11-20
 - Exact Time: EVT-0261 event commit UTC `2026-11-10T06:47:53Z` / Tehran `2026-11-10T10:17:53+03:30`; initial time-binding commit UTC `2026-11-10T06:48:18Z` / Tehran `2026-11-10T10:18:18+03:30`.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
@@ -2805,3 +2805,12 @@ Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-11
 - ZIP v0.3.9: 206531 bytes; SHA-256 `a3df4951fbd03cc59845beee78bb0c7d3acedc815842a1cfcc30fd18fd525c99`; 14 files; 24/24 local extracted tests PASS.
 - Stable release ID 452647521: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified.
 - Package verified; independent-host recovery remains NOT RUN. NEXT-051 remains sole active queue; no NEXT-052.
+
+
+## EVT-0281 — Latest verified export and on-demand delivery
+
+- Checkpoint [CURRENT-117](../../0.0/anchors/PALANG-0.0-CURRENT-20261120-117-LATEST-VERIFIED-EXPORT-DELIVERY.md); event [EVT-0281](../BEHAVIOR-TRACE/EVT-0281-LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-2026-11-20.md).
+- Run 44734731537 SUCCESS; build SHA `df6fef994b9c33edbc62612ff9b3db905fd666fb`; release-time current main `1d28f83cbb427e90c36fdae75d865496dea03907`; only intervening file was Evidence Gate evidence and equivalence was verified.
+- Canonical ZIP v0.3.9: 207402 bytes; SHA-256 `36966dc71f951021a68defe72677a35b58c8fb5b25100b7e59e5d63c90109be2`; 14 files; 24/24 local extracted tests PASS.
+- Stable release ID 452647521: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified.
+- Independent-host recovery remains OPEN / NOT RUN; NEXT-051 remains sole active queue.

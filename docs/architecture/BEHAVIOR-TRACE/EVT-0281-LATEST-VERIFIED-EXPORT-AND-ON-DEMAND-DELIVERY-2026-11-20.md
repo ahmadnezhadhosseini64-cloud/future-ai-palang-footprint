@@ -36,3 +36,13 @@ No historical root, queue, package identity or unresolved gate is replaced by th
 - Paired living mother: 627238 bytes; SHA-256 `8d3c0383cd460f68fa59d936b1206f31c536b9332c433872f8fab03f3214e102`; exact bytes match the packaged `LIVING_MASTER_REFERENCE.md`.
 - Durable GitHub Release published and read back: [haif-latest-verified](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified), release ID `452647521`. Assets: canonical ZIP, `LIVING_MASTER_REFERENCE.md`, JSON receipt, latest pointer and SHA-256 file.
 - Status: PACKAGE_VERIFIED for exact current main SHA. Independent clean-host import remains NOT RUN; therefore HOST_RECOVERED is not claimed.
+
+
+## Latest superseding production receipt — 2026-11-20
+
+- Successful workflow: [Run 44734731537](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44734731537); build source SHA `df6fef994b9c33edbc62612ff9b3db905fd666fb`.
+- Current main at release publication: `1d28f83cbb427e90c36fdae75d865496dea03907`. The only post-build commit was the Evidence Gate receipt `evidence/evidence-gate-44734731110.txt`; compare confirmed no package source or living-mother changes. Workflow records `current_head_equivalence_verified=true` and the current main SHA in the release receipt/pointer.
+- Package v0.3.9; 14 files; 207402 bytes; SHA-256 `36966dc71f951021a68defe72677a35b58c8fb5b25100b7e59e5d63c90109be2`; ZIP CRC/source-byte match/extracted tests/downloaded round-trip PASS; independent local extracted rerun 24/24 PASS.
+- Paired living mother: 629579 bytes; SHA-256 `a6dd51f62f214476f17a40896b14c3e39a3ba4d713247297689f293af02702a9`.
+- Stable release [haif-latest-verified](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified), ID `452647521`, refreshed at 2026-11-20T12:19:12Z. Five assets are present: ZIP, `LIVING_MASTER_REFERENCE.md`, receipt JSON, latest pointer JSON and checksum.
+- This supersedes the previous v0.3.9 receipt for source SHA 8859b3b. Independent-host recovery remains NOT RUN.

@@ -1,7 +1,7 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.44
+- Version: 1.0.45
 - Date: 2026-11-20
 - Project: Future AI / Palang Footprint / HAIF
 
@@ -1397,3 +1397,12 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - قرارداد: [Latest Verified Export](../../portable/RAHM/LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-CONTRACT-2026-11-20-001.md)؛ راهنما: [Delivery Runbook](../../portable/RAHM/LATEST-VERIFIED-EXPORT-DELIVERY-RUNBOOK.md).
 - ساخت موفق Run 44730867048 روی SHA `e11234a6a4dac5d13938cfa0d19deae9da966b38`: ZIP v0.3.9، 205839 bytes، SHA-256 `b6bc06e6d50d1d3e6ec271d7f56dcde2e6981d272de3a6fed4c3c31cf428b115`، 14 files، package checks PASS.
 - انتشار پایدار در workflow پیاده‌سازی شده است؛ اجرای تازه روی HEAD جاری و read-back release لازم است.
+
+
+## EVT-0281 — Latest verified export and permanent delivery
+
+- [EVT-0281](./EVT-0281-LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-2026-11-20.md) → [CURRENT-117](../../0.0/anchors/PALANG-0.0-CURRENT-20261120-117-LATEST-VERIFIED-EXPORT-DELIVERY.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Run 44734731537 PASS; build SHA `df6fef994b9c33edbc62612ff9b3db905fd666fb`; release-time HEAD `1d28f83cbb427e90c36fdae75d865496dea03907` with evidence-only delta verified.
+- ZIP v0.3.9, 207402 bytes, SHA-256 `36966dc71f951021a68defe72677a35b58c8fb5b25100b7e59e5d63c90109be2`; 24/24 local extracted tests PASS.
+- Stable release ID 452647521: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified.
+- Independent-host recovery remains NOT RUN.

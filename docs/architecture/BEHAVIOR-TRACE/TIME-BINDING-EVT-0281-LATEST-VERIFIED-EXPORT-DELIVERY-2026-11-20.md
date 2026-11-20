@@ -57,3 +57,23 @@ Cross-file read-back fetched IN-106, OUT-105, EVT-0281, this time ledger, CURREN
 Release metadata read-back confirmed five assets: canonical ZIP, `LIVING_MASTER_REFERENCE.md`, receipt JSON, `latest-verified-export.json`, and SHA-256 checksum. The stable release locator is https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified.
 
 This timestamp ledger records repository/workflow/release events only. It does not infer user-message receipt or assistant-processing time. Independent AI-host recovery remains NOT RUN.
+
+
+## Latest superseding build and release ledger
+
+| Field | Value |
+|---|---|
+| Workflow run | [44734731537](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44734731537) — SUCCESS |
+| Build source SHA | `df6fef994b9c33edbc62612ff9b3db905fd666fb` |
+| Current main SHA at release publication | `1d28f83cbb427e90c36fdae75d865496dea03907` |
+| Post-build delta | `evidence/evidence-gate-44734731110.txt` only; compare confirms evidence-only addition |
+| Current-head equivalence | `true`; recorded by workflow in receipt and latest pointer |
+| Run created | 2026-11-20T12:18:51Z / 2026-11-20T15:48:51+03:30 |
+| Release refreshed | 2026-11-20T12:19:12Z / 2026-11-20T15:49:12+03:30 |
+| Release ID / tag | `452647521` / `haif-latest-verified` |
+| ZIP | 207402 bytes; SHA-256 `36966dc71f951021a68defe72677a35b58c8fb5b25100b7e59e5d63c90109be2` |
+| Living mother | 629579 bytes; SHA-256 `a6dd51f62f214476f17a40896b14c3e39a3ba4d713247297689f293af02702a9` |
+| Workflow artifact ID | `14627472933`; outer artifact digest `sha256:34a3117e333a2920d26c8ed840d5ec128b7a9c9caf19ddec2accb9555525c751` |
+| Package tests | CI extracted tests PASS; local extracted rerun 24/24 PASS |
+
+Release assets read back: canonical ZIP, `LIVING_MASTER_REFERENCE.md`, receipt JSON, `latest-verified-export.json`, and SHA-256 checksum. The evidence-only equivalence is explicitly recorded; user-message receipt and assistant-processing timestamps remain unknown/unverified.

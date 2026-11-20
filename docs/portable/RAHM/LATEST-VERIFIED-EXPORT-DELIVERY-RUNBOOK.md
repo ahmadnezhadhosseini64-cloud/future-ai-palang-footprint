@@ -31,7 +31,7 @@ On every user request:
 1. Fetch current main HEAD and the current living mother.
 2. Fetch the stable release and its latest assets.
 3. Read `latest-verified-export.json` and the receipt.
-4. Require `source_commit_sha == current main HEAD`; if not, trigger a manual rebuild through Actions when available and wait for a successful run. Never silently deliver an older artifact.
+4. Require `current_main_head_sha == current main HEAD`. If build SHA differs, accept only when `current_head_equivalence_verified=true` and every post-build delta is a recorded `evidence/evidence-gate-*.txt` file; otherwise rebuild. Never silently deliver stale bytes.
 5. Download the ZIP and independently verify SHA-256, byte count, ZIP CRC, inventory and receipt agreement.
 6. Verify the paired living mother matches the current repository master bytes.
 7. Deliver the ZIP, living mother, receipt and checksum together.
@@ -66,3 +66,14 @@ Independent AI-host import, cold-start/restart recovery, persistent memory, auto
 - Canonical ZIP v0.3.9, 206531 bytes, SHA-256 `a3df4951fbd03cc59845beee78bb0c7d3acedc815842a1cfcc30fd18fd525c99`.
 - Matching living mother 627238 bytes, SHA-256 `8d3c0383cd460f68fa59d936b1206f31c536b9332c433872f8fab03f3214e102`.
 - Five release assets read back. Package tests pass 24/24 locally. Independent-host import remains NOT RUN.
+
+
+## Latest verified production baseline
+
+- Build run: [44734731537](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44734731537), SUCCESS.
+- Build source SHA: `df6fef994b9c33edbc62612ff9b3db905fd666fb`; release-time current main SHA: `1d28f83cbb427e90c36fdae75d865496dea03907`.
+- Only post-build delta: `evidence/evidence-gate-44734731110.txt`; workflow verified it as evidence-only and recorded `current_head_equivalence_verified=true`.
+- Release: [haif-latest-verified](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified), ID 452647521.
+- ZIP v0.3.9, 207402 bytes, SHA-256 `36966dc71f951021a68defe72677a35b58c8fb5b25100b7e59e5d63c90109be2`; 14 files; local extracted tests 24/24 PASS.
+- Mother 629579 bytes, SHA-256 `a6dd51f62f214476f17a40896b14c3e39a3ba4d713247297689f293af02702a9`.
+- Independent-host import remains NOT RUN.

@@ -2104,3 +2104,13 @@ The canonical chain is [POINT-0/032](./anchors/GPT6-RAHM-USER-POINT-0-20261026-0
 - بستهٔ 0.3.9، ZIP برابر ۲۰۶٬۵۳۱ بایت، SHA-256 برابر `a3df4951fbd03cc59845beee78bb0c7d3acedc815842a1cfcc30fd18fd525c99`، ۱۴ فایل و ۲۴ آزمون محلی موفق.
 - انتشار پایدار: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified
 - بسته و سند مادر متناظر قابل تحویل‌اند؛ بازیابی میزبان مستقل هنوز NOT RUN است. NEXT-051 باز و یگانه باقی می‌ماند.
+
+
+## آخرین نسخهٔ تأییدشده — رسید نهایی ۲۰۲۶-۱۱-۲۰
+
+- Run [44734731537](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44734731537) موفق؛ SHA منبع ساخت `df6fef994b9c33edbc62612ff9b3db905fd666fb`.
+- HEAD هنگام انتشار `1d28f83cbb427e90c36fdae75d865496dea03907`؛ تنها اختلاف پس از ساخت فایل Evidence Gate بود و گردش‌کار هم‌ارزی را ثبت کرد.
+- ZIP v0.3.9، ۲۰۷٬۴۰۲ بایت، SHA-256 `36966dc71f951021a68defe72677a35b58c8fb5b25100b7e59e5d63c90109be2`؛ ۱۴ فایل؛ آزمون محلی ۲۴/۲۴ PASS.
+- سند مادر هم‌نسخه: ۶۲۹٬۵۷۹ بایت؛ SHA-256 `a6dd51f62f214476f17a40896b14c3e39a3ba4d713247297689f293af02702a9`.
+- انتشار پایدار: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified (ID 452647521).
+- بازیابی میزبان مستقل همچنان NOT RUN؛ NEXT-051 تنها صف باز است.

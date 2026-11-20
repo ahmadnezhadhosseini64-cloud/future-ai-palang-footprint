@@ -63,3 +63,13 @@ When the user says "آخرین نسخه کامل را بده", resolve current m
 - Permanent release: [haif-latest-verified](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified), release ID `452647521`; five assets read back in release metadata.
 - Delivery set is now available at the stable release locator. Exact source SHA is the current main HEAD at acceptance.
 - Remaining separate gate: genuine independent AI-host import/reconstruction and returned receipt remain NOT RUN. Package verification is not host recovery.
+
+
+## Latest superseding release receipt — 2026-11-20
+
+- Run [44734731537](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44734731537) succeeded on build source SHA `df6fef994b9c33edbc62612ff9b3db905fd666fb`.
+- Release-time current main SHA: `1d28f83cbb427e90c36fdae75d865496dea03907`; only intervening delta was the Evidence Gate evidence file `evidence/evidence-gate-44734731110.txt`. The workflow verifies and records this evidence-only equivalence in the receipt and latest pointer.
+- ZIP v0.3.9: 207402 bytes; SHA-256 `36966dc71f951021a68defe72677a35b58c8fb5b25100b7e59e5d63c90109be2`; 14 files; all package gates PASS; local extracted rerun 24/24 PASS.
+- Paired mother: 629579 bytes; SHA-256 `a6dd51f62f214476f17a40896b14c3e39a3ba4d713247297689f293af02702a9`.
+- Stable release ID 452647521 refreshed; five assets verified in release metadata. The latest pointer records the build SHA, current main SHA and allowed evidence-only delta.
+- Package status: PACKAGE_VERIFIED. Independent-host recovery remains NOT RUN / OPEN.

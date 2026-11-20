@@ -49,3 +49,14 @@ Continue NEXT-051 while implementing a durable latest-artifact pointer/manual re
 - Durable release ID `452647521`: [haif-latest-verified](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified). ZIP, mother, receipt, pointer and checksum assets are published.
 - On-demand command «آخرین نسخه کامل را بده» now resolves this stable release, rechecks current HEAD and receipt, and delivers ZIP + living mother + receipt + checksum.
 - HOST_RECOVERED remains NOT CLAIMED: independent AI-host import, restart persistence, automatic live capture and idle/background execution remain OPEN / NOT RUN / NOT VERIFIED.
+
+
+## Latest superseding current delivery pointer — 2026-11-20
+
+- Build workflow [44734731537](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44734731537): SUCCESS.
+- Build source SHA: `df6fef994b9c33edbc62612ff9b3db905fd666fb`.
+- Current main at release publication: `1d28f83cbb427e90c36fdae75d865496dea03907`; the sole post-build change is the Evidence Gate record `evidence/evidence-gate-44734731110.txt`. The release receipt/pointer confirms `current_head_equivalence_verified=true`; no package or mother bytes changed after build.
+- ZIP v0.3.9: 207402 bytes; SHA-256 `36966dc71f951021a68defe72677a35b58c8fb5b25100b7e59e5d63c90109be2`; 14 files; CRC, byte match, extracted tests and round-trip PASS; local extracted tests 24/24 PASS.
+- Mother: 629579 bytes; SHA-256 `a6dd51f62f214476f17a40896b14c3e39a3ba4d713247297689f293af02702a9`.
+- Stable release ID 452647521 updated with five assets. On-demand delivery must compare receipt `current_main_head_sha` with current main and honor the evidence-only equivalence list.
+- Independent host import/recovery remains NOT RUN; do not claim HOST_RECOVERED.

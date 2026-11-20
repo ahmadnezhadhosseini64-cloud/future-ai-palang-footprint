@@ -96,3 +96,13 @@ See [Latest Verified Export Delivery Runbook](./LATEST-VERIFIED-EXPORT-DELIVERY-
 - Paired mother 627238 bytes; SHA-256 `8d3c0383cd460f68fa59d936b1206f31c536b9332c433872f8fab03f3214e102`.
 - Stable release [haif-latest-verified](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified), ID `452647521`, has five published assets: ZIP, LIVING_MASTER_REFERENCE.md, receipt JSON, latest pointer JSON and checksum.
 - This establishes PACKAGE_VERIFIED for the cited exact main SHA. HOST_RECOVERED remains NOT RUN until an independent host returns a matching raw receipt.
+
+
+## 11. Latest production receipt and evidence-only head reconciliation
+
+- Successful workflow: [44734731537](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44734731537).
+- Build source SHA `df6fef994b9c33edbc62612ff9b3db905fd666fb`; current main at release publication `1d28f83cbb427e90c36fdae75d865496dea03907`.
+- The only post-build delta was `evidence/evidence-gate-44734731110.txt`. The workflow fetched main, verified ancestry and rejected every non-evidence path; the release receipt and latest pointer record the build SHA, current main SHA and `current_head_equivalence_verified=true`.
+- ZIP v0.3.9: 207402 bytes; SHA-256 `36966dc71f951021a68defe72677a35b58c8fb5b25100b7e59e5d63c90109be2`; 14 files; CRC/source-byte/extracted tests/round-trip PASS; local extracted rerun 24/24 PASS.
+- Living mother: 629579 bytes; SHA-256 `a6dd51f62f214476f17a40896b14c3e39a3ba4d713247297689f293af02702a9`.
+- Stable release ID 452647521 refreshed with the five expected assets. Independent-host acceptance remains NOT RUN.

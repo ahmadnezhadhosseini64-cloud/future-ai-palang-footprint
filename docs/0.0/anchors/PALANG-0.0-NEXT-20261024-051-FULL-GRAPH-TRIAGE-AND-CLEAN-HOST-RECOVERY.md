@@ -807,3 +807,13 @@ The previous blob at this path began with the Integration Queue README title and
 - Immediate acceptance: require a successful workflow on exact current main SHA; read back stable release and all five assets; verify source SHA, ZIP digest, paired mother, receipt and checksum.
 - Then perform a genuinely independent clean-host import and return a raw receipt. CI package verification is not host recovery.
 - NEXT-051 remains OPEN / LIVING / IN PROGRESS / NOT COMPLETE. No NEXT-052 is created.
+
+
+## Latest verified export — final package delivery status
+
+- Run [44734731537](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44734731537) SUCCESS; build source SHA `df6fef994b9c33edbc62612ff9b3db905fd666fb`.
+- Current main at release publication `1d28f83cbb427e90c36fdae75d865496dea03907`; the only post-build change was `evidence/evidence-gate-44734731110.txt`. The workflow verified evidence-only equivalence and recorded it in the release receipt/latest pointer.
+- Stable release [haif-latest-verified](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified), ID 452647521.
+- ZIP v0.3.9: 207402 bytes; SHA-256 `36966dc71f951021a68defe72677a35b58c8fb5b25100b7e59e5d63c90109be2`; 14 files; 24/24 local extracted tests PASS. Paired mother: 629579 bytes; SHA-256 `a6dd51f62f214476f17a40896b14c3e39a3ba4d713247297689f293af02702a9`.
+- Next work is genuine independent clean-host import, reconstruction and raw receipt; then continue unresolved graph triage. Package PASS does not close those gates.
+- NEXT-051 remains OPEN / LIVING / IN PROGRESS; no NEXT-052.

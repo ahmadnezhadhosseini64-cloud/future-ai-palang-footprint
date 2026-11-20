@@ -118,3 +118,12 @@ This is a preserved historical baseline, not the current pointer. Its prior rece
 - Verified current main SHA: `8859b3b8aa4017585540a0720687eed070fddda2`; Run 44734261656 PASS; internal version 0.3.9; ZIP 206531 bytes; SHA-256 `a3df4951fbd03cc59845beee78bb0c7d3acedc815842a1cfcc30fd18fd525c99`.
 - Release ID 452647521 contains the canonical ZIP, `LIVING_MASTER_REFERENCE.md`, receipt JSON, latest pointer JSON and checksum. The exact main SHA and package digest are recorded in the release receipt.
 - Runbook: `docs/portable/RAHM/LATEST-VERIFIED-EXPORT-DELIVERY-RUNBOOK.md`. Independent-host acceptance remains NOT RUN.
+
+
+## Permanent latest delivery locator — latest verified receipt
+
+- Stable release: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified
+- Direct canonical ZIP: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/download/haif-latest-verified/haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip
+- Latest verified package v0.3.9: 207402 bytes; SHA-256 `36966dc71f951021a68defe72677a35b58c8fb5b25100b7e59e5d63c90109be2`; Run 44734731537 PASS.
+- Build source SHA `df6fef994b9c33edbc62612ff9b3db905fd666fb`; release-time current main SHA `1d28f83cbb427e90c36fdae75d865496dea03907`; intervening Evidence Gate-only file recorded and verified in latest pointer.
+- Release contains canonical ZIP, `LIVING_MASTER_REFERENCE.md`, receipt JSON, latest pointer JSON and checksum. Independent-host acceptance remains NOT RUN.
