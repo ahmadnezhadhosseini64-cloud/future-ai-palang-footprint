@@ -3,8 +3,8 @@
 Package family: HAIF GPT-6 Portable Starter
 Stable package ID: HAIF-GPT6-PORTABLE-STARTER-20261025-004
 Canonical ZIP filename: haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip
-Internal version: 0.4.0
-Current chain: POINT-0/066 (0+) → IN-107 → OUT-106 → EVT-0282 → CURRENT-118 → NEXT-051
+Internal version: 0.4.1
+Current chain: POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → POINT-0/069 → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122 → NEXT-051
 
 ## 1. Visible response is mandatory
 When an input is received, the host must produce one of:
@@ -45,3 +45,16 @@ On a tool failure, timeout or rejected write:
 
 ## 5. What this protocol does not grant
 This document does not itself create a native GPT plugin, automatic message hook, background worker, repository token or persistent memory. Each requires an actual host integration and direct acceptance receipt. Until then, live capture, write-back and restart persistence are OPEN / NOT VERIFIED.
+
+ 
+## 6. Permanent interaction ledger — required for every connected host
+
+For each actual host interaction received by the authorized producer, create a distinct IN record and OUT record linked to one event ID and the prior point/checkpoint. If the output is absent, or capture/write/read-back fails, record an explicit NO_RESPONSE / NOT_CAPTURED / WRITE_FAILED / READBACK_FAILED gap. Do not silently omit it.
+
+Required fields: host_id, pseudonymous host_session_id, event_id, input_id, output_id, parent_point_id, parent_event_id, master_commit_sha, master_version, adapter_version, trustworthy created_at_utc or UNKNOWN, received_at_utc, Tehran equivalent derived from UTC, payload_sha256, source/evidence refs, privacy/redaction status, result status and receipt ref.
+
+Write durably, fetch the destination and compare exact content/digest. Retries with the same idempotency key and same payload must be idempotent; a conflicting replay must be rejected. Corrections and owner decisions are new linked events; never rewrite prior history.
+
+The event ledger preserves interaction continuity and audit history. It does not promote every interaction into the Master. All host input remains QUARANTINED until privacy/source review, cross-host reconciliation, RAHM validation, CHILD candidacy and explicit owner approval. Hosts have no direct main write/merge authority.
+
+If no actual producer or authorized adapter connection exists, mark NOT_CONNECTED / NOT_CAPTURED. A ZIP or written protocol alone does not capture all conversations. Existing adapter code and synthetic CI PASS are not proof of a live host connection or deployed worker. Never include raw conversations by default, secrets or credentials.
