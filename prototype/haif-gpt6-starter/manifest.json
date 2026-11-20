@@ -123,7 +123,14 @@
     "OUT-106",
     "EVT-0282",
     "TIME-BINDING-EVT-0282",
-    "CURRENT-118"
+    "CURRENT-118",
+    "POINT-0/068 (0+ marker)",
+    "IN-111",
+    "OUT-110",
+    "EVT-0286",
+    "TIME-BINDING-EVT-0286",
+    "CURRENT-121",
+    "HAIF-MULTI-HOST-GOVERNED-EVOLUTION-ARCHITECTURE-2026-11-20-001"
   ],
   "entrypoint": "engine.py",
   "host_instructions": "GPT6_HOST_INSTRUCTIONS.md",
@@ -151,7 +158,11 @@
     "visible response acknowledgment and truthful ACKNOWLEDGED/COMPLETED/BLOCKED/FAILED/PARTIAL statuses; no silent implied completion",
     "latest verified export and on-demand delivery contract: resolve exact current main SHA, require matching package receipt and deliver ZIP with paired living mother and SHA-256",
     "readiness levels SOURCE_CURRENT, PACKAGE_BUILT, PACKAGE_VERIFIED and HOST_RECOVERED remain distinct",
-    "validated interaction-driven evolution: capture IN/OUT, reconcile into the living master, run tests, rebuild the same canonical ZIP identity, and verify fresh receipts"
+    "validated interaction-driven evolution: capture IN/OUT, reconcile into the living master, run tests, rebuild the same canonical ZIP identity, and verify fresh receipts",
+    "multi-host Host Node governance with read-only default and revocable least-privilege access",
+    "quarantine-first host evidence intake with provenance, hash, privacy and source-independence checks",
+    "cross-host reconciliation and RAHM validation before CHILD candidacy",
+    "explicit owner approval required for Master promotion; hosts cannot write or merge directly to main"
   ],
   "not_proven": [
     "native GPT plugin execution",
@@ -170,7 +181,11 @@
     "response acknowledgments and anchors for every host interaction until an actual authorized live producer is integrated and verified",
     "independent external AI host import, raw receipt and exact chain read-back",
     "negative missing-anchor control and fresh-session/restart recovery",
-    "durable permanent latest-release URL; GitHub Actions artifact retention is temporary until a stable release endpoint is implemented"
+    "durable permanent latest-release URL; GitHub Actions artifact retention is temporary until a stable release endpoint is implemented",
+    "live connection of multiple external AI hosts to the repository",
+    "deployed multi-host Host Registry and authenticated quarantine ingress API",
+    "real repository branch protection configuration and host-specific permission enforcement",
+    "cross-host independent evidence reconciliation in production"
   ],
   "archive_policy": {
     "canonical_filename": "haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip",
