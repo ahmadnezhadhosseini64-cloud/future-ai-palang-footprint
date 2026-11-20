@@ -75,3 +75,14 @@ The only canonical package identity is the existing stable ID and filename. Each
 ## Visible response and interaction anchoring
 
 See `INTERACTION-RESPONSE-AND-ANCHOR-PROTOCOL.md`. Each actual host interaction must receive a visible truthful status. Where authorized storage exists, pair actual input/output with independent anchors, provenance, payload digest, and read-back receipt. Missing response, unavailable persistence or failed writes must remain explicit gaps rather than silently implying completion. This rule is architectural; live automatic capture remains unproven until the host producer and connector pass direct acceptance tests.
+
+
+## Multi-host intake and owner-controlled promotion
+
+Each connected host is a separate producer. The default connection is read-only. Proposal/test permissions must be separately scoped, revocable and least-privilege. A host may submit only to an isolated intake/quarantine route or a dedicated proposal branch; it must never push to the protected main branch or merge its own changes.
+
+Treat all host content as untrusted input. Validate host identity, source/version lineage, timestamps, hashes, privacy basis, redaction, duplicate/dependent sources and reproducibility. Cross-host comparison may increase confidence only when evidence sources are genuinely independent. Repeated output from the same source/model family is not independent corroboration.
+
+Accepted evidence may create a RAHM validation task and a CHILD candidate. The living Master is changed only after successful validation and an explicit, attributable owner decision. Preserve rejected proposals and conflicts as history. Never place tokens, private keys or secrets in prompts, package files or event records. The owner retains the right to revoke any host credential or connection.
+
+This contract defines the governance path; it does not itself implement a live Host Registry, ingress API, branch protection, deployed connector or multiple live host connections. All remain OPEN until direct end-to-end receipts exist.
