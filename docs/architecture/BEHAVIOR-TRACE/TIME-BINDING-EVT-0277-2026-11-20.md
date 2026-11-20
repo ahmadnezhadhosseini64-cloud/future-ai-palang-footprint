@@ -44,3 +44,5 @@ All Git timestamps below were retrieved from GitHub commit metadata after the co
 | Certificate living master final pointer | `34bc72c2cbf0fa4d437a161bcc99010cac22904e` | 2026-11-20T07:26:06Z | 2026-11-20T10:56:06+03:30 |
 
 - The final update commit for this time-binding file is recorded in the receipt after its metadata is read.
+
+| CERT-IN baseline ID binding addendum | `c5c7dcbd48a73253dad21b6f9573d0aa753951b5` | 2026-11-20T07:27:19Z | 2026-11-20T10:57:19+03:30 |
