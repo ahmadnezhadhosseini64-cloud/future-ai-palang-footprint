@@ -12,10 +12,10 @@
 
 | Artifact | Commit SHA | Git UTC | Asia/Tehran |
 |---|---|---|---|
-| Model | PENDING ACTUAL METADATA | PENDING | PENDING |
-| EVT-0279 | PENDING ACTUAL METADATA | PENDING | PENDING |
-| TIME-BINDING-EVT-0279 | PENDING ACTUAL METADATA | PENDING | PENDING |
-| Behavior Trace index | PENDING ACTUAL METADATA | PENDING | PENDING |
+| Model | `1ba8896925418a0f51519a4853557b16154822d6` | 2026-11-20T08:48:10Z | 2026-11-20T12:18:10+03:30 |
+| EVT-0279 | `4e3855c13c22e8a3acab9384c0eee708dde35cb4` | 2026-11-20T08:48:15Z | 2026-11-20T12:18:15+03:30 |
+| TIME-BINDING-EVT-0279 initial | `d39594b75ccb22a2a377b19fe133caaccb1d050f` | 2026-11-20T08:48:19Z | 2026-11-20T12:18:19+03:30 |
+| Behavior Trace index | `9b1aa1fdd2ec365da4cd5bb026d26500c9d4ebb6` | 2026-11-20T08:48:54Z | 2026-11-20T12:18:54.000+03:30 |
 
 ## Integrity rules
 
@@ -24,3 +24,5 @@
 - Do not use processing time as message time.
 - Preserve POINT-0/064, CURRENT-115, NEXT-051 and all existing child roots.
 - This registration does not prove automatic background capture or independent-host recovery.
+
+- Time-binding ledger update commit: `9b1aa1fdd2ec365da4cd5bb026d26500c9d4ebb6` (metadata recorded above for index write); final time-binding update commit metadata is appended after its write.
