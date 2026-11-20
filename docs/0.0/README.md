@@ -2062,3 +2062,13 @@ The canonical chain is [POINT-0/032](./anchors/GPT6-RAHM-USER-POINT-0-20261026-0
 - [EVT-0275](../architecture/BEHAVIOR-TRACE/EVT-0275-LIVE-MIRROR-SYNC-RECHECK-2026-11-20.md) / [TIME-BINDING-EVT-0275](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0275-LIVE-MIRROR-SYNC-2026-11-20.md).
 - رویداد فقط آینه است؛ ریشه اصلی POINT-0/064 / EVT-0257، CURRENT-115 و NEXT-051 تغییر نمی‌کنند. NEXT-052 ساخته نمی‌شود.
 - منبع canonical تغییر نکرده؛ Library v7 با محتوای نرمال‌شده منطبق است و فقط یک LF انتهایی اضافه دارد. بازنویسی انجام نشد.
+
+
+## ریشهٔ جاری ۰+ — POINT-0/065 → CURRENT-116 → NEXT-051 (2026-11-20)
+
+- [POINT-0/065 (0+)](anchors/GPT6-RAHM-USER-POINT-0-20261120-065-CONTINUITY-AND-REGISTRATION.md) — ریشهٔ افزایشی این مرحله؛ POINT-0/064 حفظ شده است.
+- [IN-105](anchors/PALANG-0.0-IN-20261120-105-CONTINUITY-AND-REGISTRATION.md) + [OUT-104](anchors/PALANG-0.0-OUT-20261120-104-CONTINUITY-AND-REGISTRATION.md).
+- [EVT-0280](../architecture/BEHAVIOR-TRACE/EVT-0280-POINT-065-CONTINUITY-AND-REGISTRATION-2026-11-20.md) / [TIME-BINDING-EVT-0280](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0280-POINT-065-CONTINUITY-AND-REGISTRATION-2026-11-20.md).
+- [CURRENT-116](anchors/PALANG-0.0-CURRENT-20261120-116-CONTINUITY-AND-REGISTRATION.md) — checkpoint اجرایی این مرحله.
+- صف یگانه همچنان [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md) است؛ NEXT-052 ساخته نشده است.
+- زنجیرهٔ سراسری قبلی POINT-0/064 → CURRENT-115 → NEXT-051 و شاخهٔ فرزند گواهی EVT-0278 مستقل و محفوظ‌اند.
