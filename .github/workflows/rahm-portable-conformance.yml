@@ -164,6 +164,7 @@ jobs:
               "FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST.md",
               "HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md",
               "INTERACTION-RESPONSE-AND-ANCHOR-PROTOCOL.md",
+              "LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-CONTRACT.md",
               "bootstrap_0plus.py",
               "engine.py",
               "state.schema.json",
