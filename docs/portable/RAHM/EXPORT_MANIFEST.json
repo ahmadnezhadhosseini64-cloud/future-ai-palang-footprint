@@ -200,8 +200,8 @@
     {
       "path": "docs/portable/RAHM/fixtures/interaction-pair-valid.json",
       "version": "current",
-      "git_blob_sha": "c5baa1435999fc80d9b6e98eca890af996400546",
-      "sha256": "17ac39c87b83bd46ad1cf7ac6a624881b48dd0719db96f0dc579333775529464"
+      "git_blob_sha": "2a779c03569229be0169651d6b6ca4d49633f4df",
+      "sha256": "baf134a2a55abe62cdd6c0311638742c748e63967371aa752224335008ba88d3"
     },
     {
       "path": "docs/portable/RAHM/HOST_CAPABILITY_MANIFEST.json",
@@ -212,8 +212,8 @@
     {
       "path": "docs/portable/RAHM/INTERACTION_PAIR_SCHEMA.json",
       "version": "1.0.0",
-      "git_blob_sha": "4a67add8d7a3b03f9be89a5127dbc0508573dff0",
-      "sha256": "279c6db72c34df22fe16201f85e7f27b117422998fd8ca6e96d147ed65060d59"
+      "git_blob_sha": "07b07a509e8337500e03aa4ea83a067a5ebc1e52",
+      "sha256": "9e4fff33c72f2dcb0d40ac22f4564cecbadd0f83b5918e5471687c6035aab839"
     },
     {
       "path": "docs/portable/RAHM/RECOVERY_AND_ROLLBACK.md",
@@ -504,7 +504,24 @@
     "docs/0.0/anchors/PALANG-0.0-OUT-20261120-106-INTERACTIVE-EVOLUTION.md",
     "docs/architecture/BEHAVIOR-TRACE/EVT-0282-INTERACTIVE-EVOLUTION-0PLUS-2026-11-20.md",
     "docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0282-INTERACTIVE-EVOLUTION-2026-11-20.md",
-    "docs/0.0/anchors/PALANG-0.0-CURRENT-20261120-118-INTERACTIVE-EVOLUTION-0PLUS.md"
+    "docs/0.0/anchors/PALANG-0.0-CURRENT-20261120-118-INTERACTIVE-EVOLUTION-0PLUS.md",
+    "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261120-069-PERMANENT-INTERACTION-LEDGER-0PLUS.md",
+    "docs/0.0/anchors/PALANG-0.0-IN-20261120-112-PERMANENT-INTERACTION-LEDGER.md",
+    "docs/0.0/anchors/PALANG-0.0-OUT-20261120-111-PERMANENT-INTERACTION-LEDGER.md",
+    "docs/0.0/anchors/PALANG-0.0-CURRENT-20261120-122-PERMANENT-INTERACTION-LEDGER.md",
+    "docs/architecture/BEHAVIOR-TRACE/EVT-0287-PERMANENT-INTERACTION-LEDGER-2026-11-20.md",
+    "docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0287-PERMANENT-INTERACTION-LEDGER-2026-11-20.md",
+    "docs/architecture/مدل اولیه AI/معماری اتصال چندمیزبانی و تکامل تحت حاکمیت مالک.md",
+    "docs/architecture/HOST-REGISTRY/README.md",
+    "docs/architecture/HOST-REGISTRY/HOST-REGISTRY-SCHEMA.json",
+    "docs/architecture/HOST-REGISTRY/HOST-REGISTRY.json",
+    "docs/architecture/BEHAVIOR-TRACE/INGESTED-EVENTS/README.md",
+    "scripts/host_adapter.py",
+    "scripts/host_adapter_github_worker.py",
+    "prototype/haif-gpt6-starter/manifest.json",
+    "prototype/haif-gpt6-starter/PERMANENT_INTERACTION_LEDGER_CONTRACT.md",
+    "prototype/haif-gpt6-starter/HOST_REGISTRY_SCHEMA.json",
+    "prototype/haif-gpt6-starter/HOST_REGISTRY_TEMPLATE.json"
   ],
   "live_reference_policy": "Mutable current-state and startup/governance references are included in each export and receive exact SHA-256 plus Git blob SHA-1 observations in the same CI run. This includes RAHM_BOOT and RAHM_ARCHITECTURE because their canonical checkpoint binding must track the current live chain. Stable core remains digest-pinned."
 }
