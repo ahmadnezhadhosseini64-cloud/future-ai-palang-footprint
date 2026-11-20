@@ -68,6 +68,9 @@ jobs:
           errors = list(Draft202012Validator(schema, format_checker=FormatChecker()).iter_errors(registry))
           assert not errors, [e.message for e in errors]
           assert registry["hosts"] == [], "Do not claim a live host without a direct acceptance receipt"
+          import py_compile
+          py_compile.compile("scripts/host_adapter.py", doraise=True)
+          py_compile.compile("scripts/host_adapter_github_worker.py", doraise=True)
           worker = Path("scripts/host_adapter_github_worker.py").read_text(encoding="utf-8")
           assert "BRANCH='host-intake'" in worker
           assert "PALANG_GITHUB_BRANCH" in worker and "BLOCKED:" in worker
