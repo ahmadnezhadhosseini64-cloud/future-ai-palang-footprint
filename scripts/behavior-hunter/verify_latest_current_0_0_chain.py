@@ -109,6 +109,19 @@ def has_any(text: str, patterns: list[str]) -> bool:
     return any(re.search(pattern, text, re.IGNORECASE) for pattern in patterns)
 
 
+def package_identity_consistent(package: dict[str, object]) -> bool:
+    policy = package.get("archive_policy", {})
+    if not isinstance(policy, dict):
+        return False
+    version = package.get("version")
+    return (
+        package.get("stable_id") == "HAIF-GPT6-PORTABLE-STARTER-20261025-004"
+        and isinstance(version, str)
+        and version == policy.get("current_internal_version")
+        and policy.get("canonical_filename") == "haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip"
+    )
+
+
 def main() -> int:
     failures = []
     try:
@@ -233,13 +246,7 @@ def main() -> int:
             "version":package.get("version"),
             "canonical_filename":package.get("archive_policy",{}).get("canonical_filename"),
         }
-        expected_version = package.get("archive_policy",{}).get("current_internal_version")
-        if (
-            identity["stable_id"]!="HAIF-GPT6-PORTABLE-STARTER-20261025-004"
-            or not isinstance(identity["version"],str)
-            or identity["version"]!=expected_version
-            or identity["canonical_filename"]!="haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip"
-        ):
+        if not package_identity_consistent(package):
             failures.append("portable_package_identity_or_version_changed")
         if not any("NEXT-051" in str(x) for x in parents):
             failures.append("package_parent_architecture_missing_NEXT_051")
