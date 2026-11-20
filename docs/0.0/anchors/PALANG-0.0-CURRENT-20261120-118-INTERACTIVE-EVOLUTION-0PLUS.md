@@ -31,3 +31,14 @@ Prepared versions must be evolvable through interaction and instruction. Every a
 ## Next action
 
 Run/read back the repository workflows triggered by this registration. If package conformance succeeds on the new current main, verify the refreshed stable release assets and receipt. If any workflow fails, retain the failure as an open item and do not label the new package verified.
+
+
+## Permanent 0+ binding — clarified living-model rule
+
+- Governing contract: [INTERACTION-DRIVEN-AUTO-PROMOTION-AND-LIVING-EVOLUTION-CONTRACT-2026-11-20-001](../../architecture/مدل اولیه AI/INTERACTION-DRIVEN-AUTO-PROMOTION-AND-LIVING-EVOLUTION-CONTRACT-2026-11-20-001.md).
+- POINT-0/066 is the permanent foundational root of the initial interactive AI model. It remains linked to its parent history and to this checkpoint; all future growth extends this lineage.
+- Verified project outputs entering authorized repository/tool/automation paths are to be evaluated and, after all applicable gates pass, integrated into the living master and relevant source/package layers without requiring another user command.
+- Outputs that fail, conflict, need consent, or lack evidence remain OPEN / QUARANTINED / NOT VERIFIED. No user-approved text is silently rewritten; no sensitive or external side-effecting change is auto-approved.
+- One evolving canonical ZIP, living master and stable release locator are maintained. Working changes, verified candidates and final package remain traceable in this lineage; only exact-source passing builds may update the verified release.
+- This is a governing architecture rule, not proof of always-on background capture, automatic processing of every chat, model-weight training, or independent-host recovery. Those remain separate capabilities requiring implementation and direct evidence.
+- Registration contract file created at commit `45422ef8900aa72d0b4c0b00ee48c7f6b24f38f0`; POINT-0/066 updated at commit `91da54f6ae33cecea8dd318c7d8d7452ba9586eb`. CURRENT-118 read-back and exact-main tests remain pending.
