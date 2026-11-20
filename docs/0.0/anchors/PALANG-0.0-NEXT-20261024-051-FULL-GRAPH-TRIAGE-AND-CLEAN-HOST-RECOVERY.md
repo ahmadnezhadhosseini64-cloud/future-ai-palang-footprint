@@ -817,3 +817,11 @@ The previous blob at this path began with the Integration Queue README title and
 - ZIP v0.3.9: 207402 bytes; SHA-256 `36966dc71f951021a68defe72677a35b58c8fb5b25100b7e59e5d63c90109be2`; 14 files; 24/24 local extracted tests PASS. Paired mother: 629579 bytes; SHA-256 `a6dd51f62f214476f17a40896b14c3e39a3ba4d713247297689f293af02702a9`.
 - Next work is genuine independent clean-host import, reconstruction and raw receipt; then continue unresolved graph triage. Package PASS does not close those gates.
 - NEXT-051 remains OPEN / LIVING / IN PROGRESS; no NEXT-052.
+
+## Current continuation pointer — 2026-11-20
+
+- Current point: [POINT-0/067 (0+)](GPT6-RAHM-USER-POINT-0-20261120-067-CONTINUOUS-TRANSFERABLE-EVOLUTION-0PLUS.md)
+- Current checkpoint: [CURRENT-120](PALANG-0.0-CURRENT-20261120-120-LATEST-TRANSFERABLE-ZIP-AND-LIVING-EVOLUTION.md)
+- Permanent root: [POINT-0/066 (0+)](GPT6-RAHM-USER-POINT-0-20261120-066-INTERACTIVE-EVOLUTION-0PLUS.md)
+- Previous checkpoint: [CURRENT-119](PALANG-0.0-CURRENT-20261120-119-CONTINUOUS-TRANSFERABLE-EVOLUTION.md)
+- The sole queue remains NEXT-051. Do not create a parallel queue.
