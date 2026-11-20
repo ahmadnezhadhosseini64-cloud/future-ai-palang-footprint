@@ -193,12 +193,18 @@ class PortablePackageProtocolTests(unittest.TestCase):
         self.assertLess(chain.index("OUT-094"), chain.index("EVT-0232"))
         self.assertLess(chain.index("EVT-0232"), chain.index("CURRENT-107"))
         self.assertLess(chain.index("CURRENT-107"), chain.index("NEXT-051"))
+        self.assertLess(chain.index("POINT-0/069 (0+ permanent interaction ledger)"), chain.index("IN-112"))
+        self.assertLess(chain.index("IN-112"), chain.index("OUT-111"))
+        self.assertLess(chain.index("OUT-111"), chain.index("EVT-0287"))
+        self.assertLess(chain.index("EVT-0287"), chain.index("CURRENT-122"))
         self.assertEqual(chain.count("NEXT-051"), 1, "only one canonical active NEXT-051 pointer is allowed")
         self.assertGreaterEqual(chain.count("NEXT-051 (historical queue reference)"), 1)
-        expected_current = ["IN-105", "OUT-104", "EVT-0280", "CURRENT-116", "IN-106", "OUT-105", "EVT-0281", "TIME-BINDING-EVT-0281", "CURRENT-117", "POINT-0/066 (0+ — interactive evolution)", "IN-107", "OUT-106", "EVT-0282", "TIME-BINDING-EVT-0282", "CURRENT-118"]
+        expected_current = ["IN-105", "OUT-104", "EVT-0280", "CURRENT-116", "IN-106", "OUT-105", "EVT-0281", "TIME-BINDING-EVT-0281", "CURRENT-117", "POINT-0/066 (0+ — interactive evolution)", "IN-107", "OUT-106", "EVT-0282", "TIME-BINDING-EVT-0282", "CURRENT-118", "POINT-0/067", "CURRENT-120", "POINT-0/068", "CURRENT-121", "POINT-0/069", "IN-112", "OUT-111", "EVT-0287", "TIME-BINDING-EVT-0287", "CURRENT-122"]
         for identifier in expected_current:
             self.assertIn(identifier, chain)
         self.assertIn("LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-CONTRACT.md", chain)
+        self.assertIn("PERMANENT_INTERACTION_LEDGER_CONTRACT.md", manifest["governance_documents"])
+        self.assertIn("HOST_REGISTRY_SCHEMA.json", manifest["governance_documents"])
         self.assertEqual(chain.count("NEXT-051 (sole active queue; current)"), 1)
 
     def test_latest_verified_export_delivery_contract_is_packaged(self):
@@ -300,7 +306,7 @@ class InteractionResponseAnchorProtocolTests(unittest.TestCase):
         self.assertEqual(manifest["archive_policy"]["canonical_filename"], "haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip")
         self.assertIn("actual host integration", protocol.casefold())
         self.assertIn("NOT VERIFIED", protocol)
-        expected_chain = "POINT-0/066 (0+) → IN-107 → OUT-106 → EVT-0282 → CURRENT-118 → NEXT-051"
+        expected_chain = "POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → POINT-0/069 → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122 → NEXT-051"
         for filename in (
             "GPT6_HOST_INSTRUCTIONS.md",
             "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md",
