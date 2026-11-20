@@ -2493,3 +2493,12 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - Run-start main Audit 44688034068 and CPREL harness/evidence 44688034103 / 44688034176 PASS on exact SHA 2ea7e826931a42fb0a5957cdb58b698bb8f30e00. Latest RAHM 44687870952 PASS on prior SHA bd44a799ce6296aede0ee6be64bdf26cd0af3383; exact-main RAHM NOT VERIFIED.
 - CURRENT-065/CURRENT-066 and overlay-manifest lineage OPEN / AMBIGUOUS; no winner selected. Manifest has no winner_selected field; filename CURRENT-065 and package/checkpoint lineage references CURRENT-066. Issues #20/#21 OPEN; NEXT-051 forensic recovery OPEN / NOT RECOVERED; BOART-FOLLOWUP-01 ACTIVE. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
 - No new main root, IN/OUT pair, checkpoint identity, successor queue or automation; NEXT-052 not created.
+
+
+## EVT-0277 — مرجع ثابت معرفی‌نامه و رفتارشناسی کنترل تغییر — 2026-11-20
+- شناسه: `PALANG-CERTIFICATE-INTRO-REFERENCE-ANCHOR-2026-11-20`.
+- فایل رویداد: [EVT-0277](architecture/BEHAVIOR-TRACE/EVT-0277-CERTIFICATE-INTRO-REFERENCE-ANCHOR-2026-11-20.md).
+- شاخه فرزند: [نقطه ۰+ معرفی‌نامه](../گواهی/شروع-جدید-۳۰-آبان-۱۴۰۵/نقطه-۰-مثبت-لنگر-معرفی‌نامه-۲۰۲۶-۱۱-۲۰.md).
+- ورودی مرجع: [CERT-IN-20261120-002](../گواهی/شروع-جدید-۳۰-آبان-۱۴۰۵/رویدادها/CERT-IN-20261120-002.md).
+- قاعده مشاهده‌شده: متن پایه فقط با دستور کاربر تغییر می‌کند؛ نسخه‌های بعدی با مرجع مقایسه می‌شوند؛ هیچ تغییر خودکاری مجاز نیست.
+- وضعیت: ACTIVE / LIVING / OPEN؛ مشاهده رفتاری ثبت شد، تعمیم به معماری مادر نیازمند اعتبارسنجی چندموردی است.
