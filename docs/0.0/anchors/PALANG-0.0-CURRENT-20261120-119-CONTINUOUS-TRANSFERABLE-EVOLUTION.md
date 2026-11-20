@@ -33,3 +33,9 @@ The latest feasible transferable version must be delivered on request. "Latest v
 ## Continuation rule
 
 Continue from this checkpoint through the existing NEXT-051 only. Preserve all previous roots, branches, records and evidence. Do not create a parallel queue or competing ZIP identity. Do not mark a gate closed without its direct evidence.
+
+## Successor — POINT-0/067 and CURRENT-120
+
+This historical checkpoint continues into [POINT-0/067 (0+)](GPT6-RAHM-USER-POINT-0-20261120-067-CONTINUOUS-TRANSFERABLE-EVOLUTION-0PLUS.md) → [IN-110](PALANG-0.0-IN-20261120-110-LATEST-TRANSFERABLE-ZIP-AND-LIVING-EVOLUTION.md) → [OUT-109](PALANG-0.0-OUT-20261120-109-LATEST-TRANSFERABLE-ZIP-AND-LIVING-EVOLUTION.md) → [EVT-0285](../../architecture/BEHAVIOR-TRACE/EVT-0285-LATEST-TRANSFERABLE-ZIP-AND-LIVING-EVOLUTION-2026-11-20.md) → [TIME-BINDING-EVT-0285](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0285-LATEST-TRANSFERABLE-ZIP-AND-LIVING-EVOLUTION-2026-11-20.md) → [CURRENT-120](PALANG-0.0-CURRENT-20261120-120-LATEST-TRANSFERABLE-ZIP-AND-LIVING-EVOLUTION.md) → existing NEXT-051.
+
+The package evidence recorded in CURRENT-119 is superseded by later successful builds when they pass exact-source checks; it remains immutable historical evidence.
