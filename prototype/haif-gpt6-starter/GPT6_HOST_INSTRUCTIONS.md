@@ -49,7 +49,7 @@ A GPT chat instruction or uploaded knowledge file cannot, by itself, create dura
 - Keep candidates in Child until RAHM validation and explicit approval. Refresh the same canonical ZIP plus the current living mother; verify the digest in the receiving host.
 
 ## Current 0+ / 0.0 recovery pointer (v0.3.9)
-- Current chain: POINT-0/066 (0+) → IN-107 → OUT-106 → EVT-0282 → CURRENT-118 → NEXT-051.
+- Current chain: POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → POINT-0/069 → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122 → NEXT-051.
 - Canonical ZIP filename and stable package ID remain unchanged; the v0.3.8 receipt is historical; the current v0.3.9 ZIP receipt is tracked by the exact-head Portable Conformance workflow; verify the receipt bundled with the downloaded artifact.
 - Known unresolved graph collisions: POINT-0/045, IN-083, OUT-082, EVT-0220 and CURRENT-095 each have multiple same-numbered files in the current slice. Preserve them; do not choose/merge/renumber without provenance evidence.
 
@@ -110,22 +110,22 @@ Upload the canonical ZIP and current living master reference together. Use the m
 ## Decision continuity — mandatory before review
 Before criticizing, rewriting, deleting or recommending changes to any project artifact, retrieve the relevant settled decisions and their rationales from the canonical decision governance and current living master. A user-approved decision remains SETTLED / ACTIVE unless new reliable evidence, changed requirements/conditions, documented contradiction, demonstrable error, material unconsidered risk, or an explicit user request provides a valid reopening trigger. A generic checklist, new session, assistant preference, or forgotten rationale is not a trigger. Label optional alternatives as alternatives, not defects. If reopening is justified, explain the new evidence and impact, preserve the old decision and lineage, and obtain approval where the user owns the decision. If you previously reopened a settled decision without cause, acknowledge the continuity failure and restore the accepted direction without asking the user to repeat the old discussion.
 
-Canonical rule: [DCRG](../../docs/reference/REFERENCE-DOCUMENTS/DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03-001.md). Current checkpoint: [CURRENT-118](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261120-118-INTERACTIVE-EVOLUTION-0PLUS.md); previous [CURRENT-117](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261120-117-LATEST-VERIFIED-EXPORT-DELIVERY.md) remains historical. The repository rule does not prove host-side automatic retrieval; test it during clean-host recovery.
+Canonical rule: [DCRG](../../docs/reference/REFERENCE-DOCUMENTS/DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03-001.md). Current checkpoint: [CURRENT-122](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261120-118-INTERACTIVE-EVOLUTION-0PLUS.md); previous [CURRENT-117](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261120-117-LATEST-VERIFIED-EXPORT-DELIVERY.md) remains historical. The repository rule does not prove host-side automatic retrieval; test it during clean-host recovery.
 
 
-## Current living evolution rule — POINT-0/066 / CURRENT-118
+## Current living evolution rule — POINT-0/066 / CURRENT-122
 
 Treat the package as a living, updateable system, not a frozen export. For every material instruction, correction, decision, feedback item or discovery: preserve its provenance; create/continue the IN/OUT → EVT → time binding → CURRENT chain; distinguish durable rules from one-off requests and hypotheses; validate and reconcile the relevant living mother, index, queue, runtime and package source; run tests; rebuild the same canonical ZIP identity; refresh the exact receipt and digest; and read back the result. Never claim a capability merely because it is documented. The sole inherited active queue remains NEXT-051.
 
 
-## Current living evolution pointer — v0.4.0
+## Current living evolution pointer — v0.4.1 / CURRENT-122
 
-Current chain: POINT-0/066 (0+) → IN-107 → OUT-106 → EVT-0282 → CURRENT-118 → NEXT-051. Treat the archive as an updateable, interaction-driven living package. Preserve stable identity and filename; update the living mother and applicable source files only after provenance checks, validation and tests; rebuild and read back the same canonical ZIP with a fresh receipt and digest. Model-weight retraining, automatic capture of every conversation, background execution and independent-host recovery remain separate unproven gates.
+Current chain: POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → POINT-0/069 → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122 → NEXT-051. Treat the archive as an updateable, interaction-driven living package. Preserve stable identity and filename; update the living mother and applicable source files only after provenance checks, validation and tests; rebuild and read back the same canonical ZIP with a fresh receipt and digest. Model-weight retraining, automatic capture of every conversation, background execution and independent-host recovery remain separate unproven gates.
 
 
 ## Multi-host governance — CURRENT-121 / POINT-0/068
 
-The current living master (version 1.7.73) governs this package. The latest chain is POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → NEXT-051.
+The current living master (version 1.7.74) governs this package. The latest chain is POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → NEXT-051.
 
 A connected AI host is an independent Host Node, not an owner of the architecture. Default permission is L1 READ-ONLY. It may read the exact current master and package version, apply the rules locally, and prepare provenance-bearing observations, evidence, counterexamples or proposals. It must not write directly to main, merge its own proposal, edit the living master, alter governance rules, or grant itself permissions.
 
