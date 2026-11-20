@@ -1363,3 +1363,5 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - مشاهده رفتاری: کاربر مرجع را عیناً تثبیت می‌کند، تغییر را فقط با دستور خود می‌پذیرد، و مقایسه نسخه‌های بعدی را نسبت به مرجع می‌خواهد.
 - فرضیه معماری: مرجع تغییرناپذیر با تکامل افزایشی و دروازه تأیید صریح انسان؛ هنوز فقط مشاهده موردی است و به قاعده مادر HAIF ارتقا نیافته است.
 - ریشه سراسری POINT-0/064، CURRENT-115 و NEXT-051 بدون تغییر می‌مانند.
+
+- Time binding: [TIME-BINDING-EVT-0277](./TIME-BINDING-EVT-0277-2026-11-20.md) — actual commit metadata and message-time precision.
