@@ -9,9 +9,9 @@ DB=os.environ.get('PALANG_DB_PATH','palang-events.sqlite3')
 REPO=os.environ.get('PALANG_GITHUB_REPOSITORY','ahmadnezhadhosseini64-cloud/future-ai-palang-footprint')
 TOKEN=os.environ.get('GITHUB_TOKEN','')
 API=os.environ.get('GITHUB_API_URL','https://api.github.com')
-BRANCH=os.environ.get('PALANG_GITHUB_BRANCH','host-intake')
-if BRANCH == 'main':
-    raise SystemExit('BLOCKED: host intake worker is prohibited from writing directly to main; use host-intake and an owner-reviewed pull request.')
+BRANCH='host-intake'
+if os.environ.get('PALANG_GITHUB_BRANCH','host-intake') != BRANCH:
+    raise SystemExit('BLOCKED: host intake worker writes only to the dedicated host-intake branch; owner-reviewed pull request required for promotion.')
 def request(method,url,payload=None):
  if not TOKEN: raise RuntimeError('GITHUB_TOKEN is required; no repository write attempted')
  data=None if payload is None else json.dumps(payload,ensure_ascii=False).encode()
