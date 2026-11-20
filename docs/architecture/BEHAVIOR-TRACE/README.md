@@ -1380,6 +1380,11 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - ریشهٔ سراسری POINT-0/064، CURRENT-115 و NEXT-051 بدون تغییر باقی می‌مانند؛ شاخهٔ گواهی نیز مستقل باقی می‌ماند.
 
 
+## EVT-0281 — Latest verified export and on-demand delivery — 2026-11-20
+- [IN-106](../../0.0/anchors/PALANG-0.0-IN-20261120-106-LATEST-VERIFIED-EXPORT-DELIVERY.md) → [OUT-105](../../0.0/anchors/PALANG-0.0-OUT-20261120-105-LATEST-VERIFIED-EXPORT-DELIVERY.md) → [EVT-0281](./EVT-0281-LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-2026-11-20.md) → [CURRENT-117](../../0.0/anchors/PALANG-0.0-CURRENT-20261120-117-LATEST-VERIFIED-EXPORT-DELIVERY.md) → existing [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Contract: [Latest verified export and on-demand delivery](../../portable/RAHM/LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-CONTRACT-2026-11-20-001.md).
+- Status: ACTIVE / LIVING / OPEN — delivery contract registered; durable latest locator and exact-current-SHA package acceptance remain pending.
+
 ## EVT-0280 — POINT-0/065 (0+) continuity and registration — 2026-11-20
 - [POINT-0/065 (0+)](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261120-065-CONTINUITY-AND-REGISTRATION.md) → [IN-105](../../0.0/anchors/PALANG-0.0-IN-20261120-105-CONTINUITY-AND-REGISTRATION.md) + [OUT-104](../../0.0/anchors/PALANG-0.0-OUT-20261120-104-CONTINUITY-AND-REGISTRATION.md) → [EVT-0280](./EVT-0280-POINT-065-CONTINUITY-AND-REGISTRATION-2026-11-20.md) → [TIME-BINDING-EVT-0280](./TIME-BINDING-EVT-0280-POINT-065-CONTINUITY-AND-REGISTRATION-2026-11-20.md) → [CURRENT-116](../../0.0/anchors/PALANG-0.0-CURRENT-20261120-116-CONTINUITY-AND-REGISTRATION.md) → existing [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - Previous event chain EVT-0278 → EVT-0279 is preserved; certificate child branch remains separate.
