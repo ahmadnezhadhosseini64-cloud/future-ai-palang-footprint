@@ -23,7 +23,7 @@
 ## وضعیت گیت‌ها
 - معماری و قرارداد حاکم: REGISTERED / READ-BACK PENDING FINAL CI
 - اتصال واقعی چند میزبان: NOT IMPLEMENTED / NOT RUN
-- Host Registry و API ورودی: OPEN
+- Host Registry چندمیزبانی و اتصال زندهٔ میزبان: OPEN / NOT IMPLEMENTED؛ durable intake adapter موجود است و آزمون‌های synthetic/authentication/read-back/idempotency/conflict/restart در CI PASS شده‌اند، اما اتصال واقعی میزبان و استقرار worker اثبات نشده است.
 - branch protection واقعی و آزمون مجوز: OPEN / NOT VERIFIED
 - میزبان مستقل پاک: OPEN / NOT RUN
 - بسته canonical: آخرین انتشار باید پس از تغییرات CURRENT-121 از CI تازه خوانده و با digest/receipt تأیید شود.
