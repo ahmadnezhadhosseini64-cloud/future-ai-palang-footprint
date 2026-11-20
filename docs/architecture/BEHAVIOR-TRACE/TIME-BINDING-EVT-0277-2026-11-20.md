@@ -30,3 +30,17 @@ All Git timestamps below were retrieved from GitHub commit metadata after the co
 - The exact message receipt second is unavailable and remains unknown.
 - The timestamp of this time-binding file and the final receipt must be read from their own Git commit metadata after creation.
 - No timestamp is backfilled or inferred from an adjacent event.
+
+
+## 7. Cross-link and finalization commits
+| Artifact | Commit SHA | Git UTC | Asia/Tehran |
+|---|---|---|---|
+| Initial time-binding record | `651da803ea4d2707e2e0262532d7a1e228d87ac4` | 2026-11-20T07:25:28Z | 2026-11-20T10:55:28+03:30 |
+| Point 0+ time/receipt links | `a42af3e68a140717da1a4558d763842dd865f129` | 2026-11-20T07:25:42Z | 2026-11-20T10:55:42+03:30 |
+| EVT-0277 time-binding/receipt links | `1684c75ed376a3133bafbedf142483dcdee0c21a` | 2026-11-20T07:25:46Z | 2026-11-20T10:55:46+03:30 |
+| CERT-OUT receipt/time-binding links | `324df29b8e876d4bb9d42b03eb30066bc27dbea2` | 2026-11-20T07:25:51Z | 2026-11-20T10:55:51+03:30 |
+| Behavior Trace README final pointer | `ba34d9064bfc38347d7f60ea8bd6f4934325649d` | 2026-11-20T07:25:55Z | 2026-11-20T10:55:55+03:30 |
+| Reference Index final pointer | `c5531db8fa561845ea4e80d223a0b81f8d75bca8` | 2026-11-20T07:26:00Z | 2026-11-20T10:56:00+03:30 |
+| Certificate living master final pointer | `34bc72c2cbf0fa4d437a161bcc99010cac22904e` | 2026-11-20T07:26:06Z | 2026-11-20T10:56:06+03:30 |
+
+- The final update commit for this time-binding file is recorded in the receipt after its metadata is read.
