@@ -83,3 +83,13 @@ This project has its own living execution record, legal gates, job-search stages
 - Governing evolution rule: each accepted interaction-derived advance is captured, validated, reconciled into the living reference and applicable package sources, tested, rebuilt into the same canonical ZIP identity, and read back. Stable filename/release locator remain; internal version, contents, mother, manifests and receipts evolve.
 - This point is additive; prior roots, certificate child branch and the single active queue NEXT-051 remain preserved. Model-weight retraining, automatic capture of every conversation, background execution and independent-host recovery are not claimed.
 - Parent source anchor: commit `9ba469281ffda02cbfcccd174ba4495fa89abb74`, UTC `2026-11-20T12:24:19Z` / Tehran `2026-11-20T15:54:19+03:30`. User-message time remains UNKNOWN / UNVERIFIED.
+
+
+## Current governed multi-host interaction ledger — POINT-0/069
+- Living master: version 1.7.74.
+- Current checkpoint: [CURRENT-122](docs/0.0/anchors/PALANG-0.0-CURRENT-20261120-122-PERMANENT-INTERACTION-LEDGER.md).
+- Architecture: permanent IN/OUT event ledger, host registry, quarantine-first intake, RAHM → CHILD → explicit owner approval.
+- Repository intake worker is constrained to `host-intake`; owner-reviewed PR is required before main promotion.
+- GitHub reports main branch currently unprotected; branch protection remains OPEN / NOT CONFIGURED.
+- Package source version: 0.4.1; canonical ZIP name and stable release identity remain unchanged.
+- Real host capture and clean-host recovery remain OPEN until direct host receipts exist.
