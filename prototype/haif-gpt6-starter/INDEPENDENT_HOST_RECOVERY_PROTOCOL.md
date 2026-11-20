@@ -1,8 +1,8 @@
 # Independent-host recovery proof protocol
 
-Package version: 0.3.9
+Package version: 0.4.0
 Project: Future AI / Palang Footprint
-Canonical chain: POINT-0/065 → IN-105 → OUT-104 → EVT-0280 → CURRENT-116 → IN-106 → OUT-105 → EVT-0281 → CURRENT-117 → NEXT-051
+Canonical chain: POINT-0/066 (0+) → IN-107 → OUT-106 → EVT-0282 → CURRENT-118 → NEXT-051; prior POINT-0/065 → CURRENT-117 chain is preserved as parent history
 Preserved prior chain: POINT-0/058 (0+ marker on canonical root 0) → IN-096 → OUT-095 → EVT-0233 → CURRENT-108 → NEXT-051; historical point retained, not current pointer.
 
 ## Purpose
@@ -54,3 +54,8 @@ Follow `HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md` for the controlled host →
 Canonical current chain: POINT-0/065 → IN-105 → OUT-104 → EVT-0280 → CURRENT-116 → IN-106 → OUT-105 → EVT-0281 → CURRENT-117 → NEXT-051. Canonical governance: [DCRG](../../docs/reference/REFERENCE-DOCUMENTS/DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03-001.md).
 
 During clean-host import, the receiving host must retrieve settled decisions with rationale, scope, constraints and reopening triggers. Test at least one decision with no new trigger (must remain settled) and one with valid new evidence (may be reopened only with an explicit evidence explanation and preserved prior state). Record the host's raw output and independent read-back. This test is NOT RUN until a separate host supplies a receipt; repository documentation alone is not a pass.
+
+
+## Interactive evolution acceptance — package v0.4.0
+
+The receiving host must treat the archive as a living, updateable package, not a frozen export. It must preserve the canonical ZIP filename and stable package identity while accepting only provenance-backed, validated changes to the living mother, architecture, runtime and package sources. Each accepted change requires updated tests, a fresh exact-byte receipt and SHA-256, and repository read-back. This contract does not imply automatic capture of every conversation, background execution, model-weight retraining or successful host recovery.
