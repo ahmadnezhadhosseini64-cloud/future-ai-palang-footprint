@@ -116,7 +116,7 @@ This project has its own living execution record, legal gates, job-search stages
 
 - زنجیره: POINT-0/071 → POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051.
 - قرارداد: [اتصال خواندنی میزبان جدید](prototype/haif-gpt6-starter/OWNER-CONFIRMATION-AND-GITHUB-AUTHORIZATION-CONTRACT.md).
-- هدف فعلی: میزبان جدید با GitHub connector رسمی همان محیط، دسترسی READ-ONLY به مخزن canonical را برقرار کند؛ اگر متصل نیست، کاربر را به رابط رسمی اتصال/مجوزدهی هدایت کند.
+- هدف فعلی: چون مخزن فعلاً PUBLIC است، میزبان جدید بدون ورود و بدون connector اجباری از نشانی رسمی GitHub دسترسی READ-ONLY بگیرد؛ connector فقط اختیاری است. اگر دریافت عمومی مسدود شد یا مخزن PRIVATE شد، مسیر رسمی OAuth/connector مطرح می‌شود.
 - پس از اتصال، main HEAD، سند مادر، آخرین ZIP و receipt بازیابی و تطبیق شوند. هیچ رمز، PAT یا Secret در چت درخواست نشود.
 - نوشتن مخزن در این فاز خارج از دامنه است. عبارت «احمد نژادحسینی»، password/owner-confirmation gate و احراز هویت تکمیلی برای فاز بعد OPEN / DEFERRED می‌مانند.
 - پیشنهاد در شاخه host-intake-owner-confirmation-github-auth-20261121 است؛ main هنوز تغییر نکرده، ZIP canonical هنوز بازسازی/تأیید نشده و آزمون میزبان مستقل NOT RUN است. NEXT-051 تنها صف فعال باقی می‌ماند.
