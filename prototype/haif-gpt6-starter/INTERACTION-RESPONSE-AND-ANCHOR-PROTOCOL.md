@@ -78,3 +78,8 @@ Internal version: 0.4.5. Living master: 1.7.81. Current chain: POINT-0/074 → I
 ## Current package — 0.4.5 / POINT-0/074 (0++ marker)
 
 Internal package version: 0.4.5. Living master: 1.7.81. Current chain: POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051. The 0++ marker belongs to the single canonical Point 0 root; the next target is completion of the existing 0.0 continuation. NEXT-051 remains the sole active queue. The canonical package ID and ZIP filename remain unchanged. Exact-head tests, fresh build receipt, SHA-256, ZIP CRC/inventory/read-back and paired-master byte match are required before PACKAGE_VERIFIED. Independent-host acceptance, OAuth, live capture, durable workspace and restart persistence remain OPEN / NOT VERIFIED until direct receipts exist.
+
+
+## Current package — 0.4.6 / POINT-0/077 (0++)
+
+Internal package version: 0.4.6. Living master: 1.7.86. Current chain: POINT-0/077 (0++) → CURRENT-130 → IN-121 → OUT-120 → EVT-0297 → TIME-BINDING-EVT-0297 → CURRENT-131 → NEXT-051. Stable package ID and canonical ZIP filename remain unchanged. Package verification, OAuth, independent host import and restart persistence remain distinct acceptance gates.
