@@ -4,7 +4,7 @@
 - Living mother target: 1.7.85.
 - Universal entry instruction: [UNIVERSAL_AI_HOST_ENTRY_FA.md](../prototype/universal-host/UNIVERSAL_AI_HOST_ENTRY_FA.md), initial runnable specification 0.1.0; model/platform-neutral.
 - Latest Runnable contains only capabilities implemented and evidenced on the exact source; unfinished/host-dependent capabilities remain OPEN/Development and are promoted only after tests, receipt and read-back. Preserve all previous snapshots and failures.
-- ZIP canonical identity/name unchanged. PR #68 merged; manifest source advances to 0.4.6 and universal host entry is added to the starter inventory in the follow-up package PR. Exact-main build, extracted tests, SHA-256, receipt and release read-back remain pending; prior ZIP digest must not be reused as current.
+- ZIP canonical identity/name unchanged. PR #68 merged; manifest source advances to 0.4.6 and universal host entry is added to the starter inventory in the follow-up package PR. Latest package receipt: internal 0.4.6, workflow 44918425190, 19 files, 255468 bytes, 24/24 extracted tests PASS, ZIP SHA-256 b9f56a360351d5ab16f07656018e576c2398a110db540138810e01358f8934fc. Stable release tag haif-latest-verified was refreshed; external host acceptance remains separate.
 - Destination OAuth, durable workspace, clean-host recovery/restart and HOST-RECOVERED remain OPEN / NOT RUN until direct destination evidence.
 - NEXT-051 remains the sole active queue; no parallel root or queue.
 
