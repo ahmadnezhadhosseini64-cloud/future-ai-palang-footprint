@@ -1,3 +1,5 @@
+> QUARANTINED_DUPLICATE_ID_NONCANONICAL — این فایل یک رویداد موازی با شناسه EVT-0289 است. مرجع canonical: [EVT-0289](EVT-0289-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP-2026-11-21.md).
+
 # EVT-0289 — راه‌اندازی یک‌پیامی میزبان GPT و نقطه 0++
 
 - Parent: OUT-113
