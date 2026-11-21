@@ -153,3 +153,18 @@ All host-originated data is untrusted and enters QUARANTINE. The permanent event
 - GitHub در زمان بررسی `main.protected=false` گزارش کرد. ابزار در دسترس، تغییر branch protection/rulesets را پشتیبانی نمی‌کند؛ بنابراین محافظت واقعی شاخه هنوز NOT CONFIGURED / OPEN است. محدودیت کد worker جایگزین branch protection یا credential کم‌اختیار نیست.
 - قرارداد JSON Schema دفتر تعامل به‌روزرسانی شد تا input_id، output_id، host_id، host_session_id، master_commit_sha، master_version، checkpoint_id، adapter_version، payload_sha256، privacy_class، redaction_status، capture_status و receipt_ref الزامی باشند.
 - این به‌روزرسانی ساختار و گیت‌ها را محکم‌تر می‌کند؛ اتصال زندهٔ میزبان، استقرار worker و بازیابی مستقل همچنان نیازمند رسید end-to-end واقعی‌اند.
+
+
+---
+
+## Current startup authority — POINT-0/071 / package 0.4.2
+
+For a new GPT host, send the complete `ONE_MESSAGE_HOST_BOOTSTRAP_FA.md` as one message. It orchestrates read-only connection to only the canonical repository, exact latest-release/pointer/receipt checks, paired master+ZIP recovery, extracted tests and creation of a private workspace for this host. If GitHub authorization is missing, initiate the official connector authorization for this repository only; never request pasted tokens. Resume after the owner grants access.
+
+The host workspace belongs in the destination runtime's private workspace/sandbox, not merely a folder inside the shared repository. A folder is not a security boundary. Use read-only repository access; never grant the host direct write access to main, MASTER, releases, workflows or registry. Do not mark the host ACTIVE until real identity, workspace and acceptance evidence exist.
+
+Canonical root identity remains point 0. `0+` and `0++` are only markers on that same root; `0.0` is a parent-linked continuation. Preserve the sole queue `NEXT-051`. Current chain: POINT-0/070 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051.
+
+Every real project interaction must be captured as a durable IN/OUT pair or an explicit failure/no-response gap only when a real authorized producer/adapter is connected and read-back succeeds. If not, state NOT_CAPTURED/NOT_CONNECTED. Interaction capture is not knowledge promotion; only RAHM-validated CHILD candidates with explicit owner approval may update MASTER and the same canonical ZIP.
+
+Current status before destination-host execution: one-message prompt source registered; package rebuild and release refresh pending CI; actual target-host connection, private workspace provisioning, negative isolation tests and clean-host recovery NOT RUN. Resolve status from current repository evidence, never from this historical paragraph alone.

@@ -103,3 +103,10 @@ This project has its own living execution record, legal gates, job-search stages
 - Current continuation: POINT-0/070 → IN-113 → OUT-112 → EVT-0288 → TIME-BINDING-EVT-0288 → CURRENT-123 → NEXT-051.
 - No external host is provisioned or ACTIVE yet. Folder separation is not a security boundary; direct host write access is prohibited until a broker, least-privilege credentials, path allowlist, branch protections and negative isolation tests are proven.
 - The same canonical ZIP identity and filename must be rebuilt from the latest accepted source after successful validation; no new parallel ZIP identity is created.
+
+
+## راه‌اندازی یک‌پیامی میزبان GPT — POINT-0/071
+
+پیام واحد آماده ارسال: [ONE_MESSAGE_HOST_BOOTSTRAP_FA.md](prototype/haif-gpt6-starter/ONE_MESSAGE_HOST_BOOTSTRAP_FA.md). این پیام اتصال خواندنی فقط به مخزن رسمی، بازیابی آخرین سند مادر و ZIP، آزمون بسته و ایجاد workspace خصوصی همان میزبان را orchestrate می‌کند. مجوز GitHub و قابلیت runtime باید در مقصد واقعاً تأیید شوند؛ پیام به‌تنهایی مجوز یا sandbox ایجاد نمی‌کند. 0++ نشانگر روی همان ریشه canonical صفر است، نه ریشه مستقل.
+
+زنجیره: POINT-0/070 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051.
