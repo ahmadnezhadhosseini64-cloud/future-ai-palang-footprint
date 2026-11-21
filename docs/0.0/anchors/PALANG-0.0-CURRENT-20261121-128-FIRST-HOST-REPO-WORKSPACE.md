@@ -8,7 +8,8 @@
 - Event/time: EVT-0294 → TIME-BINDING-EVT-0294
 - Sole next queue: NEXT-051
 - Main base SHA observed: e267c3f6f9254ef06cef38d2a5b8209a0756e5cd
-- Working branch: haif/point-0-075-first-host-repo-workspace
+- Working branch: haif/point-0-075-first-host-repo-workspace (merged via PR #57)
+- Main merge commit: e8399c76efe45188ea1574e7ddebd96286da3233
 
 ## Three owner tasks
 1. Mark this interaction and connect it to the single POINT-0 lineage — recorded in this chain.
@@ -29,6 +30,8 @@
 - New host test execution: OPEN / NOT RUN.
 - Package rebuild/exact-HEAD receipt: OPEN / NOT VERIFIED.
 - 0.0 graph and NEXT-051 remediation: OPEN / LIVING / IN PROGRESS.
-- Overall: HANDOFF_PREPARED / FIRST_HOST_NOT_YET_ACCEPTED.
+- PR #57: MERGED; main read-back: PASS.
+- CI/workflow runs observed for this PR head: none returned; automated tests: NOT RUN / NOT VERIFIED.
+- Overall: HANDOFF_RECORDED / FIRST_HOST_NOT_YET_ACCEPTED.
 
 No new root, parallel queue, fabricated timestamp, or inferred PASS is introduced.
