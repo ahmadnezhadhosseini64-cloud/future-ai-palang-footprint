@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "HAIF Host Registry",
+  "title": "HAIF Owner-Controlled Host Registry",
   "type": "object",
   "required": [
     "schema_version",
@@ -10,7 +10,7 @@
   ],
   "properties": {
     "schema_version": {
-      "const": "1.0.0"
+      "const": "1.1.0"
     },
     "owner_authority": {
       "type": "string",
@@ -27,8 +27,10 @@
       "type": "array",
       "items": {
         "type": "object",
+        "additionalProperties": false,
         "required": [
           "host_id",
+          "workspace_id",
           "host_type",
           "model_version",
           "adapter_version",
@@ -36,12 +38,29 @@
           "status",
           "registered_at_utc",
           "master_version_seen",
-          "master_commit_seen"
+          "master_commit_seen",
+          "private_repository",
+          "private_repository_visibility",
+          "master_access",
+          "master_write_access",
+          "rahm_access",
+          "host_direct_write_access",
+          "broker_write_access",
+          "connector_read_access",
+          "monitoring_mode",
+          "owner_approval_ref",
+          "acceptance_receipt_ref",
+          "owner_id_issuer",
+          "host_id_issue_receipt_ref"
         ],
         "properties": {
           "host_id": {
             "type": "string",
-            "pattern": "^[A-Z0-9][A-Z0-9._-]{2,127}$"
+            "pattern": "^HAIF-HOST-[0-9]{8}-[0-9]{3}$"
+          },
+          "workspace_id": {
+            "type": "string",
+            "pattern": "^HAIF-WORKSPACE-[0-9]{8}-[0-9]{3}$"
           },
           "host_type": {
             "type": "string",
@@ -58,10 +77,10 @@
           "permission_scope": {
             "enum": [
               "L0_OFFLINE",
-              "L1_READ_ONLY",
-              "L2_PROPOSAL_ONLY",
-              "L3_TEST_CONTRIBUTOR",
-              "L4_OWNER_APPROVED_MAINTAINER"
+              "L1_MASTER_PUBLIC_READ_ONLY",
+              "L2_HOST_PRIVATE_WORKSPACE_ONLY",
+              "L3_OWNER_EXPORT_PROPOSAL_ONLY",
+              "L4_OWNER_BROKERED_PRIVATE_HOST_REPO"
             ]
           },
           "status": {
@@ -88,11 +107,63 @@
             "format": "date-time"
           },
           "master_version_seen": {
-            "type": "string"
+            "type": [
+              "string",
+              "null"
+            ]
           },
           "master_commit_seen": {
-            "type": "string",
+            "type": [
+              "string",
+              "null"
+            ],
             "pattern": "^[0-9a-f]{40}$"
+          },
+          "private_repository": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^ahmadnezhadhosseini64-cloud/haif-host-[A-Za-z0-9-]+$"
+          },
+          "private_repository_visibility": {
+            "enum": [
+              "NOT_CREATED",
+              "PRIVATE"
+            ]
+          },
+          "master_access": {
+            "const": "PUBLIC_READ_ONLY"
+          },
+          "master_write_access": {
+            "const": false
+          },
+          "rahm_access": {
+            "const": "NONE"
+          },
+          "host_direct_write_access": {
+            "const": false
+          },
+          "broker_write_access": {
+            "enum": [
+              "NOT_CONFIGURED",
+              "OWNER_BROKER_ONLY"
+            ]
+          },
+          "connector_read_access": {
+            "enum": [
+              "NOT_TESTED",
+              "NOT_GRANTED",
+              "VERIFIED"
+            ]
+          },
+          "monitoring_mode": {
+            "enum": [
+              "NOT_TESTED",
+              "NOT_ACCESSIBLE",
+              "OWNER_EXPORT_SNAPSHOT",
+              "LIVE_READ_VERIFIED"
+            ]
           },
           "owner_approval_ref": {
             "type": [
@@ -105,9 +176,37 @@
               "string",
               "null"
             ],
-            "description": "Secret-manager reference only; never a token or secret."
+            "description": "Owner secret-manager pointer only; never a token or secret, and never a host-held master credential."
           },
           "acceptance_receipt_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "host_id_issue_receipt_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "owner_id_issuer": {
+            "const": "CHATGPT_CONTROL_PLANE_ON_OWNER_COMMAND"
+          },
+          "owner_export_receipt_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "last_export_at_utc": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date-time"
+          },
+          "workspace_isolation_ref": {
             "type": [
               "string",
               "null"
@@ -119,10 +218,9 @@
               "null"
             ]
           }
-        },
-        "additionalProperties": false
+        }
       }
-    }
-  },
-  "additionalProperties": false
+    },
+    "additionalProperties": false
+  }
 }
