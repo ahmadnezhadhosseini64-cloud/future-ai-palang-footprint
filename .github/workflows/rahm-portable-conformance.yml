@@ -196,6 +196,7 @@ jobs:
               "PERMANENT_INTERACTION_LEDGER_CONTRACT.md",
               "HOST_REGISTRY_SCHEMA.json",
               "HOST_REGISTRY_TEMPLATE.json",
+              "UNIVERSAL_AI_HOST_ENTRY_FA.md",
               "bootstrap_0plus.py",
               "engine.py",
               "state.schema.json",
@@ -227,6 +228,8 @@ jobs:
                   raise SystemExit("INDEPENDENT_HOST_RECOVERY_PROTOCOL_MISSING")
               if "FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST.md" not in names:
                   raise SystemExit("FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST_MISSING")
+              if "UNIVERSAL_AI_HOST_ENTRY_FA.md" not in names:
+                  raise SystemExit("UNIVERSAL_AI_HOST_ENTRY_MISSING")
               if "HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md" not in names:
                   raise SystemExit("HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT_MISSING")
               for required_governance_file in ("PERMANENT_INTERACTION_LEDGER_CONTRACT.md", "HOST_REGISTRY_SCHEMA.json", "HOST_REGISTRY_TEMPLATE.json"):

@@ -1,6 +1,6 @@
 # CURRENT-131 — نسخهٔ اولیهٔ شدنی، عمومی و قابل‌بازیابی میزبان
 
-- Status: ACTIVE / LIVING / REPOSITORY-INTEGRATION-PENDING
+- Status: ACTIVE / LIVING / REPOSITORY-INTEGRATED / MAIN-READBACK-VERIFIED
 - Parent: CURRENT-130
 - Point: POINT-0/078 (۰++)
 - Input/output: IN-121 → OUT-120
@@ -30,10 +30,34 @@ POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 
 
 ## Acceptance
 - Owner intent: CONFIRMED.
-- Source documents: prepared on a dedicated branch; main integration pending.
-- Canonical ZIP exact-current-main rebuild: OPEN / NOT RUN.
+- Source documents: PR #68 merged; main read-back and link checks pending final verification.
+- Canonical ZIP internal version 0.4.6 source update: prepared in follow-up PR; exact-main build/receipt pending.
 - Clean-host extraction and independent recovery: OPEN / NOT RUN.
 - Destination OAuth and persistent workspace: OPEN / NOT RUN.
 - HOST-RECOVERED: NOT CLAIMED.
 
 NEXT-051 تنها صف اجرایی است. هیچ نقطه یا سابقهٔ قبلی حذف نمی‌شود.
+
+
+## Canonical recovery link matrix — POINT-0/078
+
+- Point: [POINT-0/078](GPT6-RAHM-USER-POINT-0-20261121-078-UNIVERSAL-HOST-0PLUSPLUS.md)
+- Input: [IN-121](PALANG-0.0-IN-20261121-121-UNIVERSAL-HOST-INITIAL-RUNNABLE.md)
+- Output: [OUT-120](PALANG-0.0-OUT-20261121-120-UNIVERSAL-HOST-INITIAL-RUNNABLE.md)
+- Event: [EVT-0298](../../architecture/BEHAVIOR-TRACE/EVT-0298-UNIVERSAL-HOST-INITIAL-RUNNABLE-2026-11-21.md)
+- Sole next: [NEXT-051](PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
+- Mirror event: [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md)
+- Mirror time binding: [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md)
+
+
+## Preserved open gates and unresolved historical pointer
+
+- Full state recovery / reconstruct independently from IN and OUT: OPEN / NOT RUN.
+- Clean host import / clean interactive AI-host session: OPEN / NOT RUN.
+- Second-host import / second-host acceptance: OPEN / NOT RUN.
+- Restart persistence / restart/new-session recovery: OPEN / NOT RUN.
+- Automatic live message capture / idle/background capture: OPEN / NOT PROVEN.
+- Graph/identity/parent/time triage: OPEN; duplicate IDs and ambiguous parents remain under source-backed review.
+- CURRENT-065/CURRENT-066 pointer conflict: OPEN; no winner selected. Preserve both historical records until source adjudication is completed.
+
+- Issue #20 and Issue #21: OPEN / NOT CLOSED; preserve their historical evidence and continue through the existing NEXT-051 triage gates.

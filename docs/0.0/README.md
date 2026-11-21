@@ -2179,3 +2179,10 @@ The canonical chain is [POINT-0/032](./anchors/GPT6-RAHM-USER-POINT-0-20261026-0
 [POINT-0/074](anchors/GPT6-RAHM-USER-POINT-0-20261121-074-0PLUSPLUS-TO-0-0-COMPLETION.md) → [IN-117](anchors/PALANG-0.0-IN-20261121-117-0PLUSPLUS-TO-0-0-COMPLETION.md) → [OUT-116](anchors/PALANG-0.0-OUT-20261121-116-0PLUSPLUS-TO-0-0-COMPLETION.md) → [EVT-0293](../architecture/BEHAVIOR-TRACE/EVT-0293-0PLUSPLUS-TO-0-0-COMPLETION-2026-11-21.md) → [TIME-BINDING-EVT-0293](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0293-0PLUSPLUS-TO-0-0-COMPLETION-2026-11-21.md) → [CURRENT-127](anchors/PALANG-0.0-CURRENT-20261121-127-0PLUSPLUS-TO-0-0-COMPLETION.md) → [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 
 0++ is a marker on the single canonical POINT-0 root. The next 0.0 objective is the completion of NEXT-051; no parallel queue is created. Current package source v0.4.5 / living master 1.7.81 requires exact-HEAD audit, conformance and canonical ZIP receipt before release acceptance.
+
+
+## تازه‌ترین زنجیره — POINT-0/078 → CURRENT-131 → NEXT-051
+
+[POINT-0/078](anchors/GPT6-RAHM-USER-POINT-0-20261121-078-UNIVERSAL-HOST-0PLUSPLUS.md) → [IN-121](anchors/PALANG-0.0-IN-20261121-121-UNIVERSAL-HOST-INITIAL-RUNNABLE.md) → [OUT-120](anchors/PALANG-0.0-OUT-20261121-120-UNIVERSAL-HOST-INITIAL-RUNNABLE.md) → [EVT-0298](../architecture/BEHAVIOR-TRACE/EVT-0298-UNIVERSAL-HOST-INITIAL-RUNNABLE-2026-11-21.md) → [TIME-BINDING-EVT-0298](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0298-UNIVERSAL-HOST-INITIAL-RUNNABLE-2026-11-21.md) → [CURRENT-131](anchors/PALANG-0.0-CURRENT-20261121-131-UNIVERSAL-HOST-INITIAL-RUNNABLE.md) → [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+
+این زنجیره ادامهٔ POINT-0/077 و ریشهٔ یگانهٔ canonical POINT-0 است؛ هیچ ریشه یا صف موازی ایجاد نشده است. سند مادر 1.7.85 و منبع بستهٔ قابل‌حمل 0.4.6 هستند. بستهٔ canonical پس از ادغام باید روی exact main HEAD بازسازی، استخراج و آزموده شود و receipt تازه بگیرد. OAuth مقصد، workspace پایدار، clean-host recovery و restart acceptance همچنان OPEN / NOT RUN هستند.

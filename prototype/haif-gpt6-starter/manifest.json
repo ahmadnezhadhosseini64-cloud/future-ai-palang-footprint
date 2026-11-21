@@ -2,8 +2,8 @@
   "package_schema": "haif-gpt6-starter/0.1",
   "stable_id": "HAIF-GPT6-PORTABLE-STARTER-20261025-004",
   "production_id": "HAIF-G6PS-20261025-004",
-  "version": "0.4.5",
-  "supersedes": "0.4.4",
+  "version": "0.4.6",
+  "supersedes": "0.4.5",
   "project": "Future AI / Palang Footprint",
   "canonical_repository": "https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint",
   "parent_architecture": [
@@ -169,7 +169,22 @@
     "EVT-0293",
     "TIME-BINDING-EVT-0293",
     "CURRENT-127",
-    "NEXT-051 (sole active queue; 0.0 completion target)"
+    "NEXT-051 (sole active queue; 0.0 completion target)",
+    "POINT-0/077 (0++ marker on canonical root 0)",
+    "IN-120",
+    "OUT-119",
+    "EVT-0296",
+    "TIME-BINDING-EVT-0296",
+    "CURRENT-130",
+    "EVT-0297 first-run bootstrap compatibility repair",
+    "TIME-BINDING-EVT-0297",
+    "POINT-0/078 (0++ marker on canonical root 0)",
+    "IN-121",
+    "OUT-120",
+    "EVT-0298",
+    "TIME-BINDING-EVT-0298",
+    "CURRENT-131",
+    "NEXT-051 (sole active queue; 0.0 recovery and universal host onboarding)"
   ],
   "entrypoint": "engine.py",
   "host_instructions": "GPT6_HOST_INSTRUCTIONS.md",
@@ -214,7 +229,11 @@
     "one-message onboarding uses only the official future-ai-palang-footprint repository; never requests pasted credentials or grants direct main/master write access",
     "host workspace must be a private runtime/sandbox boundary, not merely a folder in a shared repository",
     "0++ is a readiness/highlight marker on canonical root 0, not a new point or root; 0+ remains the same root marker and 0.0 remains a parent-linked continuation",
-    "single-message GPT-6 host bootstrap with official GitHub connector, latest package/master recovery, private workspace provisioning where supported, and acceptance receipt"
+    "single-message GPT-6 host bootstrap with official GitHub connector, latest package/master recovery, private workspace provisioning where supported, and acceptance receipt",
+    "model- and platform-neutral universal AI-host entry instruction",
+    "safe ZIP extraction and recovery sequence with path traversal checks, exact SHA-256 receipt, inventory, CRC and byte-match verification",
+    "Latest Runnable versus Development separation with evidence-gated capability promotion and immutable historical preservation",
+    "seven ordered 0.0 stages from source discovery through clean-host recovery and controlled growth"
   ],
   "not_proven": [
     "native GPT plugin execution",
@@ -254,8 +273,8 @@
     "update_mode": "REBUILD_IN_PLACE_SAME_PACKAGE_IDENTITY",
     "do_not_publish_separate_version_named_zip": true,
     "historical_v0_3_0_digest_is_not_current": true,
-    "current_internal_version": "0.4.5",
-    "supersedes": "0.4.4",
+    "current_internal_version": "0.4.6",
+    "supersedes": "0.4.5",
     "latest_delivery_contract": "LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-CONTRACT.md"
   },
   "host_acceptance_checklist": "FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST.md",
@@ -276,7 +295,8 @@
   "one_message_host_bootstrap": "ONE_MESSAGE_HOST_BOOTSTRAP_FA.md",
   "host_bootstrap_message": "ONE_MESSAGE_HOST_BOOTSTRAP_FA.md",
   "independent_host_bootstrap": "ONE_MESSAGE_HOST_BOOTSTRAP_FA.md",
-  "current_continuation_chain": "POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051",
-  "current_living_master_version": "1.7.81",
-  "current_internal_version": "0.4.5"
+  "current_continuation_chain": "POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → NEXT-051",
+  "current_living_master_version": "1.7.85",
+  "current_internal_version": "0.4.6",
+  "universal_host_entry": "UNIVERSAL_AI_HOST_ENTRY_FA.md"
 }

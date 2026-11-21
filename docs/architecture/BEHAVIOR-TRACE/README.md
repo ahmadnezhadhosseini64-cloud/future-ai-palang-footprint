@@ -1,7 +1,8 @@
-## Latest registered event — EVT-0293 / POINT-0/074 (0++)
+## Latest registered event — EVT-0298 / POINT-0/078 (0++)
 
-- Chain: POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051.
-- Current objective: complete the existing 0.0 work through NEXT-051; no parallel queue.
+- Chain: POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → NEXT-051.
+- Registration commit time: 2026-11-21T15:02:52Z / 2026-11-21T18:32:52+03:30; owner-message time UNKNOWN / UNVERIFIED.
+- Universal host entry and initial runnable/development split are registered; exact-main package build and external host acceptance remain OPEN.
 - Previous points and events remain historical and append-only.
 
 # نمایهٔ دفتر ردیابی رفتار تعامل
