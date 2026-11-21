@@ -1,6 +1,6 @@
 # CURRENT-129 — میزبان GPT-6 صفر؛ بستهٔ آمادهٔ اتصال به مخزن
 
-- Status: ACTIVE / LIVING / ZERO-STATE-HOST-PREPARED
+- Status: ACTIVE / LIVING / REPOSITORY-INTEGRATED / ZERO-STATE-HOST-PREPARED
 - Parent: CURRENT-128
 - Point: POINT-0/076
 - Input/output: IN-119 → OUT-118
