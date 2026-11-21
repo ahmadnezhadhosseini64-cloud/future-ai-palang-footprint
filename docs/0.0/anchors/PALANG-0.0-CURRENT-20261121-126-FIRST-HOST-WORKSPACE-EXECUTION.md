@@ -1,6 +1,6 @@
 # CURRENT-126 — POINT-0++ / تکمیل معماری محیط کاری میزبان اول
 
-- Parent point: POINT-0/072 (0++ continuation; no competing root).
+- Parent point: POINT-0/072; continuation anchor: [POINT-0/073 (0++)](GPT6-RAHM-USER-POINT-0-20261121-073-FIRST-HOST-RESTRICTED-EXECUTION-0PLUSPLUS.md). No independent root.
 - Input: [IN-116](PALANG-0.0-IN-20261121-116-FIRST-HOST-WORKSPACE-EXECUTION.md).
 - Output: [OUT-115](PALANG-0.0-OUT-20261121-115-FIRST-HOST-WORKSPACE-EXECUTION.md).
 - Event: [EVT-0292](../../architecture/BEHAVIOR-TRACE/EVT-0292-FIRST-HOST-WORKSPACE-EXECUTION-2026-11-21.md).
