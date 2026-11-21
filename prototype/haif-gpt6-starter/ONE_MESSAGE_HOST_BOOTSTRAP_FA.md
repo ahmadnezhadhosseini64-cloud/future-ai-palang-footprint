@@ -44,7 +44,7 @@ Snapshot سند مادر و ZIP باید READ-ONLY و به commit و digest دق
 - نقطه صفر تنها ریشهٔ canonical است.
 - 0+ و 0++ فقط نشانگر برجسته‌سازی/تولید/آمادگی روی همان ریشه‌اند؛ نقطه یا ریشه مستقل نیستند.
 - 0.0 ادامهٔ والددار همان ریشه است.
-- زنجیرهٔ فعلی را از آخرین اسناد IN/OUT/EVT/TIME-BINDING/CURRENT بخوان؛ زنجیرهٔ جاری این بسته POINT-0/073 → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051 است. زنجیرهٔ قبلی POINT-0/071 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 حفظ می‌شود.
+- زنجیرهٔ فعلی را از آخرین اسناد IN/OUT/EVT/TIME-BINDING/CURRENT بخوان؛ زنجیرهٔ جاری این بسته POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051 است. زنجیرهٔ قبلی POINT-0/071 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 حفظ می‌شود.
 - NEXT-051 صف اجرایی یگانه است؛ صف موازی نساز.
 - سند مادر و راهنماهای داخل ZIP را بخوان و وضعیت گیت‌های باز را حفظ کن.
 
@@ -72,14 +72,14 @@ Snapshot سند مادر و ZIP باید READ-ONLY و به commit و digest دق
 
 ## ادامهٔ جاری ثبت‌شده — POINT-0/072
 
-زنجیرهٔ canonical جاری: POINT-0/073 → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051. سند مادر جاری 1.7.80 است. نقطهٔ 0/073 ادامهٔ همان ریشهٔ POINT-0 است؛ ریشه یا صف موازی نساز. بستهٔ دریافت‌شده باید با latest-verified-export و رسید SHA-256 دقیقاً تطبیق داده شود.
+زنجیرهٔ canonical جاری: POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051. سند مادر جاری 1.7.80 است. نقطهٔ 0/073 ادامهٔ همان ریشهٔ POINT-0 است؛ ریشه یا صف موازی نساز. بستهٔ دریافت‌شده باید با latest-verified-export و رسید SHA-256 دقیقاً تطبیق داده شود.
 
 EVT-0290 remains reserved for the earlier mirror-only record. The current user-authorized continuation is EVT-0292.
 
 
 ## آخرین ادامهٔ معماری — POINT-0/073
 
-زنجیرهٔ جاری: POINT-0/073 → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051. سند مادر 1.7.80 و بستهٔ داخلی هدف 0.4.5 است. فقط رسید exact-head و artifact قابل‌بازخوانی می‌تواند بسته را تأیید کند؛ این پیام به‌تنهایی مجوز OAuth، workspace پایدار یا پذیرش میزبان مستقل ایجاد نمی‌کند.
+زنجیرهٔ جاری: POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051. سند مادر 1.7.80 و بستهٔ داخلی هدف 0.4.5 است. فقط رسید exact-head و artifact قابل‌بازخوانی می‌تواند بسته را تأیید کند؛ این پیام به‌تنهایی مجوز OAuth، workspace پایدار یا پذیرش میزبان مستقل ایجاد نمی‌کند.
 
 
 ## Current package — 0.4.5 / POINT-0/074 (0++ marker)
