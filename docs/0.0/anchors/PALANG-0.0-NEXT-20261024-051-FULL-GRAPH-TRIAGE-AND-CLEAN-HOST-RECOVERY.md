@@ -909,3 +909,7 @@ The previous blob at this path began with the Integration Queue README title and
 
 ## Latest owner clarification — FIRST_HOST / HOST-001
 The first new host is not a repository writer. It has read-only access to the canonical repository and execution access only to the owner-defined, explicitly provisioned workspace. It can run only owner-designated tasks and communications through actually authorized tools/destinations. No repository writes or workspace-to-repository sync. Technical isolation, least-privilege enforcement and independent-host acceptance remain NOT VERIFIED / NOT RUN.
+
+
+## Latest owner clarification — FIRST_HOST / HOST-001
+The first new host is a constrained execution participant, not a repository writer. It reads the canonical repository and executes only owner-defined tasks inside the explicitly provisioned workspace. No repository writes or workspace-to-repository sync. External tools/destinations are restricted to owner-approved permissions. Technical enforcement and independent-host acceptance remain NOT VERIFIED / NOT RUN.
