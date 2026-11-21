@@ -171,4 +171,5 @@ Overall: SOURCE-RECOVERED / PACKAGE-VERIFIED / HOST-RECOVERED / PARTIAL / BLOCKE
 - Required host profile: authenticated repository READ + real isolated EXECUTE workspace. Clone/checkout the canonical repository, pin the exact HEAD SHA, run the repository's actual tests, capture command output and diffs.
 - Branch-scoped WRITE is optional and conditional on the destination connector actually granting Contents:write/Push. If granted, write only to the host's own branch and open a PR. Never push directly to main.
 - The first host is a new session selected/launched by the owner; this bootstrap cannot instantiate a remote session or manufacture OAuth/permissions.
-- Current first-host acceptance, package exact-HEAD verification, and 0.0 completion remain OPEN until direct receipts are returned.
+- Package exact-HEAD verification is now `PACKAGE_VERIFIED` (RAHM run 44898569219; canonical ZIP SHA-256 `2a35fa15c67187d253e8d4fd98ee3a6c6ebb62f99e771fe941a425b82074140f`).
+- First-host OAuth/acceptance, destination AI-host execution, restart/persistence, and 0.0 completion remain OPEN until direct host receipts are returned.
