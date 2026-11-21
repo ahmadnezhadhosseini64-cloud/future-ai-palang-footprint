@@ -1018,3 +1018,6 @@ Preserve this as the sole active queue. The objective is to finish repository-re
 - Current checkpoint: [CURRENT-131](PALANG-0.0-CURRENT-20261121-131-0PLUSPLUS-UNIVERSAL-HOST-PACKAGE.md).
 - Mirror event retained: [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) and [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md).
 - Sole queue remains this NEXT-051 file. Issues #20 and #21 remain OPEN. CURRENT-065/CURRENT-066 remains OPEN; no winner selected.
+
+
+Canonical point label: POINT-0/077 (۰++). Graph/identity/parent/time triage remains OPEN under this same queue.
