@@ -1,6 +1,6 @@
 # CURRENT-131 — نسخهٔ اولیهٔ شدنی، عمومی و قابل‌بازیابی میزبان
 
-- Status: ACTIVE / LIVING / REPOSITORY-INTEGRATION-PENDING
+- Status: ACTIVE / LIVING / REPOSITORY-INTEGRATED / MAIN-READBACK-VERIFIED
 - Parent: CURRENT-130
 - Point: POINT-0/078 (۰++)
 - Input/output: IN-121 → OUT-120
@@ -30,8 +30,8 @@ POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 
 
 ## Acceptance
 - Owner intent: CONFIRMED.
-- Source documents: prepared on a dedicated branch; main integration pending.
-- Canonical ZIP exact-current-main rebuild: OPEN / NOT RUN.
+- Source documents: PR #68 merged; main read-back and link checks pending final verification.
+- Canonical ZIP internal version 0.4.6 source update: prepared in follow-up PR; exact-main build/receipt pending.
 - Clean-host extraction and independent recovery: OPEN / NOT RUN.
 - Destination OAuth and persistent workspace: OPEN / NOT RUN.
 - HOST-RECOVERED: NOT CLAIMED.
