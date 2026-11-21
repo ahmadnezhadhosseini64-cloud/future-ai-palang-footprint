@@ -57,3 +57,7 @@ The first new host is a constrained execution participant, not a repository main
 - هیچ عملیات نوشتن یا همگام‌سازی از workspace به مخزن مجاز نیست. هر تغییر مرجع را مالک از مسیر کنترل‌شده و جداگانه انجام می‌دهد؛ میزبان سپس نسخه تازه را فقط می‌خواند.
 - استقلال میزبان تضمین امنیت نیست؛ مرز واقعی باید با مجوزهای فنی read-only، محدودسازی workspace و connectorهای allowlist شده اعمال و آزمون شود. متن دستور به‌تنهایی sandbox یا ACL ایجاد نمی‌کند.
 - پذیرش نهایی نیازمند آزمون واقعی است: تلاش خواندن موفق؛ تلاش نوشتن در مخزن ناموفق؛ دسترسی فقط به workspace تعریف‌شده؛ رد مقصد/ابزار خارج از allowlist؛ و ثبت رسید. تا آن زمان FIRST_HOST POLICY DESIGNED / TECHNICAL ENFORCEMENT NOT VERIFIED / HOST ACCEPTANCE NOT RUN.
+
+
+## Superseded by CURRENT-126 — POINT-0++ continuation
+The host-workspace execution architecture is continued at [CURRENT-126](PALANG-0.0-CURRENT-20261121-126-FIRST-HOST-WORKSPACE-EXECUTION.md) through IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292. CURRENT-125 remains preserved as the preceding checkpoint; it is not deleted or silently rewritten. The controlling contract is [FHRWE-2026-11-21-001](../../reference/REFERENCE-DOCUMENTS/FIRST-HOST-RESTRICTED-WORKSPACE-EXECUTION-AND-READ-ONLY-REPOSITORY-CONTRACT-2026-11-21-001.md).
