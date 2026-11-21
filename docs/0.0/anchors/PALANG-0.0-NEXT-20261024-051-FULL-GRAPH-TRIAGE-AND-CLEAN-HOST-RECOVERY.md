@@ -12,7 +12,7 @@
 - Package contract: [HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md](../../../prototype/haif-gpt6-starter/HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md)
 - Canonical ZIP filename: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`
 - Stable package ID: `HAIF-GPT6-PORTABLE-STARTER-20261025-004`
-- Current package source target: internal v0.4.5 under the unchanged stable package ID and canonical ZIP filename. The new package is not VERIFIED until exact-current-main CI build, extracted tests, artifact round-trip, digest and receipt all pass.
+- Current verified package: internal 0.4.7; same stable package ID and canonical ZIP filename; 19 files; 256684 bytes; 24/24 extracted tests PASS; CRC/source-byte match/exact artifact-ID download/paired-master read-back/artifact round-trip PASS; SHA-256 a8a34580722573aaef247acbf9d7edf1d97a80025c49d510f07a1479da4f0a05; workflow 44920781712 on source/main SHA 06f7fe5a00ea507b1930ffe8a74bc03caf1ff059. Next paired package target: 0.4.8 with master 1.7.87; do not mark it VERIFIED until fresh exact-main checks pass.
 - Queue rule: do not create NEXT-052.
 
 ## Latest registered continuation — POINT-0/077 (0++) / CURRENT-130
@@ -84,7 +84,7 @@ CI package build or CI-to-CI transfer is not proof that a real GPT-6 host import
 - Chain: POINT-0/078 → CURRENT-131 → POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051.
 - Latest Runnable and Development / OPEN are separate promotion lanes. Old dependencies are scoped to affected consumers; independent proven capabilities may ship.
 - 0.0 steps 0.0.1–0.0.9 are the sole execution sequence. Do not create NEXT-052.
-- Existing canonical package 0.4.6 is verified for its recorded source only; target 0.4.7 awaits exact-current-main evidence.
+- Historical canonical package 0.4.6 remains preserved; 0.4.7 is the latest verified package; 0.4.8 is the next paired target.
 
 ## Latest registered continuation (historical)
 
