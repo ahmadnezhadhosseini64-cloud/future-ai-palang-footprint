@@ -4,9 +4,9 @@
 - Project date: 2026-11-21
 - Project timezone: Asia/Tehran (+03:30)
 - Exact owner-message timestamp: UNKNOWN / UNVERIFIED
-- Event registration commit: 2026-11-21T15:51:05Z (UTC)
-- Tehran equivalent: 2026-11-21T19:21:05+03:30
-- Canonical source: GitHub commit 35920adc43c18e07ff3c58d392a2ff31e39f9c3a
+- Event registration commit: 2026-11-21T15:53:07Z (UTC)
+- Tehran equivalent: 2026-11-21T19:23:07+03:30
+- Canonical source: GitHub commit 2513eded2e6360c4e809b25b75e9e48c54ff0e15
 - Destination host acceptance timestamp: UNKNOWN / OPEN until direct receipt.
 
 ## Rule
