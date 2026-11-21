@@ -1,4 +1,4 @@
-# HAIF GPT-6 Portable Starter v0.4.4
+# HAIF GPT-6 Portable Starter v0.4.5
 
 This is the updated release of the existing HAIF starter package, not a separate project. It updates the existing v0.3.0 0/0+ bootstrap package at the same stable package identity and canonical ZIP filename; history and prior digests remain preserved. It does not replace the living master, historical anchors or NEXT-051.
 
@@ -15,7 +15,7 @@ This is the updated release of the existing HAIF starter package, not a separate
 - Host-growth/repository-sync contract included; defines behavior evidence, authorized repo return, RAHM validation and controlled Master/Child promotion.
 - Interaction response/anchor protocol included; requires visible acknowledgment/status, failure disclosure, paired input/output anchors and explicit non-verified gates.
 - Latest verified export and on-demand delivery contract included; requires exact-current-main package receipts and paired living-master delivery.
-- Current continuation reference: POINT-0/071 → POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051. POINT-0/072 is a 0++ continuation marker on the canonical root. This owner-auth update is still a proposal until PR merge and verified ZIP rebuild. Preserve all earlier roots, the certificate child branch, the unresolved CURRENT-065/CURRENT-066 lineage and all open gates; older 0+ markers remain historical. The canonical living mother reference is included in the built ZIP as `LIVING_MASTER_REFERENCE.md`; the Persian external-host test is included as `INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md`. Transfer the ZIP with its included master snapshot and use the prompt on a genuinely independent host.
+- Current continuation reference: POINT-0/072 (0++) → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051. POINT-0/072 is a 0++ continuation marker on the canonical root. This owner-auth update is still a proposal until PR merge and verified ZIP rebuild. Preserve all earlier roots, the certificate child branch, the unresolved CURRENT-065/CURRENT-066 lineage and all open gates; older 0+ markers remain historical. The canonical living mother reference is included in the built ZIP as `LIVING_MASTER_REFERENCE.md`; the Persian external-host test is included as `INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md`. Transfer the ZIP with its included master snapshot and use the prompt on a genuinely independent host.
 
 ## Bootstrap
 ~~~bash
@@ -177,3 +177,12 @@ ONE_MESSAGE_HOST_BOOTSTRAP_FA.md is the only startup message in the canonical ZI
 The canonical repository is currently PUBLIC. A new host can read it directly through its browser/web retrieval or public GitHub fetch capability without signing in. First read main HEAD, then retrieve and verify the living master, latest verified package pointer, canonical ZIP and receipts. An official GitHub connector is optional for this public read-only path.
 
 If public retrieval is blocked or repository visibility changes to PRIVATE, guide the owner to the host product's official GitHub OAuth/connection UI. Never request passwords, PATs or secrets in chat. This phase does not permit repository writes. The phrase «احمد نژادحسینی», password/owner-confirmation gate and expanded authentication flow remain OPEN / DEFERRED for a later phase. A real independent-host receipt is still required.
+
+
+## POINT-0++ — FIRST_HOST / HOST-001 (package source 0.4.5)
+
+The first host receives the living mother as text, reads the canonical public GitHub repository without credentials, records main HEAD, and compares the supplied mother snapshot with the live repository mother and manifest. It pins a local read-only snapshot to the verified SHA/digest and provisions a private runtime workspace only where the platform truly supports it.
+
+The host runs only owner-defined allowlisted tasks in that workspace. Repository access is READ-ONLY; all repository write/delete/commit/push/branch/PR/merge/release/settings/permission operations are denied. Workspace output never syncs to GitHub. The owner alone updates the canonical repository and task policy; the host retrieves owner-published changes read-only.
+
+Authentication gate remains OPEN / DEFERRED. A prompt cannot create sandbox, persistence, OAuth or technical ACL. Main merge, canonical ZIP rebuild/receipt, technical enforcement and independent-host acceptance remain separate evidence gates.
