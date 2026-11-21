@@ -5,10 +5,7 @@ on:
     branches: [main]
     paths:
       - "prototype/haif-v0/**"
-      - "prototype/universal-ai-host/**"
-      - "docs/architecture/UNIVERSAL-AI-HOST-CONNECTIVITY/**"
       - ".github/workflows/haif-prototype-tests.yml"
-      - ".github/workflows/universal-ai-host-tests.yml"
   pull_request:
     paths:
       - "prototype/haif-v0/**"
@@ -37,20 +34,3 @@ jobs:
         run: python -m pip install --upgrade pip && pip install -r requirements.txt
       - name: Run prototype tests
         run: pytest -q
-
-
-  test-universal-host-contract:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v5
-      - name: Set up Python
-        uses: actions/setup-python@v6
-        with:
-          python-version: "3.12"
-      - name: Validate receipt schema JSON
-        run: python -m json.tool docs/architecture/UNIVERSAL-AI-HOST-CONNECTIVITY/host-capability-receipt.schema.json > /dev/null
-      - name: Compile receipt validator
-        run: python -m py_compile prototype/universal-ai-host/host_receipt.py
-      - name: Run universal host receipt tests
-        run: python -m unittest discover -s prototype/universal-ai-host/tests -v
