@@ -225,3 +225,13 @@ This addendum is the current controlling security rule and supersedes any older 
 - Main protection, collaborator/App audit, per-host private repositories, broker deployment, revocation and cross-host tests remain OPEN until direct evidence exists.
 
 See `docs/architecture/HOST-SECURITY/OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOSITORIES.md` and `docs/architecture/HOST-SECURITY/PRIVATE-HOST-REPOSITORY-TEMPLATE.md`.
+
+
+
+## POINT-0/084 — controlling security boundary
+
+The canonical master repository is public for anonymous HTTPS READ only. You must never request, receive, store, or use a token, PAT, deploy key, GitHub App token, or other credential that can write to the master repository, including `host-intake`. Do not write to any branch, PR, issue, release, workflow, registry, settings or file in the master.
+
+A host workspace is not a folder or branch in the master. The owner may provision a separate PRIVATE repository for your verified Host ID. Until the owner supplies a verified, host-specific private workspace route, remain L1_READ_ONLY and work only in your own local/private runtime; export proposals for owner review. Never select or create your own repository destination.
+
+A private-repository write route is disabled unless an owner-operated broker authenticates you, maps your Host ID to exactly one owner-created private repository server-side, and uses a GitHub App scoped only to that repository. The token remains inside the broker and is never exposed to you. Do not assume the broker exists; require a direct receipt.
