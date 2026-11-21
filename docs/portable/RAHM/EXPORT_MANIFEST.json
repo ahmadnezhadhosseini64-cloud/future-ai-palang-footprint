@@ -1,6 +1,6 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.8.39",
+  "version": "1.8.40",
   "manifest_status": "Package source 0.4.5 is registered on the host-intake proposal branch. Canonical chain: POINT-0/072 → POINT-0/073 (0++ continuation, not a new root) → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051. FIRST_HOST/HOST-001: canonical repository READ-ONLY, owner-defined allowlisted workspace execution only, no repository writeback, authentication gate OPEN / DEFERRED. Parallel duplicate-ID files are explicitly quarantined and noncanonical. Exact package SHA-256 and canonical ZIP rebuild remain pending. Main integration, technical enforcement and independent-host acceptance remain NOT VERIFIED / NOT RUN.",
   "created_from_checkpoint": "HAIF-POINT-0-044-STARTER-ZIP-INPLACE-UPDATE-20261027 + HAIF-CURRENT-094",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
@@ -587,7 +587,7 @@
     },
     {
       "path": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261121-126-FIRST-HOST-WORKSPACE-EXECUTION.md",
-      "git_blob_sha": "cd70e2ff49fefee92c141c464fe3bbca8ffd922a",
+      "git_blob_sha": "9bfe71e1f2a734076372c74212e8d70cf1843d0d",
       "sha256_status": "PENDING_EXACT_BYTES_BUILD",
       "reason": "Updated for POINT-0/073 (0++) and CURRENT-126 after the previous canonical package build; include or sync and hash in the next same-identity ZIP rebuild."
     },
@@ -605,7 +605,7 @@
     },
     {
       "path": "docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0292-FIRST-HOST-WORKSPACE-EXECUTION-2026-11-21.md",
-      "git_blob_sha": "0edfeb22d0c20458e8f205db9dacab3d4e5d418b",
+      "git_blob_sha": "93b875c98ceafd96cbbba3ebca57b8542024c7ba",
       "sha256_status": "PENDING_EXACT_BYTES_BUILD",
       "reason": "Updated for POINT-0/073 (0++) and CURRENT-126 after the previous canonical package build; include or sync and hash in the next same-identity ZIP rebuild."
     },
@@ -635,7 +635,7 @@
     },
     {
       "path": "docs/reference/REFERENCE-DOCUMENTS/FIRST-HOST-RESTRICTED-WORKSPACE-EXECUTION-AND-READ-ONLY-REPOSITORY-CONTRACT-2026-11-21-001.md",
-      "git_blob_sha": "ca47839e69ed3783891ddcc941491e0adc47063f",
+      "git_blob_sha": "d8a7f1d629604d64307c2c11b6e03d8cd208787f",
       "sha256_status": "PENDING_EXACT_BYTES_BUILD",
       "reason": "Updated for POINT-0/073 (0++) and CURRENT-126 after the previous canonical package build; include or sync and hash in the next same-identity ZIP rebuild."
     },
