@@ -1,5 +1,7 @@
 ## Latest owner-approved continuation — POINT-0/077 (0++) / CURRENT-130
 
+- First-run bootstrap compatibility repair: [EVT-0297](architecture/BEHAVIOR-TRACE/EVT-0297-FIRST-RUN-HOST-BOOTSTRAP-COMPATIBILITY-REPAIR-2026-11-21.md). Active one-message bootstrap synchronized to POINT-0/077 / CURRENT-130 / master 1.7.84; exact pre-repair copy preserved separately. Branch repair pending PR merge and exact-main package rebuild.
+
 - Chain: [POINT-0/076](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-076-ZERO-STATE-GPT6-HOST.md) → [CURRENT-129](0.0/anchors/PALANG-0.0-CURRENT-20261121-129-ZERO-STATE-GPT6-HOST.md) → [POINT-0/077 (0++)](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-077-0PLUSPLUS-LIVE-ANCHOR.md) → [IN-120](0.0/anchors/PALANG-0.0-IN-20261121-120-0PLUSPLUS-LIVE-ANCHOR.md) → [OUT-119](0.0/anchors/PALANG-0.0-OUT-20261121-119-0PLUSPLUS-LIVE-ANCHOR.md) → [EVT-0296](architecture/BEHAVIOR-TRACE/EVT-0296-0PLUSPLUS-LIVE-ANCHOR-2026-11-21.md) → [TIME-BINDING-EVT-0296](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0296-0PLUSPLUS-LIVE-ANCHOR-2026-11-21.md) → [CURRENT-130](0.0/anchors/PALANG-0.0-CURRENT-20261121-130-0PLUSPLUS-LIVE-ANCHOR.md) → sole queue [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - Living mother target: version 1.7.84.
 - Meaning: this conversation is the current 0++ live continuation marker on the existing POINT-0 root; it does not create a parallel root, project or queue.
