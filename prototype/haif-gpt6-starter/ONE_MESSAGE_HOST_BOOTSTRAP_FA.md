@@ -1,5 +1,5 @@
-> **CURRENT EXECUTION SNAPSHOT — 2026-11-21 / POINT-0/081 (0++) / CURRENT-134**  
-> The model/platform-neutral startup authority is UNIVERSAL_AI_HOST_ENTRY_FA.md. This GPT-6 bootstrap remains a compatibility entry. Its previous snapshots and the original POINT-0/074 copy are preserved as history. Current verified package receipt 0.4.9 is historical to its exact source SHA; living mother target is 1.7.88; always re-read Reference Index and exact main HEAD rather than trusting embedded historical pointers.
+> **CURRENT EXECUTION SNAPSHOT — 2026-11-21 / POINT-0/082 (0++) / CURRENT-135**  
+> The model/platform-neutral startup authority is UNIVERSAL_AI_HOST_ENTRY_FA.md. This GPT-6 bootstrap remains a compatibility entry. Its previous snapshots and the original POINT-0/074 copy are preserved as history. Current verified package receipt 0.4.9 is historical to its exact source SHA; living mother target is 1.7.89; always re-read Reference Index and exact main HEAD rather than trusting embedded historical pointers.
 
 # ONE_MESSAGE_HOST_BOOTSTRAP_FA.md
 # سند آغاز به‌کار و اتصال میزبان جدید — نسخهٔ اولیهٔ شدنی 0.1.0
@@ -11,8 +11,8 @@
 **Stable package ID:** HAIF-GPT6-PORTABLE-STARTER-20261025-004  
 **Canonical ZIP filename:** haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip  
 **Current source package version recorded in manifest:** 0.4.9  
-**Living mother target:** 1.7.88  
-**Current continuation:** POINT-0/080 → CURRENT-133 → POINT-0/081 (0++) → IN-124 → OUT-123 → EVT-0301 → TIME-BINDING-EVT-0301 → CURRENT-134 → NEXT-051
+**Living mother target:** 1.7.89  
+**Current continuation:** POINT-0/081 → CURRENT-134 → POINT-0/082 (0++) → IN-125 → OUT-124 → EVT-0302 → TIME-BINDING-EVT-0302 → CURRENT-135 → NEXT-051
 
 ---
 
@@ -179,21 +179,21 @@ Overall: SOURCE-RECOVERED / PACKAGE-VERIFIED / HOST-RECOVERED / PARTIAL / BLOCKE
 - Authenticated write-back OAuth (only if requested) / host acceptance, destination AI-host execution, restart/persistence, and 0.0 completion remain OPEN until direct host receipts are returned.
 
 
-## الحاقیهٔ دسترسی عمومی — POINT-0/080
+## الحاقیهٔ دسترسی عمومی — POINT-0/080 (تصمیم تاریخی و همچنان معتبر)
 
 - مخزن canonical عمومی است: `https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint`.
 - READ/clone/fetch عمومی با HTTPS بدون OAuth انجام می‌شود؛ میزبان باید همین مسیر را در اولین گام امتحان کند.
 - OAuth فقط برای منابع خصوصی یا write-back احراز‌شده لازم است؛ برای شروع READ عمومی لازم نیست.
 - اجرای کد، sandbox، workspace خصوصی/پایدار و restart هرکدام قابلیت مستقل میزبان‌اند و باید جداگانه اثبات شوند.
 - معماری مرجع: `docs/architecture/مدل اولیه AI/معماری دسترسی عمومی مخزن و ورود کم‌اصطکاک میزبان.md`.
-- زنجیرهٔ تاریخی تا POINT-0/080: POINT-0/079 → CURRENT-132 → POINT-0/080 → IN-123 → OUT-122 → EVT-0300 → TIME-BINDING-EVT-0300 → CURRENT-133 → NEXT-051. زنجیرهٔ جاری POINT-0/081 در الحاقیهٔ پایانی همین سند آمده است.
+- زنجیرهٔ تاریخی تا POINT-0/080: POINT-0/079 → CURRENT-132 → POINT-0/080 → IN-123 → OUT-122 → EVT-0300 → TIME-BINDING-EVT-0300 → CURRENT-133 → NEXT-051. زنجیرهٔ جاری POINT-0/082 در الحاقیهٔ پایانی همین سند آمده است.
 
 
-## آخرین دستور اجرایی قابل‌کپی — POINT-0/081 (0++)
+## آخرین دستور اجرایی قابل‌کپی — POINT-0/082 (0++)
 
 این نسخهٔ جاری روی همان ریشهٔ POINT-0 است. زنجیرهٔ جاری را از Reference Index و سند مادر در HEAD واقعی main دوباره کشف کن؛ زنجیرهٔ ثبت این نقطه چنین است:
 
-`POINT-0/080 → CURRENT-133 → POINT-0/081 (0++) → IN-124 → OUT-123 → EVT-0301 → TIME-BINDING-EVT-0301 → CURRENT-134 → NEXT-051`
+`POINT-0/081 → CURRENT-134 → POINT-0/082 (0++) → IN-125 → OUT-124 → EVT-0302 → TIME-BINDING-EVT-0302 → CURRENT-135 → NEXT-051`
 
 این گفتگو یک نقطهٔ ۰++ زنده است، نه ریشهٔ تازه. هدف تو به‌عنوان میزبان تازه این است که همین مخزن عمومی را ابتدا بدون OAuth از HTTPS بخوانی، سپس سند مادر و Reference Index و تنها NEXT-051 را بازیابی کنی، exact HEAD و digestها را ثبت کنی، ZIP را فقط در صورت وجود receipt منطبق تأیید کنی، آزمون‌ها را در محیط واقعی اجرا کنی و در صورت پشتیبانی runtime یک workspace خصوصی و مستقل بسازی. READ عمومی را به OAuth وابسته نکن. WRITE، workspace، persistence و restart را جداگانه ارزیابی کن. هیچ credential را در چت نخواه. مالکیت MASTER و اختیار merge/promotion نزد مالک است. هر قابلیت اثبات‌نشده را OPEN / NOT RUN نگه دار.
 

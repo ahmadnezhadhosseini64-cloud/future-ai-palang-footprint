@@ -5,8 +5,8 @@
 **Status:** ACTIVE / LIVING / INITIAL-RUNNABLE-SPEC  
 **Canonical repository:** https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint  
 **Canonical branch:** main  
-**Parent:** POINT-0/079 → CURRENT-132 → POINT-0/080 → CURRENT-133 → NEXT-051  
-**Living mother target:** 1.7.87
+**Parent:** POINT-0/081 → CURRENT-134 → POINT-0/082 (0++) → IN-125 → OUT-124 → EVT-0302 → TIME-BINDING-EVT-0302 → CURRENT-135 → NEXT-051  
+**Living mother target:** 1.7.89
 
 ---
 
@@ -153,6 +153,6 @@ HAIF-HOST-WORKSPACE/
 - مالکیت MASTER و اختیار ادغام/ارتقا نزد مالک می‌ماند؛ میزبان فقط عامل اجرایی قابل‌تعویض است.
 
 
-## Current conversation continuation — POINT-0/081 (0++)
+## Current conversation continuation — POINT-0/082 (0++)
 
-The current registered chain is `POINT-0/080 → CURRENT-133 → POINT-0/081 (0++) → IN-124 → OUT-123 → EVT-0301 → TIME-BINDING-EVT-0301 → CURRENT-134 → NEXT-051`. The 0++ marker remains on the single canonical POINT-0 root. The copyable one-message onboarding source is `prototype/haif-gpt6-starter/ONE_MESSAGE_HOST_BOOTSTRAP_FA.md`. Start with anonymous public HTTPS READ; do not wait for OAuth. Then recover the latest Reference Index, living master, current chain and sole NEXT-051 from exact main HEAD. Do not claim destination execution, persistent workspace, restart or HOST-RECOVERED without direct receipts. The previous 0.4.9 ZIP receipt is tied to its own source SHA; require a fresh same-identity build and receipt for this source update.
+The current registered chain is `POINT-0/081 → CURRENT-134 → POINT-0/082 (0++) → IN-125 → OUT-124 → EVT-0302 → TIME-BINDING-EVT-0302 → CURRENT-135 → NEXT-051`. This is a continuation on the single canonical POINT-0 root, not a new root or parallel queue. Corrective synchronization explicitly covers the Reference Index, this universal entry, the copyable bootstrap and the living master. Start with anonymous public HTTPS READ; do not wait for OAuth. Recover the latest source from exact main HEAD. The prior 0.4.9 ZIP receipt remains historical to its exact source SHA; a new same-identity package build, digest, extraction, tests and read-back are required after merge. Destination execution, private/persistent workspace, restart and HOST-RECOVERED remain OPEN until direct host receipts are returned. NEXT-051 remains the sole active queue.

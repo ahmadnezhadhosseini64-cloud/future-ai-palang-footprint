@@ -3,11 +3,11 @@
 Package family: HAIF GPT-6 Portable Starter
 Stable package ID: `HAIF-GPT6-PORTABLE-STARTER-20261025-004`
 Canonical ZIP filename: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`
-Internal package version: 0.4.9
-Current chain: POINT-0/079 → CURRENT-132 → POINT-0/080 → IN-123 → OUT-122 → EVT-0300 → TIME-BINDING-EVT-0300 → CURRENT-133 → NEXT-051
+Internal package version: 0.5.0 candidate
+Current chain: POINT-0/081 → CURRENT-134 → POINT-0/082 (0++) → IN-125 → OUT-124 → EVT-0302 → TIME-BINDING-EVT-0302 → CURRENT-135 → NEXT-051
 Universal host entry: UNIVERSAL_AI_HOST_ENTRY_FA.md.
 Project source of truth: `ahmadnezhadhosseini64-cloud/future-ai-palang-footprint`
-Current chain: POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051
+Historical chain preserved from earlier package snapshot: POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051
 
 ## 1. Design goal
 
@@ -153,3 +153,8 @@ Internal package version: 0.4.5. Living master: 1.7.81. Current chain: POINT-0/0
 
 ## Public repository onboarding — POINT-0/080
 The repository is intentionally Public. New hosts can read, clone or fetch the canonical source anonymously over HTTPS; OAuth is not a prerequisite for READ. OAuth/secure credentials are required only for private resources or authenticated write-back. A host without WRITE can still recover source, execute locally if supported, and submit a patch/proposal for owner review. Hosts remain replaceable execution agents; MASTER and merge/promotion authority stay with the owner.
+
+
+## POINT-0/082 — host-entry synchronization
+
+Current living master target: 1.7.89. Current package source candidate: 0.5.0, retaining the same stable package ID and canonical ZIP filename. The prior 0.4.9 receipt is historical to its exact source SHA. This source candidate is not PACKAGE_VERIFIED until a fresh exact-main build, SHA-256, byte count, inventory, CRC, paired-master read-back, extracted tests and artifact round-trip pass. Destination-host import, workspace persistence and restart remain separate direct-evidence gates.

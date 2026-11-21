@@ -342,7 +342,7 @@ class InteractionResponseAnchorProtocolTests(unittest.TestCase):
         self.assertEqual(manifest["archive_policy"]["canonical_filename"], "haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip")
         self.assertIn("actual host integration", protocol.casefold())
         self.assertIn("NOT VERIFIED", protocol)
-        expected_chain = "POINT-0/079 → CURRENT-132 → POINT-0/080 → IN-123 → OUT-122 → EVT-0300 → TIME-BINDING-EVT-0300 → CURRENT-133 → NEXT-051"
+        expected_chain = "POINT-0/081 → CURRENT-134 → POINT-0/082 (0++) → IN-125 → OUT-124 → EVT-0302 → TIME-BINDING-EVT-0302 → CURRENT-135 → NEXT-051"
         for filename in (
             "GPT6_HOST_INSTRUCTIONS.md",
             "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md",
@@ -351,9 +351,14 @@ class InteractionResponseAnchorProtocolTests(unittest.TestCase):
         ):
             text = (root / filename).read_text(encoding="utf-8")
             self.assertIn(expected_chain, text, filename)
-            self.assertIn("0.4.9", text, filename)
+            self.assertIn("0.5.0", text, filename)
         readme = (root / "README.md").read_text(encoding="utf-8")
-        self.assertIn("v0.4.9", readme)
+        self.assertIn("v0.5.0", readme)
         self.assertIn("external build receipt", readme)
         self.assertIn("Previous verified v0.4.3 build receipt", readme)
         self.assertIn(expected_chain, readme)
+        self.assertEqual(manifest["current_living_master_version"], "1.7.89")
+        self.assertIn("POINT-0/082 (0++)", manifest["parent_architecture"])
+        packaged_master = (root / "LIVING_MASTER_REFERENCE.md").read_text(encoding="utf-8")
+        self.assertIn("Version / نسخه: 1.7.89", packaged_master)
+        self.assertIn(expected_chain, packaged_master)

@@ -1,14 +1,14 @@
-# HAIF Portable Starter v0.4.8 — Universal Host Entry
+# HAIF Portable Starter v0.5.0 — Universal Host Entry
 
-Latest canonical chain: POINT-0/079 → CURRENT-132 → POINT-0/080 → IN-123 → OUT-122 → EVT-0300 → TIME-BINDING-EVT-0300 → CURRENT-133 → NEXT-051
+Latest canonical chain: POINT-0/081 → CURRENT-134 → POINT-0/082 (0++) → IN-125 → OUT-124 → EVT-0302 → TIME-BINDING-EVT-0302 → CURRENT-135 → NEXT-051
 
 The model/platform-neutral first-entry instruction is UNIVERSAL_AI_HOST_ENTRY_FA.md. GPT-6-specific documents below are compatibility references; the universal entry and Reference Index govern fresh hosts.
 
 This is the updated release of the existing HAIF starter package, not a separate project. It updates the existing v0.3.0 0/0+ bootstrap package at the same stable package identity and canonical ZIP filename; history and prior digests remain preserved. It does not replace the living master, historical anchors or NEXT-051.
 
-## Current handoff — package v0.4.9 / POINT-0/080 (0++)
+## Current handoff — package v0.5.0 candidate / POINT-0/082 (0++)
 
-Living master: 1.7.87. The current chain is POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051. Stable package ID and canonical ZIP filename remain unchanged. Latest Runnable contains only capabilities supported by source-backed tests; host-dependent capabilities and legacy dependencies with unresolved consumer impact remain OPEN / Development. The package must pass exact-main build, extracted tests, SHA-256, CRC, inventory, paired-master read-back and artifact round-trip before its 0.4.9 receipt is accepted.
+Living master: 1.7.89. The current chain is POINT-0/081 → CURRENT-134 → POINT-0/082 (0++) → IN-125 → OUT-124 → EVT-0302 → TIME-BINDING-EVT-0302 → CURRENT-135 → NEXT-051. Stable package ID and canonical ZIP filename remain unchanged. Latest Runnable contains only capabilities supported by source-backed tests; host-dependent capabilities and legacy dependencies with unresolved consumer impact remain OPEN / Development. The package must pass exact-main build, extracted tests, SHA-256, CRC, inventory, paired-master read-back and artifact round-trip before the 0.5.0 candidate can be called PACKAGE_VERIFIED.
 
 ## Public repository access — no OAuth for READ
 The canonical repository is intentionally Public. A fresh host should use anonymous HTTPS READ/clone/fetch first; OAuth is not required to discover and download public source. OAuth or another secure credential is required only for private resources or authenticated write-back. Code execution, isolated/persistent workspace and restart recovery are independent runtime capabilities and must be proven by the destination host. The owner retains MASTER and merge/promotion authority.
