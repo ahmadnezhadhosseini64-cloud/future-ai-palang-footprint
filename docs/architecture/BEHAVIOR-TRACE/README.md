@@ -1,8 +1,8 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.45
-- Date: 2026-11-20
+- Version: 1.0.46
+- Date: 2026-11-21
 - Project: Future AI / Palang Footprint / HAIF
 
 ## مسیرهای بازیابی
@@ -1413,3 +1413,11 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - [EVT-0289](./EVT-0289-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP-2026-11-21.md) / [TIME-BINDING-EVT-0289](./TIME-BINDING-EVT-0289-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP-2026-11-21.md).
 - Chain: POINT-0/071 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051.
 - Bootstrap prompt in portable source; package target 0.4.2. External host connection, workspace persistence, broker and clean-host recovery remain OPEN / NOT RUN.
+
+
+## EVT-0290 — Live mirror synchronization recheck — 2026-11-21
+
+- [EVT-0290](./EVT-0290-LIVE-MIRROR-SYNC-RECHECK-2026-11-21.md) / [TIME-BINDING-EVT-0290](./TIME-BINDING-EVT-0290-LIVE-MIRROR-SYNC-RECHECK-2026-11-21.md).
+- Mirror-only; no new root, IN/OUT pair, checkpoint identity or queue. Current chain remains POINT-0/071 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051.
+- Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` unchanged; Library v7 normalized match with one extra terminal LF; no source or Library write.
+- Latest Audit/RAHM passed on `0ffd512...`; Evidence Gate produced main follow-up `080a15c...`, which remains NOT VERIFIED by exact-SHA Audit/RAHM.

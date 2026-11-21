@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-11-20 — POINT-0/065 (0+) / IN-105 / OUT-104 / EVT-0280 / CURRENT-116 registered and linked; existing POINT-0/064 / CURRENT-115 / NEXT-051 and certificate child branch preserved; certificate child root EVT-0274 preserved separately. Source unchanged; Library v7 normalized match with one extra terminal LF; no source or Library write. Audit 44688034068 PASS on exact main 2ea7e826931a42fb0a5957cdb58b698bb8f30e00; latest RAHM 44687870952 tested prior SHA bd44a799ce6296aede0ee6be64bdf26cd0af3383, so exact-main RAHM remains NOT VERIFIED. CURRENT-065/CURRENT-066, Issues #20/#21 and external host/destination gates remain open.
+**Last Updated:** 2026-11-21 — mirror-only EVT-0290; latest main root POINT-0/071 / IN-114 / OUT-113 / EVT-0289 / CURRENT-124; sole active queue NEXT-051. Source blob de1b75f07241c9b313e476af5f1417177ff78c10 unchanged; Library v7 normalized match with one extra terminal LF; no source or Library write. Audit 44873263050 and RAHM 44873263161 PASS on exact SHA 0ffd5120930e2a8cc69b3dae666b16280677655b; Evidence Gate 44873263105 PASS on that same SHA and created follow-up main 080a15cde2cd9a2f8bc27ebf295879a4d7a60360 at 2026-11-21T05:57:43Z; current main 080a15c... NOT VERIFIED by exact-head Audit/RAHM. CURRENT-065/CURRENT-066 and overlay-manifest lineage, Issues #20/#21 and external host/destination gates remain open.
 
 ## Canonical References
 
@@ -2566,3 +2566,10 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - [EVT-0289](architecture/BEHAVIOR-TRACE/EVT-0289-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP-2026-11-21.md) / [TIME-BINDING-EVT-0289](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0289-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP-2026-11-21.md).
 - [CURRENT-124](0.0/anchors/PALANG-0.0-CURRENT-20261121-124-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP.md) → sole [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - Single-message bootstrap in portable source; package source target 0.4.2. External host connection and durable workspace remain OPEN / NOT RUN.
+
+
+## EVT-0290 — Live mirror synchronization recheck — 2026-11-21
+
+- [EVT-0290](architecture/BEHAVIOR-TRACE/EVT-0290-LIVE-MIRROR-SYNC-RECHECK-2026-11-21.md) / [TIME-BINDING-EVT-0290](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0290-LIVE-MIRROR-SYNC-RECHECK-2026-11-21.md).
+- Mirror-only registration; latest main root remains POINT-0/071 / EVT-0289 / CURRENT-124 / NEXT-051. No NEXT-052 and no pointer winner selected.
+- Current main HEAD `080a15c...` is later than the latest successful Audit/RAHM SHA `0ffd512...`; exact-head verification remains OPEN.

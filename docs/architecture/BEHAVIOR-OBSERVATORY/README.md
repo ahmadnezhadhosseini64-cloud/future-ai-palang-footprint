@@ -2,11 +2,11 @@
 
 - Stable ID: HUMAN-AI-INTERACTION-BEHAVIOR-OBSERVATORY-2026-10-22-001
 - Production ID: HAIBO-HAIF-2026-10-22-001
-- Version: 1.0.28
+- Version: 1.0.29
 - Owner: احمد پلنگ / Ahmad Nezhadhosseini
 - Project: Future AI / Palang Footprint / HAIF
 - Canonical path: `docs/architecture/BEHAVIOR-OBSERVATORY/README.md`
-- Status: ACTIVE / LIVING in repository; latest mirror-only event EVT-0276 under POINT-0/064 / EVT-0257 / CURRENT-115 / NEXT-051. Certificate child root CERT-POINT-0.0-20261120-002 / EVT-0274 remains separate. Source blob de1b75f07241c9b313e476af5f1417177ff78c10 unchanged; Library v7 normalized match with one extra terminal LF; no source or Library write. Audit 44688034068 and CPREL runs 44688034103 / 44688034176 passed on exact main 2ea7e826931a42fb0a5957cdb58b698bb8f30e00. Latest RAHM 44687870952 tested prior SHA bd44a799ce6296aede0ee6be64bdf26cd0af3383; exact-main RAHM remains NOT VERIFIED. CURRENT-065/CURRENT-066 and overlay-manifest lineage OPEN / AMBIGUOUS; Issues #20/#21 OPEN; external destination/host gates OPEN / NOT VERIFIED / NOT RUN.
+- Status: ACTIVE / LIVING in repository; latest main root POINT-0/071 / EVT-0289 / CURRENT-124 / NEXT-051; separate certificate child root CERT-POINT-0.0-20261120-002 / EVT-0274 preserved. Latest mirror-only event EVT-0290. Source blob de1b75f07241c9b313e476af5f1417177ff78c10 unchanged; Library v7 normalized match with one extra terminal LF; no source or Library write. Audit 44873263050 and RAHM 44873263161 PASS on exact SHA 0ffd5120930e2a8cc69b3dae666b16280677655b; Evidence Gate 44873263105 created follow-up main 080a15cde2cd9a2f8bc27ebf295879a4d7a60360, not yet verified by exact-head Audit/RAHM. CURRENT-065/CURRENT-066 and overlay-manifest lineage OPEN / AMBIGUOUS; Issues #20/#21 OPEN; external destination/host gates OPEN / NOT VERIFIED / NOT RUN.
 - Time rule: UTC is canonical; Asia/Tehran time is derived from the same UTC instant (+03:30 for this date). Unknown timestamps remain UNKNOWN, never guessed.
 - Independent anchor: `PALANG-BEHAVIOR-OBSERVATION-AND-RECOVERY-TEST-2026-10-22-001`
 - Related event: `EVT-0034`
@@ -469,3 +469,10 @@ Continue collecting observable interaction and evaluator behavior as evidence-ba
 - Run-start main Audit 44688034068 and CPREL harness/evidence 44688034103 / 44688034176 PASS on exact SHA 2ea7e826931a42fb0a5957cdb58b698bb8f30e00. Latest RAHM 44687870952 PASS on prior SHA bd44a799ce6296aede0ee6be64bdf26cd0af3383; exact-main RAHM NOT VERIFIED.
 - CURRENT-065/CURRENT-066 and overlay-manifest lineage OPEN / AMBIGUOUS; no winner selected. Manifest has no winner_selected field; filename CURRENT-065 and package/checkpoint lineage references CURRENT-066. Issues #20/#21 OPEN; NEXT-051 forensic recovery OPEN / NOT RECOVERED; BOART-FOLLOWUP-01 ACTIVE. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
 - No new main root, IN/OUT pair, checkpoint identity, successor queue or automation; NEXT-052 not created.
+
+
+## EVT-0290 — Live mirror synchronization — 2026-11-21
+- [EVT-0290](../BEHAVIOR-TRACE/EVT-0290-LIVE-MIRROR-SYNC-RECHECK-2026-11-21.md) / [TIME-BINDING-EVT-0290](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0290-LIVE-MIRROR-SYNC-RECHECK-2026-11-21.md).
+- Mirror-only under POINT-0/071 / EVT-0289 / CURRENT-124 / NEXT-051; source unchanged; Library v7 differs only by one terminal LF after the source text. No source or Library write.
+- Latest exact-SHA Audit/RAHM success is on `0ffd512...`; current main `080a15c...` remains NOT VERIFIED.
+- CURRENT-065/CURRENT-066 and overlay-manifest lineage OPEN / AMBIGUOUS; Issues #20/#21 OPEN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
