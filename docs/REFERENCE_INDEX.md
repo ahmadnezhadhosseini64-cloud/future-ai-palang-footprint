@@ -1,3 +1,13 @@
+## Latest owner-approved continuation — POINT-0/078 (0++) / CURRENT-131
+
+- Chain: [POINT-0/077](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-077-0PLUSPLUS-LIVE-ANCHOR.md) → [CURRENT-130](0.0/anchors/PALANG-0.0-CURRENT-20261121-130-0PLUSPLUS-LIVE-ANCHOR.md) → [POINT-0/078 (0++)](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-078-UNIVERSAL-HOST-0PLUSPLUS.md) → [IN-121](0.0/anchors/PALANG-0.0-IN-20261121-121-UNIVERSAL-HOST-INITIAL-RUNNABLE.md) → [OUT-120](0.0/anchors/PALANG-0.0-OUT-20261121-120-UNIVERSAL-HOST-INITIAL-RUNNABLE.md) → [EVT-0298](architecture/BEHAVIOR-TRACE/EVT-0298-UNIVERSAL-HOST-INITIAL-RUNNABLE-2026-11-21.md) → [TIME-BINDING-EVT-0298](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0298-UNIVERSAL-HOST-INITIAL-RUNNABLE-2026-11-21.md) → [CURRENT-131](0.0/anchors/PALANG-0.0-CURRENT-20261121-131-UNIVERSAL-HOST-INITIAL-RUNNABLE.md) → sole queue [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Living mother target: 1.7.85.
+- Universal entry instruction: [UNIVERSAL_AI_HOST_ENTRY_FA.md](../prototype/universal-host/UNIVERSAL_AI_HOST_ENTRY_FA.md), initial runnable specification 0.1.0; model/platform-neutral.
+- Latest Runnable contains only capabilities implemented and evidenced on the exact source; unfinished/host-dependent capabilities remain OPEN/Development and are promoted only after tests, receipt and read-back. Preserve all previous snapshots and failures.
+- ZIP canonical identity/name unchanged. Exact-main rebuild, extraction tests, SHA-256, receipt and release read-back are pending after merge; prior ZIP digest must not be reused as current.
+- Destination OAuth, durable workspace, clean-host recovery/restart and HOST-RECOVERED remain OPEN / NOT RUN until direct destination evidence.
+- NEXT-051 remains the sole active queue; no parallel root or queue.
+
 ## Latest owner-approved continuation — POINT-0/077 (0++) / CURRENT-130
 
 - First-run bootstrap compatibility repair: [EVT-0297](architecture/BEHAVIOR-TRACE/EVT-0297-FIRST-RUN-HOST-BOOTSTRAP-COMPATIBILITY-REPAIR-2026-11-21.md) → [TIME-BINDING-EVT-0297](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0297-FIRST-RUN-HOST-BOOTSTRAP-COMPATIBILITY-REPAIR-2026-11-21.md). Active one-message bootstrap synchronized to POINT-0/077 / CURRENT-130 / master 1.7.84; exact pre-repair copy preserved separately. Branch repair pending PR merge and exact-main package rebuild.
