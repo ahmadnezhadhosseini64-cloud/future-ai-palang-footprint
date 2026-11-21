@@ -255,7 +255,7 @@
     "update_mode": "REBUILD_IN_PLACE_SAME_PACKAGE_IDENTITY",
     "do_not_publish_separate_version_named_zip": true,
     "historical_v0_3_0_digest_is_not_current": true,
-    "current_internal_version": "0.4.3",
+    "current_internal_version": "0.4.4",
     "supersedes": "0.4.2",
     "latest_delivery_contract": "LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-CONTRACT.md"
   },
