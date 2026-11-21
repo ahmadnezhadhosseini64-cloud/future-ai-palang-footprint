@@ -17,7 +17,7 @@
 
 ## Evidence boundary
 - تأیید مالک: ثبت‌شده در IN-119.
-- اسناد bootstrap و زنجیرهٔ ثبت: با ادغام این تغییر در main قابل‌تأیید.
+- اسناد bootstrap و زنجیرهٔ ثبت: PR #58 ادغام شد؛ main read-back تأیید شده است (merge commit `8f383baf76402536d2ca4c1f1ee4ecd66edbaeaa`).
 - ایجاد نشست GPT-6 مقصد: خارج از دسترس عملیات مخزن.
 - OAuth، workspace مقصد، اجرای مستقیم و پذیرش میزبان: OPEN / NOT RUN تا رسید میزبان مقصد.
 - زمان دقیق پیام مالک: UNKNOWN / UNVERIFIED.
