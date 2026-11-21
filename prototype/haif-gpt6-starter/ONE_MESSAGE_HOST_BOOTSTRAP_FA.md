@@ -9,7 +9,7 @@
 **Canonical ZIP filename:** haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip  
 **Current source package version recorded in manifest:** 0.4.5  
 **Living mother target:** 1.7.81  
-**Current continuation:** POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051
+**Current continuation:** POINT-0/075 → IN-118 → OUT-117 → EVT-0294 → TIME-BINDING-EVT-0294 → CURRENT-128 → NEXT-051
 
 ---
 
@@ -24,11 +24,11 @@
 https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
 
 1. قابلیت GitHub یا GitHub App/connector رسمیِ همین محیط را بررسی کن.
-2. اگر اتصال برقرار نیست، از مالک بخواه از رابط رسمی همین محیط، دسترسی را فقط برای مخزن بالا مجاز کند. ابتدا READ-ONLY کافی است.
+2. اگر اتصال برقرار نیست، از مالک بخواه از رابط رسمی همین محیط، دسترسی READ را فقط برای مخزن بالا مجاز کند؛ برای اجرای دستورات، clone/checkout و اجرای آزمون‌ها، محیط کاری مستقل همین میزبان را فعال کن.
 3. هرگز رمز عبور، Personal Access Token، کلید خصوصی یا Secret را در چت درخواست نکن؛ مالک باید احراز هویت را فقط در رابط امن خود سرویس انجام دهد.
 4. پس از اتصال، با خواندن واقعی مخزن ثابت کن دسترسی کار می‌کند: branch `main`، آخرین commit SHA و فایل‌های مرجع زیر را بخوان.
 5. اگر connector در این محیط موجود نیست، دقیقاً اعلام کن `BLOCKED: GITHUB_CONNECTOR_NOT_AVAILABLE`. اگر مخزن عمومی را فقط از وب می‌خوانی، آن را اتصال احرازشده یا امکان نوشتن معرفی نکن.
-6. هیچ میزبان تازه‌ای اجازهٔ نوشتن مستقیم روی `main`، سند مادر، Release یا فایل‌های امنیتی را ندارد. تغییر پیشنهادی را در branch مجاز و از مسیر Pull Request ارائه کن؛ ادغام فقط با مجوز صریح مالک و سیاست مخزن.
+6. میزبان باید READ مخزن و EXECUTE واقعی در working tree مستقل داشته باشد. WRITE فقط روی branch اختصاصی میزبان و فقط در صورت وجود مجوز واقعی Contents:write/Push در connector مقصد مجاز است؛ تغییرات از Pull Request وارد main می‌شوند. روی main، Release، secrets و workflowهای حساس مستقیم ننویس.
 
 ### 2. بازیابی مرجع زنده از خود مخزن
 
@@ -64,6 +64,8 @@ https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
 ### 4. هدف نخست میزبان تازه
 
 پس از اتصال و بازیابی اسناد، این کارها را به ترتیب انجام بده:
+
+0. یک checkout/clone یا working tree واقعی و جدا از مخزن بساز. اگر محیط فقط خواندن فایل دارد و امکان اجرای shell/Python ندارد، `EXECUTION_WORKSPACE_NOT_AVAILABLE` اعلام کن؛ آن را محیط اجرایی معرفی نکن. Snapshot مرجع را read-only نگه دار و آزمون‌ها را در working tree اجرا کن.
 
 1. زنجیره و parentها را با خواندن فایل‌های واقعی تأیید کن.
 2. وضعیت سند مادر، manifest، راهنمای میزبان و ZIP را با همان HEAD تطبیق بده.
@@ -107,8 +109,9 @@ HAIF-HOST-WORKSPACE/
 
 ### 7. امنیت و مجوزها
 
-- پیش‌فرض میزبان جدید READ-ONLY است.
-- برای هر عملیات نوشتن، مقصد، فایل، تغییر و اثر را قبل از اجرا به مالک روشن کن و فقط از مجوز رسمی همان connector استفاده کن.
+- سطح پایه READ + EXECUTE در workspace مستقل است؛ این دو به‌معنی مجوز نوشتن روی main نیستند.
+- WRITE روی branch اختصاصی فقط در صورت grant واقعی GitHub connector مقصد مجاز است؛ اگر مجوز وجود ندارد، patch/proposal را تحویل بده و `WRITE_NOT_GRANTED` ثبت کن.
+- برای هر عملیات ممتاز یا تغییر خارج از branch اختصاصی، تأیید صریح مالک و سیاست مخزن لازم است.
 - هیچ Secret، token یا credential را در چت، سند، log، ZIP یا مخزن قرار نده.
 - دسترسی یک میزبان به میزبان دیگر، workspace دیگر یا دادهٔ خصوصی را مفروض نگیر.
 - اگر مجوز، connector، sandbox، filesystem یا API در دسترس نیست، آن قابلیت را `BLOCKED / NOT SUPPORTED / NOT RUN` ثبت کن.
@@ -121,7 +124,9 @@ HAIF-HOST-WORKSPACE/
 ```text
 HAIF NEW-HOST ACCEPTANCE RECEIPT
 Host/model: [واقعی یا UNKNOWN]
-GitHub connector: CONNECTED / READ-ONLY / NOT CONNECTED / BLOCKED
+GitHub connector: READ-CONNECTED / NOT CONNECTED / BLOCKED
+Execution workspace: AVAILABLE / NOT AVAILABLE
+Working checkout + exact HEAD: [...]
 Repository: ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
 Branch + exact HEAD SHA: [...]
 Canonical master version + blob SHA: [...]
@@ -151,9 +156,19 @@ Overall: SOURCE-RECOVERED / PACKAGE-VERIFIED / HOST-RECOVERED / PARTIAL / BLOCKE
 
 ## وضعیت ثبت‌شده هنگام انتشار این نسخه
 
-- نشانگر جاری: POINT-0/074 با 0++ روی ریشهٔ واحد POINT-0.
-- هدف بعدی: تکمیل 0.0 از مسیر NEXT-051.
-- سند مادر canonical: نسخهٔ 1.7.81.
+- نشانگر جاری: POINT-0/075 روی همان ریشهٔ واحد POINT-0؛ نشانگر 0++ حفظ شده است.
+- زنجیره: POINT-0/075 → IN-118 → OUT-117 → EVT-0294 → TIME-BINDING-EVT-0294 → CURRENT-128 → NEXT-051.
+- هدف اجرایی: READ مخزن + EXECUTE در working checkout مستقل برای میزبان اول؛ WRITE شاخه‌ای فقط با مجوز واقعی.
+- سند مادر canonical هدف: نسخهٔ 1.7.82؛ تا ادغام PR، نسخهٔ main همچنان مرجع قبلی است.
 - منبع بستهٔ portable: manifest نسخهٔ 0.4.5؛ این شماره به‌تنهایی رسید ساخت ZIP جاری نیست.
 - رسید ZIP exact-HEAD، انطباق کامل، بازیابی میزبان مستقل و restart/persistence فقط پس از مشاهدهٔ شواهد واقعی قابل PASS هستند.
 - آخرین زمان پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان Git commit این سند، زمان ثبت مخزن است و جایگزین زمان پیام نمی‌شود.
+
+
+## Addendum — first-host repository execution workspace (POINT-0/075)
+
+- Read the owner-approved continuation at [POINT-0/075](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-075-FIRST-HOST-REPO-WORKSPACE.md) and the current receipt target [CURRENT-128](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261121-128-FIRST-HOST-REPO-WORKSPACE.md).
+- Required host profile: authenticated repository READ + real isolated EXECUTE workspace. Clone/checkout the canonical repository, pin the exact HEAD SHA, run the repository's actual tests, capture command output and diffs.
+- Branch-scoped WRITE is optional and conditional on the destination connector actually granting Contents:write/Push. If granted, write only to the host's own branch and open a PR. Never push directly to main.
+- The first host is a new session selected/launched by the owner; this bootstrap cannot instantiate a remote session or manufacture OAuth/permissions.
+- Current first-host acceptance, package exact-HEAD verification, and 0.0 completion remain OPEN until direct receipts are returned.
