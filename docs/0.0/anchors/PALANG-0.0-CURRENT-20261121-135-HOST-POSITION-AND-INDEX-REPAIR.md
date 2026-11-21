@@ -22,9 +22,9 @@
 - Public READ without OAuth: AVAILABLE BY REPOSITORY VISIBILITY.
 - Destination host import and execution: OPEN / NOT RUN.
 - Persistent isolated workspace and restart: OPEN / NOT PROVEN.
-- Exact-main ZIP rebuild, digest, extraction and tests: REQUIRED / NOT RUN.
+- Package delivery: governed by the stable release tag `haif-latest-verified`. The latest receipt must be checked against the current main SHA on every handoff; rebuild if it is not equivalent. Package 0.5.0 is verified for its recorded source SHA.
 - Authenticated write-back: OPTIONAL / NOT GRANTED / NOT REQUIRED FOR READ.
 - HOST-RECOVERED: NOT CLAIMED.
 
 ## Next action
-Next: rebuild the canonical ZIP from exact main commit `59fe65d2c6250c8cda6f2f02ea8d048720ff9563`, run the package conformance and audit gates, and verify the downloaded artifact round-trip. Keep destination-host acceptance OPEN until the new host supplies its own receipt.
+Next: on each handoff, read the `latest-verified-export.json` receipt from `haif-latest-verified` and compare its source SHA with exact main HEAD; rebuild if different. Keep destination-host acceptance OPEN until the new host supplies its own receipt.
