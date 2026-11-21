@@ -120,22 +120,12 @@ Durable capture requires an actual connected producer and authorized intake rout
 All host-originated data is untrusted and enters QUARANTINE. The permanent event ledger is an audit/continuity record, not automatic knowledge promotion. Only RAHM-validated CHILD candidates with explicit owner approval can update the living Master. Hosts cannot push/merge directly to main or alter governance. Preserve failed writes, missing outputs, rejected proposals and corrections as linked append-only events. Minimize private data; raw conversations are not stored by default.
 
 
-## Intake branch enforcement — POINT-0/069
+## Legacy intake branch frozen — POINT-0/086
 
-The repository worker default target is now the dedicated `host-intake` branch. The worker explicitly refuses `PALANG_GITHUB_BRANCH=main`. Events written there remain QUARANTINED and require owner review through a separate pull request before any merge to main or promotion into the living Master. The `host-intake` branch was created from main at `e94520a42a0910b3a4d2c2d41263e6428b0b499e`.
+The former host-intake branch and direct GitHub worker are disabled. Hosts do not write to any branch, PR, issue, release, workflow, or setting in the canonical master. The legacy worker fails closed with LEGACY_DIRECT_GITHUB_WORKER_DISABLED and makes no GitHub API request.
 
-Verified repository state at registration: GitHub reports the `main` branch as `protected=false`; this connection lacks a supported mutation action for branch protection/rulesets. Therefore branch protection is NOT CONFIGURED / OPEN. The worker-level main-write block is implemented, but is not a substitute for GitHub branch protection or least-privilege token configuration. Do not claim main is protected.
+Current approved path: host private workspace → owner export/redaction → private RAHM → validation → owner-controlled promotion App PR → owner approval → CHILD. No host receives RAHM credentials or master write access. See docs/architecture/RAHM/README.md and CURRENT-139.
 
- 
-### اجرای امن ورودی مخزن — وضعیت واقعی POINT-0/069
-- worker مخزن اکنون فقط شاخهٔ `host-intake` را می‌پذیرد و در صورت تنظیم هر شاخهٔ دیگری متوقف می‌شود؛ به‌ویژه هیچ نوشتن مستقیمی روی `main` انجام نمی‌دهد.
-- شاخهٔ `host-intake` از main در commit `e94520a42a0910b3a4d2c2d41263e6428b0b499e` ساخته شد. رویدادهای آن شاخه QUARANTINED هستند و برای ورود به main نیازمند PR و بررسی/تصمیم مالک‌اند.
-- GitHub در زمان بررسی `main.protected=false` گزارش کرد. ابزار در دسترس، تغییر branch protection/rulesets را پشتیبانی نمی‌کند؛ بنابراین محافظت واقعی شاخه هنوز NOT CONFIGURED / OPEN است. محدودیت کد worker جایگزین branch protection یا credential کم‌اختیار نیست.
-- قرارداد JSON Schema دفتر تعامل به‌روزرسانی شد تا input_id، output_id، host_id، host_session_id، master_commit_sha، master_version، checkpoint_id، adapter_version، payload_sha256، privacy_class، redaction_status، capture_status و receipt_ref الزامی باشند.
-- این به‌روزرسانی ساختار و گیت‌ها را محکم‌تر می‌کند؛ اتصال زندهٔ میزبان، استقرار worker و بازیابی مستقل همچنان نیازمند رسید end-to-end واقعی‌اند.
-
-
----
 
 ## POINT-0/070 — Host-scoped isolated workspaces
 
