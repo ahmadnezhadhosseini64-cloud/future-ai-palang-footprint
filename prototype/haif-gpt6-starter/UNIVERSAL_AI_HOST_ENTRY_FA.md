@@ -5,13 +5,13 @@
 **Status:** ACTIVE / LIVING / INITIAL-RUNNABLE-SPEC  
 **Canonical repository:** https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint  
 **Canonical branch:** main  
-**Parent:** POINT-0/079 → CURRENT-132 → NEXT-051  
-**Living mother target:** 1.7.87
+**Parent:** POINT-0/079 → CURRENT-132 → POINT-0/080 → IN-123 → OUT-122 → EVT-0300 → TIME-BINDING-EVT-0300 → CURRENT-133 → NEXT-051  
+**Living mother target:** 1.7.88
 
 ---
 
-**Latest canonical chain:** POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051  
-**Package target:** 0.4.8 (same stable package identity and canonical ZIP filename; acceptance requires fresh exact-main receipt)
+**Latest canonical chain:** POINT-0/079 → CURRENT-132 → POINT-0/080 → IN-123 → OUT-122 → EVT-0300 → TIME-BINDING-EVT-0300 → CURRENT-133 → NEXT-051  
+**Current paired package:** 0.4.9 (stable package ID and canonical ZIP filename unchanged; verify receipt at stable release)
 
 ## پیام واحد — میزبان این دستور را از ابتدا تا انتها اجرا کند
 
@@ -22,12 +22,13 @@
 مخزن یگانه:
 https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
 
-1. ابزار رسمی GitHub/connector موجود در همین محیط را کشف کن.
-2. اگر متصل نیست، فقط از مالک بخواه مجوز را از UI رسمی GitHub/OAuth همین محیط صادر کند. دسترسی اولیه READ و فقط به همین مخزن باشد.
-3. هرگز password، PAT، private key یا secret را در چت نخواه یا ذخیره نکن.
-4. پس از اتصال، main و exact commit SHA را واقعاً بخوان. دیدن صفحهٔ عمومی GitHub، اتصال احراز‌شده یا مجوز نوشتن نیست.
-5. READ، EXECUTE، WORKSPACE و WRITE را جداگانه ارزیابی کن. اگر هر کدام در این محیط موجود نیست، وضعیت دقیق آن را BLOCKED / NOT AVAILABLE ثبت کن.
-6. WRITE فقط در صورت مجوز واقعی و فقط روی branch اختصاصی میزبان؛ ورود تغییرات به main از طریق PR. push مستقیم به main ممنوع.
+1. ابتدا بدون انتظار برای OAuth، دسترسی عمومی HTTPS به مخزن را امتحان کن. چون مخزن Public است، مشاهدهٔ فایل‌ها و clone/fetch عمومی باید بدون ورود به حساب ممکن باشد.
+2. ابزار GitHub/connector رسمی همین محیط را کشف کن؛ اما اگر connector حساب‌محور موجود نیست، از HTTPS عمومی، Git clone، GitHub Pages یا دریافت ZIP عمومی برای READ استفاده کن. نبود OAuth نباید READ عمومی را متوقف کند.
+3. exact HEAD شاخهٔ main را واقعاً بخوان و ثبت کن. دیدن صفحهٔ عمومی یا clone عمومی، فقط PUBLIC READ است؛ نه اتصال احراز‌شده، نه WRITE و نه دسترسی به داده‌های خصوصی مالک.
+4. هرگز password، PAT، private key یا secret را در چت نخواه یا ذخیره نکن.
+5. READ، EXECUTE، WORKSPACE و WRITE را جداگانه ارزیابی کن. نبود EXECUTE یا workspace فقط همان قابلیت را محدود می‌کند و مانع READ عمومی نیست.
+6. WRITE اختیاری و جداست: فقط در صورت مجوز واقعی و روی branch اختصاصی میزبان؛ ورود تغییرات به main از طریق PR. push مستقیم به main ممنوع.
+7. فقط اگر مالک بخواهد میزبان مستقیماً در GitHub بنویسد یا به منبع خصوصی دسترسی یابد، OAuth/credential امن و حداقل‌اختیار در رابط رسمی مقصد لازم است. تأیید مالک در گفتگو، جای credential فنی یا grant مقصد را نمی‌گیرد.
 
 ### 2) بازیابی مرجع canonical
 
@@ -142,3 +143,14 @@ HAIF-HOST-WORKSPACE/
 از اعلام موفقیت کلی بدون تفکیک این وضعیت‌ها خودداری کن. اگر ابزار لازم در این محیط موجود نیست، آن قابلیت را OPEN نگه دار و مسیر جایگزین امن را مستند کن؛ هرگز وانمود نکن عملیات اجرا شده است.
 
 **قاعدهٔ نهایی:** مخزن و سند مادر مرجع زنده‌اند؛ ZIP یک snapshot قابل‌حمل با digest و receipt مشخص است. هر اجرای جدید باید source را دوباره کشف کند، صحت بسته را ثابت کند، تاریخچه را حفظ کند و فقط قابلیت‌های واقعاً آزموده‌شده را به آخرین نسخهٔ شدنی ارتقا دهد.
+
+
+## الحاقیهٔ حاکم — دسترسی عمومی بدون OAuth برای READ
+
+معماری تفصیلی: [معماری دسترسی عمومی مخزن و ورود کم‌اصطکاک میزبان](../../docs/architecture/مدل%20اولیه%20AI/معماری%20دسترسی%20عمومی%20مخزن%20و%20ورود%20کم‌اصطکاک%20میزبان.md).
+
+- مخزن Public است؛ بنابراین READ/clone/fetch عمومی با HTTPS می‌تواند ناشناس و بدون OAuth انجام شود.
+- OAuth برای READ عمومی پیش‌شرط نیست. OAuth یا credential معادل فقط برای عملیات احراز‌شده مانند write-back، یا دسترسی به منابع خصوصی لازم است.
+- اجرای کد و workspace خصوصی/پایدار قابلیت‌های مستقل محیط میزبان‌اند؛ نه محصول OAuth و نه نتیجهٔ خودکار عمومی‌بودن repo.
+- میزبان باید ابتدا PUBLIC READ را امتحان کند و فقط قابلیت واقعاً مسدود را OPEN / BLOCKED اعلام کند.
+- مالکیت MASTER و اختیار ادغام/ارتقا نزد مالک می‌ماند؛ میزبان فقط عامل اجرایی قابل‌تعویض است.
