@@ -1406,3 +1406,10 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - ZIP v0.3.9, 207402 bytes, SHA-256 `36966dc71f951021a68defe72677a35b58c8fb5b25100b7e59e5d63c90109be2`; 24/24 local extracted tests PASS.
 - Stable release ID 452647521: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified.
 - Independent-host recovery remains NOT RUN.
+
+
+## EVT-0289 — Single-message GPT-6 host bootstrap
+
+- [EVT-0289](./EVT-0289-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP-2026-11-21.md) / [TIME-BINDING-EVT-0289](./TIME-BINDING-EVT-0289-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP-2026-11-21.md).
+- Chain: POINT-0/071 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051.
+- Bootstrap prompt in portable source; package target 0.4.2. External host connection, workspace persistence, broker and clean-host recovery remain OPEN / NOT RUN.
