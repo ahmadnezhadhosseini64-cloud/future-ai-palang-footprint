@@ -1,7 +1,7 @@
 # EVT-0296 — تعیین نقطهٔ ۰++ زنده و اتصال به زنجیرهٔ اصلی
 
 - Event ID: EVT-0296
-- Status: ACTIVE / LIVING / OWNER-APPROVED
+- Status: ACTIVE / LIVING / OWNER-APPROVED / REPOSITORY-INTEGRATED / MAIN-READBACK-VERIFIED
 - Date: 2026-11-21
 - Point: POINT-0/077 (۰++)
 - Input/output: IN-120 → OUT-119
@@ -20,7 +20,7 @@
 
 ## Evidence boundary
 - Owner intent and point designation: CONFIRMED.
-- Repository integration: PENDING until merge and exact main read-back.
-- ZIP rebuild for the resulting exact main SHA: PENDING.
+- Repository integration: MERGED via PR #61; exact main read-back completed.
+- ZIP rebuild for the resulting exact main SHA: PENDING workflow refresh and receipt verification.
 - Destination OAuth, independent workspace, execution and host acceptance: OPEN / NOT RUN.
 - Exact owner-message timestamp: UNKNOWN / UNVERIFIED.
