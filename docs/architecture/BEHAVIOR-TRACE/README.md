@@ -1423,10 +1423,10 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Post-registration Living Architecture Audit 44874521121 and Portable RAHM Conformance 44874520968 PASS on exact registration SHA `910cd24b9c9d0af2cdc7c6090386919f304b6819`. Evidence Gate 44874520977 PASS on that SHA and created follow-up main `5c2a860e2fc1f7f36e3ee935b0daa3f62752e896` at UTC `2026-11-21T06:13:35Z`; current HEAD `5c2a860...` is NOT VERIFIED by exact-SHA Audit/RAHM.
 
 
-## EVT-0290 — تثبیت همین گفتگو به‌عنوان نقطهٔ جاری
+## QUARANTINED_DUPLICATE_ID_NONCANONICAL — پیش‌نویس تکراری EVT-0290
 - [POINT-0/072](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-072-CURRENT-CHAT-ANCHOR-0PLUS.md)
 - [IN-115](../../0.0/anchors/PALANG-0.0-IN-20261121-115-CURRENT-CHAT-ANCHOR.md) و [OUT-114](../../0.0/anchors/PALANG-0.0-OUT-20261121-114-CURRENT-CHAT-ANCHOR.md)
-- [EVT-0290](./EVT-0290-CURRENT-CHAT-ANCHOR-2026-11-21.md)؛ [TIME-BINDING-EVT-0290](./TIME-BINDING-EVT-0290-CURRENT-CHAT-ANCHOR-2026-11-21.md)
+- [پیش‌نویس EVT-0290 قرنطینه‌شده](./EVT-0290-CURRENT-CHAT-ANCHOR-2026-11-21.md)؛ [لنگر زمانی پیش‌نویس قرنطینه‌شده](./TIME-BINDING-EVT-0290-CURRENT-CHAT-ANCHOR-2026-11-21.md)
 - [CURRENT-125](../../0.0/anchors/PALANG-0.0-CURRENT-20261121-125-CURRENT-CHAT-ANCHOR.md) → sole queue [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - ثبت مخزنی این زنجیره، به‌تنهایی اثبات‌کنندهٔ اجرای خودکار هر ورودی/خروجی یا پذیرش میزبان مستقل نیست.
 
