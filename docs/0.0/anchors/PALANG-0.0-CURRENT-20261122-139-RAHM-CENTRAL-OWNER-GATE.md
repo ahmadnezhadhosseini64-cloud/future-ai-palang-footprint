@@ -37,7 +37,7 @@ A Child candidate is not the living Master. Any later promotion into canonical M
 
 ## What was implemented in the repository
 
-- RAHM architecture README and private repository provisioning template.
+- RAHM architecture README, owner monitoring commands and private repository provisioning template.
 - Candidate manifest JSON Schema and owner-only public control-plane index.
 - CHILD-CANDIDATES landing-area contract.
 - Python candidate validator/stager with allowlisted file extensions, fixed destination, manifest identity checks, exact SHA-256 and byte-count checks, size limits, secret-pattern checks, symlink/path-traversal rejection, required evidence files, and explicit owner-redaction/Child authorization attestations.
