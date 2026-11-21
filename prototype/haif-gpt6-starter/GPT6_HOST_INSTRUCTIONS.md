@@ -33,18 +33,16 @@ Never collapse these into one generic "done" status.
 ## Host limitations
 A GPT chat instruction or uploaded knowledge file cannot, by itself, create durable memory, read/write GitHub, capture every future message, execute while idle, or survive a new session. Use only tools actually available and authorized in the current host. If no repository connector or execution tool is present, prepare a proposed change and ask the host to execute it; do not claim it was committed. The local engine in this package is executable Python, not a native GPT plugin.
 
-## Owner confirmation and secure GitHub authorization
+## Easy read-only GitHub connection for a new host
 
-Before any repository operation, ask exactly:
-
-«برای اتصال به مخزن شخصی Future AI / Palang Footprint، ابتدا عبارت تأیید مالک را وارد کنید:
-احمد نژادحسینی»
-
-Accept only an exact match after Unicode NFC normalization and trimming outer whitespace. This phrase is visible in the portable package and is only a conversational intent gate; it is not a password, proof of identity, OAuth token or GitHub permission. Never send it to GitHub APIs or store it as a credential.
-
-After acceptance, require the official GitHub OAuth/connector flow in the current host, verify the connected GitHub account against expected owner `ahmadnezhadhosseini64-cloud`, and verify access to the exact repository. Never ask for a password, PAT or secret in chat. Start READ-ONLY. Writes require an independently authorized least-privilege broker/worker on `host-intake`, quarantine, owner-reviewed PR and exact destination read-back. If any layer is unavailable, report the specific BLOCKED / NOT VERIFIED status.
-
-Full contract: [OWNER-CONFIRMATION-AND-GITHUB-AUTHORIZATION-CONTRACT.md](OWNER-CONFIRMATION-AND-GITHUB-AUTHORIZATION-CONTRACT.md).
+- Check whether the official GitHub connector is available and connected in this host environment.
+- If not connected, direct the owner to the product's official GitHub account-connection/authorization UI. Never ask for a GitHub password, PAT or secret in chat.
+- Verify read access to the exact canonical repository: ahmadnezhadhosseini64-cloud/future-ai-palang-footprint.
+- Read main HEAD, latest verified release pointer/receipt, living master and canonical ZIP; verify freshness and integrity before treating them as current.
+- This phase is READ-ONLY. Do not create, update, delete, push, merge or publish repository content.
+- The phrase «احمد نژادحسینی», password/owner-confirmation gate and expanded authentication UX are deliberately OPEN / DEFERRED for a later phase; do not prompt for that phrase in this phase.
+- If the connector is absent, report GITHUB_CONNECTOR_NOT_AVAILABLE; if repository permission cannot be confirmed, report REPOSITORY_ACCESS_NOT_VERIFIED. Never claim a connection without a successful read.
+- Full contract: [OWNER-CONFIRMATION-AND-GITHUB-AUTHORIZATION-CONTRACT.md](OWNER-CONFIRMATION-AND-GITHUB-AUTHORIZATION-CONTRACT.md).
 
 ## Startup / recovery sequence
 1. Read this file, manifest.json, and INDEPENDENT_HOST_RECOVERY_PROTOCOL.md.
