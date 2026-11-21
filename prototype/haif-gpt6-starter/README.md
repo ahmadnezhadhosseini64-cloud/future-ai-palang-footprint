@@ -89,7 +89,7 @@ The v0.3.4 archive is historical verified evidence. Version 0.3.5 is source-only
 - Historical v0.3.7 receipt remains preserved: run [40546488170](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40546488170), 30,573 bytes, SHA-256 `fcc09933dd67ca1300af051e14dbcf80c76b6f620dc6c9623323caca307969fb`.
 - The test-only source change after the earlier v0.3.7 receipt changed the packaged ZIP bytes without advancing the internal version. This was the historical in-place v0.3.8 update, retaining the same package identity and canonical ZIP filename.
 - The v0.3.8 build receipt is historical evidence only. The current v0.3.9 archive must be resolved from the newest successful exact-main-SHA workflow receipt.
-- Current recovery chain: POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → POINT-0/069 → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122 → POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051 → NEXT-051. The living master source is v1.7.74; the package workflow copies that exact source from the same checkout and verifies the paired artifact. This README is package source, not a substitute for the external build receipt.
+- Preserved parent history: POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → POINT-0/069 → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122. Current chain: POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051. The living master source is v1.7.74; the package workflow copies that exact source from the same checkout and verifies the paired artifact. This README is package source, not a substitute for the external build receipt.
 - Real independent-host acceptance remains NOT RUN.
 
 
@@ -103,7 +103,7 @@ This is a preserved historical baseline, not the current pointer. Its prior rece
 
 ## CURRENT-117 — latest exact-source delivery baseline
 
-- Current chain: POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → POINT-0/069 → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122 → POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051 → NEXT-051.
+- Preserved parent chain: POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → POINT-0/069 → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122.
 - Delivery contract: `LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-CONTRACT.md`.
 - Internal package version: 0.3.9. Stable package ID and canonical ZIP filename remain unchanged.
 - The matching living mother is copied into the ZIP as `LIVING_MASTER_REFERENCE.md` by the exact-checkout workflow.
