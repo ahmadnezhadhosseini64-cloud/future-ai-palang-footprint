@@ -25,3 +25,16 @@ Create CURRENT-131 0++ universal host package checkpoint
 - Graph identity, parent and time triage: OPEN.
 - Issues #20 and #21: OPEN / preserved in NEXT-051.
 - Mirror lineage [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) and [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md) remains historical and linked, not replaced by EVT-0297.
+
+
+## Explicit open-gate register — do not infer closure
+
+- Full state recovery: OPEN / NOT RUN.
+- Clean host import: OPEN / NOT RUN.
+- Second host import: OPEN / NOT RUN.
+- Restart persistence: OPEN / NOT RUN.
+- Idle background capture: OPEN / NOT PROVEN.
+- Graph identity parent time triage: OPEN.
+- Issue #20: OPEN.
+- Issue #21: OPEN.
+- CURRENT-065/CURRENT-066: OPEN; no winner selected.
