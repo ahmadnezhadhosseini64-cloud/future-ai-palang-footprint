@@ -1,4 +1,4 @@
-# POINT-0/072 — تأیید مالک و اتصال امن GitHub (0++)
+# POINT-0/072 — اتصال آسان و خواندنی میزبان جدید به GitHub (0++)
 
 - Parent: canonical POINT-0/071; 0+ و 0++ فقط نشانگر روی همان ریشهٔ canonical هستند، نه ریشهٔ جدید.
 - Input: IN-115
@@ -7,18 +7,29 @@
 - Time binding: TIME-BINDING-EVT-0291
 - Current: CURRENT-125
 - Sole active queue: NEXT-051
-- Status: PROPOSED / HOST-INTAKE BRANCH / NOT MERGED / PACKAGE BUILD PENDING / HOST ACCEPTANCE NOT RUN
+- Status: PROPOSED / HOST-INTAKE BRANCH / NOT MERGED / READ-ONLY TARGET / HOST ACCEPTANCE NOT RUN
+- Deferred: owner phrase/password gate and any write authorization remain OPEN for a later design phase.
 
-## هدف
-هر میزبان جدیدی که سند مادر یا ZIP را دریافت می‌کند، پیش از هر عملیات GitHub عبارت تأیید مالک «احمد نژادحسینی» را درخواست کند؛ سپس احراز هویت واقعی GitHub را فقط از طریق OAuth/connector رسمی همان میزبان انجام دهد.
+## هدف فعلی
+هر میزبان جدیدی که سند مادر یا ZIP را دریافت می‌کند، بتواند با کمترین اصطکاک از طریق اتصال رسمی GitHub در همان محیط میزبان، به مخزن شخصی زیر دسترسی خواندنی پیدا کند:
+https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
 
-## تصمیم امنیتی
-عبارت مذکور در سند و ZIP قابل مشاهده است؛ بنابراین رمز یا اثبات هویت نیست و هیچ مجوز مخزنی ایجاد نمی‌کند. این عبارت فقط گیت مکالمه‌ای برای تأیید قصد کاربر است. حساب GitHub متصل‌شده باید با مالک مورد انتظار `ahmadnezhadhosseini64-cloud` تطبیق داده شود. دسترسی اولیه READ-ONLY است. هرگونه نوشتن نیازمند broker/worker کم‌مجوز، host-intake، quarantine، PR بازبینی‌شده توسط مالک و read-back است. هرگز رمز/PAT/Secret را در چت نخواه.
+## مسیر اتصال
+1. میزبان وجود ابزار/اتصال رسمی GitHub را بررسی کند.
+2. اگر حساب GitHub هنوز در رابط رسمی میزبان متصل نیست، کاربر را به همان رابط اتصال/مجوزدهی هدایت کند؛ هیچ رمز، PAT یا Secret در چت درخواست نشود.
+3. پس از اتصال، دسترسی خواندنی به مخزن دقیق و شاخهٔ main را آزمایش کند.
+4. HEAD SHA، سند مادر، آخرین Release pointer، ZIP و receipt را بازیابی و تطبیق دهد.
+5. اگر connector، مجوز یا مخزن در دسترس نیست، وضعیت دقیق BLOCKED / NOT CONNECTED / NOT VERIFIED ثبت شود؛ موفقیت جعل نشود.
+
+## مرز فعلی
+- این مرحله فقط کشف connector، راهنمای اتصال رسمی و خواندن/بازیابی مخزن است.
+- نوشتن به مخزن، اجرای تغییرات، دسترسی main و broker خارج از دامنهٔ فعلی‌اند.
+- عبارت «احمد نژادحسینی» و طراحی هر نوع password/owner-confirmation gate برای مرحلهٔ بعد OPEN / DEFERRED می‌ماند؛ این عبارت در این مرحله نه درخواست می‌شود و نه credential محسوب می‌شود.
+- امنیت محیط مقصد با «مستقل بودن» فرض نمی‌شود؛ هیچ دسترسی نوشتنی داده نمی‌شود.
+- سند مادر و ZIP هر دو باید همین مسیر read-only را مستقل توضیح دهند.
 
 ## تحویل
-قرارداد کامل در `prototype/haif-gpt6-starter/OWNER-CONFIRMATION-AND-GITHUB-AUTHORIZATION-CONTRACT.md` و متن bootstrap و دستورالعمل میزبان به‌روزرسانی شده‌اند. سند مادر به v1.7.79 ارتقا یافته است. بستهٔ ZIP هنوز بازسازی و تأیید نشده؛ میزبان مستقل نیز هنوز آزموده نشده است.
+این پیشنهاد در همان شاخهٔ host-intake ثبت می‌شود. سند مادر هدف v1.7.79 و منبع بسته هدف 0.4.4 باقی می‌مانند. ZIP canonical هنوز بازسازی/تأیید نشده و میزبان مستقل هنوز آزموده نشده است.
 
 ## لنگر زمانی
-- مشاهدهٔ ساعت محیط: 2026-11-21 09:32 Asia/Tehran / 06:02 UTC.
-- زمان دقیق ارسال پیام کاربر: UNKNOWN / UNVERIFIED.
-- زمان commit نهایی این شاخه: باید از GitHub پس از ثبت و read-back استخراج شود؛ زمان مشاهده جایگزین آن نیست.
+زمان commit نهایی این شاخه باید پس از آخرین تغییر از GitHub استخراج شود؛ زمان مشاهده یا زمان پیام کاربر جایگزین آن نیست.
