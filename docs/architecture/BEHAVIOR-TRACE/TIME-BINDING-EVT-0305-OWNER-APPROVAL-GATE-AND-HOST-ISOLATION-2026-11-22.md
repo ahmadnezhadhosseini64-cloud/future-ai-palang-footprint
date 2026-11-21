@@ -7,4 +7,4 @@
 - Tehran equivalent (Asia/Tehran): 2026-11-22T02:22:59+03:30
 - Timestamp source: GitHub commit metadata for the exact EVT-0305 commit.
 - User-message time: not substituted for commit time.
-- Status: COMMIT-TIME VERIFIED; event is on proposal branch pending merge/read-back.
+- Status: COMMIT-TIME VERIFIED; event was merged to main through PR #93; 12/12 changed files passed blob-SHA read-back.
