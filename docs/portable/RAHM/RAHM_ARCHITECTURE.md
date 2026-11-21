@@ -2,7 +2,7 @@
 Version 1.0.3 | Package ID: HAIF-RAHM-PORTABLE-20261024-001
 
 Current canonical continuation: POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051
-Living master: 1.7.87. Portable starter 0.4.7 is verified by workflow 44920781712; next paired target is 0.4.8.
+Living master: 1.7.87. Portable starter 0.4.8 is verified by workflow 44921364797; 0.4.7 and earlier receipts remain preserved.
 
 ## Release and dependency lanes
 - Latest Runnable contains only implemented and tested capabilities with exact-source evidence.
