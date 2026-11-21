@@ -1042,3 +1042,16 @@ Canonical point label: POINT-0/077 (۰++). Graph/identity/parent/time triage rem
 - Correction advanced test_engine.py expected chain; four workflows passed at SHA 9190b0a9c2dcf1db0133bd937be0bb1a81d3624c (run IDs in IN-123).
 - PR #64 remains the integration path. Exact release archive and clean-host acceptance are separate gates.
 - No new queue; NEXT-051 remains the sole queue.
+
+
+## CURRENT-133 — CI mismatch preservation and authorized repair
+
+- Owner approval: IN-123.
+- Repair record: OUT-122.
+- Event: EVT-0299; repository time binding: TIME-BINDING-EVT-0299.
+- Checkpoint: CURRENT-133; all remain under POINT-0/077 (0++).
+- Original failure is preserved in Actions run 44910997351; follow-up stale package-copy recurrence is preserved in runs 44912041984 and 44912042023.
+- Root cause: package lineage assertion and the README/GPT6 host instructions were not all advanced to the same CURRENT checkpoint.
+- Additive repair: test_engine.py, README.md and GPT6_HOST_INSTRUCTIONS.md now carry the same CURRENT-133 chain. Historical failure text and run evidence are not deleted.
+- Current exact-head CI must pass after these edits. Earlier green runs apply only to their own SHA.
+- Continue only through NEXT-051; do not create another queue.
