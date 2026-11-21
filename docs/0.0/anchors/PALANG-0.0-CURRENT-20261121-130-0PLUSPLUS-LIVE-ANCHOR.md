@@ -1,0 +1,38 @@
+# CURRENT-130 — نقطهٔ ۰++ زنده و تداوم معماری میزبان مستقل
+
+- Status: ACTIVE / LIVING / REPOSITORY-INTEGRATION-PENDING
+- Parent: CURRENT-129
+- Point: POINT-0/077 (۰++)
+- Input/output: IN-120 → OUT-119
+- Event/time: EVT-0296 → TIME-BINDING-EVT-0296
+- Sole governing queue: NEXT-051
+- Living mother target: version 1.7.84
+- Canonical repository: ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
+
+## Definition
+این checkpoint نقطهٔ آغازین ۰++ در ادامهٔ ریشهٔ واحد POINT-0 است. هدف، حفظ اتصال همهٔ تعامل‌ها، نقاط، ورودی/خروجی‌ها، رویدادها، لنگرهای زمانی و وضعیت‌های جاری به یک معماری قابل بازیابی است.
+
+## Connected lineage
+POINT-0/076 → CURRENT-129 → POINT-0/077 (۰++) → IN-120 → OUT-119 → EVT-0296 → TIME-BINDING-EVT-0296 → CURRENT-130 → NEXT-051.
+
+## Current host-transfer objective
+یک سند مرجع مادر و یک بستهٔ ZIP مستقل و همگام فراهم شود تا هرکدام در نشست تازهٔ یک GPT هم‌خانواده قابل پردازش باشد. میزبان مقصد باید بدون اتکا به تاریخچهٔ چت، معماری را از سند یا ZIP بازیابی کند، سپس از طریق OAuth امن همان نشست به مخزن متصل شود و در صورت وجود قابلیت واقعی، workspace مستقل بسازد.
+
+## Acceptance state
+- Owner designation of this interaction as 0++: CONFIRMED.
+- One-message host transfer protocol: MERGED TO MAIN and read-back verified.
+- Living master and index update for POINT-0/077: PENDING merge/read-back.
+- ZIP synchronized to resulting exact main HEAD: PENDING rebuild and receipt.
+- New destination session: NOT CREATED / NOT VERIFIED.
+- GitHub OAuth in destination session: OPEN / NOT RUN.
+- Real destination workspace/checkout: OPEN / NOT RUN.
+- Destination execution and host acceptance: OPEN / NOT RUN.
+
+## Security and execution
+- “احمد نژادحسینی” is a text handshake only; not a password, OAuth approval, token or authentication factor.
+- Owner approval authorizes beginning the OAuth/workspace steps, not bypassing the secure destination UI.
+- READ, EXECUTE and WRITE remain separate. WRITE is branch-scoped and permission-dependent; no direct main push.
+- No credentials in chat or repository.
+
+## Continuation
+Continue through NEXT-051 only. Preserve previous anchors and unresolved gaps. Do not create NEXT-052 or a parallel project.
