@@ -7,7 +7,7 @@
 - Host role: FIRST_HOST / HOST-001
 - Authentication gate: OPEN / DEFERRED
 - Contract: [FHRWE-2026-11-21-001](../../reference/REFERENCE-DOCUMENTS/FIRST-HOST-RESTRICTED-WORKSPACE-EXECUTION-AND-READ-ONLY-REPOSITORY-CONTRACT-2026-11-21-001.md)
-- Event time: PENDING exact final commit metadata.
+- Event time: 2026-11-21T07:49:07Z / Asia/Tehran 2026-11-21T11:19:07+03:30; registration commit SHA 6e7f58ac225b982435d022d57a905f00afe97efb.
 - Exact user-message timestamp: UNKNOWN / UNVERIFIED.
 
 ## رفتار و تصمیم
