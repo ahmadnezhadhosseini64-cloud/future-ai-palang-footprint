@@ -2179,3 +2179,11 @@ The canonical chain is [POINT-0/032](./anchors/GPT6-RAHM-USER-POINT-0-20261026-0
 [POINT-0/074](anchors/GPT6-RAHM-USER-POINT-0-20261121-074-0PLUSPLUS-TO-0-0-COMPLETION.md) → [IN-117](anchors/PALANG-0.0-IN-20261121-117-0PLUSPLUS-TO-0-0-COMPLETION.md) → [OUT-116](anchors/PALANG-0.0-OUT-20261121-116-0PLUSPLUS-TO-0-0-COMPLETION.md) → [EVT-0293](../architecture/BEHAVIOR-TRACE/EVT-0293-0PLUSPLUS-TO-0-0-COMPLETION-2026-11-21.md) → [TIME-BINDING-EVT-0293](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0293-0PLUSPLUS-TO-0-0-COMPLETION-2026-11-21.md) → [CURRENT-127](anchors/PALANG-0.0-CURRENT-20261121-127-0PLUSPLUS-TO-0-0-COMPLETION.md) → [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 
 0++ is a marker on the single canonical POINT-0 root. The next 0.0 objective is the completion of NEXT-051; no parallel queue is created. Current package source v0.4.5 / living master 1.7.81 requires exact-HEAD audit, conformance and canonical ZIP receipt before release acceptance.
+
+
+## تازه‌ترین زنجیره — POINT-0/077 (۰++) → CURRENT-131 → NEXT-051
+
+[POINT-0/077 (۰++)](anchors/GPT6-RAHM-USER-POINT-0-20261121-077-0PLUSPLUS-LIVE-ANCHOR.md) → [IN-121](anchors/PALANG-0.0-IN-20261121-121-UNIVERSAL-HOST-PACKAGE-AND-0PLUSPLUS-CONTINUATION.md) → [OUT-120](anchors/PALANG-0.0-OUT-20261121-120-UNIVERSAL-HOST-PACKAGE-IMPLEMENTATION.md) → [EVT-0297](../architecture/BEHAVIOR-TRACE/EVT-0297-UNIVERSAL-HOST-PACKAGE-AND-POINT-0-077-CONTINUATION-2026-11-21.md) → [TIME-BINDING-EVT-0297](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0297-UNIVERSAL-HOST-PACKAGE-2026-11-21.md) → [CURRENT-131](anchors/PALANG-0.0-CURRENT-20261121-131-0PLUSPLUS-UNIVERSAL-HOST-PACKAGE.md) → [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+
+این نقطه ادامهٔ همان ریشهٔ واحد ۰++ است؛ نه پروژه یا صف موازی. بستهٔ اصلی با همان شناسه و نام ZIP توسعه می‌یابد. نسخهٔ داخلی ۰.۴.۶ نامزد است و تأیید نهایی بسته منوط به آزمون exact-SHA و بازخوانی انتشار پایدار است. پذیرش میزبان مستقل همچنان جداگانه باز است.
+
