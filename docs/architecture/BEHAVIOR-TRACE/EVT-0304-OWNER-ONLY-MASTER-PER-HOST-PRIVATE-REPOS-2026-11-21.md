@@ -3,7 +3,7 @@
 - Event ID: EVT-0304
 - Parent: POINT-0/084 → IN-127 → OUT-126
 - Status: DESIGN REGISTERED / MERGED TO MAIN / IMPLEMENTATION PARTIAL
-- UTC event time: PENDING COMMIT METADATA
+- UTC event time: 2026-11-21T19:55:28Z (Git commit metadata for event artifact).
 
 ## Event
 
