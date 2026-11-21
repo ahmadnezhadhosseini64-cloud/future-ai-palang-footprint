@@ -38,3 +38,6 @@ Create CURRENT-131 0++ universal host package checkpoint
 - Issue #20: OPEN.
 - Issue #21: OPEN.
 - CURRENT-065/CURRENT-066: OPEN; no winner selected.
+
+
+Canonical point label: POINT-0/077 (۰++). Graph/identity/parent/time triage remains OPEN; no historical ambiguity is silently resolved.
