@@ -1,4 +1,4 @@
-# OUT-114 — خروجی: قرارداد تأیید مالک و اتصال امن GitHub
+# OUT-114 — خروجی: مسیر آسان اتصال خواندنی میزبان جدید به GitHub
 
 - Point: POINT-0/072.
 - Input: IN-115.
@@ -7,18 +7,17 @@
 - Current: CURRENT-125.
 - Sole queue: NEXT-051.
 
-## خروجی ثبت‌شده در شاخهٔ پیشنهاد
-1. قرارداد مستقل `OWNER-CONFIRMATION-AND-GITHUB-AUTHORIZATION-CONTRACT.md` ساخته شد.
-2. پیام واحد میزبان، دستورالعمل میزبان و README بسته به درخواست عبارت «احمد نژادحسینی» پیش از اتصال به‌روزرسانی شدند.
-3. سند مادر به نسخهٔ 1.7.79 ارتقا یافت و همین سیاست را ثبت کرد.
-4. manifest بسته به نسخهٔ منبع 0.4.4 ارتقا یافت.
-5. عبارت تأیید به‌صراحت از رمز و credential جدا شد؛ OAuth/connector واقعی، تطبیق حساب مالک، READ-ONLY-first و نوشتن محدود از مسیر broker/host-intake/PR/read-back الزامی است.
+## خروجی طراحی‌شده در شاخهٔ پیشنهاد
+1. پیام واحد میزبان به مسیر کوتاه اتصال از طریق GitHub connector رسمی همان محیط هدایت می‌شود.
+2. اگر connector متصل نیست، میزبان فقط راهنمای اتصال از رابط رسمی محصول را نشان می‌دهد؛ هیچ credential در چت جمع‌آوری نمی‌کند.
+3. پس از اتصال، میزبان دسترسی READ-ONLY به مخزن دقیق و بازیابی HEAD، سند مادر، آخرین ZIP و رسیدها را بررسی می‌کند.
+4. قرارداد میزبان، دستورالعمل‌ها، README، manifest و سند مادر دامنهٔ فعلی را به read-only connection محدود می‌کنند.
+5. عبارت «احمد نژادحسینی» و طراحی password/owner-confirmation gate به مرحلهٔ بعد موکول و OPEN نگه داشته می‌شوند.
 
 ## وضعیت واقعی
-- Repository branch proposal: ثبت شده در `host-intake-owner-confirmation-github-auth-20261121`.
+- Proposal branch: host-intake-owner-confirmation-github-auth-20261121.
 - Main merge: NOT DONE.
-- Package ZIP rebuild and exact receipt: PENDING.
-- Independent host OAuth/phrase test: NOT RUN.
-- Broker deployment / host-intake enforcement: NOT VERIFIED.
-- GitHub main branch protection: همچنان باید جداگانه بررسی و پیکربندی شود.
+- Canonical ZIP rebuild and exact receipt: PENDING.
+- Independent-host connector/read-only test: NOT RUN.
+- Repository write access, broker, host-intake write path and branch protection: OUT OF SCOPE FOR THIS PHASE / OPEN.
 - NEXT-051 remains the sole active execution queue; no parallel queue created.
