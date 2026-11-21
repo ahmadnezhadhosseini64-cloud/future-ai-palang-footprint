@@ -1,7 +1,7 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.8.31",
-  "manifest_status": "Package source 0.4.4 is proposed on host-intake branch host-intake-owner-confirmation-github-auth-20261121. POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051 is registered in source indexes and live references. Main integration, exact-current-main RAHM build/receipt, canonical ZIP rebuild, and independent-host GitHub connector/read-only acceptance remain OPEN / NOT RUN. Owner phrase/password gate and repository write authorization are deferred.",
+  "version": "1.8.32",
+  "manifest_status": "Package source 0.4.4 is proposed on host-intake branch host-intake-owner-confirmation-github-auth-20261121. The canonical repository is currently PUBLIC; POINT-0/072 defines anonymous public READ-ONLY recovery from its GitHub URL, with an official connector optional. Chain POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051 is registered in source indexes and live references. Main integration, exact-current-main RAHM build/receipt, canonical ZIP rebuild, and independent-host read-only acceptance remain OPEN / NOT RUN. Owner phrase/password gate and repository write authorization are deferred.",
   "created_from_checkpoint": "HAIF-POINT-0-044-STARTER-ZIP-INPLACE-UPDATE-20261027 + HAIF-CURRENT-094",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [
