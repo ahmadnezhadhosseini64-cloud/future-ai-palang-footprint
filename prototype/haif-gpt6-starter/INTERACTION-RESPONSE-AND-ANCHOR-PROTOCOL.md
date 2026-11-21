@@ -60,8 +60,11 @@ The event ledger preserves interaction continuity and audit history. It does not
 If no actual producer or authorized adapter connection exists, mark NOT_CONNECTED / NOT_CAPTURED. A ZIP or written protocol alone does not capture all conversations. Existing adapter code and synthetic CI PASS are not proof of a live host connection or deployed worker. Never include raw conversations by default, secrets or credentials.
 
 
-## Current package — 0.4.3 / POINT-0/071
+## Current package — 0.4.4 / POINT-0/072
 
 Internal version: 0.4.4
 Current chain tail: POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051
 Single-message GPT host setup: `ONE_MESSAGE_HOST_BOOTSTRAP_FA.md`. Package identity and canonical ZIP filename remain unchanged.
+
+
+EVT-0290 remains reserved for its earlier mirror-only record. The current owner-authorized continuation is uniquely registered as EVT-0291.
