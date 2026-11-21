@@ -1,3 +1,16 @@
+## Current host-security and RAHM entry — POINT-0/086 (0++)
+
+- Current checkpoint: docs/0.0/anchors/PALANG-0.0-CURRENT-20261122-139-RAHM-CENTRAL-OWNER-GATE.md
+- RAHM architecture: docs/architecture/RAHM/README.md
+- Private RAHM setup: docs/architecture/RAHM/PRIVATE-RAHM-REPOSITORY-TEMPLATE.md
+- Host security: docs/architecture/HOST-SECURITY/OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOSITORIES.md
+- Owner-only bot PR workflow: .github/workflows/rahm-owner-controlled-child-promotion.yml
+- Master remains PUBLIC READ / owner-only WRITE. Hosts never receive master write credentials or bypass.
+- Raw/private host exports belong in the owner-created PRIVATE RAHM repository; the public master stores only sanitized Child candidates and governance code.
+- Operational setup remains pending: private RAHM repo, GitHub App, secrets/variables, ChatGPT connector access, Ruleset approval=1 and live isolation tests.
+
+---
+
 # future-ai-palang-footprint
 Future AI / Palang Footprint — official project repository
 
