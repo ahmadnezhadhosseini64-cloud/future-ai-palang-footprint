@@ -183,4 +183,4 @@ The workspace's OWNER_TASKS file is the explicit owner-maintained allowlist. Eve
 
 The host may prepare local files and results only inside its designated workspace. It presents outputs to the owner; it never writes or synchronizes them into GitHub. Only the owner changes canonical repository content and task policy. The host retrieves owner-published changes read-only on a later sync.
 
-- TIME-BINDING-EVT-0292 was read back after registration; its own update commit is `9fda454fd41a7f732c7a8f7640d5ceeb17bbc571` at UTC `2026-11-21T07:56:16Z` / Tehran `2026-11-21T11:26:16.000+03:30`.
+- TIME-BINDING-EVT-0292 was read back after registration; its binding commit is `d38f463fbee2afd4fcedb568fd0a851e95075bb7` at UTC `2026-11-21T07:57:49Z` / Tehran `2026-11-21T11:27:49+03:30`.
