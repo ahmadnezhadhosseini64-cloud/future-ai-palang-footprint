@@ -3,8 +3,8 @@
 Package family: HAIF GPT-6 Portable Starter
 Stable package ID: `HAIF-GPT6-PORTABLE-STARTER-20261025-004`
 Canonical ZIP filename: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`
-Internal package version: 0.4.8
-Current chain: POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051
+Internal package version: 0.4.9
+Current chain: POINT-0/079 → CURRENT-132 → POINT-0/080 → IN-123 → OUT-122 → EVT-0300 → TIME-BINDING-EVT-0300 → CURRENT-133 → NEXT-051
 Universal host entry: UNIVERSAL_AI_HOST_ENTRY_FA.md.
 Project source of truth: `ahmadnezhadhosseini64-cloud/future-ai-palang-footprint`
 Current chain: POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051
@@ -149,3 +149,7 @@ Internal package version: 0.4.5. Living master: 1.7.81. Current chain: POINT-0/0
 ## Current package — 0.4.5 / POINT-0/074 (0++ marker)
 
 Internal package version: 0.4.5. Living master: 1.7.81. Current chain: POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051. The 0++ marker belongs to the single canonical Point 0 root; the next target is completion of the existing 0.0 continuation. NEXT-051 remains the sole active queue. The canonical package ID and ZIP filename remain unchanged. Exact-head tests, fresh build receipt, SHA-256, ZIP CRC/inventory/read-back and paired-master byte match are required before PACKAGE_VERIFIED. Independent-host acceptance, OAuth, live capture, durable workspace and restart persistence remain OPEN / NOT VERIFIED until direct receipts exist.
+
+
+## Public repository onboarding — POINT-0/080
+The repository is intentionally Public. New hosts can read, clone or fetch the canonical source anonymously over HTTPS; OAuth is not a prerequisite for READ. OAuth/secure credentials are required only for private resources or authenticated write-back. A host without WRITE can still recover source, execute locally if supported, and submit a patch/proposal for owner review. Hosts remain replaceable execution agents; MASTER and merge/promotion authority stay with the owner.
