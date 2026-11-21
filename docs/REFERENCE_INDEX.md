@@ -4,7 +4,7 @@
 - Living mother target: version 1.7.84.
 - Meaning: this conversation is the current 0++ live continuation marker on the existing POINT-0 root; it does not create a parallel root, project or queue.
 - Host transfer remains the same child execution path: one-message living reference + independently usable ZIP; destination OAuth, real workspace and host acceptance require direct destination evidence.
-- The prior ZIP build is valid for its recorded prior HEAD only. Rebuild and receipt verification on the resulting exact main HEAD are required before claiming the package is synchronized to POINT-0/077.
+- POINT-0/077 and mother 1.7.84 are merged and read-back verified. The prior ZIP build is valid for its recorded prior HEAD only; exact-current-main rebuild and receipt verification are still required.
 
 ## Latest owner-approved continuation — POINT-0/076 / CURRENT-129
 

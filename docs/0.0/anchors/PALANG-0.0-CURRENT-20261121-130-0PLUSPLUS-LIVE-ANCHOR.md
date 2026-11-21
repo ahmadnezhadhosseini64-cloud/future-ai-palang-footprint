@@ -1,6 +1,6 @@
 # CURRENT-130 — نقطهٔ ۰++ زنده و تداوم معماری میزبان مستقل
 
-- Status: ACTIVE / LIVING / REPOSITORY-INTEGRATION-PENDING
+- Status: ACTIVE / LIVING / REPOSITORY-INTEGRATED / MAIN-READBACK-VERIFIED
 - Parent: CURRENT-129
 - Point: POINT-0/077 (۰++)
 - Input/output: IN-120 → OUT-119
@@ -21,8 +21,8 @@ POINT-0/076 → CURRENT-129 → POINT-0/077 (۰++) → IN-120 → OUT-119 → EV
 ## Acceptance state
 - Owner designation of this interaction as 0++: CONFIRMED.
 - One-message host transfer protocol: MERGED TO MAIN and read-back verified.
-- Living master and index update for POINT-0/077: PENDING merge/read-back.
-- ZIP synchronized to resulting exact main HEAD: PENDING rebuild and receipt.
+- Living master and index update for POINT-0/077: MERGED and main read-back verified.
+- ZIP synchronized to resulting exact main HEAD: PENDING exact-head rebuild and receipt.
 - New destination session: NOT CREATED / NOT VERIFIED.
 - GitHub OAuth in destination session: OPEN / NOT RUN.
 - Real destination workspace/checkout: OPEN / NOT RUN.

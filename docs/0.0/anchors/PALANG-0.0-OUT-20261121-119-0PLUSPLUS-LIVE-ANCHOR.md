@@ -1,6 +1,6 @@
 # OUT-119 — خروجی: ثبت نقطهٔ ۰++ و اتصال به زنجیرهٔ اصلی
 
-- Status: PREPARED / OWNER-APPROVED / REPOSITORY-INTEGRATION-PENDING
+- Status: PREPARED / OWNER-APPROVED / REPOSITORY-INTEGRATED / MAIN-READBACK-VERIFIED
 - Parent: IN-120
 - Point: POINT-0/077 (۰++)
 - Previous checkpoint: CURRENT-129
