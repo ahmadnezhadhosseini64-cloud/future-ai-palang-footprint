@@ -31,3 +31,7 @@
 بستهٔ canonical داخلی 0.4.6، 19 فایل و 24/24 آزمون استخراج‌شده PASS دارد؛ SHA-256 فایل ZIP داخلی: b9f56a360351d5ab16f07656018e576c2398a110db540138810e01358f8934fc. این receipt به source commit مشخص خود تعلق دارد و با سه commit بعدیِ مستندات/رسید فقط در صورت اثبات هم‌ارزی منبع قابل استفاده است. این نتیجه آزمون بسته است، نه پذیرش میزبان مستقل.
 
 OAuth مقصد، workspace پایدار، clean-host recovery، restart و HOST-RECOVERED: OPEN / NOT RUN.
+
+
+## Input and state links
+- [POINT-0/079](GPT6-RAHM-USER-POINT-0-20261121-079-LATEST-RUNNABLE-OPEN-DEVELOPMENT.md) → [IN-122](PALANG-0.0-IN-20261121-122-LATEST-RUNNABLE-OPEN-DEVELOPMENT.md) → [EVT-0299](../../architecture/BEHAVIOR-TRACE/EVT-0299-LATEST-RUNNABLE-OPEN-DEVELOPMENT-2026-11-21.md) → [TIME-BINDING-EVT-0299](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0299-LATEST-RUNNABLE-OPEN-DEVELOPMENT-2026-11-21.md) → [CURRENT-132](PALANG-0.0-CURRENT-20261121-132-LATEST-RUNNABLE-OPEN-DEVELOPMENT.md) → [NEXT-051](PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
