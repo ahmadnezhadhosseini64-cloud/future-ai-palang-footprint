@@ -6,6 +6,7 @@ on:
     paths:
       - "docs/architecture/RAHM/**"
       - "docs/architecture/CHILD-CANDIDATES/**"
+      - "docs/architecture/HOST-REGISTRY/**"
       - "scripts/rahm/**"
       - "tests/rahm/**"
       - "control-plane/rahm/**"
