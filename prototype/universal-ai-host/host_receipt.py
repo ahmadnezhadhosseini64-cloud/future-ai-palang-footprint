@@ -37,7 +37,7 @@ class ReceiptError(ValueError):
 def _walk(value: Any, path: str = "$") -> None:
     if isinstance(value, dict):
         for key, child in value.items():
-            if SECRET_KEY.search(str(key)):
+            if SECRET_KEY.search(str(key)) and str(key) != "secrets_present":
                 raise ReceiptError(f"secret-like field is forbidden at {path}.{key}")
             _walk(child, f"{path}.{key}")
     elif isinstance(value, list):
