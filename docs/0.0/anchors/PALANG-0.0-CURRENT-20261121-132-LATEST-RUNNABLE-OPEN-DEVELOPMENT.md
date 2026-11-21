@@ -42,7 +42,7 @@ POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 
 
 ## Acceptance
 - Owner intent: CONFIRMED.
-- Canonical package: 0.4.6; 19 files; 24/24 extracted tests PASS; internal ZIP SHA-256 b9f56a360351d5ab16f07631699cacba899f38caf4299c6572cc8a90fa25659d.
+- Canonical package: 0.4.6; 19 files; 24/24 extracted tests PASS; internal ZIP SHA-256 b9f56a360351d5ab16f07656018e576c2398a110db540138810e01358f8934fc.
 - Package build source: 0d27972ac4d45349a85551f52e3b969ee581f843.
 - Main at this point: 6ab35232404e2c5d37d48698db5d02821681b126; post-build changes are documentation/evidence-only and were checked by current-head equivalence gate.
 - Clean-host/OAuth/workspace/restart acceptance: OPEN / NOT RUN.
