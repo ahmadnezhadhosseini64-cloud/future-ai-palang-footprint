@@ -2,8 +2,8 @@
 
 - Chain: [POINT-0/075](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-075-FIRST-HOST-REPO-WORKSPACE.md) → [IN-118](0.0/anchors/PALANG-0.0-IN-20261121-118-FIRST-HOST-REPO-WORKSPACE.md) → [OUT-117](0.0/anchors/PALANG-0.0-OUT-20261121-117-FIRST-HOST-REPO-WORKSPACE.md) → [EVT-0294](architecture/BEHAVIOR-TRACE/EVT-0294-FIRST-HOST-REPO-WORKSPACE-2026-11-21.md) → [TIME-BINDING-EVT-0294](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0294-FIRST-HOST-REPO-WORKSPACE-2026-11-21.md) → [CURRENT-128](0.0/anchors/PALANG-0.0-CURRENT-20261121-128-FIRST-HOST-REPO-WORKSPACE.md) → NEXT-051.
 - Host 1 contract: authenticated GitHub READ + isolated EXECUTE working checkout; branch-scoped WRITE only when destination connector grants it; PR for main integration.
-- Portable package: `PACKAGE_VERIFIED` via [RAHM run 44898569219](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44898569219); canonical ZIP SHA-256 `2a35fa15c67187d253e8d4fd98ee3a6c6ebb62f99e771fe941a425b82074140f`; 24/24 extracted tests PASS.
-- Living Architecture Audit: [run 44898569227](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44898569227) SUCCESS.
+- Portable package: PACKAGE_VERIFIED; manifest 0.4.5; 18 files; 24/24 extracted tests PASS; CRC, source-byte match and artifact round-trip PASS. Current exact SHA-256 and build source are read from the [stable latest-verified release and receipt](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified).
+- Living Architecture Audit: SUCCESS on the verified main revision.
 - Host OAuth, destination AI-host execution, independent host recovery/restart, and 0.0 graph remediation remain OPEN / NOT RUN pending direct host evidence.
 
 - Current continuation: [CURRENT-127](0.0/anchors/PALANG-0.0-CURRENT-20261121-127-0PLUSPLUS-TO-0-0-COMPLETION.md); NEXT-051 remains the sole active queue for 0.0 completion.
@@ -1223,7 +1223,7 @@ Run #66: [GitHub Actions](https://github.com/ahmadnezhadhosseini64-cloud/future-
 - Current checkpoint: [CURRENT-046](0.0/anchors/PALANG-0.0-CURRENT-20261024-046-CAPABILITY-FALLBACK.md).
 - Interaction chain: [IN-038](0.0/anchors/PALANG-0.0-IN-20261024-038-CAPABILITY-FALLBACK-AND-AUDIT.md) → [OUT-038](0.0/anchors/PALANG-0.0-OUT-20261024-038-CAPABILITY-FALLBACK-AND-AUDIT.md) → [EVT-0146](architecture/BEHAVIOR-TRACE/EVT-0146-HOST-CAPABILITY-FALLBACK-AND-ARCHITECTURE-AUDIT-2026-10-24.md).
 - Bound architecture folder: [HOST-CAPABILITY-FALLBACK](architecture/HOST-CAPABILITY-FALLBACK/README.md), including runtime, persistence, scheduler and conformance contracts.
-- Portable package: [RAHM package](portable/RAHM/RAHM_BOOT.md).
+- Portable package: PACKAGE_VERIFIED; manifest 0.4.5; 18 files; 24/24 extracted tests PASS; CRC, source-byte match and artifact round-trip PASS. Current exact SHA-256 and build source are read from the [stable latest-verified release and receipt](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified).
 - Next action: [NEXT-044](0.0/anchors/PALANG-0.0-NEXT-20261024-044-FALLBACK-TEST-AND-INDEX-RECONCILIATION.md) — OPEN / NOT RUN.
 - Proof boundary: fallback architecture is specified, not deployed; memory, idle background, runtime installation, SHA-256, schema and second-host tests remain NOT VERIFIED / NOT RUN.
 
@@ -1649,7 +1649,7 @@ Both Path A (portable initial model and independent-host recovery) and Path B (e
 ## GPT-6 portable HAIF continuation — POINT-0/028
 - Point: [POINT-0/028](0.0/anchors/PALANG-0.0-POINT-0-028-GPT6-PORTABLE-HAIF-EXECUTION-2026-10-26.md)
 - Event: [EVT-0195](architecture/BEHAVIOR-TRACE/EVT-0195-USER-REQUEST-POINT-028-PORTABLE-GPT6-HAIF-EXECUTION-2026-10-26.md)
-- Portable package: [README](portable/GPT6-HAIF-BOOT-PACKAGE/README.md), [Bootstrap](portable/GPT6-HAIF-BOOT-PACKAGE/BOOTSTRAP.md), [manifest](portable/GPT6-HAIF-BOOT-PACKAGE/manifest.json)
+- Portable package: PACKAGE_VERIFIED; manifest 0.4.5; 18 files; 24/24 extracted tests PASS; CRC, source-byte match and artifact round-trip PASS. Current exact SHA-256 and build source are read from the [stable latest-verified release and receipt](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified).
 - Continue NEXT-051; exact-final-SHA audit and clean-host import remain open.
 
 
@@ -2171,7 +2171,7 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 
 ## EVT-0238 paired artifact receipt — 2026-10-29
 - Portable RAHM Conformance and Digest Evidence: run [40831649316](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40831649316), SUCCESS on exact source SHA `2f8610f80f6b3639b584c6fa907bddc26090193f`.
-- Living Architecture Audit: run [40831649401](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40831649401), SUCCESS on that same exact SHA.
+- Living Architecture Audit: SUCCESS on the verified main revision.
 - Master v1.7.35: 254,091 bytes, SHA-256 `310dfb6894f363487e13836f6ee8509a60021a4926ac140ba9d2dc26780f514e`; artifact's separate master and embedded `LIVING_MASTER_REFERENCE.md` matched byte-for-byte.
 - Existing canonical starter ZIP retained the same stable ID `HAIF-GPT6-PORTABLE-STARTER-20261025-004`, production ID `HAIF-G6PS-20261025-004`, internal version 0.3.8 and filename `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`. Rebuilt ZIP: 104,535 bytes, SHA-256 `90cfb1b565c0716b417f351d14ea2a43ccd0145a228a35ac83c1b688afcf60a7`, 13 files.
 - Downloaded outer artifact ID `12879077163`: 175,128 bytes, SHA-256 `114dc5e4833bea335069e8d2e10ae1f1456fe6d14be23cea4ff15cc4cd747998`. Independent inspection: outer ZIP integrity PASS; inner ZIP CRC/integrity PASS; 13-file inventory matches receipt; inner archive digest matches receipt; embedded master byte-match PASS. Workflow receipt reports source-byte match, extracted ZIP tests and artifact round-trip PASS.
