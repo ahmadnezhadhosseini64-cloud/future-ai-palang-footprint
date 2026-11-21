@@ -1,3 +1,11 @@
+## تازه‌ترین نقطهٔ جاری — POINT-0/072 → CURRENT-125 → NEXT-051
+
+[POINT-0/072](anchors/GPT6-RAHM-USER-POINT-0-20261121-072-CURRENT-CHAT-ANCHOR-0PLUS.md) → [IN-115](anchors/PALANG-0.0-IN-20261121-115-CURRENT-CHAT-ANCHOR.md) → [OUT-114](anchors/PALANG-0.0-OUT-20261121-114-CURRENT-CHAT-ANCHOR.md) → [EVT-0290](../architecture/BEHAVIOR-TRACE/EVT-0290-CURRENT-CHAT-ANCHOR-2026-11-21.md) → [TIME-BINDING-EVT-0290](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0290-CURRENT-CHAT-ANCHOR-2026-11-21.md) → [CURRENT-125](anchors/PALANG-0.0-CURRENT-20261121-125-CURRENT-CHAT-ANCHOR.md) → [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+
+این نقطه ادامهٔ همین تعامل زیر ریشهٔ canonical POINT-0 است؛ هیچ ریشه یا صف موازی ساخته نشده است. آخرین بستهٔ هم‌تراز با سند مادر جدید تا زمان build مجدد هنوز تأیید نشده است.
+
+---
+
 # پوشهٔ ۰.۰ — دفتر نقاط ادامهٔ پروژه
 
 ## فرمان تحویل آخرین نسخهٔ کامل
