@@ -181,3 +181,5 @@ For a fresh GPT-6 instance, start with ONE_MESSAGE_HOST_BOOTSTRAP_FA.md. Use the
 - Canonical root: POINT-0; 0+ and 0++ are markers on the same root.
 - Sole queue: NEXT-051. Do not create NEXT-052.
 - User-message timestamp remains UNKNOWN / UNVERIFIED unless a direct source provides it.
+
+EVT-0290 remains the earlier mirror-only event; do not reuse its identifier for this current user turn.
