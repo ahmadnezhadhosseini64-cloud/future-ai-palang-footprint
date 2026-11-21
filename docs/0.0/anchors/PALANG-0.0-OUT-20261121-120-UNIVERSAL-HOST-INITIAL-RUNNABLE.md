@@ -19,3 +19,16 @@
 
 ## مرز
 این خروجی قرارداد اجرایی را ثبت می‌کند. ادغام PR، ساخت ZIP تازه، استخراج مستقل در میزبان مقصد و تأیید OAuth/workspace باید جداگانه با شواهد واقعی ثبت شوند.
+
+
+## Cross-layer recovery links
+
+- Point: [POINT-0/078]( GPT6-RAHM-USER-POINT-0-20261121-078-UNIVERSAL-HOST-0PLUSPLUS.md )
+- Input: [IN-121]( PALANG-0.0-IN-20261121-121-UNIVERSAL-HOST-INITIAL-RUNNABLE.md )
+- Event: [EVT-0298]( ../../architecture/BEHAVIOR-TRACE/EVT-0298-UNIVERSAL-HOST-INITIAL-RUNNABLE-2026-11-21.md )
+- Current: [CURRENT-131]( PALANG-0.0-CURRENT-20261121-131-UNIVERSAL-HOST-INITIAL-RUNNABLE.md )
+- Sole next: [NEXT-051]( PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md )
+- Living master: [سند مرجع مادر]( ../../architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md )
+- Independent-host recovery proof protocol: [INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL]( ../../architecture/مدل%20اولیه%20AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md )
+- Package recovery protocol: [INDEPENDENT_HOST_RECOVERY_PROTOCOL]( ../../../prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md )
+- Export manifest: [EXPORT_MANIFEST]( ../../portable/RAHM/EXPORT_MANIFEST.json )
