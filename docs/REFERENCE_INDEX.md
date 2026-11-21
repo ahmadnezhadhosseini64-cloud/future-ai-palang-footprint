@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-11-21 — POINT-0/072 / IN-115 / OUT-114 / EVT-0291 / TIME-BINDING-EVT-0291 / CURRENT-125 linked on the host-intake proposal branch; NEXT-051 remains the sole active queue; owner phrase/password gate and write authorization remain OPEN / DEFERRED; main integration and external-host acceptance NOT RUN.
+**Last Updated:** 2026-11-21 — POINT-0/072 / IN-115 / OUT-114 / EVT-0291 / TIME-BINDING-EVT-0291 / CURRENT-125 linked on the host-intake proposal branch; repository currently PUBLIC and anonymous READ-ONLY recovery is the primary host path; NEXT-051 remains sole active queue; owner phrase/password gate and write authorization OPEN / DEFERRED; main integration and external-host acceptance NOT RUN.
 
 ## Canonical References
 
