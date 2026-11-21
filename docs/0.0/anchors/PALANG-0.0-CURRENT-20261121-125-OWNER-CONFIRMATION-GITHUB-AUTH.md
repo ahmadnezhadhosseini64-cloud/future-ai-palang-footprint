@@ -40,3 +40,7 @@
 ## Cross-index registration status
 
 The POINT-0/072 chain is linked from docs/0.0/README.md, docs/REFERENCE_INDEX.md, the behavior-trace index, the integration-queue index, the living mother and the RAHM export manifest. This remains proposal-branch registration only; no main merge, package rebuild or external-host acceptance is implied.
+
+
+## CURRENT-125 clarification — FIRST_HOST / HOST-001
+The first new host is a constrained execution participant, not a repository maintainer. It reads the public canonical repository and runs only owner-defined tasks inside the explicitly provisioned workspace. Repository write access is prohibited. External tools and destinations are limited to owner-approved, actually provisioned permissions. Runtime identity and technical enforcement remain unverified until an independent-host acceptance test.
