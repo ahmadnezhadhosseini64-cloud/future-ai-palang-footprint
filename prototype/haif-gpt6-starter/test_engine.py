@@ -340,4 +340,5 @@ class InteractionResponseAnchorProtocolTests(unittest.TestCase):
         self.assertIn("v0.4.6", readme)
         self.assertIn("external build receipt", readme)
         self.assertIn("Previous verified v0.4.3 build receipt", readme)
+        self.assertIn(expected_chain, readme, "README.md")
         self.assertIn(expected_chain, readme)
