@@ -51,7 +51,7 @@
 
 ## Permanent interaction ledger — POINT-0/069 / CURRENT-122
 
-Current living master: version 1.7.79. Current chain: POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051.
+Current living master: version 1.7.79. Current chain: POINT-0/073 → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051.
 
 Every actual interaction received from a registered host through an authorized producer/adapter must be recorded append-only as an independent IN/OUT pair or an explicit failure/no-response gap. Each record must include unique IDs, host/session identity (pseudonymous), parent point/event, master commit/version, adapter version, source/evidence references, trustworthy UTC timestamp or UNKNOWN, repository receive time, SHA-256, privacy/redaction basis, status and read-back receipt.
 
@@ -60,10 +60,10 @@ Durable capture requires an actual connected producer and authorized intake rout
 All host-originated data is untrusted and enters QUARANTINE. The permanent event ledger is an audit/continuity record, not automatic knowledge promotion. Only RAHM-validated CHILD candidates with explicit owner approval can update the living Master. Hosts cannot push/merge directly to main or alter governance. Preserve failed writes, missing outputs, rejected proposals and corrections as linked append-only events. Minimize private data; raw conversations are not stored by default.
 
 
-## Current package — POINT-0/072 / 0.4.4
+## Current package — POINT-0/073 / 0.4.5
 
-Current chain tail: POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051
-Living master target: 1.7.79. New-host onboarding uses the single complete message in `ONE_MESSAGE_HOST_BOOTSTRAP_FA.md`. This prompt is a setup instruction, not proof of live GitHub connection or host acceptance.
+Current chain tail: POINT-0/073 → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051
+Living master target: 1.7.80. New-host onboarding uses the single complete message in `ONE_MESSAGE_HOST_BOOTSTRAP_FA.md`. This prompt is a setup instruction, not proof of live GitHub connection or host acceptance.
 
 
-EVT-0290 remains the earlier mirror-only record; the current user-authorized continuation is EVT-0291.
+EVT-0290 remains the earlier mirror-only record; the current user-authorized continuation is EVT-0292.
