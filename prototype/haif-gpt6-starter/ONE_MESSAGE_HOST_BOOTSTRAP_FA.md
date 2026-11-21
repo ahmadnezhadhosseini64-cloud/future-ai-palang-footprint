@@ -73,3 +73,5 @@ Snapshot سند مادر و ZIP باید READ-ONLY و به commit و digest دق
 ## ادامهٔ جاری ثبت‌شده — POINT-0/072
 
 زنجیرهٔ canonical جاری: POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051. سند مادر جاری 1.7.79 است. نقطهٔ 0/072 ادامهٔ همان ریشهٔ POINT-0 است؛ ریشه یا صف موازی نساز. بستهٔ دریافت‌شده باید با latest-verified-export و رسید SHA-256 دقیقاً تطبیق داده شود.
+
+EVT-0290 remains reserved for the earlier mirror-only record. The current user-authorized continuation is EVT-0291.
