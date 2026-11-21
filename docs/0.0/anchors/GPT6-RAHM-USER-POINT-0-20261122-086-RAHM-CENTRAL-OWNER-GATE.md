@@ -1,3 +1,21 @@
+## PR #97 — merge and full-tree read-back receipt
+
+- PR: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/pull/97
+- Merge commit: 67c85da41e1d455271f55eb8affbe92811e816af
+- Git commit time UTC: 2026-11-21T23:45:30Z
+- Tehran equivalent: 2026-11-22T03:15:30+03:30
+- Proposal branch head: 1601cf0da32cd8907f050a3edc2390f141ab1fe0
+- Proposal tree SHA: 9191d83e75713d95536b017563c27e326524cbe4
+- Merged main tree SHA: 9191d83e75713d95536b017563c27e326524cbe4
+- Full repository tree exact match: PASS. All 51 changed files are included in the merge tree.
+- PR RAHM Security and Promotion Conformance: PASS (run 44963255990).
+- PR Living Architecture Audit: PASS (run 44963256010).
+- Main RAHM Security and Promotion Conformance: PASS (run 44963342878).
+- Main Living Architecture Audit: PASS (run 44963342868).
+- Main Evidence Gate, Execution Controller, Pending Registration Audit and Cross-Layer Integrity: PASS.
+- Portable package build, ZIP CRC, source-byte comparison, artifact download/read-back and extracted tests passed; the final durable-release update failed with HTTP 403 because this workflow had contents:read. A follow-up change restores contents:write only for release publication, without any git push/commit to main.
+- GitHub Pages deployment initially failed to find the uploaded artifact; the failed deployment job was rerun (attempt 2) and completed SUCCESS.
+
 
 ## زنجیره و پیوندهای مستقیم
 
@@ -9,7 +27,7 @@
 # POINT-0/086 (0++) — رحم مرکزی مالک و مسیر ارتقای میزبان‌ها
 
 - Stable ID: HAIF-POINT-0-086-RAHM-CENTRAL-OWNER-GATE-2026-11-22
-- Status: ACTIVE / LIVING / OWNER-DIRECTED / IMPLEMENTATION PARTIAL
+- Status: ACTIVE / LIVING / OWNER-DIRECTED / MERGED TO MAIN / FULL-TREE READ-BACK VERIFIED / CI PASS / IMPLEMENTATION PARTIAL
 - Parent: POINT-0/085 → CURRENT-138
 - Canonical root: POINT-0 only; 0++ is a continuation marker, not a new root.
 - Owner: ahmadnezhadhosseini64-cloud
@@ -39,7 +57,7 @@
 - RAHM architecture, private-repository template, candidate manifest schema, public control-plane index and CHILD landing area created.
 - Candidate validator and unit tests added; it rejects invalid IDs, unredacted data, missing owner authorization, path traversal, symlinks, unsupported/unmanifested files, oversized payloads, SHA-256 mismatch and common secret patterns.
 - Owner-only workflow added: workflow_dispatch by the owner on main; it reads a private RAHM repo, checks privacy, validates the candidate, and creates a bot-authored PR into CHILD. It does not auto-merge or modify the living Master.
-- Direct-to-main automation paths found in the hard audit were changed to artifact-only/read-only behavior: Evidence Gate, execution controller, pending-registration drain, and portable conformance permissions. The legacy host adapter is fully disabled and fail-closed; it makes no GitHub API request or write.
+- Direct-to-main automation paths found in the hard audit were changed to artifact-only/read-only behavior: Evidence Gate, execution controller, pending-registration drain, and portable conformance retains contents:write solely for owner-controlled release publication and has no branch push. The legacy host adapter is fully disabled and fail-closed; it makes no GitHub API request or write.
 - The current Ruleset remains approval count 0 and Code Owner review OFF. This is not claimed as active enforcement.
 
 ## Open operational gates

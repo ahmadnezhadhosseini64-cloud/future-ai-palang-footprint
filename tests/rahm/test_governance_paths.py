@@ -32,10 +32,12 @@ class GovernancePathTests(unittest.TestCase):
         self.assertNotIn("subprocess.run", controller)
         self.assertIn("# Evidence is local to the runner and uploaded as a workflow artifact.\n    # This controller has no GitHub write credential and never pushes to MASTER.\n    return out", controller)
 
-    def test_conformance_workflow_is_read_only(self):
+    def test_portable_conformance_release_write_is_owner_controlled(self):
         workflow = self.read(".github/workflows/rahm-portable-conformance.yml")
-        self.assertIn("contents: read", workflow)
-        self.assertNotIn("contents: write", workflow)
+        self.assertIn("contents: write", workflow)
+        self.assertIn("gh release upload", workflow)
+        self.assertNotIn("git push", workflow)
+        self.assertIn("github.actor == 'ahmadnezhadhosseini64-cloud'", workflow)
 
     def test_legacy_host_worker_hard_stops_on_master(self):
         worker = self.read("scripts/host_adapter_github_worker.py")

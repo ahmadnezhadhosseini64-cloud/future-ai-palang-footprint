@@ -10,10 +10,11 @@
 
 - Chain: POINT-0/085 → CURRENT-138 → POINT-0/086 (0++) → IN-129 → OUT-128 → EVT-0306 → TIME-BINDING-EVT-0306 → CURRENT-139 → sole active queue NEXT-051.
 - Living master target: 1.7.94.
+- PR #97 merged as 67c85da41e1d455271f55eb8affbe92811e816af; full repository tree SHA matched proposal and main exactly (9191d83e75713d95536b017563c27e326524cbe4); 51 changed files read back by tree identity.
 - RAHM is a central owner-only quarantine, outside every host workspace. Raw/private data belongs in the separate private repository ahmadnezhadhosseini64-cloud/future-ai-palang-rahm; the public master stores only policy, schema, workflow and sanitized Child candidates.
 - Permanent flow: HOST PRIVATE WORKSPACE → OWNER-COMMANDED MONITOR/EXPORT → PRIVATE RAHM → VALIDATION/CROSS-HOST RECONCILIATION → BOT-AUTHORED PR → OWNER REVIEW/APPROVAL → CHILD. A separate approval is required before any later Master update.
 - Owner-only workflow and candidate validator are committed on the proposal branch; the workflow is not operational until the private RAHM repo, App, secrets/variables and connector access are configured.
-- Hard audit corrected direct-main write paths in main.yml, pending-registration-drain.yml and execution-controller/controller; portable conformance and execution controller no longer request contents:write. Pending queue scan is read-only.
+- Hard audit corrected direct-main write paths in main.yml, pending-registration-drain.yml and execution-controller/controller; execution controller is read-only; portable conformance retains contents:write solely to publish the verified canonical ZIP release after a main update. It does not push commits or write to main, and manual dispatch is owner-only. Pending queue scan is read-only.
 - Owner identity: @ahmadnezhadhosseini64-cloud. CODEOWNERS assigns all paths to this account. Ruleset 27814009 is active and main is protected, but live approval count remains 0 and Code Owner review remains OFF.
 - No host is registered or ACTIVE; no private RAHM repo or promotion App is yet provisioned. Collaborator/App/deploy-key audit and negative isolation tests remain OPEN.
 - NEXT-051 remains the only active queue; no parallel root or queue is created.

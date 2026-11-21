@@ -1,3 +1,4 @@
+- PR #97 merged as 67c85da41e1d455271f55eb8affbe92811e816af; full repository tree SHA matched proposal and main exactly (9191d83e75713d95536b017563c27e326524cbe4); 51 changed files read back by tree identity.
 ## Current host-security and RAHM entry — POINT-0/086 (0++)
 
 - Current checkpoint: docs/0.0/anchors/PALANG-0.0-CURRENT-20261122-139-RAHM-CENTRAL-OWNER-GATE.md

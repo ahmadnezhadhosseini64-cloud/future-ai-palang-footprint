@@ -1,3 +1,21 @@
+## PR #97 — merge and full-tree read-back receipt
+
+- PR: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/pull/97
+- Merge commit: 67c85da41e1d455271f55eb8affbe92811e816af
+- Git commit time UTC: 2026-11-21T23:45:30Z
+- Tehran equivalent: 2026-11-22T03:15:30+03:30
+- Proposal branch head: 1601cf0da32cd8907f050a3edc2390f141ab1fe0
+- Proposal tree SHA: 9191d83e75713d95536b017563c27e326524cbe4
+- Merged main tree SHA: 9191d83e75713d95536b017563c27e326524cbe4
+- Full repository tree exact match: PASS. All 51 changed files are included in the merge tree.
+- PR RAHM Security and Promotion Conformance: PASS (run 44963255990).
+- PR Living Architecture Audit: PASS (run 44963256010).
+- Main RAHM Security and Promotion Conformance: PASS (run 44963342878).
+- Main Living Architecture Audit: PASS (run 44963342868).
+- Main Evidence Gate, Execution Controller, Pending Registration Audit and Cross-Layer Integrity: PASS.
+- Portable package build, ZIP CRC, source-byte comparison, artifact download/read-back and extracted tests passed; the final durable-release update failed with HTTP 403 because this workflow had contents:read. A follow-up change restores contents:write only for release publication, without any git push/commit to main.
+- GitHub Pages deployment initially failed to find the uploaded artifact; the failed deployment job was rerun (attempt 2) and completed SUCCESS.
+
 
 ## Direct references
 
@@ -9,7 +27,7 @@
 # CURRENT-139 — رحم مرکزی مالک و دروازه ارتقای میزبان‌ها
 
 - Stable ID: HAIF-CURRENT-139-RAHM-CENTRAL-OWNER-GATE-2026-11-22
-- Status: ACTIVE / LIVING / OWNER-DIRECTED / DESIGN-APPROVED / REPOSITORY-IMPLEMENTED / OPERATIONAL-SETUP-PENDING
+- Status: ACTIVE / LIVING / OWNER-DIRECTED / DESIGN-APPROVED / MERGED TO MAIN / FULL-TREE READ-BACK VERIFIED / CI PASS / OPERATIONAL-SETUP-PENDING
 - Parent checkpoint: CURRENT-138
 - Current point: POINT-0/086 (0++)
 - Input/output: IN-129 → OUT-128
@@ -43,7 +61,7 @@ A Child candidate is not the living Master. Any later promotion into canonical M
 - Python candidate validator/stager with allowlisted file extensions, fixed destination, manifest identity checks, exact SHA-256 and byte-count checks, size limits, secret-pattern checks, symlink/path-traversal rejection, required evidence files, and explicit owner-redaction/Child authorization attestations.
 - Unit tests for valid staging and key negative cases.
 - Owner-only workflow_dispatch that checks the caller is the repository owner and the ref is main; reads the private RAHM repository; verifies it is private; validates the candidate; uses a narrowly scoped GitHub App token to create a bot-authored branch and PR into CHILD. It does not merge, does not auto-merge, and does not edit the living Master.
-- Hard-audit corrections: direct-to-main evidence and registration automation was removed or converted to read-only/artifact-only behavior; unnecessary contents:write permissions were removed from validation workflows.
+- Hard-audit corrections: direct-to-main evidence and registration automation was removed or converted to read-only/artifact-only behavior; unnecessary contents:write permissions were removed from read-only validation workflows; portable conformance retains it only to publish the canonical ZIP release and never pushes to main.
 - Legacy host adapter is fully disabled and fail-closed; no GitHub API request or write is attempted.
 
 ## Live security facts and remaining gates
