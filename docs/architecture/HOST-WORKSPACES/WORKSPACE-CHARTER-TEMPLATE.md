@@ -15,7 +15,7 @@
 - master_commit_seen: `UNKNOWN`
 - master_digest: `UNKNOWN`
 - workspace_path: `UNASSIGNED`
-- intake_branch: `host-intake`
+- intake_branch: `NONE — OWNER_EXPORT_TO_PRIVATE_RAHM_ONLY`
 - credential_reference: `NONE` (never store a secret here)
 - last_readback_receipt: `NONE`
 - revocation_ref: `NONE`
