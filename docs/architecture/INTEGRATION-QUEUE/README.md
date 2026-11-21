@@ -1,3 +1,6 @@
+- Current point: [CURRENT-127](../../0.0/anchors/PALANG-0.0-CURRENT-20261121-127-0PLUSPLUS-TO-0-0-COMPLETION.md); active next: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Latest chain: POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051. Target: complete repository-remediable 0.0 work; external-host capabilities remain separately gated.
+
 ## Latest canonical continuation — POINT-0/073 / CURRENT-126
 
 - Chain: POINT-0/073 → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051.
