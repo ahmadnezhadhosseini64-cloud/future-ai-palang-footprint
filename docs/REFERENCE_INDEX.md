@@ -1,3 +1,12 @@
+## Latest owner-directed continuation — POINT-0/085 (0++) / CURRENT-138
+
+- Canonical chain: POINT-0/084 → CURRENT-137 → POINT-0/085 → IN-128 → OUT-127 → EVT-0305 → TIME-BINDING-EVT-0305 → CURRENT-138 → sole queue NEXT-051.
+- Living mother: version 1.7.93. The required approval identity is the repository owner account `@ahmadnezhadhosseini64-cloud`; `.github/CODEOWNERS` assigns all paths to this account.
+- Target Ruleset: exactly 1 approving review by the owner, Code Owner review ON, stale approvals dismissed on new commits, review-thread resolution required. No host bypass or master-write access.
+- Live Ruleset 27814009 at main HEAD `564166612c73da78544a6a6bb88d7f8a1e5da7560` is active, but current approval count is 0 and Code Owner review is OFF. Target settings are pending owner UI change and read-back.
+- GitHub prevents self-approval. Owner-authored PRs require an owner-controlled promotion bot or narrowly scoped owner-only PR bypass; never grant bypass to hosts.
+- PR #93 and #94 are merged. Design approved; operational enforcement and security verification remain open. NEXT-051 is the only active queue.
+
 ## Security enforcement correction — PR #90 / POINT-0/084
 
 - The legacy `scripts/host_adapter_github_worker.py` now fails closed when the target is the canonical master repository. It refuses host-originated writes to the master, including `host-intake`.

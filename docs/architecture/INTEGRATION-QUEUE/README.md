@@ -1,3 +1,12 @@
+## Latest canonical continuation — POINT-0/085 (0++) / CURRENT-138
+
+- Chain: POINT-0/084 → CURRENT-137 → POINT-0/085 → IN-128 → OUT-127 → EVT-0305 → TIME-BINDING-EVT-0305 → CURRENT-138 → NEXT-051.
+- Living master target: 1.7.93. Owner approval identity is exactly `@ahmadnezhadhosseini64-cloud`; CODEOWNERS assigns all paths to this account.
+- Desired protection: one approving review by owner, Code Owner review ON, stale approvals dismissed, review conversations resolved. Hosts receive no master write or bypass.
+- Live Ruleset 27814009 is active, but approval count is 0 and Code Owner review is OFF. Owner UI change and exact read-back remain pending.
+- GitHub blocks self-approval; owner-authored PRs require trusted owner-controlled promotion automation or a narrowly scoped owner-only PR bypass. No host bypass.
+- PR #93 and #94 merged. CURRENT-138 is current; NEXT-051 is sole active queue. Architecture is design-approved, while enforcement and isolation proof remain open.
+
 - Current point: [CURRENT-132](../../0.0/anchors/PALANG-0.0-CURRENT-20261121-132-LATEST-RUNNABLE-OPEN-DEVELOPMENT.md); active next: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - Latest chain: POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051. Target: universal host onboarding, package recovery and 0.0 completion; external-host capabilities remain separately gated.
 
