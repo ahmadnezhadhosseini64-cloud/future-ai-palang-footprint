@@ -3,7 +3,7 @@
 - Chain: POINT-0/081 → CURRENT-134 → POINT-0/082 (0++) → IN-125 → OUT-124 → EVT-0302 → TIME-BINDING-EVT-0302 → CURRENT-135 → NEXT-051.
 - Approved correction: synchronize Reference Index, universal host entry, one-message bootstrap and living master; preserve the single POINT-0 root.
 - PR #84 merge and source read-back: VERIFIED on main commit `59fe65d2c6250c8cda6f2f02ea8d048720ff9563`.
-- Exact-main package rebuild, digest, extraction, tests and artifact round-trip remain REQUIRED / NOT RUN.
+- Package 0.5.0 is verified on its recorded source SHA and published under the stable tag [`haif-latest-verified`](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified). On every handoff, compare the receipt source SHA with exact current main HEAD; rebuild if not equivalent.
 - Destination-host recovery remains OPEN / NOT RUN.
 - Previous package receipt 0.4.9 is historical to its exact source SHA; do not reuse it for the new source.
 - NEXT-051 remains the sole queue.
