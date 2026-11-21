@@ -1,8 +1,8 @@
-## تازه‌ترین زنجیره — POINT-0/079 → CURRENT-132 → NEXT-051
+## تاریخی — POINT-0/079 → CURRENT-132 → NEXT-051
 
 [POINT-0/077](anchors/GPT6-RAHM-USER-POINT-0-20261121-077-0PLUSPLUS-LIVE-ANCHOR.md) → [CURRENT-130](anchors/PALANG-0.0-CURRENT-20261121-130-0PLUSPLUS-LIVE-ANCHOR.md) → [POINT-0/078](anchors/GPT6-RAHM-USER-POINT-0-20261121-078-UNIVERSAL-HOST-0PLUSPLUS.md) → [IN-121](anchors/PALANG-0.0-IN-20261121-121-UNIVERSAL-HOST-INITIAL-RUNNABLE.md) → [OUT-120](anchors/PALANG-0.0-OUT-20261121-120-UNIVERSAL-HOST-INITIAL-RUNNABLE.md) → [EVT-0298](../architecture/BEHAVIOR-TRACE/EVT-0298-UNIVERSAL-HOST-INITIAL-RUNNABLE-2026-11-21.md) → [TIME-BINDING-EVT-0298](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0298-UNIVERSAL-HOST-INITIAL-RUNNABLE-2026-11-21.md) → [CURRENT-131](anchors/PALANG-0.0-CURRENT-20261121-131-UNIVERSAL-HOST-INITIAL-RUNNABLE.md) → [POINT-0/079](anchors/GPT6-RAHM-USER-POINT-0-20261121-079-LATEST-RUNNABLE-OPEN-DEVELOPMENT.md) → [IN-122](anchors/PALANG-0.0-IN-20261121-122-LATEST-RUNNABLE-OPEN-DEVELOPMENT.md) → [OUT-121](anchors/PALANG-0.0-OUT-20261121-121-LATEST-RUNNABLE-OPEN-DEVELOPMENT.md) → [EVT-0299](../architecture/BEHAVIOR-TRACE/EVT-0299-LATEST-RUNNABLE-OPEN-DEVELOPMENT-2026-11-21.md) → [TIME-BINDING-EVT-0299](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0299-LATEST-RUNNABLE-OPEN-DEVELOPMENT-2026-11-21.md) → [CURRENT-132](anchors/PALANG-0.0-CURRENT-20261121-132-LATEST-RUNNABLE-OPEN-DEVELOPMENT.md) → sole queue [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 
-این زنجیره ادامهٔ ریشهٔ واحد canonical POINT-0 است؛ هیچ ریشه یا صف موازی ساخته نشده است. بستهٔ 0.4.7 با حفظ هویت و نام ZIP در workflow 44920781712 تأیید شد؛ 19 فایل، 24/24 آزمون، جفت‌سازی سند مادر و artifact round-trip PASS؛ SHA-256 a8a34580722573aaef247acbf9d7edf1d97a80025c49d510f07a1479da4f0a05. هدف بعدی 0.4.8 همراه سند مادر 1.7.87 است. گیت‌های میزبان مستقل همچنان OPEN / NOT RUN هستند.
+این زنجیره ادامهٔ ریشهٔ واحد canonical POINT-0 است؛ هیچ ریشه یا صف موازی ساخته نشده است. بستهٔ 0.4.8 با حفظ هویت و نام ZIP در workflow 44921364797 تأیید شد؛ 19 فایل، 257102 بایت، 24/24 آزمون، جفت‌سازی سند مادر 1.7.87 و artifact round-trip PASS؛ SHA-256 1e1bbab0c7acb0975b77176abc5c38f7e7097cfe8cf67b17153ffe1db4da65a6. هدف بعدی 0.4.9 همراه سند مادر 1.7.88 است. گیت‌های میزبان مستقل همچنان OPEN / NOT RUN هستند.
 
 ---
 
@@ -2196,8 +2196,15 @@ The canonical chain is [POINT-0/032](./anchors/GPT6-RAHM-USER-POINT-0-20261026-0
 این زنجیره ادامهٔ POINT-0/077 و ریشهٔ یگانهٔ canonical POINT-0 است؛ هیچ ریشه یا صف موازی ایجاد نشده است. سند مادر 1.7.85 و منبع بستهٔ قابل‌حمل 0.4.6 هستند. بستهٔ canonical داخلی 0.4.6 با workflow 44918425190 بازسازی شد: 19 فایل، 24/24 آزمون استخراج موفق و SHA-256 برابر b9f56a360351d5ab16f07656018e576c2398a110db540138810e01358f8934fc. OAuth مقصد، workspace پایدار، clean-host recovery و restart acceptance همچنان OPEN / NOT RUN هستند.
 
 
-## تازه‌ترین زنجیره — POINT-0/079 → CURRENT-132 → NEXT-051
+## تاریخی — POINT-0/079 → CURRENT-132 → NEXT-051
 
 [POINT-0/079](anchors/GPT6-RAHM-USER-POINT-0-20261121-079-LATEST-RUNNABLE-OPEN-DEVELOPMENT.md) → [IN-122](anchors/PALANG-0.0-IN-20261121-122-LATEST-RUNNABLE-OPEN-DEVELOPMENT.md) → [OUT-121](anchors/PALANG-0.0-OUT-20261121-121-LATEST-RUNNABLE-OPEN-DEVELOPMENT.md) → [EVT-0299](../architecture/BEHAVIOR-TRACE/EVT-0299-LATEST-RUNNABLE-OPEN-DEVELOPMENT-2026-11-21.md) → [CURRENT-132](anchors/PALANG-0.0-CURRENT-20261121-132-LATEST-RUNNABLE-OPEN-DEVELOPMENT.md) → [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 
 The previous points 077 and 078 remain linked in the preceding historical sections; this is the sole current pointer. TIME-BINDING-EVT-0299 is linked from POINT-0/079, IN-122, OUT-121, EVT-0299 and CURRENT-132.
+
+
+## تازه‌ترین زنجیره — POINT-0/080 → CURRENT-133 → NEXT-051
+
+[POINT-0/080](anchors/GPT6-RAHM-USER-POINT-0-20261121-080-PUBLIC-READ-NO-OAUTH-HOST-ACCESS.md) → [IN-123](anchors/PALANG-0.0-IN-20261121-123-PUBLIC-READ-NO-OAUTH-HOST-ACCESS.md) → [OUT-122](anchors/PALANG-0.0-OUT-20261121-122-PUBLIC-READ-NO-OAUTH-HOST-ACCESS.md) → [EVT-0300](../architecture/BEHAVIOR-TRACE/EVT-0300-PUBLIC-READ-NO-OAUTH-HOST-ACCESS-2026-11-21.md) → [CURRENT-133](anchors/PALANG-0.0-CURRENT-20261121-133-PUBLIC-READ-NO-OAUTH-HOST-ACCESS.md) → [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+
+POINT-0/079 / CURRENT-132 remains the direct parent. TIME-BINDING-EVT-0300 is linked from the point, input, output, event and current checkpoint. Package 0.4.8 is the latest verified portable package; 0.4.9 is the next paired build target.
