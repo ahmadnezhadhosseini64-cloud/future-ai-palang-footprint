@@ -1,6 +1,6 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.8.37",
+  "version": "1.8.38",
   "manifest_status": "Package source 0.4.5 is registered on the host-intake proposal branch. Canonical chain: POINT-0/072 → POINT-0/073 (0++ continuation, not a new root) → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051. FIRST_HOST/HOST-001: canonical repository READ-ONLY, owner-defined allowlisted workspace execution only, no repository writeback, authentication gate OPEN / DEFERRED. Parallel duplicate-ID files are explicitly quarantined and noncanonical. Exact package SHA-256 and canonical ZIP rebuild remain pending. Main integration, technical enforcement and independent-host acceptance remain NOT VERIFIED / NOT RUN.",
   "created_from_checkpoint": "HAIF-POINT-0-044-STARTER-ZIP-INPLACE-UPDATE-20261027 + HAIF-CURRENT-094",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
@@ -557,7 +557,7 @@
     },
     {
       "path": "docs/0.0/README.md",
-      "git_blob_sha": "34db36ee4be8b033b4a5ee2224af4d9a6b6e45c8",
+      "git_blob_sha": "621332c46709f5f10e479c7616713fbf412a5581",
       "sha256_status": "PENDING_EXACT_BYTES_BUILD",
       "reason": "Updated for POINT-0/073 (0++) and CURRENT-126 after the previous canonical package build; include or sync and hash in the next same-identity ZIP rebuild."
     },
@@ -587,13 +587,13 @@
     },
     {
       "path": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261121-126-FIRST-HOST-WORKSPACE-EXECUTION.md",
-      "git_blob_sha": "4d92491a812205497a873132088d25b58240c31a",
+      "git_blob_sha": "7da64c3a3ab3fd121e159a8aa0ae19ffd9f66af0",
       "sha256_status": "PENDING_EXACT_BYTES_BUILD",
       "reason": "Updated for POINT-0/073 (0++) and CURRENT-126 after the previous canonical package build; include or sync and hash in the next same-identity ZIP rebuild."
     },
     {
       "path": "docs/REFERENCE_INDEX.md",
-      "git_blob_sha": "bf47821093b7182fad9891569eb6cfc22cfafe0b",
+      "git_blob_sha": "5e983637a8487825b9e2647a891d9e85421a77de",
       "sha256_status": "PENDING_EXACT_BYTES_BUILD",
       "reason": "Updated for POINT-0/073 (0++) and CURRENT-126 after the previous canonical package build; include or sync and hash in the next same-identity ZIP rebuild."
     },
@@ -611,7 +611,7 @@
     },
     {
       "path": "docs/architecture/BEHAVIOR-TRACE/README.md",
-      "git_blob_sha": "21a6a82a9c44abd7446f2599679659d8e3b983fe",
+      "git_blob_sha": "f2d3a624db93b4f246dafa6046c66068f64187af",
       "sha256_status": "PENDING_EXACT_BYTES_BUILD",
       "reason": "Updated for POINT-0/073 (0++) and CURRENT-126 after the previous canonical package build; include or sync and hash in the next same-identity ZIP rebuild."
     },
@@ -623,7 +623,7 @@
     },
     {
       "path": "docs/architecture/INTEGRATION-QUEUE/README.md",
-      "git_blob_sha": "8b653499f6f5d0d7542dc857316cf8e5b29d8b19",
+      "git_blob_sha": "de15e4ab5cea7a46cdd8f639f5fdecea26c211bd",
       "sha256_status": "PENDING_EXACT_BYTES_BUILD",
       "reason": "Updated for POINT-0/073 (0++) and CURRENT-126 after the previous canonical package build; include or sync and hash in the next same-identity ZIP rebuild."
     },
