@@ -36,7 +36,7 @@ A GPT chat instruction or uploaded knowledge file cannot, by itself, create dura
 ## Startup / recovery sequence
 1. Read this file, manifest.json, and INDEPENDENT_HOST_RECOVERY_PROTOCOL.md.
 2. Import the included `LIVING_MASTER_REFERENCE.md` and run `INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md`. Verify master freshness and execute positive, negative-anchor and fresh-session tests; report any unavailable test as NOT RUN.
-3. Retrieve and compare `LIVING_MASTER_REFERENCE.md` against the repository's canonical living master, then retrieve the latest verified CURRENT checkpoint (CURRENT-131), NEXT-051, the 0.0 index and Reference Index. Preserve CURRENT-065/CURRENT-066 ambiguity unless source evidence resolves it.
+3. Retrieve and compare `LIVING_MASTER_REFERENCE.md` against the repository's canonical living master, then retrieve the latest verified CURRENT checkpoint (CURRENT-132), NEXT-051, the 0.0 index and Reference Index. Preserve CURRENT-065/CURRENT-066 ambiguity unless source evidence resolves it.
 3. Run the repository pointer checker. Preserve AMBIGUOUS results.
 4. Load the latest verified portable state bundle if available; verify SHA-256 before trusting it.
 5. Resume the first open acceptance gate. Do not create a new planning document instead of executing a gate.
@@ -216,4 +216,4 @@ The portable package is the same stable starter identity and canonical ZIP filen
 
 ## Current canonical chain — package v0.4.6 / CURRENT-131
 
-Internal package version: 0.4.6. Living master: 1.7.86. Current chain: POINT-0/077 (0++) → CURRENT-130 → IN-121 → OUT-120 → EVT-0297 → TIME-BINDING-EVT-0297 → CURRENT-131 → NEXT-051. The current host must rediscover the canonical repository HEAD, living master and sole queue before acting.
+Internal package version: 0.4.6. Living master: 1.7.86. Current chain: POINT-0/077 (0++) → CURRENT-130 → IN-121 → OUT-120 → EVT-0297 → TIME-BINDING-EVT-0297 → CURRENT-131 → IN-122 → OUT-121 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-132 → NEXT-051. The current host must rediscover the canonical repository HEAD, living master and sole queue before acting.
