@@ -249,6 +249,36 @@ jobs:
           echo "CANONICAL_ZIP_BUILD_AND_DIGEST_ARE_PRODUCED_BY_PORTABLE_CONFORMANCE_WORKFLOW" 
           echo "This audit validates source/tests only; it does not emit a second archive with potentially different bytes."
 
+      - name: Verify current POINT-0/086 RAHM chain and host boundary
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261122-086-RAHM-CENTRAL-OWNER-GATE.md
+          test -f docs/0.0/anchors/PALANG-0.0-IN-20261122-129-RAHM-CENTRAL-OWNER-GATE.md
+          test -f docs/0.0/anchors/PALANG-0.0-OUT-20261122-128-RAHM-CENTRAL-OWNER-GATE.md
+          test -f docs/architecture/BEHAVIOR-TRACE/EVT-0306-RAHM-CENTRAL-OWNER-GATE-AND-CHILD-PROMOTION-2026-11-22.md
+          test -f docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0306-RAHM-CENTRAL-OWNER-GATE-2026-11-22.md
+          test -f docs/0.0/anchors/PALANG-0.0-CURRENT-20261122-139-RAHM-CENTRAL-OWNER-GATE.md
+          test -f docs/architecture/RAHM/README.md
+          test -f docs/architecture/RAHM/OWNER-MONITORING-COMMANDS.md
+          test -f docs/architecture/RAHM/PROMOTION-APP-SETUP.md
+          grep -q 'POINT-0/086' docs/0.0/anchors/PALANG-0.0-CURRENT-20261122-139-RAHM-CENTRAL-OWNER-GATE.md
+          grep -q 'CURRENT-139' docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md
+          grep -q '1.7.94' 'docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md'
+          grep -q '^\\* @ahmadnezhadhosseini64-cloud        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: living-architecture-audit-${{ github.run_id }}
+          path: audit-output/
+          if-no-files-found: warn
+          retention-days: 90
+ .github/CODEOWNERS
+          python3 scripts/rahm/validate_host_registry.py --registry docs/architecture/HOST-REGISTRY/HOST-REGISTRY.json
+          python3 -m unittest discover -s tests/rahm -v
+          echo "POINT_0_086_CURRENT_CHAIN=PASS"
+          echo "HOST_MASTER_WRITE=FORBIDDEN"
+          echo "RAHM_OWNER_CONTROL=REGISTERED"
+
       - name: Upload inspectable audit evidence
         if: always()
         uses: actions/upload-artifact@v4
