@@ -1,7 +1,7 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.8.33",
-  "manifest_status": "Package source 0.4.4 is proposed on host-intake branch host-intake-owner-confirmation-github-auth-20261121. Repository is currently PUBLIC; anonymous READ-ONLY recovery is the primary path. Latest owner clarification defines FIRST_HOST/HOST-001 as a constrained execution participant: canonical repository READ-ONLY, owner-defined provisioned workspace execution only, no repository writeback, and only explicitly owner-approved tools/destinations. Technical enforcement and independent-host acceptance remain NOT VERIFIED / NOT RUN. Main integration, exact-current-main RAHM build/receipt and canonical ZIP rebuild remain OPEN.",
+  "version": "1.8.34",
+  "manifest_status": "Package source 0.4.4 is proposed on host-intake branch. POINT-0++ / CURRENT-126 adds FIRST_HOST/HOST-001 restricted workspace execution: canonical repository READ-ONLY, owner-defined allowlisted workspace only, no writeback, authentication gate OPEN / DEFERRED. Contract source registered; exact package SHA-256 and canonical ZIP rebuild remain pending. Main integration, technical enforcement and independent-host acceptance remain not verified/not run.",
   "created_from_checkpoint": "HAIF-POINT-0-044-STARTER-ZIP-INPLACE-UPDATE-20261027 + HAIF-CURRENT-094",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [
@@ -536,5 +536,13 @@
     "tests/test_graph_identifier_roles.py",
     "tests/test_parent_edge_resolution.py"
   ],
-  "live_reference_policy": "Mutable current-state and startup/governance references are included in each export and receive exact SHA-256 plus Git blob SHA-1 observations in the same CI run. This includes RAHM_BOOT and RAHM_ARCHITECTURE because their canonical checkpoint binding must track the current live chain. Stable core remains digest-pinned."
+  "live_reference_policy": "Mutable current-state and startup/governance references are included in each export and receive exact SHA-256 plus Git blob SHA-1 observations in the same CI run. This includes RAHM_BOOT and RAHM_ARCHITECTURE because their canonical checkpoint binding must track the current live chain. Stable core remains digest-pinned.",
+  "pending_source_documents": [
+    {
+      "path": "docs/reference/REFERENCE-DOCUMENTS/FIRST-HOST-RESTRICTED-WORKSPACE-EXECUTION-AND-READ-ONLY-REPOSITORY-CONTRACT-2026-11-21-001.md",
+      "git_blob_sha": "e66a0eaea445f7bb67d318565c9d711724e8146e",
+      "sha256_status": "PENDING_EXACT_BYTES_BUILD",
+      "reason": "New contract added after prior package build; include and hash during canonical ZIP rebuild."
+    }
+  ]
 }
