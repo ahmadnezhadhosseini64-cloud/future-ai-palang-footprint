@@ -38,8 +38,8 @@ class GovernancePathTests(unittest.TestCase):
 
     def test_legacy_host_worker_hard_stops_on_master(self):
         worker = self.read("scripts/host_adapter_github_worker.py")
-        self.assertIn("if REPO == MASTER_REPOSITORY:", worker)
-        self.assertIn("Host-originated writes to master", worker)
+        self.assertIn("LEGACY_DIRECT_GITHUB_WORKER_DISABLED", worker)
+        self.assertIn("NO_GITHUB_WRITE_ATTEMPTED", worker)
         self.assertIn("raise SystemExit", worker)
 
     def test_rahm_workflow_is_owner_only_and_bot_pr_only(self):
