@@ -14,7 +14,18 @@ on:
       - 'scripts/behavior-hunter/**'
       - 'scripts/haif-runtime/**'
       - 'prototype/haif-gpt6-starter/**'
+      - 'prototype/universal-ai-host/**'
+      - 'docs/architecture/UNIVERSAL-AI-HOST-CONNECTIVITY/**'
       - '.github/workflows/living-architecture-audit.yml'
+      - '.github/workflows/rahm-portable-conformance.yml'
+  pull_request:
+    paths:
+      - 'docs/0.0/anchors/**'
+      - 'docs/architecture/UNIVERSAL-AI-HOST-CONNECTIVITY/**'
+      - 'docs/architecture/مدل اولیه AI/**'
+      - 'docs/REFERENCE_INDEX.md'
+      - 'prototype/universal-ai-host/**'
+      - 'prototype/haif-gpt6-starter/**'
       - '.github/workflows/rahm-portable-conformance.yml'
   workflow_dispatch:
 
@@ -168,11 +179,23 @@ jobs:
 
       - name: Synchronize current living mother into portable starter
         run: cp "docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md" "prototype/haif-gpt6-starter/LIVING_MASTER_REFERENCE.md"
+      - name: Validate universal host receipt schema and compile validator
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from jsonschema import Draft202012Validator
+          schema = json.loads(Path("prototype/haif-gpt6-starter/host-capability-receipt.schema.json").read_text(encoding="utf-8"))
+          Draft202012Validator.check_schema(schema)
+          Draft202012Validator.check_schema(json.loads(Path("docs/architecture/UNIVERSAL-AI-HOST-CONNECTIVITY/host-capability-receipt.schema.json").read_text(encoding="utf-8")))
+          print("UNIVERSAL_HOST_RECEIPT_SCHEMA=PASS")
+          PY
+          python -m py_compile prototype/haif-gpt6-starter/host_receipt.py
       - name: Test the existing HAIF starter package source
         if: always()
         run: |
           cd prototype/haif-gpt6-starter
-          python -m unittest -v
+          python -m unittest discover -s . -p 'test_*.py' -v
       - name: Rebuild the existing starter ZIP under its canonical filename
         if: always()
         run: |
@@ -200,6 +223,11 @@ jobs:
               "engine.py",
               "state.schema.json",
               "test_engine.py",
+              "UNIVERSAL_AI_HOST_CONNECTIVITY_CONTRACT.md",
+              "UNIVERSAL_AI_HOST_BOOTSTRAP.md",
+              "host-capability-receipt.schema.json",
+              "host_receipt.py",
+              "test_host_receipt.py",
           ]
           missing = [name for name in required if not (source / name).is_file()]
           if missing:
@@ -248,7 +276,7 @@ jobs:
                       raise SystemExit(f"ZIP_READBACK_BYTE_MISMATCH: {name}")
               print("ZIP_READBACK_SOURCE_BYTE_MATCH=PASS")
               test = subprocess.run(
-                  [sys.executable, "-m", "unittest", "discover", "-s", str(extracted), "-p", "test_engine.py", "-v"],
+                  [sys.executable, "-m", "unittest", "discover", "-s", str(extracted), "-p", "test_*.py", "-v"],
                   text=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT
               )
               print(test.stdout)
@@ -365,7 +393,7 @@ jobs:
           PY
 
       - name: Publish or refresh durable latest verified release
-        if: success()
+        if: success() && github.event_name == 'push' && github.ref == 'refs/heads/main'
         env:
           GH_TOKEN: ${{ github.token }}
           GITHUB_SHA: ${{ github.sha }}
