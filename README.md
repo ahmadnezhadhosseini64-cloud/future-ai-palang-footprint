@@ -124,8 +124,8 @@ This project has its own living execution record, legal gates, job-search stages
 
 ## POINT-0++ — FIRST_HOST / HOST-001
 
-- Canonical point: [POINT-0/072](docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-072-OWNER-CONFIRMATION-GITHUB-AUTH-0PLUS.md); 0++ is a marker on the same root, not a new root.
-- Current chain: IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → sole NEXT-051.
+- Parent: [POINT-0/072](docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-072-OWNER-CONFIRMATION-GITHUB-AUTH-0PLUS.md); continuation: [POINT-0/073 (0++)](docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-073-FIRST-HOST-RESTRICTED-EXECUTION-0PLUSPLUS.md). POINT-0/073 is not an independent root.
+- Current chain: POINT-0/072 → POINT-0/073 (0++) → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → sole NEXT-051.
 - Governing contract: [FIRST_HOST restricted workspace execution](docs/reference/REFERENCE-DOCUMENTS/FIRST-HOST-RESTRICTED-WORKSPACE-EXECUTION-AND-READ-ONLY-REPOSITORY-CONTRACT-2026-11-21-001.md) v1.0.1.
 - Living mother: v1.7.80; starter source target: v0.4.5.
 - Host identity: FIRST NEW HOST / FIRST_HOST / HOST-001. Authentication gate: OPEN / DEFERRED.
