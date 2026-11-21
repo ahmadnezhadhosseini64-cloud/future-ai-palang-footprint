@@ -2574,3 +2574,10 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - Canonical repository: ahmadnezhadhosseini64-cloud/future-ai-palang-footprint. Immediate scope is official connector onboarding and READ-ONLY recovery from a new host.
 - Owner phrase/password gate («احمد نژادحسینی») and expanded authentication design remain OPEN / DEFERRED. No repository writes are in scope.
 - External-host connector authorization and read-only recovery remain NOT RUN until direct host receipt exists. Preserve NEXT-051; no NEXT-052.
+
+
+## POINT-0++ — FIRST_HOST workspace execution contract
+
+- [FHRWE-2026-11-21-001](reference/REFERENCE-DOCUMENTS/FIRST-HOST-RESTRICTED-WORKSPACE-EXECUTION-AND-READ-ONLY-REPOSITORY-CONTRACT-2026-11-21-001.md): canonical policy for FIRST_HOST / HOST-001; repository READ-ONLY, owner-defined allowlisted workspace execution, no writeback, authentication gate OPEN / DEFERRED.
+- Chain: [POINT-0/072](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-072-OWNER-CONFIRMATION-GITHUB-AUTH-0PLUS.md) → [IN-116](0.0/anchors/PALANG-0.0-IN-20261121-116-FIRST-HOST-WORKSPACE-EXECUTION.md) → [OUT-115](0.0/anchors/PALANG-0.0-OUT-20261121-115-FIRST-HOST-WORKSPACE-EXECUTION.md) → [EVT-0292](architecture/BEHAVIOR-TRACE/EVT-0292-FIRST-HOST-WORKSPACE-EXECUTION-2026-11-21.md) → [CURRENT-126](0.0/anchors/PALANG-0.0-CURRENT-20261121-126-FIRST-HOST-WORKSPACE-EXECUTION.md) → [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Main integration, canonical ZIP rebuild/receipt, technical enforcement and independent-host acceptance remain open until evidenced.
