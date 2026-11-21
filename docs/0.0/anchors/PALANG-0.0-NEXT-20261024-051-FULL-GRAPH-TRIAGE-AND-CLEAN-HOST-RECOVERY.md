@@ -12,7 +12,7 @@
 - Package contract: [HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md](../../../prototype/haif-gpt6-starter/HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md)
 - Canonical ZIP filename: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`
 - Stable package ID: `HAIF-GPT6-PORTABLE-STARTER-20261025-004`
-- Current package source target: internal v0.4.2 under the unchanged stable package ID and canonical ZIP filename. The new package is not VERIFIED until exact-current-main CI build, extracted tests, artifact round-trip, digest and receipt all pass.
+- Current package source target: internal v0.4.4 under the unchanged stable package ID and canonical ZIP filename. The new package is not VERIFIED until exact-current-main CI build, extracted tests, artifact round-trip, digest and receipt all pass.
 - Queue rule: do not create NEXT-052.
 
 ## Mission
