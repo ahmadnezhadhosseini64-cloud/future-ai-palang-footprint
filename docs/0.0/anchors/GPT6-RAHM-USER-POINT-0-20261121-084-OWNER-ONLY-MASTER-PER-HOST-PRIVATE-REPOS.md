@@ -61,3 +61,13 @@ POINT-0/083 → CURRENT-136 → POINT-0/084 (0++) → IN-127 → OUT-126 → EVT
 ## ثبت و تداوم
 
 این نقطه ادامهٔ همان ریشهٔ canonical POINT-0 است؛ صف موازی ایجاد نمی‌کند. NEXT-051 تنها صف فعال می‌ماند. میزبان تازه تا رسید مستقیم و تأیید مالک، PROPOSED است. هیچ قابلیت امنیتی که در GitHub و محیط واقعی اعمال و آزموده نشده، VERIFIED اعلام نمی‌شود.
+
+
+## تکمیل اصلاح امنیتی — PR #90
+
+- Worker قدیمی اکنون نوشتن رویدادهای میزبان در مخزن مادر را، حتی روی `host-intake`، رد می‌کند.
+- دستور میزبان و قرارداد رشد، دریافت credential نوشتن مخزن مادر را ممنوع می‌کنند.
+- PR #90 merged at `048b3be7c2ffbcea607f26ab804494a0b31e7cd5`.
+- UTC: `2026-11-21T20:09:00Z`; Tehran: `2026-11-21T23:39:00+03:30`.
+- Read-back: 8/8 changed files SHA-matched against main.
+- GitHub branch protection, collaborator/App audit, broker, private host repositories and cross-host tests remain OPEN / NOT VERIFIED.
