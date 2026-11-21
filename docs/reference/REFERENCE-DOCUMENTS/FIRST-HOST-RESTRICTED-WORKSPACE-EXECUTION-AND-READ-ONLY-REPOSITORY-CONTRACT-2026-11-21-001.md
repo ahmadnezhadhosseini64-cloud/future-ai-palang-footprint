@@ -2,9 +2,9 @@
 
 - Stable ID: FIRST-HOST-RESTRICTED-WORKSPACE-EXECUTION-2026-11-21-001
 - Production ID: FHRWE-2026-11-21-001
-- Version: 1.0.0
+- Version: 1.0.1
 - Parent: POINT-0/072 (POINT-0++)
-- Chain: IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051
+- Chain: POINT-0/072 (0++) → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051
 - Host role: FIRST_HOST / HOST-001
 - Owner: Ahmad Nezhadhosseini
 - Project timezone: Asia/Tehran (+03:30)
@@ -154,7 +154,7 @@ POLICY DESIGNED / TECHNICAL ENFORCEMENT NOT VERIFIED / INDEPENDENT HOST ACCEPTAN
 - Output: OUT-114.
 - Event: EVT-0291.
 - Time binding: TIME-BINDING-EVT-0291.
-- Current checkpoint: CURRENT-125 until a new checkpoint is written and verified.
+- Current checkpoint: CURRENT-126 (POINT-0++ continuation; no new root).
 - Active queue: NEXT-051.
 - Parent architecture: living HAIF master reference.
 - Required indexes: docs/0.0/README.md, docs/REFERENCE_INDEX.md, behavior-trace index, integration-queue index, RAHM export manifest and host starter instructions.
@@ -170,3 +170,14 @@ POLICY DESIGNED / TECHNICAL ENFORCEMENT NOT VERIFIED / INDEPENDENT HOST ACCEPTAN
 ## 12. وضعیت تحویل
 
 این سند با ثبت روی شاخهٔ پیشنهاد، به‌تنهایی به معنی ادغام در main، ساخت ZIP تازه، فعال‌سازی sandbox، اعمال ACL یا قبولی میزبان مستقل نیست. هرکدام رسید مستقل می‌خواهد. نسخهٔ canonical ZIP باید از همان نسخهٔ نهایی source و پس از ممیزی ساخته شود؛ بستهٔ قدیمی جایگزین آن نیست.
+
+
+## 13. POINT-0++ amendment — mother-document text handoff and live workspace update
+
+When the owner sends the living mother reference as plain text to a fresh host, the host treats it as the bootstrap entry point, not as an unverified substitute for the live repository. It must extract the canonical repository URL and stable document identity, retrieve the current public main HEAD, fetch the canonical mother and package manifest, and compare the supplied text with the repository revision. If content/version/digest differs, preserve both observations, state the exact mismatch, and follow the newest verified repository revision unless the owner explicitly designates a different source. Never silently merge, overwrite, or discard either version.
+
+At each new work session (and before any task whose correctness depends on current architecture), the host reads main HEAD and relevant manifests, compares its local snapshot, refreshes only its local read-only snapshot, and records the source SHA/digest. This is interaction-triggered work, not a claim of continuous background monitoring.
+
+The workspace's OWNER_TASKS file is the explicit owner-maintained allowlist. Every task records a task identifier, purpose, permitted inputs, operations, tools/connectors, destinations, output path, prohibited data, acceptance criteria and stop conditions. A new owner instruction may refine the task list only within the already provisioned technical permission envelope. If the platform lacks a real persistent isolated workspace or least-privilege controls, the host must stop rather than simulate enforcement.
+
+The host may prepare local files and results only inside its designated workspace. It presents outputs to the owner; it never writes or synchronizes them into GitHub. Only the owner changes canonical repository content and task policy. The host retrieves owner-published changes read-only on a later sync.
