@@ -3,9 +3,9 @@
 Package family: HAIF GPT-6 Portable Starter
 Stable package ID: `HAIF-GPT6-PORTABLE-STARTER-20261025-004`
 Canonical ZIP filename: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`
-Internal package version: 0.4.3
+Internal package version: 0.4.4
 Project source of truth: `ahmadnezhadhosseini64-cloud/future-ai-palang-footprint`
-Current chain: POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → POINT-0/069 → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122 → POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051 → NEXT-051
+Current chain: POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051
 
 ## 1. Design goal
 
