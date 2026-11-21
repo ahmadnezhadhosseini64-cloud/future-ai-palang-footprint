@@ -1,5 +1,5 @@
 > **CURRENT EXECUTION SNAPSHOT — 2026-11-21 / POINT-0/081 (0++) / CURRENT-134**  
-> The model/platform-neutral startup authority is UNIVERSAL_AI_HOST_ENTRY_FA.md. This GPT-6 bootstrap remains a compatibility entry. Its previous snapshots and the original POINT-0/074 copy are preserved as history. Current package target is 0.4.9 and living mother target is 1.7.87; always re-read Reference Index and exact main HEAD rather than trusting embedded historical pointers.
+> The model/platform-neutral startup authority is UNIVERSAL_AI_HOST_ENTRY_FA.md. This GPT-6 bootstrap remains a compatibility entry. Its previous snapshots and the original POINT-0/074 copy are preserved as history. Current verified package receipt 0.4.9 is historical to its exact source SHA; living mother target is 1.7.88; always re-read Reference Index and exact main HEAD rather than trusting embedded historical pointers.
 
 # ONE_MESSAGE_HOST_BOOTSTRAP_FA.md
 # سند آغاز به‌کار و اتصال میزبان جدید — نسخهٔ اولیهٔ شدنی 0.1.0
@@ -186,7 +186,7 @@ Overall: SOURCE-RECOVERED / PACKAGE-VERIFIED / HOST-RECOVERED / PARTIAL / BLOCKE
 - OAuth فقط برای منابع خصوصی یا write-back احراز‌شده لازم است؛ برای شروع READ عمومی لازم نیست.
 - اجرای کد، sandbox، workspace خصوصی/پایدار و restart هرکدام قابلیت مستقل میزبان‌اند و باید جداگانه اثبات شوند.
 - معماری مرجع: `docs/architecture/مدل اولیه AI/معماری دسترسی عمومی مخزن و ورود کم‌اصطکاک میزبان.md`.
-- زنجیرهٔ جاری: POINT-0/079 → CURRENT-132 → POINT-0/080 → IN-123 → OUT-122 → EVT-0300 → TIME-BINDING-EVT-0300 → CURRENT-133 → NEXT-051.
+- زنجیرهٔ تاریخی تا POINT-0/080: POINT-0/079 → CURRENT-132 → POINT-0/080 → IN-123 → OUT-122 → EVT-0300 → TIME-BINDING-EVT-0300 → CURRENT-133 → NEXT-051. زنجیرهٔ جاری POINT-0/081 در الحاقیهٔ پایانی همین سند آمده است.
 
 
 ## آخرین دستور اجرایی قابل‌کپی — POINT-0/081 (0++)
