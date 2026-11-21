@@ -2,7 +2,7 @@
 
 Package version: 0.4.3
 Project: Future AI / Palang Footprint
-Canonical chain: POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → POINT-0/069 → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122 → NEXT-051; prior POINT-0/065 → CURRENT-117 chain is preserved as parent history
+Canonical current chain: POINT-0/071 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051. Prior chain POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → POINT-0/069 → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122 is preserved as parent history.
 Preserved prior chain: POINT-0/058 (0+ marker on canonical root 0) → IN-096 → OUT-095 → EVT-0233 → CURRENT-108 → NEXT-051; historical point retained, not current pointer.
 
 ## Purpose
@@ -64,5 +64,5 @@ The receiving host must treat the archive as a living, updateable package, not a
 ## Current package and bootstrap — POINT-0/071
 
 Package version: 0.4.3
-Current chain tail: POINT-0/070 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051
+Current chain tail: POINT-0/071 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051
 Use `ONE_MESSAGE_HOST_BOOTSTRAP_FA.md` as the single-message setup procedure for a new GPT host. It must establish read-only access to the canonical repository, verify the latest pointer and paired master/ZIP, run extracted tests and create a private host workspace. Actual connector authorization, persistent workspace and independent host acceptance remain separate gates.
