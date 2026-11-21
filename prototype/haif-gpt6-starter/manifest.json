@@ -211,8 +211,8 @@
     "host workspace must be a private runtime/sandbox boundary, not merely a folder in a shared repository",
     "0++ is a readiness/highlight marker on canonical root 0, not a new point or root; 0+ remains the same root marker and 0.0 remains a parent-linked continuation",
     "single-message GPT-6 host bootstrap with official GitHub connector, latest package/master recovery, private workspace provisioning where supported, and acceptance receipt",
-    "owner confirmation phrase as conversational intent gate followed by official GitHub OAuth/connector account verification; phrase itself grants no repository permission",
-    "read-only-first GitHub connection; writes require least-privilege broker, host-intake quarantine, owner-reviewed PR and exact read-back"
+    "new-host read-only GitHub onboarding through the official connector in the destination host UI; no credentials pasted into chat",
+    "new-host recovery reads canonical main HEAD, living master, latest verified ZIP pointer and receipts; repository writes are out of scope"
   ],
   "not_proven": [
     "native GPT plugin execution",
@@ -246,7 +246,9 @@
     "one-message prompt cannot create OAuth authorization, GitHub connector availability, filesystem access, durable workspace or runtime isolation; target-host proof is required",
     "actual target-host one-message onboarding, GitHub authorization, private workspace provisioning, negative cross-host isolation tests and clean-host restart acceptance",
     "A single bootstrap prompt cannot grant GitHub authorization, deploy a broker, create unavailable persistent storage, or prove a real external host connection",
-    "owner confirmation flow and OAuth/account verification on an independent external host until direct host acceptance receipts exist"
+    "owner confirmation flow and OAuth/account verification on an independent external host until direct host acceptance receipts exist",
+    "independent external-host GitHub connector authorization and successful read-only recovery until direct host receipt exists",
+    "owner phrase/password confirmation gate and expanded authentication UX; deliberately deferred to a later phase"
   ],
   "archive_policy": {
     "canonical_filename": "haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip",
