@@ -1,3 +1,6 @@
+- Current continuation: [CURRENT-127](0.0/anchors/PALANG-0.0-CURRENT-20261121-127-0PLUSPLUS-TO-0-0-COMPLETION.md); NEXT-051 remains the sole active queue for 0.0 completion.
+- Latest 0++ chain: POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051.
+
 ## Latest canonical continuation — POINT-0/073 / CURRENT-126
 
 - Root: [POINT-0/073](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-073-FINAL-ARCHITECTURE-AND-DELIVERY.md)
