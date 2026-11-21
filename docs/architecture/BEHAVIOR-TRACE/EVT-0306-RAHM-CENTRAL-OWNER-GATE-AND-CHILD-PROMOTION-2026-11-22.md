@@ -4,7 +4,7 @@
 - Parent chain: POINT-0/085 → CURRENT-138 → POINT-0/086 → IN-129 → OUT-128
 - Owner: ahmadnezhadhosseini64-cloud
 - Status: REGISTERED / IMPLEMENTATION PARTIAL
-- Exact event commit time: PENDING GIT READ-BACK
+- Event artifact commit: 9a3a35fafe82b04492277c944570098f66c58ffc; Git UTC 2026-11-21T23:27:47Z; Tehran 2026-11-22T02:57:47+03:30.
 
 ## Event
 
