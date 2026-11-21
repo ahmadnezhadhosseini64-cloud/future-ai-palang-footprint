@@ -4,5 +4,5 @@
 - Point: POINT-0/072.
 - Exact user-message timestamp: UNKNOWN / UNVERIFIED.
 - Environment clock observation at user request: 2026-11-21T10:33:00+03:30 Asia/Tehran = 2026-11-21T07:03:00Z.
-- Latest source/package/master and canonical-index proposal commit: f7308794cf4d7db8a920c9a91d3f0554f16c8697 at UTC 2026-11-21T07:10:41Z / Tehran 2026-11-21T10:40:41.000+03:30, verified from GitHub commit metadata.
+- Latest source/package/master and canonical-index proposal commit: ad54e188d46e7d8ce68d076cdbc37bfd87aa4093 at UTC 2026-11-21T07:12:04Z / Tehran 2026-11-21T10:42:04.000+03:30, verified from GitHub commit metadata.
 - Rule: UTC is the permanent base; Tehran is derived from the same UTC instant. No fabricated or inferred commit time.
