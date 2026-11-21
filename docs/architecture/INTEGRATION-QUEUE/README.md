@@ -2835,6 +2835,6 @@ Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-11
 ## POINT-0++ — FIRST_HOST workspace execution
 
 - Contract: [FHRWE-2026-11-21-001](../../reference/REFERENCE-DOCUMENTS/FIRST-HOST-RESTRICTED-WORKSPACE-EXECUTION-AND-READ-ONLY-REPOSITORY-CONTRACT-2026-11-21-001.md).
-- Chain: POINT-0/072 → POINT-0/072 (0++) → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051.
+- Chain: POINT-0/072 → [POINT-0/073 (0++)](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-073-FIRST-HOST-RESTRICTED-EXECUTION-0PLUSPLUS.md) → [IN-116](../../0.0/anchors/PALANG-0.0-IN-20261121-116-FIRST-HOST-WORKSPACE-EXECUTION.md) → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051.
 - Owner-defined workspace execution is distinct from canonical repository access. Repository READ-ONLY; workspace tasks allowlisted; no writeback. Authentication gate OPEN / DEFERRED.
 - Remaining: reconcile proposal branch with current main, run fresh exact-SHA audit and RAHM conformance, rebuild canonical ZIP/receipt, then test on independent host. Do not mark complete before evidence.
