@@ -1,4 +1,4 @@
-# HAIF GPT-6 Portable Starter v0.4.5
+# HAIF GPT-6 Portable Starter v0.4.6
 
 This is the updated release of the existing HAIF starter package, not a separate project. It updates the existing v0.3.0 0/0+ bootstrap package at the same stable package identity and canonical ZIP filename; history and prior digests remain preserved. It does not replace the living master, historical anchors or NEXT-051.
 
@@ -193,3 +193,23 @@ Internal package version: 0.4.5. Living master: 1.7.81. Current chain: POINT-0/0
 ## Current handoff — package v0.4.5 / POINT-0/074 (0++)
 
 Living master: 1.7.81. Canonical chain: POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051. The previous POINT-0/073 / CURRENT-126 and all earlier points remain parent history. 0++ is a marker on the canonical root, not a separate root. The next objective is 0.0 completion through NEXT-051. This package is not verified until same-HEAD audit and conformance pass, the canonical ZIP is rebuilt and read back with SHA-256/CRC/inventory/extracted tests, and independent-host recovery is separately evidenced.
+
+
+## Universal AI host connectivity (v0.4.6)
+
+This same canonical starter now carries the provider-neutral host connection layer:
+- `UNIVERSAL_AI_HOST_CONNECTIVITY_CONTRACT.md`: security boundaries, capability discovery, authorization and acceptance lifecycle.
+- `UNIVERSAL_AI_HOST_BOOTSTRAP.md`: one-message zero-state host entry and recovery procedure.
+- `host-capability-receipt.schema.json`: machine-readable secret-free session receipt contract.
+- `host_receipt.py` and `test_host_receipt.py`: standard-library receipt validator and regression tests.
+
+The handshake text «احمد نژادحسینی» is only a start-of-session identifier. The destination host must obtain GitHub authorization through its own official OAuth/connector UI. No credentials move with this ZIP. The receipt records capability and stage evidence only; it does not transfer permission between sessions.
+
+After extracting the package, run:
+
+```bash
+python -m unittest discover -s . -p 'test_*.py' -v
+python host_receipt.py --help
+```
+
+The package-level test suite verifies local runtime and receipt behavior. It does not prove that an external AI host has authorized GitHub, created a workspace, or passed a restart test.
