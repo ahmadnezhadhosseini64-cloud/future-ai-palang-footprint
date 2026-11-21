@@ -1429,3 +1429,10 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - [EVT-0290](./EVT-0290-CURRENT-CHAT-ANCHOR-2026-11-21.md)؛ [TIME-BINDING-EVT-0290](./TIME-BINDING-EVT-0290-CURRENT-CHAT-ANCHOR-2026-11-21.md)
 - [CURRENT-125](../../0.0/anchors/PALANG-0.0-CURRENT-20261121-125-CURRENT-CHAT-ANCHOR.md) → sole queue [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - ثبت مخزنی این زنجیره، به‌تنهایی اثبات‌کنندهٔ اجرای خودکار هر ورودی/خروجی یا پذیرش میزبان مستقل نیست.
+
+
+## EVT-0291 — POINT-0/072 current-chat continuation — 2026-11-21
+
+- [POINT-0/072](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-072-CURRENT-CHAT-ANCHOR-0PLUS.md) / [IN-115](../../0.0/anchors/PALANG-0.0-IN-20261121-115-CURRENT-CHAT-ANCHOR.md) / [OUT-114](../../0.0/anchors/PALANG-0.0-OUT-20261121-114-CURRENT-CHAT-ANCHOR.md).
+- [EVT-0291](./EVT-0291-SET-CURRENT-POINT-AND-LATEST-DELIVERY-2026-11-21.md) / [TIME-BINDING-EVT-0291](./TIME-BINDING-EVT-0291-SET-CURRENT-POINT-AND-LATEST-DELIVERY-2026-11-21.md) → [CURRENT-125](../../0.0/anchors/PALANG-0.0-CURRENT-20261121-125-CURRENT-CHAT-ANCHOR.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- EVT-0290 remains reserved for its earlier mirror-only registration. A duplicate same-number current-chat draft is quarantined. The canonical continuation uses unique EVT-0291.
