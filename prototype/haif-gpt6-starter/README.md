@@ -8,7 +8,7 @@ This is the updated release of the existing HAIF starter package, not a separate
 
 ## Current handoff — package v0.4.9 / POINT-0/080 (0++)
 
-Living master: 1.7.88. The current chain is POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051. Stable package ID and canonical ZIP filename remain unchanged. Latest Runnable contains only capabilities supported by source-backed tests; host-dependent capabilities and legacy dependencies with unresolved consumer impact remain OPEN / Development. The package must pass exact-main build, extracted tests, SHA-256, CRC, inventory, paired-master read-back and artifact round-trip before its 0.4.7 receipt is accepted.
+Living master: 1.7.88. The current chain is POINT-0/079 → CURRENT-132 → POINT-0/080 → IN-123 → OUT-122 → EVT-0300 → TIME-BINDING-EVT-0300 → CURRENT-133 → NEXT-051. Stable package ID and canonical ZIP filename remain unchanged. Latest Runnable contains only capabilities supported by source-backed tests; host-dependent capabilities and legacy dependencies with unresolved consumer impact remain OPEN / Development. The package must pass exact-main build, extracted tests, SHA-256, CRC, inventory, paired-master read-back and artifact round-trip before its 0.4.7 receipt is accepted.
 
 ## What is implemented
 - Standard-library Python continuity engine.
