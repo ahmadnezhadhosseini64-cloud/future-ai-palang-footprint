@@ -19,7 +19,8 @@ The canonical master repository is public. A folder in a public repository is no
 - The intended physical quarantine store is a separate owner-controlled PRIVATE repository named future-ai-palang-rahm.
 - The private RAHM repository must be owned/administered only by the owner. No host account, host app, collaborator, team, deploy key, or host-held credential is admitted.
 - The master promotion workflow receives read-only access to that private RAHM repository through the owner-managed RAHM_READ_TOKEN secret. The token is never available to a host and is never written into the repository.
-- The ChatGPT GitHub connection must separately be granted read access to the private RAHM repository before ChatGPT can inspect it directly. A connection to the public master does not prove access to a new private repository.
+- The ChatGPT GitHub connection must separately be granted read access to the private RAHM repository before ChatGPT can inspect its owner-exported records. A connection to the public master does not prove access to a new private repository.
+- For direct live inspection of a particular host's private workspace/repository, the ChatGPT GitHub connection must also have read access to that exact host repository. Otherwise ChatGPT can inspect only the latest owner-exported snapshot in RAHM and must label it SNAPSHOT-BASED, not LIVE.
 
 If the private repository has not been created and connected, RAHM is architecturally defined but not operationally provisioned. Do not store sensitive data in the public master as a workaround.
 
