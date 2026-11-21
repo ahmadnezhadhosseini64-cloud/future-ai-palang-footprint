@@ -2,7 +2,7 @@
 
 **Applies to:** any compatible current or future AI host  
 **Canonical repository:** https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint  
-**Governing continuation:** POINT-0/077 (0++) / CURRENT-130 → NEXT-051
+**Governing continuation:** POINT-0/077 (0++) / CURRENT-132 → NEXT-051
 
 ## One-message host instruction
 
