@@ -7,7 +7,10 @@
 - Tehran equivalent: 2026-11-21T22:54:40+03:30
 - Timestamp source: GitHub commit metadata read-back for the event artifact on the dedicated proposal branch.
 - Owner message timestamp: UNKNOWN / UNVERIFIED.
-- Main merge timestamp: PENDING; must be recorded separately after merge.
+- Main merge commit SHA: d9156fc4bb28cc1587774ed2ab0758b141bddc8f
+- Main merge timestamp UTC: 2026-11-21T19:26:11Z
+- Main merge timestamp Tehran: 2026-11-21T22:56:11+03:30
+- Main merge source: GitHub commit metadata read-back for PR #85.
 - Destination host acceptance timestamp: UNKNOWN / OPEN until direct receipt.
 
 ## Rule

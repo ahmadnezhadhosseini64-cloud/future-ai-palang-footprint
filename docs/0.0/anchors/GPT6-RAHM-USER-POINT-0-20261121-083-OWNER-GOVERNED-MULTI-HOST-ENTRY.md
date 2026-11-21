@@ -1,7 +1,7 @@
 # POINT-0/083 — ورود یک‌پیامی میزبان و فضای کاری محصور
 
 - Stable ID: HAIF-POINT-0-083-MULTI-HOST-ENTRY-2026-11-21
-- Status: ACTIVE / LIVING / OWNER-DIRECTED / PENDING MAIN MERGE
+- Status: ACTIVE / LIVING / OWNER-DIRECTED / MERGED TO MAIN / READ-BACK VERIFIED
 - Parent: POINT-0/082 → CURRENT-135 → NEXT-051
 - Root: canonical POINT-0؛ بدون ریشهٔ موازی
 - Marker: 0++ continuation marker only
@@ -43,7 +43,7 @@ POINT-0/082 → CURRENT-135 → POINT-0/083 (0++) → IN-126 → OUT-125 → EVT
 ## وضعیت گیت‌ها
 
 - Existing multi-host governance design: FOUND / REGISTERED.
-- One-message owner-governed enrollment instruction: ADDED ON BRANCH / PENDING MAIN MERGE.
+- One-message owner-governed enrollment instruction: MERGED TO MAIN / READ-BACK VERIFIED.
 - Public READ without OAuth: AVAILABLE BY REPOSITORY VISIBILITY; destination test pending.
 - Central repository WRITE by new host: PROHIBITED.
 - Official host identity / Host ID assignment: PENDING REAL HOST RECEIPT + OWNER REVIEW.
@@ -52,6 +52,12 @@ POINT-0/082 → CURRENT-135 → POINT-0/083 (0++) → IN-126 → OUT-125 → EVT
 - Broker and automated registry provisioning: OPEN / NOT VERIFIED.
 - Cross-host and MASTER negative isolation tests: OPEN / NOT RUN.
 - HOST-RECOVERED: NOT CLAIMED.
+
+## رسید ادغام و بازخوانی
+
+- PR #85: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/pull/85
+- Merge commit: d9156fc4bb28cc1587774ed2ab0758b141bddc8f
+- Merge time: 2026-11-21T19:26:11Z UTC / 2026-11-21T22:56:11+03:30 Tehran.
 
 ## ثبت و تداوم
 

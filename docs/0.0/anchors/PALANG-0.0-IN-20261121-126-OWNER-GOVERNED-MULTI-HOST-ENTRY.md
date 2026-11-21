@@ -1,7 +1,7 @@
 # IN-126 — ورودی مالک: ورود یک‌پیامی و فضای کاری مستقل میزبان
 
 - Parent point: POINT-0/083
-- Status: REGISTERED / OWNER-DIRECTED / PENDING MAIN MERGE
+- Status: REGISTERED / OWNER-DIRECTED / MERGED TO MAIN
 - Owner: احمد پلنگ
 - Project timezone: Asia/Tehran (+03:30)
 

@@ -2,7 +2,7 @@
 
 - Parent point: POINT-0/083
 - Source: IN-126
-- Status: PREPARED ON BRANCH / PENDING MAIN MERGE
+- Status: MERGED TO MAIN / READ-BACK VERIFIED
 
 ## نتیجه
 
@@ -17,7 +17,7 @@
 
 ## گیت‌های باز
 
-- Merge و read-back از main.
+- PR #85 merged to main; exact main read-back reconciliation is recorded in CURRENT-136.
 - اجرای واقعی پیام در یک میزبان مقصد تازه.
 - تخصیص شناسهٔ رسمی و ثبت Registry پس از رسید.
 - اثبات workspace خصوصی، persistence، export و recovery.
