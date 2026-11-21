@@ -1022,3 +1022,14 @@ The owner requires one universal AI-host entry path and an initial runnable vers
 - Destination OAuth and actual workspace: OPEN / NOT RUN.
 - Clean-host import, extraction, restart recovery and host acceptance: OPEN / NOT RUN.
 - Do not mark any external-host gate closed based on repository documentation or CI simulation.
+
+
+## Canonical recovery link matrix — POINT-0/078 / CURRENT-131
+
+- Point: [POINT-0/078](GPT6-RAHM-USER-POINT-0-20261121-078-UNIVERSAL-HOST-0PLUSPLUS.md)
+- Input: [IN-121](PALANG-0.0-IN-20261121-121-UNIVERSAL-HOST-INITIAL-RUNNABLE.md)
+- Output: [OUT-120](PALANG-0.0-OUT-20261121-120-UNIVERSAL-HOST-INITIAL-RUNNABLE.md)
+- Event: [EVT-0298](../../architecture/BEHAVIOR-TRACE/EVT-0298-UNIVERSAL-HOST-INITIAL-RUNNABLE-2026-11-21.md)
+- Current: [CURRENT-131](PALANG-0.0-CURRENT-20261121-131-UNIVERSAL-HOST-INITIAL-RUNNABLE.md)
+- Mirror event: [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md)
+- Mirror time binding: [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md)
