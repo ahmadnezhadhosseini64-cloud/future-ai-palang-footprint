@@ -62,3 +62,8 @@ host_id, host_type, model_version, adapter_version, owner_approval_ref, permissi
 - Owner-issued Host IDs follow HAIF-HOST-YYYYMMDD-NNN. No host is registered until a real enrollment receipt is reviewed.
 - Owner commands can select one Host ID or all verified/accessible hosts. Anonymous public readers are not discoverable or enrollable.
 - No host can access RAHM, another host workspace, or write to MASTER.
+
+
+## Host ID issuance — POINT-0/086
+
+مالک فرمان ورود را می‌دهد؛ دستیار/کنترل‌پلین پس از بررسی رسید مستقیم، دسترسی واقعی و نبود شناسهٔ تکراری، Host ID بعدی را از الگوی HAIF-HOST-YYYYMMDD-NNN صادر و در Registry ثبت می‌کند. هیچ میزبان حق انتخاب یا جعل Host ID ندارد. صدور شناسه به‌تنهایی به معنی فعال‌شدن میزبان نیست.
