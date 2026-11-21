@@ -38,3 +38,14 @@ This continuation is a child of the canonical POINT-0 root. It does not create a
 - Previous 0.4.7 and earlier receipts remain preserved. The next paired package target is 0.4.9 with living master 1.7.88; it must pass exact-main build, extraction, tests, digest and artifact round-trip.
 - Latest Runnable / Development / Historical remain distinct. The public READ-first decision is runnable at the specification level; destination execution, persistent workspace, clean-host import, restart and authenticated write-back remain OPEN / NOT RUN.
 - The 0.0 execution sequence remains 0.0.1–0.0.9 under the sole queue NEXT-051.
+
+
+## Canonical recovery link matrix — POINT-0/080
+
+- Point: [POINT-0/080](GPT6-RAHM-USER-POINT-0-20261121-080-PUBLIC-READ-NO-OAUTH-HOST-ACCESS.md)
+- Input: [IN-123](PALANG-0.0-IN-20261121-123-PUBLIC-READ-NO-OAUTH-HOST-ACCESS.md)
+- Output: [OUT-122](PALANG-0.0-OUT-20261121-122-PUBLIC-READ-NO-OAUTH-HOST-ACCESS.md)
+- Event: [EVT-0300](../../architecture/BEHAVIOR-TRACE/EVT-0300-PUBLIC-READ-NO-OAUTH-HOST-ACCESS-2026-11-21.md)
+- Sole next: [NEXT-051](PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
+- Mirror event: [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md)
+- Mirror time binding: [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md)
