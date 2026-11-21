@@ -1,3 +1,9 @@
+## Latest registered event — EVT-0293 / POINT-0/074 (0++)
+
+- Chain: POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051.
+- Current objective: complete the existing 0.0 work through NEXT-051; no parallel queue.
+- Previous points and events remain historical and append-only.
+
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
