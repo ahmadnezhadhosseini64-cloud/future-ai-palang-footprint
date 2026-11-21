@@ -137,3 +137,8 @@ Internal package version: 0.4.4
 Living master target: 1.7.79
 Current chain tail: POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051
 Single-message GPT host setup: `ONE_MESSAGE_HOST_BOOTSTRAP_FA.md`. A prompt cannot create missing OAuth authorization, connector capability, persistent workspace or security boundaries; target-host execution must prove these independently.
+
+
+## Current package — 0.4.5 / POINT-0/073
+
+Internal package version: 0.4.5. Living master: 1.7.80. Current chain: POINT-0/073 → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051. The canonical package identity and ZIP filename remain unchanged. Exact-head package conformance, external artifact round-trip and independent-host recovery are separate acceptance gates. Live broker authorization, OAuth, durable workspace, branch protection and restart persistence remain OPEN / NOT VERIFIED until direct receipts exist.
