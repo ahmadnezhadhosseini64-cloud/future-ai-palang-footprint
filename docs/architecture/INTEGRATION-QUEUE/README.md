@@ -1,3 +1,11 @@
+## Latest canonical continuation — POINT-0/077 (0++) / CURRENT-131
+
+- Chain: [POINT-0/077](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-077-0PLUSPLUS-LIVE-ANCHOR.md) → [IN-121](../../0.0/anchors/PALANG-0.0-IN-20261121-121-UNIVERSAL-HOST-PACKAGE-AND-0PLUSPLUS-CONTINUATION.md) → [OUT-120](../../0.0/anchors/PALANG-0.0-OUT-20261121-120-UNIVERSAL-HOST-PACKAGE-IMPLEMENTATION.md) → [EVT-0297](../BEHAVIOR-TRACE/EVT-0297-UNIVERSAL-HOST-PACKAGE-AND-POINT-0-077-CONTINUATION-2026-11-21.md) → [TIME-BINDING-EVT-0297](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0297-UNIVERSAL-HOST-PACKAGE-2026-11-21.md) → [CURRENT-131](../../0.0/anchors/PALANG-0.0-CURRENT-20261121-131-0PLUSPLUS-UNIVERSAL-HOST-PACKAGE.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Living mother target: 1.7.86. Canonical starter internal version candidate: 0.4.6; stable package ID and ZIP filename unchanged.
+- PR #64 is awaiting review/merge; package build and independent-host recovery remain separate gates.
+- CURRENT-065/CURRENT-066, Issues #20/#21, historic graph/identity/parent/time triage remain OPEN.
+- NEXT-051 remains the sole active queue.
+
 - Current point: [CURRENT-127](../../0.0/anchors/PALANG-0.0-CURRENT-20261121-127-0PLUSPLUS-TO-0-0-COMPLETION.md); active next: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - Latest chain: POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051. Target: complete repository-remediable 0.0 work; external-host capabilities remain separately gated.
 
