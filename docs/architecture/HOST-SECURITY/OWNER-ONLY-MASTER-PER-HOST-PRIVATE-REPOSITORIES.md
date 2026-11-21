@@ -1,8 +1,8 @@
 # معماری امنیتی میزبان‌های مستقل و مخزن مادر فقط‌مالک
 
 - Stable ID: HAIF-OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOS-2026-11-21-001
-- Version: 1.0.0
-- Status: OWNER-DIRECTED / DESIGN REGISTERED ON PROPOSAL BRANCH / IMPLEMENTATION PARTIAL
+- Version: 1.1.0
+- Status: OWNER-DIRECTED / DESIGN APPROVED / IMPLEMENTATION PARTIAL
 - Parent: POINT-0/083 → CURRENT-136 → NEXT-051
 - Canonical root: POINT-0 only
 - Canonical master repository: ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
@@ -102,7 +102,7 @@ Required owner actions:
 5. Enable MFA/passkey, secure recovery methods, review authorized OAuth Apps and revoke unexpected sessions/tokens.
 6. Keep secrets out of public files and history. Treat all public repository contents as disclosed to the internet.
 
-The latest repository contract recorded `main.protected=false`; the current GitHub connector has no action for reading/writing branch protection/rulesets or collaborator lists. Therefore actual protection and the current collaborator/App audit remain NOT VERIFIED until checked in GitHub Settings.
+Live read-back on 2026-11-22: Ruleset PROTECT-MAIN-BRANCH64 (27814009) is active for the default branch main; the branch API reports protected=true. The live ruleset blocks deletion, force-push and direct non-PR updates. Required approvals are still 0 and Code Owner review is false; collaborator/App audit remains OPEN. The connected GitHub action can read rulesets but does not expose ruleset writes.
 
 ## 7. Registration and provisioning lifecycle
 
@@ -166,6 +166,42 @@ Until all L3 gates pass, every new host is strictly L1_READ_ONLY against master 
 5. هر Pull Request که توسط هویت غیرمالک/اتوماسیون مجاز ایجاد شود و بخواهد به main برسد، باید دست‌کم یک تأییدیهٔ معتبر از مالک بگیرد؛ تأیید قبلی پس از push تازه باید باطل شود.
 6. فایل .github/CODEOWNERS مالک مخزن را برای همهٔ مسیرها به‌عنوان Code Owner معرفی می‌کند؛ Ruleset باید require_code_owner_review=true و required_approving_review_count=1 داشته باشد. حل گفتگوهای review پیش از ادغام نیز باید الزامی باشد.
 7. GitHub اجازه نمی‌دهد نویسندهٔ یک Pull Request، درخواست خودش را به‌عنوان تأییدکننده تأیید کند. بنابراین برای PRهای ساخته‌شده با حساب خود مالک، یا باید از مسیر promotion automation تحت کنترل مالک استفاده شود تا مالک reviewer باشد، یا مالک از مسیر bypass محدود و ثبت‌شدهٔ خودش استفاده کند. این bypass هرگز به میزبان یا هویت ثالث داده نمی‌شود.
+8. پیشنهاد میزبان نباید با حساب میزبان به مخزن مادر PR بسازد؛ میزبان اساساً مجوز آن را ندارد. مسیر انتقال میزبان به مالک، export → quarantine → review → approval → owner-controlled promotion است.
+9. تأیید GitHub فقط کنترل ادغام است و جایگزین ممیزی دسترسی collaborator/App، حفاظت مخزن خصوصی هر میزبان، broker، آزمون منفی و تأیید مالکیت میزبان نیست.
+
+## 13. وضعیت زندهٔ Ruleset شاخهٔ main — بازخوانی 2026-11-22
+
+- Ruleset فعال: PROTECT-MAIN-BRANCH64، شناسهٔ 27814009.
+- Target: ~DEFAULT_BRANCH؛ در این مخزن دقیقاً main.
+- Enforcement: active.
+- قواعد خوانده‌شده: جلوگیری از حذف، جلوگیری از force-push و الزام Pull Request.
+- Bypass actors: خالی؛ current_user_can_bypass برابر never.
+- مقدار زندهٔ required_approving_review_count=0 است؛ بنابراین تأیید مستقل هنوز اجباری نشده است.
+- require_code_owner_review=false و required_reviewers=[]؛ CODEOWNERS و الزام تأیید مالک هنوز در Ruleset اعمال نشده‌اند.
+- Branch API مقدار protected=true را برای main برگرداند؛ این نتیجه با فعال بودن Ruleset سازگار است. حفاظت مؤثر به معنی فعال بودن همهٔ کنترل‌های پیشنهادی نیست.
+- ابزار GitHub متصل در این اجرا فقط خواندن Ruleset را پشتیبانی کرد و عملیات نوشتن/ویرایش Ruleset در دسترس نبود. تغییر مقدار تأیید و گزینه‌های Code Owner باید در GitHub UI انجام و سپس از API بازخوانی شود.
+
+## 14. تنظیم نهایی موردنیاز در GitHub UI
+
+- Required approving reviews: 1.
+- Dismiss stale approvals when new commits are pushed: true.
+- Require review from Code Owners: true پس از ثبت فایل CODEOWNERS.
+- Require conversation resolution: true.
+- Host accounts / host Apps: هیچ‌کدام در bypass قرار نگیرند.
+- هر bypass مالک، اگر برای PRهای مالک‌نویس لازم شد، باید فقط به هویت مالک و با دامنهٔ Pull Request محدود باشد؛ هرگز برای میزبان فعال نشود.
+- پس از ذخیره، Ruleset از GitHub API دوباره خوانده شود. تا آن بازخوانی، این قسمت DESIGN APPROVED / CONFIGURATION PENDING است، نه VERIFIED.
+
+## 12. دروازهٔ تأیید مالک برای هر ارتقا به MASTER — تصمیم 2026-11-22
+
+این بخش، سیاست امنیتی بخش‌های 1 تا 11 را تغییر نمی‌دهد؛ یک لایهٔ کنترل تکمیلی روی ارتقای خروجی‌ها به شاخهٔ اصلی است.
+
+1. هیچ میزبان AI به مخزن مادر دسترسی نوشتن، عضویت collaborator، PAT، deploy key، GitHub App write scope، branch، PR، issue، release، workflow یا settings ندارد.
+2. هر میزبان فقط در محیط اجرایی خودش و، پس از تأیید مالک، در مخزن خصوصیِ اختصاصیِ ایجادشده توسط مالک کار می‌کند. فضای هر میزبان از سایر میزبان‌ها جداست.
+3. خروجی میزبان فقط «پیشنهاد» است؛ ابتدا به‌صورت export/receipt قابل‌راستی‌آزمایی به مالک می‌رسد. مالک منشأ، محتوا، آزمون، hash، اثر معماری و محرمانگی را بررسی می‌کند.
+4. هیچ پیشنهاد، فایل، commit یا نتیجه‌ای خودکار یا مستقیم وارد MASTER نمی‌شود. ارتقا فقط پس از بررسی و تصمیم صریح مالک مجاز است.
+5. هر Pull Request که توسط هویت غیرمالک/اتوماسیون مجاز ایجاد شود و بخواهد به main برسد، باید دست‌کم یک تأییدیهٔ معتبر از مالک بگیرد؛ تأیید قبلی پس از push تازه باید باطل شود.
+6. فایل .github/CODEOWNERS مالک مخزن را برای همهٔ مسیرها به‌عنوان Code Owner معرفی می‌کند؛ Ruleset باید require_code_owner_review=true و required_approving_review_count=1 داشته باشد. حل گفتگوهای review پیش از ادغام نیز باید الزامی باشد.
+7. GitHub اجازه نمی‌دهد نویسندهٔ یک Pull Request، درخواست خودش را به‌عنوان تأییدکننده تأیید کند. برای PRهای مالک‌نویس، مسیر promotion automation تحت کنترل مالک یا bypass محدود و صرفاً مالکانه لازم است. این bypass هرگز به میزبان یا هویت ثالث داده نمی‌شود.
 8. پیشنهاد میزبان نباید با حساب میزبان به مخزن مادر PR بسازد؛ میزبان اساساً مجوز آن را ندارد. مسیر انتقال میزبان به مالک، export → quarantine → review → approval → owner-controlled promotion است.
 9. تأیید GitHub فقط کنترل ادغام است و جایگزین ممیزی دسترسی collaborator/App، حفاظت مخزن خصوصی هر میزبان، broker، آزمون منفی و تأیید مالکیت میزبان نیست.
 
