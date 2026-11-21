@@ -912,3 +912,16 @@ The previous blob at this path began with the Integration Queue README title and
 POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051
 
 Owner explicitly authorized this continuation. POINT-0/071 / CURRENT-124 and all earlier roots remain preserved. EVT-0290 remains mirror-only; EVT-0291 is the new user-authorized continuation event. The living mother is 1.7.79. Package 0.4.3 is a prior verified receipt paired with mother 1.7.77; rebuild on exact current main, package round-trip, digest and extracted tests are required before a new latest-verified release can be claimed. Independent-host import, live host connection, persistent workspace, restart recovery and automatic capture remain OPEN / NOT RUN. Do not create NEXT-052.
+
+
+## Current chain navigation — POINT-0/072 / CURRENT-125
+- Point: [POINT-0/072](anchors/GPT6-RAHM-USER-POINT-0-20261121-072-CURRENT-CHAT-ANCHOR-0PLUS.md)
+- Input: [IN-115](anchors/PALANG-0.0-IN-20261121-115-CURRENT-CHAT-ANCHOR.md)
+- Output: [OUT-114](anchors/PALANG-0.0-OUT-20261121-114-CURRENT-CHAT-ANCHOR.md)
+- Event: [EVT-0291](../architecture/BEHAVIOR-TRACE/EVT-0291-SET-CURRENT-POINT-AND-LATEST-DELIVERY-2026-11-21.md)
+- Time: [TIME-BINDING-EVT-0291](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0291-SET-CURRENT-POINT-AND-LATEST-DELIVERY-2026-11-21.md)
+- Current: [CURRENT-125](anchors/PALANG-0.0-CURRENT-20261121-125-CURRENT-CHAT-ANCHOR.md)
+- Existing mirror event: [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md)
+- Existing mirror time binding: [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md)
+
+CURRENT-065/CURRENT-066 remains OPEN; no winner selected. Issues #20 and #21 remain OPEN. Full-state recovery, clean-host import, second-host acceptance, restart persistence, idle/background capture and graph/identity/parent/time triage remain OPEN / NOT RUN.
