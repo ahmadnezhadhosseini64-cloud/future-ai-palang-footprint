@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HAIF RAHM owner-redacted candidate manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "candidate_id",
+    "host_id",
+    "workspace_id",
+    "source_repository",
+    "source_commit_sha",
+    "master_commit_sha",
+    "source_session_id",
+    "exported_at_utc",
+    "owner_export_receipt",
+    "owner_redaction_attestation",
+    "owner_child_promotion_authorized",
+    "owner_approval_ref",
+    "privacy_class",
+    "redaction_status",
+    "files"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "candidate_id": {
+      "type": "string",
+      "pattern": "^HAIF-CANDIDATE-[0-9]{8}-[0-9]{3}$"
+    },
+    "host_id": {
+      "type": "string",
+      "pattern": "^HAIF-HOST-[0-9]{8}-[0-9]{3}$"
+    },
+    "workspace_id": {
+      "type": "string",
+      "pattern": "^HAIF-WORKSPACE-[0-9]{8}-[0-9]{3}$"
+    },
+    "source_repository": {
+      "type": "string",
+      "pattern": "^ahmadnezhadhosseini64-cloud/haif-host-[A-Za-z0-9-]+$"
+    },
+    "source_commit_sha": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "master_commit_sha": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "source_session_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "exported_at_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "owner_export_receipt": {
+      "type": "string",
+      "minLength": 8,
+      "maxLength": 500
+    },
+    "owner_redaction_attestation": {
+      "const": "OWNER_REVIEWED_AND_REDACTED"
+    },
+    "owner_child_promotion_authorized": {
+      "const": true
+    },
+    "owner_approval_ref": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 200
+    },
+    "privacy_class": {
+      "const": "PUBLIC_REDACTED"
+    },
+    "redaction_status": {
+      "const": "OWNER_VERIFIED"
+    },
+    "files": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 20,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "path",
+          "sha256",
+          "size_bytes"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9._-]{0,99}\\.(md|json|txt|csv)$"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "size_bytes": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 1048576
+          }
+        }
+      }
+    }
+  }
+}
