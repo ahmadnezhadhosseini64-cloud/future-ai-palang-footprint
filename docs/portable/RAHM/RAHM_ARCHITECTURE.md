@@ -1,5 +1,14 @@
 # RAHM_ARCHITECTURE — portable architecture contract
-Version 1.0.2 | Package ID: HAIF-RAHM-PORTABLE-20261024-001
+Version 1.0.3 | Package ID: HAIF-RAHM-PORTABLE-20261024-001
+
+Current canonical continuation: POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051
+Living master: 1.7.86. Portable starter target: 0.4.7; 0.4.6 remains last verified until exact-main package receipt is accepted.
+
+## Release and dependency lanes
+- Latest Runnable contains only implemented and tested capabilities with exact-source evidence.
+- Development / OPEN retains incomplete, host-dependent and unverified capabilities without suppressing independent runnable features.
+- Historical versions, failures, receipts and old dependencies remain preserved.
+- A legacy dependency blocks only its affected consumer unless tests demonstrate a wider integrity/security impact.
 
 ## Layers
 1. MASTER: canonical rules, identities, versions, lineage, acceptance and promotion.
