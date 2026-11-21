@@ -1,6 +1,6 @@
 # Independent-host recovery proof protocol
 
-Package version target: 0.4.7
+Package version: 0.4.7 (target pending exact-main receipt)
 Latest canonical chain: POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051
 The current point is POINT-0/079 on the existing root; follow UNIVERSAL_AI_HOST_ENTRY_FA.md for model/platform-neutral entry.
 Project: Future AI / Palang Footprint
