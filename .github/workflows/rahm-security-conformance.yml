@@ -17,6 +17,7 @@ on:
       - ".github/workflows/pending-registration-drain.yml"
       - ".github/workflows/rahm-portable-conformance.yml"
       - ".github/workflows/living-architecture-audit.yml"
+      - ".github/workflows/living-architecture-audit.yml"
       - "control-plane/controller.py"
   push:
     branches: [main]
@@ -32,6 +33,7 @@ on:
       - ".github/workflows/execution-controller.yml"
       - ".github/workflows/pending-registration-drain.yml"
       - ".github/workflows/rahm-portable-conformance.yml"
+      - ".github/workflows/living-architecture-audit.yml"
       - "control-plane/controller.py"
 
 permissions:
