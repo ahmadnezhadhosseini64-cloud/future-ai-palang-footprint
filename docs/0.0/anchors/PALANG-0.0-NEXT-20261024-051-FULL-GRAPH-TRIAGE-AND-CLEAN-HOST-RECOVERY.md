@@ -2,7 +2,7 @@
 
 - Chain: POINT-0/084 → CURRENT-137 → POINT-0/085 (0++) → IN-128 → OUT-127 → EVT-0305 → TIME-BINDING-EVT-0305 → CURRENT-138 → NEXT-051.
 - Owner-directed approval policy: one required approval, specifically by the sole Code Owner `@ahmadnezhadhosseini64-cloud`; `.github/CODEOWNERS` assigns all paths to that account.
-- Current live Ruleset read-back at main HEAD `564166612c73da78544a6a88d7f8a1e5da7560`: active on default branch, but approval count remains 0 and Code Owner review remains OFF. The target settings are not yet enforced.
+- Current live Ruleset read-back at main HEAD `564166612c73da78544a6a6bb88d7f8a1e5da7560`: active on default branch, but approval count remains 0 and Code Owner review remains OFF. The target settings are not yet enforced.
 - GitHub blocks self-approval of a PR by its author. Owner-authored PRs therefore require a trusted owner-controlled promotion bot or a narrowly scoped owner-only PR bypass; hosts never receive bypass or master write access.
 - PR #93 and PR #94 are merged and read-back verified. Security architecture is DESIGN APPROVED / IMPLEMENTATION PARTIAL. Live Ruleset configuration, owner-authored PR route, access audit, per-host private repos, broker and negative isolation tests remain open.
 - NEXT-051 remains the sole active queue; no NEXT-052 or parallel root is created.
