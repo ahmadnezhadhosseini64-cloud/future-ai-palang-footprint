@@ -3,8 +3,8 @@
 Package family: HAIF GPT-6 Portable Starter
 Stable package ID: HAIF-GPT6-PORTABLE-STARTER-20261025-004
 Canonical ZIP filename: haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip
-Internal version: 0.4.3
-Current chain: POINT-0/071 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051; prior checkpoints remain parent history.
+Internal version: 0.4.4
+Current chain: POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051; prior checkpoints remain parent history.
 
 ## 1. Visible response is mandatory
 When an input is received, the host must produce one of:
@@ -62,6 +62,6 @@ If no actual producer or authorized adapter connection exists, mark NOT_CONNECTE
 
 ## Current package — 0.4.3 / POINT-0/071
 
-Internal version: 0.4.3
-Current chain tail: POINT-0/071 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051
+Internal version: 0.4.4
+Current chain tail: POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051
 Single-message GPT host setup: `ONE_MESSAGE_HOST_BOOTSTRAP_FA.md`. Package identity and canonical ZIP filename remain unchanged.
