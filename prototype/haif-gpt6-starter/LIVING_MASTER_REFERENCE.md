@@ -2,17 +2,40 @@
 
 - Stable ID / شناسهٔ پایدار: HAIF-INITIAL-AI-MODEL-MASTER-REFERENCE-2026-10-21-001
 - Production ID / شناسهٔ تولید: HAIF-IAM-MR-2026-10-21-001
-- Version / نسخه: 1.7.79
-- Date / تاریخ ثبت: 2026-11-21 (POINT-0/072 / CURRENT-125؛ تثبیت همین گفتگو و اتصال به زنجیرهٔ canonical)
+- Version / نسخه: 1.7.86
+- Date / تاریخ ثبت: 2026-11-21 (POINT-0/079 / CURRENT-132؛ نقطهٔ ۰++ زنده؛ ادامهٔ ریشهٔ واحد POINT-0)
 - Exact user-message time / زمان دقیق پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان پیام با زمان commit یا ممیزی جایگزین نمی‌شود.
 - Repository evidence / شاهد مخزن: EVT-0247 initial registration commit 80cd9c752f999e5ac30496fa359fb9482319bc22 at UTC 2026-11-04T06:23:22Z / Tehran 2026-11-04T09:53:22+03:30; first integration 4f1232acd7ee0bffa737c6da2f5f4e4382815251 at UTC 2026-11-04T06:31:47Z / Tehran 2026-11-04T10:01:47+03:30; Evidence Gate 41786131427 created follow-up main 807b5b79080e40c994d52a77e9c9776c3cb0a985 at UTC 2026-11-04T06:31:56Z / Tehran 2026-11-04T10:01:56+03:30. Audit 41786131486 and Portable RAHM Conformance 41786131274 failed on exact SHA 4f1232acd7ee0bffa737c6da2f5f4e4382815251 because IN-100/OUT-099 lacked the packaged protocol/export-manifest link matrix and CURRENT-112/NEXT-051 lacked the verifier-required complete chain/open-gate markers. The failed conformance ZIP rebuild was downstream of the skipped master-sync step; artifact 13301535411 is not accepted. This correction adds the full link matrix and explicit markers; resulting main requires fresh exact-SHA audit/conformance.
 - Timezone / منطقهٔ زمانی پروژه: Asia/Tehran (+03:30)
 - Owner / مالک: احمد پلنگ (Ahmad Nezhadhosseini)
 - Project / پروژه: Future AI / Palang Footprint — HAIF
-- Status / وضعیت: ACTIVE / LIVING; latest continuation POINT-0/072; current checkpoint CURRENT-125; sole queue NEXT-051; canonical package identity and ZIP filename retained; package rebuild against this master and exact current main required; actual external host connection and recovery OPEN / NOT RUN.
+- Status / وضعیت: ACTIVE / LIVING; latest continuation POINT-0/079 (0++); current checkpoint CURRENT-132; living master 1.7.86; POINT-0/079 and chain records registered on the same canonical POINT-0 root; sole queue NEXT-051; Latest Runnable / Development / Historical separation active; destination OAuth, workspace execution, clean-host acceptance, restart recovery and 0.0 completion remain OPEN / NOT RUN.
 - Canonical path / مسیر مرجع این بسته: docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md
 - Package root / ریشهٔ بسته: docs/architecture/مدل اولیه AI/
 - Governing scope / دامنهٔ حاکم: فقط مخزن GitHub؛ Buffer، Persistent Memory، Library و Dropbox در این مرحله تغییر داده نشده‌اند و تأییدشده نیستند.
+
+## Latest living continuation — POINT-0/079 (0++) / CURRENT-132
+
+این نقطه ادامهٔ مستقیم POINT-0/078 و CURRENT-131 روی همان ریشهٔ canonical POINT-0 است. ریشه یا صف موازی ساخته نشده است.
+
+- Chain: POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051.
+- Owner rule: آخرین نسخهٔ قابل‌تحویل باید آخرین نسخهٔ واقعاً شدنی و آزموده‌شده باشد؛ قابلیت‌های ناقص/وابسته/نشدنی در Development / OPEN فعال می‌مانند و فقط پس از شواهد پذیرش به Latest Runnable ارتقا می‌یابند.
+- Legacy dependency rule: وابستگی قدیمی فقط دامنهٔ مصرف‌کنندهٔ متأثر را متوقف می‌کند، مگر آزمون نشان دهد هسته، امنیت، صحت داده، استخراج یا بازیابی آسیب می‌بیند. قابلیت‌های مستقل و اثبات‌شده می‌توانند در بسته باقی بمانند؛ تاریخچه و failureها حذف نمی‌شوند.
+- Latest verified portable package at registration: internal 0.4.6, stable package identity and canonical ZIP filename unchanged; 19 files; 24/24 extracted tests PASS; inner ZIP SHA-256 b9f56a360351d5ab16f07656018e576c2398a110db540138810e01358f8934fc. This receipt belongs to its source commit; target 0.4.7 requires fresh exact-main build and receipt after this master update.
+- 0.0 execution gates: 0.0.1 source of truth; 0.0.2 runnable inventory; 0.0.3 dependency triage; 0.0.4 package build; 0.0.5 extraction/recovery; 0.0.6 open-development register; 0.0.7 clean-host acceptance; 0.0.8 promotion; 0.0.9 cross-index reconciliation.
+- OAuth, destination workspace, clean-host recovery, second-host acceptance, restart recovery and HOST-RECOVERED remain OPEN / NOT RUN until direct destination receipts.
+
+## Historical living continuation — POINT-0/078 (0++) / CURRENT-131
+
+این تعامل به‌عنوان نقطهٔ ۰++ زنده روی همان ریشهٔ canonical POINT-0 ثبت می‌شود؛ ریشهٔ تازه، پروژهٔ موازی یا صف جدید ایجاد نمی‌کند.
+
+- Chain: POINT-0/077 → CURRENT-130 → POINT-0/078 (0++) → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → NEXT-051.
+- Owner intent: این نقطه باید در کنار پیشرفت پروژه زنده بماند و به تمام نقاط/اسناد/رویدادهای قبلی متصل باشد.
+- Host-transfer objective: یک سند مرجع قابل کپی و یک ZIP مستقل؛ هرکدام به‌تنهایی برای بازیابی معماری در نشست تازهٔ GPT هم‌خانواده کافی باشند و میزبان مقصد را به اتصال امن مخزن و workspace واقعی هدایت کنند.
+- «احمد نژادحسینی» فقط دست‌دهی متنی آغازین است؛ نه رمز عبور، عامل احراز هویت، توکن یا مجوز OAuth.
+- تأیید مالک برای آغاز مراحل OAuth و workspace ثبت شده است؛ مجوز GitHub و workspace باید در نشست مقصد و با شواهد مستقیم برقرار شوند.
+- ZIP قبلی فقط برای HEAD زمان ساخت خود معتبر است؛ پس از ادغام POINT-0/077 باید exact-main build، استخراج، آزمون، round-trip و receipt تازه تأیید شود.
+- Destination session, OAuth, workspace, execution and host acceptance: OPEN / NOT RUN until direct destination receipt.
 
 ## 1. این سند چه چیزی را تثبیت می‌کند؟
 
@@ -4625,9 +4648,9 @@ ONE_MESSAGE_HOST_BOOTSTRAP_FA.md تنها پیام آغازین میزبان د�
 
 با تأیید صریح مالک، همین محل تعامل به‌عنوان ادامهٔ جاری زیر ریشهٔ یگانهٔ POINT-0 ثبت شد. 0+ و 0++ نشانگرهای همان ریشه‌اند و ریشهٔ مستقل یا صف موازی ایجاد نمی‌کنند.
 
-زنجیرهٔ جاری: [POINT-0/072](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-072-CURRENT-CHAT-ANCHOR-0PLUS.md) → [IN-115](../../0.0/anchors/PALANG-0.0-IN-20261121-115-CURRENT-CHAT-ANCHOR.md) → [OUT-114](../../0.0/anchors/PALANG-0.0-OUT-20261121-114-CURRENT-CHAT-ANCHOR.md) → [EVT-0290](../BEHAVIOR-TRACE/EVT-0290-CURRENT-CHAT-ANCHOR-2026-11-21.md) → [TIME-BINDING-EVT-0290](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0290-CURRENT-CHAT-ANCHOR-2026-11-21.md) → [CURRENT-125](../../0.0/anchors/PALANG-0.0-CURRENT-20261121-125-CURRENT-CHAT-ANCHOR.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+زنجیرهٔ جاری: [POINT-0/072](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-072-CURRENT-CHAT-ANCHOR-0PLUS.md) → [IN-115](../../0.0/anchors/PALANG-0.0-IN-20261121-115-CURRENT-CHAT-ANCHOR.md) → [OUT-114](../../0.0/anchors/PALANG-0.0-OUT-20261121-114-CURRENT-CHAT-ANCHOR.md) → [EVT-0291](../BEHAVIOR-TRACE/EVT-0291-SET-CURRENT-POINT-AND-LATEST-DELIVERY-2026-11-21.md) → [TIME-BINDING-EVT-0291](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0291-SET-CURRENT-POINT-AND-LATEST-DELIVERY-2026-11-21.md) → [CURRENT-125](../../0.0/anchors/PALANG-0.0-CURRENT-20261121-125-CURRENT-CHAT-ANCHOR.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 
-زمان دقیق ارسال پیام مالک UNKNOWN / UNVERIFIED باقی می‌ماند. زمان Commit ثبت EVT-0290 برابر 2026-11-21T08:51:54Z و زمان متناظر تهران 2026-11-21T12:21:54+03:30 است؛ این زمان، زمان ارسال پیام نیست.
+زمان دقیق ارسال پیام مالک UNKNOWN / UNVERIFIED باقی می‌ماند. زمان لنگر ثبت ریشه در TIME-BINDING-EVT-0291 برابر 2026-11-21T08:51:46Z UTC و 2026-11-21T12:21:46+03:30 تهران است؛ این زمان، زمان ارسال پیام نیست.
 
 آخرین رسید بستهٔ قبلی 0.4.3 با سند مادر 1.7.77 جفت بوده است. از آنجا که سند مادر اکنون 1.7.79 است، آن رسید فقط سابقهٔ build قبلی محسوب می‌شود. برای تحویل آخرین نسخهٔ هم‌تراز، بسته باید روی HEAD نهایی همین ثبت بازسازی شود و رسید جدید شامل source commit، نسخهٔ داخلی، SHA-256، اندازه، inventory، CRC، آزمون فایل استخراج‌شده و artifact read-back ارائه شود.
 
@@ -4639,3 +4662,103 @@ NEXT-051 تنها صف فعال است. پذیرش میزبان مستقل، ا�
 POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051
 
 این ثبت ادامهٔ همان ریشهٔ canonical POINT-0 است؛ POINT-0/071 و تمام والدهای آن حفظ می‌شوند. دستور صریح مالک برای تثبیت این تعامل، اتصال به زنجیره و تحویل آخرین نسخه ثبت شد. آخرین بستهٔ دارای رسید قبلی 0.4.3 است و با سند مادر جدید جفت/تأیید نشده؛ بازسازی exact-current-main و آزمون RAHM لازم است. میزبان مستقل و persistence همچنان OPEN / NOT RUN هستند. صف یگانه NEXT-051 باقی می‌ماند.
+
+
+---
+
+## نسخهٔ 1.7.80 — هم‌ترازی معماری و درخواست تحویل نهایی (POINT-0/073)
+
+این نسخه ادامهٔ POINT-0/072 است و هیچ ریشه، شاخه یا سابقه‌ای را حذف یا بازشماری نمی‌کند. درخواست جاری مالک برای تکمیل معماری در مخزن و ارائهٔ آخرین نسخه، به زنجیرهٔ اصلی متصل شد:
+
+[POINT-0/073](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-073-FINAL-ARCHITECTURE-AND-DELIVERY.md) → [IN-116](../../0.0/anchors/PALANG-0.0-IN-20261121-116-FINAL-ARCHITECTURE-AND-DELIVERY.md) → [OUT-115](../../0.0/anchors/PALANG-0.0-OUT-20261121-115-FINAL-ARCHITECTURE-AND-DELIVERY.md) → [EVT-0292](../BEHAVIOR-TRACE/EVT-0292-FINAL-ARCHITECTURE-AND-DELIVERY-2026-11-21.md) → [TIME-BINDING-EVT-0292](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0292-FINAL-ARCHITECTURE-AND-DELIVERY-2026-11-21.md) → [CURRENT-126](../../0.0/anchors/PALANG-0.0-CURRENT-20261121-126-FINAL-ARCHITECTURE-AND-DELIVERY.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+
+قاعدهٔ تحویل: «آخرین نسخه» فقط بسته‌ای است که از HEAD مشخص ساخته شده و رسید exact-head آن، SHA-256 واقعی، اندازه، inventory، CRC، تطبیق بایت‌های سند مادر همراه، آزمون‌های استخراج‌شده و artifact read-back را دارد. رسیدهای 0.4.3 و 0.4.4 قبلی تاریخی‌اند و برای این نسخه قابل استفادهٔ مجدد نیستند.
+
+تفکیک وضعیت‌ها الزامی است: ثبت مخزن ≠ build بسته ≠ تأیید بسته ≠ پذیرش میزبان مستقل. اتصال OAuth، workspace پایدار، بازیابی میزبان مستقل، restart persistence، ثبت زنده/پس‌زمینه و اصلاح کامل گراف فقط با شاهد مستقیم بسته می‌شوند؛ در غیر این صورت OPEN / NOT RUN می‌مانند.
+
+NEXT-051 تنها صف فعال است. هیچ NEXT-052 یا ریشهٔ موازی ایجاد نمی‌شود. زمان دقیق پیام کاربر UNKNOWN / UNVERIFIED باقی می‌ماند؛ زمان commit فقط زمان ثبت مخزن است.
+
+
+---
+
+## نسخهٔ 1.7.81 — نشانگر ۰++ و هدف تکمیل ۰.۰ (POINT-0/074)
+
+درخواست مالک برای تبدیل این تعامل به نشانگر ۰++ و اتصال آن به زنجیره ثبت شد. ۰++ ریشهٔ جدید نیست؛ نشانگر تکاملی روی همان POINT-0 واحد است. هدف بعدی، تکمیل مسیر موجود ۰.۰ است و NEXT-051 تنها صف فعال باقی می‌ماند.
+
+زنجیرهٔ جاری: [POINT-0/074](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-074-0PLUSPLUS-TO-0-0-COMPLETION.md) → [IN-117](../../0.0/anchors/PALANG-0.0-IN-20261121-117-0PLUSPLUS-TO-0-0-COMPLETION.md) → [OUT-116](../../0.0/anchors/PALANG-0.0-OUT-20261121-116-0PLUSPLUS-TO-0-0-COMPLETION.md) → [EVT-0293](../BEHAVIOR-TRACE/EVT-0293-0PLUSPLUS-TO-0-0-COMPLETION-2026-11-21.md) → [TIME-BINDING-EVT-0293](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0293-0PLUSPLUS-TO-0-0-COMPLETION-2026-11-21.md) → [CURRENT-127](../../0.0/anchors/PALANG-0.0-CURRENT-20261121-127-0PLUSPLUS-TO-0-0-COMPLETION.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+
+معیار پایان ۰.۰: هم‌ترازی همهٔ اشاره‌گرهای جاری و گراف؛ اصلاح آزمون‌های منبع؛ اجرای آزمون‌های exact-HEAD؛ ساخت ZIP با همان شناسه و نام canonical؛ تطبیق بایت سند مادر، inventory، CRC، SHA-256 و read-back؛ و ثبت رسید میزبان مستقل. هر قابلیت خارجی که بدون میزبان مجاز و واقعی قابل آزمون نیست OPEN / NOT RUN باقی می‌ماند. هیچ زمان پیام، اتصال، مجوز یا پذیرش میزبان حدس زده نمی‌شود.
+
+امنیت میزبان: READ-ONLY به‌صورت پیش‌فرض؛ اجرای allowlisted؛ تأیید مالک برای عملیات ممتاز؛ بدون قرار دادن secret/token در مخزن؛ AUTHENTICATION GATE: OPEN / DEFERRED تا اثبات OAuth/مجوز واقعی.
+
+
+---
+
+## نسخهٔ 1.7.82 — محیط کاری واقعی مخزن برای اولین میزبان جدید (POINT-0/075)
+
+این نسخه ادامهٔ POINT-0/074 و همان ریشهٔ canonical POINT-0 است؛ هیچ ریشه یا صف موازی ایجاد نمی‌شود. مالک سه هدف را تعیین کرد: (۱) نشان‌گذاری همین تعامل و اتصال آن به زنجیره؛ (۲) چکش معماری و آماده‌سازی اجرای واقعی در مخزن؛ (۳) تحویل دستور آغاز به‌کار و پذیرش اولین میزبان جدید.
+
+زنجیرهٔ این ادامه: [POINT-0/075](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-075-FIRST-HOST-REPO-WORKSPACE.md) → [IN-118](../../0.0/anchors/PALANG-0.0-IN-20261121-118-FIRST-HOST-REPO-WORKSPACE.md) → [OUT-117](../../0.0/anchors/PALANG-0.0-OUT-20261121-117-FIRST-HOST-REPO-WORKSPACE.md) → [EVT-0294](../BEHAVIOR-TRACE/EVT-0294-FIRST-HOST-REPO-WORKSPACE-2026-11-21.md) → [TIME-BINDING-EVT-0294](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0294-FIRST-HOST-REPO-WORKSPACE-2026-11-21.md) → [CURRENT-128](../../0.0/anchors/PALANG-0.0-CURRENT-20261121-128-FIRST-HOST-REPO-WORKSPACE.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+
+### قرارداد میزبان اول
+
+- **READ:** اتصال احراز هویت‌شده از GitHub connector رسمی به مخزن canonical.
+- **EXECUTE:** محیط اجرای واقعی و مستقل میزبان برای clone/checkout، اجرای اسکریپت‌ها و آزمون‌ها، بررسی diff و ساخت receipt. صرف مشاهدهٔ صفحات GitHub یا خواندن فایل، اجرای محیطی محسوب نمی‌شود.
+- **WORKSPACE:** working tree جدا برای همان میزبان/جلسه؛ snapshot مرجع pin‌شده و read-only، تغییرات در working copy.
+- **WRITE:** فقط روی branch اختصاصی میزبان و فقط در صورت grant واقعی Contents:write/Push توسط connector مقصد. تغییرات از Pull Request بررسی می‌شوند.
+- **MAIN:** push مستقیم میزبان به main ممنوع؛ ادغام از مسیر PR و سیاست مخزن انجام می‌شود.
+- **AUTH:** مالک باید اتصال را از رابط امن محیط میزبان جدید برقرار کند. این سند نه نشست جدید را از راه دور ایجاد می‌کند و نه OAuth/permission می‌سازد. هیچ credential در چت ذخیره یا درخواست نمی‌شود.
+
+### وضعیت اثبات
+
+در محیط فعلی، خواندن مخزن و ایجاد شاخهٔ `haif/point-0-075-first-host-repo-workspace` واقعاً انجام شد؛ PR #57 با موفقیت در main ادغام شد. merge commit: `e8399c76efe45188ea1574e7ddebd96286da3233`؛ main read-back نسخهٔ مادر 1.7.82 را تأیید کرد. این کار، اتصال میزبان مقصد را اثبات نمی‌کند.
+
+بستهٔ portable با همان stable package identity و نام ZIP canonical در workflow رسمی RAHM بازسازی و PACKAGE_VERIFIED شد. نسخهٔ داخلی manifest برابر 0.4.5 است؛ inventory شامل 18 فایل و آزمون‌های استخراج‌شده 24/24 PASS هستند؛ CRC، تطبیق بایت منبع و دانلود/بازخوانی artifact نیز PASS هستند. اندازه، SHA-256 و source SHA جاری از [stable latest-verified release](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified) و receipt ماشین‌خوان همان انتشار دریافت می‌شوند؛ در سند مادر hash ثابت تکرار نمی‌شود تا stale یا self-referential نشود. Living Architecture Audit و کنترل‌های اصلی روی revision جاری SUCCESS شده‌اند.
+
+اتصال OAuth میزبان اول، اجرای آزمون‌ها در نشست AI-host مقصد، مجوز نوشتن مقصد، پذیرش مستقل میزبان و restart/persistence همچنان OPEN / NOT RUN هستند. تکمیل گراف 0.0 نیز از مسیر NEXT-051 ادامه دارد. CI و PACKAGE_VERIFIED جایگزین HOST_RECOVERED نیستند. NEXT-051 تنها صف فعال باقی می‌ماند.
+
+
+---
+
+## نسخهٔ 1.7.83 — میزبان GPT-6 تازه از وضعیت صفر و ورود به محیط کار مخزن (POINT-0/076)
+
+این نسخه ادامهٔ POINT-0/075 و CURRENT-128 است؛ هدف آن ساخت پروژهٔ GPT-6 موازی نیست. مالک صریحاً یک میزبان GPT-6 تازه و فاقد سابقهٔ تعامل قبلی با پروژه را تأیید کرد تا پس از اعطای دسترسی واقعی از سوی مالک، مخزن canonical را بخواند و وارد workspace/working checkout مستقل شود.
+
+زنجیرهٔ ثبت: [POINT-0/076](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-076-ZERO-STATE-GPT6-HOST.md) → [IN-119](../../0.0/anchors/PALANG-0.0-IN-20261121-119-ZERO-STATE-GPT6-HOST.md) → [OUT-118](../../0.0/anchors/PALANG-0.0-OUT-20261121-118-ZERO-STATE-GPT6-HOST.md) → [EVT-0295](../BEHAVIOR-TRACE/EVT-0295-ZERO-STATE-GPT6-REPOSITORY-HOST-2026-11-21.md) → [TIME-BINDING-EVT-0295](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0295-ZERO-STATE-GPT6-REPOSITORY-HOST-2026-11-21.md) → [CURRENT-129](../../0.0/anchors/PALANG-0.0-CURRENT-20261121-129-ZERO-STATE-GPT6-HOST.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+
+### میزبان صفر و دستور مستقل
+
+دستور یک‌پیامی مستقل برای نشست تازه در [ZERO-STATE-GPT6-REPOSITORY-HOST-BOOTSTRAP_FA.md](../../../prototype/haif-gpt6-starter/ZERO-STATE-GPT6-REPOSITORY-HOST-BOOTSTRAP_FA.md) ثبت شده است. میزبان باید بدون اتکا به حافظهٔ چت قبلی، اتصال واقعی GitHub، هویت مخزن، exact HEAD، سند مادر، CURRENT-129، CURRENT-128 و NEXT-051 را بازیابی کند؛ سپس workspace مستقل بسازد، آزمون‌های واقعی و مجاز را اجرا کند و رسید پذیرش ارائه دهد.
+
+### حدود اثبات و مجوز
+
+- تأیید مالک و آماده‌سازی اسناد در این زنجیره ثبت می‌شود.
+- ایجاد نشست GPT-6 تازه باید توسط مالک در رابط پلتفرم انجام شود؛ مخزن و bootstrap نمی‌توانند نشست را از راه دور ایجاد کنند.
+- OAuth/اتصال GitHub در نشست مقصد فقط با اقدام مالک در UI امن همان محیط برقرار می‌شود.
+- READ و EXECUTE باید جداگانه و با شاهد واقعی بررسی شوند.
+- WRITE پیش‌فرض خاموش است؛ فقط با مجوز واقعی، روی branch اختصاصی و از مسیر PR مجاز است؛ push مستقیم به main ممنوع.
+- تا زمان دریافت رسید مستقیم از همان میزبان مقصد، OAuth، workspace مقصد، اجرای آزمون و پذیرش مستقل OPEN / NOT RUN می‌مانند.
+- این مأموریت زیرمسیر اجرایی NEXT-051 است؛ صف موازی NEXT یا ریشهٔ دوم ایجاد نشده است.
+- زمان دقیق پیام مالک UNKNOWN / UNVERIFIED است؛ زمان commit ثبت مخزن جداگانه و فقط از Git metadata خوانده می‌شود.
+
+
+---
+
+## نسخهٔ 1.7.85 — نسخهٔ اولیهٔ شدنی و بازیابی عمومی میزبان (POINT-0/078)
+
+این نسخه ادامهٔ مستقیم CURRENT-130 و POINT-0/077 است و ریشه یا صف جدید نمی‌سازد. زنجیرهٔ جاری: POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → NEXT-051.
+
+### قاعدهٔ نسخهٔ شدنی و توسعه
+- Latest Runnable فقط قابلیت‌هایی را شامل می‌شود که در منبع مشخص پیاده‌سازی شده و آزمون/رسید قابل‌بازخوانی دارند.
+- قابلیت ناقص، میزبان‌وابسته یا آزمون‌نشده در Development / OPEN باقی می‌ماند؛ حذف یا به‌عنوان قابلیت آماده معرفی نمی‌شود.
+- ارتقا فقط پس از پیاده‌سازی، آزمون مثبت/منفی متناسب، تطبیق exact source، receipt، read-back و reconcile مجاز است.
+- نسخه‌های قدیمی، شکست‌ها، ناسازگاری‌ها و digestها حفظ می‌شوند و هیچ تاریخچه‌ای بی‌صدا بازنویسی نمی‌شود.
+
+### دستور عمومی میزبان و بازیابی
+دستور مستقل و مدل‌خنثی در [UNIVERSAL_AI_HOST_ENTRY_FA.md](../../../prototype/universal-host/UNIVERSAL_AI_HOST_ENTRY_FA.md) ثبت شده است. این دستور کشف اتصال رسمی GitHub، خواندن exact HEAD، بازیابی Reference Index و سند مادر، اعتبارسنجی ZIP، استخراج امن در پوشهٔ مجزا، اجرای آزمون، ساخت workspace فقط در صورت وجود قابلیت واقعی، ثبت receipt و مسیر PR را تعریف می‌کند.
+
+### گام‌های 0.0
+0.0-1 کشف منبع و تثبیت exact HEAD؛ 0.0-2 بازیابی و تطبیق معماری؛ 0.0-3 اعتبارسنجی و استخراج بسته؛ 0.0-4 اجرای آزمون‌ها و کنترل‌های منفی؛ 0.0-5 ساخت workspace و اثبات persistence/isolation؛ 0.0-6 بازیابی clean-host و restart؛ 0.0-7 تکامل کنترل‌شده و ارتقای قابلیت‌های آزموده‌شده. معیار پذیرش و وضعیت هر مرحله در NEXT-051 ثبت می‌شود.
+
+### مرز شواهد
+ثبت دستور و ادغام اسناد به‌تنهایی به معنی بازسازی ZIP روی exact main، OAuth مقصد، workspace پایدار، clean-host recovery یا HOST-RECOVERED نیست. این گیت‌ها تا رسید مستقیم OPEN / NOT RUN باقی می‌مانند. NEXT-051 تنها صف فعال است.
