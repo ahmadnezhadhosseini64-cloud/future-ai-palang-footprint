@@ -1,4 +1,4 @@
-# HAIF GPT-6 Portable Starter v0.4.3
+# HAIF GPT-6 Portable Starter v0.4.4
 
 This is the updated release of the existing HAIF starter package, not a separate project. It updates the existing v0.3.0 0/0+ bootstrap package at the same stable package identity and canonical ZIP filename; history and prior digests remain preserved. It does not replace the living master, historical anchors or NEXT-051.
 
@@ -39,7 +39,7 @@ python3 -m unittest -v
 The engine refuses to overwrite existing state/import targets. Original user-message time remains null unless supplied by a verified integration. Repository commit time is separate UTC evidence; Tehran time is derived from the same instant.
 
 ## Bring it into GPT-6
-1. Read GPT6_HOST_INSTRUCTIONS.md, INDEPENDENT_HOST_RECOVERY_PROTOCOL.md, HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md and LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-CONTRACT.md.
+1. Read GPT6_HOST_INSTRUCTIONS.md, OWNER-CONFIRMATION-AND-GITHUB-AUTHORIZATION-CONTRACT.md, INDEPENDENT_HOST_RECOVERY_PROTOCOL.md, HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md and LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-CONTRACT.md.
 2. Upload the canonical living master reference from docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md together with this ZIP. The mother is the architecture authority; the ZIP is the portable starter/runtime package.
 2. Upload the manifest, instructions, recovery protocol and latest living master / CURRENT checkpoint / NEXT-051 where supported.
 3. Verify portable bundle digest before reuse.
@@ -170,3 +170,8 @@ Use ONE_MESSAGE_HOST_BOOTSTRAP_FA.md as the one initial message for a fresh GPT-
 ## Canonical one-message host handoff — package 0.4.3
 
 ONE_MESSAGE_HOST_BOOTSTRAP_FA.md is the only startup message in the canonical ZIP. The older SINGLE_MESSAGE_GPT6_HOST_BOOTSTRAP_FA.md is superseded and excluded from the ZIP inventory. The same stable package ID and canonical archive filename are retained.
+
+
+## Owner confirmation and GitHub authorization (v0.4.4)
+
+Before any GitHub operation, ask the user to enter the exact owner-confirmation phrase: `احمد نژادحسینی`. This phrase is public in the portable package and is only an intent gate, never a password or identity proof. After it matches, require official GitHub OAuth/connector authentication and verify the connected account against `ahmadnezhadhosseini64-cloud`. Start READ-ONLY; never request or store credentials in chat. Durable writes require a least-privilege broker/worker, host-intake quarantine, owner-reviewed PR and exact read-back. See [OWNER-CONFIRMATION-AND-GITHUB-AUTHORIZATION-CONTRACT.md](OWNER-CONFIRMATION-AND-GITHUB-AUTHORIZATION-CONTRACT.md). This source change is not a verified ZIP rebuild or host acceptance.
