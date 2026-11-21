@@ -15,7 +15,7 @@ This is the updated release of the existing HAIF starter package, not a separate
 - Host-growth/repository-sync contract included; defines behavior evidence, authorized repo return, RAHM validation and controlled Master/Child promotion.
 - Interaction response/anchor protocol included; requires visible acknowledgment/status, failure disclosure, paired input/output anchors and explicit non-verified gates.
 - Latest verified export and on-demand delivery contract included; requires exact-current-main package receipts and paired living-master delivery.
-- Current continuation reference: POINT-0/073 → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051. Preserve all earlier roots, the certificate child branch, the unresolved CURRENT-065/CURRENT-066 lineage and all open gates; older 0+ markers remain historical. The canonical living mother reference is included in the built ZIP as `LIVING_MASTER_REFERENCE.md`; the Persian external-host test is included as `INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md`. Transfer the ZIP with its included master snapshot and use the prompt on a genuinely independent host.
+- Current continuation reference: POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051. Preserve all earlier roots, the certificate child branch, the unresolved CURRENT-065/CURRENT-066 lineage and all open gates; older 0+ markers remain historical. The canonical living mother reference is included in the built ZIP as `LIVING_MASTER_REFERENCE.md`; the Persian external-host test is included as `INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md`. Transfer the ZIP with its included master snapshot and use the prompt on a genuinely independent host.
 
 ## Bootstrap
 ~~~bash
@@ -182,9 +182,14 @@ Current internal package version: v0.4.4. Previous verified v0.4.3 build receipt
 
 ## Current handoff — package v0.4.5 / POINT-0/073
 
-Living mother target: 1.7.80. The current chain is POINT-0/073 → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051. The prior POINT-0/072 / CURRENT-125 branch remains parent history. Keep the canonical package ID and ZIP filename unchanged. A v0.4.5 package is not verified until the exact-head workflow provides a fresh receipt, SHA-256, inventory, CRC, paired-mother byte match, extracted tests and artifact round-trip. Independent-host recovery remains a separate gate.
+Living mother target: 1.7.80. The current chain is POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051. The prior POINT-0/072 / CURRENT-125 branch remains parent history. Keep the canonical package ID and ZIP filename unchanged. A v0.4.5 package is not verified until the exact-head workflow provides a fresh receipt, SHA-256, inventory, CRC, paired-mother byte match, extracted tests and artifact round-trip. Independent-host recovery remains a separate gate.
 
 
 ## Current package — 0.4.5 / POINT-0/074 (0++ marker)
 
 Internal package version: 0.4.5. Living master: 1.7.81. Current chain: POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051. The 0++ marker belongs to the single canonical Point 0 root; the next target is completion of the existing 0.0 continuation. NEXT-051 remains the sole active queue. The canonical package ID and ZIP filename remain unchanged. Exact-head tests, fresh build receipt, SHA-256, ZIP CRC/inventory/read-back and paired-master byte match are required before PACKAGE_VERIFIED. Independent-host acceptance, OAuth, live capture, durable workspace and restart persistence remain OPEN / NOT VERIFIED until direct receipts exist.
+
+
+## Current handoff — package v0.4.5 / POINT-0/074 (0++)
+
+Living master: 1.7.81. Canonical chain: POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051. The previous POINT-0/073 / CURRENT-126 and all earlier points remain parent history. 0++ is a marker on the canonical root, not a separate root. The next objective is 0.0 completion through NEXT-051. This package is not verified until same-HEAD audit and conformance pass, the canonical ZIP is rebuilt and read back with SHA-256/CRC/inventory/extracted tests, and independent-host recovery is separately evidenced.
