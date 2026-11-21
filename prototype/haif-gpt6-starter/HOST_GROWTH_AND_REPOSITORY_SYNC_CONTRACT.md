@@ -175,3 +175,13 @@ This addendum is the current controlling security rule and supersedes any older 
 - Main protection, collaborator/App audit, per-host private repositories, broker deployment, revocation and cross-host tests remain OPEN until direct evidence exists.
 
 See `docs/architecture/HOST-SECURITY/OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOSITORIES.md` and `docs/architecture/HOST-SECURITY/PRIVATE-HOST-REPOSITORY-TEMPLATE.md`.
+
+
+
+## POINT-0/084 security override — master intake worker is not host-facing
+
+The master repository is owner-only WRITE. No AI host receives a GitHub token or any direct write path to the master repository, including the `host-intake` branch. Earlier descriptions of a worker using a token in a "host secret manager" are superseded: the token must never be available to or controlled by an AI host.
+
+The legacy `scripts/host_adapter_github_worker.py` now fails closed when its target is the canonical master repository. It is not an operational host broker and must not be deployed with a host-held credential. A future broker must be a separate owner-controlled service, authenticate a verified host, resolve its private destination from a server-side registry, and use a GitHub App scoped to exactly that one host-private repository. Until that broker, App scope, private repository and negative isolation tests exist, all hosts remain L1_READ_ONLY and export proposals for owner review.
+
+The central `host-intake` branch is not an authorized host workspace and is not a fallback write destination. Folder/branch separation inside the master is not a security boundary.

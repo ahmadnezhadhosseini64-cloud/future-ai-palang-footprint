@@ -52,6 +52,12 @@ POINT-0/083 → CURRENT-136 → POINT-0/084 (0++) → IN-127 → OUT-126 → EVT
 - Cross-host negative tests and revoke/recovery tests: NOT RUN.
 - First destination host acceptance: OPEN / NOT RUN.
 
-## رسید ادغام و بازخوانی\n\n- PR #88 merged: 446b3c7fe7bef616826ee609f5dc58cc23a1bd00.\n- UTC: 2026-11-21T19:57:32Z; Tehran: 2026-11-21T23:27:32+03:30.\n- 16/16 changed/new files fetched from main and blob SHA matched against merged branch.\n\n## ثبت و تداوم
+## رسید ادغام و بازخوانی
+
+- PR #88 merged: 446b3c7fe7bef616826ee609f5dc58cc23a1bd00.
+- UTC: 2026-11-21T19:57:32Z; Tehran: 2026-11-21T23:27:32+03:30.
+- 16/16 changed/new files fetched from main and blob SHA matched against merged branch.
+
+## ثبت و تداوم
 
 این نقطه ادامهٔ همان ریشهٔ canonical POINT-0 است؛ صف موازی ایجاد نمی‌کند. NEXT-051 تنها صف فعال می‌ماند. میزبان تازه تا رسید مستقیم و تأیید مالک، PROPOSED است. هیچ قابلیت امنیتی که در GitHub و محیط واقعی اعمال و آزموده نشده، VERIFIED اعلام نمی‌شود.

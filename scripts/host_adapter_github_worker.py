@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Transfer queued adapter events to an isolated intake branch with destination read-back verification.
-Requires GITHUB_TOKEN with contents:write and a durable adapter SQLite database.
-Never writes to main; all intake events require owner review and an explicit pull request before promotion.
-This worker is deployable but is not invoked by the ChatGPT host automatically.
+"""Legacy owner-operated event transfer worker; host-originated writes to the master repo are disabled.
+The master repository is owner-only WRITE. This worker must not write to it, including host-intake.
+A future broker must resolve a verified Host ID server-side and use a GitHub App scoped to that host's private repository.
+No token may be placed in an AI host runtime, prompt, chat, package, or host-controlled secret store.
 """
 import base64,json,os,re,sqlite3,sys,urllib.error,urllib.request
 DB=os.environ.get('PALANG_DB_PATH','palang-events.sqlite3')
@@ -10,6 +10,7 @@ REPO=os.environ.get('PALANG_GITHUB_REPOSITORY','ahmadnezhadhosseini64-cloud/futu
 TOKEN=os.environ.get('GITHUB_TOKEN','')
 API=os.environ.get('GITHUB_API_URL','https://api.github.com')
 BRANCH='host-intake'
+MASTER_REPOSITORY='ahmadnezhadhosseini64-cloud/future-ai-palang-footprint'
 if os.environ.get('PALANG_GITHUB_BRANCH','host-intake') != BRANCH:
     raise SystemExit('BLOCKED: host intake worker writes only to the dedicated host-intake branch; owner-reviewed pull request required for promotion.')
 def request(method,url,payload=None):
@@ -24,7 +25,9 @@ def request(method,url,payload=None):
   if e.code==404: return 404,{'message':body}
   raise RuntimeError(f'GitHub API HTTP {e.code}: {body}')
 def main():
- if not TOKEN: raise SystemExit('BLOCKED: set GITHUB_TOKEN in host secret manager; never commit it.')
+ if REPO == MASTER_REPOSITORY:
+  raise SystemExit('BLOCKED: owner-only master repository. Host-originated writes to master, including host-intake, are disabled. Use an owner-operated, verified broker and a per-host private repository.')
+ if not TOKEN: raise SystemExit('BLOCKED: no authorized broker credential configured; do not place a GitHub token in a host runtime.')
  with sqlite3.connect(DB,timeout=10) as db:
   rows=db.execute("SELECT event_id,event_type,parent_event_id,received_utc,received_tehran,payload_json,payload_sha256 FROM events WHERE status='QUEUED' ORDER BY received_utc").fetchall()
   print(f'queued_events={len(rows)} repository={REPO} branch={BRANCH}')
