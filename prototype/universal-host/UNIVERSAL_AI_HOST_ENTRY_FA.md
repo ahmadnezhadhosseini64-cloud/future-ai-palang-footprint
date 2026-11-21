@@ -151,3 +151,8 @@ HAIF-HOST-WORKSPACE/
 - اجرای کد و workspace خصوصی/پایدار قابلیت‌های مستقل محیط میزبان‌اند؛ نه محصول OAuth و نه نتیجهٔ خودکار عمومی‌بودن repo.
 - میزبان باید ابتدا PUBLIC READ را امتحان کند و فقط قابلیت واقعاً مسدود را OPEN / BLOCKED اعلام کند.
 - مالکیت MASTER و اختیار ادغام/ارتقا نزد مالک می‌ماند؛ میزبان فقط عامل اجرایی قابل‌تعویض است.
+
+
+## Current conversation continuation — POINT-0/081 (0++)
+
+The current registered chain is `POINT-0/080 → CURRENT-133 → POINT-0/081 (0++) → IN-124 → OUT-123 → EVT-0301 → TIME-BINDING-EVT-0301 → CURRENT-134 → NEXT-051`. The 0++ marker remains on the single canonical POINT-0 root. The copyable one-message onboarding source is `prototype/haif-gpt6-starter/ONE_MESSAGE_HOST_BOOTSTRAP_FA.md`. Start with anonymous public HTTPS READ; do not wait for OAuth. Then recover the latest Reference Index, living master, current chain and sole NEXT-051 from exact main HEAD. Do not claim destination execution, persistent workspace, restart or HOST-RECOVERED without direct receipts. The previous 0.4.9 ZIP receipt is tied to its own source SHA; require a fresh same-identity build and receipt for this source update.
