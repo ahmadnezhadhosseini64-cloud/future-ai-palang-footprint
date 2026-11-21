@@ -64,3 +64,15 @@ NEXT-051 تنها صف فعال است. هیچ سابقه یا نقطهٔ قبل
 - Living master: [سند مرجع مادر](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 - Universal host entry: [UNIVERSAL_AI_HOST_ENTRY_FA.md](../../../prototype/haif-gpt6-starter/UNIVERSAL_AI_HOST_ENTRY_FA.md)
 - Package manifest: [manifest.json](../../../prototype/haif-gpt6-starter/manifest.json)
+
+
+## Preserved open gates and unresolved historical pointers
+
+- Full state recovery / reconstruct independently from IN and OUT: OPEN / NOT RUN.
+- Clean host import / clean interactive AI-host session: OPEN / NOT RUN.
+- Second-host import / second-host acceptance: OPEN / NOT RUN.
+- Restart persistence / restart/new-session recovery: OPEN / NOT RUN.
+- Automatic live message capture / idle/background capture: OPEN / NOT PROVEN.
+- Graph/identity/parent/time triage: OPEN; duplicate IDs and ambiguous parents remain under source-backed review.
+- CURRENT-065/CURRENT-066 pointer conflict: OPEN; no winner selected. Preserve both historical records until source adjudication is completed.
+- Issue #20 and Issue #21: OPEN / NOT CLOSED; preserve their historical evidence and continue through NEXT-051.
