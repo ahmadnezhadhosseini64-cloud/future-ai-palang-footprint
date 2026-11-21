@@ -55,3 +55,9 @@
 
 - Run `44872286383` روی source commit `584a1cd3cecc660bfe5a5f7dd88a1e45bd89bde8`: زنجیرهٔ IN/OUT/CURRENT خوانده شد، اما checker رویداد را به‌دلیل نبود ارجاع صریح `POINT-0/071` در EVT-0289 رد کرد (`event_missing_marker_POINT-0/071`).
 - فیلد Point صریح به هر دو mirror رویداد EVT-0289 افزوده شد؛ آزمون زنجیره باید مجدداً اجرا شود. این run نیز PACKAGE_VERIFIED نیست.
+
+
+## اصلاح سوم artifact read-back — run 44872371185
+
+- Run `44872371185`: زنجیرهٔ جاری و پیوندهای IN/OUT/EVT/TIME/CURRENT PASS؛ build و تست‌های بسته 24/24 PASS؛ upload artifact PASS. اما `actions/download-artifact@v4` با وجود ID معتبر artifact را پیدا نکرد (`None of the provided artifact IDs were found`) و round-trip/انتشار release انجام نشد. این run PACKAGE_VERIFIED نیست.
+- اصلاح نهایی workflow: دریافت artifact از REST endpoint رسمی GitHub با همان artifact ID و `GITHUB_TOKEN` محدود به `actions: read` انجام می‌شود؛ سپس ZIP، receipt و سند مادر از آرشیو دانلودشده read-back و تطبیق می‌شوند. توکن فقط در محیط GitHub Actions است و وارد prompt، ZIP یا مخزن نمی‌شود.
