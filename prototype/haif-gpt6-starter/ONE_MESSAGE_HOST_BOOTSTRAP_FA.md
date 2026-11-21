@@ -192,7 +192,7 @@ Overall: SOURCE-RECOVERED / PACKAGE-VERIFIED / HOST-RECOVERED / PARTIAL / BLOCKE
 
 - Read the owner-approved continuation at [POINT-0/075](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-075-FIRST-HOST-REPO-WORKSPACE.md) and the current receipt target [CURRENT-128](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261121-128-FIRST-HOST-REPO-WORKSPACE.md).
 - Required host profile: authenticated repository READ + real isolated EXECUTE workspace. Clone/checkout the canonical repository, pin the exact HEAD SHA, run the repository's actual tests, capture command output and diffs.
-- Branch-scoped WRITE is optional and conditional on the destination connector actually granting Contents:write/Push. If granted, write only to the host's own branch and open a PR. Never push directly to main.
+- WRITE to every branch of the canonical master is prohibited. A host may work only in its own isolated runtime and, if the owner provisions it, its own private repository. Never request or store a master token; owner export to private RAHM is the only route to a Child candidate.
 - The first host is a new session selected/launched by the owner; this bootstrap cannot instantiate a remote session or manufacture OAuth/permissions.
 - Package exact-HEAD verification is PACKAGE_VERIFIED; use the [stable latest-verified release and machine-readable receipt](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified) for the current source SHA, archive size and SHA-256 rather than copying a potentially stale digest.
 - Authenticated write-back OAuth (only if requested) / host acceptance, destination AI-host execution, restart/persistence, and 0.0 completion remain OPEN until direct host receipts are returned.
