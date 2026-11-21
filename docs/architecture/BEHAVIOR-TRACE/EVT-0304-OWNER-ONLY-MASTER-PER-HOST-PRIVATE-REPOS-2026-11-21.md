@@ -2,7 +2,7 @@
 
 - Event ID: EVT-0304
 - Parent: POINT-0/084 → IN-127 → OUT-126
-- Status: DESIGN REGISTERED ON PROPOSAL BRANCH / IMPLEMENTATION PARTIAL
+- Status: DESIGN REGISTERED / MERGED TO MAIN / IMPLEMENTATION PARTIAL
 - UTC event time: PENDING COMMIT METADATA
 
 ## Event
@@ -23,5 +23,5 @@
 
 - Repository metadata confirms the master is public and the connected GitHub identity has owner/admin rights.
 - Existing contract records main protection as false; current live branch rules and collaborator/App list are not readable through the available connector.
-- Security architecture and revised one-message entry were prepared on proposal branch.
-- Actual GitHub protection, private repo provisioning, App/broker deployment, host acceptance and negative isolation tests remain OPEN.
+- Security architecture and revised one-message entry were merged through PR #88; 16/16 changed files were read back from main and SHA-matched.
+- Actual GitHub protection, private repo provisioning, App/broker deployment, host acceptance and negative isolation tests remain OPEN. PR #88 merge commit: 446b3c7fe7bef616826ee609f5dc58cc23a1bd00 (2026-11-21T19:57:32Z).
