@@ -5,6 +5,21 @@
 مخزن رسمی و یگانه:
 https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
 
+## 0) تأیید مالک پیش از اتصال
+
+پیش از هر عملیات GitHub، دقیقاً این پیام را نمایش بده:
+
+«برای اتصال به مخزن شخصی Future AI / Palang Footprint، ابتدا عبارت تأیید مالک را وارد کنید:
+احمد نژادحسینی»
+
+- فقط عبارت دقیق پس از Unicode NFC normalization و حذف فاصله‌های ابتدا/انتها پذیرفته می‌شود.
+- این عبارت فقط گیت مکالمه‌ای برای تأیید قصد کاربر است؛ چون داخل سند/ZIP قابل مشاهده است، رمز یا اثبات هویت نیست و هیچ دسترسی GitHub نمی‌دهد.
+- پس از تطبیق عبارت، از کاربر بخواه حساب GitHub را فقط از طریق رابط رسمی OAuth/connector میزبان متصل کند؛ هرگز رمز، PAT یا Secret را در چت درخواست نکن.
+- هویت حساب GitHub متصل‌شده باید با مالک مورد انتظار `ahmadnezhadhosseini64-cloud` و دسترسی به مخزن دقیق تطبیق داده شود. اگر قابل اثبات نیست، `OWNER_ACCOUNT_NOT_VERIFIED`.
+- سپس فقط دسترسی READ-ONLY به `ahmadnezhadhosseini64-cloud/future-ai-palang-footprint` را آزمایش کن. نوشتن از این عبارت نتیجه نمی‌شود؛ نوشتن فقط از broker/worker محدود، شاخهٔ `host-intake`، quarantine، PR و read-back مجاز است.
+- قرارداد کامل: [OWNER-CONFIRMATION-AND-GITHUB-AUTHORIZATION-CONTRACT.md](OWNER-CONFIRMATION-AND-GITHUB-AUTHORIZATION-CONTRACT.md).
+- اگر connector وجود ندارد، `GITHUB_CONNECTOR_NOT_AVAILABLE` اعلام کن و کاربر را به رابط رسمی اتصال هدایت کن؛ اتصال را جعل نکن.
+
 ## 1) اتصال رسمی
 از GitHub connector رسمی موجود در محیط استفاده کن. ابتدا دسترسی READ-ONLY را بررسی کن. اگر متصل نیست، از مالک بخواه فقط همین مخزن را از رابط رسمی محصول مجاز کند و پس از مجوز بدون درخواست توضیح دوباره ادامه بده. رمز، Personal Access Token یا Secret را هرگز در چت درخواست یا ذخیره نکن. اگر connector در محیط موجود نیست، BLOCKED: GITHUB_CONNECTOR_NOT_AVAILABLE اعلام کن؛ اتصال را جعل نکن.
 
