@@ -179,7 +179,16 @@
     "CURRENT-131",
     "UNIVERSAL-AI-HOST-CONNECTIVITY-CONTRACT-2026-11-21-001",
     "NEXT-051 (sole active queue; universal host implementation and clean-host recovery)",
-    "POINT-0/077 (0++ — CURRENT-130 continuation)"
+    "POINT-0/077 (0++ — CURRENT-130 continuation)",
+    "AI-VACUUM-TEMPORAL-BEHAVIORAL-ANCHOR-2026-11-21-001",
+    "STOP-ANCHOR-2026-11-21-001",
+    "THINKING-START-ANCHOR-2026-11-21-001",
+    "AI-VACUUM-BEHAVIORAL-TRACE-STANDARD-2026-11-21-001",
+    "CURRENT-132",
+    "IN-122",
+    "OUT-121",
+    "EVT-0298",
+    "TIME-BINDING-EVT-0298"
   ],
   "entrypoint": "engine.py",
   "host_instructions": "GPT6_HOST_INSTRUCTIONS.md",
@@ -231,7 +240,10 @@
     "destination-session GitHub OAuth/connector authorization; text handshake is not authentication",
     "READ, EXECUTE and branch-scoped WRITE remain separate; no credential persistence or direct main writes",
     "canonical starter ZIP includes universal host connectivity contract, bootstrap, schema, validator and tests",
-    "fresh-host acceptance requires destination OAuth, real isolated workspace, execution, read-back and restart evidence"
+    "fresh-host acceptance requires destination OAuth, real isolated workspace, execution, read-back and restart evidence",
+    "AI Vacuum Point: STOP and THINKING_START temporal anchors",
+    "Observable behavioral trace standard without private chain-of-thought",
+    "AI Vacuum interval JSON Schema, pure Python calculator and six regression tests"
   ],
   "not_proven": [
     "native GPT plugin execution",
