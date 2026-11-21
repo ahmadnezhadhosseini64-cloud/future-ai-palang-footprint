@@ -6,7 +6,7 @@
 - Owner: احمد پلنگ / Ahmad Nezhadhosseini
 - Project: Future AI / Palang Footprint / HAIF
 - Canonical path: `docs/architecture/BEHAVIOR-OBSERVATORY/README.md`
-- Status: ACTIVE / LIVING in repository; latest main root POINT-0/071 / EVT-0289 / CURRENT-124 / NEXT-051; separate certificate child root CERT-POINT-0.0-20261120-002 / EVT-0274 preserved. Latest mirror-only event EVT-0290. Source blob de1b75f07241c9b313e476af5f1417177ff78c10 unchanged; Library v7 normalized match with one extra terminal LF; no source or Library write. Post-registration Audit 44874521121 and RAHM 44874520968 PASS on exact SHA 910cd24b9c9d0af2cdc7c6090386919f304b6819; Evidence Gate 44874520977 created follow-up main 5c2a860e2fc1f7f36e3ee935b0daa3f62752e896 at UTC 2026-11-21T06:13:35Z, not yet verified by exact-head Audit/RAHM. CURRENT-065/CURRENT-066 and overlay-manifest lineage OPEN / AMBIGUOUS; Issues #20/#21 OPEN; external destination/host gates OPEN / NOT VERIFIED / NOT RUN.
+- Status: ACTIVE / LIVING in repository; latest main root POINT-0/072 / EVT-0291 / CURRENT-125 / NEXT-051; separate certificate child root CERT-POINT-0.0-20261120-002 / EVT-0274 preserved. Latest mirror-only event EVT-0290; current user-turn event EVT-0291. Source blob de1b75f07241c9b313e476af5f1417177ff78c10 unchanged; Library v7 normalized match with one extra terminal LF; no source or Library write. Post-registration Audit 44874521121 and RAHM 44874520968 PASS on exact SHA 910cd24b9c9d0af2cdc7c6090386919f304b6819; Evidence Gate 44874520977 created follow-up main 5c2a860e2fc1f7f36e3ee935b0daa3f62752e896 at UTC 2026-11-21T06:13:35Z, not yet verified by exact-head Audit/RAHM. CURRENT-065/CURRENT-066 and overlay-manifest lineage OPEN / AMBIGUOUS; Issues #20/#21 OPEN; external destination/host gates OPEN / NOT VERIFIED / NOT RUN.
 - Time rule: UTC is canonical; Asia/Tehran time is derived from the same UTC instant (+03:30 for this date). Unknown timestamps remain UNKNOWN, never guessed.
 - Independent anchor: `PALANG-BEHAVIOR-OBSERVATION-AND-RECOVERY-TEST-2026-10-22-001`
 - Related event: `EVT-0034`
@@ -476,3 +476,9 @@ Continue collecting observable interaction and evaluator behavior as evidence-ba
 - Mirror-only under POINT-0/071 / EVT-0289 / CURRENT-124 / NEXT-051; source unchanged; Library v7 differs only by one terminal LF after the source text. No source or Library write.
 - Post-registration exact-SHA Audit/RAHM success is on `910cd24...`; Evidence Gate created current main `5c2a860...`, which remains NOT VERIFIED by that pair.
 - CURRENT-065/CURRENT-066 and overlay-manifest lineage OPEN / AMBIGUOUS; Issues #20/#21 OPEN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
+
+
+## Current continuation — POINT-0/072 / CURRENT-125
+- Current canonical chain: POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051.
+- EVT-0290 remains the earlier mirror-only event; the current user-authorized continuation is EVT-0291.
+- Previous POINT-0/071 / CURRENT-124 remains preserved as parent history. NEXT-051 remains the sole active queue.
