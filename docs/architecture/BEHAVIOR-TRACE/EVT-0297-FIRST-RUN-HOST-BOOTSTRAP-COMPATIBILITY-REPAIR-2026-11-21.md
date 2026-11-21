@@ -1,0 +1,41 @@
+# EVT-0297 — رفع ناسازگاری نخستین اجرای میزبان تازه
+
+- Status: RECORDED / OWNER-APPROVED / REPAIR-PROPOSED / READ-BACK-VERIFIED-ON-BRANCH
+- Parent continuation: POINT-0/077 → CURRENT-130 → NEXT-051
+- Scope: first-run one-message GPT host bootstrap only
+- Canonical active file: `prototype/haif-gpt6-starter/ONE_MESSAGE_HOST_BOOTSTRAP_FA.md`
+- Preserved original: `prototype/haif-gpt6-starter/ONE_MESSAGE_HOST_BOOTSTRAP_FA-ORIGINAL-POINT-074-2026-11-21.md`
+- Original bootstrap blob SHA before repair: `0cc04f71881e3678e1184f90889785c3f5514549`
+- Original snapshot commit on repair branch: `98b8e75685705f392e4c631dc78f46dea5becdde`
+- Corrected active bootstrap blob SHA on repair branch: `8065cb7ccaf9aab58227ecc2e698d5fb5e008625`
+- Repair branch: `fix/first-run-host-bootstrap-current-chain`
+- Parent main HEAD at branch creation: `c8734674cb0016e81962105841318d472103a968`
+
+## What failed
+
+The active one-message bootstrap still identified the current continuation as POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → CURRENT-127, declared living mother 1.7.82, and directed the new host to fetch old anchor paths. At the time of this repair, the repository's verified current continuation was POINT-0/077 (0++) → IN-120 → OUT-119 → EVT-0296 → TIME-BINDING-EVT-0296 → CURRENT-130 → NEXT-051, with living mother 1.7.84.
+
+This is a first-run source-selection incompatibility: a genuinely fresh host following the active startup message could retrieve an obsolete chain and report an incorrect current checkpoint. The defect is in stale bootstrap pointers, not evidence that OAuth, workspace creation or external host recovery has succeeded or failed.
+
+## Owner-approved correction
+
+The owner explicitly authorized repairing the first-run incompatibility while preserving both the former working version and the incompatibility evidence. The repair therefore:
+1. Preserves the exact pre-repair active bootstrap as a separate immutable historical copy; its original blob SHA is recorded above.
+2. Updates the active bootstrap's current chain, canonical read set, checkpoint, event/time references and living-master version to the verified POINT-0/077 / CURRENT-130 / 1.7.84 state.
+3. Keeps POINT-0/076 and CURRENT-129 as historical parent context, not as the current checkpoint.
+4. Keeps NEXT-051 as the sole governing queue; no parallel project or NEXT queue is created.
+5. Requires new-host execution to verify the actual HEAD and release receipt; this documentation repair does not claim destination OAuth, workspace, package exact-head verification or HOST-RECOVERED.
+
+## Compatibility acceptance
+
+- [x] Original active bootstrap preserved byte-for-byte in a separate historical file.
+- [x] Active bootstrap top-level chain and current master target updated.
+- [x] Repair linked to existing POINT-0/077 → CURRENT-130 → NEXT-051 lineage.
+- [ ] Pull request merged to main.
+- [ ] Main-branch read-back of all changed files.
+- [ ] Portable ZIP rebuilt and verified against exact merged main HEAD.
+- [ ] Fresh destination host follows corrected bootstrap and returns direct acceptance receipt.
+
+## Status boundary
+
+This event records the identified mismatch and a branch-level correction. It is not a claim of merged-to-main, package-verified or host-recovered status. The historical failure remains part of the permanent lineage and must not be deleted or rewritten.
