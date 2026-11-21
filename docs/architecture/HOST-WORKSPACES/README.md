@@ -1,10 +1,10 @@
 # محیط‌های کاری مستقل میزبان‌ها — HAIF
 
-- Architecture checkpoint: POINT-0/070 / CURRENT-123
+- Architecture checkpoint: POINT-0/086 / CURRENT-139
 - Governing owner: احمد پلنگ
 - Status: WORKSPACE MODEL REGISTERED / NO EXTERNAL HOST ACTIVATED
 - Registry: ../HOST-REGISTRY/HOST-REGISTRY.json
-- Intake branch: host-intake
+- Intake route: OWNER_EXPORT_TO_PRIVATE_RAHM_ONLY; no host intake branch in master
 - Sole execution queue: NEXT-051
 
 ## هدف
