@@ -3,7 +3,7 @@
 Package family: HAIF GPT-6 Portable Starter
 Stable package ID: `HAIF-GPT6-PORTABLE-STARTER-20261025-004`
 Canonical ZIP filename: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`
-Internal package version: 0.4.2
+Internal package version: 0.4.3
 Project source of truth: `ahmadnezhadhosseini64-cloud/future-ai-palang-footprint`
 Current chain: POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → POINT-0/069 → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122 → NEXT-051
 
@@ -131,9 +131,9 @@ The Host Registry remains empty until a real host returns identity and read-back
 Implementation status at POINT-0/070: architecture and templates registered; live broker, credential isolation, branch protection, cross-workspace denial tests, real host registration and end-to-end receipts remain OPEN / NOT VERIFIED.
 
 
-## Current package — 0.4.2 / POINT-0/071
+## Current package — 0.4.3 / POINT-0/071
 
-Internal package version: 0.4.2
+Internal package version: 0.4.3
 Living master target: 1.7.76
 Current chain tail: POINT-0/070 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051
 Single-message GPT host setup: `ONE_MESSAGE_HOST_BOOTSTRAP_FA.md`. A prompt cannot create missing OAuth authorization, connector capability, persistent workspace or security boundaries; target-host execution must prove these independently.
