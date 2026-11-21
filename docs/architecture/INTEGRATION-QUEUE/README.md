@@ -2823,3 +2823,10 @@ Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-11
 - Event/time: [EVT-0289](../BEHAVIOR-TRACE/EVT-0289-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP-2026-11-21.md) / [TIME-BINDING-EVT-0289](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0289-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP-2026-11-21.md).
 - Checkpoint: [CURRENT-124](../../0.0/anchors/PALANG-0.0-CURRENT-20261121-124-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP.md); sole queue [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - Portable source includes one-message bootstrap; package target 0.4.2. No external host is ACTIVE without direct receipt.
+
+
+## POINT-0/072 — Read-only new-host GitHub connection
+
+- [POINT-0/072](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-072-OWNER-CONFIRMATION-GITHUB-AUTH-0PLUS.md) → [IN-115](../../0.0/anchors/PALANG-0.0-IN-20261121-115-OWNER-CONFIRMATION-GITHUB-AUTH.md) → [OUT-114](../../0.0/anchors/PALANG-0.0-OUT-20261121-114-OWNER-CONFIRMATION-GITHUB-AUTH.md) → [EVT-0291](../BEHAVIOR-TRACE/EVT-0291-OWNER-CONFIRMATION-GITHUB-AUTH-2026-11-21.md) → [TIME-BINDING-EVT-0291](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0291-OWNER-CONFIRMATION-GITHUB-AUTH-2026-11-21.md) → [CURRENT-125](../../0.0/anchors/PALANG-0.0-CURRENT-20261121-125-OWNER-CONFIRMATION-GITHUB-AUTH.md) → sole [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Immediate scope: easy official GitHub connector onboarding and READ-ONLY recovery from a new host. Owner phrase/password gate («احمد نژادحسینی») and all write operations remain OPEN / DEFERRED or out of scope.
+- Preserve EVT-0241 and TIME-BINDING-EVT-0241 references; independent-host connection and recovery remain NOT RUN.
