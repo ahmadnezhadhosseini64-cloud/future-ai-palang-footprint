@@ -2,20 +2,30 @@
 
 - Stable ID: G6IP-RAHM-NEXT-051-20261024
 - Production ID: G6IP-RAHM-NEXT-051-20261024
-- Version: 1.0.51
+- Version: 1.0.52
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE
 - Project: Future AI / Palang Footprint — HAIF
 - Canonical queue: this file only
-- Current checkpoint: [CURRENT-132](PALANG-0.0-CURRENT-20261121-132-LATEST-RUNNABLE-OPEN-DEVELOPMENT.md)
-- Current point: [POINT-0/079 (0++ marker on canonical root 0)](GPT6-RAHM-USER-POINT-0-20261121-079-LATEST-RUNNABLE-OPEN-DEVELOPMENT.md)
+- Current checkpoint: [CURRENT-133](PALANG-0.0-CURRENT-20261121-133-PUBLIC-READ-NO-OAUTH-HOST-ACCESS.md)
+- Current point: [POINT-0/080 (0++ marker on canonical root 0)](GPT6-RAHM-USER-POINT-0-20261121-080-PUBLIC-READ-NO-OAUTH-HOST-ACCESS.md)
 - Living mother: [سند مرجع مادر مدل اولیه](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 - Package contract: [HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md](../../../prototype/haif-gpt6-starter/HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md)
 - Canonical ZIP filename: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`
 - Stable package ID: `HAIF-GPT6-PORTABLE-STARTER-20261025-004`
-- Current verified package: internal 0.4.7; same stable package ID and canonical ZIP filename; 19 files; 256684 bytes; 24/24 extracted tests PASS; CRC/source-byte match/exact artifact-ID download/paired-master read-back/artifact round-trip PASS; SHA-256 a8a34580722573aaef247acbf9d7edf1d97a80025c49d510f07a1479da4f0a05; workflow 44920781712 on source/main SHA 06f7fe5a00ea507b1930ffe8a74bc03caf1ff059. Next paired package target: 0.4.8 with master 1.7.87; do not mark it VERIFIED until fresh exact-main checks pass.
+- Current verified package: internal 0.4.8; same stable package ID and canonical ZIP filename; 19 files; 257102 bytes; 24/24 extracted tests PASS; CRC/source-byte match/exact artifact-ID download/paired-master read-back/artifact round-trip PASS; SHA-256 1e1bbab0c7acb0975b77176abc5c38f7e7097cfe8cf67b17153ffe1db4da65a6; workflow 44921364797 on source/main SHA 680a1f788a50e38da4b71768f8291dde0eeeaa31. Next paired package target: 0.4.9 with master 1.7.88; verify only after exact-main tests and receipt.
 - Queue rule: do not create NEXT-052.
 
-## Latest registered continuation — POINT-0/077 (0++) / CURRENT-130
+
+
+## Latest continuation — POINT-0/080 / CURRENT-133
+
+- Chain: POINT-0/079 → CURRENT-132 → POINT-0/080 → IN-123 → OUT-122 → EVT-0300 → TIME-BINDING-EVT-0300 → CURRENT-133 → NEXT-051.
+- Public repository READ/clone/fetch over HTTPS is available without OAuth; OAuth is only for private resources or authenticated write-back.
+- Latest verified package 0.4.8 is paired with master 1.7.87; next package target 0.4.9 is paired with master 1.7.88.
+- Latest Runnable, Development / OPEN and Historical remain distinct. EXECUTE, persistent workspace, clean-host recovery, restart and write-back remain separate acceptance gates.
+- Steps 0.0.1–0.0.9 remain the only execution sequence; no parallel NEXT queue.
+
+## Historical registered continuation — POINT-0/077 (0++) / CURRENT-130
 
 - Chain: POINT-0/076 → CURRENT-129 → POINT-0/077 (0++) → IN-120 → OUT-119 → EVT-0296 → TIME-BINDING-EVT-0296 → CURRENT-130 → NEXT-051.
 - The owner designated the current interaction as the live 0++ continuation marker on the existing POINT-0 root. No parallel root or NEXT queue is created.
