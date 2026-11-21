@@ -544,5 +544,16 @@
       "sha256_status": "PENDING_EXACT_BYTES_BUILD",
       "reason": "New contract added after prior package build; include and hash during canonical ZIP rebuild."
     }
-  ]
+  ],
+  "current_point": "POINT-0/072 (0++)",
+  "current_checkpoint": "CURRENT-126",
+  "first_host_workspace_mode": {
+    "host_identity": "FIRST NEW HOST / FIRST_HOST / HOST-001",
+    "authentication_gate": "OPEN / DEFERRED",
+    "repository_access": "READ-ONLY",
+    "workspace_execution": "OWNER-DEFINED / ALLOWLISTED ONLY",
+    "repository_writeback": "DENIED",
+    "technical_enforcement": "NOT VERIFIED",
+    "independent_host_acceptance": "NOT RUN"
+  }
 }
