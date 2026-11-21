@@ -50,3 +50,15 @@ POINT-0/083 → CURRENT-136 → POINT-0/084 (0++) → IN-127 → OUT-126 → EVT
 ## Security gate
 
 This checkpoint registers the architecture and onboarding rule, not live enforcement. It must not be marked SECURITY_VERIFIED until GitHub settings/access audit, per-host private repository, scoped App/broker, negative isolation, revoke, export and restore tests pass with direct evidence. NEXT-051 remains the only active queue.
+
+
+## PR #90 — قفل نوشتن worker روی مخزن مادر
+
+- PR: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/pull/90
+- Merge commit: `048b3be7c2ffbcea607f26ab804494a0b31e7cd5`
+- UTC: `2026-11-21T20:09:00Z`; Tehran: `2026-11-21T23:39:00+03:30`.
+- Worker قدیمی در صورت هدف‌گرفتن مخزن مادر، حتی شاخهٔ `host-intake`، fail-closed می‌شود.
+- دستور میزبان و قرارداد رشد میزبان هرگونه token نوشتن مخزن مادر در اختیار میزبان را ممنوع می‌کنند.
+- CI assertion به این قفل افزوده شد.
+- Read-back: 8/8 فایل تغییرکرده از main بازیابی و blob SHA آن‌ها با شاخهٔ ادغام‌شده تطبیق داده شد.
+- این قفل کدی به‌تنهایی branch protection، audit دسترسی‌ها یا broker را فعال نمی‌کند؛ آن‌ها همچنان OPEN / NOT VERIFIED هستند.
