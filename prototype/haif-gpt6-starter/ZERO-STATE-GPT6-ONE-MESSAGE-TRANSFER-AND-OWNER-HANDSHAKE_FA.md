@@ -1,7 +1,7 @@
 # بستهٔ انتقال یک‌پیامی میزبان GPT-6 صفر و دست‌دهی مالک
 
 **شناسه:** HAIF-ZERO-STATE-GPT6-ONE-MESSAGE-TRANSFER-2026-11-21-001  
-**وضعیت:** PROPOSED / OWNER-APPROVED INTENT / BRANCH-STAGED  
+**وضعیت:** ACTIVE / LIVING / MERGED-TO-MAIN / MAIN-READBACK-VERIFIED  
 **والد معماری:** POINT-0/076 → IN-119 → OUT-118 → EVT-0295 → CURRENT-129 → NEXT-051  
 **مخزن canonical:** ahmadnezhadhosseini64-cloud/future-ai-palang-footprint  
 **هدف:** اجرای مستقل از حافظهٔ چت؛ قابل استفاده با سند مادر یا بستهٔ ZIP.
@@ -103,4 +103,4 @@ Overall: SOURCE-RECOVERED / PACKAGE-VERIFIED / HOST-RECOVERED / PARTIAL / BLOCKE
 
 این سند یک زیرمسیر اجرایی از POINT-0/076 و CURRENT-129 درون صف اصلی NEXT-051 است؛ پروژهٔ موازی GPT-6 و صف NEXT جدید ایجاد نمی‌کند. رویداد و زمان باید با سازوکار موجود در مخزن ثبت شوند. زمان واقعی را از commit/event معتبر استخراج کن؛ زمان ساختگی نساز.
 
-**وضعیت فعلی این سند:** تا پیش از ادغام PR و read-back از main، فقط BRANCH-STAGED است. این سند به‌تنهایی اثبات نمی‌کند نشست تازه ساخته شده، OAuth برقرار شده یا workspace مقصد آماده است.
+**ثبت و بازخوانی مخزن:** PR #59 در 2026-11-21 با merge commit `833b1cd97523ac4e48efad6f0cb101bd390cac26` در `main` ادغام شد؛ فایل از `main` دوباره خوانده شد و blob SHA آن `3f1a2e260b57b34ed408be822b7c94842f5c3b17` است. این شاهد فقط ادغام و read-back سند را ثابت می‌کند؛ نشست تازه، OAuth مقصد، workspace واقعی و پذیرش میزبان همچنان OPEN / NOT RUN هستند.
