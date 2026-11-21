@@ -9,6 +9,9 @@
 - Starter package target: internal 0.4.2; stable identity and canonical ZIP filename unchanged
 - Sole execution queue: NEXT-051
 - Repository: ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
+- Registration commit SHA: `26f6517d9952305047c4041c82a05a26370c7853`
+- Registration commit UTC: `2026-11-21T05:36:02Z`
+- Tehran equivalent: `2026-11-21T09:06:02+03:30`
 
 ## ثبت
 پیام واحد راه‌اندازی میزبان در منبع starter اضافه شد. دستور واحد باید اتصال خواندنی به فقط مخزن رسمی، بازیابی آخرین release pointer/receipt، تطبیق سند مادر و ZIP، استخراج و اجرای تست‌ها، و ساخت workspace خصوصی runtime میزبان را orchestrate کند.
