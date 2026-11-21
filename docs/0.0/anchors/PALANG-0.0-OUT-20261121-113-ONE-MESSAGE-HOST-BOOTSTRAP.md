@@ -43,3 +43,9 @@
 
 - Run `44872027513`: package source tests 24/24 PASS، ZIP build و upload PASS و دانلود artifact با ID دقیق PASS؛ مرحلهٔ paired read-back به‌دلیل رفتار پیش‌فرض download-artifact در ایجاد زیرپوشه‌ای به نام artifact، فایل‌ها را در ریشهٔ مورد انتظار پیدا نکرد (`DOWNLOADED_ARTIFACT_MISSING_ZIP_RECEIPT_OR_MASTER`). انتشار release اجرا نشد؛ این run PACKAGE_VERIFIED نیست.
 - اصلاح workflow: `merge-multiple: true` افزوده شد تا artifact واحد در مسیر مقصد ادغام و ساختار مورد انتظار verifier حفظ شود. سپس read-back سند مادر، digest، inventory، CRC و تست استخراج‌شده دوباره اجرا می‌شود.
+
+
+## اصلاح زنجیرهٔ پیوندها — run 44872168517
+
+- Run `44872168517` روی commit `f5b4b1d0729e40df8cce31b8a8230cc0d0c3349c`، بازیابی زنجیره را به‌علت نبود پیوند مستقیم OUT-113 به POINT-0/071 رد کرد. تست‌های package در آن run به‌دلیل شکست مرحلهٔ زنجیره، build نهایی را کامل نکردند.
+- پیوند مستقیم OUT-113 → POINT-0/071 به نسخهٔ canonical OUT-113 افزوده می‌شود؛ سپس checker و package pipeline دوباره اجرا می‌شوند.
