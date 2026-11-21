@@ -46,7 +46,9 @@ def write_runtime_proof(state):
     out = EVIDENCE_DIR / f"RUNTIME-PROOF-{sid}.json"
     payload = {"stable_id": sid, "reference_point": "0.0", "status": "RUNTIME VERIFIED", "controller": "control-plane/controller.py", "verified_at_utc": datetime.now(timezone.utc).isoformat(), "evidence": ["GitHub Actions runner executed controller.py successfully", "controller loaded canonical state", "all required gates validated", "controller wrote this proof record from the runner"], "next_state": "CLOSED"}
     out.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    # Evidence is local to the runner and uploaded as a workflow artifact.\n    # This controller has no GitHub write credential and never pushes to MASTER.\n    return out
+    # Evidence is local to the runner and uploaded as a workflow artifact.
+    # This controller has no GitHub write credential and never pushes to MASTER.
+    return out
 
 
 def main():
