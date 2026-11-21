@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/blob/main/schemas/host-connectivity/host-acceptance-receipt.schema.json",
+  "title": "HAIF Universal Host Acceptance Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["receipt_version", "host", "repository", "capabilities", "recovery", "acceptance", "open_gates"],
+  "properties": {
+    "receipt_version": {"const": "1.0.0"},
+    "recorded_at_utc": {"type": ["string", "null"], "format": "date-time"},
+    "host": {
+      "type": "object", "additionalProperties": false,
+      "required": ["provider", "model", "session_fresh"],
+      "properties": {
+        "provider": {"type": "string", "minLength": 1},
+        "model": {"type": ["string", "null"]},
+        "session_fresh": {"type": ["boolean", "null"]},
+        "prior_project_history_used": {"type": ["boolean", "null"]}
+      }
+    },
+    "repository": {
+      "type": "object", "additionalProperties": false,
+      "required": ["owner", "name", "default_branch", "head_sha"],
+      "properties": {
+        "owner": {"const": "ahmadnezhadhosseini64-cloud"},
+        "name": {"const": "future-ai-palang-footprint"},
+        "default_branch": {"type": "string", "minLength": 1},
+        "head_sha": {"type": ["string", "null"], "pattern": "^(?:[0-9a-f]{40}|[0-9a-f]{64})$"}
+      }
+    },
+    "capabilities": {
+      "type": "object", "additionalProperties": false,
+      "required": ["read", "execute", "workspace", "write", "persistence"],
+      "properties": {
+        "read": {"enum": ["PASS", "FAIL", "NOT_CONNECTED", "NOT_AVAILABLE", "NOT_RUN", "BLOCKED"]},
+        "execute": {"enum": ["PASS", "FAIL", "NOT_AVAILABLE", "NOT_RUN", "BLOCKED"]},
+        "workspace": {"enum": ["PASS", "FAIL", "NOT_AVAILABLE", "NOT_RUN", "BLOCKED"]},
+        "write": {"enum": ["BRANCH_ONLY", "NONE", "NOT_VERIFIED", "BLOCKED"]},
+        "persistence": {"enum": ["PASS", "FAIL", "NOT_RUN", "BLOCKED"]}
+      }
+    },
+    "recovery": {
+      "type": "object", "additionalProperties": false,
+      "required": ["source_recovered", "reference_index", "mother_version", "current_checkpoint", "sole_queue"],
+      "properties": {
+        "source_recovered": {"type": "boolean"},
+        "reference_index": {"enum": ["FOUND", "MISSING", "NOT_READ"]},
+        "mother_version": {"type": ["string", "null"]},
+        "current_checkpoint": {"type": ["string", "null"]},
+        "sole_queue": {"type": ["string", "null"]}
+      }
+    },
+    "workspace": {
+      "type": ["object", "null"], "additionalProperties": false,
+      "properties": {
+        "kind": {"type": "string"},
+        "path_or_identifier": {"type": ["string", "null"]},
+        "checkout_head_sha": {"type": ["string", "null"]}
+      }
+    },
+    "tests": {
+      "type": "array",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["name", "status"],
+        "properties": {
+          "name": {"type": "string", "minLength": 1},
+          "status": {"enum": ["PASS", "FAIL", "NOT_RUN", "BLOCKED"]},
+          "exit_code": {"type": ["integer", "null"]},
+          "evidence": {"type": ["string", "null"]}
+        }
+      }
+    },
+    "write_proposal": {
+      "type": ["object", "null"], "additionalProperties": false,
+      "properties": {
+        "branch": {"type": ["string", "null"]},
+        "pull_request_url": {"type": ["string", "null"], "format": "uri"},
+        "main_push": {"const": false}
+      }
+    },
+    "acceptance": {"enum": ["SOURCE_RECOVERED", "PACKAGE_VERIFIED", "HOST_RECOVERED", "PARTIAL", "BLOCKED"]},
+    "open_gates": {"type": "array", "items": {"type": "string"}},
+    "evidence_links": {"type": "array", "items": {"type": "string", "format": "uri"}},
+    "security_attestation": {
+      "type": "object", "additionalProperties": false,
+      "required": ["no_credentials_stored", "oauth_authorized_in_destination_ui", "handshake_is_not_authentication"],
+      "properties": {
+        "no_credentials_stored": {"const": true},
+        "oauth_authorized_in_destination_ui": {"type": ["boolean", "null"]},
+        "handshake_is_not_authentication": {"const": true}
+      }
+    }
+  }
+}

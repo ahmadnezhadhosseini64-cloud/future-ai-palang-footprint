@@ -1,0 +1,32 @@
+name: HAIF Universal Host Connectivity Tests
+
+on:
+  pull_request:
+    paths:
+      - 'docs/host-connectivity/**'
+      - 'schemas/host-connectivity/**'
+      - 'scripts/host-connectivity/**'
+      - '.github/workflows/haif-host-connectivity.yml'
+  push:
+    branches:
+      - main
+      - 'haif/**'
+    paths:
+      - 'docs/host-connectivity/**'
+      - 'schemas/host-connectivity/**'
+      - 'scripts/host-connectivity/**'
+      - '.github/workflows/haif-host-connectivity.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  receipt-validator:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Run host receipt validator tests
+        run: python -m unittest discover -s scripts/host-connectivity/tests -v
