@@ -264,7 +264,7 @@
     "anonymous public HTTPS repository READ/clone/fetch without OAuth",
     "separate capability gates for READ, EXECUTE, private/persistent WORKSPACE and authenticated WRITE",
     "owner-governed host entry with public-read-first behavior and optional OAuth only for private resources or write-back",
-    "model-neutral host entry and GPT compatibility bootstrap synchronized to POINT-0/080"
+    "model-neutral host entry and GPT compatibility bootstrap synchronized to POINT-0/082"
   ],
   "not_proven": [
     "native GPT plugin execution",
