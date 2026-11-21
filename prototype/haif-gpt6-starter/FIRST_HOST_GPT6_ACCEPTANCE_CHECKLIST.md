@@ -1,17 +1,17 @@
 # First interactive GPT-6 host — acceptance checklist
 
-> Compatibility checklist only. Current universal entry and chain are governed by UNIVERSAL_AI_HOST_ENTRY_FA.md and Reference Index: POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → NEXT-051. Package source 0.4.6; living master 1.7.85.
+> Compatibility checklist only. Current universal entry and chain are governed by UNIVERSAL_AI_HOST_ENTRY_FA.md and Reference Index: POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051. Package target 0.4.7; living master 1.7.86.
 
 Package identity: `HAIF-GPT6-PORTABLE-STARTER-20261025-004`
 Canonical ZIP filename: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`
 Paired handoff: canonical ZIP + current living master reference.
-Current source chain: POINT-0/051 (0+ marker on canonical root 0) → IN-089 → OUT-088 → EVT-0226 → CURRENT-101 → NEXT-051.
+Current source chain: POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051.
 
 ## A. Before import
 - [ ] Record exact source commit, internal package version, ZIP byte count and SHA-256 from the fresh workflow receipt.
 - [ ] Upload the ZIP and living master together into a clean interactive GPT-6 session.
 - [ ] Confirm the host can access and read both files; record any tool/file limits instead of assuming access.
-- [ ] Ask the host to recover canonical point 0, 0+ meaning, latest 0.0 checkpoint CURRENT-100, sole queue NEXT-051, stable package ID and all open gates without using prior chat history.
+- [ ] Ask the host to recover canonical point 0, 0+ meaning, latest 0.0 checkpoint CURRENT-132, sole queue NEXT-051, stable package ID and all open gates without using prior chat history.
 
 ## B. Integrity and reconstruction
 - [ ] Host repeats the ZIP filename/version/hash from the receipt; mismatch = FAIL.
