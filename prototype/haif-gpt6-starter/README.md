@@ -230,3 +230,10 @@ Run all package tests after extraction:
 ```bash
 python -m unittest discover -s . -p 'test_*.py' -v
 ```
+
+
+## Latest continuation
+
+POINT-0/077 (0++) → CURRENT-130 → IN-121 → OUT-120 → EVT-0297 → TIME-BINDING-EVT-0297 → CURRENT-131 → IN-122 → OUT-121 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-132 → IN-123 → OUT-122 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-133 → NEXT-051
+
+Historical CI mismatch is preserved under EVT-0299; the test expectation was advanced without deleting the original failure evidence.
