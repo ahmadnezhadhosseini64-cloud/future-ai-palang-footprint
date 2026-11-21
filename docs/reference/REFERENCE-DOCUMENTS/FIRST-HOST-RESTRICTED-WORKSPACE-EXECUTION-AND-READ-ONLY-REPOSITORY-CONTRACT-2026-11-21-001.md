@@ -163,9 +163,9 @@ POLICY DESIGNED / TECHNICAL ENFORCEMENT NOT VERIFIED / INDEPENDENT HOST ACCEPTAN
 ## 11. ثبت زمانی
 
 زمان دقیق پیام کاربر در دسترس/تأییدشده نیست و نباید جعل شود. زمان canonical این نسخه باید از metadata واقعی commit نهایی که این قرارداد را ثبت می‌کند استخراج شود:
-- Git commit timestamp UTC: PENDING AT COMMIT.
-- Tehran equivalent (Asia/Tehran): PENDING AT COMMIT.
-- Commit SHA: PENDING AT COMMIT.
+- EVT-0292 registration commit UTC: 2026-11-21T07:42:48Z (SHA 0a90a0c7351ab02f732024dd3029d965138f3872).
+- EVT-0292 registration commit Asia/Tehran: 2026-11-21T11:12:48+03:30.
+- EVT-0292 registration commit SHA: 0a90a0c7351ab02f732024dd3029d965138f3872.
 زمان آخرین تغییر Git، مبنای UTC است؛ زمان تهران فقط تبدیل همان timestamp است.
 
 ## 12. وضعیت تحویل
@@ -182,3 +182,5 @@ At each new work session (and before any task whose correctness depends on curre
 The workspace's OWNER_TASKS file is the explicit owner-maintained allowlist. Every task records a task identifier, purpose, permitted inputs, operations, tools/connectors, destinations, output path, prohibited data, acceptance criteria and stop conditions. A new owner instruction may refine the task list only within the already provisioned technical permission envelope. If the platform lacks a real persistent isolated workspace or least-privilege controls, the host must stop rather than simulate enforcement.
 
 The host may prepare local files and results only inside its designated workspace. It presents outputs to the owner; it never writes or synchronizes them into GitHub. Only the owner changes canonical repository content and task policy. The host retrieves owner-published changes read-only on a later sync.
+
+- TIME-BINDING-EVT-0292 was read back after registration; its own update commit is `ac3dfc9e37a61882cc4d0ea290db410ca5a145ac` at UTC `2026-11-21T07:43:30Z` / Tehran `2026-11-21T11:13:30+03:30`.
