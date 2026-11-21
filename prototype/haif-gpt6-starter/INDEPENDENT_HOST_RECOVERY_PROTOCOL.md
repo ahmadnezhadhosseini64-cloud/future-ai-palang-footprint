@@ -4,7 +4,7 @@ Package version: 0.5.0 candidate
 Latest canonical chain: POINT-0/081 → CURRENT-134 → POINT-0/082 (0++) → IN-125 → OUT-124 → EVT-0302 → TIME-BINDING-EVT-0302 → CURRENT-135 → NEXT-051
 The current point is POINT-0/082 (0++) on the existing canonical root; follow UNIVERSAL_AI_HOST_ENTRY_FA.md for model/platform-neutral entry.
 Project: Future AI / Palang Footprint
-Canonical current chain: POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051. Prior chain POINT-0/071 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 is preserved as parent history. Prior chain POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → POINT-0/069 → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122 → POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051 is preserved as parent history.
+Preserved historical baseline chain: POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051. Prior chain POINT-0/071 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 is preserved as parent history. Prior chain POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → POINT-0/069 → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122 → POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051 is preserved as parent history.
 Preserved prior chain: POINT-0/058 (0+ marker on canonical root 0) → IN-096 → OUT-095 → EVT-0233 → CURRENT-108 → NEXT-051; historical point retained, not current pointer.
 
 ## Purpose
@@ -63,14 +63,14 @@ During clean-host import, the receiving host must retrieve settled decisions wit
 The receiving host must treat the archive as a living, updateable package, not a frozen export. It must preserve the canonical ZIP filename and stable package identity while accepting only provenance-backed, validated changes to the living mother, architecture, runtime and package sources. Each accepted change requires updated tests, a fresh exact-byte receipt and SHA-256, and repository read-back. This contract does not imply automatic capture of every conversation, background execution, model-weight retraining or successful host recovery.
 
 
-## Current package and bootstrap — POINT-0/071
+## Historical package and bootstrap — POINT-0/071
 
 Package version: 0.4.5
 Current chain tail: POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051
 Use `ONE_MESSAGE_HOST_BOOTSTRAP_FA.md` as the single-message setup procedure for a new GPT host. It must establish read-only access to the canonical repository, verify the latest pointer and paired master/ZIP, run extracted tests and create a private host workspace. Actual connector authorization, persistent workspace and independent host acceptance remain separate gates.
 
 
-## Current canonical chain — package v0.4.5
+## Historical canonical chain — package v0.4.5
 
 POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051
 
@@ -84,7 +84,7 @@ POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CU
 Living master version: 1.7.80. The prior POINT-0/072 / CURRENT-125 continuation is preserved as parent history. Package v0.4.5 must be accepted only from an exact-current-source build with a fresh receipt, ZIP round-trip, SHA-256, inventory, CRC, paired-master byte match and extracted tests. Independent-host import and restart remain separate OPEN gates.
 
 
-## Current package — 0.4.5 / POINT-0/074 (0++ marker)
+## Historical package — 0.4.5 / POINT-0/074 (0++ marker)
 
 Internal package version: 0.4.5. Living master: 1.7.81. Current chain: POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051. The 0++ marker belongs to the single canonical Point 0 root; the next target is completion of the existing 0.0 continuation. NEXT-051 remains the sole active queue. The canonical package ID and ZIP filename remain unchanged. Exact-head tests, fresh build receipt, SHA-256, ZIP CRC/inventory/read-back and paired-master byte match are required before PACKAGE_VERIFIED. Independent-host acceptance, OAuth, live capture, durable workspace and restart persistence remain OPEN / NOT VERIFIED until direct receipts exist.
 
