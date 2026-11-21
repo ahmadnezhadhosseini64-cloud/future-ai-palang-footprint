@@ -1,4 +1,4 @@
-# HAIF GPT-6 Portable Starter v0.4.1
+# HAIF GPT-6 Portable Starter v0.4.2
 
 This is the updated release of the existing HAIF starter package, not a separate project. It updates the existing v0.3.0 0/0+ bootstrap package at the same stable package identity and canonical ZIP filename; history and prior digests remain preserved. It does not replace the living master, historical anchors or NEXT-051.
 
@@ -160,3 +160,8 @@ Use `ONE_MESSAGE_HOST_BOOTSTRAP_FA.md` as the single complete message for a new 
 The prompt cannot manufacture GitHub OAuth, connectors, filesystem tools, durable sandboxing or access-control boundaries. If any capability is absent, the target host must report BLOCKED/NOT CONNECTED/NOT RUN rather than simulate success. The workspace must not rely on a folder inside a shared repository as a security boundary. No direct host write to main or MASTER is permitted.
 
 Canonical root remains point 0. The markers 0+, 0++ and 0 are not separate roots; 0.0 is a parent-linked continuation. Current chain: POINT-0/070 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051. The next internal package version is 0.4.2; stable package ID and canonical ZIP filename remain unchanged. Package verification and real independent-host acceptance are separate gates.
+
+
+## Single-message GPT-6 host bootstrap — package 0.4.2
+
+Use SINGLE_MESSAGE_GPT6_HOST_BOOTSTRAP_FA.md as the one initial message for a fresh GPT-6 instance. It directs the host to use an already-authorized official GitHub connector, retrieve the latest verified release and paired living master, verify exact revision/digest/tests, create a host-private workspace where supported, reconstruct the chain and return an acceptance receipt. The host is another instance of the same AI-host role, not an unknown project entity. The message cannot grant permissions or create unavailable persistence. Current chain: POINT-0/071 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051. POINT-0 remains the one root; 0+ and 0++ are markers only.
