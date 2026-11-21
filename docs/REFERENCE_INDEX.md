@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-11-21 — mirror-only EVT-0290; latest main root POINT-0/071 / IN-114 / OUT-113 / EVT-0289 / CURRENT-124; sole active queue NEXT-051. Source blob de1b75f07241c9b313e476af5f1417177ff78c10 unchanged; Library v7 normalized match with one extra terminal LF; no source or Library write. Post-registration Audit 44874521121 and RAHM 44874520968 PASS on exact SHA 910cd24b9c9d0af2cdc7c6090386919f304b6819; Evidence Gate 44874520977 PASS on that SHA and created follow-up main 5c2a860e2fc1f7f36e3ee935b0daa3f62752e896 at 2026-11-21T06:13:35Z; current main 5c2a860... NOT VERIFIED by exact-head Audit/RAHM. CURRENT-065/CURRENT-066 and overlay-manifest lineage, Issues #20/#21 and external host/destination gates remain open.
+**Last Updated:** 2026-11-21 — mirror-only EVT-0290; latest main root POINT-0/072 / IN-115 / OUT-114 / EVT-0291 / CURRENT-125; sole active queue NEXT-051. Source blob de1b75f07241c9b313e476af5f1417177ff78c10 unchanged; Library v7 normalized match with one extra terminal LF; no source or Library write. Post-registration Audit 44874521121 and RAHM 44874520968 PASS on exact SHA 910cd24b9c9d0af2cdc7c6090386919f304b6819; Evidence Gate 44874520977 PASS on that SHA and created follow-up main 5c2a860e2fc1f7f36e3ee935b0daa3f62752e896 at 2026-11-21T06:13:35Z; current main 5c2a860... NOT VERIFIED by exact-head Audit/RAHM. CURRENT-065/CURRENT-066 and overlay-manifest lineage, Issues #20/#21 and external host/destination gates remain open.
 
 ## Canonical References
 
@@ -2573,3 +2573,12 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - [EVT-0290](architecture/BEHAVIOR-TRACE/EVT-0290-LIVE-MIRROR-SYNC-RECHECK-2026-11-21.md) / [TIME-BINDING-EVT-0290](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0290-LIVE-MIRROR-SYNC-RECHECK-2026-11-21.md).
 - Mirror-only registration; latest main root remains POINT-0/071 / EVT-0289 / CURRENT-124 / NEXT-051. No NEXT-052 and no pointer winner selected.
 - Current main HEAD `080a15c...` is later than the latest successful Audit/RAHM SHA `0ffd512...`; exact-head verification remains OPEN.
+
+
+## POINT-0/072 — canonical continuation
+
+- Point: docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-072-CURRENT-CHAT-ANCHOR-0PLUS.md
+- Input / Output: IN-115 / OUT-114 under the CURRENT-CHAT-ANCHOR path set.
+- Event / Time binding: EVT-0291 / TIME-BINDING-EVT-0291. EVT-0290 remains assigned to the earlier mirror-only event; the duplicate current-chat EVT-0290 draft is quarantined.
+- Checkpoint: CURRENT-125; sole queue: NEXT-051.
+- Living mother: version 1.7.79. Package source 0.4.4 is not release-verified; exact-head RAHM failed and rebuild remains open.
