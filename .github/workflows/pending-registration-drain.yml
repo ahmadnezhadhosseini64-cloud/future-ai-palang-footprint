@@ -91,7 +91,7 @@ jobs:
       - name: Upload read-only audit evidence
         uses: actions/upload-artifact@v4
         with:
-          name: pending-registration-audit-\${{ github.run_id }}
+          name: pending-registration-audit-${{ github.run_id }}
           path: artifacts/pending-registration/report.json
           if-no-files-found: error
           retention-days: 90
