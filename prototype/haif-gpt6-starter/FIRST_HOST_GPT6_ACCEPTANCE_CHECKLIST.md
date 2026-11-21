@@ -1,5 +1,7 @@
 # First interactive GPT-6 host — acceptance checklist
 
+> Compatibility checklist only. Current universal entry and chain are governed by UNIVERSAL_AI_HOST_ENTRY_FA.md and Reference Index: POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → NEXT-051. Package source 0.4.6; living master 1.7.85.
+
 Package identity: `HAIF-GPT6-PORTABLE-STARTER-20261025-004`
 Canonical ZIP filename: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`
 Paired handoff: canonical ZIP + current living master reference.
