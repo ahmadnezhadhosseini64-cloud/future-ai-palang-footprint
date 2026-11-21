@@ -1,9 +1,9 @@
 # EVT-0292 — تکمیل معماری FIRST_HOST و محیط کاری محدود
 
 - Parent event: EVT-0291
-- Point: POINT-0/072 (0++)
-- Input: IN-116
-- Output: OUT-115
+- Point: [POINT-0/073 (0++)](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-073-FIRST-HOST-RESTRICTED-EXECUTION-0PLUSPLUS.md), parent POINT-0/072
+- Input: [IN-116](../../0.0/anchors/PALANG-0.0-IN-20261121-116-FIRST-HOST-WORKSPACE-EXECUTION.md)
+- Output: [OUT-115](../../0.0/anchors/PALANG-0.0-OUT-20261121-115-FIRST-HOST-WORKSPACE-EXECUTION.md)
 - Host role: FIRST_HOST / HOST-001
 - Authentication gate: OPEN / DEFERRED
 - Contract: [FHRWE-2026-11-21-001](../../reference/REFERENCE-DOCUMENTS/FIRST-HOST-RESTRICTED-WORKSPACE-EXECUTION-AND-READ-ONLY-REPOSITORY-CONTRACT-2026-11-21-001.md)
@@ -14,7 +14,7 @@
 میزبان اول به‌عنوان عامل اجرای محدود تعریف شد، نه مدیر مخزن. دسترسی مخزن فقط‌خواندنی است. اجرای وظایف فقط در workspace مشخص و واقعاً provision شده، بر اساس task authorization و allowlist مالک مجاز است. ابزار/مقصد تأییدنشده، مسیر خارج از workspace، افزایش خودسرانهٔ مجوز و هرگونه write-back به مخزن ممنوع است.
 
 ## زنجیرهٔ به‌روزرسانی
-POINT-0/072 (0++) → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051.
+POINT-0/072 → POINT-0/073 (0++) → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051.
 
 ## مسیر سند مادر و workspace
 متن مادر ارسالی مالک، ورودی bootstrap است. میزبان main HEAD و نسخهٔ canonical را بازیابی و با متن مقایسه می‌کند؛ اختلاف‌ها را آشکار ثبت می‌کند؛ snapshot محلی را به revision معتبر pin می‌کند؛ و فقط taskهای مالک‌تعریف‌شده را در workspace خصوصی و محدود اجرا می‌کند. هیچ خروجی به مخزن برنمی‌گردد.
