@@ -5,23 +5,21 @@
 مخزن رسمی و یگانه:
 https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
 
-## 0) تأیید مالک پیش از اتصال
+## 0) اتصال ساده و خواندنی به GitHub
 
-پیش از هر عملیات GitHub، دقیقاً این پیام را نمایش بده:
+مخزن رسمی و یگانه:
+https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
 
-«برای اتصال به مخزن شخصی Future AI / Palang Footprint، ابتدا عبارت تأیید مالک را وارد کنید:
-احمد نژادحسینی»
-
-- فقط عبارت دقیق پس از Unicode NFC normalization و حذف فاصله‌های ابتدا/انتها پذیرفته می‌شود.
-- این عبارت فقط گیت مکالمه‌ای برای تأیید قصد کاربر است؛ چون داخل سند/ZIP قابل مشاهده است، رمز یا اثبات هویت نیست و هیچ دسترسی GitHub نمی‌دهد.
-- پس از تطبیق عبارت، از کاربر بخواه حساب GitHub را فقط از طریق رابط رسمی OAuth/connector میزبان متصل کند؛ هرگز رمز، PAT یا Secret را در چت درخواست نکن.
-- هویت حساب GitHub متصل‌شده باید با مالک مورد انتظار `ahmadnezhadhosseini64-cloud` و دسترسی به مخزن دقیق تطبیق داده شود. اگر قابل اثبات نیست، `OWNER_ACCOUNT_NOT_VERIFIED`.
-- سپس فقط دسترسی READ-ONLY به `ahmadnezhadhosseini64-cloud/future-ai-palang-footprint` را آزمایش کن. نوشتن از این عبارت نتیجه نمی‌شود؛ نوشتن فقط از broker/worker محدود، شاخهٔ `host-intake`، quarantine، PR و read-back مجاز است.
-- قرارداد کامل: [OWNER-CONFIRMATION-AND-GITHUB-AUTHORIZATION-CONTRACT.md](OWNER-CONFIRMATION-AND-GITHUB-AUTHORIZATION-CONTRACT.md).
-- اگر connector وجود ندارد، `GITHUB_CONNECTOR_NOT_AVAILABLE` اعلام کن و کاربر را به رابط رسمی اتصال هدایت کن؛ اتصال را جعل نکن.
+- پیش از هر ادعای اتصال، بررسی کن آیا GitHub connector رسمی در همین محیط میزبان در دسترس و متصل است.
+- اگر متصل نیست، کاربر را به رابط رسمی اتصال GitHub در محصول میزبان هدایت کن تا خودش حساب را از همان مسیر مجاز کند؛ از کاربر نخواه رمز، PAT یا Secret را در پیام چت بنویسد.
+- پس از اتصال، فقط دسترسی READ-ONLY به مخزن دقیق بالا را بررسی کن و main HEAD را بخوان.
+- اگر connector در دسترس نیست، وضعیت GITHUB_CONNECTOR_NOT_AVAILABLE؛ اگر مجوز مخزن نیست، REPOSITORY_ACCESS_NOT_VERIFIED را اعلام کن. اتصال را جعل نکن.
+- این مرحله فقط اتصال خواندنی و بازیابی است. هیچ عملیات نوشتن، حذف، push، merge یا release انجام نده.
+- عبارت «احمد نژادحسینی»، password/owner-confirmation gate و روش تکمیلی احراز مالک عمداً برای مرحلهٔ بعد OPEN / DEFERRED هستند؛ در این مرحله آن عبارت را درخواست نکن.
+- قرارداد: [OWNER-CONFIRMATION-AND-GITHUB-AUTHORIZATION-CONTRACT.md](OWNER-CONFIRMATION-AND-GITHUB-AUTHORIZATION-CONTRACT.md).
 
 ## 1) اتصال رسمی
-از GitHub connector رسمی موجود در محیط استفاده کن. ابتدا دسترسی READ-ONLY را بررسی کن. اگر متصل نیست، از مالک بخواه فقط همین مخزن را از رابط رسمی محصول مجاز کند و پس از مجوز بدون درخواست توضیح دوباره ادامه بده. رمز، Personal Access Token یا Secret را هرگز در چت درخواست یا ذخیره نکن. اگر connector در محیط موجود نیست، BLOCKED: GITHUB_CONNECTOR_NOT_AVAILABLE اعلام کن؛ اتصال را جعل نکن.
+از GitHub connector رسمی موجود در محیط استفاده کن. اگر اتصال حساب نیاز است، کاربر را به رابط رسمی محصول هدایت کن و پس از تأیید اتصال، خواندن مخزن را ادامه بده. اگر connector در محیط موجود نیست، GITHUB_CONNECTOR_NOT_AVAILABLE اعلام کن؛ اتصال را جعل نکن. هرگز credential را در چت درخواست یا ذخیره نکن.
 
 ## 2) بازیابی آخرین نسخه
 - HEAD واقعی شاخه main و SHA دقیق آن را بخوان.
