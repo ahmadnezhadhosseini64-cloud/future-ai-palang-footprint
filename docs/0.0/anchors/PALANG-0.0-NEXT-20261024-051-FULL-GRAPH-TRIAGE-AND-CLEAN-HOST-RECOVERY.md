@@ -2,12 +2,12 @@
 
 - Stable ID: G6IP-RAHM-NEXT-051-20261024
 - Production ID: G6IP-RAHM-NEXT-051-20261024
-- Version: 1.0.47
+- Version: 1.0.48
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE
 - Project: Future AI / Palang Footprint — HAIF
 - Canonical queue: this file only
-- Current checkpoint: [CURRENT-124](PALANG-0.0-CURRENT-20261121-124-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP.md)
-- Current point: [POINT-0/071 (0++ marker on canonical root 0)](GPT6-RAHM-USER-POINT-0-20261121-071-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP-0PLUS.md)
+- Current checkpoint: [CURRENT-125](PALANG-0.0-CURRENT-20261121-125-CURRENT-CHAT-ANCHOR.md)
+- Current point: [POINT-0/072 (0+ continuation marker on canonical root 0)](GPT6-RAHM-USER-POINT-0-20261121-072-CURRENT-CHAT-ANCHOR-0PLUS.md)
 - Living mother: [سند مرجع مادر مدل اولیه](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 - Package contract: [HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md](../../../prototype/haif-gpt6-starter/HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md)
 - Canonical ZIP filename: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`
@@ -896,3 +896,12 @@ The previous blob at this path began with the Integration Queue README title and
 - Master 1.7.78 receipt update triggers a new canonical rebuild; the latest release pointer and receipt are authoritative.
 - The only bootstrap message in the canonical ZIP is ONE_MESSAGE_HOST_BOOTSTRAP_FA.md. Duplicate-ID alternate chain files remain quarantined. NEXT-051 remains the sole queue.
 - External GPT-6 host connection and persistent isolated workspace: OPEN / NOT RUN.
+
+
+## POINT-0/072 — current conversation anchored and linked (2026-11-21)
+
+- New chain: [POINT-0/072](GPT6-RAHM-USER-POINT-0-20261121-072-CURRENT-CHAT-ANCHOR-0PLUS.md) → [IN-115](PALANG-0.0-IN-20261121-115-CURRENT-CHAT-ANCHOR.md) → [OUT-114](PALANG-0.0-OUT-20261121-114-CURRENT-CHAT-ANCHOR.md) → [EVT-0290](../../architecture/BEHAVIOR-TRACE/EVT-0290-CURRENT-CHAT-ANCHOR-2026-11-21.md) → [TIME-BINDING-EVT-0290](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0290-CURRENT-CHAT-ANCHOR-2026-11-21.md) → [CURRENT-125](PALANG-0.0-CURRENT-20261121-125-CURRENT-CHAT-ANCHOR.md) → this sole queue.
+- The user explicitly authorized anchoring this conversation under canonical root POINT-0 and linking it to prior points. Historical anchors, branches and unresolved gaps remain preserved.
+- The canonical package identity and ZIP filename remain unchanged. Current master 1.7.78 must be paired with a newly built package on the exact updated main SHA; the prior 0.4.3 receipt paired with master 1.7.77 is historical only for this latest-main delivery.
+- Exact user-message time remains UNKNOWN / UNVERIFIED. Event commit timestamp is recorded separately in TIME-BINDING-EVT-0290.
+- Host OAuth, independent import, durable workspace, restart persistence, automatic live capture and repository worker remain OPEN until directly evidenced.
