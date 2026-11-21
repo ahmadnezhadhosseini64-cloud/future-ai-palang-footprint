@@ -172,7 +172,8 @@
     "OUT-115",
     "EVT-0292",
     "TIME-BINDING-EVT-0292",
-    "CURRENT-126"
+    "CURRENT-126",
+    "POINT-0/073 (0++ continuation under POINT-0/072)"
   ],
   "entrypoint": "engine.py",
   "host_instructions": "GPT6_HOST_INSTRUCTIONS.md",
@@ -297,7 +298,7 @@
   "repository_access": "READ-ONLY",
   "workspace_execution": "OWNER-DEFINED / ALLOWLISTED ONLY",
   "repository_writeback": "DENIED",
-  "current_point": "POINT-0/072 (0++)",
+  "current_point": "POINT-0/073 (0++ continuation under POINT-0/072)",
   "current_checkpoint": "CURRENT-126",
   "first_host_workspace_mode": {
     "host_identity": "FIRST NEW HOST / FIRST_HOST / HOST-001",
