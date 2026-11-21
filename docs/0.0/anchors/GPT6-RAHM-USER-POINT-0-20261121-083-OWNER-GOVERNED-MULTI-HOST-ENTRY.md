@@ -62,3 +62,10 @@ POINT-0/082 → CURRENT-135 → POINT-0/083 (0++) → IN-126 → OUT-125 → EVT
 ## ثبت و تداوم
 
 این نقطه ادامهٔ همان ریشهٔ یگانهٔ POINT-0 است. ایجاد این سند یا پیام، به‌تنهایی اتصال یا فعال‌شدن میزبان را اثبات نمی‌کند. تنها صف فعال NEXT-051 است.
+
+
+## اثبات read-back نهایی
+
+- PR #85 merged: d9156fc4bb28cc1587774ed2ab0758b141bddc8f.
+- Final main HEAD inspected: a489a5cd56c226299b408ebbb4b603bb54108f77 (UTC 2026-11-21T19:27:18Z).
+- All 10 changed/new files were fetched from main and their Git blob SHAs matched the merged branch 10/10.
