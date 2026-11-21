@@ -6,8 +6,8 @@
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE
 - Project: Future AI / Palang Footprint — HAIF
 - Canonical queue: this file only
-- Current checkpoint: [CURRENT-126](PALANG-0.0-CURRENT-20261121-126-FINAL-ARCHITECTURE-AND-DELIVERY.md)
-- Current point: [POINT-0/073 (continuation marker on canonical root 0)](GPT6-RAHM-USER-POINT-0-20261121-073-FINAL-ARCHITECTURE-AND-DELIVERY.md)
+- Current checkpoint: [CURRENT-127](PALANG-0.0-CURRENT-20261121-127-0PLUSPLUS-TO-0-0-COMPLETION.md)
+- Current point: [POINT-0/074 (0++ marker on canonical root 0)](GPT6-RAHM-USER-POINT-0-20261121-074-0PLUSPLUS-TO-0-0-COMPLETION.md)
 - Living mother: [سند مرجع مادر مدل اولیه](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 - Package contract: [HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md](../../../prototype/haif-gpt6-starter/HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md)
 - Canonical ZIP filename: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`
@@ -970,3 +970,10 @@ READ-ONLY by default; allowlisted actions only; explicit owner approval for priv
 - RAHM export manifest: [EXPORT_MANIFEST](../../portable/RAHM/EXPORT_MANIFEST.json)
 - Preserved mirror event: [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md)
 - Preserved mirror time binding: [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md)
+
+
+## Latest 0.0 completion target — POINT-0/074 / CURRENT-127
+
+POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051
+
+Preserve this as the sole active queue. The objective is to finish repository-remediable graph and package work with exact-HEAD PASS receipts, then independently prove external-host recovery. Keep CURRENT-065/CURRENT-066, Issues #20/#21, OAuth, durable workspace, restart persistence, live/idle capture and write-back OPEN until their direct evidence exists.
