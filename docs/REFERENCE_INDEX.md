@@ -1,7 +1,11 @@
 - Current continuation: [CURRENT-127](0.0/anchors/PALANG-0.0-CURRENT-20261121-127-0PLUSPLUS-TO-0-0-COMPLETION.md); NEXT-051 remains the sole active queue for 0.0 completion.
 - Latest 0++ chain: POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051.
+- Event and time evidence: [EVT-0293](architecture/BEHAVIOR-TRACE/EVT-0293-0PLUSPLUS-TO-0-0-COMPLETION-2026-11-21.md) / [TIME-BINDING-EVT-0293](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0293-0PLUSPLUS-TO-0-0-COMPLETION-2026-11-21.md).
 
-## Latest canonical continuation — POINT-0/073 / CURRENT-126
+- Current continuation: [CURRENT-127](0.0/anchors/PALANG-0.0-CURRENT-20261121-127-0PLUSPLUS-TO-0-0-COMPLETION.md); NEXT-051 remains the sole active queue for 0.0 completion.
+- Latest 0++ chain: POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051.
+
+## Latest canonical continuation — POINT-0/074 (0++) / CURRENT-127
 
 - Root: [POINT-0/073](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-073-FINAL-ARCHITECTURE-AND-DELIVERY.md)
 - Chain: [IN-116](0.0/anchors/PALANG-0.0-IN-20261121-116-FINAL-ARCHITECTURE-AND-DELIVERY.md) → [OUT-115](0.0/anchors/PALANG-0.0-OUT-20261121-115-FINAL-ARCHITECTURE-AND-DELIVERY.md) → [EVT-0292](architecture/BEHAVIOR-TRACE/EVT-0292-FINAL-ARCHITECTURE-AND-DELIVERY-2026-11-21.md) → [TIME-BINDING-EVT-0292](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0292-FINAL-ARCHITECTURE-AND-DELIVERY-2026-11-21.md) → [CURRENT-126](0.0/anchors/PALANG-0.0-CURRENT-20261121-126-FINAL-ARCHITECTURE-AND-DELIVERY.md) → sole queue [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
@@ -13,7 +17,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-11-21 — current continuation POINT-0/073 / IN-116 / OUT-115 / EVT-0292 / CURRENT-126; living mother 1.7.80; package source target 0.4.5; NEXT-051 sole active queue. Exact-head Portable RAHM and Living Architecture Audit for the new source HEAD are not yet verified; independent-host acceptance remains OPEN / NOT RUN.
+**Last Updated:** 2026-11-21 — current continuation POINT-0/074 / IN-117 / OUT-116 / EVT-0293 / CURRENT-127; living mother 1.7.81; package source target 0.4.5; NEXT-051 sole active queue; exact-HEAD workflows pending. Exact-head Portable RAHM and Living Architecture Audit for the new source HEAD are not yet verified; independent-host acceptance remains OPEN / NOT RUN.
 
 ## Canonical References
 
