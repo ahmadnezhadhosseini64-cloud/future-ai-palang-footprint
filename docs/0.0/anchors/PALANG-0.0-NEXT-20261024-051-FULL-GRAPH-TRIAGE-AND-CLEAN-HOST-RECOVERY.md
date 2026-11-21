@@ -886,3 +886,13 @@ The previous blob at this path began with the Integration Queue README title and
 - ONE_MESSAGE_HOST_BOOTSTRAP_FA.md is the only startup prompt in package 0.4.3; SINGLE_MESSAGE_GPT6_HOST_BOOTSTRAP_FA.md is superseded and excluded from the ZIP.
 - Preserve full state recovery / IN-OUT reconstruction, clean host import, second-host import, restart persistence, automatic live message capture, idle/background capture, graph/identity/parent/time triage, CURRENT-065/CURRENT-066 unresolved status and Issues #20/#21 as OPEN.
 - Mirror event: [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md); mirror time: [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md).
+
+
+## Package 0.4.3 verification status — POINT-0/071
+
+- Latest completed RAHM run for prior snapshot: 44873029290 PASS; audit 44873029194 PASS.
+- ZIP digest 6cb016339822274586187b01e7fde74ec6623594167be2196d71c1d3959e0d38; 18 files; 24/24 extracted tests PASS.
+- Master snapshot 1.7.77 digest b2c6a2623041b9112f639893fdc155ab91f3db33d61dfd3d4921105f39e34516.
+- Master 1.7.78 receipt update triggers a new canonical rebuild; the latest release pointer and receipt are authoritative.
+- The only bootstrap message in the canonical ZIP is ONE_MESSAGE_HOST_BOOTSTRAP_FA.md. Duplicate-ID alternate chain files remain quarantined. NEXT-051 remains the sole queue.
+- External GPT-6 host connection and persistent isolated workspace: OPEN / NOT RUN.
