@@ -102,8 +102,8 @@ This project has its own living execution record, legal gates, job-search stages
 - Living master: version 1.7.74.
 - Current checkpoint: [CURRENT-122](docs/0.0/anchors/PALANG-0.0-CURRENT-20261120-122-PERMANENT-INTERACTION-LEDGER.md).
 - Architecture: permanent IN/OUT event ledger, host registry, quarantine-first intake, RAHM → CHILD → explicit owner approval.
-- Repository intake worker is constrained to `host-intake`; owner-reviewed PR is required before main promotion.
-- GitHub reports main branch currently unprotected; branch protection remains OPEN / NOT CONFIGURED.
+- Legacy host-intake is frozen; no host writes to any master branch. Owner export → private RAHM → bot-authored PR → owner approval → CHILD.
+- Live main is protected by active Ruleset 27814009; required approvals remain 0 and Code Owner review remains OFF until owner UI configuration.
 - Package source version: 0.4.1; canonical ZIP name and stable release identity remain unchanged.
 - Real host capture and clean-host recovery remain OPEN until direct host receipts exist.
 
