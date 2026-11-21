@@ -1,3 +1,12 @@
+## CURRENT-133 — CI history preserved and repair authorized
+
+- [IN-123](0.0/anchors/PALANG-0.0-IN-20261121-123-CI-FAILURE-PRESERVATION-AND-OWNER-APPROVAL.md)
+- [OUT-122](0.0/anchors/PALANG-0.0-OUT-20261121-122-CI-LINEAGE-REPAIR-AND-PRESERVATION.md)
+- [EVT-0299](architecture/BEHAVIOR-TRACE/EVT-0299-CI-HISTORICAL-FAILURE-AND-RESOLUTION-2026-11-21.md)
+- [TIME-BINDING-EVT-0299](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0299-CI-RESOLUTION-2026-11-21.md)
+- [CURRENT-133](0.0/anchors/PALANG-0.0-CURRENT-20261121-133-0PLUSPLUS-CI-HISTORY-PRESERVED-AND-RESOLVED.md)
+- Historical failed runs remain preserved; exact-head CI after the latest additive correction is pending. Sole queue: NEXT-051.
+
 ## POINT-0/077 (0++) — CURRENT-133: preserved CI failure and authorized resolution
 
 - Input: [IN-123](0.0/anchors/PALANG-0.0-IN-20261121-123-PRESERVE-AND-RESOLVE-CI-INCONSISTENCY.md).
