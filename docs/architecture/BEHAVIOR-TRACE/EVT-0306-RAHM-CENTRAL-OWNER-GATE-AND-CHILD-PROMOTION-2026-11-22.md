@@ -17,7 +17,7 @@
 3. The active Ruleset 27814009 currently has required approvals=0 and Code Owner review=false.
 4. Legacy automation had direct-to-main write paths in main.yml, pending-registration-drain.yml, and control-plane/controller.py. These were converted to artifact-only/read-only behavior in this change.
 5. execution-controller.yml and rahm-portable-conformance.yml had unnecessary contents:write permissions; they are now read-only.
-6. host_adapter_github_worker.py contains an explicit hard stop when its target repository is the canonical master; it must remain blocked for master.
+6. host_adapter_github_worker.py is now fully disabled and fails closed before any GitHub API request; the legacy host-intake route is frozen.
 7. Existing Host Registry contains no verified live hosts. No host is enrolled or active by this event.
 
 ## Implemented
