@@ -1,7 +1,8 @@
 ## Latest owner-approved continuation — POINT-0/080 (0++) / CURRENT-133
 
 - Chain: [POINT-0/079](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-079-LATEST-RUNNABLE-OPEN-DEVELOPMENT.md) → [CURRENT-132](0.0/anchors/PALANG-0.0-CURRENT-20261121-132-LATEST-RUNNABLE-OPEN-DEVELOPMENT.md) → [POINT-0/080](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-080-PUBLIC-READ-NO-OAUTH-HOST-ACCESS.md) → [IN-123](0.0/anchors/PALANG-0.0-IN-20261121-123-PUBLIC-READ-NO-OAUTH-HOST-ACCESS.md) → [OUT-122](0.0/anchors/PALANG-0.0-OUT-20261121-122-PUBLIC-READ-NO-OAUTH-HOST-ACCESS.md) → [EVT-0300](architecture/BEHAVIOR-TRACE/EVT-0300-PUBLIC-READ-NO-OAUTH-HOST-ACCESS-2026-11-21.md) → [TIME-BINDING-EVT-0300](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0300-PUBLIC-READ-NO-OAUTH-HOST-ACCESS-2026-11-21.md) → [CURRENT-133](0.0/anchors/PALANG-0.0-CURRENT-20261121-133-PUBLIC-READ-NO-OAUTH-HOST-ACCESS.md) → sole queue [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
-- Living master target: 1.7.87.
+- Living master target: 1.7.88.
+- Latest verified portable package: 0.4.8; 19 files; 257102 bytes; 24/24 tests PASS; CRC, exact artifact-ID download, paired master 1.7.87 byte match and artifact round-trip PASS; SHA-256 1e1bbab0c7acb0975b77176abc5c38f7e7097cfe8cf67b17153ffe1db4da65a6; workflow 44921364797 on main SHA 680a1f788a50e38da4b71768f8291dde0eeeaa31. Next paired package target: 0.4.9 with master 1.7.88.
 - Decision: Public HTTPS READ/clone/fetch requires no OAuth; authenticated write-back or private resources require separate secure authorization. EXECUTE and persistent workspace are independent host capabilities.
 - Architecture: [Public repository and low-friction host access](architecture/مدل%20اولیه%20AI/معماری%20دسترسی%20عمومی%20مخزن%20و%20ورود%20کم‌اصطکاک%20میزبان.md).
 - Universal host entry corrected to attempt anonymous public READ first; OAuth is not a blocker for source recovery.
@@ -72,7 +73,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-11-21 — current continuation POINT-0/080 (0++) / IN-123 / OUT-122 / EVT-0300 / CURRENT-133; living mother 1.7.87; NEXT-051 sole active queue. Public READ requires no OAuth; destination execution workspace, independent-host acceptance and restart remain OPEN / NOT RUN.
+**Last Updated:** 2026-11-21 — current continuation POINT-0/080 (0++) / IN-123 / OUT-122 / EVT-0300 / CURRENT-133; living mother 1.7.88; package 0.4.8 verified; NEXT-051 sole active queue. Public READ requires no OAuth; destination execution workspace, independent-host acceptance and restart remain OPEN / NOT RUN.
 
 ## Canonical References
 
