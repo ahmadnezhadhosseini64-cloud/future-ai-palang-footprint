@@ -1,6 +1,6 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.8.40",
+  "version": "1.8.41",
   "manifest_status": "Package source 0.4.5 is registered on the host-intake proposal branch. Canonical chain: POINT-0/072 → POINT-0/073 (0++ continuation, not a new root) → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051. FIRST_HOST/HOST-001: canonical repository READ-ONLY, owner-defined allowlisted workspace execution only, no repository writeback, authentication gate OPEN / DEFERRED. Parallel duplicate-ID files are explicitly quarantined and noncanonical. Exact package SHA-256 and canonical ZIP rebuild remain pending. Main integration, technical enforcement and independent-host acceptance remain NOT VERIFIED / NOT RUN.",
   "created_from_checkpoint": "HAIF-POINT-0-044-STARTER-ZIP-INPLACE-UPDATE-20261027 + HAIF-CURRENT-094",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
@@ -629,13 +629,13 @@
     },
     {
       "path": "docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md",
-      "git_blob_sha": "707c70a74c13c7a262f415fdbfd53250c67cfe14",
+      "git_blob_sha": "a7e3aa72283bfce745d757b0cb526ada5043f4e5",
       "sha256_status": "PENDING_EXACT_BYTES_BUILD",
       "reason": "Updated for POINT-0/073 (0++) and CURRENT-126 after the previous canonical package build; include or sync and hash in the next same-identity ZIP rebuild."
     },
     {
       "path": "docs/reference/REFERENCE-DOCUMENTS/FIRST-HOST-RESTRICTED-WORKSPACE-EXECUTION-AND-READ-ONLY-REPOSITORY-CONTRACT-2026-11-21-001.md",
-      "git_blob_sha": "d8a7f1d629604d64307c2c11b6e03d8cd208787f",
+      "git_blob_sha": "034918f0b11672a37bca16cb78dd93b7a73b34ed",
       "sha256_status": "PENDING_EXACT_BYTES_BUILD",
       "reason": "Updated for POINT-0/073 (0++) and CURRENT-126 after the previous canonical package build; include or sync and hash in the next same-identity ZIP rebuild."
     },
