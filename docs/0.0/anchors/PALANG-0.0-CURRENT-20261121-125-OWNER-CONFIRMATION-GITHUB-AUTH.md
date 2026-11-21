@@ -36,3 +36,7 @@
 - Mirror event: [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md).
 - Mirror time binding: [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md).
 - These are preserved historical mirror records, not a replacement for EVT-0291 or its time binding.
+
+## Cross-index registration status
+
+The POINT-0/072 chain is linked from docs/0.0/README.md, docs/REFERENCE_INDEX.md, the behavior-trace index, the integration-queue index, the living mother and the RAHM export manifest. This remains proposal-branch registration only; no main merge, package rebuild or external-host acceptance is implied.
