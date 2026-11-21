@@ -1,6 +1,6 @@
 # CURRENT-136 — وضعیت ورود یک‌پیامی و فضای کاری محصور میزبان
 
-- Status: ACTIVE / LIVING / OWNER-DIRECTED / PENDING MAIN MERGE
+- Status: ACTIVE / LIVING / OWNER-DIRECTED / MERGED TO MAIN / READ-BACK VERIFIED
 - Parent checkpoint: CURRENT-135
 - Current point: POINT-0/083 (0++)
 - Input/output: IN-126 → OUT-125
@@ -13,7 +13,7 @@
 
 ## وضعیت ثبت
 
-- New one-message enrollment instruction: ADDED ON PROPOSAL BRANCH.
+- New one-message enrollment instruction: MERGED TO MAIN / READ-BACK VERIFIED.
 - Existing multi-host architecture, Host Registry and workspace protocols: FOUND / READ.
 - Central repository access for new host: PUBLIC READ ONLY; no write grant.
 - Official Host ID / Workspace ID: PENDING direct host receipt and owner assignment.
@@ -36,6 +36,14 @@ POINT-0/082 → CURRENT-135 → POINT-0/083 (0++) → IN-126 → OUT-125 → EVT
 - Source: GitHub commit metadata read-back for EVT-0303 on the proposal branch.
 - Owner message time: UNKNOWN / UNVERIFIED.
 
+## رسید ادغام و بازخوانی
+
+- PR #85: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/pull/85
+- Merge commit: d9156fc4bb28cc1587774ed2ab0758b141bddc8f
+- Merge UTC: 2026-11-21T19:26:11Z
+- Tehran: 2026-11-21T22:56:11+03:30
+- Destination host acceptance remains OPEN / NOT RUN.
+
 ## شرط ارتقا
 
-این checkpoint پس از merge و read-back از main به وضعیت MERGED / READ-BACK VERIFIED ارتقا می‌یابد. هیچ میزبان تا دریافت رسید مستقیم و تأیید مالک در Registry به‌عنوان ACTIVE ثبت نمی‌شود.
+این checkpoint در PR #85 به main ادغام شد؛ فایل‌های مرجع باید از main دوباره خوانده و با محتوای شاخه تطبیق داده شوند. هیچ میزبان تا دریافت رسید مستقیم و تأیید مالک در Registry به‌عنوان ACTIVE ثبت نمی‌شود.
