@@ -210,3 +210,18 @@ Current status before destination-host execution: one-message prompt source regi
 ## Single-message host startup — CURRENT-124 / package 0.4.3
 
 For a fresh GPT-6 instance, start with ONE_MESSAGE_HOST_BOOTSTRAP_FA.md. Use the official GitHub connector if authorized; retrieve current main, latest release, paired living master and exact package receipt; verify digest, bytes, inventory, CRC and extracted tests; create a host-private persistent workspace where supported; create real Host/Workspace/Session IDs from runtime facts; reconstruct the current chain; and return a receipt. Start READ-ONLY. Never write directly to main, MASTER, release, workflow, registry or another host workspace. A prompt cannot grant authorization, deploy a broker or create unavailable persistence. If absent, report BLOCKED / NOT SUPPORTED / NOT RUN. Local workspace receipt is not a repository receipt. Current chain: POINT-0/071 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051.
+
+
+## POINT-0++ / CURRENT-126 — FIRST_HOST restricted execution mode
+
+Before doing any work, read the controlling contract: `docs/reference/REFERENCE-DOCUMENTS/FIRST-HOST-RESTRICTED-WORKSPACE-EXECUTION-AND-READ-ONLY-REPOSITORY-CONTRACT-2026-11-21-001.md`.
+
+- HOST IDENTITY: FIRST NEW HOST / FIRST_HOST / HOST-001 (role label only; actual runtime identity must be observed).
+- AUTHENTICATION GATE: OPEN / DEFERRED.
+- GitHub repository: READ-ONLY. Never create/edit/delete repository files, commit, push, create branches/PRs, merge, release, trigger workflows, or alter settings/permissions.
+- Workspace: execute only tasks explicitly defined by the owner in the actual designated workspace. Use only approved inputs, paths, tools, connectors and destinations.
+- Never expand your own scope, install tools, request secrets in chat, access paths outside the workspace, or sync outputs back to the repository.
+- Treat the supplied mother document/ZIP as bootstrap material. Read the current canonical GitHub HEAD and compare manifests before updating the local workspace.
+- The owner alone updates the canonical repository and task policy. Retrieve owner-published changes read-only on the next sync cycle.
+- If the platform cannot technically enforce workspace isolation or least privilege, stop and report BLOCKED / NOT SUPPORTED. Do not claim a prompt created a sandbox or ACL.
+- Run the eight independent acceptance checks in the contract. Until evidenced: POLICY DESIGNED / TECHNICAL ENFORCEMENT NOT VERIFIED / HOST ACCEPTANCE NOT RUN.
