@@ -40,12 +40,12 @@ https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
 
 - سند مادر: `docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md`
 - شاخص مراجع: `docs/REFERENCE_INDEX.md`
-- نقطهٔ جاری: `docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-077-0PLUSPLUS-LIVE-ANCHOR.md`
-- ورودی: `docs/0.0/anchors/PALANG-0.0-IN-20261121-120-0PLUSPLUS-LIVE-ANCHOR.md`
-- خروجی: `docs/0.0/anchors/PALANG-0.0-OUT-20261121-119-0PLUSPLUS-LIVE-ANCHOR.md`
-- رویداد: `docs/architecture/BEHAVIOR-TRACE/EVT-0296-0PLUSPLUS-LIVE-ANCHOR-2026-11-21.md`
-- لنگر زمان: `docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0296-0PLUSPLUS-LIVE-ANCHOR-2026-11-21.md`
-- وضعیت جاری: `docs/0.0/anchors/PALANG-0.0-CURRENT-20261121-130-0PLUSPLUS-LIVE-ANCHOR.md`
+- نقطهٔ جاری: `docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-080-PUBLIC-READ-NO-OAUTH-HOST-ACCESS.md`
+- ورودی: `docs/0.0/anchors/PALANG-0.0-IN-20261121-123-PUBLIC-READ-NO-OAUTH-HOST-ACCESS.md`
+- خروجی: `docs/0.0/anchors/PALANG-0.0-OUT-20261121-122-PUBLIC-READ-NO-OAUTH-HOST-ACCESS.md`
+- رویداد: `docs/architecture/BEHAVIOR-TRACE/EVT-0300-PUBLIC-READ-NO-OAUTH-HOST-ACCESS-2026-11-21.md`
+- لنگر زمان: `docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0300-PUBLIC-READ-NO-OAUTH-HOST-ACCESS-2026-11-21.md`
+- وضعیت جاری: `docs/0.0/anchors/PALANG-0.0-CURRENT-20261121-133-PUBLIC-READ-NO-OAUTH-HOST-ACCESS.md`
 - تنها صف اجرایی: `docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md`
 - Manifest بسته: `prototype/haif-gpt6-starter/manifest.json`
 - راهنمای میزبان: `prototype/haif-gpt6-starter/GPT6_HOST_INSTRUCTIONS.md`
@@ -61,7 +61,7 @@ https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
 - `0+` و `0++` نشانگرهای روی همان ریشه‌اند؛ ریشه یا نقطهٔ مستقل نیستند.
 - `0.0` ادامهٔ والددار همان ریشه و هدف اجرایی فعلی است.
 - زنجیرهٔ جاریِ ثبت‌شده:  
-  `POINT-0/077 → IN-120 → OUT-119 → EVT-0296 → TIME-BINDING-EVT-0296 → CURRENT-130 → NEXT-051`
+  `POINT-0/079 → CURRENT-132 → POINT-0/080 → IN-123 → OUT-122 → EVT-0300 → TIME-BINDING-EVT-0300 → CURRENT-133 → NEXT-051`
 - `NEXT-051` تنها صف فعال است. صف موازی نساز و تاریخچه را حذف، بازشماری یا بازنویسی نکن.
 - وضعیت پروژه `ACTIVE / LIVING` است؛ ثبت سند مساوی تکمیل فنی نیست.
 
@@ -176,7 +176,7 @@ Overall: SOURCE-RECOVERED / PACKAGE-VERIFIED / HOST-RECOVERED / PARTIAL / BLOCKE
 - Branch-scoped WRITE is optional and conditional on the destination connector actually granting Contents:write/Push. If granted, write only to the host's own branch and open a PR. Never push directly to main.
 - The first host is a new session selected/launched by the owner; this bootstrap cannot instantiate a remote session or manufacture OAuth/permissions.
 - Package exact-HEAD verification is PACKAGE_VERIFIED; use the [stable latest-verified release and machine-readable receipt](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified) for the current source SHA, archive size and SHA-256 rather than copying a potentially stale digest.
-- First-host OAuth/acceptance, destination AI-host execution, restart/persistence, and 0.0 completion remain OPEN until direct host receipts are returned.
+- Authenticated write-back OAuth (only if requested) / host acceptance, destination AI-host execution, restart/persistence, and 0.0 completion remain OPEN until direct host receipts are returned.
 
 
 ## الحاقیهٔ دسترسی عمومی — POINT-0/080
