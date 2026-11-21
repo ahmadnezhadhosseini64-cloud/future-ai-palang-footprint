@@ -20,4 +20,4 @@
 
 ## Truthful status
 
-This is registered on the PR branch, not merged to main. Runtime lifecycle timestamps for this chat are not exposed, so the current historical gap cannot be calculated. No private reasoning is logged or inferred. Final CI, package extraction and release verification remain pending.
+This is registered on the PR branch, not merged to main. Runtime lifecycle timestamps for this chat are not exposed, so the current historical gap cannot be calculated. No private reasoning is logged or inferred. Universal host and AI Vacuum schema/test workflows passed. Portable RAHM Conformance run 44911491306 passed on PR merge ref d159eac89d7efa6b6a8acd0ca3ac69b15c9f7a0c. Canonical ZIP: 267449 bytes; SHA-256 06b3695eb0e81d1ad4748929a49bb452c75bddfbd4a0da5f1bdcbc8ae1598539. Exact artifact-ID download, ZIP receipt/hash verification, paired living-master byte read-back and extracted ZIP tests passed. Stable release refresh was skipped because the build is a PR, not main. PR #64 merge and independent host recovery remain pending.
