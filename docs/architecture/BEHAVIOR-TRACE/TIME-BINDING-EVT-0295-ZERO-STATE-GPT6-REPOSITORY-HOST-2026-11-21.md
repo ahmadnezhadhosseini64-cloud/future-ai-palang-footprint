@@ -4,7 +4,7 @@
 - Project date: 2026-11-21
 - Project timezone: Asia/Tehran (+03:30)
 - Exact owner-message timestamp: UNKNOWN / UNVERIFIED
-- Repository registration timestamp: PENDING MAIN-MERGE READ-BACK
+- Repository registration timestamp: 2026-11-21T11:32:20Z (UTC) / 2026-11-21T15:02:20+03:30 (Asia/Tehran)
 - Canonical timestamp source: GitHub merge commit metadata (UTC)
 - Tehran conversion: derived from the exact UTC commit timestamp; no estimated time permitted.
 
