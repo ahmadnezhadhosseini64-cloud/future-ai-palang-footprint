@@ -2123,3 +2123,13 @@ The canonical chain is [POINT-0/032](./anchors/GPT6-RAHM-USER-POINT-0-20261026-0
 - Requirement: the prepared deliverable is a living, continuously evolvable package. Each accepted interaction-derived advance must be captured, validated, reconciled, tested, rebuilt into the same canonical ZIP identity and read back. Stable filename and release locator remain; internal package version and content advance.
 - Evidence boundaries remain explicit: this does not retrain model weights, prove automatic capture/background execution, or prove independent-host recovery.
 - Parent source anchor: `9ba469281ffda02cbfcccd174ba4495fa89abb74`, UTC `2026-11-20T12:24:19Z` / Tehran `2026-11-20T15:54:19+03:30`; user-message time unknown.
+
+
+## تازه‌ترین زنجیره
+
+- [POINT-0/071](anchors/GPT6-RAHM-USER-POINT-0-20261121-071-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP-0PLUS.md)
+- [IN-114](anchors/PALANG-0.0-IN-20261121-114-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP.md)
+- [OUT-113](anchors/PALANG-0.0-OUT-20261121-113-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP.md)
+- [EVT-0289](../architecture/BEHAVIOR-TRACE/EVT-0289-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP-2026-11-21.md)
+- [CURRENT-124](anchors/PALANG-0.0-CURRENT-20261121-124-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP.md)
+- [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
