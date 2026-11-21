@@ -134,4 +134,4 @@ Snapshot سند مادر و ZIP باید READ-ONLY و به commit و digest دق
 7. هیچ تغییری را به مخزن برنگردان؛ مالک تنها مرجع را به‌روز می‌کند و میزبان در نشست بعدی نسخهٔ منتشرشده را فقط‌خواندنی دریافت می‌کند.
 8. اگر پلتفرم sandbox/فضای پایدار یا محدودیت واقعی ندارد، BLOCKED / NOT SUPPORTED اعلام کن؛ prompt به‌تنهایی مجوز یا جداسازی ایجاد نمی‌کند.
 
-زنجیرهٔ فعال: POINT-0/072 (0++) → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051. HOST IDENTITY: FIRST NEW HOST. AUTHENTICATION GATE: OPEN / DEFERRED. Repository write: DENIED. Host acceptance: NOT RUN until direct receipt.
+زنجیرهٔ فعال: POINT-0/072 → POINT-0/073 (0++) → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051. HOST IDENTITY: FIRST NEW HOST. AUTHENTICATION GATE: OPEN / DEFERRED. Repository write: DENIED. Host acceptance: NOT RUN until direct receipt.
