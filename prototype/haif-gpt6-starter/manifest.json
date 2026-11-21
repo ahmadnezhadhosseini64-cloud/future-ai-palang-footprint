@@ -2,8 +2,8 @@
   "package_schema": "haif-gpt6-starter/0.1",
   "stable_id": "HAIF-GPT6-PORTABLE-STARTER-20261025-004",
   "production_id": "HAIF-G6PS-20261025-004",
-  "version": "0.4.8",
-  "supersedes": "0.4.7",
+  "version": "0.4.9",
+  "supersedes": "0.4.8",
   "project": "Future AI / Palang Footprint",
   "canonical_repository": "https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint",
   "parent_architecture": [
@@ -191,7 +191,14 @@
     "EVT-0299",
     "TIME-BINDING-EVT-0299",
     "CURRENT-132",
-    "NEXT-051 (sole active queue; latest runnable and open development split)"
+    "NEXT-051 (sole active queue; latest runnable and open development split)",
+    "POINT-0/080 (0++ marker on canonical root 0)",
+    "IN-123",
+    "OUT-122",
+    "EVT-0300",
+    "TIME-BINDING-EVT-0300",
+    "CURRENT-133",
+    "HAIF-PUBLIC-REPOSITORY-LOW-FRICTION-HOST-ACCESS-2026-11-21-001"
   ],
   "entrypoint": "engine.py",
   "host_instructions": "GPT6_HOST_INSTRUCTIONS.md",
@@ -240,7 +247,11 @@
     "model- and platform-neutral universal AI-host entry instruction",
     "safe ZIP extraction and recovery sequence with path traversal checks, exact SHA-256 receipt, inventory, CRC and byte-match verification",
     "Latest Runnable versus Development separation with evidence-gated capability promotion and immutable historical preservation",
-    "seven ordered 0.0 stages from source discovery through clean-host recovery and controlled growth"
+    "seven ordered 0.0 stages from source discovery through clean-host recovery and controlled growth",
+    "anonymous public HTTPS repository READ/clone/fetch without OAuth",
+    "separate capability gates for READ, EXECUTE, private/persistent WORKSPACE and authenticated WRITE",
+    "owner-governed host entry with public-read-first behavior and optional OAuth only for private resources or write-back",
+    "model-neutral host entry and GPT compatibility bootstrap synchronized to POINT-0/080"
   ],
   "not_proven": [
     "native GPT plugin execution",
@@ -273,15 +284,18 @@
     "automatic capture of every interaction without an authorized live producer connection",
     "one-message prompt cannot create OAuth authorization, GitHub connector availability, filesystem access, durable workspace or runtime isolation; target-host proof is required",
     "actual target-host one-message onboarding, GitHub authorization, private workspace provisioning, negative cross-host isolation tests and clean-host restart acceptance",
-    "A single bootstrap prompt cannot grant GitHub authorization, deploy a broker, create unavailable persistent storage, or prove a real external host connection"
+    "A single bootstrap prompt cannot grant GitHub authorization, deploy a broker, create unavailable persistent storage, or prove a real external host connection",
+    "actual destination host public clone/import and runtime execution",
+    "persistent isolated destination workspace and restart recovery",
+    "authenticated write-back from destination host; not required for public READ"
   ],
   "archive_policy": {
     "canonical_filename": "haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip",
     "update_mode": "REBUILD_IN_PLACE_SAME_PACKAGE_IDENTITY",
     "do_not_publish_separate_version_named_zip": true,
     "historical_v0_3_0_digest_is_not_current": true,
-    "current_internal_version": "0.4.8",
-    "supersedes": "0.4.7",
+    "current_internal_version": "0.4.9",
+    "supersedes": "0.4.8",
     "latest_delivery_contract": "LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-CONTRACT.md"
   },
   "host_acceptance_checklist": "FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST.md",
@@ -302,8 +316,8 @@
   "one_message_host_bootstrap": "ONE_MESSAGE_HOST_BOOTSTRAP_FA.md",
   "host_bootstrap_message": "ONE_MESSAGE_HOST_BOOTSTRAP_FA.md",
   "independent_host_bootstrap": "ONE_MESSAGE_HOST_BOOTSTRAP_FA.md",
-  "current_continuation_chain": "POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051",
+  "current_continuation_chain": "POINT-0/079 → CURRENT-132 → POINT-0/080 → IN-123 → OUT-122 → EVT-0300 → TIME-BINDING-EVT-0300 → CURRENT-133 → NEXT-051",
   "current_living_master_version": "1.7.87",
-  "current_internal_version": "0.4.8",
+  "current_internal_version": "0.4.9",
   "universal_host_entry": "UNIVERSAL_AI_HOST_ENTRY_FA.md"
 }
