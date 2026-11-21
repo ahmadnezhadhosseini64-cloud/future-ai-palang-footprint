@@ -8,7 +8,7 @@
 - Master repository remains PUBLIC for anonymous HTTPS READ; AI hosts receive no master-repository write credential. Public readers cannot be individually identified or auto-enrolled.
 - After owner verification, each host receives one owner-created PRIVATE repository. No shared repo/token/deploy key. Optional writes require a server-side broker and a GitHub App scoped to that one private repo; tokens are never exposed to the model. Default host permission remains L1_READ_ONLY.
 - Main branch protection, live collaborator/App audit, per-host private repository provisioning, GitHub App, broker, revocation and negative isolation tests remain OPEN / NOT VERIFIED. Existing contract records main.protected=false; current live setting was not readable through the available connector.
-- Event registration commit: 8f38049aac7c8f84931b04ca82e546cb738bea8b (UTC 2026-11-21T19:55:28Z; Tehran 2026-11-21T23:25:28+03:30). Main merge and final read-back pending.
+- Event registration commit: 8f38049aac7c8f84931b04ca82e546cb738bea8b (UTC 2026-11-21T19:55:28Z; Tehran 2026-11-21T23:25:28+03:30). PR #88 merged to main at 446b3c7fe7bef616826ee609f5dc58cc23a1bd00 (UTC 2026-11-21T19:57:32Z; Tehran 2026-11-21T23:27:32+03:30). Final read-back: 16/16 changed/new files matched by blob SHA.
 - NEXT-051 remains the sole active queue; no parallel root or queue.
 
 ## Previous owner-directed continuation — POINT-0/083 (0++) / CURRENT-136
