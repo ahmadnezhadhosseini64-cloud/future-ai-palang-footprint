@@ -5,17 +5,10 @@ on:
     branches: [main]
     paths:
       - 'docs/portable/RAHM/**'
-      - 'docs/0.0/anchors/**'
-      - 'docs/architecture/HOST-REGISTRY/**'
-      - 'docs/architecture/BEHAVIOR-TRACE/**'
-      - 'docs/architecture/INTEGRATION-QUEUE/README.md'
-      - 'docs/architecture/مدل اولیه AI/**'
-      - 'docs/reference/REFERENCE-DOCUMENTS/**'
-      - 'docs/REFERENCE_INDEX.md'
+      - 'docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md'
       - 'scripts/behavior-hunter/**'
       - 'scripts/haif-runtime/**'
       - 'prototype/haif-gpt6-starter/**'
-      - '.github/workflows/living-architecture-audit.yml'
       - '.github/workflows/rahm-portable-conformance.yml'
   workflow_dispatch:
 
