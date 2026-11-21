@@ -2557,3 +2557,12 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - [CURRENT-118](anchors/PALANG-0.0-CURRENT-20261120-118-INTERACTIVE-EVOLUTION-0PLUS.md) → existing sole active [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - This 0+ root makes the package evolution-capable by governing rule: validated interaction-derived progress updates the living master and applicable package sources, then triggers tests, same-identity ZIP rebuild, fresh receipt/hash and read-back. Previous roots and the certificate child branch remain preserved.
 - Package build on this newly registered HEAD is pending; HOST_RECOVERED and automatic all-chat/background capture are not claimed.
+
+
+## POINT-0/071 — Single-message GPT-6 host bootstrap
+
+- [POINT-0/071](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-071-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP-0PLUS.md); 0++ is only a highlight marker on canonical POINT-0.
+- [IN-114](0.0/anchors/PALANG-0.0-IN-20261121-114-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP.md) / [OUT-113](0.0/anchors/PALANG-0.0-OUT-20261121-113-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP.md).
+- [EVT-0289](architecture/BEHAVIOR-TRACE/EVT-0289-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP-2026-11-21.md) / [TIME-BINDING-EVT-0289](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0289-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP-2026-11-21.md).
+- [CURRENT-124](0.0/anchors/PALANG-0.0-CURRENT-20261121-124-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP.md) → sole [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Single-message bootstrap in portable source; package source target 0.4.2. External host connection and durable workspace remain OPEN / NOT RUN.

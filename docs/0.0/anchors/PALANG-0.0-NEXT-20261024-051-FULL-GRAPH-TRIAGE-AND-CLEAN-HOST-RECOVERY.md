@@ -6,13 +6,13 @@
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE
 - Project: Future AI / Palang Footprint — HAIF
 - Canonical queue: this file only
-- Current checkpoint: [CURRENT-122](PALANG-0.0-CURRENT-20261120-122-PERMANENT-INTERACTION-LEDGER.md)
-- Current point: [POINT-0/069 (0+)](GPT6-RAHM-USER-POINT-0-20261120-069-PERMANENT-INTERACTION-LEDGER-0PLUS.md)
+- Current checkpoint: [CURRENT-124](PALANG-0.0-CURRENT-20261121-124-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP.md)
+- Current point: [POINT-0/071 (0++ marker on canonical root 0)](GPT6-RAHM-USER-POINT-0-20261121-071-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP-0PLUS.md)
 - Living mother: [سند مرجع مادر مدل اولیه](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 - Package contract: [HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md](../../../prototype/haif-gpt6-starter/HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md)
 - Canonical ZIP filename: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`
 - Stable package ID: `HAIF-GPT6-PORTABLE-STARTER-20261025-004`
-- Current package source target: internal v0.4.1 under the unchanged stable package ID and canonical ZIP filename. The new package is not VERIFIED until exact-current-main CI build, extracted tests, artifact round-trip, digest and receipt all pass.
+- Current package source target: internal v0.4.2 under the unchanged stable package ID and canonical ZIP filename. The new package is not VERIFIED until exact-current-main CI build, extracted tests, artifact round-trip, digest and receipt all pass.
 - Queue rule: do not create NEXT-052.
 
 ## Mission
@@ -860,3 +860,20 @@ The previous blob at this path began with the Integration Queue README title and
 - پوشه در Git مرز امنیتی نیست؛ broker/credential محدود، allowlist مسیر و آزمون جداسازی واقعی الزامی‌اند. این گیت‌ها OPEN هستند.
 - فقط نتایج راستی‌آزمایی‌شده و مفید با تأیید صریح مالک به سند مادر و همان ZIP canonical ارتقا می‌یابند.
 - NEXT-051 تنها صف اجرایی باقی می‌ماند؛ صف یا ریشه موازی ساخته نمی‌شود.
+
+
+## POINT-0/071 / CURRENT-124 — One-message GPT-6 host bootstrap
+
+- Point: [POINT-0/071](GPT6-RAHM-USER-POINT-0-20261121-071-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP-0PLUS.md); 0++ is only a highlight marker on canonical root 0.
+- Input: [IN-114](PALANG-0.0-IN-20261121-114-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP.md).
+- Output: [OUT-113](PALANG-0.0-OUT-20261121-113-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP.md).
+- Event/time: [EVT-0289](../../architecture/BEHAVIOR-TRACE/EVT-0289-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP-2026-11-21.md) → [TIME-BINDING-EVT-0289](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0289-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP-2026-11-21.md).
+- Checkpoint: [CURRENT-124](PALANG-0.0-CURRENT-20261121-124-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP.md).
+- Master: [سند مرجع مادر](../../architecture/مدل%20اولیه%20AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md).
+- Proof protocol: [INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md](../../architecture/مدل%20اولیه%20AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md).
+- Package protocol: [INDEPENDENT_HOST_RECOVERY_PROTOCOL.md](../../../prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md).
+- Manifest: [EXPORT_MANIFEST.json](../../../portable/RAHM/EXPORT_MANIFEST.json).
+- Keep OPEN: full state recovery / reconstruct independently from IN and OUT; clean host import / clean interactive AI-host session; second-host import; restart persistence / restart-new-session recovery; automatic live message capture and idle/background capture; graph/identity/parent/time triage, duplicate IDs and ambiguous parents.
+- Preserve CURRENT-065/CURRENT-066 OPEN with no winner selected; Issue #20 and Issue #21 remain open. NEXT-051 is the sole queue.
+- Mirror event: [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md).
+- Mirror time: [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md).
