@@ -23,3 +23,6 @@ GitHub authorization/connector at destination, durable private workspace, host i
 - Mirror time: [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md)
 
 NEXT-051 remains the sole active queue.
+
+## Duplicate-ID reconciliation and canonical handoff
+A concurrent alternate file set reused the same POINT-0/071, IN-114, OUT-113, EVT-0289 and TIME-BINDING-EVT-0289 IDs. Those files are marked QUARANTINED_DUPLICATE_ID_NONCANONICAL; the chain linked in docs/0.0/README.md remains canonical. ONE_MESSAGE_HOST_BOOTSTRAP_FA.md is the sole startup prompt in the next canonical ZIP. The superseded SINGLE_MESSAGE file is excluded from the archive. Package 0.4.3 build/read-back remains pending.
