@@ -26,13 +26,17 @@ Repository registration, package build, extracted tests, exact-byte artifact rea
 
 
 ## Full canonical chain and preserved mirror
-- Point: [POINT-0/072](anchors/GPT6-RAHM-USER-POINT-0-20261121-072-CURRENT-CHAT-ANCHOR-0PLUS.md)
-- Input: [IN-115](anchors/PALANG-0.0-IN-20261121-115-CURRENT-CHAT-ANCHOR.md)
-- Output: [OUT-114](anchors/PALANG-0.0-OUT-20261121-114-CURRENT-CHAT-ANCHOR.md)
-- Event: [EVT-0291](../architecture/BEHAVIOR-TRACE/EVT-0291-SET-CURRENT-POINT-AND-LATEST-DELIVERY-2026-11-21.md)
-- Time: [TIME-BINDING-EVT-0291](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0291-SET-CURRENT-POINT-AND-LATEST-DELIVERY-2026-11-21.md)
-- Next: [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
+- Point: [POINT-0/072](GPT6-RAHM-USER-POINT-0-20261121-072-CURRENT-CHAT-ANCHOR-0PLUS.md)
+- Input: [IN-115](PALANG-0.0-IN-20261121-115-CURRENT-CHAT-ANCHOR.md)
+- Output: [OUT-114](PALANG-0.0-OUT-20261121-114-CURRENT-CHAT-ANCHOR.md)
+- Event: [EVT-0291](../../architecture/BEHAVIOR-TRACE/EVT-0291-SET-CURRENT-POINT-AND-LATEST-DELIVERY-2026-11-21.md)
+- Time: [TIME-BINDING-EVT-0291](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0291-SET-CURRENT-POINT-AND-LATEST-DELIVERY-2026-11-21.md)
+- Next: [NEXT-051](PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
 - Existing mirror event: [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md)
 - Existing mirror time binding: [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md)
 
 CURRENT-065/CURRENT-066 remains OPEN; no winner selected. Issues #20 and #21 remain OPEN. Full-state recovery, clean-host import, second-host acceptance, restart persistence, idle/background capture and graph/identity/parent/time triage remain OPEN / NOT RUN.
+
+
+## Explicit open acceptance gates
+Full state recovery from IN and OUT: OPEN / NOT RUN. Clean host import: OPEN / NOT RUN. Second-host acceptance: OPEN / NOT RUN. Restart persistence: OPEN / NOT RUN. Idle/background capture: OPEN / NOT RUN. Graph/identity/parent/time triage: OPEN / NOT RUN. Issue #20 OPEN; Issue #21 OPEN. CURRENT-065/CURRENT-066 OPEN; no winner selected.
