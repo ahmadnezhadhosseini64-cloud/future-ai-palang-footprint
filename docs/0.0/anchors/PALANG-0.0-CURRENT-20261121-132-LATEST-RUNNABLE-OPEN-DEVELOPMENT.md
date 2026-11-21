@@ -60,6 +60,9 @@ NEXT-051 تنها صف فعال است. هیچ سابقه یا نقطهٔ قبل
 - Event: [EVT-0299](../../architecture/BEHAVIOR-TRACE/EVT-0299-LATEST-RUNNABLE-OPEN-DEVELOPMENT-2026-11-21.md)
 - Time binding: [TIME-BINDING-EVT-0299](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0299-LATEST-RUNNABLE-OPEN-DEVELOPMENT-2026-11-21.md)
 - Current: [CURRENT-132](PALANG-0.0-CURRENT-20261121-132-LATEST-RUNNABLE-OPEN-DEVELOPMENT.md)
+
+- Mirror event: [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md)
+- Mirror time binding: [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md)
 - Sole next: [NEXT-051](PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
 - Living master: [سند مرجع مادر](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 - Universal host entry: [UNIVERSAL_AI_HOST_ENTRY_FA.md](../../../prototype/haif-gpt6-starter/UNIVERSAL_AI_HOST_ENTRY_FA.md)
