@@ -1,6 +1,6 @@
 # OUT-118 — خروجی: بستهٔ ورود میزبان GPT-6 از وضعیت صفر
 
-- Status: PREPARED / REPOSITORY-INTEGRATION-PENDING
+- Status: PREPARED / REPOSITORY-INTEGRATED / READ-BACK-VERIFIED
 - Parent: IN-119
 - Point: POINT-0/076
 - Target checkpoint: CURRENT-129
