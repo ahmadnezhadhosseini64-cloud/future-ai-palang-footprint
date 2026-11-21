@@ -985,3 +985,11 @@ READ-ONLY by default; allowlisted actions only; explicit owner approval for priv
 POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051
 
 Preserve this as the sole active queue. The objective is to finish repository-remediable graph and package work with exact-HEAD PASS receipts, then independently prove external-host recovery. Keep CURRENT-065/CURRENT-066, Issues #20/#21, OAuth, durable workspace, restart persistence, live/idle capture and write-back OPEN until their direct evidence exists.
+
+
+## First-run host bootstrap compatibility repair — EVT-0297
+
+- Preserve and correct the active one-message bootstrap under [EVT-0297](../../architecture/BEHAVIOR-TRACE/EVT-0297-FIRST-RUN-HOST-BOOTSTRAP-COMPATIBILITY-REPAIR-2026-11-21.md).
+- The active bootstrap must resolve POINT-0/077 / CURRENT-130 / living master 1.7.84; the old POINT-0/074 / CURRENT-127 / 1.7.82 text is retained only in the immutable historical copy.
+- Acceptance sequence: PR merge → main read-back → exact-main canonical ZIP rebuild/receipt → fresh-host execution receipt. Do not claim HOST-RECOVERED from document repair alone.
+- This is a child repair under NEXT-051; no parallel queue is created.

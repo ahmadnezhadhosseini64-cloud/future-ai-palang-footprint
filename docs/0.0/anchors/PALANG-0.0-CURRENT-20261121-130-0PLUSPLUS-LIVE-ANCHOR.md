@@ -36,3 +36,11 @@ POINT-0/076 → CURRENT-129 → POINT-0/077 (۰++) → IN-120 → OUT-119 → EV
 
 ## Continuation
 Continue through NEXT-051 only. Preserve previous anchors and unresolved gaps. Do not create NEXT-052 or a parallel project.
+
+
+## First-run bootstrap incompatibility — EVT-0297
+
+- Record: [EVT-0297](../../architecture/BEHAVIOR-TRACE/EVT-0297-FIRST-RUN-HOST-BOOTSTRAP-COMPATIBILITY-REPAIR-2026-11-21.md).
+- The active one-message bootstrap had stale POINT-0/074 / CURRENT-127 / master 1.7.82 pointers while this checkpoint is POINT-0/077 / CURRENT-130 / master 1.7.84.
+- The pre-repair bootstrap is preserved byte-for-byte; the active instruction is corrected on branch `fix/first-run-host-bootstrap-current-chain`.
+- This repair remains pending PR merge, main read-back, exact-main ZIP rebuild and fresh-host acceptance. NEXT-051 remains the sole queue.

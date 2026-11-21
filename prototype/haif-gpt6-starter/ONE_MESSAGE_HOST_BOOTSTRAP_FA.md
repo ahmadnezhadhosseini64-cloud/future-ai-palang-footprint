@@ -1,3 +1,6 @@
+> **CURRENT EXECUTION SNAPSHOT — 2026-11-21 / POINT-0/077 / CURRENT-130**  
+> This is the active one-message bootstrap. Its former POINT-0/074 / CURRENT-127 snapshot is preserved verbatim at [the original historical copy](prototype/haif-gpt6-starter/ONE_MESSAGE_HOST_BOOTSTRAP_FA-ORIGINAL-POINT-074-2026-11-21.md). The active chain and required read set below are synchronized to POINT-0/077, CURRENT-130 and living mother 1.7.84. Do not use the archived snapshot as the current startup instruction.
+
 # ONE_MESSAGE_HOST_BOOTSTRAP_FA.md
 # سند آغاز به‌کار و اتصال میزبان جدید — نسخهٔ اولیهٔ شدنی 0.1.0
 
@@ -8,8 +11,8 @@
 **Stable package ID:** HAIF-GPT6-PORTABLE-STARTER-20261025-004  
 **Canonical ZIP filename:** haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip  
 **Current source package version recorded in manifest:** 0.4.5  
-**Living mother target:** 1.7.82  
-**Current continuation:** POINT-0/075 → IN-118 → OUT-117 → EVT-0294 → TIME-BINDING-EVT-0294 → CURRENT-128 → NEXT-051
+**Living mother target:** 1.7.84  
+**Current continuation:** POINT-0/076 → CURRENT-129 → POINT-0/077 (0++) → IN-120 → OUT-119 → EVT-0296 → TIME-BINDING-EVT-0296 → CURRENT-130 → NEXT-051
 
 ---
 
@@ -36,12 +39,12 @@ https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
 
 - سند مادر: `docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md`
 - شاخص مراجع: `docs/REFERENCE_INDEX.md`
-- نقطهٔ جاری: `docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-074-0PLUSPLUS-TO-0-0-COMPLETION.md`
-- ورودی: `docs/0.0/anchors/PALANG-0.0-IN-20261121-117-0PLUSPLUS-TO-0-0-COMPLETION.md`
-- خروجی: `docs/0.0/anchors/PALANG-0.0-OUT-20261121-116-0PLUSPLUS-TO-0-0-COMPLETION.md`
-- رویداد: `docs/architecture/BEHAVIOR-TRACE/EVT-0293-0PLUSPLUS-TO-0-0-COMPLETION-2026-11-21.md`
-- لنگر زمان: `docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0293-0PLUSPLUS-TO-0-0-COMPLETION-2026-11-21.md`
-- وضعیت جاری: `docs/0.0/anchors/PALANG-0.0-CURRENT-20261121-127-0PLUSPLUS-TO-0-0-COMPLETION.md`
+- نقطهٔ جاری: `docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-077-0PLUSPLUS-LIVE-ANCHOR.md`
+- ورودی: `docs/0.0/anchors/PALANG-0.0-IN-20261121-120-0PLUSPLUS-LIVE-ANCHOR.md`
+- خروجی: `docs/0.0/anchors/PALANG-0.0-OUT-20261121-119-0PLUSPLUS-LIVE-ANCHOR.md`
+- رویداد: `docs/architecture/BEHAVIOR-TRACE/EVT-0296-0PLUSPLUS-LIVE-ANCHOR-2026-11-21.md`
+- لنگر زمان: `docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0296-0PLUSPLUS-LIVE-ANCHOR-2026-11-21.md`
+- وضعیت جاری: `docs/0.0/anchors/PALANG-0.0-CURRENT-20261121-130-0PLUSPLUS-LIVE-ANCHOR.md`
 - تنها صف اجرایی: `docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md`
 - Manifest بسته: `prototype/haif-gpt6-starter/manifest.json`
 - راهنمای میزبان: `prototype/haif-gpt6-starter/GPT6_HOST_INSTRUCTIONS.md`
@@ -57,7 +60,7 @@ https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
 - `0+` و `0++` نشانگرهای روی همان ریشه‌اند؛ ریشه یا نقطهٔ مستقل نیستند.
 - `0.0` ادامهٔ والددار همان ریشه و هدف اجرایی فعلی است.
 - زنجیرهٔ جاریِ ثبت‌شده:  
-  `POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051`
+  `POINT-0/077 → IN-120 → OUT-119 → EVT-0296 → TIME-BINDING-EVT-0296 → CURRENT-130 → NEXT-051`
 - `NEXT-051` تنها صف فعال است. صف موازی نساز و تاریخچه را حذف، بازشماری یا بازنویسی نکن.
 - وضعیت پروژه `ACTIVE / LIVING` است؛ ثبت سند مساوی تکمیل فنی نیست.
 
@@ -159,7 +162,7 @@ Overall: SOURCE-RECOVERED / PACKAGE-VERIFIED / HOST-RECOVERED / PARTIAL / BLOCKE
 - نشانگر جاری: POINT-0/075 روی همان ریشهٔ واحد POINT-0؛ نشانگر 0++ حفظ شده است.
 - زنجیره: POINT-0/075 → IN-118 → OUT-117 → EVT-0294 → TIME-BINDING-EVT-0294 → CURRENT-128 → NEXT-051.
 - هدف اجرایی: READ مخزن + EXECUTE در working checkout مستقل برای میزبان اول؛ WRITE شاخه‌ای فقط با مجوز واقعی.
-- سند مادر canonical در main: نسخهٔ 1.7.82؛ PR #57 با موفقیت ادغام و read-back شد (merge commit `e8399c76efe45188ea1574e7ddebd96286da3233`).
+- سند مادر canonical در main: نسخهٔ 1.7.84؛ PR #57 با موفقیت ادغام و read-back شد (merge commit `e8399c76efe45188ea1574e7ddebd96286da3233`).
 - منبع بستهٔ portable: manifest نسخهٔ 0.4.5؛ این شماره به‌تنهایی رسید ساخت ZIP جاری نیست.
 - رسید ZIP exact-HEAD، انطباق کامل، بازیابی میزبان مستقل و restart/persistence فقط پس از مشاهدهٔ شواهد واقعی قابل PASS هستند.
 - آخرین زمان پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان Git commit این سند، زمان ثبت مخزن است و جایگزین زمان پیام نمی‌شود.
