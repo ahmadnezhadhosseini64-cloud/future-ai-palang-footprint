@@ -40,6 +40,13 @@ POINT-0/083 → CURRENT-136 → POINT-0/084 (0++) → IN-127 → OUT-126 → EVT
 - Tehran: 2026-11-21T23:25:28+03:30
 - Owner message time: UNKNOWN / UNVERIFIED.
 
-## Merge and read-back receipt\n\n- PR #88: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/pull/88\n- Merge commit: 446b3c7fe7bef616826ee609f5dc58cc23a1bd00\n- Merge UTC: 2026-11-21T19:57:32Z; Tehran: 2026-11-21T23:27:32+03:30\n- All 16 changed/new files were fetched from main and compared with the merged branch: 16/16 blob SHA matches.\n\n## Security gate
+## Merge and read-back receipt
+
+- PR #88: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/pull/88
+- Merge commit: 446b3c7fe7bef616826ee609f5dc58cc23a1bd00
+- Merge UTC: 2026-11-21T19:57:32Z; Tehran: 2026-11-21T23:27:32+03:30
+- All 16 changed/new files were fetched from main and compared with the merged branch: 16/16 blob SHA matches.
+
+## Security gate
 
 This checkpoint registers the architecture and onboarding rule, not live enforcement. It must not be marked SECURITY_VERIFIED until GitHub settings/access audit, per-host private repository, scoped App/broker, negative isolation, revoke, export and restore tests pass with direct evidence. NEXT-051 remains the only active queue.
