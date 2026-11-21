@@ -31,3 +31,8 @@
 - External-host GitHub connector authorization and read-only recovery: NOT RUN.
 - Owner phrase/password gate («احمد نژادحسینی») remains OPEN / DEFERRED; repository writes remain out of scope for POINT-0/072.
 
+## Historical mirror references and preservation
+
+- Mirror event: [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md).
+- Mirror time binding: [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md).
+- These are preserved historical mirror records, not a replacement for EVT-0291 or its time binding.
