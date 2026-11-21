@@ -1,3 +1,11 @@
+## Universal AI Host Connectivity — UAHCC-2026-11-21-001
+
+- قرارداد میزبان‌ناوابسته: [UNIVERSAL-AI-HOST-CONNECTIVITY-CONTRACT-2026-11-21-001](host-connectivity/UNIVERSAL-AI-HOST-CONNECTIVITY-CONTRACT-2026-11-21-001.md).
+- قرارداد ماشین‌خوان رسید: [host-acceptance-receipt.schema.json](../schemas/host-connectivity/host-acceptance-receipt.schema.json).
+- اعتبارسنج اجرایی: [validate_receipt.py](../scripts/host-connectivity/validate_receipt.py)؛ آزمون‌ها: [test_validate_receipt.py](../scripts/host-connectivity/tests/test_validate_receipt.py).
+- دامنه: تمام میزبان‌های آینده؛ OAuth مستقل در UI مقصد، جدایی READ/EXECUTE/WORKSPACE/WRITE، ثبت غیرمحرمانه و branch-only PR.
+- وضعیت این شاخه: IMPLEMENTED IN BRANCH / READ-BACK AND TESTS PENDING / NOT MERGED. صف حاکم همچنان NEXT-051 است.
+
 ## Latest owner-approved continuation — POINT-0/077 (0++) / CURRENT-130
 
 - Chain: [POINT-0/076](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-076-ZERO-STATE-GPT6-HOST.md) → [CURRENT-129](0.0/anchors/PALANG-0.0-CURRENT-20261121-129-ZERO-STATE-GPT6-HOST.md) → [POINT-0/077 (0++)](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-077-0PLUSPLUS-LIVE-ANCHOR.md) → [IN-120](0.0/anchors/PALANG-0.0-IN-20261121-120-0PLUSPLUS-LIVE-ANCHOR.md) → [OUT-119](0.0/anchors/PALANG-0.0-OUT-20261121-119-0PLUSPLUS-LIVE-ANCHOR.md) → [EVT-0296](architecture/BEHAVIOR-TRACE/EVT-0296-0PLUSPLUS-LIVE-ANCHOR-2026-11-21.md) → [TIME-BINDING-EVT-0296](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0296-0PLUSPLUS-LIVE-ANCHOR-2026-11-21.md) → [CURRENT-130](0.0/anchors/PALANG-0.0-CURRENT-20261121-130-0PLUSPLUS-LIVE-ANCHOR.md) → sole queue [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
