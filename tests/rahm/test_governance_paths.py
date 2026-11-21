@@ -36,6 +36,8 @@ class GovernancePathTests(unittest.TestCase):
         workflow = self.read(".github/workflows/rahm-portable-conformance.yml")
         self.assertIn("contents: write", workflow)
         self.assertIn("gh release upload", workflow)
+        self.assertIn("name: haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean", workflow)
+        self.assertNotIn("github-token: ${{ github.token }}", workflow)
         self.assertNotIn("git push", workflow)
         self.assertIn("github.actor == 'ahmadnezhadhosseini64-cloud'", workflow)
 
