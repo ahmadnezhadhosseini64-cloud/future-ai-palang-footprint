@@ -9,7 +9,7 @@
 - STOP anchor: [STOP-ANCHOR](architecture/AI-VACUUM-POINT/STOP-ANCHOR-2026-11-21-001.md).
 - THINKING_START anchor: [THINKING-START-ANCHOR](architecture/AI-VACUUM-POINT/THINKING-START-ANCHOR-2026-11-21-001.md).
 - Behavioral trace: [AI-VACUUM-BEHAVIORAL-TRACE-STANDARD](architecture/AI-VACUUM-POINT/AI-VACUUM-BEHAVIORAL-TRACE-STANDARD-2026-11-21-001.md).
-- PR #64 contains these changes; conformance and merge remain pending. Sole queue: NEXT-051.
+- PR #64 contains these changes; exact PR ZIP build/download/read-back and extracted tests PASS on merge ref b956b8cb3990626af8673ba172678b5320828d43. Stable release waits for main merge. Sole queue: NEXT-051.
 
 ## POINT-0/077 (0++) — Universal AI Host Package / CURRENT-131
 
