@@ -106,3 +106,17 @@ Snapshot سند مادر و ZIP باید READ-ONLY و به commit و digest دق
 10. گیت‌های باز و رسید read-back هر ثبت واقعی.
 
 این پیام فرایند را یک‌مرحله‌ای هماهنگ می‌کند، اما نمی‌تواند OAuth/GitHub، connector، broker، filesystem، sandbox پایدار یا مجوزهای پلتفرم را خلق کند. هر قابلیت غایب باید BLOCKED / NOT SUPPORTED / NOT RUN بماند. هیچ موفقیتی جعل نشود.
+
+
+## نقطهٔ ۰++ — قفل و محیط کار میزبان اول
+
+قرارداد الزام‌آور را از مخزن بخوان: `docs/reference/REFERENCE-DOCUMENTS/FIRST-HOST-RESTRICTED-WORKSPACE-EXECUTION-AND-READ-ONLY-REPOSITORY-CONTRACT-2026-11-21-001.md`.
+
+- HOST IDENTITY: FIRST NEW HOST / FIRST_HOST / HOST-001.
+- AUTHENTICATION GATE: OPEN / DEFERRED.
+- مخزن GitHub فقط READ-ONLY است؛ هیچ نوشتن، حذف، commit، push، branch، PR، merge، release یا تغییر permission مجاز نیست.
+- اجرای کار فقط در workspace واقعی و مشخصی که مالک provision کرده و فقط برای taskهای صریحاً مجازشده انجام می‌شود.
+- ابزارها، connectorها، ورودی‌ها، مسیرها و مقصدهای بیرونی باید allowlist و مجوز واقعی داشته باشند.
+- سند مادر/ZIP را نقطهٔ شروع بدان؛ HEAD و manifest جاری مخزن را بخوان و workspace را از نسخهٔ معتبر به‌روز کن.
+- خروجی workspace به مخزن برنمی‌گردد؛ مالک تنها کسی است که مرجع را تغییر می‌دهد.
+- اگر sandbox/ACL/محدودیت فنی واقعی وجود ندارد، اجرا را BLOCKED اعلام کن؛ متن این پیام به‌تنهایی قفل فنی نمی‌سازد.
