@@ -23,3 +23,8 @@
 The corrective source changes are committed to the existing feature branch. The latest exact-head CI is pending; do not claim the recurrence is fully resolved until Portable RAHM Conformance and Living Architecture Audit both pass, along with the host-specific checks.
 
 No merge to main and no independent-host recovery is claimed.
+
+
+## Additional package-copy alignment
+
+A subsequent extracted-package test identified one more stale canonical-chain copy in the independent-host recovery protocol. The three host-facing protocol documents are now aligned with CURRENT-133. This additional failed run is preserved in EVT-0299; exact-head CI is still the acceptance gate.
