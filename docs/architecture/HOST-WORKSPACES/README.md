@@ -70,3 +70,8 @@
 برای میزبان GPT جدید فقط پیام کامل `prototype/haif-gpt6-starter/ONE_MESSAGE_HOST_BOOTSTRAP_FA.md` ارسال می‌شود. پیام، اتصال خواندنی به مخزن رسمی، بازیابی سند مادر و ZIP از latest-verified pointer، اجرای تست‌های بسته و ساخت workspace خصوصی در runtime مقصد را به ترتیب انجام می‌دهد. مجوز OAuth/GitHub یا قابلیت workspace را جعل نمی‌کند؛ در صورت نبود ابزار، BLOCKED/NOT CONNECTED/WORKSPACE_NOT_PERSISTENT ثبت می‌شود.
 
 workspace واقعی باید در sandbox/فضای خصوصی میزبان ایجاد شود. پوشه داخل مخزن مشترک مرز امنیتی نیست. دسترسی میزبان به مخزن اصلی READ-ONLY است و هیچ میزبان حق نوشتن مستقیم main/MASTER را ندارد. Host Registry تا احراز هویت، اجرای آزمون‌ها و تصمیم مالک خالی می‌ماند.
+
+
+## راه‌اندازی یک‌پیامی میزبان GPT-6 — CURRENT-124
+
+از پیام واحد فارسی SINGLE_MESSAGE_GPT6_HOST_BOOTSTRAP_FA.md استفاده می‌شود. میزبان با اتصال رسمی GitHub، آخرین Release و سند مادر را بازیابی و بررسی می‌کند و workspace را در محیط خصوصی/پایدار خودش می‌سازد. پوشه‌بندی در مخزن اصلی مرز امنیتی نیست. میزبان READ-ONLY آغاز می‌کند و تا تأیید مالک PROPOSED می‌ماند. اگر connector یا محیط پایدار در دسترس نیست، BLOCKED / NOT SUPPORTED اعلام می‌شود. ثبت مخزنی فقط از broker مجاز و پس از read-back است.
