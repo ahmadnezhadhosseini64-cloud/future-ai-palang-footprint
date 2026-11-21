@@ -194,6 +194,8 @@ Until all L3 gates pass, every new host is strictly L1_READ_ONLY against master 
 
 ## 15. RAHM مرکزی مالک و مسیر یادگیری چندمیزبانه — POINT-0/086
 
+Host Registry schema 1.1.0 now binds each Host ID to one Workspace ID and one owner-created private repository, records connector monitoring mode, and hard-requires master_write_access=false, rahm_access=NONE and host_direct_write_access=false. Owner monitoring commands are documented in docs/architecture/RAHM/OWNER-MONITORING-COMMANDS.md.
+
 RAHM فضای مرکزی تحت اختیار مالک است و هرگز داخل محیط کاری میزبان قرار نمی‌گیرد. مسیر دائمی:
 
 HOST PRIVATE WORKSPACE → OWNER-COMMANDED MONITOR/EXPORT → PRIVATE RAHM QUARANTINE → CROSS-HOST RECONCILIATION → RAHM VALIDATION → BOT-AUTHORED PR → OWNER REVIEW/APPROVAL → CHILD-CANDIDATE.
