@@ -2643,3 +2643,6 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - Event / Time binding: EVT-0291 / TIME-BINDING-EVT-0291. EVT-0290 remains assigned to the earlier mirror-only event; the duplicate current-chat EVT-0290 draft is quarantined.
 - Checkpoint: CURRENT-125; sole queue: NEXT-051.
 - Living mother: version 1.7.79. Package source 0.4.4 is not release-verified; exact-head RAHM failed and rebuild remains open.
+
+
+- Historical mirror lineage retained: [EVT-0241](architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) / [TIME-BINDING-EVT-0241](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md).
