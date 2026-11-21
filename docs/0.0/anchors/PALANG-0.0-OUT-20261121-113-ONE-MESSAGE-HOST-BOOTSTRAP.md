@@ -37,3 +37,9 @@
 - Run `44871939090` روی source SHA `46137c4d325857556f813767e3d2b071d1ddcc12`: منبع و تست‌های استخراج‌شده 24/24 PASS و ZIP build PASS؛ اما مرحلهٔ دانلود artifact با lookup نامی `actions/download-artifact@v4` شکست خورد (`Artifact not found for name`). در نتیجه artifact round-trip و انتشار release در آن run اجرا نشدند؛ این run PACKAGE_VERIFIED نیست.
 - اصلاح workflow: مرحلهٔ upload اکنون شناسهٔ واقعی artifact را از output همان step می‌گیرد و download با `artifact-ids` دقیق انجام می‌شود، نه lookup مبهم بر اساس نام.
 - پس از اصلاح، فقط run جدیدی که artifact-id round-trip، digest، master byte match، CRC، inventory و تست‌ها را PASS کند می‌تواند latest release را refresh کند.
+
+
+## اصلاح دوم artifact round-trip — 2026-11-21
+
+- Run `44872027513`: package source tests 24/24 PASS، ZIP build و upload PASS و دانلود artifact با ID دقیق PASS؛ مرحلهٔ paired read-back به‌دلیل رفتار پیش‌فرض download-artifact در ایجاد زیرپوشه‌ای به نام artifact، فایل‌ها را در ریشهٔ مورد انتظار پیدا نکرد (`DOWNLOADED_ARTIFACT_MISSING_ZIP_RECEIPT_OR_MASTER`). انتشار release اجرا نشد؛ این run PACKAGE_VERIFIED نیست.
+- اصلاح workflow: `merge-multiple: true` افزوده شد تا artifact واحد در مسیر مقصد ادغام و ساختار مورد انتظار verifier حفظ شود. سپس read-back سند مادر، digest، inventory، CRC و تست استخراج‌شده دوباره اجرا می‌شود.

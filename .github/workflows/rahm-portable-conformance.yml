@@ -300,6 +300,7 @@ jobs:
         with:
           artifact-ids: ${{ steps.starter_upload.outputs.artifact-id }}
           path: downloaded-starter-artifact
+          merge-multiple: true
 
       - name: Verify downloaded artifact receipt and extracted ZIP
         if: success()
