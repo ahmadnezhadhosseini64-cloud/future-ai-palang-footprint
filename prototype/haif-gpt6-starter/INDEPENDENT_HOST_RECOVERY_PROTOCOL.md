@@ -97,3 +97,10 @@ Internal package version: 0.4.6. Living master: 1.7.86. Current chain: POINT-0/0
 POINT-0/077 (0++) → CURRENT-130 → IN-121 → OUT-120 → EVT-0297 → TIME-BINDING-EVT-0297 → CURRENT-131 → IN-122 → OUT-121 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-132 → NEXT-051
 
 The AI Vacuum Point is a permanent addition to this same package lineage. STOP and THINKING_START remain separate runtime anchors; calculate the interval only from observed timestamps on comparable clocks. Behavioral receipts contain externally observable events only, never private chain-of-thought. The exact package build and independent-host recovery are separate acceptance gates.
+
+
+## Current canonical continuation — CURRENT-133
+
+POINT-0/077 (0++) → CURRENT-130 → IN-121 → OUT-120 → EVT-0297 → TIME-BINDING-EVT-0297 → CURRENT-131 → IN-122 → OUT-121 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-132 → IN-123 → OUT-122 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-133 → NEXT-051
+
+Historical CI failures are retained under EVT-0299; repairs are additive and do not erase failed-run evidence.
