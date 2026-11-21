@@ -20,7 +20,7 @@
 - Chain: POINT-0/076 → CURRENT-129 → POINT-0/077 (0++) → IN-120 → OUT-119 → EVT-0296 → TIME-BINDING-EVT-0296 → CURRENT-130 → NEXT-051.
 - The owner designated the current interaction as the live 0++ continuation marker on the existing POINT-0 root. No parallel root or NEXT queue is created.
 - The zero-state host transfer remains a child execution lane: portable living reference + same canonical ZIP identity; destination OAuth/workspace/host acceptance require direct host-side evidence.
-- The previous ZIP build predates POINT-0/077. Rebuild and verify the unchanged canonical ZIP identity against the exact merged main SHA before marking the package current.
+- The previous ZIP build predates POINT-0/077. POINT-0/077 and CURRENT-130 are merged/read-back verified. Rebuild and verify the unchanged canonical ZIP identity against the exact merged main SHA before marking the package current.
 - NEXT-051 remains the sole governing queue; independent host recovery and historical graph reconciliation remain open.
 
 ## Mission
