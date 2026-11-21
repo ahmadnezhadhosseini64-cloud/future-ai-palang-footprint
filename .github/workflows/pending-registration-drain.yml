@@ -47,7 +47,7 @@ jobs:
               text = path.read_text(encoding="utf-8")
               fields = {}
               for key in ("approval", "status", "auto_finalize", "production_id", "canonical_destination"):
-                  match = re.search(rf"^{key}:\\s*(.*?)\\s*$", text, re.MULTILINE)
+                  match = re.search(rf"^{key}:\s*(.*?)\s*$", text, re.MULTILINE)
                   fields[key] = match.group(1).strip() if match else ""
               destination = fields["canonical_destination"]
               safe_destination = (
@@ -81,7 +81,7 @@ jobs:
               "records": rows,
           }
           Path("artifacts/pending-registration/report.json").write_text(
-              json.dumps(report, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8"
+              json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
           )
           print(json.dumps(report, ensure_ascii=False, indent=2))
           PY
