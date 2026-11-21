@@ -1,22 +1,31 @@
-- Current point: [CURRENT-132](../../0.0/anchors/PALANG-0.0-CURRENT-20261121-131-UNIVERSAL-HOST-INITIAL-RUNNABLE.md); active next: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Current point: [CURRENT-132](../../0.0/anchors/PALANG-0.0-CURRENT-20261121-132-LATEST-RUNNABLE-OPEN-DEVELOPMENT.md); active next: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - Latest chain: POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051. Target: universal host onboarding, package recovery and 0.0 completion; external-host capabilities remain separately gated.
 
 - Current point: [CURRENT-131](../../0.0/anchors/PALANG-0.0-CURRENT-20261121-131-UNIVERSAL-HOST-INITIAL-RUNNABLE.md); active next: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - Latest chain: POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → NEXT-051. Target: universal host onboarding, package recovery and 0.0 completion; external-host capabilities remain separately gated.
 
-## Latest canonical continuation — POINT-0/074 (0++) / CURRENT-127
+## Historical canonical continuation — POINT-0/074 (0++) / CURRENT-127
 
 - Chain: POINT-0/073 → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051.
 - Living mother target: 1.7.80. Canonical package identity and ZIP filename are preserved; exact-head build and receipt are required.
 - Registration is append-only. Previous POINT-0/072 / CURRENT-125 and all earlier history remain intact.
 - Independent-host import, OAuth, durable workspace, restart persistence, live/idle capture and unresolved graph triage remain OPEN / NOT RUN until direct evidence exists.
 
+
+
+## Latest canonical continuation — POINT-0/079 (0++) / CURRENT-132
+
+- Chain: POINT-0/078 → CURRENT-131 → POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051.
+- Living master: 1.7.86. Portable package target: 0.4.7; previous 0.4.6 receipt remains valid only for its recorded source SHA until 0.4.7 exact-main conformance completes.
+- Latest Runnable / Development / Historical are separate lanes. Legacy dependencies are triaged by affected consumer; independent proven capabilities may be packaged.
+- 0.0.1–0.0.9 remain the sole execution steps. NEXT-051 is the only active queue; no parallel NEXT is created.
+
 # صف یکپارچه‌سازی تغییرات معماری — Architecture Integration Queue
 
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.10.53
+- Version: 1.10.54
 - Date: 2026-11-21
 - Exact Time: EVT-0261 event commit UTC `2026-11-10T06:47:53Z` / Tehran `2026-11-10T10:17:53+03:30`; initial time-binding commit UTC `2026-11-10T06:48:18Z` / Tehran `2026-11-10T10:18:18+03:30`.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
