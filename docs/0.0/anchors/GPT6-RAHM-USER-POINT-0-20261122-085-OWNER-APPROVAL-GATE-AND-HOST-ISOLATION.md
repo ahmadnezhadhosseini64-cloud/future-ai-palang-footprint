@@ -1,3 +1,5 @@
+> Historical point: superseded by POINT-0/086 (0++) / CURRENT-139. The canonical root remains POINT-0 and NEXT-051 remains the sole active queue.
+
 # POINT-0/085 — دروازهٔ تأیید مالک و جداسازی میزبان‌ها
 
 - Stable ID: HAIF-POINT-0-085-OWNER-APPROVAL-GATE-AND-HOST-ISOLATION-2026-11-22
