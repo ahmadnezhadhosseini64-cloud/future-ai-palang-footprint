@@ -24,3 +24,10 @@
 - Extracted tests: 24/24 PASS; CRC, exact artifact-ID download, paired-master byte match and downloaded artifact round-trip PASS.
 - Durable release: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified
 - Independent host acceptance: NOT RUN.
+
+
+## Subsequent package 0.4.8 verification
+
+- Workflow: 44921364797; started 2026-11-21T15:51:05Z / 2026-11-21T19:21:05+03:30; completed 2026-11-21T15:51:35Z / 2026-11-21T19:21:35+03:30.
+- Source/main SHA: 680a1f788a50e38da4b71768f8291dde0eeeaa31; 19 files; 257102 bytes; 24/24 tests PASS.
+- SHA-256: 1e1bbab0c7acb0975b77176abc5c38f7e7097cfe8cf67b17153ffe1db4da65a6; paired master 1.7.87 byte match and artifact round-trip PASS.
