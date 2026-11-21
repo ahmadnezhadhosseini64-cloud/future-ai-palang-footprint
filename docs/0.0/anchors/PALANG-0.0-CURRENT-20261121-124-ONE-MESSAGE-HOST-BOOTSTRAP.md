@@ -1,6 +1,6 @@
 # CURRENT-124 — راه‌اندازی یک‌پیامی میزبان GPT و نشانگر 0++
 
-- Status: ACTIVE / LIVING / SOURCE UPDATE REGISTERED; PACKAGE VERIFICATION PENDING
+- Status: ACTIVE / LIVING / PACKAGE STATUS RESOLVED ONLY BY CURRENT latest-verified POINTER; HOST RECOVERY OPEN
 - Previous checkpoint: CURRENT-123
 - Current point: POINT-0/071 (0++ marker on canonical root point 0; not a new root)
 - Input/output: IN-114 → OUT-113
@@ -31,3 +31,8 @@
 
 ## زنجیره
 POINT-0/070 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051.
+
+
+## اصلاح کنترل ساخت
+
+Run `44871939090` ساخت ZIP و 24/24 تست را PASS کرد، اما artifact download-by-name شکست خورد و release منتشر نشد. Workflow اصلاح شد تا artifact را با ID واقعی همان upload دانلود کند. وضعیت نهایی بسته فقط از آخرین run موفق و pointer/receipt پایدار خوانده می‌شود؛ تا آن زمان این run شکست‌خورده به‌عنوان شکست تاریخی حفظ می‌شود.

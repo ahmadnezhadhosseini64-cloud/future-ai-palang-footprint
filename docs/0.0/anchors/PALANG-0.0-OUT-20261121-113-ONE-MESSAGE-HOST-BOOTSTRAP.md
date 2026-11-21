@@ -30,3 +30,10 @@
 - Stable release `haif-latest-verified` refreshed at `2026-11-21T05:38:14Z`; five assets published/read back as metadata. Workflow: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44871779034
 - وضعیت مستقل: target-host connection, persistent workspace, negative isolation tests و clean-host acceptance هنوز NOT RUN؛ package verification معادل host recovery نیست.
 - پس از ثبت این رسید، آخرین pointer و receipt پایدار همچنان مرجع نسخه تحویل است؛ هر تغییر source بعدی باید مجدداً build و verify شود.
+
+
+## شکست ثبت‌شده و اصلاح مسیر artifact — 2026-11-21
+
+- Run `44871939090` روی source SHA `46137c4d325857556f813767e3d2b071d1ddcc12`: منبع و تست‌های استخراج‌شده 24/24 PASS و ZIP build PASS؛ اما مرحلهٔ دانلود artifact با lookup نامی `actions/download-artifact@v4` شکست خورد (`Artifact not found for name`). در نتیجه artifact round-trip و انتشار release در آن run اجرا نشدند؛ این run PACKAGE_VERIFIED نیست.
+- اصلاح workflow: مرحلهٔ upload اکنون شناسهٔ واقعی artifact را از output همان step می‌گیرد و download با `artifact-ids` دقیق انجام می‌شود، نه lookup مبهم بر اساس نام.
+- پس از اصلاح، فقط run جدیدی که artifact-id round-trip، digest، master byte match، CRC، inventory و تست‌ها را PASS کند می‌تواند latest release را refresh کند.
