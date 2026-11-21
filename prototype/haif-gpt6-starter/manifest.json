@@ -2,8 +2,8 @@
   "package_schema": "haif-gpt6-starter/0.1",
   "stable_id": "HAIF-GPT6-PORTABLE-STARTER-20261025-004",
   "production_id": "HAIF-G6PS-20261025-004",
-  "version": "0.4.4",
-  "supersedes": "0.4.3",
+  "version": "0.4.5",
+  "supersedes": "0.4.4",
   "project": "Future AI / Palang Footprint",
   "canonical_repository": "https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint",
   "parent_architecture": [
@@ -166,7 +166,13 @@
     "EVT-0291",
     "TIME-BINDING-EVT-0291",
     "CURRENT-125",
-    "POINT-0/072 — FIRST_HOST / HOST-001 role and repository/workspace authority boundary"
+    "POINT-0/072 — FIRST_HOST / HOST-001 role and repository/workspace authority boundary",
+    "POINT-0/072 (0++ FIRST_HOST continuation)",
+    "IN-116",
+    "OUT-115",
+    "EVT-0292",
+    "TIME-BINDING-EVT-0292",
+    "CURRENT-126"
   ],
   "entrypoint": "engine.py",
   "host_instructions": "GPT6_HOST_INSTRUCTIONS.md",
@@ -214,7 +220,8 @@
     "single-message GPT-6 host bootstrap with official GitHub connector, latest package/master recovery, private workspace provisioning where supported, and acceptance receipt",
     "new-host anonymous public READ-ONLY access to canonical GitHub repository URL without sign-in; official connector optional while repository remains public",
     "new-host recovery reads main HEAD, living master, latest verified ZIP pointer and receipts; repository writes are out of scope",
-    "FIRST_HOST/HOST-001 constrained execution: canonical repository READ-ONLY; owner-defined provisioned workspace only; no repository writeback"
+    "FIRST_HOST/HOST-001 constrained execution: canonical repository READ-ONLY; owner-defined provisioned workspace only; no repository writeback",
+    "POINT-0++ FIRST_HOST onboarding from pasted mother text; compare with canonical main HEAD and manifest; owner-defined allowlisted workspace execution; repository READ-ONLY and no workspace writeback"
   ],
   "not_proven": [
     "native GPT plugin execution",
@@ -260,8 +267,8 @@
     "update_mode": "REBUILD_IN_PLACE_SAME_PACKAGE_IDENTITY",
     "do_not_publish_separate_version_named_zip": true,
     "historical_v0_3_0_digest_is_not_current": true,
-    "current_internal_version": "0.4.4",
-    "supersedes": "0.4.2",
+    "current_internal_version": "0.4.5",
+    "supersedes": "0.4.4",
     "latest_delivery_contract": "LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-CONTRACT.md"
   },
   "host_acceptance_checklist": "FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST.md",
@@ -289,5 +296,16 @@
   "authentication_gate": "OPEN / DEFERRED",
   "repository_access": "READ-ONLY",
   "workspace_execution": "OWNER-DEFINED / ALLOWLISTED ONLY",
-  "repository_writeback": "DENIED"
+  "repository_writeback": "DENIED",
+  "current_point": "POINT-0/072 (0++)",
+  "current_checkpoint": "CURRENT-126",
+  "first_host_workspace_mode": {
+    "host_identity": "FIRST NEW HOST / FIRST_HOST / HOST-001",
+    "authentication_gate": "OPEN / DEFERRED",
+    "repository_access": "READ-ONLY",
+    "workspace_execution": "OWNER-DEFINED / ALLOWLISTED ONLY",
+    "repository_writeback": "DENIED",
+    "technical_enforcement": "NOT VERIFIED",
+    "independent_host_acceptance": "NOT RUN"
+  }
 }
