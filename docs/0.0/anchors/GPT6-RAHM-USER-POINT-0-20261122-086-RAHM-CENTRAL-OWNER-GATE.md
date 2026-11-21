@@ -57,7 +57,7 @@
 - RAHM architecture, private-repository template, candidate manifest schema, public control-plane index and CHILD landing area created.
 - Candidate validator and unit tests added; it rejects invalid IDs, unredacted data, missing owner authorization, path traversal, symlinks, unsupported/unmanifested files, oversized payloads, SHA-256 mismatch and common secret patterns.
 - Owner-only workflow added: workflow_dispatch by the owner on main; it reads a private RAHM repo, checks privacy, validates the candidate, and creates a bot-authored PR into CHILD. It does not auto-merge or modify the living Master.
-- Direct-to-main automation paths found in the hard audit were changed to artifact-only/read-only behavior: Evidence Gate, execution controller, pending-registration drain, and portable conformance permissions. The legacy host adapter is fully disabled and fail-closed; it makes no GitHub API request or write.
+- Direct-to-main automation paths found in the hard audit were changed to artifact-only/read-only behavior: Evidence Gate, execution controller, pending-registration drain, and portable conformance retains contents:write solely for owner-controlled release publication and has no branch push. The legacy host adapter is fully disabled and fail-closed; it makes no GitHub API request or write.
 - The current Ruleset remains approval count 0 and Code Owner review OFF. This is not claimed as active enforcement.
 
 ## Open operational gates
