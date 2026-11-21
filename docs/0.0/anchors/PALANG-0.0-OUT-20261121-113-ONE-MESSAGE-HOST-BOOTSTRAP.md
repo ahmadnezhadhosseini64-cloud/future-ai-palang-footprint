@@ -49,3 +49,9 @@
 
 - Run `44872168517` روی commit `f5b4b1d0729e40df8cce31b8a8230cc0d0c3349c`، بازیابی زنجیره را به‌علت نبود پیوند مستقیم OUT-113 به POINT-0/071 رد کرد. تست‌های package در آن run به‌دلیل شکست مرحلهٔ زنجیره، build نهایی را کامل نکردند.
 - پیوند مستقیم OUT-113 → POINT-0/071 به نسخهٔ canonical OUT-113 افزوده می‌شود؛ سپس checker و package pipeline دوباره اجرا می‌شوند.
+
+
+## اصلاح event marker — run 44872286383
+
+- Run `44872286383` روی source commit `584a1cd3cecc660bfe5a5f7dd88a1e45bd89bde8`: زنجیرهٔ IN/OUT/CURRENT خوانده شد، اما checker رویداد را به‌دلیل نبود ارجاع صریح `POINT-0/071` در EVT-0289 رد کرد (`event_missing_marker_POINT-0/071`).
+- فیلد Point صریح به هر دو mirror رویداد EVT-0289 افزوده شد؛ آزمون زنجیره باید مجدداً اجرا شود. این run نیز PACKAGE_VERIFIED نیست.
