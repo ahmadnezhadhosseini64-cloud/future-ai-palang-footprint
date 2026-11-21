@@ -1055,3 +1055,14 @@ The owner requires one universal AI-host entry path and an initial runnable vers
 - Living master: [سند مرجع مادر](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 - Universal host entry: [UNIVERSAL_AI_HOST_ENTRY_FA.md](../../../prototype/haif-gpt6-starter/UNIVERSAL_AI_HOST_ENTRY_FA.md)
 - Package manifest: [manifest.json](../../../prototype/haif-gpt6-starter/manifest.json)
+
+
+## Latest continuation — POINT-0/081 (0++) / CURRENT-134
+
+- Chain: POINT-0/080 → CURRENT-133 → POINT-0/081 (0++) → IN-124 → OUT-123 → EVT-0301 → TIME-BINDING-EVT-0301 → CURRENT-134 → NEXT-051.
+- This is a continuation marker on the existing canonical POINT-0 root, not a new root or queue.
+- Deliverable: one copyable host-chat instruction in `prototype/haif-gpt6-starter/ONE_MESSAGE_HOST_BOOTSTRAP_FA.md`.
+- Public READ/clone/fetch must be attempted first without OAuth. EXECUTE, WORKSPACE, persistence/restart and WRITE remain independent capability gates.
+- Package 0.4.9's prior receipt is historical to its exact source SHA. Rebuild the same stable ZIP filename/identity after this update; do not claim the old receipt verifies new bytes.
+- Destination clean-host acceptance and restart remain OPEN / NOT RUN.
+- NEXT-051 remains the sole queue; do not create NEXT-052.
