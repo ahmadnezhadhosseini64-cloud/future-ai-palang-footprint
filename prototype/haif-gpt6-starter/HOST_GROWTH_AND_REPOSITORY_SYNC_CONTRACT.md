@@ -134,6 +134,6 @@ Implementation status at POINT-0/070: architecture and templates registered; liv
 ## Current package — 0.4.3 / POINT-0/071
 
 Internal package version: 0.4.3
-Living master target: 1.7.76
-Current chain tail: POINT-0/070 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051
+Living master target: 1.7.77
+Current chain tail: POINT-0/071 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051
 Single-message GPT host setup: `ONE_MESSAGE_HOST_BOOTSTRAP_FA.md`. A prompt cannot create missing OAuth authorization, connector capability, persistent workspace or security boundaries; target-host execution must prove these independently.
