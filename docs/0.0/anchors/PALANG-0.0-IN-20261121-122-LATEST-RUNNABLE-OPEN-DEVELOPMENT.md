@@ -27,3 +27,7 @@
 - Universal host entry: [UNIVERSAL_AI_HOST_ENTRY_FA.md](../../../prototype/universal-host/UNIVERSAL_AI_HOST_ENTRY_FA.md)
 - Canonical package manifest: [manifest.json](../../../prototype/haif-gpt6-starter/manifest.json)
 - Package recovery protocol: [INDEPENDENT_HOST_RECOVERY_PROTOCOL.md](../../../prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md)
+
+
+## Output and state links
+- [OUT-121](PALANG-0.0-OUT-20261121-121-LATEST-RUNNABLE-OPEN-DEVELOPMENT.md) → [EVT-0299](../../architecture/BEHAVIOR-TRACE/EVT-0299-LATEST-RUNNABLE-OPEN-DEVELOPMENT-2026-11-21.md) → [CURRENT-132](PALANG-0.0-CURRENT-20261121-132-LATEST-RUNNABLE-OPEN-DEVELOPMENT.md) → [NEXT-051](PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
