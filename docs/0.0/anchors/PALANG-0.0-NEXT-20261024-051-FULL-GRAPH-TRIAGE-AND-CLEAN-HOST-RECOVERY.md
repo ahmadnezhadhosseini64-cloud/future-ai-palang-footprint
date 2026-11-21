@@ -2,17 +2,17 @@
 
 - Stable ID: G6IP-RAHM-NEXT-051-20261024
 - Production ID: G6IP-RAHM-NEXT-051-20261024
-- Version: 1.0.48
+- Version: 1.0.49
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE
 - Project: Future AI / Palang Footprint — HAIF
 - Canonical queue: this file only
-- Current checkpoint: [CURRENT-125](PALANG-0.0-CURRENT-20261121-125-CURRENT-CHAT-ANCHOR.md)
-- Current point: [POINT-0/072 (0+ continuation marker on canonical root 0)](GPT6-RAHM-USER-POINT-0-20261121-072-CURRENT-CHAT-ANCHOR-0PLUS.md)
+- Current checkpoint: [CURRENT-126](PALANG-0.0-CURRENT-20261121-126-FINAL-ARCHITECTURE-AND-DELIVERY.md)
+- Current point: [POINT-0/073 (continuation marker on canonical root 0)](GPT6-RAHM-USER-POINT-0-20261121-073-FINAL-ARCHITECTURE-AND-DELIVERY.md)
 - Living mother: [سند مرجع مادر مدل اولیه](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 - Package contract: [HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md](../../../prototype/haif-gpt6-starter/HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md)
 - Canonical ZIP filename: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`
 - Stable package ID: `HAIF-GPT6-PORTABLE-STARTER-20261025-004`
-- Current package source target: internal v0.4.4 under the unchanged stable package ID and canonical ZIP filename. The new package is not VERIFIED until exact-current-main CI build, extracted tests, artifact round-trip, digest and receipt all pass.
+- Current package source target: internal v0.4.5 under the unchanged stable package ID and canonical ZIP filename. The new package is not VERIFIED until exact-current-main CI build, extracted tests, artifact round-trip, digest and receipt all pass.
 - Queue rule: do not create NEXT-052.
 
 ## Mission
@@ -925,3 +925,10 @@ Owner explicitly authorized this continuation. POINT-0/071 / CURRENT-124 and all
 - Existing mirror time binding: [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md)
 
 CURRENT-065/CURRENT-066 remains OPEN; no winner selected. Issues #20 and #21 remain OPEN. Full-state recovery, clean-host import, second-host acceptance, restart persistence, idle/background capture and graph/identity/parent/time triage remain OPEN / NOT RUN.
+
+
+## Current continuation — POINT-0/073 / CURRENT-126
+
+POINT-0/073 → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051
+
+Living mother target: 1.7.80. Preserve POINT-0/072 / CURRENT-125 as parent history. Canonical package ID and ZIP filename are unchanged; v0.4.5 requires fresh exact-head conformance and artifact receipt. Independent-host import, OAuth, durable workspace, restart persistence, live/idle capture and unresolved graph/identity/parent/time remediation remain OPEN until direct evidence is attached.
