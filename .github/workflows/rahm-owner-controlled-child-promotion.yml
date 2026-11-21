@@ -1,0 +1,107 @@
+name: RAHM to CHILD — Owner-Controlled Promotion
+
+on:
+  workflow_dispatch:
+    inputs:
+      candidate_id:
+        description: "Owner-assigned candidate ID, e.g. HAIF-CANDIDATE-YYYYMMDD-NNN"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: rahm-child-promotion-\${{ inputs.candidate_id }}
+  cancel-in-progress: false
+
+jobs:
+  prepare-child-pr:
+    if: github.actor == 'ahmadnezhadhosseini64-cloud' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - name: Require owner-managed credentials
+        env:
+          APP_CLIENT_ID: \${{ vars.PALANG_PROMOTION_APP_CLIENT_ID }}
+          APP_PRIVATE_KEY: \${{ secrets.PALANG_PROMOTION_APP_PRIVATE_KEY }}
+          RAHM_READ_TOKEN: \${{ secrets.RAHM_READ_TOKEN }}
+        run: |
+          set -euo pipefail
+          test -n "$APP_CLIENT_ID" || { echo "MISSING_REPOSITORY_VARIABLE_PALANG_PROMOTION_APP_CLIENT_ID"; exit 1; }
+          test -n "$APP_PRIVATE_KEY" || { echo "MISSING_REPOSITORY_SECRET_PALANG_PROMOTION_APP_PRIVATE_KEY"; exit 1; }
+          test -n "$RAHM_READ_TOKEN" || { echo "MISSING_REPOSITORY_SECRET_RAHM_READ_TOKEN"; exit 1; }
+
+      - name: Mint narrowly scoped owner-controlled promotion App token
+        id: app-token
+        uses: actions/create-github-app-token@v3.2.0
+        with:
+          client-id: \${{ vars.PALANG_PROMOTION_APP_CLIENT_ID }}
+          private-key: \${{ secrets.PALANG_PROMOTION_APP_PRIVATE_KEY }}
+          owner: ahmadnezhadhosseini64-cloud
+          repositories: future-ai-palang-footprint
+          permission-contents: write
+          permission-pull-requests: write
+
+      - name: Checkout canonical master with promotion App identity
+        uses: actions/checkout@v5
+        with:
+          repository: ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
+          ref: main
+          token: \${{ steps.app-token.outputs.token }}
+          fetch-depth: 0
+
+      - name: Read the owner-only private RAHM store
+        uses: actions/checkout@v5
+        with:
+          repository: ahmadnezhadhosseini64-cloud/future-ai-palang-rahm
+          ref: main
+          token: \${{ secrets.RAHM_READ_TOKEN }}
+          path: private-rahm
+          persist-credentials: false
+          fetch-depth: 1
+
+      - name: Verify RAHM repository is private
+        env:
+          GH_TOKEN: \${{ secrets.RAHM_READ_TOKEN }}
+        run: |
+          set -euo pipefail
+          private="$(gh api repos/ahmadnezhadhosseini64-cloud/future-ai-palang-rahm --jq '.private')"
+          test "$private" = "true" || { echo "RAHM_REPOSITORY_MUST_BE_PRIVATE"; exit 1; }
+
+      - name: Validate and stage owner-redacted candidate
+        env:
+          CANDIDATE_ID: \${{ inputs.candidate_id }}
+        run: |
+          set -euo pipefail
+          python3 scripts/rahm/prepare_promotion.py \
+            --source-root private-rahm \
+            --target-root . \
+            --candidate-id "$CANDIDATE_ID"
+
+      - name: Create bot-authored branch and pull request
+        env:
+          CANDIDATE_ID: \${{ inputs.candidate_id }}
+          GH_TOKEN: \${{ steps.app-token.outputs.token }}
+        run: |
+          set -euo pipefail
+          branch="rahm-child/$CANDIDATE_ID"
+          if git ls-remote --exit-code --heads origin "$branch" >/dev/null 2>&1; then
+            echo "PROMOTION_BRANCH_ALREADY_EXISTS=$branch"
+            echo "No overwrite or force-push is permitted. Inspect the existing branch/PR."
+            exit 1
+          fi
+          git config user.name "Palang Promotion Bot"
+          git config user.email "palang-promotion[bot]@users.noreply.github.com"
+          git switch -c "$branch"
+          git add "docs/architecture/CHILD-CANDIDATES/$CANDIDATE_ID"
+          git diff --cached --quiet && { echo "NO_CANDIDATE_CHANGES"; exit 1; }
+          git commit -m "Prepare owner-reviewed Child candidate $CANDIDATE_ID"
+          git push origin "$branch"
+          gh pr create \
+            --base main \
+            --head "$branch" \
+            --title "RAHM to CHILD candidate: $CANDIDATE_ID" \
+            --body "Owner-gated Child candidate. Source: owner-only private RAHM repository. Validation includes manifest, owner redaction attestation, exact SHA-256, byte limits, allowlisted file types, symlink/path traversal and secret-pattern checks. Destination: docs/architecture/CHILD-CANDIDATES/$CANDIDATE_ID/. This PR does not modify the living Master and is never auto-merged. Required next action: owner review and approval by @ahmadnezhadhosseini64-cloud. Merge only after review and all checks pass."
