@@ -52,3 +52,13 @@ host_id, host_type, model_version, adapter_version, owner_approval_ref, permissi
 - L1_READ_ONLY پیش‌فرض است؛ broker/App و private host repos هنوز عملیاتی/اثبات‌شده نیستند.
 - بازدیدکننده ناشناس مخزن عمومی قابل شناسایی فردی یا ثبت خودکار نیست.
 - هیچ Host ID یا workspace واقعی در این نقطه فعال نشده است؛ Registry تا رسید واقعی خالی می‌ماند.
+
+
+## POINT-0/086 — RAHM مرکزی و رصد میزبان‌ها
+
+- Current checkpoint: CURRENT-139; sole active queue NEXT-051.
+- RAHM is outside all host workspaces and controlled only by the owner.
+- Raw/private host exports are stored only in the owner-created private repository future-ai-palang-rahm; the public master holds only schemas, policy, workflow code and sanitized Child candidates.
+- Owner-issued Host IDs follow HAIF-HOST-YYYYMMDD-NNN. No host is registered until a real enrollment receipt is reviewed.
+- Owner commands can select one Host ID or all verified/accessible hosts. Anonymous public readers are not discoverable or enrollable.
+- No host can access RAHM, another host workspace, or write to MASTER.
