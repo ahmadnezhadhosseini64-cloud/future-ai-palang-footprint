@@ -1021,3 +1021,15 @@ Preserve this as the sole active queue. The objective is to finish repository-re
 
 
 Canonical point label: POINT-0/077 (۰++). Graph/identity/parent/time triage remains OPEN under this same queue.
+
+
+## CURRENT-132 continuation — AI VACUUM temporal and behavioral anchors (2026-11-21)
+
+- Root remains POINT-0/077 (0++); parent CURRENT-131; current checkpoint CURRENT-132.
+- Chain: IN-122 → OUT-121 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-132.
+- Two independent lifecycle anchors are defined: STOP and THINKING_START. REQUEST_RECEIVED is distinct if that is the only exposed runtime event.
+- AI_VACUUM_INTERVAL is calculated only from observed timestamps on comparable clocks; missing values remain null and conflicting clocks are not compared.
+- Permanent behavioral trace covers externally observable request/context/tool/file/code/test/validation/response events. Private chain-of-thought and secrets are excluded.
+- Schema, Python calculator and regression tests are included in the canonical starter source and conformance inventory.
+- PR #64 remains the integration path. Final CI, canonical ZIP extraction/release verification, merge and independent host recovery remain open.
+- No new queue; continue only through NEXT-051.
