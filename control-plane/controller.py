@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
-"""External execution controller for Future AI / Palang Footprint."""
+"""Read-only external execution controller; emits artifacts but never writes to GitHub."""
 import json
 import pathlib
-import subprocess
 import sys
 from datetime import datetime, timezone
 
@@ -47,15 +46,7 @@ def write_runtime_proof(state):
     out = EVIDENCE_DIR / f"RUNTIME-PROOF-{sid}.json"
     payload = {"stable_id": sid, "reference_point": "0.0", "status": "RUNTIME VERIFIED", "controller": "control-plane/controller.py", "verified_at_utc": datetime.now(timezone.utc).isoformat(), "evidence": ["GitHub Actions runner executed controller.py successfully", "controller loaded canonical state", "all required gates validated", "controller wrote this proof record from the runner"], "next_state": "CLOSED"}
     out.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    subprocess.run(["git", "config", "user.name", "palang-execution-controller"], cwd=ROOT, check=True)
-    subprocess.run(["git", "config", "user.email", "actions@users.noreply.github.com"], cwd=ROOT, check=True)
-    subprocess.run(["git", "add", str(out.relative_to(ROOT))], cwd=ROOT, check=True)
-    result = subprocess.run(["git", "commit", "-m", f"runtime proof: {sid}"], cwd=ROOT, text=True, capture_output=True)
-    if result.returncode not in (0, 1):
-        raise RuntimeError(result.stderr.strip())
-    if result.returncode == 0:
-        subprocess.run(["git", "push", "origin", "HEAD:main"], cwd=ROOT, check=True)
-    return out
+    # Evidence is local to the runner and uploaded as a workflow artifact.\n    # This controller has no GitHub write credential and never pushes to MASTER.\n    return out
 
 
 def main():
