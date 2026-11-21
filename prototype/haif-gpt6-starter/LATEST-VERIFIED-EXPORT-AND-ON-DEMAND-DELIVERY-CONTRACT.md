@@ -48,3 +48,5 @@ Current master version 1.7.74 and current checkpoint CURRENT-122 / POINT-0/069. 
 - Package source target: 0.4.4 under the unchanged stable package ID and canonical ZIP filename.
 - NEXT-051 remains the sole active queue.
 - Release is current only when its exact source SHA, receipt and archive checks match the repository revision used for the build. Host recovery remains distinct.
+
+EVT-0290 remains the earlier mirror-only event; the current user-authorized chain uses unique EVT-0291.
