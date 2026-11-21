@@ -900,10 +900,10 @@ The previous blob at this path began with the Integration Queue README title and
 
 ## POINT-0/072 — current conversation anchored and linked (2026-11-21)
 
-- New chain: [POINT-0/072](GPT6-RAHM-USER-POINT-0-20261121-072-CURRENT-CHAT-ANCHOR-0PLUS.md) → [IN-115](PALANG-0.0-IN-20261121-115-CURRENT-CHAT-ANCHOR.md) → [OUT-114](PALANG-0.0-OUT-20261121-114-CURRENT-CHAT-ANCHOR.md) → [EVT-0290](../../architecture/BEHAVIOR-TRACE/EVT-0291-SET-CURRENT-POINT-AND-LATEST-DELIVERY-2026-11-21.md) → [TIME-BINDING-EVT-0290](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0291-SET-CURRENT-POINT-AND-LATEST-DELIVERY-2026-11-21.md) → [CURRENT-125](PALANG-0.0-CURRENT-20261121-125-CURRENT-CHAT-ANCHOR.md) → this sole queue.
+- New chain: [POINT-0/072](GPT6-RAHM-USER-POINT-0-20261121-072-CURRENT-CHAT-ANCHOR-0PLUS.md) → [IN-115](PALANG-0.0-IN-20261121-115-CURRENT-CHAT-ANCHOR.md) → [OUT-114](PALANG-0.0-OUT-20261121-114-CURRENT-CHAT-ANCHOR.md) → [EVT-0291](../../architecture/BEHAVIOR-TRACE/EVT-0291-SET-CURRENT-POINT-AND-LATEST-DELIVERY-2026-11-21.md) → [TIME-BINDING-EVT-0291](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0291-SET-CURRENT-POINT-AND-LATEST-DELIVERY-2026-11-21.md) → [CURRENT-125](PALANG-0.0-CURRENT-20261121-125-CURRENT-CHAT-ANCHOR.md) → this sole queue.
 - The user explicitly authorized anchoring this conversation under canonical root POINT-0 and linking it to prior points. Historical anchors, branches and unresolved gaps remain preserved.
-- The canonical package identity and ZIP filename remain unchanged. Current master 1.7.78 must be paired with a newly built package on the exact updated main SHA; the prior 0.4.3 receipt paired with master 1.7.77 is historical only for this latest-main delivery.
-- Exact user-message time remains UNKNOWN / UNVERIFIED. Event commit timestamp is recorded separately in TIME-BINDING-EVT-0290.
+- The canonical package identity and ZIP filename remain unchanged. Current master 1.7.79 must be paired with a newly built package on the exact updated main SHA; the prior 0.4.3 receipt paired with master 1.7.77 is historical only for this latest-main delivery.
+- Exact user-message time remains UNKNOWN / UNVERIFIED. Event commit timestamp is recorded separately in TIME-BINDING-EVT-0291.
 - Host OAuth, independent import, durable workspace, restart persistence, automatic live capture and repository worker remain OPEN until directly evidenced.
 
 
