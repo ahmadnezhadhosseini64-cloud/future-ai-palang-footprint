@@ -1,5 +1,5 @@
-> **CURRENT EXECUTION SNAPSHOT — 2026-11-21 / POINT-0/077 / CURRENT-130**  
-> This is the active one-message bootstrap. Its former POINT-0/074 / CURRENT-127 snapshot is preserved verbatim at [the original historical copy](prototype/haif-gpt6-starter/ONE_MESSAGE_HOST_BOOTSTRAP_FA-ORIGINAL-POINT-074-2026-11-21.md). The active chain and required read set below are synchronized to POINT-0/077, CURRENT-130 and living mother 1.7.84. Do not use the archived snapshot as the current startup instruction.
+> **CURRENT EXECUTION SNAPSHOT — 2026-11-21 / POINT-0/078 / CURRENT-131**  
+> The model/platform-neutral startup authority is UNIVERSAL_AI_HOST_ENTRY_FA.md. This GPT-6 bootstrap remains a compatibility entry. Its previous snapshots and the original POINT-0/074 copy are preserved as history. Current package source is 0.4.6 and living mother target is 1.7.85; always re-read Reference Index and exact main HEAD rather than trusting embedded historical pointers.
 
 # ONE_MESSAGE_HOST_BOOTSTRAP_FA.md
 # سند آغاز به‌کار و اتصال میزبان جدید — نسخهٔ اولیهٔ شدنی 0.1.0
@@ -10,9 +10,9 @@
 **Canonical branch:** main  
 **Stable package ID:** HAIF-GPT6-PORTABLE-STARTER-20261025-004  
 **Canonical ZIP filename:** haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip  
-**Current source package version recorded in manifest:** 0.4.5  
-**Living mother target:** 1.7.84  
-**Current continuation:** POINT-0/076 → CURRENT-129 → POINT-0/077 (0++) → IN-120 → OUT-119 → EVT-0296 → TIME-BINDING-EVT-0296 → CURRENT-130 → NEXT-051
+**Current source package version recorded in manifest:** 0.4.6  
+**Living mother target:** 1.7.85  
+**Current continuation:** POINT-0/077 → CURRENT-130 → POINT-0/078 (0++) → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → NEXT-051
 
 ---
 

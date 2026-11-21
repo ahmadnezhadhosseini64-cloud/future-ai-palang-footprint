@@ -1,4 +1,8 @@
-# HAIF GPT-6 Portable Starter v0.4.5
+# HAIF Portable Starter v0.4.6 — Universal Host Entry
+
+Latest canonical chain: POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → NEXT-051
+
+The model/platform-neutral first-entry instruction is UNIVERSAL_AI_HOST_ENTRY_FA.md. GPT-6-specific documents below are compatibility references; the universal entry and Reference Index govern fresh hosts.
 
 This is the updated release of the existing HAIF starter package, not a separate project. It updates the existing v0.3.0 0/0+ bootstrap package at the same stable package identity and canonical ZIP filename; history and prior digests remain preserved. It does not replace the living master, historical anchors or NEXT-051.
 
