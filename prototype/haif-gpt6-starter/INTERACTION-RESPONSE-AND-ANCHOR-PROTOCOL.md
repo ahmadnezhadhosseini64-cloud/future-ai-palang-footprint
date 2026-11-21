@@ -73,3 +73,8 @@ EVT-0290 remains reserved for its earlier mirror-only record. The current owner-
 ## Current package — 0.4.5 / POINT-0/073
 
 Internal version: 0.4.5. Living master: 1.7.80. Current chain: POINT-0/073 → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051. The canonical package ID and ZIP filename remain unchanged. Package verification requires a fresh exact-head receipt and read-back. Independent-host acceptance, live capture, OAuth, durable workspace and restart persistence remain OPEN / NOT VERIFIED.
+
+
+## Current package — 0.4.5 / POINT-0/074 (0++ marker)
+
+Internal package version: 0.4.5. Living master: 1.7.81. Current chain: POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051. The 0++ marker belongs to the single canonical Point 0 root; the next target is completion of the existing 0.0 continuation. NEXT-051 remains the sole active queue. The canonical package ID and ZIP filename remain unchanged. Exact-head tests, fresh build receipt, SHA-256, ZIP CRC/inventory/read-back and paired-master byte match are required before PACKAGE_VERIFIED. Independent-host acceptance, OAuth, live capture, durable workspace and restart persistence remain OPEN / NOT VERIFIED until direct receipts exist.
