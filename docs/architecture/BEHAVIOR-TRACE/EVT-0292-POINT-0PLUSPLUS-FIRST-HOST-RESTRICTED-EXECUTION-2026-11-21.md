@@ -1,3 +1,13 @@
+# QUARANTINED_DUPLICATE_ID_NONCANONICAL — محفوظات نسخهٔ موازی
+
+- Status: QUARANTINED_DUPLICATE_ID_NONCANONICAL.
+- Reason: این فایل در جریان ثبت POINT-0++ با شناسهٔ تکراری ساخته شد. برای جلوگیری از دوگانگی، زنجیرهٔ canonical فقط از فایل‌های FIRST-HOST-WORKSPACE-EXECUTION استفاده می‌کند.
+- Canonical chain: POINT-0/072 → POINT-0/073 (0++) → IN-116 (FIRST-HOST-WORKSPACE-EXECUTION) → OUT-115 (FIRST-HOST-WORKSPACE-EXECUTION) → EVT-0292 (FIRST-HOST-WORKSPACE-EXECUTION) → TIME-BINDING-EVT-0292 (FIRST-HOST-WORKSPACE-EXECUTION) → CURRENT-126 → NEXT-051.
+- Do not use this quarantined copy as an active anchor, event, input, output or time binding.
+- Original content is preserved below for audit/history only.
+
+---
+
 # EVT-0292 — POINT-0++ / معماری محدود میزبان اول
 
 - Point: [POINT-0/073](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-073-FIRST-HOST-RESTRICTED-EXECUTION-0PLUSPLUS.md).
