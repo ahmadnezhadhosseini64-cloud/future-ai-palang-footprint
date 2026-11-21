@@ -1,6 +1,6 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.8.36",
+  "version": "1.8.37",
   "manifest_status": "Package source 0.4.5 is registered on the host-intake proposal branch. Canonical chain: POINT-0/072 → POINT-0/073 (0++ continuation, not a new root) → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051. FIRST_HOST/HOST-001: canonical repository READ-ONLY, owner-defined allowlisted workspace execution only, no repository writeback, authentication gate OPEN / DEFERRED. Parallel duplicate-ID files are explicitly quarantined and noncanonical. Exact package SHA-256 and canonical ZIP rebuild remain pending. Main integration, technical enforcement and independent-host acceptance remain NOT VERIFIED / NOT RUN.",
   "created_from_checkpoint": "HAIF-POINT-0-044-STARTER-ZIP-INPLACE-UPDATE-20261027 + HAIF-CURRENT-094",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
@@ -534,7 +534,18 @@
     "scripts/host_adapter_github_worker.py",
     "scripts/parent_edge_resolution.py",
     "tests/test_graph_identifier_roles.py",
-    "tests/test_parent_edge_resolution.py"
+    "tests/test_parent_edge_resolution.py",
+    "README.md",
+    "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-073-FIRST-HOST-RESTRICTED-EXECUTION-0PLUSPLUS.md",
+    "docs/0.0/anchors/PALANG-0.0-IN-20261121-116-FIRST-HOST-WORKSPACE-EXECUTION.md",
+    "docs/0.0/anchors/PALANG-0.0-OUT-20261121-115-FIRST-HOST-WORKSPACE-EXECUTION.md",
+    "docs/0.0/anchors/PALANG-0.0-CURRENT-20261121-126-FIRST-HOST-WORKSPACE-EXECUTION.md",
+    "docs/architecture/BEHAVIOR-TRACE/EVT-0292-FIRST-HOST-WORKSPACE-EXECUTION-2026-11-21.md",
+    "docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0292-FIRST-HOST-WORKSPACE-EXECUTION-2026-11-21.md",
+    "docs/architecture/HOST-WORKSPACES/README.md",
+    "docs/reference/REFERENCE-DOCUMENTS/FIRST-HOST-RESTRICTED-WORKSPACE-EXECUTION-AND-READ-ONLY-REPOSITORY-CONTRACT-2026-11-21-001.md",
+    "prototype/haif-gpt6-starter/GPT6_HOST_INSTRUCTIONS.md",
+    "prototype/haif-gpt6-starter/README.md"
   ],
   "live_reference_policy": "Mutable current-state and startup/governance references are included in each export and receive exact SHA-256 plus Git blob SHA-1 observations in the same CI run. This includes RAHM_BOOT and RAHM_ARCHITECTURE because their canonical checkpoint binding must track the current live chain. Stable core remains digest-pinned.",
   "pending_source_documents": [
@@ -576,7 +587,7 @@
     },
     {
       "path": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261121-126-FIRST-HOST-WORKSPACE-EXECUTION.md",
-      "git_blob_sha": "9e1ca3d7ce34842977d1df350ec1e6f20e16c069",
+      "git_blob_sha": "4d92491a812205497a873132088d25b58240c31a",
       "sha256_status": "PENDING_EXACT_BYTES_BUILD",
       "reason": "Updated for POINT-0/073 (0++) and CURRENT-126 after the previous canonical package build; include or sync and hash in the next same-identity ZIP rebuild."
     },
@@ -588,13 +599,13 @@
     },
     {
       "path": "docs/architecture/BEHAVIOR-TRACE/EVT-0292-FIRST-HOST-WORKSPACE-EXECUTION-2026-11-21.md",
-      "git_blob_sha": "aa37eca5f5144ee94331b316f657cb155072b24a",
+      "git_blob_sha": "af70766346af7c8b315cca19632776318b2033cb",
       "sha256_status": "PENDING_EXACT_BYTES_BUILD",
       "reason": "Updated for POINT-0/073 (0++) and CURRENT-126 after the previous canonical package build; include or sync and hash in the next same-identity ZIP rebuild."
     },
     {
       "path": "docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0292-FIRST-HOST-WORKSPACE-EXECUTION-2026-11-21.md",
-      "git_blob_sha": "ae928d70fd6b0123647601e117b0df1c70ae94fc",
+      "git_blob_sha": "8492cee7a7d72957b8a71a83e70279e1b04b05c2",
       "sha256_status": "PENDING_EXACT_BYTES_BUILD",
       "reason": "Updated for POINT-0/073 (0++) and CURRENT-126 after the previous canonical package build; include or sync and hash in the next same-identity ZIP rebuild."
     },
@@ -618,13 +629,13 @@
     },
     {
       "path": "docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md",
-      "git_blob_sha": "996af432e483f9bffbd05a4d493ee61956d4f20b",
+      "git_blob_sha": "707c70a74c13c7a262f415fdbfd53250c67cfe14",
       "sha256_status": "PENDING_EXACT_BYTES_BUILD",
       "reason": "Updated for POINT-0/073 (0++) and CURRENT-126 after the previous canonical package build; include or sync and hash in the next same-identity ZIP rebuild."
     },
     {
       "path": "docs/reference/REFERENCE-DOCUMENTS/FIRST-HOST-RESTRICTED-WORKSPACE-EXECUTION-AND-READ-ONLY-REPOSITORY-CONTRACT-2026-11-21-001.md",
-      "git_blob_sha": "6236c2c412b2879823b080eb2bc2f24690e725ad",
+      "git_blob_sha": "0f03db30728457da05523773b8159ee5c5120518",
       "sha256_status": "PENDING_EXACT_BYTES_BUILD",
       "reason": "Updated for POINT-0/073 (0++) and CURRENT-126 after the previous canonical package build; include or sync and hash in the next same-identity ZIP rebuild."
     },
