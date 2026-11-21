@@ -73,15 +73,12 @@ jobs:
           py_compile.compile("scripts/host_adapter.py", doraise=True)
           py_compile.compile("scripts/host_adapter_github_worker.py", doraise=True)
           worker = Path("scripts/host_adapter_github_worker.py").read_text(encoding="utf-8")
-          assert "BRANCH='host-intake'" in worker
-          assert "MASTER_REPOSITORY='ahmadnezhadhosseini64-cloud/future-ai-palang-footprint'" in worker
-          assert "if REPO == MASTER_REPOSITORY:" in worker
-          assert "Host-originated writes to master" in worker
-          assert "PALANG_GITHUB_BRANCH" in worker and "BLOCKED:" in worker
-          assert "QUARANTINED_OWNER_REVIEW_REQUIRED" in worker
+          assert "LEGACY_DIRECT_GITHUB_WORKER_DISABLED" in worker
+          assert "NO_GITHUB_WRITE_ATTEMPTED" in worker
+          assert "BLOCKED:" in worker
           print("HOST_REGISTRY_SCHEMA=PASS")
           print("NO_UNVERIFIED_ACTIVE_HOSTS=PASS")
-          print("WORKER_INTAKE_BRANCH_GUARD=PASS")
+          print("LEGACY_WORKER_FAIL_CLOSED=PASS")
           print("OWNER_ONLY_MASTER_WRITE_BLOCK=PASS")
           PY
       - name: Validate latest IN/OUT link and checkpoint equivalence (not real-host recovery)
