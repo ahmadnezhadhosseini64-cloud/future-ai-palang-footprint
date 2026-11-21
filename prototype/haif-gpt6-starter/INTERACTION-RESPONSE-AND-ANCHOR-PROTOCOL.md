@@ -68,3 +68,8 @@ Single-message GPT host setup: `ONE_MESSAGE_HOST_BOOTSTRAP_FA.md`. Package ident
 
 
 EVT-0290 remains reserved for its earlier mirror-only record. The current owner-authorized continuation is uniquely registered as EVT-0291.
+
+
+## Current package — 0.4.5 / POINT-0/073
+
+Internal version: 0.4.5. Living master: 1.7.80. Current chain: POINT-0/073 → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051. The canonical package ID and ZIP filename remain unchanged. Package verification requires a fresh exact-head receipt and read-back. Independent-host acceptance, live capture, OAuth, durable workspace and restart persistence remain OPEN / NOT VERIFIED.
