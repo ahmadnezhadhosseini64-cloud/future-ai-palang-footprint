@@ -25,7 +25,7 @@ POINT-0/084 → CURRENT-137 → POINT-0/085 → CURRENT-138 → POINT-0/086 (0++
 
 ## Architecture decision
 
-The owner has approved a permanent, owner-controlled route for new hosts. Every host works in its own isolated workspace and receives an owner-issued Host ID only after a verifiable enrollment receipt. Hosts have PUBLIC READ ONLY access to the master and no master-write, branch, PR, issue, release, workflow, settings, or bypass permissions.
+The owner has approved a permanent, owner-controlled route for new hosts. Every host works in its own isolated workspace. On the owner's explicit command, ChatGPT/the HAIF control plane checks the live registry and issues the next unique Host ID only after a verifiable enrollment receipt; a host never self-assigns an official ID. Hosts have PUBLIC READ ONLY access to the master and no master-write, branch, PR, issue, release, workflow, settings, or bypass permissions.
 
 RAHM is a central owner-only control plane, not a folder inside a host workspace. Because the master repository is public, raw/private host exports belong in a separate owner-controlled PRIVATE repository named future-ai-palang-rahm. The public master stores only policy, schema, validation code, workflow code, and sanitized Child candidates.
 
