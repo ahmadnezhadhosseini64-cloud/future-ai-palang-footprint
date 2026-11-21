@@ -298,19 +298,19 @@ jobs:
 
       - name: Download uploaded canonical ZIP artifact by exact artifact ID
         if: success()
-        env:
-          GH_TOKEN: ${{ github.token }}
-          ARTIFACT_ID: ${{ steps.starter_upload.outputs.artifact-id }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
+        uses: actions/download-artifact@v4
+        with:
+          artifact-ids: ${{ steps.starter_upload.outputs.artifact-id }}
+          path: downloaded-starter-artifact
+          merge-multiple: true
+          github-token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          run-id: ${{ github.run_id }}
+
+      - name: Confirm exact artifact ID download
+        if: success()
         run: |
           set -euo pipefail
-          mkdir -p downloaded-starter-artifact
-          curl -fsSL \
-            -H "Authorization: Bearer $GH_TOKEN" \
-            -H "Accept: application/vnd.github+json" \
-            "https://api.github.com/repos/$GITHUB_REPOSITORY/actions/artifacts/$ARTIFACT_ID/zip" \
-            -o /tmp/haif-starter-artifact.zip
-          unzip -q /tmp/haif-starter-artifact.zip -d downloaded-starter-artifact
           test -s downloaded-starter-artifact/haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip
           test -s downloaded-starter-artifact/haif-gpt6-starter-zip-receipt.json
           test -s "downloaded-starter-artifact/docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md"
