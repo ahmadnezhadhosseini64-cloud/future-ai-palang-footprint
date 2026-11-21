@@ -1,4 +1,4 @@
-# IN-115 — ورودی مالک: تثبیت نقطهٔ جاری و تحویل آخرین نسخه
+# QUARANTINED_DUPLICATE_ID_NONCANONICAL — IN-115 — ورودی مالک: تثبیت نقطهٔ جاری و تحویل آخرین نسخه
 
 - Parent: POINT-0/072؛ previous checkpoint CURRENT-124.
 - Output: [OUT-114](PALANG-0.0-OUT-20261121-114-SET-CURRENT-POINT-AND-LATEST-DELIVERY.md)
@@ -16,3 +16,7 @@
 
 ## تفسیر اجرایی
 مالک صریحاً مجوز داد همین تعامل به‌عنوان نقطهٔ تازهٔ ادامه روی ریشهٔ canonical POINT-0 ثبت شود، به تمام زنجیرهٔ موجود متصل بماند و آخرین نسخهٔ واقعاً قابل ارائه تحویل شود. این دستور مجوز ادعای ساخت یا آزمون ZIP جدید بدون رسید نیست.
+
+
+## Duplicate identifier reconciliation
+This later parallel file set reused POINT-0/072, IN-115, OUT-114 and CURRENT-125. It is preserved for forensic history but is not canonical. The earlier registered CURRENT-CHAT-ANCHOR path set is canonical; its event is uniquely EVT-0291 because EVT-0290 was already assigned to the mirror-only event.
