@@ -1,6 +1,6 @@
 # IN-116 — تکمیل معماری اجرایی میزبان اول و تثبیت نقطهٔ ۰++
 
-- Parent point: POINT-0/072 — 0++ (continuation/overlay؛ بدون ساخت ریشهٔ موازی)
+- Parent point: POINT-0/072; continuation anchor: POINT-0/073 (0++; no independent root)
 - Previous checkpoint: CURRENT-125
 - Requested outcome: تکمیل قرارداد محیط کاری میزبان اول، جداسازی مجوز مخزن از اجرای وظیفه، اتصال سند مادر/ZIP/راهنمای میزبان به قرارداد واحد.
 - Host: FIRST_HOST / HOST-001
