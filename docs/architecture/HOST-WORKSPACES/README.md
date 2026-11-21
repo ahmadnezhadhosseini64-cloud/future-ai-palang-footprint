@@ -75,3 +75,15 @@ workspace واقعی باید در sandbox/فضای خصوصی میزبان ای
 ## راه‌اندازی یک‌پیامی میزبان GPT-6 — CURRENT-124
 
 از پیام واحد فارسی ONE_MESSAGE_HOST_BOOTSTRAP_FA.md استفاده می‌شود. میزبان با اتصال رسمی GitHub، آخرین Release و سند مادر را بازیابی و بررسی می‌کند و workspace را در محیط خصوصی/پایدار خودش می‌سازد. پوشه‌بندی در مخزن اصلی مرز امنیتی نیست. میزبان READ-ONLY آغاز می‌کند و تا تأیید مالک PROPOSED می‌ماند. اگر connector یا محیط پایدار در دسترس نیست، BLOCKED / NOT SUPPORTED اعلام می‌شود. ثبت مخزنی فقط از broker مجاز و پس از read-back است.
+
+
+## POINT-0++ — محیط کاری FIRST_HOST / HOST-001
+
+- قرارداد الزام‌آور: [FIRST-HOST restricted workspace execution and read-only repository contract](../../reference/REFERENCE-DOCUMENTS/FIRST-HOST-RESTRICTED-WORKSPACE-EXECUTION-AND-READ-ONLY-REPOSITORY-CONTRACT-2026-11-21-001.md)، نسخهٔ 1.0.1.
+- زنجیره: POINT-0/072 (0++) → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051.
+- میزبان با متن سند مادر آغاز می‌کند، main HEAD و نسخهٔ canonical را می‌خواند و متن را با مخزن تطبیق می‌دهد؛ اختلاف‌ها باید صریح گزارش شوند.
+- مخزن رسمی فقط READ-ONLY است؛ workspace خصوصی و واقعی runtime فقط برای taskهای مالک‌تعریف‌شده و allowlist شده است.
+- OWNER_TASKS باید ورودی، عملیات، ابزار/مقصد، محل خروجی، معیار پذیرش و شرط توقف هر task را تعیین کند.
+- خروجی workspace به مخزن همگام نمی‌شود؛ مالک تنها مرجع و مجوزها را تغییر می‌دهد. میزبان نسخهٔ جدید مالک را فقط‌خواندنی دریافت می‌کند.
+- HOST IDENTITY: FIRST NEW HOST / FIRST_HOST / HOST-001؛ AUTHENTICATION GATE: OPEN / DEFERRED.
+- تا رسید مستقیم میزبان: NOT CONNECTED / NOT ACTIVE؛ technical enforcement NOT VERIFIED؛ independent-host acceptance NOT RUN.
