@@ -16,6 +16,7 @@ on:
       - 'prototype/haif-gpt6-starter/**'
       - 'prototype/universal-ai-host/**'
       - 'docs/architecture/UNIVERSAL-AI-HOST-CONNECTIVITY/**'
+      - 'docs/architecture/INTEGRATION-QUEUE/README.md'
       - '.github/workflows/living-architecture-audit.yml'
       - '.github/workflows/rahm-portable-conformance.yml'
   pull_request:
