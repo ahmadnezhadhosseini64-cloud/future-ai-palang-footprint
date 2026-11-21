@@ -1,7 +1,7 @@
 ## Latest owner-approved continuation — POINT-0/079 (0++) / CURRENT-132
 
 - Chain: [POINT-0/077](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-077-0PLUSPLUS-LIVE-ANCHOR.md) → [CURRENT-130](0.0/anchors/PALANG-0.0-CURRENT-20261121-130-0PLUSPLUS-LIVE-ANCHOR.md) → [POINT-0/078](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-078-UNIVERSAL-HOST-0PLUSPLUS.md) → [CURRENT-131](0.0/anchors/PALANG-0.0-CURRENT-20261121-131-UNIVERSAL-HOST-INITIAL-RUNNABLE.md) → [POINT-0/079](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-079-LATEST-RUNNABLE-OPEN-DEVELOPMENT.md) → [IN-122](0.0/anchors/PALANG-0.0-IN-20261121-122-LATEST-RUNNABLE-OPEN-DEVELOPMENT.md) → [OUT-121](0.0/anchors/PALANG-0.0-OUT-20261121-121-LATEST-RUNNABLE-OPEN-DEVELOPMENT.md) → [EVT-0299](architecture/BEHAVIOR-TRACE/EVT-0299-LATEST-RUNNABLE-OPEN-DEVELOPMENT-2026-11-21.md) → [TIME-BINDING-EVT-0299](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0299-LATEST-RUNNABLE-OPEN-DEVELOPMENT-2026-11-21.md) → [CURRENT-132](0.0/anchors/PALANG-0.0-CURRENT-20261121-132-LATEST-RUNNABLE-OPEN-DEVELOPMENT.md) → sole queue [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
-- Living mother target: 1.7.86.
+- Living mother target: 1.7.87.
 - Canonical ZIP identity and filename unchanged. Last verified internal version 0.4.6 remains valid for source 0d27972; next target 0.4.7 awaits exact-main package verification.
 - Latest Runnable contains only source-backed capabilities; old/host-dependent gaps remain OPEN and are promoted only after proof.
 - OAuth, workspace, clean-host recovery and restart remain OPEN / NOT RUN.
