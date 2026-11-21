@@ -2,8 +2,8 @@
   "package_schema": "haif-gpt6-starter/0.1",
   "stable_id": "HAIF-GPT6-PORTABLE-STARTER-20261025-004",
   "production_id": "HAIF-G6PS-20261025-004",
-  "version": "0.4.3",
-  "supersedes": "0.4.2",
+  "version": "0.4.4",
+  "supersedes": "0.4.3",
   "project": "Future AI / Palang Footprint",
   "canonical_repository": "https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint",
   "parent_architecture": [
@@ -158,7 +158,14 @@
     "EVT-0289",
     "TIME-BINDING-EVT-0289",
     "CURRENT-124",
-    "NEXT-051 (sole active queue)"
+    "NEXT-051 (sole active queue)",
+    "POINT-0/072 (current conversation continuation under canonical root 0)",
+    "IN-115",
+    "OUT-114",
+    "EVT-0290",
+    "TIME-BINDING-EVT-0290",
+    "CURRENT-125",
+    "NEXT-051 (sole active queue; current)"
   ],
   "entrypoint": "engine.py",
   "host_instructions": "GPT6_HOST_INSTRUCTIONS.md",
