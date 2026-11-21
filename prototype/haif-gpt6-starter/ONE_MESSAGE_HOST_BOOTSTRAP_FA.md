@@ -159,7 +159,7 @@ Overall: SOURCE-RECOVERED / PACKAGE-VERIFIED / HOST-RECOVERED / PARTIAL / BLOCKE
 - نشانگر جاری: POINT-0/075 روی همان ریشهٔ واحد POINT-0؛ نشانگر 0++ حفظ شده است.
 - زنجیره: POINT-0/075 → IN-118 → OUT-117 → EVT-0294 → TIME-BINDING-EVT-0294 → CURRENT-128 → NEXT-051.
 - هدف اجرایی: READ مخزن + EXECUTE در working checkout مستقل برای میزبان اول؛ WRITE شاخه‌ای فقط با مجوز واقعی.
-- سند مادر canonical هدف: نسخهٔ 1.7.82؛ تا ادغام PR، نسخهٔ main همچنان مرجع قبلی است.
+- سند مادر canonical در main: نسخهٔ 1.7.82؛ PR #57 با موفقیت ادغام و read-back شد (merge commit `e8399c76efe45188ea1574e7ddebd96286da3233`).
 - منبع بستهٔ portable: manifest نسخهٔ 0.4.5؛ این شماره به‌تنهایی رسید ساخت ZIP جاری نیست.
 - رسید ZIP exact-HEAD، انطباق کامل، بازیابی میزبان مستقل و restart/persistence فقط پس از مشاهدهٔ شواهد واقعی قابل PASS هستند.
 - آخرین زمان پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان Git commit این سند، زمان ثبت مخزن است و جایگزین زمان پیام نمی‌شود.
