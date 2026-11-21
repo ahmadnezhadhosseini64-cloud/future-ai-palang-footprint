@@ -16,7 +16,7 @@
 ## Latest canonical continuation — POINT-0/079 (0++) / CURRENT-132
 
 - Chain: POINT-0/078 → CURRENT-131 → POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051.
-- Living master: 1.7.87. Portable package 0.4.7 is verified on exact main by workflow 44920781712; 19 files, 24/24 tests and artifact round-trip PASS. Next paired package target: 0.4.8.
+- Living master: 1.7.87. Portable package 0.4.8 is verified on exact main by workflow 44921364797; 19 files, 257102 bytes, 24/24 tests, paired master 1.7.87 and artifact round-trip PASS; SHA-256 1e1bbab0c7acb0975b77176abc5c38f7e7097cfe8cf67b17153ffe1db4da65a6. Previous 0.4.7 receipt remains preserved.
 - Latest Runnable / Development / Historical are separate lanes. Legacy dependencies are triaged by affected consumer; independent proven capabilities may be packaged.
 - 0.0.1–0.0.9 remain the sole execution steps. NEXT-051 is the only active queue; no parallel NEXT is created.
 
