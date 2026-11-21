@@ -213,3 +213,20 @@ python host_receipt.py --help
 ```
 
 The package-level test suite verifies local runtime and receipt behavior. It does not prove that an external AI host has authorized GitHub, created a workspace, or passed a restart test.
+
+
+## AI Vacuum Point — temporal and behavioral anchors
+
+The portable package now includes:
+- `AI-VACUUM-TEMPORAL-AND-BEHAVIORAL-ANCHOR-CONTRACT`: defines the two boundaries, STOP and THINKING_START.
+- `ai-vacuum-interval.schema.json`: secret-free, machine-readable interval and event receipt.
+- `ai_vacuum.py`: calculates elapsed milliseconds only from observed timestamps on the same clock source; missing or conflicting anchors remain unmeasurable.
+- `test_ai_vacuum.py`: tests measurable, missing, negative, cross-clock and private-reasoning cases.
+
+The AI Vacuum label does not imply that the model is idle or disclose hidden reasoning. Hosts report only externally observable lifecycle events and evidence. When runtime timestamps are unavailable, preserve null and mark UNAVAILABLE; never infer or fabricate them.
+
+Run all package tests after extraction:
+
+```bash
+python -m unittest discover -s . -p 'test_*.py' -v
+```
