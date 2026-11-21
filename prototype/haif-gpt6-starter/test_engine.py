@@ -215,7 +215,7 @@ class PortablePackageProtocolTests(unittest.TestCase):
         self.assertLess(chain.index("EVT-0293"), chain.index("CURRENT-127"))
         self.assertEqual(chain.count("NEXT-051"), 1, "only one canonical active NEXT-051 pointer is allowed")
         self.assertGreaterEqual(chain.count("NEXT-051 (historical queue reference)"), 1)
-        expected_current = ["IN-105", "OUT-104", "EVT-0280", "CURRENT-116", "IN-106", "OUT-105", "EVT-0281", "TIME-BINDING-EVT-0281", "CURRENT-117", "POINT-0/066 (0+ — interactive evolution)", "IN-107", "OUT-106", "EVT-0282", "TIME-BINDING-EVT-0282", "CURRENT-118", "POINT-0/067 (0+ continuation marker)", "CURRENT-120", "POINT-0/068", "CURRENT-121", "POINT-0/069 (0+ permanent interaction ledger)", "IN-112", "OUT-111", "EVT-0287", "TIME-BINDING-EVT-0287", "CURRENT-122", "POINT-0/071 (0++ marker on canonical root 0)", "IN-114", "OUT-113", "EVT-0289", "TIME-BINDING-EVT-0289", "CURRENT-124", "POINT-0/072 (current conversation continuation under canonical root 0)", "IN-115", "OUT-114", "EVT-0291", "TIME-BINDING-EVT-0291", "CURRENT-125", "POINT-0/073", "IN-116", "OUT-115", "EVT-0292", "TIME-BINDING-EVT-0292", "CURRENT-126", "POINT-0/074 (0++ marker on canonical root 0)", "IN-117", "OUT-116", "EVT-0293", "TIME-BINDING-EVT-0293", "CURRENT-127", "POINT-0/077 (0++ — CURRENT-130 continuation)", "IN-121", "OUT-120", "EVT-0297", "TIME-BINDING-EVT-0297", "CURRENT-131"]
+        expected_current = ["IN-105", "OUT-104", "EVT-0280", "CURRENT-116", "IN-106", "OUT-105", "EVT-0281", "TIME-BINDING-EVT-0281", "CURRENT-117", "POINT-0/066 (0+ — interactive evolution)", "IN-107", "OUT-106", "EVT-0282", "TIME-BINDING-EVT-0282", "CURRENT-118", "POINT-0/067 (0+ continuation marker)", "CURRENT-120", "POINT-0/068", "CURRENT-121", "POINT-0/069 (0+ permanent interaction ledger)", "IN-112", "OUT-111", "EVT-0287", "TIME-BINDING-EVT-0287", "CURRENT-122", "POINT-0/071 (0++ marker on canonical root 0)", "IN-114", "OUT-113", "EVT-0289", "TIME-BINDING-EVT-0289", "CURRENT-124", "POINT-0/072 (current conversation continuation under canonical root 0)", "IN-115", "OUT-114", "EVT-0291", "TIME-BINDING-EVT-0291", "CURRENT-125", "POINT-0/073", "IN-116", "OUT-115", "EVT-0292", "TIME-BINDING-EVT-0292", "CURRENT-126", "POINT-0/074 (0++ marker on canonical root 0)", "IN-117", "OUT-116", "EVT-0293", "TIME-BINDING-EVT-0293", "CURRENT-127", "POINT-0/077 (0++ — CURRENT-130 continuation)", "IN-121", "OUT-120", "EVT-0297", "TIME-BINDING-EVT-0297", "CURRENT-131", "IN-122", "OUT-121", "EVT-0298", "TIME-BINDING-EVT-0298", "CURRENT-132"]
         for identifier in expected_current:
             self.assertIn(identifier, chain)
         self.assertIn("LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-CONTRACT.md", chain)
@@ -326,7 +326,7 @@ class InteractionResponseAnchorProtocolTests(unittest.TestCase):
         self.assertEqual(manifest["archive_policy"]["canonical_filename"], "haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip")
         self.assertIn("actual host integration", protocol.casefold())
         self.assertIn("NOT VERIFIED", protocol)
-        expected_chain = "POINT-0/077 (0++) → CURRENT-130 → IN-121 → OUT-120 → EVT-0297 → TIME-BINDING-EVT-0297 → CURRENT-131 → NEXT-051"
+        expected_chain = "POINT-0/077 (0++) → CURRENT-130 → IN-121 → OUT-120 → EVT-0297 → TIME-BINDING-EVT-0297 → CURRENT-131 → IN-122 → OUT-121 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-132 → NEXT-051"
         for filename in (
             "GPT6_HOST_INSTRUCTIONS.md",
             "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md",
