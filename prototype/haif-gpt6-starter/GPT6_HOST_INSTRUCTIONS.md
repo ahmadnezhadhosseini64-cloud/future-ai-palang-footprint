@@ -229,7 +229,7 @@ Before doing any work, read the controlling contract: `docs/reference/REFERENCE-
 
 ## POINT-0++ continuation — current FIRST_HOST onboarding
 
-Canonical chain: POINT-0/072 (0++) → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051. Do not create a competing root or queue.
+Canonical chain: POINT-0/072 → POINT-0/073 (0++) → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051. Do not create a competing root or queue.
 
 When the owner supplies the mother reference as text, extract the canonical repository URL and stable document ID, read public main HEAD and current manifest, retrieve the repository mother, and compare the supplied text with the live revision. Report exact mismatches; never silently overwrite either source. Pin the local snapshot to the verified commit SHA and digest.
 
