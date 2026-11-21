@@ -46,4 +46,7 @@ POINT-0/082 → CURRENT-135 → POINT-0/083 (0++) → IN-126 → OUT-125 → EVT
 
 ## شرط ارتقا
 
-این checkpoint در PR #85 به main ادغام شد؛ فایل‌های مرجع باید از main دوباره خوانده و با محتوای شاخه تطبیق داده شوند. هیچ میزبان تا دریافت رسید مستقیم و تأیید مالک در Registry به‌عنوان ACTIVE ثبت نمی‌شود.
+PR #85 در main ادغام شد و read-back نهایی انجام شد: هر ۱۰ فایل جدید/تغییریافته از main دوباره خوانده شدند و SHA blob هر ۱۰ فایل با نسخهٔ شاخهٔ ادغام‌شده دقیقاً برابر بود. HEAD بررسی‌شدهٔ main: a489a5cd56c226299b408ebbb4b603bb54108f77 (UTC 2026-11-21T19:27:18Z). هیچ میزبان تا دریافت رسید مستقیم و تأیید مالک در Registry به‌عنوان ACTIVE ثبت نمی‌شود.
+
+
+- Final main read-back: 10/10 changed files SHA-matched against the merged branch at main HEAD a489a5cd56c226299b408ebbb4b603bb54108f77.
