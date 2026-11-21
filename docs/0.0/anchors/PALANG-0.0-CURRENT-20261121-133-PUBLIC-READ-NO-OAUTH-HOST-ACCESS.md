@@ -29,3 +29,12 @@ READ/clone/fetch عمومی مخزن Public بدون OAuth انجام‌پذیر
 - HOST-RECOVERED: NOT CLAIMED.
 
 This continuation is a child of the canonical POINT-0 root. It does not create a parallel project or queue.
+
+
+## Package and runnable status
+
+- Latest verified portable package at parent continuation: internal 0.4.8; stable package ID and canonical ZIP filename unchanged; 19 files; 257102 bytes; 24/24 extracted tests PASS; CRC/source-byte match/exact artifact-ID download/paired master 1.7.87 byte match/artifact round-trip/durable release PASS.
+- Inner ZIP SHA-256: 1e1bbab0c7acb0975b77176abc5c38f7e7097cfe8cf67b17153ffe1db4da65a6; workflow 44921364797; exact source/main SHA 680a1f788a50e38da4b71768f8291dde0eeeaa31.
+- Previous 0.4.7 and earlier receipts remain preserved. The next paired package target is 0.4.9 with living master 1.7.88; it must pass exact-main build, extraction, tests, digest and artifact round-trip.
+- Latest Runnable / Development / Historical remain distinct. The public READ-first decision is runnable at the specification level; destination execution, persistent workspace, clean-host import, restart and authenticated write-back remain OPEN / NOT RUN.
+- The 0.0 execution sequence remains 0.0.1–0.0.9 under the sole queue NEXT-051.
