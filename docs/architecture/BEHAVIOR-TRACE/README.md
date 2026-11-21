@@ -1413,3 +1413,10 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - [EVT-0289](./EVT-0289-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP-2026-11-21.md) / [TIME-BINDING-EVT-0289](./TIME-BINDING-EVT-0289-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP-2026-11-21.md).
 - Chain: POINT-0/071 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051.
 - Bootstrap prompt in portable source; package target 0.4.2. External host connection, workspace persistence, broker and clean-host recovery remain OPEN / NOT RUN.
+
+
+## EVT-0291 — Read-only GitHub connection for a new host — 2026-11-21
+
+- [POINT-0/072](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-072-OWNER-CONFIRMATION-GITHUB-AUTH-0PLUS.md) → [IN-115](../../0.0/anchors/PALANG-0.0-IN-20261121-115-OWNER-CONFIRMATION-GITHUB-AUTH.md) → [OUT-114](../../0.0/anchors/PALANG-0.0-OUT-20261121-114-OWNER-CONFIRMATION-GITHUB-AUTH.md) → [EVT-0291](./EVT-0291-OWNER-CONFIRMATION-GITHUB-AUTH-2026-11-21.md) → [TIME-BINDING-EVT-0291](./TIME-BINDING-EVT-0291-OWNER-CONFIRMATION-GITHUB-AUTH-2026-11-21.md) → [CURRENT-125](../../0.0/anchors/PALANG-0.0-CURRENT-20261121-125-OWNER-CONFIRMATION-GITHUB-AUTH.md) → sole [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Scope: official GitHub connector onboarding and READ-ONLY repository recovery. Password/owner phrase gate and write access remain OPEN / DEFERRED.
+- Preserve EVT-0241 and TIME-BINDING-EVT-0241 historical mirror references; independent-host acceptance remains NOT RUN.
