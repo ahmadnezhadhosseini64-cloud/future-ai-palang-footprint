@@ -1,6 +1,6 @@
 # CURRENT-137 — مخزن مادر فقط‌مالک و مخزن خصوصی مستقل هر میزبان
 
-- Status: ACTIVE / LIVING / OWNER-DIRECTED / DESIGN-REGISTERED ON PROPOSAL BRANCH
+- Status: ACTIVE / LIVING / OWNER-DIRECTED / DESIGN-REGISTERED / MERGED TO MAIN / READ-BACK VERIFIED
 - Parent checkpoint: CURRENT-136
 - Current point: POINT-0/084 (0++)
 - Input/output: IN-127 → OUT-126
@@ -26,7 +26,7 @@
 - Host Registry: no live host verified.
 - Unknown anonymous public readers: cannot be individually identified from ordinary public READ/clone; no automatic enrollment.
 - Negative cross-host tests, revoke and restore: NOT RUN.
-- One-message host enrollment instruction: revised on proposal branch; merge pending.
+- One-message host enrollment instruction: revised and merged through PR #88; 16/16 changed files fetched from main and matched the merged branch by blob SHA.
 - Host acceptance: OPEN / NOT RUN.
 
 ## Chain
@@ -40,6 +40,6 @@ POINT-0/083 → CURRENT-136 → POINT-0/084 (0++) → IN-127 → OUT-126 → EVT
 - Tehran: 2026-11-21T23:25:28+03:30
 - Owner message time: UNKNOWN / UNVERIFIED.
 
-## Security gate
+## Merge and read-back receipt\n\n- PR #88: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/pull/88\n- Merge commit: 446b3c7fe7bef616826ee609f5dc58cc23a1bd00\n- Merge UTC: 2026-11-21T19:57:32Z; Tehran: 2026-11-21T23:27:32+03:30\n- All 16 changed/new files were fetched from main and compared with the merged branch: 16/16 blob SHA matches.\n\n## Security gate
 
 This checkpoint registers the architecture and onboarding rule, not live enforcement. It must not be marked SECURITY_VERIFIED until GitHub settings/access audit, per-host private repository, scoped App/broker, negative isolation, revoke, export and restore tests pass with direct evidence. NEXT-051 remains the only active queue.
