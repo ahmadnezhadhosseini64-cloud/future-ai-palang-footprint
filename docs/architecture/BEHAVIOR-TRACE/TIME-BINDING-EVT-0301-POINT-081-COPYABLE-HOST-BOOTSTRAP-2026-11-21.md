@@ -4,9 +4,9 @@
 - Project date: 2026-11-21
 - Project timezone: Asia/Tehran (+03:30)
 - Exact owner-message timestamp: UNKNOWN / UNVERIFIED
-- Registration commit SHA: PENDING_AT_INITIAL_WRITE
-- Registration commit UTC: PENDING_AT_INITIAL_WRITE
-- Tehran equivalent: PENDING_AT_INITIAL_WRITE
+- Registration commit SHA: 64143908de625b4f88048841852e055b21dbd4d9
+- Registration commit UTC: 2026-11-21T17:34:15Z
+- Tehran equivalent: 2026-11-21T21:04:15+03:30
 - Destination host acceptance timestamp: UNKNOWN / OPEN until direct receipt.
 
 ## Rule
