@@ -1076,3 +1076,14 @@ The owner requires one universal AI-host entry path and an initial runnable vers
 - Package 0.4.9's prior receipt is historical to its exact source SHA. Rebuild the same stable ZIP filename/identity after this update; do not claim the old receipt verifies new bytes.
 - Destination clean-host acceptance and restart remain OPEN / NOT RUN.
 - NEXT-051 remains the sole queue; do not create NEXT-052.
+
+
+## Owner approval and master-isolation gate — POINT-0/085
+
+- Preserve the owner-only master / one-private-repository-per-host design from POINT-0/084.
+- Keep all host master permissions at PUBLIC READ ONLY; no host collaborator, PAT, deploy key, App write scope, branch, PR, issue, release, workflow or settings access.
+- Treat all host outputs as proposals. Require owner export, quarantine, provenance/hash/test review and explicit owner approval before any owner-controlled promotion to MASTER.
+- Configure Ruleset 27814009: one required approval, stale approvals dismissed on new commits, Code Owner review and review-thread resolution. CODEOWNERS assigns all paths to @ahmadnezhadhosseini64-cloud.
+- Important GitHub constraint: PR author cannot approve own PR. Owner-authored PRs need an owner-only, PR-scoped bypass or a trusted owner-controlled promotion bot; never grant bypass or master write to hosts.
+- Live configuration currently has approval count 0 and Code Owner review false. Do not mark this gate VERIFIED until UI save and API read-back confirm final values.
+- Keep this work under NEXT-051; do not create NEXT-052 or another queue.

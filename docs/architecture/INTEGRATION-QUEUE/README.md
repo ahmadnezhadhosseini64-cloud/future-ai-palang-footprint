@@ -2860,3 +2860,14 @@ Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-11
 - POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051.
 - EVT-0290 remains the earlier mirror-only event; the duplicate current-chat EVT-0290 record is quarantined.
 - Living mother 1.7.79; package source 0.4.4 remains unverified after failed exact-head RAHM/Audit. External host acceptance and restart persistence remain OPEN / NOT RUN.
+
+
+## Latest owner-directed continuation — POINT-0/085 (0++) / CURRENT-138 — 2026-11-22
+
+- Chain: POINT-0/084 → CURRENT-137 → POINT-0/085 → IN-128 → OUT-127 → EVT-0305 → TIME-BINDING-EVT-0305 → CURRENT-138 → sole active NEXT-051.
+- Decision: preserve owner-only master and per-host isolated private workspaces; add an explicit owner approval gate before any proposal is promoted to MASTER.
+- Hosts remain PUBLIC READ ONLY on the public master source; no host credential or permission for master writes, branches, PRs, issues, releases, workflows or settings.
+- Host output is an untrusted proposal until owner export/read-back, quarantine, provenance/hash/test review and explicit approval.
+- Proposed main review policy: one owner approval for non-owner/automation-authored PRs, CODEOWNERS owner review, stale approval dismissal and conversation resolution. GitHub does not allow PR authors to approve their own PR; owner-authored PRs need an owner-only PR-scoped bypass or owner-controlled promotion bot, never a host bypass.
+- Live Ruleset 27814009 is active and protects main against deletion, force-push and direct non-PR updates; live approval count remains 0 and Code Owner review remains false. Approval configuration is NOT YET ENFORCED.
+- This is a continuation on canonical POINT-0, not a new root or queue. NEXT-051 remains the only active queue.
