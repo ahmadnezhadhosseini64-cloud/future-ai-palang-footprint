@@ -5,8 +5,21 @@
 مخزن رسمی و یگانه:
 https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
 
+## 0) اتصال ساده و خواندنی به GitHub
+
+مخزن رسمی و یگانه:
+https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
+
+- پیش از هر ادعای اتصال، بررسی کن آیا GitHub connector رسمی در همین محیط میزبان در دسترس و متصل است.
+- اگر متصل نیست، کاربر را به رابط رسمی اتصال GitHub در محصول میزبان هدایت کن تا خودش حساب را از همان مسیر مجاز کند؛ از کاربر نخواه رمز، PAT یا Secret را در پیام چت بنویسد.
+- پس از اتصال، فقط دسترسی READ-ONLY به مخزن دقیق بالا را بررسی کن و main HEAD را بخوان.
+- اگر connector در دسترس نیست، وضعیت GITHUB_CONNECTOR_NOT_AVAILABLE؛ اگر مجوز مخزن نیست، REPOSITORY_ACCESS_NOT_VERIFIED را اعلام کن. اتصال را جعل نکن.
+- این مرحله فقط اتصال خواندنی و بازیابی است. هیچ عملیات نوشتن، حذف، push، merge یا release انجام نده.
+- عبارت «احمد نژادحسینی»، password/owner-confirmation gate و روش تکمیلی احراز مالک عمداً برای مرحلهٔ بعد OPEN / DEFERRED هستند؛ در این مرحله آن عبارت را درخواست نکن.
+- قرارداد: [OWNER-CONFIRMATION-AND-GITHUB-AUTHORIZATION-CONTRACT.md](OWNER-CONFIRMATION-AND-GITHUB-AUTHORIZATION-CONTRACT.md).
+
 ## 1) اتصال رسمی
-از GitHub connector رسمی موجود در محیط استفاده کن. ابتدا دسترسی READ-ONLY را بررسی کن. اگر متصل نیست، از مالک بخواه فقط همین مخزن را از رابط رسمی محصول مجاز کند و پس از مجوز بدون درخواست توضیح دوباره ادامه بده. رمز، Personal Access Token یا Secret را هرگز در چت درخواست یا ذخیره نکن. اگر connector در محیط موجود نیست، BLOCKED: GITHUB_CONNECTOR_NOT_AVAILABLE اعلام کن؛ اتصال را جعل نکن.
+از GitHub connector رسمی موجود در محیط استفاده کن. اگر اتصال حساب نیاز است، کاربر را به رابط رسمی محصول هدایت کن و پس از تأیید اتصال، خواندن مخزن را ادامه بده. اگر connector در محیط موجود نیست، GITHUB_CONNECTOR_NOT_AVAILABLE اعلام کن؛ اتصال را جعل نکن. هرگز credential را در چت درخواست یا ذخیره نکن.
 
 ## 2) بازیابی آخرین نسخه
 - HEAD واقعی شاخه main و SHA دقیق آن را بخوان.
@@ -44,7 +57,7 @@ Snapshot سند مادر و ZIP باید READ-ONLY و به commit و digest دق
 - نقطه صفر تنها ریشهٔ canonical است.
 - 0+ و 0++ فقط نشانگر برجسته‌سازی/تولید/آمادگی روی همان ریشه‌اند؛ نقطه یا ریشه مستقل نیستند.
 - 0.0 ادامهٔ والددار همان ریشه است.
-- زنجیرهٔ فعلی را از آخرین اسناد IN/OUT/EVT/TIME-BINDING/CURRENT بخوان؛ زنجیرهٔ جاری این بسته POINT-0/071 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051 است.
+- زنجیرهٔ فعلی را از آخرین اسناد IN/OUT/EVT/TIME-BINDING/CURRENT بخوان؛ زنجیرهٔ جاری این بسته POINT-0/071 → POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051 است.
 - NEXT-051 صف اجرایی یگانه است؛ صف موازی نساز.
 - سند مادر و راهنماهای داخل ZIP را بخوان و وضعیت گیت‌های باز را حفظ کن.
 

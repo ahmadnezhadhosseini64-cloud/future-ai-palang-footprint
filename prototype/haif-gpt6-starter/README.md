@@ -1,4 +1,4 @@
-# HAIF GPT-6 Portable Starter v0.4.3
+# HAIF GPT-6 Portable Starter v0.4.4
 
 This is the updated release of the existing HAIF starter package, not a separate project. It updates the existing v0.3.0 0/0+ bootstrap package at the same stable package identity and canonical ZIP filename; history and prior digests remain preserved. It does not replace the living master, historical anchors or NEXT-051.
 
@@ -15,7 +15,7 @@ This is the updated release of the existing HAIF starter package, not a separate
 - Host-growth/repository-sync contract included; defines behavior evidence, authorized repo return, RAHM validation and controlled Master/Child promotion.
 - Interaction response/anchor protocol included; requires visible acknowledgment/status, failure disclosure, paired input/output anchors and explicit non-verified gates.
 - Latest verified export and on-demand delivery contract included; requires exact-current-main package receipts and paired living-master delivery.
-- Current continuation reference: POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → POINT-0/069 → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122 → NEXT-051. Preserve all earlier roots, the certificate child branch, the unresolved CURRENT-065/CURRENT-066 lineage and all open gates; older 0+ markers remain historical. The canonical living mother reference is included in the built ZIP as `LIVING_MASTER_REFERENCE.md`; the Persian external-host test is included as `INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md`. Transfer the ZIP with its included master snapshot and use the prompt on a genuinely independent host.
+- Current continuation reference: POINT-0/071 → POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051. POINT-0/072 is a 0++ continuation marker on the canonical root. This owner-auth update is still a proposal until PR merge and verified ZIP rebuild. Preserve all earlier roots, the certificate child branch, the unresolved CURRENT-065/CURRENT-066 lineage and all open gates; older 0+ markers remain historical. The canonical living mother reference is included in the built ZIP as `LIVING_MASTER_REFERENCE.md`; the Persian external-host test is included as `INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md`. Transfer the ZIP with its included master snapshot and use the prompt on a genuinely independent host.
 
 ## Bootstrap
 ~~~bash
@@ -39,7 +39,7 @@ python3 -m unittest -v
 The engine refuses to overwrite existing state/import targets. Original user-message time remains null unless supplied by a verified integration. Repository commit time is separate UTC evidence; Tehran time is derived from the same instant.
 
 ## Bring it into GPT-6
-1. Read GPT6_HOST_INSTRUCTIONS.md, INDEPENDENT_HOST_RECOVERY_PROTOCOL.md, HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md and LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-CONTRACT.md.
+1. Read GPT6_HOST_INSTRUCTIONS.md, OWNER-CONFIRMATION-AND-GITHUB-AUTHORIZATION-CONTRACT.md, INDEPENDENT_HOST_RECOVERY_PROTOCOL.md, HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md and LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-CONTRACT.md.
 2. Upload the canonical living master reference from docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md together with this ZIP. The mother is the architecture authority; the ZIP is the portable starter/runtime package.
 2. Upload the manifest, instructions, recovery protocol and latest living master / CURRENT checkpoint / NEXT-051 where supported.
 3. Verify portable bundle digest before reuse.
@@ -170,3 +170,10 @@ Use ONE_MESSAGE_HOST_BOOTSTRAP_FA.md as the one initial message for a fresh GPT-
 ## Canonical one-message host handoff — package 0.4.3
 
 ONE_MESSAGE_HOST_BOOTSTRAP_FA.md is the only startup message in the canonical ZIP. The older SINGLE_MESSAGE_GPT6_HOST_BOOTSTRAP_FA.md is superseded and excluded from the ZIP inventory. The same stable package ID and canonical archive filename are retained.
+
+
+## Easy read-only GitHub connection for a new host (v0.4.4)
+
+Use the official GitHub connector already available in the destination host. If it is not connected, guide the owner to the host product's official GitHub connection/authorization UI; never request passwords, PATs or secrets in chat. Verify READ-ONLY access to ahmadnezhadhosseini64-cloud/future-ai-palang-footprint, then recover the actual main HEAD, living master, latest verified package pointer, ZIP and receipts.
+
+This phase does not permit repository writes. The phrase «احمد نژادحسینی», password/owner-confirmation gate and expanded authentication flow are OPEN / DEFERRED for a later phase. The existence of these instructions does not prove that a target host has a connector or permission. A real independent-host receipt is still required.

@@ -110,3 +110,13 @@ This project has its own living execution record, legal gates, job-search stages
 پیام واحد آماده ارسال: [ONE_MESSAGE_HOST_BOOTSTRAP_FA.md](prototype/haif-gpt6-starter/ONE_MESSAGE_HOST_BOOTSTRAP_FA.md). این پیام اتصال خواندنی فقط به مخزن رسمی، بازیابی آخرین سند مادر و ZIP، آزمون بسته و ایجاد workspace خصوصی همان میزبان را orchestrate می‌کند. مجوز GitHub و قابلیت runtime باید در مقصد واقعاً تأیید شوند؛ پیام به‌تنهایی مجوز یا sandbox ایجاد نمی‌کند. 0++ نشانگر روی همان ریشه canonical صفر است، نه ریشه مستقل.
 
 زنجیره: POINT-0/070 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051.
+
+
+## POINT-0/072 — اتصال آسان و خواندنی میزبان جدید به GitHub (پیشنهاد)
+
+- زنجیره: POINT-0/071 → POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051.
+- قرارداد: [اتصال خواندنی میزبان جدید](prototype/haif-gpt6-starter/OWNER-CONFIRMATION-AND-GITHUB-AUTHORIZATION-CONTRACT.md).
+- هدف فعلی: میزبان جدید با GitHub connector رسمی همان محیط، دسترسی READ-ONLY به مخزن canonical را برقرار کند؛ اگر متصل نیست، کاربر را به رابط رسمی اتصال/مجوزدهی هدایت کند.
+- پس از اتصال، main HEAD، سند مادر، آخرین ZIP و receipt بازیابی و تطبیق شوند. هیچ رمز، PAT یا Secret در چت درخواست نشود.
+- نوشتن مخزن در این فاز خارج از دامنه است. عبارت «احمد نژادحسینی»، password/owner-confirmation gate و احراز هویت تکمیلی برای فاز بعد OPEN / DEFERRED می‌مانند.
+- پیشنهاد در شاخه host-intake-owner-confirmation-github-auth-20261121 است؛ main هنوز تغییر نکرده، ZIP canonical هنوز بازسازی/تأیید نشده و آزمون میزبان مستقل NOT RUN است. NEXT-051 تنها صف فعال باقی می‌ماند.
