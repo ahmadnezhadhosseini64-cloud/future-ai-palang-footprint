@@ -1,3 +1,5 @@
+> QUARANTINED_DUPLICATE_ID_NONCANONICAL — این فایل یک خروجی موازی با شناسه OUT-113 است. مرجع canonical: [OUT-113](PALANG-0.0-OUT-20261121-113-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP.md). رسیدهای مفید این نسخه به خروجی canonical منتقل می‌شوند.
+
 # OUT-113 — قرارداد و پیام واحد راه‌اندازی میزبان GPT
 
 - Parent: IN-114
