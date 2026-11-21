@@ -4,7 +4,7 @@
 - Package stable ID: HAIF-GPT6-PORTABLE-STARTER-20261025-004
 - Canonical ZIP filename: haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip
 - Current project checkpoint: CURRENT-132 (POINT-0/079 under canonical root 0)
-- Latest package target: internal 0.4.7; stable package ID and canonical ZIP filename unchanged. Do not mark 0.4.7 VERIFIED until exact-main build and receipt pass.
+- Latest package target: internal 0.4.8; stable package ID and canonical ZIP filename unchanged. Do not mark 0.4.7 VERIFIED until exact-main build and receipt pass.
 - Current chain: POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051
 - Sole active queue: NEXT-051
 

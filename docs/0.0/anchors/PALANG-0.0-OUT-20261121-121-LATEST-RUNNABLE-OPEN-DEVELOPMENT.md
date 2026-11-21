@@ -28,6 +28,10 @@
 - 0.0.9 — Reconcile: بازخوانی سند مادر، Reference Index، 0.0 index، Behavior Trace و NEXT-051؛ PASS با تطبیق پیوندها.
 
 ## وضعیت بسته در زمان ثبت
+
+در ادامه، بستهٔ 0.4.7 روی main با workflow 44920781712 تأیید شد: 19 فایل، 256684 بایت، 24/24 آزمون، CRC و source-byte match و artifact round-trip موفق؛ SHA-256 برابر a8a34580722573aaef247acbf9d7edf1d97a80025c49d510f07a1479da4f0a05. جفت‌سازی با سند مادر 1.7.86 بایت‌به‌بایت PASS شد. وابستگی قدیمی مرحلهٔ دانلود artifact با PR #73 و action رسمی download-artifact اصلاح شد؛ شکست قبلی حفظ شده است. بستهٔ بعدی 0.4.8 با سند مادر 1.7.87 هدف‌گذاری شده است.
+
+## وضعیت بسته در زمان ثبت
 بستهٔ canonical داخلی 0.4.6، 19 فایل و 24/24 آزمون استخراج‌شده PASS دارد؛ SHA-256 فایل ZIP داخلی: b9f56a360351d5ab16f07656018e576c2398a110db540138810e01358f8934fc. این receipt به source commit مشخص خود تعلق دارد و با سه commit بعدیِ مستندات/رسید فقط در صورت اثبات هم‌ارزی منبع قابل استفاده است. این نتیجه آزمون بسته است، نه پذیرش میزبان مستقل.
 
 OAuth مقصد، workspace پایدار، clean-host recovery، restart و HOST-RECOVERED: OPEN / NOT RUN.

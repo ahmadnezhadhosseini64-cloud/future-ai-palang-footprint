@@ -1,7 +1,7 @@
 # Permanent Interaction Ledger — HAIF / RAHM
 
-- Package version target: 0.4.7
-- Living master: 1.7.86
+- Package version: 0.4.8
+- Living master: 1.7.87
 - Current chain: POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051
 
 ## 1. What is permanent

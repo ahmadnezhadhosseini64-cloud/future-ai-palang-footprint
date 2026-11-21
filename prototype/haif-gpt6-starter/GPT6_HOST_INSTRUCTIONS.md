@@ -1,4 +1,4 @@
-# HAIF — Instructions for a GPT-6 host (package v0.4.7)
+# HAIF — Instructions for a GPT-6 host (package v0.4.8)
 
 Latest canonical chain: POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051
 Universal host entry: UNIVERSAL_AI_HOST_ENTRY_FA.md. For a fresh host, follow that model/platform-neutral entry first; this document is the GPT-6-specific companion.

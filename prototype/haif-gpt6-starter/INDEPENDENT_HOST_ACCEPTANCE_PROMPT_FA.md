@@ -1,6 +1,6 @@
 # دستور آزمون پذیرش میزبان مستقل و چندمیزبانی — HAIF / RAHM
 
-> Current target: POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051; package target 0.4.7; living master 1.7.86. برای ورود تازه از دستور عمومی UNIVERSAL_AI_HOST_ENTRY_FA.md استفاده کن؛ این سند مکمل آزمون پذیرش است.
+> Current target: POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051; package target 0.4.8; living master 1.7.87. برای ورود تازه از دستور عمومی UNIVERSAL_AI_HOST_ENTRY_FA.md استفاده کن؛ این سند مکمل آزمون پذیرش است.
 
 این متن را همراه ZIP canonical و فایل سند مادر `LIVING_MASTER_REFERENCE.md` به یک میزبان هوش مصنوعی مستقل بدهید. پاسخ خام میزبان را بدون ویرایش نگه دارید.
 

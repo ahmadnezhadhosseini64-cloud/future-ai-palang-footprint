@@ -6,12 +6,12 @@
 **Canonical repository:** https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint  
 **Canonical branch:** main  
 **Parent:** POINT-0/079 → CURRENT-132 → NEXT-051  
-**Living mother target:** 1.7.86
+**Living mother target:** 1.7.87
 
 ---
 
 **Latest canonical chain:** POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051  
-**Package target:** 0.4.7 (same stable package identity and canonical ZIP filename; acceptance requires fresh exact-main receipt)
+**Package target:** 0.4.8 (same stable package identity and canonical ZIP filename; acceptance requires fresh exact-main receipt)
 
 ## پیام واحد — میزبان این دستور را از ابتدا تا انتها اجرا کند
 

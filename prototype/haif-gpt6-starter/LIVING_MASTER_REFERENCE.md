@@ -2,14 +2,14 @@
 
 - Stable ID / شناسهٔ پایدار: HAIF-INITIAL-AI-MODEL-MASTER-REFERENCE-2026-10-21-001
 - Production ID / شناسهٔ تولید: HAIF-IAM-MR-2026-10-21-001
-- Version / نسخه: 1.7.86
+- Version / نسخه: 1.7.87
 - Date / تاریخ ثبت: 2026-11-21 (POINT-0/079 / CURRENT-132؛ نقطهٔ ۰++ زنده؛ ادامهٔ ریشهٔ واحد POINT-0)
 - Exact user-message time / زمان دقیق پیام کاربر: UNKNOWN / UNVERIFIED؛ زمان پیام با زمان commit یا ممیزی جایگزین نمی‌شود.
 - Repository evidence / شاهد مخزن: EVT-0247 initial registration commit 80cd9c752f999e5ac30496fa359fb9482319bc22 at UTC 2026-11-04T06:23:22Z / Tehran 2026-11-04T09:53:22+03:30; first integration 4f1232acd7ee0bffa737c6da2f5f4e4382815251 at UTC 2026-11-04T06:31:47Z / Tehran 2026-11-04T10:01:47+03:30; Evidence Gate 41786131427 created follow-up main 807b5b79080e40c994d52a77e9c9776c3cb0a985 at UTC 2026-11-04T06:31:56Z / Tehran 2026-11-04T10:01:56+03:30. Audit 41786131486 and Portable RAHM Conformance 41786131274 failed on exact SHA 4f1232acd7ee0bffa737c6da2f5f4e4382815251 because IN-100/OUT-099 lacked the packaged protocol/export-manifest link matrix and CURRENT-112/NEXT-051 lacked the verifier-required complete chain/open-gate markers. The failed conformance ZIP rebuild was downstream of the skipped master-sync step; artifact 13301535411 is not accepted. This correction adds the full link matrix and explicit markers; resulting main requires fresh exact-SHA audit/conformance.
 - Timezone / منطقهٔ زمانی پروژه: Asia/Tehran (+03:30)
 - Owner / مالک: احمد پلنگ (Ahmad Nezhadhosseini)
 - Project / پروژه: Future AI / Palang Footprint — HAIF
-- Status / وضعیت: ACTIVE / LIVING; latest continuation POINT-0/079 (0++); current checkpoint CURRENT-132; living master 1.7.86; POINT-0/079 and chain records registered on the same canonical POINT-0 root; sole queue NEXT-051; Latest Runnable / Development / Historical separation active; destination OAuth, workspace execution, clean-host acceptance, restart recovery and 0.0 completion remain OPEN / NOT RUN.
+- Status / وضعیت: ACTIVE / LIVING; latest continuation POINT-0/079 (0++); current checkpoint CURRENT-132; living master 1.7.87; POINT-0/079 and chain records registered on the same canonical POINT-0 root; sole queue NEXT-051; Latest Runnable / Development / Historical separation active; destination OAuth, workspace execution, clean-host acceptance, restart recovery and 0.0 completion remain OPEN / NOT RUN.
 - Canonical path / مسیر مرجع این بسته: docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md
 - Package root / ریشهٔ بسته: docs/architecture/مدل اولیه AI/
 - Governing scope / دامنهٔ حاکم: فقط مخزن GitHub؛ Buffer، Persistent Memory، Library و Dropbox در این مرحله تغییر داده نشده‌اند و تأییدشده نیستند.
@@ -21,7 +21,9 @@
 - Chain: POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051.
 - Owner rule: آخرین نسخهٔ قابل‌تحویل باید آخرین نسخهٔ واقعاً شدنی و آزموده‌شده باشد؛ قابلیت‌های ناقص/وابسته/نشدنی در Development / OPEN فعال می‌مانند و فقط پس از شواهد پذیرش به Latest Runnable ارتقا می‌یابند.
 - Legacy dependency rule: وابستگی قدیمی فقط دامنهٔ مصرف‌کنندهٔ متأثر را متوقف می‌کند، مگر آزمون نشان دهد هسته، امنیت، صحت داده، استخراج یا بازیابی آسیب می‌بیند. قابلیت‌های مستقل و اثبات‌شده می‌توانند در بسته باقی بمانند؛ تاریخچه و failureها حذف نمی‌شوند.
-- Latest verified portable package at registration: internal 0.4.6, stable package identity and canonical ZIP filename unchanged; 19 files; 24/24 extracted tests PASS; inner ZIP SHA-256 b9f56a360351d5ab16f07656018e576c2398a110db540138810e01358f8934fc. This receipt belongs to its source commit; target 0.4.7 requires fresh exact-main build and receipt after this master update.
+- At initial POINT-0/079 registration, the latest verified package was 0.4.6; that historical receipt and digest remain preserved.
+- Subsequent verified package: internal 0.4.7, same stable package identity and canonical ZIP filename; 19 files; 256684 bytes; 24/24 extracted tests PASS; ZIP CRC/source-byte match PASS; exact artifact-ID download and artifact round-trip PASS; paired living master 1.7.86 byte match PASS. Inner ZIP SHA-256: a8a34580722573aaef247acbf9d7edf1d97a80025c49d510f07a1479da4f0a05. Build source/current main: 06f7fe5a00ea507b1930ffe8a74bc03caf1ff059; workflow 44920781712; stable release tag haif-latest-verified refreshed. This proves package-level acceptance only; real independent-host acceptance remains separate.
+- This master revision advances to 1.7.87. The paired package target is 0.4.8; 0.4.7 remains the latest verified package until the exact-main 0.4.8 build, paired-master byte match, extracted tests and artifact round-trip pass.
 - 0.0 execution gates: 0.0.1 source of truth; 0.0.2 runnable inventory; 0.0.3 dependency triage; 0.0.4 package build; 0.0.5 extraction/recovery; 0.0.6 open-development register; 0.0.7 clean-host acceptance; 0.0.8 promotion; 0.0.9 cross-index reconciliation.
 - OAuth, destination workspace, clean-host recovery, second-host acceptance, restart recovery and HOST-RECOVERED remain OPEN / NOT RUN until direct destination receipts.
 
@@ -36,6 +38,14 @@
 - تأیید مالک برای آغاز مراحل OAuth و workspace ثبت شده است؛ مجوز GitHub و workspace باید در نشست مقصد و با شواهد مستقیم برقرار شوند.
 - ZIP قبلی فقط برای HEAD زمان ساخت خود معتبر است؛ پس از ادغام POINT-0/077 باید exact-main build، استخراج، آزمون، round-trip و receipt تازه تأیید شود.
 - Destination session, OAuth, workspace, execution and host acceptance: OPEN / NOT RUN until direct destination receipt.
+
+
+
+## Subsequent package verification — POINT-0/079 / CURRENT-132
+
+- Package 0.4.7 was verified after the initial 1.7.86 registration: workflow 44920781712; source/current main 06f7fe5a00ea507b1930ffe8a74bc03caf1ff059; 19 files; 256684 bytes; 24/24 extracted tests; SHA-256 a8a34580722573aaef247acbf9d7edf1d97a80025c49d510f07a1479da4f0a05.
+- The broken direct artifact REST download was preserved as a failed attempt; workflow was corrected to use the official exact-artifact-ID download action. The corrected run passed exact-ID download, paired-master byte read-back, artifact digest/inventory/CRC verification, second extracted test execution and durable release publication.
+- The current master is 1.7.87. The next paired portable package target is 0.4.8; the 0.4.7 receipt remains immutable historical proof.
 
 ## 1. این سند چه چیزی را تثبیت می‌کند؟
 
