@@ -1017,8 +1017,8 @@ The owner requires one universal AI-host entry path and an initial runnable vers
 7. **0.0-7 Controlled growth:** implement open gaps on a host branch, test, receipt, PR, merge, read-back, then rebuild canonical ZIP against exact main. Promote only verified features to Latest Runnable.
 
 ### Current acceptance gates — POINT-0/078
-- Universal host entry specification: added on the POINT-0/078 implementation branch; merge and read-back pending.
-- Canonical ZIP rebuild on exact current main: OPEN / NOT RUN.
+- Universal host entry specification and POINT-0/078 lineage: PR #68 merged to main; package source update to include the universal entry and version 0.4.6 is in follow-up PR #69.
+- Canonical ZIP exact-main rebuild and receipt: OPEN until the package workflow completes successfully on the updated main HEAD.
 - Destination OAuth and actual workspace: OPEN / NOT RUN.
 - Clean-host import, extraction, restart recovery and host acceptance: OPEN / NOT RUN.
 - Do not mark any external-host gate closed based on repository documentation or CI simulation.
