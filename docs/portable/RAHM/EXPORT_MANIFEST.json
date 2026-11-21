@@ -1,7 +1,7 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.8.32",
-  "manifest_status": "Portable package source target 0.4.4. Living master 1.7.79. Current canonical chain POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051. The previous POINT-0/071 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 is preserved as parent history. Package rebuild and exact-head verification required after source update; independent host acceptance remains NOT RUN.",
+  "version": "1.8.33",
+  "manifest_status": "POINT-0/078 / CURRENT-131; living master 1.7.85; portable starter source 0.4.6. Exact-main package rebuild and receipt pending; external-host acceptance remains OPEN / NOT RUN.",
   "created_from_checkpoint": "HAIF-POINT-0-044-STARTER-ZIP-INPLACE-UPDATE-20261027 + HAIF-CURRENT-094",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [
@@ -540,7 +540,15 @@
     "docs/0.0/anchors/PALANG-0.0-OUT-20261121-116-0PLUSPLUS-TO-0-0-COMPLETION.md",
     "docs/architecture/BEHAVIOR-TRACE/EVT-0293-0PLUSPLUS-TO-0-0-COMPLETION-2026-11-21.md",
     "docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0293-0PLUSPLUS-TO-0-0-COMPLETION-2026-11-21.md",
-    "docs/0.0/anchors/PALANG-0.0-CURRENT-20261121-127-0PLUSPLUS-TO-0-0-COMPLETION.md"
+    "docs/0.0/anchors/PALANG-0.0-CURRENT-20261121-127-0PLUSPLUS-TO-0-0-COMPLETION.md",
+    "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-078-UNIVERSAL-HOST-0PLUSPLUS.md",
+    "docs/0.0/anchors/PALANG-0.0-IN-20261121-121-UNIVERSAL-HOST-INITIAL-RUNNABLE.md",
+    "docs/0.0/anchors/PALANG-0.0-OUT-20261121-120-UNIVERSAL-HOST-INITIAL-RUNNABLE.md",
+    "docs/architecture/BEHAVIOR-TRACE/EVT-0298-UNIVERSAL-HOST-INITIAL-RUNNABLE-2026-11-21.md",
+    "docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0298-UNIVERSAL-HOST-INITIAL-RUNNABLE-2026-11-21.md",
+    "docs/0.0/anchors/PALANG-0.0-CURRENT-20261121-131-UNIVERSAL-HOST-INITIAL-RUNNABLE.md",
+    "prototype/universal-host/UNIVERSAL_AI_HOST_ENTRY_FA.md",
+    "prototype/haif-gpt6-starter/UNIVERSAL_AI_HOST_ENTRY_FA.md"
   ],
   "live_reference_policy": "Mutable current-state and startup/governance references are included in each export and receive exact SHA-256 plus Git blob SHA-1 observations in the same CI run. This includes RAHM_BOOT and RAHM_ARCHITECTURE because their canonical checkpoint binding must track the current live chain. Stable core remains digest-pinned.",
   "current_chain": "POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051",
