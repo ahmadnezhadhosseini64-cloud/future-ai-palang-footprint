@@ -120,3 +120,14 @@ This project has its own living execution record, legal gates, job-search stages
 - پس از اتصال، main HEAD، سند مادر، آخرین ZIP و receipt بازیابی و تطبیق شوند. هیچ رمز، PAT یا Secret در چت درخواست نشود.
 - نوشتن مخزن در این فاز خارج از دامنه است. عبارت «احمد نژادحسینی»، password/owner-confirmation gate و احراز هویت تکمیلی برای فاز بعد OPEN / DEFERRED می‌مانند.
 - پیشنهاد در شاخه host-intake-owner-confirmation-github-auth-20261121 است؛ main هنوز تغییر نکرده، ZIP canonical هنوز بازسازی/تأیید نشده و آزمون میزبان مستقل NOT RUN است. NEXT-051 تنها صف فعال باقی می‌ماند.
+
+
+## POINT-0++ — FIRST_HOST / HOST-001
+
+- Canonical point: [POINT-0/072](docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-072-OWNER-CONFIRMATION-GITHUB-AUTH-0PLUS.md); 0++ is a marker on the same root, not a new root.
+- Current chain: IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → sole NEXT-051.
+- Governing contract: [FIRST_HOST restricted workspace execution](docs/reference/REFERENCE-DOCUMENTS/FIRST-HOST-RESTRICTED-WORKSPACE-EXECUTION-AND-READ-ONLY-REPOSITORY-CONTRACT-2026-11-21-001.md) v1.0.1.
+- Living mother: v1.7.80; starter source target: v0.4.5.
+- Host identity: FIRST NEW HOST / FIRST_HOST / HOST-001. Authentication gate: OPEN / DEFERRED.
+- Repository: READ-ONLY; workspace: owner-defined allowlisted tasks only; workspace-to-repository writeback: DENIED.
+- Main merge, canonical ZIP rebuild/receipt, technical enforcement and independent-host acceptance remain pending.
