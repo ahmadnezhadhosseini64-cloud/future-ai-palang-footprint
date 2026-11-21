@@ -2710,3 +2710,15 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - [CURRENT-134](0.0/anchors/PALANG-0.0-CURRENT-20261121-134-COPYABLE-HOST-BOOTSTRAP.md) → sole active [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - [One-message host bootstrap](../prototype/haif-gpt6-starter/ONE_MESSAGE_HOST_BOOTSTRAP_FA.md) is the copyable destination-host instruction.
 - Previous package 0.4.9 receipt remains historical to its source SHA; exact-main package rebuild is required after this source update.
+
+
+## Latest owner-directed continuation — POINT-0/085 (0++) / CURRENT-138 — 2026-11-22
+
+- [POINT-0/085](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261122-085-OWNER-APPROVAL-GATE-AND-HOST-ISOLATION.md) continues the existing POINT-0 root.
+- [IN-128](0.0/anchors/PALANG-0.0-IN-20261122-128-OWNER-APPROVAL-GATE-AND-HOST-ISOLATION.md) / [OUT-127](0.0/anchors/PALANG-0.0-OUT-20261122-127-OWNER-APPROVAL-GATE-AND-HOST-ISOLATION.md).
+- [EVT-0305](architecture/BEHAVIOR-TRACE/EVT-0305-OWNER-APPROVAL-GATE-AND-HOST-ISOLATION-2026-11-22.md) / [TIME-BINDING-EVT-0305](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0305-OWNER-APPROVAL-GATE-AND-HOST-ISOLATION-2026-11-22.md).
+- [CURRENT-138](0.0/anchors/PALANG-0.0-CURRENT-20261122-138-OWNER-APPROVAL-GATE-AND-HOST-ISOLATION.md) → sole active [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Canonical security contract: [OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOSITORIES.md](architecture/HOST-SECURITY/OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOSITORIES.md).
+- Decision: hosts never write to master; each verified host receives an owner-created isolated private repository; only owner-reviewed, provenance-checked proposals may be promoted.
+- Ruleset 27814009 is active and protects main with PR/deletion/force-push rules. Live required approvals remain 0; Code Owner review remains false. One owner approval and CODEOWNERS enforcement are approved design but pending GitHub UI configuration and read-back.
+- GitHub does not allow a PR author to approve their own PR. Any owner-only bypass required for owner-authored PRs must be restricted to the owner and never granted to hosts. NEXT-051 remains the sole queue.
