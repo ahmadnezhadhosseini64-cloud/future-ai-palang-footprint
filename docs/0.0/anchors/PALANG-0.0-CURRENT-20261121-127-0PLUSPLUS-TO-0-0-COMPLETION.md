@@ -27,3 +27,15 @@
 - [ ] OAuth/authorization, durable workspace, idle/background capture and owner-approved write-back directly tested.
 
 Only the repository/CI gates can be completed from repository automation. External-host gates remain OPEN / NOT RUN unless a real authorized host produces evidence. NEXT-051 remains the sole queue.
+
+
+## Preserved open gates and history
+- CURRENT-065/CURRENT-066 pointer conflict: OPEN; no winner selected.
+- Full state recovery / reconstruct independently from IN and OUT: OPEN / NOT RUN.
+- Clean host import and second-host import: OPEN / NOT RUN.
+- Restart persistence and idle/background capture: OPEN / NOT VERIFIED.
+- Automatic live message capture: OPEN / NOT PROVEN.
+- Graph/identity/parent/time triage, duplicate IDs and ambiguous parents: OPEN pending exact audit evidence.
+- Issue #20 and Issue #21: OPEN; retain their existing source records.
+- Authentication gate: OPEN / DEFERRED; no OAuth or repository credential is implied.
+
