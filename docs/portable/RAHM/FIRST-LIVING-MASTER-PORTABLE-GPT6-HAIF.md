@@ -2,11 +2,11 @@
 
 - Stable ID / شناسه پایدار: `G6IP-FIRST-LIVING-MASTER-PORTABLE-RAHM-20261024-001`
 - Production ID / شناسه تولید: `G6IP-FLM-RAHM-001`
-- Version / نسخه: 1.1.6
+- Version / نسخه: 1.1.7
 - Status / وضعیت: REGISTERED / READ-BACK VERIFIED; latest strict digest/package result is tracked in workflow history; real-host gates OPEN; global graph REVIEW_REQUIRED.
 - Authority / مرجع حاکم: اصول بنیادی پروژه + سند مادر معماری موروثی + بسته قابل‌حمل RAHM.
-- User Point 0: [G6IP-POINT-0-015-20261025](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-015-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md)
-- Current 0.0: [CURRENT-066](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-066-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md)
+- User Point 0: [POINT-0/074 (0++ marker on canonical root 0)](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-074-0PLUSPLUS-TO-0-0-COMPLETION.md)
+- Current 0.0: [CURRENT-127](../../0.0/anchors/PALANG-0.0-CURRENT-20261121-127-0PLUSPLUS-TO-0-0-COMPLETION.md)
 - Next 0.0: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
 - User input: [IN-059](../../0.0/anchors/PALANG-0.0-IN-20261025-059-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md)
 - Assistant output: [OUT-058](../../0.0/anchors/PALANG-0.0-OUT-20261025-058-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md)
@@ -17,6 +17,10 @@
 - Architecture contract: [RAHM_ARCHITECTURE](./RAHM_ARCHITECTURE.md)
 - Interaction schema: [INTERACTION_PAIR_SCHEMA](./INTERACTION_PAIR_SCHEMA.json)
 - Export manifest: [EXPORT_MANIFEST](./EXPORT_MANIFEST.json)
+
+## Current canonical continuation — POINT-0/074 / CURRENT-127
+
+POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051. Living mother 1.7.81; portable starter 0.4.5. 0++ is a marker on the single canonical root. NEXT-051 is the sole queue for completing 0.0. External-host acceptance and authorization remain separate evidence gates.
 
 ## 1. مأموریت و معیار موفقیت
 
