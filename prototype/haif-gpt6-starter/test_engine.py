@@ -359,5 +359,5 @@ class InteractionResponseAnchorProtocolTests(unittest.TestCase):
         self.assertIn(expected_chain, readme)
         universal_entry = (root / "UNIVERSAL_AI_HOST_ENTRY_FA.md").read_text(encoding="utf-8")
         self.assertIn("بدون انتظار برای OAuth", universal_entry)
-        self.assertIn("OAuth برای READ عمومی لازم نیست", universal_entry)
+        self.assertIn("OAuth برای READ عمومی پیش‌شرط نیست", universal_entry)
         self.assertIn("POINT-0/080", universal_entry)
