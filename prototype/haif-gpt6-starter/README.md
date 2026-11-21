@@ -1,4 +1,4 @@
-# HAIF GPT-6 Portable Starter v0.4.4
+# HAIF GPT-6 Portable Starter v0.4.5
 
 This is the updated release of the existing HAIF starter package, not a separate project. It updates the existing v0.3.0 0/0+ bootstrap package at the same stable package identity and canonical ZIP filename; history and prior digests remain preserved. It does not replace the living master, historical anchors or NEXT-051.
 
@@ -15,7 +15,7 @@ This is the updated release of the existing HAIF starter package, not a separate
 - Host-growth/repository-sync contract included; defines behavior evidence, authorized repo return, RAHM validation and controlled Master/Child promotion.
 - Interaction response/anchor protocol included; requires visible acknowledgment/status, failure disclosure, paired input/output anchors and explicit non-verified gates.
 - Latest verified export and on-demand delivery contract included; requires exact-current-main package receipts and paired living-master delivery.
-- Current continuation reference: POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051. Preserve all earlier roots, the certificate child branch, the unresolved CURRENT-065/CURRENT-066 lineage and all open gates; older 0+ markers remain historical. The canonical living mother reference is included in the built ZIP as `LIVING_MASTER_REFERENCE.md`; the Persian external-host test is included as `INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md`. Transfer the ZIP with its included master snapshot and use the prompt on a genuinely independent host.
+- Current continuation reference: POINT-0/073 → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051. Preserve all earlier roots, the certificate child branch, the unresolved CURRENT-065/CURRENT-066 lineage and all open gates; older 0+ markers remain historical. The canonical living mother reference is included in the built ZIP as `LIVING_MASTER_REFERENCE.md`; the Persian external-host test is included as `INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md`. Transfer the ZIP with its included master snapshot and use the prompt on a genuinely independent host.
 
 ## Bootstrap
 ~~~bash
@@ -178,3 +178,8 @@ The current living mother is version 1.7.79. Canonical chain: POINT-0/072 → IN
 
 
 Current internal package version: v0.4.4. Previous verified v0.4.3 build receipt is historical; the new version is not release-verified until an external build receipt, exact-byte SHA-256, ZIP round-trip and extracted tests all pass.
+
+
+## Current handoff — package v0.4.5 / POINT-0/073
+
+Living mother target: 1.7.80. The current chain is POINT-0/073 → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051. The prior POINT-0/072 / CURRENT-125 branch remains parent history. Keep the canonical package ID and ZIP filename unchanged. A v0.4.5 package is not verified until the exact-head workflow provides a fresh receipt, SHA-256, inventory, CRC, paired-mother byte match, extracted tests and artifact round-trip. Independent-host recovery remains a separate gate.
