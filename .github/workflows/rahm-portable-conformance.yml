@@ -68,16 +68,18 @@ jobs:
           Draft202012Validator.check_schema(schema)
           errors = list(Draft202012Validator(schema, format_checker=FormatChecker()).iter_errors(registry))
           assert not errors, [e.message for e in errors]
-          assert registry["hosts"] == [], "Do not claim a live host without a direct acceptance receipt"
           import py_compile
+          py_compile.compile("scripts/rahm/validate_host_registry.py", doraise=True)
           py_compile.compile("scripts/host_adapter.py", doraise=True)
           py_compile.compile("scripts/host_adapter_github_worker.py", doraise=True)
+          subprocess_result = __import__("subprocess").run(["python", "scripts/rahm/validate_host_registry.py", "--registry", "docs/architecture/HOST-REGISTRY/HOST-REGISTRY.json"], capture_output=True, text=True)
+          assert subprocess_result.returncode == 0, subprocess_result.stdout + subprocess_result.stderr
           worker = Path("scripts/host_adapter_github_worker.py").read_text(encoding="utf-8")
           assert "LEGACY_DIRECT_GITHUB_WORKER_DISABLED" in worker
           assert "NO_GITHUB_WRITE_ATTEMPTED" in worker
           assert "BLOCKED:" in worker
           print("HOST_REGISTRY_SCHEMA=PASS")
-          print("NO_UNVERIFIED_ACTIVE_HOSTS=PASS")
+          print("HOST_REGISTRY_INVARIANTS=PASS")
           print("LEGACY_WORKER_FAIL_CLOSED=PASS")
           print("OWNER_ONLY_MASTER_WRITE_BLOCK=PASS")
           PY
