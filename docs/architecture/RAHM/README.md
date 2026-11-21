@@ -31,7 +31,7 @@ A Child candidate is not yet part of the living Master. A later, separate owner-
 
 ## Host identity and owner commands
 
-- Official Host IDs are issued by the owner after a verifiable enrollment receipt and identity review. Canonical format: HAIF-HOST-YYYYMMDD-NNN.
+- Official Host IDs are issued by the HAIF control plane/ChatGPT under the owner's explicit command, after a verifiable enrollment receipt and identity review. The assistant checks the live registry and assigns the next unique ID in canonical format HAIF-HOST-YYYYMMDD-NNN. A host must never self-assign an official ID.
 - Workspace IDs are separately assigned and bound to exactly one Host ID.
 - Candidate IDs are assigned by the owner/control plane, not self-declared as trusted by a host. Format: HAIF-CANDIDATE-YYYYMMDD-NNN.
 - A request such as "رصد میزبان HAIF-HOST-..." means inspect only that registered host's owner-accessible private workspace/export and record findings.
