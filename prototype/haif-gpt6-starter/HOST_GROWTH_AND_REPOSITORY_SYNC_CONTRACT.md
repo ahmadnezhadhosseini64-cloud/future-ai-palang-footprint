@@ -159,3 +159,10 @@ The provider-neutral host contract, zero-state bootstrap, capability receipt sch
 Current chain: POINT-0/077 (0++) → CURRENT-130 → IN-121 → OUT-120 → EVT-0297 → TIME-BINDING-EVT-0297 → CURRENT-131 → IN-122 → OUT-121 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-132 → NEXT-051
 
 Each host records STOP and THINKING_START as separate lifecycle anchors where exposed. REQUEST_RECEIVED is distinct from THINKING_START. Compute AI_VACUUM_INTERVAL only from observed timestamps on comparable clocks; unknown anchors remain null and conflicting clocks remain unmeasurable. Record observable context retrieval, repository/file operations, tool calls, code/tests, validation and response lifecycle. Never capture private chain-of-thought, hidden prompts, scratchpads or secrets. See the AI-VACUUM-POINT contract and the schema/calculator included in the same portable starter package.
+
+
+## Current canonical continuation — CURRENT-133
+
+POINT-0/077 (0++) → CURRENT-130 → IN-121 → OUT-120 → EVT-0297 → TIME-BINDING-EVT-0297 → CURRENT-131 → IN-122 → OUT-121 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-132 → IN-123 → OUT-122 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-133 → NEXT-051
+
+Historical CI failures are retained under EVT-0299; repairs are additive and do not erase failed-run evidence.
