@@ -184,7 +184,7 @@ class PortablePackageProtocolTests(unittest.TestCase):
         self.assertEqual(manifest["version"], manifest["archive_policy"]["current_internal_version"])
         self.assertEqual(manifest["supersedes"], "0.4.9")
         self.assertEqual(manifest["stable_id"], "HAIF-GPT6-PORTABLE-STARTER-20261025-004")
-        self.assertEqual(manifest["current_living_master_version"], "1.7.87")
+        self.assertEqual(manifest["current_living_master_version"], "1.7.89")
         self.assertEqual(manifest["recovery_protocol"], "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md")
         self.assertEqual(manifest["universal_host_entry"], "UNIVERSAL_AI_HOST_ENTRY_FA.md")
         self.assertTrue((package / manifest["universal_host_entry"]).is_file())
