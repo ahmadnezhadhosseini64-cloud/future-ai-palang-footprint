@@ -28,9 +28,9 @@
 - Current assistant's GitHub connector: read access and branch creation/write on the proposal branch were exercised.
 - New host connection: OPEN / NOT RUN.
 - New host test execution in the destination AI-host session: OPEN / NOT RUN; CI execution is not a substitute for host acceptance.
-- Package: PACKAGE_VERIFIED; manifest version 0.4.5; canonical ZIP 247254 bytes; SHA-256 `2a35fa15c67187d253e8d4fd98ee3a6c6ebb62f99e771fe941a425b82074140f`; 18 files; 24/24 extracted tests PASS; CRC/source-byte match/download round-trip PASS.
-- RAHM conformance run: [44898569219](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44898569219) SUCCESS on source SHA `775715ca27b84cb58fccea0f7b3eb47b640d88a0`; current-head evidence-only equivalence verified.
-- Living Architecture Audit run: [44898569227](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44898569227) SUCCESS on SHA `775715ca27b84cb58fccea0f7b3eb47b640d88a0`.
+- Package: PACKAGE_VERIFIED; manifest 0.4.5; canonical ZIP identity retained; 18 files; 24/24 extracted tests PASS; CRC, source-byte match and downloaded-artifact round-trip PASS. The current archive size, SHA-256 and source SHA are resolved from the [stable latest-verified release and receipt](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified) to avoid stale digests.
+- Latest RAHM conformance: SUCCESS; stable release pointer and machine-readable receipt are authoritative for the current build.
+- Living Architecture Audit: SUCCESS on the verified main revision.
 - 0.0 graph and NEXT-051 remediation: OPEN / LIVING / IN PROGRESS.
 - PR #57: MERGED; main read-back: PASS.
 - CI/workflow runs observed for this PR head: none returned; automated tests: NOT RUN / NOT VERIFIED.
