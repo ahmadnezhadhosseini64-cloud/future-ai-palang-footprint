@@ -1,3 +1,12 @@
+## Latest owner-approved continuation — POINT-0/076 / CURRENT-129
+
+- Chain: [POINT-0/076](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-076-ZERO-STATE-GPT6-HOST.md) → [IN-119](0.0/anchors/PALANG-0.0-IN-20261121-119-ZERO-STATE-GPT6-HOST.md) → [OUT-118](0.0/anchors/PALANG-0.0-OUT-20261121-118-ZERO-STATE-GPT6-HOST.md) → [EVT-0295](architecture/BEHAVIOR-TRACE/EVT-0295-ZERO-STATE-GPT6-REPOSITORY-HOST-2026-11-21.md) → [TIME-BINDING-EVT-0295](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0295-ZERO-STATE-GPT6-REPOSITORY-HOST-2026-11-21.md) → [CURRENT-129](0.0/anchors/PALANG-0.0-CURRENT-20261121-129-ZERO-STATE-GPT6-HOST.md) → [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Living mother: [version 1.7.83](architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md).
+- Purpose: a genuinely fresh GPT-6 host with no prior project interaction; connect the canonical repository and enter an actual isolated working checkout.
+- Bootstrap: [ZERO-STATE-GPT6-REPOSITORY-HOST-BOOTSTRAP_FA.md](../prototype/haif-gpt6-starter/ZERO-STATE-GPT6-REPOSITORY-HOST-BOOTSTRAP_FA.md).
+- This is a child execution path under NEXT-051, not a parallel project or new NEXT queue.
+- Owner must create/open the fresh GPT-6 session and authorize GitHub through that destination UI. OAuth, destination workspace, execution and host acceptance remain OPEN / NOT RUN until a direct receipt is returned.
+
 ## Latest owner-authorized continuation — POINT-0/075 / CURRENT-128
 
 - Chain: [POINT-0/075](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-075-FIRST-HOST-REPO-WORKSPACE.md) → [IN-118](0.0/anchors/PALANG-0.0-IN-20261121-118-FIRST-HOST-REPO-WORKSPACE.md) → [OUT-117](0.0/anchors/PALANG-0.0-OUT-20261121-117-FIRST-HOST-REPO-WORKSPACE.md) → [EVT-0294](architecture/BEHAVIOR-TRACE/EVT-0294-FIRST-HOST-REPO-WORKSPACE-2026-11-21.md) → [TIME-BINDING-EVT-0294](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0294-FIRST-HOST-REPO-WORKSPACE-2026-11-21.md) → [CURRENT-128](0.0/anchors/PALANG-0.0-CURRENT-20261121-128-FIRST-HOST-REPO-WORKSPACE.md) → NEXT-051.
