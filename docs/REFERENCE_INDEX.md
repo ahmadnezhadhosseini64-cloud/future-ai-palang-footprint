@@ -1,3 +1,13 @@
+## Latest owner-approved continuation — POINT-0/080 (0++) / CURRENT-133
+
+- Chain: [POINT-0/079](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-079-LATEST-RUNNABLE-OPEN-DEVELOPMENT.md) → [CURRENT-132](0.0/anchors/PALANG-0.0-CURRENT-20261121-132-LATEST-RUNNABLE-OPEN-DEVELOPMENT.md) → [POINT-0/080](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-080-PUBLIC-READ-NO-OAUTH-HOST-ACCESS.md) → [IN-123](0.0/anchors/PALANG-0.0-IN-20261121-123-PUBLIC-READ-NO-OAUTH-HOST-ACCESS.md) → [OUT-122](0.0/anchors/PALANG-0.0-OUT-20261121-122-PUBLIC-READ-NO-OAUTH-HOST-ACCESS.md) → [EVT-0300](architecture/BEHAVIOR-TRACE/EVT-0300-PUBLIC-READ-NO-OAUTH-HOST-ACCESS-2026-11-21.md) → [TIME-BINDING-EVT-0300](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0300-PUBLIC-READ-NO-OAUTH-HOST-ACCESS-2026-11-21.md) → [CURRENT-133](0.0/anchors/PALANG-0.0-CURRENT-20261121-133-PUBLIC-READ-NO-OAUTH-HOST-ACCESS.md) → sole queue [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Living master target: 1.7.87.
+- Decision: Public HTTPS READ/clone/fetch requires no OAuth; authenticated write-back or private resources require separate secure authorization. EXECUTE and persistent workspace are independent host capabilities.
+- Architecture: [Public repository and low-friction host access](architecture/مدل%20اولیه%20AI/معماری%20دسترسی%20عمومی%20مخزن%20و%20ورود%20کم‌اصطکاک%20میزبان.md).
+- Universal host entry corrected to attempt anonymous public READ first; OAuth is not a blocker for source recovery.
+- Destination execution, persistent isolated workspace, clean-host import/restart and authenticated write-back remain OPEN / NOT RUN.
+- NEXT-051 remains the sole active queue; no parallel project or queue was created.
+
 ## Latest owner-approved continuation — POINT-0/079 (0++) / CURRENT-132
 
 - Chain: [POINT-0/077](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-077-0PLUSPLUS-LIVE-ANCHOR.md) → [CURRENT-130](0.0/anchors/PALANG-0.0-CURRENT-20261121-130-0PLUSPLUS-LIVE-ANCHOR.md) → [POINT-0/078](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-078-UNIVERSAL-HOST-0PLUSPLUS.md) → [CURRENT-131](0.0/anchors/PALANG-0.0-CURRENT-20261121-131-UNIVERSAL-HOST-INITIAL-RUNNABLE.md) → [POINT-0/079](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-079-LATEST-RUNNABLE-OPEN-DEVELOPMENT.md) → [IN-122](0.0/anchors/PALANG-0.0-IN-20261121-122-LATEST-RUNNABLE-OPEN-DEVELOPMENT.md) → [OUT-121](0.0/anchors/PALANG-0.0-OUT-20261121-121-LATEST-RUNNABLE-OPEN-DEVELOPMENT.md) → [EVT-0299](architecture/BEHAVIOR-TRACE/EVT-0299-LATEST-RUNNABLE-OPEN-DEVELOPMENT-2026-11-21.md) → [TIME-BINDING-EVT-0299](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0299-LATEST-RUNNABLE-OPEN-DEVELOPMENT-2026-11-21.md) → [CURRENT-132](0.0/anchors/PALANG-0.0-CURRENT-20261121-132-LATEST-RUNNABLE-OPEN-DEVELOPMENT.md) → sole queue [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
@@ -62,7 +72,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-11-21 — current continuation POINT-0/077 (0++) / IN-120 / OUT-119 / EVT-0296 / CURRENT-130; living mother 1.7.84; NEXT-051 sole active queue. ZIP exact-HEAD rebuild/receipt after this registration is pending; destination OAuth, workspace and independent-host acceptance remain OPEN / NOT RUN.
+**Last Updated:** 2026-11-21 — current continuation POINT-0/080 (0++) / IN-123 / OUT-122 / EVT-0300 / CURRENT-133; living mother 1.7.87; NEXT-051 sole active queue. Public READ requires no OAuth; destination execution workspace, independent-host acceptance and restart remain OPEN / NOT RUN.
 
 ## Canonical References
 
