@@ -20,11 +20,12 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   actions: read
 
 jobs:
   portable-conformance:
+    if: github.event_name != 'workflow_dispatch' || github.actor == 'ahmadnezhadhosseini64-cloud'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
