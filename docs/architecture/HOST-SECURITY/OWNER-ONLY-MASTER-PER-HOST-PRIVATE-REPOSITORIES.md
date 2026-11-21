@@ -1,9 +1,9 @@
 # معماری امنیتی میزبان‌های مستقل و مخزن مادر فقط‌مالک
 
 - Stable ID: HAIF-OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOS-2026-11-21-001
-- Version: 1.1.0
+- Version: 1.2.0
 - Status: OWNER-DIRECTED / DESIGN APPROVED / IMPLEMENTATION PARTIAL
-- Parent: POINT-0/084 → CURRENT-137 → POINT-0/085 → CURRENT-138 → NEXT-051
+- Parent: POINT-0/084 → CURRENT-137 → POINT-0/085 → CURRENT-138 → POINT-0/086 → CURRENT-139 → NEXT-051
 - Canonical root: POINT-0 only
 - Canonical master repository: ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
 - Owner: repository owner only
@@ -143,7 +143,7 @@ All tests require real GitHub/App/broker evidence. A prompt or local mock test i
 - Owner-only master policy: REGISTERED IN THIS DESIGN; actual permission audit OPEN.
 - Master repository visibility: PUBLIC (verified).
 - Authenticated connector account currently has admin/push rights as repository owner; this is the owner connection, not an AI-host permission.
-- main protection: latest recorded state `protected=false`; current live status not re-readable through available connector; NOT VERIFIED.
+- main protection: live branch API reports protected=true; Ruleset 27814009 is active and requires PRs, blocks deletion and non-fast-forward updates. Required approval count is still 0 and Code Owner review is false; full approval enforcement remains OPEN.
 - Host-specific private repositories: NOT CREATED.
 - GitHub App per-host scoped installation: NOT CONFIGURED.
 - Broker and server-side identity mapping: NOT DEPLOYED / OPEN.
@@ -190,3 +190,45 @@ Until all L3 gates pass, every new host is strictly L1_READ_ONLY against master 
 - Host accounts / host Apps: هیچ‌کدام در bypass قرار نگیرند.
 - هر bypass مالک، اگر برای PRهای مالک‌نویس لازم شد، باید فقط به هویت مالک و با دامنهٔ Pull Request محدود باشد؛ هرگز برای میزبان فعال نشود.
 - پس از ذخیره، Ruleset از GitHub API دوباره خوانده شود. تا آن بازخوانی، این قسمت DESIGN APPROVED / CONFIGURATION PENDING است، نه VERIFIED.
+
+
+## 15. RAHM مرکزی مالک و مسیر یادگیری چندمیزبانه — POINT-0/086
+
+RAHM فضای مرکزی تحت اختیار مالک است و هرگز داخل محیط کاری میزبان قرار نمی‌گیرد. مسیر دائمی:
+
+HOST PRIVATE WORKSPACE → OWNER-COMMANDED MONITOR/EXPORT → PRIVATE RAHM QUARANTINE → CROSS-HOST RECONCILIATION → RAHM VALIDATION → BOT-AUTHORED PR → OWNER REVIEW/APPROVAL → CHILD-CANDIDATE.
+
+- معماری و قرارداد: docs/architecture/RAHM/README.md.
+- قالب ساخت مخزن خصوصی RAHM: docs/architecture/RAHM/PRIVATE-RAHM-REPOSITORY-TEMPLATE.md.
+- Schema پاکت candidate: docs/architecture/RAHM/CANDIDATE-MANIFEST-SCHEMA.json.
+- کنترل‌پلین عمومی و غیرحساس: control-plane/rahm/README.md.
+- ناحیه فرزند: docs/architecture/CHILD-CANDIDATES/README.md.
+- مخزن خصوصی مورد انتظار: ahmadnezhadhosseini64-cloud/future-ai-palang-rahm؛ در زمان این ثبت هنوز ساخته و بازخوانی نشده است.
+- مخزن مادر Public است؛ بنابراین raw export، گفت‌وگوی خصوصی، داده شخصی، secret و شواهد پالایش‌نشده هرگز در آن قرار نمی‌گیرند.
+- فقط مالک از workspace میزبان export می‌گیرد، پالایش می‌کند و در RAHM خصوصی قرار می‌دهد. میزبان به RAHM دسترسی ندارد.
+- workflow فقط با workflow_dispatch از حساب مالک روی main اجرا می‌شود، private بودن RAHM را بررسی می‌کند، manifest و hash را اعتبارسنجی می‌کند و یک PR با هویت GitHub App مورداعتماد به CHILD باز می‌کند.
+- Bot فقط PR/branch ایجاد می‌کند؛ هیچ merge، auto-merge، bypass یا ویرایش مستقیم Master ندارد.
+- ChatGPT می‌تواند محتوای قابل‌دسترسی را فنی/امنیتی بررسی کند؛ اما approval واقعی GitHub باید از حساب مالک باشد.
+- Child پذیرش نهایی در Master نیست؛ ارتقای بعدی به اسناد مادر، PR مستقل و تأیید مجدد مالک می‌خواهد.
+
+## 16. حذف مسیرهای نوشتن مستقیم خودکار به main — چکش سخت POINT-0/086
+
+ممیزی workflowها مسیرهای نوشتن مستقیم زیر را پیدا کرد و در همین تغییر اصلاح کرد:
+
+- .github/workflows/main.yml: ثبت evidence دیگر commit/push به main نمی‌کند؛ فقط artifact با retention ثبت می‌شود و permission به contents:read کاهش یافت.
+- .github/workflows/pending-registration-drain.yml: از drain/commit/push خودکار به ممیزی read-only و artifact تبدیل شد؛ هیچ فایل canonical را تغییر نمی‌دهد.
+- control-plane/controller.py و .github/workflows/execution-controller.yml: تولید recovery/runtime proof فقط در runner و artifact انجام می‌شود؛ git commit/push حذف شد و permission فقط read است.
+- .github/workflows/rahm-portable-conformance.yml: permission غیرضروری contents:write حذف و read-only شد.
+- worker قدیمی scripts/host_adapter_github_worker.py همچنان باید در برابر مخزن مادر با hard-stop باقی بماند؛ این guard در ممیزی خوانده شد.
+- هر workflow یا App جدید باید PR-only باشد؛ هیچ رباتی bypass یا حق merge به main دریافت نمی‌کند.
+
+## 17. وضعیت اجرای عملیاتی RAHM و دروازه تأیید
+
+- RAHM private repository: NOT CREATED / NOT VERIFIED.
+- Promotion GitHub App: NOT CREATED / NOT INSTALLED.
+- Repository variable PALANG_PROMOTION_APP_CLIENT_ID: NOT CONFIGURED.
+- Secrets PALANG_PROMOTION_APP_PRIVATE_KEY و RAHM_READ_TOKEN: NOT CONFIGURED.
+- ChatGPT GitHub connector access to private RAHM: NOT VERIFIED.
+- Ruleset 27814009: active, but required approvals=0 and Code Owner review=false; owner must set 1 and enable Code Owner review, stale-review dismissal and conversation resolution, then API read-back is required.
+- Host Registry: no verified live hosts; no Host ID issued by this point.
+- Therefore status is DESIGN REGISTERED / CODE IMPLEMENTED / OPERATIONAL SETUP PENDING. Do not claim RAHM_OPERATIONAL or HOST_SECURITY_VERIFIED.
