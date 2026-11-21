@@ -131,9 +131,9 @@ The Host Registry remains empty until a real host returns identity and read-back
 Implementation status at POINT-0/070: architecture and templates registered; live broker, credential isolation, branch protection, cross-workspace denial tests, real host registration and end-to-end receipts remain OPEN / NOT VERIFIED.
 
 
-## Current package — 0.4.3 / POINT-0/071
+## Current package — 0.4.4 / POINT-0/072
 
-Internal package version: 0.4.3
-Living master target: 1.7.78
+Internal package version: 0.4.4
+Living master target: 1.7.79
 Current chain tail: POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051
 Single-message GPT host setup: `ONE_MESSAGE_HOST_BOOTSTRAP_FA.md`. A prompt cannot create missing OAuth authorization, connector capability, persistent workspace or security boundaries; target-host execution must prove these independently.
