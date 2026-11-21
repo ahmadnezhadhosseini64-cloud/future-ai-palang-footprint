@@ -12,9 +12,11 @@
 - `HOST-REGISTRY-SCHEMA.json`: قرارداد داده و اعتبارسنجی ثبت میزبان.
 
 ## Lifecycle
-PROPOSED → IDENTITY_VERIFIED → L1_READ_ONLY → L2_PROPOSAL_ONLY → L3_TEST_CONTRIBUTOR → SUSPENDED / REVOKED.
+Status lifecycle: PROPOSED → IDENTITY_VERIFIED → ACTIVE → SUSPENDED / REVOKED.
 
-سطح L4 فقط برای عملیات مشخص، مدت‌دار و با تأیید صریح مالک قابل طرح است؛ دسترسی admin یا bypass برای میزبان AI مجاز نیست.
+Permission scopes are separate: L0_OFFLINE → L1_MASTER_PUBLIC_READ_ONLY → L2_HOST_PRIVATE_WORKSPACE_ONLY → L3_OWNER_EXPORT_PROPOSAL_ONLY → L4_OWNER_BROKERED_PRIVATE_HOST_REPO. L4 can write only to that host's own PRIVATE repository through an owner-controlled broker; it never grants any master branch, RAHM, PR, workflow, settings, or bypass permission.
+
+سطح L4 فقط برای عملیات مشخص، مدت‌دار و با تأیید صریح مالک قابل طرح است؛ دسترسی admin یا bypass برای میزبان AI مجاز نیست. هیچ سطحی مجوز نوشتن در مخزن مادر یا RAHM ایجاد نمی‌کند.
 
 ## Mandatory fields
 host_id, workspace_id, host_type, model_version, adapter_version, owner_approval_ref, permission_scope, status, registered_at_utc, master_version_seen, master_commit_seen, private_repository, private_repository_visibility, master_access, master_write_access=false, rahm_access=NONE, host_direct_write_access=false, broker_write_access, connector_read_access, monitoring_mode, acceptance_receipt_ref, owner_id_issuer, host_id_issue_receipt_ref, owner_export_receipt_ref, last_export_at_utc, workspace_isolation_ref, revocation_ref. credential_reference is a secret-manager pointer only, never a token or secret.
