@@ -1018,7 +1018,7 @@ The owner requires one universal AI-host entry path and an initial runnable vers
 
 ### Current acceptance gates — POINT-0/078
 - Universal host entry specification and POINT-0/078 lineage: PR #68 merged to main; package source update to include the universal entry and version 0.4.6 is in follow-up PR #69.
-- Canonical ZIP exact-main rebuild and receipt: OPEN until the package workflow completes successfully on the updated main HEAD.
+- Canonical ZIP internal version 0.4.6: PACKAGE_VERIFIED; workflow 44918425190; source SHA 0d27972ac4d45349a85551f52e3b969ee581f843; ZIP SHA-256 b9f56a360351d5ab16f07656018e576c2398a110db540138810e01358f8934fc; 19 files; 24/24 extracted tests PASS. Current main head 6ee4dff3adbdf65dadc4349106b1f120ca49c175 is equivalent except for the evidence-gate receipt commit. A new main change requires a new exact-head build/receipt.
 - Destination OAuth and actual workspace: OPEN / NOT RUN.
 - Clean-host import, extraction, restart recovery and host acceptance: OPEN / NOT RUN.
 - Do not mark any external-host gate closed based on repository documentation or CI simulation.
