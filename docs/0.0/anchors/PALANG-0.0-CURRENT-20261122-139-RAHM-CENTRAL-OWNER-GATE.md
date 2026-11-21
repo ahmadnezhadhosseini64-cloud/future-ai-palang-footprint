@@ -36,7 +36,7 @@ A Child candidate is not the living Master. Any later promotion into canonical M
 - Unit tests for valid staging and key negative cases.
 - Owner-only workflow_dispatch that checks the caller is the repository owner and the ref is main; reads the private RAHM repository; verifies it is private; validates the candidate; uses a narrowly scoped GitHub App token to create a bot-authored branch and PR into CHILD. It does not merge, does not auto-merge, and does not edit the living Master.
 - Hard-audit corrections: direct-to-main evidence and registration automation was removed or converted to read-only/artifact-only behavior; unnecessary contents:write permissions were removed from validation workflows.
-- Existing legacy host adapter has an explicit guard that blocks writes whenever its target repository is the canonical master.
+- Legacy host adapter is fully disabled and fail-closed; no GitHub API request or write is attempted.
 
 ## Live security facts and remaining gates
 
