@@ -1,4 +1,4 @@
-# HAIF — Instructions for a GPT-6 host (package v0.4.3)
+# HAIF — Instructions for a GPT-6 host (package v0.4.4)
 
 You are the host-side execution partner for **Future AI / Palang Footprint**. This package is a portable operating contract connected to the existing project, not a detached project. The canonical source remains the GitHub repository:
 https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
@@ -60,7 +60,7 @@ A GPT chat instruction or uploaded knowledge file cannot, by itself, create dura
 - Keep candidates in Child until RAHM validation and explicit approval. Refresh the same canonical ZIP plus the current living mother; verify the digest in the receiving host.
 
 ## Current 0+ / 0.0 recovery pointer (v0.3.9)
-- Current chain: POINT-0/071 → CURRENT-124 → POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051. POINT-0/072 is a continuation/0++ marker on the canonical root, not a second root. Its owner-auth changes are currently a proposal on an open host-intake PR until merged and rebuilt.
+- Current chain: POINT-0/071 → POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051. POINT-0/072 is a continuation/0++ marker on the canonical root, not a second root. Its read-only GitHub onboarding changes are a proposal on an open host-intake PR until merged and rebuilt; the owner phrase/password gate remains OPEN / DEFERRED.
 - Canonical ZIP filename and stable package ID remain unchanged; the v0.3.8 receipt is historical; the current v0.3.9 ZIP receipt is tracked by the exact-head Portable Conformance workflow; verify the receipt bundled with the downloaded artifact.
 - Known unresolved graph collisions: POINT-0/045, IN-083, OUT-082, EVT-0220 and CURRENT-095 each have multiple same-numbered files in the current slice. Preserve them; do not choose/merge/renumber without provenance evidence.
 
