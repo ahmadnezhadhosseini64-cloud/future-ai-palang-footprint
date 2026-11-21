@@ -1065,3 +1065,14 @@ The owner requires one universal AI-host entry path and an initial runnable vers
 - Living master: [سند مرجع مادر](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 - Universal host entry: [UNIVERSAL_AI_HOST_ENTRY_FA.md](../../../prototype/haif-gpt6-starter/UNIVERSAL_AI_HOST_ENTRY_FA.md)
 - Package manifest: [manifest.json](../../../prototype/haif-gpt6-starter/manifest.json)
+
+
+## Canonical recovery link matrix — POINT-0/080 / CURRENT-133
+
+- Point: [POINT-0/080](GPT6-RAHM-USER-POINT-0-20261121-080-PUBLIC-READ-NO-OAUTH-HOST-ACCESS.md)
+- Input: [IN-123](PALANG-0.0-IN-20261121-123-PUBLIC-READ-NO-OAUTH-HOST-ACCESS.md)
+- Output: [OUT-122](PALANG-0.0-OUT-20261121-122-PUBLIC-READ-NO-OAUTH-HOST-ACCESS.md)
+- Event: [EVT-0300](../../architecture/BEHAVIOR-TRACE/EVT-0300-PUBLIC-READ-NO-OAUTH-HOST-ACCESS-2026-11-21.md)
+- Current: [CURRENT-133](PALANG-0.0-CURRENT-20261121-133-PUBLIC-READ-NO-OAUTH-HOST-ACCESS.md)
+- Mirror event: [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md)
+- Mirror time binding: [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md)
