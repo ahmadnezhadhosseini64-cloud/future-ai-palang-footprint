@@ -44,7 +44,7 @@
 
 ## GitHub connection
 
-The ChatGPT GitHub connection must be explicitly granted access to this private repository if the owner expects ChatGPT to inspect it on command. The Actions secret RAHM_READ_TOKEN is separate from ChatGPT's connector authorization and does not grant ChatGPT UI access by itself.
+The ChatGPT GitHub connection must be explicitly granted read access to this private repository if the owner expects ChatGPT to inspect owner-exported RAHM records on command. For direct live inspection of a host workspace, the connection must separately have read access to that exact host-private repository. Without that, only the latest owner-exported snapshot can be inspected and must be labelled SNAPSHOT-BASED, not LIVE. The Actions secret RAHM_READ_TOKEN is separate from ChatGPT's connector authorization and does not grant ChatGPT UI access by itself.
 
 ## Read-only workflow credential
 
