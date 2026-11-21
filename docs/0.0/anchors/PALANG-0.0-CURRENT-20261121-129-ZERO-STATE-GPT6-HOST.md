@@ -24,7 +24,7 @@
 
 ## Acceptance state
 - Owner approval: CONFIRMED.
-- Bootstrap/document package: PREPARED; repository merge/read-back pending.
+- Bootstrap/document package: MERGED via PR #58; all nine changed files were fetched back from main; living master 1.7.83 and index markers verified.
 - New GPT-6 session created by platform: NOT DONE / OWNER ACTION REQUIRED.
 - GitHub OAuth in destination session: OPEN / NOT RUN.
 - Real workspace/checkout in destination session: OPEN / NOT RUN.
