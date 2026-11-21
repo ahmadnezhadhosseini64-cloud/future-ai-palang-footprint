@@ -6,4 +6,17 @@
 - Canonical timezone: UTC; Asia/Tehran is derived from the same instant (+03:30).
 - Exact user-message timestamp: UNKNOWN / UNVERIFIED.
 
-The repository registration time must be filled only from the actual Git commit metadata that creates this event. Do not substitute the app clock, workflow time, or a later commit time for the original user-message time.
+## Repository registration time
+The canonical POINT-0/073 anchor file was first registered in Git commit:
+- Commit: ab2c952db2f0a87549197284f7926ab3628feaf2
+- Committer timestamp UTC: 2026-11-21T09:38:17Z
+- Derived Asia/Tehran: 2026-11-21T13:08:17+03:30
+- Source: GitHub commit metadata for the commit that first created the POINT-0/073 anchor.
+
+The IN/OUT/event/checkpoint records were added in subsequent commits. Those operation times are distinct from the original user-message time.
+
+## Time integrity
+- UTC is the permanent reference.
+- Tehran time is derived from the same UTC instant.
+- Exact user-message time remains UNKNOWN / UNVERIFIED.
+- Commit time is repository registration time only; it is never substituted for message time.
