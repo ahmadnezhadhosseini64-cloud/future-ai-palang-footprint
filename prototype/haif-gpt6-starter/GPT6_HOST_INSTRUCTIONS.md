@@ -217,3 +217,10 @@ The portable package is the same stable starter identity and canonical ZIP filen
 ## Current canonical chain — package v0.4.6 / CURRENT-131
 
 Internal package version: 0.4.6. Living master: 1.7.86. Current chain: POINT-0/077 (0++) → CURRENT-130 → IN-121 → OUT-120 → EVT-0297 → TIME-BINDING-EVT-0297 → CURRENT-131 → IN-122 → OUT-121 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-132 → NEXT-051. The current host must rediscover the canonical repository HEAD, living master and sole queue before acting.
+
+
+## Latest verified branch continuation (CURRENT-133)
+
+POINT-0/077 (0++) → CURRENT-130 → IN-121 → OUT-120 → EVT-0297 → TIME-BINDING-EVT-0297 → CURRENT-131 → IN-122 → OUT-121 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-132 → IN-123 → OUT-122 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-133 → NEXT-051
+
+The first CI mismatch is retained as an immutable historical event under EVT-0299; the stale expected chain in the test was corrected additively. Consult the repository's current checkpoint and sole NEXT-051 queue before taking action.
