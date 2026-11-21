@@ -30,9 +30,9 @@ POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 
 
 ## Acceptance
 - Owner intent: CONFIRMED.
-- Source documents: PR #68 merged; main read-back and link checks pending final verification.
-- Canonical ZIP internal version 0.4.6 source update: prepared in follow-up PR; exact-main build/receipt pending.
-- Clean-host extraction and independent recovery: OPEN / NOT RUN.
+- Source documents: PR #68 and #69 merged; cross-layer recovery link audit PASS on the follow-up correction; main read-back verified.
+- Canonical ZIP: PACKAGE_VERIFIED — internal version 0.4.6; exact build source 0d27972ac4d45349a85551f52e3b969ee581f843; current main 6ee4dff3adbdf65dadc4349106b1f120ca49c175 differs only by the Evidence Gate receipt commit.
+- Package extraction, CRC, source-byte read-back, downloaded-artifact round-trip and extracted tests: PASS; 24/24 tests; 19 files; 255468 bytes; SHA-256 b9f56a360351d5ab16f07656018e576c2398a110db540138810e01358f8934fc.\n- Clean-host extraction and independent recovery: OPEN / NOT RUN.
 - Destination OAuth and persistent workspace: OPEN / NOT RUN.
 - HOST-RECOVERED: NOT CLAIMED.
 
