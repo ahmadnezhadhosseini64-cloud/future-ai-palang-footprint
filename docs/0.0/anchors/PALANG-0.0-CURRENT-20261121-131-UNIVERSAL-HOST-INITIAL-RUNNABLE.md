@@ -59,3 +59,5 @@ NEXT-051 تنها صف اجرایی است. هیچ نقطه یا سابقهٔ ق
 - Automatic live message capture / idle/background capture: OPEN / NOT PROVEN.
 - Graph/identity/parent/time triage: OPEN; duplicate IDs and ambiguous parents remain under source-backed review.
 - CURRENT-065/CURRENT-066 pointer conflict: OPEN; no winner selected. Preserve both historical records until source adjudication is completed.
+
+- Issue #20 and Issue #21: OPEN / NOT CLOSED; preserve their historical evidence and continue through the existing NEXT-051 triage gates.
