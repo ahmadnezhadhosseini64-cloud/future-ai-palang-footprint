@@ -33,3 +33,13 @@ https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
 
 ## لنگر زمانی
 زمان commit نهایی این شاخه باید پس از آخرین تغییر از GitHub استخراج شود؛ زمان مشاهده یا زمان پیام کاربر جایگزین آن نیست.
+
+## Cross-index and extraction registration
+
+- Canonical 0.0 latest-chain index: [docs/0.0/README.md](../README.md).
+- Reference index: [docs/REFERENCE_INDEX.md](../../REFERENCE_INDEX.md).
+- Behavior-trace index: [BEHAVIOR-TRACE index](../../architecture/BEHAVIOR-TRACE/README.md).
+- Architecture integration queue index: [INTEGRATION-QUEUE index](../../architecture/INTEGRATION-QUEUE/README.md).
+- RAHM export manifest: [EXPORT_MANIFEST.json](../../portable/RAHM/EXPORT_MANIFEST.json).
+- Package manifest source version: 0.4.4; canonical ZIP rebuild and exact receipt remain PENDING.
+- This is a proposal-branch registration; main merge and independent-host read-only acceptance remain OPEN / NOT RUN.
