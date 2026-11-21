@@ -1,6 +1,6 @@
 # CURRENT-133 — نقطهٔ ۰++: حفظ تاریخچه و رفع ناسازگاری CI
 
-- Status: ACTIVE / LIVING / REPAIR-COMMITTED / EXACT-HEAD-CI-PENDING / PR-OPEN / ZIP-RELEASE-PENDING
+- Status: ACTIVE / LIVING / REPAIR-COMMITTED / MULTIPLE-HISTORICAL-CI-FAILURES-PRESERVED / EXACT-HEAD-CI-PENDING / PR-OPEN / ZIP-RELEASE-PENDING
 - Parent: CURRENT-132
 - Root: POINT-0/077 (0++)
 - Chain: CURRENT-132 → IN-123 → OUT-122 → EVT-0299 → TIME-BINDING-EVT-0299 (2026-11-21T14:02:54Z / 2026-11-21T17:32:54+03:30) → CURRENT-133 → NEXT-051
@@ -30,3 +30,7 @@ At commit 9190b0a9c2dcf1db0133bd937be0bb1a81d3624c (UTC 2026-11-21T13:59:24Z; Te
 
 ## Scope and remaining gates
 The earlier exact-head CI success remains valid for commit 9190b0a9c2dcf1db0133bd937be0bb1a81d3624c only. It does not certify later commits. The latest source correction is committed; rerun all workflows at the new exact head before claiming current CI success. PR #64 is not merged. Canonical ZIP rebuild, archive hash/inventory, extraction/read-back and independent clean-host recovery remain separate gates. No OAuth was performed. Sole queue remains NEXT-051.
+
+
+## Third recurrence — host-facing contract copies
+The exact head 0c36063afe9b5ec44f30da9d7031a2f000967cff failed portable conformance run 44912318893 because INDEPENDENT_HOST_RECOVERY_PROTOCOL.md still carried an older canonical chain. This is preserved as another historical failure under EVT-0299. The independent-host recovery protocol, interaction response protocol and host growth contract have now been updated additively. Current exact-head CI must pass before this checkpoint is considered fully verified.
