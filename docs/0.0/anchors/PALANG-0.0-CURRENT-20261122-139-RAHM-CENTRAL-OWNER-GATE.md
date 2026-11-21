@@ -54,6 +54,7 @@ A Child candidate is not the living Master. Any later promotion into canonical M
 - The authenticated GitHub connector identity is the same owner account. It can perform owner-authorized repository operations; it is not a separate bot identity.
 - The bot PR route is implemented in code but NOT operational until the private RAHM repo, GitHub App, variables/secrets, and private-repo connector access are configured.
 - The private RAHM repository is NOT CREATED / NOT VERIFIED. No promotion App is installed. No host is registered or ACTIVE.
+- ChatGPT can inspect RAHM records only after its GitHub connection is granted read access to the private RAHM repository. Direct live inspection of an individual host workspace additionally requires read access to that exact host-private repository; otherwise review is snapshot-based from owner exports.
 - Collaborator/team/App/deploy-key audit and negative cross-host tests remain OPEN / NOT VERIFIED.
 - ChatGPT can perform technical review on accessible proposals and report findings; the final GitHub approval remains the owner's account. No AI or Bot can self-approve or auto-merge.
 
