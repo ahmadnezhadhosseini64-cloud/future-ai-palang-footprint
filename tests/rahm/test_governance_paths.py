@@ -30,6 +30,7 @@ class GovernancePathTests(unittest.TestCase):
         self.assertNotIn("contents: write", workflow)
         self.assertNotIn('["git", "push"', controller)
         self.assertNotIn("subprocess.run", controller)
+        self.assertIn("# Evidence is local to the runner and uploaded as a workflow artifact.\n    # This controller has no GitHub write credential and never pushes to MASTER.\n    return out", controller)
 
     def test_conformance_workflow_is_read_only(self):
         workflow = self.read(".github/workflows/rahm-portable-conformance.yml")
