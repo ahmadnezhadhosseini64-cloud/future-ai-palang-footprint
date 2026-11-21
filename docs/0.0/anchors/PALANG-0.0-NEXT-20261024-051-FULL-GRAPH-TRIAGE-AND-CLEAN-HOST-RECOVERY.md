@@ -989,7 +989,7 @@ Preserve this as the sole active queue. The objective is to finish repository-re
 
 ## First-run host bootstrap compatibility repair — EVT-0297
 
-- Preserve and correct the active one-message bootstrap under [EVT-0297](../../architecture/BEHAVIOR-TRACE/EVT-0297-FIRST-RUN-HOST-BOOTSTRAP-COMPATIBILITY-REPAIR-2026-11-21.md).
+- Preserve and correct the active one-message bootstrap under [EVT-0297](../../architecture/BEHAVIOR-TRACE/EVT-0297-FIRST-RUN-HOST-BOOTSTRAP-COMPATIBILITY-REPAIR-2026-11-21.md) → [TIME-BINDING-EVT-0297](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0297-FIRST-RUN-HOST-BOOTSTRAP-COMPATIBILITY-REPAIR-2026-11-21.md).
 - The active bootstrap must resolve POINT-0/077 / CURRENT-130 / living master 1.7.84; the old POINT-0/074 / CURRENT-127 / 1.7.82 text is retained only in the immutable historical copy.
 - Acceptance sequence: PR merge → main read-back → exact-main canonical ZIP rebuild/receipt → fresh-host execution receipt. Do not claim HOST-RECOVERED from document repair alone.
 - This is a child repair under NEXT-051; no parallel queue is created.
