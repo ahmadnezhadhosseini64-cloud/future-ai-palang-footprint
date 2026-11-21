@@ -220,7 +220,7 @@ HOST PRIVATE WORKSPACE → OWNER-COMMANDED MONITOR/EXPORT → PRIVATE RAHM QUARA
 - .github/workflows/main.yml: ثبت evidence دیگر commit/push به main نمی‌کند؛ فقط artifact با retention ثبت می‌شود و permission به contents:read کاهش یافت.
 - .github/workflows/pending-registration-drain.yml: از drain/commit/push خودکار به ممیزی read-only و artifact تبدیل شد؛ هیچ فایل canonical را تغییر نمی‌دهد.
 - control-plane/controller.py و .github/workflows/execution-controller.yml: تولید recovery/runtime proof فقط در runner و artifact انجام می‌شود؛ git commit/push حذف شد و permission فقط read است.
-- .github/workflows/rahm-portable-conformance.yml: permission غیرضروری contents:write حذف و read-only شد.
+- .github/workflows/rahm-portable-conformance.yml: contents:write فقط برای انتشار release پایدار ZIP پس از main باقی می‌ماند؛ هیچ commit/push به branch ندارد و workflow_dispatch فقط برای مالک مجاز است.
 - worker قدیمی scripts/host_adapter_github_worker.py اکنون به‌طور کامل fail-closed و غیرفعال است؛ هیچ GitHub API request یا write انجام نمی‌دهد. مسیر آینده فقط owner export به RAHM خصوصی و bot-authored PR است.
 - هر workflow یا App جدید باید PR-only باشد؛ هیچ رباتی bypass یا حق merge به main دریافت نمی‌کند.
 
