@@ -165,7 +165,7 @@ POLICY DESIGNED / TECHNICAL ENFORCEMENT NOT VERIFIED / INDEPENDENT HOST ACCEPTAN
 زمان دقیق پیام کاربر در دسترس/تأییدشده نیست و نباید جعل شود. زمان canonical این نسخه باید از metadata واقعی commit نهایی که این قرارداد را ثبت می‌کند استخراج شود:
 - EVT-0292 registration commit UTC: 2026-11-21T07:49:07Z (SHA 6e7f58ac225b982435d022d57a905f00afe97efb).
 - EVT-0292 registration commit Asia/Tehran: 2026-11-21T11:19:07+03:30.
-- EVT-0292 registration commit SHA: 0a90a0c7351ab02f732024dd3029d965138f3872.
+- EVT-0292 registration commit SHA: 6e7f58ac225b982435d022d57a905f00afe97efb.
 زمان آخرین تغییر Git، مبنای UTC است؛ زمان تهران فقط تبدیل همان timestamp است.
 
 ## 12. وضعیت تحویل
