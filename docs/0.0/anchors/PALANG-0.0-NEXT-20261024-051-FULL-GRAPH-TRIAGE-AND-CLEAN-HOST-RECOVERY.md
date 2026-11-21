@@ -2,12 +2,12 @@
 
 - Stable ID: G6IP-RAHM-NEXT-051-20261024
 - Production ID: G6IP-RAHM-NEXT-051-20261024
-- Version: 1.0.50
+- Version: 1.0.51
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE
 - Project: Future AI / Palang Footprint — HAIF
 - Canonical queue: this file only
-- Current checkpoint: [CURRENT-130](PALANG-0.0-CURRENT-20261121-130-0PLUSPLUS-LIVE-ANCHOR.md)
-- Current point: [POINT-0/077 (0++ live marker on canonical root 0)](GPT6-RAHM-USER-POINT-0-20261121-077-0PLUSPLUS-LIVE-ANCHOR.md)
+- Current checkpoint: [CURRENT-132](PALANG-0.0-CURRENT-20261121-132-LATEST-RUNNABLE-OPEN-DEVELOPMENT.md)
+- Current point: [POINT-0/079 (0++ marker on canonical root 0)](GPT6-RAHM-USER-POINT-0-20261121-079-LATEST-RUNNABLE-OPEN-DEVELOPMENT.md)
 - Living mother: [سند مرجع مادر مدل اولیه](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 - Package contract: [HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md](../../../prototype/haif-gpt6-starter/HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md)
 - Canonical ZIP filename: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`
@@ -79,7 +79,14 @@ The current product goal is one continuously evolving initial package: stable id
 
 CI package build or CI-to-CI transfer is not proof that a real GPT-6 host imported the package. A package file does not itself create a live ChatGPT hook, automatic memory, background execution or external repository permissions.
 
-## Latest registered continuation
+## Latest registered continuation — POINT-0/079 (0++) / CURRENT-132
+
+- Chain: POINT-0/078 → CURRENT-131 → POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051.
+- Latest Runnable and Development / OPEN are separate promotion lanes. Old dependencies are scoped to affected consumers; independent proven capabilities may ship.
+- 0.0 steps 0.0.1–0.0.9 are the sole execution sequence. Do not create NEXT-052.
+- Existing canonical package 0.4.6 is verified for its recorded source only; target 0.4.7 awaits exact-current-main evidence.
+
+## Latest registered continuation (historical)
 
 POINT-0/051 (0+) → IN-089 → OUT-088 → EVT-0226 → CURRENT-101 → NEXT-051.
 
