@@ -1,4 +1,4 @@
-# EVT-0290 — ثبت نقطهٔ جاری گفتگو و پیوند زنجیره (2026-11-21)
+# QUARANTINED_DUPLICATE_ID_NONCANONICAL — EVT-0290-CURRENT-CHAT-ANCHOR — ثبت نقطهٔ جاری گفتگو و پیوند زنجیره (2026-11-21)
 
 - Point: [POINT-0/072](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-072-CURRENT-CHAT-ANCHOR-0PLUS.md)
 - Input: [IN-115](../../0.0/anchors/PALANG-0.0-IN-20261121-115-CURRENT-CHAT-ANCHOR.md)
@@ -12,3 +12,7 @@
 
 ## وضعیت شواهد
 ثبت فایل‌ها در مخزن باید با بازخوانی مسیرها تأیید شود. زمان دقیق ارسال پیام کاربر UNKNOWN / UNVERIFIED. زمان Commit و آخرین تغییر canonical از metadata واقعی Git استخراج می‌شود. بستهٔ canonical 0.4.3 و سند مادر 1.7.78 هنوز نیازمند تطبیق روی یک HEAD واحد و build جدید هستند. میزبان مستقل و persistence هنوز NOT RUN / OPEN هستند.
+
+
+## Collision reconciliation
+QUARANTINED_DUPLICATE_ID_NONCANONICAL. EVT-0290 was already assigned to the earlier LIVE-MIRROR-SYNC-RECHECK event. This same-number current-chat event must not be treated as canonical. The canonical POINT-0/072 continuation uses unique EVT-0291 and TIME-BINDING-EVT-0291. Preserve this file as forensic history; do not delete or reuse its identifier.
