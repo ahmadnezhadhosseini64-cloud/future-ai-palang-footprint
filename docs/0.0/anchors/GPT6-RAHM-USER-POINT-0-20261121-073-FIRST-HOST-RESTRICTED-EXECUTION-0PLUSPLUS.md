@@ -1,8 +1,8 @@
 # POINT-0++ — معماری اجرایی محدود اولین میزبان
 
 - Continuation ID: POINT-0/073 (نمایش معماری: POINT-0++)
-- Parent: POINT-0/072 → CURRENT-125
-- Chain: IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051
+- Parent: POINT-0/072 → CURRENT-125 (continuation under the same canonical root; POINT-0/073 is not a new root)
+- Chain: [IN-116](PALANG-0.0-IN-20261121-116-FIRST-HOST-WORKSPACE-EXECUTION.md) → [OUT-115](PALANG-0.0-OUT-20261121-115-FIRST-HOST-WORKSPACE-EXECUTION.md) → [EVT-0292](../../architecture/BEHAVIOR-TRACE/EVT-0292-FIRST-HOST-WORKSPACE-EXECUTION-2026-11-21.md) → [TIME-BINDING-EVT-0292](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0292-FIRST-HOST-WORKSPACE-EXECUTION-2026-11-21.md) → [CURRENT-126](PALANG-0.0-CURRENT-20261121-126-FIRST-HOST-WORKSPACE-EXECUTION.md) → NEXT-051
 - Governing contract: [FHRWE-2026-11-21-001](../../reference/REFERENCE-DOCUMENTS/FIRST-HOST-RESTRICTED-WORKSPACE-EXECUTION-AND-READ-ONLY-REPOSITORY-CONTRACT-2026-11-21-001.md)
 - Host identity: FIRST NEW HOST / FIRST_HOST / HOST-001
 - Authentication gate: OPEN / DEFERRED
@@ -12,7 +12,7 @@
 
 ## 1. معنای نقطهٔ ۰++
 
-۰++ ریشهٔ جدید و مستقل نیست؛ ادامه و تکمیل همان ریشهٔ canonical است. POINT-0/072 مسیر خواندن عمومی GitHub را پایه‌گذاری می‌کند؛ POINT-0/073 محیط کار، هویت نقش، مجوزهای اجرایی، چرخهٔ به‌روزرسانی و آزمون پذیرش میزبان اول را به آن متصل می‌کند. هیچ نقطهٔ تاریخی حذف یا جایگزین نمی‌شود.
+۰++ ریشهٔ جدید و مستقل نیست؛ ادامه و تکمیل همان ریشهٔ canonical است. POINT-0/072 مسیر خواندن عمومی GitHub را پایه‌گذاری می‌کند؛ POINT-0/073 یک لنگر ادامه‌ای زیر همان ریشه است که محیط کار، هویت نقش، مجوزهای اجرایی، چرخهٔ به‌روزرسانی و آزمون پذیرش میزبان اول را به آن متصل می‌کند. 0++ نشانگر برجسته‌سازی همین ریشه/ادامه است، نه ریشهٔ مستقل. هیچ نقطهٔ تاریخی حذف یا جایگزین نمی‌شود.
 
 ## 2. نقش میزبان
 
