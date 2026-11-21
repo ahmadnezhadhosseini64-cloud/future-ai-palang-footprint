@@ -50,7 +50,7 @@ https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
 3. branch `main` و exact commit SHA را واقعاً بخوان و ثبت کن. PUBLIC READ را با اتصال احراز‌شده یا مجوز WRITE اشتباه نگیر.
 4. هرگز رمز عبور، Personal Access Token، کلید خصوصی یا Secret را در چت درخواست نکن یا ذخیره نکن.
 5. READ، EXECUTE، WORKSPACE و WRITE را جداگانه ارزیابی کن. نبود EXECUTE یا workspace مانع READ عمومی نیست؛ فقط همان قابلیت را OPEN / NOT AVAILABLE ثبت کن.
-6. WRITE اختیاری است: فقط در صورت grant واقعی و روی branch اختصاصی میزبان؛ تغییرات از Pull Request وارد main می‌شوند. روی main، Release، secrets و workflowهای حساس مستقیم ننویس.
+6. میزبان روی هیچ branch از مخزن مادر نمی‌نویسد و PR به main ایجاد نمی‌کند. کار در workspace مستقل خودت انجام می‌شود؛ اگر مالک مخزن خصوصی اختصاصی فراهم نکرده، خروجی را فقط به‌صورت export محلی و receipt تحویل بده. هیچ master token درخواست نکن.
 7. فقط اگر مالک بخواهد میزبان مستقیماً در GitHub بنویسد یا به منبع خصوصی دسترسی یابد، OAuth/credential امن و حداقل‌اختیار در رابط رسمی مقصد لازم است. تأیید مالک در گفتگو، جای credential فنی یا grant مقصد را نمی‌گیرد.
 
 ### 2. بازیابی مرجع زنده از خود مخزن
@@ -96,7 +96,7 @@ https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
 4. بسته را فقط از منبع واقعی دریافت کن؛ SHA-256، اندازه، فهرست فایل‌ها، CRC، تطبیق بایت سند مادر داخل ZIP با سند مادر canonical و آزمون‌های استخراج‌شده را بررسی کن.
 5. اگر Python در محیط موجود است، موتور و آزمون‌ها را در workspace جداگانه اجرا کن. خروجی هر دستور را نگه دار. آزمون اجرا‌نشده را PASS نزن.
 6. برای همین میزبان یک workspace خصوصی بساز، فقط اگر محیط واقعاً قابلیت ذخیرهٔ پایدار و جداسازی دارد. در غیر این صورت `WORKSPACE_NOT_PERSISTENT` یا `ISOLATION_NOT_PROVEN` اعلام کن.
-7. نخستین تغییر را مستقیم روی main ننویس. اگر مسیر مجاز branch/PR یا host-intake connector وجود ندارد، تغییرات را به‌صورت proposal و فایل قابل‌انتقال آماده کن.
+7. هیچ مسیر branch/PR یا host-intake برای میزبان در مخزن مادر وجود ندارد. همهٔ خروجی‌ها proposal هستند و فقط مالک آن‌ها را به private RAHM منتقل می‌کند.
 
 ### 5. فضای کاری میزبان
 
@@ -133,8 +133,8 @@ HAIF-HOST-WORKSPACE/
 ### 7. امنیت و مجوزها
 
 - سطح پایه READ + EXECUTE در workspace مستقل است؛ این دو به‌معنی مجوز نوشتن روی main نیستند.
-- WRITE روی branch اختصاصی فقط در صورت grant واقعی GitHub connector مقصد مجاز است؛ اگر مجوز وجود ندارد، patch/proposal را تحویل بده و `WRITE_NOT_GRANTED` ثبت کن.
-- برای هر عملیات ممتاز یا تغییر خارج از branch اختصاصی، تأیید صریح مالک و سیاست مخزن لازم است.
+- WRITE به مخزن مادر برای میزبان همیشه ممنوع است. هر مسیر احتمالی به مخزن خصوصی میزبان فقط از broker تحت کنترل مالک است؛ تا زمان اثبات broker، export محلی تنها روش مجاز است.
+- هیچ عملیات ممتاز، bypass، branch، PR یا تغییر مخزن مادر در اختیار میزبان نیست. ارتقا فقط از مسیر owner-controlled RAHM و PR بات انجام می‌شود.
 - هیچ Secret، token یا credential را در چت، سند، log، ZIP یا مخزن قرار نده.
 - دسترسی یک میزبان به میزبان دیگر، workspace دیگر یا دادهٔ خصوصی را مفروض نگیر.
 - اگر مجوز، connector، sandbox، filesystem یا API در دسترس نیست، آن قابلیت را `BLOCKED / NOT SUPPORTED / NOT RUN` ثبت کن.
