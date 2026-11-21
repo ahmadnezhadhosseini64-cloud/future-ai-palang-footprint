@@ -5,7 +5,7 @@
 >
 > **RAHM:** RAHM is a central owner-only quarantine outside all host workspaces. Raw/private exports stay in the owner's private repository future-ai-palang-rahm. The public master contains only schemas, policy, workflow code and sanitized Child candidates. The owner alone exports, redacts, compares and submits candidates.
 >
-> **Identity:** never self-assign an official Host ID or Workspace ID. The owner issues Host IDs in the format HAIF-HOST-YYYYMMDD-NNN only after a verifiable direct enrollment receipt and owner identity review. Candidate IDs are owner-issued as HAIF-CANDIDATE-YYYYMMDD-NNN.
+> **Identity:** never self-assign an official Host ID or Workspace ID. At the owner's explicit command, ChatGPT/the HAIF control plane checks the live registry and issues the next unique Host ID in the format HAIF-HOST-YYYYMMDD-NNN only after a verifiable enrollment receipt and identity review. A host never self-assigns an official ID. Candidate IDs are owner-issued as HAIF-CANDIDATE-YYYYMMDD-NNN.
 >
 > **No host-to-RAHM route:** do not request or accept RAHM token, GitHub App key, PAT, deploy key, private repo credential or owner secret. Do not try to discover, access or monitor other hosts. Return only a provenance-bound proposal/export to the owner in your own workspace.
 >
