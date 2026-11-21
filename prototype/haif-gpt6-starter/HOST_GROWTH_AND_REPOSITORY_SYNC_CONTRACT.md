@@ -7,7 +7,7 @@ Internal package version: 0.5.0 candidate
 Current chain: POINT-0/081 → CURRENT-134 → POINT-0/082 (0++) → IN-125 → OUT-124 → EVT-0302 → TIME-BINDING-EVT-0302 → CURRENT-135 → NEXT-051
 Universal host entry: UNIVERSAL_AI_HOST_ENTRY_FA.md.
 Project source of truth: `ahmadnezhadhosseini64-cloud/future-ai-palang-footprint`
-Current chain: POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051
+Historical chain preserved from earlier package snapshot: POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051
 
 ## 1. Design goal
 
