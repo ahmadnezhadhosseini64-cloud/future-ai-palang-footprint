@@ -1,4 +1,4 @@
-# EVT-0291 — Owner confirmation and secure GitHub authorization — 2026-11-21
+# EVT-0291 — Easy read-only GitHub connection for a new host — 2026-11-21
 
 - Point: POINT-0/072 (0++ marker on the canonical root, not a new root).
 - Input / Output: IN-115 / OUT-114.
@@ -8,13 +8,10 @@
 - Status: PROPOSAL REGISTERED ON HOST-INTAKE BRANCH; NOT MERGED.
 
 ## Behavior contract
-A new host receiving the living master or portable ZIP asks for the exact owner-confirmation phrase «احمد نژادحسینی» before repository operations. The phrase is public in the artifacts and is not a password, identity proof, OAuth credential or permission. After phrase match, the host must use official GitHub OAuth/connector and verify the connected GitHub owner account `ahmadnezhadhosseini64-cloud`. Start READ-ONLY. Writes require least-privilege broker/worker, host-intake quarantine, owner-reviewed PR and exact read-back. Never request or store passwords, PATs or secrets in chat.
+A new AI host receiving the living master or portable ZIP should establish a low-friction, read-only connection to the canonical GitHub repository using the official GitHub connector available in that host environment. If it is not connected, guide the owner to the product's official account-connection/authorization UI. Never request or store GitHub passwords, PATs or secrets in chat. Verify read access to the exact repository, then recover main HEAD, the living master, latest verified ZIP pointer and receipts. If the connector or permission is unavailable, report BLOCKED / NOT CONNECTED / NOT VERIFIED without simulating success.
 
-## Source changes
-- Added `prototype/haif-gpt6-starter/OWNER-CONFIRMATION-AND-GITHUB-AUTHORIZATION-CONTRACT.md`.
-- Updated `ONE_MESSAGE_HOST_BOOTSTRAP_FA.md`, `GPT6_HOST_INSTRUCTIONS.md`, package `README.md`, package `manifest.json`.
-- Updated living mother to v1.7.79.
-- Added POINT-0/072, IN-115, OUT-114, CURRENT-125 and this event/time-binding.
+## Explicitly deferred
+The phrase «احمد نژادحسینی», owner-confirmation/password gate, expanded authentication UX and any write authorization are intentionally deferred to a later design phase and remain OPEN. This phase does not attempt repository writes, broker deployment, host-intake writeback or main-branch changes.
 
 ## Evidence boundary
-This event records source changes on a proposal branch only. It does not claim main-branch integration, ZIP rebuild, OAuth activation, broker deployment, branch protection, or real external-host acceptance.
+This event records source changes on a proposal branch only. It does not claim main-branch integration, ZIP rebuild, successful connection on an independent host, persistent workspace, broker deployment, branch protection or host recovery.
