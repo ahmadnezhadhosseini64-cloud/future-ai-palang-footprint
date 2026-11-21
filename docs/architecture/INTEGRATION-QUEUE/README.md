@@ -2859,3 +2859,6 @@ Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-11
 - POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051.
 - EVT-0290 remains the earlier mirror-only event; the duplicate current-chat EVT-0290 record is quarantined.
 - Living mother 1.7.79; package source 0.4.4 remains unverified after failed exact-head RAHM/Audit. External host acceptance and restart persistence remain OPEN / NOT RUN.
+
+
+- Preserved mirror lineage: [EVT-0241](../BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) / [TIME-BINDING-EVT-0241](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md).
