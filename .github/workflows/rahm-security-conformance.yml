@@ -57,6 +57,20 @@ jobs:
       - name: Compile RAHM validator and execution controller
         run: |
           python -m py_compile scripts/rahm/prepare_promotion.py scripts/rahm/validate_host_registry.py control-plane/controller.py
+      - name: Validate Host Registry schema and isolation invariants
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from jsonschema import Draft202012Validator, FormatChecker
+          schema = json.loads(Path("docs/architecture/HOST-REGISTRY/HOST-REGISTRY-SCHEMA.json").read_text(encoding="utf-8"))
+          registry = json.loads(Path("docs/architecture/HOST-REGISTRY/HOST-REGISTRY.json").read_text(encoding="utf-8"))
+          Draft202012Validator.check_schema(schema)
+          errors = list(Draft202012Validator(schema, format_checker=FormatChecker()).iter_errors(registry))
+          assert not errors, [e.message for e in errors]
+          print("HOST_REGISTRY_SCHEMA=PASS")
+          PY
+          python scripts/rahm/validate_host_registry.py --registry docs/architecture/HOST-REGISTRY/HOST-REGISTRY.json
       - name: Validate candidate manifest schema
         run: |
           python - <<'PY'
