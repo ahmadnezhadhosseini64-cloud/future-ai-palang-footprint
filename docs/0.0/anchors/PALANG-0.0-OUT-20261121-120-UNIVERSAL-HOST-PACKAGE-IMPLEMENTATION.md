@@ -15,3 +15,6 @@ Register OUT-120 universal host package implementation
 - Export manifest: [EXPORT_MANIFEST.json](../../portable/RAHM/EXPORT_MANIFEST.json).
 
 - Paired input: [IN-121](PALANG-0.0-IN-20261121-121-UNIVERSAL-HOST-PACKAGE-AND-0PLUSPLUS-CONTINUATION.md).
+
+
+Canonical point label: POINT-0/077 (۰++). This output remains under the existing canonical root.
