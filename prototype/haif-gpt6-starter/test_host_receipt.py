@@ -2,7 +2,7 @@ import importlib.util
 import unittest
 from pathlib import Path
 
-MODULE_PATH = Path(__file__).resolve().parents[1] / "host_receipt.py"
+MODULE_PATH = Path(__file__).resolve().parent / "host_receipt.py"
 SPEC = importlib.util.spec_from_file_location("host_receipt", MODULE_PATH)
 host_receipt = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(host_receipt)
