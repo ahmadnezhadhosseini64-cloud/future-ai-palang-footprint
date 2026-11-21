@@ -4,9 +4,11 @@
 - Point: POINT-0/072 (0++).
 - Exact user-message timestamp: UNKNOWN / UNVERIFIED.
 - Canonical time source: GitHub commit metadata for the final commit that registers EVT-0292.
-- UTC: PENDING FINAL EVENT COMMIT.
-- Asia/Tehran (+03:30): PENDING DERIVATION FROM THE SAME UTC INSTANT.
-- Event commit SHA: PENDING FINAL EVENT COMMIT.
-- Time-binding commit SHA and timestamp: PENDING AFTER READ-BACK.
+- UTC: 2026-11-21T07:42:48Z.
+- Asia/Tehran (+03:30): 2026-11-21T11:12:48+03:30.
+- Event commit SHA: 0a90a0c7351ab02f732024dd3029d965138f3872.
+- Time-binding commit SHA and timestamp: b61d7e1e730e12e27b38616d74f1ff47114c6895 at UTC 2026-11-21T07:42:52Z / Tehran 2026-11-21T11:12:52+03:30.
 - Rule: UTC is permanent base; Tehran is a conversion of the exact same event-commit timestamp. Never substitute an estimated message time or tool execution time.
 - Technical enforcement / independent-host acceptance: NOT VERIFIED / NOT RUN.
+
+- Event timestamp source: GitHub commit metadata for EVT-0292 registration commit 0a90a0c7351ab02f732024dd3029d965138f3872. User-message timestamp remains UNKNOWN / UNVERIFIED.
