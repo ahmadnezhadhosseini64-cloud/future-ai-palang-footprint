@@ -90,3 +90,10 @@ Internal package version: 0.4.5. Living master: 1.7.81. Current chain: POINT-0/0
 ## Current canonical chain — package v0.4.6 / CURRENT-131
 
 Internal package version: 0.4.6. Living master: 1.7.86. Current chain: POINT-0/077 (0++) → CURRENT-130 → IN-121 → OUT-120 → EVT-0297 → TIME-BINDING-EVT-0297 → CURRENT-131 → NEXT-051. The canonical root and sole queue are preserved. The universal host contract, bootstrap, receipt schema, validator and tests are included in the same canonical starter package. Package verification and independent-host recovery remain separate gates.
+
+
+## Current canonical chain — package v0.4.6 / CURRENT-132
+
+POINT-0/077 (0++) → CURRENT-130 → IN-121 → OUT-120 → EVT-0297 → TIME-BINDING-EVT-0297 → CURRENT-131 → IN-122 → OUT-121 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-132 → NEXT-051
+
+The AI Vacuum Point is a permanent addition to this same package lineage. STOP and THINKING_START remain separate runtime anchors; calculate the interval only from observed timestamps on comparable clocks. Behavioral receipts contain externally observable events only, never private chain-of-thought. The exact package build and independent-host recovery are separate acceptance gates.
