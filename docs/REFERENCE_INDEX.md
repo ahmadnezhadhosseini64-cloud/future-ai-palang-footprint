@@ -2710,3 +2710,14 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - [CURRENT-134](0.0/anchors/PALANG-0.0-CURRENT-20261121-134-COPYABLE-HOST-BOOTSTRAP.md) → sole active [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - [One-message host bootstrap](../prototype/haif-gpt6-starter/ONE_MESSAGE_HOST_BOOTSTRAP_FA.md) is the copyable destination-host instruction.
 - Previous package 0.4.9 receipt remains historical to its source SHA; exact-main package rebuild is required after this source update.
+
+
+## POINT-0/085 — گیت گفت‌وگویی ورود میزبان تازه
+
+- Point: [POINT-0/085](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-085-OWNER-VERBAL-ENTRY-GATE.md).
+- Input/output: [IN-128](0.0/anchors/PALANG-0.0-IN-20261121-128-OWNER-VERBAL-ENTRY-GATE.md) / [OUT-127](0.0/anchors/PALANG-0.0-OUT-20261121-127-OWNER-VERBAL-ENTRY-GATE.md).
+- Event/time: [EVT-0305](architecture/BEHAVIOR-TRACE/EVT-0305-OWNER-VERBAL-ENTRY-GATE-2026-11-21.md) / [TIME-BINDING-EVT-0305](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0305-OWNER-VERBAL-ENTRY-GATE-2026-11-21.md).
+- Checkpoint: [CURRENT-138](0.0/anchors/PALANG-0.0-CURRENT-20261121-138-OWNER-VERBAL-ENTRY-GATE.md) → sole active [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Universal one-message host entry upgraded to v1.2.0: host must ask the owner for the initial conversational code before any repository/tool action; code is not included in the prompt or public repo.
+- Permanent standard: [OWNER-VERBAL-ENTRY-GATE](architecture/HOST-SECURITY/OWNER-VERBAL-ENTRY-GATE.md). This is conversational-only, not cryptographic authentication or GitHub authorization.
+- GitHub branch protection/rulesets, collaborator/App audit, private host repo provisioning and broker remain OPEN / NOT VERIFIED.
