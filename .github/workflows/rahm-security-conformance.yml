@@ -56,7 +56,7 @@ jobs:
         run: python -m unittest discover -s tests/rahm -v
       - name: Compile RAHM validator and execution controller
         run: |
-          python -m py_compile scripts/rahm/prepare_promotion.py control-plane/controller.py
+          python -m py_compile scripts/rahm/prepare_promotion.py scripts/rahm/validate_host_registry.py control-plane/controller.py
       - name: Validate candidate manifest schema
         run: |
           python - <<'PY'
