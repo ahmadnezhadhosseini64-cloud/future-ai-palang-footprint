@@ -23,13 +23,13 @@
 
 ## Security enforcement correction — PR #90 / POINT-0/084
 
-- The legacy `scripts/host_adapter_github_worker.py` now fails closed when the target is the canonical master repository. It refuses host-originated writes to the master, including `host-intake`.
+- The legacy `scripts/host_adapter_github_worker.py` is fully disabled and exits before any GitHub API request. The old `host-intake` branch is frozen.
 - The portable conformance workflow now asserts the master-write guard.
 - GPT-6 host instructions and the host-growth contract explicitly prohibit master credentials and host-facing master writes. The host must not hold a GitHub token, PAT, deploy key or App token.
 - PR #90: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/pull/90
 - Merge commit: `048b3be7c2ffbcea607f26ab804494a0b31e7cd5`; UTC `2026-11-21T20:09:00Z`; Tehran `2026-11-21T23:39:00+03:30`.
 - Read-back: 8/8 changed files fetched from main; blob SHA matches 8/8.
-- This is a code-level fail-closed guard in the legacy worker, not a substitute for GitHub branch rules, collaborator/App audit, or a deployed broker. Those remain OPEN / NOT VERIFIED.
+- The legacy worker is fully disabled, not a broker. This does not replace GitHub branch rules, collaborator/App audit, or actual private host workspace isolation; those remain OPEN / NOT VERIFIED.
 - Each verified host still requires an owner-created PRIVATE repository. No such per-host repository or broker/App installation was created by this PR.
 
 
