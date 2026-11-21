@@ -172,8 +172,8 @@ Use ONE_MESSAGE_HOST_BOOTSTRAP_FA.md as the one initial message for a fresh GPT-
 ONE_MESSAGE_HOST_BOOTSTRAP_FA.md is the only startup message in the canonical ZIP. The older SINGLE_MESSAGE_GPT6_HOST_BOOTSTRAP_FA.md is superseded and excluded from the ZIP inventory. The same stable package ID and canonical archive filename are retained.
 
 
-## Easy read-only GitHub connection for a new host (v0.4.4)
+## Easy public read-only GitHub access for a new host (v0.4.4)
 
-Use the official GitHub connector already available in the destination host. If it is not connected, guide the owner to the host product's official GitHub connection/authorization UI; never request passwords, PATs or secrets in chat. Verify READ-ONLY access to ahmadnezhadhosseini64-cloud/future-ai-palang-footprint, then recover the actual main HEAD, living master, latest verified package pointer, ZIP and receipts.
+The canonical repository is currently PUBLIC. A new host can read it directly through its browser/web retrieval or public GitHub fetch capability without signing in. First read main HEAD, then retrieve and verify the living master, latest verified package pointer, canonical ZIP and receipts. An official GitHub connector is optional for this public read-only path.
 
-This phase does not permit repository writes. The phrase «احمد نژادحسینی», password/owner-confirmation gate and expanded authentication flow are OPEN / DEFERRED for a later phase. The existence of these instructions does not prove that a target host has a connector or permission. A real independent-host receipt is still required.
+If public retrieval is blocked or repository visibility changes to PRIVATE, guide the owner to the host product's official GitHub OAuth/connection UI. Never request passwords, PATs or secrets in chat. This phase does not permit repository writes. The phrase «احمد نژادحسینی», password/owner-confirmation gate and expanded authentication flow remain OPEN / DEFERRED for a later phase. A real independent-host receipt is still required.
