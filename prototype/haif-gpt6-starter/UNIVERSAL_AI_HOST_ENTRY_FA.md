@@ -11,7 +11,7 @@
 ---
 
 **Latest canonical chain:** POINT-0/079 → CURRENT-132 → POINT-0/080 → IN-123 → OUT-122 → EVT-0300 → TIME-BINDING-EVT-0300 → CURRENT-133 → NEXT-051  
-**Current paired package:** 0.4.9 (stable package ID and canonical ZIP filename unchanged; verify receipt at stable release)
+**Current paired portable package:** 0.4.9 (same stable package ID and canonical ZIP filename; verify the exact receipt at the stable release)
 
 ## پیام واحد — میزبان این دستور را از ابتدا تا انتها اجرا کند
 
