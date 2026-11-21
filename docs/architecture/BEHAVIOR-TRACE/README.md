@@ -1,4 +1,11 @@
-## Latest registered event — EVT-0298 / POINT-0/078 (0++)
+## Latest registered event — EVT-0299 / POINT-0/079 (0++)
+
+- Chain: POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051.
+- Registration commit: 2026-11-21T15:27:55Z / 2026-11-21T18:57:55+03:30; owner-message time UNKNOWN / UNVERIFIED.
+- Latest Runnable / Development split and dependency-scope rule registered; package 0.4.7 target awaits exact-main verification.
+- Previous points and events remain historical and append-only.
+
+## Historical latest event — EVT-0298 / POINT-0/078 (0++)
 
 - Chain: POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → NEXT-051.
 - Registration commit time: 2026-11-21T15:02:52Z / 2026-11-21T18:32:52+03:30; owner-message time UNKNOWN / UNVERIFIED.

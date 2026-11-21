@@ -1,28 +1,37 @@
-- Current point: [CURRENT-131](../../0.0/anchors/PALANG-0.0-CURRENT-20261121-131-UNIVERSAL-HOST-INITIAL-RUNNABLE.md); active next: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
-- Latest chain: POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → NEXT-051. Target: universal host onboarding, package recovery and 0.0 completion; external-host capabilities remain separately gated.
+- Current point: [CURRENT-132](../../0.0/anchors/PALANG-0.0-CURRENT-20261121-132-LATEST-RUNNABLE-OPEN-DEVELOPMENT.md); active next: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Latest chain: POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051. Target: universal host onboarding, package recovery and 0.0 completion; external-host capabilities remain separately gated.
 
 - Current point: [CURRENT-131](../../0.0/anchors/PALANG-0.0-CURRENT-20261121-131-UNIVERSAL-HOST-INITIAL-RUNNABLE.md); active next: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - Latest chain: POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → NEXT-051. Target: universal host onboarding, package recovery and 0.0 completion; external-host capabilities remain separately gated.
 
-## Latest canonical continuation — POINT-0/074 (0++) / CURRENT-127
+## Historical canonical continuation — POINT-0/074 (0++) / CURRENT-127
 
 - Chain: POINT-0/073 → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051.
 - Living mother target: 1.7.80. Canonical package identity and ZIP filename are preserved; exact-head build and receipt are required.
 - Registration is append-only. Previous POINT-0/072 / CURRENT-125 and all earlier history remain intact.
 - Independent-host import, OAuth, durable workspace, restart persistence, live/idle capture and unresolved graph triage remain OPEN / NOT RUN until direct evidence exists.
 
+
+
+## Latest canonical continuation — POINT-0/079 (0++) / CURRENT-132
+
+- Chain: POINT-0/078 → CURRENT-131 → POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051.
+- Living master: 1.7.86. Portable package target: 0.4.7; previous 0.4.6 receipt remains valid only for its recorded source SHA until 0.4.7 exact-main conformance completes.
+- Latest Runnable / Development / Historical are separate lanes. Legacy dependencies are triaged by affected consumer; independent proven capabilities may be packaged.
+- 0.0.1–0.0.9 remain the sole execution steps. NEXT-051 is the only active queue; no parallel NEXT is created.
+
 # صف یکپارچه‌سازی تغییرات معماری — Architecture Integration Queue
 
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.10.53
+- Version: 1.10.54
 - Date: 2026-11-21
 - Exact Time: EVT-0261 event commit UTC `2026-11-10T06:47:53Z` / Tehran `2026-11-10T10:17:53+03:30`; initial time-binding commit UTC `2026-11-10T06:48:18Z` / Tehran `2026-11-10T10:18:18+03:30`.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: ACTIVE / LIVING — main root POINT-0/078 / EVT-0298; certificate child root CERT-POINT-0.0-20261120-002 / EVT-0274 remains separate; checkpoint CURRENT-131; sole active queue NEXT-051 v1.0.50; latest mirror-only event EVT-0290. Source blob de1b75f07241c9b313e476af5f1417177ff78c10 unchanged; Library v7 normalized match with one extra terminal LF; no source or Library write. Post-registration Audit 44874521121 and Portable RAHM 44874520968 PASS on exact SHA 910cd24b9c9d0af2cdc7c6090386919f304b6819; Evidence Gate 44874520977 PASS on that SHA and created follow-up main 5c2a860e2fc1f7f36e3ee935b0daa3f62752e896 at UTC 2026-11-21T06:13:35Z; current main 5c2a860... has no exact-head Audit/RAHM and remains NOT VERIFIED. CURRENT-065/CURRENT-066 and overlay-manifest lineage, Issues #20/#21, NEXT-051 forensic archive and historic graph/identity/parent/time reconciliation remain OPEN.
+- Status: ACTIVE / LIVING — main root POINT-0/079 / EVT-0299; certificate child root CERT-POINT-0.0-20261120-002 / EVT-0274 remains separate; checkpoint CURRENT-132; sole active queue NEXT-051 v1.0.51; latest mirror-only event EVT-0290. Source blob de1b75f07241c9b313e476af5f1417177ff78c10 unchanged; Library v7 normalized match with one extra terminal LF; no source or Library write. Post-registration Audit 44874521121 and Portable RAHM 44874520968 PASS on exact SHA 910cd24b9c9d0af2cdc7c6090386919f304b6819; Evidence Gate 44874520977 PASS on that SHA and created follow-up main 5c2a860e2fc1f7f36e3ee935b0daa3f62752e896 at UTC 2026-11-21T06:13:35Z; current main 5c2a860... has no exact-head Audit/RAHM and remains NOT VERIFIED. CURRENT-065/CURRENT-066 and overlay-manifest lineage, Issues #20/#21, NEXT-051 forensic archive and historic graph/identity/parent/time reconciliation remain OPEN.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
