@@ -1,7 +1,7 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.8.29",
-  "manifest_status": "Canonical chain POINT-0/071 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051. Duplicate-ID alternate files quarantined. Package 0.4.3 rebuild pending.",
+  "version": "1.8.30",
+  "manifest_status": "Package source 0.4.3 has passed RAHM run 44873029290 and audit 44873029194 on source adde4cd8859e94a3f44083dd91f7d549ef684cc8. Master 1.7.78 receipt update triggers a fresh rebuild; the latest release pointer and receipt are authoritative. Canonical chain POINT-0/071 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051; duplicate-ID alternate files quarantined; external host acceptance remains NOT RUN.",
   "created_from_checkpoint": "HAIF-POINT-0-044-STARTER-ZIP-INPLACE-UPDATE-20261027 + HAIF-CURRENT-094",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [
