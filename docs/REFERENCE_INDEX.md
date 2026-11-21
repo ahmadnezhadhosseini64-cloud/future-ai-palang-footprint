@@ -3,7 +3,7 @@
 **Project:** Future AI / Palang Footprint  
 **Reference Point:** 0.0  
 **Status:** ACTIVE  
-**Last Updated:** 2026-11-21 — mirror-only EVT-0290; latest main root POINT-0/071 / IN-114 / OUT-113 / EVT-0289 / CURRENT-124; sole active queue NEXT-051. Source blob de1b75f07241c9b313e476af5f1417177ff78c10 unchanged; Library v7 normalized match with one extra terminal LF; no source or Library write. Audit 44873263050 and RAHM 44873263161 PASS on exact SHA 0ffd5120930e2a8cc69b3dae666b16280677655b; Evidence Gate 44873263105 PASS on that same SHA and created follow-up main 080a15cde2cd9a2f8bc27ebf295879a4d7a60360 at 2026-11-21T05:57:43Z; current main 080a15c... NOT VERIFIED by exact-head Audit/RAHM. CURRENT-065/CURRENT-066 and overlay-manifest lineage, Issues #20/#21 and external host/destination gates remain open.
+**Last Updated:** 2026-11-21 — mirror-only EVT-0290; latest main root POINT-0/071 / IN-114 / OUT-113 / EVT-0289 / CURRENT-124; sole active queue NEXT-051. Source blob de1b75f07241c9b313e476af5f1417177ff78c10 unchanged; Library v7 normalized match with one extra terminal LF; no source or Library write. Post-registration Audit 44874521121 and RAHM 44874520968 PASS on exact SHA 910cd24b9c9d0af2cdc7c6090386919f304b6819; Evidence Gate 44874520977 PASS on that SHA and created follow-up main 5c2a860e2fc1f7f36e3ee935b0daa3f62752e896 at 2026-11-21T06:13:35Z; current main 5c2a860... NOT VERIFIED by exact-head Audit/RAHM. CURRENT-065/CURRENT-066 and overlay-manifest lineage, Issues #20/#21 and external host/destination gates remain open.
 
 ## Canonical References
 

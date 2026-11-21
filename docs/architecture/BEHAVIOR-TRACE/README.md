@@ -1420,4 +1420,4 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - [EVT-0290](./EVT-0290-LIVE-MIRROR-SYNC-RECHECK-2026-11-21.md) / [TIME-BINDING-EVT-0290](./TIME-BINDING-EVT-0290-LIVE-MIRROR-SYNC-RECHECK-2026-11-21.md).
 - Mirror-only; no new root, IN/OUT pair, checkpoint identity or queue. Current chain remains POINT-0/071 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051.
 - Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` unchanged; Library v7 normalized match with one extra terminal LF; no source or Library write.
-- Latest Audit/RAHM passed on `0ffd512...`; Evidence Gate produced main follow-up `080a15c...`, which remains NOT VERIFIED by exact-SHA Audit/RAHM.
+- Post-registration Living Architecture Audit 44874521121 and Portable RAHM Conformance 44874520968 PASS on exact registration SHA `910cd24b9c9d0af2cdc7c6090386919f304b6819`. Evidence Gate 44874520977 PASS on that SHA and created follow-up main `5c2a860e2fc1f7f36e3ee935b0daa3f62752e896` at UTC `2026-11-21T06:13:35Z`; current HEAD `5c2a860...` is NOT VERIFIED by exact-SHA Audit/RAHM.
