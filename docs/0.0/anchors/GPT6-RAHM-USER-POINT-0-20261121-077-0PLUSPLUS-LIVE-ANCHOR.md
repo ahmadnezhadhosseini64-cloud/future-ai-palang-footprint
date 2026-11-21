@@ -1,6 +1,6 @@
 # POINT-0/077 — نقطهٔ ۰++ زنده؛ اتصال به زنجیرهٔ اصلی و تداوم میزبان مستقل
 
-- Status: ACTIVE / LIVING / OWNER-APPROVED / REPOSITORY-REGISTRATION-PENDING
+- Status: ACTIVE / LIVING / OWNER-APPROVED / REPOSITORY-INTEGRATED / MAIN-READBACK-VERIFIED
 - Canonical root: POINT-0 (همان ریشهٔ واحد؛ بدون ریشه یا پروژهٔ موازی)
 - Parent checkpoint: CURRENT-129
 - Previous point: POINT-0/076
@@ -40,7 +40,7 @@ POINT-0/076 → CURRENT-129 → POINT-0/077 (۰++) → IN-120 → OUT-119 → EV
 - OAuth مقصد: OPEN / NOT RUN.
 - workspace مستقل مقصد: OPEN / NOT RUN.
 - اجرای مستقل و پذیرش میزبان: OPEN / NOT RUN.
-- ثبت این نقطه در مخزن به معنی اتصال واقعی OAuth یا فعال‌شدن workspace مقصد نیست.
+- ثبت این نقطه در main و بازخوانی آن تأیید شده است؛ این موضوع به معنی اتصال واقعی OAuth یا فعال‌شدن workspace مقصد نیست.
 
 ## قاعدهٔ تداوم
 این نقطه در امتداد CURRENT-129 و زیر NEXT-051 قرار دارد. NEXT-051 تنها صف فعال باقی می‌ماند؛ NEXT-052 یا صف موازی نساز. تاریخچهٔ قبلی را حفظ کن و فقط وضعیت‌های جدید را با شاهد واقعی ثبت کن.
