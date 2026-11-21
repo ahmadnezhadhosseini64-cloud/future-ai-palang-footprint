@@ -40,3 +40,17 @@ The owner explicitly authorized repairing the first-run incompatibility while pr
 ## Status boundary
 
 This event records the identified mismatch and a branch-level correction. It is not a claim of merged-to-main, package-verified or host-recovered status. The historical failure remains part of the permanent lineage and must not be deleted or rewritten.
+
+
+## Exact-source package and CI verification
+
+- Portable conformance workflow: [Run 44912345970](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44912345970) — SUCCESS.
+- Living Architecture Audit: [Run 44912346031](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44912346031) — SUCCESS.
+- Cross-Layer Integrity Gate: [Run 44912346113](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44912346113) — SUCCESS.
+- Package build source SHA: `a1ddf3ffff931efebdd28e42b78b5868cb6e9869`.
+- Main HEAD read after the Evidence Gate follow-up: `0ee05e21da72b9ea5cb7ce457d1042c418945356`; comparison confirms the only intervening change was `evidence/evidence-gate-44912345887.txt`, so package source and paired master are byte-equivalent to that current HEAD.
+- Canonical ZIP: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`; internal package version `0.4.5`; size `249028` bytes; SHA-256 `84168f0aa74cef377fc7085aca646bdd3c2d7099a61fc21d425968f81908a3ec`.
+- Extracted tests: `24/24 PASS`; ZIP CRC/integrity, source-byte read-back, downloaded-artifact round-trip and paired living-master inclusion/byte-match: PASS.
+- Durable latest-verified release: [haif-latest-verified](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified).
+- Artifact upload ID: `14710546447`.
+- Independent destination-host OAuth, workspace creation, restart and HOST-RECOVERED acceptance remain OPEN / NOT RUN; package verification does not close them.
