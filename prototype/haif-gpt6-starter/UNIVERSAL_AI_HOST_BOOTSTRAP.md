@@ -47,3 +47,10 @@ The validator uses Python standard library only. The JSON Schema is the interope
 ## Acceptance status
 
 These artifacts do not create a new GPT session, grant OAuth, provision a workspace, or prove independent-host recovery. Those remain OPEN until a destination host returns direct evidence.
+
+
+## AI Vacuum Point — required temporal and behavioral observability
+
+Read the AI Vacuum temporal/behavioral anchor contract and apply it to every interaction when runtime telemetry exists. Record STOP for the prior turn and THINKING_START for the next request-processing start as separate anchors. If the host exposes only request receipt, record REQUEST_RECEIVED separately; do not mislabel it as THINKING_START. Calculate duration only from two observed timestamps on the same clock source. Otherwise preserve null and report UNMEASURABLE or CLOCK_CONFLICT.
+
+Append only externally observable behavior events (context retrieval, repository/file access, tool calls, code/test execution, validation, response sent). Do not expose or store private chain-of-thought, hidden deliberation, scratchpads, or secrets. Validate interval records with `ai-vacuum-interval.schema.json` and calculate intervals using `ai_vacuum.py`.
