@@ -1,6 +1,9 @@
 # RAHM_BOOT — Portable startup contract
-Package ID: HAIF-RAHM-PORTABLE-20261024-001 | Version: 1.0.2
+Package ID: HAIF-RAHM-PORTABLE-20261024-001 | Version: 1.0.3
 Purpose: initialize an evidence-based Rahm growth/testing environment without assuming hidden chat history, persistent memory, tools, or background execution.
+
+Current canonical continuation: POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051
+Living master: 1.7.86. Portable starter target: 0.4.7; 0.4.6 remains the last verified receipt until the new exact-main build passes.
 
 ## First response on a new host
 1. Identify package/version and list files actually supplied.
@@ -21,6 +24,12 @@ MASTER → RAHM → OBSERVATION → BEHAVIOR STUDY → VALIDATION → CHILD CAND
 - Preserve failed tests, conflicts, corrections, old versions and unresolved gaps.
 - No Child promotion without acceptance criteria, evidence, regression tests, review, read-back and explicit Master decision.
 - Unsupported = UNSUPPORTED; untested = NOT TESTED.
+
+## Release lanes
+- Latest Runnable: only source-backed capabilities that pass their scoped tests and read-back.
+- Development / OPEN: incomplete, host-dependent or legacy-dependency-limited capabilities remain active with explicit blockers and promotion criteria.
+- Historical: preserve old package versions, digests, failures and dependency records append-only.
+- A legacy dependency blocks only affected consumers unless regression evidence proves wider impact.
 
 ## Status vocabulary
 REGISTERED = written; READ-BACK VERIFIED = fetched again and matched; VALIDATED = acceptance tests passed; ACTIVE = selected; LIVING = additive evolution; OPEN/PENDING = unfinished; NOT VERIFIED = insufficient evidence; NOT RUN = no execution evidence.
