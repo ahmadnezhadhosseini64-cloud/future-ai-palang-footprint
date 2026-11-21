@@ -46,3 +46,8 @@ OAuth مقصد، workspace پایدار، clean-host recovery، restart و HOST-
 - Independent-host recovery proof protocol: [INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL](../../architecture/مدل%20اولیه%20AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md)
 - Package recovery protocol: [INDEPENDENT_HOST_RECOVERY_PROTOCOL.md](../../../prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md)
 - Export manifest: [EXPORT_MANIFEST.json](../../portable/RAHM/EXPORT_MANIFEST.json)
+
+
+## Subsequent package verification — 0.4.8
+
+Package 0.4.8 verified by workflow 44921364797 on main SHA 680a1f788a50e38da4b71768f8291dde0eeeaa31; paired master 1.7.87; 19 files; 257102 bytes; 24/24 tests PASS; CRC, exact artifact-ID download, source-byte read-back and artifact round-trip PASS. SHA-256 1e1bbab0c7acb0975b77176abc5c38f7e7097cfe8cf67b17153ffe1db4da65a6. Package 0.4.7 remains historical. The next current chain is POINT-0/080 → CURRENT-133 and package target 0.4.9.
