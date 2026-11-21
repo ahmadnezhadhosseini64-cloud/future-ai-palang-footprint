@@ -2,18 +2,26 @@
 
 - Stable ID: G6IP-RAHM-NEXT-051-20261024
 - Production ID: G6IP-RAHM-NEXT-051-20261024
-- Version: 1.0.49
+- Version: 1.0.50
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE
 - Project: Future AI / Palang Footprint — HAIF
 - Canonical queue: this file only
-- Current checkpoint: [CURRENT-127](PALANG-0.0-CURRENT-20261121-127-0PLUSPLUS-TO-0-0-COMPLETION.md)
-- Current point: [POINT-0/074 (0++ marker on canonical root 0)](GPT6-RAHM-USER-POINT-0-20261121-074-0PLUSPLUS-TO-0-0-COMPLETION.md)
+- Current checkpoint: [CURRENT-130](PALANG-0.0-CURRENT-20261121-130-0PLUSPLUS-LIVE-ANCHOR.md)
+- Current point: [POINT-0/077 (0++ live marker on canonical root 0)](GPT6-RAHM-USER-POINT-0-20261121-077-0PLUSPLUS-LIVE-ANCHOR.md)
 - Living mother: [سند مرجع مادر مدل اولیه](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 - Package contract: [HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md](../../../prototype/haif-gpt6-starter/HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md)
 - Canonical ZIP filename: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`
 - Stable package ID: `HAIF-GPT6-PORTABLE-STARTER-20261025-004`
 - Current package source target: internal v0.4.5 under the unchanged stable package ID and canonical ZIP filename. The new package is not VERIFIED until exact-current-main CI build, extracted tests, artifact round-trip, digest and receipt all pass.
 - Queue rule: do not create NEXT-052.
+
+## Latest registered continuation — POINT-0/077 (0++) / CURRENT-130
+
+- Chain: POINT-0/076 → CURRENT-129 → POINT-0/077 (0++) → IN-120 → OUT-119 → EVT-0296 → TIME-BINDING-EVT-0296 → CURRENT-130 → NEXT-051.
+- The owner designated the current interaction as the live 0++ continuation marker on the existing POINT-0 root. No parallel root or NEXT queue is created.
+- The zero-state host transfer remains a child execution lane: portable living reference + same canonical ZIP identity; destination OAuth/workspace/host acceptance require direct host-side evidence.
+- The previous ZIP build predates POINT-0/077. Rebuild and verify the unchanged canonical ZIP identity against the exact merged main SHA before marking the package current.
+- NEXT-051 remains the sole governing queue; independent host recovery and historical graph reconciliation remain open.
 
 ## Mission
 
