@@ -188,7 +188,13 @@
     "IN-122",
     "OUT-121",
     "EVT-0298",
-    "TIME-BINDING-EVT-0298"
+    "TIME-BINDING-EVT-0298",
+    "IN-123",
+    "OUT-122",
+    "EVT-0299",
+    "TIME-BINDING-EVT-0299",
+    "CURRENT-133",
+    "AI-VACUUM-CI-HISTORICAL-FAILURE-PRESERVED"
   ],
   "entrypoint": "engine.py",
   "host_instructions": "GPT6_HOST_INSTRUCTIONS.md",
