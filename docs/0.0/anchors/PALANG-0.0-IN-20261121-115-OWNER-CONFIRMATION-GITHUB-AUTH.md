@@ -27,3 +27,7 @@
 - Packaged recovery protocol: [INDEPENDENT_HOST_RECOVERY_PROTOCOL.md](../../../prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md)
 - Export manifest: [EXPORT_MANIFEST.json](../../portable/RAHM/EXPORT_MANIFEST.json)
 
+
+
+## تکمیل ورودی مالک — نقش FIRST_HOST
+مالک روشن کرد که میزبان تازه، اولین میزبان جدید (FIRST_HOST / HOST-001) است؛ فقط مخزن را خواندنی دریافت می‌کند و برای اجرای وظایف مشخص به workspace محدود و تعریف‌شده توسط مالک دسترسی دارد. حق نوشتن در مخزن ندارد. اجرا فقط در محدوده ارتباطات/ابزارها/مقاصدی است که مالک تعیین و در محیط کاری به‌روزرسانی می‌کند. شناسه runtime هنوز UNKNOWN است. این ورودی هیچ مجوز فنی یا اتصال واقعی را به‌تنهایی اثبات نمی‌کند.
