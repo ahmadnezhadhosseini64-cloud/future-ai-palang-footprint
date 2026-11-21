@@ -1,3 +1,12 @@
+## POINT-0/077 (0++) — CURRENT-133: preserved CI failure and authorized resolution
+
+- Input: [IN-123](0.0/anchors/PALANG-0.0-IN-20261121-123-PRESERVE-AND-RESOLVE-CI-INCONSISTENCY.md).
+- Output: [OUT-122](0.0/anchors/PALANG-0.0-OUT-20261121-122-CI-INCONSISTENCY-RESOLUTION.md).
+- Event: [EVT-0299](architecture/BEHAVIOR-TRACE/EVT-0299-CI-HISTORICAL-FAILURE-AND-RESOLUTION-2026-11-21.md).
+- Current: [CURRENT-133](0.0/anchors/PALANG-0.0-CURRENT-20261121-133-0PLUSPLUS-CI-HISTORY-PRESERVED-AND-RESOLVED.md).
+- Historical failure run 44910997351 is retained. Four later workflows passed at SHA 9190b0a9c2dcf1db0133bd937be0bb1a81d3624c; see IN-123 for exact run IDs.
+- PR #64 remains open; sole queue NEXT-051.
+
 ## POINT-0/077 (0++) — AI VACUUM temporal and behavioral anchors / CURRENT-132
 
 - Input: [IN-122](0.0/anchors/PALANG-0.0-IN-20261121-122-AI-VACUUM-POINT-AND-BEHAVIORAL-ANCHORS.md).
