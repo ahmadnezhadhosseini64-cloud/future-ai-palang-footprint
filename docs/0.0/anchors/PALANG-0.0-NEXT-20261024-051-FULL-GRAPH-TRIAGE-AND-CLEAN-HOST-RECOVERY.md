@@ -905,3 +905,7 @@ The previous blob at this path began with the Integration Queue README title and
 - Owner phrase/password gate («احمد نژادحسینی»), expanded authentication and all repository writes remain OPEN / DEFERRED or OUT OF SCOPE for this phase.
 - Preserve CURRENT-065/CURRENT-066 OPEN; no winner selected. Preserve full state recovery, clean host import, second-host import, restart persistence, automatic live message capture, idle/background capture, graph/identity/parent/time triage, duplicate IDs, ambiguous parents, Issue #20 and Issue #21 as OPEN / NOT RUN.
 - Independent-host connection and restart receipts are NOT RUN. No NEXT-052 is created.
+
+
+## Latest owner clarification — FIRST_HOST / HOST-001
+The first new host is not a repository writer. It has read-only access to the canonical repository and execution access only to the owner-defined, explicitly provisioned workspace. It can run only owner-designated tasks and communications through actually authorized tools/destinations. No repository writes or workspace-to-repository sync. Technical isolation, least-privilege enforcement and independent-host acceptance remain NOT VERIFIED / NOT RUN.
