@@ -44,7 +44,7 @@ Current master version 1.7.74 and current checkpoint CURRENT-122 / POINT-0/069. 
 ## Current paired release — POINT-0/072
 
 - Living master: 1.7.79
-- Current chain: POINT-0/072 → IN-115 → OUT-114 → EVT-0290 → TIME-BINDING-EVT-0290 → CURRENT-125 → NEXT-051
+- Current chain: POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051
 - Package source target: 0.4.4 under the unchanged stable package ID and canonical ZIP filename.
 - NEXT-051 remains the sole active queue.
 - Release is current only when its exact source SHA, receipt and archive checks match the repository revision used for the build. Host recovery remains distinct.

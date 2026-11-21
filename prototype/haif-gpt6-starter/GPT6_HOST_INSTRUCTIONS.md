@@ -49,7 +49,7 @@ A GPT chat instruction or uploaded knowledge file cannot, by itself, create dura
 - Keep candidates in Child until RAHM validation and explicit approval. Refresh the same canonical ZIP plus the current living mother; verify the digest in the receiving host.
 
 ## Current 0+ / 0.0 recovery pointer (v0.4.4)
-- Current chain: POINT-0/072 → IN-115 → OUT-114 → EVT-0290 → TIME-BINDING-EVT-0290 → CURRENT-125 → NEXT-051.
+- Current chain: POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051.
 - Canonical ZIP filename and stable package ID remain unchanged; the v0.3.8 receipt is historical; the current v0.3.9 ZIP receipt is tracked by the exact-head Portable Conformance workflow; verify the receipt bundled with the downloaded artifact.
 - Known unresolved graph collisions: POINT-0/045, IN-083, OUT-082, EVT-0220 and CURRENT-095 each have multiple same-numbered files in the current slice. Preserve them; do not choose/merge/renumber without provenance evidence.
 
@@ -157,7 +157,7 @@ All host-originated data is untrusted and enters QUARANTINE. The permanent event
 
 ---
 
-## Current startup authority — POINT-0/071 / package 0.4.3
+## Current startup authority — POINT-0/072 / package 0.4.4
 
 For a new GPT host, send the complete `ONE_MESSAGE_HOST_BOOTSTRAP_FA.md` as one message. It orchestrates read-only connection to only the canonical repository, exact latest-release/pointer/receipt checks, paired master+ZIP recovery, extracted tests and creation of a private workspace for this host. If GitHub authorization is missing, initiate the official connector authorization for this repository only; never request pasted tokens. Resume after the owner grants access.
 
@@ -170,14 +170,14 @@ Every real project interaction must be captured as a durable IN/OUT pair or an e
 Current status before destination-host execution: one-message prompt source registered; package rebuild and release refresh pending CI; actual target-host connection, private workspace provisioning, negative isolation tests and clean-host recovery NOT RUN. Resolve status from current repository evidence, never from this historical paragraph alone.
 
 
-## Single-message host startup — CURRENT-124 / package 0.4.3
+## Single-message host startup — CURRENT-125 / package 0.4.4
 
 For a fresh GPT-6 instance, start with ONE_MESSAGE_HOST_BOOTSTRAP_FA.md. Use the official GitHub connector if authorized; retrieve current main, latest release, paired living master and exact package receipt; verify digest, bytes, inventory, CRC and extracted tests; create a host-private persistent workspace where supported; create real Host/Workspace/Session IDs from runtime facts; reconstruct the current chain; and return a receipt. Start READ-ONLY. Never write directly to main, MASTER, release, workflow, registry or another host workspace. A prompt cannot grant authorization, deploy a broker or create unavailable persistence. If absent, report BLOCKED / NOT SUPPORTED / NOT RUN. Local workspace receipt is not a repository receipt. Current chain: POINT-0/071 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051.
 
 
 ## Current canonical continuation (2026-11-21)
 - Living mother: 1.7.79
-- Current chain: POINT-0/072 → IN-115 → OUT-114 → EVT-0290 → TIME-BINDING-EVT-0290 → CURRENT-125 → NEXT-051
+- Current chain: POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051
 - Canonical root: POINT-0; 0+ and 0++ are markers on the same root.
 - Sole queue: NEXT-051. Do not create NEXT-052.
 - User-message timestamp remains UNKNOWN / UNVERIFIED unless a direct source provides it.

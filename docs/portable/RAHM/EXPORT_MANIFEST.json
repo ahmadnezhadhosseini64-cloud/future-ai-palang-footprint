@@ -1,7 +1,7 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
   "version": "1.8.31",
-  "manifest_status": "Portable package source target 0.4.4. Living master 1.7.79. Current canonical chain POINT-0/072 → IN-115 → OUT-114 → EVT-0290 → TIME-BINDING-EVT-0290 → CURRENT-125 → NEXT-051. The previous POINT-0/071 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 is preserved as parent history. Package rebuild and exact-head verification required after source update; independent host acceptance remains NOT RUN.",
+  "manifest_status": "Portable package source target 0.4.4. Living master 1.7.79. Current canonical chain POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051. The previous POINT-0/071 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 is preserved as parent history. Package rebuild and exact-head verification required after source update; independent host acceptance remains NOT RUN.",
   "created_from_checkpoint": "HAIF-POINT-0-044-STARTER-ZIP-INPLACE-UPDATE-20261027 + HAIF-CURRENT-094",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [
