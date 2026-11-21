@@ -15,7 +15,7 @@
 - Parent checkpoint: CURRENT-124; previous canonical point: POINT-0/071.
 - Latest pre-registration main HEAD observed: 7e68d94094096da263569625b6422e06a5d6988d.
 - Latest prior package receipt: internal 0.4.3, canonical ZIP 238096 bytes, SHA-256 6cb016339822274586187b01e7fde74ec6623594167be2196d71c1d3959e0d38, 18 files, CRC PASS, extracted tests 24/24 PASS; built from source commit adde4cd8859e94a3f44083dd91f7d549ef684cc8.
-- Paired master in that package: 1.7.77. Current repository master is 1.7.78; package rebuild and exact-head verification required.
+- Paired master in that package: 1.7.77. Current repository master is 1.7.79; package rebuild and exact-head verification required.
 - Sole active queue remains NEXT-051. Do not create NEXT-052.
 
 ## Open gates
