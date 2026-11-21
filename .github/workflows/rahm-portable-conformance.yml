@@ -189,6 +189,8 @@ jobs:
           schema = json.loads(Path("prototype/haif-gpt6-starter/host-capability-receipt.schema.json").read_text(encoding="utf-8"))
           Draft202012Validator.check_schema(schema)
           Draft202012Validator.check_schema(json.loads(Path("docs/architecture/UNIVERSAL-AI-HOST-CONNECTIVITY/host-capability-receipt.schema.json").read_text(encoding="utf-8")))
+          Draft202012Validator.check_schema(json.loads(Path("prototype/haif-gpt6-starter/ai-vacuum-interval.schema.json").read_text(encoding="utf-8")))
+          Draft202012Validator.check_schema(json.loads(Path("docs/architecture/AI-VACUUM-POINT/ai-vacuum-interval.schema.json").read_text(encoding="utf-8")))
           print("UNIVERSAL_HOST_RECEIPT_SCHEMA=PASS")
           PY
           python -m py_compile prototype/haif-gpt6-starter/host_receipt.py
@@ -229,6 +231,9 @@ jobs:
               "host-capability-receipt.schema.json",
               "host_receipt.py",
               "test_host_receipt.py",
+              "ai-vacuum-interval.schema.json",
+              "ai_vacuum.py",
+              "test_ai_vacuum.py",
           ]
           missing = [name for name in required if not (source / name).is_file()]
           if missing:
