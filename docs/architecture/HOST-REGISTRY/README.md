@@ -39,3 +39,16 @@ host_id, host_type, model_version, adapter_version, owner_approval_ref, permissi
 - Isolation and promotion protocol: [protocol](../HOST-WORKSPACES/WORKSPACE-ISOLATION-AND-PROMOTION-PROTOCOL.md)
 - Host Registry همچنان تا دریافت هویت و رسید واقعی خالی می‌ماند؛ هیچ میزبان در این نقطه ACTIVE نشده است.
 - پوشه‌بندی به‌تنهایی جداسازی امنیتی نیست؛ broker، allowlist مسیر، credential حداقلی و branch protection واقعی باید پیش از اتصال نوشتنی اثبات شوند.
+
+
+## POINT-0/084 — ثبت میزبان با مخزن خصوصی مستقل و کنترل مالک
+
+- Security policy: [OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOSITORIES.md](../HOST-SECURITY/OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOSITORIES.md).
+- Private repository template: [PRIVATE-HOST-REPOSITORY-TEMPLATE.md](../HOST-SECURITY/PRIVATE-HOST-REPOSITORY-TEMPLATE.md).
+- مخزن مادر Public فقط برای READ است؛ هیچ میزبان AI مجوز نوشتن یا credential برای آن دریافت نمی‌کند.
+- پس از رسید واقعی و تأیید مالک، برای هر Host ID یک مخزن PRIVATE جداگانه توسط مالک ایجاد می‌شود. میزبان حق ساخت repo، انتخاب مقصد یا ثبت خودش را ندارد.
+- مخزن شخصی private به collaborator نقش read-only نمی‌دهد؛ میزبان به‌عنوان collaborator اضافه نمی‌شود.
+- مسیر نوشتن اختیاری فقط از broker و GitHub App محدود به یک مخزن میزبان می‌گذرد؛ token در secret manager باقی می‌ماند.
+- L1_READ_ONLY پیش‌فرض است؛ broker/App و private host repos هنوز عملیاتی/اثبات‌شده نیستند.
+- بازدیدکننده ناشناس مخزن عمومی قابل شناسایی فردی یا ثبت خودکار نیست.
+- هیچ Host ID یا workspace واقعی در این نقطه فعال نشده است؛ Registry تا رسید واقعی خالی می‌ماند.

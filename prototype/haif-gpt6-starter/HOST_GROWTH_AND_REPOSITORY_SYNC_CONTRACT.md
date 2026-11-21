@@ -158,3 +158,20 @@ The repository is intentionally Public. New hosts can read, clone or fetch the c
 ## POINT-0/082 — host-entry synchronization
 
 Current living master target: 1.7.89. Current package source candidate: 0.5.0, retaining the same stable package ID and canonical ZIP filename. The prior 0.4.9 receipt is historical to its exact source SHA. This source candidate is not PACKAGE_VERIFIED until a fresh exact-main build, SHA-256, byte count, inventory, CRC, paired-master read-back, extracted tests and artifact round-trip pass. Destination-host import, workspace persistence and restart remain separate direct-evidence gates.
+
+
+---
+
+## POINT-0/084 — owner-only master and one private repository per host (superseding security rule)
+
+This addendum is the current controlling security rule and supersedes any older wording that could be read as granting a host or host-held credential write access to the central `host-intake` branch or any other branch of the master repository.
+
+- The canonical master repository is PUBLIC READ for hosts and owner-only WRITE. No AI host is a collaborator and no host PAT, deploy key, GitHub App installation token or other write credential may include the master repository.
+- `host-intake` and the existing repository worker are not host-facing write permissions. No host receives a token for the master repository, including the `host-intake` branch.
+- Each verified host may receive one separate PRIVATE repository created and owned by the owner. No cross-host repository or credential sharing is permitted.
+- Default host level is `L1_READ_ONLY`. Optional write-back is allowed only through a server-side broker and a GitHub App installation scoped to that one private host repository. The model never sees the token. If broker/App scope and negative isolation tests are not verified, write-back stays DISABLED.
+- A folder inside the master repository is not a security boundary. A private personal-account repository does not offer read-only collaborator access; do not add an AI host as a collaborator. Use a narrowly scoped GitHub App/broker or an organization design with appropriate read roles.
+- Anonymous readers of the public master cannot be individually identified or automatically enrolled. Only an owner-reviewed, verifiable enrollment receipt can create a Host Registry record.
+- Main protection, collaborator/App audit, per-host private repositories, broker deployment, revocation and cross-host tests remain OPEN until direct evidence exists.
+
+See `docs/architecture/HOST-SECURITY/OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOSITORIES.md` and `docs/architecture/HOST-SECURITY/PRIVATE-HOST-REPOSITORY-TEMPLATE.md`.
