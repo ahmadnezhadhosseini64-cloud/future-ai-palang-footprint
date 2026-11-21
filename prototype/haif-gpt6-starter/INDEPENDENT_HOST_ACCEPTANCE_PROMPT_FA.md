@@ -58,3 +58,9 @@ Every actual interaction received from a registered host through an authorized p
 Durable capture requires an actual connected producer and authorized intake route. If unavailable, report NOT_CONNECTED / NOT_CAPTURED; do not imply all chats are automatically saved. A successful adapter CI test proves only the tested adapter path, not a live AI host or deployed worker. Existing repository scripts are `scripts/host_adapter.py` and `scripts/host_adapter_github_worker.py`; the latter requires an authorized token in a secret manager, never in prompts or package files.
 
 All host-originated data is untrusted and enters QUARANTINE. The permanent event ledger is an audit/continuity record, not automatic knowledge promotion. Only RAHM-validated CHILD candidates with explicit owner approval can update the living Master. Hosts cannot push/merge directly to main or alter governance. Preserve failed writes, missing outputs, rejected proposals and corrections as linked append-only events. Minimize private data; raw conversations are not stored by default.
+
+
+## Current package — POINT-0/071 / 0.4.2
+
+Current chain tail: POINT-0/070 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051
+Living master target: 1.7.76. New-host onboarding uses the single complete message in `ONE_MESSAGE_HOST_BOOTSTRAP_FA.md`. This prompt is a setup instruction, not proof of live GitHub connection or host acceptance.

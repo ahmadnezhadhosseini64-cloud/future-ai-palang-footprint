@@ -3,7 +3,7 @@
 Package family: HAIF GPT-6 Portable Starter
 Stable package ID: HAIF-GPT6-PORTABLE-STARTER-20261025-004
 Canonical ZIP filename: haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip
-Internal version: 0.4.1
+Internal version: 0.4.2
 Current chain: POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → POINT-0/069 → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122 → NEXT-051
 
 ## 1. Visible response is mandatory
@@ -58,3 +58,10 @@ Write durably, fetch the destination and compare exact content/digest. Retries w
 The event ledger preserves interaction continuity and audit history. It does not promote every interaction into the Master. All host input remains QUARANTINED until privacy/source review, cross-host reconciliation, RAHM validation, CHILD candidacy and explicit owner approval. Hosts have no direct main write/merge authority.
 
 If no actual producer or authorized adapter connection exists, mark NOT_CONNECTED / NOT_CAPTURED. A ZIP or written protocol alone does not capture all conversations. Existing adapter code and synthetic CI PASS are not proof of a live host connection or deployed worker. Never include raw conversations by default, secrets or credentials.
+
+
+## Current package — 0.4.2 / POINT-0/071
+
+Internal version: 0.4.2
+Current chain tail: POINT-0/070 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051
+Single-message GPT host setup: `ONE_MESSAGE_HOST_BOOTSTRAP_FA.md`. Package identity and canonical ZIP filename remain unchanged.

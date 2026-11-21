@@ -178,14 +178,14 @@ if __name__ == "__main__":
 
 
 class PortablePackageProtocolTests(unittest.TestCase):
-    def test_package_manifest_is_version_041_and_keeps_existing_stable_id(self):
+    def test_package_manifest_is_version_042_and_keeps_existing_stable_id(self):
         package = Path(__file__).parent
         manifest = json.loads((package / "manifest.json").read_text(encoding="utf-8"))
-        self.assertEqual(manifest["version"], "0.4.1")
-        self.assertEqual(manifest["supersedes"], "0.4.0")
+        self.assertEqual(manifest["version"], "0.4.2")
+        self.assertEqual(manifest["supersedes"], "0.4.1")
         self.assertEqual(manifest["stable_id"], "HAIF-GPT6-PORTABLE-STARTER-20261025-004")
         self.assertEqual(manifest["recovery_protocol"], "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md")
-        self.assertEqual(manifest["archive_policy"]["current_internal_version"], "0.4.1")
+        self.assertEqual(manifest["archive_policy"]["current_internal_version"], "0.4.2")
         self.assertEqual(manifest["archive_policy"]["update_mode"], "REBUILD_IN_PLACE_SAME_PACKAGE_IDENTITY")
         chain = manifest["parent_architecture"]
         self.assertLess(chain.index("POINT-0/057 (0+ marker on canonical root 0)"), chain.index("IN-095"))
@@ -197,9 +197,13 @@ class PortablePackageProtocolTests(unittest.TestCase):
         self.assertLess(chain.index("IN-112"), chain.index("OUT-111"))
         self.assertLess(chain.index("OUT-111"), chain.index("EVT-0287"))
         self.assertLess(chain.index("EVT-0287"), chain.index("CURRENT-122"))
+        self.assertLess(chain.index("POINT-0/071 (0++ marker on canonical root 0)"), chain.index("IN-114"))
+        self.assertLess(chain.index("IN-114"), chain.index("OUT-113"))
+        self.assertLess(chain.index("OUT-113"), chain.index("EVT-0289"))
+        self.assertLess(chain.index("EVT-0289"), chain.index("CURRENT-124"))
         self.assertEqual(chain.count("NEXT-051"), 1, "only one canonical active NEXT-051 pointer is allowed")
         self.assertGreaterEqual(chain.count("NEXT-051 (historical queue reference)"), 1)
-        expected_current = ["IN-105", "OUT-104", "EVT-0280", "CURRENT-116", "IN-106", "OUT-105", "EVT-0281", "TIME-BINDING-EVT-0281", "CURRENT-117", "POINT-0/066 (0+ — interactive evolution)", "IN-107", "OUT-106", "EVT-0282", "TIME-BINDING-EVT-0282", "CURRENT-118", "POINT-0/067 (0+ continuation marker)", "CURRENT-120", "POINT-0/068", "CURRENT-121", "POINT-0/069 (0+ permanent interaction ledger)", "IN-112", "OUT-111", "EVT-0287", "TIME-BINDING-EVT-0287", "CURRENT-122"]
+        expected_current = ["IN-105", "OUT-104", "EVT-0280", "CURRENT-116", "IN-106", "OUT-105", "EVT-0281", "TIME-BINDING-EVT-0281", "CURRENT-117", "POINT-0/066 (0+ — interactive evolution)", "IN-107", "OUT-106", "EVT-0282", "TIME-BINDING-EVT-0282", "CURRENT-118", "POINT-0/067 (0+ continuation marker)", "CURRENT-120", "POINT-0/068", "CURRENT-121", "POINT-0/069 (0+ permanent interaction ledger)", "IN-112", "OUT-111", "EVT-0287", "TIME-BINDING-EVT-0287", "CURRENT-122", "POINT-0/071 (0++ marker on canonical root 0)", "IN-114", "OUT-113", "EVT-0289", "TIME-BINDING-EVT-0289", "CURRENT-124"]
         for identifier in expected_current:
             self.assertIn(identifier, chain)
         self.assertIn("LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-CONTRACT.md", chain)
@@ -235,7 +239,7 @@ class PortablePackageProtocolTests(unittest.TestCase):
     def test_manifest_declares_paired_first_host_transfer_and_current_audit_chain(self):
         package = Path(__file__).parent
         manifest = json.loads((package / "manifest.json").read_text(encoding="utf-8"))
-        self.assertEqual(manifest["version"], "0.4.1")
+        self.assertEqual(manifest["version"], "0.4.2")
         self.assertIn("POINT-0/049 (0+ marker on canonical point 0)", manifest["parent_architecture"])
         self.assertIn("CURRENT-099", manifest["parent_architecture"])
         self.assertIn("POINT-0/050 (0+ marker on canonical root 0)", manifest["parent_architecture"])
@@ -253,6 +257,7 @@ class PortablePackageProtocolTests(unittest.TestCase):
         self.assertIn("NEXT-051", manifest["parent_architecture"])
         self.assertIn("INTERACTION-RESPONSE-AND-ANCHOR-PROTOCOL.md", manifest["parent_architecture"])
         self.assertIn("HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md", manifest["parent_architecture"])
+        self.assertIn("ONE_MESSAGE_HOST_BOOTSTRAP_FA.md", manifest["governance_documents"])
         self.assertEqual(manifest["host_acceptance_checklist"], "FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST.md")
         self.assertEqual(manifest["independent_host_acceptance_prompt"], "INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md")
 
@@ -287,8 +292,8 @@ class HostGrowthRepositoryContractTests(unittest.TestCase):
     def test_package_manifest_version_and_identity_remain_continuous(self):
         root = Path(__file__).parent
         manifest = json.loads((root / "manifest.json").read_text(encoding="utf-8"))
-        self.assertEqual(manifest["version"], "0.4.1")
-        self.assertEqual(manifest["supersedes"], "0.4.0")
+        self.assertEqual(manifest["version"], "0.4.2")
+        self.assertEqual(manifest["supersedes"], "0.4.1")
         self.assertEqual(manifest["stable_id"], "HAIF-GPT6-PORTABLE-STARTER-20261025-004")
         self.assertEqual(manifest["recovery_protocol"], "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md")
 
@@ -304,12 +309,12 @@ class InteractionResponseAnchorProtocolTests(unittest.TestCase):
         root = Path(__file__).parent
         manifest = json.loads((root / "manifest.json").read_text(encoding="utf-8"))
         protocol = (root / "INTERACTION-RESPONSE-AND-ANCHOR-PROTOCOL.md").read_text(encoding="utf-8")
-        self.assertEqual(manifest["version"], "0.4.1")
+        self.assertEqual(manifest["version"], "0.4.2")
         self.assertEqual(manifest["stable_id"], "HAIF-GPT6-PORTABLE-STARTER-20261025-004")
         self.assertEqual(manifest["archive_policy"]["canonical_filename"], "haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip")
         self.assertIn("actual host integration", protocol.casefold())
         self.assertIn("NOT VERIFIED", protocol)
-        expected_chain = "POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → POINT-0/069 → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122 → NEXT-051"
+        expected_chain = "POINT-0/070 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051"
         for filename in (
             "GPT6_HOST_INSTRUCTIONS.md",
             "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md",
@@ -318,7 +323,7 @@ class InteractionResponseAnchorProtocolTests(unittest.TestCase):
         ):
             text = (root / filename).read_text(encoding="utf-8")
             self.assertIn(expected_chain, text, filename)
-            self.assertIn("0.4.1", text, filename)
+            self.assertIn("0.4.2", text, filename)
         readme = (root / "README.md").read_text(encoding="utf-8")
         self.assertIn("v0.3.9", readme)
         self.assertIn("external build receipt", readme)
