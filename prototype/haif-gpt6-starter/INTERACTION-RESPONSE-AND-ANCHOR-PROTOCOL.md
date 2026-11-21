@@ -6,7 +6,7 @@ Canonical ZIP filename: haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip
 Internal version: 0.5.0 candidate
 Current chain: POINT-0/081 → CURRENT-134 → POINT-0/082 (0++) → IN-125 → OUT-124 → EVT-0302 → TIME-BINDING-EVT-0302 → CURRENT-135 → NEXT-051
 Universal host entry: UNIVERSAL_AI_HOST_ENTRY_FA.md.
-Current chain: POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051; prior checkpoints remain parent history.
+Historical chain retained from an earlier package snapshot: POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051; prior checkpoints remain parent history.
 
 ## 1. Visible response is mandatory
 When an input is received, the host must produce one of:
