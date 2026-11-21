@@ -932,3 +932,24 @@ CURRENT-065/CURRENT-066 remains OPEN; no winner selected. Issues #20 and #21 rem
 POINT-0/073 → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051
 
 Living mother target: 1.7.80. Preserve POINT-0/072 / CURRENT-125 as parent history. Canonical package ID and ZIP filename are unchanged; v0.4.5 requires fresh exact-head conformance and artifact receipt. Independent-host import, OAuth, durable workspace, restart persistence, live/idle capture and unresolved graph/identity/parent/time remediation remain OPEN until direct evidence is attached.
+
+
+---
+
+## 0.0 completion target — current owner directive POINT-0/074 / CURRENT-127
+
+POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051
+
+The current owner objective is to complete the existing 0.0 continuation and recovery/delivery chain. Keep this file as the sole active queue; do not create NEXT-052 or a parallel queue.
+
+### Required closeout evidence
+1. One unambiguous global 0.0 current chain across docs/0.0 registry, reference index, behavior index, integration queue, living mother, portable master, package manifest and export manifest.
+2. Historical graph/ID/parent/time findings classified and remediated or explicitly OPEN with an evidence-backed reason; no historical data is silently rewritten.
+3. All portable starter tests PASS on the exact source HEAD.
+4. Portable RAHM Conformance and Living Architecture Audit PASS on the same exact HEAD.
+5. Same stable package identity and canonical ZIP filename rebuilt; CRC, exact inventory, extracted source-byte match, extracted tests and paired living-master match PASS.
+6. Fresh SHA-256/build receipt and downloaded artifact read-back identify the same exact HEAD and archive bytes.
+7. Real external-host acceptance, OAuth, durable workspace, restart persistence, live/idle capture and owner-approved write-back are either proven by direct receipts or remain explicitly OPEN / NOT RUN. CI simulation cannot close these gates.
+
+### Security policy
+READ-ONLY by default; allowlisted actions only; explicit owner approval for privileged actions; never commit tokens/secrets. AUTHENTICATION GATE: OPEN / DEFERRED until a real authorization flow and read-back receipt are available.
