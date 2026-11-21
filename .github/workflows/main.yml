@@ -7,13 +7,12 @@ on:
     paths:
       - README.md
       - docs/**
-      - evidence/**
       - provenance/**
       - .github/workflows/main.yml
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   evidence-gate:
@@ -85,29 +84,6 @@ jobs:
           Independent Automated Execution: PROVEN
           Evidence Artifact: GENERATED
           EOF
-
-      - name: Commit durable evidence record
-        shell: bash
-        run: |
-          set -euo pipefail
-          evidence_file="evidence/evidence-gate-${GITHUB_RUN_ID}.txt"
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add "$evidence_file"
-          git diff --cached --quiet && exit 0
-          git commit -m "Record Evidence Gate execution ${GITHUB_RUN_ID}"
-          # Multiple audit runs may commit at the same time. Rebase the unique evidence file
-          # on the latest main and retry fast-forward pushes instead of failing on a race.
-          for attempt in 1 2 3 4 5; do
-            git fetch origin main
-            git rebase origin/main
-            if git push origin HEAD:main; then
-              exit 0
-            fi
-            sleep "$((attempt * 2))"
-          done
-          echo "Unable to push evidence after five fast-forward retries" >&2
-          exit 1
 
       - name: Upload durable evidence artifact
         uses: actions/upload-artifact@v4
