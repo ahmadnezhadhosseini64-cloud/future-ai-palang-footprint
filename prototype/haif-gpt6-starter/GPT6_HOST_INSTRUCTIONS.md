@@ -208,3 +208,20 @@ EVT-0290 remains the earlier mirror-only event; do not reuse its identifier for 
 ## Current package — 0.4.5 / POINT-0/074 (0++ marker)
 
 Internal package version: 0.4.5. Living master: 1.7.81. Current chain: POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051. The 0++ marker belongs to the single canonical Point 0 root; the next target is completion of the existing 0.0 continuation. NEXT-051 remains the sole active queue. The canonical package ID and ZIP filename remain unchanged. Exact-head tests, fresh build receipt, SHA-256, ZIP CRC/inventory/read-back and paired-master byte match are required before PACKAGE_VERIFIED. Independent-host acceptance, authenticated write-back authorization (only if write-back is requested), live capture, durable workspace and restart persistence remain OPEN / NOT VERIFIED until direct receipts exist.
+
+
+---
+
+## POINT-0/084 — owner-only master and one private repository per host (superseding security rule)
+
+This addendum is the current controlling security rule and supersedes any older wording that could be read as granting a host or host-held credential write access to the central `host-intake` branch or any other branch of the master repository.
+
+- The canonical master repository is PUBLIC READ for hosts and owner-only WRITE. No AI host is a collaborator and no host PAT, deploy key, GitHub App installation token or other write credential may include the master repository.
+- `host-intake` and the existing repository worker are not host-facing write permissions. No host receives a token for the master repository, including the `host-intake` branch.
+- Each verified host may receive one separate PRIVATE repository created and owned by the owner. No cross-host repository or credential sharing is permitted.
+- Default host level is `L1_READ_ONLY`. Optional write-back is allowed only through a server-side broker and a GitHub App installation scoped to that one private host repository. The model never sees the token. If broker/App scope and negative isolation tests are not verified, write-back stays DISABLED.
+- A folder inside the master repository is not a security boundary. A private personal-account repository does not offer read-only collaborator access; do not add an AI host as a collaborator. Use a narrowly scoped GitHub App/broker or an organization design with appropriate read roles.
+- Anonymous readers of the public master cannot be individually identified or automatically enrolled. Only an owner-reviewed, verifiable enrollment receipt can create a Host Registry record.
+- Main protection, collaborator/App audit, per-host private repositories, broker deployment, revocation and cross-host tests remain OPEN until direct evidence exists.
+
+See `docs/architecture/HOST-SECURITY/OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOSITORIES.md` and `docs/architecture/HOST-SECURITY/PRIVATE-HOST-REPOSITORY-TEMPLATE.md`.
