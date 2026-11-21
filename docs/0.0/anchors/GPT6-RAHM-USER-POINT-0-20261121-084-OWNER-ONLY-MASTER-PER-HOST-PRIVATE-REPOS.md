@@ -1,7 +1,7 @@
 # POINT-0/084 — مخزن مادر فقط‌مالک و مخزن خصوصی مستقل هر میزبان
 
 - Stable ID: HAIF-POINT-0-084-OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOS-2026-11-21
-- Status: ACTIVE / LIVING / OWNER-DIRECTED / DESIGN-REGISTERED / IMPLEMENTATION-PARTIAL
+- Status: ACTIVE / LIVING / OWNER-DIRECTED / DESIGN-REGISTERED / MERGED / READ-BACK VERIFIED / IMPLEMENTATION-PARTIAL
 - Parent: POINT-0/083 → CURRENT-136 → NEXT-051
 - Canonical root: POINT-0 only; 0++ is a marker, not a new root
 - Owner: ahmadnezhadhosseini64-cloud
@@ -52,6 +52,6 @@ POINT-0/083 → CURRENT-136 → POINT-0/084 (0++) → IN-127 → OUT-126 → EVT
 - Cross-host negative tests and revoke/recovery tests: NOT RUN.
 - First destination host acceptance: OPEN / NOT RUN.
 
-## ثبت و تداوم
+## رسید ادغام و بازخوانی\n\n- PR #88 merged: 446b3c7fe7bef616826ee609f5dc58cc23a1bd00.\n- UTC: 2026-11-21T19:57:32Z; Tehran: 2026-11-21T23:27:32+03:30.\n- 16/16 changed/new files fetched from main and blob SHA matched against merged branch.\n\n## ثبت و تداوم
 
 این نقطه ادامهٔ همان ریشهٔ canonical POINT-0 است؛ صف موازی ایجاد نمی‌کند. NEXT-051 تنها صف فعال می‌ماند. میزبان تازه تا رسید مستقیم و تأیید مالک، PROPOSED است. هیچ قابلیت امنیتی که در GitHub و محیط واقعی اعمال و آزموده نشده، VERIFIED اعلام نمی‌شود.
