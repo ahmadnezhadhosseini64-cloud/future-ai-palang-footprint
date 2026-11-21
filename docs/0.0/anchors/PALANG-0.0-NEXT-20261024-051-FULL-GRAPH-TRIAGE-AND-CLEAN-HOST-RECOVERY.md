@@ -985,3 +985,73 @@ READ-ONLY by default; allowlisted actions only; explicit owner approval for priv
 POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051
 
 Preserve this as the sole active queue. The objective is to finish repository-remediable graph and package work with exact-HEAD PASS receipts, then independently prove external-host recovery. Keep CURRENT-065/CURRENT-066, Issues #20/#21, OAuth, durable workspace, restart persistence, live/idle capture and write-back OPEN until their direct evidence exists.
+
+
+## Additive child implementation — Universal AI Host Connectivity (2026-11-21)
+
+- Contract candidate: docs/architecture/UNIVERSAL-AI-HOST-CONNECTIVITY/UNIVERSAL-AI-HOST-CONNECTIVITY-CONTRACT-2026-11-21-001.md.
+- Zero-state host runbook: prototype/universal-ai-host/README.md.
+- Receipt schema, validator and tests are linked from docs/REFERENCE_INDEX.md and the living mother extension.
+- Implementation branch: feat/universal-ai-host-connectivity; main is unchanged.
+- This work is subordinate to this existing NEXT-051 queue. It does not create NEXT-052 or a parallel project.
+- Acceptance gates: branch read-back; JSON/schema and unit tests; CI on exact branch SHA; PR review; then a real destination-host authorization/workspace/restart receipt. Until direct destination evidence exists, HOST-RECOVERED remains NOT VERIFIED.
+
+
+## CURRENT-131 continuation — universal host and canonical starter package (2026-11-21)
+
+- Root remains POINT-0/077 (0++); parent checkpoint CURRENT-130; current child checkpoint CURRENT-131.
+- Interaction chain: IN-121 → OUT-120 → EVT-0297 → TIME-BINDING-EVT-0297 → CURRENT-131.
+- Universal host contract, zero-state bootstrap, receipt schema, validator and tests are copied into the existing canonical starter package source.
+- Existing package identity and ZIP filename are preserved; internal candidate version is 0.4.6.
+- Portable RAHM Conformance workflow now includes the new host files in the starter ZIP inventory and extracted tests. PR builds do not publish the stable release.
+- PR #64: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/pull/64
+- Remaining gates: final-head workflow PASS; PR review/merge; exact-main-SHA ZIP rebuild and release read-back; independent clean-host OAuth/workspace/import/restart acceptance.
+- Do not create a new NEXT queue. Continue all remaining work here.
+
+
+## CURRENT-131 — latest 0++ continuation links
+
+- Canonical point: [POINT-0/077 (0++)](GPT6-RAHM-USER-POINT-0-20261121-077-0PLUSPLUS-LIVE-ANCHOR.md).
+- Input: [IN-121](PALANG-0.0-IN-20261121-121-UNIVERSAL-HOST-PACKAGE-AND-0PLUSPLUS-CONTINUATION.md).
+- Output: [OUT-120](PALANG-0.0-OUT-20261121-120-UNIVERSAL-HOST-PACKAGE-IMPLEMENTATION.md).
+- Event: [EVT-0297](../../architecture/BEHAVIOR-TRACE/EVT-0297-UNIVERSAL-HOST-PACKAGE-AND-POINT-0-077-CONTINUATION-2026-11-21.md).
+- Current checkpoint: [CURRENT-131](PALANG-0.0-CURRENT-20261121-131-0PLUSPLUS-UNIVERSAL-HOST-PACKAGE.md).
+- Mirror event retained: [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) and [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md).
+- Sole queue remains this NEXT-051 file. Issues #20 and #21 remain OPEN. CURRENT-065/CURRENT-066 remains OPEN; no winner selected.
+
+
+Canonical point label: POINT-0/077 (۰++). Graph/identity/parent/time triage remains OPEN under this same queue.
+
+
+## CURRENT-132 continuation — AI VACUUM temporal and behavioral anchors (2026-11-21)
+
+- Root remains POINT-0/077 (0++); parent CURRENT-131; current checkpoint CURRENT-132.
+- Chain: IN-122 → OUT-121 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-132.
+- Two independent lifecycle anchors are defined: STOP and THINKING_START. REQUEST_RECEIVED is distinct if that is the only exposed runtime event.
+- AI_VACUUM_INTERVAL is calculated only from observed timestamps on comparable clocks; missing values remain null and conflicting clocks are not compared.
+- Permanent behavioral trace covers externally observable request/context/tool/file/code/test/validation/response events. Private chain-of-thought and secrets are excluded.
+- Schema, Python calculator and regression tests are included in the canonical starter source and conformance inventory.
+- PR #64 remains the integration path. Final CI, canonical ZIP extraction/release verification, merge and independent host recovery remain open.
+- No new queue; continue only through NEXT-051.
+
+
+## CURRENT-133 continuation — preserve and resolve CI inconsistency (2026-11-21)
+
+- Chain: CURRENT-132 → IN-123 → OUT-122 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-133 → NEXT-051.
+- Preserve the original stale CURRENT-131 assertion failure and run 44910997351 as historical evidence. Do not delete or overwrite it.
+- Correction advanced test_engine.py expected chain; four workflows passed at SHA 9190b0a9c2dcf1db0133bd937be0bb1a81d3624c (run IDs in IN-123).
+- PR #64 remains the integration path. Exact release archive and clean-host acceptance are separate gates.
+- No new queue; NEXT-051 remains the sole queue.
+
+
+## CURRENT-133 — CI mismatch preservation and authorized repair
+
+- Owner approval: IN-123.
+- Repair record: OUT-122.
+- Event: EVT-0299; repository time binding: TIME-BINDING-EVT-0299.
+- Checkpoint: CURRENT-133; all remain under POINT-0/077 (0++).
+- Original failure is preserved in Actions run 44910997351; follow-up stale package-copy recurrence is preserved in runs 44912041984 and 44912042023.
+- Root cause: package lineage assertion and the README/GPT6 host instructions were not all advanced to the same CURRENT checkpoint.
+- Additive repair: test_engine.py, README.md and GPT6_HOST_INSTRUCTIONS.md now carry the same CURRENT-133 chain. Historical failure text and run evidence are not deleted.
+- Current exact-head CI must pass after these edits. Earlier green runs apply only to their own SHA.
+- Continue only through NEXT-051; do not create another queue.

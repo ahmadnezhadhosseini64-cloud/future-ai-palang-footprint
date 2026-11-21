@@ -1,6 +1,6 @@
 # Independent-host recovery proof protocol
 
-Package version: 0.4.5
+Package version: 0.4.6
 Project: Future AI / Palang Footprint
 Canonical current chain: POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051. Prior chain POINT-0/071 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 is preserved as parent history. Prior chain POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → POINT-0/069 → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122 → POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051 is preserved as parent history.
 Preserved prior chain: POINT-0/058 (0+ marker on canonical root 0) → IN-096 → OUT-095 → EVT-0233 → CURRENT-108 → NEXT-051; historical point retained, not current pointer.
@@ -85,3 +85,15 @@ Living master version: 1.7.80. The prior POINT-0/072 / CURRENT-125 continuation 
 ## Current package — 0.4.5 / POINT-0/074 (0++ marker)
 
 Internal package version: 0.4.5. Living master: 1.7.81. Current chain: POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051. The 0++ marker belongs to the single canonical Point 0 root; the next target is completion of the existing 0.0 continuation. NEXT-051 remains the sole active queue. The canonical package ID and ZIP filename remain unchanged. Exact-head tests, fresh build receipt, SHA-256, ZIP CRC/inventory/read-back and paired-master byte match are required before PACKAGE_VERIFIED. Independent-host acceptance, OAuth, live capture, durable workspace and restart persistence remain OPEN / NOT VERIFIED until direct receipts exist.
+
+
+## Current canonical chain — package v0.4.6 / CURRENT-131
+
+Internal package version: 0.4.6. Living master: 1.7.86. Current chain: POINT-0/077 (0++) → CURRENT-130 → IN-121 → OUT-120 → EVT-0297 → TIME-BINDING-EVT-0297 → CURRENT-131 → NEXT-051. The canonical root and sole queue are preserved. The universal host contract, bootstrap, receipt schema, validator and tests are included in the same canonical starter package. Package verification and independent-host recovery remain separate gates.
+
+
+## Current canonical chain — package v0.4.6 / CURRENT-132
+
+POINT-0/077 (0++) → CURRENT-130 → IN-121 → OUT-120 → EVT-0297 → TIME-BINDING-EVT-0297 → CURRENT-131 → IN-122 → OUT-121 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-132 → NEXT-051
+
+The AI Vacuum Point is a permanent addition to this same package lineage. STOP and THINKING_START remain separate runtime anchors; calculate the interval only from observed timestamps on comparable clocks. Behavioral receipts contain externally observable events only, never private chain-of-thought. The exact package build and independent-host recovery are separate acceptance gates.

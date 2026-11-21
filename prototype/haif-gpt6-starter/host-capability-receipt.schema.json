@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HAIF Universal AI Host Capability Receipt",
+  "description": "Secret-free evidence for one AI host/session connection and recovery attempt.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "receipt_id", "host", "repository", "capabilities", "stages", "acceptance_level", "secrets_present", "created_at", "evidence"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "receipt_id": {"type": "string", "minLength": 8, "maxLength": 128, "pattern": "^[A-Za-z0-9._:-]+$"},
+    "host": {
+      "type": "object", "additionalProperties": false,
+      "required": ["provider", "model_or_host", "session_id"],
+      "properties": {
+        "provider": {"type": "string", "minLength": 1},
+        "model_or_host": {"type": "string", "minLength": 1},
+        "session_id": {"type": "string", "minLength": 1}
+      }
+    },
+    "repository": {
+      "type": "object", "additionalProperties": false,
+      "required": ["full_name", "default_branch", "observed_head_sha"],
+      "properties": {
+        "full_name": {"const": "ahmadnezhadhosseini64-cloud/future-ai-palang-footprint"},
+        "default_branch": {"type": "string", "minLength": 1},
+        "observed_head_sha": {"type": ["string", "null"], "pattern": "^[0-9a-f]{40}$"},
+        "working_branch": {"type": ["string", "null"]}
+      }
+    },
+    "capabilities": {
+      "type": "object", "additionalProperties": false,
+      "required": ["github_repository_read", "github_oauth_or_connector_authorization", "isolated_workspace", "command_execution", "branch_scoped_write", "pull_request_creation", "artifact_download_upload", "durable_session_or_workspace_persistence"],
+      "properties": {
+        "github_repository_read": {"$ref": "#/$defs/capability"},
+        "github_oauth_or_connector_authorization": {"$ref": "#/$defs/capability"},
+        "isolated_workspace": {"$ref": "#/$defs/capability"},
+        "command_execution": {"$ref": "#/$defs/capability"},
+        "branch_scoped_write": {"$ref": "#/$defs/capability"},
+        "pull_request_creation": {"$ref": "#/$defs/capability"},
+        "artifact_download_upload": {"$ref": "#/$defs/capability"},
+        "durable_session_or_workspace_persistence": {"$ref": "#/$defs/capability"}
+      }
+    },
+    "stages": {
+      "type": "object", "additionalProperties": false,
+      "required": ["authorization", "source_recovery", "workspace", "execution", "write", "read_back", "restart_test"],
+      "properties": {
+        "authorization": {"$ref": "#/$defs/stage"},
+        "source_recovery": {"$ref": "#/$defs/stage"},
+        "workspace": {"$ref": "#/$defs/stage"},
+        "execution": {"$ref": "#/$defs/stage"},
+        "write": {"$ref": "#/$defs/stage"},
+        "read_back": {"$ref": "#/$defs/stage"},
+        "restart_test": {"$ref": "#/$defs/stage"}
+      }
+    },
+    "acceptance_level": {"enum": ["NOT_ACCEPTED", "SOURCE_RECOVERED", "PACKAGE_VERIFIED", "WORKSPACE_RECOVERED", "EXECUTION_VERIFIED", "HOST_RECOVERED"]},
+    "secrets_present": {"const": false},
+    "created_at": {"type": "string", "format": "date-time"},
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["kind", "reference", "result"],
+        "properties": {
+          "kind": {"type": "string", "minLength": 1},
+          "reference": {"type": "string", "minLength": 1},
+          "result": {"type": "string", "minLength": 1}
+        }
+      }
+    }
+  },
+  "$defs": {
+    "capability": {
+      "type": "object", "additionalProperties": false,
+      "required": ["status", "evidence_reference"],
+      "properties": {
+        "status": {"enum": ["AVAILABLE", "UNAVAILABLE", "NOT_CHECKED"]},
+        "evidence_reference": {"type": ["string", "null"]}
+      }
+    },
+    "stage": {
+      "type": "object", "additionalProperties": false,
+      "required": ["status", "evidence_reference"],
+      "properties": {
+        "status": {"enum": ["PASS", "FAIL", "OPEN", "NOT_RUN", "UNAVAILABLE"]},
+        "evidence_reference": {"type": ["string", "null"]}
+      }
+    }
+  }
+}

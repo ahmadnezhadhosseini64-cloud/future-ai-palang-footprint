@@ -1,0 +1,33 @@
+name: Universal AI Host Connectivity Tests
+
+on:
+  pull_request:
+    paths:
+      - "docs/architecture/UNIVERSAL-AI-HOST-CONNECTIVITY/**"
+      - "prototype/universal-ai-host/**"
+      - ".github/workflows/universal-host-connectivity.yml"
+  push:
+    branches:
+      - "feat/universal-ai-host-connectivity"
+    paths:
+      - "docs/architecture/UNIVERSAL-AI-HOST-CONNECTIVITY/**"
+      - "prototype/universal-ai-host/**"
+      - ".github/workflows/universal-host-connectivity.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate-universal-host:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Validate receipt schema JSON
+        run: python -m json.tool docs/architecture/UNIVERSAL-AI-HOST-CONNECTIVITY/host-capability-receipt.schema.json > /dev/null
+      - name: Run receipt validator tests
+        run: python -m unittest discover -s prototype/universal-ai-host/tests -v

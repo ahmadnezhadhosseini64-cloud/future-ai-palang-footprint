@@ -44,3 +44,12 @@ POINT-0/076 → CURRENT-129 → POINT-0/077 (۰++) → IN-120 → OUT-119 → EV
 
 ## قاعدهٔ تداوم
 این نقطه در امتداد CURRENT-129 و زیر NEXT-051 قرار دارد. NEXT-051 تنها صف فعال باقی می‌ماند؛ NEXT-052 یا صف موازی نساز. تاریخچهٔ قبلی را حفظ کن و فقط وضعیت‌های جدید را با شاهد واقعی ثبت کن.
+
+
+## Latest linked continuation — CURRENT-131
+
+Canonical point identity: POINT-0/077 (۰++). This remains the same canonical Point 0 root, not a new root.
+
+[IN-121](PALANG-0.0-IN-20261121-121-UNIVERSAL-HOST-PACKAGE-AND-0PLUSPLUS-CONTINUATION.md) → [OUT-120](PALANG-0.0-OUT-20261121-120-UNIVERSAL-HOST-PACKAGE-IMPLEMENTATION.md) → [EVT-0297](../../architecture/BEHAVIOR-TRACE/EVT-0297-UNIVERSAL-HOST-PACKAGE-AND-POINT-0-077-CONTINUATION-2026-11-21.md) → [TIME-BINDING-EVT-0297](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0297-UNIVERSAL-HOST-PACKAGE-2026-11-21.md) → [CURRENT-131](PALANG-0.0-CURRENT-20261121-131-0PLUSPLUS-UNIVERSAL-HOST-PACKAGE.md) → [NEXT-051](PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+
+The universal AI-host contract and components are being integrated into the same canonical starter ZIP. Package verification and independent host recovery remain separate gates.

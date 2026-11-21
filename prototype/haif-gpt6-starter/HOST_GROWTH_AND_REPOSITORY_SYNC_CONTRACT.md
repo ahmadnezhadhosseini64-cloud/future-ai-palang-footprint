@@ -147,3 +147,15 @@ Internal package version: 0.4.5. Living master: 1.7.81. Current chain: POINT-0/0
 ## Current package — 0.4.5 / POINT-0/074 (0++ marker)
 
 Internal package version: 0.4.5. Living master: 1.7.81. Current chain: POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051. The 0++ marker belongs to the single canonical Point 0 root; the next target is completion of the existing 0.0 continuation. NEXT-051 remains the sole active queue. The canonical package ID and ZIP filename remain unchanged. Exact-head tests, fresh build receipt, SHA-256, ZIP CRC/inventory/read-back and paired-master byte match are required before PACKAGE_VERIFIED. Independent-host acceptance, OAuth, live capture, durable workspace and restart persistence remain OPEN / NOT VERIFIED until direct receipts exist.
+
+
+## Universal host connectivity — package v0.4.6 / CURRENT-131
+
+The provider-neutral host contract, zero-state bootstrap, capability receipt schema, validator and regression tests are included in the same canonical starter package. Current chain: POINT-0/077 (0++) → CURRENT-130 → IN-121 → OUT-120 → EVT-0297 → TIME-BINDING-EVT-0297 → CURRENT-131 → NEXT-051. Each destination host performs its own official OAuth/connector authorization; no credentials are portable. Branch-only writes and owner-reviewed PRs remain mandatory.
+
+
+## AI Vacuum Point — permanent temporal and behavioral anchors / CURRENT-132
+
+Current chain: POINT-0/077 (0++) → CURRENT-130 → IN-121 → OUT-120 → EVT-0297 → TIME-BINDING-EVT-0297 → CURRENT-131 → IN-122 → OUT-121 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-132 → NEXT-051
+
+Each host records STOP and THINKING_START as separate lifecycle anchors where exposed. REQUEST_RECEIVED is distinct from THINKING_START. Compute AI_VACUUM_INTERVAL only from observed timestamps on comparable clocks; unknown anchors remain null and conflicting clocks remain unmeasurable. Record observable context retrieval, repository/file operations, tool calls, code/tests, validation and response lifecycle. Never capture private chain-of-thought, hidden prompts, scratchpads or secrets. See the AI-VACUUM-POINT contract and the schema/calculator included in the same portable starter package.

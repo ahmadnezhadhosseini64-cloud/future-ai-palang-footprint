@@ -1,4 +1,4 @@
-# HAIF GPT-6 Portable Starter v0.4.5
+# HAIF GPT-6 Portable Starter v0.4.6
 
 This is the updated release of the existing HAIF starter package, not a separate project. It updates the existing v0.3.0 0/0+ bootstrap package at the same stable package identity and canonical ZIP filename; history and prior digests remain preserved. It does not replace the living master, historical anchors or NEXT-051.
 
@@ -15,7 +15,7 @@ This is the updated release of the existing HAIF starter package, not a separate
 - Host-growth/repository-sync contract included; defines behavior evidence, authorized repo return, RAHM validation and controlled Master/Child promotion.
 - Interaction response/anchor protocol included; requires visible acknowledgment/status, failure disclosure, paired input/output anchors and explicit non-verified gates.
 - Latest verified export and on-demand delivery contract included; requires exact-current-main package receipts and paired living-master delivery.
-- Current continuation reference: POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051. Preserve all earlier roots, the certificate child branch, the unresolved CURRENT-065/CURRENT-066 lineage and all open gates; older 0+ markers remain historical. The canonical living mother reference is included in the built ZIP as `LIVING_MASTER_REFERENCE.md`; the Persian external-host test is included as `INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md`. Transfer the ZIP with its included master snapshot and use the prompt on a genuinely independent host.
+- Current continuation reference: POINT-0/077 (0++) → CURRENT-130 → IN-121 → OUT-120 → EVT-0297 → TIME-BINDING-EVT-0297 → CURRENT-131 → IN-122 → OUT-121 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-132 → IN-123 → OUT-122 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-133 → NEXT-051. Preserve the historical failed CI event IN-123 and its original run; OUT-122 records the authorized correction. Do not delete or rewrite failed evidence.
 
 ## Bootstrap
 ~~~bash
@@ -193,3 +193,47 @@ Internal package version: 0.4.5. Living master: 1.7.81. Current chain: POINT-0/0
 ## Current handoff — package v0.4.5 / POINT-0/074 (0++)
 
 Living master: 1.7.81. Canonical chain: POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051. The previous POINT-0/073 / CURRENT-126 and all earlier points remain parent history. 0++ is a marker on the canonical root, not a separate root. The next objective is 0.0 completion through NEXT-051. This package is not verified until same-HEAD audit and conformance pass, the canonical ZIP is rebuilt and read back with SHA-256/CRC/inventory/extracted tests, and independent-host recovery is separately evidenced.
+
+
+## Universal AI host connectivity (v0.4.6)
+
+This same canonical starter now carries the provider-neutral host connection layer:
+- `UNIVERSAL_AI_HOST_CONNECTIVITY_CONTRACT.md`: security boundaries, capability discovery, authorization and acceptance lifecycle.
+- `UNIVERSAL_AI_HOST_BOOTSTRAP.md`: one-message zero-state host entry and recovery procedure.
+- `host-capability-receipt.schema.json`: machine-readable secret-free session receipt contract.
+- `host_receipt.py` and `test_host_receipt.py`: standard-library receipt validator and regression tests.
+
+The handshake text «احمد نژادحسینی» is only a start-of-session identifier. The destination host must obtain GitHub authorization through its own official OAuth/connector UI. No credentials move with this ZIP. The receipt records capability and stage evidence only; it does not transfer permission between sessions.
+
+After extracting the package, run:
+
+```bash
+python -m unittest discover -s . -p 'test_*.py' -v
+python host_receipt.py --help
+```
+
+The package-level test suite verifies local runtime and receipt behavior. It does not prove that an external AI host has authorized GitHub, created a workspace, or passed a restart test.
+
+
+## AI Vacuum Point — temporal and behavioral anchors
+
+The portable package now includes:
+- `AI-VACUUM-TEMPORAL-AND-BEHAVIORAL-ANCHOR-CONTRACT`: defines the two boundaries, STOP and THINKING_START.
+- `ai-vacuum-interval.schema.json`: secret-free, machine-readable interval and event receipt.
+- `ai_vacuum.py`: calculates elapsed milliseconds only from observed timestamps on the same clock source; missing or conflicting anchors remain unmeasurable.
+- `test_ai_vacuum.py`: tests measurable, missing, negative, cross-clock and private-reasoning cases.
+
+The AI Vacuum label does not imply that the model is idle or disclose hidden reasoning. Hosts report only externally observable lifecycle events and evidence. When runtime timestamps are unavailable, preserve null and mark UNAVAILABLE; never infer or fabricate them.
+
+Run all package tests after extraction:
+
+```bash
+python -m unittest discover -s . -p 'test_*.py' -v
+```
+
+
+## Latest continuation
+
+POINT-0/077 (0++) → CURRENT-130 → IN-121 → OUT-120 → EVT-0297 → TIME-BINDING-EVT-0297 → CURRENT-131 → IN-122 → OUT-121 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-132 → IN-123 → OUT-122 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-133 → NEXT-051
+
+Historical CI mismatch is preserved under EVT-0299; the test expectation was advanced without deleting the original failure evidence.

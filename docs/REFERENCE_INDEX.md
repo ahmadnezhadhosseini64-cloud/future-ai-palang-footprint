@@ -1,3 +1,57 @@
+## CURRENT-133 — CI history preserved and repair authorized
+
+- [IN-123](0.0/anchors/PALANG-0.0-IN-20261121-123-CI-FAILURE-PRESERVATION-AND-OWNER-APPROVAL.md)
+- [OUT-122](0.0/anchors/PALANG-0.0-OUT-20261121-122-CI-LINEAGE-REPAIR-AND-PRESERVATION.md)
+- [EVT-0299](architecture/BEHAVIOR-TRACE/EVT-0299-CI-HISTORICAL-FAILURE-AND-RESOLUTION-2026-11-21.md)
+- [TIME-BINDING-EVT-0299](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0299-CI-RESOLUTION-2026-11-21.md)
+- [CURRENT-133](0.0/anchors/PALANG-0.0-CURRENT-20261121-133-0PLUSPLUS-CI-HISTORY-PRESERVED-AND-RESOLVED.md)
+- Historical failed runs remain preserved; exact-head CI after the latest additive correction is pending. Sole queue: NEXT-051.
+
+## POINT-0/077 (0++) — CURRENT-133: preserved CI failure and authorized resolution
+
+- Input: [IN-123](0.0/anchors/PALANG-0.0-IN-20261121-123-PRESERVE-AND-RESOLVE-CI-INCONSISTENCY.md).
+- Output: [OUT-122](0.0/anchors/PALANG-0.0-OUT-20261121-122-CI-INCONSISTENCY-RESOLUTION.md).
+- Event: [EVT-0299](architecture/BEHAVIOR-TRACE/EVT-0299-CI-HISTORICAL-FAILURE-AND-RESOLUTION-2026-11-21.md).
+- Time binding: [TIME-BINDING-EVT-0299](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0299-CI-RESOLUTION-2026-11-21.md).
+- Current: [CURRENT-133](0.0/anchors/PALANG-0.0-CURRENT-20261121-133-0PLUSPLUS-CI-HISTORY-PRESERVED-AND-RESOLVED.md).
+- Historical failure run 44910997351 is retained. Four later workflows passed at SHA 9190b0a9c2dcf1db0133bd937be0bb1a81d3624c; see IN-123 for exact run IDs.
+- PR #64 remains open; sole queue NEXT-051.
+
+## POINT-0/077 (0++) — AI VACUUM temporal and behavioral anchors / CURRENT-132
+
+- Input: [IN-122](0.0/anchors/PALANG-0.0-IN-20261121-122-AI-VACUUM-POINT-AND-BEHAVIORAL-ANCHORS.md).
+- Output: [OUT-121](0.0/anchors/PALANG-0.0-OUT-20261121-121-AI-VACUUM-POINT-IMPLEMENTATION.md).
+- Event: [EVT-0298](architecture/BEHAVIOR-TRACE/EVT-0298-AI-VACUUM-POINT-AND-BEHAVIORAL-ANCHORS-2026-11-21.md).
+- Time binding: [TIME-BINDING-EVT-0298](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0298-AI-VACUUM-POINT-2026-11-21.md).
+- Current anchor: [CURRENT-132](0.0/anchors/PALANG-0.0-CURRENT-20261121-132-0PLUSPLUS-AI-VACUUM-BEHAVIORAL-ANCHORS.md).
+- Contract: [AI-VACUUM temporal and behavioral anchor contract](architecture/AI-VACUUM-POINT/AI-VACUUM-TEMPORAL-AND-BEHAVIORAL-ANCHOR-CONTRACT-2026-11-21-001.md).
+- STOP anchor: [STOP-ANCHOR](architecture/AI-VACUUM-POINT/STOP-ANCHOR-2026-11-21-001.md).
+- THINKING_START anchor: [THINKING-START-ANCHOR](architecture/AI-VACUUM-POINT/THINKING-START-ANCHOR-2026-11-21-001.md).
+- Behavioral trace: [AI-VACUUM-BEHAVIORAL-TRACE-STANDARD](architecture/AI-VACUUM-POINT/AI-VACUUM-BEHAVIORAL-TRACE-STANDARD-2026-11-21-001.md).
+- PR #64 contains these changes; exact PR ZIP build/download/read-back and extracted tests PASS on merge ref b956b8cb3990626af8673ba172678b5320828d43. Stable release waits for main merge. Sole queue: NEXT-051.
+
+## POINT-0/077 (0++) — Universal AI Host Package / CURRENT-131
+
+- Input: [IN-121](0.0/anchors/PALANG-0.0-IN-20261121-121-UNIVERSAL-HOST-PACKAGE-AND-0PLUSPLUS-CONTINUATION.md).
+- Output: [OUT-120](0.0/anchors/PALANG-0.0-OUT-20261121-120-UNIVERSAL-HOST-PACKAGE-IMPLEMENTATION.md).
+- Event: [EVT-0297](architecture/BEHAVIOR-TRACE/EVT-0297-UNIVERSAL-HOST-PACKAGE-AND-POINT-0-077-CONTINUATION-2026-11-21.md).
+- Time binding: [TIME-BINDING-EVT-0297](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0297-UNIVERSAL-HOST-PACKAGE-2026-11-21.md).
+- Current anchor: [CURRENT-131](0.0/anchors/PALANG-0.0-CURRENT-20261121-131-0PLUSPLUS-UNIVERSAL-HOST-PACKAGE.md).
+- Parent: CURRENT-130; canonical point: POINT-0/077 (0++); sole active queue: NEXT-051.
+- Canonical starter internal version candidate: 0.4.6; stable package ID and ZIP filename unchanged.
+- Universal host contract: [UNIVERSAL-AI-HOST-CONNECTIVITY-CONTRACT](architecture/UNIVERSAL-AI-HOST-CONNECTIVITY/UNIVERSAL-AI-HOST-CONNECTIVITY-CONTRACT-2026-11-21-001.md).
+- PR #64: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/pull/64
+- Exact-SHA package build and durable release: PENDING; independent host acceptance: NOT RUN.
+
+## Universal AI Host Connectivity — implementation candidate (2026-11-21)
+
+- Contract: [Universal AI Host Connectivity Contract](architecture/UNIVERSAL-AI-HOST-CONNECTIVITY/UNIVERSAL-AI-HOST-CONNECTIVITY-CONTRACT-2026-11-21-001.md).
+- Receipt schema: [host-capability-receipt.schema.json](architecture/UNIVERSAL-AI-HOST-CONNECTIVITY/host-capability-receipt.schema.json).
+- Zero-state bootstrap: [Universal AI Host runbook](../prototype/universal-ai-host/README.md).
+- Validator and tests: prototype/universal-ai-host/host_receipt.py and prototype/universal-ai-host/tests/test_host_receipt.py.
+- CI: .github/workflows/universal-ai-host-tests.yml.
+- Status: IMPLEMENTATION CANDIDATE on feat/universal-ai-host-connectivity; not merged. NEXT-051 remains the sole governing queue. Destination OAuth/workspace and independent-host acceptance remain OPEN / NOT RUN.
+
 ## Latest owner-approved continuation — POINT-0/077 (0++) / CURRENT-130
 
 - Chain: [POINT-0/076](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-076-ZERO-STATE-GPT6-HOST.md) → [CURRENT-129](0.0/anchors/PALANG-0.0-CURRENT-20261121-129-ZERO-STATE-GPT6-HOST.md) → [POINT-0/077 (0++)](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-077-0PLUSPLUS-LIVE-ANCHOR.md) → [IN-120](0.0/anchors/PALANG-0.0-IN-20261121-120-0PLUSPLUS-LIVE-ANCHOR.md) → [OUT-119](0.0/anchors/PALANG-0.0-OUT-20261121-119-0PLUSPLUS-LIVE-ANCHOR.md) → [EVT-0296](architecture/BEHAVIOR-TRACE/EVT-0296-0PLUSPLUS-LIVE-ANCHOR-2026-11-21.md) → [TIME-BINDING-EVT-0296](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0296-0PLUSPLUS-LIVE-ANCHOR-2026-11-21.md) → [CURRENT-130](0.0/anchors/PALANG-0.0-CURRENT-20261121-130-0PLUSPLUS-LIVE-ANCHOR.md) → sole queue [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
@@ -2621,3 +2675,9 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - Event / Time binding: EVT-0291 / TIME-BINDING-EVT-0291. EVT-0290 remains assigned to the earlier mirror-only event; the duplicate current-chat EVT-0290 draft is quarantined.
 - Checkpoint: CURRENT-125; sole queue: NEXT-051.
 - Living mother: version 1.7.79. Package source 0.4.4 is not release-verified; exact-head RAHM failed and rebuild remains open.
+
+
+- Historical mirror lineage retained: [EVT-0241](architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) / [TIME-BINDING-EVT-0241](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md).
+
+
+Canonical point label retained: POINT-0/077 (۰++); current checkpoint CURRENT-131; sole queue NEXT-051.
