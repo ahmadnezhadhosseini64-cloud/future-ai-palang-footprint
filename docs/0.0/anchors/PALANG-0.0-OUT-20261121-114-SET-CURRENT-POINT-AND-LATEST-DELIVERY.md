@@ -1,4 +1,4 @@
-# OUT-114 — خروجی معماری: ثبت نقطهٔ جاری و تحویل نسخهٔ قابل اثبات
+# QUARANTINED_DUPLICATE_ID_NONCANONICAL — OUT-114 — خروجی معماری: ثبت نقطهٔ جاری و تحویل نسخهٔ قابل اثبات
 
 - Point: [POINT-0/072](GPT6-RAHM-USER-POINT-0-20261121-072-SET-CURRENT-POINT-AND-LATEST-DELIVERY.md)
 - Input: [IN-115](PALANG-0.0-IN-20261121-115-SET-CURRENT-POINT-AND-LATEST-DELIVERY.md)
@@ -15,3 +15,7 @@
 
 ## گیت‌های باز
 بازسازی ZIP با سند مادر جدید، exact-head RAHM/Audit، بازیابی میزبان مستقل، اتصال مجاز GitHub در میزبان مقصد، workspace پایدار، restart persistence و ضبط خودکار تعاملات همچنان OPEN / NOT VERIFIED / NOT RUN.
+
+
+## Duplicate identifier reconciliation
+This later parallel file set reused POINT-0/072, IN-115, OUT-114 and CURRENT-125. It is preserved for forensic history but is not canonical. The earlier registered CURRENT-CHAT-ANCHOR path set is canonical; its event is uniquely EVT-0291 because EVT-0290 was already assigned to the mirror-only event.
