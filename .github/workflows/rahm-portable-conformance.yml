@@ -185,7 +185,6 @@ jobs:
               "README.md",
               "LIVING_MASTER_REFERENCE.md",
               "INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md",
-              "SINGLE_MESSAGE_GPT6_HOST_BOOTSTRAP_FA.md",
               "ONE_MESSAGE_HOST_BOOTSTRAP_FA.md",
               "manifest.json",
               "GPT6_HOST_INSTRUCTIONS.md",
@@ -277,9 +276,9 @@ jobs:
           }
           Path("haif-gpt6-starter-zip-receipt.json").write_text(json.dumps(receipt, indent=2)+"\n", encoding="utf-8")
           print(json.dumps(receipt, indent=2))
-          if "SINGLE_MESSAGE_GPT6_HOST_BOOTSTRAP_FA.md" not in names:
-              raise SystemExit("SINGLE_MESSAGE_BOOTSTRAP_NOT_IN_CANONICAL_ZIP")
-          print("SINGLE_MESSAGE_GPT6_HOST_BOOTSTRAP=PASS")
+          if "ONE_MESSAGE_HOST_BOOTSTRAP_FA.md" not in names:
+              raise SystemExit("ONE_MESSAGE_HOST_BOOTSTRAP_NOT_IN_CANONICAL_ZIP")
+          print("ONE_MESSAGE_HOST_BOOTSTRAP=PASS")
           print("EXISTING_STARTER_ZIP_REBUILD=PASS")
           PY
       - name: Upload updated bytes for the existing starter ZIP

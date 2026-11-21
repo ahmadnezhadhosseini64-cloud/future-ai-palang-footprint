@@ -12,3 +12,14 @@
 - Manifest: [EXPORT_MANIFEST.json](../../portable/RAHM/EXPORT_MANIFEST.json)
 
 خروجی: پیام واحد فارسی ساخته می‌شود تا میزبان GPT-6 با اتصال رسمی GitHub، آخرین Release و سند مادر را بازیابی کند، SHA/CRC/inventory/tests را بررسی کند، workspace خصوصی بسازد، شناسه‌های واقعی Host/Workspace/Session ایجاد کند، زنجیره را از IN و OUT بازسازی کند و رسید پذیرش بدهد. میزبان از READ-ONLY شروع می‌کند؛ پیام نمی‌تواند مجوز و persistence ایجاد کند. ثبت محلی از ثبت مخزنی جداست؛ ثبت مخزنی فقط از broker مجاز و پس از read-back قابل ادعاست. نوشتن مستقیم main/MASTER ممنوع. package source target 0.4.2؛ stable ID و نام ZIP canonical ثابت. میزبان واقعی هنوز NOT CONNECTED / NOT RUN است. زمان مشاهده 05:31:35Z / 09:01:35+03:30؛ زمان دقیق پیام کاربر UNKNOWN.
+
+## Final verified package 0.4.2 receipt (superseded by 0.4.3 rebuild)
+
+- RAHM run: 44872475881 — success.
+- Living Architecture Audit: 44872475899 — success.
+- Stable release tag: haif-latest-verified.
+- Canonical ZIP: 240,171 bytes; SHA-256 ace92d661a161fc18ea27959ea24c25965721426a1b499b036851017c06e6c14.
+- ZIP inventory: 19 files; CRC/read-back passed; extracted package tests: 24/24 PASS.
+- Paired living master asset SHA-256: 35c114ef74778c5fc2b2b9c372031c3f05c48af38eab51a6aca38e9c2569c6d5.
+- This receipt is for package 0.4.2. The one-message consolidation advances source to 0.4.3; its new ZIP digest remains pending until the next RAHM workflow completes.
+- Parallel duplicate-ID files were quarantined; only the SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP chain remains canonical.

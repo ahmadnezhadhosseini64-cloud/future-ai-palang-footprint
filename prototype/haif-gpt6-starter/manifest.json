@@ -2,8 +2,8 @@
   "package_schema": "haif-gpt6-starter/0.1",
   "stable_id": "HAIF-GPT6-PORTABLE-STARTER-20261025-004",
   "production_id": "HAIF-G6PS-20261025-004",
-  "version": "0.4.2",
-  "supersedes": "0.4.1",
+  "version": "0.4.3",
+  "supersedes": "0.4.2",
   "project": "Future AI / Palang Footprint",
   "canonical_repository": "https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint",
   "parent_architecture": [
@@ -151,19 +151,14 @@
     "CURRENT-122",
     "HAIF permanent multi-host interaction ledger",
     "CURRENT-123",
+    "NEXT-051 (sole active queue)",
     "POINT-0/071 (0++ marker on canonical root 0)",
     "IN-114",
     "OUT-113",
     "EVT-0289",
     "TIME-BINDING-EVT-0289",
     "CURRENT-124",
-    "NEXT-051 (sole active queue)",
-    "POINT-0/071 (0++ highlight on canonical root 0)",
-    "IN-114",
-    "OUT-113",
-    "EVT-0289",
-    "TIME-BINDING-EVT-0289",
-    "CURRENT-124"
+    "NEXT-051 (sole active queue)"
   ],
   "entrypoint": "engine.py",
   "host_instructions": "GPT6_HOST_INSTRUCTIONS.md",
@@ -248,8 +243,8 @@
     "update_mode": "REBUILD_IN_PLACE_SAME_PACKAGE_IDENTITY",
     "do_not_publish_separate_version_named_zip": true,
     "historical_v0_3_0_digest_is_not_current": true,
-    "current_internal_version": "0.4.2",
-    "supersedes": "0.4.1",
+    "current_internal_version": "0.4.3",
+    "supersedes": "0.4.2",
     "latest_delivery_contract": "LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-CONTRACT.md"
   },
   "host_acceptance_checklist": "FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST.md",
@@ -265,10 +260,9 @@
     "HOST_REGISTRY_TEMPLATE.json",
     "FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST.md",
     "INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md",
-    "ONE_MESSAGE_HOST_BOOTSTRAP_FA.md",
-    "SINGLE_MESSAGE_GPT6_HOST_BOOTSTRAP_FA.md"
+    "ONE_MESSAGE_HOST_BOOTSTRAP_FA.md"
   ],
   "one_message_host_bootstrap": "ONE_MESSAGE_HOST_BOOTSTRAP_FA.md",
-  "host_bootstrap_message": "SINGLE_MESSAGE_GPT6_HOST_BOOTSTRAP_FA.md",
-  "independent_host_bootstrap": "SINGLE_MESSAGE_GPT6_HOST_BOOTSTRAP_FA.md"
+  "host_bootstrap_message": "ONE_MESSAGE_HOST_BOOTSTRAP_FA.md",
+  "independent_host_bootstrap": "ONE_MESSAGE_HOST_BOOTSTRAP_FA.md"
 }

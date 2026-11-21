@@ -1,4 +1,4 @@
-# HAIF GPT-6 Portable Starter v0.4.2
+# HAIF GPT-6 Portable Starter v0.4.3
 
 This is the updated release of the existing HAIF starter package, not a separate project. It updates the existing v0.3.0 0/0+ bootstrap package at the same stable package identity and canonical ZIP filename; history and prior digests remain preserved. It does not replace the living master, historical anchors or NEXT-051.
 
@@ -153,7 +153,7 @@ Current canonical chain (plain-text): POINT-0/066 → CURRENT-119 → POINT-0/06
 The package includes `PERMANENT_INTERACTION_LEDGER_CONTRACT.md`, `HOST_REGISTRY_SCHEMA.json` and `HOST_REGISTRY_TEMPLATE.json`. The host registry template is intentionally empty. The repository worker targets only `host-intake`; events require owner-reviewed PR before promotion. GitHub main branch protection remains OPEN / NOT CONFIGURED.
 
 
-## POINT-0/071 — One-message GPT host bootstrap (package 0.4.2)
+## POINT-0/071 — One-message GPT host bootstrap (package 0.4.3)
 
 Use `ONE_MESSAGE_HOST_BOOTSTRAP_FA.md` as the single complete message for a new GPT host. It orchestrates connection to only the canonical repository, latest pointer/receipt checks, paired living-master/ZIP recovery, extracted-package tests and provisioning of a private host-scoped workspace in the destination runtime.
 
@@ -162,6 +162,11 @@ The prompt cannot manufacture GitHub OAuth, connectors, filesystem tools, durabl
 Canonical root remains point 0. The markers 0+, 0++ and 0 are not separate roots; 0.0 is a parent-linked continuation. Current chain: POINT-0/070 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051. The next internal package version is 0.4.2; stable package ID and canonical ZIP filename remain unchanged. Package verification and real independent-host acceptance are separate gates.
 
 
-## Single-message GPT-6 host bootstrap — package 0.4.2
+## Single-message GPT-6 host bootstrap — package 0.4.3
 
-Use SINGLE_MESSAGE_GPT6_HOST_BOOTSTRAP_FA.md as the one initial message for a fresh GPT-6 instance. It directs the host to use an already-authorized official GitHub connector, retrieve the latest verified release and paired living master, verify exact revision/digest/tests, create a host-private workspace where supported, reconstruct the chain and return an acceptance receipt. The host is another instance of the same AI-host role, not an unknown project entity. The message cannot grant permissions or create unavailable persistence. Current chain: POINT-0/071 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051. POINT-0 remains the one root; 0+ and 0++ are markers only.
+Use ONE_MESSAGE_HOST_BOOTSTRAP_FA.md as the one initial message for a fresh GPT-6 instance. It directs the host to use an already-authorized official GitHub connector, retrieve the latest verified release and paired living master, verify exact revision/digest/tests, create a host-private workspace where supported, reconstruct the chain and return an acceptance receipt. The host is another instance of the same AI-host role, not an unknown project entity. The message cannot grant permissions or create unavailable persistence. Current chain: POINT-0/071 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051. POINT-0 remains the one root; 0+ and 0++ are markers only.
+
+
+## Canonical one-message host handoff — package 0.4.3
+
+ONE_MESSAGE_HOST_BOOTSTRAP_FA.md is the only startup message in the canonical ZIP. The older SINGLE_MESSAGE_GPT6_HOST_BOOTSTRAP_FA.md is superseded and excluded from the ZIP inventory. The same stable package ID and canonical archive filename are retained.

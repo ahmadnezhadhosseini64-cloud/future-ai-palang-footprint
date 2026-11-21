@@ -1,3 +1,5 @@
+> QUARANTINED_DUPLICATE_ID_NONCANONICAL — IN-114 فعال و یگانه در زنجیرهٔ canonical، فایل [IN-114](PALANG-0.0-IN-20261121-114-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP.md) است. متن این فایل فقط سابقهٔ برخورد شناسه را حفظ می‌کند.
+
 # IN-114 — درخواست راه‌اندازی یک‌پیامی میزبان GPT و محیط کاری مستقل
 
 - Parent: POINT-0/070 / CURRENT-123
