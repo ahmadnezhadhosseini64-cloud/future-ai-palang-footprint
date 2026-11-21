@@ -905,3 +905,10 @@ The previous blob at this path began with the Integration Queue README title and
 - The canonical package identity and ZIP filename remain unchanged. Current master 1.7.78 must be paired with a newly built package on the exact updated main SHA; the prior 0.4.3 receipt paired with master 1.7.77 is historical only for this latest-main delivery.
 - Exact user-message time remains UNKNOWN / UNVERIFIED. Event commit timestamp is recorded separately in TIME-BINDING-EVT-0290.
 - Host OAuth, independent import, durable workspace, restart persistence, automatic live capture and repository worker remain OPEN until directly evidenced.
+
+
+## Latest registered continuation — POINT-0/072 / CURRENT-125
+
+POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051
+
+Owner explicitly authorized this continuation. POINT-0/071 / CURRENT-124 and all earlier roots remain preserved. EVT-0290 remains mirror-only; EVT-0291 is the new user-authorized continuation event. The living mother is 1.7.79. Package 0.4.3 is a prior verified receipt paired with mother 1.7.77; rebuild on exact current main, package round-trip, digest and extracted tests are required before a new latest-verified release can be claimed. Independent-host import, live host connection, persistent workspace, restart recovery and automatic capture remain OPEN / NOT RUN. Do not create NEXT-052.
