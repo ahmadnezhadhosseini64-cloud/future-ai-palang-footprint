@@ -3,7 +3,7 @@
 - Event ID: EVT-0303
 - Project date: 2026-11-21
 - Parent: POINT-0/083 → IN-126 → OUT-125
-- Status: REGISTERED ON BRANCH / PENDING MAIN MERGE
+- Status: REGISTERED / MERGED TO MAIN
 - Governing architecture: existing HAIF multi-host governance and HOST-WORKSPACES protocol
 - New one-message entry: prototype/universal-host/ONE_MESSAGE_MULTI_HOST_ENROLLMENT_FA.md
 
@@ -27,5 +27,5 @@ POINT-0/082 → CURRENT-135 → POINT-0/083 → IN-126 → OUT-125 → EVT-0303 
 ## Evidence
 
 - Existing multi-host architecture and host workspace protocols were read from the public repository.
-- New onboarding instruction was created on branch host/onboarding-readonly-multihost-point-083.
-- Main merge, destination-host acceptance and workspace recovery remain OPEN.
+- New onboarding instruction was merged to main through PR #85.
+- Main merge: COMPLETED. Destination-host acceptance and workspace recovery remain OPEN.
