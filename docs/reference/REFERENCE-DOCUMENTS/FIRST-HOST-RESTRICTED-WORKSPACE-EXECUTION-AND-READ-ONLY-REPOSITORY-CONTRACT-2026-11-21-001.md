@@ -163,8 +163,8 @@ POLICY DESIGNED / TECHNICAL ENFORCEMENT NOT VERIFIED / INDEPENDENT HOST ACCEPTAN
 ## 11. ثبت زمانی
 
 زمان دقیق پیام کاربر در دسترس/تأییدشده نیست و نباید جعل شود. زمان canonical این نسخه باید از metadata واقعی commit نهایی که این قرارداد را ثبت می‌کند استخراج شود:
-- EVT-0292 registration commit UTC: 2026-11-21T07:42:48Z (SHA 0a90a0c7351ab02f732024dd3029d965138f3872).
-- EVT-0292 registration commit Asia/Tehran: 2026-11-21T11:12:48+03:30.
+- EVT-0292 registration commit UTC: 2026-11-21T07:53:28Z (SHA 2ad41ba20b75a6dc17a3f5a34aaba5c446092fad).
+- EVT-0292 registration commit Asia/Tehran: 2026-11-21T11:23:28+03:30.
 - EVT-0292 registration commit SHA: 0a90a0c7351ab02f732024dd3029d965138f3872.
 زمان آخرین تغییر Git، مبنای UTC است؛ زمان تهران فقط تبدیل همان timestamp است.
 
@@ -183,4 +183,4 @@ The workspace's OWNER_TASKS file is the explicit owner-maintained allowlist. Eve
 
 The host may prepare local files and results only inside its designated workspace. It presents outputs to the owner; it never writes or synchronizes them into GitHub. Only the owner changes canonical repository content and task policy. The host retrieves owner-published changes read-only on a later sync.
 
-- TIME-BINDING-EVT-0292 was read back after registration; its own update commit is `ac3dfc9e37a61882cc4d0ea290db410ca5a145ac` at UTC `2026-11-21T07:43:30Z` / Tehran `2026-11-21T11:13:30+03:30`.
+- TIME-BINDING-EVT-0292 was read back after registration; its own update commit is `649acaef943e998e64e108084545ccd0e5e56f58` at UTC `2026-11-21T07:53:32Z` / Tehran `2026-11-21T11:23:32+03:30`.
