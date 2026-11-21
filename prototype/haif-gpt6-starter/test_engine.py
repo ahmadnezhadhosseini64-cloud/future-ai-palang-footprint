@@ -182,9 +182,9 @@ class PortablePackageProtocolTests(unittest.TestCase):
         package = Path(__file__).parent
         manifest = json.loads((package / "manifest.json").read_text(encoding="utf-8"))
         self.assertEqual(manifest["version"], manifest["archive_policy"]["current_internal_version"])
-        self.assertEqual(manifest["supersedes"], "0.4.6")
+        self.assertEqual(manifest["supersedes"], "0.4.7")
         self.assertEqual(manifest["stable_id"], "HAIF-GPT6-PORTABLE-STARTER-20261025-004")
-        self.assertEqual(manifest["current_living_master_version"], "1.7.86")
+        self.assertEqual(manifest["current_living_master_version"], "1.7.87")
         self.assertEqual(manifest["recovery_protocol"], "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md")
         self.assertEqual(manifest["universal_host_entry"], "UNIVERSAL_AI_HOST_ENTRY_FA.md")
         self.assertTrue((package / manifest["universal_host_entry"]).is_file())
@@ -321,7 +321,7 @@ class HostGrowthRepositoryContractTests(unittest.TestCase):
         root = Path(__file__).parent
         manifest = json.loads((root / "manifest.json").read_text(encoding="utf-8"))
         self.assertEqual(manifest["version"], manifest["archive_policy"]["current_internal_version"])
-        self.assertEqual(manifest["supersedes"], "0.4.6")
+        self.assertEqual(manifest["supersedes"], "0.4.7")
         self.assertEqual(manifest["stable_id"], "HAIF-GPT6-PORTABLE-STARTER-20261025-004")
         self.assertEqual(manifest["recovery_protocol"], "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md")
 
@@ -351,9 +351,9 @@ class InteractionResponseAnchorProtocolTests(unittest.TestCase):
         ):
             text = (root / filename).read_text(encoding="utf-8")
             self.assertIn(expected_chain, text, filename)
-            self.assertIn("0.4.7", text, filename)
+            self.assertIn("0.4.8", text, filename)
         readme = (root / "README.md").read_text(encoding="utf-8")
-        self.assertIn("v0.4.7", readme)
+        self.assertIn("v0.4.8", readme)
         self.assertIn("external build receipt", readme)
         self.assertIn("Previous verified v0.4.3 build receipt", readme)
         self.assertIn(expected_chain, readme)
