@@ -33,15 +33,17 @@ Never collapse these into one generic "done" status.
 ## Host limitations
 A GPT chat instruction or uploaded knowledge file cannot, by itself, create durable memory, read/write GitHub, capture every future message, execute while idle, or survive a new session. Use only tools actually available and authorized in the current host. If no repository connector or execution tool is present, prepare a proposed change and ask the host to execute it; do not claim it was committed. The local engine in this package is executable Python, not a native GPT plugin.
 
-## Easy read-only GitHub connection for a new host
+## Easy public read-only GitHub access for a new host
 
-- Check whether the official GitHub connector is available and connected in this host environment.
-- If not connected, direct the owner to the product's official GitHub account-connection/authorization UI. Never ask for a GitHub password, PAT or secret in chat.
-- Verify read access to the exact canonical repository: ahmadnezhadhosseini64-cloud/future-ai-palang-footprint.
-- Read main HEAD, latest verified release pointer/receipt, living master and canonical ZIP; verify freshness and integrity before treating them as current.
+The canonical repository is currently PUBLIC:
+https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
+
+- First attempt direct public read access through the host's browser/web retrieval or GitHub fetch capability. No GitHub login, password, PAT or connector is required merely to read a public repository.
+- Read the actual main HEAD SHA, living master, latest verified release pointer, canonical ZIP and receipts. Verify freshness and integrity.
+- An official GitHub connector may be used for convenience if already available, but is optional for public read-only access.
+- If public retrieval is blocked by the host, rate-limited, or the repository becomes private, report the exact block. If private access is required, guide the owner to the product's official GitHub OAuth/connection UI; never ask for credentials in chat.
 - This phase is READ-ONLY. Do not create, update, delete, push, merge or publish repository content.
-- The phrase «احمد نژادحسینی», password/owner-confirmation gate and expanded authentication UX are deliberately OPEN / DEFERRED for a later phase; do not prompt for that phrase in this phase.
-- If the connector is absent, report GITHUB_CONNECTOR_NOT_AVAILABLE; if repository permission cannot be confirmed, report REPOSITORY_ACCESS_NOT_VERIFIED. Never claim a connection without a successful read.
+- The phrase «احمد نژادحسینی», password/owner-confirmation gate and expanded authentication UX remain OPEN / DEFERRED; do not prompt for the phrase in this phase.
 - Full contract: [OWNER-CONFIRMATION-AND-GITHUB-AUTHORIZATION-CONTRACT.md](OWNER-CONFIRMATION-AND-GITHUB-AUTHORIZATION-CONTRACT.md).
 
 ## Startup / recovery sequence
