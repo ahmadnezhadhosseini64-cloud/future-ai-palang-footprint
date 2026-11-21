@@ -1,6 +1,6 @@
 # دستور آزمون پذیرش میزبان مستقل و چندمیزبانی — HAIF / RAHM
 
-> Current target: POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → NEXT-051; package source 0.4.6; living master 1.7.85. برای ورود تازه از دستور عمومی UNIVERSAL_AI_HOST_ENTRY_FA.md استفاده کن؛ این سند مکمل آزمون پذیرش است.
+> Current target: POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051; package target 0.4.7; living master 1.7.86. برای ورود تازه از دستور عمومی UNIVERSAL_AI_HOST_ENTRY_FA.md استفاده کن؛ این سند مکمل آزمون پذیرش است.
 
 این متن را همراه ZIP canonical و فایل سند مادر `LIVING_MASTER_REFERENCE.md` به یک میزبان هوش مصنوعی مستقل بدهید. پاسخ خام میزبان را بدون ویرایش نگه دارید.
 
@@ -12,7 +12,7 @@
 2. از manifest، Stable ID، Production ID، نسخه داخلی و نام canonical ZIP را عیناً بخوان.
 3. سند مادر همراه را بخوان و نسخه و hash آن را گزارش کن.
 4. زنجیره جاری را دقیقاً بازسازی کن:
-   `POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → POINT-0/069 → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122 → NEXT-051`.
+   `POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051`.
 5. اگر ZIP یا سند مادر دریافت‌شده قدیمی است، اختلاف نسخه/زنجیره را اعلام کن؛ زنجیره را از حافظه یا حدس تکمیل نکن.
 6. وضعیت‌ها را جدا گزارش کن: PACKAGE READ, MASTER READ, CHAIN MATCH, PACKAGE TESTS, HOST RECOVERY, EXTERNAL ACCEPTANCE.
 
