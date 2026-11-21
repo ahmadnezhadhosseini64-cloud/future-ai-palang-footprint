@@ -1033,3 +1033,12 @@ Canonical point label: POINT-0/077 (۰++). Graph/identity/parent/time triage rem
 - Schema, Python calculator and regression tests are included in the canonical starter source and conformance inventory.
 - PR #64 remains the integration path. Final CI, canonical ZIP extraction/release verification, merge and independent host recovery remain open.
 - No new queue; continue only through NEXT-051.
+
+
+## CURRENT-133 continuation — preserve and resolve CI inconsistency (2026-11-21)
+
+- Chain: CURRENT-132 → IN-123 → OUT-122 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-133 → NEXT-051.
+- Preserve the original stale CURRENT-131 assertion failure and run 44910997351 as historical evidence. Do not delete or overwrite it.
+- Correction advanced test_engine.py expected chain; four workflows passed at SHA 9190b0a9c2dcf1db0133bd937be0bb1a81d3624c (run IDs in IN-123).
+- PR #64 remains the integration path. Exact release archive and clean-host acceptance are separate gates.
+- No new queue; NEXT-051 remains the sole queue.
