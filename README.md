@@ -105,8 +105,15 @@ This project has its own living execution record, legal gates, job-search stages
 - The same canonical ZIP identity and filename must be rebuilt from the latest accepted source after successful validation; no new parallel ZIP identity is created.
 
 
-## راه‌اندازی یک‌پیامی میزبان GPT — POINT-0/071
+## ادامهٔ جاری و راه‌اندازی میزبان GPT — POINT-0/072
 
 پیام واحد آماده ارسال: [ONE_MESSAGE_HOST_BOOTSTRAP_FA.md](prototype/haif-gpt6-starter/ONE_MESSAGE_HOST_BOOTSTRAP_FA.md). این پیام اتصال خواندنی فقط به مخزن رسمی، بازیابی آخرین سند مادر و ZIP، آزمون بسته و ایجاد workspace خصوصی همان میزبان را orchestrate می‌کند. مجوز GitHub و قابلیت runtime باید در مقصد واقعاً تأیید شوند؛ پیام به‌تنهایی مجوز یا sandbox ایجاد نمی‌کند. 0++ نشانگر روی همان ریشه canonical صفر است، نه ریشه مستقل.
 
-زنجیره: POINT-0/070 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051.
+زنجیرهٔ جاری: POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051.
+
+
+## Current canonical continuation — POINT-0/072
+
+[POINT-0/072](docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-072-CURRENT-CHAT-ANCHOR-0PLUS.md) → [IN-115](docs/0.0/anchors/PALANG-0.0-IN-20261121-115-CURRENT-CHAT-ANCHOR.md) → [OUT-114](docs/0.0/anchors/PALANG-0.0-OUT-20261121-114-CURRENT-CHAT-ANCHOR.md) → [EVT-0291](docs/architecture/BEHAVIOR-TRACE/EVT-0291-SET-CURRENT-POINT-AND-LATEST-DELIVERY-2026-11-21.md) → [TIME-BINDING-EVT-0291](docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0291-SET-CURRENT-POINT-AND-LATEST-DELIVERY-2026-11-21.md) → [CURRENT-125](docs/0.0/anchors/PALANG-0.0-CURRENT-20261121-125-CURRENT-CHAT-ANCHOR.md) → [NEXT-051](docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+
+EVT-0290 remains the earlier mirror-only event. The duplicate same-number current-chat draft is quarantined.
