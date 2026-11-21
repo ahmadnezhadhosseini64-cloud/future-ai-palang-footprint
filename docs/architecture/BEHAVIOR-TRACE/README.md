@@ -1460,3 +1460,6 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Time binding: [TIME-BINDING-EVT-0293](./TIME-BINDING-EVT-0293-0PLUSPLUS-TO-0-0-COMPLETION-2026-11-21.md)
 - Current: [CURRENT-127](../../0.0/anchors/PALANG-0.0-CURRENT-20261121-127-0PLUSPLUS-TO-0-0-COMPLETION.md)
 - Sole next: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
+
+
+Canonical point label retained: POINT-0/077 (۰++); current checkpoint CURRENT-131; sole queue NEXT-051.
