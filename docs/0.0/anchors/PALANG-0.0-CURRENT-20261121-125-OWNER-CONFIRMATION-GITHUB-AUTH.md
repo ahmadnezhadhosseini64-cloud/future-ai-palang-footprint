@@ -10,7 +10,7 @@
 - Status: PROPOSAL REGISTERED ON HOST-INTAKE BRANCH / NOT MERGED.
 - Living master target: v1.7.79.
 - Package source target: 0.4.4.
-- Immediate scope: official GitHub connector discovery, user-guided authorization in host UI, read-only repository access and latest-state recovery.
+- Immediate scope: anonymous public READ-ONLY access to the canonical repository, main HEAD discovery and latest-state recovery; official connector is optional while repository remains PUBLIC.
 - Main branch integration: NOT DONE.
 - Canonical ZIP rebuild and exact hash/receipt: PENDING.
 - Independent-host connector and read-only access test: NOT RUN.
