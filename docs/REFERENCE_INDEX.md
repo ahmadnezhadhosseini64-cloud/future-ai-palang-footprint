@@ -8,7 +8,7 @@
 - Official Host ID / Workspace ID are assigned only after a real host returns its receipt and the owner verifies identity. Registry remains empty until then.
 - Private host workspace must exist in the destination host's own isolated environment. A folder in the shared repository is not a security boundary.
 - Destination persistence, export, recovery, broker, automated registry provisioning, cross-host isolation and host acceptance remain OPEN until direct evidence exists.
-- Event registration commit: d4267d39efc03d5573cdf9e90f7f36eae18b52b1 (UTC 2026-11-21T19:24:40Z; Tehran 2026-11-21T22:54:40+03:30). PR #85 merged to main at commit d9156fc4bb28cc1587774ed2ab0758b141bddc8f (UTC 2026-11-21T19:26:11Z; Tehran 2026-11-21T22:56:11+03:30).
+- Event registration commit: d4267d39efc03d5573cdf9e90f7f36eae18b52b1 (UTC 2026-11-21T19:24:40Z; Tehran 2026-11-21T22:54:40+03:30). PR #85 merged to main at commit d9156fc4bb28cc1587774ed2ab0758b141bddc8f (UTC 2026-11-21T19:26:11Z; Tehran 2026-11-21T22:56:11+03:30). Final read-back: all 10 changed/new files SHA-matched 10/10 at main HEAD a489a5cd56c226299b408ebbb4b603bb54108f77 (UTC 2026-11-21T19:27:18Z).
 - NEXT-051 remains the sole active queue; no NEXT-052 or parallel root.
 
 ## Previous owner-approved continuation — POINT-0/082 (0++) / CURRENT-135
