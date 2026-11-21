@@ -182,7 +182,7 @@ class PortablePackageProtocolTests(unittest.TestCase):
         package = Path(__file__).parent
         manifest = json.loads((package / "manifest.json").read_text(encoding="utf-8"))
         self.assertEqual(manifest["version"], manifest["archive_policy"]["current_internal_version"])
-        self.assertEqual(manifest["supersedes"], "0.4.8")
+        self.assertEqual(manifest["supersedes"], "0.4.9")
         self.assertEqual(manifest["stable_id"], "HAIF-GPT6-PORTABLE-STARTER-20261025-004")
         self.assertEqual(manifest["current_living_master_version"], "1.7.87")
         self.assertEqual(manifest["recovery_protocol"], "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md")
@@ -358,7 +358,7 @@ class InteractionResponseAnchorProtocolTests(unittest.TestCase):
         self.assertIn("Previous verified v0.4.3 build receipt", readme)
         self.assertIn(expected_chain, readme)
         self.assertEqual(manifest["current_living_master_version"], "1.7.89")
-        self.assertIn("POINT-0/082 (0++)", manifest["parent_architecture"])
+        self.assertIn("POINT-0/082 (0++ marker on canonical root 0)", manifest["parent_architecture"])
         packaged_master = (root / "LIVING_MASTER_REFERENCE.md").read_text(encoding="utf-8")
         self.assertIn("Version / نسخه: 1.7.89", packaged_master)
         self.assertIn(expected_chain, packaged_master)
