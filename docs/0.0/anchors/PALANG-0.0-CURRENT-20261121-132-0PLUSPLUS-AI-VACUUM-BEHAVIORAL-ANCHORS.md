@@ -1,10 +1,10 @@
 # CURRENT-132 — نقطهٔ ۰++: AI VACUUM و لنگرهای رفتارشناسی
 
-- Status: ACTIVE / LIVING / BRANCH-REGISTERED / PACKAGE-CONFORMANCE-PENDING
+- Status: ACTIVE / LIVING / BRANCH-REGISTERED / PACKAGE-CONFORMANCE-PENDING / TIME-BOUND
 - Parent: CURRENT-131
 - Canonical root: POINT-0/077 (۰++)
 - Input/output: IN-122 → OUT-121
-- Event/time: EVT-0298 → TIME-BINDING-EVT-0298 (time binding follows this checkpoint commit)
+- Event/time: EVT-0298 → TIME-BINDING-EVT-0298 (2026-11-21T13:50:49Z / 2026-11-21T17:20:49+03:30)
 - Sole governing queue: NEXT-051
 - Living master target: version 1.7.87
 - Canonical repository: ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
