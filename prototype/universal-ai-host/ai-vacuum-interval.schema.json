@@ -1,0 +1,222 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HAIF AI Vacuum Interval Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "receipt_id",
+    "stop_anchor",
+    "thinking_start_anchor",
+    "interval",
+    "behavior_events",
+    "privacy"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "receipt_id": {
+      "type": "string",
+      "minLength": 8
+    },
+    "stop_anchor": {
+      "$ref": "#/$defs/anchor"
+    },
+    "thinking_start_anchor": {
+      "$ref": "#/$defs/anchor"
+    },
+    "interval": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "duration_ms",
+        "reason"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "MEASURABLE",
+            "UNMEASURABLE",
+            "CLOCK_CONFLICT",
+            "NOT_APPLICABLE"
+          ]
+        },
+        "duration_ms": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "reason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "behavior_events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "event_id",
+          "event_type",
+          "timestamp",
+          "clock_source",
+          "actor",
+          "outcome",
+          "evidence_reference"
+        ],
+        "properties": {
+          "event_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "event_type": {
+            "enum": [
+              "REQUEST_RECEIVED",
+              "CONTEXT_RETRIEVAL_STARTED",
+              "CONTEXT_RETRIEVAL_COMPLETED",
+              "REPOSITORY_READ",
+              "TOOL_CALL_STARTED",
+              "TOOL_CALL_COMPLETED",
+              "TOOL_CALL_FAILED",
+              "FILE_READ",
+              "FILE_WRITE_REQUESTED",
+              "FILE_WRITE_COMPLETED",
+              "CODE_EXECUTION_STARTED",
+              "CODE_EXECUTION_COMPLETED",
+              "CODE_EXECUTION_FAILED",
+              "TEST_STARTED",
+              "TEST_PASSED",
+              "TEST_FAILED",
+              "VALIDATION_STARTED",
+              "VALIDATION_COMPLETED",
+              "RESPONSE_COMPOSITION_STARTED",
+              "RESPONSE_SENT",
+              "HOST_YIELDED",
+              "HOST_STOPPED",
+              "EVENT_UNAVAILABLE"
+            ]
+          },
+          "timestamp": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date-time"
+          },
+          "clock_source": {
+            "enum": [
+              "host_runtime",
+              "platform_event",
+              "repository_commit",
+              "user_supplied",
+              "unknown"
+            ]
+          },
+          "actor": {
+            "enum": [
+              "host",
+              "model",
+              "tool",
+              "user",
+              "system"
+            ]
+          },
+          "outcome": {
+            "type": "string"
+          },
+          "evidence_reference": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "metadata": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "privacy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "secrets_present",
+        "private_reasoning_stored"
+      ],
+      "properties": {
+        "secrets_present": {
+          "const": false
+        },
+        "private_reasoning_stored": {
+          "const": false
+        }
+      }
+    }
+  },
+  "$defs": {
+    "anchor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "event",
+        "timestamp",
+        "clock_source",
+        "precision",
+        "status",
+        "evidence_reference"
+      ],
+      "properties": {
+        "event": {
+          "enum": [
+            "STOP",
+            "THINKING_START"
+          ]
+        },
+        "timestamp": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "clock_source": {
+          "enum": [
+            "host_runtime",
+            "platform_event",
+            "repository_commit",
+            "user_supplied",
+            "unknown"
+          ]
+        },
+        "precision": {
+          "enum": [
+            "exact",
+            "rounded",
+            "unknown"
+          ]
+        },
+        "status": {
+          "enum": [
+            "OBSERVED",
+            "UNAVAILABLE",
+            "NOT_RECORDED"
+          ]
+        },
+        "evidence_reference": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}
