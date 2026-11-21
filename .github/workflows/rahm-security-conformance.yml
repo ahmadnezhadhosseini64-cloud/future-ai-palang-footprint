@@ -36,7 +36,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: rahm-security-conformance-\${{ github.ref }}
+  group: rahm-security-conformance-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
