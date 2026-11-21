@@ -90,7 +90,7 @@ This contract defines the governance path; it does not itself implement a live H
 
 ## Permanent interaction ledger — POINT-0/069 / CURRENT-122
 
-Current living master: version 1.7.74. Current chain: POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → POINT-0/069 → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122 → POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051 → NEXT-051.
+Current living master: version 1.7.79. Current chain: POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051.
 
 Every actual interaction received from a registered host through an authorized producer/adapter must be recorded append-only as an independent IN/OUT pair or an explicit failure/no-response gap. Each record must include unique IDs, host/session identity (pseudonymous), parent point/event, master commit/version, adapter version, source/evidence references, trustworthy UTC timestamp or UNKNOWN, repository receive time, SHA-256, privacy/redaction basis, status and read-back receipt.
 
