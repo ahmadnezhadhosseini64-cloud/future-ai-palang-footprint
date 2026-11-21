@@ -177,7 +177,9 @@
     "TIME-BINDING-EVT-0297",
     "CURRENT-131",
     "UNIVERSAL-AI-HOST-CONNECTIVITY-CONTRACT-2026-11-21-001",
-    "NEXT-051 (sole active queue; universal host implementation and clean-host recovery)"
+    "NEXT-051 (sole active queue; universal host implementation and clean-host recovery)",
+    "POINT-0/077 (۰++)",
+    "CURRENT-130"
   ],
   "entrypoint": "engine.py",
   "host_instructions": "GPT6_HOST_INSTRUCTIONS.md",
