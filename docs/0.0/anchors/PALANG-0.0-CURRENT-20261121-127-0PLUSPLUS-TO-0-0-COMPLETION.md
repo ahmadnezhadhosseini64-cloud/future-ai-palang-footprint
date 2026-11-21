@@ -39,3 +39,8 @@ Only the repository/CI gates can be completed from repository automation. Extern
 - Issue #20 and Issue #21: OPEN; retain their existing source records.
 - Authentication gate: OPEN / DEFERRED; no OAuth or repository credential is implied.
 
+
+
+## Preserved mirror links
+- [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md)
+- [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md)
