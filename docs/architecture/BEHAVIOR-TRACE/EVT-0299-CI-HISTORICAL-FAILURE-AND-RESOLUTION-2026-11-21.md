@@ -31,3 +31,11 @@ This is branch CI verification only. PR #64 remains subject to review/merge. ZIP
 
 ## Follow-up recurrence retained (not overwritten)
 At head c49e3db2332925b85061219505398ee86abe9441, the portable conformance and living architecture audit failed again because the same expected CURRENT-133 chain was missing from GPT6_HOST_INSTRUCTIONS.md (and the package README). Runs 44912041984 and 44912042023 preserve this second occurrence. Both package documents have now been updated to include the exact chain. New exact-head CI is pending; the earlier passing run remains historical evidence for its own SHA only.
+
+
+## Third stale-copy recurrence and correction (latest source update)
+
+- Exact head `0c36063afe9b5ec44f30da9d7031a2f000967cff` failed portable conformance run `44912318893` because `INDEPENDENT_HOST_RECOVERY_PROTOCOL.md` still advertised an older canonical chain. The package test requires the same CURRENT-133 chain in four host-facing contracts.
+- The mismatch was not deleted. Run `44912318893` and its extracted-ZIP assertion remain preserved.
+- Corrective source updates now add the full CURRENT-133 chain to `INDEPENDENT_HOST_RECOVERY_PROTOCOL.md`, `INTERACTION-RESPONSE-AND-ANCHOR-PROTOCOL.md`, and `HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md`; GPT6_HOST_INSTRUCTIONS.md and README.md were already aligned.
+- New exact-head checks are required after these three additive changes. Earlier successful runs apply only to their own source SHA.
