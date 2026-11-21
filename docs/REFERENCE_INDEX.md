@@ -1,3 +1,15 @@
+## Security enforcement correction — PR #90 / POINT-0/084
+
+- The legacy `scripts/host_adapter_github_worker.py` now fails closed when the target is the canonical master repository. It refuses host-originated writes to the master, including `host-intake`.
+- The portable conformance workflow now asserts the master-write guard.
+- GPT-6 host instructions and the host-growth contract explicitly prohibit master credentials and host-facing master writes. The host must not hold a GitHub token, PAT, deploy key or App token.
+- PR #90: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/pull/90
+- Merge commit: `048b3be7c2ffbcea607f26ab804494a0b31e7cd5`; UTC `2026-11-21T20:09:00Z`; Tehran `2026-11-21T23:39:00+03:30`.
+- Read-back: 8/8 changed files fetched from main; blob SHA matches 8/8.
+- This is a code-level fail-closed guard in the legacy worker, not a substitute for GitHub branch rules, collaborator/App audit, or a deployed broker. Those remain OPEN / NOT VERIFIED.
+- Each verified host still requires an owner-created PRIVATE repository. No such per-host repository or broker/App installation was created by this PR.
+
+
 ## Latest owner-directed continuation — POINT-0/084 (0++) / CURRENT-137
 
 - Chain: [POINT-0/083](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-083-OWNER-GOVERNED-MULTI-HOST-ENTRY.md) → [CURRENT-136](0.0/anchors/PALANG-0.0-CURRENT-20261121-136-OWNER-GOVERNED-MULTI-HOST-ENTRY.md) → [POINT-0/084](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-084-OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOS.md) → [IN-127](0.0/anchors/PALANG-0.0-IN-20261121-127-OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOS.md) → [OUT-126](0.0/anchors/PALANG-0.0-OUT-20261121-126-OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOS.md) → [EVT-0304](architecture/BEHAVIOR-TRACE/EVT-0304-OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOS-2026-11-21.md) → [TIME-BINDING-EVT-0304](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0304-OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOS-2026-11-21.md) → [CURRENT-137](0.0/anchors/PALANG-0.0-CURRENT-20261121-137-OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOS.md) → sole queue [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
