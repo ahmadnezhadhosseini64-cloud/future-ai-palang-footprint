@@ -12,7 +12,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: rahm-child-promotion-\${{ inputs.candidate_id }}
+  group: rahm-child-promotion-${{ inputs.candidate_id }}
   cancel-in-progress: false
 
 jobs:
@@ -25,9 +25,9 @@ jobs:
     steps:
       - name: Require owner-managed credentials
         env:
-          APP_CLIENT_ID: \${{ vars.PALANG_PROMOTION_APP_CLIENT_ID }}
-          APP_PRIVATE_KEY: \${{ secrets.PALANG_PROMOTION_APP_PRIVATE_KEY }}
-          RAHM_READ_TOKEN: \${{ secrets.RAHM_READ_TOKEN }}
+          APP_CLIENT_ID: ${{ vars.PALANG_PROMOTION_APP_CLIENT_ID }}
+          APP_PRIVATE_KEY: ${{ secrets.PALANG_PROMOTION_APP_PRIVATE_KEY }}
+          RAHM_READ_TOKEN: ${{ secrets.RAHM_READ_TOKEN }}
         run: |
           set -euo pipefail
           test -n "$APP_CLIENT_ID" || { echo "MISSING_REPOSITORY_VARIABLE_PALANG_PROMOTION_APP_CLIENT_ID"; exit 1; }
@@ -38,8 +38,8 @@ jobs:
         id: app-token
         uses: actions/create-github-app-token@v3.2.0
         with:
-          client-id: \${{ vars.PALANG_PROMOTION_APP_CLIENT_ID }}
-          private-key: \${{ secrets.PALANG_PROMOTION_APP_PRIVATE_KEY }}
+          client-id: ${{ vars.PALANG_PROMOTION_APP_CLIENT_ID }}
+          private-key: ${{ secrets.PALANG_PROMOTION_APP_PRIVATE_KEY }}
           owner: ahmadnezhadhosseini64-cloud
           repositories: future-ai-palang-footprint
           permission-contents: write
@@ -50,7 +50,7 @@ jobs:
         with:
           repository: ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
           ref: main
-          token: \${{ steps.app-token.outputs.token }}
+          token: ${{ steps.app-token.outputs.token }}
           fetch-depth: 0
 
       - name: Read the owner-only private RAHM store
@@ -58,14 +58,14 @@ jobs:
         with:
           repository: ahmadnezhadhosseini64-cloud/future-ai-palang-rahm
           ref: main
-          token: \${{ secrets.RAHM_READ_TOKEN }}
+          token: ${{ secrets.RAHM_READ_TOKEN }}
           path: private-rahm
           persist-credentials: false
           fetch-depth: 1
 
       - name: Verify RAHM repository is private
         env:
-          GH_TOKEN: \${{ secrets.RAHM_READ_TOKEN }}
+          GH_TOKEN: ${{ secrets.RAHM_READ_TOKEN }}
         run: |
           set -euo pipefail
           private="$(gh api repos/ahmadnezhadhosseini64-cloud/future-ai-palang-rahm --jq '.private')"
@@ -73,7 +73,7 @@ jobs:
 
       - name: Validate and stage owner-redacted candidate
         env:
-          CANDIDATE_ID: \${{ inputs.candidate_id }}
+          CANDIDATE_ID: ${{ inputs.candidate_id }}
         run: |
           set -euo pipefail
           python3 scripts/rahm/prepare_promotion.py \
@@ -83,8 +83,8 @@ jobs:
 
       - name: Create bot-authored branch and pull request
         env:
-          CANDIDATE_ID: \${{ inputs.candidate_id }}
-          GH_TOKEN: \${{ steps.app-token.outputs.token }}
+          CANDIDATE_ID: ${{ inputs.candidate_id }}
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
         run: |
           set -euo pipefail
           branch="rahm-child/$CANDIDATE_ID"
