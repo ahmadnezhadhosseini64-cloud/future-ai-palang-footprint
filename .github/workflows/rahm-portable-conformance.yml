@@ -6,6 +6,7 @@ on:
     paths:
       - 'docs/portable/RAHM/**'
       - 'docs/0.0/anchors/**'
+      - 'docs/architecture/HOST-REGISTRY/**'
       - 'docs/architecture/BEHAVIOR-TRACE/**'
       - 'docs/architecture/INTEGRATION-QUEUE/README.md'
       - 'docs/architecture/مدل اولیه AI/**'
