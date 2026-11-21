@@ -2162,3 +2162,13 @@ The canonical chain is [POINT-0/032](./anchors/GPT6-RAHM-USER-POINT-0-20261026-0
 [POINT-0/072](anchors/GPT6-RAHM-USER-POINT-0-20261121-072-CURRENT-CHAT-ANCHOR-0PLUS.md) → [IN-115](anchors/PALANG-0.0-IN-20261121-115-CURRENT-CHAT-ANCHOR.md) → [OUT-114](anchors/PALANG-0.0-OUT-20261121-114-CURRENT-CHAT-ANCHOR.md) → [EVT-0291](../architecture/BEHAVIOR-TRACE/EVT-0291-SET-CURRENT-POINT-AND-LATEST-DELIVERY-2026-11-21.md) → [TIME-BINDING-EVT-0291](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0291-SET-CURRENT-POINT-AND-LATEST-DELIVERY-2026-11-21.md) → [CURRENT-125](anchors/PALANG-0.0-CURRENT-20261121-125-CURRENT-CHAT-ANCHOR.md) → [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 
 این آخرین زنجیرهٔ canonical است. EVT-0290 برای رویداد mirror-only قبلی محفوظ است؛ این تعامل با EVT-0291 ثبت شده. بستهٔ منبع 0.4.4 تا عبور از RAHM/Audit و تطبیق ZIP تأییدشده نیست.
+
+
+---
+
+## تازه‌ترین زنجیره — POINT-0/074 (۰++) → CURRENT-127 → هدف تکمیل ۰.۰
+
+- Current continuation: [CURRENT-127](./anchors/PALANG-0.0-CURRENT-20261121-127-0PLUSPLUS-TO-0-0-COMPLETION.md); NEXT-051 remains the sole active remediation queue.
+- زنجیرهٔ کامل: [POINT-0/074](./anchors/GPT6-RAHM-USER-POINT-0-20261121-074-0PLUSPLUS-TO-0-0-COMPLETION.md) → [IN-117](./anchors/PALANG-0.0-IN-20261121-117-0PLUSPLUS-TO-0-0-COMPLETION.md) → [OUT-116](./anchors/PALANG-0.0-OUT-20261121-116-0PLUSPLUS-TO-0-0-COMPLETION.md) → [EVT-0293](../architecture/BEHAVIOR-TRACE/EVT-0293-0PLUSPLUS-TO-0-0-COMPLETION-2026-11-21.md) → [TIME-BINDING-EVT-0293](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0293-0PLUSPLUS-TO-0-0-COMPLETION-2026-11-21.md) → [CURRENT-127](./anchors/PALANG-0.0-CURRENT-20261121-127-0PLUSPLUS-TO-0-0-COMPLETION.md) → [NEXT-051](./anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- 0++ is a marker on the one canonical Point 0 root. The execution objective is completion of the existing 0.0 chain, not creation of a parallel root or NEXT queue.
+- Living mother: 1.7.81. Portable starter: 0.4.5. Package and host acceptance remain evidence-gated.
