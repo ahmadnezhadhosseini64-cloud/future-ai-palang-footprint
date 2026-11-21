@@ -3,8 +3,8 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.10.49
-- Date: 2026-11-20
+- Version: 1.10.50
+- Date: 2026-11-21
 - Exact Time: EVT-0261 event commit UTC `2026-11-10T06:47:53Z` / Tehran `2026-11-10T10:17:53+03:30`; initial time-binding commit UTC `2026-11-10T06:48:18Z` / Tehran `2026-11-10T10:18:18+03:30`.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
@@ -2814,3 +2814,12 @@ Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-11
 - Canonical ZIP v0.3.9: 207402 bytes; SHA-256 `36966dc71f951021a68defe72677a35b58c8fb5b25100b7e59e5d63c90109be2`; 14 files; 24/24 local extracted tests PASS.
 - Stable release ID 452647521: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified.
 - Independent-host recovery remains OPEN / NOT RUN; NEXT-051 remains sole active queue.
+
+
+## EVT-0289 — Single-message GPT-6 host bootstrap
+
+- Point: [POINT-0/071](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-071-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP-0PLUS.md).
+- Input/output: [IN-114](../../0.0/anchors/PALANG-0.0-IN-20261121-114-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP.md) / [OUT-113](../../0.0/anchors/PALANG-0.0-OUT-20261121-113-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP.md).
+- Event/time: [EVT-0289](../BEHAVIOR-TRACE/EVT-0289-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP-2026-11-21.md) / [TIME-BINDING-EVT-0289](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0289-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP-2026-11-21.md).
+- Checkpoint: [CURRENT-124](../../0.0/anchors/PALANG-0.0-CURRENT-20261121-124-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP.md); sole queue [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Portable source includes one-message bootstrap; package target 0.4.2. No external host is ACTIVE without direct receipt.
