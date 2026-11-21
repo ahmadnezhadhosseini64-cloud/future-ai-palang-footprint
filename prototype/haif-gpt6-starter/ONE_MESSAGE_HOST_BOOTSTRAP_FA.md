@@ -44,7 +44,7 @@ Snapshot سند مادر و ZIP باید READ-ONLY و به commit و digest دق
 - نقطه صفر تنها ریشهٔ canonical است.
 - 0+ و 0++ فقط نشانگر برجسته‌سازی/تولید/آمادگی روی همان ریشه‌اند؛ نقطه یا ریشه مستقل نیستند.
 - 0.0 ادامهٔ والددار همان ریشه است.
-- زنجیرهٔ فعلی را از آخرین اسناد IN/OUT/EVT/TIME-BINDING/CURRENT بخوان؛ زنجیرهٔ جاری این بسته POINT-0/071 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051 است.
+- زنجیرهٔ فعلی را از آخرین اسناد IN/OUT/EVT/TIME-BINDING/CURRENT بخوان؛ زنجیرهٔ جاری این بسته POINT-0/072 → IN-115 → OUT-114 → EVT-0290 → TIME-BINDING-EVT-0290 → CURRENT-125 → NEXT-051 است. زنجیرهٔ قبلی POINT-0/071 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 حفظ می‌شود.
 - NEXT-051 صف اجرایی یگانه است؛ صف موازی نساز.
 - سند مادر و راهنماهای داخل ZIP را بخوان و وضعیت گیت‌های باز را حفظ کن.
 
@@ -68,3 +68,8 @@ Snapshot سند مادر و ZIP باید READ-ONLY و به commit و digest دق
 10. گیت‌های باز و رسید read-back هر ثبت واقعی.
 
 این پیام فرایند را یک‌مرحله‌ای هماهنگ می‌کند، اما نمی‌تواند OAuth/GitHub، connector، broker، filesystem، sandbox پایدار یا مجوزهای پلتفرم را خلق کند. هر قابلیت غایب باید BLOCKED / NOT SUPPORTED / NOT RUN بماند. هیچ موفقیتی جعل نشود.
+
+
+## ادامهٔ جاری ثبت‌شده — POINT-0/072
+
+زنجیرهٔ canonical جاری: POINT-0/072 → IN-115 → OUT-114 → EVT-0290 → TIME-BINDING-EVT-0290 → CURRENT-125 → NEXT-051. سند مادر جاری 1.7.79 است. نقطهٔ 0/072 ادامهٔ همان ریشهٔ POINT-0 است؛ ریشه یا صف موازی نساز. بستهٔ دریافت‌شده باید با latest-verified-export و رسید SHA-256 دقیقاً تطبیق داده شود.
