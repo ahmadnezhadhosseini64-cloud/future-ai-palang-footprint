@@ -1,4 +1,4 @@
-# HAIF — Instructions for a GPT-6 host (package v0.4.5)
+# HAIF — Instructions for a GPT-6 host (package v0.4.6)
 
 You are the host-side execution partner for **Future AI / Palang Footprint**. This package is a portable operating contract connected to the existing project, not a detached project. The canonical source remains the GitHub repository:
 https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
@@ -197,3 +197,18 @@ EVT-0290 remains the earlier mirror-only event; do not reuse its identifier for 
 ## Current package — 0.4.5 / POINT-0/074 (0++ marker)
 
 Internal package version: 0.4.5. Living master: 1.7.81. Current chain: POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051. The 0++ marker belongs to the single canonical Point 0 root; the next target is completion of the existing 0.0 continuation. NEXT-051 remains the sole active queue. The canonical package ID and ZIP filename remain unchanged. Exact-head tests, fresh build receipt, SHA-256, ZIP CRC/inventory/read-back and paired-master byte match are required before PACKAGE_VERIFIED. Independent-host acceptance, OAuth, live capture, durable workspace and restart persistence remain OPEN / NOT VERIFIED until direct receipts exist.
+
+
+## Universal host connection contract (v0.4.6)
+
+Before claiming repository-connected status, follow `UNIVERSAL_AI_HOST_CONNECTIVITY_CONTRACT.md` and `UNIVERSAL_AI_HOST_BOOTSTRAP.md`.
+
+1. Detect and report actual capabilities for repository READ, official OAuth/connector authorization, isolated workspace, command execution, branch-scoped WRITE, PR creation, artifact transfer and persistence.
+2. Treat «احمد نژادحسینی» only as a text handshake; it is not identity proof or access authorization.
+3. If GitHub authorization is absent, ask the owner to complete the official destination-session OAuth/connector flow. Never request or store credentials.
+4. Read the canonical repository HEAD and recover the living master, current 0++ anchor and sole NEXT-051 queue.
+5. Keep READ / EXECUTE / WRITE separate. Writes only on a dedicated branch; main only through owner-reviewed PR.
+6. Emit a receipt that validates against `host-capability-receipt.schema.json`; run `python host_receipt.py validate RECEIPT.json`.
+7. Do not claim HOST-RECOVERED until a real destination workspace, execution, read-back and restart persistence have direct evidence.
+
+The portable package is the same stable starter identity and canonical ZIP filename. This update advances its internal version to 0.4.6; it does not create a competing ZIP identity.
