@@ -22,7 +22,7 @@ SECRET_KEY = re.compile(
 )
 SECRET_VALUE = re.compile(
     r"(?i)(gh[pousr]_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|"
-    r"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----|Bearer\\s+[A-Za-z0-9._~+/-]{12,})"
+    r"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----|Bearer\s+[A-Za-z0-9._~+/-]{12,})"
 )
 ACCEPTANCE = {
     "NOT_ACCEPTED": 0, "SOURCE_RECOVERED": 1, "PACKAGE_VERIFIED": 2,
