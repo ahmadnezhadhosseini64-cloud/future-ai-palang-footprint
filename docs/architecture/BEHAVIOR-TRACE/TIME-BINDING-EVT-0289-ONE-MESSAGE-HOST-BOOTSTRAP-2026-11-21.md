@@ -1,3 +1,5 @@
+> QUARANTINED_DUPLICATE_ID_NONCANONICAL — این فایل یک رویداد موازی با شناسه EVT-0289 است. مرجع canonical: [EVT-0289](EVT-0289-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP-2026-11-21.md).
+
 # TIME-BINDING-EVT-0289 — لنگر زمانی رویداد راه‌اندازی یک‌پیامی
 
 - Event: EVT-0289
