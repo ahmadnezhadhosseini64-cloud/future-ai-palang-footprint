@@ -40,7 +40,7 @@ Continue through NEXT-051 only. Preserve previous anchors and unresolved gaps. D
 
 ## First-run bootstrap incompatibility — EVT-0297
 
-- Record: [EVT-0297](../../architecture/BEHAVIOR-TRACE/EVT-0297-FIRST-RUN-HOST-BOOTSTRAP-COMPATIBILITY-REPAIR-2026-11-21.md).
+- Record: [EVT-0297](../../architecture/BEHAVIOR-TRACE/EVT-0297-FIRST-RUN-HOST-BOOTSTRAP-COMPATIBILITY-REPAIR-2026-11-21.md) → [TIME-BINDING-EVT-0297](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0297-FIRST-RUN-HOST-BOOTSTRAP-COMPATIBILITY-REPAIR-2026-11-21.md).
 - The active one-message bootstrap had stale POINT-0/074 / CURRENT-127 / master 1.7.82 pointers while this checkpoint is POINT-0/077 / CURRENT-130 / master 1.7.84.
 - The pre-repair bootstrap is preserved byte-for-byte; the active instruction is corrected on branch `fix/first-run-host-bootstrap-current-chain`.
 - This repair remains pending PR merge, main read-back, exact-main ZIP rebuild and fresh-host acceptance. NEXT-051 remains the sole queue.
