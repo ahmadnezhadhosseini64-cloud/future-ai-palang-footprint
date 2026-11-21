@@ -419,3 +419,13 @@ The expanded user clarification is linked from [IN-068](../../0.0/anchors/PALANG
 - Inner ZIP SHA-256: a8a34580722573aaef247acbf9d7edf1d97a80025c49d510f07a1479da4f0a05.
 - Paired master at package build: 1.7.86. Current living master: 1.7.87. Next package target: 0.4.8.
 - OAuth, persistent workspace, clean-host import, second-host acceptance and restart recovery remain OPEN / NOT RUN.
+
+
+### Latest package receipt — 0.4.8
+
+- Status: PACKAGE_VERIFIED (not independent-host accepted).
+- Workflow: 44921364797; source/main SHA: 680a1f788a50e38da4b71768f8291dde0eeeaa31.
+- 19 files; 257102 bytes; 24/24 extracted tests PASS; CRC/source-byte match/exact artifact-ID download/paired master 1.7.87 byte match/artifact round-trip PASS.
+- Inner ZIP SHA-256: 1e1bbab0c7acb0975b77176abc5c38f7e7097cfe8cf67b17153ffe1db4da65a6.
+- Previous verified package 0.4.7 and earlier receipts remain preserved. Next paired package target 0.4.9 with master 1.7.88.
+- OAuth for public READ is not required. Persistent workspace, clean-host import, second-host acceptance and restart recovery remain OPEN / NOT RUN.
