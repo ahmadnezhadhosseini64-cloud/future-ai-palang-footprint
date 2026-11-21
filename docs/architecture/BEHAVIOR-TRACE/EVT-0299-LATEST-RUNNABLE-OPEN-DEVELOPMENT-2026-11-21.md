@@ -30,3 +30,11 @@
 
 ## Evidence boundary
 بستهٔ 0.4.6 روی source commit 0d27972ac4d45349a85551f52e3b969ee581f843 ساخته شده؛ main در ثبت این نقطه 6ab35232404e2c5d37d48698db5d02821681b126 است. مقایسهٔ Git نشان می‌دهد اختلاف پس از build فقط سه commit مستنداتی/رسید است؛ دو commit Evidence Gate و receipt و هم‌ارزی منبع در gate اجرا شده است. استخراج artifact و اجرای مجدد 24 آزمون از فایل ZIP دانلودشده نیز PASS شد. این، package verification است؛ نه clean-host acceptance.
+
+
+## Subsequent verified package 0.4.8
+
+- Workflow 44921364797 on main SHA 680a1f788a50e38da4b71768f8291dde0eeeaa31.
+- 19 files; 257102 bytes; 24/24 extracted tests PASS; CRC, source-byte match, exact artifact-ID download, paired master 1.7.87 byte match, artifact round-trip and durable release PASS.
+- Inner ZIP SHA-256: 1e1bbab0c7acb0975b77176abc5c38f7e7097cfe8cf67b17153ffe1db4da65a6. Package 0.4.7 and older receipts remain preserved.
+- POINT-0/080 / CURRENT-133 is the latest child continuation. Master advances to 1.7.88; next paired package target 0.4.9.
