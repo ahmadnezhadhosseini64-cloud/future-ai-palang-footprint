@@ -1,6 +1,6 @@
 # CURRENT-124 — Single-message GPT-6 host bootstrap
 
-- Status: ACTIVE / LIVING / PACKAGE BUILD PENDING / HOST NOT CONNECTED
+- Status: ACTIVE / LIVING / PACKAGE 0.4.3 BUILD VERIFIED / HOST NOT CONNECTED
 - Parent: [CURRENT-123](PALANG-0.0-CURRENT-20261120-123-ISOLATED-HOST-WORKSPACES.md)
 - Point: [POINT-0/071](GPT6-RAHM-USER-POINT-0-20261121-071-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP-0PLUS.md)؛ 0++ همان ریشهٔ canonical صفر است.
 - Input: [IN-114](PALANG-0.0-IN-20261121-114-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP.md)
@@ -26,3 +26,15 @@ NEXT-051 remains the sole active queue.
 
 ## Duplicate-ID reconciliation and canonical handoff
 A concurrent alternate file set reused the same POINT-0/071, IN-114, OUT-113, EVT-0289 and TIME-BINDING-EVT-0289 IDs. Those files are marked QUARANTINED_DUPLICATE_ID_NONCANONICAL; the chain linked in docs/0.0/README.md remains canonical. ONE_MESSAGE_HOST_BOOTSTRAP_FA.md is the sole startup prompt in the next canonical ZIP. The superseded SINGLE_MESSAGE file is excluded from the archive. Package 0.4.3 build/read-back remains pending.
+
+
+## Verified portable release receipt
+
+- Internal package version: 0.4.3; stable package identity and canonical ZIP filename unchanged.
+- RAHM workflow: [44873029290](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44873029290) — PASS.
+- Living Architecture Audit: [44873029194](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44873029194) — PASS.
+- Source commit for this receipt: adde4cd8859e94a3f44083dd91f7d549ef684cc8.
+- ZIP: 238096 bytes; SHA-256 6cb016339822274586187b01e7fde74ec6623594167be2196d71c1d3959e0d38; 18 files; ZIP CRC PASS; extracted tests 24/24 PASS.
+- Paired master: version 1.7.77 at that source snapshot; SHA-256 b2c6a2623041b9112f639893fdc155ab91f3db33d61dfd3d4921105f39e34516.
+- Current master is being advanced to 1.7.78 in this receipt update; the next workflow rebuild must verify that paired revision. Latest release pointer and receipt remain authoritative for the current ZIP digest.
+- External host connection, persistent private workspace and clean-host acceptance remain OPEN / NOT RUN.

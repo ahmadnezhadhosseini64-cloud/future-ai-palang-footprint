@@ -23,3 +23,16 @@
 - Paired living master asset SHA-256: 35c114ef74778c5fc2b2b9c372031c3f05c48af38eab51a6aca38e9c2569c6d5.
 - This receipt is for package 0.4.2. The one-message consolidation advances source to 0.4.3; its new ZIP digest remains pending until the next RAHM workflow completes.
 - Parallel duplicate-ID files were quarantined; only the SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP chain remains canonical.
+
+
+## Verified canonical ZIP 0.4.3 — RAHM read-back
+
+- Workflow run 44873029290: completed / success.
+- Living Architecture Audit 44873029194: completed / success.
+- Source commit: adde4cd8859e94a3f44083dd91f7d549ef684cc8.
+- Canonical ZIP filename unchanged: haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip.
+- Internal version 0.4.3; 238,096 bytes; SHA-256 6cb016339822274586187b01e7fde74ec6623594167be2196d71c1d3959e0d38.
+- Inventory 18 files; exactly one bootstrap message file, ONE_MESSAGE_HOST_BOOTSTRAP_FA.md; ZIP CRC PASS; byte read-back PASS; extracted test suite 24/24 PASS.
+- Paired living master version 1.7.77; SHA-256 b2c6a2623041b9112f639893fdc155ab91f3db33d61dfd3d4921105f39e34516.
+- This is the successful prior source snapshot receipt. A subsequent master 1.7.78 update is being rebuilt by the workflow; the latest release receipt is authoritative after that run.
+- Host acceptance remains NOT RUN until a destination GPT-6 host returns direct evidence.
