@@ -2,7 +2,7 @@
 
 - Parent point: POINT-0/082
 - Source: IN-125
-- Status: APPROVED / IMPLEMENTED ON BRANCH / MERGE PENDING
+- Status: APPROVED / MERGED TO MAIN / READ-BACK VERIFIED
 
 ## نتیجه
 1. POINT-0/082 ادامهٔ POINT-0/081 روی همان ریشهٔ canonical POINT-0 است؛ 0++ ریشهٔ مستقل نیست.
@@ -12,6 +12,11 @@
 5. فایل یک‌پیامی GPT-6 به CURRENT-135 و مادر 1.7.89 متصل شد.
 6. سند مادر به نسخهٔ 1.7.89 ارتقا یافت و وضعیت جاری آن اصلاح شد.
 7. NEXT-051 همچنان تنها صف است؛ NEXT-052 ساخته نمی‌شود.
+
+## رسید ادغام و بازخوانی
+- PR #84 merged: commit 59fe65d2c6250c8cda6f2f02ea8d048720ff9563.
+- Git commit time: 2026-11-21T18:05:42Z UTC / 2026-11-21T21:35:42+03:30 Tehran.
+- Main read-back verified for the Reference Index, master, host entries, manifest, package docs and checkpoint.
 
 ## گیت‌های باقی‌مانده
 - PR merge و read-back از main: OPEN.
