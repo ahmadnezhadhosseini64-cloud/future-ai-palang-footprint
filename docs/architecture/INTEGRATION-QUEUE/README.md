@@ -9,7 +9,7 @@
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: ACTIVE / LIVING — main root POINT-0/071 / EVT-0289; certificate child root CERT-POINT-0.0-20261120-002 / EVT-0274 remains separate; checkpoint CURRENT-124; sole active queue NEXT-051 v1.0.47; latest mirror-only event EVT-0290. Source blob de1b75f07241c9b313e476af5f1417177ff78c10 unchanged; Library v7 normalized match with one extra terminal LF; no source or Library write. Post-registration Audit 44874521121 and Portable RAHM 44874520968 PASS on exact SHA 910cd24b9c9d0af2cdc7c6090386919f304b6819; Evidence Gate 44874520977 PASS on that SHA and created follow-up main 5c2a860e2fc1f7f36e3ee935b0daa3f62752e896 at UTC 2026-11-21T06:13:35Z; current main 5c2a860... has no exact-head Audit/RAHM and remains NOT VERIFIED. CURRENT-065/CURRENT-066 and overlay-manifest lineage, Issues #20/#21, NEXT-051 forensic archive and historic graph/identity/parent/time reconciliation remain OPEN.
+- Status: ACTIVE / LIVING — main root POINT-0/072 / EVT-0291; certificate child root CERT-POINT-0.0-20261120-002 / EVT-0274 remains separate; checkpoint CURRENT-125; sole active queue NEXT-051 v1.0.48; latest mirror-only event EVT-0290. Source blob de1b75f07241c9b313e476af5f1417177ff78c10 unchanged; Library v7 normalized match with one extra terminal LF; no source or Library write. Post-registration Audit 44874521121 and Portable RAHM 44874520968 PASS on exact SHA 910cd24b9c9d0af2cdc7c6090386919f304b6819; Evidence Gate 44874520977 PASS on that SHA and created follow-up main 5c2a860e2fc1f7f36e3ee935b0daa3f62752e896 at UTC 2026-11-21T06:13:35Z; current main 5c2a860... has no exact-head Audit/RAHM and remains NOT VERIFIED. CURRENT-065/CURRENT-066 and overlay-manifest lineage, Issues #20/#21, NEXT-051 forensic archive and historic graph/identity/parent/time reconciliation remain OPEN.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
@@ -2831,3 +2831,10 @@ Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-11
 - No main root, checkpoint or queue transition: POINT-0/071 / CURRENT-124 / NEXT-051 remains current; NEXT-052 not created.
 - Source unchanged; Library v7 normalized match with one additional terminal LF; no source or Library write. Post-registration Audit/RAHM passed on exact registration SHA `910cd24...`; Evidence Gate created follow-up HEAD `5c2a860...`, which remains NOT VERIFIED by exact-SHA Audit/RAHM.
 - CURRENT-065/CURRENT-066, Issues #20/#21, external destinations and independent-host recovery remain open or unverified.
+
+
+## Current canonical continuation — POINT-0/072 / CURRENT-125
+
+- POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051.
+- EVT-0290 remains the earlier mirror-only event; the duplicate current-chat EVT-0290 record is quarantined.
+- Living mother 1.7.79; package source 0.4.4 remains unverified after failed exact-head RAHM/Audit. External host acceptance and restart persistence remain OPEN / NOT RUN.
