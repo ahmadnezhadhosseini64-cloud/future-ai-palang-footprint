@@ -10,6 +10,7 @@
 - Project timezone: Asia/Tehran (+03:30)
 - Status: ACTIVE / LIVING — PROPOSED ON HOST-INTAKE BRANCH; MAIN INTEGRATION, TECHNICAL ENFORCEMENT AND INDEPENDENT-HOST ACCEPTANCE PENDING
 - Authentication gate: OPEN / DEFERRED
+- Repository access: READ-ONLY.
 - Repository write access: DENIED
 - Workspace execution: OWNER-DEFINED / ALLOWLISTED ONLY
 
