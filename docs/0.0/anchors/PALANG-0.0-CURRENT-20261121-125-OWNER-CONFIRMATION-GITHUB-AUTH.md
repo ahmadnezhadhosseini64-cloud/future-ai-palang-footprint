@@ -60,4 +60,4 @@ The first new host is a constrained execution participant, not a repository main
 
 
 ## Superseded by CURRENT-126 — POINT-0++ continuation
-The host-workspace execution architecture is continued at [CURRENT-126](PALANG-0.0-CURRENT-20261121-126-FIRST-HOST-WORKSPACE-EXECUTION.md) through IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292. CURRENT-125 remains preserved as the preceding checkpoint; it is not deleted or silently rewritten. The controlling contract is [FHRWE-2026-11-21-001](../../reference/REFERENCE-DOCUMENTS/FIRST-HOST-RESTRICTED-WORKSPACE-EXECUTION-AND-READ-ONLY-REPOSITORY-CONTRACT-2026-11-21-001.md).
+The host-workspace execution architecture is continued at [CURRENT-126](PALANG-0.0-CURRENT-20261121-126-FIRST-HOST-RESTRICTED-EXECUTION.md) through IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292. CURRENT-125 remains preserved as the preceding checkpoint; it is not deleted or silently rewritten. The controlling contract is [FHRWE-2026-11-21-001](../../reference/REFERENCE-DOCUMENTS/FIRST-HOST-RESTRICTED-WORKSPACE-EXECUTION-AND-READ-ONLY-REPOSITORY-CONTRACT-2026-11-21-001.md).
