@@ -1,8 +1,8 @@
 # Independent-host recovery proof protocol
 
-Package version: 0.4.9
-Latest canonical chain: POINT-0/079 → CURRENT-132 → POINT-0/080 → IN-123 → OUT-122 → EVT-0300 → TIME-BINDING-EVT-0300 → CURRENT-133 → NEXT-051
-The current point is POINT-0/080 on the existing root; follow UNIVERSAL_AI_HOST_ENTRY_FA.md for model/platform-neutral entry.
+Package version: 0.5.0 candidate
+Latest canonical chain: POINT-0/081 → CURRENT-134 → POINT-0/082 (0++) → IN-125 → OUT-124 → EVT-0302 → TIME-BINDING-EVT-0302 → CURRENT-135 → NEXT-051
+The current point is POINT-0/082 (0++) on the existing canonical root; follow UNIVERSAL_AI_HOST_ENTRY_FA.md for model/platform-neutral entry.
 Project: Future AI / Palang Footprint
 Canonical current chain: POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051. Prior chain POINT-0/071 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 is preserved as parent history. Prior chain POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → POINT-0/069 → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122 → POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051 is preserved as parent history.
 Preserved prior chain: POINT-0/058 (0+ marker on canonical root 0) → IN-096 → OUT-095 → EVT-0233 → CURRENT-108 → NEXT-051; historical point retained, not current pointer.
@@ -91,3 +91,8 @@ Internal package version: 0.4.5. Living master: 1.7.81. Current chain: POINT-0/0
 
 ## Public repository READ — POINT-0/080
 The canonical repository is Public. A clean host must attempt anonymous HTTPS READ/clone/fetch before asking for OAuth. OAuth is not required to read public source; it is only needed for private resources or authenticated write-back. EXECUTE, isolated workspace, persistence and restart are independent destination-host gates. The owner retains MASTER and merge authority.
+
+
+## Current source candidate — POINT-0/082
+
+Living master target: 1.7.89. Package source candidate: 0.5.0, same stable package ID and canonical ZIP filename. The 0.4.9 build receipt is historical to its exact source SHA and must not be reused. Fresh exact-main package verification is REQUIRED / NOT RUN until a new receipt proves archive SHA-256, byte size, inventory, CRC, paired-master read-back, extracted tests and artifact round-trip. Independent-host import and restart remain NOT RUN until direct destination receipts exist.
