@@ -212,3 +212,8 @@ Before claiming repository-connected status, follow `UNIVERSAL_AI_HOST_CONNECTIV
 7. Do not claim HOST-RECOVERED until a real destination workspace, execution, read-back and restart persistence have direct evidence.
 
 The portable package is the same stable starter identity and canonical ZIP filename. This update advances its internal version to 0.4.6; it does not create a competing ZIP identity.
+
+
+## Current canonical chain — package v0.4.6 / CURRENT-131
+
+Internal package version: 0.4.6. Living master: 1.7.86. Current chain: POINT-0/077 (0++) → CURRENT-130 → IN-121 → OUT-120 → EVT-0297 → TIME-BINDING-EVT-0297 → CURRENT-131 → NEXT-051. The current host must rediscover the canonical repository HEAD, living master and sole queue before acting.
