@@ -528,7 +528,13 @@
     "docs/architecture/BEHAVIOR-TRACE/EVT-0289-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP-2026-11-21.md",
     "docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0289-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP-2026-11-21.md",
     "docs/0.0/anchors/PALANG-0.0-CURRENT-20261121-124-SINGLE-MESSAGE-GPT6-HOST-BOOTSTRAP.md",
-    "prototype/haif-gpt6-starter/ONE_MESSAGE_HOST_BOOTSTRAP_FA.md"
+    "prototype/haif-gpt6-starter/ONE_MESSAGE_HOST_BOOTSTRAP_FA.md",
+    "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-072-CURRENT-CHAT-ANCHOR-0PLUS.md",
+    "docs/0.0/anchors/PALANG-0.0-IN-20261121-115-CURRENT-CHAT-ANCHOR.md",
+    "docs/0.0/anchors/PALANG-0.0-OUT-20261121-114-CURRENT-CHAT-ANCHOR.md",
+    "docs/architecture/BEHAVIOR-TRACE/EVT-0291-SET-CURRENT-POINT-AND-LATEST-DELIVERY-2026-11-21.md",
+    "docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0291-SET-CURRENT-POINT-AND-LATEST-DELIVERY-2026-11-21.md",
+    "docs/0.0/anchors/PALANG-0.0-CURRENT-20261121-125-CURRENT-CHAT-ANCHOR.md"
   ],
   "live_reference_policy": "Mutable current-state and startup/governance references are included in each export and receive exact SHA-256 plus Git blob SHA-1 observations in the same CI run. This includes RAHM_BOOT and RAHM_ARCHITECTURE because their canonical checkpoint binding must track the current live chain. Stable core remains digest-pinned."
 }
