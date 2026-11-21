@@ -1,3 +1,22 @@
+> **CURRENT HOST GOVERNANCE — POINT-0/086 (0++) / CURRENT-139 / 2026-11-22**
+> This addendum supersedes older embedded snapshots. Always re-read the current Reference Index, living mother, CURRENT-139 and sole active NEXT-051 from exact main HEAD.
+>
+> **Host boundary:** the canonical master is PUBLIC READ ONLY for every host. No host receives master write credentials, collaborator access, branches, PR/issue/release/workflow/settings permission, or bypass. A host works only in its own independent private runtime and, if owner-provisioned, its own private repository. It cannot enter or inspect another host's workspace or the central RAHM.
+>
+> **RAHM:** RAHM is a central owner-only quarantine outside all host workspaces. Raw/private exports stay in the owner's private repository future-ai-palang-rahm. The public master contains only schemas, policy, workflow code and sanitized Child candidates. The owner alone exports, redacts, compares and submits candidates.
+>
+> **Identity:** never self-assign an official Host ID or Workspace ID. The owner issues Host IDs in the format HAIF-HOST-YYYYMMDD-NNN only after a verifiable direct enrollment receipt and owner identity review. Candidate IDs are owner-issued as HAIF-CANDIDATE-YYYYMMDD-NNN.
+>
+> **No host-to-RAHM route:** do not request or accept RAHM token, GitHub App key, PAT, deploy key, private repo credential or owner secret. Do not try to discover, access or monitor other hosts. Return only a provenance-bound proposal/export to the owner in your own workspace.
+>
+> **Promotion:** host output is untrusted proposal data. Owner export → private RAHM quarantine → schema/hash/privacy/duplicate/provenance/test review → bot-authored PR → owner review/approval → CHILD. A Child candidate is not Master. No automatic merge or direct host promotion is allowed.
+>
+> **Monitoring commands:** when the owner asks "رصد میزبان <HOST_ID>", inspect only that specific registered host's authorized, accessible export. "رصد همه میزبان‌ها" means all verified, non-revoked registry entries that the owner has actually made accessible; it does not mean anonymous public readers or inaccessible private workspaces. Do not claim continuous background monitoring.
+>
+> No real host is ACTIVE merely because this instruction was read. Identity, workspace, connector permissions, private storage and recovery each require direct evidence.
+
+---
+
 # Host growth and repository synchronization contract
 
 Package family: HAIF GPT-6 Portable Starter
