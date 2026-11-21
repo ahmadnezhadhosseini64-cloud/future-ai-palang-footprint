@@ -1,4 +1,12 @@
-## Latest continuation — POINT-0/082 / CURRENT-135
+## Latest continuation — POINT-0/085 / CURRENT-138
+
+- Chain: POINT-0/084 → CURRENT-137 → POINT-0/085 (0++) → IN-128 → OUT-127 → EVT-0305 → TIME-BINDING-EVT-0305 → CURRENT-138 → NEXT-051.
+- Owner-directed approval policy: one required approval, specifically by the sole Code Owner `@ahmadnezhadhosseini64-cloud`; `.github/CODEOWNERS` assigns all paths to that account.
+- Current live Ruleset read-back at main HEAD `564166612c73da78544a6a88d7f8a1e5da7560`: active on default branch, but approval count remains 0 and Code Owner review remains OFF. The target settings are not yet enforced.
+- GitHub blocks self-approval of a PR by its author. Owner-authored PRs therefore require a trusted owner-controlled promotion bot or a narrowly scoped owner-only PR bypass; hosts never receive bypass or master write access.
+- PR #93 and PR #94 are merged and read-back verified. Security architecture is DESIGN APPROVED / IMPLEMENTATION PARTIAL. Live Ruleset configuration, owner-authored PR route, access audit, per-host private repos, broker and negative isolation tests remain open.
+- NEXT-051 remains the sole active queue; no NEXT-052 or parallel root is created.
+
 
 - Chain: POINT-0/081 → CURRENT-134 → POINT-0/082 (0++) → IN-125 → OUT-124 → EVT-0302 → TIME-BINDING-EVT-0302 → CURRENT-135 → NEXT-051.
 - Approved correction: synchronize Reference Index, universal host entry, one-message bootstrap and living master; preserve the single POINT-0 root.
@@ -12,12 +20,12 @@
 
 - Stable ID: G6IP-RAHM-NEXT-051-20261024
 - Production ID: G6IP-RAHM-NEXT-051-20261024
-- Version: 1.0.51
+- Version: 1.0.52
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE
 - Project: Future AI / Palang Footprint — HAIF
 - Canonical queue: this file only
-- Current checkpoint: [CURRENT-135](PALANG-0.0-CURRENT-20261121-135-HOST-POSITION-AND-INDEX-REPAIR.md)
-- Current point: [POINT-0/082 (0++ marker on canonical root 0)](GPT6-RAHM-USER-POINT-0-20261121-082-HOST-POSITION-AND-INDEX-REPAIR.md)
+- Current checkpoint: [CURRENT-138](PALANG-0.0-CURRENT-20261122-138-OWNER-APPROVAL-GATE-AND-HOST-ISOLATION.md)
+- Current point: [POINT-0/085 (0++ marker on canonical root 0)](GPT6-RAHM-USER-POINT-0-20261122-085-OWNER-APPROVAL-GATE-AND-HOST-ISOLATION.md)
 - Living mother: [سند مرجع مادر مدل اولیه](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 - Package contract: [HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md](../../../prototype/haif-gpt6-starter/HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md)
 - Canonical ZIP filename: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`
