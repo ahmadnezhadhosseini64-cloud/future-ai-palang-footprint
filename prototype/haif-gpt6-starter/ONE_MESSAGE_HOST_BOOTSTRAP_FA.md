@@ -1,5 +1,5 @@
-> **CURRENT EXECUTION SNAPSHOT — 2026-11-21 / POINT-0/079 / CURRENT-132**  
-> The model/platform-neutral startup authority is UNIVERSAL_AI_HOST_ENTRY_FA.md. This GPT-6 bootstrap remains a compatibility entry. Its previous snapshots and the original POINT-0/074 copy are preserved as history. Current package target is 0.4.8 and living mother target is 1.7.87; always re-read Reference Index and exact main HEAD rather than trusting embedded historical pointers.
+> **CURRENT EXECUTION SNAPSHOT — 2026-11-21 / POINT-0/080 / CURRENT-133**  
+> The model/platform-neutral startup authority is UNIVERSAL_AI_HOST_ENTRY_FA.md. This GPT-6 bootstrap remains a compatibility entry. Its previous snapshots and the original POINT-0/074 copy are preserved as history. Current package target is 0.4.9 and living mother target is 1.7.87; always re-read Reference Index and exact main HEAD rather than trusting embedded historical pointers.
 
 # ONE_MESSAGE_HOST_BOOTSTRAP_FA.md
 # سند آغاز به‌کار و اتصال میزبان جدید — نسخهٔ اولیهٔ شدنی 0.1.0
@@ -10,9 +10,9 @@
 **Canonical branch:** main  
 **Stable package ID:** HAIF-GPT6-PORTABLE-STARTER-20261025-004  
 **Canonical ZIP filename:** haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip  
-**Current source package version recorded in manifest:** 0.4.8  
+**Current source package version recorded in manifest:** 0.4.9  
 **Living mother target:** 1.7.87  
-**Current continuation:** POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051
+**Current continuation:** POINT-0/079 → CURRENT-132 → POINT-0/080 → IN-123 → OUT-122 → EVT-0300 → TIME-BINDING-EVT-0300 → CURRENT-133 → NEXT-051
 
 ---
 
@@ -26,12 +26,13 @@
 
 https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
 
-1. قابلیت GitHub یا GitHub App/connector رسمیِ همین محیط را بررسی کن.
-2. اگر اتصال برقرار نیست، از مالک بخواه از رابط رسمی همین محیط، دسترسی READ را فقط برای مخزن بالا مجاز کند؛ برای اجرای دستورات، clone/checkout و اجرای آزمون‌ها، محیط کاری مستقل همین میزبان را فعال کن.
-3. هرگز رمز عبور، Personal Access Token، کلید خصوصی یا Secret را در چت درخواست نکن؛ مالک باید احراز هویت را فقط در رابط امن خود سرویس انجام دهد.
-4. پس از اتصال، با خواندن واقعی مخزن ثابت کن دسترسی کار می‌کند: branch `main`، آخرین commit SHA و فایل‌های مرجع زیر را بخوان.
-5. اگر connector در این محیط موجود نیست، دقیقاً اعلام کن `BLOCKED: GITHUB_CONNECTOR_NOT_AVAILABLE`. اگر مخزن عمومی را فقط از وب می‌خوانی، آن را اتصال احرازشده یا امکان نوشتن معرفی نکن.
-6. میزبان باید READ مخزن و EXECUTE واقعی در working tree مستقل داشته باشد. WRITE فقط روی branch اختصاصی میزبان و فقط در صورت وجود مجوز واقعی Contents:write/Push در connector مقصد مجاز است؛ تغییرات از Pull Request وارد main می‌شوند. روی main، Release، secrets و workflowهای حساس مستقیم ننویس.
+1. ابتدا بدون انتظار برای OAuth، دسترسی عمومی HTTPS به مخزن را امتحان کن. این مخزن Public است؛ بنابراین مشاهدهٔ فایل‌ها و clone/fetch عمومی باید بدون ورود به حساب ممکن باشد.
+2. اگر connector حساب‌محور GitHub در این محیط وجود ندارد، از HTTPS عمومی، Git clone/fetch یا دریافت ZIP عمومی برای READ استفاده کن. نبود OAuth نباید بازیابی منبع عمومی را متوقف کند.
+3. branch `main` و exact commit SHA را واقعاً بخوان و ثبت کن. PUBLIC READ را با اتصال احراز‌شده یا مجوز WRITE اشتباه نگیر.
+4. هرگز رمز عبور، Personal Access Token، کلید خصوصی یا Secret را در چت درخواست نکن یا ذخیره نکن.
+5. READ، EXECUTE، WORKSPACE و WRITE را جداگانه ارزیابی کن. نبود EXECUTE یا workspace مانع READ عمومی نیست؛ فقط همان قابلیت را OPEN / NOT AVAILABLE ثبت کن.
+6. WRITE اختیاری است: فقط در صورت grant واقعی و روی branch اختصاصی میزبان؛ تغییرات از Pull Request وارد main می‌شوند. روی main، Release، secrets و workflowهای حساس مستقیم ننویس.
+7. فقط اگر مالک بخواهد میزبان مستقیماً در GitHub بنویسد یا به منبع خصوصی دسترسی یابد، OAuth/credential امن و حداقل‌اختیار در رابط رسمی مقصد لازم است. تأیید مالک در گفتگو، جای credential فنی یا grant مقصد را نمی‌گیرد.
 
 ### 2. بازیابی مرجع زنده از خود مخزن
 
@@ -176,3 +177,13 @@ Overall: SOURCE-RECOVERED / PACKAGE-VERIFIED / HOST-RECOVERED / PARTIAL / BLOCKE
 - The first host is a new session selected/launched by the owner; this bootstrap cannot instantiate a remote session or manufacture OAuth/permissions.
 - Package exact-HEAD verification is PACKAGE_VERIFIED; use the [stable latest-verified release and machine-readable receipt](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified) for the current source SHA, archive size and SHA-256 rather than copying a potentially stale digest.
 - First-host OAuth/acceptance, destination AI-host execution, restart/persistence, and 0.0 completion remain OPEN until direct host receipts are returned.
+
+
+## الحاقیهٔ دسترسی عمومی — POINT-0/080
+
+- مخزن canonical عمومی است: `https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint`.
+- READ/clone/fetch عمومی با HTTPS بدون OAuth انجام می‌شود؛ میزبان باید همین مسیر را در اولین گام امتحان کند.
+- OAuth فقط برای منابع خصوصی یا write-back احراز‌شده لازم است؛ برای شروع READ عمومی لازم نیست.
+- اجرای کد، sandbox، workspace خصوصی/پایدار و restart هرکدام قابلیت مستقل میزبان‌اند و باید جداگانه اثبات شوند.
+- معماری مرجع: `docs/architecture/مدل اولیه AI/معماری دسترسی عمومی مخزن و ورود کم‌اصطکاک میزبان.md`.
+- زنجیرهٔ جاری: POINT-0/079 → CURRENT-132 → POINT-0/080 → IN-123 → OUT-122 → EVT-0300 → TIME-BINDING-EVT-0300 → CURRENT-133 → NEXT-051.
