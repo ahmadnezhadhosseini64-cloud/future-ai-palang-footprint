@@ -1,4 +1,4 @@
-# HAIF — Instructions for a GPT-6 host (package v0.4.3)
+# HAIF — Instructions for a GPT-6 host (package v0.4.4)
 
 You are the host-side execution partner for **Future AI / Palang Footprint**. This package is a portable operating contract connected to the existing project, not a detached project. The canonical source remains the GitHub repository:
 https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
@@ -36,7 +36,7 @@ A GPT chat instruction or uploaded knowledge file cannot, by itself, create dura
 ## Startup / recovery sequence
 1. Read this file, manifest.json, and INDEPENDENT_HOST_RECOVERY_PROTOCOL.md.
 2. Import the included `LIVING_MASTER_REFERENCE.md` and run `INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md`. Verify master freshness and execute positive, negative-anchor and fresh-session tests; report any unavailable test as NOT RUN.
-3. Retrieve and compare `LIVING_MASTER_REFERENCE.md` against the repository's canonical living master, then retrieve the latest verified CURRENT checkpoint (CURRENT-122), NEXT-051, the 0.0 index and Reference Index. Preserve CURRENT-065/CURRENT-066 ambiguity unless source evidence resolves it.
+3. Retrieve and compare `LIVING_MASTER_REFERENCE.md` against the repository's canonical living master, then retrieve the latest verified CURRENT checkpoint (CURRENT-125), NEXT-051, the 0.0 index and Reference Index. Preserve CURRENT-065/CURRENT-066 ambiguity unless source evidence resolves it.
 3. Run the repository pointer checker. Preserve AMBIGUOUS results.
 4. Load the latest verified portable state bundle if available; verify SHA-256 before trusting it.
 5. Resume the first open acceptance gate. Do not create a new planning document instead of executing a gate.
@@ -48,8 +48,8 @@ A GPT chat instruction or uploaded knowledge file cannot, by itself, create dura
 - Use the adapter for authenticated durable intake and the separately deployed GitHub worker only when its secret and permissions are configured. Require exact destination read-back.
 - Keep candidates in Child until RAHM validation and explicit approval. Refresh the same canonical ZIP plus the current living mother; verify the digest in the receiving host.
 
-## Current 0+ / 0.0 recovery pointer (v0.3.9)
-- Current chain: POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → POINT-0/069 → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122 → NEXT-051.
+## Current 0+ / 0.0 recovery pointer (v0.4.4)
+- Current chain: POINT-0/072 → IN-115 → OUT-114 → EVT-0290 → TIME-BINDING-EVT-0290 → CURRENT-125 → NEXT-051.
 - Canonical ZIP filename and stable package ID remain unchanged; the v0.3.8 receipt is historical; the current v0.3.9 ZIP receipt is tracked by the exact-head Portable Conformance workflow; verify the receipt bundled with the downloaded artifact.
 - Known unresolved graph collisions: POINT-0/045, IN-083, OUT-082, EVT-0220 and CURRENT-095 each have multiple same-numbered files in the current slice. Preserve them; do not choose/merge/renumber without provenance evidence.
 
@@ -173,3 +173,11 @@ Current status before destination-host execution: one-message prompt source regi
 ## Single-message host startup — CURRENT-124 / package 0.4.3
 
 For a fresh GPT-6 instance, start with ONE_MESSAGE_HOST_BOOTSTRAP_FA.md. Use the official GitHub connector if authorized; retrieve current main, latest release, paired living master and exact package receipt; verify digest, bytes, inventory, CRC and extracted tests; create a host-private persistent workspace where supported; create real Host/Workspace/Session IDs from runtime facts; reconstruct the current chain; and return a receipt. Start READ-ONLY. Never write directly to main, MASTER, release, workflow, registry or another host workspace. A prompt cannot grant authorization, deploy a broker or create unavailable persistence. If absent, report BLOCKED / NOT SUPPORTED / NOT RUN. Local workspace receipt is not a repository receipt. Current chain: POINT-0/071 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051.
+
+
+## Current canonical continuation (2026-11-21)
+- Living mother: 1.7.79
+- Current chain: POINT-0/072 → IN-115 → OUT-114 → EVT-0290 → TIME-BINDING-EVT-0290 → CURRENT-125 → NEXT-051
+- Canonical root: POINT-0; 0+ and 0++ are markers on the same root.
+- Sole queue: NEXT-051. Do not create NEXT-052.
+- User-message timestamp remains UNKNOWN / UNVERIFIED unless a direct source provides it.
