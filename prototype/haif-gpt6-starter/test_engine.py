@@ -215,6 +215,14 @@ class PortablePackageProtocolTests(unittest.TestCase):
         self.assertLess(chain.index("IN-117"), chain.index("OUT-116"))
         self.assertLess(chain.index("OUT-116"), chain.index("EVT-0293"))
         self.assertLess(chain.index("EVT-0293"), chain.index("CURRENT-127"))
+        self.assertLess(chain.index("POINT-0/077 (0++ marker on canonical root 0)"), chain.index("IN-120"))
+        self.assertLess(chain.index("IN-120"), chain.index("OUT-119"))
+        self.assertLess(chain.index("OUT-119"), chain.index("EVT-0296"))
+        self.assertLess(chain.index("EVT-0296"), chain.index("CURRENT-130"))
+        self.assertLess(chain.index("POINT-0/078 (0++ marker on canonical root 0)"), chain.index("IN-121"))
+        self.assertLess(chain.index("IN-121"), chain.index("OUT-120"))
+        self.assertLess(chain.index("OUT-120"), chain.index("EVT-0298"))
+        self.assertLess(chain.index("EVT-0298"), chain.index("CURRENT-131"))
         self.assertEqual(chain.count("NEXT-051"), 1, "only one canonical active NEXT-051 pointer is allowed")
         self.assertGreaterEqual(chain.count("NEXT-051 (historical queue reference)"), 1)
         expected_current = ["IN-105", "OUT-104", "EVT-0280", "CURRENT-116", "IN-106", "OUT-105", "EVT-0281", "TIME-BINDING-EVT-0281", "CURRENT-117", "POINT-0/066 (0+ — interactive evolution)", "IN-107", "OUT-106", "EVT-0282", "TIME-BINDING-EVT-0282", "CURRENT-118", "POINT-0/067 (0+ continuation marker)", "CURRENT-120", "POINT-0/068", "CURRENT-121", "POINT-0/069 (0+ permanent interaction ledger)", "IN-112", "OUT-111", "EVT-0287", "TIME-BINDING-EVT-0287", "CURRENT-122", "POINT-0/071 (0++ marker on canonical root 0)", "IN-114", "OUT-113", "EVT-0289", "TIME-BINDING-EVT-0289", "CURRENT-124", "POINT-0/072 (current conversation continuation under canonical root 0)", "IN-115", "OUT-114", "EVT-0291", "TIME-BINDING-EVT-0291", "CURRENT-125", "POINT-0/073", "IN-116", "OUT-115", "EVT-0292", "TIME-BINDING-EVT-0292", "CURRENT-126", "POINT-0/074 (0++ marker on canonical root 0)", "IN-117", "OUT-116", "EVT-0293", "TIME-BINDING-EVT-0293", "CURRENT-127"]
@@ -307,7 +315,7 @@ class HostGrowthRepositoryContractTests(unittest.TestCase):
         root = Path(__file__).parent
         manifest = json.loads((root / "manifest.json").read_text(encoding="utf-8"))
         self.assertEqual(manifest["version"], manifest["archive_policy"]["current_internal_version"])
-        self.assertEqual(manifest["supersedes"], "0.4.4")
+        self.assertEqual(manifest["supersedes"], "0.4.5")
         self.assertEqual(manifest["stable_id"], "HAIF-GPT6-PORTABLE-STARTER-20261025-004")
         self.assertEqual(manifest["recovery_protocol"], "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md")
 
