@@ -2,6 +2,7 @@
 
 - Current checkpoint: docs/0.0/anchors/PALANG-0.0-CURRENT-20261122-139-RAHM-CENTRAL-OWNER-GATE.md
 - RAHM architecture: docs/architecture/RAHM/README.md
+- Owner monitoring commands: docs/architecture/RAHM/OWNER-MONITORING-COMMANDS.md
 - Private RAHM setup: docs/architecture/RAHM/PRIVATE-RAHM-REPOSITORY-TEMPLATE.md
 - Host security: docs/architecture/HOST-SECURITY/OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOSITORIES.md
 - Owner-only bot PR workflow: .github/workflows/rahm-owner-controlled-child-promotion.yml
