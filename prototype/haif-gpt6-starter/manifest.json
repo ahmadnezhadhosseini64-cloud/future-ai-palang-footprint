@@ -159,7 +159,7 @@
     "TIME-BINDING-EVT-0289",
     "CURRENT-124",
     "NEXT-051 (sole active queue)",
-    "POINT-0/072 (canonical current-chat continuation under root 0)",
+    "POINT-0/072 (current conversation continuation under canonical root 0)",
     "IN-115",
     "OUT-114",
     "EVT-0291",
