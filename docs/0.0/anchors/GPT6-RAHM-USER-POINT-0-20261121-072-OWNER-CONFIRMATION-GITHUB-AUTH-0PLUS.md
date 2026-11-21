@@ -69,3 +69,20 @@ https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
 - هیچ عملیات نوشتن یا همگام‌سازی از workspace به مخزن مجاز نیست. هر تغییر مرجع را مالک از مسیر کنترل‌شده و جداگانه انجام می‌دهد؛ میزبان سپس نسخه تازه را فقط می‌خواند.
 - استقلال میزبان تضمین امنیت نیست؛ مرز واقعی باید با مجوزهای فنی read-only، محدودسازی workspace و connectorهای allowlist شده اعمال و آزمون شود. متن دستور به‌تنهایی sandbox یا ACL ایجاد نمی‌کند.
 - پذیرش نهایی نیازمند آزمون واقعی است: تلاش خواندن موفق؛ تلاش نوشتن در مخزن ناموفق؛ دسترسی فقط به workspace تعریف‌شده؛ رد مقصد/ابزار خارج از allowlist؛ و ثبت رسید. تا آن زمان FIRST_HOST POLICY DESIGNED / TECHNICAL ENFORCEMENT NOT VERIFIED / HOST ACCEPTANCE NOT RUN.
+
+
+## POINT-0++ — تکمیل محیط کار میزبان اول (CURRENT-126)
+
+این ۰++ همان ادامهٔ ریشهٔ POINT-0/072 است و ریشهٔ مستقل یا موازی نیست. زنجیرهٔ تکمیلی: IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051.
+
+- قرارداد مرجع: [FIRST-HOST-RESTRICTED-WORKSPACE-EXECUTION](../../reference/REFERENCE-DOCUMENTS/FIRST-HOST-RESTRICTED-WORKSPACE-EXECUTION-AND-READ-ONLY-REPOSITORY-CONTRACT-2026-11-21-001.md).
+- HOST IDENTITY: FIRST NEW HOST / FIRST_HOST / HOST-001.
+- AUTHENTICATION GATE: OPEN / DEFERRED.
+- Repository: READ-ONLY؛ هر نوع write/delete/branch/PR/merge/release/admin ممنوع.
+- Workspace: فقط محیط مشخصی که مالک واقعاً provision و تعریف می‌کند؛ اجرای taskهای صریحاً مجاز و allowlist شده.
+- Workspace-to-repository sync/writeback: DENIED.
+- ابزار و مقصد بیرونی فقط با تأیید صریح مالک و مجوز واقعی پلتفرم.
+- سند مادر/ZIP پس از دریافت، منبع آغاز هستند؛ میزبان باید HEAD واقعی مخزن و manifest را بخواند و workspace را فقط از منبع معتبر به‌روزرسانی کند.
+- مالک تنها مرجع تغییر مخزن و تغییر دامنهٔ وظایف است. میزبان نمی‌تواند scope یا دسترسی خود را گسترش دهد.
+- قفل فنی، sandbox و ACL با متن سند ایجاد نمی‌شود؛ آزمون مستقل لازم است.
+- وضعیت: POLICY DOCUMENTED ON PROPOSAL BRANCH; MAIN MERGE / ZIP REBUILD / TECHNICAL ENFORCEMENT / INDEPENDENT HOST ACCEPTANCE PENDING.
