@@ -14,7 +14,7 @@
 - Main Living Architecture Audit: PASS (run 44963342868).
 - Main Evidence Gate, Execution Controller, Pending Registration Audit and Cross-Layer Integrity: PASS.
 - Portable package build, ZIP CRC, source-byte comparison, artifact download/read-back and extracted tests passed; the final durable-release update failed with HTTP 403 because this workflow had contents:read. A follow-up change restores contents:write only for release publication, without any git push/commit to main.
-- GitHub Pages deployment artifact upload succeeded, but deploy-pages reported that it could not find the uploaded artifact in the same run. This is a separate deployment issue and remains under observation.
+- GitHub Pages deployment initially failed to find the uploaded artifact; the failed deployment job was rerun (attempt 2) and completed SUCCESS.
 
 
 ## زنجیره و پیوندهای مستقیم
