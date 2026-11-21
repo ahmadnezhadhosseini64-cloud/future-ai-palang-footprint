@@ -405,3 +405,13 @@ The original Future AI / Palang Footprint is the MASTER: durable rules, interact
 
 ### Current clarification pointer
 The expanded user clarification is linked from [IN-068](../../0.0/anchors/PALANG-0.0-IN-20261026-068-MASTER-RAHM-CHILD-CLARIFICATION.md) and [CURRENT-080](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-080-MASTER-RAHM-CHILD-CLARIFICATION.md). Treat the existing initial-model AI package as RAHM; do not create a parallel project. Interactive-host import/recovery remains unverified until destination receipts are recorded.
+
+
+### Latest package receipt — 0.4.7
+
+- Status: PACKAGE_VERIFIED (not independent-host accepted).
+- Workflow: 44920781712; source/main SHA: 06f7fe5a00ea507b1930ffe8a74bc03caf1ff059.
+- 19 files; 256684 bytes; 24/24 extracted tests PASS; CRC/source-byte match/exact artifact-ID download/paired master byte match/artifact round-trip PASS.
+- Inner ZIP SHA-256: a8a34580722573aaef247acbf9d7edf1d97a80025c49d510f07a1479da4f0a05.
+- Paired master at package build: 1.7.86. Current living master: 1.7.87. Next package target: 0.4.8.
+- OAuth, persistent workspace, clean-host import, second-host acceptance and restart recovery remain OPEN / NOT RUN.
