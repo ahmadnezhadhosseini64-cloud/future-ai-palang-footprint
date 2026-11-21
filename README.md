@@ -117,3 +117,10 @@ This project has its own living execution record, legal gates, job-search stages
 [POINT-0/072](docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-072-CURRENT-CHAT-ANCHOR-0PLUS.md) → [IN-115](docs/0.0/anchors/PALANG-0.0-IN-20261121-115-CURRENT-CHAT-ANCHOR.md) → [OUT-114](docs/0.0/anchors/PALANG-0.0-OUT-20261121-114-CURRENT-CHAT-ANCHOR.md) → [EVT-0291](docs/architecture/BEHAVIOR-TRACE/EVT-0291-SET-CURRENT-POINT-AND-LATEST-DELIVERY-2026-11-21.md) → [TIME-BINDING-EVT-0291](docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0291-SET-CURRENT-POINT-AND-LATEST-DELIVERY-2026-11-21.md) → [CURRENT-125](docs/0.0/anchors/PALANG-0.0-CURRENT-20261121-125-CURRENT-CHAT-ANCHOR.md) → [NEXT-051](docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 
 EVT-0290 remains the earlier mirror-only event. The duplicate same-number current-chat draft is quarantined.
+
+
+## Current canonical continuation — POINT-0/073 / CURRENT-126
+
+[POINT-0/073](docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-073-FINAL-ARCHITECTURE-AND-DELIVERY.md) → [IN-116](docs/0.0/anchors/PALANG-0.0-IN-20261121-116-FINAL-ARCHITECTURE-AND-DELIVERY.md) → [OUT-115](docs/0.0/anchors/PALANG-0.0-OUT-20261121-115-FINAL-ARCHITECTURE-AND-DELIVERY.md) → [EVT-0292](docs/architecture/BEHAVIOR-TRACE/EVT-0292-FINAL-ARCHITECTURE-AND-DELIVERY-2026-11-21.md) → [TIME-BINDING-EVT-0292](docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0292-FINAL-ARCHITECTURE-AND-DELIVERY-2026-11-21.md) → [CURRENT-126](docs/0.0/anchors/PALANG-0.0-CURRENT-20261121-126-FINAL-ARCHITECTURE-AND-DELIVERY.md) → [NEXT-051](docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+
+Living mother target: 1.7.80. Canonical ZIP identity and filename are unchanged; the prior package receipts are historical until a new exact-head build, extracted tests, digest and artifact read-back pass. Independent-host acceptance and external runtime capabilities remain separate OPEN gates.
