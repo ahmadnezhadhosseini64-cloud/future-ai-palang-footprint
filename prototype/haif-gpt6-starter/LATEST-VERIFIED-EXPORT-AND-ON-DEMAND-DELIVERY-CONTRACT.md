@@ -3,7 +3,7 @@
 - Stable ID: HAIF-LATEST-VERIFIED-EXPORT-DELIVERY-CONTRACT-2026-11-20-001
 - Package stable ID: HAIF-GPT6-PORTABLE-STARTER-20261025-004
 - Canonical ZIP filename: haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip
-- Current project checkpoint at source registration: CURRENT-122 (POINT-0/069 0+)
+- Current project checkpoint at source registration: CURRENT-125 (POINT-0/072 under canonical root 0)
 - Sole active queue: NEXT-051
 
 ## Required behavior
@@ -39,3 +39,12 @@ This contract does not assert automatic capture of all conversations, background
 
 ## Current paired master and event-ledger handoff
 Current master version 1.7.74 and current checkpoint CURRENT-122 / POINT-0/069. The package carries the permanent interaction ledger contract and host registry schema/template. Live host connection, worker deployment and clean-host recovery remain separate gates.
+
+
+## Current paired release — POINT-0/072
+
+- Living master: 1.7.79
+- Current chain: POINT-0/072 → IN-115 → OUT-114 → EVT-0290 → TIME-BINDING-EVT-0290 → CURRENT-125 → NEXT-051
+- Package source target: 0.4.4 under the unchanged stable package ID and canonical ZIP filename.
+- NEXT-051 remains the sole active queue.
+- Release is current only when its exact source SHA, receipt and archive checks match the repository revision used for the build. Host recovery remains distinct.
