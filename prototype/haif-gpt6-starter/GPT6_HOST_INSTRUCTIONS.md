@@ -49,7 +49,7 @@ A GPT chat instruction or uploaded knowledge file cannot, by itself, create dura
 - Keep candidates in Child until RAHM validation and explicit approval. Refresh the same canonical ZIP plus the current living mother; verify the digest in the receiving host.
 
 ## Current 0+ / 0.0 recovery pointer (v0.4.4)
-- Current chain: POINT-0/073 → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051.
+- Current chain: POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051.
 - Canonical ZIP filename and stable package ID remain unchanged; the v0.3.8 receipt is historical; the current v0.3.9 ZIP receipt is tracked by the exact-head Portable Conformance workflow; verify the receipt bundled with the downloaded artifact.
 - Known unresolved graph collisions: POINT-0/045, IN-083, OUT-082, EVT-0220 and CURRENT-095 each have multiple same-numbered files in the current slice. Preserve them; do not choose/merge/renumber without provenance evidence.
 
@@ -120,12 +120,12 @@ Treat the package as a living, updateable system, not a frozen export. For every
 
 ## Current living evolution pointer — v0.4.1 / CURRENT-122
 
-Current chain: POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → POINT-0/069 → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122 → POINT-0/073 → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051 → NEXT-051. Treat the archive as an updateable, interaction-driven living package. Preserve stable identity and filename; update the living mother and applicable source files only after provenance checks, validation and tests; rebuild and read back the same canonical ZIP with a fresh receipt and digest. Model-weight retraining, automatic capture of every conversation, background execution and independent-host recovery remain separate unproven gates.
+Current chain: POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → POINT-0/069 → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122 → POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051 → NEXT-051. Treat the archive as an updateable, interaction-driven living package. Preserve stable identity and filename; update the living mother and applicable source files only after provenance checks, validation and tests; rebuild and read back the same canonical ZIP with a fresh receipt and digest. Model-weight retraining, automatic capture of every conversation, background execution and independent-host recovery remain separate unproven gates.
 
 
 ## Multi-host governance — CURRENT-122 / POINT-0/069
 
-The current living master (version 1.7.79) governs this package. The latest chain is POINT-0/073 → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051.
+The current living master (version 1.7.79) governs this package. The latest chain is POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051.
 
 A connected AI host is an independent Host Node, not an owner of the architecture. Default permission is L1 READ-ONLY. It may read the exact current master and package version, apply the rules locally, and prepare provenance-bearing observations, evidence, counterexamples or proposals. It must not write directly to main, merge its own proposal, edit the living master, alter governance rules, or grant itself permissions.
 
@@ -138,7 +138,7 @@ Do not claim a live connection, active automatic capture, repository write-back,
 
 ## Permanent interaction ledger — POINT-0/069 / CURRENT-122
 
-Current living master: version 1.7.74. Current chain: POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → POINT-0/069 → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122 → POINT-0/073 → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051 → NEXT-051.
+Current living master: version 1.7.74. Current chain: POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → POINT-0/069 → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122 → POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051 → NEXT-051.
 
 Every actual interaction received from a registered host through an authorized producer/adapter must be recorded append-only as an independent IN/OUT pair or an explicit failure/no-response gap. Each record must include unique IDs, host/session identity (pseudonymous), parent point/event, master commit/version, adapter version, source/evidence references, trustworthy UTC timestamp or UNKNOWN, repository receive time, SHA-256, privacy/redaction basis, status and read-back receipt.
 
@@ -172,12 +172,12 @@ Current status before destination-host execution: one-message prompt source regi
 
 ## Single-message host startup — CURRENT-125 / package 0.4.4
 
-For a fresh GPT-6 instance, start with ONE_MESSAGE_HOST_BOOTSTRAP_FA.md. Use the official GitHub connector if authorized; retrieve current main, latest release, paired living master and exact package receipt; verify digest, bytes, inventory, CRC and extracted tests; create a host-private persistent workspace where supported; create real Host/Workspace/Session IDs from runtime facts; reconstruct the current chain; and return a receipt. Start READ-ONLY. Never write directly to main, MASTER, release, workflow, registry or another host workspace. A prompt cannot grant authorization, deploy a broker or create unavailable persistence. If absent, report BLOCKED / NOT SUPPORTED / NOT RUN. Local workspace receipt is not a repository receipt. Current chain: POINT-0/073 → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051.
+For a fresh GPT-6 instance, start with ONE_MESSAGE_HOST_BOOTSTRAP_FA.md. Use the official GitHub connector if authorized; retrieve current main, latest release, paired living master and exact package receipt; verify digest, bytes, inventory, CRC and extracted tests; create a host-private persistent workspace where supported; create real Host/Workspace/Session IDs from runtime facts; reconstruct the current chain; and return a receipt. Start READ-ONLY. Never write directly to main, MASTER, release, workflow, registry or another host workspace. A prompt cannot grant authorization, deploy a broker or create unavailable persistence. If absent, report BLOCKED / NOT SUPPORTED / NOT RUN. Local workspace receipt is not a repository receipt. Current chain: POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051.
 
 
 ## Current canonical continuation (2026-11-21)
 - Living mother: 1.7.80
-- Current chain: POINT-0/073 → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051
+- Current chain: POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051
 - Canonical root: POINT-0; 0+ and 0++ are markers on the same root.
 - Sole queue: NEXT-051. Do not create NEXT-052.
 - User-message timestamp remains UNKNOWN / UNVERIFIED unless a direct source provides it.
@@ -187,7 +187,7 @@ EVT-0290 remains the earlier mirror-only event; do not reuse its identifier for 
 
 ## Current canonical continuation — package v0.4.5
 - Living mother: 1.7.80
-- Current chain: POINT-0/073 → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051
+- Current chain: POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051
 - POINT-0 remains the single canonical root; 0+ and 0++ are markers only.
 - NEXT-051 remains the sole queue. Do not create NEXT-052.
 - Exact user-message time remains UNKNOWN / UNVERIFIED.
