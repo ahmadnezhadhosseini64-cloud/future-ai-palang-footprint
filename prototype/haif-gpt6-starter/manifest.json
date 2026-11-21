@@ -165,7 +165,8 @@
     "OUT-114",
     "EVT-0291",
     "TIME-BINDING-EVT-0291",
-    "CURRENT-125"
+    "CURRENT-125",
+    "POINT-0/072 — FIRST_HOST / HOST-001 role and repository/workspace authority boundary"
   ],
   "entrypoint": "engine.py",
   "host_instructions": "GPT6_HOST_INSTRUCTIONS.md",
@@ -212,7 +213,8 @@
     "0++ is a readiness/highlight marker on canonical root 0, not a new point or root; 0+ remains the same root marker and 0.0 remains a parent-linked continuation",
     "single-message GPT-6 host bootstrap with official GitHub connector, latest package/master recovery, private workspace provisioning where supported, and acceptance receipt",
     "new-host anonymous public READ-ONLY access to canonical GitHub repository URL without sign-in; official connector optional while repository remains public",
-    "new-host recovery reads main HEAD, living master, latest verified ZIP pointer and receipts; repository writes are out of scope"
+    "new-host recovery reads main HEAD, living master, latest verified ZIP pointer and receipts; repository writes are out of scope",
+    "FIRST_HOST/HOST-001 constrained execution: canonical repository READ-ONLY; owner-defined provisioned workspace only; no repository writeback"
   ],
   "not_proven": [
     "native GPT plugin execution",
@@ -250,7 +252,8 @@
     "independent external-host GitHub connector authorization and successful read-only recovery until direct host receipt exists",
     "owner phrase/password confirmation gate and expanded authentication UX; deliberately deferred to a later phase",
     "independent external-host anonymous public GitHub retrieval and read-only recovery until direct host receipt exists",
-    "private-repository OAuth path, owner phrase/password confirmation gate and expanded authentication UX; deliberately deferred"
+    "private-repository OAuth path, owner phrase/password confirmation gate and expanded authentication UX; deliberately deferred",
+    "technical enforcement of repository write denial, workspace isolation, allowlisted connectors/destinations and first-host independent acceptance"
   ],
   "archive_policy": {
     "canonical_filename": "haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip",
