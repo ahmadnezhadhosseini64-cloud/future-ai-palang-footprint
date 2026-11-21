@@ -159,7 +159,7 @@ Use `ONE_MESSAGE_HOST_BOOTSTRAP_FA.md` as the single complete message for a new 
 
 The prompt cannot manufacture GitHub OAuth, connectors, filesystem tools, durable sandboxing or access-control boundaries. If any capability is absent, the target host must report BLOCKED/NOT CONNECTED/NOT RUN rather than simulate success. The workspace must not rely on a folder inside a shared repository as a security boundary. No direct host write to main or MASTER is permitted.
 
-Canonical root remains point 0. The markers 0+, 0++ and 0 are not separate roots; 0.0 is a parent-linked continuation. Current chain: POINT-0/070 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051. The next internal package version is 0.4.2; stable package ID and canonical ZIP filename remain unchanged. Package verification and real independent-host acceptance are separate gates.
+Canonical root remains point 0. The markers 0+, 0++ and 0 are not separate roots; 0.0 is a parent-linked continuation. Current chain: POINT-0/070 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051. The next internal package version is 0.4.3; stable package ID and canonical ZIP filename remain unchanged. Package verification and real independent-host acceptance are separate gates.
 
 
 ## Single-message GPT-6 host bootstrap — package 0.4.3
