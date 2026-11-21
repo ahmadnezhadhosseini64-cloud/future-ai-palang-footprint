@@ -1,6 +1,6 @@
 # OUT-115 — ثبت قرارداد محیط کاری محدود FIRST_HOST
 
-- Point: POINT-0/072 (0++)
+- Point: POINT-0/073 (0++ continuation under canonical POINT-0 root; parent POINT-0/072)
 - Input: IN-116
 - Contract: [FIRST-HOST-RESTRICTED-WORKSPACE-EXECUTION](../../reference/REFERENCE-DOCUMENTS/FIRST-HOST-RESTRICTED-WORKSPACE-EXECUTION-AND-READ-ONLY-REPOSITORY-CONTRACT-2026-11-21-001.md)
 - Host identity: FIRST NEW HOST / FIRST_HOST / HOST-001
