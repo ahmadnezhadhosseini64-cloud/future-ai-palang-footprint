@@ -32,4 +32,4 @@ Do not capture private chain-of-thought, hidden deliberation, scratchpads, confi
 
 ## Package integration
 
-The same canonical starter package identity and ZIP filename are preserved. Internal package candidate remains 0.4.6. AI Vacuum schema, calculator and tests are included in starter source and ZIP inventory; conformance workflow updated. Exact ZIP build, extracted tests, release refresh, PR merge and independent host recovery remain pending.
+The same canonical starter package identity and ZIP filename are preserved. Internal package candidate remains 0.4.6. AI Vacuum schema, calculator and tests are included in starter source and ZIP inventory. Portable RAHM Conformance run 44911491306 passed: canonical ZIP 267449 bytes, SHA-256 06b3695eb0e81d1ad4748929a49bb452c75bddfbd4a0da5f1bdcbc8ae1598539, exact artifact download/read-back and extracted tests passed. PR-only release publication was correctly skipped; main merge and independent host recovery remain pending.
