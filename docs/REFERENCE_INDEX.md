@@ -5,7 +5,7 @@
 - PR #84 merged to main at commit `59fe65d2c6250c8cda6f2f02ea8d048720ff9563` (UTC `2026-11-21T18:05:42Z`; Tehran `2026-11-21T21:35:42+03:30`); changed files were fetched back from main.
 - Owner-approved corrective scope: synchronize this index, universal host entry, copyable host bootstrap and living master; preserve all previous records and the single canonical POINT-0 root.
 - Public HTTPS READ remains available without OAuth. Destination EXECUTE, private/persistent WORKSPACE, restart recovery and authenticated WRITE remain separate evidence gates.
-- The previous ZIP 0.4.9 receipt is historical to its exact source SHA. A new same-identity package build, digest, extraction, tests and read-back are required after merge.
+- Previous ZIP 0.4.9 receipt is historical. Package 0.5.0 is now verified on its recorded source SHA and published at [haif-latest-verified](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified); compare the receipt SHA with exact current main HEAD before every delivery and rebuild if different.
 - Destination host acceptance remains OPEN / NOT RUN; this registration does not claim HOST-RECOVERED.
 - NEXT-051 remains the sole active queue; no NEXT-052 or parallel root is created.
 
