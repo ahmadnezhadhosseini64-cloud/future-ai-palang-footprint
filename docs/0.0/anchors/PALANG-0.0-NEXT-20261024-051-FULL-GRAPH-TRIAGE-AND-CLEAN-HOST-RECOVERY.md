@@ -993,3 +993,32 @@ Preserve this as the sole active queue. The objective is to finish repository-re
 - The active bootstrap must resolve POINT-0/077 / CURRENT-130 / living master 1.7.84; the old POINT-0/074 / CURRENT-127 / 1.7.82 text is retained only in the immutable historical copy.
 - Acceptance sequence: PR merge → main read-back → exact-main canonical ZIP rebuild/receipt → fresh-host execution receipt. Do not claim HOST-RECOVERED from document repair alone.
 - This is a child repair under NEXT-051; no parallel queue is created.
+
+
+## Latest 0++ / 0.0 execution plan — POINT-0/078 / CURRENT-131
+
+POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → NEXT-051.
+
+The owner requires one universal AI-host entry path and an initial runnable version with extraction/recovery. Keep this as a child lane under this sole queue.
+
+### Latest Runnable vs Development
+- Latest Runnable: only code and procedures present, executable and evidenced against an exact source revision.
+- Development / OPEN: incomplete, host-dependent or untested capabilities; preserve them with explicit blockers and acceptance criteria.
+- Promotion requires implementation, appropriate positive/negative tests, exact-source receipt, read-back and version reconciliation.
+- Historical failures, old versions and digests remain immutable evidence.
+
+### 0.0 ordered steps and acceptance
+1. **0.0-1 Source discovery:** verify repository, branch, exact HEAD, permissions and reference index. Acceptance: source files read and commit SHA recorded.
+2. **0.0-2 Architecture recovery:** reconstruct POINT/IN/OUT/EVT/TIME/CURRENT/NEXT and master version; classify missing/conflicting links. Acceptance: parent chain reconciles or gaps are explicitly OPEN.
+3. **0.0-3 Package extraction:** obtain canonical ZIP and receipt; validate path safety, SHA-256, inventory, CRC, manifest and source/master match; extract into a new isolated directory. Acceptance: extraction read-back and inventory match.
+4. **0.0-4 Runtime and tests:** run actual package tests and negative controls; retain commands, stdout/stderr, exit codes and runtime version. Acceptance: every PASS maps to an executed test on the recorded SHA.
+5. **0.0-5 Host workspace:** create read-only pinned SNAPSHOT and separate WORK tree; record Charter and persistence/isolation evidence. Acceptance: workspace ready only when durable storage and isolation are directly proven.
+6. **0.0-6 Clean-host recovery:** recover without prior chat history; compare reconstructed chain and package state; test restart/new-session recovery where supported. Acceptance: HOST-RECOVERED only with direct destination receipt and read-back.
+7. **0.0-7 Controlled growth:** implement open gaps on a host branch, test, receipt, PR, merge, read-back, then rebuild canonical ZIP against exact main. Promote only verified features to Latest Runnable.
+
+### Current acceptance gates — POINT-0/078
+- Universal host entry specification: added on the POINT-0/078 implementation branch; merge and read-back pending.
+- Canonical ZIP rebuild on exact current main: OPEN / NOT RUN.
+- Destination OAuth and actual workspace: OPEN / NOT RUN.
+- Clean-host import, extraction, restart recovery and host acceptance: OPEN / NOT RUN.
+- Do not mark any external-host gate closed based on repository documentation or CI simulation.
