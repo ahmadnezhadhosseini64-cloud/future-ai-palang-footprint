@@ -48,3 +48,14 @@ NEXT-051 تنها صف اجرایی است. هیچ نقطه یا سابقهٔ ق
 - Sole next: [NEXT-051](PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
 - Mirror event: [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md)
 - Mirror time binding: [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md)
+
+
+## Preserved open gates and unresolved historical pointer
+
+- Full state recovery / reconstruct independently from IN and OUT: OPEN / NOT RUN.
+- Clean host import / clean interactive AI-host session: OPEN / NOT RUN.
+- Second-host import / second-host acceptance: OPEN / NOT RUN.
+- Restart persistence / restart/new-session recovery: OPEN / NOT RUN.
+- Automatic live message capture / idle/background capture: OPEN / NOT PROVEN.
+- Graph/identity/parent/time triage: OPEN; duplicate IDs and ambiguous parents remain under source-backed review.
+- CURRENT-065/CURRENT-066 pointer conflict: OPEN; no winner selected. Preserve both historical records until source adjudication is completed.
