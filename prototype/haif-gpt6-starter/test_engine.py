@@ -357,3 +357,8 @@ class InteractionResponseAnchorProtocolTests(unittest.TestCase):
         self.assertIn("external build receipt", readme)
         self.assertIn("Previous verified v0.4.3 build receipt", readme)
         self.assertIn(expected_chain, readme)
+        self.assertEqual(manifest["current_living_master_version"], "1.7.89")
+        self.assertIn("POINT-0/082 (0++)", manifest["parent_architecture"])
+        packaged_master = (root / "LIVING_MASTER_REFERENCE.md").read_text(encoding="utf-8")
+        self.assertIn("Version / نسخه: 1.7.89", packaged_master)
+        self.assertIn(expected_chain, packaged_master)
