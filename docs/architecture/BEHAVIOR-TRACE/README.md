@@ -1420,3 +1420,10 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - [POINT-0/072](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-072-OWNER-CONFIRMATION-GITHUB-AUTH-0PLUS.md) → [IN-115](../../0.0/anchors/PALANG-0.0-IN-20261121-115-OWNER-CONFIRMATION-GITHUB-AUTH.md) → [OUT-114](../../0.0/anchors/PALANG-0.0-OUT-20261121-114-OWNER-CONFIRMATION-GITHUB-AUTH.md) → [EVT-0291](./EVT-0291-OWNER-CONFIRMATION-GITHUB-AUTH-2026-11-21.md) → [TIME-BINDING-EVT-0291](./TIME-BINDING-EVT-0291-OWNER-CONFIRMATION-GITHUB-AUTH-2026-11-21.md) → [CURRENT-125](../../0.0/anchors/PALANG-0.0-CURRENT-20261121-125-OWNER-CONFIRMATION-GITHUB-AUTH.md) → sole [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - Scope: anonymous public READ-ONLY GitHub repository recovery plus FIRST_HOST/HOST-001 constrained execution in owner-defined workspace; no repository writeback. Password/owner phrase gate and write access remain OPEN / DEFERRED.
 - Preserve EVT-0241 and TIME-BINDING-EVT-0241 historical mirror references; independent-host acceptance remains NOT RUN.
+
+
+## Latest event — EVT-0292 / POINT-0++
+
+- [EVT-0292](EVT-0292-FIRST-HOST-WORKSPACE-EXECUTION-2026-11-21.md) → [TIME-BINDING-EVT-0292](TIME-BINDING-EVT-0292-FIRST-HOST-WORKSPACE-EXECUTION-2026-11-21.md) → [CURRENT-126](../../0.0/anchors/PALANG-0.0-CURRENT-20261121-126-FIRST-HOST-WORKSPACE-EXECUTION.md).
+- Governing policy: [FHRWE-2026-11-21-001](../../reference/REFERENCE-DOCUMENTS/FIRST-HOST-RESTRICTED-WORKSPACE-EXECUTION-AND-READ-ONLY-REPOSITORY-CONTRACT-2026-11-21-001.md).
+- FIRST_HOST / HOST-001: repository READ-ONLY; owner-defined allowlisted workspace execution only; no repository writeback. Authentication gate OPEN / DEFERRED.
