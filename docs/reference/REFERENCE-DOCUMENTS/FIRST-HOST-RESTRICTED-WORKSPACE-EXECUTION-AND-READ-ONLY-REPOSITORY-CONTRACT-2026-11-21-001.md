@@ -3,8 +3,8 @@
 - Stable ID: FIRST-HOST-RESTRICTED-WORKSPACE-EXECUTION-2026-11-21-001
 - Production ID: FHRWE-2026-11-21-001
 - Version: 1.0.1
-- Parent: POINT-0/072 (POINT-0++)
-- Chain: POINT-0/072 (0++) → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051
+- Parent: POINT-0/072; continuation anchor: POINT-0/073 (0++; not an independent root)
+- Chain: POINT-0/072 → POINT-0/073 (0++) → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051
 - Host role: FIRST_HOST / HOST-001
 - Owner: Ahmad Nezhadhosseini
 - Project timezone: Asia/Tehran (+03:30)
@@ -151,10 +151,10 @@ POLICY DESIGNED / TECHNICAL ENFORCEMENT NOT VERIFIED / INDEPENDENT HOST ACCEPTAN
 ## 10. زنجیره و نقاط اتصال
 
 - POINT-0++ is an overlay/continuation of the existing canonical POINT-0/072 root, not a new independent root.
-- Input: IN-115.
-- Output: OUT-114.
-- Event: EVT-0291.
-- Time binding: TIME-BINDING-EVT-0291.
+- Input: IN-116.
+- Output: OUT-115.
+- Event: EVT-0292.
+- Time binding: TIME-BINDING-EVT-0292.
 - Current checkpoint: CURRENT-126 (POINT-0++ continuation; no new root).
 - Active queue: NEXT-051.
 - Parent architecture: living HAIF master reference.
