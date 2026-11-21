@@ -5,10 +5,13 @@
 **Status:** ACTIVE / LIVING / INITIAL-RUNNABLE-SPEC  
 **Canonical repository:** https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint  
 **Canonical branch:** main  
-**Parent:** POINT-0/079 → CURRENT-132 → POINT-0/080 → CURRENT-133 → NEXT-051  
-**Living mother target:** 1.7.87
+**Parent:** POINT-0/079 → CURRENT-132 → POINT-0/080 → IN-123 → OUT-122 → EVT-0300 → TIME-BINDING-EVT-0300 → CURRENT-133 → NEXT-051  
+**Living mother target:** 1.7.88
 
 ---
+
+**Latest canonical chain:** POINT-0/079 → CURRENT-132 → POINT-0/080 → IN-123 → OUT-122 → EVT-0300 → TIME-BINDING-EVT-0300 → CURRENT-133 → NEXT-051  
+**Current paired portable package:** 0.4.9 (same stable package ID and canonical ZIP filename; verify the exact receipt at the stable release)
 
 ## پیام واحد — میزبان این دستور را از ابتدا تا انتها اجرا کند
 
