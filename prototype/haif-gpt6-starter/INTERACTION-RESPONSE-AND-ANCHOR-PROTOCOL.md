@@ -83,3 +83,10 @@ Internal package version: 0.4.5. Living master: 1.7.81. Current chain: POINT-0/0
 ## Current package — 0.4.6 / POINT-0/077 (0++)
 
 Internal package version: 0.4.6. Living master: 1.7.86. Current chain: POINT-0/077 (0++) → CURRENT-130 → IN-121 → OUT-120 → EVT-0297 → TIME-BINDING-EVT-0297 → CURRENT-131 → IN-122 → OUT-121 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-132 → NEXT-051. Stable package ID and canonical ZIP filename remain unchanged. Package verification, OAuth, independent host import and restart persistence remain distinct acceptance gates.
+
+
+## Current canonical continuation — CURRENT-133
+
+POINT-0/077 (0++) → CURRENT-130 → IN-121 → OUT-120 → EVT-0297 → TIME-BINDING-EVT-0297 → CURRENT-131 → IN-122 → OUT-121 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-132 → IN-123 → OUT-122 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-133 → NEXT-051
+
+Historical CI failures are retained under EVT-0299; repairs are additive and do not erase failed-run evidence.
