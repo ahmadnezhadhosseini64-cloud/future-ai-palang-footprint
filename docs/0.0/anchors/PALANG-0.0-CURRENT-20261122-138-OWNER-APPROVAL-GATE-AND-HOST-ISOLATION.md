@@ -5,7 +5,7 @@
 - Current point: POINT-0/085 (0++)
 - Input/output: IN-128 → OUT-127
 - Event/time: EVT-0305 → TIME-BINDING-EVT-0305
-- Living master target: 1.7.92
+- Living master target: 1.7.93
 - Sole active queue: NEXT-051
 - Canonical master: ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
 
@@ -13,7 +13,7 @@
 Preserve the existing owner-only master and per-host isolated private workspace architecture. Add an owner-controlled promotion gate: host outputs remain proposals and cannot enter MASTER until owner export, quarantine, provenance/hash/test review and explicit approval.
 
 ## Required GitHub review policy
-- One approving review for non-owner/automation-authored PRs.
+- Exactly one approving review is required, and the only intended approver/Code Owner is GitHub account `@ahmadnezhadhosseini64-cloud`; `.github/CODEOWNERS` assigns all paths to this account.
 - Owner is the Code Owner for all paths.
 - Dismiss stale approvals on new commits and require review-thread resolution.
 - No host identity or host application may receive master access or bypass.
@@ -22,10 +22,15 @@ Preserve the existing owner-only master and per-host isolated private workspace 
 ## Live evidence
 - Ruleset PROTECT-MAIN-BRANCH64 / 27814009 is active and targets main.
 - Deletion, non-fast-forward and pull-request rules are active.
-- Live approval count remains 0; Code Owner review remains false.
+- Live approval count remains 0; Code Owner review remains false; stale-review dismissal and review-thread resolution remain false. The intended settings are 1 approval by `@ahmadnezhadhosseini64-cloud`, Code Owner review ON, stale-review dismissal ON and review-thread resolution ON.
 - Branch API reports protected=true.
-- GitHub connector supports ruleset read but not ruleset update; manual UI configuration and exact read-back remain pending.
-- CODEOWNERS and all architecture files were merged through PR #93; 12/12 changed files were read back from main and blob-SHA matched.
+- The available GitHub connection in this workflow supports repository content/PR operations and Ruleset read-back, but does not expose a Ruleset update operation. Manual UI configuration and exact read-back remain pending.
+- CODEOWNERS and architecture baseline were merged through PR #93; 12/12 changed files were read back and blob-SHA matched. PR #95 then synchronized the living master (1.7.93), NEXT-051, Reference Index and Integration Queue to CURRENT-138; all 4/4 changed files were read back from main with exact blob-SHA matches at HEAD `8a22c302dff17a3be7cb9b9a2513be011cf969a7`.
+
+## PR #95 synchronization receipt
+- PR #95: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/pull/95
+- Merge commit: `8a22c302dff17a3be7cb9b9a2513be011cf969a7` (UTC `2026-11-21T23:03:07Z`).
+- Exact-main read-back: 4/4 changed files blob-SHA matched.
 
 ## Open gates
 - Set approval count to 1 and enable Code Owner review, stale-review dismissal and conversation resolution in GitHub UI; read back exact settings.
