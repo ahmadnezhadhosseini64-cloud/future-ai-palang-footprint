@@ -2651,3 +2651,13 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - Event / Time binding: EVT-0291 / TIME-BINDING-EVT-0291. EVT-0290 remains assigned to the earlier mirror-only event; the duplicate current-chat EVT-0290 draft is quarantined.
 - Checkpoint: CURRENT-125; sole queue: NEXT-051.
 - Living mother: version 1.7.79. Package source 0.4.4 is not release-verified; exact-head RAHM failed and rebuild remains open.
+
+
+## Latest continuation — POINT-0/081 (0++) / CURRENT-134
+
+- [POINT-0/081](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-081-COPYABLE-HOST-BOOTSTRAP.md) — current conversation, 0++ marker on canonical root 0.
+- [IN-124](0.0/anchors/PALANG-0.0-IN-20261121-124-COPYABLE-HOST-BOOTSTRAP.md) / [OUT-123](0.0/anchors/PALANG-0.0-OUT-20261121-123-COPYABLE-HOST-BOOTSTRAP.md).
+- [EVT-0301](architecture/BEHAVIOR-TRACE/EVT-0301-POINT-081-COPYABLE-HOST-BOOTSTRAP-2026-11-21.md) / [TIME-BINDING-EVT-0301](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0301-POINT-081-COPYABLE-HOST-BOOTSTRAP-2026-11-21.md).
+- [CURRENT-134](0.0/anchors/PALANG-0.0-CURRENT-20261121-134-COPYABLE-HOST-BOOTSTRAP.md) → sole active [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- [One-message host bootstrap](../prototype/haif-gpt6-starter/ONE_MESSAGE_HOST_BOOTSTRAP_FA.md) is the copyable destination-host instruction.
+- Previous package 0.4.9 receipt remains historical to its source SHA; exact-main package rebuild is required after this source update.
