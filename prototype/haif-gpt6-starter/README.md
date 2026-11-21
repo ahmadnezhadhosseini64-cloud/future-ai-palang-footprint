@@ -15,7 +15,7 @@ This is the updated release of the existing HAIF starter package, not a separate
 - Host-growth/repository-sync contract included; defines behavior evidence, authorized repo return, RAHM validation and controlled Master/Child promotion.
 - Interaction response/anchor protocol included; requires visible acknowledgment/status, failure disclosure, paired input/output anchors and explicit non-verified gates.
 - Latest verified export and on-demand delivery contract included; requires exact-current-main package receipts and paired living-master delivery.
-- Current continuation reference: POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051. Preserve all earlier roots, the certificate child branch, the unresolved CURRENT-065/CURRENT-066 lineage and all open gates; older 0+ markers remain historical. Preserve all earlier roots, the certificate child branch, the unresolved CURRENT-065/CURRENT-066 lineage and all open gates; older 0+ markers remain historical. The canonical living mother reference is included in the built ZIP as `LIVING_MASTER_REFERENCE.md`; the Persian external-host test is included as `INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md`. Transfer the ZIP with its included master snapshot and use the prompt on a genuinely independent host.
+- Current continuation reference: POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051. Preserve all earlier roots, the certificate child branch, the unresolved CURRENT-065/CURRENT-066 lineage and all open gates; older 0+ markers remain historical. The canonical living mother reference is included in the built ZIP as `LIVING_MASTER_REFERENCE.md`; the Persian external-host test is included as `INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md`. Transfer the ZIP with its included master snapshot and use the prompt on a genuinely independent host.
 
 ## Bootstrap
 ~~~bash
@@ -153,28 +153,28 @@ Current canonical chain (plain-text): POINT-0/066 → CURRENT-119 → POINT-0/06
 The package includes `PERMANENT_INTERACTION_LEDGER_CONTRACT.md`, `HOST_REGISTRY_SCHEMA.json` and `HOST_REGISTRY_TEMPLATE.json`. The host registry template is intentionally empty. The repository worker targets only `host-intake`; events require owner-reviewed PR before promotion. GitHub main branch protection remains OPEN / NOT CONFIGURED.
 
 
-## POINT-0/071 — One-message GPT host bootstrap (package 0.4.3)
+## Previous point — POINT-0/071 one-message GPT host bootstrap (package 0.4.3 historical)
 
 Use `ONE_MESSAGE_HOST_BOOTSTRAP_FA.md` as the single complete message for a new GPT host. It orchestrates connection to only the canonical repository, latest pointer/receipt checks, paired living-master/ZIP recovery, extracted-package tests and provisioning of a private host-scoped workspace in the destination runtime.
 
 The prompt cannot manufacture GitHub OAuth, connectors, filesystem tools, durable sandboxing or access-control boundaries. If any capability is absent, the target host must report BLOCKED/NOT CONNECTED/NOT RUN rather than simulate success. The workspace must not rely on a folder inside a shared repository as a security boundary. No direct host write to main or MASTER is permitted.
 
-Canonical root remains point 0. The markers 0+, 0++ and 0 are not separate roots; 0.0 is a parent-linked continuation. Current chain: POINT-0/070 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051. The next internal package version is 0.4.3; stable package ID and canonical ZIP filename remain unchanged. Package verification and real independent-host acceptance are separate gates.
+Canonical root remains point 0. The markers 0+, 0++ and 0 are not separate roots; 0.0 is a parent-linked continuation. Current chain: POINT-0/070 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051. The current internal package version is 0.4.4; stable package ID and canonical ZIP filename remain unchanged. Package verification and real independent-host acceptance are separate gates.
 
 
-## Single-message GPT-6 host bootstrap — package 0.4.3
+## Single-message GPT-6 host bootstrap — package 0.4.4
 
 Use ONE_MESSAGE_HOST_BOOTSTRAP_FA.md as the one initial message for a fresh GPT-6 instance. It directs the host to use an already-authorized official GitHub connector, retrieve the latest verified release and paired living master, verify exact revision/digest/tests, create a host-private workspace where supported, reconstruct the chain and return an acceptance receipt. The host is another instance of the same AI-host role, not an unknown project entity. The message cannot grant permissions or create unavailable persistence. Current chain: POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051. POINT-0 remains the one root; 0+ and 0++ are markers only.
 
 
-## Canonical one-message host handoff — package 0.4.3
+## Canonical one-message host handoff — package 0.4.4
 
 ONE_MESSAGE_HOST_BOOTSTRAP_FA.md is the only startup message in the canonical ZIP. The older SINGLE_MESSAGE_GPT6_HOST_BOOTSTRAP_FA.md is superseded and excluded from the ZIP inventory. The same stable package ID and canonical archive filename are retained.
 
 
 ## Current handoff — package v0.4.4 / POINT-0/072
 
-The current living mother is version 1.7.79. Canonical chain: POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051. The new point is a continuation under the single canonical POINT-0 root; it does not create a parallel root or queue. Preserve NEXT-051 as the sole active queue. This package must be rebuilt and tested on the exact source commit after these package-source changes; earlier 0.4.3 receipts remain historical and must not be reused.
+The current living mother is version 1.7.79. Canonical chain: POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CURRENT-125 → NEXT-051. EVT-0290 remains reserved for the earlier mirror-only record. The new point is a continuation under the single canonical POINT-0 root; it does not create a parallel root or queue. Preserve NEXT-051 as the sole active queue. This package must be rebuilt and tested on the exact source commit after these package-source changes; earlier 0.4.3 receipts remain historical and must not be reused.
 
 
 Current internal package version: v0.4.4. Previous verified v0.4.3 build receipt is historical; the new version is not release-verified until an external build receipt, exact-byte SHA-256, ZIP round-trip and extracted tests all pass.
