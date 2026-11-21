@@ -30,10 +30,15 @@
 ## زنجیرهٔ متصل
 POINT-0/081 → CURRENT-134 → POINT-0/082 (0++) → IN-125 → OUT-124 → EVT-0302 → TIME-BINDING-EVT-0302 → CURRENT-135 → NEXT-051
 
+## Merge and read-back receipt
+- PR #84 merged into main: 2026-11-21T18:05:42Z (UTC) / 2026-11-21T21:35:42+03:30 (Tehran).
+- Exact main merge commit: 59fe65d2c6250c8cda6f2f02ea8d048720ff9563.
+- Changed files were fetched back from main and the synchronized source pointers were checked.
+
 ## وضعیت گیت‌ها
-- Architecture / point registration: REGISTERED on branch; merge/read-back pending.
+- Architecture / point registration: MERGED to main and exact-main read-back verified.
 - Public READ without OAuth: AVAILABLE by public repository visibility; destination check remains separate.
-- Exact-main source synchronization: OPEN until PR merge and main read-back.
+- Exact-main source synchronization: VERIFIED on main commit 59fe65d2c6250c8cda6f2f02ea8d048720ff9563.
 - Package rebuild and exact digest: REQUIRED / NOT RUN.
 - Destination execution and tests: OPEN / NOT RUN.
 - Persistent isolated workspace and restart: OPEN / NOT PROVEN.
