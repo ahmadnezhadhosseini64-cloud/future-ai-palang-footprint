@@ -3,7 +3,7 @@
 
 - [POINT-0/086 (0++)](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261122-086-RAHM-CENTRAL-OWNER-GATE.md) → [IN-129](0.0/anchors/PALANG-0.0-IN-20261122-129-RAHM-CENTRAL-OWNER-GATE.md) → [OUT-128](0.0/anchors/PALANG-0.0-OUT-20261122-128-RAHM-CENTRAL-OWNER-GATE.md)
 - [EVT-0306](architecture/BEHAVIOR-TRACE/EVT-0306-RAHM-CENTRAL-OWNER-GATE-AND-CHILD-PROMOTION-2026-11-22.md) → [TIME-BINDING-EVT-0306](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0306-RAHM-CENTRAL-OWNER-GATE-2026-11-22.md) → [CURRENT-139](0.0/anchors/PALANG-0.0-CURRENT-20261122-139-RAHM-CENTRAL-OWNER-GATE.md) → [sole NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
-- [RAHM policy](architecture/RAHM/README.md) · [Owner monitoring commands](architecture/RAHM/OWNER-MONITORING-COMMANDS.md) · [Private RAHM setup](architecture/RAHM/PRIVATE-RAHM-REPOSITORY-TEMPLATE.md) · [Candidate manifest schema](architecture/RAHM/CANDIDATE-MANIFEST-SCHEMA.json) · [CHILD area](architecture/CHILD-CANDIDATES/README.md)
+- [RAHM policy](architecture/RAHM/README.md) · [Owner monitoring commands](architecture/RAHM/OWNER-MONITORING-COMMANDS.md) · [Private RAHM setup](architecture/RAHM/PRIVATE-RAHM-REPOSITORY-TEMPLATE.md) · [Candidate manifest schema](architecture/RAHM/CANDIDATE-MANIFEST-SCHEMA.json) · [Promotion App setup](architecture/RAHM/PROMOTION-APP-SETUP.md) · [CHILD area](architecture/CHILD-CANDIDATES/README.md)
 - [Host security contract](architecture/HOST-SECURITY/OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOSITORIES.md) · [Living mother](architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 
 ## Latest owner-directed continuation — POINT-0/086 (0++) / CURRENT-139
