@@ -15,3 +15,7 @@ The phrase «احمد نژادحسینی», owner-confirmation/password gate, ex
 
 ## Evidence boundary
 This event records source changes on a proposal branch only. It does not claim main-branch integration, ZIP rebuild, successful connection on an independent host, persistent workspace, broker deployment, branch protection or host recovery.
+
+
+## Owner clarification: FIRST_HOST / HOST-001
+The first newly onboarded host is constrained to READ-ONLY access to the canonical repository and execution only within the owner-defined, explicitly provisioned workspace. It cannot write to the repository or sync workspace outputs back to it. It may use only owner-designated, actually authorized tools and destinations. The owner separately updates the canonical repository; the host retrieves changes read-only. Technical enforcement and independent-host acceptance remain NOT VERIFIED / NOT RUN.
