@@ -1,10 +1,11 @@
 # EVT-0297 — رفع ناسازگاری نخستین اجرای میزبان تازه
 
-- Status: RECORDED / OWNER-APPROVED / REPAIR-PROPOSED / READ-BACK-VERIFIED-ON-BRANCH
-- Parent continuation: POINT-0/077 → CURRENT-130 → NEXT-051
+- Status: RECORDED / OWNER-APPROVED / REPAIR-MERGED / MAIN-READBACK-VERIFIED / TIME-BOUND
+- Parent continuation: POINT-0/077 → CURRENT-130 → EVT-0297 → TIME-BINDING-EVT-0297 → NEXT-051
 - Scope: first-run one-message GPT host bootstrap only
 - Canonical active file: `prototype/haif-gpt6-starter/ONE_MESSAGE_HOST_BOOTSTRAP_FA.md`
 - Preserved original: `prototype/haif-gpt6-starter/ONE_MESSAGE_HOST_BOOTSTRAP_FA-ORIGINAL-POINT-074-2026-11-21.md`
+- Time binding: [TIME-BINDING-EVT-0297](TIME-BINDING-EVT-0297-FIRST-RUN-HOST-BOOTSTRAP-COMPATIBILITY-REPAIR-2026-11-21.md) — Git UTC 2026-11-21T14:08:03Z / Tehran 2026-11-21T17:38:03+03:30.
 - Original bootstrap blob SHA before repair: `0cc04f71881e3678e1184f90889785c3f5514549`
 - Original snapshot commit on repair branch: `98b8e75685705f392e4c631dc78f46dea5becdde`
 - Corrected active bootstrap blob SHA on repair branch: `8065cb7ccaf9aab58227ecc2e698d5fb5e008625`
@@ -31,11 +32,25 @@ The owner explicitly authorized repairing the first-run incompatibility while pr
 - [x] Original active bootstrap preserved byte-for-byte in a separate historical file.
 - [x] Active bootstrap top-level chain and current master target updated.
 - [x] Repair linked to existing POINT-0/077 → CURRENT-130 → NEXT-051 lineage.
-- [ ] Pull request merged to main.
-- [ ] Main-branch read-back of all changed files.
-- [ ] Portable ZIP rebuilt and verified against exact merged main HEAD.
+- [x] Pull request #65 merged to main.
+- [x] Main-branch read-back of all changed files.
+- [x] Portable ZIP rebuilt and verified against exact merged source HEAD; evidence-only follow-up commit equivalence verified.
 - [ ] Fresh destination host follows corrected bootstrap and returns direct acceptance receipt.
 
 ## Status boundary
 
 This event records the identified mismatch and a branch-level correction. It is not a claim of merged-to-main, package-verified or host-recovered status. The historical failure remains part of the permanent lineage and must not be deleted or rewritten.
+
+
+## Exact-source package and CI verification
+
+- Portable conformance workflow: [Run 44912345970](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44912345970) — SUCCESS.
+- Living Architecture Audit: [Run 44912346031](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44912346031) — SUCCESS.
+- Cross-Layer Integrity Gate: [Run 44912346113](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/44912346113) — SUCCESS.
+- Package build source SHA: `a1ddf3ffff931efebdd28e42b78b5868cb6e9869`.
+- Main HEAD read after the Evidence Gate follow-up: `0ee05e21da72b9ea5cb7ce457d1042c418945356`; comparison confirms the only intervening change was `evidence/evidence-gate-44912345887.txt`, so package source and paired master are byte-equivalent to that current HEAD.
+- Canonical ZIP: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`; internal package version `0.4.5`; size `249028` bytes; SHA-256 `84168f0aa74cef377fc7085aca646bdd3c2d7099a61fc21d425968f81908a3ec`.
+- Extracted tests: `24/24 PASS`; ZIP CRC/integrity, source-byte read-back, downloaded-artifact round-trip and paired living-master inclusion/byte-match: PASS.
+- Durable latest-verified release: [haif-latest-verified](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified).
+- Artifact upload ID: `14710546447`.
+- Independent destination-host OAuth, workspace creation, restart and HOST-RECOVERED acceptance remain OPEN / NOT RUN; package verification does not close them.
