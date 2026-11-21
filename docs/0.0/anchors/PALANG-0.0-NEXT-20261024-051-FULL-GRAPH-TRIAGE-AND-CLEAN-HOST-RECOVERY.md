@@ -877,3 +877,12 @@ The previous blob at this path began with the Integration Queue README title and
 - Preserve CURRENT-065/CURRENT-066 OPEN with no winner selected; Issue #20 and Issue #21 remain open. NEXT-051 is the sole queue.
 - Mirror event: [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md).
 - Mirror time: [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md).
+
+
+## POINT-0/071 canonical-ID reconciliation — CURRENT-124
+
+- Canonical chain remains POINT-0/071 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051.
+- The alternate same-ID files named ONE-MESSAGE-HOST-BOOTSTRAP are QUARANTINED_DUPLICATE_ID_NONCANONICAL; they are retained as history only and are not active references.
+- ONE_MESSAGE_HOST_BOOTSTRAP_FA.md is the only startup prompt in package 0.4.3; SINGLE_MESSAGE_GPT6_HOST_BOOTSTRAP_FA.md is superseded and excluded from the ZIP.
+- Preserve full state recovery / IN-OUT reconstruction, clean host import, second-host import, restart persistence, automatic live message capture, idle/background capture, graph/identity/parent/time triage, CURRENT-065/CURRENT-066 unresolved status and Issues #20/#21 as OPEN.
+- Mirror event: [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md); mirror time: [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md).
