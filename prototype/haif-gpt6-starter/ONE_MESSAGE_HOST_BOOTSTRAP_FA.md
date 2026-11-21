@@ -120,3 +120,18 @@ Snapshot سند مادر و ZIP باید READ-ONLY و به commit و digest دق
 - سند مادر/ZIP را نقطهٔ شروع بدان؛ HEAD و manifest جاری مخزن را بخوان و workspace را از نسخهٔ معتبر به‌روز کن.
 - خروجی workspace به مخزن برنمی‌گردد؛ مالک تنها کسی است که مرجع را تغییر می‌دهد.
 - اگر sandbox/ACL/محدودیت فنی واقعی وجود ندارد، اجرا را BLOCKED اعلام کن؛ متن این پیام به‌تنهایی قفل فنی نمی‌سازد.
+
+
+## POINT-0++ — اجرای واقعی راه‌اندازی از متن سند مادر
+
+پس از دریافت این سند مادر به‌صورت متن:
+1. نشانی رسمی مخزن و شناسهٔ سند مادر را استخراج کن.
+2. مخزن عمومی را بدون credential بخوان و main HEAD/SHA را ثبت کن.
+3. سند مادر canonical و manifest را از همان revision بازیابی و با متن ارسالی مقایسه کن؛ اختلاف را گزارش کن و هیچ نسخه‌ای را بی‌صدا جایگزین نکن.
+4. snapshot محلی را با commit SHA و digest دقیق pin کن.
+5. در صورت پشتیبانی واقعی پلتفرم، workspace خصوصی FIRST_HOST / HOST-001 را با CHARTER، OWNER_TASKS، SNAPSHOT، INBOX، WORK، OBSERVATIONS، PROPOSALS، TESTS، RECEIPTS و DECISIONS بساز.
+6. فقط taskهایی را اجرا کن که مالک با ورودی، عملیات، ابزار، مقصد، محل خروجی و معیار پذیرش مشخص کرده است.
+7. هیچ تغییری را به مخزن برنگردان؛ مالک تنها مرجع را به‌روز می‌کند و میزبان در نشست بعدی نسخهٔ منتشرشده را فقط‌خواندنی دریافت می‌کند.
+8. اگر پلتفرم sandbox/فضای پایدار یا محدودیت واقعی ندارد، BLOCKED / NOT SUPPORTED اعلام کن؛ prompt به‌تنهایی مجوز یا جداسازی ایجاد نمی‌کند.
+
+زنجیرهٔ فعال: POINT-0/072 (0++) → IN-116 → OUT-115 → EVT-0292 → TIME-BINDING-EVT-0292 → CURRENT-126 → NEXT-051. HOST IDENTITY: FIRST NEW HOST. AUTHENTICATION GATE: OPEN / DEFERRED. Repository write: DENIED. Host acceptance: NOT RUN until direct receipt.
