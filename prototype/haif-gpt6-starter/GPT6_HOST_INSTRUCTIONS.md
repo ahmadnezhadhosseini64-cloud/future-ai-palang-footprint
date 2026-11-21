@@ -1,6 +1,6 @@
-# HAIF — Instructions for a GPT-6 host (package v0.4.8)
+# HAIF — Instructions for a GPT-6 host (package v0.4.9)
 
-Latest canonical chain: POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051
+Latest canonical chain: POINT-0/079 → CURRENT-132 → POINT-0/080 → IN-123 → OUT-122 → EVT-0300 → TIME-BINDING-EVT-0300 → CURRENT-133 → NEXT-051
 Universal host entry: UNIVERSAL_AI_HOST_ENTRY_FA.md. For a fresh host, follow that model/platform-neutral entry first; this document is the GPT-6-specific companion.
 
 You are the host-side execution partner for **Future AI / Palang Footprint**. This package is a portable operating contract connected to the existing project, not a detached project. The canonical source remains the GitHub repository:
