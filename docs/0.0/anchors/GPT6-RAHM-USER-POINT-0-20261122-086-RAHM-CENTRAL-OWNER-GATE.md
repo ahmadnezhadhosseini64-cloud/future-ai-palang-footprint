@@ -1,3 +1,22 @@
+## Follow-up merge and package verification — PR #98 / #99 / EVT-0307
+
+- PR #98: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/pull/98
+  - Merge commit: 4f193e69e52e6a8eb1d7ae9520f2b2778ac69cf8
+  - Git UTC: 2026-11-21T23:52:16Z; Tehran: 2026-11-22T03:22:16+03:30
+  - Proposal and merge tree SHA exact match: 5b4e0baec0160625d64669935ae5ca9bfda49a7e.
+- PR #99: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/pull/99
+  - Merge commit: 891829cc123d876a3e63f93331981e0af5107868
+  - Git UTC: 2026-11-21T23:54:56Z; Tehran: 2026-11-22T03:24:56+03:30
+  - Proposal and merge tree SHA exact match: 2acb118181684dfed01e9305b8e5b8c89a6ad1f6.
+- Current main HEAD: 891829cc123d876a3e63f93331981e0af5107868; branch protected=true.
+- EVT-0307: [Portable starter package verification](../../architecture/BEHAVIOR-TRACE/EVT-0307-PORTABLE-STARTER-VERIFICATION-AND-OWNER-RELEASE-2026-11-22.md) → [TIME-BINDING-EVT-0307](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0307-PORTABLE-STARTER-VERIFICATION-AND-OWNER-RELEASE-2026-11-22.md).
+- Main portable workflow run 44964082773: SUCCESS; stable release tag haif-latest-verified refreshed.
+- Canonical ZIP: haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip; package SHA-256 0823141628db6d62fc6a5d320f8ca0c291f941bca446286f894e75a299a811f5; size 272,688 bytes.
+- Release: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified.
+- ZIP CRC, source-byte read-back, extracted tests, same-run artifact download/read-back and durable release publication: PASS.
+- Independent clean-host recovery: NOT RUN; PACKAGE_VERIFIED is not HOST_RECOVERED.
+- Main RAHM Security Conformance, Living Architecture Audit, Pages deployment, Evidence Gate, Execution Controller, Pending Registration Audit, Cross-Layer Integrity, CPREL and reconciliation workflows: PASS.
+
 ## PR #97 — merge and full-tree read-back receipt
 
 - PR: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/pull/97
