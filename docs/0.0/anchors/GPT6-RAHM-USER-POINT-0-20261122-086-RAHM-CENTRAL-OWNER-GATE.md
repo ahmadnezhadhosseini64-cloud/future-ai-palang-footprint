@@ -4,7 +4,7 @@
 - [IN-129](PALANG-0.0-IN-20261122-129-RAHM-CENTRAL-OWNER-GATE.md) → [OUT-128](PALANG-0.0-OUT-20261122-128-RAHM-CENTRAL-OWNER-GATE.md)
 - [EVT-0306](../../architecture/BEHAVIOR-TRACE/EVT-0306-RAHM-CENTRAL-OWNER-GATE-AND-CHILD-PROMOTION-2026-11-22.md) → [TIME-BINDING-EVT-0306](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0306-RAHM-CENTRAL-OWNER-GATE-2026-11-22.md)
 - [CURRENT-139](PALANG-0.0-CURRENT-20261122-139-RAHM-CENTRAL-OWNER-GATE.md) → sole active [NEXT-051](PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
-- [RAHM policy](../../architecture/RAHM/README.md) · [Owner monitoring commands](../../architecture/RAHM/OWNER-MONITORING-COMMANDS.md) · [Private RAHM setup](../../architecture/RAHM/PRIVATE-RAHM-REPOSITORY-TEMPLATE.md) · [CHILD](../../architecture/CHILD-CANDIDATES/README.md)
+- [RAHM policy](../../architecture/RAHM/README.md) · [Owner monitoring commands](../../architecture/RAHM/OWNER-MONITORING-COMMANDS.md) · [Private RAHM setup](../../architecture/RAHM/PRIVATE-RAHM-REPOSITORY-TEMPLATE.md) · [Promotion App setup](../../architecture/RAHM/PROMOTION-APP-SETUP.md) · [CHILD](../../architecture/CHILD-CANDIDATES/README.md)
 - [Host security contract](../../architecture/HOST-SECURITY/OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOSITORIES.md) · [Living mother](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 # POINT-0/086 (0++) — رحم مرکزی مالک و مسیر ارتقای میزبان‌ها
 
