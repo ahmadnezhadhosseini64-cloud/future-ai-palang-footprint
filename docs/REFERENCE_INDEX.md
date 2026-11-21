@@ -2581,3 +2581,12 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - [FHRWE-2026-11-21-001](reference/REFERENCE-DOCUMENTS/FIRST-HOST-RESTRICTED-WORKSPACE-EXECUTION-AND-READ-ONLY-REPOSITORY-CONTRACT-2026-11-21-001.md): canonical policy for FIRST_HOST / HOST-001; repository READ-ONLY, owner-defined allowlisted workspace execution, no writeback, authentication gate OPEN / DEFERRED.
 - Chain: [POINT-0/072](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-072-OWNER-CONFIRMATION-GITHUB-AUTH-0PLUS.md) → [IN-116](0.0/anchors/PALANG-0.0-IN-20261121-116-FIRST-HOST-EXECUTION-BOUNDARY.md) → [OUT-115](0.0/anchors/PALANG-0.0-OUT-20261121-115-FIRST-HOST-EXECUTION-BOUNDARY.md) → [EVT-0292](architecture/BEHAVIOR-TRACE/EVT-0292-POINT-0PLUSPLUS-FIRST-HOST-RESTRICTED-EXECUTION-2026-11-21.md) → [CURRENT-126](0.0/anchors/PALANG-0.0-CURRENT-20261121-126-FIRST-HOST-RESTRICTED-EXECUTION.md) → [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - Main integration, canonical ZIP rebuild/receipt, technical enforcement and independent-host acceptance remain open until evidenced.
+
+
+## POINT-0++ — FIRST_HOST / HOST-001
+
+- Living mother: [HAIF initial-model living master](architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md) v1.7.80.
+- Governing contract: [FHRWE-2026-11-21-001](reference/REFERENCE-DOCUMENTS/FIRST-HOST-RESTRICTED-WORKSPACE-EXECUTION-AND-READ-ONLY-REPOSITORY-CONTRACT-2026-11-21-001.md) v1.0.1.
+- Chain: POINT-0/072 (0++) → [IN-116](0.0/anchors/PALANG-0.0-IN-20261121-116-FIRST-HOST-WORKSPACE-EXECUTION.md) → [OUT-115](0.0/anchors/PALANG-0.0-OUT-20261121-115-FIRST-HOST-WORKSPACE-EXECUTION.md) → [EVT-0292](architecture/BEHAVIOR-TRACE/EVT-0292-FIRST-HOST-WORKSPACE-EXECUTION-2026-11-21.md) → [TIME-BINDING-EVT-0292](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0292-FIRST-HOST-WORKSPACE-EXECUTION-2026-11-21.md) → [CURRENT-126](0.0/anchors/PALANG-0.0-CURRENT-20261121-126-FIRST-HOST-WORKSPACE-EXECUTION.md) → sole NEXT-051.
+- Host: FIRST_HOST / HOST-001; repository READ-ONLY; owner-defined allowlisted workspace execution only; no writeback; authentication gate OPEN / DEFERRED.
+- Technical enforcement, canonical ZIP rebuild/receipt, main merge and independent-host acceptance remain pending.
