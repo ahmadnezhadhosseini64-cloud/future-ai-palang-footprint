@@ -1,4 +1,17 @@
-## Latest owner-directed continuation — POINT-0/083 (0++) / CURRENT-136
+## Latest owner-directed continuation — POINT-0/084 (0++) / CURRENT-137
+
+- Chain: [POINT-0/083](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-083-OWNER-GOVERNED-MULTI-HOST-ENTRY.md) → [CURRENT-136](0.0/anchors/PALANG-0.0-CURRENT-20261121-136-OWNER-GOVERNED-MULTI-HOST-ENTRY.md) → [POINT-0/084](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-084-OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOS.md) → [IN-127](0.0/anchors/PALANG-0.0-IN-20261121-127-OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOS.md) → [OUT-126](0.0/anchors/PALANG-0.0-OUT-20261121-126-OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOS.md) → [EVT-0304](architecture/BEHAVIOR-TRACE/EVT-0304-OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOS-2026-11-21.md) → [TIME-BINDING-EVT-0304](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0304-OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOS-2026-11-21.md) → [CURRENT-137](0.0/anchors/PALANG-0.0-CURRENT-20261121-137-OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOS.md) → sole queue [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Living master target: 1.7.91.
+- Security architecture: [OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOSITORIES.md](architecture/HOST-SECURITY/OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOSITORIES.md).
+- Private host repository template: [PRIVATE-HOST-REPOSITORY-TEMPLATE.md](architecture/HOST-SECURITY/PRIVATE-HOST-REPOSITORY-TEMPLATE.md).
+- Revised one-message enrollment: [ONE_MESSAGE_MULTI_HOST_ENROLLMENT_FA.md](../prototype/universal-host/ONE_MESSAGE_MULTI_HOST_ENROLLMENT_FA.md).
+- Master repository remains PUBLIC for anonymous HTTPS READ; AI hosts receive no master-repository write credential. Public readers cannot be individually identified or auto-enrolled.
+- After owner verification, each host receives one owner-created PRIVATE repository. No shared repo/token/deploy key. Optional writes require a server-side broker and a GitHub App scoped to that one private repo; tokens are never exposed to the model. Default host permission remains L1_READ_ONLY.
+- Main branch protection, live collaborator/App audit, per-host private repository provisioning, GitHub App, broker, revocation and negative isolation tests remain OPEN / NOT VERIFIED. Existing contract records main.protected=false; current live setting was not readable through the available connector.
+- Event registration commit: 8f38049aac7c8f84931b04ca82e546cb738bea8b (UTC 2026-11-21T19:55:28Z; Tehran 2026-11-21T23:25:28+03:30). Main merge and final read-back pending.
+- NEXT-051 remains the sole active queue; no parallel root or queue.
+
+## Previous owner-directed continuation — POINT-0/083 (0++) / CURRENT-136
 
 - Chain: [POINT-0/082](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-082-HOST-POSITION-AND-INDEX-REPAIR.md) → [CURRENT-135](0.0/anchors/PALANG-0.0-CURRENT-20261121-135-HOST-POSITION-AND-INDEX-REPAIR.md) → [POINT-0/083](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-083-OWNER-GOVERNED-MULTI-HOST-ENTRY.md) → [IN-126](0.0/anchors/PALANG-0.0-IN-20261121-126-OWNER-GOVERNED-MULTI-HOST-ENTRY.md) → [OUT-125](0.0/anchors/PALANG-0.0-OUT-20261121-125-OWNER-GOVERNED-MULTI-HOST-ENTRY.md) → [EVT-0303](architecture/BEHAVIOR-TRACE/EVT-0303-OWNER-GOVERNED-MULTI-HOST-ENTRY-2026-11-21.md) → [TIME-BINDING-EVT-0303](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0303-OWNER-GOVERNED-MULTI-HOST-ENTRY-2026-11-21.md) → [CURRENT-136](0.0/anchors/PALANG-0.0-CURRENT-20261121-136-OWNER-GOVERNED-MULTI-HOST-ENTRY.md) → sole queue [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - Living mother target: 1.7.90.
