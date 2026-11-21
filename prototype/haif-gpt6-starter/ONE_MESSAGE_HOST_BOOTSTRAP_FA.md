@@ -1,4 +1,4 @@
-> **CURRENT EXECUTION SNAPSHOT — 2026-11-21 / POINT-0/080 / CURRENT-133**  
+> **CURRENT EXECUTION SNAPSHOT — 2026-11-21 / POINT-0/081 (0++) / CURRENT-134**  
 > The model/platform-neutral startup authority is UNIVERSAL_AI_HOST_ENTRY_FA.md. This GPT-6 bootstrap remains a compatibility entry. Its previous snapshots and the original POINT-0/074 copy are preserved as history. Current package target is 0.4.9 and living mother target is 1.7.87; always re-read Reference Index and exact main HEAD rather than trusting embedded historical pointers.
 
 # ONE_MESSAGE_HOST_BOOTSTRAP_FA.md
@@ -12,7 +12,7 @@
 **Canonical ZIP filename:** haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip  
 **Current source package version recorded in manifest:** 0.4.9  
 **Living mother target:** 1.7.87  
-**Current continuation:** POINT-0/079 → CURRENT-132 → POINT-0/080 → IN-123 → OUT-122 → EVT-0300 → TIME-BINDING-EVT-0300 → CURRENT-133 → NEXT-051
+**Current continuation:** POINT-0/080 → CURRENT-133 → POINT-0/081 (0++) → IN-124 → OUT-123 → EVT-0301 → TIME-BINDING-EVT-0301 → CURRENT-134 → NEXT-051
 
 ---
 
@@ -187,3 +187,14 @@ Overall: SOURCE-RECOVERED / PACKAGE-VERIFIED / HOST-RECOVERED / PARTIAL / BLOCKE
 - اجرای کد، sandbox، workspace خصوصی/پایدار و restart هرکدام قابلیت مستقل میزبان‌اند و باید جداگانه اثبات شوند.
 - معماری مرجع: `docs/architecture/مدل اولیه AI/معماری دسترسی عمومی مخزن و ورود کم‌اصطکاک میزبان.md`.
 - زنجیرهٔ جاری: POINT-0/079 → CURRENT-132 → POINT-0/080 → IN-123 → OUT-122 → EVT-0300 → TIME-BINDING-EVT-0300 → CURRENT-133 → NEXT-051.
+
+
+## آخرین دستور اجرایی قابل‌کپی — POINT-0/081 (0++)
+
+این نسخهٔ جاری روی همان ریشهٔ POINT-0 است. زنجیرهٔ جاری را از Reference Index و سند مادر در HEAD واقعی main دوباره کشف کن؛ زنجیرهٔ ثبت این نقطه چنین است:
+
+`POINT-0/080 → CURRENT-133 → POINT-0/081 (0++) → IN-124 → OUT-123 → EVT-0301 → TIME-BINDING-EVT-0301 → CURRENT-134 → NEXT-051`
+
+این گفتگو یک نقطهٔ ۰++ زنده است، نه ریشهٔ تازه. هدف تو به‌عنوان میزبان تازه این است که همین مخزن عمومی را ابتدا بدون OAuth از HTTPS بخوانی، سپس سند مادر و Reference Index و تنها NEXT-051 را بازیابی کنی، exact HEAD و digestها را ثبت کنی، ZIP را فقط در صورت وجود receipt منطبق تأیید کنی، آزمون‌ها را در محیط واقعی اجرا کنی و در صورت پشتیبانی runtime یک workspace خصوصی و مستقل بسازی. READ عمومی را به OAuth وابسته نکن. WRITE، workspace، persistence و restart را جداگانه ارزیابی کن. هیچ credential را در چت نخواه. مالکیت MASTER و اختیار merge/promotion نزد مالک است. هر قابلیت اثبات‌نشده را OPEN / NOT RUN نگه دار.
+
+**متن کامل پیام واحد برای ارسال به میزبان تازه، از بخش «پیام واحد برای میزبان جدید — از این خط به بعد را اجرا کن» در همین سند آغاز می‌شود.**
