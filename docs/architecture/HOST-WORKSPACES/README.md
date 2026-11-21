@@ -75,3 +75,12 @@ workspace واقعی باید در sandbox/فضای خصوصی میزبان ای
 ## راه‌اندازی یک‌پیامی میزبان GPT-6 — CURRENT-124
 
 از پیام واحد فارسی ONE_MESSAGE_HOST_BOOTSTRAP_FA.md استفاده می‌شود. میزبان با اتصال رسمی GitHub، آخرین Release و سند مادر را بازیابی و بررسی می‌کند و workspace را در محیط خصوصی/پایدار خودش می‌سازد. پوشه‌بندی در مخزن اصلی مرز امنیتی نیست. میزبان READ-ONLY آغاز می‌کند و تا تأیید مالک PROPOSED می‌ماند. اگر connector یا محیط پایدار در دسترس نیست، BLOCKED / NOT SUPPORTED اعلام می‌شود. ثبت مخزنی فقط از broker مجاز و پس از read-back است.
+
+
+## ورود یک‌پیامی میزبان — POINT-0/083 / CURRENT-136
+
+- دستور واحد ورود میزبان: [ONE_MESSAGE_MULTI_HOST_ENROLLMENT_FA.md](../../../prototype/universal-host/ONE_MESSAGE_MULTI_HOST_ENROLLMENT_FA.md).
+- میزبان تازه فقط PUBLIC READ روی مخزن مرکزی دارد؛ هیچ WRITE یا تغییر branch/PR/issue/release/settings مجاز نیست.
+- Host ID و Workspace ID رسمی فقط پس از رسید واقعی و تأیید مالک تخصیص می‌یابند.
+- workspace باید در محیط خصوصی خود میزبان provision شود؛ پوشهٔ داخل مخزن مشترک مرز امنیتی نیست.
+- پذیرش میزبان، persistence، export، recovery و جداسازی فنی تا رسید مستقیم OPEN می‌مانند.

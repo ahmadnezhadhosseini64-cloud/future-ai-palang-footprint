@@ -1,4 +1,17 @@
-## Latest owner-approved continuation — POINT-0/082 (0++) / CURRENT-135
+## Latest owner-directed continuation — POINT-0/083 (0++) / CURRENT-136
+
+- Chain: [POINT-0/082](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-082-HOST-POSITION-AND-INDEX-REPAIR.md) → [CURRENT-135](0.0/anchors/PALANG-0.0-CURRENT-20261121-135-HOST-POSITION-AND-INDEX-REPAIR.md) → [POINT-0/083](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-083-OWNER-GOVERNED-MULTI-HOST-ENTRY.md) → [IN-126](0.0/anchors/PALANG-0.0-IN-20261121-126-OWNER-GOVERNED-MULTI-HOST-ENTRY.md) → [OUT-125](0.0/anchors/PALANG-0.0-OUT-20261121-125-OWNER-GOVERNED-MULTI-HOST-ENTRY.md) → [EVT-0303](architecture/BEHAVIOR-TRACE/EVT-0303-OWNER-GOVERNED-MULTI-HOST-ENTRY-2026-11-21.md) → [TIME-BINDING-EVT-0303](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0303-OWNER-GOVERNED-MULTI-HOST-ENTRY-2026-11-21.md) → [CURRENT-136](0.0/anchors/PALANG-0.0-CURRENT-20261121-136-OWNER-GOVERNED-MULTI-HOST-ENTRY.md) → sole queue [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Living mother target: 1.7.90.
+- One-message multi-host enrollment: [ONE_MESSAGE_MULTI_HOST_ENROLLMENT_FA.md](../prototype/universal-host/ONE_MESSAGE_MULTI_HOST_ENROLLMENT_FA.md).
+- Existing multi-host governance, Host Registry and isolated workspace architecture are reused; no parallel architecture/root/queue is created.
+- New hosts begin with PUBLIC READ ONLY on the central repository; no central WRITE, branch, PR, issue, release, workflow or settings mutation is permitted.
+- Official Host ID / Workspace ID are assigned only after a real host returns its receipt and the owner verifies identity. Registry remains empty until then.
+- Private host workspace must exist in the destination host's own isolated environment. A folder in the shared repository is not a security boundary.
+- Destination persistence, export, recovery, broker, automated registry provisioning, cross-host isolation and host acceptance remain OPEN until direct evidence exists.
+- Event registration commit: d4267d39efc03d5573cdf9e90f7f36eae18b52b1 (UTC 2026-11-21T19:24:40Z; Tehran 2026-11-21T22:54:40+03:30). Main merge is pending.
+- NEXT-051 remains the sole active queue; no NEXT-052 or parallel root.
+
+## Previous owner-approved continuation — POINT-0/082 (0++) / CURRENT-135
 
 - Chain: [POINT-0/081](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-081-COPYABLE-HOST-BOOTSTRAP.md) → [CURRENT-134](0.0/anchors/PALANG-0.0-CURRENT-20261121-134-COPYABLE-HOST-BOOTSTRAP.md) → [POINT-0/082](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-082-HOST-POSITION-AND-INDEX-REPAIR.md) → [IN-125](0.0/anchors/PALANG-0.0-IN-20261121-125-HOST-POSITION-AND-INDEX-REPAIR.md) → [OUT-124](0.0/anchors/PALANG-0.0-OUT-20261121-124-HOST-POSITION-AND-INDEX-REPAIR.md) → [EVT-0302](architecture/BEHAVIOR-TRACE/EVT-0302-POINT-082-HOST-POSITION-AND-INDEX-REPAIR-2026-11-21.md) → [TIME-BINDING-EVT-0302](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0302-POINT-082-HOST-POSITION-AND-INDEX-REPAIR-2026-11-21.md) → [CURRENT-135](0.0/anchors/PALANG-0.0-CURRENT-20261121-135-HOST-POSITION-AND-INDEX-REPAIR.md) → sole queue [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - Living mother target: 1.7.89.
