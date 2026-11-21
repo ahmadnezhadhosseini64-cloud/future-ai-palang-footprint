@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: "palang-execution-controller"
@@ -35,9 +35,14 @@ jobs:
           echo "EVIDENCE_GATE=PASS"
 
       - name: Upload execution evidence
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: palang-execution-controller-evidence
+          if-no-files-found: warn
+          retention-days: 90
           path: |
             control-plane/state/*.json
+            control-plane/recovery/*.json
+            control-plane/evidence/*.json
             control-plane/controller.py

@@ -1,21 +1,32 @@
-name: Pending Registration Drain
+name: Pending Registration Audit — Read Only
 
 on:
   push:
     branches: [main]
+    paths:
+      - "recovery/PENDING_REGISTRATION_QUEUE.md"
+      - "recovery/pending/**"
+      - "docs/architecture/DURABLE_PENDING_RECONCILIATION_BRIDGE.md"
+      - ".github/workflows/pending-registration-drain.yml"
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: "*/30 * * * *"
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
+
+concurrency:
+  group: pending-registration-audit
+  cancel-in-progress: false
 
 jobs:
-  drain:
+  audit:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Validate and automatically drain eligible pending records
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+      - name: Audit pending records without mutating canonical files
         shell: bash
         run: |
           set -euo pipefail
@@ -24,57 +35,63 @@ jobs:
           test -f recovery/pending/README.md
           grep -q 'Never delete a pending item merely because an attempt failed' recovery/PENDING_REGISTRATION_QUEUE.md
           grep -q 'Every subsequent registration event and scheduled reconciliation must scan this queue' recovery/PENDING_REGISTRATION_QUEUE.md
+          mkdir -p artifacts/pending-registration
+          python3 - <<'PY'
+          import json, re
+          from pathlib import Path
 
-          changed=0
-          shopt -s nullglob
-          for pending in recovery/pending/*.md; do
-            [ "$(basename "$pending")" = "README.md" ] && continue
-            approval=$(grep -m1 '^approval:' "$pending" | cut -d: -f2- | xargs || true)
-            status=$(grep -m1 '^status:' "$pending" | cut -d: -f2- | xargs || true)
-            auto=$(grep -m1 '^auto_finalize:' "$pending" | cut -d: -f2- | xargs || true)
-            production_id=$(grep -m1 '^production_id:' "$pending" | cut -d: -f2- | xargs || true)
-            destination=$(grep -m1 '^canonical_destination:' "$pending" | cut -d: -f2- | xargs || true)
-
-            if [ "$approval" != "APPROVED" ] || [ "$status" != "ELIGIBLE" ] || [ "$auto" != "true" ]; then
-              echo "PENDING_RETAINED file=$pending production_id=$production_id reason=eligibility-gate"
-              continue
-            fi
-            case "$destination" in
-              docs/*.md) ;;
-              *) echo "PENDING_RETAINED file=$pending production_id=$production_id reason=invalid-destination"; continue ;;
-            esac
-            test -n "$production_id"
-            test -n "$destination"
-            test -f "$pending"
-
-            payload=$(mktemp)
-            awk 'found {print} /^---PAYLOAD---$/ {found=1; next}' "$pending" > "$payload"
-            test -s "$payload"
-
-            if [ -f "$destination" ]; then
-              grep -Fq -- "$production_id" "$destination" || { echo "PENDING_CONFLICT production_id=$production_id destination=$destination"; rm -f "$payload"; continue; }
-              echo "RECONCILED_EXISTING production_id=$production_id destination=$destination"
-            else
-              cp "$payload" "$destination"
-              grep -Fq -- "$production_id" "$destination" || { echo "VERIFY_FAILED production_id=$production_id"; rm -f "$payload"; exit 1; }
-              echo "REGISTERED_AND_READ_BACK production_id=$production_id destination=$destination"
-            fi
-
-            sed -i 's/^status: .*/status: RECONCILED/' "$pending"
-            printf '\nreconciled_at: %s\nreconciled_by: pending-registration-drain\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$pending"
-            changed=1
-            rm -f "$payload"
-          done
-
-          if [ "$changed" -eq 1 ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add recovery/pending docs
-            git commit -m "Automatically reconcile eligible pending registrations"
-            git push
-          else
-            echo "NO_ELIGIBLE_PENDING_RECORDS"
-          fi
-          echo "PENDING_DRAIN=EXECUTABLE"
-          echo "IDEMPOTENCY=ENFORCED"
-          echo "EXECUTION_CLAIM_INTEGRITY=ENFORCED"
+          rows = []
+          for path in sorted(Path("recovery/pending").glob("*.md")):
+              if path.name == "README.md":
+                  continue
+              text = path.read_text(encoding="utf-8")
+              fields = {}
+              for key in ("approval", "status", "auto_finalize", "production_id", "canonical_destination"):
+                  match = re.search(rf"^{key}:\s*(.*?)\s*$", text, re.MULTILINE)
+                  fields[key] = match.group(1).strip() if match else ""
+              destination = fields["canonical_destination"]
+              safe_destination = (
+                  destination.startswith("docs/")
+                  and destination.endswith(".md")
+                  and ".." not in Path(destination).parts
+                  and not Path(destination).is_absolute()
+              )
+              eligible = (
+                  fields["approval"] == "APPROVED"
+                  and fields["status"] == "ELIGIBLE"
+                  and fields["auto_finalize"] == "true"
+                  and bool(fields["production_id"])
+                  and safe_destination
+                  and "---PAYLOAD---" in text
+                  and bool(text.split("---PAYLOAD---", 1)[1].strip())
+              )
+              rows.append({
+                  "file": str(path),
+                  "production_id": fields["production_id"],
+                  "status": "ELIGIBLE_FOR_OWNER_REVIEW_PR" if eligible else "RETAINED_OPEN",
+                  "canonical_destination": destination,
+                  "reason": "eligibility-and-destination-check-passed" if eligible else "one-or-more-gates-not-satisfied",
+              })
+          report = {
+              "mode": "READ_ONLY_AUDIT",
+              "master_mutated": False,
+              "automatic_promotion": False,
+              "records_scanned": len(rows),
+              "eligible_for_owner_review_pr": sum(r["status"] == "ELIGIBLE_FOR_OWNER_REVIEW_PR" for r in rows),
+              "records": rows,
+          }
+          Path("artifacts/pending-registration/report.json").write_text(
+              json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+          )
+          print(json.dumps(report, ensure_ascii=False, indent=2))
+          PY
+          echo "PENDING_QUEUE_AUDIT=PASS"
+          echo "MASTER_WRITE=DISABLED"
+          echo "AUTOMATIC_PROMOTION=DISABLED"
+      - name: Upload read-only audit evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: pending-registration-audit-${{ github.run_id }}
+          path: artifacts/pending-registration/report.json
+          if-no-files-found: error
+          retention-days: 90

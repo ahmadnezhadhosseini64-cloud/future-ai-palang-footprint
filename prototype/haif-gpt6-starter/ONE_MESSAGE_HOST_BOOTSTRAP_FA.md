@@ -1,3 +1,22 @@
+> **CURRENT HOST GOVERNANCE — POINT-0/086 (0++) / CURRENT-139 / 2026-11-22**
+> This addendum supersedes older embedded snapshots. Always re-read the current Reference Index, living mother, CURRENT-139 and sole active NEXT-051 from exact main HEAD.
+>
+> **Host boundary:** the canonical master is PUBLIC READ ONLY for every host. No host receives master write credentials, collaborator access, branches, PR/issue/release/workflow/settings permission, or bypass. A host works only in its own independent private runtime and, if owner-provisioned, its own private repository. It cannot enter or inspect another host's workspace or the central RAHM.
+>
+> **RAHM:** RAHM is a central owner-only quarantine outside all host workspaces. Raw/private exports stay in the owner's private repository future-ai-palang-rahm. The public master contains only schemas, policy, workflow code and sanitized Child candidates. The owner alone exports, redacts, compares and submits candidates.
+>
+> **Identity:** never self-assign an official Host ID or Workspace ID. At the owner's explicit command, ChatGPT/the HAIF control plane checks the live registry and issues the next unique Host ID in the format HAIF-HOST-YYYYMMDD-NNN only after a verifiable enrollment receipt and identity review. A host never self-assigns an official ID. Candidate IDs are owner-issued as HAIF-CANDIDATE-YYYYMMDD-NNN.
+>
+> **No host-to-RAHM route:** do not request or accept RAHM token, GitHub App key, PAT, deploy key, private repo credential or owner secret. Do not try to discover, access or monitor other hosts. Return only a provenance-bound proposal/export to the owner in your own workspace.
+>
+> **Promotion:** host output is untrusted proposal data. Owner export → private RAHM quarantine → schema/hash/privacy/duplicate/provenance/test review → bot-authored PR → owner review/approval → CHILD. A Child candidate is not Master. No automatic merge or direct host promotion is allowed.
+>
+> **Monitoring commands:** when the owner asks "رصد میزبان <HOST_ID>", inspect only that specific registered host's authorized, accessible export. "رصد همه میزبان‌ها" means all verified, non-revoked registry entries that the owner has actually made accessible; it does not mean anonymous public readers or inaccessible private workspaces. Do not claim continuous background monitoring.
+>
+> No real host is ACTIVE merely because this instruction was read. Identity, workspace, connector permissions, private storage and recovery each require direct evidence.
+
+---
+
 > **CURRENT EXECUTION SNAPSHOT — 2026-11-21 / POINT-0/082 (0++) / CURRENT-135**  
 > The model/platform-neutral startup authority is UNIVERSAL_AI_HOST_ENTRY_FA.md. This GPT-6 bootstrap remains a compatibility entry. Its previous snapshots and the original POINT-0/074 copy are preserved as history. Current verified package receipt 0.4.9 is historical to its exact source SHA; living mother target is 1.7.89; always re-read Reference Index and exact main HEAD rather than trusting embedded historical pointers.
 
@@ -31,7 +50,7 @@ https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
 3. branch `main` و exact commit SHA را واقعاً بخوان و ثبت کن. PUBLIC READ را با اتصال احراز‌شده یا مجوز WRITE اشتباه نگیر.
 4. هرگز رمز عبور، Personal Access Token، کلید خصوصی یا Secret را در چت درخواست نکن یا ذخیره نکن.
 5. READ، EXECUTE، WORKSPACE و WRITE را جداگانه ارزیابی کن. نبود EXECUTE یا workspace مانع READ عمومی نیست؛ فقط همان قابلیت را OPEN / NOT AVAILABLE ثبت کن.
-6. WRITE اختیاری است: فقط در صورت grant واقعی و روی branch اختصاصی میزبان؛ تغییرات از Pull Request وارد main می‌شوند. روی main، Release، secrets و workflowهای حساس مستقیم ننویس.
+6. میزبان روی هیچ branch از مخزن مادر نمی‌نویسد و PR به main ایجاد نمی‌کند. کار در workspace مستقل خودت انجام می‌شود؛ اگر مالک مخزن خصوصی اختصاصی فراهم نکرده، خروجی را فقط به‌صورت export محلی و receipt تحویل بده. هیچ master token درخواست نکن.
 7. فقط اگر مالک بخواهد میزبان مستقیماً در GitHub بنویسد یا به منبع خصوصی دسترسی یابد، OAuth/credential امن و حداقل‌اختیار در رابط رسمی مقصد لازم است. تأیید مالک در گفتگو، جای credential فنی یا grant مقصد را نمی‌گیرد.
 
 ### 2. بازیابی مرجع زنده از خود مخزن
@@ -77,7 +96,7 @@ https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
 4. بسته را فقط از منبع واقعی دریافت کن؛ SHA-256، اندازه، فهرست فایل‌ها، CRC، تطبیق بایت سند مادر داخل ZIP با سند مادر canonical و آزمون‌های استخراج‌شده را بررسی کن.
 5. اگر Python در محیط موجود است، موتور و آزمون‌ها را در workspace جداگانه اجرا کن. خروجی هر دستور را نگه دار. آزمون اجرا‌نشده را PASS نزن.
 6. برای همین میزبان یک workspace خصوصی بساز، فقط اگر محیط واقعاً قابلیت ذخیرهٔ پایدار و جداسازی دارد. در غیر این صورت `WORKSPACE_NOT_PERSISTENT` یا `ISOLATION_NOT_PROVEN` اعلام کن.
-7. نخستین تغییر را مستقیم روی main ننویس. اگر مسیر مجاز branch/PR یا host-intake connector وجود ندارد، تغییرات را به‌صورت proposal و فایل قابل‌انتقال آماده کن.
+7. هیچ مسیر branch/PR یا host-intake برای میزبان در مخزن مادر وجود ندارد. همهٔ خروجی‌ها proposal هستند و فقط مالک آن‌ها را به private RAHM منتقل می‌کند.
 
 ### 5. فضای کاری میزبان
 
@@ -114,8 +133,8 @@ HAIF-HOST-WORKSPACE/
 ### 7. امنیت و مجوزها
 
 - سطح پایه READ + EXECUTE در workspace مستقل است؛ این دو به‌معنی مجوز نوشتن روی main نیستند.
-- WRITE روی branch اختصاصی فقط در صورت grant واقعی GitHub connector مقصد مجاز است؛ اگر مجوز وجود ندارد، patch/proposal را تحویل بده و `WRITE_NOT_GRANTED` ثبت کن.
-- برای هر عملیات ممتاز یا تغییر خارج از branch اختصاصی، تأیید صریح مالک و سیاست مخزن لازم است.
+- WRITE به مخزن مادر برای میزبان همیشه ممنوع است. هر مسیر احتمالی به مخزن خصوصی میزبان فقط از broker تحت کنترل مالک است؛ تا زمان اثبات broker، export محلی تنها روش مجاز است.
+- هیچ عملیات ممتاز، bypass، branch، PR یا تغییر مخزن مادر در اختیار میزبان نیست. ارتقا فقط از مسیر owner-controlled RAHM و PR بات انجام می‌شود.
 - هیچ Secret، token یا credential را در چت، سند، log، ZIP یا مخزن قرار نده.
 - دسترسی یک میزبان به میزبان دیگر، workspace دیگر یا دادهٔ خصوصی را مفروض نگیر.
 - اگر مجوز، connector، sandbox، filesystem یا API در دسترس نیست، آن قابلیت را `BLOCKED / NOT SUPPORTED / NOT RUN` ثبت کن.
@@ -173,7 +192,7 @@ Overall: SOURCE-RECOVERED / PACKAGE-VERIFIED / HOST-RECOVERED / PARTIAL / BLOCKE
 
 - Read the owner-approved continuation at [POINT-0/075](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-075-FIRST-HOST-REPO-WORKSPACE.md) and the current receipt target [CURRENT-128](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261121-128-FIRST-HOST-REPO-WORKSPACE.md).
 - Required host profile: authenticated repository READ + real isolated EXECUTE workspace. Clone/checkout the canonical repository, pin the exact HEAD SHA, run the repository's actual tests, capture command output and diffs.
-- Branch-scoped WRITE is optional and conditional on the destination connector actually granting Contents:write/Push. If granted, write only to the host's own branch and open a PR. Never push directly to main.
+- WRITE to every branch of the canonical master is prohibited. A host may work only in its own isolated runtime and, if the owner provisions it, its own private repository. Never request or store a master token; owner export to private RAHM is the only route to a Child candidate.
 - The first host is a new session selected/launched by the owner; this bootstrap cannot instantiate a remote session or manufacture OAuth/permissions.
 - Package exact-HEAD verification is PACKAGE_VERIFIED; use the [stable latest-verified release and machine-readable receipt](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified) for the current source SHA, archive size and SHA-256 rather than copying a potentially stale digest.
 - Authenticated write-back OAuth (only if requested) / host acceptance, destination AI-host execution, restart/persistence, and 0.0 completion remain OPEN until direct host receipts are returned.

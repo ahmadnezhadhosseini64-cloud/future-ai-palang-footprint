@@ -1,3 +1,5 @@
+> Historical checkpoint: superseded by CURRENT-139 / POINT-0/086 (0++). Its Ruleset and architecture receipts remain historical; consult CURRENT-139 for the latest continuation.
+
 # CURRENT-138 — دروازهٔ تأیید مالک و جداسازی میزبان‌ها
 
 - Status: ACTIVE / LIVING / OWNER-DIRECTED / DESIGN-APPROVED / MERGED TO MAIN / READ-BACK VERIFIED

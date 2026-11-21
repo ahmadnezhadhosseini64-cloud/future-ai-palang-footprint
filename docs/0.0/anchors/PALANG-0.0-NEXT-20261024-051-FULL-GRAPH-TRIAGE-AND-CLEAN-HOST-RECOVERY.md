@@ -1,4 +1,25 @@
-## Latest continuation — POINT-0/085 / CURRENT-138
+
+## Current POINT-0/086 navigation
+
+- [POINT-0/086 (0++)](GPT6-RAHM-USER-POINT-0-20261122-086-RAHM-CENTRAL-OWNER-GATE.md) → [IN-129](PALANG-0.0-IN-20261122-129-RAHM-CENTRAL-OWNER-GATE.md) → [OUT-128](PALANG-0.0-OUT-20261122-128-RAHM-CENTRAL-OWNER-GATE.md)
+- [EVT-0306](../../architecture/BEHAVIOR-TRACE/EVT-0306-RAHM-CENTRAL-OWNER-GATE-AND-CHILD-PROMOTION-2026-11-22.md) → [TIME-BINDING-EVT-0306](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0306-RAHM-CENTRAL-OWNER-GATE-2026-11-22.md)
+- [CURRENT-139](PALANG-0.0-CURRENT-20261122-139-RAHM-CENTRAL-OWNER-GATE.md)
+- [RAHM policy](../../architecture/RAHM/README.md) · [Private store setup](../../architecture/RAHM/PRIVATE-RAHM-REPOSITORY-TEMPLATE.md) · [CHILD](../../architecture/CHILD-CANDIDATES/README.md)
+
+## Latest owner-directed continuation — POINT-0/086 (0++) / CURRENT-139
+
+- Chain: POINT-0/085 → CURRENT-138 → POINT-0/086 (0++) → IN-129 → OUT-128 → EVT-0306 → TIME-BINDING-EVT-0306 → CURRENT-139 → sole active queue NEXT-051.
+- Living master target: 1.7.94.
+- RAHM is a central owner-only quarantine, outside every host workspace. Raw/private data belongs in the separate private repository ahmadnezhadhosseini64-cloud/future-ai-palang-rahm; the public master stores only policy, schema, workflow and sanitized Child candidates.
+- Permanent flow: HOST PRIVATE WORKSPACE → OWNER-COMMANDED MONITOR/EXPORT → PRIVATE RAHM → VALIDATION/CROSS-HOST RECONCILIATION → BOT-AUTHORED PR → OWNER REVIEW/APPROVAL → CHILD. A separate approval is required before any later Master update.
+- Owner-only workflow and candidate validator are committed on the proposal branch; the workflow is not operational until the private RAHM repo, App, secrets/variables and connector access are configured.
+- Hard audit corrected direct-main write paths in main.yml, pending-registration-drain.yml and execution-controller/controller; portable conformance and execution controller no longer request contents:write. Pending queue scan is read-only.
+- Owner identity: @ahmadnezhadhosseini64-cloud. CODEOWNERS assigns all paths to this account. Ruleset 27814009 is active and main is protected, but live approval count remains 0 and Code Owner review remains OFF.
+- No host is registered or ACTIVE; no private RAHM repo or promotion App is yet provisioned. Collaborator/App/deploy-key audit and negative isolation tests remain OPEN.
+- NEXT-051 remains the only active queue; no parallel root or queue is created.
+
+---
+
 
 - Chain: POINT-0/084 → CURRENT-137 → POINT-0/085 (0++) → IN-128 → OUT-127 → EVT-0305 → TIME-BINDING-EVT-0305 → CURRENT-138 → NEXT-051.
 - Owner-directed approval policy: one required approval, specifically by the sole Code Owner `@ahmadnezhadhosseini64-cloud`; `.github/CODEOWNERS` assigns all paths to that account.

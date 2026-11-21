@@ -1,3 +1,25 @@
+
+## POINT-0/086 — canonical navigation
+
+- [POINT-0/086 (0++)](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261122-086-RAHM-CENTRAL-OWNER-GATE.md) → [IN-129](0.0/anchors/PALANG-0.0-IN-20261122-129-RAHM-CENTRAL-OWNER-GATE.md) → [OUT-128](0.0/anchors/PALANG-0.0-OUT-20261122-128-RAHM-CENTRAL-OWNER-GATE.md)
+- [EVT-0306](architecture/BEHAVIOR-TRACE/EVT-0306-RAHM-CENTRAL-OWNER-GATE-AND-CHILD-PROMOTION-2026-11-22.md) → [TIME-BINDING-EVT-0306](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0306-RAHM-CENTRAL-OWNER-GATE-2026-11-22.md) → [CURRENT-139](0.0/anchors/PALANG-0.0-CURRENT-20261122-139-RAHM-CENTRAL-OWNER-GATE.md) → [sole NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
+- [RAHM policy](architecture/RAHM/README.md) · [Owner monitoring commands](architecture/RAHM/OWNER-MONITORING-COMMANDS.md) · [Private RAHM setup](architecture/RAHM/PRIVATE-RAHM-REPOSITORY-TEMPLATE.md) · [Candidate manifest schema](architecture/RAHM/CANDIDATE-MANIFEST-SCHEMA.json) · [Promotion App setup](architecture/RAHM/PROMOTION-APP-SETUP.md) · [CHILD area](architecture/CHILD-CANDIDATES/README.md)
+- [Host security contract](architecture/HOST-SECURITY/OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOSITORIES.md) · [Living mother](architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
+
+## Latest owner-directed continuation — POINT-0/086 (0++) / CURRENT-139
+
+- Chain: POINT-0/085 → CURRENT-138 → POINT-0/086 (0++) → IN-129 → OUT-128 → EVT-0306 → TIME-BINDING-EVT-0306 → CURRENT-139 → sole active queue NEXT-051.
+- Living master target: 1.7.94.
+- RAHM is a central owner-only quarantine, outside every host workspace. Raw/private data belongs in the separate private repository ahmadnezhadhosseini64-cloud/future-ai-palang-rahm; the public master stores only policy, schema, workflow and sanitized Child candidates.
+- Permanent flow: HOST PRIVATE WORKSPACE → OWNER-COMMANDED MONITOR/EXPORT → PRIVATE RAHM → VALIDATION/CROSS-HOST RECONCILIATION → BOT-AUTHORED PR → OWNER REVIEW/APPROVAL → CHILD. A separate approval is required before any later Master update.
+- Owner-only workflow and candidate validator are committed on the proposal branch; the workflow is not operational until the private RAHM repo, App, secrets/variables and connector access are configured.
+- Hard audit corrected direct-main write paths in main.yml, pending-registration-drain.yml and execution-controller/controller; portable conformance and execution controller no longer request contents:write. Pending queue scan is read-only.
+- Owner identity: @ahmadnezhadhosseini64-cloud. CODEOWNERS assigns all paths to this account. Ruleset 27814009 is active and main is protected, but live approval count remains 0 and Code Owner review remains OFF.
+- No host is registered or ACTIVE; no private RAHM repo or promotion App is yet provisioned. Collaborator/App/deploy-key audit and negative isolation tests remain OPEN.
+- NEXT-051 remains the only active queue; no parallel root or queue is created.
+
+---
+
 ## Latest owner-directed continuation — POINT-0/085 (0++) / CURRENT-138
 
 - Canonical chain: POINT-0/084 → CURRENT-137 → POINT-0/085 → IN-128 → OUT-127 → EVT-0305 → TIME-BINDING-EVT-0305 → CURRENT-138 → sole queue NEXT-051.
@@ -9,13 +31,13 @@
 
 ## Security enforcement correction — PR #90 / POINT-0/084
 
-- The legacy `scripts/host_adapter_github_worker.py` now fails closed when the target is the canonical master repository. It refuses host-originated writes to the master, including `host-intake`.
+- The legacy `scripts/host_adapter_github_worker.py` is fully disabled and exits before any GitHub API request. The old `host-intake` branch is frozen.
 - The portable conformance workflow now asserts the master-write guard.
 - GPT-6 host instructions and the host-growth contract explicitly prohibit master credentials and host-facing master writes. The host must not hold a GitHub token, PAT, deploy key or App token.
 - PR #90: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/pull/90
 - Merge commit: `048b3be7c2ffbcea607f26ab804494a0b31e7cd5`; UTC `2026-11-21T20:09:00Z`; Tehran `2026-11-21T23:39:00+03:30`.
 - Read-back: 8/8 changed files fetched from main; blob SHA matches 8/8.
-- This is a code-level fail-closed guard in the legacy worker, not a substitute for GitHub branch rules, collaborator/App audit, or a deployed broker. Those remain OPEN / NOT VERIFIED.
+- The legacy worker is fully disabled, not a broker. This does not replace GitHub branch rules, collaborator/App audit, or actual private host workspace isolation; those remain OPEN / NOT VERIFIED.
 - Each verified host still requires an owner-created PRIVATE repository. No such per-host repository or broker/App installation was created by this PR.
 
 

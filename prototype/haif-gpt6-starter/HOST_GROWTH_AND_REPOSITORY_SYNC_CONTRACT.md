@@ -1,3 +1,22 @@
+> **CURRENT HOST GOVERNANCE — POINT-0/086 (0++) / CURRENT-139 / 2026-11-22**
+> This addendum supersedes older embedded snapshots. Always re-read the current Reference Index, living mother, CURRENT-139 and sole active NEXT-051 from exact main HEAD.
+>
+> **Host boundary:** the canonical master is PUBLIC READ ONLY for every host. No host receives master write credentials, collaborator access, branches, PR/issue/release/workflow/settings permission, or bypass. A host works only in its own independent private runtime and, if owner-provisioned, its own private repository. It cannot enter or inspect another host's workspace or the central RAHM.
+>
+> **RAHM:** RAHM is a central owner-only quarantine outside all host workspaces. Raw/private exports stay in the owner's private repository future-ai-palang-rahm. The public master contains only schemas, policy, workflow code and sanitized Child candidates. The owner alone exports, redacts, compares and submits candidates.
+>
+> **Identity:** never self-assign an official Host ID or Workspace ID. The owner issues Host IDs in the format HAIF-HOST-YYYYMMDD-NNN only after a verifiable direct enrollment receipt and owner identity review. Candidate IDs are owner-issued as HAIF-CANDIDATE-YYYYMMDD-NNN.
+>
+> **No host-to-RAHM route:** do not request or accept RAHM token, GitHub App key, PAT, deploy key, private repo credential or owner secret. Do not try to discover, access or monitor other hosts. Return only a provenance-bound proposal/export to the owner in your own workspace.
+>
+> **Promotion:** host output is untrusted proposal data. Owner export → private RAHM quarantine → schema/hash/privacy/duplicate/provenance/test review → bot-authored PR → owner review/approval → CHILD. A Child candidate is not Master. No automatic merge or direct host promotion is allowed.
+>
+> **Monitoring commands:** when the owner asks "رصد میزبان <HOST_ID>", inspect only that specific registered host's authorized, accessible export. "رصد همه میزبان‌ها" means all verified, non-revoked registry entries that the owner has actually made accessible; it does not mean anonymous public readers or inaccessible private workspaces. Do not claim continuous background monitoring.
+>
+> No real host is ACTIVE merely because this instruction was read. Identity, workspace, connector permissions, private storage and recovery each require direct evidence.
+
+---
+
 # Host growth and repository synchronization contract
 
 Package family: HAIF GPT-6 Portable Starter
@@ -18,7 +37,7 @@ The same initial package evolves in place. Do not fork a new package identity or
 1. **Host interaction producer** captures a project-relevant user input and assistant output only if the host actually exposes them through an authorized hook/API/connector. Otherwise create an explicit manual export; never pretend capture is automatic.
 2. **Pairing and provenance** creates unique point/anchor, IN, OUT and event IDs; parent links; source host/session; package version; timestamps with UTC canonical where applicable and Tehran derived from the same instant; payload digest; evidence links; and registration status.
 3. **Durable intake** submits the event to the authenticated adapter. The adapter stores it in SQLite, supports idempotent replay, rejects conflicting replay, and returns a read-back receipt. It currently reports repository write as NOT_IMPLEMENTED; it is not itself the GitHub writer.
-4. **Authorized repository worker** reads queued events and writes one provenance-bearing JSON event to `docs/architecture/BEHAVIOR-TRACE/INGESTED-EVENTS/`. It requires a GitHub token with contents:write held in a host secret manager, not in chat or the ZIP. After write it fetches the destination and compares exact bytes. No token or permission means no repository write.
+4. **Legacy direct GitHub worker — DISABLED.** It now fails closed and makes no API request. Hosts never hold a GitHub write token, including in a host secret manager. The owner exports selected evidence to private RAHM; no event is written to the public master by a host.
 5. **Behavior evidence** records observable actions and outcomes: task/context category, action/tool used, evidence references, success/failure, validation result, user feedback if explicitly present, retries, correction, and what changed. Do not store hidden chain-of-thought; store concise decision summaries and observable evidence.
 6. **Classification** labels each item as OBSERVATION, INFERENCE, HYPOTHESIS, UNKNOWN or DECISION. Record confidence and falsification/validation criteria. Keep conflicts and failed checks as OPEN gaps.
 7. **RAHM gate** checks provenance, schema, integrity, duplicate identity, relation validity, privacy/sensitivity, reproducibility and independent read-back. Invalid or ambiguous items remain quarantined/OPEN.
@@ -101,22 +120,12 @@ Durable capture requires an actual connected producer and authorized intake rout
 All host-originated data is untrusted and enters QUARANTINE. The permanent event ledger is an audit/continuity record, not automatic knowledge promotion. Only RAHM-validated CHILD candidates with explicit owner approval can update the living Master. Hosts cannot push/merge directly to main or alter governance. Preserve failed writes, missing outputs, rejected proposals and corrections as linked append-only events. Minimize private data; raw conversations are not stored by default.
 
 
-## Intake branch enforcement — POINT-0/069
+## Legacy intake branch frozen — POINT-0/086
 
-The repository worker default target is now the dedicated `host-intake` branch. The worker explicitly refuses `PALANG_GITHUB_BRANCH=main`. Events written there remain QUARANTINED and require owner review through a separate pull request before any merge to main or promotion into the living Master. The `host-intake` branch was created from main at `e94520a42a0910b3a4d2c2d41263e6428b0b499e`.
+The former host-intake branch and direct GitHub worker are disabled. Hosts do not write to any branch, PR, issue, release, workflow, or setting in the canonical master. The legacy worker fails closed with LEGACY_DIRECT_GITHUB_WORKER_DISABLED and makes no GitHub API request.
 
-Verified repository state at registration: GitHub reports the `main` branch as `protected=false`; this connection lacks a supported mutation action for branch protection/rulesets. Therefore branch protection is NOT CONFIGURED / OPEN. The worker-level main-write block is implemented, but is not a substitute for GitHub branch protection or least-privilege token configuration. Do not claim main is protected.
+Current approved path: host private workspace → owner export/redaction → private RAHM → validation → owner-controlled promotion App PR → owner approval → CHILD. No host receives RAHM credentials or master write access. See docs/architecture/RAHM/README.md and CURRENT-139.
 
- 
-### اجرای امن ورودی مخزن — وضعیت واقعی POINT-0/069
-- worker مخزن اکنون فقط شاخهٔ `host-intake` را می‌پذیرد و در صورت تنظیم هر شاخهٔ دیگری متوقف می‌شود؛ به‌ویژه هیچ نوشتن مستقیمی روی `main` انجام نمی‌دهد.
-- شاخهٔ `host-intake` از main در commit `e94520a42a0910b3a4d2c2d41263e6428b0b499e` ساخته شد. رویدادهای آن شاخه QUARANTINED هستند و برای ورود به main نیازمند PR و بررسی/تصمیم مالک‌اند.
-- GitHub در زمان بررسی `main.protected=false` گزارش کرد. ابزار در دسترس، تغییر branch protection/rulesets را پشتیبانی نمی‌کند؛ بنابراین محافظت واقعی شاخه هنوز NOT CONFIGURED / OPEN است. محدودیت کد worker جایگزین branch protection یا credential کم‌اختیار نیست.
-- قرارداد JSON Schema دفتر تعامل به‌روزرسانی شد تا input_id، output_id، host_id، host_session_id، master_commit_sha، master_version، checkpoint_id، adapter_version، payload_sha256، privacy_class، redaction_status، capture_status و receipt_ref الزامی باشند.
-- این به‌روزرسانی ساختار و گیت‌ها را محکم‌تر می‌کند؛ اتصال زندهٔ میزبان، استقرار worker و بازیابی مستقل همچنان نیازمند رسید end-to-end واقعی‌اند.
-
-
----
 
 ## POINT-0/070 — Host-scoped isolated workspaces
 
@@ -126,7 +135,7 @@ The approved flow is:
 
 `MASTER SNAPSHOT (READ-ONLY) → HOST WORKSPACE → AUTHENTICATED HOST-SCOPED BROKER → QUARANTINE → OWNER MONITORING → CROSS-HOST RECONCILIATION → RAHM → CHILD CANDIDATE → EXPLICIT OWNER APPROVAL → MASTER + SAME CANONICAL ZIP`
 
-A Git folder is not a security boundary. Do not give an AI host a direct repository write token. A broker must authenticate host identity, derive the allowed destination from that identity, validate the schema and digest, reject arbitrary paths/path traversal, and write only to the host's quarantine area on `host-intake`. Least-privilege credentials, real branch protection and negative cross-workspace tests must be proven before any live write-enabled host is accepted. If GitHub's repository-level permissions cannot enforce the needed separation, use a dedicated private intake repository or isolated sandbox and pass only sanitized evidence through the broker.
+A Git folder or branch in the public master is not a security boundary. The legacy host-intake route is disabled. Do not give an AI host any credential for the master repository. A future broker, if separately approved, may write only to the one owner-provisioned private repository for that verified Host ID; it must derive the destination server-side, validate schema/digest, reject arbitrary paths/path traversal, and pass negative cross-workspace tests. Until those gates pass, hosts export locally and the owner imports sanitized evidence into private RAHM.
 
 The Host Registry remains empty until a real host returns identity and read-back receipts. A workspace template or package does not mean that a host is connected or provisioned. Raw conversations are not automatically copied into the master. Only independently verifiable, reproducible, RAHM-validated results explicitly accepted by the owner may update the living master and the same canonical ZIP identity. All other host outputs remain isolated/quarantined or are recorded as rejected/open gaps.
 

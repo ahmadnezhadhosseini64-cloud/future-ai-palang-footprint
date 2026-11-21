@@ -1,3 +1,17 @@
+## Current host-security and RAHM entry — POINT-0/086 (0++)
+
+- Current checkpoint: docs/0.0/anchors/PALANG-0.0-CURRENT-20261122-139-RAHM-CENTRAL-OWNER-GATE.md
+- RAHM architecture: docs/architecture/RAHM/README.md
+- Owner monitoring commands: docs/architecture/RAHM/OWNER-MONITORING-COMMANDS.md
+- Private RAHM setup: docs/architecture/RAHM/PRIVATE-RAHM-REPOSITORY-TEMPLATE.md
+- Host security: docs/architecture/HOST-SECURITY/OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOSITORIES.md
+- Owner-only bot PR workflow: .github/workflows/rahm-owner-controlled-child-promotion.yml
+- Master remains PUBLIC READ / owner-only WRITE. Hosts never receive master write credentials or bypass.
+- Raw/private host exports belong in the owner-created PRIVATE RAHM repository; the public master stores only sanitized Child candidates and governance code.
+- Operational setup remains pending: private RAHM repo, GitHub App, secrets/variables, ChatGPT connector access, Ruleset approval=1 and live isolation tests.
+
+---
+
 # future-ai-palang-footprint
 Future AI / Palang Footprint — official project repository
 
@@ -89,8 +103,8 @@ This project has its own living execution record, legal gates, job-search stages
 - Living master: version 1.7.74.
 - Current checkpoint: [CURRENT-122](docs/0.0/anchors/PALANG-0.0-CURRENT-20261120-122-PERMANENT-INTERACTION-LEDGER.md).
 - Architecture: permanent IN/OUT event ledger, host registry, quarantine-first intake, RAHM → CHILD → explicit owner approval.
-- Repository intake worker is constrained to `host-intake`; owner-reviewed PR is required before main promotion.
-- GitHub reports main branch currently unprotected; branch protection remains OPEN / NOT CONFIGURED.
+- Legacy host-intake and its direct GitHub worker are frozen/disabled. No host writes to any master branch. Owner export → private RAHM → bot-authored PR → owner approval → CHILD.
+- Live main is protected by active Ruleset 27814009; required approvals remain 0 and Code Owner review remains OFF until owner UI configuration.
 - Package source version: 0.4.1; canonical ZIP name and stable release identity remain unchanged.
 - Real host capture and clean-host recovery remain OPEN until direct host receipts exist.
 

@@ -1,10 +1,10 @@
 # محیط‌های کاری مستقل میزبان‌ها — HAIF
 
-- Architecture checkpoint: POINT-0/070 / CURRENT-123
+- Architecture checkpoint: POINT-0/086 / CURRENT-139
 - Governing owner: احمد پلنگ
 - Status: WORKSPACE MODEL REGISTERED / NO EXTERNAL HOST ACTIVATED
 - Registry: ../HOST-REGISTRY/HOST-REGISTRY.json
-- Intake branch: host-intake
+- Intake route: OWNER_EXPORT_TO_PRIVATE_RAHM_ONLY; no host intake branch in master
 - Sole execution queue: NEXT-051
 
 ## هدف
@@ -45,7 +45,7 @@
 پوشه‌بندی داخل یک مخزن Git به‌تنهایی کنترل دسترسی امنیتی نیست؛ GitHub مجوزهای معمول مخزن را در سطح repository اعمال می‌کند، نه مجوز واقعی per-folder. بنابراین:
 1. میزبان AI هرگز credential نوشتن مستقیم مخزن اصلی یا main دریافت نمی‌کند.
 2. دریافت فقط از طریق broker/adapter احراز هویت‌شده و allowlist مسیرهای host-scoped انجام می‌شود.
-3. مقصد intake فقط شاخه `host-intake` و مسیر مختص همان host_id است؛ validator باید مسیر، schema، اندازه، نوع فایل، شناسه میزبان و digest را کنترل کند.
+3. هیچ مقصد intake روی شاخه‌های مخزن مادر وجود ندارد. میزبان خروجی را فقط در workspace خودش نگه می‌دارد؛ مالک export پالایش‌شده را به RAHM خصوصی منتقل می‌کند. هر broker آینده فقط می‌تواند به مخزن خصوصی همان میزبان محدود شود و هرگز به master متصل نیست.
 4. دسترسی به مخزن اصلی، secrets، workflowها، registry، master و workspace میزبان‌های دیگر برای میزبان ممنوع است.
 5. اگر جداسازی واقعی credential/مسیر در GitHub قابل تضمین نباشد، میزبان باید در مخزن خصوصی/مجزای intake یا sandbox جدا اجرا شود و فقط پاکت پالایش‌شده از broker وارد مخزن اصلی شود.
 6. branch protection واقعی و credential کم‌اختیار هنوز باید در GitHub تنظیم و با آزمون منفی اثبات شود؛ وجود این سند جایگزین آن نیست.

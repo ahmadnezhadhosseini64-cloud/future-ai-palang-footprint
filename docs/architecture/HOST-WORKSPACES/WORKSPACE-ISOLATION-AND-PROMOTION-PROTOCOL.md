@@ -52,3 +52,8 @@
 - آزمون restart/revoke و clean-host recovery: OPEN.
 
 این قرارداد، طراحی و مسیر اجرایی را ثبت می‌کند؛ تا زمانی که آزمون‌ها و رسیدهای عملیاتی موجود نباشند، هیچ میزبان فعال یا محیط امنیتیِ اثبات‌شده اعلام نمی‌شود.
+
+
+## 9. RAHM central owner-control extension — POINT-0/086
+
+The central RAHM environment is outside every host workspace and is controlled only by the owner. Host data is exported by the owner, redacted, provenance-bound, and validated in private RAHM. The public master receives only sanitized Child candidates through a bot-authored PR and owner review. A Child candidate is not Master. No host receives RAHM or master write access. See docs/architecture/RAHM/README.md and CURRENT-139. This extension is DESIGN REGISTERED / OPERATIONAL SETUP PENDING until the private RAHM repository, promotion App, secrets, connector access and negative isolation tests are verified.

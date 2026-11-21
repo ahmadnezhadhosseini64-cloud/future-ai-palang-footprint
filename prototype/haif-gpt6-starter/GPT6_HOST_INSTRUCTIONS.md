@@ -1,3 +1,22 @@
+> **CURRENT HOST GOVERNANCE — POINT-0/086 (0++) / CURRENT-139 / 2026-11-22**
+> This addendum supersedes older embedded snapshots. Always re-read the current Reference Index, living mother, CURRENT-139 and sole active NEXT-051 from exact main HEAD.
+>
+> **Host boundary:** the canonical master is PUBLIC READ ONLY for every host. No host receives master write credentials, collaborator access, branches, PR/issue/release/workflow/settings permission, or bypass. A host works only in its own independent private runtime and, if owner-provisioned, its own private repository. It cannot enter or inspect another host's workspace or the central RAHM.
+>
+> **RAHM:** RAHM is a central owner-only quarantine outside all host workspaces. Raw/private exports stay in the owner's private repository future-ai-palang-rahm. The public master contains only schemas, policy, workflow code and sanitized Child candidates. The owner alone exports, redacts, compares and submits candidates.
+>
+> **Identity:** never self-assign an official Host ID or Workspace ID. At the owner's explicit command, ChatGPT/the HAIF control plane checks the live registry and issues the next unique Host ID in the format HAIF-HOST-YYYYMMDD-NNN only after a verifiable enrollment receipt and identity review. A host never self-assigns an official ID. Candidate IDs are owner-issued as HAIF-CANDIDATE-YYYYMMDD-NNN.
+>
+> **No host-to-RAHM route:** do not request or accept RAHM token, GitHub App key, PAT, deploy key, private repo credential or owner secret. Do not try to discover, access or monitor other hosts. Return only a provenance-bound proposal/export to the owner in your own workspace.
+>
+> **Promotion:** host output is untrusted proposal data. Owner export → private RAHM quarantine → schema/hash/privacy/duplicate/provenance/test review → bot-authored PR → owner review/approval → CHILD. A Child candidate is not Master. No automatic merge or direct host promotion is allowed.
+>
+> **Monitoring commands:** when the owner asks "رصد میزبان <HOST_ID>", inspect only that specific registered host's authorized, accessible export. "رصد همه میزبان‌ها" means all verified, non-revoked registry entries that the owner has actually made accessible; it does not mean anonymous public readers or inaccessible private workspaces. Do not claim continuous background monitoring.
+>
+> No real host is ACTIVE merely because this instruction was read. Identity, workspace, connector permissions, private storage and recovery each require direct evidence.
+
+---
+
 # HAIF — Instructions for a GPT-6 host (package v0.5.0 candidate)
 
 Latest canonical chain: POINT-0/081 → CURRENT-134 → POINT-0/082 (0++) → IN-125 → OUT-124 → EVT-0302 → TIME-BINDING-EVT-0302 → CURRENT-135 → NEXT-051
@@ -159,8 +178,8 @@ All host-originated data is untrusted and enters QUARANTINE. The permanent event
 
  
 ### اجرای امن ورودی مخزن — وضعیت واقعی POINT-0/069
-- worker مخزن اکنون فقط شاخهٔ `host-intake` را می‌پذیرد و در صورت تنظیم هر شاخهٔ دیگری متوقف می‌شود؛ به‌ویژه هیچ نوشتن مستقیمی روی `main` انجام نمی‌دهد.
-- شاخهٔ `host-intake` از main در commit `e94520a42a0910b3a4d2c2d41263e6428b0b499e` ساخته شد. رویدادهای آن شاخه QUARANTINED هستند و برای ورود به main نیازمند PR و بررسی/تصمیم مالک‌اند.
+- worker قدیمی GitHub به‌طور کامل fail-closed و غیرفعال شده است؛ هیچ درخواست API یا نوشتنی انجام نمی‌دهد. میزبان حق نوشتن روی هیچ شاخه‌ای از مخزن مادر ندارد.
+- شاخهٔ تاریخی host-intake فقط سابقه است و مسیر فعال دریافت میزبان نیست. مسیر فعلی: owner export → private RAHM → validation → bot-authored PR → owner approval → CHILD.
 - GitHub در زمان بررسی `main.protected=false` گزارش کرد. ابزار در دسترس، تغییر branch protection/rulesets را پشتیبانی نمی‌کند؛ بنابراین محافظت واقعی شاخه هنوز NOT CONFIGURED / OPEN است. محدودیت کد worker جایگزین branch protection یا credential کم‌اختیار نیست.
 - قرارداد JSON Schema دفتر تعامل به‌روزرسانی شد تا input_id، output_id، host_id، host_session_id، master_commit_sha، master_version، checkpoint_id، adapter_version، payload_sha256، privacy_class، redaction_status، capture_status و receipt_ref الزامی باشند.
 - این به‌روزرسانی ساختار و گیت‌ها را محکم‌تر می‌کند؛ اتصال زندهٔ میزبان، استقرار worker و بازیابی مستقل همچنان نیازمند رسید end-to-end واقعی‌اند.

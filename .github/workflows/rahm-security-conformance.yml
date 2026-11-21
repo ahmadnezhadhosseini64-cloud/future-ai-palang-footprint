@@ -1,0 +1,109 @@
+name: RAHM Security and Promotion Conformance
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "docs/architecture/RAHM/**"
+      - "docs/architecture/CHILD-CANDIDATES/**"
+      - "docs/architecture/HOST-REGISTRY/**"
+      - "scripts/rahm/**"
+      - "tests/rahm/**"
+      - "control-plane/rahm/**"
+      - ".github/workflows/rahm-owner-controlled-child-promotion.yml"
+      - ".github/workflows/rahm-security-conformance.yml"
+      - ".github/workflows/main.yml"
+      - ".github/workflows/execution-controller.yml"
+      - ".github/workflows/pending-registration-drain.yml"
+      - ".github/workflows/rahm-portable-conformance.yml"
+      - ".github/workflows/living-architecture-audit.yml"
+      - ".github/workflows/living-architecture-audit.yml"
+      - "control-plane/controller.py"
+  push:
+    branches: [main]
+    paths:
+      - "docs/architecture/RAHM/**"
+      - "docs/architecture/CHILD-CANDIDATES/**"
+      - "scripts/rahm/**"
+      - "tests/rahm/**"
+      - "control-plane/rahm/**"
+      - ".github/workflows/rahm-owner-controlled-child-promotion.yml"
+      - ".github/workflows/rahm-security-conformance.yml"
+      - ".github/workflows/main.yml"
+      - ".github/workflows/execution-controller.yml"
+      - ".github/workflows/pending-registration-drain.yml"
+      - ".github/workflows/rahm-portable-conformance.yml"
+      - ".github/workflows/living-architecture-audit.yml"
+      - "control-plane/controller.py"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: rahm-security-conformance-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Install schema and workflow validators
+        run: python -m pip install jsonschema PyYAML
+      - name: Run RAHM candidate and governance negative tests
+        run: python -m unittest discover -s tests/rahm -v
+      - name: Compile RAHM validator and execution controller
+        run: |
+          python -m py_compile scripts/rahm/prepare_promotion.py scripts/rahm/validate_host_registry.py control-plane/controller.py
+      - name: Validate Host Registry schema and isolation invariants
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from jsonschema import Draft202012Validator, FormatChecker
+          schema = json.loads(Path("docs/architecture/HOST-REGISTRY/HOST-REGISTRY-SCHEMA.json").read_text(encoding="utf-8"))
+          registry = json.loads(Path("docs/architecture/HOST-REGISTRY/HOST-REGISTRY.json").read_text(encoding="utf-8"))
+          Draft202012Validator.check_schema(schema)
+          errors = list(Draft202012Validator(schema, format_checker=FormatChecker()).iter_errors(registry))
+          assert not errors, [e.message for e in errors]
+          print("HOST_REGISTRY_SCHEMA=PASS")
+          PY
+          python scripts/rahm/validate_host_registry.py --registry docs/architecture/HOST-REGISTRY/HOST-REGISTRY.json
+      - name: Validate candidate manifest schema
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from jsonschema import Draft202012Validator
+          schema = json.loads(Path("docs/architecture/RAHM/CANDIDATE-MANIFEST-SCHEMA.json").read_text(encoding="utf-8"))
+          Draft202012Validator.check_schema(schema)
+          required = set(schema["required"])
+          assert {"candidate_id", "host_id", "workspace_id", "owner_redaction_attestation", "owner_child_promotion_authorized", "privacy_class", "redaction_status", "files"} <= required
+          print("RAHM_MANIFEST_SCHEMA=PASS")
+          PY
+      - name: Validate workflow YAML parses
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import yaml
+          paths = [
+              ".github/workflows/rahm-owner-controlled-child-promotion.yml",
+              ".github/workflows/rahm-security-conformance.yml",
+              ".github/workflows/main.yml",
+              ".github/workflows/execution-controller.yml",
+              ".github/workflows/pending-registration-drain.yml",
+              ".github/workflows/rahm-portable-conformance.yml",
+              ".github/workflows/living-architecture-audit.yml",
+          ]
+          for path in paths:
+              parsed = yaml.safe_load(Path(path).read_text(encoding="utf-8"))
+              assert isinstance(parsed, dict), path
+              assert "jobs" in parsed, path
+              print(f"WORKFLOW_YAML_PARSE=PASS {path}")
+          PY
