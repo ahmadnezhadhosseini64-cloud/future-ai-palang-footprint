@@ -1,4 +1,12 @@
-## Latest registered event — EVT-0299 / POINT-0/079 (0++)
+## Latest registered event — EVT-0300 / POINT-0/080 (0++)
+
+- Chain: POINT-0/079 → CURRENT-132 → POINT-0/080 → IN-123 → OUT-122 → EVT-0300 → TIME-BINDING-EVT-0300 → CURRENT-133 → NEXT-051.
+- Public repository READ/clone/fetch over HTTPS is available without OAuth; OAuth/secure credentials are limited to private resources or authenticated write-back.
+- Living master target: 1.7.88. Latest verified package at parent continuation: 0.4.8; 19 files, 257102 bytes, 24/24 tests and artifact round-trip PASS; next paired package target 0.4.9.
+- Execution, persistent workspace, clean-host import, restart and authenticated write-back remain OPEN / NOT RUN.
+- Time binding records repository registration time; owner-message time remains separately unknown unless independently sourced.
+
+## Historical registered event — EVT-0299 / POINT-0/079 (0++)
 
 - Chain: POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051.
 - Registration commit: 2026-11-21T15:27:55Z / 2026-11-21T18:57:55+03:30; owner-message time UNKNOWN / UNVERIFIED.
@@ -15,7 +23,7 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.46
+- Version: 1.0.47
 - Date: 2026-11-21
 - Project: Future AI / Palang Footprint / HAIF
 
