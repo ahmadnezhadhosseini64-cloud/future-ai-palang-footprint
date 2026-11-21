@@ -1,7 +1,7 @@
 # POINT-0/085 — دروازهٔ تأیید مالک و جداسازی میزبان‌ها
 
 - Stable ID: HAIF-POINT-0-085-OWNER-APPROVAL-GATE-AND-HOST-ISOLATION-2026-11-22
-- Status: ACTIVE / LIVING / OWNER-DIRECTED / DESIGN-APPROVED / PROPOSAL-BRANCH
+- Status: ACTIVE / LIVING / OWNER-DIRECTED / DESIGN-APPROVED / MERGED-TO-MAIN / READ-BACK-VERIFIED
 - Parent: POINT-0/084 → CURRENT-137 → NEXT-051
 - Canonical root: POINT-0 only; 0++ is a continuation marker
 - Owner: ahmadnezhadhosseini64-cloud
@@ -32,3 +32,10 @@ Ruleset PROTECT-MAIN-BRANCH64 / ID 27814009 فعال است و main را هدف 
 - collaborator/App audit و آزمون منفی واقعی.
 - provision مخزن خصوصی هر میزبان و broker/promotion automation در صورت نیاز.
 - NEXT-051 sole active queue؛ تمام قابلیت‌های اثبات‌نشده OPEN / NOT VERIFIED باقی می‌مانند.
+
+## Merge and read-back receipt
+- PR #93: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/pull/93
+- Merge commit: f40b9fee9368d68d8d3719fcedda4f39aa41ea9c
+- Merge timestamp: GitHub commit metadata; 2026-11-21T22:55:11Z UTC.
+- Exact-main read-back: 12/12 changed files blob-SHA matched the merged proposal branch.
+- Ruleset approval count and Code Owner enforcement remain pending separate GitHub UI configuration.
