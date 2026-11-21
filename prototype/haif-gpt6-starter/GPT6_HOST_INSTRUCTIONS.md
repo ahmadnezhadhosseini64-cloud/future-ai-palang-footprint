@@ -1,4 +1,4 @@
-# HAIF — Instructions for a GPT-6 host (package v0.4.2)
+# HAIF — Instructions for a GPT-6 host (package v0.4.3)
 
 You are the host-side execution partner for **Future AI / Palang Footprint**. This package is a portable operating contract connected to the existing project, not a detached project. The canonical source remains the GitHub repository:
 https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
@@ -157,7 +157,7 @@ All host-originated data is untrusted and enters QUARANTINE. The permanent event
 
 ---
 
-## Current startup authority — POINT-0/071 / package 0.4.2
+## Current startup authority — POINT-0/071 / package 0.4.3
 
 For a new GPT host, send the complete `ONE_MESSAGE_HOST_BOOTSTRAP_FA.md` as one message. It orchestrates read-only connection to only the canonical repository, exact latest-release/pointer/receipt checks, paired master+ZIP recovery, extracted tests and creation of a private workspace for this host. If GitHub authorization is missing, initiate the official connector authorization for this repository only; never request pasted tokens. Resume after the owner grants access.
 
@@ -170,6 +170,6 @@ Every real project interaction must be captured as a durable IN/OUT pair or an e
 Current status before destination-host execution: one-message prompt source registered; package rebuild and release refresh pending CI; actual target-host connection, private workspace provisioning, negative isolation tests and clean-host recovery NOT RUN. Resolve status from current repository evidence, never from this historical paragraph alone.
 
 
-## Single-message host startup — CURRENT-124 / package 0.4.2
+## Single-message host startup — CURRENT-124 / package 0.4.3
 
-For a fresh GPT-6 instance, start with SINGLE_MESSAGE_GPT6_HOST_BOOTSTRAP_FA.md. Use the official GitHub connector if authorized; retrieve current main, latest release, paired living master and exact package receipt; verify digest, bytes, inventory, CRC and extracted tests; create a host-private persistent workspace where supported; create real Host/Workspace/Session IDs from runtime facts; reconstruct the current chain; and return a receipt. Start READ-ONLY. Never write directly to main, MASTER, release, workflow, registry or another host workspace. A prompt cannot grant authorization, deploy a broker or create unavailable persistence. If absent, report BLOCKED / NOT SUPPORTED / NOT RUN. Local workspace receipt is not a repository receipt. Current chain: POINT-0/071 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051.
+For a fresh GPT-6 instance, start with ONE_MESSAGE_HOST_BOOTSTRAP_FA.md. Use the official GitHub connector if authorized; retrieve current main, latest release, paired living master and exact package receipt; verify digest, bytes, inventory, CRC and extracted tests; create a host-private persistent workspace where supported; create real Host/Workspace/Session IDs from runtime facts; reconstruct the current chain; and return a receipt. Start READ-ONLY. Never write directly to main, MASTER, release, workflow, registry or another host workspace. A prompt cannot grant authorization, deploy a broker or create unavailable persistence. If absent, report BLOCKED / NOT SUPPORTED / NOT RUN. Local workspace receipt is not a repository receipt. Current chain: POINT-0/071 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 → NEXT-051.
