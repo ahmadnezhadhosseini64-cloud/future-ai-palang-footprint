@@ -58,3 +58,8 @@ All previous POINT-0, 0.0, 0+, 0++ points and all existing IN/OUT/EVT/TIME/CURRE
 ## 6. Acceptance status
 
 The exact-main architecture audit and Evidence Gate are verified. Portable package conformance is not accepted because of the explicit version-drift failure. CURRENT-150 remains ACTIVE / LIVING with correction and all external runtime gates OPEN. NEXT-051 remains the sole active queue.
+
+
+## Stable identity and revision resolver — transition to CURRENT-150.01
+
+This file remains the original CURRENT-150 anchor record. Its stable family identity is retained; routine updates are now append-only revisions under CURRENT-150. The first candidate revision is [CURRENT-150.01](PALANG-0.0-CURRENT-20261122-150-REVISION-01-STABLE-ANCHOR-IDENTITY-LOCK.md). Existing CURRENT-151 and POINT-0/089 records are preserved as the transition snapshot and are not deleted or renumbered. The only queue remains NEXT-051, with first candidate revision NEXT-051.01. See [the stable identity policy](POINT-0-STABLE-ANCHOR-AND-REVISION-POLICY-2026-11-22.md).
