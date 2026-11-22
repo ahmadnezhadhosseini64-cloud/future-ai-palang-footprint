@@ -3,7 +3,7 @@
 - Event ID: EVT-0315
 - Stable ID: PALANG-EVT-0315-LIVE-MIRROR-SYNC-2026-11-22
 - Production ID: HAIF-EVT-0315
-- Version: 1.0.1
+- Version: 1.0.2
 - Type: MIRROR-ONLY / NO-NEW-ROOT / NO-NEW-CHECKPOINT / NO-NEW-NEXT
 - Status: REGISTERED ON OWNER-CONTROLLED PROPOSAL BRANCH / PENDING PROMOTION
 - Run observation UTC: `2026-11-22T06:26:57Z`; Asia/Tehran: `2026-11-22T09:56:57+03:30`. This is the scheduled-run observation context, not a Git commit, Actions, Library metadata, or exact Library read-operation time.
@@ -54,6 +54,8 @@
 - Exact failure: `behavior_index_missing_CURRENT-140`. The first index update replaced the global 0.0 chain block (EVT-0309 / CURRENT-140) with the separate user-turn continuation (EVT-0314 / CURRENT-145), accidentally removing a required historical/global-chain marker. This was an index-scope regression; it did not indicate source or Library drift.
 - RAHM Security and Promotion Conformance run 44995087173 tested the same exact SHA `45f9be8ed1165235552cf2ca1266f91662164d3b` and PASSED.
 - Correction: restore the complete global 0.0 chain EVT-0309 / CURRENT-140 in the Behavior Trace Index; add a separate user-turn continuation section for EVT-0314 / CURRENT-145; retain EVT-0315 as a separate mirror-only event. The pointer ambiguity remains explicit and no winner is selected.
+- Corrected branch head: `e2cbc94743608b09c6448c19a3eca32b964c4acd`; Living Architecture Audit run 44995428830 SUCCESS and RAHM Security/Promotion Conformance run 44995428868 SUCCESS, both on that exact SHA. The initial failed run remains preserved above.
+- PR #113 is OPEN and clean for owner review; main remains `81c4b8687ad2de61e900c84505922a823ac265a1`. No merge or automatic promotion has occurred.
 
 ## 5. Latest relevant Actions evidence at run start
 

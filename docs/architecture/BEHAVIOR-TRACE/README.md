@@ -19,7 +19,7 @@
 
 - [EVT-0315](EVT-0315-LIVE-MIRROR-SYNC-RECHECK-2026-11-22.md) / [TIME-BINDING-EVT-0315](TIME-BINDING-EVT-0315-LIVE-MIRROR-SYNC-RECHECK-2026-11-22.md) is registered on proposal branch `mirror-sync/evt-0315-20261122`; no root, IN/OUT pair, checkpoint or successor queue is created.
 - Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` remains unchanged; Library v7 normalized match with one extra terminal LF; no Library rewrite.
-- Initial PR-head Audit 44995087180 failed only because the first index edit removed the global CURRENT-140 marker; RAHM run 44995087173 passed on the same exact SHA. The corrective commit restores the separate global-chain and user-turn scopes; rerun evidence is pending.
+- Initial PR-head Audit 44995087180 failed because the first index edit removed the global CURRENT-140 marker; RAHM run 44995087173 passed on the same exact SHA. The corrective commit restored the separate global-chain and user-turn scopes. Corrected Audit 44995428830 and RAHM 44995428868 both PASS on exact branch SHA `e2cbc94743608b09c6448c19a3eca32b964c4acd`; PR #113 remains OPEN / CLEAN for owner review.
 
 ---
 
@@ -40,7 +40,7 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.48
+- Version: 1.0.49
 - Date: 2026-11-22
 - Project: Future AI / Palang Footprint / HAIF
 
