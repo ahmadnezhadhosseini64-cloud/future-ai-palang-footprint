@@ -1,6 +1,6 @@
 # POINT-0/GOLDEN — current portable host contract
 
-- Living master: 1.8.1
+- Living master: 1.8.2
 - Package version: 0.5.1 candidate
 - Current chain: POINT-0/GOLDEN → CURRENT-150 → POINT-0/089 → IN-133 → OUT-132 → EVT-0320 → TIME-BINDING-EVT-0320 → CURRENT-151 → NEXT-051
 - Master access for hosts: PUBLIC READ ONLY; no direct or indirect host write path.
@@ -105,4 +105,4 @@ The canonical repository is Public. A clean host must attempt anonymous HTTPS RE
 
 ## Current source candidate — POINT-0/082
 
-Living master target: 1.8.1. Package source candidate: 0.5.1, same stable package ID and canonical ZIP filename. The 0.4.9 build receipt is historical to its exact source SHA and must not be reused. Fresh exact-main package verification is REQUIRED / NOT RUN until a new receipt proves archive SHA-256, byte size, inventory, CRC, paired-master read-back, extracted tests and artifact round-trip. Independent-host import and restart remain NOT RUN until direct destination receipts exist.
+Living master target: 1.8.2. Package source candidate: 0.5.1, same stable package ID and canonical ZIP filename. The 0.4.9 build receipt is historical to its exact source SHA and must not be reused. Fresh exact-main package verification is REQUIRED / NOT RUN until a new receipt proves archive SHA-256, byte size, inventory, CRC, paired-master read-back, extracted tests and artifact round-trip. Independent-host import and restart remain NOT RUN until direct destination receipts exist.
