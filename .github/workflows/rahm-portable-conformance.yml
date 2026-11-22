@@ -2,7 +2,7 @@ name: Portable RAHM Conformance and Digest Evidence
 
 on:
   push:
-    branches: [main]
+    branches: [main, 'governance/point-0-golden-baseline-20261122']
     paths:
       - 'docs/portable/RAHM/**'
       - 'docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md'
@@ -11,8 +11,7 @@ on:
       - 'prototype/haif-gpt6-starter/**'
       - '.github/workflows/rahm-portable-conformance.yml'
   pull_request:
-    branches:
-      - 'governance/point-0-golden-baseline-20261122'
+    branches: [main, 'governance/point-0-golden-baseline-20261122']
     paths:
       - 'docs/portable/RAHM/**'
       - 'docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md'
