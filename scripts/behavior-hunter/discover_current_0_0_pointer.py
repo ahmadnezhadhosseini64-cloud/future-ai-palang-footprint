@@ -38,8 +38,26 @@ def explicit_registry_claims(text: str, source: str) -> list[dict]:
         re.compile(r"canonical live checkpoint is now\s+\[?(CURRENT-(?:\d{8}-)?\d{3})", re.I),
         re.compile(r"current execution continuation remains\s+\[?(CURRENT-(?:\d{8}-)?\d{3})", re.I),
     )
+    # A current banner/pointer at the registry head is authoritative over
+    # older append-only history later in the same file.
+    authoritative = (
+        re.compile(r"^\\s*>\\s*\\*\\*CURRENT POINT-0\\+\\+:\\*\\*\\s*\\[(CURRENT-(?:\\d{8}-)?\\d{3})\\]", re.I),
+        re.compile(r"^##\\s*Current (?:continuation|execution) pointer.*?\\b(CURRENT-(?:\\d{8}-)?\\d{3})\\b", re.I),
+    )
+    lines = text.splitlines()
+    for line_no, line in enumerate(lines[:80], 1):
+        for pattern in authoritative:
+            match = pattern.search(line)
+            if match:
+                return [{
+                    "source": source,
+                    "line": line_no,
+                    "current_id": match.group(1).upper(),
+                    "declaration": line.strip(),
+                    "scope": "global_project_registry",
+                }]
     claims = []
-    for line_no, line in enumerate(text.splitlines(), 1):
+    for line_no, line in enumerate(lines, 1):
         for pattern in patterns:
             match = pattern.search(line)
             if match:
@@ -57,6 +75,7 @@ def discover_from_texts(manifest_text: str, verifier_text: str, portable_text: s
                         registry_texts: dict[str, str]) -> dict:
     failures = []
     declarations = []
+    historical_verifier_declarations = []
     try:
         manifest = json.loads(manifest_text)
         target = manifest.get("current_checkpoint")
@@ -83,10 +102,11 @@ def discover_from_texts(manifest_text: str, verifier_text: str, portable_text: s
         if not match:
             failures.append("verifier current path is not a recognized CURRENT anchor")
         else:
-            declarations.append({
+            historical_verifier_declarations.append({
                 "source": 'historical recovery verifier FILES["current"]',
                 "current_id": "CURRENT-" + CURRENT_ID.search(match.group(1)).group(1),
                 "path": verifier_match.group(1),
+                "scope": "historical_recovery_test",
             })
 
     # The portable master has a top-level live pointer distinct from historical
@@ -106,12 +126,14 @@ def discover_from_texts(manifest_text: str, verifier_text: str, portable_text: s
                 "declaration": portable_claim.strip(),
             })
 
-    # The manifest, verifier and portable master describe a bounded overlay
-    # recovery scope. Append-only registries describe the global project pointer.
-    # Different IDs can be valid across these scopes and must not be conflated.
+    # The manifest and portable master's top-level pointer describe the
+    # bounded historical overlay. The verifier is pinned to a historical
+    # recovery test chain and must not compete with the live overlay pointer.
+    # Append-only registries describe the global project pointer.
     for declaration in declarations:
         declaration["scope"] = "overlay_recovery"
     overlay_declarations = list(declarations)
+    declarations.extend(historical_verifier_declarations)
     registry_declarations = []
     for source, text in registry_texts.items():
         registry_declarations.extend(explicit_registry_claims(text, source))
@@ -120,7 +142,7 @@ def discover_from_texts(manifest_text: str, verifier_text: str, portable_text: s
     overlay_ids = sorted({d["current_id"] for d in overlay_declarations})
     registry_ids = sorted({d["current_id"] for d in registry_declarations})
     registry_sources = {d["source"] for d in registry_declarations}
-    unique_ids = sorted({d["current_id"] for d in declarations})
+    unique_ids = sorted({d["current_id"] for d in overlay_declarations + registry_declarations})
     by_source = {}
     for declaration in declarations:
         by_source.setdefault(declaration["source"], []).append(declaration["current_id"])
