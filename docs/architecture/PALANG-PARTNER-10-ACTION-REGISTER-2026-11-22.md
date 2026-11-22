@@ -14,9 +14,9 @@
 - Status: ACTIVE / LIVING / TEN TRACKING ISSUES CREATED — IMPLEMENTATION OPEN
 - Canonical root: POINT-0 (single root)
 - Baseline: POINT-0/GOLDEN
-- Checkpoint target: CURRENT-146 / POINT-0++
+- Checkpoint target: CURRENT-151 / POINT-0++
 - Sole active queue: NEXT-051 (unchanged; no parallel queue)
-- Parent: CURRENT-145 → EVT-0314 → NEXT-051
+- Parent: CURRENT-150 → POINT-0/089 → EVT-0320 → CURRENT-151 → NEXT-051
 - Owner: @ahmadnezhadhosseini64-cloud
 - Repository: ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
 
