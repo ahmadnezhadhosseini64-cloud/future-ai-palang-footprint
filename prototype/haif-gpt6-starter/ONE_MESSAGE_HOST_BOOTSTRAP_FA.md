@@ -42,7 +42,7 @@
 **Canonical branch:** main  
 **Stable package ID:** HAIF-GPT6-PORTABLE-STARTER-20261025-004  
 **Canonical ZIP filename:** haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip  
-**Current source package version recorded in manifest:** 0.4.9  
+**Current source package version recorded in manifest:** 0.5.1  
 **Living mother target:** 1.8.2  
 **Current continuation:** POINT-0/GOLDEN → CURRENT-150 → POINT-0/089 → IN-133 → OUT-132 → EVT-0320 → TIME-BINDING-EVT-0320 → CURRENT-151 → NEXT-051
 
