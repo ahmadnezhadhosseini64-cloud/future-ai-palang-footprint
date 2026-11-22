@@ -98,7 +98,7 @@ for p in source_files:
         # of the canonical mother. Relative links retain the canonical source
         # document's directory semantics, not the starter folder's.
         link_base = p.parent
-        if p.name == "LIVING_MASTER_REFERENCE.md" and "haif-gpt6-starter" in p.parts:
+        if p.as_posix().endswith("prototype/haif-gpt6-starter/LIVING_MASTER_REFERENCE.md"):
             link_base = (ROOT / "docs/architecture/مدل اولیه AI").resolve()
         candidate = (link_base / path_part).resolve()
         try: rel = candidate.relative_to(ROOT.resolve()).as_posix()
