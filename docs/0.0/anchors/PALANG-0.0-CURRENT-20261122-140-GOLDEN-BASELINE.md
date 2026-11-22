@@ -1,7 +1,7 @@
 # CURRENT-140 — وضعیت جاری نقطهٔ ۰ طلایی
 
 - Stable ID: HAIF-CURRENT-140-POINT-0-GOLDEN-BASELINE-2026-11-22
-- Status: ACTIVE / LIVING / GOLDEN BASELINE / OWNER-DIRECTED / PROPOSAL BRANCH
+- Status: OWNER-DIRECTED / GOLDEN BASELINE CANDIDATE / PROPOSAL BRANCH
 - Parent: POINT-0/GOLDEN
 - Input: IN-130
 - Output: OUT-129
@@ -55,9 +55,9 @@ POINT-0/GOLDEN یک marker روی همان ریشهٔ canonical POINT-0 است،
 - Only two workflows carry write permissions: the owner-controlled RAHM promotion App workflow (contents/pull-requests, to create bot PRs to CHILD only) and portable release publisher (contents:write only for stable release assets; no git push/commit to main). Other workflow paths are read-only.
 - Legacy scripts/host_adapter_github_worker.py is disabled and exits before any GitHub API call.
 - control-plane/controller.py is read-only with respect to GitHub; it writes only local runner artifacts.
-- The active docs and host entry prompts are being aligned to supersede old host-intake and branch-write language.
+- The active docs and host entry prompts have been aligned on this proposal branch to supersede old host-intake and branch-write language.
 - Repository collaborator/installed-App/deploy-key inventory was not accessible through the connected integration; this audit remains NOT VERIFIED.
-- The GitHub connection is authenticated as the repository owner and has admin/push access on this repository. That connection does not itself create a separate GitHub App/bot identity or expose every GitHub admin mutation.
+- The GitHub connection is authenticated as the repository owner and has admin/push access on this repository. It is the owner's connector, not a Host Node credential; it does not create a separate GitHub App/bot identity or expose every GitHub admin mutation. Do not share it with host sessions. RAHM private-repo access is not granted.
 
 ## Open operational gates (all linked to NEXT-051)
 
@@ -73,7 +73,7 @@ POINT-0/GOLDEN یک marker روی همان ریشهٔ canonical POINT-0 است،
 
 ## Status interpretation
 
-Architecture baseline: REGISTERED / PROPOSAL BRANCH.
+Architecture baseline: OWNER-DIRECTED / PROPOSAL BRANCH; main merge and read-back pending.
 Design approval: OWNER-GRANTED IN CHAT.
 Operational enforcement: PARTIAL / OPEN.
 Security verified: NO.
