@@ -46,7 +46,7 @@ class PointerDiscoveryTests(unittest.TestCase):
         self.assertEqual(result["status"], "CONSISTENT")
 
     def test_historical_recovery_verifier_does_not_compete_with_live_overlay_pointer(self):
-        manifest, verifier, portable, _ = inputs(verifier_id="CURRENT-109")
+        manifest, verifier, portable, _ = inputs(verifier_id="CURRENT-109", portable_id="CURRENT-150.01")
         registry = {
             "0.0 registry": "> **CURRENT POINT-0++:** [CURRENT-150](docs/0.0/anchors/CURRENT-150.md)\n- CURRENT-065 remains current in an older historical note.",
             "integration queue": "## Current continuation pointer — POINT-0/GOLDEN / CURRENT-150 / NEXT-051",
@@ -60,8 +60,22 @@ class PointerDiscoveryTests(unittest.TestCase):
         historical = [d for d in result["declarations"] if d["scope"] == "historical_recovery_test"]
         self.assertEqual([d["current_id"] for d in historical], ["CURRENT-109"])
 
+    def test_decimal_revision_resolves_to_fixed_current_family(self):
+        manifest, verifier, portable, _ = inputs(verifier_id="CURRENT-109", portable_id="CURRENT-150.01")
+        registry = {
+            "0.0 registry": "> **CURRENT POINT-0++:** [CURRENT-150.01](docs/0.0/anchors/PALANG-0.0-CURRENT-20261122-150-REVISION-01-STABLE-ANCHOR-IDENTITY-LOCK.md)",
+            "integration queue": "## Current continuation pointer — POINT-0/GOLDEN / CURRENT-150.01 / NEXT-051.01",
+            "reference index": "> **CURRENT POINT-0++:** [CURRENT-150.01](docs/0.0/anchors/PALANG-0.0-CURRENT-20261122-150-REVISION-01-STABLE-ANCHOR-IDENTITY-LOCK.md)",
+        }
+        result = MODULE.discover_from_texts(manifest, verifier, portable, registry)
+        self.assertEqual(result["status"], "SCOPED_CONSISTENT")
+        self.assertEqual(result["scopes"]["overlay_recovery_current"], ["CURRENT-066"])
+        self.assertEqual(result["scopes"]["global_project_current"], ["CURRENT-150"])
+        self.assertEqual(result["candidate_ids"], ["CURRENT-066", "CURRENT-150"])
+        self.assertFalse(result["winner_selected"])
+
     def test_authoritative_registry_header_supersedes_older_live_claims(self):
-        values = inputs()
+        values = inputs(portable_id="CURRENT-150.01")
         registry = {
             "0.0 registry": "> **CURRENT POINT-0++:** [CURRENT-150](docs/0.0/anchors/CURRENT-150.md)\\n- CURRENT-065 remains current; this is historical text.",
         }
@@ -81,7 +95,7 @@ class PointerDiscoveryTests(unittest.TestCase):
 
 
     def test_scoped_overlay_and_global_current_are_consistent(self):
-        manifest, verifier, portable, _ = inputs()
+        manifest, verifier, portable, _ = inputs(portable_id="CURRENT-072")
         registry = {
             "0.0 registry": "- Current continuation: [CURRENT-072](docs/0.0/anchors/CURRENT-072.md)",
             "integration queue": "- Current point: [CURRENT-072](docs/0.0/anchors/CURRENT-072.md)",
@@ -94,7 +108,7 @@ class PointerDiscoveryTests(unittest.TestCase):
         self.assertFalse(result["winner_selected"])
 
     def test_latest_live_claim_supersedes_historical_registry_claim(self):
-        values = inputs()
+        values = inputs(portable_id="CURRENT-072")
         registry = {
             "0.0 registry": "- CURRENT-065 remains current; historical notes preserved.\n- Current continuation: CURRENT-072.",
             "integration queue": "- Current point: CURRENT-072.",

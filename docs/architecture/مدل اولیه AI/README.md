@@ -1,3 +1,13 @@
+## Stable continuation pointer (candidate)
+
+- Canonical root/baseline: POINT-0/GOLDEN.
+- Stable current family: CURRENT-150; candidate revision: [CURRENT-150.01](../../0.0/anchors/PALANG-0.0-CURRENT-20261122-150-REVISION-01-STABLE-ANCHOR-IDENTITY-LOCK.md).
+- Stable sole queue: NEXT-051; candidate revision: NEXT-051.01.
+- Existing CURRENT-151 / POINT-0/089 remains historical transition evidence; no file or ID is deleted.
+- [Stable anchor revision policy](../../0.0/anchors/POINT-0-STABLE-ANCHOR-AND-REVISION-POLICY-2026-11-22.md).
+
+---
+
 # مدل اولیهٔ هوش مصنوعی — HAIF
 
 این پوشه، نقطهٔ شروع رسمی توسعهٔ محصول Future AI / Palang Footprint است. از اینجا به بعد، تغییرات مدل اولیه باید بر مبنای سند مرجع مادر و صف گام‌های بعدی انجام شوند.

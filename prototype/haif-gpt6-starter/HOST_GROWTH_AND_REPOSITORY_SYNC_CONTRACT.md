@@ -2,7 +2,7 @@
 
 - Living master: 1.8.2
 - Package version: 0.5.1 candidate
-- Current chain: POINT-0/GOLDEN → CURRENT-150 → POINT-0/089 → IN-133 → OUT-132 → EVT-0320 → TIME-BINDING-EVT-0320 → CURRENT-151 → NEXT-051
+- Current chain: POINT-0/GOLDEN → CURRENT-150 → IN-134 → OUT-133 → EVT-0321 → TIME-BINDING-EVT-0321 → CURRENT-150.01 → NEXT-051.01
 - Master access for hosts: PUBLIC READ ONLY; no direct or indirect host write path.
 - RAHM: central, private, owner-only, outside host workspaces; only owner-commanded export is permitted.
 - Child promotion: trusted bot-authored PR plus owner review; no auto-merge.
