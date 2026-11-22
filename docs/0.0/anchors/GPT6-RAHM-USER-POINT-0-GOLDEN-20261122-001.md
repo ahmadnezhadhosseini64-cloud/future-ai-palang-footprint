@@ -62,7 +62,7 @@ GitHub نویسندهٔ PR را از تأیید PR خودش منع می‌کند
 
 - main protected=true و Ruleset PROTECT-MAIN-BRANCH64 / 27814009 active.
 - قواعد فعال: PR required، deletion blocked، non-fast-forward blocked؛ bypass actors خالی و current_user_can_bypass=never.
-- Workflow audit: تنها owner-controlled RAHM promotion workflow مجوز App برای contents/pull-requests write دارد و فقط PR بات به CHILD می‌سازد؛ portable package workflow محتوا را فقط برای انتشار release پایدار می‌نویسد و هیچ commit/push به main انجام نمی‌دهد؛ سایر مسیرهای بررسی و کنترل read-only هستند.
+- Workflow audit: فقط دو workflow مجوز repository-content write دارند: RAHM promotion App برای ساخت branch/PR بات به CHILD، و portable package publisher فقط برای انتشار assetهای release پایدار (بدون git commit/push به main). دو workflow دیگر فقط pages:write و id-token:write برای deploy به GitHub Pages دارند. سایر workflowها read-only هستند. هیچ‌یک از این مجوزها به میزبان واگذار نشده است.
 - legacy host adapter disabled/fail-closed؛ execution controller read-only؛ local event adapter فقط SQLite محلی دارد و producer_connected=false و repository_write=NOT_IMPLEMENTED گزارش می‌کند.
 - Host Registry schema 1.1.0 معتبر و Registry خالی است؛ هیچ میزبان واقعی ACTIVE نیست.
 - بستهٔ قابل‌انتقال در baseline با run 44964480412، SHA-256 بالا، CRC، source-byte read-back، extracted tests و durable release publication تأیید شده است؛ clean-host import/recovery هنوز NOT RUN است.
