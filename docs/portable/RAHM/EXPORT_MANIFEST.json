@@ -631,6 +631,20 @@
     "parent_accepted": "CURRENT-150.02 / NEXT-051.02",
     "pr": 145,
     "main_modified": false,
-    "mother_version": "1.8.4"
+    "mother_version": "1.8.4",
+    "portable_conformance_run": 45079525825,
+    "prospective_merge_sha": "37807c0d3d8c077f3d4e88d4a67bcc332fc6aaab",
+    "pr_head_sha": "cfb43377ae7551b73b6fdf536e83564bbd40e6b5",
+    "latest_chain_reconstruction": "PASS",
+    "in_out_recovery_equivalence": "PASS",
+    "stable_sha256_files": "47/47 MATCH",
+    "live_reference_sha256_observations": 266,
+    "rahm_zip_sha256": "e34577774e45f69bd3fd2d740540f1bc7b3e70dc4c18d9b2ab4f426a24dcc66b",
+    "starter_zip_sha256": "6b356e1503bf9c9404784e8d576d647f993ec6e3b89e6d32aba47954a5df5c60",
+    "extracted_starter_tests": "24 PASS",
+    "living_master_mirror": "BYTE_FOR_BYTE_MATCH",
+    "living_architecture_audit": "PENDING_FRESH_EXACT_HEAD_RUN",
+    "durable_release": "SKIPPED_ON_PULL_REQUEST",
+    "independent_host_acceptance": "NOT_RUN"
   }
 }
