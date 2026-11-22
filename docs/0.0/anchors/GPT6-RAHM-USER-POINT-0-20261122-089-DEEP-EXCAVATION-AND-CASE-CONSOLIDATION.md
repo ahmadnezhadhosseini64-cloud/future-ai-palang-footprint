@@ -54,7 +54,7 @@ The ten existing GitHub Issues #114–#123 remain the ten independent case recor
 
 ## Current capability and honest limits
 
-- Golden branch is 217 commits ahead and 26 behind main at the last comparison. Main SHA observed: 30d1d3b2de09078131fa3c8a0ff7c492a7ab0d7e. Main is not modified by this work.
+- Golden and main remain DIVERGED; read exact ahead/behind counts from the live branch comparison, not from a static checkpoint. Main SHA observed: 30d1d3b2de09078131fa3c8a0ff7c492a7ab0d7e. Main is not modified by this work.
 - The prior exact-main Portable RAHM Conformance failure was traced to stale package pins and corrected in the CURRENT-151 candidate. PR candidate SHA bf7e7ab3fc79e598bf5456605dae2bfa75ef929c passed Portable RAHM Conformance run 45020163367 and Living Architecture Audit run 45020163375. The 24 Starter tests, 31 architecture/governance tests, package digest/inventory, paired-master byte read-back, ZIP extraction and artifact round-trip passed. PR #137 merged to Golden as 41487c7ddab3a7847e569e2fe3ac5d2d69fcca87; a fresh run on the exact post-merge Golden HEAD is pending. Release publication was skipped because the run was a PR. Independent real-host recovery and automatic live ChatGPT capture remain NOT RUN / NOT PROVEN.
 - Source-level corrections, issue updates, test design and PR preparation can be advanced in this connected repository. Actual private hosting, GitHub App installation, OAuth broker, remote MCP service, OpenAI API project/key, secure secret configuration, ruleset enforcement and independent-host runtime require actual owner-side setup and direct receipts.
 - No host is ACTIVE until identity, isolated workspace, persistence, recovery and negative isolation tests are independently proven.
