@@ -1,12 +1,12 @@
 # Portable Living Master Reference — POINT-0/GOLDEN
 
-- Version / نسخه: 1.7.95
+- Version / نسخه: 1.7.96
 - Package version: 0.5.1 candidate (same stable package ID and canonical ZIP filename)
-- Current chain: POINT-0/GOLDEN → IN-130 → OUT-129 → EVT-0309 → TIME-BINDING-EVT-0309 → CURRENT-140 → NEXT-051
+- Current chain: POINT-0/GOLDEN → IN-130 → OUT-129 → EVT-0309 → TIME-BINDING-EVT-0309 → CURRENT-140 → EVT-0310 → TIME-BINDING-EVT-0310 → CURRENT-141 → EVT-0311 → TIME-BINDING-EVT-0311 → CURRENT-142 → EVT-0312 → TIME-BINDING-EVT-0312 → CURRENT-143 → EVT-0313 → TIME-BINDING-EVT-0313 → CURRENT-144 → EVT-0314 → TIME-BINDING-EVT-0314 → CURRENT-145 → EVT-0315 (mirror-only) → NEXT-051
 - Canonical root: one existing POINT-0 root; this file is a portable pointer, not a second master.
 - Governing source: ../../docs/architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md
 - Golden baseline: ../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md
-- Current checkpoint: ../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261122-140-GOLDEN-BASELINE.md
+- Current checkpoint: ../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261122-145-POINT-0-PLUSPLUS-PARTNER-BRIDGE-BOOTSTRAP.md
 - Sole active queue: ../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md
 - Reference Index: ../../docs/REFERENCE_INDEX.md
 

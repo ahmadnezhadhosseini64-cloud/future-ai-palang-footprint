@@ -79,3 +79,12 @@ All listed runs report exact tested `head_sha = 81c4b8687ad2de61e900c84505922a82
 - Portable RAHM Conformance and Digest Evidence run `44996828722` FAILED on the same exact SHA. The workflow synchronized canonical mother v1.7.96 into the starter package, while `prototype/haif-gpt6-starter/manifest.json` and `test_engine.py` still expected v1.7.95. The failing test was `test_response_protocol_preserves_same_zip_identity_and_open_host_gates`; package rebuild and downstream artifact round-trip/release steps were skipped.
 - The failed run's partial artifact is preserved as evidence only: artifact `14744411091`, SHA-256 `825e007bee8abbf0baee72fbc99b3cea3fe7b02770c54beae2de1ac5bb929864`. It is NOT an accepted or verified package.
 - Corrective PR #126 aligns the starter manifest, version assertions and README with living mother v1.7.96 while retaining package version 0.5.1, the existing stable package identity and canonical ZIP filename. The package remains CANDIDATE until the exact post-merge main SHA passes Portable RAHM Conformance, extracted tests, digest, artifact round-trip and release verification.
+
+
+### Additional correction — checked-in portable master pointer
+
+- The first package-alignment correction updated manifest/test/README expectations to v1.7.96. PR-branch Living Architecture Audit `44997366567` then exposed one remaining stale checked-in source file: `prototype/haif-gpt6-starter/LIVING_MASTER_REFERENCE.md` still declared v1.7.95 and CURRENT-140.
+- The failing test remained `test_response_protocol_preserves_same_zip_identity_and_open_host_gates`; it reads the checked-in portable master pointer during the repository audit, before the package workflow's build-time synchronization step.
+- RAHM Security and Promotion Conformance run `44997366616` passed on exact branch SHA `b287b89ca0cff2870ad82994d0cf894c92f8c00c`; the Living Architecture Audit did not pass on that SHA.
+- The same PR #127 now also updates the checked-in portable master pointer to v1.7.96 and CURRENT-145 while retaining package version 0.5.1 and the same stable package identity/ZIP filename.
+- The package and final main SHA remain unverified until post-merge Living Architecture Audit and Portable RAHM Conformance pass on the exact same final main SHA.
