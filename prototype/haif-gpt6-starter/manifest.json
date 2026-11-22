@@ -218,7 +218,14 @@
     "EVT-0309",
     "TIME-BINDING-EVT-0309",
     "CURRENT-140",
-    "NEXT-051 (sole active queue)"
+    "NEXT-051 (sole active queue)",
+    "CURRENT-149",
+    "POINT-0/088",
+    "IN-132",
+    "OUT-131",
+    "EVT-0319",
+    "TIME-BINDING-EVT-0319",
+    "CURRENT-150"
   ],
   "entrypoint": "engine.py",
   "host_instructions": "GPT6_HOST_INSTRUCTIONS.md",
@@ -336,8 +343,8 @@
   "one_message_host_bootstrap": "ONE_MESSAGE_HOST_BOOTSTRAP_FA.md",
   "host_bootstrap_message": "ONE_MESSAGE_HOST_BOOTSTRAP_FA.md",
   "independent_host_bootstrap": "ONE_MESSAGE_HOST_BOOTSTRAP_FA.md",
-  "current_continuation_chain": "POINT-0/GOLDEN → IN-130 → OUT-129 → EVT-0309 → TIME-BINDING-EVT-0309 → CURRENT-140 → NEXT-051",
-  "current_living_master_version": "1.7.95",
+  "current_continuation_chain": "POINT-0/GOLDEN → CURRENT-149 → POINT-0/088 → IN-132 → OUT-131 → EVT-0319 → TIME-BINDING-EVT-0319 → CURRENT-150 → NEXT-051",
+  "current_living_master_version": "1.8.0",
   "current_internal_version": "0.5.1",
   "universal_host_entry": "UNIVERSAL_AI_HOST_ENTRY_FA.md",
   "features": [
