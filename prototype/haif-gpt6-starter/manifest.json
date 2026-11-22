@@ -2,8 +2,8 @@
   "package_schema": "haif-gpt6-starter/0.1",
   "stable_id": "HAIF-GPT6-PORTABLE-STARTER-20261025-004",
   "production_id": "HAIF-G6PS-20261025-004",
-  "version": "0.5.0",
-  "supersedes": "0.4.9",
+  "version": "0.5.1",
+  "supersedes": "0.5.0",
   "project": "Future AI / Palang Footprint",
   "canonical_repository": "https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint",
   "parent_architecture": [
@@ -211,7 +211,14 @@
     "EVT-0302",
     "TIME-BINDING-EVT-0302",
     "CURRENT-135",
-    "NEXT-051 (sole active queue; host-position synchronization and clean-host recovery)"
+    "NEXT-051 (sole active queue; host-position synchronization and clean-host recovery)",
+    "POINT-0/GOLDEN (single canonical root baseline)",
+    "IN-130",
+    "OUT-129",
+    "EVT-0309",
+    "TIME-BINDING-EVT-0309",
+    "CURRENT-140",
+    "NEXT-051 (sole active queue)"
   ],
   "entrypoint": "engine.py",
   "host_instructions": "GPT6_HOST_INSTRUCTIONS.md",
@@ -332,5 +339,12 @@
   "current_continuation_chain": "POINT-0/081 → CURRENT-134 → POINT-0/082 (0++) → IN-125 → OUT-124 → EVT-0302 → TIME-BINDING-EVT-0302 → CURRENT-135 → NEXT-051",
   "current_living_master_version": "1.7.89",
   "current_internal_version": "0.5.0",
-  "universal_host_entry": "UNIVERSAL_AI_HOST_ENTRY_FA.md"
+  "universal_host_entry": "UNIVERSAL_AI_HOST_ENTRY_FA.md",
+  "features": [
+    "POINT-0 golden baseline with forward-only continuity and historical precedence",
+    "central owner-only RAHM outside every host workspace",
+    "no direct or indirect host write route to canonical master or RAHM",
+    "owner-commanded host monitoring and export with provenance and redaction",
+    "bot-authored Child PR with owner approval; no auto-merge or automatic Master promotion"
+  ]
 }
