@@ -61,9 +61,11 @@ class PointerDiscoveryTests(unittest.TestCase):
         self.assertEqual([d["current_id"] for d in historical], ["CURRENT-109"])
 
     def test_authoritative_registry_header_supersedes_older_live_claims(self):
-        values = inputs()
+        values = inputs(portable_id="CURRENT-150")
         registry = {
             "0.0 registry": "> **CURRENT POINT-0++:** [CURRENT-150](docs/0.0/anchors/CURRENT-150.md)\\n- CURRENT-065 remains current; this is historical text.",
+            "integration queue": "## Current continuation pointer — POINT-0/GOLDEN / CURRENT-150 / NEXT-051",
+            "reference index": "> **CURRENT POINT-0++:** [CURRENT-150](docs/0.0/anchors/CURRENT-150.md)",
         }
         result = MODULE.discover_from_texts(values[0], values[1], values[2], registry)
         self.assertEqual(result["scopes"]["global_project_current"], ["CURRENT-150"])
@@ -81,7 +83,7 @@ class PointerDiscoveryTests(unittest.TestCase):
 
 
     def test_scoped_overlay_and_global_current_are_consistent(self):
-        manifest, verifier, portable, _ = inputs()
+        manifest, verifier, portable, _ = inputs(portable_id="CURRENT-072")
         registry = {
             "0.0 registry": "- Current continuation: [CURRENT-072](docs/0.0/anchors/CURRENT-072.md)",
             "integration queue": "- Current point: [CURRENT-072](docs/0.0/anchors/CURRENT-072.md)",
