@@ -114,7 +114,12 @@ for p in source_files:
             if not target or target.startswith("#"): continue
             u = urlparse(target)
             if u.scheme or u.netloc or not u.path: continue
-            candidate = (p.parent / unquote(u.path)).resolve()
+            # The starter's living-master file is a byte-identical mirror of the
+            # canonical mother. Resolve its relative links from the source folder.
+            link_base = p.parent
+            if relpath == "prototype/haif-gpt6-starter/LIVING_MASTER_REFERENCE.md":
+                link_base = ROOT / "docs/architecture/مدل اولیه AI"
+            candidate = (link_base / unquote(u.path)).resolve()
             try: resolved = candidate.relative_to(ROOT).as_posix()
             except ValueError: continue
             edge = {"source": relpath, "target": target, "resolved_path": resolved, "exists": candidate.exists()}
