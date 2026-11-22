@@ -1,10 +1,10 @@
 ## Current main observation — 2026-11-22
 
 - Main HEAD at run start: `81c4b8687ad2de61e900c84505922a823ac265a1`; Git commit UTC `2026-11-22T03:10:24Z` / Tehran `2026-11-22T06:40:24+03:30`.
-- Canonical root: POINT-0/GOLDEN (single POINT-0 root); latest main user-turn event EVT-0314; current checkpoint CURRENT-145; sole active queue NEXT-051.
+- Canonical root: POINT-0/GOLDEN (single POINT-0 root); latest main user-turn event EVT-0314; user-turn execution checkpoint CURRENT-145; separate global 0.0 chain remains at CURRENT-140 in docs/0.0/README.md; sole active queue NEXT-051.
 - Latest mirror-only recheck: [EVT-0315](../BEHAVIOR-TRACE/EVT-0315-LIVE-MIRROR-SYNC-RECHECK-2026-11-22.md) / [TIME-BINDING-EVT-0315](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0315-LIVE-MIRROR-SYNC-RECHECK-2026-11-22.md), registered on proposal branch `mirror-sync/evt-0315-20261122`. This does not create NEXT-052 or change the current user-turn chain.
 - Source blob de1b75f07241c9b313e476af5f1417177ff78c10 is unchanged; Library v7 normalized match with one extra terminal LF; no source or Library write.
-- CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; Issues #20/#21 OPEN; BOART-FOLLOWUP-01 ACTIVE. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external-host recovery NOT RUN.
+- CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; initial PR-head Audit 44995087180 exposed and retained the Behavior Trace Index CURRENT-140 marker regression; RAHM 44995087173 passed on the same SHA; correction and rerun are pending; Issues #20/#21 OPEN; BOART-FOLLOWUP-01 ACTIVE. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external-host recovery NOT RUN.
 
 ---
 

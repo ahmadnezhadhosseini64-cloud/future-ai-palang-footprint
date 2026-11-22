@@ -3,7 +3,7 @@
 - Event ID: EVT-0315
 - Stable ID: PALANG-EVT-0315-LIVE-MIRROR-SYNC-2026-11-22
 - Production ID: HAIF-EVT-0315
-- Version: 1.0.0
+- Version: 1.0.1
 - Type: MIRROR-ONLY / NO-NEW-ROOT / NO-NEW-CHECKPOINT / NO-NEW-NEXT
 - Status: REGISTERED ON OWNER-CONTROLLED PROPOSAL BRANCH / PENDING PROMOTION
 - Run observation UTC: `2026-11-22T06:26:57Z`; Asia/Tehran: `2026-11-22T09:56:57+03:30`. This is the scheduled-run observation context, not a Git commit, Actions, Library metadata, or exact Library read-operation time.
@@ -20,7 +20,7 @@
 - Current execution checkpoint: [CURRENT-145](../../0.0/anchors/PALANG-0.0-CURRENT-20261122-145-POINT-0-PLUSPLUS-PARTNER-BRIDGE-BOOTSTRAP.md).
 - Sole active queue: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). NEXT-052 is not created.
 - Current canonical continuation master: `docs/reference/REFERENCE-DOCUMENTS/CURRENT-CANONICAL-CONTINUATION-MASTER-REFERENCE-2026-10-21-001.md`, Version 1.0.14.
-- Behavior Trace Index at run start: Version 1.0.46. Reference Index top pointer still named CURRENT-144; CURRENT-145 exists on main. Integration Queue retains the POINT-0/GOLDEN baseline and sole NEXT-051.
+- Behavior Trace Index at run start: Version 1.0.46. The global 0.0 chain in `docs/0.0/README.md` remains POINT-0/GOLDEN → IN-130 → OUT-129 → EVT-0309 → TIME-BINDING-EVT-0309 → CURRENT-140 → NEXT-051. The separate latest user-turn execution checkpoint is CURRENT-145 under the same POINT-0/GOLDEN root; neither scope is inferred to replace the other. Reference Index top pointer at run start named CURRENT-144; CURRENT-145 exists on main. Integration Queue retains the POINT-0/GOLDEN baseline and sole NEXT-051.
 - Latest previous mirror-only event: [EVT-0290-LIVE-MIRROR-SYNC-RECHECK](./EVT-0290-LIVE-MIRROR-SYNC-RECHECK-2026-11-21.md) and its time binding. The tree also contains a separate EVT-0290 current-chat-anchor file; both historical records are preserved and are not conflated here.
 - Existing Palang Mirror Sync automation was independently found and is enabled. No duplicate automation was created or enabled/disabled by this run.
 
@@ -48,7 +48,14 @@
 - Issues [#20](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/20) and [#21](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/21) were independently fetched and remain OPEN.
 - BOART-FOLLOWUP-01 remains ACTIVE.
 
-## 4. Latest relevant Actions evidence at run start
+## 4. PR-head audit finding and corrective action
+
+- Initial PR-head Living Architecture Audit run 44995087180 tested exact SHA `45f9be8ed1165235552cf2ca1266f91662164d3b` and FAILED at `Verify latest global current chain separately from overlay-pointer recovery`.
+- Exact failure: `behavior_index_missing_CURRENT-140`. The first index update replaced the global 0.0 chain block (EVT-0309 / CURRENT-140) with the separate user-turn continuation (EVT-0314 / CURRENT-145), accidentally removing a required historical/global-chain marker. This was an index-scope regression; it did not indicate source or Library drift.
+- RAHM Security and Promotion Conformance run 44995087173 tested the same exact SHA `45f9be8ed1165235552cf2ca1266f91662164d3b` and PASSED.
+- Correction: restore the complete global 0.0 chain EVT-0309 / CURRENT-140 in the Behavior Trace Index; add a separate user-turn continuation section for EVT-0314 / CURRENT-145; retain EVT-0315 as a separate mirror-only event. The pointer ambiguity remains explicit and no winner is selected.
+
+## 5. Latest relevant Actions evidence at run start
 
 All run IDs below were independently read from GitHub Actions and are paired with their exact tested SHA.
 
@@ -65,7 +72,7 @@ All run IDs below were independently read from GitHub Actions and are paired wit
 - Living Architecture Audit is PASS on the exact run-start main HEAD.
 - No RAHM Security/Promotion Conformance run for exact SHA `81c4b8687ad2de61e900c84505922a823ac265a1` was found in the inspected latest Actions results. The most recent RAHM success above tested its explicitly listed parent SHA; it is not promoted to current-HEAD evidence.
 
-## 5. Governance and destination status
+## 6. Governance and destination status
 
 - Main is protected. Repository ruleset 27814009 is ACTIVE and requires a pull request; bypass actors are empty. This run uses an owner-controlled proposal branch and PR rather than a direct main write. No automatic merge is performed by this event.
 - Buffer: NOT VERIFIED.
@@ -74,7 +81,7 @@ All run IDs below were independently read from GitHub Actions and are paired wit
 - External independent-host / end-to-end recovery: NOT RUN.
 - Repository and Library evidence applies only to this exact source/mirror artifact; no other destination inherits its status.
 
-## 6. Registration boundary and next deterministic action
+## 7. Registration boundary and next deterministic action
 
 - Proposal branch: `mirror-sync/evt-0315-20261122`, based on the independently read main SHA `81c4b8687ad2de61e900c84505922a823ac265a1`.
 - Event/index registration commit (GitHub metadata): `e9737b6721a73a6f92f7fcc86974a9327dfd9c6d`, committer UTC `2026-11-22T06:41:11Z`, derived Tehran `2026-11-22T10:11:11+03:30`. This is the commit that introduced EVT-0315 and the four index reconciliations. Main remains unchanged until owner-controlled promotion.

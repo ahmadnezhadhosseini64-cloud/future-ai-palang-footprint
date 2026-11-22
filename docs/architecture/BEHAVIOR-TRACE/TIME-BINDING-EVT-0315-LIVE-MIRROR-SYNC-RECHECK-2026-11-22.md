@@ -19,5 +19,7 @@
 - Actions run times are separate from commit times; exact tested SHAs are recorded in EVT-0315.
 - Buffer/Persistent Memory: NOT VERIFIED. Dropbox: OPEN / NOT VERIFIED. External independent-host recovery: NOT RUN.
 - Time-binding artifact initial write commit: `9ee6015b5f1bf7982ca39e309a2670861c259de3`; GitHub committer UTC `2026-11-22T06:42:58Z`; derived Tehran `2026-11-22T10:12:58+03:30`.
+- PR-head Audit run 44995087180 tested exact SHA `45f9be8ed1165235552cf2ca1266f91662164d3b` and FAILED with `behavior_index_missing_CURRENT-140` after the first index edit conflated global chain CURRENT-140 with user-turn checkpoint CURRENT-145. RAHM run 44995087173 PASSED on that same exact SHA.
+- Corrective action: restore the global chain markers from `docs/0.0/README.md` and keep the user-turn continuation as a separate section; rerun the Living Architecture Audit on the corrected branch head.
 - The time-binding artifact's own final correction commit is intentionally not self-referenced. Its exact SHA and committer timestamp are taken from GitHub commit metadata after the write; that metadata, not the run observation time, is canonical for the final time-binding write.
 - Status: BOUND / EVENT-INDEX REGISTRATION COMMIT VERIFIED / TIME-BINDING READ-BACK VERIFIED.

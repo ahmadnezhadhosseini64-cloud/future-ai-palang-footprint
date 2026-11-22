@@ -2,11 +2,11 @@
 
 - Stable ID: HUMAN-AI-INTERACTION-BEHAVIOR-OBSERVATORY-2026-10-22-001
 - Production ID: HAIBO-HAIF-2026-10-22-001
-- Version: 1.0.30
+- Version: 1.0.31
 - Owner: احمد پلنگ / Ahmad Nezhadhosseini
 - Project: Future AI / Palang Footprint / HAIF
 - Canonical path: `docs/architecture/BEHAVIOR-OBSERVATORY/README.md`
-- Status: ACTIVE / LIVING in repository; canonical root POINT-0/GOLDEN on the single POINT-0 root; latest main user-turn event EVT-0314; current checkpoint CURRENT-145; sole active queue NEXT-051. Latest mirror-only event EVT-0315 is registered on proposal branch `mirror-sync/evt-0315-20261122`, with main promotion pending. Source blob de1b75f07241c9b313e476af5f1417177ff78c10 unchanged; Library stable ID libfile_7ac3c9a6ec14819198eb2751e204aa48 version 7 read back at 10,480 chars versus source 10,479, one extra terminal LF only; semantic match PASS within tolerance; no source or Library write. Main HEAD at run start 81c4b8687ad2de61e900c84505922a823ac265a1; Living Architecture Audit 44979406467 and Evidence Gate 44979406557 PASS on that exact SHA; no exact-head RAHM run found. CURRENT-065/CURRENT-066 and overlay-manifest lineage OPEN / AMBIGUOUS; Issues #20/#21 OPEN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
+- Status: ACTIVE / LIVING in repository; canonical root POINT-0/GOLDEN on the single POINT-0 root; latest main user-turn event EVT-0314; current user-turn execution checkpoint CURRENT-145; separate global 0.0 chain checkpoint CURRENT-140 remains in docs/0.0/README.md; sole active queue NEXT-051. Latest mirror-only event EVT-0315 is registered on proposal branch `mirror-sync/evt-0315-20261122`, with main promotion pending. Source blob de1b75f07241c9b313e476af5f1417177ff78c10 unchanged; Library stable ID libfile_7ac3c9a6ec14819198eb2751e204aa48 version 7 read back at 10,480 chars versus source 10,479, one extra terminal LF only; semantic match PASS within tolerance; no source or Library write. Main HEAD at run start 81c4b8687ad2de61e900c84505922a823ac265a1; Living Architecture Audit 44979406467 and Evidence Gate 44979406557 PASS on that exact SHA; no exact-head RAHM run found. CURRENT-065/CURRENT-066 and overlay-manifest lineage OPEN / AMBIGUOUS; Issues #20/#21 OPEN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
 - Time rule: UTC is canonical; Asia/Tehran time is derived from the same UTC instant (+03:30 for this date). Unknown timestamps remain UNKNOWN, never guessed.
 - Independent anchor: `PALANG-BEHAVIOR-OBSERVATION-AND-RECOVERY-TEST-2026-10-22-001`
 - Related event: `EVT-0034`
