@@ -8,7 +8,7 @@
 - Point marker: [POINT-0-GOLDEN-CHAT-CONTINUATION-2026-11-23-001](../../0.0/anchors/POINT-0-GOLDEN-CHAT-CONTINUATION-2026-11-23-001.md)
 - Time binding: TIME-BINDING-EVT-0323
 - Current revision: CURRENT-150.03
-- Sole queue revision: NEXT-051.03
+- Sole queue revision: [NEXT-051.03](../../0.0/anchors/PALANG-0.0-NEXT-20261123-051-REVISION-03-EXECUTION-CONTINUATION.md)
 - Owner: @ahmadnezhadhosseini64-cloud
 
 ## رویداد
@@ -38,3 +38,9 @@ ACTIVE / LIVING / EXECUTION-IN-PROGRESS. ایجاد نشانگر و ثبت رو�
 ## زمان
 
 زمان دقیق پیام مالک UNKNOWN است. زمان ثبت رویداد فقط با metadata واقعی commit در TIME-BINDING-EVT-0323 ثبت می‌شود. UTC مبنای دائمی است و زمان تهران از همان لحظه مشتق خواهد شد.
+
+## Complete canonical navigation
+
+- [POINT-0/GOLDEN](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md) · [IN-136](../../0.0/anchors/PALANG-0.0-IN-20261123-136-CHAT-POINT0-CONTINUATION.md) · [OUT-135](../../0.0/anchors/PALANG-0.0-OUT-20261123-135-CHAT-POINT0-CONTINUATION.md)
+- [CURRENT-150.03](../../0.0/anchors/PALANG-0.0-CURRENT-20261123-150-REVISION-03-CHAT-POINT0-CONTINUATION.md) · [NEXT-051.03](../../0.0/anchors/PALANG-0.0-NEXT-20261123-051-REVISION-03-EXECUTION-CONTINUATION.md)
+- Historical mirror: [EVT-0241](EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) · [TIME-BINDING-EVT-0241](TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md)
