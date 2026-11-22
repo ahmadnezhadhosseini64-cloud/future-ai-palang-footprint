@@ -3,9 +3,9 @@ name: Living Architecture Audit
 
 on:
   push:
-    branches: [main]
+    branches: [main, 'governance/point-0-golden-baseline-20261122']
   pull_request:
-    branches: [main]
+    branches: [main, 'governance/point-0-golden-baseline-20261122']
   schedule:
     - cron: '17 3 * * *'
   workflow_dispatch:
