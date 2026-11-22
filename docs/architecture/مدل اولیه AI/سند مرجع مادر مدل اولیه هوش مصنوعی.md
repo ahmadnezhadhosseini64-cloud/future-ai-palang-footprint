@@ -5171,3 +5171,7 @@ Ruleset فعال PROTECT-MAIN-BRANCH64 / ID 27814009، شاخهٔ main را هد
 On exact Golden merge SHA e8f909e6064806b2e450d9bc78a217b15748fb0b, Living Architecture Audit run 45048644669 and Portable RAHM Conformance run 45048644684 passed. The downloaded recovery-equivalence artifact reports RAHM-IN-OUT-LINK-EQUIVALENCE-135-134 PASS, reconstructs from IN-135 / OUT-134 and resolves CURRENT-150.02 / NEXT-051.02. The SHA inventory matched 47/47 files and 259 live references.
 
 The rebuilt starter package remains internal version 0.5.1 with the canonical filename, 19 files, 284,418 bytes and SHA-256 cbb58106a817710b657749ef7cb6dac09067f633c1dd846bd6adc33dcaf7a5e1. Extracted tests passed. Real independent-host acceptance is NOT_RUN. The durable release publish step was SKIPPED and the latest-verified release remains stale. The owner approval gate, private Partner/RAHM provisioning and independent-host recovery remain OPEN.
+
+**Current canonical continuation candidate:** `POINT-0/GOLDEN → IN-136 → OUT-135 → EVT-0323 → TIME-BINDING-EVT-0323 → CURRENT-150.03 → NEXT-051.03`
+
+CURRENT-150.02 / NEXT-051.02 remain the last accepted Golden revisions until the .03 candidate passes exact-SHA validation and controlled merge. This pointer does not change the living mother version (1.8.4) and does not claim package acceptance or independent-host recovery.
