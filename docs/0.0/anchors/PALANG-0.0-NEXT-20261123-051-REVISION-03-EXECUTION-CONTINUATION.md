@@ -1,0 +1,31 @@
+# NEXT-051.03 — ادامهٔ اجرایی صف یگانهٔ پروژه
+
+- Stable queue ID: NEXT-051
+- Revision: 051.03
+- Status: ACTIVE / LIVING / GOLDEN-BRANCH-CANDIDATE
+- Parent: [NEXT-051.02](PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
+- Current: [CURRENT-150.03](PALANG-0.0-CURRENT-20261123-150-REVISION-03-CHAT-POINT0-CONTINUATION.md)
+- Canonical root: [POINT-0/GOLDEN](GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md)
+- Event: [EVT-0323](../../architecture/BEHAVIOR-TRACE/EVT-0323-CHAT-POINT0-CONTINUATION-2026-11-23.md)
+- Time binding: [TIME-BINDING-EVT-0323](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0323-CHAT-POINT0-CONTINUATION-2026-11-23.md)
+
+## Queue identity rule
+
+This is revision .03 of the existing sole queue NEXT-051. It does not create NEXT-052 or a parallel workstream. All prior tasks, dependencies, evidence and unresolved gates remain in the canonical queue.
+
+## Priority order — repository-backed execution first
+
+1. **Exact source and pointer reconciliation:** read the latest Golden HEAD, master version, package manifest, host-facing mirrors, current chain resolver and every affected index. Repair stale pointers additively; do not rewrite or erase history.
+2. **Portable package alignment:** keep the canonical mother as truth; synchronize manifest, package mother mirror, host instructions and tests to the current mother version and CURRENT-150.03 chain. Preserve the existing stable ZIP identity and filename. Do not downgrade the mother.
+3. **Exact-SHA verification:** run Living Architecture Audit and Portable RAHM Conformance on the exact candidate SHA; download and inspect artifacts, SHA-256 inventory, 47+ expected file inventory, all live-reference checks, ZIP CRC/extraction, extracted tests, artifact round-trip and recovery-equivalence IN/OUT/CURRENT/NEXT receipt.
+4. **Release evidence:** refresh the stable release only through an available trusted release path after exact-SHA acceptance. If the connector cannot publish releases, retain OPEN / BLOCKED with the exact limitation; do not treat an Actions artifact as a release.
+5. **Ten Partner dossiers:** keep #114–#123 individually OPEN. Advance repository-backed specifications, dependency maps, acceptance tests and read-backs. Do not claim private service, GitHub App, OAuth, remote MCP, OpenAI API, HTTPS deployment or secret provisioning without destination evidence.
+6. **Issue #20:** advance local continuity runtime, live-capture design and test harness where possible. Keep automatic ChatGPT capture and real independent-host recovery OPEN until actually observed.
+7. **Issue #21:** perform semantic source census, local-link/parent-edge and collision adjudication using deterministic inventories; preserve unresolved ambiguity and quarantined duplicates.
+8. **Governance:** re-read Ruleset and CODEOWNERS. Owner approval remains NOT ENFORCED while approvals=0 or Code Owner review=false. Do not change security settings without supported tool access and explicit owner UI action.
+9. **Host and RAHM boundary:** MASTER remains host READ ONLY; RAHM central/private/owner-only. No host credential, secret, direct write, bypass, force-sync or auto-merge.
+10. **External dependencies:** private repositories, App registration, secret manager, API project, hosting, OAuth callback and actual clean-host acceptance remain OWNER-DEPENDENT / OPEN. Buffer and Dropbox remain WAITING / DEFERRED / NON-BLOCKING.
+
+## Acceptance discipline
+
+Documented ≠ implemented; implemented ≠ tested; tested ≠ merged; merged ≠ released; package conformance ≠ independent-host recovery. Each claim needs destination-specific read-back and exact evidence. Preserve failed runs and prior receipts as historical evidence.
