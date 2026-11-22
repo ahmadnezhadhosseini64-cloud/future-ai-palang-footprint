@@ -88,13 +88,23 @@ for p in source_files:
     else:
         link_matches = ()
     for m in link_matches:
-        target = m.group(1).strip().split()[0].strip("<>")
+        raw_target = m.group(1).strip()
+        if raw_target.startswith("<") and ">" in raw_target:
+            target = raw_target[1:raw_target.index(">")]
+        else:
+            title_suffix = re.match(r"""^(.*?)(?:\s+["'][^"']*["'])$""", raw_target)
+            target = (title_suffix.group(1) if title_suffix else raw_target).strip()
         if not target or target.startswith("#"): continue
         u = urlparse(target)
         if u.scheme or u.netloc: continue
         path_part = unquote(u.path)
         if not path_part: continue
-        candidate = (p.parent / path_part).resolve()
+        # The starter's living-master file is a byte-identical mirror of the
+        # canonical mother. Resolve its relative links from the source folder.
+        link_base = p.parent
+        if p.as_posix() == "prototype/haif-gpt6-starter/LIVING_MASTER_REFERENCE.md":
+            link_base = ROOT / "docs/architecture/مدل اولیه AI"
+        candidate = (link_base / path_part).resolve()
         try: rel = candidate.relative_to(ROOT.resolve()).as_posix()
         except ValueError: continue
         links.append(target)
