@@ -55,7 +55,7 @@ POINT-0/GOLDEN یک marker روی همان ریشهٔ canonical POINT-0 است،
 - Repository-content write is limited to two workflows: the owner-controlled RAHM Promotion App (contents/pull-requests only to create bot PRs to CHILD) and the portable release publisher (contents:write only for stable release assets; no git push/commit to main). The two Pages workflows have pages:write and id-token:write only for site deployment. All other workflow paths are read-only. None of these permissions is host-facing.
 - Legacy scripts/host_adapter_github_worker.py is disabled and exits before any GitHub API call.
 - control-plane/controller.py is read-only with respect to GitHub; it writes only local runner artifacts.
-- The active docs and host entry prompts have been aligned on this proposal branch to supersede old host-intake and branch-write language.
+- Active docs and host entry prompts have been aligned on this proposal branch to supersede old host-intake and branch-write language. Owner-control-plane identity and the current GitHub connector limitations are explicitly recorded.
 - Repository collaborator/installed-App/deploy-key inventory was not accessible through the connected integration; this audit remains NOT VERIFIED.
 - The GitHub connection is authenticated as the repository owner and has admin/push access on this repository. It is the owner's connector, not a Host Node credential; it does not create a separate GitHub App/bot identity or expose every GitHub admin mutation. Do not share it with host sessions. RAHM private-repo access is not granted.
 
