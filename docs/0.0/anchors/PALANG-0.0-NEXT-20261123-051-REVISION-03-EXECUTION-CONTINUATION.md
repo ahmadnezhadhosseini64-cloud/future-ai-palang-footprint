@@ -46,3 +46,10 @@ Documented ≠ implemented; implemented ≠ tested; tested ≠ merged; merged �
 - Automatic live message capture / idle-background capture: OPEN / NOT PROVEN.
 - Graph/identity/parent/time triage, duplicate IDs and ambiguous parents: OPEN.
 - Issue #20 remains OPEN; Issue #21 remains OPEN.
+
+
+## Latest verified candidate evidence
+
+- Portable RAHM Conformance run 45079525825: SUCCESS on prospective PR merge SHA `37807c0d3d8c077f3d4e88d4a67bcc332fc6aaab` (parents Golden base d845... + PR head cfb...). Exact chain and IN/OUT recovery equivalence PASS; stable digest inventory 47/47; 266 live references observed; RAHM archive and existing starter ZIP rebuilt; all 24 extracted starter tests PASS.
+- RAHM archive SHA-256: `e34577774e45f69bd3fd2d740540f1bc7b3e70dc4c18d9b2ab4f426a24dcc66b`; starter ZIP SHA-256: `6b356e1503bf9c9404784e8d576d647f993ec6e3b89e6d32aba47954a5df5c60`.
+- Exact-head Living Architecture Audit remains pending. Durable Release refresh was skipped on PR event. Independent-host acceptance remains NOT RUN. PR #145 must not be treated as merged until owner-controlled Golden promotion.
