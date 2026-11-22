@@ -184,7 +184,13 @@ class PortablePackageProtocolTests(unittest.TestCase):
         self.assertEqual(manifest["version"], manifest["archive_policy"]["current_internal_version"])
         self.assertEqual(manifest["supersedes"], "0.5.0")
         self.assertEqual(manifest["stable_id"], "HAIF-GPT6-PORTABLE-STARTER-20261025-004")
-        self.assertEqual(manifest["current_living_master_version"], "1.7.95")
+        packaged_master = (package / "LIVING_MASTER_REFERENCE.md").read_text(encoding="utf-8")
+        master_version_line = next((line for line in packaged_master.splitlines() if line.startswith("## نسخهٔ ")), None)
+        self.assertIsNotNone(master_version_line, "packaged living master must expose its version")
+        packaged_master_version = master_version_line.split("## نسخهٔ ", 1)[1].split(" ", 1)[0]
+        self.assertEqual(manifest["current_living_master_version"], packaged_master_version)
+        self.assertIn("CURRENT-150", manifest["parent_architecture"])
+        self.assertIn("POINT-0/088", manifest["parent_architecture"])
         self.assertEqual(manifest["recovery_protocol"], "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md")
         self.assertEqual(manifest["universal_host_entry"], "UNIVERSAL_AI_HOST_ENTRY_FA.md")
         self.assertTrue((package / manifest["universal_host_entry"]).is_file())
@@ -342,7 +348,7 @@ class InteractionResponseAnchorProtocolTests(unittest.TestCase):
         self.assertEqual(manifest["archive_policy"]["canonical_filename"], "haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip")
         self.assertIn("actual host integration", protocol.casefold())
         self.assertIn("NOT VERIFIED", protocol)
-        expected_chain = "POINT-0/GOLDEN → IN-130 → OUT-129 → EVT-0309 → TIME-BINDING-EVT-0309 → CURRENT-140 → NEXT-051"
+        expected_chain = manifest["current_continuation_chain"]
         for filename in (
             "GPT6_HOST_INSTRUCTIONS.md",
             "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md",
@@ -357,8 +363,11 @@ class InteractionResponseAnchorProtocolTests(unittest.TestCase):
         self.assertIn("external build receipt", readme)
         self.assertIn("Previous verified v0.4.3 build receipt", readme)
         self.assertIn(expected_chain, readme)
-        self.assertEqual(manifest["current_living_master_version"], "1.7.95")
-        self.assertIn("POINT-0/082 (0++ marker on canonical root 0)", manifest["parent_architecture"])
+        self.assertIn("CURRENT-150", manifest["parent_architecture"])
+        self.assertIn("POINT-0/088", manifest["parent_architecture"])
         packaged_master = (root / "LIVING_MASTER_REFERENCE.md").read_text(encoding="utf-8")
-        self.assertIn("Version / نسخه: 1.7.95", packaged_master)
+        master_version_line = next((line for line in packaged_master.splitlines() if line.startswith("## نسخهٔ ")), None)
+        self.assertIsNotNone(master_version_line, "packaged living master must expose its version")
+        packaged_master_version = master_version_line.split("## نسخهٔ ", 1)[1].split(" ", 1)[0]
+        self.assertEqual(manifest["current_living_master_version"], packaged_master_version)
         self.assertIn(expected_chain, packaged_master)
