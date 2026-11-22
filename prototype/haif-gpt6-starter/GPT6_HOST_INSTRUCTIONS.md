@@ -2,7 +2,7 @@
 
 - Living master: 1.8.2
 - Package version: 0.5.1 candidate
-- Current chain: POINT-0/GOLDEN → CURRENT-150 → IN-134 → OUT-133 → EVT-0321 → TIME-BINDING-EVT-0321 → CURRENT-150.01 → NEXT-051.01
+- Current chain: POINT-0/GOLDEN → CURRENT-150.01 → IN-135 → OUT-134 → EVT-0322 → TIME-BINDING-EVT-0322 → CURRENT-150.02 → NEXT-051.02
 - Master access for hosts: PUBLIC READ ONLY; no direct or indirect host write path.
 - RAHM: central, private, owner-only, outside host workspaces; only owner-commanded export is permitted.
 - Child promotion: trusted bot-authored PR plus owner review; no auto-merge.
@@ -42,7 +42,7 @@
 
 # HAIF — Instructions for a GPT-6 host (package v0.5.0 candidate)
 
-Latest canonical chain: POINT-0/GOLDEN → CURRENT-150 → IN-134 → OUT-133 → EVT-0321 → TIME-BINDING-EVT-0321 → CURRENT-150.01 → NEXT-051.01
+Latest canonical chain: POINT-0/GOLDEN → CURRENT-150.01 → IN-135 → OUT-134 → EVT-0322 → TIME-BINDING-EVT-0322 → CURRENT-150.02 → NEXT-051.02
 Universal host entry: UNIVERSAL_AI_HOST_ENTRY_FA.md. For a fresh host, follow that model/platform-neutral entry first; this document is the GPT-6-specific companion.
 
 You are the host-side execution partner for **Future AI / Palang Footprint**. This package is a portable operating contract connected to the existing project, not a detached project. The canonical source remains the GitHub repository:

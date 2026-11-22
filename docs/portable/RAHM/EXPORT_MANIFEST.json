@@ -1,8 +1,8 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.8.42",
-  "manifest_status": "POINT-0/GOLDEN / CURRENT-150.01 ACTIVE; living mother 1.8.3; portable starter 0.5.1; post-merge exact Golden SHA 2769815b2597c50da16e6ed399c902a20f471902; Living Architecture Audit 45026845151 PASS; Portable RAHM Conformance 45026845147 PASS; RAHM archive 301 files / 1452220 bytes / SHA-256 863d341b8f8d418c49857f8692398ae85ea3f85257854bf24a4f155993a6df67; canonical starter ZIP 19 files / 282857 bytes / SHA-256 4b1d88281b1ba0d4f0344cbf9bb1fb2531bb21f8af39d52f809da799be6f5f2f; independent real-host recovery and live ChatGPT auto-capture remain OPEN / NOT RUN.",
-  "created_from_checkpoint": "HAIF-POINT-0-GOLDEN-2026-11-22-001 + HAIF-CURRENT-151",
+  "version": "1.8.43",
+  "manifest_status": "POINT-0/GOLDEN / CURRENT-150.02 CANDIDATE; living mother 1.8.4 candidate; portable starter 0.5.1 identity and canonical ZIP filename unchanged; exact candidate-SHA audit/conformance pending; main/GOLDEN promotion, durable release refresh, owner approval gate, private Partner/RAHM provisioning and independent-host recovery remain OPEN.",
+  "created_from_checkpoint": "HAIF-POINT-0-GOLDEN-2026-11-22-001 + HAIF-CURRENT-150.02",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [
     {
@@ -584,7 +584,13 @@
     "docs/0.0/anchors/PALANG-0.0-OUT-20261122-133-STABLE-ANCHOR-IDENTITY-LOCK.md",
     "docs/architecture/BEHAVIOR-TRACE/EVT-0321-STABLE-ANCHOR-IDENTITY-LOCK-AND-REVISION-RECEIPT-2026-11-22.md",
     "docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0321-STABLE-ANCHOR-IDENTITY-LOCK-2026-11-22.md",
-    "scripts/audit_historical_0_0_graph.py"
+    "scripts/audit_historical_0_0_graph.py",
+    "docs/0.0/anchors/PALANG-0.0-IN-20261122-135-PARTNER-AUTONOMOUS-EXECUTION.md",
+    "docs/0.0/anchors/PALANG-0.0-OUT-20261122-134-PARTNER-AUTONOMOUS-EXECUTION.md",
+    "docs/architecture/BEHAVIOR-TRACE/EVT-0322-PARTNER-AUTONOMOUS-EXECUTION-AND-LIVE-STATE-AUDIT-2026-11-22.md",
+    "docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0322-PARTNER-AUTONOMOUS-EXECUTION-AND-LIVE-STATE-AUDIT-2026-11-22.md",
+    "docs/0.0/anchors/PALANG-0.0-CURRENT-20261122-150-REVISION-02-PARTNER-AUTONOMOUS-EXECUTION-AUDIT.md",
+    "docs/architecture/BEHAVIOR-OBSERVATORY/README.md"
   ],
   "live_reference_policy": "Mutable current-state and startup/governance references are included in each export and receive exact SHA-256 plus Git blob SHA-1 observations in the same CI run. This includes RAHM_BOOT and RAHM_ARCHITECTURE because their canonical checkpoint binding must track the current live chain. Stable core remains digest-pinned.",
   "current_chain": "POINT-0/GOLDEN → CURRENT-150 → IN-134 → OUT-133 → EVT-0321 → TIME-BINDING-EVT-0321 → CURRENT-150.01 → NEXT-051.01",

@@ -1,3 +1,24 @@
+## نسخهٔ 1.8.4 — اجرای مستقل مالک‌محور، ممیزی زنده و تعیین موانع واقعی — CURRENT-150.02 (نامزد)
+
+این نسخه ادامهٔ همان ریشهٔ واحد POINT-0 و همان مبنای POINT-0/GOLDEN است. هویت‌های ثابت POINT-0/GOLDEN، CURRENT-150 و NEXT-051 تغییر نمی‌کنند؛ این تغییر فقط نامزد revisionهای CURRENT-150.02 و NEXT-051.02 است. تا زمان قبولی آزمون دقیق، ادغام به Golden و read-back پس از ادغام، CURRENT-150.01 و NEXT-051.01 آخرین revisionهای پذیرفته‌شده باقی می‌مانند.
+
+- زنجیرهٔ نامزد: POINT-0/GOLDEN → CURRENT-150.01 → IN-135 → OUT-134 → EVT-0322 → TIME-BINDING-EVT-0322 → CURRENT-150.02 → NEXT-051.02.
+- رویداد EVT-0322 در commit واقعی `4d41b77ac92d9abab9509ead7d28188a8b375504` ثبت شده است: UTC `2026-11-22T17:05:26Z`؛ تهران مشتق‌شده `2026-11-22T20:35:26+03:30`. زمان پیام مالک UNKNOWN است و جعل یا استنتاج نمی‌شود.
+- مالک خواست در زمان مشغلهٔ او، یار پلنگ تمام کارهای قابل‌انجام را مستقل اجرا کند، ده اقدام Partner و سایر موارد صف را بررسی کند و موانع نیازمند مالک/سرویس بیرونی را زنده نگه دارد.
+- ممیزی زنده: main روی `30d1d3b2de09078131fa3c8a0ff7c492a7ab0d7e`؛ Golden روی `59d46883527069f80c0d16943d03ca6faf098ef0`؛ شاخه‌ها DIVERGED با Golden ahead 265 / behind 26. هیچ force-sync یا نوشتن مستقیم روی main انجام نشده است.
+- روی HEAD دقیق Golden، Living Architecture Audit run `45027249200` و Portable RAHM Conformance run `45027249146` موفق‌اند. اجرای portable ساخت بسته، دانلود artifact، تطبیق بایت‌ها و آزمون ZIP استخراج‌شده را گذرانده؛ انتشار Release در آن اجرا SKIPPED بوده است.
+- مادر Golden در این نامزد 1.8.4 است؛ نسخهٔ داخلی بستهٔ starter همچنان 0.5.1 و هویت/نام ZIP ثابت می‌ماند. هر manifest، mirror و آزمون باید با مادر همگام شود؛ مادر هرگز برای سازگاری با آزمون قدیمی عقب برده نمی‌شود.
+- tag پایدار `haif-latest-verified` هنوز به commit قدیمی `4d2639c901bed30363e6206e8a718a6f6d99d159` اشاره می‌کند؛ ZIP منتشرشده 272,688 بایت و digest آن `0823141628db6d62fc6a5d320f8ca0c291f941bca446286f894e75a299a811f5` است. بستهٔ جدیدتر Golden در CURRENT-150.01 با 282,857 بایت و SHA-256 `4b1d88281b1ba0d4f0344cbf9bb1fb2531bb21f8af39d52f809da799be6f5f2f` ثبت شده است. Release پایدار هنوز به‌روزرسانی نشده است.
+- Ruleset `27814009` فعال است، اما required approvals=0 و CODEOWNERS review=false؛ بنابراین گیت تأیید مالک ENFORCED نیست. stale-review dismissal و thread resolution نیز خاموش‌اند؛ bypass actors خالی و current user bypass=never است. فایل CODEOWNERS مالک را برای همهٔ مسیرها تعیین می‌کند، ولی Ruleset الزام بازبینی Code Owner ندارد.
+- هر ده Issue مستقل #114 تا #123 باز هستند. مخزن خصوصی سرویس، hosting، GitHub App، OAuth/MCP، OpenAI API، استقرار HTTPS، credentialهای promotion، RAHM خصوصی و بازیابی میزبان مستقل هنوز با رسید واقعی اثبات نشده‌اند.
+- Issue #20 (ثبت خودکار تعامل و بازیابی واقعی میزبان) و Issue #21 (سرشماری معنایی کامل منابع/قواعد/پیوندها) OPEN می‌مانند. Buffer و Dropbox همچنان WAITING / DEFERRED / NON-BLOCKING هستند.
+- محدودیت ابزار: اتصال فعلی خواندن و نوشتن شاخه/PR/فایل و اجرای ممیزی‌های read-back را پشتیبانی می‌کند، اما ساخت repository خصوصی، ثبت GitHub App، تغییر Ruleset، تنظیم Actions secrets/variables، dispatch workflow و انتشار Release را در سطح ابزار فعلی ارائه نمی‌کند. endpointهای collaborator/deploy-key و branch protection نیز در این نشست قابل‌خواندن نبودند؛ این موارد NOT AVAILABLE / NOT VERIFIED می‌مانند.
+- اصل امنیتی بدون تغییر است: MASTER برای میزبان‌ها READ ONLY؛ RAHM فقط‌مالک و بیرون از workspace میزبان؛ هیچ میزبان، مستقیم یا غیرمستقیم، حق نوشتن به MASTER یا دسترسی به Secret ندارد. هیچ Host تا آزمون واقعی ACTIVE نیست.
+
+این نسخه نامزد است؛ پذیرش فقط پس از آزمون روی SHA دقیق PR، ادغام کنترل‌شده به POINT-0/GOLDEN، آزمون دقیق پس از ادغام و read-back انجام می‌شود.
+
+---
+
 ## نسخهٔ 1.8.3 — تثبیت هویت‌های POINT-0/GOLDEN، CURRENT-150 و NEXT-051 — CURRENT-150.01
 
 این نسخه یک تغییر در شیوهٔ نام‌گذاری و تداوم است، نه ساخت ریشه یا صف جدید. هویت‌های POINT-0/GOLDEN، CURRENT-150 و NEXT-051 ثابت می‌مانند؛ تغییرات معمول با نسخه‌های الحاقی CURRENT-150.01، CURRENT-150.02 و NEXT-051.01، NEXT-051.02 ثبت می‌شوند.

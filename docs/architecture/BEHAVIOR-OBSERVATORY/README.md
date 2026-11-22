@@ -1,3 +1,13 @@
+## آخرین رویداد ثبت‌شده — EVT-0322 / ممیزی اجرای مستقل یار پلنگ
+
+- زنجیرهٔ نامزد: POINT-0/GOLDEN → CURRENT-150.01 → IN-135 → OUT-134 → EVT-0322 → TIME-BINDING-EVT-0322 → CURRENT-150.02 → NEXT-051.02.
+- [EVT-0322](../BEHAVIOR-TRACE/EVT-0322-PARTNER-AUTONOMOUS-EXECUTION-AND-LIVE-STATE-AUDIT-2026-11-22.md) · [TIME-BINDING-EVT-0322](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0322-PARTNER-AUTONOMOUS-EXECUTION-AND-LIVE-STATE-AUDIT-2026-11-22.md).
+- [IN-135](../../0.0/anchors/PALANG-0.0-IN-20261122-135-PARTNER-AUTONOMOUS-EXECUTION.md) · [OUT-134](../../0.0/anchors/PALANG-0.0-OUT-20261122-134-PARTNER-AUTONOMOUS-EXECUTION.md).
+- وضعیت: نامزد CURRENT-150.02؛ ممیزی زنده و read-back انجام شده، اما پذیرش نهایی به CI دقیق، ادغام Golden و read-back پس از ادغام وابسته است.
+- ده اقدام Partner #114–#123 همچنان OPEN؛ گیت تأیید مالک، انتشار Release و recovery میزبان مستقل نیز OPEN هستند.
+
+---
+
 # رصدخانهٔ مستقل رفتار تعامل انسان و AI — مرجع زنده
 
 - Stable ID: HUMAN-AI-INTERACTION-BEHAVIOR-OBSERVATORY-2026-10-22-001
