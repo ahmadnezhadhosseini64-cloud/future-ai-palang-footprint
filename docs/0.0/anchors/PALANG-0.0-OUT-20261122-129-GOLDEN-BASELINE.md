@@ -14,7 +14,7 @@
 5. اسناد امنیت، RAHM، workspace، registry، multi-host، GPT-6 bootstrap، universal enrollment، interaction ledger، package README و manifest هم‌راستا شدند.
 6. نسخهٔ living mother به 1.7.95 ارتقا یافت؛ Reference Index، root README، Integration Queue و NEXT-051 به golden baseline متصل شدند.
 7. EVT-0308 package verification و گیت گفت‌وگویی مالک به‌عنوان سند فرعی حفظ شدند؛ collision شناسهٔ POINT-0/085 از تبدیل گیت گفت‌وگویی به یک root مستقل جلوگیری می‌کند.
-8. آزمون‌های منفی برای جلوگیری از بازگشت host-intake و نوشتن میزبان به master اضافه می‌شوند/در همین تغییر ثبت خواهند شد.
+8. آزمون‌های منفی برای جلوگیری از بازگشت host-intake و نوشتن میزبان به master در tests/rahm/test_golden_baseline.py ثبت شدند؛ اجرای CI روی PR در انتظار است.
 9. PRهای تاریخی به‌صورت wholesale merge نمی‌شوند؛ محتوای مفید استخراج و branchهای قدیمی پس از ثبت disposition بسته/آرشیو می‌شوند.
 
 ## محدودیت‌های اثبات‌شده
