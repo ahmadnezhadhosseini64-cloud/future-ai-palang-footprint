@@ -1,3 +1,12 @@
+## Current continuation pointer — POINT-0/GOLDEN / CURRENT-145 / NEXT-051
+
+- Latest user-turn event: [EVT-0314](../BEHAVIOR-TRACE/EVT-0314-OWNER-APPROVED-INDEPENDENT-PARTNER-API-MCP-BRIDGE-BOOTSTRAP-2026-11-22.md) → [TIME-BINDING-EVT-0314](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0314-OWNER-APPROVED-PARTNER-BRIDGE-2026-11-22.md) → [CURRENT-145](../../0.0/anchors/PALANG-0.0-CURRENT-20261122-145-POINT-0-PLUSPLUS-PARTNER-BRIDGE-BOOTSTRAP.md).
+- Latest mirror-only event: [EVT-0315](../BEHAVIOR-TRACE/EVT-0315-LIVE-MIRROR-SYNC-RECHECK-2026-11-22.md) → [TIME-BINDING-EVT-0315](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0315-LIVE-MIRROR-SYNC-RECHECK-2026-11-22.md). It does not create a new user root or checkpoint.
+- POINT-0/GOLDEN remains the single canonical root. NEXT-051 is the sole active queue; NEXT-052 was not created.
+- CURRENT-065/CURRENT-066 execution-pointer and overlay-manifest lineage remain OPEN / AMBIGUOUS; no winner selected. Issues #20/#21 remain OPEN. BOART-FOLLOWUP-01 remains ACTIVE. Buffer/Persistent Memory are NOT VERIFIED; Dropbox is OPEN / NOT VERIFIED; external independent-host recovery is NOT RUN.
+
+---
+
 ## POINT-0/GOLDEN — canonical current baseline (2026-11-22)
 
 - [POINT-0/GOLDEN](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md) → [IN-130](../../0.0/anchors/PALANG-0.0-IN-20261122-130-GOLDEN-BASELINE.md) → [OUT-129](../../0.0/anchors/PALANG-0.0-OUT-20261122-129-GOLDEN-BASELINE.md)
@@ -69,13 +78,13 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.10.54
+- Version: 1.10.55
 - Date: 2026-11-21
 - Exact Time: EVT-0261 event commit UTC `2026-11-10T06:47:53Z` / Tehran `2026-11-10T10:17:53+03:30`; initial time-binding commit UTC `2026-11-10T06:48:18Z` / Tehran `2026-11-10T10:18:18+03:30`.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
 - Project: Future AI / Palang Footprint — آیندهٔ AI / ردپای پلنگ
-- Status: ACTIVE / LIVING — main root POINT-0/079 / EVT-0299; certificate child root CERT-POINT-0.0-20261120-002 / EVT-0274 remains separate; checkpoint CURRENT-132; sole active queue NEXT-051 v1.0.51; latest mirror-only event EVT-0290. Source blob de1b75f07241c9b313e476af5f1417177ff78c10 unchanged; Library v7 normalized match with one extra terminal LF; no source or Library write. Post-registration Audit 44874521121 and Portable RAHM 44874520968 PASS on exact SHA 910cd24b9c9d0af2cdc7c6090386919f304b6819; Evidence Gate 44874520977 PASS on that SHA and created follow-up main 5c2a860e2fc1f7f36e3ee935b0daa3f62752e896 at UTC 2026-11-21T06:13:35Z; current main 5c2a860... has no exact-head Audit/RAHM and remains NOT VERIFIED. CURRENT-065/CURRENT-066 and overlay-manifest lineage, Issues #20/#21, NEXT-051 forensic archive and historic graph/identity/parent/time reconciliation remain OPEN.
+- Status: ACTIVE / LIVING — canonical root POINT-0/GOLDEN; latest user-turn event EVT-0314; execution checkpoint CURRENT-145; latest mirror-only event EVT-0315; sole active queue NEXT-051 v1.0.52. Main HEAD at run start 81c4b8687ad2de61e900c84505922a823ac265a1; exact-head Living Architecture Audit 44979406467 and Evidence Gate 44979406557 PASS. CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; Issues #20/#21 OPEN; NEXT-051 forensic archive and full historical reconciliation OPEN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
 - Canonical Path: docs/architecture/INTEGRATION-QUEUE/README.md
 
 ## 1. هدف
