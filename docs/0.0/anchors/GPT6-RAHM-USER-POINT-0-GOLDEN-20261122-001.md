@@ -118,3 +118,10 @@ The fixed root identity remains POINT-0/GOLDEN. No new Point-0 root, numbered po
 - Recovery proof protocol: [INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001](../../architecture/مدل%20اولیه%20AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md)
 - Portable host recovery protocol: [INDEPENDENT_HOST_RECOVERY_PROTOCOL](../../../prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md)
 - Portable export manifest: [EXPORT_MANIFEST](../../portable/RAHM/EXPORT_MANIFEST.json)
+
+
+## Additive continuation — EVT-0323 / CURRENT-150.03 candidate (2026-11-23)
+
+The current conversation is registered as a continuation marker on this same canonical root, not as a second root. Chain: [POINT-0/GOLDEN](GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md) → [IN-136](PALANG-0.0-IN-20261123-136-CHAT-POINT0-CONTINUATION.md) → [OUT-135](PALANG-0.0-OUT-20261123-135-CHAT-POINT0-CONTINUATION.md) → [EVT-0323](../../architecture/BEHAVIOR-TRACE/EVT-0323-CHAT-POINT0-CONTINUATION-2026-11-23.md) → [TIME-BINDING-EVT-0323](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0323-CHAT-POINT0-CONTINUATION-2026-11-23.md) → [CURRENT-150.03](PALANG-0.0-CURRENT-20261123-150-REVISION-03-CHAT-POINT0-CONTINUATION.md) → [NEXT-051.03](PALANG-0.0-NEXT-20261123-051-REVISION-03-EXECUTION-CONTINUATION.md).
+
+The stable root, CURRENT-150 family and NEXT-051 queue identities are unchanged. The .03 revisions remain candidates until exact-SHA conformance and controlled Golden merge. Prior history, including [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) and [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md), remains preserved.
