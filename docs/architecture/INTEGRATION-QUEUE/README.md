@@ -1,3 +1,14 @@
+## CURRENT-147 / POINT-0++ — owner continuation and execution-capability audit
+
+- Canonical root POINT-0; Golden baseline POINT-0/GOLDEN; sole active queue NEXT-051.
+- Chain: CURRENT-146 → IN-131 → OUT-130 → POINT-0/087 → EVT-0316 → TIME-BINDING-EVT-0316 → CURRENT-147 → NEXT-051.
+- Ten separately tracked Partner actions remain Issues #114–#123 under this queue.
+- Private Partner repository, App, OAuth, MCP, OpenAI API, deployment, private RAHM and recovery remain NOT PROVISIONED / NOT VERIFIED / NOT RUN.
+- Main and Golden are DIVERGED (ahead 164 / behind 17 at audit); use only trusted bot-authored owner-controlled publication, never a shortcut.
+- Hosts remain PUBLIC READ ONLY on MASTER; RAHM remains private and owner-only.
+
+---
+
 ## POINT-0/GOLDEN — canonical current baseline (2026-11-22)
 
 - [POINT-0/GOLDEN](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md) → [IN-130](../../0.0/anchors/PALANG-0.0-IN-20261122-130-GOLDEN-BASELINE.md) → [OUT-129](../../0.0/anchors/PALANG-0.0-OUT-20261122-129-GOLDEN-BASELINE.md)
