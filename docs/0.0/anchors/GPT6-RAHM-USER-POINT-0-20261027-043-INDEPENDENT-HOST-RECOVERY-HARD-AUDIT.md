@@ -6,7 +6,7 @@
 - Status: REGISTERED / LIVING / 0+ PRODUCTION MARKER / OPEN GATES PRESERVED
 - Canonical point identity: 0 with 0+ as production marker on the same point; not a separate root.
 - Chain: POINT-0/042 → POINT-0/043 → IN-080 → OUT-079 → EVT-0217 → CURRENT-092 → NEXT-051
-- Protocol: [Independent-host recovery proof](../architecture/مدل%20اولیه%20AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md)
+- Protocol: [Independent-host recovery proof](../../architecture/مدل%20اولیه%20AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md)
 - Active queue: [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
 
 ## درخواست
