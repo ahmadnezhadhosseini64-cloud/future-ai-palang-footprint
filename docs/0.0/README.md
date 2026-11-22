@@ -1,8 +1,8 @@
-> **CURRENT POINT-0++ — مرجع جاری فعال:** [CURRENT-150.02](anchors/PALANG-0.0-CURRENT-20261122-150-REVISION-02-PARTNER-AUTONOMOUS-EXECUTION-AUDIT.md) · خانوادهٔ ثابت [CURRENT-150](anchors/PALANG-0.0-CURRENT-20261122-150-POINT-0-PLUSPLUS-EXACT-MAIN-AUDIT.md) · [EVT-0322](../architecture/BEHAVIOR-TRACE/EVT-0322-PARTNER-AUTONOMOUS-EXECUTION-AND-LIVE-STATE-AUDIT-2026-11-22.md) → [TIME-BINDING-EVT-0322](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0322-PARTNER-AUTONOMOUS-EXECUTION-AND-LIVE-STATE-AUDIT-2026-11-22.md) · sole active queue [NEXT-051.02](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+> **CURRENT POINT-0++ — نشانگر جاری این گفتگو (نامزد روی Golden):** [CURRENT-150.03](anchors/PALANG-0.0-CURRENT-20261123-150-REVISION-03-CHAT-POINT0-CONTINUATION.md) · خانوادهٔ ثابت [CURRENT-150](anchors/PALANG-0.0-CURRENT-20261122-150-POINT-0-PLUSPLUS-EXACT-MAIN-AUDIT.md) · [IN-136](anchors/PALANG-0.0-IN-20261123-136-CHAT-POINT0-CONTINUATION.md) → [OUT-135](anchors/PALANG-0.0-OUT-20261123-135-CHAT-POINT0-CONTINUATION.md) → [EVT-0323](../architecture/BEHAVIOR-TRACE/EVT-0323-CHAT-POINT0-CONTINUATION-2026-11-23.md) → [TIME-BINDING-EVT-0323](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0323-CHAT-POINT0-CONTINUATION-2026-11-23.md) · sole queue [NEXT-051.03](anchors/PALANG-0.0-NEXT-20261123-051-REVISION-03-EXECUTION-CONTINUATION.md).
 
+**CANDIDATE / EXACT-SHA-VALIDATION-PENDING:** Parent Golden acceptance remains CURRENT-150.02 / NEXT-051.02. This branch records the new chat marker and proposed .03 revisions only; it is not yet merged into POINT-0/GOLDEN. main remains untouched. No new root or queue is created.
 
-
-**ACTIVE / LIVING / POST-MERGE-EXACT-SHA-VERIFIED:** Golden HEAD e8f909e6064806b2e450d9bc78a217b15748fb0b; exact post-merge Living Architecture Audit and Portable RAHM Conformance passed; downloaded recovery-equivalence receipt proves IN-135/OUT-134 → CURRENT-150.02/NEXT-051.02. main remains untouched. Durable release refresh, owner approval gate, private Partner/RAHM provisioning and real independent-host recovery remain OPEN.
+---
 
 ---
 
