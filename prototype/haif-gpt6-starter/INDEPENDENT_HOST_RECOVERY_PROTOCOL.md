@@ -1,6 +1,16 @@
+# POINT-0/GOLDEN — current portable host contract
+
+- Living master: 1.7.95
+- Package version: 0.5.1 candidate
+- Current chain: POINT-0/GOLDEN → IN-130 → OUT-129 → EVT-0309 → TIME-BINDING-EVT-0309 → CURRENT-140 → NEXT-051
+- Master access for hosts: PUBLIC READ ONLY; no direct or indirect host write path.
+- RAHM: central, private, owner-only, outside host workspaces; only owner-commanded export is permitted.
+- Child promotion: trusted bot-authored PR plus owner review; no auto-merge.
+- Old snapshots and embedded chains are historical; always resolve current pointers from the Reference Index.
+
 # Independent-host recovery proof protocol
 
-Package version: 0.5.0 candidate
+Package version: 0.5.1 candidate
 Latest canonical chain: POINT-0/081 → CURRENT-134 → POINT-0/082 (0++) → IN-125 → OUT-124 → EVT-0302 → TIME-BINDING-EVT-0302 → CURRENT-135 → NEXT-051
 The current point is POINT-0/082 (0++) on the existing canonical root; follow UNIVERSAL_AI_HOST_ENTRY_FA.md for model/platform-neutral entry.
 Project: Future AI / Palang Footprint
@@ -95,4 +105,4 @@ The canonical repository is Public. A clean host must attempt anonymous HTTPS RE
 
 ## Current source candidate — POINT-0/082
 
-Living master target: 1.7.89. Package source candidate: 0.5.0, same stable package ID and canonical ZIP filename. The 0.4.9 build receipt is historical to its exact source SHA and must not be reused. Fresh exact-main package verification is REQUIRED / NOT RUN until a new receipt proves archive SHA-256, byte size, inventory, CRC, paired-master read-back, extracted tests and artifact round-trip. Independent-host import and restart remain NOT RUN until direct destination receipts exist.
+Living master target: 1.7.95. Package source candidate: 0.5.1, same stable package ID and canonical ZIP filename. The 0.4.9 build receipt is historical to its exact source SHA and must not be reused. Fresh exact-main package verification is REQUIRED / NOT RUN until a new receipt proves archive SHA-256, byte size, inventory, CRC, paired-master read-back, extracted tests and artifact round-trip. Independent-host import and restart remain NOT RUN until direct destination receipts exist.
