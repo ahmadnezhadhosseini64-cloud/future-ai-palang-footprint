@@ -103,6 +103,6 @@ Internal package version: 0.4.5. Living master: 1.7.81. Current chain: POINT-0/0
 The canonical repository is Public. A clean host must attempt anonymous HTTPS READ/clone/fetch before asking for OAuth. OAuth is not required to read public source; it is only needed for private resources or authenticated write-back. EXECUTE, isolated workspace, persistence and restart are independent destination-host gates. The owner retains MASTER and merge authority.
 
 
-## Current source candidate — POINT-0/082
+## Current source candidate — CURRENT-151
 
 Living master target: 1.8.2. Package source candidate: 0.5.1, same stable package ID and canonical ZIP filename. The 0.4.9 build receipt is historical to its exact source SHA and must not be reused. Fresh exact-main package verification is REQUIRED / NOT RUN until a new receipt proves archive SHA-256, byte size, inventory, CRC, paired-master read-back, extracted tests and artifact round-trip. Independent-host import and restart remain NOT RUN until direct destination receipts exist.
