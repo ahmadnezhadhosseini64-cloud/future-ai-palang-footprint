@@ -6,7 +6,7 @@
 - Issues #114–#123 are ten independent OPEN Partner cases. Issues #20 and #21 remain separate OPEN runtime and historic-census tracks.
 - Buffer and Dropbox are WAITING / DEFERRED / NON-BLOCKING; neither is a core dependency. Mirror work is supporting evidence only when independent read-back and recovery are proven.
 - Main remains untouched. Last comparison: Golden ahead 217 / behind 26; main SHA 30d1d3b2de09078131fa3c8a0ff7c492a7ab0d7e.
-- Portable RAHM package remains NOT VERIFIED until fresh exact-source conformance and artifact receipt.
+- PR candidate conformance and artifact round-trip passed on SHA bf7e7ab3fc79e598bf5456605dae2bfa75ef929c; exact post-merge Golden run remains pending. Independent-host recovery is NOT RUN.
 - No parallel root/queue, direct-main write, host bypass, secret exposure or auto-merge.
 
 ---
