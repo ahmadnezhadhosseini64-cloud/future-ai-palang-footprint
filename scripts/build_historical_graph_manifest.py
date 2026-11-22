@@ -110,7 +110,12 @@ for p in source_files:
     # counting those as repository edges creates false missing-link findings.
     if p.suffix.lower() in {".md", ".markdown", ".mdx"}:
         for m in re.finditer(r"!??\[[^\]]*\]\(([^)]+)\)", body):
-            target = m.group(1).strip().split()[0].strip("<>")
+            raw_target = m.group(1).strip()
+            if raw_target.startswith("<") and ">" in raw_target:
+                target = raw_target[1:raw_target.index(">")]
+            else:
+                title_suffix = re.match(r"""^(.*?)(?:\\s+["'][^"']*["'])$""", raw_target)
+                target = (title_suffix.group(1) if title_suffix else raw_target).strip()
             if not target or target.startswith("#"): continue
             u = urlparse(target)
             if u.scheme or u.netloc or not u.path: continue
