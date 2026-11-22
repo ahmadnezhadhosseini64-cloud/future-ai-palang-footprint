@@ -1,7 +1,7 @@
 # Permanent Interaction Ledger — HAIF / RAHM
 
 - Package version: 0.4.8 (historical contract snapshot; current starter candidate is 0.5.1)
-- Governing baseline: POINT-0/GOLDEN / CURRENT-150.02 (candidate); CURRENT-151 remains a preserved historical transition snapshot.
+- Governing baseline: POINT-0/GOLDEN / CURRENT-150.02 (ACTIVE / LIVING); CURRENT-151 remains a preserved historical transition snapshot.
 - Current continuation pointer: POINT-0/GOLDEN → CURRENT-150.01 → IN-135 → OUT-134 → EVT-0322 → TIME-BINDING-EVT-0322 → CURRENT-150.02 → NEXT-051.02
 - Historical chain preserved in the body: POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051
 

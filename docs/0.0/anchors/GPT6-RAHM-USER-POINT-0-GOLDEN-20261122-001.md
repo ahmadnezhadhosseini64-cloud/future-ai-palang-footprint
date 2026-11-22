@@ -102,7 +102,7 @@ This separation explains why a connected account does not mean every GitHub oper
 
 ## Latest live continuation — same canonical root
 
-The fixed root identity remains POINT-0/GOLDEN. No new Point-0 root, numbered point, Golden baseline or queue is introduced. The latest candidate is linked here:
+The fixed root identity remains POINT-0/GOLDEN. No new Point-0 root, numbered point, Golden baseline or queue is introduced. The latest accepted active continuation is linked here:
 
 
 

@@ -1,6 +1,6 @@
-## نسخهٔ 1.8.4 — اجرای مستقل مالک‌محور، ممیزی زنده و تعیین موانع واقعی — CURRENT-150.02 (نامزد)
+## نسخهٔ 1.8.4 — اجرای مستقل مالک‌محور، ممیزی زنده و تعیین موانع واقعی — CURRENT-150.02 (ACTIVE / LIVING)
 
-این نسخه ادامهٔ همان ریشهٔ واحد POINT-0 و همان مبنای POINT-0/GOLDEN است. هویت‌های ثابت POINT-0/GOLDEN، CURRENT-150 و NEXT-051 تغییر نمی‌کنند؛ این تغییر فقط نامزد revisionهای CURRENT-150.02 و NEXT-051.02 است. تا زمان قبولی آزمون دقیق، ادغام به Golden و read-back پس از ادغام، CURRENT-150.01 و NEXT-051.01 آخرین revisionهای پذیرفته‌شده باقی می‌مانند.
+این نسخه ادامهٔ همان ریشهٔ واحد POINT-0 و همان مبنای POINT-0/GOLDEN است. هویت‌های ثابت POINT-0/GOLDEN، CURRENT-150 و NEXT-051 تغییر نمی‌کنند. CURRENT-150.02 و NEXT-051.02 پس از آزمون دقیق، ادغام کنترل‌شده به Golden و read-back پس از ادغام ACTIVE شدند؛ CURRENT-150.01 و NEXT-051.01 به‌عنوان revision قبلی حفظ می‌شوند.
 
 - زنجیرهٔ نامزد: POINT-0/GOLDEN → CURRENT-150.01 → IN-135 → OUT-134 → EVT-0322 → TIME-BINDING-EVT-0322 → CURRENT-150.02 → NEXT-051.02.
 - رویداد EVT-0322 در commit واقعی `4d41b77ac92d9abab9509ead7d28188a8b375504` ثبت شده است: UTC `2026-11-22T17:05:26Z`؛ تهران مشتق‌شده `2026-11-22T20:35:26+03:30`. زمان پیام مالک UNKNOWN است و جعل یا استنتاج نمی‌شود.
@@ -15,7 +15,7 @@
 - محدودیت ابزار: اتصال فعلی خواندن و نوشتن شاخه/PR/فایل و اجرای ممیزی‌های read-back را پشتیبانی می‌کند، اما ساخت repository خصوصی، ثبت GitHub App، تغییر Ruleset، تنظیم Actions secrets/variables، dispatch workflow و انتشار Release را در سطح ابزار فعلی ارائه نمی‌کند. endpointهای collaborator/deploy-key و branch protection نیز در این نشست قابل‌خواندن نبودند؛ این موارد NOT AVAILABLE / NOT VERIFIED می‌مانند.
 - اصل امنیتی بدون تغییر است: MASTER برای میزبان‌ها READ ONLY؛ RAHM فقط‌مالک و بیرون از workspace میزبان؛ هیچ میزبان، مستقیم یا غیرمستقیم، حق نوشتن به MASTER یا دسترسی به Secret ندارد. هیچ Host تا آزمون واقعی ACTIVE نیست.
 
-این نسخه نامزد است؛ پذیرش فقط پس از آزمون روی SHA دقیق PR، ادغام کنترل‌شده به POINT-0/GOLDEN، آزمون دقیق پس از ادغام و read-back انجام می‌شود.
+این نسخه ACTIVE / LIVING است: آزمون دقیق PR، ادغام کنترل‌شده به POINT-0/GOLDEN و آزمون/read-back پس از ادغام موفق شده‌اند. انتشار پایدار Release، گیت تأیید مالک، provisioning سرویس‌های خصوصی و بازیابی میزبان مستقل همچنان OPEN هستند.
 
 ---
 
@@ -5148,3 +5148,10 @@ Ruleset فعال PROTECT-MAIN-BRANCH64 / ID 27814009، شاخهٔ main را هد
 - broker و promotion automation امن، در صورت نیاز.
 - آزمون‌های منفی جداسازی، لغو دسترسی، export/restore و پذیرش میزبان مستقل.
 - NEXT-051 همچنان تنها صف فعال است؛ هیچ NEXT موازی ساخته نمی‌شود.
+
+
+## Post-merge acceptance receipt — CURRENT-150.02 ACTIVE
+
+On exact Golden merge SHA e8f909e6064806b2e450d9bc78a217b15748fb0b, Living Architecture Audit run 45048644669 and Portable RAHM Conformance run 45048644684 passed. The downloaded recovery-equivalence artifact reports RAHM-IN-OUT-LINK-EQUIVALENCE-135-134 PASS, reconstructs from IN-135 / OUT-134 and resolves CURRENT-150.02 / NEXT-051.02. The SHA inventory matched 47/47 files and 259 live references.
+
+The rebuilt starter package remains internal version 0.5.1 with the canonical filename, 19 files, 284,418 bytes and SHA-256 cbb58106a817710b657749ef7cb6dac09067f633c1dd846bd6adc33dcaf7a5e1. Extracted tests passed. Real independent-host acceptance is NOT_RUN. The durable release publish step was SKIPPED and the latest-verified release remains stale. The owner approval gate, private Partner/RAHM provisioning and independent-host recovery remain OPEN.

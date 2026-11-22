@@ -40,3 +40,14 @@
 - Mirror lineage: [EVT-0241](EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) · [TIME-BINDING-EVT-0241](TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md).
 
 The artifact read-back showed that the first portable run's recovery-equivalence receipt still used IN-130/OUT-129 and CURRENT-140. This was a historical validator selection, not evidence of the new candidate's recovery. The latest-chain index, point and IN/OUT shared-link graph are being corrected; acceptance remains pending until a new artifact proves IN-135/OUT-134 and CURRENT-150.02/NEXT-051.02.
+
+
+## Post-merge acceptance — CURRENT-150.02 ACTIVE
+
+- PR #142 and correction PR #143 were merged only into POINT-0/GOLDEN.
+- Accepted Golden merge SHA: e8f909e6064806b2e450d9bc78a217b15748fb0b; tree SHA: e543e2f8b7c06db1335db849b5b548fcedb4a3bc.
+- Exact post-merge audit run 45048644669: PASS. Exact post-merge portable conformance run 45048644684: PASS.
+- Downloaded recovery-equivalence receipt: RAHM-IN-OUT-LINK-EQUIVALENCE-135-134 PASS; independently recovered from IN-135 and OUT-134; canonical CURRENT-150.02 / NEXT-051.02; open gates preserved.
+- SHA inventory: manifest 1.8.43, 47/47 expected files matched, 259 live references, no mismatches.
+- Starter ZIP: 19 files, 284,418 bytes, SHA-256 cbb58106a817710b657749ef7cb6dac09067f633c1dd846bd6adc33dcaf7a5e1; extracted tests PASS. RAHM ZIP: 1,492,277 bytes, SHA-256 4178b9aa424d24cdbbfa8547a7c2ef8a8ec73d4b0088fecf8b6e3014614c9898.
+- Durable release publication was SKIPPED; latest-verified release remains stale. Real independent-host acceptance is NOT_RUN. Owner approval gate, private service provisioning and independent-host recovery remain OPEN.

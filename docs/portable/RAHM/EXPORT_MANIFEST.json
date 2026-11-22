@@ -1,7 +1,7 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.8.43",
-  "manifest_status": "POINT-0/GOLDEN / CURRENT-150.02 CANDIDATE; living mother 1.8.4 candidate; portable starter 0.5.1 identity and canonical ZIP filename unchanged; exact candidate-SHA audit/conformance pending; main/GOLDEN promotion, durable release refresh, owner approval gate, private Partner/RAHM provisioning and independent-host recovery remain OPEN.",
+  "version": "1.8.44",
+  "manifest_status": "POINT-0/GOLDEN / CURRENT-150.02 ACTIVE / LIVING; living mother 1.8.4; portable starter 0.5.1; exact post-merge audit and conformance PASS; IN-135/OUT-134 recovery-equivalence PASS; 47/47 manifest files matched and 259 live references; canonical ZIP rebuilt and extracted tests PASS. Durable Release publication SKIPPED and haif-latest-verified remains stale. Owner approval gate, private Partner/RAHM provisioning and real independent-host acceptance remain OPEN / NOT RUN.",
   "created_from_checkpoint": "HAIF-POINT-0-GOLDEN-2026-11-22-001 + HAIF-CURRENT-150.02",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [
@@ -594,5 +594,26 @@
   ],
   "live_reference_policy": "Mutable current-state and startup/governance references are included in each export and receive exact SHA-256 plus Git blob SHA-1 observations in the same CI run. This includes RAHM_BOOT and RAHM_ARCHITECTURE because their canonical checkpoint binding must track the current live chain. Stable core remains digest-pinned.",
   "current_chain": "POINT-0/GOLDEN → CURRENT-150 → IN-134 → OUT-133 → EVT-0321 → TIME-BINDING-EVT-0321 → CURRENT-150.01 → NEXT-051.01",
-  "current_checkpoint": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261122-150-REVISION-01-STABLE-ANCHOR-IDENTITY-LOCK.md"
+  "current_checkpoint": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261122-150-REVISION-01-STABLE-ANCHOR-IDENTITY-LOCK.md",
+  "post_merge_acceptance": {
+    "golden_merge_sha": "e8f909e6064806b2e450d9bc78a217b15748fb0b",
+    "golden_tree_sha": "e543e2f8b7c06db1335db849b5b548fcedb4a3bc",
+    "living_architecture_audit_run": 45048644669,
+    "portable_conformance_run": 45048644684,
+    "recovery_equivalence_test": "RAHM-IN-OUT-LINK-EQUIVALENCE-135-134",
+    "recovery_equivalence_result": "PASS",
+    "sha256_manifest_version": "1.8.43",
+    "sha256_manifest_digest": "7d7c7ed7b87721a4a7bdc3bca402e4d37639ef2140551f89911ec869c4ce16e0",
+    "expected_files": 47,
+    "matched_files": 47,
+    "live_reference_files": 259,
+    "starter_zip_filename": "haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip",
+    "starter_zip_bytes": 284418,
+    "starter_zip_sha256": "cbb58106a817710b657749ef7cb6dac09067f633c1dd846bd6adc33dcaf7a5e1",
+    "starter_file_count": 19,
+    "rahm_zip_bytes": 1492277,
+    "rahm_zip_sha256": "4178b9aa424d24cdbbfa8547a7c2ef8a8ec73d4b0088fecf8b6e3014614c9898",
+    "durable_release_publish": "SKIPPED",
+    "real_independent_host_acceptance": "NOT_RUN"
+  }
 }

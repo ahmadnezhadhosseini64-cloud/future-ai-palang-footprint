@@ -1,10 +1,10 @@
-## Latest registered event — EVT-0322 / CURRENT-150.02 autonomous execution audit (candidate)
+## Latest registered event — EVT-0322 / CURRENT-150.02 autonomous execution audit (ACTIVE)
 
 - [EVT-0322](./EVT-0322-PARTNER-AUTONOMOUS-EXECUTION-AND-LIVE-STATE-AUDIT-2026-11-22.md) → [TIME-BINDING-EVT-0322](./TIME-BINDING-EVT-0322-PARTNER-AUTONOMOUS-EXECUTION-AND-LIVE-STATE-AUDIT-2026-11-22.md).
 - [IN-135](../../0.0/anchors/PALANG-0.0-IN-20261122-135-PARTNER-AUTONOMOUS-EXECUTION.md) → [OUT-134](../../0.0/anchors/PALANG-0.0-OUT-20261122-134-PARTNER-AUTONOMOUS-EXECUTION.md).
-- Candidate resolver: [CURRENT-150.02](../../0.0/anchors/PALANG-0.0-CURRENT-20261122-150-REVISION-02-PARTNER-AUTONOMOUS-EXECUTION-AUDIT.md); sole queue candidate: [NEXT-051.02](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Active resolver: [CURRENT-150.02](../../0.0/anchors/PALANG-0.0-CURRENT-20261122-150-REVISION-02-PARTNER-AUTONOMOUS-EXECUTION-AUDIT.md); sole queue candidate: [NEXT-051.02](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - Event commit: `4d41b77ac92d9abab9509ead7d28188a8b375504`; UTC `2026-11-22T17:05:26Z`; Tehran `2026-11-22T20:35:26+03:30`. The user-message timestamp is UNKNOWN.
-- Current .01 remains the last accepted resolver until candidate exact-SHA CI, Golden merge and post-merge read-back pass.
+- CURRENT-150.02 / NEXT-051.02 are ACTIVE after exact-SHA CI, Golden merge and post-merge read-back; .01 remains historical.
 
 ---
 
