@@ -1,3 +1,16 @@
+## Current continuation pointer — POINT-0/GOLDEN / CURRENT-151 / NEXT-051
+
+- Latest chain: [POINT-0/089](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261122-089-DEEP-EXCAVATION-AND-CASE-CONSOLIDATION.md) → [IN-133](../../0.0/anchors/PALANG-0.0-IN-20261122-133-DEEP-EXCAVATION-AND-CASE-CONSOLIDATION.md) → [OUT-132](../../0.0/anchors/PALANG-0.0-OUT-20261122-132-DEEP-EXCAVATION-AND-CASE-CONSOLIDATION.md) → [EVT-0320](../BEHAVIOR-TRACE/EVT-0320-DEEP-EXCAVATION-AND-CASE-CONSOLIDATION-2026-11-22.md) → [TIME-BINDING-EVT-0320](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0320-DEEP-EXCAVATION-AND-CASE-CONSOLIDATION-2026-11-22.md) → [CURRENT-151](../../0.0/anchors/PALANG-0.0-CURRENT-20261122-151-DEEP-EXCAVATION-AND-CASE-CONSOLIDATION.md).
+- POINT-0/GOLDEN remains the sole canonical root/baseline; NEXT-051 remains the sole active queue.
+- CURRENT-065/CURRENT-066 are preserved as historical checkpoints; CURRENT-151 is the sole live pointer. Their remaining work is functionally consolidated into Issues #20/#21 and existing NEXT-051 graph triage.
+- Issues #114–#123 are ten independent OPEN Partner cases. Issues #20 and #21 remain separate OPEN runtime and historic-census tracks.
+- Buffer and Dropbox are WAITING / DEFERRED / NON-BLOCKING; neither is a core dependency. Mirror work is supporting evidence only when independent read-back and recovery are proven.
+- Main remains untouched. Last comparison: Golden ahead 216 / behind 26; main SHA 30d1d3b2de09078131fa3c8a0ff7c492a7ab0d7e.
+- Portable RAHM package remains NOT VERIFIED pending correction of stale 1.7.95/CURRENT-140 pins and a fresh exact-source conformance run.
+- No parallel root/queue, direct-main write, host bypass, secret exposure or auto-merge.
+
+---
+
 ## Current continuation pointer — POINT-0/GOLDEN / CURRENT-150 / NEXT-051
 
 - Latest owner continuation: [EVT-0319](../BEHAVIOR-TRACE/EVT-0319-OWNER-CONTINUATION-EXACT-MAIN-AUDIT-2026-11-22.md) → [TIME-BINDING-EVT-0319](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0319-OWNER-CONTINUATION-EXACT-MAIN-AUDIT-2026-11-22.md) → [CURRENT-150](../../0.0/anchors/PALANG-0.0-CURRENT-20261122-150-POINT-0-PLUSPLUS-EXACT-MAIN-AUDIT.md).
