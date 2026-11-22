@@ -1,3 +1,9 @@
+> **CURRENT POINT-0++:** [CURRENT-150](anchors/PALANG-0.0-CURRENT-20261122-150-POINT-0-PLUSPLUS-EXACT-MAIN-AUDIT.md) · [POINT-0/088](anchors/GPT6-RAHM-USER-POINT-0-20261122-088-OWNER-CONTINUATION-EXACT-MAIN-AUDIT.md) · [IN-132](anchors/PALANG-0.0-IN-20261122-132-OWNER-CONTINUATION-EXACT-MAIN-AUDIT.md) · [OUT-131](anchors/PALANG-0.0-OUT-20261122-131-OWNER-CONTINUATION-EXACT-MAIN-AUDIT.md) · [EVT-0319](../architecture/BEHAVIOR-TRACE/EVT-0319-OWNER-CONTINUATION-EXACT-MAIN-AUDIT-2026-11-22.md) → [TIME-BINDING-EVT-0319](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0319-OWNER-CONTINUATION-EXACT-MAIN-AUDIT-2026-11-22.md) · sole queue [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+
+This is a continuation of the existing POINT-0/GOLDEN root, not a new root or queue. Exact main audit is recorded under CURRENT-150. Architecture Audit and Evidence Gate passed on main SHA `30d1d3b2de09078131fa3c8a0ff7c492a7ab0d7e`; Portable RAHM Conformance failed on a stale package version assertion and remains OPEN for correction. Issues #114–#123 remain the ten independent work items under NEXT-051.
+
+---
+
 > **CURRENT POINT-0++:** [CURRENT-149](anchors/PALANG-0.0-CURRENT-20261122-149-POINT-0-PLUSPLUS-LIVE-MAIN-GOVERNANCE-AUDIT.md) · [EVT-0318](../architecture/BEHAVIOR-TRACE/EVT-0318-LIVE-MAIN-RULESET-AND-PROMOTION-WORKFLOW-AUDIT-2026-11-22.md) · [TIME-BINDING-EVT-0318](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0318-LIVE-MAIN-RULESET-AND-PROMOTION-WORKFLOW-AUDIT-2026-11-22.md) · sole queue [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 
 Latest live governance read-back: Ruleset 27814009 active but approvals=0 and CODEOWNERS review=false; main publication remains gated on owner configuration and trusted App workflow.

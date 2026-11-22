@@ -1,3 +1,15 @@
+## CURRENT-150 / POINT-0++ — exact-main audit and portable conformance correction (2026-11-22)
+
+- Continuation: POINT-0/GOLDEN → CURRENT-149 → POINT-0/088 → IN-132 → OUT-131 → EVT-0319 → TIME-BINDING-EVT-0319 → CURRENT-150 → this sole NEXT-051.
+- [POINT-0/088](GPT6-RAHM-USER-POINT-0-20261122-088-OWNER-CONTINUATION-EXACT-MAIN-AUDIT.md) · [IN-132](PALANG-0.0-IN-20261122-132-OWNER-CONTINUATION-EXACT-MAIN-AUDIT.md) · [OUT-131](PALANG-0.0-OUT-20261122-131-OWNER-CONTINUATION-EXACT-MAIN-AUDIT.md) · [EVT-0319](../../architecture/BEHAVIOR-TRACE/EVT-0319-OWNER-CONTINUATION-EXACT-MAIN-AUDIT-2026-11-22.md) · [TIME-BINDING-EVT-0319](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0319-OWNER-CONTINUATION-EXACT-MAIN-AUDIT-2026-11-22.md) · [CURRENT-150](PALANG-0.0-CURRENT-20261122-150-POINT-0-PLUSPLUS-EXACT-MAIN-AUDIT.md).
+- Exact main SHA `30d1d3b2de09078131fa3c8a0ff7c492a7ab0d7e`: Living Architecture Audit `44999187046` and Evidence Gate `44999187052` PASS; Portable RAHM Conformance `44999187103` FAIL.
+- Failure: extracted starter test pins `Version / نسخه: 1.7.95`; synchronized main mother is 1.7.97. Golden mother is 1.7.99 while Golden package manifest/test pins remain 1.7.95. Correction and fresh exact-source conformance are OPEN.
+- Main/Golden DIVERGED: Golden ahead 197 / behind 26; main SHA `30d1d3b2de09078131fa3c8a0ff7c492a7ab0d7e`.
+- Ten Partner actions #114–#123 remain individually tracked and OPEN. Ruleset 27814009 active but approvals=0 and CODEOWNERS review=false.
+- NEXT-051 remains the sole active queue; no NEXT-052 or parallel root is created. No host write route, auto-merge, bypass or force-sync.
+
+---
+
 ## CURRENT-149 / POINT-0++ — live main governance audit (2026-11-22)
 
 - Continuation: POINT-0/GOLDEN → CURRENT-148 → EVT-0318 → TIME-BINDING-EVT-0318 → CURRENT-149 → this sole NEXT-051.

@@ -1,3 +1,14 @@
+## Current continuation pointer — POINT-0/GOLDEN / CURRENT-150 / NEXT-051
+
+- Latest owner continuation: [EVT-0319](../BEHAVIOR-TRACE/EVT-0319-OWNER-CONTINUATION-EXACT-MAIN-AUDIT-2026-11-22.md) → [TIME-BINDING-EVT-0319](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0319-OWNER-CONTINUATION-EXACT-MAIN-AUDIT-2026-11-22.md) → [CURRENT-150](../../0.0/anchors/PALANG-0.0-CURRENT-20261122-150-POINT-0-PLUSPLUS-EXACT-MAIN-AUDIT.md).
+- Point: [POINT-0/088](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261122-088-OWNER-CONTINUATION-EXACT-MAIN-AUDIT.md) → [IN-132](../../0.0/anchors/PALANG-0.0-IN-20261122-132-OWNER-CONTINUATION-EXACT-MAIN-AUDIT.md) → [OUT-131](../../0.0/anchors/PALANG-0.0-OUT-20261122-131-OWNER-CONTINUATION-EXACT-MAIN-AUDIT.md).
+- NEXT-051 remains the only active queue. Ten Partner actions remain Issues #114–#123, individually tracked and OPEN.
+- Exact main SHA `30d1d3b2de09078131fa3c8a0ff7c492a7ab0d7e`: Audit/Evidence Gate PASS; Portable RAHM Conformance FAIL due stale package version/test expectation; correction and fresh conformance remain OPEN.
+- Main/Golden DIVERGED (Golden ahead 197 / behind 26). Ruleset 27814009 active but approvals=0 and CODEOWNERS review=false.
+- No new root, queue, direct-main write, host bypass or auto-merge.
+
+---
+
 ## CURRENT-149 / POINT-0++ — live governance audit
 
 - POINT-0/GOLDEN remains the single baseline; NEXT-051 remains the only active queue.
@@ -101,7 +112,7 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.10.54
+- Version: 1.10.55
 - Date: 2026-11-21
 - Exact Time: EVT-0261 event commit UTC `2026-11-10T06:47:53Z` / Tehran `2026-11-10T10:17:53+03:30`; initial time-binding commit UTC `2026-11-10T06:48:18Z` / Tehran `2026-11-10T10:18:18+03:30`.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)

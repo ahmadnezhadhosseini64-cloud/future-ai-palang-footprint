@@ -1,3 +1,12 @@
+## Latest registered event — EVT-0319 / POINT-0/088 exact-main audit
+
+- [EVT-0319](./EVT-0319-OWNER-CONTINUATION-EXACT-MAIN-AUDIT-2026-11-22.md) → [TIME-BINDING-EVT-0319](./TIME-BINDING-EVT-0319-OWNER-CONTINUATION-EXACT-MAIN-AUDIT-2026-11-22.md).
+- Point: [POINT-0/088](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261122-088-OWNER-CONTINUATION-EXACT-MAIN-AUDIT.md); current checkpoint: [CURRENT-150](../../0.0/anchors/PALANG-0.0-CURRENT-20261122-150-POINT-0-PLUSPLUS-EXACT-MAIN-AUDIT.md); sole active queue: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Exact main SHA `30d1d3b2de09078131fa3c8a0ff7c492a7ab0d7e`: Living Architecture Audit and Evidence Gate PASS; Portable RAHM Conformance FAIL due stale 1.7.95 package/test assertion. Correction and fresh exact-source conformance remain OPEN.
+- Canonical root remains POINT-0/GOLDEN. No parallel root or queue.
+
+---
+
 ## Latest registered event — EVT-0318 / live main governance audit
 
 - [EVT-0318](EVT-0318-LIVE-MAIN-RULESET-AND-PROMOTION-WORKFLOW-AUDIT-2026-11-22.md) → [TIME-BINDING-EVT-0318](TIME-BINDING-EVT-0318-LIVE-MAIN-RULESET-AND-PROMOTION-WORKFLOW-AUDIT-2026-11-22.md).
@@ -54,7 +63,7 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.46
+- Version: 1.0.47
 - Date: 2026-11-21
 - Project: Future AI / Palang Footprint / HAIF
 
