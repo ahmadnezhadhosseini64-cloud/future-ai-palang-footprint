@@ -13,7 +13,7 @@
 - HEAD شاخهٔ POINT-0/GOLDEN در بازخوانی زنده: `59d46883527069f80c0d16943d03ca6faf098ef0`.
 - مقایسهٔ main با شاخهٔ Golden: DIVERGED؛ Golden تعداد 265 commit جلو و 26 commit عقب است. هیچ force-sync یا ادغام میان‌بُر انجام نشد.
 - PR #141 با موفقیت در Golden ادغام شده است؛ merge SHA برابر `59d46883527069f80c0d16943d03ca6faf098ef0`. CURRENT-150.01 و NEXT-051.01 پس از آزمون دقیق پس از ادغام ACTIVE هستند.
-- Living Architecture Audit run `45027249200` و Portable RAHM Conformance run `45027249146` هر دو روی SHA دقیق Golden یعنی `59d46883527069f80c0d16943d03ca6faf098ef0` موفق‌اند. اجرای portable، ساخت آرشیو، بازسازی ZIP با همان نام canonical، دانلود artifact، تطبیق بایت‌ها و آزمون‌های استخراج‌شده را با موفقیت گذرانده است؛ انتشار Release در همان اجرا SKIPPED شده است.
+- Living Architecture Audit run `45027249200` و Portable RAHM Conformance run `45027249146` هر دو روی SHA دقیق Golden یعنی `59d46883527069f80c0d16943d03ca6faf098ef0` در سطح workflow موفق‌اند. اما artifact بازخوانی‌شدهٔ `rahm-recovery-equivalence.json` هنوز `IN-130 / OUT-129` و `CURRENT-140` را گزارش می‌کند؛ پس این اجرا اثبات زنجیرهٔ تازهٔ CURRENT-150.01 یا .02 نیست. ساخت/دانلود artifact و آزمون ZIP استخراج‌شده موفق بود؛ انتشار Release SKIPPED شد. اصلاح validator/index و آزمون مجدد در نامزد .02 انجام می‌شود.
 - اجرای قبلی روی main SHA `30d1d3b2de09078131fa3c8a0ff7c492a7ab0d7e`: Living Architecture Audit `44999187046` و Evidence Gate `44999187052` موفق؛ Portable RAHM Conformance `44999187103` ناموفق به‌علت pin قدیمی نسخهٔ 1.7.95 در برابر مادر 1.7.97. این شکست تاریخیِ main همچنان در برابر Golden جدیدتر حل‌شده تلقی نمی‌شود.
 - سند مادر Golden در CURRENT-150.01 نسخهٔ 1.8.3 است؛ بستهٔ قابل‌حمل نسخهٔ داخلی 0.5.1 دارد و آزمون دقیق Golden موفق شده است. مادر برای سازگاری با آزمون قدیمی پایین آورده نشده است.
 
@@ -58,11 +58,9 @@ Issueهای #114 تا #123 به‌صورت مستقل بازخوانی شدند 
 کارهای قابل‌انجام با ابزار فعلی انجام و read-back شدند. موارد نیازمند مالک/سرویس بیرونی در NEXT-051.02 با علت و معیار پذیرش نگه داشته می‌شوند؛ هیچ‌کدام به‌دلیل مستندسازی یا موفقیت CI بسته نمی‌شوند.
 
 
+## Correction discovered by artifact read-back
 
-## Correction and continuation links
-
-Post-merge artifact inspection found that the successful portable workflow's `rahm-recovery-equivalence.json` still reported the historical pair `IN-130 / OUT-129` and `CURRENT-140`. This does not prove recovery equivalence for the new candidate. The cause is that the validator reads the last matching `## تازه‌ترین زنجیره` section in `docs/0.0/README.md`; the new candidate had only updated the top resolver banner, not that parseable section. CURRENT-150.02 remains CANDIDATE until the exact post-fix artifact reports `IN-135 / OUT-134`, `CURRENT-150.02` and `NEXT-051.02`.
-
+The post-merge artifact from run `45047882025` still reported historical `IN-130 / OUT-129` and `CURRENT-140`. This is not proof of recovery equivalence for CURRENT-150.02. The validator selects the last matching `## تازه‌ترین زنجیره` section in `docs/0.0/README.md`; the candidate had updated the top resolver banner but not that parseable section. The correction now updates the final parseable chain and the shared links in POINT-0/GOLDEN, IN-135, OUT-134, CURRENT-150.02 and NEXT-051.02. Acceptance requires a new artifact that reports the current pair.
 
 
 ## Continuation and recovery links — CURRENT-150.02 candidate

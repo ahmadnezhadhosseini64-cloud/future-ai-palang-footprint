@@ -29,7 +29,7 @@ This is an append-only revision beneath the fixed CURRENT-150 identity and the e
 - main vs Golden: DIVERGED; Golden ahead 265 / behind 26. No force-sync, direct-main write or bypass was attempted.
 - PR #141 merged into Golden. CURRENT-150.01 and NEXT-051.01 are ACTIVE / LIVING / POST-MERGE-EXACT-SHA-VERIFIED.
 - On exact Golden HEAD `59d46883527069f80c0d16943d03ca6faf098ef0`: Living Architecture Audit run `45027249200` SUCCESS; Portable RAHM Conformance run `45027249146` SUCCESS.
-- Portable conformance on that SHA successfully ran local runtime tests, schema fixtures, host registry and fail-closed worker checks, latest-chain verification, SHA-256 inventory scan, RAHM archive build, starter source tests, canonical ZIP rebuild, artifact upload/download, exact artifact receipt verification, extraction and extracted ZIP tests. The durable Release publication step was SKIPPED.
+- Portable conformance on that SHA successfully ran local runtime tests, schema fixtures, host registry and fail-closed worker checks, the chain-validator step, SHA-256 inventory scan, RAHM archive build, starter source tests, canonical ZIP rebuild, artifact upload/download, exact artifact receipt verification, extraction and extracted ZIP tests. However, the generated recovery-equivalence receipt was later read back and found to select historical IN-130/OUT-129 and CURRENT-140; it does not prove the latest .02 chain. The durable Release publication step was SKIPPED. The candidate now corrects the parseable latest-chain section and IN/OUT link graph; a new exact artifact must prove IN-135/OUT-134 and CURRENT-150.02/NEXT-051.02.
 - Exact latest run artifacts: RAHM package artifact `14755409506` (1,408,554 bytes; outer artifact digest `sha256:0be5310567baf548d71615ea816db157089a44b90abdef1912ddcce6c3ea04c1`); starter artifact `14755449424` (484,199 bytes; outer artifact digest `sha256:f988735af58f079928816b0258f86892e812e0e1517a02fa20a769346e7942be`); evidence artifact `14755594293`.
 - The last recorded internal canonical starter ZIP receipt in CURRENT-150.01 is 19 files / 282,857 bytes / SHA-256 `4b1d88281b1ba0d4f0344cbf9bb1fb2531bb21f8af39d52f809da799be6f5f2f`. This remains the accepted package receipt until the new candidate's own exact-SHA receipt is read back.
 - main's exact audit remains separate: Living Architecture Audit `44999187046` and Evidence Gate `44999187052` PASS; Portable RAHM Conformance `44999187103` FAIL because the main-side portable expectation was pinned to 1.7.95 while main's living mother was 1.7.97.
@@ -69,6 +69,7 @@ MASTER remains PUBLIC READ ONLY for hosts. RAHM remains private and owner-only o
 4. After merge to Golden, exact post-merge audit and conformance must pass on the merge SHA/tree.
 5. The merge SHA/tree and artifact receipts must be read back before CURRENT-150.02 / NEXT-051.02 become ACTIVE.
 6. Durable Release publication, owner approval gate, external service provisioning and real-host recovery remain separate OPEN gates; passing CI does not close them.
+
 
 ## Historical mirror lineage preserved
 
