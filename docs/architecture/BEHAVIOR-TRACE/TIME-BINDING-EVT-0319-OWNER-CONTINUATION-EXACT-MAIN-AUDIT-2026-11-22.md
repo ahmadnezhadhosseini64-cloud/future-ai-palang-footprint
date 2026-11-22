@@ -16,6 +16,6 @@
 
 Event registration time, target main commit time, Actions run time, and later file read-back time are separate facts. Unknown operation/message times remain UNKNOWN and are never derived from nearby timestamps.
 
-- Time-binding file final-change commit: `c8a63daf63764c8112b0fe87313c1f1e20c79be`.
-- Time-binding file final-change commit UTC: `2026-11-22T08:22:17Z`.
-- Asia/Tehran derived from the same instant: `2026-11-22T11:52:17+03:30`.
+- Initial time-binding file creation commit: `c8a63daf63764c8112b0fe87313c1f1e20c79be` (UTC `2026-11-22T08:22:17Z`; Tehran `2026-11-22T11:52:17+03:30`).
+- Subsequent metadata-correction commit before Golden merge: `d60414337759efb90c6a6ce6d222bd9abb6c2f2d` (UTC `2026-11-22T08:24:29Z`; Tehran `2026-11-22T11:54:29+03:30`).
+- The current file's final-change commit is read from Git metadata; no self-referential timestamp is embedded here.
