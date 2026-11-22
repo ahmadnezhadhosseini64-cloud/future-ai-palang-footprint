@@ -1,10 +1,10 @@
 # POINT-0/GOLDEN — مبنای طلایی معماری زنده
 
 - Stable ID: HAIF-POINT-0-GOLDEN-2026-11-22-001
-- Status: OWNER-DIRECTED / PROPOSAL BRANCH / CANONICAL BASELINE CANDIDATE
+- Status: ACTIVE / LIVING / GOLDEN BASELINE PUBLISHED TO MAIN
 - Canonical root: POINT-0 (single root; this is a baseline marker, not a new root)
 - Parent: POINT-0/086 → CURRENT-139
-- Current chain: POINT-0/GOLDEN → IN-130 → OUT-129 → EVT-0309 → TIME-BINDING-EVT-0309 → CURRENT-140 → EVT-0310 → TIME-BINDING-EVT-0310 → CURRENT-141 → EVT-0311 → TIME-BINDING-EVT-0311 → CURRENT-142 / POINT-0++ → sole NEXT-051
+- Current chain: POINT-0/GOLDEN → IN-130 → OUT-129 → EVT-0309 → TIME-BINDING-EVT-0309 → CURRENT-140 → EVT-0310 → TIME-BINDING-EVT-0310 → CURRENT-141 → EVT-0311 → TIME-BINDING-EVT-0311 → CURRENT-142 / POINT-0++ → EVT-0312 → CURRENT-143 → EVT-0313 → TIME-BINDING-EVT-0313 → CURRENT-144 / POINT-0++ → sole NEXT-051
 - Owner: @ahmadnezhadhosseini64-cloud
 - Canonical repository: ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
 - Baseline source HEAD recorded at Golden creation (historical source reference, not the current operating ref): 9ebd4bcc5cfc0168276e366c1867da8709dfb566
