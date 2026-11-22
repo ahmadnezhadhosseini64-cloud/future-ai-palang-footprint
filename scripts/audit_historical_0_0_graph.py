@@ -94,13 +94,7 @@ for p in source_files:
         if u.scheme or u.netloc: continue
         path_part = unquote(u.path)
         if not path_part: continue
-        # The starter's LIVING_MASTER_REFERENCE is a byte-for-byte portable
-        # mirror of the canonical mother. Its relative links retain the source
-        # document's directory semantics; resolve them from that source path.
-        link_base = p.parent
-        if p.as_posix() == "prototype/haif-gpt6-starter/LIVING_MASTER_REFERENCE.md":
-            link_base = ROOT / "docs/architecture/مدل اولیه AI"
-        candidate = (link_base / path_part).resolve()
+        candidate = (p.parent / path_part).resolve()
         try: rel = candidate.relative_to(ROOT.resolve()).as_posix()
         except ValueError: continue
         links.append(target)
