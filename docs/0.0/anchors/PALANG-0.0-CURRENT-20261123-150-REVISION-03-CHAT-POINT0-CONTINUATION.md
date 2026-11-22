@@ -54,3 +54,8 @@ Continue the single NEXT-051 queue: ten Partner dossiers #114–#123; Issue #20 
 - Graph/identity/parent/time triage, duplicate IDs and ambiguous parents: OPEN / ACTIVE.
 - Issue #20 remains OPEN; Issue #21 remains OPEN.
 - Historical mirror [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) and [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) remain preserved and linked.
+
+## Historical mirror continuity (append-only)
+
+- [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md)
+- [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md)
