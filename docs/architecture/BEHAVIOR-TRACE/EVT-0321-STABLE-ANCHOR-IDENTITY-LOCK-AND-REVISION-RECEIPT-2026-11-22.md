@@ -8,6 +8,10 @@
 - Stable current identity: CURRENT-150
 - Sole stable queue: NEXT-051
 - Status: CANDIDATE / LIVING / EXACT-SHA ACCEPTANCE PENDING
+- Registration commit: `5ac52eccbff04b369106f0798ee88c8abb6d141e`
+- Registration UTC: `2026-11-22T12:51:47Z`
+- Tehran equivalent: `2026-11-22T16:21:47+03:30`
+- Time binding: [TIME-BINDING-EVT-0321](TIME-BINDING-EVT-0321-STABLE-ANCHOR-IDENTITY-LOCK-2026-11-22.md)
 
 ## Event
 
