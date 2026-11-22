@@ -10,7 +10,7 @@
 - بازبینی نامزد: [CURRENT-150.03](../../0.0/anchors/PALANG-0.0-CURRENT-20261123-150-REVISION-03-CHAT-POINT0-CONTINUATION.md)
 - صف یگانه، بازبینی نامزد: [NEXT-051.03](../../0.0/anchors/PALANG-0.0-NEXT-20261123-051-REVISION-03-EXECUTION-CONTINUATION.md)
 - نشانگر گفتگو: [POINT-0-GOLDEN-CHAT-CONTINUATION-2026-11-23-001](../../0.0/anchors/POINT-0-GOLDEN-CHAT-CONTINUATION-2026-11-23-001.md)
-- میراث آینه‌ای محفوظ: [EVT-0241](../BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) و [TIME-BINDING-EVT-0241](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md).
+- میراث آینه‌ای محفوظ: [EVT-0241](../BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) و [TIME-BINDING-EVT-0241](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md).
 
 قانون تقدم: سند مادر مرجع حقیقت است؛ بسته، manifest، mirror و آزمون‌ها باید با آن همگام شوند. هیچ downgrade برای سازگاری با آزمون یا بستهٔ قدیمی مجاز نیست. این الحاقیه به‌تنهایی اثبات‌کنندهٔ package conformance، release publication یا recovery میزبان مستقل نیست.
 
