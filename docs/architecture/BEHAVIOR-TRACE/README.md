@@ -1,3 +1,13 @@
+## Latest registered event — EVT-0318 / live main governance audit
+
+- [EVT-0318](EVT-0318-LIVE-MAIN-RULESET-AND-PROMOTION-WORKFLOW-AUDIT-2026-11-22.md) → [TIME-BINDING-EVT-0318](TIME-BINDING-EVT-0318-LIVE-MAIN-RULESET-AND-PROMOTION-WORKFLOW-AUDIT-2026-11-22.md).
+- Current checkpoint: [CURRENT-149](../../0.0/anchors/PALANG-0.0-CURRENT-20261122-149-POINT-0-PLUSPLUS-LIVE-MAIN-GOVERNANCE-AUDIT.md); sole active queue: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Ruleset 27814009 active; approvals=0, CODEOWNERS review=false. Workflow source exists, but App/secret/dispatch are not verified.
+- Exact event registration time: 2026-11-22T07:17:16Z / 2026-11-22T10:47:16+03:30.
+- Historical events remain preserved; no new root or queue.
+
+---
+
 ## Latest registered event — EVT-0317 / Golden merge verified
 
 - [EVT-0317](EVT-0317-POINT-0-087-CONTINUATION-MERGED-TO-GOLDEN-2026-11-22.md) → [TIME-BINDING-EVT-0317](TIME-BINDING-EVT-0317-POINT-0-087-CONTINUATION-MERGED-TO-GOLDEN-2026-11-22.md).
