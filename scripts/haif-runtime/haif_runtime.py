@@ -8,6 +8,7 @@ import argparse
 import hashlib
 import json
 import os
+import re
 import sys
 import tempfile
 import uuid
@@ -82,10 +83,53 @@ def verify_state(state: Any) -> list[str]:
         if event.get("event_hash") != expected:
             errors.append(f"{prefix}.event_hash mismatch")
         if event.get("kind") == "INTERACTION":
-            if not isinstance(event.get("input"), str) or not event["input"].strip():
-                errors.append(f"{prefix}.input must be non-empty")
-            if not isinstance(event.get("output"), str) or not event["output"].strip():
-                errors.append(f"{prefix}.output must be non-empty")
+            input_text = event.get("input_text")
+            output_text = event.get("output_text")
+            if not isinstance(input_text, str) or not input_text.strip():
+                errors.append(f"{prefix}.input_text must be non-empty")
+            if not isinstance(output_text, str) or not output_text.strip():
+                errors.append(f"{prefix}.output_text must be non-empty")
+            record = event.get("interaction_record")
+            if not isinstance(record, dict):
+                errors.append(f"{prefix}.interaction_record must be an object")
+            else:
+                required = ("interaction_id", "input_id", "output_id", "sequence", "version", "status",
+                            "time_evidence", "input", "output", "behavior_analysis", "lineage", "verification")
+                for field in required:
+                    if field not in record:
+                        errors.append(f"{prefix}.interaction_record.{field} is required")
+                sequence = record.get("sequence")
+                created = event.get("created_at_utc", "")
+                date_part = created[:10].replace("-", "") if isinstance(created, str) else ""
+                if not isinstance(sequence, int) or sequence < 1 or sequence > 999:
+                    errors.append(f"{prefix}.interaction_record.sequence must be 1..999")
+                elif date_part:
+                    suffix = f"{date_part}-{sequence:03d}"
+                    expected = {
+                        "interaction_id": f"INT-{suffix}",
+                        "input_id": f"IN-{suffix}",
+                        "output_id": f"OUT-{suffix}",
+                    }
+                    for field, value in expected.items():
+                        if record.get(field) != value:
+                            errors.append(f"{prefix}.interaction_record.{field} does not match sequence/date")
+                for field in ("interaction_id", "input_id", "output_id"):
+                    value = record.get(field)
+                    if not isinstance(value, str) or not re.fullmatch(r"(?:INT|IN|OUT)-[0-9]{8}-[0-9]{3}", value):
+                        errors.append(f"{prefix}.interaction_record.{field} has invalid stable ID format")
+                    elif value in seen:
+                        errors.append(f"{prefix}.interaction_record.{field} is duplicated")
+                    else:
+                        seen.add(value)
+                input_record = record.get("input")
+                output_record = record.get("output")
+                if not isinstance(input_record, dict) or input_record.get("content_status") != "PRESERVED" or input_record.get("summary") != input_text:
+                    errors.append(f"{prefix}.interaction_record.input does not match preserved input")
+                if not isinstance(output_record, dict) or output_record.get("content_status") != "PRESERVED" or output_record.get("summary") != output_text:
+                    errors.append(f"{prefix}.interaction_record.output does not match preserved output")
+                time_evidence = record.get("time_evidence")
+                if not isinstance(time_evidence, dict) or time_evidence.get("operation_timestamp") != created:
+                    errors.append(f"{prefix}.interaction_record.time_evidence operation timestamp mismatch")
         elif event.get("kind") not in ("CHECKPOINT", "IMPORT"):
             errors.append(f"{prefix}.kind is unsupported")
         previous_hash = event.get("event_hash", previous_hash)
@@ -104,10 +148,59 @@ def verify_state(state: Any) -> list[str]:
 
 def append_event(state: dict, kind: str, **fields: Any) -> dict:
     parent = state["events"][-1]["event_hash"] if state["events"] else GENESIS
+    created_at = utc_now()
+    if kind == "INTERACTION":
+        input_text = fields.pop("input_text", None)
+        output_text = fields.pop("output_text", None)
+        date_part = created_at[:10].replace("-", "")
+        sequence = 1 + sum(
+            1 for existing in state["events"]
+            if existing.get("kind") == "INTERACTION"
+            and isinstance(existing.get("interaction_record"), dict)
+            and existing["interaction_record"].get("interaction_id", "").startswith(f"INT-{date_part}-")
+        )
+        if sequence > 999:
+            raise ValueError("daily interaction sequence exhausted (maximum 999)")
+        suffix = f"{date_part}-{sequence:03d}"
+        fields.update({
+            "input_text": input_text,
+            "output_text": output_text,
+            "interaction_record": {
+                "interaction_id": f"INT-{suffix}",
+                "input_id": f"IN-{suffix}",
+                "output_id": f"OUT-{suffix}",
+                "sequence": sequence,
+                "version": "1.0.0",
+                "status": "OBSERVED",
+                "time_evidence": {
+                    "repository_commit_utc": None,
+                    "tehran_equivalent": None,
+                    "operation_timestamp": created_at,
+                    "message_timestamp_status": "NOT_EXPOSED",
+                },
+                "input": {"content_ref": None, "content_status": "PRESERVED", "summary": input_text},
+                "output": {"content_ref": None, "content_status": "PRESERVED", "summary": output_text},
+                "behavior_analysis": [],
+                "lineage": {
+                    "parent_ids": [],
+                    "related_event_ids": [],
+                    "architecture_refs": [],
+                    "gap_ids": [],
+                    "evidence_refs": [],
+                    "recovery_pointer": None,
+                },
+                "verification": {
+                    "schema_validation": "NOT_RUN",
+                    "readback": "NOT_RUN",
+                    "runtime_capture": "NOT_VERIFIED",
+                    "notes": ["Manual local CLI record; automatic host capture is not implemented."],
+                },
+            },
+        })
     event = {
         "event_id": "EVT-" + uuid.uuid4().hex,
         "kind": kind,
-        "created_at_utc": utc_now(),
+        "created_at_utc": created_at,
         "parent_hash": parent,
         **fields,
     }
@@ -115,6 +208,14 @@ def append_event(state: dict, kind: str, **fields: Any) -> dict:
     state["events"].append(event)
     state["updated_at_utc"] = utc_now()
     return event
+
+
+def lookup_interaction(state: dict, anchor_id: str) -> dict | None:
+    for event in state.get("events", []):
+        record = event.get("interaction_record", {})
+        if anchor_id in (record.get("interaction_id"), record.get("input_id"), record.get("output_id")):
+            return event
+    return None
 
 
 def atomic_write(path: Path, data: bytes) -> None:
@@ -154,9 +255,11 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--state", default="haif-state.json", help="local JSON state path")
     sub = parser.add_subparsers(dest="command", required=True)
     sub.add_parser("init", help="create a new state file")
-    record = sub.add_parser("record", help="append one IN/OUT interaction")
+    record = sub.add_parser("record", help="append one stable INT/IN/OUT interaction")
     record.add_argument("--input", required=True)
     record.add_argument("--output", required=True)
+    lookup = sub.add_parser("lookup", help="reverse-lookup an interaction by INT, IN or OUT ID")
+    lookup.add_argument("--id", required=True)
     cp = sub.add_parser("checkpoint", help="append a checkpoint and pin current chain head")
     export = sub.add_parser("export", help="print the validated portable JSON state")
     imp = sub.add_parser("import", help="validate and import a JSON state file")
@@ -180,9 +283,31 @@ def main(argv: list[str] | None = None) -> int:
         else:
             state = load_state(path)
             if args.command == "record":
-                event = append_event(state, "INTERACTION", input=args.input, output=args.output)
+                event = append_event(state, "INTERACTION", input_text=args.input, output_text=args.output)
                 save_state(path, state)
-                print(json.dumps({"result": "RECORDED", "event_id": event["event_id"], "event_hash": event["event_hash"], "events": len(state["events"])}))
+                readback = load_state(path)
+                verified = lookup_interaction(readback, event["interaction_record"]["input_id"])
+                if verified != event:
+                    raise ValueError("interaction read-back mismatch")
+                record = event["interaction_record"]
+                print(json.dumps({
+                    "result": "RECORDED_AND_READ_BACK",
+                    "event_id": event["event_id"],
+                    "interaction_id": record["interaction_id"],
+                    "input_id": record["input_id"],
+                    "output_id": record["output_id"],
+                    "sequence": record["sequence"],
+                    "event_hash": event["event_hash"],
+                    "events": len(state["events"]),
+                    "readback": "PASS",
+                    "automatic_host_capture": "NOT_IMPLEMENTED",
+                }))
+            elif args.command == "lookup":
+                found = lookup_interaction(state, args.id)
+                if found is None:
+                    print(json.dumps({"result": "NOT_FOUND", "anchor_id": args.id}))
+                    return 3
+                print(json.dumps({"result": "FOUND", "record": found}, ensure_ascii=False))
             elif args.command == "checkpoint":
                 checkpoint_id = "CHECKPOINT-" + uuid.uuid4().hex
                 checkpoint_event = append_event(state, "CHECKPOINT", checkpoint_id=checkpoint_id)
