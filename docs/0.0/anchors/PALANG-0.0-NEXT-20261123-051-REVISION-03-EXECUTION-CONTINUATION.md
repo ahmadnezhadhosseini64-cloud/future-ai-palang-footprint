@@ -29,3 +29,20 @@ This is revision .03 of the existing sole queue NEXT-051. It does not create NEX
 ## Acceptance discipline
 
 Documented ≠ implemented; implemented ≠ tested; tested ≠ merged; merged ≠ released; package conformance ≠ independent-host recovery. Each claim needs destination-specific read-back and exact evidence. Preserve failed runs and prior receipts as historical evidence.
+## Canonical graph and inherited gates
+
+- Root: [POINT-0/GOLDEN](GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md)
+- Input: [IN-136](PALANG-0.0-IN-20261123-136-CHAT-POINT0-CONTINUATION.md)
+- Output: [OUT-135](PALANG-0.0-OUT-20261123-135-CHAT-POINT0-CONTINUATION.md)
+- Event: [EVT-0323](../../architecture/BEHAVIOR-TRACE/EVT-0323-CHAT-POINT0-CONTINUATION-2026-11-23.md)
+- Current: [CURRENT-150.03](PALANG-0.0-CURRENT-20261123-150-REVISION-03-CHAT-POINT0-CONTINUATION.md)
+- Historical mirror: [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) · [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md)
+
+- CURRENT-065/CURRENT-066 remain OPEN / AMBIGUOUS; no winner selected.
+- Full state recovery / reconstruct independently from IN and OUT: OPEN.
+- Clean host import: OPEN / NOT RUN.
+- Second-host import: OPEN / NOT RUN.
+- Restart persistence / restart-new-session recovery: OPEN / NOT VERIFIED.
+- Automatic live message capture / idle-background capture: OPEN / NOT PROVEN.
+- Graph/identity/parent/time triage, duplicate IDs and ambiguous parents: OPEN.
+- Issue #20 remains OPEN; Issue #21 remains OPEN.
