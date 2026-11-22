@@ -43,3 +43,14 @@ This revision is a candidate until its exact branch SHA passes the relevant Livi
 ## 5. Open work
 
 Continue the single NEXT-051 queue: ten Partner dossiers #114–#123; Issue #20 runtime/live-capture/recovery; Issue #21 semantic source/graph census; durable canonical ZIP release; exact-main/Golden promotion path; Ruleset owner approval enforcement; private Partner and RAHM provisioning; and clean-host acceptance. Buffer and Dropbox remain WAITING / DEFERRED / NON-BLOCKING.
+## 6. Required open gates and preserved ambiguity
+
+- CURRENT-065/CURRENT-066 remain OPEN / AMBIGUOUS; no winner selected. No historical collision or parent edge is silently adjudicated.
+- Full state recovery and reconstruct independently from IN and OUT: OPEN until an independent host reconstructs the complete state.
+- Clean host import: OPEN / NOT RUN.
+- Second-host import: OPEN / NOT RUN.
+- Restart persistence and restart/new-session recovery: OPEN / NOT VERIFIED.
+- Automatic live message capture and idle/background capture: OPEN / NOT PROVEN.
+- Graph/identity/parent/time triage, duplicate IDs and ambiguous parents: OPEN / ACTIVE.
+- Issue #20 remains OPEN; Issue #21 remains OPEN.
+- Historical mirror [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) and [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) remain preserved and linked.
