@@ -1,3 +1,15 @@
+## CURRENT-151 / POINT-0/089 — deep excavation and case consolidation (2026-11-22)
+
+- Continuation: POINT-0/GOLDEN → CURRENT-150 → POINT-0/089 → IN-133 → OUT-132 → EVT-0320 → TIME-BINDING-EVT-0320 → CURRENT-151 → this sole NEXT-051.
+- [POINT-0/089](GPT6-RAHM-USER-POINT-0-20261122-089-DEEP-EXCAVATION-AND-CASE-CONSOLIDATION.md) · [IN-133](PALANG-0.0-IN-20261122-133-DEEP-EXCAVATION-AND-CASE-CONSOLIDATION.md) · [OUT-132](PALANG-0.0-OUT-20261122-132-DEEP-EXCAVATION-AND-CASE-CONSOLIDATION.md) · [EVT-0320](../../architecture/BEHAVIOR-TRACE/EVT-0320-DEEP-EXCAVATION-AND-CASE-CONSOLIDATION-2026-11-22.md) · [TIME-BINDING-EVT-0320](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0320-DEEP-EXCAVATION-AND-CASE-CONSOLIDATION-2026-11-22.md) · [CURRENT-151](PALANG-0.0-CURRENT-20261122-151-DEEP-EXCAVATION-AND-CASE-CONSOLIDATION.md).
+- CURRENT-065/CURRENT-066 remain historical checkpoints; CURRENT-151 is the sole live continuation pointer. Their open work is functionally routed to Issues #20/#21 and existing graph triage.
+- Issues #114–#123 are ten independent OPEN Partner cases. Issues #20/#21 remain independent OPEN runtime and historic-census tracks.
+- Buffer and Dropbox: WAITING / DEFERRED / NON-BLOCKING. Mirror is supporting evidence only when independently read back and recoverable.
+- Portable RAHM package: NOT VERIFIED; stale 1.7.95 / CURRENT-140 pins require correction and fresh exact-source conformance.
+- No new root or queue; NEXT-051 remains the only active queue.
+
+---
+
 ## CURRENT-150 / POINT-0++ — exact-main audit and portable conformance correction (2026-11-22)
 
 - Continuation: POINT-0/GOLDEN → CURRENT-149 → POINT-0/088 → IN-132 → OUT-131 → EVT-0319 → TIME-BINDING-EVT-0319 → CURRENT-150 → this sole NEXT-051.
