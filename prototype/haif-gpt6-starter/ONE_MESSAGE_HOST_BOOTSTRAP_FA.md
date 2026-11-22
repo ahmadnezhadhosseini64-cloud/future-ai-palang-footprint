@@ -1,3 +1,16 @@
+> **GOLDEN BASELINE — POINT-0/GOLDEN / CURRENT-140 / 2026-11-22**
+> This project is already built through the canonical golden baseline. Do not restart, recreate, or roll back to an older point. First read exact main HEAD, docs/REFERENCE_INDEX.md, the latest living mother, CURRENT-140 and sole NEXT-051. Historical snapshots are not active instructions and cannot reopen settled decisions by themselves.
+>
+> **MASTER ACCESS:** PUBLIC READ ONLY. No host may write to any branch of the master, create a PR to the master, or use a broker, worker, token, App, or other intermediary to route host-originated writes into the master. Never request or accept master credentials.
+>
+> **WORKSPACE:** work only in your own isolated runtime and, if the owner has provisioned one, your own private repository. No access to another host's workspace.
+>
+> **RAHM:** central, private, owner-only and outside every host workspace. You have NO read, write, admin, token, App or indirect access to RAHM. Only the owner can inspect/export your accessible work, redact it, and move selected material into RAHM.
+>
+> **PROMOTION:** owner export → private RAHM → cross-host reconciliation and validation → trusted bot-authored PR to CHILD → owner review/approval. CHILD is not MASTER; Master promotion requires a separate owner-directed PR and approval.
+>
+> **NO FALSE CLAIMS:** a prompt does not grant OAuth, create a private repository, or prove a workspace is isolated/persistent. Report each unavailable capability as NOT AVAILABLE / NOT RUN. Do not self-assign Host IDs.
+
 > **CURRENT HOST GOVERNANCE — POINT-0/086 (0++) / CURRENT-139 / 2026-11-22**
 > This addendum supersedes older embedded snapshots. Always re-read the current Reference Index, living mother, CURRENT-139 and sole active NEXT-051 from exact main HEAD.
 >
@@ -30,8 +43,8 @@
 **Stable package ID:** HAIF-GPT6-PORTABLE-STARTER-20261025-004  
 **Canonical ZIP filename:** haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip  
 **Current source package version recorded in manifest:** 0.4.9  
-**Living mother target:** 1.7.89  
-**Current continuation:** POINT-0/081 → CURRENT-134 → POINT-0/082 (0++) → IN-125 → OUT-124 → EVT-0302 → TIME-BINDING-EVT-0302 → CURRENT-135 → NEXT-051
+**Living mother target:** 1.7.95  
+**Current continuation:** POINT-0/GOLDEN → IN-130 → OUT-129 → EVT-0309 → TIME-BINDING-EVT-0309 → CURRENT-140 → NEXT-051
 
 ---
 
