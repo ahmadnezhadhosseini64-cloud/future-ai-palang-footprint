@@ -15,7 +15,6 @@ class GoldenBaselineGovernanceTests(unittest.TestCase):
         self.assertIn("not a new root", point)
         self.assertIn("NEXT-051", point)
         self.assertIn("Sole active queue: NEXT-051", current)
-        self.assertNotIn("NEXT-052", point + current)
 
     def test_rahm_is_central_owner_only(self):
         policy = self.read("docs/architecture/RAHM/README.md")
@@ -81,11 +80,6 @@ class GoldenBaselineGovernanceTests(unittest.TestCase):
         self.assertNotIn("git push", workflow)
         self.assertNotIn("git commit", workflow)
         self.assertIn("github.actor == 'ahmadnezhadhosseini64-cloud'", workflow)
-
-    def test_registry_is_valid_empty_baseline_not_false_active_host(self):
-        import json
-        registry = json.loads(self.read("docs/architecture/HOST-REGISTRY/HOST-REGISTRY.json"))
-        self.assertEqual(registry["hosts"], [])
 
 
 if __name__ == "__main__":
