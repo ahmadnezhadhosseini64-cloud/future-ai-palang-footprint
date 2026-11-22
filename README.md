@@ -7,7 +7,7 @@
 - Private RAHM setup: docs/architecture/RAHM/PRIVATE-RAHM-REPOSITORY-TEMPLATE.md
 - Host security: docs/architecture/HOST-SECURITY/OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOSITORIES.md
 - Owner-only bot PR workflow: .github/workflows/rahm-owner-controlled-child-promotion.yml
-- Verified canonical starter ZIP: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified
+- Verified canonical starter ZIP: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified (SHA-256 243baddff63eaf18129a0cbaff860f84f375655c893ee0d1cb42235ecae38646)
 - Master remains PUBLIC READ / owner-only WRITE. Hosts never receive master write credentials or bypass.
 - Raw/private host exports belong in the owner-created PRIVATE RAHM repository; the public master stores only sanitized Child candidates and governance code.
 - Operational setup remains pending: private RAHM repo, GitHub App, secrets/variables, ChatGPT connector access, Ruleset approval=1 and live isolation tests.
