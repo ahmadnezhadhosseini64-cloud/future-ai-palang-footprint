@@ -76,6 +76,7 @@ def discover_from_texts(manifest_text: str, verifier_text: str, portable_text: s
     failures = []
     declarations = []
     historical_verifier_declarations = []
+    global_master_declarations = []
     try:
         manifest = json.loads(manifest_text)
         target = manifest.get("current_checkpoint")
@@ -120,21 +121,22 @@ def discover_from_texts(manifest_text: str, verifier_text: str, portable_text: s
         if not match:
             failures.append("portable master current declaration has no CURRENT ID")
         else:
-            declarations.append({
+            global_master_declarations.append({
                 "source": "portable master top-level Current 0.0",
                 "current_id": "CURRENT-" + match.group(1),
                 "declaration": portable_claim.strip(),
+                "scope": "global_project_registry",
             })
 
-    # The manifest and portable master's top-level pointer describe the
-    # bounded historical overlay. The verifier is pinned to a historical
-    # recovery test chain and must not compete with the live overlay pointer.
-    # Append-only registries describe the global project pointer.
+    # The legacy-named manifest is a bounded historical overlay checkpoint.
+    # The portable master's top-level Current 0.0 pointer belongs to the live
+    # global project scope. The verifier is a historical test chain only.
+    # Append-only registries are additional global pointer declarations.
     for declaration in declarations:
         declaration["scope"] = "overlay_recovery"
     overlay_declarations = list(declarations)
     declarations.extend(historical_verifier_declarations)
-    registry_declarations = []
+    registry_declarations = list(global_master_declarations)
     for source, text in registry_texts.items():
         registry_declarations.extend(explicit_registry_claims(text, source))
     declarations.extend(registry_declarations)
@@ -155,7 +157,7 @@ def discover_from_texts(manifest_text: str, verifier_text: str, portable_text: s
         status = "CONSISTENT" if len(overlay_ids) == 1 else "AMBIGUOUS"
     elif overlay_ids[0] == registry_ids[0]:
         status = "CONSISTENT"
-    elif len(registry_sources) == len(REGISTRY_SOURCES):
+    elif registry_sources == set(REGISTRY_SOURCES) | {"portable master top-level Current 0.0"}:
         status = "SCOPED_CONSISTENT"
     else:
         status = "AMBIGUOUS"
@@ -172,7 +174,7 @@ def discover_from_texts(manifest_text: str, verifier_text: str, portable_text: s
         "declarations": declarations,
         "source_ids": by_source,
         "failures": failures,
-        "rule": "Use the latest live declaration per append-only registry. Keep overlay recovery and global project pointers in separate scopes; never choose a winner by numeric order.",
+        "rule": "The legacy manifest identifies a bounded historical overlay; the portable master and current registries identify the global project pointer; historical verifier targets are test fixtures, never live pointers.",
     }
 
 
