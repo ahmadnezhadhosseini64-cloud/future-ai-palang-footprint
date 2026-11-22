@@ -18,7 +18,7 @@ The two legacy checkpoints are retained as immutable historical evidence. Neithe
 
 ## Evidence and limitations
 
-The Golden branch was compared with main: 219 ahead / 26 behind; main SHA observed 30d1d3b2de09078131fa3c8a0ff7c492a7ab0d7e. The last exact-main architecture/Evidence Gate receipts passed on that SHA; Portable RAHM Conformance failed on stale package version pins. No new conformance run is claimed here.
+The Golden branch was compared with main: 219 ahead / 26 behind; main SHA observed 30d1d3b2de09078131fa3c8a0ff7c492a7ab0d7e. The last exact-main architecture/Evidence Gate receipts passed on that SHA; Portable RAHM Conformance failed on stale package version pins. PR candidate SHA bf7e7ab3fc79e598bf5456605dae2bfa75ef929c passed Portable RAHM Conformance run 45020163367 and Living Architecture Audit run 45020163375. The 24 Starter tests, 31 architecture/governance tests, package digest/inventory, paired-master byte read-back, ZIP extraction and artifact round-trip passed. PR #137 merged to Golden as 41487c7ddab3a7847e569e2fe3ac5d2d69fcca87; a fresh run on the exact post-merge Golden HEAD is pending. Release publication was skipped because the run was a PR. Independent real-host recovery and automatic live ChatGPT capture remain NOT RUN / NOT PROVEN.
 
 This event records repository inspection and scope decisions only. External service provisioning, OAuth, MCP, OpenAI API, private RAHM, independent-host recovery and package verification remain open.
 
