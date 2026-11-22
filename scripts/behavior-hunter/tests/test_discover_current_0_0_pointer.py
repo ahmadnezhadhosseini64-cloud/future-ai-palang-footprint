@@ -48,7 +48,7 @@ class PointerDiscoveryTests(unittest.TestCase):
     def test_historical_recovery_verifier_does_not_compete_with_live_overlay_pointer(self):
         manifest, verifier, portable, _ = inputs(verifier_id="CURRENT-109")
         registry = {
-            "0.0 registry": "> **CURRENT POINT-0++:** [CURRENT-150](docs/0.0/anchors/CURRENT-150.md)\\n- CURRENT-065 remains current in an older historical note.",
+            "0.0 registry": "> **CURRENT POINT-0++:** [CURRENT-150](docs/0.0/anchors/CURRENT-150.md)\n- CURRENT-065 remains current in an older historical note.",
             "integration queue": "## Current continuation pointer — POINT-0/GOLDEN / CURRENT-150 / NEXT-051",
             "reference index": "> **CURRENT POINT-0++:** [CURRENT-150](docs/0.0/anchors/CURRENT-150.md)",
         }
