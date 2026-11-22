@@ -1000,7 +1000,7 @@ The previous blob at this path began with the Integration Queue README title and
 
 ## Latest verified export delivery — implementation and next acceptance
 
-- Stable delivery contract: [Latest Verified Export](../../../portable/RAHM/LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-CONTRACT-2026-11-20-001.md); operational runbook: [Latest Verified Export Delivery Runbook](../../../portable/RAHM/LATEST-VERIFIED-EXPORT-DELIVERY-RUNBOOK.md).
+- Stable delivery contract: [Latest Verified Export](../../../portable/RAHM/LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-CONTRACT-2026-11-20-001.md); operational runbook: [Latest Verified Export Delivery Runbook](../../portable/RAHM/LATEST-VERIFIED-EXPORT-DELIVERY-RUNBOOK.md).
 - Package build Run 44730867048 passed on source SHA `e11234a6a4dac5d13938cfa0d19deae9da966b38`: internal version 0.3.9; canonical ZIP 205839 bytes; SHA-256 `b6bc06e6d50d1d3e6ec271d7f56dcde2e6981d272de3a6fed4c3c31cf428b115`; 14 files; CRC, source-byte match, extracted tests and artifact round-trip PASS.
 - Durable-release publishing has been added to the conformance workflow. Stable locator: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified.
 - Immediate acceptance: require a successful workflow on exact current main SHA; read back stable release and all five assets; verify source SHA, ZIP digest, paired mother, receipt and checksum.
