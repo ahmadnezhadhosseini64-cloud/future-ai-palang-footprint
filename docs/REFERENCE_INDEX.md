@@ -4,7 +4,7 @@
 
 - CURRENT-151 is the sole live continuation pointer. CURRENT-065 and CURRENT-066 remain historical evidence, not competing current pointers.
 - Issues #114–#123 are ten independent OPEN Partner cases; Issues #20/#21 are separate OPEN runtime and historic-census tracks.
-- Buffer and Dropbox are WAITING / DEFERRED / NON-BLOCKING. Portable package conformance remains NOT VERIFIED.
+- Buffer and Dropbox are WAITING / DEFERRED / NON-BLOCKING. PR candidate conformance passed on SHA bf7e7ab3fc79e598bf5456605dae2bfa75ef929c; exact post-merge Golden run pending. Independent-host recovery remains NOT RUN.
 - Main remains untouched; Golden/main last compared at 217 ahead / 26 behind.
 
 ---
