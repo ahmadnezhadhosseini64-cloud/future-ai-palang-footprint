@@ -2,6 +2,8 @@
 
 ## Current execution pointer — POINT-0/GOLDEN / CURRENT-150 / NEXT-051
 
+- **Stable identity policy (candidate):** POINT-0/GOLDEN, CURRENT-150 and NEXT-051 remain fixed. Revisions are CURRENT-150.01+ and NEXT-051.01+; ordinary work must not create CURRENT-151 or NEXT-052. [Policy](0.0/anchors/POINT-0-STABLE-ANCHOR-AND-REVISION-POLICY-2026-11-22.md).
+
 - Latest owner continuation: EVT-0319; current checkpoint: CURRENT-150; sole active queue: NEXT-051. POINT-0/GOLDEN remains the only canonical root and baseline.
 - Exact main HEAD `30d1d3b2de09078131fa3c8a0ff7c492a7ab0d7e`: Living Architecture Audit and Evidence Gate PASS; Portable RAHM Conformance FAIL due stale 1.7.95 package/test expectation versus synchronized living mother 1.7.97. Golden mother is 1.7.99; package correction and fresh conformance remain OPEN.
 - Ten Partner actions remain Issues #114–#123, all OPEN. Ruleset 27814009 remains active but approvals=0 and CODEOWNERS review=false. Main/Golden remain DIVERGED (Golden ahead 197 / behind 26).
