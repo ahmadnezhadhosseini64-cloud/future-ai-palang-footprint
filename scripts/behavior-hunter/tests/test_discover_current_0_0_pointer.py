@@ -60,6 +60,20 @@ class PointerDiscoveryTests(unittest.TestCase):
         historical = [d for d in result["declarations"] if d["scope"] == "historical_recovery_test"]
         self.assertEqual([d["current_id"] for d in historical], ["CURRENT-109"])
 
+    def test_decimal_revision_resolves_to_fixed_current_family(self):
+        manifest, verifier, portable, _ = inputs(verifier_id="CURRENT-109", portable_id="CURRENT-150.01")
+        registry = {
+            "0.0 registry": "> **CURRENT POINT-0++:** [CURRENT-150.01](docs/0.0/anchors/PALANG-0.0-CURRENT-20261122-150-REVISION-01-STABLE-ANCHOR-IDENTITY-LOCK.md)",
+            "integration queue": "## Current continuation pointer — POINT-0/GOLDEN / CURRENT-150.01 / NEXT-051.01",
+            "reference index": "> **CURRENT POINT-0++:** [CURRENT-150.01](docs/0.0/anchors/PALANG-0.0-CURRENT-20261122-150-REVISION-01-STABLE-ANCHOR-IDENTITY-LOCK.md)",
+        }
+        result = MODULE.discover_from_texts(manifest, verifier, portable, registry)
+        self.assertEqual(result["status"], "SCOPED_CONSISTENT")
+        self.assertEqual(result["scopes"]["overlay_recovery_current"], ["CURRENT-066"])
+        self.assertEqual(result["scopes"]["global_project_current"], ["CURRENT-150"])
+        self.assertEqual(result["candidate_ids"], ["CURRENT-066", "CURRENT-150"])
+        self.assertFalse(result["winner_selected"])
+
     def test_authoritative_registry_header_supersedes_older_live_claims(self):
         values = inputs()
         registry = {
