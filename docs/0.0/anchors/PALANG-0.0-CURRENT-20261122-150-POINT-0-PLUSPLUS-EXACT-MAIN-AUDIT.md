@@ -1,5 +1,23 @@
 # CURRENT-150 — POINT-0++ / exact-main audit and portable conformance defect
 
+> **Revision policy:** stable identity `CURRENT-150`; this candidate update is `CURRENT-150.01`. The identity does not advance to CURRENT-151 for ordinary work. See [POINT-0 Stable Anchor and Revision Policy](POINT-0-STABLE-ANCHOR-AND-REVISION-POLICY-2026-11-22.md).
+
+## CURRENT-150.01 — candidate revision (2026-11-22)
+
+- Parent stable anchor: CURRENT-150
+- Sole queue: NEXT-051 (candidate revision NEXT-051.01)
+- Canonical root: POINT-0/GOLDEN
+- Version authority: the Golden living mother is the source of truth; the portable package must synchronize to its current version. Never downgrade the mother to satisfy a stale test.
+- Portable package correction: PR #133 aligned the package manifest and tests to mother version 1.8.0, removed hard-coded version pins, synchronized the packaged mother byte-for-byte, and passed candidate Living Architecture Audit and Portable RAHM Conformance. The PR receipt recorded 24/24 starter tests, six runtime tests, a 19-file ZIP and extracted-package verification. Independent clean-host recovery remains OPEN.
+- CURRENT-065/CURRENT-066: preserve both historical IDs. The candidate reconciliation treats the legacy-named CURRENT-065 overlay manifest as a bounded overlay whose content identifies CURRENT-066; the portable mother and canonical registries identify the live global pointer CURRENT-150. CURRENT-109 verifier is a historical test fixture, not a live pointer. No numeric winner, deletion, or renumbering.
+- Link audit: portable byte-identical mother mirror relative links are resolved from the canonical mother directory, not from the starter package directory.
+- Revision lock: POINT-0/GOLDEN, CURRENT-150 and NEXT-051 are stable identities; all routine changes become append-only decimal revisions (150.01, 150.02; 051.01, 051.02).
+- This revision remains CANDIDATE until PR #135's exact final head passes both required workflows and is merged into Golden. Record the final merge SHA and UTC in the read-back receipt; do not infer it from this branch name.
+
+---
+
+# CURRENT-150 — POINT-0++ / exact-main audit and portable conformance defect
+
 - Stable ID: HAIF-CURRENT-150-POINT-0-PLUSPLUS-EXACT-MAIN-AUDIT-2026-11-22
 - Display label: POINT-0++
 - Status: ACTIVE / LIVING / EXACT-MAIN-AUDIT-COMPLETE / PORTABLE-CORRECTION-OPEN
