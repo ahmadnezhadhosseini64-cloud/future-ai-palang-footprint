@@ -77,5 +77,5 @@ All run IDs below were independently read from GitHub Actions and are paired wit
 ## 6. Registration boundary and next deterministic action
 
 - Proposal branch: `mirror-sync/evt-0315-20261122`, based on the independently read main SHA `81c4b8687ad2de61e900c84505922a823ac265a1`.
-- The event and index reconciliation are registered on this proposal branch. Main remains unchanged until owner-controlled promotion. The actual registration/final-change Git commit timestamps are to be bound from GitHub commit metadata in the linked time-binding artifact; no timestamp is inferred from this observation.
+- Event/index registration commit (GitHub metadata): `e9737b6721a73a6f92f7fcc86974a9327dfd9c6d`, committer UTC `2026-11-22T06:41:11Z`, derived Tehran `2026-11-22T10:11:11+03:30`. This is the commit that introduced EVT-0315 and the four index reconciliations. Main remains unchanged until owner-controlled promotion.
 - Next: complete exact-SHA read-back and the proposal PR's required checks; preserve owner review/promotion boundaries; continue NEXT-051, CURRENT-065/CURRENT-066 provenance reconciliation, Issues #20/#21 and BOART-FOLLOWUP-01.
