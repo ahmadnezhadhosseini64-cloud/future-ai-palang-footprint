@@ -58,3 +58,16 @@ ACTIVE / LIVING / EXECUTION-IN-PROGRESS. ایجاد نشانگر و ثبت رو�
 - Artifacts: RAHM package ID `14776322551`; digest evidence ID `14776302640`; starter ZIP receipt ID `14775709405`. These are workflow artifacts, not a durable GitHub Release.
 - Durable release refresh: SKIPPED on pull-request event. Real independent-host acceptance: NOT RUN. Owner approval/promotion to Golden remains required.
 - Earlier audit run `45079284964` failed only on a misnamed historical EVT-0241 time-binding link; the canonical filename was corrected. A fresh exact-head Living Architecture Audit is still required.
+
+
+## Final exact-head verification snapshot — PR #145 candidate
+
+- Tested PR head: `e22e6a098ff0c27cb09d5f3a782d00820d8e282b`; prospective merge tree: `a2ac55f537352411c423205d9e5c367d99d0d920` (base `d845da27aceb69bde92c84b7c638a4698ecef4e5` + PR head). This is not a completed Golden merge.
+- Living Architecture Audit [run 45079917323](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/45079917323): **SUCCESS**. Latest CURRENT-150.03 reconstruction PASS; 31 governance/architecture tests PASS; host MASTER write prohibition and owner-only RAHM checks PASS.
+- Portable RAHM Conformance [run 45079917344](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/45079917344): **SUCCESS**. 47/47 stable SHA-256 pins MATCH; 266 live-reference observations; IN-136/OUT-135 equivalence PASS; 24 extracted starter tests PASS.
+- Latest RAHM archive: 314 entries, 1,517,676 bytes, SHA-256 `487f472227f7f3996c864618f7b2275c02842b40da7125f313d18f533ae98d0f`, ZIP integrity PASS.
+- Existing canonical starter ZIP: 19 files, 288,082 bytes, SHA-256 `6b356e1503bf9c9404784e8d576d647f993ec6e3b89e6d32aba47954a5df5c60`; same stable filename and package identity; ZIP integrity, source-byte match and extracted tests PASS.
+- Mother 1.8.4 and packaged mirror are byte-identical; SHA-256 `e0fa45817223b1e813f7b58f723786d64fa770c73f11ad7af91afe4366266a04`.
+- Pointer discovery remains scoped-consistent but deliberately selects no winner: candidates CURRENT-066 and CURRENT-150. Existing ambiguity remains OPEN; no inferred adjudication.
+- Timestamp-pair audit: 4,759 timestamps normalized; 4,759 UTC/Tehran pairs; zero parse or offset failures.
+- Durable release refresh: SKIPPED on pull-request event. Real independent-host acceptance: NOT RUN. Owner-controlled Golden merge remains pending; main and Golden were not written by this host.
