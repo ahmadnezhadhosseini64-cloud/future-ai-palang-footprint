@@ -12,14 +12,14 @@
 ---
 
 
-## POINT-0/086 — canonical navigation
+## Historical predecessor — POINT-0/086 navigation
 
 - [POINT-0/086 (0++)](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261122-086-RAHM-CENTRAL-OWNER-GATE.md) → [IN-129](0.0/anchors/PALANG-0.0-IN-20261122-129-RAHM-CENTRAL-OWNER-GATE.md) → [OUT-128](0.0/anchors/PALANG-0.0-OUT-20261122-128-RAHM-CENTRAL-OWNER-GATE.md)
 - [EVT-0306](architecture/BEHAVIOR-TRACE/EVT-0306-RAHM-CENTRAL-OWNER-GATE-AND-CHILD-PROMOTION-2026-11-22.md) → [TIME-BINDING-EVT-0306](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0306-RAHM-CENTRAL-OWNER-GATE-2026-11-22.md) → [CURRENT-139](0.0/anchors/PALANG-0.0-CURRENT-20261122-139-RAHM-CENTRAL-OWNER-GATE.md) → [EVT-0307](architecture/BEHAVIOR-TRACE/EVT-0307-PORTABLE-STARTER-VERIFICATION-AND-OWNER-RELEASE-2026-11-22.md) → [TIME-BINDING-EVT-0307](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0307-PORTABLE-STARTER-VERIFICATION-AND-OWNER-RELEASE-2026-11-22.md) → [sole NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
 - [RAHM policy](architecture/RAHM/README.md) · [Owner monitoring commands](architecture/RAHM/OWNER-MONITORING-COMMANDS.md) · [Private RAHM setup](architecture/RAHM/PRIVATE-RAHM-REPOSITORY-TEMPLATE.md) · [Candidate manifest schema](architecture/RAHM/CANDIDATE-MANIFEST-SCHEMA.json) · [Promotion App setup](architecture/RAHM/PROMOTION-APP-SETUP.md) · [CHILD area](architecture/CHILD-CANDIDATES/README.md)
 - [Host security contract](architecture/HOST-SECURITY/OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOSITORIES.md) · [Living mother](architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 
-## Latest owner-directed continuation — POINT-0/086 (0++) / CURRENT-139
+## Historical predecessor — POINT-0/086 (0++) / CURRENT-139
 
 - Chain: POINT-0/085 → CURRENT-138 → POINT-0/086 (0++) → IN-129 → OUT-128 → EVT-0306 → TIME-BINDING-EVT-0306 → CURRENT-139 → EVT-0307 → TIME-BINDING-EVT-0307 → sole active queue NEXT-051.
 - Living master target: 1.7.94.
@@ -142,7 +142,7 @@
 ## Latest owner-authorized continuation — POINT-0/075 / CURRENT-128
 
 - Chain: [POINT-0/075](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-075-FIRST-HOST-REPO-WORKSPACE.md) → [IN-118](0.0/anchors/PALANG-0.0-IN-20261121-118-FIRST-HOST-REPO-WORKSPACE.md) → [OUT-117](0.0/anchors/PALANG-0.0-OUT-20261121-117-FIRST-HOST-REPO-WORKSPACE.md) → [EVT-0294](architecture/BEHAVIOR-TRACE/EVT-0294-FIRST-HOST-REPO-WORKSPACE-2026-11-21.md) → [TIME-BINDING-EVT-0294](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0294-FIRST-HOST-REPO-WORKSPACE-2026-11-21.md) → [CURRENT-128](0.0/anchors/PALANG-0.0-CURRENT-20261121-128-FIRST-HOST-REPO-WORKSPACE.md) → NEXT-051.
-- Host 1 contract: authenticated GitHub READ + isolated EXECUTE working checkout; branch-scoped WRITE only when destination connector grants it; PR for main integration.
+- Historical Host 1 draft: branch-scoped WRITE wording is superseded by POINT-0/GOLDEN. Current rule: hosts have no write path to any master branch or RAHM; owner export only.
 - Portable package: PACKAGE_VERIFIED; manifest 0.4.5; 18 files; 24/24 extracted tests PASS; CRC, source-byte match and artifact round-trip PASS. Current exact SHA-256 and build source are read from the [stable latest-verified release and receipt](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified).
 - Living Architecture Audit: SUCCESS on the verified main revision.
 - Host OAuth, destination AI-host execution, independent host recovery/restart, and 0.0 graph remediation remain OPEN / NOT RUN pending direct host evidence.
