@@ -47,3 +47,19 @@ Never place private keys, PATs, or secrets in chat or repository files. Future h
 
 ## 5. Sole active queue
 NEXT-051 remains the only queue. Its main-publication action is complete. Continue with owner-controlled GitHub App setup, Actions variable/secret configuration, Ruleset review gate, private RAHM setup, RAHM-to-CHILD synthetic test, and independent-host recovery. Do not create a parallel queue or mark host activation complete without direct evidence.
+
+
+## 6. Palang partner capability requirements and current connection
+The GitHub plugin's app-specific permission is already **Allow all actions**; no extra GitHub plugin installation is currently needed. The installed GitHub integration reports `admin / maintain / push` on this repository. Through the currently exposed tools, the partner has successfully read, created and updated files, created Git objects and branches, opened PRs, merged PRs, and verified GitHub state.
+
+| Capability | Current state | Needed path |
+|---|---|---|
+| Repository content, branches, Git objects, PRs, merge, read-back | Available and exercised | Existing GitHub connector |
+| Create a private repository (RAHM) | No create-repository action exposed | Authenticated GitHub browser/Computer Use, or a scoped user-authorized GitHub API action |
+| Create a GitHub App | No App-registration action exposed; App registration is an owner-account settings operation | Authenticated browser/Computer Use in the owner's GitHub session |
+| Actions secrets and variables | No write action exposed | GitHub App/connector with Actions write, or authenticated owner browser |
+| Workflow dispatch | No dispatch action exposed | GitHub Actions write-capable API or authenticated owner browser |
+| Ruleset changes | Read is available; no Ruleset write action exposed | GitHub Administration/Rules write permission through a dedicated API or authenticated owner browser |
+| Independent host execution | No host registered or active | Separate restricted host identity/workspace; no MASTER/RAHM credentials |
+
+Preferred expansion: a secure interactive browser/Computer Use route authenticated to the owner's GitHub account for owner-only settings tasks, plus a narrow GitHub App for repeatable repository automation. Avoid long-lived broad PATs. Never put private keys, tokens, or secret values into chat or repository files. If the browser route is unavailable, request only the exact platform-side step that cannot be executed; keep completing all other supported operations.
