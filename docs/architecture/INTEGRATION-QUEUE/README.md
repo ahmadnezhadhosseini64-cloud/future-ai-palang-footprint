@@ -1,3 +1,14 @@
+## CURRENT-149 / POINT-0++ — live governance audit
+
+- POINT-0/GOLDEN remains the single baseline; NEXT-051 remains the only active queue.
+- Chain: CURRENT-148 → EVT-0318 → TIME-BINDING-EVT-0318 → CURRENT-149 → NEXT-051.
+- Ruleset 27814009 active, but required approvals=0 and CODEOWNERS review=false; gate is not enforced.
+- Trusted promotion workflow source exists on main and Golden; App registration, repository credentials and dispatch remain unverified.
+- Main/Golden DIVERGED: Golden ahead 187 / behind 17. Issues #114–#123 remain OPEN.
+- No host write to MASTER; RAHM remains private and owner-only.
+
+---
+
 ## CURRENT-148 / POINT-0++ — Golden merge verified
 
 - POINT-0/GOLDEN remains the sole canonical baseline; NEXT-051 remains the sole active queue.

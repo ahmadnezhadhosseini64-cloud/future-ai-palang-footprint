@@ -1,3 +1,16 @@
+## CURRENT-149 / POINT-0++ — live main governance audit (2026-11-22)
+
+- Continuation: POINT-0/GOLDEN → CURRENT-148 → EVT-0318 → TIME-BINDING-EVT-0318 → CURRENT-149 → this sole NEXT-051.
+- [EVT-0318](../../architecture/BEHAVIOR-TRACE/EVT-0318-LIVE-MAIN-RULESET-AND-PROMOTION-WORKFLOW-AUDIT-2026-11-22.md) · [TIME-BINDING-EVT-0318](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0318-LIVE-MAIN-RULESET-AND-PROMOTION-WORKFLOW-AUDIT-2026-11-22.md) · [CURRENT-149](PALANG-0.0-CURRENT-20261122-149-POINT-0-PLUSPLUS-LIVE-MAIN-GOVERNANCE-AUDIT.md).
+- Live Ruleset 27814009 is ACTIVE, but required approvals = 0 and CODEOWNERS review = false; intended owner approval gate is NOT ENFORCED.
+- Promotion workflow file exists on main and Golden with matching blob SHA c9357765c0997576eee8180181f1106377033957; App/credentials/dispatch remain NOT VERIFIED / NOT RUN.
+- Main/Golden compare: DIVERGED, Golden ahead 187 / behind 17.
+- #120 requires App setup and secure variable/secret configuration; #121 requires approval count ≥1, CODEOWNERS review, read-back and negative merge test.
+- Issues #114–#123 remain OPEN; Partner runtime and private RAHM/recovery remain NOT PROVISIONED / NOT VERIFIED / NOT RUN.
+- MASTER host access remains PUBLIC READ ONLY; RAHM private and owner-only; no bypass, no auto-merge, no secrets in public.
+
+---
+
 ## CURRENT-148 / POINT-0++ — Golden merge read-back verified (2026-11-22)
 
 - Continuation: POINT-0/GOLDEN → CURRENT-146 → IN-131 → OUT-130 → POINT-0/087 → EVT-0316 → TIME-BINDING-EVT-0316 → CURRENT-147 → EVT-0317 → TIME-BINDING-EVT-0317 → CURRENT-148 → this sole NEXT-051.

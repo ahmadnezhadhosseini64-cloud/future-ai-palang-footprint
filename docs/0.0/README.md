@@ -1,3 +1,9 @@
+> **CURRENT POINT-0++:** [CURRENT-149](anchors/PALANG-0.0-CURRENT-20261122-149-POINT-0-PLUSPLUS-LIVE-MAIN-GOVERNANCE-AUDIT.md) · [EVT-0318](../architecture/BEHAVIOR-TRACE/EVT-0318-LIVE-MAIN-RULESET-AND-PROMOTION-WORKFLOW-AUDIT-2026-11-22.md) · [TIME-BINDING-EVT-0318](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0318-LIVE-MAIN-RULESET-AND-PROMOTION-WORKFLOW-AUDIT-2026-11-22.md) · sole queue [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+
+Latest live governance read-back: Ruleset 27814009 active but approvals=0 and CODEOWNERS review=false; main publication remains gated on owner configuration and trusted App workflow.
+
+---
+
 > **CURRENT POINT-0++:** [CURRENT-148](anchors/PALANG-0.0-CURRENT-20261122-148-POINT-0-PLUSPLUS-GOLDEN-MERGE-VERIFIED.md) · [EVT-0317](../architecture/BEHAVIOR-TRACE/EVT-0317-POINT-0-087-CONTINUATION-MERGED-TO-GOLDEN-2026-11-22.md) · [TIME-BINDING-EVT-0317](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0317-POINT-0-087-CONTINUATION-MERGED-TO-GOLDEN-2026-11-22.md) · sole queue [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 
 PR #126 has merged the POINT-0/087 continuation package into POINT-0/GOLDEN. Main remains separate and must be updated only through the trusted bot-authored owner-controlled promotion path.

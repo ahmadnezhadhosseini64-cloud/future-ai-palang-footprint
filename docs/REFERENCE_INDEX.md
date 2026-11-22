@@ -1,3 +1,14 @@
+## CURRENT-149 / POINT-0++ — live main governance audit
+
+- Canonical root POINT-0; Golden baseline POINT-0/GOLDEN; sole queue NEXT-051.
+- Chain: CURRENT-148 → EVT-0318 → TIME-BINDING-EVT-0318 → CURRENT-149 → NEXT-051.
+- [EVT-0318](architecture/BEHAVIOR-TRACE/EVT-0318-LIVE-MAIN-RULESET-AND-PROMOTION-WORKFLOW-AUDIT-2026-11-22.md) · [TIME-BINDING-EVT-0318](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0318-LIVE-MAIN-RULESET-AND-PROMOTION-WORKFLOW-AUDIT-2026-11-22.md) · [CURRENT-149](0.0/anchors/PALANG-0.0-CURRENT-20261122-149-POINT-0-PLUSPLUS-LIVE-MAIN-GOVERNANCE-AUDIT.md).
+- Ruleset 27814009 active, but approvals=0 and CODEOWNERS review=false; gate not enforced.
+- Promotion workflow exists on both branches, but App/credentials/dispatch not verified.
+- Main/Golden remain DIVERGED (187 ahead / 17 behind). Issues #114–#123 remain OPEN.
+
+---
+
 ## CURRENT-148 / POINT-0++ — Golden merge read-back verified
 
 - Canonical root: POINT-0; baseline: POINT-0/GOLDEN; sole queue: NEXT-051.
