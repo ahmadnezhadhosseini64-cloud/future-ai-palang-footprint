@@ -1,3 +1,20 @@
+## CURRENT-145 / POINT-0++ — independent Partner API/MCP bridge (2026-11-22)
+
+- Continuation: [CURRENT-144 / POINT-0++](PALANG-0.0-CURRENT-20261122-144-POINT-0-PLUSPLUS-GOLDEN-PUBLISHED.md) → [EVT-0314](../../architecture/BEHAVIOR-TRACE/EVT-0314-OWNER-APPROVED-INDEPENDENT-PARTNER-API-MCP-BRIDGE-BOOTSTRAP-2026-11-22.md) → [TIME-BINDING-EVT-0314](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0314-OWNER-APPROVED-PARTNER-BRIDGE-2026-11-22.md) → [CURRENT-145 / POINT-0++](PALANG-0.0-CURRENT-20261122-145-POINT-0-PLUSPLUS-PARTNER-BRIDGE-BOOTSTRAP.md) → this sole queue NEXT-051.
+- Owner approved the independent route: OpenAI API + GitHub OAuth/GitHub App + remote MCP are all components of one service, not alternatives.
+- [Bridge specification](../../architecture/PALANG-PARTNER-INDEPENDENT-API-MCP-BRIDGE-2026-11-22.md) committed on working branch `partner-control-plane-bootstrap-20261122`.
+- **DONE / READ-BACK VERIFIED (working branch):** bridge architecture file, EVT-0314, time binding, and CURRENT-145 created.
+- **OPEN — Finish and validate proposal branch; open PR to Golden.** Do not merge until checks/diff and owner review are complete.
+- **OPEN — B1:** provision private service repository and HTTPS hosting target using owner sign-in; do not put service credentials in public master.
+- **OPEN — B2:** register owner-authorized GitHub App with user authorization, callback URL, minimum permissions and owner installation.
+- **OPEN — B3–B4:** implement OAuth session broker, encrypted token store, owner identity validation, MCP server and narrow allowlisted tools.
+- **OPEN — B5–B6:** configure OpenAI API project/key in hosting secret manager, integrate Responses API, deploy HTTPS MCP endpoint. Never paste API keys, OAuth secrets, tokens or private keys into chat.
+- **OPEN — B7–B9:** execute read-only and controlled write tests, elevated-action approval tests, read-back/audit checks, and negative host-isolation tests.
+- The current ChatGPT/GitHub connector cannot provision the App, private repository, API project/key, hosting, or deployed MCP endpoint. Continue all source-control work; stop only at those actual external setup/authentication boundaries.
+- Do not mark the bridge CONNECTED or ACTIVE until live OAuth, deployed endpoint, tool inventory, test receipts and read-back are proven. No new queue; NEXT-051 remains sole queue.
+
+---
+
 ## POINT-0/GOLDEN — canonical current baseline (2026-11-22)
 
 - [POINT-0/GOLDEN](GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md) → [IN-130](PALANG-0.0-IN-20261122-130-GOLDEN-BASELINE.md) → [OUT-129](PALANG-0.0-OUT-20261122-129-GOLDEN-BASELINE.md)
