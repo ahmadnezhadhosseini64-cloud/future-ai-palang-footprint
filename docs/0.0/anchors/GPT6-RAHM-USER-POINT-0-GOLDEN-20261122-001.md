@@ -1,7 +1,7 @@
 # POINT-0/GOLDEN — مبنای طلایی معماری زنده
 
 - Stable ID: HAIF-POINT-0-GOLDEN-2026-11-22-001
-- Status: ACTIVE / LIVING / CANONICAL BASELINE / OWNER-DIRECTED
+- Status: OWNER-DIRECTED / PROPOSAL BRANCH / CANONICAL BASELINE CANDIDATE
 - Canonical root: POINT-0 (single root; this is a baseline marker, not a new root)
 - Parent: POINT-0/086 → CURRENT-139
 - Current chain: POINT-0/GOLDEN → IN-130 → OUT-129 → EVT-0309 → TIME-BINDING-EVT-0309 → CURRENT-140 → NEXT-051
@@ -84,3 +84,17 @@ GitHub نویسندهٔ PR را از تأیید PR خودش منع می‌کند
 معماری پایهٔ حاکمیت، مرز میزبان، RAHM مرکزی، مسیر owner-export و CHILD promotion در سطح طراحی تثبیت شده است. پیاده‌سازی امنیتی کامل هنوز اثبات نشده؛ به همین دلیل وضعیت کل سیستم IMPLEMENTATION PARTIAL / OPERATIONAL GATES OPEN است، نه SECURITY VERIFIED یا HOST RECOVERED.
 
 این نقطه مرجع شروع تمام کارهای آینده است. گذشته فقط منبع شواهد است؛ جهت حرکت فقط رو به جلو است.
+
+
+## 10. Owner Control Plane is not a Host Node
+
+The connected ChatGPT GitHub integration currently authenticates as the repository owner account. Repository metadata reports admin=true and push=true for this connection. This is the owner's account connection, not a credential issued to a new AI Host Node.
+
+- The owner may use this connection in the owner-control-plane role only when explicitly directing a task. It can read the public master and can create proposal branches/PRs where the connected tool exposes those actions.
+- This connector is not a separate bot identity and does not itself satisfy the owner-approval gate. A PR created through it is authored by the owner account; GitHub will not let that same author approve it.
+- The connected tool does not expose Ruleset mutation, private repository creation, GitHub App creation, or complete collaborator/installed-App/deploy-key inventory. User approval does not manufacture these API capabilities or override GitHub's controls.
+- A connection to the public master does not grant access to a private RAHM or any host-private repository. RAHM_READ_ACCESS is NOT GRANTED until the owner creates the private repo and explicitly connects it.
+- Do not treat the owner connector as a host credential or give its access to new hosts. New Host Nodes receive no master-write permission. The trusted Promotion App is a separate identity and is the only intended automated PR author.
+- The current owner connector has broad admin/push rights; this is not least-privilege isolation. The owner must keep it out of host workspaces and review connector scope in GitHub/ChatGPT settings.
+
+This separation explains why a connected account does not mean every GitHub operation is available: the connector exposes a defined subset of API actions, and repository rules plus GitHub's self-approval restriction still apply.
