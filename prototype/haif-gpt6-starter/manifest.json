@@ -244,7 +244,13 @@
     "EVT-0322",
     "TIME-BINDING-EVT-0322",
     "CURRENT-150.02 (candidate)",
-    "NEXT-051.02 (candidate)"
+    "NEXT-051.02 (candidate)",
+    "POINT-0/GOLDEN",
+    "IN-136",
+    "OUT-135",
+    "EVT-0323",
+    "CURRENT-150.03",
+    "NEXT-051.03"
   ],
   "entrypoint": "engine.py",
   "host_instructions": "GPT6_HOST_INSTRUCTIONS.md",
@@ -362,7 +368,7 @@
   "one_message_host_bootstrap": "ONE_MESSAGE_HOST_BOOTSTRAP_FA.md",
   "host_bootstrap_message": "ONE_MESSAGE_HOST_BOOTSTRAP_FA.md",
   "independent_host_bootstrap": "ONE_MESSAGE_HOST_BOOTSTRAP_FA.md",
-  "current_continuation_chain": "POINT-0/GOLDEN → CURRENT-150.01 → IN-135 → OUT-134 → EVT-0322 → TIME-BINDING-EVT-0322 → CURRENT-150.02 → NEXT-051.02",
+  "current_continuation_chain": "POINT-0/GOLDEN → IN-136 → OUT-135 → EVT-0323 → TIME-BINDING-EVT-0323 → CURRENT-150.03 → NEXT-051.03",
   "current_living_master_version": "1.8.4",
   "current_internal_version": "0.5.1",
   "universal_host_entry": "UNIVERSAL_AI_HOST_ENTRY_FA.md",
@@ -372,5 +378,7 @@
     "no direct or indirect host write route to canonical master or RAHM",
     "owner-commanded host monitoring and export with provenance and redaction",
     "bot-authored Child PR with owner approval; no auto-merge or automatic Master promotion"
-  ]
+  ],
+  "current_checkpoint": "CURRENT-150.03",
+  "last_continuation_status": "CANDIDATE / EXACT-SHA-VALIDATION-PENDING; CURRENT-150.02 / NEXT-051.02 remain last accepted Golden revisions"
 }
