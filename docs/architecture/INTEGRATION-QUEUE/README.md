@@ -1,3 +1,13 @@
+## CURRENT-148 / POINT-0++ — Golden merge verified
+
+- POINT-0/GOLDEN remains the sole canonical baseline; NEXT-051 remains the sole active queue.
+- Chain: CURRENT-146 → IN-131 → OUT-130 → POINT-0/087 → EVT-0316 → TIME-BINDING-EVT-0316 → CURRENT-147 → EVT-0317 → TIME-BINDING-EVT-0317 → CURRENT-148 → NEXT-051.
+- PR #126 merged to Golden; main remains DIVERGED from Golden (177 ahead / 17 behind).
+- Issues #114–#123 remain OPEN; Partner provisioning, GitHub App, OAuth/MCP, OpenAI API, deployment, private RAHM and recovery are not verified as operational.
+- Hosts remain PUBLIC READ ONLY on MASTER; RAHM remains private and owner-only.
+
+---
+
 ## CURRENT-147 / POINT-0++ — owner continuation and execution-capability audit
 
 - Canonical root POINT-0; Golden baseline POINT-0/GOLDEN; sole active queue NEXT-051.
