@@ -1,3 +1,16 @@
+## PR #100 and EVT-0308 — latest main/package receipt
+
+- PR #100: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/pull/100
+- Merge commit / current main HEAD: 9ebd4bcc5cfc0168276e366c1867da8709dfb566
+- Git UTC: 2026-11-22T00:00:12Z; Tehran: 2026-11-22T03:30:12+03:30
+- Proposal tree SHA and merged main tree SHA exact match: 8be81af3dcf822b10107a7efcf4c603ca7567706 (11 changed files).
+- main.protected=true.
+- Portable conformance run 44964480412: SUCCESS; stable release refreshed at 2026-11-22T00:00:37Z.
+- Latest canonical ZIP SHA-256: 243baddff63eaf18129a0cbaff860f84f375655c893ee0d1cb42235ecae38646; size 272,688 bytes.
+- Stable release: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified.
+- [EVT-0308](../../architecture/BEHAVIOR-TRACE/EVT-0308-PORTABLE-STARTER-VERIFICATION-AND-OWNER-RELEASE-2026-11-22.md) → [TIME-BINDING-EVT-0308](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0308-PORTABLE-STARTER-VERIFICATION-AND-OWNER-RELEASE-2026-11-22.md).
+- Clean-host recovery remains NOT RUN; package verification is not independent-host recovery.
+
 ## Follow-up merge and package verification — PR #98 / #99 / EVT-0307
 
 - PR #98: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/pull/98
