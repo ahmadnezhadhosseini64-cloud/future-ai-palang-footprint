@@ -1,3 +1,12 @@
+## CURRENT-151 continuation — 2026-11-22
+
+- Current checkpoint: CURRENT-151 / POINT-0/089; sole queue NEXT-051.
+- This remains the selected design plan, not proof of deployment.
+- Source-level preparation may proceed, but actual private service hosting, GitHub App, OAuth, remote MCP and OpenAI Responses API runtime remain NOT PROVISIONED / NOT VERIFIED until direct owner-side receipts and independent read-back exist.
+- MASTER stays PUBLIC READ ONLY for hosts. Any promotion proposal requires owner-controlled validation and explicit owner approval.
+
+---
+
 # PALANG PARTNER — INDEPENDENT OPENAI API + GITHUB OAUTH/MCP BRIDGE
 
 - Stable ID: HAIF-PALANG-PARTNER-INDEPENDENT-API-MCP-BRIDGE-2026-11-22-001
