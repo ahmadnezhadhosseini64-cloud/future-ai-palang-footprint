@@ -41,8 +41,8 @@ def explicit_registry_claims(text: str, source: str) -> list[dict]:
     # A current banner/pointer at the registry head is authoritative over
     # older append-only history later in the same file.
     authoritative = (
-        re.compile(r"^\s*>\s*\*\*CURRENT POINT-0\+\+:\*\*\s*\[(CURRENT-(?:\d{8}-)?\d{3})\]", re.I),
-        re.compile(r"^##\s*Current (?:continuation|execution) pointer.*?\b(CURRENT-(?:\d{8}-)?\d{3})\b", re.I),
+        re.compile(r"^\s*>\s*\*\*CURRENT POINT-0\+\+:\*\*\s*\[(CURRENT-(?:\d{8}-)?\d{3})(?:\.\d{2})?\]", re.I),
+        re.compile(r"^##\s*Current (?:continuation|execution) pointer.*?\b(CURRENT-(?:\d{8}-)?\d{3})(?:\.\d{2})?\b", re.I),
     )
     lines = text.splitlines()
     for line_no, line in enumerate(lines[:80], 1):
