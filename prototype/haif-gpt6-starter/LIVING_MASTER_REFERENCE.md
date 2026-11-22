@@ -1,3 +1,19 @@
+## الحاقیهٔ افزایشی 1.8.4-A — EVT-0323 / CURRENT-150.03 نامزد (2026-11-23)
+
+این الحاقیه نسخهٔ مادر را downgrade یا بازشماری نمی‌کند؛ نسخهٔ مادر همچنان **1.8.4** است. این فقط ثبت یک نشانگر تعاملی جدید روی همان ریشهٔ POINT-0/GOLDEN است. CURRENT-150.02 / NEXT-051.02 آخرین revision پذیرفته‌شده باقی می‌مانند تا نامزد .03 آزمون exact-SHA و ادغام کنترل‌شده را پشت سر بگذارد.
+
+- ریشه: [POINT-0/GOLDEN](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md)
+- ورودی: [IN-136](../../0.0/anchors/PALANG-0.0-IN-20261123-136-CHAT-POINT0-CONTINUATION.md)
+- خروجی: [OUT-135](../../0.0/anchors/PALANG-0.0-OUT-20261123-135-CHAT-POINT0-CONTINUATION.md)
+- رویداد: [EVT-0323](../BEHAVIOR-TRACE/EVT-0323-CHAT-POINT0-CONTINUATION-2026-11-23.md)
+- زمان رویداد: [TIME-BINDING-EVT-0323](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0323-CHAT-POINT0-CONTINUATION-2026-11-23.md)
+- بازبینی نامزد: [CURRENT-150.03](../../0.0/anchors/PALANG-0.0-CURRENT-20261123-150-REVISION-03-CHAT-POINT0-CONTINUATION.md)
+- صف یگانه، بازبینی نامزد: [NEXT-051.03](../../0.0/anchors/PALANG-0.0-NEXT-20261123-051-REVISION-03-EXECUTION-CONTINUATION.md)
+- نشانگر گفتگو: [POINT-0-GOLDEN-CHAT-CONTINUATION-2026-11-23-001](../../0.0/anchors/POINT-0-GOLDEN-CHAT-CONTINUATION-2026-11-23-001.md)
+- میراث آینه‌ای محفوظ: [EVT-0241](../BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) و [TIME-BINDING-EVT-0241](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md).
+
+قانون تقدم: سند مادر مرجع حقیقت است؛ بسته، manifest، mirror و آزمون‌ها باید با آن همگام شوند. هیچ downgrade برای سازگاری با آزمون یا بستهٔ قدیمی مجاز نیست. این الحاقیه به‌تنهایی اثبات‌کنندهٔ package conformance، release publication یا recovery میزبان مستقل نیست.
+
 ## نسخهٔ 1.8.4 — اجرای مستقل مالک‌محور، ممیزی زنده و تعیین موانع واقعی — CURRENT-150.02 (ACTIVE / LIVING)
 
 این نسخه ادامهٔ همان ریشهٔ واحد POINT-0 و همان مبنای POINT-0/GOLDEN است. هویت‌های ثابت POINT-0/GOLDEN، CURRENT-150 و NEXT-051 تغییر نمی‌کنند. CURRENT-150.02 و NEXT-051.02 پس از آزمون دقیق، ادغام کنترل‌شده به Golden و read-back پس از ادغام ACTIVE شدند؛ CURRENT-150.01 و NEXT-051.01 به‌عنوان revision قبلی حفظ می‌شوند.
