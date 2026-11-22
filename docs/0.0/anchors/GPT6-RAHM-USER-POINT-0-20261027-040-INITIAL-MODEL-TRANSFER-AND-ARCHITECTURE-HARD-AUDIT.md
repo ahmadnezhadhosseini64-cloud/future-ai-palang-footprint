@@ -11,9 +11,9 @@
 - Parent: [POINT-0/039](./GPT6-RAHM-USER-POINT-0-20261027-039-MIRROR-SYNC-AND-ARCHITECTURE-CONTINUATION.md)
 - New checkpoint: [CURRENT-089](./PALANG-0.0-CURRENT-20261027-089-INITIAL-MODEL-TRANSFER-EXECUTION.md)
 - Sole queue: [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
-- Transfer contract: [Initial Model Host Transfer Bootstrap](../portable/RAHM/INITIAL-MODEL-HOST-TRANSFER-BOOTSTRAP-2026-10-27.md)
-- Host prompt: [HOST-BOOTSTRAP-PROMPT](../portable/RAHM/HOST-BOOTSTRAP-PROMPT-2026-10-27.md)
-- Mother reference: [Initial AI Model Master Reference](../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
+- Transfer contract: [Initial Model Host Transfer Bootstrap](../../portable/RAHM/INITIAL-MODEL-HOST-TRANSFER-BOOTSTRAP-2026-10-27.md)
+- Host prompt: [HOST-BOOTSTRAP-PROMPT](../../portable/RAHM/HOST-BOOTSTRAP-PROMPT-2026-10-27.md)
+- Mother reference: [Initial AI Model Master Reference](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 
 ## User directive
 
