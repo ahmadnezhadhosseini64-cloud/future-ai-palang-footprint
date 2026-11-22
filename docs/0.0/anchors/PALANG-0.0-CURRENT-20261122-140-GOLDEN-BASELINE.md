@@ -79,3 +79,23 @@ Operational enforcement: PARTIAL / OPEN.
 Security verified: NO.
 Host active/recovered: NONE.
 Main merge/read-back: PENDING.
+
+
+## زنجیره و پیوندهای جاری
+
+- [POINT-0/GOLDEN](GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md) → [IN-130](PALANG-0.0-IN-20261122-130-GOLDEN-BASELINE.md) → [OUT-129](PALANG-0.0-OUT-20261122-129-GOLDEN-BASELINE.md)
+- [EVT-0309](../../architecture/BEHAVIOR-TRACE/EVT-0309-POINT-0-GOLDEN-BASELINE-2026-11-22.md) → [TIME-BINDING-EVT-0309](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0309-POINT-0-GOLDEN-BASELINE-2026-11-22.md)
+- [CURRENT-140](PALANG-0.0-CURRENT-20261122-140-GOLDEN-BASELINE.md) → sole [NEXT-051](PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
+- Historical mirror evidence: [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) → [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md)
+
+## دروازه‌های باز و متصل به NEXT-051
+
+- Full state recovery / reconstruct independently from IN and OUT: OPEN / NOT RUN.
+- Clean host import: OPEN / NOT RUN.
+- Second-host import: OPEN / NOT RUN.
+- Restart persistence / restart-new-session recovery: OPEN / NOT VERIFIED.
+- Automatic live message capture / idle-background capture: OPEN / NOT VERIFIED.
+- Graph / identity / parent / time triage, duplicate IDs and ambiguous parents: OPEN / REVIEW REQUIRED.
+- Historical pointer conflict CURRENT-065/CURRENT-066 remains OPEN; no winner selected. It is a bounded historical reconciliation task, not a reason to roll back or reopen the golden baseline.
+- Issue #20 and Issue #21 remain OPEN as historical evidence/reconciliation tasks; they do not replace CURRENT-140 or create a parallel queue.
+
