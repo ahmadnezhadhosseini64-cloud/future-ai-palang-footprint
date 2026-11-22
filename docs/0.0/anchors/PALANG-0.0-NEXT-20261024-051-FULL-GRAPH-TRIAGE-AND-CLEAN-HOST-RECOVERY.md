@@ -1,3 +1,15 @@
+## CURRENT-146 / POINT-0++ — ten separately tracked Partner execution actions (2026-11-22)
+
+- Continuation: CURRENT-145 → EVT-0315 → TIME-BINDING-EVT-0315 → CURRENT-146 → this sole NEXT-051.
+- Register: [PALANG-PARTNER-10-ACTION-REGISTER](../../architecture/PALANG-PARTNER-10-ACTION-REGISTER-2026-11-22.md).
+- Ten independent Issues #114–#123 are individually trackable work items under this queue, not a new queue or root.
+- [#114 service repo/hosting](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/114) · [#115 GitHub App](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/115) · [#116 OAuth broker](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/116) · [#117 MCP](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/117) · [#118 OpenAI API](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/118) · [#119 deployment](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/119) · [#120 promotion workflow](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/120) · [#121 approval gate/audit](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/121) · [#122 private RAHM](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/122) · [#123 end-to-end/recovery](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/123).
+- All ten Issues are OPEN. Issue creation does not imply provisioning or implementation.
+- MASTER remains PUBLIC READ ONLY for hosts; RAHM private and owner-only; no host write route, no public secrets, no auto-merge.
+- CURRENT-145 bridge architecture is done; runtime components remain NOT PROVISIONED / NOT BUILT / NOT RUN until direct receipts exist.
+
+---
+
 ## CURRENT-145 / POINT-0++ — independent Partner API/MCP bridge (2026-11-22)
 
 - Publication read-back: PR #109 merged to Golden; PR #110 merged to main. Main HEAD `90a0282e03e1a50b270d33ed470cbd9d15d6f5b9`; both branches tree SHA `88dcc25f6fa0c25da85f59d916218ecc4f484b9a` (MATCH).
