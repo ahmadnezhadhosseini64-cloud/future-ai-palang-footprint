@@ -1,8 +1,9 @@
 # Permanent Interaction Ledger — HAIF / RAHM
 
-- Package version: 0.4.8
-- Governing baseline: POINT-0/GOLDEN / CURRENT-140; this document is a historical interaction-ledger contract.
-- Current chain: POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051
+- Package version: 0.4.8 (historical contract snapshot; current starter candidate is 0.5.1)
+- Governing baseline: POINT-0/GOLDEN / CURRENT-151; this document remains an inherited interaction-ledger contract.
+- Current continuation pointer: POINT-0/GOLDEN → POINT-0/089 → IN-133 → OUT-132 → EVT-0320 → TIME-BINDING-EVT-0320 → CURRENT-151 → NEXT-051
+- Historical chain preserved in the body: POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051
 
 ## 1. What is permanent
 Every actual interaction received from a registered host through the authorized producer/adapter must be represented by a durable IN/OUT pair or an explicit gap/failure record. Each pair is append-only and linked to its parent point/event and the exact master revision used by that host.
