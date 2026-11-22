@@ -970,7 +970,7 @@ The previous blob at this path began with the Integration Queue README title and
 
 ## Latest verified export delivery — implementation and next acceptance
 
-- Stable delivery contract: [Latest Verified Export](../../../portable/RAHM/LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-CONTRACT-2026-11-20-001.md); operational runbook: [Latest Verified Export Delivery Runbook](../../../portable/RAHM/LATEST-VERIFIED-EXPORT-DELIVERY-RUNBOOK.md).
+- Stable delivery contract: [Latest Verified Export](../../portable/RAHM/LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-CONTRACT-2026-11-20-001.md); operational runbook: [Latest Verified Export Delivery Runbook](../../portable/RAHM/LATEST-VERIFIED-EXPORT-DELIVERY-RUNBOOK.md).
 - Package build Run 44730867048 passed on source SHA `e11234a6a4dac5d13938cfa0d19deae9da966b38`: internal version 0.3.9; canonical ZIP 205839 bytes; SHA-256 `b6bc06e6d50d1d3e6ec271d7f56dcde2e6981d272de3a6fed4c3c31cf428b115`; 14 files; CRC, source-byte match, extracted tests and artifact round-trip PASS.
 - Durable-release publishing has been added to the conformance workflow. Stable locator: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified.
 - Immediate acceptance: require a successful workflow on exact current main SHA; read back stable release and all five assets; verify source SHA, ZIP digest, paired mother, receipt and checksum.
@@ -1041,7 +1041,7 @@ The previous blob at this path began with the Integration Queue README title and
 - Master: [سند مرجع مادر](../../architecture/مدل%20اولیه%20AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md).
 - Proof protocol: [INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md](../../architecture/مدل%20اولیه%20AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md).
 - Package protocol: [INDEPENDENT_HOST_RECOVERY_PROTOCOL.md](../../../prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md).
-- Manifest: [EXPORT_MANIFEST.json](../../../portable/RAHM/EXPORT_MANIFEST.json).
+- Manifest: [EXPORT_MANIFEST.json](../../portable/RAHM/EXPORT_MANIFEST.json).
 - Keep OPEN: full state recovery / reconstruct independently from IN and OUT; clean host import / clean interactive AI-host session; second-host import; restart persistence / restart-new-session recovery; automatic live message capture and idle/background capture; graph/identity/parent/time triage, duplicate IDs and ambiguous parents.
 - Preserve CURRENT-065/CURRENT-066 OPEN with no winner selected; Issue #20 and Issue #21 remain open. NEXT-051 is the sole queue.
 - Mirror event: [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md).
