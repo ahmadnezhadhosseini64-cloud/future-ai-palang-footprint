@@ -6,7 +6,7 @@
 - Canonical root: POINT-0 (single root)
 - Canonical baseline: POINT-0/GOLDEN
 - Parent: CURRENT-142
-- Event: EVT-0312
+- Event: [EVT-0312](../../architecture/BEHAVIOR-TRACE/EVT-0312-OWNER-AUTHORIZED-DELEGATED-EXECUTION-2026-11-22.md) → [TIME-BINDING-EVT-0312](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0312-OWNER-AUTHORIZED-DELEGATED-EXECUTION-2026-11-22.md)
 - Sole active queue: NEXT-051
 - Owner: @ahmadnezhadhosseini64-cloud
 
