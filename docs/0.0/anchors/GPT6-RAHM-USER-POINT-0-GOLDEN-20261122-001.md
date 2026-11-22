@@ -39,7 +39,7 @@
 
 ## 4. RAHM مرکزی مالک
 
-RAHM فقط در فضای مرکزی، private و owner-only (فقط‌مالک) قرار دارد؛ هرگز داخل workspace میزبان نیست.
+RAHM فقط در فضای مرکزی، private و owner-only (فقط‌مالک) قرار دارد؛ هرگز داخل workspace میزبان نیست. Only the owner can access, inspect, write, administer, or promote from RAHM.
 - میزبان هیچ دسترسی READ/WRITE/ADMIN، token، App یا مسیر غیرمستقیم به RAHM ندارد.
 - فقط مالک با فرمان صریح می‌تواند یک Host ID مشخص یا همهٔ میزبان‌های ثبت‌شده و قابل‌دسترسی را رصد کند.
 - رصد به منابعی محدود است که اتصال GitHub حساب مالک واقعاً اجازهٔ خواندن آن‌ها را می‌دهد. رصد پس‌زمینه یا دائمی بدون سرویس مستقر و receipt ادعا نمی‌شود.
