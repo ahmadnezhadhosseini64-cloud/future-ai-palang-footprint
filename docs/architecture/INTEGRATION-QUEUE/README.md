@@ -2886,7 +2886,7 @@ Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-11
 - Continue NEXT-051: exact-SHA package proof, forensic original-blob recovery, graph/identity/parent/time reconciliation, CURRENT-065/CURRENT-066 and overlay-manifest review, Issues #20/#21, BOART-FOLLOWUP-01 and independent-host recovery.
 
 ## EVT-0276 — Live mirror synchronization — 2026-11-20
-- [EVT-0276](./EVT-0276-LIVE-MIRROR-SYNC-RECHECK-2026-11-20.md) / [TIME-BINDING-EVT-0276](./TIME-BINDING-EVT-0276-LIVE-MIRROR-SYNC-2026-11-20.md).
+- [EVT-0276](../BEHAVIOR-TRACE/EVT-0276-LIVE-MIRROR-SYNC-RECHECK-2026-11-20.md) / [TIME-BINDING-EVT-0276](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0276-LIVE-MIRROR-SYNC-2026-11-20.md).
 - Mirror-only under main POINT-0/064 / EVT-0257 / CURRENT-115 v1.0.8 / NEXT-051 v1.0.44; separate certificate child root CERT-POINT-0.0-20261120-002 / EVT-0274 remains separate.
 - Source blob de1b75f07241c9b313e476af5f1417177ff78c10 unchanged; Library v7 normalized match with one extra terminal LF; exact equality FALSE; no source or Library write.
 - Run-start main Audit 44688034068 and CPREL harness/evidence 44688034103 / 44688034176 PASS on exact SHA 2ea7e826931a42fb0a5957cdb58b698bb8f30e00. Latest RAHM 44687870952 PASS on prior SHA bd44a799ce6296aede0ee6be64bdf26cd0af3383; exact-main RAHM NOT VERIFIED.
