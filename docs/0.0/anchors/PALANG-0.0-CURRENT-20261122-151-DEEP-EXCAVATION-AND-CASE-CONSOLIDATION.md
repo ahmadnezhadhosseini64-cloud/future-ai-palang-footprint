@@ -87,3 +87,7 @@ Any party, including an AI collaborator, may propose a design improvement or can
 ## Acceptance boundary
 
 CURRENT-151 records source-level reconciliation and issue updates. It does not close the portable package, exact-current-main audit, service provisioning, external API/OAuth/MCP, private RAHM, independent-host recovery or security gates. Those remain OPEN / NOT VERIFIED / NOT RUN until their own evidence is read back.
+
+## Exact-SHA verification boundary
+
+The PR #137 receipts (runs 45020163367 and 45020163375) tested the earlier 1.8.1 candidate SHA bf7e7ab3fc79e598bf5456605dae2bfa75ef929c. The portable mother and manifest were subsequently advanced to 1.8.2 / EXPORT_MANIFEST 1.8.39. Therefore the earlier candidate receipts are historical evidence only and do not certify the current 1.8.2 package bytes. The current 1.8.2 source must pass both Portable RAHM Conformance and Living Architecture Audit on the exact candidate tree before it can be called CI-verified. Release publication remains main-only; clean independent-host recovery remains a separate acceptance gate.
