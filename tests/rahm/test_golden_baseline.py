@@ -23,6 +23,8 @@ class GoldenBaselineGovernanceTests(unittest.TestCase):
         self.assertIn("Hosts cannot access", policy)
         self.assertIn("owner-only", point)
         self.assertIn("Only the owner", point)
+        self.assertIn("Owner Control Plane is not a Host Node", point)
+        self.assertIn("admin=true and push=true", point)
 
     def test_host_entry_prompts_prohibit_master_and_rahm_access(self):
         paths = [
@@ -51,6 +53,7 @@ class GoldenBaselineGovernanceTests(unittest.TestCase):
             "docs/architecture/HOST-WORKSPACES/README.md",
             "prototype/haif-gpt6-starter/PERMANENT_INTERACTION_LEDGER_CONTRACT.md",
             "prototype/haif-gpt6-starter/README.md",
+            "prototype/haif-gpt6-starter/manifest.json",
         ]
         for path in paths:
             text = self.read(path)
@@ -61,6 +64,7 @@ class GoldenBaselineGovernanceTests(unittest.TestCase):
                 )
             self.assertNotIn("worker writes exclusively to the dedicated", text.lower(), path)
             self.assertNotIn("فقط به شاخه host-intake", text, path)
+            self.assertNotIn("host intake worker constrained exclusively to host-intake branch", text, path)
 
     def test_owner_promotion_workflow_never_auto_merges(self):
         workflow = self.read(".github/workflows/rahm-owner-controlled-child-promotion.yml")
