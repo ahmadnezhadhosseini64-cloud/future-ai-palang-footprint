@@ -1,4 +1,19 @@
-## Latest registered event — EVT-0309 / POINT-0/GOLDEN
+## Latest mirror-only event — EVT-0315 / POINT-0/GOLDEN
+
+- Event: [EVT-0315](./EVT-0315-LIVE-MIRROR-SYNC-RECHECK-2026-11-22.md) → [TIME-BINDING-EVT-0315](./TIME-BINDING-EVT-0315-LIVE-MIRROR-SYNC-RECHECK-2026-11-22.md).
+- Type: MIRROR-ONLY / NO-ROOT-CHANGE. It creates no new POINT-0 root, IN/OUT pair, execution checkpoint or NEXT queue.
+- Latest user-turn event: [EVT-0314](./EVT-0314-OWNER-APPROVED-INDEPENDENT-PARTNER-API-MCP-BRIDGE-BOOTSTRAP-2026-11-22.md); current checkpoint: [CURRENT-145](../../0.0/anchors/PALANG-0.0-CURRENT-20261122-145-POINT-0-PLUSPLUS-PARTNER-BRIDGE-BOOTSTRAP.md); sole active queue: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Canonical root remains POINT-0/GOLDEN. POINT-0/016, POINT-0/017, POINT-0/018 / EVT-0180, EVT-0177 and its time binding, canonical EVT-0178, EVT-0179 collision lineage and the quarantined duplicate-number draft are preserved.
+- CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; no winner selected. Issues #20/#21 remain OPEN. NEXT-052 was not created.
+
+## Latest user-turn event — EVT-0314 / CURRENT-145
+
+- [EVT-0314](./EVT-0314-OWNER-APPROVED-INDEPENDENT-PARTNER-API-MCP-BRIDGE-BOOTSTRAP-2026-11-22.md) → [TIME-BINDING-EVT-0314](./TIME-BINDING-EVT-0314-OWNER-APPROVED-PARTNER-BRIDGE-2026-11-22.md) → [CURRENT-145](../../0.0/anchors/PALANG-0.0-CURRENT-20261122-145-POINT-0-PLUSPLUS-PARTNER-BRIDGE-BOOTSTRAP.md) → sole active [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- This is the latest user-turn continuation on the single POINT-0/GOLDEN root; the mirror-only EVT-0315 does not replace it.
+
+---
+
+## Golden baseline event — EVT-0309 / POINT-0/GOLDEN
 
 - [EVT-0309](EVT-0309-POINT-0-GOLDEN-BASELINE-2026-11-22.md) → [TIME-BINDING-EVT-0309](TIME-BINDING-EVT-0309-POINT-0-GOLDEN-BASELINE-2026-11-22.md).
 - Current checkpoint: [CURRENT-140](../../0.0/anchors/PALANG-0.0-CURRENT-20261122-140-GOLDEN-BASELINE.md); sole active queue: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
@@ -24,7 +39,7 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.46
+- Version: 1.0.47
 - Date: 2026-11-21
 - Project: Future AI / Palang Footprint / HAIF
 

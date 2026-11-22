@@ -1,6 +1,11 @@
 
 
-> **CURRENT POINT-0++:** [CURRENT-144](0.0/anchors/PALANG-0.0-CURRENT-20261122-144-POINT-0-PLUSPLUS-GOLDEN-PUBLISHED.md) · [EVT-0313](architecture/BEHAVIOR-TRACE/EVT-0313-GOLDEN-SNAPSHOT-PUBLISHED-TO-MAIN-2026-11-22.md) · [TIME-BINDING-EVT-0313](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0313-GOLDEN-SNAPSHOT-PUBLISHED-2026-11-22.md) · sole queue [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+> **CURRENT POINT-0++:** [CURRENT-145](0.0/anchors/PALANG-0.0-CURRENT-20261122-145-POINT-0-PLUSPLUS-PARTNER-BRIDGE-BOOTSTRAP.md) · latest user-turn [EVT-0314](architecture/BEHAVIOR-TRACE/EVT-0314-OWNER-APPROVED-INDEPENDENT-PARTNER-API-MCP-BRIDGE-BOOTSTRAP-2026-11-22.md) → [TIME-BINDING-EVT-0314](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0314-OWNER-APPROVED-PARTNER-BRIDGE-2026-11-22.md) · latest mirror-only [EVT-0315](architecture/BEHAVIOR-TRACE/EVT-0315-LIVE-MIRROR-SYNC-RECHECK-2026-11-22.md) → [TIME-BINDING-EVT-0315](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0315-LIVE-MIRROR-SYNC-RECHECK-2026-11-22.md) · sole queue [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+
+## Current execution pointer — POINT-0/GOLDEN / CURRENT-145 / NEXT-051
+
+- Latest user-turn event: EVT-0314; current checkpoint: CURRENT-145; latest mirror-only event: EVT-0315. POINT-0/GOLDEN remains the sole root; NEXT-051 remains the sole active queue.
+- Mirror synchronization is append-only evidence; it does not create a root, IN/OUT pair, checkpoint identity or parallel queue.
 
 ## POINT-0/GOLDEN — canonical current baseline (2026-11-22)
 
@@ -17,7 +22,7 @@
 ---
 
 
-## Current interaction marker — POINT-0++ / CURRENT-142
+## Historical interaction marker — POINT-0++ / CURRENT-142 (preserved)
 
 - [POINT-0++ / CURRENT-142](0.0/anchors/PALANG-0.0-CURRENT-20261122-142-POINT-0-PLUSPLUS-GOLDEN.md) is attached to the single canonical POINT-0 root and the POINT-0/GOLDEN baseline; it is not a new root or queue.
 - All point labels (0, 0.0, 0+, 0++) and their IN/OUT/EVT/TIME/CURRENT records remain connected through this index and preserved lineage. Only POINT-0/GOLDEN governs current work; NEXT-051 is the only active queue.
