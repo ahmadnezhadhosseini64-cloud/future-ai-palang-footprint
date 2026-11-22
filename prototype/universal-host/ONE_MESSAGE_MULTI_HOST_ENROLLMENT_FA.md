@@ -11,8 +11,8 @@
 >
 > **NO FALSE CLAIMS:** a prompt does not grant OAuth, create a private repository, or prove a workspace is isolated/persistent. Report each unavailable capability as NOT AVAILABLE / NOT RUN. Do not self-assign Host IDs.
 
-> **CURRENT HOST GOVERNANCE — POINT-0/086 (0++) / CURRENT-139 / 2026-11-22**
-> This addendum supersedes older embedded snapshots. Always re-read the current Reference Index, living mother, CURRENT-139 and sole active NEXT-051 from exact main HEAD.
+> **HISTORICAL SNAPSHOT — POINT-0/086 / CURRENT-139 (superseded by POINT-0/GOLDEN)**
+> This addendum supersedes older embedded snapshots. This embedded snapshot is historical only. Current operating authority is POINT-0/GOLDEN / CURRENT-140 and sole NEXT-051.
 >
 > **Host boundary:** the canonical master is PUBLIC READ ONLY for every host. No host receives master write credentials, collaborator access, branches, PR/issue/release/workflow/settings permission, or bypass. A host works only in its own independent private runtime and, if owner-provisioned, its own private repository. It cannot enter or inspect another host's workspace or the central RAHM.
 >
