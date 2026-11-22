@@ -83,7 +83,12 @@ for p in source_files:
     links = []
     # Markdown links embedded in source-code test fixtures are examples, not repository navigation edges.
     # Audit navigation links only in documentation formats; still scan all text files for IDs and provenance.
-    if p.suffix.lower() in {".md", ".markdown", ".mdx", ".rst"}:
+    if p.name == "LIVING_MASTER_REFERENCE.md":
+        # This file is a byte-identical portable mirror of the canonical mother.
+        # Its links are audited once at the canonical source, not a second time
+        # from a different directory with different relative-path semantics.
+        link_matches = ()
+    elif p.suffix.lower() in {".md", ".markdown", ".mdx", ".rst"}:
         link_matches = re.finditer(r"!??\[[^\]]*\]\(([^)]+)\)", text)
     else:
         link_matches = ()
