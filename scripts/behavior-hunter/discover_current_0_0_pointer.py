@@ -113,7 +113,7 @@ def discover_from_texts(manifest_text: str, verifier_text: str, portable_text: s
     # The portable master has a top-level live pointer distinct from historical
     # mentions later in the document.
     top = portable_text.splitlines()[:30]
-    portable_claim = next((line for line in top if re.search(r"Current 0\.0:", line, re.I)), None)
+    portable_claim = next((line for line in top if re.search(r"Current (?:revision|0\.0):", line, re.I)), None)
     if not portable_claim:
         failures.append("portable master top-level Current 0.0 declaration not found")
     else:
