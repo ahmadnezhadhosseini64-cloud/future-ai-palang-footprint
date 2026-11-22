@@ -1,4 +1,21 @@
-## CURRENT-151 / POINT-0/089 — deep excavation and case consolidation (2026-11-22)
+## NEXT-051.01 — first stable queue revision (2026-11-22)
+
+- Stable queue identity: **NEXT-051**. This is revision **NEXT-051.01**, not a new queue.
+- Stable current family: **CURRENT-150**; current candidate revision: [CURRENT-150.01](PALANG-0.0-CURRENT-20261122-150-REVISION-01-STABLE-ANCHOR-IDENTITY-LOCK.md).
+- Canonical root and baseline: POINT-0 / POINT-0/GOLDEN.
+- Input/output/event: [IN-134](PALANG-0.0-IN-20261122-134-STABLE-ANCHOR-IDENTITY-LOCK.md) → [OUT-133](PALANG-0.0-OUT-20261122-133-STABLE-ANCHOR-IDENTITY-LOCK.md) → [EVT-0321](../../architecture/BEHAVIOR-TRACE/EVT-0321-STABLE-ANCHOR-IDENTITY-LOCK-AND-REVISION-RECEIPT-2026-11-22.md) → [TIME-BINDING-EVT-0321](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0321-STABLE-ANCHOR-IDENTITY-LOCK-2026-11-22.md).
+- Governing policy: [POINT-0 Stable Anchor and Revision Policy](POINT-0-STABLE-ANCHOR-AND-REVISION-POLICY-2026-11-22.md).
+- **Fixed identities:** POINT-0/GOLDEN, CURRENT-150 and NEXT-051 do not increment for ordinary work. Record only CURRENT-150.02+ and NEXT-051.02+ after this initial candidate revision.
+- **CURRENT-151 disposition:** preserve the existing POINT-0/089 / IN-133 / OUT-132 / EVT-0320 / CURRENT-151 transition snapshot as historical evidence. Its findings are incorporated into CURRENT-150.01; the current resolver moves to CURRENT-150.01 only after exact-SHA acceptance.
+- The ten Partner dossiers #114–#123, Issue #20 runtime/recovery, Issue #21 historic source census, package work, owner-gated promotion and all accepted follow-on work remain under this one queue.
+- Buffer and Dropbox remain WAITING / DEFERRED / NON-BLOCKING. They are not core dependencies.
+- Status: candidate queue revision; all external gates remain OPEN until direct acceptance evidence is recorded.
+
+---
+
+## Historical transition snapshot — CURRENT-151 / POINT-0/089 (2026-11-22)
+
+
 
 - Continuation: POINT-0/GOLDEN → CURRENT-150 → POINT-0/089 → IN-133 → OUT-132 → EVT-0320 → TIME-BINDING-EVT-0320 → CURRENT-151 → this sole NEXT-051.
 - [POINT-0/089](GPT6-RAHM-USER-POINT-0-20261122-089-DEEP-EXCAVATION-AND-CASE-CONSOLIDATION.md) · [IN-133](PALANG-0.0-IN-20261122-133-DEEP-EXCAVATION-AND-CASE-CONSOLIDATION.md) · [OUT-132](PALANG-0.0-OUT-20261122-132-DEEP-EXCAVATION-AND-CASE-CONSOLIDATION.md) · [EVT-0320](../../architecture/BEHAVIOR-TRACE/EVT-0320-DEEP-EXCAVATION-AND-CASE-CONSOLIDATION-2026-11-22.md) · [TIME-BINDING-EVT-0320](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0320-DEEP-EXCAVATION-AND-CASE-CONSOLIDATION-2026-11-22.md) · [CURRENT-151](PALANG-0.0-CURRENT-20261122-151-DEEP-EXCAVATION-AND-CASE-CONSOLIDATION.md).
