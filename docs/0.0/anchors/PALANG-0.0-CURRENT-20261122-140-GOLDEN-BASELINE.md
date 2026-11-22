@@ -49,6 +49,7 @@ POINT-0/GOLDEN یک marker روی همان ریشهٔ canonical POINT-0 است،
 - Portable run: 44964480412 — PASS.
 - ZIP CRC, source-byte read-back, extracted tests, artifact round-trip, release publication: PASS.
 - Independent clean-host recovery: NOT RUN.
+- Portable source package v0.5.1: CANDIDATE / NOT YET VERIFIED. The v0.5.0 release remains the last verified asset until the post-merge portable conformance run succeeds.
 
 ## Hard-audit findings and correction scope
 
