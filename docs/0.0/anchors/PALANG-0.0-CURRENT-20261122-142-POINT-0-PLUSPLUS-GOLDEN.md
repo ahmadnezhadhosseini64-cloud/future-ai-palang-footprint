@@ -2,7 +2,7 @@
 
 - Stable ID: HAIF-CURRENT-142-POINT-0-PLUSPLUS-GOLDEN-2026-11-22
 - Display label: POINT-0++
-- Status: OWNER-DIRECTED / PROPOSAL BRANCH / WAITING FOR OWNER MERGE
+- Status: MERGED INTO GOLDEN / HISTORICAL CURRENT CHECKPOINT / SUPERSEDED BY CURRENT-143
 - Canonical root: POINT-0 (single root)
 - Canonical baseline: POINT-0/GOLDEN
 - Parent: CURRENT-141
@@ -45,7 +45,7 @@ CURRENT-142 به‌عنوان نشانگر جاری، NEXT-051 را ادامه �
 تا زمان ایجاد/نصب App و تنظیم متغیر و secretهای لازم، این مسیر SPECIFIED / NOT RUN باقی می‌ماند.
 
 ## 6. وضعیت ثبت
-- CURRENT-142، EVT-0311 و TIME-BINDING-EVT-0311 در شاخهٔ پیشنهادی هستند.
+- CURRENT-142، EVT-0311 و TIME-BINDING-EVT-0311 در Golden ادغام و read-back شدند.
 - N01 و N02 در دفتر یادداشت موجودند؛ پیام حاضر با N03 ثبت می‌شود.
-- PR #103 مسیر پیشنهادی برای ورود تغییرات قبلی به Golden است؛ ادغام آن در این نقطه انجام‌شده فرض نمی‌شود.
+- PR #103 در 2026-11-22 با تأیید صریح مالک در شاخهٔ Golden ادغام شد؛ commit ادغام: `79d798bb8dac43c3d51c1f2ca022b46b4981fa65`؛ read-back شاخه تأیید شد. CURRENT-143 نشانگر جاری بعدی است.
 - NEXT-051 تنها صف فعال باقی می‌ماند.
