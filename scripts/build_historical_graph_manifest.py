@@ -114,7 +114,7 @@ for p in source_files:
             if raw_target.startswith("<") and ">" in raw_target:
                 target = raw_target[1:raw_target.index(">")]
             else:
-                title_suffix = re.match(r"""^(.*?)(?:\\s+["'][^"']*["'])$""", raw_target)
+                title_suffix = re.match(r"""^(.*?)(?:\s+["'][^"']*["'])$""", raw_target)
                 target = (title_suffix.group(1) if title_suffix else raw_target).strip()
             if not target or target.startswith("#"): continue
             u = urlparse(target)
