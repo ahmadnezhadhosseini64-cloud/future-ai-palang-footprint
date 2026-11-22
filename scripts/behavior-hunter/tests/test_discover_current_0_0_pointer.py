@@ -45,6 +45,29 @@ class PointerDiscoveryTests(unittest.TestCase):
         result = MODULE.discover_from_texts(*values)
         self.assertEqual(result["status"], "CONSISTENT")
 
+    def test_historical_recovery_verifier_does_not_compete_with_live_overlay_pointer(self):
+        manifest, verifier, portable, _ = inputs(verifier_id="CURRENT-109")
+        registry = {
+            "0.0 registry": "> **CURRENT POINT-0++:** [CURRENT-150](docs/0.0/anchors/CURRENT-150.md)\\n- CURRENT-065 remains current in an older historical note.",
+            "integration queue": "## Current continuation pointer — POINT-0/GOLDEN / CURRENT-150 / NEXT-051",
+            "reference index": "> **CURRENT POINT-0++:** [CURRENT-150](docs/0.0/anchors/CURRENT-150.md)",
+        }
+        result = MODULE.discover_from_texts(manifest, verifier, portable, registry)
+        self.assertEqual(result["status"], "SCOPED_CONSISTENT")
+        self.assertEqual(result["scopes"]["overlay_recovery_current"], ["CURRENT-066"])
+        self.assertEqual(result["scopes"]["global_project_current"], ["CURRENT-150"])
+        self.assertEqual(result["candidate_ids"], ["CURRENT-066", "CURRENT-150"])
+        historical = [d for d in result["declarations"] if d["scope"] == "historical_recovery_test"]
+        self.assertEqual([d["current_id"] for d in historical], ["CURRENT-109"])
+
+    def test_authoritative_registry_header_supersedes_older_live_claims(self):
+        values = inputs()
+        registry = {
+            "0.0 registry": "> **CURRENT POINT-0++:** [CURRENT-150](docs/0.0/anchors/CURRENT-150.md)\\n- CURRENT-065 remains current; this is historical text.",
+        }
+        result = MODULE.discover_from_texts(values[0], values[1], values[2], registry)
+        self.assertEqual(result["scopes"]["global_project_current"], ["CURRENT-150"])
+
     def test_missing_manifest_pointer_blocks(self):
         result = MODULE.discover_from_texts("{}", '"current": "docs/0.0/anchors/PALANG-0.0-CURRENT-066-TEST.md"',
                                              "- Current 0.0: [CURRENT-066](x)", {})
