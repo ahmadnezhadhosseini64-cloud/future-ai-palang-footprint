@@ -1,8 +1,8 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.8.37",
-  "manifest_status": "POINT-0/GOLDEN / CURRENT-140; living master 1.7.95; portable starter source 0.5.1 candidate; last verified ZIP 0.5.0 remains valid only for source HEAD 9ebd4bcc5cfc0168276e366c1867da8709dfb566; exact-main rebuild pending.",
-  "created_from_checkpoint": "HAIF-POINT-0-GOLDEN-2026-11-22-001 + HAIF-CURRENT-140",
+  "version": "1.8.38",
+  "manifest_status": "POINT-0/GOLDEN / CURRENT-151; living mother 1.8.1; portable starter source 0.5.1 candidate with manifest/tests/package pointers synchronized to CURRENT-151; last verified ZIP 0.5.0 remains valid only for source HEAD 9ebd4bcc5cfc0168276e366c1867da8709dfb566; fresh exact-source conformance and owner-triggered workflow receipt pending.",
+  "created_from_checkpoint": "HAIF-POINT-0-GOLDEN-2026-11-22-001 + HAIF-CURRENT-151",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [
     {
@@ -577,7 +577,13 @@
     "scripts/parent_edge_resolution.py",
     "tests/rahm/test_golden_baseline.py",
     "tests/test_graph_identifier_roles.py",
-    "tests/test_parent_edge_resolution.py"
+    "tests/test_parent_edge_resolution.py",
+    "docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261122-089-DEEP-EXCAVATION-AND-CASE-CONSOLIDATION.md",
+    "docs/0.0/anchors/PALANG-0.0-IN-20261122-133-DEEP-EXCAVATION-AND-CASE-CONSOLIDATION.md",
+    "docs/0.0/anchors/PALANG-0.0-OUT-20261122-132-DEEP-EXCAVATION-AND-CASE-CONSOLIDATION.md",
+    "docs/architecture/BEHAVIOR-TRACE/EVT-0320-DEEP-EXCAVATION-AND-CASE-CONSOLIDATION-2026-11-22.md",
+    "docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0320-DEEP-EXCAVATION-AND-CASE-CONSOLIDATION-2026-11-22.md",
+    "docs/0.0/anchors/PALANG-0.0-CURRENT-20261122-151-DEEP-EXCAVATION-AND-CASE-CONSOLIDATION.md"
   ],
   "live_reference_policy": "Mutable current-state and startup/governance references are included in each export and receive exact SHA-256 plus Git blob SHA-1 observations in the same CI run. This includes RAHM_BOOT and RAHM_ARCHITECTURE because their canonical checkpoint binding must track the current live chain. Stable core remains digest-pinned.",
   "current_chain": "POINT-0/GOLDEN → IN-130 → OUT-129 → EVT-0309 → TIME-BINDING-EVT-0309 → CURRENT-140 → NEXT-051",
