@@ -214,3 +214,8 @@ Living master: 1.7.81. Canonical chain: POINT-0/074 → IN-117 → OUT-116 → E
 ## Golden baseline precedence
 
 POINT-0/GOLDEN / CURRENT-151 is the only current operational baseline. Older package notes, snapshots, host-intake references, or branch-scoped write instructions are historical and superseded. Do not restore them or treat them as open permissions. The host must not create a PR or write to any branch of the canonical master.
+
+
+## Exact-SHA build and recovery boundary
+
+Every conformance, digest, archive and extracted-test receipt applies only to the exact source commit/tree named by that workflow. Any later source or manifest change invalidates the prior package receipt and requires a fresh build. A successful CI archive round-trip proves the package can be built, downloaded, extracted and tested in CI; it does not prove a real independent AI host imported it, retained memory across restart, or captured live ChatGPT messages. Those remain separate OPEN acceptance gates.
