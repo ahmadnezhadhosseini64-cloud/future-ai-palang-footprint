@@ -93,3 +93,29 @@
 - مخزن خصوصی Partner، GitHub App، OAuth broker، MCP runtime، OpenAI API project/key، HTTPS deployment، private RAHM و recovery مستقل هنوز تا ارائه رسیدهای واقعی NOT PROVISIONED / NOT VERIFIED هستند.
 - NEXT-051 همچنان تنها صف فعال است.
 - این ثبت باید از مسیر همان POINT-0/GOLDEN و انتشار کنترل‌شده آن به main ادامه یابد.
+
+
+## 8. Independent dossier identity and registration ledger
+
+Each action is a separate dossier, not merely a row in a plan. Its GitHub Issue is the working record for input, expected output, dependencies, execution evidence, UTC registration time, status and acceptance/read-back criteria.
+
+| # | Issue | Stable dossier ID | Actual issue registration UTC | State |
+|---:|---:|---|---|---|
+| 01 | [#114](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/114) | `PALANG-PARTNER-DOSSIER-01-SERVICE-FOUNDATION-2026-11-22-001` | `2026-11-22T07:01:07Z` | OPEN |
+| 02 | [#115](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/115) | `PALANG-PARTNER-DOSSIER-02-GITHUB-APP-2026-11-22-001` | `2026-11-22T07:01:09Z` | OPEN |
+| 03 | [#116](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/116) | `PALANG-PARTNER-DOSSIER-03-OAUTH-BROKER-2026-11-22-001` | `2026-11-22T07:01:10Z` | OPEN |
+| 04 | [#117](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/117) | `PALANG-PARTNER-DOSSIER-04-REMOTE-MCP-2026-11-22-001` | `2026-11-22T07:01:12Z` | OPEN |
+| 05 | [#118](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/118) | `PALANG-PARTNER-DOSSIER-05-OPENAI-RESPONSES-RUNTIME-2026-11-22-001` | `2026-11-22T07:01:14Z` | OPEN |
+| 06 | [#119](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/119) | `PALANG-PARTNER-DOSSIER-06-DEPLOYMENT-OBSERVABILITY-2026-11-22-001` | `2026-11-22T07:01:16Z` | OPEN |
+| 07 | [#120](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/120) | `PALANG-PARTNER-DOSSIER-07-OWNER-PROMOTION-PR-2026-11-22-001` | `2026-11-22T07:01:18Z` | OPEN |
+| 08 | [#121](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/121) | `PALANG-PARTNER-DOSSIER-08-MAIN-OWNER-APPROVAL-GATE-2026-11-22-001` | `2026-11-22T07:01:19Z` | OPEN |
+| 09 | [#122](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/122) | `PALANG-PARTNER-DOSSIER-09-PRIVATE-RAHM-2026-11-22-001` | `2026-11-22T07:01:21Z` | OPEN |
+| 10 | [#123](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/123) | `PALANG-PARTNER-DOSSIER-10-END-TO-END-RECOVERY-ISOLATION-2026-11-22-001` | `2026-11-22T07:01:23Z` | OPEN |
+
+### Shared execution and promotion rules
+
+- Each Issue contains its own input, expected output, dependencies, currently available evidence, actual UTC registration timestamp, state and acceptance/read-back criteria.
+- Issue registration is evidence of tracking only; it is not evidence that an external service was provisioned or tested.
+- Any owner, assistant or host may propose a candidate improvement. Promotion to MASTER is a separate owner-controlled decision and requires the owner's approval; no proposal self-authorizes.
+- No dossier closes by implication from another dossier. Shared dependencies do not merge their acceptance criteria.
+- All ten dossiers remain children of the same POINT-0/GOLDEN and the sole NEXT-051.
