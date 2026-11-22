@@ -1,3 +1,14 @@
+> **CURRENT POINT-0++:** [CURRENT-150](0.0/anchors/PALANG-0.0-CURRENT-20261122-150-POINT-0-PLUSPLUS-EXACT-MAIN-AUDIT.md) · [POINT-0/088](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261122-088-OWNER-CONTINUATION-EXACT-MAIN-AUDIT.md) · [IN-132](0.0/anchors/PALANG-0.0-IN-20261122-132-OWNER-CONTINUATION-EXACT-MAIN-AUDIT.md) · [OUT-131](0.0/anchors/PALANG-0.0-OUT-20261122-131-OWNER-CONTINUATION-EXACT-MAIN-AUDIT.md) · [EVT-0319](architecture/BEHAVIOR-TRACE/EVT-0319-OWNER-CONTINUATION-EXACT-MAIN-AUDIT-2026-11-22.md) → [TIME-BINDING-EVT-0319](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0319-OWNER-CONTINUATION-EXACT-MAIN-AUDIT-2026-11-22.md) · sole queue [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+
+## Current execution pointer — POINT-0/GOLDEN / CURRENT-150 / NEXT-051
+
+- Latest owner continuation: EVT-0319; current checkpoint: CURRENT-150; sole active queue: NEXT-051. POINT-0/GOLDEN remains the only canonical root and baseline.
+- Exact main HEAD `30d1d3b2de09078131fa3c8a0ff7c492a7ab0d7e`: Living Architecture Audit and Evidence Gate PASS; Portable RAHM Conformance FAIL due stale 1.7.95 package/test expectation versus synchronized living mother 1.7.97. Golden mother is 1.7.99; package correction and fresh conformance remain OPEN.
+- Ten Partner actions remain Issues #114–#123, all OPEN. Ruleset 27814009 remains active but approvals=0 and CODEOWNERS review=false. Main/Golden remain DIVERGED (Golden ahead 197 / behind 26).
+- No new root or queue; no host write path, auto-merge, bypass or secret exposure.
+
+---
+
 ## CURRENT-149 / POINT-0++ — live main governance audit
 
 - Canonical root POINT-0; Golden baseline POINT-0/GOLDEN; sole queue NEXT-051.
