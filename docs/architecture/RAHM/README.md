@@ -1,5 +1,5 @@
-> **CURRENT GOVERNANCE — POINT-0/GOLDEN / CURRENT-140 / 2026-11-22**
-> The canonical root remains the single existing POINT-0. This is the golden baseline of the already-built project, not a new project, root, or parallel queue. Use POINT-0/GOLDEN as the sole current operating baseline, then CURRENT-140 and the sole active NEXT-051. The default branch main is a publication/integration destination, not the authority for current architecture while it is behind this golden proposal. Do not count historical commits or replay prior work as a task list. Historical points and embedded snapshots are evidence only; inspect them only when the owner explicitly requests excavation or when a concrete current defect requires source evidence.
+> **CURRENT GOVERNANCE — POINT-0/GOLDEN / CURRENT-142 / POINT-0++ / 2026-11-22**
+> The canonical root remains the single existing POINT-0. This is the golden baseline of the already-built project, not a new project, root, or parallel queue. Use POINT-0/GOLDEN as the sole current operating baseline, then the connected checkpoints through CURRENT-142 / POINT-0++ and the sole active NEXT-051. The default branch main is a publication/integration destination, not the authority for current architecture while it is behind this golden proposal. Do not count historical commits or replay prior work as a task list. Historical points and embedded snapshots are evidence only; inspect them only when the owner explicitly requests excavation or when a concrete current defect requires source evidence.
 >
 > **Absolute host boundary:** every host has PUBLIC READ ONLY access to the canonical master. No host, host-held credential, host App, broker, branch, PR, issue, release, workflow, setting, or indirect relay may write to or promote content into the master. Host work remains in its own isolated runtime and, if owner-provisioned, its own private repository. The owner alone exports selected material.
 >
@@ -15,7 +15,7 @@
 - Version: 1.1.0
 - Status: GOLDEN BASELINE ALIGNED / PRIVATE STORE AND AUTOMATION SETUP PENDING
 - Owner: @ahmadnezhadhosseini64-cloud
-- Canonical root: POINT-0 only; golden baseline: docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md; current checkpoint: CURRENT-140; sole queue: NEXT-051.
+- Canonical root: POINT-0 only; golden baseline: docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md; current checkpoint: CURRENT-142 / POINT-0++; sole queue: NEXT-051.
 
 ## Purpose
 
