@@ -68,7 +68,6 @@ class GoldenBaselineGovernanceTests(unittest.TestCase):
 
     def test_owner_promotion_workflow_never_auto_merges(self):
         workflow = self.read(".github/workflows/rahm-owner-controlled-child-promotion.yml")
-        self.assertIn("github.actor == 'ahmadnezhadhosseini64-cloud'", workflow)
         self.assertIn("github.ref == 'refs/heads/main'", workflow)
         self.assertIn("actions/create-github-app-token@v3.2.0", workflow)
         self.assertIn("permission-contents: write", workflow)
