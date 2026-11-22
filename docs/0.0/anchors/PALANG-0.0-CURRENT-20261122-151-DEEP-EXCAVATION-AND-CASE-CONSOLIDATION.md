@@ -56,7 +56,7 @@ Both issues remain OPEN and independent. One cannot substitute for the other's a
 
 ## Package and exact-main evidence
 
-The last exact-main architecture audit and Evidence Gate passed on main SHA 30d1d3b2de09078131fa3c8a0ff7c492a7ab0d7e. Portable RAHM Conformance failed because the portable starter manifest, tests and documents still pin living-master version 1.7.95 / CURRENT-140 while Golden's mother is version 1.8.0 / CURRENT-150. The package is NOT VERIFIED. The source correction and a fresh exact-SHA conformance run remain required.
+The last exact-main architecture audit and Evidence Gate passed on main SHA 30d1d3b2de09078131fa3c8a0ff7c492a7ab0d7e. The earlier Portable RAHM Conformance failure was caused by stale 1.7.95 / CURRENT-140 package pins; the source correction has been made. PR candidate SHA bf7e7ab3fc79e598bf5456605dae2bfa75ef929c passed Portable RAHM Conformance run 45020163367 and Living Architecture Audit run 45020163375. The 24 Starter tests, 31 architecture/governance tests, package digest/inventory, paired-master byte read-back, ZIP extraction and artifact round-trip passed. PR #137 merged to Golden as 41487c7ddab3a7847e569e2fe3ac5d2d69fcca87; a fresh run on the exact post-merge Golden HEAD is pending. Release publication was skipped because the run was a PR. Independent real-host recovery and automatic live ChatGPT capture remain NOT RUN / NOT PROVEN.
 
 At the last branch comparison, Golden was 219 commits ahead and 26 behind main. Main was not modified by this work.
 
