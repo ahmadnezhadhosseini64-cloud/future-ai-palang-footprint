@@ -56,3 +56,24 @@ Issueهای #114 تا #123 به‌صورت مستقل بازخوانی شدند 
 ## 7. تصمیم اجرایی
 
 کارهای قابل‌انجام با ابزار فعلی انجام و read-back شدند. موارد نیازمند مالک/سرویس بیرونی در NEXT-051.02 با علت و معیار پذیرش نگه داشته می‌شوند؛ هیچ‌کدام به‌دلیل مستندسازی یا موفقیت CI بسته نمی‌شوند.
+
+
+
+## Correction and continuation links
+
+Post-merge artifact inspection found that the successful portable workflow's `rahm-recovery-equivalence.json` still reported the historical pair `IN-130 / OUT-129` and `CURRENT-140`. This does not prove recovery equivalence for the new candidate. The cause is that the validator reads the last matching `## تازه‌ترین زنجیره` section in `docs/0.0/README.md`; the new candidate had only updated the top resolver banner, not that parseable section. CURRENT-150.02 remains CANDIDATE until the exact post-fix artifact reports `IN-135 / OUT-134`, `CURRENT-150.02` and `NEXT-051.02`.
+
+
+
+## Continuation and recovery links — CURRENT-150.02 candidate
+
+- Point: [POINT-0/GOLDEN](GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md)
+- Input: [IN-135](PALANG-0.0-IN-20261122-135-PARTNER-AUTONOMOUS-EXECUTION.md)
+- Output: [OUT-134](PALANG-0.0-OUT-20261122-134-PARTNER-AUTONOMOUS-EXECUTION.md)
+- Event: [EVT-0322](../../architecture/BEHAVIOR-TRACE/EVT-0322-PARTNER-AUTONOMOUS-EXECUTION-AND-LIVE-STATE-AUDIT-2026-11-22.md)
+- Current: [CURRENT-150.02](PALANG-0.0-CURRENT-20261122-150-REVISION-02-PARTNER-AUTONOMOUS-EXECUTION-AUDIT.md)
+- Sole queue: [NEXT-051.02](PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
+- Living mother: [MASTER](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
+- Recovery proof protocol: [INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001](../../architecture/مدل%20اولیه%20AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md)
+- Portable host recovery protocol: [INDEPENDENT_HOST_RECOVERY_PROTOCOL](../../../prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md)
+- Portable export manifest: [EXPORT_MANIFEST](../../portable/RAHM/EXPORT_MANIFEST.json)

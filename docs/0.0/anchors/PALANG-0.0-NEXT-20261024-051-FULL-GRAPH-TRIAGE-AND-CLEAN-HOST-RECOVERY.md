@@ -3,7 +3,11 @@
 - هویت صف ثابت: **NEXT-051**؛ این فقط revision **NEXT-051.02** است، نه صف جدید.
 - هویت خانوادهٔ جاری: **CURRENT-150**؛ revision نامزد: [CURRENT-150.02](PALANG-0.0-CURRENT-20261122-150-REVISION-02-PARTNER-AUTONOMOUS-EXECUTION-AUDIT.md).
 - آخرین revision پذیرفته‌شده تا پیش از پذیرش این نامزد: CURRENT-150.01 / NEXT-051.01.
-- ریشه و مبنا: POINT-0 / POINT-0/GOLDEN؛ هیچ root یا queue موازی ساخته نمی‌شود.
+- ریشه و مبنا: POINT-0 / [POINT-0/GOLDEN](GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md)؛ هیچ root یا queue موازی ساخته نمی‌شود.
+
+- Point: [POINT-0/GOLDEN](GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md)
+- Historical mirror lineage: [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) · [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md).
+
 - زنجیره: [IN-135](PALANG-0.0-IN-20261122-135-PARTNER-AUTONOMOUS-EXECUTION.md) → [OUT-134](PALANG-0.0-OUT-20261122-134-PARTNER-AUTONOMOUS-EXECUTION.md) → [EVT-0322](../../architecture/BEHAVIOR-TRACE/EVT-0322-PARTNER-AUTONOMOUS-EXECUTION-AND-LIVE-STATE-AUDIT-2026-11-22.md) → [TIME-BINDING-EVT-0322](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0322-PARTNER-AUTONOMOUS-EXECUTION-AND-LIVE-STATE-AUDIT-2026-11-22.md).
 - سیاست هویت ثابت: [POINT-0 Stable Anchor and Revision Policy](POINT-0-STABLE-ANCHOR-AND-REVISION-POLICY-2026-11-22.md).
 - وضعیت این revision: CANDIDATE / ACTIVE DEVELOPMENT / EXACT-SHA ACCEPTANCE PENDING. تا پذیرش دقیق، NEXT-051.01 resolver فعال باقی می‌ماند.
@@ -1314,3 +1318,23 @@ The owner requires one universal AI-host entry path and an initial runnable vers
 - Important GitHub constraint: PR author cannot approve own PR. Owner-authored PRs need an owner-only, PR-scoped bypass or a trusted owner-controlled promotion bot; never grant bypass or master write to hosts.
 - Live configuration currently has approval count 0 and Code Owner review false. Do not mark this gate VERIFIED until UI save and API read-back confirm final values.
 - Keep this work under NEXT-051; do not create NEXT-052 or another queue.
+
+## Historical mirror lineage preserved
+
+- [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md)
+- [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md)
+
+## Open acceptance gates — not inferred from repository CI
+
+- Full state recovery: OPEN / NOT RUN.
+- Clean host import: OPEN / NOT RUN.
+- Second-host import: OPEN / NOT RUN.
+- Restart persistence: OPEN / NOT RUN.
+- Automatic live message capture and idle/background capture: OPEN / NOT RUN.
+- Graph/identity/parent/time triage, including duplicate IDs and ambiguous parents: OPEN / NOT VERIFIED.
+- CURRENT-065/CURRENT-066 conflict remains OPEN; no winner selected.
+- Issue #20 and Issue #21 remain OPEN.
+
+## Recovery-equivalence correction gate
+
+The successful CI job is not accepted as latest-chain proof until its generated `rahm-recovery-equivalence.json` reports `IN-135 / OUT-134`, `CURRENT-150.02` and `NEXT-051.02`. The previously inspected artifact reported historical `IN-130 / OUT-129` and `CURRENT-140`; this mismatch is being corrected before CURRENT-150.02 can become ACTIVE.

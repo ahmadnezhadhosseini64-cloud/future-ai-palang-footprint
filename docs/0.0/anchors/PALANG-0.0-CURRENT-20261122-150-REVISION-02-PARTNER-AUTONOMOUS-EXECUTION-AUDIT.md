@@ -5,7 +5,7 @@
 - Revision document ID: HAIF-CURRENT-150-REV-02-PARTNER-AUTONOMOUS-EXECUTION-AUDIT-2026-11-22
 - Status: CANDIDATE / ACTIVE DEVELOPMENT / EXACT-SHA ACCEPTANCE PENDING
 - Canonical root: POINT-0
-- Golden baseline: POINT-0/GOLDEN
+- Golden baseline: [POINT-0/GOLDEN](GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md)
 - Parent accepted revision: CURRENT-150.01
 - Input: [IN-135](PALANG-0.0-IN-20261122-135-PARTNER-AUTONOMOUS-EXECUTION.md)
 - Output: [OUT-134](PALANG-0.0-OUT-20261122-134-PARTNER-AUTONOMOUS-EXECUTION.md)
@@ -69,3 +69,23 @@ MASTER remains PUBLIC READ ONLY for hosts. RAHM remains private and owner-only o
 4. After merge to Golden, exact post-merge audit and conformance must pass on the merge SHA/tree.
 5. The merge SHA/tree and artifact receipts must be read back before CURRENT-150.02 / NEXT-051.02 become ACTIVE.
 6. Durable Release publication, owner approval gate, external service provisioning and real-host recovery remain separate OPEN gates; passing CI does not close them.
+
+## Historical mirror lineage preserved
+
+- [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md)
+- [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md)
+
+## Open acceptance gates — not inferred from repository CI
+
+- Full state recovery: OPEN / NOT RUN.
+- Clean host import: OPEN / NOT RUN.
+- Second-host import: OPEN / NOT RUN.
+- Restart persistence: OPEN / NOT RUN.
+- Automatic live message capture and idle/background capture: OPEN / NOT RUN.
+- Graph/identity/parent/time triage, including duplicate IDs and ambiguous parents: OPEN / NOT VERIFIED.
+- CURRENT-065/CURRENT-066 conflict remains OPEN; no winner selected.
+- Issue #20 and Issue #21 remain OPEN.
+
+## Recovery-equivalence acceptance check
+
+The post-merge artifact from run `45047882025` still reported historical `IN-130 / OUT-129` and `CURRENT-140`; this is not proof for CURRENT-150.02. Acceptance requires the corrected artifact to report `IN-135 / OUT-134`, `CURRENT-150.02` and `NEXT-051.02` from the latest parseable chain in docs/0.0/README.md.

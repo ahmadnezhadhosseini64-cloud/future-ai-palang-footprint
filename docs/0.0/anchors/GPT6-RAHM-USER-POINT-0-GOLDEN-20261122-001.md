@@ -4,7 +4,7 @@
 - Status: ACTIVE / LIVING / GOLDEN BASELINE PUBLISHED TO MAIN
 - Canonical root: POINT-0 (single root; this is a baseline marker, not a new root)
 - Parent: POINT-0/086 → CURRENT-139
-- Current chain: POINT-0/GOLDEN → IN-130 → OUT-129 → EVT-0309 → TIME-BINDING-EVT-0309 → CURRENT-140 → EVT-0310 → TIME-BINDING-EVT-0310 → CURRENT-141 → EVT-0311 → TIME-BINDING-EVT-0311 → CURRENT-142 / POINT-0++ → EVT-0312 → CURRENT-143 → EVT-0313 → TIME-BINDING-EVT-0313 → CURRENT-144 / POINT-0++ → sole NEXT-051
+- Current chain: POINT-0/GOLDEN → CURRENT-150.01 → IN-135 → OUT-134 → EVT-0322 → TIME-BINDING-EVT-0322 → CURRENT-150.02 → NEXT-051.02
 - Owner: @ahmadnezhadhosseini64-cloud
 - Canonical repository: ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
 - Baseline source HEAD recorded at Golden creation (historical source reference, not the current operating ref): 9ebd4bcc5cfc0168276e366c1867da8709dfb566
@@ -98,3 +98,23 @@ The connected ChatGPT GitHub integration currently authenticates as the reposito
 - The current owner connector has broad admin/push rights; this is not least-privilege isolation. The owner must keep it out of host workspaces and review connector scope in GitHub/ChatGPT settings.
 
 This separation explains why a connected account does not mean every GitHub operation is available: the connector exposes a defined subset of API actions, and repository rules plus GitHub's self-approval restriction still apply.
+
+
+## Latest live continuation — same canonical root
+
+The fixed root identity remains POINT-0/GOLDEN. No new Point-0 root, numbered point, Golden baseline or queue is introduced. The latest candidate is linked here:
+
+
+
+## Continuation and recovery links — CURRENT-150.02 candidate
+
+- Point: [POINT-0/GOLDEN](GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md)
+- Input: [IN-135](PALANG-0.0-IN-20261122-135-PARTNER-AUTONOMOUS-EXECUTION.md)
+- Output: [OUT-134](PALANG-0.0-OUT-20261122-134-PARTNER-AUTONOMOUS-EXECUTION.md)
+- Event: [EVT-0322](../../architecture/BEHAVIOR-TRACE/EVT-0322-PARTNER-AUTONOMOUS-EXECUTION-AND-LIVE-STATE-AUDIT-2026-11-22.md)
+- Current: [CURRENT-150.02](PALANG-0.0-CURRENT-20261122-150-REVISION-02-PARTNER-AUTONOMOUS-EXECUTION-AUDIT.md)
+- Sole queue: [NEXT-051.02](PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
+- Living mother: [MASTER](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
+- Recovery proof protocol: [INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001](../../architecture/مدل%20اولیه%20AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md)
+- Portable host recovery protocol: [INDEPENDENT_HOST_RECOVERY_PROTOCOL](../../../prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md)
+- Portable export manifest: [EXPORT_MANIFEST](../../portable/RAHM/EXPORT_MANIFEST.json)

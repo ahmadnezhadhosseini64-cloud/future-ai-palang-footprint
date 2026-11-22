@@ -2257,3 +2257,12 @@ The previous points 077 and 078 remain linked in the preceding historical sectio
 
 این زنجیره، وضعیت جاری نقطهٔ ۰ طلایی است؛ تنها ریشه همان POINT-0 و تنها صف فعال NEXT-051 است. تمام تاریخچهٔ قبلی محفوظ می‌ماند، اما هیچ snapshot یا دستور تاریخی بدون شاهد جدید و فرمان مالک جایگزین این زنجیره نمی‌شود.
 
+
+
+---
+
+## تازه‌ترین زنجیره — POINT-0/GOLDEN → IN-135 → OUT-134 → EVT-0322 → CURRENT-150.02 → NEXT-051.02
+
+[POINT-0/GOLDEN](anchors/GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md) → [IN-135](anchors/PALANG-0.0-IN-20261122-135-PARTNER-AUTONOMOUS-EXECUTION.md) → [OUT-134](anchors/PALANG-0.0-OUT-20261122-134-PARTNER-AUTONOMOUS-EXECUTION.md) → [EVT-0322](../architecture/BEHAVIOR-TRACE/EVT-0322-PARTNER-AUTONOMOUS-EXECUTION-AND-LIVE-STATE-AUDIT-2026-11-22.md) → [TIME-BINDING-EVT-0322](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0322-PARTNER-AUTONOMOUS-EXECUTION-AND-LIVE-STATE-AUDIT-2026-11-22.md) → [CURRENT-150.02](anchors/PALANG-0.0-CURRENT-20261122-150-REVISION-02-PARTNER-AUTONOMOUS-EXECUTION-AUDIT.md) → [NEXT-051.02](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+
+این آخرین زنجیرهٔ نامزد روی همان ریشهٔ POINT-0/GOLDEN است. CURRENT-150.01 / NEXT-051.01 تا زمان قبولی آزمون دقیق این نامزد آخرین resolver پذیرفته‌شده باقی می‌مانند.

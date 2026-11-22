@@ -2,7 +2,7 @@
 
 - Stable ID: HAIF-EVT-0322-PARTNER-AUTONOMOUS-EXECUTION-AUDIT-2026-11-22
 - Canonical root: POINT-0
-- Baseline: POINT-0/GOLDEN
+- Baseline: [POINT-0/GOLDEN](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md)
 - Parent: CURRENT-150.01
 - Input/output: IN-135 → OUT-134
 - Time binding: TIME-BINDING-EVT-0322
@@ -31,3 +31,12 @@
 ## زمان
 
 زمان دقیق پیام مالک در این رویداد UNKNOWN است. زمان ثبت رویداد فقط از metadata واقعی commit در TIME-BINDING-EVT-0322 گرفته می‌شود.
+
+## Linked continuation and correction
+
+- Point: [POINT-0/GOLDEN](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md)
+- Current: [CURRENT-150.02](../../0.0/anchors/PALANG-0.0-CURRENT-20261122-150-REVISION-02-PARTNER-AUTONOMOUS-EXECUTION-AUDIT.md)
+- Queue: [NEXT-051.02](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
+- Mirror lineage: [EVT-0241](EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) · [TIME-BINDING-EVT-0241](TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md).
+
+The artifact read-back showed that the first portable run's recovery-equivalence receipt still used IN-130/OUT-129 and CURRENT-140. This was a historical validator selection, not evidence of the new candidate's recovery. The latest-chain index, point and IN/OUT shared-link graph are being corrected; acceptance remains pending until a new artifact proves IN-135/OUT-134 and CURRENT-150.02/NEXT-051.02.
