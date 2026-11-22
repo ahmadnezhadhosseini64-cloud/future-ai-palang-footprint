@@ -20,3 +20,15 @@
 ## محدودیت‌های اثبات‌شده
 
 Private RAHM repository و GitHub App هنوز ایجاد/نصب نشده‌اند؛ Ruleset approval count=0 و Code Owner review=false؛ collaborator/App/deploy-key audit از اتصال فعلی قابل خواندن نبود؛ هیچ میزبان واقعی ثبت/فعال نیست؛ clean-host recovery اجرا نشده است. این موارد OPEN می‌مانند.
+
+
+## زنجیره و مراجع canonical
+
+- [POINT-0/GOLDEN](GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md)
+- [EVT-0309](../../architecture/BEHAVIOR-TRACE/EVT-0309-POINT-0-GOLDEN-BASELINE-2026-11-22.md)
+- [CURRENT-140](PALANG-0.0-CURRENT-20261122-140-GOLDEN-BASELINE.md)
+- [NEXT-051](PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
+- [Living mother](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
+- [Independent host recovery proof protocol](../../architecture/مدل%20اولیه%20AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md)
+- [Portable package recovery protocol](../../../prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md)
+- [Portable RAHM export manifest](../../portable/RAHM/EXPORT_MANIFEST.json)
