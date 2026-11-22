@@ -38,6 +38,9 @@ class GovernancePathTests(unittest.TestCase):
         self.assertIn("gh release upload", workflow)
         self.assertIn("name: haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean", workflow)
         self.assertNotIn("github-token: ${{ github.token }}", workflow)
+        self.assertNotIn("docs/0.0/anchors/**", workflow)
+        self.assertNotIn("docs/architecture/BEHAVIOR-TRACE/**", workflow)
+        self.assertIn("docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md", workflow)
         self.assertNotIn("git push", workflow)
         self.assertIn("github.actor == 'ahmadnezhadhosseini64-cloud'", workflow)
 
