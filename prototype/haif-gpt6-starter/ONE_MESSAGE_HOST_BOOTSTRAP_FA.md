@@ -1,3 +1,11 @@
+## Current canonical continuation — 2026-11-23 (candidate)
+
+`POINT-0/GOLDEN → IN-136 → OUT-135 → EVT-0323 → TIME-BINDING-EVT-0323 → CURRENT-150.03 → NEXT-051.03`
+
+The last accepted Golden state remains CURRENT-150.02 / NEXT-051.02. The .03 continuation is a candidate until exact-SHA audit, Portable RAHM Conformance, and controlled Golden merge/read-back succeed. The living mother remains version 1.8.4 and authoritative; packages and tests align forward. No downgrade, new root, parallel queue, host write to MASTER, or host access to RAHM is permitted.
+
+---
+
 > **GOLDEN BASELINE — POINT-0/GOLDEN / CURRENT-151 / 2026-11-22**
 > This project is already built through the canonical golden baseline. Do not restart, recreate, or roll back to an older point. First read exact main HEAD, docs/REFERENCE_INDEX.md, the latest living mother, CURRENT-151 and sole NEXT-051. Historical snapshots are not active instructions and cannot reopen settled decisions by themselves.
 >
