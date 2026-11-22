@@ -24,7 +24,9 @@ except Exception:
 # Evidence Gate outputs are retained and counted separately from architectural source nodes.
 all_files = sorted(p for p in ROOT.rglob("*") if p.is_file() and ".git" not in p.parts and "__pycache__" not in p.parts and p.suffix != ".pyc" and "audit-output" not in p.parts)
 evidence_files = [p for p in all_files if re.fullmatch(r"evidence-gate-.*\.txt", p.name) and p.parent.as_posix() == "evidence"]
-source_files = [p for p in all_files if p not in evidence_files]
+# The portable living-mother copy is byte-identical to the canonical source;
+# retain it in the package inventory but do not count it as a second graph source.
+source_files = [p for p in all_files if p not in evidence_files and p.name != "LIVING_MASTER_REFERENCE.md"]
 zero_paths = [p for p in all_files if "0.0" in p.as_posix()]
 checkpoint_paths = [p for p in all_files if "checkpoint" in p.as_posix().lower()]
 evt_files = [p for p in all_files if re.search(r"(^|/)EVT-\d+-.+", p.name)]
