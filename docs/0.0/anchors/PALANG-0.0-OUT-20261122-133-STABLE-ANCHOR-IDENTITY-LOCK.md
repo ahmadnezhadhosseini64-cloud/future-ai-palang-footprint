@@ -5,7 +5,7 @@
 - Root: POINT-0 / POINT-0/GOLDEN
 - Stable current identity: CURRENT-150
 - Sole stable queue identity: NEXT-051
-- Status: REGISTERED / LIVING / CANDIDATE
+- Status: ACTIVE / LIVING / ACCEPTED-ON-POST-MERGE-EXACT-SHA
 
 ## Decision
 
@@ -28,4 +28,4 @@ No ordinary change may create CURRENT-151, NEXT-052, another root or a parallel 
 
 ## Acceptance boundary
 
-This decision becomes ACTIVE only after the candidate policy, CURRENT-150.01, NEXT-051.01, living mother, portable reference and canonical indexes are merged to POINT-0/GOLDEN and read back; exact-SHA audit and portable conformance must pass. External-host and service gates remain separate and OPEN.
+Acceptance is complete for this architectural identity decision: PR #140 merged to POINT-0/GOLDEN as `2769815b2597c50da16e6ed399c902a20f471902`; exact post-merge audit `45026845151` and portable conformance `45026845147` passed on that merge SHA. External-host and service gates remain separate and OPEN.
