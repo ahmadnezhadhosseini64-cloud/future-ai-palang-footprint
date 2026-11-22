@@ -52,7 +52,7 @@ POINT-0/GOLDEN یک marker روی همان ریشهٔ canonical POINT-0 است،
 
 ## Hard-audit findings and correction scope
 
-- Only two workflows carry write permissions: the owner-controlled RAHM promotion App workflow (contents/pull-requests, to create bot PRs to CHILD only) and portable release publisher (contents:write only for stable release assets; no git push/commit to main). Other workflow paths are read-only.
+- Repository-content write is limited to two workflows: the owner-controlled RAHM Promotion App (contents/pull-requests only to create bot PRs to CHILD) and the portable release publisher (contents:write only for stable release assets; no git push/commit to main). The two Pages workflows have pages:write and id-token:write only for site deployment. All other workflow paths are read-only. None of these permissions is host-facing.
 - Legacy scripts/host_adapter_github_worker.py is disabled and exits before any GitHub API call.
 - control-plane/controller.py is read-only with respect to GitHub; it writes only local runner artifacts.
 - The active docs and host entry prompts have been aligned on this proposal branch to supersede old host-intake and branch-write language.
