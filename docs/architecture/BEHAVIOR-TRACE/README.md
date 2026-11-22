@@ -1,9 +1,25 @@
-## Latest registered event — EVT-0309 / POINT-0/GOLDEN
+## Latest registered global 0.0 chain — EVT-0309 / POINT-0/GOLDEN
 
 - [EVT-0309](EVT-0309-POINT-0-GOLDEN-BASELINE-2026-11-22.md) → [TIME-BINDING-EVT-0309](TIME-BINDING-EVT-0309-POINT-0-GOLDEN-BASELINE-2026-11-22.md).
-- Current checkpoint: [CURRENT-140](../../0.0/anchors/PALANG-0.0-CURRENT-20261122-140-GOLDEN-BASELINE.md); sole active queue: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Global 0.0 checkpoint: [CURRENT-140](../../0.0/anchors/PALANG-0.0-CURRENT-20261122-140-GOLDEN-BASELINE.md); sole active queue: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- This is the latest global 0.0 chain in `docs/0.0/README.md`: POINT-0/GOLDEN → IN-130 → OUT-129 → EVT-0309 → TIME-BINDING-EVT-0309 → CURRENT-140 → NEXT-051. It remains distinct from the later user-turn execution checkpoint CURRENT-145.
 - Golden baseline: one existing POINT-0 root; no host-to-master write route; RAHM is central owner-only and outside host workspaces.
-- Historical event numbers and snapshots remain preserved; new events continue after EVT-0309.
+- Historical mirror contract [EVT-0241](EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) / [TIME-BINDING-EVT-0241](TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md) remains preserved in the index.
+- Historical event numbers and snapshots remain preserved; no global pointer is replaced by a user-turn checkpoint without source-backed owner adjudication.
+
+---
+
+## Latest user-turn continuation — EVT-0314 / POINT-0/GOLDEN / CURRENT-145
+
+- [EVT-0314](EVT-0314-OWNER-APPROVED-INDEPENDENT-PARTNER-API-MCP-BRIDGE-BOOTSTRAP-2026-11-22.md) → [TIME-BINDING-EVT-0314](TIME-BINDING-EVT-0314-OWNER-APPROVED-PARTNER-BRIDGE-2026-11-22.md).
+- Canonical root remains [POINT-0/GOLDEN](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md), on the single POINT-0 root. Current user-turn execution checkpoint: [CURRENT-145](../../0.0/anchors/PALANG-0.0-CURRENT-20261122-145-POINT-0-PLUSPLUS-PARTNER-BRIDGE-BOOTSTRAP.md); sole active queue remains [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- This user-turn checkpoint does not silently replace the global 0.0 chain at CURRENT-140; both scopes and their evidence remain preserved.
+
+## Latest mirror-only event — EVT-0315 (2026-11-22)
+
+- [EVT-0315](EVT-0315-LIVE-MIRROR-SYNC-RECHECK-2026-11-22.md) / [TIME-BINDING-EVT-0315](TIME-BINDING-EVT-0315-LIVE-MIRROR-SYNC-RECHECK-2026-11-22.md) is registered on proposal branch `mirror-sync/evt-0315-20261122`; no root, IN/OUT pair, checkpoint or successor queue is created.
+- Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` remains unchanged; Library v7 normalized match with one extra terminal LF; no Library rewrite.
+- Initial PR-head Audit 44995087180 failed because the first index edit removed the global CURRENT-140 marker; RAHM run 44995087173 passed on the same exact SHA. The corrective commit restored the separate global-chain and user-turn scopes. Corrected Audit 44995428830 and RAHM 44995428868 both PASS on exact branch SHA `e2cbc94743608b09c6448c19a3eca32b964c4acd`; PR #113 remains OPEN / CLEAN for owner review.
 
 ---
 
@@ -24,8 +40,8 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.46
-- Date: 2026-11-21
+- Version: 1.0.49
+- Date: 2026-11-22
 - Project: Future AI / Palang Footprint / HAIF
 
 ## مسیرهای بازیابی

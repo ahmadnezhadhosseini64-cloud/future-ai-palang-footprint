@@ -1,0 +1,30 @@
+# TIME BINDING — EVT-0315 Live Mirror Synchronization Recheck
+
+- Event: EVT-0315
+- Stable ID: PALANG-EVT-0315-LIVE-MIRROR-SYNC-2026-11-22
+- Canonical time rule: GitHub commit metadata UTC is the permanent base; Tehran is derived from the same instant (+03:30).
+- Run observation UTC: `2026-11-22T06:26:57Z`; Tehran `2026-11-22T09:56:57+03:30`. This is the automation runtime's observation time, not a commit or Library operation time.
+- Main HEAD at run start: `81c4b8687ad2de61e900c84505922a823ac265a1`.
+- Main HEAD commit UTC: `2026-11-22T03:10:24Z`; Tehran `2026-11-22T06:40:24+03:30`.
+- Event/index registration commit: `e9737b6721a73a6f92f7fcc86974a9327dfd9c6d`.
+- Event/index registration committer UTC: `2026-11-22T06:41:11Z`.
+- Event/index registration Tehran equivalent: `2026-11-22T10:11:11+03:30`.
+- Parent SHA of registration commit: `81c4b8687ad2de61e900c84505922a823ac265a1`.
+- Registration commit URL: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/e9737b6721a73a6f92f7fcc86974a9327dfd9c6d
+- Proposal branch: `mirror-sync/evt-0315-20261122`.
+- Canonical source blob: `de1b75f07241c9b313e476af5f1417177ff78c10`, 10,479 characters.
+- Library mirror: stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, backing file ID `file_00000000942881f8a4a3833110229fb7`, exact version 7, 10,480 characters; one extra terminal LF only.
+- Library metadata modified UTC: `2026-10-24T04:45:28.479773Z`; Tehran `2026-10-24T08:15:28.479773+03:30`.
+- Exact Library read-operation time: UNKNOWN.
+- Actions run times are separate from commit times; exact tested SHAs are recorded in EVT-0315.
+- Buffer/Persistent Memory: NOT VERIFIED. Dropbox: OPEN / NOT VERIFIED. External independent-host recovery: NOT RUN.
+- Time-binding artifact initial write commit: `9ee6015b5f1bf7982ca39e309a2670861c259de3`; GitHub committer UTC `2026-11-22T06:42:58Z`; derived Tehran `2026-11-22T10:12:58+03:30`.
+- PR-head Audit run 44995087180 tested exact SHA `45f9be8ed1165235552cf2ca1266f91662164d3b` and FAILED with `behavior_index_missing_CURRENT-140` after the first index edit conflated global chain CURRENT-140 with user-turn checkpoint CURRENT-145. RAHM run 44995087173 PASSED on that same exact SHA.
+- Corrective action: restore the global chain markers from `docs/0.0/README.md` and keep the user-turn continuation as a separate section; rerun the Living Architecture Audit on the corrected branch head.
+- Corrective commit preserving both scopes: `e2cbc94743608b09c6448c19a3eca32b964c4acd`; committer UTC `2026-11-22T06:49:00Z`; Tehran `2026-11-22T10:19:00+03:30`.
+- Corrected branch-head Living Architecture Audit: run 44995428830, SUCCESS on exact SHA `e2cbc94743608b09c6448c19a3eca32b964c4acd`.
+- Corrected branch-head RAHM Security and Promotion Conformance: run 44995428868, SUCCESS on exact SHA `e2cbc94743608b09c6448c19a3eca32b964c4acd`.
+- Initial PR-head Audit failure 44995087180 on `45f9be8ed1165235552cf2ca1266f91662164d3b` is preserved; it detected the removed global CURRENT-140 marker and was corrected without resolving CURRENT-065/CURRENT-066.
+- PR #113 is OPEN / CLEAN; base main remains `81c4b8687ad2de61e900c84505922a823ac265a1`; no merge has occurred.
+- The time-binding artifact's own final correction commit is intentionally not self-referenced. Its exact SHA and committer timestamp are taken from GitHub commit metadata after the write; that metadata, not the run observation time, is canonical for the final time-binding write.
+- Status: BOUND / EVENT-INDEX REGISTRATION COMMIT VERIFIED / TIME-BINDING READ-BACK VERIFIED.
