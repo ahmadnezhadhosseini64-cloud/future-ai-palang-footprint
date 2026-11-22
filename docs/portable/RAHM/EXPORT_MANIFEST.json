@@ -236,8 +236,8 @@
     {
       "path": "scripts/audit_historical_0_0_graph.py",
       "version": "repository-current",
-      "git_blob_sha": "be892f7be4de1102687320657a34e595fa696fb5",
-      "sha256": "cec706ca8c9c0d6740f649e2d7d2eb57a9cf13575062ff2f743cff1998012849",
+      "git_blob_sha": "a3aaa94918a2b1045baf136c9e8602f5b7f95d30",
+      "sha256": "d0a7bf5b4e48f127022485cfb2b966ca4c28ff7f6c405d0daffa72a4b561b10a",
       "git_blob_sha1_recorded": "a3aaa94918a2b1045baf136c9e8602f5b7f95d30"
     },
     {
