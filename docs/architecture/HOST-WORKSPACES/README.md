@@ -1,3 +1,14 @@
+> **CURRENT GOVERNANCE — POINT-0/GOLDEN / CURRENT-140 / 2026-11-22**
+> The canonical root remains the single existing POINT-0. This is the golden baseline of the already-built project, not a new project, root, or parallel queue. Always retrieve exact main HEAD, the current living mother, CURRENT-140, and the sole active NEXT-051 before acting. Historical points and embedded snapshots are evidence only; they never override this baseline or reopen a settled decision by themselves.
+>
+> **Absolute host boundary:** every host has PUBLIC READ ONLY access to the canonical master. No host, host-held credential, host App, broker, branch, PR, issue, release, workflow, setting, or indirect relay may write to or promote content into the master. Host work remains in its own isolated runtime and, if owner-provisioned, its own private repository. The owner alone exports selected material.
+>
+> **RAHM placement:** RAHM is a central, private, owner-only quarantine outside every host workspace. Hosts cannot access, inspect, write, administer, or promote anything from RAHM. Raw/private exports are stored only in the owner-controlled private repository future-ai-palang-rahm; the public master contains policy, schemas, validators, workflows, and sanitized Child candidates only.
+>
+> **Learning and promotion:** OWNER COMMAND → inspect only verified and accessible Host IDs → owner export/redaction → private RAHM quarantine → cross-host reconciliation → schema/hash/privacy/provenance/tests → trusted bot-authored PR to CHILD → owner review and approval. CHILD is not MASTER. Any later Master update requires a separate owner-directed PR and a separate owner approval.
+>
+> **No false activation:** no host is ACTIVE until its identity, workspace isolation, repository scope, connector permissions, and acceptance receipt are verified. No continuous monitoring is claimed unless a separate owner-controlled service is actually deployed and evidenced.
+
 # محیط‌های کاری مستقل میزبان‌ها — HAIF
 
 - Architecture checkpoint: POINT-0/086 / CURRENT-139
@@ -32,7 +43,7 @@
 هر میزبان فقط محیط خودش را می‌بیند/استفاده می‌کند، مگر آنچه در مجوزش صریحاً مجاز شده باشد. هیچ پوشهٔ میزبان محل نگهداری مرجع مادر نیست.
 
 ## جریان کاری
-`MASTER SNAPSHOT (READ-ONLY) → HOST WORKSPACE → HOST-SCOPED INTAKE → QUARANTINE → OWNER MONITORING → CROSS-HOST RECONCILIATION → RAHM TEST → CHILD CANDIDATE → EXPLICIT OWNER DECISION → MASTER`
+`MASTER SNAPSHOT (READ-ONLY) → ISOLATED HOST WORKSPACE → OWNER-COMMANDED EXPORT → PRIVATE OWNER-ONLY RAHM → CROSS-HOST RECONCILIATION → VALIDATION → BOT PR TO CHILD → OWNER APPROVAL → CHILD CANDIDATE`
 
 - میزبان ابتدا فقط snapshot مرجع را با commit، نسخه و digest می‌خواند.
 - هر ورودی با host_id، session_id، parent checkpoint، timestamp قابل اثبات یا UNKNOWN، digest و privacy/redaction metadata ثبت می‌شود.
@@ -44,10 +55,10 @@
 ## مرز امنیتی مهم
 پوشه‌بندی داخل یک مخزن Git به‌تنهایی کنترل دسترسی امنیتی نیست؛ GitHub مجوزهای معمول مخزن را در سطح repository اعمال می‌کند، نه مجوز واقعی per-folder. بنابراین:
 1. میزبان AI هرگز credential نوشتن مستقیم مخزن اصلی یا main دریافت نمی‌کند.
-2. دریافت فقط از طریق broker/adapter احراز هویت‌شده و allowlist مسیرهای host-scoped انجام می‌شود.
+2. میزبان هیچ دریافت/ارسال مستقیم به مخزن مادر یا RAHM ندارد. فقط مالک و با فرمان مشخص، خروجی قابل‌دسترسی همان میزبان را استخراج و پالایش می‌کند.
 3. هیچ مقصد intake روی شاخه‌های مخزن مادر وجود ندارد. میزبان خروجی را فقط در workspace خودش نگه می‌دارد؛ مالک export پالایش‌شده را به RAHM خصوصی منتقل می‌کند. هر broker آینده فقط می‌تواند به مخزن خصوصی همان میزبان محدود شود و هرگز به master متصل نیست.
 4. دسترسی به مخزن اصلی، secrets، workflowها، registry، master و workspace میزبان‌های دیگر برای میزبان ممنوع است.
-5. اگر جداسازی واقعی credential/مسیر در GitHub قابل تضمین نباشد، میزبان باید در مخزن خصوصی/مجزای intake یا sandbox جدا اجرا شود و فقط پاکت پالایش‌شده از broker وارد مخزن اصلی شود.
+5. اگر جداسازی واقعی runtime اثبات نشود، میزبان ACTIVE نمی‌شود. مخزن خصوصی اختصاصی میزبان صرفاً workspace همان میزبان است؛ هیچ broker یا پاکت میزبان مستقیماً وارد مخزن مادر یا RAHM نمی‌شود.
 6. branch protection واقعی و credential کم‌اختیار هنوز باید در GitHub تنظیم و با آزمون منفی اثبات شود؛ وجود این سند جایگزین آن نیست.
 
 ## چرخه عمر
@@ -84,3 +95,8 @@ workspace واقعی باید در sandbox/فضای خصوصی میزبان ای
 - Host ID و Workspace ID رسمی فقط پس از رسید واقعی و تأیید مالک تخصیص می‌یابند.
 - workspace باید در محیط خصوصی خود میزبان provision شود؛ پوشهٔ داخل مخزن مشترک مرز امنیتی نیست.
 - پذیرش میزبان، persistence، export، recovery و جداسازی فنی تا رسید مستقیم OPEN می‌مانند.
+
+
+## Golden baseline authority
+
+This README is governed by POINT-0/GOLDEN and CURRENT-140. The only bridge from a host workspace to central RAHM is an owner-commanded export performed by the owner. The host has no direct or indirect master-write route. Historical `host-intake` and host-facing broker descriptions are superseded and inactive.

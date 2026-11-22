@@ -1,3 +1,13 @@
+# POINT-0/GOLDEN — current portable host contract
+
+- Living master: 1.7.95
+- Package version: 0.5.1 candidate
+- Current chain: POINT-0/GOLDEN → IN-130 → OUT-129 → EVT-0309 → TIME-BINDING-EVT-0309 → CURRENT-140 → NEXT-051
+- Master access for hosts: PUBLIC READ ONLY; no direct or indirect host write path.
+- RAHM: central, private, owner-only, outside host workspaces; only owner-commanded export is permitted.
+- Child promotion: trusted bot-authored PR plus owner review; no auto-merge.
+- Old snapshots and embedded chains are historical; always resolve current pointers from the Reference Index.
+
 # Interaction response and anchor protocol
 
 Package family: HAIF GPT-6 Portable Starter

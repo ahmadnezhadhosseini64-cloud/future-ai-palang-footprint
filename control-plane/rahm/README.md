@@ -8,4 +8,4 @@ This directory is the public, non-sensitive control-plane index for RAHM. It con
 - Promotion workflow: .github/workflows/rahm-owner-controlled-child-promotion.yml
 - Child landing area: docs/architecture/CHILD-CANDIDATES/README.md
 
-The private repository ahmadnezhadhosseini64-cloud/future-ai-palang-rahm is NOT YET CREATED / NOT VERIFIED. No host has access to it. The master repository is public, so this directory is documentation only.
+The private repository ahmadnezhadhosseini64-cloud/future-ai-palang-rahm is NOT YET CREATED / NOT VERIFIED. No host has access to it. The master repository is public, so this directory is documentation only. Current baseline: POINT-0/GOLDEN / CURRENT-140; NEXT-051 remains the sole active queue.

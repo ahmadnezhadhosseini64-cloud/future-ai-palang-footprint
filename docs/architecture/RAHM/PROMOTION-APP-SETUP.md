@@ -22,11 +22,12 @@ Open https://github.com/settings/apps/new while signed in as the repository owne
 | Metadata | Read (GitHub default) | Required repository metadata |
 | Contents | Read and write | Checkout main, create a dedicated promotion branch, push candidate files |
 | Pull requests | Read and write | Open a bot-authored PR for owner review |
+| Workflows | Write | Required only to push a reviewed Golden snapshot candidate branch when it contains `.github/workflows/` changes; it does not grant approval, merge, bypass or settings control |
 
 All other repository permissions must remain No access, especially:
-- Administration, Rules, Branch protection, Actions, Secrets, Variables, Environments, Workflows, Deployments, Issues, Releases, Webhooks and Pages.
+- Administration, Rules, Branch protection, Actions, Secrets, Variables, Environments, Deployments, Issues, Releases, Webhooks and Pages.
 
-The App is a PR publisher only. It is not an approver, merger, administrator, or bypass identity.
+The App is a PR publisher only. Workflows: write is used solely to push the Golden snapshot candidate branch when the reviewed tree contains workflow files. It is not an approver, merger, administrator, or bypass identity.
 
 ## 3. Install scope
 
@@ -58,7 +59,17 @@ Create a fine-grained personal access token limited to the single private reposi
 
 This credential is separate from the Promotion App token. It can read RAHM only; it cannot write to master.
 
-## 6. First end-to-end test
+## 6. Golden-to-main snapshot test
+
+1. Ensure the Golden baseline PR is owner-merged into the canonical Golden branch.
+2. Create/install the App with only the permissions above and add the repository variable/secret.
+3. From Actions, select **Golden to main — Owner-Controlled Snapshot PR** on the Golden branch; enter `PROMOTE_GOLDEN_TO_MAIN`.
+4. Confirm the run is accepted only for the owner and the Golden branch.
+5. Confirm the App creates a new branch whose parent is the captured main HEAD and whose tree SHA exactly equals the Golden source tree SHA.
+6. Confirm the resulting PR author is the App bot, base is main, no old commits were replayed, and no merge/approval/bypass occurred.
+7. Owner independently reviews and approves only after the Ruleset requires one owner approval and checks pass.
+
+## 7. RAHM-to-CHILD end-to-end test
 
 After the private RAHM repository, App, installation, variable and secrets are configured:
 1. Put a synthetic, owner-redacted candidate with manifest.json, proposal.md, evidence.json and validation.json in private RAHM.
@@ -69,7 +80,7 @@ After the private RAHM repository, App, installation, variable and secrets are c
 6. ChatGPT performs a technical/security review report; the owner submits the required GitHub approval.
 7. Confirm the merge only admits the candidate to CHILD. Master promotion remains a separate future PR.
 
-## 7. Ruleset order
+## 8. Ruleset order
 
 Do not change required approvals from 0 to 1 until the bot-authored PR route has passed the synthetic end-to-end test. Then set:
 - Required approving reviews = 1

@@ -1,11 +1,24 @@
+## POINT-0/GOLDEN — canonical current baseline (2026-11-22)
 
-## POINT-0/086 — canonical navigation
+- [POINT-0/GOLDEN](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md) → [IN-130](../../0.0/anchors/PALANG-0.0-IN-20261122-130-GOLDEN-BASELINE.md) → [OUT-129](../../0.0/anchors/PALANG-0.0-OUT-20261122-129-GOLDEN-BASELINE.md)
+- [EVT-0309](../BEHAVIOR-TRACE/EVT-0309-POINT-0-GOLDEN-BASELINE-2026-11-22.md) → [TIME-BINDING-EVT-0309](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0309-POINT-0-GOLDEN-BASELINE-2026-11-22.md) → [CURRENT-140](../../0.0/anchors/PALANG-0.0-CURRENT-20261122-140-GOLDEN-BASELINE.md) → sole active [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
+- Baseline source HEAD: `9ebd4bcc5cfc0168276e366c1867da8709dfb566`; tree: `8be81af3dcf822b10107a7efcf4c603ca7567706`.
+- Latest verified portable release at that source: [haif-latest-verified](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified); ZIP SHA-256 `243baddff63eaf18129a0cbaff860f84f375655c893ee0d1cb42235ecae38646`; clean-host recovery remains NOT RUN.
+- Master: hosts PUBLIC READ ONLY; no direct or indirect host write route. RAHM: central, private, owner-only, outside all host workspaces. Owner-commanded export is the only bridge.
+- Ruleset 27814009 is active, but approval count is still 0 and Code Owner review is OFF. Do not call the approval gate enforced until owner UI change and live read-back.
+- No host is registered or ACTIVE; private RAHM repository and Promotion App are not yet provisioned. NEXT-051 remains the only active queue.
+- **Forward-only precedence:** this golden baseline supersedes older embedded snapshots and historical host-intake/branch-write instructions. Use historical material only as evidence; do not restore an older operating state without new evidence and explicit owner decision.
+
+---
+
+
+## Historical predecessor — POINT-0/086 navigation
 
 - [POINT-0/086 (0++)](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261122-086-RAHM-CENTRAL-OWNER-GATE.md) → [IN-129](../../0.0/anchors/PALANG-0.0-IN-20261122-129-RAHM-CENTRAL-OWNER-GATE.md) → [OUT-128](../../0.0/anchors/PALANG-0.0-OUT-20261122-128-RAHM-CENTRAL-OWNER-GATE.md)
 - [EVT-0306](../BEHAVIOR-TRACE/EVT-0306-RAHM-CENTRAL-OWNER-GATE-AND-CHILD-PROMOTION-2026-11-22.md) → [TIME-BINDING-EVT-0306](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0306-RAHM-CENTRAL-OWNER-GATE-2026-11-22.md) → [CURRENT-139](../../0.0/anchors/PALANG-0.0-CURRENT-20261122-139-RAHM-CENTRAL-OWNER-GATE.md) → [EVT-0307](../BEHAVIOR-TRACE/EVT-0307-PORTABLE-STARTER-VERIFICATION-AND-OWNER-RELEASE-2026-11-22.md) → [TIME-BINDING-EVT-0307](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0307-PORTABLE-STARTER-VERIFICATION-AND-OWNER-RELEASE-2026-11-22.md) → [sole NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
 - [RAHM policy](../RAHM/README.md) · [Owner monitoring commands](../RAHM/OWNER-MONITORING-COMMANDS.md) · [Private RAHM setup](../RAHM/PRIVATE-RAHM-REPOSITORY-TEMPLATE.md) · [CHILD area](../CHILD-CANDIDATES/README.md)
 
-## Latest owner-directed continuation — POINT-0/086 (0++) / CURRENT-139
+## Historical predecessor — POINT-0/086 (0++) / CURRENT-139
 
 - Chain: POINT-0/085 → CURRENT-138 → POINT-0/086 (0++) → IN-129 → OUT-128 → EVT-0306 → TIME-BINDING-EVT-0306 → CURRENT-139 → EVT-0307 → TIME-BINDING-EVT-0307 → sole active queue NEXT-051.
 - Living master target: 1.7.94.

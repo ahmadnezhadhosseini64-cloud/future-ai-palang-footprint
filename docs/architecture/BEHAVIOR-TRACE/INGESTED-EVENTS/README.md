@@ -10,4 +10,4 @@ This directory preserves the historical repository-side event ledger contract. I
 - Raw private conversations, secrets, credentials, personal data, and unredacted payloads must never be copied into the public master.
 - Historical records on any old intake branch are evidence only; they do not prove live host capture, host persistence, or authorization.
 
-Current policy: docs/architecture/RAHM/README.md and CURRENT-139.
+Current policy: POINT-0/GOLDEN / CURRENT-140 and docs/architecture/RAHM/README.md. Historical host-intake is frozen; no host write destination exists in the master.

@@ -1,6 +1,17 @@
+> **CURRENT GOVERNANCE — POINT-0/GOLDEN / CURRENT-140 / 2026-11-22**
+> The canonical root remains the single existing POINT-0. This is the golden baseline of the already-built project, not a new project, root, or parallel queue. Always retrieve exact main HEAD, the current living mother, CURRENT-140, and the sole active NEXT-051 before acting. Historical points and embedded snapshots are evidence only; they never override this baseline or reopen a settled decision by themselves.
+>
+> **Absolute host boundary:** every host has PUBLIC READ ONLY access to the canonical master. No host, host-held credential, host App, broker, branch, PR, issue, release, workflow, setting, or indirect relay may write to or promote content into the master. Host work remains in its own isolated runtime and, if owner-provisioned, its own private repository. The owner alone exports selected material.
+>
+> **RAHM placement:** RAHM is a central, private, owner-only quarantine outside every host workspace. Hosts cannot access, inspect, write, administer, or promote anything from RAHM. Raw/private exports are stored only in the owner-controlled private repository future-ai-palang-rahm; the public master contains policy, schemas, validators, workflows, and sanitized Child candidates only.
+>
+> **Learning and promotion:** OWNER COMMAND → inspect only verified and accessible Host IDs → owner export/redaction → private RAHM quarantine → cross-host reconciliation → schema/hash/privacy/provenance/tests → trusted bot-authored PR to CHILD → owner review and approval. CHILD is not MASTER. Any later Master update requires a separate owner-directed PR and a separate owner approval.
+>
+> **No false activation:** no host is ACTIVE until its identity, workspace isolation, repository scope, connector permissions, and acceptance receipt are verified. No continuous monitoring is claimed unless a separate owner-controlled service is actually deployed and evidenced.
+
 # دفتر ثبت میزبان‌ها — HAIF
 
-- Governance checkpoint: CURRENT-139
+- Governance checkpoint: CURRENT-140
 - Architecture: POINT-0/086 (0++) and CURRENT-139
 - Status: REGISTRY STRUCTURE REGISTERED / NO LIVE HOSTS VERIFIED
 
@@ -78,3 +89,8 @@ Each verified Host ID maps to at most one owner-created PRIVATE repository and o
 The registry explicitly records that master_access is PUBLIC_READ_ONLY, master_write_access is false, rahm_access is NONE, and host_direct_write_access is false for every host. Any broker, if later deployed, is owner-controlled and can write only to the one private repository mapped to that Host ID. It has no master or RAHM route.
 
 Host ID issuance: the owner commands ChatGPT/the HAIF control plane; the assistant checks the current registry, validates the direct enrollment receipt, and issues the next unique HAIF-HOST-YYYYMMDD-NNN ID. A host never chooses or self-assigns its ID. Issuance alone does not activate a host.
+
+
+## Golden baseline status
+
+The live registry file is intentionally empty (`hosts: []`) at the current golden baseline. This means no real host is registered or ACTIVE. Registration is owner-commanded only and requires a direct receipt and identity review. Every future record must preserve `master_access=PUBLIC_READ_ONLY`, `master_write_access=false`, `rahm_access=NONE`, and `host_direct_write_access=false`. A private host repository, if created, is isolated to that host and is not a route to RAHM or MASTER.
