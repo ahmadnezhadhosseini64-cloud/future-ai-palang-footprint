@@ -82,3 +82,8 @@ No host has a route, credential, token, branch permission, PR permission, workfl
 ## Golden baseline invariant — no host-to-master route
 
 No host has a direct or indirect write path to the canonical master. A host may work only in its isolated runtime and an owner-provisioned private repository assigned to that host. The host cannot send data to RAHM or the master through a broker, branch, PR, workflow, token, or intermediary. The owner is the only bridge: owner-commanded inspection/export → owner redaction → private RAHM. The former `host-intake` route and direct GitHub worker are frozen/disabled and must never be reactivated as an intake path.
+
+
+## Owner connector boundary — POINT-0/GOLDEN
+
+The ChatGPT GitHub connection currently authenticates as the repository owner and reports admin/push permission on the public master. It is an owner-account connector, not a Host Node identity or the Promotion App. Do not expose it to host workspaces. It does not automatically grant access to the private RAHM repository or private host repositories, and it does not expose every GitHub admin operation. The separate Promotion App must author bot PRs; the owner reviews and approves them.
