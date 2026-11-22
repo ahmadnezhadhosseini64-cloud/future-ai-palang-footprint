@@ -76,6 +76,7 @@ def discover_from_texts(manifest_text: str, verifier_text: str, portable_text: s
     failures = []
     declarations = []
     historical_verifier_declarations = []
+    global_master_declarations = []
     try:
         manifest = json.loads(manifest_text)
         target = manifest.get("current_checkpoint")
@@ -120,21 +121,22 @@ def discover_from_texts(manifest_text: str, verifier_text: str, portable_text: s
         if not match:
             failures.append("portable master current declaration has no CURRENT ID")
         else:
-            declarations.append({
+            global_master_declarations.append({
                 "source": "portable master top-level Current 0.0",
                 "current_id": "CURRENT-" + match.group(1),
                 "declaration": portable_claim.strip(),
+                "scope": "global_project_registry",
             })
 
-    # The manifest and portable master's top-level pointer describe the
-    # bounded historical overlay. The verifier is pinned to a historical
-    # recovery test chain and must not compete with the live overlay pointer.
-    # Append-only registries describe the global project pointer.
+    # The legacy-named manifest describes only the bounded historical overlay.
+    # The portable master's top-level Current 0.0 pointer and append-only
+    # registries describe the live global project pointer. The verifier is a
+    # historical recovery test fixture, not a competing live pointer.
     for declaration in declarations:
         declaration["scope"] = "overlay_recovery"
     overlay_declarations = list(declarations)
     declarations.extend(historical_verifier_declarations)
-    registry_declarations = []
+    registry_declarations = list(global_master_declarations)
     for source, text in registry_texts.items():
         registry_declarations.extend(explicit_registry_claims(text, source))
     declarations.extend(registry_declarations)
@@ -155,7 +157,7 @@ def discover_from_texts(manifest_text: str, verifier_text: str, portable_text: s
         status = "CONSISTENT" if len(overlay_ids) == 1 else "AMBIGUOUS"
     elif overlay_ids[0] == registry_ids[0]:
         status = "CONSISTENT"
-    elif len(registry_sources) == len(REGISTRY_SOURCES):
+    elif len(registry_sources) >= len(REGISTRY_SOURCES):
         status = "SCOPED_CONSISTENT"
     else:
         status = "AMBIGUOUS"
