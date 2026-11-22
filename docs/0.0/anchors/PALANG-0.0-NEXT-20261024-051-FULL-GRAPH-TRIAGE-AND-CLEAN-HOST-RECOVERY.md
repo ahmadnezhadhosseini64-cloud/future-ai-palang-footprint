@@ -5,8 +5,8 @@
 - CURRENT-065/CURRENT-066 remain historical checkpoints; CURRENT-151 is the sole live continuation pointer. Their open work is functionally routed to Issues #20/#21 and existing graph triage.
 - Issues #114–#123 are ten independent OPEN Partner cases. Issues #20/#21 remain independent OPEN runtime and historic-census tracks.
 - Buffer and Dropbox: WAITING / DEFERRED / NON-BLOCKING. Mirror is supporting evidence only when independently read back and recoverable.
-- Portable RAHM package: NOT VERIFIED pending fresh exact-source conformance and artifact receipt.
-- Main remains untouched; Golden is 217 commits ahead / 26 behind at last comparison.
+- PR candidate conformance passed on SHA bf7e7ab3fc79e598bf5456605dae2bfa75ef929c; exact post-merge Golden run pending. Independent-host recovery remains NOT RUN.
+- Main remains untouched; Golden is 219 commits ahead / 26 behind at last comparison.
 - No new root or queue; NEXT-051 remains the only active queue.
 
 ---
