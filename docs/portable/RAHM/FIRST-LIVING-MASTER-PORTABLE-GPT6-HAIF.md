@@ -1,3 +1,13 @@
+## Latest continuation — POINT-0/GOLDEN / CURRENT-150.03 candidate / NEXT-051.03 candidate (2026-11-23)
+
+- Stable root and identities remain POINT-0/GOLDEN · CURRENT-150 · NEXT-051.
+- Candidate chain: POINT-0/GOLDEN → IN-136 → OUT-135 → EVT-0323 → TIME-BINDING-EVT-0323 → CURRENT-150.03 → NEXT-051.03.
+- Last accepted Golden revision remains CURRENT-150.02 / NEXT-051.02 until exact-SHA conformance and controlled merge of PR #145.
+- Living mother version remains 1.8.4; the portable master mirror is synchronized to its additive EVT-0323 candidate addendum. Package conformance is pending the exact PR SHA.
+- No host is declared ACTIVE. Durable release, private provisioning, owner approval enforcement and independent-host recovery remain OPEN.
+
+---
+
 # اولین سند مادر زنده — معماری قابل‌انتقال GPT-6 / HAIF / RAHM
 
 - Stable ID / شناسه پایدار: `G6IP-FIRST-LIVING-MASTER-PORTABLE-RAHM-20261024-001`
