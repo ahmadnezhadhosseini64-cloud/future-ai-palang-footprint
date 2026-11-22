@@ -27,3 +27,21 @@
 ## مرز ادعا
 
 این تصمیم به‌تنهایی به معنی انجام آزمون، انتشار Release، provision سرویس خصوصی، ثبت GitHub App/OAuth/MCP، فعال‌شدن Host، یا بازیابی مستقل نیست. هرکدام فقط با شاهد مقصدی و read-back همان گیت قابل پذیرش‌اند.
+
+## اتصال زنجیرهٔ جاری و read-back
+
+- ریشهٔ یگانه: [POINT-0/GOLDEN](GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md)
+- ورودی: [IN-136](PALANG-0.0-IN-20261123-136-CHAT-POINT0-CONTINUATION.md)
+- خروجی: [OUT-135](PALANG-0.0-OUT-20261123-135-CHAT-POINT0-CONTINUATION.md)
+- رویداد: [EVT-0323](../../architecture/BEHAVIOR-TRACE/EVT-0323-CHAT-POINT0-CONTINUATION-2026-11-23.md)
+- زمان رویداد: [TIME-BINDING-EVT-0323](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0323-CHAT-POINT0-CONTINUATION-2026-11-23.md)
+- بازبینی جاری: [CURRENT-150.03](PALANG-0.0-CURRENT-20261123-150-REVISION-03-CHAT-POINT0-CONTINUATION.md)
+- صف یگانه: [NEXT-051.03](PALANG-0.0-NEXT-20261123-051-REVISION-03-EXECUTION-CONTINUATION.md)
+- سند مادر: [سند مرجع مادر مدل اولیه هوش مصنوعی](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
+- قرارداد بازیابی مستقل: [INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL](../../portable/RAHM/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md)
+- قرارداد بستهٔ میزبان: [INDEPENDENT_HOST_RECOVERY_PROTOCOL](../../../prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md)
+- Manifest: [EXPORT_MANIFEST](../../portable/RAHM/EXPORT_MANIFEST.json)
+- نشانگر این گفتگو: [POINT-0-GOLDEN-CHAT-CONTINUATION-2026-11-23-001](POINT-0-GOLDEN-CHAT-CONTINUATION-2026-11-23-001.md)
+- Mirror event: [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md)
+- Mirror time binding: [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md)
+
