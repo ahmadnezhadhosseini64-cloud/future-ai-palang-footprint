@@ -23,3 +23,17 @@
 ## دامنهٔ اجرا
 
 ممیزی زندهٔ مخزن، شاخه‌ها، PRها، Ruleset، فایل‌های امنیتی، workflowها، ده Issue مستقل، بستهٔ قابل‌حمل، release، آزمون‌ها و موانع ابزار؛ سپس ثبت نتیجه در همان زنجیرهٔ ثابت CURRENT-150 / NEXT-051.
+
+
+## Continuation and recovery links — CURRENT-150.02 candidate
+
+- Point: [POINT-0/GOLDEN](GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md)
+- Input: [IN-135](PALANG-0.0-IN-20261122-135-PARTNER-AUTONOMOUS-EXECUTION.md)
+- Output: [OUT-134](PALANG-0.0-OUT-20261122-134-PARTNER-AUTONOMOUS-EXECUTION.md)
+- Event: [EVT-0322](../../architecture/BEHAVIOR-TRACE/EVT-0322-PARTNER-AUTONOMOUS-EXECUTION-AND-LIVE-STATE-AUDIT-2026-11-22.md)
+- Current: [CURRENT-150.02](PALANG-0.0-CURRENT-20261122-150-REVISION-02-PARTNER-AUTONOMOUS-EXECUTION-AUDIT.md)
+- Sole queue: [NEXT-051.02](PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
+- Living mother: [MASTER](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
+- Recovery proof protocol: [INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001](../../architecture/مدل%20اولیه%20AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md)
+- Portable host recovery protocol: [INDEPENDENT_HOST_RECOVERY_PROTOCOL](../../../prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md)
+- Portable export manifest: [EXPORT_MANIFEST](../../portable/RAHM/EXPORT_MANIFEST.json)
