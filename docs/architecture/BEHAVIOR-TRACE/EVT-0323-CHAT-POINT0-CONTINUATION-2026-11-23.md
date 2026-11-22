@@ -44,3 +44,17 @@ ACTIVE / LIVING / EXECUTION-IN-PROGRESS. ایجاد نشانگر و ثبت رو�
 - [POINT-0/GOLDEN](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md) · [IN-136](../../0.0/anchors/PALANG-0.0-IN-20261123-136-CHAT-POINT0-CONTINUATION.md) · [OUT-135](../../0.0/anchors/PALANG-0.0-OUT-20261123-135-CHAT-POINT0-CONTINUATION.md)
 - [CURRENT-150.03](../../0.0/anchors/PALANG-0.0-CURRENT-20261123-150-REVISION-03-CHAT-POINT0-CONTINUATION.md) · [NEXT-051.03](../../0.0/anchors/PALANG-0.0-NEXT-20261123-051-REVISION-03-EXECUTION-CONTINUATION.md)
 - Historical mirror: [EVT-0241](EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) · [TIME-BINDING-EVT-0241](TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md)
+
+
+## Portable conformance receipt — candidate PR tree (2026-11-23)
+
+- Workflow: [Portable RAHM Conformance and Digest Evidence — run 45079525825](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/45079525825) — **SUCCESS**.
+- PR head: `cfb43377ae7551b73b6fdf536e83564bbd40e6b5`; tested prospective merge commit: `37807c0d3d8c077f3d4e88d4a67bcc332fc6aaab` (parents: Golden base `d845da27aceb69bde92c84b7c638a4698ecef4e5` + PR head). This is a synthetic PR merge tree, not a completed Golden merge.
+- Latest-chain reconstruction: PASS; recovery-equivalence `RAHM-IN-OUT-LINK-EQUIVALENCE-136-135`: PASS.
+- Stable SHA-256 inventory: 47/47 MATCH; live-reference SHA-256 observations: 266/266 recorded; manifest v1.8.45 SHA-256 `a868bcae0fc08ce54e6ed61ecb1887e788b9f50ba0d3574ac1bfacfab2438b7a`.
+- RAHM archive: 314 entries, ZIP integrity PASS, SHA-256 `e34577774e45f69bd3fd2d740540f1bc7b3e70dc4c18d9b2ab4f426a24dcc66b`, 1,513,865 bytes. Required IN/OUT/EVT/time-binding/CURRENT/NEXT files all present.
+- Existing starter ZIP rebuilt under the same canonical filename and package identity: 19 files, 288,082 bytes, SHA-256 `6b356e1503bf9c9404784e8d576d647f993ec6e3b89e6d32aba47954a5df5c60`. ZIP CRC, source-byte read-back and all 24 extracted tests PASS.
+- Living mother v1.8.4 and starter mirror: byte-for-byte equal; both SHA-256 `e0fa45817223b1e813f7b58f723786d64fa770c73f11ad7af91afe4366266a04`.
+- Artifacts: RAHM package ID `14776322551`; digest evidence ID `14776302640`; starter ZIP receipt ID `14775709405`. These are workflow artifacts, not a durable GitHub Release.
+- Durable release refresh: SKIPPED on pull-request event. Real independent-host acceptance: NOT RUN. Owner approval/promotion to Golden remains required.
+- Earlier audit run `45079284964` failed only on a misnamed historical EVT-0241 time-binding link; the canonical filename was corrected. A fresh exact-head Living Architecture Audit is still required.
