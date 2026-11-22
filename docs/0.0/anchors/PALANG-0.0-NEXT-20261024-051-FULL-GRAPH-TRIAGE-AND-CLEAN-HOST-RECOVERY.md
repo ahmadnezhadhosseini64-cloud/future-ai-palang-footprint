@@ -6,7 +6,7 @@
 - Issues #114–#123 are ten independent OPEN Partner cases. Issues #20/#21 remain independent OPEN runtime and historic-census tracks.
 - Buffer and Dropbox: WAITING / DEFERRED / NON-BLOCKING. Mirror is supporting evidence only when independently read back and recoverable.
 - PR candidate conformance passed on SHA bf7e7ab3fc79e598bf5456605dae2bfa75ef929c; exact post-merge Golden run pending. Independent-host recovery remains NOT RUN.
-- Main remains untouched; Golden is 219 commits ahead / 26 behind at last comparison.
+- Main remains untouched; Golden and main remain DIVERGED; exact counts are dynamic.
 - No new root or queue; NEXT-051 remains the only active queue.
 
 ---
