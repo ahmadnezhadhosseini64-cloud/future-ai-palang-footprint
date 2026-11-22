@@ -1,3 +1,11 @@
+## Current canonical continuation — 2026-11-23 (candidate)
+
+`POINT-0/GOLDEN → IN-136 → OUT-135 → EVT-0323 → TIME-BINDING-EVT-0323 → CURRENT-150.03 → NEXT-051.03`
+
+The last accepted Golden state remains CURRENT-150.02 / NEXT-051.02. The .03 continuation is a candidate until exact-SHA audit, Portable RAHM Conformance, and controlled Golden merge/read-back succeed. The living mother remains version 1.8.4 and authoritative; packages and tests align forward. No downgrade, new root, parallel queue, host write to MASTER, or host access to RAHM is permitted.
+
+---
+
 > **CURRENT HOST GOVERNANCE — POINT-0/086 (0++) / CURRENT-139 / 2026-11-22**
 > This addendum supersedes older embedded snapshots. Always re-read the current Reference Index, living mother, CURRENT-139 and sole active NEXT-051 from exact main HEAD.
 >
