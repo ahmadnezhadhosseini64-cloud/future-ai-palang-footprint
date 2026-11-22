@@ -88,3 +88,11 @@ All listed runs report exact tested `head_sha = 81c4b8687ad2de61e900c84505922a82
 - RAHM Security and Promotion Conformance run `44997366616` passed on exact branch SHA `b287b89ca0cff2870ad82994d0cf894c92f8c00c`; the Living Architecture Audit did not pass on that SHA.
 - The same PR #127 now also updates the checked-in portable master pointer to v1.7.96 and CURRENT-145 while retaining package version 0.5.1 and the same stable package identity/ZIP filename.
 - The package and final main SHA remain unverified until post-merge Living Architecture Audit and Portable RAHM Conformance pass on the exact same final main SHA.
+
+
+### Additional correction — current-chain assertion
+
+- After the checked-in portable pointer was aligned, Living Architecture Audit run `44997543605` still failed on exact PR-branch SHA `20abccac52adb507ad9d31c0b4c8a6d858986283`.
+- The remaining failure was the test fixture `expected_chain` in `prototype/haif-gpt6-starter/test_engine.py`, which still asserted the historical chain ending `CURRENT-140 → NEXT-051` instead of the current chain through EVT-0314 / CURRENT-145 / mirror-only EVT-0315 / NEXT-051.
+- RAHM Security and Promotion Conformance run `44997543602` passed on that same SHA.
+- This correction updates the test's expected chain to the exact current pointer. No root, queue or package identity is changed. The package remains CANDIDATE pending exact-main Audit and Portable RAHM Conformance.

@@ -342,7 +342,7 @@ class InteractionResponseAnchorProtocolTests(unittest.TestCase):
         self.assertEqual(manifest["archive_policy"]["canonical_filename"], "haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip")
         self.assertIn("actual host integration", protocol.casefold())
         self.assertIn("NOT VERIFIED", protocol)
-        expected_chain = "POINT-0/GOLDEN → IN-130 → OUT-129 → EVT-0309 → TIME-BINDING-EVT-0309 → CURRENT-140 → NEXT-051"
+        expected_chain = "POINT-0/GOLDEN → IN-130 → OUT-129 → EVT-0309 → TIME-BINDING-EVT-0309 → CURRENT-140 → EVT-0310 → TIME-BINDING-EVT-0310 → CURRENT-141 → EVT-0311 → TIME-BINDING-EVT-0311 → CURRENT-142 → EVT-0312 → TIME-BINDING-EVT-0312 → CURRENT-143 → EVT-0313 → TIME-BINDING-EVT-0313 → CURRENT-144 → EVT-0314 → TIME-BINDING-EVT-0314 → CURRENT-145 → EVT-0315 (mirror-only) → NEXT-051"
         for filename in (
             "GPT6_HOST_INSTRUCTIONS.md",
             "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md",
