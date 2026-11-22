@@ -192,6 +192,8 @@ class PortablePackageProtocolTests(unittest.TestCase):
         self.assertEqual(manifest["archive_policy"]["current_internal_version"], manifest["version"])
         self.assertEqual(manifest["archive_policy"]["update_mode"], "REBUILD_IN_PLACE_SAME_PACKAGE_IDENTITY")
         chain = manifest["parent_architecture"]
+        self.assertEqual(manifest["current_continuation_chain"], "POINT-0/GOLDEN → POINT-0/089 → IN-133 → OUT-132 → EVT-0320 → TIME-BINDING-EVT-0320 → CURRENT-151 → NEXT-051")
+        self.assertIn("CURRENT-151", chain)
         self.assertLess(chain.index("POINT-0/057 (0+ marker on canonical root 0)"), chain.index("IN-095"))
         self.assertLess(chain.index("IN-095"), chain.index("OUT-094"))
         self.assertLess(chain.index("OUT-094"), chain.index("EVT-0232"))
@@ -361,6 +363,4 @@ class InteractionResponseAnchorProtocolTests(unittest.TestCase):
         packaged_master = (root / "LIVING_MASTER_REFERENCE.md").read_text(encoding="utf-8")
         self.assertIn("Version / نسخه: " + manifest["current_living_master_version"], packaged_master)
         self.assertIn("POINT-0/082 (0++ marker on canonical root 0)", manifest["parent_architecture"])
-        packaged_master = (root / "LIVING_MASTER_REFERENCE.md").read_text(encoding="utf-8")
-        self.assertIn("Version / نسخه: " + manifest["current_living_master_version"], packaged_master)
         self.assertIn(expected_chain, packaged_master)
