@@ -1,13 +1,29 @@
 ## POINT-0/GOLDEN — canonical current baseline (2026-11-22)
 
 - [POINT-0/GOLDEN](GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md) → [IN-130](PALANG-0.0-IN-20261122-130-GOLDEN-BASELINE.md) → [OUT-129](PALANG-0.0-OUT-20261122-129-GOLDEN-BASELINE.md)
-- [EVT-0309](../../architecture/BEHAVIOR-TRACE/EVT-0309-POINT-0-GOLDEN-BASELINE-2026-11-22.md) → [TIME-BINDING-EVT-0309](../../../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0309-POINT-0-GOLDEN-BASELINE-2026-11-22.md) → [CURRENT-140](PALANG-0.0-CURRENT-20261122-140-GOLDEN-BASELINE.md) → sole active [NEXT-051](PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
+- [EVT-0309](../../architecture/BEHAVIOR-TRACE/EVT-0309-POINT-0-GOLDEN-BASELINE-2026-11-22.md) → [TIME-BINDING-EVT-0309](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0309-POINT-0-GOLDEN-BASELINE-2026-11-22.md) → [CURRENT-140](PALANG-0.0-CURRENT-20261122-140-GOLDEN-BASELINE.md) → [EVT-0310](../../architecture/BEHAVIOR-TRACE/EVT-0310-GOLDEN-FORWARD-ONLY-OWNER-DIRECTIVE-2026-11-22.md) → [TIME-BINDING-EVT-0310](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0310-GOLDEN-FORWARD-ONLY-2026-11-22.md) → [CURRENT-141](PALANG-0.0-CURRENT-20261122-141-GOLDEN-FORWARD-ONLY.md) → [EVT-0311](../../architecture/BEHAVIOR-TRACE/EVT-0311-POINT-0-PLUSPLUS-GOLDEN-CONTINUATION-2026-11-22.md) → [TIME-BINDING-EVT-0311](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0311-POINT-0-PLUSPLUS-2026-11-22.md) → [CURRENT-142 / POINT-0++](PALANG-0.0-CURRENT-20261122-142-POINT-0-PLUSPLUS-GOLDEN.md) → sole active [NEXT-051](PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
 - Baseline source HEAD: `9ebd4bcc5cfc0168276e366c1867da8709dfb566`; tree: `8be81af3dcf822b10107a7efcf4c603ca7567706`.
 - Latest verified portable release at that source: [haif-latest-verified](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified); ZIP SHA-256 `243baddff63eaf18129a0cbaff860f84f375655c893ee0d1cb42235ecae38646`; clean-host recovery remains NOT RUN.
 - Master: hosts PUBLIC READ ONLY; no direct or indirect host write route. RAHM: central, private, owner-only, outside all host workspaces. Owner-commanded export is the only bridge.
 - Ruleset 27814009 is active, but approval count is still 0 and Code Owner review is OFF. Do not call the approval gate enforced until owner UI change and live read-back.
 - No host is registered or ACTIVE; private RAHM repository and Promotion App are not yet provisioned. NEXT-051 remains the only active queue.
 - **Forward-only precedence:** this golden baseline supersedes older embedded snapshots and historical host-intake/branch-write instructions. Use historical material only as evidence; do not restore an older operating state without new evidence and explicit owner decision.
+
+
+## CURRENT-142 / POINT-0++ — owner action register (single queue)
+
+All points 0, 0.0, 0+ and 0++ remain connected to the single POINT-0 root. POINT-0/GOLDEN is the sole operating baseline. This section is the live, forward-only owner action register; it does not create a new queue.
+
+1. **OPEN — Owner merge of PR #103 into the Golden branch.** The PR contains CURRENT-141, CURRENT-142 / POINT-0++, EVT-0310/0311, time bindings, notebook N01–N03, and the Golden-to-main workflow. The repository owner must perform the merge; the assistant/host must not write to MASTER.
+2. **OPEN — Create/install the owner-controlled GitHub App.** App name target: `palang-owner-promotion-bot`; install only on `future-ai-palang-footprint`; permissions: Metadata read, Contents read/write, Pull requests read/write, Workflows write only for publishing reviewed workflow files. No Administration, Rules, Actions, Secrets, Variables, bypass, approval or merge permissions.
+3. **OPEN — Configure repository Actions variable/secret.** Variable `PALANG_PROMOTION_APP_CLIENT_ID`; secret `PALANG_PROMOTION_APP_PRIVATE_KEY`. Never paste private keys into ChatGPT or commits.
+4. **OPEN — Run Golden snapshot workflow as owner.** On the Golden branch, dispatch `Golden to main — Owner-Controlled Snapshot PR` with confirmation `PROMOTE_GOLDEN_TO_MAIN`. It should create an App-authored PR to main, with parent equal to captured main HEAD and tree SHA exactly equal to Golden. No merge is automatic.
+5. **OPEN — Owner review and approval gate.** After bot PR creation is proven, set Ruleset 27814009 to one approving review, Code Owner review ON, stale approval dismissal ON, and conversation resolution required; keep bypass actors empty. Read back the live values before declaring enforcement.
+6. **OPEN — Owner creates private RAHM repository.** Exact name: `future-ai-palang-rahm`; visibility PRIVATE; owner only. Then configure a separate fine-grained read-only token `RAHM_READ_TOKEN` for that repository and grant the connected GitHub integration read access if the owner wants direct inspection.
+7. **OPEN — End-to-end RAHM-to-CHILD test.** Use a synthetic redacted candidate; verify App-authored PR, schema/hash/privacy checks, owner review, and no auto-merge.
+8. **OPEN — Independent-host recovery and isolation proof.** Register no host as ACTIVE until clean-host import/recovery, workspace isolation, and all receipts pass.
+
+PR #101 and #92 remain historical OPEN evidence only; do not merge or delete them without an explicit owner-requested excavation and exact reconciliation. No backward replay, parallel root, or parallel queue is authorized.
 
 ---
 
@@ -60,7 +76,7 @@
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE
 - Project: Future AI / Palang Footprint — HAIF
 - Canonical queue: this file only
-- Current checkpoint: [CURRENT-138](PALANG-0.0-CURRENT-20261122-138-OWNER-APPROVAL-GATE-AND-HOST-ISOLATION.md)
+- Current checkpoint: [CURRENT-141](PALANG-0.0-CURRENT-20261122-141-GOLDEN-FORWARD-ONLY.md) — forward-only owner directive; CURRENT-140 and earlier checkpoints are retained as lineage/evidence
 - Current point: [POINT-0/085 (0++ marker on canonical root 0)](GPT6-RAHM-USER-POINT-0-20261122-085-OWNER-APPROVAL-GATE-AND-HOST-ISOLATION.md)
 - Living mother: [سند مرجع مادر مدل اولیه](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 - Package contract: [HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md](../../../prototype/haif-gpt6-starter/HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md)

@@ -4,10 +4,10 @@
 - Status: OWNER-DIRECTED / PROPOSAL BRANCH / CANONICAL BASELINE CANDIDATE
 - Canonical root: POINT-0 (single root; this is a baseline marker, not a new root)
 - Parent: POINT-0/086 → CURRENT-139
-- Current chain: POINT-0/GOLDEN → IN-130 → OUT-129 → EVT-0309 → TIME-BINDING-EVT-0309 → CURRENT-140 → NEXT-051
+- Current chain: POINT-0/GOLDEN → IN-130 → OUT-129 → EVT-0309 → TIME-BINDING-EVT-0309 → CURRENT-140 → EVT-0310 → TIME-BINDING-EVT-0310 → CURRENT-141 → EVT-0311 → TIME-BINDING-EVT-0311 → CURRENT-142 / POINT-0++ → sole NEXT-051
 - Owner: @ahmadnezhadhosseini64-cloud
 - Canonical repository: ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
-- Baseline source main HEAD: 9ebd4bcc5cfc0168276e366c1867da8709dfb566
+- Baseline source HEAD recorded at Golden creation (historical source reference, not the current operating ref): 9ebd4bcc5cfc0168276e366c1867da8709dfb566
 - Baseline source tree SHA: 8be81af3dcf822b10107a7efcf4c603ca7567706
 - Latest verified package at baseline: haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip
 - Package SHA-256: 243baddff63eaf18129a0cbaff860f84f375655c893ee0d1cb42235ecae38646
@@ -19,11 +19,11 @@
 ## 2. قانون تقدم و تداوم رو به جلو
 
 ترتیب مرجع برای هر میزبان/عامل:
-1. exact live main HEAD و Reference Index؛
-2. این POINT-0/GOLDEN و CURRENT-140؛
-3. living mother نسخهٔ 1.7.95 و قراردادهای فعال RAHM / Host Security؛
+1. این POINT-0/GOLDEN و زنجیرهٔ جاری آن تا CURRENT-142 / POINT-0++؛
+2. Reference Index و نقشهٔ اتصال نقاط برای یافتن lineage؛
+3. living mother و قراردادهای فعال RAHM / Host Security در نسخهٔ متصل به Golden؛
 4. تنها صف فعال NEXT-051؛
-5. سایر اسناد و نقاط فقط برای lineage، شواهد، استخراج ایده و حل اختلاف.
+5. main فقط مقصد انتشار/همسان‌سازی کنترل‌شده است، نه مرجع تقدم معماری تا زمان انتشار snapshot دقیق Golden.
 
 اسناد تاریخی، snapshotهای قدیمی، branchها و دستورهای قدیمی به‌تنهایی مجوز اجرایی نیستند. هیچ تصمیم تثبیت‌شده‌ای به دلیل فراموشی، شروع نشست جدید، checklist عمومی یا وجود سند قدیمی باز نمی‌شود. بازگشایی فقط با شاهد جدید معتبر، خطای اثبات‌شده، تغییر شرط واقعی، ریسک مادیِ بررسی‌نشده یا فرمان صریح مالک مجاز است.
 

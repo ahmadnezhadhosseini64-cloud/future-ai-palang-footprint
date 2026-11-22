@@ -1,7 +1,7 @@
 ## POINT-0/GOLDEN — canonical current baseline (2026-11-22)
 
 - [POINT-0/GOLDEN](0.0/anchors/GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md) → [IN-130](0.0/anchors/PALANG-0.0-IN-20261122-130-GOLDEN-BASELINE.md) → [OUT-129](0.0/anchors/PALANG-0.0-OUT-20261122-129-GOLDEN-BASELINE.md)
-- [EVT-0309](architecture/BEHAVIOR-TRACE/EVT-0309-POINT-0-GOLDEN-BASELINE-2026-11-22.md) → [TIME-BINDING-EVT-0309](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0309-POINT-0-GOLDEN-BASELINE-2026-11-22.md) → [CURRENT-140](0.0/anchors/PALANG-0.0-CURRENT-20261122-140-GOLDEN-BASELINE.md) → sole active [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
+- [EVT-0309](architecture/BEHAVIOR-TRACE/EVT-0309-POINT-0-GOLDEN-BASELINE-2026-11-22.md) → [TIME-BINDING-EVT-0309](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0309-POINT-0-GOLDEN-BASELINE-2026-11-22.md) → [CURRENT-140](0.0/anchors/PALANG-0.0-CURRENT-20261122-140-GOLDEN-BASELINE.md) → [EVT-0310](architecture/BEHAVIOR-TRACE/EVT-0310-GOLDEN-FORWARD-ONLY-OWNER-DIRECTIVE-2026-11-22.md) → [TIME-BINDING-EVT-0310](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0310-GOLDEN-FORWARD-ONLY-2026-11-22.md) → [CURRENT-141](0.0/anchors/PALANG-0.0-CURRENT-20261122-141-GOLDEN-FORWARD-ONLY.md) → [EVT-0311](architecture/BEHAVIOR-TRACE/EVT-0311-POINT-0-PLUSPLUS-GOLDEN-CONTINUATION-2026-11-22.md) → [TIME-BINDING-EVT-0311](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0311-POINT-0-PLUSPLUS-2026-11-22.md) → [CURRENT-142 / POINT-0++](0.0/anchors/PALANG-0.0-CURRENT-20261122-142-POINT-0-PLUSPLUS-GOLDEN.md) → sole active [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
 - Owner conversational entry gate (non-authentication only): [OWNER-VERBAL-ENTRY-GATE](architecture/HOST-SECURITY/OWNER-VERBAL-ENTRY-GATE.md).
 - Baseline source HEAD: `9ebd4bcc5cfc0168276e366c1867da8709dfb566`; tree: `8be81af3dcf822b10107a7efcf4c603ca7567706`.
 - Latest verified portable release at that source: [haif-latest-verified](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified); ZIP SHA-256 `243baddff63eaf18129a0cbaff860f84f375655c893ee0d1cb42235ecae38646`; clean-host recovery remains NOT RUN.
@@ -12,6 +12,12 @@
 
 ---
 
+
+## Current interaction marker — POINT-0++ / CURRENT-142
+
+- [POINT-0++ / CURRENT-142](0.0/anchors/PALANG-0.0-CURRENT-20261122-142-POINT-0-PLUSPLUS-GOLDEN.md) is attached to the single canonical POINT-0 root and the POINT-0/GOLDEN baseline; it is not a new root or queue.
+- All point labels (0, 0.0, 0+, 0++) and their IN/OUT/EVT/TIME/CURRENT records remain connected through this index and preserved lineage. Only POINT-0/GOLDEN governs current work; NEXT-051 is the only active queue.
+- Continue forward from Golden. Historical nodes are navigation/evidence only and are not reactivated without the owner's explicit excavation instruction or a proven current defect.
 
 ## Historical predecessor — POINT-0/086 navigation
 
