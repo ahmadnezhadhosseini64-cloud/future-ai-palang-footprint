@@ -1,3 +1,6 @@
+> **HISTORICAL POINT — POINT-0/086 (0++)**
+> This point remains preserved as parent evidence. The current baseline is POINT-0/GOLDEN / CURRENT-140; do not use the older embedded HEAD/package state as current.
+
 ## Follow-up merge and package verification — PR #98 / #99 / EVT-0307
 
 - PR #98: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/pull/98
