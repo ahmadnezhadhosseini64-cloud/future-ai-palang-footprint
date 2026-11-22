@@ -74,7 +74,7 @@ MASTER remains PUBLIC READ ONLY for hosts. RAHM remains private and owner-only o
 ## Historical mirror lineage preserved
 
 - [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md)
-- [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md)
+- [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md)
 
 ## Open acceptance gates — not inferred from repository CI
 
