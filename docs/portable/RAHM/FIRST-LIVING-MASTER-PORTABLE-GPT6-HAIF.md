@@ -3,7 +3,7 @@
 - Stable ID / شناسه پایدار: `G6IP-FIRST-LIVING-MASTER-PORTABLE-RAHM-20261024-001`
 - Production ID / شناسه تولید: `G6IP-FLM-RAHM-001`
 - Version / نسخه: 1.1.9
-- Status / وضعیت: REGISTERED / READ-BACK VERIFIED; latest strict digest/package result is tracked in workflow history; real-host gates OPEN; global pointer SCOPED_CONSISTENT; full semantic source-graph census OPEN.
+- Status / وضعیت: REGISTERED / READ-BACK VERIFIED; latest strict digest/package result is tracked in workflow history; real-host gates OPEN; global pointer reconciliation CANDIDATE / exact-SHA validation pending; full semantic source-graph census OPEN.
 - Authority / مرجع حاکم: اصول بنیادی پروژه + سند مادر معماری موروثی + بسته قابل‌حمل RAHM.
 - User Point 0: [POINT-0/088 (0++ marker on canonical root 0)](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261122-088-OWNER-CONTINUATION-EXACT-MAIN-AUDIT.md)
 - Current 0.0: [CURRENT-150](../../0.0/anchors/PALANG-0.0-CURRENT-20261122-150-POINT-0-PLUSPLUS-EXACT-MAIN-AUDIT.md)
