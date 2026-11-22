@@ -1,10 +1,21 @@
+> **CURRENT GOVERNANCE — POINT-0/GOLDEN / CURRENT-140 / 2026-11-22**
+> The canonical root remains the single existing POINT-0. This is the golden baseline of the already-built project, not a new project, root, or parallel queue. Always retrieve exact main HEAD, the current living mother, CURRENT-140, and the sole active NEXT-051 before acting. Historical points and embedded snapshots are evidence only; they never override this baseline or reopen a settled decision by themselves.
+>
+> **Absolute host boundary:** every host has PUBLIC READ ONLY access to the canonical master. No host, host-held credential, host App, broker, branch, PR, issue, release, workflow, setting, or indirect relay may write to or promote content into the master. Host work remains in its own isolated runtime and, if owner-provisioned, its own private repository. The owner alone exports selected material.
+>
+> **RAHM placement:** RAHM is a central, private, owner-only quarantine outside every host workspace. Hosts cannot access, inspect, write, administer, or promote anything from RAHM. Raw/private exports are stored only in the owner-controlled private repository future-ai-palang-rahm; the public master contains policy, schemas, validators, workflows, and sanitized Child candidates only.
+>
+> **Learning and promotion:** OWNER COMMAND → inspect only verified and accessible Host IDs → owner export/redaction → private RAHM quarantine → cross-host reconciliation → schema/hash/privacy/provenance/tests → trusted bot-authored PR to CHILD → owner review and approval. CHILD is not MASTER. Any later Master update requires a separate owner-directed PR and a separate owner approval.
+>
+> **No false activation:** no host is ACTIVE until its identity, workspace isolation, repository scope, connector permissions, and acceptance receipt are verified. No continuous monitoring is claimed unless a separate owner-controlled service is actually deployed and evidenced.
+
 # RAHM — Owner-Controlled Intelligence Quarantine
 
 - Stable ID: HAIF-RAHM-OWNER-CONTROL-PLANE-2026-11-22-001
-- Version: 1.0.0
-- Status: DESIGN REGISTERED / PRIVATE STORE AND AUTOMATION SETUP PENDING
+- Version: 1.1.0
+- Status: GOLDEN BASELINE ALIGNED / PRIVATE STORE AND AUTOMATION SETUP PENDING
 - Owner: @ahmadnezhadhosseini64-cloud
-- Canonical root: POINT-0 only; this extends the existing host architecture.
+- Canonical root: POINT-0 only; golden baseline: docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md; current checkpoint: CURRENT-140; sole queue: NEXT-051.
 
 ## Purpose
 
@@ -26,7 +37,7 @@ If the private repository has not been created and connected, RAHM is architectu
 
 ## Permanent flow
 
-HOST PRIVATE WORKSPACE → OWNER-DIRECTED MONITOR / EXPORT → PRIVATE RAHM QUARANTINE → CROSS-HOST RECONCILIATION → RAHM VALIDATION → BOT-AUTHORED PR → OWNER REVIEW → CHILD-CANDIDATE
+HOST PRIVATE WORKSPACE → OWNER-COMMANDED READ / EXPORT → PRIVATE OWNER-ONLY RAHM → CROSS-HOST RECONCILIATION → VALIDATION → BOT-AUTHORED PR → OWNER REVIEW/APPROVAL → CHILD-CANDIDATE
 
 A Child candidate is not yet part of the living Master. A later, separate owner-directed promotion and review is required before any content changes canonical Master documents.
 
@@ -66,3 +77,8 @@ Until these are configured and read back, the intake workflow remains NOT OPERAT
 ## Security invariant
 
 No host has a route, credential, token, branch permission, PR permission, workflow permission, or bypass into the master repository or RAHM. Hosts can only produce data inside their own isolated workspace. The owner is the only bridge between host workspaces and RAHM.
+
+
+## Golden baseline invariant — no host-to-master route
+
+No host has a direct or indirect write path to the canonical master. A host may work only in its isolated runtime and an owner-provisioned private repository assigned to that host. The host cannot send data to RAHM or the master through a broker, branch, PR, workflow, token, or intermediary. The owner is the only bridge: owner-commanded inspection/export → owner redaction → private RAHM. The former `host-intake` route and direct GitHub worker are frozen/disabled and must never be reactivated as an intake path.
