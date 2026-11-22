@@ -190,6 +190,7 @@ class PortablePackageProtocolTests(unittest.TestCase):
         packaged_master_version = master_version_line.split("## نسخهٔ ", 1)[1].split(" ", 1)[0]
         self.assertEqual(manifest["current_living_master_version"], packaged_master_version)
         self.assertIn("CURRENT-150", manifest["parent_architecture"])
+        self.assertIn("CURRENT-151", manifest["parent_architecture"])
         self.assertIn("POINT-0/088", manifest["parent_architecture"])
         self.assertEqual(manifest["recovery_protocol"], "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md")
         self.assertEqual(manifest["universal_host_entry"], "UNIVERSAL_AI_HOST_ENTRY_FA.md")
