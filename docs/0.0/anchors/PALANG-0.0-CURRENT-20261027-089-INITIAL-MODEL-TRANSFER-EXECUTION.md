@@ -10,10 +10,10 @@
 - Status: QUARANTINED / DUPLICATE ID ARTIFACT / NOT CANONICAL
 - Root: [POINT-0/040](./GPT6-RAHM-USER-POINT-0-20261027-040-INITIAL-MODEL-TRANSFER-AND-ARCHITECTURE-HARD-AUDIT.md)
 - Parent: [POINT-0/039](./GPT6-RAHM-USER-POINT-0-20261027-039-MIRROR-SYNC-AND-ARCHITECTURE-CONTINUATION.md)
-- Transfer contract: [Initial Model Host Transfer Bootstrap](../portable/RAHM/INITIAL-MODEL-HOST-TRANSFER-BOOTSTRAP-2026-10-27.md)
-- Host prompt: [HOST-BOOTSTRAP-PROMPT](../portable/RAHM/HOST-BOOTSTRAP-PROMPT-2026-10-27.md)
+- Transfer contract: [Initial Model Host Transfer Bootstrap](../../portable/RAHM/INITIAL-MODEL-HOST-TRANSFER-BOOTSTRAP-2026-10-27.md)
+- Host prompt: [HOST-BOOTSTRAP-PROMPT](../../portable/RAHM/HOST-BOOTSTRAP-PROMPT-2026-10-27.md)
 - Sole queue: [NEXT-051](./PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
-- Mother reference: [Initial AI Model Master Reference](../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
+- Mother reference: [Initial AI Model Master Reference](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 
 ## Objective
 Prepare a host-independent candidate package that can be loaded into a new AI host without relying on previous conversation context. Candidate-package readiness is distinct from independent-host acceptance.
