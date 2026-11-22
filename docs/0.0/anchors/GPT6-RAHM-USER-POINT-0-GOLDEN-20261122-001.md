@@ -39,7 +39,7 @@
 
 ## 4. RAHM مرکزی مالک
 
-RAHM فقط در فضای مرکزی، خصوصی و تحت کنترل مالک قرار دارد؛ هرگز داخل workspace میزبان نیست.
+RAHM فقط در فضای مرکزی، private و owner-only (فقط‌مالک) قرار دارد؛ هرگز داخل workspace میزبان نیست.
 - میزبان هیچ دسترسی READ/WRITE/ADMIN، token، App یا مسیر غیرمستقیم به RAHM ندارد.
 - فقط مالک با فرمان صریح می‌تواند یک Host ID مشخص یا همهٔ میزبان‌های ثبت‌شده و قابل‌دسترسی را رصد کند.
 - رصد به منابعی محدود است که اتصال GitHub حساب مالک واقعاً اجازهٔ خواندن آن‌ها را می‌دهد. رصد پس‌زمینه یا دائمی بدون سرویس مستقر و receipt ادعا نمی‌شود.
@@ -65,7 +65,7 @@ GitHub نویسندهٔ PR را از تأیید PR خودش منع می‌کند
 - Workflow audit: فقط دو workflow مجوز repository-content write دارند: RAHM promotion App برای ساخت branch/PR بات به CHILD، و portable package publisher فقط برای انتشار assetهای release پایدار (بدون git commit/push به main). دو workflow دیگر فقط pages:write و id-token:write برای deploy به GitHub Pages دارند. سایر workflowها read-only هستند. هیچ‌یک از این مجوزها به میزبان واگذار نشده است.
 - legacy host adapter disabled/fail-closed؛ execution controller read-only؛ local event adapter فقط SQLite محلی دارد و producer_connected=false و repository_write=NOT_IMPLEMENTED گزارش می‌کند.
 - Host Registry schema 1.1.0 معتبر و Registry خالی است؛ هیچ میزبان واقعی ACTIVE نیست.
-- بستهٔ قابل‌انتقال در baseline با run 44964480412، SHA-256 بالا، CRC، source-byte read-back، extracted tests و durable release publication تأیید شده است؛ clean-host import/recovery هنوز NOT RUN است.
+- بستهٔ قابل‌انتقال در baseline با run 44964480412، SHA-256 بالا، CRC، source-byte read-back، extracted tests و durable release publication تأیید شده است؛ clean-host import/recovery هنوز NOT RUN است. بستهٔ منبع جدید v0.5.1 فقط CANDIDATE است و تا اجرای conformance روی main، PACKAGE_VERIFIED محسوب نمی‌شود.
 
 ## 8. موارد باز؛ صریح و متصل به NEXT-051
 
