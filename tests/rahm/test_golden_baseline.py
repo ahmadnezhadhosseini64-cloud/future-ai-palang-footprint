@@ -73,6 +73,14 @@ class GoldenBaselineGovernanceTests(unittest.TestCase):
         self.assertNotIn("gh pr merge", workflow)
         self.assertNotIn("git push origin main", workflow)
 
+    def test_pages_workflows_have_deploy_only_permissions(self):
+        for path in [".github/workflows/pages.yml", ".github/workflows/playground-pages.yml"]:
+            workflow = self.read(path)
+            self.assertIn("pages: write", workflow)
+            self.assertIn("id-token: write", workflow)
+            self.assertNotIn("contents: write", workflow)
+            self.assertNotIn("git push", workflow)
+
     def test_release_write_is_not_a_master_commit_path(self):
         workflow = self.read(".github/workflows/rahm-portable-conformance.yml")
         self.assertIn("contents: write", workflow)
