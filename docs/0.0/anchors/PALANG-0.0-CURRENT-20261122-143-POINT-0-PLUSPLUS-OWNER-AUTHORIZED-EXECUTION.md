@@ -44,3 +44,9 @@ NEXT-051 remains the only queue. Its first item (PR #103 merge into Golden) is c
 
 ## 6. Status discipline
 Documented is not executed; executed is not read-back verified; repository readiness is not host readiness. Do not close any operational gate without its direct evidence.
+
+
+## 7. Connected GitHub integration — capability read-back
+The connected GitHub installation `157541661` is installed on this repository and reports `admin / maintain / push` permissions. This confirms the assistant can perform the repository-content and PR/merge operations exposed by the connector; PR #103 was in fact merged and read back.
+
+The current connector does not expose write actions for creating a GitHub App, creating a repository, writing Actions variables/secrets, dispatching a workflow, or mutating a repository Ruleset. These are specific missing action endpoints, not an ownership objection. Do not ask the owner to redo supported work; resume the remaining steps as soon as the relevant GitHub UI setup or a supported API action is available.
