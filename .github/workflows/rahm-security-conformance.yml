@@ -6,6 +6,14 @@ on:
     paths:
       - "docs/architecture/RAHM/**"
       - "docs/architecture/CHILD-CANDIDATES/**"
+      - "docs/architecture/HOST-SECURITY/**"
+      - "docs/architecture/HOST-WORKSPACES/**"
+      - "docs/architecture/مدل اولیه AI/**"
+      - "prototype/haif-gpt6-starter/**"
+      - "prototype/universal-host/**"
+      - "docs/0.0/anchors/**"
+      - "docs/REFERENCE_INDEX.md"
+      - "README.md"
       - "docs/architecture/HOST-REGISTRY/**"
       - "scripts/rahm/**"
       - "tests/rahm/**"
@@ -16,7 +24,6 @@ on:
       - ".github/workflows/execution-controller.yml"
       - ".github/workflows/pending-registration-drain.yml"
       - ".github/workflows/rahm-portable-conformance.yml"
-      - ".github/workflows/living-architecture-audit.yml"
       - ".github/workflows/living-architecture-audit.yml"
       - "control-plane/controller.py"
   push:
