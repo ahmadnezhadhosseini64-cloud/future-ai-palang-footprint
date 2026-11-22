@@ -1,5 +1,10 @@
 ## Current continuation pointer — POINT-0/GOLDEN / CURRENT-150 / NEXT-051
 
+- Stable identities: POINT-0/GOLDEN · CURRENT-150 · NEXT-051.
+- Candidate revisions: CURRENT-150.01 and NEXT-051.01. Routine changes increment only the revision suffix; no new root/current ID/queue is created.
+- Governing rule: [stable anchor and revision policy](../../0.0/anchors/POINT-0-STABLE-ANCHOR-AND-REVISION-POLICY-2026-11-22.md).
+- Package version authority: Golden living mother 1.8.0; portable manifest, starter copy and tests must match it dynamically. Never downgrade the mother to satisfy stale package pins.
+
 - Latest owner continuation: [EVT-0319](../BEHAVIOR-TRACE/EVT-0319-OWNER-CONTINUATION-EXACT-MAIN-AUDIT-2026-11-22.md) → [TIME-BINDING-EVT-0319](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0319-OWNER-CONTINUATION-EXACT-MAIN-AUDIT-2026-11-22.md) → [CURRENT-150](../../0.0/anchors/PALANG-0.0-CURRENT-20261122-150-POINT-0-PLUSPLUS-EXACT-MAIN-AUDIT.md).
 - Point: [POINT-0/088](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261122-088-OWNER-CONTINUATION-EXACT-MAIN-AUDIT.md) → [IN-132](../../0.0/anchors/PALANG-0.0-IN-20261122-132-OWNER-CONTINUATION-EXACT-MAIN-AUDIT.md) → [OUT-131](../../0.0/anchors/PALANG-0.0-OUT-20261122-131-OWNER-CONTINUATION-EXACT-MAIN-AUDIT.md).
 - NEXT-051 remains the only active queue. Ten Partner actions remain Issues #114–#123, individually tracked and OPEN.
