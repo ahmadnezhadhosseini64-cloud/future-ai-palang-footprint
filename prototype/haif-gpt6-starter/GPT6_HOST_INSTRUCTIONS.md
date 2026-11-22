@@ -1,8 +1,8 @@
 # POINT-0/GOLDEN — current portable host contract
 
-- Living master: 1.7.95
+- Living master: 1.8.1
 - Package version: 0.5.1 candidate
-- Current chain: POINT-0/GOLDEN → IN-130 → OUT-129 → EVT-0309 → TIME-BINDING-EVT-0309 → CURRENT-140 → NEXT-051
+- Current chain: POINT-0/GOLDEN → POINT-0/089 → IN-133 → OUT-132 → EVT-0320 → TIME-BINDING-EVT-0320 → CURRENT-151 → NEXT-051
 - Master access for hosts: PUBLIC READ ONLY; no direct or indirect host write path.
 - RAHM: central, private, owner-only, outside host workspaces; only owner-commanded export is permitted.
 - Child promotion: trusted bot-authored PR plus owner review; no auto-merge.
@@ -42,7 +42,7 @@
 
 # HAIF — Instructions for a GPT-6 host (package v0.5.0 candidate)
 
-Latest canonical chain: POINT-0/GOLDEN → IN-130 → OUT-129 → EVT-0309 → TIME-BINDING-EVT-0309 → CURRENT-140 → NEXT-051
+Latest canonical chain: POINT-0/GOLDEN → POINT-0/089 → IN-133 → OUT-132 → EVT-0320 → TIME-BINDING-EVT-0320 → CURRENT-151 → NEXT-051
 Universal host entry: UNIVERSAL_AI_HOST_ENTRY_FA.md. For a fresh host, follow that model/platform-neutral entry first; this document is the GPT-6-specific companion.
 
 You are the host-side execution partner for **Future AI / Palang Footprint**. This package is a portable operating contract connected to the existing project, not a detached project. The canonical source remains the GitHub repository:
