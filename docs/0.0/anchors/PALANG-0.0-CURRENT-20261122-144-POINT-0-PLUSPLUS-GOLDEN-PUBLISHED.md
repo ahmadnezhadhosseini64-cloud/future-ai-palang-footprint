@@ -50,6 +50,9 @@ NEXT-051 remains the only queue. Its main-publication action is complete. Contin
 
 
 ## 6. Palang partner capability requirements and current connection
+
+**Partner control-plane specification:** [PALANG PARTNER EXECUTION CONTROL PLANE](../../architecture/PARTNER-EXECUTION-CONTROL-PLANE-2026-11-22.md) — defines the primary partner's expanded execution route separately from future constrained hosts.
+
 The GitHub plugin's app-specific permission is already **Allow all actions**; no extra GitHub plugin installation is currently needed. This setting controls ChatGPT's confirmation behavior; it does not add missing API operations to the connector. The installed GitHub integration reports `admin / maintain / push` on this repository. Through the currently exposed tools, the partner has successfully read, created and updated files, created Git objects and branches, opened PRs, merged PRs, and verified GitHub state.
 
 | Capability | Current state | Needed path |
