@@ -11,9 +11,9 @@ The model/platform-neutral first-entry instruction is UNIVERSAL_AI_HOST_ENTRY_FA
 
 This is the updated release of the existing HAIF starter package, not a separate project. It updates the existing v0.3.0 0/0+ bootstrap package at the same stable package identity and canonical ZIP filename; history and prior digests remain preserved. It does not replace the living master, historical anchors or NEXT-051.
 
-## Current handoff — package v0.5.0 candidate / POINT-0/082 (0++)
+## Historical handoff — package v0.5.0 / POINT-0/082 (superseded)
 
-Living master: 1.7.89. The current chain is POINT-0/081 → CURRENT-134 → POINT-0/082 (0++) → IN-125 → OUT-124 → EVT-0302 → TIME-BINDING-EVT-0302 → CURRENT-135 → NEXT-051. Stable package ID and canonical ZIP filename remain unchanged. Latest Runnable contains only capabilities supported by source-backed tests; host-dependent capabilities and legacy dependencies with unresolved consumer impact remain OPEN / Development. The package must pass exact-main build, extracted tests, SHA-256, CRC, inventory, paired-master read-back and artifact round-trip before the 0.5.0 candidate can be called PACKAGE_VERIFIED.
+Historical snapshot only. Current living mother: 1.7.95; current chain: POINT-0/GOLDEN → IN-130 → OUT-129 → EVT-0309 → TIME-BINDING-EVT-0309 → CURRENT-140 → NEXT-051. Stable package ID and canonical ZIP filename remain unchanged. Latest Runnable contains only capabilities supported by source-backed tests; host-dependent capabilities and legacy dependencies with unresolved consumer impact remain OPEN / Development. The package must pass exact-main build, extracted tests, SHA-256, CRC, inventory, paired-master read-back and artifact round-trip before the 0.5.0 candidate can be called PACKAGE_VERIFIED.
 
 ## Public repository access — no OAuth for READ
 The canonical repository is intentionally Public. A fresh host should use anonymous HTTPS READ/clone/fetch first. A prompt cannot grant access to private resources. The host never receives a master write credential or a path to RAHM. Code execution, isolated/persistent workspace and restart recovery are independent runtime capabilities and must be proven by the destination host. The owner retains MASTER and merge/promotion authority.
