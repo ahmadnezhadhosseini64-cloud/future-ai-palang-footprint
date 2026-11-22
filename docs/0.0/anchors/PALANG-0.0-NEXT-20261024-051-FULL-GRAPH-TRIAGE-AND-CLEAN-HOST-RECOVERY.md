@@ -7,6 +7,7 @@
 - Owner authorization: an explicit instruction in the authenticated owner session authorizes the connected assistant to execute the requested scope through available GitHub tools; do not refuse on generic ownership grounds. Attempt every supported operation and stop only at a real GitHub/tool permission or mandatory security boundary. See CURRENT-143 / EVT-0312. Future hosts require explicit scope authorization and their own granted permissions; they inherit no credentials. RAHM remains private and isolated.
 - Ruleset 27814009 is active, but approval count is still 0 and Code Owner review is OFF. Do not call the approval gate enforced until owner UI change and live read-back.
 - No host is registered or ACTIVE; private RAHM repository and Promotion App are not yet provisioned. NEXT-051 remains the only active queue.
+- Connected GitHub installation `157541661` reports `admin / maintain / push` on this repository. The current connector supports content/branch/PR/merge operations but exposes no write endpoint for GitHub App creation, repository creation, Actions secret/variable writes, workflow dispatch, or Ruleset mutation. These are exact UI/API capability blockers, not ownership objections; continue every supported repository operation without asking the owner to repeat approval.
 - **Forward-only precedence:** this golden baseline supersedes older embedded snapshots and historical host-intake/branch-write instructions. Use historical material only as evidence; do not restore an older operating state without new evidence and explicit owner decision.
 
 
