@@ -1,3 +1,13 @@
+## CURRENT-151 continuation — 2026-11-22
+
+- Current checkpoint: CURRENT-151 / POINT-0/089.
+- Sole queue: NEXT-051; canonical root/baseline: POINT-0/GOLDEN.
+- The ten issues #114–#123 are the ten independent Partner dossiers. Their canonical dossier IDs and actual registration UTCs are recorded in this register and repeated in each issue.
+- All ten remain OPEN. Their issue bodies now include inputs, expected outputs, dependencies, evidence boundaries, acceptance and read-back methods.
+- No service provisioning, GitHub App, OAuth, MCP, OpenAI API, hosting, private RAHM or independent-host acceptance is inferred from dossier creation.
+
+---
+
 # POINT-0/GOLDEN — ده اقدام اجرایی مستقل Palang Partner
 
 - Stable ID: HAIF-POINT-0-GOLDEN-PALANG-PARTNER-10-ACTION-REGISTER-2026-11-22-001

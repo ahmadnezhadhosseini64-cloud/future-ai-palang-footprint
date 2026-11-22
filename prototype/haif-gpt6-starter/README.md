@@ -1,11 +1,11 @@
-> **POINT-0/GOLDEN — CURRENT-140 — 2026-11-22**
-> This is the single canonical continuation of the existing POINT-0 root. Always resolve exact main HEAD, living mother, CURRENT-140 and NEXT-051. Older embedded point/version snapshots are historical evidence, not current operating instructions.
+> **POINT-0/GOLDEN — CURRENT-151 — 2026-11-22**
+> This is the single canonical continuation of the existing POINT-0 root. Always resolve exact main HEAD, living mother, CURRENT-151 and NEXT-051. Older embedded point/version snapshots are historical evidence, not current operating instructions.
 > **No host-to-master route:** hosts are PUBLIC READ ONLY on MASTER and have no direct or indirect write path, credential, branch, PR, broker, worker or bypass into it. Host work stays in its own isolated workspace/private repository. RAHM is a central owner-only private quarantine outside host workspaces; only the owner exports and imports selected redacted evidence.
 > **Promotion:** owner export → private RAHM → reconciliation/validation → bot-authored PR to CHILD → owner approval. CHILD is not MASTER.
 
 # HAIF Portable Starter v0.5.1 — POINT-0 Golden Baseline
 
-Latest canonical chain: POINT-0/GOLDEN → CURRENT-149 → POINT-0/088 → IN-132 → OUT-131 → EVT-0319 → TIME-BINDING-EVT-0319 → CURRENT-150 → NEXT-051
+Latest canonical chain: POINT-0/GOLDEN → CURRENT-150 → POINT-0/089 → IN-133 → OUT-132 → EVT-0320 → TIME-BINDING-EVT-0320 → CURRENT-151 → NEXT-051
 
 The model/platform-neutral first-entry instruction is UNIVERSAL_AI_HOST_ENTRY_FA.md. GPT-6-specific documents below are compatibility references; the universal entry and Reference Index govern fresh hosts.
 
@@ -13,7 +13,7 @@ This is the updated release of the existing HAIF starter package, not a separate
 
 ## Historical handoff — package v0.5.0 / POINT-0/082 (superseded)
 
-Historical snapshot only. Current living mother: 1.7.95; current chain: POINT-0/GOLDEN → CURRENT-149 → POINT-0/088 → IN-132 → OUT-131 → EVT-0319 → TIME-BINDING-EVT-0319 → CURRENT-150 → NEXT-051. Stable package ID and canonical ZIP filename remain unchanged. Latest Runnable contains only capabilities supported by source-backed tests; host-dependent capabilities and legacy dependencies with unresolved consumer impact remain OPEN / Development. The package must pass exact-main build, extracted tests, SHA-256, CRC, inventory, paired-master read-back and artifact round-trip before the 0.5.1 candidate can be called PACKAGE_VERIFIED.
+Historical snapshot only. Current living mother: 1.8.1; current chain: POINT-0/GOLDEN → CURRENT-150 → POINT-0/089 → IN-133 → OUT-132 → EVT-0320 → TIME-BINDING-EVT-0320 → CURRENT-151 → NEXT-051. Stable package ID and canonical ZIP filename remain unchanged. Latest Runnable contains only capabilities supported by source-backed tests; host-dependent capabilities and legacy dependencies with unresolved consumer impact remain OPEN / Development. The package must pass exact-main build, extracted tests, SHA-256, CRC, inventory, paired-master read-back and artifact round-trip before the 0.5.1 candidate can be called PACKAGE_VERIFIED.
 
 ## Public repository access — no OAuth for READ
 The canonical repository is intentionally Public. A fresh host should use anonymous HTTPS READ/clone/fetch first. A prompt cannot grant access to private resources. The host never receives a master write credential or a path to RAHM. Code execution, isolated/persistent workspace and restart recovery are independent runtime capabilities and must be proven by the destination host. The owner retains MASTER and merge/promotion authority.
@@ -213,4 +213,4 @@ Living master: 1.7.81. Canonical chain: POINT-0/074 → IN-117 → OUT-116 → E
 
 ## Golden baseline precedence
 
-POINT-0/GOLDEN / CURRENT-140 is the only current operational baseline. Older package notes, snapshots, host-intake references, or branch-scoped write instructions are historical and superseded. Do not restore them or treat them as open permissions. The host must not create a PR or write to any branch of the canonical master.
+POINT-0/GOLDEN / CURRENT-151 is the only current operational baseline. Older package notes, snapshots, host-intake references, or branch-scoped write instructions are historical and superseded. Do not restore them or treat them as open permissions. The host must not create a PR or write to any branch of the canonical master.

@@ -1,5 +1,5 @@
-> **GOLDEN BASELINE — POINT-0/GOLDEN / CURRENT-140 / 2026-11-22**
-> This project is already built through the canonical golden baseline. Do not restart, recreate, or roll back to an older point. First read exact main HEAD, docs/REFERENCE_INDEX.md, the latest living mother, CURRENT-140 and sole NEXT-051. Historical snapshots are not active instructions and cannot reopen settled decisions by themselves.
+> **GOLDEN BASELINE — POINT-0/GOLDEN / CURRENT-151 / 2026-11-22**
+> This project is already built through the canonical golden baseline. Do not restart, recreate, or roll back to an older point. First read exact main HEAD, docs/REFERENCE_INDEX.md, the latest living mother, CURRENT-151 and sole NEXT-051. Historical snapshots are not active instructions and cannot reopen settled decisions by themselves.
 >
 > **MASTER ACCESS:** PUBLIC READ ONLY. No host may write to any branch of the master, create a PR to the master, or use a broker, worker, token, App, or other intermediary to route host-originated writes into the master. Never request or accept master credentials.
 >
@@ -12,7 +12,7 @@
 > **NO FALSE CLAIMS:** a prompt does not grant OAuth, create a private repository, or prove a workspace is isolated/persistent. Report each unavailable capability as NOT AVAILABLE / NOT RUN. Do not self-assign Host IDs.
 
 > **HISTORICAL SNAPSHOT — POINT-0/086 / CURRENT-139 (superseded by POINT-0/GOLDEN)**
-> This addendum supersedes older embedded snapshots. This embedded snapshot is historical only. Current operating authority is POINT-0/GOLDEN / CURRENT-140 and sole NEXT-051.
+> This addendum supersedes older embedded snapshots. This embedded snapshot is historical only. Current operating authority is POINT-0/GOLDEN / CURRENT-151 and sole NEXT-051.
 >
 > **Host boundary:** the canonical master is PUBLIC READ ONLY for every host. No host receives master write credentials, collaborator access, branches, PR/issue/release/workflow/settings permission, or bypass. A host works only in its own independent private runtime and, if owner-provisioned, its own private repository. It cannot enter or inspect another host's workspace or the central RAHM.
 >
@@ -43,8 +43,8 @@
 **Stable package ID:** HAIF-GPT6-PORTABLE-STARTER-20261025-004  
 **Canonical ZIP filename:** haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip  
 **Current source package version recorded in manifest:** 0.4.9  
-**Living mother target:** 1.7.95  
-**Current continuation:** POINT-0/GOLDEN → IN-130 → OUT-129 → EVT-0309 → TIME-BINDING-EVT-0309 → CURRENT-140 → NEXT-051
+**Living mother target:** 1.8.1  
+**Current continuation:** POINT-0/GOLDEN → IN-130 → OUT-129 → EVT-0309 → TIME-BINDING-EVT-0309 → CURRENT-151 → NEXT-051
 
 ---
 

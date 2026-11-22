@@ -1,3 +1,12 @@
+## CURRENT-151 continuation — 2026-11-22
+
+- Current checkpoint: CURRENT-151 / POINT-0/089; sole queue NEXT-051.
+- This control-plane design remains a proposal and work item, not a live deployed service.
+- Only owner-controlled actions are permitted. AI collaborators may propose improvements; MASTER promotion requires explicit owner approval.
+- GitHub App, OAuth broker, remote MCP, OpenAI API, private RAHM and service hosting remain OPEN / NOT VERIFIED pending actual provisioning and read-back.
+
+---
+
 # PALANG PARTNER EXECUTION CONTROL PLANE — 2026-11-22
 
 - Stable ID: HAIF-PALANG-PARTNER-EXECUTION-CONTROL-PLANE-2026-11-22-001

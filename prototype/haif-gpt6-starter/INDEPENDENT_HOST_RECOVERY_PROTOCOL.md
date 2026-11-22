@@ -1,8 +1,8 @@
 # POINT-0/GOLDEN — current portable host contract
 
-- Living master: 1.7.95
+- Living master: 1.8.1
 - Package version: 0.5.1 candidate
-- Current chain: POINT-0/GOLDEN → CURRENT-149 → POINT-0/088 → IN-132 → OUT-131 → EVT-0319 → TIME-BINDING-EVT-0319 → CURRENT-150 → NEXT-051
+- Current chain: POINT-0/GOLDEN → CURRENT-150 → POINT-0/089 → IN-133 → OUT-132 → EVT-0320 → TIME-BINDING-EVT-0320 → CURRENT-151 → NEXT-051
 - Master access for hosts: PUBLIC READ ONLY; no direct or indirect host write path.
 - RAHM: central, private, owner-only, outside host workspaces; only owner-commanded export is permitted.
 - Child promotion: trusted bot-authored PR plus owner review; no auto-merge.
@@ -11,7 +11,7 @@
 # Independent-host recovery proof protocol
 
 Package version: 0.5.1 candidate
-Latest canonical chain: POINT-0/GOLDEN → CURRENT-149 → POINT-0/088 → IN-132 → OUT-131 → EVT-0319 → TIME-BINDING-EVT-0319 → CURRENT-150 → NEXT-051
+Latest canonical chain: POINT-0/GOLDEN → CURRENT-150 → POINT-0/089 → IN-133 → OUT-132 → EVT-0320 → TIME-BINDING-EVT-0320 → CURRENT-151 → NEXT-051
 The current point is POINT-0/GOLDEN on the existing canonical root; follow UNIVERSAL_AI_HOST_ENTRY_FA.md for model/platform-neutral entry.
 Project: Future AI / Palang Footprint
 Preserved historical baseline chain: POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051. Prior chain POINT-0/071 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 is preserved as parent history. Prior chain POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → POINT-0/069 → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122 → POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051 is preserved as parent history.
@@ -105,4 +105,4 @@ The canonical repository is Public. A clean host must attempt anonymous HTTPS RE
 
 ## Current source candidate — POINT-0/082
 
-Living master target: 1.7.95. Package source candidate: 0.5.1, same stable package ID and canonical ZIP filename. The 0.4.9 build receipt is historical to its exact source SHA and must not be reused. Fresh exact-main package verification is REQUIRED / NOT RUN until a new receipt proves archive SHA-256, byte size, inventory, CRC, paired-master read-back, extracted tests and artifact round-trip. Independent-host import and restart remain NOT RUN until direct destination receipts exist.
+Living master target: 1.8.1. Package source candidate: 0.5.1, same stable package ID and canonical ZIP filename. The 0.4.9 build receipt is historical to its exact source SHA and must not be reused. Fresh exact-main package verification is REQUIRED / NOT RUN until a new receipt proves archive SHA-256, byte size, inventory, CRC, paired-master read-back, extracted tests and artifact round-trip. Independent-host import and restart remain NOT RUN until direct destination receipts exist.
