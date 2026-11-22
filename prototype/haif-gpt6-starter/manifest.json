@@ -350,7 +350,7 @@
   "host_bootstrap_message": "ONE_MESSAGE_HOST_BOOTSTRAP_FA.md",
   "independent_host_bootstrap": "ONE_MESSAGE_HOST_BOOTSTRAP_FA.md",
   "current_continuation_chain": "POINT-0/GOLDEN → CURRENT-150 → POINT-0/089 → IN-133 → OUT-132 → EVT-0320 → TIME-BINDING-EVT-0320 → CURRENT-151 → NEXT-051",
-  "current_living_master_version": "1.8.1",
+  "current_living_master_version": "1.8.2",
   "current_internal_version": "0.5.1",
   "universal_host_entry": "UNIVERSAL_AI_HOST_ENTRY_FA.md",
   "features": [
