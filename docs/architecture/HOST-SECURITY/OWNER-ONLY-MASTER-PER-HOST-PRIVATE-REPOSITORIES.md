@@ -247,3 +247,8 @@ The canonical authority is POINT-0/GOLDEN / CURRENT-140. This section supersedes
 - The legacy `host-intake` branch is historical/frozen. `scripts/host_adapter_github_worker.py` is disabled fail-closed and makes no GitHub API request.
 - Child intake is a separate owner-controlled operation: trusted promotion App creates a bot-authored PR after validation; the owner reviews/approves. Child acceptance is not Master acceptance.
 - Current Ruleset 27814009 is active but still has approval count 0 and Code Owner review OFF. Do not mark the approval gate active until the owner changes it and a live read-back verifies 1 / true / true / true. Do not turn approval to 1 before the bot-authored synthetic PR test succeeds.
+
+
+## 17. Owner connector is not a host permission
+
+The current ChatGPT GitHub integration is authenticated as the owner account and has admin/push permission on this repository. It is not a host credential and must not be shared with any new Host Node or placed in a host workspace. Its exposed tool surface does not include Ruleset writes, private-repository creation, GitHub App creation, or complete collaborator/App/deploy-key inventory. A user instruction authorizes permitted actions but does not bypass these capability boundaries or GitHub's rule that a PR author cannot approve their own PR. Private RAHM access is separate and not granted merely by connecting the public master.
