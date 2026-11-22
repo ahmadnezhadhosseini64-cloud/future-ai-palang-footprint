@@ -193,7 +193,7 @@ All host-originated data is untrusted and enters QUARANTINE. The permanent event
 ### اجرای امن ورودی مخزن — وضعیت واقعی POINT-0/069
 - worker قدیمی GitHub به‌طور کامل fail-closed و غیرفعال شده است؛ هیچ درخواست API یا نوشتنی انجام نمی‌دهد. میزبان حق نوشتن روی هیچ شاخه‌ای از مخزن مادر ندارد.
 - شاخهٔ تاریخی host-intake فقط سابقه است و مسیر فعال دریافت میزبان نیست. مسیر فعلی: owner export → private RAHM → validation → bot-authored PR → owner approval → CHILD.
-- GitHub در زمان بررسی `main.protected=false` گزارش کرد. ابزار در دسترس، تغییر branch protection/rulesets را پشتیبانی نمی‌کند؛ بنابراین محافظت واقعی شاخه هنوز NOT CONFIGURED / OPEN است. محدودیت کد worker جایگزین branch protection یا credential کم‌اختیار نیست.
+- Historical snapshot only: main.protected=false was reported at an earlier date. It is superseded by the live baseline: main.protected=true and Ruleset 27814009 active; approval count=0 and Code Owner review=false remain open. See CURRENT-140.
 - قرارداد JSON Schema دفتر تعامل به‌روزرسانی شد تا input_id، output_id، host_id، host_session_id، master_commit_sha، master_version، checkpoint_id، adapter_version، payload_sha256، privacy_class، redaction_status، capture_status و receipt_ref الزامی باشند.
 - این به‌روزرسانی ساختار و گیت‌ها را محکم‌تر می‌کند؛ اتصال زندهٔ میزبان، استقرار worker و بازیابی مستقل همچنان نیازمند رسید end-to-end واقعی‌اند.
 
