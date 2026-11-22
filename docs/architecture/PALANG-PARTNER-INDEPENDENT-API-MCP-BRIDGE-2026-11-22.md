@@ -4,7 +4,7 @@
 - Status: IMPLEMENTATION PLAN / ACTIVE — SOURCE-OF-TRUTH UNDER POINT-0
 - Canonical root: POINT-0
 - Baseline: POINT-0/GOLDEN
-- Checkpoint: CURRENT-144 / POINT-0++
+- Checkpoint: CURRENT-145 / POINT-0++
 - Sole queue: NEXT-051
 - Owner: @ahmadnezhadhosseini64-cloud
 
@@ -117,7 +117,7 @@ The independent service requires:
 
 ## 9. Build and acceptance sequence
 
-- B0 — Architecture and permissions: this specification; DONE as a repository proposal once merged into Golden.
+- B0 — Architecture and permissions: DONE / MERGED to Golden by PR #109 and mirrored to main by PR #110; exact-tree read-back PASS.
 - B1 — Create a private implementation repository and hosting target.
 - B2 — Register GitHub App and configure OAuth callback/permissions.
 - B3 — Implement OAuth session broker and encrypted token store.
