@@ -1,3 +1,13 @@
+## CURRENT-148 / POINT-0++ — Golden merge read-back verified
+
+- Canonical root: POINT-0; baseline: POINT-0/GOLDEN; sole queue: NEXT-051.
+- Chain: CURRENT-146 → IN-131 → OUT-130 → POINT-0/087 → EVT-0316 → TIME-BINDING-EVT-0316 → CURRENT-147 → EVT-0317 → TIME-BINDING-EVT-0317 → CURRENT-148 → NEXT-051.
+- [EVT-0317](architecture/BEHAVIOR-TRACE/EVT-0317-POINT-0-087-CONTINUATION-MERGED-TO-GOLDEN-2026-11-22.md) · [TIME-BINDING-EVT-0317](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0317-POINT-0-087-CONTINUATION-MERGED-TO-GOLDEN-2026-11-22.md) · [CURRENT-148](0.0/anchors/PALANG-0.0-CURRENT-20261122-148-POINT-0-PLUSPLUS-GOLDEN-MERGE-VERIFIED.md).
+- PR #126 is merged to Golden. Main is not updated; main/Golden compare is DIVERGED (177 ahead / 17 behind).
+- Issues #114–#123 remain OPEN under NEXT-051 and now point to CURRENT-148. External provisioning remains incomplete.
+
+---
+
 ## CURRENT-147 / POINT-0++ — owner continuation and execution-capability audit
 
 - Canonical root: POINT-0; baseline: POINT-0/GOLDEN; sole queue: NEXT-051.
