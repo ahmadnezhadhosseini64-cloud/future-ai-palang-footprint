@@ -632,19 +632,28 @@
     "pr": 145,
     "main_modified": false,
     "mother_version": "1.8.4",
-    "portable_conformance_run": 45079525825,
-    "prospective_merge_sha": "37807c0d3d8c077f3d4e88d4a67bcc332fc6aaab",
-    "pr_head_sha": "cfb43377ae7551b73b6fdf536e83564bbd40e6b5",
+    "portable_conformance_run": 45079917344,
+    "prospective_merge_sha": "a2ac55f537352411c423205d9e5c367d99d0d920",
+    "pr_head_sha": "e22e6a098ff0c27cb09d5f3a782d00820d8e282b",
     "latest_chain_reconstruction": "PASS",
     "in_out_recovery_equivalence": "PASS",
     "stable_sha256_files": "47/47 MATCH",
     "live_reference_sha256_observations": 266,
-    "rahm_zip_sha256": "e34577774e45f69bd3fd2d740540f1bc7b3e70dc4c18d9b2ab4f426a24dcc66b",
+    "rahm_zip_sha256": "487f472227f7f3996c864618f7b2275c02842b40da7125f313d18f533ae98d0f",
     "starter_zip_sha256": "6b356e1503bf9c9404784e8d576d647f993ec6e3b89e6d32aba47954a5df5c60",
     "extracted_starter_tests": "24 PASS",
     "living_master_mirror": "BYTE_FOR_BYTE_MATCH",
-    "living_architecture_audit": "PENDING_FRESH_EXACT_HEAD_RUN",
+    "living_architecture_audit": "SUCCESS",
     "durable_release": "SKIPPED_ON_PULL_REQUEST",
-    "independent_host_acceptance": "NOT_RUN"
+    "independent_host_acceptance": "NOT_RUN",
+    "living_architecture_audit_run": 45079917323,
+    "portable_conformance": "SUCCESS",
+    "governance_tests": "31 PASS",
+    "current_pointer_candidates": [
+      "CURRENT-066",
+      "CURRENT-150"
+    ],
+    "current_pointer_winner_selected": false,
+    "promotion_gate": "OWNER_CONTROLLED_GOLDEN_MERGE_PENDING"
   }
 }
