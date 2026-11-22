@@ -1,10 +1,13 @@
-## Latest registered event — EVT-0322 / CURRENT-150.02 autonomous execution audit (ACTIVE)
+## Latest registered event — EVT-0323 / chat POINT-0 continuation (CANDIDATE)
 
-- [EVT-0322](./EVT-0322-PARTNER-AUTONOMOUS-EXECUTION-AND-LIVE-STATE-AUDIT-2026-11-22.md) → [TIME-BINDING-EVT-0322](./TIME-BINDING-EVT-0322-PARTNER-AUTONOMOUS-EXECUTION-AND-LIVE-STATE-AUDIT-2026-11-22.md).
-- [IN-135](../../0.0/anchors/PALANG-0.0-IN-20261122-135-PARTNER-AUTONOMOUS-EXECUTION.md) → [OUT-134](../../0.0/anchors/PALANG-0.0-OUT-20261122-134-PARTNER-AUTONOMOUS-EXECUTION.md).
-- Active resolver: [CURRENT-150.02](../../0.0/anchors/PALANG-0.0-CURRENT-20261122-150-REVISION-02-PARTNER-AUTONOMOUS-EXECUTION-AUDIT.md); sole queue candidate: [NEXT-051.02](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
-- Event commit: `4d41b77ac92d9abab9509ead7d28188a8b375504`; UTC `2026-11-22T17:05:26Z`; Tehran `2026-11-22T20:35:26+03:30`. The user-message timestamp is UNKNOWN.
-- CURRENT-150.02 / NEXT-051.02 are ACTIVE after exact-SHA CI, Golden merge and post-merge read-back; .01 remains historical.
+- [EVT-0323](./EVT-0323-CHAT-POINT0-CONTINUATION-2026-11-23.md) → [TIME-BINDING-EVT-0323](./TIME-BINDING-EVT-0323-CHAT-POINT0-CONTINUATION-2026-11-23.md).
+- [IN-136](../../0.0/anchors/PALANG-0.0-IN-20261123-136-CHAT-POINT0-CONTINUATION.md) → [OUT-135](../../0.0/anchors/PALANG-0.0-OUT-20261123-135-CHAT-POINT0-CONTINUATION.md).
+- Point marker: [POINT-0/GOLDEN chat continuation](../../0.0/anchors/POINT-0-GOLDEN-CHAT-CONTINUATION-2026-11-23-001.md).
+- Candidate current: [CURRENT-150.03](../../0.0/anchors/PALANG-0.0-CURRENT-20261123-150-REVISION-03-CHAT-POINT0-CONTINUATION.md); candidate queue revision: [NEXT-051.03](../../0.0/anchors/PALANG-0.0-NEXT-20261123-051-REVISION-03-EXECUTION-CONTINUATION.md).
+- Event commit `427a166c71deaf4656799451bf5593a50cbedbe2`; UTC `2026-11-22T22:35:55Z`; Tehran `2026-11-23T02:05:55+03:30`. Owner-message timestamp UNKNOWN.
+- This is a candidate on an isolated branch. CURRENT-150.02 / NEXT-051.02 remain last accepted Golden revisions until exact-SHA validation and merge.
+
+---
 
 ---
 
