@@ -1,4 +1,5 @@
 # RAHM_BOOT — Portable startup contract
+Package ID: HAIF-RAHM-PORTABLE-20261024-001 | Version: 1.0.3
 
 - Current canonical continuation: POINT-0/GOLDEN → CURRENT-150 → POINT-0/089 → IN-133 → OUT-132 → EVT-0320 → TIME-BINDING-EVT-0320 → CURRENT-151 → NEXT-051
 - Living master: 1.8.1. Portable starter 0.5.1 remains a candidate until a fresh exact-source conformance receipt is read back.
