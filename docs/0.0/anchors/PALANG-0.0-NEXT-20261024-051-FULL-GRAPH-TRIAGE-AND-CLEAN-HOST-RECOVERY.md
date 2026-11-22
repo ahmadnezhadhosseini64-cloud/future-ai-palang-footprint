@@ -1,3 +1,15 @@
+## CURRENT-148 / POINT-0++ — Golden merge read-back verified (2026-11-22)
+
+- Continuation: POINT-0/GOLDEN → CURRENT-146 → IN-131 → OUT-130 → POINT-0/087 → EVT-0316 → TIME-BINDING-EVT-0316 → CURRENT-147 → EVT-0317 → TIME-BINDING-EVT-0317 → CURRENT-148 → this sole NEXT-051.
+- [EVT-0317](../../architecture/BEHAVIOR-TRACE/EVT-0317-POINT-0-087-CONTINUATION-MERGED-TO-GOLDEN-2026-11-22.md) · [TIME-BINDING-EVT-0317](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0317-POINT-0-087-CONTINUATION-MERGED-TO-GOLDEN-2026-11-22.md) · [CURRENT-148](PALANG-0.0-CURRENT-20261122-148-POINT-0-PLUSPLUS-GOLDEN-MERGE-VERIFIED.md).
+- PR #126 merged into Golden as 7da94020b719e349f951f317865eec343af1d51e; merge tree 5612d9760799c185b0d443fa3f9031b4a861dbf1.
+- All ten Issues #114–#123 remain OPEN and now reference CURRENT-148; no issue is closed without acceptance evidence.
+- Main/Golden remain DIVERGED: Golden ahead 177 / behind 17; main base SHA aaf96c5e195f6f4f59dea43ebd9922b5f009c9ea. Main publication is OPEN pending trusted bot-authored owner-controlled promotion.
+- Partner private repo, GitHub App, OAuth/MCP, OpenAI API, hosting/deployment, private RAHM and recovery remain NOT PROVISIONED / NOT VERIFIED / NOT RUN.
+- MASTER remains PUBLIC READ ONLY for hosts; RAHM remains private and owner-only; no host write route, no public secrets, no auto-merge or bypass.
+
+---
+
 ## CURRENT-147 / POINT-0++ — owner continuation and execution-capability audit (2026-11-22)
 
 - Continuation: POINT-0/GOLDEN → CURRENT-146 → IN-131 → OUT-130 → POINT-0/087 → EVT-0316 → TIME-BINDING-EVT-0316 → CURRENT-147 → this sole NEXT-051.
