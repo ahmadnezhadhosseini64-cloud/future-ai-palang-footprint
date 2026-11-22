@@ -2,7 +2,7 @@
 
 - Stable ID: HAIF-CURRENT-143-POINT-0-PLUSPLUS-OWNER-AUTHORIZED-EXECUTION-2026-11-22
 - Display label: POINT-0++
-- Status: ACTIVE / LIVING / GOLDEN-READBACK-VERIFIED
+- Status: HISTORICAL CHECKPOINT / SUPERSEDED BY CURRENT-144
 - Canonical root: POINT-0 (single root)
 - Canonical baseline: POINT-0/GOLDEN
 - Parent: CURRENT-142
@@ -18,7 +18,7 @@ POINT-0/GOLDEN → IN-130 → OUT-129 → EVT-0309 → TIME-BINDING-EVT-0309 →
 
 PR #103 was merged into `governance/point-0-golden-baseline-20261122`. GitHub merge commit: `79d798bb8dac43c3d51c1f2ca022b46b4981fa65`. The Golden branch was read back at that SHA. The merged tree includes CURRENT-142, EVT-0311, TIME-BINDING-EVT-0311, notebook N01–N03, navigation/index updates, NEXT-051 owner action register, and the Golden-to-main snapshot workflow.
 
-This does NOT mean the Golden snapshot has been published to `main`. Main remains a separate publication destination until the exact snapshot PR is created, verified, and merged.
+The Golden snapshot was subsequently published to `main` through PR #104. See CURRENT-144 / EVT-0313 for exact tree and merge proof.
 
 ## 3. Owner authorization — execution rule
 The owner's direct and explicit instruction in the authenticated ChatGPT session is authorization for the connected assistant to perform the requested repository work within the actual capabilities and permissions of the connected GitHub integration.
