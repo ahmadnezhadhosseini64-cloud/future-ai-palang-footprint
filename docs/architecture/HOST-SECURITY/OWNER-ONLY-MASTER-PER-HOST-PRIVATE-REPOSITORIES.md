@@ -1,9 +1,9 @@
 # معماری امنیتی میزبان‌های مستقل و مخزن مادر فقط‌مالک
 
 - Stable ID: HAIF-OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOS-2026-11-21-001
-- Version: 1.2.0
+- Version: 1.3.0
 - Status: OWNER-DIRECTED / DESIGN APPROVED / IMPLEMENTATION PARTIAL
-- Parent: POINT-0/084 → CURRENT-137 → POINT-0/085 → CURRENT-138 → POINT-0/086 → CURRENT-139 → NEXT-051
+- Parent: POINT-0/GOLDEN → CURRENT-140 → NEXT-051
 - Canonical root: POINT-0 only
 - Canonical master repository: ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
 - Owner: repository owner only
@@ -234,3 +234,16 @@ HOST PRIVATE WORKSPACE → OWNER-COMMANDED MONITOR/EXPORT → PRIVATE RAHM QUARA
 - Ruleset 27814009: active, but required approvals=0 and Code Owner review=false; owner must set 1 and enable Code Owner review, stale-review dismissal and conversation resolution, then API read-back is required.
 - Host Registry: no verified live hosts; no Host ID issued by this point.
 - Therefore status is DESIGN REGISTERED / CODE IMPLEMENTED / OPERATIONAL SETUP PENDING. Do not claim RAHM_OPERATIONAL or HOST_SECURITY_VERIFIED.
+
+
+## 16. Golden baseline — absolute no-host-to-master rule
+
+The canonical authority is POINT-0/GOLDEN / CURRENT-140. This section supersedes every older instruction that could be interpreted as allowing a host to write to a branch of the master, create a PR against the master, or use a broker/worker/intermediary to route host-originated writes into the master.
+
+- Every host's permission on the canonical master is PUBLIC READ ONLY. No host account, host app, host token, host-held credential, workspace, broker, branch, PR, issue, release, workflow, setting, or bypass may write to or promote into the master.
+- A host may write only inside its own isolated runtime and, if the owner provisions one, its own PRIVATE host repository. That repository is not a relay or write route into the master or RAHM.
+- RAHM is central, private, and owner-only. It is not in any host workspace. Hosts have no RAHM read, write, admin, token, or App access.
+- Only the owner can inspect/export a host's accessible workspace/repository, redact the export, and place it into private RAHM. No host-initiated broker or automatic pipeline may transfer content to RAHM or master.
+- The legacy `host-intake` branch is historical/frozen. `scripts/host_adapter_github_worker.py` is disabled fail-closed and makes no GitHub API request.
+- Child intake is a separate owner-controlled operation: trusted promotion App creates a bot-authored PR after validation; the owner reviews/approves. Child acceptance is not Master acceptance.
+- Current Ruleset 27814009 is active but still has approval count 0 and Code Owner review OFF. Do not mark the approval gate active until the owner changes it and a live read-back verifies 1 / true / true / true. Do not turn approval to 1 before the bot-authored synthetic PR test succeeds.
