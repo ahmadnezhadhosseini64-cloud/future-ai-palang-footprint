@@ -6,7 +6,7 @@
 - Canonical root: POINT-0
 - Canonical baseline: POINT-0/GOLDEN
 - Parent: CURRENT-143
-- Event: [EVT-0313](../../architecture/BEHAVIOR-TRACE/EVT-0313-GOLDEN-SNAPSHOT-PUBLISHED-TO-MAIN-2026-11-22.md)
+- Event: [EVT-0313](../../architecture/BEHAVIOR-TRACE/EVT-0313-GOLDEN-SNAPSHOT-PUBLISHED-TO-MAIN-2026-11-22.md) → [TIME-BINDING-EVT-0313](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0313-GOLDEN-SNAPSHOT-PUBLISHED-2026-11-22.md)
 - Sole active queue: NEXT-051
 - Owner: @ahmadnezhadhosseini64-cloud
 
