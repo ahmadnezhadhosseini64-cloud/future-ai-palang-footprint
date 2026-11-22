@@ -1,6 +1,6 @@
 # POINT-0/GOLDEN — current portable host contract
 
-- Living master: 1.8.1
+- Living master: 1.8.2
 - Package version: 0.5.1 candidate
 - Current chain: POINT-0/GOLDEN → CURRENT-150 → POINT-0/089 → IN-133 → OUT-132 → EVT-0320 → TIME-BINDING-EVT-0320 → CURRENT-151 → NEXT-051
 - Master access for hosts: PUBLIC READ ONLY; no direct or indirect host write path.
