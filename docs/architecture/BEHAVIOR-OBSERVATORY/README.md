@@ -1,10 +1,12 @@
-## آخرین رویداد فعال — EVT-0322 / ممیزی اجرای مستقل یار پلنگ
+## آخرین نشانگر ادامه — EVT-0323 / CURRENT-150.03 نامزد
 
-- زنجیرهٔ نامزد: POINT-0/GOLDEN → CURRENT-150.01 → IN-135 → OUT-134 → EVT-0322 → TIME-BINDING-EVT-0322 → CURRENT-150.02 → NEXT-051.02.
-- [EVT-0322](../BEHAVIOR-TRACE/EVT-0322-PARTNER-AUTONOMOUS-EXECUTION-AND-LIVE-STATE-AUDIT-2026-11-22.md) · [TIME-BINDING-EVT-0322](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0322-PARTNER-AUTONOMOUS-EXECUTION-AND-LIVE-STATE-AUDIT-2026-11-22.md).
-- [IN-135](../../0.0/anchors/PALANG-0.0-IN-20261122-135-PARTNER-AUTONOMOUS-EXECUTION.md) · [OUT-134](../../0.0/anchors/PALANG-0.0-OUT-20261122-134-PARTNER-AUTONOMOUS-EXECUTION.md).
-- وضعیت: CURRENT-150.02 / NEXT-051.02 ACTIVE؛ آزمون دقیق، ادغام Golden و read-back پس از ادغام موفق شده است. بازیابی میزبان مستقل همچنان OPEN است.
-- ده اقدام Partner #114–#123 همچنان OPEN؛ گیت تأیید مالک، انتشار Release و recovery میزبان مستقل نیز OPEN هستند.
+- زنجیره: POINT-0/GOLDEN → CURRENT-150.02 → IN-136 → OUT-135 → EVT-0323 → TIME-BINDING-EVT-0323 → CURRENT-150.03 → NEXT-051.03.
+- [EVT-0323](../BEHAVIOR-TRACE/EVT-0323-CHAT-POINT0-CONTINUATION-2026-11-23.md) · [TIME-BINDING-EVT-0323](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0323-CHAT-POINT0-CONTINUATION-2026-11-23.md).
+- این نشانگر ادامهٔ همان ریشهٔ واحد POINT-0/GOLDEN است؛ CURRENT-150 و NEXT-051 هویت‌های ثابت‌اند. .03 تا آزمون دقیق و ادغام Golden نامزد باقی می‌ماند.
+- زمان ثبت EVT-0323: UTC `2026-11-22T22:35:55Z` / تهران `2026-11-23T02:05:55+03:30`. زمان پیام مالک UNKNOWN.
+- ده پروندهٔ Partner #114–#123، Issues #20/#21، انتشار Release، گیت تأیید مالک، provisioning خصوصی و بازیابی میزبان مستقل همچنان OPEN تا شاهد مقصدی.
+
+---
 
 ---
 
