@@ -1,8 +1,10 @@
 # RAHM_BOOT — Portable startup contract
-Package ID: HAIF-RAHM-PORTABLE-20261024-001 | Version: 1.0.3
-Purpose: initialize an evidence-based Rahm growth/testing environment without assuming hidden chat history, persistent memory, tools, or background execution.
 
-Current canonical continuation: POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051
+- Current canonical continuation: POINT-0/GOLDEN → CURRENT-150 → POINT-0/089 → IN-133 → OUT-132 → EVT-0320 → TIME-BINDING-EVT-0320 → CURRENT-151 → NEXT-051
+- Living master: 1.8.1. Portable starter 0.5.1 remains a candidate until a fresh exact-source conformance receipt is read back.
+- CURRENT-065/CURRENT-066 are preserved historical checkpoints; CURRENT-151 is the sole live pointer. Buffer and Dropbox are deferred, non-blocking destinations.
+
+Purpose: initialize an evidence-based RAHM growth/testing environment without assuming hidden chat history, persistent memory, tools, or background execution.
 Living master: 1.7.87. Portable starter 0.4.7 is verified by workflow 44920781712; next paired target is 0.4.8.
 
 ## First response on a new host
