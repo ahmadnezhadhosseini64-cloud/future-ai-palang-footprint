@@ -13,7 +13,7 @@
 4. Mirror work is demoted to supporting evidence; only an independent destination with exact-byte read-back and recovery value justifies it.
 5. Issues #114–#123 now have independent case IDs and explicit input/output/dependency/evidence/time/status/acceptance/read-back fields. All remain OPEN.
 6. Issues #20 and #21 are re-scoped as separate, complementary runtime and historical-census tracks; both remain OPEN.
-7. The package version drift is identified but not yet corrected or verified: portable starter manifest/tests/package references still pin 1.7.95 and CURRENT-140, while Golden mother is 1.8.0 / CURRENT-150.
+7. The package version drift was corrected in the PR candidate; exact post-merge Golden conformance remains pending. The prior failure was on stale 1.7.95 / CURRENT-140 pins.
 8. Golden and main remain diverged (219 ahead / 26 behind at last comparison); main remains untouched.
 
 ## Evidence boundary
