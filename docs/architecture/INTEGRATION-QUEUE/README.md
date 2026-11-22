@@ -1,3 +1,15 @@
+## Current continuation pointer — POINT-0/GOLDEN / CURRENT-150.02 candidate / NEXT-051.02 candidate
+
+- Stable identities remain POINT-0/GOLDEN · CURRENT-150 · NEXT-051.
+- Candidate current revision: [CURRENT-150.02](../../0.0/anchors/PALANG-0.0-CURRENT-20261122-150-REVISION-02-PARTNER-AUTONOMOUS-EXECUTION-AUDIT.md); candidate queue revision: NEXT-051.02.
+- Accepted resolver remains CURRENT-150.01 / NEXT-051.01 until exact candidate CI, Golden merge and post-merge read-back pass.
+- Chain: [IN-135](../../0.0/anchors/PALANG-0.0-IN-20261122-135-PARTNER-AUTONOMOUS-EXECUTION.md) → [OUT-134](../../0.0/anchors/PALANG-0.0-OUT-20261122-134-PARTNER-AUTONOMOUS-EXECUTION.md) → [EVT-0322](../BEHAVIOR-TRACE/EVT-0322-PARTNER-AUTONOMOUS-EXECUTION-AND-LIVE-STATE-AUDIT-2026-11-22.md) → [TIME-BINDING-EVT-0322](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0322-PARTNER-AUTONOMOUS-EXECUTION-AND-LIVE-STATE-AUDIT-2026-11-22.md).
+- Live audit: main SHA `30d1d3b2de09078131fa3c8a0ff7c492a7ab0d7e`; Golden SHA `59d46883527069f80c0d16943d03ca6faf098ef0`; DIVERGED 265 ahead / 26 behind. Golden Audit/Portable Conformance PASS; durable release publication remains OPEN.
+- Ruleset 27814009 is ACTIVE but approvals=0 and Code Owner review=false. Issues #114–#123 and #20/#21 remain OPEN.
+- No direct main write, force-sync, host bypass or parallel queue.
+
+---
+
 ## Current continuation pointer — POINT-0/GOLDEN / CURRENT-150.01 / NEXT-051.01
 
 - Stable identities: POINT-0/GOLDEN · CURRENT-150 · NEXT-051.

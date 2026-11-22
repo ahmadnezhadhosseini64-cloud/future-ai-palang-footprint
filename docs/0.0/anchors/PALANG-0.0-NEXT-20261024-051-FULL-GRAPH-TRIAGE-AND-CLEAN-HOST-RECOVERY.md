@@ -1,3 +1,53 @@
+## NEXT-051.02 — نامزد revision دوم صف ثابت (2026-11-22)
+
+- هویت صف ثابت: **NEXT-051**؛ این فقط revision **NEXT-051.02** است، نه صف جدید.
+- هویت خانوادهٔ جاری: **CURRENT-150**؛ revision نامزد: [CURRENT-150.02](PALANG-0.0-CURRENT-20261122-150-REVISION-02-PARTNER-AUTONOMOUS-EXECUTION-AUDIT.md).
+- آخرین revision پذیرفته‌شده تا پیش از پذیرش این نامزد: CURRENT-150.01 / NEXT-051.01.
+- ریشه و مبنا: POINT-0 / POINT-0/GOLDEN؛ هیچ root یا queue موازی ساخته نمی‌شود.
+- زنجیره: [IN-135](PALANG-0.0-IN-20261122-135-PARTNER-AUTONOMOUS-EXECUTION.md) → [OUT-134](PALANG-0.0-OUT-20261122-134-PARTNER-AUTONOMOUS-EXECUTION.md) → [EVT-0322](../../architecture/BEHAVIOR-TRACE/EVT-0322-PARTNER-AUTONOMOUS-EXECUTION-AND-LIVE-STATE-AUDIT-2026-11-22.md) → [TIME-BINDING-EVT-0322](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0322-PARTNER-AUTONOMOUS-EXECUTION-AND-LIVE-STATE-AUDIT-2026-11-22.md).
+- سیاست هویت ثابت: [POINT-0 Stable Anchor and Revision Policy](POINT-0-STABLE-ANCHOR-AND-REVISION-POLICY-2026-11-22.md).
+- وضعیت این revision: CANDIDATE / ACTIVE DEVELOPMENT / EXACT-SHA ACCEPTANCE PENDING. تا پذیرش دقیق، NEXT-051.01 resolver فعال باقی می‌ماند.
+
+## 1. ممیزی ده اقدام Partner — وضعیت زنده
+
+| اقدام | Issue | وضعیت فعلی | مانع/گام بعدی |
+|---|---:|---|---|
+| مخزن خصوصی سرویس و HTTPS hosting | #114 | BLOCKED / OWNER-DEPENDENT | ایجاد مخزن خصوصی و انتخاب hosting/secret manager توسط مالک؛ ابزار فعلی repository creation ندارد |
+| GitHub App مالک‌محور | #115 | BLOCKED / OWNER-DEPENDENT | ثبت App، نصب محدود و callback واقعی پس از گام 01 |
+| OAuth callback و session broker | #116 | BLOCKED / DEPENDENCY | نیازمند 01 و 02؛ کلید/توکن فقط در secret manager |
+| remote MCP و ابزارهای حداقل‌مجوز | #117 | BLOCKED / DEPENDENCY | نیازمند سرویس خصوصی و OAuth؛ endpoint زنده هنوز وجود ندارد |
+| OpenAI API project و Responses API | #118 | BLOCKED / OWNER-DEPENDENT | پروژه و کلید محدود در secret manager؛ هیچ کلیدی در چت ثبت نشود |
+| استقرار سرویس و HTTPS | #119 | BLOCKED / DEPENDENCY | پس از 01، 03، 04 و 05 |
+| promotion workflow و bot-authored PR | #120 | PARTIAL / SOURCE-READY | workflow منبع در مخزن وجود دارد؛ App/secret/variable و dispatch هنوز NOT VERIFIED / NOT RUN |
+| approval gate و ممیزی principalها | #121 | PARTIAL / NOT ENFORCED | Ruleset فعال اما approvals=0 و Code Owner review=false؛ ابزار فعلی تغییر Ruleset و فهرست collaborator/deploy-key را ارائه نمی‌کند |
+| RAHM خصوصی owner-only | #122 | BLOCKED / OWNER-DEPENDENT | ایجاد مخزن خصوصی و مرز read/export توسط مالک؛ هیچ Host دسترسی ندارد |
+| E2E، clean-host recovery و isolation | #123 | BLOCKED / DEPENDENCY | پس از فراهم‌شدن 01 تا 09؛ هنوز هیچ Host واقعی ACTIVE نیست |
+
+هر ده Issue #114–#123 در read-back زنده OPEN هستند. هیچ‌کدام با مستندسازی، وجود workflow یا موفقیت CI بسته نمی‌شود.
+
+## 2. سایر کارهای باز در همین صف
+
+1. **انتشار پایدار ZIP:** OPEN / BLOCKED؛ مرحلهٔ انتشار Release در اجرای Golden SKIPPED است و tag `haif-latest-verified` هنوز به artifact قدیمی اشاره می‌کند. ابزار فعلی Release write ندارد.
+2. **همگام‌سازی main با Golden:** OPEN / CONTROLLED-PROMOTION-ONLY؛ main و Golden به‌شدت DIVERGED هستند. فقط مسیر bot-authored، owner-controlled PR پس از تنظیم App و گیت تأیید مجاز است؛ force-sync ممنوع.
+3. **Issue #20:** OPEN؛ runtime محلی و schema testها وجود دارند، اما capture خودکار پیام زنده و recovery واقعی میزبان مستقل اثبات نشده‌اند.
+4. **Issue #21:** OPEN؛ سرشماری معنایی کامل منابع، قوانین، collisionها و parent-edgeها هنوز انجام نشده است.
+5. **Ruleset و هویت‌های مخزن:** OPEN؛ مقدار approval و Code Owner باید توسط مالک اصلاح و read-back شود؛ فهرست کامل collaborator/App/deploy key هنوز قابل‌دسترسی نیست.
+6. **میزبان مستقل:** NOT RUN؛ هیچ ادعای recovery یا ACTIVE شدن Host مجاز نیست.
+
+## 3. ترتیب ادامه
+
+- کارهای صرفاً repository-backed را روی شاخهٔ غیر main انجام بده، CI را اجرا کن، read-back بگیر و از PR به Golden استفاده کن.
+- کارهای نیازمند ایجاد سرویس/اعتبارنامه را با علت دقیق BLOCKED نگه دار؛ هیچ Secret را درخواست یا در متن عمومی ذخیره نکن.
+- پس از provision واقعی، 01 → 02 → 03 → 04/05 → 06 → 07/08 → 09 → 10 را با رسید مستقل جلو ببر.
+- Release فقط پس از آزمون exact-SHA، دانلود artifact، digest، inventory، ZIP CRC، استخراج و آزمون‌ها به‌روزرسانی شود.
+- main فقط با مسیر promotion مورداعتماد و approval واقعی به‌روزرسانی شود.
+
+## 4. قواعد توقف
+
+MASTER فقط READ ONLY برای میزبان‌هاست؛ RAHM خصوصی و فقط‌مالک؛ هیچ host credential، bypass، auto-merge یا force-sync مجاز نیست. موارد WAITING / DEFERRED / NON-BLOCKING مانند Buffer و Dropbox، بدون نیاز مشخص وارد مسیر اصلی نمی‌شوند.
+
+---
+
 ## NEXT-051.01 — first stable queue revision (2026-11-22)
 
 - Stable queue identity: **NEXT-051**. This is revision **NEXT-051.01**, not a new queue.

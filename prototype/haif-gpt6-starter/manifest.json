@@ -238,7 +238,13 @@
     "TIME-BINDING-EVT-0321",
     "CURRENT-150.01",
     "NEXT-051.01",
-    "POINT-0 stable anchor and revision policy"
+    "POINT-0 stable anchor and revision policy",
+    "IN-135",
+    "OUT-134",
+    "EVT-0322",
+    "TIME-BINDING-EVT-0322",
+    "CURRENT-150.02 (candidate)",
+    "NEXT-051.02 (candidate)"
   ],
   "entrypoint": "engine.py",
   "host_instructions": "GPT6_HOST_INSTRUCTIONS.md",
@@ -356,8 +362,8 @@
   "one_message_host_bootstrap": "ONE_MESSAGE_HOST_BOOTSTRAP_FA.md",
   "host_bootstrap_message": "ONE_MESSAGE_HOST_BOOTSTRAP_FA.md",
   "independent_host_bootstrap": "ONE_MESSAGE_HOST_BOOTSTRAP_FA.md",
-  "current_continuation_chain": "POINT-0/GOLDEN → CURRENT-150 → IN-134 → OUT-133 → EVT-0321 → TIME-BINDING-EVT-0321 → CURRENT-150.01 → NEXT-051.01",
-  "current_living_master_version": "1.8.3",
+  "current_continuation_chain": "POINT-0/GOLDEN → CURRENT-150.01 → IN-135 → OUT-134 → EVT-0322 → TIME-BINDING-EVT-0322 → CURRENT-150.02 → NEXT-051.02",
+  "current_living_master_version": "1.8.4",
   "current_internal_version": "0.5.1",
   "universal_host_entry": "UNIVERSAL_AI_HOST_ENTRY_FA.md",
   "features": [
