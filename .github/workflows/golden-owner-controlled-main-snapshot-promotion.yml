@@ -1,0 +1,97 @@
+name: Golden to main — Owner-Controlled Snapshot PR
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirmation:
+        description: "Type PROMOTE_GOLDEN_TO_MAIN to prepare a snapshot PR"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: golden-main-snapshot-promotion
+  cancel-in-progress: false
+
+jobs:
+  prepare-owner-reviewed-pr:
+    if: github.actor == 'ahmadnezhadhosseini64-cloud' && github.ref == 'refs/heads/governance/point-0-golden-baseline-20261122' && inputs.confirmation == 'PROMOTE_GOLDEN_TO_MAIN'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - name: Require owner-managed App credentials
+        env:
+          APP_CLIENT_ID: ${{ vars.PALANG_PROMOTION_APP_CLIENT_ID }}
+          APP_PRIVATE_KEY: ${{ secrets.PALANG_PROMOTION_APP_PRIVATE_KEY }}
+        run: |
+          set -euo pipefail
+          test -n "$APP_CLIENT_ID" || { echo "MISSING_REPOSITORY_VARIABLE_PALANG_PROMOTION_APP_CLIENT_ID"; exit 1; }
+          test -n "$APP_PRIVATE_KEY" || { echo "MISSING_REPOSITORY_SECRET_PALANG_PROMOTION_APP_PRIVATE_KEY"; exit 1; }
+
+      - name: Mint narrowly scoped owner-controlled App token
+        id: app-token
+        uses: actions/create-github-app-token@v3.2.0
+        with:
+          client-id: ${{ vars.PALANG_PROMOTION_APP_CLIENT_ID }}
+          private-key: ${{ secrets.PALANG_PROMOTION_APP_PRIVATE_KEY }}
+          owner: ahmadnezhadhosseini64-cloud
+          repositories: future-ai-palang-footprint
+          permission-contents: write
+          permission-pull-requests: write
+          permission-workflows: write
+
+      - name: Checkout main using App identity
+        uses: actions/checkout@v5
+        with:
+          repository: ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
+          ref: main
+          token: ${{ steps.app-token.outputs.token }}
+          fetch-depth: 0
+
+      - name: Fetch the exact Golden source tree
+        env:
+          GOLDEN_REF: governance/point-0-golden-baseline-20261122
+        run: |
+          set -euo pipefail
+          git fetch origin "$GOLDEN_REF:refs/remotes/origin/$GOLDEN_REF"
+          echo "MAIN_BASE_SHA=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+          echo "GOLDEN_SOURCE_SHA=$(git rev-parse "refs/remotes/origin/$GOLDEN_REF")" >> "$GITHUB_ENV"
+          echo "GOLDEN_TREE_SHA=$(git rev-parse "refs/remotes/origin/$GOLDEN_REF^{tree}")" >> "$GITHUB_ENV"
+
+      - name: Build a clean snapshot branch on top of current main
+        env:
+          GOLDEN_REF: governance/point-0-golden-baseline-20261122
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+        run: |
+          set -euo pipefail
+          promotion_branch="golden-main-snapshot/$GITHUB_RUN_ID"
+          if git ls-remote --exit-code --heads origin "$promotion_branch" >/dev/null 2>&1; then
+            echo "PROMOTION_BRANCH_ALREADY_EXISTS=$promotion_branch"
+            exit 1
+          fi
+          git switch -c "$promotion_branch"
+          git rm -r --ignore-unmatch .
+          git checkout "refs/remotes/origin/$GOLDEN_REF" -- .
+          git add -A
+          if git diff --cached --quiet; then
+            echo "GOLDEN_SNAPSHOT_IDENTICAL_TO_MAIN_NO_PR_REQUIRED"
+            exit 1
+          fi
+          git config user.name "Palang Owner Promotion Bot"
+          git config user.email "palang-promotion[bot]@users.noreply.github.com"
+          git commit -m "Prepare owner-reviewed POINT-0 Golden snapshot for main"
+          actual_tree="$(git rev-parse 'HEAD^{tree}')"
+          test "$actual_tree" = "$GOLDEN_TREE_SHA" || {
+            echo "SNAPSHOT_TREE_MISMATCH expected=$GOLDEN_TREE_SHA actual=$actual_tree"
+            exit 1
+          }
+          test "$(git rev-parse HEAD^)" = "$MAIN_BASE_SHA" || {
+            echo "PROMOTION_PARENT_IS_NOT_CAPTURED_MAIN_HEAD"
+            exit 1
+          }
+          git push origin "$promotion_branch"
+          gh pr create             --base main             --head "$promotion_branch"             --title "Owner-reviewed publication of POINT-0/GOLDEN snapshot"             --body "This PR publishes the exact POINT-0/GOLDEN repository tree as a single snapshot commit whose parent is the captured main HEAD. It does not replay historical commits. Source Golden SHA: $GOLDEN_SOURCE_SHA. Source tree SHA: $GOLDEN_TREE_SHA. Destination parent main SHA: $MAIN_BASE_SHA. The workflow verified exact tree equality before push. The GitHub App only authors this PR; it cannot approve, merge, auto-merge, bypass Rulesets or change repository settings. Required action: independent review and approval by repository owner @ahmadnezhadhosseini64-cloud. Do not merge until all required checks pass and the live Ruleset requires the owner approval."
