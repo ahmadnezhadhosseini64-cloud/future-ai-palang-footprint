@@ -3,7 +3,7 @@
 - Stable family ID: CURRENT-150
 - Revision: 150.01
 - Revision document ID: HAIF-CURRENT-150-REV-01-STABLE-ANCHOR-LOCK-2026-11-22
-- Status: CANDIDATE / ACTIVE DEVELOPMENT / EXACT-SHA ACCEPTANCE PENDING
+- Status: ACTIVE / LIVING / POST-MERGE-EXACT-SHA-VERIFIED
 - Canonical root: POINT-0
 - Golden baseline: POINT-0/GOLDEN
 - Parent stable checkpoint: CURRENT-150
@@ -13,7 +13,7 @@
 - Event: [EVT-0321](../../architecture/BEHAVIOR-TRACE/EVT-0321-STABLE-ANCHOR-IDENTITY-LOCK-AND-REVISION-RECEIPT-2026-11-22.md)
 - Time binding: [TIME-BINDING-EVT-0321](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0321-STABLE-ANCHOR-IDENTITY-LOCK-2026-11-22.md)
 - Sole queue: [NEXT-051](PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
-- Queue revision: NEXT-051.01 (candidate)
+- Queue revision: NEXT-051.01 (ACTIVE)
 - Governing policy: [POINT-0 Stable Anchor and Revision Policy](POINT-0-STABLE-ANCHOR-AND-REVISION-POLICY-2026-11-22.md)
 
 ## 1. Stable continuation
@@ -37,11 +37,16 @@ No historical file is deleted or renumbered.
 
 ## 3. Package version and verification
 
-- Golden living mother at the base of this revision is version 1.8.2.
+- Golden living mother at this revision is version 1.8.3; package manifest and byte-identical portable mirror both read back as 1.8.3.
 - The authoritative rule is mother-first: package manifest, portable mirror and tests follow the exact current mother. The mother is never downgraded to satisfy stale test literals.
 - PR #138 candidate SHA `d63347be5ba8dba564d1c923c95a91d5d2169688` passed Portable RAHM Conformance run `45021299472` and Living Architecture Audit run `45021299450`; the candidate was merged to Golden as `669f46f2b7a12ab9809f36c0ddf69f3e5b50acf4`.
 - Candidate receipts recorded 24 starter tests and 31 architecture/governance tests passing, SHA-256 inventory, RAHM archive build, canonical starter ZIP rebuild, downloaded-artifact digest, extraction and extracted tests.
-- Exact post-merge Golden audit/conformance remains to be freshly retrieved. PR candidate success is not mislabeled as post-merge proof.
+- Exact post-merge Golden verification on merge SHA `2769815b2597c50da16e6ed399c902a20f471902` and tree SHA `f61f3e7d1c06e1e0a0955cadcb00b29b1fe26699`: Living Architecture Audit run `45026845151` SUCCESS; Portable RAHM Conformance run `45026845147` SUCCESS.
+- The tested PR-head tree and merged Golden tree are identical. Exact stable/live SHA-256 scans, package inventory, ZIP CRC, source-byte read-back, extracted 24 tests, exact artifact-ID download, paired living-mother read-back and artifact round-trip all PASS.
+- RAHM archive: 301 files / 1,452,220 bytes / SHA-256 `863d341b8f8d418c49857f8692398ae85ea3f85257854bf24a4f155993a6df67`; artifact ID `14755279251`.
+- Canonical starter ZIP: 19 files / 282,857 bytes / SHA-256 `4b1d88281b1ba0d4f0344cbf9bb1fb2531bb21f8af39d52f809da799be6f5f2f`; artifact ID `14755184502`.
+- Pointer discovery: `SCOPED_CONSISTENT`; CURRENT-066 remains the historical overlay checkpoint, CURRENT-150 is the global stable family, and CURRENT-109 is a historical verifier fixture. No numeric winner was selected.
+- The full semantic source census and historical local-link/collision/parent-edge adjudication remain OPEN under Issue #21; the successful architecture workflow is not a claim that those historical graph gaps are closed.
 
 ## 4. CURRENT-065 / CURRENT-066 disposition
 
