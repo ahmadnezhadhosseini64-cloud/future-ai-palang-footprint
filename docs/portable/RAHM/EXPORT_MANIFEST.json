@@ -1,7 +1,7 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.8.41",
-  "manifest_status": "POINT-0/GOLDEN / CURRENT-150.01 candidate; living mother 1.8.3; portable starter 0.5.1; mutable audit script and current queue references are live-hashed at build; exact post-link-fix conformance pending on final SHA; package SHA-256, inventory, extraction, artifact round-trip and release receipt must be verified by exact-SHA workflow; independent real-host recovery and live ChatGPT auto-capture remain OPEN / NOT RUN.",
+  "version": "1.8.42",
+  "manifest_status": "POINT-0/GOLDEN / CURRENT-150.01 ACTIVE; living mother 1.8.3; portable starter 0.5.1; post-merge exact Golden SHA 2769815b2597c50da16e6ed399c902a20f471902; Living Architecture Audit 45026845151 PASS; Portable RAHM Conformance 45026845147 PASS; RAHM archive 301 files / 1452220 bytes / SHA-256 863d341b8f8d418c49857f8692398ae85ea3f85257854bf24a4f155993a6df67; canonical starter ZIP 19 files / 282857 bytes / SHA-256 4b1d88281b1ba0d4f0344cbf9bb1fb2531bb21f8af39d52f809da799be6f5f2f; independent real-host recovery and live ChatGPT auto-capture remain OPEN / NOT RUN.",
   "created_from_checkpoint": "HAIF-POINT-0-GOLDEN-2026-11-22-001 + HAIF-CURRENT-151",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [

@@ -3,12 +3,12 @@
 - Stable ID / شناسه پایدار: `G6IP-FIRST-LIVING-MASTER-PORTABLE-RAHM-20261024-001`
 - Production ID / شناسه تولید: `G6IP-FLM-RAHM-001`
 - Version / نسخه: 1.1.9
-- Status / وضعیت: REGISTERED / READ-BACK VERIFIED; latest strict digest/package result is tracked in workflow history; real-host gates OPEN; global pointer CURRENT-150.01 candidate; full semantic source-graph census OPEN.
+- Status / وضعیت: REGISTERED / READ-BACK VERIFIED; latest strict digest/package result is tracked in workflow history; real-host gates OPEN; global pointer CURRENT-150.01 ACTIVE after exact post-merge audit and conformance; full semantic source-graph census OPEN.
 - Authority / مرجع حاکم: اصول بنیادی پروژه + سند مادر معماری موروثی + بسته قابل‌حمل RAHM.
 - User Point 0: [POINT-0/GOLDEN](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md) (0++ remains a marker on the same canonical root)
 - Stable current family: [CURRENT-150](../../0.0/anchors/PALANG-0.0-CURRENT-20261122-150-POINT-0-PLUSPLUS-EXACT-MAIN-AUDIT.md)
 - Current revision: [CURRENT-150.01](../../0.0/anchors/PALANG-0.0-CURRENT-20261122-150-REVISION-01-STABLE-ANCHOR-IDENTITY-LOCK.md)
-- Sole stable queue: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md) — candidate revision NEXT-051.01
+- Sole stable queue: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md) — active revision NEXT-051.01
 - User input: [IN-134](../../0.0/anchors/PALANG-0.0-IN-20261122-134-STABLE-ANCHOR-IDENTITY-LOCK.md)
 - Assistant output: [OUT-133](../../0.0/anchors/PALANG-0.0-OUT-20261122-133-STABLE-ANCHOR-IDENTITY-LOCK.md)
 - Event: [EVT-0321](../../architecture/BEHAVIOR-TRACE/EVT-0321-STABLE-ANCHOR-IDENTITY-LOCK-AND-REVISION-RECEIPT-2026-11-22.md)
@@ -30,7 +30,7 @@ Stable identities do not advance during routine work. Use CURRENT-150.02+ and NE
 
 POINT-0/GOLDEN → CURRENT-150 → POINT-0/089 → IN-133 → OUT-132 → EVT-0320 → TIME-BINDING-EVT-0320 → CURRENT-151 → NEXT-051
 
-CURRENT-151 and its source/evidence remain preserved as a transition snapshot. It is not the live resolver after CURRENT-150.01 is accepted and merged. No historical record is deleted or renumbered.
+CURRENT-151 and its source/evidence remain preserved as a transition snapshot. It is not the live resolver; CURRENT-150.01 is the accepted stable-family resolver. No historical record is deleted or renumbered.
 
 ## Historical continuation — POINT-0/079 / CURRENT-132
 
