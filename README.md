@@ -1,7 +1,7 @@
 ## POINT-0/GOLDEN — canonical current baseline (2026-11-22)
 
 - [POINT-0/GOLDEN](0.0/anchors/GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md) → [IN-130](0.0/anchors/PALANG-0.0-IN-20261122-130-GOLDEN-BASELINE.md) → [OUT-129](0.0/anchors/PALANG-0.0-OUT-20261122-129-GOLDEN-BASELINE.md)
-- [EVT-0309](architecture/BEHAVIOR-TRACE/EVT-0309-POINT-0-GOLDEN-BASELINE-2026-11-22.md) → [TIME-BINDING-EVT-0309](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0309-POINT-0-GOLDEN-BASELINE-2026-11-22.md) → [CURRENT-140](0.0/anchors/PALANG-0.0-CURRENT-20261122-140-GOLDEN-BASELINE.md) → [EVT-0310](architecture/BEHAVIOR-TRACE/EVT-0310-GOLDEN-FORWARD-ONLY-OWNER-DIRECTIVE-2026-11-22.md) → [TIME-BINDING-EVT-0310](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0310-GOLDEN-FORWARD-ONLY-2026-11-22.md) → [CURRENT-141](0.0/anchors/PALANG-0.0-CURRENT-20261122-141-GOLDEN-FORWARD-ONLY.md) → sole active [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
+- [EVT-0309](architecture/BEHAVIOR-TRACE/EVT-0309-POINT-0-GOLDEN-BASELINE-2026-11-22.md) → [TIME-BINDING-EVT-0309](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0309-POINT-0-GOLDEN-BASELINE-2026-11-22.md) → [CURRENT-140](0.0/anchors/PALANG-0.0-CURRENT-20261122-140-GOLDEN-BASELINE.md) → [EVT-0310](architecture/BEHAVIOR-TRACE/EVT-0310-GOLDEN-FORWARD-ONLY-OWNER-DIRECTIVE-2026-11-22.md) → [TIME-BINDING-EVT-0310](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0310-GOLDEN-FORWARD-ONLY-2026-11-22.md) → [CURRENT-141](0.0/anchors/PALANG-0.0-CURRENT-20261122-141-GOLDEN-FORWARD-ONLY.md) → [EVT-0311](architecture/BEHAVIOR-TRACE/EVT-0311-POINT-0-PLUSPLUS-GOLDEN-CONTINUATION-2026-11-22.md) → [TIME-BINDING-EVT-0311](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0311-POINT-0-PLUSPLUS-2026-11-22.md) → [CURRENT-142 / POINT-0++](0.0/anchors/PALANG-0.0-CURRENT-20261122-142-POINT-0-PLUSPLUS-GOLDEN.md) → sole active [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
 - Baseline source HEAD: `9ebd4bcc5cfc0168276e366c1867da8709dfb566`; tree: `8be81af3dcf822b10107a7efcf4c603ca7567706`.
 - Latest verified portable release at that source: [haif-latest-verified](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified); ZIP SHA-256 `243baddff63eaf18129a0cbaff860f84f375655c893ee0d1cb42235ecae38646`; clean-host recovery remains NOT RUN.
 - Master: hosts PUBLIC READ ONLY; no direct or indirect host write route. RAHM: central, private, owner-only, outside all host workspaces. Owner-commanded export is the only bridge.
@@ -14,7 +14,7 @@
 - PR #97 merged as 67c85da41e1d455271f55eb8affbe92811e816af; full repository tree SHA matched proposal and main exactly (9191d83e75713d95536b017563c27e326524cbe4); 51 changed files read back by tree identity.
 ## Current host-security and RAHM entry — POINT-0/GOLDEN / CURRENT-140
 
-- Current checkpoint: docs/0.0/anchors/PALANG-0.0-CURRENT-20261122-139-RAHM-CENTRAL-OWNER-GATE.md
+- Current checkpoint: docs/0.0/anchors/PALANG-0.0-CURRENT-20261122-142-POINT-0-PLUSPLUS-GOLDEN.md
 - RAHM architecture: docs/architecture/RAHM/README.md
 - Owner monitoring commands: docs/architecture/RAHM/OWNER-MONITORING-COMMANDS.md
 - Private RAHM setup: docs/architecture/RAHM/PRIVATE-RAHM-REPOSITORY-TEMPLATE.md
