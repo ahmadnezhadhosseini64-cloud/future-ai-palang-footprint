@@ -91,3 +91,7 @@ CURRENT-151 records source-level reconciliation and issue updates. It does not c
 ## Exact-SHA verification boundary
 
 The PR #137 receipts (runs 45020163367 and 45020163375) tested the earlier 1.8.1 candidate SHA bf7e7ab3fc79e598bf5456605dae2bfa75ef929c. The portable mother and manifest were subsequently advanced to 1.8.2 / EXPORT_MANIFEST 1.8.39. Therefore the earlier candidate receipts are historical evidence only and do not certify the current 1.8.2 package bytes. The current 1.8.2 source must pass both Portable RAHM Conformance and Living Architecture Audit on the exact candidate tree before it can be called CI-verified. Release publication remains main-only; clean independent-host recovery remains a separate acceptance gate.
+
+## Historical transition notice — retained under CURRENT-150 stable family
+
+As of the proposed stable-identity transition, this CURRENT-151 record is preserved unchanged as historical transition evidence. Its findings, receipts and open gates are incorporated by reference into [CURRENT-150.01](PALANG-0.0-CURRENT-20261122-150-REVISION-01-STABLE-ANCHOR-IDENTITY-LOCK.md). It is no longer the resolver for the live current pointer once CURRENT-150.01 is accepted and merged. The historical event, timestamps and prior "current at that moment" state remain intact. No renumbering or deletion has occurred.
