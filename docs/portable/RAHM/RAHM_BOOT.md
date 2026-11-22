@@ -2,7 +2,7 @@
 Package ID: HAIF-RAHM-PORTABLE-20261024-001 | Version: 1.0.3
 
 - Current canonical continuation: POINT-0/GOLDEN → CURRENT-150 → POINT-0/089 → IN-133 → OUT-132 → EVT-0320 → TIME-BINDING-EVT-0320 → CURRENT-151 → NEXT-051
-- Living master: 1.8.1. Portable starter 0.5.1 remains a candidate until a fresh exact-source conformance receipt is read back.
+- Living master: 1.8.2. Portable starter 0.5.1 remains a candidate until a fresh exact-source conformance receipt is read back.
 - CURRENT-065/CURRENT-066 are preserved historical checkpoints; CURRENT-151 is the sole live pointer. Buffer and Dropbox are deferred, non-blocking destinations.
 
 Purpose: initialize an evidence-based RAHM growth/testing environment without assuming hidden chat history, persistent memory, tools, or background execution.
