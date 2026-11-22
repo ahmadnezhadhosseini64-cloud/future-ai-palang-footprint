@@ -2,7 +2,7 @@
 
 - Stable ID: HAIF-IN-133-DEEP-EXCAVATION-20261122
 - Parent: POINT-0/089
-- Status: REGISTERED / READ-BACK PENDING
+- Status: REGISTERED / READ-BACK VERIFIED
 - Canonical root: POINT-0; Golden: POINT-0/GOLDEN; sole queue: NEXT-051
 
 ## Owner input
