@@ -46,7 +46,7 @@ class PointerDiscoveryTests(unittest.TestCase):
         self.assertEqual(result["status"], "CONSISTENT")
 
     def test_historical_recovery_verifier_does_not_compete_with_live_overlay_pointer(self):
-        manifest, verifier, portable, _ = inputs(verifier_id="CURRENT-109")
+        manifest, verifier, portable, _ = inputs(verifier_id="CURRENT-109", portable_id="CURRENT-150")
         registry = {
             "0.0 registry": "> **CURRENT POINT-0++:** [CURRENT-150](docs/0.0/anchors/CURRENT-150.md)\n- CURRENT-065 remains current in an older historical note.",
             "integration queue": "## Current continuation pointer — POINT-0/GOLDEN / CURRENT-150 / NEXT-051",
@@ -96,7 +96,7 @@ class PointerDiscoveryTests(unittest.TestCase):
         self.assertFalse(result["winner_selected"])
 
     def test_latest_live_claim_supersedes_historical_registry_claim(self):
-        values = inputs()
+        values = inputs(portable_id="CURRENT-072")
         registry = {
             "0.0 registry": "- CURRENT-065 remains current; historical notes preserved.\n- Current continuation: CURRENT-072.",
             "integration queue": "- Current point: CURRENT-072.",
