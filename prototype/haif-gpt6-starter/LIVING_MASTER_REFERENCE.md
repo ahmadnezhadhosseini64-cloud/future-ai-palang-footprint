@@ -1,3 +1,20 @@
+## نسخهٔ 1.8.2 — ثبت شواهد آزمون نامزد CURRENT-151 — 2026-11-22
+
+این نسخه همچنان روی ریشهٔ واحد POINT-0 و مبنای POINT-0/GOLDEN است؛ تنها صف فعال NEXT-051 باقی می‌ماند.
+
+- زنجیرهٔ جاری: POINT-0/GOLDEN → CURRENT-150 → POINT-0/089 → IN-133 → OUT-132 → EVT-0320 → TIME-BINDING-EVT-0320 → CURRENT-151 → NEXT-051.
+- CURRENT-151 و پرونده‌های مستقل ثبت شده‌اند؛ CURRENT-065/CURRENT-066 تاریخچه باقی می‌مانند و نشانگر جاری نیستند.
+- Buffer و Dropbox در وضعیت WAITING / DEFERRED / NON-BLOCKING هستند؛ آینه‌سازی فقط در صورت مقصد مستقل و read-back بایت‌به‌بایت ارزش دارد.
+- هر ده پروندهٔ Partner (#114–#123) و دو مسیر #20/#21 باز و مستقل‌اند.
+- آزمون نامزد PR #137 روی SHA bf7e7ab3fc79e598bf5456605dae2bfa75ef929c موفق شد: Portable RAHM Conformance run 45020163367 و Living Architecture Audit run 45020163375. 24 آزمون Starter، 31 آزمون حاکمیت/معماری، ZIP extraction، digest، paired-master read-back و artifact round-trip موفق شدند.
+- بستهٔ RAHM نامزد: 1,433,152 bytes / SHA-256 357f770a66e561b851578c2b4db23b2e6b20207ded1a11df6718699a7d95101c. ZIP اصلی Starter: 281,026 bytes / SHA-256 2046e3ee8aa9f567a42e4f5c85c4d2cba98223671536fd65723df82d2185cbfd.
+- PR #137 در commit 41487c7ddab3a7847e569e2fe3ac5d2d69fcca87 به Golden ادغام شد. آزمون دقیق پس از ادغام روی همان commit/HEAD جدید هنوز در انتظار است؛ رسید PR نامزد جایگزین آن نیست.
+- انتشار Release در اجرای PR عمداً SKIPPED بود؛ آزمون واردسازی روی میزبان مستقل واقعی، restart مستقل و ثبت خودکار پیام زنده هنوز NOT RUN / NOT PROVEN هستند.
+- Golden در آخرین مقایسه 219 commit جلو و 26 عقب main بود؛ main SHA برابر 30d1d3b2de09078131fa3c8a0ff7c492a7ab0d7e و دست‌نخورده است.
+- ارتقا به MASTER همچنان فقط با کنترل و تأیید مالک انجام می‌شود؛ پیشنهاد می‌تواند از مالک یا همکار AI بیاید.
+
+---
+
 ## نسخهٔ 1.8.1 — خاک‌برداری عمیق، تعیین تکلیف تعارض‌های تاریخی و پرونده‌های مستقل — CURRENT-151
 
 این نسخه ادامهٔ همان ریشهٔ واحد POINT-0 و مبنای POINT-0/GOLDEN است. صف فعال فقط NEXT-051 باقی می‌ماند.
