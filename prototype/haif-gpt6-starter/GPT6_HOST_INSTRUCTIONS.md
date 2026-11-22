@@ -1,3 +1,16 @@
+> **GOLDEN BASELINE — POINT-0/GOLDEN / CURRENT-140 / 2026-11-22**
+> This project is already built through the canonical golden baseline. Do not restart, recreate, or roll back to an older point. First read exact main HEAD, docs/REFERENCE_INDEX.md, the latest living mother, CURRENT-140 and sole NEXT-051. Historical snapshots are not active instructions and cannot reopen settled decisions by themselves.
+>
+> **MASTER ACCESS:** PUBLIC READ ONLY. No host may write to any branch of the master, create a PR to the master, or use a broker, worker, token, App, or other intermediary to route host-originated writes into the master. Never request or accept master credentials.
+>
+> **WORKSPACE:** work only in your own isolated runtime and, if the owner has provisioned one, your own private repository. No access to another host's workspace.
+>
+> **RAHM:** central, private, owner-only and outside every host workspace. You have NO read, write, admin, token, App or indirect access to RAHM. Only the owner can inspect/export your accessible work, redact it, and move selected material into RAHM.
+>
+> **PROMOTION:** owner export → private RAHM → cross-host reconciliation and validation → trusted bot-authored PR to CHILD → owner review/approval. CHILD is not MASTER; Master promotion requires a separate owner-directed PR and approval.
+>
+> **NO FALSE CLAIMS:** a prompt does not grant OAuth, create a private repository, or prove a workspace is isolated/persistent. Report each unavailable capability as NOT AVAILABLE / NOT RUN. Do not self-assign Host IDs.
+
 > **CURRENT HOST GOVERNANCE — POINT-0/086 (0++) / CURRENT-139 / 2026-11-22**
 > This addendum supersedes older embedded snapshots. Always re-read the current Reference Index, living mother, CURRENT-139 and sole active NEXT-051 from exact main HEAD.
 >
@@ -155,7 +168,7 @@ Current chain: POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-10
 
 ## Multi-host governance — CURRENT-122 / POINT-0/069
 
-The current living master (version 1.7.79) governs this package. The latest chain is POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051.
+The current living mother and CURRENT-140 govern this package. Resolve the exact current chain from docs/REFERENCE_INDEX.md; do not use embedded historical snapshots as current pointers.
 
 A connected AI host is an independent Host Node, not an owner of the architecture. Default permission is L1 READ-ONLY. It may read the exact current master and package version, apply the rules locally, and prepare provenance-bearing observations, evidence, counterexamples or proposals. It must not write directly to main, merge its own proposal, edit the living master, alter governance rules, or grant itself permissions.
 
