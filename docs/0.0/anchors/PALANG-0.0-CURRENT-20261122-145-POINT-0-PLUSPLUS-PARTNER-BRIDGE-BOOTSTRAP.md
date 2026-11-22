@@ -32,13 +32,13 @@ This service is independent of the current ChatGPT Free mobile conversation. It 
 - Exact event time: [TIME-BINDING-EVT-0314](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0314-OWNER-APPROVED-PARTNER-BRIDGE-2026-11-22.md).
 - Architecture source commit: `cc27e678f12b53de3b8b1a4835906f426ad03c8d`.
 - Event commit: `48519b4db9f9635bdaaa963c33aab4e3eca018fd`.
-- PR to Golden: not yet opened at this checkpoint.
+- PR #109 to Golden: MERGED / VERIFIED (merge commit `414a87792b701e4d97fe28bec7d93de1a0328381`).
 
 ## 4. Runtime status — do not overclaim
 
 | Component | State |
 |---|---|
-| Architecture and tool/permission design | PREPARED |
+| Architecture and tool/permission design | MERGED TO GOLDEN AND MAIN |
 | Working branch and event evidence | CREATED |
 | GitHub App registration and owner OAuth | NOT CREATED |
 | OpenAI API project/key | NOT CONFIGURED |

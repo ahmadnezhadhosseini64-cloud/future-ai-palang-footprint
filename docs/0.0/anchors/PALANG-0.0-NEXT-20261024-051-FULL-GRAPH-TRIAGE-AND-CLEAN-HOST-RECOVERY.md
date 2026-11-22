@@ -1,10 +1,12 @@
 ## CURRENT-145 / POINT-0++ — independent Partner API/MCP bridge (2026-11-22)
 
+- Publication read-back: PR #109 merged to Golden; PR #110 merged to main. Main HEAD `90a0282e03e1a50b270d33ed470cbd9d15d6f5b9`; both branches tree SHA `88dcc25f6fa0c25da85f59d916218ecc4f484b9a` (MATCH).
+
 - Continuation: [CURRENT-144 / POINT-0++](PALANG-0.0-CURRENT-20261122-144-POINT-0-PLUSPLUS-GOLDEN-PUBLISHED.md) → [EVT-0314](../../architecture/BEHAVIOR-TRACE/EVT-0314-OWNER-APPROVED-INDEPENDENT-PARTNER-API-MCP-BRIDGE-BOOTSTRAP-2026-11-22.md) → [TIME-BINDING-EVT-0314](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0314-OWNER-APPROVED-PARTNER-BRIDGE-2026-11-22.md) → [CURRENT-145 / POINT-0++](PALANG-0.0-CURRENT-20261122-145-POINT-0-PLUSPLUS-PARTNER-BRIDGE-BOOTSTRAP.md) → this sole queue NEXT-051.
 - Owner approved the independent route: OpenAI API + GitHub OAuth/GitHub App + remote MCP are all components of one service, not alternatives.
 - [Bridge specification](../../architecture/PALANG-PARTNER-INDEPENDENT-API-MCP-BRIDGE-2026-11-22.md) committed on working branch `partner-control-plane-bootstrap-20261122`.
-- **DONE / READ-BACK VERIFIED (working branch):** bridge architecture file, EVT-0314, time binding, and CURRENT-145 created.
-- **OPEN — Finish and validate proposal branch; open PR to Golden.** Do not merge until checks/diff and owner review are complete.
+- **DONE / READ-BACK VERIFIED:** bridge architecture, EVT-0314, time binding and CURRENT-145 merged to Golden via PR #109 and published to main via PR #110. Main HEAD `90a0282e03e1a50b270d33ed470cbd9d15d6f5b9`; Golden/main tree SHA match `88dcc25f6fa0c25da85f59d916218ecc4f484b9a`.
+- **DONE / READ-BACK VERIFIED — PR #109 merged to Golden.** Merge commit `414a87792b701e4d97fe28bec7d93de1a0328381`.
 - **OPEN — B1:** provision private service repository and HTTPS hosting target using owner sign-in; do not put service credentials in public master.
 - **OPEN — B2:** register owner-authorized GitHub App with user authorization, callback URL, minimum permissions and owner installation.
 - **OPEN — B3–B4:** implement OAuth session broker, encrypted token store, owner identity validation, MCP server and narrow allowlisted tools.
