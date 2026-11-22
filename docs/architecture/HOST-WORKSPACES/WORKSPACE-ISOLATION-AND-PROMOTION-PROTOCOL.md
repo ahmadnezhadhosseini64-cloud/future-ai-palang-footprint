@@ -1,3 +1,14 @@
+> **CURRENT GOVERNANCE — POINT-0/GOLDEN / CURRENT-140 / 2026-11-22**
+> The canonical root remains the single existing POINT-0. This is the golden baseline of the already-built project, not a new project, root, or parallel queue. Always retrieve exact main HEAD, the current living mother, CURRENT-140, and the sole active NEXT-051 before acting. Historical points and embedded snapshots are evidence only; they never override this baseline or reopen a settled decision by themselves.
+>
+> **Absolute host boundary:** every host has PUBLIC READ ONLY access to the canonical master. No host, host-held credential, host App, broker, branch, PR, issue, release, workflow, setting, or indirect relay may write to or promote content into the master. Host work remains in its own isolated runtime and, if owner-provisioned, its own private repository. The owner alone exports selected material.
+>
+> **RAHM placement:** RAHM is a central, private, owner-only quarantine outside every host workspace. Hosts cannot access, inspect, write, administer, or promote anything from RAHM. Raw/private exports are stored only in the owner-controlled private repository future-ai-palang-rahm; the public master contains policy, schemas, validators, workflows, and sanitized Child candidates only.
+>
+> **Learning and promotion:** OWNER COMMAND → inspect only verified and accessible Host IDs → owner export/redaction → private RAHM quarantine → cross-host reconciliation → schema/hash/privacy/provenance/tests → trusted bot-authored PR to CHILD → owner review and approval. CHILD is not MASTER. Any later Master update requires a separate owner-directed PR and a separate owner approval.
+>
+> **No false activation:** no host is ACTIVE until its identity, workspace isolation, repository scope, connector permissions, and acceptance receipt are verified. No continuous monitoring is claimed unless a separate owner-controlled service is actually deployed and evidenced.
+
 # پروتکل جداسازی محیط میزبان و ارتقای گزینشی
 
 - Stable ID: HAIF-HOST-WORKSPACE-ISOLATION-PROMOTION-2026-11-20-001
@@ -30,7 +41,7 @@
 مالک به‌صورت مرکزی وضعیت هر workspace، نشست‌ها، آخرین دریافت، شکست‌ها، hashها، اختلاف نسخه، مصرف مجوز و تصمیم‌ها را می‌بیند. میزبان‌ها حق دسترسی به داشبورد/رسیدهای میزبان دیگر را ندارند. هر تصمیم مالک append-only و به رویداد مربوطه متصل می‌شود.
 
 ## 6. مسیر یادگیری بدون آلودگی MASTER
-`HOST → PRIVATE WORKSPACE → REDACTED EVIDENCE → QUARANTINE → OWNER MONITORING → CROSS-HOST RECONCILIATION → RAHM VALIDATION → CHILD CANDIDATE → EXPLICIT OWNER ACCEPTANCE → MASTER + CANONICAL PACKAGE`
+`HOST → ISOLATED PRIVATE WORKSPACE → OWNER-COMMANDED EXPORT → PRIVATE OWNER-ONLY RAHM → CROSS-HOST RECONCILIATION → VALIDATION → BOT-AUTHORED CHILD PR → OWNER APPROVAL → CHILD CANDIDATE`
 
 فقط نتیجه‌ای وارد نسخه مادر و ZIP می‌شود که:
 - منشأ و hash روشن داشته باشد؛
@@ -41,7 +52,7 @@
 - تأیید صریح مالک را داشته باشد.
 
 ## 7. دفتر دائمی
-هر تعامل مجاز به IN/OUT مستقل و event ledger append-only متصل می‌شود. ثبت موفق نیازمند durable write و read-back receipt با digest برابر است. شکست یا عدم اتصال نیز با وضعیت مستقل ثبت می‌شود. هیچ تعامل خام و غیرمجاز به‌صورت خودکار در master ذخیره نمی‌شود.
+هر تعامل مجاز در محیط میزبان با رسید محلی و منشأ ثبت می‌شود. انتقال به RAHM فقط با فرمان و اقدام مالک، پس از redaction و receipt انجام می‌شود. هیچ میزبان، broker یا adapter حق نوشتن در RAHM یا مخزن مادر را ندارد.
 
 ## 8. گیت‌های اثبات باز
 - واقعی‌سازی broker با allowlist مسیر و host identity: OPEN.
@@ -56,4 +67,4 @@
 
 ## 9. RAHM central owner-control extension — POINT-0/086
 
-The central RAHM environment is outside every host workspace and is controlled only by the owner. Host data is exported by the owner, redacted, provenance-bound, and validated in private RAHM. The public master receives only sanitized Child candidates through a bot-authored PR and owner review. A Child candidate is not Master. No host receives RAHM or master write access. See docs/architecture/RAHM/README.md and CURRENT-139. This extension is DESIGN REGISTERED / OPERATIONAL SETUP PENDING until the private RAHM repository, promotion App, secrets, connector access and negative isolation tests are verified.
+The central RAHM environment is outside every host workspace and is controlled only by the owner. Host data is inspected and exported only by the owner on explicit command, then redacted, provenance-bound, and validated in private RAHM. No host or host-controlled intermediary can write to RAHM or the master. A trusted App may create a bot-authored PR to CHILD only after owner-controlled validation. A Child candidate is not Master. See docs/architecture/RAHM/README.md and CURRENT-139. This extension is DESIGN REGISTERED / OPERATIONAL SETUP PENDING until the private RAHM repository, promotion App, secrets, connector access and negative isolation tests are verified.

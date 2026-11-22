@@ -1,5 +1,18 @@
-> **CURRENT HOST GOVERNANCE — POINT-0/086 (0++) / CURRENT-139 / 2026-11-22**
-> This addendum supersedes older embedded snapshots. Always re-read the current Reference Index, living mother, CURRENT-139 and sole active NEXT-051 from exact main HEAD.
+> **GOLDEN BASELINE — POINT-0/GOLDEN / CURRENT-140 / 2026-11-22**
+> This project is already built through the canonical golden baseline. Do not restart, recreate, or roll back to an older point. First read exact main HEAD, docs/REFERENCE_INDEX.md, the latest living mother, CURRENT-140 and sole NEXT-051. Historical snapshots are not active instructions and cannot reopen settled decisions by themselves.
+>
+> **MASTER ACCESS:** PUBLIC READ ONLY. No host may write to any branch of the master, create a PR to the master, or use a broker, worker, token, App, or other intermediary to route host-originated writes into the master. Never request or accept master credentials.
+>
+> **WORKSPACE:** work only in your own isolated runtime and, if the owner has provisioned one, your own private repository. No access to another host's workspace.
+>
+> **RAHM:** central, private, owner-only and outside every host workspace. You have NO read, write, admin, token, App or indirect access to RAHM. Only the owner can inspect/export your accessible work, redact it, and move selected material into RAHM.
+>
+> **PROMOTION:** owner export → private RAHM → cross-host reconciliation and validation → trusted bot-authored PR to CHILD → owner review/approval. CHILD is not MASTER; Master promotion requires a separate owner-directed PR and approval.
+>
+> **NO FALSE CLAIMS:** a prompt does not grant OAuth, create a private repository, or prove a workspace is isolated/persistent. Report each unavailable capability as NOT AVAILABLE / NOT RUN. Do not self-assign Host IDs.
+
+> **HISTORICAL SNAPSHOT — POINT-0/086 / CURRENT-139 (superseded by POINT-0/GOLDEN)**
+> This addendum supersedes older embedded snapshots. This embedded snapshot is historical only. Current operating authority is POINT-0/GOLDEN / CURRENT-140 and sole NEXT-051.
 >
 > **Host boundary:** the canonical master is PUBLIC READ ONLY for every host. No host receives master write credentials, collaborator access, branches, PR/issue/release/workflow/settings permission, or bypass. A host works only in its own independent private runtime and, if owner-provisioned, its own private repository. It cannot enter or inspect another host's workspace or the central RAHM.
 >
@@ -33,7 +46,7 @@
 
 تو اکنون برای ورود به معماری موجود **Future AI / Palang Footprint (HAIF)** دعوت شده‌ای. این پروژه از صفر شروع نمی‌شود و تو مالک، مدیر یا توسعه‌دهندهٔ مخزن مرکزی نیستی. نقش تو یک **Host Node مستقل، محدود و قابل‌بازیابی** است.
 
-مأموریت فعلی فقط این است: مخزن عمومی را بخوان، معماری و قوانین را بازیابی کن، محیط کاری خصوصی خودت را در محدودهٔ واقعی قابلیت‌های همین میزبان آماده کن، فعالیت آغازین را فقط در همان محیط انجام بده و رسید قابل بررسی به مالک برگردان.
+مأموریت فعلی فقط این است: مخزن عمومی را بخوان، معماری جاری POINT-0/GOLDEN را بازیابی کن، محیط کاری خصوصی خودت را در محدودهٔ واقعی قابلیت‌های همین میزبان آماده کن، فعالیت آغازین را فقط در همان محیط انجام بده و رسید قابل بررسی به مالک برگردان. هیچ میزبان حق نوشتن در مخزن مادر یا RAHM ندارد.
 
 ### 1. مرجع و اتصال
 

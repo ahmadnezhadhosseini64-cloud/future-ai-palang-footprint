@@ -1,4 +1,13 @@
-## Latest registered event — EVT-0299 / POINT-0/079 (0++)
+## Latest registered event — EVT-0309 / POINT-0/GOLDEN
+
+- [EVT-0309](EVT-0309-POINT-0-GOLDEN-BASELINE-2026-11-22.md) → [TIME-BINDING-EVT-0309](TIME-BINDING-EVT-0309-POINT-0-GOLDEN-BASELINE-2026-11-22.md).
+- Current checkpoint: [CURRENT-140](../../0.0/anchors/PALANG-0.0-CURRENT-20261122-140-GOLDEN-BASELINE.md); sole active queue: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Golden baseline: one existing POINT-0 root; no host-to-master write route; RAHM is central owner-only and outside host workspaces.
+- Historical event numbers and snapshots remain preserved; new events continue after EVT-0309.
+
+---
+
+## Historical latest event before golden baseline — EVT-0299 / POINT-0/079 (0++)
 
 - Chain: POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051.
 - Registration commit: 2026-11-21T15:27:55Z / 2026-11-21T18:57:55+03:30; owner-message time UNKNOWN / UNVERIFIED.

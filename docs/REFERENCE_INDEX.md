@@ -1,12 +1,36 @@
 
-## POINT-0/086 — canonical navigation
+
+> **CURRENT POINT-0++:** [CURRENT-143](0.0/anchors/PALANG-0.0-CURRENT-20261122-143-POINT-0-PLUSPLUS-OWNER-AUTHORIZED-EXECUTION.md) · [EVT-0312](architecture/BEHAVIOR-TRACE/EVT-0312-OWNER-AUTHORIZED-DELEGATED-EXECUTION-2026-11-22.md) · sole queue [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+
+## POINT-0/GOLDEN — canonical current baseline (2026-11-22)
+
+- [POINT-0/GOLDEN](0.0/anchors/GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md) → [IN-130](0.0/anchors/PALANG-0.0-IN-20261122-130-GOLDEN-BASELINE.md) → [OUT-129](0.0/anchors/PALANG-0.0-OUT-20261122-129-GOLDEN-BASELINE.md)
+- [EVT-0309](architecture/BEHAVIOR-TRACE/EVT-0309-POINT-0-GOLDEN-BASELINE-2026-11-22.md) → [TIME-BINDING-EVT-0309](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0309-POINT-0-GOLDEN-BASELINE-2026-11-22.md) → [CURRENT-140](0.0/anchors/PALANG-0.0-CURRENT-20261122-140-GOLDEN-BASELINE.md) → [EVT-0310](architecture/BEHAVIOR-TRACE/EVT-0310-GOLDEN-FORWARD-ONLY-OWNER-DIRECTIVE-2026-11-22.md) → [TIME-BINDING-EVT-0310](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0310-GOLDEN-FORWARD-ONLY-2026-11-22.md) → [CURRENT-141](0.0/anchors/PALANG-0.0-CURRENT-20261122-141-GOLDEN-FORWARD-ONLY.md) → [EVT-0311](architecture/BEHAVIOR-TRACE/EVT-0311-POINT-0-PLUSPLUS-GOLDEN-CONTINUATION-2026-11-22.md) → [TIME-BINDING-EVT-0311](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0311-POINT-0-PLUSPLUS-2026-11-22.md) → [CURRENT-142 / POINT-0++](0.0/anchors/PALANG-0.0-CURRENT-20261122-142-POINT-0-PLUSPLUS-GOLDEN.md) → sole active [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
+- Owner conversational entry gate (non-authentication only): [OWNER-VERBAL-ENTRY-GATE](architecture/HOST-SECURITY/OWNER-VERBAL-ENTRY-GATE.md).
+- Baseline source HEAD: `9ebd4bcc5cfc0168276e366c1867da8709dfb566`; tree: `8be81af3dcf822b10107a7efcf4c603ca7567706`.
+- Latest verified portable release at that source: [haif-latest-verified](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified); ZIP SHA-256 `243baddff63eaf18129a0cbaff860f84f375655c893ee0d1cb42235ecae38646`; clean-host recovery remains NOT RUN.
+- Master: hosts PUBLIC READ ONLY; no direct or indirect host write route. RAHM: central, private, owner-only, outside all host workspaces. Owner-commanded export is the only bridge.
+- Ruleset 27814009 is active, but approval count is still 0 and Code Owner review is OFF. Do not call the approval gate enforced until owner UI change and live read-back.
+- No host is registered or ACTIVE; private RAHM repository and Promotion App are not yet provisioned. NEXT-051 remains the only active queue.
+- **Forward-only precedence:** this golden baseline supersedes older embedded snapshots and historical host-intake/branch-write instructions. Use historical material only as evidence; do not restore an older operating state without new evidence and explicit owner decision.
+
+---
+
+
+## Current interaction marker — POINT-0++ / CURRENT-142
+
+- [POINT-0++ / CURRENT-142](0.0/anchors/PALANG-0.0-CURRENT-20261122-142-POINT-0-PLUSPLUS-GOLDEN.md) is attached to the single canonical POINT-0 root and the POINT-0/GOLDEN baseline; it is not a new root or queue.
+- All point labels (0, 0.0, 0+, 0++) and their IN/OUT/EVT/TIME/CURRENT records remain connected through this index and preserved lineage. Only POINT-0/GOLDEN governs current work; NEXT-051 is the only active queue.
+- Continue forward from Golden. Historical nodes are navigation/evidence only and are not reactivated without the owner's explicit excavation instruction or a proven current defect.
+
+## Historical predecessor — POINT-0/086 navigation
 
 - [POINT-0/086 (0++)](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261122-086-RAHM-CENTRAL-OWNER-GATE.md) → [IN-129](0.0/anchors/PALANG-0.0-IN-20261122-129-RAHM-CENTRAL-OWNER-GATE.md) → [OUT-128](0.0/anchors/PALANG-0.0-OUT-20261122-128-RAHM-CENTRAL-OWNER-GATE.md)
 - [EVT-0306](architecture/BEHAVIOR-TRACE/EVT-0306-RAHM-CENTRAL-OWNER-GATE-AND-CHILD-PROMOTION-2026-11-22.md) → [TIME-BINDING-EVT-0306](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0306-RAHM-CENTRAL-OWNER-GATE-2026-11-22.md) → [CURRENT-139](0.0/anchors/PALANG-0.0-CURRENT-20261122-139-RAHM-CENTRAL-OWNER-GATE.md) → [EVT-0307](architecture/BEHAVIOR-TRACE/EVT-0307-PORTABLE-STARTER-VERIFICATION-AND-OWNER-RELEASE-2026-11-22.md) → [TIME-BINDING-EVT-0307](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0307-PORTABLE-STARTER-VERIFICATION-AND-OWNER-RELEASE-2026-11-22.md) → [sole NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
 - [RAHM policy](architecture/RAHM/README.md) · [Owner monitoring commands](architecture/RAHM/OWNER-MONITORING-COMMANDS.md) · [Private RAHM setup](architecture/RAHM/PRIVATE-RAHM-REPOSITORY-TEMPLATE.md) · [Candidate manifest schema](architecture/RAHM/CANDIDATE-MANIFEST-SCHEMA.json) · [Promotion App setup](architecture/RAHM/PROMOTION-APP-SETUP.md) · [CHILD area](architecture/CHILD-CANDIDATES/README.md)
 - [Host security contract](architecture/HOST-SECURITY/OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOSITORIES.md) · [Living mother](architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 
-## Latest owner-directed continuation — POINT-0/086 (0++) / CURRENT-139
+## Historical predecessor — POINT-0/086 (0++) / CURRENT-139
 
 - Chain: POINT-0/085 → CURRENT-138 → POINT-0/086 (0++) → IN-129 → OUT-128 → EVT-0306 → TIME-BINDING-EVT-0306 → CURRENT-139 → EVT-0307 → TIME-BINDING-EVT-0307 → sole active queue NEXT-051.
 - Living master target: 1.7.94.
@@ -129,7 +153,7 @@
 ## Latest owner-authorized continuation — POINT-0/075 / CURRENT-128
 
 - Chain: [POINT-0/075](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-075-FIRST-HOST-REPO-WORKSPACE.md) → [IN-118](0.0/anchors/PALANG-0.0-IN-20261121-118-FIRST-HOST-REPO-WORKSPACE.md) → [OUT-117](0.0/anchors/PALANG-0.0-OUT-20261121-117-FIRST-HOST-REPO-WORKSPACE.md) → [EVT-0294](architecture/BEHAVIOR-TRACE/EVT-0294-FIRST-HOST-REPO-WORKSPACE-2026-11-21.md) → [TIME-BINDING-EVT-0294](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0294-FIRST-HOST-REPO-WORKSPACE-2026-11-21.md) → [CURRENT-128](0.0/anchors/PALANG-0.0-CURRENT-20261121-128-FIRST-HOST-REPO-WORKSPACE.md) → NEXT-051.
-- Host 1 contract: authenticated GitHub READ + isolated EXECUTE working checkout; branch-scoped WRITE only when destination connector grants it; PR for main integration.
+- Historical Host 1 draft: branch-scoped WRITE wording is superseded by POINT-0/GOLDEN. Current rule: hosts have no write path to any master branch or RAHM; owner export only.
 - Portable package: PACKAGE_VERIFIED; manifest 0.4.5; 18 files; 24/24 extracted tests PASS; CRC, source-byte match and artifact round-trip PASS. Current exact SHA-256 and build source are read from the [stable latest-verified release and receipt](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified).
 - Living Architecture Audit: SUCCESS on the verified main revision.
 - Host OAuth, destination AI-host execution, independent host recovery/restart, and 0.0 graph remediation remain OPEN / NOT RUN pending direct host evidence.

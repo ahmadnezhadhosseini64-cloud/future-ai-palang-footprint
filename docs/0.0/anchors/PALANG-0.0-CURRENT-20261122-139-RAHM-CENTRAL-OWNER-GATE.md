@@ -1,3 +1,6 @@
+> **HISTORICAL PREDECESSOR — CURRENT-139**
+> This checkpoint remains valid as historical evidence but is no longer the current pointer. Continue from POINT-0/GOLDEN → CURRENT-140 → sole NEXT-051. Do not restore its older embedded main HEAD or package receipt.
+
 ## Follow-up merge and package verification — PR #98 / #99 / EVT-0307
 
 - PR #98: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/pull/98

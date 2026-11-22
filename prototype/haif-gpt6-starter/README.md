@@ -1,17 +1,22 @@
-# HAIF Portable Starter v0.5.0 — Universal Host Entry
+> **POINT-0/GOLDEN — CURRENT-140 — 2026-11-22**
+> This is the single canonical continuation of the existing POINT-0 root. Always resolve exact main HEAD, living mother, CURRENT-140 and NEXT-051. Older embedded point/version snapshots are historical evidence, not current operating instructions.
+> **No host-to-master route:** hosts are PUBLIC READ ONLY on MASTER and have no direct or indirect write path, credential, branch, PR, broker, worker or bypass into it. Host work stays in its own isolated workspace/private repository. RAHM is a central owner-only private quarantine outside host workspaces; only the owner exports and imports selected redacted evidence.
+> **Promotion:** owner export → private RAHM → reconciliation/validation → bot-authored PR to CHILD → owner approval. CHILD is not MASTER.
 
-Latest canonical chain: POINT-0/081 → CURRENT-134 → POINT-0/082 (0++) → IN-125 → OUT-124 → EVT-0302 → TIME-BINDING-EVT-0302 → CURRENT-135 → NEXT-051
+# HAIF Portable Starter v0.5.1 — POINT-0 Golden Baseline
+
+Latest canonical chain: POINT-0/GOLDEN → IN-130 → OUT-129 → EVT-0309 → TIME-BINDING-EVT-0309 → CURRENT-140 → NEXT-051
 
 The model/platform-neutral first-entry instruction is UNIVERSAL_AI_HOST_ENTRY_FA.md. GPT-6-specific documents below are compatibility references; the universal entry and Reference Index govern fresh hosts.
 
 This is the updated release of the existing HAIF starter package, not a separate project. It updates the existing v0.3.0 0/0+ bootstrap package at the same stable package identity and canonical ZIP filename; history and prior digests remain preserved. It does not replace the living master, historical anchors or NEXT-051.
 
-## Current handoff — package v0.5.0 candidate / POINT-0/082 (0++)
+## Historical handoff — package v0.5.0 / POINT-0/082 (superseded)
 
-Living master: 1.7.89. The current chain is POINT-0/081 → CURRENT-134 → POINT-0/082 (0++) → IN-125 → OUT-124 → EVT-0302 → TIME-BINDING-EVT-0302 → CURRENT-135 → NEXT-051. Stable package ID and canonical ZIP filename remain unchanged. Latest Runnable contains only capabilities supported by source-backed tests; host-dependent capabilities and legacy dependencies with unresolved consumer impact remain OPEN / Development. The package must pass exact-main build, extracted tests, SHA-256, CRC, inventory, paired-master read-back and artifact round-trip before the 0.5.0 candidate can be called PACKAGE_VERIFIED.
+Historical snapshot only. Current living mother: 1.7.95; current chain: POINT-0/GOLDEN → IN-130 → OUT-129 → EVT-0309 → TIME-BINDING-EVT-0309 → CURRENT-140 → NEXT-051. Stable package ID and canonical ZIP filename remain unchanged. Latest Runnable contains only capabilities supported by source-backed tests; host-dependent capabilities and legacy dependencies with unresolved consumer impact remain OPEN / Development. The package must pass exact-main build, extracted tests, SHA-256, CRC, inventory, paired-master read-back and artifact round-trip before the 0.5.1 candidate can be called PACKAGE_VERIFIED.
 
 ## Public repository access — no OAuth for READ
-The canonical repository is intentionally Public. A fresh host should use anonymous HTTPS READ/clone/fetch first; OAuth is not required to discover and download public source. OAuth or another secure credential is required only for private resources or authenticated write-back. Code execution, isolated/persistent workspace and restart recovery are independent runtime capabilities and must be proven by the destination host. The owner retains MASTER and merge/promotion authority.
+The canonical repository is intentionally Public. A fresh host should use anonymous HTTPS READ/clone/fetch first. A prompt cannot grant access to private resources. The host never receives a master write credential or a path to RAHM. Code execution, isolated/persistent workspace and restart recovery are independent runtime capabilities and must be proven by the destination host. The owner retains MASTER and merge/promotion authority.
 
 ## What is implemented
 - Standard-library Python continuity engine.
@@ -161,7 +166,7 @@ Current canonical chain (plain-text): POINT-0/066 → CURRENT-119 → POINT-0/06
 
 
 ## Permanent interaction ledger — package 0.4.1
-The package includes `PERMANENT_INTERACTION_LEDGER_CONTRACT.md`, `HOST_REGISTRY_SCHEMA.json` and `HOST_REGISTRY_TEMPLATE.json`. The host registry template is intentionally empty. The repository worker targets only `host-intake`; events require owner-reviewed PR before promotion. GitHub main branch protection remains OPEN / NOT CONFIGURED.
+The package includes `PERMANENT_INTERACTION_LEDGER_CONTRACT.md`, `HOST_REGISTRY_SCHEMA.json` and `HOST_REGISTRY_TEMPLATE.json`. The host registry template is intentionally empty. The legacy `host-intake` branch and worker are frozen/disabled. Hosts never write to any master branch. Only owner-commanded export to private RAHM is permitted; the master Ruleset is active but approval=0 and Code Owner review=false until owner UI configuration.
 
 
 ## Previous point — POINT-0/071 one-message GPT host bootstrap (package 0.4.3 historical)
@@ -204,3 +209,8 @@ Internal package version: 0.4.5. Living master: 1.7.81. Current chain: POINT-0/0
 ## Historical handoff snapshot — package v0.4.5 / POINT-0/074 (0++)
 
 Living master: 1.7.81. Canonical chain: POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051. The previous POINT-0/073 / CURRENT-126 and all earlier points remain parent history. 0++ is a marker on the canonical root, not a separate root. The next objective is 0.0 completion through NEXT-051. This package is not verified until same-HEAD audit and conformance pass, the canonical ZIP is rebuilt and read back with SHA-256/CRC/inventory/extracted tests, and independent-host recovery is separately evidenced.
+
+
+## Golden baseline precedence
+
+POINT-0/GOLDEN / CURRENT-140 is the only current operational baseline. Older package notes, snapshots, host-intake references, or branch-scoped write instructions are historical and superseded. Do not restore them or treat them as open permissions. The host must not create a PR or write to any branch of the canonical master.
