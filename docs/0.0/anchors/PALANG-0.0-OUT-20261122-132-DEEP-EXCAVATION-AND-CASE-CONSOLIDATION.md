@@ -19,3 +19,18 @@
 ## Evidence boundary
 
 Issue edits and source inspection are real repository actions. They do not prove service provisioning, OpenAI API execution, GitHub OAuth, remote MCP, external persistence, clean-host recovery or a passing package build. Those gates remain OPEN / NOT VERIFIED / NOT RUN.
+
+## PR candidate conformance evidence — PR #137
+
+- Tested source SHA: bf7e7ab3fc79e598bf5456605dae2bfa75ef929c (PR candidate before squash merge).
+- Portable RAHM Conformance: run 45020163367 / job 137201049892 — SUCCESS.
+- Living Architecture Audit: run 45020163375 / job 137201050285 — SUCCESS.
+- Starter source and extracted ZIP: 24 tests PASS; architecture/governance audit: 31 tests PASS.
+- Synthetic host adapter tests: synthetic ingest, authentication, durable read-back, idempotent retry, conflicting retry rejection and restart recovery all PASS.
+- RAHM export package: 1,433,152 bytes; SHA-256 357f770a66e561b851578c2b4db23b2e6b20207ded1a11df6718699a7d95101c.
+- Canonical starter ZIP: 281,026 bytes; SHA-256 2046e3ee8aa9f567a42e4f5c85c4d2cba98223671536fd65723df82d2185cbfd.
+- Uploaded starter artifact: ID 14753028941; artifact-wrapper SHA-256 49b25df527418e5c50e8aeafad4ea7e3cca7ef230572da8bb4afb75789fb0f64.
+- Downloaded artifact receipt, paired-master byte comparison, ZIP inventory/CRC and extracted 24-test round-trip: PASS.
+- Release publication was SKIPPED because the run was a PR event. Independent real-host import/restart and automatic live ChatGPT capture were NOT RUN / NOT PROVEN.
+- The PR was merged to Golden as commit 41487c7ddab3a7847e569e2fe3ac5d2d69fcca87. A fresh exact-post-merge Golden run is required; PR candidate receipts do not certify the merge commit.
+
