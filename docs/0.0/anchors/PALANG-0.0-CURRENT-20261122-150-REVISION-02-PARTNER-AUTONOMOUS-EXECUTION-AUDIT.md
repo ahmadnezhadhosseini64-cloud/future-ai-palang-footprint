@@ -3,7 +3,7 @@
 - Stable family ID: CURRENT-150
 - Revision: 150.02
 - Revision document ID: HAIF-CURRENT-150-REV-02-PARTNER-AUTONOMOUS-EXECUTION-AUDIT-2026-11-22
-- Status: CANDIDATE / ACTIVE DEVELOPMENT / EXACT-SHA ACCEPTANCE PENDING
+- Status: ACTIVE / LIVING / POST-MERGE-EXACT-SHA-VERIFIED / REAL-HOST-ACCEPTANCE-OPEN
 - Canonical root: POINT-0
 - Golden baseline: [POINT-0/GOLDEN](GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md)
 - Parent accepted revision: CURRENT-150.01
@@ -20,7 +20,7 @@
 
 `POINT-0/GOLDEN → CURRENT-150.01 → IN-135 → OUT-134 → EVT-0322 → TIME-BINDING-EVT-0322 → CURRENT-150.02 → NEXT-051.02`
 
-This is an append-only revision beneath the fixed CURRENT-150 identity and the existing NEXT-051 queue. It creates no new root, Point, Golden baseline or parallel queue. CURRENT-150.01 / NEXT-051.01 remain the last accepted resolver until this candidate passes exact-SHA CI, merges to Golden and is read back after merge.
+This is an append-only revision beneath the fixed CURRENT-150 identity and the existing NEXT-051 queue. It creates no new root, Point, Golden baseline or parallel queue. CURRENT-150.02 / NEXT-051.02 are now the accepted active resolver and sole queue after exact-SHA CI, Golden merge and post-merge read-back. CURRENT-150.01 / NEXT-051.01 remain preserved as the immediately preceding accepted revision.
 
 ## 2. Exact live state observed
 
@@ -61,7 +61,11 @@ All work available through the connected GitHub read/write branch surface has be
 
 MASTER remains PUBLIC READ ONLY for hosts. RAHM remains private and owner-only outside host workspaces. No host direct/indirect write, bypass, auto-merge, secret access or force-sync is permitted.
 
-## 7. Acceptance gate for CURRENT-150.02
+## 7. Acceptance gate for CURRENT-150.02 — SATISFIED
+
+The exact candidate PR checks, Golden merge and post-merge checks have now passed. The durable release, owner approval gate, private service provisioning and real-host recovery remain separate OPEN gates.
+
+## 7A. Original acceptance criteria (retained as evidence)
 
 1. Candidate PR must target only `governance/point-0-golden-baseline-20261122`, never main.
 2. Living Architecture Audit and Portable RAHM Conformance must pass on the exact final PR head.
@@ -90,3 +94,22 @@ MASTER remains PUBLIC READ ONLY for hosts. RAHM remains private and owner-only o
 ## Recovery-equivalence acceptance check
 
 The post-merge artifact from run `45047882025` still reported historical `IN-130 / OUT-129` and `CURRENT-140`; this is not proof for CURRENT-150.02. Acceptance requires the corrected artifact to report `IN-135 / OUT-134`, `CURRENT-150.02` and `NEXT-051.02` from the latest parseable chain in docs/0.0/README.md.
+
+
+## Post-merge acceptance receipt — CURRENT-150.02 ACTIVE
+
+- Candidate PR #142 and recovery-equivalence correction PR #143 were both merged into POINT-0/GOLDEN; no PR was merged to main.
+- Exact accepted Golden merge SHA: e8f909e6064806b2e450d9bc78a217b15748fb0b; tree SHA: e543e2f8b7c06db1335db849b5b548fcedb4a3bc.
+- Exact post-merge Living Architecture Audit: run 45048644669 — SUCCESS.
+- Exact post-merge Portable RAHM Conformance: run 45048644684 — SUCCESS.
+- Downloaded post-merge rahm-recovery-equivalence.json: test RAHM-IN-OUT-LINK-EQUIVALENCE-135-134 — PASS; recovered independently from IN-135 and OUT-134; canonical state resolves CURRENT-150.02 and NEXT-051.02; open gates preserved.
+- Downloaded SHA evidence: manifest version 1.8.43; manifest SHA-256 7d7c7ed7b87721a4a7bdc3bca402e4d37639ef2140551f89911ec869c4ce16e0; expected 47 / matched 47; live references 259; mismatches none.
+- Starter ZIP receipt: package identity HAIF-GPT6-PORTABLE-STARTER-20261025-004; internal version 0.5.1; canonical filename unchanged; 19 files; 284,418 bytes; SHA-256 cbb58106a817710b657749ef7cb6dac09067f633c1dd846bd6adc33dcaf7a5e1; ZIP integrity PASS; source-byte match PASS; extracted tests PASS.
+- RAHM portable ZIP: 1,492,277 bytes; SHA-256 4178b9aa424d24cdbbfa8547a7c2ef8a8ec73d4b0088fecf8b6e3014614c9898.
+- Artifact IDs: starter 14765070302; RAHM 14764806330; conformance evidence 14764746508.
+- The durable Release publication step was SKIPPED. The tag haif-latest-verified remains on old commit 4d2639c901bed30363e6206e8a718a6f6d99d159; durable release refresh remains OPEN.
+- Real independent-host acceptance remains NOT_RUN; no host is declared ACTIVE. Full state recovery on a second host, clean-host import, restart persistence, automatic live message capture, and external-destination acceptance remain OPEN.
+- Current main HEAD remains 30d1d3b2de09078131fa3c8a0ff7c492a7ab0d7e; Golden HEAD is e8f909e6064806b2e450d9bc78a217b15748fb0b; current comparison is DIVERGED, Golden ahead 273 / behind 26. No direct-main write or force-sync occurred.
+- Ruleset 27814009 remains ACTIVE but approvals=0 and Code Owner review=false; owner approval gate NOT ENFORCED. Issues #114–#123 and #20/#21 remain OPEN.
+
+**Acceptance result:** CURRENT-150.02 and NEXT-051.02 are ACTIVE / LIVING / POST-MERGE-EXACT-SHA-VERIFIED for repository current-chain reconstruction, linked-reference equivalence, package build and extracted tests. This does not close owner-dependent service provisioning, main promotion, durable release, Ruleset approval, or real independent-host recovery.

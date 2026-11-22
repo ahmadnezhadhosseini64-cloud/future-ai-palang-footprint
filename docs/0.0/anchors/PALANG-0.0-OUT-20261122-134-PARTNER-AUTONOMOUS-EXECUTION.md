@@ -75,3 +75,8 @@ The post-merge artifact from run `45047882025` still reported historical `IN-130
 - Recovery proof protocol: [INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001](../../architecture/مدل%20اولیه%20AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md)
 - Portable host recovery protocol: [INDEPENDENT_HOST_RECOVERY_PROTOCOL](../../../prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md)
 - Portable export manifest: [EXPORT_MANIFEST](../../portable/RAHM/EXPORT_MANIFEST.json)
+
+
+## Final post-merge acceptance proof
+
+CURRENT-150.02 / NEXT-051.02 were accepted after PR #142 and correction PR #143 merged into POINT-0/GOLDEN. Exact Golden merge SHA: e8f909e6064806b2e450d9bc78a217b15748fb0b; tree SHA: e543e2f8b7c06db1335db849b5b548fcedb4a3bc. Post-merge Living Architecture Audit run 45048644669 and Portable RAHM Conformance run 45048644684 both PASS. The downloaded recovery-equivalence receipt reports RAHM-IN-OUT-LINK-EQUIVALENCE-135-134 PASS and independently reconstructs from IN-135 / OUT-134 to CURRENT-150.02 / NEXT-051.02. SHA inventory: 47/47 matched, 259 live references, no mismatches. Starter ZIP: 19 files, 284,418 bytes, SHA-256 cbb58106a817710b657749ef7cb6dac09067f633c1dd846bd6adc33dcaf7a5e1; extracted tests PASS. Real independent-host acceptance remains NOT_RUN; durable release refresh and owner approval gate remain OPEN.

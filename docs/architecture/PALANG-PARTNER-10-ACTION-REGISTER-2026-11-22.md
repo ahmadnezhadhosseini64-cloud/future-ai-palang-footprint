@@ -1,3 +1,14 @@
+## Latest active execution pointer — CURRENT-150.02 / NEXT-051.02
+
+- Active resolver: CURRENT-150.02; sole active queue: NEXT-051.02; canonical root remains POINT-0/GOLDEN.
+- Accepted Golden merge SHA: e8f909e6064806b2e450d9bc78a217b15748fb0b.
+- Post-merge Living Architecture Audit run 45048644669 and Portable RAHM Conformance run 45048644684: PASS.
+- Recovery-equivalence: RAHM-IN-OUT-LINK-EQUIVALENCE-135-134 PASS; IN-135 / OUT-134 independently resolve CURRENT-150.02 / NEXT-051.02.
+- All ten issues #114–#123 remain OPEN. #120 is PARTIAL / SOURCE-READY only (workflow exists; App credentials and dispatch unverified). #121 is PARTIAL / NOT ENFORCED (Ruleset active, approvals=0, Code Owner review=false; collaborator/deploy-key audit unavailable).
+- Durable Release publication was SKIPPED; latest-verified release remains stale. Real independent-host acceptance is NOT_RUN. Private Partner/RAHM provisioning, owner approval gate and clean-host recovery remain OPEN.
+
+---
+
 ## CURRENT-151 continuation — 2026-11-22
 
 - Current checkpoint: CURRENT-151 / POINT-0/089.
@@ -36,8 +47,8 @@
 | 04 | پیاده‌سازی remote MCP و ابزارهای GitHub با حداقل مجوز | [#117](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/117) | OPEN |
 | 05 | پیکربندی OpenAI API، Responses API و runtime امن | [#118](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/118) | OPEN |
 | 06 | استقرار سرویس، HTTPS، health check و pipeline انتشار | [#119](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/119) | OPEN |
-| 07 | تکمیل promotion workflow و PR با هویت bot مورداعتماد | [#120](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/120) | OPEN |
-| 08 | اعمال گیت تأیید main و ممیزی هویت‌های مخزن | [#121](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/121) | OPEN |
+| 07 | تکمیل promotion workflow و PR با هویت bot مورداعتماد | [#120](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/120) | OPEN / PARTIAL — workflow source موجود؛ App credentials و dispatch تأیید نشده |
+| 08 | اعمال گیت تأیید main و ممیزی هویت‌های مخزن | [#121](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/121) | OPEN / PARTIAL — Ruleset فعال؛ approvals=0 و Code Owner review=false |
 | 09 | ایجاد RAHM خصوصی مالک و مرز امن export/read | [#122](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/122) | OPEN |
 | 10 | آزمون سرتاسری RAHM→CHILD، بازیابی میزبان و جداسازی | [#123](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/issues/123) | OPEN |
 
