@@ -53,3 +53,12 @@ Documented ≠ implemented; implemented ≠ tested; tested ≠ merged; merged �
 - Portable RAHM Conformance run 45079525825: SUCCESS on prospective PR merge SHA `37807c0d3d8c077f3d4e88d4a67bcc332fc6aaab` (parents Golden base d845... + PR head cfb...). Exact chain and IN/OUT recovery equivalence PASS; stable digest inventory 47/47; 266 live references observed; RAHM archive and existing starter ZIP rebuilt; all 24 extracted starter tests PASS.
 - RAHM archive SHA-256: `e34577774e45f69bd3fd2d740540f1bc7b3e70dc4c18d9b2ab4f426a24dcc66b`; starter ZIP SHA-256: `6b356e1503bf9c9404784e8d576d647f993ec6e3b89e6d32aba47954a5df5c60`.
 - Exact-head Living Architecture Audit remains pending. Durable Release refresh was skipped on PR event. Independent-host acceptance remains NOT RUN. PR #145 must not be treated as merged until owner-controlled Golden promotion.
+
+
+## Final candidate verification status
+
+- Living Architecture Audit run 45079917323: SUCCESS; latest-chain reconstruction PASS; 31 governance/architecture tests PASS.
+- Portable RAHM Conformance run 45079917344: SUCCESS; stable SHA-256 inventory 47/47 MATCH; 266 live-reference observations; IN-136/OUT-135 equivalence PASS; 24 extracted starter tests PASS.
+- RAHM archive SHA-256 `487f472227f7f3996c864618f7b2275c02842b40da7125f313d18f533ae98d0f`; canonical starter ZIP SHA-256 `6b356e1503bf9c9404784e8d576d647f993ec6e3b89e6d32aba47954a5df5c60`.
+- CURRENT-066 and CURRENT-150 remain ambiguous candidates; no winner selected. Identity/production/reference/event collisions and unresolved historical graph edges remain open for triage.
+- Durable release refresh remains skipped on PR event. Independent-host acceptance NOT RUN. Owner-controlled Golden merge is the remaining promotion gate for this candidate.
