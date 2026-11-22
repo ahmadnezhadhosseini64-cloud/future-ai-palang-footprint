@@ -11,6 +11,7 @@ This is the first runnable, dependency-free implementation of the core loop, not
 ```bash
 python scripts/haif-runtime/haif_runtime.py --state ./haif-state.json init
 python scripts/haif-runtime/haif_runtime.py --state ./haif-state.json record --input "user input" --output "assistant output"
+python scripts/haif-runtime/haif_runtime.py --state ./haif-state.json lookup --id "IN-YYYYMMDD-001"
 python scripts/haif-runtime/haif_runtime.py --state ./haif-state.json checkpoint
 python scripts/haif-runtime/haif_runtime.py --state ./haif-state.json verify
 python scripts/haif-runtime/haif_runtime.py --state ./haif-state.json export > ./haif-export.json
@@ -21,7 +22,10 @@ python -m unittest discover -s scripts/haif-runtime/tests -v
 
 ## What is implemented
 - Local JSON state initialization.
-- Append-only interaction events with explicit IN, OUT, UTC operation time, parent hash and SHA-256 event hash.
+- Append-only interaction events with stable daily `INT-YYYYMMDD-NNN`, `IN-YYYYMMDD-NNN` and `OUT-YYYYMMDD-NNN` anchors.
+- Reverse lookup from either IN or OUT anchor to the complete interaction event.
+- UTC operation time is recorded; unavailable original message time and repository commit time remain explicitly NOT_EXPOSED/unknown rather than being inferred.
+- The record envelope follows the repository interaction-pair JSON Schema; schema-validation status remains NOT_RUN until a validator actually validates the record.
 - Chain verification to detect event edits, reordering and broken parent links.
 - Checkpoint pins the current event count and chain head.
 - JSON export and import into a **new target path**, with validation before save.
@@ -29,7 +33,8 @@ python -m unittest discover -s scripts/haif-runtime/tests -v
 - Explicit open-gate fields preserved in every state.
 
 ## What is not implemented
-- This CLI does not automatically capture ChatGPT conversations.
+- This CLI does not automatically capture ChatGPT conversations. It records only input/output explicitly supplied to the local command.
+- Behavior classification is not automatic; the behavior_analysis list is empty until evidence-backed analysis is supplied.
 - It is not a cloud database, encrypted vault, multi-user system or background agent.
 - Hashes detect accidental/unsophisticated modification; they do not prove authorship, prevent an attacker from rewriting the entire chain, or replace digital signatures.
 - Local files can be lost; independent backup and cross-device synchronization remain future work.
