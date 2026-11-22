@@ -1,11 +1,15 @@
-## Latest registered event — EVT-0309 / POINT-0/GOLDEN
+## Latest main user-turn event — EVT-0314 / POINT-0/GOLDEN / CURRENT-145
 
-- [EVT-0309](EVT-0309-POINT-0-GOLDEN-BASELINE-2026-11-22.md) → [TIME-BINDING-EVT-0309](TIME-BINDING-EVT-0309-POINT-0-GOLDEN-BASELINE-2026-11-22.md).
-- Current checkpoint: [CURRENT-140](../../0.0/anchors/PALANG-0.0-CURRENT-20261122-140-GOLDEN-BASELINE.md); sole active queue: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
-- Golden baseline: one existing POINT-0 root; no host-to-master write route; RAHM is central owner-only and outside host workspaces.
-- Historical event numbers and snapshots remain preserved; new events continue after EVT-0309.
+- [EVT-0314](EVT-0314-OWNER-APPROVED-INDEPENDENT-PARTNER-API-MCP-BRIDGE-BOOTSTRAP-2026-11-22.md) → [TIME-BINDING-EVT-0314](TIME-BINDING-EVT-0314-OWNER-APPROVED-PARTNER-BRIDGE-2026-11-22.md).
+- Canonical root: [POINT-0/GOLDEN](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md), on the single POINT-0 root. Current checkpoint: [CURRENT-145](../../0.0/anchors/PALANG-0.0-CURRENT-20261122-145-POINT-0-PLUSPLUS-PARTNER-BRIDGE-BOOTSTRAP.md); sole active queue: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Main HEAD at this observation: `81c4b8687ad2de61e900c84505922a823ac265a1` (2026-11-22T03:10:24Z).
+- [Latest mirror-only event EVT-0315](EVT-0315-LIVE-MIRROR-SYNC-RECHECK-2026-11-22.md) / [time binding](TIME-BINDING-EVT-0315-LIVE-MIRROR-SYNC-RECHECK-2026-11-22.md) is registered on proposal branch `mirror-sync/evt-0315-20261122`; it creates no root, checkpoint, IN/OUT pair or successor queue. Main promotion remains pending.
+- Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` remains unchanged. Library v7 read-back is 10,480 chars versus source 10,479; one extra terminal LF only; semantic fields and remaining content match; no Library rewrite.
+- Run-start exact-main Living Architecture Audit 44979406467 and Evidence Gate 44979406557 passed on `81c4b8687ad2de61e900c84505922a823ac265a1`. No RAHM conformance run on this exact SHA was found; latest RAHM success tested `0332cce4b1ad7ec78ddc4c99dbe0f76d47eddf27`.
+- Preserve historical roots, EVT-0177, canonical EVT-0178, EVT-0179 and the quarantined duplicate-number EVT-0178 draft. CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; winner_selected=false. Issues #20/#21 remain OPEN; NEXT-051 remains sole queue.
 
 ---
+
 
 ## Historical latest event before golden baseline — EVT-0299 / POINT-0/079 (0++)
 
@@ -24,8 +28,8 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.46
-- Date: 2026-11-21
+- Version: 1.0.47
+- Date: 2026-11-22
 - Project: Future AI / Palang Footprint / HAIF
 
 ## مسیرهای بازیابی

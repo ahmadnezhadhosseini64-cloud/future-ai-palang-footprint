@@ -2,11 +2,11 @@
 
 - Stable ID: HUMAN-AI-INTERACTION-BEHAVIOR-OBSERVATORY-2026-10-22-001
 - Production ID: HAIBO-HAIF-2026-10-22-001
-- Version: 1.0.29
+- Version: 1.0.30
 - Owner: احمد پلنگ / Ahmad Nezhadhosseini
 - Project: Future AI / Palang Footprint / HAIF
 - Canonical path: `docs/architecture/BEHAVIOR-OBSERVATORY/README.md`
-- Status: ACTIVE / LIVING in repository; latest main root POINT-0/072 / EVT-0291 / CURRENT-125 / NEXT-051; separate certificate child root CERT-POINT-0.0-20261120-002 / EVT-0274 preserved. Latest mirror-only event EVT-0290; current user-turn event EVT-0291. Source blob de1b75f07241c9b313e476af5f1417177ff78c10 unchanged; Library v7 normalized match with one extra terminal LF; no source or Library write. Post-registration Audit 44874521121 and RAHM 44874520968 PASS on exact SHA 910cd24b9c9d0af2cdc7c6090386919f304b6819; Evidence Gate 44874520977 created follow-up main 5c2a860e2fc1f7f36e3ee935b0daa3f62752e896 at UTC 2026-11-21T06:13:35Z, not yet verified by exact-head Audit/RAHM. CURRENT-065/CURRENT-066 and overlay-manifest lineage OPEN / AMBIGUOUS; Issues #20/#21 OPEN; external destination/host gates OPEN / NOT VERIFIED / NOT RUN.
+- Status: ACTIVE / LIVING in repository; canonical root POINT-0/GOLDEN on the single POINT-0 root; latest main user-turn event EVT-0314; current checkpoint CURRENT-145; sole active queue NEXT-051. Latest mirror-only event EVT-0315 is registered on proposal branch `mirror-sync/evt-0315-20261122`, with main promotion pending. Source blob de1b75f07241c9b313e476af5f1417177ff78c10 unchanged; Library stable ID libfile_7ac3c9a6ec14819198eb2751e204aa48 version 7 read back at 10,480 chars versus source 10,479, one extra terminal LF only; semantic match PASS within tolerance; no source or Library write. Main HEAD at run start 81c4b8687ad2de61e900c84505922a823ac265a1; Living Architecture Audit 44979406467 and Evidence Gate 44979406557 PASS on that exact SHA; no exact-head RAHM run found. CURRENT-065/CURRENT-066 and overlay-manifest lineage OPEN / AMBIGUOUS; Issues #20/#21 OPEN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
 - Time rule: UTC is canonical; Asia/Tehran time is derived from the same UTC instant (+03:30 for this date). Unknown timestamps remain UNKNOWN, never guessed.
 - Independent anchor: `PALANG-BEHAVIOR-OBSERVATION-AND-RECOVERY-TEST-2026-10-22-001`
 - Related event: `EVT-0034`
@@ -14,6 +14,16 @@
 - Related trace: `INTERACTION-BEHAVIOR-TRACE-2026-10-19-001`
 - Related registration contract: `UNIFIED-OUTPUT-ANCHOR-REGISTRATION-LIVING-REFERENCE-2026-10-19-001`
 - Previous anchor preserved: `PALANG-START-COMPLETE-REGISTRATION-UTC-ANCHOR-2026-10-22-001`
+
+
+
+## Latest mirror-only synchronization — EVT-0315 (2026-11-22)
+
+- Event/time binding: [EVT-0315](../BEHAVIOR-TRACE/EVT-0315-LIVE-MIRROR-SYNC-RECHECK-2026-11-22.md) / [TIME-BINDING-EVT-0315](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0315-LIVE-MIRROR-SYNC-RECHECK-2026-11-22.md).
+- Scope: mirror-only; no root, IN/OUT pair, checkpoint or queue change. POINT-0/GOLDEN / CURRENT-145 / NEXT-051 remain current.
+- Source blob `de1b75f07241c9b313e476af5f1417177ff78c10`, 10,479 chars; Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, version 7, 10,480 chars. Edit distance 1, only one additional terminal LF; normalized content and semantic fields match. No redundant Library rewrite.
+- Registered on proposal branch `mirror-sync/evt-0315-20261122`; main remains unchanged until owner-controlled promotion.
+- Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
 
 ## 1. Purpose and architectural placement
 
