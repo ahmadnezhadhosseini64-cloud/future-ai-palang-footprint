@@ -60,7 +60,7 @@
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE
 - Project: Future AI / Palang Footprint — HAIF
 - Canonical queue: this file only
-- Current checkpoint: [CURRENT-138](PALANG-0.0-CURRENT-20261122-138-OWNER-APPROVAL-GATE-AND-HOST-ISOLATION.md)
+- Current checkpoint: [CURRENT-141](PALANG-0.0-CURRENT-20261122-141-GOLDEN-FORWARD-ONLY.md) — forward-only owner directive; CURRENT-140 and earlier checkpoints are retained as lineage/evidence
 - Current point: [POINT-0/085 (0++ marker on canonical root 0)](GPT6-RAHM-USER-POINT-0-20261122-085-OWNER-APPROVAL-GATE-AND-HOST-ISOLATION.md)
 - Living mother: [سند مرجع مادر مدل اولیه](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md)
 - Package contract: [HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md](../../../prototype/haif-gpt6-starter/HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md)
