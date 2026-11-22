@@ -5,10 +5,8 @@ on:
     branches: [main, 'governance/point-0-golden-baseline-20261122']
     paths:
       - 'docs/portable/RAHM/**'
-      - 'docs/0.0/anchors/**'
       - 'docs/0.0/README.md'
       - 'docs/REFERENCE_INDEX.md'
-      - 'docs/architecture/BEHAVIOR-TRACE/**'
       - 'docs/architecture/INTEGRATION-QUEUE/README.md'
       - 'docs/architecture/BEHAVIOR-OBSERVATORY/README.md'
       - 'README.md'
@@ -21,10 +19,8 @@ on:
     branches: [main, 'governance/point-0-golden-baseline-20261122']
     paths:
       - 'docs/portable/RAHM/**'
-      - 'docs/0.0/anchors/**'
       - 'docs/0.0/README.md'
       - 'docs/REFERENCE_INDEX.md'
-      - 'docs/architecture/BEHAVIOR-TRACE/**'
       - 'docs/architecture/INTEGRATION-QUEUE/README.md'
       - 'docs/architecture/BEHAVIOR-OBSERVATORY/README.md'
       - 'README.md'
