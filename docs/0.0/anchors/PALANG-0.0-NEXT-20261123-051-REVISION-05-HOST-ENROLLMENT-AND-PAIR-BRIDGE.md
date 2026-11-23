@@ -73,3 +73,33 @@ No credentials, MFA codes, PATs or private keys are to be pasted into chat.
 - JSON Schema, portable RAHM schema, smoke fixture and valid fixture updated.
 - Interaction ledger validation/recovery run 45128386247: SUCCESS (schema-validation + input/output recovery jobs all PASS).
 - Remaining: fresh Portable RAHM Conformance on head 0f4754704f9837b631bc530e8924b8258f497cd7 after manifest digest reconciliation; then repeat exact-head audit.
+
+
+## Priority I — reduce the ten Partner issues to what the first host actually needs
+
+The first host is a PUBLIC-READ + local-workspace + owner-reviewed-receipt flow. It does not require a new private repository or deployed service before the first test.
+
+| Issue | First-host dependency | Decision |
+|---|---|---|
+| #114 private service repo/hosting | NO | Defer; only needed if a custom owner broker is proven necessary. |
+| #115 GitHub App | NO | Defer until authenticated owner operations or private per-host repo access is required. |
+| #116 OAuth broker | NO | Defer; anonymous public READ does not need OAuth. |
+| #117 remote MCP | OPTIONAL | Prefer GitHub's official remote MCP if the actual host/client supports it; custom MCP only for a proven gap. |
+| #118 OpenAI API | NO | Needed only for a separately operated API-based host, not a new ChatGPT conversation reading public files. |
+| #119 deploy | NO | Defer with the custom broker; do not deploy infrastructure for public READ. |
+| #120 promotion automation | NO | Owner can review/export manually until automation is genuinely needed. |
+| #121 owner approval gate | YES for any future automated promotion; NO for first read-only host | Existing main protection remains; the target one-approval/Code Owner enforcement is still an owner-side task. |
+| #122 private RAHM | NO for first read-only host; YES before private quarantine/promotion | Create only when owner chooses to enable that lane. |
+| #123 end-to-end acceptance | YES | Run only after the actual host returns a receipt and its runtime/workspace capabilities can be tested. |
+
+This is a deliberate simplification, not deletion of the ten issues. Keep all ten OPEN with their existing history, but do not block first-host onboarding on optional infrastructure.
+
+## Owner action minimization
+
+Before any owner-side setup, the assistant must:
+1. Send the current one-message prompt to a genuinely fresh host (owner action: paste once).
+2. Read and validate the returned receipt, exact main SHA and claimed capabilities.
+3. Determine whether the host has an isolated workspace, Python/code execution, persistence and restart recovery.
+4. Ask for only the single missing owner action that is essential for the next chosen capability.
+
+No new private repository is requested merely to let a host read the public master. No App, token, API key or secret is requested before the capability check. If the host can work locally but cannot persist or write back, it returns a proposal/export for owner review.
