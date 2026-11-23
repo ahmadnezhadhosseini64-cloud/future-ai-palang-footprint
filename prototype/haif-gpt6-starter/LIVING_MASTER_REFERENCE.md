@@ -2,15 +2,15 @@
 
 این الحاقیه نسخهٔ مادر را downgrade یا بازشماری نمی‌کند؛ نسخهٔ مادر همچنان **1.8.4** است. این فقط ثبت یک نشانگر تعاملی جدید روی همان ریشهٔ POINT-0/GOLDEN است. CURRENT-150.02 / NEXT-051.02 آخرین revision پذیرفته‌شده باقی می‌مانند تا نامزد .03 آزمون exact-SHA و ادغام کنترل‌شده را پشت سر بگذارد.
 
-- ریشه: [POINT-0/GOLDEN](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md)
-- ورودی: [IN-136](../../0.0/anchors/PALANG-0.0-IN-20261123-136-CHAT-POINT0-CONTINUATION.md)
-- خروجی: [OUT-135](../../0.0/anchors/PALANG-0.0-OUT-20261123-135-CHAT-POINT0-CONTINUATION.md)
-- رویداد: [EVT-0323](../BEHAVIOR-TRACE/EVT-0323-CHAT-POINT0-CONTINUATION-2026-11-23.md)
-- زمان رویداد: [TIME-BINDING-EVT-0323](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0323-CHAT-POINT0-CONTINUATION-2026-11-23.md)
-- بازبینی نامزد: [CURRENT-150.03](../../0.0/anchors/PALANG-0.0-CURRENT-20261123-150-REVISION-03-CHAT-POINT0-CONTINUATION.md)
-- صف یگانه، بازبینی نامزد: [NEXT-051.03](../../0.0/anchors/PALANG-0.0-NEXT-20261123-051-REVISION-03-EXECUTION-CONTINUATION.md)
-- نشانگر گفتگو: [POINT-0-GOLDEN-CHAT-CONTINUATION-2026-11-23-001](../../0.0/anchors/POINT-0-GOLDEN-CHAT-CONTINUATION-2026-11-23-001.md)
-- میراث آینه‌ای محفوظ: [EVT-0241](../BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) و [TIME-BINDING-EVT-0241](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md).
+- ریشه: [POINT-0/GOLDEN](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md)
+- ورودی: [IN-136](../../docs/0.0/anchors/PALANG-0.0-IN-20261123-136-CHAT-POINT0-CONTINUATION.md)
+- خروجی: [OUT-135](../../docs/0.0/anchors/PALANG-0.0-OUT-20261123-135-CHAT-POINT0-CONTINUATION.md)
+- رویداد: [EVT-0323](../../docs/architecture/BEHAVIOR-TRACE/EVT-0323-CHAT-POINT0-CONTINUATION-2026-11-23.md)
+- زمان رویداد: [TIME-BINDING-EVT-0323](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0323-CHAT-POINT0-CONTINUATION-2026-11-23.md)
+- بازبینی نامزد: [CURRENT-150.03](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261123-150-REVISION-03-CHAT-POINT0-CONTINUATION.md)
+- صف یگانه، بازبینی نامزد: [NEXT-051.03](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261123-051-REVISION-03-EXECUTION-CONTINUATION.md)
+- نشانگر گفتگو: [POINT-0-GOLDEN-CHAT-CONTINUATION-2026-11-23-001](../../docs/0.0/anchors/POINT-0-GOLDEN-CHAT-CONTINUATION-2026-11-23-001.md)
+- میراث آینه‌ای محفوظ: [EVT-0241](../../docs/architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) و [TIME-BINDING-EVT-0241](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md).
 
 قانون تقدم: سند مادر مرجع حقیقت است؛ بسته، manifest، mirror و آزمون‌ها باید با آن همگام شوند. هیچ downgrade برای سازگاری با آزمون یا بستهٔ قدیمی مجاز نیست. این الحاقیه به‌تنهایی اثبات‌کنندهٔ package conformance، release publication یا recovery میزبان مستقل نیست.
 
@@ -40,7 +40,7 @@
 این نسخه یک تغییر در شیوهٔ نام‌گذاری و تداوم است، نه ساخت ریشه یا صف جدید. هویت‌های POINT-0/GOLDEN، CURRENT-150 و NEXT-051 ثابت می‌مانند؛ تغییرات معمول با نسخه‌های الحاقی CURRENT-150.01، CURRENT-150.02 و NEXT-051.01، NEXT-051.02 ثبت می‌شوند.
 
 - زنجیرهٔ این تغییر: POINT-0/GOLDEN → CURRENT-150 → IN-134 → OUT-133 → EVT-0321 → TIME-BINDING-EVT-0321 → CURRENT-150.01 → NEXT-051.01.
-- سیاست حاکم: [POINT-0 Stable Anchor and Revision Policy](../../0.0/anchors/POINT-0-STABLE-ANCHOR-AND-REVISION-POLICY-2026-11-22.md).
+- سیاست حاکم: [POINT-0 Stable Anchor and Revision Policy](../../docs/0.0/anchors/POINT-0-STABLE-ANCHOR-AND-REVISION-POLICY-2026-11-22.md).
 - CURRENT-151، POINT-0/089، IN-133، OUT-132، EVT-0320 و TIME-BINDING-EVT-0320 به‌عنوان شواهد انتقالی تاریخی حفظ می‌شوند؛ یافته‌ها و شواهدشان در CURRENT-150.01 ادغام مرجعی شده‌اند. هیچ فایل یا شناسه‌ای حذف یا بازشماری نمی‌شود.
 - NEXT-051 همان صف یگانه است؛ هیچ NEXT-052 ساخته نمی‌شود. ده پروندهٔ Partner (#114–#123)، Issue #20 و Issue #21 در همین صف باقی می‌مانند.
 - نسخهٔ مرجع مادر اکنون 1.8.3 است؛ بستهٔ قابل‌حمل، manifest، mirror و آزمون‌ها باید با همین نسخه همگام شوند. مادر را برای سازگار کردن آزمون قدیمی پایین نمی‌آوریم.
@@ -257,8 +257,8 @@
 
 - Chain: POINT-0/083 → CURRENT-136 → POINT-0/084 (0++) → IN-127 → OUT-126 → EVT-0304 → TIME-BINDING-EVT-0304 → CURRENT-137 → NEXT-051.
 - Living master target: 1.7.91.
-- Security architecture: [OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOSITORIES.md](../HOST-SECURITY/OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOSITORIES.md).
-- Private host repository template: [PRIVATE-HOST-REPOSITORY-TEMPLATE.md](../HOST-SECURITY/PRIVATE-HOST-REPOSITORY-TEMPLATE.md).
+- Security architecture: [OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOSITORIES.md](../../docs/architecture/HOST-SECURITY/OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOSITORIES.md).
+- Private host repository template: [PRIVATE-HOST-REPOSITORY-TEMPLATE.md](../../docs/architecture/HOST-SECURITY/PRIVATE-HOST-REPOSITORY-TEMPLATE.md).
 - Master repository remains PUBLIC for anonymous HTTPS READ; AI hosts receive no master-repository write credential.
 - Each verified host receives one owner-created PRIVATE repository. No cross-host repository or credential sharing.
 - Optional host writes are broker-mediated through a GitHub App scoped to exactly one host repository; the model never receives a token. L1_READ_ONLY remains default until all gates pass.
@@ -277,7 +277,7 @@
 - Chain: POINT-0/082 → CURRENT-135 → POINT-0/083 (0++) → IN-126 → OUT-125 → EVT-0303 → TIME-BINDING-EVT-0303 → CURRENT-136 → NEXT-051.
 - Owner request: ورود میزبان‌های تازه با یک پیام، شناسایی مستقل، فضای کاری خصوصی/قابل‌بازیابی و محدودیت سخت بر عدم نوشتن در مخزن مرکزی.
 - Existing multi-host architecture, Host Registry, workspace charter and isolation/promotion protocol are reused; no parallel architecture is introduced.
-- New one-message enrollment: [ONE_MESSAGE_MULTI_HOST_ENROLLMENT_FA.md](../../../prototype/universal-host/ONE_MESSAGE_MULTI_HOST_ENROLLMENT_FA.md).
+- New one-message enrollment: [ONE_MESSAGE_MULTI_HOST_ENROLLMENT_FA.md](../universal-host/ONE_MESSAGE_MULTI_HOST_ENROLLMENT_FA.md).
 - New host permission is PUBLIC READ ONLY on the central repository. No write, branch, PR, issue, release, workflow or settings mutation is permitted.
 - Official Host ID and Workspace ID are assigned by the owner only after direct host receipt and identity review. Registry remains empty until then.
 - The host workspace must be private to the destination host; shared-repository folders are not security boundaries.
@@ -319,7 +319,7 @@ HOST WORKSPACE → OWNER-REVIEWED EXPORT → QUARANTINE → CROSS-HOST RECONCILI
 - Chain: POINT-0/080 → CURRENT-133 → POINT-0/081 (0++) → IN-124 → OUT-123 → EVT-0301 → TIME-BINDING-EVT-0301 → CURRENT-134 → NEXT-051.
 - Owner request: ثبت همین گفتگو به‌عنوان نقطهٔ ۰++ و تحویل یک پیام واحد قابل‌کپی برای ارسال مستقیم به چت میزبان تازه.
 - Public repository READ/clone/fetch بدون OAuth؛ EXECUTE، WORKSPACE، persistence/restart و authenticated WRITE مستقل‌اند.
-- Copyable bootstrap: [ONE_MESSAGE_HOST_BOOTSTRAP_FA.md](../../../prototype/haif-gpt6-starter/ONE_MESSAGE_HOST_BOOTSTRAP_FA.md); universal entry: [UNIVERSAL_AI_HOST_ENTRY_FA.md](../../../prototype/universal-host/UNIVERSAL_AI_HOST_ENTRY_FA.md).
+- Copyable bootstrap: [ONE_MESSAGE_HOST_BOOTSTRAP_FA.md](ONE_MESSAGE_HOST_BOOTSTRAP_FA.md); universal entry: [UNIVERSAL_AI_HOST_ENTRY_FA.md](../universal-host/UNIVERSAL_AI_HOST_ENTRY_FA.md).
 - Previous ZIP receipt 0.4.9 is historical to its exact source SHA; this registration requires a fresh same-identity package build and exact-main receipt.
 - Destination-host import, execution, persistent workspace and restart remain OPEN / NOT RUN. NEXT-051 remains the sole queue.
 
@@ -332,8 +332,8 @@ HOST WORKSPACE → OWNER-REVIEWED EXPORT → QUARANTINE → CROSS-HOST RECONCILI
 - OAuth یا credential امن معادل فقط برای write-back احراز‌شده یا دسترسی به منابع خصوصی لازم است. تأیید مالک در گفتگو قصد و اجازهٔ عملیات مجاز را اعلام می‌کند، اما credential مقصد یا قابلیت فنی میزبان را ایجاد نمی‌کند.
 - EXECUTE، private/persistent workspace، restart recovery و authenticated WRITE چهار قابلیت مستقل‌اند و هرکدام receipt جداگانه می‌خواهند.
 - Host remains a replaceable execution agent; MASTER, canonical history, promotion and merge authority remain with the owner.
-- Canonical architecture: [Public repository and low-friction host access](معماری%20دسترسی%20عمومی%20مخزن%20و%20ورود%20کم‌اصطکاک%20میزبان.md).
-- Universal host entry: [UNIVERSAL_AI_HOST_ENTRY_FA.md](../../../prototype/universal-host/UNIVERSAL_AI_HOST_ENTRY_FA.md); public READ-first logic is now explicit.
+- Canonical architecture: [Public repository and low-friction host access](../../docs/architecture/%D9%85%D8%AF%D9%84%20%D8%A7%D9%88%D9%84%DB%8C%D9%87%20AI/%D9%85%D8%B9%D9%85%D8%A7%D8%B1%DB%8C%20%D8%AF%D8%B3%D8%AA%D8%B1%D8%B3%DB%8C%20%D8%B9%D9%85%D9%88%D9%85%DB%8C%20%D9%85%D8%AE%D8%B2%D9%86%20%D9%88%20%D9%88%D8%B1%D9%88%D8%AF%20%DA%A9%D9%85%E2%80%8C%D8%A7%D8%B5%D8%B7%DA%A9%D8%A7%DA%A9%20%D9%85%DB%8C%D8%B2%D8%A8%D8%A7%D9%86.md).
+- Universal host entry: [UNIVERSAL_AI_HOST_ENTRY_FA.md](../universal-host/UNIVERSAL_AI_HOST_ENTRY_FA.md); public READ-first logic is now explicit.
 - Current package receipt 0.4.6 belongs to its recorded source revision only. This master update changes source bytes; exact-main package rebuild, digest, extraction and test receipt are required before a newer package can be called latest verified.
 - Destination host import, execution, workspace persistence, restart and write-back remain OPEN / NOT RUN until direct evidence.
 - NEXT-051 remains the sole active queue.
@@ -395,14 +395,14 @@ HOST WORKSPACE → OWNER-REVIEWED EXPORT → QUARANTINE → CROSS-HOST RECONCILI
 
 ### منابع مبنا و تبار
 
-1. مدل اولیهٔ محصول HAIF: [HAIF-IPA](../../reference/REFERENCE-DOCUMENTS/HAIF-INITIAL-PRODUCT-ARCHITECTURE-2026-10-21-001.md).
-2. معماری اجرایی قابل پیاده‌سازی: [FAPF-IRA](../../reference/REFERENCE-DOCUMENTS/FUTURE-AI-PALANG-FOOTPRINT-IMPLEMENTABLE-REFERENCE-ARCHITECTURE-2026-10-21-001.md).
-3. مبنای معماری معنایی گراف تاریخی: [H0SAB](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-SEMANTIC-ARCHITECTURE-BASELINE-2026-10-21-001.md).
-4. سند مادر تطبیق گراف تاریخی: [H0GLMR](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-RECONCILIATION-LIVING-MASTER-REFERENCE-2026-10-21-001.md).
-5. دفتر داوری شناسه‌ها و روابط: [H0IRAR](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-IDENTIFIER-AND-RELATION-ADJUDICATION-REGISTER-2026-10-21-001.md).
-6. صف مرور معنایی و شواهد ممیزی: [H0SRQS](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-SEMANTIC-REVIEW-QUEUE-SNAPSHOT-2026-10-21-001.md).
-7. رویداد ایجاد مدل اولیهٔ محصول: [EVT-0055](../BEHAVIOR-TRACE/EVT-0055-HAIF-INITIAL-PRODUCT-ARCHITECTURE-2026-10-21.md).
-8. این بستهٔ توسعه: [نمای کلی پوشه](./README.md)، [صف گام‌های بعدی](./صف%20گام‌های%20بعدی%20و%20موارد%20باز.md).
+1. مدل اولیهٔ محصول HAIF: [HAIF-IPA](../../docs/reference/REFERENCE-DOCUMENTS/HAIF-INITIAL-PRODUCT-ARCHITECTURE-2026-10-21-001.md).
+2. معماری اجرایی قابل پیاده‌سازی: [FAPF-IRA](../../docs/reference/REFERENCE-DOCUMENTS/FUTURE-AI-PALANG-FOOTPRINT-IMPLEMENTABLE-REFERENCE-ARCHITECTURE-2026-10-21-001.md).
+3. مبنای معماری معنایی گراف تاریخی: [H0SAB](../../docs/reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-SEMANTIC-ARCHITECTURE-BASELINE-2026-10-21-001.md).
+4. سند مادر تطبیق گراف تاریخی: [H0GLMR](../../docs/reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-RECONCILIATION-LIVING-MASTER-REFERENCE-2026-10-21-001.md).
+5. دفتر داوری شناسه‌ها و روابط: [H0IRAR](../../docs/reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-IDENTIFIER-AND-RELATION-ADJUDICATION-REGISTER-2026-10-21-001.md).
+6. صف مرور معنایی و شواهد ممیزی: [H0SRQS](../../docs/reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-SEMANTIC-REVIEW-QUEUE-SNAPSHOT-2026-10-21-001.md).
+7. رویداد ایجاد مدل اولیهٔ محصول: [EVT-0055](../../docs/architecture/BEHAVIOR-TRACE/EVT-0055-HAIF-INITIAL-PRODUCT-ARCHITECTURE-2026-10-21.md).
+8. این بستهٔ توسعه: [نمای کلی پوشه](../../docs/architecture/%D9%85%D8%AF%D9%84%20%D8%A7%D9%88%D9%84%DB%8C%D9%87%20AI/README.md)، [صف گام‌های بعدی](../../docs/architecture/%D9%85%D8%AF%D9%84%20%D8%A7%D9%88%D9%84%DB%8C%D9%87%20AI/%D8%B5%D9%81%20%DA%AF%D8%A7%D9%85%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B9%D8%AF%DB%8C%20%D9%88%20%D9%85%D9%88%D8%A7%D8%B1%D8%AF%20%D8%A8%D8%A7%D8%B2.md).
 
 ## 2. هدف نهایی محصول
 
@@ -696,8 +696,8 @@ WRITE ≠ ACCEPTED؛ FOUND ≠ RETRIEVED ≠ VALIDATED ≠ VERIFIED ≠ ACTIVE.
 
 
 ## Addendum v1.3.0 — executable prototype location
-- Prototype source and run instructions: [HAIF v0](../../../prototype/haif-v0/README.md).
-- API implementation: [app.py](../../../prototype/haif-v0/app.py); acceptance tests: [test_app.py](../../../prototype/haif-v0/test_app.py); CI workflow: [HAIF Prototype Tests](../../../.github/workflows/haif-prototype-tests.yml).
+- Prototype source and run instructions: [HAIF v0](../haif-v0/README.md).
+- API implementation: [app.py](../haif-v0/app.py); acceptance tests: [test_app.py](../haif-v0/test_app.py); CI workflow: [HAIF Prototype Tests](../../.github/workflows/haif-prototype-tests.yml).
 - The first test run after the lifespan fix passed 5 tests. The prototype remains a local development increment; artifact/evidence registry, security controls, production deployment and external persistence remain open.
 
 
@@ -711,20 +711,20 @@ WRITE ≠ ACCEPTED؛ FOUND ≠ RETRIEVED ≠ VALIDATED ≠ VERIFIED ≠ ACTIVE.
 
 ## ثبت بازگشت و چکش ۰.۰ — 2026-10-21
 
-- پروندهٔ ثبت و ممیزی بازگشت: [PALANG-0.0-RETURN-AND-INITIAL-MODEL-HAMMER](../../reference/REFERENCE-DOCUMENTS/PALANG-0.0-RETURN-AND-INITIAL-MODEL-HAMMER-2026-10-21-001.md).
+- پروندهٔ ثبت و ممیزی بازگشت: [PALANG-0.0-RETURN-AND-INITIAL-MODEL-HAMMER](../../docs/reference/REFERENCE-DOCUMENTS/PALANG-0.0-RETURN-AND-INITIAL-MODEL-HAMMER-2026-10-21-001.md).
 - نقطهٔ مادر همچنان `PALANG-0.0-REPOSITORY-MODEL-INITIAL-RESUME-2026-10-21-001` است؛ این بازگشت لنگر تازه‌ای ایجاد یا نقاط قبلی را ادغام نمی‌کند.
 - چکش وضعیت: مدل مرجع، صف، پوشه و نمونهٔ اجرایی v0 در مخزن موجودند؛ آزمون و ممیزی تازه پس از آخرین تغییر هنوز اجرا نشده‌اند. آزمون شکست، Artifact/Evidence versioning، بازیابی نشست و داوری معنایی گراف همچنان بازند.
 - گام بعدی حاکم: اجرای تازهٔ آزمون نمونه و ممیزی ساختاری، ثبت شواهد و سپس ادامهٔ آزمون‌های شکست و بررسی معنایی موردبه‌مورد.
 
 
 ## سند مرجع جامع و نام‌گذاری‌شدهٔ بازگشت — 2026-10-21
-- **سند مرجع زندهٔ حاکم:** [مدل اولیه — لنگر ۰.۰ و سند مرجع زنده](./مدل%20اولیه%20—%20لنگر%20۰.۰%20و%20سند%20مرجع%20زنده.md).
+- **سند مرجع زندهٔ حاکم:** [مدل اولیه — لنگر ۰.۰ و سند مرجع زنده](../../docs/architecture/%D9%85%D8%AF%D9%84%20%D8%A7%D9%88%D9%84%DB%8C%D9%87%20AI/%D9%85%D8%AF%D9%84%20%D8%A7%D9%88%D9%84%DB%8C%D9%87%20%E2%80%94%20%D9%84%D9%86%DA%AF%D8%B1%20%DB%B0.%DB%B0%20%D9%88%20%D8%B3%D9%86%D8%AF%20%D9%85%D8%B1%D8%AC%D8%B9%20%D8%B2%D9%86%D8%AF%D9%87.md).
 - Stable ID: `PALANG-INITIAL-AI-MODEL-0.0-RETURN-MASTER-REFERENCE-2026-10-21-001`; Production ID: `PIM0RM-2026-10-21-001`; Version: `1.0.0`.
 - این سند نام‌گذاری‌شده، هدف، معماری، قواعد ثبت، لنگر ۰.۰، شواهد، صف شکاف‌ها، وضعیت مقصدها و گام بعدی را یک‌جا جمع می‌کند. زمان دقیق پیام کاربر UNKNOWN / UNVERIFIED است.
 - دامنهٔ تأیید این ثبت فقط مخزن GitHub است؛ آزمون تازه و ممیزی تازه همچنان اقدام بعدی‌اند. بافر، حافظهٔ پایدار، Library و Dropbox تأیید نشده‌اند.
 
 ## پیوند به سند مرجع استخراج الگوریتم و محصول — 2026-10-21
-سند مکمل و حاکم برای استخراج مدل از مخزن و تبدیل آن به الگوریتم و اپلیکیشن: [سند مرجع مادر — الگوریتم استخراج مدل و محصول رایگان HAIF](./سند%20مرجع%20مادر%20—%20الگوریتم%20استخراج%20مدل%20و%20محصول%20رایگان%20HAIF.md).
+سند مکمل و حاکم برای استخراج مدل از مخزن و تبدیل آن به الگوریتم و اپلیکیشن: [سند مرجع مادر — الگوریتم استخراج مدل و محصول رایگان HAIF](../../docs/architecture/%D9%85%D8%AF%D9%84%20%D8%A7%D9%88%D9%84%DB%8C%D9%87%20AI/%D8%B3%D9%86%D8%AF%20%D9%85%D8%B1%D8%AC%D8%B9%20%D9%85%D8%A7%D8%AF%D8%B1%20%E2%80%94%20%D8%A7%D9%84%DA%AF%D9%88%D8%B1%DB%8C%D8%AA%D9%85%20%D8%A7%D8%B3%D8%AA%D8%AE%D8%B1%D8%A7%D8%AC%20%D9%85%D8%AF%D9%84%20%D9%88%20%D9%85%D8%AD%D8%B5%D9%88%D9%84%20%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86%20HAIF.md).
 - Stable ID: `HAIF-EXTRACTABLE-INTERACTION-MODEL-FREE-APP-MASTER-REFERENCE-2026-10-21-001`; Production ID: `HEIMFA-MR-2026-10-21-001`; Version 1.0.0.
 - وضعیت: ACTIVE / LIVING / OPEN. طراحی الگوریتم در سند ثبت شده؛ پیاده‌سازی و آزمون‌های تازه هنوز باید جداگانه اثبات شوند.
 
@@ -761,8 +761,8 @@ WRITE ≠ ACCEPTED؛ FOUND ≠ RETRIEVED ≠ VALIDATED ≠ VERIFIED ≠ ACTIVE.
 - Status: ACTIVE / LIVING / GOVERNING
 - Assistant/system operation time for this rule application: `2026-10-21T13:40:14+03:30` (Asia/Tehran); UTC equivalent: `2026-10-21T10:10:14Z`.
 - User message time: `UNAVAILABLE / NOT CAPTURED`; this does not remove the obligation to record assistant/system time.
-- Standard: [قانون دائمی لنگر زمانی دستیار](../GOVERNANCE/ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21-001.md).
-- Event: [EVT-0066](../BEHAVIOR-TRACE/EVT-0066-ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21.md).
+- Standard: [قانون دائمی لنگر زمانی دستیار](../../docs/architecture/GOVERNANCE/ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21-001.md).
+- Event: [EVT-0066](../../docs/architecture/BEHAVIOR-TRACE/EVT-0066-ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21.md).
 
 از این پس زمان عملیات دستیار/سیستم، منبع معتبر آن، منطقهٔ زمانی تهران و معادل UTC در ثبت‌ها و بازخوانی‌ها درج می‌شود. اگر زمان پیام کاربر واقعاً در دسترس باشد، زمان دوم و اختلاف نیز افزوده می‌شود. زمان پیام، زمان شروع عملیات، زمان commit و زمان بازخوانی جدا نگه داشته می‌شوند. این اصلاحیه، زمان دقیق پیام تاریخی را جعل نمی‌کند.
 
@@ -773,42 +773,42 @@ WRITE ≠ ACCEPTED؛ FOUND ≠ RETRIEVED ≠ VALIDATED ≠ VERIFIED ≠ ACTIVE.
 
 
 ## الحاق حاکمیتی: استاندارد زمان و رویداد EVT-0067
-قاعدهٔ ثبت زمان دستیار/سیستم بخشی از معماری پایهٔ HAIF است و در همهٔ لنگرهای ادامه، رویدادها، اسناد، ورودی‌ها و خروجی‌های مهم اعمال می‌شود. مرجع حاکم: [استاندارد لنگر زمانی دستیار](../GOVERNANCE/ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21-001.md). تأکید مجدد کاربر: [EVT-0067](../BEHAVIOR-TRACE/EVT-0067-TIMESTAMP-RULE-RECONFIRMATION-2026-10-21.md).
+قاعدهٔ ثبت زمان دستیار/سیستم بخشی از معماری پایهٔ HAIF است و در همهٔ لنگرهای ادامه، رویدادها، اسناد، ورودی‌ها و خروجی‌های مهم اعمال می‌شود. مرجع حاکم: [استاندارد لنگر زمانی دستیار](../../docs/architecture/GOVERNANCE/ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21-001.md). تأکید مجدد کاربر: [EVT-0067](../../docs/architecture/BEHAVIOR-TRACE/EVT-0067-TIMESTAMP-RULE-RECONFIRMATION-2026-10-21.md).
 زمان پیام کاربر، زمان شروع عملیات، زمان commit، زمان بازخوانی و زمان ممیزی فیلدهای مستقل‌اند. زمان معتبر به Asia/Tehran (+03:30) و UTC ثبت می‌شود؛ زمان ناموجود با `UNAVAILABLE / NOT CAPTURED` مشخص می‌شود. زمان commit رویداد EVT-0067 برابر `2026-10-21T10:20:52Z` UTC / `2026-10-21T13:50:52+03:30` تهران است و صرفاً شاهد زمان ثبت مخزن محسوب می‌شود.
 
 
 ## قاعدهٔ حاکم معماری: UTC مرجع اصلی — EVT-0068
-UTC مرجع canonical زمان برای رویدادها، نقاط ۰.۰، ورودی‌ها و خروجی‌های مهم، ثبت مخزن، آزمون‌ها و ممیزی‌ها است. زمان تهران فقط از همان لحظهٔ UTC و قواعد منطقهٔ زمانی `Asia/Tehran` استخراج می‌شود. ثبت UTC و تهران در کنار هم مجاز و مطلوب است، اما ترتیب مرجع همیشه UTC سپس تهران است. زمان‌های پیام کاربر، شروع عملیات، commit، بازخوانی و ممیزی مستقل‌اند؛ دادهٔ ناموجود صریحاً ناموجود می‌ماند. مرجع اجرایی: [EVT-0068](../BEHAVIOR-TRACE/EVT-0068-UTC-PRIMARY-TIME-GOVERNANCE-2026-10-21.md) و [استاندارد زمان‌گذاری](../GOVERNANCE/ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21-001.md).
+UTC مرجع canonical زمان برای رویدادها، نقاط ۰.۰، ورودی‌ها و خروجی‌های مهم، ثبت مخزن، آزمون‌ها و ممیزی‌ها است. زمان تهران فقط از همان لحظهٔ UTC و قواعد منطقهٔ زمانی `Asia/Tehran` استخراج می‌شود. ثبت UTC و تهران در کنار هم مجاز و مطلوب است، اما ترتیب مرجع همیشه UTC سپس تهران است. زمان‌های پیام کاربر، شروع عملیات، commit، بازخوانی و ممیزی مستقل‌اند؛ دادهٔ ناموجود صریحاً ناموجود می‌ماند. مرجع اجرایی: [EVT-0068](../../docs/architecture/BEHAVIOR-TRACE/EVT-0068-UTC-PRIMARY-TIME-GOVERNANCE-2026-10-21.md) و [استاندارد زمان‌گذاری](../../docs/architecture/GOVERNANCE/ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21-001.md).
 
 
 ## قاعدهٔ حاکم پروژه: UTC نخست و شواهد مستقل هر مرحله — EVT-0069
 
 زمان همهٔ رویدادها، ورودی‌ها/خروجی‌های مهم، تغییرات، آزمون‌ها و ممیزی‌ها ابتدا با UTC معتبر ثبت می‌شود؛ سپس زمان تهران از همان UTC با `Asia/Tehran` مشتق می‌شود. شواهد و زمان‌های ورودی، شروع عملیات، نوشتن/commit، بازخوانی، تطبیق، تأیید و ممیزی جدا هستند. زمان/شاهد ناموجود جعل نمی‌شود. هیچ ثبت مخزنی بدون بازخوانی و تطبیق، VERIFIED محسوب نمی‌شود.
 
-مرجع اجرایی وضعیت بازگشت و ثبت مرحله‌ای: [EVT-0069](../BEHAVIOR-TRACE/EVT-0069-RETURN-STATE-AND-EVIDENCE-PER-STAGE-2026-10-21.md). قاعدهٔ زمانی پایه: [EVT-0068](../BEHAVIOR-TRACE/EVT-0068-UTC-PRIMARY-TIME-GOVERNANCE-2026-10-21.md).
+مرجع اجرایی وضعیت بازگشت و ثبت مرحله‌ای: [EVT-0069](../../docs/architecture/BEHAVIOR-TRACE/EVT-0069-RETURN-STATE-AND-EVIDENCE-PER-STAGE-2026-10-21.md). قاعدهٔ زمانی پایه: [EVT-0068](../../docs/architecture/BEHAVIOR-TRACE/EVT-0068-UTC-PRIMARY-TIME-GOVERNANCE-2026-10-21.md).
 
 
 ## الحاقیهٔ حاکم: ثبت خودکار همهٔ ورودی‌ها و خروجی‌ها
-- قرارداد معماری: [AUTOMATIC-INTERACTION-REGISTRATION-CONTRACT](../GOVERNANCE/AUTOMATIC-INTERACTION-REGISTRATION-CONTRACT-2026-10-21-001.md).
-- رویداد مستقل: [EVT-0073](../BEHAVIOR-TRACE/EVT-0073-AUTOMATIC-INTERACTION-REGISTRATION-CONTRACT-2026-10-21.md).
+- قرارداد معماری: [AUTOMATIC-INTERACTION-REGISTRATION-CONTRACT](../../docs/architecture/GOVERNANCE/AUTOMATIC-INTERACTION-REGISTRATION-CONTRACT-2026-10-21-001.md).
+- رویداد مستقل: [EVT-0073](../../docs/architecture/BEHAVIOR-TRACE/EVT-0073-AUTOMATIC-INTERACTION-REGISTRATION-CONTRACT-2026-10-21.md).
 - اصل دائمی: هر ورودی و خروجی به‌صورت پیش‌فرض وارد زنجیرهٔ CAPTURE → BIND → ANCHOR → PRESERVE → LINK → VERIFY می‌شود؛ «ثبت کن» شرط آغاز ثبت نیست.
 - وضعیت صادقانه: این قاعده به معماری مدل اولیه متصل شده است؛ گرفتن خودکار همهٔ پیام‌های زنده هنوز تا پیاده‌سازی Host Adapter و آزمون بازیابی اثبات نشده و باید به‌عنوان شکاف باز پیگیری شود.
 
 
 ## پیوند حاکم جدید — گراف پیوستگی نقاط ۰/۰.۰ و «چشم پلنگ شکارچی» (2026-10-22)
 
-- سند مرجع مادر پیوستگی: [PALANG-LIVING-MASTER-CONTINUITY-GRAPH-2026-10-22-001](../../reference/REFERENCE-DOCUMENTS/PALANG-LIVING-MASTER-CONTINUITY-GRAPH-2026-10-22-001.md).
-- نقطهٔ ۰ جاری: [PALANG-ZERO-LIVING-CONTINUITY-GRAPH-2026-10-22-001](../../../checkpoints/PALANG-ZERO-LIVING-CONTINUITY-GRAPH-2026-10-22-001.md).
-- نقطهٔ ۰.۰ جاری: [PALANG-0.0-LIVING-CONTINUITY-GRAPH-2026-10-22-001](../../../checkpoints/0.0/PALANG-0.0-LIVING-CONTINUITY-GRAPH-2026-10-22-001.md).
-- دفتر مرکزی نقاط ۰.۰: [docs/0.0/README.md](../../0.0/README.md).
-- رویداد درخواست/تصمیم: [EVT-0070-CANDIDATE](../BEHAVIOR-TRACE/EVT-0070-CONTINUITY-GRAPH-REQUEST-2026-10-22.md) — شناسهٔ رویداد تا تطبیق با دفتر رویدادها نامزد است.
+- سند مرجع مادر پیوستگی: [PALANG-LIVING-MASTER-CONTINUITY-GRAPH-2026-10-22-001](../../docs/reference/REFERENCE-DOCUMENTS/PALANG-LIVING-MASTER-CONTINUITY-GRAPH-2026-10-22-001.md).
+- نقطهٔ ۰ جاری: [PALANG-ZERO-LIVING-CONTINUITY-GRAPH-2026-10-22-001](../../checkpoints/PALANG-ZERO-LIVING-CONTINUITY-GRAPH-2026-10-22-001.md).
+- نقطهٔ ۰.۰ جاری: [PALANG-0.0-LIVING-CONTINUITY-GRAPH-2026-10-22-001](../../checkpoints/0.0/PALANG-0.0-LIVING-CONTINUITY-GRAPH-2026-10-22-001.md).
+- دفتر مرکزی نقاط ۰.۰: [docs/0.0/README.md](../../docs/0.0/README.md).
+- رویداد درخواست/تصمیم: [EVT-0070-CANDIDATE](../../docs/architecture/BEHAVIOR-TRACE/EVT-0070-CONTINUITY-GRAPH-REQUEST-2026-10-22.md) — شناسهٔ رویداد تا تطبیق با دفتر رویدادها نامزد است.
 
 **قاعدهٔ معماری:** گراف تاریخی نقاط ۰/۰.۰ به‌صورت افزایشی و با حفظ شناسه و سابقه رشد می‌کند. هر نقطه به سند مادر، دفتر نقاط، منشأ/شواهد، لنگر مستقل، زمان‌های واقعی و مسیر Previous → Current → Next متصل می‌شود. نقطهٔ ۰ و نقطهٔ ۰.۰ دو نقش جدا دارند و به یکدیگر ارجاع می‌دهند. «چشم پلنگ شکارچی» نام پروتکل کشف شکاف، پیوندهای گمشده و کارهای باز است؛ اجرای پس‌زمینه فقط پس از استقرار و آزمون واقعی قابل اعلام است. این الحاق به معنی تکمیل داوری معنایی تمام نقاط تاریخی یا تأیید Buffer/Library/Persistent Memory/Dropbox نیست.
 
 
 ## الحاقیهٔ حاکم — بازخورد مثبت و چرخهٔ یادگیری تعامل (2026-10-22)
-- سند مرجع مادر: [PALANG-POSITIVE-FEEDBACK-LEARNING](../../reference/REFERENCE-DOCUMENTS/PALANG-POSITIVE-FEEDBACK-AND-INTERACTION-LEARNING-MASTER-REFERENCE-2026-10-22-001.md).
-- رویداد رفتاری: [EVT-0090](../BEHAVIOR-TRACE/EVT-0090-PALANG-POSITIVE-FEEDBACK-AND-INTERACTION-LEARNING-2026-10-22.md).
+- سند مرجع مادر: [PALANG-POSITIVE-FEEDBACK-LEARNING](../../docs/reference/REFERENCE-DOCUMENTS/PALANG-POSITIVE-FEEDBACK-AND-INTERACTION-LEARNING-MASTER-REFERENCE-2026-10-22-001.md).
+- رویداد رفتاری: [EVT-0090](../../docs/architecture/BEHAVIOR-TRACE/EVT-0090-PALANG-POSITIVE-FEEDBACK-AND-INTERACTION-LEARNING-2026-10-22.md).
 - زوج تعامل: `INT-20261022-003` — ورودی `IN-20261022-003` و خروجی `OUT-20261022-003` با لنگرهای مستقل.
 - قاعده: بازخورد واقعی انسان ابتدا مشاهدهٔ مستند است؛ فرضیه دربارهٔ علت رضایت جدا می‌ماند؛ ارتقای قاعدهٔ مادر نیازمند تکرار، آزمون و اعتبارسنجی است.
 - بازخورد تاریخی 2026-10-20 / EVT-0025 با بازخورد جاری جدا نگه داشته می‌شود.
@@ -816,9 +816,9 @@ UTC مرجع canonical زمان برای رویدادها، نقاط ۰.۰، و�
 
 
 ## الحاقیهٔ حاکم — تفکر عمیق و شتاب‌دهی آینده‌پژوهانه (2026-10-22)
-- سند مرجع مادر: [PFTA](../../reference/REFERENCE-DOCUMENTS/PALANG-FUTURE-THINKING-ACCELERATION-MASTER-REFERENCE-2026-10-22-001.md).
-- رویداد: [EVT-0091](../BEHAVIOR-TRACE/EVT-0091-PALANG-FUTURE-THINKING-ACCELERATION-2026-10-22.md).
-- پابند زمانی: [TIME-BINDING-PFTA](../BEHAVIOR-TRACE/TIME-BINDING-PFTA-2026-10-22-001.md).
+- سند مرجع مادر: [PFTA](../../docs/reference/REFERENCE-DOCUMENTS/PALANG-FUTURE-THINKING-ACCELERATION-MASTER-REFERENCE-2026-10-22-001.md).
+- رویداد: [EVT-0091](../../docs/architecture/BEHAVIOR-TRACE/EVT-0091-PALANG-FUTURE-THINKING-ACCELERATION-2026-10-22.md).
+- پابند زمانی: [TIME-BINDING-PFTA](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-PFTA-2026-10-22-001.md).
 - اصل توسعه: تفکر عمیق و آینده‌پژوهی با سرعت بیشتر از راه بازیابی زمینه، استخراج الگو، سناریوسازی، اولویت‌بندی و آزمون؛ نه با حذف کنترل‌ها یا ادعای بی‌شاهد.
 
 
@@ -826,9 +826,9 @@ UTC مرجع canonical زمان برای رویدادها، نقاط ۰.۰، و�
 
 - Stable ID / شناسهٔ پایدار: `PALANG-DUAL-TRACK-BEHAVIORAL-ARCHITECTURE-2026-10-22-001`
 - Production ID / شناسهٔ تولید: `DTBA-2026-10-22-001`
-- سند مرجع مادر زنده: [DTRC — معماری رفتارشناسی دو‌مسیره](../../reference/REFERENCE-DOCUMENTS/PALANG-DUAL-TRACK-BEHAVIORAL-ARCHITECTURE-MASTER-REFERENCE-2026-10-22-001.md).
-- زوج مستقل: `INT-20261022-008`; [لنگر ورودی](../../0.0/anchors/PALANG-0.0-IN-20261022-008-BEHAVIORAL-ARCHITECTURE-UPDATE.md)؛ [لنگر خروجی](../../0.0/anchors/PALANG-0.0-OUT-20261022-008-BEHAVIORAL-ARCHITECTURE-UPDATE.md).
-- رویداد: [EVT-0094](../BEHAVIOR-TRACE/EVT-0094-DUAL-TRACK-BEHAVIORAL-ARCHITECTURE-2026-10-22.md).
+- سند مرجع مادر زنده: [DTRC — معماری رفتارشناسی دو‌مسیره](../../docs/reference/REFERENCE-DOCUMENTS/PALANG-DUAL-TRACK-BEHAVIORAL-ARCHITECTURE-MASTER-REFERENCE-2026-10-22-001.md).
+- زوج مستقل: `INT-20261022-008`; [لنگر ورودی](../../docs/0.0/anchors/PALANG-0.0-IN-20261022-008-BEHAVIORAL-ARCHITECTURE-UPDATE.md)؛ [لنگر خروجی](../../docs/0.0/anchors/PALANG-0.0-OUT-20261022-008-BEHAVIORAL-ARCHITECTURE-UPDATE.md).
+- رویداد: [EVT-0094](../../docs/architecture/BEHAVIOR-TRACE/EVT-0094-DUAL-TRACK-BEHAVIORAL-ARCHITECTURE-2026-10-22.md).
 - تبار: PFTA (تفکر عمیق و آینده‌پژوهی) + PRDEG (کنترل انحراف مسیر) + PLRA (ثبت و لنگرگذاری) + PLMCG (گراف پیوستگی).
 - اصل مدل: مسیر A گزینه‌ها و سناریوهای آینده را می‌سازد؛ مسیر B هم‌راستایی با هدف، قیود و شواهد را بررسی می‌کند؛ Rahm اختلاف‌ها را تطبیق می‌دهد؛ فقط تصمیم مستند به Master ارتقا می‌یابد.
 - چرخه: `CAPTURE → RECALL → EXPLORE (A) ↔ GUARD (B) → RAHM → DECIDE → REGISTER → PLACE → VERIFY → NEXT`.
@@ -836,32 +836,32 @@ UTC مرجع canonical زمان برای رویدادها، نقاط ۰.۰، و�
 - این نسخه به‌صورت افزایشی افزوده شده و محتوای نسخهٔ قبلی را حذف نمی‌کند. DTRC در این مرحله مدل معماری مستند است، نه ادعای سرویس خودکارِ مستقر.
 - معیار پذیرش: ورودی/خروجی مستقل، سند مادر، رویداد، جای‌گذاری در مدل، پیوند به فهرست‌ها، بازخوانی و زمان‌گذاری واقعی.
 
-- پابند زمانی مستقل این زنجیره: [TIME-BINDING-DTBA-2026-10-22-001](../BEHAVIOR-TRACE/TIME-BINDING-DTBA-2026-10-22-001.md).
+- پابند زمانی مستقل این زنجیره: [TIME-BINDING-DTBA-2026-10-22-001](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-DTBA-2026-10-22-001.md).
 
 
 ## الحاقیهٔ معماری نسخهٔ 1.2.0 — PIRHA: حاکمیت ثبت تعاملی و ممیزی تاریخی
 
 - Stable ID: `PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-2026-10-22-001`
 - Production ID: `PIRHA-2026-10-22-001`
-- سند مرجع مادر: [PIRHA](../../reference/REFERENCE-DOCUMENTS/PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001.md).
-- زوج مستقل ورودی/خروجی: `INT-20261022-009` — [ورودی](../../0.0/anchors/PALANG-0.0-IN-20261022-009-INTERACTION-GOVERNANCE-AND-AUDIT.md) / [خروجی](../../0.0/anchors/PALANG-0.0-OUT-20261022-009-INTERACTION-GOVERNANCE-AND-AUDIT.md).
-- رویداد جاری: [EVT-0095](../BEHAVIOR-TRACE/EVT-0095-INTERACTION-GOVERNANCE-AND-HISTORICAL-AUDIT-2026-10-22.md).
-- رویداد تاریخی EVT-0093: [فایل مستقل رویداد](../BEHAVIOR-TRACE/EVT-0093-REGISTRATION-CONTINUATION-2026-10-22.md).
+- سند مرجع مادر: [PIRHA](../../docs/reference/REFERENCE-DOCUMENTS/PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001.md).
+- زوج مستقل ورودی/خروجی: `INT-20261022-009` — [ورودی](../../docs/0.0/anchors/PALANG-0.0-IN-20261022-009-INTERACTION-GOVERNANCE-AND-AUDIT.md) / [خروجی](../../docs/0.0/anchors/PALANG-0.0-OUT-20261022-009-INTERACTION-GOVERNANCE-AND-AUDIT.md).
+- رویداد جاری: [EVT-0095](../../docs/architecture/BEHAVIOR-TRACE/EVT-0095-INTERACTION-GOVERNANCE-AND-HISTORICAL-AUDIT-2026-10-22.md).
+- رویداد تاریخی EVT-0093: [فایل مستقل رویداد](../../docs/architecture/BEHAVIOR-TRACE/EVT-0093-REGISTRATION-CONTINUATION-2026-10-22.md).
 - اصل جدید: ثبت ورودی/خروجی → سند مادر → رویداد → جای‌گذاری معماری → فهرست‌ها و نقاط ۰/۰.۰ → پابند زمانی → بازخوانی و تطبیق.
 - PIRHA لایهٔ حاکمیت ثبت و ممیزی است؛ با DTRC رقابت نمی‌کند. DTRC مسیر کاوش و کنترل را هماهنگ می‌کند؛ PIRHA صحت و کامل‌بودن زنجیرهٔ ثبت و روابط تاریخی را کنترل می‌کند.
 - معماری OPEN / EVOLVING باقی می‌ماند. این نسخه مدل مستند را توسعه می‌دهد و ادعای خودکارسازی پس‌زمینه یا نتیجهٔ موفق آزمون تاریخی ندارد.
 
-- پابند زمانی PIRHA: [TIME-BINDING-PIRHA-2026-10-22-001](../BEHAVIOR-TRACE/TIME-BINDING-PIRHA-2026-10-22-001.md).
+- پابند زمانی PIRHA: [TIME-BINDING-PIRHA-2026-10-22-001](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-PIRHA-2026-10-22-001.md).
 
-- لنگر ادامهٔ جاری PIRHA: [PALANG-0.0-PIRHA-HISTORICAL-AUDIT-CONTINUATION-2026-10-22-001](../../0.0/anchors/PALANG-0.0-PIRHA-HISTORICAL-AUDIT-CONTINUATION-2026-10-22-001.md).
+- لنگر ادامهٔ جاری PIRHA: [PALANG-0.0-PIRHA-HISTORICAL-AUDIT-CONTINUATION-2026-10-22-001](../../docs/0.0/anchors/PALANG-0.0-PIRHA-HISTORICAL-AUDIT-CONTINUATION-2026-10-22-001.md).
 
 
 ## الحاقیهٔ نسخهٔ 1.3.0 — مبنای هر ورودی/خروجی و رشد آینده‌نگر
 
 - Stable ID: `PALANG-INPUT-OUTPUT-BASELINE-ARCHITECTURE-EVOLUTION-2026-10-22-001`
-- Governing master: [PIRHA — حاکمیت ثبت تعاملی و ممیزی تاریخی](../../reference/REFERENCE-DOCUMENTS/PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001.md).
-- Interaction: `INT-20261022-010` — [ورودی](../../0.0/anchors/PALANG-0.0-IN-20261022-010-BASELINE-REGISTRATION-AND-ARCHITECTURE-EVOLUTION.md) / [خروجی](../../0.0/anchors/PALANG-0.0-OUT-20261022-010-BASELINE-REGISTRATION-AND-ARCHITECTURE-EVOLUTION.md).
-- Event: [EVT-0096](../BEHAVIOR-TRACE/EVT-0096-BASELINE-REGISTRATION-AND-ARCHITECTURE-EVOLUTION-2026-10-22.md).
+- Governing master: [PIRHA — حاکمیت ثبت تعاملی و ممیزی تاریخی](../../docs/reference/REFERENCE-DOCUMENTS/PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001.md).
+- Interaction: `INT-20261022-010` — [ورودی](../../docs/0.0/anchors/PALANG-0.0-IN-20261022-010-BASELINE-REGISTRATION-AND-ARCHITECTURE-EVOLUTION.md) / [خروجی](../../docs/0.0/anchors/PALANG-0.0-OUT-20261022-010-BASELINE-REGISTRATION-AND-ARCHITECTURE-EVOLUTION.md).
+- Event: [EVT-0096](../../docs/architecture/BEHAVIOR-TRACE/EVT-0096-BASELINE-REGISTRATION-AND-ARCHITECTURE-EVOLUTION-2026-10-22.md).
 
 ### قاعدهٔ معماری
 هر چرخه از بازیابی هدف و زمینه آغاز می‌شود. ورودی و خروجی مستقل ثبت می‌شوند؛ بعد سند مادر و رویداد ساخته/به‌روزرسانی می‌شوند؛ سپس مدل به ساختمان HAIF، نمایه، نقاط ۰/۰.۰، گراف پیوستگی و صف یکپارچه‌سازی وصل می‌شود؛ پابند زمانی از commit واقعی UTC گرفته و زمان تهران از همان لحظه مشتق می‌شود؛ در پایان بازخوانی، تطبیق و تأیید اجرا می‌شود. هر مرحلهٔ بدون شاهد OPEN می‌ماند.
@@ -878,12 +878,12 @@ UTC مرجع canonical زمان برای رویدادها، نقاط ۰.۰، و�
 ### وضعیت پذیرش
 نسخهٔ معماری مستند به 1.3.0 ارتقا یافت؛ این به‌تنهایی اثبات موفقیت ممیزی کامل، آزمون Dropbox، Buffer، حافظهٔ پایدار یا خودکارسازی پس‌زمینه نیست. این موارد OPEN / NOT VERIFIED می‌مانند تا شاهد مستقل فراهم شود.
 
-- Time binding / پابند زمانی نسخهٔ 1.3.0: [TIME-BINDING-INT-20261022-010](../BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-010.md).
+- Time binding / پابند زمانی نسخهٔ 1.3.0: [TIME-BINDING-INT-20261022-010](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-010.md).
 
 
 ## الحاقیهٔ نسخهٔ 1.3.1 — دروازهٔ پذیرش چرخه و تحلیل شکاف
 
-- سند حاکم ثبت: [PIRHA v1.2.0](../../reference/REFERENCE-DOCUMENTS/PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001.md).
+- سند حاکم ثبت: [PIRHA v1.2.0](../../docs/reference/REFERENCE-DOCUMENTS/PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001.md).
 - شکاف معماری: `GAP-PIRHA-ACCEPTANCE-GATE-001` — اسناد چندمرحله‌ای ممکن است ایجاد شوند، اما پیوندهای زوج، نمایه یا پابند زمانی از آن‌ها عقب بمانند.
 - راهکار: برای هر چرخه یک manifest پذیرش بساز؛ هر artifact باید مسیر، شناسه، نسخه، commit، زمان UTC/تهران، پیوندهای لازم و وضعیت بازخوانی/تطبیق داشته باشد.
 - وضعیت‌ها: `CREATED` (ایجادشده) → `READ-BACK` (بازخوانی‌شده) → `LINK-VERIFIED` (پیوند تأییدشده) → `ARCHITECTURE-INTEGRATED` (ادغام‌شده در معماری) → `HISTORICAL-SEMANTIC-AUDIT` (ممیزی معنایی تاریخچه).
@@ -893,9 +893,9 @@ UTC مرجع canonical زمان برای رویدادها، نقاط ۰.۰، و�
 
 ## الحاقیهٔ نسخهٔ 1.3.2 — نتایج ممیزی تاریخی و حلقهٔ اصلاح
 
-- سند حاکم PIRHA: [نسخهٔ 1.3.0](../../reference/REFERENCE-DOCUMENTS/PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001.md).
-- گزارش ممیزی: [نتایج ممیزی تاریخی مخزن](../../reference/REFERENCE-DOCUMENTS/PALANG-REPOSITORY-HISTORICAL-AUDIT-RESULTS-2026-10-22-001.md).
-- رویداد: [EVT-0097](../BEHAVIOR-TRACE/EVT-0097-REPOSITORY-HISTORICAL-AUDIT-RESULTS-2026-10-22.md).
+- سند حاکم PIRHA: [نسخهٔ 1.3.0](../../docs/reference/REFERENCE-DOCUMENTS/PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001.md).
+- گزارش ممیزی: [نتایج ممیزی تاریخی مخزن](../../docs/reference/REFERENCE-DOCUMENTS/PALANG-REPOSITORY-HISTORICAL-AUDIT-RESULTS-2026-10-22-001.md).
+- رویداد: [EVT-0097](../../docs/architecture/BEHAVIOR-TRACE/EVT-0097-REPOSITORY-HISTORICAL-AUDIT-RESULTS-2026-10-22.md).
 - ممیزی اولیهٔ snapshot `daff68c9cf0778ce6ad0328e7e734699d175d119`، 10 پیوند محلی شکسته و گروه‌های برخورد شناسه/رویداد را نشان داد. پیوندهای مشخص اصلاح شدند؛ ممیزی تازه روی commit جدید تعیین می‌کند آیا اصلاح ساختاری پذیرفته می‌شود.
 - معماری رشد‌یافته: هر دور ممیزی باید خروجی‌ها را به‌عنوان ورودی یک چرخهٔ اصلاح کنترل‌شده بگیرد: `AUDIT → TRIAGE → REPAIR → READ-BACK → RERUN → COMPARE → SEMANTIC-RECONCILIATION`.
 - هیچ سند تاریخی به دلیل تشابه یا برخورد شناسه حذف نمی‌شود. هر گروه برخورد به تعریف اصلی، ارجاع، آینه، نسخهٔ منسوخ یا تعارض حل‌نشده طبقه‌بندی می‌شود.
@@ -904,9 +904,9 @@ UTC مرجع canonical زمان برای رویدادها، نقاط ۰.۰، و�
 
 ## الحاقیهٔ نسخهٔ 1.3.3 — پذیرش ساختاری و تداوم ممیزی معنایی
 
-- [PIRHA v1.4.0](../../reference/REFERENCE-DOCUMENTS/PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001.md).
-- [گزارش ممیزی PRHAR v1.1.0](../../reference/REFERENCE-DOCUMENTS/PALANG-REPOSITORY-HISTORICAL-AUDIT-RESULTS-2026-10-22-001.md).
-- [رویداد EVT-0097](../BEHAVIOR-TRACE/EVT-0097-REPOSITORY-HISTORICAL-AUDIT-RESULTS-2026-10-22.md).
+- [PIRHA v1.4.0](../../docs/reference/REFERENCE-DOCUMENTS/PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001.md).
+- [گزارش ممیزی PRHAR v1.1.0](../../docs/reference/REFERENCE-DOCUMENTS/PALANG-REPOSITORY-HISTORICAL-AUDIT-RESULTS-2026-10-22-001.md).
+- [رویداد EVT-0097](../../docs/architecture/BEHAVIOR-TRACE/EVT-0097-REPOSITORY-HISTORICAL-AUDIT-RESULTS-2026-10-22.md).
 - ممیزی تازهٔ snapshot `0f29c9aba688ca1c72197bd3d2bad151ccbce139`، صفر پیوند محلی شکسته و صفر خطای رمزگشایی گزارش کرد.
 - 57/68/7/24 گروه برخورد شناسه و 11 گروه محتوای تکراری هنوز نیازمند طبقه‌بندی معنایی‌اند؛ یک ابهام زمانی در EVT-0089 خط 21 نیز باز است.
 - اصل معماری: `STRUCTURAL-PASS ≠ SEMANTIC-CLOSURE`؛ گذر ساختاری معادل پایان ممیزی تاریخی نیست.
@@ -914,16 +914,16 @@ UTC مرجع canonical زمان برای رویدادها، نقاط ۰.۰، و�
 
 ## الحاقیهٔ نسخهٔ 1.3.4 — سند مادر قابل‌انتقال و تأیید انحصاری مالک
 
-- قرارداد خودبسندهٔ حاکم: [SCEMRS v1.0.0](../../reference/REFERENCE-DOCUMENTS/PALANG-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE-STANDARD-2026-10-22-001.md).
-- رویداد: [EVT-0098](../BEHAVIOR-TRACE/EVT-0098-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE-AND-OWNER-APPROVAL-2026-10-22.md).
-- ورودی: [IN-011](../../0.0/anchors/PALANG-0.0-IN-20261022-011-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE.md)؛ خروجی: [OUT-011](../../0.0/anchors/PALANG-0.0-OUT-20261022-011-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE.md).
+- قرارداد خودبسندهٔ حاکم: [SCEMRS v1.0.0](../../docs/reference/REFERENCE-DOCUMENTS/PALANG-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE-STANDARD-2026-10-22-001.md).
+- رویداد: [EVT-0098](../../docs/architecture/BEHAVIOR-TRACE/EVT-0098-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE-AND-OWNER-APPROVAL-2026-10-22.md).
+- ورودی: [IN-011](../../docs/0.0/anchors/PALANG-0.0-IN-20261022-011-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE.md)؛ خروجی: [OUT-011](../../docs/0.0/anchors/PALANG-0.0-OUT-20261022-011-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE.md).
 - از این نسخه، هر سند مادر باید به‌تنهایی قابل انتقال به یک محیط AI یا مدل اپ باشد و هدف، معماری، قواعد، گردش‌کار، وضعیت‌ها، شواهد، آزمون‌ها، شکاف‌ها، بازیابی و معیار پذیرش را درون خودش داشته باشد.
 - فقط احمد پلنگ تغییرات معماری حاکم را تأیید می‌کند. عامل می‌تواند پیشنهاد دهد و آزمون کند؛ تغییر تا تأیید روشن در حالت `PENDING_OWNER_APPROVAL` می‌ماند.
 - چرخهٔ ادغام: `PROPOSE → OWNER APPROVAL → INTEGRATE → VERSION → READ-BACK → MATCH → VERIFY`. ثبت سند به‌تنهایی به معنی ادغام معماری نیست.
 - این نسخه یک قرارداد و مدل اجرایی متنی است؛ به‌خودی‌خود سرویس پس‌زمینه، اتصال Dropbox یا اجرای خودکار در محیط دیگر ایجاد نمی‌کند.
 
 
-- پابند زمانی تعامل سند مادر خودبسنده: [TIME-BINDING-INT-20261022-011](../BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-011.md).
+- پابند زمانی تعامل سند مادر خودبسنده: [TIME-BINDING-INT-20261022-011](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-011.md).
 
 
 
@@ -973,8 +973,8 @@ Stable ID، Production ID، Version، مالک، پروژه، منشأ/زنجی�
 
 
 ## ممیزی برخورد شناسه‌ها و تبار — 2026-10-22
-- سند مرجع مادر زنده: [PICTR-2026-10-22-001](../../reference/REFERENCE-DOCUMENTS/PALANG-IDENTITY-COLLISION-AND-TIMESTAMP-RECONCILIATION-MASTER-REFERENCE-2026-10-22-001.md), نسخهٔ 1.0.1.
-- رویداد پیگیری: [EVT-0100](../BEHAVIOR-TRACE/EVT-0100-IDENTITY-COLLISION-AND-EVT-0089-TIMESTAMP-RECONCILIATION-2026-10-22.md).
+- سند مرجع مادر زنده: [PICTR-2026-10-22-001](../../docs/reference/REFERENCE-DOCUMENTS/PALANG-IDENTITY-COLLISION-AND-TIMESTAMP-RECONCILIATION-MASTER-REFERENCE-2026-10-22-001.md), نسخهٔ 1.0.1.
+- رویداد پیگیری: [EVT-0100](../../docs/architecture/BEHAVIOR-TRACE/EVT-0100-IDENTITY-COLLISION-AND-EVT-0089-TIMESTAMP-RECONCILIATION-2026-10-22.md).
 - Snapshot ممیزی اولیه: `62827ec2d7e32a2aaeee34ab9046825867f042c2`; 57 گروه Stable ID، 68 گروه Production ID، 7 گروه Reference ID، 24 گروه شمارهٔ رویداد و 11 گروه محتوای دقیق تکراری.
 - این شمارش‌ها گروه‌های نیازمند داوری‌اند، نه خطاهای قطعی. هر تصمیم باید نقش سند، نسخه، تبار، پیوندهای ورودی/خروجی و تاریخچه را حفظ کند. حذف یا ادغام خودکار ممنوع است.
 - ابهام زمانی EVT-0089 در ممیزی نخست باز ماند؛ اصلاح فایل اصلی هنوز تأیید نشده و نتیجهٔ ممیزی تازه لازم است.
@@ -985,7 +985,7 @@ Stable ID، Production ID، Version، مالک، پروژه، منشأ/زنجی�
 
 ## قاعدهٔ حاکم جدید — جداسازی سند مادر کل پروژه از Master–Child–Rahm
 
-- **مرجع حاکم بازسازی کل پروژه:** [UPRM — سند مرجع مادر بازسازی کل پروژه](../../reference/REFERENCE-DOCUMENTS/PALANG-UNIVERSAL-PROJECT-RECONSTRUCTION-MASTER-2026-10-22-001.md)، شناسهٔ پایدار `PALANG-UNIVERSAL-PROJECT-RECONSTRUCTION-MASTER-2026-10-22-001`، نسخهٔ جاری 1.0.1.
+- **مرجع حاکم بازسازی کل پروژه:** [UPRM — سند مرجع مادر بازسازی کل پروژه](../../docs/reference/REFERENCE-DOCUMENTS/PALANG-UNIVERSAL-PROJECT-RECONSTRUCTION-MASTER-2026-10-22-001.md)، شناسهٔ پایدار `PALANG-UNIVERSAL-PROJECT-RECONSTRUCTION-MASTER-2026-10-22-001`، نسخهٔ جاری 1.0.1.
 - این «سند مادر» مرجع فرادستِ مستندسازی و بازسازی است: هدف، مسیر تاریخی، قواعد، شواهد، تعامل/رفتارشناسی، تصمیم‌ها، لنگرها، پیوندهای زمانی، خطاها، شکاف‌ها و دستور ادامه را یکپارچه می‌کند.
 - واژهٔ **Master** در معماری HAIF فقط نقش هستهٔ حاکم در چرخهٔ مفهومی `MASTER → CHILD → REAL WORLD → FEEDBACK → MASTER` و مسیر اعتبارسنجی `MASTER → RAHM → VALIDATION → NEW CHILD` را نشان می‌دهد. این نقش با «سند مادر کل پروژه» یکی نیست.
 - **قاعدهٔ عدم اختلاط:** سند مادر کل پروژه ≠ گرهٔ Master مفهومی؛ برخورد شناسه‌ها ≠ خطای معماری؛ یال والد مبهم در گراف فایل‌ها ≠ رابطهٔ Master–Child. این سه موضوع باید جداگانه مدل و سپس با پیوندهای مستند به هم متصل شوند.
@@ -996,23 +996,23 @@ Stable ID، Production ID، Version، مالک، پروژه، منشأ/زنجی�
 
 
 ## Addendum — Current point 0 / next 0.0 (2026-10-23)
-The current interaction is registered as the active return point 0: [CURRENT-023](../../0.0/anchors/PALANG-0.0-CURRENT-20261023-023-USER-CHECKPOINT-AND-CONTINUATION.md). Its paired anchors are [IN-023](../../0.0/anchors/PALANG-0.0-IN-20261023-023-REGISTER-CURRENT-POINT-0.md) and [OUT-023](../../0.0/anchors/PALANG-0.0-OUT-20261023-023-REGISTER-CURRENT-POINT-0.md); event/lesson are [EVT-0112](../../architecture/BEHAVIOR-TRACE/EVT-0112-CURRENT-POINT-0-AND-NEXT-0.0-2026-10-23.md) / [LAL-20261023-010](../../architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-010-CURRENT-POINT-AND-NEXT-CHECKPOINT.md). The next 0.0 is [NEXT-024](../../0.0/anchors/PALANG-0.0-NEXT-20261023-024-CONTINUITY-HISTORIC-AND-COLD-START.md).
+The current interaction is registered as the active return point 0: [CURRENT-023](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261023-023-USER-CHECKPOINT-AND-CONTINUATION.md). Its paired anchors are [IN-023](../../docs/0.0/anchors/PALANG-0.0-IN-20261023-023-REGISTER-CURRENT-POINT-0.md) and [OUT-023](../../docs/0.0/anchors/PALANG-0.0-OUT-20261023-023-REGISTER-CURRENT-POINT-0.md); event/lesson are [EVT-0112](../../docs/architecture/BEHAVIOR-TRACE/EVT-0112-CURRENT-POINT-0-AND-NEXT-0.0-2026-10-23.md) / [LAL-20261023-010](../../docs/architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-010-CURRENT-POINT-AND-NEXT-CHECKPOINT.md). The next 0.0 is [NEXT-024](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261023-024-CONTINUITY-HISTORIC-AND-COLD-START.md).
 This checkpoint preserves the original-model continuation path. It does not redirect work to Dropbox and does not close the historical source census, runtime/cold-start recovery or exact-final-HEAD audit.
 
 
 ## Status visibility and resumable execution — IN-025 / OUT-025
-This follow-up is recorded in [IN-025](../../0.0/anchors/PALANG-0.0-IN-20261023-025-STATUS-AND-VISIBLE-CONTINUATION.md) / [OUT-025](../../0.0/anchors/PALANG-0.0-OUT-20261023-025-STATUS-AND-VISIBLE-CONTINUATION.md), [EVT-0114](../../architecture/BEHAVIOR-TRACE/EVT-0114-STATUS-TRANSPARENCY-AND-RESUMABLE-EXECUTION-2026-10-23.md), and [LAL-20261023-012](../../architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-012-STATUS-TRANSPARENCY-AND-RESUMABLE-EXECUTION.md). CURRENT-023 remains the current point 0, and NEXT-025 remains the next 0.0. Preserve all previous source-census and runtime-recovery work; do not redirect to unrelated tracks.
+This follow-up is recorded in [IN-025](../../docs/0.0/anchors/PALANG-0.0-IN-20261023-025-STATUS-AND-VISIBLE-CONTINUATION.md) / [OUT-025](../../docs/0.0/anchors/PALANG-0.0-OUT-20261023-025-STATUS-AND-VISIBLE-CONTINUATION.md), [EVT-0114](../../docs/architecture/BEHAVIOR-TRACE/EVT-0114-STATUS-TRANSPARENCY-AND-RESUMABLE-EXECUTION-2026-10-23.md), and [LAL-20261023-012](../../docs/architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-012-STATUS-TRANSPARENCY-AND-RESUMABLE-EXECUTION.md). CURRENT-023 remains the current point 0, and NEXT-025 remains the next 0.0. Preserve all previous source-census and runtime-recovery work; do not redirect to unrelated tracks.
 
 
 ## Current point 0 / next 0.0 — CURRENT-036 / NEXT-036
-This point preserves the initial-model continuation without resetting earlier architecture. [CURRENT-036](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-036-USER-REQUEST-AND-LIVING-REGISTRATION.md) is the active return node, linked to [IN-026](../../0.0/anchors/PALANG-0.0-IN-20261024-026-REGISTER-CURRENT-POINT-0.md), [OUT-026](../../0.0/anchors/PALANG-0.0-OUT-20261024-026-REGISTER-CURRENT-POINT-0.md), [EVT-0134](../../architecture/BEHAVIOR-TRACE/EVT-0134-CURRENT-POINT-ZERO-AND-LIVING-REGISTRATION-2026-10-24.md), and [LAL-20261024-013](../../architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261024-013-CURRENT-POINT-ZERO-AND-LIVING-REGISTRATION.md). The next work checkpoint is [NEXT-036](../../0.0/anchors/PALANG-0.0-NEXT-20261024-036-HISTORIC-SOURCE-CENSUS-AND-COLD-START.md). Continue historic source/rule census, runtime and cold-start recovery, and BOART follow-up in parallel as linked workstreams; do not redirect to Dropbox or close any gate without evidence.
+This point preserves the initial-model continuation without resetting earlier architecture. [CURRENT-036](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261024-036-USER-REQUEST-AND-LIVING-REGISTRATION.md) is the active return node, linked to [IN-026](../../docs/0.0/anchors/PALANG-0.0-IN-20261024-026-REGISTER-CURRENT-POINT-0.md), [OUT-026](../../docs/0.0/anchors/PALANG-0.0-OUT-20261024-026-REGISTER-CURRENT-POINT-0.md), [EVT-0134](../../docs/architecture/BEHAVIOR-TRACE/EVT-0134-CURRENT-POINT-ZERO-AND-LIVING-REGISTRATION-2026-10-24.md), and [LAL-20261024-013](../../docs/architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261024-013-CURRENT-POINT-ZERO-AND-LIVING-REGISTRATION.md). The next work checkpoint is [NEXT-036](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-036-HISTORIC-SOURCE-CENSUS-AND-COLD-START.md). Continue historic source/rule census, runtime and cold-start recovery, and BOART follow-up in parallel as linked workstreams; do not redirect to Dropbox or close any gate without evidence.
 
 ## GPT-6 interactive host branch — initial point 0
 - The new GPT-6 interactive project branch is governed by the HAIF architecture and does not replace this model or its historical anchors.
-- Branch point 0: [GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001](../../0.0/anchors/GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001.md); root anchor CURRENT-039.
-- Branch living master: [GPT-6 interactive project living master](../../reference/REFERENCE-DOCUMENTS/GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001.md), version 1.3.0 at the time this cross-link was added.
-- Latest point-0 interaction: [IN-030](../../0.0/anchors/PALANG-0.0-IN-20261024-030-PROMOTE-CURRENT-039-TO-INITIAL-POINT-0.md) ↔ [OUT-030](../../0.0/anchors/PALANG-0.0-OUT-20261024-030-PROMOTE-CURRENT-039-TO-INITIAL-POINT-0.md); behavioral event [EVT-0138](../BEHAVIOR-TRACE/EVT-0138-GPT6-POINT-0-PROMOTION-AND-HAIF-INTEGRATION-2026-10-24.md).
-- Next branch checkpoint: [NEXT-038 — point 0.0](../../0.0/anchors/PALANG-0.0-NEXT-20261024-038-DEFINE-POINT-0-THEN-0.0.md).
+- Branch point 0: [GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001](../../docs/0.0/anchors/GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001.md); root anchor CURRENT-039.
+- Branch living master: [GPT-6 interactive project living master](../../docs/reference/REFERENCE-DOCUMENTS/GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001.md), version 1.3.0 at the time this cross-link was added.
+- Latest point-0 interaction: [IN-030](../../docs/0.0/anchors/PALANG-0.0-IN-20261024-030-PROMOTE-CURRENT-039-TO-INITIAL-POINT-0.md) ↔ [OUT-030](../../docs/0.0/anchors/PALANG-0.0-OUT-20261024-030-PROMOTE-CURRENT-039-TO-INITIAL-POINT-0.md); behavioral event [EVT-0138](../../docs/architecture/BEHAVIOR-TRACE/EVT-0138-GPT6-POINT-0-PROMOTION-AND-HAIF-INTEGRATION-2026-10-24.md).
+- Next branch checkpoint: [NEXT-038 — point 0.0](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-038-DEFINE-POINT-0-THEN-0.0.md).
 - This is a bidirectional architecture link only; it does not claim the prototype is built, point 0.0 exists, cold-start recovery has run, or external destinations are verified.
 
 
@@ -1021,11 +1021,11 @@ This point preserves the initial-model continuation without resetting earlier ar
 ## افزودهٔ زنده — پروژهٔ رحم در GPT-6، نقطهٔ ۰ و ۰.۰ مستقل — 2026-10-24
 
 - نسخهٔ افزایشی: **1.3.9**؛ نسخه‌های پیشین حفظ شده‌اند.
-- نقطهٔ ۰ این شاخه: [GPT6-RAHM-PROJECT-POINT-0-2026-10-24-001](../../0.0/anchors/GPT6-RAHM-PROJECT-POINT-0-2026-10-24-001.md).
-- نقطهٔ ۰.۰ جاری این شاخه: [G6IP-RAHM-CURRENT-044](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-044-RAHM-PROJECT-POINT-0.0.md).
-- زنجیرهٔ تعامل: [IN-036](../../0.0/anchors/PALANG-0.0-IN-20261024-036-RAHM-PROJECT-POINT-0.md) → [OUT-036](../../0.0/anchors/PALANG-0.0-OUT-20261024-036-RAHM-PROJECT-POINT-0.md) → [EVT-0144](../BEHAVIOR-TRACE/EVT-0144-GPT6-RAHM-PROJECT-POINT-0-2026-10-24.md) → CURRENT-044 → [NEXT-042](../../0.0/anchors/PALANG-0.0-NEXT-20261024-042-RAHM-CONFORMANCE-EXPORT-CROSS-HOST-TEST.md).
-- سند مادر حاکمِ انتقال به GPT-6: [G6IP-IAM-20261024-001 v1.0.6](../../reference/REFERENCE-DOCUMENTS/GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md).
-- سند مادر زندهٔ شاخهٔ GPT-6: [G6IP-LMR-20261024-001 v1.3.8](../../reference/REFERENCE-DOCUMENTS/GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001.md).
+- نقطهٔ ۰ این شاخه: [GPT6-RAHM-PROJECT-POINT-0-2026-10-24-001](../../docs/0.0/anchors/GPT6-RAHM-PROJECT-POINT-0-2026-10-24-001.md).
+- نقطهٔ ۰.۰ جاری این شاخه: [G6IP-RAHM-CURRENT-044](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261024-044-RAHM-PROJECT-POINT-0.0.md).
+- زنجیرهٔ تعامل: [IN-036](../../docs/0.0/anchors/PALANG-0.0-IN-20261024-036-RAHM-PROJECT-POINT-0.md) → [OUT-036](../../docs/0.0/anchors/PALANG-0.0-OUT-20261024-036-RAHM-PROJECT-POINT-0.md) → [EVT-0144](../../docs/architecture/BEHAVIOR-TRACE/EVT-0144-GPT6-RAHM-PROJECT-POINT-0-2026-10-24.md) → CURRENT-044 → [NEXT-042](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-042-RAHM-CONFORMANCE-EXPORT-CROSS-HOST-TEST.md).
+- سند مادر حاکمِ انتقال به GPT-6: [G6IP-IAM-20261024-001 v1.0.6](../../docs/reference/REFERENCE-DOCUMENTS/GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md).
+- سند مادر زندهٔ شاخهٔ GPT-6: [G6IP-LMR-20261024-001 v1.3.8](../../docs/reference/REFERENCE-DOCUMENTS/GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001.md).
 
 ### قرارداد رحم
 رحم محیط کنترل‌شدهٔ رشد و آزمون است، نه صرفاً نامی برای یک پوشه یا ادعای وجود عامل خودکار. هر تعامل باید در حد قابلیت واقعی میزبان به جفت IN/OUT، مشاهدهٔ رفتار، فرضیهٔ جدا از واقعیت مشاهده‌شده، شواهد، خطا/اصلاح، بازخورد، نسخه و گام بعدی متصل شود. قابلیت ثبت خودکار دائمی تنها پس از ساخت و آزمون یک سازوکار اجرایی واقعی قابل اعلام است.
@@ -1037,7 +1037,7 @@ This point preserves the initial-model continuation without resetting earlier ar
 - هیچ Child بدون شواهد، بررسی رگرسیون، تطبیق و بازخوانی به Master ارتقا نمی‌یابد.
 - هر میزبان AI باید manifest قابلیت‌ها و محدودیت‌های خودش را اعلام کند؛ حافظهٔ پایدار، اجرای پس‌زمینه یا ابزار خارجی فرض نمی‌شود.
 - بستهٔ قابل‌استخراج باید سند راه‌اندازی، معماری، طرح‌وارهٔ تعامل، دفتر شواهد، آزمون‌های مثبت و منفی، manifest اثرانگشت و روش بازیابی/بازگشت را شامل شود.
-- آزمون پذیرش میان‌میزبان: [NEXT-042](../../0.0/anchors/PALANG-0.0-NEXT-20261024-042-RAHM-CONFORMANCE-EXPORT-CROSS-HOST-TEST.md) — OPEN / NOT RUN.
+- آزمون پذیرش میان‌میزبان: [NEXT-042](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-042-RAHM-CONFORMANCE-EXPORT-CROSS-HOST-TEST.md) — OPEN / NOT RUN.
 
 ### وضعیت شواهد
 ثبت در مخزن و بازخوانی مستقل فایل‌ها باید جداگانه تأیید شود. بستهٔ اجرایی رحم، ثبت خودکار دائمی رفتار، بازیابی در زمینهٔ تازه و آزمون در میزبان دوم هنوز PASS اعلام نشده‌اند.
@@ -1045,7 +1045,7 @@ This point preserves the initial-model continuation without resetting earlier ar
 
 ## افزودهٔ زنده — اثبات حافظهٔ پایدار و اجرای پس‌زمینهٔ میزبان — 2026-10-24
 
-- زنجیرهٔ تازه: [IN-037](../../0.0/anchors/PALANG-0.0-IN-20261024-037-PORTABLE-RAHM-AND-HOST-PERSISTENCE.md) → [OUT-037](../../0.0/anchors/PALANG-0.0-OUT-20261024-037-PORTABLE-RAHM-AND-HOST-PERSISTENCE.md) → [EVT-0145](../BEHAVIOR-TRACE/EVT-0145-PORTABLE-RAHM-HOST-CAPABILITY-ARCHITECTURE-2026-10-24.md) → [CURRENT-045](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-045-RAHM-PORTABLE-HOST-PERSISTENCE.md).
+- زنجیرهٔ تازه: [IN-037](../../docs/0.0/anchors/PALANG-0.0-IN-20261024-037-PORTABLE-RAHM-AND-HOST-PERSISTENCE.md) → [OUT-037](../../docs/0.0/anchors/PALANG-0.0-OUT-20261024-037-PORTABLE-RAHM-AND-HOST-PERSISTENCE.md) → [EVT-0145](../../docs/architecture/BEHAVIOR-TRACE/EVT-0145-PORTABLE-RAHM-HOST-CAPABILITY-ARCHITECTURE-2026-10-24.md) → [CURRENT-045](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261024-045-RAHM-PORTABLE-HOST-PERSISTENCE.md).
 - معماری بستهٔ انتقال رحم در `docs/portable/RAHM/` ایجاد شده است: راه‌اندازی، معماری، manifest قابلیت میزبان، طرح‌وارهٔ تعامل، دفتر شواهد، آزمون‌ها، manifest انتقال و بازیابی/بازگشت.
 - تفکیک اجباری: مخزن/ذخیره‌سازی فایل ≠ حافظهٔ مکالمه‌ای میزبان ≠ اجرای خودکار در پس‌زمینه. هیچ‌کدام از دیگری نتیجه نمی‌شود.
 - اثبات حافظه: نوشتن نشانگر یکتا → عبور از مرز نشست/راه‌اندازی مجدد → بازیابی با کلید → تطبیق مستقل. اثبات پس‌زمینه: زمان‌بندی مجاز → اجرا در زمان بی‌تعامل بودن کاربر → گزارش زمان‌دار و خروجی پایدار → بازخوانی مستقل → کنترل توقف/لغو.
@@ -1054,8 +1054,8 @@ This point preserves the initial-model continuation without resetting earlier ar
 
 ## افزودهٔ زنده — معماری جایگزین قابلیت غایب میزبان — 2026-10-24
 
-- نقطهٔ جاری شاخه: [CURRENT-046](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-046-CAPABILITY-FALLBACK.md). زنجیره: [IN-038](../../0.0/anchors/PALANG-0.0-IN-20261024-038-CAPABILITY-FALLBACK-AND-AUDIT.md) → [OUT-038](../../0.0/anchors/PALANG-0.0-OUT-20261024-038-CAPABILITY-FALLBACK-AND-AUDIT.md) → [EVT-0146](../BEHAVIOR-TRACE/EVT-0146-HOST-CAPABILITY-FALLBACK-AND-ARCHITECTURE-AUDIT-2026-10-24.md).
-- پوشهٔ مقید به معماری: [HOST-CAPABILITY-FALLBACK](../HOST-CAPABILITY-FALLBACK/README.md)، شامل قرارداد عامل خارجی، مبدل ذخیره‌سازی، مبدل زمان‌بندی و آزمون انطباق.
+- نقطهٔ جاری شاخه: [CURRENT-046](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261024-046-CAPABILITY-FALLBACK.md). زنجیره: [IN-038](../../docs/0.0/anchors/PALANG-0.0-IN-20261024-038-CAPABILITY-FALLBACK-AND-AUDIT.md) → [OUT-038](../../docs/0.0/anchors/PALANG-0.0-OUT-20261024-038-CAPABILITY-FALLBACK-AND-AUDIT.md) → [EVT-0146](../../docs/architecture/BEHAVIOR-TRACE/EVT-0146-HOST-CAPABILITY-FALLBACK-AND-ARCHITECTURE-AUDIT-2026-10-24.md).
+- پوشهٔ مقید به معماری: [HOST-CAPABILITY-FALLBACK](../../docs/architecture/HOST-CAPABILITY-FALLBACK/README.md)، شامل قرارداد عامل خارجی، مبدل ذخیره‌سازی، مبدل زمان‌بندی و آزمون انطباق.
 - این معماری قابلیت غایب را به‌صورت جادویی در سرویس ارائه‌دهنده فعال نمی‌کند؛ در صورت نبود قابلیت داخلی، تنها مسیر مجاز یک مبدل/عامل خارجیِ دارای مجوز، استقرار واقعی و آزمون قابل بازخوانی است. اگر چنین runtimeای وجود ندارد، وضعیت باید UNSUPPORTED / NOT VERIFIED بماند.
 - فهرست مرجع پس از خطای قبلی 404 دوباره قابل دریافت شده است؛ تطبیق پس از به‌روزرسانی انجام شد؛ شناسه‌های یکتا و پیوندهای اصلی در بازخوانی مجدد حاضر بودند. حافظهٔ میزبان، اجرای پس‌زمینه، انتقال به میزبان دوم و صحت SHA-256 همچنان بازند.
 
@@ -1068,7 +1068,7 @@ This point preserves the initial-model continuation without resetting earlier ar
 
 
 ## قاعدهٔ زندهٔ چشم پلنگ / Behavior Hunter — CURRENT-047
-- زنجیرهٔ جدید: [CURRENT-046](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-046-CAPABILITY-FALLBACK.md) → [IN-039](../../0.0/anchors/PALANG-0.0-IN-20261024-039-BEHAVIOR-HUNTER-LIVING-RULE.md) → [OUT-039](../../0.0/anchors/PALANG-0.0-OUT-20261024-039-BEHAVIOR-HUNTER-LIVING-RULE.md) → [EVT-0147](../BEHAVIOR-TRACE/EVT-0147-BEHAVIOR-HUNTER-LIVING-RULE-AND-CHECKPOINT-2026-10-24.md) → [CURRENT-047](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-047-BEHAVIOR-HUNTER-LIVING-ANCHOR.md) → [NEXT-045](../../0.0/anchors/PALANG-0.0-NEXT-20261024-045-BEHAVIOR-HUNTER-TEST-AND-OPEN-GATES.md).
+- زنجیرهٔ جدید: [CURRENT-046](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261024-046-CAPABILITY-FALLBACK.md) → [IN-039](../../docs/0.0/anchors/PALANG-0.0-IN-20261024-039-BEHAVIOR-HUNTER-LIVING-RULE.md) → [OUT-039](../../docs/0.0/anchors/PALANG-0.0-OUT-20261024-039-BEHAVIOR-HUNTER-LIVING-RULE.md) → [EVT-0147](../../docs/architecture/BEHAVIOR-TRACE/EVT-0147-BEHAVIOR-HUNTER-LIVING-RULE-AND-CHECKPOINT-2026-10-24.md) → [CURRENT-047](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261024-047-BEHAVIOR-HUNTER-LIVING-ANCHOR.md) → [NEXT-045](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-045-BEHAVIOR-HUNTER-TEST-AND-OPEN-GATES.md).
 - قاعدهٔ حاکم: هر موردی که پیاده‌سازی و بازخوانی آن اثبات شده، وضعیت متناسب می‌گیرد؛ هر موردی که فقط تعریف یا مستند شده، قابلیت فعال محسوب نمی‌شود؛ هر آزمون انجام‌نشده یا ناموفق با شناسه، دلیل و گام بازیابی باز می‌ماند.
 - «چشم پلنگ / شکارچی رفتارشناسی» باید نشانه‌های قابل مشاهدهٔ تعامل، IN/OUT، اصلاح کاربر، انحراف مسیر، شواهد، آزمون و بازیابی را ثبت و به معماری وصل کند. مشاهده از فرضیه، و فرضیه از قانون پذیرفته‌شده جدا می‌ماند.
 - استنباط ترجیح کاربر از تکرار دستورها و اصلاح‌ها مجاز است، اما ادعای دسترسی به فکر پنهان یا پایش خودکار همیشگی مجاز نیست.
@@ -1077,29 +1077,29 @@ This point preserves the initial-model continuation without resetting earlier ar
 
 
 ## CURRENT-048 — اتصال رحم به معماری موروثی و انتقال‌پذیر
-- نقطهٔ جاری: [CURRENT-048](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-048-RAHM-INHERITED-ARCHITECTURE.md).
-- ورودی/خروجی/رویداد: [IN-040](../../0.0/anchors/PALANG-0.0-IN-20261024-040-RAHM-INHERITED-ARCHITECTURE.md) → [OUT-040](../../0.0/anchors/PALANG-0.0-OUT-20261024-040-RAHM-INHERITED-ARCHITECTURE.md) → [EVT-0148](../BEHAVIOR-TRACE/EVT-0148-RAHM-INHERITED-ARCHITECTURE-AND-EXPORTABLE-RECOVERY-2026-10-24.md).
-- معماری موروثی: [سند مادر معماری موروثی GPT-6](../../reference/REFERENCE-DOCUMENTS/GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md).
-- بستهٔ قابل انتقال رحم: [RAHM_BOOT](../../portable/RAHM/RAHM_BOOT.md) و [RAHM_ARCHITECTURE](../../portable/RAHM/RAHM_ARCHITECTURE.md).
-- نقطهٔ بعدی ۰.۰: [NEXT-046](../../0.0/anchors/PALANG-0.0-NEXT-20261024-046-RAHM-PORTABILITY-VALIDATION.md) — باز و در صف اجرا.
+- نقطهٔ جاری: [CURRENT-048](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261024-048-RAHM-INHERITED-ARCHITECTURE.md).
+- ورودی/خروجی/رویداد: [IN-040](../../docs/0.0/anchors/PALANG-0.0-IN-20261024-040-RAHM-INHERITED-ARCHITECTURE.md) → [OUT-040](../../docs/0.0/anchors/PALANG-0.0-OUT-20261024-040-RAHM-INHERITED-ARCHITECTURE.md) → [EVT-0148](../../docs/architecture/BEHAVIOR-TRACE/EVT-0148-RAHM-INHERITED-ARCHITECTURE-AND-EXPORTABLE-RECOVERY-2026-10-24.md).
+- معماری موروثی: [سند مادر معماری موروثی GPT-6](../../docs/reference/REFERENCE-DOCUMENTS/GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md).
+- بستهٔ قابل انتقال رحم: [RAHM_BOOT](../../docs/portable/RAHM/RAHM_BOOT.md) و [RAHM_ARCHITECTURE](../../docs/portable/RAHM/RAHM_ARCHITECTURE.md).
+- نقطهٔ بعدی ۰.۰: [NEXT-046](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-046-RAHM-PORTABILITY-VALIDATION.md) — باز و در صف اجرا.
 - دادهٔ تعامل قابل مشاهده از هر دو سمت (ورودی/خروجی کاربر و AI)، اصلاح‌ها، بازخورد، فرضیه‌های رفتاری، منشأ شواهد، آزمون‌ها و مسیر بازیابی باید در قالبی قابل استخراج نگهداری شود. مشاهده به‌تنهایی قانون تأییدشده نیست.
 - وضعیت: پیوند معماری مستند می‌شود؛ انتقال واقعی به میزبان تمیز/دوم، صحت SHA-256، اعتبارسنجی schema و آزمون‌های حافظه/پس‌زمینه تا ارائهٔ شواهد NOT VERIFIED / NOT RUN می‌مانند.
 
 
 
 ## CURRENT-054 — اولین سند مادر زندهٔ قابل‌انتقال
-- سند مادر قابل‌استخراج GPT-6 / HAIF / RAHM: [FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md](../../portable/RAHM/FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md).
-- نقطه جاری: [CURRENT-054](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-054-FIRST-LIVING-MASTER.md).
-- گام بعدی: [NEXT-048](../../0.0/anchors/PALANG-0.0-NEXT-20261024-048-FIRST-MASTER-CONFORMANCE.md)، با اجرای نخستین دروازهٔ [NEXT-044](../../0.0/anchors/PALANG-0.0-NEXT-20261024-044-EXTRACTABLE-RAHM-CHILD-AND-COLD-START-TEST.md).
+- سند مادر قابل‌استخراج GPT-6 / HAIF / RAHM: [FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md](../../docs/portable/RAHM/FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md).
+- نقطه جاری: [CURRENT-054](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261024-054-FIRST-LIVING-MASTER.md).
+- گام بعدی: [NEXT-048](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-048-FIRST-MASTER-CONFORMANCE.md)، با اجرای نخستین دروازهٔ [NEXT-044](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-044-EXTRACTABLE-RAHM-CHILD-AND-COLD-START-TEST.md).
 - اصل بنیادی: مورد تأییدنشده/ناقص/متعارض/آزمون‌نشده در هر نقطه باز و زنده باقی می‌ماند؛ فقط معیار پذیرش و شواهد بازخوانی‌شده اجازه بستن می‌دهد.
 - وضعیت انتقال واقعی میزبان، بازیابی مستقل IN/OUT، هش دقیق SHA-256، آزمون‌های طرح، حافظهٔ پایدار و اجرای پس‌زمینه همچنان باز یا تأییدنشده‌اند؛ ثبت سند به‌تنهایی اثبات اجرا نیست.
 
 
 ## CURRENT-056 — تداوم خروجی، بازیابی و رحم قابل‌انتقال (2026-10-24)
-- لنگر جاری: [CURRENT-056](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-056-OUTPUT-CONTINUITY-AND-RECOVERY.md).
-- نقطهٔ بازگشت کاربر: [Point 0/005](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-005-OUTPUT-CONTINUITY-AND-RECOVERY.md).
-- زنجیرهٔ تعامل: [IN-049](../../0.0/anchors/PALANG-0.0-IN-20261024-049-OUTPUT-CONTINUITY-AND-RECOVERY.md) → [OUT-048](../../0.0/anchors/PALANG-0.0-OUT-20261024-048-OUTPUT-CONTINUITY-AND-RECOVERY.md) → [EVT-0158](../../architecture/BEHAVIOR-TRACE/EVT-0158-NO-SILENT-GAP-OUTPUT-CONTINUITY-2026-10-24.md).
-- گام ادامهٔ حاکم: [NEXT-050](../../0.0/anchors/PALANG-0.0-NEXT-20261024-050-FULL-RECOVERY-AND-REAL-HOST-IMPORT.md)؛ NEXT-049 و NEXT-044 و تمام شاخه‌های قدیمی حفظ می‌شوند.
+- لنگر جاری: [CURRENT-056](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261024-056-OUTPUT-CONTINUITY-AND-RECOVERY.md).
+- نقطهٔ بازگشت کاربر: [Point 0/005](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-005-OUTPUT-CONTINUITY-AND-RECOVERY.md).
+- زنجیرهٔ تعامل: [IN-049](../../docs/0.0/anchors/PALANG-0.0-IN-20261024-049-OUTPUT-CONTINUITY-AND-RECOVERY.md) → [OUT-048](../../docs/0.0/anchors/PALANG-0.0-OUT-20261024-048-OUTPUT-CONTINUITY-AND-RECOVERY.md) → [EVT-0158](../../docs/architecture/BEHAVIOR-TRACE/EVT-0158-NO-SILENT-GAP-OUTPUT-CONTINUITY-2026-10-24.md).
+- گام ادامهٔ حاکم: [NEXT-050](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-050-FULL-RECOVERY-AND-REAL-HOST-IMPORT.md)؛ NEXT-049 و NEXT-044 و تمام شاخه‌های قدیمی حفظ می‌شوند.
 - قاعدهٔ بدون فاصلهٔ خاموش: ورودی تازه نباید گام باز قبلی را حذف کند؛ در عملیات طولانی باید وضعیت قابل‌مشاهده ارائه شود؛ هر خروجی باید وضعیت پایان/ناتمام/مسدود/ادامه را روشن کند؛ اجرای پس‌زمینه یا حافظهٔ دائمی بدون آزمون واقعی ادعا نمی‌شود.
 - آخرین آزمون سخت‌گیرانهٔ بسته [40122001572](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40122001572): ۳۷/۳۷ هش فایل مطابق؛ طرح تعامل معتبر با صفر خطا پذیرفته و نامعتبر با ۴ خطا رد شد؛ بازیابی IN/OUT فقط در محدودهٔ پیوند/نقطهٔ بررسی پاس شد؛ بستهٔ ۳۸ فایلی ساخته شد.
 - ممیزی کلی [40122001601](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40122001601) هنوز REVIEW_REQUIRED است؛ شکاف‌های گراف، انتقال واقعی میزبان، بازیابی کامل، حافظهٔ پایدار و اجرای پس‌زمینه باز هستند.
@@ -1107,7 +1107,7 @@ This point preserves the initial-model continuation without resetting earlier ar
 
 ## CURRENT-057 — خاک‌برداری زنده و تداوم بدون شکاف
 
-- نقطهٔ جاری: [CURRENT-057](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-057-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md)؛ شاخهٔ ورودی/خروجی: [IN-050](../../0.0/anchors/PALANG-0.0-IN-20261024-050-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md) → [OUT-049](../../0.0/anchors/PALANG-0.0-OUT-20261024-049-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md) → [EVT-0159](../BEHAVIOR-TRACE/EVT-0159-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY-2026-10-24.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- نقطهٔ جاری: [CURRENT-057](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261024-057-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md)؛ شاخهٔ ورودی/خروجی: [IN-050](../../docs/0.0/anchors/PALANG-0.0-IN-20261024-050-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md) → [OUT-049](../../docs/0.0/anchors/PALANG-0.0-OUT-20261024-049-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md) → [EVT-0159](../../docs/architecture/BEHAVIOR-TRACE/EVT-0159-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY-2026-10-24.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - اصل زنده: هیچ فاصله‌ای بین ورودی و خروجی نباید باعث گم‌شدن کار باز شود. هر ورودی تازه پس از بازخوانی مخزن به CURRENT و NEXT باز متصل می‌شود؛ شاخه‌های قبلی حفظ می‌شوند؛ اگر کار ناتمام است، وضعیت PARTIAL/BLOCKED و گام بعدی باید به کاربر نشان داده شود.
 - ممیزی ساختاری آخرین بررسی‌شده [40122633902](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40122633902) هنوز REVIEW_REQUIRED است: ۱۱ پیوند مفقود، ۶۰ گروه برخورد شناسهٔ پایدارِ بررسی‌نشده، ۸۸ گروه برخورد شناسهٔ تولید، ۷ گروه برخورد شناسهٔ مرجع، ۳۶ گروه برخورد شمارهٔ رویداد و ۱۳ رابطهٔ والد مبهم.
 - بازیابی کامل از IN/OUT، ورود به میزبان مستقل، میزبان دوم، حافظهٔ پایدار پس از راه‌اندازی مجدد و اجرای پس‌زمینه همچنان OPEN / NOT VERIFIED هستند. ثبت این قاعده به‌تنهایی اثبات اجرای خودکار آن نیست.
@@ -1120,9 +1120,9 @@ This point preserves the initial-model continuation without resetting earlier ar
 
 
 ## CURRENT-058 — latest deep excavation branch
-- Point 0/007: [User return point](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-007-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md).
-- Input/output: [IN-051](../../0.0/anchors/PALANG-0.0-IN-20261024-051-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md) → [OUT-050](../../0.0/anchors/PALANG-0.0-OUT-20261024-050-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md) → [EVT-0160](../BEHAVIOR-TRACE/EVT-0160-DEEP-EXCAVATION-EXECUTION-RECEIPTS-AND-AUDIT-CORRECTION-2026-10-24.md) → [CURRENT-058](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-058-DEEP-EXCAVATION-EXECUTION-RECEIPTS.md).
-- Active open action: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). NEXT-049 and NEXT-050 remain preserved.
+- Point 0/007: [User return point](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-007-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md).
+- Input/output: [IN-051](../../docs/0.0/anchors/PALANG-0.0-IN-20261024-051-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md) → [OUT-050](../../docs/0.0/anchors/PALANG-0.0-OUT-20261024-050-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md) → [EVT-0160](../../docs/architecture/BEHAVIOR-TRACE/EVT-0160-DEEP-EXCAVATION-EXECUTION-RECEIPTS-AND-AUDIT-CORRECTION-2026-10-24.md) → [CURRENT-058](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261024-058-DEEP-EXCAVATION-EXECUTION-RECEIPTS.md).
+- Active open action: [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). NEXT-049 and NEXT-050 remain preserved.
 - The portable master, foundational mother, inherited architecture master, canonical index and queue must remain aligned. Registration is not equivalent to validation or real-host import.
 - Current open gates: post-edit repository-wide audit and exact-byte digest/package rerun; full IN/OUT reconstruction; clean/second AI-host import; actual persistence restart; idle/background execution; individual identifier/parent/timestamp triage.
 
@@ -1134,11 +1134,11 @@ This point preserves the initial-model continuation without resetting earlier ar
 - External AI-host import, second-host import, persistence restart and idle/background execution remain OPEN / NOT VERIFIED.
 
 ## Active current branch
-[Point 0/007](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-007-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md) → [IN-051](../../0.0/anchors/PALANG-0.0-IN-20261024-051-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md) → [OUT-050](../../0.0/anchors/PALANG-0.0-OUT-20261024-050-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md) → [EVT-0160](../BEHAVIOR-TRACE/EVT-0160-DEEP-EXCAVATION-EXECUTION-RECEIPTS-AND-AUDIT-CORRECTION-2026-10-24.md) → [CURRENT-058](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-058-DEEP-EXCAVATION-EXECUTION-RECEIPTS.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+[Point 0/007](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-007-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md) → [IN-051](../../docs/0.0/anchors/PALANG-0.0-IN-20261024-051-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md) → [OUT-050](../../docs/0.0/anchors/PALANG-0.0-OUT-20261024-050-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md) → [EVT-0160](../../docs/architecture/BEHAVIOR-TRACE/EVT-0160-DEEP-EXCAVATION-EXECUTION-RECEIPTS-AND-AUDIT-CORRECTION-2026-10-24.md) → [CURRENT-058](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261024-058-DEEP-EXCAVATION-EXECUTION-RECEIPTS.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 
 
 ## CURRENT-059 — ثبت پیوستگی خروجی و ادامهٔ واقعی کار
-شاخهٔ جاری: [POINT-0/008](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-008-DEEP-AUDIT-AND-NO-SILENT-GAP.md) → [IN-052](../../0.0/anchors/PALANG-0.0-IN-20261025-052-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md) → [OUT-051](../../0.0/anchors/PALANG-0.0-OUT-20261025-051-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md) → [EVT-0161](../BEHAVIOR-TRACE/EVT-0161-DEEP-AUDIT-STALE-GATE-AND-NO-SILENT-GAP-2026-10-25.md) → [CURRENT-059](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-059-DEEP-AUDIT-AND-CORRECTED-CONFORMANCE.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). قاعدهٔ بنیادی: ورودی تازه نقطهٔ قبلی را پاک نمی‌کند؛ کار ناتمام باید با وضعیت قابل‌مشاهده و نقطهٔ دقیق ادامه ثبت شود؛ NEXT جدید بدون اجرای واقعی ساخته نمی‌شود؛ هر مورد تأییدنشده باز می‌ماند.
+شاخهٔ جاری: [POINT-0/008](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-008-DEEP-AUDIT-AND-NO-SILENT-GAP.md) → [IN-052](../../docs/0.0/anchors/PALANG-0.0-IN-20261025-052-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md) → [OUT-051](../../docs/0.0/anchors/PALANG-0.0-OUT-20261025-051-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md) → [EVT-0161](../../docs/architecture/BEHAVIOR-TRACE/EVT-0161-DEEP-AUDIT-STALE-GATE-AND-NO-SILENT-GAP-2026-10-25.md) → [CURRENT-059](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-059-DEEP-AUDIT-AND-CORRECTED-CONFORMANCE.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). قاعدهٔ بنیادی: ورودی تازه نقطهٔ قبلی را پاک نمی‌کند؛ کار ناتمام باید با وضعیت قابل‌مشاهده و نقطهٔ دقیق ادامه ثبت شود؛ NEXT جدید بدون اجرای واقعی ساخته نمی‌شود؛ هر مورد تأییدنشده باز می‌ماند.
 
 
 ## CURRENT-059 — رسید آزمون و مرز تأیید
@@ -1155,9 +1155,9 @@ This point preserves the initial-model continuation without resetting earlier ar
 
 ## CURRENT-060 — بازیابی زنجیره و ممیزی تکمیل واقعی معماری (2026-10-25)
 
-- User Point 0/009: [بازیابی و ممیزی نقاط ۰ و ۰.۰](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-009-CHAIN-RECOVERY-AUDIT.md).
-- Input / Output / Event: [IN-053](../../0.0/anchors/PALANG-0.0-IN-20261025-053-CHAIN-RECOVERY-AUDIT.md) → [OUT-052](../../0.0/anchors/PALANG-0.0-OUT-20261025-052-CHAIN-RECOVERY-AUDIT.md) → [EVT-0162](../../docs/architecture/BEHAVIOR-TRACE/EVT-0162-CHAIN-RECOVERY-AUDIT-AND-SCOPE-ERROR-LEARNING-2026-10-25.md) → [CURRENT-060](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-060-CHAIN-RECOVERY-AUDIT.md).
-- Active execution remains [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md); historical NEXT-039/NEXT-040 and NEXT-044/NEXT-048 are not silently closed by this newer checkpoint.
+- User Point 0/009: [بازیابی و ممیزی نقاط ۰ و ۰.۰](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-009-CHAIN-RECOVERY-AUDIT.md).
+- Input / Output / Event: [IN-053](../../docs/0.0/anchors/PALANG-0.0-IN-20261025-053-CHAIN-RECOVERY-AUDIT.md) → [OUT-052](../../docs/0.0/anchors/PALANG-0.0-OUT-20261025-052-CHAIN-RECOVERY-AUDIT.md) → [EVT-0162](../../docs/architecture/BEHAVIOR-TRACE/EVT-0162-CHAIN-RECOVERY-AUDIT-AND-SCOPE-ERROR-LEARNING-2026-10-25.md) → [CURRENT-060](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-060-CHAIN-RECOVERY-AUDIT.md).
+- Active execution remains [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md); historical NEXT-039/NEXT-040 and NEXT-044/NEXT-048 are not silently closed by this newer checkpoint.
 - Initial architecture-zero explicitly recorded the prototype as NOT BUILT and cold-start recovery as NOT RUN. The model baseline says production implementation is NOT BUILT. These remain real build/acceptance gaps until newer direct evidence closes them.
 - The portable manifest and its previous successful CI receipts predate this CURRENT-060 chain. This new chain and mother update have not yet been proven included in a fresh export artifact; current-commit package/digest reconciliation is OPEN / NOT RUN.
 - Scope lesson: continue the new-project model architecture; do not divert to Dropbox unless explicitly reopened by the user.
@@ -1165,23 +1165,23 @@ This point preserves the initial-model continuation without resetting earlier ar
 
 
 ## CURRENT-061 — prototype, adoption and graph triage integration (2026-10-25)
-- New Point 0: [POINT-0/010](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-010-PROTOTYPE-GRAPH-CLOSURE.md).
-- Interaction chain: [IN-054](../../0.0/anchors/PALANG-0.0-IN-20261025-054-PROTOTYPE-GRAPH-CLOSURE.md) → [OUT-053](../../0.0/anchors/PALANG-0.0-OUT-20261025-053-PROTOTYPE-GRAPH-CLOSURE.md) → [EVT-0163](../BEHAVIOR-TRACE/EVT-0163-PROTOTYPE-GRAPH-CLOSURE-2026-10-25.md) → [CURRENT-061](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-061-PROTOTYPE-AND-GRAPH-TRIAGE.md).
-- Interactive prototype: [source](../interactive-prototype/index.html) and [test procedure](../interactive-prototype/README.md).
-- Fresh-project fixture: [ADOPTION-TEST-FIXTURE.json](../interactive-prototype/ADOPTION-TEST-FIXTURE.json).
-- Graph triage: [AGACR](../../reference/REFERENCE-DOCUMENTS/ARCHITECTURE-GRAPH-ADJUDICATION-AND-CLOSURE-REGISTER-2026-10-25-001.md).
-- Active execution queue remains [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md); NEXT-039 and NEXT-040 are preserved as open sub-tasks.
+- New Point 0: [POINT-0/010](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-010-PROTOTYPE-GRAPH-CLOSURE.md).
+- Interaction chain: [IN-054](../../docs/0.0/anchors/PALANG-0.0-IN-20261025-054-PROTOTYPE-GRAPH-CLOSURE.md) → [OUT-053](../../docs/0.0/anchors/PALANG-0.0-OUT-20261025-053-PROTOTYPE-GRAPH-CLOSURE.md) → [EVT-0163](../../docs/architecture/BEHAVIOR-TRACE/EVT-0163-PROTOTYPE-GRAPH-CLOSURE-2026-10-25.md) → [CURRENT-061](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-061-PROTOTYPE-AND-GRAPH-TRIAGE.md).
+- Interactive prototype: [source](../../docs/architecture/interactive-prototype/index.html) and [test procedure](../../docs/architecture/interactive-prototype/README.md).
+- Fresh-project fixture: [ADOPTION-TEST-FIXTURE.json](../../docs/architecture/interactive-prototype/ADOPTION-TEST-FIXTURE.json).
+- Graph triage: [AGACR](../../docs/reference/REFERENCE-DOCUMENTS/ARCHITECTURE-GRAPH-ADJUDICATION-AND-CLOSURE-REGISTER-2026-10-25-001.md).
+- Active execution queue remains [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md); NEXT-039 and NEXT-040 are preserved as open sub-tasks.
 - Evidence boundary: prototype source exists; browser execution and fresh-host adoption are not yet proven. Production implementation remains NOT BUILT. The graph register improves the decision process but does not close unresolved groups.
 
 
 ## CURRENT-062 — ثبت نقطهٔ ۰ و فهرست شکاف‌ها و گام‌های اجرایی (2026-10-25)
 
-- User Point 0/011: [نقطهٔ صفر جدید؛ شکاف‌ها و تداوم](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-011-OPEN-GAPS-AND-CONTINUITY.md).
-- زنجیرهٔ تعامل: [IN-055](../../0.0/anchors/PALANG-0.0-IN-20261025-055-OPEN-GAPS-AND-CONTINUITY.md) → [OUT-054](../../0.0/anchors/PALANG-0.0-OUT-20261025-054-OPEN-GAPS-AND-CONTINUITY.md) → [EVT-0164](../BEHAVIOR-TRACE/EVT-0164-OPEN-GAPS-AND-CONTINUITY-2026-10-25.md) → [CURRENT-062](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-062-OPEN-GAPS-AND-CONTINUITY.md).
-- مرجع پیشین: [CURRENT-061](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-061-PROTOTYPE-AND-GRAPH-TRIAGE.md).
-- پروندهٔ داوری گراف: [AGACR](../../reference/REFERENCE-DOCUMENTS/ARCHITECTURE-GRAPH-ADJUDICATION-AND-CLOSURE-REGISTER-2026-10-25-001.md).
-- شاخص بستهٔ تداوم: [CURRENT-062 overlay manifest](../../portable/RAHM/CURRENT-062-OVERLAY-MANIFEST.json)؛ این فهرست جایگزین بستهٔ انتشار کامل یا آزمون میزبان واقعی نیست.
-- صف اجرای فعال: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). NEXT-039 و NEXT-040 نیز به‌عنوان کارهای باز حفظ شده‌اند.
+- User Point 0/011: [نقطهٔ صفر جدید؛ شکاف‌ها و تداوم](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-011-OPEN-GAPS-AND-CONTINUITY.md).
+- زنجیرهٔ تعامل: [IN-055](../../docs/0.0/anchors/PALANG-0.0-IN-20261025-055-OPEN-GAPS-AND-CONTINUITY.md) → [OUT-054](../../docs/0.0/anchors/PALANG-0.0-OUT-20261025-054-OPEN-GAPS-AND-CONTINUITY.md) → [EVT-0164](../../docs/architecture/BEHAVIOR-TRACE/EVT-0164-OPEN-GAPS-AND-CONTINUITY-2026-10-25.md) → [CURRENT-062](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-062-OPEN-GAPS-AND-CONTINUITY.md).
+- مرجع پیشین: [CURRENT-061](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-061-PROTOTYPE-AND-GRAPH-TRIAGE.md).
+- پروندهٔ داوری گراف: [AGACR](../../docs/reference/REFERENCE-DOCUMENTS/ARCHITECTURE-GRAPH-ADJUDICATION-AND-CLOSURE-REGISTER-2026-10-25-001.md).
+- شاخص بستهٔ تداوم: [CURRENT-062 overlay manifest](../../docs/portable/RAHM/CURRENT-062-OVERLAY-MANIFEST.json)؛ این فهرست جایگزین بستهٔ انتشار کامل یا آزمون میزبان واقعی نیست.
+- صف اجرای فعال: [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). NEXT-039 و NEXT-040 نیز به‌عنوان کارهای باز حفظ شده‌اند.
 - شکاف‌های باز: ممیزی معنایی موردبه‌مورد کل گراف، تطبیق شناسه‌ها/والدها/زمان‌ها/تکرارها، بستهٔ قابل‌حمل با SHA-256 تازه، اجرای واقعی نمونه در مرورگر، انتقال به میزبان مستقل، بازیابی پس از راه‌اندازی مجدد و اثبات ثبت/اجرای خودکار.
 - درس رفتاری: هنگام فعال بودن مسیر معماری مدل اولیه، کار را به Dropbox منحرف نکن؛ فقط با دستور صریح کاربر مقصد غیرفعال را دوباره باز کن. این قاعده ثبت شده اما خودکاربودن شکارچی رفتار هنوز اثبات نشده است.
 - مرز اثبات: ثبت و پیوند مخزنی جای اجرای مرورگر یا آزمون میزبان مستقل را نمی‌گیرد. Buffer، Library، Persistent Memory و Dropbox در این مرحله مقصدهای تأییدشده نیستند.
@@ -1191,12 +1191,12 @@ This point preserves the initial-model continuation without resetting earlier ar
 
 ## CURRENT-062 harness defect lesson
 - The portable conformance workflow's IN/OUT recovery test was stale: it exercised IN-052 / OUT-051 → CURRENT-059 although the active chain had moved on. This could make a structurally passing result irrelevant to the current checkpoint.
-- Corrected source: [rahm-portable-conformance.yml](../../../.github/workflows/rahm-portable-conformance.yml), now checks IN-055 / OUT-054 → CURRENT-062 and asserts NEXT-051, the initial-model mother and CURRENT-062 overlay manifest.
+- Corrected source: [rahm-portable-conformance.yml](../../.github/workflows/rahm-portable-conformance.yml), now checks IN-055 / OUT-054 → CURRENT-062 and asserts NEXT-051, the initial-model mother and CURRENT-062 overlay manifest.
 - Static preflight passed for the expected pointers; the actual current-commit workflow receipt is still NOT RUN / NOT VERIFIED. The correction is not a runtime pass. This demonstrates why tests must follow the canonical active checkpoint instead of merely succeeding on an old linked chain.
 
 
 ## 3.1 Runnable continuity engine — first executable slice
-The project now has a dependency-free Python runtime at [scripts/haif-runtime/haif_runtime.py](../../../scripts/haif-runtime/haif_runtime.py), with runnable commands and tests in [its README](../../../scripts/haif-runtime/README.md) and [test suite](../../../scripts/haif-runtime/tests/test_runtime.py).
+The project now has a dependency-free Python runtime at [scripts/haif-runtime/haif_runtime.py](../../scripts/haif-runtime/haif_runtime.py), with runnable commands and tests in [its README](../../scripts/haif-runtime/README.md) and [test suite](../../scripts/haif-runtime/tests/test_runtime.py).
 
 Implemented in source:
 - Initialize a local JSON state without overwriting an existing file.
@@ -1222,19 +1222,19 @@ Boundary: this is a local continuity engine, not yet an AI-host plugin, cloud se
 
 
 ## CURRENT-063 — executable project slice
-The user's latest Point 0 explicitly prioritizes a working new-project architecture over more reporting. The implementation path is now anchored at [CURRENT-063](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-063-EXECUTABLE-ARCHITECTURE.md) and the new interaction chain [POINT-0/012](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-012-EXECUTABLE-ARCHITECTURE.md) → IN-056 → OUT-055 → EVT-0165 → CURRENT-063.
+The user's latest Point 0 explicitly prioritizes a working new-project architecture over more reporting. The implementation path is now anchored at [CURRENT-063](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-063-EXECUTABLE-ARCHITECTURE.md) and the new interaction chain [POINT-0/012](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-012-EXECUTABLE-ARCHITECTURE.md) → IN-056 → OUT-055 → EVT-0165 → CURRENT-063.
 
-The first runnable slice is [haif_runtime.py](../../../scripts/haif-runtime/haif_runtime.py), with [automated tests](../../../scripts/haif-runtime/tests/test_runtime.py) and a [runbook](../../../scripts/haif-runtime/README.md). Its incremental portable inventory is [CURRENT-063-OVERLAY-MANIFEST](../../portable/RAHM/CURRENT-063-OVERLAY-MANIFEST.json). It implements local state, append-only IN/OUT events, parent-linked SHA-256 hashes, tamper checks, checkpoints and validated JSON transfer to a new file. The portable conformance workflow runs the tests when the runtime path changes.
+The first runnable slice is [haif_runtime.py](../../scripts/haif-runtime/haif_runtime.py), with [automated tests](../../scripts/haif-runtime/tests/test_runtime.py) and a [runbook](../../scripts/haif-runtime/README.md). Its incremental portable inventory is [CURRENT-063-OVERLAY-MANIFEST](../../docs/portable/RAHM/CURRENT-063-OVERLAY-MANIFEST.json). It implements local state, append-only IN/OUT events, parent-linked SHA-256 hashes, tamper checks, checkpoints and validated JSON transfer to a new file. The portable conformance workflow runs the tests when the runtime path changes.
 
 Execution status is deliberately evidence-bound: source and test wiring are repository-visible; the latest status query returned no check entries, so CI PASS is not claimed. The next practical action is to inspect the actual workflow result, fix failures, run a clean local recovery, and then prove independent-host import. Global graph adjudication stays under NEXT-051.
 
 
 ## 2026-10-25 — CURRENT-064 continuity update
 
-- New user anchor: [POINT-0/013](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-013-CURRENT-INTERACTION-AND-LIVING-CONTINUITY.md).
-- Interaction chain: [IN-057](../../0.0/anchors/PALANG-0.0-IN-20261025-057-CURRENT-INTERACTION-AND-LIVING-CONTINUITY.md) → [OUT-056](../../0.0/anchors/PALANG-0.0-OUT-20261025-056-NEXT-EXECUTION-AND-GAPS.md) → [EVT-0166](../BEHAVIOR-TRACE/EVT-0166-CURRENT-INTERACTION-AND-NEXT-EXECUTION-2026-10-25.md) → [CURRENT-064](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-064-NEXT-EXECUTION-AND-GAPS.md).
+- New user anchor: [POINT-0/013](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-013-CURRENT-INTERACTION-AND-LIVING-CONTINUITY.md).
+- Interaction chain: [IN-057](../../docs/0.0/anchors/PALANG-0.0-IN-20261025-057-CURRENT-INTERACTION-AND-LIVING-CONTINUITY.md) → [OUT-056](../../docs/0.0/anchors/PALANG-0.0-OUT-20261025-056-NEXT-EXECUTION-AND-GAPS.md) → [EVT-0166](../../docs/architecture/BEHAVIOR-TRACE/EVT-0166-CURRENT-INTERACTION-AND-NEXT-EXECUTION-2026-10-25.md) → [CURRENT-064](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-064-NEXT-EXECUTION-AND-GAPS.md).
 - Prior checkpoint CURRENT-063 remains preserved; it is not overwritten.
-- Existing [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md) remains the active historical graph-triage task. No successor task was created to disguise unfinished work.
+- Existing [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md) remains the active historical graph-triage task. No successor task was created to disguise unfinished work.
 
 ### Current execution priority
 
@@ -1254,14 +1254,14 @@ Repository registration and read-back must not be presented as proof that these 
 
 ## CURRENT-065 — Continuity checkpoint
 
-New Point 0: [POINT-0/014](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-014-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md). Chain: [IN-058](../../0.0/anchors/PALANG-0.0-IN-20261025-058-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md) → [OUT-057](../../0.0/anchors/PALANG-0.0-OUT-20261025-057-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md) → [EVT-0167](../BEHAVIOR-TRACE/EVT-0167-AUTONOMOUS-CONTINUITY-AND-RECOVERY-2026-10-25.md) → [CURRENT-065](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-065-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md). Preserve CURRENT-064 and prior anchors. NEXT-051 remains open. Runtime tests, clean recovery, CI receipt, independent host, restart durability and background capture remain unverified until direct evidence is recorded.
+New Point 0: [POINT-0/014](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-014-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md). Chain: [IN-058](../../docs/0.0/anchors/PALANG-0.0-IN-20261025-058-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md) → [OUT-057](../../docs/0.0/anchors/PALANG-0.0-OUT-20261025-057-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md) → [EVT-0167](../../docs/architecture/BEHAVIOR-TRACE/EVT-0167-AUTONOMOUS-CONTINUITY-AND-RECOVERY-2026-10-25.md) → [CURRENT-065](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-065-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md). Preserve CURRENT-064 and prior anchors. NEXT-051 remains open. Runtime tests, clean recovery, CI receipt, independent host, restart durability and background capture remain unverified until direct evidence is recorded.
 
 
 ---
 
 ## Live mirror sync and current-chain audit addendum — 2026-10-25 (EVT-0172 / EVT-0173)
 
-- [EVT-0172 — live mirror sync](../BEHAVIOR-TRACE/EVT-0172-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md): canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10` remains unchanged; Library version 7 independently read back; 10,479 vs 10,480 characters; one trailing newline; semantic fields and destination statuses match within tolerance. No redundant Library write was performed.
+- [EVT-0172 — live mirror sync](../../docs/architecture/BEHAVIOR-TRACE/EVT-0172-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md): canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10` remains unchanged; Library version 7 independently read back; 10,479 vs 10,480 characters; one trailing newline; semantic fields and destination statuses match within tolerance. No redundant Library write was performed.
 - [EVT-0173 — exact-main audit failure and correction](../../docs/architecture/BEHAVIOR-TRACE/EVT-0173-CURRENT-065-EXACT-MAIN-AUDIT-FAILURE-AND-CORRECTION-2026-10-25.md): run 40169128251 failed on main SHA `19044f6a238e3d00805813695f328f0540af5e8d` because POINT-0/014 lacked explicit links to IN-058, OUT-057, EVT-0167 and CURRENT-065. The links are now added; fresh audit on the exact resulting main SHA is still required.
 - Canonical live pointers observed in the repository: CURRENT-065 / NEXT-051. Earlier CURRENT-036 / NEXT-036 and NEXT-035 remain preserved historical checkpoints and are not overwritten.
 - Issue #20 runtime/cold-host recovery and Issue #21 historical source/rule census remain OPEN. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external end-to-end recovery NOT RUN.
@@ -1271,13 +1271,13 @@ New Point 0: [POINT-0/014](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-014
 
 ## CURRENT-066 — Open gaps and living-master recovery (2026-10-25)
 
-- New user root: [POINT-0/015](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-015-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md).
-- Interaction chain: [IN-059](../../0.0/anchors/PALANG-0.0-IN-20261025-059-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md) → [OUT-058](../../0.0/anchors/PALANG-0.0-OUT-20261025-058-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md) → [EVT-0174](../BEHAVIOR-TRACE/EVT-0174-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY-2026-10-25.md) → [CURRENT-066](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-066-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md).
-- Previous CURRENT-065 is preserved, not overwritten. [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md) remains the active work queue.
+- New user root: [POINT-0/015](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-015-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md).
+- Interaction chain: [IN-059](../../docs/0.0/anchors/PALANG-0.0-IN-20261025-059-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md) → [OUT-058](../../docs/0.0/anchors/PALANG-0.0-OUT-20261025-058-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md) → [EVT-0174](../../docs/architecture/BEHAVIOR-TRACE/EVT-0174-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY-2026-10-25.md) → [CURRENT-066](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-066-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md).
+- Previous CURRENT-065 is preserved, not overwritten. [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md) remains the active work queue.
 - All runtime tests, current exact-byte manifest digests, clean export/import round trip, full IN/OUT reconstruction, unresolved graph collisions, independent-host import, second-host import, restart persistence, automatic capture, background execution and external storage remain OPEN until direct evidence is recorded.
 - Acceptance rule: file existence or CI success alone does not prove independent AI-host recovery or persistent runtime behavior. Each gate requires a current, exact-revision receipt and independent read-back.
 
-- [EVT-0175 — CURRENT-066 verifier stale-checkpoint failure](../BEHAVIOR-TRACE/EVT-0175-CURRENT-066-RECOVERY-VERIFIER-STALE-CHECKPOINT-2026-10-25.md): exact-run failure recorded; verifier was still hard-coded to CURRENT-065; corrected verifier and exact-SHA rerun required.
+- [EVT-0175 — CURRENT-066 verifier stale-checkpoint failure](../../docs/architecture/BEHAVIOR-TRACE/EVT-0175-CURRENT-066-RECOVERY-VERIFIER-STALE-CHECKPOINT-2026-10-25.md): exact-run failure recorded; verifier was still hard-coded to CURRENT-065; corrected verifier and exact-SHA rerun required.
 
 
 ## Current verification receipt — CURRENT-066
@@ -1300,7 +1300,7 @@ New Point 0: [POINT-0/014](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-014
 
 ## Living continuation update — POINT-0/016 / EVT-0176 (2026-10-25)
 
-The current user interaction is registered as [POINT-0/016](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-016-MIRROR-DELTA-AND-ARCHITECTURE-RECOVERY.md) and [EVT-0176](../BEHAVIOR-TRACE/EVT-0176-USER-POINT-0-016-MIRROR-DELTA-AND-ARCHITECTURE-RECOVERY-2026-10-25.md). Earlier 0.0 anchors remain preserved; NEXT-051 remains open and is not replaced by a new NEXT merely to imply progress.
+The current user interaction is registered as [POINT-0/016](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-016-MIRROR-DELTA-AND-ARCHITECTURE-RECOVERY.md) and [EVT-0176](../../docs/architecture/BEHAVIOR-TRACE/EVT-0176-USER-POINT-0-016-MIRROR-DELTA-AND-ARCHITECTURE-RECOVERY-2026-10-25.md). Earlier 0.0 anchors remain preserved; NEXT-051 remains open and is not replaced by a new NEXT merely to imply progress.
 
 The Library mirror differs from the canonical source only by one extra trailing newline (10,480 vs 10,479 characters; edit distance 1). Removing that extra newline from the Library copy is semantically safe for Markdown, but normalization is not complete until a supported write and independent read-back succeed. Never modify the canonical source to match the mirror.
 
@@ -1311,14 +1311,14 @@ Governance: UTC repository commit timestamp is canonical; Tehran is derived from
 
 ## Living continuation update — EVT-0177 (2026-10-25)
 
-The recurring mirror recheck is registered in [EVT-0177](../BEHAVIOR-TRACE/EVT-0177-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md), with commit time binding in [TIME-BINDING-EVT-0177](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0177-LIVE-MIRROR-SYNC-2026-10-25.md). The canonical source remains blob `de1b75f07241c9b313e476af5f1417177ff78c10`, 10,479 characters; Library version 7 remains 10,480 characters, with exactly one extra trailing newline (edit distance 1). Stable/Test IDs, version, BOART next-action chain, destination status fields and remaining content match. Under the recurring no-redundant-write rule, no Library write was performed. No byte-for-byte identity is claimed.
+The recurring mirror recheck is registered in [EVT-0177](../../docs/architecture/BEHAVIOR-TRACE/EVT-0177-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md), with commit time binding in [TIME-BINDING-EVT-0177](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0177-LIVE-MIRROR-SYNC-2026-10-25.md). The canonical source remains blob `de1b75f07241c9b313e476af5f1417177ff78c10`, 10,479 characters; Library version 7 remains 10,480 characters, with exactly one extra trailing newline (edit distance 1). Stable/Test IDs, version, BOART next-action chain, destination status fields and remaining content match. Under the recurring no-redundant-write rule, no Library write was performed. No byte-for-byte identity is claimed.
 
 The current user-turn anchor POINT-0/016 remains preserved. The 0.0 execution continuation is CURRENT-065 / NEXT-051; the earlier CURRENT-064 → NEXT-051 note is a historical prior entry, not a competing current pointer. Issues #20 and #21 remain OPEN. The latest inspected Living Architecture Audit failed on an older SHA; Evidence Gate run 40172117603 succeeded on a different SHA and is not proof that the current main HEAD passed the architecture audit. Exact-current-main audit remains NOT VERIFIED. Buffer/Persistent Memory remain NOT VERIFIED; Dropbox remains OPEN / NOT VERIFIED; external end-to-end recovery remains NOT RUN.
 
 
 ## Living continuation — POINT-0/017 / EVT-0178: unified Palang hard audit
 
-The user explicitly confirmed that newer architecture work must remain inside the original Future AI / Palang Footprint project, not become a separate parallel project. The new user-turn point is [POINT-0/017](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-017-UNIFIED-PALANG-ARCHITECTURE-HARD-AUDIT.md), with event [EVT-0178](../BEHAVIOR-TRACE/EVT-0178-UNIFIED-PALANG-ARCHITECTURE-HARD-AUDIT-2026-10-25.md). Prior points remain immutable and linked.
+The user explicitly confirmed that newer architecture work must remain inside the original Future AI / Palang Footprint project, not become a separate parallel project. The new user-turn point is [POINT-0/017](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-017-UNIFIED-PALANG-ARCHITECTURE-HARD-AUDIT.md), with event [EVT-0178](../../docs/architecture/BEHAVIOR-TRACE/EVT-0178-UNIFIED-PALANG-ARCHITECTURE-HARD-AUDIT-2026-10-25.md). Prior points remain immutable and linked.
 
 ### Hard-audit findings (not yet all remediated)
 1. Pointer conflict: registry and EVT-0177 mention CURRENT-065 as current while CURRENT-066 self-identifies as the newer checkpoint and points to NEXT-051. Reconcile current-pointer surfaces from source-backed evidence; do not guess or erase history.
@@ -1337,12 +1337,12 @@ Continue existing NEXT-051; do not mint a placeholder NEXT-052. Preserve all his
 
 ## Collision-safe continuation — EVT-0179 (2026-10-25)
 
-The current user-turn root is [POINT-0/017](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-017-UNIFIED-PALANG-ARCHITECTURE-HARD-AUDIT.md) and its canonical hard-audit event is [EVT-0178](../BEHAVIOR-TRACE/EVT-0178-UNIFIED-PALANG-ARCHITECTURE-HARD-AUDIT-2026-10-25.md). A separate pointer-reconciliation draft accidentally reused the EVT-0178 number; it is preserved but quarantined at [the collision artifact](../BEHAVIOR-TRACE/EVT-0178-CURRENT-066-POINTER-RECONCILIATION-2026-10-25.md). [EVT-0179](../BEHAVIOR-TRACE/EVT-0179-UNIQUE-ID-COLLISION-AND-POINTER-RECONCILIATION-2026-10-25.md) records this correction. Do not promote CURRENT-065 or CURRENT-066 from the draft; the pointer conflict remains OPEN for the unified hard audit. NEXT-051 remains active; no NEXT-052 is created.
+The current user-turn root is [POINT-0/017](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-017-UNIFIED-PALANG-ARCHITECTURE-HARD-AUDIT.md) and its canonical hard-audit event is [EVT-0178](../../docs/architecture/BEHAVIOR-TRACE/EVT-0178-UNIFIED-PALANG-ARCHITECTURE-HARD-AUDIT-2026-10-25.md). A separate pointer-reconciliation draft accidentally reused the EVT-0178 number; it is preserved but quarantined at [the collision artifact](../../docs/architecture/BEHAVIOR-TRACE/EVT-0178-CURRENT-066-POINTER-RECONCILIATION-2026-10-25.md). [EVT-0179](../../docs/architecture/BEHAVIOR-TRACE/EVT-0179-UNIQUE-ID-COLLISION-AND-POINTER-RECONCILIATION-2026-10-25.md) records this correction. Do not promote CURRENT-065 or CURRENT-066 from the draft; the pointer conflict remains OPEN for the unified hard audit. NEXT-051 remains active; no NEXT-052 is created.
 
 
 ## Living continuation — POINT-0/018 / EVT-0180
 
-The newest user-turn root is [POINT-0/018](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-018-LIVING-REGISTRATION-AND-NEXT-STEPS.md), with event [EVT-0180](../BEHAVIOR-TRACE/EVT-0180-USER-POINT-0-018-LIVING-REGISTRATION-AND-NEXT-STEPS-2026-10-25.md); POINT-0/018 commit: [9b459710]( https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/9b459710a1a757b8f9ccacc6bfdc9c6618e80f90 ) UTC 2026-10-25T07:37:13Z → Tehran 2026-10-25T11:07:13+03:30; EVT-0180 commit: [a2dc3dcf]( https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/a2dc3dcfa3d68f75579efec66c29c1942e447f99 ) UTC 2026-10-25T07:37:15Z → Tehran 2026-10-25T11:07:15+03:30. This supersedes POINT-0/017 only as the most recent user-turn root; it does not overwrite or replace any historical anchor or resolve the separate execution checkpoint conflict.
+The newest user-turn root is [POINT-0/018](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-018-LIVING-REGISTRATION-AND-NEXT-STEPS.md), with event [EVT-0180](../../docs/architecture/BEHAVIOR-TRACE/EVT-0180-USER-POINT-0-018-LIVING-REGISTRATION-AND-NEXT-STEPS-2026-10-25.md); POINT-0/018 commit: [9b459710]( https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/9b459710a1a757b8f9ccacc6bfdc9c6618e80f90 ) UTC 2026-10-25T07:37:13Z → Tehran 2026-10-25T11:07:13+03:30; EVT-0180 commit: [a2dc3dcf]( https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/a2dc3dcfa3d68f75579efec66c29c1942e447f99 ) UTC 2026-10-25T07:37:15Z → Tehran 2026-10-25T11:07:15+03:30. This supersedes POINT-0/017 only as the most recent user-turn root; it does not overwrite or replace any historical anchor or resolve the separate execution checkpoint conflict.
 
 ### Registered 0.0 continuation plan
 1. Reconcile CURRENT-065 versus CURRENT-066 from authoritative commit lineage, IN/OUT anchors, overlay manifest semantics, canonical registry declarations and exact tested-SHA receipts; keep the conflict OPEN until the source-backed decision is justified.
@@ -1357,7 +1357,7 @@ This is one continuing Future AI / Palang Footprint project, not a detached para
 
 ## Living continuation — POINT-0/019 / EVT-0181: build capabilities, not only documents
 
-The newest user-turn root is [POINT-0/019](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-019-MODEL-CAPABILITY-BUILD.md), event [EVT-0181](../BEHAVIOR-TRACE/EVT-0181-POINT-0-019-MODEL-CAPABILITY-BUILD-2026-10-25.md). This point advances the existing model toward testable product capabilities inside the original Future AI / Palang Footprint repository. It does not replace the current execution checkpoint and does not create a parallel project.
+The newest user-turn root is [POINT-0/019](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-019-MODEL-CAPABILITY-BUILD.md), event [EVT-0181](../../docs/architecture/BEHAVIOR-TRACE/EVT-0181-POINT-0-019-MODEL-CAPABILITY-BUILD-2026-10-25.md). This point advances the existing model toward testable product capabilities inside the original Future AI / Palang Footprint repository. It does not replace the current execution checkpoint and does not create a parallel project.
 
 ### First executable increment — live pointer discovery
 - New checker: `scripts/behavior-hunter/discover_current_0_0_pointer.py`.
@@ -1383,7 +1383,7 @@ CURRENT-065/CURRENT-066 adjudication; exact-current-main workflow receipt; full 
 
 
 ### Repository time evidence — POINT-0/019
-Actual final point-file commit: UTC `2026-10-25T07:56:47Z` → Asia/Tehran `2026-10-25T11:26:47+03:30`; EVT-0181 creation commit: UTC `2026-10-25T07:53:42Z` → Asia/Tehran `2026-10-25T11:23:42+03:30`. Full commit-bound evidence: [TIME-BINDING-EVT-0181](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0181-POINT-0-019-2026-10-25.md). These are repository commit times, not exact user-message times or proof of runtime execution.
+Actual final point-file commit: UTC `2026-10-25T07:56:47Z` → Asia/Tehran `2026-10-25T11:26:47+03:30`; EVT-0181 creation commit: UTC `2026-10-25T07:53:42Z` → Asia/Tehran `2026-10-25T11:23:42+03:30`. Full commit-bound evidence: [TIME-BINDING-EVT-0181](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0181-POINT-0-019-2026-10-25.md). These are repository commit times, not exact user-message times or proof of runtime execution.
 
 
 ## POINT-0/020 — خطای اشاره‌گر جاری و مسیر اصلاح قابل‌بازیابی
@@ -1405,10 +1405,10 @@ Actual final point-file commit: UTC `2026-10-25T07:56:47Z` → Asia/Tehran `2026
 
 ## Living continuation — POINT-0/021 / EVT-0184 / CURRENT-068
 
-- User-designated root for this request: [POINT-0/021](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-021-INITIAL-MODEL-COMPLETION-GATE.md).
-- Event and root-cause record: [EVT-0184](../BEHAVIOR-TRACE/EVT-0184-INITIAL-MODEL-COMPLETION-GATE-2026-10-25.md).
-- Next executable checkpoint: [CURRENT-068](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-068-INITIAL-MODEL-COMPLETION-GATE.md).
-- Existing active queue: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md); no NEXT-052 was created.
+- User-designated root for this request: [POINT-0/021](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-021-INITIAL-MODEL-COMPLETION-GATE.md).
+- Event and root-cause record: [EVT-0184](../../docs/architecture/BEHAVIOR-TRACE/EVT-0184-INITIAL-MODEL-COMPLETION-GATE-2026-10-25.md).
+- Next executable checkpoint: [CURRENT-068](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-068-INITIAL-MODEL-COMPLETION-GATE.md).
+- Existing active queue: [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md); no NEXT-052 was created.
 
 ### Initial-model acceptance status
 
@@ -1433,10 +1433,10 @@ No statement in this addendum closes historical graph adjudication, independent-
 
 ## Living continuation — POINT-0/021 / EVT-0184 / CURRENT-068
 
-- User-designated root for this request: [POINT-0/021](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-021-INITIAL-MODEL-COMPLETION-GATE.md).
-- Event and root-cause record: [EVT-0184](../BEHAVIOR-TRACE/EVT-0184-INITIAL-MODEL-COMPLETION-GATE-2026-10-25.md).
-- Next executable checkpoint: [CURRENT-068](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-068-INITIAL-MODEL-COMPLETION-GATE.md).
-- Existing active queue: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md); no NEXT-052 was created.
+- User-designated root for this request: [POINT-0/021](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-021-INITIAL-MODEL-COMPLETION-GATE.md).
+- Event and root-cause record: [EVT-0184](../../docs/architecture/BEHAVIOR-TRACE/EVT-0184-INITIAL-MODEL-COMPLETION-GATE-2026-10-25.md).
+- Next executable checkpoint: [CURRENT-068](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-068-INITIAL-MODEL-COMPLETION-GATE.md).
+- Existing active queue: [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md); no NEXT-052 was created.
 
 ### Initial-model acceptance status
 
@@ -1475,10 +1475,10 @@ The CI Runtime A → Runtime B harness proves artifact transfer between isolated
 
 ## POINT-0/022 — executable GPT-6 portable starter
 
-The current user-designated root is [POINT-0/022](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-022-PORTABLE-STARTER-ENGINE.md); its input/output pair is [IN-052](../../0.0/anchors/PALANG-0.0-IN-20261025-052-PORTABLE-STARTER-ENGINE.md) / [OUT-052](../../0.0/anchors/PALANG-0.0-OUT-20261025-052-PORTABLE-STARTER-ENGINE.md), and its event is [EVT-0185](../BEHAVIOR-TRACE/EVT-0185-PORTABLE-HAIF-GPT6-STARTER-ENGINE-2026-10-25.md). The next execution checkpoint is [CURRENT-069](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-069-PORTABLE-STARTER-ENGINE-AND-GATE-CLOSURE.md).
+The current user-designated root is [POINT-0/022](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-022-PORTABLE-STARTER-ENGINE.md); its input/output pair is [IN-052](../../docs/0.0/anchors/PALANG-0.0-IN-20261025-052-PORTABLE-STARTER-ENGINE.md) / [OUT-052](../../docs/0.0/anchors/PALANG-0.0-OUT-20261025-052-PORTABLE-STARTER-ENGINE.md), and its event is [EVT-0185](../../docs/architecture/BEHAVIOR-TRACE/EVT-0185-PORTABLE-HAIF-GPT6-STARTER-ENGINE-2026-10-25.md). The next execution checkpoint is [CURRENT-069](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-069-PORTABLE-STARTER-ENGINE-AND-GATE-CLOSURE.md).
 
 ### Implemented starter package
-- [HAIF GPT-6 Portable Starter](../../../prototype/haif-gpt6-starter/README.md)
+- [HAIF GPT-6 Portable Starter](README.md)
 - Python runtime: local state, independent anchor/IN/OUT/event IDs, hash-linked records, evidence-gated gap closure, evidence-gated Master–Child promotion, portable export/import digest checks and atomic writes.
 - GPT host instruction contract, manifest, state schema and unit tests are included.
 - Living Architecture Audit runs the new test suite, validates the manifest/schema and packages a ZIP artifact with a SHA-256 sidecar.
@@ -1491,12 +1491,12 @@ CURRENT-068 remains historical evidence. CURRENT-069 owns the next executable ac
 
 ## Latest executable acceptance receipt — POINT-0/022 / CURRENT-069
 
-The portable starter is now executable code, not merely an architecture description: [package README](../../../prototype/haif-gpt6-starter/README.md), [engine](../../../prototype/haif-gpt6-starter/engine.py), [GPT-6 host instructions](../../../prototype/haif-gpt6-starter/GPT6_HOST_INSTRUCTIONS.md).
+The portable starter is now executable code, not merely an architecture description: [package README](README.md), [engine](engine.py), [GPT-6 host instructions](GPT6_HOST_INSTRUCTIONS.md).
 
 - Living Architecture Audit [40198462347](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40198462347) completed SUCCESS on tested SHA \`f482083cc2aeab82964c271c5d97ba4bb8657ce1\`.
 - Seven tests passed, including independent anchor/IN/OUT IDs, hash-chain tamper detection, evidence-gated gap closure, evidence-gated Child promotion, portable digest tamper detection, atomic local read-back and a clean-process CLI export/import recovery.
 - The workflow created \`haif-gpt6-starter-v0.1.zip\`; runner SHA-256 \`7372007564d94f02807c41291ea6e0976e8899c2d1c37306c5978b30fe1399df\`. Audit artifact ID \`12600674334\`, artifact digest \`sha256:aabb3b5bada3386804710a6566f5137fb8f435c1716bff854f6aff268ce611ef\`. Download from the Actions run's Artifacts section.
-- [CURRENT-069](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-069-PORTABLE-STARTER-ENGINE-AND-GATE-CLOSURE.md) is now the active execution checkpoint; CURRENT-068 is retained as history with locally evidenced sub-gates closed.
+- [CURRENT-069](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-069-PORTABLE-STARTER-ENGINE-AND-GATE-CLOSURE.md) is now the active execution checkpoint; CURRENT-068 is retained as history with locally evidenced sub-gates closed.
 - The stale manifest SHA mismatch seen in Portable RAHM Conformance run 40198220828 was reconciled and follow-up conformance plus audit runs 40198744680 and 40198744637 passed on tested SHA 99479872acaede69679b13273e37b9ca51f35ea5.
 
 ### Completion boundary
@@ -1533,10 +1533,10 @@ The artifact is available to the user as the clean starter ZIP in this conversat
 
 ## POINT-0/023 — چکش سخت موتور و اصلاح شناسه‌های تکراری
 
-- نقطهٔ جاری: [POINT-0/023](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-023-HARD-AUDIT-AND-ENGINE-HARDENING.md).
-- ورودی/خروجی: [IN-053](../../0.0/anchors/PALANG-0.0-IN-20261025-053-HARD-AUDIT-AND-ENGINE-HARDENING.md) / [OUT-053](../../0.0/anchors/PALANG-0.0-OUT-20261025-053-HARD-AUDIT-AND-ENGINE-HARDENING.md).
-- رویداد: [EVT-0186](../BEHAVIOR-TRACE/EVT-0186-HAIF-ENGINE-HARD-AUDIT-AND-ID-UNIQUENESS-2026-10-25.md)؛ زمان مرجع ثبت ریشه: [TIME-BINDING-EVT-0186](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0186-POINT-0-023-2026-10-25.md).
-- نقطهٔ اجرای فعال: [CURRENT-070](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-070-HARD-AUDIT-AND-HOST-EXECUTION.md). صف تاریخی موجود [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md) حفظ شده؛ NEXT-052 ساخته نشده.
+- نقطهٔ جاری: [POINT-0/023](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-023-HARD-AUDIT-AND-ENGINE-HARDENING.md).
+- ورودی/خروجی: [IN-053](../../docs/0.0/anchors/PALANG-0.0-IN-20261025-053-HARD-AUDIT-AND-ENGINE-HARDENING.md) / [OUT-053](../../docs/0.0/anchors/PALANG-0.0-OUT-20261025-053-HARD-AUDIT-AND-ENGINE-HARDENING.md).
+- رویداد: [EVT-0186](../../docs/architecture/BEHAVIOR-TRACE/EVT-0186-HAIF-ENGINE-HARD-AUDIT-AND-ID-UNIQUENESS-2026-10-25.md)؛ زمان مرجع ثبت ریشه: [TIME-BINDING-EVT-0186](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0186-POINT-0-023-2026-10-25.md).
+- نقطهٔ اجرای فعال: [CURRENT-070](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-070-HARD-AUDIT-AND-HOST-EXECUTION.md). صف تاریخی موجود [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md) حفظ شده؛ NEXT-052 ساخته نشده.
 - یافتهٔ ممیزی: اعتبارسنج موتور شناسه‌های تکراری IN و OUT را بین تعامل‌ها رد نمی‌کرد. اصلاح واقعی در `prototype/haif-gpt6-starter/engine.py` انجام شد و آزمون رگرسیون اضافه شد که حتی با محاسبهٔ مجدد hash، شناسه‌های تکراری را رد می‌کند.
 - شاهد دقیق: Living Architecture Audit [40206260132](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40206260132) روی commit `81afd4f181e87ba71c4d1acf8b89d4ee8432e1ca` با نتیجهٔ SUCCESS؛ 8/8 آزمون گذشتند و compile، اعتبارسنجی JSON و ساخت بسته نیز موفق شد.
 - بستهٔ تمیز و قابل توزیع، پس از استخراج در پوشهٔ تازه، دوباره آزموده شد: 8/8 PASS؛ SHA-256 برابر `d68e03b42e26b88385d1155c02d09b213a53366e27e99518c7c049f6ec6563be`.
@@ -1545,7 +1545,7 @@ The artifact is available to the user as the clean starter ZIP in this conversat
 
 ## EVT-0187 — اجرای واقعی بستهٔ تمیز در محیط Python
 
-- رسید اجرا: [EVT-0187](../BEHAVIOR-TRACE/EVT-0187-CLEAN-DISTRIBUTION-RUNTIME-SMOKE-2026-10-25.md).
+- رسید اجرا: [EVT-0187](../../docs/architecture/BEHAVIOR-TRACE/EVT-0187-CLEAN-DISTRIBUTION-RUNTIME-SMOKE-2026-10-25.md).
 - بستهٔ تمیز با SHA-256 `d68e03b42e26b88385d1155c02d09b213a53366e27e99518c7c049f6ec6563be` از حالت فشرده خارج شد و خود `engine.py` واقعاً اجرا شد.
 - زنجیرهٔ عملیاتی موفق: `init` → `record` → `audit` → `export` → `import` در فایل حالت دوم → `audit` مجدد. شناسهٔ حالت و head hash پس از import حفظ شدند؛ هر دو ممیزی PASS بودند.
 - شناسهٔ حالت آزمایشی: `HAIF-STATE-3809bda4d6504d6ba2236e4b32d71d5c`; سرآیند زنجیره: `d294c64ecd4c870c03c6512a6ac5aa5b9a2b099343c15c1aebef063bf439d2f5`; SHA-256 بستهٔ خروجی آزمایشی: `6f1824f1186d9fe2bb5bb88cdaff6aaa8dd66ab1eb0b8b3f9464ba3aa09bac01`.
@@ -1563,10 +1563,10 @@ The artifact is available to the user as the clean starter ZIP in this conversat
 
 ## POINT-0/024 / 0+ — نشان تولید مهم با همان هویت نقطهٔ ۰
 
-- نقطهٔ مرجع: [POINT-0/024 (0+)](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-024-0PLUS-PRODUCTION-MARKER.md).
-- ورودی/خروجی: [IN-054](../../0.0/anchors/PALANG-0.0-IN-20261025-054-0PLUS-PRODUCTION-MARKER.md) / [OUT-054](../../0.0/anchors/PALANG-0.0-OUT-20261025-054-0PLUS-PRODUCTION-MARKER.md).
-- رویداد و زمان: [EVT-0188](../BEHAVIOR-TRACE/EVT-0188-POINT-0PLUS-IDENTITY-AND-0-0-LINEAGE-2026-10-25.md) / [TIME-BINDING](../BEHAVIOR-TRACE/TIME-BINDING-POINT-0-024-EVT-0188-2026-10-25.md).
-- گام اجرایی بعدی: [CURRENT-071 / 0.0](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-071-0PLUS-ENGINE-AND-HARD-AUDIT.md). صف فعال قبلی NEXT-051 حفظ می‌شود.
+- نقطهٔ مرجع: [POINT-0/024 (0+)](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-024-0PLUS-PRODUCTION-MARKER.md).
+- ورودی/خروجی: [IN-054](../../docs/0.0/anchors/PALANG-0.0-IN-20261025-054-0PLUS-PRODUCTION-MARKER.md) / [OUT-054](../../docs/0.0/anchors/PALANG-0.0-OUT-20261025-054-0PLUS-PRODUCTION-MARKER.md).
+- رویداد و زمان: [EVT-0188](../../docs/architecture/BEHAVIOR-TRACE/EVT-0188-POINT-0PLUS-IDENTITY-AND-0-0-LINEAGE-2026-10-25.md) / [TIME-BINDING](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-POINT-0-024-EVT-0188-2026-10-25.md).
+- گام اجرایی بعدی: [CURRENT-071 / 0.0](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-071-0PLUS-ENGINE-AND-HARD-AUDIT.md). صف فعال قبلی NEXT-051 حفظ می‌شود.
 - قاعدهٔ معماری: `0` و `0+` دو هویت نیستند؛ `0+` نشان اهمیت تولید روی همان نقطه است. `0.0` ادامهٔ اجرایی مستقل و فرزند همان نقطه است.
 - در موتور قابل انتقال، `register_point` و فرمان `point` اضافه شد؛ موتور برخورد شناسه/برچسب، نشان `0+` جدا از `0`، و والد ناموجود برای ادامه را رد می‌کند. رویداد ثبت نقطه نیز باید با رکورد نقطه در state تطبیق داشته باشد؛ دست‌کاری رکورد بدون رویداد باید شکست بخورد.
 - چکش سخت نخست خطای واقعی `append_event(... kind=...)` را آشکار کرد؛ با تغییر فیلد به `point_kind` اصلاح شد. سپس آزمون‌های سخت‌تر برای دست‌کاری رکورد و والد خودارجاعی اضافه شد. نتیجهٔ آزمون روی آخرین commit باید از [Living Architecture Audit](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions) خوانده شود؛ تا آن زمان آخرین مرحله CI «در انتظار» است.
@@ -1575,25 +1575,25 @@ The artifact is available to the user as the clean starter ZIP in this conversat
 
 
 ## EVT-0189 — بستهٔ تمیز و اجرای واقعی موتور
-- شاهد بسته و آزمون: [EVT-0189](../BEHAVIOR-TRACE/EVT-0189-0PLUS-CLEAN-DISTRIBUTION-SMOKE-2026-10-25.md).
+- شاهد بسته و آزمون: [EVT-0189](../../docs/architecture/BEHAVIOR-TRACE/EVT-0189-0PLUS-CLEAN-DISTRIBUTION-SMOKE-2026-10-25.md).
 - نسخهٔ توزیع: v0.2.1؛ SHA-256 `51a5f9a6def97a0564a8b6542bbf4a5b9ca46a81a267a4a02db7c53511e16f2d`.
 - 12/12 آزمون در CI و 12/12 پس از استخراج تازه موفق؛ چرخهٔ CLI برای `0/0+`، `0.0`، ثبت تعامل، ممیزی، خروجی و بازیابی ورودی موفق شد.
 - مرز مهم: این اثبات، اجرای محلی/CI است؛ اجرای میزبان مستقل GPT-6 و ماندگاری بین نشست‌ها همچنان باز است.
 
 
 ## v0.3.0 — راه‌اندازی یک‌فرمانی مدل اولیه
-- رویداد اثبات: [EVT-0190](../BEHAVIOR-TRACE/EVT-0190-0PLUS-BOOTSTRAP-CLEAN-PACKAGE-2026-10-25.md)، زمان ثبت: [TIME-BINDING-EVT-0190](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0190-BOOTSTRAP-PACKAGE-2026-10-25.md).
+- رویداد اثبات: [EVT-0190](../../docs/architecture/BEHAVIOR-TRACE/EVT-0190-0PLUS-BOOTSTRAP-CLEAN-PACKAGE-2026-10-25.md)، زمان ثبت: [TIME-BINDING-EVT-0190](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0190-BOOTSTRAP-PACKAGE-2026-10-25.md).
 - بستهٔ قابل انتقال v0.3.0: SHA-256 `297b3b329143c4b99f55373db0c4bb97896b0e484253622e63eeb32a4429f164`; 13/13 آزمون در CI و استخراج تازه موفق.
 - فرمان `bootstrap_0plus.py` یک ریشهٔ واحد با برچسب‌های `0` و `0+`، ادامهٔ فرزند `0.0` و شش شکاف باز برای قابلیت‌های میزبان می‌سازد؛ بازنویسی state موجود را رد می‌کند.
 - ممیزی، خروجی/ورودی بسته و بازیابی پس از import در مسیر محلی موفق‌اند. اجرای میزبان مستقل GPT-6 هنوز اثبات نشده و گام فعال بعدی است.
 
 ## 2026-10-26 — POINT-0/025: excavation accepted, dual path preserved
 
-- New user root: [POINT-0/025](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-025-EXCAVATION-FINDINGS-DUAL-PATH.md).
-- IN/OUT: [IN-061](../../0.0/anchors/PALANG-0.0-IN-20261026-061-EXCAVATION-FINDINGS-DUAL-PATH.md) / [OUT-060](../../0.0/anchors/PALANG-0.0-OUT-20261026-060-EXCAVATION-FINDINGS-DUAL-PATH.md).
-- Event/time: [EVT-0191](../BEHAVIOR-TRACE/EVT-0191-EXCAVATION-FINDINGS-DUAL-PATH-2026-10-26.md) / [root commit time binding](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0191-POINT-0-025-2026-10-26.md).
-- Current execution: [CURRENT-072](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-072-DUAL-PATH-EXCAVATION.md).
-- Existing graph queue: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- New user root: [POINT-0/025](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-025-EXCAVATION-FINDINGS-DUAL-PATH.md).
+- IN/OUT: [IN-061](../../docs/0.0/anchors/PALANG-0.0-IN-20261026-061-EXCAVATION-FINDINGS-DUAL-PATH.md) / [OUT-060](../../docs/0.0/anchors/PALANG-0.0-OUT-20261026-060-EXCAVATION-FINDINGS-DUAL-PATH.md).
+- Event/time: [EVT-0191](../../docs/architecture/BEHAVIOR-TRACE/EVT-0191-EXCAVATION-FINDINGS-DUAL-PATH-2026-10-26.md) / [root commit time binding](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0191-POINT-0-025-2026-10-26.md).
+- Current execution: [CURRENT-072](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261026-072-DUAL-PATH-EXCAVATION.md).
+- Existing graph queue: [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 
 ### Mandatory dual-path rule
 Path A constructs and tests the portable initial model; Path B remediates the existing architecture and graph. They share anchors, events, evidence, current checkpoint, reference index and queue, but retain distinct gates. Neither path can be substituted for the other. NEXT-051 remains active; no NEXT-052 is created just to renumber open work.
@@ -1611,7 +1611,7 @@ The local v0.3.0 package has prior CI and fresh-extraction evidence (13/13 tests
 - Living Architecture Audit [40266946882](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40266946882) completed SUCCESS on tested SHA 69f85d383f95947447fc995ca19422c650622470. Structural checks PASS; graph content remains REVIEW_REQUIRED. Audit artifact ID 12626771386, digest sha256:e4171065b3076bb0ea43ff3f108c1bc8413d34888c7cfb21035f630fc639d315.
 - Portable RAHM Conformance [40266946878](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40266946878) completed SUCCESS on the same SHA. Exact-byte and live-reference SHA-256 scans PASS; package contains 119 files and 77 live references; package SHA-256 93b8613af307b6d123505255aaa14822ddf673cef5d33bc3f3ae590f68f4807f.
 - Pointer discovery 0.2 reports SCOPED_CONSISTENT: CURRENT-066 is the bounded overlay-recovery pointer; CURRENT-072 is the global project continuation. No winner was selected by numeric order; historical records remain preserved.
-- Latest graph findings remain open: 63 Stable-ID groups (62 unreviewed), 89 Production-ID groups, 7 Reference-ID groups, 38 event-number groups, 13 ambiguous parent edges and 11 exact-content duplicate groups; 0 missing local links in 6,755 scanned local-link edges. See the updated [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Latest graph findings remain open: 63 Stable-ID groups (62 unreviewed), 89 Production-ID groups, 7 Reference-ID groups, 38 event-number groups, 13 ambiguous parent edges and 11 exact-content duplicate groups; 0 missing local links in 6,755 scanned local-link edges. See the updated [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - Independent GPT-host import, real host persistence/restart, automatic capture, background execution and external writes remain OPEN / NOT VERIFIED. These repository CI passes do not prove deployment inside a separate GPT host.
 
 ## Latest post-ID-collision exact-head receipt — 2026-10-26
@@ -1627,11 +1627,11 @@ The local v0.3.0 package has prior CI and fresh-extraction evidence (13/13 tests
 
 ## آخرین اتصال اجرایی — POINT-0/026 و دو مسیر A/B
 
-- نقطهٔ ریشه: [POINT-0/026](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-026-DUAL-PATH-HAIF-CONTINUATION.md)
-- ورودی/خروجی: [IN-062](../../0.0/anchors/PALANG-0.0-IN-20261026-062-DUAL-PATH-HAIF-CONTINUATION.md) / [OUT-061](../../0.0/anchors/PALANG-0.0-OUT-20261026-061-DUAL-PATH-HAIF-CONTINUATION.md)
-- رویداد: [EVT-0192](../BEHAVIOR-TRACE/EVT-0192-USER-REQUEST-POINT-0-DUAL-PATH-HAIF-CONTINUATION-2026-10-26.md)
-- نقطهٔ ادامهٔ اجرایی: [CURRENT-073](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-073-DUAL-PATH-HAIF-CONTINUATION.md)
-- صف فعال: [NEXT-051](../INTEGRATION-QUEUE/README.md)
+- نقطهٔ ریشه: [POINT-0/026](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-026-DUAL-PATH-HAIF-CONTINUATION.md)
+- ورودی/خروجی: [IN-062](../../docs/0.0/anchors/PALANG-0.0-IN-20261026-062-DUAL-PATH-HAIF-CONTINUATION.md) / [OUT-061](../../docs/0.0/anchors/PALANG-0.0-OUT-20261026-061-DUAL-PATH-HAIF-CONTINUATION.md)
+- رویداد: [EVT-0192](../../docs/architecture/BEHAVIOR-TRACE/EVT-0192-USER-REQUEST-POINT-0-DUAL-PATH-HAIF-CONTINUATION-2026-10-26.md)
+- نقطهٔ ادامهٔ اجرایی: [CURRENT-073](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261026-073-DUAL-PATH-HAIF-CONTINUATION.md)
+- صف فعال: [NEXT-051](../../docs/architecture/INTEGRATION-QUEUE/README.md)
 
 ### مسیر A — ساخت مدل اولیهٔ قابل‌انتقال
 بستهٔ HAIF/RAHM، قراردادها و schema، بررسی ارجاع‌های زنده، استخراج تمیز، round-trip ورود/خروج، سپس آزمون در میزبان مستقل و بازیابی پس از شروع مجدد. آزمون میزبان مستقل تا فراهم‌شدن مسیر مجاز، NOT RUN است؛ آزمون محلی جای آن را نمی‌گیرد.
@@ -1646,17 +1646,17 @@ Master تغییر را فقط پس از اعتبارسنجی و پذیرش مس�
 
 ## POINT-0/027 — تکمیل معماری مسیر B
 
-- [نقطهٔ ریشهٔ ۰/۰۲۷](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-027-PATH-B-GAP-RECONCILIATION.md)
-- [نقطهٔ اجرایی CURRENT-074](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-074-PATH-B-GAP-RECONCILIATION.md)
-- [رویداد EVT-0193](../BEHAVIOR-TRACE/EVT-0193-POINT-0-PATH-B-GAP-RECONCILIATION-2026-10-26.md)
+- [نقطهٔ ریشهٔ ۰/۰۲۷](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-027-PATH-B-GAP-RECONCILIATION.md)
+- [نقطهٔ اجرایی CURRENT-074](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261026-074-PATH-B-GAP-RECONCILIATION.md)
+- [رویداد EVT-0193](../../docs/architecture/BEHAVIOR-TRACE/EVT-0193-POINT-0-PATH-B-GAP-RECONCILIATION-2026-10-26.md)
 
 قاعدهٔ معماری: شناسهٔ تکراری به‌تنهایی تعارض معنایی نیست؛ SHA یکسان به‌تنهایی هم‌نقشی منطقی را ثابت نمی‌کند. هر مسیر باید نقش مستقل خود را حفظ کند. تصمیم‌های جزئیِ دارای SHA معتبر فقط مسیرهای پوشش‌داده‌شده را داوری می‌کنند؛ گروه تا پوشش کامل همهٔ اعضا باز می‌ماند. والد مبهم بدون شاهد انتخاب نمی‌شود، رویدادهای مستقل با شمارهٔ کوتاه مشترک ادغام نمی‌شوند، و هیچ فایل تاریخی برای پایین‌آوردن شمار برخوردها حذف نمی‌شود. مسیر A و B مستقل اما موازی‌اند.
 
 
 ## POINT-0/032 — Master–Rahm–Child bridge and initial-model validation (2026-10-26)
-- Root: [POINT-0/032](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-032-MASTER-RAHM-CHILD-INITIAL-MODEL-BRIDGE.md)
-- Chain: [IN-067](../../0.0/anchors/PALANG-0.0-IN-20261026-067-MASTER-RAHM-CHILD-BRIDGE.md) → [OUT-066](../../0.0/anchors/PALANG-0.0-OUT-20261026-066-MASTER-RAHM-CHILD-BRIDGE.md) → [EVT-0201](../BEHAVIOR-TRACE/EVT-0201-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION-2026-10-26.md) → [CURRENT-079](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-079-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION.md).
-- Contract: [Master–Rahm–Child cross-validation](../MASTER-RAHM-CHILD/MASTER-RAHM-CHILD-CROSS-VALIDATION-CONTRACT-2026-10-26.md).
+- Root: [POINT-0/032](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-032-MASTER-RAHM-CHILD-INITIAL-MODEL-BRIDGE.md)
+- Chain: [IN-067](../../docs/0.0/anchors/PALANG-0.0-IN-20261026-067-MASTER-RAHM-CHILD-BRIDGE.md) → [OUT-066](../../docs/0.0/anchors/PALANG-0.0-OUT-20261026-066-MASTER-RAHM-CHILD-BRIDGE.md) → [EVT-0201](../../docs/architecture/BEHAVIOR-TRACE/EVT-0201-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION-2026-10-26.md) → [CURRENT-079](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261026-079-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION.md).
+- Contract: [Master–Rahm–Child cross-validation](../../docs/architecture/MASTER-RAHM-CHILD/MASTER-RAHM-CHILD-CROSS-VALIDATION-CONTRACT-2026-10-26.md).
 - Role binding: original Future AI / Palang Footprint = MASTER; initial-model project = subordinate RAHM; tested but not yet approved output = CHILD CANDIDATE. Promotion requires explicit Master review.
 - Status: repository bridge registered; actual interactive-project test receipts, exact-final-SHA audit, portable digest reconciliation, clean-host import and external persistence remain OPEN / NOT RUN.
 - NEXT-051 remains the only active remediation queue; NEXT-052 is not created.
@@ -1665,8 +1665,8 @@ Master تغییر را فقط پس از اعتبارسنجی و پذیرش مس�
 
 ## POINT-0/032 — چرخهٔ حاکم MASTER / RAHM / CHILD و آزمون تعاملی
 
-- [نقطهٔ ریشهٔ کاربر](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-032-MASTER-RAHM-CHILD-INITIAL-MODEL-BRIDGE.md)
-- [IN-067](../../0.0/anchors/PALANG-0.0-IN-20261026-067-MASTER-RAHM-CHILD-BRIDGE.md) → [OUT-066](../../0.0/anchors/PALANG-0.0-OUT-20261026-066-MASTER-RAHM-CHILD-BRIDGE.md) → [EVT-0201](../BEHAVIOR-TRACE/EVT-0201-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION-2026-10-26.md) → [CURRENT-079](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-079-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION.md).
+- [نقطهٔ ریشهٔ کاربر](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-032-MASTER-RAHM-CHILD-INITIAL-MODEL-BRIDGE.md)
+- [IN-067](../../docs/0.0/anchors/PALANG-0.0-IN-20261026-067-MASTER-RAHM-CHILD-BRIDGE.md) → [OUT-066](../../docs/0.0/anchors/PALANG-0.0-OUT-20261026-066-MASTER-RAHM-CHILD-BRIDGE.md) → [EVT-0201](../../docs/architecture/BEHAVIOR-TRACE/EVT-0201-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION-2026-10-26.md) → [CURRENT-079](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261026-079-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION.md).
 
 ### نقش‌ها و دروازهٔ پذیرش
 - **MASTER / مستر:** پروژهٔ اصلی و مرجع قواعد پذیرفته‌شده، داده‌های رفتاری، تاریخچه، تبار، منشأ و شواهد. تغییر مستر باید افزایشی، قابل‌حسابرسی و دارای تصمیم پذیرش باشد.
@@ -1681,7 +1681,7 @@ Master تغییر را فقط پس از اعتبارسنجی و پذیرش مس�
 هیچ شکاف گراف تاریخی، برخورد شناسه، والد مبهم، منشأ ناقص یا مقصد بیرونی با این اتصال بسته نمی‌شود. درپوش‌ها COVERED / DEFERRED و برگشت‌پذیرند. صف فعال NEXT-051 باقی می‌ماند؛ NEXT-052 نساز.
 
 ### Runbook اجرایی برای آزمون در پروژهٔ تعاملی
-- [INTERACTIVE-PROJECT-VALIDATION-RUNBOOK](../MASTER-RAHM-CHILD/INTERACTIVE-PROJECT-VALIDATION-RUNBOOK.md) شامل متن آمادهٔ چسباندن در پروژهٔ RAHM، ده آزمون، قالب رسید و پروتکل بازگشت نتیجه به مستر است.
+- [INTERACTIVE-PROJECT-VALIDATION-RUNBOOK](../../docs/architecture/MASTER-RAHM-CHILD/INTERACTIVE-PROJECT-VALIDATION-RUNBOOK.md) شامل متن آمادهٔ چسباندن در پروژهٔ RAHM، ده آزمون، قالب رسید و پروتکل بازگشت نتیجه به مستر است.
 - این سند فقط روش آزمون را آماده می‌کند؛ اجرای واقعی در مقصد تعاملی تا دریافت رسید مستقیم NOT RUN / NOT VERIFIED است.
 
 ## مبنای نقش‌ها از خروجی مرجع پیشین — 2026-10-26
@@ -1703,36 +1703,36 @@ Master تغییر را فقط پس از اعتبارسنجی و پذیرش مس�
 موفقیت نوع اول، نوع دوم را ثابت نمی‌کند. تا وقتی رسید واقعی مقصد و تصمیم پذیرش مستر وجود ندارد، هیچ نامزدی CHILD پذیرفته‌شده اعلام نمی‌شود.
 
 ### Clarification received and bound to CURRENT-080
-The expanded user definition is recorded in [IN-068](../../0.0/anchors/PALANG-0.0-IN-20261026-068-MASTER-RAHM-CHILD-CLARIFICATION.md), [EVT-0202](../../architecture/BEHAVIOR-TRACE/EVT-0202-MASTER-RAHM-CHILD-CLARIFICATION-2026-10-26.md), and [CURRENT-080](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-080-MASTER-RAHM-CHILD-CLARIFICATION.md). Extend this existing package; do not create a parallel folder. Repository CI and independent interactive-host tests are separate proof lanes.
+The expanded user definition is recorded in [IN-068](../../docs/0.0/anchors/PALANG-0.0-IN-20261026-068-MASTER-RAHM-CHILD-CLARIFICATION.md), [EVT-0202](../../docs/architecture/BEHAVIOR-TRACE/EVT-0202-MASTER-RAHM-CHILD-CLARIFICATION-2026-10-26.md), and [CURRENT-080](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261026-080-MASTER-RAHM-CHILD-CLARIFICATION.md). Extend this existing package; do not create a parallel folder. Repository CI and independent interactive-host tests are separate proof lanes.
 
 
 ### POINT-0/033 — excavation continuation
-The latest continuation is [POINT-0/033](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-033-EXCAVATION-AND-MASTER-RAHM-CHILD-CONTINUATION.md) → [IN-069](../../0.0/anchors/PALANG-0.0-IN-20261026-069-EXCAVATION-AND-MASTER-RAHM-CHILD-CONTINUATION.md) → [OUT-068](../../0.0/anchors/PALANG-0.0-OUT-20261026-068-EXCAVATION-AND-MASTER-RAHM-CHILD-CONTINUATION.md) → [EVT-0203](../../architecture/BEHAVIOR-TRACE/EVT-0203-POINT-0-033-EXCAVATION-AND-MRCC-CONTINUATION-2026-10-26.md) → [CURRENT-081](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-081-EXCAVATION-AND-MASTER-RAHM-CHILD-CONTINUATION.md). See the [excavation register](../../architecture/BEHAVIOR-TRACE/EXCAVATION-REGISTER-2026-10-26-MASTER-RAHM-CHILD.md) for the preserved POINT-0/032 lineage ambiguity and reversible covers. No parallel RAHM folder is created.
+The latest continuation is [POINT-0/033](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-033-EXCAVATION-AND-MASTER-RAHM-CHILD-CONTINUATION.md) → [IN-069](../../docs/0.0/anchors/PALANG-0.0-IN-20261026-069-EXCAVATION-AND-MASTER-RAHM-CHILD-CONTINUATION.md) → [OUT-068](../../docs/0.0/anchors/PALANG-0.0-OUT-20261026-068-EXCAVATION-AND-MASTER-RAHM-CHILD-CONTINUATION.md) → [EVT-0203](../../docs/architecture/BEHAVIOR-TRACE/EVT-0203-POINT-0-033-EXCAVATION-AND-MRCC-CONTINUATION-2026-10-26.md) → [CURRENT-081](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261026-081-EXCAVATION-AND-MASTER-RAHM-CHILD-CONTINUATION.md). See the [excavation register](../../docs/architecture/BEHAVIOR-TRACE/EXCAVATION-REGISTER-2026-10-26-MASTER-RAHM-CHILD.md) for the preserved POINT-0/032 lineage ambiguity and reversible covers. No parallel RAHM folder is created.
 
 
 ### POINT-0/034 — اجرای تعاملی قابل راستی‌آزمایی
 
-ادامهٔ رسمی: [POINT-0/034](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-034-INTERACTIVE-RAHM-EXECUTION.md) → [IN-070](../../0.0/anchors/PALANG-0.0-IN-20261026-070-INTERACTIVE-RAHM-EXECUTION.md) → [OUT-069](../../0.0/anchors/PALANG-0.0-OUT-20261026-069-INTERACTIVE-RAHM-EXECUTION.md) → [EVT-0204](../../architecture/BEHAVIOR-TRACE/EVT-0204-POINT-0-034-INTERACTIVE-RAHM-EXECUTION-2026-10-26.md) → [CURRENT-082](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-082-INTERACTIVE-RAHM-EXECUTION.md).
+ادامهٔ رسمی: [POINT-0/034](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-034-INTERACTIVE-RAHM-EXECUTION.md) → [IN-070](../../docs/0.0/anchors/PALANG-0.0-IN-20261026-070-INTERACTIVE-RAHM-EXECUTION.md) → [OUT-069](../../docs/0.0/anchors/PALANG-0.0-OUT-20261026-069-INTERACTIVE-RAHM-EXECUTION.md) → [EVT-0204](../../docs/architecture/BEHAVIOR-TRACE/EVT-0204-POINT-0-034-INTERACTIVE-RAHM-EXECUTION-2026-10-26.md) → [CURRENT-082](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261026-082-INTERACTIVE-RAHM-EXECUTION.md).
 
-این ادامه به بستهٔ RAHM و نمونهٔ اجرایی موجود متصل است. متن آمادهٔ اجرا در [راهنمای آزمون پروژهٔ تعاملی](../../architecture/MASTER-RAHM-CHILD/INTERACTIVE-PROJECT-VALIDATION-RUNBOOK.md) اضافه شده است. مخزن می‌تواند بسته را آماده و آزمون‌های خودش را اجرا کند؛ اما واردسازی، بازیابی مستقل، restart و round-trip باید از خود پروژهٔ مقصد رسید داشته باشند. تا آن زمان CHILD تأییدشده نداریم. صف سراسری NEXT-051 است و NEXT-052 ساخته نمی‌شود.
+این ادامه به بستهٔ RAHM و نمونهٔ اجرایی موجود متصل است. متن آمادهٔ اجرا در [راهنمای آزمون پروژهٔ تعاملی](../../docs/architecture/MASTER-RAHM-CHILD/INTERACTIVE-PROJECT-VALIDATION-RUNBOOK.md) اضافه شده است. مخزن می‌تواند بسته را آماده و آزمون‌های خودش را اجرا کند؛ اما واردسازی، بازیابی مستقل، restart و round-trip باید از خود پروژهٔ مقصد رسید داشته باشند. تا آن زمان CHILD تأییدشده نداریم. صف سراسری NEXT-051 است و NEXT-052 ساخته نمی‌شود.
 
-- لنگر زمانی مخزن: [TIME-BINDING-POINT-0-034](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-POINT-0-034-EVT-0204-2026-10-26.md) — UTC مرجع اصلی؛ معادل تهران از همان لحظه محاسبه شده است.
+- لنگر زمانی مخزن: [TIME-BINDING-POINT-0-034](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-POINT-0-034-EVT-0204-2026-10-26.md) — UTC مرجع اصلی؛ معادل تهران از همان لحظه محاسبه شده است.
 
 ## POINT-0/035 — Evidence-governed graph repair and dual-path continuation
 
-- Root: [POINT-0/035](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-035-IDENTIFIER-AND-PARENT-GRAPH-REPAIR.md)
-- Current checkpoint: [CURRENT-083](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-083-IDENTIFIER-AND-PARENT-GRAPH-REPAIR.md)
-- Event: [EVT-0205](../BEHAVIOR-TRACE/EVT-0205-POINT-0-035-IDENTIFIER-AND-PARENT-GRAPH-REPAIR-2026-10-26.md)
+- Root: [POINT-0/035](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-035-IDENTIFIER-AND-PARENT-GRAPH-REPAIR.md)
+- Current checkpoint: [CURRENT-083](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261026-083-IDENTIFIER-AND-PARENT-GRAPH-REPAIR.md)
+- Event: [EVT-0205](../../docs/architecture/BEHAVIOR-TRACE/EVT-0205-POINT-0-035-IDENTIFIER-AND-PARENT-GRAPH-REPAIR-2026-10-26.md)
 - Governing rule: identifier definitions are extracted from a document's own metadata header; references inside body text remain occurrences, not declarations. Parent edges use source-specific evidence when available and fail closed when an override is invalid.
 - Path A remains the existing RAHM package and actual-host import/restart/round-trip validation. Path B is historical graph repair. Neither path substitutes for the other; MASTER remains final authority and CHILD promotion requires independent evidence and explicit acceptance.
 - Current graph gaps and interactive-host receipts remain OPEN until exact-head tests and destination evidence exist. Continue NEXT-051 only.
 
 
 ## آخرین ادامهٔ اجرایی — POINT-0/036 (نشانگر ۰+) / CURRENT-085 (2026-10-26)
-- نقطهٔ ریشه: [POINT-0/036](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-036-DEEP-EXCAVATION-INITIAL-MODEL-COMPLETION.md).
+- نقطهٔ ریشه: [POINT-0/036](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-036-DEEP-EXCAVATION-INITIAL-MODEL-COMPLETION.md).
 - ۰+ نشانگر تولید روی همان نقطهٔ مرجع POINT-0/036 است؛ نقطهٔ ریشهٔ موازی ایجاد نمی‌کند.
-- زنجیرهٔ تازه: [IN-073](../../0.0/anchors/PALANG-0.0-IN-20261026-073-0PLUS-MODEL-ACCELERATION.md) → [OUT-072](../../0.0/anchors/PALANG-0.0-OUT-20261026-072-0PLUS-MODEL-ACCELERATION.md) → [EVT-0207](../BEHAVIOR-TRACE/EVT-0207-POINT-0-036-0PLUS-MODEL-ACCELERATION-2026-10-26.md) → [CURRENT-085](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-085-0PLUS-MODEL-ACCELERATION.md).
-- صف ادامهٔ واحد: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). صف موازی NEXT-052 ساخته نمی‌شود.
+- زنجیرهٔ تازه: [IN-073](../../docs/0.0/anchors/PALANG-0.0-IN-20261026-073-0PLUS-MODEL-ACCELERATION.md) → [OUT-072](../../docs/0.0/anchors/PALANG-0.0-OUT-20261026-072-0PLUS-MODEL-ACCELERATION.md) → [EVT-0207](../../docs/architecture/BEHAVIOR-TRACE/EVT-0207-POINT-0-036-0PLUS-MODEL-ACCELERATION-2026-10-26.md) → [CURRENT-085](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261026-085-0PLUS-MODEL-ACCELERATION.md).
+- صف ادامهٔ واحد: [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). صف موازی NEXT-052 ساخته نمی‌شود.
 - مسیر A: تکمیل مدل اولیهٔ اجرایی، بستهٔ قابل‌حمل، آزمون تمامیت، ورود/خروج، بازیابی و سپس پذیرش میزبان مستقل.
 - مسیر B: خاک‌برداری تاریخچه، جداسازی تعریف شناسه از ارجاع، حل رابطهٔ والد با شواهد مسیر مبدأ، اصلاح پیوندهای خراب و داوری برخوردهای هویتی.
 - قاعدهٔ معماری: MASTER مرجع نهایی است؛ RAHM محیط/بستهٔ اعتبارسنجی است؛ CHILD فقط پس از شواهد مستقل و پذیرش صریح ارتقا می‌یابد. موفقیت CI مخزن به‌تنهایی آزمون میزبان مستقل نیست.
@@ -1767,7 +1767,7 @@ The latest continuation is [POINT-0/033](../../0.0/anchors/GPT6-RAHM-USER-POINT-
 
 ## Gap-cover برای والد تاریخی گمشده — حفظ زنجیره بدون جعل هویت
 
-- [Recovery Bridge](../../reference/REFERENCE-DOCUMENTS/HAIF-CORE-MASTER-CHILD-RAHM-RECOVERY-BRIDGE-2026-10-26-001.md) مسیر بازیابی قابل‌ردیابی برای شناسهٔ تاریخی `HAIF-CORE-MASTER-CHILD-RAHM-2026-09-15-001` است.
+- [Recovery Bridge](../../docs/reference/REFERENCE-DOCUMENTS/HAIF-CORE-MASTER-CHILD-RAHM-RECOVERY-BRIDGE-2026-10-26-001.md) مسیر بازیابی قابل‌ردیابی برای شناسهٔ تاریخی `HAIF-CORE-MASTER-CHILD-RAHM-2026-09-15-001` است.
 - این پل، سند اصلی گمشده نیست و به‌عنوان والد اصلی معرفی نمی‌شود. دو رابطهٔ والد در گراف همچنان UNRESOLVED می‌مانند تا متن مستقل اصلی یا شاهد معتبر تاریخچه پیدا شود.
 - این تصمیم اجازه می‌دهد مسیر A و توسعهٔ مدل ادامه یابد، بی‌آنکه شکاف تاریخی به‌اشتباه بسته یا هویت سند جعل شود.
 - ممیزی معماری زنده و انطباق بستهٔ RAHM روی یک سر مشترک `127cfd03095a881ae2aa9a625e0fe923644e9795` هر دو PASS: [Audit 40355174264](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40355174264) و [Conformance 40355174175](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40355174175).
@@ -1777,7 +1777,7 @@ The latest continuation is [POINT-0/033](../../0.0/anchors/GPT6-RAHM-USER-POINT-
 
 
 ## Latest host-readiness continuation — 2026-10-26
-- Root: [POINT-0/037](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-037-PORTABLE-HOST-READINESS-AND-REPOSITORY-STATE.md); chain [IN-074](../../0.0/anchors/PALANG-0.0-IN-20261026-074-PORTABLE-HOST-READINESS.md) → [OUT-073](../../0.0/anchors/PALANG-0.0-OUT-20261026-073-PORTABLE-HOST-READINESS.md) → [EVT-0208](../BEHAVIOR-TRACE/EVT-0208-POINT-0-037-PORTABLE-HOST-READINESS-2026-10-26.md) → [CURRENT-086](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-086-PORTABLE-HOST-READINESS.md).
+- Root: [POINT-0/037](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-037-PORTABLE-HOST-READINESS-AND-REPOSITORY-STATE.md); chain [IN-074](../../docs/0.0/anchors/PALANG-0.0-IN-20261026-074-PORTABLE-HOST-READINESS.md) → [OUT-073](../../docs/0.0/anchors/PALANG-0.0-OUT-20261026-073-PORTABLE-HOST-READINESS.md) → [EVT-0208](../../docs/architecture/BEHAVIOR-TRACE/EVT-0208-POINT-0-037-PORTABLE-HOST-READINESS-2026-10-26.md) → [CURRENT-086](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261026-086-PORTABLE-HOST-READINESS.md).
 - Package conformance and exact-byte/live-reference scans passed on tested SHA `62f8007deefbfbdb0fbe4156074f069f070fc7f2`; package has 178 files, 639,095 bytes, SHA-256 `0864ff217585d03ffb649ca1f5c1a4b5404d6fa5bc7166be4c1e4c803d4b330f`. Download via [Actions artifact](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40355991343/artifacts/12663829740).
 - Bounded independent CI transfer Runtime A→B passed; this does not substitute for the user's actual interactive host. Import/restart/persistence/round-trip remain NOT RUN until destination receipts are returned.
 - Graph on tested SHA: 0 missing local links, 0 ambiguous parent edges, 2 unresolved parent edges, 1 open Stable-ID group, 66 unreviewed Production-ID groups, 5 Reference-ID groups, 41 event-number collision groups and 11 exact-content duplicate groups. Keep them open unless source evidence closes them.
@@ -1786,8 +1786,8 @@ The latest continuation is [POINT-0/033](../../0.0/anchors/GPT6-RAHM-USER-POINT-
 
 ## Latest living continuation — POINT-0/038 / CURRENT-087 (2026-10-27)
 
-- Root: [POINT-0/038](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-038-TEMPORARY-GAP-COVER-AND-GOAL-EXECUTION.md).
-- Chain: [IN-075](../../0.0/anchors/PALANG-0.0-IN-20261027-075-TEMPORARY-GAP-COVER.md) → [OUT-074](../../0.0/anchors/PALANG-0.0-OUT-20261027-074-GOAL-EXECUTION.md) → [EVT-0209](../BEHAVIOR-TRACE/EVT-0209-TEMPORARY-GAP-COVER-AND-GOAL-EXECUTION-2026-10-27.md) → [CURRENT-087](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-087-GOAL-EXECUTION-WITH-TEMPORARY-COVER.md).
+- Root: [POINT-0/038](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-038-TEMPORARY-GAP-COVER-AND-GOAL-EXECUTION.md).
+- Chain: [IN-075](../../docs/0.0/anchors/PALANG-0.0-IN-20261027-075-TEMPORARY-GAP-COVER.md) → [OUT-074](../../docs/0.0/anchors/PALANG-0.0-OUT-20261027-074-GOAL-EXECUTION.md) → [EVT-0209](../../docs/architecture/BEHAVIOR-TRACE/EVT-0209-TEMPORARY-GAP-COVER-AND-GOAL-EXECUTION-2026-10-27.md) → [CURRENT-087](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-087-GOAL-EXECUTION-WITH-TEMPORARY-COVER.md).
 - Governance decision: temporarily cover safe gaps reversibly so implementation toward the primary HAIF goal is not blocked. The covered issues retain their original OPEN / UNRESOLVED status until evidence justifies closure.
 - Path A continues toward real-host import, cold-start reconstruction, restart/recovery, persistence and round-trip. Package/CI evidence is not substituted for direct host receipts.
 - Path B continues historical graph recovery under the existing Recovery Bridge and NEXT-051; no speculative identity merge or invented historical parent.
@@ -1795,21 +1795,21 @@ The latest continuation is [POINT-0/033](../../0.0/anchors/GPT6-RAHM-USER-POINT-
 
 
 ### لنگرهای زمانی مرجع POINT-0/038
-- [POINT-0/038](../BEHAVIOR-TRACE/TIME-BINDING-POINT-0-038-2026-10-27.md): UTC 2026-10-27T04:11:51Z؛ تهران 07:41:51 +03:30.
-- [IN-075](../BEHAVIOR-TRACE/TIME-BINDING-IN-075-POINT-0-038-2026-10-27.md): UTC 2026-10-27T04:11:55Z؛ تهران 07:41:55 +03:30.
-- [OUT-074](../BEHAVIOR-TRACE/TIME-BINDING-OUT-074-POINT-0-038-2026-10-27.md): UTC 2026-10-27T04:11:59Z؛ تهران 07:41:59 +03:30.
-- [EVT-0209](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0209-POINT-0-038-2026-10-27.md): UTC 2026-10-27T04:12:03Z؛ تهران 07:42:03 +03:30.
-- [CURRENT-087](../BEHAVIOR-TRACE/TIME-BINDING-CURRENT-087-POINT-0-038-2026-10-27.md): UTC 2026-10-27T04:19:28Z؛ تهران 07:49:28 +03:30.
+- [POINT-0/038](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-POINT-0-038-2026-10-27.md): UTC 2026-10-27T04:11:51Z؛ تهران 07:41:51 +03:30.
+- [IN-075](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-IN-075-POINT-0-038-2026-10-27.md): UTC 2026-10-27T04:11:55Z؛ تهران 07:41:55 +03:30.
+- [OUT-074](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-OUT-074-POINT-0-038-2026-10-27.md): UTC 2026-10-27T04:11:59Z؛ تهران 07:41:59 +03:30.
+- [EVT-0209](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0209-POINT-0-038-2026-10-27.md): UTC 2026-10-27T04:12:03Z؛ تهران 07:42:03 +03:30.
+- [CURRENT-087](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-CURRENT-087-POINT-0-038-2026-10-27.md): UTC 2026-10-27T04:19:28Z؛ تهران 07:49:28 +03:30.
 
 
 ### رسید تأیید اجرایی POINT-0/038 — EVT-0210
-- [EVT-0210](../BEHAVIOR-TRACE/EVT-0210-POINT-0-038-EXACT-SHA-VALIDATION-AND-MANIFEST-REPAIR-2026-10-27.md): ممیزی معماری و انطباق بسته روی SHA دقیق df89fd802bb3142611a719e0e22b2d5ad03a420f موفق شدند.
-- [لنگر زمانی EVT-0210](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0210-POINT-0-038-2026-10-27.md): UTC 2026-10-27T04:19:13Z؛ تهران 07:49:13 +03:30.
+- [EVT-0210](../../docs/architecture/BEHAVIOR-TRACE/EVT-0210-POINT-0-038-EXACT-SHA-VALIDATION-AND-MANIFEST-REPAIR-2026-10-27.md): ممیزی معماری و انطباق بسته روی SHA دقیق df89fd802bb3142611a719e0e22b2d5ad03a420f موفق شدند.
+- [لنگر زمانی EVT-0210](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0210-POINT-0-038-2026-10-27.md): UTC 2026-10-27T04:19:13Z؛ تهران 07:49:13 +03:30.
 - لنگر زمانی تازه‌شدهٔ CURRENT-087: UTC 2026-10-27T04:19:28Z؛ تهران 07:49:28 +03:30.
 
 ## Latest live mirror sync recheck — EVT-0211 (2026-10-27)
 
-- Event: [EVT-0211](../BEHAVIOR-TRACE/EVT-0211-LIVE-MIRROR-SYNC-RECHECK-2026-10-27.md); canonical time binding: [TIME-BINDING-EVT-0211](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0211-LIVE-MIRROR-SYNC-2026-10-27.md).
+- Event: [EVT-0211](../../docs/architecture/BEHAVIOR-TRACE/EVT-0211-LIVE-MIRROR-SYNC-RECHECK-2026-10-27.md); canonical time binding: [TIME-BINDING-EVT-0211](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0211-LIVE-MIRROR-SYNC-2026-10-27.md).
 - The canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10` is unchanged. Independent Library read-back of stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48` (version ID 7) is 10,480 characters vs 10,479 in source; the only difference is an additional trailing LF. Stable ID, Test ID, Version, BOART-FOLLOWUP-01 → 02 → 03 and destination states match. This is semantic match within tolerance, not byte-for-byte identity.
 - No Library overwrite was attempted because no supported source_file_ref/exported-snapshot upload route was available. Buffer and Persistent Memory remain NOT VERIFIED; Dropbox remains OPEN / NOT VERIFIED; independent interactive-host import/recovery remains NOT RUN.
 - At the start of this registration main was `9124fd841f357889bdc5c8604effb7cb368b56cc`; latest full audit and portable conformance passed on `77cb3b725d493cf92af6a95d4b7a00888fbdb7bc`, not on that newer head. Require the same full pair on the exact final main SHA after all writes and any Evidence Gate commit.
@@ -1818,8 +1818,8 @@ The latest continuation is [POINT-0/033](../../0.0/anchors/GPT6-RAHM-USER-POINT-
 
 ## Latest user-designated continuation — POINT-0/039 / CURRENT-088 — 2026-10-27
 
-- New root: [POINT-0/039](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-039-MIRROR-SYNC-AND-ARCHITECTURE-CONTINUATION.md).
-- Interaction chain: [IN-076](../../0.0/anchors/PALANG-0.0-IN-20261027-076-POINT-0-039-USER-INSTRUCTION.md) → [OUT-075](../../0.0/anchors/PALANG-0.0-OUT-20261027-075-POINT-0-039-REGISTRATION-AND-NEXT-STEPS.md) → [EVT-0212](../BEHAVIOR-TRACE/EVT-0212-POINT-0-039-REGISTRATION-AND-ARCHITECTURE-CONTINUATION-2026-10-27.md) → [CURRENT-088](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-088-POINT-0-039-EXECUTION.md).
+- New root: [POINT-0/039](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-039-MIRROR-SYNC-AND-ARCHITECTURE-CONTINUATION.md).
+- Interaction chain: [IN-076](../../docs/0.0/anchors/PALANG-0.0-IN-20261027-076-POINT-0-039-USER-INSTRUCTION.md) → [OUT-075](../../docs/0.0/anchors/PALANG-0.0-OUT-20261027-075-POINT-0-039-REGISTRATION-AND-NEXT-STEPS.md) → [EVT-0212](../../docs/architecture/BEHAVIOR-TRACE/EVT-0212-POINT-0-039-REGISTRATION-AND-ARCHITECTURE-CONTINUATION-2026-10-27.md) → [CURRENT-088](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-088-POINT-0-039-EXECUTION.md).
 - NEXT-051 remains the sole active queue; no NEXT-052 is created.
 - Preserve prior roots including POINT-0/016, /017 and /018; preserve EVT-0178/EVT-0179 collision lineage and the unresolved CURRENT-065/CURRENT-066 pointer conflict.
 - Next: rediscover current main and latest exact-SHA workflow receipts; reconcile portable manifest coverage using source-backed hashes; run Living Architecture Audit and Portable RAHM Conformance on the same final SHA.
@@ -1828,39 +1828,39 @@ The latest continuation is [POINT-0/033](../../0.0/anchors/GPT6-RAHM-USER-POINT-
 
 ## POINT-0/040 — Initial Model and New-Host Handoff — 2026-10-27
 
-- New root: [POINT-0/040](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-040-INITIAL-MODEL-NEW-HOST-HANDOFF.md).
-- Interaction chain: [IN-077](../../0.0/anchors/PALANG-0.0-IN-20261027-077-INITIAL-MODEL-NEW-HOST-HANDOFF.md) → [OUT-076](../../0.0/anchors/PALANG-0.0-OUT-20261027-076-INITIAL-MODEL-NEW-HOST-HANDOFF.md) → [EVT-0213](../BEHAVIOR-TRACE/EVT-0213-INITIAL-MODEL-NEW-HOST-HANDOFF-2026-10-27.md) → [CURRENT-089](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-089-INITIAL-MODEL-NEW-HOST-HANDOFF.md).
-- Standalone transfer instructions: [NEW-HOST-BOOTSTRAP-2026-10-27](./NEW-HOST-BOOTSTRAP-2026-10-27.md).
-- Existing executable engine remains [prototype/haif-gpt6-starter](../../../prototype/haif-gpt6-starter/README.md); no duplicate engine was created.
+- New root: [POINT-0/040](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-040-INITIAL-MODEL-NEW-HOST-HANDOFF.md).
+- Interaction chain: [IN-077](../../docs/0.0/anchors/PALANG-0.0-IN-20261027-077-INITIAL-MODEL-NEW-HOST-HANDOFF.md) → [OUT-076](../../docs/0.0/anchors/PALANG-0.0-OUT-20261027-076-INITIAL-MODEL-NEW-HOST-HANDOFF.md) → [EVT-0213](../../docs/architecture/BEHAVIOR-TRACE/EVT-0213-INITIAL-MODEL-NEW-HOST-HANDOFF-2026-10-27.md) → [CURRENT-089](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-089-INITIAL-MODEL-NEW-HOST-HANDOFF.md).
+- Standalone transfer instructions: [NEW-HOST-BOOTSTRAP-2026-10-27](../../docs/architecture/%D9%85%D8%AF%D9%84%20%D8%A7%D9%88%D9%84%DB%8C%D9%87%20AI/NEW-HOST-BOOTSTRAP-2026-10-27.md).
+- Existing executable engine remains [prototype/haif-gpt6-starter](README.md); no duplicate engine was created.
 - NEXT-051 remains the sole active queue; no NEXT-052. Preserve all previous points and unresolved CURRENT-065/CURRENT-066 lineage.
 - Host-transfer status: READY FOR CONTROLLED TRIAL, but real-host acceptance NOT RUN. New chain still requires export-manifest digest inclusion and exact-final-SHA paired audit/conformance. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED.
 
 
 ## پیوندهای تکمیلی انتقال میزبان — پیوست به POINT-0/040 و EVT-0214
 
-- ریشهٔ مرجع واحد: [POINT-0/040 Initial Model New-Host Handoff](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-040-INITIAL-MODEL-NEW-HOST-HANDOFF.md).
-- زنجیرهٔ مرجع: [IN-077](../../0.0/anchors/PALANG-0.0-IN-20261027-077-INITIAL-MODEL-NEW-HOST-HANDOFF.md) → [OUT-076](../../0.0/anchors/PALANG-0.0-OUT-20261027-076-INITIAL-MODEL-NEW-HOST-HANDOFF.md) → [EVT-0213](../BEHAVIOR-TRACE/EVT-0213-INITIAL-MODEL-NEW-HOST-HANDOFF-2026-10-27.md) → [CURRENT-089](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-089-INITIAL-MODEL-NEW-HOST-HANDOFF.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
-- دستور شروع مرجع میزبان: [NEW-HOST-BOOTSTRAP](./NEW-HOST-BOOTSTRAP-2026-10-27.md). موتور اجرایی موجود: [prototype/haif-gpt6-starter](../../../prototype/haif-gpt6-starter/README.md).
-- پیوست تکمیلی قرارداد انتقال و دستور کوتاه میزبان: [Transfer Bootstrap](../../portable/RAHM/INITIAL-MODEL-HOST-TRANSFER-BOOTSTRAP-2026-10-27.md) و [Host Prompt](../../portable/RAHM/HOST-BOOTSTRAP-PROMPT-2026-10-27.md). این‌ها جایگزین ریشهٔ مرجع نیستند.
-- برخورد شناسهٔ نسخهٔ موازی ثبت و مهار شد: [EVT-0214](../BEHAVIOR-TRACE/EVT-0214-POINT-040-DUPLICATE-ID-QUARANTINE-2026-10-27.md). فایل‌های موازی نگه‌داری شده و قرنطینه‌اند؛ ریشهٔ مرجع POINT-0/040 فقط همان سند New-Host Handoff است.
+- ریشهٔ مرجع واحد: [POINT-0/040 Initial Model New-Host Handoff](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-040-INITIAL-MODEL-NEW-HOST-HANDOFF.md).
+- زنجیرهٔ مرجع: [IN-077](../../docs/0.0/anchors/PALANG-0.0-IN-20261027-077-INITIAL-MODEL-NEW-HOST-HANDOFF.md) → [OUT-076](../../docs/0.0/anchors/PALANG-0.0-OUT-20261027-076-INITIAL-MODEL-NEW-HOST-HANDOFF.md) → [EVT-0213](../../docs/architecture/BEHAVIOR-TRACE/EVT-0213-INITIAL-MODEL-NEW-HOST-HANDOFF-2026-10-27.md) → [CURRENT-089](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-089-INITIAL-MODEL-NEW-HOST-HANDOFF.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- دستور شروع مرجع میزبان: [NEW-HOST-BOOTSTRAP](../../docs/architecture/%D9%85%D8%AF%D9%84%20%D8%A7%D9%88%D9%84%DB%8C%D9%87%20AI/NEW-HOST-BOOTSTRAP-2026-10-27.md). موتور اجرایی موجود: [prototype/haif-gpt6-starter](README.md).
+- پیوست تکمیلی قرارداد انتقال و دستور کوتاه میزبان: [Transfer Bootstrap](../../docs/portable/RAHM/INITIAL-MODEL-HOST-TRANSFER-BOOTSTRAP-2026-10-27.md) و [Host Prompt](../../docs/portable/RAHM/HOST-BOOTSTRAP-PROMPT-2026-10-27.md). این‌ها جایگزین ریشهٔ مرجع نیستند.
+- برخورد شناسهٔ نسخهٔ موازی ثبت و مهار شد: [EVT-0214](../../docs/architecture/BEHAVIOR-TRACE/EVT-0214-POINT-040-DUPLICATE-ID-QUARANTINE-2026-10-27.md). فایل‌های موازی نگه‌داری شده و قرنطینه‌اند؛ ریشهٔ مرجع POINT-0/040 فقط همان سند New-Host Handoff است.
 - NEXT-051 صف یگانه است؛ CURRENT-065/CURRENT-066 و Issue #20/#21 باز می‌مانند تا شواهد معتبر آن‌ها را ببندد. بسته‌سازی/CI به‌تنهایی واردسازی مستقل یا بازیابی سرد را ثابت نمی‌کند.
 
 
-- ریشهٔ جدید: [POINT-0/040](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-040-INITIAL-MODEL-TRANSFER-AND-ARCHITECTURE-HARD-AUDIT.md).
-- گام اجرایی: [CURRENT-089](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-089-INITIAL-MODEL-TRANSFER-EXECUTION.md).
-- قرارداد انتقال و بازیابی میزبان: [Initial Model Host Transfer Bootstrap](../../portable/RAHM/INITIAL-MODEL-HOST-TRANSFER-BOOTSTRAP-2026-10-27.md).
-- دستور شروع میزبان جدید: [HOST-BOOTSTRAP-PROMPT](../../portable/RAHM/HOST-BOOTSTRAP-PROMPT-2026-10-27.md).
-- رویداد: [EVT-0213](../BEHAVIOR-TRACE/EVT-0213-POINT-0-040-INITIAL-MODEL-TRANSFER-AND-HARD-AUDIT-2026-10-27.md).
+- ریشهٔ جدید: [POINT-0/040](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-040-INITIAL-MODEL-TRANSFER-AND-ARCHITECTURE-HARD-AUDIT.md).
+- گام اجرایی: [CURRENT-089](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-089-INITIAL-MODEL-TRANSFER-EXECUTION.md).
+- قرارداد انتقال و بازیابی میزبان: [Initial Model Host Transfer Bootstrap](../../docs/portable/RAHM/INITIAL-MODEL-HOST-TRANSFER-BOOTSTRAP-2026-10-27.md).
+- دستور شروع میزبان جدید: [HOST-BOOTSTRAP-PROMPT](../../docs/portable/RAHM/HOST-BOOTSTRAP-PROMPT-2026-10-27.md).
+- رویداد: [EVT-0213](../../docs/architecture/BEHAVIOR-TRACE/EVT-0213-POINT-0-040-INITIAL-MODEL-TRANSFER-AND-HARD-AUDIT-2026-10-27.md).
 - صف یگانهٔ اجرا: NEXT-051؛ NEXT-052 ساخته نشود.
 - هدف: انتقال مدل با قواعد مرجع، منشأ داده، گراف نقاط/رویدادها، وضعیت شکاف‌ها، آزمون واردسازی و بازیابی سرد؛ بستهٔ مستندات یا موفقیت CI به‌تنهایی اثبات میزبان مستقل نیست.
 - شکاف‌های باز: تعارض CURRENT-065/CURRENT-066؛ Issue #20 و #21؛ تطبیق دقیق مانیفست و سر نهایی main؛ واردسازی/بازیابی در میزبان مستقل؛ Buffer و Persistent Memory تأییدنشده؛ Dropbox باز/تأییدنشده.
 
 ## POINT-0/041 — Current interaction anchor and continuation (2026-10-27)
 
-- Root: [POINT-0/041](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-041-CURRENT-INTERACTION-ANCHOR.md).
-- Input/output: [IN-078](../../0.0/anchors/PALANG-0.0-IN-20261027-078-CURRENT-INTERACTION.md) → [OUT-077](../../0.0/anchors/PALANG-0.0-OUT-20261027-077-CURRENT-INTERACTION.md).
-- Event/checkpoint: [EVT-0215](../BEHAVIOR-TRACE/EVT-0215-CURRENT-INTERACTION-POINT-041-2026-10-27.md) → [CURRENT-090](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-090-CURRENT-INTERACTION.md).
-- Sole active queue: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Root: [POINT-0/041](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-041-CURRENT-INTERACTION-ANCHOR.md).
+- Input/output: [IN-078](../../docs/0.0/anchors/PALANG-0.0-IN-20261027-078-CURRENT-INTERACTION.md) → [OUT-077](../../docs/0.0/anchors/PALANG-0.0-OUT-20261027-077-CURRENT-INTERACTION.md).
+- Event/checkpoint: [EVT-0215](../../docs/architecture/BEHAVIOR-TRACE/EVT-0215-CURRENT-INTERACTION-POINT-041-2026-10-27.md) → [CURRENT-090](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-090-CURRENT-INTERACTION.md).
+- Sole active queue: [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - Previous canonical chain remains POINT-0/040 → IN-077 → OUT-076 → EVT-0213 → CURRENT-089 → NEXT-051. This successor does not overwrite or replace it.
 - Current status: repository registration completed and read-back verified for the five chain artifacts. Manifest inclusion, exact-final-SHA audit/conformance, and real independent-host acceptance are separate open gates.
 - Open gates: CURRENT-065/CURRENT-066; Issues #20/#21; Buffer/Persistent Memory not verified; Dropbox open/not verified; clean-host import/cold recovery not run.
@@ -1868,8 +1868,8 @@ The latest continuation is [POINT-0/033](../../0.0/anchors/GPT6-RAHM-USER-POINT-
 
 ## POINT-0/042 — NEXT-051 gap and goal focus (2026-10-27)
 
-- Root: [POINT-0/042](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-042-NEXT-051-GAP-AND-FOCUS-CLARIFICATION.md).
-- Chain: [IN-079](../../0.0/anchors/PALANG-0.0-IN-20261027-079-NEXT-051-GAP-AND-FOCUS-CLARIFICATION.md) → [OUT-078](../../0.0/anchors/PALANG-0.0-OUT-20261027-078-NEXT-051-GAP-AND-FOCUS-CLARIFICATION.md) → [EVT-0216](../BEHAVIOR-TRACE/EVT-0216-POINT-042-NEXT-051-GAP-FOCUS-CLARIFICATION-2026-10-27.md) → [CURRENT-091](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-091-NEXT-051-GAP-FOCUS.md).
+- Root: [POINT-0/042](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-042-NEXT-051-GAP-AND-FOCUS-CLARIFICATION.md).
+- Chain: [IN-079](../../docs/0.0/anchors/PALANG-0.0-IN-20261027-079-NEXT-051-GAP-AND-FOCUS-CLARIFICATION.md) → [OUT-078](../../docs/0.0/anchors/PALANG-0.0-OUT-20261027-078-NEXT-051-GAP-AND-FOCUS-CLARIFICATION.md) → [EVT-0216](../../docs/architecture/BEHAVIOR-TRACE/EVT-0216-POINT-042-NEXT-051-GAP-FOCUS-CLARIFICATION-2026-10-27.md) → [CURRENT-091](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-091-NEXT-051-GAP-FOCUS.md).
 - NEXT-051 remains the sole active queue. Its repository integrity tasks are necessary means, not the primary destination; the primary destination is model portability and demonstrable recovery in an independent host.
 - Open gates: exact-current-main SHA audit/conformance and package digest; source-based identity/parent/event triage; full state reconstruction; clean-host and second-host import; real restart persistence/background behavior; CURRENT-065/CURRENT-066; Issues #20/#21; Buffer/Persistent Memory; Dropbox.
 - Next: read back and link-check this chain, include it through supported manifest/digest workflow, run audit and conformance on one exact final SHA, then pursue actual clean-host import/cold recovery with direct receipts. No NEXT-052, no speculative renumbering/deletion, and no claim of host acceptance from CI alone.
@@ -1877,8 +1877,8 @@ The latest continuation is [POINT-0/033](../../0.0/anchors/GPT6-RAHM-USER-POINT-
 
 ## POINT-0/043 — اثبات بازیابی در میزبان مستقل (2026-10-27)
 
-- زنجیرهٔ جاری: [POINT-0/043](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-043-INDEPENDENT-HOST-RECOVERY-HARD-AUDIT.md) → [IN-080](../../0.0/anchors/PALANG-0.0-IN-20261027-080-INDEPENDENT-HOST-RECOVERY.md) → [OUT-079](../../0.0/anchors/PALANG-0.0-OUT-20261027-079-INDEPENDENT-HOST-RECOVERY.md) → [EVT-0217](../BEHAVIOR-TRACE/EVT-0217-INDEPENDENT-HOST-RECOVERY-HARD-AUDIT-2026-10-27.md) → [CURRENT-092](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-092-INDEPENDENT-HOST-RECOVERY.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
-- قرارداد آزمون: [INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL](./INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md).
+- زنجیرهٔ جاری: [POINT-0/043](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-043-INDEPENDENT-HOST-RECOVERY-HARD-AUDIT.md) → [IN-080](../../docs/0.0/anchors/PALANG-0.0-IN-20261027-080-INDEPENDENT-HOST-RECOVERY.md) → [OUT-079](../../docs/0.0/anchors/PALANG-0.0-OUT-20261027-079-INDEPENDENT-HOST-RECOVERY.md) → [EVT-0217](../../docs/architecture/BEHAVIOR-TRACE/EVT-0217-INDEPENDENT-HOST-RECOVERY-HARD-AUDIT-2026-10-27.md) → [CURRENT-092](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-092-INDEPENDENT-HOST-RECOVERY.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- قرارداد آزمون: [INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL](../../docs/architecture/%D9%85%D8%AF%D9%84%20%D8%A7%D9%88%D9%84%DB%8C%D9%87%20AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md).
 - نتیجهٔ ممیزی: run 40477792889 در هش دقیق NEXT-051 شکست خورد و ZIP را نساخت. آزمون IN/OUT آن به checkpointهای قدیمی اشاره داشت؛ بنابراین شاهد کافی برای زنجیرهٔ جاری یا میزبان مستقل نیست.
 - وضعیت: مدل اولیه همچنان ACTIVE/LIVING؛ پذیرش میزبان مستقل، آزمون میزبان دوم و persistence پس از restart باز هستند. فقط artifact ساخته‌شده و هش‌دار از اجرای تازه می‌تواند به‌عنوان ZIP جاری معرفی شود. صف یگانهٔ فعال NEXT-051 است؛ NEXT-052 نساز.
 
@@ -1886,9 +1886,9 @@ The latest continuation is [POINT-0/033](../../0.0/anchors/GPT6-RAHM-USER-POINT-
 ## POINT-0/043 (0+) → CURRENT-093 — اصلاح بستهٔ اولیه (2026-10-27)
 
 - 0+ نشانگر تولید مهم روی همان ریشهٔ canonical 0 است؛ ریشهٔ جداگانه نیست.
-- زنجیرهٔ ادامه: [IN-081](../../0.0/anchors/PALANG-0.0-IN-20261027-081-ZIP-UPDATE-AND-POINT-0PLUS.md) → [OUT-080](../../0.0/anchors/PALANG-0.0-OUT-20261027-080-ZIP-UPDATE-AND-POINT-0PLUS.md) → [EVT-0218](../BEHAVIOR-TRACE/EVT-0218-EXISTING-ZIP-UPDATE-AND-0PLUS-2026-10-27.md) → [CURRENT-093](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-093-EXISTING-ZIP-UPDATE.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- زنجیرهٔ ادامه: [IN-081](../../docs/0.0/anchors/PALANG-0.0-IN-20261027-081-ZIP-UPDATE-AND-POINT-0PLUS.md) → [OUT-080](../../docs/0.0/anchors/PALANG-0.0-OUT-20261027-080-ZIP-UPDATE-AND-POINT-0PLUS.md) → [EVT-0218](../../docs/architecture/BEHAVIOR-TRACE/EVT-0218-EXISTING-ZIP-UPDATE-AND-0PLUS-2026-10-27.md) → [CURRENT-093](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-093-EXISTING-ZIP-UPDATE.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - بستهٔ starter موجود از v0.3.0 به v0.3.1 در همان خانواده و با همان Stable ID ارتقا یافت؛ هش تاریخی v0.3.0 حفظ می‌شود.
-- پروتکل بازیابی مستقل اکنون داخل منبع بسته قرار دارد: [INDEPENDENT_HOST_RECOVERY_PROTOCOL.md](../../../prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md).
+- پروتکل بازیابی مستقل اکنون داخل منبع بسته قرار دارد: [INDEPENDENT_HOST_RECOVERY_PROTOCOL.md](INDEPENDENT_HOST_RECOVERY_PROTOCOL.md).
 - وضعیت بسته: ZIP canonical با نام قبلی بازسازی و بازخوانی شده است؛ نسخهٔ داخلی 0.3.1، اندازه 19,042 بایت، SHA-256 3a17f64880519a0da714f09a1dc8065fafcd88321fa5674eb2d995dfd8f63e83، آزمون 16/16 و اسکن دقیق manifest موفق‌اند. پذیرش میزبان مستقل و persistence پس از restart همچنان OPEN / NOT VERIFIED هستند.
 
 
@@ -1913,7 +1913,7 @@ The latest continuation is [POINT-0/033](../../0.0/anchors/GPT6-RAHM-USER-POINT-
 
 ## POINT-0/045 — تأیید واقعی به‌روزرسانی ZIP موجود
 
-- زنجیره: [POINT-0/045](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-045-EXISTING-ZIP-UPDATE-CONFIRMATION.md) → [IN-083](../../0.0/anchors/PALANG-0.0-IN-20261027-083-EXISTING-ZIP-UPDATE-CONFIRMATION.md) → [OUT-082](../../0.0/anchors/PALANG-0.0-OUT-20261027-082-EXISTING-ZIP-UPDATE-CONFIRMATION.md) → [EVT-0220](../BEHAVIOR-TRACE/EVT-0220-EXISTING-ZIP-UPDATE-CONFIRMATION-2026-10-27.md) → [CURRENT-095](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-095-EXISTING-ZIP-UPDATE-CONFIRMATION.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- زنجیره: [POINT-0/045](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-045-EXISTING-ZIP-UPDATE-CONFIRMATION.md) → [IN-083](../../docs/0.0/anchors/PALANG-0.0-IN-20261027-083-EXISTING-ZIP-UPDATE-CONFIRMATION.md) → [OUT-082](../../docs/0.0/anchors/PALANG-0.0-OUT-20261027-082-EXISTING-ZIP-UPDATE-CONFIRMATION.md) → [EVT-0220](../../docs/architecture/BEHAVIOR-TRACE/EVT-0220-EXISTING-ZIP-UPDATE-CONFIRMATION-2026-10-27.md) → [CURRENT-095](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-095-EXISTING-ZIP-UPDATE-CONFIRMATION.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - رسید واقعی: [اجرای موفق 40490479934](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40490479934). ZIP موجود با نام canonical قبلی بازسازی، artifact آن دانلود و ZIP داخلی بازخوانی شد.
 - نام فایل: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`؛ نسخهٔ داخلی manifest: 0.3.1؛ شناسهٔ پایدار بسته تغییر نکرده است.
 - ZIP داخلی: 19,042 بایت؛ SHA-256: `3a17f64880519a0da714f09a1dc8065fafcd88321fa5674eb2d995dfd8f63e83`؛ 8 عضو؛ پروتکل میزبان مستقل داخل بسته؛ صحت ZIP و 16/16 آزمون موفق.
@@ -1923,7 +1923,7 @@ The latest continuation is [POINT-0/033](../../0.0/anchors/GPT6-RAHM-USER-POINT-
 
 ## CURRENT-095 — تداوم تکمیل همان بستهٔ اولیه (2026-10-27)
 
-- زنجیرهٔ جاری: [POINT-0/045](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-045-INITIAL-ZIP-CONTINUITY-AND-0.0-RESUME.md) → [IN-083](../../0.0/anchors/PALANG-0.0-IN-20261027-083-INITIAL-ZIP-CONTINUITY.md) → [OUT-082](../../0.0/anchors/PALANG-0.0-OUT-20261027-082-INITIAL-ZIP-CONTINUITY.md) → [EVT-0220](../BEHAVIOR-TRACE/EVT-0220-INITIAL-ZIP-CONTINUITY-2026-10-27.md) → [CURRENT-095](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-095-INITIAL-ZIP-CONTINUITY.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- زنجیرهٔ جاری: [POINT-0/045](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-045-INITIAL-ZIP-CONTINUITY-AND-0.0-RESUME.md) → [IN-083](../../docs/0.0/anchors/PALANG-0.0-IN-20261027-083-INITIAL-ZIP-CONTINUITY.md) → [OUT-082](../../docs/0.0/anchors/PALANG-0.0-OUT-20261027-082-INITIAL-ZIP-CONTINUITY.md) → [EVT-0220](../../docs/architecture/BEHAVIOR-TRACE/EVT-0220-INITIAL-ZIP-CONTINUITY-2026-10-27.md) → [CURRENT-095](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-095-INITIAL-ZIP-CONTINUITY.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - ZIP اصلی موجود به‌روزرسانی شده است؛ نام canonical `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip` و Stable ID بسته حفظ شده‌اند؛ نسخهٔ داخلی manifest برابر 0.3.1 است.
 - رسید ساخت: workflow [40489753805](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40489753805)، artifact ID `12726786662`، اندازه 19,042 بایت، SHA-256 `3a17f64880519a0da714f09a1dc8065fafcd88321fa5674eb2d995dfd8f63e83`، 16/16 آزمون موفق پس از استخراج تازه، ZIP CRC و فهرست 8 عضوی PASS.
 - قاعدهٔ تکامل: تغییرات بعدی در همان source package انجام می‌شوند؛ همان آرشیو canonical دوباره ساخته و دقیقاً هش/اندازه/موجودی/تست‌ها بررسی می‌شوند. ZIP نسخه‌دار موازی نسازید و هش تاریخی را بازاستفاده نکنید.
@@ -1932,7 +1932,7 @@ The latest continuation is [POINT-0/033](../../0.0/anchors/GPT6-RAHM-USER-POINT-
 
 ## POINT-0/046 → CURRENT-096 — ادامهٔ پیوستهٔ بستهٔ اولیه (2026-10-27)
 
-- زنجیره: [POINT-0/046](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-046-SAME-STARTER-ZIP-CONTINUITY.md) → [IN-084](../../0.0/anchors/PALANG-0.0-IN-20261027-084-SAME-STARTER-ZIP-CONTINUITY.md) → [OUT-083](../../0.0/anchors/PALANG-0.0-OUT-20261027-083-SAME-STARTER-ZIP-CONTINUITY.md) → [EVT-0221](../BEHAVIOR-TRACE/EVT-0221-SAME-STARTER-ZIP-CONTINUITY-2026-10-27.md) → [CURRENT-096](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-096-SAME-STARTER-ZIP-CONTINUITY.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- زنجیره: [POINT-0/046](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-046-SAME-STARTER-ZIP-CONTINUITY.md) → [IN-084](../../docs/0.0/anchors/PALANG-0.0-IN-20261027-084-SAME-STARTER-ZIP-CONTINUITY.md) → [OUT-083](../../docs/0.0/anchors/PALANG-0.0-OUT-20261027-083-SAME-STARTER-ZIP-CONTINUITY.md) → [EVT-0221](../../docs/architecture/BEHAVIOR-TRACE/EVT-0221-SAME-STARTER-ZIP-CONTINUITY-2026-10-27.md) → [CURRENT-096](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-096-SAME-STARTER-ZIP-CONTINUITY.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - قاعدهٔ بسته: یک Stable ID، یک نام ZIP سازگار، یک ریشهٔ منبع؛ تکمیل منبع و بازساخت همان آرشیو در هر دور؛ رسید هش/اندازه/موجودی/آزمون؛ هش‌های پیشین فقط تاریخی.
 - آخرین ZIP تأییدشده پیش از این تغییر: 19,042 bytes؛ SHA-256 `3a17f64880519a0da714f09a1dc8065fafcd88321fa5674eb2d995dfd8f63e83`; 8 فایل؛ 16/16 آزمون موفق. این رسید برای SHA خودش معتبر است و جای رسید اجرای commit جدید را نمی‌گیرد.
 - گیت‌های باز: تطبیق برچسب نام فایل با نسخهٔ داخلی، واردسازی واقعی در میزبان AI مستقل، بازسازی مستقل از IN و OUT، کنترل‌های منفی، read-back مستقل و restart/persistence.
@@ -1963,7 +1963,7 @@ The latest continuation is [POINT-0/033](../../0.0/anchors/GPT6-RAHM-USER-POINT-
 
 ## POINT-0/048 (0+) → CURRENT-098 — تمرکز روی خود محصول ZIP
 
-این نقطه نشانگر تولید 0+ روی ریشهٔ canonical است، نه ریشهٔ مستقل تازه. ادامهٔ 0.0: [IN-086](../../0.0/anchors/PALANG-0.0-IN-20261027-086-SAME-ZIP-READBACK-AND-CONTINUOUS-UPDATE.md) → [OUT-085](../../0.0/anchors/PALANG-0.0-OUT-20261027-085-SAME-ZIP-READBACK-AND-CONTINUOUS-UPDATE.md) → [EVT-0223](../BEHAVIOR-TRACE/EVT-0223-SAME-ZIP-READBACK-AND-CONTINUOUS-UPDATE-2026-10-27.md) → [CURRENT-098](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-098-SAME-ZIP-READBACK-AND-CONTINUOUS-UPDATE.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+این نقطه نشانگر تولید 0+ روی ریشهٔ canonical است، نه ریشهٔ مستقل تازه. ادامهٔ 0.0: [IN-086](../../docs/0.0/anchors/PALANG-0.0-IN-20261027-086-SAME-ZIP-READBACK-AND-CONTINUOUS-UPDATE.md) → [OUT-085](../../docs/0.0/anchors/PALANG-0.0-OUT-20261027-085-SAME-ZIP-READBACK-AND-CONTINUOUS-UPDATE.md) → [EVT-0223](../../docs/architecture/BEHAVIOR-TRACE/EVT-0223-SAME-ZIP-READBACK-AND-CONTINUOUS-UPDATE-2026-10-27.md) → [CURRENT-098](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-098-SAME-ZIP-READBACK-AND-CONTINUOUS-UPDATE.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 
 کار محصولی: گردش‌کار [Portable RAHM](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/workflows/rahm-portable-conformance.yml) همان نام ZIP canonical را حفظ می‌کند. پس از ساخت، ZIP در محیط تمیز استخراج می‌شود، هر ۸ فایل با منبع مقایسهٔ بایت‌به‌بایت می‌شود و آزمون‌های بسته از نسخهٔ استخراج‌شده اجرا می‌شوند. اجرای اصلاح‌شدهٔ commit `b5e29697ec2733c9e9f3ff914525304b2fcb6914` در run 40518077494 با موفقیت ZIP canonical را ساخت، استخراج کرد، با منبع بایت‌به‌بایت تطبیق داد، artifact را دانلود مجدد کرد و آزمون‌ها را دوباره اجرا کرد؛ 16/16 آزمون PASS. هش ZIP: `fa226aab5a35a76c3f289b511566257a443821195ebdfdfb21f1cc093026e091`؛ پذیرش میزبان مستقل و persistence پس از restart همچنان NOT RUN هستند.
 
@@ -1983,7 +1983,7 @@ The latest continuation is [POINT-0/033](../../0.0/anchors/GPT6-RAHM-USER-POINT-
 
 ## POINT-0/049 (0+) — سند مادر زنده و نخستین میزبان GPT-6
 
-0+ برچسب تولید روی همان ریشهٔ canonical 0 است، نه ریشهٔ دوم. زنجیره: [IN-087](../../0.0/anchors/PALANG-0.0-IN-20261027-087-LIVING-MASTER-GPT6-HOST.md) → [OUT-086](../../0.0/anchors/PALANG-0.0-OUT-20261027-086-LIVING-MASTER-GPT6-HOST.md) → [EVT-0224](../BEHAVIOR-TRACE/EVT-0224-LIVING-MASTER-GPT6-HOST-2026-10-27.md) → [CURRENT-099](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-099-LIVING-MASTER-GPT6-HOST.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+0+ برچسب تولید روی همان ریشهٔ canonical 0 است، نه ریشهٔ دوم. زنجیره: [IN-087](../../docs/0.0/anchors/PALANG-0.0-IN-20261027-087-LIVING-MASTER-GPT6-HOST.md) → [OUT-086](../../docs/0.0/anchors/PALANG-0.0-OUT-20261027-086-LIVING-MASTER-GPT6-HOST.md) → [EVT-0224](../../docs/architecture/BEHAVIOR-TRACE/EVT-0224-LIVING-MASTER-GPT6-HOST-2026-10-27.md) → [CURRENT-099](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-099-LIVING-MASTER-GPT6-HOST.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 
 روش انتقال میزبان نخست: ZIP canonical و همین سند مادر زنده را با هم بارگذاری کن؛ ZIP موتور قابل‌حمل و قواعد بازیابی را دارد، سند مادر معماری/تبار/هدف‌ها/شکاف‌ها و مرجع زنده را. سند مادر مرجع حاکم است؛ ZIP بستهٔ اجرایی همان پروژه است. پاسخ میزبان باید رسید واقعی بدهد و وضعیت‌های OPEN را حفظ کند. CI موفقیت ZIP را ثابت می‌کند، نه پذیرش GPT-6 واقعی یا حافظهٔ پایدار.
 
@@ -2004,18 +2004,18 @@ The latest continuation is [POINT-0/033](../../0.0/anchors/GPT6-RAHM-USER-POINT-
 ## POINT-0/050 (0+) → CURRENT-100 — خاک‌برداری عمیق و ممیزی میزبان اول (2026-10-27)
 
 - 0+ روی همان ریشهٔ canonical 0 است؛ این ثبت ریشهٔ دوم نمی‌سازد و همهٔ لنگرهای قبلی را حفظ می‌کند.
-- زنجیرهٔ تازه: [IN-088](../../0.0/anchors/PALANG-0.0-IN-20261027-088-DEEP-AUDIT-FIRST-HOST.md) → [OUT-087](../../0.0/anchors/PALANG-0.0-OUT-20261027-087-DEEP-AUDIT-FIRST-HOST.md) → [EVT-0225](../BEHAVIOR-TRACE/EVT-0225-DEEP-AUDIT-FIRST-HOST-2026-10-27.md) → [CURRENT-100](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-100-DEEP-AUDIT-FIRST-HOST.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- زنجیرهٔ تازه: [IN-088](../../docs/0.0/anchors/PALANG-0.0-IN-20261027-088-DEEP-AUDIT-FIRST-HOST.md) → [OUT-087](../../docs/0.0/anchors/PALANG-0.0-OUT-20261027-087-DEEP-AUDIT-FIRST-HOST.md) → [EVT-0225](../../docs/architecture/BEHAVIOR-TRACE/EVT-0225-DEEP-AUDIT-FIRST-HOST-2026-10-27.md) → [CURRENT-100](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-100-DEEP-AUDIT-FIRST-HOST.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - ممیزی تأیید کرد بستهٔ داخلی v0.3.4 با همان نام ZIP مرجع ساخته، دانلود، هش‌سنجی و از ZIP استخراج‌شده 17/17 آزمون شده است؛ رسید: [run 40529853028](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40529853028). هش ZIP: `2ae583a3029d489e636439133b40e24a480754f6b569ada475694abad97c7f3b`، اندازه 20,075 بایت.
 - بسته و سند مادر در artifact جفتی با تطبیق بایت بازخوانی شدند. این انتقال فایل را اثبات می‌کند، نه پذیرش در میزبان تعاملی واقعی.
 - شکاف معماری واقعی: engine محلی است، producer زندهٔ ChatGPT آزمایش نشده و worker نوشتن GitHub خودکار از طرف ChatGPT اجرا نمی‌شود. این موارد OPEN می‌مانند.
 - شکاف ممیزی واقعی: گام conformance هنوز IN-084 / OUT-083 / CURRENT-096 را بررسی می‌کرد؛ زنجیرهٔ قدیمی‌تر از آخرین وضعیت بود. در این تغییر به زنجیرهٔ جاری IN-088 / OUT-087 / CURRENT-100 اصلاح و دامنهٔ آن «تطبیق پیوندها» نام‌گذاری می‌شود، نه اثبات بازیابی میزبان.
 - منبع بسته به v0.3.5 می‌رود، اما ZIP جدید تا موفقیت اجرای تازه، دریافت artifact و تطبیق هش نهایی VERIFIED نیست.
-- چک‌لیست میزبان اول در بسته افزوده شد: [FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST.md](../../../prototype/haif-gpt6-starter/FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST.md).
+- چک‌لیست میزبان اول در بسته افزوده شد: [FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST.md](FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST.md).
 
 
 ## ممیزی عمیق POINT-0/050 و نسخهٔ تأییدشدهٔ بسته
 
-- زنجیرهٔ جاری: [POINT-0/050 (0+)](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-050-0PLUS-DEEP-AUDIT-FIRST-HOST.md) → [IN-088](../../0.0/anchors/PALANG-0.0-IN-20261027-088-DEEP-AUDIT-FIRST-HOST.md) → [OUT-087](../../0.0/anchors/PALANG-0.0-OUT-20261027-087-DEEP-AUDIT-FIRST-HOST.md) → [EVT-0225](../BEHAVIOR-TRACE/EVT-0225-DEEP-AUDIT-FIRST-HOST-2026-10-27.md) → [CURRENT-100](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-100-DEEP-AUDIT-FIRST-HOST.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- زنجیرهٔ جاری: [POINT-0/050 (0+)](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-050-0PLUS-DEEP-AUDIT-FIRST-HOST.md) → [IN-088](../../docs/0.0/anchors/PALANG-0.0-IN-20261027-088-DEEP-AUDIT-FIRST-HOST.md) → [OUT-087](../../docs/0.0/anchors/PALANG-0.0-OUT-20261027-087-DEEP-AUDIT-FIRST-HOST.md) → [EVT-0225](../../docs/architecture/BEHAVIOR-TRACE/EVT-0225-DEEP-AUDIT-FIRST-HOST-2026-10-27.md) → [CURRENT-100](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-100-DEEP-AUDIT-FIRST-HOST.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - نسخهٔ داخلی بسته: 0.3.5؛ هویت پایدار و نام ZIP مرجع ثابت مانده است.
 - ZIP: 22,896 بایت؛ SHA-256 `0b5c6e512b498ddf3a6c50b0eda65b669930c9059a069da7152c7745ef02a8f7`; run [40539499813](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40539499813); 18/18 آزمون استخراج‌شده PASS؛ artifact round-trip و تطبیق بایت منبع PASS.
 - artifact جفتی شامل ZIP، رسید هش و سند مادر است؛ read-back سند مادر PASS.
@@ -2041,9 +2041,9 @@ The historical Point 0/006 baseline check no longer assumes a literal spelling o
 
 ## POINT-0/051 (0+) — رشد بسته در میزبان و بازگشت کنترل‌شده به مخزن
 
-- زنجیرهٔ جاری: [POINT-0/051 (0+)](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-051-0PLUS-HOST-GROWTH-AND-REPOSITORY-LOOP.md) → [IN-089](../../0.0/anchors/PALANG-0.0-IN-20261027-089-HOST-GROWTH-AND-REPOSITORY-LOOP.md) → [OUT-088](../../0.0/anchors/PALANG-0.0-OUT-20261027-088-HOST-GROWTH-AND-REPOSITORY-LOOP.md) → [EVT-0226](../BEHAVIOR-TRACE/EVT-0226-HOST-GROWTH-AND-REPOSITORY-LOOP-2026-10-27.md) → [CURRENT-101](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-101-HOST-GROWTH-AND-REPOSITORY-LOOP.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- زنجیرهٔ جاری: [POINT-0/051 (0+)](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-051-0PLUS-HOST-GROWTH-AND-REPOSITORY-LOOP.md) → [IN-089](../../docs/0.0/anchors/PALANG-0.0-IN-20261027-089-HOST-GROWTH-AND-REPOSITORY-LOOP.md) → [OUT-088](../../docs/0.0/anchors/PALANG-0.0-OUT-20261027-088-HOST-GROWTH-AND-REPOSITORY-LOOP.md) → [EVT-0226](../../docs/architecture/BEHAVIOR-TRACE/EVT-0226-HOST-GROWTH-AND-REPOSITORY-LOOP-2026-10-27.md) → [CURRENT-101](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-101-HOST-GROWTH-AND-REPOSITORY-LOOP.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - هویت بسته ثابت است: `HAIF-GPT6-PORTABLE-STARTER-20261025-004`؛ نام ZIP اصلی ثابت می‌ماند و فقط نسخهٔ داخلی/هش/رسید ساخت عوض می‌شود.
-- نسخهٔ منبع به 0.3.6 می‌رسد و قرارداد [HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md](../../../prototype/haif-gpt6-starter/HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md) به خود بسته افزوده می‌شود.
+- نسخهٔ منبع به 0.3.6 می‌رسد و قرارداد [HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md](HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md) به خود بسته افزوده می‌شود.
 - چرخهٔ هدف: میزبان/تولیدکنندهٔ واقعی → ثبت IN/OUT و منشأ → صف بادوام → انتقال‌دهندهٔ مجاز GitHub → بازخوانی دقیق → رفتارشناسی مبتنی بر شواهد → دروازهٔ RAHM → پیشنهاد Child → تأیید صریح → Master زنده → ساخت ZIP اصلی و تازه‌سازی میزبان.
 - اتصال خودکار GPT به تولیدکننده، استقرار worker، مجوز نوشتن و تازه‌سازی خودکار میزبان هنوز با رسید واقعی اثبات نشده‌اند. این شکاف‌ها باز می‌مانند.
 
@@ -2064,14 +2064,14 @@ The historical Point 0/006 baseline check no longer assumes a literal spelling o
 
 ## POINT-0/052 (0+) — پاسخ قابل‌مشاهده و رشد همان مدل
 
-- زنجیره: [POINT-0/052 (0+)](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-052-0PLUS-RESPONSE-AND-HOST-GROWTH.md) → [IN-090](../../0.0/anchors/PALANG-0.0-IN-20261027-090-RESPONSE-AND-HOST-GROWTH.md) → [OUT-089](../../0.0/anchors/PALANG-0.0-OUT-20261027-089-RESPONSE-AND-HOST-GROWTH.md) → [EVT-0227](../BEHAVIOR-TRACE/EVT-0227-RESPONSE-ACKNOWLEDGEMENT-AND-HOST-GROWTH-2026-10-27.md) → [CURRENT-102](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-102-RESPONSE-AND-HOST-GROWTH.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- زنجیره: [POINT-0/052 (0+)](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-052-0PLUS-RESPONSE-AND-HOST-GROWTH.md) → [IN-090](../../docs/0.0/anchors/PALANG-0.0-IN-20261027-090-RESPONSE-AND-HOST-GROWTH.md) → [OUT-089](../../docs/0.0/anchors/PALANG-0.0-OUT-20261027-089-RESPONSE-AND-HOST-GROWTH.md) → [EVT-0227](../../docs/architecture/BEHAVIOR-TRACE/EVT-0227-RESPONSE-ACKNOWLEDGEMENT-AND-HOST-GROWTH-2026-10-27.md) → [CURRENT-102](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-102-RESPONSE-AND-HOST-GROWTH.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - بستهٔ starter به v0.3.7 ارتقا می‌یابد، با همان Stable ID و همان نام ZIP اصلی؛ پروتکل پاسخ قابل‌مشاهده و لنگرگذاری تعامل داخل بسته قرار گرفت.
 - رسید ساخت/هش نسخهٔ تازه تا اجرای workflow باز است؛ میزبان زنده، ثبت خودکار پیام‌ها، write-back و persistence همچنان NOT VERIFIED.
 
 
 ## POINT-0/052 (0+) — visible response and same-package growth (2026-10-27)
 
-- Chain: [POINT-0/052 (0+)](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-052-0PLUS-RESPONSE-AND-HOST-GROWTH.md) → [IN-090](../../0.0/anchors/PALANG-0.0-IN-20261027-090-RESPONSE-AND-HOST-GROWTH.md) → [OUT-089](../../0.0/anchors/PALANG-0.0-OUT-20261027-089-RESPONSE-AND-HOST-GROWTH.md) → [EVT-0227](../BEHAVIOR-TRACE/EVT-0227-RESPONSE-ACKNOWLEDGEMENT-AND-HOST-GROWTH-2026-10-27.md) → [CURRENT-102](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-102-RESPONSE-AND-HOST-GROWTH.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Chain: [POINT-0/052 (0+)](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-052-0PLUS-RESPONSE-AND-HOST-GROWTH.md) → [IN-090](../../docs/0.0/anchors/PALANG-0.0-IN-20261027-090-RESPONSE-AND-HOST-GROWTH.md) → [OUT-089](../../docs/0.0/anchors/PALANG-0.0-OUT-20261027-089-RESPONSE-AND-HOST-GROWTH.md) → [EVT-0227](../../docs/architecture/BEHAVIOR-TRACE/EVT-0227-RESPONSE-ACKNOWLEDGEMENT-AND-HOST-GROWTH-2026-10-27.md) → [CURRENT-102](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-102-RESPONSE-AND-HOST-GROWTH.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 
 - Existing ZIP family v0.3.7 is now verified: same canonical filename and stable ID; 30,453 bytes; SHA-256 `587f67e0d7d57ef70a78b253a934af90076531b2f3a61fed942dc78f387bdb7f`; 22/22 extracted tests; artifact read-back PASS (run 40544593941).
 - The package now carries the visible-response/interaction-anchor protocol. Live host import, automatic capture and authorized repository sync remain NOT VERIFIED.
@@ -2079,7 +2079,7 @@ The historical Point 0/006 baseline check no longer assumes a literal spelling o
 
 ## POINT-0/053 (0+) — ممیزی سخت گراف نقاط و تداوم همان ZIP
 
-- زنجیرهٔ جاری: [POINT-0/053 (0+)](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-053-0PLUS-GRAPH-AUDIT-AND-ZIP-CONTINUITY.md) → [IN-091](../../0.0/anchors/PALANG-0.0-IN-20261027-091-0PLUS-GRAPH-AUDIT-AND-ZIP-CONTINUITY.md) → [OUT-090](../../0.0/anchors/PALANG-0.0-OUT-20261027-090-0PLUS-GRAPH-AUDIT-AND-ZIP-CONTINUITY.md) → [EVT-0228](../BEHAVIOR-TRACE/EVT-0228-0PLUS-GRAPH-AUDIT-AND-ZIP-CONTINUITY-2026-10-27.md) → [CURRENT-103](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-103-0PLUS-GRAPH-AUDIT-AND-ZIP-CONTINUITY.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- زنجیرهٔ جاری: [POINT-0/053 (0+)](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-053-0PLUS-GRAPH-AUDIT-AND-ZIP-CONTINUITY.md) → [IN-091](../../docs/0.0/anchors/PALANG-0.0-IN-20261027-091-0PLUS-GRAPH-AUDIT-AND-ZIP-CONTINUITY.md) → [OUT-090](../../docs/0.0/anchors/PALANG-0.0-OUT-20261027-090-0PLUS-GRAPH-AUDIT-AND-ZIP-CONTINUITY.md) → [EVT-0228](../../docs/architecture/BEHAVIOR-TRACE/EVT-0228-0PLUS-GRAPH-AUDIT-AND-ZIP-CONTINUITY-2026-10-27.md) → [CURRENT-103](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-103-0PLUS-GRAPH-AUDIT-AND-ZIP-CONTINUITY.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - نسخهٔ ZIP محصول جداگانه نیست: Stable ID و نام `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip` ثابت‌اند؛ نسخهٔ داخلی محتوای بسته را نشان می‌دهد.
 - آخرین رسید v0.3.7: run 40546488170؛ 30,573 بایت؛ SHA-256 `fcc09933dd67ca1300af051e14dbcf80c76b6f620dc6c9623323caca307969fb`؛ 11 فایل؛ 23/23 آزمون و round-trip موفق.
 - به علت تغییر بایت‌های test_engine.py پس از رسید قبلی v0.3.7، نسخهٔ داخلی به 0.3.8 می‌رود؛ رسید artifact نسخهٔ 0.3.8 هنوز باید از workflow تازه خوانده شود.
@@ -2103,7 +2103,7 @@ The historical Point 0/006 baseline check no longer assumes a literal spelling o
 - Evidence Gate run 40550688021 اجرای خودکار را در محدودهٔ همان workflow تأیید می‌کند؛ این معادل پذیرش میزبان واقعی، بازیابی کامل، restart persistence یا همگام‌سازی زنده نیست.
 - شکاف‌های باز: منشأ IN-091 / OUT-090 / CURRENT-103؛ شکست تاریخی baseline نقطهٔ 0/006؛ شکست consistency در Stable Retrieval Core؛ تعارض شناسه‌های POINT-0/045، CURRENT-095، IN-083، OUT-082 و EVT-0220؛ ورود میزبان مستقل، کنترل منفی، restart persistence، ثبت زنده و write-back مجاز.
 - NEXT-051 صف یگانه باقی می‌ماند؛ هیچ شکافی با حدس بسته نمی‌شود و NEXT-052 ساخته نمی‌شود.
-- مراجع: [POINT-0/055](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261028-055-0PLUS-ARCHITECTURE-ZIP-MASTER-HARD-AUDIT.md), [CURRENT-105](../../0.0/anchors/PALANG-0.0-CURRENT-20261028-105-ARCHITECTURE-ZIP-MASTER-HARD-AUDIT.md), [OUT-092](../../0.0/anchors/PALANG-0.0-OUT-20261028-092-POINT-055-HARD-AUDIT.md).
+- مراجع: [POINT-0/055](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261028-055-0PLUS-ARCHITECTURE-ZIP-MASTER-HARD-AUDIT.md), [CURRENT-105](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261028-105-ARCHITECTURE-ZIP-MASTER-HARD-AUDIT.md), [OUT-092](../../docs/0.0/anchors/PALANG-0.0-OUT-20261028-092-POINT-055-HARD-AUDIT.md).
 
 - قاعدهٔ نسخه: افزایش شماره ممنوع مگر با تأیید صریح کاربر؛ تغییر فعلی، به‌روزرسانی درجا و بازسازی همان بستهٔ canonical در نسخهٔ داخلی 0.3.8 است. رسید ZIP جدید باید مستقل ساخته و تأیید شود.
 
@@ -2112,7 +2112,7 @@ The historical Point 0/006 baseline check no longer assumes a literal spelling o
 
 ## CURRENT LIVING CONTINUATION — POINT-0/057 (0+) / CURRENT-107 (0.0) — 2026-10-28
 
-- Canonical chain: [POINT-0/057](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261028-057-0PLUS-PORTABLE-CONFORMANCE-REPAIR.md) → [IN-095](../../0.0/anchors/PALANG-0.0-IN-20261028-095-POINT-057-CONFORMANCE-REPAIR.md) → [OUT-094](../../0.0/anchors/PALANG-0.0-OUT-20261028-094-POINT-057-CONFORMANCE-REPAIR.md) → [EVT-0232](../BEHAVIOR-TRACE/EVT-0232-POINT-057-PORTABLE-CONFORMANCE-REPAIR-2026-10-28.md) → [CURRENT-107](../../0.0/anchors/PALANG-0.0-CURRENT-20261028-107-PORTABLE-CONFORMANCE-REPAIR.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Canonical chain: [POINT-0/057](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261028-057-0PLUS-PORTABLE-CONFORMANCE-REPAIR.md) → [IN-095](../../docs/0.0/anchors/PALANG-0.0-IN-20261028-095-POINT-057-CONFORMANCE-REPAIR.md) → [OUT-094](../../docs/0.0/anchors/PALANG-0.0-OUT-20261028-094-POINT-057-CONFORMANCE-REPAIR.md) → [EVT-0232](../../docs/architecture/BEHAVIOR-TRACE/EVT-0232-POINT-057-PORTABLE-CONFORMANCE-REPAIR-2026-10-28.md) → [CURRENT-107](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261028-107-PORTABLE-CONFORMANCE-REPAIR.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - Prior chain POINT-0/056 → CURRENT-106 is preserved as history; it is not overwritten.
 - Current exact-head artifact proof is pending after integration of POINT-0/057. Internal package version remains 0.3.8; stable ID and canonical ZIP filename remain unchanged.
 - NEXT-051 remains the sole active queue; no NEXT-052. External host acceptance, restart persistence, automatic live capture and authorized write-back remain OPEN until direct evidence.
@@ -2120,7 +2120,7 @@ The historical Point 0/006 baseline check no longer assumes a literal spelling o
 
 ## Artifact proof closure — CURRENT-107 / POINT-0/057 (2026-10-28)
 
-The canonical starter artifact is now verified from the exact source commit `a5924a4aaac9521dc5f1f79a636b0e0f6d74b7ed`: internal version 0.3.8; stable ID `HAIF-GPT6-PORTABLE-STARTER-20261025-004`; canonical ZIP `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`; 32,235 bytes; SHA-256 `6ef2a5b0eab4c527db6f47ad8ef330f9854e692cd02fc3b2a02298636fa5bb78`; 11 files; 23/23 extracted tests pass; ZIP round-trip/read-back pass. Both Portable Conformance run [40635832753](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40635832753) and Living Architecture Audit run [40635832696](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40635832696) succeeded on that commit. Independent external-host acceptance, second-host recovery, restart persistence, live capture, write-back and background execution remain OPEN / NOT RUN. See [CURRENT-107](../../0.0/anchors/PALANG-0.0-CURRENT-20261028-107-PORTABLE-CONFORMANCE-REPAIR.md).
+The canonical starter artifact is now verified from the exact source commit `a5924a4aaac9521dc5f1f79a636b0e0f6d74b7ed`: internal version 0.3.8; stable ID `HAIF-GPT6-PORTABLE-STARTER-20261025-004`; canonical ZIP `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`; 32,235 bytes; SHA-256 `6ef2a5b0eab4c527db6f47ad8ef330f9854e692cd02fc3b2a02298636fa5bb78`; 11 files; 23/23 extracted tests pass; ZIP round-trip/read-back pass. Both Portable Conformance run [40635832753](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40635832753) and Living Architecture Audit run [40635832696](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40635832696) succeeded on that commit. Independent external-host acceptance, second-host recovery, restart persistence, live capture, write-back and background execution remain OPEN / NOT RUN. See [CURRENT-107](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261028-107-PORTABLE-CONFORMANCE-REPAIR.md).
 
 
 ## Latest verified execution state — 2026-10-28
@@ -2128,9 +2128,9 @@ The canonical starter artifact is now verified from the exact source commit `a59
 - Current chain: `POINT-0/057 (0+ marker on canonical root 0) → IN-095 → OUT-094 → EVT-0232 → CURRENT-107 → NEXT-051`.
 - Package identity: `HAIF-GPT6-PORTABLE-STARTER-20261025-004`; production ID `HAIF-G6PS-20261025-004`; internal version `0.3.8`; canonical archive filename `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`. These identities remain unchanged.
 - The canonical package build now includes a byte-matched snapshot of this document as `LIVING_MASTER_REFERENCE.md`. The ZIP is verified from the exact downloaded artifact, and the snapshot must match the companion master in that same build. The archive's current SHA-256, size and inventory belong in the workflow artifact receipt, not in this self-included document.
-- Exact-head workflow source of truth: [Portable Conformance workflow](../../../.github/workflows/rahm-portable-conformance.yml) and [Living Architecture Audit workflow](../../../.github/workflows/living-architecture-audit.yml). Use the newest completed successful run on the same source commit; older receipts are historical only.
+- Exact-head workflow source of truth: [Portable Conformance workflow](../../.github/workflows/rahm-portable-conformance.yml) and [Living Architecture Audit workflow](../../.github/workflows/living-architecture-audit.yml). Use the newest completed successful run on the same source commit; older receipts are historical only.
 - Repository CI and extracted-package tests prove only the recorded scope. They do not prove external host acceptance, persistent state after restart, automatic live capture, authorized repository write-back or unattended execution.
-- Active queue remains [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). Keep Path A (portable transfer and real-host acceptance) and Path B (historical graph adjudication) separate but connected to MASTER/RAHM/CHILD. Do not create NEXT-052.
+- Active queue remains [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). Keep Path A (portable transfer and real-host acceptance) and Path B (historical graph adjudication) separate but connected to MASTER/RAHM/CHILD. Do not create NEXT-052.
 - Destination status: GitHub repository evidence is verified for the cited revision. Buffer, Library, Persistent Memory, Dropbox and independent-host destinations are not implied by this repository record.
 
 
@@ -2153,7 +2153,7 @@ The canonical starter artifact is now verified from the exact source commit `a59
 
 
 ## Latest live mirror sync continuation — EVT-0235 (2026-10-28)
-- Event/time binding: [EVT-0235](../../architecture/BEHAVIOR-TRACE/EVT-0235-LIVE-MIRROR-SYNC-RECHECK-2026-10-28.md) / [TIME-BINDING-EVT-0235](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0235-LIVE-MIRROR-SYNC-2026-10-28.md).
+- Event/time binding: [EVT-0235](../../docs/architecture/BEHAVIOR-TRACE/EVT-0235-LIVE-MIRROR-SYNC-RECHECK-2026-10-28.md) / [TIME-BINDING-EVT-0235](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0235-LIVE-MIRROR-SYNC-2026-10-28.md).
 - Latest root/checkpoint/queue: POINT-0/058 (0+) → CURRENT-108 → NEXT-051, with IN-096 → OUT-095 → EVT-0233. Preserve POINT-0/016, /017, /018, /057 and all history.
 - Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars) and Library v7 (10,480 chars) match after trimming trailing LF; one extra newline remains in Library. Repository remains authoritative.
 - Audit/conformance passed on `ac091ffa0ab60ee6ba404490e596709b61136eef`, but Evidence Gate advanced main to `a6ef55cdf0586c7fb3057dbe214fa5969728df21`; the new head remains NOT VERIFIED until exact-SHA evidence.
@@ -2161,7 +2161,7 @@ The canonical starter artifact is now verified from the exact source commit `a59
 
 ## EVT-0236 — Live mirror synchronization recheck (2026-10-28)
 
-- Event / time binding: [EVT-0236](../../architecture/BEHAVIOR-TRACE/EVT-0236-LIVE-MIRROR-SYNC-RECHECK-2026-10-28.md) / [TIME-BINDING-EVT-0236](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0236-LIVE-MIRROR-SYNC-2026-10-28.md).
+- Event / time binding: [EVT-0236](../../docs/architecture/BEHAVIOR-TRACE/EVT-0236-LIVE-MIRROR-SYNC-RECHECK-2026-10-28.md) / [TIME-BINDING-EVT-0236](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0236-LIVE-MIRROR-SYNC-2026-10-28.md).
 - Canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 characters); Library version 7 (10,480 characters), one extra trailing LF only. Normalized body and semantic fields match; no Library write because no supported exported `source_file_ref` route is available.
 - Main HEAD at observation: `11e69bb6b5e62a11186569b23312ba06e1d4e1c3`; exact-current-main audit/conformance NOT VERIFIED. Current root label POINT-0/059 has two distinct candidate files; CURRENT-109 remains the observed checkpoint; EVT-0235 mirror-sync/root-event collision is preserved. No root is selected by inference.
 - NEXT-051 remains the sole queue label; its path/body mismatch and CURRENT-065/CURRENT-066 remain OPEN. Issues #20/#21 remain OPEN. Route A (portable package/host recovery) and Route B (historic graph and identity reconciliation) remain distinct but connected.
@@ -2170,7 +2170,7 @@ The canonical starter artifact is now verified from the exact source commit `a59
 
 ## POINT-0/060 — اجرای واقعی سند مادر و بستهٔ قابل‌اجرا (2026-10-28)
 
-- Current continuation: [POINT-0/060](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261028-060-LIVING-MASTER-AND-EXECUTABLE-ZIP.md) → [IN-098](../../0.0/anchors/PALANG-0.0-IN-20261028-098-LIVING-MASTER-AND-EXECUTABLE-ZIP.md) → [OUT-097](../../0.0/anchors/PALANG-0.0-OUT-20261028-097-LIVING-MASTER-AND-EXECUTABLE-ZIP.md) → [EVT-0237](../BEHAVIOR-TRACE/EVT-0237-POINT-060-LIVING-MASTER-AND-EXECUTABLE-ZIP-2026-10-28.md) → [CURRENT-110](../../0.0/anchors/PALANG-0.0-CURRENT-20261028-110-LIVING-MASTER-AND-EXECUTABLE-ZIP.md) → NEXT-051.
+- Current continuation: [POINT-0/060](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261028-060-LIVING-MASTER-AND-EXECUTABLE-ZIP.md) → [IN-098](../../docs/0.0/anchors/PALANG-0.0-IN-20261028-098-LIVING-MASTER-AND-EXECUTABLE-ZIP.md) → [OUT-097](../../docs/0.0/anchors/PALANG-0.0-OUT-20261028-097-LIVING-MASTER-AND-EXECUTABLE-ZIP.md) → [EVT-0237](../../docs/architecture/BEHAVIOR-TRACE/EVT-0237-POINT-060-LIVING-MASTER-AND-EXECUTABLE-ZIP-2026-10-28.md) → [CURRENT-110](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261028-110-LIVING-MASTER-AND-EXECUTABLE-ZIP.md) → NEXT-051.
 - User requirement: progress must change the living master and the existing executable package, not only produce status reports.
 - Existing package identity remains `HAIF-GPT6-PORTABLE-STARTER-20261025-004`; canonical ZIP filename remains `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`; internal source version remains 0.3.8 unless a governing, tested change requires otherwise.
 - Verified prior paired-build receipt: master v1.7.32 was embedded byte-for-byte in the existing canonical ZIP; Portable RAHM Conformance run 40657812606 on SHA `1a4e5886722bcf8b9c351788c841556a0df0cd8a` passed. Archive: 103,220 bytes, SHA-256 `e3169246e87620de9ac17bb4d99e07843fa80a220c0a104d42693ab9442be481`, 13 files, extracted tests PASS. This is historical proof for v1.7.32 only.
@@ -2185,7 +2185,7 @@ The bundled living master is an immutable snapshot of the source state used for 
 
 
 ## Latest live mirror sync continuation — EVT-0238 (2026-10-29)
-- Event / time binding: [EVT-0238](../../architecture/BEHAVIOR-TRACE/EVT-0238-LIVE-MIRROR-SYNC-RECHECK-2026-10-29.md) / [TIME-BINDING-EVT-0238](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0238-LIVE-MIRROR-SYNC-2026-10-29.md).
+- Event / time binding: [EVT-0238](../../docs/architecture/BEHAVIOR-TRACE/EVT-0238-LIVE-MIRROR-SYNC-RECHECK-2026-10-29.md) / [TIME-BINDING-EVT-0238](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0238-LIVE-MIRROR-SYNC-2026-10-29.md).
 - Source `de1b75f07241c9b313e476af5f1417177ff78c10` is unchanged (10,479 characters). Exact Library version 7 under stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48` is 10,480 characters; Library has one additional trailing LF only. Semantic fields match; no rewrite because no supported exported-snapshot/`source_file_ref` route is available. The repository source remains authoritative.
 - Current observed user-turn root/checkpoint/queue: POINT-0/060 → CURRENT-110 → NEXT-051. Preserve POINT-0/016, /017, /018, POINT-0/058 (0+), both POINT-0/059 candidates, EVT-0235 collision lineage and all Route A/Route B distinctions. This sync does not create a root or queue item.
 - Event registration commit: `0b84b4e1fe687432f039f4c4294d903bbc05e4a7`, UTC `2026-10-29T06:45:45Z`, Tehran `2026-10-29T10:15:45+03:30`; exact event blob `a0fde3f09937cd3e278f83f046b018ebfbeece76`, 5,740 characters, independently read back.
@@ -2212,7 +2212,7 @@ The bundled living master is an immutable snapshot of the source state used for 
 
 ## EVT-0241 — Live mirror synchronization and verifier separation (2026-10-31)
 
-- Event: [EVT-0241](../BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) / [TIME-BINDING-EVT-0241](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md).
+- Event: [EVT-0241](../../docs/architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) / [TIME-BINDING-EVT-0241](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md).
 - Current root chain remains POINT-0/061 → IN-099 → OUT-098 → EVT-0240 → CURRENT-111 → NEXT-051. This is a mirror-only event, not a new user root. POINT-0/016, /017, /018 and all subsequent points remain preserved.
 - Source `docs/architecture/BEHAVIOR-OBSERVATORY/LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md`: blob `de1b75f07241c9b313e476af5f1417177ff78c10`, 10,479 chars. Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, exact version 7, 10,480 chars; Library equals source plus one trailing LF. Edit distance 1; exact equality FALSE; Stable ID, Production ID, Test ID, Version 1.0.0, BOART-FOLLOWUP-01 → 02 → 03, destination statuses and all remaining content match. No Library rewrite; no source_file_ref export/upload route was exposed; container_path was not used.
 - Main HEAD before event registration: `702f41dd7b8347526bd99cb116040df23d158abf` at UTC `2026-10-30T07:23:57Z` / Tehran `2026-10-30T10:53:57+03:30`. The exact-head Living Architecture Audit run 41038536961 failed because the global current-chain verifier was pinned to POINT-0/059 / IN-097 / OUT-096 / EVT-0235 / CURRENT-109 and its expected gate wording did not match the active NEXT-051. Portable RAHM Conformance run 41019834175 succeeded only on preceding SHA `ea769d9564ed45c41373cb9435e398fa8adc8261`; Evidence Gate 41019834213 tested that prior SHA and advanced main to `702f41dd7b8347526bd99cb116040df23d158abf`. Reconciliation Watchdog 41027558272 passed on `702f41dd7b8347526bd99cb116040df23d158abf`, but does not substitute for full audit or package conformance.
@@ -2226,7 +2226,7 @@ The bundled living master is an immutable snapshot of the source state used for 
 
 ## EVT-0242 — live mirror synchronization, exact-SHA verification and time-binding repair (2026-10-31)
 
-- Mirror event: [EVT-0242](../BEHAVIOR-TRACE/EVT-0242-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) / [TIME-BINDING-EVT-0242](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0242-LIVE-MIRROR-SYNC-2026-10-31.md). The previous EVT-0241 event commit timestamp was independently recovered and its pending time-binding fields were corrected.
+- Mirror event: [EVT-0242](../../docs/architecture/BEHAVIOR-TRACE/EVT-0242-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) / [TIME-BINDING-EVT-0242](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0242-LIVE-MIRROR-SYNC-2026-10-31.md). The previous EVT-0241 event commit timestamp was independently recovered and its pending time-binding fields were corrected.
 - Current user-turn chain remains POINT-0/061 → IN-099 → OUT-098 → EVT-0240 → CURRENT-111 → NEXT-051. This is a mirror-only event; POINT-0/016, /017, /018 and all later points remain preserved. No new root and no NEXT-052.
 - Canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10` remains 10,479 characters. Exact Library version 7 under stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48` is 10,480 characters and equals source plus one terminal LF. Exact equality is FALSE; normalized content and semantic fields match; no Library rewrite because no supported exported `source_file_ref` route is exposed.
 - The time-binding update commit `b5853aa5aa33b922e7e4388e45d08d59f81fccd1` is at UTC `2026-10-31T06:49:09Z` / Tehran `2026-10-31T10:19:09+03:30`. Living Architecture Audit 41178131603 and Portable RAHM Conformance 41178131559 passed on that exact SHA. Evidence Gate 41178131764 then created `e8e5cf448119e328e12b7801e953edfe9438751e` at UTC `2026-10-31T06:49:19Z` / Tehran `2026-10-31T10:19:19+03:30`; no Actions runs were found for that follow-up SHA at this revision, so it remains NOT VERIFIED.
@@ -2237,7 +2237,7 @@ The bundled living master is an immutable snapshot of the source state used for 
 
 ## EVT-0243 — live mirror synchronization and exact-SHA continuation (2026-11-01)
 
-- Mirror event: [EVT-0243](../../architecture/BEHAVIOR-TRACE/EVT-0243-LIVE-MIRROR-SYNC-RECHECK-2026-11-01.md) / [TIME-BINDING-EVT-0243](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0243-LIVE-MIRROR-SYNC-2026-11-01.md). Event commit `aadc163fdfb0fc872fbf00221fc4d628acf688fc`, UTC `2026-11-01T06:27:16Z`, Tehran `2026-11-01T09:57:16+03:30`; event read-back exact PASS.
+- Mirror event: [EVT-0243](../../docs/architecture/BEHAVIOR-TRACE/EVT-0243-LIVE-MIRROR-SYNC-RECHECK-2026-11-01.md) / [TIME-BINDING-EVT-0243](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0243-LIVE-MIRROR-SYNC-2026-11-01.md). Event commit `aadc163fdfb0fc872fbf00221fc4d628acf688fc`, UTC `2026-11-01T06:27:16Z`, Tehran `2026-11-01T09:57:16+03:30`; event read-back exact PASS.
 - Current user-turn chain remains POINT-0/061 → IN-099 → OUT-098 → EVT-0240 → CURRENT-111 → NEXT-051. This is a mirror-only event; it does not create a new user root or a competing queue. Preserve POINT-0/016, /017, /018, all later points, canonical EVT-0178, EVT-0179 and quarantined duplicate lineage.
 - Canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); exact Library v7 under `libfile_7ac3c9a6ec14819198eb2751e204aa48` (10,480 chars) is source plus one terminal LF. Exact equality FALSE; semantic fields match; no Library write; source unchanged.
 - Living Architecture Audit 41280898957 and Portable RAHM Conformance 41280898982 both SUCCESS on exact SHA `aadc163fdfb0fc872fbf00221fc4d628acf688fc`. Existing canonical starter package v0.3.8 rebuilt; canonical ZIP SHA-256 `6e7ba0be76469836c3b017ca6773899bc0a27136ea91772f4f095493a3a3971f`; ZIP integrity, source-byte read-back, 23 extracted tests, artifact round-trip and paired living-master artifact read-back PASS. These are CI proofs only; external AI-host acceptance remains NOT RUN.
@@ -2287,14 +2287,14 @@ The bundled living master is an immutable snapshot of the source state used for 
 
 ## معماری افزوده — تداوم تصمیم و بازبینی وفادار
 
-- Rule: [DCRG — Decision Continuity & Review Governance](../../reference/REFERENCE-DOCUMENTS/DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03-001.md)
-- Source chain: [POINT-0/061](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261030-061-ARCHITECTURE-GAP-RECONCILIATION.md) → [IN-100](../../0.0/anchors/PALANG-0.0-IN-20261103-100-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [OUT-099](../../0.0/anchors/PALANG-0.0-OUT-20261103-099-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [EVT-0246](../BEHAVIOR-TRACE/EVT-0246-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03.md) → [CURRENT-112](../../0.0/anchors/PALANG-0.0-CURRENT-20261103-112-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Rule: [DCRG — Decision Continuity & Review Governance](../../docs/reference/REFERENCE-DOCUMENTS/DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03-001.md)
+- Source chain: [POINT-0/061](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261030-061-ARCHITECTURE-GAP-RECONCILIATION.md) → [IN-100](../../docs/0.0/anchors/PALANG-0.0-IN-20261103-100-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [OUT-099](../../docs/0.0/anchors/PALANG-0.0-OUT-20261103-099-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [EVT-0246](../../docs/architecture/BEHAVIOR-TRACE/EVT-0246-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03.md) → [CURRENT-112](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261103-112-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 
 **قاعدهٔ معماری:** پیش از هر بازبینی، تصمیم‌های قبلی مرتبط و دلیل تثبیت آن‌ها بازیابی شوند. تصمیم SETTLED / ACTIVE بدون محرک معتبر بازگشایی نمی‌شود. محرک معتبر: شواهد تازه و قابل‌اعتماد، تغییر شرایط/الزامات، تناقض مستند، خطای اثبات‌شده، ریسک مهمی که پیش‌تر بررسی نشده، یا درخواست صریح کاربر. گزینهٔ جایگزین یا سلیقهٔ دستیار نباید به‌عنوان ایراد واقعی معرفی شود. در صورت بازگشایی موجه، تصمیم قبلی و تبار آن حفظ و دلیل تازه آشکار می‌شود.
 
 این قاعده در مدل دادهٔ تصمیم‌ها، رفتار بازبینی اسناد، تداوم نشست و بستهٔ انتقال میزبان اعمال می‌شود. ثبت در مخزن به‌تنهایی اثبات بازیابی خودکار در نشست/میزبان دیگر نیست؛ آزمون مستقل میزبان در NEXT-051 باقی می‌ماند.
 
-- Checkpoint: [CURRENT-112](../../0.0/anchors/PALANG-0.0-CURRENT-20261103-112-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md).
+- Checkpoint: [CURRENT-112](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261103-112-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md).
 - Status: repository integration recorded; exact read-back and runtime enforcement remain evidence-gated.
 
 ## EVT-0247 — Live mirror synchronization and exact-SHA recovery — 2026-11-04
@@ -2316,7 +2316,7 @@ The bundled living master is an immutable snapshot of the source state used for 
 
 ## EVT-0248 — Live mirror synchronization recheck — 2026-11-04
 
-- Event: [EVT-0248](../BEHAVIOR-TRACE/EVT-0248-LIVE-MIRROR-SYNC-RECHECK-2026-11-04.md); time binding: [TIME-BINDING-EVT-0248](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0248-LIVE-MIRROR-SYNC-2026-11-04.md).
+- Event: [EVT-0248](../../docs/architecture/BEHAVIOR-TRACE/EVT-0248-LIVE-MIRROR-SYNC-RECHECK-2026-11-04.md); time binding: [TIME-BINDING-EVT-0248](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0248-LIVE-MIRROR-SYNC-2026-11-04.md).
 - Canonical source blob remains `de1b75f07241c9b313e476af5f1417177ff78c10`, 10,479 characters. Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, version 7, is 10,480 characters; only one additional terminal LF. Normalized content and semantic fields match; exact equality FALSE; edit distance 1. No source or Library write.
 - Latest root/checkpoint/queue remain POINT-0/061 → CURRENT-112 → NEXT-051. Mirror-only event; no new root, checkpoint or queue. Preserve all historical points and EVT-0177/0178/0179 collision lineage.
 - Latest main at run start: `a318103d4e877ae3a258009d45e338cb5b1f3842`, created by Evidence Gate 41786733124 on tested parent `c086039767eca934302f8323c7de416767ac74fe`. Evidence Gate PASS does not substitute for Living Architecture Audit or Portable RAHM Conformance. Current head has no full exact-SHA audit/conformance receipt and remains NOT VERIFIED.
@@ -2327,7 +2327,7 @@ The bundled living master is an immutable snapshot of the source state used for 
 
 ## EVT-0249 — live mirror synchronization recheck — 2026-11-05
 
-- [EVT-0249](../BEHAVIOR-TRACE/EVT-0249-LIVE-MIRROR-SYNC-RECHECK-2026-11-05.md) / [TIME-BINDING-EVT-0249](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0249-LIVE-MIRROR-SYNC-2026-11-05.md).
+- [EVT-0249](../../docs/architecture/BEHAVIOR-TRACE/EVT-0249-LIVE-MIRROR-SYNC-RECHECK-2026-11-05.md) / [TIME-BINDING-EVT-0249](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0249-LIVE-MIRROR-SYNC-2026-11-05.md).
 - Source blob `de1b75f07241c9b313e476af5f1417177ff78c10`, 10,479 chars; Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, version 7, 10,480 chars. Only one additional terminal LF in Library; normalized content and semantic fields match; exact equality FALSE; edit distance 1. No source or Library write.
 - Root/checkpoint/queue remain POINT-0/061 → CURRENT-112 → NEXT-051. Mirror-only event; no new root or NEXT-052.
 - Event commit `f94dadb23fa923dcadf51e5b8a6a8e4185e1ed3e` was independently read back. Audit 41982538116 and Portable RAHM Conformance 41982538087 both failed on that exact SHA because the export manifest still omitted live references to IN-100, OUT-099 and EVT-0246. The conformance ZIP build then stopped before master sync and reported the embedded living master missing; no package acceptance is inferred.
@@ -2348,7 +2348,7 @@ The bundled living master is an immutable snapshot of the source state used for 
 
 
 ## EVT-0251 — live mirror synchronization recheck — 2026-11-06
-- [EVT-0251](../BEHAVIOR-TRACE/EVT-0251-LIVE-MIRROR-SYNC-RECHECK-2026-11-06.md) / [TIME-BINDING-EVT-0251](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0251-LIVE-MIRROR-SYNC-2026-11-06.md).
+- [EVT-0251](../../docs/architecture/BEHAVIOR-TRACE/EVT-0251-LIVE-MIRROR-SYNC-RECHECK-2026-11-06.md) / [TIME-BINDING-EVT-0251](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0251-LIVE-MIRROR-SYNC-2026-11-06.md).
 - Canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10`, 10,479 chars; Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, exact version 7, 10,480 chars. Normalized content and semantic fields MATCH; exact equality FALSE; edit distance 1, solely one extra terminal LF in Library. No source or Library write; no supported `source_file_ref` upload route; `container_path` not used.
 - Latest root/checkpoint/sole queue remain POINT-0/061 → CURRENT-112 → NEXT-051. Mirror-only; no new root or NEXT-052. Preserve POINT-0/016, /017, /018 / EVT-0180, EVT-0177/time binding, canonical EVT-0178, EVT-0179 and quarantined duplicate-number lineage.
 - Run-start main `ca86557ac9d12582f3962fdece9863c09697378e`: Living Architecture Audit 42015763286 SUCCESS on exact SHA; no Portable RAHM Conformance was found on ca865; latest pre-event conformance 41985021983 was on parent `dfa5c8390350031770af969ac94add523199de51`.
@@ -2361,8 +2361,8 @@ The bundled living master is an immutable snapshot of the source state used for 
 
 A real document-recovery interaction exposed a source-routing failure: the assistant initially searched ChatGPT Library although the user explicitly asked for an artifact in the project GitHub repository. The final bilingual certificate had existed in the repository all along. Direct fetch of the canonical path, followed by repository search and full read-back of the folder README and recovery index, resolved the request.
 
-- Lesson: [LAL-20261106-001](../ARCHITECTURE-LESSONS/lessons/LAL-20261106-001-CANONICAL-SOURCE-ROUTING-AND-READBACK-RECOVERY.md).
-- Event: [EVT-0252](../BEHAVIOR-TRACE/EVT-0252-CANONICAL-SOURCE-ROUTING-AND-READBACK-RECOVERY-2026-11-06.md).
+- Lesson: [LAL-20261106-001](../../docs/architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261106-001-CANONICAL-SOURCE-ROUTING-AND-READBACK-RECOVERY.md).
+- Event: [EVT-0252](../../docs/architecture/BEHAVIOR-TRACE/EVT-0252-CANONICAL-SOURCE-ROUTING-AND-READBACK-RECOVERY-2026-11-06.md).
 - Permanent retrieval rule: honor the destination named by the user; keep GitHub, ChatGPT Library and other stores distinct; read the destination's canonical index/README; resolve the requested alias to an exact path; fetch the full artifact from a known ref; verify path, ref, blob SHA and key content; change strategy within the same destination after an initial miss; never claim absence based on a search of a different store.
 - This case proves the specific GitHub retrieval and repository read-back across linked surfaces only. Automatic runtime enforcement, regression coverage and fresh-host retrieval remain OPEN / NOT PROVEN until independently tested.
 - Continuity: POINT-0/061 → CURRENT-112 → NEXT-051 remains unchanged; no new root or queue identity is created.
@@ -2391,7 +2391,7 @@ Implementation surfaces: `docs/STABLE_RETRIEVAL_CORE.md`, `docs/RETRIEVAL_RUNTIM
 
 ## EVT-0253 — live mirror synchronization recheck — 2026-11-07
 
-- Event/time binding: [EVT-0253](../BEHAVIOR-TRACE/EVT-0253-LIVE-MIRROR-SYNC-RECHECK-2026-11-07.md) / [TIME-BINDING-EVT-0253](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0253-LIVE-MIRROR-SYNC-2026-11-07.md).
+- Event/time binding: [EVT-0253](../../docs/architecture/BEHAVIOR-TRACE/EVT-0253-LIVE-MIRROR-SYNC-RECHECK-2026-11-07.md) / [TIME-BINDING-EVT-0253](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0253-LIVE-MIRROR-SYNC-2026-11-07.md).
 - Mirror-only; latest user root POINT-0/061, checkpoint CURRENT-112, sole active queue NEXT-051. No new root, IN/OUT pair, checkpoint identity or NEXT-052.
 - Canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, exact version 7 (10,480 chars). Normalized content and semantic fields match; exact equality FALSE by one additional terminal LF. No source or Library write.
 - Run-start main `ca715af1d2dca3457c7d6d096bcb88bfccadb7b2`; Living Architecture Audit 42289713783 SUCCESS on that exact SHA. Portable RAHM Conformance was not found on that exact SHA; latest prior conformance 42285693526 tested parent `918d4de4474cc0e4559858a46cd4feb5b30ce36a`.
@@ -2403,7 +2403,7 @@ Implementation surfaces: `docs/STABLE_RETRIEVAL_CORE.md`, `docs/RETRIEVAL_RUNTIM
 
 این الحاقیهٔ افزایشی، ریشهٔ جدید کاربر را به سند مادر متصل می‌کند و هیچ‌یک از ریشه‌ها یا تصمیم‌های تاریخی را حذف یا بازنویسی نمی‌کند.
 
-- Root: [POINT-0/062 (0+)](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261107-062-LIVE-NEWS-CONTINUITY-TEST.md)
+- Root: [POINT-0/062 (0+)](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261107-062-LIVE-NEWS-CONTINUITY-TEST.md)
 - Chain: IN-101 → OUT-100 → EVT-0254 → CURRENT-113 → NEXT-051.
 - Meaning: کاربر از گردش‌کار گزارش خبری به‌عنوان آزمون عملی تداوم هوش و کار استفاده می‌کند: بازیابی دستورهای تثبیت‌شده، گزارش پایهٔ ۰۷:۰۰ تهران، به‌روزرسانی افزایشی در ۱۱/۱۵/۲۳ یا هر زمان درخواستی، تشخیص آخرین گزارش واقعی، عدم فرض گزارش ازدست‌رفته، عدم تکرار خبر بدون تغییر، حفظ منابع/زمان/واحد/عدم‌قطعیت و بازیابی پس از شروع مجدد یا انتقال به میزبان مستقل.
 - Fixed scope and test plan: see POINT-0/062, sections 2–4. The complete test matrix T01–T10 is preserved there.
@@ -2418,11 +2418,11 @@ Finish exact read-back and cross-file reconciliation for POINT-0/062, verify the
 
 This additive amendment carries the user's explicit requirement that every POINT-0, POINT-0.0 and POINT-0+ anchor be connected to the complete Future AI / Palang Footprint graph. The current linear chain is a navigable path through that graph, not a substitute for full historical reconciliation.
 
-- Root: [POINT-0/063 (0+)](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261107-063-GRAPH-WIDE-CONTINUITY-AND-ANCHORING.md).
-- Independent input/output: [IN-102](../../0.0/anchors/PALANG-0.0-IN-20261107-102-GRAPH-WIDE-CONTINUITY.md) + [OUT-101](../../0.0/anchors/PALANG-0.0-OUT-20261107-101-GRAPH-WIDE-CONTINUITY.md).
-- Event/time binding: [EVT-0255](../BEHAVIOR-TRACE/EVT-0255-POINT-063-GRAPH-WIDE-CONTINUITY-2026-11-07.md) / [TIME-BINDING-EVT-0255](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0255-GRAPH-WIDE-CONTINUITY-2026-11-07.md).
-- Current execution checkpoint: [CURRENT-114](../../0.0/anchors/PALANG-0.0-CURRENT-20261107-114-GRAPH-WIDE-CONTINUITY.md).
-- Sole active queue: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). NEXT-052 is not created.
+- Root: [POINT-0/063 (0+)](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261107-063-GRAPH-WIDE-CONTINUITY-AND-ANCHORING.md).
+- Independent input/output: [IN-102](../../docs/0.0/anchors/PALANG-0.0-IN-20261107-102-GRAPH-WIDE-CONTINUITY.md) + [OUT-101](../../docs/0.0/anchors/PALANG-0.0-OUT-20261107-101-GRAPH-WIDE-CONTINUITY.md).
+- Event/time binding: [EVT-0255](../../docs/architecture/BEHAVIOR-TRACE/EVT-0255-POINT-063-GRAPH-WIDE-CONTINUITY-2026-11-07.md) / [TIME-BINDING-EVT-0255](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0255-GRAPH-WIDE-CONTINUITY-2026-11-07.md).
+- Current execution checkpoint: [CURRENT-114](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261107-114-GRAPH-WIDE-CONTINUITY.md).
+- Sole active queue: [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). NEXT-052 is not created.
 - Parent/history: POINT-0/062 (0+) → POINT-0/061 lineage and all older roots/checkpoints/events/lessons/contracts/reference documents remain preserved. No historical branch is deleted, silently renumbered or declared resolved.
 - Required connected surfaces: 0.0 central registry, Reference Index, Behavior Trace index, Integration Queue, this living mother, recovery/export manifests and source-backed historical anchors.
 - Root registration commit: `7b55de39c19691a28ae50406e50ee6ddbcd3c4fe`; UTC `2026-11-07T18:13:22Z`; Asia/Tehran `2026-11-07T21:43:22+03:30`. User-message time remains UNKNOWN / UNVERIFIED. UTC is the permanent base.
@@ -2437,11 +2437,11 @@ This amendment records a new root and an active execution plan. It does not clai
 
 The user confirmed two permanent automatic daily news reports, plus two manual suggested update windows. This is an additive continuation of POINT-0/063 and does not replace earlier anchors.
 
-- Root: [POINT-0/064](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261107-064-DAILY-NEWS-CADENCE-AND-24H-CONTINUITY.md).
-- Independent input/output: [IN-103](../../0.0/anchors/PALANG-0.0-IN-20261107-103-DAILY-NEWS-CADENCE.md) + [OUT-102](../../0.0/anchors/PALANG-0.0-OUT-20261107-102-DAILY-NEWS-CADENCE.md).
-- Event/time binding: [EVT-0256](../BEHAVIOR-TRACE/EVT-0256-POINT-064-DAILY-NEWS-CADENCE-2026-11-07.md) / [TIME-BINDING-EVT-0256](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0256-DAILY-NEWS-CADENCE-2026-11-07.md).
-- Current checkpoint: [CURRENT-115](../../0.0/anchors/PALANG-0.0-CURRENT-20261107-115-DAILY-NEWS-CADENCE.md).
-- Sole active queue: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). No NEXT-052.
+- Root: [POINT-0/064](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261107-064-DAILY-NEWS-CADENCE-AND-24H-CONTINUITY.md).
+- Independent input/output: [IN-103](../../docs/0.0/anchors/PALANG-0.0-IN-20261107-103-DAILY-NEWS-CADENCE.md) + [OUT-102](../../docs/0.0/anchors/PALANG-0.0-OUT-20261107-102-DAILY-NEWS-CADENCE.md).
+- Event/time binding: [EVT-0256](../../docs/architecture/BEHAVIOR-TRACE/EVT-0256-POINT-064-DAILY-NEWS-CADENCE-2026-11-07.md) / [TIME-BINDING-EVT-0256](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0256-DAILY-NEWS-CADENCE-2026-11-07.md).
+- Current checkpoint: [CURRENT-115](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261107-115-DAILY-NEWS-CADENCE.md).
+- Sole active queue: [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). No NEXT-052.
 - Morning automation ID `6aef62341be0819185b2b0c8c126e672`: existing task updated; daily 07:00 Asia/Tehran; fixed prior-24-hour coverage from previous day 07:00 to current day 07:00; enabled and dashboard-read-back verified.
 - Night automation ID `6aef6dcfc5c8819182290d92908e94d7`: new task created; daily 23:00 Asia/Tehran; same-day 07:00–23:00 coverage; enabled and dashboard-read-back verified.
 - 11:00 and 15:00 remain manual suggested windows; «بروزرسانی خبر» can be requested at any time.
@@ -2455,9 +2455,9 @@ Continue the existing project-wide graph, package, exact-SHA, RAHM, runtime, per
 
 The user's departure instruction is appended under the existing POINT-0/064 root. It does not create a competing root or queue.
 
-- Independent input/output: [IN-104](../../0.0/anchors/PALANG-0.0-IN-20261107-104-DEPARTURE-CONTINUITY-AND-PERMANENT-TEST-GOVERNANCE.md) + [OUT-103](../../0.0/anchors/PALANG-0.0-OUT-20261107-103-DEPARTURE-CONTINUITY-AND-PERMANENT-TEST-GOVERNANCE.md).
-- Event: [EVT-0257](../BEHAVIOR-TRACE/EVT-0257-POINT-064-DEPARTURE-CONTINUITY-2026-11-07.md).
-- Root remains [POINT-0/064](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261107-064-DAILY-NEWS-CADENCE-AND-24H-CONTINUITY.md); current checkpoint remains [CURRENT-115](../../0.0/anchors/PALANG-0.0-CURRENT-20261107-115-DAILY-NEWS-CADENCE.md); sole queue remains [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). NEXT-052 is not created.
+- Independent input/output: [IN-104](../../docs/0.0/anchors/PALANG-0.0-IN-20261107-104-DEPARTURE-CONTINUITY-AND-PERMANENT-TEST-GOVERNANCE.md) + [OUT-103](../../docs/0.0/anchors/PALANG-0.0-OUT-20261107-103-DEPARTURE-CONTINUITY-AND-PERMANENT-TEST-GOVERNANCE.md).
+- Event: [EVT-0257](../../docs/architecture/BEHAVIOR-TRACE/EVT-0257-POINT-064-DEPARTURE-CONTINUITY-2026-11-07.md).
+- Root remains [POINT-0/064](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261107-064-DAILY-NEWS-CADENCE-AND-24H-CONTINUITY.md); current checkpoint remains [CURRENT-115](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261107-115-DAILY-NEWS-CADENCE.md); sole queue remains [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). NEXT-052 is not created.
 - User requires all remaining work to continue under 0.0, historical graph connections to remain preserved, and the living mother/reference documents and applicable tests to remain active/living.
 - Maintain append-only history and UTC-first provenance. User-message time remains UNKNOWN / UNVERIFIED.
 - Keep N04–N08, G01–G06, T01–T04, H01–H05, exact-final-SHA audit/conformance, package hash/read-back, RAHM, runtime, persistent-memory/Buffer, Dropbox and independent-host gates OPEN until direct evidence supports each status.
@@ -2465,7 +2465,7 @@ The user's departure instruction is appended under the existing POINT-0/064 root
 
 
 ## EVT-0258 — live mirror synchronization recheck — 2026-11-08
-- Event/time binding: [EVT-0258](../BEHAVIOR-TRACE/EVT-0258-LIVE-MIRROR-SYNC-RECHECK-2026-11-08.md) / [TIME-BINDING-EVT-0258](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0258-LIVE-MIRROR-SYNC-2026-11-08.md).
+- Event/time binding: [EVT-0258](../../docs/architecture/BEHAVIOR-TRACE/EVT-0258-LIVE-MIRROR-SYNC-RECHECK-2026-11-08.md) / [TIME-BINDING-EVT-0258](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0258-LIVE-MIRROR-SYNC-2026-11-08.md).
 - Mirror-only; latest user root POINT-0/064, checkpoint CURRENT-115, sole active queue NEXT-051. No new root, IN/OUT pair, checkpoint identity or NEXT-052.
 - Canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, exact version 7 (10,480 chars). Normalized full content and semantic fields MATCH; exact equality FALSE by one additional terminal LF. No source or Library write; supported `source_file_ref` was not used because unchanged-source policy prohibits a rewrite in this case.
 - Latest full audit/conformance pair: Living Architecture Audit 42345139960 and Portable RAHM Conformance 42345140040 both SUCCESS on exact SHA `af0fdb89c2e357661a7a8703776174cf78016df9`. Latest Evidence Gate 42454843737 succeeded on exact tested SHA `07b3e6b0653c4a3299cfec3ed4f997db01f0a95f`; its evidence commit is not an audit or conformance result. Exact-current-main audit/conformance remain NOT VERIFIED.
@@ -2473,7 +2473,7 @@ The user's departure instruction is appended under the existing POINT-0/064 root
 - Preserve POINT-0/016, POINT-0/017, POINT-0/018 / EVT-0180, EVT-0177 and its time binding, canonical EVT-0178, EVT-0179 collision lineage and the quarantined duplicate-number draft.
 
 ## EVT-0260 — live mirror synchronization recheck — 2026-11-09
-- Event/time binding: [EVT-0260](../BEHAVIOR-TRACE/EVT-0260-LIVE-MIRROR-SYNC-RECHECK-2026-11-09.md) / [TIME-BINDING-EVT-0260](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0260-LIVE-MIRROR-SYNC-2026-11-09.md).
+- Event/time binding: [EVT-0260](../../docs/architecture/BEHAVIOR-TRACE/EVT-0260-LIVE-MIRROR-SYNC-RECHECK-2026-11-09.md) / [TIME-BINDING-EVT-0260](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0260-LIVE-MIRROR-SYNC-2026-11-09.md).
 - Mirror-only under latest user root POINT-0/064, checkpoint CURRENT-115, sole queue NEXT-051; latest user-turn event remains EVT-0257. No new root, IN/OUT pair, checkpoint identity or NEXT-052.
 - Canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, exact version 7 (10,480 chars). Normalized content/semantic fields MATCH; exact equality FALSE by one terminal LF. No source or Library write.
 - Audit/conformance 42575319320 / 42575319373 SUCCESS on exact SHA `3d4c4b9e6929e894f1bc78c8962c4ef05b94ff0a`; Evidence Gate 42575319341 SUCCESS on that tested SHA and created follow-up main `7b6c4e3aa93fef0e9ad3be04ef96b6aa041d8e61`; that follow-up is NOT VERIFIED by the preceding pair.
@@ -2482,7 +2482,7 @@ The user's departure instruction is appended under the existing POINT-0/064 root
 
 ## EVT-0261 — live mirror synchronization — 2026-11-10
 
-- Event: [EVT-0261](../BEHAVIOR-TRACE/EVT-0261-LIVE-MIRROR-SYNC-RECHECK-2026-11-10.md); time binding: [TIME-BINDING-EVT-0261](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0261-LIVE-MIRROR-SYNC-2026-11-10.md).
+- Event: [EVT-0261](../../docs/architecture/BEHAVIOR-TRACE/EVT-0261-LIVE-MIRROR-SYNC-RECHECK-2026-11-10.md); time binding: [TIME-BINDING-EVT-0261](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0261-LIVE-MIRROR-SYNC-2026-11-10.md).
 - Mirror-only under POINT-0/064 / latest user-turn event EVT-0257 / CURRENT-115 / NEXT-051. No new user root, IN/OUT pair, checkpoint identity or NEXT-052.
 - Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, file ID `file_00000000942881f8a4a3833110229fb7`, version 7 (10,480 chars). Normalized content and semantic fields MATCH; exact equality FALSE by one extra terminal LF. No source or Library write.
 - Event commit `02b7a4f2afbd3f8f210e5aecda548c91ca93a283`: UTC `2026-11-10T06:47:53Z` / Tehran `2026-11-10T10:17:53+03:30`. Initial time-binding commit `7384c94bf2bdcc5aff31801db487fbd598042fd4`: UTC `2026-11-10T06:48:18Z` / Tehran `2026-11-10T10:18:18+03:30`.
@@ -2519,14 +2519,14 @@ The user's departure instruction is appended under the existing POINT-0/064 root
 
 ### منابع مبنا و تبار
 
-1. مدل اولیهٔ محصول HAIF: [HAIF-IPA](../../reference/REFERENCE-DOCUMENTS/HAIF-INITIAL-PRODUCT-ARCHITECTURE-2026-10-21-001.md).
-2. معماری اجرایی قابل پیاده‌سازی: [FAPF-IRA](../../reference/REFERENCE-DOCUMENTS/FUTURE-AI-PALANG-FOOTPRINT-IMPLEMENTABLE-REFERENCE-ARCHITECTURE-2026-10-21-001.md).
-3. مبنای معماری معنایی گراف تاریخی: [H0SAB](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-SEMANTIC-ARCHITECTURE-BASELINE-2026-10-21-001.md).
-4. سند مادر تطبیق گراف تاریخی: [H0GLMR](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-RECONCILIATION-LIVING-MASTER-REFERENCE-2026-10-21-001.md).
-5. دفتر داوری شناسه‌ها و روابط: [H0IRAR](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-IDENTIFIER-AND-RELATION-ADJUDICATION-REGISTER-2026-10-21-001.md).
-6. صف مرور معنایی و شواهد ممیزی: [H0SRQS](../../reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-SEMANTIC-REVIEW-QUEUE-SNAPSHOT-2026-10-21-001.md).
-7. رویداد ایجاد مدل اولیهٔ محصول: [EVT-0055](../BEHAVIOR-TRACE/EVT-0055-HAIF-INITIAL-PRODUCT-ARCHITECTURE-2026-10-21.md).
-8. این بستهٔ توسعه: [نمای کلی پوشه](./README.md)، [صف گام‌های بعدی](./صف%20گام‌های%20بعدی%20و%20موارد%20باز.md).
+1. مدل اولیهٔ محصول HAIF: [HAIF-IPA](../../docs/reference/REFERENCE-DOCUMENTS/HAIF-INITIAL-PRODUCT-ARCHITECTURE-2026-10-21-001.md).
+2. معماری اجرایی قابل پیاده‌سازی: [FAPF-IRA](../../docs/reference/REFERENCE-DOCUMENTS/FUTURE-AI-PALANG-FOOTPRINT-IMPLEMENTABLE-REFERENCE-ARCHITECTURE-2026-10-21-001.md).
+3. مبنای معماری معنایی گراف تاریخی: [H0SAB](../../docs/reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-SEMANTIC-ARCHITECTURE-BASELINE-2026-10-21-001.md).
+4. سند مادر تطبیق گراف تاریخی: [H0GLMR](../../docs/reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-GRAPH-RECONCILIATION-LIVING-MASTER-REFERENCE-2026-10-21-001.md).
+5. دفتر داوری شناسه‌ها و روابط: [H0IRAR](../../docs/reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-IDENTIFIER-AND-RELATION-ADJUDICATION-REGISTER-2026-10-21-001.md).
+6. صف مرور معنایی و شواهد ممیزی: [H0SRQS](../../docs/reference/REFERENCE-DOCUMENTS/HISTORICAL-0.0-SEMANTIC-REVIEW-QUEUE-SNAPSHOT-2026-10-21-001.md).
+7. رویداد ایجاد مدل اولیهٔ محصول: [EVT-0055](../../docs/architecture/BEHAVIOR-TRACE/EVT-0055-HAIF-INITIAL-PRODUCT-ARCHITECTURE-2026-10-21.md).
+8. این بستهٔ توسعه: [نمای کلی پوشه](../../docs/architecture/%D9%85%D8%AF%D9%84%20%D8%A7%D9%88%D9%84%DB%8C%D9%87%20AI/README.md)، [صف گام‌های بعدی](../../docs/architecture/%D9%85%D8%AF%D9%84%20%D8%A7%D9%88%D9%84%DB%8C%D9%87%20AI/%D8%B5%D9%81%20%DA%AF%D8%A7%D9%85%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B9%D8%AF%DB%8C%20%D9%88%20%D9%85%D9%88%D8%A7%D8%B1%D8%AF%20%D8%A8%D8%A7%D8%B2.md).
 
 ## 2. هدف نهایی محصول
 
@@ -2820,8 +2820,8 @@ WRITE ≠ ACCEPTED؛ FOUND ≠ RETRIEVED ≠ VALIDATED ≠ VERIFIED ≠ ACTIVE.
 
 
 ## Addendum v1.3.0 — executable prototype location
-- Prototype source and run instructions: [HAIF v0](../../../prototype/haif-v0/README.md).
-- API implementation: [app.py](../../../prototype/haif-v0/app.py); acceptance tests: [test_app.py](../../../prototype/haif-v0/test_app.py); CI workflow: [HAIF Prototype Tests](../../../.github/workflows/haif-prototype-tests.yml).
+- Prototype source and run instructions: [HAIF v0](../haif-v0/README.md).
+- API implementation: [app.py](../haif-v0/app.py); acceptance tests: [test_app.py](../haif-v0/test_app.py); CI workflow: [HAIF Prototype Tests](../../.github/workflows/haif-prototype-tests.yml).
 - The first test run after the lifespan fix passed 5 tests. The prototype remains a local development increment; artifact/evidence registry, security controls, production deployment and external persistence remain open.
 
 
@@ -2835,20 +2835,20 @@ WRITE ≠ ACCEPTED؛ FOUND ≠ RETRIEVED ≠ VALIDATED ≠ VERIFIED ≠ ACTIVE.
 
 ## ثبت بازگشت و چکش ۰.۰ — 2026-10-21
 
-- پروندهٔ ثبت و ممیزی بازگشت: [PALANG-0.0-RETURN-AND-INITIAL-MODEL-HAMMER](../../reference/REFERENCE-DOCUMENTS/PALANG-0.0-RETURN-AND-INITIAL-MODEL-HAMMER-2026-10-21-001.md).
+- پروندهٔ ثبت و ممیزی بازگشت: [PALANG-0.0-RETURN-AND-INITIAL-MODEL-HAMMER](../../docs/reference/REFERENCE-DOCUMENTS/PALANG-0.0-RETURN-AND-INITIAL-MODEL-HAMMER-2026-10-21-001.md).
 - نقطهٔ مادر همچنان `PALANG-0.0-REPOSITORY-MODEL-INITIAL-RESUME-2026-10-21-001` است؛ این بازگشت لنگر تازه‌ای ایجاد یا نقاط قبلی را ادغام نمی‌کند.
 - چکش وضعیت: مدل مرجع، صف، پوشه و نمونهٔ اجرایی v0 در مخزن موجودند؛ آزمون و ممیزی تازه پس از آخرین تغییر هنوز اجرا نشده‌اند. آزمون شکست، Artifact/Evidence versioning، بازیابی نشست و داوری معنایی گراف همچنان بازند.
 - گام بعدی حاکم: اجرای تازهٔ آزمون نمونه و ممیزی ساختاری، ثبت شواهد و سپس ادامهٔ آزمون‌های شکست و بررسی معنایی موردبه‌مورد.
 
 
 ## سند مرجع جامع و نام‌گذاری‌شدهٔ بازگشت — 2026-10-21
-- **سند مرجع زندهٔ حاکم:** [مدل اولیه — لنگر ۰.۰ و سند مرجع زنده](./مدل%20اولیه%20—%20لنگر%20۰.۰%20و%20سند%20مرجع%20زنده.md).
+- **سند مرجع زندهٔ حاکم:** [مدل اولیه — لنگر ۰.۰ و سند مرجع زنده](../../docs/architecture/%D9%85%D8%AF%D9%84%20%D8%A7%D9%88%D9%84%DB%8C%D9%87%20AI/%D9%85%D8%AF%D9%84%20%D8%A7%D9%88%D9%84%DB%8C%D9%87%20%E2%80%94%20%D9%84%D9%86%DA%AF%D8%B1%20%DB%B0.%DB%B0%20%D9%88%20%D8%B3%D9%86%D8%AF%20%D9%85%D8%B1%D8%AC%D8%B9%20%D8%B2%D9%86%D8%AF%D9%87.md).
 - Stable ID: `PALANG-INITIAL-AI-MODEL-0.0-RETURN-MASTER-REFERENCE-2026-10-21-001`; Production ID: `PIM0RM-2026-10-21-001`; Version: `1.0.0`.
 - این سند نام‌گذاری‌شده، هدف، معماری، قواعد ثبت، لنگر ۰.۰، شواهد، صف شکاف‌ها، وضعیت مقصدها و گام بعدی را یک‌جا جمع می‌کند. زمان دقیق پیام کاربر UNKNOWN / UNVERIFIED است.
 - دامنهٔ تأیید این ثبت فقط مخزن GitHub است؛ آزمون تازه و ممیزی تازه همچنان اقدام بعدی‌اند. بافر، حافظهٔ پایدار، Library و Dropbox تأیید نشده‌اند.
 
 ## پیوند به سند مرجع استخراج الگوریتم و محصول — 2026-10-21
-سند مکمل و حاکم برای استخراج مدل از مخزن و تبدیل آن به الگوریتم و اپلیکیشن: [سند مرجع مادر — الگوریتم استخراج مدل و محصول رایگان HAIF](./سند%20مرجع%20مادر%20—%20الگوریتم%20استخراج%20مدل%20و%20محصول%20رایگان%20HAIF.md).
+سند مکمل و حاکم برای استخراج مدل از مخزن و تبدیل آن به الگوریتم و اپلیکیشن: [سند مرجع مادر — الگوریتم استخراج مدل و محصول رایگان HAIF](../../docs/architecture/%D9%85%D8%AF%D9%84%20%D8%A7%D9%88%D9%84%DB%8C%D9%87%20AI/%D8%B3%D9%86%D8%AF%20%D9%85%D8%B1%D8%AC%D8%B9%20%D9%85%D8%A7%D8%AF%D8%B1%20%E2%80%94%20%D8%A7%D9%84%DA%AF%D9%88%D8%B1%DB%8C%D8%AA%D9%85%20%D8%A7%D8%B3%D8%AA%D8%AE%D8%B1%D8%A7%D8%AC%20%D9%85%D8%AF%D9%84%20%D9%88%20%D9%85%D8%AD%D8%B5%D9%88%D9%84%20%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86%20HAIF.md).
 - Stable ID: `HAIF-EXTRACTABLE-INTERACTION-MODEL-FREE-APP-MASTER-REFERENCE-2026-10-21-001`; Production ID: `HEIMFA-MR-2026-10-21-001`; Version 1.0.0.
 - وضعیت: ACTIVE / LIVING / OPEN. طراحی الگوریتم در سند ثبت شده؛ پیاده‌سازی و آزمون‌های تازه هنوز باید جداگانه اثبات شوند.
 
@@ -2885,8 +2885,8 @@ WRITE ≠ ACCEPTED؛ FOUND ≠ RETRIEVED ≠ VALIDATED ≠ VERIFIED ≠ ACTIVE.
 - Status: ACTIVE / LIVING / GOVERNING
 - Assistant/system operation time for this rule application: `2026-10-21T13:40:14+03:30` (Asia/Tehran); UTC equivalent: `2026-10-21T10:10:14Z`.
 - User message time: `UNAVAILABLE / NOT CAPTURED`; this does not remove the obligation to record assistant/system time.
-- Standard: [قانون دائمی لنگر زمانی دستیار](../GOVERNANCE/ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21-001.md).
-- Event: [EVT-0066](../BEHAVIOR-TRACE/EVT-0066-ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21.md).
+- Standard: [قانون دائمی لنگر زمانی دستیار](../../docs/architecture/GOVERNANCE/ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21-001.md).
+- Event: [EVT-0066](../../docs/architecture/BEHAVIOR-TRACE/EVT-0066-ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21.md).
 
 از این پس زمان عملیات دستیار/سیستم، منبع معتبر آن، منطقهٔ زمانی تهران و معادل UTC در ثبت‌ها و بازخوانی‌ها درج می‌شود. اگر زمان پیام کاربر واقعاً در دسترس باشد، زمان دوم و اختلاف نیز افزوده می‌شود. زمان پیام، زمان شروع عملیات، زمان commit و زمان بازخوانی جدا نگه داشته می‌شوند. این اصلاحیه، زمان دقیق پیام تاریخی را جعل نمی‌کند.
 
@@ -2897,42 +2897,42 @@ WRITE ≠ ACCEPTED؛ FOUND ≠ RETRIEVED ≠ VALIDATED ≠ VERIFIED ≠ ACTIVE.
 
 
 ## الحاق حاکمیتی: استاندارد زمان و رویداد EVT-0067
-قاعدهٔ ثبت زمان دستیار/سیستم بخشی از معماری پایهٔ HAIF است و در همهٔ لنگرهای ادامه، رویدادها، اسناد، ورودی‌ها و خروجی‌های مهم اعمال می‌شود. مرجع حاکم: [استاندارد لنگر زمانی دستیار](../GOVERNANCE/ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21-001.md). تأکید مجدد کاربر: [EVT-0067](../BEHAVIOR-TRACE/EVT-0067-TIMESTAMP-RULE-RECONFIRMATION-2026-10-21.md).
+قاعدهٔ ثبت زمان دستیار/سیستم بخشی از معماری پایهٔ HAIF است و در همهٔ لنگرهای ادامه، رویدادها، اسناد، ورودی‌ها و خروجی‌های مهم اعمال می‌شود. مرجع حاکم: [استاندارد لنگر زمانی دستیار](../../docs/architecture/GOVERNANCE/ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21-001.md). تأکید مجدد کاربر: [EVT-0067](../../docs/architecture/BEHAVIOR-TRACE/EVT-0067-TIMESTAMP-RULE-RECONFIRMATION-2026-10-21.md).
 زمان پیام کاربر، زمان شروع عملیات، زمان commit، زمان بازخوانی و زمان ممیزی فیلدهای مستقل‌اند. زمان معتبر به Asia/Tehran (+03:30) و UTC ثبت می‌شود؛ زمان ناموجود با `UNAVAILABLE / NOT CAPTURED` مشخص می‌شود. زمان commit رویداد EVT-0067 برابر `2026-10-21T10:20:52Z` UTC / `2026-10-21T13:50:52+03:30` تهران است و صرفاً شاهد زمان ثبت مخزن محسوب می‌شود.
 
 
 ## قاعدهٔ حاکم معماری: UTC مرجع اصلی — EVT-0068
-UTC مرجع canonical زمان برای رویدادها، نقاط ۰.۰، ورودی‌ها و خروجی‌های مهم، ثبت مخزن، آزمون‌ها و ممیزی‌ها است. زمان تهران فقط از همان لحظهٔ UTC و قواعد منطقهٔ زمانی `Asia/Tehran` استخراج می‌شود. ثبت UTC و تهران در کنار هم مجاز و مطلوب است، اما ترتیب مرجع همیشه UTC سپس تهران است. زمان‌های پیام کاربر، شروع عملیات، commit، بازخوانی و ممیزی مستقل‌اند؛ دادهٔ ناموجود صریحاً ناموجود می‌ماند. مرجع اجرایی: [EVT-0068](../BEHAVIOR-TRACE/EVT-0068-UTC-PRIMARY-TIME-GOVERNANCE-2026-10-21.md) و [استاندارد زمان‌گذاری](../GOVERNANCE/ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21-001.md).
+UTC مرجع canonical زمان برای رویدادها، نقاط ۰.۰، ورودی‌ها و خروجی‌های مهم، ثبت مخزن، آزمون‌ها و ممیزی‌ها است. زمان تهران فقط از همان لحظهٔ UTC و قواعد منطقهٔ زمانی `Asia/Tehran` استخراج می‌شود. ثبت UTC و تهران در کنار هم مجاز و مطلوب است، اما ترتیب مرجع همیشه UTC سپس تهران است. زمان‌های پیام کاربر، شروع عملیات، commit، بازخوانی و ممیزی مستقل‌اند؛ دادهٔ ناموجود صریحاً ناموجود می‌ماند. مرجع اجرایی: [EVT-0068](../../docs/architecture/BEHAVIOR-TRACE/EVT-0068-UTC-PRIMARY-TIME-GOVERNANCE-2026-10-21.md) و [استاندارد زمان‌گذاری](../../docs/architecture/GOVERNANCE/ASSISTANT-TIMESTAMP-ANCHOR-STANDARD-2026-10-21-001.md).
 
 
 ## قاعدهٔ حاکم پروژه: UTC نخست و شواهد مستقل هر مرحله — EVT-0069
 
 زمان همهٔ رویدادها، ورودی‌ها/خروجی‌های مهم، تغییرات، آزمون‌ها و ممیزی‌ها ابتدا با UTC معتبر ثبت می‌شود؛ سپس زمان تهران از همان UTC با `Asia/Tehran` مشتق می‌شود. شواهد و زمان‌های ورودی، شروع عملیات، نوشتن/commit، بازخوانی، تطبیق، تأیید و ممیزی جدا هستند. زمان/شاهد ناموجود جعل نمی‌شود. هیچ ثبت مخزنی بدون بازخوانی و تطبیق، VERIFIED محسوب نمی‌شود.
 
-مرجع اجرایی وضعیت بازگشت و ثبت مرحله‌ای: [EVT-0069](../BEHAVIOR-TRACE/EVT-0069-RETURN-STATE-AND-EVIDENCE-PER-STAGE-2026-10-21.md). قاعدهٔ زمانی پایه: [EVT-0068](../BEHAVIOR-TRACE/EVT-0068-UTC-PRIMARY-TIME-GOVERNANCE-2026-10-21.md).
+مرجع اجرایی وضعیت بازگشت و ثبت مرحله‌ای: [EVT-0069](../../docs/architecture/BEHAVIOR-TRACE/EVT-0069-RETURN-STATE-AND-EVIDENCE-PER-STAGE-2026-10-21.md). قاعدهٔ زمانی پایه: [EVT-0068](../../docs/architecture/BEHAVIOR-TRACE/EVT-0068-UTC-PRIMARY-TIME-GOVERNANCE-2026-10-21.md).
 
 
 ## الحاقیهٔ حاکم: ثبت خودکار همهٔ ورودی‌ها و خروجی‌ها
-- قرارداد معماری: [AUTOMATIC-INTERACTION-REGISTRATION-CONTRACT](../GOVERNANCE/AUTOMATIC-INTERACTION-REGISTRATION-CONTRACT-2026-10-21-001.md).
-- رویداد مستقل: [EVT-0073](../BEHAVIOR-TRACE/EVT-0073-AUTOMATIC-INTERACTION-REGISTRATION-CONTRACT-2026-10-21.md).
+- قرارداد معماری: [AUTOMATIC-INTERACTION-REGISTRATION-CONTRACT](../../docs/architecture/GOVERNANCE/AUTOMATIC-INTERACTION-REGISTRATION-CONTRACT-2026-10-21-001.md).
+- رویداد مستقل: [EVT-0073](../../docs/architecture/BEHAVIOR-TRACE/EVT-0073-AUTOMATIC-INTERACTION-REGISTRATION-CONTRACT-2026-10-21.md).
 - اصل دائمی: هر ورودی و خروجی به‌صورت پیش‌فرض وارد زنجیرهٔ CAPTURE → BIND → ANCHOR → PRESERVE → LINK → VERIFY می‌شود؛ «ثبت کن» شرط آغاز ثبت نیست.
 - وضعیت صادقانه: این قاعده به معماری مدل اولیه متصل شده است؛ گرفتن خودکار همهٔ پیام‌های زنده هنوز تا پیاده‌سازی Host Adapter و آزمون بازیابی اثبات نشده و باید به‌عنوان شکاف باز پیگیری شود.
 
 
 ## پیوند حاکم جدید — گراف پیوستگی نقاط ۰/۰.۰ و «چشم پلنگ شکارچی» (2026-10-22)
 
-- سند مرجع مادر پیوستگی: [PALANG-LIVING-MASTER-CONTINUITY-GRAPH-2026-10-22-001](../../reference/REFERENCE-DOCUMENTS/PALANG-LIVING-MASTER-CONTINUITY-GRAPH-2026-10-22-001.md).
-- نقطهٔ ۰ جاری: [PALANG-ZERO-LIVING-CONTINUITY-GRAPH-2026-10-22-001](../../../checkpoints/PALANG-ZERO-LIVING-CONTINUITY-GRAPH-2026-10-22-001.md).
-- نقطهٔ ۰.۰ جاری: [PALANG-0.0-LIVING-CONTINUITY-GRAPH-2026-10-22-001](../../../checkpoints/0.0/PALANG-0.0-LIVING-CONTINUITY-GRAPH-2026-10-22-001.md).
-- دفتر مرکزی نقاط ۰.۰: [docs/0.0/README.md](../../0.0/README.md).
-- رویداد درخواست/تصمیم: [EVT-0070-CANDIDATE](../BEHAVIOR-TRACE/EVT-0070-CONTINUITY-GRAPH-REQUEST-2026-10-22.md) — شناسهٔ رویداد تا تطبیق با دفتر رویدادها نامزد است.
+- سند مرجع مادر پیوستگی: [PALANG-LIVING-MASTER-CONTINUITY-GRAPH-2026-10-22-001](../../docs/reference/REFERENCE-DOCUMENTS/PALANG-LIVING-MASTER-CONTINUITY-GRAPH-2026-10-22-001.md).
+- نقطهٔ ۰ جاری: [PALANG-ZERO-LIVING-CONTINUITY-GRAPH-2026-10-22-001](../../checkpoints/PALANG-ZERO-LIVING-CONTINUITY-GRAPH-2026-10-22-001.md).
+- نقطهٔ ۰.۰ جاری: [PALANG-0.0-LIVING-CONTINUITY-GRAPH-2026-10-22-001](../../checkpoints/0.0/PALANG-0.0-LIVING-CONTINUITY-GRAPH-2026-10-22-001.md).
+- دفتر مرکزی نقاط ۰.۰: [docs/0.0/README.md](../../docs/0.0/README.md).
+- رویداد درخواست/تصمیم: [EVT-0070-CANDIDATE](../../docs/architecture/BEHAVIOR-TRACE/EVT-0070-CONTINUITY-GRAPH-REQUEST-2026-10-22.md) — شناسهٔ رویداد تا تطبیق با دفتر رویدادها نامزد است.
 
 **قاعدهٔ معماری:** گراف تاریخی نقاط ۰/۰.۰ به‌صورت افزایشی و با حفظ شناسه و سابقه رشد می‌کند. هر نقطه به سند مادر، دفتر نقاط، منشأ/شواهد، لنگر مستقل، زمان‌های واقعی و مسیر Previous → Current → Next متصل می‌شود. نقطهٔ ۰ و نقطهٔ ۰.۰ دو نقش جدا دارند و به یکدیگر ارجاع می‌دهند. «چشم پلنگ شکارچی» نام پروتکل کشف شکاف، پیوندهای گمشده و کارهای باز است؛ اجرای پس‌زمینه فقط پس از استقرار و آزمون واقعی قابل اعلام است. این الحاق به معنی تکمیل داوری معنایی تمام نقاط تاریخی یا تأیید Buffer/Library/Persistent Memory/Dropbox نیست.
 
 
 ## الحاقیهٔ حاکم — بازخورد مثبت و چرخهٔ یادگیری تعامل (2026-10-22)
-- سند مرجع مادر: [PALANG-POSITIVE-FEEDBACK-LEARNING](../../reference/REFERENCE-DOCUMENTS/PALANG-POSITIVE-FEEDBACK-AND-INTERACTION-LEARNING-MASTER-REFERENCE-2026-10-22-001.md).
-- رویداد رفتاری: [EVT-0090](../BEHAVIOR-TRACE/EVT-0090-PALANG-POSITIVE-FEEDBACK-AND-INTERACTION-LEARNING-2026-10-22.md).
+- سند مرجع مادر: [PALANG-POSITIVE-FEEDBACK-LEARNING](../../docs/reference/REFERENCE-DOCUMENTS/PALANG-POSITIVE-FEEDBACK-AND-INTERACTION-LEARNING-MASTER-REFERENCE-2026-10-22-001.md).
+- رویداد رفتاری: [EVT-0090](../../docs/architecture/BEHAVIOR-TRACE/EVT-0090-PALANG-POSITIVE-FEEDBACK-AND-INTERACTION-LEARNING-2026-10-22.md).
 - زوج تعامل: `INT-20261022-003` — ورودی `IN-20261022-003` و خروجی `OUT-20261022-003` با لنگرهای مستقل.
 - قاعده: بازخورد واقعی انسان ابتدا مشاهدهٔ مستند است؛ فرضیه دربارهٔ علت رضایت جدا می‌ماند؛ ارتقای قاعدهٔ مادر نیازمند تکرار، آزمون و اعتبارسنجی است.
 - بازخورد تاریخی 2026-10-20 / EVT-0025 با بازخورد جاری جدا نگه داشته می‌شود.
@@ -2940,9 +2940,9 @@ UTC مرجع canonical زمان برای رویدادها، نقاط ۰.۰، و�
 
 
 ## الحاقیهٔ حاکم — تفکر عمیق و شتاب‌دهی آینده‌پژوهانه (2026-10-22)
-- سند مرجع مادر: [PFTA](../../reference/REFERENCE-DOCUMENTS/PALANG-FUTURE-THINKING-ACCELERATION-MASTER-REFERENCE-2026-10-22-001.md).
-- رویداد: [EVT-0091](../BEHAVIOR-TRACE/EVT-0091-PALANG-FUTURE-THINKING-ACCELERATION-2026-10-22.md).
-- پابند زمانی: [TIME-BINDING-PFTA](../BEHAVIOR-TRACE/TIME-BINDING-PFTA-2026-10-22-001.md).
+- سند مرجع مادر: [PFTA](../../docs/reference/REFERENCE-DOCUMENTS/PALANG-FUTURE-THINKING-ACCELERATION-MASTER-REFERENCE-2026-10-22-001.md).
+- رویداد: [EVT-0091](../../docs/architecture/BEHAVIOR-TRACE/EVT-0091-PALANG-FUTURE-THINKING-ACCELERATION-2026-10-22.md).
+- پابند زمانی: [TIME-BINDING-PFTA](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-PFTA-2026-10-22-001.md).
 - اصل توسعه: تفکر عمیق و آینده‌پژوهی با سرعت بیشتر از راه بازیابی زمینه، استخراج الگو، سناریوسازی، اولویت‌بندی و آزمون؛ نه با حذف کنترل‌ها یا ادعای بی‌شاهد.
 
 
@@ -2950,9 +2950,9 @@ UTC مرجع canonical زمان برای رویدادها، نقاط ۰.۰، و�
 
 - Stable ID / شناسهٔ پایدار: `PALANG-DUAL-TRACK-BEHAVIORAL-ARCHITECTURE-2026-10-22-001`
 - Production ID / شناسهٔ تولید: `DTBA-2026-10-22-001`
-- سند مرجع مادر زنده: [DTRC — معماری رفتارشناسی دو‌مسیره](../../reference/REFERENCE-DOCUMENTS/PALANG-DUAL-TRACK-BEHAVIORAL-ARCHITECTURE-MASTER-REFERENCE-2026-10-22-001.md).
-- زوج مستقل: `INT-20261022-008`; [لنگر ورودی](../../0.0/anchors/PALANG-0.0-IN-20261022-008-BEHAVIORAL-ARCHITECTURE-UPDATE.md)؛ [لنگر خروجی](../../0.0/anchors/PALANG-0.0-OUT-20261022-008-BEHAVIORAL-ARCHITECTURE-UPDATE.md).
-- رویداد: [EVT-0094](../BEHAVIOR-TRACE/EVT-0094-DUAL-TRACK-BEHAVIORAL-ARCHITECTURE-2026-10-22.md).
+- سند مرجع مادر زنده: [DTRC — معماری رفتارشناسی دو‌مسیره](../../docs/reference/REFERENCE-DOCUMENTS/PALANG-DUAL-TRACK-BEHAVIORAL-ARCHITECTURE-MASTER-REFERENCE-2026-10-22-001.md).
+- زوج مستقل: `INT-20261022-008`; [لنگر ورودی](../../docs/0.0/anchors/PALANG-0.0-IN-20261022-008-BEHAVIORAL-ARCHITECTURE-UPDATE.md)؛ [لنگر خروجی](../../docs/0.0/anchors/PALANG-0.0-OUT-20261022-008-BEHAVIORAL-ARCHITECTURE-UPDATE.md).
+- رویداد: [EVT-0094](../../docs/architecture/BEHAVIOR-TRACE/EVT-0094-DUAL-TRACK-BEHAVIORAL-ARCHITECTURE-2026-10-22.md).
 - تبار: PFTA (تفکر عمیق و آینده‌پژوهی) + PRDEG (کنترل انحراف مسیر) + PLRA (ثبت و لنگرگذاری) + PLMCG (گراف پیوستگی).
 - اصل مدل: مسیر A گزینه‌ها و سناریوهای آینده را می‌سازد؛ مسیر B هم‌راستایی با هدف، قیود و شواهد را بررسی می‌کند؛ Rahm اختلاف‌ها را تطبیق می‌دهد؛ فقط تصمیم مستند به Master ارتقا می‌یابد.
 - چرخه: `CAPTURE → RECALL → EXPLORE (A) ↔ GUARD (B) → RAHM → DECIDE → REGISTER → PLACE → VERIFY → NEXT`.
@@ -2960,32 +2960,32 @@ UTC مرجع canonical زمان برای رویدادها، نقاط ۰.۰، و�
 - این نسخه به‌صورت افزایشی افزوده شده و محتوای نسخهٔ قبلی را حذف نمی‌کند. DTRC در این مرحله مدل معماری مستند است، نه ادعای سرویس خودکارِ مستقر.
 - معیار پذیرش: ورودی/خروجی مستقل، سند مادر، رویداد، جای‌گذاری در مدل، پیوند به فهرست‌ها، بازخوانی و زمان‌گذاری واقعی.
 
-- پابند زمانی مستقل این زنجیره: [TIME-BINDING-DTBA-2026-10-22-001](../BEHAVIOR-TRACE/TIME-BINDING-DTBA-2026-10-22-001.md).
+- پابند زمانی مستقل این زنجیره: [TIME-BINDING-DTBA-2026-10-22-001](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-DTBA-2026-10-22-001.md).
 
 
 ## الحاقیهٔ معماری نسخهٔ 1.2.0 — PIRHA: حاکمیت ثبت تعاملی و ممیزی تاریخی
 
 - Stable ID: `PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-2026-10-22-001`
 - Production ID: `PIRHA-2026-10-22-001`
-- سند مرجع مادر: [PIRHA](../../reference/REFERENCE-DOCUMENTS/PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001.md).
-- زوج مستقل ورودی/خروجی: `INT-20261022-009` — [ورودی](../../0.0/anchors/PALANG-0.0-IN-20261022-009-INTERACTION-GOVERNANCE-AND-AUDIT.md) / [خروجی](../../0.0/anchors/PALANG-0.0-OUT-20261022-009-INTERACTION-GOVERNANCE-AND-AUDIT.md).
-- رویداد جاری: [EVT-0095](../BEHAVIOR-TRACE/EVT-0095-INTERACTION-GOVERNANCE-AND-HISTORICAL-AUDIT-2026-10-22.md).
-- رویداد تاریخی EVT-0093: [فایل مستقل رویداد](../BEHAVIOR-TRACE/EVT-0093-REGISTRATION-CONTINUATION-2026-10-22.md).
+- سند مرجع مادر: [PIRHA](../../docs/reference/REFERENCE-DOCUMENTS/PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001.md).
+- زوج مستقل ورودی/خروجی: `INT-20261022-009` — [ورودی](../../docs/0.0/anchors/PALANG-0.0-IN-20261022-009-INTERACTION-GOVERNANCE-AND-AUDIT.md) / [خروجی](../../docs/0.0/anchors/PALANG-0.0-OUT-20261022-009-INTERACTION-GOVERNANCE-AND-AUDIT.md).
+- رویداد جاری: [EVT-0095](../../docs/architecture/BEHAVIOR-TRACE/EVT-0095-INTERACTION-GOVERNANCE-AND-HISTORICAL-AUDIT-2026-10-22.md).
+- رویداد تاریخی EVT-0093: [فایل مستقل رویداد](../../docs/architecture/BEHAVIOR-TRACE/EVT-0093-REGISTRATION-CONTINUATION-2026-10-22.md).
 - اصل جدید: ثبت ورودی/خروجی → سند مادر → رویداد → جای‌گذاری معماری → فهرست‌ها و نقاط ۰/۰.۰ → پابند زمانی → بازخوانی و تطبیق.
 - PIRHA لایهٔ حاکمیت ثبت و ممیزی است؛ با DTRC رقابت نمی‌کند. DTRC مسیر کاوش و کنترل را هماهنگ می‌کند؛ PIRHA صحت و کامل‌بودن زنجیرهٔ ثبت و روابط تاریخی را کنترل می‌کند.
 - معماری OPEN / EVOLVING باقی می‌ماند. این نسخه مدل مستند را توسعه می‌دهد و ادعای خودکارسازی پس‌زمینه یا نتیجهٔ موفق آزمون تاریخی ندارد.
 
-- پابند زمانی PIRHA: [TIME-BINDING-PIRHA-2026-10-22-001](../BEHAVIOR-TRACE/TIME-BINDING-PIRHA-2026-10-22-001.md).
+- پابند زمانی PIRHA: [TIME-BINDING-PIRHA-2026-10-22-001](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-PIRHA-2026-10-22-001.md).
 
-- لنگر ادامهٔ جاری PIRHA: [PALANG-0.0-PIRHA-HISTORICAL-AUDIT-CONTINUATION-2026-10-22-001](../../0.0/anchors/PALANG-0.0-PIRHA-HISTORICAL-AUDIT-CONTINUATION-2026-10-22-001.md).
+- لنگر ادامهٔ جاری PIRHA: [PALANG-0.0-PIRHA-HISTORICAL-AUDIT-CONTINUATION-2026-10-22-001](../../docs/0.0/anchors/PALANG-0.0-PIRHA-HISTORICAL-AUDIT-CONTINUATION-2026-10-22-001.md).
 
 
 ## الحاقیهٔ نسخهٔ 1.3.0 — مبنای هر ورودی/خروجی و رشد آینده‌نگر
 
 - Stable ID: `PALANG-INPUT-OUTPUT-BASELINE-ARCHITECTURE-EVOLUTION-2026-10-22-001`
-- Governing master: [PIRHA — حاکمیت ثبت تعاملی و ممیزی تاریخی](../../reference/REFERENCE-DOCUMENTS/PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001.md).
-- Interaction: `INT-20261022-010` — [ورودی](../../0.0/anchors/PALANG-0.0-IN-20261022-010-BASELINE-REGISTRATION-AND-ARCHITECTURE-EVOLUTION.md) / [خروجی](../../0.0/anchors/PALANG-0.0-OUT-20261022-010-BASELINE-REGISTRATION-AND-ARCHITECTURE-EVOLUTION.md).
-- Event: [EVT-0096](../BEHAVIOR-TRACE/EVT-0096-BASELINE-REGISTRATION-AND-ARCHITECTURE-EVOLUTION-2026-10-22.md).
+- Governing master: [PIRHA — حاکمیت ثبت تعاملی و ممیزی تاریخی](../../docs/reference/REFERENCE-DOCUMENTS/PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001.md).
+- Interaction: `INT-20261022-010` — [ورودی](../../docs/0.0/anchors/PALANG-0.0-IN-20261022-010-BASELINE-REGISTRATION-AND-ARCHITECTURE-EVOLUTION.md) / [خروجی](../../docs/0.0/anchors/PALANG-0.0-OUT-20261022-010-BASELINE-REGISTRATION-AND-ARCHITECTURE-EVOLUTION.md).
+- Event: [EVT-0096](../../docs/architecture/BEHAVIOR-TRACE/EVT-0096-BASELINE-REGISTRATION-AND-ARCHITECTURE-EVOLUTION-2026-10-22.md).
 
 ### قاعدهٔ معماری
 هر چرخه از بازیابی هدف و زمینه آغاز می‌شود. ورودی و خروجی مستقل ثبت می‌شوند؛ بعد سند مادر و رویداد ساخته/به‌روزرسانی می‌شوند؛ سپس مدل به ساختمان HAIF، نمایه، نقاط ۰/۰.۰، گراف پیوستگی و صف یکپارچه‌سازی وصل می‌شود؛ پابند زمانی از commit واقعی UTC گرفته و زمان تهران از همان لحظه مشتق می‌شود؛ در پایان بازخوانی، تطبیق و تأیید اجرا می‌شود. هر مرحلهٔ بدون شاهد OPEN می‌ماند.
@@ -3002,12 +3002,12 @@ UTC مرجع canonical زمان برای رویدادها، نقاط ۰.۰، و�
 ### وضعیت پذیرش
 نسخهٔ معماری مستند به 1.3.0 ارتقا یافت؛ این به‌تنهایی اثبات موفقیت ممیزی کامل، آزمون Dropbox، Buffer، حافظهٔ پایدار یا خودکارسازی پس‌زمینه نیست. این موارد OPEN / NOT VERIFIED می‌مانند تا شاهد مستقل فراهم شود.
 
-- Time binding / پابند زمانی نسخهٔ 1.3.0: [TIME-BINDING-INT-20261022-010](../BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-010.md).
+- Time binding / پابند زمانی نسخهٔ 1.3.0: [TIME-BINDING-INT-20261022-010](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-010.md).
 
 
 ## الحاقیهٔ نسخهٔ 1.3.1 — دروازهٔ پذیرش چرخه و تحلیل شکاف
 
-- سند حاکم ثبت: [PIRHA v1.2.0](../../reference/REFERENCE-DOCUMENTS/PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001.md).
+- سند حاکم ثبت: [PIRHA v1.2.0](../../docs/reference/REFERENCE-DOCUMENTS/PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001.md).
 - شکاف معماری: `GAP-PIRHA-ACCEPTANCE-GATE-001` — اسناد چندمرحله‌ای ممکن است ایجاد شوند، اما پیوندهای زوج، نمایه یا پابند زمانی از آن‌ها عقب بمانند.
 - راهکار: برای هر چرخه یک manifest پذیرش بساز؛ هر artifact باید مسیر، شناسه، نسخه، commit، زمان UTC/تهران، پیوندهای لازم و وضعیت بازخوانی/تطبیق داشته باشد.
 - وضعیت‌ها: `CREATED` (ایجادشده) → `READ-BACK` (بازخوانی‌شده) → `LINK-VERIFIED` (پیوند تأییدشده) → `ARCHITECTURE-INTEGRATED` (ادغام‌شده در معماری) → `HISTORICAL-SEMANTIC-AUDIT` (ممیزی معنایی تاریخچه).
@@ -3017,9 +3017,9 @@ UTC مرجع canonical زمان برای رویدادها، نقاط ۰.۰، و�
 
 ## الحاقیهٔ نسخهٔ 1.3.2 — نتایج ممیزی تاریخی و حلقهٔ اصلاح
 
-- سند حاکم PIRHA: [نسخهٔ 1.3.0](../../reference/REFERENCE-DOCUMENTS/PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001.md).
-- گزارش ممیزی: [نتایج ممیزی تاریخی مخزن](../../reference/REFERENCE-DOCUMENTS/PALANG-REPOSITORY-HISTORICAL-AUDIT-RESULTS-2026-10-22-001.md).
-- رویداد: [EVT-0097](../BEHAVIOR-TRACE/EVT-0097-REPOSITORY-HISTORICAL-AUDIT-RESULTS-2026-10-22.md).
+- سند حاکم PIRHA: [نسخهٔ 1.3.0](../../docs/reference/REFERENCE-DOCUMENTS/PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001.md).
+- گزارش ممیزی: [نتایج ممیزی تاریخی مخزن](../../docs/reference/REFERENCE-DOCUMENTS/PALANG-REPOSITORY-HISTORICAL-AUDIT-RESULTS-2026-10-22-001.md).
+- رویداد: [EVT-0097](../../docs/architecture/BEHAVIOR-TRACE/EVT-0097-REPOSITORY-HISTORICAL-AUDIT-RESULTS-2026-10-22.md).
 - ممیزی اولیهٔ snapshot `daff68c9cf0778ce6ad0328e7e734699d175d119`، 10 پیوند محلی شکسته و گروه‌های برخورد شناسه/رویداد را نشان داد. پیوندهای مشخص اصلاح شدند؛ ممیزی تازه روی commit جدید تعیین می‌کند آیا اصلاح ساختاری پذیرفته می‌شود.
 - معماری رشد‌یافته: هر دور ممیزی باید خروجی‌ها را به‌عنوان ورودی یک چرخهٔ اصلاح کنترل‌شده بگیرد: `AUDIT → TRIAGE → REPAIR → READ-BACK → RERUN → COMPARE → SEMANTIC-RECONCILIATION`.
 - هیچ سند تاریخی به دلیل تشابه یا برخورد شناسه حذف نمی‌شود. هر گروه برخورد به تعریف اصلی، ارجاع، آینه، نسخهٔ منسوخ یا تعارض حل‌نشده طبقه‌بندی می‌شود.
@@ -3028,9 +3028,9 @@ UTC مرجع canonical زمان برای رویدادها، نقاط ۰.۰، و�
 
 ## الحاقیهٔ نسخهٔ 1.3.3 — پذیرش ساختاری و تداوم ممیزی معنایی
 
-- [PIRHA v1.4.0](../../reference/REFERENCE-DOCUMENTS/PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001.md).
-- [گزارش ممیزی PRHAR v1.1.0](../../reference/REFERENCE-DOCUMENTS/PALANG-REPOSITORY-HISTORICAL-AUDIT-RESULTS-2026-10-22-001.md).
-- [رویداد EVT-0097](../BEHAVIOR-TRACE/EVT-0097-REPOSITORY-HISTORICAL-AUDIT-RESULTS-2026-10-22.md).
+- [PIRHA v1.4.0](../../docs/reference/REFERENCE-DOCUMENTS/PALANG-INTERACTION-REGISTRATION-AND-HISTORICAL-AUDIT-MASTER-REFERENCE-2026-10-22-001.md).
+- [گزارش ممیزی PRHAR v1.1.0](../../docs/reference/REFERENCE-DOCUMENTS/PALANG-REPOSITORY-HISTORICAL-AUDIT-RESULTS-2026-10-22-001.md).
+- [رویداد EVT-0097](../../docs/architecture/BEHAVIOR-TRACE/EVT-0097-REPOSITORY-HISTORICAL-AUDIT-RESULTS-2026-10-22.md).
 - ممیزی تازهٔ snapshot `0f29c9aba688ca1c72197bd3d2bad151ccbce139`، صفر پیوند محلی شکسته و صفر خطای رمزگشایی گزارش کرد.
 - 57/68/7/24 گروه برخورد شناسه و 11 گروه محتوای تکراری هنوز نیازمند طبقه‌بندی معنایی‌اند؛ یک ابهام زمانی در EVT-0089 خط 21 نیز باز است.
 - اصل معماری: `STRUCTURAL-PASS ≠ SEMANTIC-CLOSURE`؛ گذر ساختاری معادل پایان ممیزی تاریخی نیست.
@@ -3038,16 +3038,16 @@ UTC مرجع canonical زمان برای رویدادها، نقاط ۰.۰، و�
 
 ## الحاقیهٔ نسخهٔ 1.3.4 — سند مادر قابل‌انتقال و تأیید انحصاری مالک
 
-- قرارداد خودبسندهٔ حاکم: [SCEMRS v1.0.0](../../reference/REFERENCE-DOCUMENTS/PALANG-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE-STANDARD-2026-10-22-001.md).
-- رویداد: [EVT-0098](../BEHAVIOR-TRACE/EVT-0098-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE-AND-OWNER-APPROVAL-2026-10-22.md).
-- ورودی: [IN-011](../../0.0/anchors/PALANG-0.0-IN-20261022-011-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE.md)؛ خروجی: [OUT-011](../../0.0/anchors/PALANG-0.0-OUT-20261022-011-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE.md).
+- قرارداد خودبسندهٔ حاکم: [SCEMRS v1.0.0](../../docs/reference/REFERENCE-DOCUMENTS/PALANG-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE-STANDARD-2026-10-22-001.md).
+- رویداد: [EVT-0098](../../docs/architecture/BEHAVIOR-TRACE/EVT-0098-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE-AND-OWNER-APPROVAL-2026-10-22.md).
+- ورودی: [IN-011](../../docs/0.0/anchors/PALANG-0.0-IN-20261022-011-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE.md)؛ خروجی: [OUT-011](../../docs/0.0/anchors/PALANG-0.0-OUT-20261022-011-SELF-CONTAINED-EXECUTABLE-MASTER-REFERENCE.md).
 - از این نسخه، هر سند مادر باید به‌تنهایی قابل انتقال به یک محیط AI یا مدل اپ باشد و هدف، معماری، قواعد، گردش‌کار، وضعیت‌ها، شواهد، آزمون‌ها، شکاف‌ها، بازیابی و معیار پذیرش را درون خودش داشته باشد.
 - فقط احمد پلنگ تغییرات معماری حاکم را تأیید می‌کند. عامل می‌تواند پیشنهاد دهد و آزمون کند؛ تغییر تا تأیید روشن در حالت `PENDING_OWNER_APPROVAL` می‌ماند.
 - چرخهٔ ادغام: `PROPOSE → OWNER APPROVAL → INTEGRATE → VERSION → READ-BACK → MATCH → VERIFY`. ثبت سند به‌تنهایی به معنی ادغام معماری نیست.
 - این نسخه یک قرارداد و مدل اجرایی متنی است؛ به‌خودی‌خود سرویس پس‌زمینه، اتصال Dropbox یا اجرای خودکار در محیط دیگر ایجاد نمی‌کند.
 
 
-- پابند زمانی تعامل سند مادر خودبسنده: [TIME-BINDING-INT-20261022-011](../BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-011.md).
+- پابند زمانی تعامل سند مادر خودبسنده: [TIME-BINDING-INT-20261022-011](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-INT-20261022-011.md).
 
 
 
@@ -3097,8 +3097,8 @@ Stable ID، Production ID، Version، مالک، پروژه، منشأ/زنجی�
 
 
 ## ممیزی برخورد شناسه‌ها و تبار — 2026-10-22
-- سند مرجع مادر زنده: [PICTR-2026-10-22-001](../../reference/REFERENCE-DOCUMENTS/PALANG-IDENTITY-COLLISION-AND-TIMESTAMP-RECONCILIATION-MASTER-REFERENCE-2026-10-22-001.md), نسخهٔ 1.0.1.
-- رویداد پیگیری: [EVT-0100](../BEHAVIOR-TRACE/EVT-0100-IDENTITY-COLLISION-AND-EVT-0089-TIMESTAMP-RECONCILIATION-2026-10-22.md).
+- سند مرجع مادر زنده: [PICTR-2026-10-22-001](../../docs/reference/REFERENCE-DOCUMENTS/PALANG-IDENTITY-COLLISION-AND-TIMESTAMP-RECONCILIATION-MASTER-REFERENCE-2026-10-22-001.md), نسخهٔ 1.0.1.
+- رویداد پیگیری: [EVT-0100](../../docs/architecture/BEHAVIOR-TRACE/EVT-0100-IDENTITY-COLLISION-AND-EVT-0089-TIMESTAMP-RECONCILIATION-2026-10-22.md).
 - Snapshot ممیزی اولیه: `62827ec2d7e32a2aaeee34ab9046825867f042c2`; 57 گروه Stable ID، 68 گروه Production ID، 7 گروه Reference ID، 24 گروه شمارهٔ رویداد و 11 گروه محتوای دقیق تکراری.
 - این شمارش‌ها گروه‌های نیازمند داوری‌اند، نه خطاهای قطعی. هر تصمیم باید نقش سند، نسخه، تبار، پیوندهای ورودی/خروجی و تاریخچه را حفظ کند. حذف یا ادغام خودکار ممنوع است.
 - ابهام زمانی EVT-0089 در ممیزی نخست باز ماند؛ اصلاح فایل اصلی هنوز تأیید نشده و نتیجهٔ ممیزی تازه لازم است.
@@ -3109,7 +3109,7 @@ Stable ID، Production ID، Version، مالک، پروژه، منشأ/زنجی�
 
 ## قاعدهٔ حاکم جدید — جداسازی سند مادر کل پروژه از Master–Child–Rahm
 
-- **مرجع حاکم بازسازی کل پروژه:** [UPRM — سند مرجع مادر بازسازی کل پروژه](../../reference/REFERENCE-DOCUMENTS/PALANG-UNIVERSAL-PROJECT-RECONSTRUCTION-MASTER-2026-10-22-001.md)، شناسهٔ پایدار `PALANG-UNIVERSAL-PROJECT-RECONSTRUCTION-MASTER-2026-10-22-001`، نسخهٔ جاری 1.0.1.
+- **مرجع حاکم بازسازی کل پروژه:** [UPRM — سند مرجع مادر بازسازی کل پروژه](../../docs/reference/REFERENCE-DOCUMENTS/PALANG-UNIVERSAL-PROJECT-RECONSTRUCTION-MASTER-2026-10-22-001.md)، شناسهٔ پایدار `PALANG-UNIVERSAL-PROJECT-RECONSTRUCTION-MASTER-2026-10-22-001`، نسخهٔ جاری 1.0.1.
 - این «سند مادر» مرجع فرادستِ مستندسازی و بازسازی است: هدف، مسیر تاریخی، قواعد، شواهد، تعامل/رفتارشناسی، تصمیم‌ها، لنگرها، پیوندهای زمانی، خطاها، شکاف‌ها و دستور ادامه را یکپارچه می‌کند.
 - واژهٔ **Master** در معماری HAIF فقط نقش هستهٔ حاکم در چرخهٔ مفهومی `MASTER → CHILD → REAL WORLD → FEEDBACK → MASTER` و مسیر اعتبارسنجی `MASTER → RAHM → VALIDATION → NEW CHILD` را نشان می‌دهد. این نقش با «سند مادر کل پروژه» یکی نیست.
 - **قاعدهٔ عدم اختلاط:** سند مادر کل پروژه ≠ گرهٔ Master مفهومی؛ برخورد شناسه‌ها ≠ خطای معماری؛ یال والد مبهم در گراف فایل‌ها ≠ رابطهٔ Master–Child. این سه موضوع باید جداگانه مدل و سپس با پیوندهای مستند به هم متصل شوند.
@@ -3120,23 +3120,23 @@ Stable ID، Production ID، Version، مالک، پروژه، منشأ/زنجی�
 
 
 ## Addendum — Current point 0 / next 0.0 (2026-10-23)
-The current interaction is registered as the active return point 0: [CURRENT-023](../../0.0/anchors/PALANG-0.0-CURRENT-20261023-023-USER-CHECKPOINT-AND-CONTINUATION.md). Its paired anchors are [IN-023](../../0.0/anchors/PALANG-0.0-IN-20261023-023-REGISTER-CURRENT-POINT-0.md) and [OUT-023](../../0.0/anchors/PALANG-0.0-OUT-20261023-023-REGISTER-CURRENT-POINT-0.md); event/lesson are [EVT-0112](../../architecture/BEHAVIOR-TRACE/EVT-0112-CURRENT-POINT-0-AND-NEXT-0.0-2026-10-23.md) / [LAL-20261023-010](../../architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-010-CURRENT-POINT-AND-NEXT-CHECKPOINT.md). The next 0.0 is [NEXT-024](../../0.0/anchors/PALANG-0.0-NEXT-20261023-024-CONTINUITY-HISTORIC-AND-COLD-START.md).
+The current interaction is registered as the active return point 0: [CURRENT-023](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261023-023-USER-CHECKPOINT-AND-CONTINUATION.md). Its paired anchors are [IN-023](../../docs/0.0/anchors/PALANG-0.0-IN-20261023-023-REGISTER-CURRENT-POINT-0.md) and [OUT-023](../../docs/0.0/anchors/PALANG-0.0-OUT-20261023-023-REGISTER-CURRENT-POINT-0.md); event/lesson are [EVT-0112](../../docs/architecture/BEHAVIOR-TRACE/EVT-0112-CURRENT-POINT-0-AND-NEXT-0.0-2026-10-23.md) / [LAL-20261023-010](../../docs/architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-010-CURRENT-POINT-AND-NEXT-CHECKPOINT.md). The next 0.0 is [NEXT-024](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261023-024-CONTINUITY-HISTORIC-AND-COLD-START.md).
 This checkpoint preserves the original-model continuation path. It does not redirect work to Dropbox and does not close the historical source census, runtime/cold-start recovery or exact-final-HEAD audit.
 
 
 ## Status visibility and resumable execution — IN-025 / OUT-025
-This follow-up is recorded in [IN-025](../../0.0/anchors/PALANG-0.0-IN-20261023-025-STATUS-AND-VISIBLE-CONTINUATION.md) / [OUT-025](../../0.0/anchors/PALANG-0.0-OUT-20261023-025-STATUS-AND-VISIBLE-CONTINUATION.md), [EVT-0114](../../architecture/BEHAVIOR-TRACE/EVT-0114-STATUS-TRANSPARENCY-AND-RESUMABLE-EXECUTION-2026-10-23.md), and [LAL-20261023-012](../../architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-012-STATUS-TRANSPARENCY-AND-RESUMABLE-EXECUTION.md). CURRENT-023 remains the current point 0, and NEXT-025 remains the next 0.0. Preserve all previous source-census and runtime-recovery work; do not redirect to unrelated tracks.
+This follow-up is recorded in [IN-025](../../docs/0.0/anchors/PALANG-0.0-IN-20261023-025-STATUS-AND-VISIBLE-CONTINUATION.md) / [OUT-025](../../docs/0.0/anchors/PALANG-0.0-OUT-20261023-025-STATUS-AND-VISIBLE-CONTINUATION.md), [EVT-0114](../../docs/architecture/BEHAVIOR-TRACE/EVT-0114-STATUS-TRANSPARENCY-AND-RESUMABLE-EXECUTION-2026-10-23.md), and [LAL-20261023-012](../../docs/architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261023-012-STATUS-TRANSPARENCY-AND-RESUMABLE-EXECUTION.md). CURRENT-023 remains the current point 0, and NEXT-025 remains the next 0.0. Preserve all previous source-census and runtime-recovery work; do not redirect to unrelated tracks.
 
 
 ## Current point 0 / next 0.0 — CURRENT-036 / NEXT-036
-This point preserves the initial-model continuation without resetting earlier architecture. [CURRENT-036](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-036-USER-REQUEST-AND-LIVING-REGISTRATION.md) is the active return node, linked to [IN-026](../../0.0/anchors/PALANG-0.0-IN-20261024-026-REGISTER-CURRENT-POINT-0.md), [OUT-026](../../0.0/anchors/PALANG-0.0-OUT-20261024-026-REGISTER-CURRENT-POINT-0.md), [EVT-0134](../../architecture/BEHAVIOR-TRACE/EVT-0134-CURRENT-POINT-ZERO-AND-LIVING-REGISTRATION-2026-10-24.md), and [LAL-20261024-013](../../architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261024-013-CURRENT-POINT-ZERO-AND-LIVING-REGISTRATION.md). The next work checkpoint is [NEXT-036](../../0.0/anchors/PALANG-0.0-NEXT-20261024-036-HISTORIC-SOURCE-CENSUS-AND-COLD-START.md). Continue historic source/rule census, runtime and cold-start recovery, and BOART follow-up in parallel as linked workstreams; do not redirect to Dropbox or close any gate without evidence.
+This point preserves the initial-model continuation without resetting earlier architecture. [CURRENT-036](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261024-036-USER-REQUEST-AND-LIVING-REGISTRATION.md) is the active return node, linked to [IN-026](../../docs/0.0/anchors/PALANG-0.0-IN-20261024-026-REGISTER-CURRENT-POINT-0.md), [OUT-026](../../docs/0.0/anchors/PALANG-0.0-OUT-20261024-026-REGISTER-CURRENT-POINT-0.md), [EVT-0134](../../docs/architecture/BEHAVIOR-TRACE/EVT-0134-CURRENT-POINT-ZERO-AND-LIVING-REGISTRATION-2026-10-24.md), and [LAL-20261024-013](../../docs/architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261024-013-CURRENT-POINT-ZERO-AND-LIVING-REGISTRATION.md). The next work checkpoint is [NEXT-036](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-036-HISTORIC-SOURCE-CENSUS-AND-COLD-START.md). Continue historic source/rule census, runtime and cold-start recovery, and BOART follow-up in parallel as linked workstreams; do not redirect to Dropbox or close any gate without evidence.
 
 ## GPT-6 interactive host branch — initial point 0
 - The new GPT-6 interactive project branch is governed by the HAIF architecture and does not replace this model or its historical anchors.
-- Branch point 0: [GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001](../../0.0/anchors/GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001.md); root anchor CURRENT-039.
-- Branch living master: [GPT-6 interactive project living master](../../reference/REFERENCE-DOCUMENTS/GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001.md), version 1.3.0 at the time this cross-link was added.
-- Latest point-0 interaction: [IN-030](../../0.0/anchors/PALANG-0.0-IN-20261024-030-PROMOTE-CURRENT-039-TO-INITIAL-POINT-0.md) ↔ [OUT-030](../../0.0/anchors/PALANG-0.0-OUT-20261024-030-PROMOTE-CURRENT-039-TO-INITIAL-POINT-0.md); behavioral event [EVT-0138](../BEHAVIOR-TRACE/EVT-0138-GPT6-POINT-0-PROMOTION-AND-HAIF-INTEGRATION-2026-10-24.md).
-- Next branch checkpoint: [NEXT-038 — point 0.0](../../0.0/anchors/PALANG-0.0-NEXT-20261024-038-DEFINE-POINT-0-THEN-0.0.md).
+- Branch point 0: [GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001](../../docs/0.0/anchors/GPT6-INTERACTIVE-PROJECT-POINT-0-INITIAL-ROOT-2026-10-24-001.md); root anchor CURRENT-039.
+- Branch living master: [GPT-6 interactive project living master](../../docs/reference/REFERENCE-DOCUMENTS/GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001.md), version 1.3.0 at the time this cross-link was added.
+- Latest point-0 interaction: [IN-030](../../docs/0.0/anchors/PALANG-0.0-IN-20261024-030-PROMOTE-CURRENT-039-TO-INITIAL-POINT-0.md) ↔ [OUT-030](../../docs/0.0/anchors/PALANG-0.0-OUT-20261024-030-PROMOTE-CURRENT-039-TO-INITIAL-POINT-0.md); behavioral event [EVT-0138](../../docs/architecture/BEHAVIOR-TRACE/EVT-0138-GPT6-POINT-0-PROMOTION-AND-HAIF-INTEGRATION-2026-10-24.md).
+- Next branch checkpoint: [NEXT-038 — point 0.0](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-038-DEFINE-POINT-0-THEN-0.0.md).
 - This is a bidirectional architecture link only; it does not claim the prototype is built, point 0.0 exists, cold-start recovery has run, or external destinations are verified.
 
 
@@ -3145,11 +3145,11 @@ This point preserves the initial-model continuation without resetting earlier ar
 ## افزودهٔ زنده — پروژهٔ رحم در GPT-6، نقطهٔ ۰ و ۰.۰ مستقل — 2026-10-24
 
 - نسخهٔ افزایشی: **1.3.9**؛ نسخه‌های پیشین حفظ شده‌اند.
-- نقطهٔ ۰ این شاخه: [GPT6-RAHM-PROJECT-POINT-0-2026-10-24-001](../../0.0/anchors/GPT6-RAHM-PROJECT-POINT-0-2026-10-24-001.md).
-- نقطهٔ ۰.۰ جاری این شاخه: [G6IP-RAHM-CURRENT-044](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-044-RAHM-PROJECT-POINT-0.0.md).
-- زنجیرهٔ تعامل: [IN-036](../../0.0/anchors/PALANG-0.0-IN-20261024-036-RAHM-PROJECT-POINT-0.md) → [OUT-036](../../0.0/anchors/PALANG-0.0-OUT-20261024-036-RAHM-PROJECT-POINT-0.md) → [EVT-0144](../BEHAVIOR-TRACE/EVT-0144-GPT6-RAHM-PROJECT-POINT-0-2026-10-24.md) → CURRENT-044 → [NEXT-042](../../0.0/anchors/PALANG-0.0-NEXT-20261024-042-RAHM-CONFORMANCE-EXPORT-CROSS-HOST-TEST.md).
-- سند مادر حاکمِ انتقال به GPT-6: [G6IP-IAM-20261024-001 v1.0.6](../../reference/REFERENCE-DOCUMENTS/GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md).
-- سند مادر زندهٔ شاخهٔ GPT-6: [G6IP-LMR-20261024-001 v1.3.8](../../reference/REFERENCE-DOCUMENTS/GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001.md).
+- نقطهٔ ۰ این شاخه: [GPT6-RAHM-PROJECT-POINT-0-2026-10-24-001](../../docs/0.0/anchors/GPT6-RAHM-PROJECT-POINT-0-2026-10-24-001.md).
+- نقطهٔ ۰.۰ جاری این شاخه: [G6IP-RAHM-CURRENT-044](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261024-044-RAHM-PROJECT-POINT-0.0.md).
+- زنجیرهٔ تعامل: [IN-036](../../docs/0.0/anchors/PALANG-0.0-IN-20261024-036-RAHM-PROJECT-POINT-0.md) → [OUT-036](../../docs/0.0/anchors/PALANG-0.0-OUT-20261024-036-RAHM-PROJECT-POINT-0.md) → [EVT-0144](../../docs/architecture/BEHAVIOR-TRACE/EVT-0144-GPT6-RAHM-PROJECT-POINT-0-2026-10-24.md) → CURRENT-044 → [NEXT-042](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-042-RAHM-CONFORMANCE-EXPORT-CROSS-HOST-TEST.md).
+- سند مادر حاکمِ انتقال به GPT-6: [G6IP-IAM-20261024-001 v1.0.6](../../docs/reference/REFERENCE-DOCUMENTS/GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md).
+- سند مادر زندهٔ شاخهٔ GPT-6: [G6IP-LMR-20261024-001 v1.3.8](../../docs/reference/REFERENCE-DOCUMENTS/GPT6-INTERACTIVE-PROJECT-LIVING-MASTER-REFERENCE-2026-10-24-001.md).
 
 ### قرارداد رحم
 رحم محیط کنترل‌شدهٔ رشد و آزمون است، نه صرفاً نامی برای یک پوشه یا ادعای وجود عامل خودکار. هر تعامل باید در حد قابلیت واقعی میزبان به جفت IN/OUT، مشاهدهٔ رفتار، فرضیهٔ جدا از واقعیت مشاهده‌شده، شواهد، خطا/اصلاح، بازخورد، نسخه و گام بعدی متصل شود. قابلیت ثبت خودکار دائمی تنها پس از ساخت و آزمون یک سازوکار اجرایی واقعی قابل اعلام است.
@@ -3161,7 +3161,7 @@ This point preserves the initial-model continuation without resetting earlier ar
 - هیچ Child بدون شواهد، بررسی رگرسیون، تطبیق و بازخوانی به Master ارتقا نمی‌یابد.
 - هر میزبان AI باید manifest قابلیت‌ها و محدودیت‌های خودش را اعلام کند؛ حافظهٔ پایدار، اجرای پس‌زمینه یا ابزار خارجی فرض نمی‌شود.
 - بستهٔ قابل‌استخراج باید سند راه‌اندازی، معماری، طرح‌وارهٔ تعامل، دفتر شواهد، آزمون‌های مثبت و منفی، manifest اثرانگشت و روش بازیابی/بازگشت را شامل شود.
-- آزمون پذیرش میان‌میزبان: [NEXT-042](../../0.0/anchors/PALANG-0.0-NEXT-20261024-042-RAHM-CONFORMANCE-EXPORT-CROSS-HOST-TEST.md) — OPEN / NOT RUN.
+- آزمون پذیرش میان‌میزبان: [NEXT-042](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-042-RAHM-CONFORMANCE-EXPORT-CROSS-HOST-TEST.md) — OPEN / NOT RUN.
 
 ### وضعیت شواهد
 ثبت در مخزن و بازخوانی مستقل فایل‌ها باید جداگانه تأیید شود. بستهٔ اجرایی رحم، ثبت خودکار دائمی رفتار، بازیابی در زمینهٔ تازه و آزمون در میزبان دوم هنوز PASS اعلام نشده‌اند.
@@ -3169,7 +3169,7 @@ This point preserves the initial-model continuation without resetting earlier ar
 
 ## افزودهٔ زنده — اثبات حافظهٔ پایدار و اجرای پس‌زمینهٔ میزبان — 2026-10-24
 
-- زنجیرهٔ تازه: [IN-037](../../0.0/anchors/PALANG-0.0-IN-20261024-037-PORTABLE-RAHM-AND-HOST-PERSISTENCE.md) → [OUT-037](../../0.0/anchors/PALANG-0.0-OUT-20261024-037-PORTABLE-RAHM-AND-HOST-PERSISTENCE.md) → [EVT-0145](../BEHAVIOR-TRACE/EVT-0145-PORTABLE-RAHM-HOST-CAPABILITY-ARCHITECTURE-2026-10-24.md) → [CURRENT-045](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-045-RAHM-PORTABLE-HOST-PERSISTENCE.md).
+- زنجیرهٔ تازه: [IN-037](../../docs/0.0/anchors/PALANG-0.0-IN-20261024-037-PORTABLE-RAHM-AND-HOST-PERSISTENCE.md) → [OUT-037](../../docs/0.0/anchors/PALANG-0.0-OUT-20261024-037-PORTABLE-RAHM-AND-HOST-PERSISTENCE.md) → [EVT-0145](../../docs/architecture/BEHAVIOR-TRACE/EVT-0145-PORTABLE-RAHM-HOST-CAPABILITY-ARCHITECTURE-2026-10-24.md) → [CURRENT-045](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261024-045-RAHM-PORTABLE-HOST-PERSISTENCE.md).
 - معماری بستهٔ انتقال رحم در `docs/portable/RAHM/` ایجاد شده است: راه‌اندازی، معماری، manifest قابلیت میزبان، طرح‌وارهٔ تعامل، دفتر شواهد، آزمون‌ها، manifest انتقال و بازیابی/بازگشت.
 - تفکیک اجباری: مخزن/ذخیره‌سازی فایل ≠ حافظهٔ مکالمه‌ای میزبان ≠ اجرای خودکار در پس‌زمینه. هیچ‌کدام از دیگری نتیجه نمی‌شود.
 - اثبات حافظه: نوشتن نشانگر یکتا → عبور از مرز نشست/راه‌اندازی مجدد → بازیابی با کلید → تطبیق مستقل. اثبات پس‌زمینه: زمان‌بندی مجاز → اجرا در زمان بی‌تعامل بودن کاربر → گزارش زمان‌دار و خروجی پایدار → بازخوانی مستقل → کنترل توقف/لغو.
@@ -3178,8 +3178,8 @@ This point preserves the initial-model continuation without resetting earlier ar
 
 ## افزودهٔ زنده — معماری جایگزین قابلیت غایب میزبان — 2026-10-24
 
-- نقطهٔ جاری شاخه: [CURRENT-046](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-046-CAPABILITY-FALLBACK.md). زنجیره: [IN-038](../../0.0/anchors/PALANG-0.0-IN-20261024-038-CAPABILITY-FALLBACK-AND-AUDIT.md) → [OUT-038](../../0.0/anchors/PALANG-0.0-OUT-20261024-038-CAPABILITY-FALLBACK-AND-AUDIT.md) → [EVT-0146](../BEHAVIOR-TRACE/EVT-0146-HOST-CAPABILITY-FALLBACK-AND-ARCHITECTURE-AUDIT-2026-10-24.md).
-- پوشهٔ مقید به معماری: [HOST-CAPABILITY-FALLBACK](../HOST-CAPABILITY-FALLBACK/README.md)، شامل قرارداد عامل خارجی، مبدل ذخیره‌سازی، مبدل زمان‌بندی و آزمون انطباق.
+- نقطهٔ جاری شاخه: [CURRENT-046](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261024-046-CAPABILITY-FALLBACK.md). زنجیره: [IN-038](../../docs/0.0/anchors/PALANG-0.0-IN-20261024-038-CAPABILITY-FALLBACK-AND-AUDIT.md) → [OUT-038](../../docs/0.0/anchors/PALANG-0.0-OUT-20261024-038-CAPABILITY-FALLBACK-AND-AUDIT.md) → [EVT-0146](../../docs/architecture/BEHAVIOR-TRACE/EVT-0146-HOST-CAPABILITY-FALLBACK-AND-ARCHITECTURE-AUDIT-2026-10-24.md).
+- پوشهٔ مقید به معماری: [HOST-CAPABILITY-FALLBACK](../../docs/architecture/HOST-CAPABILITY-FALLBACK/README.md)، شامل قرارداد عامل خارجی، مبدل ذخیره‌سازی، مبدل زمان‌بندی و آزمون انطباق.
 - این معماری قابلیت غایب را به‌صورت جادویی در سرویس ارائه‌دهنده فعال نمی‌کند؛ در صورت نبود قابلیت داخلی، تنها مسیر مجاز یک مبدل/عامل خارجیِ دارای مجوز، استقرار واقعی و آزمون قابل بازخوانی است. اگر چنین runtimeای وجود ندارد، وضعیت باید UNSUPPORTED / NOT VERIFIED بماند.
 - فهرست مرجع پس از خطای قبلی 404 دوباره قابل دریافت شده است؛ تطبیق پس از به‌روزرسانی انجام شد؛ شناسه‌های یکتا و پیوندهای اصلی در بازخوانی مجدد حاضر بودند. حافظهٔ میزبان، اجرای پس‌زمینه، انتقال به میزبان دوم و صحت SHA-256 همچنان بازند.
 
@@ -3192,7 +3192,7 @@ This point preserves the initial-model continuation without resetting earlier ar
 
 
 ## قاعدهٔ زندهٔ چشم پلنگ / Behavior Hunter — CURRENT-047
-- زنجیرهٔ جدید: [CURRENT-046](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-046-CAPABILITY-FALLBACK.md) → [IN-039](../../0.0/anchors/PALANG-0.0-IN-20261024-039-BEHAVIOR-HUNTER-LIVING-RULE.md) → [OUT-039](../../0.0/anchors/PALANG-0.0-OUT-20261024-039-BEHAVIOR-HUNTER-LIVING-RULE.md) → [EVT-0147](../BEHAVIOR-TRACE/EVT-0147-BEHAVIOR-HUNTER-LIVING-RULE-AND-CHECKPOINT-2026-10-24.md) → [CURRENT-047](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-047-BEHAVIOR-HUNTER-LIVING-ANCHOR.md) → [NEXT-045](../../0.0/anchors/PALANG-0.0-NEXT-20261024-045-BEHAVIOR-HUNTER-TEST-AND-OPEN-GATES.md).
+- زنجیرهٔ جدید: [CURRENT-046](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261024-046-CAPABILITY-FALLBACK.md) → [IN-039](../../docs/0.0/anchors/PALANG-0.0-IN-20261024-039-BEHAVIOR-HUNTER-LIVING-RULE.md) → [OUT-039](../../docs/0.0/anchors/PALANG-0.0-OUT-20261024-039-BEHAVIOR-HUNTER-LIVING-RULE.md) → [EVT-0147](../../docs/architecture/BEHAVIOR-TRACE/EVT-0147-BEHAVIOR-HUNTER-LIVING-RULE-AND-CHECKPOINT-2026-10-24.md) → [CURRENT-047](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261024-047-BEHAVIOR-HUNTER-LIVING-ANCHOR.md) → [NEXT-045](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-045-BEHAVIOR-HUNTER-TEST-AND-OPEN-GATES.md).
 - قاعدهٔ حاکم: هر موردی که پیاده‌سازی و بازخوانی آن اثبات شده، وضعیت متناسب می‌گیرد؛ هر موردی که فقط تعریف یا مستند شده، قابلیت فعال محسوب نمی‌شود؛ هر آزمون انجام‌نشده یا ناموفق با شناسه، دلیل و گام بازیابی باز می‌ماند.
 - «چشم پلنگ / شکارچی رفتارشناسی» باید نشانه‌های قابل مشاهدهٔ تعامل، IN/OUT، اصلاح کاربر، انحراف مسیر، شواهد، آزمون و بازیابی را ثبت و به معماری وصل کند. مشاهده از فرضیه، و فرضیه از قانون پذیرفته‌شده جدا می‌ماند.
 - استنباط ترجیح کاربر از تکرار دستورها و اصلاح‌ها مجاز است، اما ادعای دسترسی به فکر پنهان یا پایش خودکار همیشگی مجاز نیست.
@@ -3201,29 +3201,29 @@ This point preserves the initial-model continuation without resetting earlier ar
 
 
 ## CURRENT-048 — اتصال رحم به معماری موروثی و انتقال‌پذیر
-- نقطهٔ جاری: [CURRENT-048](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-048-RAHM-INHERITED-ARCHITECTURE.md).
-- ورودی/خروجی/رویداد: [IN-040](../../0.0/anchors/PALANG-0.0-IN-20261024-040-RAHM-INHERITED-ARCHITECTURE.md) → [OUT-040](../../0.0/anchors/PALANG-0.0-OUT-20261024-040-RAHM-INHERITED-ARCHITECTURE.md) → [EVT-0148](../BEHAVIOR-TRACE/EVT-0148-RAHM-INHERITED-ARCHITECTURE-AND-EXPORTABLE-RECOVERY-2026-10-24.md).
-- معماری موروثی: [سند مادر معماری موروثی GPT-6](../../reference/REFERENCE-DOCUMENTS/GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md).
-- بستهٔ قابل انتقال رحم: [RAHM_BOOT](../../portable/RAHM/RAHM_BOOT.md) و [RAHM_ARCHITECTURE](../../portable/RAHM/RAHM_ARCHITECTURE.md).
-- نقطهٔ بعدی ۰.۰: [NEXT-046](../../0.0/anchors/PALANG-0.0-NEXT-20261024-046-RAHM-PORTABILITY-VALIDATION.md) — باز و در صف اجرا.
+- نقطهٔ جاری: [CURRENT-048](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261024-048-RAHM-INHERITED-ARCHITECTURE.md).
+- ورودی/خروجی/رویداد: [IN-040](../../docs/0.0/anchors/PALANG-0.0-IN-20261024-040-RAHM-INHERITED-ARCHITECTURE.md) → [OUT-040](../../docs/0.0/anchors/PALANG-0.0-OUT-20261024-040-RAHM-INHERITED-ARCHITECTURE.md) → [EVT-0148](../../docs/architecture/BEHAVIOR-TRACE/EVT-0148-RAHM-INHERITED-ARCHITECTURE-AND-EXPORTABLE-RECOVERY-2026-10-24.md).
+- معماری موروثی: [سند مادر معماری موروثی GPT-6](../../docs/reference/REFERENCE-DOCUMENTS/GPT6-NEW-PROJECT-INHERITED-ARCHITECTURE-LIVING-MASTER-2026-10-24-001.md).
+- بستهٔ قابل انتقال رحم: [RAHM_BOOT](../../docs/portable/RAHM/RAHM_BOOT.md) و [RAHM_ARCHITECTURE](../../docs/portable/RAHM/RAHM_ARCHITECTURE.md).
+- نقطهٔ بعدی ۰.۰: [NEXT-046](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-046-RAHM-PORTABILITY-VALIDATION.md) — باز و در صف اجرا.
 - دادهٔ تعامل قابل مشاهده از هر دو سمت (ورودی/خروجی کاربر و AI)، اصلاح‌ها، بازخورد، فرضیه‌های رفتاری، منشأ شواهد، آزمون‌ها و مسیر بازیابی باید در قالبی قابل استخراج نگهداری شود. مشاهده به‌تنهایی قانون تأییدشده نیست.
 - وضعیت: پیوند معماری مستند می‌شود؛ انتقال واقعی به میزبان تمیز/دوم، صحت SHA-256، اعتبارسنجی schema و آزمون‌های حافظه/پس‌زمینه تا ارائهٔ شواهد NOT VERIFIED / NOT RUN می‌مانند.
 
 
 
 ## CURRENT-054 — اولین سند مادر زندهٔ قابل‌انتقال
-- سند مادر قابل‌استخراج GPT-6 / HAIF / RAHM: [FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md](../../portable/RAHM/FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md).
-- نقطه جاری: [CURRENT-054](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-054-FIRST-LIVING-MASTER.md).
-- گام بعدی: [NEXT-048](../../0.0/anchors/PALANG-0.0-NEXT-20261024-048-FIRST-MASTER-CONFORMANCE.md)، با اجرای نخستین دروازهٔ [NEXT-044](../../0.0/anchors/PALANG-0.0-NEXT-20261024-044-EXTRACTABLE-RAHM-CHILD-AND-COLD-START-TEST.md).
+- سند مادر قابل‌استخراج GPT-6 / HAIF / RAHM: [FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md](../../docs/portable/RAHM/FIRST-LIVING-MASTER-PORTABLE-GPT6-HAIF.md).
+- نقطه جاری: [CURRENT-054](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261024-054-FIRST-LIVING-MASTER.md).
+- گام بعدی: [NEXT-048](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-048-FIRST-MASTER-CONFORMANCE.md)، با اجرای نخستین دروازهٔ [NEXT-044](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-044-EXTRACTABLE-RAHM-CHILD-AND-COLD-START-TEST.md).
 - اصل بنیادی: مورد تأییدنشده/ناقص/متعارض/آزمون‌نشده در هر نقطه باز و زنده باقی می‌ماند؛ فقط معیار پذیرش و شواهد بازخوانی‌شده اجازه بستن می‌دهد.
 - وضعیت انتقال واقعی میزبان، بازیابی مستقل IN/OUT، هش دقیق SHA-256، آزمون‌های طرح، حافظهٔ پایدار و اجرای پس‌زمینه همچنان باز یا تأییدنشده‌اند؛ ثبت سند به‌تنهایی اثبات اجرا نیست.
 
 
 ## CURRENT-056 — تداوم خروجی، بازیابی و رحم قابل‌انتقال (2026-10-24)
-- لنگر جاری: [CURRENT-056](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-056-OUTPUT-CONTINUITY-AND-RECOVERY.md).
-- نقطهٔ بازگشت کاربر: [Point 0/005](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-005-OUTPUT-CONTINUITY-AND-RECOVERY.md).
-- زنجیرهٔ تعامل: [IN-049](../../0.0/anchors/PALANG-0.0-IN-20261024-049-OUTPUT-CONTINUITY-AND-RECOVERY.md) → [OUT-048](../../0.0/anchors/PALANG-0.0-OUT-20261024-048-OUTPUT-CONTINUITY-AND-RECOVERY.md) → [EVT-0158](../../architecture/BEHAVIOR-TRACE/EVT-0158-NO-SILENT-GAP-OUTPUT-CONTINUITY-2026-10-24.md).
-- گام ادامهٔ حاکم: [NEXT-050](../../0.0/anchors/PALANG-0.0-NEXT-20261024-050-FULL-RECOVERY-AND-REAL-HOST-IMPORT.md)؛ NEXT-049 و NEXT-044 و تمام شاخه‌های قدیمی حفظ می‌شوند.
+- لنگر جاری: [CURRENT-056](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261024-056-OUTPUT-CONTINUITY-AND-RECOVERY.md).
+- نقطهٔ بازگشت کاربر: [Point 0/005](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-005-OUTPUT-CONTINUITY-AND-RECOVERY.md).
+- زنجیرهٔ تعامل: [IN-049](../../docs/0.0/anchors/PALANG-0.0-IN-20261024-049-OUTPUT-CONTINUITY-AND-RECOVERY.md) → [OUT-048](../../docs/0.0/anchors/PALANG-0.0-OUT-20261024-048-OUTPUT-CONTINUITY-AND-RECOVERY.md) → [EVT-0158](../../docs/architecture/BEHAVIOR-TRACE/EVT-0158-NO-SILENT-GAP-OUTPUT-CONTINUITY-2026-10-24.md).
+- گام ادامهٔ حاکم: [NEXT-050](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-050-FULL-RECOVERY-AND-REAL-HOST-IMPORT.md)؛ NEXT-049 و NEXT-044 و تمام شاخه‌های قدیمی حفظ می‌شوند.
 - قاعدهٔ بدون فاصلهٔ خاموش: ورودی تازه نباید گام باز قبلی را حذف کند؛ در عملیات طولانی باید وضعیت قابل‌مشاهده ارائه شود؛ هر خروجی باید وضعیت پایان/ناتمام/مسدود/ادامه را روشن کند؛ اجرای پس‌زمینه یا حافظهٔ دائمی بدون آزمون واقعی ادعا نمی‌شود.
 - آخرین آزمون سخت‌گیرانهٔ بسته [40122001572](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40122001572): ۳۷/۳۷ هش فایل مطابق؛ طرح تعامل معتبر با صفر خطا پذیرفته و نامعتبر با ۴ خطا رد شد؛ بازیابی IN/OUT فقط در محدودهٔ پیوند/نقطهٔ بررسی پاس شد؛ بستهٔ ۳۸ فایلی ساخته شد.
 - ممیزی کلی [40122001601](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40122001601) هنوز REVIEW_REQUIRED است؛ شکاف‌های گراف، انتقال واقعی میزبان، بازیابی کامل، حافظهٔ پایدار و اجرای پس‌زمینه باز هستند.
@@ -3231,7 +3231,7 @@ This point preserves the initial-model continuation without resetting earlier ar
 
 ## CURRENT-057 — خاک‌برداری زنده و تداوم بدون شکاف
 
-- نقطهٔ جاری: [CURRENT-057](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-057-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md)؛ شاخهٔ ورودی/خروجی: [IN-050](../../0.0/anchors/PALANG-0.0-IN-20261024-050-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md) → [OUT-049](../../0.0/anchors/PALANG-0.0-OUT-20261024-049-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md) → [EVT-0159](../BEHAVIOR-TRACE/EVT-0159-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY-2026-10-24.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- نقطهٔ جاری: [CURRENT-057](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261024-057-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md)؛ شاخهٔ ورودی/خروجی: [IN-050](../../docs/0.0/anchors/PALANG-0.0-IN-20261024-050-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md) → [OUT-049](../../docs/0.0/anchors/PALANG-0.0-OUT-20261024-049-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY.md) → [EVT-0159](../../docs/architecture/BEHAVIOR-TRACE/EVT-0159-REPOSITORY-EXCAVATION-AND-LIVING-RECOVERY-2026-10-24.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - اصل زنده: هیچ فاصله‌ای بین ورودی و خروجی نباید باعث گم‌شدن کار باز شود. هر ورودی تازه پس از بازخوانی مخزن به CURRENT و NEXT باز متصل می‌شود؛ شاخه‌های قبلی حفظ می‌شوند؛ اگر کار ناتمام است، وضعیت PARTIAL/BLOCKED و گام بعدی باید به کاربر نشان داده شود.
 - ممیزی ساختاری آخرین بررسی‌شده [40122633902](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40122633902) هنوز REVIEW_REQUIRED است: ۱۱ پیوند مفقود، ۶۰ گروه برخورد شناسهٔ پایدارِ بررسی‌نشده، ۸۸ گروه برخورد شناسهٔ تولید، ۷ گروه برخورد شناسهٔ مرجع، ۳۶ گروه برخورد شمارهٔ رویداد و ۱۳ رابطهٔ والد مبهم.
 - بازیابی کامل از IN/OUT، ورود به میزبان مستقل، میزبان دوم، حافظهٔ پایدار پس از راه‌اندازی مجدد و اجرای پس‌زمینه همچنان OPEN / NOT VERIFIED هستند. ثبت این قاعده به‌تنهایی اثبات اجرای خودکار آن نیست.
@@ -3244,9 +3244,9 @@ This point preserves the initial-model continuation without resetting earlier ar
 
 
 ## CURRENT-058 — latest deep excavation branch
-- Point 0/007: [User return point](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-007-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md).
-- Input/output: [IN-051](../../0.0/anchors/PALANG-0.0-IN-20261024-051-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md) → [OUT-050](../../0.0/anchors/PALANG-0.0-OUT-20261024-050-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md) → [EVT-0160](../BEHAVIOR-TRACE/EVT-0160-DEEP-EXCAVATION-EXECUTION-RECEIPTS-AND-AUDIT-CORRECTION-2026-10-24.md) → [CURRENT-058](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-058-DEEP-EXCAVATION-EXECUTION-RECEIPTS.md).
-- Active open action: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). NEXT-049 and NEXT-050 remain preserved.
+- Point 0/007: [User return point](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-007-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md).
+- Input/output: [IN-051](../../docs/0.0/anchors/PALANG-0.0-IN-20261024-051-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md) → [OUT-050](../../docs/0.0/anchors/PALANG-0.0-OUT-20261024-050-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md) → [EVT-0160](../../docs/architecture/BEHAVIOR-TRACE/EVT-0160-DEEP-EXCAVATION-EXECUTION-RECEIPTS-AND-AUDIT-CORRECTION-2026-10-24.md) → [CURRENT-058](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261024-058-DEEP-EXCAVATION-EXECUTION-RECEIPTS.md).
+- Active open action: [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). NEXT-049 and NEXT-050 remain preserved.
 - The portable master, foundational mother, inherited architecture master, canonical index and queue must remain aligned. Registration is not equivalent to validation or real-host import.
 - Current open gates: post-edit repository-wide audit and exact-byte digest/package rerun; full IN/OUT reconstruction; clean/second AI-host import; actual persistence restart; idle/background execution; individual identifier/parent/timestamp triage.
 
@@ -3258,11 +3258,11 @@ This point preserves the initial-model continuation without resetting earlier ar
 - External AI-host import, second-host import, persistence restart and idle/background execution remain OPEN / NOT VERIFIED.
 
 ## Active current branch
-[Point 0/007](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-007-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md) → [IN-051](../../0.0/anchors/PALANG-0.0-IN-20261024-051-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md) → [OUT-050](../../0.0/anchors/PALANG-0.0-OUT-20261024-050-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md) → [EVT-0160](../BEHAVIOR-TRACE/EVT-0160-DEEP-EXCAVATION-EXECUTION-RECEIPTS-AND-AUDIT-CORRECTION-2026-10-24.md) → [CURRENT-058](../../0.0/anchors/PALANG-0.0-CURRENT-20261024-058-DEEP-EXCAVATION-EXECUTION-RECEIPTS.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+[Point 0/007](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261024-007-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md) → [IN-051](../../docs/0.0/anchors/PALANG-0.0-IN-20261024-051-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md) → [OUT-050](../../docs/0.0/anchors/PALANG-0.0-OUT-20261024-050-DEEP-EXCAVATION-AND-EXECUTION-RECEIPTS.md) → [EVT-0160](../../docs/architecture/BEHAVIOR-TRACE/EVT-0160-DEEP-EXCAVATION-EXECUTION-RECEIPTS-AND-AUDIT-CORRECTION-2026-10-24.md) → [CURRENT-058](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261024-058-DEEP-EXCAVATION-EXECUTION-RECEIPTS.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 
 
 ## CURRENT-059 — ثبت پیوستگی خروجی و ادامهٔ واقعی کار
-شاخهٔ جاری: [POINT-0/008](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-008-DEEP-AUDIT-AND-NO-SILENT-GAP.md) → [IN-052](../../0.0/anchors/PALANG-0.0-IN-20261025-052-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md) → [OUT-051](../../0.0/anchors/PALANG-0.0-OUT-20261025-051-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md) → [EVT-0161](../BEHAVIOR-TRACE/EVT-0161-DEEP-AUDIT-STALE-GATE-AND-NO-SILENT-GAP-2026-10-25.md) → [CURRENT-059](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-059-DEEP-AUDIT-AND-CORRECTED-CONFORMANCE.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). قاعدهٔ بنیادی: ورودی تازه نقطهٔ قبلی را پاک نمی‌کند؛ کار ناتمام باید با وضعیت قابل‌مشاهده و نقطهٔ دقیق ادامه ثبت شود؛ NEXT جدید بدون اجرای واقعی ساخته نمی‌شود؛ هر مورد تأییدنشده باز می‌ماند.
+شاخهٔ جاری: [POINT-0/008](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-008-DEEP-AUDIT-AND-NO-SILENT-GAP.md) → [IN-052](../../docs/0.0/anchors/PALANG-0.0-IN-20261025-052-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md) → [OUT-051](../../docs/0.0/anchors/PALANG-0.0-OUT-20261025-051-DEEP-AUDIT-NO-SILENT-GAP-AND-EXECUTION.md) → [EVT-0161](../../docs/architecture/BEHAVIOR-TRACE/EVT-0161-DEEP-AUDIT-STALE-GATE-AND-NO-SILENT-GAP-2026-10-25.md) → [CURRENT-059](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-059-DEEP-AUDIT-AND-CORRECTED-CONFORMANCE.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). قاعدهٔ بنیادی: ورودی تازه نقطهٔ قبلی را پاک نمی‌کند؛ کار ناتمام باید با وضعیت قابل‌مشاهده و نقطهٔ دقیق ادامه ثبت شود؛ NEXT جدید بدون اجرای واقعی ساخته نمی‌شود؛ هر مورد تأییدنشده باز می‌ماند.
 
 
 ## CURRENT-059 — رسید آزمون و مرز تأیید
@@ -3279,9 +3279,9 @@ This point preserves the initial-model continuation without resetting earlier ar
 
 ## CURRENT-060 — بازیابی زنجیره و ممیزی تکمیل واقعی معماری (2026-10-25)
 
-- User Point 0/009: [بازیابی و ممیزی نقاط ۰ و ۰.۰](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-009-CHAIN-RECOVERY-AUDIT.md).
-- Input / Output / Event: [IN-053](../../0.0/anchors/PALANG-0.0-IN-20261025-053-CHAIN-RECOVERY-AUDIT.md) → [OUT-052](../../0.0/anchors/PALANG-0.0-OUT-20261025-052-CHAIN-RECOVERY-AUDIT.md) → [EVT-0162](../../docs/architecture/BEHAVIOR-TRACE/EVT-0162-CHAIN-RECOVERY-AUDIT-AND-SCOPE-ERROR-LEARNING-2026-10-25.md) → [CURRENT-060](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-060-CHAIN-RECOVERY-AUDIT.md).
-- Active execution remains [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md); historical NEXT-039/NEXT-040 and NEXT-044/NEXT-048 are not silently closed by this newer checkpoint.
+- User Point 0/009: [بازیابی و ممیزی نقاط ۰ و ۰.۰](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-009-CHAIN-RECOVERY-AUDIT.md).
+- Input / Output / Event: [IN-053](../../docs/0.0/anchors/PALANG-0.0-IN-20261025-053-CHAIN-RECOVERY-AUDIT.md) → [OUT-052](../../docs/0.0/anchors/PALANG-0.0-OUT-20261025-052-CHAIN-RECOVERY-AUDIT.md) → [EVT-0162](../../docs/architecture/BEHAVIOR-TRACE/EVT-0162-CHAIN-RECOVERY-AUDIT-AND-SCOPE-ERROR-LEARNING-2026-10-25.md) → [CURRENT-060](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-060-CHAIN-RECOVERY-AUDIT.md).
+- Active execution remains [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md); historical NEXT-039/NEXT-040 and NEXT-044/NEXT-048 are not silently closed by this newer checkpoint.
 - Initial architecture-zero explicitly recorded the prototype as NOT BUILT and cold-start recovery as NOT RUN. The model baseline says production implementation is NOT BUILT. These remain real build/acceptance gaps until newer direct evidence closes them.
 - The portable manifest and its previous successful CI receipts predate this CURRENT-060 chain. This new chain and mother update have not yet been proven included in a fresh export artifact; current-commit package/digest reconciliation is OPEN / NOT RUN.
 - Scope lesson: continue the new-project model architecture; do not divert to Dropbox unless explicitly reopened by the user.
@@ -3289,23 +3289,23 @@ This point preserves the initial-model continuation without resetting earlier ar
 
 
 ## CURRENT-061 — prototype, adoption and graph triage integration (2026-10-25)
-- New Point 0: [POINT-0/010](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-010-PROTOTYPE-GRAPH-CLOSURE.md).
-- Interaction chain: [IN-054](../../0.0/anchors/PALANG-0.0-IN-20261025-054-PROTOTYPE-GRAPH-CLOSURE.md) → [OUT-053](../../0.0/anchors/PALANG-0.0-OUT-20261025-053-PROTOTYPE-GRAPH-CLOSURE.md) → [EVT-0163](../BEHAVIOR-TRACE/EVT-0163-PROTOTYPE-GRAPH-CLOSURE-2026-10-25.md) → [CURRENT-061](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-061-PROTOTYPE-AND-GRAPH-TRIAGE.md).
-- Interactive prototype: [source](../interactive-prototype/index.html) and [test procedure](../interactive-prototype/README.md).
-- Fresh-project fixture: [ADOPTION-TEST-FIXTURE.json](../interactive-prototype/ADOPTION-TEST-FIXTURE.json).
-- Graph triage: [AGACR](../../reference/REFERENCE-DOCUMENTS/ARCHITECTURE-GRAPH-ADJUDICATION-AND-CLOSURE-REGISTER-2026-10-25-001.md).
-- Active execution queue remains [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md); NEXT-039 and NEXT-040 are preserved as open sub-tasks.
+- New Point 0: [POINT-0/010](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-010-PROTOTYPE-GRAPH-CLOSURE.md).
+- Interaction chain: [IN-054](../../docs/0.0/anchors/PALANG-0.0-IN-20261025-054-PROTOTYPE-GRAPH-CLOSURE.md) → [OUT-053](../../docs/0.0/anchors/PALANG-0.0-OUT-20261025-053-PROTOTYPE-GRAPH-CLOSURE.md) → [EVT-0163](../../docs/architecture/BEHAVIOR-TRACE/EVT-0163-PROTOTYPE-GRAPH-CLOSURE-2026-10-25.md) → [CURRENT-061](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-061-PROTOTYPE-AND-GRAPH-TRIAGE.md).
+- Interactive prototype: [source](../../docs/architecture/interactive-prototype/index.html) and [test procedure](../../docs/architecture/interactive-prototype/README.md).
+- Fresh-project fixture: [ADOPTION-TEST-FIXTURE.json](../../docs/architecture/interactive-prototype/ADOPTION-TEST-FIXTURE.json).
+- Graph triage: [AGACR](../../docs/reference/REFERENCE-DOCUMENTS/ARCHITECTURE-GRAPH-ADJUDICATION-AND-CLOSURE-REGISTER-2026-10-25-001.md).
+- Active execution queue remains [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md); NEXT-039 and NEXT-040 are preserved as open sub-tasks.
 - Evidence boundary: prototype source exists; browser execution and fresh-host adoption are not yet proven. Production implementation remains NOT BUILT. The graph register improves the decision process but does not close unresolved groups.
 
 
 ## CURRENT-062 — ثبت نقطهٔ ۰ و فهرست شکاف‌ها و گام‌های اجرایی (2026-10-25)
 
-- User Point 0/011: [نقطهٔ صفر جدید؛ شکاف‌ها و تداوم](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-011-OPEN-GAPS-AND-CONTINUITY.md).
-- زنجیرهٔ تعامل: [IN-055](../../0.0/anchors/PALANG-0.0-IN-20261025-055-OPEN-GAPS-AND-CONTINUITY.md) → [OUT-054](../../0.0/anchors/PALANG-0.0-OUT-20261025-054-OPEN-GAPS-AND-CONTINUITY.md) → [EVT-0164](../BEHAVIOR-TRACE/EVT-0164-OPEN-GAPS-AND-CONTINUITY-2026-10-25.md) → [CURRENT-062](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-062-OPEN-GAPS-AND-CONTINUITY.md).
-- مرجع پیشین: [CURRENT-061](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-061-PROTOTYPE-AND-GRAPH-TRIAGE.md).
-- پروندهٔ داوری گراف: [AGACR](../../reference/REFERENCE-DOCUMENTS/ARCHITECTURE-GRAPH-ADJUDICATION-AND-CLOSURE-REGISTER-2026-10-25-001.md).
-- شاخص بستهٔ تداوم: [CURRENT-062 overlay manifest](../../portable/RAHM/CURRENT-062-OVERLAY-MANIFEST.json)؛ این فهرست جایگزین بستهٔ انتشار کامل یا آزمون میزبان واقعی نیست.
-- صف اجرای فعال: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). NEXT-039 و NEXT-040 نیز به‌عنوان کارهای باز حفظ شده‌اند.
+- User Point 0/011: [نقطهٔ صفر جدید؛ شکاف‌ها و تداوم](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-011-OPEN-GAPS-AND-CONTINUITY.md).
+- زنجیرهٔ تعامل: [IN-055](../../docs/0.0/anchors/PALANG-0.0-IN-20261025-055-OPEN-GAPS-AND-CONTINUITY.md) → [OUT-054](../../docs/0.0/anchors/PALANG-0.0-OUT-20261025-054-OPEN-GAPS-AND-CONTINUITY.md) → [EVT-0164](../../docs/architecture/BEHAVIOR-TRACE/EVT-0164-OPEN-GAPS-AND-CONTINUITY-2026-10-25.md) → [CURRENT-062](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-062-OPEN-GAPS-AND-CONTINUITY.md).
+- مرجع پیشین: [CURRENT-061](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-061-PROTOTYPE-AND-GRAPH-TRIAGE.md).
+- پروندهٔ داوری گراف: [AGACR](../../docs/reference/REFERENCE-DOCUMENTS/ARCHITECTURE-GRAPH-ADJUDICATION-AND-CLOSURE-REGISTER-2026-10-25-001.md).
+- شاخص بستهٔ تداوم: [CURRENT-062 overlay manifest](../../docs/portable/RAHM/CURRENT-062-OVERLAY-MANIFEST.json)؛ این فهرست جایگزین بستهٔ انتشار کامل یا آزمون میزبان واقعی نیست.
+- صف اجرای فعال: [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). NEXT-039 و NEXT-040 نیز به‌عنوان کارهای باز حفظ شده‌اند.
 - شکاف‌های باز: ممیزی معنایی موردبه‌مورد کل گراف، تطبیق شناسه‌ها/والدها/زمان‌ها/تکرارها، بستهٔ قابل‌حمل با SHA-256 تازه، اجرای واقعی نمونه در مرورگر، انتقال به میزبان مستقل، بازیابی پس از راه‌اندازی مجدد و اثبات ثبت/اجرای خودکار.
 - درس رفتاری: هنگام فعال بودن مسیر معماری مدل اولیه، کار را به Dropbox منحرف نکن؛ فقط با دستور صریح کاربر مقصد غیرفعال را دوباره باز کن. این قاعده ثبت شده اما خودکاربودن شکارچی رفتار هنوز اثبات نشده است.
 - مرز اثبات: ثبت و پیوند مخزنی جای اجرای مرورگر یا آزمون میزبان مستقل را نمی‌گیرد. Buffer، Library، Persistent Memory و Dropbox در این مرحله مقصدهای تأییدشده نیستند.
@@ -3315,12 +3315,12 @@ This point preserves the initial-model continuation without resetting earlier ar
 
 ## CURRENT-062 harness defect lesson
 - The portable conformance workflow's IN/OUT recovery test was stale: it exercised IN-052 / OUT-051 → CURRENT-059 although the active chain had moved on. This could make a structurally passing result irrelevant to the current checkpoint.
-- Corrected source: [rahm-portable-conformance.yml](../../../.github/workflows/rahm-portable-conformance.yml), now checks IN-055 / OUT-054 → CURRENT-062 and asserts NEXT-051, the initial-model mother and CURRENT-062 overlay manifest.
+- Corrected source: [rahm-portable-conformance.yml](../../.github/workflows/rahm-portable-conformance.yml), now checks IN-055 / OUT-054 → CURRENT-062 and asserts NEXT-051, the initial-model mother and CURRENT-062 overlay manifest.
 - Static preflight passed for the expected pointers; the actual current-commit workflow receipt is still NOT RUN / NOT VERIFIED. The correction is not a runtime pass. This demonstrates why tests must follow the canonical active checkpoint instead of merely succeeding on an old linked chain.
 
 
 ## 3.1 Runnable continuity engine — first executable slice
-The project now has a dependency-free Python runtime at [scripts/haif-runtime/haif_runtime.py](../../../scripts/haif-runtime/haif_runtime.py), with runnable commands and tests in [its README](../../../scripts/haif-runtime/README.md) and [test suite](../../../scripts/haif-runtime/tests/test_runtime.py).
+The project now has a dependency-free Python runtime at [scripts/haif-runtime/haif_runtime.py](../../scripts/haif-runtime/haif_runtime.py), with runnable commands and tests in [its README](../../scripts/haif-runtime/README.md) and [test suite](../../scripts/haif-runtime/tests/test_runtime.py).
 
 Implemented in source:
 - Initialize a local JSON state without overwriting an existing file.
@@ -3346,19 +3346,19 @@ Boundary: this is a local continuity engine, not yet an AI-host plugin, cloud se
 
 
 ## CURRENT-063 — executable project slice
-The user's latest Point 0 explicitly prioritizes a working new-project architecture over more reporting. The implementation path is now anchored at [CURRENT-063](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-063-EXECUTABLE-ARCHITECTURE.md) and the new interaction chain [POINT-0/012](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-012-EXECUTABLE-ARCHITECTURE.md) → IN-056 → OUT-055 → EVT-0165 → CURRENT-063.
+The user's latest Point 0 explicitly prioritizes a working new-project architecture over more reporting. The implementation path is now anchored at [CURRENT-063](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-063-EXECUTABLE-ARCHITECTURE.md) and the new interaction chain [POINT-0/012](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-012-EXECUTABLE-ARCHITECTURE.md) → IN-056 → OUT-055 → EVT-0165 → CURRENT-063.
 
-The first runnable slice is [haif_runtime.py](../../../scripts/haif-runtime/haif_runtime.py), with [automated tests](../../../scripts/haif-runtime/tests/test_runtime.py) and a [runbook](../../../scripts/haif-runtime/README.md). Its incremental portable inventory is [CURRENT-063-OVERLAY-MANIFEST](../../portable/RAHM/CURRENT-063-OVERLAY-MANIFEST.json). It implements local state, append-only IN/OUT events, parent-linked SHA-256 hashes, tamper checks, checkpoints and validated JSON transfer to a new file. The portable conformance workflow runs the tests when the runtime path changes.
+The first runnable slice is [haif_runtime.py](../../scripts/haif-runtime/haif_runtime.py), with [automated tests](../../scripts/haif-runtime/tests/test_runtime.py) and a [runbook](../../scripts/haif-runtime/README.md). Its incremental portable inventory is [CURRENT-063-OVERLAY-MANIFEST](../../docs/portable/RAHM/CURRENT-063-OVERLAY-MANIFEST.json). It implements local state, append-only IN/OUT events, parent-linked SHA-256 hashes, tamper checks, checkpoints and validated JSON transfer to a new file. The portable conformance workflow runs the tests when the runtime path changes.
 
 Execution status is deliberately evidence-bound: source and test wiring are repository-visible; the latest status query returned no check entries, so CI PASS is not claimed. The next practical action is to inspect the actual workflow result, fix failures, run a clean local recovery, and then prove independent-host import. Global graph adjudication stays under NEXT-051.
 
 
 ## 2026-10-25 — CURRENT-064 continuity update
 
-- New user anchor: [POINT-0/013](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-013-CURRENT-INTERACTION-AND-LIVING-CONTINUITY.md).
-- Interaction chain: [IN-057](../../0.0/anchors/PALANG-0.0-IN-20261025-057-CURRENT-INTERACTION-AND-LIVING-CONTINUITY.md) → [OUT-056](../../0.0/anchors/PALANG-0.0-OUT-20261025-056-NEXT-EXECUTION-AND-GAPS.md) → [EVT-0166](../BEHAVIOR-TRACE/EVT-0166-CURRENT-INTERACTION-AND-NEXT-EXECUTION-2026-10-25.md) → [CURRENT-064](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-064-NEXT-EXECUTION-AND-GAPS.md).
+- New user anchor: [POINT-0/013](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-013-CURRENT-INTERACTION-AND-LIVING-CONTINUITY.md).
+- Interaction chain: [IN-057](../../docs/0.0/anchors/PALANG-0.0-IN-20261025-057-CURRENT-INTERACTION-AND-LIVING-CONTINUITY.md) → [OUT-056](../../docs/0.0/anchors/PALANG-0.0-OUT-20261025-056-NEXT-EXECUTION-AND-GAPS.md) → [EVT-0166](../../docs/architecture/BEHAVIOR-TRACE/EVT-0166-CURRENT-INTERACTION-AND-NEXT-EXECUTION-2026-10-25.md) → [CURRENT-064](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-064-NEXT-EXECUTION-AND-GAPS.md).
 - Prior checkpoint CURRENT-063 remains preserved; it is not overwritten.
-- Existing [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md) remains the active historical graph-triage task. No successor task was created to disguise unfinished work.
+- Existing [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md) remains the active historical graph-triage task. No successor task was created to disguise unfinished work.
 
 ### Current execution priority
 
@@ -3376,14 +3376,14 @@ Repository registration and read-back must not be presented as proof that these 
 
 ## CURRENT-065 — Continuity checkpoint
 
-New Point 0: [POINT-0/014](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-014-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md). Chain: [IN-058](../../0.0/anchors/PALANG-0.0-IN-20261025-058-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md) → [OUT-057](../../0.0/anchors/PALANG-0.0-OUT-20261025-057-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md) → [EVT-0167](../BEHAVIOR-TRACE/EVT-0167-AUTONOMOUS-CONTINUITY-AND-RECOVERY-2026-10-25.md) → [CURRENT-065](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-065-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md). Preserve CURRENT-064 and prior anchors. NEXT-051 remains open. Runtime tests, clean recovery, CI receipt, independent host, restart durability and background capture remain unverified until direct evidence is recorded.
+New Point 0: [POINT-0/014](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-014-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md). Chain: [IN-058](../../docs/0.0/anchors/PALANG-0.0-IN-20261025-058-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md) → [OUT-057](../../docs/0.0/anchors/PALANG-0.0-OUT-20261025-057-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md) → [EVT-0167](../../docs/architecture/BEHAVIOR-TRACE/EVT-0167-AUTONOMOUS-CONTINUITY-AND-RECOVERY-2026-10-25.md) → [CURRENT-065](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-065-AUTONOMOUS-CONTINUITY-AND-RECOVERY.md). Preserve CURRENT-064 and prior anchors. NEXT-051 remains open. Runtime tests, clean recovery, CI receipt, independent host, restart durability and background capture remain unverified until direct evidence is recorded.
 
 
 ---
 
 ## Live mirror sync and current-chain audit addendum — 2026-10-25 (EVT-0172 / EVT-0173)
 
-- [EVT-0172 — live mirror sync](../BEHAVIOR-TRACE/EVT-0172-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md): canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10` remains unchanged; Library version 7 independently read back; 10,479 vs 10,480 characters; one trailing newline; semantic fields and destination statuses match within tolerance. No redundant Library write was performed.
+- [EVT-0172 — live mirror sync](../../docs/architecture/BEHAVIOR-TRACE/EVT-0172-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md): canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10` remains unchanged; Library version 7 independently read back; 10,479 vs 10,480 characters; one trailing newline; semantic fields and destination statuses match within tolerance. No redundant Library write was performed.
 - [EVT-0173 — exact-main audit failure and correction](../../docs/architecture/BEHAVIOR-TRACE/EVT-0173-CURRENT-065-EXACT-MAIN-AUDIT-FAILURE-AND-CORRECTION-2026-10-25.md): run 40169128251 failed on main SHA `19044f6a238e3d00805813695f328f0540af5e8d` because POINT-0/014 lacked explicit links to IN-058, OUT-057, EVT-0167 and CURRENT-065. The links are now added; fresh audit on the exact resulting main SHA is still required.
 - Canonical live pointers observed in the repository: CURRENT-065 / NEXT-051. Earlier CURRENT-036 / NEXT-036 and NEXT-035 remain preserved historical checkpoints and are not overwritten.
 - Issue #20 runtime/cold-host recovery and Issue #21 historical source/rule census remain OPEN. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external end-to-end recovery NOT RUN.
@@ -3393,13 +3393,13 @@ New Point 0: [POINT-0/014](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-014
 
 ## CURRENT-066 — Open gaps and living-master recovery (2026-10-25)
 
-- New user root: [POINT-0/015](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-015-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md).
-- Interaction chain: [IN-059](../../0.0/anchors/PALANG-0.0-IN-20261025-059-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md) → [OUT-058](../../0.0/anchors/PALANG-0.0-OUT-20261025-058-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md) → [EVT-0174](../BEHAVIOR-TRACE/EVT-0174-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY-2026-10-25.md) → [CURRENT-066](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-066-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md).
-- Previous CURRENT-065 is preserved, not overwritten. [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md) remains the active work queue.
+- New user root: [POINT-0/015](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-015-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md).
+- Interaction chain: [IN-059](../../docs/0.0/anchors/PALANG-0.0-IN-20261025-059-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md) → [OUT-058](../../docs/0.0/anchors/PALANG-0.0-OUT-20261025-058-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md) → [EVT-0174](../../docs/architecture/BEHAVIOR-TRACE/EVT-0174-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY-2026-10-25.md) → [CURRENT-066](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-066-OPEN-GAPS-AND-LIVING-MASTER-RECOVERY.md).
+- Previous CURRENT-065 is preserved, not overwritten. [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md) remains the active work queue.
 - All runtime tests, current exact-byte manifest digests, clean export/import round trip, full IN/OUT reconstruction, unresolved graph collisions, independent-host import, second-host import, restart persistence, automatic capture, background execution and external storage remain OPEN until direct evidence is recorded.
 - Acceptance rule: file existence or CI success alone does not prove independent AI-host recovery or persistent runtime behavior. Each gate requires a current, exact-revision receipt and independent read-back.
 
-- [EVT-0175 — CURRENT-066 verifier stale-checkpoint failure](../BEHAVIOR-TRACE/EVT-0175-CURRENT-066-RECOVERY-VERIFIER-STALE-CHECKPOINT-2026-10-25.md): exact-run failure recorded; verifier was still hard-coded to CURRENT-065; corrected verifier and exact-SHA rerun required.
+- [EVT-0175 — CURRENT-066 verifier stale-checkpoint failure](../../docs/architecture/BEHAVIOR-TRACE/EVT-0175-CURRENT-066-RECOVERY-VERIFIER-STALE-CHECKPOINT-2026-10-25.md): exact-run failure recorded; verifier was still hard-coded to CURRENT-065; corrected verifier and exact-SHA rerun required.
 
 
 ## Current verification receipt — CURRENT-066
@@ -3422,7 +3422,7 @@ New Point 0: [POINT-0/014](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-014
 
 ## Living continuation update — POINT-0/016 / EVT-0176 (2026-10-25)
 
-The current user interaction is registered as [POINT-0/016](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-016-MIRROR-DELTA-AND-ARCHITECTURE-RECOVERY.md) and [EVT-0176](../BEHAVIOR-TRACE/EVT-0176-USER-POINT-0-016-MIRROR-DELTA-AND-ARCHITECTURE-RECOVERY-2026-10-25.md). Earlier 0.0 anchors remain preserved; NEXT-051 remains open and is not replaced by a new NEXT merely to imply progress.
+The current user interaction is registered as [POINT-0/016](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-016-MIRROR-DELTA-AND-ARCHITECTURE-RECOVERY.md) and [EVT-0176](../../docs/architecture/BEHAVIOR-TRACE/EVT-0176-USER-POINT-0-016-MIRROR-DELTA-AND-ARCHITECTURE-RECOVERY-2026-10-25.md). Earlier 0.0 anchors remain preserved; NEXT-051 remains open and is not replaced by a new NEXT merely to imply progress.
 
 The Library mirror differs from the canonical source only by one extra trailing newline (10,480 vs 10,479 characters; edit distance 1). Removing that extra newline from the Library copy is semantically safe for Markdown, but normalization is not complete until a supported write and independent read-back succeed. Never modify the canonical source to match the mirror.
 
@@ -3433,14 +3433,14 @@ Governance: UTC repository commit timestamp is canonical; Tehran is derived from
 
 ## Living continuation update — EVT-0177 (2026-10-25)
 
-The recurring mirror recheck is registered in [EVT-0177](../BEHAVIOR-TRACE/EVT-0177-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md), with commit time binding in [TIME-BINDING-EVT-0177](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0177-LIVE-MIRROR-SYNC-2026-10-25.md). The canonical source remains blob `de1b75f07241c9b313e476af5f1417177ff78c10`, 10,479 characters; Library version 7 remains 10,480 characters, with exactly one extra trailing newline (edit distance 1). Stable/Test IDs, version, BOART next-action chain, destination status fields and remaining content match. Under the recurring no-redundant-write rule, no Library write was performed. No byte-for-byte identity is claimed.
+The recurring mirror recheck is registered in [EVT-0177](../../docs/architecture/BEHAVIOR-TRACE/EVT-0177-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md), with commit time binding in [TIME-BINDING-EVT-0177](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0177-LIVE-MIRROR-SYNC-2026-10-25.md). The canonical source remains blob `de1b75f07241c9b313e476af5f1417177ff78c10`, 10,479 characters; Library version 7 remains 10,480 characters, with exactly one extra trailing newline (edit distance 1). Stable/Test IDs, version, BOART next-action chain, destination status fields and remaining content match. Under the recurring no-redundant-write rule, no Library write was performed. No byte-for-byte identity is claimed.
 
 The current user-turn anchor POINT-0/016 remains preserved. The 0.0 execution continuation is CURRENT-065 / NEXT-051; the earlier CURRENT-064 → NEXT-051 note is a historical prior entry, not a competing current pointer. Issues #20 and #21 remain OPEN. The latest inspected Living Architecture Audit failed on an older SHA; Evidence Gate run 40172117603 succeeded on a different SHA and is not proof that the current main HEAD passed the architecture audit. Exact-current-main audit remains NOT VERIFIED. Buffer/Persistent Memory remain NOT VERIFIED; Dropbox remains OPEN / NOT VERIFIED; external end-to-end recovery remains NOT RUN.
 
 
 ## Living continuation — POINT-0/017 / EVT-0178: unified Palang hard audit
 
-The user explicitly confirmed that newer architecture work must remain inside the original Future AI / Palang Footprint project, not become a separate parallel project. The new user-turn point is [POINT-0/017](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-017-UNIFIED-PALANG-ARCHITECTURE-HARD-AUDIT.md), with event [EVT-0178](../BEHAVIOR-TRACE/EVT-0178-UNIFIED-PALANG-ARCHITECTURE-HARD-AUDIT-2026-10-25.md). Prior points remain immutable and linked.
+The user explicitly confirmed that newer architecture work must remain inside the original Future AI / Palang Footprint project, not become a separate parallel project. The new user-turn point is [POINT-0/017](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-017-UNIFIED-PALANG-ARCHITECTURE-HARD-AUDIT.md), with event [EVT-0178](../../docs/architecture/BEHAVIOR-TRACE/EVT-0178-UNIFIED-PALANG-ARCHITECTURE-HARD-AUDIT-2026-10-25.md). Prior points remain immutable and linked.
 
 ### Hard-audit findings (not yet all remediated)
 1. Pointer conflict: registry and EVT-0177 mention CURRENT-065 as current while CURRENT-066 self-identifies as the newer checkpoint and points to NEXT-051. Reconcile current-pointer surfaces from source-backed evidence; do not guess or erase history.
@@ -3459,12 +3459,12 @@ Continue existing NEXT-051; do not mint a placeholder NEXT-052. Preserve all his
 
 ## Collision-safe continuation — EVT-0179 (2026-10-25)
 
-The current user-turn root is [POINT-0/017](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-017-UNIFIED-PALANG-ARCHITECTURE-HARD-AUDIT.md) and its canonical hard-audit event is [EVT-0178](../BEHAVIOR-TRACE/EVT-0178-UNIFIED-PALANG-ARCHITECTURE-HARD-AUDIT-2026-10-25.md). A separate pointer-reconciliation draft accidentally reused the EVT-0178 number; it is preserved but quarantined at [the collision artifact](../BEHAVIOR-TRACE/EVT-0178-CURRENT-066-POINTER-RECONCILIATION-2026-10-25.md). [EVT-0179](../BEHAVIOR-TRACE/EVT-0179-UNIQUE-ID-COLLISION-AND-POINTER-RECONCILIATION-2026-10-25.md) records this correction. Do not promote CURRENT-065 or CURRENT-066 from the draft; the pointer conflict remains OPEN for the unified hard audit. NEXT-051 remains active; no NEXT-052 is created.
+The current user-turn root is [POINT-0/017](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-017-UNIFIED-PALANG-ARCHITECTURE-HARD-AUDIT.md) and its canonical hard-audit event is [EVT-0178](../../docs/architecture/BEHAVIOR-TRACE/EVT-0178-UNIFIED-PALANG-ARCHITECTURE-HARD-AUDIT-2026-10-25.md). A separate pointer-reconciliation draft accidentally reused the EVT-0178 number; it is preserved but quarantined at [the collision artifact](../../docs/architecture/BEHAVIOR-TRACE/EVT-0178-CURRENT-066-POINTER-RECONCILIATION-2026-10-25.md). [EVT-0179](../../docs/architecture/BEHAVIOR-TRACE/EVT-0179-UNIQUE-ID-COLLISION-AND-POINTER-RECONCILIATION-2026-10-25.md) records this correction. Do not promote CURRENT-065 or CURRENT-066 from the draft; the pointer conflict remains OPEN for the unified hard audit. NEXT-051 remains active; no NEXT-052 is created.
 
 
 ## Living continuation — POINT-0/018 / EVT-0180
 
-The newest user-turn root is [POINT-0/018](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-018-LIVING-REGISTRATION-AND-NEXT-STEPS.md), with event [EVT-0180](../BEHAVIOR-TRACE/EVT-0180-USER-POINT-0-018-LIVING-REGISTRATION-AND-NEXT-STEPS-2026-10-25.md); POINT-0/018 commit: [9b459710]( https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/9b459710a1a757b8f9ccacc6bfdc9c6618e80f90 ) UTC 2026-10-25T07:37:13Z → Tehran 2026-10-25T11:07:13+03:30; EVT-0180 commit: [a2dc3dcf]( https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/a2dc3dcfa3d68f75579efec66c29c1942e447f99 ) UTC 2026-10-25T07:37:15Z → Tehran 2026-10-25T11:07:15+03:30. This supersedes POINT-0/017 only as the most recent user-turn root; it does not overwrite or replace any historical anchor or resolve the separate execution checkpoint conflict.
+The newest user-turn root is [POINT-0/018](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-018-LIVING-REGISTRATION-AND-NEXT-STEPS.md), with event [EVT-0180](../../docs/architecture/BEHAVIOR-TRACE/EVT-0180-USER-POINT-0-018-LIVING-REGISTRATION-AND-NEXT-STEPS-2026-10-25.md); POINT-0/018 commit: [9b459710]( https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/9b459710a1a757b8f9ccacc6bfdc9c6618e80f90 ) UTC 2026-10-25T07:37:13Z → Tehran 2026-10-25T11:07:13+03:30; EVT-0180 commit: [a2dc3dcf]( https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/commit/a2dc3dcfa3d68f75579efec66c29c1942e447f99 ) UTC 2026-10-25T07:37:15Z → Tehran 2026-10-25T11:07:15+03:30. This supersedes POINT-0/017 only as the most recent user-turn root; it does not overwrite or replace any historical anchor or resolve the separate execution checkpoint conflict.
 
 ### Registered 0.0 continuation plan
 1. Reconcile CURRENT-065 versus CURRENT-066 from authoritative commit lineage, IN/OUT anchors, overlay manifest semantics, canonical registry declarations and exact tested-SHA receipts; keep the conflict OPEN until the source-backed decision is justified.
@@ -3479,7 +3479,7 @@ This is one continuing Future AI / Palang Footprint project, not a detached para
 
 ## Living continuation — POINT-0/019 / EVT-0181: build capabilities, not only documents
 
-The newest user-turn root is [POINT-0/019](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-019-MODEL-CAPABILITY-BUILD.md), event [EVT-0181](../BEHAVIOR-TRACE/EVT-0181-POINT-0-019-MODEL-CAPABILITY-BUILD-2026-10-25.md). This point advances the existing model toward testable product capabilities inside the original Future AI / Palang Footprint repository. It does not replace the current execution checkpoint and does not create a parallel project.
+The newest user-turn root is [POINT-0/019](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-019-MODEL-CAPABILITY-BUILD.md), event [EVT-0181](../../docs/architecture/BEHAVIOR-TRACE/EVT-0181-POINT-0-019-MODEL-CAPABILITY-BUILD-2026-10-25.md). This point advances the existing model toward testable product capabilities inside the original Future AI / Palang Footprint repository. It does not replace the current execution checkpoint and does not create a parallel project.
 
 ### First executable increment — live pointer discovery
 - New checker: `scripts/behavior-hunter/discover_current_0_0_pointer.py`.
@@ -3507,7 +3507,7 @@ CURRENT-065/CURRENT-066 adjudication; exact-current-main workflow receipt; full 
 
 
 ### Repository time evidence — POINT-0/019
-Actual final point-file commit: UTC `2026-10-25T07:56:47Z` → Asia/Tehran `2026-10-25T11:26:47+03:30`; EVT-0181 creation commit: UTC `2026-10-25T07:53:42Z` → Asia/Tehran `2026-10-25T11:23:42+03:30`. Full commit-bound evidence: [TIME-BINDING-EVT-0181](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0181-POINT-0-019-2026-10-25.md). These are repository commit times, not exact user-message times or proof of runtime execution.
+Actual final point-file commit: UTC `2026-10-25T07:56:47Z` → Asia/Tehran `2026-10-25T11:26:47+03:30`; EVT-0181 creation commit: UTC `2026-10-25T07:53:42Z` → Asia/Tehran `2026-10-25T11:23:42+03:30`. Full commit-bound evidence: [TIME-BINDING-EVT-0181](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0181-POINT-0-019-2026-10-25.md). These are repository commit times, not exact user-message times or proof of runtime execution.
 
 
 ## POINT-0/020 — خطای اشاره‌گر جاری و مسیر اصلاح قابل‌بازیابی
@@ -3529,10 +3529,10 @@ Actual final point-file commit: UTC `2026-10-25T07:56:47Z` → Asia/Tehran `2026
 
 ## Living continuation — POINT-0/021 / EVT-0184 / CURRENT-068
 
-- User-designated root for this request: [POINT-0/021](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-021-INITIAL-MODEL-COMPLETION-GATE.md).
-- Event and root-cause record: [EVT-0184](../BEHAVIOR-TRACE/EVT-0184-INITIAL-MODEL-COMPLETION-GATE-2026-10-25.md).
-- Next executable checkpoint: [CURRENT-068](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-068-INITIAL-MODEL-COMPLETION-GATE.md).
-- Existing active queue: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md); no NEXT-052 was created.
+- User-designated root for this request: [POINT-0/021](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-021-INITIAL-MODEL-COMPLETION-GATE.md).
+- Event and root-cause record: [EVT-0184](../../docs/architecture/BEHAVIOR-TRACE/EVT-0184-INITIAL-MODEL-COMPLETION-GATE-2026-10-25.md).
+- Next executable checkpoint: [CURRENT-068](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-068-INITIAL-MODEL-COMPLETION-GATE.md).
+- Existing active queue: [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md); no NEXT-052 was created.
 
 ### Initial-model acceptance status
 
@@ -3557,10 +3557,10 @@ No statement in this addendum closes historical graph adjudication, independent-
 
 ## Living continuation — POINT-0/021 / EVT-0184 / CURRENT-068
 
-- User-designated root for this request: [POINT-0/021](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-021-INITIAL-MODEL-COMPLETION-GATE.md).
-- Event and root-cause record: [EVT-0184](../BEHAVIOR-TRACE/EVT-0184-INITIAL-MODEL-COMPLETION-GATE-2026-10-25.md).
-- Next executable checkpoint: [CURRENT-068](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-068-INITIAL-MODEL-COMPLETION-GATE.md).
-- Existing active queue: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md); no NEXT-052 was created.
+- User-designated root for this request: [POINT-0/021](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-021-INITIAL-MODEL-COMPLETION-GATE.md).
+- Event and root-cause record: [EVT-0184](../../docs/architecture/BEHAVIOR-TRACE/EVT-0184-INITIAL-MODEL-COMPLETION-GATE-2026-10-25.md).
+- Next executable checkpoint: [CURRENT-068](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-068-INITIAL-MODEL-COMPLETION-GATE.md).
+- Existing active queue: [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md); no NEXT-052 was created.
 
 ### Initial-model acceptance status
 
@@ -3599,10 +3599,10 @@ The CI Runtime A → Runtime B harness proves artifact transfer between isolated
 
 ## POINT-0/022 — executable GPT-6 portable starter
 
-The current user-designated root is [POINT-0/022](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-022-PORTABLE-STARTER-ENGINE.md); its input/output pair is [IN-052](../../0.0/anchors/PALANG-0.0-IN-20261025-052-PORTABLE-STARTER-ENGINE.md) / [OUT-052](../../0.0/anchors/PALANG-0.0-OUT-20261025-052-PORTABLE-STARTER-ENGINE.md), and its event is [EVT-0185](../BEHAVIOR-TRACE/EVT-0185-PORTABLE-HAIF-GPT6-STARTER-ENGINE-2026-10-25.md). The next execution checkpoint is [CURRENT-069](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-069-PORTABLE-STARTER-ENGINE-AND-GATE-CLOSURE.md).
+The current user-designated root is [POINT-0/022](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-022-PORTABLE-STARTER-ENGINE.md); its input/output pair is [IN-052](../../docs/0.0/anchors/PALANG-0.0-IN-20261025-052-PORTABLE-STARTER-ENGINE.md) / [OUT-052](../../docs/0.0/anchors/PALANG-0.0-OUT-20261025-052-PORTABLE-STARTER-ENGINE.md), and its event is [EVT-0185](../../docs/architecture/BEHAVIOR-TRACE/EVT-0185-PORTABLE-HAIF-GPT6-STARTER-ENGINE-2026-10-25.md). The next execution checkpoint is [CURRENT-069](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-069-PORTABLE-STARTER-ENGINE-AND-GATE-CLOSURE.md).
 
 ### Implemented starter package
-- [HAIF GPT-6 Portable Starter](../../../prototype/haif-gpt6-starter/README.md)
+- [HAIF GPT-6 Portable Starter](README.md)
 - Python runtime: local state, independent anchor/IN/OUT/event IDs, hash-linked records, evidence-gated gap closure, evidence-gated Master–Child promotion, portable export/import digest checks and atomic writes.
 - GPT host instruction contract, manifest, state schema and unit tests are included.
 - Living Architecture Audit runs the new test suite, validates the manifest/schema and packages a ZIP artifact with a SHA-256 sidecar.
@@ -3615,12 +3615,12 @@ CURRENT-068 remains historical evidence. CURRENT-069 owns the next executable ac
 
 ## Latest executable acceptance receipt — POINT-0/022 / CURRENT-069
 
-The portable starter is now executable code, not merely an architecture description: [package README](../../../prototype/haif-gpt6-starter/README.md), [engine](../../../prototype/haif-gpt6-starter/engine.py), [GPT-6 host instructions](../../../prototype/haif-gpt6-starter/GPT6_HOST_INSTRUCTIONS.md).
+The portable starter is now executable code, not merely an architecture description: [package README](README.md), [engine](engine.py), [GPT-6 host instructions](GPT6_HOST_INSTRUCTIONS.md).
 
 - Living Architecture Audit [40198462347](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40198462347) completed SUCCESS on tested SHA \`f482083cc2aeab82964c271c5d97ba4bb8657ce1\`.
 - Seven tests passed, including independent anchor/IN/OUT IDs, hash-chain tamper detection, evidence-gated gap closure, evidence-gated Child promotion, portable digest tamper detection, atomic local read-back and a clean-process CLI export/import recovery.
 - The workflow created \`haif-gpt6-starter-v0.1.zip\`; runner SHA-256 \`7372007564d94f02807c41291ea6e0976e8899c2d1c37306c5978b30fe1399df\`. Audit artifact ID \`12600674334\`, artifact digest \`sha256:aabb3b5bada3386804710a6566f5137fb8f435c1716bff854f6aff268ce611ef\`. Download from the Actions run's Artifacts section.
-- [CURRENT-069](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-069-PORTABLE-STARTER-ENGINE-AND-GATE-CLOSURE.md) is now the active execution checkpoint; CURRENT-068 is retained as history with locally evidenced sub-gates closed.
+- [CURRENT-069](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-069-PORTABLE-STARTER-ENGINE-AND-GATE-CLOSURE.md) is now the active execution checkpoint; CURRENT-068 is retained as history with locally evidenced sub-gates closed.
 - The stale manifest SHA mismatch seen in Portable RAHM Conformance run 40198220828 was reconciled and follow-up conformance plus audit runs 40198744680 and 40198744637 passed on tested SHA 99479872acaede69679b13273e37b9ca51f35ea5.
 
 ### Completion boundary
@@ -3657,10 +3657,10 @@ The artifact is available to the user as the clean starter ZIP in this conversat
 
 ## POINT-0/023 — چکش سخت موتور و اصلاح شناسه‌های تکراری
 
-- نقطهٔ جاری: [POINT-0/023](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-023-HARD-AUDIT-AND-ENGINE-HARDENING.md).
-- ورودی/خروجی: [IN-053](../../0.0/anchors/PALANG-0.0-IN-20261025-053-HARD-AUDIT-AND-ENGINE-HARDENING.md) / [OUT-053](../../0.0/anchors/PALANG-0.0-OUT-20261025-053-HARD-AUDIT-AND-ENGINE-HARDENING.md).
-- رویداد: [EVT-0186](../BEHAVIOR-TRACE/EVT-0186-HAIF-ENGINE-HARD-AUDIT-AND-ID-UNIQUENESS-2026-10-25.md)؛ زمان مرجع ثبت ریشه: [TIME-BINDING-EVT-0186](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0186-POINT-0-023-2026-10-25.md).
-- نقطهٔ اجرای فعال: [CURRENT-070](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-070-HARD-AUDIT-AND-HOST-EXECUTION.md). صف تاریخی موجود [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md) حفظ شده؛ NEXT-052 ساخته نشده.
+- نقطهٔ جاری: [POINT-0/023](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-023-HARD-AUDIT-AND-ENGINE-HARDENING.md).
+- ورودی/خروجی: [IN-053](../../docs/0.0/anchors/PALANG-0.0-IN-20261025-053-HARD-AUDIT-AND-ENGINE-HARDENING.md) / [OUT-053](../../docs/0.0/anchors/PALANG-0.0-OUT-20261025-053-HARD-AUDIT-AND-ENGINE-HARDENING.md).
+- رویداد: [EVT-0186](../../docs/architecture/BEHAVIOR-TRACE/EVT-0186-HAIF-ENGINE-HARD-AUDIT-AND-ID-UNIQUENESS-2026-10-25.md)؛ زمان مرجع ثبت ریشه: [TIME-BINDING-EVT-0186](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0186-POINT-0-023-2026-10-25.md).
+- نقطهٔ اجرای فعال: [CURRENT-070](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-070-HARD-AUDIT-AND-HOST-EXECUTION.md). صف تاریخی موجود [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md) حفظ شده؛ NEXT-052 ساخته نشده.
 - یافتهٔ ممیزی: اعتبارسنج موتور شناسه‌های تکراری IN و OUT را بین تعامل‌ها رد نمی‌کرد. اصلاح واقعی در `prototype/haif-gpt6-starter/engine.py` انجام شد و آزمون رگرسیون اضافه شد که حتی با محاسبهٔ مجدد hash، شناسه‌های تکراری را رد می‌کند.
 - شاهد دقیق: Living Architecture Audit [40206260132](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40206260132) روی commit `81afd4f181e87ba71c4d1acf8b89d4ee8432e1ca` با نتیجهٔ SUCCESS؛ 8/8 آزمون گذشتند و compile، اعتبارسنجی JSON و ساخت بسته نیز موفق شد.
 - بستهٔ تمیز و قابل توزیع، پس از استخراج در پوشهٔ تازه، دوباره آزموده شد: 8/8 PASS؛ SHA-256 برابر `d68e03b42e26b88385d1155c02d09b213a53366e27e99518c7c049f6ec6563be`.
@@ -3669,7 +3669,7 @@ The artifact is available to the user as the clean starter ZIP in this conversat
 
 ## EVT-0187 — اجرای واقعی بستهٔ تمیز در محیط Python
 
-- رسید اجرا: [EVT-0187](../BEHAVIOR-TRACE/EVT-0187-CLEAN-DISTRIBUTION-RUNTIME-SMOKE-2026-10-25.md).
+- رسید اجرا: [EVT-0187](../../docs/architecture/BEHAVIOR-TRACE/EVT-0187-CLEAN-DISTRIBUTION-RUNTIME-SMOKE-2026-10-25.md).
 - بستهٔ تمیز با SHA-256 `d68e03b42e26b88385d1155c02d09b213a53366e27e99518c7c049f6ec6563be` از حالت فشرده خارج شد و خود `engine.py` واقعاً اجرا شد.
 - زنجیرهٔ عملیاتی موفق: `init` → `record` → `audit` → `export` → `import` در فایل حالت دوم → `audit` مجدد. شناسهٔ حالت و head hash پس از import حفظ شدند؛ هر دو ممیزی PASS بودند.
 - شناسهٔ حالت آزمایشی: `HAIF-STATE-3809bda4d6504d6ba2236e4b32d71d5c`; سرآیند زنجیره: `d294c64ecd4c870c03c6512a6ac5aa5b9a2b099343c15c1aebef063bf439d2f5`; SHA-256 بستهٔ خروجی آزمایشی: `6f1824f1186d9fe2bb5bb88cdaff6aaa8dd66ab1eb0b8b3f9464ba3aa09bac01`.
@@ -3687,10 +3687,10 @@ The artifact is available to the user as the clean starter ZIP in this conversat
 
 ## POINT-0/024 / 0+ — نشان تولید مهم با همان هویت نقطهٔ ۰
 
-- نقطهٔ مرجع: [POINT-0/024 (0+)](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-024-0PLUS-PRODUCTION-MARKER.md).
-- ورودی/خروجی: [IN-054](../../0.0/anchors/PALANG-0.0-IN-20261025-054-0PLUS-PRODUCTION-MARKER.md) / [OUT-054](../../0.0/anchors/PALANG-0.0-OUT-20261025-054-0PLUS-PRODUCTION-MARKER.md).
-- رویداد و زمان: [EVT-0188](../BEHAVIOR-TRACE/EVT-0188-POINT-0PLUS-IDENTITY-AND-0-0-LINEAGE-2026-10-25.md) / [TIME-BINDING](../BEHAVIOR-TRACE/TIME-BINDING-POINT-0-024-EVT-0188-2026-10-25.md).
-- گام اجرایی بعدی: [CURRENT-071 / 0.0](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-071-0PLUS-ENGINE-AND-HARD-AUDIT.md). صف فعال قبلی NEXT-051 حفظ می‌شود.
+- نقطهٔ مرجع: [POINT-0/024 (0+)](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-024-0PLUS-PRODUCTION-MARKER.md).
+- ورودی/خروجی: [IN-054](../../docs/0.0/anchors/PALANG-0.0-IN-20261025-054-0PLUS-PRODUCTION-MARKER.md) / [OUT-054](../../docs/0.0/anchors/PALANG-0.0-OUT-20261025-054-0PLUS-PRODUCTION-MARKER.md).
+- رویداد و زمان: [EVT-0188](../../docs/architecture/BEHAVIOR-TRACE/EVT-0188-POINT-0PLUS-IDENTITY-AND-0-0-LINEAGE-2026-10-25.md) / [TIME-BINDING](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-POINT-0-024-EVT-0188-2026-10-25.md).
+- گام اجرایی بعدی: [CURRENT-071 / 0.0](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-071-0PLUS-ENGINE-AND-HARD-AUDIT.md). صف فعال قبلی NEXT-051 حفظ می‌شود.
 - قاعدهٔ معماری: `0` و `0+` دو هویت نیستند؛ `0+` نشان اهمیت تولید روی همان نقطه است. `0.0` ادامهٔ اجرایی مستقل و فرزند همان نقطه است.
 - در موتور قابل انتقال، `register_point` و فرمان `point` اضافه شد؛ موتور برخورد شناسه/برچسب، نشان `0+` جدا از `0`، و والد ناموجود برای ادامه را رد می‌کند. رویداد ثبت نقطه نیز باید با رکورد نقطه در state تطبیق داشته باشد؛ دست‌کاری رکورد بدون رویداد باید شکست بخورد.
 - چکش سخت نخست خطای واقعی `append_event(... kind=...)` را آشکار کرد؛ با تغییر فیلد به `point_kind` اصلاح شد. سپس آزمون‌های سخت‌تر برای دست‌کاری رکورد و والد خودارجاعی اضافه شد. نتیجهٔ آزمون روی آخرین commit باید از [Living Architecture Audit](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions) خوانده شود؛ تا آن زمان آخرین مرحله CI «در انتظار» است.
@@ -3699,25 +3699,25 @@ The artifact is available to the user as the clean starter ZIP in this conversat
 
 
 ## EVT-0189 — بستهٔ تمیز و اجرای واقعی موتور
-- شاهد بسته و آزمون: [EVT-0189](../BEHAVIOR-TRACE/EVT-0189-0PLUS-CLEAN-DISTRIBUTION-SMOKE-2026-10-25.md).
+- شاهد بسته و آزمون: [EVT-0189](../../docs/architecture/BEHAVIOR-TRACE/EVT-0189-0PLUS-CLEAN-DISTRIBUTION-SMOKE-2026-10-25.md).
 - نسخهٔ توزیع: v0.2.1؛ SHA-256 `51a5f9a6def97a0564a8b6542bbf4a5b9ca46a81a267a4a02db7c53511e16f2d`.
 - 12/12 آزمون در CI و 12/12 پس از استخراج تازه موفق؛ چرخهٔ CLI برای `0/0+`، `0.0`، ثبت تعامل، ممیزی، خروجی و بازیابی ورودی موفق شد.
 - مرز مهم: این اثبات، اجرای محلی/CI است؛ اجرای میزبان مستقل GPT-6 و ماندگاری بین نشست‌ها همچنان باز است.
 
 
 ## v0.3.0 — راه‌اندازی یک‌فرمانی مدل اولیه
-- رویداد اثبات: [EVT-0190](../BEHAVIOR-TRACE/EVT-0190-0PLUS-BOOTSTRAP-CLEAN-PACKAGE-2026-10-25.md)، زمان ثبت: [TIME-BINDING-EVT-0190](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0190-BOOTSTRAP-PACKAGE-2026-10-25.md).
+- رویداد اثبات: [EVT-0190](../../docs/architecture/BEHAVIOR-TRACE/EVT-0190-0PLUS-BOOTSTRAP-CLEAN-PACKAGE-2026-10-25.md)، زمان ثبت: [TIME-BINDING-EVT-0190](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0190-BOOTSTRAP-PACKAGE-2026-10-25.md).
 - بستهٔ قابل انتقال v0.3.0: SHA-256 `297b3b329143c4b99f55373db0c4bb97896b0e484253622e63eeb32a4429f164`; 13/13 آزمون در CI و استخراج تازه موفق.
 - فرمان `bootstrap_0plus.py` یک ریشهٔ واحد با برچسب‌های `0` و `0+`، ادامهٔ فرزند `0.0` و شش شکاف باز برای قابلیت‌های میزبان می‌سازد؛ بازنویسی state موجود را رد می‌کند.
 - ممیزی، خروجی/ورودی بسته و بازیابی پس از import در مسیر محلی موفق‌اند. اجرای میزبان مستقل GPT-6 هنوز اثبات نشده و گام فعال بعدی است.
 
 ## 2026-10-26 — POINT-0/025: excavation accepted, dual path preserved
 
-- New user root: [POINT-0/025](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-025-EXCAVATION-FINDINGS-DUAL-PATH.md).
-- IN/OUT: [IN-061](../../0.0/anchors/PALANG-0.0-IN-20261026-061-EXCAVATION-FINDINGS-DUAL-PATH.md) / [OUT-060](../../0.0/anchors/PALANG-0.0-OUT-20261026-060-EXCAVATION-FINDINGS-DUAL-PATH.md).
-- Event/time: [EVT-0191](../BEHAVIOR-TRACE/EVT-0191-EXCAVATION-FINDINGS-DUAL-PATH-2026-10-26.md) / [root commit time binding](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0191-POINT-0-025-2026-10-26.md).
-- Current execution: [CURRENT-072](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-072-DUAL-PATH-EXCAVATION.md).
-- Existing graph queue: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- New user root: [POINT-0/025](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-025-EXCAVATION-FINDINGS-DUAL-PATH.md).
+- IN/OUT: [IN-061](../../docs/0.0/anchors/PALANG-0.0-IN-20261026-061-EXCAVATION-FINDINGS-DUAL-PATH.md) / [OUT-060](../../docs/0.0/anchors/PALANG-0.0-OUT-20261026-060-EXCAVATION-FINDINGS-DUAL-PATH.md).
+- Event/time: [EVT-0191](../../docs/architecture/BEHAVIOR-TRACE/EVT-0191-EXCAVATION-FINDINGS-DUAL-PATH-2026-10-26.md) / [root commit time binding](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0191-POINT-0-025-2026-10-26.md).
+- Current execution: [CURRENT-072](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261026-072-DUAL-PATH-EXCAVATION.md).
+- Existing graph queue: [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 
 ### Mandatory dual-path rule
 Path A constructs and tests the portable initial model; Path B remediates the existing architecture and graph. They share anchors, events, evidence, current checkpoint, reference index and queue, but retain distinct gates. Neither path can be substituted for the other. NEXT-051 remains active; no NEXT-052 is created just to renumber open work.
@@ -3735,7 +3735,7 @@ The local v0.3.0 package has prior CI and fresh-extraction evidence (13/13 tests
 - Living Architecture Audit [40266946882](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40266946882) completed SUCCESS on tested SHA 69f85d383f95947447fc995ca19422c650622470. Structural checks PASS; graph content remains REVIEW_REQUIRED. Audit artifact ID 12626771386, digest sha256:e4171065b3076bb0ea43ff3f108c1bc8413d34888c7cfb21035f630fc639d315.
 - Portable RAHM Conformance [40266946878](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40266946878) completed SUCCESS on the same SHA. Exact-byte and live-reference SHA-256 scans PASS; package contains 119 files and 77 live references; package SHA-256 93b8613af307b6d123505255aaa14822ddf673cef5d33bc3f3ae590f68f4807f.
 - Pointer discovery 0.2 reports SCOPED_CONSISTENT: CURRENT-066 is the bounded overlay-recovery pointer; CURRENT-072 is the global project continuation. No winner was selected by numeric order; historical records remain preserved.
-- Latest graph findings remain open: 63 Stable-ID groups (62 unreviewed), 89 Production-ID groups, 7 Reference-ID groups, 38 event-number groups, 13 ambiguous parent edges and 11 exact-content duplicate groups; 0 missing local links in 6,755 scanned local-link edges. See the updated [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Latest graph findings remain open: 63 Stable-ID groups (62 unreviewed), 89 Production-ID groups, 7 Reference-ID groups, 38 event-number groups, 13 ambiguous parent edges and 11 exact-content duplicate groups; 0 missing local links in 6,755 scanned local-link edges. See the updated [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - Independent GPT-host import, real host persistence/restart, automatic capture, background execution and external writes remain OPEN / NOT VERIFIED. These repository CI passes do not prove deployment inside a separate GPT host.
 
 ## Latest post-ID-collision exact-head receipt — 2026-10-26
@@ -3751,11 +3751,11 @@ The local v0.3.0 package has prior CI and fresh-extraction evidence (13/13 tests
 
 ## آخرین اتصال اجرایی — POINT-0/026 و دو مسیر A/B
 
-- نقطهٔ ریشه: [POINT-0/026](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-026-DUAL-PATH-HAIF-CONTINUATION.md)
-- ورودی/خروجی: [IN-062](../../0.0/anchors/PALANG-0.0-IN-20261026-062-DUAL-PATH-HAIF-CONTINUATION.md) / [OUT-061](../../0.0/anchors/PALANG-0.0-OUT-20261026-061-DUAL-PATH-HAIF-CONTINUATION.md)
-- رویداد: [EVT-0192](../BEHAVIOR-TRACE/EVT-0192-USER-REQUEST-POINT-0-DUAL-PATH-HAIF-CONTINUATION-2026-10-26.md)
-- نقطهٔ ادامهٔ اجرایی: [CURRENT-073](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-073-DUAL-PATH-HAIF-CONTINUATION.md)
-- صف فعال: [NEXT-051](../INTEGRATION-QUEUE/README.md)
+- نقطهٔ ریشه: [POINT-0/026](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-026-DUAL-PATH-HAIF-CONTINUATION.md)
+- ورودی/خروجی: [IN-062](../../docs/0.0/anchors/PALANG-0.0-IN-20261026-062-DUAL-PATH-HAIF-CONTINUATION.md) / [OUT-061](../../docs/0.0/anchors/PALANG-0.0-OUT-20261026-061-DUAL-PATH-HAIF-CONTINUATION.md)
+- رویداد: [EVT-0192](../../docs/architecture/BEHAVIOR-TRACE/EVT-0192-USER-REQUEST-POINT-0-DUAL-PATH-HAIF-CONTINUATION-2026-10-26.md)
+- نقطهٔ ادامهٔ اجرایی: [CURRENT-073](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261026-073-DUAL-PATH-HAIF-CONTINUATION.md)
+- صف فعال: [NEXT-051](../../docs/architecture/INTEGRATION-QUEUE/README.md)
 
 ### مسیر A — ساخت مدل اولیهٔ قابل‌انتقال
 بستهٔ HAIF/RAHM، قراردادها و schema، بررسی ارجاع‌های زنده، استخراج تمیز، round-trip ورود/خروج، سپس آزمون در میزبان مستقل و بازیابی پس از شروع مجدد. آزمون میزبان مستقل تا فراهم‌شدن مسیر مجاز، NOT RUN است؛ آزمون محلی جای آن را نمی‌گیرد.
@@ -3770,17 +3770,17 @@ Master تغییر را فقط پس از اعتبارسنجی و پذیرش مس�
 
 ## POINT-0/027 — تکمیل معماری مسیر B
 
-- [نقطهٔ ریشهٔ ۰/۰۲۷](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-027-PATH-B-GAP-RECONCILIATION.md)
-- [نقطهٔ اجرایی CURRENT-074](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-074-PATH-B-GAP-RECONCILIATION.md)
-- [رویداد EVT-0193](../BEHAVIOR-TRACE/EVT-0193-POINT-0-PATH-B-GAP-RECONCILIATION-2026-10-26.md)
+- [نقطهٔ ریشهٔ ۰/۰۲۷](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-027-PATH-B-GAP-RECONCILIATION.md)
+- [نقطهٔ اجرایی CURRENT-074](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261026-074-PATH-B-GAP-RECONCILIATION.md)
+- [رویداد EVT-0193](../../docs/architecture/BEHAVIOR-TRACE/EVT-0193-POINT-0-PATH-B-GAP-RECONCILIATION-2026-10-26.md)
 
 قاعدهٔ معماری: شناسهٔ تکراری به‌تنهایی تعارض معنایی نیست؛ SHA یکسان به‌تنهایی هم‌نقشی منطقی را ثابت نمی‌کند. هر مسیر باید نقش مستقل خود را حفظ کند. تصمیم‌های جزئیِ دارای SHA معتبر فقط مسیرهای پوشش‌داده‌شده را داوری می‌کنند؛ گروه تا پوشش کامل همهٔ اعضا باز می‌ماند. والد مبهم بدون شاهد انتخاب نمی‌شود، رویدادهای مستقل با شمارهٔ کوتاه مشترک ادغام نمی‌شوند، و هیچ فایل تاریخی برای پایین‌آوردن شمار برخوردها حذف نمی‌شود. مسیر A و B مستقل اما موازی‌اند.
 
 
 ## POINT-0/032 — Master–Rahm–Child bridge and initial-model validation (2026-10-26)
-- Root: [POINT-0/032](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-032-MASTER-RAHM-CHILD-INITIAL-MODEL-BRIDGE.md)
-- Chain: [IN-067](../../0.0/anchors/PALANG-0.0-IN-20261026-067-MASTER-RAHM-CHILD-BRIDGE.md) → [OUT-066](../../0.0/anchors/PALANG-0.0-OUT-20261026-066-MASTER-RAHM-CHILD-BRIDGE.md) → [EVT-0201](../BEHAVIOR-TRACE/EVT-0201-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION-2026-10-26.md) → [CURRENT-079](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-079-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION.md).
-- Contract: [Master–Rahm–Child cross-validation](../MASTER-RAHM-CHILD/MASTER-RAHM-CHILD-CROSS-VALIDATION-CONTRACT-2026-10-26.md).
+- Root: [POINT-0/032](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-032-MASTER-RAHM-CHILD-INITIAL-MODEL-BRIDGE.md)
+- Chain: [IN-067](../../docs/0.0/anchors/PALANG-0.0-IN-20261026-067-MASTER-RAHM-CHILD-BRIDGE.md) → [OUT-066](../../docs/0.0/anchors/PALANG-0.0-OUT-20261026-066-MASTER-RAHM-CHILD-BRIDGE.md) → [EVT-0201](../../docs/architecture/BEHAVIOR-TRACE/EVT-0201-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION-2026-10-26.md) → [CURRENT-079](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261026-079-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION.md).
+- Contract: [Master–Rahm–Child cross-validation](../../docs/architecture/MASTER-RAHM-CHILD/MASTER-RAHM-CHILD-CROSS-VALIDATION-CONTRACT-2026-10-26.md).
 - Role binding: original Future AI / Palang Footprint = MASTER; initial-model project = subordinate RAHM; tested but not yet approved output = CHILD CANDIDATE. Promotion requires explicit Master review.
 - Status: repository bridge registered; actual interactive-project test receipts, exact-final-SHA audit, portable digest reconciliation, clean-host import and external persistence remain OPEN / NOT RUN.
 - NEXT-051 remains the only active remediation queue; NEXT-052 is not created.
@@ -3789,8 +3789,8 @@ Master تغییر را فقط پس از اعتبارسنجی و پذیرش مس�
 
 ## POINT-0/032 — چرخهٔ حاکم MASTER / RAHM / CHILD و آزمون تعاملی
 
-- [نقطهٔ ریشهٔ کاربر](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-032-MASTER-RAHM-CHILD-INITIAL-MODEL-BRIDGE.md)
-- [IN-067](../../0.0/anchors/PALANG-0.0-IN-20261026-067-MASTER-RAHM-CHILD-BRIDGE.md) → [OUT-066](../../0.0/anchors/PALANG-0.0-OUT-20261026-066-MASTER-RAHM-CHILD-BRIDGE.md) → [EVT-0201](../BEHAVIOR-TRACE/EVT-0201-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION-2026-10-26.md) → [CURRENT-079](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-079-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION.md).
+- [نقطهٔ ریشهٔ کاربر](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-032-MASTER-RAHM-CHILD-INITIAL-MODEL-BRIDGE.md)
+- [IN-067](../../docs/0.0/anchors/PALANG-0.0-IN-20261026-067-MASTER-RAHM-CHILD-BRIDGE.md) → [OUT-066](../../docs/0.0/anchors/PALANG-0.0-OUT-20261026-066-MASTER-RAHM-CHILD-BRIDGE.md) → [EVT-0201](../../docs/architecture/BEHAVIOR-TRACE/EVT-0201-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION-2026-10-26.md) → [CURRENT-079](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261026-079-MASTER-RAHM-CHILD-BRIDGE-AND-INITIAL-MODEL-VALIDATION.md).
 
 ### نقش‌ها و دروازهٔ پذیرش
 - **MASTER / مستر:** پروژهٔ اصلی و مرجع قواعد پذیرفته‌شده، داده‌های رفتاری، تاریخچه، تبار، منشأ و شواهد. تغییر مستر باید افزایشی، قابل‌حسابرسی و دارای تصمیم پذیرش باشد.
@@ -3805,7 +3805,7 @@ Master تغییر را فقط پس از اعتبارسنجی و پذیرش مس�
 هیچ شکاف گراف تاریخی، برخورد شناسه، والد مبهم، منشأ ناقص یا مقصد بیرونی با این اتصال بسته نمی‌شود. درپوش‌ها COVERED / DEFERRED و برگشت‌پذیرند. صف فعال NEXT-051 باقی می‌ماند؛ NEXT-052 نساز.
 
 ### Runbook اجرایی برای آزمون در پروژهٔ تعاملی
-- [INTERACTIVE-PROJECT-VALIDATION-RUNBOOK](../MASTER-RAHM-CHILD/INTERACTIVE-PROJECT-VALIDATION-RUNBOOK.md) شامل متن آمادهٔ چسباندن در پروژهٔ RAHM، ده آزمون، قالب رسید و پروتکل بازگشت نتیجه به مستر است.
+- [INTERACTIVE-PROJECT-VALIDATION-RUNBOOK](../../docs/architecture/MASTER-RAHM-CHILD/INTERACTIVE-PROJECT-VALIDATION-RUNBOOK.md) شامل متن آمادهٔ چسباندن در پروژهٔ RAHM، ده آزمون، قالب رسید و پروتکل بازگشت نتیجه به مستر است.
 - این سند فقط روش آزمون را آماده می‌کند؛ اجرای واقعی در مقصد تعاملی تا دریافت رسید مستقیم NOT RUN / NOT VERIFIED است.
 
 ## مبنای نقش‌ها از خروجی مرجع پیشین — 2026-10-26
@@ -3827,36 +3827,36 @@ Master تغییر را فقط پس از اعتبارسنجی و پذیرش مس�
 موفقیت نوع اول، نوع دوم را ثابت نمی‌کند. تا وقتی رسید واقعی مقصد و تصمیم پذیرش مستر وجود ندارد، هیچ نامزدی CHILD پذیرفته‌شده اعلام نمی‌شود.
 
 ### Clarification received and bound to CURRENT-080
-The expanded user definition is recorded in [IN-068](../../0.0/anchors/PALANG-0.0-IN-20261026-068-MASTER-RAHM-CHILD-CLARIFICATION.md), [EVT-0202](../../architecture/BEHAVIOR-TRACE/EVT-0202-MASTER-RAHM-CHILD-CLARIFICATION-2026-10-26.md), and [CURRENT-080](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-080-MASTER-RAHM-CHILD-CLARIFICATION.md). Extend this existing package; do not create a parallel folder. Repository CI and independent interactive-host tests are separate proof lanes.
+The expanded user definition is recorded in [IN-068](../../docs/0.0/anchors/PALANG-0.0-IN-20261026-068-MASTER-RAHM-CHILD-CLARIFICATION.md), [EVT-0202](../../docs/architecture/BEHAVIOR-TRACE/EVT-0202-MASTER-RAHM-CHILD-CLARIFICATION-2026-10-26.md), and [CURRENT-080](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261026-080-MASTER-RAHM-CHILD-CLARIFICATION.md). Extend this existing package; do not create a parallel folder. Repository CI and independent interactive-host tests are separate proof lanes.
 
 
 ### POINT-0/033 — excavation continuation
-The latest continuation is [POINT-0/033](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-033-EXCAVATION-AND-MASTER-RAHM-CHILD-CONTINUATION.md) → [IN-069](../../0.0/anchors/PALANG-0.0-IN-20261026-069-EXCAVATION-AND-MASTER-RAHM-CHILD-CONTINUATION.md) → [OUT-068](../../0.0/anchors/PALANG-0.0-OUT-20261026-068-EXCAVATION-AND-MASTER-RAHM-CHILD-CONTINUATION.md) → [EVT-0203](../../architecture/BEHAVIOR-TRACE/EVT-0203-POINT-0-033-EXCAVATION-AND-MRCC-CONTINUATION-2026-10-26.md) → [CURRENT-081](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-081-EXCAVATION-AND-MASTER-RAHM-CHILD-CONTINUATION.md). See the [excavation register](../../architecture/BEHAVIOR-TRACE/EXCAVATION-REGISTER-2026-10-26-MASTER-RAHM-CHILD.md) for the preserved POINT-0/032 lineage ambiguity and reversible covers. No parallel RAHM folder is created.
+The latest continuation is [POINT-0/033](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-033-EXCAVATION-AND-MASTER-RAHM-CHILD-CONTINUATION.md) → [IN-069](../../docs/0.0/anchors/PALANG-0.0-IN-20261026-069-EXCAVATION-AND-MASTER-RAHM-CHILD-CONTINUATION.md) → [OUT-068](../../docs/0.0/anchors/PALANG-0.0-OUT-20261026-068-EXCAVATION-AND-MASTER-RAHM-CHILD-CONTINUATION.md) → [EVT-0203](../../docs/architecture/BEHAVIOR-TRACE/EVT-0203-POINT-0-033-EXCAVATION-AND-MRCC-CONTINUATION-2026-10-26.md) → [CURRENT-081](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261026-081-EXCAVATION-AND-MASTER-RAHM-CHILD-CONTINUATION.md). See the [excavation register](../../docs/architecture/BEHAVIOR-TRACE/EXCAVATION-REGISTER-2026-10-26-MASTER-RAHM-CHILD.md) for the preserved POINT-0/032 lineage ambiguity and reversible covers. No parallel RAHM folder is created.
 
 
 ### POINT-0/034 — اجرای تعاملی قابل راستی‌آزمایی
 
-ادامهٔ رسمی: [POINT-0/034](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-034-INTERACTIVE-RAHM-EXECUTION.md) → [IN-070](../../0.0/anchors/PALANG-0.0-IN-20261026-070-INTERACTIVE-RAHM-EXECUTION.md) → [OUT-069](../../0.0/anchors/PALANG-0.0-OUT-20261026-069-INTERACTIVE-RAHM-EXECUTION.md) → [EVT-0204](../../architecture/BEHAVIOR-TRACE/EVT-0204-POINT-0-034-INTERACTIVE-RAHM-EXECUTION-2026-10-26.md) → [CURRENT-082](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-082-INTERACTIVE-RAHM-EXECUTION.md).
+ادامهٔ رسمی: [POINT-0/034](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-034-INTERACTIVE-RAHM-EXECUTION.md) → [IN-070](../../docs/0.0/anchors/PALANG-0.0-IN-20261026-070-INTERACTIVE-RAHM-EXECUTION.md) → [OUT-069](../../docs/0.0/anchors/PALANG-0.0-OUT-20261026-069-INTERACTIVE-RAHM-EXECUTION.md) → [EVT-0204](../../docs/architecture/BEHAVIOR-TRACE/EVT-0204-POINT-0-034-INTERACTIVE-RAHM-EXECUTION-2026-10-26.md) → [CURRENT-082](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261026-082-INTERACTIVE-RAHM-EXECUTION.md).
 
-این ادامه به بستهٔ RAHM و نمونهٔ اجرایی موجود متصل است. متن آمادهٔ اجرا در [راهنمای آزمون پروژهٔ تعاملی](../../architecture/MASTER-RAHM-CHILD/INTERACTIVE-PROJECT-VALIDATION-RUNBOOK.md) اضافه شده است. مخزن می‌تواند بسته را آماده و آزمون‌های خودش را اجرا کند؛ اما واردسازی، بازیابی مستقل، restart و round-trip باید از خود پروژهٔ مقصد رسید داشته باشند. تا آن زمان CHILD تأییدشده نداریم. صف سراسری NEXT-051 است و NEXT-052 ساخته نمی‌شود.
+این ادامه به بستهٔ RAHM و نمونهٔ اجرایی موجود متصل است. متن آمادهٔ اجرا در [راهنمای آزمون پروژهٔ تعاملی](../../docs/architecture/MASTER-RAHM-CHILD/INTERACTIVE-PROJECT-VALIDATION-RUNBOOK.md) اضافه شده است. مخزن می‌تواند بسته را آماده و آزمون‌های خودش را اجرا کند؛ اما واردسازی، بازیابی مستقل، restart و round-trip باید از خود پروژهٔ مقصد رسید داشته باشند. تا آن زمان CHILD تأییدشده نداریم. صف سراسری NEXT-051 است و NEXT-052 ساخته نمی‌شود.
 
-- لنگر زمانی مخزن: [TIME-BINDING-POINT-0-034](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-POINT-0-034-EVT-0204-2026-10-26.md) — UTC مرجع اصلی؛ معادل تهران از همان لحظه محاسبه شده است.
+- لنگر زمانی مخزن: [TIME-BINDING-POINT-0-034](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-POINT-0-034-EVT-0204-2026-10-26.md) — UTC مرجع اصلی؛ معادل تهران از همان لحظه محاسبه شده است.
 
 ## POINT-0/035 — Evidence-governed graph repair and dual-path continuation
 
-- Root: [POINT-0/035](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-035-IDENTIFIER-AND-PARENT-GRAPH-REPAIR.md)
-- Current checkpoint: [CURRENT-083](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-083-IDENTIFIER-AND-PARENT-GRAPH-REPAIR.md)
-- Event: [EVT-0205](../BEHAVIOR-TRACE/EVT-0205-POINT-0-035-IDENTIFIER-AND-PARENT-GRAPH-REPAIR-2026-10-26.md)
+- Root: [POINT-0/035](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-035-IDENTIFIER-AND-PARENT-GRAPH-REPAIR.md)
+- Current checkpoint: [CURRENT-083](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261026-083-IDENTIFIER-AND-PARENT-GRAPH-REPAIR.md)
+- Event: [EVT-0205](../../docs/architecture/BEHAVIOR-TRACE/EVT-0205-POINT-0-035-IDENTIFIER-AND-PARENT-GRAPH-REPAIR-2026-10-26.md)
 - Governing rule: identifier definitions are extracted from a document's own metadata header; references inside body text remain occurrences, not declarations. Parent edges use source-specific evidence when available and fail closed when an override is invalid.
 - Path A remains the existing RAHM package and actual-host import/restart/round-trip validation. Path B is historical graph repair. Neither path substitutes for the other; MASTER remains final authority and CHILD promotion requires independent evidence and explicit acceptance.
 - Current graph gaps and interactive-host receipts remain OPEN until exact-head tests and destination evidence exist. Continue NEXT-051 only.
 
 
 ## آخرین ادامهٔ اجرایی — POINT-0/036 (نشانگر ۰+) / CURRENT-085 (2026-10-26)
-- نقطهٔ ریشه: [POINT-0/036](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-036-DEEP-EXCAVATION-INITIAL-MODEL-COMPLETION.md).
+- نقطهٔ ریشه: [POINT-0/036](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-036-DEEP-EXCAVATION-INITIAL-MODEL-COMPLETION.md).
 - ۰+ نشانگر تولید روی همان نقطهٔ مرجع POINT-0/036 است؛ نقطهٔ ریشهٔ موازی ایجاد نمی‌کند.
-- زنجیرهٔ تازه: [IN-073](../../0.0/anchors/PALANG-0.0-IN-20261026-073-0PLUS-MODEL-ACCELERATION.md) → [OUT-072](../../0.0/anchors/PALANG-0.0-OUT-20261026-072-0PLUS-MODEL-ACCELERATION.md) → [EVT-0207](../BEHAVIOR-TRACE/EVT-0207-POINT-0-036-0PLUS-MODEL-ACCELERATION-2026-10-26.md) → [CURRENT-085](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-085-0PLUS-MODEL-ACCELERATION.md).
-- صف ادامهٔ واحد: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). صف موازی NEXT-052 ساخته نمی‌شود.
+- زنجیرهٔ تازه: [IN-073](../../docs/0.0/anchors/PALANG-0.0-IN-20261026-073-0PLUS-MODEL-ACCELERATION.md) → [OUT-072](../../docs/0.0/anchors/PALANG-0.0-OUT-20261026-072-0PLUS-MODEL-ACCELERATION.md) → [EVT-0207](../../docs/architecture/BEHAVIOR-TRACE/EVT-0207-POINT-0-036-0PLUS-MODEL-ACCELERATION-2026-10-26.md) → [CURRENT-085](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261026-085-0PLUS-MODEL-ACCELERATION.md).
+- صف ادامهٔ واحد: [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). صف موازی NEXT-052 ساخته نمی‌شود.
 - مسیر A: تکمیل مدل اولیهٔ اجرایی، بستهٔ قابل‌حمل، آزمون تمامیت، ورود/خروج، بازیابی و سپس پذیرش میزبان مستقل.
 - مسیر B: خاک‌برداری تاریخچه، جداسازی تعریف شناسه از ارجاع، حل رابطهٔ والد با شواهد مسیر مبدأ، اصلاح پیوندهای خراب و داوری برخوردهای هویتی.
 - قاعدهٔ معماری: MASTER مرجع نهایی است؛ RAHM محیط/بستهٔ اعتبارسنجی است؛ CHILD فقط پس از شواهد مستقل و پذیرش صریح ارتقا می‌یابد. موفقیت CI مخزن به‌تنهایی آزمون میزبان مستقل نیست.
@@ -3891,7 +3891,7 @@ The latest continuation is [POINT-0/033](../../0.0/anchors/GPT6-RAHM-USER-POINT-
 
 ## Gap-cover برای والد تاریخی گمشده — حفظ زنجیره بدون جعل هویت
 
-- [Recovery Bridge](../../reference/REFERENCE-DOCUMENTS/HAIF-CORE-MASTER-CHILD-RAHM-RECOVERY-BRIDGE-2026-10-26-001.md) مسیر بازیابی قابل‌ردیابی برای شناسهٔ تاریخی `HAIF-CORE-MASTER-CHILD-RAHM-2026-09-15-001` است.
+- [Recovery Bridge](../../docs/reference/REFERENCE-DOCUMENTS/HAIF-CORE-MASTER-CHILD-RAHM-RECOVERY-BRIDGE-2026-10-26-001.md) مسیر بازیابی قابل‌ردیابی برای شناسهٔ تاریخی `HAIF-CORE-MASTER-CHILD-RAHM-2026-09-15-001` است.
 - این پل، سند اصلی گمشده نیست و به‌عنوان والد اصلی معرفی نمی‌شود. دو رابطهٔ والد در گراف همچنان UNRESOLVED می‌مانند تا متن مستقل اصلی یا شاهد معتبر تاریخچه پیدا شود.
 - این تصمیم اجازه می‌دهد مسیر A و توسعهٔ مدل ادامه یابد، بی‌آنکه شکاف تاریخی به‌اشتباه بسته یا هویت سند جعل شود.
 - ممیزی معماری زنده و انطباق بستهٔ RAHM روی یک سر مشترک `127cfd03095a881ae2aa9a625e0fe923644e9795` هر دو PASS: [Audit 40355174264](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40355174264) و [Conformance 40355174175](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40355174175).
@@ -3901,7 +3901,7 @@ The latest continuation is [POINT-0/033](../../0.0/anchors/GPT6-RAHM-USER-POINT-
 
 
 ## Latest host-readiness continuation — 2026-10-26
-- Root: [POINT-0/037](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-037-PORTABLE-HOST-READINESS-AND-REPOSITORY-STATE.md); chain [IN-074](../../0.0/anchors/PALANG-0.0-IN-20261026-074-PORTABLE-HOST-READINESS.md) → [OUT-073](../../0.0/anchors/PALANG-0.0-OUT-20261026-073-PORTABLE-HOST-READINESS.md) → [EVT-0208](../BEHAVIOR-TRACE/EVT-0208-POINT-0-037-PORTABLE-HOST-READINESS-2026-10-26.md) → [CURRENT-086](../../0.0/anchors/PALANG-0.0-CURRENT-20261026-086-PORTABLE-HOST-READINESS.md).
+- Root: [POINT-0/037](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261026-037-PORTABLE-HOST-READINESS-AND-REPOSITORY-STATE.md); chain [IN-074](../../docs/0.0/anchors/PALANG-0.0-IN-20261026-074-PORTABLE-HOST-READINESS.md) → [OUT-073](../../docs/0.0/anchors/PALANG-0.0-OUT-20261026-073-PORTABLE-HOST-READINESS.md) → [EVT-0208](../../docs/architecture/BEHAVIOR-TRACE/EVT-0208-POINT-0-037-PORTABLE-HOST-READINESS-2026-10-26.md) → [CURRENT-086](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261026-086-PORTABLE-HOST-READINESS.md).
 - Package conformance and exact-byte/live-reference scans passed on tested SHA `62f8007deefbfbdb0fbe4156074f069f070fc7f2`; package has 178 files, 639,095 bytes, SHA-256 `0864ff217585d03ffb649ca1f5c1a4b5404d6fa5bc7166be4c1e4c803d4b330f`. Download via [Actions artifact](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40355991343/artifacts/12663829740).
 - Bounded independent CI transfer Runtime A→B passed; this does not substitute for the user's actual interactive host. Import/restart/persistence/round-trip remain NOT RUN until destination receipts are returned.
 - Graph on tested SHA: 0 missing local links, 0 ambiguous parent edges, 2 unresolved parent edges, 1 open Stable-ID group, 66 unreviewed Production-ID groups, 5 Reference-ID groups, 41 event-number collision groups and 11 exact-content duplicate groups. Keep them open unless source evidence closes them.
@@ -3910,8 +3910,8 @@ The latest continuation is [POINT-0/033](../../0.0/anchors/GPT6-RAHM-USER-POINT-
 
 ## Latest living continuation — POINT-0/038 / CURRENT-087 (2026-10-27)
 
-- Root: [POINT-0/038](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-038-TEMPORARY-GAP-COVER-AND-GOAL-EXECUTION.md).
-- Chain: [IN-075](../../0.0/anchors/PALANG-0.0-IN-20261027-075-TEMPORARY-GAP-COVER.md) → [OUT-074](../../0.0/anchors/PALANG-0.0-OUT-20261027-074-GOAL-EXECUTION.md) → [EVT-0209](../BEHAVIOR-TRACE/EVT-0209-TEMPORARY-GAP-COVER-AND-GOAL-EXECUTION-2026-10-27.md) → [CURRENT-087](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-087-GOAL-EXECUTION-WITH-TEMPORARY-COVER.md).
+- Root: [POINT-0/038](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-038-TEMPORARY-GAP-COVER-AND-GOAL-EXECUTION.md).
+- Chain: [IN-075](../../docs/0.0/anchors/PALANG-0.0-IN-20261027-075-TEMPORARY-GAP-COVER.md) → [OUT-074](../../docs/0.0/anchors/PALANG-0.0-OUT-20261027-074-GOAL-EXECUTION.md) → [EVT-0209](../../docs/architecture/BEHAVIOR-TRACE/EVT-0209-TEMPORARY-GAP-COVER-AND-GOAL-EXECUTION-2026-10-27.md) → [CURRENT-087](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-087-GOAL-EXECUTION-WITH-TEMPORARY-COVER.md).
 - Governance decision: temporarily cover safe gaps reversibly so implementation toward the primary HAIF goal is not blocked. The covered issues retain their original OPEN / UNRESOLVED status until evidence justifies closure.
 - Path A continues toward real-host import, cold-start reconstruction, restart/recovery, persistence and round-trip. Package/CI evidence is not substituted for direct host receipts.
 - Path B continues historical graph recovery under the existing Recovery Bridge and NEXT-051; no speculative identity merge or invented historical parent.
@@ -3919,21 +3919,21 @@ The latest continuation is [POINT-0/033](../../0.0/anchors/GPT6-RAHM-USER-POINT-
 
 
 ### لنگرهای زمانی مرجع POINT-0/038
-- [POINT-0/038](../BEHAVIOR-TRACE/TIME-BINDING-POINT-0-038-2026-10-27.md): UTC 2026-10-27T04:11:51Z؛ تهران 07:41:51 +03:30.
-- [IN-075](../BEHAVIOR-TRACE/TIME-BINDING-IN-075-POINT-0-038-2026-10-27.md): UTC 2026-10-27T04:11:55Z؛ تهران 07:41:55 +03:30.
-- [OUT-074](../BEHAVIOR-TRACE/TIME-BINDING-OUT-074-POINT-0-038-2026-10-27.md): UTC 2026-10-27T04:11:59Z؛ تهران 07:41:59 +03:30.
-- [EVT-0209](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0209-POINT-0-038-2026-10-27.md): UTC 2026-10-27T04:12:03Z؛ تهران 07:42:03 +03:30.
-- [CURRENT-087](../BEHAVIOR-TRACE/TIME-BINDING-CURRENT-087-POINT-0-038-2026-10-27.md): UTC 2026-10-27T04:19:28Z؛ تهران 07:49:28 +03:30.
+- [POINT-0/038](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-POINT-0-038-2026-10-27.md): UTC 2026-10-27T04:11:51Z؛ تهران 07:41:51 +03:30.
+- [IN-075](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-IN-075-POINT-0-038-2026-10-27.md): UTC 2026-10-27T04:11:55Z؛ تهران 07:41:55 +03:30.
+- [OUT-074](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-OUT-074-POINT-0-038-2026-10-27.md): UTC 2026-10-27T04:11:59Z؛ تهران 07:41:59 +03:30.
+- [EVT-0209](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0209-POINT-0-038-2026-10-27.md): UTC 2026-10-27T04:12:03Z؛ تهران 07:42:03 +03:30.
+- [CURRENT-087](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-CURRENT-087-POINT-0-038-2026-10-27.md): UTC 2026-10-27T04:19:28Z؛ تهران 07:49:28 +03:30.
 
 
 ### رسید تأیید اجرایی POINT-0/038 — EVT-0210
-- [EVT-0210](../BEHAVIOR-TRACE/EVT-0210-POINT-0-038-EXACT-SHA-VALIDATION-AND-MANIFEST-REPAIR-2026-10-27.md): ممیزی معماری و انطباق بسته روی SHA دقیق df89fd802bb3142611a719e0e22b2d5ad03a420f موفق شدند.
-- [لنگر زمانی EVT-0210](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0210-POINT-0-038-2026-10-27.md): UTC 2026-10-27T04:19:13Z؛ تهران 07:49:13 +03:30.
+- [EVT-0210](../../docs/architecture/BEHAVIOR-TRACE/EVT-0210-POINT-0-038-EXACT-SHA-VALIDATION-AND-MANIFEST-REPAIR-2026-10-27.md): ممیزی معماری و انطباق بسته روی SHA دقیق df89fd802bb3142611a719e0e22b2d5ad03a420f موفق شدند.
+- [لنگر زمانی EVT-0210](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0210-POINT-0-038-2026-10-27.md): UTC 2026-10-27T04:19:13Z؛ تهران 07:49:13 +03:30.
 - لنگر زمانی تازه‌شدهٔ CURRENT-087: UTC 2026-10-27T04:19:28Z؛ تهران 07:49:28 +03:30.
 
 ## Latest live mirror sync recheck — EVT-0211 (2026-10-27)
 
-- Event: [EVT-0211](../BEHAVIOR-TRACE/EVT-0211-LIVE-MIRROR-SYNC-RECHECK-2026-10-27.md); canonical time binding: [TIME-BINDING-EVT-0211](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0211-LIVE-MIRROR-SYNC-2026-10-27.md).
+- Event: [EVT-0211](../../docs/architecture/BEHAVIOR-TRACE/EVT-0211-LIVE-MIRROR-SYNC-RECHECK-2026-10-27.md); canonical time binding: [TIME-BINDING-EVT-0211](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0211-LIVE-MIRROR-SYNC-2026-10-27.md).
 - The canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10` is unchanged. Independent Library read-back of stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48` (version ID 7) is 10,480 characters vs 10,479 in source; the only difference is an additional trailing LF. Stable ID, Test ID, Version, BOART-FOLLOWUP-01 → 02 → 03 and destination states match. This is semantic match within tolerance, not byte-for-byte identity.
 - No Library overwrite was attempted because no supported source_file_ref/exported-snapshot upload route was available. Buffer and Persistent Memory remain NOT VERIFIED; Dropbox remains OPEN / NOT VERIFIED; independent interactive-host import/recovery remains NOT RUN.
 - At the start of this registration main was `9124fd841f357889bdc5c8604effb7cb368b56cc`; latest full audit and portable conformance passed on `77cb3b725d493cf92af6a95d4b7a00888fbdb7bc`, not on that newer head. Require the same full pair on the exact final main SHA after all writes and any Evidence Gate commit.
@@ -3942,8 +3942,8 @@ The latest continuation is [POINT-0/033](../../0.0/anchors/GPT6-RAHM-USER-POINT-
 
 ## Latest user-designated continuation — POINT-0/039 / CURRENT-088 — 2026-10-27
 
-- New root: [POINT-0/039](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-039-MIRROR-SYNC-AND-ARCHITECTURE-CONTINUATION.md).
-- Interaction chain: [IN-076](../../0.0/anchors/PALANG-0.0-IN-20261027-076-POINT-0-039-USER-INSTRUCTION.md) → [OUT-075](../../0.0/anchors/PALANG-0.0-OUT-20261027-075-POINT-0-039-REGISTRATION-AND-NEXT-STEPS.md) → [EVT-0212](../BEHAVIOR-TRACE/EVT-0212-POINT-0-039-REGISTRATION-AND-ARCHITECTURE-CONTINUATION-2026-10-27.md) → [CURRENT-088](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-088-POINT-0-039-EXECUTION.md).
+- New root: [POINT-0/039](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-039-MIRROR-SYNC-AND-ARCHITECTURE-CONTINUATION.md).
+- Interaction chain: [IN-076](../../docs/0.0/anchors/PALANG-0.0-IN-20261027-076-POINT-0-039-USER-INSTRUCTION.md) → [OUT-075](../../docs/0.0/anchors/PALANG-0.0-OUT-20261027-075-POINT-0-039-REGISTRATION-AND-NEXT-STEPS.md) → [EVT-0212](../../docs/architecture/BEHAVIOR-TRACE/EVT-0212-POINT-0-039-REGISTRATION-AND-ARCHITECTURE-CONTINUATION-2026-10-27.md) → [CURRENT-088](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-088-POINT-0-039-EXECUTION.md).
 - NEXT-051 remains the sole active queue; no NEXT-052 is created.
 - Preserve prior roots including POINT-0/016, /017 and /018; preserve EVT-0178/EVT-0179 collision lineage and the unresolved CURRENT-065/CURRENT-066 pointer conflict.
 - Next: rediscover current main and latest exact-SHA workflow receipts; reconcile portable manifest coverage using source-backed hashes; run Living Architecture Audit and Portable RAHM Conformance on the same final SHA.
@@ -3952,39 +3952,39 @@ The latest continuation is [POINT-0/033](../../0.0/anchors/GPT6-RAHM-USER-POINT-
 
 ## POINT-0/040 — Initial Model and New-Host Handoff — 2026-10-27
 
-- New root: [POINT-0/040](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-040-INITIAL-MODEL-NEW-HOST-HANDOFF.md).
-- Interaction chain: [IN-077](../../0.0/anchors/PALANG-0.0-IN-20261027-077-INITIAL-MODEL-NEW-HOST-HANDOFF.md) → [OUT-076](../../0.0/anchors/PALANG-0.0-OUT-20261027-076-INITIAL-MODEL-NEW-HOST-HANDOFF.md) → [EVT-0213](../BEHAVIOR-TRACE/EVT-0213-INITIAL-MODEL-NEW-HOST-HANDOFF-2026-10-27.md) → [CURRENT-089](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-089-INITIAL-MODEL-NEW-HOST-HANDOFF.md).
-- Standalone transfer instructions: [NEW-HOST-BOOTSTRAP-2026-10-27](./NEW-HOST-BOOTSTRAP-2026-10-27.md).
-- Existing executable engine remains [prototype/haif-gpt6-starter](../../../prototype/haif-gpt6-starter/README.md); no duplicate engine was created.
+- New root: [POINT-0/040](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-040-INITIAL-MODEL-NEW-HOST-HANDOFF.md).
+- Interaction chain: [IN-077](../../docs/0.0/anchors/PALANG-0.0-IN-20261027-077-INITIAL-MODEL-NEW-HOST-HANDOFF.md) → [OUT-076](../../docs/0.0/anchors/PALANG-0.0-OUT-20261027-076-INITIAL-MODEL-NEW-HOST-HANDOFF.md) → [EVT-0213](../../docs/architecture/BEHAVIOR-TRACE/EVT-0213-INITIAL-MODEL-NEW-HOST-HANDOFF-2026-10-27.md) → [CURRENT-089](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-089-INITIAL-MODEL-NEW-HOST-HANDOFF.md).
+- Standalone transfer instructions: [NEW-HOST-BOOTSTRAP-2026-10-27](../../docs/architecture/%D9%85%D8%AF%D9%84%20%D8%A7%D9%88%D9%84%DB%8C%D9%87%20AI/NEW-HOST-BOOTSTRAP-2026-10-27.md).
+- Existing executable engine remains [prototype/haif-gpt6-starter](README.md); no duplicate engine was created.
 - NEXT-051 remains the sole active queue; no NEXT-052. Preserve all previous points and unresolved CURRENT-065/CURRENT-066 lineage.
 - Host-transfer status: READY FOR CONTROLLED TRIAL, but real-host acceptance NOT RUN. New chain still requires export-manifest digest inclusion and exact-final-SHA paired audit/conformance. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED.
 
 
 ## پیوندهای تکمیلی انتقال میزبان — پیوست به POINT-0/040 و EVT-0214
 
-- ریشهٔ مرجع واحد: [POINT-0/040 Initial Model New-Host Handoff](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-040-INITIAL-MODEL-NEW-HOST-HANDOFF.md).
-- زنجیرهٔ مرجع: [IN-077](../../0.0/anchors/PALANG-0.0-IN-20261027-077-INITIAL-MODEL-NEW-HOST-HANDOFF.md) → [OUT-076](../../0.0/anchors/PALANG-0.0-OUT-20261027-076-INITIAL-MODEL-NEW-HOST-HANDOFF.md) → [EVT-0213](../BEHAVIOR-TRACE/EVT-0213-INITIAL-MODEL-NEW-HOST-HANDOFF-2026-10-27.md) → [CURRENT-089](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-089-INITIAL-MODEL-NEW-HOST-HANDOFF.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
-- دستور شروع مرجع میزبان: [NEW-HOST-BOOTSTRAP](./NEW-HOST-BOOTSTRAP-2026-10-27.md). موتور اجرایی موجود: [prototype/haif-gpt6-starter](../../../prototype/haif-gpt6-starter/README.md).
-- پیوست تکمیلی قرارداد انتقال و دستور کوتاه میزبان: [Transfer Bootstrap](../../portable/RAHM/INITIAL-MODEL-HOST-TRANSFER-BOOTSTRAP-2026-10-27.md) و [Host Prompt](../../portable/RAHM/HOST-BOOTSTRAP-PROMPT-2026-10-27.md). این‌ها جایگزین ریشهٔ مرجع نیستند.
-- برخورد شناسهٔ نسخهٔ موازی ثبت و مهار شد: [EVT-0214](../BEHAVIOR-TRACE/EVT-0214-POINT-040-DUPLICATE-ID-QUARANTINE-2026-10-27.md). فایل‌های موازی نگه‌داری شده و قرنطینه‌اند؛ ریشهٔ مرجع POINT-0/040 فقط همان سند New-Host Handoff است.
+- ریشهٔ مرجع واحد: [POINT-0/040 Initial Model New-Host Handoff](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-040-INITIAL-MODEL-NEW-HOST-HANDOFF.md).
+- زنجیرهٔ مرجع: [IN-077](../../docs/0.0/anchors/PALANG-0.0-IN-20261027-077-INITIAL-MODEL-NEW-HOST-HANDOFF.md) → [OUT-076](../../docs/0.0/anchors/PALANG-0.0-OUT-20261027-076-INITIAL-MODEL-NEW-HOST-HANDOFF.md) → [EVT-0213](../../docs/architecture/BEHAVIOR-TRACE/EVT-0213-INITIAL-MODEL-NEW-HOST-HANDOFF-2026-10-27.md) → [CURRENT-089](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-089-INITIAL-MODEL-NEW-HOST-HANDOFF.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- دستور شروع مرجع میزبان: [NEW-HOST-BOOTSTRAP](../../docs/architecture/%D9%85%D8%AF%D9%84%20%D8%A7%D9%88%D9%84%DB%8C%D9%87%20AI/NEW-HOST-BOOTSTRAP-2026-10-27.md). موتور اجرایی موجود: [prototype/haif-gpt6-starter](README.md).
+- پیوست تکمیلی قرارداد انتقال و دستور کوتاه میزبان: [Transfer Bootstrap](../../docs/portable/RAHM/INITIAL-MODEL-HOST-TRANSFER-BOOTSTRAP-2026-10-27.md) و [Host Prompt](../../docs/portable/RAHM/HOST-BOOTSTRAP-PROMPT-2026-10-27.md). این‌ها جایگزین ریشهٔ مرجع نیستند.
+- برخورد شناسهٔ نسخهٔ موازی ثبت و مهار شد: [EVT-0214](../../docs/architecture/BEHAVIOR-TRACE/EVT-0214-POINT-040-DUPLICATE-ID-QUARANTINE-2026-10-27.md). فایل‌های موازی نگه‌داری شده و قرنطینه‌اند؛ ریشهٔ مرجع POINT-0/040 فقط همان سند New-Host Handoff است.
 - NEXT-051 صف یگانه است؛ CURRENT-065/CURRENT-066 و Issue #20/#21 باز می‌مانند تا شواهد معتبر آن‌ها را ببندد. بسته‌سازی/CI به‌تنهایی واردسازی مستقل یا بازیابی سرد را ثابت نمی‌کند.
 
 
-- ریشهٔ جدید: [POINT-0/040](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-040-INITIAL-MODEL-TRANSFER-AND-ARCHITECTURE-HARD-AUDIT.md).
-- گام اجرایی: [CURRENT-089](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-089-INITIAL-MODEL-TRANSFER-EXECUTION.md).
-- قرارداد انتقال و بازیابی میزبان: [Initial Model Host Transfer Bootstrap](../../portable/RAHM/INITIAL-MODEL-HOST-TRANSFER-BOOTSTRAP-2026-10-27.md).
-- دستور شروع میزبان جدید: [HOST-BOOTSTRAP-PROMPT](../../portable/RAHM/HOST-BOOTSTRAP-PROMPT-2026-10-27.md).
-- رویداد: [EVT-0213](../BEHAVIOR-TRACE/EVT-0213-POINT-0-040-INITIAL-MODEL-TRANSFER-AND-HARD-AUDIT-2026-10-27.md).
+- ریشهٔ جدید: [POINT-0/040](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-040-INITIAL-MODEL-TRANSFER-AND-ARCHITECTURE-HARD-AUDIT.md).
+- گام اجرایی: [CURRENT-089](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-089-INITIAL-MODEL-TRANSFER-EXECUTION.md).
+- قرارداد انتقال و بازیابی میزبان: [Initial Model Host Transfer Bootstrap](../../docs/portable/RAHM/INITIAL-MODEL-HOST-TRANSFER-BOOTSTRAP-2026-10-27.md).
+- دستور شروع میزبان جدید: [HOST-BOOTSTRAP-PROMPT](../../docs/portable/RAHM/HOST-BOOTSTRAP-PROMPT-2026-10-27.md).
+- رویداد: [EVT-0213](../../docs/architecture/BEHAVIOR-TRACE/EVT-0213-POINT-0-040-INITIAL-MODEL-TRANSFER-AND-HARD-AUDIT-2026-10-27.md).
 - صف یگانهٔ اجرا: NEXT-051؛ NEXT-052 ساخته نشود.
 - هدف: انتقال مدل با قواعد مرجع، منشأ داده، گراف نقاط/رویدادها، وضعیت شکاف‌ها، آزمون واردسازی و بازیابی سرد؛ بستهٔ مستندات یا موفقیت CI به‌تنهایی اثبات میزبان مستقل نیست.
 - شکاف‌های باز: تعارض CURRENT-065/CURRENT-066؛ Issue #20 و #21؛ تطبیق دقیق مانیفست و سر نهایی main؛ واردسازی/بازیابی در میزبان مستقل؛ Buffer و Persistent Memory تأییدنشده؛ Dropbox باز/تأییدنشده.
 
 ## POINT-0/041 — Current interaction anchor and continuation (2026-10-27)
 
-- Root: [POINT-0/041](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-041-CURRENT-INTERACTION-ANCHOR.md).
-- Input/output: [IN-078](../../0.0/anchors/PALANG-0.0-IN-20261027-078-CURRENT-INTERACTION.md) → [OUT-077](../../0.0/anchors/PALANG-0.0-OUT-20261027-077-CURRENT-INTERACTION.md).
-- Event/checkpoint: [EVT-0215](../BEHAVIOR-TRACE/EVT-0215-CURRENT-INTERACTION-POINT-041-2026-10-27.md) → [CURRENT-090](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-090-CURRENT-INTERACTION.md).
-- Sole active queue: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Root: [POINT-0/041](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-041-CURRENT-INTERACTION-ANCHOR.md).
+- Input/output: [IN-078](../../docs/0.0/anchors/PALANG-0.0-IN-20261027-078-CURRENT-INTERACTION.md) → [OUT-077](../../docs/0.0/anchors/PALANG-0.0-OUT-20261027-077-CURRENT-INTERACTION.md).
+- Event/checkpoint: [EVT-0215](../../docs/architecture/BEHAVIOR-TRACE/EVT-0215-CURRENT-INTERACTION-POINT-041-2026-10-27.md) → [CURRENT-090](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-090-CURRENT-INTERACTION.md).
+- Sole active queue: [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - Previous canonical chain remains POINT-0/040 → IN-077 → OUT-076 → EVT-0213 → CURRENT-089 → NEXT-051. This successor does not overwrite or replace it.
 - Current status: repository registration completed and read-back verified for the five chain artifacts. Manifest inclusion, exact-final-SHA audit/conformance, and real independent-host acceptance are separate open gates.
 - Open gates: CURRENT-065/CURRENT-066; Issues #20/#21; Buffer/Persistent Memory not verified; Dropbox open/not verified; clean-host import/cold recovery not run.
@@ -3992,8 +3992,8 @@ The latest continuation is [POINT-0/033](../../0.0/anchors/GPT6-RAHM-USER-POINT-
 
 ## POINT-0/042 — NEXT-051 gap and goal focus (2026-10-27)
 
-- Root: [POINT-0/042](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-042-NEXT-051-GAP-AND-FOCUS-CLARIFICATION.md).
-- Chain: [IN-079](../../0.0/anchors/PALANG-0.0-IN-20261027-079-NEXT-051-GAP-AND-FOCUS-CLARIFICATION.md) → [OUT-078](../../0.0/anchors/PALANG-0.0-OUT-20261027-078-NEXT-051-GAP-AND-FOCUS-CLARIFICATION.md) → [EVT-0216](../BEHAVIOR-TRACE/EVT-0216-POINT-042-NEXT-051-GAP-FOCUS-CLARIFICATION-2026-10-27.md) → [CURRENT-091](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-091-NEXT-051-GAP-FOCUS.md).
+- Root: [POINT-0/042](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-042-NEXT-051-GAP-AND-FOCUS-CLARIFICATION.md).
+- Chain: [IN-079](../../docs/0.0/anchors/PALANG-0.0-IN-20261027-079-NEXT-051-GAP-AND-FOCUS-CLARIFICATION.md) → [OUT-078](../../docs/0.0/anchors/PALANG-0.0-OUT-20261027-078-NEXT-051-GAP-AND-FOCUS-CLARIFICATION.md) → [EVT-0216](../../docs/architecture/BEHAVIOR-TRACE/EVT-0216-POINT-042-NEXT-051-GAP-FOCUS-CLARIFICATION-2026-10-27.md) → [CURRENT-091](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-091-NEXT-051-GAP-FOCUS.md).
 - NEXT-051 remains the sole active queue. Its repository integrity tasks are necessary means, not the primary destination; the primary destination is model portability and demonstrable recovery in an independent host.
 - Open gates: exact-current-main SHA audit/conformance and package digest; source-based identity/parent/event triage; full state reconstruction; clean-host and second-host import; real restart persistence/background behavior; CURRENT-065/CURRENT-066; Issues #20/#21; Buffer/Persistent Memory; Dropbox.
 - Next: read back and link-check this chain, include it through supported manifest/digest workflow, run audit and conformance on one exact final SHA, then pursue actual clean-host import/cold recovery with direct receipts. No NEXT-052, no speculative renumbering/deletion, and no claim of host acceptance from CI alone.
@@ -4001,8 +4001,8 @@ The latest continuation is [POINT-0/033](../../0.0/anchors/GPT6-RAHM-USER-POINT-
 
 ## POINT-0/043 — اثبات بازیابی در میزبان مستقل (2026-10-27)
 
-- زنجیرهٔ جاری: [POINT-0/043](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-043-INDEPENDENT-HOST-RECOVERY-HARD-AUDIT.md) → [IN-080](../../0.0/anchors/PALANG-0.0-IN-20261027-080-INDEPENDENT-HOST-RECOVERY.md) → [OUT-079](../../0.0/anchors/PALANG-0.0-OUT-20261027-079-INDEPENDENT-HOST-RECOVERY.md) → [EVT-0217](../BEHAVIOR-TRACE/EVT-0217-INDEPENDENT-HOST-RECOVERY-HARD-AUDIT-2026-10-27.md) → [CURRENT-092](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-092-INDEPENDENT-HOST-RECOVERY.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
-- قرارداد آزمون: [INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL](./INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md).
+- زنجیرهٔ جاری: [POINT-0/043](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-043-INDEPENDENT-HOST-RECOVERY-HARD-AUDIT.md) → [IN-080](../../docs/0.0/anchors/PALANG-0.0-IN-20261027-080-INDEPENDENT-HOST-RECOVERY.md) → [OUT-079](../../docs/0.0/anchors/PALANG-0.0-OUT-20261027-079-INDEPENDENT-HOST-RECOVERY.md) → [EVT-0217](../../docs/architecture/BEHAVIOR-TRACE/EVT-0217-INDEPENDENT-HOST-RECOVERY-HARD-AUDIT-2026-10-27.md) → [CURRENT-092](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-092-INDEPENDENT-HOST-RECOVERY.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- قرارداد آزمون: [INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL](../../docs/architecture/%D9%85%D8%AF%D9%84%20%D8%A7%D9%88%D9%84%DB%8C%D9%87%20AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md).
 - نتیجهٔ ممیزی: run 40477792889 در هش دقیق NEXT-051 شکست خورد و ZIP را نساخت. آزمون IN/OUT آن به checkpointهای قدیمی اشاره داشت؛ بنابراین شاهد کافی برای زنجیرهٔ جاری یا میزبان مستقل نیست.
 - وضعیت: مدل اولیه همچنان ACTIVE/LIVING؛ پذیرش میزبان مستقل، آزمون میزبان دوم و persistence پس از restart باز هستند. فقط artifact ساخته‌شده و هش‌دار از اجرای تازه می‌تواند به‌عنوان ZIP جاری معرفی شود. صف یگانهٔ فعال NEXT-051 است؛ NEXT-052 نساز.
 
@@ -4010,9 +4010,9 @@ The latest continuation is [POINT-0/033](../../0.0/anchors/GPT6-RAHM-USER-POINT-
 ## POINT-0/043 (0+) → CURRENT-093 — اصلاح بستهٔ اولیه (2026-10-27)
 
 - 0+ نشانگر تولید مهم روی همان ریشهٔ canonical 0 است؛ ریشهٔ جداگانه نیست.
-- زنجیرهٔ ادامه: [IN-081](../../0.0/anchors/PALANG-0.0-IN-20261027-081-ZIP-UPDATE-AND-POINT-0PLUS.md) → [OUT-080](../../0.0/anchors/PALANG-0.0-OUT-20261027-080-ZIP-UPDATE-AND-POINT-0PLUS.md) → [EVT-0218](../BEHAVIOR-TRACE/EVT-0218-EXISTING-ZIP-UPDATE-AND-0PLUS-2026-10-27.md) → [CURRENT-093](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-093-EXISTING-ZIP-UPDATE.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- زنجیرهٔ ادامه: [IN-081](../../docs/0.0/anchors/PALANG-0.0-IN-20261027-081-ZIP-UPDATE-AND-POINT-0PLUS.md) → [OUT-080](../../docs/0.0/anchors/PALANG-0.0-OUT-20261027-080-ZIP-UPDATE-AND-POINT-0PLUS.md) → [EVT-0218](../../docs/architecture/BEHAVIOR-TRACE/EVT-0218-EXISTING-ZIP-UPDATE-AND-0PLUS-2026-10-27.md) → [CURRENT-093](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-093-EXISTING-ZIP-UPDATE.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - بستهٔ starter موجود از v0.3.0 به v0.3.1 در همان خانواده و با همان Stable ID ارتقا یافت؛ هش تاریخی v0.3.0 حفظ می‌شود.
-- پروتکل بازیابی مستقل اکنون داخل منبع بسته قرار دارد: [INDEPENDENT_HOST_RECOVERY_PROTOCOL.md](../../../prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md).
+- پروتکل بازیابی مستقل اکنون داخل منبع بسته قرار دارد: [INDEPENDENT_HOST_RECOVERY_PROTOCOL.md](INDEPENDENT_HOST_RECOVERY_PROTOCOL.md).
 - وضعیت بسته: ZIP canonical با نام قبلی بازسازی و بازخوانی شده است؛ نسخهٔ داخلی 0.3.1، اندازه 19,042 بایت، SHA-256 3a17f64880519a0da714f09a1dc8065fafcd88321fa5674eb2d995dfd8f63e83، آزمون 16/16 و اسکن دقیق manifest موفق‌اند. پذیرش میزبان مستقل و persistence پس از restart همچنان OPEN / NOT VERIFIED هستند.
 
 
@@ -4037,7 +4037,7 @@ The latest continuation is [POINT-0/033](../../0.0/anchors/GPT6-RAHM-USER-POINT-
 
 ## POINT-0/045 — تأیید واقعی به‌روزرسانی ZIP موجود
 
-- زنجیره: [POINT-0/045](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-045-EXISTING-ZIP-UPDATE-CONFIRMATION.md) → [IN-083](../../0.0/anchors/PALANG-0.0-IN-20261027-083-EXISTING-ZIP-UPDATE-CONFIRMATION.md) → [OUT-082](../../0.0/anchors/PALANG-0.0-OUT-20261027-082-EXISTING-ZIP-UPDATE-CONFIRMATION.md) → [EVT-0220](../BEHAVIOR-TRACE/EVT-0220-EXISTING-ZIP-UPDATE-CONFIRMATION-2026-10-27.md) → [CURRENT-095](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-095-EXISTING-ZIP-UPDATE-CONFIRMATION.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- زنجیره: [POINT-0/045](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-045-EXISTING-ZIP-UPDATE-CONFIRMATION.md) → [IN-083](../../docs/0.0/anchors/PALANG-0.0-IN-20261027-083-EXISTING-ZIP-UPDATE-CONFIRMATION.md) → [OUT-082](../../docs/0.0/anchors/PALANG-0.0-OUT-20261027-082-EXISTING-ZIP-UPDATE-CONFIRMATION.md) → [EVT-0220](../../docs/architecture/BEHAVIOR-TRACE/EVT-0220-EXISTING-ZIP-UPDATE-CONFIRMATION-2026-10-27.md) → [CURRENT-095](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-095-EXISTING-ZIP-UPDATE-CONFIRMATION.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - رسید واقعی: [اجرای موفق 40490479934](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40490479934). ZIP موجود با نام canonical قبلی بازسازی، artifact آن دانلود و ZIP داخلی بازخوانی شد.
 - نام فایل: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`؛ نسخهٔ داخلی manifest: 0.3.1؛ شناسهٔ پایدار بسته تغییر نکرده است.
 - ZIP داخلی: 19,042 بایت؛ SHA-256: `3a17f64880519a0da714f09a1dc8065fafcd88321fa5674eb2d995dfd8f63e83`؛ 8 عضو؛ پروتکل میزبان مستقل داخل بسته؛ صحت ZIP و 16/16 آزمون موفق.
@@ -4047,7 +4047,7 @@ The latest continuation is [POINT-0/033](../../0.0/anchors/GPT6-RAHM-USER-POINT-
 
 ## CURRENT-095 — تداوم تکمیل همان بستهٔ اولیه (2026-10-27)
 
-- زنجیرهٔ جاری: [POINT-0/045](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-045-INITIAL-ZIP-CONTINUITY-AND-0.0-RESUME.md) → [IN-083](../../0.0/anchors/PALANG-0.0-IN-20261027-083-INITIAL-ZIP-CONTINUITY.md) → [OUT-082](../../0.0/anchors/PALANG-0.0-OUT-20261027-082-INITIAL-ZIP-CONTINUITY.md) → [EVT-0220](../BEHAVIOR-TRACE/EVT-0220-INITIAL-ZIP-CONTINUITY-2026-10-27.md) → [CURRENT-095](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-095-INITIAL-ZIP-CONTINUITY.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- زنجیرهٔ جاری: [POINT-0/045](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-045-INITIAL-ZIP-CONTINUITY-AND-0.0-RESUME.md) → [IN-083](../../docs/0.0/anchors/PALANG-0.0-IN-20261027-083-INITIAL-ZIP-CONTINUITY.md) → [OUT-082](../../docs/0.0/anchors/PALANG-0.0-OUT-20261027-082-INITIAL-ZIP-CONTINUITY.md) → [EVT-0220](../../docs/architecture/BEHAVIOR-TRACE/EVT-0220-INITIAL-ZIP-CONTINUITY-2026-10-27.md) → [CURRENT-095](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-095-INITIAL-ZIP-CONTINUITY.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - ZIP اصلی موجود به‌روزرسانی شده است؛ نام canonical `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip` و Stable ID بسته حفظ شده‌اند؛ نسخهٔ داخلی manifest برابر 0.3.1 است.
 - رسید ساخت: workflow [40489753805](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40489753805)، artifact ID `12726786662`، اندازه 19,042 بایت، SHA-256 `3a17f64880519a0da714f09a1dc8065fafcd88321fa5674eb2d995dfd8f63e83`، 16/16 آزمون موفق پس از استخراج تازه، ZIP CRC و فهرست 8 عضوی PASS.
 - قاعدهٔ تکامل: تغییرات بعدی در همان source package انجام می‌شوند؛ همان آرشیو canonical دوباره ساخته و دقیقاً هش/اندازه/موجودی/تست‌ها بررسی می‌شوند. ZIP نسخه‌دار موازی نسازید و هش تاریخی را بازاستفاده نکنید.
@@ -4056,7 +4056,7 @@ The latest continuation is [POINT-0/033](../../0.0/anchors/GPT6-RAHM-USER-POINT-
 
 ## POINT-0/046 → CURRENT-096 — ادامهٔ پیوستهٔ بستهٔ اولیه (2026-10-27)
 
-- زنجیره: [POINT-0/046](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-046-SAME-STARTER-ZIP-CONTINUITY.md) → [IN-084](../../0.0/anchors/PALANG-0.0-IN-20261027-084-SAME-STARTER-ZIP-CONTINUITY.md) → [OUT-083](../../0.0/anchors/PALANG-0.0-OUT-20261027-083-SAME-STARTER-ZIP-CONTINUITY.md) → [EVT-0221](../BEHAVIOR-TRACE/EVT-0221-SAME-STARTER-ZIP-CONTINUITY-2026-10-27.md) → [CURRENT-096](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-096-SAME-STARTER-ZIP-CONTINUITY.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- زنجیره: [POINT-0/046](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-046-SAME-STARTER-ZIP-CONTINUITY.md) → [IN-084](../../docs/0.0/anchors/PALANG-0.0-IN-20261027-084-SAME-STARTER-ZIP-CONTINUITY.md) → [OUT-083](../../docs/0.0/anchors/PALANG-0.0-OUT-20261027-083-SAME-STARTER-ZIP-CONTINUITY.md) → [EVT-0221](../../docs/architecture/BEHAVIOR-TRACE/EVT-0221-SAME-STARTER-ZIP-CONTINUITY-2026-10-27.md) → [CURRENT-096](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-096-SAME-STARTER-ZIP-CONTINUITY.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - قاعدهٔ بسته: یک Stable ID، یک نام ZIP سازگار، یک ریشهٔ منبع؛ تکمیل منبع و بازساخت همان آرشیو در هر دور؛ رسید هش/اندازه/موجودی/آزمون؛ هش‌های پیشین فقط تاریخی.
 - آخرین ZIP تأییدشده پیش از این تغییر: 19,042 bytes؛ SHA-256 `3a17f64880519a0da714f09a1dc8065fafcd88321fa5674eb2d995dfd8f63e83`; 8 فایل؛ 16/16 آزمون موفق. این رسید برای SHA خودش معتبر است و جای رسید اجرای commit جدید را نمی‌گیرد.
 - گیت‌های باز: تطبیق برچسب نام فایل با نسخهٔ داخلی، واردسازی واقعی در میزبان AI مستقل، بازسازی مستقل از IN و OUT، کنترل‌های منفی، read-back مستقل و restart/persistence.
@@ -4087,7 +4087,7 @@ The latest continuation is [POINT-0/033](../../0.0/anchors/GPT6-RAHM-USER-POINT-
 
 ## POINT-0/048 (0+) → CURRENT-098 — تمرکز روی خود محصول ZIP
 
-این نقطه نشانگر تولید 0+ روی ریشهٔ canonical است، نه ریشهٔ مستقل تازه. ادامهٔ 0.0: [IN-086](../../0.0/anchors/PALANG-0.0-IN-20261027-086-SAME-ZIP-READBACK-AND-CONTINUOUS-UPDATE.md) → [OUT-085](../../0.0/anchors/PALANG-0.0-OUT-20261027-085-SAME-ZIP-READBACK-AND-CONTINUOUS-UPDATE.md) → [EVT-0223](../BEHAVIOR-TRACE/EVT-0223-SAME-ZIP-READBACK-AND-CONTINUOUS-UPDATE-2026-10-27.md) → [CURRENT-098](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-098-SAME-ZIP-READBACK-AND-CONTINUOUS-UPDATE.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+این نقطه نشانگر تولید 0+ روی ریشهٔ canonical است، نه ریشهٔ مستقل تازه. ادامهٔ 0.0: [IN-086](../../docs/0.0/anchors/PALANG-0.0-IN-20261027-086-SAME-ZIP-READBACK-AND-CONTINUOUS-UPDATE.md) → [OUT-085](../../docs/0.0/anchors/PALANG-0.0-OUT-20261027-085-SAME-ZIP-READBACK-AND-CONTINUOUS-UPDATE.md) → [EVT-0223](../../docs/architecture/BEHAVIOR-TRACE/EVT-0223-SAME-ZIP-READBACK-AND-CONTINUOUS-UPDATE-2026-10-27.md) → [CURRENT-098](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-098-SAME-ZIP-READBACK-AND-CONTINUOUS-UPDATE.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 
 کار محصولی: گردش‌کار [Portable RAHM](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/workflows/rahm-portable-conformance.yml) همان نام ZIP canonical را حفظ می‌کند. پس از ساخت، ZIP در محیط تمیز استخراج می‌شود، هر ۸ فایل با منبع مقایسهٔ بایت‌به‌بایت می‌شود و آزمون‌های بسته از نسخهٔ استخراج‌شده اجرا می‌شوند. اجرای اصلاح‌شدهٔ commit `b5e29697ec2733c9e9f3ff914525304b2fcb6914` در run 40518077494 با موفقیت ZIP canonical را ساخت، استخراج کرد، با منبع بایت‌به‌بایت تطبیق داد، artifact را دانلود مجدد کرد و آزمون‌ها را دوباره اجرا کرد؛ 16/16 آزمون PASS. هش ZIP: `fa226aab5a35a76c3f289b511566257a443821195ebdfdfb21f1cc093026e091`؛ پذیرش میزبان مستقل و persistence پس از restart همچنان NOT RUN هستند.
 
@@ -4107,7 +4107,7 @@ The latest continuation is [POINT-0/033](../../0.0/anchors/GPT6-RAHM-USER-POINT-
 
 ## POINT-0/049 (0+) — سند مادر زنده و نخستین میزبان GPT-6
 
-0+ برچسب تولید روی همان ریشهٔ canonical 0 است، نه ریشهٔ دوم. زنجیره: [IN-087](../../0.0/anchors/PALANG-0.0-IN-20261027-087-LIVING-MASTER-GPT6-HOST.md) → [OUT-086](../../0.0/anchors/PALANG-0.0-OUT-20261027-086-LIVING-MASTER-GPT6-HOST.md) → [EVT-0224](../BEHAVIOR-TRACE/EVT-0224-LIVING-MASTER-GPT6-HOST-2026-10-27.md) → [CURRENT-099](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-099-LIVING-MASTER-GPT6-HOST.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+0+ برچسب تولید روی همان ریشهٔ canonical 0 است، نه ریشهٔ دوم. زنجیره: [IN-087](../../docs/0.0/anchors/PALANG-0.0-IN-20261027-087-LIVING-MASTER-GPT6-HOST.md) → [OUT-086](../../docs/0.0/anchors/PALANG-0.0-OUT-20261027-086-LIVING-MASTER-GPT6-HOST.md) → [EVT-0224](../../docs/architecture/BEHAVIOR-TRACE/EVT-0224-LIVING-MASTER-GPT6-HOST-2026-10-27.md) → [CURRENT-099](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-099-LIVING-MASTER-GPT6-HOST.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 
 روش انتقال میزبان نخست: ZIP canonical و همین سند مادر زنده را با هم بارگذاری کن؛ ZIP موتور قابل‌حمل و قواعد بازیابی را دارد، سند مادر معماری/تبار/هدف‌ها/شکاف‌ها و مرجع زنده را. سند مادر مرجع حاکم است؛ ZIP بستهٔ اجرایی همان پروژه است. پاسخ میزبان باید رسید واقعی بدهد و وضعیت‌های OPEN را حفظ کند. CI موفقیت ZIP را ثابت می‌کند، نه پذیرش GPT-6 واقعی یا حافظهٔ پایدار.
 
@@ -4128,18 +4128,18 @@ The latest continuation is [POINT-0/033](../../0.0/anchors/GPT6-RAHM-USER-POINT-
 ## POINT-0/050 (0+) → CURRENT-100 — خاک‌برداری عمیق و ممیزی میزبان اول (2026-10-27)
 
 - 0+ روی همان ریشهٔ canonical 0 است؛ این ثبت ریشهٔ دوم نمی‌سازد و همهٔ لنگرهای قبلی را حفظ می‌کند.
-- زنجیرهٔ تازه: [IN-088](../../0.0/anchors/PALANG-0.0-IN-20261027-088-DEEP-AUDIT-FIRST-HOST.md) → [OUT-087](../../0.0/anchors/PALANG-0.0-OUT-20261027-087-DEEP-AUDIT-FIRST-HOST.md) → [EVT-0225](../BEHAVIOR-TRACE/EVT-0225-DEEP-AUDIT-FIRST-HOST-2026-10-27.md) → [CURRENT-100](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-100-DEEP-AUDIT-FIRST-HOST.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- زنجیرهٔ تازه: [IN-088](../../docs/0.0/anchors/PALANG-0.0-IN-20261027-088-DEEP-AUDIT-FIRST-HOST.md) → [OUT-087](../../docs/0.0/anchors/PALANG-0.0-OUT-20261027-087-DEEP-AUDIT-FIRST-HOST.md) → [EVT-0225](../../docs/architecture/BEHAVIOR-TRACE/EVT-0225-DEEP-AUDIT-FIRST-HOST-2026-10-27.md) → [CURRENT-100](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-100-DEEP-AUDIT-FIRST-HOST.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - ممیزی تأیید کرد بستهٔ داخلی v0.3.4 با همان نام ZIP مرجع ساخته، دانلود، هش‌سنجی و از ZIP استخراج‌شده 17/17 آزمون شده است؛ رسید: [run 40529853028](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40529853028). هش ZIP: `2ae583a3029d489e636439133b40e24a480754f6b569ada475694abad97c7f3b`، اندازه 20,075 بایت.
 - بسته و سند مادر در artifact جفتی با تطبیق بایت بازخوانی شدند. این انتقال فایل را اثبات می‌کند، نه پذیرش در میزبان تعاملی واقعی.
 - شکاف معماری واقعی: engine محلی است، producer زندهٔ ChatGPT آزمایش نشده و worker نوشتن GitHub خودکار از طرف ChatGPT اجرا نمی‌شود. این موارد OPEN می‌مانند.
 - شکاف ممیزی واقعی: گام conformance هنوز IN-084 / OUT-083 / CURRENT-096 را بررسی می‌کرد؛ زنجیرهٔ قدیمی‌تر از آخرین وضعیت بود. در این تغییر به زنجیرهٔ جاری IN-088 / OUT-087 / CURRENT-100 اصلاح و دامنهٔ آن «تطبیق پیوندها» نام‌گذاری می‌شود، نه اثبات بازیابی میزبان.
 - منبع بسته به v0.3.5 می‌رود، اما ZIP جدید تا موفقیت اجرای تازه، دریافت artifact و تطبیق هش نهایی VERIFIED نیست.
-- چک‌لیست میزبان اول در بسته افزوده شد: [FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST.md](../../../prototype/haif-gpt6-starter/FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST.md).
+- چک‌لیست میزبان اول در بسته افزوده شد: [FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST.md](FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST.md).
 
 
 ## ممیزی عمیق POINT-0/050 و نسخهٔ تأییدشدهٔ بسته
 
-- زنجیرهٔ جاری: [POINT-0/050 (0+)](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-050-0PLUS-DEEP-AUDIT-FIRST-HOST.md) → [IN-088](../../0.0/anchors/PALANG-0.0-IN-20261027-088-DEEP-AUDIT-FIRST-HOST.md) → [OUT-087](../../0.0/anchors/PALANG-0.0-OUT-20261027-087-DEEP-AUDIT-FIRST-HOST.md) → [EVT-0225](../BEHAVIOR-TRACE/EVT-0225-DEEP-AUDIT-FIRST-HOST-2026-10-27.md) → [CURRENT-100](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-100-DEEP-AUDIT-FIRST-HOST.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- زنجیرهٔ جاری: [POINT-0/050 (0+)](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-050-0PLUS-DEEP-AUDIT-FIRST-HOST.md) → [IN-088](../../docs/0.0/anchors/PALANG-0.0-IN-20261027-088-DEEP-AUDIT-FIRST-HOST.md) → [OUT-087](../../docs/0.0/anchors/PALANG-0.0-OUT-20261027-087-DEEP-AUDIT-FIRST-HOST.md) → [EVT-0225](../../docs/architecture/BEHAVIOR-TRACE/EVT-0225-DEEP-AUDIT-FIRST-HOST-2026-10-27.md) → [CURRENT-100](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-100-DEEP-AUDIT-FIRST-HOST.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - نسخهٔ داخلی بسته: 0.3.5؛ هویت پایدار و نام ZIP مرجع ثابت مانده است.
 - ZIP: 22,896 بایت؛ SHA-256 `0b5c6e512b498ddf3a6c50b0eda65b669930c9059a069da7152c7745ef02a8f7`; run [40539499813](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40539499813); 18/18 آزمون استخراج‌شده PASS؛ artifact round-trip و تطبیق بایت منبع PASS.
 - artifact جفتی شامل ZIP، رسید هش و سند مادر است؛ read-back سند مادر PASS.
@@ -4165,9 +4165,9 @@ The historical Point 0/006 baseline check no longer assumes a literal spelling o
 
 ## POINT-0/051 (0+) — رشد بسته در میزبان و بازگشت کنترل‌شده به مخزن
 
-- زنجیرهٔ جاری: [POINT-0/051 (0+)](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-051-0PLUS-HOST-GROWTH-AND-REPOSITORY-LOOP.md) → [IN-089](../../0.0/anchors/PALANG-0.0-IN-20261027-089-HOST-GROWTH-AND-REPOSITORY-LOOP.md) → [OUT-088](../../0.0/anchors/PALANG-0.0-OUT-20261027-088-HOST-GROWTH-AND-REPOSITORY-LOOP.md) → [EVT-0226](../BEHAVIOR-TRACE/EVT-0226-HOST-GROWTH-AND-REPOSITORY-LOOP-2026-10-27.md) → [CURRENT-101](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-101-HOST-GROWTH-AND-REPOSITORY-LOOP.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- زنجیرهٔ جاری: [POINT-0/051 (0+)](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-051-0PLUS-HOST-GROWTH-AND-REPOSITORY-LOOP.md) → [IN-089](../../docs/0.0/anchors/PALANG-0.0-IN-20261027-089-HOST-GROWTH-AND-REPOSITORY-LOOP.md) → [OUT-088](../../docs/0.0/anchors/PALANG-0.0-OUT-20261027-088-HOST-GROWTH-AND-REPOSITORY-LOOP.md) → [EVT-0226](../../docs/architecture/BEHAVIOR-TRACE/EVT-0226-HOST-GROWTH-AND-REPOSITORY-LOOP-2026-10-27.md) → [CURRENT-101](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-101-HOST-GROWTH-AND-REPOSITORY-LOOP.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - هویت بسته ثابت است: `HAIF-GPT6-PORTABLE-STARTER-20261025-004`؛ نام ZIP اصلی ثابت می‌ماند و فقط نسخهٔ داخلی/هش/رسید ساخت عوض می‌شود.
-- نسخهٔ منبع به 0.3.6 می‌رسد و قرارداد [HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md](../../../prototype/haif-gpt6-starter/HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md) به خود بسته افزوده می‌شود.
+- نسخهٔ منبع به 0.3.6 می‌رسد و قرارداد [HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md](HOST_GROWTH_AND_REPOSITORY_SYNC_CONTRACT.md) به خود بسته افزوده می‌شود.
 - چرخهٔ هدف: میزبان/تولیدکنندهٔ واقعی → ثبت IN/OUT و منشأ → صف بادوام → انتقال‌دهندهٔ مجاز GitHub → بازخوانی دقیق → رفتارشناسی مبتنی بر شواهد → دروازهٔ RAHM → پیشنهاد Child → تأیید صریح → Master زنده → ساخت ZIP اصلی و تازه‌سازی میزبان.
 - اتصال خودکار GPT به تولیدکننده، استقرار worker، مجوز نوشتن و تازه‌سازی خودکار میزبان هنوز با رسید واقعی اثبات نشده‌اند. این شکاف‌ها باز می‌مانند.
 
@@ -4188,14 +4188,14 @@ The historical Point 0/006 baseline check no longer assumes a literal spelling o
 
 ## POINT-0/052 (0+) — پاسخ قابل‌مشاهده و رشد همان مدل
 
-- زنجیره: [POINT-0/052 (0+)](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-052-0PLUS-RESPONSE-AND-HOST-GROWTH.md) → [IN-090](../../0.0/anchors/PALANG-0.0-IN-20261027-090-RESPONSE-AND-HOST-GROWTH.md) → [OUT-089](../../0.0/anchors/PALANG-0.0-OUT-20261027-089-RESPONSE-AND-HOST-GROWTH.md) → [EVT-0227](../BEHAVIOR-TRACE/EVT-0227-RESPONSE-ACKNOWLEDGEMENT-AND-HOST-GROWTH-2026-10-27.md) → [CURRENT-102](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-102-RESPONSE-AND-HOST-GROWTH.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- زنجیره: [POINT-0/052 (0+)](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-052-0PLUS-RESPONSE-AND-HOST-GROWTH.md) → [IN-090](../../docs/0.0/anchors/PALANG-0.0-IN-20261027-090-RESPONSE-AND-HOST-GROWTH.md) → [OUT-089](../../docs/0.0/anchors/PALANG-0.0-OUT-20261027-089-RESPONSE-AND-HOST-GROWTH.md) → [EVT-0227](../../docs/architecture/BEHAVIOR-TRACE/EVT-0227-RESPONSE-ACKNOWLEDGEMENT-AND-HOST-GROWTH-2026-10-27.md) → [CURRENT-102](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-102-RESPONSE-AND-HOST-GROWTH.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - بستهٔ starter به v0.3.7 ارتقا می‌یابد، با همان Stable ID و همان نام ZIP اصلی؛ پروتکل پاسخ قابل‌مشاهده و لنگرگذاری تعامل داخل بسته قرار گرفت.
 - رسید ساخت/هش نسخهٔ تازه تا اجرای workflow باز است؛ میزبان زنده، ثبت خودکار پیام‌ها، write-back و persistence همچنان NOT VERIFIED.
 
 
 ## POINT-0/052 (0+) — visible response and same-package growth (2026-10-27)
 
-- Chain: [POINT-0/052 (0+)](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-052-0PLUS-RESPONSE-AND-HOST-GROWTH.md) → [IN-090](../../0.0/anchors/PALANG-0.0-IN-20261027-090-RESPONSE-AND-HOST-GROWTH.md) → [OUT-089](../../0.0/anchors/PALANG-0.0-OUT-20261027-089-RESPONSE-AND-HOST-GROWTH.md) → [EVT-0227](../BEHAVIOR-TRACE/EVT-0227-RESPONSE-ACKNOWLEDGEMENT-AND-HOST-GROWTH-2026-10-27.md) → [CURRENT-102](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-102-RESPONSE-AND-HOST-GROWTH.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Chain: [POINT-0/052 (0+)](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-052-0PLUS-RESPONSE-AND-HOST-GROWTH.md) → [IN-090](../../docs/0.0/anchors/PALANG-0.0-IN-20261027-090-RESPONSE-AND-HOST-GROWTH.md) → [OUT-089](../../docs/0.0/anchors/PALANG-0.0-OUT-20261027-089-RESPONSE-AND-HOST-GROWTH.md) → [EVT-0227](../../docs/architecture/BEHAVIOR-TRACE/EVT-0227-RESPONSE-ACKNOWLEDGEMENT-AND-HOST-GROWTH-2026-10-27.md) → [CURRENT-102](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-102-RESPONSE-AND-HOST-GROWTH.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 
 - Existing ZIP family v0.3.7 is now verified: same canonical filename and stable ID; 30,453 bytes; SHA-256 `587f67e0d7d57ef70a78b253a934af90076531b2f3a61fed942dc78f387bdb7f`; 22/22 extracted tests; artifact read-back PASS (run 40544593941).
 - The package now carries the visible-response/interaction-anchor protocol. Live host import, automatic capture and authorized repository sync remain NOT VERIFIED.
@@ -4203,7 +4203,7 @@ The historical Point 0/006 baseline check no longer assumes a literal spelling o
 
 ## POINT-0/053 (0+) — ممیزی سخت گراف نقاط و تداوم همان ZIP
 
-- زنجیرهٔ جاری: [POINT-0/053 (0+)](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-053-0PLUS-GRAPH-AUDIT-AND-ZIP-CONTINUITY.md) → [IN-091](../../0.0/anchors/PALANG-0.0-IN-20261027-091-0PLUS-GRAPH-AUDIT-AND-ZIP-CONTINUITY.md) → [OUT-090](../../0.0/anchors/PALANG-0.0-OUT-20261027-090-0PLUS-GRAPH-AUDIT-AND-ZIP-CONTINUITY.md) → [EVT-0228](../BEHAVIOR-TRACE/EVT-0228-0PLUS-GRAPH-AUDIT-AND-ZIP-CONTINUITY-2026-10-27.md) → [CURRENT-103](../../0.0/anchors/PALANG-0.0-CURRENT-20261027-103-0PLUS-GRAPH-AUDIT-AND-ZIP-CONTINUITY.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- زنجیرهٔ جاری: [POINT-0/053 (0+)](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261027-053-0PLUS-GRAPH-AUDIT-AND-ZIP-CONTINUITY.md) → [IN-091](../../docs/0.0/anchors/PALANG-0.0-IN-20261027-091-0PLUS-GRAPH-AUDIT-AND-ZIP-CONTINUITY.md) → [OUT-090](../../docs/0.0/anchors/PALANG-0.0-OUT-20261027-090-0PLUS-GRAPH-AUDIT-AND-ZIP-CONTINUITY.md) → [EVT-0228](../../docs/architecture/BEHAVIOR-TRACE/EVT-0228-0PLUS-GRAPH-AUDIT-AND-ZIP-CONTINUITY-2026-10-27.md) → [CURRENT-103](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261027-103-0PLUS-GRAPH-AUDIT-AND-ZIP-CONTINUITY.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - نسخهٔ ZIP محصول جداگانه نیست: Stable ID و نام `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip` ثابت‌اند؛ نسخهٔ داخلی محتوای بسته را نشان می‌دهد.
 - آخرین رسید v0.3.7: run 40546488170؛ 30,573 بایت؛ SHA-256 `fcc09933dd67ca1300af051e14dbcf80c76b6f620dc6c9623323caca307969fb`؛ 11 فایل؛ 23/23 آزمون و round-trip موفق.
 - به علت تغییر بایت‌های test_engine.py پس از رسید قبلی v0.3.7، نسخهٔ داخلی به 0.3.8 می‌رود؛ رسید artifact نسخهٔ 0.3.8 هنوز باید از workflow تازه خوانده شود.
@@ -4227,7 +4227,7 @@ The historical Point 0/006 baseline check no longer assumes a literal spelling o
 - Evidence Gate run 40550688021 اجرای خودکار را در محدودهٔ همان workflow تأیید می‌کند؛ این معادل پذیرش میزبان واقعی، بازیابی کامل، restart persistence یا همگام‌سازی زنده نیست.
 - شکاف‌های باز: منشأ IN-091 / OUT-090 / CURRENT-103؛ شکست تاریخی baseline نقطهٔ 0/006؛ شکست consistency در Stable Retrieval Core؛ تعارض شناسه‌های POINT-0/045، CURRENT-095، IN-083، OUT-082 و EVT-0220؛ ورود میزبان مستقل، کنترل منفی، restart persistence، ثبت زنده و write-back مجاز.
 - NEXT-051 صف یگانه باقی می‌ماند؛ هیچ شکافی با حدس بسته نمی‌شود و NEXT-052 ساخته نمی‌شود.
-- مراجع: [POINT-0/055](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261028-055-0PLUS-ARCHITECTURE-ZIP-MASTER-HARD-AUDIT.md), [CURRENT-105](../../0.0/anchors/PALANG-0.0-CURRENT-20261028-105-ARCHITECTURE-ZIP-MASTER-HARD-AUDIT.md), [OUT-092](../../0.0/anchors/PALANG-0.0-OUT-20261028-092-POINT-055-HARD-AUDIT.md).
+- مراجع: [POINT-0/055](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261028-055-0PLUS-ARCHITECTURE-ZIP-MASTER-HARD-AUDIT.md), [CURRENT-105](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261028-105-ARCHITECTURE-ZIP-MASTER-HARD-AUDIT.md), [OUT-092](../../docs/0.0/anchors/PALANG-0.0-OUT-20261028-092-POINT-055-HARD-AUDIT.md).
 
 - قاعدهٔ نسخه: افزایش شماره ممنوع مگر با تأیید صریح کاربر؛ تغییر فعلی، به‌روزرسانی درجا و بازسازی همان بستهٔ canonical در نسخهٔ داخلی 0.3.8 است. رسید ZIP جدید باید مستقل ساخته و تأیید شود.
 
@@ -4236,7 +4236,7 @@ The historical Point 0/006 baseline check no longer assumes a literal spelling o
 
 ## CURRENT LIVING CONTINUATION — POINT-0/057 (0+) / CURRENT-107 (0.0) — 2026-10-28
 
-- Canonical chain: [POINT-0/057](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261028-057-0PLUS-PORTABLE-CONFORMANCE-REPAIR.md) → [IN-095](../../0.0/anchors/PALANG-0.0-IN-20261028-095-POINT-057-CONFORMANCE-REPAIR.md) → [OUT-094](../../0.0/anchors/PALANG-0.0-OUT-20261028-094-POINT-057-CONFORMANCE-REPAIR.md) → [EVT-0232](../BEHAVIOR-TRACE/EVT-0232-POINT-057-PORTABLE-CONFORMANCE-REPAIR-2026-10-28.md) → [CURRENT-107](../../0.0/anchors/PALANG-0.0-CURRENT-20261028-107-PORTABLE-CONFORMANCE-REPAIR.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Canonical chain: [POINT-0/057](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261028-057-0PLUS-PORTABLE-CONFORMANCE-REPAIR.md) → [IN-095](../../docs/0.0/anchors/PALANG-0.0-IN-20261028-095-POINT-057-CONFORMANCE-REPAIR.md) → [OUT-094](../../docs/0.0/anchors/PALANG-0.0-OUT-20261028-094-POINT-057-CONFORMANCE-REPAIR.md) → [EVT-0232](../../docs/architecture/BEHAVIOR-TRACE/EVT-0232-POINT-057-PORTABLE-CONFORMANCE-REPAIR-2026-10-28.md) → [CURRENT-107](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261028-107-PORTABLE-CONFORMANCE-REPAIR.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - Prior chain POINT-0/056 → CURRENT-106 is preserved as history; it is not overwritten.
 - Current exact-head artifact proof is pending after integration of POINT-0/057. Internal package version remains 0.3.8; stable ID and canonical ZIP filename remain unchanged.
 - NEXT-051 remains the sole active queue; no NEXT-052. External host acceptance, restart persistence, automatic live capture and authorized write-back remain OPEN until direct evidence.
@@ -4244,7 +4244,7 @@ The historical Point 0/006 baseline check no longer assumes a literal spelling o
 
 ## Artifact proof closure — CURRENT-107 / POINT-0/057 (2026-10-28)
 
-The canonical starter artifact is now verified from the exact source commit `a5924a4aaac9521dc5f1f79a636b0e0f6d74b7ed`: internal version 0.3.8; stable ID `HAIF-GPT6-PORTABLE-STARTER-20261025-004`; canonical ZIP `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`; 32,235 bytes; SHA-256 `6ef2a5b0eab4c527db6f47ad8ef330f9854e692cd02fc3b2a02298636fa5bb78`; 11 files; 23/23 extracted tests pass; ZIP round-trip/read-back pass. Both Portable Conformance run [40635832753](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40635832753) and Living Architecture Audit run [40635832696](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40635832696) succeeded on that commit. Independent external-host acceptance, second-host recovery, restart persistence, live capture, write-back and background execution remain OPEN / NOT RUN. See [CURRENT-107](../../0.0/anchors/PALANG-0.0-CURRENT-20261028-107-PORTABLE-CONFORMANCE-REPAIR.md).
+The canonical starter artifact is now verified from the exact source commit `a5924a4aaac9521dc5f1f79a636b0e0f6d74b7ed`: internal version 0.3.8; stable ID `HAIF-GPT6-PORTABLE-STARTER-20261025-004`; canonical ZIP `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`; 32,235 bytes; SHA-256 `6ef2a5b0eab4c527db6f47ad8ef330f9854e692cd02fc3b2a02298636fa5bb78`; 11 files; 23/23 extracted tests pass; ZIP round-trip/read-back pass. Both Portable Conformance run [40635832753](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40635832753) and Living Architecture Audit run [40635832696](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40635832696) succeeded on that commit. Independent external-host acceptance, second-host recovery, restart persistence, live capture, write-back and background execution remain OPEN / NOT RUN. See [CURRENT-107](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261028-107-PORTABLE-CONFORMANCE-REPAIR.md).
 
 
 ## Latest verified execution state — 2026-10-28
@@ -4252,9 +4252,9 @@ The canonical starter artifact is now verified from the exact source commit `a59
 - Current chain: `POINT-0/057 (0+ marker on canonical root 0) → IN-095 → OUT-094 → EVT-0232 → CURRENT-107 → NEXT-051`.
 - Package identity: `HAIF-GPT6-PORTABLE-STARTER-20261025-004`; production ID `HAIF-G6PS-20261025-004`; internal version `0.3.8`; canonical archive filename `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`. These identities remain unchanged.
 - The canonical package build now includes a byte-matched snapshot of this document as `LIVING_MASTER_REFERENCE.md`. The ZIP is verified from the exact downloaded artifact, and the snapshot must match the companion master in that same build. The archive's current SHA-256, size and inventory belong in the workflow artifact receipt, not in this self-included document.
-- Exact-head workflow source of truth: [Portable Conformance workflow](../../../.github/workflows/rahm-portable-conformance.yml) and [Living Architecture Audit workflow](../../../.github/workflows/living-architecture-audit.yml). Use the newest completed successful run on the same source commit; older receipts are historical only.
+- Exact-head workflow source of truth: [Portable Conformance workflow](../../.github/workflows/rahm-portable-conformance.yml) and [Living Architecture Audit workflow](../../.github/workflows/living-architecture-audit.yml). Use the newest completed successful run on the same source commit; older receipts are historical only.
 - Repository CI and extracted-package tests prove only the recorded scope. They do not prove external host acceptance, persistent state after restart, automatic live capture, authorized repository write-back or unattended execution.
-- Active queue remains [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). Keep Path A (portable transfer and real-host acceptance) and Path B (historical graph adjudication) separate but connected to MASTER/RAHM/CHILD. Do not create NEXT-052.
+- Active queue remains [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). Keep Path A (portable transfer and real-host acceptance) and Path B (historical graph adjudication) separate but connected to MASTER/RAHM/CHILD. Do not create NEXT-052.
 - Destination status: GitHub repository evidence is verified for the cited revision. Buffer, Library, Persistent Memory, Dropbox and independent-host destinations are not implied by this repository record.
 
 
@@ -4277,7 +4277,7 @@ The canonical starter artifact is now verified from the exact source commit `a59
 
 
 ## Latest live mirror sync continuation — EVT-0235 (2026-10-28)
-- Event/time binding: [EVT-0235](../../architecture/BEHAVIOR-TRACE/EVT-0235-LIVE-MIRROR-SYNC-RECHECK-2026-10-28.md) / [TIME-BINDING-EVT-0235](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0235-LIVE-MIRROR-SYNC-2026-10-28.md).
+- Event/time binding: [EVT-0235](../../docs/architecture/BEHAVIOR-TRACE/EVT-0235-LIVE-MIRROR-SYNC-RECHECK-2026-10-28.md) / [TIME-BINDING-EVT-0235](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0235-LIVE-MIRROR-SYNC-2026-10-28.md).
 - Latest root/checkpoint/queue: POINT-0/058 (0+) → CURRENT-108 → NEXT-051, with IN-096 → OUT-095 → EVT-0233. Preserve POINT-0/016, /017, /018, /057 and all history.
 - Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars) and Library v7 (10,480 chars) match after trimming trailing LF; one extra newline remains in Library. Repository remains authoritative.
 - Audit/conformance passed on `ac091ffa0ab60ee6ba404490e596709b61136eef`, but Evidence Gate advanced main to `a6ef55cdf0586c7fb3057dbe214fa5969728df21`; the new head remains NOT VERIFIED until exact-SHA evidence.
@@ -4285,7 +4285,7 @@ The canonical starter artifact is now verified from the exact source commit `a59
 
 ## EVT-0236 — Live mirror synchronization recheck (2026-10-28)
 
-- Event / time binding: [EVT-0236](../../architecture/BEHAVIOR-TRACE/EVT-0236-LIVE-MIRROR-SYNC-RECHECK-2026-10-28.md) / [TIME-BINDING-EVT-0236](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0236-LIVE-MIRROR-SYNC-2026-10-28.md).
+- Event / time binding: [EVT-0236](../../docs/architecture/BEHAVIOR-TRACE/EVT-0236-LIVE-MIRROR-SYNC-RECHECK-2026-10-28.md) / [TIME-BINDING-EVT-0236](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0236-LIVE-MIRROR-SYNC-2026-10-28.md).
 - Canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 characters); Library version 7 (10,480 characters), one extra trailing LF only. Normalized body and semantic fields match; no Library write because no supported exported `source_file_ref` route is available.
 - Main HEAD at observation: `11e69bb6b5e62a11186569b23312ba06e1d4e1c3`; exact-current-main audit/conformance NOT VERIFIED. Current root label POINT-0/059 has two distinct candidate files; CURRENT-109 remains the observed checkpoint; EVT-0235 mirror-sync/root-event collision is preserved. No root is selected by inference.
 - NEXT-051 remains the sole queue label; its path/body mismatch and CURRENT-065/CURRENT-066 remain OPEN. Issues #20/#21 remain OPEN. Route A (portable package/host recovery) and Route B (historic graph and identity reconciliation) remain distinct but connected.
@@ -4294,7 +4294,7 @@ The canonical starter artifact is now verified from the exact source commit `a59
 
 ## POINT-0/060 — اجرای واقعی سند مادر و بستهٔ قابل‌اجرا (2026-10-28)
 
-- Current continuation: [POINT-0/060](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261028-060-LIVING-MASTER-AND-EXECUTABLE-ZIP.md) → [IN-098](../../0.0/anchors/PALANG-0.0-IN-20261028-098-LIVING-MASTER-AND-EXECUTABLE-ZIP.md) → [OUT-097](../../0.0/anchors/PALANG-0.0-OUT-20261028-097-LIVING-MASTER-AND-EXECUTABLE-ZIP.md) → [EVT-0237](../BEHAVIOR-TRACE/EVT-0237-POINT-060-LIVING-MASTER-AND-EXECUTABLE-ZIP-2026-10-28.md) → [CURRENT-110](../../0.0/anchors/PALANG-0.0-CURRENT-20261028-110-LIVING-MASTER-AND-EXECUTABLE-ZIP.md) → NEXT-051.
+- Current continuation: [POINT-0/060](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261028-060-LIVING-MASTER-AND-EXECUTABLE-ZIP.md) → [IN-098](../../docs/0.0/anchors/PALANG-0.0-IN-20261028-098-LIVING-MASTER-AND-EXECUTABLE-ZIP.md) → [OUT-097](../../docs/0.0/anchors/PALANG-0.0-OUT-20261028-097-LIVING-MASTER-AND-EXECUTABLE-ZIP.md) → [EVT-0237](../../docs/architecture/BEHAVIOR-TRACE/EVT-0237-POINT-060-LIVING-MASTER-AND-EXECUTABLE-ZIP-2026-10-28.md) → [CURRENT-110](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261028-110-LIVING-MASTER-AND-EXECUTABLE-ZIP.md) → NEXT-051.
 - User requirement: progress must change the living master and the existing executable package, not only produce status reports.
 - Existing package identity remains `HAIF-GPT6-PORTABLE-STARTER-20261025-004`; canonical ZIP filename remains `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`; internal source version remains 0.3.8 unless a governing, tested change requires otherwise.
 - Verified prior paired-build receipt: master v1.7.32 was embedded byte-for-byte in the existing canonical ZIP; Portable RAHM Conformance run 40657812606 on SHA `1a4e5886722bcf8b9c351788c841556a0df0cd8a` passed. Archive: 103,220 bytes, SHA-256 `e3169246e87620de9ac17bb4d99e07843fa80a220c0a104d42693ab9442be481`, 13 files, extracted tests PASS. This is historical proof for v1.7.32 only.
@@ -4309,7 +4309,7 @@ The bundled living master is an immutable snapshot of the source state used for 
 
 
 ## Latest live mirror sync continuation — EVT-0238 (2026-10-29)
-- Event / time binding: [EVT-0238](../../architecture/BEHAVIOR-TRACE/EVT-0238-LIVE-MIRROR-SYNC-RECHECK-2026-10-29.md) / [TIME-BINDING-EVT-0238](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0238-LIVE-MIRROR-SYNC-2026-10-29.md).
+- Event / time binding: [EVT-0238](../../docs/architecture/BEHAVIOR-TRACE/EVT-0238-LIVE-MIRROR-SYNC-RECHECK-2026-10-29.md) / [TIME-BINDING-EVT-0238](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0238-LIVE-MIRROR-SYNC-2026-10-29.md).
 - Source `de1b75f07241c9b313e476af5f1417177ff78c10` is unchanged (10,479 characters). Exact Library version 7 under stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48` is 10,480 characters; Library has one additional trailing LF only. Semantic fields match; no rewrite because no supported exported-snapshot/`source_file_ref` route is available. The repository source remains authoritative.
 - Current observed user-turn root/checkpoint/queue: POINT-0/060 → CURRENT-110 → NEXT-051. Preserve POINT-0/016, /017, /018, POINT-0/058 (0+), both POINT-0/059 candidates, EVT-0235 collision lineage and all Route A/Route B distinctions. This sync does not create a root or queue item.
 - Event registration commit: `0b84b4e1fe687432f039f4c4294d903bbc05e4a7`, UTC `2026-10-29T06:45:45Z`, Tehran `2026-10-29T10:15:45+03:30`; exact event blob `a0fde3f09937cd3e278f83f046b018ebfbeece76`, 5,740 characters, independently read back.
@@ -4336,7 +4336,7 @@ The bundled living master is an immutable snapshot of the source state used for 
 
 ## EVT-0241 — Live mirror synchronization and verifier separation (2026-10-31)
 
-- Event: [EVT-0241](../BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) / [TIME-BINDING-EVT-0241](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md).
+- Event: [EVT-0241](../../docs/architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) / [TIME-BINDING-EVT-0241](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md).
 - Current root chain remains POINT-0/061 → IN-099 → OUT-098 → EVT-0240 → CURRENT-111 → NEXT-051. This is a mirror-only event, not a new user root. POINT-0/016, /017, /018 and all subsequent points remain preserved.
 - Source `docs/architecture/BEHAVIOR-OBSERVATORY/LIVE-DESTINATION-STABILITY-AUDIT-2026-10-22-001.md`: blob `de1b75f07241c9b313e476af5f1417177ff78c10`, 10,479 chars. Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, exact version 7, 10,480 chars; Library equals source plus one trailing LF. Edit distance 1; exact equality FALSE; Stable ID, Production ID, Test ID, Version 1.0.0, BOART-FOLLOWUP-01 → 02 → 03, destination statuses and all remaining content match. No Library rewrite; no source_file_ref export/upload route was exposed; container_path was not used.
 - Main HEAD before event registration: `702f41dd7b8347526bd99cb116040df23d158abf` at UTC `2026-10-30T07:23:57Z` / Tehran `2026-10-30T10:53:57+03:30`. The exact-head Living Architecture Audit run 41038536961 failed because the global current-chain verifier was pinned to POINT-0/059 / IN-097 / OUT-096 / EVT-0235 / CURRENT-109 and its expected gate wording did not match the active NEXT-051. Portable RAHM Conformance run 41019834175 succeeded only on preceding SHA `ea769d9564ed45c41373cb9435e398fa8adc8261`; Evidence Gate 41019834213 tested that prior SHA and advanced main to `702f41dd7b8347526bd99cb116040df23d158abf`. Reconciliation Watchdog 41027558272 passed on `702f41dd7b8347526bd99cb116040df23d158abf`, but does not substitute for full audit or package conformance.
@@ -4350,7 +4350,7 @@ The bundled living master is an immutable snapshot of the source state used for 
 
 ## EVT-0242 — live mirror synchronization, exact-SHA verification and time-binding repair (2026-10-31)
 
-- Mirror event: [EVT-0242](../BEHAVIOR-TRACE/EVT-0242-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) / [TIME-BINDING-EVT-0242](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0242-LIVE-MIRROR-SYNC-2026-10-31.md). The previous EVT-0241 event commit timestamp was independently recovered and its pending time-binding fields were corrected.
+- Mirror event: [EVT-0242](../../docs/architecture/BEHAVIOR-TRACE/EVT-0242-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) / [TIME-BINDING-EVT-0242](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0242-LIVE-MIRROR-SYNC-2026-10-31.md). The previous EVT-0241 event commit timestamp was independently recovered and its pending time-binding fields were corrected.
 - Current user-turn chain remains POINT-0/061 → IN-099 → OUT-098 → EVT-0240 → CURRENT-111 → NEXT-051. This is a mirror-only event; POINT-0/016, /017, /018 and all later points remain preserved. No new root and no NEXT-052.
 - Canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10` remains 10,479 characters. Exact Library version 7 under stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48` is 10,480 characters and equals source plus one terminal LF. Exact equality is FALSE; normalized content and semantic fields match; no Library rewrite because no supported exported `source_file_ref` route is exposed.
 - The time-binding update commit `b5853aa5aa33b922e7e4388e45d08d59f81fccd1` is at UTC `2026-10-31T06:49:09Z` / Tehran `2026-10-31T10:19:09+03:30`. Living Architecture Audit 41178131603 and Portable RAHM Conformance 41178131559 passed on that exact SHA. Evidence Gate 41178131764 then created `e8e5cf448119e328e12b7801e953edfe9438751e` at UTC `2026-10-31T06:49:19Z` / Tehran `2026-10-31T10:19:19+03:30`; no Actions runs were found for that follow-up SHA at this revision, so it remains NOT VERIFIED.
@@ -4361,7 +4361,7 @@ The bundled living master is an immutable snapshot of the source state used for 
 
 ## EVT-0243 — live mirror synchronization and exact-SHA continuation (2026-11-01)
 
-- Mirror event: [EVT-0243](../../architecture/BEHAVIOR-TRACE/EVT-0243-LIVE-MIRROR-SYNC-RECHECK-2026-11-01.md) / [TIME-BINDING-EVT-0243](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0243-LIVE-MIRROR-SYNC-2026-11-01.md). Event commit `aadc163fdfb0fc872fbf00221fc4d628acf688fc`, UTC `2026-11-01T06:27:16Z`, Tehran `2026-11-01T09:57:16+03:30`; event read-back exact PASS.
+- Mirror event: [EVT-0243](../../docs/architecture/BEHAVIOR-TRACE/EVT-0243-LIVE-MIRROR-SYNC-RECHECK-2026-11-01.md) / [TIME-BINDING-EVT-0243](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0243-LIVE-MIRROR-SYNC-2026-11-01.md). Event commit `aadc163fdfb0fc872fbf00221fc4d628acf688fc`, UTC `2026-11-01T06:27:16Z`, Tehran `2026-11-01T09:57:16+03:30`; event read-back exact PASS.
 - Current user-turn chain remains POINT-0/061 → IN-099 → OUT-098 → EVT-0240 → CURRENT-111 → NEXT-051. This is a mirror-only event; it does not create a new user root or a competing queue. Preserve POINT-0/016, /017, /018, all later points, canonical EVT-0178, EVT-0179 and quarantined duplicate lineage.
 - Canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); exact Library v7 under `libfile_7ac3c9a6ec14819198eb2751e204aa48` (10,480 chars) is source plus one terminal LF. Exact equality FALSE; semantic fields match; no Library write; source unchanged.
 - Living Architecture Audit 41280898957 and Portable RAHM Conformance 41280898982 both SUCCESS on exact SHA `aadc163fdfb0fc872fbf00221fc4d628acf688fc`. Existing canonical starter package v0.3.8 rebuilt; canonical ZIP SHA-256 `6e7ba0be76469836c3b017ca6773899bc0a27136ea91772f4f095493a3a3971f`; ZIP integrity, source-byte read-back, 23 extracted tests, artifact round-trip and paired living-master artifact read-back PASS. These are CI proofs only; external AI-host acceptance remains NOT RUN.- Evidence Gate 41280898970 passed on `aadc...` and created follow-up main `2d60082ef7fe681bb2dc34407a0afabcdd366554` at UTC `2026-11-01T06:27:24Z` / Tehran `2026-11-01T09:57:24+03:30`. No Actions runs were found on that exact head at this revision; it remains NOT VERIFIED. The audit on the tested parent found 15 missing links, including the not-yet-created EVT-0243 time binding; the fresh audit after this registration must confirm the corrected count.
@@ -4409,14 +4409,14 @@ The bundled living master is an immutable snapshot of the source state used for 
 
 ## معماری افزوده — تداوم تصمیم و بازبینی وفادار
 
-- Rule: [DCRG — Decision Continuity & Review Governance](../../reference/REFERENCE-DOCUMENTS/DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03-001.md)
-- Source chain: [POINT-0/061](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261030-061-ARCHITECTURE-GAP-RECONCILIATION.md) → [IN-100](../../0.0/anchors/PALANG-0.0-IN-20261103-100-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [OUT-099](../../0.0/anchors/PALANG-0.0-OUT-20261103-099-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [EVT-0246](../BEHAVIOR-TRACE/EVT-0246-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03.md) → [CURRENT-112](../../0.0/anchors/PALANG-0.0-CURRENT-20261103-112-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Rule: [DCRG — Decision Continuity & Review Governance](../../docs/reference/REFERENCE-DOCUMENTS/DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03-001.md)
+- Source chain: [POINT-0/061](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261030-061-ARCHITECTURE-GAP-RECONCILIATION.md) → [IN-100](../../docs/0.0/anchors/PALANG-0.0-IN-20261103-100-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [OUT-099](../../docs/0.0/anchors/PALANG-0.0-OUT-20261103-099-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [EVT-0246](../../docs/architecture/BEHAVIOR-TRACE/EVT-0246-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE-2026-11-03.md) → [CURRENT-112](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261103-112-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 
 **قاعدهٔ معماری:** پیش از هر بازبینی، تصمیم‌های قبلی مرتبط و دلیل تثبیت آن‌ها بازیابی شوند. تصمیم SETTLED / ACTIVE بدون محرک معتبر بازگشایی نمی‌شود. محرک معتبر: شواهد تازه و قابل‌اعتماد، تغییر شرایط/الزامات، تناقض مستند، خطای اثبات‌شده، ریسک مهمی که پیش‌تر بررسی نشده، یا درخواست صریح کاربر. گزینهٔ جایگزین یا سلیقهٔ دستیار نباید به‌عنوان ایراد واقعی معرفی شود. در صورت بازگشایی موجه، تصمیم قبلی و تبار آن حفظ و دلیل تازه آشکار می‌شود.
 
 این قاعده در مدل دادهٔ تصمیم‌ها، رفتار بازبینی اسناد، تداوم نشست و بستهٔ انتقال میزبان اعمال می‌شود. ثبت در مخزن به‌تنهایی اثبات بازیابی خودکار در نشست/میزبان دیگر نیست؛ آزمون مستقل میزبان در NEXT-051 باقی می‌ماند.
 
-- Checkpoint: [CURRENT-112](../../0.0/anchors/PALANG-0.0-CURRENT-20261103-112-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md).
+- Checkpoint: [CURRENT-112](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261103-112-DECISION-CONTINUITY-AND-REVIEW-GOVERNANCE.md).
 - Status: repository integration recorded; exact read-back and runtime enforcement remain evidence-gated.
 
 ## EVT-0247 — Live mirror synchronization and exact-SHA recovery — 2026-11-04
@@ -4438,7 +4438,7 @@ The bundled living master is an immutable snapshot of the source state used for 
 
 ## EVT-0248 — Live mirror synchronization recheck — 2026-11-04
 
-- Event: [EVT-0248](../BEHAVIOR-TRACE/EVT-0248-LIVE-MIRROR-SYNC-RECHECK-2026-11-04.md); time binding: [TIME-BINDING-EVT-0248](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0248-LIVE-MIRROR-SYNC-2026-11-04.md).
+- Event: [EVT-0248](../../docs/architecture/BEHAVIOR-TRACE/EVT-0248-LIVE-MIRROR-SYNC-RECHECK-2026-11-04.md); time binding: [TIME-BINDING-EVT-0248](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0248-LIVE-MIRROR-SYNC-2026-11-04.md).
 - Canonical source blob remains `de1b75f07241c9b313e476af5f1417177ff78c10`, 10,479 characters. Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, version 7, is 10,480 characters; only one additional terminal LF. Normalized content and semantic fields match; exact equality FALSE; edit distance 1. No source or Library write.
 - Latest root/checkpoint/queue remain POINT-0/061 → CURRENT-112 → NEXT-051. Mirror-only event; no new root, checkpoint or queue. Preserve all historical points and EVT-0177/0178/0179 collision lineage.
 - Latest main at run start: `a318103d4e877ae3a258009d45e338cb5b1f3842`, created by Evidence Gate 41786733124 on tested parent `c086039767eca934302f8323c7de416767ac74fe`. Evidence Gate PASS does not substitute for Living Architecture Audit or Portable RAHM Conformance. Current head has no full exact-SHA audit/conformance receipt and remains NOT VERIFIED.
@@ -4449,7 +4449,7 @@ The bundled living master is an immutable snapshot of the source state used for 
 
 ## EVT-0249 — live mirror synchronization recheck — 2026-11-05
 
-- [EVT-0249](../BEHAVIOR-TRACE/EVT-0249-LIVE-MIRROR-SYNC-RECHECK-2026-11-05.md) / [TIME-BINDING-EVT-0249](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0249-LIVE-MIRROR-SYNC-2026-11-05.md).
+- [EVT-0249](../../docs/architecture/BEHAVIOR-TRACE/EVT-0249-LIVE-MIRROR-SYNC-RECHECK-2026-11-05.md) / [TIME-BINDING-EVT-0249](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0249-LIVE-MIRROR-SYNC-2026-11-05.md).
 - Source blob `de1b75f07241c9b313e476af5f1417177ff78c10`, 10,479 chars; Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, version 7, 10,480 chars. Only one additional terminal LF in Library; normalized content and semantic fields match; exact equality FALSE; edit distance 1. No source or Library write.
 - Root/checkpoint/queue remain POINT-0/061 → CURRENT-112 → NEXT-051. Mirror-only event; no new root or NEXT-052.
 - Event commit `f94dadb23fa923dcadf51e5b8a6a8e4185e1ed3e` was independently read back. Audit 41982538116 and Portable RAHM Conformance 41982538087 both failed on that exact SHA because the export manifest still omitted live references to IN-100, OUT-099 and EVT-0246. The conformance ZIP build then stopped before master sync and reported the embedded living master missing; no package acceptance is inferred.
@@ -4470,7 +4470,7 @@ The bundled living master is an immutable snapshot of the source state used for 
 
 
 ## EVT-0251 — live mirror synchronization recheck — 2026-11-06
-- [EVT-0251](../BEHAVIOR-TRACE/EVT-0251-LIVE-MIRROR-SYNC-RECHECK-2026-11-06.md) / [TIME-BINDING-EVT-0251](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0251-LIVE-MIRROR-SYNC-2026-11-06.md).
+- [EVT-0251](../../docs/architecture/BEHAVIOR-TRACE/EVT-0251-LIVE-MIRROR-SYNC-RECHECK-2026-11-06.md) / [TIME-BINDING-EVT-0251](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0251-LIVE-MIRROR-SYNC-2026-11-06.md).
 - Canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10`, 10,479 chars; Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, exact version 7, 10,480 chars. Normalized content and semantic fields MATCH; exact equality FALSE; edit distance 1, solely one extra terminal LF in Library. No source or Library write; no supported `source_file_ref` upload route; `container_path` not used.
 - Latest root/checkpoint/sole queue remain POINT-0/061 → CURRENT-112 → NEXT-051. Mirror-only; no new root or NEXT-052. Preserve POINT-0/016, /017, /018 / EVT-0180, EVT-0177/time binding, canonical EVT-0178, EVT-0179 and quarantined duplicate-number lineage.
 - Run-start main `ca86557ac9d12582f3962fdece9863c09697378e`: Living Architecture Audit 42015763286 SUCCESS on exact SHA; no Portable RAHM Conformance was found on ca865; latest pre-event conformance 41985021983 was on parent `dfa5c8390350031770af969ac94add523199de51`.
@@ -4483,8 +4483,8 @@ The bundled living master is an immutable snapshot of the source state used for 
 
 A real document-recovery interaction exposed a source-routing failure: the assistant initially searched ChatGPT Library although the user explicitly asked for an artifact in the project GitHub repository. The final bilingual certificate had existed in the repository all along. Direct fetch of the canonical path, followed by repository search and full read-back of the folder README and recovery index, resolved the request.
 
-- Lesson: [LAL-20261106-001](../ARCHITECTURE-LESSONS/lessons/LAL-20261106-001-CANONICAL-SOURCE-ROUTING-AND-READBACK-RECOVERY.md).
-- Event: [EVT-0252](../BEHAVIOR-TRACE/EVT-0252-CANONICAL-SOURCE-ROUTING-AND-READBACK-RECOVERY-2026-11-06.md).
+- Lesson: [LAL-20261106-001](../../docs/architecture/ARCHITECTURE-LESSONS/lessons/LAL-20261106-001-CANONICAL-SOURCE-ROUTING-AND-READBACK-RECOVERY.md).
+- Event: [EVT-0252](../../docs/architecture/BEHAVIOR-TRACE/EVT-0252-CANONICAL-SOURCE-ROUTING-AND-READBACK-RECOVERY-2026-11-06.md).
 - Permanent retrieval rule: honor the destination named by the user; keep GitHub, ChatGPT Library and other stores distinct; read the destination's canonical index/README; resolve the requested alias to an exact path; fetch the full artifact from a known ref; verify path, ref, blob SHA and key content; change strategy within the same destination after an initial miss; never claim absence based on a search of a different store.
 - This case proves the specific GitHub retrieval and repository read-back across linked surfaces only. Automatic runtime enforcement, regression coverage and fresh-host retrieval remain OPEN / NOT PROVEN until independently tested.
 - Continuity: POINT-0/061 → CURRENT-112 → NEXT-051 remains unchanged; no new root or queue identity is created.
@@ -4515,7 +4515,7 @@ Implementation surfaces: `docs/STABLE_RETRIEVAL_CORE.md`, `docs/RETRIEVAL_RUNTIM
 
 ## EVT-0253 — live mirror synchronization recheck — 2026-11-07
 
-- Event/time binding: [EVT-0253](../BEHAVIOR-TRACE/EVT-0253-LIVE-MIRROR-SYNC-RECHECK-2026-11-07.md) / [TIME-BINDING-EVT-0253](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0253-LIVE-MIRROR-SYNC-2026-11-07.md).
+- Event/time binding: [EVT-0253](../../docs/architecture/BEHAVIOR-TRACE/EVT-0253-LIVE-MIRROR-SYNC-RECHECK-2026-11-07.md) / [TIME-BINDING-EVT-0253](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0253-LIVE-MIRROR-SYNC-2026-11-07.md).
 - Mirror-only; latest user root POINT-0/061, checkpoint CURRENT-112, sole active queue NEXT-051. No new root, IN/OUT pair, checkpoint identity or NEXT-052.
 - Canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, exact version 7 (10,480 chars). Normalized content and semantic fields match; exact equality FALSE by one additional terminal LF. No source or Library write.
 - Run-start main `ca715af1d2dca3457c7d6d096bcb88bfccadb7b2`; Living Architecture Audit 42289713783 SUCCESS on that exact SHA. Portable RAHM Conformance was not found on that exact SHA; latest prior conformance 42285693526 tested parent `918d4de4474cc0e4559858a46cd4feb5b30ce36a`.
@@ -4527,7 +4527,7 @@ Implementation surfaces: `docs/STABLE_RETRIEVAL_CORE.md`, `docs/RETRIEVAL_RUNTIM
 
 این الحاقیهٔ افزایشی، ریشهٔ جدید کاربر را به سند مادر متصل می‌کند و هیچ‌یک از ریشه‌ها یا تصمیم‌های تاریخی را حذف یا بازنویسی نمی‌کند.
 
-- Root: [POINT-0/062 (0+)](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261107-062-LIVE-NEWS-CONTINUITY-TEST.md)
+- Root: [POINT-0/062 (0+)](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261107-062-LIVE-NEWS-CONTINUITY-TEST.md)
 - Chain: IN-101 → OUT-100 → EVT-0254 → CURRENT-113 → NEXT-051.
 - Meaning: کاربر از گردش‌کار گزارش خبری به‌عنوان آزمون عملی تداوم هوش و کار استفاده می‌کند: بازیابی دستورهای تثبیت‌شده، گزارش پایهٔ ۰۷:۰۰ تهران، به‌روزرسانی افزایشی در ۱۱/۱۵/۲۳ یا هر زمان درخواستی، تشخیص آخرین گزارش واقعی، عدم فرض گزارش ازدست‌رفته، عدم تکرار خبر بدون تغییر، حفظ منابع/زمان/واحد/عدم‌قطعیت و بازیابی پس از شروع مجدد یا انتقال به میزبان مستقل.
 - Fixed scope and test plan: see POINT-0/062, sections 2–4. The complete test matrix T01–T10 is preserved there.
@@ -4542,11 +4542,11 @@ Finish exact read-back and cross-file reconciliation for POINT-0/062, verify the
 
 This additive amendment carries the user's explicit requirement that every POINT-0, POINT-0.0 and POINT-0+ anchor be connected to the complete Future AI / Palang Footprint graph. The current linear chain is a navigable path through that graph, not a substitute for full historical reconciliation.
 
-- Root: [POINT-0/063 (0+)](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261107-063-GRAPH-WIDE-CONTINUITY-AND-ANCHORING.md).
-- Independent input/output: [IN-102](../../0.0/anchors/PALANG-0.0-IN-20261107-102-GRAPH-WIDE-CONTINUITY.md) + [OUT-101](../../0.0/anchors/PALANG-0.0-OUT-20261107-101-GRAPH-WIDE-CONTINUITY.md).
-- Event/time binding: [EVT-0255](../BEHAVIOR-TRACE/EVT-0255-POINT-063-GRAPH-WIDE-CONTINUITY-2026-11-07.md) / [TIME-BINDING-EVT-0255](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0255-GRAPH-WIDE-CONTINUITY-2026-11-07.md).
-- Current execution checkpoint: [CURRENT-114](../../0.0/anchors/PALANG-0.0-CURRENT-20261107-114-GRAPH-WIDE-CONTINUITY.md).
-- Sole active queue: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). NEXT-052 is not created.
+- Root: [POINT-0/063 (0+)](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261107-063-GRAPH-WIDE-CONTINUITY-AND-ANCHORING.md).
+- Independent input/output: [IN-102](../../docs/0.0/anchors/PALANG-0.0-IN-20261107-102-GRAPH-WIDE-CONTINUITY.md) + [OUT-101](../../docs/0.0/anchors/PALANG-0.0-OUT-20261107-101-GRAPH-WIDE-CONTINUITY.md).
+- Event/time binding: [EVT-0255](../../docs/architecture/BEHAVIOR-TRACE/EVT-0255-POINT-063-GRAPH-WIDE-CONTINUITY-2026-11-07.md) / [TIME-BINDING-EVT-0255](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0255-GRAPH-WIDE-CONTINUITY-2026-11-07.md).
+- Current execution checkpoint: [CURRENT-114](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261107-114-GRAPH-WIDE-CONTINUITY.md).
+- Sole active queue: [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). NEXT-052 is not created.
 - Parent/history: POINT-0/062 (0+) → POINT-0/061 lineage and all older roots/checkpoints/events/lessons/contracts/reference documents remain preserved. No historical branch is deleted, silently renumbered or declared resolved.
 - Required connected surfaces: 0.0 central registry, Reference Index, Behavior Trace index, Integration Queue, this living mother, recovery/export manifests and source-backed historical anchors.
 - Root registration commit: `7b55de39c19691a28ae50406e50ee6ddbcd3c4fe`; UTC `2026-11-07T18:13:22Z`; Asia/Tehran `2026-11-07T21:43:22+03:30`. User-message time remains UNKNOWN / UNVERIFIED. UTC is the permanent base.
@@ -4561,11 +4561,11 @@ This amendment records a new root and an active execution plan. It does not clai
 
 The user confirmed two permanent automatic daily news reports, plus two manual suggested update windows. This is an additive continuation of POINT-0/063 and does not replace earlier anchors.
 
-- Root: [POINT-0/064](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261107-064-DAILY-NEWS-CADENCE-AND-24H-CONTINUITY.md).
-- Independent input/output: [IN-103](../../0.0/anchors/PALANG-0.0-IN-20261107-103-DAILY-NEWS-CADENCE.md) + [OUT-102](../../0.0/anchors/PALANG-0.0-OUT-20261107-102-DAILY-NEWS-CADENCE.md).
-- Event/time binding: [EVT-0256](../BEHAVIOR-TRACE/EVT-0256-POINT-064-DAILY-NEWS-CADENCE-2026-11-07.md) / [TIME-BINDING-EVT-0256](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0256-DAILY-NEWS-CADENCE-2026-11-07.md).
-- Current checkpoint: [CURRENT-115](../../0.0/anchors/PALANG-0.0-CURRENT-20261107-115-DAILY-NEWS-CADENCE.md).
-- Sole active queue: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). No NEXT-052.
+- Root: [POINT-0/064](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261107-064-DAILY-NEWS-CADENCE-AND-24H-CONTINUITY.md).
+- Independent input/output: [IN-103](../../docs/0.0/anchors/PALANG-0.0-IN-20261107-103-DAILY-NEWS-CADENCE.md) + [OUT-102](../../docs/0.0/anchors/PALANG-0.0-OUT-20261107-102-DAILY-NEWS-CADENCE.md).
+- Event/time binding: [EVT-0256](../../docs/architecture/BEHAVIOR-TRACE/EVT-0256-POINT-064-DAILY-NEWS-CADENCE-2026-11-07.md) / [TIME-BINDING-EVT-0256](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0256-DAILY-NEWS-CADENCE-2026-11-07.md).
+- Current checkpoint: [CURRENT-115](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261107-115-DAILY-NEWS-CADENCE.md).
+- Sole active queue: [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). No NEXT-052.
 - Morning automation ID `6aef62341be0819185b2b0c8c126e672`: existing task updated; daily 07:00 Asia/Tehran; fixed prior-24-hour coverage from previous day 07:00 to current day 07:00; enabled and dashboard-read-back verified.
 - Night automation ID `6aef6dcfc5c8819182290d92908e94d7`: new task created; daily 23:00 Asia/Tehran; same-day 07:00–23:00 coverage; enabled and dashboard-read-back verified.
 - 11:00 and 15:00 remain manual suggested windows; «بروزرسانی خبر» can be requested at any time.
@@ -4579,9 +4579,9 @@ Continue the existing project-wide graph, package, exact-SHA, RAHM, runtime, per
 
 The user's departure instruction is appended under the existing POINT-0/064 root. It does not create a competing root or queue.
 
-- Independent input/output: [IN-104](../../0.0/anchors/PALANG-0.0-IN-20261107-104-DEPARTURE-CONTINUITY-AND-PERMANENT-TEST-GOVERNANCE.md) + [OUT-103](../../0.0/anchors/PALANG-0.0-OUT-20261107-103-DEPARTURE-CONTINUITY-AND-PERMANENT-TEST-GOVERNANCE.md).
-- Event: [EVT-0257](../BEHAVIOR-TRACE/EVT-0257-POINT-064-DEPARTURE-CONTINUITY-2026-11-07.md).
-- Root remains [POINT-0/064](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261107-064-DAILY-NEWS-CADENCE-AND-24H-CONTINUITY.md); current checkpoint remains [CURRENT-115](../../0.0/anchors/PALANG-0.0-CURRENT-20261107-115-DAILY-NEWS-CADENCE.md); sole queue remains [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). NEXT-052 is not created.
+- Independent input/output: [IN-104](../../docs/0.0/anchors/PALANG-0.0-IN-20261107-104-DEPARTURE-CONTINUITY-AND-PERMANENT-TEST-GOVERNANCE.md) + [OUT-103](../../docs/0.0/anchors/PALANG-0.0-OUT-20261107-103-DEPARTURE-CONTINUITY-AND-PERMANENT-TEST-GOVERNANCE.md).
+- Event: [EVT-0257](../../docs/architecture/BEHAVIOR-TRACE/EVT-0257-POINT-064-DEPARTURE-CONTINUITY-2026-11-07.md).
+- Root remains [POINT-0/064](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261107-064-DAILY-NEWS-CADENCE-AND-24H-CONTINUITY.md); current checkpoint remains [CURRENT-115](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261107-115-DAILY-NEWS-CADENCE.md); sole queue remains [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md). NEXT-052 is not created.
 - User requires all remaining work to continue under 0.0, historical graph connections to remain preserved, and the living mother/reference documents and applicable tests to remain active/living.
 - Maintain append-only history and UTC-first provenance. User-message time remains UNKNOWN / UNVERIFIED.
 - Keep N04–N08, G01–G06, T01–T04, H01–H05, exact-final-SHA audit/conformance, package hash/read-back, RAHM, runtime, persistent-memory/Buffer, Dropbox and independent-host gates OPEN until direct evidence supports each status.
@@ -4589,7 +4589,7 @@ The user's departure instruction is appended under the existing POINT-0/064 root
 
 
 ## EVT-0258 — live mirror synchronization recheck — 2026-11-08
-- Event/time binding: [EVT-0258](../BEHAVIOR-TRACE/EVT-0258-LIVE-MIRROR-SYNC-RECHECK-2026-11-08.md) / [TIME-BINDING-EVT-0258](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0258-LIVE-MIRROR-SYNC-2026-11-08.md).
+- Event/time binding: [EVT-0258](../../docs/architecture/BEHAVIOR-TRACE/EVT-0258-LIVE-MIRROR-SYNC-RECHECK-2026-11-08.md) / [TIME-BINDING-EVT-0258](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0258-LIVE-MIRROR-SYNC-2026-11-08.md).
 - Mirror-only; latest user root POINT-0/064, checkpoint CURRENT-115, sole active queue NEXT-051. No new root, IN/OUT pair, checkpoint identity or NEXT-052.
 - Canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, exact version 7 (10,480 chars). Normalized full content and semantic fields MATCH; exact equality FALSE by one additional terminal LF. No source or Library write; supported `source_file_ref` was not used because unchanged-source policy prohibits a rewrite in this case.
 - Latest full audit/conformance pair: Living Architecture Audit 42345139960 and Portable RAHM Conformance 42345140040 both SUCCESS on exact SHA `af0fdb89c2e357661a7a8703776174cf78016df9`. Latest Evidence Gate 42454843737 succeeded on exact tested SHA `07b3e6b0653c4a3299cfec3ed4f997db01f0a95f`; its evidence commit is not an audit or conformance result. Exact-current-main audit/conformance remain NOT VERIFIED.
@@ -4597,7 +4597,7 @@ The user's departure instruction is appended under the existing POINT-0/064 root
 - Preserve POINT-0/016, POINT-0/017, POINT-0/018 / EVT-0180, EVT-0177 and its time binding, canonical EVT-0178, EVT-0179 collision lineage and the quarantined duplicate-number draft.
 
 ## EVT-0260 — live mirror synchronization recheck — 2026-11-09
-- Event/time binding: [EVT-0260](../BEHAVIOR-TRACE/EVT-0260-LIVE-MIRROR-SYNC-RECHECK-2026-11-09.md) / [TIME-BINDING-EVT-0260](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0260-LIVE-MIRROR-SYNC-2026-11-09.md).
+- Event/time binding: [EVT-0260](../../docs/architecture/BEHAVIOR-TRACE/EVT-0260-LIVE-MIRROR-SYNC-RECHECK-2026-11-09.md) / [TIME-BINDING-EVT-0260](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0260-LIVE-MIRROR-SYNC-2026-11-09.md).
 - Mirror-only under latest user root POINT-0/064, checkpoint CURRENT-115, sole queue NEXT-051; latest user-turn event remains EVT-0257. No new root, IN/OUT pair, checkpoint identity or NEXT-052.
 - Canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, exact version 7 (10,480 chars). Normalized content/semantic fields MATCH; exact equality FALSE by one terminal LF. No source or Library write.
 - Audit/conformance 42575319320 / 42575319373 SUCCESS on exact SHA `3d4c4b9e6929e894f1bc78c8962c4ef05b94ff0a`; Evidence Gate 42575319341 SUCCESS on that tested SHA and created follow-up main `7b6c4e3aa93fef0e9ad3be04ef96b6aa041d8e61`; that follow-up is NOT VERIFIED by the preceding pair.
@@ -4606,7 +4606,7 @@ The user's departure instruction is appended under the existing POINT-0/064 root
 
 ## EVT-0261 — live mirror synchronization — 2026-11-10
 
-- Event: [EVT-0261](../BEHAVIOR-TRACE/EVT-0261-LIVE-MIRROR-SYNC-RECHECK-2026-11-10.md); time binding: [TIME-BINDING-EVT-0261](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0261-LIVE-MIRROR-SYNC-2026-11-10.md).
+- Event: [EVT-0261](../../docs/architecture/BEHAVIOR-TRACE/EVT-0261-LIVE-MIRROR-SYNC-RECHECK-2026-11-10.md); time binding: [TIME-BINDING-EVT-0261](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0261-LIVE-MIRROR-SYNC-2026-11-10.md).
 - Mirror-only under POINT-0/064 / latest user-turn event EVT-0257 / CURRENT-115 / NEXT-051. No new user root, IN/OUT pair, checkpoint identity or NEXT-052.
 - Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` (10,479 chars); Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, file ID `file_00000000942881f8a4a3833110229fb7`, version 7 (10,480 chars). Normalized content and semantic fields MATCH; exact equality FALSE by one extra terminal LF. No source or Library write.
 - Event commit `02b7a4f2afbd3f8f210e5aecda548c91ca93a283`: UTC `2026-11-10T06:47:53Z` / Tehran `2026-11-10T10:17:53+03:30`. Initial time-binding commit `7384c94bf2bdcc5aff31801db487fbd598042fd4`: UTC `2026-11-10T06:48:18Z` / Tehran `2026-11-10T10:18:18+03:30`.
@@ -4622,7 +4622,7 @@ The user's departure instruction is appended under the existing POINT-0/064 root
 
 ## EVT-0262 — live mirror synchronization — 2026-11-11
 
-- Event: [EVT-0262](../BEHAVIOR-TRACE/EVT-0262-LIVE-MIRROR-SYNC-RECHECK-2026-11-11.md); time binding: [TIME-BINDING-EVT-0262](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0262-LIVE-MIRROR-SYNC-2026-11-11.md).
+- Event: [EVT-0262](../../docs/architecture/BEHAVIOR-TRACE/EVT-0262-LIVE-MIRROR-SYNC-RECHECK-2026-11-11.md); time binding: [TIME-BINDING-EVT-0262](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0262-LIVE-MIRROR-SYNC-2026-11-11.md).
 - Run-start main: `336c12e415f41a61b0fa281772478674c4aac9dd`; comparison against `main` returned IDENTICAL (0 ahead / 0 behind).
 - Event commit: `4c1c63b8dff0e9b56c78566aac3f308d546f2e8e`, UTC `2026-11-11T06:50:02Z`, Tehran `2026-11-11T10:20:02.000+03:30`. Time-binding commit: `131fff1d2d78168916228e37305e0463f75f3876`, UTC `2026-11-11T06:50:04Z`, Tehran `2026-11-11T10:20:04.000+03:30`.
 - Latest user-turn root POINT-0/064; latest user-turn event EVT-0257; checkpoint CURRENT-115 v1.0.3; sole active queue NEXT-051 v1.0.38. Mirror-only; no new root, IN/OUT pair, checkpoint identity or NEXT-052.
@@ -4646,7 +4646,7 @@ The user's departure instruction is appended under the existing POINT-0/064 root
 
 ## EVT-0266 — mirror-only synchronization — 2026-11-14
 
-- [EVT-0266](../BEHAVIOR-TRACE/EVT-0266-LIVE-MIRROR-SYNC-RECHECK-2026-11-14.md) / [TIME-BINDING-EVT-0266](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0266-LIVE-MIRROR-SYNC-2026-11-14.md).
+- [EVT-0266](../../docs/architecture/BEHAVIOR-TRACE/EVT-0266-LIVE-MIRROR-SYNC-RECHECK-2026-11-14.md) / [TIME-BINDING-EVT-0266](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0266-LIVE-MIRROR-SYNC-2026-11-14.md).
 - Latest user-turn root POINT-0/064 / EVT-0257; checkpoint CURRENT-115 v1.0.6; sole active queue NEXT-051 v1.0.41. Mirror-only: no new root, IN/OUT pair, checkpoint identity, or NEXT-052.
 - Source blob `de1b75f07241c9b313e476af5f1417177ff78c10`; Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, exact version 7. Normalized full content MATCH; exact equality FALSE by one extra terminal LF; no source or Library write.
 - Living Architecture Audit 43414527299 passed on exact current-main SHA `12a4d4427e60ea0dfecf47de7e45791b64c56980`. Latest Portable RAHM Conformance 43382337406 passed on parent SHA `a86dc13ba026ccf53c536f5ae68f989fc7cab9c6`; exact-current-main conformance remains NOT VERIFIED.
@@ -4655,7 +4655,7 @@ The user's departure instruction is appended under the existing POINT-0/064 root
 
 ## EVT-0267 — live mirror synchronization — 2026-11-15
 
-- [EVT-0267](../BEHAVIOR-TRACE/EVT-0267-LIVE-MIRROR-SYNC-RECHECK-2026-11-15.md) / [TIME-BINDING-EVT-0267](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0267-LIVE-MIRROR-SYNC-2026-11-15.md).
+- [EVT-0267](../../docs/architecture/BEHAVIOR-TRACE/EVT-0267-LIVE-MIRROR-SYNC-RECHECK-2026-11-15.md) / [TIME-BINDING-EVT-0267](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0267-LIVE-MIRROR-SYNC-2026-11-15.md).
 - This is a mirror-only event under POINT-0/064 / EVT-0257 / CURRENT-115 / NEXT-051. No new root, IN/OUT pair or successor queue.
 - Repository source remains authoritative and unchanged. Library v7 normalized content matches with one additional terminal LF; no rewrite and no byte-identity claim.
 - Run-start main 7ff74e0ad2ad7a2f1c5bafbc7ab9510530b5bca1 had Living Architecture Audit 43585962833 PASS on that exact SHA; exact-head RAHM conformance was not found.
@@ -4663,7 +4663,7 @@ The user's departure instruction is appended under the existing POINT-0/064 root
 
 ## EVT-0268 — live mirror synchronization — 2026-11-16
 
-- [EVT-0268](../BEHAVIOR-TRACE/EVT-0268-LIVE-MIRROR-SYNC-RECHECK-2026-11-16.md) / [TIME-BINDING-EVT-0268](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0268-LIVE-MIRROR-SYNC-2026-11-16.md).
+- [EVT-0268](../../docs/architecture/BEHAVIOR-TRACE/EVT-0268-LIVE-MIRROR-SYNC-RECHECK-2026-11-16.md) / [TIME-BINDING-EVT-0268](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0268-LIVE-MIRROR-SYNC-2026-11-16.md).
 - Mirror-only under POINT-0/064 / EVT-0257 / CURRENT-115 / NEXT-051; no new root, IN/OUT pair or successor queue.
 - CURRENT-115 top-level header was v1.0.7 at run start; its duplicated embedded body says v1.0.4 and historical summaries include v1.0.6. Preserve the discrepancy without inferred reconciliation.
 - Source/Library normalized match; Library v7 has one additional terminal LF; no source or Library write.
@@ -4683,17 +4683,17 @@ The user's departure instruction is appended under the existing POINT-0/064 root
 
 
 ## POINT-0/065 (0+) — تداوم و ثبت زنده — 2026-11-20
-- ریشهٔ جدید افزایشی: [POINT-0/065](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261120-065-CONTINUITY-AND-REGISTRATION.md).
-- ورودی/خروجی: [IN-105](../../0.0/anchors/PALANG-0.0-IN-20261120-105-CONTINUITY-AND-REGISTRATION.md) / [OUT-104](../../0.0/anchors/PALANG-0.0-OUT-20261120-104-CONTINUITY-AND-REGISTRATION.md).
-- رفتارشناسی و زمان: [EVT-0280](../BEHAVIOR-TRACE/EVT-0280-POINT-065-CONTINUITY-AND-REGISTRATION-2026-11-20.md) / [TIME-BINDING-EVT-0280](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0280-POINT-065-CONTINUITY-AND-REGISTRATION-2026-11-20.md).
-- وضعیت جاری ۰.۰: [CURRENT-116](../../0.0/anchors/PALANG-0.0-CURRENT-20261120-116-CONTINUITY-AND-REGISTRATION.md); صف اجرایی یگانه همچنان [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- ریشهٔ جدید افزایشی: [POINT-0/065](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261120-065-CONTINUITY-AND-REGISTRATION.md).
+- ورودی/خروجی: [IN-105](../../docs/0.0/anchors/PALANG-0.0-IN-20261120-105-CONTINUITY-AND-REGISTRATION.md) / [OUT-104](../../docs/0.0/anchors/PALANG-0.0-OUT-20261120-104-CONTINUITY-AND-REGISTRATION.md).
+- رفتارشناسی و زمان: [EVT-0280](../../docs/architecture/BEHAVIOR-TRACE/EVT-0280-POINT-065-CONTINUITY-AND-REGISTRATION-2026-11-20.md) / [TIME-BINDING-EVT-0280](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0280-POINT-065-CONTINUITY-AND-REGISTRATION-2026-11-20.md).
+- وضعیت جاری ۰.۰: [CURRENT-116](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261120-116-CONTINUITY-AND-REGISTRATION.md); صف اجرایی یگانه همچنان [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - این ریشه جایگزین POINT-0/064، CURRENT-115، شاخهٔ مستقل گواهی یا مدل رفتاری EVT-0279 نیست. گیت‌های باز فقط با شواهد مستقیم بسته می‌شوند.
 
 
 ## CURRENT-117 / EVT-0281 — آخرین نسخهٔ تأییدشده و تحویل برحسب درخواست — 2026-11-20
 
-- [CURRENT-117](../../0.0/anchors/PALANG-0.0-CURRENT-20261120-117-LATEST-VERIFIED-EXPORT-DELIVERY.md) / [IN-106](../../0.0/anchors/PALANG-0.0-IN-20261120-106-LATEST-VERIFIED-EXPORT-DELIVERY.md) / [OUT-105](../../0.0/anchors/PALANG-0.0-OUT-20261120-105-LATEST-VERIFIED-EXPORT-DELIVERY.md) / [EVT-0281](../BEHAVIOR-TRACE/EVT-0281-LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-2026-11-20.md).
-- قرارداد زنده: [LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY](../../portable/RAHM/LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-CONTRACT-2026-11-20-001.md).
+- [CURRENT-117](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261120-117-LATEST-VERIFIED-EXPORT-DELIVERY.md) / [IN-106](../../docs/0.0/anchors/PALANG-0.0-IN-20261120-106-LATEST-VERIFIED-EXPORT-DELIVERY.md) / [OUT-105](../../docs/0.0/anchors/PALANG-0.0-OUT-20261120-105-LATEST-VERIFIED-EXPORT-DELIVERY.md) / [EVT-0281](../../docs/architecture/BEHAVIOR-TRACE/EVT-0281-LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-2026-11-20.md).
+- قرارداد زنده: [LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY](../../docs/portable/RAHM/LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-CONTRACT-2026-11-20-001.md).
 - قاعدهٔ دائمی: با درخواست «آخرین نسخه کامل را بده»، HEAD مخزن، رسید ساخت ZIP، SHA-256 واقعی، موجودی فایل‌ها، آزمون استخراج، آزمون‌های بسته و تطبیق سند مادر بررسی و سپس ZIP + سند مادر متناظر + رسید/چک‌سام تحویل شود.
 - هویت و نام ZIP ثابت می‌ماند؛ نسخهٔ داخلی فقط با تغییر واقعی محتوا و ثبت شواهد ارتقا می‌یابد. هیچ ZIP قدیمی بدون اعلام SHA و وضعیت آزمون، «آخرین نسخه» نامیده نمی‌شود.
 - سطح‌های وضعیت از هم جدا هستند: SOURCE_CURRENT / PACKAGE_BUILT / PACKAGE_VERIFIED / HOST_RECOVERED. ساخت و آزمون ZIP به‌تنهایی بازیابی میزبان مستقل را ثابت نمی‌کند.
@@ -4703,14 +4703,14 @@ The user's departure instruction is appended under the existing POINT-0/064 root
 
 ## به‌روزرسانی زنده — تحویل دائمی آخرین نسخهٔ تأییدشده (۲۰۲۶-۱۱-۲۰)
 
-- رویداد مرجع: [EVT-0281](../../architecture/BEHAVIOR-TRACE/EVT-0281-LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-2026-11-20.md)؛ وضعیت جاری: [CURRENT-117](../../0.0/anchors/PALANG-0.0-CURRENT-20261120-117-LATEST-VERIFIED-EXPORT-DELIVERY.md)؛ صف یگانه: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- رویداد مرجع: [EVT-0281](../../docs/architecture/BEHAVIOR-TRACE/EVT-0281-LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-2026-11-20.md)؛ وضعیت جاری: [CURRENT-117](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261120-117-LATEST-VERIFIED-EXPORT-DELIVERY.md)؛ صف یگانه: [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - فرمان «آخرین نسخه کامل را بده» یعنی ابتدا HEAD جاری، رسید ساخت، SHA-256 واقعی، موجودی ZIP، CRC، آزمون‌های استخراج‌شده، سند مادر هم‌نسخه و وضعیت میزبان مستقل بررسی شود؛ سپس ZIP + سند مادر متناظر + رسید + چک‌سام تحویل گردد.
 - ساخت موفق Run 44730867048 روی SHA `e11234a6a4dac5d13938cfa0d19deae9da966b38`: نسخهٔ داخلی 0.3.9؛ ZIP برابر ۲۰۵٬۸۳۹ بایت؛ SHA-256 برابر `b6bc06e6d50d1d3e6ec271d7f56dcde2e6981d272de3a6fed4c3c31cf428b115`؛ ۱۴ فایل؛ CRC، تطبیق بایت با منبع، آزمون استخراج و round-trip موفق.
 - گردش‌کار برای انتشار پایدار در برچسب `haif-latest-verified` توسعه داده شده است. فقط پس از موفقیت آزمون‌های بسته، ZIP، سند مادر متناظر، رسید JSON، چک‌سام و latest pointer منتشر می‌شوند.
 - نشانی پایدار: https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified
 - تا اجرای موفق گردش‌کار روی HEAD پس از تغییر انتشار و بازخوانی release، وضعیت آخرین HEAD در انتظار آزمون تازه است؛ رسید SHA قدیمی به HEAD جدید تعمیم داده نمی‌شود.
 - پذیرش واقعی میزبان مستقل، حافظهٔ پایدار، capture خودکار و اجرای پس‌زمینه همچنان NOT RUN / NOT VERIFIED هستند. PACKAGE_VERIFIED معادل HOST_RECOVERED نیست.
-- راهنمای اجرایی: [Latest Verified Export Delivery Runbook](../../portable/RAHM/LATEST-VERIFIED-EXPORT-DELIVERY-RUNBOOK.md).
+- راهنمای اجرایی: [Latest Verified Export Delivery Runbook](../../docs/portable/RAHM/LATEST-VERIFIED-EXPORT-DELIVERY-RUNBOOK.md).
 
 
 ## وضعیت تأییدشدهٔ آخرین بسته و تحویل دائمی — ۲۰۲۶-۱۱-۲۰
@@ -4722,7 +4722,7 @@ The user's departure instruction is appended under the existing POINT-0/064 root
 - انتشار دائمی: [haif-latest-verified](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified)، شناسهٔ انتشار 452647521؛ پنج دارایی ZIP، سند مادر، رسید، latest pointer و checksum در metadata بازخوانی شدند.
 - از این پس «آخرین نسخه کامل را بده» فرمان تحویل است: HEAD و receipt دوباره بررسی و سپس ZIP + سند مادر متناظر + receipt + checksum ارائه می‌شود. اگر HEAD جلوتر از receipt باشد، بسته باید دوباره ساخته شود.
 - سطح بسته PACKAGE_VERIFIED است؛ HOST_RECOVERED نیست. ورود واقعی روی میزبان مستقل، بازیابی نشست تازه، حافظهٔ پایدار، capture خودکار و اجرای پس‌زمینه همچنان OPEN / NOT RUN / NOT VERIFIED باقی می‌مانند.
-- نقطهٔ جاری [CURRENT-117](../../0.0/anchors/PALANG-0.0-CURRENT-20261120-117-LATEST-VERIFIED-EXPORT-DELIVERY.md)؛ رویداد [EVT-0281](../../architecture/BEHAVIOR-TRACE/EVT-0281-LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-2026-11-20.md)؛ صف یگانه [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- نقطهٔ جاری [CURRENT-117](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261120-117-LATEST-VERIFIED-EXPORT-DELIVERY.md)؛ رویداد [EVT-0281](../../docs/architecture/BEHAVIOR-TRACE/EVT-0281-LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-2026-11-20.md)؛ صف یگانه [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 
 
 ## آخرین رسید تولید — نسخهٔ قابل تحویل و هم‌ارزی HEAD (۲۰۲۶-۱۱-۲۰)
@@ -4749,7 +4749,7 @@ The user's departure instruction is appended under the existing POINT-0/064 root
 
 # POINT-0/066 (0+) — تعامل زنده و تکامل پیوستهٔ بسته (۲۰۲۶-۱۱-۲۰)
 
-- زنجیرهٔ ثبت: [POINT-0/066 (0+)](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261120-066-INTERACTIVE-EVOLUTION-0PLUS.md) → [IN-107](../../0.0/anchors/PALANG-0.0-IN-20261120-107-INTERACTIVE-EVOLUTION.md) → [OUT-106](../../0.0/anchors/PALANG-0.0-OUT-20261120-106-INTERACTIVE-EVOLUTION.md) → [EVT-0282](../BEHAVIOR-TRACE/EVT-0282-INTERACTIVE-EVOLUTION-0PLUS-2026-11-20.md) → [TIME-BINDING-EVT-0282](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0282-INTERACTIVE-EVOLUTION-2026-11-20.md) → [CURRENT-118](../../0.0/anchors/PALANG-0.0-CURRENT-20261120-118-INTERACTIVE-EVOLUTION-0PLUS.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- زنجیرهٔ ثبت: [POINT-0/066 (0+)](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261120-066-INTERACTIVE-EVOLUTION-0PLUS.md) → [IN-107](../../docs/0.0/anchors/PALANG-0.0-IN-20261120-107-INTERACTIVE-EVOLUTION.md) → [OUT-106](../../docs/0.0/anchors/PALANG-0.0-OUT-20261120-106-INTERACTIVE-EVOLUTION.md) → [EVT-0282](../../docs/architecture/BEHAVIOR-TRACE/EVT-0282-INTERACTIVE-EVOLUTION-0PLUS-2026-11-20.md) → [TIME-BINDING-EVT-0282](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0282-INTERACTIVE-EVOLUTION-2026-11-20.md) → [CURRENT-118](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261120-118-INTERACTIVE-EVOLUTION-0PLUS.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - وضعیت: ACTIVE / LIVING / EVOLVABLE / OPEN. این ثبت به ریشه‌های پیشین و صف یگانه NEXT-051 افزوده می‌شود؛ هیچ شاخهٔ تاریخی حذف یا بازنویسی نمی‌شود.
 - اصل تازه: بستهٔ آماده، خروجی منجمد و پایان پروژه نیست؛ یک بستهٔ قابل‌تکامل و قابل‌بازیابی است. هر پیشرفتِ حاصل از تعامل، آموزش، اصلاح، بازخورد یا کشف باید ابتدا به‌عنوان ورودی/خروجی مستقل ثبت، طبقه‌بندی، اعتبارسنجی و با معماری تطبیق داده شود؛ سپس سند مادر و اجزای مربوط به‌روزرسانی، آزمون‌ها اجرا، همان ZIP با همان نام و هویت بازسازی، رسید و SHA-256 تازه تولید و نتیجه بازخوانی شود.
 - نام فایل ZIP و شناسهٔ پایدار بسته ثابت می‌مانند؛ نسخهٔ داخلی، محتوا، سند مادر همراه، manifest، آزمون‌ها، رسید و digest با پیشرفت‌های تأییدشده افزایش می‌یابند. رسیدهای قبلی تاریخچهٔ تغییرناپذیرند.
@@ -4761,9 +4761,9 @@ The user's departure instruction is appended under the existing POINT-0/064 root
 
 ## POINT-0/066 — ریشهٔ دائمی مدل اولیه و ارتقای خودکارِ شواهدپایه — 2026-11-20
 
-- ریشهٔ بنیادین و دائمی مدل تعاملی اولیه: [POINT-0/066 (0+)](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261120-066-INTERACTIVE-EVOLUTION-0PLUS.md).
-- زنجیرهٔ تکمیلی: [IN-108](../../0.0/anchors/PALANG-0.0-IN-20261120-108-AUTO-PROMOTION-CLARIFICATION.md) → [OUT-107](../../0.0/anchors/PALANG-0.0-OUT-20261120-107-AUTO-PROMOTION-CLARIFICATION.md) → [EVT-0283](../BEHAVIOR-TRACE/EVT-0283-PERMANENT-0PLUS-AUTO-PROMOTION-2026-11-20.md) → [TIME-BINDING-EVT-0283](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0283-PERMANENT-0PLUS-AUTO-PROMOTION-2026-11-20.md) → [CURRENT-118](../../0.0/anchors/PALANG-0.0-CURRENT-20261120-118-INTERACTIVE-EVOLUTION-0PLUS.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
-- قرارداد حاکم: [ارتقای خودکار پیشرفت‌های تأییدشده و تکامل زنده](INTERACTION-DRIVEN-AUTO-PROMOTION-AND-LIVING-EVOLUTION-CONTRACT-2026-11-20-001.md).
+- ریشهٔ بنیادین و دائمی مدل تعاملی اولیه: [POINT-0/066 (0+)](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261120-066-INTERACTIVE-EVOLUTION-0PLUS.md).
+- زنجیرهٔ تکمیلی: [IN-108](../../docs/0.0/anchors/PALANG-0.0-IN-20261120-108-AUTO-PROMOTION-CLARIFICATION.md) → [OUT-107](../../docs/0.0/anchors/PALANG-0.0-OUT-20261120-107-AUTO-PROMOTION-CLARIFICATION.md) → [EVT-0283](../../docs/architecture/BEHAVIOR-TRACE/EVT-0283-PERMANENT-0PLUS-AUTO-PROMOTION-2026-11-20.md) → [TIME-BINDING-EVT-0283](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0283-PERMANENT-0PLUS-AUTO-PROMOTION-2026-11-20.md) → [CURRENT-118](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261120-118-INTERACTIVE-EVOLUTION-0PLUS.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- قرارداد حاکم: [ارتقای خودکار پیشرفت‌های تأییدشده و تکامل زنده](../../docs/architecture/%D9%85%D8%AF%D9%84%20%D8%A7%D9%88%D9%84%DB%8C%D9%87%20AI/INTERACTION-DRIVEN-AUTO-PROMOTION-AND-LIVING-EVOLUTION-CONTRACT-2026-11-20-001.md).
 - اصل دائمی: هر خروجی بادوام و مرتبط با پروژه که از مسیر مجاز مخزن، ابزار یا گردش‌کار وارد شود، بدون نیاز به فرمان تکراری کاربر وارد چرخهٔ ارزیابی و راستی‌آزمایی می‌شود. فقط پس از عبور از منشأشناسی، حریم خصوصی و مجوز، سازگاری معماری، آزمون‌های لازم روی SHA دقیق، تطبیق لایه‌ها و بازخوانی، در سند مادر و منابع مرتبط ادغام و به‌عنوان پیشرفت تأییدشده ارتقا می‌یابد.
 - خروجی نامطمئن، حساس، متناقض، مخرب، نیازمند رضایت یا فاقد آزمون در وضعیت OPEN / QUARANTINED باقی می‌ماند؛ هیچ متن تأییدشدهٔ کاربر بی‌اجازه بازنویسی نمی‌شود.
 - سند مادر، منابع در حال کار، نسخهٔ نامزدِ آزمون و ZIP نهایی در یک تبار واحد و تکامل‌پذیر نگهداری می‌شوند. شناسه و نام ZIP و نشانی پایدار انتشار ثابت است؛ نسخهٔ داخلی، محتوا، manifest، آزمون‌ها، رسید و SHA-256 فقط با پیشرفت واقعی و آزموده‌شده به‌روزرسانی می‌شوند.
@@ -4772,7 +4772,7 @@ The user's departure instruction is appended under the existing POINT-0/064 root
 
 ## CURRENT-119 — تداوم تکامل‌پذیر و بستهٔ قابل‌انتقال — 2026-11-20
 
-- زنجیرهٔ جاری: [POINT-0/066 (0+)](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261120-066-INTERACTIVE-EVOLUTION-0PLUS.md) → [IN-109](../../0.0/anchors/PALANG-0.0-IN-20261120-109-CONTINUOUS-TRANSFERABLE-EVOLUTION.md) → [OUT-108](../../0.0/anchors/PALANG-0.0-OUT-20261120-108-CONTINUOUS-TRANSFERABLE-EVOLUTION.md) → [EVT-0284](../BEHAVIOR-TRACE/EVT-0284-CONTINUOUS-TRANSFERABLE-EVOLUTION-2026-11-20.md) → [TIME-BINDING-EVT-0284](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0284-CONTINUOUS-TRANSFERABLE-EVOLUTION-2026-11-20.md) → [CURRENT-119](../../0.0/anchors/PALANG-0.0-CURRENT-20261120-119-CONTINUOUS-TRANSFERABLE-EVOLUTION.md) → صف یگانهٔ [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- زنجیرهٔ جاری: [POINT-0/066 (0+)](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261120-066-INTERACTIVE-EVOLUTION-0PLUS.md) → [IN-109](../../docs/0.0/anchors/PALANG-0.0-IN-20261120-109-CONTINUOUS-TRANSFERABLE-EVOLUTION.md) → [OUT-108](../../docs/0.0/anchors/PALANG-0.0-OUT-20261120-108-CONTINUOUS-TRANSFERABLE-EVOLUTION.md) → [EVT-0284](../../docs/architecture/BEHAVIOR-TRACE/EVT-0284-CONTINUOUS-TRANSFERABLE-EVOLUTION-2026-11-20.md) → [TIME-BINDING-EVT-0284](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0284-CONTINUOUS-TRANSFERABLE-EVOLUTION-2026-11-20.md) → [CURRENT-119](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261120-119-CONTINUOUS-TRANSFERABLE-EVOLUTION.md) → صف یگانهٔ [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - خواستهٔ تثبیت‌شده: مدل تعاملی در یک مسیر پیوسته رشد می‌کند؛ خروجی‌های پذیرفته‌شده پس از عبور از دروازه‌های شواهد، آزمون، بازخوانی و تطبیق، در همان سند مادر و بستهٔ انتقالی منعکس می‌شوند.
 - هویت بستهٔ یگانه حفظ می‌شود: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip` و نشانی پایدار انتشار `haif-latest-verified`. نام ثابت است؛ محتوا و نسخهٔ داخلی می‌توانند با شواهد معتبر تکامل یابند.
 - در زمان ثبت این الحاق، آخرین بستهٔ شناخته‌شده از اجرای `44748473475` روی SHA `61f7accb1fca7a01885eaec92355f0ace64d8056` ساخته شده و digest دارایی ZIP برابر `sha256:43ab3dba611bdc4575de83fdb4dcdcc75cfeb82987508bed0a337ec76b167fb6` بوده است. این شاهد تاریخی، ساخت بسته برای HEAD جدید CURRENT-119 را ثابت نمی‌کند.
@@ -4782,7 +4782,7 @@ The user's departure instruction is appended under the existing POINT-0/064 root
 
 ## CURRENT-120 — نقطهٔ ۰+ و آخرین بستهٔ موفق قابل‌انتقال — 2026-11-20
 
-- زنجیرهٔ جدید: [POINT-0/066](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261120-066-INTERACTIVE-EVOLUTION-0PLUS.md) → [CURRENT-119](../../0.0/anchors/PALANG-0.0-CURRENT-20261120-119-CONTINUOUS-TRANSFERABLE-EVOLUTION.md) → [POINT-0/067 (0+)](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261120-067-CONTINUOUS-TRANSFERABLE-EVOLUTION-0PLUS.md) → [IN-110](../../0.0/anchors/PALANG-0.0-IN-20261120-110-LATEST-TRANSFERABLE-ZIP-AND-LIVING-EVOLUTION.md) → [OUT-109](../../0.0/anchors/PALANG-0.0-OUT-20261120-109-LATEST-TRANSFERABLE-ZIP-AND-LIVING-EVOLUTION.md) → [EVT-0285](../BEHAVIOR-TRACE/EVT-0285-LATEST-TRANSFERABLE-ZIP-AND-LIVING-EVOLUTION-2026-11-20.md) → [TIME-BINDING-EVT-0285](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0285-LATEST-TRANSFERABLE-ZIP-AND-LIVING-EVOLUTION-2026-11-20.md) → [CURRENT-120](../../0.0/anchors/PALANG-0.0-CURRENT-20261120-120-LATEST-TRANSFERABLE-ZIP-AND-LIVING-EVOLUTION.md) → تنها صف [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- زنجیرهٔ جدید: [POINT-0/066](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261120-066-INTERACTIVE-EVOLUTION-0PLUS.md) → [CURRENT-119](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261120-119-CONTINUOUS-TRANSFERABLE-EVOLUTION.md) → [POINT-0/067 (0+)](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261120-067-CONTINUOUS-TRANSFERABLE-EVOLUTION-0PLUS.md) → [IN-110](../../docs/0.0/anchors/PALANG-0.0-IN-20261120-110-LATEST-TRANSFERABLE-ZIP-AND-LIVING-EVOLUTION.md) → [OUT-109](../../docs/0.0/anchors/PALANG-0.0-OUT-20261120-109-LATEST-TRANSFERABLE-ZIP-AND-LIVING-EVOLUTION.md) → [EVT-0285](../../docs/architecture/BEHAVIOR-TRACE/EVT-0285-LATEST-TRANSFERABLE-ZIP-AND-LIVING-EVOLUTION-2026-11-20.md) → [TIME-BINDING-EVT-0285](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0285-LATEST-TRANSFERABLE-ZIP-AND-LIVING-EVOLUTION-2026-11-20.md) → [CURRENT-120](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261120-120-LATEST-TRANSFERABLE-ZIP-AND-LIVING-EVOLUTION.md) → تنها صف [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - آخرین بستهٔ موفق در لحظهٔ ثبت: اجرای `44749613468` روی SHA `571c6c74fbaf100a678b6aae2940c525cf7f03bf`؛ ZIP با حجم `212107` بایت و digest برابر `sha256:8a2c272b27b26d7de05c45e4ced52a5fed42af9d41ce7c79978e0c032de58506`.
 - همان نام ZIP و نشانی انتشار پایدار حفظ می‌شوند؛ محتوا، نسخهٔ داخلی، runtime، manifest، دستورالعمل بازیابی و آزمون‌ها فقط با پیشرفت واقعی و شواهد معتبر تکامل می‌یابند.
 - ساخت و استخراج آرشیو، بارگذاری، دانلود مجدد و تطبیق بایت‌ها، رسید و انتشار پایدار در اجرای یادشده موفق بودند. بازیابی روی میزبان مستقل و پاک همچنان OPEN / NOT RUN است.
@@ -4809,10 +4809,10 @@ The user's departure instruction is appended under the existing POINT-0/064 root
 - پذیرش یک پیشنهاد نیازمند آزمون RAHM، نامزد CHILD و تأیید صریح مالک است. فقط پس از آن تغییر پذیرفته‌شده به MASTER می‌رسد.
 
 ### سند اجرایی متصل
-[معماری اتصال چندمیزبانی و تکامل تحت حاکمیت مالک](./معماری%20اتصال%20چندمیزبانی%20و%20تکامل%20تحت%20حاکمیت%20مالک.md) — Stable ID: `HAIF-MULTI-HOST-GOVERNED-EVOLUTION-ARCHITECTURE-2026-11-20-001`, Version 1.0.0.
+[معماری اتصال چندمیزبانی و تکامل تحت حاکمیت مالک](../../docs/architecture/%D9%85%D8%AF%D9%84%20%D8%A7%D9%88%D9%84%DB%8C%D9%87%20AI/%D9%85%D8%B9%D9%85%D8%A7%D8%B1%DB%8C%20%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%20%DA%86%D9%86%D8%AF%D9%85%DB%8C%D8%B2%D8%A8%D8%A7%D9%86%DB%8C%20%D9%88%20%D8%AA%DA%A9%D8%A7%D9%85%D9%84%20%D8%AA%D8%AD%D8%AA%20%D8%AD%D8%A7%DA%A9%D9%85%DB%8C%D8%AA%20%D9%85%D8%A7%D9%84%DA%A9.md) — Stable ID: `HAIF-MULTI-HOST-GOVERNED-EVOLUTION-ARCHITECTURE-2026-11-20-001`, Version 1.0.0.
 
 ### زنجیرهٔ ثبت
-[POINT-0/068](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261120-068-OWNER-GOVERNED-MULTI-HOST-EVOLUTION-0PLUS.md) → [IN-111](../../0.0/anchors/PALANG-0.0-IN-20261120-111-OWNER-GOVERNED-MULTI-HOST-EVOLUTION.md) → [OUT-110](../../0.0/anchors/PALANG-0.0-OUT-20261120-110-OWNER-GOVERNED-MULTI-HOST-EVOLUTION.md) → [EVT-0286](../BEHAVIOR-TRACE/EVT-0286-OWNER-GOVERNED-MULTI-HOST-EVOLUTION-2026-11-20.md) → [TIME-BINDING-EVT-0286](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0286-OWNER-GOVERNED-MULTI-HOST-EVOLUTION-2026-11-20.md) → [CURRENT-121](../../0.0/anchors/PALANG-0.0-CURRENT-20261120-121-OWNER-GOVERNED-MULTI-HOST-EVOLUTION.md) → تنها صف [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+[POINT-0/068](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261120-068-OWNER-GOVERNED-MULTI-HOST-EVOLUTION-0PLUS.md) → [IN-111](../../docs/0.0/anchors/PALANG-0.0-IN-20261120-111-OWNER-GOVERNED-MULTI-HOST-EVOLUTION.md) → [OUT-110](../../docs/0.0/anchors/PALANG-0.0-OUT-20261120-110-OWNER-GOVERNED-MULTI-HOST-EVOLUTION.md) → [EVT-0286](../../docs/architecture/BEHAVIOR-TRACE/EVT-0286-OWNER-GOVERNED-MULTI-HOST-EVOLUTION-2026-11-20.md) → [TIME-BINDING-EVT-0286](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0286-OWNER-GOVERNED-MULTI-HOST-EVOLUTION-2026-11-20.md) → [CURRENT-121](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261120-121-OWNER-GOVERNED-MULTI-HOST-EVOLUTION.md) → تنها صف [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 
 ### وضعیت اجرایی و گیت‌های باز
 - طراحی حاکمیتی و ثبت مخزنی: انجام شد؛ read-back و CI دقیق پس از تغییرات جاری باید بررسی شود.
@@ -4869,7 +4869,7 @@ The user's departure instruction is appended under the existing POINT-0/064 root
 مخزن شامل `scripts/host_adapter.py` و `scripts/host_adapter_github_worker.py` است. آداپتر دریافت احراز هویت‌شده و صف پایدار محلی دارد؛ worker جداگانه با credential مجاز می‌تواند رویدادهای صف‌شده را به مسیرهای رویداد مخزن منتقل کند و read-back را تطبیق دهد. CI روی ورودی مصنوعی، احراز هویت، read-back، retry همسان، رد retry متعارض و restart آزمون‌هایی را PASS کرده است. این موارد اثبات کد و مسیر آزمایش‌شده‌اند، نه اثبات اتصال واقعی میزبان AI، استقرار worker، تنظیم credential واقعی یا Host Registry چندمیزبانی. این گیت‌ها OPEN می‌مانند تا رسید end-to-end از خود میزبان و مقصد دریافت شود.
 
 ### زنجیرهٔ ثبت
-[POINT-0/069](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261120-069-PERMANENT-INTERACTION-LEDGER-0PLUS.md) → [IN-112](../../0.0/anchors/PALANG-0.0-IN-20261120-112-PERMANENT-INTERACTION-LEDGER.md) → [OUT-111](../../0.0/anchors/PALANG-0.0-OUT-20261120-111-PERMANENT-INTERACTION-LEDGER.md) → [EVT-0287](../BEHAVIOR-TRACE/EVT-0287-PERMANENT-INTERACTION-LEDGER-2026-11-20.md) → [TIME-BINDING-EVT-0287](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0287-PERMANENT-INTERACTION-LEDGER-2026-11-20.md) → [CURRENT-122](../../0.0/anchors/PALANG-0.0-CURRENT-20261120-122-PERMANENT-INTERACTION-LEDGER.md) → تنها صف [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+[POINT-0/069](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261120-069-PERMANENT-INTERACTION-LEDGER-0PLUS.md) → [IN-112](../../docs/0.0/anchors/PALANG-0.0-IN-20261120-112-PERMANENT-INTERACTION-LEDGER.md) → [OUT-111](../../docs/0.0/anchors/PALANG-0.0-OUT-20261120-111-PERMANENT-INTERACTION-LEDGER.md) → [EVT-0287](../../docs/architecture/BEHAVIOR-TRACE/EVT-0287-PERMANENT-INTERACTION-LEDGER-2026-11-20.md) → [TIME-BINDING-EVT-0287](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0287-PERMANENT-INTERACTION-LEDGER-2026-11-20.md) → [CURRENT-122](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261120-122-PERMANENT-INTERACTION-LEDGER.md) → تنها صف [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 
 ### زمان
 EVT-0287 commit UTC `2026-11-20T14:35:06Z` / Tehran `2026-11-20T18:05:06+03:30`. زمان دقیق پیام کاربر UNKNOWN / UNVERIFIED.
@@ -4887,7 +4887,7 @@ EVT-0287 commit UTC `2026-11-20T14:35:06Z` / Tehran `2026-11-20T18:05:06+03:30`.
 
 ## POINT-0/069 — Host Registry and isolated intake implementation details
 
-- Host Registry source: [HOST-REGISTRY](../HOST-REGISTRY/README.md), [schema](../HOST-REGISTRY/HOST-REGISTRY-SCHEMA.json), [current registry](../HOST-REGISTRY/HOST-REGISTRY.json). The registry is intentionally empty until a real host passes identity and acceptance checks.
+- Host Registry source: [HOST-REGISTRY](../../docs/architecture/HOST-REGISTRY/README.md), [schema](../../docs/architecture/HOST-REGISTRY/HOST-REGISTRY-SCHEMA.json), [current registry](../../docs/architecture/HOST-REGISTRY/HOST-REGISTRY.json). The registry is intentionally empty until a real host passes identity and acceptance checks.
 - Event destination: legacy INGESTED-EVENTS is frozen; current owner export destination is private RAHM.
 - Worker enforcement: the legacy direct GitHub worker is fully disabled. Current main protection is active; required approval=1 and Code Owner enforcement remain pending owner UI configuration.
 - Schema conformance: interaction pair schema now requires distinct input/output IDs, host/session identity, exact master commit, checkpoint, adapter version, digest, privacy/redaction state, capture status and receipt.
@@ -4998,7 +4998,7 @@ ONE_MESSAGE_HOST_BOOTSTRAP_FA.md تنها پیام آغازین میزبان د�
 
 با تأیید صریح مالک، همین محل تعامل به‌عنوان ادامهٔ جاری زیر ریشهٔ یگانهٔ POINT-0 ثبت شد. 0+ و 0++ نشانگرهای همان ریشه‌اند و ریشهٔ مستقل یا صف موازی ایجاد نمی‌کنند.
 
-زنجیرهٔ جاری: [POINT-0/072](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-072-CURRENT-CHAT-ANCHOR-0PLUS.md) → [IN-115](../../0.0/anchors/PALANG-0.0-IN-20261121-115-CURRENT-CHAT-ANCHOR.md) → [OUT-114](../../0.0/anchors/PALANG-0.0-OUT-20261121-114-CURRENT-CHAT-ANCHOR.md) → [EVT-0291](../BEHAVIOR-TRACE/EVT-0291-SET-CURRENT-POINT-AND-LATEST-DELIVERY-2026-11-21.md) → [TIME-BINDING-EVT-0291](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0291-SET-CURRENT-POINT-AND-LATEST-DELIVERY-2026-11-21.md) → [CURRENT-125](../../0.0/anchors/PALANG-0.0-CURRENT-20261121-125-CURRENT-CHAT-ANCHOR.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+زنجیرهٔ جاری: [POINT-0/072](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-072-CURRENT-CHAT-ANCHOR-0PLUS.md) → [IN-115](../../docs/0.0/anchors/PALANG-0.0-IN-20261121-115-CURRENT-CHAT-ANCHOR.md) → [OUT-114](../../docs/0.0/anchors/PALANG-0.0-OUT-20261121-114-CURRENT-CHAT-ANCHOR.md) → [EVT-0291](../../docs/architecture/BEHAVIOR-TRACE/EVT-0291-SET-CURRENT-POINT-AND-LATEST-DELIVERY-2026-11-21.md) → [TIME-BINDING-EVT-0291](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0291-SET-CURRENT-POINT-AND-LATEST-DELIVERY-2026-11-21.md) → [CURRENT-125](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261121-125-CURRENT-CHAT-ANCHOR.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 
 زمان دقیق ارسال پیام مالک UNKNOWN / UNVERIFIED باقی می‌ماند. زمان لنگر ثبت ریشه در TIME-BINDING-EVT-0291 برابر 2026-11-21T08:51:46Z UTC و 2026-11-21T12:21:46+03:30 تهران است؛ این زمان، زمان ارسال پیام نیست.
 
@@ -5020,7 +5020,7 @@ POINT-0/072 → IN-115 → OUT-114 → EVT-0291 → TIME-BINDING-EVT-0291 → CU
 
 این نسخه ادامهٔ POINT-0/072 است و هیچ ریشه، شاخه یا سابقه‌ای را حذف یا بازشماری نمی‌کند. درخواست جاری مالک برای تکمیل معماری در مخزن و ارائهٔ آخرین نسخه، به زنجیرهٔ اصلی متصل شد:
 
-[POINT-0/073](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-073-FINAL-ARCHITECTURE-AND-DELIVERY.md) → [IN-116](../../0.0/anchors/PALANG-0.0-IN-20261121-116-FINAL-ARCHITECTURE-AND-DELIVERY.md) → [OUT-115](../../0.0/anchors/PALANG-0.0-OUT-20261121-115-FINAL-ARCHITECTURE-AND-DELIVERY.md) → [EVT-0292](../BEHAVIOR-TRACE/EVT-0292-FINAL-ARCHITECTURE-AND-DELIVERY-2026-11-21.md) → [TIME-BINDING-EVT-0292](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0292-FINAL-ARCHITECTURE-AND-DELIVERY-2026-11-21.md) → [CURRENT-126](../../0.0/anchors/PALANG-0.0-CURRENT-20261121-126-FINAL-ARCHITECTURE-AND-DELIVERY.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+[POINT-0/073](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-073-FINAL-ARCHITECTURE-AND-DELIVERY.md) → [IN-116](../../docs/0.0/anchors/PALANG-0.0-IN-20261121-116-FINAL-ARCHITECTURE-AND-DELIVERY.md) → [OUT-115](../../docs/0.0/anchors/PALANG-0.0-OUT-20261121-115-FINAL-ARCHITECTURE-AND-DELIVERY.md) → [EVT-0292](../../docs/architecture/BEHAVIOR-TRACE/EVT-0292-FINAL-ARCHITECTURE-AND-DELIVERY-2026-11-21.md) → [TIME-BINDING-EVT-0292](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0292-FINAL-ARCHITECTURE-AND-DELIVERY-2026-11-21.md) → [CURRENT-126](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261121-126-FINAL-ARCHITECTURE-AND-DELIVERY.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 
 قاعدهٔ تحویل: «آخرین نسخه» فقط بسته‌ای است که از HEAD مشخص ساخته شده و رسید exact-head آن، SHA-256 واقعی، اندازه، inventory، CRC، تطبیق بایت‌های سند مادر همراه، آزمون‌های استخراج‌شده و artifact read-back را دارد. رسیدهای 0.4.3 و 0.4.4 قبلی تاریخی‌اند و برای این نسخه قابل استفادهٔ مجدد نیستند.
 
@@ -5035,7 +5035,7 @@ NEXT-051 تنها صف فعال است. هیچ NEXT-052 یا ریشهٔ مواز
 
 درخواست مالک برای تبدیل این تعامل به نشانگر ۰++ و اتصال آن به زنجیره ثبت شد. ۰++ ریشهٔ جدید نیست؛ نشانگر تکاملی روی همان POINT-0 واحد است. هدف بعدی، تکمیل مسیر موجود ۰.۰ است و NEXT-051 تنها صف فعال باقی می‌ماند.
 
-زنجیرهٔ جاری: [POINT-0/074](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-074-0PLUSPLUS-TO-0-0-COMPLETION.md) → [IN-117](../../0.0/anchors/PALANG-0.0-IN-20261121-117-0PLUSPLUS-TO-0-0-COMPLETION.md) → [OUT-116](../../0.0/anchors/PALANG-0.0-OUT-20261121-116-0PLUSPLUS-TO-0-0-COMPLETION.md) → [EVT-0293](../BEHAVIOR-TRACE/EVT-0293-0PLUSPLUS-TO-0-0-COMPLETION-2026-11-21.md) → [TIME-BINDING-EVT-0293](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0293-0PLUSPLUS-TO-0-0-COMPLETION-2026-11-21.md) → [CURRENT-127](../../0.0/anchors/PALANG-0.0-CURRENT-20261121-127-0PLUSPLUS-TO-0-0-COMPLETION.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+زنجیرهٔ جاری: [POINT-0/074](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-074-0PLUSPLUS-TO-0-0-COMPLETION.md) → [IN-117](../../docs/0.0/anchors/PALANG-0.0-IN-20261121-117-0PLUSPLUS-TO-0-0-COMPLETION.md) → [OUT-116](../../docs/0.0/anchors/PALANG-0.0-OUT-20261121-116-0PLUSPLUS-TO-0-0-COMPLETION.md) → [EVT-0293](../../docs/architecture/BEHAVIOR-TRACE/EVT-0293-0PLUSPLUS-TO-0-0-COMPLETION-2026-11-21.md) → [TIME-BINDING-EVT-0293](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0293-0PLUSPLUS-TO-0-0-COMPLETION-2026-11-21.md) → [CURRENT-127](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261121-127-0PLUSPLUS-TO-0-0-COMPLETION.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 
 معیار پایان ۰.۰: هم‌ترازی همهٔ اشاره‌گرهای جاری و گراف؛ اصلاح آزمون‌های منبع؛ اجرای آزمون‌های exact-HEAD؛ ساخت ZIP با همان شناسه و نام canonical؛ تطبیق بایت سند مادر، inventory، CRC، SHA-256 و read-back؛ و ثبت رسید میزبان مستقل. هر قابلیت خارجی که بدون میزبان مجاز و واقعی قابل آزمون نیست OPEN / NOT RUN باقی می‌ماند. هیچ زمان پیام، اتصال، مجوز یا پذیرش میزبان حدس زده نمی‌شود.
 
@@ -5048,7 +5048,7 @@ NEXT-051 تنها صف فعال است. هیچ NEXT-052 یا ریشهٔ مواز
 
 این نسخه ادامهٔ POINT-0/074 و همان ریشهٔ canonical POINT-0 است؛ هیچ ریشه یا صف موازی ایجاد نمی‌شود. مالک سه هدف را تعیین کرد: (۱) نشان‌گذاری همین تعامل و اتصال آن به زنجیره؛ (۲) چکش معماری و آماده‌سازی اجرای واقعی در مخزن؛ (۳) تحویل دستور آغاز به‌کار و پذیرش اولین میزبان جدید.
 
-زنجیرهٔ این ادامه: [POINT-0/075](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-075-FIRST-HOST-REPO-WORKSPACE.md) → [IN-118](../../0.0/anchors/PALANG-0.0-IN-20261121-118-FIRST-HOST-REPO-WORKSPACE.md) → [OUT-117](../../0.0/anchors/PALANG-0.0-OUT-20261121-117-FIRST-HOST-REPO-WORKSPACE.md) → [EVT-0294](../BEHAVIOR-TRACE/EVT-0294-FIRST-HOST-REPO-WORKSPACE-2026-11-21.md) → [TIME-BINDING-EVT-0294](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0294-FIRST-HOST-REPO-WORKSPACE-2026-11-21.md) → [CURRENT-128](../../0.0/anchors/PALANG-0.0-CURRENT-20261121-128-FIRST-HOST-REPO-WORKSPACE.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+زنجیرهٔ این ادامه: [POINT-0/075](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-075-FIRST-HOST-REPO-WORKSPACE.md) → [IN-118](../../docs/0.0/anchors/PALANG-0.0-IN-20261121-118-FIRST-HOST-REPO-WORKSPACE.md) → [OUT-117](../../docs/0.0/anchors/PALANG-0.0-OUT-20261121-117-FIRST-HOST-REPO-WORKSPACE.md) → [EVT-0294](../../docs/architecture/BEHAVIOR-TRACE/EVT-0294-FIRST-HOST-REPO-WORKSPACE-2026-11-21.md) → [TIME-BINDING-EVT-0294](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0294-FIRST-HOST-REPO-WORKSPACE-2026-11-21.md) → [CURRENT-128](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261121-128-FIRST-HOST-REPO-WORKSPACE.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 
 ### قرارداد میزبان اول
 
@@ -5074,11 +5074,11 @@ NEXT-051 تنها صف فعال است. هیچ NEXT-052 یا ریشهٔ مواز
 
 این نسخه ادامهٔ POINT-0/075 و CURRENT-128 است؛ هدف آن ساخت پروژهٔ GPT-6 موازی نیست. مالک صریحاً یک میزبان GPT-6 تازه و فاقد سابقهٔ تعامل قبلی با پروژه را تأیید کرد تا پس از اعطای دسترسی واقعی از سوی مالک، مخزن canonical را بخواند و وارد workspace/working checkout مستقل شود.
 
-زنجیرهٔ ثبت: [POINT-0/076](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-076-ZERO-STATE-GPT6-HOST.md) → [IN-119](../../0.0/anchors/PALANG-0.0-IN-20261121-119-ZERO-STATE-GPT6-HOST.md) → [OUT-118](../../0.0/anchors/PALANG-0.0-OUT-20261121-118-ZERO-STATE-GPT6-HOST.md) → [EVT-0295](../BEHAVIOR-TRACE/EVT-0295-ZERO-STATE-GPT6-REPOSITORY-HOST-2026-11-21.md) → [TIME-BINDING-EVT-0295](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0295-ZERO-STATE-GPT6-REPOSITORY-HOST-2026-11-21.md) → [CURRENT-129](../../0.0/anchors/PALANG-0.0-CURRENT-20261121-129-ZERO-STATE-GPT6-HOST.md) → [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+زنجیرهٔ ثبت: [POINT-0/076](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-076-ZERO-STATE-GPT6-HOST.md) → [IN-119](../../docs/0.0/anchors/PALANG-0.0-IN-20261121-119-ZERO-STATE-GPT6-HOST.md) → [OUT-118](../../docs/0.0/anchors/PALANG-0.0-OUT-20261121-118-ZERO-STATE-GPT6-HOST.md) → [EVT-0295](../../docs/architecture/BEHAVIOR-TRACE/EVT-0295-ZERO-STATE-GPT6-REPOSITORY-HOST-2026-11-21.md) → [TIME-BINDING-EVT-0295](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0295-ZERO-STATE-GPT6-REPOSITORY-HOST-2026-11-21.md) → [CURRENT-129](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261121-129-ZERO-STATE-GPT6-HOST.md) → [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 
 ### میزبان صفر و دستور مستقل
 
-دستور یک‌پیامی مستقل برای نشست تازه در [ZERO-STATE-GPT6-REPOSITORY-HOST-BOOTSTRAP_FA.md](../../../prototype/haif-gpt6-starter/ZERO-STATE-GPT6-REPOSITORY-HOST-BOOTSTRAP_FA.md) ثبت شده است. میزبان باید بدون اتکا به حافظهٔ چت قبلی، اتصال واقعی GitHub، هویت مخزن، exact HEAD، سند مادر، CURRENT-129، CURRENT-128 و NEXT-051 را بازیابی کند؛ سپس workspace مستقل بسازد، آزمون‌های واقعی و مجاز را اجرا کند و رسید پذیرش ارائه دهد.
+دستور یک‌پیامی مستقل برای نشست تازه در [ZERO-STATE-GPT6-REPOSITORY-HOST-BOOTSTRAP_FA.md](ZERO-STATE-GPT6-REPOSITORY-HOST-BOOTSTRAP_FA.md) ثبت شده است. میزبان باید بدون اتکا به حافظهٔ چت قبلی، اتصال واقعی GitHub، هویت مخزن، exact HEAD، سند مادر، CURRENT-129، CURRENT-128 و NEXT-051 را بازیابی کند؛ سپس workspace مستقل بسازد، آزمون‌های واقعی و مجاز را اجرا کند و رسید پذیرش ارائه دهد.
 
 ### حدود اثبات و مجوز
 
@@ -5105,7 +5105,7 @@ NEXT-051 تنها صف فعال است. هیچ NEXT-052 یا ریشهٔ مواز
 - نسخه‌های قدیمی، شکست‌ها، ناسازگاری‌ها و digestها حفظ می‌شوند و هیچ تاریخچه‌ای بی‌صدا بازنویسی نمی‌شود.
 
 ### دستور عمومی میزبان و بازیابی
-دستور مستقل و مدل‌خنثی در [UNIVERSAL_AI_HOST_ENTRY_FA.md](../../../prototype/universal-host/UNIVERSAL_AI_HOST_ENTRY_FA.md) ثبت شده است. این دستور کشف اتصال رسمی GitHub، خواندن exact HEAD، بازیابی Reference Index و سند مادر، اعتبارسنجی ZIP، استخراج امن در پوشهٔ مجزا، اجرای آزمون، ساخت workspace فقط در صورت وجود قابلیت واقعی، ثبت receipt و مسیر PR را تعریف می‌کند.
+دستور مستقل و مدل‌خنثی در [UNIVERSAL_AI_HOST_ENTRY_FA.md](../universal-host/UNIVERSAL_AI_HOST_ENTRY_FA.md) ثبت شده است. این دستور کشف اتصال رسمی GitHub، خواندن exact HEAD، بازیابی Reference Index و سند مادر، اعتبارسنجی ZIP، استخراج امن در پوشهٔ مجزا، اجرای آزمون، ساخت workspace فقط در صورت وجود قابلیت واقعی، ثبت receipt و مسیر PR را تعریف می‌کند.
 
 ### گام‌های 0.0
 0.0-1 کشف منبع و تثبیت exact HEAD؛ 0.0-2 بازیابی و تطبیق معماری؛ 0.0-3 اعتبارسنجی و استخراج بسته؛ 0.0-4 اجرای آزمون‌ها و کنترل‌های منفی؛ 0.0-5 ساخت workspace و اثبات persistence/isolation؛ 0.0-6 بازیابی clean-host و restart؛ 0.0-7 تکامل کنترل‌شده و ارتقای قابلیت‌های آزموده‌شده. معیار پذیرش و وضعیت هر مرحله در NEXT-051 ثبت می‌شود.
@@ -5130,10 +5130,10 @@ NEXT-051 تنها صف فعال است. هیچ NEXT-052 یا ریشهٔ مواز
 
 ## زنجیرهٔ جاری کامل — POINT-0/081
 
-- [POINT-0/081](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-081-COPYABLE-HOST-BOOTSTRAP.md) / [IN-124](../../0.0/anchors/PALANG-0.0-IN-20261121-124-COPYABLE-HOST-BOOTSTRAP.md) / [OUT-123](../../0.0/anchors/PALANG-0.0-OUT-20261121-123-COPYABLE-HOST-BOOTSTRAP.md).
-- [EVT-0301](../BEHAVIOR-TRACE/EVT-0301-POINT-081-COPYABLE-HOST-BOOTSTRAP-2026-11-21.md) / [TIME-BINDING-EVT-0301](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0301-POINT-081-COPYABLE-HOST-BOOTSTRAP-2026-11-21.md).
-- [CURRENT-134](../../0.0/anchors/PALANG-0.0-CURRENT-20261121-134-COPYABLE-HOST-BOOTSTRAP.md) → sole [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
-- One-message transfer source: [ONE_MESSAGE_HOST_BOOTSTRAP_FA.md](../../../prototype/haif-gpt6-starter/ONE_MESSAGE_HOST_BOOTSTRAP_FA.md).
+- [POINT-0/081](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261121-081-COPYABLE-HOST-BOOTSTRAP.md) / [IN-124](../../docs/0.0/anchors/PALANG-0.0-IN-20261121-124-COPYABLE-HOST-BOOTSTRAP.md) / [OUT-123](../../docs/0.0/anchors/PALANG-0.0-OUT-20261121-123-COPYABLE-HOST-BOOTSTRAP.md).
+- [EVT-0301](../../docs/architecture/BEHAVIOR-TRACE/EVT-0301-POINT-081-COPYABLE-HOST-BOOTSTRAP-2026-11-21.md) / [TIME-BINDING-EVT-0301](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0301-POINT-081-COPYABLE-HOST-BOOTSTRAP-2026-11-21.md).
+- [CURRENT-134](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261121-134-COPYABLE-HOST-BOOTSTRAP.md) → sole [NEXT-051](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- One-message transfer source: [ONE_MESSAGE_HOST_BOOTSTRAP_FA.md](ONE_MESSAGE_HOST_BOOTSTRAP_FA.md).
 - Package 0.4.9 receipt predates this point; rebuild and exact-main verification are required before claiming a current ZIP.
 
 
@@ -5175,3 +5175,16 @@ The rebuilt starter package remains internal version 0.5.1 with the canonical fi
 **Current canonical continuation candidate:** `POINT-0/GOLDEN → IN-136 → OUT-135 → EVT-0323 → TIME-BINDING-EVT-0323 → CURRENT-150.03 → NEXT-051.03`
 
 CURRENT-150.02 / NEXT-051.02 remain the last accepted Golden revisions until the .03 candidate passes exact-SHA validation and controlled merge. This pointer does not change the living mother version (1.8.4) and does not claim package acceptance or independent-host recovery.
+
+
+---
+
+## الحاقیهٔ افزایشی 1.8.4-B — EVT-0324 / CURRENT-150.04 candidate (2026-11-23)
+
+این الحاقیه نسخهٔ مادر را تغییر نمی‌دهد و downgrade یا بازشماری ندارد. زنجیرهٔ همین ادامه روی همان ریشه و صف یگانه است: POINT-0/GOLDEN → IN-137 → OUT-136 → EVT-0324 → TIME-BINDING-EVT-0324 → CURRENT-150.04 → NEXT-051.04.
+
+مالک خواسته است ثبت نقاط و اتصال تعاملات مرتبط بدون تکرار فرمان انجام شود؛ این قاعده از این پس در اجرای دستیار رعایت می‌شود، اما ثبت مخزنی فقط پس از commit/read-back واقعی ادعا می‌شود. ده پروندهٔ Partner #114–#123، Issue #20 و #21، مسیرهای وابسته به مالک، و امکان زمان‌بندی اجرای محدود در NEXT-051.04 نگهداری می‌شوند.
+
+زمان رویداد از commit دقیق EVT-0324 گرفته شده است: UTC 2026-11-23T04:05:33Z؛ تهران 2026-11-23T07:35:33+03:30. زمان پیام مالک حدس زده نشده است.
+
+این revision فقط candidate روی شاخهٔ کاری است. CURRENT-150.03 / NEXT-051.03 همچنان candidate قبلی و CURRENT-150.02 / NEXT-051.02 آخرین وضعیت پذیرفته‌شدهٔ Golden هستند تا بررسی exact-SHA و ادغام کنترل‌شده. هیچ گیت عملیاتی با این ثبت بسته نشده است.
