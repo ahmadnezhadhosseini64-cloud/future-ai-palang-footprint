@@ -22,7 +22,7 @@ The feedback path is proposal-only. No RAHM or AI-host code may write to MAIN/MA
 
 ## Implemented in this candidate
 
-- `scripts/rahm-runtime/rahm_runtime.py`: runnable standard-library-only RAHM ledger.
+- `scripts/rahm-runtime/rahm_runtime.py`: runnable standard-library-only RAHM ledger.\n- `scripts/rahm-runtime/rahm_service.py`: authenticated loopback HTTP service with health and HAIF-ingest endpoints; token is supplied through environment, never committed.
 - `scripts/rahm-runtime/tests/test_rahm_runtime.py`: source-integrity, idempotence, overwrite protection and authority-boundary tests.
 - `scripts/rahm-runtime/README.md`: operating instructions and explicit limitations.
 - RAHM verifies the HAIF source chain before ingest; preserves source event ID/hash; rejects tampering; skips duplicate source hashes; appends a separately hash-chained RAHM event; labels all outputs `PROPOSAL_ONLY_NO_MASTER_WRITE`.
@@ -33,7 +33,7 @@ This architecture is intended to remain ACTIVE / LIVING under the existing POINT
 
 A repository document or passing CI is not proof of a permanently running service. The current RAHM kernel runs when explicitly invoked and persists to a local JSON file. It is not a daemon, scheduled agent, cloud service, or automatic ChatGPT capture mechanism.
 
-## Required next acceptance gates
+## Local live-service capability\n\nThe RAHM bridge now has a continuously listening local HTTP service when explicitly started by an operator. It requires a 32-character-or-longer environment token, defaults to loopback, verifies source chains, persists the ledger, and rejects unauthenticated ingestion. CI tests exercise authenticated ingestion, duplicate replay, health, and ledger persistence. This is an operational local process, not a deployed 24/7 service: process supervision, restart policy, secure remote exposure, monitoring, backups and host provisioning remain open.\n\n## Required next acceptance gates
 
 1. Run both HAIF and RAHM test suites on the exact candidate head.
 2. Add end-to-end fixture test: HAIF init → interaction → checkpoint → export → RAHM ingest → repeated ingest → RAHM verify.
