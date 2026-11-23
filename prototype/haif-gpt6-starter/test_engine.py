@@ -218,7 +218,7 @@ class PortablePackageProtocolTests(unittest.TestCase):
         self.assertEqual(manifest["archive_policy"]["current_internal_version"], manifest["version"])
         self.assertEqual(manifest["archive_policy"]["update_mode"], "REBUILD_IN_PLACE_SAME_PACKAGE_IDENTITY")
         chain = manifest["parent_architecture"]
-        self.assertEqual(manifest["current_continuation_chain"], "POINT-0/GOLDEN → IN-136 → OUT-135 → EVT-0323 → TIME-BINDING-EVT-0323 → CURRENT-150.03 → NEXT-051.03")
+        self.assertEqual(manifest["current_continuation_chain"], "POINT-0/GOLDEN → CURRENT-150.04 → IN-138 → BRIDGE-0138 → OUT-137 → EVT-0325 → TIME-BINDING-EVT-0325 → CURRENT-150.05 → NEXT-051.05")
         self.assertLess(chain.index("POINT-0/057 (0+ marker on canonical root 0)"), chain.index("IN-095"))
         self.assertLess(chain.index("IN-095"), chain.index("OUT-094"))
         self.assertLess(chain.index("OUT-094"), chain.index("EVT-0232"))
