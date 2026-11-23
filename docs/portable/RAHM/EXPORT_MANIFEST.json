@@ -1,8 +1,8 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
-  "version": "1.8.45",
-  "manifest_status": "POINT-0/GOLDEN / CURRENT-150.03 and NEXT-051.03 are candidate on isolated PR #145; parent CURRENT-150.02 / NEXT-051.02 remains last accepted Golden revision; living mother 1.8.4 remains authoritative; no downgrade; exact-SHA Portable RAHM Conformance pending.",
-  "created_from_checkpoint": "HAIF-POINT-0-GOLDEN-2026-11-22-001 + HAIF-CURRENT-150.03 (candidate)",
+  "version": "1.8.46",
+  "manifest_status": "POINT-0/GOLDEN / CURRENT-150.05 and NEXT-051.05 are candidates on PR #145; parent CURRENT-150.02 / NEXT-051.02 remains last accepted Golden revision; living mother 1.8.4 remains authoritative; exact-SHA conformance is being rerun.",
+  "created_from_checkpoint": "HAIF-POINT-0-GOLDEN-2026-11-22-001 + HAIF-CURRENT-150.05 (candidate)",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [
     {
@@ -200,8 +200,8 @@
     {
       "path": "docs/portable/RAHM/fixtures/interaction-pair-valid.json",
       "version": "current",
-      "git_blob_sha": "2a779c03569229be0169651d6b6ca4d49633f4df",
-      "sha256": "baf134a2a55abe62cdd6c0311638742c748e63967371aa752224335008ba88d3"
+      "git_blob_sha": "c8c53ca03ef7efbaaec9f321babb95e5a158195c",
+      "sha256": "7e22ae48fac2a75170fbcd248e9ba615e09af1db024f0d06dc0054ac42b842ad"
     },
     {
       "path": "docs/portable/RAHM/HOST_CAPABILITY_MANIFEST.json",
@@ -212,8 +212,8 @@
     {
       "path": "docs/portable/RAHM/INTERACTION_PAIR_SCHEMA.json",
       "version": "1.0.0",
-      "git_blob_sha": "07b07a509e8337500e03aa4ea83a067a5ebc1e52",
-      "sha256": "9e4fff33c72f2dcb0d40ac22f4564cecbadd0f83b5918e5471687c6035aab839"
+      "git_blob_sha": "bfdfda34b3ae5eb51e9efc28e32f8a56c0cd7969",
+      "sha256": "3e255f933ceb28b6ef09db992d458f859d64c4adbf0664e4f77d64c08a3f6858"
     },
     {
       "path": "docs/portable/RAHM/RECOVERY_AND_ROLLBACK.md",
