@@ -60,3 +60,8 @@ Documented ≠ implemented; implemented ≠ deployed; deployed ≠ tested; teste
 - Dependency order: #114 hosting/repo → #115 App registration/callback → #116 broker → #117 MCP tools → #118 API project/key → #119 deploy → #120 promotion path → #121 ruleset/principal audit → #122 private RAHM → #123 end-to-end acceptance. Some source preparation can proceed in parallel, but callbacks and deployment cannot be finalized before the host URL exists.
 - Owner-side work is limited to secure provider actions: create/authorize private repos, register/install App, create API project/service account, enter secrets in provider UI, and perform any admin settings that cannot be delegated. No credentials are to be sent in chat.
 - Exact current CI status must always be tied to the latest branch SHA. The run that failed on artifact download is historical evidence; the explicit-token workflow adjustment remains UNVERIFIED until a fresh run on the new head succeeds.
+
+
+## Portable artifact round-trip issue — precise status
+
+A same-run artifact download race was isolated. Upload succeeds and the artifact is present in the run artifact list, but the download action sometimes reports it missing immediately afterward. Passing the broad workflow token violated an existing governance invariant, so that approach was discarded. Current candidate uses the upload action exact artifact ID, public unauthenticated GitHub artifact download endpoint (repository is public), bounded retry, and ZIP integrity check. Exact-head run is pending; preserve the failure receipts and do not close this gate before a fresh successful run.
