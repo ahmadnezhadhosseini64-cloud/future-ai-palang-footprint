@@ -26,7 +26,7 @@
 
 - Repository source blob SHA: `de1b75f07241c9b313e476af5f1417177ff78c10`; 10,479 characters / 13,303 UTF-8 bytes.
 - Source last-change commit: `a2374d7da36a5af69b1bdf17f6dfd673bc03c97f`; UTC `2026-10-23T17:34:39Z`; Tehran `2026-10-23T21:04:39+03:30`. The source blob is unchanged at this run.
-- Library stable ID: `libfile_7ac3c9a6ec14819198eb2751e204aa48`; backing file ID: `file_00000000942881f8a4a3833110229fb7`; exact observed Library version: 7; 10,480 characters / 13,304 UTF-8 bytes plus the terminal LF accounting difference (13,304 bytes total).
+- Library stable ID: `libfile_7ac3c9a6ec14819198eb2751e204aa48`; backing file ID: `file_00000000942881f8a4a3833110229fb7`; exact observed Library version: 7; 10,480 characters / 13,304 UTF-8 bytes.
 - Exact text equality: FALSE. The complete Library text is exactly the complete source text plus one additional terminal LF; removing only that extra Library LF yields exact content equality. Character edit distance: 1.
 - Test ID, Stable ID, Production ID, document Version 1.0.0, Library version 7, BOART-FOLLOWUP-01 → 02 → 03, destination statuses and all remaining content match.
 - Library metadata modified UTC: `2026-10-24T04:45:28.479773Z`; Tehran derived: `2026-10-24T08:15:28.479773+03:30`. Exact Library read-operation time: UNKNOWN.
@@ -49,6 +49,20 @@
 - Issues #20 and #21 remain OPEN. Automatic ChatGPT/host capture, external destination writes/read-back, restart persistence and clean independent-host recovery are not proven.
 - Buffer and Persistent Memory: NOT VERIFIED. Dropbox: OPEN / NOT VERIFIED. External independent-host/end-to-end recovery: NOT RUN.
 - BOART-FOLLOWUP-01 remains ACTIVE. Historic source/rule census, identity/duplicate adjudication, NEXT-051 forensic archive and clean-host recovery remain open.
+
+## 5. Repository registration and independent read-back
+
+- Registration branch: `mirror-sync-evt-0317-20261123-run11`.
+- New event and time-binding files were created and independently fetched back; both read-backs matched the intended text exactly.
+- Six living indexes/references were updated on the same branch and each independently fetched back with exact content match:
+  - Behavior Trace Index: 1.0.48 → 1.0.49.
+  - Integration Queue: 1.10.56 → 1.10.57.
+  - Behavior Observatory: 1.0.31 → 1.0.32.
+  - Living Mother Model: 1.7.97 → 1.7.98.
+  - Reference Index: latest mirror pointer advanced to EVT-0317.
+  - 0.0 index: latest mirror pointer advanced to EVT-0317.
+- Canonical source and Library were not modified. Canonical continuation master v1.0.14 was read and preserved without change.
+- No root, checkpoint, NEXT queue or destination status was promoted.
 
 ## 5. Next deterministic action
 
