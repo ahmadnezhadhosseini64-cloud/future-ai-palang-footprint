@@ -170,7 +170,6 @@ def main() -> int:
         common_suffixes = {
             "current": current_path.name,
             "next": next_path.name,
-            "bridge": bridge_path.name,
             "master": "سند مرجع مادر مدل اولیه هوش مصنوعی.md",
             "protocol": "INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md",
             "package_protocol": "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md",
@@ -180,6 +179,12 @@ def main() -> int:
         for side, path in (("IN",in_path),("BRIDGE",bridge_path),("OUT",out_path)):
             content = docs[side.lower()]
             state = {key:require_one_link(path,content,suffix) for key,suffix in common_suffixes.items()}
+            if side in ("IN","OUT"):
+                require_one_link(path,content,bridge_path.name)
+            state["bridge"] = bridge_path.name
+            if side == "BRIDGE":
+                require_one_link(path,content,in_path.name)
+                require_one_link(path,content,out_path.name)
             recovered[side] = state
             for suffix in (point_path.name,event_path.name,next_path.name):
                 require_one_link(path,content,suffix)
