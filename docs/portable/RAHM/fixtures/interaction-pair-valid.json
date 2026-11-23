@@ -53,6 +53,13 @@
   },
   "input_id": "IN-TEST-20261120-001",
   "output_id": "OUT-TEST-20261120-001",
+  "bridge_id": "BRIDGE-20261120-001",
+  "bridge": {
+    "bridge_id": "BRIDGE-20261120-001",
+    "input_id": "IN-TEST-20261120-001",
+    "output_id": "OUT-TEST-20261120-001",
+    "status": "MATCHED"
+  },
   "host_id": "HOST-SYNTHETIC-TEST-001",
   "host_session_id": "SESSION-SYNTHETIC-001",
   "master_commit_sha": "09bb959526210eda4458c7cf582e348c089785b7",
