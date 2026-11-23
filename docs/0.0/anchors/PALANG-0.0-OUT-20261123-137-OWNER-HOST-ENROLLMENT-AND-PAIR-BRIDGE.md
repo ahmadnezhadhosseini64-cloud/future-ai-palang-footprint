@@ -58,3 +58,20 @@ POINT-0/GOLDEN → prior CURRENT/queue → IN-N → BRIDGE-N → OUT-N → EVT �
 - Cloudflare Workers remains an optional managed host for a thin owner broker only if privileged owner-side operations cannot be handled through the official GitHub MCP or secure owner UI.
 - Sources: https://github.com/github/github-mcp-server · https://developers.openai.com/api/docs/guides/tools-connectors-mcp · https://developers.cloudflare.com/agents/model-context-protocol/guides/remote-mcp-server/ · https://developers.cloudflare.com/agents/model-context-protocol/protocol/authorization/.
 - No service has been provisioned or deployed by this research.
+
+
+## Local runtime Bridge implementation — bounded CI result
+
+The existing dependency-free runtime was extended rather than replaced:
+- Generates BRIDGE-YYYYMMDD-NNN alongside INT/IN/OUT.
+- Stores a bridge object binding bridge_id, input_id, output_id, event_id, previous event hash and MATCHED status.
+- Rejects mismatched bridge/input/output/event/parent links during state verification.
+- Supports reverse lookup by BRIDGE ID.
+- Primary interaction schema, portable RAHM schema and fixtures now require/contain the bridge pair link.
+- Added runtime tests for Bridge ID generation, reverse lookup and mismatch rejection.
+
+**CI evidence:** Interaction ledger validation and recovery run 45128386247 completed SUCCESS on candidate SHA 69208ef7013b78f3bf6a5e6f1c9e0b342465bd30. Jobs schema-validation, recover-from-input and recover-from-output all SUCCESS.
+
+**Portable conformance correction:** run 45128386249 failed only at manifest digest reconciliation for the two intentionally modified portable schema/fixture files. Their exact SHA-256 and Git blob SHA-1 values were updated in EXPORT_MANIFEST.json (version 1.8.46). A fresh exact-head conformance run is still required; no PASS is claimed yet.
+
+**Package build scope:** on candidate SHA 69208, the same canonical ZIP filename was rebuilt; 24 extracted tests passed, ZIP integrity and source-byte read-back passed, but the overall workflow remained failed at the stale manifest digests. The artifact is not promoted or treated as the latest verified release.
