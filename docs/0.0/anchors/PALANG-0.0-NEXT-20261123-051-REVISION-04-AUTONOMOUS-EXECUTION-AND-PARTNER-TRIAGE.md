@@ -82,3 +82,8 @@ Main `30d1d3b2de09078131fa3c8a0ff7c492a7ab0d7e`, tree `3beac697b90922a93d1618a86
 ## Issue #21 — next semantic census batch
 
 Exact main tree family counts: 579 0.0 anchors, 558 behavior-trace files, 20 architecture lessons, 9 behavior-observatory files, 13 behavior-hunter scripts, 3 HAIF runtime scripts, 5 RAHM tests and 23 portable starter files. Repeated-basename scan: 21 groups, 17 with distinct Git blob SHAs and 4 byte-identical. Treat these only as filename/blob observations; do not merge, delete, or infer stable-ID collisions without source provenance and semantic comparison. Next: inspect the 17 divergent groups and reconcile source authority/lineage.
+
+
+## Issue #21 — semantic triage findings
+
+Four `docs/checkpoints/0.0` same-name entries are confirmed legacy bridge stubs to canonical `checkpoints/0.0` files. Dropbox pair is a 0.0 resume anchor + canonical full reference. FINALIZATION_GATE files have different scopes. Continuation-behavior anchor/reference share identity but differ in content/role. Initial-navigation and universal-architecture pairs are likely queue-summary/reference pairs; authority/version lineage must be proven. Three provenance/reference pairs are exact byte-identical copies. Two manifest files are package-context-specific; host-entry prompts differ. Do not delete/merge any; continue semantic source-authority and version-lineage checks.
