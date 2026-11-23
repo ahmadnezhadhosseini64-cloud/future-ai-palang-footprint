@@ -147,3 +147,8 @@
 
 ثبت کن و مستند
 ```
+
+## Protocol reference
+
+- Host enrollment and bridge architecture: [HOST-ENROLLMENT-CHALLENGE-AND-PAIR-BRIDGE](../../architecture/HOST-REGISTRY/HOST-ENROLLMENT-CHALLENGE-AND-PAIR-BRIDGE-2026-11-23.md).
+- Receipt schema: [HOST-ENROLLMENT-RECEIPT-SCHEMA](../../architecture/HOST-REGISTRY/HOST-ENROLLMENT-RECEIPT-SCHEMA-2026-11-23.json).
