@@ -50,3 +50,13 @@ Documented ≠ implemented; implemented ≠ deployed; deployed ≠ tested; teste
 
 ## Event binding
 - [TIME-BINDING-EVT-0324](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0324-OWNER-REST-AUTONOMOUS-EXECUTION-2026-11-23.md) — commit UTC 2026-11-23T04:05:33Z / Tehran 2026-11-23T07:35:33+03:30.
+
+## Research outcome — simplest route candidates (2026-11-23)
+
+- Candidate hosting: Cloudflare Workers + D1/KV + Workers secrets, using the official remote MCP server template and OAuth authorization components. This is a candidate to test, not a deployed service.
+- Candidate GitHub integration: GitHub-maintained remote MCP server with narrow toolsets for normal repository/PR work. Keep elevated operations (private repo creation, Actions secrets, Ruleset mutation, promotion) outside the model's broad tool surface and behind a narrow owner-approved broker/UI.
+- OpenAI runtime: separate API project and service account for the deployed workload; project key held only in provider secrets. Never use or request the owner's personal key in chat.
+- Deployment auth: prefer OIDC/short-lived credentials where the hosting provider supports it.
+- Dependency order: #114 hosting/repo → #115 App registration/callback → #116 broker → #117 MCP tools → #118 API project/key → #119 deploy → #120 promotion path → #121 ruleset/principal audit → #122 private RAHM → #123 end-to-end acceptance. Some source preparation can proceed in parallel, but callbacks and deployment cannot be finalized before the host URL exists.
+- Owner-side work is limited to secure provider actions: create/authorize private repos, register/install App, create API project/service account, enter secrets in provider UI, and perform any admin settings that cannot be delegated. No credentials are to be sent in chat.
+- Exact current CI status must always be tied to the latest branch SHA. The run that failed on artifact download is historical evidence; the explicit-token workflow adjustment remains UNVERIFIED until a fresh run on the new head succeeds.
