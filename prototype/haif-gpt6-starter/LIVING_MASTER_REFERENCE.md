@@ -1,14 +1,19 @@
-## الحاقیهٔ افزایشی 1.8.4-A — EVT-0323 / CURRENT-150.03 نامزد (2026-11-23)
+## الحاقیهٔ افزایشی 1.8.4-B — EVT-0325 / CURRENT-150.05 نامزد (2026-11-23)
 
-این الحاقیه نسخهٔ مادر را downgrade یا بازشماری نمی‌کند؛ نسخهٔ مادر همچنان **1.8.4** است. این فقط ثبت یک نشانگر تعاملی جدید روی همان ریشهٔ POINT-0/GOLDEN است. CURRENT-150.02 / NEXT-051.02 آخرین revision پذیرفته‌شده باقی می‌مانند تا نامزد .03 آزمون exact-SHA و ادغام کنترل‌شده را پشت سر بگذارد.
+این الحاقیه نسخهٔ مادر را downgrade یا بازشماری نمی‌کند؛ نسخهٔ مادر همچنان **1.8.4** است. این ثبت ادامهٔ همان ریشهٔ POINT-0/GOLDEN و همان خانواده‌های CURRENT-150 و NEXT-051 است. CURRENT-150.02 / NEXT-051.02 آخرین revision پذیرفته‌شدهٔ Golden باقی می‌مانند؛ CURRENT-150.05 / NEXT-051.05 فقط نامزد PR #145 هستند و تا آزمون exact-SHA و ادغام کنترل‌شده پذیرفته‌شده محسوب نمی‌شوند.
 
 - ریشه: [POINT-0/GOLDEN](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md)
-- ورودی: [IN-136](../../docs/0.0/anchors/PALANG-0.0-IN-20261123-136-CHAT-POINT0-CONTINUATION.md)
-- خروجی: [OUT-135](../../docs/0.0/anchors/PALANG-0.0-OUT-20261123-135-CHAT-POINT0-CONTINUATION.md)
-- رویداد: [EVT-0323](../../docs/architecture/BEHAVIOR-TRACE/EVT-0323-CHAT-POINT0-CONTINUATION-2026-11-23.md)
-- زمان رویداد: [TIME-BINDING-EVT-0323](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0323-CHAT-POINT0-CONTINUATION-2026-11-23.md)
-- بازبینی نامزد: [CURRENT-150.03](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261123-150-REVISION-03-CHAT-POINT0-CONTINUATION.md)
-- صف یگانه، بازبینی نامزد: [NEXT-051.03](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261123-051-REVISION-03-EXECUTION-CONTINUATION.md)
+- ورودی: [IN-138](../../docs/0.0/anchors/PALANG-0.0-IN-20261123-138-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md)
+- پل جفت: [BRIDGE-0138](../../docs/0.0/anchors/PALANG-0.0-BRIDGE-20261123-0138-IN-138-OUT-137.md)
+- خروجی متناظر: [OUT-137](../../docs/0.0/anchors/PALANG-0.0-OUT-20261123-137-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md)
+- رویداد: [EVT-0325](../../docs/architecture/BEHAVIOR-TRACE/EVT-0325-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE-2026-11-23.md)
+- زمان رویداد: [TIME-BINDING-EVT-0325](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0325-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE-2026-11-23.md)
+- بازبینی نامزد: [CURRENT-150.05](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261123-150-REVISION-05-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md)
+- صف یگانه، بازبینی نامزد: [NEXT-051.05](../../docs/0.0/anchors/PALANG-0.0-NEXT-20261123-051-REVISION-05-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md)
+- قرارداد ورود میزبان و فضای کاری محدود: [HOST-ENROLLMENT-CHALLENGE-AND-PAIR-BRIDGE](../../docs/architecture/HOST-REGISTRY/HOST-ENROLLMENT-CHALLENGE-AND-PAIR-BRIDGE-2026-11-23.md)
+- قالب رسید ورود میزبان: [HOST-ENROLLMENT-RECEIPT-SCHEMA](../../docs/architecture/HOST-REGISTRY/HOST-ENROLLMENT-RECEIPT-SCHEMA-2026-11-23.json)
+
+قانون اجرایی: هر ورودی باید یک خروجی متناظر و یک Bridge مستقل داشته باشد. Bridge دوطرفه به IN/OUT همان جفت، رویداد و زمان آن، checkpoint قبلی و CURRENT/NEXT بعدی وصل می‌شود؛ Bridge ریشه یا صف تازه نمی‌سازد. ورود اولیهٔ میزبان به مخزن عمومی فقط READ است و به عضویت یا OAuth نیاز ندارد؛ Host ID رسمی را فقط مالک پس از بررسی رسید صادر می‌کند.
 - نشانگر گفتگو: [POINT-0-GOLDEN-CHAT-CONTINUATION-2026-11-23-001](../../docs/0.0/anchors/POINT-0-GOLDEN-CHAT-CONTINUATION-2026-11-23-001.md)
 - میراث آینه‌ای محفوظ: [EVT-0241](../../docs/architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) و [TIME-BINDING-EVT-0241](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md).
 
@@ -2139,7 +2144,7 @@ The canonical starter artifact is now verified from the exact source commit `a59
 - Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-110 → NEXT-051`.
 - Previous POINT-0/058 / CURRENT-108 is preserved as historical context; no history is overwritten.
 - User intent: prepare and execute the next step for real independent-host recovery using the canonical ZIP and the living mother reference together; do not substitute repository CI for host acceptance.
-- New executable prompt: [INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md](../../prototype/haif-gpt6-starter/INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md). It specifies positive reconstruction, exact identity/chain read-back, negative missing-anchor control, fresh-session/restart recovery, raw receipt retention and actual SHA-256 verification.
+- New executable prompt: [INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md](INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md). It specifies positive reconstruction, exact identity/chain read-back, negative missing-anchor control, fresh-session/restart recovery, raw receipt retention and actual SHA-256 verification.
 - The canonical ZIP workflow includes both `LIVING_MASTER_REFERENCE.md` and the Persian acceptance prompt. The master is a build-time snapshot; receiving host must compare it to the canonical repository if network access is available, and report any mismatch instead of silently assuming freshness.
 - Status: POINT-0/058 registered; protocol and prompt prepared. External host import, acceptance, second-host recovery, restart persistence, automatic live capture, authorized repository write-back and background execution remain OPEN / NOT PROVEN until actual raw host evidence is received and read back.
 - Active queue remains NEXT-051 only. Do not create NEXT-052. Preserve all earlier point and checkpoint records, including POINT-0/057 and CURRENT-107.
@@ -4263,7 +4268,7 @@ The canonical starter artifact is now verified from the exact source commit `a59
 - Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-110 → NEXT-051`.
 - Previous POINT-0/058 / CURRENT-108 is preserved as historical context; no history is overwritten.
 - User intent: prepare and execute the next step for real independent-host recovery using the canonical ZIP and the living mother reference together; do not substitute repository CI for host acceptance.
-- New executable prompt: [INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md](../../prototype/haif-gpt6-starter/INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md). It specifies positive reconstruction, exact identity/chain read-back, negative missing-anchor control, fresh-session/restart recovery, raw receipt retention and actual SHA-256 verification.
+- New executable prompt: [INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md](INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md). It specifies positive reconstruction, exact identity/chain read-back, negative missing-anchor control, fresh-session/restart recovery, raw receipt retention and actual SHA-256 verification.
 - The canonical ZIP workflow includes both `LIVING_MASTER_REFERENCE.md` and the Persian acceptance prompt. The master is a build-time snapshot; receiving host must compare it to the canonical repository if network access is available, and report any mismatch instead of silently assuming freshness.
 - Status: POINT-0/058 registered; protocol and prompt prepared. External host import, acceptance, second-host recovery, restart persistence, automatic live capture, authorized repository write-back and background execution remain OPEN / NOT PROVEN until actual raw host evidence is received and read back.
 - Active queue remains NEXT-051 only. Do not create NEXT-052. Preserve all earlier point and checkpoint records, including POINT-0/057 and CURRENT-107.
@@ -4638,7 +4643,7 @@ The user's departure instruction is appended under the existing POINT-0/064 root
 
 ## Mirror-only master update — EVT-0265 (2026-11-13)
 
-- [EVT-0265](../../BEHAVIOR-TRACE/EVT-0265-LIVE-MIRROR-SYNC-RECHECK-2026-11-13.md) / [TIME-BINDING-EVT-0265](../../BEHAVIOR-TRACE/TIME-BINDING-EVT-0265-LIVE-MIRROR-SYNC-2026-11-13.md).
+- [EVT-0265](../../docs/architecture/BEHAVIOR-TRACE/EVT-0265-LIVE-MIRROR-SYNC-RECHECK-2026-11-13.md) / [TIME-BINDING-EVT-0265](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0265-LIVE-MIRROR-SYNC-2026-11-13.md).
 - Root POINT-0/064 / EVT-0257; checkpoint CURRENT-115; sole active queue NEXT-051.
 - Source/Library v7 normalized content matches with one extra terminal LF; no source or Library write.
 - Audit and Conformance passed on exact event-registration SHA `ab8faa4c4d13c4d5f3f1f5d889005c22959672ca`; Evidence Gate advanced main to `d19a69dc874d114279b628cf91c1a0b6f2ac2915`, which requires its own exact-SHA audit and conformance.
@@ -4671,11 +4676,11 @@ The user's departure instruction is appended under the existing POINT-0/064 root
 - CURRENT-065/CURRENT-066 and overlay-manifest ambiguity, Issues #20/#21, NEXT-051 forensic recovery and all external destination/host gates remain OPEN / NOT VERIFIED / NOT RUN as recorded in EVT-0268.
 
 ## EVT-0275 — Live mirror synchronization — 2026-11-20
-- [EVT-0275](../../BEHAVIOR-TRACE/EVT-0275-LIVE-MIRROR-SYNC-RECHECK-2026-11-20.md) / [TIME-BINDING-EVT-0275](../../BEHAVIOR-TRACE/TIME-BINDING-EVT-0275-LIVE-MIRROR-SYNC-2026-11-20.md).
+- [EVT-0275](../../docs/architecture/BEHAVIOR-TRACE/EVT-0275-LIVE-MIRROR-SYNC-RECHECK-2026-11-20.md) / [TIME-BINDING-EVT-0275](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0275-LIVE-MIRROR-SYNC-2026-11-20.md).
 - Mirror-only under POINT-0/064 / EVT-0257 / CURRENT-115 / NEXT-051. Source/Library v7 normalized match with one additional terminal LF; no source or Library write.
 
 ## EVT-0276 — Live mirror synchronization — 2026-11-20
-- [EVT-0276](../../BEHAVIOR-TRACE/EVT-0276-LIVE-MIRROR-SYNC-RECHECK-2026-11-20.md) / [TIME-BINDING-EVT-0276](../../BEHAVIOR-TRACE/TIME-BINDING-EVT-0276-LIVE-MIRROR-SYNC-2026-11-20.md).
+- [EVT-0276](../../docs/architecture/BEHAVIOR-TRACE/EVT-0276-LIVE-MIRROR-SYNC-RECHECK-2026-11-20.md) / [TIME-BINDING-EVT-0276](../../docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0276-LIVE-MIRROR-SYNC-2026-11-20.md).
 - Mirror-only under POINT-0/064 / EVT-0257 / CURRENT-115 / NEXT-051; certificate child branch EVT-0274 preserved separately.
 - Source blob de1b75f07241c9b313e476af5f1417177ff78c10 unchanged; Library v7 normalized match with one extra terminal LF; no source or Library write.
 - Audit 44688034068 and CPREL 44688034103 / 44688034176 passed on exact main 2ea7e826931a42fb0a5957cdb58b698bb8f30e00; latest RAHM 44687870952 passed on prior SHA bd44a799ce6296aede0ee6be64bdf26cd0af3383, not current main.
