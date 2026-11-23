@@ -57,3 +57,12 @@ Official research:
 - GitHub OIDC: https://docs.github.com/en/actions/how-tos/secure-your-work/security-harden-deployments/oidc-in-cloud-providers
 
 These are research-backed implementation candidates, not proof that any external service has been created or connected.
+
+
+## Workflow failure analysis and correction attempt
+
+- Run 45109931516: runtime/schema/chain checks, ZIP build, source-byte read-back and 24 extracted starter tests passed. The failure occurred only at the same-run artifact download step.
+- The uploaded artifact was finalized and visible through the GitHub REST artifact listing; the failure is consistent with the action immediate same-run lookup not seeing the artifact at that instant.
+- A first correction passed the workflow token explicitly. This was rejected by the existing governance test `test_portable_conformance_release_write_is_owner_controlled`, which intentionally forbids passing `${{ github.token }}` to the download action because the same workflow also has release-write permission.
+- The safer correction now uses the public repository exact upload output `artifact-id` and the documented unauthenticated download endpoint for public artifacts, with bounded retries and ZIP integrity checking. It does not pass the broad workflow token to the download action.
+- This correction is still pending exact-head CI. Do not mark the artifact round-trip gate PASS until run 45110068180 (or a later run on the final head) completes successfully.
