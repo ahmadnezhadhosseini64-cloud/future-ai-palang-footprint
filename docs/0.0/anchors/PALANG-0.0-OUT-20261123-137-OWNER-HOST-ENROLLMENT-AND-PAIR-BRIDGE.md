@@ -35,7 +35,11 @@ POINT-0/GOLDEN → prior CURRENT/queue → IN-N → BRIDGE-N → OUT-N → EVT �
 
 ## 4. وضعیت پذیرش
 
-- ثبت IN/OUT/Bridge/Event/Current/Next و read-back فایل‌ها: در همین PR candidate و پس از commit باید تأیید شود.
+- ثبت IN/OUT/Bridge/Event/Time-Binding/Current/Next: انجام شد؛ همهٔ هفت رکورد اصلی و سند پروتکل از شاخه fetch-back شدند.
+- Read-back: VERIFIED برای IN-138، BRIDGE-0138، OUT-137، EVT-0325، TIME-BINDING-EVT-0325، CURRENT-150.05، NEXT-051.05، schema و receipt template؛ indexها و چهار ورودی میزبان نیز fetch-back شدند.
+- JSON parse: PASS برای HOST-ENROLLMENT-RECEIPT-SCHEMA-2026-11-23.json.
+- زمان رویداد: commit EVT-0325 برابر `ab4632a8260900f559a8a506d6b6d0220c3e820a`؛ UTC `2026-11-23T06:56:46Z`؛ تهران `2026-11-23T10:26:46+03:30`.
+- شاخه در زمان بازخوانی گروه اصلی: `056c76819f64ea6e0a1d81a7c8b5fa67b768d526`; PR #145 همچنان OPEN / UNMERGED.
 - exact-SHA CI برای این revision: PENDING تا اجرای خودکار workflowها روی آخرین head.
 - Golden merge و main publication: NOT DONE؛ نیازمند مسیر owner-controlled.
 - GitHub App/OAuth، private Partner hosting، private RAHM، API key، MCP endpoint: NOT PROVISIONED.
