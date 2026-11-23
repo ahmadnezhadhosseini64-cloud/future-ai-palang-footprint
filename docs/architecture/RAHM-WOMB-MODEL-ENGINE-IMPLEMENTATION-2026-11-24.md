@@ -54,3 +54,7 @@ python scripts/rahm-womb/rahm_womb.py --task "Audit the supplied proposal"
 - اجرای Living Architecture Audit: `45270680320` — `completed / success`
 - در اجرای RAHM Runtime Tests، گام‌های HAIF Runtime، RAHM Runtime، RAHM WOMB و Host Bridge همگی `success` شدند.
 - این شواهد، آزمون کد و قرارداد HTTP محلی را اثبات می‌کند؛ اجرای inference با مدل واقعی را اثبات نمی‌کند.
+
+
+## محدودیت محرمانگی در وضعیت فعلی
+مخزن مادر هنگام این پیاده‌سازی هنوز عمومی است. بنابراین کد این شاخه را نباید محیط خصوصی عملیاتی تلقی کرد و نباید هیچ دادهٔ محرمانه، کلید یا زمینهٔ حساس در آن قرار گیرد. خصوصی‌سازی مخزن تا آماده و آزموده‌شدن مسیر انتشار امن انجام نمی‌شود. کد WOMB پیاده‌سازی شده، اما محیط خصوصی مستقر و inference زنده هنوز فعال نشده‌اند.
