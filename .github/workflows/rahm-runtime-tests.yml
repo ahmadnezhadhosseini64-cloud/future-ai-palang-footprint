@@ -4,6 +4,9 @@ on:
     paths:
       - "scripts/rahm-runtime/**"
       - "scripts/haif-runtime/**"
+      - "scripts/host-bridge/**"
+      - "tests/host-bridge/**"
+      - "HOST-BRIDGE/**"
       - ".github/workflows/rahm-runtime-tests.yml"
   push:
     branches:
@@ -26,3 +29,5 @@ jobs:
         run: python -m unittest discover -s scripts/haif-runtime/tests -v
       - name: Test RAHM runtime
         run: python -m unittest discover -s scripts/rahm-runtime/tests -v
+      - name: Test host bridge allowlist build
+        run: python -m unittest discover -s tests/host-bridge -v

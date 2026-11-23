@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0.0",
+  "status": "DESIGN_ONLY_NOT_DEPLOYED",
+  "anchor": "POINT-0/GOLDEN",
+  "queue": "NEXT-051",
+  "source_repository": "ahmadnezhadhosseini64-cloud/future-ai-palang-footprint",
+  "source_visibility_at_authoring": "public",
+  "publication_mode": "allowlist_static_artifact_only",
+  "host_git_access": false,
+  "host_core_write": false,
+  "rahm_access": false,
+  "owner_approval_gates": 2
+}
