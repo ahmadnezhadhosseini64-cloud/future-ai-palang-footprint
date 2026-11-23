@@ -1,7 +1,7 @@
 import json, os, socket, subprocess, sys, tempfile, time, unittest
 from pathlib import Path
 from urllib.error import HTTPError
-from urllib.request import Request, urlopen
+from urllib.request import urlopen
 
 ROOT=Path(__file__).resolve().parents[1]
 RUNTIME=ROOT/"rahm_runtime.py"
@@ -43,15 +43,14 @@ class ServiceTests(unittest.TestCase):
                 unauth=Request(base+"/v1/haif/ingest",data=payload,headers={"Content-Type":"application/json"},method="POST")
                 with self.assertRaises(HTTPError) as err: urlopen(unauth,timeout=2)
                 self.assertEqual(err.exception.code,401)
-                agent_env=env.copy()
-                agent_env["RAHM_API_TOKEN"]=TOKEN
-                pushed=subprocess.run([sys.executable,str(AGENT),"--source",str(source),
-                    "--url",base+"/v1/haif/ingest","--host-id","host-independent-01"],
-                    env=agent_env,capture_output=True,text=True,timeout=5)
+                command=[sys.executable,str(AGENT),"--source",str(source),
+                         "--url",base+"/v1/haif/ingest","--host-id","host-independent-01"]
+                pushed=subprocess.run(command,env=env,capture_output=True,text=True,timeout=5)
                 self.assertEqual(pushed.returncode,0,pushed.stderr)
                 self.assertIn("HOST_PUSH_CONFIRMED",pushed.stdout)
-                with urlopen(base+"/v1/haif/ingest",timeout=2) as response:
-                    pass
+                replay=subprocess.run(command,env=env,capture_output=True,text=True,timeout=5)
+                self.assertEqual(replay.returncode,0,replay.stderr)
+                self.assertIn('"added": 0',replay.stdout)
             finally:
                 proc.terminate()
                 try: proc.wait(timeout=3)
