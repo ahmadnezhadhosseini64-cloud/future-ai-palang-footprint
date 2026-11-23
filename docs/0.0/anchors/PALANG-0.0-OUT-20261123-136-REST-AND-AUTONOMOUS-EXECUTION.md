@@ -20,3 +20,40 @@
 
 ## وضعیت
 این خروجی یک ثبت کاندید روی شاخهٔ کاری است. هیچ‌یک از گیت‌های owner-only، provisioning، deployment، independent-host recovery یا ادغام Golden با این ثبت بسته نمی‌شود.
+
+## 10-item Partner triage and simpler implementation candidates
+
+The ten issues are separate acceptance gates, not ten tasks that all require the owner to do everything manually.
+
+| Issue | Work package | Current execution boundary |
+|---|---|---|
+| #114 | Private Partner source repository + HTTPS host | Owner must create/authorize destination; assistant can prepare source and deployment config after target exists. |
+| #115 | GitHub App + OAuth | App registration and installation are owner-side; callback depends on real host URL. |
+| #116 | OAuth callback/session broker | Source design and tests can be prepared; secure secret/session deployment needs host. |
+| #117 | MCP tool server | Consider GitHub's maintained remote MCP server for ordinary GitHub operations; retain a thin custom broker only for owner-specific privileged actions and approval/audit policy. |
+| #118 | OpenAI API project/service account | Owner must create project/service account and securely store its key; do not paste key into chat. |
+| #119 | HTTPS deployment/health checks | Cloudflare Workers is a candidate managed host; deployment and account authorization remain owner-side. |
+| #120 | Trusted bot PR promotion | Assistant can prepare workflow and tests; App identity/install and owner approval remain prerequisites. |
+| #121 | Main approval gate/principal audit | Read-only ruleset evidence available; settings change and collaborator/App/deploy-key audit need owner administration UI/API access. |
+| #122 | Private owner-only RAHM | Owner must create the private repository; assistant can prepare its schema, policies and tests. |
+| #123 | RAHM→CHILD and clean-host recovery | Test harness can be prepared; actual independent host and private RAHM access are required for acceptance. |
+
+### Lowest-complexity candidate architecture (not yet selected as deployed)
+1. Keep the current public MASTER and existing Golden governance flow unchanged.
+2. Use a separate private Partner implementation repository.
+3. Evaluate Cloudflare Workers as the managed HTTPS runtime: official Cloudflare docs provide a remote MCP server template, OAuth authorization components, and durable bindings such as D1/KV. This may avoid managing a conventional server/VM.
+4. For ordinary GitHub operations, evaluate GitHub's official remote MCP endpoint with explicit OAuth scopes and tool allowlisting. This could eliminate much of a bespoke GitHub MCP implementation. Keep owner-only repository creation, secret writes, Ruleset changes and promotion behind a custom narrow broker or secure owner UI; do not expose broad admin tools to the model.
+5. Use an OpenAI API project service account for the deployed application, with its key held only in the hosting secret manager. Do not reuse a personal ChatGPT subscription as an API credential.
+6. Where supported, prefer short-lived workload identity/OIDC for deployment access rather than long-lived cloud tokens.
+7. Keep per-operation owner approval, immutable audit, read-back and fail-closed behavior.
+
+Official research:
+- Cloudflare remote MCP server: https://developers.cloudflare.com/agents/model-context-protocol/guides/remote-mcp-server/
+- Cloudflare MCP OAuth authorization: https://developers.cloudflare.com/agents/model-context-protocol/protocol/authorization/
+- GitHub remote MCP and toolsets: https://docs.github.com/en/copilot/concepts/customizations/mcp
+- GitHub App registration and OAuth callback: https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app/registering-a-github-app
+- OpenAI Responses API remote MCP: https://developers.openai.com/api/docs/guides/tools-connectors-mcp
+- OpenAI service accounts and API keys: https://developers.openai.com/api/docs/guides/api-keys
+- GitHub OIDC: https://docs.github.com/en/actions/how-tos/secure-your-work/security-harden-deployments/oidc-in-cloud-providers
+
+These are research-backed implementation candidates, not proof that any external service has been created or connected.
