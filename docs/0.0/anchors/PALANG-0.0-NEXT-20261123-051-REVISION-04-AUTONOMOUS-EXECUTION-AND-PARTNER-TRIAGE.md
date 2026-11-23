@@ -77,3 +77,8 @@ Main `30d1d3b2de09078131fa3c8a0ff7c492a7ab0d7e`, tree `3beac697b90922a93d1618a86
 - Portable Conformance: run `45110219381` PASS on `cfac0057832f3116d94cddc11294427af55dd063`.
 - Living Architecture Audit: run `45110219361` PASS on the same SHA.
 - Exact artifact-ID round-trip and downloaded ZIP verification now PASS on that candidate. Durable Release refresh was skipped for the PR event; independent-host recovery remains NOT RUN. Subsequent Issue #21 documentation commits are not covered by these exact-SHA receipts; re-run the audit on the latest final branch head before any promotion.
+
+
+## Issue #21 — next semantic census batch
+
+Exact main tree family counts: 579 0.0 anchors, 558 behavior-trace files, 20 architecture lessons, 9 behavior-observatory files, 13 behavior-hunter scripts, 3 HAIF runtime scripts, 5 RAHM tests and 23 portable starter files. Repeated-basename scan: 21 groups, 17 with distinct Git blob SHAs and 4 byte-identical. Treat these only as filename/blob observations; do not merge, delete, or infer stable-ID collisions without source provenance and semantic comparison. Next: inspect the 17 divergent groups and reconcile source authority/lineage.
