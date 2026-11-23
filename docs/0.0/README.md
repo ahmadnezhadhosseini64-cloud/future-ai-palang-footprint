@@ -2280,7 +2280,7 @@ The previous points 077 and 078 remain linked in the preceding historical sectio
 
 [POINT-0/GOLDEN](anchors/GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md) → [IN-138](anchors/PALANG-0.0-IN-20261123-138-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md) → [BRIDGE-0138](anchors/PALANG-0.0-BRIDGE-20261123-0138-IN-138-OUT-137.md) → [OUT-137](anchors/PALANG-0.0-OUT-20261123-137-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md) → [EVT-0325](../architecture/BEHAVIOR-TRACE/EVT-0325-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE-2026-11-23.md) → [TIME-BINDING-EVT-0325](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0325-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE-2026-11-23.md) → [CURRENT-150.05](anchors/PALANG-0.0-CURRENT-20261123-150-REVISION-05-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md) → [NEXT-051.05](anchors/PALANG-0.0-NEXT-20261123-051-REVISION-05-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md).
 
-این زنجیرهٔ نامزد روی همان ریشهٔ POINT-0/GOLDEN است. والد اجرایی IN-138، نقطهٔ [CURRENT-150.04](anchors/PALANG-0.0-CURRENT-20261123-150-REVISION-04-OWNER-REST-AUTONOMOUS-EXECUTION.md) است. CURRENT-150.02 / NEXT-051.02 آخرین revisionهای پذیرفته‌شده باقی می‌مانند تا آزمون exact-SHA و ادغام کنترل‌شدهٔ .05.
+این زنجیرهٔ نامزد روی همان ریشهٔ POINT-0/GOLDEN است. والد اجرایی IN-138، نقطهٔ [والد اجرایی 150.04](anchors/PALANG-0.0-CURRENT-20261123-150-REVISION-04-OWNER-REST-AUTONOMOUS-EXECUTION.md) است. CURRENT-150.02 / NEXT-051.02 آخرین revisionهای پذیرفته‌شده باقی می‌مانند تا آزمون exact-SHA و ادغام کنترل‌شدهٔ .05.
 
 
 ## Portable conformance receipt — candidate PR tree (2026-11-23)
