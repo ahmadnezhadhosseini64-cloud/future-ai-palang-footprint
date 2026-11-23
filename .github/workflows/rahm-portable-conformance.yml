@@ -320,6 +320,9 @@ jobs:
           name: haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean
           path: downloaded-starter-artifact
           merge-multiple: true
+          repository: ${{ github.repository }}
+          run-id: ${{ github.run_id }}
+          github-token: ${{ github.token }}
 
       - name: Confirm exact artifact ID download
         if: success()
