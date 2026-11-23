@@ -43,18 +43,18 @@ Current candidate chain: POINT-0/GOLDEN → CURRENT-150.04 → IN-138 → BRIDGE
 
 `POINT-0/GOLDEN → IN-136 → OUT-135 → EVT-0323 → TIME-BINDING-EVT-0323 → CURRENT-150.03 → NEXT-051.03`
 
-The last accepted Golden state remains CURRENT-150.02 / NEXT-051.02. The .03 continuation is a candidate until exact-SHA audit, Portable RAHM Conformance, and controlled Golden merge/read-back succeed. The living mother remains version 1.8.4 and authoritative; packages and tests align forward. No downgrade, new root, parallel queue, host write to MASTER, or host access to RAHM is permitted.
+The last accepted Golden state remains CURRENT-150.02 / NEXT-051.02. The .05 continuation is a candidate until exact-SHA audit, Portable RAHM Conformance, and controlled Golden merge/read-back succeed. The living mother remains version 1.8.4 and authoritative; packages and tests align forward. No downgrade, new root, parallel queue, host write to MASTER, or host access to RAHM is permitted.
 
 ---
 
 > **POINT-0/GOLDEN — CURRENT-151 — 2026-11-22**
-> This is the single canonical continuation of the existing POINT-0 root. Always resolve exact main HEAD, living mother, CURRENT-151 and NEXT-051. Older embedded point/version snapshots are historical evidence, not current operating instructions.
+> This is the single canonical continuation of the existing POINT-0 root. Always resolve exact main HEAD, living mother, CURRENT-150.05 and NEXT-051.05. Older embedded point/version snapshots are historical evidence, not current operating instructions.
 > **No host-to-master route:** hosts are PUBLIC READ ONLY on MASTER and have no direct or indirect write path, credential, branch, PR, broker, worker or bypass into it. Host work stays in its own isolated workspace/private repository. RAHM is a central owner-only private quarantine outside host workspaces; only the owner exports and imports selected redacted evidence.
 > **Promotion:** owner export → private RAHM → reconciliation/validation → bot-authored PR to CHILD → owner approval. CHILD is not MASTER.
 
-# HAIF Portable Starter v0.5.1 — POINT-0 Golden Baseline
+# HAIF Portable Starter v0.5.2 — POINT-0 Golden Baseline
 
-Latest canonical chain: POINT-0/GOLDEN → CURRENT-150.01 → IN-135 → OUT-134 → EVT-0322 → TIME-BINDING-EVT-0322 → CURRENT-150.02 → NEXT-051.02
+Latest candidate chain: POINT-0/GOLDEN → CURRENT-150.04 → IN-138 → BRIDGE-0138 → OUT-137 → EVT-0325 → TIME-BINDING-EVT-0325 → CURRENT-150.05 → NEXT-051.05. Last accepted Golden: CURRENT-150.02 / NEXT-051.02.
 
 The model/platform-neutral first-entry instruction is UNIVERSAL_AI_HOST_ENTRY_FA.md. GPT-6-specific documents below are compatibility references; the universal entry and Reference Index govern fresh hosts.
 
