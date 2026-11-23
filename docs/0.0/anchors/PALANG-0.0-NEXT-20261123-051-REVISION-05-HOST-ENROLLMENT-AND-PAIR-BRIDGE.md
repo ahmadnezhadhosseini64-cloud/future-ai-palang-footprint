@@ -63,3 +63,13 @@ No credentials, MFA codes, PATs or private keys are to be pasted into chat.
 ## Priority G — exclusions and non-blocking items
 - Buffer/Persistent Memory and Dropbox are not core blockers for first public-read host enrollment. Keep their existing statuses; do not spend time on them unless a concrete dependency appears.
 - Do not create a new root, queue, host ID, package identity, or external service merely to create the appearance of progress.
+
+
+## Priority H — Bridge runtime upgrade (assistant-executed)
+
+- Existing local runtime now emits a distinct BRIDGE ID for each IN/OUT pair.
+- Bridge explicitly links input, output, event and prior event hash; verification rejects mismatches.
+- Reverse lookup works from IN, OUT and BRIDGE.
+- JSON Schema, portable RAHM schema, smoke fixture and valid fixture updated.
+- Interaction ledger validation/recovery run 45128386247: SUCCESS (schema-validation + input/output recovery jobs all PASS).
+- Remaining: fresh Portable RAHM Conformance on head 0f4754704f9837b631bc530e8924b8258f497cd7 after manifest digest reconciliation; then repeat exact-head audit.
