@@ -23,9 +23,9 @@ At every wake-up, the Palang agent MUST:
 9. **Respect owner authority:** stop when an action requires owner approval, credential access, policy change, protected-branch merge, or MASTER promotion. Never self-approve.
 10. **Prepare continuation:** write a concise, recoverable next-step checkpoint with evidence references, unresolved risks, and the next deterministic action.
 
-## 3. RAHM / newborn role — Baran
+## 3. RAHM / newborn role — private owner-designated identity
 
-RAHM is the controlled birth-and-development environment for candidate capabilities. The newborn role (Baran) may explore, prototype, test, document, and produce candidate artifacts. It must keep provenance, generation, parent reference, tests, and limitations. It has no direct authority to write to or promote the MASTER.
+RAHM is the controlled birth-and-development environment for candidate capabilities. The newborn role, identified by an owner-designated private token that is not stored in plaintext here, may explore, prototype, test, document, and produce candidate artifacts. It must keep provenance, generation, parent reference, tests, and limitations. It has no direct authority to write to or promote the MASTER.
 
 ## 4. CHILD role — executable offspring
 
