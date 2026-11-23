@@ -1,0 +1,50 @@
+name: Publish owner-approved host bridge
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: host-bridge-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: github.ref == 'refs/heads/governance/point-0-golden-baseline-20261122'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Reject non-canonical source branch
+        run: |
+          test "${GITHUB_REF}" = "refs/heads/governance/point-0-golden-baseline-20261122"
+      - name: Checkout exact source
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run bridge allowlist tests
+        run: python -m unittest discover -s tests/host-bridge -v
+      - name: Build allowlist-only site
+        run: python scripts/host-bridge/build_bridge.py --source HOST-BRIDGE --output _site
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    if: github.ref == 'refs/heads/governance/point-0-golden-baseline-20261122'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy static bridge
+        id: deployment
+        uses: actions/deploy-pages@v4
