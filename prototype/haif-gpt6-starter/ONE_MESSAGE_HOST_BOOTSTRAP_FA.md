@@ -20,7 +20,8 @@ python3 -m unittest test_engine.py
 python3 engine.py --state /path/in/your/private/workspace/haif-state.json init
 python3 engine.py --state /path/in/your/private/workspace/haif-state.json record --input "synthetic host input" --output "synthetic host output"
 python3 engine.py --state /path/in/your/private/workspace/haif-state.json audit
-python3 engine.py --state /path/in/your/private/workspace/haif-state.json lookup --id <returned-bridge-id>
+BRIDGE_ID="paste-the-bridge_id-from-record-output"
+python3 engine.py --state /path/in/your/private/workspace/haif-state.json lookup --id "$BRIDGE_ID"
 ```
 
 Use only synthetic text; never put real private conversation content in this smoke test. If durable storage exists, restart the process/session and run `audit` and Bridge lookup again. Record command outcomes and evidence. Do not write to GitHub, main, Golden, RAHM or another host. If Python, isolated workspace or restart persistence is unavailable, mark that capability NOT AVAILABLE / NOT TESTED instead of simulating success.
