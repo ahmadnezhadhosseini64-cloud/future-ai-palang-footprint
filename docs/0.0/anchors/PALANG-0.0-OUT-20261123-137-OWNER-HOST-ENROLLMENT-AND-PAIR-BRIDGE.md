@@ -86,3 +86,9 @@ The existing dependency-free runtime was extended rather than replaced:
 
 
 Canonical root: [POINT-0/GOLDEN](GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md).
+
+
+## Explicit forward links
+
+- Current checkpoint: [CURRENT-150.05](PALANG-0.0-CURRENT-20261123-150-REVISION-05-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md).
+- Sole active queue candidate: [NEXT-051.05](PALANG-0.0-NEXT-20261123-051-REVISION-05-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md).
