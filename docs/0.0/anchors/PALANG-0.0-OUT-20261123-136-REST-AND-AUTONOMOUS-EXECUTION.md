@@ -84,3 +84,8 @@ These are research-backed implementation candidates, not proof that any external
 - Runtime, schema fixtures, host registry, IN/OUT chain equivalence, manifest SHA inventory, RAHM archive build, starter package tests, same-identity ZIP rebuild, exact artifact-ID download, artifact receipt verification and downloaded ZIP extraction/tests all passed.
 - The artifact download issue was resolved by using the exact upload `artifact-id`, GitHub REST API download with the workflow token limited to GitHub API use, bounded retries, then ZIP verification. The governance test also passed; the token was not passed as a generic `github-token` input to the download action.
 - Durable release refresh was SKIPPED because this was a pull-request event. Real independent-host acceptance remains NOT RUN. Later documentation-only updates for Issue #21 have moved the branch head beyond this tested SHA; exact latest-head audit remains required before promotion.
+
+
+## Issue #21 — targeted family and repeated-basename screen
+
+From the same exact main tree: docs/0.0/anchors 579 blobs; BEHAVIOR-TRACE 558; ARCHITECTURE-LESSONS 20; BEHAVIOR-OBSERVATORY 9; behavior-hunter 13; haif-runtime 3; tests/rahm 5; portable starter prototype 23. A filename-only screen found 21 repeated-basename groups: 17 groups with different Git blob SHAs and 4 byte-identical groups. This is not an identity-collision conclusion: README.md/index.html are naturally repeated names; other pairs require source authority and semantic comparison. No files were changed/deleted by this screen. Issue #21 updated and remains OPEN.
