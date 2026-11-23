@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
-"""Authenticated local HTTP bridge for continuous HAIF-to-RAHM evidence intake."""
+"""Loopback-only RAHM health service; all remote host ingestion is disabled."""
 from __future__ import annotations
 import argparse, ipaddress, json, signal, sys, threading
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
-from rahm_runtime import append, atomic_write, load, verify_haif, verify_ledger
-
-MAX_BODY = 2 * 1024 * 1024
+from rahm_runtime import load
 
 def _is_loopback_host(host: str) -> bool:
     if host.lower() == "localhost":
@@ -19,7 +17,7 @@ def _is_loopback_host(host: str) -> bool:
 
 def handler_for(ledger_path: Path, token: str = ""):
     class Handler(BaseHTTPRequestHandler):
-        server_version = "RAHM-Bridge/0.3"
+        server_version = "RAHM-Health/0.4"
         def log_message(self, fmt, *args):
             sys.stderr.write("RAHM bridge: " + (fmt % args) + "\n")
         def send_json(self, status, payload):
@@ -46,9 +44,9 @@ def handler_for(ledger_path: Path, token: str = ""):
     return Handler
 
 def main(argv=None):
-    p=argparse.ArgumentParser(description="Authenticated local RAHM ingestion service")
+    p=argparse.ArgumentParser(description="Loopback-only RAHM health service; host ingestion is disabled")
     p.add_argument("--ledger",default="rahm-ledger.json")
-    p.add_argument("--host",default="127.0.0.1",help="defaults to loopback; use only behind a hardened TLS proxy for remote hosts")
+    p.add_argument("--host",default="127.0.0.1",help="loopback address only; remote binding is rejected")
     p.add_argument("--port",type=int,default=8765)
     args=p.parse_args(argv)
     if not _is_loopback_host(args.host):
