@@ -186,7 +186,7 @@ jobs:
       - name: Test portable living-master link rewriter
         run: python -m unittest discover -s scripts/portable/tests -v
       - name: Synchronize current living mother into portable starter
-        run: python scripts/portable/rewrite_living_master_links.py --source "docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md" --destination "prototype/haif-gpt6-starter/LIVING_MASTER_REFERENCE.md"
+        run: python scripts/portable/rewrite_living_master_links.py --source "docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md" --destination "prototype/haif-gpt6-starter/LIVING_MASTER_REFERENCE.md" --strict
       - name: Test the existing HAIF starter package source
         if: always()
         run: |
