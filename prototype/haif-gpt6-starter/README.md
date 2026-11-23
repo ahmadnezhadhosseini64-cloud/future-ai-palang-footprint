@@ -69,7 +69,7 @@ The canonical repository is intentionally Public. A fresh host should use anonym
 
 ## What is implemented
 - Standard-library Python continuity engine.
-- Independent anchor, IN, OUT and event identifiers for each interaction pair.
+- Independent anchor, IN, BRIDGE, OUT and event identifiers for each interaction pair; Bridge integrity and reverse lookup are validated.
 - Canonical point identity: 0 and 0+ are labels on the same point; 0+ is not a duplicate point.
 - One-command bootstrap creates the 0/0+ root, linked 0.0 continuation and six explicitly OPEN host-capability gaps; it refuses to overwrite existing state.
 - Parent-linked 0.0 continuation checkpoints, collision and lineage checks, append-only hash-linked events and tamper detection.
