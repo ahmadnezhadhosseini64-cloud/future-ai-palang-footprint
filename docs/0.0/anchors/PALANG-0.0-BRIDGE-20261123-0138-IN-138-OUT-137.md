@@ -9,7 +9,7 @@
 - Time binding: [TIME-BINDING-EVT-0325](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0325-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE-2026-11-23.md)
 - Current candidate: [CURRENT-150.05](PALANG-0.0-CURRENT-20261123-150-REVISION-05-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md)
 - Sole queue candidate: [NEXT-051.05](PALANG-0.0-NEXT-20261123-051-REVISION-05-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md)
-- Status: REGISTERED / READ-BACK-PENDING
+- Status: READ-BACK VERIFIED / GRAPH-VERIFICATION-PENDING
 
 ## Required graph edges
 
@@ -50,3 +50,9 @@ Each Bridge must record:
 ## Anti-complexity rule
 
 Do not add a separate POINT-0 root, a parallel NEXT queue, a new database, or an external bridge service merely to implement this record. The Bridge is initially a small version-controlled Markdown record plus deterministic graph checks. A live transport bridge is a separate runtime capability and remains OPEN until deployed and tested.
+
+## Protocol and receipt schema
+
+- Host enrollment protocol: [HOST-ENROLLMENT-CHALLENGE-AND-PAIR-BRIDGE](../../architecture/HOST-REGISTRY/HOST-ENROLLMENT-CHALLENGE-AND-PAIR-BRIDGE-2026-11-23.md).
+- Receipt schema: [HOST-ENROLLMENT-RECEIPT-SCHEMA](../../architecture/HOST-REGISTRY/HOST-ENROLLMENT-RECEIPT-SCHEMA-2026-11-23.json).
+- Receipt template: [HOST-ENROLLMENT-RECEIPT-TEMPLATE](../../../prototype/universal-host/HOST-ENROLLMENT-RECEIPT-TEMPLATE.json).
