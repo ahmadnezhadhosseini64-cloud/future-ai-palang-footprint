@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - "scripts/rahm-runtime/**"
+      - "scripts/rahm-womb/**"
       - "scripts/haif-runtime/**"
       - "scripts/host-bridge/**"
       - "tests/host-bridge/**"
@@ -11,8 +12,10 @@ on:
   push:
     branches:
       - "feat/rahm-haif-live-bridge-mvp-20261123"
+      - "feat/rahm-womb-and-one-message-host-20261124"
     paths:
       - "scripts/rahm-runtime/**"
+      - "scripts/rahm-womb/**"
       - "scripts/haif-runtime/**"
       - ".github/workflows/rahm-runtime-tests.yml"
 permissions:
@@ -29,5 +32,7 @@ jobs:
         run: python -m unittest discover -s scripts/haif-runtime/tests -v
       - name: Test RAHM runtime
         run: python -m unittest discover -s scripts/rahm-runtime/tests -v
+      - name: Test RAHM WOMB
+        run: PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=scripts/rahm-womb python -m unittest discover -s scripts/rahm-womb/tests -v
       - name: Test host bridge allowlist build
         run: python -m unittest discover -s tests/host-bridge -v
