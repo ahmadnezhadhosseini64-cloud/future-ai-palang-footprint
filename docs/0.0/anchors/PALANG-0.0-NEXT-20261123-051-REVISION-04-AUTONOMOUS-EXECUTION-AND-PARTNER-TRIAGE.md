@@ -70,3 +70,10 @@ A same-run artifact download race was isolated. Upload succeeds and the artifact
 ## Issue #21 progress — exact full-tree path inventory
 
 Main `30d1d3b2de09078131fa3c8a0ff7c492a7ab0d7e`, tree `3beac697b90922a93d1618a869bedd4dab212f73`: 6,716 recursive entries, not truncated. Targeted source families contain 644 paths. Issue #21 now records the inventory and remains OPEN because semantic extraction/reconciliation is incomplete.
+
+
+## Successful exact-candidate CI receipt
+
+- Portable Conformance: run `45110219381` PASS on `cfac0057832f3116d94cddc11294427af55dd063`.
+- Living Architecture Audit: run `45110219361` PASS on the same SHA.
+- Exact artifact-ID round-trip and downloaded ZIP verification now PASS on that candidate. Durable Release refresh was skipped for the PR event; independent-host recovery remains NOT RUN. Subsequent Issue #21 documentation commits are not covered by these exact-SHA receipts; re-run the audit on the latest final branch head before any promotion.
