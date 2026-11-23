@@ -48,5 +48,29 @@ class RahmTests(unittest.TestCase):
             self.cli("--ledger",ledger,"init")
             self.cli("--ledger",ledger,"init",expected=2)
 
+    def test_real_haif_runtime_to_rahm_end_to_end(self):
+        haif_cli = Path(__file__).resolve().parents[2] / "haif-runtime" / "haif_runtime.py"
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp); haif_state=root/"haif.json"; export=root/"haif-export.json"; ledger=root/"rahm.json"
+            def run_haif(*args):
+                result=subprocess.run([sys.executable,str(haif_cli),"--state",str(haif_state),*map(str,args)],
+                                      text=True,capture_output=True)
+                self.assertEqual(result.returncode,0,result.stderr)
+                return result
+            run_haif("init")
+            run_haif("record","--input","real HAIF request","--output","real HAIF response")
+            run_haif("checkpoint")
+            exported=run_haif("export")
+            export.write_text(exported.stdout,encoding="utf-8")
+            self.cli("--ledger",ledger,"init")
+            ingested=json.loads(self.cli("--ledger",ledger,"ingest-haif",export).stdout)
+            self.assertEqual(ingested["added"],2)
+            verified=json.loads(self.cli("--ledger",ledger,"verify").stdout)
+            self.assertEqual(verified["result"],"PASS")
+            # Replaying the same genuine HAIF export must not duplicate RAHM evidence.
+            replay=json.loads(self.cli("--ledger",ledger,"ingest-haif",export).stdout)
+            self.assertEqual(replay["added"],0)
+            self.assertEqual(replay["duplicate_skipped"],2)
+
 if __name__ == "__main__":
     unittest.main()
