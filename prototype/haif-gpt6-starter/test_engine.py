@@ -359,9 +359,9 @@ class InteractionResponseAnchorProtocolTests(unittest.TestCase):
         ):
             text = (root / filename).read_text(encoding="utf-8")
             self.assertIn(expected_chain, text, filename)
-            self.assertIn("0.5.1", text, filename)
+            self.assertIn("0.5.2", text, filename)
         readme = (root / "README.md").read_text(encoding="utf-8")
-        self.assertIn("v0.5.1", readme)
+        self.assertIn("v0.5.2", readme)
         self.assertIn("external build receipt", readme)
         self.assertIn("Previous verified v0.4.3 build receipt", readme)
         self.assertIn(expected_chain, readme)
