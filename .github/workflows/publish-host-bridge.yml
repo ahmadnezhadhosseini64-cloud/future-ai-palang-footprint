@@ -29,6 +29,12 @@ jobs:
           test "${GITHUB_REF}" = "refs/heads/governance/point-0-golden-baseline-20261122"
       - name: Checkout exact source
         uses: actions/checkout@v4
+      - name: Require private source repository
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          visibility="$(gh api "repos/${GITHUB_REPOSITORY}" --jq '.visibility')"
+          test "$visibility" = "private"
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
