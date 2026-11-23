@@ -29,3 +29,9 @@ A scheduled task can trigger a bounded project review at a chosen time/frequency
 
 ## Acceptance
 This is a candidate continuation record only. It does not merge Golden, modify main, provision external infrastructure, or close any operational gate.
+
+
+## Exact event time binding
+- [EVT-0324](../../architecture/BEHAVIOR-TRACE/EVT-0324-OWNER-REST-AUTONOMOUS-EXECUTION-2026-11-23.md)
+- [TIME-BINDING-EVT-0324](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0324-OWNER-REST-AUTONOMOUS-EXECUTION-2026-11-23.md)
+- Event commit UTC: 2026-11-23T04:05:33Z; Tehran: 2026-11-23T07:35:33+03:30.
