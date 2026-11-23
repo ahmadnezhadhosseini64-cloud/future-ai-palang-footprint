@@ -1,3 +1,12 @@
+## Host enrollment and paired interaction bridge — current candidate
+
+- [Host enrollment challenge, receipt and workspace boundary](architecture/HOST-REGISTRY/HOST-ENROLLMENT-CHALLENGE-AND-PAIR-BRIDGE-2026-11-23.md).
+- [Receipt JSON Schema](architecture/HOST-REGISTRY/HOST-ENROLLMENT-RECEIPT-SCHEMA-2026-11-23.json) · [copyable receipt template](../prototype/universal-host/HOST-ENROLLMENT-RECEIPT-TEMPLATE.json).
+- Current pair: [IN-138](0.0/anchors/PALANG-0.0-IN-20261123-138-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md) ↔ [BRIDGE-0138](0.0/anchors/PALANG-0.0-BRIDGE-20261123-0138-IN-138-OUT-137.md) ↔ [OUT-137](0.0/anchors/PALANG-0.0-OUT-20261123-137-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md).
+- This candidate does not issue an official Host ID or activate a host. Public READ is anonymous; private workspace and write-back are separate gates.
+
+---
+
 > **CURRENT POINT-0++ — latest chat continuation candidate:** [CURRENT-150.05](0.0/anchors/PALANG-0.0-CURRENT-20261123-150-REVISION-05-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md) · [IN-138](0.0/anchors/PALANG-0.0-IN-20261123-138-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md) → [BRIDGE-0138](0.0/anchors/PALANG-0.0-BRIDGE-20261123-0138-IN-138-OUT-137.md) → [OUT-137](0.0/anchors/PALANG-0.0-OUT-20261123-137-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md) → [EVT-0325](architecture/BEHAVIOR-TRACE/EVT-0325-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE-2026-11-23.md) → [TIME-BINDING-EVT-0325](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0325-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE-2026-11-23.md) · sole queue [NEXT-051.05](0.0/anchors/PALANG-0.0-NEXT-20261123-051-REVISION-05-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md).
 
 **CANDIDATE ONLY:** PR #145 remains open/unmerged; last accepted Golden remains CURRENT-150.02 / NEXT-051.02. No main write, new root, or parallel queue.
