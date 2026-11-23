@@ -601,7 +601,7 @@
   ],
   "live_reference_policy": "Mutable current-state and startup/governance references are included in each export and receive exact SHA-256 plus Git blob SHA-1 observations in the same CI run. This includes RAHM_BOOT and RAHM_ARCHITECTURE because their canonical checkpoint binding must track the current live chain. Stable core remains digest-pinned.",
   "current_chain": "POINT-0/GOLDEN → IN-136 → OUT-135 → EVT-0323 → TIME-BINDING-EVT-0323 → CURRENT-150.03 → NEXT-051.03",
-  "current_checkpoint": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261123-150-REVISION-03-CHAT-POINT0-CONTINUATION.md",
+  "current_checkpoint": "docs/0.0/anchors/PALANG-0.0-CURRENT-20261123-150-REVISION-05-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md",
   "post_merge_acceptance": {
     "golden_merge_sha": "e8f909e6064806b2e450d9bc78a217b15748fb0b",
     "golden_tree_sha": "e543e2f8b7c06db1335db849b5b548fcedb4a3bc",
@@ -624,36 +624,21 @@
     "real_independent_host_acceptance": "NOT_RUN"
   },
   "candidate_continuation": {
-    "event": "EVT-0323",
-    "current": "CURRENT-150.03",
-    "next": "NEXT-051.03",
+    "event": "EVT-0325",
+    "bridge": "BRIDGE-0138",
+    "input": "IN-138",
+    "output": "OUT-137",
+    "current": "CURRENT-150.05",
+    "next": "NEXT-051.05",
     "status": "CANDIDATE / EXACT-SHA-VALIDATION-PENDING",
     "parent_accepted": "CURRENT-150.02 / NEXT-051.02",
     "pr": 145,
     "main_modified": false,
     "mother_version": "1.8.4",
-    "portable_conformance_run": 45079917344,
-    "prospective_merge_sha": "a2ac55f537352411c423205d9e5c367d99d0d920",
-    "pr_head_sha": "e22e6a098ff0c27cb09d5f3a782d00820d8e282b",
-    "latest_chain_reconstruction": "PASS",
-    "in_out_recovery_equivalence": "PASS",
-    "stable_sha256_files": "47/47 MATCH",
-    "live_reference_sha256_observations": 266,
-    "rahm_zip_sha256": "487f472227f7f3996c864618f7b2275c02842b40da7125f313d18f533ae98d0f",
-    "starter_zip_sha256": "6b356e1503bf9c9404784e8d576d647f993ec6e3b89e6d32aba47954a5df5c60",
-    "extracted_starter_tests": "24 PASS",
-    "living_master_mirror": "BYTE_FOR_BYTE_MATCH",
-    "living_architecture_audit": "SUCCESS",
-    "durable_release": "SKIPPED_ON_PULL_REQUEST",
-    "independent_host_acceptance": "NOT_RUN",
-    "living_architecture_audit_run": 45079917323,
-    "portable_conformance": "SUCCESS",
-    "governance_tests": "31 PASS",
-    "current_pointer_candidates": [
-      "CURRENT-066",
-      "CURRENT-150"
-    ],
-    "current_pointer_winner_selected": false,
-    "promotion_gate": "OWNER_CONTROLLED_GOLDEN_MERGE_PENDING"
+    "package_version": "0.5.2",
+    "host_enrollment": "PUBLIC_READ_ONLY / OWNER_REVIEW_REQUIRED",
+    "pair_graph": "GRAPH_VERIFIED",
+    "interaction_runtime_bridge": "IMPLEMENTED / CI_VALIDATION_PASS",
+    "independent_host_acceptance": "NOT_RUN"
   }
 }
