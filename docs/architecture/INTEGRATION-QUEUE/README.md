@@ -7,18 +7,7 @@
 ---
 
 
-## Current continuation pointer — POINT-0/GOLDEN / CURRENT-150.03 candidate / NEXT-051.03 candidate
-
-- Stable identities remain POINT-0/GOLDEN · CURRENT-150 · NEXT-051.
-- Parent accepted revisions: [CURRENT-150.02](../../0.0/anchors/PALANG-0.0-CURRENT-20261122-150-REVISION-02-PARTNER-AUTONOMOUS-EXECUTION-AUDIT.md) / NEXT-051.02.
-- Candidate revisions: [CURRENT-150.03](../../0.0/anchors/PALANG-0.0-CURRENT-20261123-150-REVISION-03-CHAT-POINT0-CONTINUATION.md) / [NEXT-051.03](../../0.0/anchors/PALANG-0.0-NEXT-20261123-051-REVISION-03-EXECUTION-CONTINUATION.md).
-- Chain: [IN-136](../../0.0/anchors/PALANG-0.0-IN-20261123-136-CHAT-POINT0-CONTINUATION.md) → [OUT-135](../../0.0/anchors/PALANG-0.0-OUT-20261123-135-CHAT-POINT0-CONTINUATION.md) → [EVT-0323](../BEHAVIOR-TRACE/EVT-0323-CHAT-POINT0-CONTINUATION-2026-11-23.md) → [TIME-BINDING-EVT-0323](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0323-CHAT-POINT0-CONTINUATION-2026-11-23.md).
-- This is an isolated candidate branch, not yet a Golden merge. main remains untouched.
-- Parent .02 exact post-merge audit and Portable RAHM Conformance passed; real-host acceptance, release refresh, owner approval enforcement and private Partner/RAHM provisioning remain OPEN.
-- Ten Partner Issues #114–#123 and Issues #20/#21 remain OPEN. Buffer and Dropbox remain WAITING / DEFERRED / NON-BLOCKING.
-- No new root, stable identity or parallel queue.
-
----
+Historical CURRENT-150.03 / NEXT-051.03 candidate is superseded by CURRENT-150.05 / NEXT-051.05. Keep the former only as historical lineage; use the current pointer above.
 
 ---
 
