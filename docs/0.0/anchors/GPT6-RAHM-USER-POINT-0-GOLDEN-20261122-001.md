@@ -4,7 +4,7 @@
 - Status: ACTIVE / LIVING / GOLDEN BASELINE PUBLISHED TO MAIN
 - Canonical root: POINT-0 (single root; this is a baseline marker, not a new root)
 - Parent: POINT-0/086 → CURRENT-139
-- Current chain: POINT-0/GOLDEN → CURRENT-150.01 → IN-135 → OUT-134 → EVT-0322 → TIME-BINDING-EVT-0322 → CURRENT-150.02 → NEXT-051.02
+- Accepted Golden chain at baseline: POINT-0/GOLDEN → CURRENT-150.01 → IN-135 → OUT-134 → EVT-0322 → TIME-BINDING-EVT-0322 → CURRENT-150.02 → NEXT-051.02
 - Owner: @ahmadnezhadhosseini64-cloud
 - Canonical repository: ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
 - Baseline source HEAD recorded at Golden creation (historical source reference, not the current operating ref): 9ebd4bcc5cfc0168276e366c1867da8709dfb566
@@ -28,6 +28,13 @@
 اسناد تاریخی، snapshotهای قدیمی، branchها و دستورهای قدیمی به‌تنهایی مجوز اجرایی نیستند. هیچ تصمیم تثبیت‌شده‌ای به دلیل فراموشی، شروع نشست جدید، checklist عمومی یا وجود سند قدیمی باز نمی‌شود. بازگشایی فقط با شاهد جدید معتبر، خطای اثبات‌شده، تغییر شرط واقعی، ریسک مادیِ بررسی‌نشده یا فرمان صریح مالک مجاز است.
 
 هنگام برخورد با مانع یا تعارض، عامل باید روی همین baseline بماند، علت را از شواهد فعلی بررسی کند، تغییر حداقلی و رو به جلو بسازد، آزمون کند و نتیجه را با read-back ثبت کند. هرگز به‌طور خودکار به معماری یا مجوز قدیمی rollback نکند.
+
+
+## 2.1 ادامهٔ نامزد جاری — بدون تغییر وضعیت Golden
+
+[POINT-0/GOLDEN](GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md) → [IN-138](PALANG-0.0-IN-20261123-138-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md) → [BRIDGE-0138](PALANG-0.0-BRIDGE-20261123-0138-IN-138-OUT-137.md) → [OUT-137](PALANG-0.0-OUT-20261123-137-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md) → [EVT-0325](../../architecture/BEHAVIOR-TRACE/EVT-0325-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE-2026-11-23.md) → [TIME-BINDING-EVT-0325](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0325-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE-2026-11-23.md) → [CURRENT-150.05](PALANG-0.0-CURRENT-20261123-150-REVISION-05-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md) → [NEXT-051.05](PALANG-0.0-NEXT-20261123-051-REVISION-05-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md).
+
+این فقط نامزد PR #145 است؛ PR باز و ادغام‌نشده است. CURRENT-150.02 / NEXT-051.02 آخرین وضعیت پذیرفته‌شدهٔ Golden باقی می‌مانند. این ادامه هیچ ریشه، خانوادهٔ CURRENT یا صف NEXT جدیدی ایجاد نمی‌کند و main را تغییر نمی‌دهد.
 
 ## 3. اصل غیرقابل‌تغییر میزبان و MASTER
 
@@ -65,7 +72,7 @@ GitHub نویسندهٔ PR را از تأیید PR خودش منع می‌کند
 - Workflow audit: فقط دو workflow مجوز repository-content write دارند: RAHM promotion App برای ساخت branch/PR بات به CHILD، و portable package publisher فقط برای انتشار assetهای release پایدار (بدون git commit/push به main). دو workflow دیگر فقط pages:write و id-token:write برای deploy به GitHub Pages دارند. سایر workflowها read-only هستند. هیچ‌یک از این مجوزها به میزبان واگذار نشده است.
 - legacy host adapter disabled/fail-closed؛ execution controller read-only؛ local event adapter فقط SQLite محلی دارد و producer_connected=false و repository_write=NOT_IMPLEMENTED گزارش می‌کند.
 - Host Registry schema 1.1.0 معتبر و Registry خالی است؛ هیچ میزبان واقعی ACTIVE نیست.
-- بستهٔ قابل‌انتقال در baseline با run 44964480412، SHA-256 بالا، CRC، source-byte read-back، extracted tests و durable release publication تأیید شده است؛ clean-host import/recovery هنوز NOT RUN است. بستهٔ منبع جدید v0.5.1 فقط CANDIDATE است و تا اجرای conformance روی main، PACKAGE_VERIFIED محسوب نمی‌شود.
+- بستهٔ قابل‌انتقال در baseline با run 44964480412، SHA-256 بالا، CRC، source-byte read-back، extracted tests و durable release publication تأیید شده است؛ clean-host import/recovery هنوز NOT RUN است. بستهٔ منبع جدید v0.5.2 فقط CANDIDATE است و تا اجرای conformance روی main، PACKAGE_VERIFIED محسوب نمی‌شود.
 
 ## 8. موارد باز؛ صریح و متصل به NEXT-051
 
