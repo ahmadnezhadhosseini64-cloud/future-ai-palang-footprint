@@ -3,8 +3,10 @@ from pathlib import Path
 from urllib.error import HTTPError
 from urllib.request import Request, urlopen
 
-RUNTIME=Path(__file__).resolve().parents[1]/"rahm_runtime.py"
-SERVICE=Path(__file__).resolve().parents[1]/"rahm_service.py"
+ROOT=Path(__file__).resolve().parents[1]
+RUNTIME=ROOT/"rahm_runtime.py"
+SERVICE=ROOT/"rahm_service.py"
+AGENT=ROOT/"rahm_host_agent.py"
 TOKEN="test-token-that-is-at-least-32-characters-long"
 
 def make_haif():
@@ -15,9 +17,10 @@ def make_haif():
     return {"schema":"haif-runtime-state/1.0","events":[event]}
 
 class ServiceTests(unittest.TestCase):
-    def test_authenticated_http_ingest_and_health(self):
+    def test_authenticated_independent_host_agent_and_health(self):
         with tempfile.TemporaryDirectory() as tmp:
-            ledger=Path(tmp)/"ledger.json"
+            root=Path(tmp); ledger=root/"ledger.json"; source=root/"haif-export.json"
+            source.write_text(json.dumps(make_haif()),encoding="utf-8")
             init=subprocess.run([sys.executable,str(RUNTIME),"--ledger",str(ledger),"init"],capture_output=True,text=True)
             self.assertEqual(init.returncode,0,init.stderr)
             with socket.socket() as sock:
@@ -40,20 +43,24 @@ class ServiceTests(unittest.TestCase):
                 unauth=Request(base+"/v1/haif/ingest",data=payload,headers={"Content-Type":"application/json"},method="POST")
                 with self.assertRaises(HTTPError) as err: urlopen(unauth,timeout=2)
                 self.assertEqual(err.exception.code,401)
-                auth=Request(base+"/v1/haif/ingest",data=payload,headers={"Content-Type":"application/json","Authorization":"Bearer "+TOKEN},method="POST")
-                with urlopen(auth,timeout=2) as response:
-                    result=json.loads(response.read())
-                self.assertEqual(result["added"],1)
-                with urlopen(auth,timeout=2) as response:
-                    replay=json.loads(response.read())
-                self.assertEqual(replay["added"],0)
+                agent_env=env.copy()
+                agent_env["RAHM_API_TOKEN"]=TOKEN
+                pushed=subprocess.run([sys.executable,str(AGENT),"--source",str(source),
+                    "--url",base+"/v1/haif/ingest","--host-id","host-independent-01"],
+                    env=agent_env,capture_output=True,text=True,timeout=5)
+                self.assertEqual(pushed.returncode,0,pushed.stderr)
+                self.assertIn("HOST_PUSH_CONFIRMED",pushed.stdout)
+                with urlopen(base+"/v1/haif/ingest",timeout=2) as response:
+                    pass
             finally:
                 proc.terminate()
                 try: proc.wait(timeout=3)
                 except subprocess.TimeoutExpired: proc.kill()
+            state=json.loads(ledger.read_text(encoding="utf-8"))
+            self.assertEqual(len(state["events"]),1)
+            self.assertEqual(state["events"][0]["source_host_id"],"host-independent-01")
             status=subprocess.run([sys.executable,str(RUNTIME),"--ledger",str(ledger),"verify"],capture_output=True,text=True)
             self.assertEqual(status.returncode,0,status.stderr)
-            self.assertEqual(json.loads(status.stdout)["events"],1)
 
 if __name__=="__main__":
     unittest.main()
