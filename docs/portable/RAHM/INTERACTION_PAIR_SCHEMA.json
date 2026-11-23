@@ -13,6 +13,8 @@
     "lineage",
     "input_id",
     "output_id",
+    "bridge_id",
+    "bridge",
     "host_id",
     "host_session_id",
     "master_commit_sha",
@@ -232,6 +234,21 @@
     "output_id": {
       "type": "string",
       "minLength": 1
+    },
+    "bridge_id": {
+      "type": "string",
+      "pattern": "^BRIDGE-[0-9]{8}-[0-9]{3}$"
+    },
+    "bridge": {
+      "type": "object",
+      "required": ["bridge_id", "input_id", "output_id", "status"],
+      "properties": {
+        "bridge_id": {"type": "string", "pattern": "^BRIDGE-[0-9]{8}-[0-9]{3}$"},
+        "input_id": {"type": "string", "minLength": 1},
+        "output_id": {"type": "string", "minLength": 1},
+        "status": {"const": "MATCHED"}
+      },
+      "additionalProperties": false
     },
     "host_id": {
       "type": "string",
