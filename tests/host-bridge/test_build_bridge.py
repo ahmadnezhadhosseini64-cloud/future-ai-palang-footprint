@@ -6,7 +6,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-SCRIPT = Path(__file__).resolve().parents[1] / "scripts" / "host-bridge" / "build_bridge.py"
+SCRIPT = Path(__file__).resolve().parents[2] / "scripts" / "host-bridge" / "build_bridge.py"
 SPEC = importlib.util.spec_from_file_location("build_bridge", SCRIPT)
 MODULE = importlib.util.module_from_spec(SPEC)
 assert SPEC and SPEC.loader
