@@ -1,0 +1,11 @@
+[Unit]
+Description=Run RAHM health check every minute
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=1min
+AccuracySec=10s
+Unit=rahm-healthcheck.service
+
+[Install]
+WantedBy=timers.target
