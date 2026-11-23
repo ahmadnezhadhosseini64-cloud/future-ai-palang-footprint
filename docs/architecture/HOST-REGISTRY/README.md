@@ -1,3 +1,13 @@
+## Current enrollment and interaction-pair contract — CANDIDATE
+
+- Protocol: [HOST-ENROLLMENT-CHALLENGE-AND-PAIR-BRIDGE](HOST-ENROLLMENT-CHALLENGE-AND-PAIR-BRIDGE-2026-11-23.md).
+- Receipt schema: [HOST-ENROLLMENT-RECEIPT-SCHEMA](HOST-ENROLLMENT-RECEIPT-SCHEMA-2026-11-23.json).
+- Copyable receipt template: [HOST-ENROLLMENT-RECEIPT-TEMPLATE](../../../prototype/universal-host/HOST-ENROLLMENT-RECEIPT-TEMPLATE.json).
+- Initial public READ requires no collaborator membership or OAuth. A host claim ID is not an official Host ID; only the owner issues the official ID after receipt review.
+- Current interaction pair: IN-138 ↔ BRIDGE-0138 ↔ OUT-137 → EVT-0325 → CURRENT-150.05 → NEXT-051.05. PR #145 is open/unmerged; accepted Golden remains .02.
+
+---
+
 > **CURRENT GOVERNANCE — POINT-0/GOLDEN / CURRENT-140 / 2026-11-22**
 > The canonical root remains the single existing POINT-0. This is the golden baseline of the already-built project, not a new project, root, or parallel queue. Always retrieve exact main HEAD, the current living mother, CURRENT-140, and the sole active NEXT-051 before acting. Historical points and embedded snapshots are evidence only; they never override this baseline or reopen a settled decision by themselves.
 >
