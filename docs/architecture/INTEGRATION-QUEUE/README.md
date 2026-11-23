@@ -1,8 +1,9 @@
 ## Current continuation pointer — POINT-0/GOLDEN / CURRENT-145 / NEXT-051
 
 - Latest user-turn event: [EVT-0314](../BEHAVIOR-TRACE/EVT-0314-OWNER-APPROVED-INDEPENDENT-PARTNER-API-MCP-BRIDGE-BOOTSTRAP-2026-11-22.md) → [TIME-BINDING-EVT-0314](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0314-OWNER-APPROVED-PARTNER-BRIDGE-2026-11-22.md) → [CURRENT-145](../../0.0/anchors/PALANG-0.0-CURRENT-20261122-145-POINT-0-PLUSPLUS-PARTNER-BRIDGE-BOOTSTRAP.md).
-- Latest mirror-only event: [EVT-0316](../BEHAVIOR-TRACE/EVT-0316-LIVE-MIRROR-SYNC-RECHECK-2026-11-22.md) → [TIME-BINDING-EVT-0316](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0316-LIVE-MIRROR-SYNC-RECHECK-2026-11-22.md). EVT-0315 and its time binding remain preserved as the preceding mirror-only record. It does not create a new user root or checkpoint.
-- POINT-0/GOLDEN remains the single canonical root. NEXT-051 v1.0.52 is the sole active queue; NEXT-052 was not created. Main HEAD at this run's start was `aaf96c5e195f6f4f59dea43ebd9922b5f009c9ea`; exact-head Audit/RAHM evidence was not surfaced, so the current main HEAD remains NOT VERIFIED.
+- Latest mirror-only event: [EVT-0317](../BEHAVIOR-TRACE/EVT-0317-LIVE-MIRROR-SYNC-RECHECK-2026-11-23.md) → [TIME-BINDING-EVT-0317](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0317-LIVE-MIRROR-SYNC-RECHECK-2026-11-23.md). EVT-0316 and EVT-0315 with their time bindings remain preserved. This mirror event creates no new user root or checkpoint.
+- POINT-0/GOLDEN remains the single canonical root. NEXT-051 v1.0.52 is the sole active queue; NEXT-052 was not created.
+- Main HEAD at run start was `30d1d3b2de09078131fa3c8a0ff7c492a7ab0d7e`; no exact-head Audit/RAHM evidence surfaced, so main remains NOT VERIFIED. Candidate Audit 45110219361 and Portable RAHM 45110219381 passed on PR #145 merge SHA `44ffe850d8dc9ec0c1b9cafe8cc0ae1ec829625a`, not on main.
 - CURRENT-065/CURRENT-066 execution-pointer and overlay-manifest lineage remain OPEN / AMBIGUOUS; no winner selected. Issues #20/#21 remain OPEN. BOART-FOLLOWUP-01 remains ACTIVE. Buffer/Persistent Memory are NOT VERIFIED; Dropbox is OPEN / NOT VERIFIED; external independent-host recovery is NOT RUN.
 
 ---
@@ -78,7 +79,7 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.10.56
+- Version: 1.10.57
 - Date: 2026-11-21
 - Exact Time: EVT-0261 event commit UTC `2026-11-10T06:47:53Z` / Tehran `2026-11-10T10:17:53+03:30`; initial time-binding commit UTC `2026-11-10T06:48:18Z` / Tehran `2026-11-10T10:18:18+03:30`.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
