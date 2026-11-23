@@ -24,3 +24,9 @@ A file being registered, indexed, linked or read back is not equivalent to archi
 
 ## Status
 Event registered; downstream architecture gates remain OPEN / REVIEW_REQUIRED.
+## Canonical registration time evidence
+
+- Source: exact GitHub registration commit d44e2f6e6e11c2806134bf0c8932a804b99c859f.
+- Commit timestamp UTC: 2026-10-25T04:05:12Z.
+- Same instant in Asia/Tehran: 2026-10-25T07:35:12+03:30.
+- Original owner-message timestamp: UNKNOWN / NOT CAPTURED; do not infer it from the commit time.
