@@ -10,6 +10,21 @@ You are invited as a restricted AI Host Node in the existing Future AI / Palang 
 
 1. Start with anonymous HTTPS READ/clone/fetch. This repository is Public; do not request OAuth or collaborator membership just to read it.
 2. Resolve the exact current main HEAD SHA. Read docs/REFERENCE_INDEX.md, the living mother at docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md, prototype/universal-host/UNIVERSAL_AI_HOST_ENTRY_FA.md, the host registry/workspace contracts, and the one current NEXT/CURRENT identified by the Reference Index. Do not trust old numbers embedded in this prompt.
+
+2A. Separate accepted baseline from candidate: fetch the current `main` HEAD and record its exact SHA as the accepted baseline. Then inspect PR #145 through the public GitHub PR page/API, resolve its current head ref and exact head SHA, and read the candidate host-enrollment contract and CURRENT/NEXT from that candidate ref. Report both states separately. PR #145 is not Golden-accepted until owner-controlled merge and read-back.
+
+2B. If you have a real private workspace and code execution, perform a synthetic-only smoke test using the starter files from the PR #145 candidate ref. Inspect `engine.py` and `state.schema.json` before execution. In an isolated folder outside the repository, run:
+
+```bash
+python3 -m unittest test_engine.py
+python3 engine.py --state /path/in/your/private/workspace/haif-state.json init
+python3 engine.py --state /path/in/your/private/workspace/haif-state.json record --input "synthetic host input" --output "synthetic host output"
+python3 engine.py --state /path/in/your/private/workspace/haif-state.json audit
+python3 engine.py --state /path/in/your/private/workspace/haif-state.json lookup --id <returned-bridge-id>
+```
+
+Use only synthetic text; never put real private conversation content in this smoke test. If durable storage exists, restart the process/session and run `audit` and Bridge lookup again. Record command outcomes and evidence. Do not write to GitHub, main, Golden, RAHM or another host. If Python, isolated workspace or restart persistence is unavailable, mark that capability NOT AVAILABLE / NOT TESTED instead of simulating success.
+
 3. Return the enrollment receipt described below. Do not claim to be registered or ACTIVE.
 4. Do not write to any branch of MASTER/main, do not request or access RAHM, do not inspect another host, and do not request owner credentials or secrets.
 5. Do not create a private repository or ask the owner to do so before anonymous READ and the capability check are complete.
