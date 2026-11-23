@@ -8,7 +8,6 @@ RUNTIME=ROOT/"rahm_runtime.py"
 SERVICE=ROOT/"rahm_service.py"
 AGENT=ROOT/"rahm_host_agent.py"
 HEALTH=ROOT/"rahm_healthcheck.py"
-TOKEN="test-token-that-is-at-least-32-characters-long"
 
 def make_haif():
     import hashlib
@@ -18,7 +17,7 @@ def make_haif():
     return {"schema":"haif-runtime-state/1.0","events":[event]}
 
 class ServiceTests(unittest.TestCase):
-    def test_authenticated_independent_host_agent_health_and_graceful_stop(self):
+    def test_loopback_health_only_and_disabled_host_ingestion(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp); ledger=root/"ledger.json"; source=root/"haif-export.json"
             source.write_text(json.dumps(make_haif()),encoding="utf-8")
@@ -26,7 +25,10 @@ class ServiceTests(unittest.TestCase):
             self.assertEqual(init.returncode,0,init.stderr)
             with socket.socket() as sock:
                 sock.bind(("127.0.0.1",0)); port=sock.getsockname()[1]
-            env=os.environ.copy(); env["RAHM_API_TOKEN"]=TOKEN
+            remote=subprocess.run([sys.executable,str(SERVICE),"--ledger",str(ledger),"--host","0.0.0.0"],capture_output=True,text=True)
+            self.assertEqual(remote.returncode,2)
+            self.assertIn("loopback-only",remote.stderr)
+            env=os.environ.copy(); env.pop("RAHM_API_TOKEN",None)
             proc=subprocess.Popen([sys.executable,str(SERVICE),"--ledger",str(ledger),"--port",str(port)],
                                   env=env,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
             base=f"http://127.0.0.1:{port}"
@@ -45,22 +47,24 @@ class ServiceTests(unittest.TestCase):
                 payload=json.dumps(make_haif()).encode()
                 unauth=Request(base+"/v1/haif/ingest",data=payload,headers={"Content-Type":"application/json"},method="POST")
                 with self.assertRaises(HTTPError) as err: urlopen(unauth,timeout=2)
-                self.assertEqual(err.exception.code,401)
+                self.assertEqual(err.exception.code,410)
+                response=json.loads(err.exception.read().decode("utf-8"))
+                self.assertEqual(response["result"],"DISABLED")
+                self.assertEqual(response["reason"],"OWNER_MEDIATED_IMPORT_REQUIRED")
                 command=[sys.executable,str(AGENT),"--source",str(source),
                          "--url",base+"/v1/haif/ingest","--host-id","host-independent-01"]
                 pushed=subprocess.run(command,env=env,capture_output=True,text=True,timeout=5)
-                self.assertEqual(pushed.returncode,0,pushed.stderr)
-                self.assertIn("HOST_PUSH_CONFIRMED",pushed.stdout)
+                self.assertEqual(pushed.returncode,4)
+                self.assertIn("DISABLED_BY_POINT_0_GOLDEN",pushed.stderr)
                 replay=subprocess.run(command,env=env,capture_output=True,text=True,timeout=5)
-                self.assertEqual(replay.returncode,0,replay.stderr)
-                self.assertIn('"added": 0',replay.stdout)
+                self.assertEqual(replay.returncode,4)
+                self.assertIn("DISABLED_BY_POINT_0_GOLDEN",replay.stderr)
             finally:
                 proc.terminate()
                 proc.wait(timeout=3)
             self.assertEqual(proc.returncode,0,"SIGTERM must complete a graceful server shutdown")
             state=json.loads(ledger.read_text(encoding="utf-8"))
-            self.assertEqual(len(state["events"]),1)
-            self.assertEqual(state["events"][0]["source_host_id"],"host-independent-01")
+            self.assertEqual(len(state["events"]),0)
             status=subprocess.run([sys.executable,str(RUNTIME),"--ledger",str(ledger),"verify"],capture_output=True,text=True)
             self.assertEqual(status.returncode,0,status.stderr)
 

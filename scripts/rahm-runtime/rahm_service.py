@@ -1,16 +1,23 @@
 #!/usr/bin/env python3
-"""Authenticated local HTTP bridge for continuous HAIF-to-RAHM evidence intake."""
+"""Loopback-only RAHM health service; all remote host ingestion is disabled."""
 from __future__ import annotations
-import argparse, hmac, json, os, re, signal, sys, threading
+import argparse, ipaddress, json, signal, sys, threading
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
-from rahm_runtime import append, atomic_write, load, verify_haif, verify_ledger
+from rahm_runtime import load
 
-MAX_BODY = 2 * 1024 * 1024
+def _is_loopback_host(host: str) -> bool:
+    if host.lower() == "localhost":
+        return True
+    try:
+        return ipaddress.ip_address(host).is_loopback
+    except ValueError:
+        return False
 
-def handler_for(ledger_path: Path, token: str):
+
+def handler_for(ledger_path: Path, token: str = ""):
     class Handler(BaseHTTPRequestHandler):
-        server_version = "RAHM-Bridge/0.3"
+        server_version = "RAHM-Health/0.4"
         def log_message(self, fmt, *args):
             sys.stderr.write("RAHM bridge: " + (fmt % args) + "\n")
         def send_json(self, status, payload):
@@ -27,53 +34,29 @@ def handler_for(ledger_path: Path, token: str):
             except Exception:
                 return self.send_json(503, {"result":"UNAVAILABLE"})
         def do_POST(self):
-            if self.path != "/v1/haif/ingest":
-                return self.send_json(404, {"result":"NOT_FOUND"})
-            supplied=self.headers.get("Authorization","")
-            if not hmac.compare_digest(supplied, "Bearer " + token):
-                return self.send_json(401, {"result":"UNAUTHORIZED"})
-            try:
-                length=int(self.headers.get("Content-Length","0"))
-                if length <= 0 or length > MAX_BODY:
-                    return self.send_json(413, {"result":"INVALID_BODY_SIZE","max_bytes":MAX_BODY})
-                source=json.loads(self.rfile.read(length).decode("utf-8"))
-                errors=verify_haif(source)
-                if errors:
-                    return self.send_json(422, {"result":"SOURCE_REJECTED","errors":errors})
-                host_id=self.headers.get("X-RAHM-Host-ID","UNSPECIFIED")
-                if not re.fullmatch(r"[A-Za-z0-9._-]{1,64}", host_id):
-                    return self.send_json(400, {"result":"INVALID_HOST_ID"})
-                ledger=load(ledger_path)
-                added=sum(1 for event in source["events"] if append(ledger,event,host_id) is not None)
-                errors=verify_ledger(ledger)
-                if errors:
-                    return self.send_json(500, {"result":"LEDGER_INVALID","errors":errors})
-                atomic_write(ledger_path,ledger)
-                return self.send_json(200, {"result":"INGESTED","added":added,
-                                            "total":len(ledger["events"]),
-                                            "duplicate_skipped":len(source["events"])-added,
-                                            "source_host_id":host_id})
-            except (ValueError, UnicodeDecodeError, json.JSONDecodeError):
-                return self.send_json(400, {"result":"INVALID_JSON"})
-            except Exception:
-                return self.send_json(500, {"result":"INTERNAL_ERROR"})
+            if self.path == "/v1/haif/ingest":
+                return self.send_json(410, {
+                    "result": "DISABLED",
+                    "reason": "OWNER_MEDIATED_IMPORT_REQUIRED",
+                    "authority": "NO_HOST_TO_RAHM_ROUTE",
+                })
+            return self.send_json(404, {"result":"NOT_FOUND"})
     return Handler
 
 def main(argv=None):
-    p=argparse.ArgumentParser(description="Authenticated local RAHM ingestion service")
+    p=argparse.ArgumentParser(description="Loopback-only RAHM health service; host ingestion is disabled")
     p.add_argument("--ledger",default="rahm-ledger.json")
-    p.add_argument("--host",default="127.0.0.1",help="defaults to loopback; use only behind a hardened TLS proxy for remote hosts")
+    p.add_argument("--host",default="127.0.0.1",help="loopback address only; remote binding is rejected")
     p.add_argument("--port",type=int,default=8765)
     args=p.parse_args(argv)
-    token=os.environ.get("RAHM_API_TOKEN","")
-    if len(token)<32:
-        print("RAHM_API_TOKEN must be set to at least 32 characters",file=sys.stderr); return 2
+    if not _is_loopback_host(args.host):
+        print("RAHM service is loopback-only; remote host intake is forbidden", file=sys.stderr); return 2
     path=Path(args.ledger)
     if not path.exists():
         print("ledger does not exist; initialize it with rahm_runtime.py init first",file=sys.stderr); return 2
     try:
         load(path)
-        server=ThreadingHTTPServer((args.host,args.port),handler_for(path,token))
+        server=ThreadingHTTPServer((args.host,args.port),handler_for(path))
         def request_shutdown(_signum, _frame):
             threading.Thread(target=server.shutdown,daemon=True).start()
         signal.signal(signal.SIGTERM,request_shutdown)
