@@ -1,3 +1,12 @@
+## Current continuation — CURRENT-150.05 / NEXT-051.05 candidate
+
+- [IN-138](../../0.0/anchors/PALANG-0.0-IN-20261123-138-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md) ↔ [BRIDGE-0138](../../0.0/anchors/PALANG-0.0-BRIDGE-20261123-0138-IN-138-OUT-137.md) ↔ [OUT-137](../../0.0/anchors/PALANG-0.0-OUT-20261123-137-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md) → [EVT-0325](../BEHAVIOR-TRACE/EVT-0325-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE-2026-11-23.md) → [CURRENT-150.05](../../0.0/anchors/PALANG-0.0-CURRENT-20261123-150-REVISION-05-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md) → [NEXT-051.05](../../0.0/anchors/PALANG-0.0-NEXT-20261123-051-REVISION-05-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md).
+- Same POINT-0/GOLDEN root, CURRENT-150 family and NEXT-051 queue; no parallel identities.
+- PR #145 remains open/unmerged; accepted Golden state remains .02 until owner-controlled promotion.
+
+---
+
+
 ## Current continuation pointer — POINT-0/GOLDEN / CURRENT-150.03 candidate / NEXT-051.03 candidate
 
 - Stable identities remain POINT-0/GOLDEN · CURRENT-150 · NEXT-051.
