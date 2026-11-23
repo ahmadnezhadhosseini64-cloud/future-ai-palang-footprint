@@ -37,7 +37,7 @@ No AI host or RAHM process has a direct or indirect write path to MAIN/MASTER. A
 4. **Health monitoring:** one-minute health probe; failed probe invokes a systemd restart unit. Graceful SIGTERM shutdown is implemented and integration-tested.
 5. **Independent host bridge:** sender adapter verifies HAIF export, requires a 32+ character token, enforces HTTPS off-loopback, and posts to RAHM. RAHM records the sender-provided host label and skips duplicate events.
 
-Exact candidate head: `df84c7a5dfb5e326d35fd1b5ee53d6476dae8589`.
+The exact tested commit is always the latest PR #151 head SHA paired with its GitHub Actions check runs; do not reuse a prior candidate SHA as current evidence.
 - RAHM/HAIF runtime tests: SUCCESS.
 - Living Architecture Audit: SUCCESS.
 - Backup/restore tamper rejection, independent-host authenticated push, duplicate replay, health probe, graceful stop and ledger verification are covered by CI tests.
