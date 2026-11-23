@@ -92,3 +92,8 @@ Four `docs/checkpoints/0.0` same-name entries are confirmed legacy bridge stubs 
 ## Issue #20 — bounded runtime proof
 
 Local continuity runtime tests, interaction-pair fixtures and latest IN/OUT equivalence passed on candidate SHA `cfac0057832f3116d94cddc11294427af55dd063` (run 45110219381). Do not generalize this to live chat capture, external persistence, restart or clean-host acceptance; those remain open.
+
+
+## Latest exact-head validation
+
+Portable Conformance run `45110562285` PASS on candidate head `e311d7384b7deba72c411865883e86b2f7a71936` (all 22 steps, including artifact round-trip and extracted ZIP tests). Durable release was skipped on PR event; independent-host acceptance remains NOT RUN. Living Architecture Audit run `45110562263` on the same SHA is still IN PROGRESS.
