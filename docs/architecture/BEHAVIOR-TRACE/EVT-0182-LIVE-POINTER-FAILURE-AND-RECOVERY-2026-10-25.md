@@ -11,3 +11,10 @@
 - Correction plan: support both legacy and date-bearing CURRENT identifiers, add regression fixtures, execute tests on the exact commit, inspect new run/artifact and preserve the old failure as evidence.
 - Status: FAILURE CONFIRMED / ROOT CAUSE IDENTIFIED / FIX NOT YET VERIFIED.
 - Open gates: CURRENT-065/CURRENT-066 pointer adjudication; runtime and clean round-trip; complete graph triage; independent host; restart persistence; automatic capture/background execution; external storage.
+
+## Canonical registration time evidence
+
+- Source: exact GitHub registration commit 5811af0c885949f295487d038c049cafe130222f.
+- Commit timestamp UTC: 2026-10-25T09:48:40Z.
+- Same instant in Asia/Tehran: 2026-10-25T13:18:40+03:30.
+- Original owner-message timestamp: UNKNOWN / NOT CAPTURED; do not infer it from the commit time.
