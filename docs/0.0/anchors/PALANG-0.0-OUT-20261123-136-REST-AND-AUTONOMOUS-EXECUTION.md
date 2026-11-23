@@ -66,3 +66,12 @@ These are research-backed implementation candidates, not proof that any external
 - A first correction passed the workflow token explicitly. This was rejected by the existing governance test `test_portable_conformance_release_write_is_owner_controlled`, which intentionally forbids passing `${{ github.token }}` to the download action because the same workflow also has release-write permission.
 - The safer correction now uses the public repository exact upload output `artifact-id` and the documented unauthenticated download endpoint for public artifacts, with bounded retries and ZIP integrity checking. It does not pass the broad workflow token to the download action.
 - This correction is still pending exact-head CI. Do not mark the artifact round-trip gate PASS until run 45110068180 (or a later run on the final head) completes successfully.
+
+
+## Issue #21 — first full-tree inventory completed (semantic census still open)
+
+- Exact main commit: `30d1d3b2de09078131fa3c8a0ff7c492a7ab0d7e`; tree SHA: `3beac697b90922a93d1618a869bedd4dab212f73`.
+- Recursive tree returned 6,716 entries with `truncated=false`.
+- Top-level: evidence 4,708; docs 1,644; checkpoints 39; prototype 34; scripts 36; architecture 45; tests 28; .github 23; provenance 25.
+- Targeted path families: 644 entries across docs/0.0, behavior trace, architecture lessons, behavior observatory, behavior-hunter, haif-runtime, tests/rahm and starter prototype.
+- Issue #21 was updated with this exact partial evidence and remains OPEN. This is a complete path inventory for that exact tree, not a completed semantic source/rule census; content extraction, Git history, duplicate identity adjudication and rule→component→test mapping remain open.
