@@ -46,3 +46,7 @@ For each issue: separate source-code work the assistant can prepare from provide
 
 ## Acceptance discipline
 Documented ≠ implemented; implemented ≠ deployed; deployed ≠ tested; tested ≠ merged; merged ≠ released; package conformance ≠ independent-host recovery. No MASTER write, bypass, auto-merge, or host write path.
+
+
+## Event binding
+- [TIME-BINDING-EVT-0324](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0324-OWNER-REST-AUTONOMOUS-EXECUTION-2026-11-23.md) — commit UTC 2026-11-23T04:05:33Z / Tehran 2026-11-23T07:35:33+03:30.
