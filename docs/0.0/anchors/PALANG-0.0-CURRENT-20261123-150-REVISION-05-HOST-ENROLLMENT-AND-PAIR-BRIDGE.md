@@ -47,3 +47,13 @@ This is a continuation of the single existing root and stable CURRENT/NEXT famil
 3. Run Living Architecture Audit and Portable RAHM Conformance on the exact latest branch SHA.
 4. Keep PR #145 open for owner-controlled review; do not merge or publish main from this assistant.
 5. Test the one-message entry on a genuinely independent host before assigning any official Host ID or ACTIVE status.
+
+
+## Updated execution evidence
+
+- IN/Bridge/OUT/Event/Time/Current/Next graph: GRAPH VERIFIED after independent fetch-back of all seven records.
+- Local interaction runtime: Bridge ID generation, pair matching, event/parent binding and Bridge reverse lookup implemented.
+- Interaction ledger validation/recovery CI: run 45128386247 SUCCESS on SHA 69208ef7013b78f3bf6a5e6f1c9e0b342465bd30; all three jobs PASS.
+- Living Architecture Audit: run 45128386271 SUCCESS on the same tested SHA.
+- Portable conformance: run 45128386249 FAILED on stale manifest SHA pins for the modified portable schema and fixture; manifest corrected to version 1.8.46 on subsequent head 0f4754704f9837b631bc530e8924b8258f497cd7. Fresh exact-head rerun pending.
+- No Golden merge, main write, host activation, private RAHM provisioning or clean-host recovery is claimed.
