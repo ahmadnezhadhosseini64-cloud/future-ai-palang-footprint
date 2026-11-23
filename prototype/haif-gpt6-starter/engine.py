@@ -82,6 +82,7 @@ def verify_state(state: Any) -> list[str]:
     anchors = set()
     input_ids = set()
     output_ids = set()
+    bridge_ids = set()
     point_registration_events = []
     for i, event in enumerate(events):
         p = f"events[{i}]"
@@ -102,21 +103,34 @@ def verify_state(state: Any) -> list[str]:
         if event.get("kind") == "POINT_REGISTERED":
             point_registration_events.append(event)
         if event.get("kind") == "INTERACTION":
-            for key in ("anchor_id", "input_id", "output_id", "input", "output"):
+            for key in ("anchor_id", "input_id", "output_id", "bridge_id", "bridge", "input", "output"):
                 if not event.get(key):
                     errors.append(f"{p}.{key} is required")
             aid = event.get("anchor_id")
             iid = event.get("input_id")
             oid = event.get("output_id")
+            bid = event.get("bridge_id")
             if aid in anchors:
                 errors.append(f"{p}.anchor_id duplicate: {aid}")
             if iid in input_ids:
                 errors.append(f"{p}.input_id duplicate: {iid}")
             if oid in output_ids:
                 errors.append(f"{p}.output_id duplicate: {oid}")
+            if bid in bridge_ids:
+                errors.append(f"{p}.bridge_id duplicate: {bid}")
             anchors.add(aid)
             input_ids.add(iid)
             output_ids.add(oid)
+            bridge_ids.add(bid)
+            bridge = event.get("bridge")
+            if not isinstance(bridge, dict):
+                errors.append(f"{p}.bridge must be an object")
+            else:
+                for key, expected in (("bridge_id", bid), ("input_id", iid), ("output_id", oid),
+                                      ("event_id", eid), ("parent_event_hash", event.get("parent_hash")),
+                                      ("status", "MATCHED")):
+                    if bridge.get(key) != expected:
+                        errors.append(f"{p}.bridge.{key} mismatch")
         previous = event.get("event_hash", previous)
     points = state.get("points", [])
     if not isinstance(points, list):
@@ -270,11 +284,15 @@ def record_interaction(state: dict, user_input: str, assistant_output: str,
                        source_ref: str = "current-host", user_message_time_utc: str | None = None) -> dict:
     if not user_input.strip() or not assistant_output.strip():
         raise ValueError("input and output must be non-empty")
+    input_id = new_id("HAIF-IN")
+    output_id = new_id("HAIF-OUT")
+    bridge_id = new_id("HAIF-BRIDGE")
     event = append_event(
         state, "INTERACTION",
         anchor_id=new_id("HAIF-ANCHOR"),
-        input_id=new_id("HAIF-IN"),
-        output_id=new_id("HAIF-OUT"),
+        input_id=input_id,
+        output_id=output_id,
+        bridge_id=bridge_id,
         input=user_input,
         output=assistant_output,
         source_ref=source_ref,
@@ -282,9 +300,25 @@ def record_interaction(state: dict, user_input: str, assistant_output: str,
         evidence_class="OBSERVATION",
         registration_status="WRITE_READBACK_PENDING"
     )
+    event["bridge"] = {
+        "bridge_id": bridge_id,
+        "input_id": input_id,
+        "output_id": output_id,
+        "event_id": event["event_id"],
+        "parent_event_hash": event["parent_hash"],
+        "status": "MATCHED"
+    }
     event["registration_status"] = "WRITE_READBACK_VERIFIED"
     event["event_hash"] = digest(payload(event))
     return event
+
+
+def lookup_interaction(state: dict, anchor_id: str) -> dict | None:
+    for event in state.get("events", []):
+        if anchor_id in (event.get("anchor_id"), event.get("input_id"),
+                         event.get("output_id"), event.get("bridge_id")):
+            return event
+    return None
 
 
 def register_point(state: dict, point_id: str, labels: list[str], kind: str = "ROOT",
@@ -448,6 +482,8 @@ def main(argv: list[str] | None = None) -> int:
     record.add_argument("--input", required=True)
     record.add_argument("--output", required=True)
     record.add_argument("--source-ref", default="current-host")
+    lookup = sub.add_parser("lookup")
+    lookup.add_argument("--id", required=True)
     gap = sub.add_parser("gap")
     gap.add_argument("--title", required=True)
     gap.add_argument("--description", default="")
@@ -491,7 +527,12 @@ def main(argv: list[str] | None = None) -> int:
                 event = record_interaction(state, args.input, args.output, args.source_ref)
                 save_state(path, state)
                 result = {"result": "RECORDED_AND_READBACK_VERIFIED", "anchor_id": event["anchor_id"],
-                          "input_id": event["input_id"], "output_id": event["output_id"], "event_id": event["event_id"]}
+                          "input_id": event["input_id"], "output_id": event["output_id"], "bridge_id": event["bridge_id"], "event_id": event["event_id"]}
+            elif args.command == "lookup":
+                found = lookup_interaction(state, args.id)
+                if found is None:
+                    raise ValueError("interaction anchor not found")
+                result = {"result": "FOUND", "record": found}
             elif args.command == "gap":
                 item = add_gap(state, args.title, args.description, args.evidence_class, args.source_ref)
                 save_state(path, state)
