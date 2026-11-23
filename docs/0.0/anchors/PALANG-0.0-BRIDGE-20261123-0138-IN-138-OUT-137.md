@@ -69,3 +69,11 @@ All seven records were fetched again from the working branch and the required ed
 - CURRENT-150.05 and NEXT-051.05 link the same pair and stable root/queue: PASS.
 
 The seven fetched blob SHAs are preserved in the assistant's current verification receipt; the files remain fetchable on PR #145. This verifies the repository graph for this pair, not live capture of all future chats.
+
+
+## Shared canonical references
+
+- Living mother: [سند مرجع مادر مدل اولیه هوش مصنوعی](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md).
+- Independent-host recovery proof protocol: [INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL](../../architecture/مدل%20اولیه%20AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md).
+- Portable host protocol: [INDEPENDENT_HOST_RECOVERY_PROTOCOL](../../../prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md).
+- Portable export manifest: [EXPORT_MANIFEST](../../portable/RAHM/EXPORT_MANIFEST.json).
