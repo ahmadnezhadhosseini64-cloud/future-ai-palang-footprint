@@ -65,3 +65,8 @@ Documented ≠ implemented; implemented ≠ deployed; deployed ≠ tested; teste
 ## Portable artifact round-trip issue — precise status
 
 A same-run artifact download race was isolated. Upload succeeds and the artifact is present in the run artifact list, but the download action sometimes reports it missing immediately afterward. Passing the broad workflow token violated an existing governance invariant, so that approach was discarded. Current candidate uses the upload action exact artifact ID, public unauthenticated GitHub artifact download endpoint (repository is public), bounded retry, and ZIP integrity check. Exact-head run is pending; preserve the failure receipts and do not close this gate before a fresh successful run.
+
+
+## Issue #21 progress — exact full-tree path inventory
+
+Main `30d1d3b2de09078131fa3c8a0ff7c492a7ab0d7e`, tree `3beac697b90922a93d1618a869bedd4dab212f73`: 6,716 recursive entries, not truncated. Targeted source families contain 644 paths. Issue #21 now records the inventory and remains OPEN because semantic extraction/reconciliation is incomplete.
