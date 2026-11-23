@@ -89,3 +89,8 @@ These are research-backed implementation candidates, not proof that any external
 ## Issue #21 — targeted family and repeated-basename screen
 
 From the same exact main tree: docs/0.0/anchors 579 blobs; BEHAVIOR-TRACE 558; ARCHITECTURE-LESSONS 20; BEHAVIOR-OBSERVATORY 9; behavior-hunter 13; haif-runtime 3; tests/rahm 5; portable starter prototype 23. A filename-only screen found 21 repeated-basename groups: 17 groups with different Git blob SHAs and 4 byte-identical groups. This is not an identity-collision conclusion: README.md/index.html are naturally repeated names; other pairs require source authority and semantic comparison. No files were changed/deleted by this screen. Issue #21 updated and remains OPEN.
+
+
+## Issue #21 — content-based triage of repeated basenames
+
+Compared nine repeated-basename groups from main by full file content. Four `docs/checkpoints/0.0` entries are explicit legacy-path bridge stubs to canonical files under `checkpoints/0.0`; they are not duplicate source. The Dropbox pair explicitly separates 0.0 resume anchor from its canonical full reference. The two FINALIZATION_GATE files cover different scopes. The continuation-behavior anchor and its reference counterpart share stable identity but differ in role/content and remain unreconciled. The initial-navigation and universal-architecture pairs appear to be queue-summary/reference pairs with different lengths/versions and need authority lineage. Three provenance/reference pairs are exact byte-identical copies by Git blob SHA. `manifest.json` files serve different package contexts; the two host-entry prompt files differ and need role/version review. Issue #21 updated; no source changed/deleted; full semantic census remains OPEN.
