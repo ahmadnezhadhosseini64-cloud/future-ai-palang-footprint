@@ -97,6 +97,7 @@ Roles are capabilities, not separate authorities:
 - Time-anchor Manager — maintain slot definitions and runtime evidence.
 - Mirror Manager — synchronize without confusing sync with progress.
 - Feedback/Learning Manager — turn validated feedback into reusable lessons.
+- **Futures Intelligence and Rationality Officer (Duty 7)** — continuously assess possible futures, classify feasibility, quantify uncertainty with qualified probabilities, identify decisive experiments, and advise the continuity core.
 
 Combine roles when practical. Do not spawn agents/tasks merely to imitate complexity. Each role needs measurable responsibility and concrete output.
 
