@@ -108,3 +108,8 @@ Issue #20 now records run 45110219381 on SHA `cfac0057832f3116d94cddc11294427af5
 - All 22 workflow steps succeeded, including local runtime, schema fixtures, IN/OUT equivalence, SHA inventory, archive build, starter tests, exact artifact-ID download, artifact receipt, extracted ZIP tests and integrity verification.
 - Durable Release refresh was skipped because this was a PR event. Independent-host acceptance remains NOT RUN.
 - Living Architecture Audit run `45110562263` on the same SHA is still IN PROGRESS; no exact-head audit pass is claimed yet.
+
+
+## Latest exact-head audit receipt — corrected status
+
+Living Architecture Audit run `45110562263` completed SUCCESS on the same exact candidate SHA `e311d7384b7deba72c411865883e86b2f7a71936` previously covered by Portable Conformance run `45110562285` (also SUCCESS). Both workflows therefore passed on the same candidate SHA. Subsequent commits `bf2c49c070e85f19c6e1c88c8f42fd6995dc6581` and `7326f4bbba53f02836b1c158efe59a48855e7857` only append these receipts to OUT/NEXT; they do not change runtime, package or security policy. The latest branch head still needs its own final audit if exact-head promotion evidence is required. PR remains open and unmerged.
