@@ -1,7 +1,7 @@
 import json, os, socket, subprocess, sys, tempfile, time, unittest
 from pathlib import Path
 from urllib.error import HTTPError
-from urllib.request import urlopen
+from urllib.request import Request, urlopen
 
 ROOT=Path(__file__).resolve().parents[1]
 RUNTIME=ROOT/"rahm_runtime.py"
