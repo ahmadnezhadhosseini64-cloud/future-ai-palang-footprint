@@ -75,3 +75,11 @@ The existing dependency-free runtime was extended rather than replaced:
 **Portable conformance correction:** run 45128386249 failed only at manifest digest reconciliation for the two intentionally modified portable schema/fixture files. Their exact SHA-256 and Git blob SHA-1 values were updated in EXPORT_MANIFEST.json (version 1.8.46). A fresh exact-head conformance run is still required; no PASS is claimed yet.
 
 **Package build scope:** on candidate SHA 69208, the same canonical ZIP filename was rebuilt; 24 extracted tests passed, ZIP integrity and source-byte read-back passed, but the overall workflow remained failed at the stale manifest digests. The artifact is not promoted or treated as the latest verified release.
+
+
+## Shared canonical references
+
+- Living mother: [سند مرجع مادر مدل اولیه هوش مصنوعی](../../architecture/مدل%20اولیه%20AI/سند%20مرجع%20مادر%20مدل%20اولیه%20هوش%20مصنوعی.md).
+- Independent-host recovery proof protocol: [INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL](../../architecture/مدل%20اولیه%20AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md).
+- Portable host protocol: [INDEPENDENT_HOST_RECOVERY_PROTOCOL](../../../prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md).
+- Portable export manifest: [EXPORT_MANIFEST](../../portable/RAHM/EXPORT_MANIFEST.json).
