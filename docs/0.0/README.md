@@ -2308,3 +2308,6 @@ Commit-bound time: 2026-11-23T04:05:33Z / 2026-11-23T07:35:33+03:30. Candidate o
 ## Partner simplification research (candidate)
 
 The lower-complexity hosting/MCP review is appended to [PALANG PARTNER independent API/MCP bridge](../architecture/PALANG-PARTNER-INDEPENDENT-API-MCP-BRIDGE-2026-11-22.md). Candidate only; no service provisioning or deployment is implied.
+
+
+Portable artifact round-trip failure analysis and least-privilege correction are recorded in [OUT-136](anchors/PALANG-0.0-OUT-20261123-136-REST-AND-AUTONOMOUS-EXECUTION.md) and [NEXT-051.04](anchors/PALANG-0.0-NEXT-20261123-051-REVISION-04-AUTONOMOUS-EXECUTION-AND-PARTNER-TRIAGE.md); exact-head acceptance remains pending.
