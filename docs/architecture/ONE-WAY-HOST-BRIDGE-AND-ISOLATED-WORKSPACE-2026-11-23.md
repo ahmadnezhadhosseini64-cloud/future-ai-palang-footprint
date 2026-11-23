@@ -1,3 +1,15 @@
+> **SUPERSEDED — DO NOT USE FOR HOST ONBOARDING**
+>
+> This earlier v0.1.1 design proposed a second bridge repository. The owner-approved correction is the single-repository architecture: private Git source + allowlist-only public static bridge output + independent host workspaces.
+>
+> Canonical replacement: [ONE-REPOSITORY-PRIVATE-CORE-PUBLIC-BRIDGE-2026-11-23.md](./ONE-REPOSITORY-PRIVATE-CORE-PUBLIC-BRIDGE-2026-11-23.md)
+>
+> Audit protocol: [PALANG-CONTROL-HOST-AUDIT-PROTOCOL-2026-11-23.md](../governance/PALANG-CONTROL-HOST-AUDIT-PROTOCOL-2026-11-23.md)
+>
+> This file remains in history for traceability. Its separate-repository recommendation is withdrawn. No live host bridge is enabled by this notice.
+>
+> ---
+>
 # معماری پل یک‌طرفه و فضای کار مستقل میزبان
 
 - شناسه: `HAIF-ONE-WAY-HOST-BRIDGE-2026-11-23-001`
