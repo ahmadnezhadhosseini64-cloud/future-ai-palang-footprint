@@ -9,7 +9,7 @@
 - Time binding: [TIME-BINDING-EVT-0325](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0325-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE-2026-11-23.md)
 - Current candidate: [CURRENT-150.05](PALANG-0.0-CURRENT-20261123-150-REVISION-05-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md)
 - Sole queue candidate: [NEXT-051.05](PALANG-0.0-NEXT-20261123-051-REVISION-05-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md)
-- Status: READ-BACK VERIFIED / GRAPH-VERIFICATION-PENDING
+- Status: GRAPH VERIFIED / EXACT-HEAD-CI-PENDING
 
 ## Required graph edges
 
@@ -56,3 +56,16 @@ Do not add a separate POINT-0 root, a parallel NEXT queue, a new database, or an
 - Host enrollment protocol: [HOST-ENROLLMENT-CHALLENGE-AND-PAIR-BRIDGE](../../architecture/HOST-REGISTRY/HOST-ENROLLMENT-CHALLENGE-AND-PAIR-BRIDGE-2026-11-23.md).
 - Receipt schema: [HOST-ENROLLMENT-RECEIPT-SCHEMA](../../architecture/HOST-REGISTRY/HOST-ENROLLMENT-RECEIPT-SCHEMA-2026-11-23.json).
 - Receipt template: [HOST-ENROLLMENT-RECEIPT-TEMPLATE](../../../prototype/universal-host/HOST-ENROLLMENT-RECEIPT-TEMPLATE.json).
+
+
+## Graph verification receipt — 2026-11-23
+
+All seven records were fetched again from the working branch and the required edges checked:
+- IN-138 contains links to BRIDGE-0138 and OUT-137: PASS.
+- BRIDGE-0138 links to both IN-138 and OUT-137: PASS.
+- OUT-137 links to IN-138 and BRIDGE-0138: PASS.
+- EVT-0325 links the same pair: PASS.
+- TIME-BINDING-EVT-0325 binds EVT-0325 to the exact event commit: PASS.
+- CURRENT-150.05 and NEXT-051.05 link the same pair and stable root/queue: PASS.
+
+The seven fetched blob SHAs are preserved in the assistant's current verification receipt; the files remain fetchable on PR #145. This verifies the repository graph for this pair, not live capture of all future chats.
