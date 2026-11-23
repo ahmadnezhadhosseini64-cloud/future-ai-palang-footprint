@@ -4,7 +4,7 @@
 - ریشه: POINT-0/GOLDEN
 - صف: NEXT-051
 - مالک: احمد نژادحسینی
-- وضعیت: CODE-IMPLEMENTED / AUTOMATED-TESTS-PENDING / LIVE-MODEL-NOT-CONFIGURED
+- وضعیت: CODE-IMPLEMENTED / CI-TESTS-PASSED / LIVE-MODEL-NOT-CONFIGURED
 
 ## تفکیک اجزا
 1. RAHM WOMB: چرخهٔ استدلال و اعتبارسنجی مدل‌یار؛ کد در scripts/rahm-womb/.
@@ -46,3 +46,11 @@ python scripts/rahm-womb/rahm_womb.py --task "Audit the supplied proposal"
 
 ## اصل نظارتی Palang Control
 در هر نشست مجاز، Palang Control مرجع طلایی و مخزن را بازیابی می‌کند، ادعا را از شاهد جدا می‌کند، میزبان را از هسته دور نگه می‌دارد، خروجی را قرنطینه و ممیزی می‌کند، تست و read-back می‌خواهد و بدون دو تأیید مستقل مالک هیچ تغییری را در CHILD پذیرفته‌شده یا MASTER نهایی نمی‌کند. این تعهد، نگهبانی ۲۴ساعته یا پس‌زمینه نیست؛ برای آن سرویس مستقل و آزموده‌شده لازم است.
+
+
+## شواهد CI در شاخهٔ پیشنهادی
+- Commit آزموده‌شده: `b2bc69087635fbfa6538990557855ee905ff25ac`
+- اجرای RAHM Runtime Tests: `45270680392` — `completed / success`
+- اجرای Living Architecture Audit: `45270680320` — `completed / success`
+- در اجرای RAHM Runtime Tests، گام‌های HAIF Runtime، RAHM Runtime، RAHM WOMB و Host Bridge همگی `success` شدند.
+- این شواهد، آزمون کد و قرارداد HTTP محلی را اثبات می‌کند؛ اجرای inference با مدل واقعی را اثبات نمی‌کند.
