@@ -24,7 +24,7 @@ class ServiceTests(unittest.TestCase):
                 sock.bind(("127.0.0.1",0)); port=sock.getsockname()[1]
             env=os.environ.copy(); env["RAHM_API_TOKEN"]=TOKEN
             proc=subprocess.Popen([sys.executable,str(SERVICE),"--ledger",str(ledger),"--port",str(port)],
-                                  env=env,stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True)
+                                  env=env,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
             base=f"http://127.0.0.1:{port}"
             try:
                 for _ in range(40):
