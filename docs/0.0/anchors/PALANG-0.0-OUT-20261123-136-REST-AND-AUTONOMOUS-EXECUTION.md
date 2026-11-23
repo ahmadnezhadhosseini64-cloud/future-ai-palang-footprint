@@ -75,3 +75,12 @@ These are research-backed implementation candidates, not proof that any external
 - Top-level: evidence 4,708; docs 1,644; checkpoints 39; prototype 34; scripts 36; architecture 45; tests 28; .github 23; provenance 25.
 - Targeted path families: 644 entries across docs/0.0, behavior trace, architecture lessons, behavior observatory, behavior-hunter, haif-runtime, tests/rahm and starter prototype.
 - Issue #21 was updated with this exact partial evidence and remains OPEN. This is a complete path inventory for that exact tree, not a completed semantic source/rule census; content extraction, Git history, duplicate identity adjudication and rule→component→test mapping remain open.
+
+
+## Exact-head CI receipt — successful artifact round-trip correction
+
+- Portable RAHM Conformance run `45110219381` completed SUCCESS on tested candidate SHA `cfac0057832f3116d94cddc11294427af55dd063`.
+- Living Architecture Audit run `45110219361` completed SUCCESS on the same tested SHA.
+- Runtime, schema fixtures, host registry, IN/OUT chain equivalence, manifest SHA inventory, RAHM archive build, starter package tests, same-identity ZIP rebuild, exact artifact-ID download, artifact receipt verification and downloaded ZIP extraction/tests all passed.
+- The artifact download issue was resolved by using the exact upload `artifact-id`, GitHub REST API download with the workflow token limited to GitHub API use, bounded retries, then ZIP verification. The governance test also passed; the token was not passed as a generic `github-token` input to the download action.
+- Durable release refresh was SKIPPED because this was a pull-request event. Real independent-host acceptance remains NOT RUN. Later documentation-only updates for Issue #21 have moved the branch head beyond this tested SHA; exact latest-head audit remains required before promotion.
