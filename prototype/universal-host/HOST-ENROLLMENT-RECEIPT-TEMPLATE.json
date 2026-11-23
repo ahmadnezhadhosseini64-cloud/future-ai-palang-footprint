@@ -1,0 +1,44 @@
+{
+  "owner_challenge": "CHALLENGE_NOT_PROVIDED",
+  "host_claim_id": "HOST-CLAIM-REPLACE-WITH-EPHEMERAL-LABEL",
+  "identity_status": "UNVERIFIED_CLAIM",
+  "provider": null,
+  "model": null,
+  "runtime_version": null,
+  "repository": {
+    "url": "https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint",
+    "branch": "main",
+    "retrieval_method": "HTTPS_READ"
+  },
+  "source": {
+    "main_head_sha": "0000000000000000000000000000000000000000",
+    "observed_at_utc": null
+  },
+  "references": {
+    "reference_index_blob_sha": null,
+    "living_mother_blob_sha": null,
+    "universal_entry_blob_sha": null,
+    "current_blob_sha": null,
+    "next_blob_sha": null
+  },
+  "capabilities": {
+    "public_read": {"status": "NOT_TESTED", "evidence": ""},
+    "git_clone": {"status": "NOT_TESTED", "evidence": ""},
+    "code_execution": {"status": "NOT_TESTED", "evidence": ""},
+    "private_workspace": {"status": "NOT_TESTED", "evidence": ""},
+    "durable_storage": {"status": "NOT_TESTED", "evidence": ""},
+    "restart_recovery": {"status": "NOT_TESTED", "evidence": ""},
+    "github_connector": {"status": "NOT_TESTED", "evidence": ""},
+    "remote_mcp": {"status": "NOT_TESTED", "evidence": ""}
+  },
+  "isolation": {
+    "master_write": false,
+    "rahm_access": "NONE",
+    "other_host_access": "NONE",
+    "owner_secret_access": "NONE",
+    "workspace_test": "NOT_TESTED"
+  },
+  "ephemeral_public_key": null,
+  "challenge_signature": null,
+  "owner_action": "No owner action requested until public READ and capability checks are complete."
+}
