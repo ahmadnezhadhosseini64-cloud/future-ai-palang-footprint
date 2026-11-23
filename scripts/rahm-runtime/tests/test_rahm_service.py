@@ -7,6 +7,7 @@ ROOT=Path(__file__).resolve().parents[1]
 RUNTIME=ROOT/"rahm_runtime.py"
 SERVICE=ROOT/"rahm_service.py"
 AGENT=ROOT/"rahm_host_agent.py"
+HEALTH=ROOT/"rahm_healthcheck.py"
 TOKEN="test-token-that-is-at-least-32-characters-long"
 
 def make_haif():
@@ -17,7 +18,7 @@ def make_haif():
     return {"schema":"haif-runtime-state/1.0","events":[event]}
 
 class ServiceTests(unittest.TestCase):
-    def test_authenticated_independent_host_agent_and_health(self):
+    def test_authenticated_independent_host_agent_health_and_graceful_stop(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp); ledger=root/"ledger.json"; source=root/"haif-export.json"
             source.write_text(json.dumps(make_haif()),encoding="utf-8")
@@ -39,6 +40,8 @@ class ServiceTests(unittest.TestCase):
                         time.sleep(0.1)
                 else:
                     self.fail("RAHM service did not become healthy")
+                probe=subprocess.run([sys.executable,str(HEALTH),"--url",base+"/health"],capture_output=True,text=True)
+                self.assertEqual(probe.returncode,0,probe.stderr)
                 payload=json.dumps(make_haif()).encode()
                 unauth=Request(base+"/v1/haif/ingest",data=payload,headers={"Content-Type":"application/json"},method="POST")
                 with self.assertRaises(HTTPError) as err: urlopen(unauth,timeout=2)
@@ -53,8 +56,8 @@ class ServiceTests(unittest.TestCase):
                 self.assertIn('"added": 0',replay.stdout)
             finally:
                 proc.terminate()
-                try: proc.wait(timeout=3)
-                except subprocess.TimeoutExpired: proc.kill()
+                proc.wait(timeout=3)
+            self.assertEqual(proc.returncode,0,"SIGTERM must complete a graceful server shutdown")
             state=json.loads(ledger.read_text(encoding="utf-8"))
             self.assertEqual(len(state["events"]),1)
             self.assertEqual(state["events"][0]["source_host_id"],"host-independent-01")
