@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Authenticated local HTTP bridge for continuous HAIF-to-RAHM evidence intake."""
 from __future__ import annotations
-import argparse, hmac, json, os, re, sys
+import argparse, hmac, json, os, re, signal, sys, threading
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from rahm_runtime import append, atomic_write, load, verify_haif, verify_ledger
@@ -10,7 +10,7 @@ MAX_BODY = 2 * 1024 * 1024
 
 def handler_for(ledger_path: Path, token: str):
     class Handler(BaseHTTPRequestHandler):
-        server_version = "RAHM-Bridge/0.2"
+        server_version = "RAHM-Bridge/0.3"
         def log_message(self, fmt, *args):
             sys.stderr.write("RAHM bridge: " + (fmt % args) + "\n")
         def send_json(self, status, payload):
@@ -74,8 +74,15 @@ def main(argv=None):
     try:
         load(path)
         server=ThreadingHTTPServer((args.host,args.port),handler_for(path,token))
+        def request_shutdown(_signum, _frame):
+            threading.Thread(target=server.shutdown,daemon=True).start()
+        signal.signal(signal.SIGTERM,request_shutdown)
         print(f"RAHM bridge listening on {args.host}:{args.port}; ledger={path}",flush=True)
-        server.serve_forever()
+        try:
+            server.serve_forever(poll_interval=0.5)
+        finally:
+            server.server_close()
+        return 0
     except OSError as exc:
         print(f"RAHM bridge failed: {exc}",file=sys.stderr); return 2
     except KeyboardInterrupt:
