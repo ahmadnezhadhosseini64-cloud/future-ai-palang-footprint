@@ -46,3 +46,20 @@ Feedback is returned as a proposal/evidence package for owner review. No reverse
 ## Acceptance
 
 The tests verify HAIF source tamper rejection, RAHM ledger integrity, idempotent repeated ingestion, refusal to overwrite an existing ledger, and proposal-only authority labeling. These tests prove the coded local behavior only.
+
+## Run the continuously listening local bridge
+
+After initializing the ledger and exporting a HAIF state, the RAHM bridge can stay running as a local HTTP process:
+
+```bash
+python scripts/rahm-runtime/rahm_runtime.py --ledger ./rahm-ledger.json init
+# Set a random secret of at least 32 characters in the environment; never commit it.
+export RAHM_API_TOKEN="replace-with-a-long-random-secret-value"
+python scripts/rahm-runtime/rahm_service.py --ledger ./rahm-ledger.json --host 127.0.0.1 --port 8765
+```
+
+- `GET /health` reports local process/ledger health.
+- `POST /v1/haif/ingest` accepts a HAIF JSON export with `Authorization: Bearer <RAHM_API_TOKEN>`.
+- Source chain is verified before append; duplicate events are skipped.
+- Default bind is loopback only. Do not bind to a public interface without TLS, a hardened reverse proxy, network controls, rate limits, backup/restore and deployment review.
+- The process is continuously listening only while the operator keeps it running. A production supervisor, host provisioning, monitoring, backups and restart policy are not yet deployed or proven.
