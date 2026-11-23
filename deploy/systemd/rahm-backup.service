@@ -1,0 +1,11 @@
+[Unit]
+Description=Create a verified RAHM ledger backup
+
+[Service]
+Type=oneshot
+User=rahm
+Group=rahm
+ExecStart=/usr/bin/python3 /opt/future-ai-palang-footprint/scripts/rahm-runtime/rahm_ops.py backup --source /var/lib/rahm/rahm-ledger.json --directory /var/backups/rahm
+UMask=0077
+ProtectSystem=strict
+ReadWritePaths=/var/backups/rahm
