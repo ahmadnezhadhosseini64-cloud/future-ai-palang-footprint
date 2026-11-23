@@ -1,6 +1,6 @@
 ## Current canonical continuation — 2026-11-23 (candidate)
 
-`POINT-0/GOLDEN → IN-138 → BRIDGE-0138 → OUT-137 → EVT-0325 → TIME-BINDING-EVT-0325 → CURRENT-150.05 → NEXT-051.05`
+`POINT-0/GOLDEN → CURRENT-150.04 → IN-138 → BRIDGE-0138 → OUT-137 → EVT-0325 → TIME-BINDING-EVT-0325 → CURRENT-150.05 → NEXT-051.05`
 
 The last accepted Golden state remains CURRENT-150.02 / NEXT-051.02. The .05 continuation is a candidate until exact-SHA audit, Portable RAHM Conformance, and controlled Golden merge/read-back succeed. The living mother remains version 1.8.4 and authoritative; packages and tests align forward. No downgrade, new root, parallel queue, host write to MASTER, or host access to RAHM is permitted.
 
