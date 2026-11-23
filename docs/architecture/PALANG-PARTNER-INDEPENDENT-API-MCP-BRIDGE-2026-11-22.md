@@ -1,3 +1,22 @@
+## CURRENT-150.05 amendment — official remote MCP first, custom broker only if needed
+
+The earlier topology remains a possible advanced route, but the implementation order is simplified:
+
+1. Do not deploy anything for anonymous public READ or the first-host enrollment receipt.
+2. For a separately operated OpenAI API host that needs ordinary GitHub operations, first evaluate the official GitHub remote MCP endpoint and restrict its toolsets to the minimum required. The MCP endpoint is not assumed available to every host/client; verify the actual OAuth and entitlement flow.
+3. OpenAI Responses API supports remote MCP calls and per-tool approval controls. The application still owns the secure OAuth lifecycle; never pass raw credentials into model context.
+4. Build a custom Cloudflare Worker/MCP broker only for a demonstrated missing operation or owner-only control that the official remote MCP does not support. Do not build a second full GitHub MCP server unnecessarily.
+5. Creating private repositories, changing Rulesets, writing Actions secrets/variables and other elevated account operations remain explicit owner gates.
+
+Official references:
+- GitHub MCP server: https://github.com/github/github-mcp-server
+- OpenAI Responses API remote MCP: https://developers.openai.com/api/docs/guides/tools-connectors-mcp
+- Cloudflare remote MCP and OAuth (optional broker only): https://developers.cloudflare.com/agents/model-context-protocol/guides/remote-mcp-server/ and https://developers.cloudflare.com/agents/model-context-protocol/protocol/authorization/
+
+This amendment does not claim that any remote endpoint, OAuth app, API project or service has been deployed.
+
+---
+
 ## CURRENT-151 continuation — 2026-11-22
 
 - Current checkpoint: CURRENT-151 / POINT-0/089; sole queue NEXT-051.
