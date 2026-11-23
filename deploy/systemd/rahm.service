@@ -1,0 +1,27 @@
+[Unit]
+Description=RAHM authenticated HAIF evidence intake service
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+User=rahm
+Group=rahm
+EnvironmentFile=/etc/rahm/rahm.env
+WorkingDirectory=/opt/future-ai-palang-footprint
+ExecStartPre=/usr/bin/python3 /opt/future-ai-palang-footprint/scripts/rahm-runtime/rahm_runtime.py --ledger /var/lib/rahm/rahm-ledger.json verify
+ExecStart=/usr/bin/python3 /opt/future-ai-palang-footprint/scripts/rahm-runtime/rahm_service.py --ledger /var/lib/rahm/rahm-ledger.json --host 127.0.0.1 --port 8765
+Restart=always
+RestartSec=5
+StartLimitIntervalSec=0
+TimeoutStopSec=20
+KillSignal=SIGTERM
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/var/lib/rahm
+
+[Install]
+WantedBy=multi-user.target
