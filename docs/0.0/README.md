@@ -2314,3 +2314,6 @@ Portable artifact round-trip failure analysis and least-privilege correction are
 
 
 Issue #21's initial full-tree inventory and exact-candidate CI receipts are recorded in [OUT-136](anchors/PALANG-0.0-OUT-20261123-136-REST-AND-AUTONOMOUS-EXECUTION.md) and [NEXT-051.04](anchors/PALANG-0.0-NEXT-20261123-051-REVISION-04-AUTONOMOUS-EXECUTION-AND-PARTNER-TRIAGE.md). Semantic census and exact latest-head validation remain open.
+
+
+Issue #21's targeted family counts and repeated-basename screen are recorded in [OUT-136](anchors/PALANG-0.0-OUT-20261123-136-REST-AND-AUTONOMOUS-EXECUTION.md) and [NEXT-051.04](anchors/PALANG-0.0-NEXT-20261123-051-REVISION-04-AUTONOMOUS-EXECUTION-AND-PARTNER-TRIAGE.md); semantic reconciliation remains open.
