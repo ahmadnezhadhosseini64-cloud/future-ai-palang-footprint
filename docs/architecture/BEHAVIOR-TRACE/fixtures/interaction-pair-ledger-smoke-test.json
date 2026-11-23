@@ -2,6 +2,15 @@
   "interaction_id": "INT-20261022-001",
   "input_id": "IN-20261022-001",
   "output_id": "OUT-20261022-001",
+  "bridge_id": "BRIDGE-20261022-001",
+  "bridge": {
+    "bridge_id": "BRIDGE-20261022-001",
+    "input_id": "IN-20261022-001",
+    "output_id": "OUT-20261022-001",
+    "event_id": "EVT-0085",
+    "parent_event_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "status": "MATCHED"
+  },
   "sequence": 1,
   "version": "1.0.0",
   "status": "OBSERVED",
