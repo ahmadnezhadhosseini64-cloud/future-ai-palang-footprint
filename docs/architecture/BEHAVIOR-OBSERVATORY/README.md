@@ -2,11 +2,11 @@
 
 - Stable ID: HUMAN-AI-INTERACTION-BEHAVIOR-OBSERVATORY-2026-10-22-001
 - Production ID: HAIBO-HAIF-2026-10-22-001
-- Version: 1.0.31
+- Version: 1.0.32
 - Owner: احمد پلنگ / Ahmad Nezhadhosseini
 - Project: Future AI / Palang Footprint / HAIF
 - Canonical path: `docs/architecture/BEHAVIOR-OBSERVATORY/README.md`
-- Status: ACTIVE / LIVING in repository; canonical root POINT-0/GOLDEN; latest user-turn event EVT-0314; execution checkpoint CURRENT-145; latest mirror-only event EVT-0316; sole active queue NEXT-051 v1.0.52. Main HEAD at run start `aaf96c5e195f6f4f59dea43ebd9922b5f009c9ea` (GitHub commit timestamp 2026-11-22T07:07:59Z / Tehran 10:37:59+03:30); latest available Living Architecture Audit 44979406467 and Evidence Gate 44979406557 passed on prior tested SHA `81c4b8687ad2de61e900c84505922a823ac265a1`, not this HEAD. Current exact-head Audit/RAHM remains NOT VERIFIED. Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` unchanged; Library v7 normalized match with one extra terminal LF; no source or Library write. CURRENT-065/CURRENT-066 and overlay-manifest lineage OPEN / AMBIGUOUS; Issues #20/#21 OPEN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
+- Status: ACTIVE / LIVING in repository; canonical root POINT-0/GOLDEN; latest user-turn event EVT-0314; execution checkpoint CURRENT-145; latest mirror-only event EVT-0317; sole active queue NEXT-051 v1.0.52. Main HEAD at run start `30d1d3b2de09078131fa3c8a0ff7c492a7ab0d7e`; exact-head Living Architecture Audit / Portable RAHM remains NOT VERIFIED. Candidate Audit 45110219361 and Portable RAHM 45110219381 passed on PR #145 merge SHA `44ffe850d8dc9ec0c1b9cafe8cc0ae1ec829625a` (PR head `cfac0057832f3116d94cddc11294427af55dd063`), not on main. Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` unchanged; Library v7 normalized match with one extra terminal LF; no source or Library write. CURRENT-065/CURRENT-066 and overlay-manifest lineage OPEN / AMBIGUOUS; Issues #20/#21 OPEN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
 - Time rule: UTC is canonical; Asia/Tehran time is derived from the same UTC instant (+03:30 for this date). Unknown timestamps remain UNKNOWN, never guessed.
 - Independent anchor: `PALANG-BEHAVIOR-OBSERVATION-AND-RECOVERY-TEST-2026-10-22-001`
 - Related event: `EVT-0034`
