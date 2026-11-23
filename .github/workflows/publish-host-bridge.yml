@@ -1,7 +1,14 @@
 name: Publish owner-approved host bridge
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - governance/point-0-golden-baseline-20261122
+    paths:
+      - "HOST-BRIDGE/**"
+      - "scripts/host-bridge/**"
+      - "tests/host-bridge/**"
+      - ".github/workflows/publish-host-bridge.yml"
 
 permissions:
   contents: read
@@ -14,7 +21,7 @@ concurrency:
 
 jobs:
   build:
-    if: github.ref == 'refs/heads/governance/point-0-golden-baseline-20261122'
+    if: github.ref == 'refs/heads/governance/point-0-golden-baseline-20261122' && github.actor == 'ahmadnezhadhosseini64-cloud'
     runs-on: ubuntu-latest
     steps:
       - name: Reject non-canonical source branch
