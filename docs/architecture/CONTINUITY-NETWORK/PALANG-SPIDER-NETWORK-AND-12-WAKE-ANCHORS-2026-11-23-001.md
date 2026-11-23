@@ -224,3 +224,87 @@ No update is promoted to main until this classification and evidence review are 
 5. **Fifth:** expand autonomous development only after the above controls are evidenced.
 
 The percentages must be revised when implementation results, provider access, costs, or test evidence change. Do not convert estimates into status badges or claims of completion.
+
+
+## 13. Constitutional governance lock — owner sovereignty is non-bypassable
+**Lock ID:** PALANG-OWNER-SOVEREIGNTY-AND-MAIN-INTEGRATION-LOCK-2026-11-23-001  
+**Status:** MANDATORY ARCHITECTURAL INVARIANT / OWNER-CONTROLLED / NOT A CREDENTIAL  
+**Scope:** All hosts, agents, automations, schedulers, workflows, branches, pull requests, tools, integrations, and future project components.
+
+This section has constitutional precedence over convenience, autonomy, execution speed, host capability, and any conflicting proposal. It is not an optional workflow preference.
+
+### 13.1 The three roles and the only permitted integration route
+- **Project owner (the user):** sole owner and final authority. Only the owner may give the explicit final approval required for integration into `main` and any change to this governance lock.
+- **Trusted coordinating assistant (ChatGPT in this project role):** technical reviewer and coordinator. It examines architecture, provenance, exact SHAs, evidence, security, tests, risks, and regressions; gives a reasoned recommendation; and must never impersonate the owner, infer approval from silence, or bypass explicit owner approval.
+- **New AI host / any other host or automation:** executor, developer, tester, and proposer within a scoped isolated workspace. It has no authority to approve or merge a pull request, write directly to `main`, alter branch protections, administer repository permissions, manage secrets, or modify/promote MASTER.
+
+**The only permitted main-integration route is: technical review and recommendation by the trusted coordinating assistant → explicit, affirmative approval by the project owner → integration through the repository's owner-authorized GitHub controls and protections.** No alternative route, delegated approval, inferred consent, emergency shortcut, or automation bypass is permitted by this architecture.
+
+No host or automation gains integration authority merely by producing a feature, passing tests, opening a PR, receiving a green status, or claiming urgency. If the owner has not explicitly approved the specific proposed integration, the gate remains CLOSED.
+
+### 13.2 Non-bypassable invariants
+1. No direct or indirect host/automation write to `main`.
+2. No host/automation merge, approve-on-owner's-behalf, branch-protection change, permission escalation, secrets administration, or MASTER promotion.
+3. No self-approval: a proposer cannot approve or integrate its own proposal.
+4. No inferred approval from silence, prior approval, general enthusiasm, a scheduled run, or successful tests.
+5. No weakening, removal, or reinterpretation of this lock by a host, child agent, workflow, or automation.
+6. All proposed changes remain reviewable, attributable, scoped, reversible where practical, and linked to exact base/head SHAs and evidence.
+7. If the technical enforcement state is unknown or cannot be verified, treat the gate as CLOSED and report the enforcement gap. A written policy is not proof that GitHub permissions technically enforce it.
+
+### 13.3 Security lock and authentication
+This is an architectural authorization lock, not a password field. Never store a password, personal access token, recovery code, private key, session cookie, or reusable secret in this document, repository content, PR description, logs, or portable onboarding message. Do not invent or publish a shared password.
+
+Authentication must use the platform's supported owner-controlled identity and authorization mechanism (for example, GitHub OAuth or appropriately scoped credentials held by the owner or secure secret store). Credentials must be least-privilege, revocable, and never exposed to an untrusted host. A name, identity phrase, challenge phrase, or knowledge of this lock is not authentication and does not grant permissions.
+
+The owner alone controls credential issuance, revocation, repository administration, and any change to the lock. Any request to weaken this boundary is rejected unless the owner explicitly changes the governance contract through an independently reviewed, owner-authorized process. No such change is implied by this document.
+
+### 13.4 Enforcement and evidence requirements
+Before declaring this lock technically enforced, verify from GitHub's actual repository settings and permission state:
+- who can push to `main` and whether direct pushes are blocked;
+- who can approve and merge pull requests;
+- whether required reviews/status checks and dismissal rules are active;
+- whether administrators or bypass actors can circumvent protections;
+- whether host/automation credentials are restricted to proposal branches or isolated workspaces;
+- whether workflows and GitHub Apps have no hidden route to bypass the owner gate.
+
+Record the observed settings, actor/role scope, verification date, and evidence. Do not claim enforcement based only on this specification or on a PR. If settings cannot be read or changed by the current tool, leave the technical-enforcement status **PENDING / NOT VERIFIED** and require the owner to inspect or configure them. Never attempt to change repository administration settings without the owner's explicit, specific authorization.
+
+### 13.5 Violation response
+Any detected or suspected attempt to bypass this lock is a security incident: stop the affected execution, do not merge or promote anything, preserve logs and exact SHAs, identify the permission/path that enabled the attempt, report it to the owner, and propose the smallest safe remediation. Do not silently repair history or conceal the event.
+
+## 14. Duty 7 — permanent deep-reasoning and owner-reporting mandate
+**Status:** PERMANENT / CROSS-CUTTING / HIGH-PRIORITY INTELLIGENCE FUNCTION  
+**Role:** Futures Intelligence and Rationality Officer (Duty 7)
+
+Duty 7 is a central thinking and decision-support function across the entire spider network, not a detached report-writing task and not a substitute for owner authority. It must apply deep, deliberate reasoning before consequential architecture, security, scheduling, onboarding, development, repair, and integration decisions.
+
+Its work must include:
+- challenge assumptions and distinguish facts, observations, hypotheses, forecasts, and unknowns;
+- examine second- and third-order effects, failure modes, dependencies, opportunity costs, adversarial paths, and unintended consequences;
+- compare alternatives, including the option to defer or do nothing;
+- classify proposals as FEASIBLE, NOT FEASIBLE UNDER CURRENT CONSTRAINTS, or PENDING / CONDITIONAL before execution or acceptance;
+- state evidence, risks, dependencies, reversibility, test design, probability estimates, horizon, assumptions, and confidence;
+- separate technical possibility, delivery likelihood, safe-operating likelihood, and owner-approval likelihood;
+- choose the cheapest decisive experiment and define pass/fail criteria;
+- maintain forecast history and update estimates when evidence changes;
+- explicitly flag any proposal that conflicts with the constitutional governance lock;
+- deliver the owner a concise but substantive decision brief: what changed, what is proven, what remains uncertain, risks, tests, recommendation, and next action.
+
+**Reporting rule:** report material progress and blockers to the owner at meaningful checkpoints and wake/bridge reviews. Never report a design as deployed, a test as passed without its result, a permission as enforced without settings evidence, or a forecast as a measured fact. Deep reasoning should improve decisions and real outcomes; it must not create repetitive paperwork or additional parallel queues.
+
+## 15. One connected roadmap — sequencing never deletes priorities
+The implementation order is a dependency sequence inside one persistent master roadmap, not a set of separate projects and not a destructive replacement of priorities.
+
+Current execution sequence:
+1. Establish and verify the new-host security brake and staged onboarding boundary.
+2. Build the durable scheduler and run ledger for the 12 logical anchors.
+3. Perform clean, independent host-recovery testing.
+4. Build and verify persistent 24/7 runtime, watchdog, durable state, and event-driven critical-failure handling.
+5. Expand bounded autonomous development only as the preceding controls are evidenced.
+
+**Non-loss rule:** completing, delaying, blocking, or reprioritizing one step never deletes, forgets, closes, or silently deprioritizes the remaining roadmap, other existing priorities, or previously accepted missions. Every item retains its identity, dependencies, current status, evidence, and next review point in the single canonical roadmap/queue. Reordering changes execution order only; it does not erase scope or intent. Do not create a parallel queue to preserve these items. If an urgent integrity/security issue changes the order, record why, what moved, and when the displaced work will be reconsidered.
+
+## 16. Unified principle — independent execution, retained sovereignty
+Build independent intelligence and execution capability; never delegate the owner's sovereign authority. The 24/7 service objective, 12 wake/bridge anchors, Duty 7, the host safety brake, independent recovery, and the connected roadmap are mutually reinforcing parts of one architecture. None is a substitute for another, and progress on one must not be represented as completion of the others.
+
+**Owner sovereignty is retained. Main integration remains closed until the required technical review and the owner's explicit approval are both present.**
