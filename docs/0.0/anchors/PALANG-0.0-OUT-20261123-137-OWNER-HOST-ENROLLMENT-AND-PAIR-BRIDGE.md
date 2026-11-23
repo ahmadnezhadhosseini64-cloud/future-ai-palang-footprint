@@ -49,3 +49,12 @@ POINT-0/GOLDEN → prior CURRENT/queue → IN-N → BRIDGE-N → OUT-N → EVT �
 ## 5. تعهد گزارش بعدی
 
 در پاسخ «چکار کردی؟» تعداد موارد زیر جداگانه اعلام شود: انجام‌شده با شاهد؛ ناقص/منتظر آزمون؛ متوقف‌شده در مرز ابزار/حساب؛ اقدام دقیق لازم از مالک؛ و پیشنهادهایی که برای هدف فعلی غیرضروری تشخیص داده و از مسیر اصلی کنار گذاشته شده‌اند.
+
+## Simpler implementation route confirmed from official documentation
+
+- Public-read enrollment needs no additional service.
+- GitHub's official remote MCP endpoint can be evaluated before building a custom GitHub MCP server; toolsets can be narrowed and the host app must support GitHub OAuth/App authorization.
+- OpenAI Responses API supports remote MCP calls and explicit tool approvals.
+- Cloudflare Workers remains an optional managed host for a thin owner broker only if privileged owner-side operations cannot be handled through the official GitHub MCP or secure owner UI.
+- Sources: https://github.com/github/github-mcp-server · https://developers.openai.com/api/docs/guides/tools-connectors-mcp · https://developers.cloudflare.com/agents/model-context-protocol/guides/remote-mcp-server/ · https://developers.cloudflare.com/agents/model-context-protocol/protocol/authorization/.
+- No service has been provisioned or deployed by this research.
