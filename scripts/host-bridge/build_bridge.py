@@ -58,11 +58,15 @@ def build(source: Path, output: Path) -> dict:
     )
 
     expected = set(ALLOWLIST.values()) | {"manifest.json"}
-    actual = {p.name for p in output.iterdir() if p.is_file()}
-    unexpected = actual - expected
+    actual = {p.relative_to(output).as_posix() for p in output.rglob("*")}
+    unexpected = {name for name in actual if name not in expected}
     missing = expected - actual
-    if unexpected or missing:
-        raise ValueError(f"artifact inventory mismatch; unexpected={sorted(unexpected)}, missing={sorted(missing)}")
+    non_regular = [p.relative_to(output).as_posix() for p in output.rglob("*") if p.is_symlink() or not p.is_file()]
+    if unexpected or missing or non_regular:
+        raise ValueError(
+            f"artifact inventory mismatch; unexpected={sorted(unexpected)}, "
+            f"missing={sorted(missing)}, non_regular={sorted(non_regular)}"
+        )
     return manifest
 
 
