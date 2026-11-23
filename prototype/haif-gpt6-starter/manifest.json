@@ -370,7 +370,7 @@
   "independent_host_bootstrap": "ONE_MESSAGE_HOST_BOOTSTRAP_FA.md",
   "current_continuation_chain": "POINT-0/GOLDEN → CURRENT-150.04 → IN-138 → BRIDGE-0138 → OUT-137 → EVT-0325 → TIME-BINDING-EVT-0325 → CURRENT-150.05 → NEXT-051.05",
   "current_living_master_version": "1.8.4",
-  "current_internal_version": "0.5.1",
+  "current_internal_version": "0.5.2",
   "universal_host_entry": "UNIVERSAL_AI_HOST_ENTRY_FA.md",
   "features": [
     "POINT-0 golden baseline with forward-only continuity and historical precedence",
