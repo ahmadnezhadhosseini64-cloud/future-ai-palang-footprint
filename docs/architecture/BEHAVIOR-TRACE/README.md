@@ -1,3 +1,14 @@
+## Latest registered event — EVT-0325 / owner host enrollment and pair bridge (CANDIDATE)
+
+- [EVT-0325](./EVT-0325-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE-2026-11-23.md) → [TIME-BINDING-EVT-0325](./TIME-BINDING-EVT-0325-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE-2026-11-23.md).
+- [IN-138](../../0.0/anchors/PALANG-0.0-IN-20261123-138-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md) ↔ [BRIDGE-0138](../../0.0/anchors/PALANG-0.0-BRIDGE-20261123-0138-IN-138-OUT-137.md) ↔ [OUT-137](../../0.0/anchors/PALANG-0.0-OUT-20261123-137-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md).
+- Candidate: [CURRENT-150.05](../../0.0/anchors/PALANG-0.0-CURRENT-20261123-150-REVISION-05-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md) / sole queue [NEXT-051.05](../../0.0/anchors/PALANG-0.0-NEXT-20261123-051-REVISION-05-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md).
+- Public-read enrollment requires no OAuth; host claim ID is untrusted; official Host ID remains owner-issued after receipt review.
+- Candidate branch only; PR #145 is unmerged and CURRENT-150.02 / NEXT-051.02 remain last accepted Golden state.
+
+---
+
+
 ## Latest registered event — EVT-0323 / chat POINT-0 continuation (CANDIDATE)
 
 - [EVT-0323](./EVT-0323-CHAT-POINT0-CONTINUATION-2026-11-23.md) → [TIME-BINDING-EVT-0323](./TIME-BINDING-EVT-0323-CHAT-POINT0-CONTINUATION-2026-11-23.md).
