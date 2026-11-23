@@ -97,3 +97,8 @@ Local continuity runtime tests, interaction-pair fixtures and latest IN/OUT equi
 ## Latest exact-head validation
 
 Portable Conformance run `45110562285` PASS on candidate head `e311d7384b7deba72c411865883e86b2f7a71936` (all 22 steps, including artifact round-trip and extracted ZIP tests). Durable release was skipped on PR event; independent-host acceptance remains NOT RUN. Living Architecture Audit run `45110562263` on the same SHA is still IN PROGRESS.
+
+
+## Audit status correction
+
+Living Architecture Audit run `45110562263` has now completed SUCCESS on exact candidate SHA `e311d7384b7deba72c411865883e86b2f7a71936`; Portable Conformance run `45110562285` also passed on the same SHA. The following commits only append the result receipts to OUT/NEXT. They are documentation-only, but the current branch head is newer and has not yet been independently audited. PR remains OPEN / UNMERGED.
