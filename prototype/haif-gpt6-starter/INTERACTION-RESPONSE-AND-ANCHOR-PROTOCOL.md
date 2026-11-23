@@ -1,15 +1,15 @@
 ## Current canonical continuation — 2026-11-23 (candidate)
 
-`POINT-0/GOLDEN → IN-136 → OUT-135 → EVT-0323 → TIME-BINDING-EVT-0323 → CURRENT-150.03 → NEXT-051.03`
+`POINT-0/GOLDEN → IN-138 → BRIDGE-0138 → OUT-137 → EVT-0325 → TIME-BINDING-EVT-0325 → CURRENT-150.05 → NEXT-051.05`
 
-The last accepted Golden state remains CURRENT-150.02 / NEXT-051.02. The .03 continuation is a candidate until exact-SHA audit, Portable RAHM Conformance, and controlled Golden merge/read-back succeed. The living mother remains version 1.8.4 and authoritative; packages and tests align forward. No downgrade, new root, parallel queue, host write to MASTER, or host access to RAHM is permitted.
+The last accepted Golden state remains CURRENT-150.02 / NEXT-051.02. The .05 continuation is a candidate until exact-SHA audit, Portable RAHM Conformance, and controlled Golden merge/read-back succeed. The living mother remains version 1.8.4 and authoritative; packages and tests align forward. No downgrade, new root, parallel queue, host write to MASTER, or host access to RAHM is permitted.
 
 ---
 
 # POINT-0/GOLDEN — current portable host contract
 
 - Living master: 1.8.2
-- Package version: 0.5.1 candidate
+- Package version: 0.5.2 candidate
 - Current chain: POINT-0/GOLDEN → CURRENT-150.01 → IN-135 → OUT-134 → EVT-0322 → TIME-BINDING-EVT-0322 → CURRENT-150.02 → NEXT-051.02
 - Master access for hosts: PUBLIC READ ONLY; no direct or indirect host write path.
 - RAHM: central, private, owner-only, outside host workspaces; only owner-commanded export is permitted.
@@ -38,7 +38,7 @@ A spinner or internal processing state is not a user-facing result. If work cont
 
 ## 2. Anchor each interaction
 Where the host has authorized durable storage, pair each actual user input with the actual assistant output:
-- independent point/anchor, IN, OUT and EVT identifiers;
+- independent point/anchor, IN, BRIDGE, OUT and EVT identifiers;
 - parent point/checkpoint and package version;
 - exact payload or content-addressed evidence reference;
 - source host/session and actual observed/received timestamps, UTC first with Tehran equivalent derived from the same instant where applicable;
@@ -69,9 +69,9 @@ This document does not itself create a native GPT plugin, automatic message hook
  
 ## 6. Permanent interaction ledger — required for every connected host
 
-For each actual host interaction received by the authorized producer, create a distinct IN record and OUT record linked to one event ID and the prior point/checkpoint. If the output is absent, or capture/write/read-back fails, record an explicit NO_RESPONSE / NOT_CAPTURED / WRITE_FAILED / READBACK_FAILED gap. Do not silently omit it.
+For each actual host interaction received by the authorized producer, create a distinct IN record, a Bridge record that binds the exact IN/OUT IDs, and an OUT record linked to one event ID and the prior point/checkpoint. If the output is absent, or capture/write/read-back fails, record an explicit NO_RESPONSE / NOT_CAPTURED / WRITE_FAILED / READBACK_FAILED gap. Do not silently omit it.
 
-Required fields: host_id, pseudonymous host_session_id, event_id, input_id, output_id, parent_point_id, parent_event_id, master_commit_sha, master_version, adapter_version, trustworthy created_at_utc or UNKNOWN, received_at_utc, Tehran equivalent derived from UTC, payload_sha256, source/evidence refs, privacy/redaction status, result status and receipt ref.
+Required fields: host_id, pseudonymous host_session_id, event_id, input_id, bridge_id, output_id, bridge-to-pair links, parent_point_id, parent_event_id, master_commit_sha, master_version, adapter_version, trustworthy created_at_utc or UNKNOWN, received_at_utc, Tehran equivalent derived from UTC, payload_sha256, source/evidence refs, privacy/redaction status, result status and receipt ref.
 
 Write durably, fetch the destination and compare exact content/digest. Retries with the same idempotency key and same payload must be idempotent; a conflicting replay must be rejected. Corrections and owner decisions are new linked events; never rewrite prior history.
 
