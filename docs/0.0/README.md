@@ -14,11 +14,7 @@
 ---
 
 
-> **CURRENT POINT-0++ — نشانگر جاری این گفتگو (نامزد روی Golden):** [CURRENT-150.03](anchors/PALANG-0.0-CURRENT-20261123-150-REVISION-03-CHAT-POINT0-CONTINUATION.md) · خانوادهٔ ثابت [CURRENT-150](anchors/PALANG-0.0-CURRENT-20261122-150-POINT-0-PLUSPLUS-EXACT-MAIN-AUDIT.md) · [IN-136](anchors/PALANG-0.0-IN-20261123-136-CHAT-POINT0-CONTINUATION.md) → [OUT-135](anchors/PALANG-0.0-OUT-20261123-135-CHAT-POINT0-CONTINUATION.md) → [EVT-0323](../architecture/BEHAVIOR-TRACE/EVT-0323-CHAT-POINT0-CONTINUATION-2026-11-23.md) → [TIME-BINDING-EVT-0323](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0323-CHAT-POINT0-CONTINUATION-2026-11-23.md) · sole queue [NEXT-051.03](anchors/PALANG-0.0-NEXT-20261123-051-REVISION-03-EXECUTION-CONTINUATION.md).
-
-**CANDIDATE / EXACT-SHA-VALIDATION-PENDING:** Parent Golden acceptance remains CURRENT-150.02 / NEXT-051.02. This branch records the new chat marker and proposed .03 revisions only; it is not yet merged into POINT-0/GOLDEN. main remains untouched. No new root or queue is created.
-
----
+Historical candidate .03 (IN-136 / OUT-135 / EVT-0323) is superseded by .05 and retained only in Git history. It is not a current pointer.
 
 ---
 
@@ -2280,11 +2276,11 @@ The previous points 077 and 078 remain linked in the preceding historical sectio
 این آخرین زنجیرهٔ فعال روی همان ریشهٔ POINT-0/GOLDEN است. CURRENT-150.02 / NEXT-051.02 پس از آزمون دقیق و read-back پس از ادغام ACTIVE هستند؛ CURRENT-150.01 / NEXT-051.01 revision قبلی و تاریخی‌اند.
 
 
-## تازه‌ترین زنجیره — POINT-0/GOLDEN → CURRENT-150.03 (نامزد) → NEXT-051.03 (نامزد)
+## تازه‌ترین زنجیره — POINT-0/GOLDEN → CURRENT-150.05 (نامزد) → NEXT-051.05 (نامزد)
 
-[POINT-0/GOLDEN](anchors/GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md) → [IN-136](anchors/PALANG-0.0-IN-20261123-136-CHAT-POINT0-CONTINUATION.md) → [OUT-135](anchors/PALANG-0.0-OUT-20261123-135-CHAT-POINT0-CONTINUATION.md) → [EVT-0323](../architecture/BEHAVIOR-TRACE/EVT-0323-CHAT-POINT0-CONTINUATION-2026-11-23.md) → [CURRENT-150.03](anchors/PALANG-0.0-CURRENT-20261123-150-REVISION-03-CHAT-POINT0-CONTINUATION.md) → [NEXT-051.03](anchors/PALANG-0.0-NEXT-20261123-051-REVISION-03-EXECUTION-CONTINUATION.md).
+[POINT-0/GOLDEN](anchors/GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md) → [CURRENT-150.04](anchors/PALANG-0.0-CURRENT-20261123-150-REVISION-04-OWNER-REST-AUTONOMOUS-EXECUTION.md) → [IN-138](anchors/PALANG-0.0-IN-20261123-138-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md) → [BRIDGE-0138](anchors/PALANG-0.0-BRIDGE-20261123-0138-IN-138-OUT-137.md) → [OUT-137](anchors/PALANG-0.0-OUT-20261123-137-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md) → [EVT-0325](../architecture/BEHAVIOR-TRACE/EVT-0325-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE-2026-11-23.md) → [TIME-BINDING-EVT-0325](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0325-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE-2026-11-23.md) → [CURRENT-150.05](anchors/PALANG-0.0-CURRENT-20261123-150-REVISION-05-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md) → [NEXT-051.05](anchors/PALANG-0.0-NEXT-20261123-051-REVISION-05-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md).
 
-این آخرین زنجیرهٔ نامزد روی همان ریشهٔ POINT-0/GOLDEN است. CURRENT-150.02 / NEXT-051.02 آخرین revisionهای پذیرفته‌شده باقی می‌مانند تا آزمون exact-SHA و ادغام کنترل‌شدهٔ .03.
+این زنجیرهٔ نامزد روی همان ریشهٔ POINT-0/GOLDEN است. CURRENT-150.02 / NEXT-051.02 آخرین revisionهای پذیرفته‌شده باقی می‌مانند تا آزمون exact-SHA و ادغام کنترل‌شدهٔ .05.
 
 
 ## Portable conformance receipt — candidate PR tree (2026-11-23)
@@ -2314,7 +2310,7 @@ The previous points 077 and 078 remain linked in the preceding historical sectio
 - Durable release refresh: SKIPPED on pull-request event. Real independent-host acceptance: NOT RUN. Owner-controlled Golden merge remains pending; main and Golden were not written by this host.
 
 
-## Latest continuation — EVT-0324 (candidate)
+## Historical predecessor — EVT-0324 / CURRENT-150.04 (superseded by EVT-0325 / CURRENT-150.05)
 
 [POINT-0/GOLDEN](anchors/GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md) → [IN-137](anchors/PALANG-0.0-IN-20261123-137-REST-AND-AUTONOMOUS-EXECUTION.md) → [OUT-136](anchors/PALANG-0.0-OUT-20261123-136-REST-AND-AUTONOMOUS-EXECUTION.md) → [EVT-0324](../architecture/BEHAVIOR-TRACE/EVT-0324-OWNER-REST-AUTONOMOUS-EXECUTION-2026-11-23.md) → [TIME-BINDING-EVT-0324](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0324-OWNER-REST-AUTONOMOUS-EXECUTION-2026-11-23.md) → [CURRENT-150.04](anchors/PALANG-0.0-CURRENT-20261123-150-REVISION-04-OWNER-REST-AUTONOMOUS-EXECUTION.md) → [NEXT-051.04](anchors/PALANG-0.0-NEXT-20261123-051-REVISION-04-AUTONOMOUS-EXECUTION-AND-PARTNER-TRIAGE.md).
 
