@@ -71,3 +71,16 @@ The Bridge links IN and OUT in both directions and references the single POINT-0
 - No host write path to MASTER or RAHM.
 - IN/OUT/Bridge/Event/Time/Current/Next graph edges all resolve.
 - Fresh host recovery and restart are separately tested; a prompt alone never closes those gates.
+
+
+## 9. Lowest-complexity optional GitHub execution route
+
+Do not build a custom GitHub MCP server by default. Current official documentation supports this simpler order:
+
+1. For public repository READ and the initial enrollment receipt, use anonymous HTTPS only. No MCP server, OAuth, private repo or cloud account is needed.
+2. If a future host needs authenticated ordinary GitHub tools and its client supports remote MCP, evaluate GitHub's official remote MCP endpoint first: https://api.githubcopilot.com/mcp/ . Enable only required toolsets and use the host application's supported GitHub OAuth/App flow. The official server documentation notes that remote OAuth depends on the host app's GitHub App/OAuth configuration and that toolsets can be restricted.
+3. OpenAI Responses API can call a remote MCP server using the MCP tool and server_url; the application must handle OAuth and can require explicit approval for tool calls. Official guide: https://developers.openai.com/api/docs/guides/tools-connectors-mcp
+4. Only if an owner-only operation is unsupported by the official GitHub MCP should a thin custom owner broker be added. Cloudflare Workers is a candidate managed HTTPS host; Cloudflare documents remote MCP templates and OAuth authorization components. Official guides: https://developers.cloudflare.com/agents/model-context-protocol/guides/remote-mcp-server/ and https://developers.cloudflare.com/agents/model-context-protocol/protocol/authorization/
+5. Keep private repository creation, Actions secret writes, Ruleset changes and promotion behind a narrow owner-only approval surface. Do not expose generic admin tools to a host.
+
+These are documented candidates, not deployed services. The first host's public-read onboarding must not wait for this optional service path.
