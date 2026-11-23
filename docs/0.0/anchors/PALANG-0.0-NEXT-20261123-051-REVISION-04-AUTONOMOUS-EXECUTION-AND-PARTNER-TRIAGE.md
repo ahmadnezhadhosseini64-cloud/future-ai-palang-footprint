@@ -87,3 +87,8 @@ Exact main tree family counts: 579 0.0 anchors, 558 behavior-trace files, 20 arc
 ## Issue #21 — semantic triage findings
 
 Four `docs/checkpoints/0.0` same-name entries are confirmed legacy bridge stubs to canonical `checkpoints/0.0` files. Dropbox pair is a 0.0 resume anchor + canonical full reference. FINALIZATION_GATE files have different scopes. Continuation-behavior anchor/reference share identity but differ in content/role. Initial-navigation and universal-architecture pairs are likely queue-summary/reference pairs; authority/version lineage must be proven. Three provenance/reference pairs are exact byte-identical copies. Two manifest files are package-context-specific; host-entry prompts differ. Do not delete/merge any; continue semantic source-authority and version-lineage checks.
+
+
+## Issue #20 — bounded runtime proof
+
+Local continuity runtime tests, interaction-pair fixtures and latest IN/OUT equivalence passed on candidate SHA `cfac0057832f3116d94cddc11294427af55dd063` (run 45110219381). Do not generalize this to live chat capture, external persistence, restart or clean-host acceptance; those remain open.
