@@ -99,3 +99,12 @@ Compared nine repeated-basename groups from main by full file content. Four `doc
 ## Issue #20 — local runtime progress (partial)
 
 Issue #20 now records run 45110219381 on SHA `cfac0057832f3116d94cddc11294427af55dd063`: executable local continuity runtime tests PASS; valid/invalid interaction-pair fixtures PASS; latest IN/OUT chain/checkpoint equivalence PASS (explicitly not real-host recovery). This is useful runtime proof, but automatic ChatGPT-message capture, destination-specific write/read-back, restart persistence and independent-host recovery remain OPEN / NOT VERIFIED.
+
+
+## Latest exact-head Portable Conformance receipt
+
+- Current candidate head at this receipt: `e311d7384b7deba72c411865883e86b2f7a71936`.
+- Portable RAHM Conformance run `45110562285`: SUCCESS on that exact SHA.
+- All 22 workflow steps succeeded, including local runtime, schema fixtures, IN/OUT equivalence, SHA inventory, archive build, starter tests, exact artifact-ID download, artifact receipt, extracted ZIP tests and integrity verification.
+- Durable Release refresh was skipped because this was a PR event. Independent-host acceptance remains NOT RUN.
+- Living Architecture Audit run `45110562263` on the same SHA is still IN PROGRESS; no exact-head audit pass is claimed yet.
