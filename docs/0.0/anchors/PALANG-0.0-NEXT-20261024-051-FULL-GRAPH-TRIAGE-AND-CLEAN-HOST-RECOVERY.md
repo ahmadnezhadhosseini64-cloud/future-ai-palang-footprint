@@ -1,3 +1,9 @@
+## NEXT-051.05 — current host enrollment and paired-interaction bridge candidate
+
+See [NEXT-051.05](PALANG-0.0-NEXT-20261123-051-REVISION-05-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md). Stable queue identity remains NEXT-051; no NEXT-052 or parallel queue.
+
+---
+
 ## NEXT-051.03 — نامزد revision سوم صف ثابت (2026-11-23)
 
 - هویت صف ثابت: **NEXT-051**؛ این فقط revision **NEXT-051.03** است، نه صف جدید.
