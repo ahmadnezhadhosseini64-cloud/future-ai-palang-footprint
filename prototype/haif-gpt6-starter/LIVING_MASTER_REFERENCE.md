@@ -1156,7 +1156,7 @@ This point preserves the initial-model continuation without resetting earlier ar
 ## CURRENT-060 — بازیابی زنجیره و ممیزی تکمیل واقعی معماری (2026-10-25)
 
 - User Point 0/009: [بازیابی و ممیزی نقاط ۰ و ۰.۰](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-009-CHAIN-RECOVERY-AUDIT.md).
-- Input / Output / Event: [IN-053](../../0.0/anchors/PALANG-0.0-IN-20261025-053-CHAIN-RECOVERY-AUDIT.md) → [OUT-052](../../0.0/anchors/PALANG-0.0-OUT-20261025-052-CHAIN-RECOVERY-AUDIT.md) → [EVT-0162](../BEHAVIOR-TRACE/EVT-0162-CHAIN-RECOVERY-AUDIT-AND-SCOPE-ERROR-LEARNING-2026-10-25.md) → [CURRENT-060](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-060-CHAIN-RECOVERY-AUDIT.md).
+- Input / Output / Event: [IN-053](../../0.0/anchors/PALANG-0.0-IN-20261025-053-CHAIN-RECOVERY-AUDIT.md) → [OUT-052](../../0.0/anchors/PALANG-0.0-OUT-20261025-052-CHAIN-RECOVERY-AUDIT.md) → [EVT-0162](../../docs/architecture/BEHAVIOR-TRACE/EVT-0162-CHAIN-RECOVERY-AUDIT-AND-SCOPE-ERROR-LEARNING-2026-10-25.md) → [CURRENT-060](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-060-CHAIN-RECOVERY-AUDIT.md).
 - Active execution remains [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md); historical NEXT-039/NEXT-040 and NEXT-044/NEXT-048 are not silently closed by this newer checkpoint.
 - Initial architecture-zero explicitly recorded the prototype as NOT BUILT and cold-start recovery as NOT RUN. The model baseline says production implementation is NOT BUILT. These remain real build/acceptance gaps until newer direct evidence closes them.
 - The portable manifest and its previous successful CI receipts predate this CURRENT-060 chain. This new chain and mother update have not yet been proven included in a fresh export artifact; current-commit package/digest reconciliation is OPEN / NOT RUN.
@@ -1262,7 +1262,7 @@ New Point 0: [POINT-0/014](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-014
 ## Live mirror sync and current-chain audit addendum — 2026-10-25 (EVT-0172 / EVT-0173)
 
 - [EVT-0172 — live mirror sync](../BEHAVIOR-TRACE/EVT-0172-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md): canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10` remains unchanged; Library version 7 independently read back; 10,479 vs 10,480 characters; one trailing newline; semantic fields and destination statuses match within tolerance. No redundant Library write was performed.
-- [EVT-0173 — exact-main audit failure and correction](../BEHAVIOR-TRACE/EVT-0173-CURRENT-065-EXACT-MAIN-AUDIT-FAILURE-AND-CORRECTION-2026-10-25.md): run 40169128251 failed on main SHA `19044f6a238e3d00805813695f328f0540af5e8d` because POINT-0/014 lacked explicit links to IN-058, OUT-057, EVT-0167 and CURRENT-065. The links are now added; fresh audit on the exact resulting main SHA is still required.
+- [EVT-0173 — exact-main audit failure and correction](../../docs/architecture/BEHAVIOR-TRACE/EVT-0173-CURRENT-065-EXACT-MAIN-AUDIT-FAILURE-AND-CORRECTION-2026-10-25.md): run 40169128251 failed on main SHA `19044f6a238e3d00805813695f328f0540af5e8d` because POINT-0/014 lacked explicit links to IN-058, OUT-057, EVT-0167 and CURRENT-065. The links are now added; fresh audit on the exact resulting main SHA is still required.
 - Canonical live pointers observed in the repository: CURRENT-065 / NEXT-051. Earlier CURRENT-036 / NEXT-036 and NEXT-035 remain preserved historical checkpoints and are not overwritten.
 - Issue #20 runtime/cold-host recovery and Issue #21 historical source/rule census remain OPEN. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external end-to-end recovery NOT RUN.
 
@@ -1388,8 +1388,8 @@ Actual final point-file commit: UTC `2026-10-25T07:56:47Z` → Asia/Tehran `2026
 
 ## POINT-0/020 — خطای اشاره‌گر جاری و مسیر اصلاح قابل‌بازیابی
 
-- نقطهٔ جاری این تعامل: [POINT-0/020](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-020-LIVE-POINTER-FAILURE-AND-RECOVERY.md).
-- زنجیرهٔ ثبت: [IN-060](../../0.0/anchors/PALANG-0.0-IN-20261025-060-LIVE-POINTER-FAILURE-AND-RECOVERY.md) → [OUT-059](../../0.0/anchors/PALANG-0.0-OUT-20261025-059-LIVE-POINTER-FAILURE-AND-RECOVERY.md) → [EVT-0182](../BEHAVIOR-TRACE/EVT-0182-LIVE-POINTER-FAILURE-AND-RECOVERY-2026-10-25.md) → [CURRENT-067](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-067-LIVE-POINTER-FAILURE-AND-RECOVERY.md).
+- نقطهٔ جاری این تعامل: [POINT-0/020](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-020-LIVE-POINTER-FAILURE-AND-RECOVERY.md).
+- زنجیرهٔ ثبت: [IN-060](../../docs/0.0/anchors/PALANG-0.0-IN-20261025-060-LIVE-POINTER-FAILURE-AND-RECOVERY.md) → [OUT-059](../../docs/0.0/anchors/PALANG-0.0-OUT-20261025-059-LIVE-POINTER-FAILURE-AND-RECOVERY.md) → [EVT-0182](../../docs/architecture/BEHAVIOR-TRACE/EVT-0182-LIVE-POINTER-FAILURE-AND-RECOVERY-2026-10-25.md) → [CURRENT-067](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-067-LIVE-POINTER-FAILURE-AND-RECOVERY.md).
 - شاهد شکست: [Living Architecture Audit run 40176902366](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40176902366)؛ شکست در کشف اشاره‌گر جاری رخ داد، چون parser فقط شکل کوتاه CURRENT را می‌شناخت اما فایل‌های مخزن شکل تاریخ‌دار CURRENT-YYYYMMDD-NNN دارند.
 - اصلاح اولیهٔ parser و fixture رگرسیون در مخزن نوشته شده‌اند؛ تا دریافت نتیجهٔ workflow روی SHA دقیق جدید، وضعیت آن‌ها IMPLEMENTED / NOT YET VERIFIED است.
 - CURRENT-065/CURRENT-066 را از روی شماره انتخاب نکن؛ منبع حاکم باید با شواهد و رسید آزمون تعیین شود. NEXT-051 همچنان کار فعال است.
@@ -3280,7 +3280,7 @@ This point preserves the initial-model continuation without resetting earlier ar
 ## CURRENT-060 — بازیابی زنجیره و ممیزی تکمیل واقعی معماری (2026-10-25)
 
 - User Point 0/009: [بازیابی و ممیزی نقاط ۰ و ۰.۰](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-009-CHAIN-RECOVERY-AUDIT.md).
-- Input / Output / Event: [IN-053](../../0.0/anchors/PALANG-0.0-IN-20261025-053-CHAIN-RECOVERY-AUDIT.md) → [OUT-052](../../0.0/anchors/PALANG-0.0-OUT-20261025-052-CHAIN-RECOVERY-AUDIT.md) → [EVT-0162](../BEHAVIOR-TRACE/EVT-0162-CHAIN-RECOVERY-AUDIT-AND-SCOPE-ERROR-LEARNING-2026-10-25.md) → [CURRENT-060](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-060-CHAIN-RECOVERY-AUDIT.md).
+- Input / Output / Event: [IN-053](../../0.0/anchors/PALANG-0.0-IN-20261025-053-CHAIN-RECOVERY-AUDIT.md) → [OUT-052](../../0.0/anchors/PALANG-0.0-OUT-20261025-052-CHAIN-RECOVERY-AUDIT.md) → [EVT-0162](../../docs/architecture/BEHAVIOR-TRACE/EVT-0162-CHAIN-RECOVERY-AUDIT-AND-SCOPE-ERROR-LEARNING-2026-10-25.md) → [CURRENT-060](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-060-CHAIN-RECOVERY-AUDIT.md).
 - Active execution remains [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md); historical NEXT-039/NEXT-040 and NEXT-044/NEXT-048 are not silently closed by this newer checkpoint.
 - Initial architecture-zero explicitly recorded the prototype as NOT BUILT and cold-start recovery as NOT RUN. The model baseline says production implementation is NOT BUILT. These remain real build/acceptance gaps until newer direct evidence closes them.
 - The portable manifest and its previous successful CI receipts predate this CURRENT-060 chain. This new chain and mother update have not yet been proven included in a fresh export artifact; current-commit package/digest reconciliation is OPEN / NOT RUN.
@@ -3384,7 +3384,7 @@ New Point 0: [POINT-0/014](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-014
 ## Live mirror sync and current-chain audit addendum — 2026-10-25 (EVT-0172 / EVT-0173)
 
 - [EVT-0172 — live mirror sync](../BEHAVIOR-TRACE/EVT-0172-LIVE-MIRROR-SYNC-RECHECK-2026-10-25.md): canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10` remains unchanged; Library version 7 independently read back; 10,479 vs 10,480 characters; one trailing newline; semantic fields and destination statuses match within tolerance. No redundant Library write was performed.
-- [EVT-0173 — exact-main audit failure and correction](../BEHAVIOR-TRACE/EVT-0173-CURRENT-065-EXACT-MAIN-AUDIT-FAILURE-AND-CORRECTION-2026-10-25.md): run 40169128251 failed on main SHA `19044f6a238e3d00805813695f328f0540af5e8d` because POINT-0/014 lacked explicit links to IN-058, OUT-057, EVT-0167 and CURRENT-065. The links are now added; fresh audit on the exact resulting main SHA is still required.
+- [EVT-0173 — exact-main audit failure and correction](../../docs/architecture/BEHAVIOR-TRACE/EVT-0173-CURRENT-065-EXACT-MAIN-AUDIT-FAILURE-AND-CORRECTION-2026-10-25.md): run 40169128251 failed on main SHA `19044f6a238e3d00805813695f328f0540af5e8d` because POINT-0/014 lacked explicit links to IN-058, OUT-057, EVT-0167 and CURRENT-065. The links are now added; fresh audit on the exact resulting main SHA is still required.
 - Canonical live pointers observed in the repository: CURRENT-065 / NEXT-051. Earlier CURRENT-036 / NEXT-036 and NEXT-035 remain preserved historical checkpoints and are not overwritten.
 - Issue #20 runtime/cold-host recovery and Issue #21 historical source/rule census remain OPEN. Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external end-to-end recovery NOT RUN.
 
@@ -3512,8 +3512,8 @@ Actual final point-file commit: UTC `2026-10-25T07:56:47Z` → Asia/Tehran `2026
 
 ## POINT-0/020 — خطای اشاره‌گر جاری و مسیر اصلاح قابل‌بازیابی
 
-- نقطهٔ جاری این تعامل: [POINT-0/020](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-020-LIVE-POINTER-FAILURE-AND-RECOVERY.md).
-- زنجیرهٔ ثبت: [IN-060](../../0.0/anchors/PALANG-0.0-IN-20261025-060-LIVE-POINTER-FAILURE-AND-RECOVERY.md) → [OUT-059](../../0.0/anchors/PALANG-0.0-OUT-20261025-059-LIVE-POINTER-FAILURE-AND-RECOVERY.md) → [EVT-0182](../BEHAVIOR-TRACE/EVT-0182-LIVE-POINTER-FAILURE-AND-RECOVERY-2026-10-25.md) → [CURRENT-067](../../0.0/anchors/PALANG-0.0-CURRENT-20261025-067-LIVE-POINTER-FAILURE-AND-RECOVERY.md).
+- نقطهٔ جاری این تعامل: [POINT-0/020](../../docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261025-020-LIVE-POINTER-FAILURE-AND-RECOVERY.md).
+- زنجیرهٔ ثبت: [IN-060](../../docs/0.0/anchors/PALANG-0.0-IN-20261025-060-LIVE-POINTER-FAILURE-AND-RECOVERY.md) → [OUT-059](../../docs/0.0/anchors/PALANG-0.0-OUT-20261025-059-LIVE-POINTER-FAILURE-AND-RECOVERY.md) → [EVT-0182](../../docs/architecture/BEHAVIOR-TRACE/EVT-0182-LIVE-POINTER-FAILURE-AND-RECOVERY-2026-10-25.md) → [CURRENT-067](../../docs/0.0/anchors/PALANG-0.0-CURRENT-20261025-067-LIVE-POINTER-FAILURE-AND-RECOVERY.md).
 - شاهد شکست: [Living Architecture Audit run 40176902366](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40176902366)؛ شکست در کشف اشاره‌گر جاری رخ داد، چون parser فقط شکل کوتاه CURRENT را می‌شناخت اما فایل‌های مخزن شکل تاریخ‌دار CURRENT-YYYYMMDD-NNN دارند.
 - اصلاح اولیهٔ parser و fixture رگرسیون در مخزن نوشته شده‌اند؛ تا دریافت نتیجهٔ workflow روی SHA دقیق جدید، وضعیت آن‌ها IMPLEMENTED / NOT YET VERIFIED است.
 - CURRENT-065/CURRENT-066 را از روی شماره انتخاب نکن؛ منبع حاکم باید با شواهد و رسید آزمون تعیین شود. NEXT-051 همچنان کار فعال است.
