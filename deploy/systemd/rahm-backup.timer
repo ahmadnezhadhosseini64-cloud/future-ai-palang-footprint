@@ -1,0 +1,11 @@
+[Unit]
+Description=Daily RAHM ledger backup schedule
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+RandomizedDelaySec=15m
+Unit=rahm-backup.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,9 @@
+[Unit]
+Description=Check RAHM service and ledger health
+OnFailure=rahm-restart.service
+
+[Service]
+Type=oneshot
+User=rahm
+Group=rahm
+ExecStart=/usr/bin/python3 /opt/future-ai-palang-footprint/scripts/rahm-runtime/rahm_healthcheck.py --url http://127.0.0.1:8765/health

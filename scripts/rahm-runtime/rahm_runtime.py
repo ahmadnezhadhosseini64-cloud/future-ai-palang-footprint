@@ -13,22 +13,17 @@ SCHEMA = "rahm-ledger/0.1"
 HAIF_SCHEMA = "haif-runtime-state/1.0"
 GENESIS = "0" * 64
 
-
 def now() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
-
 
 def canonical(value: Any) -> bytes:
     return json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")
 
-
 def sha(value: Any) -> str:
     return hashlib.sha256(canonical(value)).hexdigest()
 
-
 def event_body(event: dict) -> dict:
     return {k: v for k, v in event.items() if k != "event_hash"}
-
 
 def new_ledger() -> dict:
     return {"schema": SCHEMA, "ledger_id": "RAHM-" + uuid.uuid4().hex,
@@ -39,7 +34,6 @@ def new_ledger() -> dict:
                 "independent_host_recovery", "signed_owner_approval", "production_deployment"
             ]}
 
-
 def verify_haif(source: Any) -> list[str]:
     errors = []
     if not isinstance(source, dict) or source.get("schema") != HAIF_SCHEMA:
@@ -47,8 +41,7 @@ def verify_haif(source: Any) -> list[str]:
     events = source.get("events")
     if not isinstance(events, list):
         return ["source events must be an array"]
-    previous = GENESIS
-    seen = set()
+    previous, seen = GENESIS, set()
     for i, event in enumerate(events):
         if not isinstance(event, dict):
             errors.append(f"source.events[{i}] must be an object")
@@ -62,7 +55,6 @@ def verify_haif(source: Any) -> list[str]:
         seen.add(event.get("event_id"))
         previous = event.get("event_hash", previous)
     return errors
-
 
 def verify_ledger(ledger: Any) -> list[str]:
     if not isinstance(ledger, dict) or ledger.get("schema") != SCHEMA:
@@ -90,12 +82,10 @@ def verify_ledger(ledger: Any) -> list[str]:
         errors.append("seen_source_hashes does not match event ledger")
     return errors
 
-
-def append(ledger: dict, source_event: dict) -> dict:
+def append(ledger: dict, source_event: dict, source_host_id: str = "HAIF_EXPORT") -> dict:
     source_hash = source_event["event_hash"]
     if source_hash in ledger["seen_source_hashes"]:
         return None
-    # RAHM records evidence and a bounded next-step proposal; it never promotes anything.
     kind = source_event.get("kind")
     if kind == "INTERACTION":
         assessment = "REVIEW_REQUIRED"
@@ -108,6 +98,7 @@ def append(ledger: dict, source_event: dict) -> dict:
         proposal = "Classify this source event before operational use."
     event = {"rahm_event_id": "RHE-" + uuid.uuid4().hex,
              "created_at_utc": now(), "source_system": "HAIF",
+             "source_host_id": source_host_id,
              "source_event_id": source_event.get("event_id"),
              "source_event_hash": source_hash, "source_kind": kind,
              "assessment": assessment, "proposal": proposal,
@@ -118,7 +109,6 @@ def append(ledger: dict, source_event: dict) -> dict:
     ledger["seen_source_hashes"].append(source_hash)
     ledger["updated_at_utc"] = now()
     return event
-
 
 def atomic_write(path: Path, value: dict) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -133,13 +123,11 @@ def atomic_write(path: Path, value: dict) -> None:
         except OSError: pass
         raise
 
-
 def load(path: Path) -> dict:
     data = json.loads(path.read_text(encoding="utf-8"))
     errors = verify_ledger(data)
     if errors: raise ValueError("; ".join(errors))
     return data
-
 
 def main(argv=None) -> int:
     p = argparse.ArgumentParser(description="RAHM evidence kernel — owner-governed local MVP")
@@ -148,6 +136,7 @@ def main(argv=None) -> int:
     sub.add_parser("init")
     ingest = sub.add_parser("ingest-haif", help="consume a verified HAIF JSON export")
     ingest.add_argument("source")
+    ingest.add_argument("--source-host-id", default="HAIF_EXPORT")
     sub.add_parser("status")
     sub.add_parser("verify")
     args = p.parse_args(argv); path = Path(args.ledger)
@@ -161,7 +150,7 @@ def main(argv=None) -> int:
             errors = verify_haif(source)
             if errors: raise ValueError("HAIF source rejected: " + "; ".join(errors))
             ledger = load(path)
-            added = sum(1 for event in source["events"] if append(ledger, event) is not None)
+            added = sum(1 for event in source["events"] if append(ledger, event, args.source_host_id) is not None)
             errors = verify_ledger(ledger)
             if errors: raise ValueError("RAHM ledger invalid: " + "; ".join(errors))
             atomic_write(path, ledger)

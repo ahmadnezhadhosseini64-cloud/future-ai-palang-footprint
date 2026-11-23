@@ -1,56 +1,76 @@
 # MAIN–HAIF–RAHM Living Runtime Boundary
 
-- Status: ACTIVE / IMPLEMENTED CANDIDATE / OWNER REVIEW REQUIRED
+- Status: ACTIVE / IMPLEMENTED CANDIDATE / OWNER GOVERNANCE PRESERVED
 - Date: 2026-11-23
 - Stable architecture root: POINT-0/GOLDEN
 - Sole continuation queue: NEXT-051
-- Scope: first runnable RAHM kernel and one-way HAIF evidence bridge
+- Scope: RAHM evidence kernel, HAIF bridge, and five-part operational management candidate
 
 ## Permanent architecture
 
-The three assets are one intended living system, with separate authority boundaries:
+The three assets are one living system with distinct authority boundaries:
 
 1. **MAIN** — canonical reference, governance, owner authority and controlled promotion.
 2. **HAIF** — interaction continuity runtime: explicit IN/OUT capture, append-only event chain, checkpoint, export/import and verification.
-3. **RAHM** — evidence intake, provenance ledger, deterministic triage and review proposals.
+3. **RAHM** — evidence intake, source provenance, deterministic triage, continuity proposals and owner-review feedback.
 
-Data path in this MVP:
+Canonical flow:
 
-`HAIF export → RAHM source verification → idempotent evidence ingest → RAHM hash ledger → review proposal → owner review`
+`HUMAN ↔ AI HOST ↔ HAIF → RAHM → VALIDATION / PROPOSAL → OWNER REVIEW → CONTROLLED MASTER PROMOTION`
 
-The feedback path is proposal-only. No RAHM or AI-host code may write to MAIN/MASTER.
+No AI host or RAHM process has a direct or indirect write path to MAIN/MASTER. All RAHM outputs remain `PROPOSAL_ONLY_NO_MASTER_WRITE`.
 
-## Implemented in this candidate
+## Implemented and verified in the owner-approved baseline
 
-- `scripts/rahm-runtime/rahm_runtime.py`: runnable standard-library-only RAHM ledger.\n- `scripts/rahm-runtime/rahm_service.py`: authenticated loopback HTTP service with health and HAIF-ingest endpoints; token is supplied through environment, never committed.
-- `scripts/rahm-runtime/tests/test_rahm_runtime.py`: source-integrity, idempotence, overwrite protection and authority-boundary tests.
-- `scripts/rahm-runtime/README.md`: operating instructions and explicit limitations.
-- RAHM verifies the HAIF source chain before ingest; preserves source event ID/hash; rejects tampering; skips duplicate source hashes; appends a separately hash-chained RAHM event; labels all outputs `PROPOSAL_ONLY_NO_MASTER_WRITE`.
+- RAHM verifies the HAIF source event hash chain before ingest.
+- Source event IDs and hashes are preserved; duplicate source hashes are skipped.
+- RAHM maintains a separate SHA-256-linked evidence ledger.
+- Authenticated local HTTP intake is available at `POST /v1/haif/ingest`; health at `GET /health`.
+- Real HAIF-to-RAHM end-to-end and authenticated HTTP tests passed.
+- Baseline PR #150 merged to the canonical POINT-0/GOLDEN governance branch as commit `21ca06eee1dbc35c4dfa8663308d251de9e711bb`.
 
-## What “living and permanent” means operationally
+## Five-part operational management candidate (PR #151)
 
-This architecture is intended to remain ACTIVE / LIVING under the existing POINT-0/GOLDEN root and NEXT-051 queue. Future work must extend the same identities and ledgers rather than create parallel roots. A capability remains active only to the extent its runtime, persistence, tests, and read-back evidence exist.
+1. **Automatic start and process restart:** hardened Linux systemd service unit with boot enablement and restart-on-failure.
+2. **Recovery:** verified restore tool checks manifest schema/name, SHA-256, byte count and internal ledger chain before atomic replacement; service restart is also managed by systemd.
+3. **Backup:** daily persistent systemd timer and oneshot backup service; backup includes a separate checksum/size manifest.
+4. **Health monitoring:** one-minute health probe; failed probe invokes a systemd restart unit. Graceful SIGTERM shutdown is implemented and integration-tested.
+5. **Independent host bridge:** sender adapter verifies HAIF export, requires a 32+ character token, enforces HTTPS off-loopback, and posts to RAHM. RAHM records the sender-provided host label and skips duplicate events.
 
-A repository document or passing CI is not proof of a permanently running service. The current RAHM kernel runs when explicitly invoked and persists to a local JSON file. It is not a daemon, scheduled agent, cloud service, or automatic ChatGPT capture mechanism.
+The exact tested commit is always the latest PR #151 head SHA paired with its GitHub Actions check runs; do not reuse a prior candidate SHA as current evidence.
+- RAHM/HAIF runtime tests: SUCCESS.
+- Living Architecture Audit: SUCCESS.
+- Backup/restore tamper rejection, independent-host authenticated push, duplicate replay, health probe, graceful stop and ledger verification are covered by CI tests.
 
-## Local live-service capability\n\nThe RAHM bridge now has a continuously listening local HTTP service when explicitly started by an operator. It requires a 32-character-or-longer environment token, defaults to loopback, verifies source chains, persists the ledger, and rejects unauthenticated ingestion. CI tests exercise authenticated ingestion, duplicate replay, health, and ledger persistence. This is an operational local process, not a deployed 24/7 service: process supervision, restart policy, secure remote exposure, monitoring, backups and host provisioning remain open.\n\n## Required next acceptance gates
+## Operational boundary — not yet deployed
 
-1. Run both HAIF and RAHM test suites on the exact candidate head.
-2. Add end-to-end fixture test: HAIF init → interaction → checkpoint → export → RAHM ingest → repeated ingest → RAHM verify.
-3. Demonstrate restart persistence by terminating and recreating both processes against the same files.
-4. Demonstrate clean-host import on a separate environment and compare IDs, event counts and hashes.
-5. Add authenticated remote bridge only after a threat model, least-privilege design, secret handling, and negative authorization tests.
-6. Add semantic AI reasoning only behind an explicit provider adapter, with source citations, uncertainty, evaluation, and owner review; do not label deterministic rules as intelligence.
-7. Establish a separately operated scheduler/service only after health checks, monitoring, backup, restore, and failure recovery are implemented.
-8. Preserve owner-only MASTER promotion. No automated merge, branch-protection bypass, secrets administration, or host-to-MASTER write path.
+The five mechanisms exist as code/configuration candidates in the repository. They are not yet installed, enabled or running on a real server. Therefore none of the following is claimed as complete:
+- 24/7 process uptime or actual machine-reboot recovery;
+- scheduled off-host backup execution or a disaster-recovery restore drill;
+- real remote-host onboarding, TLS reverse-proxy provisioning, key rotation or cryptographic host identity;
+- automatic capture of live ChatGPT conversations;
+- independent clean-host recovery.
+
+A passing CI run proves tested candidate behavior only. It does not prove production provisioning, uptime, off-host durability or security certification.
+
+## Required real-host acceptance gates
+
+1. Provision a Linux host and dedicated least-privilege `rahm` account.
+2. Install units, initialize the ledger, configure a random secret outside the repository, and enable service/timers.
+3. Reboot the host; kill the service process; verify automatic restart and health recovery.
+4. Execute a backup, copy it off-host, restore on a clean environment, and compare ledger ID, event count and head hash.
+5. Place the service behind TLS/private networking; enroll independent hosts with per-host credentials and revocation.
+6. Verify no host or RAHM process can write to MAIN/MASTER.
+7. Only after real uptime, recovery and security evidence may deployment status be upgraded.
 
 ## No-fake-closure
 
 - Implemented ≠ deployed.
-- Local persistence ≠ cross-host persistence.
-- Deterministic triage ≠ AI reasoning or learning.
-- Hash chain ≠ cryptographic identity or protection against complete rewrite.
-- CI PASS ≠ independent-host acceptance.
-- ACTIVE / LIVING architecture ≠ 24/7 running process.
+- A systemd unit in Git ≠ enabled at boot.
+- Local backup ≠ off-host disaster recovery.
+- Sender-provided host label ≠ cryptographic identity.
+- Hash chain ≠ proof of author identity or protection against complete rewrite.
+- Deterministic triage ≠ semantic AI reasoning or model training.
+- CI PASS ≠ 24/7 operation or clean-host acceptance.
 
-MAIN/MASTER remain unchanged by this candidate. Promotion requires exact-head tests, read-back, review and explicit owner authorization.
+MAIN/MASTER remain unchanged. Owner authority and controlled promotion remain permanent.

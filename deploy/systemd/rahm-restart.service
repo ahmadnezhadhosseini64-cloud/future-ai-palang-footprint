@@ -1,0 +1,6 @@
+[Unit]
+Description=Restart RAHM after failed health check
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/systemctl restart rahm.service
