@@ -1,9 +1,9 @@
 # معماری امنیتی میزبان‌های مستقل و مخزن مادر فقط‌مالک
 
 - Stable ID: HAIF-OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOS-2026-11-21-001
-- Version: 1.3.0
+- Version: 1.4.0
 - Status: OWNER-DIRECTED / DESIGN APPROVED / IMPLEMENTATION PARTIAL
-- Parent: POINT-0/GOLDEN → CURRENT-140 → NEXT-051
+- Parent: POINT-0/GOLDEN → CURRENT-151 → NEXT-051
 - Canonical root: POINT-0 only
 - Canonical master repository: ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
 - Owner: repository owner only
@@ -252,3 +252,57 @@ The canonical authority is POINT-0/GOLDEN / CURRENT-140. This section supersedes
 ## 17. Owner connector is not a host permission
 
 The current ChatGPT GitHub integration is authenticated as the owner account and has admin/push permission on this repository. It is not a host credential and must not be shared with any new Host Node or placed in a host workspace. Its exposed tool surface does not include Ruleset writes, private-repository creation, GitHub App creation, or complete collaborator/App/deploy-key inventory. A user instruction authorizes permitted actions but does not bypass these capability boundaries or GitHub's rule that a PR author cannot approve their own PR. Private RAHM access is separate and not granted merely by connecting the public master.
+
+
+## 18. Owner-approved Organization, three protection layers and real host development — 2026-11-24
+
+- Decision status: OWNER-APPROVED DESIGN / IMPLEMENTATION NOT VERIFIED.
+- Parent: POINT-0/GOLDEN → CURRENT-151 → POINT-0/090 → IN-134 → OUT-133 → EVT-0321 → TIME-BINDING-EVT-0321 → CURRENT-152 → sole NEXT-051.
+- This section extends the existing security contract; it creates no parallel root or queue.
+
+### 18.1 Organization-first migration
+
+The owner approved a GitHub Organization as the target governance container, but the current personal-account master must not be transferred yet.
+
+1. Create and configure the Organization; verify the plan, owner role, base permissions, 2FA, repository creation/deletion/transfer policies and organization-level rulesets.
+2. GitHub documentation currently lists organization-level repository rulesets for GitHub Team and GitHub Enterprise. Verify the eligible plan and feature availability before provisioning; do not assume a Free organization includes this feature.
+3. Test organization rulesets on a non-production repository and prove repository admins cannot weaken organization-level controls.
+4. Provision central private RAHM and isolated private host repositories; run negative access tests.
+5. Prepare backup, migration inventory and rollback. Audit Pages/custom domain, Actions, secrets, Apps, OAuth, webhooks, packages, releases, rulesets, branch protection, collaborators, URLs and history.
+6. Transfer the existing master only after all preconditions pass; verify repository identity, history, HEAD/tree and every integration after transfer.
+
+Organization Owners retain powerful administrative authority. The initial approved model assumes the project owner is Organization Owner and sole release authority. This does not prevent the owner from deliberately changing organization rules. A separate trusted security custodian is not appointed by this decision; if later required, that custodian must not receive MASTER release authority.
+
+### 18.2 Three protection layers
+
+1. OWNER IDENTITY — passkey/security key or strong MFA, secure recovery, and regular session/OAuth/App audit.
+2. SECOND SECRET — confidential second secret stays outside prompts, chat, repositories, ZIPs, workflows and logs. It is never requested, guessed, repeated, or stored by a host.
+3. RELEASE AUTHORITY — only the owner authorizes central RAHM acceptance and MASTER promotion. Use rulesets, CODEOWNERS, independent review, stale-approval dismissal, conversation resolution, hash-bound receipts and read-back.
+
+These controls do not make a compromised owner account, endpoint, Organization Owner or App private key invulnerable. Recovery, rotation, revocation and audit remain necessary.
+
+### 18.3 Development authority is real but scoped
+
+- HOST = DEVELOPMENT AUTHORITY only inside its own owner-created PRIVATE development repository. It may create/edit code and documents, run tests, create branches, prepare proposals, and preserve evidence/receipts. It is not restricted to report-only output.
+- OWNER = RELEASE AUTHORITY for central RAHM and MASTER.
+- Each verified Host ID maps to exactly one private repository and Workspace ID. No shared host repository or shared credential.
+- A host cannot read/write another host's repository, central RAHM or MASTER. It cannot administer repositories, Organization settings, collaborators, secrets, Actions, rulesets, webhooks, transfer or deletion.
+- Central RAHM remains a separate PRIVATE owner-only repository. It is the quarantine, reconciliation and validation environment, not a shared host workspace.
+- Only owner-commanded export, review and redaction connect host work to central RAHM. Any future broker may write only to one server-mapped host repository and remains disabled until threat model, least-privilege scope, revocation, audit and negative tests pass.
+- Repository permissions are not folder permissions. Never grant host write access to central RAHM on the assumption that a folder or branch is an adequate boundary.
+
+### 18.4 Canonical flow
+
+`MASTER/GOLDEN → VERIFIED READ-ONLY SNAPSHOT → HOST PRIVATE DEVELOPMENT REPO → PROPOSAL + TESTS + RECEIPTS → OWNER EXPORT/REDACTION → CENTRAL PRIVATE RAHM → CROSS-HOST RECONCILIATION + VALIDATION → OWNER REVIEW → EXPLICIT OWNER RELEASE → MASTER`
+
+No host or intermediary has a direct/indirect MASTER write route, bypass, merge or release authority.
+
+### 18.5 Acceptance tests and status
+
+- Host A can develop in A only; Host B can develop in B only.
+- A↔B, Host→RAHM and Host→MASTER access attempts fail.
+- Revoked credentials fail; client-supplied repository/path/branch cannot override owner-side mapping.
+- Export/import preserves provenance, source commit, manifest and SHA-256; unredacted or invalid material is rejected.
+- Organization, central RAHM, host repositories, App/broker and migration remain NOT CREATED / NOT VERIFIED.
+- Ruleset 27814009 last read-back remains approvals=0 and Code Owner review=false; enforcement gap OPEN.
+- No host is ACTIVE until actual identity, workspace, permission scope and negative-test receipts are verified.

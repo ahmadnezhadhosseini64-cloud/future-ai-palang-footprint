@@ -1,3 +1,19 @@
+## CURRENT-152 / POINT-0/090 — Organization-first, independent RAHM and real host development (2026-11-24)
+
+- Continuation: [CURRENT-151](PALANG-0.0-CURRENT-20261122-151-DEEP-EXCAVATION-AND-CASE-CONSOLIDATION.md) → [POINT-0/090](GPT6-RAHM-USER-POINT-0-20261124-090-ORG-RAHM-OWNER-RELEASE.md) → [IN-134](PALANG-0.0-IN-20261124-134-ORG-RAHM-OWNER-RELEASE.md) → [OUT-133](PALANG-0.0-OUT-20261124-133-ORG-RAHM-OWNER-RELEASE.md) → [EVT-0321](../../architecture/BEHAVIOR-TRACE/EVT-0321-OWNER-APPROVED-ORG-RAHM-OWNER-RELEASE-2026-11-24.md) → [TIME-BINDING-EVT-0321](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0321-OWNER-APPROVED-ORG-RAHM-2026-11-24.md) → [CURRENT-152](PALANG-0.0-CURRENT-20261124-152-ORG-RAHM-OWNER-RELEASE.md) → this same sole NEXT-051.
+- **OWNER APPROVED:** create/test GitHub Organization first; preserve current personal master until dry-run and rollback pass; create separate PRIVATE owner-only central RAHM; create one PRIVATE owner-created development repository per verified host; HOST = development authority in own repo; OWNER = release authority for RAHM and MASTER; preserve three protection layers.
+- **DONE / PROPOSAL-BRANCH:** POINT-0/090, IN-134, OUT-133, EVT-0321, TIME-BINDING-EVT-0321, CURRENT-152 and architecture updates are being registered on a branch based on CURRENT-151. They are not yet merged to Golden/main.
+- **OPEN — O1:** verify GitHub Team/Enterprise eligibility for organization-level repository rulesets; create Organization; configure member/base permissions, 2FA, repo creation/deletion/transfer and organization rulesets; test that repo admins cannot weaken org rules.
+- **OPEN — O2:** create `future-ai-palang-rahm` as PRIVATE, owner-only in the Organization; read back privacy, repository ID/full name, access lists, Apps, deploy keys and connector access.
+- **OPEN — O3:** create one isolated PRIVATE development repository per verified Host ID; map repository/workspace server-side; no shared host repository or credential.
+- **OPEN — O4:** run negative tests: Host A↔Host B denied; all hosts denied central RAHM and MASTER; revoked access denied; host admin surfaces denied.
+- **OPEN — O5:** current Ruleset 27814009 last read-back approvals=0 and Code Owner review=false; configure owner review, stale approval dismissal and conversation resolution after bot PR path is proven, then read back.
+- **OPEN — O6:** prepare migration inventory, backup and rollback; audit Pages/custom domain, Actions, secrets, Apps, OAuth, webhooks, packages, releases, rulesets, permissions, URLs and history; transfer only after all gates pass.
+- **OPEN — O7:** exact-Golden conformance and independent-host recovery after relevant source/package changes. Current portable 0.5.1 remains candidate based on mother 1.8.2; it is not verified against 1.8.3.
+- Organization, central RAHM, host repos, App/broker and migration remain NOT CREATED / NOT VERIFIED. No host is ACTIVE. No new NEXT queue; NEXT-051 remains the sole queue.
+
+---
+
 ## CURRENT-151 / POINT-0/089 — deep excavation and case consolidation (2026-11-22)
 
 - Continuation: POINT-0/GOLDEN → CURRENT-150 → POINT-0/089 → IN-133 → OUT-132 → EVT-0320 → TIME-BINDING-EVT-0320 → CURRENT-151 → this sole NEXT-051.
@@ -169,7 +185,7 @@ PR #101 and #92 remain historical OPEN evidence only; do not merge or delete the
 
 - Stable ID: G6IP-RAHM-NEXT-051-20261024
 - Production ID: G6IP-RAHM-NEXT-051-20261024
-- Version: 1.0.52
+- Version: 1.0.53
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE
 - Project: Future AI / Palang Footprint — HAIF
 - Canonical queue: this file only

@@ -1,4 +1,4 @@
-> **CURRENT GOVERNANCE — POINT-0/GOLDEN / CURRENT-140 / 2026-11-22**
+> **CURRENT GOVERNANCE — POINT-0/GOLDEN / CURRENT-152 / 2026-11-22**
 > The canonical root remains the single existing POINT-0. This is the golden baseline of the already-built project, not a new project, root, or parallel queue. Always retrieve exact main HEAD, the current living mother, CURRENT-140, and the sole active NEXT-051 before acting. Historical points and embedded snapshots are evidence only; they never override this baseline or reopen a settled decision by themselves.
 >
 > **Absolute host boundary:** every host has PUBLIC READ ONLY access to the canonical master. No host, host-held credential, host App, broker, branch, PR, issue, release, workflow, setting, or indirect relay may write to or promote content into the master. Host work remains in its own isolated runtime and, if owner-provisioned, its own private repository. The owner alone exports selected material.
@@ -100,3 +100,10 @@ workspace واقعی باید در sandbox/فضای خصوصی میزبان ای
 ## Golden baseline authority
 
 This README is governed by POINT-0/GOLDEN and CURRENT-140. The only bridge from a host workspace to central RAHM is an owner-commanded export performed by the owner. The host has no direct or indirect master-write route. Historical `host-intake` and host-facing broker descriptions are superseded and inactive.
+
+
+## Owner-approved real development workspace — CURRENT-152 / 2026-11-24
+
+Each verified host receives one separate owner-created PRIVATE repository. The host may create, edit, test and revise its working files, code, branches, proposals and evidence in that repository. Host work is not restricted to reports.
+
+The repository boundary is strict: no cross-host access, no access to central owner-only RAHM, no access to MASTER, and no administration of Organization/repository settings, secrets, Actions, rulesets, collaborators, webhooks, transfer or deletion. Only owner-commanded export/redaction connects a host workspace to central RAHM. A workspace is not ACTIVE until repository identity, privacy, access scope and negative tests are read back.

@@ -1,4 +1,4 @@
-> **CURRENT GOVERNANCE — POINT-0/GOLDEN / CURRENT-140 / 2026-11-22**
+> **CURRENT GOVERNANCE — POINT-0/GOLDEN / CURRENT-152 / 2026-11-22**
 > The canonical root remains the single existing POINT-0. This is the golden baseline of the already-built project, not a new project, root, or parallel queue. Always retrieve exact main HEAD, the current living mother, CURRENT-140, and the sole active NEXT-051 before acting. Historical points and embedded snapshots are evidence only; they never override this baseline or reopen a settled decision by themselves.
 >
 > **Absolute host boundary:** every host has PUBLIC READ ONLY access to the canonical master. No host, host-held credential, host App, broker, branch, PR, issue, release, workflow, setting, or indirect relay may write to or promote content into the master. Host work remains in its own isolated runtime and, if owner-provisioned, its own private repository. The owner alone exports selected material.
@@ -94,3 +94,10 @@ Host ID issuance: the owner commands ChatGPT/the HAIF control plane; the assista
 ## Golden baseline status
 
 The live registry file is intentionally empty (`hosts: []`) at the current golden baseline. This means no real host is registered or ACTIVE. Registration is owner-commanded only and requires a direct receipt and identity review. Every future record must preserve `master_access=PUBLIC_READ_ONLY`, `master_write_access=false`, `rahm_access=NONE`, and `host_direct_write_access=false`. A private host repository, if created, is isolated to that host and is not a route to RAHM or MASTER.
+
+
+## Owner-approved development authority — CURRENT-152 / 2026-11-24
+
+A verified Host ID is mapped to exactly one owner-created PRIVATE development repository and one Workspace ID. The host may create/edit/test files and code and prepare proposals/receipts in that repository. This is real development authority, not report-only output.
+
+No host repository is shared. Host A cannot access Host B; no host can access central RAHM or MASTER. The Registry must record repository ID/full name, visibility, owner, access scope, credential/App scope, Workspace ID, and revocation status only after GitHub read-back. Until verified, Host status is not ACTIVE. HOST = DEVELOPMENT AUTHORITY in its own repo; OWNER = RELEASE AUTHORITY for central RAHM and MASTER.

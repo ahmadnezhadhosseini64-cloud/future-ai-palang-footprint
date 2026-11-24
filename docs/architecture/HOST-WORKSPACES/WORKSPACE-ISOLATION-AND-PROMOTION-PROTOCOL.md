@@ -1,4 +1,4 @@
-> **CURRENT GOVERNANCE — POINT-0/GOLDEN / CURRENT-140 / 2026-11-22**
+> **CURRENT GOVERNANCE — POINT-0/GOLDEN / CURRENT-152 / 2026-11-22**
 > The canonical root remains the single existing POINT-0. This is the golden baseline of the already-built project, not a new project, root, or parallel queue. Always retrieve exact main HEAD, the current living mother, CURRENT-140, and the sole active NEXT-051 before acting. Historical points and embedded snapshots are evidence only; they never override this baseline or reopen a settled decision by themselves.
 >
 > **Absolute host boundary:** every host has PUBLIC READ ONLY access to the canonical master. No host, host-held credential, host App, broker, branch, PR, issue, release, workflow, setting, or indirect relay may write to or promote content into the master. Host work remains in its own isolated runtime and, if owner-provisioned, its own private repository. The owner alone exports selected material.
@@ -68,3 +68,12 @@
 ## 9. RAHM central owner-control extension — POINT-0/086
 
 The central RAHM environment is outside every host workspace and is controlled only by the owner. Host data is inspected and exported only by the owner on explicit command, then redacted, provenance-bound, and validated in private RAHM. No host or host-controlled intermediary can write to RAHM or the master. A trusted App may create a bot-authored PR to CHILD only after owner-controlled validation. A Child candidate is not Master. See docs/architecture/RAHM/README.md and CURRENT-139. This extension is DESIGN REGISTERED / OPERATIONAL SETUP PENDING until the private RAHM repository, promotion App, secrets, connector access and negative isolation tests are verified.
+
+
+## CURRENT-152 — development authority and owner release boundary (2026-11-24)
+
+- HOST may write, edit, test and prepare proposals only in its own owner-created PRIVATE development repository.
+- HOST cannot access another host repository, central PRIVATE RAHM or MASTER.
+- OWNER alone exports/redacts host work into central RAHM and authorizes any later release to MASTER.
+- No host-originated branch, PR, token, App, broker, worker or intermediary may write to or promote into MASTER.
+- The owner must verify negative tests and read back the repository permission boundary before activating any host.

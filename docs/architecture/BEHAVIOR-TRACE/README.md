@@ -1,4 +1,15 @@
-## Latest registered event — EVT-0320 / POINT-0/089 deep excavation
+## Latest registered event — EVT-0321 / POINT-0/090 Organization and RAHM owner-release
+
+- [EVT-0321](./EVT-0321-OWNER-APPROVED-ORG-RAHM-OWNER-RELEASE-2026-11-24.md) → [TIME-BINDING-EVT-0321](./TIME-BINDING-EVT-0321-OWNER-APPROVED-ORG-RAHM-2026-11-24.md).
+- Point: [POINT-0/090](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261124-090-ORG-RAHM-OWNER-RELEASE.md); input [IN-134](../../0.0/anchors/PALANG-0.0-IN-20261124-134-ORG-RAHM-OWNER-RELEASE.md); output [OUT-133](../../0.0/anchors/PALANG-0.0-OUT-20261124-133-ORG-RAHM-OWNER-RELEASE.md); current [CURRENT-152](../../0.0/anchors/PALANG-0.0-CURRENT-20261124-152-ORG-RAHM-OWNER-RELEASE.md); sole queue [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Parent checkpoint: CURRENT-151. Same POINT-0/GOLDEN root; no parallel root or queue.
+- Event registration commit: `71add495bed56e8adc02030ad521b6a4c21f9e3c`, UTC `2026-11-24T06:34:36Z`, Tehran `2026-11-24T10:04:36+03:30`. Owner-message timestamp UNKNOWN / UNVERIFIED.
+- Branch: `point0-090-org-rahm-owner-release-20261124`; publication to Golden/main pending.
+- No Organization, private RAHM, host repositories, App/broker or migration is claimed as provisioned.
+
+---
+
+## Previous registered event — EVT-0320 / POINT-0/089 deep excavation (predecessor)
 
 - [EVT-0320](./EVT-0320-DEEP-EXCAVATION-AND-CASE-CONSOLIDATION-2026-11-22.md) → [TIME-BINDING-EVT-0320](./TIME-BINDING-EVT-0320-DEEP-EXCAVATION-AND-CASE-CONSOLIDATION-2026-11-22.md).
 - Point: [POINT-0/089](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261122-089-DEEP-EXCAVATION-AND-CASE-CONSOLIDATION.md); input [IN-133](../../0.0/anchors/PALANG-0.0-IN-20261122-133-DEEP-EXCAVATION-AND-CASE-CONSOLIDATION.md); output [OUT-132](../../0.0/anchors/PALANG-0.0-OUT-20261122-132-DEEP-EXCAVATION-AND-CASE-CONSOLIDATION.md); current [CURRENT-151](../../0.0/anchors/PALANG-0.0-CURRENT-20261122-151-DEEP-EXCAVATION-AND-CASE-CONSOLIDATION.md); sole queue [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
@@ -72,7 +83,7 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.47
+- Version: 1.0.48
 - Date: 2026-11-21
 - Project: Future AI / Palang Footprint / HAIF
 
