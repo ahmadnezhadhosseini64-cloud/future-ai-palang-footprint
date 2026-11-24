@@ -3,7 +3,7 @@
 - Stable ID: HAIF-OUT-133-ORG-RAHM-OWNER-RELEASE-2026-11-24
 - Parent: IN-134 / POINT-0/090
 - Target: POINT-0/GOLDEN → CURRENT-151 → POINT-0/090 → IN-134 → OUT-133 → EVT-0321 → TIME-BINDING-EVT-0321 → CURRENT-152 → NEXT-051
-- Status: IMPLEMENTED ON PROPOSAL BRANCH / READ-BACK VERIFIED
+- Status: MERGED TO GOLDEN WORKING BRANCH / READ-BACK VERIFIED / MAIN-PUBLICATION-PENDING
 
 ## خروجی‌ها
 1. ترتیب Organization-first و ممنوعیت انتقال شتاب‌زدهٔ MASTER ثبت شد.
@@ -14,6 +14,11 @@
 6. ترتیب ساخت Organization، RAHM، فضای میزبان‌ها، آزمون منفی، dry-run، rollback و انتقال کنترل‌شده تدوین شد.
 7. قرارداد امنیت میزبان، RAHM README، template، رجیستری میزبان، workspace protocol، معماری چندمیزبانی و دستورهای میزبان برای همین توپولوژی هم‌راستا می‌شوند.
 8. همهٔ تغییرها به CURRENT-152 و همان صف NEXT-051 متصل‌اند؛ root یا queue موازی ساخته نشده است.
+
+## Golden merge receipt
+
+- PR #159 merged to `work/current151-exact-golden-verify-20261122` as `3d1dd8baed7f0ff1ebc2a12daa53786d2e16e4b8`; GitHub commit time UTC `2026-11-24T06:38:33Z`, Tehran `2026-11-24T10:08:33+03:30`. This is the Golden working branch only. Main/MASTER publication remains pending. No workflow runs were returned for the merge commit; CI/exact-Golden conformance is NOT VERIFIED.
+- PR #159 is MERGED. PR #158 remains CLOSED / SUPERSEDED / UNMERGED. The canonical main branch was not the target and was not changed by these PRs.
 
 ## شواهد و محدودیت‌ها
 
