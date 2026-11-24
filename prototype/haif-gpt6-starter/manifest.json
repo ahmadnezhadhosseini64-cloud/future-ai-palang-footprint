@@ -387,5 +387,5 @@
     "bot-authored Child PR with owner approval; no auto-merge or automatic Master promotion"
   ],
   "current_checkpoint": "CURRENT-150.05",
-  "last_continuation_status": "CANDIDATE / EXACT-SHA-VALIDATION-PENDING; CURRENT-150.02 / NEXT-051.02 remain last accepted Golden revisions"
+  "last_continuation_status": "CANDIDATE / EXACT-SHA-CONFORMANCE-PASS / OWNER-GOLDEN-REVIEW-PENDING; CURRENT-150.02 / NEXT-051.02 remain the last accepted Golden revisions; independent-host recovery NOT RUN."
 }
