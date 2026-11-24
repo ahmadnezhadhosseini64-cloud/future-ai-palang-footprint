@@ -17,7 +17,7 @@
 
 ## شواهد و محدودیت‌ها
 
-- دو سند معماری و این anchorها از proposal branch قابل بازخوانی‌اند.
+- دو سند معماری و تمام anchor/event/time-bindingهای جدید از proposal branch مستقل fetch و read-back شدند؛ شناسه‌ها، نسخه‌ها و نشانگرهای کلیدی با انتظار تطبیق داشتند. Blobهای اصلی: POINT-0/087 `1ed896d0bd7d9c792d9dc38cdc37ddcd3692c4e9`؛ IN-131 `a9a337b6cd1ea839fbd65f2664c2aec2cdef9253`؛ OUT-130 `3c7086067d867dfb29a47c75ada09127d275b0b6`؛ CURRENT-146 `e9d2bf9438af7520e40cbe036e9a8a75bb8cce95`؛ EVT-0318 `782f3090dc503f0ecf6050f613a5c2ab05126d88`؛ TIME-BINDING `607652a305281ffe1b15218da434b6d8310adfe9`.
 - PR #158 حاوی تغییرهای قبلی معماری است؛ این زنجیره در همان شاخه ادامه می‌یابد.
 - هیچ Organization، مخزن خصوصی RAHM، مخزن میزبان، App یا broker در این اجرا ساخته نشده است.
 - انتقال MASTER انجام نشده است.
