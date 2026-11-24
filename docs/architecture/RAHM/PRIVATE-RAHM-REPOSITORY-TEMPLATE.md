@@ -1,16 +1,17 @@
 # Private RAHM Repository — Owner Provisioning Template
 
 - Required repository name: future-ai-palang-rahm
-- Required full name: ahmadnezhadhosseini64-cloud/future-ai-palang-rahm
+- Required full name: ORG_SLUG/future-ai-palang-rahm (set ORG_SLUG only after the owner creates and verifies the Organization)
+- Intended location: the owner-approved GitHub Organization
 - Visibility: PRIVATE
-- Owner: ahmadnezhadhosseini64-cloud
+- Access: owner-only; no host, team, collaborator, host App, deploy key or shared credential
 - Status until created and read back: NOT CREATED / NOT VERIFIED
 
 ## Required repository settings
 
-- Create as a separate private repository under the owner account.
+- Create as a separate private repository in the owner-approved Organization after Organization policy verification.
 - Do not add AI hosts, host accounts, host applications, collaborators, teams, deploy keys, or shared credentials.
-- Keep owner as the only administrator and writer.
+- Keep the project owner as the only Organization Owner/administrator with access to central RAHM.
 - Do not enable public visibility, Pages, public releases, or public artifacts.
 - Keep Actions disabled unless a separately reviewed need exists; no RAHM workflow should execute untrusted host content.
 - Store only owner-reviewed exports and evidence; raw secrets and credentials are never accepted.
@@ -49,3 +50,10 @@ The ChatGPT GitHub connection must be explicitly granted read access to this pri
 ## Read-only workflow credential
 
 Create a fine-grained token limited to this one repository with Contents: Read only (plus GitHub's required Metadata read). Store it in the master repository as secret RAHM_READ_TOKEN. Do not paste it into ChatGPT, host prompts, files, commits, issues, or logs. Rotate/revoke it if exposure is suspected.
+
+
+## Organization-first provisioning — 2026-11-24
+
+The owner approved creating and testing the GitHub Organization before transferring the master. Verify the eligible plan for organization-level repository rulesets (GitHub Team or GitHub Enterprise according to current GitHub documentation) before provisioning. Central RAHM is never a host workspace. Each verified host's development authority belongs in its own separate PRIVATE repository.
+
+The connected GitHub tool surface does not expose repository creation. The owner must create this repository through authenticated GitHub UI or another owner-authorized administrative route. After creation, independently read back repository ID/full name, PRIVATE visibility, collaborators, teams, installed Apps, deploy keys, Actions policy and connector read access. Until verified, the repository remains NOT CREATED / NOT VERIFIED.
