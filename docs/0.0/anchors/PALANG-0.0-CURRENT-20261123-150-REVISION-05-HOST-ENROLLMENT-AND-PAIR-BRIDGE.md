@@ -58,3 +58,14 @@ This is a continuation of the single existing root and stable CURRENT/NEXT famil
 - Living Architecture Audit: run 45128386271 SUCCESS on the same tested SHA.
 - Portable conformance: run 45128386249 FAILED on stale manifest SHA pins for the modified portable schema and fixture; manifest corrected to version 1.8.46 on subsequent head 0f4754704f9837b631bc530e8924b8258f497cd7. Fresh exact-head rerun pending.
 - No Golden merge, main write, host activation, private RAHM provisioning or clean-host recovery is claimed.
+
+
+## Open acceptance gates — preserved until direct evidence
+
+- CURRENT-065/CURRENT-066 remain OPEN / AMBIGUOUS; no winner selected. Preserve both lineages until semantic source reconciliation proves a resolution.
+- Full state recovery: OPEN / NOT RUN; reconstruct independently from IN and OUT.
+- Clean host import: OPEN / NOT RUN; a clean interactive AI-host session must import and recover the package.
+- Second-host import: OPEN / NOT RUN; second-host acceptance requires a separate receipt.
+- Restart persistence: OPEN / NOT VERIFIED; restart/new-session recovery must be demonstrated.
+- Idle/background capture: OPEN / NOT VERIFIED; automatic live message capture and idle/background capture require a real authorized producer.
+- Graph/identity/parent/time triage: OPEN / REVIEW_REQUIRED; duplicate IDs and ambiguous parents remain subject to source-based adjudication.
