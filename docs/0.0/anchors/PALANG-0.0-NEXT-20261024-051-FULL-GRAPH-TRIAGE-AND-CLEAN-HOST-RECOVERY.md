@@ -1197,3 +1197,46 @@ The owner requires one universal AI-host entry path and an initial runnable vers
 - Scope limit: this is one successful public full-text retrieval smoke test, not a multi-discipline coverage test, not a bulk extraction, not a login/borrow test, and not proof of a connected personal workspace or telemetry access.
 - Behavioral/interaction finding: the current BookReader codebase exposes a documented event-driven integration surface and iframe page/mode state notifications. This can support a separately deployed, transparent research workspace that logs only its own user-authorized actions. It does not prove that Internet Archive exposes private per-user reading histories or a public behavioral-analytics feed. The older Open Library “BookReader User Interactions” page is explicitly a proposed list from 2011 and must not be treated as current implemented behavior.
 - Initial status: PUBLIC READER DOCUMENTED; ONE FULL-TEXT ITEM OPENED; OCR QUALITY IMPERFECT; RIGHTS REVIEW REQUIRED; INTERACTIVE EMBED/API DOCUMENTED; MULTI-DISCIPLINE VALIDATION OPEN; PERSONAL WORKSPACE CONNECTION NOT ESTABLISHED; USER-LEVEL TELEMETRY NOT VERIFIED.
+
+
+---
+
+## MULTIDISCIPLINARY FULL-TEXT ACCESS AND INTERACTIVE WORKSPACE — EXECUTION EVIDENCE 2026-11-24
+
+### Method and evidence boundary
+This is a public-access smoke test of representative Internet Archive item pages and their exposed FULL TEXT/OCR files, not a census of the entire collection. The line counts below are the reader's exposed text-page lengths, not page counts or proof of OCR accuracy. No bulk download, account lending, private account history, or personal telemetry was attempted.
+
+### Representative sample results
+| Field | Work / Internet Archive identifier | Full-text or source evidence | Observed result and limitation |
+|---|---|---|---|
+| Agriculture | *Manual of general agriculture*, Edward P. Terry, 1912 — `manualofgenerala00terr` | Item: https://archive.org/details/manualofgenerala00terr ; FULL TEXT: https://archive.org/stream/manualofgenerala00terr/manualofgenerala00terr_djvu.txt | FULL TEXT opened (6,296 exposed text lines). Item metadata reports Tesseract 5.3.0, English OCR confidence 1.0000, page-number confidence 100, 138 pages. OCR is poor in early front matter but readable in substantive exercise sections; do not rate the entire file as clean. |
+| Psychology | *The human mind, a text-book of psychology*, James Sully, 1892 — `humanmindtextboo01sulluoft` | Item: https://archive.org/details/humanmindtextboo01sulluoft ; FULL TEXT: https://archive.org/stream/humanmindtextboo01sulluoft/humanmindtextboo01sulluoft_djvu.txt | FULL TEXT opened (22,678 exposed text lines). Item reports ABBYY-to-HOCR 1.1.11, 538 pages, page-number confidence 100, and a visible FULL TEXT download. Item metadata says NOT_IN_COPYRIGHT in its stated US context; this is not a universal legal opinion. |
+| Medicine | *A text-book of medicine: for students and practitioners*, Adolf von Strümpell, 1893 — `b28135970` | Item: https://archive.org/details/b28135970 ; FULL TEXT: https://archive.org/stream/b28135970/b28135970_djvu.txt | FULL TEXT opened (76,495 exposed text lines). Item reports ABBYY FineReader 11.0, 1,110 pages, page-number confidence 100. OCR errors are visible in title/front matter. Item has a Public Domain Mark rights label but also a note “Copyright in the title page”; preserve this rights caveat and do not infer unrestricted reuse. |
+| Economics | *Outlines of economics*, Richard T. Ely et al., 1916 — `cu31924013685858` | Item: https://archive.org/details/cu31924013685858 ; FULL TEXT: https://archive.org/stream/cu31924013685858/cu31924013685858_djvu.txt | FULL TEXT opened (40,387 exposed text lines). Item reports ABBYY FineReader 8.0, 796 pages, page-number confidence 100. The page exposes FULL TEXT, HOCR, OCR page index, page-number JSON and PDF. |
+| Engineering / history of technology | *Yantras or Mechanical Contrivances in Ancient India*, V. Raghavan, 1952 | PDF with extracted text: https://ia800105.us.archive.org/32/items/YantrasOrMechanicalContrivancesInAncientIndia/YantrasOrMechanicalContrivancesInAncientIndiar.Raghavan1952.pdf | The public PDF opened and its text layer was readable/searchable in the web reader. A matching Internet Archive item page and standalone OCR TXT were not independently verified in this pass; classify as PDF text-layer access only, not verified IA FULL TEXT OCR. |
+| Ornithology (existing first smoke test) | *The Bird Book*, Chester A. Reed, 1914 — `birdbookillustra00reedrich` | Item: https://archive.org/details/birdbookillustra00reedrich ; FULL TEXT previously opened at https://archive.org/stream/birdbookillustra00reedrich/birdbookillustra00reedrich_djvu.txt | Public FULL TEXT was readable with OCR defects. The item metadata and printed copyright notice conflict; reuse rights remain REVIEW REQUIRED. |
+
+### Reader / interactive workspace implementation
+- Existing HAIF interactive prototype was extended in place at `docs/architecture/interactive-prototype/index.html`; no parallel app, root, queue or automation was created.
+- Added a selectable set of five verified IA item identifiers, embedded Internet Archive BookReader iframe, direct item and OCR text links, consent-gated local event capture, manual search-term entry, user notes, and JSON export/clear controls.
+- The event listener accepts only `https://archive.org` messages from the exact embedded iframe and only the documented `bookReaderFragmentChange` type with a string fragment. The captured fragment contains page/mode state. Search terms are NOT read from the cross-origin iframe; the user must enter them manually after searching inside BookReader.
+- The user must actively check the consent box before any event is recorded. The local event ledger uses browser localStorage and exports only on explicit button action. No server upload, account-history access, cross-device sync, or persistent cloud storage is implemented.
+- BookReader source documentation: https://github.com/internetarchive/bookreader — v5 uses event-driven custom events; its iframe plugin sends reader state changes through `window.postMessage()`; documented message type `bookReaderFragmentChange` carries a page/mode fragment.
+- Deployment state: the existing Pages workflow deploys the repository root on pushes to main. The workspace remains CANDIDATE / NOT DEPLOYED until this PR is merged and a successful Pages deployment for the resulting main SHA is read back.
+
+### Acceptance status after this pass
+- PUBLIC ITEM PAGE / FULL TEXT: PASS for agriculture, psychology, medicine and economics.
+- SEARCHABLE PDF TEXT: PARTIAL for engineering; IA standalone OCR text not verified.
+- OCR QUALITY: MIXED; field-specific and page-specific review remains required.
+- BOOKREADER EMBED / PAGE-MODE EVENT CONTRACT: DOCUMENTED by upstream source; local listener implemented.
+- LOCAL CONSENT / EVENT LEDGER / JSON EXPORT: IMPLEMENTED in candidate branch; runtime browser test and deployed Pages verification still PENDING.
+- PRIVATE USER READING HISTORY / SERVER TELEMETRY: NOT AVAILABLE / NOT CLAIMED.
+- RIGHTS / REUSE: REVIEW EACH ITEM AND JURISDICTION; no blanket permission inferred.
+- FULL COLLECTION COVERAGE OR MAXIMUM-ACCESS CLAIM: NOT ESTABLISHED.
+
+### Deterministic next work within NEXT-051
+1. Read back the changed prototype and this evidence section from the candidate branch.
+2. Run the existing PR validation and audit workflows on the exact final candidate SHA; fix any failure.
+3. Obtain owner-directed integration of this owner-authored PR; then verify main HEAD, the exact Golden and NEXT file blobs, and Pages deployment.
+4. Open the deployed workspace in a real browser, consent explicitly, navigate between pages, verify accepted page-fragment messages, export JSON, and verify local-only behavior. If no browser runtime is available, keep runtime test PENDING.
+5. Continue sample expansion into other disciplines and languages only when each item has real full-text evidence, page provenance, OCR review and rights assessment.
