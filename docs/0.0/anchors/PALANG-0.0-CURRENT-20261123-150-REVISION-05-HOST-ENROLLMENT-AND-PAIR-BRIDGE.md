@@ -2,7 +2,7 @@
 
 - Stable family: CURRENT-150
 - Revision: 150.05
-- Status: ACTIVE / LIVING / GOLDEN-BRANCH-CANDIDATE / EXACT-SHA-VALIDATION-PENDING
+- Status: ACTIVE / LIVING / GOLDEN-BRANCH-CANDIDATE / EXACT-SHA-CONFORMANCE-PASS / OWNER-REVIEW-PENDING
 - Canonical root: [POINT-0/GOLDEN](GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md)
 - Parent candidate: [CURRENT-150.04](PALANG-0.0-CURRENT-20261123-150-REVISION-04-OWNER-REST-AUTONOMOUS-EXECUTION.md)
 - Accepted Golden parent remains: CURRENT-150.02 / NEXT-051.02 until owner-controlled merge.
@@ -69,3 +69,15 @@ This is a continuation of the single existing root and stable CURRENT/NEXT famil
 - Restart persistence: OPEN / NOT VERIFIED; restart/new-session recovery must be demonstrated.
 - Idle/background capture: OPEN / NOT VERIFIED; automatic live message capture and idle/background capture require a real authorized producer.
 - Graph/identity/parent/time triage: OPEN / REVIEW_REQUIRED; duplicate IDs and ambiguous parents remain subject to source-based adjudication.
+
+
+## Exact-SHA validation receipt — PR #145 candidate
+
+- PR head tested: `91318aa350832fdc685e21b689d7eea5476daff2`; synthetic merge commit used by the package build: `cb61ea3face4bc0b7325b542bccca1f90a3d47b2` (merge of this PR head into governance base `368608427516c502ec7cd6d377e7a1f7c25b8cc3`).
+- Living Architecture Audit run `45301053694`: PASS.
+- Portable RAHM Conformance run `45301053616`: PASS, including exact IN/OUT/Bridge graph, checkpoint equivalence, exact-byte manifest, RAHM archive build, starter ZIP rebuild, artifact download/read-back and extracted ZIP tests.
+- Interaction ledger validation and recovery run `45301053649`: PASS; schema validation and recovery from both IN and OUT passed.
+- RAHM Runtime Tests run `45301053707`: PASS; HAIF runtime, RAHM runtime, RAHM WOMB and host bridge allowlist build passed.
+- The candidate starter archive retained stable package identity `HAIF-GPT6-PORTABLE-STARTER-20261025-004`, internal version `0.5.2`, canonical filename and 19-file inventory. A downloaded extraction was independently rerun locally: 25/25 tests PASS.
+- Durable latest-verified Release publication was SKIPPED because this was a pull-request validation run. The artifact is a verified candidate, not a published release.
+- Independent real-host import/restart remains NOT RUN. CURRENT-150.02 / NEXT-051.02 remain the last accepted Golden revisions until owner-controlled merge.
