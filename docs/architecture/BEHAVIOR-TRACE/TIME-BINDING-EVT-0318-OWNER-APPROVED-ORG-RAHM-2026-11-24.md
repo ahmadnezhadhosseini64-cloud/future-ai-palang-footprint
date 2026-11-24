@@ -12,5 +12,7 @@
 - Registration branch: `proposal/org-rahm-host-development-model-20261124`.
 - Parent repository main SHA used by PR #158: `48decc4e07702b9f9197e37de6f8ba2ddebc0cf1`.
 - PR #158 remains OPEN / UNMERGED; this is proposal-branch evidence, not main publication.
-- The final-change commit time of this time-binding file itself is determined from its own Git commit metadata after creation; it is not inferred from the EVT-0318 commit.
+- Time-binding file final-change commit: `adeefd9498b404cd1cf0d7f16fe4ce39a17c77f0`; UTC `2026-11-24T06:29:29Z`; Tehran `2026-11-24T09:59:29+03:30`.
+- Time-binding file blob SHA at read-back: `57f30f51c8f43ee1fbeec70a075ce9d63d5a7daa`.
+- This timestamp is the file's own commit time, not the owner-message time.
 - Distinguish owner-message time, event registration commit time, time-binding file commit time, PR time and any later main merge time. Unknown values remain UNKNOWN.
