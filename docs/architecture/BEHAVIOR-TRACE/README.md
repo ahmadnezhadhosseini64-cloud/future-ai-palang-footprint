@@ -1,3 +1,13 @@
+## Latest user-turn event — EVT-0318 / CURRENT-146 (proposal branch; main publication pending)
+
+- [EVT-0318](./EVT-0318-OWNER-APPROVED-ORG-RAHM-OWNER-RELEASE-2026-11-24.md) → [TIME-BINDING-EVT-0318](./TIME-BINDING-EVT-0318-OWNER-APPROVED-ORG-RAHM-2026-11-24.md) → [CURRENT-146](../../0.0/anchors/PALANG-0.0-CURRENT-20261124-146-ORG-RAHM-OWNER-RELEASE.md) → sole active [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- Parent chain: CURRENT-145 → POINT-0/087 → IN-131 → OUT-130. This continues the single POINT-0/GOLDEN root; no parallel root or NEXT queue is created.
+- Event registration commit: `ff89d122668190c4a1b7142ac7e6e03bdb238cf2`, UTC `2026-11-24T06:29:21Z`, Tehran `2026-11-24T09:59:21+03:30`. Owner-message timestamp remains UNKNOWN / UNVERIFIED.
+- Proposal branch: `proposal/org-rahm-host-development-model-20261124`; PR #158 OPEN / UNMERGED. This is not main/Golden publication.
+- Organization, private RAHM, host repositories, App, broker and migration remain NOT CREATED / NOT VERIFIED.
+
+---
+
 ## Latest mirror-only event — EVT-0317 / POINT-0/GOLDEN
 
 - Event: [EVT-0317](./EVT-0317-LIVE-MIRROR-SYNC-RECHECK-2026-11-23.md) → [TIME-BINDING-EVT-0317](./TIME-BINDING-EVT-0317-LIVE-MIRROR-SYNC-RECHECK-2026-11-23.md).
