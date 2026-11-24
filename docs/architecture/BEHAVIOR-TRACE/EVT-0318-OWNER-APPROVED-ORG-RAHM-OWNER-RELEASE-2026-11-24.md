@@ -28,9 +28,9 @@ The owner explicitly approved the complete architecture and instructed the assis
 ## 3. Repository-side work
 
 - Added POINT-0/087, IN-131, OUT-130 and CURRENT-146 on the same continuation branch as PR #158.
-- Updated Host Security contract to v1.4.0 and RAHM README to v1.2.0.
+- Updated Host Security contract to v1.4.0, RAHM README to v1.2.0 and private RAHM provisioning template to Organization-first owner-only placement.
 - PR #158 remains open and unmerged. These changes are proposal-only until the owner approves publication.
-- The new anchor/event files are to be read back from the proposal branch before this event is considered repository-verified.
+- Exact fetch/read-back completed on the proposal branch for POINT-0/087 (blob `1ed896d0bd7d9c792d9dc38cdc37ddcd3692c4e9`), IN-131 (`a9a337b6cd1ea839fbd65f2664c2aec2cdef9253`), OUT-130 (`3c7086067d867dfb29a47c75ada09127d275b0b6`), CURRENT-146 (`e9d2bf9438af7520e40cbe036e9a8a75bb8cce95`), EVT-0318 (`782f3090dc503f0ecf6050f613a5c2ab05126d88`) and TIME-BINDING-EVT-0318 (`607652a305281ffe1b15218da434b6d8310adfe9`). Expected identity and key content markers were present.
 
 ## 4. Non-claims / open gates
 
