@@ -3,7 +3,7 @@
 - Latest chain: [CURRENT-151](../../0.0/anchors/PALANG-0.0-CURRENT-20261122-151-DEEP-EXCAVATION-AND-CASE-CONSOLIDATION.md) → [POINT-0/090](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261124-090-ORG-RAHM-OWNER-RELEASE.md) → [IN-134](../../0.0/anchors/PALANG-0.0-IN-20261124-134-ORG-RAHM-OWNER-RELEASE.md) → [OUT-133](../../0.0/anchors/PALANG-0.0-OUT-20261124-133-ORG-RAHM-OWNER-RELEASE.md) → [EVT-0321](../BEHAVIOR-TRACE/EVT-0321-OWNER-APPROVED-ORG-RAHM-OWNER-RELEASE-2026-11-24.md) → [TIME-BINDING-EVT-0321](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0321-OWNER-APPROVED-ORG-RAHM-2026-11-24.md) → [CURRENT-152](../../0.0/anchors/PALANG-0.0-CURRENT-20261124-152-ORG-RAHM-OWNER-RELEASE.md).
 - POINT-0/GOLDEN remains the sole canonical root; NEXT-051 remains the sole active queue.
 - Owner-approved: Organization-first migration; separate PRIVATE central RAHM; one PRIVATE development repo per verified host; host development authority separated from owner release authority; three protection layers.
-- Branch `point0-090-org-rahm-owner-release-20261124` is based on CURRENT-151. Golden/main publication pending.
+- PR #159 merged into CURRENT-151 Golden working branch as `3d1dd8baed7f0ff1ebc2a12daa53786d2e16e4b8`; main publication pending. CI/exact-Golden verification remains NOT VERIFIED.
 - Organization, RAHM, host repositories, App/broker and migration remain NOT CREATED / NOT VERIFIED. No host is ACTIVE.
 
 ---
@@ -135,7 +135,7 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.10.56
+- Version: 1.10.57
 - Date: 2026-11-21
 - Exact Time: EVT-0261 event commit UTC `2026-11-10T06:47:53Z` / Tehran `2026-11-10T10:17:53+03:30`; initial time-binding commit UTC `2026-11-10T06:48:18Z` / Tehran `2026-11-10T10:18:18+03:30`.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
