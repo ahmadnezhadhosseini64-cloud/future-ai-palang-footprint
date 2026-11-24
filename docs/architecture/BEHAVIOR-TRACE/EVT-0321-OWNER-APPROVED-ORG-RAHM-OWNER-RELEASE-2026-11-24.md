@@ -29,7 +29,7 @@ The owner approved the Organization-first plan, mandatory separate private centr
 
 ## 3. Repository-side work
 
-This event records a proposal based on CURRENT-151. New point/input/output/current anchors and architecture changes are written to a branch rooted at CURRENT-151. They are not yet published to Golden or main.
+This event records a proposal based on CURRENT-151. New point/input/output/current/time-binding anchors, security/RAHM/workspace/registry architecture, living mother and indexes were written to a branch rooted at CURRENT-151. Exact fetch/read-back of the new anchors and key architecture/index files confirmed expected identities, versions and continuation markers. They are not yet published to Golden or main.
 
 ## 4. Evidence boundary
 
