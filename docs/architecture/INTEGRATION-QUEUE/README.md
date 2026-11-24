@@ -1,3 +1,14 @@
+## Current continuation pointer — POINT-0/GOLDEN / CURRENT-146 / NEXT-051
+
+- Latest user-turn event: [EVT-0318](../BEHAVIOR-TRACE/EVT-0318-OWNER-APPROVED-ORG-RAHM-OWNER-RELEASE-2026-11-24.md) → [TIME-BINDING-EVT-0318](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0318-OWNER-APPROVED-ORG-RAHM-2026-11-24.md) → [CURRENT-146](../../0.0/anchors/PALANG-0.0-CURRENT-20261124-146-ORG-RAHM-OWNER-RELEASE.md).
+- Parent: CURRENT-145 → POINT-0/087 → IN-131 → OUT-130. Same canonical POINT-0/GOLDEN root; no parallel root or queue.
+- Latest mirror-only event remains EVT-0317 → TIME-BINDING-EVT-0317; it is preserved separately from this user-turn event.
+- Proposal branch `proposal/org-rahm-host-development-model-20261124`; PR #158 OPEN / UNMERGED. Current changes are proposal-only, not main publication.
+- NEXT-051 remains the sole active queue. Organization, private central RAHM, host repositories, App/broker and migration remain NOT CREATED / NOT VERIFIED.
+- Main's previously read Ruleset 27814009 had approval count 0 and Code Owner review OFF; owner approval enforcement is OPEN until configured and read back.
+
+---
+
 ## Current continuation pointer — POINT-0/GOLDEN / CURRENT-145 / NEXT-051
 
 - Latest user-turn event: [EVT-0314](../BEHAVIOR-TRACE/EVT-0314-OWNER-APPROVED-INDEPENDENT-PARTNER-API-MCP-BRIDGE-BOOTSTRAP-2026-11-22.md) → [TIME-BINDING-EVT-0314](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0314-OWNER-APPROVED-PARTNER-BRIDGE-2026-11-22.md) → [CURRENT-145](../../0.0/anchors/PALANG-0.0-CURRENT-20261122-145-POINT-0-PLUSPLUS-PARTNER-BRIDGE-BOOTSTRAP.md).
@@ -79,8 +90,8 @@
 ## شناسنامه
 - Stable ID: ARCHITECTURE-INTEGRATION-QUEUE-2026-10-12-001
 - Production ID: AIQ-2026-10-12-001
-- Version: 1.10.57
-- Date: 2026-11-21
+- Version: 1.10.58
+- Date: 2026-11-24
 - Exact Time: EVT-0261 event commit UTC `2026-11-10T06:47:53Z` / Tehran `2026-11-10T10:17:53+03:30`; initial time-binding commit UTC `2026-11-10T06:48:18Z` / Tehran `2026-11-10T10:18:18+03:30`.
 - Timezone: Asia/Tehran (منطقهٔ زمانی پروژه؛ زمان دقیق اجرا ثبت نشده)
 - Owner: Ahmad Nezhadhosseini / احمد پلنگ
