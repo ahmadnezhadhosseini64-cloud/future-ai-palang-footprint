@@ -4,11 +4,13 @@
 - Revision: 051.05
 - Status: ACTIVE / LIVING / GOLDEN-BRANCH-CANDIDATE
 - Parent candidate: NEXT-051.04
-- Current candidate: CURRENT-150.05
-- Input/Bridge/Output: IN-138 → BRIDGE-0138 → OUT-137
-- Event: EVT-0325 → TIME-BINDING-EVT-0325
-- Root: POINT-0/GOLDEN
+- Current candidate: [CURRENT-150.05](PALANG-0.0-CURRENT-20261123-150-REVISION-05-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md)
+- Input/Bridge/Output: [IN-138](PALANG-0.0-IN-20261123-138-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md) → [BRIDGE-0138](PALANG-0.0-BRIDGE-20261123-0138-IN-138-OUT-137.md) → [OUT-137](PALANG-0.0-OUT-20261123-137-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md)
+- Event: [EVT-0325](../../architecture/BEHAVIOR-TRACE/EVT-0325-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE-2026-11-23.md) → [TIME-BINDING-EVT-0325](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0325-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE-2026-11-23.md)
+- Root: [POINT-0/GOLDEN](GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md)
 - No NEXT-052 or parallel queue.
+
+- Historical mirror continuity: [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) and [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md); preserved evidence only.
 
 ## Priority A — finish this interaction pair
 - Read back all records and verify all edges.
@@ -103,3 +105,19 @@ Before any owner-side setup, the assistant must:
 4. Ask for only the single missing owner action that is essential for the next chosen capability.
 
 No new private repository is requested merely to let a host read the public master. No App, token, API key or secret is requested before the capability check. If the host can work locally but cannot persist or write back, it returns a proposal/export for owner review.
+
+
+## Priority J — one canonical HAIF MVP runtime and package integration
+
+- PR #147 proposes `scripts/haif-runtime/` as the single dependency-free HAIF MVP and archives the former FastAPI/SQLite prototype reversibly. Its checkpoint-prefix correction and runtime tests pass on its own PR head; it is still an unmerged candidate.
+- PR #145 adds the IN/OUT/BRIDGE identity, pair verification and reverse lookup to the same runtime path. Both PRs modify `scripts/haif-runtime/haif_runtime.py` and its tests; do not merge them independently or lose either capability.
+- Reconcile the checkpoint-prefix validation from #147 with the Bridge/pair implementation from #145 in one candidate branch, add a regression test for append-after-checkpoint, then run the full runtime suite and exact-head architecture/portable conformance.
+- Keep one active runtime only. Preserve the former implementation as a recoverable archive; do not create a competing second core.
+
+## Priority K — deliver the one-message + one-package handoff
+
+- Canonical copyable host message: `prototype/haif-gpt6-starter/ONE_MESSAGE_HOST_BOOTSTRAP_FA.md`; keep the universal-host entry aligned as a compatibility/reference surface, not a second competing workflow.
+- Canonical ZIP identity and filename remain unchanged: `haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip`; internal package version is 0.5.2. Rebuild that same identity from the living mother and current references.
+- Required before calling it transferable: exact-source build receipt, SHA-256, inventory, safe extraction/CRC, all extracted tests, mother/package byte or semantic read-back, exact-head audit and portable conformance.
+- The first real-host test is one paste of the canonical message. The host must return the defined receipt; no official Host ID or ACTIVE status before owner review and independent evidence.
+- Current candidate files remain on PR #145 until owner-controlled Golden acceptance. The published latest-verified release and clean-host recovery must not be claimed from a temporary workflow artifact.
