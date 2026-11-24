@@ -1,9 +1,9 @@
 # معماری امنیتی میزبان‌های مستقل و مخزن مادر فقط‌مالک
 
 - Stable ID: HAIF-OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOS-2026-11-21-001
-- Version: 1.3.0
+- Version: 1.4.0
 - Status: OWNER-DIRECTED / DESIGN APPROVED / IMPLEMENTATION PARTIAL
-- Parent: POINT-0/GOLDEN → CURRENT-140 → NEXT-051
+- Parent: POINT-0/GOLDEN → CURRENT-145 → NEXT-051
 - Canonical root: POINT-0 only
 - Canonical master repository: ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
 - Owner: repository owner only
@@ -252,3 +252,73 @@ The canonical authority is POINT-0/GOLDEN / CURRENT-140. This section supersedes
 ## 17. Owner connector is not a host permission
 
 The current ChatGPT GitHub integration is authenticated as the owner account and has admin/push permission on this repository. It is not a host credential and must not be shared with any new Host Node or placed in a host workspace. Its exposed tool surface does not include Ruleset writes, private-repository creation, GitHub App creation, or complete collaborator/App/deploy-key inventory. A user instruction authorizes permitted actions but does not bypass these capability boundaries or GitHub's rule that a PR author cannot approve their own PR. Private RAHM access is separate and not granted merely by connecting the public master.
+
+
+## 18. تصمیم مالک — Organization، سه لایه حفاظت و اختیار توسعهٔ واقعی میزبان‌ها — 2026-11-24
+
+- Decision status: OWNER-APPROVED DESIGN / IMPLEMENTATION NOT YET VERIFIED.
+- Canonical lineage: POINT-0/GOLDEN → CURRENT-145 → sole active NEXT-051. This is an extension of the existing security contract; it creates no new root, checkpoint family, or parallel queue.
+- This section is the latest owner-approved interpretation wherever older wording is ambiguous. It does not grant any host access to MASTER or to the central owner-only RAHM repository.
+
+### 18.1 GitHub Organization decision
+
+The owner-approved migration target is a GitHub Organization. The current personal account and canonical master repository must not be changed or transferred prematurely.
+
+The sequence is:
+1. Create and configure the Organization while the current personal repository remains intact.
+2. Establish organization-level rulesets and verify the effective permissions and owner roles.
+3. Create the separate private central RAHM repository inside the intended Organization, or explicitly record the chosen owner location before provisioning.
+4. Create and test isolated private development repositories for hosts.
+5. Audit Pages, Actions, secrets, Apps, OAuth connections, repository URLs, collaborators, deploy keys, rulesets, releases and recovery.
+6. Only after the dry-run and rollback plan pass, transfer the master repository while preserving its Git history; then read back the repository, main SHA, Pages, workflows, protections and integrations.
+
+A GitHub Organization is a container and governance boundary, not a replacement for an Administrator role. Organization Owners retain powerful administrative authority. The initial low-dependency model is the project owner as Organization Owner and sole release authority. Under this model the owner can still deliberately change organization rules. If the owner later requires protection against unilateral rule changes by the owner account itself, a separate trusted security custodian or external multi-party control must be appointed; that custodian must not receive MASTER release authority. This independent custodian is NOT appointed by this decision.
+
+### 18.2 Three independent protection layers
+
+1. OWNER IDENTITY: the owner's GitHub identity is protected with passkey/security key or strong MFA, secured recovery methods, and regular session/OAuth/App audits. A conversational phrase or public name is not cryptographic authentication.
+2. SECOND SECRET: the owner's second confidential secret remains outside GitHub repositories, prompts, chats, logs, ZIPs, workflows and ordinary project documents. It is never requested, inferred, repeated or stored by a host.
+3. RELEASE AUTHORITY: only the owner may authorize promotion to the canonical MASTER. Enforce with organization/repository rulesets, CODEOWNERS, required independent review, stale-approval dismissal, review-thread resolution, signed/hash-bound receipts and explicit owner-controlled promotion. A passing test or host proposal is not release approval.
+
+These layers reduce accidental and unauthorized changes but do not make a compromised owner account, organization owner, endpoint or App private key invulnerable.
+
+### 18.3 Development authority versus release authority
+
+- HOST = DEVELOPMENT AUTHORITY within its own owner-provisioned isolated private workspace.
+- OWNER = RELEASE AUTHORITY for central RAHM acceptance and every MASTER promotion.
+- A host must be able to create and edit documents, code, tests, branches and proposal packages in its own workspace, run validation, preserve evidence and submit a complete candidate. It is not limited to report-only output.
+- Every host receives a separate private repository mapped server-side to one verified Host ID and Workspace ID. No shared host workspace, shared write token, or cross-host read/write access is allowed.
+- A host's repository permission never extends to the master, the central RAHM repository, another host's repository, Organization settings, repository administration, secrets, Actions administration, rulesets, webhooks, transfer or deletion.
+- Host-originated material reaches central RAHM only through owner-commanded export, review and redaction. An optional broker may be considered later only for a single host repository and only after threat modeling, least-privilege App scope, revocation and negative tests. It must not have master write scope or central RAHM write scope.
+- The central RAHM repository remains PRIVATE and owner-controlled. It is the integration, quarantine, cross-host reconciliation and validation environment; it is not a shared writable folder for hosts.
+- GitHub repository permissions are repository-scoped, not folder-scoped. Giving a host write access to a central RAHM repository cannot safely confine that host to a single folder. Therefore per-host private repositories are the approved development boundary.
+
+### 18.4 Canonical flow
+
+`MASTER/GOLDEN → VERIFIED READ-ONLY SNAPSHOT → HOST PRIVATE DEVELOPMENT REPOSITORY → PROPOSAL + TESTS + RECEIPTS → OWNER EXPORT/REDACTION → CENTRAL PRIVATE RAHM → CROSS-HOST RECONCILIATION + VALIDATION → OWNER REVIEW → EXPLICIT OWNER RELEASE → MASTER`
+
+No automatic promotion is permitted. CHILD acceptance, RAHM validation, a successful test, or a bot-authored PR is not by itself authorization to update MASTER.
+
+### 18.5 Required negative tests before host activation
+
+- Host A can create/edit/test in Host A repository.
+- Host A cannot read or write Host B repository.
+- Host A cannot read or write central RAHM.
+- Host A cannot write, branch, PR, issue, release, change settings or bypass protections in MASTER.
+- Revoked/expired host access fails immediately after revocation.
+- A host cannot select or override its destination repository, Host ID, Workspace ID, branch or path.
+- Organization/repository administration and release permissions are absent from host identities and host Apps.
+- Owner export/import preserves provenance, source commit, timestamps, manifest and SHA-256; invalid or unredacted material is rejected.
+- No host proposal can become MASTER without an explicit owner release action.
+
+### 18.6 Implementation status
+
+- Organization creation/configuration: NOT STARTED / OWNER ACTION REQUIRED.
+- Organization-level rulesets and owner-role audit: NOT CONFIGURED / NOT VERIFIED.
+- Central private RAHM repository: NOT CREATED / NOT VERIFIED.
+- Per-host private development repositories: NOT CREATED / NOT VERIFIED.
+- Host App/broker: NOT DEPLOYED; optional and disabled by default.
+- Migration dry-run and rollback: NOT RUN.
+- No host is ACTIVE on the basis of this design alone.
+
+This decision authorizes preparation and verification of the architecture. It does not claim that an Organization, RAHM repository, host workspace, App, broker, or migration has already been created.
