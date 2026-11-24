@@ -2,7 +2,7 @@
 
 ## Current execution pointer — POINT-0/GOLDEN / CURRENT-152 / NEXT-051
 
-- Canonical root: POINT-0/GOLDEN (single existing POINT-0 root); current proposal checkpoint: CURRENT-152; parent: CURRENT-151; latest user-turn event: EVT-0321; sole active queue: NEXT-051.
+- Canonical root: POINT-0/GOLDEN (single existing POINT-0 root); current checkpoint: CURRENT-152; parent: CURRENT-151; latest user-turn event: EVT-0321; sole active queue: NEXT-051.
 - PR #159 merged CURRENT-152 into `work/current151-exact-golden-verify-20261122` as `3d1dd8baed7f0ff1ebc2a12daa53786d2e16e4b8` (UTC 2026-11-24T06:38:33Z). Main/MASTER publication remains pending; CI/exact-Golden verification is NOT VERIFIED.
 - This is a continuation on the same root and same queue. No new root, MASTER or NEXT queue is created.
 - Organization, central private RAHM, host-private repositories, App/broker and master transfer remain NOT CREATED / NOT VERIFIED.
