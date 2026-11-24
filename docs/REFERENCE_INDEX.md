@@ -4,7 +4,7 @@
 
 - Parent: CURRENT-151 → POINT-0/090 → IN-134 → OUT-133 → EVT-0321 → TIME-BINDING-EVT-0321 → CURRENT-152 → sole NEXT-051.
 - Owner-approved decisions: Organization-first migration; separate PRIVATE owner-only central RAHM; one isolated PRIVATE development repo per verified host; HOST development authority; OWNER release authority; three protection layers.
-- Proposal branch: `point0-090-org-rahm-owner-release-20261124`, based on CURRENT-151 branch `work/current151-exact-golden-verify-20261122`. Not yet merged into Golden/main.
+- PR #159 merged CURRENT-152 into the CURRENT-151 Golden working branch `work/current151-exact-golden-verify-20261122` as `3d1dd8baed7f0ff1ebc2a12daa53786d2e16e4b8`. Main/MASTER publication remains pending; CI/exact-Golden verification is NOT VERIFIED.
 - Organization, RAHM, host repositories, App/broker and migration remain NOT CREATED / NOT VERIFIED. No host is ACTIVE.
 
 ---

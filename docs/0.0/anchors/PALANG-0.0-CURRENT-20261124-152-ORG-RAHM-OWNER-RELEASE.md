@@ -1,7 +1,7 @@
 # CURRENT-152 — POINT-0++ / Organization-first and owner-controlled RAHM architecture
 
 - Stable ID: HAIF-CURRENT-152-ORG-RAHM-OWNER-RELEASE-2026-11-24
-- Status: ACTIVE / OWNER-APPROVED / PROPOSAL-BRANCH / SOURCE-READ-BACK-VERIFIED / IMPLEMENTATION-PARTIAL
+- Status: ACTIVE / OWNER-APPROVED / GOLDEN-WORKING-BRANCH-MERGED / SOURCE-READ-BACK-VERIFIED / CI-NOT-VERIFIED / MAIN-PUBLICATION-PENDING / IMPLEMENTATION-PARTIAL
 - Canonical root: POINT-0
 - Golden baseline: POINT-0/GOLDEN
 - Parent: CURRENT-151 → POINT-0/090 → IN-134 → OUT-133 → EVT-0321 → TIME-BINDING-EVT-0321
@@ -31,3 +31,14 @@
 
 ## Non-claims
 Organization, central RAHM, host repos, App/broker and master transfer are NOT CREATED / NOT VERIFIED. Ruleset enforcement is not complete. No host is ACTIVE. This checkpoint is proposal-only until merged into the existing Golden lineage and read back.
+
+
+## Golden working branch publication receipt
+
+- PR #159: MERGED.
+- Target branch: `work/current151-exact-golden-verify-20261122`.
+- Merge commit: `3d1dd8baed7f0ff1ebc2a12daa53786d2e16e4b8`.
+- Commit time: UTC `2026-11-24T06:38:33Z`; Tehran `2026-11-24T10:08:33+03:30`.
+- Main/MASTER publication: NOT PERFORMED.
+- Workflow runs on the merge commit: none returned. CI and exact-Golden conformance remain NOT VERIFIED.
+- PR #158: CLOSED / SUPERSEDED / UNMERGED; it was based on the stale CURRENT-145 pointer and duplicate identifiers.

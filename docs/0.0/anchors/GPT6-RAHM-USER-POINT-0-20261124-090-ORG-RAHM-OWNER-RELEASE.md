@@ -1,7 +1,7 @@
 # POINT-0/090 (0++) — Organization-first، RAHM مستقل و اختیار توسعهٔ واقعی میزبان
 
 - Stable ID: HAIF-POINT-0-090-ORG-RAHM-OWNER-RELEASE-2026-11-24
-- Status: OWNER-APPROVED / PROPOSAL-BRANCH / READ-BACK-PENDING
+- Status: OWNER-APPROVED / GOLDEN-WORKING-BRANCH-MERGED / READ-BACK-VERIFIED / MAIN-PUBLICATION-PENDING
 - Canonical root: POINT-0 (single existing root)
 - Golden baseline: POINT-0/GOLDEN
 - Parent checkpoint: CURRENT-151
@@ -107,7 +107,7 @@ GitHub permission مرز repository است، نه پوشه. به میزبان د
 - Host App/broker: NOT DEPLOYED; disabled until security tests pass.
 - Existing main Ruleset 27814009: last known approvals=0 and Code Owner review=false; owner review enforcement remains OPEN.
 - Master transfer: NOT STARTED.
-- This point is a proposal on a branch based on CURRENT-151; it is not yet published to Golden/main.
+- PR #159 merged to `work/current151-exact-golden-verify-20261122` as `3d1dd8baed7f0ff1ebc2a12daa53786d2e16e4b8`; GitHub commit time UTC `2026-11-24T06:38:33Z`, Tehran `2026-11-24T10:08:33+03:30`. This is the Golden working branch only. Main/MASTER publication remains pending. No workflow runs were returned for the merge commit; CI/exact-Golden conformance is NOT VERIFIED.
 - No host is ACTIVE; no independent-host recovery is claimed.
 
 ## 6. Canonical continuation

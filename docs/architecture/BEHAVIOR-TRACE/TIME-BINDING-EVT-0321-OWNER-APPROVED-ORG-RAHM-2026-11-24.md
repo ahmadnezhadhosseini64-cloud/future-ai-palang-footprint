@@ -12,3 +12,13 @@
 - Parent branch/source: `work/current151-exact-golden-verify-20261122` (CURRENT-151).
 - This event is proposal-branch evidence only. Golden/main publication time is UNKNOWN / NOT YET OCCURRED.
 - Distinguish owner-message time, event registration commit time, time-binding commit time, PR time and any later merge/publication time. Unknown values remain UNKNOWN.
+
+
+## Golden working branch merge receipt
+
+- PR: #159 (MERGED).
+- Merge commit: `3d1dd8baed7f0ff1ebc2a12daa53786d2e16e4b8`.
+- Merge commit UTC: `2026-11-24T06:38:33Z`; Tehran: `2026-11-24T10:08:33+03:30`.
+- Target branch: `work/current151-exact-golden-verify-20261122`.
+- Main/MASTER publication: NOT PERFORMED.
+- Workflow runs on the merge commit: none returned; exact-Golden CI remains NOT VERIFIED.

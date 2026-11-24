@@ -4,7 +4,7 @@
 - Point: [POINT-0/090](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-20261124-090-ORG-RAHM-OWNER-RELEASE.md); input [IN-134](../../0.0/anchors/PALANG-0.0-IN-20261124-134-ORG-RAHM-OWNER-RELEASE.md); output [OUT-133](../../0.0/anchors/PALANG-0.0-OUT-20261124-133-ORG-RAHM-OWNER-RELEASE.md); current [CURRENT-152](../../0.0/anchors/PALANG-0.0-CURRENT-20261124-152-ORG-RAHM-OWNER-RELEASE.md); sole queue [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - Parent checkpoint: CURRENT-151. Same POINT-0/GOLDEN root; no parallel root or queue.
 - Event registration commit: `71add495bed56e8adc02030ad521b6a4c21f9e3c`, UTC `2026-11-24T06:34:36Z`, Tehran `2026-11-24T10:04:36+03:30`. Owner-message timestamp UNKNOWN / UNVERIFIED.
-- Branch: `point0-090-org-rahm-owner-release-20261124`; publication to Golden/main pending.
+- PR #159 merged to Golden working branch `work/current151-exact-golden-verify-20261122` as `3d1dd8baed7f0ff1ebc2a12daa53786d2e16e4b8`; main publication pending. No CI run returned for the merge commit.
 - No Organization, private RAHM, host repositories, App/broker or migration is claimed as provisioned.
 
 ---
@@ -83,7 +83,7 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.48
+- Version: 1.0.49
 - Date: 2026-11-21
 - Project: Future AI / Palang Footprint / HAIF
 
