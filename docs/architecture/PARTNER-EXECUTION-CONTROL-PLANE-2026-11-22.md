@@ -1,3 +1,14 @@
+## CURRENT-150.05 amendment — simplify first-host entry and avoid unnecessary infrastructure
+
+- First-host onboarding is PUBLIC READ + one-message receipt. It requires no new repository, private service, Cloudflare deployment, GitHub App, OAuth or OpenAI API project.
+- The host may use the existing portable starter in its own private runtime if code execution and persistence are actually available. If not, it returns NOT AVAILABLE / NOT TESTED; the owner is not asked to provision infrastructure before that capability check.
+- If authenticated GitHub tools are later required and the host client supports remote MCP, evaluate GitHub's official remote MCP endpoint/toolsets first. Do not build a custom GitHub MCP server by default.
+- OpenAI Responses API + official GitHub remote MCP is a candidate for a separately operated AI host. A thin owner broker is needed only for owner-only actions the official MCP does not expose.
+- Private RAHM, App installation, hosting, secret storage and promotion automation remain optional elevated capabilities, not prerequisites for the first host to read the public master and work locally.
+- Current pair: IN-138 ↔ BRIDGE-0138 ↔ OUT-137 → EVT-0325 → CURRENT-150.05 → NEXT-051.05. PR #145 remains open/unmerged; accepted Golden remains CURRENT-150.02 / NEXT-051.02.
+
+---
+
 ## CURRENT-151 continuation — 2026-11-22
 
 - Current checkpoint: CURRENT-151 / POINT-0/089; sole queue NEXT-051.

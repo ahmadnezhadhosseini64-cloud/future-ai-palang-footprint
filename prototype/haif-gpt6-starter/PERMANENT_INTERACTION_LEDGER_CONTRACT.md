@@ -1,15 +1,23 @@
+## Current canonical continuation — 2026-11-23 (candidate)
+
+`POINT-0/GOLDEN → IN-138 → BRIDGE-0138 → OUT-137 → EVT-0325 → TIME-BINDING-EVT-0325 → CURRENT-150.05 → NEXT-051.05`
+
+The last accepted Golden state remains CURRENT-150.02 / NEXT-051.02. The .05 continuation is a candidate until exact-SHA audit, Portable RAHM Conformance, and controlled Golden merge/read-back succeed. The living mother remains version 1.8.4 and authoritative; packages and tests align forward. No downgrade, new root, parallel queue, host write to MASTER, or host access to RAHM is permitted.
+
+---
+
 # Permanent Interaction Ledger — HAIF / RAHM
 
-- Package version: 0.4.8 (historical contract snapshot; current starter candidate is 0.5.1)
+- Package version: 0.4.8 (historical contract snapshot; current starter candidate is 0.5.2)
 - Governing baseline: POINT-0/GOLDEN / CURRENT-150.02 (ACTIVE / LIVING); CURRENT-151 remains a preserved historical transition snapshot.
 - Current continuation pointer: POINT-0/GOLDEN → CURRENT-150.01 → IN-135 → OUT-134 → EVT-0322 → TIME-BINDING-EVT-0322 → CURRENT-150.02 → NEXT-051.02
 - Historical chain preserved in the body: POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051
 
 ## 1. What is permanent
-Every actual interaction received from a registered host through the authorized producer/adapter must be represented by a durable IN/OUT pair or an explicit gap/failure record. Each pair is append-only and linked to its parent point/event and the exact master revision used by that host.
+Every actual interaction received from a registered host through the authorized producer/adapter must be represented by a durable IN/BRIDGE/OUT triplet or an explicit gap/failure record. The Bridge must bind the matching input_id and output_id to the same event_id and parent event hash; mismatched links are rejected. Each pair is append-only and linked to its parent point/event and the exact master revision used by that host.
 
 Required fields include:
-- input_id and output_id;
+- input_id, bridge_id and output_id;\n- a Bridge object binding the exact input_id/output_id pair to the same event_id and parent event hash;
 - host_id and pseudonymous host_session_id;
 - event_id, parent_point_id, parent_event_id and checkpoint_id;
 - master_commit_sha, master_version and adapter_version;

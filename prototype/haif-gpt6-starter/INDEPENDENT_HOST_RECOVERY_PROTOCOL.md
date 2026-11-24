@@ -1,7 +1,15 @@
+## Current canonical continuation — 2026-11-23 (candidate)
+
+`POINT-0/GOLDEN → CURRENT-150.04 → IN-138 → BRIDGE-0138 → OUT-137 → EVT-0325 → TIME-BINDING-EVT-0325 → CURRENT-150.05 → NEXT-051.05`
+
+The last accepted Golden state remains CURRENT-150.02 / NEXT-051.02. The .05 continuation is a candidate until exact-SHA audit, Portable RAHM Conformance, and controlled Golden merge/read-back succeed. The living mother remains version 1.8.4 and authoritative; packages and tests align forward. No downgrade, new root, parallel queue, host write to MASTER, or host access to RAHM is permitted.
+
+---
+
 # POINT-0/GOLDEN — current portable host contract
 
 - Living master: 1.8.2
-- Package version: 0.5.1 candidate
+- Package version: 0.5.2 candidate
 - Current chain: POINT-0/GOLDEN → CURRENT-150.01 → IN-135 → OUT-134 → EVT-0322 → TIME-BINDING-EVT-0322 → CURRENT-150.02 → NEXT-051.02
 - Master access for hosts: PUBLIC READ ONLY; no direct or indirect host write path.
 - RAHM: central, private, owner-only, outside host workspaces; only owner-commanded export is permitted.
@@ -10,8 +18,8 @@
 
 # Independent-host recovery proof protocol
 
-Package version: 0.5.1 candidate
-Latest canonical chain: POINT-0/GOLDEN → CURRENT-150.01 → IN-135 → OUT-134 → EVT-0322 → TIME-BINDING-EVT-0322 → CURRENT-150.02 → NEXT-051.02
+Package version: 0.5.2 candidate
+Latest candidate chain: POINT-0/GOLDEN → CURRENT-150.04 → IN-138 → BRIDGE-0138 → OUT-137 → EVT-0325 → TIME-BINDING-EVT-0325 → CURRENT-150.05 → NEXT-051.05. Last accepted Golden: CURRENT-150.02 / NEXT-051.02.
 The current point is POINT-0/GOLDEN on the existing canonical root; follow UNIVERSAL_AI_HOST_ENTRY_FA.md for model/platform-neutral entry.
 Project: Future AI / Palang Footprint
 Preserved historical baseline chain: POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051. Prior chain POINT-0/071 → IN-114 → OUT-113 → EVT-0289 → TIME-BINDING-EVT-0289 → CURRENT-124 is preserved as parent history. Prior chain POINT-0/066 → CURRENT-119 → POINT-0/067 → IN-110 → OUT-109 → EVT-0285 → TIME-BINDING-EVT-0285 → CURRENT-120 → POINT-0/068 → IN-111 → OUT-110 → EVT-0286 → TIME-BINDING-EVT-0286 → CURRENT-121 → POINT-0/069 → IN-112 → OUT-111 → EVT-0287 → TIME-BINDING-EVT-0287 → CURRENT-122 → POINT-0/074 → IN-117 → OUT-116 → EVT-0293 → TIME-BINDING-EVT-0293 → CURRENT-127 → NEXT-051 is preserved as parent history.

@@ -1,3 +1,11 @@
+## Current canonical continuation — 2026-11-23 (candidate)
+
+`POINT-0/GOLDEN → IN-136 → OUT-135 → EVT-0323 → TIME-BINDING-EVT-0323 → CURRENT-150.03 → NEXT-051.03`
+
+The last accepted Golden state remains CURRENT-150.02 / NEXT-051.02. The .03 continuation is a candidate until exact-SHA audit, Portable RAHM Conformance, and controlled Golden merge/read-back succeed. The living mother remains version 1.8.4 and authoritative; packages and tests align forward. No downgrade, new root, parallel queue, host write to MASTER, or host access to RAHM is permitted.
+
+---
+
 # First interactive GPT-6 host — acceptance checklist
 
 > Compatibility checklist only. Current universal entry and chain are governed by UNIVERSAL_AI_HOST_ENTRY_FA.md and Reference Index: POINT-0/077 → CURRENT-130 → POINT-0/078 → IN-121 → OUT-120 → EVT-0298 → TIME-BINDING-EVT-0298 → CURRENT-131 → POINT-0/079 → IN-122 → OUT-121 → EVT-0299 → TIME-BINDING-EVT-0299 → CURRENT-132 → NEXT-051. Package target 0.4.8; living master 1.7.87.

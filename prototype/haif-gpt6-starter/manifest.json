@@ -2,7 +2,7 @@
   "package_schema": "haif-gpt6-starter/0.1",
   "stable_id": "HAIF-GPT6-PORTABLE-STARTER-20261025-004",
   "production_id": "HAIF-G6PS-20261025-004",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "supersedes": "0.5.0",
   "project": "Future AI / Palang Footprint",
   "canonical_repository": "https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint",
@@ -217,7 +217,6 @@
     "EVT-0309",
     "TIME-BINDING-EVT-0309",
     "CURRENT-140",
-    "NEXT-051 (sole active queue)",
     "CURRENT-149",
     "POINT-0/088",
     "IN-132",
@@ -244,7 +243,21 @@
     "EVT-0322",
     "TIME-BINDING-EVT-0322",
     "CURRENT-150.02 (candidate)",
-    "NEXT-051.02 (candidate)"
+    "NEXT-051.02 (candidate)",
+    "POINT-0/GOLDEN",
+    "IN-136",
+    "OUT-135",
+    "EVT-0323",
+    "CURRENT-150.03",
+    "NEXT-051.03",
+    "CURRENT-150.04",
+    "IN-138",
+    "BRIDGE-0138",
+    "OUT-137",
+    "EVT-0325",
+    "TIME-BINDING-EVT-0325",
+    "CURRENT-150.05",
+    "NEXT-051.05"
   ],
   "entrypoint": "engine.py",
   "host_instructions": "GPT6_HOST_INSTRUCTIONS.md",
@@ -340,8 +353,8 @@
     "update_mode": "REBUILD_IN_PLACE_SAME_PACKAGE_IDENTITY",
     "do_not_publish_separate_version_named_zip": true,
     "historical_v0_3_0_digest_is_not_current": true,
-    "current_internal_version": "0.5.1",
-    "supersedes": "0.5.0",
+    "current_internal_version": "0.5.2",
+    "supersedes": "0.5.1",
     "latest_delivery_contract": "LATEST-VERIFIED-EXPORT-AND-ON-DEMAND-DELIVERY-CONTRACT.md"
   },
   "host_acceptance_checklist": "FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST.md",
@@ -362,9 +375,9 @@
   "one_message_host_bootstrap": "ONE_MESSAGE_HOST_BOOTSTRAP_FA.md",
   "host_bootstrap_message": "ONE_MESSAGE_HOST_BOOTSTRAP_FA.md",
   "independent_host_bootstrap": "ONE_MESSAGE_HOST_BOOTSTRAP_FA.md",
-  "current_continuation_chain": "POINT-0/GOLDEN → CURRENT-150.01 → IN-135 → OUT-134 → EVT-0322 → TIME-BINDING-EVT-0322 → CURRENT-150.02 → NEXT-051.02",
+  "current_continuation_chain": "POINT-0/GOLDEN → CURRENT-150.04 → IN-138 → BRIDGE-0138 → OUT-137 → EVT-0325 → TIME-BINDING-EVT-0325 → CURRENT-150.05 → NEXT-051.05",
   "current_living_master_version": "1.8.4",
-  "current_internal_version": "0.5.1",
+  "current_internal_version": "0.5.2",
   "universal_host_entry": "UNIVERSAL_AI_HOST_ENTRY_FA.md",
   "features": [
     "POINT-0 golden baseline with forward-only continuity and historical precedence",
@@ -372,5 +385,7 @@
     "no direct or indirect host write route to canonical master or RAHM",
     "owner-commanded host monitoring and export with provenance and redaction",
     "bot-authored Child PR with owner approval; no auto-merge or automatic Master promotion"
-  ]
+  ],
+  "current_checkpoint": "CURRENT-150.05",
+  "last_continuation_status": "CANDIDATE / EXACT-SHA-CONFORMANCE-PASS / OWNER-GOLDEN-REVIEW-PENDING; CURRENT-150.02 / NEXT-051.02 remain the last accepted Golden revisions; independent-host recovery NOT RUN."
 }

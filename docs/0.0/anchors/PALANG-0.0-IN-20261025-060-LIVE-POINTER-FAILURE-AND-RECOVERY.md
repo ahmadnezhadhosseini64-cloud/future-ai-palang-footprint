@@ -10,3 +10,10 @@
 - Evidence: scheduled audit [40176902366](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/40176902366) failed because the live-pointer parser could not parse a date-bearing CURRENT filename.
 - Open gates: parser fix, exact-head CI, current-pointer adjudication, runtime round-trip, independent host, persistence/background execution and graph collisions.
 - Link: [OUT-059](./PALANG-0.0-OUT-20261025-059-LIVE-POINTER-FAILURE-AND-RECOVERY.md).
+
+## Canonical registration time evidence
+
+- Source: exact GitHub registration commit f3336526f729420179c22f8d80f04ff6ce299426.
+- Commit timestamp UTC: 2026-10-25T09:48:19Z.
+- Same instant in Asia/Tehran: 2026-10-25T13:18:19+03:30.
+- Original owner-message timestamp: UNKNOWN / NOT CAPTURED; do not infer it from the commit time.

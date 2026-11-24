@@ -1,3 +1,23 @@
+## NEXT-051.05 — current host enrollment and paired-interaction bridge candidate
+
+See [NEXT-051.05](PALANG-0.0-NEXT-20261123-051-REVISION-05-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md). Stable queue identity remains NEXT-051; no NEXT-052 or parallel queue.
+
+---
+
+## NEXT-051.03 — نامزد revision سوم صف ثابت (2026-11-23)
+
+- هویت صف ثابت: **NEXT-051**؛ این فقط revision **NEXT-051.03** است، نه صف جدید.
+- هویت خانوادهٔ جاری: **CURRENT-150**؛ نامزد جاری: [CURRENT-150.03](PALANG-0.0-CURRENT-20261123-150-REVISION-03-CHAT-POINT0-CONTINUATION.md).
+- revision قبلی پذیرفته‌شده: CURRENT-150.02 / NEXT-051.02؛ نامزد .03 تا آزمون exact-SHA و read-back پس از ادغام پذیرفته‌شده محسوب نمی‌شود.
+- رویداد: [EVT-0323](../../architecture/BEHAVIOR-TRACE/EVT-0323-CHAT-POINT0-CONTINUATION-2026-11-23.md) / [TIME-BINDING-EVT-0323](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0323-CHAT-POINT0-CONTINUATION-2026-11-23.md).
+- نشانگر گفتگو: [POINT-0/GOLDEN chat continuation](POINT-0-GOLDEN-CHAT-CONTINUATION-2026-11-23-001.md).
+- این revision فقط همان صف یگانه را به‌روزرسانی می‌کند؛ NEXT-052 یا صف موازی ساخته نشده است.
+- سند مادر 1.8.4 و بستهٔ متناظر .02 فعلاً مرجع پذیرفته‌شده‌اند. هر نسخهٔ بعدی بسته باید با مادر جاری هماهنگ شود؛ downgrade سند مادر ممنوع است.
+- کارهای اولویت‌دار و گیت‌های باز در سند مستقل [NEXT-051.03](PALANG-0.0-NEXT-20261123-051-REVISION-03-EXECUTION-CONTINUATION.md) آمده‌اند.
+- Status: CANDIDATE / ACTIVE WORK / EXACT-SHA-VALIDATION-PENDING.
+
+---
+
 ## NEXT-051.02 — نامزد revision دوم صف ثابت (2026-11-22)
 
 - هویت صف ثابت: **NEXT-051**؛ این فقط revision **NEXT-051.02** است، نه صف جدید.

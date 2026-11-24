@@ -1,8 +1,20 @@
-> **CURRENT POINT-0++ — مرجع جاری فعال:** [CURRENT-150.02](0.0/anchors/PALANG-0.0-CURRENT-20261122-150-REVISION-02-PARTNER-AUTONOMOUS-EXECUTION-AUDIT.md) · خانوادهٔ ثابت [CURRENT-150](0.0/anchors/PALANG-0.0-CURRENT-20261122-150-POINT-0-PLUSPLUS-EXACT-MAIN-AUDIT.md) · [EVT-0322](architecture/BEHAVIOR-TRACE/EVT-0322-PARTNER-AUTONOMOUS-EXECUTION-AND-LIVE-STATE-AUDIT-2026-11-22.md) → [TIME-BINDING-EVT-0322](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0322-PARTNER-AUTONOMOUS-EXECUTION-AND-LIVE-STATE-AUDIT-2026-11-22.md) · sole active queue [NEXT-051.02](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+## Host enrollment and paired interaction bridge — current candidate
+
+- [Host enrollment challenge, receipt and workspace boundary](architecture/HOST-REGISTRY/HOST-ENROLLMENT-CHALLENGE-AND-PAIR-BRIDGE-2026-11-23.md).
+- [Receipt JSON Schema](architecture/HOST-REGISTRY/HOST-ENROLLMENT-RECEIPT-SCHEMA-2026-11-23.json) · [copyable receipt template](../prototype/universal-host/HOST-ENROLLMENT-RECEIPT-TEMPLATE.json).
+- Current pair: [IN-138](0.0/anchors/PALANG-0.0-IN-20261123-138-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md) ↔ [BRIDGE-0138](0.0/anchors/PALANG-0.0-BRIDGE-20261123-0138-IN-138-OUT-137.md) ↔ [OUT-137](0.0/anchors/PALANG-0.0-OUT-20261123-137-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md).
+- This candidate does not issue an official Host ID or activate a host. Public READ is anonymous; private workspace and write-back are separate gates.
+
+---
+
+> **CURRENT POINT-0++ — latest chat continuation candidate:** [CURRENT-150.05](0.0/anchors/PALANG-0.0-CURRENT-20261123-150-REVISION-05-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md) · [IN-138](0.0/anchors/PALANG-0.0-IN-20261123-138-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md) → [BRIDGE-0138](0.0/anchors/PALANG-0.0-BRIDGE-20261123-0138-IN-138-OUT-137.md) → [OUT-137](0.0/anchors/PALANG-0.0-OUT-20261123-137-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md) → [EVT-0325](architecture/BEHAVIOR-TRACE/EVT-0325-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE-2026-11-23.md) → [TIME-BINDING-EVT-0325](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0325-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE-2026-11-23.md) · sole queue [NEXT-051.05](0.0/anchors/PALANG-0.0-NEXT-20261123-051-REVISION-05-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md).
+
+**CANDIDATE ONLY:** PR #145 remains open/unmerged; last accepted Golden remains CURRENT-150.02 / NEXT-051.02. No main write, new root, or parallel queue.
+
+---
 
 
-
-**ACTIVE / LIVING / POST-MERGE-EXACT-SHA-VERIFIED:** Golden HEAD e8f909e6064806b2e450d9bc78a217b15748fb0b; exact post-merge Living Architecture Audit and Portable RAHM Conformance passed; downloaded recovery-equivalence receipt proves IN-135/OUT-134 → CURRENT-150.02/NEXT-051.02. main remains untouched. Durable release refresh, owner approval gate, private Partner/RAHM provisioning and real independent-host recovery remain OPEN.
+Historical candidate CURRENT-150.03 / IN-136 / OUT-135 / EVT-0323 is superseded by the current .05 candidate. Retain only as historical lineage; do not use as a live pointer.
 
 ---
 
@@ -2352,7 +2364,7 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 
 
 ## POINT-0/059 — current root / 0.0 continuation
-- [POINT-0/059](docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261028-059-MIRROR-NORMALIZATION-PORTABLE-PACKAGE.md): current user root for Library newline correction, conflict cover/reconciliation, and rapid production of a fresh transferable ZIP plus living master.
+- [POINT-0/059](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261028-059-MIRROR-NORMALIZATION-PORTABLE-PACKAGE.md): current user root for Library newline correction, conflict cover/reconciliation, and rapid production of a fresh transferable ZIP plus living master.
 - CURRENT-065/CURRENT-066 disposition is COVERED / NOT CLOSED / OPEN only; no winner inferred, both lineages preserved.
 - NEXT-051 remains sole active continuation; no NEXT-052. Current ZIP hash and old passing CI do not prove a fresh artifact or exact current main.
 - Library trailing LF correction remains NOT EXECUTED because no supported exported-snapshot/source_file_ref route is available; canonical source remains authoritative.
@@ -2515,7 +2527,7 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 
 
 ## EVT-0251 — live mirror synchronization recheck — 2026-11-06
-- [EVT-0251](../BEHAVIOR-TRACE/EVT-0251-LIVE-MIRROR-SYNC-RECHECK-2026-11-06.md) / [TIME-BINDING-EVT-0251](../BEHAVIOR-TRACE/TIME-BINDING-EVT-0251-LIVE-MIRROR-SYNC-2026-11-06.md).
+- [EVT-0251](architecture/BEHAVIOR-TRACE/EVT-0251-LIVE-MIRROR-SYNC-RECHECK-2026-11-06.md) / [TIME-BINDING-EVT-0251](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0251-LIVE-MIRROR-SYNC-2026-11-06.md).
 - Canonical source blob `de1b75f07241c9b313e476af5f1417177ff78c10`, 10,479 chars; Library stable ID `libfile_7ac3c9a6ec14819198eb2751e204aa48`, exact version 7, 10,480 chars. Normalized content and semantic fields MATCH; exact equality FALSE; edit distance 1, solely one extra terminal LF in Library. No source or Library write; no supported `source_file_ref` upload route; `container_path` not used.
 - Latest root/checkpoint/sole queue remain POINT-0/061 → CURRENT-112 → NEXT-051. Mirror-only; no new root or NEXT-052. Preserve POINT-0/016, /017, /018 / EVT-0180, EVT-0177/time binding, canonical EVT-0178, EVT-0179 and quarantined duplicate-number lineage.
 - Run-start main `ca86557ac9d12582f3962fdece9863c09697378e`: Living Architecture Audit 42015763286 SUCCESS on exact SHA; no Portable RAHM Conformance was found on ca865; latest pre-event conformance 41985021983 was on parent `dfa5c8390350031770af969ac94add523199de51`.
@@ -2721,7 +2733,7 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - CURRENT-065/CURRENT-066, Issues #20/#21, NEXT-051 forensic recovery, Buffer/Persistent Memory, Dropbox and independent-host gates remain OPEN / NOT VERIFIED / NOT RUN as applicable.
 
 ## EVT-0276 — Live mirror synchronization — 2026-11-20
-- [EVT-0276](./EVT-0276-LIVE-MIRROR-SYNC-RECHECK-2026-11-20.md) / [TIME-BINDING-EVT-0276](./TIME-BINDING-EVT-0276-LIVE-MIRROR-SYNC-2026-11-20.md).
+- [EVT-0276](architecture/BEHAVIOR-TRACE/EVT-0276-LIVE-MIRROR-SYNC-RECHECK-2026-11-20.md) / [TIME-BINDING-EVT-0276](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0276-LIVE-MIRROR-SYNC-2026-11-20.md).
 - Mirror-only under main POINT-0/064 / EVT-0257 / CURRENT-115 v1.0.8 / NEXT-051 v1.0.44; separate certificate child root CERT-POINT-0.0-20261120-002 / EVT-0274 remains separate.
 - Source blob de1b75f07241c9b313e476af5f1417177ff78c10 unchanged; Library v7 normalized match with one extra terminal LF; exact equality FALSE; no source or Library write.
 - Run-start main Audit 44688034068 and CPREL harness/evidence 44688034103 / 44688034176 PASS on exact SHA 2ea7e826931a42fb0a5957cdb58b698bb8f30e00. Latest RAHM 44687870952 PASS on prior SHA bd44a799ce6296aede0ee6be64bdf26cd0af3383; exact-main RAHM NOT VERIFIED.
@@ -2785,10 +2797,10 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 
 ## Latest registered 0+ root — POINT-0/066 / CURRENT-118
 
-- [POINT-0/066 (0+) — interactive evolution](anchors/GPT6-RAHM-USER-POINT-0-20261120-066-INTERACTIVE-EVOLUTION-0PLUS.md)
-- [IN-107](anchors/PALANG-0.0-IN-20261120-107-INTERACTIVE-EVOLUTION.md) + [OUT-106](anchors/PALANG-0.0-OUT-20261120-106-INTERACTIVE-EVOLUTION.md)
-- [EVT-0282](../architecture/BEHAVIOR-TRACE/EVT-0282-INTERACTIVE-EVOLUTION-0PLUS-2026-11-20.md) / [TIME-BINDING-EVT-0282](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0282-INTERACTIVE-EVOLUTION-2026-11-20.md)
-- [CURRENT-118](anchors/PALANG-0.0-CURRENT-20261120-118-INTERACTIVE-EVOLUTION-0PLUS.md) → existing sole active [NEXT-051](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+- [POINT-0/066 (0+) — interactive evolution](0.0/anchors/GPT6-RAHM-USER-POINT-0-20261120-066-INTERACTIVE-EVOLUTION-0PLUS.md)
+- [IN-107](0.0/anchors/PALANG-0.0-IN-20261120-107-INTERACTIVE-EVOLUTION.md) + [OUT-106](0.0/anchors/PALANG-0.0-OUT-20261120-106-INTERACTIVE-EVOLUTION.md)
+- [EVT-0282](architecture/BEHAVIOR-TRACE/EVT-0282-INTERACTIVE-EVOLUTION-0PLUS-2026-11-20.md) / [TIME-BINDING-EVT-0282](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0282-INTERACTIVE-EVOLUTION-2026-11-20.md)
+- [CURRENT-118](0.0/anchors/PALANG-0.0-CURRENT-20261120-118-INTERACTIVE-EVOLUTION-0PLUS.md) → existing sole active [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - This 0+ root makes the package evolution-capable by governing rule: validated interaction-derived progress updates the living master and applicable package sources, then triggers tests, same-identity ZIP rebuild, fresh receipt/hash and read-back. Previous roots and the certificate child branch remain preserved.
 - Package build on this newly registered HEAD is pending; HOST_RECOVERED and automatic all-chat/background capture are not claimed.
 

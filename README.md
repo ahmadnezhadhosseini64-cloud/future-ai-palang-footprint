@@ -1,8 +1,9 @@
-> **CURRENT POINT-0++ — مرجع جاری فعال:** [CURRENT-150.02](docs/0.0/anchors/PALANG-0.0-CURRENT-20261122-150-REVISION-02-PARTNER-AUTONOMOUS-EXECUTION-AUDIT.md) · خانوادهٔ ثابت [CURRENT-150](docs/0.0/anchors/PALANG-0.0-CURRENT-20261122-150-POINT-0-PLUSPLUS-EXACT-MAIN-AUDIT.md) · [EVT-0322](docs/architecture/BEHAVIOR-TRACE/EVT-0322-PARTNER-AUTONOMOUS-EXECUTION-AND-LIVE-STATE-AUDIT-2026-11-22.md) → [TIME-BINDING-EVT-0322](docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0322-PARTNER-AUTONOMOUS-EXECUTION-AND-LIVE-STATE-AUDIT-2026-11-22.md) · sole active queue [NEXT-051.02](docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+> **CURRENT POINT-0++ — current candidate on PR #145:** [CURRENT-150.05](docs/0.0/anchors/PALANG-0.0-CURRENT-20261123-150-REVISION-05-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md) · [IN-138](docs/0.0/anchors/PALANG-0.0-IN-20261123-138-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md) → [BRIDGE-0138](docs/0.0/anchors/PALANG-0.0-BRIDGE-20261123-0138-IN-138-OUT-137.md) → [OUT-137](docs/0.0/anchors/PALANG-0.0-OUT-20261123-137-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md) → [EVT-0325](docs/architecture/BEHAVIOR-TRACE/EVT-0325-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE-2026-11-23.md) → [TIME-BINDING-EVT-0325](docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0325-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE-2026-11-23.md) · sole queue [NEXT-051.05](docs/0.0/anchors/PALANG-0.0-NEXT-20261123-051-REVISION-05-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md).
 
+**CANDIDATE ONLY:** PR #145 remains OPEN / UNMERGED. Last accepted Golden remains CURRENT-150.02 / NEXT-051.02. Main is not modified; no new root or parallel queue.
 
+---
 
-**ACTIVE / LIVING / POST-MERGE-EXACT-SHA-VERIFIED:** Golden HEAD e8f909e6064806b2e450d9bc78a217b15748fb0b; exact post-merge Living Architecture Audit and Portable RAHM Conformance passed; downloaded recovery-equivalence receipt proves IN-135/OUT-134 → CURRENT-150.02/NEXT-051.02. main remains untouched. Durable release refresh, owner approval gate, private Partner/RAHM provisioning and real independent-host recovery remain OPEN.
 
 ---
 
@@ -18,8 +19,8 @@ Exact main SHA `30d1d3b2de09078131fa3c8a0ff7c492a7ab0d7e`: Living Architecture A
 
 ## POINT-0/GOLDEN — canonical current baseline (2026-11-22)
 
-- [POINT-0/GOLDEN](0.0/anchors/GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md) → [IN-130](0.0/anchors/PALANG-0.0-IN-20261122-130-GOLDEN-BASELINE.md) → [OUT-129](0.0/anchors/PALANG-0.0-OUT-20261122-129-GOLDEN-BASELINE.md)
-- [EVT-0309](architecture/BEHAVIOR-TRACE/EVT-0309-POINT-0-GOLDEN-BASELINE-2026-11-22.md) → [TIME-BINDING-EVT-0309](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0309-POINT-0-GOLDEN-BASELINE-2026-11-22.md) → [CURRENT-140](0.0/anchors/PALANG-0.0-CURRENT-20261122-140-GOLDEN-BASELINE.md) → [EVT-0310](architecture/BEHAVIOR-TRACE/EVT-0310-GOLDEN-FORWARD-ONLY-OWNER-DIRECTIVE-2026-11-22.md) → [TIME-BINDING-EVT-0310](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0310-GOLDEN-FORWARD-ONLY-2026-11-22.md) → [CURRENT-141](0.0/anchors/PALANG-0.0-CURRENT-20261122-141-GOLDEN-FORWARD-ONLY.md) → [EVT-0311](architecture/BEHAVIOR-TRACE/EVT-0311-POINT-0-PLUSPLUS-GOLDEN-CONTINUATION-2026-11-22.md) → [TIME-BINDING-EVT-0311](architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0311-POINT-0-PLUSPLUS-2026-11-22.md) → [CURRENT-142 / POINT-0++](0.0/anchors/PALANG-0.0-CURRENT-20261122-142-POINT-0-PLUSPLUS-GOLDEN.md) → sole active [NEXT-051](0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
+- [POINT-0/GOLDEN](docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md) → [IN-130](docs/0.0/anchors/PALANG-0.0-IN-20261122-130-GOLDEN-BASELINE.md) → [OUT-129](docs/0.0/anchors/PALANG-0.0-OUT-20261122-129-GOLDEN-BASELINE.md)
+- [EVT-0309](docs/architecture/BEHAVIOR-TRACE/EVT-0309-POINT-0-GOLDEN-BASELINE-2026-11-22.md) → [TIME-BINDING-EVT-0309](docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0309-POINT-0-GOLDEN-BASELINE-2026-11-22.md) → [CURRENT-140](docs/0.0/anchors/PALANG-0.0-CURRENT-20261122-140-GOLDEN-BASELINE.md) → [EVT-0310](docs/architecture/BEHAVIOR-TRACE/EVT-0310-GOLDEN-FORWARD-ONLY-OWNER-DIRECTIVE-2026-11-22.md) → [TIME-BINDING-EVT-0310](docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0310-GOLDEN-FORWARD-ONLY-2026-11-22.md) → [CURRENT-141](docs/0.0/anchors/PALANG-0.0-CURRENT-20261122-141-GOLDEN-FORWARD-ONLY.md) → [EVT-0311](docs/architecture/BEHAVIOR-TRACE/EVT-0311-POINT-0-PLUSPLUS-GOLDEN-CONTINUATION-2026-11-22.md) → [TIME-BINDING-EVT-0311](docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0311-POINT-0-PLUSPLUS-2026-11-22.md) → [CURRENT-142 / POINT-0++](docs/0.0/anchors/PALANG-0.0-CURRENT-20261122-142-POINT-0-PLUSPLUS-GOLDEN.md) → sole active [NEXT-051](docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
 - Baseline source HEAD: `9ebd4bcc5cfc0168276e366c1867da8709dfb566`; tree: `8be81af3dcf822b10107a7efcf4c603ca7567706`.
 - Latest verified portable release at that source: [haif-latest-verified](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/releases/tag/haif-latest-verified); ZIP SHA-256 `243baddff63eaf18129a0cbaff860f84f375655c893ee0d1cb42235ecae38646`; clean-host recovery remains NOT RUN.
 - Master: hosts PUBLIC READ ONLY; no direct or indirect host write route. RAHM: central, private, owner-only, outside all host workspaces. Owner-commanded export is the only bridge.
@@ -188,3 +189,8 @@ This addendum is the current controlling security rule and supersedes any older 
 - Main protection, collaborator/App audit, per-host private repositories, broker deployment, revocation and cross-host tests remain OPEN until direct evidence exists.
 
 See `docs/architecture/HOST-SECURITY/OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOSITORIES.md` and `docs/architecture/HOST-SECURITY/PRIVATE-HOST-REPOSITORY-TEMPLATE.md`.
+
+
+## Latest conversation continuation — candidate only
+
+POINT-0/GOLDEN → IN-137 → OUT-136 → EVT-0324 → TIME-BINDING-EVT-0324 → CURRENT-150.04 → NEXT-051.04. This is an additive continuation on the existing root and sole queue. PR #145 remains open; no Golden merge or main write is implied. Exact event time: 2026-11-23T04:05:33Z / 2026-11-23T07:35:33+03:30.

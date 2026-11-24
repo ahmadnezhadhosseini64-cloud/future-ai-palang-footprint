@@ -93,7 +93,7 @@ def verify_state(state: Any) -> list[str]:
             if not isinstance(record, dict):
                 errors.append(f"{prefix}.interaction_record must be an object")
             else:
-                required = ("interaction_id", "input_id", "output_id", "sequence", "version", "status",
+                required = ("interaction_id", "input_id", "output_id", "bridge_id", "bridge", "sequence", "version", "status",
                             "time_evidence", "input", "output", "behavior_analysis", "lineage", "verification")
                 for field in required:
                     if field not in record:
@@ -109,13 +109,14 @@ def verify_state(state: Any) -> list[str]:
                         "interaction_id": f"INT-{suffix}",
                         "input_id": f"IN-{suffix}",
                         "output_id": f"OUT-{suffix}",
+                        "bridge_id": f"BRIDGE-{suffix}",
                     }
                     for field, value in expected.items():
                         if record.get(field) != value:
                             errors.append(f"{prefix}.interaction_record.{field} does not match sequence/date")
-                for field in ("interaction_id", "input_id", "output_id"):
+                for field in ("interaction_id", "input_id", "output_id", "bridge_id"):
                     value = record.get(field)
-                    if not isinstance(value, str) or not re.fullmatch(r"(?:INT|IN|OUT)-[0-9]{8}-[0-9]{3}", value):
+                    if not isinstance(value, str) or not re.fullmatch(r"(?:INT|IN|OUT)-[0-9]{8}-[0-9]{3}|BRIDGE-[0-9]{8}-[0-9]{3}", value):
                         errors.append(f"{prefix}.interaction_record.{field} has invalid stable ID format")
                     elif value in seen:
                         errors.append(f"{prefix}.interaction_record.{field} is duplicated")
@@ -127,6 +128,22 @@ def verify_state(state: Any) -> list[str]:
                     errors.append(f"{prefix}.interaction_record.input does not match preserved input")
                 if not isinstance(output_record, dict) or output_record.get("content_status") != "PRESERVED" or output_record.get("summary") != output_text:
                     errors.append(f"{prefix}.interaction_record.output does not match preserved output")
+                bridge = record.get("bridge")
+                if not isinstance(bridge, dict):
+                    errors.append(f"{prefix}.interaction_record.bridge must be an object")
+                else:
+                    if bridge.get("bridge_id") != record.get("bridge_id"):
+                        errors.append(f"{prefix}.interaction_record.bridge.bridge_id mismatch")
+                    if bridge.get("input_id") != record.get("input_id"):
+                        errors.append(f"{prefix}.interaction_record.bridge.input_id mismatch")
+                    if bridge.get("output_id") != record.get("output_id"):
+                        errors.append(f"{prefix}.interaction_record.bridge.output_id mismatch")
+                    if bridge.get("event_id") != event.get("event_id"):
+                        errors.append(f"{prefix}.interaction_record.bridge.event_id mismatch")
+                    if bridge.get("parent_event_hash") != event.get("parent_hash"):
+                        errors.append(f"{prefix}.interaction_record.bridge.parent_event_hash mismatch")
+                    if bridge.get("status") != "MATCHED":
+                        errors.append(f"{prefix}.interaction_record.bridge.status must be MATCHED")
                 time_evidence = record.get("time_evidence")
                 if not isinstance(time_evidence, dict) or time_evidence.get("operation_timestamp") != created:
                     errors.append(f"{prefix}.interaction_record.time_evidence operation timestamp mismatch")
@@ -137,10 +154,14 @@ def verify_state(state: Any) -> list[str]:
     if checkpoint is not None:
         if not isinstance(checkpoint, dict):
             errors.append("checkpoint must be an object or null")
-        elif checkpoint.get("event_count") != len(events):
-            errors.append("checkpoint event_count does not match event list")
-        elif checkpoint.get("head_hash") != (events[-1]["event_hash"] if events else GENESIS):
-            errors.append("checkpoint head_hash does not match event chain")
+        else:
+            count = checkpoint.get("event_count")
+            if not isinstance(count, int) or isinstance(count, bool) or count < 0 or count > len(events):
+                errors.append("checkpoint event_count must identify an existing event prefix")
+            else:
+                expected_head = events[count - 1]["event_hash"] if count else GENESIS
+                if checkpoint.get("head_hash") != expected_head:
+                    errors.append("checkpoint head_hash does not match pinned event prefix")
     if state.get("open_gates") != OPEN_GATES:
         errors.append("open_gates must preserve all explicitly unimplemented capabilities")
     return errors
@@ -149,6 +170,7 @@ def verify_state(state: Any) -> list[str]:
 def append_event(state: dict, kind: str, **fields: Any) -> dict:
     parent = state["events"][-1]["event_hash"] if state["events"] else GENESIS
     created_at = utc_now()
+    event_id = "EVT-" + uuid.uuid4().hex
     if kind == "INTERACTION":
         input_text = fields.pop("input_text", None)
         output_text = fields.pop("output_text", None)
@@ -169,6 +191,15 @@ def append_event(state: dict, kind: str, **fields: Any) -> dict:
                 "interaction_id": f"INT-{suffix}",
                 "input_id": f"IN-{suffix}",
                 "output_id": f"OUT-{suffix}",
+                "bridge_id": f"BRIDGE-{suffix}",
+                "bridge": {
+                    "bridge_id": f"BRIDGE-{suffix}",
+                    "input_id": f"IN-{suffix}",
+                    "output_id": f"OUT-{suffix}",
+                    "event_id": event_id,
+                    "parent_event_hash": parent,
+                    "status": "MATCHED",
+                },
                 "sequence": sequence,
                 "version": "1.0.0",
                 "status": "OBSERVED",
@@ -198,7 +229,7 @@ def append_event(state: dict, kind: str, **fields: Any) -> dict:
             },
         })
     event = {
-        "event_id": "EVT-" + uuid.uuid4().hex,
+        "event_id": event_id,
         "kind": kind,
         "created_at_utc": created_at,
         "parent_hash": parent,
@@ -213,7 +244,7 @@ def append_event(state: dict, kind: str, **fields: Any) -> dict:
 def lookup_interaction(state: dict, anchor_id: str) -> dict | None:
     for event in state.get("events", []):
         record = event.get("interaction_record", {})
-        if anchor_id in (record.get("interaction_id"), record.get("input_id"), record.get("output_id")):
+        if anchor_id in (record.get("interaction_id"), record.get("input_id"), record.get("output_id"), record.get("bridge_id")):
             return event
     return None
 
@@ -296,6 +327,7 @@ def main(argv: list[str] | None = None) -> int:
                     "interaction_id": record["interaction_id"],
                     "input_id": record["input_id"],
                     "output_id": record["output_id"],
+                    "bridge_id": record["bridge_id"],
                     "sequence": record["sequence"],
                     "event_hash": event["event_hash"],
                     "events": len(state["events"]),

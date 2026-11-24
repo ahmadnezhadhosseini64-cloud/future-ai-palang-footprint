@@ -4,7 +4,7 @@
 - Status: ACTIVE / LIVING / GOLDEN BASELINE PUBLISHED TO MAIN
 - Canonical root: POINT-0 (single root; this is a baseline marker, not a new root)
 - Parent: POINT-0/086 → CURRENT-139
-- Current chain: POINT-0/GOLDEN → CURRENT-150.01 → IN-135 → OUT-134 → EVT-0322 → TIME-BINDING-EVT-0322 → CURRENT-150.02 → NEXT-051.02
+- Accepted Golden chain at baseline: POINT-0/GOLDEN → CURRENT-150.01 → IN-135 → OUT-134 → EVT-0322 → TIME-BINDING-EVT-0322 → CURRENT-150.02 → NEXT-051.02
 - Owner: @ahmadnezhadhosseini64-cloud
 - Canonical repository: ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
 - Baseline source HEAD recorded at Golden creation (historical source reference, not the current operating ref): 9ebd4bcc5cfc0168276e366c1867da8709dfb566
@@ -28,6 +28,13 @@
 اسناد تاریخی، snapshotهای قدیمی، branchها و دستورهای قدیمی به‌تنهایی مجوز اجرایی نیستند. هیچ تصمیم تثبیت‌شده‌ای به دلیل فراموشی، شروع نشست جدید، checklist عمومی یا وجود سند قدیمی باز نمی‌شود. بازگشایی فقط با شاهد جدید معتبر، خطای اثبات‌شده، تغییر شرط واقعی، ریسک مادیِ بررسی‌نشده یا فرمان صریح مالک مجاز است.
 
 هنگام برخورد با مانع یا تعارض، عامل باید روی همین baseline بماند، علت را از شواهد فعلی بررسی کند، تغییر حداقلی و رو به جلو بسازد، آزمون کند و نتیجه را با read-back ثبت کند. هرگز به‌طور خودکار به معماری یا مجوز قدیمی rollback نکند.
+
+
+## 2.1 ادامهٔ نامزد جاری — بدون تغییر وضعیت Golden
+
+[POINT-0/GOLDEN](GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md) → [IN-138](PALANG-0.0-IN-20261123-138-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md) → [BRIDGE-0138](PALANG-0.0-BRIDGE-20261123-0138-IN-138-OUT-137.md) → [OUT-137](PALANG-0.0-OUT-20261123-137-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md) → [EVT-0325](../../architecture/BEHAVIOR-TRACE/EVT-0325-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE-2026-11-23.md) → [TIME-BINDING-EVT-0325](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0325-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE-2026-11-23.md) → [CURRENT-150.05](PALANG-0.0-CURRENT-20261123-150-REVISION-05-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md) → [NEXT-051.05](PALANG-0.0-NEXT-20261123-051-REVISION-05-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md).
+
+این فقط نامزد PR #145 است؛ PR باز و ادغام‌نشده است. CURRENT-150.02 / NEXT-051.02 آخرین وضعیت پذیرفته‌شدهٔ Golden باقی می‌مانند. این ادامه هیچ ریشه، خانوادهٔ CURRENT یا صف NEXT جدیدی ایجاد نمی‌کند و main را تغییر نمی‌دهد.
 
 ## 3. اصل غیرقابل‌تغییر میزبان و MASTER
 
@@ -65,7 +72,7 @@ GitHub نویسندهٔ PR را از تأیید PR خودش منع می‌کند
 - Workflow audit: فقط دو workflow مجوز repository-content write دارند: RAHM promotion App برای ساخت branch/PR بات به CHILD، و portable package publisher فقط برای انتشار assetهای release پایدار (بدون git commit/push به main). دو workflow دیگر فقط pages:write و id-token:write برای deploy به GitHub Pages دارند. سایر workflowها read-only هستند. هیچ‌یک از این مجوزها به میزبان واگذار نشده است.
 - legacy host adapter disabled/fail-closed؛ execution controller read-only؛ local event adapter فقط SQLite محلی دارد و producer_connected=false و repository_write=NOT_IMPLEMENTED گزارش می‌کند.
 - Host Registry schema 1.1.0 معتبر و Registry خالی است؛ هیچ میزبان واقعی ACTIVE نیست.
-- بستهٔ قابل‌انتقال در baseline با run 44964480412، SHA-256 بالا، CRC، source-byte read-back، extracted tests و durable release publication تأیید شده است؛ clean-host import/recovery هنوز NOT RUN است. بستهٔ منبع جدید v0.5.1 فقط CANDIDATE است و تا اجرای conformance روی main، PACKAGE_VERIFIED محسوب نمی‌شود.
+- بستهٔ قابل‌انتقال در baseline با run 44964480412، SHA-256 بالا، CRC، source-byte read-back، extracted tests و durable release publication تأیید شده است؛ clean-host import/recovery هنوز NOT RUN است. بستهٔ منبع جدید v0.5.2 فقط CANDIDATE است و تا اجرای conformance روی main، PACKAGE_VERIFIED محسوب نمی‌شود.
 
 ## 8. موارد باز؛ صریح و متصل به NEXT-051
 
@@ -118,3 +125,17 @@ The fixed root identity remains POINT-0/GOLDEN. No new Point-0 root, numbered po
 - Recovery proof protocol: [INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001](../../architecture/مدل%20اولیه%20AI/INDEPENDENT-HOST-RECOVERY-PROOF-PROTOCOL-2026-10-27-001.md)
 - Portable host recovery protocol: [INDEPENDENT_HOST_RECOVERY_PROTOCOL](../../../prototype/haif-gpt6-starter/INDEPENDENT_HOST_RECOVERY_PROTOCOL.md)
 - Portable export manifest: [EXPORT_MANIFEST](../../portable/RAHM/EXPORT_MANIFEST.json)
+
+
+## Additive continuation — EVT-0323 / CURRENT-150.03 candidate (2026-11-23)
+
+The current conversation is registered as a continuation marker on this same canonical root, not as a second root. Chain: [POINT-0/GOLDEN](GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md) → [IN-136](PALANG-0.0-IN-20261123-136-CHAT-POINT0-CONTINUATION.md) → [OUT-135](PALANG-0.0-OUT-20261123-135-CHAT-POINT0-CONTINUATION.md) → [EVT-0323](../../architecture/BEHAVIOR-TRACE/EVT-0323-CHAT-POINT0-CONTINUATION-2026-11-23.md) → [TIME-BINDING-EVT-0323](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0323-CHAT-POINT0-CONTINUATION-2026-11-23.md) → [CURRENT-150.03](PALANG-0.0-CURRENT-20261123-150-REVISION-03-CHAT-POINT0-CONTINUATION.md) → [NEXT-051.03](PALANG-0.0-NEXT-20261123-051-REVISION-03-EXECUTION-CONTINUATION.md).
+
+The stable root, CURRENT-150 family and NEXT-051 queue identities are unchanged. The .03 revisions remain candidates until exact-SHA conformance and controlled Golden merge. Prior history, including [EVT-0241](../../architecture/BEHAVIOR-TRACE/EVT-0241-LIVE-MIRROR-SYNC-RECHECK-2026-10-31.md) and [TIME-BINDING-EVT-0241](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0241-LIVE-MIRROR-SYNC-2026-10-31.md), remains preserved.
+
+
+## Additive continuation — EVT-0324 / CURRENT-150.04 candidate (2026-11-23)
+
+[POINT-0/GOLDEN](GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md) → [IN-137](PALANG-0.0-IN-20261123-137-REST-AND-AUTONOMOUS-EXECUTION.md) → [OUT-136](PALANG-0.0-OUT-20261123-136-REST-AND-AUTONOMOUS-EXECUTION.md) → [EVT-0324](../../architecture/BEHAVIOR-TRACE/EVT-0324-OWNER-REST-AUTONOMOUS-EXECUTION-2026-11-23.md) → [TIME-BINDING-EVT-0324](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0324-OWNER-REST-AUTONOMOUS-EXECUTION-2026-11-23.md) → [CURRENT-150.04](PALANG-0.0-CURRENT-20261123-150-REVISION-04-OWNER-REST-AUTONOMOUS-EXECUTION.md) → [NEXT-051.04](PALANG-0.0-NEXT-20261123-051-REVISION-04-AUTONOMOUS-EXECUTION-AND-PARTNER-TRIAGE.md).
+
+This is an additive candidate under the same root, CURRENT family and sole NEXT-051 queue. CURRENT-150.03 / NEXT-051.03 remain the prior candidates; accepted Golden remains .02 until controlled promotion. No parallel root or queue is created.

@@ -5,6 +5,11 @@ on:
     branches: [main, 'governance/point-0-golden-baseline-20261122']
     paths:
       - 'docs/portable/RAHM/**'
+      - 'docs/0.0/README.md'
+      - 'docs/REFERENCE_INDEX.md'
+      - 'docs/architecture/INTEGRATION-QUEUE/README.md'
+      - 'docs/architecture/BEHAVIOR-OBSERVATORY/README.md'
+      - 'README.md'
       - 'docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md'
       - 'scripts/behavior-hunter/**'
       - 'scripts/haif-runtime/**'
@@ -14,6 +19,11 @@ on:
     branches: [main, 'governance/point-0-golden-baseline-20261122']
     paths:
       - 'docs/portable/RAHM/**'
+      - 'docs/0.0/README.md'
+      - 'docs/REFERENCE_INDEX.md'
+      - 'docs/architecture/INTEGRATION-QUEUE/README.md'
+      - 'docs/architecture/BEHAVIOR-OBSERVATORY/README.md'
+      - 'README.md'
       - 'docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md'
       - 'scripts/behavior-hunter/**'
       - 'scripts/haif-runtime/**'
@@ -173,8 +183,10 @@ jobs:
             rahm-sha256-evidence.json
             rahm-recovery-equivalence.json
 
+      - name: Test portable living-master link rewriter
+        run: python -m unittest discover -s scripts/portable/tests -v
       - name: Synchronize current living mother into portable starter
-        run: cp "docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md" "prototype/haif-gpt6-starter/LIVING_MASTER_REFERENCE.md"
+        run: python scripts/portable/rewrite_living_master_links.py --source "docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md" --destination "prototype/haif-gpt6-starter/LIVING_MASTER_REFERENCE.md" --strict
       - name: Test the existing HAIF starter package source
         if: always()
         run: |
@@ -305,11 +317,38 @@ jobs:
 
       - name: Download uploaded canonical ZIP artifact from this run
         if: success()
-        uses: actions/download-artifact@v4
-        with:
-          name: haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean
-          path: downloaded-starter-artifact
-          merge-multiple: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ARTIFACT_ID: ${{ steps.starter_upload.outputs.artifact-id }}
+        run: |
+          set -euo pipefail
+          test -n "$ARTIFACT_ID"
+          mkdir -p downloaded-starter-artifact
+          archive_tmp="$(mktemp)"
+          downloaded=0
+          for attempt in 1 2 3 4 5 6; do
+            if curl --fail --silent --show-error --location \
+              -H "Accept: application/vnd.github+json" \
+              -H "Authorization: Bearer $GH_TOKEN" \
+              -H "X-GitHub-Api-Version: 2022-11-28" \
+              "$GITHUB_API_URL/repos/$GITHUB_REPOSITORY/actions/artifacts/$ARTIFACT_ID/zip" \
+              --output "$archive_tmp"; then
+              if unzip -t "$archive_tmp" >/dev/null 2>&1; then
+                downloaded=1
+                break
+              fi
+            fi
+            echo "ARTIFACT_DOWNLOAD_RETRY=$attempt"
+            sleep 3
+          done
+          if [ "$downloaded" -ne 1 ]; then
+            echo "ARTIFACT_DOWNLOAD_BY_EXACT_ID=FAIL"
+            exit 1
+          fi
+          unzip -q "$archive_tmp" -d downloaded-starter-artifact
+          rm -f "$archive_tmp"
+          echo "ARTIFACT_DOWNLOAD_BY_EXACT_ID=PASS"
+          echo "ARTIFACT_ID=$ARTIFACT_ID"
 
       - name: Confirm exact artifact ID download
         if: success()

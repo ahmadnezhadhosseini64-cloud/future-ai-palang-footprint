@@ -1,8 +1,20 @@
-> **CURRENT POINT-0++ — مرجع جاری فعال:** [CURRENT-150.02](anchors/PALANG-0.0-CURRENT-20261122-150-REVISION-02-PARTNER-AUTONOMOUS-EXECUTION-AUDIT.md) · خانوادهٔ ثابت [CURRENT-150](anchors/PALANG-0.0-CURRENT-20261122-150-POINT-0-PLUSPLUS-EXACT-MAIN-AUDIT.md) · [EVT-0322](../architecture/BEHAVIOR-TRACE/EVT-0322-PARTNER-AUTONOMOUS-EXECUTION-AND-LIVE-STATE-AUDIT-2026-11-22.md) → [TIME-BINDING-EVT-0322](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0322-PARTNER-AUTONOMOUS-EXECUTION-AND-LIVE-STATE-AUDIT-2026-11-22.md) · sole active queue [NEXT-051.02](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
+## Current host enrollment contract — candidate
+
+- Protocol: [HOST-ENROLLMENT-CHALLENGE-AND-PAIR-BRIDGE](../architecture/HOST-REGISTRY/HOST-ENROLLMENT-CHALLENGE-AND-PAIR-BRIDGE-2026-11-23.md).
+- Pair record: IN-138 ↔ BRIDGE-0138 ↔ OUT-137.
+- Current revision: CURRENT-150.05; sole queue revision: NEXT-051.05.
+- PR #145 remains open/unmerged; last accepted Golden remains .02.
+
+---
+
+> **CURRENT POINT-0++ — latest chat continuation candidate:** [CURRENT-150.05](anchors/PALANG-0.0-CURRENT-20261123-150-REVISION-05-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md) · [IN-138](anchors/PALANG-0.0-IN-20261123-138-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md) → [BRIDGE-0138](anchors/PALANG-0.0-BRIDGE-20261123-0138-IN-138-OUT-137.md) → [OUT-137](anchors/PALANG-0.0-OUT-20261123-137-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md) → [EVT-0325](../architecture/BEHAVIOR-TRACE/EVT-0325-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE-2026-11-23.md) → [TIME-BINDING-EVT-0325](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0325-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE-2026-11-23.md) · sole queue [NEXT-051.05](anchors/PALANG-0.0-NEXT-20261123-051-REVISION-05-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md).
+
+**CANDIDATE ONLY:** PR #145 remains open/unmerged; last accepted Golden remains CURRENT-150.02 / NEXT-051.02. No main write, new root, or parallel queue.
+
+---
 
 
-
-**ACTIVE / LIVING / POST-MERGE-EXACT-SHA-VERIFIED:** Golden HEAD e8f909e6064806b2e450d9bc78a217b15748fb0b; exact post-merge Living Architecture Audit and Portable RAHM Conformance passed; downloaded recovery-equivalence receipt proves IN-135/OUT-134 → CURRENT-150.02/NEXT-051.02. main remains untouched. Durable release refresh, owner approval gate, private Partner/RAHM provisioning and real independent-host recovery remain OPEN.
+Historical candidate .03 (IN-136 / OUT-135 / EVT-0323) is superseded by .05 and retained only in Git history. It is not a current pointer.
 
 ---
 
@@ -2262,3 +2274,64 @@ The previous points 077 and 078 remain linked in the preceding historical sectio
 [POINT-0/GOLDEN](anchors/GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md) → [IN-135](anchors/PALANG-0.0-IN-20261122-135-PARTNER-AUTONOMOUS-EXECUTION.md) → [OUT-134](anchors/PALANG-0.0-OUT-20261122-134-PARTNER-AUTONOMOUS-EXECUTION.md) → [EVT-0322](../architecture/BEHAVIOR-TRACE/EVT-0322-PARTNER-AUTONOMOUS-EXECUTION-AND-LIVE-STATE-AUDIT-2026-11-22.md) → [TIME-BINDING-EVT-0322](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0322-PARTNER-AUTONOMOUS-EXECUTION-AND-LIVE-STATE-AUDIT-2026-11-22.md) → [CURRENT-150.02](anchors/PALANG-0.0-CURRENT-20261122-150-REVISION-02-PARTNER-AUTONOMOUS-EXECUTION-AUDIT.md) → [NEXT-051.02](anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 
 این آخرین زنجیرهٔ فعال روی همان ریشهٔ POINT-0/GOLDEN است. CURRENT-150.02 / NEXT-051.02 پس از آزمون دقیق و read-back پس از ادغام ACTIVE هستند؛ CURRENT-150.01 / NEXT-051.01 revision قبلی و تاریخی‌اند.
+
+
+## تازه‌ترین زنجیره — POINT-0/GOLDEN → CURRENT-150.05 (نامزد) → NEXT-051.05 (نامزد)
+
+[POINT-0/GOLDEN](anchors/GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md) → [IN-138](anchors/PALANG-0.0-IN-20261123-138-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md) → [BRIDGE-0138](anchors/PALANG-0.0-BRIDGE-20261123-0138-IN-138-OUT-137.md) → [OUT-137](anchors/PALANG-0.0-OUT-20261123-137-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md) → [EVT-0325](../architecture/BEHAVIOR-TRACE/EVT-0325-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE-2026-11-23.md) → [TIME-BINDING-EVT-0325](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0325-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE-2026-11-23.md) → [CURRENT-150.05](anchors/PALANG-0.0-CURRENT-20261123-150-REVISION-05-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md) → [NEXT-051.05](anchors/PALANG-0.0-NEXT-20261123-051-REVISION-05-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md).
+
+این زنجیرهٔ نامزد روی همان ریشهٔ POINT-0/GOLDEN است. والد اجرایی IN-138، نقطهٔ [والد اجرایی 150.04](anchors/PALANG-0.0-CURRENT-20261123-150-REVISION-04-OWNER-REST-AUTONOMOUS-EXECUTION.md) است. CURRENT-150.02 / NEXT-051.02 آخرین revisionهای پذیرفته‌شده باقی می‌مانند تا آزمون exact-SHA و ادغام کنترل‌شدهٔ .05.
+
+
+## Portable conformance receipt — candidate PR tree (2026-11-23)
+
+- Workflow: [Portable RAHM Conformance and Digest Evidence — run 45079525825](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/45079525825) — **SUCCESS**.
+- PR head: `cfb43377ae7551b73b6fdf536e83564bbd40e6b5`; tested prospective merge commit: `37807c0d3d8c077f3d4e88d4a67bcc332fc6aaab` (parents: Golden base `d845da27aceb69bde92c84b7c638a4698ecef4e5` + PR head). This is a synthetic PR merge tree, not a completed Golden merge.
+- Latest-chain reconstruction: PASS; recovery-equivalence `RAHM-IN-OUT-LINK-EQUIVALENCE-136-135`: PASS.
+- Stable SHA-256 inventory: 47/47 MATCH; live-reference SHA-256 observations: 266/266 recorded; manifest v1.8.45 SHA-256 `a868bcae0fc08ce54e6ed61ecb1887e788b9f50ba0d3574ac1bfacfab2438b7a`.
+- RAHM archive: 314 entries, ZIP integrity PASS, SHA-256 `e34577774e45f69bd3fd2d740540f1bc7b3e70dc4c18d9b2ab4f426a24dcc66b`, 1,513,865 bytes. Required IN/OUT/EVT/time-binding/CURRENT/NEXT files all present.
+- Existing starter ZIP rebuilt under the same canonical filename and package identity: 19 files, 288,082 bytes, SHA-256 `6b356e1503bf9c9404784e8d576d647f993ec6e3b89e6d32aba47954a5df5c60`. ZIP CRC, source-byte read-back and all 24 extracted tests PASS.
+- Living mother v1.8.4 and starter mirror: byte-for-byte equal; both SHA-256 `e0fa45817223b1e813f7b58f723786d64fa770c73f11ad7af91afe4366266a04`.
+- Artifacts: RAHM package ID `14776322551`; digest evidence ID `14776302640`; starter ZIP receipt ID `14775709405`. These are workflow artifacts, not a durable GitHub Release.
+- Durable release refresh: SKIPPED on pull-request event. Real independent-host acceptance: NOT RUN. Owner approval/promotion to Golden remains required.
+- Earlier audit run `45079284964` failed only on a misnamed historical EVT-0241 time-binding link; the canonical filename was corrected. A fresh exact-head Living Architecture Audit is still required.
+
+
+## Final exact-head verification snapshot — PR #145 candidate
+
+- Tested PR head: `e22e6a098ff0c27cb09d5f3a782d00820d8e282b`; prospective merge tree: `a2ac55f537352411c423205d9e5c367d99d0d920` (base `d845da27aceb69bde92c84b7c638a4698ecef4e5` + PR head). This is not a completed Golden merge.
+- Living Architecture Audit [run 45079917323](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/45079917323): **SUCCESS**. Latest CURRENT-150.03 reconstruction PASS; 31 governance/architecture tests PASS; host MASTER write prohibition and owner-only RAHM checks PASS.
+- Portable RAHM Conformance [run 45079917344](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/45079917344): **SUCCESS**. 47/47 stable SHA-256 pins MATCH; 266 live-reference observations; IN-136/OUT-135 equivalence PASS; 24 extracted starter tests PASS.
+- Latest RAHM archive: 314 entries, 1,517,676 bytes, SHA-256 `487f472227f7f3996c864618f7b2275c02842b40da7125f313d18f533ae98d0f`, ZIP integrity PASS.
+- Existing canonical starter ZIP: 19 files, 288,082 bytes, SHA-256 `6b356e1503bf9c9404784e8d576d647f993ec6e3b89e6d32aba47954a5df5c60`; same stable filename and package identity; ZIP integrity, source-byte match and extracted tests PASS.
+- Mother 1.8.4 and packaged mirror are byte-identical; SHA-256 `e0fa45817223b1e813f7b58f723786d64fa770c73f11ad7af91afe4366266a04`.
+- Pointer discovery remains scoped-consistent but deliberately selects no winner: candidates CURRENT-066 and CURRENT-150. Existing ambiguity remains OPEN; no inferred adjudication.
+- Timestamp-pair audit: 4,759 timestamps normalized; 4,759 UTC/Tehran pairs; zero parse or offset failures.
+- Durable release refresh: SKIPPED on pull-request event. Real independent-host acceptance: NOT RUN. Owner-controlled Golden merge remains pending; main and Golden were not written by this host.
+
+
+## Historical predecessor — EVT-0324 / CURRENT-150.04 (superseded by EVT-0325 / CURRENT-150.05)
+
+[POINT-0/GOLDEN](anchors/GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md) → [IN-137](anchors/PALANG-0.0-IN-20261123-137-REST-AND-AUTONOMOUS-EXECUTION.md) → [OUT-136](anchors/PALANG-0.0-OUT-20261123-136-REST-AND-AUTONOMOUS-EXECUTION.md) → [EVT-0324](../architecture/BEHAVIOR-TRACE/EVT-0324-OWNER-REST-AUTONOMOUS-EXECUTION-2026-11-23.md) → [TIME-BINDING-EVT-0324](../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0324-OWNER-REST-AUTONOMOUS-EXECUTION-2026-11-23.md) → [CURRENT-150.04](anchors/PALANG-0.0-CURRENT-20261123-150-REVISION-04-OWNER-REST-AUTONOMOUS-EXECUTION.md) → [NEXT-051.04](anchors/PALANG-0.0-NEXT-20261123-051-REVISION-04-AUTONOMOUS-EXECUTION-AND-PARTNER-TRIAGE.md).
+
+Commit-bound time: 2026-11-23T04:05:33Z / 2026-11-23T07:35:33+03:30. Candidate only; no Golden promotion is implied.
+
+
+## Partner simplification research (candidate)
+
+The lower-complexity hosting/MCP review is appended to [PALANG PARTNER independent API/MCP bridge](../architecture/PALANG-PARTNER-INDEPENDENT-API-MCP-BRIDGE-2026-11-22.md). Candidate only; no service provisioning or deployment is implied.
+
+
+Portable artifact round-trip failure analysis and least-privilege correction are recorded in [OUT-136](anchors/PALANG-0.0-OUT-20261123-136-REST-AND-AUTONOMOUS-EXECUTION.md) and [NEXT-051.04](anchors/PALANG-0.0-NEXT-20261123-051-REVISION-04-AUTONOMOUS-EXECUTION-AND-PARTNER-TRIAGE.md); exact-head acceptance remains pending.
+
+
+Issue #21's initial full-tree inventory and exact-candidate CI receipts are recorded in [OUT-136](anchors/PALANG-0.0-OUT-20261123-136-REST-AND-AUTONOMOUS-EXECUTION.md) and [NEXT-051.04](anchors/PALANG-0.0-NEXT-20261123-051-REVISION-04-AUTONOMOUS-EXECUTION-AND-PARTNER-TRIAGE.md). Semantic census and exact latest-head validation remain open.
+
+
+Issue #21's targeted family counts and repeated-basename screen are recorded in [OUT-136](anchors/PALANG-0.0-OUT-20261123-136-REST-AND-AUTONOMOUS-EXECUTION.md) and [NEXT-051.04](anchors/PALANG-0.0-NEXT-20261123-051-REVISION-04-AUTONOMOUS-EXECUTION-AND-PARTNER-TRIAGE.md); semantic reconciliation remains open.
+
+
+Issue #21's first content-based repeated-basename triage is recorded in [OUT-136](anchors/PALANG-0.0-OUT-20261123-136-REST-AND-AUTONOMOUS-EXECUTION.md) and [NEXT-051.04](anchors/PALANG-0.0-NEXT-20261123-051-REVISION-04-AUTONOMOUS-EXECUTION-AND-PARTNER-TRIAGE.md). Historical semantic reconciliation remains open.
+
+
+Issue #20's bounded local-runtime proof and remaining live-capture/recovery gates are recorded in [OUT-136](anchors/PALANG-0.0-OUT-20261123-136-REST-AND-AUTONOMOUS-EXECUTION.md) and [NEXT-051.04](anchors/PALANG-0.0-NEXT-20261123-051-REVISION-04-AUTONOMOUS-EXECUTION-AND-PARTNER-TRIAGE.md).

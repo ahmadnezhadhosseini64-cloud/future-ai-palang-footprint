@@ -9,7 +9,7 @@ from pathlib import Path
 from engine import (
     add_gap, audit, close_gap, decide_child, export_bundle, import_bundle,
     new_state, propose_child, record_interaction, save_state, load_state,
-    verify_state, digest, payload, register_point,
+    verify_state, digest, payload, register_point, lookup_interaction,
 )
 
 
@@ -20,9 +20,26 @@ class HaifStarterEngineTests(unittest.TestCase):
         self.assertTrue(event["anchor_id"].startswith("HAIF-ANCHOR-"))
         self.assertTrue(event["input_id"].startswith("HAIF-IN-"))
         self.assertTrue(event["output_id"].startswith("HAIF-OUT-"))
+        self.assertTrue(event["bridge_id"].startswith("HAIF-BRIDGE-"))
+        self.assertEqual(event["bridge"]["bridge_id"], event["bridge_id"])
+        self.assertEqual(event["bridge"]["input_id"], event["input_id"])
+        self.assertEqual(event["bridge"]["output_id"], event["output_id"])
+        self.assertEqual(event["bridge"]["event_id"], event["event_id"])
+        self.assertEqual(event["bridge"]["parent_event_hash"], event["parent_hash"])
+        self.assertEqual(event["bridge"]["status"], "MATCHED")
+        for anchor in (event["input_id"], event["output_id"], event["bridge_id"]):
+            self.assertIs(lookup_interaction(state, anchor), event)
         self.assertIsNone(event["user_message_time_utc"])
         self.assertEqual(event["registration_status"], "WRITE_READBACK_VERIFIED")
         self.assertEqual(verify_state(state), [])
+
+    def test_bridge_mismatch_rejected_even_with_rehashed_event(self):
+        state = new_state()
+        event = record_interaction(state, "input", "output")
+        event["bridge"]["output_id"] = "HAIF-OUT-TAMPERED"
+        event["event_hash"] = digest(payload(event))
+        errors = verify_state(state)
+        self.assertTrue(any("bridge.output_id mismatch" in error for error in errors))
 
     def test_modified_event_is_rejected(self):
         state = new_state()
@@ -77,10 +94,13 @@ class HaifStarterEngineTests(unittest.TestCase):
         second = record_interaction(state, "in-2", "out-2")
         second["input_id"] = first["input_id"]
         second["output_id"] = first["output_id"]
+        second["bridge_id"] = first["bridge_id"]
+        second["bridge"]["bridge_id"] = first["bridge_id"]
         second["event_hash"] = digest(payload(second))
         errors = verify_state(state)
         self.assertTrue(any("input_id duplicate" in error for error in errors))
         self.assertTrue(any("output_id duplicate" in error for error in errors))
+        self.assertTrue(any("bridge_id duplicate" in error for error in errors))
 
     def test_gaps_remain_open_until_evidence_closes_them(self):
         state = new_state()
@@ -198,7 +218,7 @@ class PortablePackageProtocolTests(unittest.TestCase):
         self.assertEqual(manifest["archive_policy"]["current_internal_version"], manifest["version"])
         self.assertEqual(manifest["archive_policy"]["update_mode"], "REBUILD_IN_PLACE_SAME_PACKAGE_IDENTITY")
         chain = manifest["parent_architecture"]
-        self.assertEqual(manifest["current_continuation_chain"], "POINT-0/GOLDEN → CURRENT-150.01 → IN-135 → OUT-134 → EVT-0322 → TIME-BINDING-EVT-0322 → CURRENT-150.02 → NEXT-051.02")
+        self.assertEqual(manifest["current_continuation_chain"], "POINT-0/GOLDEN → CURRENT-150.04 → IN-138 → BRIDGE-0138 → OUT-137 → EVT-0325 → TIME-BINDING-EVT-0325 → CURRENT-150.05 → NEXT-051.05")
         self.assertLess(chain.index("POINT-0/057 (0+ marker on canonical root 0)"), chain.index("IN-095"))
         self.assertLess(chain.index("IN-095"), chain.index("OUT-094"))
         self.assertLess(chain.index("OUT-094"), chain.index("EVT-0232"))
@@ -359,9 +379,9 @@ class InteractionResponseAnchorProtocolTests(unittest.TestCase):
         ):
             text = (root / filename).read_text(encoding="utf-8")
             self.assertIn(expected_chain, text, filename)
-            self.assertIn("0.5.1", text, filename)
+            self.assertIn("0.5.2", text, filename)
         readme = (root / "README.md").read_text(encoding="utf-8")
-        self.assertIn("v0.5.1", readme)
+        self.assertIn("v0.5.2", readme)
         self.assertIn("external build receipt", readme)
         self.assertIn("Previous verified v0.4.3 build receipt", readme)
         self.assertIn(expected_chain, readme)
@@ -372,4 +392,7 @@ class InteractionResponseAnchorProtocolTests(unittest.TestCase):
         self.assertIsNotNone(master_version_line, "packaged living master must expose its version")
         packaged_master_version = master_version_line.split("## نسخهٔ ", 1)[1].split(" ", 1)[0]
         self.assertEqual(manifest["current_living_master_version"], packaged_master_version)
-        self.assertIn(expected_chain, packaged_master)
+        for anchor in ("POINT-0/GOLDEN", "CURRENT-150.04", "IN-138", "BRIDGE-0138",
+                       "OUT-137", "EVT-0325", "TIME-BINDING-EVT-0325",
+                       "CURRENT-150.05", "NEXT-051.05"):
+            self.assertIn(anchor, packaged_master)

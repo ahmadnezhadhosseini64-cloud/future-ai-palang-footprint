@@ -1,3 +1,22 @@
+## CURRENT-150.05 amendment — official remote MCP first, custom broker only if needed
+
+The earlier topology remains a possible advanced route, but the implementation order is simplified:
+
+1. Do not deploy anything for anonymous public READ or the first-host enrollment receipt.
+2. For a separately operated OpenAI API host that needs ordinary GitHub operations, first evaluate the official GitHub remote MCP endpoint and restrict its toolsets to the minimum required. The MCP endpoint is not assumed available to every host/client; verify the actual OAuth and entitlement flow.
+3. OpenAI Responses API supports remote MCP calls and per-tool approval controls. The application still owns the secure OAuth lifecycle; never pass raw credentials into model context.
+4. Build a custom Cloudflare Worker/MCP broker only for a demonstrated missing operation or owner-only control that the official remote MCP does not support. Do not build a second full GitHub MCP server unnecessarily.
+5. Creating private repositories, changing Rulesets, writing Actions secrets/variables and other elevated account operations remain explicit owner gates.
+
+Official references:
+- GitHub MCP server: https://github.com/github/github-mcp-server
+- OpenAI Responses API remote MCP: https://developers.openai.com/api/docs/guides/tools-connectors-mcp
+- Cloudflare remote MCP and OAuth (optional broker only): https://developers.cloudflare.com/agents/model-context-protocol/guides/remote-mcp-server/ and https://developers.cloudflare.com/agents/model-context-protocol/protocol/authorization/
+
+This amendment does not claim that any remote endpoint, OAuth app, API project or service has been deployed.
+
+---
+
 ## CURRENT-151 continuation — 2026-11-22
 
 - Current checkpoint: CURRENT-151 / POINT-0/089; sole queue NEXT-051.
@@ -146,3 +165,25 @@ The current ChatGPT GitHub connector can write repository content, create branch
 Therefore this assistant can prepare and commit the source-controlled implementation contract and all repository-side work. It cannot truthfully register the GitHub App, create a hosting account/service, create an OpenAI API key, or deploy the endpoint from the current tool surface. Those actions require the owner to complete secure sign-in/secret entry in the relevant provider interface or to connect a deployment/API tool that exposes them. No credential should be pasted into chat.
 
 The next operational milestone is B1: provision a private service repository and hosting target, then proceed through B2–B6. Keep all work under the sole queue NEXT-051; do not create a parallel queue.
+
+
+
+## Simplification review — managed runtime and official GitHub MCP (candidate, 2026-11-23)
+
+The original architecture remains authoritative until a reviewed replacement is accepted. A lower-complexity candidate has been identified:
+
+- Cloudflare Workers has an official remote MCP server guide and OAuth authorization components. Its handler can be stateless; persistent state can be held in D1, KV or Durable Objects. This may reduce the need to operate a conventional server/VM.
+- OpenAI Responses API supports remote MCP servers and Secure MCP Tunnel. GitHub's official remote MCP endpoint is documented by OpenAI, so ordinary repository/branch/PR operations may not need a custom GitHub MCP implementation.
+- Recommended hybrid to evaluate: official GitHub MCP for ordinary scoped operations; a small custom owner broker only for privileged actions that require explicit per-operation approval, audit and read-back (private repo creation, Actions secret/variable writes, Ruleset changes, trusted promotion).
+- OpenAI's API guidance recommends a project service account for deployed applications, not a developer's personal key; keep the service key in the hosting secret manager.
+- GitHub Actions OIDC can remove long-lived cloud deployment credentials when the chosen host supports workload identity federation.
+
+Official references:
+- https://developers.cloudflare.com/agents/model-context-protocol/guides/remote-mcp-server/
+- https://developers.cloudflare.com/agents/model-context-protocol/protocol/authorization/
+- https://developers.openai.com/api/docs/guides/tools-connectors-mcp
+- https://docs.github.com/en/copilot/concepts/customizations/mcp
+- https://developers.openai.com/api/docs/guides/api-keys
+- https://docs.github.com/en/actions/how-tos/secure-your-work/security-harden-deployments/oidc-in-cloud-providers
+
+This is a research candidate only. No hosting account, repository, GitHub App, API key, OAuth callback, deployment or independent-host acceptance is claimed as provisioned.

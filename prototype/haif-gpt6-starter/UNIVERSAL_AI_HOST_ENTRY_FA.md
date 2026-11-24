@@ -1,3 +1,52 @@
+# CURRENT HOST ENTRY — one-message public-read enrollment and owner-controlled identity
+
+This current addendum takes precedence over older embedded snapshots in this file. It is a proposal on PR #145 until owner-controlled Golden merge.
+
+## One-message instruction for a fresh host
+
+You are invited as a restricted AI Host Node in the existing Future AI / Palang Footprint (HAIF) project. Do not start a new project.
+
+**Canonical public repository:** https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint
+
+1. Start with anonymous HTTPS READ/clone/fetch. This repository is Public; do not request OAuth or collaborator membership just to read it.
+2. Resolve the exact current main HEAD SHA. Read docs/REFERENCE_INDEX.md, the living mother at docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md, prototype/universal-host/UNIVERSAL_AI_HOST_ENTRY_FA.md, the host registry/workspace contracts, and the one current NEXT/CURRENT identified by the Reference Index. Do not trust old numbers embedded in this prompt.
+3. Return the enrollment receipt described below. Do not claim to be registered or ACTIVE.
+4. Do not write to any branch of MASTER/main, do not request or access RAHM, do not inspect another host, and do not request owner credentials or secrets.
+5. Do not create a private repository or ask the owner to do so before anonymous READ and the capability check are complete.
+6. If you have no persistent workspace or code execution, say so clearly. Do not call chat history a durable workspace.
+7. Stop after returning the receipt and exact missing capabilities. The owner reviews it and decides whether to issue an official Host ID or provision an isolated workspace.
+
+### Enrollment receipt — return these fields
+
+- OWNER_CHALLENGE: reproduce exactly if the owner supplied one; otherwise CHALLENGE_NOT_PROVIDED.
+- HOST_CLAIM_ID: generate a temporary random claim label for this attempt only; mark it UNTRUSTED / NOT AN OFFICIAL HOST ID.
+- PROVIDER / MODEL / RUNTIME: only what is actually visible; otherwise UNKNOWN.
+- REPOSITORY / BRANCH / RETRIEVAL METHOD.
+- MAIN_HEAD_SHA: exact observed SHA, not guessed.
+- REFERENCE_INDEX_BLOB_SHA, LIVING_MOTHER_BLOB_SHA, UNIVERSAL_ENTRY_BLOB_SHA, CURRENT_BLOB_SHA and NEXT_BLOB_SHA: exact values only if fetched.
+- CAPABILITIES: PUBLIC_READ, GIT_CLONE, CODE_EXECUTION, PRIVATE_WORKSPACE, DURABLE_STORAGE, RESTART_RECOVERY, GITHUB_CONNECTOR, REMOTE_MCP; each must be YES/NO/NOT_TESTED with evidence.
+- WORKSPACE_PROOF: if a genuinely private workspace exists, create/read/delete one harmless temporary file inside it and report the result; never write to the canonical repository for this test.
+- ISOLATION: explicitly confirm no MASTER write, no RAHM access, no owner secrets, and no other-host access.
+- BLOCKERS / OWNER_ACTION: request only the single exact owner-side action that is necessary after the tests.
+
+A host-generated claim ID is only a correlation label. It is not cryptographic identity and does not grant membership or permissions. If a one-time owner challenge is supplied, return it unchanged. If the runtime supports ephemeral key generation and signing, optionally provide a public key and signature over the challenge; never reveal the private key. Otherwise mark identity UNVERIFIED. The owner alone issues HAIF-HOST-YYYYMMDD-NNN after reviewing direct evidence.
+
+**Security boundary:** MASTER is PUBLIC READ ONLY for hosts; RAHM is private and owner-only. Any optional write-back is a separate, owner-controlled capability scoped only to that host's own private workspace/repository. The model never receives raw tokens.
+
+**Pair continuity:** every project interaction is linked as IN → BRIDGE → matching OUT → EVT → TIME-BINDING → CURRENT revision → the single NEXT queue. See docs/architecture/HOST-REGISTRY/HOST-ENROLLMENT-CHALLENGE-AND-PAIR-BRIDGE-2026-11-23.md.
+
+Current candidate chain: POINT-0/GOLDEN → CURRENT-150.04 → IN-138 → BRIDGE-0138 → OUT-137 → EVT-0325 → TIME-BINDING-EVT-0325 → CURRENT-150.05 → NEXT-051.05. PR #145 remains open/unmerged; last accepted Golden is CURRENT-150.02 / NEXT-051.02.
+
+---
+
+## Current canonical continuation — 2026-11-23 (candidate)
+
+`POINT-0/GOLDEN → IN-136 → OUT-135 → EVT-0323 → TIME-BINDING-EVT-0323 → CURRENT-150.03 → NEXT-051.03`
+
+The last accepted Golden state remains CURRENT-150.02 / NEXT-051.02. The .03 continuation is a candidate until exact-SHA audit, Portable RAHM Conformance, and controlled Golden merge/read-back succeed. The living mother remains version 1.8.4 and authoritative; packages and tests align forward. No downgrade, new root, parallel queue, host write to MASTER, or host access to RAHM is permitted.
+
+---
+
 # دستور واحد ورود میزبان هوش مصنوعی — نسخهٔ اولیهٔ شدنی 0.1.0
 
 **Project:** Future AI / Palang Footprint — HAIF  

@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:haif:host-enrollment-receipt:2026-11-23:001",
+  "title": "HAIF Host Enrollment Receipt",
+  "description": "Untrusted claim receipt returned by a new host before owner review. This schema does not create an official Host ID or grant access.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "owner_challenge",
+    "host_claim_id",
+    "identity_status",
+    "repository",
+    "source",
+    "references",
+    "capabilities",
+    "isolation",
+    "owner_action"
+  ],
+  "properties": {
+    "owner_challenge": {"type": "string", "minLength": 1},
+    "host_claim_id": {"type": "string", "minLength": 8, "maxLength": 128},
+    "identity_status": {"enum": ["UNVERIFIED_CLAIM", "SIGNED_CHALLENGE", "PROVIDER_VERIFIED"]},
+    "provider": {"type": ["string", "null"]},
+    "model": {"type": ["string", "null"]},
+    "runtime_version": {"type": ["string", "null"]},
+    "repository": {
+      "type": "object",
+      "required": ["url", "branch", "retrieval_method"],
+      "properties": {
+        "url": {"const": "https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint"},
+        "branch": {"const": "main"},
+        "retrieval_method": {"enum": ["HTTPS_READ", "GIT_CLONE", "GITHUB_CONNECTOR", "OTHER"]}
+      },
+      "additionalProperties": false
+    },
+    "source": {
+      "type": "object",
+      "required": ["main_head_sha"],
+      "properties": {
+        "main_head_sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "observed_at_utc": {"type": ["string", "null"], "format": "date-time"}
+      },
+      "additionalProperties": false
+    },
+    "references": {
+      "type": "object",
+      "required": ["reference_index_blob_sha", "living_mother_blob_sha", "universal_entry_blob_sha", "current_blob_sha", "next_blob_sha"],
+      "properties": {
+        "reference_index_blob_sha": {"type": ["string", "null"]},
+        "living_mother_blob_sha": {"type": ["string", "null"]},
+        "universal_entry_blob_sha": {"type": ["string", "null"]},
+        "current_blob_sha": {"type": ["string", "null"]},
+        "next_blob_sha": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    },
+    "capabilities": {
+      "type": "object",
+      "required": ["public_read", "git_clone", "code_execution", "private_workspace", "durable_storage", "restart_recovery", "github_connector", "remote_mcp"],
+      "properties": {
+        "public_read": {"$ref": "#/$defs/capability"},
+        "git_clone": {"$ref": "#/$defs/capability"},
+        "code_execution": {"$ref": "#/$defs/capability"},
+        "private_workspace": {"$ref": "#/$defs/capability"},
+        "durable_storage": {"$ref": "#/$defs/capability"},
+        "restart_recovery": {"$ref": "#/$defs/capability"},
+        "github_connector": {"$ref": "#/$defs/capability"},
+        "remote_mcp": {"$ref": "#/$defs/capability"}
+      },
+      "additionalProperties": false
+    },
+    "isolation": {
+      "type": "object",
+      "required": ["master_write", "rahm_access", "other_host_access", "owner_secret_access"],
+      "properties": {
+        "master_write": {"const": false},
+        "rahm_access": {"const": "NONE"},
+        "other_host_access": {"const": "NONE"},
+        "owner_secret_access": {"const": "NONE"},
+        "workspace_test": {"enum": ["PASS", "FAIL", "NOT_AVAILABLE", "NOT_TESTED"]}
+      },
+      "additionalProperties": false
+    },
+    "ephemeral_public_key": {"type": ["string", "null"]},
+    "challenge_signature": {"type": ["string", "null"]},
+    "owner_action": {"type": "string", "maxLength": 1000}
+  },
+  "$defs": {
+    "capability": {
+      "type": "object",
+      "required": ["status", "evidence"],
+      "properties": {
+        "status": {"enum": ["YES", "NO", "NOT_TESTED"]},
+        "evidence": {"type": "string", "maxLength": 2000}
+      },
+      "additionalProperties": false
+    }
+  }
+}

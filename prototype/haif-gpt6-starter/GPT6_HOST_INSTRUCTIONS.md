@@ -1,3 +1,24 @@
+# CURRENT HOST INSTRUCTION OVERRIDE — POINT-0/GOLDEN / package 0.5.2 candidate
+
+This current addendum supersedes older embedded snapshots below. The canonical repository remains public and hosts begin with anonymous READ. No host receives MASTER write or RAHM access.
+
+Current candidate chain:
+POINT-0/GOLDEN → CURRENT-150.04 → IN-138 → BRIDGE-0138 → OUT-137 → EVT-0325 → TIME-BINDING-EVT-0325 → CURRENT-150.05 → NEXT-051.05
+
+Last accepted Golden remains CURRENT-150.02 / NEXT-051.02 until PR #145 passes exact-head validation and owner-controlled promotion. Package internal version is 0.5.2 candidate; living mother remains 1.8.4. Every interaction pair requires IN → BRIDGE → OUT, event/time evidence and read-back. A host-generated claim ID is untrusted; only the owner issues an official Host ID after receipt review.
+
+Read the current Reference Index and latest main HEAD before acting. Do not treat any older CURRENT/NEXT number embedded below as current authority.
+
+---
+
+## Current canonical continuation — 2026-11-23 (candidate)
+
+`POINT-0/GOLDEN → IN-136 → OUT-135 → EVT-0323 → TIME-BINDING-EVT-0323 → CURRENT-150.03 → NEXT-051.03`
+
+The last accepted Golden state remains CURRENT-150.02 / NEXT-051.02. The .03 continuation is a candidate until exact-SHA audit, Portable RAHM Conformance, and controlled Golden merge/read-back succeed. The living mother remains version 1.8.4 and authoritative; packages and tests align forward. No downgrade, new root, parallel queue, host write to MASTER, or host access to RAHM is permitted.
+
+---
+
 # POINT-0/GOLDEN — current portable host contract
 
 - Living master: 1.8.2

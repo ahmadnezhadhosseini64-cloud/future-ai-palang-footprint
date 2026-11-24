@@ -51,7 +51,7 @@ def parse_latest_chain(index_text: str) -> dict[str, object]:
     following = re.search(r"^##\s+", index_text[start:], re.MULTILINE)
     section = index_text[start : start + following.start()] if following else index_text[start:]
     links = re.findall(r"\[([^\]]+)\]\(([^)]+)\)", section)
-    required = {"point":"POINT-0/","input":"IN-","output":"OUT-","event":"EVT-","current":"CURRENT-","next":"NEXT-"}
+    required = {"point":"POINT-0/","input":"IN-","bridge":"BRIDGE-","output":"OUT-","event":"EVT-","current":"CURRENT-","next":"NEXT-"}
     labels, targets, positions = {}, {}, []
     for key, prefix in required.items():
         matches = [(label.strip(), target.strip()) for label, target in links if label.strip().startswith(prefix)]
@@ -134,11 +134,12 @@ def main() -> int:
         if failures:
             raise ValueError(";".join(failures))
 
-        point_path, in_path, out_path = paths["point"], paths["input"], paths["output"]
+        point_path, in_path, bridge_path, out_path = paths["point"], paths["input"], paths["bridge"], paths["output"]
         event_path, current_path, next_path = paths["event"], paths["current"], paths["next"]
         docs = {
             "point": read_text(point_path),
             "in": read_text(in_path),
+            "bridge": read_text(bridge_path),
             "out": read_text(out_path),
             "event": read_text(event_path),
             "current": read_text(current_path),
@@ -151,14 +152,15 @@ def main() -> int:
             "queue_index": read_text(QUEUE_INDEX_PATH),
         }
 
-        markers = [chain["labels"][k] for k in ("point","input","output","event","current","next")]
+        markers = [chain["labels"][k] for k in ("point","input","bridge","output","event","current","next")]
         expected_by_doc = {
             "point": markers,
-            "in": [chain["labels"]["point"],chain["labels"]["output"],chain["labels"]["event"],chain["labels"]["current"],chain["labels"]["next"]],
-            "out": [chain["labels"]["point"],chain["labels"]["input"],chain["labels"]["event"],chain["labels"]["current"],chain["labels"]["next"]],
+            "in": [chain["labels"]["point"],chain["labels"]["bridge"],chain["labels"]["output"],chain["labels"]["event"],chain["labels"]["current"],chain["labels"]["next"]],
+            "bridge": [chain["labels"]["point"],chain["labels"]["input"],chain["labels"]["output"],chain["labels"]["event"],chain["labels"]["current"],chain["labels"]["next"]],
+            "out": [chain["labels"]["point"],chain["labels"]["input"],chain["labels"]["bridge"],chain["labels"]["event"],chain["labels"]["current"],chain["labels"]["next"]],
             "event": markers,
             "current": markers,
-            "next": [chain["labels"]["point"],chain["labels"]["current"],chain["labels"]["next"],"EVT-0241"],
+            "next": [chain["labels"]["point"],chain["labels"]["bridge"],chain["labels"]["current"],chain["labels"]["next"],"EVT-0241"],
         }
         for key, expected in expected_by_doc.items():
             for marker in expected:
@@ -174,18 +176,24 @@ def main() -> int:
             "manifest": "EXPORT_MANIFEST.json",
         }
         recovered = {}
-        for side, path in (("IN",in_path),("OUT",out_path)):
-            content = docs["in" if side=="IN" else "out"]
+        for side, path in (("IN",in_path),("BRIDGE",bridge_path),("OUT",out_path)):
+            content = docs[side.lower()]
             state = {key:require_one_link(path,content,suffix) for key,suffix in common_suffixes.items()}
+            if side in ("IN","OUT"):
+                require_one_link(path,content,bridge_path.name)
+            state["bridge"] = bridge_path.name
+            if side == "BRIDGE":
+                require_one_link(path,content,in_path.name)
+                require_one_link(path,content,out_path.name)
             recovered[side] = state
             for suffix in (point_path.name,event_path.name,next_path.name):
                 require_one_link(path,content,suffix)
-        if recovered["IN"] != recovered["OUT"]:
-            failures.append("IN_OUT_SHARED_TARGETS_MISMATCH")
+        if not (recovered["IN"] == recovered["BRIDGE"] == recovered["OUT"]):
+            failures.append("IN_BRIDGE_OUT_SHARED_TARGETS_MISMATCH")
 
         for source_path, key in ((current_path,"current"),(next_path,"next")):
             content = docs[key]
-            names = [point_path.name,in_path.name,out_path.name,event_path.name,current_path.name,next_path.name]
+            names = [point_path.name,in_path.name,bridge_path.name,out_path.name,event_path.name,current_path.name,next_path.name]
             for name in names:
                 if name == source_path.name:
                     continue
@@ -200,7 +208,7 @@ def main() -> int:
                     failures.append(f"{source_path.name}_missing_mirror_link_{name}")
 
         for key in ("master","reference_index","behavior_index","queue_index"):
-            for marker in (chain["labels"]["point"],chain["labels"]["current"],chain["labels"]["next"],"EVT-0241","TIME-BINDING-EVT-0241"):
+            for marker in (chain["labels"]["point"],chain["labels"]["input"],chain["labels"]["bridge"],chain["labels"]["output"],chain["labels"]["event"],chain["labels"]["current"],chain["labels"]["next"],"EVT-0241","TIME-BINDING-EVT-0241"):
                 if marker not in docs[key]:
                     failures.append(f"{key}_missing_{marker}")
 
@@ -255,7 +263,7 @@ def main() -> int:
         live=set(export_manifest.get("live_reference_files",[]))
         required_live={
             point_path.relative_to(ROOT).as_posix(),in_path.relative_to(ROOT).as_posix(),
-            out_path.relative_to(ROOT).as_posix(),event_path.relative_to(ROOT).as_posix(),
+            bridge_path.relative_to(ROOT).as_posix(),out_path.relative_to(ROOT).as_posix(),event_path.relative_to(ROOT).as_posix(),
             current_path.relative_to(ROOT).as_posix(),next_path.relative_to(ROOT).as_posix(),
             MIRROR_EVENT,MIRROR_TIME_BINDING,
             "scripts/behavior-hunter/verify_latest_current_0_0_chain.py",
@@ -268,7 +276,7 @@ def main() -> int:
             "test_id":f"RAHM-LATEST-CURRENT-0-0-RECONSTRUCTION-{chain['labels']['current']}",
             "status":"PASS" if not failures else "FAIL",
             "result":"PASS" if not failures else "FAIL",
-            "latest_chain":{k:chain["labels"][k] for k in ("point","input","output","event","current","next")},
+            "latest_chain":{k:chain["labels"][k] for k in ("point","input","bridge","output","event","current","next")},
             "in_out_shared_targets":recovered,
             "open_gates":open_gates,
             "pointer_conflict":{"CURRENT-065/CURRENT-066":"OPEN","winner_selected":False},
@@ -287,9 +295,9 @@ def main() -> int:
         outdir.mkdir(parents=True,exist_ok=True)
         (outdir/"latest-current-0-0-recovery-verification.json").write_text(json.dumps(result,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
         portable={
-            "test_id":f"RAHM-IN-OUT-LINK-EQUIVALENCE-{chain['labels']['input'].split('-')[-1]}-{chain['labels']['output'].split('-')[-1]}",
+            "test_id":f"RAHM-IN-BRIDGE-OUT-LINK-EQUIVALENCE-{chain['labels']['input'].split('-')[-1]}-{chain['labels']['output'].split('-')[-1]}",
             "result":result["result"],
-            "recovered_from":f"{chain['labels']['input']} and {chain['labels']['output']} independently",
+            "recovered_from":f"{chain['labels']['input']}, {chain['labels']['bridge']} and {chain['labels']['output']} independently",
             "canonical_state":recovered,
             "open_gates_preserved":all(v["present_in_NEXT"] and v["present_in_CURRENT"] and v["open_status_preserved"] for v in open_gates.values()),
             "scope":result["scope"],

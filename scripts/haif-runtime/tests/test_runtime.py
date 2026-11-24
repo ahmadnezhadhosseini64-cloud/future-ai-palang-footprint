@@ -34,6 +34,30 @@ class RuntimeTests(unittest.TestCase):
             self.assertEqual(restored["head_hash"], verified["head_hash"])
             self.assertIn("independent_host_import", restored["open_gates"])
 
+    def test_checkpoint_remains_valid_after_new_events_and_can_be_advanced(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            state_path = Path(tmp) / "state.json"
+            self.run_cli("--state", state_path, "init")
+            self.run_cli("--state", state_path, "record", "--input", "first", "--output", "one")
+            self.run_cli("--state", state_path, "checkpoint")
+
+            pinned = json.loads(self.run_cli("--state", state_path, "verify").stdout)
+            self.assertEqual(pinned["events"], 2)
+            first_checkpoint = pinned["checkpoint"]
+
+            self.run_cli("--state", state_path, "record", "--input", "second", "--output", "two")
+            after_append = json.loads(self.run_cli("--state", state_path, "verify").stdout)
+            self.assertEqual(after_append["result"], "PASS")
+            self.assertEqual(after_append["events"], 3)
+            self.assertEqual(after_append["checkpoint"], first_checkpoint)
+
+            self.run_cli("--state", state_path, "checkpoint")
+            advanced = json.loads(self.run_cli("--state", state_path, "verify").stdout)
+            self.assertEqual(advanced["result"], "PASS")
+            self.assertEqual(advanced["events"], 4)
+            self.assertEqual(advanced["checkpoint"]["event_count"], 4)
+            self.assertEqual(advanced["checkpoint"]["head_hash"], advanced["head_hash"])
+
     def test_stable_int_in_out_ids_and_reverse_lookup(self):
         with tempfile.TemporaryDirectory() as tmp:
             state_path = Path(tmp) / "state.json"
@@ -46,11 +70,14 @@ class RuntimeTests(unittest.TestCase):
             self.assertRegex(recorded["interaction_id"], r"^INT-[0-9]{8}-001$")
             self.assertRegex(recorded["input_id"], r"^IN-[0-9]{8}-001$")
             self.assertRegex(recorded["output_id"], r"^OUT-[0-9]{8}-001$")
-            for anchor in (recorded["input_id"], recorded["output_id"]):
+            self.assertRegex(recorded["bridge_id"], r"^BRIDGE-[0-9]{8}-001$")
+            for anchor in (recorded["input_id"], recorded["output_id"], recorded["bridge_id"]):
                 found = json.loads(self.run_cli("--state", state_path, "lookup", "--id", anchor).stdout)
                 self.assertEqual(found["result"], "FOUND")
                 self.assertEqual(found["record"]["interaction_record"]["input_id"], recorded["input_id"])
                 self.assertEqual(found["record"]["interaction_record"]["output_id"], recorded["output_id"])
+                self.assertEqual(found["record"]["interaction_record"]["bridge_id"], recorded["bridge_id"])
+                self.assertEqual(found["record"]["interaction_record"]["bridge"]["status"], "MATCHED")
 
     def test_interaction_record_matches_repository_json_schema_when_validator_available(self):
         try:
@@ -68,6 +95,16 @@ class RuntimeTests(unittest.TestCase):
             Draft202012Validator(schema, format_checker=FormatChecker()).validate(record)
             self.assertEqual(record["verification"]["runtime_capture"], "NOT_VERIFIED")
 
+    def test_bridge_rejects_mismatched_output_link(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            state_path = Path(tmp) / "state.json"
+            self.run_cli("--state", state_path, "init")
+            self.run_cli("--state", state_path, "record", "--input", "paired input", "--output", "paired output")
+            state = json.loads(state_path.read_text(encoding="utf-8"))
+            state["events"][0]["interaction_record"]["bridge"]["output_id"] = "OUT-20260101-999"
+            state_path.write_text(json.dumps(state), encoding="utf-8")
+            result = self.run_cli("--state", state_path, "verify", expected=2)
+            self.assertIn("bridge.output_id mismatch", result.stderr)
     def test_tampering_detected(self):
         with tempfile.TemporaryDirectory() as tmp:
             state_path = Path(tmp) / "state.json"

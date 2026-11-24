@@ -22,8 +22,8 @@ python -m unittest discover -s scripts/haif-runtime/tests -v
 
 ## What is implemented
 - Local JSON state initialization.
-- Append-only interaction events with stable daily `INT-YYYYMMDD-NNN`, `IN-YYYYMMDD-NNN` and `OUT-YYYYMMDD-NNN` anchors.
-- Reverse lookup from either IN or OUT anchor to the complete interaction event.
+- Append-only interaction events with stable daily `INT-YYYYMMDD-NNN`, `IN-YYYYMMDD-NNN`, `OUT-YYYYMMDD-NNN` and `BRIDGE-YYYYMMDD-NNN` anchors.
+- Reverse lookup from INT, IN, OUT or BRIDGE anchor to the complete interaction event. The Bridge record explicitly binds matching input/output IDs, event ID and previous event hash; integrity checks reject mismatched links.
 - UTC operation time is recorded; unavailable original message time and repository commit time remain explicitly NOT_EXPOSED/unknown rather than being inferred.
 - The record envelope follows the repository interaction-pair JSON Schema; schema-validation status remains NOT_RUN until a validator actually validates the record.
 - Chain verification to detect event edits, reordering and broken parent links.
