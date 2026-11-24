@@ -2,7 +2,7 @@
 
 - Stable queue family: NEXT-051
 - Revision: 051.05
-- Status: ACTIVE / LIVING / GOLDEN-BRANCH-CANDIDATE
+- Status: ACTIVE / LIVING / GOLDEN-BRANCH-CANDIDATE / EXACT-SHA-CONFORMANCE-PASS / OWNER-REVIEW-PENDING
 - Parent candidate: NEXT-051.04
 - Current candidate: [CURRENT-150.05](PALANG-0.0-CURRENT-20261123-150-REVISION-05-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md)
 - Input/Bridge/Output: [IN-138](PALANG-0.0-IN-20261123-138-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md) → [BRIDGE-0138](PALANG-0.0-BRIDGE-20261123-0138-IN-138-OUT-137.md) → [OUT-137](PALANG-0.0-OUT-20261123-137-OWNER-HOST-ENROLLMENT-AND-PAIR-BRIDGE.md)
@@ -14,7 +14,8 @@
 
 ## Priority A — finish this interaction pair
 - Read back all records and verify all edges.
-- Run exact-head Living Architecture Audit and Portable RAHM Conformance after final branch changes.
+- Exact PR-head conformance now PASS: Living Architecture Audit #45301053694, Portable RAHM Conformance #45301053616, interaction ledger/recovery #45301053649 and RAHM Runtime Tests #45301053707. Re-run after any further branch edit.
+- Owner-controlled Golden review/merge remains pending; the last accepted Golden revision remains CURRENT-150.02 / NEXT-051.02.
 - Keep PR #145 open for owner-controlled Golden review; main remains untouched.
 
 ## Priority B — simple new-host entry
