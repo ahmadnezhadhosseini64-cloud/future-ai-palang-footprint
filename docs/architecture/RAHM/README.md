@@ -1,4 +1,4 @@
-> **CURRENT GOVERNANCE — POINT-0/GOLDEN / CURRENT-142 / POINT-0++ / 2026-11-22**
+> **CURRENT GOVERNANCE — POINT-0/GOLDEN / CURRENT-152 / POINT-0++ / 2026-11-24**
 > The canonical root remains the single existing POINT-0. This is the golden baseline of the already-built project, not a new project, root, or parallel queue. Use POINT-0/GOLDEN as the sole current operating baseline, then the connected checkpoints through CURRENT-142 / POINT-0++ and the sole active NEXT-051. The default branch main is a publication/integration destination, not the authority for current architecture while it is behind this golden proposal. Do not count historical commits or replay prior work as a task list. Historical points and embedded snapshots are evidence only; inspect them only when the owner explicitly requests excavation or when a concrete current defect requires source evidence.
 >
 > **Absolute host boundary:** every host has PUBLIC READ ONLY access to the canonical master. No host, host-held credential, host App, broker, branch, PR, issue, release, workflow, setting, or indirect relay may write to or promote content into the master. Host work remains in its own isolated runtime and, if owner-provisioned, its own private repository. The owner alone exports selected material.
@@ -12,7 +12,7 @@
 # RAHM — Owner-Controlled Intelligence Quarantine
 
 - Stable ID: HAIF-RAHM-OWNER-CONTROL-PLANE-2026-11-22-001
-- Version: 1.1.0
+- Version: 1.2.0
 - Status: GOLDEN BASELINE ALIGNED / PRIVATE STORE AND AUTOMATION SETUP PENDING
 - Owner: @ahmadnezhadhosseini64-cloud
 - Canonical root: POINT-0 only; golden baseline: docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md; current checkpoint: CURRENT-142 / POINT-0++; sole queue: NEXT-051.
@@ -87,3 +87,18 @@ No host has a direct or indirect write path to the canonical master. A host may 
 ## Owner connector boundary — POINT-0/GOLDEN
 
 The ChatGPT GitHub connection currently authenticates as the repository owner and reports admin/push permission on the public master. It is an owner-account connector, not a Host Node identity or the Promotion App. Do not expose it to host workspaces. It does not automatically grant access to the private RAHM repository or private host repositories, and it does not expose every GitHub admin operation. The separate Promotion App must author bot PRs; the owner reviews and approves them.
+
+
+## Owner-approved Organization-first and real host development boundary — 2026-11-24
+
+- Parent: POINT-0/GOLDEN → CURRENT-151 → POINT-0/090 → CURRENT-152 → sole NEXT-051.
+- Central RAHM remains a separate PRIVATE owner-only repository. Hosts have no read, write, admin, token, App or indirect access to it.
+- Each verified host gets a separate owner-created PRIVATE development repository. This is a real development workspace: the host may create/edit documents and code, run tests, prepare branches/proposals, and retain evidence/receipts. Host participation is not report-only.
+- No host can access another host repository or MASTER. Host repository permissions never extend to Organization settings, secrets, Actions administration, rulesets, collaborators, webhooks, transfer or deletion.
+- Only owner-commanded export and redaction connect a host workspace to central RAHM.
+- A broker, if introduced later, may be scoped only to one mapped host repository; it must never write to central RAHM or MASTER and remains disabled until security and negative tests pass.
+- GitHub repository permissions are repository-scoped, not folder-scoped. Never grant a host write access to central RAHM to simulate a per-folder workspace.
+- Organization-first sequence: create and test Organization and org rulesets; create private central RAHM; create/test per-host private workspaces; run negative tests; prepare migration inventory and rollback; transfer master only after all gates pass.
+- GitHub documentation currently lists organization-level repository rulesets for GitHub Team and GitHub Enterprise; confirm eligible plan/feature access before creating the Organization.
+- HOST = DEVELOPMENT AUTHORITY in its own repository; OWNER = RELEASE AUTHORITY for central RAHM and MASTER.
+- Implementation remains NOT VERIFIED until actual GitHub objects, settings, access lists, privacy, connector access and negative tests are read back.
