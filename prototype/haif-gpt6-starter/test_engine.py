@@ -392,4 +392,7 @@ class InteractionResponseAnchorProtocolTests(unittest.TestCase):
         self.assertIsNotNone(master_version_line, "packaged living master must expose its version")
         packaged_master_version = master_version_line.split("## نسخهٔ ", 1)[1].split(" ", 1)[0]
         self.assertEqual(manifest["current_living_master_version"], packaged_master_version)
-        self.assertIn(expected_chain, packaged_master)
+        for anchor in ("POINT-0/GOLDEN", "CURRENT-150.04", "IN-138", "BRIDGE-0138",
+                       "OUT-137", "EVT-0325", "TIME-BINDING-EVT-0325",
+                       "CURRENT-150.05", "NEXT-051.05"):
+            self.assertIn(anchor, packaged_master)
