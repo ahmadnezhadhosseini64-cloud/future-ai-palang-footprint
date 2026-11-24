@@ -98,3 +98,20 @@ The connected ChatGPT GitHub integration currently authenticates as the reposito
 - The current owner connector has broad admin/push rights; this is not least-privilege isolation. The owner must keep it out of host workspaces and review connector scope in GitHub/ChatGPT settings.
 
 This separation explains why a connected account does not mean every GitHub operation is available: the connector exposes a defined subset of API actions, and repository rules plus GitHub's self-approval restriction still apply.
+
+
+---
+
+## 11. Owner-approved Internet Archive primary-library research extension — 2026-11-24
+
+This is an additive owner-directed clarification to the existing POINT-0/GOLDEN baseline. It does not create a new root, CURRENT, event identity, or NEXT queue; it continues within the existing single NEXT-051.
+
+- Permanent primary-library decision: Internet Archive is the primary library for the multidisciplinary full-text and interactive research path. Other repositories remain optional supplements only; they do not replace the primary.
+- Scope is not history-only. Research may cover agriculture, animal science, medicine, psychology, engineering, technology, economics, humanities, literature and other disciplines, selected by actual accessible full text and source quality.
+- Access classification must distinguish catalogue metadata, OCR snippets, PDF text layers, full OCR/TXT, page images, restricted/borrow-only items, and genuinely extractable full text. Item counts are never a substitute for full-text proof.
+- The existing interactive prototype at `docs/architecture/interactive-prototype/index.html` is the single existing workspace to extend. It now contains a candidate Internet Archive BookReader embed, explicit consent-gated local-only interaction logging, manual query/notes capture and JSON export. It is not yet deployed or runtime-verified until Pages deployment and browser tests pass.
+- BookReader page/mode events may be received through the documented `bookReaderFragmentChange` iframe postMessage contract. Cross-origin content/search text is not automatically readable; manual query capture must remain user-entered. No private account history or hidden telemetry is claimed.
+- Public full-text samples and field-specific limitations are registered in the existing NEXT-051 file. Current smoke test verifies full OCR text access for agriculture, psychology, medicine and economics; engineering is PDF text-layer-only pending a standalone IA OCR verification. OCR quality and item-specific rights require review.
+- Rights, access restrictions, provenance, page anchors, OCR quality, and reproducibility must be assessed per item and jurisdiction before reuse or bulk extraction.
+- The owner has now explicitly directed that the existing owner-authored PR #162 be prepared for integration and, if current checks and GitHub controls allow, merged normally to main. This is a one-time instruction for PR #162 only; it does not authorize any host or automation to merge other PRs, bypass rulesets, modify MASTER/RAHM, or write directly to main. If a mandatory independent GitHub review/approval or protection condition blocks the merge, stop and report the exact owner action; do not bypass.
+- Publish status must be evidence-based: PR merged is not equivalent to Pages deployed, and Pages deployed is not equivalent to runtime/browser verified. Keep each status separate and read back exact SHAs.

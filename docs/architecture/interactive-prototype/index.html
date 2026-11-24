@@ -72,5 +72,107 @@ try{const raw=localStorage.getItem(KEY);if(raw){const parsed=JSON.parse(raw);if(
 render();
 })();
 </script>
+
+<!-- INTERNET ARCHIVE RESEARCH WORKSPACE v1 -->
+<section id="iaResearch" aria-labelledby="iaTitle">
+<h2 id="iaTitle">۵. کتابخانهٔ پژوهشی اصلی — Internet Archive</h2>
+<p>این بخش یک فضای مطالعهٔ تعبیه‌شده و آزمایشی است. کتاب‌ها از صفحهٔ عمومی Internet Archive باز می‌شوند. ثبت رفتار فقط پس از رضایت صریح فعال می‌شود و داده‌ها در مرورگر همین دستگاه می‌مانند؛ هیچ ارسال خودکاری به سرور پروژه انجام نمی‌شود.</p>
+<label><input id="iaConsent" type="checkbox" style="width:auto"> با ثبت محلیِ رویدادهای پژوهشی همین نشست موافقم (انتخاب کتاب، تغییر صفحه/حالت دریافت‌شده از Reader، عبارت جست‌وجویی که خودم دستی ثبت می‌کنم و یادداشت خودم).</label>
+<p id="iaStatus" role="status" aria-live="polite" class="muted">ثبت محلی خاموش است تا زمانی که رضایت بدهی.</p>
+<label for="iaBook">اثر برای مطالعه</label>
+<select id="iaBook" style="width:100%;padding:.7rem;border-radius:8px">
+<option value="manualofgenerala00terr" data-title="Manual of general agriculture" data-field="کشاورزی" data-year="1912">کشاورزی — Manual of general agriculture (1912)</option>
+<option value="humanmindtextboo01sulluoft" data-title="The human mind, a text-book of psychology" data-field="روان‌شناسی" data-year="1892">روان‌شناسی — The human mind (1892)</option>
+<option value="b28135970" data-title="A text-book of medicine: for students and practitioners" data-field="پزشکی" data-year="1893">پزشکی — A text-book of medicine (1893)</option>
+<option value="cu31924013685858" data-title="Outlines of economics" data-field="اقتصاد" data-year="1916">اقتصاد — Outlines of economics (1916)</option>
+<option value="birdbookillustra00reedrich" data-title="The Bird Book" data-field="جانورشناسی/پرندگان" data-year="1914">پرندگان — The Bird Book (1914)</option>
+</select>
+<div class="row">
+<button id="iaLoad">بازکردن در کتاب‌خوان</button>
+<a id="iaItemLink" href="https://archive.org/details/manualofgenerala00terr" target="_blank" rel="noopener">صفحهٔ اصلی اثر</a>
+<a id="iaTextLink" href="https://archive.org/stream/manualofgenerala00terr/manualofgenerala00terr_djvu.txt" target="_blank" rel="noopener">متن کامل OCR</a>
+</div>
+<p class="muted">جست‌وجوی داخل کتاب را از ابزار خود BookReader انجام بده. به‌دلیل محدودیت امنیتی iframe بین‌مبدأ، این صفحه محتوای جست‌وجو یا متن داخل قاب را نمی‌خواند؛ فقط پیام تغییر صفحه/حالت مستند BookReader را در صورت ارسال دریافت می‌کند.</p>
+<iframe id="iaReader" title="Internet Archive BookReader" src="https://archive.org/embed/manualofgenerala00terr" style="width:100%;height:680px;border:1px solid #8887;border-radius:10px" loading="lazy" allowfullscreen></iframe>
+<h3>ثبت دستی پژوهش</h3>
+<label for="iaQuery">عبارت جست‌وجو (بعد از جست‌وجو در Reader، در صورت تمایل اینجا ثبت کن)</label>
+<input id="iaQuery" type="text" placeholder="عبارت جست‌وجوشده — ثبت دستی، نه دریافت خودکار">
+<button id="iaRecordQuery">ثبت دستی عبارت</button>
+<label for="iaNote">یادداشت پژوهشی / شمارهٔ صفحه / نکتهٔ OCR</label>
+<textarea id="iaNote" rows="3" placeholder="یادداشت یا شمارهٔ صفحه را خودت وارد کن…"></textarea>
+<button id="iaRecordNote">ثبت یادداشت</button>
+<div class="row">
+<button id="iaExport">استخراج شواهد محلی (JSON)</button>
+<button id="iaClear">پاک‌کردن دفتر محلی این بخش</button>
+</div>
+<p><strong>رویدادهای ثبت‌شده در این مرورگر:</strong> <span id="iaCount">۰</span></p>
+<div id="iaEvents" aria-live="polite"><p class="muted">هنوز رویدادی ثبت نشده است.</p></div>
+<ul class="muted">
+<li>پیام‌های صفحه فقط از مبدأ دقیق archive.org و فقط از همین iframe پذیرفته می‌شوند.</li>
+<li>عبارت جست‌وجو و یادداشت فقط وقتی ثبت می‌شوند که خودت دکمهٔ ثبت را بزنی.</li>
+<li>با خاموش‌کردن رضایت، ثبت رویدادهای بعدی متوقف می‌شود. پاک‌سازی فقط دفتر همین بخش را پاک می‌کند.</li>
+<li>این ابزار تاریخچهٔ خصوصی حساب Internet Archive را نمی‌خواند، رفتار پنهان را رصد نمی‌کند و نتیجهٔ پژوهش را به‌صورت خودکار به مخزن یا ابر نمی‌فرستد.</li>
+</ul>
+</section>
+<script>
+(function(){
+'use strict';
+const key='palang.internet-archive.research.v1';
+const $=id=>document.getElementById(id);
+const frame=$('iaReader');
+const book=$('iaBook');
+let consent=false, events=[];
+function selected(){const o=book.options[book.selectedIndex];return {identifier:book.value,title:o.dataset.title,field:o.dataset.field,year:o.dataset.year};}
+function announce(s){$('iaStatus').textContent=s;}
+function render(){
+ $('iaCount').textContent=String(events.length);
+ const host=$('iaEvents');host.replaceChildren();
+ if(!events.length){const p=document.createElement('p');p.className='muted';p.textContent='هنوز رویدادی ثبت نشده است.';host.appendChild(p);return;}
+ events.slice().reverse().forEach(e=>{const p=document.createElement('p');p.className='event';p.textContent=e.atUtc+' · '+e.type+' · '+e.book.identifier+(e.fragment?' · '+e.fragment:'')+(e.value?' · '+e.value:'');host.appendChild(p);});
+}
+function save(){try{localStorage.setItem(key,JSON.stringify({schema:'palang-ia-research/1',events}));announce('ثبت محلی روشن است؛ داده‌ها فقط در همین مرورگر ذخیره می‌شوند.');}catch(e){announce('ذخیره‌سازی محلی در این مرورگر در دسترس نیست؛ رویداد پایدار ثبت نشد.');}}
+function record(type,details){
+ if(!consent){announce('برای ثبت رویداد، ابتدا رضایت محلی را فعال کن.');return;}
+ events.push({atUtc:new Date().toISOString(),type,book:selected(),...details});
+ save();render();
+}
+function links(){
+ const id=book.value;
+ $('iaItemLink').href='https://archive.org/details/'+encodeURIComponent(id);
+ $('iaTextLink').href='https://archive.org/stream/'+encodeURIComponent(id)+'/'+encodeURIComponent(id)+'_djvu.txt';
+}
+$('iaLoad').addEventListener('click',()=>{
+ const b=selected();
+ frame.src='https://archive.org/embed/'+encodeURIComponent(b.identifier);
+ links();
+ record('work-selected',{value:b.title});
+});
+book.addEventListener('change',links);
+$('iaConsent').addEventListener('change',e=>{consent=!!e.target.checked;announce(consent?'رضایت فعال شد؛ ثبت فقط محلی است.':'رضایت خاموش شد؛ ثبت رویدادهای جدید متوقف است.');});
+$('iaRecordQuery').addEventListener('click',()=>{const q=$('iaQuery').value.trim();if(!q)return;record('manual-search-query',{value:q,collectionMethod:'user-entered-after-reader-search'});});
+$('iaRecordNote').addEventListener('click',()=>{const n=$('iaNote').value.trim();if(!n)return;record('user-note',{value:n});$('iaNote').value='';});
+$('iaExport').addEventListener('click',()=>{
+ if(!consent){announce('برای خروجی گرفتن از دفتر رویداد، رضایت محلی را فعال کن.');return;}
+ const payload={schema:'palang-ia-research/1',exportedAtUtc:new Date().toISOString(),storage:'browser-local-only',events};
+ const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});
+ const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='palang-internet-archive-research.json';a.click();URL.revokeObjectURL(url);
+ announce('فایل JSON برای ذخیرهٔ دستی ساخته شد؛ هیچ داده‌ای به سرور ارسال نشد.');
+});
+$('iaClear').addEventListener('click',()=>{events=[];try{localStorage.removeItem(key);}catch(e){}render();announce('دفتر رویدادهای محلی این بخش پاک شد.');});
+window.addEventListener('message',e=>{
+ if(e.origin!=='https://archive.org'||e.source!==frame.contentWindow)return;
+ let d=e.data;
+ if(typeof d==='string'){try{d=JSON.parse(d);}catch(err){return;}}
+ if(!d||d.type!=='bookReaderFragmentChange'||typeof d.fragment!=='string')return;
+ record('reader-fragment-change',{fragment:d.fragment});
+});
+try{
+ const raw=localStorage.getItem(key);
+ if(raw){const data=JSON.parse(raw);if(data&&data.schema==='palang-ia-research/1'&&Array.isArray(data.events))events=data.events;}
+}catch(e){announce('دفتر محلی قبلی قابل‌بازیابی نبود.');}
+links();render();
+})();
+</script>
+
 </body>
 </html>
