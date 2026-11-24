@@ -1,6 +1,6 @@
 > **CURRENT POINT-0++:** [CURRENT-152](docs/0.0/anchors/PALANG-0.0-CURRENT-20261124-152-ORG-RAHM-OWNER-RELEASE.md) · [POINT-0/090](docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-20261124-090-ORG-RAHM-OWNER-RELEASE.md) · [EVT-0321](docs/architecture/BEHAVIOR-TRACE/EVT-0321-OWNER-APPROVED-ORG-RAHM-OWNER-RELEASE-2026-11-24.md) → [TIME-BINDING-EVT-0321](docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0321-OWNER-APPROVED-ORG-RAHM-2026-11-24.md) · sole queue [NEXT-051](docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 
-**Proposal status:** branch `point0-090-org-rahm-owner-release-20261124`, based on CURRENT-151 branch `work/current151-exact-golden-verify-20261122`. This continuation is not yet merged to Golden or main. Organization, central private RAHM, host repositories and master transfer are NOT CREATED / NOT VERIFIED.
+**Proposal status:** branch `point0-090-org-rahm-owner-release-20261124`, based on CURRENT-151 branch `work/current151-exact-golden-verify-20261122`. PR #159 is merged to the CURRENT-151 Golden working branch as `3d1dd8baed7f0ff1ebc2a12daa53786d2e16e4b8` (UTC 2026-11-24T06:38:33Z). Main/MASTER publication remains pending; CI/exact-Golden workflow has not yet been verified. Organization, central private RAHM, host repositories and master transfer are NOT CREATED / NOT VERIFIED.
 
 ---
 
