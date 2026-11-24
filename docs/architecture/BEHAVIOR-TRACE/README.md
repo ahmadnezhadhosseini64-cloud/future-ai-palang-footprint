@@ -16,7 +16,7 @@
 - Canonical root remains POINT-0/GOLDEN. EVT-0316 and EVT-0315 with their time bindings remain preserved. POINT-0/016, POINT-0/017, POINT-0/018 / EVT-0180, EVT-0177 and its time binding, canonical EVT-0178, EVT-0179 collision lineage and the quarantined duplicate-number draft remain preserved.
 - - Main HEAD at run start was `30d1d3b2de09078131fa3c8a0ff7c492a7ab0d7e`; exact-head Living Architecture Audit / Portable RAHM evidence was not surfaced, so main remains NOT VERIFIED. Latest candidate Audit 45110219361 and Portable RAHM 45110219381 passed on PR #145 merge SHA `44ffe850d8dc9ec0c1b9cafe8cc0ae1ec829625a` (PR head `cfac0057832f3116d94cddc11294427af55dd063`), not on main. CURRENT-065/CURRENT-066 and overlay-manifest lineage remain OPEN / AMBIGUOUS; Issues #20/#21 remain OPEN; Buffer/Persistent Memory NOT VERIFIED; Dropbox OPEN / NOT VERIFIED; external independent-host recovery NOT RUN.
 - Source blob `de1b75f07241c9b313e476af5f1417177ff78c10` is unchanged. Library v7 remains a normalized match with one extra terminal LF; no source or Library write occurred.
-## Latest user-turn event — EVT-0314 / CURRENT-145
+## Previous user-turn event — EVT-0314 / CURRENT-145 (historical)
 
 - [EVT-0314](./EVT-0314-OWNER-APPROVED-INDEPENDENT-PARTNER-API-MCP-BRIDGE-BOOTSTRAP-2026-11-22.md) → [TIME-BINDING-EVT-0314](./TIME-BINDING-EVT-0314-OWNER-APPROVED-PARTNER-BRIDGE-2026-11-22.md) → [CURRENT-145](../../0.0/anchors/PALANG-0.0-CURRENT-20261122-145-POINT-0-PLUSPLUS-PARTNER-BRIDGE-BOOTSTRAP.md) → sole active [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
 - This is the latest user-turn continuation on the single POINT-0/GOLDEN root; mirror-only EVT-0316 does not replace it. EVT-0315 remains preserved as the preceding mirror-only event.
@@ -49,8 +49,8 @@
 # نمایهٔ دفتر ردیابی رفتار تعامل
 
 - Stable ID: BEHAVIOR-TRACE-INDEX-HUMAN-AI-2026-10-19-001
-- Version: 1.0.49
-- Date: 2026-11-21
+- Version: 1.0.50
+- Date: 2026-11-24
 - Project: Future AI / Palang Footprint / HAIF
 
 ## مسیرهای بازیابی
