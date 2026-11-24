@@ -1,3 +1,19 @@
+## CURRENT-146 / POINT-0++ — Organization-first, independent RAHM and host development (2026-11-24)
+
+- Continuation: [CURRENT-145](PALANG-0.0-CURRENT-20261122-145-POINT-0-PLUSPLUS-PARTNER-BRIDGE-BOOTSTRAP.md) → [POINT-0/087](GPT6-RAHM-USER-POINT-0-20261124-087-ORG-RAHM-OWNER-RELEASE-ARCHITECTURE.md) → [IN-131](PALANG-0.0-IN-20261124-131-ORG-RAHM-OWNER-RELEASE.md) → [OUT-130](PALANG-0.0-OUT-20261124-130-ORG-RAHM-OWNER-RELEASE.md) → [EVT-0318](../../architecture/BEHAVIOR-TRACE/EVT-0318-OWNER-APPROVED-ORG-RAHM-OWNER-RELEASE-2026-11-24.md) → [TIME-BINDING-EVT-0318](../../architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0318-OWNER-APPROVED-ORG-RAHM-2026-11-24.md) → [CURRENT-146](PALANG-0.0-CURRENT-20261124-146-ORG-RAHM-OWNER-RELEASE.md) → this same sole queue NEXT-051.
+- Owner-approved decisions: prepare GitHub Organization first; keep personal master unchanged until dry-run and rollback pass; create independent PRIVATE central RAHM; create one PRIVATE owner-created development repository per verified host; HOST = development authority in own repo; OWNER = sole release authority for central RAHM and MASTER; preserve the three protection layers.
+- **DONE / READ-BACK VERIFIED ON PROPOSAL BRANCH:** POINT-0/087, IN-131, OUT-130, EVT-0318, TIME-BINDING-EVT-0318, CURRENT-146; Host Security v1.4.0; RAHM README v1.2.0. PR #158 carries the same branch and remains OPEN / UNMERGED.
+- **OPEN — O1:** create Organization; configure membership, repository creation/deletion/transfer, 2FA and org rulesets; prove repo admins cannot weaken org rules. Organization Owner still retains authority to change org rules; no independent custodian is appointed.
+- **OPEN — O2:** create `future-ai-palang-rahm` as PRIVATE, owner-only; read back privacy, permissions, audit and ChatGPT connector access.
+- **OPEN — O3:** create isolated PRIVATE development repository for each verified Host ID; map repo/workspace server-side; no shared host repo or credential.
+- **OPEN — O4:** run negative tests: Host A↔Host B denied; all hosts denied central RAHM and MASTER; revoked access denied; host cannot administer repositories/settings/secrets/Actions/rulesets.
+- **OPEN — O5:** current main Ruleset 27814009 last read-back still had required approvals=0 and Code Owner review=false; configure required owner review, stale approval dismissal and conversation resolution only after the separate bot PR path is proven, then read back.
+- **OPEN — O6:** migration dry-run and rollback; audit Pages/custom domain, Actions, secrets, Apps, OAuth, webhooks, packages, releases, rulesets, permissions, URLs and history. Transfer master only after all checks pass.
+- **OPEN — O7:** exact-main CI/read-back after publication; no host activation until access scope, receipt, isolation and recovery tests pass.
+- Organization, central RAHM, host repositories, App, broker and migration are NOT CREATED / NOT VERIFIED. No host is ACTIVE. No new NEXT queue; NEXT-051 remains the sole queue.
+
+---
+
 ## CURRENT-145 / POINT-0++ — independent Partner API/MCP bridge (2026-11-22)
 
 - Publication read-back: PR #109 merged to Golden; PR #110 merged to main. Main HEAD `90a0282e03e1a50b270d33ed470cbd9d15d6f5b9`; both branches tree SHA `88dcc25f6fa0c25da85f59d916218ecc4f484b9a` (MATCH).
