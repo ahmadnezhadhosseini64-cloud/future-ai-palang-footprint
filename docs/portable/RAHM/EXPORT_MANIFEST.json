@@ -1,7 +1,7 @@
 {
   "package_id": "HAIF-RAHM-PORTABLE-20261024-001",
   "version": "1.8.46",
-  "manifest_status": "POINT-0/GOLDEN / CURRENT-150.05 and NEXT-051.05 are candidates on PR #145; parent CURRENT-150.02 / NEXT-051.02 remains last accepted Golden revision; living mother 1.8.4 remains authoritative; exact-SHA conformance is being rerun.",
+  "manifest_status": "POINT-0/GOLDEN / CURRENT-150.05 and NEXT-051.05 remain PR #145 candidates; exact-PR-head Living Architecture Audit, Portable RAHM Conformance, interaction-ledger recovery and RAHM runtime CI all PASS; owner-controlled Golden merge remains pending; living mother 1.8.4 remains authoritative.",
   "created_from_checkpoint": "HAIF-POINT-0-GOLDEN-2026-11-22-001 + HAIF-CURRENT-150.05 (candidate)",
   "digest_algorithm": "SHA-256 over exact checked-out file bytes; expected values were produced by successful workflow runs and are compared on every package build. Git blob SHA-1 is tracked separately.",
   "files": [
@@ -636,7 +636,7 @@
     "output": "OUT-137",
     "current": "CURRENT-150.05",
     "next": "NEXT-051.05",
-    "status": "CANDIDATE / EXACT-SHA-VALIDATION-PENDING",
+    "status": "CANDIDATE / EXACT-SHA-CONFORMANCE-PASS / OWNER-REVIEW-PENDING",
     "parent_accepted": "CURRENT-150.02 / NEXT-051.02",
     "pr": 145,
     "main_modified": false,
@@ -645,6 +645,17 @@
     "host_enrollment": "PUBLIC_READ_ONLY / OWNER_REVIEW_REQUIRED",
     "pair_graph": "GRAPH_VERIFIED",
     "interaction_runtime_bridge": "IMPLEMENTED / CI_VALIDATION_PASS",
-    "independent_host_acceptance": "NOT_RUN"
+    "independent_host_acceptance": "NOT_RUN",
+    "validation": {
+      "tested_pr_head_sha": "91318aa350832fdc685e21b689d7eea5476daff2",
+      "package_build_merge_commit_sha": "cb61ea3face4bc0b7325b542bccca1f90a3d47b2",
+      "living_architecture_audit_run": 45301053694,
+      "portable_rahm_conformance_run": 45301053616,
+      "interaction_ledger_recovery_run": 45301053649,
+      "rahm_runtime_tests_run": 45301053707,
+      "result": "PASS",
+      "durable_release": "SKIPPED_ON_PULL_REQUEST",
+      "independent_host_acceptance": "NOT_RUN"
+    }
   }
 }
