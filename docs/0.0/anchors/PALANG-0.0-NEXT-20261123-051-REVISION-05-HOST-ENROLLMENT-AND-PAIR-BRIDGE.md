@@ -121,3 +121,14 @@ No new private repository is requested merely to let a host read the public mast
 - Required before calling it transferable: exact-source build receipt, SHA-256, inventory, safe extraction/CRC, all extracted tests, mother/package byte or semantic read-back, exact-head audit and portable conformance.
 - The first real-host test is one paste of the canonical message. The host must return the defined receipt; no official Host ID or ACTIVE status before owner review and independent evidence.
 - Current candidate files remain on PR #145 until owner-controlled Golden acceptance. The published latest-verified release and clean-host recovery must not be claimed from a temporary workflow artifact.
+
+
+## Open acceptance gates — preserved until direct evidence
+
+- CURRENT-065/CURRENT-066 remain OPEN / AMBIGUOUS; no winner selected. Preserve both lineages until semantic source reconciliation proves a resolution.
+- Full state recovery: OPEN / NOT RUN; reconstruct independently from IN and OUT.
+- Clean host import: OPEN / NOT RUN; a clean interactive AI-host session must import and recover the package.
+- Second-host import: OPEN / NOT RUN; second-host acceptance requires a separate receipt.
+- Restart persistence: OPEN / NOT VERIFIED; restart/new-session recovery must be demonstrated.
+- Idle/background capture: OPEN / NOT VERIFIED; automatic live message capture and idle/background capture require a real authorized producer.
+- Graph/identity/parent/time triage: OPEN / REVIEW_REQUIRED; duplicate IDs and ambiguous parents remain subject to source-based adjudication.
