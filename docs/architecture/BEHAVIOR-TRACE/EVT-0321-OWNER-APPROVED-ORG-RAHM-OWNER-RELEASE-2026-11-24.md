@@ -9,7 +9,7 @@
 - Time binding: TIME-BINDING-EVT-0321 (registered after event commit metadata read-back)
 - Canonical root: POINT-0/GOLDEN (single existing root)
 - Sole active queue: NEXT-051
-- Status: OWNER-DIRECTED / PROPOSAL-BRANCH / OPEN GATES PRESERVED
+- Status: OWNER-DIRECTED / GOLDEN-WORKING-BRANCH-MERGED / MAIN-PUBLICATION-PENDING / OPEN GATES PRESERVED
 
 ## 1. Owner instruction
 
@@ -29,7 +29,7 @@ The owner approved the Organization-first plan, mandatory separate private centr
 
 ## 3. Repository-side work
 
-This event records a proposal based on CURRENT-151. New point/input/output/current/time-binding anchors, security/RAHM/workspace/registry architecture, living mother and indexes were written to a branch rooted at CURRENT-151. Exact fetch/read-back of the new anchors and key architecture/index files confirmed expected identities, versions and continuation markers. They are not yet published to Golden or main.
+The new point/input/output/current/time-binding anchors, security/RAHM/workspace/registry architecture, living mother and indexes were merged into the CURRENT-151 Golden working branch by PR #159. Exact fetch/read-back confirmed the new files on that branch. PR #159 merged to `work/current151-exact-golden-verify-20261122` as `3d1dd8baed7f0ff1ebc2a12daa53786d2e16e4b8`; GitHub commit time UTC `2026-11-24T06:38:33Z`, Tehran `2026-11-24T10:08:33+03:30`. This is the Golden working branch only. Main/MASTER publication remains pending. No workflow runs were returned for the merge commit; CI/exact-Golden conformance is NOT VERIFIED.
 
 ## 4. Evidence boundary
 
