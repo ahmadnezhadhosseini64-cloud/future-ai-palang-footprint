@@ -45,7 +45,7 @@ The Organization is not a magic conversion of the personal-account Administrator
 ## 3. مراحل اجرایی و ترتیب اجباری
 
 A. Organization preparation — owner action:
-- Choose the Organization slug/name and plan tier after reviewing required ruleset features.
+- Choose the Organization slug/name and plan tier after reviewing required ruleset features. GitHub's current documentation lists organization-level repository rulesets for GitHub Team and GitHub Enterprise; confirm an eligible plan before creating the Organization, and do not assume Free includes this feature.
 - Create Organization; keep the current personal repository intact.
 - Set repository-creation, deletion/transfer, base permissions, member privileges, 2FA and organization ruleset policies.
 - Confirm the owner role and document whether an independent security custodian is intentionally absent.
