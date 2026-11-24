@@ -12,7 +12,7 @@
 # RAHM — Owner-Controlled Intelligence Quarantine
 
 - Stable ID: HAIF-RAHM-OWNER-CONTROL-PLANE-2026-11-22-001
-- Version: 1.1.0
+- Version: 1.2.0
 - Status: GOLDEN BASELINE ALIGNED / PRIVATE STORE AND AUTOMATION SETUP PENDING
 - Owner: @ahmadnezhadhosseini64-cloud
 - Canonical root: POINT-0 only; golden baseline: docs/0.0/anchors/GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md; current checkpoint: CURRENT-142 / POINT-0++; sole queue: NEXT-051.
@@ -87,3 +87,21 @@ No host has a direct or indirect write path to the canonical master. A host may 
 ## Owner connector boundary — POINT-0/GOLDEN
 
 The ChatGPT GitHub connection currently authenticates as the repository owner and reports admin/push permission on the public master. It is an owner-account connector, not a Host Node identity or the Promotion App. Do not expose it to host workspaces. It does not automatically grant access to the private RAHM repository or private host repositories, and it does not expose every GitHub admin operation. The separate Promotion App must author bot PRs; the owner reviews and approves them.
+
+
+## Owner-approved host development boundary — 2026-11-24
+
+The owner has approved a development-capable multi-host model. This section clarifies the boundary; it does not make central RAHM writable by hosts.
+
+- Central RAHM remains a separate PRIVATE repository, controlled by the owner. It is the quarantine, reconciliation, validation and integration environment.
+- Each verified host receives its own owner-created PRIVATE development repository, bound to exactly one Host ID and Workspace ID. This is where the host can genuinely create and edit project files, code, tests, branches, proposals and evidence.
+- A host may not read or write another host's repository, central RAHM, or MASTER. Host work is not limited to reports.
+- The owner is the bridge from host workspaces to central RAHM: inspect/export → provenance check → privacy/security redaction → manifest/hash validation → central RAHM intake.
+- A later broker may automate writes only to one mapped host repository, never to MASTER or central RAHM. It remains disabled until least-privilege scope, identity mapping, audit, revocation and cross-host negative tests are proven.
+- Repository permissions are not folder permissions. Do not grant a host write access to the central RAHM repository on the assumption that a directory or branch is an adequate security boundary.
+- The release boundary remains absolute: HOST = development authority in its own workspace; OWNER = authority to accept into central RAHM and release to MASTER.
+- The approved flow is: MASTER/GOLDEN → read-only verified snapshot → HOST PRIVATE DEVELOPMENT REPO → proposal/tests/receipts → owner export and redaction → CENTRAL PRIVATE RAHM → reconciliation and validation → explicit owner review/release → MASTER.
+- Organization migration is staged: create and test the Organization and its rulesets first; create/test central RAHM and host repositories; audit integrations and rollback; only then transfer the canonical master with history and verify all integrations.
+- Initial Organization governance assumes the owner is the Organization Owner and sole release authority. This does not prevent that owner from deliberately changing organization rules. A separate trusted security custodian is a future optional dual-control decision, not silently assumed or appointed.
+
+Implementation remains NOT VERIFIED until real GitHub objects, settings, repository visibility, permissions and negative tests are read back.
