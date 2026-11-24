@@ -1,0 +1,36 @@
+{
+  "package_schema": "haif-mvp-starter/0.1",
+  "stable_id": "HAIF-MVP-HOST-STARTER-20261124-001",
+  "version": "0.1.0-candidate",
+  "project": "Future AI / Palang Footprint (HAIF)",
+  "canonical_repository": "https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint",
+  "candidate_branch": "mvp-single-core-archive-haif-v0-20261123",
+  "entry_message": "ONE_MESSAGE_HOST_ENTRY_FA.md",
+  "runtime_path": "scripts/haif-runtime/",
+  "architecture_decision": "docs/architecture/HAIF-MVP-CANONICAL-IMPLEMENTATION-DECISION-2026-11-23.md",
+  "living_work_checklist": "docs/architecture/HAIF-MVP-OPEN-WORK-CHECKLIST.md",
+  "package_contents": [
+    "prototype/haif-mvp-starter/ONE_MESSAGE_HOST_ENTRY_FA.md",
+    "prototype/haif-mvp-starter/README.md",
+    "prototype/haif-mvp-starter/manifest.json",
+    "scripts/haif-runtime/README.md",
+    "scripts/haif-runtime/haif_runtime.py",
+    "scripts/haif-runtime/tests/test_runtime.py",
+    "docs/architecture/HAIF-MVP-CANONICAL-IMPLEMENTATION-DECISION-2026-11-23.md",
+    "docs/architecture/HAIF-MVP-OPEN-WORK-CHECKLIST.md"
+  ],
+  "runtime_requirements": "Python 3.10+, standard library only",
+  "security": {
+    "master_access": "PUBLIC_READ_ONLY",
+    "rahm_access": "FORBIDDEN_TO_HOSTS",
+    "host_workspace": "INDEPENDENT_AND_ISOLATED",
+    "owner_approval_required_for_promotion": true
+  },
+  "limitations": [
+    "No automatic ChatGPT conversation capture",
+    "No cloud storage or background runtime",
+    "Independent-host recovery not yet proven",
+    "Package is candidate until owner-controlled acceptance"
+  ],
+  "status": "CANDIDATE / OWNER_REVIEW_REQUIRED"
+}
