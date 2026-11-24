@@ -154,10 +154,14 @@ def verify_state(state: Any) -> list[str]:
     if checkpoint is not None:
         if not isinstance(checkpoint, dict):
             errors.append("checkpoint must be an object or null")
-        elif checkpoint.get("event_count") != len(events):
-            errors.append("checkpoint event_count does not match event list")
-        elif checkpoint.get("head_hash") != (events[-1]["event_hash"] if events else GENESIS):
-            errors.append("checkpoint head_hash does not match event chain")
+        else:
+            count = checkpoint.get("event_count")
+            if not isinstance(count, int) or isinstance(count, bool) or count < 0 or count > len(events):
+                errors.append("checkpoint event_count must identify an existing event prefix")
+            else:
+                expected_head = events[count - 1]["event_hash"] if count else GENESIS
+                if checkpoint.get("head_hash") != expected_head:
+                    errors.append("checkpoint head_hash does not match pinned event prefix")
     if state.get("open_gates") != OPEN_GATES:
         errors.append("open_gates must preserve all explicitly unimplemented capabilities")
     return errors
