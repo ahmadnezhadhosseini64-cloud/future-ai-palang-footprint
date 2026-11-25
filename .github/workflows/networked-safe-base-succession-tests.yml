@@ -1,0 +1,31 @@
+name: Networked Safe Base Succession Tests
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  policy-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout proposal
+        uses: actions/checkout@v5
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Run safe-base policy tests
+        run: python -m unittest discover -s tests/architecture -p "test_*.py" -v
+      - name: Verify proposal links and single-root constraints
+        shell: bash
+        run: |
+          set -euo pipefail
+          grep -q "HAIF-SAFE-BASE-NETWORKED-SUCCESSION-2026-11-25-001" "docs/architecture/contracts/NETWORKED-SAFE-BASE-AND-VERIFIED-SUCCESSION-2026-11-25-001.md"
+          grep -q "POINT-0/GOLDEN" "docs/architecture/contracts/NETWORKED-SAFE-BASE-AND-VERIFIED-SUCCESSION-2026-11-25-001.md"
+          grep -q "NEXT-051" "docs/architecture/contracts/NETWORKED-SAFE-BASE-AND-VERIFIED-SUCCESSION-2026-11-25-001.md"
+          grep -q "2c1f9fdc308e34b23be64153e8eec2c30f08a859" "docs/architecture/contracts/NETWORKED-SAFE-BASE-AND-VERIFIED-SUCCESSION-2026-11-25-001.md"
+          echo "SAFE_BASE_SUCCESSION_POLICY=PASS"
