@@ -19,6 +19,16 @@
 
 ---
 
+## Owner-selected first-host entry milestone — 2026-11-25
+
+- Milestone record: [HOST-ENTRY-MILESTONE-2026-11-25](architecture/BEHAVIOR-TRACE/HOST-ENTRY-MILESTONE-2026-11-25.md).
+- This is a continuation marker under POINT-0/GOLDEN, not a new root, numbered CURRENT, or parallel queue. The sole queue remains NEXT-051.
+- Two-stage owner-selected host messages are proposed in PR #168. Stage 1 obtains public-source readback and a structured receipt; Stage 2 is issued only after owner review and explicit approval.
+- **«احمد نژادحسینی» is an owner-declaration phrase, not a password or access grant.** A host repeating it is not authenticated, registered, or ACTIVE.
+- PR #168 is OPEN / NOT MERGED. Main adoption, host receipt review, official Host ID, private workspace provisioning, and real isolation tests remain pending. See the milestone record for the exact evidence boundary.
+
+---
+
 ## POINT-0/GOLDEN — canonical current baseline (2026-11-22)
 
 - [POINT-0/GOLDEN](0.0/anchors/GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md) → [IN-130](0.0/anchors/PALANG-0.0-IN-20261122-130-GOLDEN-BASELINE.md) → [OUT-129](0.0/anchors/PALANG-0.0-OUT-20261122-129-GOLDEN-BASELINE.md)
