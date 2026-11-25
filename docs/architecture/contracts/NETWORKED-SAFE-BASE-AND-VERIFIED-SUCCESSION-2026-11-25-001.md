@@ -22,6 +22,8 @@ A safe snapshot means recoverable source state. It does not certify that every h
 
 ## 2. Networked proposal graph
 
+Current implementation PR: [#169](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/pull/169), stacked on parent PR #168. The parent branch head at PR creation was `badae85fc84b2eaa45a23447392fb51fd8231017`; the safe-base ancestor remains `2c1f9fdc308e34b23be64153e8eec2c30f08a859`.
+
 Each PR is a proposal node, not a new source of truth. Every node must record:
 - stable PR number and URL;
 - exact base branch and base commit SHA;
@@ -88,7 +90,7 @@ This discrepancy is preserved as an OPEN reconciliation item. This safe-base rec
 
 ## 7. Acceptance tests
 
-The accompanying unit tests validate the policy model:
+A stacked proposal's Git base may be the exact head of an accepted parent PR rather than the safe-base commit itself. The safe-base ancestor and each dependency must still be explicitly recorded and accepted. The accompanying unit tests validate the policy model:
 - safe-base identity requires a full immutable commit SHA;
 - a candidate cannot promote from a stale base;
 - every required gate must pass;
