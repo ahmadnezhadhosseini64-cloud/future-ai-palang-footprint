@@ -20,7 +20,15 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: "3.12"
-      - name: Run safe-base policy tests
+      - name: Run legacy succession policy tests
+        run: python -m unittest discover -s tests/architecture -p "test_safe_base_succession.py" -v
+      - name: Run fail-closed safe-point resolver tests
+        run: python -m unittest discover -s tests/architecture -p "test_safe_base_resolver.py" -v
+      - name: Run two-stage host intake gate tests
+        run: python -m unittest discover -s tests/architecture -p "test_host_intake_gate.py" -v
+      - name: Run deterministic ZIP builder tests
+        run: python -m unittest discover -s tests/architecture -p "test_canonical_zip.py" -v
+      - name: Run complete architecture test suite
         run: python -m unittest discover -s tests/architecture -p "test_*.py" -v
       - name: Verify proposal links and single-root constraints
         shell: bash
