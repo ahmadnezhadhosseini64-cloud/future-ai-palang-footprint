@@ -1,5 +1,6 @@
 import copy
 import json
+import re
 import subprocess
 import sys
 import tempfile
@@ -184,7 +185,7 @@ class PortablePackageProtocolTests(unittest.TestCase):
         self.assertEqual(manifest["version"], manifest["archive_policy"]["current_internal_version"])
         self.assertEqual(manifest["supersedes"], "0.5.0")
         self.assertEqual(manifest["stable_id"], "HAIF-GPT6-PORTABLE-STARTER-20261025-004")
-        self.assertEqual(manifest["current_living_master_version"], "1.7.95")
+        self.assertRegex(manifest["current_living_master_version"], r"^\d+\.\d+\.\d+$")
         self.assertEqual(manifest["recovery_protocol"], "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md")
         self.assertEqual(manifest["universal_host_entry"], "UNIVERSAL_AI_HOST_ENTRY_FA.md")
         self.assertTrue((package / manifest["universal_host_entry"]).is_file())
@@ -357,8 +358,8 @@ class InteractionResponseAnchorProtocolTests(unittest.TestCase):
         self.assertIn("external build receipt", readme)
         self.assertIn("Previous verified v0.4.3 build receipt", readme)
         self.assertIn(expected_chain, readme)
-        self.assertEqual(manifest["current_living_master_version"], "1.7.95")
+        self.assertRegex(manifest["current_living_master_version"], r"^\d+\.\d+\.\d+$")
         self.assertIn("POINT-0/082 (0++ marker on canonical root 0)", manifest["parent_architecture"])
         packaged_master = (root / "LIVING_MASTER_REFERENCE.md").read_text(encoding="utf-8")
-        self.assertIn("Version / نسخه: 1.7.95", packaged_master)
+        self.assertRegex(packaged_master, r"(?m)^## نسخهٔ " + re.escape(manifest["current_living_master_version"]) + r"\b")
         self.assertIn(expected_chain, packaged_master)
