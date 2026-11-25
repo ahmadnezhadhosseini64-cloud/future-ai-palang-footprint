@@ -165,59 +165,7 @@ jobs:
             rahm-recovery-equivalence.json
 
       - name: Preserve predecessor and bridge it to the current living master
-        run: |
-          python - <<'PY'
-          import hashlib, json, re
-          from pathlib import Path
-          source = Path("docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md")
-          package = Path("prototype/haif-gpt6-starter")
-          manifest_path = package / "manifest.json"
-          manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-          current_path = package / "LIVING_MASTER_REFERENCE.md"
-          historical_name = "LIVING_MASTER_REFERENCE-1.7.95-HISTORICAL.md"
-          historical_path = package / historical_name
-          # Preserve the predecessor snapshot byte-for-byte exactly once.
-          if not historical_path.exists():
-              if not current_path.is_file():
-                  raise SystemExit("PREDECESSOR_SNAPSHOT_MISSING")
-              historical_path.write_bytes(current_path.read_bytes())
-          historical_bytes = historical_path.read_bytes()
-          historical_text = historical_bytes.decode("utf-8")
-          previous = re.search(r"(?m)^- Version / نسخه: ([0-9]+\\.[0-9]+\\.[0-9]+)$", historical_text)
-          if not previous:
-              raise SystemExit("PREDECESSOR_VERSION_NOT_FOUND")
-          previous_version = previous.group(1)
-          if previous_version != "1.7.95":
-              raise SystemExit(f"UNEXPECTED_PREDECESSOR_VERSION: {previous_version}")
-          master = source.read_text(encoding="utf-8")
-          match = re.search(r"(?m)^## نسخهٔ ([0-9]+\\.[0-9]+\\.[0-9]+)", master)
-          if not match:
-              raise SystemExit("LIVING_MASTER_VERSION_NOT_FOUND")
-          current_version = match.group(1)
-          current_path.write_text(master, encoding="utf-8")
-          bridge_name = "LIVING_MASTER_VERSION_BRIDGE.md"
-          bridge = f"""# Living Master Version Bridge — append-only lineage
-
-          This bridge preserves both documents and connects the packaged predecessor to the current canonical living master.
-
-          - Historical predecessor: [{previous_version}](./{historical_name}) — preserved byte-for-byte; SHA-256: {hashlib.sha256(historical_bytes).hexdigest()}
-          - Current successor: [{current_version}](./LIVING_MASTER_REFERENCE.md) — synchronized from the canonical repository master at build time.
-          - Relationship: the current successor continues the same POINT-0/GOLDEN lineage; it does not erase, rename, or replace the historical predecessor.
-          - Direction: predecessor → successor. The canonical master itself retains its version history; this bridge is the portable package's explicit two-document link.
-          - Stable package identity is unchanged. No separate versioned ZIP is created.
-
-          If either document is missing, the versions disagree, or the predecessor digest changes, conformance must fail closed.
-          """
-          (package / bridge_name).write_text(bridge, encoding="utf-8")
-          manifest["previous_living_master_version"] = previous_version
-          manifest["current_living_master_version"] = current_version
-          manifest["historical_living_master_snapshot"] = historical_name
-          manifest["historical_living_master_sha256"] = hashlib.sha256(historical_bytes).hexdigest()
-          manifest["living_master_version_bridge"] = bridge_name
-          manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
-          print(f"LIVING_MASTER_LINEAGE={previous_version}->{current_version}")
-          print(f"HISTORICAL_PREDECESSOR_SHA256={manifest['historical_living_master_sha256']}")
-          PY
+        run: python prototype/haif-gpt6-starter/sync_living_master.py
       - name: Test the existing HAIF starter package source
         if: always()
         run: |
@@ -234,8 +182,8 @@ jobs:
           required = [
               "README.md",
               "LIVING_MASTER_REFERENCE.md",
-              "LIVING_MASTER_REFERENCE-1.7.95-HISTORICAL.md",
               "LIVING_MASTER_VERSION_BRIDGE.md",
+              "sync_living_master.py",
               "INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md",
               "ONE_MESSAGE_HOST_BOOTSTRAP_FA.md",
               "manifest.json",
@@ -258,6 +206,8 @@ jobs:
           if missing:
               raise SystemExit(f"STARTER_PACKAGE_FILES_MISSING: {missing}")
           manifest = json.loads((source / "manifest.json").read_text(encoding="utf-8"))
+          required.extend(entry["file"] for entry in manifest.get("living_master_history", []))
+          required = list(dict.fromkeys(required))
           if manifest.get("stable_id") != "HAIF-GPT6-PORTABLE-STARTER-20261025-004":
               raise SystemExit("STARTER_STABLE_ID_CHANGED")
           if manifest.get("production_id") != "HAIF-G6PS-20261025-004":
