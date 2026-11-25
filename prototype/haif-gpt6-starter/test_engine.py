@@ -186,7 +186,7 @@ class PortablePackageProtocolTests(unittest.TestCase):
         self.assertEqual(manifest["version"], manifest["archive_policy"]["current_internal_version"])
         self.assertEqual(manifest["supersedes"], "0.5.0")
         self.assertEqual(manifest["stable_id"], "HAIF-GPT6-PORTABLE-STARTER-20261025-004")
-        self.assertRegex(manifest["current_living_master_version"], r"^\\d+\\.\\d+\\.\\d+$")
+        self.assertRegex(manifest["current_living_master_version"], r"^\d+\.\d+\.\d+$")
         history = manifest["living_master_history"]
         self.assertTrue(history, "historical living master snapshots must never be discarded")
         self.assertIn("1.7.95", [entry["version"] for entry in history])
