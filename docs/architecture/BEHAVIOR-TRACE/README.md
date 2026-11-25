@@ -1485,3 +1485,11 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - Time binding: [TIME-BINDING-EVT-0293](./TIME-BINDING-EVT-0293-0PLUSPLUS-TO-0-0-COMPLETION-2026-11-21.md)
 - Current: [CURRENT-127](../../0.0/anchors/PALANG-0.0-CURRENT-20261121-127-0PLUSPLUS-TO-0-0-COMPLETION.md)
 - Sole next: [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md)
+
+## EVT-0318 — Certificate retrieval and false-negative lesson — 2026-11-25
+- EVT-0318 / TIME-BINDING-EVT-0318.
+- Chain: POINT-0/GOLDEN → CURRENT-145 → IN-131 → OUT-130 → EVT-0318 → TIME-BINDING-EVT-0318 → proposed CURRENT-146 → existing NEXT-051.
+- A partial search that finds 2 of 4 items must be reported as partial recovery, not as absence of the other two. Continue through the retrieval ladder; fetch the canonical aggregate and governing master; verify SHA/ref, content match and total item count.
+- The employment-certificate aggregate was read back at Blob SHA b84f320a0c09e9079e1d33bab2ef5e5d51db8e94; all four sections were present. Documents 1–4 remain LOCKED. No source document was modified.
+- Date audit: the Gregorian date range in bilingual document 2 already matches the Persian range; no edit was made.
+- Status: owner-review branch; not merged into main. Independent-host recovery NOT RUN.
