@@ -2813,3 +2813,12 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - مرز: پروژه‌های مستقل وارد معماری اصلی نمی‌شوند؛ فقط درس عمومی، ساده و اعتبارسنجی‌شده منتقل می‌شود.
 - چرخه: EXECUTE → OBSERVE → EXTRACT → TEST → SIMPLIFY → VALIDATE → INTEGRATE → READ-BACK.
 - جایگاه: همان POINT-0/GOLDEN و صف یگانه NEXT-051؛ بدون ریشه یا صف موازی.
+
+
+## Networked Safe Base and Verified Succession — 2026-11-25
+
+- [SAFE BASE](architecture/SAFE-BASE/SAFE-BASE-2026-11-25.md) preserves the exact main source commit `2c1f9fdc308e34b23be64153e8eec2c30f08a859` as a recoverable snapshot.
+- [Networked Safe Base and Verified Succession](architecture/contracts/NETWORKED-SAFE-BASE-AND-VERIFIED-SUCCESSION-2026-11-25-001.md) — HAIF-SAFE-BASE-NETWORKED-SUCCESSION-2026-11-25-001.
+- Policy tests: [test_safe_base_succession.py](../tests/architecture/test_safe_base_succession.py); CI: [networked-safe-base-succession-tests.yml](../.github/workflows/networked-safe-base-succession-tests.yml).
+- This proposal is stacked on PR #168; PR #167 remains a related independent proposal; PR #145 is divergent and excluded from automatic integration. No parallel root or queue; NEXT-051 remains sole queue.
+- Known CURRENT-144 / CURRENT-145 pointer discrepancy is preserved OPEN pending forensic reconciliation.

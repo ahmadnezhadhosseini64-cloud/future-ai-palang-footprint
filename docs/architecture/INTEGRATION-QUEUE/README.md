@@ -2925,3 +2925,14 @@ Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-11
 - Proposed main review policy: one owner approval for non-owner/automation-authored PRs, CODEOWNERS owner review, stale approval dismissal and conversation resolution. GitHub does not allow PR authors to approve their own PR; owner-authored PRs need an owner-only PR-scoped bypass or owner-controlled promotion bot, never a host bypass.
 - Live Ruleset 27814009 is active and protects main against deletion, force-push and direct non-PR updates; live approval count remains 0 and Code Owner review remains false. Approval configuration is NOT YET ENFORCED.
 - This is a continuation on canonical POINT-0, not a new root or queue. NEXT-051 remains the only active queue.
+
+
+---
+
+## Networked Safe Base and Verified Succession — proposal
+
+- Exact recoverable source snapshot: [SAFE-BASE-2026-11-25](../SAFE-BASE/SAFE-BASE-2026-11-25.md), main commit 2c1f9fdc308e34b23be64153e8eec2c30f08a859.
+- Governing proposal: [HAIF-SAFE-BASE-NETWORKED-SUCCESSION-2026-11-25-001](../contracts/NETWORKED-SAFE-BASE-AND-VERIFIED-SUCCESSION-2026-11-25-001.md).
+- PR #168 is the parent dependency for this stacked proposal. PR #167 is a related sibling. PR #145 is divergent (341 ahead / 46 behind) and must undergo full reconciliation before any promotion.
+- Exact-head CI, read-back, semantic/security review and owner acceptance are mandatory. Failure preserves the prior safe base.
+- README/GOLDEN CURRENT-144 versus mother/queue CURRENT-145 is OPEN / RECONCILIATION REQUIRED. NEXT-051 remains the only active queue.
