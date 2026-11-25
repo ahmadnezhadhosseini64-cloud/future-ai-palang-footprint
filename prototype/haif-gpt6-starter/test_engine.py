@@ -1,4 +1,5 @@
 import copy
+import hashlib
 import json
 import re
 import subprocess
@@ -186,6 +187,22 @@ class PortablePackageProtocolTests(unittest.TestCase):
         self.assertEqual(manifest["supersedes"], "0.5.0")
         self.assertEqual(manifest["stable_id"], "HAIF-GPT6-PORTABLE-STARTER-20261025-004")
         self.assertRegex(manifest["current_living_master_version"], r"^\d+\.\d+\.\d+$")
+        historical_path = package / manifest["historical_living_master_snapshot"]
+        current_path = package / "LIVING_MASTER_REFERENCE.md"
+        bridge_path = package / manifest["living_master_version_bridge"]
+        historical_bytes = historical_path.read_bytes()
+        historical_text = historical_bytes.decode("utf-8")
+        current_text = current_path.read_text(encoding="utf-8")
+        bridge_text = bridge_path.read_text(encoding="utf-8")
+        self.assertEqual(manifest["previous_living_master_version"], "1.7.95")
+        self.assertIn("- Version / نسخه: " + manifest["previous_living_master_version"], historical_text)
+        self.assertEqual(hashlib.sha256(historical_bytes).hexdigest(), manifest["historical_living_master_sha256"])
+        self.assertIn("## نسخهٔ " + manifest["current_living_master_version"], current_text)
+        self.assertIn(manifest["historical_living_master_snapshot"], bridge_text)
+        self.assertIn("LIVING_MASTER_REFERENCE.md", bridge_text)
+        self.assertIn(manifest["previous_living_master_version"], bridge_text)
+        self.assertIn(manifest["current_living_master_version"], bridge_text)
+        self.assertIn("predecessor → successor", bridge_text)
         self.assertEqual(manifest["recovery_protocol"], "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md")
         self.assertEqual(manifest["universal_host_entry"], "UNIVERSAL_AI_HOST_ENTRY_FA.md")
         self.assertTrue((package / manifest["universal_host_entry"]).is_file())
