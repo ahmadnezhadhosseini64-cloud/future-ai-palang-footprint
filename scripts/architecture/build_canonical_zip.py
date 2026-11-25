@@ -59,7 +59,7 @@ def build_archive(source: Path, output: Path, receipt: Path | None = None) -> di
             info = zipfile.ZipInfo(arcname, date_time=FIXED_TIME)
             info.compress_type = zipfile.ZIP_DEFLATED
             info.create_system = 3
-            info.external_attr = (stat.S_IFREG | (0o755 if os.access(path, os.X_OK) else 0o644) << 16)
+            info.external_attr = ((stat.S_IFREG | (0o755 if os.access(path, os.X_OK) else 0o644)) << 16)
             info.flag_bits = 0
             zf.writestr(info, path.read_bytes(), compress_type=zipfile.ZIP_DEFLATED, compresslevel=9)
     digest = hashlib.sha256(output.read_bytes()).hexdigest()
