@@ -174,3 +174,10 @@ This addendum is the current controlling security rule and supersedes any older 
 - Main protection, collaborator/App audit, per-host private repositories, broker deployment, revocation and cross-host tests remain OPEN until direct evidence exists.
 
 See `docs/architecture/HOST-SECURITY/OWNER-ONLY-MASTER-PER-HOST-PRIVATE-REPOSITORIES.md` and `docs/architecture/HOST-SECURITY/PRIVATE-HOST-REPOSITORY-TEMPLATE.md`.
+
+## Proposed owner-review architecture lesson — EVT-0318
+
+- EVT-0318 — Certificate retrieval and false-negative lesson
+- Proposed checkpoint CURRENT-146
+- This is an additive proposal on a review branch. It does not supersede CURRENT-145 or advance NEXT-051 until owner review and merge.
+- Permanent rule proposed: incomplete search is partial recovery, never proof of absence; verify canonical source, ref/blob SHA, content match and complete expected-item count before final reporting.
