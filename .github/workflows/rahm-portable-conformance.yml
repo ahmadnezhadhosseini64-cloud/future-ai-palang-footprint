@@ -307,11 +307,11 @@ jobs:
             docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md
           if-no-files-found: error
 
-      - name: Download uploaded canonical ZIP artifact from this run
+      - name: Download uploaded canonical ZIP artifact by exact artifact ID
         if: success()
         uses: actions/download-artifact@v4
         with:
-          name: haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean
+          artifact-ids: ${{ steps.starter_upload.outputs.artifact-id }}
           path: downloaded-starter-artifact
           merge-multiple: true
 
