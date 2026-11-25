@@ -9,8 +9,8 @@ SHA_RE = re.compile(r"^[0-9a-f]{40}$")
 
 @dataclass(frozen=True)
 class Evidence:
-    base_sha: str
-    candidate_parent_sha: str
+    safe_base_sha: str
+    proposal_base_sha: str
     candidate_sha: str
     dependencies_accepted: bool
     ci_passed_on_exact_head: bool
@@ -20,17 +20,18 @@ class Evidence:
 
 
 def eligible(previous_safe_sha: str, evidence: Evidence) -> bool:
+    # A proposal may be stacked on a parent PR. Its proposal base therefore
+    # need not equal the safe-base SHA; the accepted dependency gate proves
+    # that the intermediate proposal chain has been reconciled.
     values = (
         previous_safe_sha,
-        evidence.base_sha,
-        evidence.candidate_parent_sha,
+        evidence.safe_base_sha,
+        evidence.proposal_base_sha,
         evidence.candidate_sha,
     )
     if not all(isinstance(value, str) and SHA_RE.fullmatch(value) for value in values):
         return False
-    if evidence.base_sha != previous_safe_sha:
-        return False
-    if evidence.candidate_parent_sha != previous_safe_sha:
+    if evidence.safe_base_sha != previous_safe_sha:
         return False
     return all((
         evidence.dependencies_accepted,
@@ -48,10 +49,11 @@ def promote_or_preserve(previous_safe_sha: str, evidence: Evidence) -> str:
 class SafeBaseSuccessionTests(unittest.TestCase):
     def setUp(self):
         self.safe = "2c1f9fdc308e34b23be64153e8eec2c30f08a859"
+        self.stacked_parent = "badae85fc84b2eaa45a23447392fb51fd8231017"
         self.candidate = "a" * 40
         self.good = Evidence(
-            base_sha=self.safe,
-            candidate_parent_sha=self.safe,
+            safe_base_sha=self.safe,
+            proposal_base_sha=self.stacked_parent,
             candidate_sha=self.candidate,
             dependencies_accepted=True,
             ci_passed_on_exact_head=True,
@@ -65,14 +67,20 @@ class SafeBaseSuccessionTests(unittest.TestCase):
         self.assertFalse(eligible(self.safe, bad))
         self.assertEqual(promote_or_preserve(self.safe, bad), self.safe)
 
-    def test_exact_base_and_parent_are_required(self):
-        stale = Evidence(**{**self.good.__dict__, "base_sha": "b" * 40})
+    def test_candidate_must_trace_to_current_safe_base(self):
+        stale = Evidence(**{**self.good.__dict__, "safe_base_sha": "b" * 40})
         self.assertFalse(eligible(self.safe, stale))
         self.assertEqual(promote_or_preserve(self.safe, stale), self.safe)
 
-    def test_every_gate_is_required(self):
+    def test_stacked_proposal_is_allowed_only_when_dependencies_are_accepted(self):
+        self.assertNotEqual(self.good.proposal_base_sha, self.safe)
+        self.assertTrue(eligible(self.safe, self.good))
+        blocked = Evidence(**{**self.good.__dict__, "dependencies_accepted": False})
+        self.assertFalse(eligible(self.safe, blocked))
+        self.assertEqual(promote_or_preserve(self.safe, blocked), self.safe)
+
+    def test_every_promotion_gate_is_required(self):
         for field in (
-            "dependencies_accepted",
             "ci_passed_on_exact_head",
             "readback_passed",
             "semantic_security_review_passed",
