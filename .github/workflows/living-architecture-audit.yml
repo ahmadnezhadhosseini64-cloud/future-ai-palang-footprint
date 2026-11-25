@@ -236,6 +236,10 @@ jobs:
           set -euo pipefail
           python3 scripts/test_host_adapter.py | tee audit-output/host-adapter-test-run.txt
 
+      - name: Preserve predecessor and bridge it to the current living master
+        shell: bash
+        run: python3 prototype/haif-gpt6-starter/sync_living_master.py
+
       - name: Test portable HAIF GPT-host starter engine
         shell: bash
         run: |
