@@ -16,7 +16,6 @@ from pathlib import Path
 from typing import Any
 
 SHA_RE = re.compile(r"^[0-9a-f]{40}$")
-TREE_SHA_RE = re.compile(r"^[0-9a-f]{40}$")
 REQUIRED_CHECKS = ("unit-tests", "architecture-audit", "security-negative-tests")
 
 
@@ -142,7 +141,7 @@ def advance_safe_point(state_path: Path, expected_old_sha: str, manifest: dict[s
     try:
         with os.fdopen(fd, "w", encoding="utf-8") as stream:
             json.dump(payload, stream, sort_keys=True, indent=2)
-            stream.write("\\n")
+            stream.write("\n")
             stream.flush()
             os.fsync(stream.fileno())
         os.replace(tmp_name, state_path)
