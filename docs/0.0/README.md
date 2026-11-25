@@ -2226,3 +2226,9 @@ The previous points 077 and 078 remain linked in the preceding historical sectio
 
 این زنجیره، وضعیت جاری نقطهٔ ۰ طلایی است؛ تنها ریشه همان POINT-0 و تنها صف فعال NEXT-051 است. تمام تاریخچهٔ قبلی محفوظ می‌ماند، اما هیچ snapshot یا دستور تاریخی بدون شاهد جدید و فرمان مالک جایگزین این زنجیره نمی‌شود.
 
+
+## Proposed owner-review continuation — EVT-0318 / CURRENT-146
+
+IN-131 → OUT-130 → EVT-0318 → TIME-BINDING-EVT-0318 → proposed CURRENT-146 → existing NEXT-051.
+
+This is an additive proposal on the existing POINT-0/GOLDEN root. A partial search is not an absence finding; all expected documents must be located, read back, hash/ref checked and counted. Main registration is pending owner review; CURRENT-145 remains the main pointer until merge.
