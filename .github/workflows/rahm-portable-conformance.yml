@@ -10,6 +10,15 @@ on:
       - 'scripts/haif-runtime/**'
       - 'prototype/haif-gpt6-starter/**'
       - '.github/workflows/rahm-portable-conformance.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'docs/portable/RAHM/**'
+      - 'docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md'
+      - 'scripts/behavior-hunter/**'
+      - 'scripts/haif-runtime/**'
+      - 'prototype/haif-gpt6-starter/**'
+      - '.github/workflows/rahm-portable-conformance.yml'
   workflow_dispatch:
 
 permissions:
