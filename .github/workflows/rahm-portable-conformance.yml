@@ -164,8 +164,25 @@ jobs:
             rahm-sha256-evidence.json
             rahm-recovery-equivalence.json
 
-      - name: Synchronize current living mother into portable starter
-        run: cp "docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md" "prototype/haif-gpt6-starter/LIVING_MASTER_REFERENCE.md"
+      - name: Synchronize current living mother and manifest version into portable starter
+        run: |
+          python - <<'PY'
+          import json, re
+          from pathlib import Path
+          source = Path("docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md")
+          package = Path("prototype/haif-gpt6-starter")
+          master = source.read_text(encoding="utf-8")
+          match = re.search(r"(?m)^## نسخهٔ ([0-9]+\.[0-9]+\.[0-9]+)", master)
+          if not match:
+              raise SystemExit("LIVING_MASTER_VERSION_NOT_FOUND")
+          version = match.group(1)
+          (package / "LIVING_MASTER_REFERENCE.md").write_text(master, encoding="utf-8")
+          manifest_path = package / "manifest.json"
+          manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+          manifest["current_living_master_version"] = version
+          manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+          print(f"PORTABLE_LIVING_MASTER_VERSION={version}")
+          PY
       - name: Test the existing HAIF starter package source
         if: always()
         run: |
