@@ -1493,3 +1493,10 @@ All canonical repository timestamps are sourced from actual last-change Git comm
 - The employment-certificate aggregate was read back at Blob SHA b84f320a0c09e9079e1d33bab2ef5e5d51db8e94; all four sections were present. Documents 1–4 remain LOCKED. No source document was modified.
 - Date audit: the Gregorian date range in bilingual document 2 already matches the Persian range; no edit was made.
 - Status: owner-review branch; not merged into main. Independent-host recovery NOT RUN.
+
+
+## Owner-authorized reference immutability contract (proposal)
+- Contract: `../contracts/REFERENCE-IMMUTABILITY-AND-OWNER-AUTHORIZED-VERSIONING-CONTRACT-2026-11-25.md`.
+- Preserve canonical texts exactly. Edit only the exact span explicitly authorized by the owner; suggestions remain suggestions until exact approval. Keep source references locked; revisions are separate derivative versions and require diff verification.
+- Certificate reference IDs: 1.00–4.00; initial derivatives: 1.01–4.01.
+- Proposal branch only; not yet main.
