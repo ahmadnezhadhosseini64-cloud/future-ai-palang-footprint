@@ -2232,3 +2232,8 @@ The previous points 077 and 078 remain linked in the preceding historical sectio
 IN-131 → OUT-130 → EVT-0318 → TIME-BINDING-EVT-0318 → proposed CURRENT-146 → existing NEXT-051.
 
 This is an additive proposal on the existing POINT-0/GOLDEN root. A partial search is not an absence finding; all expected documents must be located, read back, hash/ref checked and counted. Main registration is pending owner review; CURRENT-145 remains the main pointer until merge.
+
+
+## Proposed owner-authorized immutability contract
+
+Contract: `../architecture/contracts/REFERENCE-IMMUTABILITY-AND-OWNER-AUTHORIZED-VERSIONING-CONTRACT-2026-11-25.md`. Reference documents are immutable; only exact owner-authorized edits may create separate derivatives. Certificate references: 1.00/2.00/3.00/4.00; first derivatives: 1.01/2.01/3.01/4.01. Main merge pending owner review.
