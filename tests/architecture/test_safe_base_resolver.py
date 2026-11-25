@@ -1,6 +1,9 @@
 """Executable fail-closed safe-base evidence checks and atomic CAS tests."""
 import json
 import tempfile
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "scripts" / "architecture"))
 import unittest
 from pathlib import Path
 
