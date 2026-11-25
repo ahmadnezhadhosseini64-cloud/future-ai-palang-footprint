@@ -2925,3 +2925,9 @@ Canonical chain: `POINT-0/060 → IN-098 → OUT-097 → EVT-0237 → CURRENT-11
 - Proposed main review policy: one owner approval for non-owner/automation-authored PRs, CODEOWNERS owner review, stale approval dismissal and conversation resolution. GitHub does not allow PR authors to approve their own PR; owner-authored PRs need an owner-only PR-scoped bypass or owner-controlled promotion bot, never a host bypass.
 - Live Ruleset 27814009 is active and protects main against deletion, force-push and direct non-PR updates; live approval count remains 0 and Code Owner review remains false. Approval configuration is NOT YET ENFORCED.
 - This is a continuation on canonical POINT-0, not a new root or queue. NEXT-051 remains the only active queue.
+
+## Proposed continuation — EVT-0318 / CURRENT-146 (owner review pending)
+- Chain: CURRENT-145 → IN-131 → OUT-130 → EVT-0318 → TIME-BINDING-EVT-0318 → proposed CURRENT-146 → existing NEXT-051.
+- Additive lesson: partial retrieval is not absence. Complete the retrieval ladder, verify canonical source identity and content, and count all expected records before declaring completion or failure.
+- Certificate case: canonical aggregate read back, 4/4 document sections found, Blob SHA b84f320a0c09e9079e1d33bab2ef5e5d51db8e94. Four source documents remain LOCKED; no document content changed.
+- This entry is on an owner-review branch only. Main pointer and sole queue are not advanced by this proposal.

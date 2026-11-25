@@ -2785,3 +2785,14 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - Decision: hosts never write to master; each verified host receives an owner-created isolated private repository; only owner-reviewed, provenance-checked proposals may be promoted.
 - Ruleset 27814009 is active and protects main with PR/deletion/force-push rules. Live required approvals remain 0; Code Owner review remains false. One owner approval and CODEOWNERS enforcement are approved design but pending GitHub UI configuration and read-back.
 - GitHub does not allow a PR author to approve their own PR. Any owner-only bypass required for owner-authored PRs must be restricted to the owner and never granted to hosts. NEXT-051 remains the sole queue.
+
+## Proposed owner-review addition — EVT-0318 / CURRENT-146
+- IN-131 → OUT-130 → EVT-0318 → TIME-BINDING-EVT-0318 → proposed CURRENT-146 → existing NEXT-051.
+- Lesson: partial search is not proof of absence; complete the retrieval ladder and verify source path, ref/blob SHA, content match and expected item count before final reporting.
+- Status: owner-review branch only; CURRENT-145 remains the main pointer until merge.
+
+
+## Proposed contract — immutability of owner-designated references
+- `docs/architecture/contracts/REFERENCE-IMMUTABILITY-AND-OWNER-AUTHORIZED-VERSIONING-CONTRACT-2026-11-25.md`
+- References are immutable. Only explicitly owner-authorized changes create a separate derivative version. Four certificate references use 1.00/2.00/3.00/4.00; derivatives use 1.01/2.01/3.01/4.01 and sequential increments. Exact diff audit is required.
+- Status: review branch, not main.
