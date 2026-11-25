@@ -18,11 +18,12 @@ EXCLUDED_EXACT = {".env", ".env.local", ".env.production", "credentials.json", "
 
 
 def is_excluded(rel: Path) -> bool:
-    parts = rel.parts
-    if any(part in EXCLUDED_NAMES for part in parts):
+    if any(part in EXCLUDED_NAMES for part in rel.parts):
         return True
     name = rel.name.lower()
     if name in EXCLUDED_EXACT or name.startswith(".env."):
+        return True
+    if any(marker in name for marker in SENSITIVE_NAME_MARKERS):
         return True
     if any(name.endswith(suffix) for suffix in EXCLUDED_SUFFIXES):
         return True
@@ -35,10 +36,11 @@ def safe_entries(source: Path, output: Path) -> list[tuple[Path, str]]:
     entries = []
     for path in root.rglob("*"):
         rel = path.relative_to(root)
-        if is_excluded(rel) or path.is_dir():
-            continue
+        # Check symlinks before is_dir(), because directory symlinks otherwise skip silently.
         if path.is_symlink():
             raise ValueError(f"symlink rejected: {rel}")
+        if is_excluded(rel) or path.is_dir():
+            continue
         resolved = path.resolve()
         if not resolved.is_relative_to(root):
             raise ValueError(f"path escapes source root: {rel}")
@@ -60,13 +62,21 @@ def build_archive(source: Path, output: Path, receipt: Path | None = None) -> di
             info = zipfile.ZipInfo(arcname, date_time=FIXED_TIME)
             info.compress_type = zipfile.ZIP_DEFLATED
             info.create_system = 3
-            info.external_attr = ((stat.S_IFREG | (0o755 if os.access(path, os.X_OK) else 0o644)) << 16)
+            mode = stat.S_IFREG | (0o755 if os.access(path, os.X_OK) else 0o644)
+            info.external_attr = mode << 16
             info.flag_bits = 0
             zf.writestr(info, path.read_bytes(), compress_type=zipfile.ZIP_DEFLATED, compresslevel=9)
-    digest = hashlib.sha256(output.read_bytes()).hexdigest()
-    result = {"archive": output.name, "sha256": digest, "size_bytes": output.stat().st_size,
-              "file_count": len(entries), "paths": [name for _, name in entries],
-              "source_root": str(source), "timestamp_policy": "fixed-2020-01-01T00:00:00"}
+    archive_bytes = output.read_bytes()
+    result = {
+        "archive": output.name,
+        "sha256": hashlib.sha256(archive_bytes).hexdigest(),
+        "size_bytes": len(archive_bytes),
+        "file_count": len(entries),
+        "paths": [name for _, name in entries],
+        "files": [{"path": name, "sha256": hashlib.sha256(path.read_bytes()).hexdigest()} for path, name in entries],
+        "source_root": str(source),
+        "timestamp_policy": "fixed-2020-01-01T00:00:00",
+    }
     if receipt:
         receipt.parent.mkdir(parents=True, exist_ok=True)
         receipt.write_text(json.dumps(result, ensure_ascii=False, sort_keys=True, indent=2) + "\n", encoding="utf-8")
