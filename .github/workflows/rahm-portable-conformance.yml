@@ -309,11 +309,30 @@ jobs:
 
       - name: Download uploaded canonical ZIP artifact by exact artifact ID
         if: success()
-        uses: actions/download-artifact@v4
-        with:
-          artifact-ids: ${{ steps.starter_upload.outputs.artifact-id }}
-          path: downloaded-starter-artifact
-          merge-multiple: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ARTIFACT_ID: ${{ steps.starter_upload.outputs.artifact-id }}
+        run: |
+          set -euo pipefail
+          mkdir -p downloaded-starter-artifact
+          curl --fail --silent --show-error --location \\
+            -H "Accept: application/vnd.github+json" \\
+            -H "Authorization: Bearer ${GH_TOKEN}" \\
+            -H "X-GitHub-Api-Version: 2022-11-28" \\
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/artifacts/${ARTIFACT_ID}/zip" \\
+            -o /tmp/haif-starter-artifact.zip
+          python - <<'PY'
+          import zipfile
+          from pathlib import Path
+          archive = Path("/tmp/haif-starter-artifact.zip")
+          destination = Path("downloaded-starter-artifact")
+          with zipfile.ZipFile(archive) as zf:
+              bad = zf.testzip()
+              if bad:
+                  raise SystemExit(f"ARTIFACT_CONTAINER_ZIP_CORRUPT: {bad}")
+              zf.extractall(destination)
+          print(f"EXACT_ARTIFACT_ID_DOWNLOAD=PASS bytes={archive.stat().st_size}")
+          PY
 
       - name: Confirm exact artifact ID download
         if: success()
