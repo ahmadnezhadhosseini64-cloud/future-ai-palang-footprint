@@ -2785,3 +2785,11 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - Decision: hosts never write to master; each verified host receives an owner-created isolated private repository; only owner-reviewed, provenance-checked proposals may be promoted.
 - Ruleset 27814009 is active and protects main with PR/deletion/force-push rules. Live required approvals remain 0; Code Owner review remains false. One owner approval and CODEOWNERS enforcement are approved design but pending GitHub UI configuration and read-back.
 - GitHub does not allow a PR author to approve their own PR. Any owner-only bypass required for owner-authored PRs must be restricted to the owner and never granted to hosts. NEXT-051 remains the sole queue.
+
+
+## مدل دائمی چشم پلنگ و شکارچی پلنگ — 2026-11-25
+
+- سند معماری: [PALANG-EYE-AND-HUNTER-MODEL](architecture/contracts/PALANG-EYE-AND-HUNTER-EXPERIENCE-LEARNING-MODEL-2026-11-25.md) — HAIF-PALANG-EYE-HUNTER-MODEL-2026-11-25-001.
+- مرز: پروژه‌های مستقل وارد معماری اصلی نمی‌شوند؛ فقط درس عمومی، ساده و اعتبارسنجی‌شده منتقل می‌شود.
+- چرخه: EXECUTE → OBSERVE → EXTRACT → TEST → SIMPLIFY → VALIDATE → INTEGRATE → READ-BACK.
+- جایگاه: همان POINT-0/GOLDEN و صف یگانه NEXT-051؛ بدون ریشه یا صف موازی.
