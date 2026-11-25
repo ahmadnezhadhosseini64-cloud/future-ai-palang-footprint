@@ -9,6 +9,16 @@
 
 - Main HEAD at mirror run: `30d1d3b2de09078131fa3c8a0ff7c492a7ab0d7e`; exact-head Audit/RAHM remains NOT VERIFIED. Candidate runs 45110219361 / 45110219381 passed on PR merge SHA `44ffe850d8dc9ec0c1b9cafe8cc0ae1ec829625a`, not on main.
 
+## Owner-selected two-stage host enrollment — 2026-11-25
+
+- **Stage 1 — owner sends one message:** [OWNER_FIRST_MESSAGE_IDENTITY_RECEIPT_FA.md](../prototype/universal-host/OWNER_FIRST_MESSAGE_IDENTITY_RECEIPT_FA.md). The selected host first declares **احمد نژادحسینی**, reads the live public source, and returns a complete identity/evidence receipt. This phrase is an owner-declaration label, never a password or authentication factor.
+- **Stage 2 — owner issues a host-specific message only after review and explicit approval:** [OWNER_SECOND_MESSAGE_PRIVATE_WORKSPACE_FA.md](../prototype/universal-host/OWNER_SECOND_MESSAGE_PRIVATE_WORKSPACE_FA.md). Owner fills official IDs and actual provisioning evidence; no text message itself creates credentials or private access.
+- Existing one-message onboarding material is historical/compatibility material and must not override this two-stage owner-selected flow.
+- **Security invariant:** public master remains READ ONLY to every host. Host ID, workspace, private repository and ACTIVE state require owner issuance/provisioning and independent read-back. Unknown or unprovisioned hosts remain blocked.
+- This enrollment change does not create a new POINT-0 root or execution queue; it is subordinate to POINT-0/GOLDEN and the sole NEXT-051.
+
+---
+
 ## POINT-0/GOLDEN — canonical current baseline (2026-11-22)
 
 - [POINT-0/GOLDEN](0.0/anchors/GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md) → [IN-130](0.0/anchors/PALANG-0.0-IN-20261122-130-GOLDEN-BASELINE.md) → [OUT-129](0.0/anchors/PALANG-0.0-OUT-20261122-129-GOLDEN-BASELINE.md)
