@@ -45,7 +45,7 @@ class CanonicalZipTests(unittest.TestCase):
             self.assertTrue(receipt.exists())
             self.assertEqual(result["sha256"],__import__("json").loads(receipt.read_text())["sha256"])
 
-    def test_symlink_rejected(self):
+    def test_symlink_directory_rejected(self):\n        with tempfile.TemporaryDirectory() as td:\n            root=Path(td)/"src"; root.mkdir()\n            target=Path(td)/"outside"; target.mkdir(); (target/"secret.txt").write_text("x")\n            (root/"linked-dir").symlink_to(target, target_is_directory=True)\n            with self.assertRaisesRegex(ValueError,"symlink rejected"):\n                build_archive(root,Path(td)/"bundle.zip")\n\n    def test_receipt_contains_per_file_hashes(self):\n        with tempfile.TemporaryDirectory() as td:\n            root=Path(td)/"src"; root.mkdir(); (root/"f.txt").write_text("payload")\n            result=build_archive(root,Path(td)/"archive.zip")\n            self.assertEqual(result["files"][0]["sha256"],hashlib.sha256(b"payload").hexdigest())\n\n    def test_symlink_rejected(self):
         with tempfile.TemporaryDirectory() as td:
             root=Path(td)/"src"; root.mkdir()
             target=Path(td)/"target"; target.write_text("data")
