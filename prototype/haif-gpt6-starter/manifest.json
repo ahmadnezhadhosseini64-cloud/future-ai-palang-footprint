@@ -347,8 +347,7 @@
     "owner-commanded host monitoring and export with provenance and redaction",
     "bot-authored Child PR with owner approval; no auto-merge or automatic Master promotion"
   ],
-  "previous_living_master_version": "1.7.95",
-  "historical_living_master_snapshot": "LIVING_MASTER_REFERENCE-1.7.95-HISTORICAL.md",
-  "historical_living_master_sha256": "GENERATED_AT_BUILD",
-  "living_master_version_bridge": "LIVING_MASTER_VERSION_BRIDGE.md"
+  "previous_living_master_version": null,
+  "living_master_version_bridge": "LIVING_MASTER_VERSION_BRIDGE.md",
+  "living_master_history": []
 }
