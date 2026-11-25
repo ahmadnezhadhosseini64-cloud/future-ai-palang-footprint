@@ -14,7 +14,7 @@ The safe base for this proposal is the exact main commit:
 - Ref observed: main
 - Commit SHA: 2c1f9fdc308e34b23be64153e8eec2c30f08a859
 - Captured: 2026-11-25 (repository observation; no user-message time inferred)
-- Retrieval branch: safety/SAFE-BASE-20261125-2c1f9fd
+- Retrieval branch: safety/SAFE-BASE-SOURCE-20261125-2c1f9fd
 
 The commit SHA is the authoritative identity of the snapshot. A branch name is only a movable retrieval pointer and MUST NOT be treated as immutable evidence. Never force-move or rewrite the recorded safe-base commit. Before creating a new safe base, verify that the prior safe-base SHA remains retrievable and that the new candidate descends from the accepted predecessor.
 
