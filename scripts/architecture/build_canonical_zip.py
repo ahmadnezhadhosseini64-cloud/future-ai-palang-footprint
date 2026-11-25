@@ -11,7 +11,8 @@ import zipfile
 from pathlib import Path
 
 FIXED_TIME = (2020, 1, 1, 0, 0, 0)
-EXCLUDED_NAMES = {".git", "__pycache__", ".pytest_cache", "node_modules", ".venv", "venv"}
+EXCLUDED_NAMES = {".git", "__pycache__", ".pytest_cache", "node_modules", ".venv", "venv", ".ssh", ".aws", ".config"}
+SENSITIVE_NAME_MARKERS = ("secret", "credential", "token", "password", "private-key", "privkey")
 EXCLUDED_SUFFIXES = {".pem", ".key", ".p12", ".pfx"}
 EXCLUDED_EXACT = {".env", ".env.local", ".env.production", "credentials.json", "secrets.json"}
 
