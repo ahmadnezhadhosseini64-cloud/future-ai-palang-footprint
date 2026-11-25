@@ -2790,3 +2790,9 @@ Only NEXT-051 remains active. NEXT-052 is not created. CI and package integrity 
 - IN-131 → OUT-130 → EVT-0318 → TIME-BINDING-EVT-0318 → proposed CURRENT-146 → existing NEXT-051.
 - Lesson: partial search is not proof of absence; complete the retrieval ladder and verify source path, ref/blob SHA, content match and expected item count before final reporting.
 - Status: owner-review branch only; CURRENT-145 remains the main pointer until merge.
+
+
+## Proposed contract — immutability of owner-designated references
+- `docs/architecture/contracts/REFERENCE-IMMUTABILITY-AND-OWNER-AUTHORIZED-VERSIONING-CONTRACT-2026-11-25.md`
+- References are immutable. Only explicitly owner-authorized changes create a separate derivative version. Four certificate references use 1.00/2.00/3.00/4.00; derivatives use 1.01/2.01/3.01/4.01 and sequential increments. Exact diff audit is required.
+- Status: review branch, not main.
