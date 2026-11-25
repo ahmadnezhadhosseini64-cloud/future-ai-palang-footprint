@@ -1,4 +1,7 @@
 """Negative tests for host enrollment gates; they do not provision accounts."""
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "scripts" / "architecture"))
 import unittest
 from host_intake_gate import HostGateError, stage1_read_only_receipt, stage2_workspace_gate
 
