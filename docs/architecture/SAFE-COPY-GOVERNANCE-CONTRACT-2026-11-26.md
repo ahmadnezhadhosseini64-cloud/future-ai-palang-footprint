@@ -81,3 +81,12 @@
 `OWNER = ONLY AUTHORITY FOR ANY LATER PROMOTION`
 
 این قرارداد در شاخهٔ کاری کپی ۲ اصلاح شده است. این تغییر به معنی نوشتن در کپی ۱، main، MASTER، CHILD، RAHM یا GOLDEN نیست.
+
+
+## ۷. همگامی دائمی دو پیام ورود میزبان
+
+دو ورودی عملیاتی میزبان عبارت‌اند از:
+- `prototype/haif-gpt6-starter/ONE_MESSAGE_HOST_BOOTSTRAP_FA.md`
+- `prototype/universal-host/UNIVERSAL_AI_HOST_ENTRY_FA.md`
+
+بخش بین نشانگرهای `PALANG-HOST-ENTRY-CURRENT-AUTHORITY-BEGIN/END` باید در هر دو فایل عیناً یکسان باشد. این بخش مرجع جاری است؛ snapshotهای قدیمی پایین‌تر فقط تاریخچه‌اند و نباید بر آن تقدم پیدا کنند. هر تغییر در وضعیت GOLDEN، CURRENT/NEXT، مبنای دو نسخه، Copy 2، پل یا دروازه‌های پذیرش باید در هر دو پیام هم‌زمان بازتاب یابد. آزمون خودکار باید برابری دقیق این بخش را کنترل کند. تغییر هر دو پیام فقط در Copy 2 مجاز است و نتیجه تا اجرای CI روی exact HEAD جدید، تأییدنشده می‌ماند.

@@ -80,6 +80,9 @@ jobs:
               "prototype/haif-gpt6-starter/safe_points_guard.py",
               "prototype/haif-gpt6-starter/test_safe_points_guard.py",
               "prototype/haif-gpt6-starter/safe_copy_audit.py",
+              "prototype/haif-gpt6-starter/test_host_entry_sync.py",
+              "prototype/haif-gpt6-starter/ONE_MESSAGE_HOST_BOOTSTRAP_FA.md",
+              "prototype/universal-host/UNIVERSAL_AI_HOST_ENTRY_FA.md",
               "prototype/haif-gpt6-starter/test_safe_copy_audit.py",
               "docs/architecture/SAFE-COPY-GOVERNANCE-CONTRACT-2026-11-26.md",
           }
