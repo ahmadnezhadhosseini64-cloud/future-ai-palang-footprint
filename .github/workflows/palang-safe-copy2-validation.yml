@@ -63,6 +63,7 @@ jobs:
               "prototype/haif-gpt6-starter/test_sync_master_version.py",
               ".github/workflows/palang-safe-copy2-validation.yml",
               "docs/architecture/SAFE-COPY-GOVERNANCE-CONTRACT-2026-11-26.md",
+      "docs/architecture/POINT-0-GOLDEN-INITIAL-MODEL-2026-11-26.md",
           }
           changed = set(subprocess.check_output(
               ["git", "diff", "--name-only", "origin/palang-safe-copy-1-baseline-20261126...HEAD"],
