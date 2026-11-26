@@ -4,7 +4,7 @@ from __future__ import annotations
 import argparse, json, os, re, sys, tempfile
 from pathlib import Path
 
-VERSION_RE = re.compile(r"^##\\s+نسخهٔ\\s+(\\d+\\.\\d+\\.\\d+)\\b")
+VERSION_RE = re.compile(r"^##\s+نسخهٔ\s+(\d+\.\d+\.\d+)\b")
 
 def extract_version(master_bytes: bytes) -> str:
     try:

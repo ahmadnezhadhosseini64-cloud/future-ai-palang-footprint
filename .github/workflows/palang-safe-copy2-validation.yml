@@ -1,0 +1,64 @@
+name: Palang Safe Copy 2 Validation
+
+on:
+  push:
+    branches:
+      - palang-safe-copy-2-test-20261126
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-copy-2:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Confirm main and baseline copy remain pinned
+        run: |
+          set -euo pipefail
+          git fetch origin main palang-safe-copy-1-baseline-20261126 --quiet
+          expected="2c1f9fdc308e34b23be64153e8eec2c30f08a859"
+          test "$(git rev-parse origin/main)" = "$expected"
+          test "$(git rev-parse origin/palang-safe-copy-1-baseline-20261126)" = "$expected"
+          test "$(git rev-parse HEAD^)" = "$expected"
+          echo "MAIN_UNCHANGED=$expected"
+          echo "COPY_1_UNCHANGED=$expected"
+      - name: Verify only the authorized copy-2 files differ
+        run: |
+          python - <<'PY'
+          import subprocess
+          expected = {
+              ".github/workflows/rahm-portable-conformance.yml",
+              "prototype/haif-gpt6-starter/test_engine.py",
+              "prototype/haif-gpt6-starter/sync_master_version.py",
+              "prototype/haif-gpt6-starter/test_sync_master_version.py",
+              ".github/workflows/palang-safe-copy2-validation.yml",
+          }
+          changed = set(subprocess.check_output(
+              ["git", "diff", "--name-only", "palang-safe-copy-1-baseline-20261126...HEAD"],
+              text=True
+          ).splitlines())
+          print("COPY2_CHANGED_PATHS=", sorted(changed))
+          assert changed == expected, {"expected": sorted(expected), "actual": sorted(changed)}
+          print("COPY1_TO_COPY2_SCOPE=PASS")
+          PY
+      - name: Compile all starter Python sources
+        run: python -m compileall -q prototype/haif-gpt6-starter
+      - name: Run starter and version-sync tests three times
+        working-directory: prototype/haif-gpt6-starter
+        run: |
+          set -euo pipefail
+          for pass in 1 2 3; do
+            echo "TEST_STRESS_PASS=$pass"
+            python -m unittest discover -s . -p 'test*.py' -v
+          done
+      - name: Whitespace and patch integrity
+        run: |
+          git diff --check palang-safe-copy-1-baseline-20261126...HEAD
+          echo "DIFF_CHECK=PASS"
