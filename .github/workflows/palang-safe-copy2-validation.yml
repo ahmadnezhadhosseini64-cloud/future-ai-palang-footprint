@@ -41,7 +41,7 @@ jobs:
               ".github/workflows/palang-safe-copy2-validation.yml",
           }
           changed = set(subprocess.check_output(
-              ["git", "diff", "--name-only", "palang-safe-copy-1-baseline-20261126...HEAD"],
+              ["git", "diff", "--name-only", "origin/palang-safe-copy-1-baseline-20261126...HEAD"],
               text=True
           ).splitlines())
           print("COPY2_CHANGED_PATHS=", sorted(changed))
