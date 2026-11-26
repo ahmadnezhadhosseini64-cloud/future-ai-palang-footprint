@@ -2,7 +2,7 @@
 
 - Event: [EVT-0315](./EVT-0315-LIVE-MIRROR-SYNC-RECHECK-2026-11-22.md)
 - Stable ID: PALANG-TIME-BINDING-EVT-0315-2026-11-22
-- Version: 1.0.0
+- Version: 1.0.2
 - Canonical clock: actual event-registration Git commit committer timestamp in UTC; Asia/Tehran is derived from that same instant (+03:30).
 - Event registration commit: `5d912f4a9a53e57b41448a66bd6f28e920a25f5e`.
 - Event registration commit UTC: `2026-11-22T07:04:17Z`.
@@ -41,3 +41,27 @@
 - Latest prior mirror-only event: EVT-0290; its event and time binding remain preserved.
 - POINT-0/016, POINT-0/017, POINT-0/018 / EVT-0180, EVT-0177 and its time binding, canonical EVT-0178, EVT-0179 collision lineage and the quarantined duplicate-number draft remain preserved.
 - CURRENT-065/CURRENT-066 and overlay-manifest lineage: OPEN / AMBIGUOUS; no winner inferred. Issues #20/#21 remain OPEN. NEXT-052 was not created.
+
+
+## 4. Post-merge package conformance failure and corrective change
+
+- EVT-0315 evidence addendum commit: `5e3c21956ddae5a8c1472e76cfaf6964baa574cb`.
+- Addendum commit UTC: `2026-11-22T07:13:43Z`; Asia/Tehran derived: `2026-11-22T10:43:43.000+03:30`.
+- Main SHA tested after PR #125 merge: `aaf96c5e195f6f4f59dea43ebd9922b5f009c9ea`.
+- Portable RAHM Conformance and Digest Evidence run `44996828722`: FAILURE on that exact SHA. The workflow copied living mother v1.7.96 into the starter, but the package manifest and test assertions still expected v1.7.95.
+- Failing assertion: `test_response_protocol_preserves_same_zip_identity_and_open_host_gates`, which expected `Version / نسخه: 1.7.95` in the synchronized packaged master. The manifest-version checks also still expected 1.7.95.
+- Partial artifact `14744411091` / SHA-256 `825e007bee8abbf0baee72fbc99b3cea3fe7b02770c54beae2de1ac5bb929864` is retained as failure evidence only; it is not an accepted package.
+- Corrective branch `palang-package-master-sync-20261122-run11` updates `manifest.json`, the three exact version assertions in `test_engine.py`, and the current-mother summary in `README.md` to v1.7.96. Package version 0.5.1, stable package identity and canonical ZIP filename remain unchanged.
+- The correction is awaiting PR #126 review/merge and exact-main reruns. Do not call the package verified until the new exact main SHA passes RAHM conformance, extracted tests, digest, artifact round-trip and release verification.
+- The time-binding file's own final-change commit timestamp is available from its Git commit metadata; it is not substituted for the event or addendum commit timestamp.
+
+
+## 5. Additional checked-in portable pointer correction
+
+- Portable pointer correction commit: `61391ecadafd8d7fe5abff0ee70d40c5f8d24aff`.
+- Commit UTC: `2026-11-22T07:16:45Z`; Asia/Tehran derived: `2026-11-22T10:46:45.000+03:30`.
+- On PR branch SHA `b287b89ca0cff2870ad82994d0cf894c92f8c00c`, Living Architecture Audit run `44997366567` failed because `prototype/haif-gpt6-starter/LIVING_MASTER_REFERENCE.md` still declared v1.7.95 / CURRENT-140 while the canonical mother was v1.7.96 / CURRENT-145.
+- RAHM Security and Promotion Conformance run `44997366616` passed on that same branch SHA.
+- The checked-in portable pointer is now updated to v1.7.96 and CURRENT-145; package version 0.5.1, stable package identity and canonical ZIP filename are preserved.
+- PR #127 now contains the manifest, test, README and checked-in portable pointer corrections. The post-merge exact-main Audit and Portable RAHM Conformance remain the acceptance gates.
+- This time-binding file's own final-change commit timestamp is available from its Git commit metadata and is not substituted for the event/addendum timestamps.

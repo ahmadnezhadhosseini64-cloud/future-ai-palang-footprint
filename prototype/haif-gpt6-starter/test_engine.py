@@ -184,7 +184,7 @@ class PortablePackageProtocolTests(unittest.TestCase):
         self.assertEqual(manifest["version"], manifest["archive_policy"]["current_internal_version"])
         self.assertEqual(manifest["supersedes"], "0.5.0")
         self.assertEqual(manifest["stable_id"], "HAIF-GPT6-PORTABLE-STARTER-20261025-004")
-        self.assertEqual(manifest["current_living_master_version"], "1.7.95")
+        self.assertEqual(manifest["current_living_master_version"], "1.7.96")
         self.assertEqual(manifest["recovery_protocol"], "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md")
         self.assertEqual(manifest["universal_host_entry"], "UNIVERSAL_AI_HOST_ENTRY_FA.md")
         self.assertTrue((package / manifest["universal_host_entry"]).is_file())
@@ -342,7 +342,7 @@ class InteractionResponseAnchorProtocolTests(unittest.TestCase):
         self.assertEqual(manifest["archive_policy"]["canonical_filename"], "haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip")
         self.assertIn("actual host integration", protocol.casefold())
         self.assertIn("NOT VERIFIED", protocol)
-        expected_chain = "POINT-0/GOLDEN → IN-130 → OUT-129 → EVT-0309 → TIME-BINDING-EVT-0309 → CURRENT-140 → NEXT-051"
+        expected_chain = "POINT-0/GOLDEN → IN-130 → OUT-129 → EVT-0309 → TIME-BINDING-EVT-0309 → CURRENT-140 → EVT-0310 → TIME-BINDING-EVT-0310 → CURRENT-141 → EVT-0311 → TIME-BINDING-EVT-0311 → CURRENT-142 → EVT-0312 → TIME-BINDING-EVT-0312 → CURRENT-143 → EVT-0313 → TIME-BINDING-EVT-0313 → CURRENT-144 → EVT-0314 → TIME-BINDING-EVT-0314 → CURRENT-145 → EVT-0315 (mirror-only) → NEXT-051"
         for filename in (
             "GPT6_HOST_INSTRUCTIONS.md",
             "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md",
@@ -357,8 +357,8 @@ class InteractionResponseAnchorProtocolTests(unittest.TestCase):
         self.assertIn("external build receipt", readme)
         self.assertIn("Previous verified v0.4.3 build receipt", readme)
         self.assertIn(expected_chain, readme)
-        self.assertEqual(manifest["current_living_master_version"], "1.7.95")
+        self.assertEqual(manifest["current_living_master_version"], "1.7.96")
         self.assertIn("POINT-0/082 (0++ marker on canonical root 0)", manifest["parent_architecture"])
         packaged_master = (root / "LIVING_MASTER_REFERENCE.md").read_text(encoding="utf-8")
-        self.assertIn("Version / نسخه: 1.7.95", packaged_master)
+        self.assertIn("Version / نسخه: 1.7.96", packaged_master)
         self.assertIn(expected_chain, packaged_master)

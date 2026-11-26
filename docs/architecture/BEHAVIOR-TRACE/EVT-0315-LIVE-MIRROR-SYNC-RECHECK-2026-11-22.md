@@ -70,3 +70,29 @@ All listed runs report exact tested `head_sha = 81c4b8687ad2de61e900c84505922a82
 - Event registration commit time and final-change commit SHA are recorded in the linked TIME-BINDING-EVT-0315 from Git commit metadata.
 - Library metadata time, Actions run times, event commit time and exact Library read-operation time are separate fields; unknown operation times remain UNKNOWN.
 
+
+
+## 6. Post-merge exact-head conformance result and package correction
+
+- PR #125 merged to main at `2026-11-22T07:07:59Z`; resulting main HEAD: `aaf96c5e195f6f4f59dea43ebd9922b5f009c9ea`.
+- On that exact SHA, Living Architecture Audit `44996828769`, Evidence Gate `44996828725`, CPREL Runtime Transfer Harness `44996828900`, CPREL Independent Transfer Evidence `44996828884`, Cross-Layer Integrity Gate `44996828718`, Reconciliation Acceptance Test `44996828693`, Reconciliation Watchdog `44996828715` and Automatic Final Registration Proof `44996828689` all passed.
+- Portable RAHM Conformance and Digest Evidence run `44996828722` FAILED on the same exact SHA. The workflow synchronized canonical mother v1.7.96 into the starter package, while `prototype/haif-gpt6-starter/manifest.json` and `test_engine.py` still expected v1.7.95. The failing test was `test_response_protocol_preserves_same_zip_identity_and_open_host_gates`; package rebuild and downstream artifact round-trip/release steps were skipped.
+- The failed run's partial artifact is preserved as evidence only: artifact `14744411091`, SHA-256 `825e007bee8abbf0baee72fbc99b3cea3fe7b02770c54beae2de1ac5bb929864`. It is NOT an accepted or verified package.
+- Corrective PR #126 aligns the starter manifest, version assertions and README with living mother v1.7.96 while retaining package version 0.5.1, the existing stable package identity and canonical ZIP filename. The package remains CANDIDATE until the exact post-merge main SHA passes Portable RAHM Conformance, extracted tests, digest, artifact round-trip and release verification.
+
+
+### Additional correction — checked-in portable master pointer
+
+- The first package-alignment correction updated manifest/test/README expectations to v1.7.96. PR-branch Living Architecture Audit `44997366567` then exposed one remaining stale checked-in source file: `prototype/haif-gpt6-starter/LIVING_MASTER_REFERENCE.md` still declared v1.7.95 and CURRENT-140.
+- The failing test remained `test_response_protocol_preserves_same_zip_identity_and_open_host_gates`; it reads the checked-in portable master pointer during the repository audit, before the package workflow's build-time synchronization step.
+- RAHM Security and Promotion Conformance run `44997366616` passed on exact branch SHA `b287b89ca0cff2870ad82994d0cf894c92f8c00c`; the Living Architecture Audit did not pass on that SHA.
+- The same PR #127 now also updates the checked-in portable master pointer to v1.7.96 and CURRENT-145 while retaining package version 0.5.1 and the same stable package identity/ZIP filename.
+- The package and final main SHA remain unverified until post-merge Living Architecture Audit and Portable RAHM Conformance pass on the exact same final main SHA.
+
+
+### Additional correction — current-chain assertion
+
+- After the checked-in portable pointer was aligned, Living Architecture Audit run `44997543605` still failed on exact PR-branch SHA `20abccac52adb507ad9d31c0b4c8a6d858986283`.
+- The remaining failure was the test fixture `expected_chain` in `prototype/haif-gpt6-starter/test_engine.py`, which still asserted the historical chain ending `CURRENT-140 → NEXT-051` instead of the current chain through EVT-0314 / CURRENT-145 / mirror-only EVT-0315 / NEXT-051.
+- RAHM Security and Promotion Conformance run `44997543602` passed on that same SHA.
+- This correction updates the test's expected chain to the exact current pointer. No root, queue or package identity is changed. The package remains CANDIDATE pending exact-main Audit and Portable RAHM Conformance.
