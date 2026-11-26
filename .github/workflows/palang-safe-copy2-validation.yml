@@ -26,12 +26,9 @@ jobs:
           expected="2c1f9fdc308e34b23be64153e8eec2c30f08a859"
           copy2_ref="refs/heads/palang-safe-copy-2-test-20261126"
 
-          # Refuse to run this validation against main, copy 1, or an arbitrary ref.
           test "$GITHUB_REF" = "$copy2_ref"
           test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
 
-          # Fetch explicit refspecs so the checked remote-tracking refs cannot be
-          # confused with a similarly named local branch or a stale checkout.
           git fetch --no-tags origin \
             +refs/heads/main:refs/remotes/origin/main \
             +refs/heads/palang-safe-copy-1-baseline-20261126:refs/remotes/origin/palang-safe-copy-1-baseline-20261126
@@ -44,8 +41,6 @@ jobs:
           test "$copy1_sha" = "$expected"
           test "$head_sha" = "$GITHUB_SHA"
 
-          # Verify the pinned baseline is an ancestor of copy 2 and is its
-          # actual merge base; this rejects a detached or independently-rooted copy.
           git merge-base --is-ancestor "$expected" HEAD
           merge_base="$(git merge-base "$expected" HEAD)"
           test "$merge_base" = "$expected"
@@ -67,6 +62,7 @@ jobs:
               "prototype/haif-gpt6-starter/sync_master_version.py",
               "prototype/haif-gpt6-starter/test_sync_master_version.py",
               ".github/workflows/palang-safe-copy2-validation.yml",
+              "docs/architecture/SAFE-COPY-GOVERNANCE-CONTRACT-2026-11-26.md",
           }
           changed = set(subprocess.check_output(
               ["git", "diff", "--name-only", "origin/palang-safe-copy-1-baseline-20261126...HEAD"],
