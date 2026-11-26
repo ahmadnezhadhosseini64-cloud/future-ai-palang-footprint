@@ -62,5 +62,5 @@ jobs:
           done
       - name: Whitespace and patch integrity
         run: |
-          git diff --check palang-safe-copy-1-baseline-20261126...HEAD
+          git diff --check origin/palang-safe-copy-1-baseline-20261126...HEAD
           echo "DIFF_CHECK=PASS"
