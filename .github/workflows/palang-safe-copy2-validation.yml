@@ -48,6 +48,8 @@ jobs:
           assert changed == expected, {"expected": sorted(expected), "actual": sorted(changed)}
           print("COPY1_TO_COPY2_SCOPE=PASS")
           PY
+      - name: Synchronize copy-2 package mother and manifest before tests
+        run: python prototype/haif-gpt6-starter/sync_master_version.py --source "docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md" --target "prototype/haif-gpt6-starter/LIVING_MASTER_REFERENCE.md" --manifest "prototype/haif-gpt6-starter/manifest.json"
       - name: Compile all starter Python sources
         run: python -m compileall -q prototype/haif-gpt6-starter
       - name: Run starter and version-sync tests three times

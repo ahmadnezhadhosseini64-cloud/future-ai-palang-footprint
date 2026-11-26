@@ -41,7 +41,7 @@ def synchronize(source: Path, target: Path, manifest_path: Path) -> dict:
         raise ValueError("manifest stable_id/production_id missing; refusing to sync")
     previous = manifest.get("current_living_master_version")
     manifest["current_living_master_version"] = version
-    new_manifest = (json.dumps(manifest, ensure_ascii=False, indent=2) + "\\n").encode("utf-8")
+    new_manifest = (json.dumps(manifest, ensure_ascii=False, indent=2) + "\n").encode("utf-8")
     try:
         _atomic_replace(target, source_bytes)
         _atomic_replace(manifest_path, new_manifest)
