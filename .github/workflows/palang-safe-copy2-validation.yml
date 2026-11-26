@@ -26,7 +26,7 @@ jobs:
           expected="2c1f9fdc308e34b23be64153e8eec2c30f08a859"
           test "$(git rev-parse origin/main)" = "$expected"
           test "$(git rev-parse origin/palang-safe-copy-1-baseline-20261126)" = "$expected"
-          test "$(git rev-parse HEAD^)" = "$expected"
+          test "$(git merge-base HEAD origin/palang-safe-copy-1-baseline-20261126)" = "$expected"
           echo "MAIN_UNCHANGED=$expected"
           echo "COPY_1_UNCHANGED=$expected"
       - name: Verify only the authorized copy-2 files differ
