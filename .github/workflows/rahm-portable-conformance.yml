@@ -164,8 +164,8 @@ jobs:
             rahm-sha256-evidence.json
             rahm-recovery-equivalence.json
 
-      - name: Synchronize current living mother into portable starter
-        run: cp "docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md" "prototype/haif-gpt6-starter/LIVING_MASTER_REFERENCE.md"
+      - name: Synchronize current living mother and manifest from one source version
+        run: python prototype/haif-gpt6-starter/sync_master_version.py --source "docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md" --target "prototype/haif-gpt6-starter/LIVING_MASTER_REFERENCE.md" --manifest "prototype/haif-gpt6-starter/manifest.json"
       - name: Test the existing HAIF starter package source
         if: always()
         run: |
@@ -199,6 +199,7 @@ jobs:
               "engine.py",
               "state.schema.json",
               "test_engine.py",
+              "sync_master_version.py",
           ]
           missing = [name for name in required if not (source / name).is_file()]
           if missing:
@@ -380,7 +381,7 @@ jobs:
           test -s "$archive"
           test -s "$receipt"
           test -s "$master"
-          cp "$master" "$root/LIVING_MASTER_REFERENCE.md"
+          python prototype/haif-gpt6-starter/sync_master_version.py --source "$master" --target "$root/LIVING_MASTER_REFERENCE.md" --manifest "$root/manifest.json"
           git fetch origin main --quiet
           current_head="$(git rev-parse origin/main)"
           git merge-base --is-ancestor "$GITHUB_SHA" "$current_head"
