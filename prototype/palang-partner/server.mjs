@@ -176,7 +176,8 @@ async function handle(request) {
     return new Response("Unauthorized", { status, headers: { "www-authenticate": 'Bearer realm="Palang Partner MCP"' } });
   }
   try {
-    return await createMcpHandler(() => buildServer(token, actor))(request);
+    const handler = createMcpHandler(() => buildServer(token, actor));
+    return await handler.fetch(request);
   } catch {
     return new Response("MCP request failed", { status: 500 });
   }
