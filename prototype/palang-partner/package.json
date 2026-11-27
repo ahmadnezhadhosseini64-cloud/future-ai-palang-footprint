@@ -6,8 +6,8 @@
   "engines": { "node": ">=20" },
   "scripts": {
     "start": "node server.mjs",
-    "test": "node --test policy.test.mjs runtime-smoke.test.mjs",
-    "check": "node --check server.mjs && node --check policy.mjs && node --check policy.test.mjs && node --check runtime-smoke.test.mjs"
+    "test": "node --test policy.test.mjs runtime-smoke.test.mjs mcp-protocol.test.mjs",
+    "check": "node --check server.mjs && node --check policy.mjs && node --check policy.test.mjs && node --check runtime-smoke.test.mjs && node --check mcp-protocol.test.mjs"
   },
   "dependencies": {
     "@modelcontextprotocol/server": "2.4.0",

@@ -205,3 +205,5 @@ const httpServer = createServer(async (incoming, outgoing) => {
 });
 const port = Number(process.env.PORT || 8080);
 httpServer.listen(port, "0.0.0.0", () => process.stdout.write("Palang Partner MCP listening on " + port + "\n"));
+
+export { httpServer };

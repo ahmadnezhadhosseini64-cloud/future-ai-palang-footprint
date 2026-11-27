@@ -91,6 +91,7 @@ jobs:
               "prototype/palang-partner/Dockerfile",
               "prototype/palang-partner/README.md",
               "prototype/palang-partner/runtime-smoke.test.mjs",
+              "prototype/palang-partner/mcp-protocol.test.mjs",
               "docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md",
               "docs/architecture/SAFE-COPY-GOVERNANCE-CONTRACT-2026-11-26.md",
           }
