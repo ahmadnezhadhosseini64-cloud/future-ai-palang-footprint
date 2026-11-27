@@ -88,6 +88,8 @@ jobs:
               "prototype/palang-partner/server.mjs",
               "prototype/palang-partner/policy.mjs",
               "prototype/palang-partner/policy.test.mjs",
+              "prototype/palang-partner/Dockerfile",
+              "prototype/palang-partner/README.md",
               "docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md",
               "docs/architecture/SAFE-COPY-GOVERNANCE-CONTRACT-2026-11-26.md",
           }
@@ -113,6 +115,8 @@ jobs:
       - name: Check MCP runtime and run policy tests
         working-directory: prototype/palang-partner
         run: npm run check && npm test
+      - name: Build deployable MCP container
+        run: docker build -t palang-partner-mcp:${GITHUB_SHA} prototype/palang-partner
       - name: Audit workflow permissions and recovery package
         run: python prototype/haif-gpt6-starter/safe_copy_audit.py --workflow .github/workflows/palang-safe-copy2-validation.yml --package prototype/haif-gpt6-starter
       - name: Run starter and version-sync tests three times
