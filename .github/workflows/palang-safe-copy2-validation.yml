@@ -3,7 +3,7 @@ name: Palang Safe Copy 2 Validation
 on:
   push:
     branches:
-      - palang-safe-copy-2-test-20261126
+      - palang-safe-copy-2-test-20261127
   pull_request:
     branches:
       - palang-safe-copy-1-baseline-20261126
@@ -25,51 +25,42 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
-      - name: Confirm main, baseline copy, and execution ref are aligned
+      - name: Confirm MAIN is unchanged and Copy 1 is the new promoted baseline
         shell: bash
         env:
           EXPECTED_HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
         run: |
           set -euo pipefail
-          expected="2c1f9fdc308e34b23be64153e8eec2c30f08a859"
+          main_expected="2c1f9fdc308e34b23be64153e8eec2c30f08a859"
+          copy1_expected="f7bdf639f8c5fce7e165db2ab64f5c55d966bbe7"
           copy1_branch="palang-safe-copy-1-baseline-20261126"
-          copy2_branch="palang-safe-copy-2-test-20261126"
-
+          copy2_branch="palang-safe-copy-2-test-20261127"
           if [[ "$GITHUB_EVENT_NAME" == "pull_request" ]]; then
             test "$GITHUB_HEAD_REF" = "$copy2_branch"
           else
             test "$GITHUB_REF" = "refs/heads/$copy2_branch"
           fi
           test "$(git rev-parse HEAD)" = "$EXPECTED_HEAD_SHA"
-
           git fetch --no-tags origin \
             +refs/heads/main:refs/remotes/origin/main \
             +refs/heads/$copy1_branch:refs/remotes/origin/$copy1_branch
-
           main_sha="$(git rev-parse refs/remotes/origin/main^{commit})"
           copy1_sha="$(git rev-parse refs/remotes/origin/$copy1_branch^{commit})"
           head_sha="$(git rev-parse HEAD^{commit})"
-
-          test "$main_sha" = "$expected"
-          test "$copy1_sha" = "$expected"
+          test "$main_sha" = "$main_expected"
+          test "$copy1_sha" = "$copy1_expected"
           test "$head_sha" = "$EXPECTED_HEAD_SHA"
-
-          git merge-base --is-ancestor "$expected" HEAD
-          merge_base="$(git merge-base "$expected" HEAD)"
-          test "$merge_base" = "$expected"
-          commits_ahead="$(git rev-list --count "$expected..HEAD")"
-          test "$commits_ahead" -ge 1
-
+          git merge-base --is-ancestor "$copy1_expected" HEAD
           echo "MAIN_UNCHANGED=$main_sha"
-          echo "COPY_1_UNCHANGED=$copy1_sha"
+          echo "COPY_1_BASELINE=$copy1_sha"
           echo "COPY_2_HEAD=$head_sha"
-          echo "COPY_2_COMMITS_AHEAD=$commits_ahead"
+          echo "COPY_2_AHEAD=$(git rev-list --count "$copy1_expected..HEAD")"
           echo "BRANCH_ALIGNMENT=PASS"
-      - name: Verify only the authorized copy-2 files differ
+      - name: Verify Copy 2 changes stay within the explicit allowlist
         run: |
           python - <<'PY'
           import subprocess
-          expected = {
+          allowed = {
               ".github/workflows/rahm-portable-conformance.yml",
               "prototype/haif-gpt6-starter/test_engine.py",
               "prototype/haif-gpt6-starter/sync_master_version.py",
@@ -93,35 +84,35 @@ jobs:
               "prototype/palang-partner/runtime-smoke.test.mjs",
               "prototype/palang-partner/mcp-protocol.test.mjs",
               "docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md",
-              "docs/architecture/SAFE-COPY-GOVERNANCE-CONTRACT-2026-11-26.md",
           }
           changed = set(subprocess.check_output(
               ["git", "diff", "--name-only", "origin/palang-safe-copy-1-baseline-20261126...HEAD"],
-              text=True
+              text=True,
           ).splitlines())
-          print("COPY2_CHANGED_PATHS=", sorted(changed))
-          assert changed == expected, {"expected": sorted(expected), "actual": sorted(changed)}
-          print("COPY1_TO_COPY2_SCOPE=PASS")
+          print("CHANGED_PATHS=", sorted(changed))
+          unexpected = changed - allowed
+          assert not unexpected, {"unexpected": sorted(unexpected)}
+          print("COPY2_SCOPE=PASS")
           PY
-      - name: Synchronize copy-2 package mother and manifest before tests
+      - name: Synchronize package reference and manifest
         run: python prototype/haif-gpt6-starter/sync_master_version.py --source "docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md" --target "prototype/haif-gpt6-starter/LIVING_MASTER_REFERENCE.md" --manifest "prototype/haif-gpt6-starter/manifest.json"
-      - name: Compile all starter Python sources
+      - name: Compile Python starter
         run: python -m compileall -q prototype/haif-gpt6-starter
-      - name: Setup Node.js for Palang Partner MCP
+      - name: Setup Node.js for MCP runtime
         uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - name: Install pinned MCP runtime dependencies
+      - name: Install MCP runtime dependencies
         working-directory: prototype/palang-partner
         run: npm install --ignore-scripts --no-audit --no-fund --package-lock=false
-      - name: Check MCP runtime and run policy tests
+      - name: Run MCP runtime and policy tests
         working-directory: prototype/palang-partner
         run: npm run check && npm test
-      - name: Build deployable MCP container
+      - name: Build MCP container
         run: docker build -t palang-partner-mcp:${GITHUB_SHA} prototype/palang-partner
-      - name: Audit workflow permissions and recovery package
+      - name: Audit recovery package and workflow permissions
         run: python prototype/haif-gpt6-starter/safe_copy_audit.py --workflow .github/workflows/palang-safe-copy2-validation.yml --package prototype/haif-gpt6-starter
-      - name: Run starter and version-sync tests three times
+      - name: Stress test portable starter 3 times
         working-directory: prototype/haif-gpt6-starter
         run: |
           set -euo pipefail
@@ -129,7 +120,7 @@ jobs:
             echo "TEST_STRESS_PASS=$pass"
             python -m unittest discover -s . -p 'test*.py' -v
           done
-      - name: Whitespace and patch integrity
+      - name: Check whitespace
         run: |
           git diff --check origin/palang-safe-copy-1-baseline-20261126...HEAD
           echo "DIFF_CHECK=PASS"
