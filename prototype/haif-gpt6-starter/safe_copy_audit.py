@@ -1,29 +1,34 @@
 """Fail-closed structural audit for Copy-2 workflow and portable recovery package."""
 from pathlib import Path
 import json
+import re
 
 REQUIRED_PACKAGE = (
     "README.md", "manifest.json", "engine.py", "state.schema.json",
     "LIVING_MASTER_REFERENCE.md", "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md",
     "UNIVERSAL_AI_HOST_ENTRY_FA.md", "safe_points_guard.py",
 )
+ACTION_LINE = re.compile(r"^\s*-?\s*uses:\s*([^\s#]+)", re.MULTILINE)
+FULL_COMMIT = re.compile(r"^[0-9a-f]{40}$")
 
 def audit_workflow(text: str) -> list[str]:
     failures = []
     lines = text.splitlines()
     if "permissions:" not in lines or "  contents: read" not in lines:
         failures.append("workflow permissions must be contents: read only")
-    if any(line.strip().endswith(": write") for line in lines):
+    if any(re.search(r"\b\w+:\s*write\s*(?:#.*)?$", line) for line in lines):
         failures.append("write permission found")
     if "persist-credentials: false" not in text:
         failures.append("checkout credentials must not persist in git config")
     expected_checkout = "ref: " + "$" + "{{ github.event.pull_request.head.sha || github.sha }}"
     if expected_checkout not in text:
         failures.append("checkout is not bound to event head SHA")
-    if "palang-safe-copy-2-test-20261126" not in text or "palang-safe-copy-1-baseline-20261126" not in text:
+    if "palang-safe-copy-1-baseline-20261126" not in text or "palang-safe-copy-2-workbench-20261127" not in text:
         failures.append("copy branch trigger/base missing")
-    if any(line.strip().startswith("uses:") and any(line.strip().endswith("@" + floating) for floating in ("main", "master", "latest")) for line in lines):
-        failures.append("floating action reference found")
+    for match in ACTION_LINE.finditer(text):
+        action = match.group(1).rstrip(",")
+        if "@" not in action or not FULL_COMMIT.fullmatch(action.rsplit("@", 1)[1]):
+            failures.append(f"action must be pinned to a full 40-character commit SHA: {action}")
     if any("git push" in line or "gh pr merge" in line for line in lines):
         failures.append("promotion/write command found")
     return failures
