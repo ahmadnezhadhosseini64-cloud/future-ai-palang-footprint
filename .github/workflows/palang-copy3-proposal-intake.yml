@@ -1,0 +1,99 @@
+name: Palang Copy 3 Proposal Intake
+
+on:
+  pull_request:
+    branches:
+      - palang-safe-copy-2-current-20261127
+    types: [opened, synchronize, reopened, ready_for_review]
+
+permissions:
+  contents: read
+
+jobs:
+  copy3-proposal:
+    if: startsWith(github.head_ref, 'palang-copy3-') && github.event.pull_request.head.repo.full_name != github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout exact Copy 3 proposal head without persisted credentials
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
+        with:
+          persist-credentials: false
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+      - name: Setup Python
+        uses: actions/setup-python@42375524e23c412d93fb67b49958b491fce71c38
+        with:
+          python-version: "3.12"
+      - name: Reject stale Copy 3 and verify exact ancestry
+        shell: bash
+        env:
+          EVENT_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          EVENT_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set -euo pipefail
+          copy2_branch="palang-safe-copy-2-current-20261127"
+          test "$GITHUB_BASE_REF" = "$copy2_branch"
+          [[ "$GITHUB_HEAD_REF" == palang-copy3-* ]]
+          git fetch --no-tags origin "+refs/heads/$copy2_branch:refs/remotes/origin/$copy2_branch"
+          live_copy2_sha="$(git rev-parse "refs/remotes/origin/$copy2_branch^{commit}")"
+          test "$EVENT_BASE_SHA" = "$live_copy2_sha" || {
+            echo "COPY3_STALE=REJECT"
+            echo "PR_BASE_SHA=$EVENT_BASE_SHA"
+            echo "LIVE_COPY2_SHA=$live_copy2_sha"
+            exit 1
+          }
+          test "$(git rev-parse HEAD^{commit})" = "$EVENT_HEAD_SHA"
+          git merge-base --is-ancestor "$live_copy2_sha" "$EVENT_HEAD_SHA"
+          echo "COPY3_BASE_SHA=$live_copy2_sha"
+          echo "COPY3_HEAD_SHA=$EVENT_HEAD_SHA"
+          echo "LIVE_COPY2_SHA=$live_copy2_sha" >> "$GITHUB_ENV"
+          echo "COPY3_FRESHNESS=PASS"
+      - name: Run trusted Copy 2 intake guard on the untrusted PR diff
+        shell: bash
+        env:
+          EVENT_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          EVENT_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set -euo pipefail
+          git show "$LIVE_COPY2_SHA:prototype/haif-gpt6-starter/copy3_intake_guard.py" > "$RUNNER_TEMP/copy3_intake_guard.py"
+          python - <<'PY'
+          import json
+          import os
+          import subprocess
+          from pathlib import Path
+          base = os.environ["LIVE_COPY2_SHA"]
+          head = os.environ["EVENT_HEAD_SHA"]
+          paths = sorted(filter(None, subprocess.check_output(
+              ["git", "diff", "--name-only", f"{base}...{head}"], text=True
+          ).splitlines()))
+          receipt = {
+              "copy2_source_sha": base,
+              "copy3_head_sha": head,
+              "pr_base_sha": os.environ["EVENT_BASE_SHA"],
+              "pr_head_sha": head,
+              "changed_paths": paths,
+          }
+          receipt_path = Path(os.environ["RUNNER_TEMP"]) / "copy3-intake-receipt.json"
+          receipt_path.write_text(json.dumps(receipt), encoding="utf-8")
+          print("COPY3_CHANGED_PATHS=", paths)
+          PY
+          python "$RUNNER_TEMP/copy3_intake_guard.py" \
+            --receipt "$RUNNER_TEMP/copy3-intake-receipt.json" \
+            --expected-copy2-sha "$LIVE_COPY2_SHA"
+      - name: Compile and run proposal tests
+        run: |
+          python -m py_compile prototype/haif-gpt6-starter/*.py
+          python -m unittest discover -s prototype/haif-gpt6-starter -p 'test_*.py' -v
+      - name: Repeat in clean workspace
+        shell: bash
+        run: |
+          set -euo pipefail
+          clean="$RUNNER_TEMP/palang-copy3-clean-intake"
+          git clone --no-local "$GITHUB_WORKSPACE" "$clean"
+          cd "$clean"
+          test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+          python -m unittest discover -s prototype/haif-gpt6-starter -p 'test_*.py' -v
+          echo "COPY3_CLEAN_RETEST=PASS"
+          echo "AUTO_MERGE=DISABLED"
+          echo "COPY3_IDENTITY=NOT_AUTHENTICATED"
+          echo "EXTERNAL_VERIFIER=REQUIRED"

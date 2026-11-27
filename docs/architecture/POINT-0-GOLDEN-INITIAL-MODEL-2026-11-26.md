@@ -117,3 +117,29 @@ Issue #161 تنها دفتر مشترک رسیدهای اجرایی و handoff �
 `POINT-0/GOLDEN → COPY 1 (PROPOSAL) + COPY 2 (SAFE-TEST) → ONE BRIDGE → INDEPENDENT AUDIT → OWNER DECISION`
 
 این سند یک پیشنهاد پایه در کپی ۲ است و تا زمان پذیرش مالک، مرجع اجرایی پذیرفته‌شدهٔ GOLDEN محسوب نمی‌شود.
+
+
+## OWNER ARCHITECTURE CLARIFICATION — ROLLING SAFE REFERENCE / OWNER-GATED PROMOTION (2026-11-27)
+
+This amendment supersedes earlier wording that made Copy 1 permanently frozen or required workflows to pin a historical SHA forever. Architecture advances continuously under owner control; it is not a static snapshot that becomes stale.
+
+### Authority and progression
+- Copy 2 (SAFE-TEST): AI hosts may implement, test, and submit proposals only in an authorized isolated Copy 2 workspace. Proposals target Copy 1, never MAIN.
+- Copy 1 (SAFE REFERENCE): evolving secure reference. A PR can be merged here only after the owner personally reviews and approves that specific PR. CI is evidence, not permission. Hosts/automations may not merge, push, commit directly, or change protections/permissions.
+- MAIN + MASTER: protected canonical roots. AI/automation cannot write, merge, promote, alter protection, or move refs. Only owner may deliberately promote after explicit review/approval. MAIN is not automatically synchronized from Copy 1.
+- Flow: POINT-0/GOLDEN → owner-approved evolving Copy 1 → isolated Copy 2 from current Copy 1 → one evidence bridge/PR to Copy 1 → owner review/merge → Copy 1 advances → owner-only deliberate promotion to MAIN/MASTER.
+
+### Rolling baseline / no stale-pin failures
+- Discover live branch heads and active approved checkpoint each run. Old SHAs remain historical evidence, never permanent workflow expectations.
+- Each proposal records source/base SHA, test SHA, and destination. CI verifies actual target is Copy 1 and tests the current Copy 1 + proposal merge candidate. If the base advances, report STALE BASE / REVALIDATION REQUIRED as lifecycle state, not a security failure.
+- Do not hardcode historical MAIN/Copy 1 SHAs as eternal pins. Baseline changes are expected under owner-controlled progression. Reconcile lineage and re-test current code.
+- Test results apply only to exact test SHA; if base advances, revalidate before merge.
+
+### Status semantics
+STALE BASE / REVALIDATION REQUIRED is distinct from HARNESS FAILURE, TEST FAILURE, SECURITY FAILURE and CANONICAL FAILURE. Report exact changed refs and SHA pair. Never label normal progression a security failure or hide genuine security failure by updating baselines.
+
+### Owner-control enforcement gate
+Owner-gating must be enforced by repository protections and permissions, not prose alone. Branch protection read-back/admin access is unavailable here. MAIN currently reports protected=true via branch metadata; Copy 1 protected=false, a concrete OPEN control gap. Owner must enable required protections/review on Copy 1. No AI may claim owner-gated Copy 1 merges are enforced until read-back confirms it.
+
+### No new root or bridge
+This is a living amendment within existing POINT-0/GOLDEN and PR #172; it creates no new root, queue, copy, or bridge.
