@@ -84,6 +84,10 @@ jobs:
               "prototype/haif-gpt6-starter/ONE_MESSAGE_HOST_BOOTSTRAP_FA.md",
               "prototype/universal-host/UNIVERSAL_AI_HOST_ENTRY_FA.md",
               "prototype/haif-gpt6-starter/test_safe_copy_audit.py",
+              "prototype/palang-partner/package.json",
+              "prototype/palang-partner/server.mjs",
+              "prototype/palang-partner/policy.mjs",
+              "prototype/palang-partner/policy.test.mjs",
               "docs/architecture/SAFE-COPY-GOVERNANCE-CONTRACT-2026-11-26.md",
           }
           changed = set(subprocess.check_output(
@@ -98,6 +102,16 @@ jobs:
         run: python prototype/haif-gpt6-starter/sync_master_version.py --source "docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md" --target "prototype/haif-gpt6-starter/LIVING_MASTER_REFERENCE.md" --manifest "prototype/haif-gpt6-starter/manifest.json"
       - name: Compile all starter Python sources
         run: python -m compileall -q prototype/haif-gpt6-starter
+      - name: Setup Node.js for Palang Partner MCP
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install pinned MCP runtime dependencies
+        working-directory: prototype/palang-partner
+        run: npm install --ignore-scripts --no-audit --no-fund --package-lock=false
+      - name: Check MCP runtime and run policy tests
+        working-directory: prototype/palang-partner
+        run: npm run check && npm test
       - name: Audit workflow permissions and recovery package
         run: python prototype/haif-gpt6-starter/safe_copy_audit.py --workflow .github/workflows/palang-safe-copy2-validation.yml --package prototype/haif-gpt6-starter
       - name: Run starter and version-sync tests three times
