@@ -20,7 +20,7 @@ def audit_workflow(text: str) -> list[str]:
     expected_checkout = "ref: " + "$" + "{{ github.event.pull_request.head.sha || github.sha }}"
     if expected_checkout not in text:
         failures.append("checkout is not bound to event head SHA")
-    if "palang-safe-copy-2-test-20261126" not in text or "palang-safe-copy-1-baseline-20261126" not in text:
+    if "palang-safe-copy-2-test-20261127" not in text or "palang-safe-copy-1-baseline-20261126" not in text:
         failures.append("copy branch trigger/base missing")
     if any(line.strip().startswith("uses:") and any(line.strip().endswith("@" + floating) for floating in ("main", "master", "latest")) for line in lines):
         failures.append("floating action reference found")
