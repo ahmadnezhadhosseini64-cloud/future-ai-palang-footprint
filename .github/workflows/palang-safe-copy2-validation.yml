@@ -31,7 +31,7 @@ jobs:
           EXPECTED_HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
         run: |
           set -euo pipefail
-          main_expected="2c1f9fdc308e34b23be64153e8eec2c30f08a859"
+          main_expected="ae52a024692f874126ecbe2c297c3d62e1558d35"
           copy1_expected="f7bdf639f8c5fce7e165db2ab64f5c55d966bbe7"
           copy1_branch="palang-safe-copy-1-baseline-20261126"
           copy2_branch="palang-safe-copy-2-test-20261127"
@@ -50,6 +50,8 @@ jobs:
           test "$main_sha" = "$main_expected"
           test "$copy1_sha" = "$copy1_expected"
           test "$head_sha" = "$EXPECTED_HEAD_SHA"
+          git merge-base --is-ancestor "$copy1_expected" "$main_expected"
+          git diff --quiet "$main_expected" "$copy1_expected"
           git merge-base --is-ancestor "$copy1_expected" HEAD
           echo "MAIN_UNCHANGED=$main_sha"
           echo "COPY_1_BASELINE=$copy1_sha"
