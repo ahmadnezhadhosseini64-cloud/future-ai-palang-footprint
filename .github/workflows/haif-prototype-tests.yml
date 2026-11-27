@@ -1,14 +1,14 @@
-name: HAIF Prototype Tests
+name: HAIF Canonical MVP Runtime Tests
 
 on:
   push:
     branches: [main]
     paths:
-      - "prototype/haif-v0/**"
+      - "scripts/haif-runtime/**"
       - ".github/workflows/haif-prototype-tests.yml"
   pull_request:
     paths:
-      - "prototype/haif-v0/**"
+      - "scripts/haif-runtime/**"
       - ".github/workflows/haif-prototype-tests.yml"
   workflow_dispatch:
 
@@ -16,11 +16,8 @@ permissions:
   contents: read
 
 jobs:
-  test-haif-prototype:
+  test-haif-runtime:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: prototype/haif-v0
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -28,9 +25,29 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: "3.12"
-          cache: pip
-          cache-dependency-path: prototype/haif-v0/requirements.txt
-      - name: Install dependencies
-        run: python -m pip install --upgrade pip && pip install -r requirements.txt
-      - name: Run prototype tests
-        run: pytest -q
+      - name: Run dependency-free runtime tests
+        run: python -m unittest discover -s scripts/haif-runtime/tests -v
+      - name: Smoke-test CLI help
+        run: python scripts/haif-runtime/haif_runtime.py --help
+      - name: Assemble portable host starter ZIP
+        run: |
+          mkdir -p dist/haif-mvp-host-starter/runtime/tests dist/haif-mvp-host-starter/architecture
+          cp -R prototype/haif-mvp-starter/. dist/haif-mvp-host-starter/
+          cp scripts/haif-runtime/README.md scripts/haif-runtime/haif_runtime.py dist/haif-mvp-host-starter/runtime/
+          cp scripts/haif-runtime/tests/test_runtime.py dist/haif-mvp-host-starter/runtime/tests/
+          cp docs/architecture/HAIF-MVP-CANONICAL-IMPLEMENTATION-DECISION-2026-11-23.md dist/haif-mvp-host-starter/architecture/
+          cp docs/architecture/HAIF-MVP-OPEN-WORK-CHECKLIST.md dist/haif-mvp-host-starter/architecture/
+          cd dist
+          zip -qr haif-mvp-host-starter-v0.1.0-candidate.zip haif-mvp-host-starter
+          sha256sum haif-mvp-host-starter-v0.1.0-candidate.zip | tee SHA256SUMS.txt
+          find haif-mvp-host-starter -type f -print | sort | tee INVENTORY.txt
+      - name: Upload portable ZIP and build receipts
+        uses: actions/upload-artifact@v4
+        with:
+          name: haif-mvp-host-starter-v0.1.0-candidate
+          path: |
+            dist/haif-mvp-host-starter-v0.1.0-candidate.zip
+            dist/SHA256SUMS.txt
+            dist/INVENTORY.txt
+          if-no-files-found: error
+          retention-days: 30

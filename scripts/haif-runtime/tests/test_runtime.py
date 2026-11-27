@@ -34,6 +34,30 @@ class RuntimeTests(unittest.TestCase):
             self.assertEqual(restored["head_hash"], verified["head_hash"])
             self.assertIn("independent_host_import", restored["open_gates"])
 
+    def test_checkpoint_remains_valid_after_new_events_and_can_be_advanced(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            state_path = Path(tmp) / "state.json"
+            self.run_cli("--state", state_path, "init")
+            self.run_cli("--state", state_path, "record", "--input", "first", "--output", "one")
+            self.run_cli("--state", state_path, "checkpoint")
+
+            pinned = json.loads(self.run_cli("--state", state_path, "verify").stdout)
+            self.assertEqual(pinned["events"], 2)
+            first_checkpoint = pinned["checkpoint"]
+
+            self.run_cli("--state", state_path, "record", "--input", "second", "--output", "two")
+            after_append = json.loads(self.run_cli("--state", state_path, "verify").stdout)
+            self.assertEqual(after_append["result"], "PASS")
+            self.assertEqual(after_append["events"], 3)
+            self.assertEqual(after_append["checkpoint"], first_checkpoint)
+
+            self.run_cli("--state", state_path, "checkpoint")
+            advanced = json.loads(self.run_cli("--state", state_path, "verify").stdout)
+            self.assertEqual(advanced["result"], "PASS")
+            self.assertEqual(advanced["events"], 4)
+            self.assertEqual(advanced["checkpoint"]["event_count"], 4)
+            self.assertEqual(advanced["checkpoint"]["head_hash"], advanced["head_hash"])
+
     def test_tampering_detected(self):
         with tempfile.TemporaryDirectory() as tmp:
             state_path = Path(tmp) / "state.json"
