@@ -1,3 +1,11 @@
+# Current Copy 2 operating entry
+
+- **Single control point:** [Copy 2 — owner-command control plane](docs/architecture/SAFE-COPY/COPY2-OWNER-COMMAND-CONTROL-PLANE.md).
+- Copy 2 is the AI build/test workbench. Copy 1 receives proposals only through the owner-commanded bridge. No AI or automation may transfer, accept, merge or promote a candidate without the owner's explicit command.
+- Current active workbench branch: [palang-safe-copy-2-workbench-20261127](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/tree/palang-safe-copy-2-workbench-20261127). This branch is in a public repository and is not protected; do not describe it as private isolation.
+
+---
+
 
 
 > **CURRENT POINT-0++:** [CURRENT-144](docs/0.0/anchors/PALANG-0.0-CURRENT-20261122-144-POINT-0-PLUSPLUS-GOLDEN-PUBLISHED.md) · [EVT-0313](docs/architecture/BEHAVIOR-TRACE/EVT-0313-GOLDEN-SNAPSHOT-PUBLISHED-TO-MAIN-2026-11-22.md) · [TIME-BINDING-EVT-0313](docs/architecture/BEHAVIOR-TRACE/TIME-BINDING-EVT-0313-GOLDEN-SNAPSHOT-PUBLISHED-2026-11-22.md) · sole queue [NEXT-051](docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
