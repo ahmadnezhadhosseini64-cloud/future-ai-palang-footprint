@@ -65,9 +65,6 @@ def validate_copy3_receipt(receipt: dict[str, Any], expected_copy2_sha: str) -> 
         value = receipt.get(key)
         if not isinstance(value, str) or not SHA40.fullmatch(value):
             errors.append(f"{key} must be a full 40-character lowercase commit SHA")
-        value = receipt.get(key)
-        if not isinstance(value, str) or not SHA40.fullmatch(value):
-            errors.append(f"{key} must be a full 40-character lowercase commit SHA")
 
     if receipt.get("copy2_source_sha") != expected_copy2_sha:
         errors.append("Copy 3 was not created from the current expected Copy 2 SHA")

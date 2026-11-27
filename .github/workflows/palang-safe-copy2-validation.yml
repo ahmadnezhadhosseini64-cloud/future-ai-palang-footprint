@@ -6,7 +6,7 @@ on:
       - palang-safe-copy-2-current-20261127
   pull_request:
     branches:
-      - palang-safe-copy-1-baseline-20261126
+      - palang-safe-copy-2-current-20261127
     types: [opened, synchronize, reopened]
   workflow_dispatch:
 
@@ -31,23 +31,38 @@ jobs:
         shell: bash
         env:
           EXPECTED_HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+          EVENT_BASE_SHA: ${{ github.event.pull_request.base.sha }}
         run: |
           set -euo pipefail
           copy1_branch="palang-safe-copy-1-baseline-20261126"
           copy2_branch="palang-safe-copy-2-current-20261127"
           if [[ "$GITHUB_EVENT_NAME" == "pull_request" ]]; then
-            test "$GITHUB_HEAD_REF" = "$copy2_branch"
-            test "$GITHUB_BASE_REF" = "$copy1_branch"
+            test "$GITHUB_BASE_REF" = "$copy2_branch"
+            [[ "$GITHUB_HEAD_REF" == palang-copy2-proposal-* ]]
           else
             test "$GITHUB_REF" = "refs/heads/$copy2_branch"
           fi
           test "$(git rev-parse HEAD^{commit})" = "$EXPECTED_HEAD_SHA"
           git fetch --no-tags origin \
             +refs/heads/main:refs/remotes/origin/main \
-            +refs/heads/$copy1_branch:refs/remotes/origin/$copy1_branch
+            +refs/heads/$copy1_branch:refs/remotes/origin/$copy1_branch \
+            +refs/heads/$copy2_branch:refs/remotes/origin/$copy2_branch
           main_sha="$(git rev-parse refs/remotes/origin/main^{commit})"
           copy1_sha="$(git rev-parse refs/remotes/origin/$copy1_branch^{commit})"
+          copy2_sha="$(git rev-parse refs/remotes/origin/$copy2_branch^{commit})"
           head_sha="$(git rev-parse HEAD^{commit})"
+          if [[ "$GITHUB_EVENT_NAME" == "pull_request" ]]; then
+            test "$EVENT_BASE_SHA" = "$copy2_sha" || {
+              echo "COPY2_PROPOSAL_STALE=REJECT"
+              echo "PR_BASE_SHA=$EVENT_BASE_SHA"
+              echo "LIVE_COPY2_SHA=$copy2_sha"
+              exit 1
+            }
+            git merge-base --is-ancestor "$copy2_sha" "$head_sha" || {
+              echo "COPY2_PROPOSAL_NOT_DESCENDANT=REJECT"
+              exit 1
+            }
+          fi
           git merge-base --is-ancestor "$copy1_sha" "$head_sha" || {
             echo "STALE_BASE=REVALIDATION_REQUIRED"
             echo "CURRENT_COPY1_SHA=$copy1_sha"
@@ -106,15 +121,17 @@ jobs:
         run: python prototype/haif-gpt6-starter/safe_copy_audit.py --workflow .github/workflows/palang-safe-copy2-validation.yml --copy3-workflow .github/workflows/palang-copy3-proposal-intake.yml --package prototype/haif-gpt6-starter
       - name: Repeat tests in a clean workspace
         shell: bash
+        env:
+          EXPECTED_HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
         run: |
           set -euo pipefail
           clean="$RUNNER_TEMP/palang-clean-copy2-check"
           git clone --no-local "$GITHUB_WORKSPACE" "$clean"
           cd "$clean"
-          test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
-          python -m py_compile prototype/haif-gpt6-starter/safe_copy_audit.py prototype/haif-gpt6-starter/safe_points_guard.py
+          test "$(git rev-parse HEAD)" = "$EXPECTED_HEAD_SHA"
+          python -m py_compile prototype/haif-gpt6-starter/safe_copy_audit.py prototype/haif-gpt6-starter/safe_points_guard.py prototype/haif-gpt6-starter/copy3_intake_guard.py
           python -m unittest discover -s prototype/haif-gpt6-starter -p 'test_safe_*.py' -v
-          python prototype/haif-gpt6-starter/safe_copy_audit.py --workflow .github/workflows/palang-safe-copy2-validation.yml --package prototype/haif-gpt6-starter
+          python prototype/haif-gpt6-starter/safe_copy_audit.py --workflow .github/workflows/palang-safe-copy2-validation.yml --copy3-workflow .github/workflows/palang-copy3-proposal-intake.yml --package prototype/haif-gpt6-starter
           echo "CLEAN_WORKSPACE_RETEST=PASS"
           echo "INDEPENDENT_EXTERNAL_VERIFIER=NOT_PROVISIONED"
           echo "SAFE_VERSION_CERTIFICATION=BLOCKED"

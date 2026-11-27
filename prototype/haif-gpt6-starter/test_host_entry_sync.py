@@ -23,6 +23,7 @@ def block(path: Path) -> str:
 class HostEntrySynchronizationTests(unittest.TestCase):
     def test_both_host_entry_authority_blocks_match_exactly(self):
         self.assertEqual(block(FILES[0]), block(FILES[1]))
+        self.assertEqual(block(FILES[0]), block(FILES[2]))
 
     def test_current_authority_defines_two_distinct_messages(self):
         current = block(FILES[0])
@@ -37,7 +38,7 @@ class HostEntrySynchronizationTests(unittest.TestCase):
             "POINT-0/GOLDEN",
             "palang-safe-copy-2-current-20261127",
             "فقط در همان Copy 3 بنویس",
-            "به شاخه Copy 2 بده",
+            "PR پیشنهادی را به Copy 2 والد بده",
             "MAIN، Copy 1، Copy 2، MASTER، RAHM",
             "STALE",
             "SECURITY CANDIDATE",
@@ -62,7 +63,7 @@ class HostEntrySynchronizationTests(unittest.TestCase):
 
     def test_current_copy2_sha_is_pinned_as_a_full_commit(self):
         current = block(FILES[0])
-        self.assertIn("exact SHA آخرین Copy 2 پذیرفته‌شده", current)
+        self.assertIn("exact SHA زنده و پذیرفته‌شدهٔ Copy 2", current)
 
 
 if __name__ == "__main__":
