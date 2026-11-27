@@ -52,19 +52,21 @@
 
 ## وضعیت زنده — هر بار باید بازخوانی و جایگزین شود
 
-آخرین بازخوانی ثبت‌شده در این نوبت: **2026-11-27** (زمان UTC از commit GitHub؛ این تاریخ جای بازخوانی بعدی را نمی‌گیرد).
+آخرین بازخوانی زندهٔ GitHub: **2026-11-27**. این راهنما در commit فعلی `f26457222dd4533601bfb0ec8a40c7bf88b9fa9f` بازخوانی شد؛ SHA خود فایل در این بازخوانی `a11ec79837d0a4332fa0414d259fb90c064a621e` بود.
 
 - MAIN: `ae52a024692f874126ecbe2c297c3d62e1558d35`
 - Copy 1: `ae52a024692f874126ecbe2c297c3d62e1558d35`
-- Copy 2: `a7e34f99a78bf4381d8ef709aacf762402d6654d` (آخرین SHA بازخوانی‌شده؛ پس از commit همین راهنما دوباره از ref زنده بخوان)
+- Copy 2: `f26457222dd4533601bfb0ec8a40c7bf88b9fa9f`
 - شاخهٔ فعال Copy 2: `palang-safe-copy-2-workbench-20261127`
+- مقایسهٔ زندهٔ MAIN...Copy2: `ahead_by=11`, `behind_by=0`, `merge_base=ae52a024692f874126ecbe2c297c3d62e1558d35`.
 - PR به Copy 1 از این شاخه: ایجاد نشده؛ فرمان انتقال مالک دریافت نشده.
-- کد ممیزی و تست‌های منفی به‌روزرسانی شدند؛ workflow اعتبارسنجی از SHA و refs زنده استفاده می‌کند و Actionها را با SHA کامل pin کرده است.
-- CI Run [45999327656](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/45999327656) روی SHA `a7e34f99a78bf4381d8ef709aacf762402d6654d`: تمام گام‌ها موفق؛ ۲۰ تست گارد در checkout اصلی و ۲۰ تست در workspace پاک موفق؛ ممیزی بستهٔ بازیابی `AUDIT=PASS`.
+- کد گارد شواهد و SHA و آزمون‌های منفی آن در Copy 2 هستند؛ workflow نیز Actionها را با SHA کامل pin کرده و refs جاری را می‌خواند.
+- CI Run [45999424607](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/45999424607) روی SHA `f26457222dd4533601bfb0ec8a40c7bf88b9fa9f`: `completed / success`. این نتیجه فقط اعتبارسنجی همان workflow کاندید را ثابت می‌کند، نه استقلال داور را.
 - این CI هنوز از workflow تعریف‌شده در خود Copy 2 اجرا می‌شود؛ بنابراین validator مستقل از candidate نیست و نباید به‌عنوان مرز اعتماد مستقل تلقی شود.
-- وضعیت ایزوله‌سازی: **OPEN** — بازخوانی GitHub نشان داد مخزن `public` و `protected=false` برای Copy 2 است. MAIN محافظت‌شده است؛ Copy 1 و Copy 2 محافظت‌شده نیستند. API اتصال فعلی اجازهٔ تغییر visibility/ruleset یا خواندن protection detail را نداد. عمومی‌بودن مخزن به معنی افشای کد است؛ شاخه به‌تنهایی حریم خصوصی مستقل ندارد.
-- اعتبارسنجی مستقل از کاندید: **OPEN / BLOCKED** — workflow داخل candidate است و قابل تغییر توسط candidate؛ ابزار اتصال فعلی فقط خواندن ruleset را فراهم کرد و ابزار مجاز برای ایجاد required workflow خارج از candidate در دسترس نبود.
-- آزمون بازیابی workspace پاک: **PASS (شبیه‌سازی CI)** — clone جداگانه در RUNNER_TEMP، اجرای مجدد ۲۰ تست و ممیزی بسته موفق شد. این آزمایش، میزبان هوش مصنوعی مستقل یا نشست مستقل نیست.
+- وضعیت ایزوله‌سازی: **OPEN** — متادیتای زندهٔ GitHub مخزن را `public` و شاخهٔ Copy 2 را `protected=false` نشان می‌دهد. MAIN `protected=true` است؛ Copy 1 و Copy 2 `protected=false` هستند. مخزن عمومی است و شاخه به‌تنهایی حریم خصوصی مستقل ندارد.
+- وضعیت دسترسی مدیریتی ابزار: متادیتای `get_repo` مقدار `permissions.admin=true` برگرداند؛ اما خواندن جزئیات branch protection برای Copy 2 از endpoint مربوطه با `403 Resource not accessible by integration` رد شد. ابزار GitHub در دسترس نیز عملیات ایجاد مخزن خصوصی یا تغییر ruleset را ارائه نمی‌کند. بنابراین هیچ تغییر امنیتی در سطح GitHub اعمال نشده است.
+- اعتبارسنجی مستقل از کاندید: **OPEN / BLOCKED** — workflow داخل candidate است و candidate می‌تواند آن را تغییر دهد؛ required check مستقل و خارج از candidate هنوز مستقر نشده است.
+- آزمون بازیابی workspace پاک: **PASS (شبیه‌سازی CI قبلی)** — clone جداگانه در RUNNER_TEMP و اجرای مجدد تست‌ها موفق بود. این آزمایش، میزبان هوش مصنوعی مستقل یا نشست مستقل نیست.
 - پذیرش میزبان AI مستقل، هویت runtime و restart persistence: **OPEN / NOT RUN**.
 
 ## کار باز بعدی
