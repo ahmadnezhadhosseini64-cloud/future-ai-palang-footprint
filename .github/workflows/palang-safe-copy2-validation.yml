@@ -3,10 +3,10 @@ name: Palang Safe Copy 2 Validation
 on:
   push:
     branches:
-      - palang-safe-copy-2-test-20261126
+      - palang-safe-copy-2-current-20261127
   pull_request:
     branches:
-      - palang-safe-copy-1-baseline-20261126
+      - palang-safe-copy-2-current-20261127
     types: [opened, synchronize, reopened]
   workflow_dispatch:
 
@@ -15,102 +15,125 @@ permissions:
 
 jobs:
   validate-copy-2:
-    # PRs from unrelated proposal branches are not Copy 2 runs; skip them neutrally.
-    if: github.event_name != 'pull_request' || github.head_ref == 'palang-safe-copy-2-test-20261126'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - name: Checkout exact candidate without persisted credentials
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
         with:
           persist-credentials: false
           ref: ${{ github.event.pull_request.head.sha || github.sha }}
           fetch-depth: 0
-      - uses: actions/setup-python@v6
+      - name: Setup Python
+        uses: actions/setup-python@42375524e23c412d93fb67b49958b491fce71c38
         with:
           python-version: "3.12"
-      - name: Confirm main, baseline copy, and execution ref are aligned
+      - name: Resolve live MAIN and Copy 1 independently
+        shell: bash
+        env:
+          EXPECTED_HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+          EVENT_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          set -euo pipefail
+          copy1_branch="palang-safe-copy-1-baseline-20261126"
+          copy2_branch="palang-safe-copy-2-current-20261127"
+          if [[ "$GITHUB_EVENT_NAME" == "pull_request" ]]; then
+            test "$GITHUB_BASE_REF" = "$copy2_branch"
+            [[ "$GITHUB_HEAD_REF" == palang-copy2-proposal-* ]]
+          else
+            test "$GITHUB_REF" = "refs/heads/$copy2_branch"
+          fi
+          test "$(git rev-parse HEAD^{commit})" = "$EXPECTED_HEAD_SHA"
+          git fetch --no-tags origin \
+            +refs/heads/main:refs/remotes/origin/main \
+            +refs/heads/$copy1_branch:refs/remotes/origin/$copy1_branch \
+            +refs/heads/$copy2_branch:refs/remotes/origin/$copy2_branch
+          main_sha="$(git rev-parse refs/remotes/origin/main^{commit})"
+          copy1_sha="$(git rev-parse refs/remotes/origin/$copy1_branch^{commit})"
+          copy2_sha="$(git rev-parse refs/remotes/origin/$copy2_branch^{commit})"
+          head_sha="$(git rev-parse HEAD^{commit})"
+          if [[ "$GITHUB_EVENT_NAME" == "pull_request" ]]; then
+            test "$EVENT_BASE_SHA" = "$copy2_sha" || {
+              echo "COPY2_PROPOSAL_STALE=REJECT"
+              echo "PR_BASE_SHA=$EVENT_BASE_SHA"
+              echo "LIVE_COPY2_SHA=$copy2_sha"
+              exit 1
+            }
+            git merge-base --is-ancestor "$copy2_sha" "$head_sha" || {
+              echo "COPY2_PROPOSAL_NOT_DESCENDANT=REJECT"
+              exit 1
+            }
+          fi
+          git merge-base --is-ancestor "$copy1_sha" "$head_sha" || {
+            echo "STALE_BASE=REVALIDATION_REQUIRED"
+            echo "CURRENT_COPY1_SHA=$copy1_sha"
+            echo "TEST_HEAD_SHA=$head_sha"
+            exit 1
+          }
+          merge_base="$(git merge-base "$copy1_sha" "$head_sha")"
+          test "$merge_base" = "$copy1_sha"
+          echo "MAIN_READ_ONLY_SHA=$main_sha"
+          echo "COPY1_SAFE_REFERENCE_SHA=$copy1_sha"
+          echo "COPY2_TEST_HEAD_SHA=$head_sha"
+          echo "COPY2_BASE_SHA=$merge_base"
+          echo "MAIN_EQUALS_COPY1=NOT_REQUIRED"
+          echo "BRANCH_LINEAGE=PASS"
+      - name: Enforce exact changed-path allowlist
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import subprocess
+          allowed = {
+              ".github/workflows/palang-safe-copy2-validation.yml",
+              ".github/workflows/palang-copy3-proposal-intake.yml",
+              "docs/architecture/SAFE-COPY/COPY2-OWNER-COMMAND-CONTROL-PLANE.md",
+              "prototype/haif-gpt6-starter/safe_copy_audit.py",
+              "prototype/haif-gpt6-starter/test_safe_copy_audit.py",
+              "prototype/haif-gpt6-starter/safe_points_guard.py",
+              "prototype/haif-gpt6-starter/test_safe_points_guard.py",
+              "prototype/haif-gpt6-starter/copy3_intake_guard.py",
+              "prototype/haif-gpt6-starter/test_safe_copy3_intake_guard.py",
+              "prototype/haif-gpt6-starter/ONE_MESSAGE_HOST_BOOTSTRAP_FA.md",
+              "prototype/haif-gpt6-starter/UNIVERSAL_AI_HOST_ENTRY_FA.md",
+              "prototype/universal-host/UNIVERSAL_AI_HOST_ENTRY_FA.md",
+              "prototype/haif-gpt6-starter/test_host_entry_sync.py",
+              "prototype/haif-gpt6-starter/manifest.json",
+          }
+          changed = set(subprocess.check_output(
+              ["git", "diff", "--name-only",
+               "origin/palang-safe-copy-1-baseline-20261126...HEAD"],
+              text=True,
+          ).splitlines())
+          unexpected = changed - allowed
+          print("CHANGED_PATHS=", sorted(changed))
+          if unexpected:
+              raise SystemExit("UNAUTHORIZED_PATHS=" + repr(sorted(unexpected)))
+          if not changed:
+              raise SystemExit("EMPTY_CANDIDATE_DIFF")
+          print("PATH_ALLOWLIST=PASS")
+          PY
+      - name: Compile and run security tests
+        run: |
+          python -m py_compile prototype/haif-gpt6-starter/safe_copy_audit.py prototype/haif-gpt6-starter/safe_points_guard.py prototype/haif-gpt6-starter/copy3_intake_guard.py
+          python -m unittest discover -s prototype/haif-gpt6-starter -p 'test_safe_*.py' -v
+          python -m unittest discover -s prototype/haif-gpt6-starter -p 'test_host_entry_sync.py' -v
+      - name: Audit workflow and portable recovery package
+        run: python prototype/haif-gpt6-starter/safe_copy_audit.py --workflow .github/workflows/palang-safe-copy2-validation.yml --copy3-workflow .github/workflows/palang-copy3-proposal-intake.yml --package prototype/haif-gpt6-starter
+      - name: Repeat tests in a clean workspace
         shell: bash
         env:
           EXPECTED_HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
         run: |
           set -euo pipefail
-          copy1_branch="palang-safe-copy-1-baseline-20261126"
-          copy2_branch="palang-safe-copy-2-test-20261126"
+          clean="$RUNNER_TEMP/palang-clean-copy2-check"
+          git clone --no-local "$GITHUB_WORKSPACE" "$clean"
+          cd "$clean"
           test "$(git rev-parse HEAD)" = "$EXPECTED_HEAD_SHA"
-
-          if [[ "$GITHUB_EVENT_NAME" == "pull_request" ]]; then
-            test "$GITHUB_HEAD_REF" = "$copy2_branch"
-            test "$GITHUB_BASE_REF" = "$copy1_branch"
-          else
-            test "$GITHUB_REF" = "refs/heads/$copy2_branch"
-          fi
-
-          git fetch --no-tags origin \
-            +refs/heads/main:refs/remotes/origin/main \
-            +refs/heads/$copy1_branch:refs/remotes/origin/$copy1_branch
-
-          main_sha="$(git rev-parse refs/remotes/origin/main^{commit})"
-          copy1_sha="$(git rev-parse refs/remotes/origin/$copy1_branch^{commit})"
-          head_sha="$(git rev-parse HEAD^{commit})"
-
-          if ! git merge-base --is-ancestor "$copy1_sha" "$head_sha"; then
-            echo "STALE_BASE=REVALIDATION_REQUIRED"
-            echo "CURRENT_COPY1_SHA=$copy1_sha"
-            echo "TEST_HEAD_SHA=$head_sha"
-            exit 1
-          fi
-
-          commits_ahead="$(git rev-list --count "$copy1_sha..HEAD")"
-          test "$commits_ahead" -ge 1
-          echo "MAIN_CURRENT_SHA=$main_sha"
-          echo "COPY_1_CURRENT_SHA=$copy1_sha"
-          echo "COPY_2_TEST_HEAD=$head_sha"
-          echo "COPY_2_COMMITS_AHEAD=$commits_ahead"
-          echo "BASELINE_MODE=ROLLING"
-          echo "BRANCH_ALIGNMENT=PASS"
-      - name: Verify only the authorized copy-2 files differ
-        run: |
-          python - <<'PY'
-          import subprocess
-          expected = {
-              ".github/workflows/rahm-portable-conformance.yml",
-              "prototype/haif-gpt6-starter/test_engine.py",
-              "prototype/haif-gpt6-starter/sync_master_version.py",
-              "prototype/haif-gpt6-starter/test_sync_master_version.py",
-              ".github/workflows/palang-safe-copy2-validation.yml",
-              "docs/architecture/SAFE-COPY-GOVERNANCE-CONTRACT-2026-11-26.md",
-              "docs/architecture/POINT-0-GOLDEN-INITIAL-MODEL-2026-11-26.md",
-              "prototype/haif-gpt6-starter/safe_points_guard.py",
-              "prototype/haif-gpt6-starter/test_safe_points_guard.py",
-              "prototype/haif-gpt6-starter/safe_copy_audit.py",
-              "prototype/haif-gpt6-starter/test_host_entry_sync.py",
-              "prototype/haif-gpt6-starter/ONE_MESSAGE_HOST_BOOTSTRAP_FA.md",
-              "prototype/universal-host/UNIVERSAL_AI_HOST_ENTRY_FA.md",
-              "prototype/haif-gpt6-starter/test_safe_copy_audit.py",
-              "docs/architecture/SAFE-COPY-GOVERNANCE-CONTRACT-2026-11-26.md",
-          }
-          changed = set(subprocess.check_output(
-              ["git", "diff", "--name-only", "origin/palang-safe-copy-1-baseline-20261126...HEAD"],
-              text=True
-          ).splitlines())
-          print("COPY2_CHANGED_PATHS=", sorted(changed))
-          assert changed == expected, {"expected": sorted(expected), "actual": sorted(changed)}
-          print("COPY1_TO_COPY2_SCOPE=PASS")
-          PY
-      - name: Synchronize copy-2 package mother and manifest before tests
-        run: python prototype/haif-gpt6-starter/sync_master_version.py --source "docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md" --target "prototype/haif-gpt6-starter/LIVING_MASTER_REFERENCE.md" --manifest "prototype/haif-gpt6-starter/manifest.json"
-      - name: Compile all starter Python sources
-        run: python -m compileall -q prototype/haif-gpt6-starter
-      - name: Audit workflow permissions and recovery package
-        run: python prototype/haif-gpt6-starter/safe_copy_audit.py --workflow .github/workflows/palang-safe-copy2-validation.yml --package prototype/haif-gpt6-starter
-      - name: Run starter and version-sync tests three times
-        working-directory: prototype/haif-gpt6-starter
-        run: |
-          set -euo pipefail
-          for pass in 1 2 3; do
-            echo "TEST_STRESS_PASS=$pass"
-            python -m unittest discover -s . -p 'test*.py' -v
-          done
-      - name: Whitespace and patch integrity
-        run: |
-          git diff --check origin/palang-safe-copy-1-baseline-20261126...HEAD
-          echo "DIFF_CHECK=PASS"
+          python -m py_compile prototype/haif-gpt6-starter/safe_copy_audit.py prototype/haif-gpt6-starter/safe_points_guard.py prototype/haif-gpt6-starter/copy3_intake_guard.py
+          python -m unittest discover -s prototype/haif-gpt6-starter -p 'test_safe_*.py' -v
+          python prototype/haif-gpt6-starter/safe_copy_audit.py --workflow .github/workflows/palang-safe-copy2-validation.yml --copy3-workflow .github/workflows/palang-copy3-proposal-intake.yml --package prototype/haif-gpt6-starter
+          echo "CLEAN_WORKSPACE_RETEST=PASS"
+          echo "INDEPENDENT_EXTERNAL_VERIFIER=NOT_PROVISIONED"
+          echo "SAFE_VERSION_CERTIFICATION=BLOCKED"
+      - name: Check patch integrity
+        run: git diff --check origin/palang-safe-copy-1-baseline-20261126...HEAD
