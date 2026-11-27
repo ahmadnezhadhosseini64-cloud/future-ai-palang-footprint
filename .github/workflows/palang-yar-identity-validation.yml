@@ -1,0 +1,85 @@
+name: PALANG-YAR Identity Proposal Validation
+
+on:
+  push:
+    branches:
+      - palang-yar-evolution-point-001-copy2-20261126
+  pull_request:
+    branches:
+      - palang-safe-copy-1-baseline-20261126
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+
+jobs:
+  validate-identity-proposal:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout exact proposal commit without persisted credentials
+        uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Resolve rolling Copy 1 baseline and test candidate
+        shell: bash
+        run: |
+          set -euo pipefail
+          copy1_branch="palang-safe-copy-1-baseline-20261126"
+          main_branch="main"
+          test_ref="$(git rev-parse HEAD^{commit})"
+          git fetch --no-tags origin \
+            +refs/heads/$main_branch:refs/remotes/origin/$main_branch \
+            +refs/heads/$copy1_branch:refs/remotes/origin/$copy1_branch
+          main_sha="$(git rev-parse refs/remotes/origin/$main_branch^{commit})"
+          copy1_sha="$(git rev-parse refs/remotes/origin/$copy1_branch^{commit})"
+          if [[ "$GITHUB_EVENT_NAME" == "pull_request" ]]; then
+            test "$GITHUB_BASE_REF" = "$copy1_branch"
+          fi
+          if ! git merge-base --is-ancestor "$copy1_sha" "$test_ref"; then
+            echo "STALE_BASE=REVALIDATION_REQUIRED"
+            echo "CURRENT_COPY1_SHA=$copy1_sha"
+            echo "TEST_REF_SHA=$test_ref"
+            exit 1
+          fi
+          echo "MAIN_CURRENT_SHA=$main_sha"
+          echo "COPY1_CURRENT_SHA=$copy1_sha"
+          echo "TEST_CANDIDATE_SHA=$test_ref"
+          echo "BASELINE_MODE=ROLLING"
+          echo "BASELINE_GUARD=PASS"
+      - name: Enforce exact proposal scope
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import subprocess
+          expected = {
+              ".github/workflows/palang-yar-identity-validation.yml",
+              ".github/workflows/palang-safe-copy2-validation.yml",
+              "docs/architecture/HOST-IDENTITY/PALANG-YAR-HOST-IDENTITY-PROPOSAL-2026-11-26.md",
+              "docs/architecture/HOST-IDENTITY/PALANG-YAR-RECOGNITION-MANIFEST.json",
+              "docs/architecture/HOST-IDENTITY/PALANG-YAR-EVOLUTION-CONTINUATION-2026-11-26.md",
+              "docs/architecture/HOST-IDENTITY/PALANG-YAR-IDENTITY-ROOT-PRINCIPLES-AND-EXECUTION-PLAN-2026-11-27.md",
+              "docs/architecture/SAFE-COPY-GOVERNANCE-CONTRACT-2026-11-26.md",
+              "docs/architecture/POINT-0-GOLDEN-INITIAL-MODEL-2026-11-26.md",
+              "tests/host_identity/test_palang_yar_identity_proposal.py",
+          }
+          actual = set(subprocess.check_output(
+              ["git", "diff", "--name-only", "refs/remotes/origin/palang-safe-copy-1-baseline-20261126...HEAD"],
+              text=True,
+          ).splitlines())
+          print("EXPECTED_PATHS=", sorted(expected))
+          print("ACTUAL_PATHS=", sorted(actual))
+          assert actual == expected, {"expected": sorted(expected), "actual": sorted(actual)}
+          print("CHANGE_SCOPE=PASS")
+          PY
+      - name: Run identity and anti-impersonation tests three times
+        shell: bash
+        run: |
+          set -euo pipefail
+          for pass in 1 2 3; do
+            echo "IDENTITY_STRESS_PASS=$pass"
+            python -m unittest discover -s tests/host_identity -p 'test*.py' -v
+          done
+      - name: Check patch whitespace
+        run: git diff --check refs/remotes/origin/palang-safe-copy-1-baseline-20261126...HEAD
