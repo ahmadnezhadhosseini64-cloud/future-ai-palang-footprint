@@ -9,7 +9,8 @@ GOOD_WORKFLOW = """permissions:
       ref: ${{ github.event.pull_request.head.sha || github.sha }}
       branches:
         - palang-safe-copy-1-baseline-20261126
-        - palang-safe-copy-2-test-20261126
+        - palang-safe-copy-2-workbench-20261127
+      - uses: actions/checkout@0123456789abcdef0123456789abcdef01234567
       - name: verify paths
         run: git diff --name-only
         assert changed == expected
@@ -19,15 +20,24 @@ class WorkflowSecurityAuditTests(unittest.TestCase):
     def test_good_workflow_passes(self):
         self.assertEqual(audit_workflow(GOOD_WORKFLOW), [])
     def test_write_permissions_fail(self):
-        self.assertTrue(audit_workflow(GOOD_WORKFLOW.replace("contents: read", "contents: write")))
-    def test_floating_action_ref_fails(self):
-        self.assertIn("floating action reference found", audit_workflow(GOOD_WORKFLOW + " uses: example/action@main"))
+        self.assertIn("write permission found", audit_workflow(GOOD_WORKFLOW.replace("contents: read", "contents: write")))
+    def test_dash_uses_floating_branch_fails(self):
+        result = audit_workflow(GOOD_WORKFLOW + "\n      - uses: example/action@main")
+        self.assertTrue(any("full 40-character commit SHA" in x for x in result))
+    def test_dash_uses_version_tag_fails(self):
+        result = audit_workflow(GOOD_WORKFLOW + "\n      - uses: example/action@v4")
+        self.assertTrue(any("full 40-character commit SHA" in x for x in result))
+    def test_unpinned_action_fails(self):
+        result = audit_workflow(GOOD_WORKFLOW + "\n      - uses: example/action")
+        self.assertTrue(any("full 40-character commit SHA" in x for x in result))
+    def test_full_sha_action_passes(self):
+        self.assertEqual(audit_workflow(GOOD_WORKFLOW), [])
     def test_credentials_persistence_fails(self):
         self.assertIn("checkout credentials must not persist in git config", audit_workflow(GOOD_WORKFLOW.replace("persist-credentials: false", "")))
     def test_checkout_not_sha_bound_fails(self):
         self.assertIn("checkout is not bound to event head SHA", audit_workflow(GOOD_WORKFLOW.replace("ref: ${{ github.event.pull_request.head.sha || github.sha }}", "ref: main")))
     def test_promotion_command_fails(self):
-        self.assertIn("promotion/write command found", audit_workflow(GOOD_WORKFLOW + " run: git push origin main"))
+        self.assertIn("promotion/write command found", audit_workflow(GOOD_WORKFLOW + "\n        run: git push origin main"))
 
 class RecoveryPackageAuditTests(unittest.TestCase):
     def test_missing_files_are_reported(self):
