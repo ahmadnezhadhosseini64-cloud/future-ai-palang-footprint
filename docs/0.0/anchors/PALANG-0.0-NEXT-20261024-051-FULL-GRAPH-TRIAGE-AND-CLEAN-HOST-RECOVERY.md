@@ -1,3 +1,16 @@
+## LIVE COPY LIFECYCLE READ-BACK — 2026-11-27
+
+- **PROMOTED Copy 2 → new Copy 1:** Copy 1 branch `palang-safe-copy-1-baseline-20261126` now points to `f7bdf639f8c5fce7e165db2ab64f5c55d966bbe7`, the exact former Copy 2 head. Main was not changed.
+- **Fresh Copy 2 created:** `palang-safe-copy-2-test-20261127` was created from that promoted SHA. It remains in the same public repository; this is a branch-based snapshot, not a private independent clone. Copy 1 and Copy 2 branch protection read-back is `protected=false`.
+- **Validation repair:** the inherited workflow and audit fixture had stale 2026-11-26 branch expectations. Updated the workflow, audit rule and test fixture to recognize the fresh branch and promoted baseline. First runs failed on stale audit expectations; corrected and re-ran.
+- **Exact PASS evidence:** CI run `45972634535` on SHA `9616f0e0fd3830e144feeb549002437843d324d8` completed SUCCESS: alignment check, path allowlist, source/manifest sync, Python compile, 9/9 MCP Node tests, Docker build, recovery/workflow audit, 53 Python tests (3 stress passes) and diff check. The next commit must be re-tested against its own SHA.
+- **Bridge:** draft PR #174 is Copy 2 → Copy 1 only; no MAIN target and no merge. PR #173 is closed/merged after Copy 1 reached the former Copy 2 head. PR #172 (PALANG-YAR identity proposal) remains separate, open and unmerged; its base/branch checks need reconciliation against this new baseline.
+- **Critical connection gap:** the runtime is a tested stateless MCP server that accepts a supplied GitHub bearer token and calls `GET /user`; it does not implement OAuth authorization-server metadata, ChatGPT-compatible OAuth/PKCE, GitHub OAuth callback/broker, encrypted session storage, refresh/revoke, OpenAI Responses API client, hosting or live deployment. No authenticated live MCP test exists.
+- **External blocker:** current connected tools can read/write GitHub source and PRs but cannot register the OAuth/GitHub App, create/secure hosting, set provider secrets, or deploy. Custom MCP connections in ChatGPT are web/workspace-plan restricted; the current Free/mobile session cannot add a write-capable custom MCP connector. These are capability/provider gates, not source-code PASSes.
+- **Current statuses:** Copy lifecycle transition = READ-BACK VERIFIED; CI on exact listed SHA = PASS; Copy 2 independence/privacy/protection = NOT VERIFIED; OAuth/HTTPS/live connection = OPEN; MAIN unchanged = verified at `2c1f9fdc308e34b23be64153e8eec2c30f08a859`.
+
+---
+
 ## CURRENT-145 / POINT-0++ — independent Partner API/MCP bridge (2026-11-22)
 
 - Publication read-back: PR #109 merged to Golden; PR #110 merged to main. Main HEAD `90a0282e03e1a50b270d33ed470cbd9d15d6f5b9`; both branches tree SHA `88dcc25f6fa0c25da85f59d916218ecc4f484b9a` (MATCH).

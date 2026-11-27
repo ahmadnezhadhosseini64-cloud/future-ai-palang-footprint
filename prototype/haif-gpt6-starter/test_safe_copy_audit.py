@@ -9,7 +9,7 @@ GOOD_WORKFLOW = """permissions:
       ref: ${{ github.event.pull_request.head.sha || github.sha }}
       branches:
         - palang-safe-copy-1-baseline-20261126
-        - palang-safe-copy-2-test-20261126
+        - palang-safe-copy-2-test-20261127
       - name: verify paths
         run: git diff --name-only
         assert changed == expected
