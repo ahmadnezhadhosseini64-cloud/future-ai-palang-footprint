@@ -9,6 +9,26 @@
 
 - Main HEAD at mirror run: `30d1d3b2de09078131fa3c8a0ff7c492a7ab0d7e`; exact-head Audit/RAHM remains NOT VERIFIED. Candidate runs 45110219361 / 45110219381 passed on PR merge SHA `44ffe850d8dc9ec0c1b9cafe8cc0ae1ec829625a`, not on main.
 
+## Owner-selected two-stage host enrollment — 2026-11-25
+
+- **Stage 1 — owner sends one message:** [OWNER_FIRST_MESSAGE_IDENTITY_RECEIPT_FA.md](../prototype/universal-host/OWNER_FIRST_MESSAGE_IDENTITY_RECEIPT_FA.md). The selected host first declares **احمد نژادحسینی**, reads the live public source, and returns a complete identity/evidence receipt. This phrase is an owner-declaration label, never a password or authentication factor.
+- **Stage 2 — owner issues a host-specific message only after review and explicit approval:** [OWNER_SECOND_MESSAGE_PRIVATE_WORKSPACE_FA.md](../prototype/universal-host/OWNER_SECOND_MESSAGE_PRIVATE_WORKSPACE_FA.md). Owner fills official IDs and actual provisioning evidence; no text message itself creates credentials or private access.
+- Existing one-message onboarding material is historical/compatibility material and must not override this two-stage owner-selected flow.
+- **Security invariant:** public master remains READ ONLY to every host. Host ID, workspace, private repository and ACTIVE state require owner issuance/provisioning and independent read-back. Unknown or unprovisioned hosts remain blocked.
+- This enrollment change does not create a new POINT-0 root or execution queue; it is subordinate to POINT-0/GOLDEN and the sole NEXT-051.
+
+---
+
+## Owner-selected first-host entry milestone — 2026-11-25
+
+- Milestone record: [HOST-ENTRY-MILESTONE-2026-11-25](architecture/BEHAVIOR-TRACE/HOST-ENTRY-MILESTONE-2026-11-25.md).
+- This is a continuation marker under POINT-0/GOLDEN, not a new root, numbered CURRENT, or parallel queue. The sole queue remains NEXT-051.
+- Two-stage owner-selected host messages are proposed in PR #168. Stage 1 obtains public-source readback and a structured receipt; Stage 2 is issued only after owner review and explicit approval.
+- **«احمد نژادحسینی» is an owner-declaration phrase, not a password or access grant.** A host repeating it is not authenticated, registered, or ACTIVE.
+- PR #168 is OPEN / NOT MERGED. Main adoption, host receipt review, official Host ID, private workspace provisioning, and real isolation tests remain pending. See the milestone record for the exact evidence boundary.
+
+---
+
 ## POINT-0/GOLDEN — canonical current baseline (2026-11-22)
 
 - [POINT-0/GOLDEN](0.0/anchors/GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md) → [IN-130](0.0/anchors/PALANG-0.0-IN-20261122-130-GOLDEN-BASELINE.md) → [OUT-129](0.0/anchors/PALANG-0.0-OUT-20261122-129-GOLDEN-BASELINE.md)
