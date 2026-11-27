@@ -85,6 +85,8 @@ jobs:
           import subprocess
           allowed = {
               ".github/workflows/palang-safe-copy2-validation.yml",
+              ".github/workflows/palang-yar-identity-validation.yml",
+              "tests/host_identity/test_identity_workflow_pins.py",
               ".github/workflows/palang-copy3-proposal-intake.yml",
               "docs/architecture/SAFE-COPY/COPY2-OWNER-COMMAND-CONTROL-PLANE.md",
               "prototype/haif-gpt6-starter/safe_copy_audit.py",
@@ -117,6 +119,9 @@ jobs:
           python -m py_compile prototype/haif-gpt6-starter/safe_copy_audit.py prototype/haif-gpt6-starter/safe_points_guard.py prototype/haif-gpt6-starter/copy3_intake_guard.py
           python -m unittest discover -s prototype/haif-gpt6-starter -p 'test_safe_*.py' -v
           python -m unittest discover -s prototype/haif-gpt6-starter -p 'test_host_entry_sync.py' -v
+          python -m unittest discover -s tests/host_identity -p 'test*.py' -v
+          python prototype/haif-gpt6-starter/sync_master_version.py --source "docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md" --target "prototype/haif-gpt6-starter/LIVING_MASTER_REFERENCE.md" --manifest "prototype/haif-gpt6-starter/manifest.json"
+          python -m unittest discover -s prototype/haif-gpt6-starter -p 'test_engine.py' -v
       - name: Audit workflow and portable recovery package
         run: python prototype/haif-gpt6-starter/safe_copy_audit.py --workflow .github/workflows/palang-safe-copy2-validation.yml --copy3-workflow .github/workflows/palang-copy3-proposal-intake.yml --package prototype/haif-gpt6-starter
       - name: Repeat tests in a clean workspace
@@ -131,6 +136,10 @@ jobs:
           test "$(git rev-parse HEAD)" = "$EXPECTED_HEAD_SHA"
           python -m py_compile prototype/haif-gpt6-starter/safe_copy_audit.py prototype/haif-gpt6-starter/safe_points_guard.py prototype/haif-gpt6-starter/copy3_intake_guard.py
           python -m unittest discover -s prototype/haif-gpt6-starter -p 'test_safe_*.py' -v
+          python -m unittest discover -s prototype/haif-gpt6-starter -p 'test_host_entry_sync.py' -v
+          python -m unittest discover -s tests/host_identity -p 'test*.py' -v
+          python prototype/haif-gpt6-starter/sync_master_version.py --source "docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md" --target "prototype/haif-gpt6-starter/LIVING_MASTER_REFERENCE.md" --manifest "prototype/haif-gpt6-starter/manifest.json"
+          python -m unittest discover -s prototype/haif-gpt6-starter -p 'test_engine.py' -v
           python prototype/haif-gpt6-starter/safe_copy_audit.py --workflow .github/workflows/palang-safe-copy2-validation.yml --copy3-workflow .github/workflows/palang-copy3-proposal-intake.yml --package prototype/haif-gpt6-starter
           echo "CLEAN_WORKSPACE_RETEST=PASS"
           echo "INDEPENDENT_EXTERNAL_VERIFIER=NOT_PROVISIONED"
