@@ -167,7 +167,7 @@ async function handle(request) {
     token = parseBearer(request.headers.get("authorization"));
     actor = await authenticate(token);
   } catch (error) {
-    const status = error.message === "OWNER_IDENTITY_MISMATCH" ? 403 : (error.status === 401 ? 401 : 403);
+    const status = error.message === "OWNER_IDENTITY_MISMATCH" ? 403 : ((error.status === 401 || error.message === "BEARER_TOKEN_REQUIRED") ? 401 : 403);
     return new Response("Unauthorized", { status, headers: { "www-authenticate": 'Bearer realm="Palang Partner MCP"' } });
   }
   try {
