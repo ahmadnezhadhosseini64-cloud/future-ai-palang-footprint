@@ -56,23 +56,25 @@
 
 - MAIN: `ae52a024692f874126ecbe2c297c3d62e1558d35`
 - Copy 1: `ae52a024692f874126ecbe2c297c3d62e1558d35`
-- Copy 2: شاخهٔ فعال اکنون روی `c61800b580c0fea8dcca3bdaabfb81124e10aee2` (آخرین بازخوانی پیش از commit همین راهنما؛ SHA نهایی را از ref زنده بخوان)
+- Copy 2: `a7e34f99a78bf4381d8ef709aacf762402d6654d` (آخرین SHA بازخوانی‌شده؛ پس از commit همین راهنما دوباره از ref زنده بخوان)
 - شاخهٔ فعال Copy 2: `palang-safe-copy-2-workbench-20261127`
 - PR به Copy 1 از این شاخه: ایجاد نشده؛ فرمان انتقال مالک دریافت نشده.
 - کد ممیزی و تست‌های منفی به‌روزرسانی شدند؛ workflow اعتبارسنجی از SHA و refs زنده استفاده می‌کند و Actionها را با SHA کامل pin کرده است.
-- CI Run [45998614724](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/45998614724) روی SHA `c61800b580c0fea8dcca3bdaabfb81124e10aee2`: تمام ۸ گام اصلی موفق؛ در آخرین بازخوانی، فقط post-job cleanup هنوز در حال اجرا بود؛ نتیجهٔ نهایی job باید دوباره خوانده شود.
-- این CI فقط همان candidate را آزمایش می‌کند؛ اعتبارسنج مستقل از candidate نیست.
-- وضعیت ایزوله‌سازی: **OPEN** — مخزن عمومی است و شاخهٔ Copy 2 محافظت نشده؛ آن را محیط خصوصی یا امنِ مستقل معرفی نکن.
-- اعتبارسنجی مستقل از کاندید: **OPEN** — workflow تحت کنترل همان کاندید، مرجع اعتماد مستقل محسوب نمی‌شود.
-- هویت runtime میزبان و آزمون بازیابی میزبان پاک: **OPEN / NOT VERIFIED**.
+- CI Run [45999327656](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/actions/runs/45999327656) روی SHA `a7e34f99a78bf4381d8ef709aacf762402d6654d`: تمام گام‌ها موفق؛ ۲۰ تست گارد در checkout اصلی و ۲۰ تست در workspace پاک موفق؛ ممیزی بستهٔ بازیابی `AUDIT=PASS`.
+- این CI هنوز از workflow تعریف‌شده در خود Copy 2 اجرا می‌شود؛ بنابراین validator مستقل از candidate نیست و نباید به‌عنوان مرز اعتماد مستقل تلقی شود.
+- وضعیت ایزوله‌سازی: **OPEN** — بازخوانی GitHub نشان داد مخزن `public` و `protected=false` برای Copy 2 است. MAIN محافظت‌شده است؛ Copy 1 و Copy 2 محافظت‌شده نیستند. API اتصال فعلی اجازهٔ تغییر visibility/ruleset یا خواندن protection detail را نداد. عمومی‌بودن مخزن به معنی افشای کد است؛ شاخه به‌تنهایی حریم خصوصی مستقل ندارد.
+- اعتبارسنجی مستقل از کاندید: **OPEN / BLOCKED** — workflow داخل candidate است و قابل تغییر توسط candidate؛ ابزار اتصال فعلی فقط خواندن ruleset را فراهم کرد و ابزار مجاز برای ایجاد required workflow خارج از candidate در دسترس نبود.
+- آزمون بازیابی workspace پاک: **PASS (شبیه‌سازی CI)** — clone جداگانه در RUNNER_TEMP، اجرای مجدد ۲۰ تست و ممیزی بسته موفق شد. این آزمایش، میزبان هوش مصنوعی مستقل یا نشست مستقل نیست.
+- پذیرش میزبان AI مستقل، هویت runtime و restart persistence: **OPEN / NOT RUN**.
 
 ## کار باز بعدی
 
 1. workflow اعتبارسنجی Copy 2 را از SHA و فهرست فایل قدیمیِ ثابت خارج کن و مبنا را از refs جاری بگیر.
-2. تشخیص `- uses:` و الزام pin کامل SHA برای Actionها در ممیزی و تست‌ها اصلاح شد. باقی‌مانده: validator مستقل از کاندید؛ و اصلاح `safe_points_guard.py` که هنوز به booleanهای ارسالی اعتماد می‌کند و SHA/ancestry/evidence را مستقلاً اثبات نمی‌کند.
-3. آزمون منفی Action بدون pin و Action با tag/branch شناور اضافه شد. آزمون‌های SHA جعلی، شواهد جعلی، validator دستکاری‌شده و مقصد غیرمجاز هنوز OPEN هستند.
-4. آزمون بازیابی میزبان پاک و گیت فرمان مالک را واقعاً اجرا کن.
-5. فقط پس از تکمیل شواهد و فرمان صریح مالک، کاندید را به Copy 1 پیشنهاد بده.
+2. اصلاح `safe_points_guard.py` انجام شد: دیگر هیچ boolean موفقیت از caller نمی‌پذیرد؛ refهای MAIN/Copy1 را از Git می‌خواند، SHAهای کامل را resolve می‌کند، ancestry و changed-path allowlist را بررسی می‌کند و فقط `OWNER_REVIEW_ONLY` یا `BLOCKED` می‌دهد. هیچ قابلیت push/merge/PR ندارد.
+3. آزمون‌های مخزن موقت برای ref جعلی، base/head جعلی، تاریخچهٔ نامرتبط، مسیر غیرمجاز و تلاش برای ارسال boolean اضافه و در CI اجرا شدند: ۲۰ تست PASS. آزمون دستکاری validator مستقل هنوز OPEN است؛ چون validator مستقل هنوز مستقر نشده.
+4. workspace پاک CI آزمایش شد و PASS است؛ آزمون واقعی میزبان AI مستقل و نشست دوم هنوز نیازمند میزبان خارجی و receipt مستقیم است.
+5. ایزوله‌سازی واقعی را با یک مخزن خصوصی مستقل Copy 2 و ruleset مستقل تکمیل کن؛ این تغییر روی visibility مخزن مادر اعمال نشود. سپس validator مورداعتماد خارج از candidate را به‌صورت required check متصل کن. ابزار فعلی برای ساخت مخزن خصوصی/تغییر ruleset دسترسی نوشتن نداد.
+6. فقط پس از تکمیل شواهد و فرمان صریح مالک، کاندید را به Copy 1 پیشنهاد بده.
 
 ## توقف فوری
 
