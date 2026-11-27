@@ -259,11 +259,11 @@
     "host registry schema and empty template with no false active-host claims",
     "legacy host-intake branch and direct GitHub worker frozen/disabled; no host writes to any master branch; owner-commanded export to private owner-only RAHM",
     "interaction schema requires host provenance, exact master revision, digest, privacy status and receipt",
-    "single-message GPT host bootstrap: canonical repository read-only connection, latest pointer/receipt verification, paired master+ZIP recovery, extracted tests and private host-scoped workspace provisioning orchestration",
-    "one-message onboarding uses only the official future-ai-palang-footprint repository; never requests pasted credentials or grants direct main/master write access",
+    "two-message owner-governed host entry: Message 1 records model/platform/session and actual tool capabilities; Message 2 assigns bounded work and the owner-provisioned Copy 3 workspace",
+    "two-message onboarding uses only the official repository for public READ; selected hosts receive write access only to their isolated Copy 3 fork, never the parent repository",
     "host workspace must be a private runtime/sandbox boundary, not merely a folder in a shared repository",
     "0++ is a readiness/highlight marker on canonical root 0, not a new point or root; 0+ remains the same root marker and 0.0 remains a parent-linked continuation",
-    "single-message GPT-6 host bootstrap with official GitHub connector, latest package/master recovery, private workspace provisioning where supported, and acceptance receipt",
+    "two-message GPT-6 host entry with explicit identity declaration, bounded mission, Copy 3-only write scope, and owner-controlled PR review",
     "model- and platform-neutral universal AI-host entry instruction",
     "safe ZIP extraction and recovery sequence with path traversal checks, exact SHA-256 receipt, inventory, CRC and byte-match verification",
     "Latest Runnable versus Development separation with evidence-gated capability promotion and immutable historical preservation",
@@ -271,7 +271,9 @@
     "anonymous public HTTPS repository READ/clone/fetch without OAuth",
     "separate capability gates for READ, EXECUTE, private/persistent WORKSPACE and authenticated WRITE",
     "owner-governed host entry with public-read-first behavior and optional OAuth only for private resources or write-back",
-    "model-neutral host entry and GPT compatibility bootstrap synchronized to POINT-0/082"
+    "model-neutral two-message host entry and GPT compatibility bootstrap synchronized to the Copy 2 / Copy 3 proposal-and-pressure-test architecture",
+    "Copy 3 host proposal lane: selected host works only in an owner-provisioned independent fork from the exact accepted Copy 2 SHA; host PR is read-only validated and never auto-merged",
+    "Copy 2 independently reviews and pressure-tests Copy 3 proposals; stale source SHA is rejected and owner-protected workflows, validators, tests and host-entry prompts are blocked"
   ],
   "not_proven": [
     "native GPT plugin execution",
@@ -307,7 +309,9 @@
     "A single bootstrap prompt cannot grant GitHub authorization, deploy a broker, create unavailable persistent storage, or prove a real external host connection",
     "actual destination host public clone/import and runtime execution",
     "persistent isolated destination workspace and restart recovery",
-    "authenticated write-back from destination host; not required for public READ"
+    "authenticated write-back from destination host; not required for public READ",
+    "actual Copy 3 fork provisioning for a selected host and a real external-host PR intake/review cycle",
+    "independent cryptographic host identity, external verifier service, protected signing key and replay-resistant one-use nonce store"
   ],
   "archive_policy": {
     "canonical_filename": "haif-gpt6-starter-v0.3.0-0plus-bootstrap-clean.zip",
@@ -331,7 +335,8 @@
     "HOST_REGISTRY_TEMPLATE.json",
     "FIRST_HOST_GPT6_ACCEPTANCE_CHECKLIST.md",
     "INDEPENDENT_HOST_ACCEPTANCE_PROMPT_FA.md",
-    "ONE_MESSAGE_HOST_BOOTSTRAP_FA.md"
+    "ONE_MESSAGE_HOST_BOOTSTRAP_FA.md",
+    "UNIVERSAL_AI_HOST_ENTRY_FA.md"
   ],
   "one_message_host_bootstrap": "ONE_MESSAGE_HOST_BOOTSTRAP_FA.md",
   "host_bootstrap_message": "ONE_MESSAGE_HOST_BOOTSTRAP_FA.md",
@@ -346,5 +351,13 @@
     "no direct or indirect host write route to canonical master or RAHM",
     "owner-commanded host monitoring and export with provenance and redaction",
     "bot-authored Child PR with owner approval; no auto-merge or automatic Master promotion"
-  ]
+  ],
+  "host_entry_mode": "TWO_MESSAGE_OWNER_GOVERNED",
+  "host_entry_message_1": "UNIVERSAL_AI_HOST_ENTRY_FA.md — identity and actual capability declaration only; wait for owner message 2",
+  "host_entry_message_2": "UNIVERSAL_AI_HOST_ENTRY_FA.md — bounded mission; owner-provisioned Copy 3 only",
+  "host_entry_source_of_truth": "The PALANG-HOST-ENTRY-CURRENT-AUTHORITY block must remain byte-identical in ONE_MESSAGE_HOST_BOOTSTRAP_FA.md, UNIVERSAL_AI_HOST_ENTRY_FA.md (starter), and prototype/universal-host/UNIVERSAL_AI_HOST_ENTRY_FA.md",
+  "host_entry_sync_test": "test_host_entry_sync.py",
+  "copy3_model": "Owner-provisioned independent fork created only after host selection from the exact latest accepted Copy 2 SHA; host writes only to Copy 3 and opens a PR to the Copy 2 branch in the parent repository",
+  "copy3_intake_workflow": ".github/workflows/palang-copy3-proposal-intake.yml",
+  "copy3_intake_guard": "copy3_intake_guard.py"
 }
