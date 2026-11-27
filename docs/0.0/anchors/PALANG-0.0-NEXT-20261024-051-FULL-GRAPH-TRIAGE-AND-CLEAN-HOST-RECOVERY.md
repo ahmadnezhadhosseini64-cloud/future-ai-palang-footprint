@@ -9,7 +9,10 @@
 - **DONE / READ-BACK VERIFIED — PR #109 merged to Golden.** Merge commit `414a87792b701e4d97fe28bec7d93de1a0328381`.
 - **OPEN — B1:** provision private service repository and HTTPS hosting target using owner sign-in; do not put service credentials in public master.
 - **OPEN — B2:** register owner-authorized GitHub App with user authorization, callback URL, minimum permissions and owner installation.
-- **OPEN — B3–B4:** implement OAuth session broker, encrypted token store, owner identity validation, MCP server and narrow allowlisted tools.
+- **OPEN — B3:** implement the GitHub App OAuth authorization/callback flow, PKCE/state validation, encrypted session store, token refresh/revocation and owner disconnect. The current runtime validates a supplied bearer token against GitHub `GET /user`; it is not an OAuth broker and does not persist tokens.
+- **PARTIAL — B4:** an executable stateless Streamable HTTP MCP runtime is now committed on Copy 2. It verifies the owner login on each request, allowlists the single Palang repository, denies writes to MAIN/Copy 1/Copy 2, creates working branches only from Copy 2, limits PR targets to Copy 1, excludes merge/elevated/destructive tools, and blocks secret/RAHM paths.
+- **LOCAL TESTS — PASS:** Node syntax check and 6/6 policy tests passed before commit. **GITHUB ACTIONS — PASS:** run `45969976294`, exact commit `077d6530b88e783b5458924af959a87b3d145c22`, completed successfully.
+- **NOT YET PROVEN:** live MCP initialize/tools/list/call against a deployed endpoint, OAuth identity/session lifecycle, token storage, OpenAI Responses API integration, hosting/HTTPS, runtime isolation and external end-to-end tests remain OPEN.
 - **OPEN — B5–B6:** configure OpenAI API project/key in hosting secret manager, integrate Responses API, deploy HTTPS MCP endpoint. Never paste API keys, OAuth secrets, tokens or private keys into chat.
 - **OPEN — B7–B9:** execute read-only and controlled write tests, elevated-action approval tests, read-back/audit checks, and negative host-isolation tests.
 - The current ChatGPT/GitHub connector cannot provision the App, private repository, API project/key, hosting, or deployed MCP endpoint. Continue all source-control work; stop only at those actual external setup/authentication boundaries.
@@ -94,7 +97,7 @@ PR #101 and #92 remain historical OPEN evidence only; do not merge or delete the
 
 - Stable ID: G6IP-RAHM-NEXT-051-20261024
 - Production ID: G6IP-RAHM-NEXT-051-20261024
-- Version: 1.0.52
+- Version: 1.0.53
 - Status: OPEN / LIVING / IN PROGRESS / NOT COMPLETE
 - Project: Future AI / Palang Footprint — HAIF
 - Canonical queue: this file only

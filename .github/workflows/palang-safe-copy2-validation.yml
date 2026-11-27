@@ -88,6 +88,7 @@ jobs:
               "prototype/palang-partner/server.mjs",
               "prototype/palang-partner/policy.mjs",
               "prototype/palang-partner/policy.test.mjs",
+              "docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md",
               "docs/architecture/SAFE-COPY-GOVERNANCE-CONTRACT-2026-11-26.md",
           }
           changed = set(subprocess.check_output(

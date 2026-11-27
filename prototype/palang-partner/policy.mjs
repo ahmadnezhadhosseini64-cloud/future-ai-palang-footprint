@@ -15,19 +15,23 @@ export function assertBranchReadable(branch) {
   if (typeof branch !== "string" || !branch.trim()) throw new Error("INVALID_BRANCH");
   return true;
 }
+function isValidPartnerBranch(name) {
+  return typeof name === "string"
+    && /^palang-partner\/[a-z0-9][a-z0-9._/-]{2,70}$/.test(name)
+    && !name.includes("..") && !name.endsWith("/") && !name.includes("//");
+}
 export function assertBranchCreatable(name, base) {
   if (base !== COPY2_BRANCH) throw new Error("BRANCH_BASE_MUST_BE_COPY2");
-  if (typeof name !== "string" || !/^palang-partner\/[a-z0-9][a-z0-9._/-]{2,70}$/.test(name)) throw new Error("INVALID_PARTNER_BRANCH_NAME");
-  if (name.includes("..") || name.endsWith("/") || name.includes("//")) throw new Error("INVALID_PARTNER_BRANCH_NAME");
+  if (!isValidPartnerBranch(name)) throw new Error("INVALID_PARTNER_BRANCH_NAME");
   return true;
 }
 export function assertWritableBranch(branch) {
   if (branch === "main" || branch === COPY1_BRANCH || branch === COPY2_BRANCH) throw new Error("DIRECT_WRITE_TO_REFERENCE_BRANCH_FORBIDDEN");
-  if (typeof branch !== "string" || !branch.startsWith("palang-partner/")) throw new Error("WRITE_REQUIRES_PARTNER_WORKING_BRANCH");
+  if (!isValidPartnerBranch(branch)) throw new Error("WRITE_REQUIRES_PARTNER_WORKING_BRANCH");
   return true;
 }
 export function assertPullRequestTargets(head, base) {
-  if (typeof head !== "string" || !head.startsWith("palang-partner/")) throw new Error("PR_HEAD_MUST_BE_PARTNER_BRANCH");
+  if (!isValidPartnerBranch(head)) throw new Error("PR_HEAD_MUST_BE_PARTNER_BRANCH");
   if (base !== COPY1_BRANCH) throw new Error("PR_BASE_MUST_BE_COPY1");
   return true;
 }

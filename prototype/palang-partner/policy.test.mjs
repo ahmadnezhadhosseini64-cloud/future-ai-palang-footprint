@@ -16,6 +16,7 @@ test("new partner branches must originate from Copy 2", () => {
   assert.equal(assertBranchCreatable("palang-partner/mcp-core-001", COPY2_BRANCH), true);
   assert.throws(() => assertBranchCreatable("palang-partner/mcp-core-001", "main"), /BRANCH_BASE_MUST_BE_COPY2/);
   assert.throws(() => assertBranchCreatable("main", COPY2_BRANCH), /INVALID_PARTNER_BRANCH_NAME/);
+  assert.throws(() => assertBranchCreatable("palang-partner/../main", COPY2_BRANCH), /INVALID_PARTNER_BRANCH_NAME/);
 });
 test("direct writes to main and both safe-copy reference branches are denied", () => {
   for (const branch of ["main", COPY1_BRANCH, COPY2_BRANCH]) {
@@ -23,6 +24,7 @@ test("direct writes to main and both safe-copy reference branches are denied", (
   }
   assert.equal(assertWritableBranch("palang-partner/mcp-core-001"), true);
   assert.throws(() => assertWritableBranch("feature/other"), /WRITE_REQUIRES_PARTNER_WORKING_BRANCH/);
+  assert.throws(() => assertWritableBranch("palang-partner/../main"), /WRITE_REQUIRES_PARTNER_WORKING_BRANCH/);
 });
 test("PRs can only propose partner branches to Copy 1, never main", () => {
   assert.equal(assertPullRequestTargets("palang-partner/mcp-core-001", COPY1_BRANCH), true);
