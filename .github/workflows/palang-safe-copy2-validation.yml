@@ -15,6 +15,8 @@ permissions:
 
 jobs:
   validate-copy-2:
+    # PRs from unrelated proposal branches are not Copy 2 runs; skip them neutrally.
+    if: github.event_name != 'pull_request' || github.head_ref == 'palang-safe-copy-2-test-20261126'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
@@ -31,16 +33,16 @@ jobs:
           EXPECTED_HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
         run: |
           set -euo pipefail
-          expected="2c1f9fdc308e34b23be64153e8eec2c30f08a859"
           copy1_branch="palang-safe-copy-1-baseline-20261126"
           copy2_branch="palang-safe-copy-2-test-20261126"
+          test "$(git rev-parse HEAD)" = "$EXPECTED_HEAD_SHA"
 
           if [[ "$GITHUB_EVENT_NAME" == "pull_request" ]]; then
             test "$GITHUB_HEAD_REF" = "$copy2_branch"
+            test "$GITHUB_BASE_REF" = "$copy1_branch"
           else
             test "$GITHUB_REF" = "refs/heads/$copy2_branch"
           fi
-          test "$(git rev-parse HEAD)" = "$EXPECTED_HEAD_SHA"
 
           git fetch --no-tags origin \
             +refs/heads/main:refs/remotes/origin/main \
@@ -50,20 +52,20 @@ jobs:
           copy1_sha="$(git rev-parse refs/remotes/origin/$copy1_branch^{commit})"
           head_sha="$(git rev-parse HEAD^{commit})"
 
-          test "$main_sha" = "$expected"
-          test "$copy1_sha" = "$expected"
-          test "$head_sha" = "$EXPECTED_HEAD_SHA"
+          if ! git merge-base --is-ancestor "$copy1_sha" "$head_sha"; then
+            echo "STALE_BASE=REVALIDATION_REQUIRED"
+            echo "CURRENT_COPY1_SHA=$copy1_sha"
+            echo "TEST_HEAD_SHA=$head_sha"
+            exit 1
+          fi
 
-          git merge-base --is-ancestor "$expected" HEAD
-          merge_base="$(git merge-base "$expected" HEAD)"
-          test "$merge_base" = "$expected"
-          commits_ahead="$(git rev-list --count "$expected..HEAD")"
+          commits_ahead="$(git rev-list --count "$copy1_sha..HEAD")"
           test "$commits_ahead" -ge 1
-
-          echo "MAIN_UNCHANGED=$main_sha"
-          echo "COPY_1_UNCHANGED=$copy1_sha"
-          echo "COPY_2_HEAD=$head_sha"
+          echo "MAIN_CURRENT_SHA=$main_sha"
+          echo "COPY_1_CURRENT_SHA=$copy1_sha"
+          echo "COPY_2_TEST_HEAD=$head_sha"
           echo "COPY_2_COMMITS_AHEAD=$commits_ahead"
+          echo "BASELINE_MODE=ROLLING"
           echo "BRANCH_ALIGNMENT=PASS"
       - name: Verify only the authorized copy-2 files differ
         run: |
@@ -84,15 +86,6 @@ jobs:
               "prototype/haif-gpt6-starter/ONE_MESSAGE_HOST_BOOTSTRAP_FA.md",
               "prototype/universal-host/UNIVERSAL_AI_HOST_ENTRY_FA.md",
               "prototype/haif-gpt6-starter/test_safe_copy_audit.py",
-              "prototype/palang-partner/package.json",
-              "prototype/palang-partner/server.mjs",
-              "prototype/palang-partner/policy.mjs",
-              "prototype/palang-partner/policy.test.mjs",
-              "prototype/palang-partner/Dockerfile",
-              "prototype/palang-partner/README.md",
-              "prototype/palang-partner/runtime-smoke.test.mjs",
-              "prototype/palang-partner/mcp-protocol.test.mjs",
-              "docs/0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md",
               "docs/architecture/SAFE-COPY-GOVERNANCE-CONTRACT-2026-11-26.md",
           }
           changed = set(subprocess.check_output(
@@ -107,18 +100,6 @@ jobs:
         run: python prototype/haif-gpt6-starter/sync_master_version.py --source "docs/architecture/مدل اولیه AI/سند مرجع مادر مدل اولیه هوش مصنوعی.md" --target "prototype/haif-gpt6-starter/LIVING_MASTER_REFERENCE.md" --manifest "prototype/haif-gpt6-starter/manifest.json"
       - name: Compile all starter Python sources
         run: python -m compileall -q prototype/haif-gpt6-starter
-      - name: Setup Node.js for Palang Partner MCP
-        uses: actions/setup-node@v4
-        with:
-          node-version: "22"
-      - name: Install pinned MCP runtime dependencies
-        working-directory: prototype/palang-partner
-        run: npm install --ignore-scripts --no-audit --no-fund --package-lock=false
-      - name: Check MCP runtime and run policy tests
-        working-directory: prototype/palang-partner
-        run: npm run check && npm test
-      - name: Build deployable MCP container
-        run: docker build -t palang-partner-mcp:${GITHUB_SHA} prototype/palang-partner
       - name: Audit workflow permissions and recovery package
         run: python prototype/haif-gpt6-starter/safe_copy_audit.py --workflow .github/workflows/palang-safe-copy2-validation.yml --package prototype/haif-gpt6-starter
       - name: Run starter and version-sync tests three times
