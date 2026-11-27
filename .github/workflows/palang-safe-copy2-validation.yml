@@ -32,7 +32,8 @@ jobs:
         run: |
           set -euo pipefail
           main_expected="ae52a024692f874126ecbe2c297c3d62e1558d35"
-          copy1_expected="f7bdf639f8c5fce7e165db2ab64f5c55d966bbe7"
+          copy1_promoted_expected="ae52a024692f874126ecbe2c297c3d62e1558d35"
+          copy1_snapshot="f7bdf639f8c5fce7e165db2ab64f5c55d966bbe7"
           copy1_branch="palang-safe-copy-1-baseline-20261126"
           copy2_branch="palang-safe-copy-2-test-20261127"
           if [[ "$GITHUB_EVENT_NAME" == "pull_request" ]]; then
@@ -48,16 +49,20 @@ jobs:
           copy1_sha="$(git rev-parse refs/remotes/origin/$copy1_branch^{commit})"
           head_sha="$(git rev-parse HEAD^{commit})"
           test "$main_sha" = "$main_expected"
-          test "$copy1_sha" = "$copy1_expected"
+          test "$copy1_sha" = "$copy1_promoted_expected"
           test "$head_sha" = "$EXPECTED_HEAD_SHA"
-          git merge-base --is-ancestor "$copy1_expected" "$main_expected"
-          git diff --quiet "$main_expected" "$copy1_expected"
-          git merge-base --is-ancestor "$copy1_expected" HEAD
-          echo "MAIN_UNCHANGED=$main_sha"
-          echo "COPY_1_BASELINE=$copy1_sha"
+          git merge-base --is-ancestor "$copy1_snapshot" "$copy1_promoted_expected"
+          git diff --quiet "$main_expected" "$copy1_promoted_expected"
+          git merge-base --is-ancestor "$copy1_snapshot" HEAD
+          merge_base="$(git merge-base "$copy1_snapshot" HEAD)"
+          test "$merge_base" = "$copy1_snapshot"
+          echo "MAIN_PROMOTION=$main_sha"
+          echo "COPY_1_PROMOTED_REF=$copy1_sha"
+          echo "COPY_1_REGISTERED_SNAPSHOT=$copy1_snapshot"
+          echo "COPY_2_BASE_ANCHOR=$merge_base"
           echo "COPY_2_HEAD=$head_sha"
-          echo "COPY_2_AHEAD=$(git rev-list --count "$copy1_expected..HEAD")"
-          echo "BRANCH_ALIGNMENT=PASS"
+          echo "COPY_2_AHEAD=$(git rev-list --count "$copy1_snapshot..HEAD")"
+          echo "PROMOTION_CHAIN=PASS"
       - name: Verify Copy 2 changes stay within the explicit allowlist
         run: |
           python - <<'PY'
