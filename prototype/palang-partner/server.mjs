@@ -5,7 +5,8 @@ import * as z from "zod/v4";
 import {
   OWNER_LOGIN, ALLOWED_REPOSITORY, COPY1_BRANCH, COPY2_BRANCH,
   assertOwner, assertRepository, assertBranchReadable, assertBranchCreatable,
-  assertWritableBranch, assertPullRequestTargets, assertSafePath, parseBearer
+  assertWritableBranch, assertPullRequestTargets, assertSafePath, parseBearer,
+  assertPartnerBranchComparison
 } from "./policy.mjs";
 
 const API = "https://api.github.com";
@@ -94,6 +95,8 @@ function buildServer(token, actor) {
     inputSchema: z.object({ repository: z.string().default(ALLOWED_REPOSITORY), branch: z.string(), path: z.string(), content: z.string(), message: z.string().min(8).max(120) })
   }, async ({ repository, branch, path, content, message }) => {
     assertRepository(repository); assertWritableBranch(branch); assertSafePath(path);
+    const ancestry = await github(token, repoPath(repository, "/compare/" + COPY2_BRANCH + "..." + encodeURIComponent(branch)));
+    assertPartnerBranchComparison(ancestry.data.status);
     const target = "/contents/" + encodedPath(path);
     let sha;
     try {
@@ -112,6 +115,8 @@ function buildServer(token, actor) {
     inputSchema: z.object({ repository: z.string().default(ALLOWED_REPOSITORY), head: z.string(), base: z.string().default(COPY1_BRANCH), title: z.string().min(8).max(200), body: z.string().max(10000).optional() })
   }, async ({ repository, head, base, title, body = "" }) => {
     assertRepository(repository); assertPullRequestTargets(head, base);
+    const ancestry = await github(token, repoPath(repository, "/compare/" + COPY2_BRANCH + "..." + encodeURIComponent(head)));
+    assertPartnerBranchComparison(ancestry.data.status);
     const created = await github(token, repoPath(repository, "/pulls"), {
       method: "POST", body: JSON.stringify({ head, base, title, body, draft: true })
     });

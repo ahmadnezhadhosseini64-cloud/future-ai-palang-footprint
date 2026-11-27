@@ -50,3 +50,8 @@ export function parseBearer(header) {
   if (!match) throw new Error("BEARER_TOKEN_REQUIRED");
   return match[1];
 }
+
+export function assertPartnerBranchComparison(status) {
+  if (status !== "ahead" && status !== "identical") throw new Error("PARTNER_BRANCH_NOT_DERIVED_FROM_CURRENT_COPY2");
+  return true;
+}

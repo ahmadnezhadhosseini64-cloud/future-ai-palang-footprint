@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import {
   OWNER_LOGIN, ALLOWED_REPOSITORY, COPY1_BRANCH, COPY2_BRANCH,
   assertOwner, assertRepository, assertBranchCreatable, assertWritableBranch,
-  assertPullRequestTargets, assertSafePath, parseBearer
+  assertPullRequestTargets, assertSafePath, parseBearer, assertPartnerBranchComparison
 } from "./policy.mjs";
 
 test("accepts only the canonical owner and repository", () => {
@@ -41,4 +41,12 @@ test("bearer parser rejects missing and malformed authorization", () => {
   assert.equal(parseBearer("Bearer ghp_exampleToken123"), "ghp_exampleToken123");
   assert.throws(() => parseBearer(undefined), /BEARER_TOKEN_REQUIRED/);
   assert.throws(() => parseBearer("Basic abc"), /BEARER_TOKEN_REQUIRED/);
+});
+
+test("partner working branches must be current descendants of Copy 2", () => {
+  assert.equal(assertPartnerBranchComparison("ahead"), true);
+  assert.equal(assertPartnerBranchComparison("identical"), true);
+  for (const status of ["behind", "diverged", "unknown"]) {
+    assert.throws(() => assertPartnerBranchComparison(status), /PARTNER_BRANCH_NOT_DERIVED_FROM_CURRENT_COPY2/);
+  }
 });
