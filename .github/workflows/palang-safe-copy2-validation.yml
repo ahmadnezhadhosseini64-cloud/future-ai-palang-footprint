@@ -69,6 +69,19 @@ jobs:
           python -m py_compile prototype/haif-gpt6-starter/safe_copy_audit.py prototype/haif-gpt6-starter/safe_points_guard.py
           cd prototype/haif-gpt6-starter
           python -m unittest -v test_safe_copy_audit.py test_safe_points_guard.py
+      - name: Re-run recovery checks from a clean workspace
+        shell: bash
+        run: |
+          set -euo pipefail
+          clean="$RUNNER_TEMP/palang-clean-host-simulation"
+          git clone --no-local "$GITHUB_WORKSPACE" "$clean"
+          cd "$clean"
+          test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+          python -m py_compile prototype/haif-gpt6-starter/safe_copy_audit.py prototype/haif-gpt6-starter/safe_points_guard.py
+          (cd prototype/haif-gpt6-starter && python -m unittest -v test_safe_copy_audit.py test_safe_points_guard.py)
+          python prototype/haif-gpt6-starter/safe_copy_audit.py --workflow .github/workflows/palang-safe-copy2-validation.yml --package prototype/haif-gpt6-starter
+          echo "CLEAN_WORKSPACE_RECOVERY_SIMULATION=PASS"
+          echo "INDEPENDENT_AI_HOST_ACCEPTANCE=NOT_RUN"
       - name: Audit workflow and portable package
         run: python prototype/haif-gpt6-starter/safe_copy_audit.py --workflow .github/workflows/palang-safe-copy2-validation.yml --package prototype/haif-gpt6-starter
       - name: Check patch integrity
