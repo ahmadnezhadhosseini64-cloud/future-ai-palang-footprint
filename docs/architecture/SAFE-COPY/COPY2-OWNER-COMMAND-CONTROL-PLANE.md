@@ -1,93 +1,75 @@
-# Copy 2 — owner-command control plane
+# Copy 2 — راهنمای اجرایی زنده
 
-**State:** ACTIVE WORKBENCH / OWNER GATE REQUIRED  
-**Authority:** POINT-0/GOLDEN and the project owner remain authoritative.  
-**Last checked baseline:** 2026-11-27  
-**This file is the single operational entry point for the Copy 2 ↔ Copy 1 workflow.** Update this file when the governing refs, branch names, permissions, workflow, or open gates change. Do not create a parallel control document.
+> **این تنها نقطهٔ ورود عملیاتی میزبان برای چرخهٔ Copy 2 ↔ Copy 1 است.** تاریخچهٔ چت را لازم نداری. همین صفحه را بخوان، وضعیت زنده را بازخوانی کن و فقط کار مجاز را انجام بده. سند موازی نساز.
 
-## 1. The simple map
+## شروع سریع میزبان
 
-| Area | Purpose | Who may change it |
-|---|---|---|
-| MAIN + POINT-0/GOLDEN | Canonical authority and protected reference | Owner-approved promotion only |
-| Copy 1 | Stable proposal/reference side; receives candidates for owner review | Owner-controlled; AI has no direct write or merge authority |
-| Copy 2 | AI workbench: build, edit, compare alternatives, stress-test, verify | Authorized AI/workbench may write here |
-| Bridge | A proposed change from Copy 2 to Copy 1, carrying exact diff, SHAs, tests and evidence | Open/use only under the owner's explicit command |
-| Owner | Final authority to request transfer, accept/reject, and separately authorize any promotion | Owner only |
+1. [MAIN](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/tree/main) و [Copy 1](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/tree/palang-safe-copy-1-baseline-20261126) را فقط برای خواندن باز کن؛ SHA هر دو را از GitHub بگیر.
+2. [Copy 2 فعال](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/tree/palang-safe-copy-2-workbench-20261127) محل نوشتن، ساخت، اصلاح و آزمون توست.
+3. [POINT-0/GOLDEN](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md) مرجع حاکمیتی است؛ آن را جایگزین یا بازتعریف نکن.
+4. [صف اجرای جاری NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md) را برای کار باز بخوان.
+5. پیش از تغییر، SHA مبنا و وضعیت CI را ثبت کن. پس از تغییر، تست را روی همان SHA اجرا کن و دوباره SHA و نتیجه را از GitHub بازخوانی کن.
 
-**Copy 2 is allowed to develop and prepare a PR candidate. It is not allowed to transfer that candidate into Copy 1 merely because tests pass.** A passing test is evidence, not permission.
+## مرز اختیار — بدون استثنا
 
-## 2. The owner-command boundary
+| کار | مجاز؟ |
+|---|---|
+| خواندن MAIN و Copy 1 | بله |
+| ساخت، ویرایش، چندراه‌حلی، تست و فشارآزمایی در Copy 2 | بله |
+| ساخت کاندید و آماده‌سازی diff در Copy 2 | بله |
+| بازکردن PR از Copy 2 به Copy 1 | **فقط با فرمان صریح و مشخص مالک** |
+| نوشتن مستقیم در Copy 1 یا MAIN | خیر |
+| PR به MAIN، ادغام، پذیرش یا ارتقای خودکار | خیر؛ فقط تصمیم جداگانهٔ مالک |
 
-The following are separate permissions and must never be inferred from one another:
+«ادامه بده»، «بساز»، «تست کن» و سبزشدن CI فقط مجوز کار در Copy 2 هستند؛ مجوز پل‌زدن، PR، ادغام یا ارتقا نیستند. اگر فرمان مالک برای انتقال صریح نیست، هیچ PR به Copy 1 باز نکن. اگر مقصد یا کاندید مبهم است، متوقف شو و فقط یک سؤال روشن بپرس.
 
-1. **Workbench permission:** build, edit, run tests, stress-test, repair and prepare a candidate inside Copy 2.
-2. **Bridge/PR permission:** only when the owner explicitly commands transfer of a named Copy 2 candidate to Copy 1. The PR must target Copy 1, never MAIN.
-3. **Acceptance/promotion permission:** only a separate explicit owner decision after review. Opening a PR, a green CI run, a schedule, or a previous approval does not authorize merge or promotion.
+## چرخهٔ اجرایی هر نوبت
 
-A request such as “continue”, “build it”, “test it”, or “make progress” authorizes work inside Copy 2 only. It does not authorize a Copy 1 PR or merge.
+**ورودی → اجرا → اثبات → بازخوانی → به‌روزرسانی همین راهنما**
 
-**Required owner command for the bridge:** the owner must identify the candidate/PR or explicitly say that the current Copy 2 candidate may be proposed to Copy 1. If the target, diff or base is ambiguous, stop and ask one question. Never guess.
+1. **بازخوانی:** SHA واقعی MAIN، Copy 1 و Copy 2؛ PRهای باز؛ آخرین اجرای CI؛ NEXT باز و موانع را از منبع زنده بگیر. دادهٔ چت قدیمی را حقیقت جاری فرض نکن.
+2. **اجرا:** فقط در Copy 2 تغییر بده. هر تغییر باید هدف معماری، مسیر فایل و روش بازگشت روشن داشته باشد.
+3. **آزمون:** تست‌های مربوط، آزمون منفی/امنیتی و workflow را اجرا کن. اجرا نشده = `NOT RUN`، شکست = `FAIL`، مانع = `BLOCKED`. هیچ‌کدام را PASS ننویس.
+4. **اثبات:** SHA دقیق، diff واقعی، فهرست فایل‌ها، دستور تست، خروجی، شناسه/پیوند CI و محدودیت‌ها را نگه دار.
+5. **بازخوانی مستقل:** فایل و commit را دوباره از GitHub بخوان؛ صرف پاسخ ابزارِ نوشتن، اثبات کافی نیست.
+6. **به‌روزرسانی:** همین فایل را در Copy 2 به‌روز کن: شاخه و SHAهای واقعی، کار انجام‌شده، PASS/FAIL/BLOCKED/NOT RUN، PRها، مانع‌ها و تنها قدم بعدی. README فقط باید به همین صفحه اشاره کند. فایل راهنمای دوم نساز.
+7. **گزارش به مالک:** کوتاه و قابل‌رسیدگی بگو چه چیزی واقعاً تغییر کرد، کجا، روی کدام SHA، چه تستی اجرا شد و چه چیزی هنوز باز است.
 
-## 3. Candidate hand-off contract
+## پل Copy 2 → Copy 1
 
-Every proposed bridge must include, in the PR description or attached machine-readable receipt:
+پل فقط پس از فرمان صریح مالک فعال می‌شود. قبل از ساخت PR:
 
-- current MAIN SHA and Copy 1 SHA, read at hand-off time;
-- Copy 2 base SHA and exact head SHA;
-- merge-base and exact changed-path list;
-- full diff (not just a summary);
-- commands and results for tests, including failures and skipped tests;
-- workflow run IDs and links, where available;
-- security audit results and known limitations;
-- rollback/recovery method;
-- a clear status: `PASS`, `FAIL`, `BLOCKED`, or `NOT RUN`.
+- MAIN و Copy 1 را همان لحظه بخوان؛ هر دو باید با مبنای مجاز مالک هم‌راستا باشند.
+- کاندید باید بر پایهٔ آخرین Copy 1 باشد؛ اگر عقب است، در Copy 2 به‌روز و دوباره آزمون شود.
+- PR فقط به شاخهٔ Copy 1 هدف‌گیری شود، هرگز MAIN.
+- در PR درج شود: SHA مبنای Copy 1، SHA پایه و سر کاندید Copy 2، merge-base، diff کامل، فایل‌های تغییرکرده، تست‌ها و نتایج، لینک CI، محدودیت‌ها و راه بازگشت.
+- PR فقط پیشنهاد برای بررسی مالک است. CI سبز، بازشدن PR یا فرمان قبلی به‌تنهایی اجازهٔ merge نیست.
+- هر تغییر پس از آزمون، SHA را عوض می‌کند؛ شواهد قبلی برای SHA جدید معتبر نیست.
 
-The bridge must fail closed if MAIN and Copy 1 are not the expected aligned baseline, the candidate is not based on the current Copy 1, the diff is incomplete, evidence is missing, or a required test did not run. Rebase/revalidate against the latest Copy 1 before asking for owner review.
+## وضعیت زنده — هر بار باید بازخوانی و جایگزین شود
 
-## 4. Always-current host entry
+آخرین بازخوانی ثبت‌شده در این نوبت: **2026-11-27** (زمان UTC از commit GitHub؛ این تاریخ جای بازخوانی بعدی را نمی‌گیرد).
 
-A new host must not need chat history. Start here, then read only the linked current references needed for the task:
+- MAIN: `ae52a024692f874126ecbe2c297c3d62e1558d35`
+- Copy 1: `ae52a024692f874126ecbe2c297c3d62e1558d35`
+- Copy 2: `5d922b086352dfd7e8791a6829ce921286bb05c2`
+- شاخهٔ فعال Copy 2: `palang-safe-copy-2-workbench-20261127`
+- PR به Copy 1 از این شاخه: ایجاد نشده؛ فرمان انتقال مالک دریافت نشده.
+- تست/CI برای دو commit راهنما: **NOT RUN**؛ موفقیت ادعا نمی‌شود.
+- وضعیت ایزوله‌سازی: **OPEN** — مخزن عمومی است و شاخهٔ Copy 2 محافظت نشده؛ آن را محیط خصوصی یا امنِ مستقل معرفی نکن.
+- اعتبارسنجی مستقل از کاندید: **OPEN** — workflow تحت کنترل همان کاندید، مرجع اعتماد مستقل محسوب نمی‌شود.
+- هویت runtime میزبان و آزمون بازیابی میزبان پاک: **OPEN / NOT VERIFIED**.
 
-1. **Authority:** [POINT-0/GOLDEN](../../0.0/anchors/GPT6-RAHM-USER-POINT-0-GOLDEN-20261122-001.md).
-2. **This operating rule:** Copy 2 workbench and owner-command boundary (this file).
-3. **Current execution queue:** [NEXT-051](../../0.0/anchors/PALANG-0.0-NEXT-20261024-051-FULL-GRAPH-TRIAGE-AND-CLEAN-HOST-RECOVERY.md).
-4. **Host identity proposal:** [PR #172](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/pull/172) — proposal only; not proof of runtime identity or registry enrollment.
-5. **Current workbench branch:** [palang-safe-copy-2-workbench-20261127](https://github.com/ahmadnezhadhosseini64-cloud/future-ai-palang-footprint/tree/palang-safe-copy-2-workbench-20261127).
-6. **Latest execution evidence:** use the GitHub Actions run attached to the exact candidate SHA. Do not reuse a previous run as proof for a newer SHA.
+## کار باز بعدی
 
-At the start and end of each work cycle, refresh the actual branch refs and record: current MAIN SHA, Copy 1 SHA, Copy 2 SHA, open PRs, latest workflow result, next open task and blockers. A timestamp or status copied from an older chat is not current evidence.
+1. workflow اعتبارسنجی Copy 2 را از SHA و فهرست فایل قدیمیِ ثابت خارج کن و مبنا را از refs جاری بگیر.
+2. سه نقص امنیتی را ببند: تشخیص `- uses:` و الزام pin کامل SHA برای Actionها؛ اعتبارسنج مستقل از کاندید؛ اعتبارسنجی SHA/ancestry/evidence واقعی به‌جای اعتماد به boolean ارسالی.
+3. آزمون منفی برای SHA جعلی، شواهد جعلی، validator دستکاری‌شده، Action بدون pin و مقصد غیرمجاز اضافه کن.
+4. آزمون بازیابی میزبان پاک و گیت فرمان مالک را واقعاً اجرا کن.
+5. فقط پس از تکمیل شواهد و فرمان صریح مالک، کاندید را به Copy 1 پیشنهاد بده.
 
-## 5. Current observed state (2026-11-27)
+## توقف فوری
 
-- MAIN and Copy 1 currently point to the same commit: `ae52a024692f874126ecbe2c297c3d62e1558d35`.
-- A fresh Copy 2 workbench branch was created from that exact baseline: `palang-safe-copy-2-workbench-20261127`.
-- The older branch `palang-safe-copy-2-test-20261126` points to `f7bdf639f8c5fce7e165db2ab64f5c55d966bbe7`, which is now an ancestor of the current MAIN/Copy 1 merge commit. Treat it as historical candidate lineage, not as the active isolated workbench.
-- PR #173 was merged into the Copy 1 branch; PR #175 then promoted the Copy 1 baseline to MAIN. Current MAIN and Copy 1 are aligned. This does not grant future Copy 2 candidates automatic promotion rights.
-- PR #172 remains a separate open/draft identity proposal. Its existence does not register or cryptographically authenticate a runtime host.
-- The repository is **PUBLIC**. The new Copy 2 branch is **NOT protected**. Therefore this is a logical workbench boundary, **not yet a private or independently secured environment**.
-- The repository branch currently has no verified independent policy runner that a candidate cannot modify. A workflow stored in the candidate branch is useful validation, but is not by itself a trusted security boundary.
-- No fresh-host cold-start recovery test is claimed as passed by this control-plane change.
+در تلاش برای نوشتن در MAIN/Copy 1، انتقال بدون فرمان مالک، PR با مقصد MAIN، SHA یا diff غیرقابل‌اثبات، تست اجرا‌نشده، validator خودتأییدگر یا ادعای امنیت/هویت بدون مدرک: کار را متوقف کن و `BLOCKED` گزارش بده.
 
-## 6. Non-negotiable stop conditions
-
-Stop and report `BLOCKED` if any of these occur:
-
-- an AI or automation attempts to write to MAIN or Copy 1 directly;
-- a Copy 2 → Copy 1 bridge is attempted without the owner's explicit command;
-- a PR targets MAIN, or a merge/promotion is inferred from a green check;
-- branch ancestry, SHA, diff, or evidence cannot be verified;
-- a candidate controls the only validator used to approve itself;
-- a public/unprotected branch is represented as private or secure isolation;
-- host identity is claimed VERIFIED without independent runtime proof.
-
-## 7. Next executable work
-
-1. Keep all implementation and repairs on the active Copy 2 workbench.
-2. Repair the stale Copy 2 validation workflow so it resolves the current Copy 1 baseline dynamically instead of hard-coding the retired SHA and old path list.
-3. Fix the three known audit gaps: parse `- uses:` correctly and require full action SHA pins; move trust in validation outside candidate-controlled code; verify real SHA/ancestry/evidence rather than caller-supplied booleans.
-4. Add negative tests for forged evidence, malformed SHAs, candidate-edited validators, unpinned actions and unauthorized target branches.
-5. Prove a clean-host recovery run and the bridge's owner-command gate.
-6. Only after evidence is complete, prepare a candidate for Copy 1; do not open that PR until the owner commands it.
-
-**Truth rule:** this control plane is now written into the Copy 2 workbench. It does not, by itself, prove private isolation, branch protection, trusted external validation, runtime host identity, or clean-host recovery. Each remains OPEN until verified from live evidence.
+**قانون دائمی:** هدف این صفحه راهنمای انجام کار است، نه تولید سند. هر میزبان فقط همین‌جا را برای یافتن مرجع، محل کار، آخرین وضعیت، شواهد و قدم بعدی باز می‌کند؛ سپس کار واقعی را انجام می‌دهد و همین راهنما را با واقعیت تازه می‌کند.
