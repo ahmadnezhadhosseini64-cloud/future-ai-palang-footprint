@@ -24,11 +24,27 @@ def audit_workflow(text: str) -> list[str]:
         failures.append("write permission found")
     if "persist-credentials: false" not in text:
         failures.append("checkout credentials must not persist")
+    if 'test "$(git rev-parse HEAD)" = "$EXPECTED_HEAD_SHA"' not in text:
+        failures.append("clean-workspace retest must verify the exact event head SHA, not the synthetic PR merge SHA")
+    if "EXPECTED_HEAD_SHA:" not in text or "github.event.pull_request.head.sha || github.sha" not in text:
+        failures.append("clean-workspace retest is not bound to the exact PR head SHA")
     expected_checkout = "ref: " + "$" + "{{ github.event.pull_request.head.sha || github.sha }}"
     if expected_checkout not in text:
         failures.append("checkout is not bound to the exact event head SHA")
     if COPY1_BRANCH not in text or COPY2_BRANCH not in text:
         failures.append("current Copy 1 / Copy 2 branch mapping is missing")
+    if not any(line.strip() == "pull_request:" for line in lines):
+        failures.append("Palang Copy 2 proposal PR validation trigger is missing")
+    if f"- {COPY2_BRANCH}" not in text:
+        failures.append("Copy 2 PR target branch is missing")
+    if 'test "$GITHUB_BASE_REF" = "$copy2_branch"' not in text:
+        failures.append("proposal PR base must be the Copy 2 branch")
+    if '[[ "$GITHUB_HEAD_REF" == palang-copy2-proposal-* ]]' not in text:
+        failures.append("only Palang-owned proposal branches may target Copy 2")
+    if 'test "$EVENT_BASE_SHA" = "$copy2_sha"' not in text:
+        failures.append("proposal PR must be rejected unless its base equals live Copy 2 SHA")
+    if '+refs/heads/$copy2_branch:refs/remotes/origin/$copy2_branch' not in text:
+        failures.append("workflow must fetch the live Copy 2 ref explicitly")
     if "refs/heads/main" not in text or "refs/heads/$copy1_branch" not in text:
         failures.append("workflow does not read both live MAIN and Copy 1 refs")
     if "merge-base --is-ancestor \"$copy1_sha\" \"$head_sha\"" not in text:

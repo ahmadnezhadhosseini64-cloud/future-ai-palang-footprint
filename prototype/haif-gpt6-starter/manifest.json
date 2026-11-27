@@ -357,7 +357,7 @@
   "host_entry_message_2": "UNIVERSAL_AI_HOST_ENTRY_FA.md — bounded mission; owner-provisioned Copy 3 only",
   "host_entry_source_of_truth": "The PALANG-HOST-ENTRY-CURRENT-AUTHORITY block must remain byte-identical in ONE_MESSAGE_HOST_BOOTSTRAP_FA.md, UNIVERSAL_AI_HOST_ENTRY_FA.md (starter), and prototype/universal-host/UNIVERSAL_AI_HOST_ENTRY_FA.md",
   "host_entry_sync_test": "test_host_entry_sync.py",
-  "copy3_model": "Owner-provisioned independent fork created only after host selection from the exact latest accepted Copy 2 SHA; host writes only to Copy 3 and opens a PR to the Copy 2 branch in the parent repository",
+  "copy3_model": "Owner-provisioned independent fork created only after host selection from the live exact Copy 2 SHA; host writes only to Copy 3 and submits a proposal PR to Copy 2. Palang never merges the host PR: it reviews and reconstructs accepted changes on a Palang-owned proposal branch, runs full validation and pressure tests, then opens a separate PR to Copy 2. Only the owner may authorize merging that Palang PR. Every subsequent host Copy 3 is created from the new live accepted Copy 2 SHA.",
   "copy3_intake_workflow": ".github/workflows/palang-copy3-proposal-intake.yml",
   "copy3_intake_guard": "copy3_intake_guard.py"
 }

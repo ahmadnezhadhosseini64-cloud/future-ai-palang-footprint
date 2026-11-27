@@ -14,6 +14,12 @@ GOOD_WORKFLOW = """permissions:
       - uses: actions/setup-python@42375524e23c412d93fb67b49958b491fce71c38
           +refs/heads/main:refs/remotes/origin/main
           +refs/heads/$copy1_branch:refs/remotes/origin/$copy1_branch
+          +refs/heads/$copy2_branch:refs/remotes/origin/$copy2_branch
+          pull_request:
+            - palang-safe-copy-2-current-20261127
+          test "$GITHUB_BASE_REF" = "$copy2_branch"
+          [[ "$GITHUB_HEAD_REF" == palang-copy2-proposal-* ]]
+          test "$EVENT_BASE_SHA" = "$copy2_sha"
           git merge-base --is-ancestor "$copy1_sha" "$head_sha"
           changed = set(subprocess.check_output(["git", "diff", "--name-only"], text=True).splitlines())
           unexpected = changed - allowed
@@ -22,6 +28,10 @@ GOOD_WORKFLOW = """permissions:
         branches:
           - palang-safe-copy-1-baseline-20261126
           - palang-safe-copy-2-current-20261127
+      - name: Repeat tests in a clean workspace
+        env:
+          EXPECTED_HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: test "$(git rev-parse HEAD)" = "$EXPECTED_HEAD_SHA"
 """
 
 
@@ -41,6 +51,14 @@ class WorkflowSecurityAuditTests(unittest.TestCase):
         result = audit_workflow(GOOD_WORKFLOW + "\n      - uses: example/action")
         self.assertTrue(any("full 40-character commit SHA" in item for item in result))
 
+    def test_clean_workspace_must_not_compare_synthetic_merge_sha(self):
+        unsafe = GOOD_WORKFLOW.replace(
+            'test "$(git rev-parse HEAD)" = "$EXPECTED_HEAD_SHA"',
+            'test "$(git rev-parse HEAD)" = "$GITHUB_SHA"',
+        )
+        result = audit_workflow(unsafe)
+        self.assertTrue(any("synthetic PR merge SHA" in item for item in result))
+
     def test_persisted_credentials_fail(self):
         result = audit_workflow(GOOD_WORKFLOW.replace("persist-credentials: false", ""))
         self.assertIn("checkout credentials must not persist", result)
@@ -50,6 +68,16 @@ class WorkflowSecurityAuditTests(unittest.TestCase):
             "palang-safe-copy-2-current-20261127", "palang-safe-copy-2-test-20261127"
         ))
         self.assertIn("current Copy 1 / Copy 2 branch mapping is missing", result)
+
+    def test_stale_copy2_pr_base_fails(self):
+        result = audit_workflow(GOOD_WORKFLOW.replace('test "$EVENT_BASE_SHA" = "$copy2_sha"', ""))
+        self.assertTrue(any("live Copy 2 SHA" in item for item in result))
+
+    def test_non_palang_proposal_branch_fails(self):
+        result = audit_workflow(GOOD_WORKFLOW.replace(
+            '[[ "$GITHUB_HEAD_REF" == palang-copy2-proposal-* ]]', ""
+        ))
+        self.assertTrue(any("Palang-owned proposal branches" in item for item in result))
 
     def test_forcing_main_equal_copy1_fails(self):
         result = audit_workflow(GOOD_WORKFLOW + '\n          test "$main_sha" = "$copy1_sha"')
