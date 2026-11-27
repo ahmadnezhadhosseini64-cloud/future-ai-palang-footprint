@@ -1,14 +1,12 @@
-import base64
-import json
 import os
 import unittest
 from unittest.mock import patch
-from safe_points_guard import (
-    Gate, REQUIRED_FIELDS, Verification, evaluate_attestation, bridge_destination,
-)
+from safe_points_guard import Gate, evaluate_attestation, bridge_destination
 
 
-GOLDEN = "a" * 40
+MAIN = "a" * 40
+COPY1 = "b" * 40
+TREE = "c" * 40
 REPOSITORY = "ahmadnezhadhosseini64-cloud/future-ai-palang-footprint"
 
 
@@ -17,11 +15,13 @@ def packet(**overrides):
         "schema": "palang.external-verification.v1",
         "issuer": "palang-independent-verifier",
         "repository": REPOSITORY,
-        "main_sha": GOLDEN,
-        "copy1_sha": GOLDEN,
-        "copy2_base_sha": GOLDEN,
-        "copy2_head_sha": "b" * 40,
-        "diff_sha256": "c" * 64,
+        "main_sha": MAIN,
+        "copy1_sha": COPY1,
+        "main_tree_sha": TREE,
+        "copy1_tree_sha": TREE,
+        "copy2_base_sha": COPY1,
+        "copy2_head_sha": "d" * 40,
+        "diff_sha256": "e" * 64,
         "tests_pass": True,
         "paths_authorized": True,
         "bridge_matches": True,
@@ -32,21 +32,27 @@ def packet(**overrides):
 
 class ExternalAttestationGateTests(unittest.TestCase):
     def setUp(self):
-        self.env = patch.dict(os.environ, {
+        p = patch.dict(os.environ, {
             "PALANG_TRUSTED_VERIFIER_PUBLIC_KEY": "TEST PUBLIC KEY",
-            "PALANG_GOLDEN_SHA": GOLDEN,
+            "PALANG_GOLDEN_MAIN_SHA": MAIN,
+            "PALANG_IMMUTABLE_COPY1_SHA": COPY1,
         })
-        self.env.start()
-        self.addCleanup(self.env.stop)
+        p.start()
+        self.addCleanup(p.stop)
 
     def test_missing_trusted_key_blocks(self):
         with patch.dict(os.environ, {"PALANG_TRUSTED_VERIFIER_PUBLIC_KEY": ""}):
             result = evaluate_attestation(packet(), "c2ln", repository=REPOSITORY)
         self.assertEqual(result.gate, Gate.BLOCKED)
-        self.assertIn("key or golden pin", result.reason)
+        self.assertIn("key or canonical pins", result.reason)
 
-    def test_missing_golden_pin_blocks(self):
-        with patch.dict(os.environ, {"PALANG_GOLDEN_SHA": ""}):
+    def test_missing_main_pin_blocks(self):
+        with patch.dict(os.environ, {"PALANG_GOLDEN_MAIN_SHA": ""}):
+            result = evaluate_attestation(packet(), "c2ln", repository=REPOSITORY)
+        self.assertEqual(result.gate, Gate.BLOCKED)
+
+    def test_missing_copy1_pin_blocks(self):
+        with patch.dict(os.environ, {"PALANG_IMMUTABLE_COPY1_SHA": ""}):
             result = evaluate_attestation(packet(), "c2ln", repository=REPOSITORY)
         self.assertEqual(result.gate, Gate.BLOCKED)
 
@@ -73,17 +79,22 @@ class ExternalAttestationGateTests(unittest.TestCase):
 
     def test_main_drift_blocks(self):
         with patch("safe_points_guard._verify_signature", return_value=True):
-            result = evaluate_attestation(packet(main_sha="d" * 40), "c2ln", repository=REPOSITORY)
+            result = evaluate_attestation(packet(main_sha="f" * 40), "c2ln", repository=REPOSITORY)
         self.assertEqual(result.gate, Gate.BLOCKED)
 
     def test_copy1_drift_blocks(self):
         with patch("safe_points_guard._verify_signature", return_value=True):
-            result = evaluate_attestation(packet(copy1_sha="d" * 40), "c2ln", repository=REPOSITORY)
+            result = evaluate_attestation(packet(copy1_sha="f" * 40), "c2ln", repository=REPOSITORY)
+        self.assertEqual(result.gate, Gate.BLOCKED)
+
+    def test_main_and_copy1_tree_mismatch_blocks(self):
+        with patch("safe_points_guard._verify_signature", return_value=True):
+            result = evaluate_attestation(packet(copy1_tree_sha="f" * 40), "c2ln", repository=REPOSITORY)
         self.assertEqual(result.gate, Gate.BLOCKED)
 
     def test_wrong_copy2_base_blocks(self):
         with patch("safe_points_guard._verify_signature", return_value=True):
-            result = evaluate_attestation(packet(copy2_base_sha="d" * 40), "c2ln", repository=REPOSITORY)
+            result = evaluate_attestation(packet(copy2_base_sha="f" * 40), "c2ln", repository=REPOSITORY)
         self.assertEqual(result.gate, Gate.BLOCKED)
 
     def test_each_failed_check_blocks(self):
