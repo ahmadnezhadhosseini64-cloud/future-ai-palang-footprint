@@ -12,6 +12,8 @@ from engine import (
     verify_state, digest, payload, register_point,
 )
 
+from sync_master_version import extract_version
+
 
 class HaifStarterEngineTests(unittest.TestCase):
     def test_interaction_has_independent_anchor_in_out_and_hash_chain(self):
@@ -184,7 +186,8 @@ class PortablePackageProtocolTests(unittest.TestCase):
         self.assertEqual(manifest["version"], manifest["archive_policy"]["current_internal_version"])
         self.assertEqual(manifest["supersedes"], "0.5.0")
         self.assertEqual(manifest["stable_id"], "HAIF-GPT6-PORTABLE-STARTER-20261025-004")
-        self.assertEqual(manifest["current_living_master_version"], "1.7.95")
+        expected_master_version = extract_version((package / "LIVING_MASTER_REFERENCE.md").read_bytes())
+        self.assertEqual(manifest["current_living_master_version"], expected_master_version)
         self.assertEqual(manifest["recovery_protocol"], "INDEPENDENT_HOST_RECOVERY_PROTOCOL.md")
         self.assertEqual(manifest["universal_host_entry"], "UNIVERSAL_AI_HOST_ENTRY_FA.md")
         self.assertTrue((package / manifest["universal_host_entry"]).is_file())
@@ -357,8 +360,9 @@ class InteractionResponseAnchorProtocolTests(unittest.TestCase):
         self.assertIn("external build receipt", readme)
         self.assertIn("Previous verified v0.4.3 build receipt", readme)
         self.assertIn(expected_chain, readme)
-        self.assertEqual(manifest["current_living_master_version"], "1.7.95")
+        expected_master_version = extract_version((root / "LIVING_MASTER_REFERENCE.md").read_bytes())
+        self.assertEqual(manifest["current_living_master_version"], expected_master_version)
         self.assertIn("POINT-0/082 (0++ marker on canonical root 0)", manifest["parent_architecture"])
         packaged_master = (root / "LIVING_MASTER_REFERENCE.md").read_text(encoding="utf-8")
-        self.assertIn("Version / نسخه: 1.7.95", packaged_master)
+        self.assertEqual(extract_version(packaged_master.encode("utf-8")), expected_master_version)
         self.assertIn(expected_chain, packaged_master)
