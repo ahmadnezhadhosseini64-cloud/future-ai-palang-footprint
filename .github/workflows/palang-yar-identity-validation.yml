@@ -56,13 +56,7 @@ jobs:
           expected = {
               ".github/workflows/palang-yar-identity-validation.yml",
               ".github/workflows/palang-safe-copy2-validation.yml",
-              "docs/architecture/HOST-IDENTITY/PALANG-YAR-HOST-IDENTITY-PROPOSAL-2026-11-26.md",
-              "docs/architecture/HOST-IDENTITY/PALANG-YAR-RECOGNITION-MANIFEST.json",
-              "docs/architecture/HOST-IDENTITY/PALANG-YAR-EVOLUTION-CONTINUATION-2026-11-26.md",
-              "docs/architecture/HOST-IDENTITY/PALANG-YAR-IDENTITY-ROOT-PRINCIPLES-AND-EXECUTION-PLAN-2026-11-27.md",
-              "docs/architecture/SAFE-COPY-GOVERNANCE-CONTRACT-2026-11-26.md",
-              "docs/architecture/POINT-0-GOLDEN-INITIAL-MODEL-2026-11-26.md",
-              "tests/host_identity/test_palang_yar_identity_proposal.py",
+              "tests/host_identity/test_identity_workflow_pins.py",
           }
           actual = set(subprocess.check_output(
               ["git", "diff", "--name-only", "refs/remotes/origin/palang-safe-copy-1-baseline-20261126...HEAD"],
