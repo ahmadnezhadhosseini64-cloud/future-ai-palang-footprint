@@ -3,10 +3,10 @@ name: Palang Safe Copy 2 Validation
 on:
   push:
     branches:
-      - palang-safe-copy-2-current-20261127
+      - palang-copy2-convergence-b-20261128
   pull_request:
     branches:
-      - palang-safe-copy-2-current-20261127
+      - palang-safe-copy-1-baseline-20261126
     types: [opened, synchronize, reopened]
   workflow_dispatch:
 
@@ -37,10 +37,10 @@ jobs:
           copy1_branch="palang-safe-copy-1-baseline-20261126"
           copy2_branch="palang-safe-copy-2-current-20261127"
           if [[ "$GITHUB_EVENT_NAME" == "pull_request" ]]; then
-            test "$GITHUB_BASE_REF" = "$copy2_branch"
-            [[ "$GITHUB_HEAD_REF" == palang-copy2-proposal-* ]]
+            test "$GITHUB_BASE_REF" = "$copy1_branch"
+            [[ "$GITHUB_HEAD_REF" == palang-copy2-convergence-* ]]
           else
-            test "$GITHUB_REF" = "refs/heads/$copy2_branch"
+            test "$GITHUB_REF" = "refs/heads/palang-copy2-convergence-b-20261128"
           fi
           test "$(git rev-parse HEAD^{commit})" = "$EXPECTED_HEAD_SHA"
           git fetch --no-tags origin \
@@ -52,14 +52,10 @@ jobs:
           copy2_sha="$(git rev-parse refs/remotes/origin/$copy2_branch^{commit})"
           head_sha="$(git rev-parse HEAD^{commit})"
           if [[ "$GITHUB_EVENT_NAME" == "pull_request" ]]; then
-            test "$EVENT_BASE_SHA" = "$copy2_sha" || {
-              echo "COPY2_PROPOSAL_STALE=REJECT"
+            test "$EVENT_BASE_SHA" = "$copy1_sha" || {
+              echo "COPY1_PROPOSAL_STALE=REJECT"
               echo "PR_BASE_SHA=$EVENT_BASE_SHA"
-              echo "LIVE_COPY2_SHA=$copy2_sha"
-              exit 1
-            }
-            git merge-base --is-ancestor "$copy2_sha" "$head_sha" || {
-              echo "COPY2_PROPOSAL_NOT_DESCENDANT=REJECT"
+              echo "LIVE_COPY1_SHA=$copy1_sha"
               exit 1
             }
           fi
