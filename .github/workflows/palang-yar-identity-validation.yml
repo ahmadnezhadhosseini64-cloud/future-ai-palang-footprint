@@ -56,7 +56,6 @@ jobs:
           expected = {
               ".github/workflows/palang-yar-identity-validation.yml",
               ".github/workflows/palang-safe-copy2-validation.yml",
-              "tests/host_identity/test_identity_workflow_pins.py",
           }
           actual = set(subprocess.check_output(
               ["git", "diff", "--name-only", "refs/remotes/origin/palang-safe-copy-1-baseline-20261126...HEAD"],
